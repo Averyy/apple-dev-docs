@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a metric that records elapsed time in a performance test.
 
@@ -17,6 +18,10 @@ Initializes a metric that records elapsed time in a performance test.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,12 +1,13 @@
 # stereoPanChannels
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of two UInt32s that indicate which elements of the device the signal is being panned between.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.speakerGroup
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A group of speakers playing together as a single unit.
 

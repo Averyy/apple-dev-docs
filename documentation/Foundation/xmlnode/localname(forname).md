@@ -1,7 +1,8 @@
 # localName(forName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the local name from the specified qualified name.
 
@@ -15,6 +16,10 @@ Returns the local name from the specified qualified name.
 class func localName(forName name: String) -> String
 ```
 
+```objc
++ (NSString *) localNameForName:(NSString *) name;
+```
+
 #### Discussion
 
 For example, if the qualified name is “bst:title”, this method returns “title”.
@@ -25,13 +30,15 @@ For example, if the qualified name is “bst:title”, this method returns “ti
 
 ## See Also
 
-- [class func predefinedNamespace(forPrefix: String) -> XMLNode?](xmlnode/predefinednamespace(forprefix:).md)
+### Related Documentation
+- [class func predefinedNamespace(forPrefix: String) -> XMLNode?](./predefinednamespace%28forprefix%29.md)
   Returns an `NSXMLNode` object representing one of the predefined namespaces with the specified prefix.
-- [var localName: String?](xmlnode/localname.md)
+### Managing Namespaces
+- [var localName: String?](./localname.md)
   Returns the local name of the receiver.
-- [var prefix: String?](xmlnode/prefix.md)
+- [var prefix: String?](./prefix.md)
   Returns the prefix of the receiver’s name.
-- [class func prefix(forName: String) -> String?](xmlnode/prefix(forname:).md)
+- [class func prefix(forName: String) -> String?](./prefix%28forname%29.md)
   Returns the prefix from the specified qualified name.
 
 

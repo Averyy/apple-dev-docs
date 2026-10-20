@@ -1,7 +1,8 @@
 # description
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string describing the pressure trend.
 
@@ -22,7 +23,8 @@ var description: String { get }
 
 ## See Also
 
-- [var accessibilityDescription: String](pressuretrend/accessibilitydescription.md)
+### Describing the trend
+- [var accessibilityDescription: String](./accessibilitydescription.md)
   A localized accessibility description describing the pressure change over time.
 
 

@@ -1,7 +1,8 @@
 # HMCameraControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that represents a camera control.
 
@@ -19,35 +20,40 @@ An abstract class that represents a camera control.
 class HMCameraControl
 ```
 
+```objc
+@interface HMCameraControl : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init()](hmcameracontrol/init.md)
+- [init()](./hmcameracontrol/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMCameraAudioControl](hmcameraaudiocontrol.md)
-- [HMCameraSettingsControl](hmcamerasettingscontrol.md)
-- [HMCameraSnapshotControl](hmcamerasnapshotcontrol.md)
-- [HMCameraStreamControl](hmcamerastreamcontrol.md)
+- [HMCameraAudioControl](./hmcameraaudiocontrol.md)
+- [HMCameraSettingsControl](./hmcamerasettingscontrol.md)
+- [HMCameraSnapshotControl](./hmcamerasnapshotcontrol.md)
+- [HMCameraStreamControl](./hmcamerastreamcontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var settingsControl: HMCameraSettingsControl?](hmcameraprofile/settingscontrol.md)
+### Controlling camera settings
+- [var settingsControl: HMCameraSettingsControl?](./hmcameraprofile/settingscontrol.md)
   Controls the settings on the camera.
-- [class HMCameraSettingsControl](hmcamerasettingscontrol.md)
+- [class HMCameraSettingsControl](./hmcamerasettingscontrol.md)
   An object that represents the ability to control a camera’s settings.
 
 

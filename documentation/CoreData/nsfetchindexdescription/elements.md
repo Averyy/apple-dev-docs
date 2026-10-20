@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of fetch index element descriptions.
 
@@ -20,17 +21,22 @@ An array of fetch index element descriptions.
 var elements: [NSFetchIndexElementDescription] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSFetchIndexElementDescription *> * elements;
+```
+
 #### Discussion
 
 Setting this property to an invalid value throws an exception, such as when the new value includes both R-tree and non-R-tree elements.
 
 ## See Also
 
-- [var entity: NSEntityDescription?](nsfetchindexdescription/entity.md)
+### Inspecting an Index Description
+- [var entity: NSEntityDescription?](./entity.md)
   The entity description for the fetch index description.
-- [var name: String](nsfetchindexdescription/name.md)
+- [var name: String](./name.md)
   The name of the fetch index description.
-- [var partialIndexPredicate: NSPredicate?](nsfetchindexdescription/partialindexpredicate.md)
+- [var partialIndexPredicate: NSPredicate?](./partialindexpredicate.md)
   A predicate that selects rows for indexing, if the index is a partial index.
 
 

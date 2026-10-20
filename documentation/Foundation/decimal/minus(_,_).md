@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Subtracts one decimal number from another.
 
@@ -26,7 +27,7 @@ The result of subtracting `rhs` from `lhs`.
 
 #### Discussion
 
-If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalSubtract(_:_:_:_:)`](nsdecimalsubtract(_:_:_:_:).md) function instead.
+If the result of this operation requires more precision than the `Decimal` type can provide, the result is rounded using the [`NSDecimalNumber.RoundingMode.plain`](../nsdecimalnumber/roundingmode/plain.md) rounding mode. To specify a different rounding mode, use the [`NSDecimalSubtract(_:_:_:_:)`](../nsdecimalsubtract%28_,_,_,_%29.md) function instead.
 
 ## Parameters
 

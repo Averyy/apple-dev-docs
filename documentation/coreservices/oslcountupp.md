@@ -1,7 +1,8 @@
 # OSLCountUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLCountProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLCountProcPtr
 typealias OSLCountUPP = OSLCountProcPtr
 ```
 
+```c
+typedef OSLCountProcPtr OSLCountUPP;
+```
+
 #### Discussion
 
-For a description of a count callback function, see [`OSLCountProcPtr`](oslcountprocptr.md). 
+For a description of a count callback function, see [`OSLCountProcPtr`](./oslcountprocptr.md). 
 
 
 ---

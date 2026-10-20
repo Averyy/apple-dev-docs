@@ -1,7 +1,8 @@
 # name
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container name.
 
@@ -10,7 +11,7 @@ The container name.
 
 ## Declaration
 
-```swift
+```
 attribute string name;
 ```
 

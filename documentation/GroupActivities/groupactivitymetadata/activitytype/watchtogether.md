@@ -1,7 +1,8 @@
 # watchTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared watching activity, such as watching an episode of a television show together.
 
@@ -21,9 +22,10 @@ static let watchTogether: GroupActivityMetadata.ActivityType
 
 ## See Also
 
-- [static let generic: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/generic.md)
+### Getting the Activity Types
+- [static let generic: GroupActivityMetadata.ActivityType](./generic.md)
   A generic activity.
-- [static let listenTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/listentogether.md)
+- [static let listenTogether: GroupActivityMetadata.ActivityType](./listentogether.md)
   A shared listening activity, such as listening to music together.
 
 

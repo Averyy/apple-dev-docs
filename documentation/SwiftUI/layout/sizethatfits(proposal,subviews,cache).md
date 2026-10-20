@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the size of the composite view, given a proposed size and the view’s subviews.
@@ -29,9 +30,9 @@ A size that indicates how much space the container needs to arrange its subviews
 
 Implement this method to tell your custom layout container’s parent view how much space the container needs for a set of subviews, given a size proposal. The parent might call this method more than once during a layout pass with different proposed sizes to test the flexibility of the container, using proposals like:
 
-- The [`zero`](proposedviewsize/zero.md) proposal; respond with the layout’s minimum size.
-- The [`infinity`](proposedviewsize/infinity.md) proposal; respond with the layout’s maximum size.
-- The [`unspecified`](proposedviewsize/unspecified.md) proposal; respond with the layout’s ideal size.
+- The [`zero`](../proposedviewsize/zero.md) proposal; respond with the layout’s minimum size.
+- The [`infinity`](../proposedviewsize/infinity.md) proposal; respond with the layout’s maximum size.
+- The [`unspecified`](../proposedviewsize/unspecified.md) proposal; respond with the layout’s ideal size.
 
 The parent might also choose to test flexibility in one dimension at a time. For example, a horizontal stack might propose a fixed height and an infinite width, and then the same height with a zero width.
 
@@ -56,21 +57,22 @@ private struct BasicVStack: Layout {
 }
 ```
 
-The implementation asks each subview for its ideal size by calling the [`sizeThatFits(_:)`](layoutsubview/sizethatfits(_:).md) method with an [`unspecified`](proposedviewsize/unspecified.md) proposed size. It then reduces these values into a single size that represents the maximum subview width and the sum of subview heights. Because this example isn’t flexible, it ignores its size proposal input and always returns the same value for a given set of subviews.
+The implementation asks each subview for its ideal size by calling the [`sizeThatFits(_:)`](../layoutsubview/sizethatfits%28_%29.md) method with an [`unspecified`](../proposedviewsize/unspecified.md) proposed size. It then reduces these values into a single size that represents the maximum subview width and the sum of subview heights. Because this example isn’t flexible, it ignores its size proposal input and always returns the same value for a given set of subviews.
 
-SwiftUI views choose their own size, so the layout engine always uses a value that you return from this method as the actual size of the composite view. That size factors into the construction of the `bounds` input to the [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) method.
+SwiftUI views choose their own size, so the layout engine always uses a value that you return from this method as the actual size of the composite view. That size factors into the construction of the `bounds` input to the [`placeSubviews(in:proposal:subviews:cache:)`](./placesubviews%28in,proposal,subviews,cache%29.md) method.
 
 ## Parameters
 
 - `proposal`: A size proposal for the container. The container’s parent view that calls this method might call the method more than once with different proposals to learn more about the container’s flexibility before deciding which proposal to use for placement.
 - `subviews`: A collection of proxies that represent the views that the container arranges. You can use the proxies in the collection to get information about the subviews as you determine how much space the container needs to display them.
-- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for details.
+- `cache`: Optional storage for calculated data that you can share among the methods of your custom layout container. See [`makeCache(subviews:)`](./makecache%28subviews%29.md) for details.
 
 ## See Also
 
-- [func placeSubviews(in: CGRect, proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache)](layout/placesubviews(in:proposal:subviews:cache:).md)
+### Sizing the container and placing subviews
+- [func placeSubviews(in: CGRect, proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache)](./placesubviews%28in,proposal,subviews,cache%29.md)
   Assigns positions to each of the layout’s subviews.
-- [typealias Subviews](layout/subviews.md)
+- [typealias Subviews](./subviews.md)
   A collection of proxies for the subviews of a layout view.
 
 

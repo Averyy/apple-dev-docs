@@ -1,7 +1,8 @@
 # CredentialSession.Event.credentialFinishedInstalling(credential:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session finished installing a credential.
 
@@ -19,14 +20,15 @@ case credentialFinishedInstalling(credential: CredentialSession.Credential)
 
 The associated value `credential` indicates which credential finished installing.
 
-The [`CredentialSession.Credential`](credentialsession/credential.md) object returned could be in:
+The [`CredentialSession.Credential`](../credential.md) object returned could be in:
 
-- [`CredentialSession.Credential.State.installed(instances:)`](credentialsession/credential/state-swift.enum/installed(instances:).md) if the installation succeeded
-- [`CredentialSession.Credential.State.installationFailed`](credentialsession/credential/state-swift.enum/installationfailed.md) if the installation failed
+- [`CredentialSession.Credential.State.installed(instances:)`](../credential/state-swift.enum/installed%28instances%29.md) if the installation succeeded
+- [`CredentialSession.Credential.State.installationFailed`](../credential/state-swift.enum/installationfailed.md) if the installation failed
 
 ## See Also
 
-- [CredentialSession.Credential](credentialsession/credential.md)
+### Credential events
+- [CredentialSession.Credential](../credential.md)
   Information about a credential that a credential session retrieves from the Secure Element.
 
 

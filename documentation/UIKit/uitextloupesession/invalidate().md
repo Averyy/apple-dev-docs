@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides the loupe and cleans up any session-related state.
 
@@ -17,9 +18,13 @@ Hides the loupe and cleans up any session-related state.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Discussion
 
@@ -27,7 +32,8 @@ Call this method when you’re ready to hide the loupe. After calling this metho
 
 ## See Also
 
-- [func move(to: CGPoint, withCaretRect: CGRect, trackingCaret: Bool)](uitextloupesession/move(to:withcaretrect:trackingcaret:).md)
+### Updating the loupe during the session
+- [func move(to: CGPoint, withCaretRect: CGRect, trackingCaret: Bool)](./move%28to,withcaretrect,trackingcaret%29.md)
   Moves the loupe to the specified point in the session’s associated view.
 
 

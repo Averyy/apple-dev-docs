@@ -1,7 +1,8 @@
 # symbolName
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SF Symbol icon that represents the hour weather condition and whether it’s daylight on the hour.
 

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Options that allow the model to use all available compute units.
 
@@ -24,7 +25,8 @@ The specialization process selects the combination of compute units that minimiz
 
 ## See Also
 
-- [static let cpuOnly: SpecializationOptions](specializationoptions/cpuonly.md)
+### Using preset options
+- [static let cpuOnly: SpecializationOptions](./cpuonly.md)
   Options that restrict compute to the CPU only.
 
 

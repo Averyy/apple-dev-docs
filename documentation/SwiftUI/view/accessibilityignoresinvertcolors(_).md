@@ -1,7 +1,8 @@
 # accessibilityIgnoresInvertColors(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether this view should ignore the system Smart Invert setting.
 
@@ -31,9 +32,10 @@ Use this modifier to suppress Smart Invert in a view that shouldn’t be inverte
 
 ## See Also
 
-- [var accessibilityInvertColors: Bool](environmentvalues/accessibilityinvertcolors.md)
+### Managing color
+- [var accessibilityInvertColors: Bool](../environmentvalues/accessibilityinvertcolors.md)
   Whether the system preference for Invert Colors is enabled.
-- [var accessibilityDifferentiateWithoutColor: Bool](environmentvalues/accessibilitydifferentiatewithoutcolor.md)
+- [var accessibilityDifferentiateWithoutColor: Bool](../environmentvalues/accessibilitydifferentiatewithoutcolor.md)
   Whether the system preference for Differentiate without Color is enabled.
 
 

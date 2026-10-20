@@ -1,7 +1,8 @@
 # RequestDescriptor.detectHumanBodyPose3DRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a 3D detect human body pose request.
 
@@ -21,9 +22,10 @@ case detectHumanBodyPose3DRequest(DetectHumanBodyPose3DRequest.Revision)
 
 ## See Also
 
-- [case detectHumanBodyPoseRequest(DetectHumanBodyPoseRequest.Revision)](requestdescriptor/detecthumanbodyposerequest(_:).md)
+### Getting the body and hand pose detection descriptor
+- [case detectHumanBodyPoseRequest(DetectHumanBodyPoseRequest.Revision)](./detecthumanbodyposerequest%28_%29.md)
   A descriptor that describes a detect human body pose request.
-- [case detectHumanHandPoseRequest(DetectHumanHandPoseRequest.Revision)](requestdescriptor/detecthumanhandposerequest(_:).md)
+- [case detectHumanHandPoseRequest(DetectHumanHandPoseRequest.Revision)](./detecthumanhandposerequest%28_%29.md)
   A descriptor that describes a detect human hand pose request.
 
 

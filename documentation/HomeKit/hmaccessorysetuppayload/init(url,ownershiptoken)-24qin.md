@@ -1,7 +1,8 @@
 # init(URL:ownershipToken:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

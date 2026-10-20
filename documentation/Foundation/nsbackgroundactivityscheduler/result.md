@@ -1,7 +1,8 @@
 # NSBackgroundActivityScheduler.Result
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants indicate whether background activity has been completed successfully or whether additional processing should be deferred until a more optimal time.
 
@@ -14,29 +15,34 @@ These constants indicate whether background activity has been completed successf
 enum Result
 ```
 
+```c
+enum NSBackgroundActivityResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSBackgroundActivityScheduler.Result.finished](nsbackgroundactivityscheduler/result/finished.md)
+- [NSBackgroundActivityScheduler.Result.finished](./result/finished.md)
   The activity has finished executing. If the activity repeats, the next invocation is scheduled by the system.
-- [NSBackgroundActivityScheduler.Result.deferred](nsbackgroundactivityscheduler/result/deferred.md)
+- [NSBackgroundActivityScheduler.Result.deferred](./result/deferred.md)
   System conditions have changed since the time the activity began executing, and deferral of additional work is recommended.
 ### Initializers
-- [init?(rawValue: Int)](nsbackgroundactivityscheduler/result/init(rawvalue:).md)
+- [init?(rawValue: Int)](./result/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum QualityOfService](qualityofservice.md)
+### Constants
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
 
 

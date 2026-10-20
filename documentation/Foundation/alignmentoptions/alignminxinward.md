@@ -1,7 +1,8 @@
 # alignMinXInward
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that alignment of the minimum X coordinate should be to the nearest inward integral value.
 
@@ -15,37 +16,42 @@ Specifies that alignment of the minimum X coordinate should be to the nearest in
 static var alignMinXInward: AlignmentOptions { get }
 ```
 
+```c
+NSAlignMinXInward
+```
+
 ## See Also
 
-- [static var alignMinYInward: AlignmentOptions](alignmentoptions/alignminyinward.md)
+### Constants
+- [static var alignMinYInward: AlignmentOptions](./alignminyinward.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest inward integral value.
-- [static var alignMaxXInward: AlignmentOptions](alignmentoptions/alignmaxxinward.md)
+- [static var alignMaxXInward: AlignmentOptions](./alignmaxxinward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest inward integral value.
-- [static var alignMaxYInward: AlignmentOptions](alignmentoptions/alignmaxyinward.md)
+- [static var alignMaxYInward: AlignmentOptions](./alignmaxyinward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest inward integral value.
-- [static var alignWidthInward: AlignmentOptions](alignmentoptions/alignwidthinward.md)
+- [static var alignWidthInward: AlignmentOptions](./alignwidthinward.md)
   Specifies that alignment of the width should be to the nearest inward integral value.
-- [static var alignHeightInward: AlignmentOptions](alignmentoptions/alignheightinward.md)
+- [static var alignHeightInward: AlignmentOptions](./alignheightinward.md)
   Specifies that alignment of the height should be to the nearest inward integral value.
-- [static var alignMinXOutward: AlignmentOptions](alignmentoptions/alignminxoutward.md)
+- [static var alignMinXOutward: AlignmentOptions](./alignminxoutward.md)
   Specifies that alignment of the minimum X coordinate should be to the nearest outward integral value.
-- [static var alignMinYOutward: AlignmentOptions](alignmentoptions/alignminyoutward.md)
+- [static var alignMinYOutward: AlignmentOptions](./alignminyoutward.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest outward integral value.
-- [static var alignMaxXOutward: AlignmentOptions](alignmentoptions/alignmaxxoutward.md)
+- [static var alignMaxXOutward: AlignmentOptions](./alignmaxxoutward.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest outward integral value.
-- [static var alignMaxYOutward: AlignmentOptions](alignmentoptions/alignmaxyoutward.md)
+- [static var alignMaxYOutward: AlignmentOptions](./alignmaxyoutward.md)
   Specifies that alignment of the maximum Y coordinate should be to the nearest outward integral value.
-- [static var alignWidthOutward: AlignmentOptions](alignmentoptions/alignwidthoutward.md)
+- [static var alignWidthOutward: AlignmentOptions](./alignwidthoutward.md)
   Specifies that alignment of the width should be to the nearest outward integral value.
-- [static var alignHeightOutward: AlignmentOptions](alignmentoptions/alignheightoutward.md)
+- [static var alignHeightOutward: AlignmentOptions](./alignheightoutward.md)
   Specifies that alignment of the height should be to the nearest outward integral value.
-- [static var alignMinXNearest: AlignmentOptions](alignmentoptions/alignminxnearest.md)
+- [static var alignMinXNearest: AlignmentOptions](./alignminxnearest.md)
   Specifies that alignment of the minimum X coordinate should be to the nearest integral value.
-- [static var alignMinYNearest: AlignmentOptions](alignmentoptions/alignminynearest.md)
+- [static var alignMinYNearest: AlignmentOptions](./alignminynearest.md)
   Specifies that alignment of the minimum Y coordinate should be to the nearest integral value.
-- [static var alignMaxXNearest: AlignmentOptions](alignmentoptions/alignmaxxnearest.md)
+- [static var alignMaxXNearest: AlignmentOptions](./alignmaxxnearest.md)
   Specifies that alignment of the maximum X coordinate should be to the nearest integral value.
-- [static var alignMaxYNearest: AlignmentOptions](alignmentoptions/alignmaxynearest.md)
+- [static var alignMaxYNearest: AlignmentOptions](./alignmaxynearest.md)
   Specifies that alignment of the maximum Y coordinate should be to the nearest integral value.
 
 

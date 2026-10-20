@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCIEventCorrectableError](1640345-anonymous/kiopcieventcorrectableerror.md)
-- [kIOPCIEventFatalError](1640345-anonymous/kiopcieventfatalerror.md)
-- [kIOPCIEventLinkEnableChange](1640345-anonymous/kiopcieventlinkenablechange.md)
-- [kIOPCIEventNonFatalError](1640345-anonymous/kiopcieventnonfatalerror.md)
+- [kIOPCIEventCorrectableError](./api-1640345-anonymous/kiopcieventcorrectableerror.md)
+- [kIOPCIEventFatalError](./api-1640345-anonymous/kiopcieventfatalerror.md)
+- [kIOPCIEventLinkEnableChange](./api-1640345-anonymous/kiopcieventlinkenablechange.md)
+- [kIOPCIEventNonFatalError](./api-1640345-anonymous/kiopcieventnonfatalerror.md)
 
 
 ---

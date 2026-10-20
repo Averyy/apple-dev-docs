@@ -1,7 +1,8 @@
 # updateChangeCount(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the change counter by indicating the kind of change.
 
@@ -17,25 +18,30 @@ Updates the change counter by indicating the kind of change.
 func updateChangeCount(_ change: UIDocument.ChangeKind)
 ```
 
+```objc
+- (void) updateChangeCount:(UIDocumentChangeKind) change;
+```
+
 #### Discussion
 
-Calling this method can affect the value returned by [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md). You shouldn’t need to call method this if you access an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object from the [`undoManager`](uidocument/undomanager.md) property (or assign a custom one to it) and register changes with the undo manager.
+Calling this method can affect the value returned by [`hasUnsavedChanges`](./hasunsavedchanges.md). You shouldn’t need to call method this if you access an [`UndoManager`](../../Foundation/undomanager.md) object from the [`undoManager`](./undomanager.md) property (or assign a custom one to it) and register changes with the undo manager.
 
 ## Parameters
 
-- `change`: A constant that indicates whether a change has been made, cleared, undone, or redone. See [`UIDocument.ChangeKind`](uidocument/changekind.md) for more information.
+- `change`: A constant that indicates whether a change has been made, cleared, undone, or redone. See [`UIDocument.ChangeKind`](./changekind.md) for more information.
 
 ## See Also
 
-- [var hasUnsavedChanges: Bool](uidocument/hasunsavedchanges.md)
+### Tracking changes and autosaving
+- [var hasUnsavedChanges: Bool](./hasunsavedchanges.md)
   A Boolean value that indicates whether the document has any unsaved changes.
-- [var undoManager: UndoManager!](uidocument/undomanager.md)
+- [var undoManager: UndoManager!](./undomanager.md)
   The undo manager for the document.
-- [func changeCountToken(for: UIDocument.SaveOperation) -> Any](uidocument/changecounttoken(for:).md)
+- [func changeCountToken(for: UIDocument.SaveOperation) -> Any](./changecounttoken%28for%29.md)
   Returns a change token for a specific save operation.
-- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](uidocument/updatechangecount(withtoken:for:).md)
+- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](./updatechangecount%28withtoken,for%29.md)
   Updates the change count with reference to a change-count token passed in by UIKit.
-- [func autosave(completionHandler: ((Bool) -> Void)?)](uidocument/autosave(completionhandler:).md)
+- [func autosave(completionHandler: ((Bool) -> Void)?)](./autosave%28completionhandler%29.md)
   Initiates automatic saving of documents with unsaved changes.
 
 

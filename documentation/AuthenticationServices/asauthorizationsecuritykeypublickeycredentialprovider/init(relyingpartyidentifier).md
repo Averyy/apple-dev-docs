@@ -1,7 +1,8 @@
 # init(relyingPartyIdentifier:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with a relying party identifier.
 
@@ -15,6 +16,10 @@ Creates the object with a relying party identifier.
 
 ```swift
 init(relyingPartyIdentifier: String)
+```
+
+```objc
+- (instancetype) initWithRelyingPartyIdentifier:(NSString *) relyingPartyIdentifier;
 ```
 
 ## Parameters

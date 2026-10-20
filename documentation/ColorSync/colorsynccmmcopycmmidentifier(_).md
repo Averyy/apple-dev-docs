@@ -1,7 +1,8 @@
 # ColorSyncCMMCopyCMMIdentifier(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the identifier of a CMM.
 
@@ -15,6 +16,10 @@ Copies the identifier of a CMM.
 func ColorSyncCMMCopyCMMIdentifier(_: ColorSyncCMM!) -> Unmanaged<CFString>?
 ```
 
+```c
+extern CFStringRefColorSyncCMMCopyCMMIdentifier(ColorSyncCMMRef );
+```
+
 #### Return Value
 
 The identifier of the CMM.
@@ -25,17 +30,18 @@ Use this function to get the identifier of the built-in CMM.
 
 ## See Also
 
-- [class ColorSyncCMM](colorsynccmm.md)
+### Working with CMMs
+- [class ColorSyncCMM](./colorsynccmm.md)
   A reference to a Color Management Module (CMM).
-- [func ColorSyncCMMCreate(CFBundle!) -> Unmanaged<ColorSyncCMM>?](colorsynccmmcreate(_:).md)
+- [func ColorSyncCMMCreate(CFBundle!) -> Unmanaged<ColorSyncCMM>?](./colorsynccmmcreate%28_%29.md)
   Creates a CMM object from a CMM bundle.
-- [func ColorSyncCMMCopyLocalizedName(ColorSyncCMM!) -> Unmanaged<CFString>?](colorsynccmmcopylocalizedname(_:).md)
+- [func ColorSyncCMMCopyLocalizedName(ColorSyncCMM!) -> Unmanaged<CFString>?](./colorsynccmmcopylocalizedname%28_%29.md)
   Copies the localized name of a CMM.
-- [func ColorSyncCMMGetBundle(ColorSyncCMM!) -> Unmanaged<CFBundle>?](colorsynccmmgetbundle(_:).md)
+- [func ColorSyncCMMGetBundle(ColorSyncCMM!) -> Unmanaged<CFBundle>?](./colorsynccmmgetbundle%28_%29.md)
   Returns the bundle associated with a CMM.
-- [func ColorSyncCMMGetTypeID() -> CFTypeID](colorsynccmmgettypeid().md)
+- [func ColorSyncCMMGetTypeID() -> CFTypeID](./colorsynccmmgettypeid%28%29.md)
   Returns the `CFTypeID` for `ColorSyncCMM`s.
-- [func ColorSyncIterateInstalledCMMs(ColorSyncCMMIterateCallback!, UnsafeMutableRawPointer?)](colorsynciterateinstalledcmms(_:_:).md)
+- [func ColorSyncIterateInstalledCMMs(ColorSyncCMMIterateCallback!, UnsafeMutableRawPointer?)](./colorsynciterateinstalledcmms%28_,_%29.md)
   Iterates over the installed CMMs, invoking a callback for each one.
 
 

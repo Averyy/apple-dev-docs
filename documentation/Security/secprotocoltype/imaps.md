@@ -1,7 +1,8 @@
 # SecProtocolType.IMAPS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates IMAP4 over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates IMAP4 over TLS/SSL.
 
 ```swift
 case IMAPS
+```
+
+```c
+kSecProtocolTypeIMAPS
 ```
 
 

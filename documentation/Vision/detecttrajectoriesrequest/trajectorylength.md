@@ -1,7 +1,8 @@
 # trajectoryLength
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of points to detect before calculating a trajectory.
 
@@ -22,11 +23,12 @@ final let trajectoryLength: Int
 
 ## See Also
 
-- [var objectMaximumNormalizedRadius: Float](detecttrajectoriesrequest/objectmaximumnormalizedradius.md)
+### Configuring a request
+- [var objectMaximumNormalizedRadius: Float](./objectmaximumnormalizedradius.md)
   The maximum radius of the bounding circle of the object to track.
-- [var objectMinimumNormalizedRadius: Float](detecttrajectoriesrequest/objectminimumnormalizedradius.md)
+- [var objectMinimumNormalizedRadius: Float](./objectminimumnormalizedradius.md)
   The minimum radius of the bounding circle of the object to track.
-- [var targetFrameTime: CMTime](detecttrajectoriesrequest/targetframetime.md)
+- [var targetFrameTime: CMTime](./targetframetime.md)
   The requested target frame time for processing trajectory detection.
 
 

@@ -1,7 +1,8 @@
 # MIDISetupAddDevice(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a driver-owned MIDI device to the current MIDI setup.
 
@@ -18,6 +19,10 @@ Adds a driver-owned MIDI device to the current MIDI setup.
 func MIDISetupAddDevice(_ device: MIDIDeviceRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDISetupAddDevice(MIDIDeviceRef device);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
@@ -32,7 +37,8 @@ Only MIDI drivers may call this function.
 
 ## See Also
 
-- [func MIDISetupRemoveDevice(MIDIDeviceRef) -> OSStatus](midisetupremovedevice(_:).md)
+### Managing Devices
+- [func MIDISetupRemoveDevice(MIDIDeviceRef) -> OSStatus](./midisetupremovedevice%28_%29.md)
   Removes a driver-owned MIDI device from the current MIDI setup.
 
 

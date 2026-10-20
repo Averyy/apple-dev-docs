@@ -1,7 +1,8 @@
 # beginRefundRequest(in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the refund request sheet for the transaction in a window scene.
 
@@ -19,45 +20,46 @@ func beginRefundRequest(in scene: UIWindowScene) async throws -> Transaction.Ref
 
 ## Mentions
 
-- [Testing refund requests](testing-refund-requests.md)
+- [Testing refund requests](../testing-refund-requests.md)
 
 #### Return Value
 
-[`Transaction.RefundRequestStatus`](transaction/refundrequeststatus.md)
+[`Transaction.RefundRequestStatus`](./refundrequeststatus.md)
 
 #### Discussion
 
-Call this function from account settings or a help menu to enable customers to request a refund for an Apple In-App Purchase within your app. When you call this function, the system displays a refund sheet with the customer’s purchase details and a list of reason codes for the customer to choose from. For design guidance, see [`Human Interface Guidelines > Apple In-App Purchase > Providing help with Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/#providing-help-with-in-app-purchases).
+Call this function from account settings or a help menu to enable customers to request a refund for an Apple In-App Purchase within your app. When you call this function, the system displays a refund sheet with the customer’s purchase details and a list of reason codes for the customer to choose from. For design guidance, see [Human Interface Guidelines > Apple In-App Purchase > Providing help with Apple In-App Purchases](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase/overview/introduction/#providing-help-with-in-app-purchases).
 
-When a customer requests a refund for consumable Apple In-App Purchases through your app, the App Stores sends a `CONSUMPTION_REQUEST` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) to your server. If the customer provided consent, respond by sending consumption data to the App Store using the [`Send Consumption Information`](https://developer.apple.com/documentation/appstoreserverapi/send-consumption-information) endpoint. If not, don’t respond to the `CONSUMPTION_REQUEST` notification.
+When a customer requests a refund for consumable Apple In-App Purchases through your app, the App Stores sends a `CONSUMPTION_REQUEST` [`notificationType`](../../AppStoreServerNotifications/notificationtype.md) to your server. If the customer provided consent, respond by sending consumption data to the App Store using the [`Send Consumption Information`](../../AppStoreServerAPI/send-consumption-information.md) endpoint. If not, don’t respond to the `CONSUMPTION_REQUEST` notification.
 
 The App Store takes up to 48 hours to either approve or deny a refund.
 
-For information about setting up your server to receive notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md).
+For information about setting up your server to receive notifications, see [Enabling App Store Server Notifications](../enabling-app-store-server-notifications.md).
 
-> **Note**:  If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](https://developer.apple.com/documentation/swiftui/view/refundrequestsheet(for:ispresented:ondismiss:)) instead. For example usage, see [`Food Truck: Building a SwiftUI multiplatform app`](https://developer.apple.com/documentation/swiftui/food-truck-building-a-swiftui-multiplatform-app).
+> **Note**:  If your app uses SwiftUI, use [`refundRequestSheet(for:isPresented:onDismiss:)`](../../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md) instead. For example usage, see [Food Truck: Building a SwiftUI multiplatform app](../../SwiftUI/food-truck-building-a-swiftui-multiplatform-app.md).
 
-##### Test Refund Requests
+##### Test refund requests
 
-The sandbox environment and StoreKit Testing in Xcode both support testing refund requests. For more information, see [`Testing refund requests`](testing-refund-requests.md).
+The sandbox environment and StoreKit Testing in Xcode both support testing refund requests. For more information, see [Testing refund requests](../testing-refund-requests.md).
 
 ## Parameters
 
-- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) that the system displays the sheet on.
+- `scene`: The [`UIWindowScene`](../../UIKit/uiwindowscene.md) that the system displays the sheet on.
 
 ## See Also
 
-- [Testing refund requests](testing-refund-requests.md)
+### Requesting refunds
+- [Testing refund requests](../testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
-- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(in:)-63bvd.md)
+- [func beginRefundRequest(in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28in%29-63bvd.md)
   Presents the refund request sheet for the transaction in a view controller.
-- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-65tph.md)
+- [static func beginRefundRequest(for: UInt64, in: UIWindowScene) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-65tph.md)
   Presents the refund request sheet for the specified transaction in a window scene.
-- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](transaction/beginrefundrequest(for:in:)-9mscy.md)
+- [static func beginRefundRequest(for: UInt64, in: NSViewController) async throws -> Transaction.RefundRequestStatus](./beginrefundrequest%28for,in%29-9mscy.md)
   Presents the refund request sheet for the specified transaction in a view controller.
-- [Transaction.RefundRequestError](transaction/refundrequesterror.md)
+- [Transaction.RefundRequestError](./refundrequesterror.md)
   The error codes for refund requests.
-- [Transaction.RefundRequestStatus](transaction/refundrequeststatus.md)
+- [Transaction.RefundRequestStatus](./refundrequeststatus.md)
   The status codes for refund requests.
 
 

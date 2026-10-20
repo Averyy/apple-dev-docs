@@ -1,17 +1,22 @@
 # availableFontNames(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the names of the fonts available in the system whose traits are described exactly by the given font trait mask (not the `NSFont` objects themselves).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func availableFontNames(with someTraits: NSFontTraitMask) -> [String]?
+```
+
+```objc
+- (NSArray<NSString *> *) availableFontNamesWithTraits:(NSFontTraitMask) someTraits;
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ If `someTraits` is 0, this method returns all fonts that are neither italic nor 
 
 ## See Also
 
-- [var availableFonts: [String]](nsfontmanager/availablefonts.md)
-  The names of the fonts available in the system (not the [`NSFont`](nsfont.md) objects themselves).
-- [var availableFontFamilies: [String]](nsfontmanager/availablefontfamilies.md)
+### Getting Available Fonts
+- [var availableFonts: [String]](./availablefonts.md)
+  The names of the fonts available in the system (not the [`NSFont`](../nsfont.md) objects themselves).
+- [var availableFontFamilies: [String]](./availablefontfamilies.md)
   The names of the font families available in the system.
-- [func availableMembers(ofFontFamily: String) -> [[Any]]?](nsfontmanager/availablemembers(offontfamily:).md)
+- [func availableMembers(ofFontFamily: String) -> [[Any]]?](./availablemembers%28offontfamily%29.md)
   Returns an array with one entry for each available member of a font family.
 
 

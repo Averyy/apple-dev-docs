@@ -1,7 +1,8 @@
 # signingID
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 16.1+
@@ -11,6 +12,10 @@
 
 ```swift
 var signingID: String? { get }
+```
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * signingID;
 ```
 
 

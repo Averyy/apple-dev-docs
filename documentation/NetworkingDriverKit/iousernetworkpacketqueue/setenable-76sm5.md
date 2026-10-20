@@ -1,16 +1,17 @@
 # SetEnable
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetEnable(bool isEnable);
 ```
 

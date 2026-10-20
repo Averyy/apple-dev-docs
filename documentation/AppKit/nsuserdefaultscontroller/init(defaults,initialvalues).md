@@ -1,17 +1,22 @@
 # init(defaults:initialValues:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized NSUserDefaultsController object using the NSUserDefaults instance specified in `defaults` and the initial default values contained in the `initialValues` dictionary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(defaults: UserDefaults?, initialValues: [String : Any]?)
+```
+
+```objc
+- (instancetype) initWithDefaults:(NSUserDefaults *) defaults initialValues:(NSDictionary<NSString *,id> *) initialValues;
 ```
 
 #### Discussion
@@ -22,7 +27,8 @@ This method is the designated initializer.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nsuserdefaultscontroller/init(coder:).md)
+### Initializing a user defaults controller
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

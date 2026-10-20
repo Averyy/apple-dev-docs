@@ -1,7 +1,8 @@
 # AudioComponentInstanceDispose(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disposes of an audio component instance.
 
@@ -19,6 +20,10 @@ Disposes of an audio component instance.
 func AudioComponentInstanceDispose(_ inInstance: AudioComponentInstance) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioComponentInstanceDispose(AudioComponentInstance inInstance);
+```
+
 #### Return Value
 
 A result code.
@@ -29,13 +34,14 @@ A result code.
 
 ## See Also
 
-- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](audiocomponentinstancenew(_:_:).md)
+### Creating an Audio Component Instance
+- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](./audiocomponentinstancenew%28_,_%29.md)
   Creates a new instance of an audio component.
-- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](audiocomponentinstantiate(_:_:_:).md)
-- [typealias AudioComponent](audiocomponent.md)
+- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](./audiocomponentinstantiate%28_,_,_%29.md)
+- [typealias AudioComponent](./audiocomponent.md)
   An audio component.
-- [struct AudioComponentInstantiationOptions](audiocomponentinstantiationoptions.md)
-- [Audio Component Errors](1619490-audio-component-errors.md)
+- [struct AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions.md)
+- [Audio Component Errors](./api-1619490-audio-component-errors.md)
 
 
 ---

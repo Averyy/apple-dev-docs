@@ -1,7 +1,8 @@
 # AlternativeDistributionPackage.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution package resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an alternative distribution package resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackage.Attributes
 ```
 

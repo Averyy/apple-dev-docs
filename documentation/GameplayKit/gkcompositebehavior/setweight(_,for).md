@@ -1,7 +1,8 @@
 # setWeight(_:for:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the weight for the specified individual behavior’s influence on agents, adding that behavior to the composite behavior if it is not already present.
 
@@ -19,6 +20,10 @@ Sets the weight for the specified individual behavior’s influence on agents, a
 func setWeight(_ weight: Float, for behavior: GKBehavior)
 ```
 
+```objc
+- (void) setWeight:(float) weight forBehavior:(GKBehavior *) behavior;
+```
+
 #### Discussion
 
 When an agent evaluates a composite behavior, it examines all goals across all of the individual behaviors it contains. For each goal, the agent calculates the change in direction and speed necessary to move toward fulfilling that goal (within the limits of the current time step and the agent’s maximum speed and turn rate). The agent then combines these influences to determine the total change in direction and speed for the current time step.
@@ -34,13 +39,14 @@ You can use this method to vary the behaviors in your game in response to player
 
 ## See Also
 
-- [func weight(for: GKBehavior) -> Float](gkcompositebehavior/weight(for:).md)
+### Managing the Individual Behaviors in a Composite Behavior
+- [func weight(for: GKBehavior) -> Float](./weight%28for%29.md)
   Returns the weight for the specified individual behavior’s influence on agents.
-- [func remove(GKBehavior)](gkcompositebehavior/remove(_:).md)
+- [func remove(GKBehavior)](./remove%28_%29.md)
   Removes the specified individual behavior from the composite behavior.
-- [func removeAllBehaviors()](gkcompositebehavior/removeallbehaviors.md)
+- [func removeAllBehaviors()](./removeallbehaviors%28%29.md)
   Removes all individual behaviors from the composite behavior.
-- [var behaviorCount: Int](gkcompositebehavior/behaviorcount.md)
+- [var behaviorCount: Int](./behaviorcount.md)
   The number of individual behaviors in the composite behavior.
 
 

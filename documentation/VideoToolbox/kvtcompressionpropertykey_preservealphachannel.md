@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_PreserveAlphaChannel
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies whether to encode the alpha channel of input video frames.
 
@@ -19,6 +20,10 @@ A key that specifies whether to encode the alpha channel of input video frames.
 let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_PreserveAlphaChannel;
+```
+
 #### Discussion
 
 Set this property to false in cases where you’re not interested in preserving alpha, or if you know the alpha channel to be fully opaque.
@@ -27,15 +32,16 @@ This property isn’t supported by all encoders.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_Depth: CFString](kvtcompressionpropertykey_depth.md)
+### Bitstream Configuration
+- [let kVTCompressionPropertyKey_Depth: CFString](./kvtcompressionpropertykey_depth.md)
   The pixel depth of the encoded video.
-- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](kvtcompressionpropertykey_h264entropymode.md)
+- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](./kvtcompressionpropertykey_h264entropymode.md)
   The entropy encoding mode for H.264 compression.
-- [let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString](kvtcompressionpropertykey_hdrmetadatainsertionmode.md)
-- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](kvtcompressionpropertykey_outputbitdepth.md)
-- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](kvtcompressionpropertykey_preservedynamichdrmetadata.md)
+- [let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString](./kvtcompressionpropertykey_hdrmetadatainsertionmode.md)
+- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](./kvtcompressionpropertykey_outputbitdepth.md)
+- [let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString](./kvtcompressionpropertykey_preservedynamichdrmetadata.md)
   Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
-- [let kVTCompressionPropertyKey_ProfileLevel: CFString](kvtcompressionpropertykey_profilelevel.md)
+- [let kVTCompressionPropertyKey_ProfileLevel: CFString](./kvtcompressionpropertykey_profilelevel.md)
   The profile and level for the encoded bitstream.
 
 

@@ -1,7 +1,8 @@
 # matchedGeometry
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the matched geometry glass effect transition.
 
@@ -21,7 +22,7 @@ static var matchedGeometry: GlassEffectTransition { get }
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
 #### Discussion
 
@@ -29,7 +30,7 @@ The matched geometry transition allows the geometries of glass shapes during an 
 
 For example, if a newly appearing shape is within the spacing of any existing shape, it will use that shapes geometry to transition out of.
 
-When using the [`default`](animation/default.md), this transition applies additional scale and offset effects to content when the identity of the shape does not change but its content does. Opt out of these additional animations by providing a specific animation like [`spring`](animation/spring.md).
+When using the [`default`](../animation/default.md), this transition applies additional scale and offset effects to content when the identity of the shape does not change but its content does. Opt out of these additional animations by providing a specific animation like [`spring`](../animation/spring.md).
 
 
 ---

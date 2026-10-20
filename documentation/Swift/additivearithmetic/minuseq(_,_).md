@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Subtracts the second value from the first and stores the difference in the left-hand-side variable.
@@ -25,6 +26,12 @@ static func -= (lhs: inout Self, rhs: Self)
 
 - `lhs`: A numeric value.
 - `rhs`: The value to subtract from `lhs`.
+
+## Default Implementations
+
+### AdditiveArithmetic Implementations
+- [static func -= (inout Self, Self)](./minuseq%28_,_%29-27vve.md)
+  Subtracts the second value from the first and stores the difference in the left-hand-side variable.
 
 
 ---

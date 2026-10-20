@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the popover.
 
@@ -13,6 +14,10 @@ The delegate of the popover.
 ```swift
 @IBOutlet
 weak var delegate: (any NSPopoverDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSPopoverDelegate> delegate;
 ```
 
 

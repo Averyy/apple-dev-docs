@@ -1,10 +1,13 @@
 # init(forControlTint:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 11.0
+
+> **Deprecated**: NSControlTint does not describe the full range of available control accent colors. Use +[NSColor controlAccentColor] instead.
 
 ## Declaration
 

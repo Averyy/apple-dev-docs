@@ -1,7 +1,8 @@
 # URLError.BackgroundTaskCancelledReason
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of reasons used to explain the cancellation of a background task.
 
@@ -23,39 +24,40 @@ enum BackgroundTaskCancelledReason
 ## Topics
 
 ### Cancellation reasons
-- [URLError.BackgroundTaskCancelledReason.backgroundUpdatesDisabled](urlerror/backgroundtaskcancelledreason-swift.enum/backgroundupdatesdisabled.md)
+- [URLError.BackgroundTaskCancelledReason.backgroundUpdatesDisabled](./backgroundtaskcancelledreason-swift.enum/backgroundupdatesdisabled.md)
   A reason that indicates the system canceled the background task because background tasks are disabled.
-- [URLError.BackgroundTaskCancelledReason.insufficientSystemResources](urlerror/backgroundtaskcancelledreason-swift.enum/insufficientsystemresources.md)
+- [URLError.BackgroundTaskCancelledReason.insufficientSystemResources](./backgroundtaskcancelledreason-swift.enum/insufficientsystemresources.md)
   A reason that indicates the system canceled the background task because it lacks sufficient resources to perform the task.
-- [URLError.BackgroundTaskCancelledReason.userForceQuitApplication](urlerror/backgroundtaskcancelledreason-swift.enum/userforcequitapplication.md)
+- [URLError.BackgroundTaskCancelledReason.userForceQuitApplication](./backgroundtaskcancelledreason-swift.enum/userforcequitapplication.md)
   A reason that indicates the system canceled the background task because the user force-quit the application.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var failingURL: URL?](urlerror/failingurl.md)
+### Error details
+- [var failingURL: URL?](./failingurl.md)
   The URL which caused a load to fail.
-- [var failureURLPeerTrust: SecTrust?](urlerror/failureurlpeertrust.md)
+- [var failureURLPeerTrust: SecTrust?](./failureurlpeertrust.md)
   The state of a failed SSL handshake.
-- [var failureURLString: String?](urlerror/failureurlstring.md)
+- [var failureURLString: String?](./failureurlstring.md)
   The string for the URL which caused a load to fail.
-- [var downloadTaskResumeData: Data?](urlerror/downloadtaskresumedata.md)
+- [var downloadTaskResumeData: Data?](./downloadtaskresumedata.md)
   An opaque data object used to resume a failed download task.
-- [var backgroundTaskCancelledReason: URLError.BackgroundTaskCancelledReason?](urlerror/backgroundtaskcancelledreason-swift.property.md)
+- [var backgroundTaskCancelledReason: URLError.BackgroundTaskCancelledReason?](./backgroundtaskcancelledreason-swift.property.md)
   The reason for canceling a background task.
-- [var networkUnavailableReason: URLError.NetworkUnavailableReason?](urlerror/networkunavailablereason-swift.property.md)
+- [var networkUnavailableReason: URLError.NetworkUnavailableReason?](./networkunavailablereason-swift.property.md)
   The reason the network was unavailable for a task.
-- [URLError.NetworkUnavailableReason](urlerror/networkunavailablereason-swift.enum.md)
+- [URLError.NetworkUnavailableReason](./networkunavailablereason-swift.enum.md)
   An enumeration of reasons explaining why a task couldn’t satisfy networking constraints.
 
 

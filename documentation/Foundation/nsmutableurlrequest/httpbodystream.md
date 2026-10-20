@@ -1,7 +1,8 @@
 # httpBodyStream
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request body as an input stream.
 
@@ -20,21 +21,26 @@ The request body as an input stream.
 var httpBodyStream: InputStream? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSInputStream * HTTPBodyStream;
+```
+
 #### Discussion
 
 The request body of the receiver will be this input stream. The entire contents of the stream will be sent as the body, as in an HTTP `POST` request. The input stream should be unopened and the receiver will take over as the stream’s delegate.
 
-Setting a body stream clears any data in [`httpBody`](nsmutableurlrequest/httpbody.md). These values are mutually exclusive.
+Setting a body stream clears any data in [`httpBody`](./httpbody.md). These values are mutually exclusive.
 
 ## See Also
 
-- [var httpMethod: String](nsmutableurlrequest/httpmethod.md)
+### Accessing request components
+- [var httpMethod: String](./httpmethod.md)
   The HTTP request method.
-- [var url: URL?](nsmutableurlrequest/url.md)
+- [var url: URL?](./url.md)
   The URL being requested.
-- [var httpBody: Data?](nsmutableurlrequest/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The request body.
-- [var mainDocumentURL: URL?](nsmutableurlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./maindocumenturl.md)
   The main document URL.
 
 

@@ -1,14 +1,19 @@
 # weakWithSpecification
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
+static IOReturn weakWithSpecification(IODMACommand **newCommand, SegmentFunction outSegFunc, UInt8 numAddressBits, UInt64 maxSegmentSize, MappingOptions mapType, UInt64 maxTransferSize, UInt32 alignment, IOMapper *mapper, void *refCon);
+```
+
+```c
 IOReturn weakWithSpecification(IODMACommand **newCommand, SegmentFunction outSegFunc, UInt8 numAddressBits, UInt64 maxSegmentSize, MappingOptions mapType, UInt64 maxTransferSize, UInt32 alignment, IOMapper *mapper, void *refCon);
 ```
 

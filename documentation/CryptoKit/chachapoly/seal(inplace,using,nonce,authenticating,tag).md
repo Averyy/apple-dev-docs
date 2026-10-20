@@ -1,7 +1,8 @@
 # seal(inPlace:using:nonce:authenticating:tag:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Secures the given plaintext message in place with encryption and an authentication tag.
 

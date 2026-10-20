@@ -1,43 +1,55 @@
 # Uploading App Previews
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Sample Code  
+**Download**: [UploadingAppPreviews.zip](https://docs-assets.developer.apple.com/published/a3aad0a69102/UploadingAppPreviews.zip)
 
 Upload your app previews, including video files, to App Store Connect by using the asset upload APIs.
 
 #### Overview
 
-> **Note**:  The app preview and app preview set resources this sample uses are deprecated. Manage app preview media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+> **Note**:  The app preview and app preview set resources this sample uses are deprecated. Manage app preview media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 
 This sample code includes a script written in Python that uploads a video as an app preview for an app. To run this sample, you must have an app in App Store Connect with a version in the “Prepare for Submission” state, and an app preview file to upload. You’ll also need your API key.
 
 The sample’s script first generates an authentication token, so it can call the App Store Connect API. It then creates an app preview set or uses an existing one, if one exists. The script then reserves a new app preview associated with the app preview set, uploads the binary data, and commits the upload.
 
-For more information about the process of uploading assets, see [`Uploading Assets to App Store Connect`](uploading-assets-to-app-store-connect.md).
+For more information about the process of uploading assets, see [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md).
 
 ##### Configure the Sample Code Project
 
 This project requires Python 3, which is pre-installed on macOS 10.15. It uses Python’s `pipenv` dependency management system, which you need to install. Follow these steps to install `pipenv` and the required Python modules:
 
 1. Open the Terminal app by typing Command-space and entering “Terminal.app” in the Spotlight search field.
-2. In Terminal, enter: ```console
-pip3 install --user pipenv
-``` If you’re prompted to install Xcode command line tools, follow the prompts. When installation is complete, run the above command again.
-3. In Terminal, navigate to the folder that contains this sample project: ```console
- cd UploadingAppPreviews
-```
-4. Install the Python modules by entering: ```console
-~/Library/Python/3.7/bin/pipenv install
-``` If you’ve installed your own version of Python, the `pipenv` path may be different.
+2. In Terminal, enter:
 
-##### Add the Api Key to the Script and Prepare the Upload
+   ```console
+   pip3 install --user pipenv
+   ```
+
+   If you’re prompted to install Xcode command line tools, follow the prompts. When installation is complete, run the above command again.
+3. In Terminal, navigate to the folder that contains this sample project:
+
+   ```console
+    cd UploadingAppPreviews
+   ```
+4. Install the Python modules by entering:
+
+   ```console
+   ~/Library/Python/3.7/bin/pipenv install
+   ```
+
+   If you’ve installed your own version of Python, the `pipenv` path may be different.
+
+##### Add the API Key to the Script and Prepare the Upload
 
 Prepare to run the script by following these steps:
 
-1. Add your API key to the script by editing the *upload-preview.py* file and adding your API Key information to the KEY CONFIGURATION section at the top of the file. To find your API key, log in to App Store Connect and open the [`Users & Access`](https://developer.apple.comhttps://appstoreconnect.apple.com/access/api) module. The key is found in the Keys tab. For more information, see [`Creating API Keys for App Store Connect API`](creating-api-keys-for-app-store-connect-api.md).
-2. Make sure the video file you’d like to upload is available on your local machine. For more information about app previews, including technical specifications, see [`Show More with App Previews`](https://developer.apple.comhttps://developer.apple.com/app-store/app-previews/).
+1. Add your API key to the script by editing the *upload-preview.py* file and adding your API Key information to the KEY CONFIGURATION section at the top of the file. To find your API key, log in to App Store Connect and open the [Users & Access](https://appstoreconnect.apple.com/access/api) module. The key is found in the Keys tab. For more information, see [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md).
+2. Make sure the video file you’d like to upload is available on your local machine. For more information about app previews, including technical specifications, see [Show More with App Previews](https://developer.apple.com/app-store/app-previews/).
 3. Your app must be in App Store Connect with a version in the “Prepare for Submission” state. To upload the app preview, you’ll need the `bundle id`, `platform`, `version number`, and `locale` of this app.
 
-##### Provide Command Line Parameters to Run the Script
+##### Provide Command-Line Parameters to Run the Script
 
 On the command line, run this command, replacing the parameters with actual values:
 
@@ -48,10 +60,10 @@ On the command line, run this command, replacing the parameters with actual valu
 The command-line parameters are:
 
 - `{bundle id}`—Your app’s bundle ID.
-- `{platform}` — Your app’s platform. See [`Platform`](platform.md) for valid values.
+- `{platform}` — Your app’s platform. See [`Platform`](./platform.md) for valid values.
 - `{version}` — The version of your app to which the preview applies.
-- `{locale}` — The locale to which the preview applies. See [`Create an app info localization`](post-v1-appinfolocalizations.md) for valid values.
-- `{preview type}` — The type of preview. See [`PreviewType`](previewtype.md) for valid values.
+- `{locale}` — The locale to which the preview applies. See [`Create an app info localization`](./post-v1-appinfolocalizations.md) for valid values.
+- `{preview type}` — The type of preview. See [`PreviewType`](./previewtype.md) for valid values.
 - `{path to video file}` — The path to the video file on your computer.
 
 The following example replaces `{bundle id}` with `com.mycompany.MyApp`; `{platform}` with `IOS`; `{version}` with `1.0`; `{locale}` with `en-US`;  `{preview type}` with `IPHONE_65`; and `{path to video file}` with`../my-video.mp4`.
@@ -252,11 +264,12 @@ App Store Connect processes the asset asynchronously. Check the upload’s statu
 
 ## See Also
 
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
+### Managing App Previews
+- [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md)
   Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
-- [App Preview Sets](app-preview-sets.md)
+- [App Preview Sets](./app-preview-sets.md)
   Create sets of app previews to upload to App Store Connect.
-- [App Previews](app-previews.md)
+- [App Previews](./app-previews.md)
   Upload and download app previews for an app locale and display target.
 
 

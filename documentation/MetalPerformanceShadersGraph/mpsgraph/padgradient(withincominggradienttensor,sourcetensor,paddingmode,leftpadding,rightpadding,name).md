@@ -1,7 +1,8 @@
 # padGradient(withIncomingGradientTensor:sourceTensor:paddingMode:leftPadding:rightPadding:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a padding gradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a padding gradient operation and returns the result tensor.
 
 ```swift
 func padGradient(withIncomingGradientTensor incomingGradientTensor: MPSGraphTensor, sourceTensor: MPSGraphTensor, paddingMode: MPSGraphPaddingMode, leftPadding: [NSNumber], rightPadding: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) padGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor paddingMode:(MPSGraphPaddingMode) paddingMode leftPadding:(MPSShape *) leftPadding rightPadding:(MPSShape *) rightPadding name:(NSString *) name;
 ```
 
 #### Return Value

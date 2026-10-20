@@ -1,7 +1,8 @@
 # standardizedFileURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A standardized version of the path of a file URL.
 
@@ -26,17 +27,18 @@ If the `isFileURL` is false, this method returns `self`.
 
 ## See Also
 
-- [var baseURL: URL?](url/baseurl.md)
+### Accessing URL representations
+- [var baseURL: URL?](./baseurl.md)
   The base URL.
-- [var absoluteString: String](url/absolutestring.md)
+- [var absoluteString: String](./absolutestring.md)
   The absolute string for the URL.
-- [var absoluteURL: URL](url/absoluteurl.md)
+- [var absoluteURL: URL](./absoluteurl.md)
   The absolute URL.
-- [var relativePath: String](url/relativepath.md)
+- [var relativePath: String](./relativepath.md)
   The relative path of the URL if the URL conforms to RFC 3986, otherwise nil.
-- [var relativeString: String](url/relativestring.md)
+- [var relativeString: String](./relativestring.md)
   The relative portion of a URL.
-- [var standardized: URL](url/standardized.md)
+- [var standardized: URL](./standardized.md)
   A version of the URL with any instances of “..” or “.” resolved in its path.
 
 

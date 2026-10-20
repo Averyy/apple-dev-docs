@@ -1,17 +1,22 @@
 # NSDeleteFunctionKey
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The forward delete key.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var NSDeleteFunctionKey: Int { get }
+```
+
+```c
+NSDeleteFunctionKey
 ```
 
 

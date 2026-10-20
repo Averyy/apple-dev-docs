@@ -1,7 +1,8 @@
 # books
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the books domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the books domain.
 ```swift
 static var books: some AppSchema.BooksEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

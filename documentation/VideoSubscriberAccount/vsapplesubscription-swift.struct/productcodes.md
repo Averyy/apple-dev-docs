@@ -1,7 +1,8 @@
 # productCodes
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of product codes for Apple services the customer subscribes to.
 
@@ -20,7 +21,8 @@ var productCodes: [String] { get set }
 
 ## See Also
 
-- [var customerID: String](vsapplesubscription-swift.struct/customerid.md)
+### Identifying a subscription
+- [var customerID: String](./customerid.md)
   The identifier of the customer as previously reported to Apple.
 
 

@@ -1,7 +1,8 @@
 # render(using:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes draw calls for the frame into the given command buffer using a caller-controlled render callback.
 
@@ -30,9 +31,10 @@ You are responsible for committing the command buffer after this call returns.
 
 ## See Also
 
-- [LowLevelRenderer.RenderState](lowlevelrenderer/renderstate.md)
+### Rendering a frame
+- [LowLevelRenderer.RenderState](./renderstate.md)
   The per-frame render state passed to the `render(using:_:)` callback.
-- [LowLevelRenderer.Resources](lowlevelrenderer/resources.md)
+- [LowLevelRenderer.Resources](./resources.md)
   Prepared GPU resources for a renderer.
 
 

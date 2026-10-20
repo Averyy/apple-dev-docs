@@ -1,7 +1,8 @@
 # invalidLedger
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A ledger was required but not supplied.
 

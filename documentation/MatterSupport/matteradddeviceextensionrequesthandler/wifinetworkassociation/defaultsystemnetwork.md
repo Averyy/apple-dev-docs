@@ -1,7 +1,8 @@
 # defaultSystemNetwork
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current Wi-Fi network of the iOS device.
 
@@ -10,7 +11,7 @@ The current Wi-Fi network of the iOS device.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ static var defaultSystemNetwork: MatterAddDeviceExtensionRequestHandler.WiFiNetw
 
 ## See Also
 
-- [static func network(ssid: Data, credentials: Data) -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](matteradddeviceextensionrequesthandler/wifinetworkassociation/network(ssid:credentials:).md)
+### Getting network information
+- [static func network(ssid: Data, credentials: Data) -> MatterAddDeviceExtensionRequestHandler.WiFiNetworkAssociation](./network%28ssid,credentials%29.md)
   Maintains information about a specific Wi-Fi network.
 
 

@@ -1,7 +1,8 @@
 # cameraGrain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables or disables an image noise effect for virtual content.
 
@@ -24,11 +25,11 @@ Images from a camera may contain a small amount of noise, called *camera grain*,
 
 | Without camera grain | With camera grain |
 | --- | --- |
-| ![A screenshot of a scene with a blue sphere on a white surface. The white surface has grain, but the blue sphere does not, which makes the sphere appear out of place.](/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-without.jpg) | ![A screenshot of a scene with a blue sphere on a white surface. The white surface and the sphere both have gain, which makes the sphere better blend into the surroundings.](/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-with.jpg) |
+| ![A screenshot of a scene with a blue sphere on a white surface. The white surface has grain, but the blue sphere does not, which makes the sphere appear out of place.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-without.jpg) | ![A screenshot of a scene with a blue sphere on a white surface. The white surface and the sphere both have gain, which makes the sphere better blend into the surroundings.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ARView-RenderOptions-swift-struct-disableCameraGrain-with.jpg) |
 
-Applying this effect involves a low, constant GPU cost. To enable or disable camera grain, set the `cameraGrain` property of the view’s [`renderingEffects`](realityviewcameracontent/renderingeffects.md).
+Applying this effect involves a low, constant GPU cost. To enable or disable camera grain, set the `cameraGrain` property of the view’s [`renderingEffects`](../realityviewcameracontent/renderingeffects.md).
 
-When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
+When deciding whether to use any effect, be sure to consider your app’s CPU and GPU utilization, as described in [Improving the Performance of a RealityKit App](../improving-the-performance-of-a-realitykit-app.md).
 
 > ❗ **Important**: This rendering effect is unavailable on macOS.
 

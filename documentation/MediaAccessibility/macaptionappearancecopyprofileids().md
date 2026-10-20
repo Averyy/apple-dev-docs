@@ -1,7 +1,8 @@
 # MACaptionAppearanceCopyProfileIDs()
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 func MACaptionAppearanceCopyProfileIDs() -> CFArray
 ```
 
+```c
+extern CFArrayRefMACaptionAppearanceCopyProfileIDs();
+```
+
 #### Return Value
 
 An array of strings where each string represents a unique caption profile ID.
@@ -27,10 +32,11 @@ Copies all system and user defined profiles, each represented by a CFString cont
 
 ## See Also
 
-- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
-- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](macaptionappearancecopyactiveprofileid().md)
-- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
-- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](macaptionappearanceexecuteblockforprofileid(_:_:).md)
+### Profile settings
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](./macaptionappearancesetactiveprofileid%28_%29.md)
+- [func MACaptionAppearanceCopyActiveProfileID() -> CFString](./macaptionappearancecopyactiveprofileid%28%29.md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](./macaptionappearancecopyprofilename%28_%29.md)
+- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](./macaptionappearanceexecuteblockforprofileid%28_,_%29.md)
 
 
 ---

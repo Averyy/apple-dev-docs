@@ -1,7 +1,8 @@
 # regionOfInterest
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region of the image in which Vision will perform the request.
 
@@ -19,9 +20,13 @@ The region of the image in which Vision will perform the request.
 var regionOfInterest: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) CGRect regionOfInterest;
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
 #### Discussion
 

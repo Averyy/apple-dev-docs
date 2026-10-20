@@ -1,6 +1,7 @@
 # Integrating on-device AI models in your app with Core AI
 
-**Framework**: Core AI
+**Framework**: Core AI  
+**Role**: Article
 
 Power your app’s intelligent features with an on-device AI model.
 
@@ -8,22 +9,24 @@ Power your app’s intelligent features with an on-device AI model.
 
 Core AI allows you to deploy AI models within your app. Inference happens on device, so data stays private, AI features can be readily available and work offline, and there is no per-inference cost to you or the people using your app.
 
-You start with an `.aimodel` file, either converted from a model using the [`Core AI PyTorch Extensions Python package`](https://developer.apple.comhttps://apple.github.io/coreai-torch) or already prepared in the correct format. The model it represents should contain one or more inference functions needed to power your app’s intelligent features.
+You start with an `.aimodel` file, either converted from a model using the [Core AI PyTorch Extensions Python package](https://apple.github.io/coreai-torch) or already prepared in the correct format. The model it represents should contain one or more inference functions needed to power your app’s intelligent features.
 
-#### Choose a Model
+#### Choose a model
 
-When you have more than one model to choose from, you can compare their quality using the [`Evaluations`](https://developer.apple.com/documentation/evaluations) framework. Comparing models this way doesn’t require matching input or output shapes; your own code adapts each model’s output into a form the evaluation can score.
+When you have more than one model to choose from, you can compare their quality using the [Evaluations](../Evaluations/Evaluations.md) framework. Comparing models this way doesn’t require matching input or output shapes; your own code adapts each model’s output into a form the evaluation can score.
 
-Quality can also shift over time: a different dataset, a new model judge, or a newer model version can change which model scores best, even after you’ve already bundled one. `Evaluating a Core AI model` shows this pattern: one evaluation definition run against two different models with the same metrics, compared side by side. For details, see [`Evaluating a Core AI model`](https://developer.apple.com/documentation/evaluations/evaluating-a-core-ai-model).
+Quality can also shift over time: a different dataset, a new model judge, or a newer model version can change which model scores best, even after you’ve already bundled one. `Evaluating a Core AI model` shows this pattern: one evaluation definition run against two different models with the same metrics, compared side by side. For details, see [Evaluating a Core AI model](../Evaluations/evaluating-a-core-ai-model.md).
 
-#### Add the Model File to Your Project
+#### Add the model file to your project
 
 To use a Core AI model, your app needs access to the `.aimodel` file at runtime. You can bundle the file directly in your Xcode project or Swift package, or your app can download it over the network. The following steps show how to bundle and configure the model in Xcode.
 
 Start by adding the model file to an Xcode target:
 
 1. Drag the `.aimodel` file from the Finder into the Project Navigator in Xcode, or choose File > Add Files to add it.
-2. When the sheet appears, select the targets to include the model under Add to targets, then review the remaining options. ![A screenshot of the dialog that appears when adding a file to an Xcode project. It includes options to copy items to the destination or reference files in place, and an Add to targets section where you select which targets include the model file.](/images/com.apple.coreai/add-model-to-project-dialog@2x.png)
+2. When the sheet appears, select the targets to include the model under Add to targets, then review the remaining options.
+
+   ![A screenshot of the dialog that appears when adding a file to an Xcode project. It includes options to copy items to the destination or reference files in place, and an Add to targets section where you select which targets include the model file.](https://developer.apple.com/tutorials/images/com.apple.coreai/add-model-to-project-dialog@2x.png)
 3. Click Finish.
 
 > **Note**: After adding the file, you should also see the model in the Compile Sources build phase for that target.
@@ -32,18 +35,22 @@ Start by adding the model file to an Xcode target:
 
 Core AI model integration in Xcode requires the Metal Toolchain, which isn’t installed by default. There are two options for adding the Metal Toolchain:
 
-1. In Xcode, choose Xcode > Settings > Components > Other Components, then click Get to download and install the Metal Toolchain. ![A screenshot of the Other Components section in Xcode Settings showing the Metal Toolchain available for download, with a Get button to install it.](/images/com.apple.coreai/metal-toolchain-settings@2x.png)
-2. In Xcode, select any `.aimodel` file in your project and click the Get button in the Metal toolchain download bar that appears. ![A dot-aimodel file selected in the Xcode Project Navigator, with a download bar prompting to install the Metal Toolchain.](/images/com.apple.coreai/metal-toolchain-file-inspector@2x.png)
+1. In Xcode, choose Xcode > Settings > Components > Other Components, then click Get to download and install the Metal Toolchain.
+
+   ![A screenshot of the Other Components section in Xcode Settings showing the Metal Toolchain available for download, with a Get button to install it.](https://developer.apple.com/tutorials/images/com.apple.coreai/metal-toolchain-settings@2x.png)
+2. In Xcode, select any `.aimodel` file in your project and click the Get button in the Metal toolchain download bar that appears.
+
+   ![A dot-aimodel file selected in the Xcode Project Navigator, with a download bar prompting to install the Metal Toolchain.](https://developer.apple.com/tutorials/images/com.apple.coreai/metal-toolchain-file-inspector@2x.png)
 
 > ❗ **Important**: If the Metal toolchain isn’t included, builds that include `.aimodel` files fail with a missing Metal compiler error.
 
-#### Inspect the Model in Xcode
+#### Inspect the model in Xcode
 
 Before writing the code to use the model in your app, you can view its details in the Xcode model viewer by selecting the `.aimodel` file in the Project Navigator.
 
 The model viewer has several tabs for exploring different aspects of your model. The General tab shows the model’s size, in number of parameters and storage size on disk, along with metadata such as description, author, license, and creator-defined key-value pairs. You can edit metadata fields inline; Xcode saves your changes automatically.
 
-![A screenshot of the General tab of the Xcode model viewer, showing the model’s parameter count, storage size on disk, and metadata fields including description, author, license, and creator-defined key-value pairs.](/images/com.apple.coreai/model-viewer-metadata@2x.png)
+![A screenshot of the General tab of the Xcode model viewer, showing the model’s parameter count, storage size on disk, and metadata fields including description, author, license, and creator-defined key-value pairs.](https://developer.apple.com/tutorials/images/com.apple.coreai/model-viewer-metadata@2x.png)
 
 The General tab also shows the model’s numeric precision, split into compute and storage categories:
 
@@ -51,19 +58,19 @@ The General tab also shows the model’s numeric precision, split into compute a
 - Storage types are the representations used for the model’s weights on disk.
 - The operation distribution shows a breakdown of operations in the model’s graph, sorted by count.
 
-#### Review Inference Functions
+#### Review inference functions
 
 The Functions tab shows the exact function signature of each function in the model, including the names, types, and optional descriptions for each input and output.
 
-![A screenshot of the Functions tab of the Xcode model viewer, listing the model’s inference functions with their input and output tensor names, type signatures, and descriptions.](/images/com.apple.coreai/model-viewer-functions@2x.png)
+![A screenshot of the Functions tab of the Xcode model viewer, listing the model’s inference functions with their input and output tensor names, type signatures, and descriptions.](https://developer.apple.com/tutorials/images/com.apple.coreai/model-viewer-functions@2x.png)
 
 Most models have a single function. The named inputs and outputs describe what data your code provides and what it returns. A question mark in an `NDArray` dimension means the dimension is dynamic and is supplied or determined at runtime.
 
-#### Load the Model
+#### Load the model
 
-Load the model in your app by creating an [`AIModel`](aimodel.md) from the `.aimodel` file.
+Load the model in your app by creating an [`AIModel`](./aimodel.md) from the `.aimodel` file.
 
-If your model is a language model, you can also run it through [`LanguageModelSession`](https://developer.apple.com/documentation/foundationmodels/languagemodelsession), using the same session, prompting, and structured-output features you’d use with Foundation Models’ [`SystemLanguageModel`](https://developer.apple.com/documentation/foundationmodels/systemlanguagemodel). For details, see [`Running a Core AI model in a Foundation Models session`](https://developer.apple.com/documentation/foundationmodels/running-a-core-ai-model-in-a-foundation-models-session).
+If your model is a language model, you can also run it through [`LanguageModelSession`](../FoundationModels/languagemodelsession.md), using the same session, prompting, and structured-output features you’d use with Foundation Models’ [`SystemLanguageModel`](../FoundationModels/systemlanguagemodel.md). For details, see [Running a Core AI model in a Foundation Models session](../FoundationModels/running-a-core-ai-model-in-a-foundation-models-session.md).
 
 ```swift
 import CoreAI
@@ -77,15 +84,15 @@ guard let function = try model.loadFunction(named: "main") else {
 }
 ```
 
-Core AI specializes the model for the current device, considering all available compute units and selecting the combination that delivers the best performance. [`init(contentsOf:options:)`](aimodel/init(contentsof:options:).md) is asynchronous because specialization needs to complete before a valid `AIModel` is returned. Depending on the model size, specialization can take a significant amount of time.
+Core AI specializes the model for the current device, considering all available compute units and selecting the combination that delivers the best performance. [`init(contentsOf:options:)`](./aimodel/init%28contentsof,options%29.md) is asynchronous because specialization needs to complete before a valid `AIModel` is returned. Depending on the model size, specialization can take a significant amount of time.
 
-Call [`loadFunction(named:)`](aimodel/loadfunction(named:).md) to get an [`InferenceFunction`](inferencefunction.md) for running the model with your inputs and receiving its outputs. Loading a function prepares the resources needed to run that function and can also be expensive. The method throws on a load failure, and returns `nil` when no function with that name exists. For more information, see [`Managing model specialization and caching`](managing-model-specialization-and-caching.md).
+Call [`loadFunction(named:)`](./aimodel/loadfunction%28named%29.md) to get an [`InferenceFunction`](./inferencefunction.md) for running the model with your inputs and receiving its outputs. Loading a function prepares the resources needed to run that function and can also be expensive. The method throws on a load failure, and returns `nil` when no function with that name exists. For more information, see [Managing model specialization and caching](./managing-model-specialization-and-caching.md).
 
-Most models have a single function. If the model contains multiple functions, check [`functionNames`](aimodel/functionnames.md) to see all available names. If your app processes multiple inputs simultaneously, you can safely call the same inference function from different tasks.
+Most models have a single function. If the model contains multiple functions, check [`functionNames`](./aimodel/functionnames.md) to see all available names. If your app processes multiple inputs simultaneously, you can safely call the same inference function from different tasks.
 
-#### Inspect Function Inputs and Outputs
+#### Inspect function inputs and outputs
 
-Depending on your model deployment strategy, you may need to inspect the model’s inference function at runtime. Each inference function has an [`InferenceFunctionDescriptor`](inferencefunctiondescriptor.md) that describes the names, types, and shapes of its inputs and outputs. You can use this descriptor to verify that a function accepts the inputs your app provides, or to dynamically adapt your app’s behavior as the model’s inputs and outputs change between deployments, without needing to change your code.
+Depending on your model deployment strategy, you may need to inspect the model’s inference function at runtime. Each inference function has an [`InferenceFunctionDescriptor`](./inferencefunctiondescriptor.md) that describes the names, types, and shapes of its inputs and outputs. You can use this descriptor to verify that a function accepts the inputs your app provides, or to dynamically adapt your app’s behavior as the model’s inputs and outputs change between deployments, without needing to change your code.
 
 For example, you can check that the function’s input matches the shape and type your app expects:
 
@@ -107,13 +114,13 @@ guard arrayDescriptor.scalarType == .float32 else {
 }
 ```
 
-The [`inputDescriptor(of:)`](inferencefunctiondescriptor/inputdescriptor(of:).md) method returns an [`InferenceValue.Descriptor`](inferencevalue/descriptor.md) for a named input. The descriptor tells you whether the input expects an [`NDArray`](ndarray.md) or an image, along with its shape and type.
+The [`inputDescriptor(of:)`](./inferencefunctiondescriptor/inputdescriptor%28of%29.md) method returns an [`InferenceValue.Descriptor`](./inferencevalue/descriptor.md) for a named input. The descriptor tells you whether the input expects an [`NDArray`](./ndarray.md) or an image, along with its shape and type.
 
-#### Run Inference
+#### Run inference
 
-The [`NDArray`](ndarray.md) type represents the input and output tensors from the converted model function at runtime. Values marked as images at conversion time use [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer). Pass your data using the same input names defined at model conversion time.
+The [`NDArray`](./ndarray.md) type represents the input and output tensors from the converted model function at runtime. Values marked as images at conversion time use [`CVMutablePixelBuffer`](../CoreVideo/cvmutablepixelbuffer.md). Pass your data using the same input names defined at model conversion time.
 
-For [`NDArray`](ndarray.md) values, write input data with [`NDArray.MutableView`](ndarray/mutableview.md) and read results with [`NDArray.View`](ndarray/view.md). Swift enforces this at compile time. A mutable view allows writes, and a view allows only reads, so you always know how your data is accessed.
+For [`NDArray`](./ndarray.md) values, write input data with [`NDArray.MutableView`](./ndarray/mutableview.md) and read results with [`NDArray.View`](./ndarray/view.md). Swift enforces this at compile time. A mutable view allows writes, and a view allows only reads, so you always know how your data is accessed.
 
 Start by creating an `NDArray` that matches the shape and type the model expects:
 
@@ -122,9 +129,9 @@ Start by creating an `NDArray` that matches the shape and type the model expects
 var input = NDArray(shape: [3, 4], scalarType: .float32)
 ```
 
-Because an [`NDArray`](ndarray.md) is an *n*-dimensional array, the shape should match what the model expects. In this example, `[3, 4]` matches the input shape defined at the `.aimodel` creation. The [`NDArray.ScalarType`](ndarray/scalartype-swift.enum.md) defines what kind of number each element holds, such as [`NDArray.ScalarType.float32`](ndarray/scalartype-swift.enum/float32.md) for 32-bit floating-point values.
+Because an [`NDArray`](./ndarray.md) is an *n*-dimensional array, the shape should match what the model expects. In this example, `[3, 4]` matches the input shape defined at the `.aimodel` creation. The [`NDArray.ScalarType`](./ndarray/scalartype-swift.enum.md) defines what kind of number each element holds, such as [`NDArray.ScalarType.float32`](./ndarray/scalartype-swift.enum/float32.md) for 32-bit floating-point values.
 
-An `NDArray` is read-only by default. To write data into it, call [`mutableView(as:)`](ndarray/mutableview(as:).md) which gives you direct write access to the underlying memory:
+An `NDArray` is read-only by default. To write data into it, call [`mutableView(as:)`](./ndarray/mutableview%28as%29.md) which gives you direct write access to the underlying memory:
 
 ```swift
 // Access a mutable view to write data into the array.
@@ -137,16 +144,16 @@ guard let elements = mutableView.contiguousElements else {
 writeInputData(into: elements)
 ```
 
-When the input data is ready, pass the [`NDArray`](ndarray.md) to the inference function to run the model:
+When the input data is ready, pass the [`NDArray`](./ndarray.md) to the inference function to run the model:
 
 ```swift
 // Run the function with the `NDArray` input.
 var outputs = try await function.run(inputs: ["input": input])
 ```
 
-After the model runs, call [`remove(_:)`](inferencefunction/outputs/remove(_:).md) with the output name to extract each result. The result is an [`InferenceValue`](inferencevalue.md) which holds either an `NDArray` or an image. To check which type your output uses, look at the function signature in the model viewer’s Functions tab, or inspect the [`InferenceFunctionDescriptor`](inferencefunctiondescriptor.md) at runtime. Access the output with `.ndArray` or `.pixelBuffer` based on the type.
+After the model runs, call [`remove(_:)`](./inferencefunction/outputs/remove%28_%29.md) with the output name to extract each result. The result is an [`InferenceValue`](./inferencevalue.md) which holds either an `NDArray` or an image. To check which type your output uses, look at the function signature in the model viewer’s Functions tab, or inspect the [`InferenceFunctionDescriptor`](./inferencefunctiondescriptor.md) at runtime. Access the output with `.ndArray` or `.pixelBuffer` based on the type.
 
-To read data from an output `NDArray`, access an [`NDArray.View`](ndarray/view.md):
+To read data from an output `NDArray`, access an [`NDArray.View`](./ndarray/view.md):
 
 ```swift
 // Extract the returned output.
@@ -163,11 +170,11 @@ guard let prediction = predictionValue.ndArray else {
 processOutput(prediction.view())
 ```
 
-#### Run Inference with Image Inputs and Outputs
+#### Run inference with image inputs and outputs
 
-When a function expects an image instead of an [`NDArray`](ndarray.md), the input or output uses [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
+When a function expects an image instead of an [`NDArray`](./ndarray.md), the input or output uses [`CVMutablePixelBuffer`](../CoreVideo/cvmutablepixelbuffer.md). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
 
-Read the input descriptor and confirm the value is an image. Then read width, height, and pixel format from the [`ImageDescriptor`](imagedescriptor.md):
+Read the input descriptor and confirm the value is an image. Then read width, height, and pixel format from the [`ImageDescriptor`](./imagedescriptor.md):
 
 ```swift
 guard let inputDescriptor = function.descriptor.inputDescriptor(of: "image"),
@@ -180,9 +187,9 @@ let expectedHeight = imageDescriptor.height
 let expectedFormat = imageDescriptor.pixelFormatType
 ```
 
-A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](imagedescriptor/pixelformattype.md) is an [`OSType`](https://developer.apple.com/documentation/kernel/ostype) your code can compare against the format constants in [`Core Video`](https://developer.apple.com/documentation/corevideo).
+A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](./imagedescriptor/pixelformattype.md) is an [`OSType`](../kernel/ostype.md) your code can compare against the format constants in [Core Video](../CoreVideo/CoreVideo.md).
 
-Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/corevideo/cvmutablepixelbuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with [`insert(_:for:)`](inferencefunction/inputs/insert(_:for:)-2htrp.md), and run the function:
+Pass a [`CVMutablePixelBuffer`](../CoreVideo/cvmutablepixelbuffer.md) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](./inferencefunction/inputs.md) collection, add the buffer with [`insert(_:for:)`](./inferencefunction/inputs/insert%28_,for%29-2htrp.md), and run the function:
 
 ```swift
 var pixelBuffer = try makeImageBuffer(
@@ -201,7 +208,7 @@ inputs.insert(pixelBuffer, for: "image")
 var outputs = try await function.run(inputs: inputs)
 ```
 
-When the function returns an image, extract the output and read its [`pixelBuffer`](inferencevalue/pixelbuffer.md):
+When the function returns an image, extract the output and read its [`pixelBuffer`](./inferencevalue/pixelbuffer.md):
 
 ```swift
 guard let outputValue = outputs.remove("result"),
@@ -214,9 +221,10 @@ display(resultBuffer)
 
 ## See Also
 
-- [struct AIModel](aimodel.md)
+### Essentials
+- [struct AIModel](./aimodel.md)
   A specialized model for running inference on a device.
-- [struct AIModelAsset](aimodelasset.md)
+- [struct AIModelAsset](./aimodelasset.md)
   An unspecialized source model asset.
 
 

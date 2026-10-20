@@ -1,17 +1,22 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the shared `NSColorPanel` instance, creating it if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var shared: NSColorPanel { get }
+```
+
+```objc
+@property (class, strong, readonly) NSColorPanel * sharedColorPanel;
 ```
 
 #### Return Value
@@ -20,9 +25,11 @@ The shared `NSColorPanel` instance.
 
 ## See Also
 
-- [class NSColorPanel](nscolorpanel.md)
+### Related Documentation
+- [class NSColorPanel](../nscolorpanel.md)
   A standard user interface for selecting color in an app.
-- [class var sharedColorPanelExists: Bool](nscolorpanel/sharedcolorpanelexists.md)
+### Obtaining the shared color panel
+- [class var sharedColorPanelExists: Bool](./sharedcolorpanelexists.md)
   Returns  a Boolean value indicating whether the `NSColorPanel` has been created already.
 
 

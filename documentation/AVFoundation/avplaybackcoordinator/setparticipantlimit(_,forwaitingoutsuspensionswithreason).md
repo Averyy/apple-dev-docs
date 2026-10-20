@@ -1,7 +1,8 @@
 # setParticipantLimit(_:forWaitingOutSuspensionsWithReason:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a limit on the number of partipants that a group may contain before the coordinator stops waiting on suspensions that occur for a particular reason.
 
@@ -19,9 +20,13 @@ Sets a limit on the number of partipants that a group may contain before the coo
 func setParticipantLimit(_ participantLimit: Int, forWaitingOutSuspensionsWithReason reason: AVCoordinatedPlaybackSuspension.Reason)
 ```
 
+```objc
+- (void) setParticipantLimit:(NSInteger) participantLimit forWaitingOutSuspensionsWithReason:(AVCoordinatedPlaybackSuspensionReason) reason;
+```
+
 #### Discussion
 
-This method provides additional configuration of the values your app sets for the [`suspensionReasonsThatTriggerWaiting`](avplaybackcoordinator/suspensionreasonsthattriggerwaiting.md) property. When a coordinator decides whether one participant’s suspensions cause others to wait, it also considers any participant limits that you set on the group.
+This method provides additional configuration of the values your app sets for the [`suspensionReasonsThatTriggerWaiting`](./suspensionreasonsthattriggerwaiting.md) property. When a coordinator decides whether one participant’s suspensions cause others to wait, it also considers any participant limits that you set on the group.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ This method provides additional configuration of the values your app sets for th
 
 ## See Also
 
-- [func participantLimitForWaitingOutSuspensions(withReason: AVCoordinatedPlaybackSuspension.Reason) -> Int](avplaybackcoordinator/participantlimitforwaitingoutsuspensions(withreason:).md)
+### Configuring playback policies
+- [func participantLimitForWaitingOutSuspensions(withReason: AVCoordinatedPlaybackSuspension.Reason) -> Int](./participantlimitforwaitingoutsuspensions%28withreason%29.md)
   Returns the limit on the number of partipants that a group may contain before the coordinator stops waiting on suspensions that occur for a particular reason.
-- [var suspensionReasonsThatTriggerWaiting: [AVCoordinatedPlaybackSuspension.Reason]](avplaybackcoordinator/suspensionreasonsthattriggerwaiting.md)
+- [var suspensionReasonsThatTriggerWaiting: [AVCoordinatedPlaybackSuspension.Reason]](./suspensionreasonsthattriggerwaiting.md)
   The reasons that cause a coordinator to suspend playback.
-- [var pauseSnapsToMediaTimeOfOriginator: Bool](avplaybackcoordinator/pausesnapstomediatimeoforiginator.md)
+- [var pauseSnapsToMediaTimeOfOriginator: Bool](./pausesnapstomediatimeoforiginator.md)
   A Boolean value that indicates whether participants mirror the originator’s stop time when they pause.
 
 

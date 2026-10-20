@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Mode that determines whether grabbing will be performed using a ray or a volume.
 

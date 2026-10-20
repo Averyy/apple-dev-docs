@@ -1,7 +1,8 @@
 # init(custom:reusable:)
 
 **Framework**: hvf  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Use a custom, client-defined loader Setting reusable to true preserves the input parameter values when rendering; otherwise they are destroyed by rendering
 

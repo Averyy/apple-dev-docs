@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (AffineTransform3DFloat, AffineTransform3DFloat) -> Bool](affinetransform3dfloat/==(_:_:).md)
+- [static func == (AffineTransform3DFloat, AffineTransform3DFloat) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two transforms are equal.
 
 

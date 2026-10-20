@@ -1,7 +1,8 @@
 # MLOptimizationHints.SpecializationStrategy.fastPrediction
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer the prediction latency at the potential cost of specialization time, memory footprint, and the disk space usage of specialized artifacts.
 
@@ -22,7 +23,8 @@ case fastPrediction
 
 ## See Also
 
-- [MLOptimizationHints.SpecializationStrategy.default](mloptimizationhints-swift.struct/specializationstrategy-swift.enum/default.md)
+### Specialization strategies
+- [MLOptimizationHints.SpecializationStrategy.default](./default.md)
   The strategy that should work well for most applications.
 
 

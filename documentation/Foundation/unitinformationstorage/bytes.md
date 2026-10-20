@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bytes unit of information.
 
@@ -21,11 +22,16 @@ The bytes unit of information.
 class var bytes: UnitInformationStorage { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitInformationStorage * bytes;
+```
+
 ## See Also
 
-- [class var bits: UnitInformationStorage](unitinformationstorage/bits.md)
+### Accessing Predefined Common Units
+- [class var bits: UnitInformationStorage](./bits.md)
   The bits unit of information.
-- [class var nibbles: UnitInformationStorage](unitinformationstorage/nibbles.md)
+- [class var nibbles: UnitInformationStorage](./nibbles.md)
   The nibbles unit of information.
 
 

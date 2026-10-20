@@ -1,7 +1,8 @@
 # init(booleanLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to the specified Boolean literal.
 
@@ -42,7 +43,8 @@ In this example, both assignments to the `printedMessage` variable call this Boo
 
 ## See Also
 
-- [init()](bool/init.md)
+### Infrequently Used Intializers
+- [init()](./init%28%29.md)
   Creates an instance initialized to `false`.
 
 

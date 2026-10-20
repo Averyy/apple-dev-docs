@@ -1,7 +1,8 @@
 # originalRequest
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that represents the request that initiated the download.
 
@@ -18,9 +19,14 @@ An object that represents the request that initiated the download.
 var originalRequest: URLRequest? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURLRequest * originalRequest;
+```
+
 ## See Also
 
-- [var webView: WKWebView?](wkdownload/webview.md)
+### Inspecting the download
+- [var webView: WKWebView?](./webview.md)
   The web view where the download initiated.
 
 

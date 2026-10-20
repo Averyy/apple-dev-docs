@@ -1,7 +1,8 @@
 # ApplePayMerchandisingStyle
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Styling layout of the ApplePayMerchandisingView
 
@@ -18,20 +19,20 @@ struct ApplePayMerchandisingStyle
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](applepaymerchandisingstyle/init(rawvalue:).md)
+- [init(rawValue: String)](./applepaymerchandisingstyle/init%28rawvalue%29.md)
   Instantiates a particular style
 ### Instance Properties
-- [let rawValue: String](applepaymerchandisingstyle/rawvalue.md)
+- [let rawValue: String](./applepaymerchandisingstyle/rawvalue.md)
   The string representation of the style
 ### Type Properties
-- [static var standard: ApplePayMerchandisingStyle](applepaymerchandisingstyle/standard.md)
+- [static var standard: ApplePayMerchandisingStyle](./applepaymerchandisingstyle/standard.md)
   The Standard Promotional Widget
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

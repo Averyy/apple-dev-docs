@@ -6,36 +6,9 @@ url: https://ml-explore.github.io/mlx/build/html/usage/numpy.html
 
 # Conversion to NumPy and Other Frameworks
 
-**
-
-- [.rst](../_sources/usage/numpy.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Conversion to NumPy and Other Frameworks
-
- Table of contents 
-
-## Contents
-
-# Conversion to NumPy and Other Frameworks
-
 MLX array supports conversion between other frameworks with either:
 
-- The [Python Buffer Protocol](https://docs.python.org/3/c-api/buffer.md).
+- The [Python Buffer Protocol](https://docs.python.org/3/c-api/buffer.html).
 - [DLPack](https://dmlc.github.io/dlpack/latest/).
 
 Let’s convert an array to NumPy and back.
@@ -186,5 +159,3 @@ a = mx.arange(3)
 b = tf.constant(memoryview(a))
 c = mx.array(b)
 ```
-
-** Contents

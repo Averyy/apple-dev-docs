@@ -1,7 +1,8 @@
 # DocumentObservation.Container.Table.Cell
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a table cell.
 
@@ -22,22 +23,22 @@ struct Cell
 ## Topics
 
 ### Inspecting a cell
-- [var columnRange: ClosedRange<Int>](documentobservation/container/table/cell/columnrange.md)
+- [var columnRange: ClosedRange<Int>](./cell/columnrange.md)
   The range of column indices that the cell spans.
-- [var content: DocumentObservation.Container](documentobservation/container/table/cell/content.md)
+- [var content: DocumentObservation.Container](./cell/content.md)
   The contents of a cell.
-- [var rowRange: ClosedRange<Int>](documentobservation/container/table/cell/rowrange.md)
+- [var rowRange: ClosedRange<Int>](./cell/rowrange.md)
   The range of row indices that the cell spans.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

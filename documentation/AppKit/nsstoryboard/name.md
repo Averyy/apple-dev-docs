@@ -1,12 +1,13 @@
 # NSStoryboard.Name
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The name of the storyboard file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The name of the storyboard file.
 typealias Name = String
 ```
 
+```c
+typedef NSString * NSStoryboardName;
+```
+
 ## See Also
 
-- [convenience init(name: NSStoryboard.Name, bundle: Bundle?)](nsstoryboard/init(name:bundle:).md)
+### Creating a Storyboard Object
+- [convenience init(name: NSStoryboard.Name, bundle: Bundle?)](./init%28name,bundle%29.md)
   Creates a storyboard based on the named storyboard file in the specified bundle.
-- [class var main: NSStoryboard?](nsstoryboard/main.md)
+- [class var main: NSStoryboard?](./main.md)
   The app’s main storyboard.
 
 

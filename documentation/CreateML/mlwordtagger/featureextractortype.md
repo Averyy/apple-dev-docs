@@ -1,7 +1,8 @@
 # MLWordTagger.FeatureExtractorType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The feature extractors that are available to train a word tagger using with the transfer-learning algorithm option.
 
@@ -17,40 +18,41 @@ enum FeatureExtractorType
 ## Topics
 
 ### Selecting a feature extractor type
-- [MLWordTagger.FeatureExtractorType.bertEmbedding](mlwordtagger/featureextractortype/bertembedding.md)
+- [MLWordTagger.FeatureExtractorType.bertEmbedding](./featureextractortype/bertembedding.md)
   A feature extractor that provides BERT contextual word embeddings.
-- [MLWordTagger.FeatureExtractorType.elmoEmbedding](mlwordtagger/featureextractortype/elmoembedding.md)
+- [MLWordTagger.FeatureExtractorType.elmoEmbedding](./featureextractortype/elmoembedding.md)
   A feature extractor that provides ELMo contextual word embeddings.
-- [MLWordTagger.FeatureExtractorType.dynamicEmbedding](mlwordtagger/featureextractortype/dynamicembedding.md)
+- [MLWordTagger.FeatureExtractorType.dynamicEmbedding](./featureextractortype/dynamicembedding.md)
   A feature extractor that provides embeddings for words, based on their in-context use.
 ### Describing a feature extractor type
-- [var description: String](mlwordtagger/featureextractortype/description.md)
+- [var description: String](./featureextractortype/description.md)
   A text representation of a feature extractor type.
-- [var debugDescription: String](mlwordtagger/featureextractortype/debugdescription.md)
+- [var debugDescription: String](./featureextractortype/debugdescription.md)
   A text representation of the feature extractor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordtagger/featureextractortype/playgrounddescription.md)
+- [var playgroundDescription: Any](./featureextractortype/playgrounddescription.md)
   A description of the feature extractor in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlwordtagger/featureextractortype/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlwordtagger/featureextractortype/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlwordtagger/featureextractortype/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./featureextractortype/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./featureextractortype/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./featureextractortype/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLWordTagger.ModelAlgorithmType](mlwordtagger/modelalgorithmtype.md)
+### Supporting types
+- [MLWordTagger.ModelAlgorithmType](./modelalgorithmtype.md)
   The algorithm type.
 
 

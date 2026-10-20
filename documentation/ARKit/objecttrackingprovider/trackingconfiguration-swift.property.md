@@ -1,7 +1,8 @@
 # trackingConfiguration
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the current parameters that are being used to configure object tracking.
 
@@ -16,7 +17,8 @@ final var trackingConfiguration: ObjectTrackingProvider.TrackingConfiguration { 
 
 ## See Also
 
-- [ObjectTrackingProvider.TrackingConfiguration](objecttrackingprovider/trackingconfiguration-swift.struct.md)
+### Configuring object-tracking
+- [ObjectTrackingProvider.TrackingConfiguration](./trackingconfiguration-swift.struct.md)
   Parameters for changing object-tracking behavior.
 
 

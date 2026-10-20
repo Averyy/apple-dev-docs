@@ -1,7 +1,8 @@
 # OSLGetErrDescUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLGetErrDescProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLGetErrDescPr
 typealias OSLGetErrDescUPP = OSLGetErrDescProcPtr
 ```
 
+```c
+typedef OSLGetErrDescProcPtr OSLGetErrDescUPP;
+```
+
 #### Discussion
 
-For a description of a get error descriptor callback function, see [`OSLGetErrDescProcPtr`](oslgeterrdescprocptr.md). 
+For a description of a get error descriptor callback function, see [`OSLGetErrDescProcPtr`](./oslgeterrdescprocptr.md). 
 
 
 ---

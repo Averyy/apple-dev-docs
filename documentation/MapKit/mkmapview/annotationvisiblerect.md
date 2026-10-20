@@ -1,7 +1,8 @@
 # annotationVisibleRect
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visible rectangle where the map is displaying annotation views.
 
@@ -19,13 +20,18 @@ The visible rectangle where the map is displaying annotation views.
 var annotationVisibleRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect annotationVisibleRect;
+```
+
 ## See Also
 
-- [var selectedAnnotations: [any MKAnnotation]](mkmapview/selectedannotations.md)
+### Managing annotation selections
+- [var selectedAnnotations: [any MKAnnotation]](./selectedannotations.md)
   The selected annotations.
-- [func selectAnnotation(any MKAnnotation, animated: Bool)](mkmapview/selectannotation(_:animated:).md)
+- [func selectAnnotation(any MKAnnotation, animated: Bool)](./selectannotation%28_,animated%29.md)
   Selects the specified annotation and displays a callout view for it.
-- [func deselectAnnotation((any MKAnnotation)?, animated: Bool)](mkmapview/deselectannotation(_:animated:).md)
+- [func deselectAnnotation((any MKAnnotation)?, animated: Bool)](./deselectannotation%28_,animated%29.md)
   Deselects the specified annotation and hides its callout view.
 
 

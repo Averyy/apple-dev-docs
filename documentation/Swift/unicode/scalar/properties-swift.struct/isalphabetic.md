@@ -1,7 +1,8 @@
 # isAlphabetic
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is alphabetic.
 
@@ -24,7 +25,7 @@ var isAlphabetic: Bool { get }
 
 Alphabetic scalars are the primary units of alphabets and/or syllabaries.
 
-This property corresponds to the “Alphabetic” and the “Other_Alphabetic” properties in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Alphabetic” and the “Other_Alphabetic” properties in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

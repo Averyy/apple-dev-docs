@@ -1,18 +1,19 @@
 # sf_detach_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*sf_detach_func)(void *cookie, socket_t so);
 ```
 
-#### Return_value
+#### Return Value
 
 If you return a non-zero value, your filter will not be attached to this socket.
 

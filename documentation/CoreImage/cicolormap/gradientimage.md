@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image data that transforms the source image values.
@@ -11,7 +12,7 @@ The image data that transforms the source image values.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,9 +21,14 @@ The image data that transforms the source image values.
 var gradientImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * gradientImage;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cicolormap/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

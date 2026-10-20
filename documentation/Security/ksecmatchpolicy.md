@@ -1,7 +1,8 @@
 # kSecMatchPolicy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates a policy with which a matching certificate or identity must verify.
 
@@ -20,9 +21,13 @@ A key whose value indicates a policy with which a matching certificate or identi
 let kSecMatchPolicy: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchPolicy;
+```
+
 #### Discussion
 
-The corresponding value is of type [`SecPolicy`](secpolicy.md).
+The corresponding value is of type [`SecPolicy`](./secpolicy.md).
 
 
 ---

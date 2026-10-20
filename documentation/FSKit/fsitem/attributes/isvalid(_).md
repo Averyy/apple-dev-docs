@@ -1,7 +1,8 @@
 # isValid(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the attribute is valid.
 
@@ -14,13 +15,18 @@ Returns a Boolean value that indicates whether the attribute is valid.
 func isValid(_ attribute: FSItem.Attribute) -> Bool
 ```
 
+```objc
+- (BOOL) isValid:(FSItemAttribute) attribute;
+```
+
 #### Discussion
 
 If the value returned by this method is `YES` (Objective-C) or `true` (Swift), a caller can safely use the given attribute.
 
 ## See Also
 
-- [func invalidateAllProperties()](fsitem/attributes/invalidateallproperties.md)
+### Validating and invalidating attributes
+- [func invalidateAllProperties()](./invalidateallproperties%28%29.md)
   Marks all attributes inactive.
 
 

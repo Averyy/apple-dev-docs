@@ -1,7 +1,8 @@
 # init(contentsOfFile:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a character set read from the bitmap representation stored in the file a given path.
 
@@ -20,6 +21,10 @@ Returns a character set read from the bitmap representation stored in the file a
 init?(contentsOfFile fName: String)
 ```
 
+```objc
++ (NSCharacterSet *) characterSetWithContentsOfFile:(NSString *) fName;
+```
+
 #### Return Value
 
 A character set read from the bitmap representation stored in the file at `path`.
@@ -28,7 +33,7 @@ A character set read from the bitmap representation stored in the file at `path`
 
 This method doesn’t use filenames to check for the uniqueness of the character sets it creates. To prevent duplication of character sets in memory, cache them and make them available through an API that checks whether the requested set has already been loaded.
 
-To read a bitmap representation from any file, use the `NSData` method[`dataWithContentsOfFile:options:error:`](nsdata/datawithcontentsoffile:options:error:.md) and pass the result to [`init(bitmapRepresentation:)`](nscharacterset/init(bitmaprepresentation:).md).
+To read a bitmap representation from any file, use the `NSData` method[`dataWithContentsOfFile:options:error:`](../nsdata/datawithcontentsoffile_options_error_.md) and pass the result to [`init(bitmapRepresentation:)`](./init%28bitmaprepresentation%29.md).
 
 ## Parameters
 
@@ -36,9 +41,10 @@ To read a bitmap representation from any file, use the `NSData` method[`dataWith
 
 ## See Also
 
-- [init(bitmapRepresentation: Data)](nscharacterset/init(bitmaprepresentation:).md)
+### Creating and Managing Character Sets as Bitmap Representations
+- [init(bitmapRepresentation: Data)](./init%28bitmaprepresentation%29.md)
   Returns a character set containing characters determined by a given bitmap representation.
-- [var bitmapRepresentation: Data](nscharacterset/bitmaprepresentation.md)
+- [var bitmapRepresentation: Data](./bitmaprepresentation.md)
   An `NSData` object encoding the receiver in binary format.
 
 

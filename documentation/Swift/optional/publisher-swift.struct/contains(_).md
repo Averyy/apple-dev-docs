@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func contains(_ output: Optional<Wrapped>.Publisher.Output) -> Optional<Bool>.Publisher
 ```
+
+Available when `Wrapped` conforms to `Equatable`.
 
 
 ---

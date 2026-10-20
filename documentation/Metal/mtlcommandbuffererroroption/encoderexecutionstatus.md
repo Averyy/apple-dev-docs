@@ -1,7 +1,8 @@
 # encoderExecutionStatus
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs a command buffer to save additional details about a GPU runtime error.
 
@@ -19,9 +20,13 @@ An option that instructs a command buffer to save additional details about a GPU
 static var encoderExecutionStatus: MTLCommandBufferErrorOption { get }
 ```
 
+```c
+MTLCommandBufferErrorOptionEncoderExecutionStatus
+```
+
 #### Discussion
 
-You can set this option to a command buffer descriptor’s [`errorOptions`](mtlcommandbufferdescriptor/erroroptions.md) property.
+You can set this option to a command buffer descriptor’s [`errorOptions`](../mtlcommandbufferdescriptor/erroroptions.md) property.
 
 > **Note**:  Enabling this option can slightly reduce your app’s CPU runtime performance.
 

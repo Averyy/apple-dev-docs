@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,23 +18,23 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kCompositeSyncMask](1644576-anonymous/kcompositesyncmask.md)
-- [kDPMSSyncMask](1644576-anonymous/kdpmssyncmask.md)
-- [kDisableCompositeSyncBit](1644576-anonymous/kdisablecompositesyncbit.md)
-- [kDisableHorizontalSyncBit](1644576-anonymous/kdisablehorizontalsyncbit.md)
-- [kDisableVerticalSyncBit](1644576-anonymous/kdisableverticalsyncbit.md)
-- [kEnableSyncOnBlue](1644576-anonymous/kenablesynconblue.md)
-- [kEnableSyncOnGreen](1644576-anonymous/kenablesyncongreen.md)
-- [kEnableSyncOnRed](1644576-anonymous/kenablesynconred.md)
-- [kHorizontalSyncMask](1644576-anonymous/khorizontalsyncmask.md)
-- [kNoSeparateSyncControlBit](1644576-anonymous/knoseparatesynccontrolbit.md)
-- [kSyncOnBlueMask](1644576-anonymous/ksynconbluemask.md)
-- [kSyncOnGreenMask](1644576-anonymous/ksyncongreenmask.md)
-- [kSyncOnMask](1644576-anonymous/ksynconmask.md)
-- [kSyncOnRedMask](1644576-anonymous/ksynconredmask.md)
-- [kTriStateSyncBit](1644576-anonymous/ktristatesyncbit.md)
-- [kTriStateSyncMask](1644576-anonymous/ktristatesyncmask.md)
-- [kVerticalSyncMask](1644576-anonymous/kverticalsyncmask.md)
+- [kCompositeSyncMask](./api-1644576-anonymous/kcompositesyncmask.md)
+- [kDPMSSyncMask](./api-1644576-anonymous/kdpmssyncmask.md)
+- [kDisableCompositeSyncBit](./api-1644576-anonymous/kdisablecompositesyncbit.md)
+- [kDisableHorizontalSyncBit](./api-1644576-anonymous/kdisablehorizontalsyncbit.md)
+- [kDisableVerticalSyncBit](./api-1644576-anonymous/kdisableverticalsyncbit.md)
+- [kEnableSyncOnBlue](./api-1644576-anonymous/kenablesynconblue.md)
+- [kEnableSyncOnGreen](./api-1644576-anonymous/kenablesyncongreen.md)
+- [kEnableSyncOnRed](./api-1644576-anonymous/kenablesynconred.md)
+- [kHorizontalSyncMask](./api-1644576-anonymous/khorizontalsyncmask.md)
+- [kNoSeparateSyncControlBit](./api-1644576-anonymous/knoseparatesynccontrolbit.md)
+- [kSyncOnBlueMask](./api-1644576-anonymous/ksynconbluemask.md)
+- [kSyncOnGreenMask](./api-1644576-anonymous/ksyncongreenmask.md)
+- [kSyncOnMask](./api-1644576-anonymous/ksynconmask.md)
+- [kSyncOnRedMask](./api-1644576-anonymous/ksynconredmask.md)
+- [kTriStateSyncBit](./api-1644576-anonymous/ktristatesyncbit.md)
+- [kTriStateSyncMask](./api-1644576-anonymous/ktristatesyncmask.md)
+- [kVerticalSyncMask](./api-1644576-anonymous/kverticalsyncmask.md)
 
 
 ---

@@ -1,16 +1,19 @@
 # init(validationData:maxDepth:minLossReduction:minChildWeight:randomSeed:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of parameters.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.14+ - Deprecated in 11.0
 - visionOS 1.0+
+
+> **Deprecated**: Use the validation property instead.
 
 ## Declaration
 
@@ -20,16 +23,27 @@ init(validationData: MLDataTable? = nil, maxDepth: Int = 6, minLossReduction: Do
 
 ## Parameters
 
-- `validationData`: The dataset used to monitor how well the model is generalizing. The default value is `nil` which will use an automatically sampled validation set.
-- `maxDepth`: The maximum depth of the tree. Must be a value of at least 1. The default value is 6.
-- `minLossReduction`: The minimum amount of reduction to the loss function that is required to make another node to split the data. Larger values help prevent overfitting. The default value is 0.
-- `minChildWeight`: Determines the minimum weight of each leaf node of the tree. Larger values help prevent overfitting. The default value is 0.1.
-- `randomSeed`: A seed for internal random operations. Set this value to ensure reproducible results. The default value is 42.
+- `validationData`: The dataset used to monitor how well the model is generalizing.
+
+  The default value is `nil` which will use an automatically sampled validation set.
+- `maxDepth`: The maximum depth of the tree. Must be a value of at least 1.
+
+  The default value is 6.
+- `minLossReduction`: The minimum amount of reduction to the loss function that is required to make another node to split the data. Larger values help prevent overfitting.
+
+  The default value is 0.
+- `minChildWeight`: Determines the minimum weight of each leaf node of the tree. Larger values help prevent overfitting.
+
+  The default value is 0.1.
+- `randomSeed`: A seed for internal random operations. Set this value to ensure reproducible results.
+
+  The default value is 42.
 
 ## See Also
 
-- [init(validation: MLDecisionTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](mldecisiontreeregressor/modelparameters-swift.struct/init(validation:maxdepth:minlossreduction:minchildweight:randomseed:).md)
-- [MLDecisionTreeRegressor.ModelParameters.ValidationData](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.enum.md)
+### Creating parameters
+- [init(validation: MLDecisionTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](./init%28validation,maxdepth,minlossreduction,minchildweight,randomseed%29.md)
+- [MLDecisionTreeRegressor.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   Values for specifying validation data.
 
 

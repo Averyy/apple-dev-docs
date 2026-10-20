@@ -1,12 +1,13 @@
 # toggleRuler(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This action method shows or hides the ruler, if the receiver is enclosed in a scroll view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ This action method shows or hides the ruler, if the receiver is enclosed in a sc
 func toggleRuler(_ sender: Any?)
 ```
 
+```objc
+- (void) toggleRuler:(id) sender;
+```
+
 ## See Also
 
-- [var isRulerVisible: Bool](nstext/isrulervisible.md)
+### Using the ruler
+- [var isRulerVisible: Bool](./isrulervisible.md)
   A Boolean value that indicates whether the receiver’s enclosing scroll view shows its ruler.
 
 

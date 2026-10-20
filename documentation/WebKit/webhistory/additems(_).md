@@ -1,12 +1,13 @@
 # addItems(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts or updates the specified items in the web history.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Inserts or updates the specified items in the web history.
 func addItems(_ newItems: [Any]!)
 ```
 
+```objc
+- (void) addItems:(NSArray *) newItems;
+```
+
 #### Discussion
 
-When successful, this method posts a notification ([`WebHistoryItemsAddedNotification`](webhistoryitemsaddednotification.md)).
+When successful, this method posts a notification ([`WebHistoryItemsAddedNotification`](../webhistoryitemsaddednotification.md)).
 
 ## Parameters
 
@@ -24,9 +29,10 @@ When successful, this method posts a notification ([`WebHistoryItemsAddedNotific
 
 ## See Also
 
-- [func removeItems([Any]!)](webhistory/removeitems(_:).md)
+### Adding and Removing History Items
+- [func removeItems([Any]!)](./removeitems%28_%29.md)
   Removes the specified items from the web history.
-- [func removeAllItems()](webhistory/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items from the web history.
 
 

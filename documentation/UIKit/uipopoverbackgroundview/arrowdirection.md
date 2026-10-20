@@ -1,7 +1,8 @@
 # arrowDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction in which the popover arrow is pointing.
 
@@ -9,13 +10,17 @@ The direction in which the popover arrow is pointing.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var arrowDirection: UIPopoverArrowDirection { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) UIPopoverArrowDirection arrowDirection;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ Use this value to determine which stretchable images to use for your view. Norma
 
 ## See Also
 
-- [var arrowOffset: CGFloat](uipopoverbackgroundview/arrowoffset.md)
+### Accessing the arrow metrics
+- [var arrowOffset: CGFloat](./arrowoffset.md)
   The distance (measured in points) from the center of the view to the center line of the arrow.
 
 

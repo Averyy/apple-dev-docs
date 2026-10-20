@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a texture at a specified offset on the heap.
@@ -20,6 +21,10 @@ Creates a texture at a specified offset on the heap.
 func makeTexture(descriptor: MTLTextureDescriptor, offset: Int) -> (any MTLTexture)?
 ```
 
+```objc
+- (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor offset:(NSUInteger) offset;
+```
+
 #### Return Value
 
 A new texture, or `nil` if the heap is not a placement heap.
@@ -28,13 +33,13 @@ A new texture, or `nil` if the heap is not a placement heap.
 
 You can call the method with the following restrictions:
 
-- The heap’s type needs to be [`MTLHeapType.placement`](mtlheaptype/placement.md)
-- The texture’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](mtlheap/cpucachemode.md) property
-- The texture’s storage mode option needs to be [`MTLStorageMode.memoryless`](mtlstoragemode/memoryless.md), or match the heap’s [`storageMode`](mtlheap/storagemode.md) property
+- The heap’s type needs to be [`MTLHeapType.placement`](../mtlheaptype/placement.md)
+- The texture’s CPU cache mode option needs to match the heap’s [`cpuCacheMode`](./cpucachemode.md) property
+- The texture’s storage mode option needs to be [`MTLStorageMode.memoryless`](../mtlstoragemode/memoryless.md), or match the heap’s [`storageMode`](./storagemode.md) property
 
 > ❗ **Important**:  Avoid potentially erratic behavior by aligning the texture correctly so that it doesn’t extend past the end of the heap.
 
-Use the [`heapBufferSizeAndAlign(length:options:)`](mtldevice/heapbuffersizeandalign(length:options:).md) to determine the correct size and alignment.
+Use the [`heapBufferSizeAndAlign(length:options:)`](../mtldevice/heapbuffersizeandalign%28length,options%29.md) to determine the correct size and alignment.
 
 > **Note**:  The new texture can implicitly alias the underlying memory of other resources already in the heap within the overlapping half-open range of `[offset, offset + requiredSize)`.
 
@@ -45,7 +50,8 @@ Use the [`heapBufferSizeAndAlign(length:options:)`](mtldevice/heapbuffersizeanda
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtlheap/maketexture(descriptor:).md)
+### Creating textures from a heap
+- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./maketexture%28descriptor%29.md)
   Creates a texture on the heap.
 
 

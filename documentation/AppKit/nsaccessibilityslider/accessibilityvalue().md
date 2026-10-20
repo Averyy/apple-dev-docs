@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the slider’s value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func accessibilityValue() -> Any?
+```
+
+```objc
+- (id) accessibilityValue;
 ```
 
 #### Return Value
@@ -21,15 +26,16 @@ The value for the slider.
 
 #### Discussion
 
-This method is the getter for the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol’s [`accessibilityValue`](nsaccessibility-c.protocol/accessibilityvalue.md) property.
+This method is the getter for the [`NSAccessibilityProtocol`](../nsaccessibilityprotocol.md) protocol’s [`accessibilityValue`](../nsaccessibility-c.protocol/accessibilityvalue.md) property.
 
 ## See Also
 
-- [func accessibilityLabel() -> String?](nsaccessibilityslider/accessibilitylabel.md)
+### Supporting Accessibility
+- [func accessibilityLabel() -> String?](./accessibilitylabel%28%29.md)
   Returns a short description of the slider.
-- [func accessibilityPerformDecrement() -> Bool](nsaccessibilityslider/accessibilityperformdecrement.md)
+- [func accessibilityPerformDecrement() -> Bool](./accessibilityperformdecrement%28%29.md)
   Decrements the slider’s value.
-- [func accessibilityPerformIncrement() -> Bool](nsaccessibilityslider/accessibilityperformincrement.md)
+- [func accessibilityPerformIncrement() -> Bool](./accessibilityperformincrement%28%29.md)
   Increments the slider’s value.
 
 

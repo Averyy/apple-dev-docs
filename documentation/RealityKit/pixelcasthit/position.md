@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The surface position at the point of intersection, in scene space.
 

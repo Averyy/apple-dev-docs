@@ -1,7 +1,8 @@
 # allowFP16Intermediates
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Curated list allowing intermediates for multi-pass GPU kernels to be FP16.
 
@@ -17,6 +18,10 @@ Curated list allowing intermediates for multi-pass GPU kernels to be FP16.
 
 ```swift
 static var allowFP16Intermediates: MPSGraphReducedPrecisionFastMath { get }
+```
+
+```c
+MPSGraphReducedPrecisionFastMathAllowFP16Intermediates
 ```
 
 

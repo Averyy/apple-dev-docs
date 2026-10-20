@@ -1,7 +1,8 @@
 # vmnet_mtu_key
 
 **Framework**: vmnet  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum transmission unit (MTU) to configure on the virtual interface in the guest operating system.
 
@@ -15,15 +16,20 @@ The maximum transmission unit (MTU) to configure on the virtual interface in the
 let vmnet_mtu_key: UnsafePointer<CChar>
 ```
 
+```c
+extern const char * const vmnet_mtu_key;
+```
+
 #### Discussion
 
-The value for this key is of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/xpc/xpc_type_uint64-swift.var).
+The value for this key is of type [`XPC_TYPE_UINT64`](../XPC/xpc_type_uint64-swift.var.md).
 
 ## See Also
 
-- [let vmnet_mac_address_key: UnsafePointer<CChar>](vmnet_mac_address_key.md)
+### Constants
+- [let vmnet_mac_address_key: UnsafePointer<CChar>](./vmnet_mac_address_key.md)
   The MAC address to configure on the virtual interface in the guest operating system.
-- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
+- [let vmnet_max_packet_size_key: UnsafePointer<CChar>](./vmnet_max_packet_size_key.md)
   The maximum size of the packet that an app can write to the interface.
 
 

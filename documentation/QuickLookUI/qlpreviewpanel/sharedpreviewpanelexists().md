@@ -1,7 +1,8 @@
 # sharedPreviewPanelExists()
 
 **Framework**: Quick Look UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the system has created a shared Quick Look preview panel.
 
@@ -14,13 +15,18 @@ Returns a Boolean value that indicates whether the system has created a shared Q
 class func sharedPreviewPanelExists() -> Bool
 ```
 
+```objc
++ (BOOL) sharedPreviewPanelExists;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the shared Quick Look preview panel instance has been created, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the shared Quick Look preview panel instance has been created, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class func shared() -> QLPreviewPanel!](qlpreviewpanel/shared.md)
+### Accessing the Shared Panel
+- [class func shared() -> QLPreviewPanel!](./shared%28%29.md)
   Returns the shared Quick Look preview panel instance.
 
 

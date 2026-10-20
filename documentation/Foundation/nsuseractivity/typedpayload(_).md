@@ -1,7 +1,8 @@
 # typedPayload(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the user activity’s user info dictionary as an instance of the specified type.
 
@@ -28,19 +29,20 @@ The type-safe instance.
 
 > ❗ **Important**:  This method applies only to SwiftUI apps.
 
-Use this method to retrieve information from the user activity’s [`userInfo`](nsuseractivity/userinfo.md) dictionary in a type-safe manner.
+Use this method to retrieve information from the user activity’s [`userInfo`](./userinfo.md) dictionary in a type-safe manner.
 
-If the type can’t be decoded from the [`userInfo`](nsuseractivity/userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.invalidContent`](nsuseractivity/typedpayloaderror/invalidcontent.md).
+If the type can’t be decoded from the [`userInfo`](./userinfo.md) dictionary, this method throws [`NSUserActivity.TypedPayloadError.invalidContent`](./typedpayloaderror/invalidcontent.md).
 
 ## Parameters
 
-- `type`: The type to decode from [`userInfo`](nsuseractivity/userinfo.md). The `type` must conform to [`Codable`](https://developer.apple.com/documentation/swift/codable).
+- `type`: The type to decode from [`userInfo`](./userinfo.md). The `type` must conform to [`Codable`](../../Swift/codable.md).
 
 ## See Also
 
-- [func setTypedPayload<T>(T) throws](nsuseractivity/settypedpayload(_:).md)
+### Managing type-safe access to user info
+- [func setTypedPayload<T>(T) throws](./settypedpayload%28_%29.md)
   Encodes the specified payload into the user activity’s user info dictionary.
-- [NSUserActivity.TypedPayloadError](nsuseractivity/typedpayloaderror.md)
+- [NSUserActivity.TypedPayloadError](./typedpayloaderror.md)
   An enumeration that describes the error types for getting and setting a typed payload.
 
 

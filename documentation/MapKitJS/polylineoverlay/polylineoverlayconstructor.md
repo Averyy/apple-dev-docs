@@ -1,7 +1,8 @@
 # new PolylineOverlay(points, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a polyline overlay with coordinate points and style options.
 
@@ -10,7 +11,7 @@ Creates a polyline overlay with coordinate points and style options.
 
 ## Declaration
 
-```swift
+```
 constructor(points: CoordinateData[], options?: OverlayOptions);
 ```
 
@@ -29,12 +30,13 @@ The following is an example of the `options` parameter for a polyline overlay:
 
 ## Parameters
 
-- `points`: The required points in the polyline as an array of [`Coordinate`](coordinate.md).
+- `points`: The required points in the polyline as an array of [`Coordinate`](../coordinate.md).
 - `options`: An optional object literal of style options for initializing the polyline.
 
 ## See Also
 
-- [interface OverlayOptions](overlayoptions.md)
+### Creating a polyline overlay
+- [interface OverlayOptions](../overlayoptions.md)
   A dictionary of options that determines an overlay’s data, and indicates whether it’s visible, in an enabled state, and in a selected state.
 
 

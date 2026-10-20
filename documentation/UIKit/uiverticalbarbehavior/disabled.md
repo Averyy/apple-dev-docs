@@ -1,7 +1,8 @@
 # UIVerticalBarBehavior.disabled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The vertical bar is disabled.
 
@@ -18,13 +19,18 @@ The vertical bar is disabled.
 case disabled
 ```
 
+```c
+UIVerticalBarBehaviorDisabled
+```
+
 #### Discussion
 
 Bar content falls back to the standard horizontal top and bottom bars, and the vertical status bar reverts to the horizontal axis.
 
 ## See Also
 
-- [UIVerticalBarBehavior.automatic](uiverticalbarbehavior/automatic.md)
+### Specifying vertical bar behavior
+- [UIVerticalBarBehavior.automatic](./automatic.md)
   The system determines whether the vertical bar is rendered.
 
 

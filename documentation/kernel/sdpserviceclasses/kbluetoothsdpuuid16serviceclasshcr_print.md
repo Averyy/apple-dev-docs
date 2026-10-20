@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassHCR_Print
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassHCR_Print = 0x1126
 ```
 

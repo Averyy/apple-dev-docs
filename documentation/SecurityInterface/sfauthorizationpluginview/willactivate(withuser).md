@@ -1,7 +1,8 @@
 # willActivate(withUser:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the authorization plug-in that its user interface is about to be made active by the Apple-provided Security Agent.
 
@@ -14,19 +15,34 @@ Tells the authorization plug-in that its user interface is about to be made acti
 func willActivate(withUser inUserInformation: [AnyHashable : Any]!)
 ```
 
+```objc
+- (void) willActivateWithUser:(NSDictionary *) inUserInformation;
+```
+
 #### Discussion
 
-Your [`SFAuthorizationPluginView`](sfauthorizationpluginview.md) instance can use the user name to pre-populate a text field in the user interface.
+Your [`SFAuthorizationPluginView`](../sfauthorizationpluginview.md) instance can use the user name to pre-populate a text field in the user interface.
 
 ## Parameters
 
-- `inUserInformation`: A dictionary that contains the following information: - [`SFAuthorizationPluginViewUserNameKey`](sfauthorizationpluginviewusernamekey.md) An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the selected user’s name - [`SFAuthorizationPluginViewUserShortNameKey`](sfauthorizationpluginviewusershortnamekey.md) An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the selected user’s short name Note: `inUserInformation` may be `nil`.
+- `inUserInformation`: A dictionary that contains the following information:
+
+  - [`SFAuthorizationPluginViewUserNameKey`](../sfauthorizationpluginviewusernamekey.md)
+
+  An [`NSString`](../../Foundation/nsstring.md) object containing the selected user’s name
+
+  - [`SFAuthorizationPluginViewUserShortNameKey`](../sfauthorizationpluginviewusershortnamekey.md)
+
+  An [`NSString`](../../Foundation/nsstring.md) object containing the selected user’s short name
+
+  Note: `inUserInformation` may be `nil`.
 
 ## See Also
 
-- [func didActivate()](sfauthorizationpluginview/didactivate.md)
+### Configuring the User Interface
+- [func didActivate()](./didactivate%28%29.md)
   Tells the authorization plug-in when its user interface has become active.
-- [func didDeactivate()](sfauthorizationpluginview/diddeactivate.md)
+- [func didDeactivate()](./diddeactivate%28%29.md)
   Tells the authorization plug-in that its user interface has been deactivated.
 
 

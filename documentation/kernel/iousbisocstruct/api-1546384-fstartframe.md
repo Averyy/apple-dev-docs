@@ -1,7 +1,8 @@
 # fStartFrame
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The starting frame.
 
@@ -10,21 +11,22 @@ The starting frame.
 
 ## Declaration
 
-```swift
+```c
 UInt64 fStartFrame;
 ```
 
 ## See Also
 
-- [fBufSize](iousbisocstruct/1546463-fbufsize.md)
+### Getting the Properties
+- [fBufSize](./api-1546463-fbufsize.md)
   The buffer size.
-- [fBuffer](iousbisocstruct/1546499-fbuffer.md)
+- [fBuffer](./api-1546499-fbuffer.md)
   The buffer pointer.
-- [fFrameCounts](iousbisocstruct/1546241-fframecounts.md)
+- [fFrameCounts](./api-1546241-fframecounts.md)
   The frame counts.
-- [fNumFrames](iousbisocstruct/1545923-fnumframes.md)
+- [fNumFrames](./api-1545923-fnumframes.md)
   The number of frames.
-- [fPipe](iousbisocstruct/1546217-fpipe.md)
+- [fPipe](./api-1546217-fpipe.md)
   The pipe value.
 
 

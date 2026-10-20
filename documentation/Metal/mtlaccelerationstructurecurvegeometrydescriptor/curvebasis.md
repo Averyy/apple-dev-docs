@@ -1,7 +1,8 @@
 # curveBasis
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The basis function for the curve geometry.
 
@@ -19,9 +20,13 @@ The basis function for the curve geometry.
 var curveBasis: MTLCurveBasis { get set }
 ```
 
+```objc
+@property (nonatomic) MTLCurveBasis curveBasis;
+```
+
 #### Discussion
 
-The default value is [`MTLCurveBasis.bSpline`](mtlcurvebasis/bspline.md).
+The default value is [`MTLCurveBasis.bSpline`](../mtlcurvebasis/bspline.md).
 
 
 ---

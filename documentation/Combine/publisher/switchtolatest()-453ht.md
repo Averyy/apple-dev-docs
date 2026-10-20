@@ -1,7 +1,8 @@
 # switchToLatest()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Republishes elements sent by the most recently received publisher.
 
@@ -20,15 +21,17 @@ Republishes elements sent by the most recently received publisher.
 func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>
 ```
 
+Available when `Failure` is `Self.Output.Failure` and `Output` conforms to `Publisher`.
+
 #### Discussion
 
 This operator works with an upstream publisher of publishers, flattening the stream of elements to appear as if they were coming from a single stream of elements. It switches the inner publisher as new ones arrive but keeps the outer publisher constant for downstream subscribers.
 
-For example, given the type `AnyPublisher<URLSession.DataTaskPublisher, NSError>`, calling `switchToLatest()` results in the type `SwitchToLatest<(Data, URLResponse), URLError>`. The downstream subscriber sees a continuous stream of `(Data, URLResponse)` elements from what looks like a single [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher) even though the elements are coming from different upstream publishers.
+For example, given the type `AnyPublisher<URLSession.DataTaskPublisher, NSError>`, calling `switchToLatest()` results in the type `SwitchToLatest<(Data, URLResponse), URLError>`. The downstream subscriber sees a continuous stream of `(Data, URLResponse)` elements from what looks like a single [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md) even though the elements are coming from different upstream publishers.
 
 When this operator receives a new publisher from the upstream publisher, it cancels its previous subscription. Use this feature to prevent earlier publishers from performing unnecessary work, such as creating network request publishers from frequently updating user interface publishers.
 
-The following example updates a [`PassthroughSubject`](passthroughsubject.md) with a new value every `0.1` seconds. A [`map(_:)`](publisher/map(_:)-99evh.md) operator receives the new value and uses it to create a new [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher). By using the `switchToLatest()` operator, the downstream sink subscriber receives the `(Data, URLResponse)` output type from the data task publishers, rather than the [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher) type produced by the [`map(_:)`](publisher/map(_:)-99evh.md) operator. Furthermore, creating each new data task publisher cancels the previous data task publisher.
+The following example updates a [`PassthroughSubject`](../passthroughsubject.md) with a new value every `0.1` seconds. A [`map(_:)`](./map%28_%29-99evh.md) operator receives the new value and uses it to create a new [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md). By using the `switchToLatest()` operator, the downstream sink subscriber receives the `(Data, URLResponse)` output type from the data task publishers, rather than the [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md) type produced by the [`map(_:)`](./map%28_%29-99evh.md) operator. Furthermore, creating each new data task publisher cancels the previous data task publisher.
 
 ```swift
 let subject = PassthroughSubject<Int, Never>()
@@ -58,19 +61,20 @@ The exact behavior of this example depends on the value of `asyncAfter` and the 
 
 ## See Also
 
-- [func flatMap<T, P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-3k7z5.md)
+### Republishing elements by subscribing to new publishers
+- [func flatMap<T, P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](./flatmap%28maxpublishers,_%29-3k7z5.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>>](publisher/flatmap(maxpublishers:_:)-qxf.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>>](./flatmap%28maxpublishers,_%29-qxf.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-hyb0.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](./flatmap%28maxpublishers,_%29-hyb0.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](publisher/flatmap(maxpublishers:_:)-4of8w.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](./flatmap%28maxpublishers,_%29-4of8w.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](publisher/switchtolatest-1c51y.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](./switchtolatest%28%29-1c51y.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](publisher/switchtolatest-20v3t.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](./switchtolatest%28%29-20v3t.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-9eb3r.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](./switchtolatest%28%29-9eb3r.md)
   Republishes elements sent by the most recently received publisher.
 
 

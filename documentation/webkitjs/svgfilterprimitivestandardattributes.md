@@ -1,7 +1,8 @@
 # SVGFilterPrimitiveStandardAttributes
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFilterPrimitiveStandardAttributes
 ```
 
 ## Topics
 
 ### Instance Properties
-- [height](svgfilterprimitivestandardattributes/1630420-height.md)
-- [result](svgfilterprimitivestandardattributes/1632997-result.md)
-- [width](svgfilterprimitivestandardattributes/1634383-width.md)
-- [x](svgfilterprimitivestandardattributes/1631099-x.md)
-- [y](svgfilterprimitivestandardattributes/1632953-y.md)
+- [height](./svgfilterprimitivestandardattributes/api-1630420-height.md)
+- [result](./svgfilterprimitivestandardattributes/api-1632997-result.md)
+- [width](./svgfilterprimitivestandardattributes/api-1634383-width.md)
+- [x](./svgfilterprimitivestandardattributes/api-1631099-x.md)
+- [y](./svgfilterprimitivestandardattributes/api-1632953-y.md)
 
 
 ---

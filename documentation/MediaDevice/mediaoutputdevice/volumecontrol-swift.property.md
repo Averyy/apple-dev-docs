@@ -1,7 +1,8 @@
 # volumeControl
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of volume control supported by this device.
 

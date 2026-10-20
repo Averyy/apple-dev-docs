@@ -1,7 +1,8 @@
 # UIOverlayArrangement
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
@@ -26,7 +27,7 @@ An overlay arrangement view controller places a primary view controller and a se
 - When someone holds a folded iPhone Duo in landscape orientation, the arrangement places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement places the secondary view in the top position and the primary view in the bottom position.
 
-Create an overlay arrangement view controller by specifying a primary and secondary view controller, and call the [`updateArrangement(_:animated:)`](uiarrangementviewcontroller/updatearrangement(_:animated:).md) method with [`overlay`](uiarrangementviewcontroller/arrangement/overlay.md):
+Create an overlay arrangement view controller by specifying a primary and secondary view controller, and call the [`updateArrangement(_:animated:)`](./uiarrangementviewcontroller/updatearrangement%28_,animated%29.md) method with [`overlay`](./uiarrangementviewcontroller/arrangement/overlay.md):
 
 ```swift
 let arrangementVC = UIArrangementViewController()
@@ -40,7 +41,7 @@ arrangementVC.setViewController(secondaryVC, for: .secondary)
 arrangementVC.updateArrangement(.overlay)
 ```
 
-##### Limit an Overlay Arrangement By Orientation
+##### Limit an overlay arrangement by orientation
 
 You can limit which axes your overlay arrangement view controller supports by specifying the axes for the arrangement. The following example shows an arrangement that only functions vertically:
 
@@ -56,13 +57,13 @@ arrangementVC.setViewController(secondaryVC, for: .secondary)
 arrangementVC.updateArrangement(.overlay.axes(.vertical))
 ```
 
-Use [`axes(_:)`](uioverlayarrangement-swift.struct/axes(_:).md) to set the axes for an overlay arrangement. For axes that you don’t include, the arrangement view only displays the primary view.
+Use [`axes(_:)`](./uioverlayarrangement-swift.struct/axes%28_%29.md) to set the axes for an overlay arrangement. For axes that you don’t include, the arrangement view only displays the primary view.
 
-##### Customize a Folded Layout
+##### Customize a folded layout
 
 You can adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo with view properties. For example, if you would prefer the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation, customize the overlay arrangement with view properties.
 
-Start by creating a [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md) instance and a view properties instance:
+Start by creating a [`UIOverlayArrangement`](./uioverlayarrangement-swift.struct.md) instance and a view properties instance:
 
 ```swift
 var overlayArrangement = UIOverlayArrangement.overlay
@@ -80,26 +81,27 @@ arrangementView.updateArrangement(overlayArrangement)
 ## Topics
 
 ### Creating an overlay arrangement
-- [init()](uioverlayarrangement-swift.struct/init.md)
+- [init()](./uioverlayarrangement-swift.struct/init%28%29.md)
   Creates an overlay arrangement.
 ### Configuring the arrangement
-- [func axes(UIAxis) -> UIOverlayArrangement](uioverlayarrangement-swift.struct/axes(_:).md)
+- [func axes(UIAxis) -> UIOverlayArrangement](./uioverlayarrangement-swift.struct/axes%28_%29.md)
   Sets the axes that the arrangement supports to the axes you provide.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [UIArrangementViewController.Arrangement](uiarrangementviewcontroller/arrangement.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [UIArrangementViewController.Arrangement](./uiarrangementviewcontroller/arrangement.md)
 
 ## See Also
 
-- [struct UISplitArrangement](uisplitarrangement-swift.struct.md)
+### Configuring the arrangement
+- [struct UISplitArrangement](./uisplitarrangement-swift.struct.md)
   An arrangement that places the primary and secondary views side by side along one or more axes.
-- [UIArrangementViewController.Arrangement](uiarrangementviewcontroller/arrangement.md)
+- [UIArrangementViewController.Arrangement](./uiarrangementviewcontroller/arrangement.md)
   A type that describes how an arrangement view controller lays out its view controllers.
-- [func updateArrangement<A>(A, animated: Bool)](uiarrangementviewcontroller/updatearrangement(_:animated:).md)
+- [func updateArrangement<A>(A, animated: Bool)](./uiarrangementviewcontroller/updatearrangement%28_,animated%29.md)
   Updates the arrangement of the view controller.
 
 

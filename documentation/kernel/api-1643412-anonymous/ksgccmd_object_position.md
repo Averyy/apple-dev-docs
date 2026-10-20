@@ -1,7 +1,8 @@
 # kSGCCmd_OBJECT_POSITION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSGCCmd_OBJECT_POSITION = 0x31
 ```
 

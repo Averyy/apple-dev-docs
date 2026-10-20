@@ -1,7 +1,8 @@
 # init(multiPolyline:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that renders a visual representation of multiple polyline objects.
 
@@ -17,6 +18,10 @@ Creates an object that renders a visual representation of multiple polyline obje
 
 ```swift
 init(multiPolyline: MKMultiPolyline)
+```
+
+```objc
+- (instancetype) initWithMultiPolyline:(MKMultiPolyline *) multiPolyline;
 ```
 
 ## Parameters

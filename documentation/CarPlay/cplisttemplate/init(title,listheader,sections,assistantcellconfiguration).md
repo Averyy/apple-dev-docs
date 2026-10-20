@@ -1,7 +1,8 @@
 # init(title:listHeader:sections:assistantCellConfiguration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a list template with a details list header.
 
@@ -14,6 +15,10 @@ Initialize a list template with a details list header.
 
 ```swift
 init(title: String?, listHeader: CPListTemplateDetailsHeader?, sections: [CPListSection], assistantCellConfiguration: CPAssistantCellConfiguration?)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title listHeader:(CPListTemplateDetailsHeader *) listHeader sections:(NSArray<CPListSection *> *) sections assistantCellConfiguration:(CPAssistantCellConfiguration *) assistantCellConfiguration;
 ```
 
 

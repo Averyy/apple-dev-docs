@@ -1,18 +1,23 @@
 # seq_num
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence number of the message.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var seq_num: UInt64
+```
+
+```c
+uint64_t seq_num;
 ```
 
 #### Discussion
@@ -29,17 +34,18 @@ Dropped events generally indicate that the kernel generated more events than the
 
 This field is available if the message version is greater than `2`.
 
-> 💡 **Tip**:  For an equivalent counter that filters only by client and not event type, see [`global_seq_num`](es_message_t/global_seq_num.md).
+> 💡 **Tip**:  For an equivalent counter that filters only by client and not event type, see [`global_seq_num`](./global_seq_num.md).
 
 ## See Also
 
-- [var time: timespec](es_message_t/time.md)
+### Inspecting Timing Properties
+- [var time: timespec](./time.md)
   The time the event occurred, expressed as a Darwin time value.
-- [var mach_time: UInt64](es_message_t/mach_time.md)
+- [var mach_time: UInt64](./mach_time.md)
   The time the event occurred, as a Mach time value.
-- [var deadline: UInt64](es_message_t/deadline.md)
+- [var deadline: UInt64](./deadline.md)
   The deadline by which your app must respond to the event.
-- [var global_seq_num: UInt64](es_message_t/global_seq_num.md)
+- [var global_seq_num: UInt64](./global_seq_num.md)
   The global sequence number of the message.
 
 

@@ -1,7 +1,8 @@
 # extendedLanguageTag
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
 
@@ -20,13 +21,18 @@ The IETF BCP 47 (RFC 4646) language identifier of the metadata item.
 var extendedLanguageTag: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * extendedLanguageTag;
+```
+
 #### Discussion
 
 The value may be `nil` if no language tag information is available.
 
 ## See Also
 
-- [var locale: Locale?](avmetadataitem/locale.md)
+### Accessing language support
+- [var locale: Locale?](./locale.md)
   The locale of the metadata item.
 
 

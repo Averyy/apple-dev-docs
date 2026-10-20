@@ -1,7 +1,8 @@
 # init(machService:targetQueue:options:requirement:cancellationHandler:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 26.0+

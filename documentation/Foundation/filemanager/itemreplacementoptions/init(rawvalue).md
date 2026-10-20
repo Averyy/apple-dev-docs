@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value for a file replacement operation.
 
@@ -26,9 +27,10 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/usingnewmetadataonly.md)
+### Using File Replacement Options
+- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](./usingnewmetadataonly.md)
   Only metadata from the new item is used, and metadata from the original item isn’t preserved (default).
-- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/withoutdeletingbackupitem.md)
+- [static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions](./withoutdeletingbackupitem.md)
   The backup item remains in place after a successful replacement.
 
 

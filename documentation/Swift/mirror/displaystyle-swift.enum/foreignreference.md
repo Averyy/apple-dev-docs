@@ -1,7 +1,8 @@
 # Mirror.DisplayStyle.foreignReference
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

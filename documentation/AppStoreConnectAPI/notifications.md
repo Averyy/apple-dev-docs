@@ -1,12 +1,13 @@
 # Notifications
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Add and read information for alternative distribution package notifications.
 
 #### Overview
 
-Alternative marketplaces can use the marketplace webhooks API [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md) endpoint to set up an `endpointURL,` where the marketplace receives notifications about changes to apps that it distributes.
+Alternative marketplaces can use the marketplace webhooks API [`Add a Marketplace Webhook Configuration`](./post-v1-marketplacewebhooks.md) endpoint to set up an `endpointURL,` where the marketplace receives notifications about changes to apps that it distributes.
 
 The most typical notifications are:
 
@@ -14,38 +15,39 @@ The most typical notifications are:
 - A specific app version needs to be removed.
 - All versions of an app need to be removed.
 
-To learn more about configuring a webhook URL using the API, see [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md).
+To learn more about configuring a webhook URL using the API, see [`Add a Marketplace Webhook Configuration`](./post-v1-marketplacewebhooks.md).
 
-To learn more about server-side processing of marketplace webhook notifications, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
+To learn more about server-side processing of marketplace webhook notifications, see [Processing alternative app marketplace notifications](../MarketplaceKit/processing-alternative-marketplace-notifications.md).
 
-> **Note**:  To receive notifications for an app, the developer of an app distributed on an alternative marketplace must enable it in App Store Connect, to learn more see [`Manage distribution on an alternative app marketplace`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/manage-distribution-on-an-alternative-app-marketplace). If a developer doesn’t opt-in to notifications, they must provide that alternative distribution ID to the marketplace so the marketplace can ingest the alternative distribution package. To learn more about server-side processing of marketplace webhooks, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/marketplacekit/processing-alternative-marketplace-notifications).
+> **Note**:  To receive notifications for an app, the developer of an app distributed on an alternative marketplace must enable it in App Store Connect, to learn more see [Manage distribution on an alternative app marketplace](https://developer.apple.com/help/app-store-connect/distributing-apps-in-the-european-union/manage-distribution-on-an-alternative-app-marketplace). If a developer doesn’t opt-in to notifications, they must provide that alternative distribution ID to the marketplace so the marketplace can ingest the alternative distribution package. To learn more about server-side processing of marketplace webhooks, see [Processing alternative app marketplace notifications](../MarketplaceKit/processing-alternative-marketplace-notifications.md).
 
 ## Topics
 
 ### Managing Webhook Endpoint URLs
-- [Read Marketplace Webhook Information](get-v1-marketplacewebhooks.md)
+- [Read Marketplace Webhook Information](./get-v1-marketplacewebhooks.md)
   Get the endpoint URL for alternative distribution package notifications.
-- [Add a Marketplace Webhook Configuration](post-v1-marketplacewebhooks.md)
+- [Add a Marketplace Webhook Configuration](./post-v1-marketplacewebhooks.md)
   Add a new endpoint URL and secret for alternative distribution package notifications.
-- [Modify a Marketplace Webhook Configuration](patch-v1-marketplacewebhooks-_id_.md)
+- [Modify a Marketplace Webhook Configuration](./patch-v1-marketplacewebhooks-_id_.md)
   Update the endpoint URL and secret for alternative distribution package notifications.
-- [Delete a Marketplace Webhook Configuration](delete-v1-marketplacewebhooks-_id_.md)
+- [Delete a Marketplace Webhook Configuration](./delete-v1-marketplacewebhooks-_id_.md)
   Delete a specific marketplace notifcation endpoint URL.
 ### Objects
-- [object MarketplaceWebhook](marketplacewebhook.md)
+- [object MarketplaceWebhook](./marketplacewebhook.md)
   A webhook endpoint that receives event notifications from an alternative marketplace, such as app availability changes.
-- [object MarketplaceWebhookCreateRequest](marketplacewebhookcreaterequest.md)
+- [object MarketplaceWebhookCreateRequest](./marketplacewebhookcreaterequest.md)
   The request body you use to create a marketplace webhook url.
-- [object MarketplaceWebhookResponse](marketplacewebhookresponse.md)
+- [object MarketplaceWebhookResponse](./marketplacewebhookresponse.md)
   A response containing a single marketplace webhook endpoint configuration.
-- [object MarketplaceWebhooksResponse](marketplacewebhooksresponse.md)
+- [object MarketplaceWebhooksResponse](./marketplacewebhooksresponse.md)
   A response containing a list of webhook endpoints for an alternative marketplace.
-- [object MarketplaceWebhookUpdateRequest](marketplacewebhookupdaterequest.md)
+- [object MarketplaceWebhookUpdateRequest](./marketplacewebhookupdaterequest.md)
   The request body you use to update a marketplace webhook url.
 
 ## See Also
 
-- [Alternative Distribution Packages](alternative-distribution-packages.md)
+### Alternative Distribution Packages and Notifications
+- [Alternative Distribution Packages](./alternative-distribution-packages.md)
   Create and read distribution packages for an alternative app distribution.
 
 

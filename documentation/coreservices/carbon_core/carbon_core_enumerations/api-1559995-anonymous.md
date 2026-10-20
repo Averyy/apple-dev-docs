@@ -5,18 +5,18 @@
 ## Topics
 
 ### Constants
-- [var midiDupIDErr: Int](mididupiderr.md)
-- [var midiInvalidCmdErr: Int](midiinvalidcmderr.md)
-- [var midiNameLenErr: Int](midinamelenerr.md)
-- [var midiNoClientErr: Int](midinoclienterr.md)
-- [var midiNoConErr: Int](midinoconerr.md)
-- [var midiNoPortErr: Int](midinoporterr.md)
-- [var midiTooManyConsErr: Int](miditoomanyconserr.md)
-- [var midiTooManyPortsErr: Int](miditoomanyportserr.md)
-- [var midiVConnectErr: Int](midivconnecterr.md)
-- [var midiVConnectMade: Int](midivconnectmade.md)
-- [var midiVConnectRmvd: Int](midivconnectrmvd.md)
-- [var midiWriteErr: Int](midiwriteerr.md)
+- [var midiDupIDErr: Int](../../mididupiderr.md)
+- [var midiInvalidCmdErr: Int](../../midiinvalidcmderr.md)
+- [var midiNameLenErr: Int](../../midinamelenerr.md)
+- [var midiNoClientErr: Int](../../midinoclienterr.md)
+- [var midiNoConErr: Int](../../midinoconerr.md)
+- [var midiNoPortErr: Int](../../midinoporterr.md)
+- [var midiTooManyConsErr: Int](../../miditoomanyconserr.md)
+- [var midiTooManyPortsErr: Int](../../miditoomanyportserr.md)
+- [var midiVConnectErr: Int](../../midivconnecterr.md)
+- [var midiVConnectMade: Int](../../midivconnectmade.md)
+- [var midiVConnectRmvd: Int](../../midivconnectrmvd.md)
+- [var midiWriteErr: Int](../../midiwriteerr.md)
 
 
 ---

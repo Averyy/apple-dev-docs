@@ -1,7 +1,8 @@
 # setOn(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the state of the switch to the on or off position, optionally animating the transition.
 
@@ -17,18 +18,23 @@ Sets the state of the switch to the on or off position, optionally animating the
 func setOn(_ on: Bool, animated: Bool)
 ```
 
+```objc
+- (void) setOn:(BOOL) on animated:(BOOL) animated;
+```
+
 #### Discussion
 
 Setting the switch to either position doesn’t result in an action message being sent.
 
 ## Parameters
 
-- `on`: [`true`](https://developer.apple.com/documentation/swift/true) if the switch should be turned to the on position; [`false`](https://developer.apple.com/documentation/swift/false) if it should be turned to the off position. If the switch is already in the designated position, nothing happens.
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the “flipping” of the switch; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- `on`: [`true`](../../Swift/true.md) if the switch should be turned to the on position; [`false`](../../Swift/false.md) if it should be turned to the off position. If the switch is already in the designated position, nothing happens.
+- `animated`: [`true`](../../Swift/true.md) to animate the “flipping” of the switch; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isOn: Bool](uiswitch/ison.md)
+### Setting the on/off state
+- [var isOn: Bool](./ison.md)
   A Boolean value that determines whether the switch is in the on or off position.
 
 

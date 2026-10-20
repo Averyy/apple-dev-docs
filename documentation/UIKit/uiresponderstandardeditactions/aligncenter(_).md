@@ -1,7 +1,8 @@
 # alignCenter(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func alignCenter(_ sender: Any?)
+```
+
+```objc
+- (void) alignCenter:(id) sender;
 ```
 
 

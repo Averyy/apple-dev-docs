@@ -1,7 +1,8 @@
 # endLocation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ending location of the text range.
 
@@ -14,11 +15,16 @@ The ending location of the text range.
 var endLocation: any NSTextLocation { get }
 ```
 
+```objc
+@property (strong, readonly) id<NSTextLocation> endLocation;
+```
+
 ## See Also
 
-- [var location: any NSTextLocation](nstextrange/location.md)
+### Characteristics of the text range
+- [var location: any NSTextLocation](./location.md)
   The starting location of the text range.
-- [var isEmpty: Bool](nstextrange/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   Returns whether the text range is empty.
 
 

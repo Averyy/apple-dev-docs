@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.1+
@@ -10,6 +11,10 @@
 
 ```swift
 var bundleIdentifier: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * bundleIdentifier;
 ```
 
 #### Discussion

@@ -1,18 +1,19 @@
 # CFTreeReleaseCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function used to release a previously retained program-defined information pointer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ Callback function used to release a previously retained program-defined informat
 typealias CFTreeReleaseCallBack = (UnsafeRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const void *) CFTreeReleaseCallBack;
+```
+
 ## Parameters
 
-- `info`: The program-supplied information pointer provided in a [`CFTreeContext`](cftreecontext.md) structure.
+- `info`: The program-supplied information pointer provided in a [`CFTreeContext`](./cftreecontext.md) structure.
 
 ## See Also
 
-- [typealias CFTreeApplierFunction](cftreeapplierfunction.md)
+### Callbacks
+- [typealias CFTreeApplierFunction](./cftreeapplierfunction.md)
   Type of the callback function used by the CFTree apply function.
-- [typealias CFTreeCopyDescriptionCallBack](cftreecopydescriptioncallback.md)
+- [typealias CFTreeCopyDescriptionCallBack](./cftreecopydescriptioncallback.md)
   Callback function used to provide a description of the program-defined information pointer.
-- [typealias CFTreeRetainCallBack](cftreeretaincallback.md)
+- [typealias CFTreeRetainCallBack](./cftreeretaincallback.md)
   Callback function used to retain a program-defined information pointer.
 
 

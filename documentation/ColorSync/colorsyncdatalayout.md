@@ -1,7 +1,8 @@
 # ColorSyncDataLayout
 
 **Framework**: ColorSync  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A bit field describing the alpha information and byte order of a pixel layout.
 
@@ -20,15 +21,20 @@ A bit field describing the alpha information and byte order of a pixel layout.
 typealias ColorSyncDataLayout = UInt32
 ```
 
+```c
+typedef uint32_t ColorSyncDataLayout;
+```
+
 #### Discussion
 
-Combine a [`ColorSyncAlphaInfo`](colorsyncalphainfo.md) value (within [`kColorSyncAlphaInfoMask`](kcolorsyncalphainfomask.md)) with a byte-order value (within [`kColorSyncByteOrderMask`](kcolorsyncbyteordermask.md)) to describe how color components are packed.
+Combine a [`ColorSyncAlphaInfo`](./colorsyncalphainfo.md) value (within [`kColorSyncAlphaInfoMask`](./kcolorsyncalphainfomask.md)) with a byte-order value (within [`kColorSyncByteOrderMask`](./kcolorsyncbyteordermask.md)) to describe how color components are packed.
 
 ## See Also
 
-- [struct ColorSyncAlphaInfo](colorsyncalphainfo.md)
+### Describing data layout
+- [struct ColorSyncAlphaInfo](./colorsyncalphainfo.md)
   The location of the alpha component in a pixel, and whether it’s premultiplied.
-- [struct ColorSyncDataDepth](colorsyncdatadepth.md)
+- [struct ColorSyncDataDepth](./colorsyncdatadepth.md)
   The bit depth and numeric type of a color component in a pixel.
 
 

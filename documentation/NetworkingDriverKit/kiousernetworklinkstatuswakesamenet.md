@@ -1,23 +1,25 @@
 # kIOUserNetworkLinkStatusWakeSameNet
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkLinkStatusWakeSameNet
 ```
 
 ## See Also
 
-- [kIOUserNetworkLinkStatusInvalid](kiousernetworklinkstatusinvalid.md)
-- [kIOUserNetworkLinkStatusInactive](kiousernetworklinkstatusinactive.md)
-- [kIOUserNetworkLinkStatusActive](kiousernetworklinkstatusactive.md)
-- [kIOUserNetworkLinkStatusForceNotify](kiousernetworklinkstatusforcenotify.md)
+### Getting the Link Statuses
+- [kIOUserNetworkLinkStatusInvalid](./kiousernetworklinkstatusinvalid.md)
+- [kIOUserNetworkLinkStatusInactive](./kiousernetworklinkstatusinactive.md)
+- [kIOUserNetworkLinkStatusActive](./kiousernetworklinkstatusactive.md)
+- [kIOUserNetworkLinkStatusForceNotify](./kiousernetworklinkstatusforcenotify.md)
 
 
 ---

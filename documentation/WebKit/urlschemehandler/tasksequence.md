@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of sequence produced by the handler.

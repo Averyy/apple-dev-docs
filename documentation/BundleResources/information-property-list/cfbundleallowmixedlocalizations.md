@@ -1,7 +1,8 @@
 # CFBundleAllowMixedLocalizations
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the bundle supports the retrieval of localized strings from frameworks.
 
@@ -13,17 +14,19 @@ A Boolean value that indicates whether the bundle supports the retrieval of loca
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `CFBundleAllowMixedLocalizations` (Localized resources can be mixed)
+- **Type**: boolean
 
 ## See Also
 
-- [CFBundleDevelopmentRegion](information-property-list/cfbundledevelopmentregion.md)
+### Localization
+- [CFBundleDevelopmentRegion](./cfbundledevelopmentregion.md)
   The default language and region for the bundle, as a language ID.
-- [CFBundleLocalizations](information-property-list/cfbundlelocalizations.md)
+- [CFBundleLocalizations](./cfbundlelocalizations.md)
   The localizations handled manually by your app.
-- [TICapsLockLanguageSwitchCapable](information-property-list/ticapslocklanguageswitchcapable.md)
+- [TICapsLockLanguageSwitchCapable](./ticapslocklanguageswitchcapable.md)
   A Boolean value that enables the Caps Lock key to switch between Latin and non-Latin input sources.
 
 

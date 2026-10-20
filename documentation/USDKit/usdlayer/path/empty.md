@@ -1,7 +1,8 @@
 # empty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The empty path.
 

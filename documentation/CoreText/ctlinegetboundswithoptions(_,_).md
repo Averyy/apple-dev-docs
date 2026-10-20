@@ -1,7 +1,8 @@
 # CTLineGetBoundsWithOptions(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the bounds for a line.
 
@@ -20,9 +21,13 @@ Calculates the bounds for a line.
 func CTLineGetBoundsWithOptions(_ line: CTLine, _ options: CTLineBoundsOptions) -> CGRect
 ```
 
+```c
+extern CGRect CTLineGetBoundsWithOptions(CTLineRef line, CTLineBoundsOptions options);
+```
+
 #### Return Value
 
-The bounds of the line as specified by the type and options, such that the coordinate origin is coincident with the line origin and the rect origin is at the bottom left. If the line is invalid, this function will return [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull).
+The bounds of the line as specified by the type and options, such that the coordinate origin is coincident with the line origin and the rect origin is at the bottom left. If the line is invalid, this function will return [`CGRectNull`](../CoreGraphics/cgrectnull.md).
 
 ## Parameters
 
@@ -31,13 +36,15 @@ The bounds of the line as specified by the type and options, such that the coord
 
 ## See Also
 
-- [struct CTLineBoundsOptions](ctlineboundsoptions.md)
+### Related Documentation
+- [struct CTLineBoundsOptions](./ctlineboundsoptions.md)
   Options for getting the bounds of a line of text.
-- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](ctrungettypographicbounds(_:_:_:_:_:).md)
+### Measuring the Glyph Run
+- [func CTRunGetTypographicBounds(CTRun, CFRange, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?, UnsafeMutablePointer<CGFloat>?) -> Double](./ctrungettypographicbounds%28_,_,_,_,_%29.md)
   Gets the typographic bounds of the run.
-- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](ctrungetimagebounds(_:_:_:).md)
+- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](./ctrungetimagebounds%28_,_,_%29.md)
   Calculates the image bounds for a glyph range.
-- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](ctrungetbaseadvancesandorigins(_:_:_:_:).md)
+- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](./ctrungetbaseadvancesandorigins%28_,_,_,_%29.md)
   Copies a range of base advances and origins into user-provided buffers.
 
 

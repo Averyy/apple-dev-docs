@@ -1,7 +1,8 @@
 # init(mSampleTime:mHostTime:mRateScalar:mWordClockTime:mSMPTETime:mFlags:mReserved:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio time stamp.
 
@@ -22,7 +23,8 @@ init(mSampleTime: Float64, mHostTime: UInt64, mRateScalar: Float64, mWordClockTi
 
 ## See Also
 
-- [init()](audiotimestamp/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an empty audio timestamp.
 
 

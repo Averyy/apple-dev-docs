@@ -1,7 +1,8 @@
 # MediaExtensionErrorDomain
 
 **Framework**: MediaExtension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain of the error.
 
@@ -14,11 +15,16 @@ The domain of the error.
 let MediaExtensionErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const MediaExtensionErrorDomain;
+```
+
 ## See Also
 
-- [struct MEError](meerror-swift.struct.md)
+### Errors
+- [struct MEError](./meerror-swift.struct.md)
   A MediaExtension framework error.
-- [MEError.Code](meerror-swift.struct/code.md)
+- [MEError.Code](./meerror-swift.struct/code.md)
   An enumeration that models media extension error codes.
 
 

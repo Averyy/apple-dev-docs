@@ -1,7 +1,8 @@
 # MKError.Code.loadingThrottled
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data didn’t load because data throttling is in effect.
 
@@ -20,21 +21,26 @@ The data didn’t load because data throttling is in effect.
 case loadingThrottled
 ```
 
+```c
+MKErrorLoadingThrottled
+```
+
 #### Discussion
 
 This error can occur if an app makes frequent requests for data over a short period of time.
 
 ## See Also
 
-- [MKError.Code.decodingFailed](mkerror/code/decodingfailed.md)
+### Constants
+- [MKError.Code.decodingFailed](./decodingfailed.md)
   GeoJSON decoding failed.
-- [MKError.Code.directionsNotFound](mkerror/code/directionsnotfound.md)
+- [MKError.Code.directionsNotFound](./directionsnotfound.md)
   The framework couldn’t find the specified directions.
-- [MKError.Code.placemarkNotFound](mkerror/code/placemarknotfound.md)
+- [MKError.Code.placemarkNotFound](./placemarknotfound.md)
   The specified placemark could not be found.
-- [MKError.Code.serverFailure](mkerror/code/serverfailure.md)
+- [MKError.Code.serverFailure](./serverfailure.md)
   The map server was unable to return the desired information.
-- [MKError.Code.unknown](mkerror/code/unknown.md)
+- [MKError.Code.unknown](./unknown.md)
   An unknown error occurred.
 
 

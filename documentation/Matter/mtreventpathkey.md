@@ -1,7 +1,8 @@
 # MTREventPathKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTREventPathKey: String
+```
+
+```c
+extern NSString * const MTREventPathKey;
 ```
 
 

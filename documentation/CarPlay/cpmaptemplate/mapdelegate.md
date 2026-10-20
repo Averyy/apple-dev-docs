@@ -1,7 +1,8 @@
 # mapDelegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that serves as the delegate of the map template.
 
@@ -16,9 +17,14 @@ The object that serves as the delegate of the map template.
 weak var mapDelegate: (any CPMapTemplateDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CPMapTemplateDelegate> mapDelegate;
+```
+
 ## See Also
 
-- [protocol CPMapTemplateDelegate](cpmaptemplatedelegate.md)
+### Handling Map Template Events
+- [protocol CPMapTemplateDelegate](../cpmaptemplatedelegate.md)
   The protocol an object implements to handle events from a map template.
 
 

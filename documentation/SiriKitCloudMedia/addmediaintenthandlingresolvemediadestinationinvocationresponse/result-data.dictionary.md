@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of attempting to modify the user’s library or a playlist.
 
@@ -10,7 +11,7 @@ The result of attempting to modify the user’s library or a playlist.
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result
 ```
 

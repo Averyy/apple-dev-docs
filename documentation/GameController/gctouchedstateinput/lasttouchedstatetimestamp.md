@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time of the most recent touch state change.
@@ -20,17 +21,22 @@ The time of the most recent touch state change.
 var lastTouchedStateTimestamp: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastTouchedStateTimestamp;
+```
+
 #### Discussion
 
 This property isn’t a specific date and time. To determine the time between changes, subtract a previous value from the current value.
 
 ## See Also
 
-- [var isTouched: Bool](gctouchedstateinput/istouched.md)
+### Getting change information
+- [var isTouched: Bool](./istouched.md)
   A Boolean value that indicates whether the user touches the button.
-- [var lastTouchedStateLatency: TimeInterval](gctouchedstateinput/lasttouchedstatelatency.md)
+- [var lastTouchedStateLatency: TimeInterval](./lasttouchedstatelatency.md)
   The time in seconds between the last touch state change and the current time.
-- [var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInput, Bool) -> Void)?](gctouchedstateinput/toucheddidchangehandler.md)
+- [var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInput, Bool) -> Void)?](./toucheddidchangehandler.md)
   A block that the element calls when its touch value changes.
 
 

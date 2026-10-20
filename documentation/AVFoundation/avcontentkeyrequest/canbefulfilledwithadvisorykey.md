@@ -1,7 +1,8 @@
 # canBeFulfilledWithAdvisoryKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this key request was initiated for an advisory key.
 
@@ -15,6 +16,10 @@ Indicates whether this key request was initiated for an advisory key.
 
 ```swift
 var canBeFulfilledWithAdvisoryKey: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL canBeFulfilledWithAdvisoryKey;
 ```
 
 #### Discussion

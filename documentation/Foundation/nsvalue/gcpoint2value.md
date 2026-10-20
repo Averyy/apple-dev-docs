@@ -1,7 +1,8 @@
 # gcPoint2Value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var gcPoint2Value: GCPoint2 { get }
+```
+
+```objc
+@property (nonatomic, readonly) GCPoint2 GCPoint2Value;
 ```
 
 

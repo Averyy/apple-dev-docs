@@ -1,7 +1,8 @@
 # CredentialSession.Event.presentmentIntentAssertionTimeout
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session’s presentment intent assertion timed out.
 
@@ -17,11 +18,12 @@ case presentmentIntentAssertionTimeout
 
 #### Discussion
 
-A [`CredentialSession.PresentmentIntentAssertion`](credentialsession/presentmentintentassertion.md) granted by a credential session lasts for 60 seconds. If it expires, your app needs to request a new one with [`acquirePresentmentAssertion()`](credentialsession/acquirepresentmentassertion().md).
+A [`CredentialSession.PresentmentIntentAssertion`](../presentmentintentassertion.md) granted by a credential session lasts for 60 seconds. If it expires, your app needs to request a new one with [`acquirePresentmentAssertion()`](../acquirepresentmentassertion%28%29.md).
 
 ## See Also
 
-- [CredentialSession.Event.cardEmulationTimeout](credentialsession/event/cardemulationtimeout.md)
+### Timeout events
+- [CredentialSession.Event.cardEmulationTimeout](./cardemulationtimeout.md)
   The session’s card emulation timer expired.
 
 

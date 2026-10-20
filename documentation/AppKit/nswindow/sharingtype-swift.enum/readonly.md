@@ -1,7 +1,8 @@
 # NSWindow.SharingType.readOnly
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.5+
@@ -12,15 +13,20 @@
 case readOnly
 ```
 
+```c
+NSWindowSharingReadOnly
+```
+
 #### Discussion
 
 The window’s contents can be read but not modified by another process.
 
 ## See Also
 
-- [NSWindow.SharingType.none](nswindow/sharingtype-swift.enum/none.md)
+### Constants
+- [NSWindow.SharingType.none](./none.md)
   A legacy constant that macOS no longer uses.
-- [static var readWrite: NSWindow.SharingType](nswindow/sharingtype-swift.enum/readwrite.md)
+- [static var readWrite: NSWindow.SharingType](./readwrite.md)
 
 
 ---

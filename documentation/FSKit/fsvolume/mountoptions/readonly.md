@@ -1,7 +1,8 @@
 # readOnly
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to request a read-only mount.
 
@@ -12,6 +13,10 @@ An option to request a read-only mount.
 
 ```swift
 static var readOnly: FSVolume.MountOptions { get }
+```
+
+```c
+FSMountOptionsReadOnly
 ```
 
 

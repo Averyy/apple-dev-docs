@@ -1,23 +1,30 @@
 # timeoutIntervalForResource
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum amount of time that a resource request can use.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 11.0
+- iPadOS 10.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.12+ - Deprecated in 10.13
+- tvOS 10.0+ - Deprecated in 11.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 4.0
+
+> **Deprecated**: Use [`timeoutIntervalForResource`](./configuration-swift.class/timeoutintervalforresource.md) instead.
 
 ## Declaration
 
 ```swift
 var timeoutIntervalForResource: TimeInterval { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSTimeInterval timeoutIntervalForResource;
 ```
 
 #### Discussion
@@ -28,13 +35,14 @@ The default value is `604800`, the number of seconds in 7 days.
 
 ## See Also
 
-- [var allowsCellularAccess: Bool](ckoperation/allowscellularaccess.md)
+### Deprecated Properties
+- [var allowsCellularAccess: Bool](./allowscellularaccess.md)
   A Boolean value that indicates whether the operation can send data over the cellular network.
-- [var container: CKContainer?](ckoperation/container.md)
+- [var container: CKContainer?](./container.md)
   The operation’s container.
-- [var isLongLived: Bool](ckoperation/islonglived.md)
+- [var isLongLived: Bool](./islonglived.md)
   A Boolean value that indicates whether the operation is long-lived.
-- [var timeoutIntervalForRequest: TimeInterval](ckoperation/timeoutintervalforrequest.md)
+- [var timeoutIntervalForRequest: TimeInterval](./timeoutintervalforrequest.md)
   The timeout interval when waiting for additional data.
 
 

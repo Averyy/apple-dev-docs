@@ -1,14 +1,15 @@
 # vm32_addr_struct_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t vm32_addr_struct_t;
 ```
 

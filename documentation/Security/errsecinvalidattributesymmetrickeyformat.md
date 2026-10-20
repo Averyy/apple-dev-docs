@@ -1,7 +1,8 @@
 # errSecInvalidAttributeSymmetricKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A symmetric key format attribute is not valid.
 
@@ -18,6 +19,10 @@ A symmetric key format attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeSymmetricKeyFormat: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeSymmetricKeyFormat
 ```
 
 

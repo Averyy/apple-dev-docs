@@ -1,7 +1,8 @@
 # AccelerateMatrixOrder
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,29 +23,30 @@ enum AccelerateMatrixOrder
 ## Topics
 
 ### Enumeration Cases
-- [AccelerateMatrixOrder.columnMajor](acceleratematrixorder/columnmajor.md)
-- [AccelerateMatrixOrder.rowMajor](acceleratematrixorder/rowmajor.md)
+- [AccelerateMatrixOrder.columnMajor](./acceleratematrixorder/columnmajor.md)
+- [AccelerateMatrixOrder.rowMajor](./acceleratematrixorder/rowmajor.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AccelerateBuffer](acceleratebuffer.md)
+### Essentials
+- [protocol AccelerateBuffer](./acceleratebuffer.md)
   A type that represents an immutable buffer.
-- [protocol AccelerateMutableBuffer](acceleratemutablebuffer.md)
+- [protocol AccelerateMutableBuffer](./acceleratemutablebuffer.md)
   A type that represents a mutable buffer.
-- [protocol AccelerateMatrixBuffer](acceleratematrixbuffer.md)
-- [protocol AccelerateMutableMatrixBuffer](acceleratemutablematrixbuffer.md)
+- [protocol AccelerateMatrixBuffer](./acceleratematrixbuffer.md)
+- [protocol AccelerateMutableMatrixBuffer](./acceleratemutablematrixbuffer.md)
 
 
 ---

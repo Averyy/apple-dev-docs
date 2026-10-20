@@ -1,7 +1,8 @@
 # contextMenuInteraction(_:willPerformPreviewActionForMenuWith:animator:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when a preview action begins.
 
@@ -17,6 +18,10 @@ Informs the delegate when a preview action begins.
 optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: any UIContextMenuInteractionCommitAnimating)
 ```
 
+```objc
+- (void) contextMenuInteraction:(UIContextMenuInteraction *) interaction willPerformPreviewActionForMenuWithConfiguration:(UIContextMenuConfiguration *) configuration animator:(id<UIContextMenuInteractionCommitAnimating>) animator;
+```
+
 ## Parameters
 
 - `interaction`: The interaction object that triggered the interaction.
@@ -25,7 +30,8 @@ optional func contextMenuInteraction(_ interaction: UIContextMenuInteraction, wi
 
 ## See Also
 
-- [protocol UIContextMenuInteractionCommitAnimating](uicontextmenuinteractioncommitanimating.md)
+### Responding to the menu’s appearance
+- [protocol UIContextMenuInteractionCommitAnimating](../uicontextmenuinteractioncommitanimating.md)
   Methods adopted by system-supplied animator objects when committing preview-related animations.
 
 

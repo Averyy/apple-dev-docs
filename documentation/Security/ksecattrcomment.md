@@ -1,7 +1,8 @@
 # kSecAttrComment
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s a string indicating a comment associated with the item.
 
@@ -20,9 +21,13 @@ A key with a value that’s a string indicating a comment associated with the it
 let kSecAttrComment: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrComment;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains the user-editable comment for this item.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains the user-editable comment for this item.
 
 
 ---

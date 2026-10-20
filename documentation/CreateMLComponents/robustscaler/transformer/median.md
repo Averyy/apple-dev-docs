@@ -1,7 +1,8 @@
 # median
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The median used for offsetting.
 
@@ -22,7 +23,8 @@ var median: Element
 
 ## See Also
 
-- [var interQuartileRange: Element](robustscaler/transformer/interquartilerange.md)
+### Getting the properties
+- [var interQuartileRange: Element](./interquartilerange.md)
   The interquartile rage  used for scaling.
 
 

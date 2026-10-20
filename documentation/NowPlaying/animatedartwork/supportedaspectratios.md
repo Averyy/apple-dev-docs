@@ -1,7 +1,8 @@
 # supportedAspectRatios
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aspect ratios this artwork supports.
 

@@ -1,7 +1,8 @@
 # UNShowPreviewsSetting
 
 **Framework**: User Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the style previewing a notification’s content.
 
@@ -18,37 +19,42 @@ Constants indicating the style previewing a notification’s content.
 enum UNShowPreviewsSetting
 ```
 
+```c
+enum UNShowPreviewsSetting : NSInteger;
+```
+
 ## Topics
 
 ### Preview Styes
-- [UNShowPreviewsSetting.always](unshowpreviewssetting/always.md)
+- [UNShowPreviewsSetting.always](./unshowpreviewssetting/always.md)
   The notification’s content is always shown, even when the device is locked.
-- [UNShowPreviewsSetting.whenAuthenticated](unshowpreviewssetting/whenauthenticated.md)
+- [UNShowPreviewsSetting.whenAuthenticated](./unshowpreviewssetting/whenauthenticated.md)
   The notification’s content is shown only when the device is unlocked.
-- [UNShowPreviewsSetting.never](unshowpreviewssetting/never.md)
+- [UNShowPreviewsSetting.never](./unshowpreviewssetting/never.md)
   The notification’s content is never shown, even when the device is unlocked
 ### Initializers
-- [init?(rawValue: Int)](unshowpreviewssetting/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unshowpreviewssetting/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var alertStyle: UNAlertStyle](unnotificationsettings/alertstyle.md)
+### Getting Interface Settings
+- [var alertStyle: UNAlertStyle](./unnotificationsettings/alertstyle.md)
   The type of alert that the app may display when the device is unlocked.
-- [enum UNAlertStyle](unalertstyle.md)
+- [enum UNAlertStyle](./unalertstyle.md)
   Constants indicating the presentation styles for alerts.
-- [var showPreviewsSetting: UNShowPreviewsSetting](unnotificationsettings/showpreviewssetting.md)
+- [var showPreviewsSetting: UNShowPreviewsSetting](./unnotificationsettings/showpreviewssetting.md)
   The setting that indicates whether the app shows a preview of the notification’s content.
-- [var providesAppNotificationSettings: Bool](unnotificationsettings/providesappnotificationsettings.md)
+- [var providesAppNotificationSettings: Bool](./unnotificationsettings/providesappnotificationsettings.md)
   A Boolean value indicating the system displays a button for in-app notification settings.
 
 

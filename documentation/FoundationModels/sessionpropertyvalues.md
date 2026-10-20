@@ -1,7 +1,8 @@
 # SessionPropertyValues
 
 **Framework**: Foundation Models  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for property values.
 
@@ -21,11 +22,11 @@ final class SessionPropertyValues
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Composing dynamic sessions with instructions and profiles](./composing-dynamic-sessions-with-instructions-and-profiles.md)
 
 #### Overview
 
-Use session property values across your session. To help manage the context window, access [`history`](sessionpropertyvalues/history.md) to modify the transcript for the session:
+Use session property values across your session. To help manage the context window, access [`history`](./sessionpropertyvalues/history.md) to modify the transcript for the session:
 
 ```swift
 struct CompactingProfile: LanguageModelSession.DynamicProfile {
@@ -46,35 +47,36 @@ struct CompactingProfile: LanguageModelSession.DynamicProfile {
 }
 ```
 
-Because updating the transcript history can cause cache invalidations for some models, carefully consider how you modify an existing transcript. For more information, see [`Optimizing key-value caching in language model sessions`](optimizing-key-value-caching-in-language-model-sessions.md).
+Because updating the transcript history can cause cache invalidations for some models, carefully consider how you modify an existing transcript. For more information, see [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
-Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom session properties.
+Use [`SessionPropertyEntry()`](./sessionpropertyentry%28%29.md) to create custom session properties.
 
 ## Topics
 
 ### Accessing the session history and instructions
-- [var history: Transcript.HistoryView](sessionpropertyvalues/history.md)
+- [var history: Transcript.HistoryView](./sessionpropertyvalues/history.md)
   The history portion of the session’s transcript.
 ### Accessing the subscript
-- [subscript<K>(K.Type) -> K.Value](sessionpropertyvalues/subscript(_:).md)
+- [subscript<K>(K.Type) -> K.Value](./sessionpropertyvalues/subscript%28_%29.md)
   Accesses the value stored for the given session property key.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
+### Custom session properties
+- [LanguageModelSession.SessionProperty](./languagemodelsession/sessionproperty.md)
   A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
-- [protocol SessionPropertyKey](sessionpropertykey.md)
+- [protocol SessionPropertyKey](./sessionpropertykey.md)
   A protocol for defining a custom session property key.
-- [macro SessionPropertyEntry()](sessionpropertyentry().md)
+- [macro SessionPropertyEntry()](./sessionpropertyentry%28%29.md)
 
 
 ---

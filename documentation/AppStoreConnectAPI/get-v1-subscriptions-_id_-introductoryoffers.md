@@ -1,7 +1,8 @@
 # List all introductory offers for a subscription
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of introductory offers for a specific auto-renewable subscription.
 
@@ -14,19 +15,35 @@ Get a list of introductory offers for a specific auto-renewable subscription.
 
 ## Parameters
 
-- `fields[subscriptionIntroductoryOffers]` ([string])
-- `fields[subscriptionPricePoints]` ([string])
-- `fields[subscriptions]` ([string])
-- `fields[territories]` ([string])
-- `include` ([string])
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionIntroductoryOffers]` ([string]): **Allowed Values**: `startDate`, `endDate`, `duration`, `offerMode`, `numberOfPeriods`, `targetSubscriptionPlanType`, `subscription`, `territory`, `subscriptionPricePoint`
+- `fields[subscriptionPricePoints]` ([string]): **Allowed Values**: `customerPrice`, `proceeds`, `proceedsYear2`, `territory`, `equalizations`, `adjustedEqualizations`
+- `fields[subscriptions]` ([string]): **Allowed Values**: `name`, `productId`, `familySharable`, `state`, `subscriptionPeriod`, `reviewNote`, `groupLevel`, `multiSeatStatus`, `marketSettings`, `subscriptionLocalizations`, `appStoreReviewScreenshot`, `group`, `introductoryOffers`, `promotionalOffers`, `offerCodes`, `prices`, `pricePoints`, `promotedPurchase`, `subscriptionAvailability`, `winBackOffers`, `images`, `planAvailabilities`, `versions`
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
+- `include` ([string]): **Allowed Values**: `subscription`, `territory`, `subscriptionPricePoint`
+- `limit` (integer): **Maximum**: `200`
 - `filter[territory]` ([string])
+
+## Responses
+
+- `200` OK (`SubscriptionIntroductoryOffersResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all introductory offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+### Getting introductory offers
+- [List all introductory offer resource ids for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
-- [Delete an introductory offer from a subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an introductory offer from a subscription](./delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 
 

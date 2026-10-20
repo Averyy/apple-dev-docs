@@ -1,7 +1,8 @@
 # nodesWithStoredData
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the list of node IDs for which this controller has stored information.  Returns empty list if the controller does not have any information stored.
 
@@ -18,6 +19,10 @@ Returns the list of node IDs for which this controller has stored information.  
 
 ```swift
 var nodesWithStoredData: [NSNumber] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSNumber *> * nodesWithStoredData;
 ```
 
 

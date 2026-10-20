@@ -1,7 +1,8 @@
 # LibraryPlaylistCreationRequest.Relationships.Parent.Data
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Data of the library playlist folder which contains the created library playlist that the user creates.
 
@@ -10,7 +11,7 @@ Data of the library playlist folder which contains the created library playlist 
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistCreationRequest.Relationships.Parent.Data
 ```
 
@@ -18,6 +19,8 @@ object LibraryPlaylistCreationRequest.Relationships.Parent.Data
 
 - `id` (string) *(required)*: The unique identifier for the library playlist folder.
 - `type` (string) *(required)*: The type of the track to be added.
+
+  **Allowed Values**: `library-playlist-folders`
 
 
 ---

@@ -1,7 +1,8 @@
 # exerciseAmbiguityInLayout()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Randomly changes the frame of a view with an ambiguous layout between the different valid values.
 
@@ -9,13 +10,17 @@ Randomly changes the frame of a view with an ambiguous layout between the differ
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func exerciseAmbiguityInLayout()
+```
+
+```objc
+- (void) exerciseAmbiguityInLayout;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ This method should only be used for debugging constraint-based layout. No applic
 
 ## See Also
 
-- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](uiview/constraintsaffectinglayout(for:).md)
+### Debugging Auto Layout
+- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](./constraintsaffectinglayout%28for%29.md)
   Returns the constraints impacting the layout of the view for a given axis.
-- [var hasAmbiguousLayout: Bool](uiview/hasambiguouslayout.md)
+- [var hasAmbiguousLayout: Bool](./hasambiguouslayout.md)
   A Boolean value that determines whether the constraints impacting the layout of the view incompletely specify the location of the view.
 
 

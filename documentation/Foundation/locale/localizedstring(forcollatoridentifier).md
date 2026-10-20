@@ -1,7 +1,8 @@
 # localizedString(forCollatorIdentifier:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a localized string for a specified ICU collator identifier.
 
@@ -22,21 +23,22 @@ func localizedString(forCollatorIdentifier collatorIdentifier: String) -> String
 
 ## See Also
 
-- [func localizedString(for: Calendar.Identifier) -> String?](locale/localizedstring(for:).md)
+### Getting display information about a locale
+- [func localizedString(for: Calendar.Identifier) -> String?](./localizedstring%28for%29.md)
   Returns a localized string for a specified calendar.
-- [func localizedString(forCollationIdentifier: String) -> String?](locale/localizedstring(forcollationidentifier:).md)
+- [func localizedString(forCollationIdentifier: String) -> String?](./localizedstring%28forcollationidentifier%29.md)
   Returns a localized string for a specified ICU collation identifier.
-- [func localizedString(forCurrencyCode: String) -> String?](locale/localizedstring(forcurrencycode:).md)
+- [func localizedString(forCurrencyCode: String) -> String?](./localizedstring%28forcurrencycode%29.md)
   Returns a localized string for a specified ISO 4217 currency code.
-- [func localizedString(forIdentifier: String) -> String?](locale/localizedstring(foridentifier:).md)
+- [func localizedString(forIdentifier: String) -> String?](./localizedstring%28foridentifier%29.md)
   Returns a localized string for a specified locale identifier.
-- [func localizedString(forLanguageCode: String) -> String?](locale/localizedstring(forlanguagecode:).md)
+- [func localizedString(forLanguageCode: String) -> String?](./localizedstring%28forlanguagecode%29.md)
   Returns a localized string for a specified language code.
-- [func localizedString(forRegionCode: String) -> String?](locale/localizedstring(forregioncode:).md)
+- [func localizedString(forRegionCode: String) -> String?](./localizedstring%28forregioncode%29.md)
   Returns a localized string for a specified region code.
-- [func localizedString(forScriptCode: String) -> String?](locale/localizedstring(forscriptcode:).md)
+- [func localizedString(forScriptCode: String) -> String?](./localizedstring%28forscriptcode%29.md)
   Returns a localized string for a specified script code.
-- [func localizedString(forVariantCode: String) -> String?](locale/localizedstring(forvariantcode:).md)
+- [func localizedString(forVariantCode: String) -> String?](./localizedstring%28forvariantcode%29.md)
   Returns a localized string for a specified variant code.
 
 

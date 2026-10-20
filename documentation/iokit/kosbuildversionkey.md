@@ -1,7 +1,8 @@
 # kOSBuildVersionKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kOSBuildVersionKey: String { get }
+```
+
+```c
+#define kOSBuildVersionKey
 ```
 
 

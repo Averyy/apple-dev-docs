@@ -1,7 +1,8 @@
 # secondaryButton
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the secondary button.
 
@@ -22,9 +23,10 @@ If you use `nil`, the secondary button is omitted.
 
 ## See Also
 
-- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.md)
+### Creating a second button
+- [var secondaryButtonBehavior: AlarmPresentation.Alert.SecondaryButtonBehavior?](./secondarybuttonbehavior-swift.property.md)
   The defined behavior of the second button.
-- [AlarmPresentation.Alert.SecondaryButtonBehavior](alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.md)
+- [AlarmPresentation.Alert.SecondaryButtonBehavior](./secondarybuttonbehavior-swift.enum.md)
   Describes the behaviour of the second button.
 
 

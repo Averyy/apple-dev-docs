@@ -1,7 +1,8 @@
 # defaultInstrument
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents the default instrument identifier.
 
@@ -19,9 +20,13 @@ A constant that represents the default instrument identifier.
 class let defaultInstrument: UInt32
 ```
 
+```c
+extern const UInt32 AVExtendedNoteOnEventDefaultInstrument;
+```
+
 #### Discussion
 
-The system uses the instrument loaded on the channel [`groupID`](avextendednoteonevent/groupid.md).
+The system uses the instrument loaded on the channel [`groupID`](./groupid.md).
 
 
 ---

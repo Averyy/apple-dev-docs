@@ -1,7 +1,8 @@
 # init(inputAttributes:outputAttributes:blendShape:skinning:renormalization:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pipeline descriptor.
 

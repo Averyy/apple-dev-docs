@@ -1,7 +1,8 @@
 # blur
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option for augmenting training data by blurring each image.
 
@@ -22,21 +23,22 @@ static let blur: MLImageClassifier.ImageAugmentationOptions
 
 Use this option to tell the image classifier to augment your training data set by creating blurred versions of the original images.
 
-![Diagram showing how the original image results in four blurred variants.](/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-blur-1@2x.png)
+![Diagram showing how the original image results in four blurred variants.](https://developer.apple.com/tutorials/images/com.apple.createml/MLImageClassifier-ImageAugmentationOptions-blur-1@2x.png)
 
 The classifier creates four new images with random amounts of blur for each original.
 
 ## See Also
 
-- [static let crop: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions/crop.md)
+### Selecting augmentation options
+- [static let crop: MLImageClassifier.ImageAugmentationOptions](./crop.md)
   An option for augmenting training data by creating cropped versions of each image.
-- [static let rotation: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions/rotation.md)
+- [static let rotation: MLImageClassifier.ImageAugmentationOptions](./rotation.md)
   An option for augmenting training data by rotating each image.
-- [static let exposure: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions/exposure.md)
+- [static let exposure: MLImageClassifier.ImageAugmentationOptions](./exposure.md)
   An option for augmenting training data by lightening or darkening each image.
-- [static let noise: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions/noise.md)
+- [static let noise: MLImageClassifier.ImageAugmentationOptions](./noise.md)
   An option for augmenting training data by adding random amounts of noise to each image.
-- [static let flip: MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions/flip.md)
+- [static let flip: MLImageClassifier.ImageAugmentationOptions](./flip.md)
   An option for augmenting training data by flipping each image along the horizontal and vertical axes.
 
 

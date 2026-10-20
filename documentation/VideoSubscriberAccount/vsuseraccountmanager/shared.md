@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared instance of the user account manager class.
 
@@ -17,6 +18,10 @@ A shared instance of the user account manager class.
 
 ```swift
 class var shared: VSUserAccountManager { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) VSUserAccountManager * sharedUserAccountManager;
 ```
 
 #### Discussion

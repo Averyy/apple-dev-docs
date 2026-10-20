@@ -1,16 +1,17 @@
 # epsilon
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The epsilon value for improving numerical stability.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,15 +19,20 @@ The epsilon value for improving numerical stability.
 var epsilon: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float epsilon;
+```
+
 ## See Also
 
-- [var beta1: Float](mlcadamoptimizer/beta1.md)
+### Inspecting an Adam Optimizer
+- [var beta1: Float](./beta1.md)
   The coefficent for computing running averages of gradient.
-- [var beta2: Float](mlcadamoptimizer/beta2.md)
+- [var beta2: Float](./beta2.md)
   The coefficent for computing running averages of square of gradient.
-- [var timeStep: Int](mlcadamoptimizer/timestep.md)
+- [var timeStep: Int](./timestep.md)
   The initial timestep for the update.
-- [var usesAMSGrad: Bool](mlcadamoptimizer/usesamsgrad.md)
+- [var usesAMSGrad: Bool](./usesamsgrad.md)
   A Boolean value that indicates whether to use a variant of the algorithm.
 
 

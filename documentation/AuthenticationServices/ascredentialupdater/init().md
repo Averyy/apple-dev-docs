@@ -1,16 +1,19 @@
 # init()
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the credential updater class.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- visionOS 26.0+
+- iOS 26.0+ - Deprecated in 26.2
+- iPadOS 26.0+ - Deprecated in 26.2
+- Mac Catalyst 26.0+ - Deprecated in 26.2
+- macOS 26.0+ - Deprecated in 26.2
+- visionOS 26.0+ - Deprecated in 26.2
+
+> **Deprecated**: Use `ASCredentialDataManager` instead
 
 ## Declaration
 

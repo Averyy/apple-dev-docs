@@ -1,14 +1,15 @@
 # sptm_retype
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 void sptm_retype(sptm_paddr_t paddr, sptm_frame_type_t current_type, sptm_frame_type_t new_type, sptm_retype_params_t retype_params);
 ```
 

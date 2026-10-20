@@ -1,7 +1,8 @@
 # kSecKeyVerify
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32, value is nonzero. This key can be used in a verify operation.
 
@@ -12,6 +13,10 @@ Type uint32, value is nonzero. This key can be used in a verify operation.
 
 ```swift
 var kSecKeyVerify: Int32 { get }
+```
+
+```c
+kSecKeyVerify
 ```
 
 

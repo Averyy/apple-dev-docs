@@ -1,7 +1,8 @@
 # kSecCSStrictValidate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Perform additional checks to ensure the validity of code in bundle form.
 
@@ -13,6 +14,10 @@ Perform additional checks to ensure the validity of code in bundle form.
 
 ```swift
 var kSecCSStrictValidate: UInt32 { get }
+```
+
+```c
+kSecCSStrictValidate
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # didAdd(to:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked after the persistent store has been added to the persistent store coordinator.
 
@@ -10,7 +11,7 @@ Invoked after the persistent store has been added to the persistent store coordi
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Invoked after the persistent store has been added to the persistent store coordi
 
 ```swift
 func didAdd(to coordinator: NSPersistentStoreCoordinator)
+```
+
+```objc
+- (void) didAddToPersistentStoreCoordinator:(NSPersistentStoreCoordinator *) coordinator;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ The default implementation does nothing. You can override this method in a subcl
 
 ## See Also
 
-- [func willRemove(from: NSPersistentStoreCoordinator?)](nspersistentstore/willremove(from:).md)
+### Responding to the Store Life Cycle
+- [func willRemove(from: NSPersistentStoreCoordinator?)](./willremove%28from%29.md)
   Invoked before the persistent store is removed from the persistent store coordinator.
 
 

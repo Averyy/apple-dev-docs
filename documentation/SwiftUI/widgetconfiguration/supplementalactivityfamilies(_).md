@@ -1,7 +1,8 @@
 # supplementalActivityFamilies(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the sizes that a Live Activity supports.
 

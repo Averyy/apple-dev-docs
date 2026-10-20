@@ -1,7 +1,8 @@
 # kPMPortrait
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies portrait (vertical) page orientation. Portrait orientation performs no alteration of the logical page.
 

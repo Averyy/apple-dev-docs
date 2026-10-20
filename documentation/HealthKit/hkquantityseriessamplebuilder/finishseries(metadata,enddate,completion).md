@@ -1,7 +1,8 @@
 # finishSeries(metadata:endDate:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finalizes the series with the provided end date, and returns the resulting quantity samples.
 
@@ -16,12 +17,20 @@ Finalizes the series with the provided end date, and returns the resulting quant
 ## Declaration
 
 ```swift
+func finishSeries(metadata: [String : Any]?, endDate: Date?, completion: @escaping @Sendable ([HKQuantitySample]?, (any Error)?) -> Void)
+```
+
+```swift
 func finishSeries(metadata: [String : Any]?, endDate: Date?) async throws -> [HKQuantitySample]
+```
+
+```objc
+- (void) finishSeriesWithMetadata:(NSDictionary<NSString *,id> *) metadata endDate:(NSDate *) endDate completion:(void (^)(NSArray<__kindof HKQuantitySample *> *samples, NSError *error)) completion;
 ```
 
 #### Discussion
 
-Call [`finishSeries(metadata:endDate:completion:)`](hkquantityseriessamplebuilder/finishseries(metadata:enddate:completion:).md) after inserting all the quantities for the series. The series builder then creates one or more samples to represent the series, saves the samples to the HealthKit store, and then passes them to the completion handler.
+Call [`finishSeries(metadata:endDate:completion:)`](./finishseries%28metadata,enddate,completion%29.md) after inserting all the quantities for the series. The series builder then creates one or more samples to represent the series, saves the samples to the HealthKit store, and then passes them to the completion handler.
 
 > **Note**:  The series builder typically creates a single sample that contains all the inserted quantities; however, it may split the quantities up into multiple sample objects.
 
@@ -29,16 +38,25 @@ Calling this method before inserting any samples results in an error. Also, call
 
 ## Parameters
 
-- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [`Metadata Keys`](metadata-keys.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
-- `endDate`: The date when the sample ends. If `nil`, the builder uses the latest end date from the contained quantities. The sample builder returns an [`HKError.Code.errorInvalidArgument`](hkerror/code/errorinvalidargument.md) error if the `endDate` is earlier than the builder’s [`startDate`](hkquantityseriessamplebuilder/startdate.md) parameter, or is earlier than the end date of any of the quantities inserted into the builder.
-- `completion`: A completion handler, called by the builder after it creates the samples. The handler takes the following parameters: - ****samples****: The samples returned by the builder, or `nil` if an error occurs.
-- ****error****: If an error occurs, this contains an object that describes the error. Otherwise, it is `nil`.
+- `metadata`: The metadata dictionary contains extra information describing all the samples created by the builder. The dictionary’s keys are all strings. The values may be strings, numbers, or date objects. For a complete list of predefined metadata keys, see [Metadata Keys](../metadata-keys.md).
+
+  Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the samples’ capabilities.
+- `endDate`: The date when the sample ends. If `nil`, the builder uses the latest end date from the contained quantities.
+
+  The sample builder returns an [`HKError.Code.errorInvalidArgument`](../hkerror/code/errorinvalidargument.md) error if the `endDate` is earlier than the builder’s [`startDate`](./startdate.md) parameter, or is earlier than the end date of any of the quantities inserted into the builder.
+- `completion`: A completion handler, called by the builder after it creates the samples.
+
+  The handler takes the following parameters:
+
+  - ****samples****: The samples returned by the builder, or `nil` if an error occurs.
+  - ****error****: If an error occurs, this contains an object that describes the error. Otherwise, it is `nil`.
 
 ## See Also
 
-- [func discard()](hkquantityseriessamplebuilder/discard.md)
+### Ending the Collection
+- [func discard()](./discard%28%29.md)
   Discards all previously collected data and invalidates the builder.
-- [func finishSeries(metadata: [String : Any]?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](hkquantityseriessamplebuilder/finishseries(metadata:completion:).md)
+- [func finishSeries(metadata: [String : Any]?, completion: ([HKQuantitySample]?, (any Error)?) -> Void)](./finishseries%28metadata,completion%29.md)
   Finalizes the series and returns the resulting quantity samples.
 
 

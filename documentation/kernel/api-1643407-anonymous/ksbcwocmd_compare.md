@@ -1,7 +1,8 @@
 # kSBCWOCmd_COMPARE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCWOCmd_COMPARE = 0x39
 ```
 

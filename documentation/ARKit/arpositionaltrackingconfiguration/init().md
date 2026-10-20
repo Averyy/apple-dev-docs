@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new positional tracking configuration.
 
@@ -15,9 +16,14 @@ Creates a new positional tracking configuration.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [var initialWorldMap: ARWorldMap?](arpositionaltrackingconfiguration/initialworldmap.md)
+### Creating a Configuration
+- [var initialWorldMap: ARWorldMap?](./initialworldmap.md)
   The state from a previous AR session to attempt to resume with this session configuration.
 
 

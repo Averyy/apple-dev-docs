@@ -2,17 +2,22 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that tells FSKit to which types of items the deactivation applies, if any.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 var itemDeactivationPolicy: FSVolume.ItemDeactivationOptions { get }
+```
+
+```objc
+@property (readonly) FSItemDeactivationOptions itemDeactivationPolicy;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ FSKit reads this value after the file system replies to the `loadResource` messa
 
 ## See Also
 
-- [FSVolume.ItemDeactivationOptions](fsvolume/itemdeactivationoptions.md)
+### Setting deactivation policy
+- [FSVolume.ItemDeactivationOptions](../itemdeactivationoptions.md)
   Options to specify the item deactivation policy.
 
 

@@ -1,7 +1,8 @@
 # maximumLinearExposure
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum linear exposure that can be set on a color picked in the color panel. Defaults to 1 and ignores any value less than 1. If set to a value >= 2, the color picked by the panel may have a linear exposure applied to it.
 
@@ -12,6 +13,10 @@ The maximum linear exposure that can be set on a color picked in the color panel
 
 ```swift
 var maximumLinearExposure: CGFloat { get set }
+```
+
+```objc
+@property CGFloat maximumLinearExposure;
 ```
 
 

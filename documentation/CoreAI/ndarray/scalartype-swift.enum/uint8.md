@@ -1,7 +1,8 @@
 # NDArray.ScalarType.uint8
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit unsigned integer.
 
@@ -20,13 +21,14 @@ case uint8
 
 ## See Also
 
-- [NDArray.ScalarType.uint16](ndarray/scalartype-swift.enum/uint16.md)
+### Defining standard unsigned integer types
+- [NDArray.ScalarType.uint16](./uint16.md)
   A 16-bit unsigned integer.
-- [NDArray.ScalarType.uint32](ndarray/scalartype-swift.enum/uint32.md)
+- [NDArray.ScalarType.uint32](./uint32.md)
   A 32-bit unsigned integer.
-- [NDArray.ScalarType.uint64](ndarray/scalartype-swift.enum/uint64.md)
+- [NDArray.ScalarType.uint64](./uint64.md)
   A 64-bit unsigned integer.
-- [NDArray.ScalarType.uint128](ndarray/scalartype-swift.enum/uint128.md)
+- [NDArray.ScalarType.uint128](./uint128.md)
   A 128-bit unsigned integer.
 
 

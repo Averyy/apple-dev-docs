@@ -1,7 +1,8 @@
 # PHASEPullStreamNodeDefinition
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,10 @@
 class PHASEPullStreamNodeDefinition
 ```
 
+```objc
+@interface PHASEPullStreamNodeDefinition : PHASEGeneratorNodeDefinition
+```
+
 #### Overview
 
 ---
@@ -26,23 +31,23 @@ An object for defining a pull stream sound event node when building a sound even
 ## Topics
 
 ### Initializers
-- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](phasepullstreamnodedefinition/init(mixerdefinition:format:).md)
-- [convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, identifier: String)](phasepullstreamnodedefinition/init(mixerdefinition:format:identifier:).md)
+- [init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)](./phasepullstreamnodedefinition/init%28mixerdefinition,format%29.md)
+- [convenience init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat, identifier: String)](./phasepullstreamnodedefinition/init%28mixerdefinition,format,identifier%29.md)
 ### Instance Properties
-- [var format: AVAudioFormat](phasepullstreamnodedefinition/format.md)
-- [var normalize: Bool](phasepullstreamnodedefinition/normalize.md)
+- [var format: AVAudioFormat](./phasepullstreamnodedefinition/format.md)
+- [var normalize: Bool](./phasepullstreamnodedefinition/normalize.md)
 
 ## Relationships
 
 ### Inherits From
-- [PHASEGeneratorNodeDefinition](phasegeneratornodedefinition.md)
+- [PHASEGeneratorNodeDefinition](./phasegeneratornodedefinition.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

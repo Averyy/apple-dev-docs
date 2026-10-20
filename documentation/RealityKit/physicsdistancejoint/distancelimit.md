@@ -1,7 +1,8 @@
 # distanceLimit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the minimum and maximum allowed distance between the pins.
 

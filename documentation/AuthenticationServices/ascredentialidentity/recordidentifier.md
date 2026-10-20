@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string used to correlate this identity to a record in your app’s own database.
@@ -19,9 +20,14 @@ A string used to correlate this identity to a record in your app’s own databas
 var recordIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * recordIdentifier;
+```
+
 ## See Also
 
-- [var serviceIdentifier: ASCredentialServiceIdentifier](ascredentialidentity/serviceidentifier.md)
+### Distinguishing identities
+- [var serviceIdentifier: ASCredentialServiceIdentifier](./serviceidentifier.md)
   An identifier that helps the system know with which apps or websites to associate this credential.
 
 

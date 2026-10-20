@@ -1,7 +1,8 @@
 # Result.success(_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A success, storing a `Success` value.
 
@@ -22,13 +23,14 @@ case success(Success)
 
 ## Mentions
 
-- [Writing Failable Asynchronous APIs](writing-failable-asynchronous-apis.md)
+- [Writing Failable Asynchronous APIs](../writing-failable-asynchronous-apis.md)
 
 ## See Also
 
-- [case failure(Failure)](result/failure(_:).md)
+### Representing a Result
+- [case failure(Failure)](./failure%28_%29.md)
   A failure, storing a `Failure` value.
-- [Writing Failable Asynchronous APIs](writing-failable-asynchronous-apis.md)
+- [Writing Failable Asynchronous APIs](../writing-failable-asynchronous-apis.md)
   Vend results as part of an API when you can’t return errors synchronously.
 
 

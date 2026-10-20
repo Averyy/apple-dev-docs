@@ -1,7 +1,8 @@
 # willAutoRenew
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,14 +21,15 @@ let willAutoRenew: Bool
 
 ## Mentions
 
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../../../../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## See Also
 
-- [let autoRenewPreference: String](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference.md)
-- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype.md)
-- [let renewalDate: Date](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewaldate.md)
-- [let renewalPrice: Decimal](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalprice.md)
+### Instance Properties - generated
+- [let autoRenewPreference: String](./autorenewpreference.md)
+- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](./renewalbillingplantype.md)
+- [let renewalDate: Date](./renewaldate.md)
+- [let renewalPrice: Decimal](./renewalprice.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # brightness(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that applies a brightness adjustment.
 
@@ -26,7 +27,7 @@ A filter that applies a brightness adjustment.
 
 #### Discussion
 
-This filter is different than `brightness` filter primitive defined by the Scalable Vector Graphics (SVG) specification. You can obtain an effect like that filter using a [`grayscale(_:)`](graphicscontext/filter/grayscale(_:).md) color multiply. However, this filter does match the [`CIColorControls`](https://developer.apple.com/documentation/coreimage/cicolorcontrols) filter’s brightness adjustment.
+This filter is different than `brightness` filter primitive defined by the Scalable Vector Graphics (SVG) specification. You can obtain an effect like that filter using a [`grayscale(_:)`](./grayscale%28_%29.md) color multiply. However, this filter does match the [`CIColorControls`](../../../CoreImage/cicolorcontrols.md) filter’s brightness adjustment.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ This filter is different than `brightness` filter primitive defined by the Scala
 
 ## See Also
 
-- [static func contrast(Double) -> GraphicsContext.Filter](graphicscontext/filter/contrast(_:).md)
+### Changing brightness and contrast
+- [static func contrast(Double) -> GraphicsContext.Filter](./contrast%28_%29.md)
   Returns a filter that applies a contrast adjustment.
 
 

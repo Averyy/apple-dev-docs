@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func map<T>(_ transform: @escaping (Output) -> T) -> Publishers.TryMap<Upstream, T>
 ```
+
+Available when `Upstream` conforms to `Publisher`.
 
 
 ---

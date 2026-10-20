@@ -1,18 +1,19 @@
 # MKMapPointEqualToPoint(_:_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two map points are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two map points are equal.
 func MKMapPointEqualToPoint(_ point1: MKMapPoint, _ point2: MKMapPoint) -> Bool
 ```
 
+```c
+static BOOL MKMapPointEqualToPoint(MKMapPoint point1, MKMapPoint point2);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `x` and `y` values in both points are exactly the same, or [`false`](https://developer.apple.com/documentation/swift/false) if one or both values are different.
+[`true`](../Swift/true.md) if the `x` and `y` values in both points are exactly the same, or [`false`](../Swift/false.md) if one or both values are different.
 
 ## Parameters
 

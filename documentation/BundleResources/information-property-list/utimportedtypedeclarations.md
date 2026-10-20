@@ -1,7 +1,8 @@
 # UTImportedTypeDeclarations
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The uniform type identifiers inherently supported, but not owned, by the app.
 
@@ -11,33 +12,35 @@ The uniform type identifiers inherently supported, but not owned, by the app.
 - macOS 10.5+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `UTImportedTypeDeclarations` (Imported Type Identifiers)
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Property List Keys
-- [UTTypeConformsTo](information-property-list/utimportedtypedeclarations/uttypeconformsto.md)
+- [UTTypeConformsTo](./utimportedtypedeclarations/uttypeconformsto.md)
   The Uniform Type Identifier types that this type conforms to.
-- [UTTypeDescription](information-property-list/utimportedtypedeclarations/uttypedescription.md)
+- [UTTypeDescription](./utimportedtypedeclarations/uttypedescription.md)
   A description for this type.
-- [UTTypeIconFile](information-property-list/utimportedtypedeclarations/uttypeiconfile.md)
+- [UTTypeIconFile](./utimportedtypedeclarations/uttypeiconfile.md)
   The bundle icon resource to associate with this type.
-- [UTTypeIconFiles](information-property-list/utimportedtypedeclarations/uttypeiconfiles.md)
+- [UTTypeIconFiles](./utimportedtypedeclarations/uttypeiconfiles.md)
   One or more bundle icon resources to associate with this type.
-- [UTTypeIcons](information-property-list/utimportedtypedeclarations/uttypeicons.md)
+- [UTTypeIcons](./utimportedtypedeclarations/uttypeicons.md)
   A dictionary that describes how the system represents this type as an icon or symbol.
-- [UTTypeIdentifier](information-property-list/utimportedtypedeclarations/uttypeidentifier.md)
+- [UTTypeIdentifier](./utimportedtypedeclarations/uttypeidentifier.md)
   The Uniform Type Identifier to assign to this type.
-- [UTTypeReferenceURL](information-property-list/utimportedtypedeclarations/uttypereferenceurl.md)
+- [UTTypeReferenceURL](./utimportedtypedeclarations/uttypereferenceurl.md)
   The webpage for a reference document that describes this type.
-- [UTTypeTagSpecification](information-property-list/utimportedtypedeclarations/uttypetagspecification.md)
+- [UTTypeTagSpecification](./utimportedtypedeclarations/uttypetagspecification.md)
   A dictionary defining one or more equivalent type identifiers.
 
 ## See Also
 
-- [UTExportedTypeDeclarations](information-property-list/utexportedtypedeclarations.md)
+### Universal type identifiers
+- [UTExportedTypeDeclarations](./utexportedtypedeclarations.md)
   The uniform type identifiers owned and exported by the app.
 
 

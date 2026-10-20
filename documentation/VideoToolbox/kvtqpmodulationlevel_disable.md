@@ -1,7 +1,8 @@
 # kVTQPModulationLevel_Disable
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 6.0+
@@ -17,9 +18,14 @@
 var kVTQPModulationLevel_Disable: Int { get }
 ```
 
+```c
+kVTQPModulationLevel_Disable
+```
+
 ## See Also
 
-- [var kVTQPModulationLevel_Default: Int](kvtqpmodulationlevel_default.md)
+### Levels
+- [var kVTQPModulationLevel_Default: Int](./kvtqpmodulationlevel_default.md)
 
 
 ---

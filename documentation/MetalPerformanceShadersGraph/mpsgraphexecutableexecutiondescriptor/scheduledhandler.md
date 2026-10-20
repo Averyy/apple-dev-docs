@@ -1,7 +1,8 @@
 # scheduledHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A notification that appears when graph-executable execution is scheduled.
 
@@ -17,6 +18,10 @@ A notification that appears when graph-executable execution is scheduled.
 
 ```swift
 var scheduledHandler: MPSGraphExecutableScheduledHandler { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphExecutableScheduledHandler scheduledHandler;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the descriptor.
 
@@ -10,25 +11,26 @@ The size of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdevicecapabilitysuperspeedusb/1546105-bdescriptortype.md)
+### Getting the Properties
+- [bDescriptorType](./api-1546105-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilitysuperspeedusb/1546372-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546372-bdevcapabilitytype.md)
   The capability type.
-- [bmAttributes](iousbdevicecapabilitysuperspeedusb/1546119-bmattributes.md)
+- [bmAttributes](./api-1546119-bmattributes.md)
   A bitmap encoding of supported device-level features.
-- [wSpeedsSupported](iousbdevicecapabilitysuperspeedusb/1546097-wspeedssupported.md)
+- [wSpeedsSupported](./api-1546097-wspeedssupported.md)
   The SuperSpeed supported speeds.
-- [bFunctionalitySupport](iousbdevicecapabilitysuperspeedusb/1546009-bfunctionalitysupport.md)
+- [bFunctionalitySupport](./api-1546009-bfunctionalitysupport.md)
   The lowest speed at which all the functionality that the device supports is available to the user.
-- [bU1DevExitLat](iousbdevicecapabilitysuperspeedusb/1545910-bu1devexitlat.md)
+- [bU1DevExitLat](./api-1545910-bu1devexitlat.md)
   The exit latency of a U1 device.
-- [wU2DevExitLat](iousbdevicecapabilitysuperspeedusb/1546374-wu2devexitlat.md)
+- [wU2DevExitLat](./api-1546374-wu2devexitlat.md)
   The exit latency of a U2 device.
 
 

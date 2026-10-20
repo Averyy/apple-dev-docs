@@ -1,7 +1,8 @@
 # updateAuthorization(for:descriptor:completionHandler:)
 
 **Framework**: AccessorySetupKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a view to upgrade an accessory with additional technology permissions.
 
@@ -12,7 +13,15 @@ Displays a view to upgrade an accessory with additional technology permissions.
 ## Declaration
 
 ```swift
+func updateAuthorization(for accessory: ASAccessory, descriptor: ASDiscoveryDescriptor, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateAuthorization(for accessory: ASAccessory, descriptor: ASDiscoveryDescriptor) async throws
+```
+
+```objc
+- (void) updateAuthorization:(ASAccessory *) accessory descriptor:(ASDiscoveryDescriptor *) descriptor completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -23,15 +32,16 @@ Call this method to upgrade previously-added SSID-based accessories to use WiFi 
 
 - `accessory`: The accessory to update.
 - `descriptor`: An updated descriptor that the picker uses to add new technology authorization for the provided accessory.
-- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance if the upgrade operation encounters an error. In Swift, you can omit the completion handler by calling the method asynchronously and catching any error thrown by the method.
+- `completionHandler`: A block or closure that executes after the picker is shown. The completion handler receives an [`NSError`](../../Foundation/nserror.md) instance if the upgrade operation encounters an error. In Swift, you can omit the completion handler by calling the method asynchronously and catching any error thrown by the method.
 
 ## See Also
 
-- [func finishAuthorization(for: ASAccessory, settings: ASAccessorySettings, completionHandler: ((any Error)?) -> Void)](asaccessorysession/finishauthorization(for:settings:completionhandler:).md)
+### Managing authorization
+- [func finishAuthorization(for: ASAccessory, settings: ASAccessorySettings, completionHandler: ((any Error)?) -> Void)](./finishauthorization%28for,settings,completionhandler%29.md)
   Finish authorization of a partially-setup accessory.
-- [class ASAccessorySettings](asaccessorysettings.md)
+- [class ASAccessorySettings](../asaccessorysettings.md)
   Properties of an accessory.
-- [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](asaccessorysession/failauthorization(for:completionhandler:).md)
+- [func failAuthorization(for: ASAccessory, completionHandler: ((any Error)?) -> Void)](./failauthorization%28for,completionhandler%29.md)
   End authorization of a partially-configured accessory as a failure.
 
 

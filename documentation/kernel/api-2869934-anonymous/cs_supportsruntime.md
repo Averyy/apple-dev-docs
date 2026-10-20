@@ -1,14 +1,15 @@
 # CS_SUPPORTSRUNTIME
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 CS_SUPPORTSRUNTIME = 0x20500
 ```
 

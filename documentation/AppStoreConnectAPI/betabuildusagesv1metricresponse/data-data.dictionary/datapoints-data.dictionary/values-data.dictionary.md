@@ -1,7 +1,8 @@
 # BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The install and crash count values within a single data point of the beta build usage metric.
 
@@ -10,7 +11,7 @@ The install and crash count values within a single data point of the beta build 
 
 ## Declaration
 
-```swift
+```
 object BetaBuildUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 

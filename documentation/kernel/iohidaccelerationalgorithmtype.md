@@ -1,14 +1,15 @@
 # IOHIDAccelerationAlgorithmType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t IOHIDAccelerationAlgorithmType;
 ```
 

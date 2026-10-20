@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: OSLog  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a log store based on a log archive.
 
@@ -20,9 +21,14 @@ Creates a log store based on a log archive.
 convenience init(url: URL) throws
 ```
 
+```objc
++ (instancetype) storeWithURL:(NSURL *) url error:(NSError **) error;
+```
+
 ## See Also
 
-- [class func local() throws -> Self](oslogstore/local.md)
+### Creating Log Stores
+- [class func local() throws -> Self](./local%28%29.md)
   Creates a log store representing the Mac’s local store.
 
 

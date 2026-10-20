@@ -1,7 +1,8 @@
 # alertDismissButtonTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label on the alert button which will simply confirm that the alert was viewed and dismiss it Defaults to “OK”
 
@@ -12,6 +13,10 @@ The label on the alert button which will simply confirm that the alert was viewe
 
 ```swift
 var alertDismissButtonTitle: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * alertDismissButtonTitle;
 ```
 
 

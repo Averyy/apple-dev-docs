@@ -1,14 +1,15 @@
 # utf8_to_mac_roman
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 int utf8_to_mac_roman(uint32_t srcLen, const unsigned char *srcStr, uint8_t dstStr[32]);
 ```
 

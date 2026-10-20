@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var inputs: [MDLMaterialProperty] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<MDLMaterialProperty *> * inputs;
 ```
 
 

@@ -1,7 +1,8 @@
 # wrist
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the center of the wrist on the back of the hand.
 

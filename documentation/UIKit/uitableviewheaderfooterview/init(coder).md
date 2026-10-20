@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a header-footer view from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a header-footer view from data in an unarchiver.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a header-footer view from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(reuseIdentifier: String?)](uitableviewheaderfooterview/init(reuseidentifier:).md)
+### Creating the view
+- [init(reuseIdentifier: String?)](./init%28reuseidentifier%29.md)
   Initializes a header-footer view with the specified reuse identifier.
 
 

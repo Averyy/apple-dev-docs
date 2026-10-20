@@ -1,7 +1,8 @@
 # nw_error_domain_wifi_aware
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var nw_error_domain_wifi_aware: nw_error_domain_t { get }
+```
+
+```c
+nw_error_domain_wifi_aware
 ```
 
 

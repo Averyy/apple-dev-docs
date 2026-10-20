@@ -1,7 +1,8 @@
 # writeAttributeACErrorCode(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeACErrorCode(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeACErrorCode(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeACErrorCodeWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

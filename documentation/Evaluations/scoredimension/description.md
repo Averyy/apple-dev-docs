@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional description providing additional context for the model judge about what this dimension measures.
 
@@ -22,9 +23,10 @@ let description: String?
 
 ## See Also
 
-- [var metric: Metric](scoredimension/metric.md)
+### Inspecting a dimension
+- [var metric: Metric](./metric.md)
   A metric identifier that uses this dimension’s name.
-- [let scale: ScoringScale](scoredimension/scale.md)
+- [let scale: ScoringScale](./scale.md)
   The scoring scale for this dimension.
 
 

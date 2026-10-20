@@ -1,17 +1,22 @@
 # addMarker(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds `aMarker` to the receiver, without consulting the client view for approval.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func addMarker(_ marker: NSRulerMarker)
+```
+
+```objc
+- (void) addMarker:(NSRulerMarker *) marker;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Raises an `NSInternalInconsistencyException` if the receiver has no client view.
 
 ## See Also
 
-- [var markers: [NSRulerMarker]?](nsrulerview/markers.md)
+### Adding and removing markers
+- [var markers: [NSRulerMarker]?](./markers.md)
   The receiver’s ruler markers to `markers`, removing any existing ruler markers and not consulting with the client view about the new markers.
-- [func removeMarker(NSRulerMarker)](nsrulerview/removemarker(_:).md)
+- [func removeMarker(NSRulerMarker)](./removemarker%28_%29.md)
   Removes `aMarker` from the receiver, without consulting the client view for approval.
-- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](nsrulerview/trackmarker(_:withmouseevent:).md)
+- [func trackMarker(NSRulerMarker, withMouseEvent: NSEvent) -> Bool](./trackmarker%28_,withmouseevent%29.md)
   Tracks the mouse to add `aMarker` based on the initial mouse-down or mouse-dragged event `theEvent`.
 
 

@@ -1,7 +1,8 @@
 # init(supportForImportFromFiles:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes import metadata with file support information.
 
@@ -15,13 +16,18 @@ Initializes import metadata with file support information.
 init(supportForImportFromFiles supportImportFromFiles: Bool)
 ```
 
+```objc
+- (instancetype) initWithSupportForImportFromFiles:(BOOL) supportImportFromFiles;
+```
+
 ## Parameters
 
 - `supportImportFromFiles`: A Boolean value that indicates whether the import supports data from files.
 
 ## See Also
 
-- [init?(coder: NSCoder)](beimportmetadata/init(coder:).md)
+### Creating import metadata
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes import metadata from a decoder.
 
 

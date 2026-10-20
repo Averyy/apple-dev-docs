@@ -1,7 +1,8 @@
 # roomForHomeCannotBeInZone
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to add the room that represents the entire home to a zone.
 
@@ -21,9 +22,10 @@ static var roomForHomeCannotBeInZone: HMError.Code { get }
 
 ## See Also
 
-- [static var maximumAccessoriesOfTypeInHome: HMError.Code](hmerror/maximumaccessoriesoftypeinhome.md)
+### Detecting home and room errors
+- [static var maximumAccessoriesOfTypeInHome: HMError.Code](./maximumaccessoriesoftypeinhome.md)
   The home already has the maximum number of accessories of the given type.
-- [static var roomForHomeCannotBeUpdated: HMError.Code](hmerror/roomforhomecannotbeupdated.md)
+- [static var roomForHomeCannotBeUpdated: HMError.Code](./roomforhomecannotbeupdated.md)
   An attempt to change the room that represents the entire home.
 
 

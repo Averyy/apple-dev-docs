@@ -1,7 +1,8 @@
 # TableStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a table.
 
@@ -20,9 +21,10 @@ typealias Configuration = TableStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](tablestyle/makebody(configuration:).md)
+### Creating custom table styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a table.
-- [associatedtype Body : View](tablestyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a table.
 
 

@@ -1,13 +1,14 @@
 # Scheduler Implementations
 
-**Framework**: Dispatch
+**Framework**: Dispatch  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [DispatchQueue.SchedulerOptions](dispatchqueue/scheduleroptions.md)
+- [DispatchQueue.SchedulerOptions](./scheduleroptions.md)
   A set of options that affect the operation of the dispatch queue scheduler.
-- [DispatchQueue.SchedulerTimeType](dispatchqueue/schedulertimetype.md)
+- [DispatchQueue.SchedulerTimeType](./schedulertimetype.md)
   The scheduler time type used by the dispatch queue.
 
 

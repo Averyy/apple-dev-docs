@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dereferences the unique box allowing for in-place reads and writes to the stored `Value`.
 

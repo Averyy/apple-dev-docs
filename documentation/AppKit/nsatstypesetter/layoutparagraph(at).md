@@ -1,17 +1,22 @@
 # layoutParagraph(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lays out glyphs in the current glyph range until the next paragraph separator is reached.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func layoutParagraph(at lineFragmentOrigin: UnsafeMutablePointer<NSPoint>) -> Int
+```
+
+```objc
+- (NSUInteger) layoutParagraphAtPoint:(NSPoint *) lineFragmentOrigin;
 ```
 
 #### Discussion

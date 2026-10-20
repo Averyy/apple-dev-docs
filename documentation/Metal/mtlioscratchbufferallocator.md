@@ -1,7 +1,8 @@
 # MTLIOScratchBufferAllocator
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol your app implements to provide scratch memory to an input/output command queue.
 
@@ -19,32 +20,37 @@ A protocol your app implements to provide scratch memory to an input/output comm
 protocol MTLIOScratchBufferAllocator : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLIOScratchBufferAllocator <NSObject>
+```
+
 #### Overview
 
-An allocator returns instances of [`MTLIOScratchBuffer`](mtlioscratchbuffer.md), another type your app implements.
+An allocator returns instances of [`MTLIOScratchBuffer`](./mtlioscratchbuffer.md), another type your app implements.
 
 ## Topics
 
 ### Providing scratch memory to a queue
-- [func makeScratchBuffer(minimumSize: Int) -> (any MTLIOScratchBuffer)?](mtlioscratchbufferallocator/makescratchbuffer(minimumsize:).md)
+- [func makeScratchBuffer(minimumSize: Int) -> (any MTLIOScratchBuffer)?](./mtlioscratchbufferallocator/makescratchbuffer%28minimumsize%29.md)
   Creates a scratch memory buffer for an input/output command queue.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLIOCommandQueue](mtliocommandqueue.md)
+### I/O command queues
+- [protocol MTLIOCommandQueue](./mtliocommandqueue.md)
   A command queue that schedules input/output commands for reading files in the file system, and writing to GPU resources and memory.
-- [class MTLIOCommandQueueDescriptor](mtliocommandqueuedescriptor.md)
+- [class MTLIOCommandQueueDescriptor](./mtliocommandqueuedescriptor.md)
   A configuration template you use to create a new input/output command queue.
-- [enum MTLIOPriority](mtliopriority.md)
+- [enum MTLIOPriority](./mtliopriority.md)
   Designates the priority for a new input/output command queue.
-- [enum MTLIOCommandQueueType](mtliocommandqueuetype.md)
+- [enum MTLIOCommandQueueType](./mtliocommandqueuetype.md)
   Designates the queue type for a new input/output command queue.
-- [protocol MTLIOScratchBuffer](mtlioscratchbuffer.md)
+- [protocol MTLIOScratchBuffer](./mtlioscratchbuffer.md)
   A protocol your app implements that wraps a Metal buffer instance to serve as scratch memory for an input/output command queue.
 
 

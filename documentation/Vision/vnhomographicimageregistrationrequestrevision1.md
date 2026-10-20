@@ -1,7 +1,8 @@
 # VNHomographicImageRegistrationRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the homographic image registration request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the homographic image registration reque
 
 ```swift
 var VNHomographicImageRegistrationRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNHomographicImageRegistrationRequestRevision1;
 ```
 
 

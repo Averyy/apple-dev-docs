@@ -1,12 +1,13 @@
 # NSFocusRingType.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No focus ring.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ No focus ring.
 case none
 ```
 
+```c
+NSFocusRingTypeNone
+```
+
 #### Discussion
 
-If you set the focus ring type to this value, [`NSView`](nsview.md) and [`NSCell`](nscell.md) do not draw any focus ring.
+If you set the focus ring type to this value, [`NSView`](../nsview.md) and [`NSCell`](../nscell.md) do not draw any focus ring.
 
 ## See Also
 
-- [NSFocusRingType.default](nsfocusringtype/default.md)
+### Constants
+- [NSFocusRingType.default](./default.md)
   The default focus ring type for a view or cell.
-- [NSFocusRingType.exterior](nsfocusringtype/exterior.md)
+- [NSFocusRingType.exterior](./exterior.md)
   The standard Aqua focus ring.
 
 

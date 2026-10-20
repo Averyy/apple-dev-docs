@@ -1,7 +1,8 @@
 # ColorSyncAPIVersion()
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the version of the ColorSync API.
 
@@ -20,15 +21,20 @@ Returns the version of the ColorSync API.
 func ColorSyncAPIVersion() -> UInt32
 ```
 
+```c
+extern uint32_t ColorSyncAPIVersion();
+```
+
 #### Return Value
 
 The API version as a binary-coded decimal `uint32_t`. From most to least significant byte, the value encodes the major OS version, minor OS version, patch version, and API version — that is, `(major << 24) | (minor << 16) | (dot << 8) | (apiVersion & 0xFF)`.
 
 ## See Also
 
-- [var COLORSYNC_API_VERSION: Int](colorsync_api_version.md)
-- [var icVersion4Number: Int](icversion4number.md)
-- [var icVersion4Point4Number: Int](icversion4point4number.md)
+### Versioning
+- [var COLORSYNC_API_VERSION: Int](./colorsync_api_version.md)
+- [var icVersion4Number: Int](./icversion4number.md)
+- [var icVersion4Point4Number: Int](./icversion4point4number.md)
 
 
 ---

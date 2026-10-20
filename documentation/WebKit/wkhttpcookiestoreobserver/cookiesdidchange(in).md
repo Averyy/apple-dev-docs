@@ -1,7 +1,8 @@
 # cookiesDidChange(in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the cookies in the specified cookie store changed.
 
@@ -16,6 +17,10 @@ Tells the delegate that the cookies in the specified cookie store changed.
 
 ```swift
 optional func cookiesDidChange(in cookieStore: WKHTTPCookieStore)
+```
+
+```objc
+- (void) cookiesDidChangeInCookieStore:(WKHTTPCookieStore *) cookieStore;
 ```
 
 #### Discussion

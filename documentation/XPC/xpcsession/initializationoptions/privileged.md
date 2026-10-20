@@ -1,7 +1,8 @@
 # privileged
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the Mach service is in the priviledged Mach bootstrap.
 
@@ -11,7 +12,7 @@ Indicates that the Mach service is in the priviledged Mach bootstrap.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ The Mach service typically accomplishes this by placing its `launchd.plist` in t
 
 ## See Also
 
-- [static let inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
+### Session creation options
+- [static let inactive: XPCSession.InitializationOptions](./inactive.md)
   Indicates that the session isn’t activated during its creation.
-- [static let none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
+- [static let none: XPCSession.InitializationOptions](./none.md)
   Indicates that the listener uses a default configuration during creation.
 
 

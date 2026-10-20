@@ -1,7 +1,8 @@
 # shufflesElements
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether to shuffle the elements.
 
@@ -22,15 +23,16 @@ var shufflesElements: Bool
 
 ## See Also
 
-- [let annotations: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/annotations.md)
+### Inspecting a time series forecaster annotated window
+- [let annotations: MLShapedArray<Scalar>](./annotations.md)
   The original annotations.
-- [let features: MLShapedArray<Scalar>](timeseriesforecasterannotatedwindows/features.md)
+- [let features: MLShapedArray<Scalar>](./features.md)
   The original features.
-- [let forecastWindowSize: Int](timeseriesforecasterannotatedwindows/forecastwindowsize.md)
+- [let forecastWindowSize: Int](./forecastwindowsize.md)
   The prediction sample count.
-- [let inputWindowSize: Int](timeseriesforecasterannotatedwindows/inputwindowsize.md)
+- [let inputWindowSize: Int](./inputwindowsize.md)
   The input sample count.
-- [var stride: Int](timeseriesforecasterannotatedwindows/stride.md)
+- [var stride: Int](./stride.md)
   The number of samples between windows.
 
 

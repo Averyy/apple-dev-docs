@@ -1,7 +1,8 @@
 # kSBCWOCmd_READ_LONG
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCWOCmd_READ_LONG = 0x3E
 ```
 

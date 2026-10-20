@@ -1,7 +1,8 @@
 # readAttributeAbsMaxPower(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAbsMaxPower(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAbsMaxPower() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAbsMaxPowerWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

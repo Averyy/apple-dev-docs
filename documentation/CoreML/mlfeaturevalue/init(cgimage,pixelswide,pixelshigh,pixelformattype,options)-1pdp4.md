@@ -1,7 +1,8 @@
 # init(cgImage:pixelsWide:pixelsHigh:pixelFormatType:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from CGImage (orientation is assumed to be kCGImagePropertyOrientationUp)
 
@@ -18,6 +19,10 @@ Construct image feature value from CGImage (orientation is assumed to be kCGImag
 
 ```swift
 convenience init(cgImage: CGImage, pixelsWide: Int, pixelsHigh: Int, pixelFormatType: OSType, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithCGImage:(CGImageRef) cgImage pixelsWide:(NSInteger) pixelsWide pixelsHigh:(NSInteger) pixelsHigh pixelFormatType:(OSType) pixelFormatType options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

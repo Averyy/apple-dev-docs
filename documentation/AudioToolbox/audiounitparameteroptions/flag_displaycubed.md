@@ -1,15 +1,16 @@
 # flag_DisplayCubed
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,24 +18,29 @@
 static var flag_DisplayCubed: AudioUnitParameterOptions { get }
 ```
 
+```c
+kAudioUnitParameterFlag_DisplayCubed
+```
+
 ## See Also
 
-- [static var flag_CFNameRelease: AudioUnitParameterOptions](audiounitparameteroptions/flag_cfnamerelease.md)
+### Constants
+- [static var flag_CFNameRelease: AudioUnitParameterOptions](./flag_cfnamerelease.md)
   If an audio unit can generate parameter names dynamically, it should set this flag.
-- [static var flag_CanRamp: AudioUnitParameterOptions](audiounitparameteroptions/flag_canramp.md)
-- [static var flag_DisplayCubeRoot: AudioUnitParameterOptions](audiounitparameteroptions/flag_displaycuberoot.md)
-- [static var flag_DisplayExponential: AudioUnitParameterOptions](audiounitparameteroptions/flag_displayexponential.md)
-- [static var flag_DisplayLogarithmic: AudioUnitParameterOptions](audiounitparameteroptions/flag_displaylogarithmic.md)
-- [static var flag_DisplayMask: AudioUnitParameterOptions](audiounitparameteroptions/flag_displaymask.md)
-- [static var flag_DisplaySquareRoot: AudioUnitParameterOptions](audiounitparameteroptions/flag_displaysquareroot.md)
-- [static var flag_DisplaySquared: AudioUnitParameterOptions](audiounitparameteroptions/flag_displaysquared.md)
-- [static var flag_ExpertMode: AudioUnitParameterOptions](audiounitparameteroptions/flag_expertmode.md)
-- [static var flag_HasCFNameString: AudioUnitParameterOptions](audiounitparameteroptions/flag_hascfnamestring.md)
-- [static var flag_HasClump: AudioUnitParameterOptions](audiounitparameteroptions/flag_hasclump.md)
-- [static var flag_IsElementMeta: AudioUnitParameterOptions](audiounitparameteroptions/flag_iselementmeta.md)
-- [static var flag_IsGlobalMeta: AudioUnitParameterOptions](audiounitparameteroptions/flag_isglobalmeta.md)
-- [static var flag_IsHighResolution: AudioUnitParameterOptions](audiounitparameteroptions/flag_ishighresolution.md)
-- [static var flag_IsReadable: AudioUnitParameterOptions](audiounitparameteroptions/flag_isreadable.md)
+- [static var flag_CanRamp: AudioUnitParameterOptions](./flag_canramp.md)
+- [static var flag_DisplayCubeRoot: AudioUnitParameterOptions](./flag_displaycuberoot.md)
+- [static var flag_DisplayExponential: AudioUnitParameterOptions](./flag_displayexponential.md)
+- [static var flag_DisplayLogarithmic: AudioUnitParameterOptions](./flag_displaylogarithmic.md)
+- [static var flag_DisplayMask: AudioUnitParameterOptions](./flag_displaymask.md)
+- [static var flag_DisplaySquareRoot: AudioUnitParameterOptions](./flag_displaysquareroot.md)
+- [static var flag_DisplaySquared: AudioUnitParameterOptions](./flag_displaysquared.md)
+- [static var flag_ExpertMode: AudioUnitParameterOptions](./flag_expertmode.md)
+- [static var flag_HasCFNameString: AudioUnitParameterOptions](./flag_hascfnamestring.md)
+- [static var flag_HasClump: AudioUnitParameterOptions](./flag_hasclump.md)
+- [static var flag_IsElementMeta: AudioUnitParameterOptions](./flag_iselementmeta.md)
+- [static var flag_IsGlobalMeta: AudioUnitParameterOptions](./flag_isglobalmeta.md)
+- [static var flag_IsHighResolution: AudioUnitParameterOptions](./flag_ishighresolution.md)
+- [static var flag_IsReadable: AudioUnitParameterOptions](./flag_isreadable.md)
 
 
 ---

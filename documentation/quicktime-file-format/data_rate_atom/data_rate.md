@@ -1,17 +1,19 @@
 # Data rate
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The required data rate in bits per second, expressed as a 32-bit integer.
 
 ## See Also
 
-- [Size](data_rate_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this data rate atom.
-- [Type](data_rate_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
-- [Flags](data_rate_atom/flags.md)
+- [Flags](./flags.md)
   A 32-bit integer.
 
 

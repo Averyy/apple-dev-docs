@@ -1,7 +1,8 @@
 # serverCertificateCommonName
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing the value of the Subject Common Name field of the IKEv2 server’s certificate.
 
@@ -19,17 +20,22 @@ A string containing the value of the Subject Common Name field of the IKEv2 serv
 var serverCertificateCommonName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * serverCertificateCommonName;
+```
+
 #### Discussion
 
 This string is used to help verify the identity of the IKEv2 server.
 
 ## See Also
 
-- [var serverCertificateIssuerCommonName: String?](nevpnprotocolikev2/servercertificateissuercommonname.md)
+### Accessing certificate properties
+- [var serverCertificateIssuerCommonName: String?](./servercertificateissuercommonname.md)
   A string containing the value of the Subject Common Name field of the Certificate Authority certificate that issued the IKEv2 server’s certificate.
-- [var certificateType: NEVPNIKEv2CertificateType](nevpnprotocolikev2/certificatetype.md)
+- [var certificateType: NEVPNIKEv2CertificateType](./certificatetype.md)
   The type of the certificate in the identity configured in `identityReference` or `identityData`.
-- [enum NEVPNIKEv2CertificateType](nevpnikev2certificatetype.md)
+- [enum NEVPNIKEv2CertificateType](../nevpnikev2certificatetype.md)
   An enumeration of certificate type values.
 
 

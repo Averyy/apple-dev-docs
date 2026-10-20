@@ -1,7 +1,8 @@
 # touchesEnded(_:with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the view when one or more fingers are raised from the view.
 
@@ -20,20 +21,21 @@ Tells the view when one or more fingers are raised from the view.
 
 #### Discussion
 
-See [`touchesEnded(_:with:)`](entitytranslationgesturerecognizer/touchesended(_:with:).md) for more information.
+See [`touchesEnded(_:with:)`](../entitytranslationgesturerecognizer/touchesended%28_,with%29.md) for more information.
 
 ## Parameters
 
-- `touches`: A set of `UITouch` instances that represent the touches whose values changed. These touches all belong to the specified `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, set the view’s [`isMultipleTouchEnabled`](https://developer.apple.com/documentation/uikit/uiview/ismultipletouchenabled) property to `true`.
+- `touches`: A set of `UITouch` instances that represent the touches whose values changed. These touches all belong to the specified `event`. For touches in a view, this set contains only one touch by default. To receive multiple touches, set the view’s [`isMultipleTouchEnabled`](../../UIKit/uiview/ismultipletouchenabled.md) property to `true`.
 - `event`: The event to which the touches belong.
 
 ## See Also
 
-- [func touchesBegan(Set<UITouch>, with: UIEvent?)](arview/touchesbegan(_:with:).md)
+### Handling touch input
+- [func touchesBegan(Set<UITouch>, with: UIEvent?)](./touchesbegan%28_,with%29.md)
   Tells the view that one or more new touches occurred.
-- [func touchesMoved(Set<UITouch>, with: UIEvent?)](arview/touchesmoved(_:with:).md)
+- [func touchesMoved(Set<UITouch>, with: UIEvent?)](./touchesmoved%28_,with%29.md)
   Tells the view when one or more touches associated with an event changed.
-- [func touchesCancelled(Set<UITouch>, with: UIEvent?)](arview/touchescancelled(_:with:).md)
+- [func touchesCancelled(Set<UITouch>, with: UIEvent?)](./touchescancelled%28_,with%29.md)
   Tells the view when a system event (such as a system alert) cancels a touch sequence.
 
 

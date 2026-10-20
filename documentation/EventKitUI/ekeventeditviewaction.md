@@ -1,7 +1,8 @@
 # EKEventEditViewAction
 
 **Framework**: EventKit UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The action taken by the user after editing an event.
 
@@ -17,33 +18,38 @@ The action taken by the user after editing an event.
 enum EKEventEditViewAction
 ```
 
+```c
+enum EKEventEditViewAction : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKEventEditViewAction.canceled](ekeventeditviewaction/canceled.md)
+- [EKEventEditViewAction.canceled](./ekeventeditviewaction/canceled.md)
   The user canceled changes made to the event.
-- [EKEventEditViewAction.saved](ekeventeditviewaction/saved.md)
+- [EKEventEditViewAction.saved](./ekeventeditviewaction/saved.md)
   The user saved changes made to the event.
-- [EKEventEditViewAction.deleted](ekeventeditviewaction/deleted.md)
+- [EKEventEditViewAction.deleted](./ekeventeditviewaction/deleted.md)
   The user deleted the event.
-- [static var cancelled: EKEventEditViewAction](ekeventeditviewaction/cancelled.md)
+- [static var cancelled: EKEventEditViewAction](./ekeventeditviewaction/cancelled.md)
   A static variable used to cancel changes made to the event.
 ### Initializers
-- [init?(rawValue: Int)](ekeventeditviewaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekeventeditviewaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func eventEditViewController(EKEventEditViewController, didCompleteWith: EKEventEditViewAction)](ekeventeditviewdelegate/eventeditviewcontroller(_:didcompletewith:).md)
+### Finishing an Edit
+- [func eventEditViewController(EKEventEditViewController, didCompleteWith: EKEventEditViewAction)](./ekeventeditviewdelegate/eventeditviewcontroller%28_,didcompletewith%29.md)
   Invoked when the user finishes editing an event.
 
 

@@ -1,7 +1,8 @@
 # taskHint
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates the type of speech recognition being performed.
 
@@ -18,13 +19,18 @@ A value that indicates the type of speech recognition being performed.
 var taskHint: SFSpeechRecognitionTaskHint { get set }
 ```
 
+```objc
+@property (nonatomic) SFSpeechRecognitionTaskHint taskHint;
+```
+
 #### Discussion
 
-The default value of this property is [`SFSpeechRecognitionTaskHint.unspecified`](sfspeechrecognitiontaskhint/unspecified.md). For a valid list of values, see [`SFSpeechRecognitionTaskHint`](sfspeechrecognitiontaskhint.md).
+The default value of this property is [`SFSpeechRecognitionTaskHint.unspecified`](../sfspeechrecognitiontaskhint/unspecified.md). For a valid list of values, see [`SFSpeechRecognitionTaskHint`](../sfspeechrecognitiontaskhint.md).
 
 ## See Also
 
-- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+### Speech Type Classification
+- [enum SFSpeechRecognitionTaskHint](../sfspeechrecognitiontaskhint.md)
   The type of task for which you are using speech recognition.
 
 

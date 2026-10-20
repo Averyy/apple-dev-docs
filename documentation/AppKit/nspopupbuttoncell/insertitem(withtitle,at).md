@@ -1,17 +1,22 @@
 # insertItem(withTitle:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts an item at the specified position in the menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func insertItem(withTitle title: String, at index: Int)
+```
+
+```objc
+- (void) insertItemWithTitle:(NSString *) title atIndex:(NSInteger) index;
 ```
 
 #### Discussion
@@ -29,17 +34,19 @@ Because this method searches for duplicate items, it should not be used if you a
 
 ## See Also
 
-- [func insert(Any, at: Int)](../foundation/nsmutablearray/insert(_:at:)-5dbx5.md)
+### Related Documentation
+- [func insert(Any, at: Int)](../../Foundation/nsmutablearray/insert%28_,at%29-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
-- [func addItem(withTitle: String)](nspopupbuttoncell/additem(withtitle:).md)
+### Adding and removing items
+- [func addItem(withTitle: String)](./additem%28withtitle%29.md)
   Adds an item with the specified title to the end of the menu.
-- [func addItems(withTitles: [String])](nspopupbuttoncell/additems(withtitles:).md)
+- [func addItems(withTitles: [String])](./additems%28withtitles%29.md)
   Adds multiple items to the end of the menu.
-- [func removeItem(withTitle: String)](nspopupbuttoncell/removeitem(withtitle:).md)
+- [func removeItem(withTitle: String)](./removeitem%28withtitle%29.md)
   Removes the item with the specified title from the menu.
-- [func removeItem(at: Int)](nspopupbuttoncell/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the item at the specified index.
-- [func removeAllItems()](nspopupbuttoncell/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items in the receiver’s item menu.
 
 

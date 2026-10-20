@@ -1,7 +1,8 @@
 # setHuggingPriority(_:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the Auto Layout priority for the stack view to minimize its size, for a specified user interface axis.
 
@@ -14,31 +15,39 @@ Sets the Auto Layout priority for the stack view to minimize its size, for a spe
 func setHuggingPriority(_ huggingPriority: NSLayoutConstraint.Priority, for orientation: NSLayoutConstraint.Orientation)
 ```
 
+```objc
+- (void) setHuggingPriority:(NSLayoutPriority) huggingPriority forOrientation:(NSLayoutConstraintOrientation) orientation;
+```
+
 #### Discussion
 
-This method lets you specify a different hugging priority for each user interface axis. The default value for hugging priority, on both user interface axes, is [`defaultLow`](nslayoutconstraint/priority-swift.struct/defaultlow.md). If you have not added constraints between the stack view and its enclosing view, the stack view stays as small as possible to fully contain its views—independent of the size of the view that contains it.
+This method lets you specify a different hugging priority for each user interface axis. The default value for hugging priority, on both user interface axes, is [`defaultLow`](../nslayoutconstraint/priority-swift.struct/defaultlow.md). If you have not added constraints between the stack view and its enclosing view, the stack view stays as small as possible to fully contain its views—independent of the size of the view that contains it.
 
 To configure a stack view to grow and shrink according to the size of its enclosing view, add constraints between the stack view and its enclosing view by using Auto Layout priorities higher than the hugging priority.
 
 To configure a stack view to prevent its enclosing view from growing, use priorities for the constraints between the stack view and its enclosing view that are lower than the hugging priority.
 
-The value of the hugging priority also affects spacing between views and between gravity areas, as described in the discussion for the [`spacing`](nsstackview/spacing.md) property.
+The value of the hugging priority also affects spacing between views and between gravity areas, as described in the discussion for the [`spacing`](./spacing.md) property.
 
-> **Note**:  The hugging priority for a stack view behaves differently than the content hugging priority for a generic view as configured with the [`NSView`](nsview.md) method [`setContentHuggingPriority(_:for:)`](nsview/setcontenthuggingpriority(_:for:).md). A stack view has no intrinsic content size and does not have a configurable content compression resistance. Calling the [`setContentCompressionResistancePriority(_:for:)`](nsview/setcontentcompressionresistancepriority(_:for:).md) method on a stack view has no effect.
+> **Note**:  The hugging priority for a stack view behaves differently than the content hugging priority for a generic view as configured with the [`NSView`](../nsview.md) method [`setContentHuggingPriority(_:for:)`](../nsview/setcontenthuggingpriority%28_,for%29.md). A stack view has no intrinsic content size and does not have a configurable content compression resistance. Calling the [`setContentCompressionResistancePriority(_:for:)`](../nsview/setcontentcompressionresistancepriority%28_,for%29.md) method on a stack view has no effect.
 
 ## Parameters
 
-- `huggingPriority`: The Auto Layout priority for the stack view to minimize its size. The default value is [`defaultLow`](nslayoutconstraint/priority-swift.struct/defaultlow.md). Other valid values are those in the [`NSLayoutConstraint.Priority`](nslayoutconstraint/priority-swift.struct.md) enumeration.
-- `orientation`: The horizontal or vertical user interface axis for which you’re setting the stack view’s hugging priority; one of the constants from the [`NSUserInterfaceLayoutOrientation`](nsuserinterfacelayoutorientation.md) enumeration. - To specify horizontal-axis hugging for any stack view (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.horizontal`](nsuserinterfacelayoutorientation/horizontal.md) constant.
-- To specify vertical-axis hugging for any stack view  (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.vertical`](nsuserinterfacelayoutorientation/vertical.md) constant.
+- `huggingPriority`: The Auto Layout priority for the stack view to minimize its size. The default value is [`defaultLow`](../nslayoutconstraint/priority-swift.struct/defaultlow.md). Other valid values are those in the [`NSLayoutConstraint.Priority`](../nslayoutconstraint/priority-swift.struct.md) enumeration.
+- `orientation`: The horizontal or vertical user interface axis for which you’re setting the stack view’s hugging priority; one of the constants from the [`NSUserInterfaceLayoutOrientation`](../nsuserinterfacelayoutorientation.md) enumeration.
+
+  - To specify horizontal-axis hugging for any stack view (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.horizontal`](../nsuserinterfacelayoutorientation/horizontal.md) constant.
+  - To specify vertical-axis hugging for any stack view  (whether it uses vertical or horizontal layout), use the [`NSUserInterfaceLayoutOrientation.vertical`](../nsuserinterfacelayoutorientation/vertical.md) constant.
 
 ## See Also
 
-- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsstackview/huggingpriority(for:).md)
+### Related Documentation
+- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./huggingpriority%28for%29.md)
   Returns the Auto Layout priority for the stack view to minimize its size to fit its contained views as closely as possible, for a specified user interface axis.
-- [var detachesHiddenViews: Bool](nsstackview/detacheshiddenviews.md)
+### Configuring Dynamic Behavior for a Stack View
+- [var detachesHiddenViews: Bool](./detacheshiddenviews.md)
   A Boolean value that indicates whether the stack view removes hidden views from its view hierarchy.
-- [func setClippingResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](nsstackview/setclippingresistancepriority(_:for:).md)
+- [func setClippingResistancePriority(NSLayoutConstraint.Priority, for: NSLayoutConstraint.Orientation)](./setclippingresistancepriority%28_,for%29.md)
   Sets the Auto Layout priority for resisting clipping of views in the stack view when Auto Layout attempts to reduce the stack view’s size.
 
 

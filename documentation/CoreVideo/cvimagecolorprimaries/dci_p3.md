@@ -1,7 +1,8 @@
 # CVImageColorPrimaries.dci_P3
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Color primaries gamut for DCI P3 theatrical distribution video.
 

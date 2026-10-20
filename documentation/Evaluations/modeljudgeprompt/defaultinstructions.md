@@ -1,7 +1,8 @@
 # defaultInstructions
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default system instructions used when no custom instructions are provided.
 
@@ -22,7 +23,8 @@ static var defaultInstructions: String { get }
 
 ## See Also
 
-- [init(instructions: String, evaluationTarget: ((Input.ExpectedValue) -> String)?, reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?)](modeljudgeprompt/init(instructions:evaluationtarget:reference:).md)
+### Creating a prompt configuration
+- [init(instructions: String, evaluationTarget: ((Input.ExpectedValue) -> String)?, reference: ((Input, Input.ExpectedValue) async throws -> [String : String])?)](./init%28instructions,evaluationtarget,reference%29.md)
   Creates a model prompt configuration.
 
 

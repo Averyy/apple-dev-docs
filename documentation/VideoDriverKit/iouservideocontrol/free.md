@@ -1,7 +1,8 @@
 # free
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the user video object.
 
@@ -10,7 +11,7 @@ Frees the user video object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

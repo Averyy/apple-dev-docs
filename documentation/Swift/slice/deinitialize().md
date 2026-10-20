@@ -1,7 +1,8 @@
 # deinitialize()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinitializes every instance in this buffer slice.
 
@@ -20,6 +21,8 @@ Deinitializes every instance in this buffer slice.
 @discardableResult
 func deinitialize<Element>() -> UnsafeMutableRawBufferPointer where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

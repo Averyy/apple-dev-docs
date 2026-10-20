@@ -1,7 +1,8 @@
 # Transaction.Reason
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A cause of a purchase transaction, indicating whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
 
@@ -23,23 +24,24 @@ struct Reason
 ## Topics
 
 ### Transaction reasons
-- [static let purchase: Transaction.Reason](transaction/reason-swift.struct/purchase.md)
+- [static let purchase: Transaction.Reason](./reason-swift.struct/purchase.md)
   A transaction reason that indicates a purchase is initiated by a customer.
-- [static let renewal: Transaction.Reason](transaction/reason-swift.struct/renewal.md)
+- [static let renewal: Transaction.Reason](./reason-swift.struct/renewal.md)
   A transaction reason that indicates the App Store server initiated a purchase transaction to renew an auto-renewable subscription.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let reason: Transaction.Reason](transaction/reason-swift.property.md)
+### Getting transaction reason
+- [let reason: Transaction.Reason](./reason-swift.property.md)
   The cause of the purchase transaction, whether it’s a customer’s purchase or an auto-renewable subscription renewal that the system initiates.
 
 

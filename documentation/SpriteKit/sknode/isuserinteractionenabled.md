@@ -1,18 +1,19 @@
 # isUserInteractionEnabled
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the node receives touch events.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ A Boolean value that indicates whether the node receives touch events.
 var isUserInteractionEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isUserInteractionEnabled) BOOL userInteractionEnabled;
+```
+
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 > ❗ **Important**:  In addition to setting `isUserInteractionEnabled` to `true`, you must subclass the node and define event callbacks in order to respond to user input.
 
 ## See Also
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+### Handling User Input
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
   Enable your node to respond to user input, like touches or mouse clicks.
-- [var focusBehavior: SKNodeFocusBehavior](sknode/focusbehavior.md)
+- [var focusBehavior: SKNodeFocusBehavior](./focusbehavior.md)
   The focus behavior for a node.
 
 

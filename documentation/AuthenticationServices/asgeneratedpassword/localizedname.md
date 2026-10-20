@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-visible description of this password, derived from the kind.
 
@@ -15,6 +16,10 @@ The user-visible description of this password, derived from the kind.
 
 ```swift
 var localizedName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * localizedName;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # HTTPCookieStorage.CookiesChangedMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message a cookie storage instance sends when its cookies change.
 
@@ -22,28 +23,29 @@ struct CookiesChangedMessage
 
 #### Overview
 
-Observe this message with the identifier [`cookiesChanged`](notificationcenter/messageidentifier/cookieschanged.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`HTTPCookieStorage`](httpcookiestorage.md).
+Observe this message with the identifier [`cookiesChanged`](../notificationcenter/messageidentifier/cookieschanged.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`HTTPCookieStorage`](../httpcookiestorage.md).
 
-This message interoperates with the notification [`NSHTTPCookieManagerCookiesChanged`](nsnotification/name-swift.struct/nshttpcookiemanagercookieschanged.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`NSHTTPCookieManagerCookiesChanged`](../nsnotification/name-swift.struct/nshttpcookiemanagercookieschanged.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message
-- [init()](httpcookiestorage/cookieschangedmessage/init.md)
+- [init()](./cookieschangedmessage/init%28%29.md)
   Creates a message that the cookies in a cookie storage instance changed.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let NSHTTPCookieManagerCookiesChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanagercookieschanged.md)
+### Tracking cookie storage changes
+- [static let NSHTTPCookieManagerCookiesChanged: NSNotification.Name](../nsnotification/name-swift.struct/nshttpcookiemanagercookieschanged.md)
   A notification posted when the cookies stored in the cookie storage have changed.
-- [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
+- [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](../nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
   A notification posted when the acceptance policy of the cookie storage has changed.
 
 

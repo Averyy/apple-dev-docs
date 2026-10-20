@@ -1,7 +1,8 @@
 # helpAnchor
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized help anchor for the error.
 

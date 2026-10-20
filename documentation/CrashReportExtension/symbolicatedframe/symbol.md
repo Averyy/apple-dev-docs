@@ -1,7 +1,8 @@
 # symbol
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol associated with the stack frame.
 
@@ -9,9 +10,9 @@ The symbol associated with the stack frame.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ let symbol: String
 
 ## See Also
 
-- [let sourceFile: String?](symbolicatedframe/sourcefile.md)
+### Accessing symbolicated frame properties
+- [let sourceFile: String?](./sourcefile.md)
   The name of the source file, if available.
-- [let sourceLine: Int?](symbolicatedframe/sourceline.md)
+- [let sourceLine: Int?](./sourceline.md)
   The line number within the source file, if available.
-- [let symbolOffset: UInt64](symbolicatedframe/symboloffset.md)
+- [let symbolOffset: UInt64](./symboloffset.md)
   The symbol offset within the frame.
-- [let isInline: Bool](symbolicatedframe/isinline.md)
+- [let isInline: Bool](./isinline.md)
   A flag that indicates if the stack frame is inline.
 
 

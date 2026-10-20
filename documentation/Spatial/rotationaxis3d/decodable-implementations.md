@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](rotationaxis3d/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

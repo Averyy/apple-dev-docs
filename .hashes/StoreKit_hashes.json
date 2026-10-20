@@ -556,7 +556,7 @@
       "hash": "50cdf40657ff974f2af2de694a1c8384f8578a5797f2b7018776fb68b2b00456"
     },
     "https://developer.apple.com/documentation/storekit/compactproductviewstyle/init()": {
-      "etag": "\"d54-65d55d1fedddb-df\"",
+      "etag": "\"d54-65d55d1fedddb\"",
       "file_path": "documentation/StoreKit/compactproductviewstyle/init().md",
       "hash": "edcf8cf47f5eb19da80ae0d34380c25744f353b15c3fee4a088bd57f2cc2c856"
     },
@@ -7680,7 +7680,7 @@
       "hash": "50cdf40657ff974f2af2de694a1c8384f8578a5797f2b7018776fb68b2b00456"
     },
     "https://developer.apple.com/tutorials/data/documentation/storekit/compactproductviewstyle/init().json": {
-      "etag": "\"d54-65d55d1fedddb-df\"",
+      "etag": "\"d54-65d55d1fedddb\"",
       "file_path": "documentation/StoreKit/compactproductviewstyle/init().md",
       "hash": "edcf8cf47f5eb19da80ae0d34380c25744f353b15c3fee4a088bd57f2cc2c856"
     },
@@ -14246,6 +14246,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 2849
   }
 }

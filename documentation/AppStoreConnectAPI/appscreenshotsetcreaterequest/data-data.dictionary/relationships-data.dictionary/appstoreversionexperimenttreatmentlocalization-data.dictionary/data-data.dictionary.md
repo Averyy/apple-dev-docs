@@ -1,23 +1,26 @@
 # AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app screenshot set.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementCreateRequest`](../../../../appassetlibraryplacementcreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 
 
 ---

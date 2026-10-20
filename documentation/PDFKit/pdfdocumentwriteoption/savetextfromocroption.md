@@ -1,7 +1,8 @@
 # saveTextFromOCROption
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,12 +18,17 @@
 static let saveTextFromOCROption: PDFDocumentWriteOption
 ```
 
+```c
+extern PDFDocumentWriteOption const PDFDocumentSaveTextFromOCROption;
+```
+
 ## See Also
 
-- [static let accessPermissionsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/accesspermissionsoption.md)
-- [static let burnInAnnotationsOption: PDFDocumentWriteOption](pdfdocumentwriteoption/burninannotationsoption.md)
-- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](pdfdocumentwriteoption/optimizeimagesforscreenoption.md)
-- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](pdfdocumentwriteoption/saveimagesasjpegoption.md)
+### Type Properties
+- [static let accessPermissionsOption: PDFDocumentWriteOption](./accesspermissionsoption.md)
+- [static let burnInAnnotationsOption: PDFDocumentWriteOption](./burninannotationsoption.md)
+- [static let optimizeImagesForScreenOption: PDFDocumentWriteOption](./optimizeimagesforscreenoption.md)
+- [static let saveImagesAsJPEGOption: PDFDocumentWriteOption](./saveimagesasjpegoption.md)
 
 
 ---

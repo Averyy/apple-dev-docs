@@ -1,7 +1,8 @@
 # register(_:forDecorationViewOfKind:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a class for use in creating decoration views for a collection view.
 
@@ -9,7 +10,7 @@ Registers a class for use in creating decoration views for a collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Registers a class for use in creating decoration views for a collection view.
 func register(_ viewClass: AnyClass?, forDecorationViewOfKind elementKind: String)
 ```
 
+```objc
+- (void) registerClass:(Class) viewClass forDecorationViewOfKind:(NSString *) elementKind;
+```
+
 #### Discussion
 
 This method gives the layout object a chance to register a decoration view for use in the collection view. Decoration views provide visual adornments to a section or to the entire collection view but are not otherwise tied to the data provided by the collection view’s data source.
 
-You do not need to create decoration views explicitly. After registering one, it is up to the layout object to decide when a decoration view is needed and return the corresponding layout attributes from its [`layoutAttributesForElements(in:)`](uicollectionviewlayout/layoutattributesforelements(in:).md) method. For layout attributes that specify a decoration view, the collection view creates (or reuses) a view and displays it automatically based on the registered information.
+You do not need to create decoration views explicitly. After registering one, it is up to the layout object to decide when a decoration view is needed and return the corresponding layout attributes from its [`layoutAttributesForElements(in:)`](./layoutattributesforelements%28in%29.md) method. For layout attributes that specify a decoration view, the collection view creates (or reuses) a view and displays it automatically based on the registered information.
 
 If you previously registered a class or nib file with the same kind string, the class you specify in the `viewClass` parameter replaces the old entry. You may specify `nil` for `viewClass` if you want to unregister the decoration view.
 
@@ -33,7 +38,8 @@ If you previously registered a class or nib file with the same kind string, the 
 
 ## See Also
 
-- [func register(UINib?, forDecorationViewOfKind: String)](uicollectionviewlayout/register(_:fordecorationviewofkind:)-35jf9.md)
+### Registering decoration views
+- [func register(UINib?, forDecorationViewOfKind: String)](./register%28_,fordecorationviewofkind%29-35jf9.md)
   Registers a nib file for use in creating decoration views for a collection view.
 
 

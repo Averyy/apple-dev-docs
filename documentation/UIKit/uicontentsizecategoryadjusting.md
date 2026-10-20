@@ -1,7 +1,8 @@
 # UIContentSizeCategoryAdjusting
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection of methods that give controls an easy way to adopt automatic adjustment to content category changes.
 
@@ -19,31 +20,36 @@ A collection of methods that give controls an easy way to adopt automatic adjust
 protocol UIContentSizeCategoryAdjusting : NSObjectProtocol
 ```
 
+```objc
+@protocol UIContentSizeCategoryAdjusting <NSObject>
+```
+
 ## Topics
 
 ### Adjusting the size of fonts
-- [var adjustsFontForContentSizeCategory: Bool](uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md)
+- [var adjustsFontForContentSizeCategory: Bool](./uicontentsizecategoryadjusting/adjustsfontforcontentsizecategory.md)
   A Boolean that indicates whether the object automatically updates its font when the device’s content size category changes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UILabel](uilabel.md)
-- [UISearchTextField](uisearchtextfield.md)
-- [UITextField](uitextfield.md)
-- [UITextView](uitextview.md)
+- [UILabel](./uilabel.md)
+- [UISearchTextField](./uisearchtextfield.md)
+- [UITextField](./uitextfield.md)
+- [UITextView](./uitextview.md)
 
 ## See Also
 
-- [var preferredContentSizeCategory: UIContentSizeCategory](uiapplication/preferredcontentsizecategory.md)
+### Managing the preferred content size
+- [var preferredContentSizeCategory: UIContentSizeCategory](./uiapplication/preferredcontentsizecategory.md)
   The font sizing option preferred by the user.
-- [struct UIContentSizeCategory](uicontentsizecategory.md)
+- [struct UIContentSizeCategory](./uicontentsizecategory.md)
   Constants that indicate the preferred size of your content.
-- [static let didChangeNotification: NSNotification.Name](uicontentsizecategory/didchangenotification.md)
+- [static let didChangeNotification: NSNotification.Name](./uicontentsizecategory/didchangenotification.md)
   A notification that posts when the user changes the preferred content size setting.
-- [static let newValueUserInfoKey: String](uicontentsizecategory/newvalueuserinfokey.md)
+- [static let newValueUserInfoKey: String](./uicontentsizecategory/newvalueuserinfokey.md)
   A key that reflects the new preferred content size.
 
 

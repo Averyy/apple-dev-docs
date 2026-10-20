@@ -1,7 +1,8 @@
 # setPositions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Which occurrences within every interval should be returned
 

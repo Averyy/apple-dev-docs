@@ -1,7 +1,8 @@
 # init(scene:allowsNavigation:showsRoadLabels:pointsOfInterest:badgePosition:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Look Around preview with a binding to a scene, navigation, road label, points of interest, and badge position you specify.
 
@@ -10,7 +11,7 @@ Creates a Look Around preview with a binding to a scene, navigation, road label,
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -35,7 +36,8 @@ The Look Around viewer isn’t available on macOS and `allowsNavigation` has no 
 
 ## See Also
 
-- [init(initialScene: MKLookAroundScene?, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, badgePosition: MKLookAroundBadgePosition)](lookaroundpreview/init(initialscene:allowsnavigation:showsroadlabels:pointsofinterest:badgeposition:).md)
+### Creating a Look Around preview
+- [init(initialScene: MKLookAroundScene?, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, badgePosition: MKLookAroundBadgePosition)](./init%28initialscene,allowsnavigation,showsroadlabels,pointsofinterest,badgeposition%29.md)
   Creates a Look Around preview with an initial scene, navigation, road label, points of interest, and badge position you specify.
 
 

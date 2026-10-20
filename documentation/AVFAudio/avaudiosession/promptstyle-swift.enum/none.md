@@ -1,22 +1,27 @@
 # AVAudioSession.PromptStyle.none
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Your app shouldn’t issue prompts at this time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case none
+```
+
+```c
+AVAudioSessionPromptStyleNone
 ```
 
 #### Discussion
@@ -27,9 +32,10 @@ For example, if Siri is recognizing speech, playing navigation or exercise promp
 
 ## See Also
 
-- [AVAudioSession.PromptStyle.short](avaudiosession/promptstyle-swift.enum/short.md)
+### Identifying prompt styles
+- [AVAudioSession.PromptStyle.short](./short.md)
   Your app should issue short, nonverbal prompts.
-- [AVAudioSession.PromptStyle.normal](avaudiosession/promptstyle-swift.enum/normal.md)
+- [AVAudioSession.PromptStyle.normal](./normal.md)
   Your app may use long, verbal prompts.
 
 

@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate to be tested when evaluating the rule.
 
@@ -19,13 +20,18 @@ A predicate to be tested when evaluating the rule.
 var predicate: NSPredicate { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSPredicate * predicate;
+```
+
 #### Discussion
 
 When the rule is evaluated, GameplayKit tests this predicate against the GKRuleSystem object evaluating the rule.
 
 ## See Also
 
-- [func evaluatePredicate(in: GKRuleSystem) -> Bool](gknspredicaterule/evaluatepredicate(in:).md)
+### Evaluating a Rule
+- [func evaluatePredicate(in: GKRuleSystem) -> Bool](./evaluatepredicate%28in%29.md)
   Returns a Boolean value indicating whether the rule’s predicate has been satisfied in the context of the specified rule system.
 
 

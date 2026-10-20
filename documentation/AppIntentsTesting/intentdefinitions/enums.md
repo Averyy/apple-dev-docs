@@ -1,7 +1,8 @@
 # enums
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The definitions for the target app’s app enums.
 
@@ -35,7 +36,8 @@ let coffeeSizeEnum = definitions.enums[
 
 ## See Also
 
-- [struct AppEnumDefinition](appenumdefinition.md)
+### Accessing app enums
+- [struct AppEnumDefinition](../appenumdefinition.md)
   An app enumeration definition for testing and dynamic enumeration creation.
 
 

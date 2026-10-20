@@ -1,7 +1,8 @@
 # checkingTypes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the checking types for the data detector.
 
@@ -20,11 +21,15 @@ Returns the checking types for the data detector.
 var checkingTypes: NSTextCheckingTypes { get }
 ```
 
+```objc
+@property (readonly) NSTextCheckingTypes checkingTypes;
+```
+
 #### Discussion
 
-The supported subset of checking types are specified in [`NSTextCheckingResult.CheckingType`](nstextcheckingresult/checkingtype.md). Those constants can be combined using the C-bitwise OR operator.
+The supported subset of checking types are specified in [`NSTextCheckingResult.CheckingType`](../nstextcheckingresult/checkingtype.md). Those constants can be combined using the C-bitwise OR operator.
 
-Currently, the supported data detectors `checkingTypes` are:  [`date`](nstextcheckingresult/checkingtype/date.md), [`address`](nstextcheckingresult/checkingtype/address.md), [`link`](nstextcheckingresult/checkingtype/link.md), `NSTextCheckingTypePhoneNumber`, and `NSTextCheckingTypeTransitInformation`.
+Currently, the supported data detectors `checkingTypes` are:  [`date`](../nstextcheckingresult/checkingtype/date.md), [`address`](../nstextcheckingresult/checkingtype/address.md), [`link`](../nstextcheckingresult/checkingtype/link.md), `NSTextCheckingTypePhoneNumber`, and `NSTextCheckingTypeTransitInformation`.
 
 
 ---

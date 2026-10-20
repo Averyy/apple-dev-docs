@@ -1,14 +1,15 @@
 # uuid_string_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_uuid_string_t uuid_string_t;
 ```
 

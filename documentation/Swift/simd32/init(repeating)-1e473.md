@@ -1,7 +1,8 @@
 # init(repeating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A vector with the specified scalar in all lanes.
 

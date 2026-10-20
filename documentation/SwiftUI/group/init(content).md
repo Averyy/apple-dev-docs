@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group of content.
 
@@ -21,15 +22,45 @@ Creates a group of content.
 nonisolated init(@ContentBuilder content: () -> Content)
 ```
 
+**Other overloads**:
+
+```swift
+init(@MapContentBuilder content: () -> Content)
+```
+
+```swift
+init<V>(@TabContentBuilder<V> content: () -> Content) where V == Content.TabValue
+```
+
+```swift
+init<V>(@TabContentBuilder<V?> content: () -> Content) where V : Hashable, Content.TabValue == V?
+```
+
+```swift
+nonisolated
+init(@SceneBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<R, C>(@TableColumnBuilder<R, C> content: () -> Content) where R == Content.TableRowValue, C == Content.TableColumnSortComparator
+```
+
+```swift
+nonisolated
+init<R>(@TableRowBuilder<R> content: () -> Content) where R == Content.TableRowValue
+```
+
 ## Parameters
 
-- `content`: A [`ContentBuilder`](contentbuilder.md) that produces the content to group.
+- `content`: A [`ContentBuilder`](../contentbuilder.md) that produces the content to group.
 
 ## See Also
 
-- [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](group/init(sections:transform:).md)
+### Creating a group
+- [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](./init%28sections,transform%29.md)
   Constructs a group from the sections of the given view.
-- [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](group/init(subviews:transform:).md)
+- [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](./init%28subviews,transform%29.md)
   Constructs a group from the subviews of the given view.
 
 

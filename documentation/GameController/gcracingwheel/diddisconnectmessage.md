@@ -1,7 +1,8 @@
 # GCRacingWheel.DidDisconnectMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a racing wheel accessory disconnects from the device.
 
@@ -19,7 +20,7 @@ struct DidDisconnectMessage
 
 Use the `.didDisconnect` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCRacingWheel.self, for: .didDisconnect) { message in
    let racingWheel = message.racingWheel
 }
@@ -28,16 +29,16 @@ let observation = NotificationCenter.default.addObserver(of: GCRacingWheel.self,
 ## Topics
 
 ### Initializers
-- [init(racingWheel: GCRacingWheel)](gcracingwheel/diddisconnectmessage/init(racingwheel:).md)
+- [init(racingWheel: GCRacingWheel)](./diddisconnectmessage/init%28racingwheel%29.md)
 ### Instance Properties
-- [var racingWheel: GCRacingWheel](gcracingwheel/diddisconnectmessage/racingwheel.md)
+- [var racingWheel: GCRacingWheel](./diddisconnectmessage/racingwheel.md)
   The racing wheel object that disconnected from the device.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

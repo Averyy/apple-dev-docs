@@ -1,7 +1,8 @@
 # init(initialValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a state property that stores an initial value.
 
@@ -23,7 +24,7 @@ init(initialValue value: Value)
 
 #### Discussion
 
-This initializer has the same behavior as the [`init(wrappedValue:)`](state/init(wrappedvalue:).md) initializer. See that initializer for more information.
+This initializer has the same behavior as the [`init(wrappedValue:)`](./init%28wrappedvalue%29.md) initializer. See that initializer for more information.
 
 ## Parameters
 
@@ -31,9 +32,10 @@ This initializer has the same behavior as the [`init(wrappedValue:)`](state/init
 
 ## See Also
 
-- [init(wrappedValue: Value)](state/init(wrappedvalue:).md)
+### Creating a state
+- [init(wrappedValue: Value)](./init%28wrappedvalue%29.md)
   Creates a state property that stores an initial wrapped value.
-- [init()](state/init.md)
+- [init()](./init%28%29.md)
   Creates a state property without an initial value.
 
 

@@ -1,7 +1,8 @@
 # AVAudioIONodeInputBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a block to render operation calls to get input data when in manual rendering mode.
 
@@ -20,9 +21,13 @@ The type that represents a block to render operation calls to get input data whe
 typealias AVAudioIONodeInputBlock = (AVAudioFrameCount) -> UnsafePointer<AudioBufferList>?
 ```
 
+```c
+typedef const struct AudioBufferList *(^)(unsigned int) AVAudioIONodeInputBlock;
+```
+
 #### Return Value
 
-An [`AudioBufferList`](https://developer.apple.com/documentation/coreaudiotypes/audiobufferlist) that contains the data to render, or `nil` if no data is available.
+An [`AudioBufferList`](../CoreAudioTypes/audiobufferlist.md) that contains the data to render, or `nil` if no data is available.
 
 #### Discussion
 
@@ -34,7 +39,8 @@ Don’t clear or refill the data in the return value until the framework calls t
 
 ## See Also
 
-- [func setManualRenderingInputPCMFormat(AVAudioFormat, inputBlock: AVAudioIONodeInputBlock) -> Bool](avaudioinputnode/setmanualrenderinginputpcmformat(_:inputblock:).md)
+### Supplying manual rendering input
+- [func setManualRenderingInputPCMFormat(AVAudioFormat, inputBlock: AVAudioIONodeInputBlock) -> Bool](./avaudioinputnode/setmanualrenderinginputpcmformat%28_,inputblock%29.md)
   Supplies the data through the input node to the engine while operating in the manual rendering mode.
 
 

@@ -1,7 +1,8 @@
 # readAttributeRoutingRole(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRoutingRole(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRoutingRole() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRoutingRoleWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

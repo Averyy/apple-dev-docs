@@ -1,7 +1,8 @@
 # NSMenu.DidSendActionMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct DidSendActionMessage
 ## Topics
 
 ### Initializers
-- [init(menu: NSMenu)](nsmenu/didsendactionmessage/init(menu:).md)
+- [init(menu: NSMenu)](./didsendactionmessage/init%28menu%29.md)
 ### Instance Properties
-- [var menu: NSMenu](nsmenu/didsendactionmessage/menu.md)
+- [var menu: NSMenu](./didsendactionmessage/menu.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

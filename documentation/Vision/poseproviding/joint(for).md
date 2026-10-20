@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Retrieves a joint for a given joint name.
@@ -23,7 +24,8 @@ func joint(for jointName: Self.PoseJointName) -> Joint?
 
 ## See Also
 
-- [func allJoints(in: Self.PoseJointsGroupName?) -> [Self.PoseJointName : Joint]](poseproviding/alljoints(in:).md)
+### Getting the joints
+- [func allJoints(in: Self.PoseJointsGroupName?) -> [Self.PoseJointName : Joint]](./alljoints%28in%29.md)
   Retrieves a dictionary of all joints in the observation or joint group.
 
 

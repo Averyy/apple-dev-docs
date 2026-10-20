@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothVoiceSettingInputSampleSize16Bit](1640005-anonymous/kbluetoothvoicesettinginputsamplesize16bit.md)
-- [kBluetoothVoiceSettingInputSampleSize8Bit](1640005-anonymous/kbluetoothvoicesettinginputsamplesize8bit.md)
-- [kBluetoothVoiceSettingInputSampleSizeMask](1640005-anonymous/kbluetoothvoicesettinginputsamplesizemask.md)
+- [kBluetoothVoiceSettingInputSampleSize16Bit](./api-1640005-anonymous/kbluetoothvoicesettinginputsamplesize16bit.md)
+- [kBluetoothVoiceSettingInputSampleSize8Bit](./api-1640005-anonymous/kbluetoothvoicesettinginputsamplesize8bit.md)
+- [kBluetoothVoiceSettingInputSampleSizeMask](./api-1640005-anonymous/kbluetoothvoicesettinginputsamplesizemask.md)
 
 
 ---

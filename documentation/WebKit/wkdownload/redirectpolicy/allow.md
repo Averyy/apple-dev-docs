@@ -1,7 +1,8 @@
 # WKDownload.RedirectPolicy.allow
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow a redirect to proceed.
 
@@ -18,9 +19,14 @@ Allow a redirect to proceed.
 case allow
 ```
 
+```c
+WKDownloadRedirectPolicyAllow
+```
+
 ## See Also
 
-- [WKDownload.RedirectPolicy.cancel](wkdownload/redirectpolicy/cancel.md)
+### Constants
+- [WKDownload.RedirectPolicy.cancel](./cancel.md)
   Cancel the redirect action.
 
 

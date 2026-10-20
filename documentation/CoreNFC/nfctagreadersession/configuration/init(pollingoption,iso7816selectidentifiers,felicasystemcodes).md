@@ -1,7 +1,8 @@
 # init(pollingOption:iso7816SelectIdentifiers:feliCaSystemCodes:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

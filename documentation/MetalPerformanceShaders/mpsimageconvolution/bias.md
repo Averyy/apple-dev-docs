@@ -1,7 +1,8 @@
 # bias
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value added to a convolved pixel before it is converted back to its intended storage format.
 
@@ -19,6 +20,10 @@ The value added to a convolved pixel before it is converted back to its intended
 var bias: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float bias;
+```
+
 #### Discussion
 
 This value can be used to convert negative values into a representable range for an unsigned pixel format. For example, many edge detection filters produce results in the range `[-k,k]`. By scaling the filter weights by `0.5/k` and adding `0.5`, the results will be in the range `[0,1]` suitable for use with unsigned normalized formats.
@@ -29,9 +34,10 @@ The default value is `0.0f`.
 
 ## See Also
 
-- [var kernelHeight: Int](mpsimageconvolution/kernelheight.md)
+### Properties
+- [var kernelHeight: Int](./kernelheight.md)
   The height of the filter window. Must be an odd number.
-- [var kernelWidth: Int](mpsimageconvolution/kernelwidth.md)
+- [var kernelWidth: Int](./kernelwidth.md)
   The width of the filter window. Must be an odd number.
 
 

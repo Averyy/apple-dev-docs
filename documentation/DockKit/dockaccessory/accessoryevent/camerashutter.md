@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvent.cameraShutter
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A camera shutter toggle event.
 

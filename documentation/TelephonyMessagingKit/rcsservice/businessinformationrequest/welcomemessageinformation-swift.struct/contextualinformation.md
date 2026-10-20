@@ -1,7 +1,8 @@
 # contextualInformation
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contextual information provided by a business for a specific Welcome Message.
 

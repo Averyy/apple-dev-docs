@@ -1,7 +1,8 @@
 # bytesPerRow
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of bytes in each row of the plane. Note that this may be greater than the number of bytes required for all pixels in the row.
 

@@ -1,7 +1,8 @@
 # timeMapping
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range of the track that this segment presents.
 
@@ -20,9 +21,14 @@ The time range of the track that this segment presents.
 var timeMapping: CMTimeMapping { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeMapping timeMapping;
+```
+
 ## See Also
 
-- [var isEmpty: Bool](avassettracksegment/isempty.md)
+### Retrieving segment information
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the segment is empty.
 
 

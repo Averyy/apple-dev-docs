@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a boosted tree classifier model to a collection of examples.
 
@@ -32,9 +33,10 @@ The fitted boosted tree classifier model.
 
 ## See Also
 
-- [BoostedTreeClassifier.Annotation](boostedtreeclassifier/annotation.md)
+### Fitting the classifier
+- [BoostedTreeClassifier.Annotation](./annotation.md)
   The annotation type.
-- [BoostedTreeClassifier.Transformer](boostedtreeclassifier/transformer.md)
+- [BoostedTreeClassifier.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

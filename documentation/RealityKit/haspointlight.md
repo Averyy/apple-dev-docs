@@ -1,7 +1,8 @@
 # HasPointLight
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that defines a point light source component.
 
@@ -23,29 +24,30 @@ An interface that defines a point light source component.
 ## Topics
 
 ### Getting the point light component
-- [var light: PointLightComponent](haspointlight/light.md)
+- [var light: PointLightComponent](./haspointlight/light.md)
   A point light component for the entity.
 
 ## Relationships
 
 ### Inherits From
-- [HasTransform](hastransform.md)
+- [HasTransform](./hastransform.md)
 ### Conforming Types
-- [PointLight](pointlight.md)
+- [PointLight](./pointlight.md)
 
 ## See Also
 
-- [protocol HasPerspectiveCamera](hasperspectivecamera.md)
+### Entity compliance
+- [protocol HasPerspectiveCamera](./hasperspectivecamera.md)
   An interface that enables you to configure a virtual camera that you can use to define the rendering perspective when you’re not in an AR session.
-- [class PointLight](pointlight.md)
+- [class PointLight](./pointlight.md)
   An entity that produces an omnidirectional light for virtual objects.
-- [class SpotLight](spotlight.md)
+- [class SpotLight](./spotlight.md)
   An entity that illuminates virtual content in a cone-shaped volume.
-- [protocol HasSpotLight](hasspotlight.md)
+- [protocol HasSpotLight](./hasspotlight.md)
   An interface that defines a spot light source component.
-- [class DirectionalLight](directionallight.md)
+- [class DirectionalLight](./directionallight.md)
   An entity that casts a virtual light in a particular direction.
-- [protocol HasDirectionalLight](hasdirectionallight.md)
+- [protocol HasDirectionalLight](./hasdirectionallight.md)
   An interface that defines a directional light source component.
 
 

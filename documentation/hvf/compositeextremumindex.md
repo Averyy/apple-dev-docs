@@ -1,7 +1,8 @@
 # CompositeExtremumIndex
 
 **Framework**: hvf  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The index of an extremum rotation or translation in a Composite part
 
@@ -23,18 +24,18 @@ struct CompositeExtremumIndex
 ## Topics
 
 ### Initializers
-- [init(row: UInt16, column: UInt16)](compositeextremumindex/init(row:column:).md)
+- [init(row: UInt16, column: UInt16)](./compositeextremumindex/init%28row,column%29.md)
 ### Instance Properties
-- [var column: UInt16](compositeextremumindex/column.md)
+- [var column: UInt16](./compositeextremumindex/column.md)
   The column (offset of the extremum of the composite)
-- [var row: UInt16](compositeextremumindex/row.md)
+- [var row: UInt16](./compositeextremumindex/row.md)
   The row (offset into the part’s render transform subtree)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

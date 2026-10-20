@@ -1,7 +1,8 @@
 # IntentValueQueryDefinition
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition you use to create an intent value query for testing.
 
@@ -22,7 +23,7 @@ struct IntentValueQueryDefinition
 
 #### Overview
 
-To create an intent value for testing and verify its results, first get its definition using [`IntentDefinitions`](intentdefinitions.md) and its [`valueQueries`](intentdefinitions/valuequeries.md) property. Then, perform the query and verify that it returns the expected results as shown in the following example:
+To create an intent value for testing and verify its results, first get its definition using [`IntentDefinitions`](./intentdefinitions.md) and its [`valueQueries`](./intentdefinitions/valuequeries.md) property. Then, perform the query and verify that it returns the expected results as shown in the following example:
 
 ```swift
 let definitions = IntentDefinitions(
@@ -41,31 +42,32 @@ let result = try await searchQuery.values(for: "Arizona")
 ## Topics
 
 ### Performing the intent value query
-- [func values(for: some IntentValueConvertible) async throws -> ResolvedValueQueryResult](intentvaluequerydefinition/values(for:).md)
+- [func values(for: some IntentValueConvertible) async throws -> ResolvedValueQueryResult](./intentvaluequerydefinition/values%28for%29.md)
   Performs the value query with the given input and returns matching results.
 ### Identifying the query
-- [let bundleIdentifier: String](intentvaluequerydefinition/bundleidentifier.md)
+- [let bundleIdentifier: String](./intentvaluequerydefinition/bundleidentifier.md)
   The bundle identifier of the app that includes the query.
-- [let queryIdentifier: String](intentvaluequerydefinition/queryidentifier.md)
+- [let queryIdentifier: String](./intentvaluequerydefinition/queryidentifier.md)
   The query’s unique identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](intentdefinitions/entities.md)
+### Accessing app entities and queries
+- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](./intentdefinitions/entities.md)
   The definitions for the target app’s app entities.
-- [struct AppEntityDefinition](appentitydefinition.md)
+- [struct AppEntityDefinition](./appentitydefinition.md)
   A definition you use to dynamically create entity instances for testing.
-- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](intentdefinitions/valuequeries.md)
+- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](./intentdefinitions/valuequeries.md)
   The definitions for the app’s intent value queries.
-- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](intentdefinitions/transiententities.md)
+- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](./intentdefinitions/transiententities.md)
   Retrieve a transient app entity definition using subscript syntax.
-- [struct TransientAppEntityDefinition](transientappentitydefinition.md)
+- [struct TransientAppEntityDefinition](./transientappentitydefinition.md)
   A definition you use to dynamically create transient app entities for testing.
 
 

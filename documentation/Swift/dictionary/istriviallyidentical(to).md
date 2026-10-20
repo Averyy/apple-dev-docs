@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a boolean value indicating whether this dictionary is identical to `other`.
 
@@ -19,6 +20,8 @@ Returns a boolean value indicating whether this dictionary is identical to `othe
 ```swift
 func isTriviallyIdentical(to other: Dictionary<Key, Value>) -> Bool
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Discussion
 
@@ -41,7 +44,7 @@ print(c.isTriviallyIdentical(to: d))
 
 Comparing dictionaries this way includes comparing (normally) hidden implementation details such as the memory location of any underlying dictionary storage object. Therefore, identical dictionaries are guaranteed to compare equal with `==`, but not all equal dictionaries are considered identical.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

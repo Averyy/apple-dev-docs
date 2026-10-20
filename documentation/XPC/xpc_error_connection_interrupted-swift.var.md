@@ -1,7 +1,8 @@
 # XPC_ERROR_CONNECTION_INTERRUPTED
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error that sends to the connection’s event handler when the remote service exits.
 
@@ -11,7 +12,7 @@ An error that sends to the connection’s event handler when the remote service 
 - Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -30,9 +31,10 @@ Messages that do not have reply handlers associated with them will be silently d
 
 ## See Also
 
-- [var XPC_ERROR_CONNECTION_INVALID: xpc_object_t](xpc_error_connection_invalid-swift.var.md)
+### Errors
+- [var XPC_ERROR_CONNECTION_INVALID: xpc_object_t](./xpc_error_connection_invalid-swift.var.md)
   An error that sends to the connection’s event handler to indicate that the connection is no longer usable.
-- [var XPC_ERROR_TERMINATION_IMMINENT: xpc_object_t](xpc_error_termination_imminent-swift.var.md)
+- [var XPC_ERROR_TERMINATION_IMMINENT: xpc_object_t](./xpc_error_termination_imminent-swift.var.md)
   An error that sends to a peer connection’s event handler when the XPC runtime determines that the program needs to exit and that all outstanding transactions must wind down.
 
 

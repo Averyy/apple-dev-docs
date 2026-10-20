@@ -1,9 +1,10 @@
 # ExecuteDistributedTargetError
 
 **Framework**: Distributed  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](distributedactorsystem/executedistributedtarget(on:target:invocationdecoder:handler:).md).
+Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](./distributedactorsystem/executedistributedtarget%28on,target,invocationdecoder,handler%29.md).
 
 **Availability**:
 - iOS 16.0+
@@ -11,7 +12,7 @@ Error thrown by [`executeDistributedTarget(on:target:invocationDecoder:handler:)
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,34 +23,35 @@ struct ExecuteDistributedTargetError
 
 #### Overview
 
-Inspect the [`errorCode`](executedistributedtargeterror/errorcode-swift.property.md) for details about the underlying reason this error was thrown.
+Inspect the [`errorCode`](./executedistributedtargeterror/errorcode-swift.property.md) for details about the underlying reason this error was thrown.
 
 ## Topics
 
 ### Initializers
-- [init(message: String)](executedistributedtargeterror/init(message:).md)
-- [init(message: String, errorCode: ExecuteDistributedTargetError.ErrorCode)](executedistributedtargeterror/init(message:errorcode:).md)
+- [init(message: String)](./executedistributedtargeterror/init%28message%29.md)
+- [init(message: String, errorCode: ExecuteDistributedTargetError.ErrorCode)](./executedistributedtargeterror/init%28message,errorcode%29.md)
 ### Instance Properties
-- [let errorCode: ExecuteDistributedTargetError.ErrorCode](executedistributedtargeterror/errorcode-swift.property.md)
-- [let message: String](executedistributedtargeterror/message.md)
+- [let errorCode: ExecuteDistributedTargetError.ErrorCode](./executedistributedtargeterror/errorcode-swift.property.md)
+- [let message: String](./executedistributedtargeterror/message.md)
 ### Enumerations
-- [ExecuteDistributedTargetError.ErrorCode](executedistributedtargeterror/errorcode-swift.enum.md)
+- [ExecuteDistributedTargetError.ErrorCode](./executedistributedtargeterror/errorcode-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [DistributedActorSystemError](distributedactorsystemerror.md)
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DistributedActorSystemError](./distributedactorsystemerror.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DistributedActorCodingError](distributedactorcodingerror.md)
+### Errors
+- [struct DistributedActorCodingError](./distributedactorcodingerror.md)
   Error thrown by distributed actor systems while encountering encoding/decoding issues.
-- [protocol DistributedActorSystemError](distributedactorsystemerror.md)
+- [protocol DistributedActorSystemError](./distributedactorsystemerror.md)
   Error protocol to which errors thrown by any `DistributedActorSystem` should conform.
-- [struct LocalTestingDistributedActorSystemError](localtestingdistributedactorsystemerror.md)
+- [struct LocalTestingDistributedActorSystemError](./localtestingdistributedactorsystemerror.md)
 
 
 ---

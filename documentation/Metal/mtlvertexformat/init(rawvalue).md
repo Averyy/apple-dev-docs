@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vertex format from a raw integer value.
 
@@ -10,7 +11,7 @@ Creates a vertex format from a raw integer value.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ init?(rawValue: UInt)
 
 #### Discussion
 
-Use the [`MTLVertexFormat`](mtlvertexformat.md) structure’s type properties, such as [`MTLVertexFormat.uchar4Normalized_bgra`](mtlvertexformat/uchar4normalized_bgra.md), instead of this initializer.
+Use the [`MTLVertexFormat`](../mtlvertexformat.md) structure’s type properties, such as [`MTLVertexFormat.uchar4Normalized_bgra`](./uchar4normalized_bgra.md), instead of this initializer.
 
 ## Parameters
 

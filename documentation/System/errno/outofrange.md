@@ -1,7 +1,8 @@
 # outOfRange
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Numerical result out of range.
 
@@ -22,7 +23,7 @@ static var outOfRange: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ERANGE`.
 
 ## See Also
 
-- [static var outOfDomain: Errno](errno/outofdomain.md)
+### Math Errors
+- [static var outOfDomain: Errno](./outofdomain.md)
   Numerical argument out of domain.
-- [static var overflow: Errno](errno/overflow.md)
+- [static var overflow: Errno](./overflow.md)
   Value too large to be stored in data type.
 
 

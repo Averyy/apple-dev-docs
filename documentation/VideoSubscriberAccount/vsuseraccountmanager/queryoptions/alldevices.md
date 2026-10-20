@@ -1,7 +1,8 @@
 # allDevices
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates fetching user accounts from all the user’s iCloud devices.
 
@@ -17,6 +18,10 @@ A constant that indicates fetching user accounts from all the user’s iCloud de
 
 ```swift
 static var allDevices: VSUserAccountManager.QueryOptions { get }
+```
+
+```c
+VSUserAccountQueryAllDevices
 ```
 
 

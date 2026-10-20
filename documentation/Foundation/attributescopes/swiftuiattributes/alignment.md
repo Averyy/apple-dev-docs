@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal alignment of a paragraph.
 

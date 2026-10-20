@@ -1,7 +1,8 @@
 # emoji
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that yields images in an emoji style.
 

@@ -1,7 +1,8 @@
 # groupContext
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group context associated with this message.
 
@@ -20,13 +21,14 @@ This property is non-`nil` when the message is part of a group conversation.
 
 ## See Also
 
-- [let message: RCSMessage](rcsservice/incomingmessagenotification/message.md)
+### Inspecting notification properties
+- [let message: RCSMessage](./message.md)
   The message contained in this notification.
-- [struct RCSGroupContext](rcsgroupcontext.md)
+- [struct RCSGroupContext](../../rcsgroupcontext.md)
   Structure containing information about a message’s group.
-- [let suggestions: [RCSService.Business.Suggestion]](rcsservice/incomingmessagenotification/suggestions.md)
+- [let suggestions: [RCSService.Business.Suggestion]](./suggestions.md)
   An array of suggestions associated with the message.
-- [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
+- [RCSService.Business.Suggestion](../business/suggestion.md)
   Enumeration representing a suggestion from a business.
 
 

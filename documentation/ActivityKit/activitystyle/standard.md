@@ -1,7 +1,8 @@
 # ActivityStyle.standard
 
 **Framework**: ActivityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -15,7 +16,8 @@ case standard
 
 ## See Also
 
-- [ActivityStyle.transient](activitystyle/transient.md)
+### Style
+- [ActivityStyle.transient](./transient.md)
 
 
 ---

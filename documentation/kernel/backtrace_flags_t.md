@@ -1,14 +1,15 @@
 # backtrace_flags_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum backtrace_flags_t : uint32_t {
     ...
 } backtrace_flags_t;
@@ -17,8 +18,8 @@ typedef enum backtrace_flags_t : uint32_t {
 ## Topics
 
 ### Constants
-- [BTF_KERN_INTERRUPTED](backtrace_flags_t/btf_kern_interrupted.md)
-- [BTF_NONE](backtrace_flags_t/btf_none.md)
+- [BTF_KERN_INTERRUPTED](./backtrace_flags_t/btf_kern_interrupted.md)
+- [BTF_NONE](./backtrace_flags_t/btf_none.md)
 
 
 ---

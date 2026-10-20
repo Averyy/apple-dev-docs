@@ -1,7 +1,8 @@
 # androidApps
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Android apps that are associated with this credential.
 

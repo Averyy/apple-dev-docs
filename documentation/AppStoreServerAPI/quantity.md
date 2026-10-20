@@ -1,7 +1,8 @@
 # quantity
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The number of products or seats the customer purchased.
 
@@ -10,13 +11,13 @@ The number of products or seats the customer purchased.
 
 ## Declaration
 
-```swift
+```
 int32 quantity
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
@@ -24,11 +25,12 @@ For a subscription that a customer buys as a multiseat purchase, this value is t
 
 ## See Also
 
-- [type productId](productid.md)
+### Product information
+- [type productId](./productid.md)
   The unique identifier of the product.
-- [type type](type.md)
+- [type type](./type.md)
   The type of In-App Purchase products you can offer in your app.
-- [type subscriptionGroupIdentifier](subscriptiongroupidentifier.md)
+- [type subscriptionGroupIdentifier](./subscriptiongroupidentifier.md)
   The identifier of the subscription group that the subscription belongs to.
 
 

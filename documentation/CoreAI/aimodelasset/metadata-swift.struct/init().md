@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates metadata with no values set.
 

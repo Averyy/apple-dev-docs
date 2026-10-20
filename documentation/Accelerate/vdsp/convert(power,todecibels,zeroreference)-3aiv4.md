@@ -1,7 +1,8 @@
 # convert(power:toDecibels:zeroReference:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts double-precision power values to decibel values.
 
@@ -11,7 +12,7 @@ Converts double-precision power values to decibel values.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -39,11 +40,12 @@ for (n = 0; n < N; ++n)
 
 ## See Also
 
-- [static func amplitudeToDecibels<U>(U, zeroReference: Double) -> [Double]](vdsp/amplitudetodecibels(_:zeroreference:)-2cgik.md)
+### Converting double-precision power or amplitude values to decibel values
+- [static func amplitudeToDecibels<U>(U, zeroReference: Double) -> [Double]](./amplitudetodecibels%28_,zeroreference%29-2cgik.md)
   Returns double-precision amplitude values converted to decibel values.
-- [static func powerToDecibels<U>(U, zeroReference: Double) -> [Double]](vdsp/powertodecibels(_:zeroreference:)-4b0qz.md)
+- [static func powerToDecibels<U>(U, zeroReference: Double) -> [Double]](./powertodecibels%28_,zeroreference%29-4b0qz.md)
   Returns double-precision power values converted to decibel values.
-- [static func convert<U, V>(amplitude: U, toDecibels: inout V, zeroReference: Double)](vdsp/convert(amplitude:todecibels:zeroreference:)-4io4p.md)
+- [static func convert<U, V>(amplitude: U, toDecibels: inout V, zeroReference: Double)](./convert%28amplitude,todecibels,zeroreference%29-4io4p.md)
   Converts double-precision amplitude values to decibel values.
 
 

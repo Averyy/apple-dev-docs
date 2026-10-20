@@ -1,60 +1,62 @@
 # NXTabletProximityData
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _NXTabletProximityData NXTabletProximityData;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [capabilityMask](nxtabletproximitydata/1575706-capabilitymask.md)
-- [deviceID](nxtabletproximitydata/1575901-deviceid.md)
-- [enterProximity](nxtabletproximitydata/1575725-enterproximity.md)
-- [pointerID](nxtabletproximitydata/1575758-pointerid.md)
-- [pointerSerialNumber](nxtabletproximitydata/1575825-pointerserialnumber.md)
-- [pointerType](nxtabletproximitydata/1575879-pointertype.md)
-- [reserved1](nxtabletproximitydata/1575844-reserved1.md)
-- [systemTabletID](nxtabletproximitydata/1575716-systemtabletid.md)
-- [tabletID](nxtabletproximitydata/1575801-tabletid.md)
-- [uniqueID](nxtabletproximitydata/1575897-uniqueid.md)
-- [vendorID](nxtabletproximitydata/1575894-vendorid.md)
-- [vendorPointerType](nxtabletproximitydata/1575868-vendorpointertype.md)
+- [capabilityMask](./nxtabletproximitydata/api-1575706-capabilitymask.md)
+- [deviceID](./nxtabletproximitydata/api-1575901-deviceid.md)
+- [enterProximity](./nxtabletproximitydata/api-1575725-enterproximity.md)
+- [pointerID](./nxtabletproximitydata/api-1575758-pointerid.md)
+- [pointerSerialNumber](./nxtabletproximitydata/api-1575825-pointerserialnumber.md)
+- [pointerType](./nxtabletproximitydata/api-1575879-pointertype.md)
+- [reserved1](./nxtabletproximitydata/api-1575844-reserved1.md)
+- [systemTabletID](./nxtabletproximitydata/api-1575716-systemtabletid.md)
+- [tabletID](./nxtabletproximitydata/api-1575801-tabletid.md)
+- [uniqueID](./nxtabletproximitydata/api-1575897-uniqueid.md)
+- [vendorID](./nxtabletproximitydata/api-1575894-vendorid.md)
+- [vendorPointerType](./nxtabletproximitydata/api-1575868-vendorpointertype.md)
 
 ## See Also
 
-- [IOHIDButtonModes](iohidbuttonmodes.md)
-- [IOHIDDigitizerStylusData](iohiddigitizerstylusdata.md)
-- [IOHIDDigitizerTouchData](iohiddigitizertouchdata.md)
-- [IOHIDQueueOptionsType](iohidqueueoptionstype.md)
+### HID Types
+- [IOHIDButtonModes](./iohidbuttonmodes.md)
+- [IOHIDDigitizerStylusData](./iohiddigitizerstylusdata.md)
+- [IOHIDDigitizerTouchData](./iohiddigitizertouchdata.md)
+- [IOHIDQueueOptionsType](./iohidqueueoptionstype.md)
   Options for creating a queue via IOHIDLib.
-- [NXByteOrder](nxbyteorder.md)
-- [NXEQElement](nxeqelement.md)
-- [NXEvent](nxevent.md)
-- [NXEventData](nxeventdata.md)
-- [NXEventExt](nxeventext.md)
-- [NXEventExtension](nxeventextension.md)
-- [NXEventPtr](nxeventptr.md)
-- [NXEventSystemDevice](nxeventsystemdevice.md)
-- [NXEventSystemDeviceList](nxeventsystemdevicelist.md)
-- [NXEventSystemInfoData](nxeventsysteminfodata.md)
-- [NXEventSystemInfoType](nxeventsysteminfotype.md)
-- [NXKeyMapping](nxkeymapping.md)
-- [NXMouseButton](nxmousebutton.md)
-- [NXMouseScaling](nxmousescaling.md)
-- [NXParsedKeyMapping](nxparsedkeymapping.md)
-- [NXSwappedDouble](nxswappeddouble.md)
-- [NXSwappedFloat](nxswappedfloat.md)
-- [NXTabletPointData](nxtabletpointdata.md)
-- [NXTabletPointDataPtr](nxtabletpointdataptr.md)
-- [NXTabletProximityDataPtr](nxtabletproximitydataptr.md)
+- [NXByteOrder](./nxbyteorder.md)
+- [NXEQElement](./nxeqelement.md)
+- [NXEvent](./nxevent.md)
+- [NXEventData](./nxeventdata.md)
+- [NXEventExt](./nxeventext.md)
+- [NXEventExtension](./nxeventextension.md)
+- [NXEventPtr](./nxeventptr.md)
+- [NXEventSystemDevice](./nxeventsystemdevice.md)
+- [NXEventSystemDeviceList](./nxeventsystemdevicelist.md)
+- [NXEventSystemInfoData](./nxeventsysteminfodata.md)
+- [NXEventSystemInfoType](./nxeventsysteminfotype.md)
+- [NXKeyMapping](./nxkeymapping.md)
+- [NXMouseButton](./nxmousebutton.md)
+- [NXMouseScaling](./nxmousescaling.md)
+- [NXParsedKeyMapping](./nxparsedkeymapping.md)
+- [NXSwappedDouble](./nxswappeddouble.md)
+- [NXSwappedFloat](./nxswappedfloat.md)
+- [NXTabletPointData](./nxtabletpointdata.md)
+- [NXTabletPointDataPtr](./nxtabletpointdataptr.md)
+- [NXTabletProximityDataPtr](./nxtabletproximitydataptr.md)
 
 
 ---

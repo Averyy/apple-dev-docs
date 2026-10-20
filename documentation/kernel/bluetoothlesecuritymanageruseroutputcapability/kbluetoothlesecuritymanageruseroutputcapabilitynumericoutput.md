@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerUserOutputCapabilityNumericOutput
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerUserOutputCapabilityNumericOutput = 0x02
 ```
 

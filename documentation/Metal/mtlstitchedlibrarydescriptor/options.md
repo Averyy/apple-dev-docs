@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var options: MTLStitchedLibraryOptions { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLStitchedLibraryOptions options;
 ```
 
 

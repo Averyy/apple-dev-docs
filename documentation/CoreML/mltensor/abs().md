@@ -1,7 +1,8 @@
 # abs()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the absolute of the tensor’s elements.
 
@@ -22,9 +23,10 @@ func abs() -> MLTensor
 
 ## See Also
 
-- [func ceil() -> MLTensor](mltensor/ceil.md)
+### Computing the absolute, ceiling and floor
+- [func ceil() -> MLTensor](./ceil%28%29.md)
   Computes the ceiling of the tensor’s elements.
-- [func floor() -> MLTensor](mltensor/floor.md)
+- [func floor() -> MLTensor](./floor%28%29.md)
   Computes the floor of the tensor’s elements.
 
 

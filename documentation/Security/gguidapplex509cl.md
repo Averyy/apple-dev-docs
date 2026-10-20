@@ -1,7 +1,8 @@
 # gGuidAppleX509CL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 let gGuidAppleX509CL: cssm_guid
+```
+
+```c
+extern const CSSM_GUID gGuidAppleX509CL;
 ```
 
 

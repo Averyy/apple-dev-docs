@@ -1,7 +1,8 @@
 # MPSNNLossGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,36 +18,40 @@
 class MPSNNLossGradientNode
 ```
 
+```objc
+@interface MPSNNLossGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](mpsnnlossgradientnode/init(sourcegradient:sourceimage:labels:gradientstate:lossdescriptor:islabelsgradientfilter:).md)
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode?, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](mpsnnlossgradientnode/init(sourcegradient:sourceimage:labels:weights:gradientstate:lossdescriptor:islabelsgradientfilter:)-3rcen.md)
-- [convenience init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](mpsnnlossgradientnode/init(sourcegradient:sourceimage:labels:weights:gradientstate:lossdescriptor:islabelsgradientfilter:)-9eqch.md)
-- [init(sources: [MPSNNImageNode], gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](mpsnnlossgradientnode/init(sources:gradientstate:lossdescriptor:islabelsgradientfilter:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](./mpsnnlossgradientnode/init%28sourcegradient,sourceimage,labels,gradientstate,lossdescriptor,islabelsgradientfilter%29.md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode?, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](./mpsnnlossgradientnode/init%28sourcegradient,sourceimage,labels,weights,gradientstate,lossdescriptor,islabelsgradientfilter%29-3rcen.md)
+- [convenience init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, labels: MPSNNImageNode, weights: MPSNNImageNode, gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](./mpsnnlossgradientnode/init%28sourcegradient,sourceimage,labels,weights,gradientstate,lossdescriptor,islabelsgradientfilter%29-9eqch.md)
+- [init(sources: [MPSNNImageNode], gradientState: MPSNNGradientStateNode?, lossDescriptor: MPSCNNLossDescriptor, isLabelsGradientFilter: Bool)](./mpsnnlossgradientnode/init%28sources,gradientstate,lossdescriptor,islabelsgradientfilter%29.md)
 ### Instance Properties
-- [var delta: Float](mpsnnlossgradientnode/delta.md)
-- [var epsilon: Float](mpsnnlossgradientnode/epsilon.md)
-- [var isLabelsGradientFilter: Bool](mpsnnlossgradientnode/islabelsgradientfilter.md)
-- [var labelSmoothing: Float](mpsnnlossgradientnode/labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpsnnlossgradientnode/losstype.md)
-- [var numberOfClasses: Int](mpsnnlossgradientnode/numberofclasses.md)
-- [var propertyCallBack: (any MPSNNLossCallback)?](mpsnnlossgradientnode/propertycallback.md)
-- [var reduceAcrossBatch: Bool](mpsnnlossgradientnode/reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpsnnlossgradientnode/reductiontype.md)
-- [var weight: Float](mpsnnlossgradientnode/weight.md)
+- [var delta: Float](./mpsnnlossgradientnode/delta.md)
+- [var epsilon: Float](./mpsnnlossgradientnode/epsilon.md)
+- [var isLabelsGradientFilter: Bool](./mpsnnlossgradientnode/islabelsgradientfilter.md)
+- [var labelSmoothing: Float](./mpsnnlossgradientnode/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](./mpsnnlossgradientnode/losstype.md)
+- [var numberOfClasses: Int](./mpsnnlossgradientnode/numberofclasses.md)
+- [var propertyCallBack: (any MPSNNLossCallback)?](./mpsnnlossgradientnode/propertycallback.md)
+- [var reduceAcrossBatch: Bool](./mpsnnlossgradientnode/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](./mpsnnlossgradientnode/reductiontype.md)
+- [var weight: Float](./mpsnnlossgradientnode/weight.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

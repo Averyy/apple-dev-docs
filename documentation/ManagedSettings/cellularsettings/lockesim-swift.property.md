@@ -1,7 +1,8 @@
 # lockESIM
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from changing their eSIM settings.
 
@@ -22,7 +23,8 @@ If your app doesn’t configure this setting, the value is `nil`.
 
 ## See Also
 
-- [static let lockESIM: SettingMetadata<Bool>](cellularsettings/lockesim-swift.type.property.md)
+### Locking the device’s eSIM settings
+- [static let lockESIM: SettingMetadata<Bool>](./lockesim-swift.type.property.md)
   The metadata associated with the constraint that locks the user’s eSIM settings.
 
 

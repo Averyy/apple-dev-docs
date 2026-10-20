@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory that receives the shared networks.
 

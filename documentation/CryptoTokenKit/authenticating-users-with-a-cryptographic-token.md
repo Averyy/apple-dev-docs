@@ -1,6 +1,7 @@
 # Authenticating Users with a Cryptographic Token
 
-**Framework**: CryptoTokenKit
+**Framework**: CryptoTokenKit  
+**Role**: Article
 
 Grant access to user accounts and the keychain by creating a smart card app extension.
 
@@ -22,10 +23,10 @@ To authenticate user logins, the token must contain at least one cryptographic k
 
 Additionally, to use the token for unlocking the keychain, make sure it contains at least one of the following keys:
 
-- A 256-bit elliptic curve key of type [`kSecAttrKeyTypeECSECPrimeRandom`](https://developer.apple.com/documentation/security/ksecattrkeytypeecsecprimerandom). This key must support the [`ecdhKeyExchangeStandard`](https://developer.apple.com/documentation/security/seckeyalgorithm/ecdhkeyexchangestandard) key exchange algorithm.
-- A 2048-, 3072-, or 4096-bit RSA key of type [`kSecAttrKeyTypeRSA`](https://developer.apple.com/documentation/security/ksecattrkeytypersa). This key must support decryption with the [`rsaEncryptionOAEPSHA256`](https://developer.apple.com/documentation/security/seckeyalgorithm/rsaencryptionoaepsha256) algorithm.
+- A 256-bit elliptic curve key of type [`kSecAttrKeyTypeECSECPrimeRandom`](../Security/ksecattrkeytypeecsecprimerandom.md). This key must support the [`ecdhKeyExchangeStandard`](../Security/seckeyalgorithm/ecdhkeyexchangestandard.md) key exchange algorithm.
+- A 2048-, 3072-, or 4096-bit RSA key of type [`kSecAttrKeyTypeRSA`](../Security/ksecattrkeytypersa.md). This key must support decryption with the [`rsaEncryptionOAEPSHA256`](../Security/seckeyalgorithm/rsaencryptionoaepsha256.md) algorithm.
 
-To support an RSA option in either of the above use cases, the token hardware must either implement the specific RSA signature or decryption algorithm that the key supports, or simply implement the raw variant ([`rsaSignatureRaw`](https://developer.apple.com/documentation/security/seckeyalgorithm/rsasignatureraw) for login, or [`rsaEncryptionRaw`](https://developer.apple.com/documentation/security/seckeyalgorithm/rsaencryptionraw) for keychain unlock). When the hardware provides only the raw operation, macOS automatically handles any needed padding.
+To support an RSA option in either of the above use cases, the token hardware must either implement the specific RSA signature or decryption algorithm that the key supports, or simply implement the raw variant ([`rsaSignatureRaw`](../Security/seckeyalgorithm/rsasignatureraw.md) for login, or [`rsaEncryptionRaw`](../Security/seckeyalgorithm/rsaencryptionraw.md) for keychain unlock). When the hardware provides only the raw operation, macOS automatically handles any needed padding.
 
 ##### Create the Smart Card App Extension
 
@@ -33,21 +34,21 @@ When you’re ready to begin coding, use Xcode to create an app extension target
 
 For example, for a token extension that you name `TokenExtension`, Xcode produces the target plus an entitlements file, an `Info.plist` file, and the three source files in a new folder within the project:
 
-![Screenshot of Xcode showing the target and files generated from the smart card extension template.](/images/com.apple.cryptotokenkit/media-2940047@2x.png)
+![Screenshot of Xcode showing the target and files generated from the smart card extension template.](https://developer.apple.com/tutorials/images/com.apple.cryptotokenkit/media-2940047@2x.png)
 
-For more information about working with app extensions in general, see [`App Extensions`](https://developer.apple.comhttps://developer.apple.com/app-extensions/).
+For more information about working with app extensions in general, see [App Extensions](https://developer.apple.com/app-extensions/).
 
 > **Note**:  The host app for this kind of extension typically contains no functionality. Instead, it exists only as a delivery mechanism for the extension.
 
-A smart card app extension has no UI component. The system handles all user interaction associated with authenticating the user. Instead, your `TokenDriver` class—derived from the [`TKSmartCardTokenDriver`](tksmartcardtokendriver.md) class—acts as the entry point for the extension. More precisely, the `NSExtensionAttributes` subdictionary of the `NSExtension` dictionary in the `Info.plist` file has a key `com.apple.ctk.driver-class` that names the entry point class. Xcode sets this for you as part of the template:
+A smart card app extension has no UI component. The system handles all user interaction associated with authenticating the user. Instead, your `TokenDriver` class—derived from the [`TKSmartCardTokenDriver`](./tksmartcardtokendriver.md) class—acts as the entry point for the extension. More precisely, the `NSExtensionAttributes` subdictionary of the `NSExtension` dictionary in the `Info.plist` file has a key `com.apple.ctk.driver-class` that names the entry point class. Xcode sets this for you as part of the template:
 
-![Screenshot of Xcode showing the Info.plist file of the TokenExtension, highlighting the driver class item.](/images/com.apple.cryptotokenkit/media-2940045@2x.png)
+![Screenshot of Xcode showing the Info.plist file of the TokenExtension, highlighting the driver class item.](https://developer.apple.com/tutorials/images/com.apple.cryptotokenkit/media-2940045@2x.png)
 
-You supply functionality for the `Token` class (derived from the [`TKSmartCardToken`](tksmartcardtoken.md) class) and `TokenSession` class (derived from the [`TKSmartCardTokenSession`](tksmartcardtokensession.md) class) that is specific to the token hardware you are supporting. These pieces work together to form the app extension:
+You supply functionality for the `Token` class (derived from the [`TKSmartCardToken`](./tksmartcardtoken.md) class) and `TokenSession` class (derived from the [`TKSmartCardTokenSession`](./tksmartcardtokensession.md) class) that is specific to the token hardware you are supporting. These pieces work together to form the app extension:
 
-![Diagram showing the interconnections between the user, authentication services, your app extension, and the external smart card.](/images/com.apple.cryptotokenkit/media-2940884@2x.png)
+![Diagram showing the interconnections between the user, authentication services, your app extension, and the external smart card.](https://developer.apple.com/tutorials/images/com.apple.cryptotokenkit/media-2940884@2x.png)
 
-##### Register the Extension with Securityagent
+##### Register the Extension with SecurityAgent
 
 To activate the app extension and make the token available to the system for authentication, you launch the extension’s hosting app as the `_securityagent` user:
 
@@ -61,13 +62,14 @@ The hosting app may in fact do nothing more than exit cleanly, but the act of ru
 
 ## See Also
 
-- [Configuring Smart Card Authentication](configuring-smart-card-authentication.md)
+### Smart Card App Extensions
+- [Configuring Smart Card Authentication](./configuring-smart-card-authentication.md)
   Set preferences for smart card authentication operations, including those on managed devices.
-- [class TKSmartCardTokenDriver](tksmartcardtokendriver.md)
+- [class TKSmartCardTokenDriver](./tksmartcardtokendriver.md)
   The driver that acts as an entry point for smart card app extensions.
-- [class TKSmartCardToken](tksmartcardtoken.md)
+- [class TKSmartCardToken](./tksmartcardtoken.md)
   A representation of a smart card based cryptographic token.
-- [class TKSmartCardTokenSession](tksmartcardtokensession.md)
+- [class TKSmartCardTokenSession](./tksmartcardtokensession.md)
   A token session that is based on a smart card token.
 
 

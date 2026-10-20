@@ -1,7 +1,8 @@
 # mostRecentSnapshot
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera’s most recent snapshot.
 
@@ -19,11 +20,16 @@ The camera’s most recent snapshot.
 var mostRecentSnapshot: HMCameraSnapshot? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) HMCameraSnapshot * mostRecentSnapshot;
+```
+
 ## See Also
 
-- [func takeSnapshot()](hmcamerasnapshotcontrol/takesnapshot.md)
+### Taking snapshots
+- [func takeSnapshot()](./takesnapshot%28%29.md)
   Takes an image snapshot.
-- [class HMCameraSnapshot](hmcamerasnapshot.md)
+- [class HMCameraSnapshot](../hmcamerasnapshot.md)
   An object that represents a snapshot taken from a camera.
 
 

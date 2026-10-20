@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.TextualContextAttribute.TextualContext.spreadsheet
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text used in a grid of data, like in the Numbers app.
 

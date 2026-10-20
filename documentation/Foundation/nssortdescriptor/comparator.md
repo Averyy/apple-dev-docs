@@ -1,7 +1,8 @@
 # comparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The comparator for the sort descriptor.
 
@@ -20,19 +21,24 @@ The comparator for the sort descriptor.
 var comparator: Comparator { get }
 ```
 
+```objc
+@property (readonly) NSComparator comparator;
+```
+
 #### Discussion
 
-Call this property only for sort descriptors initialized with [`init(key:ascending:comparator:)`](nssortdescriptor/init(key:ascending:comparator:).md).
+Call this property only for sort descriptors initialized with [`init(key:ascending:comparator:)`](./init%28key,ascending,comparator%29.md).
 
 ## See Also
 
-- [var ascending: Bool](nssortdescriptor/ascending.md)
+### Getting Information About a Sort Descriptor
+- [var ascending: Bool](./ascending.md)
   A Boolean value that indicates whether the receiver specifies sorting in ascending order.
-- [var key: String?](nssortdescriptor/key.md)
+- [var key: String?](./key.md)
   The key that specifies the property to compare during sorting.
-- [var keyPath: AnyKeyPath?](nssortdescriptor/keypath.md)
+- [var keyPath: AnyKeyPath?](./keypath.md)
   The key path that specifies the property to compare during sorting.
-- [var selector: Selector?](nssortdescriptor/selector.md)
+- [var selector: Selector?](./selector.md)
   The selector for comparing objects.
 
 

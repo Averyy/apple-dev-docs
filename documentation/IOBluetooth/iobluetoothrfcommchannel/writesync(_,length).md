@@ -1,17 +1,22 @@
 # writeSync(_:length:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a block of data in the channel synchronously.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func writeSync(_ data: UnsafeMutableRawPointer!, length: UInt16) -> IOReturn
+```
+
+```objc
+- (IOReturn) writeSync:(void *) data length:(UInt16) length;
 ```
 
 #### Return Value

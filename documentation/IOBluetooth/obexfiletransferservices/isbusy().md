@@ -1,17 +1,22 @@
 # isBusy()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the action state of the module
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isBusy() -> Bool
+```
+
+```objc
+- (BOOL) isBusy;
 ```
 
 #### Return Value

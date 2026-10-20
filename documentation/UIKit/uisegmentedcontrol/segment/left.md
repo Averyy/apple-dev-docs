@@ -1,16 +1,17 @@
 # UISegmentedControl.Segment.left
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The capped, leftmost segment.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@ The capped, leftmost segment.
 case left
 ```
 
+```c
+UISegmentedControlSegmentLeft
+```
+
 #### Discussion
 
-Applies only when [`numberOfSegments`](uisegmentedcontrol/numberofsegments.md) is greater than 1.
+Applies only when [`numberOfSegments`](../numberofsegments.md) is greater than 1.
 
 ## See Also
 
-- [UISegmentedControl.Segment.any](uisegmentedcontrol/segment/any.md)
+### Constants
+- [UISegmentedControl.Segment.any](./any.md)
   Specifies any segment.
-- [UISegmentedControl.Segment.center](uisegmentedcontrol/segment/center.md)
+- [UISegmentedControl.Segment.center](./center.md)
   Any segment between the left and rightmost segments.
-- [UISegmentedControl.Segment.right](uisegmentedcontrol/segment/right.md)
+- [UISegmentedControl.Segment.right](./right.md)
   The capped, rightmost segment.
-- [UISegmentedControl.Segment.alone](uisegmentedcontrol/segment/alone.md)
+- [UISegmentedControl.Segment.alone](./alone.md)
   The standalone segment, capped on both ends.
 
 

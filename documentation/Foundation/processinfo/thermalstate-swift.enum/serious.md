@@ -1,7 +1,8 @@
 # ProcessInfo.ThermalState.serious
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The thermal state is high.
 
@@ -20,6 +21,10 @@ The thermal state is high.
 case serious
 ```
 
+```c
+NSProcessInfoThermalStateSerious
+```
+
 #### Discussion
 
 The system takes moderate steps to reduce thermal state, which reduces performance. Fans are running at maximum speed.
@@ -32,15 +37,16 @@ Reduce usage of resources that generate heat and consume battery, for example:
 - Reduce the target framerate from 60 FPS to 30 FPS
 - Reduce the level of detail in rendered content by using fewer particles or lower-resolution textures
 
-For more details on how to reduce your app’s use of these resources, see [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
+For more details on how to reduce your app’s use of these resources, see [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
 ## See Also
 
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
+### Constants
+- [ProcessInfo.ThermalState.nominal](./nominal.md)
   The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
+- [ProcessInfo.ThermalState.fair](./fair.md)
   The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.critical](processinfo/thermalstate-swift.enum/critical.md)
+- [ProcessInfo.ThermalState.critical](./critical.md)
   The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
 

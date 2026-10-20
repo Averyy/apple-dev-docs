@@ -1,7 +1,8 @@
 # floatValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value of the string as a `float`.
 
@@ -20,25 +21,31 @@ The floating-point value of the string as a `float`.
 var floatValue: Float { get }
 ```
 
+```objc
+@property (readonly) float floatValue;
+```
+
 #### Discussion
 
 This property doesn’t include whitespace at the beginning of the string. This property is `HUGE_VAL` or `–HUGE_VAL` on overflow, `0.0` on underflow. This property is `0.0` if the string doesn’t begin with a valid text representation of a floating-point number.
 
-This method uses formatting information stored in the non-localized value; use an [`Scanner`](scanner.md) object for localized scanning of numeric values from a string.
+This method uses formatting information stored in the non-localized value; use an [`Scanner`](../scanner.md) object for localized scanning of numeric values from a string.
 
 ## See Also
 
-- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](scanner/scanfloat(_:).md)
+### Related Documentation
+- [func scanFloat(UnsafeMutablePointer<Float>?) -> Bool](../scanner/scanfloat%28_%29.md)
   Scans for a float value, returning a found value by reference.
-- [var doubleValue: Double](nsstring/doublevalue.md)
+### Getting Numeric Values
+- [var doubleValue: Double](./doublevalue.md)
   The floating-point value of the string as a `double`.
-- [var intValue: Int32](nsstring/intvalue.md)
+- [var intValue: Int32](./intvalue.md)
   The integer value of the string.
-- [var integerValue: Int](nsstring/integervalue.md)
+- [var integerValue: Int](./integervalue.md)
   The `NSInteger` value of the string.
-- [var longLongValue: Int64](nsstring/longlongvalue.md)
+- [var longLongValue: Int64](./longlongvalue.md)
   The `long long` value of the string.
-- [var boolValue: Bool](nsstring/boolvalue.md)
+- [var boolValue: Bool](./boolvalue.md)
   The Boolean value of the string.
 
 

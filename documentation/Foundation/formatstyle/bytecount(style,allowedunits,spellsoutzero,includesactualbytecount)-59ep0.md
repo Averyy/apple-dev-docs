@@ -1,7 +1,8 @@
 # byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to format a data storage value.
 
@@ -20,13 +21,15 @@ Returns a format style to format a data storage value.
 static func byteCount(style: ByteCountFormatStyle.Style, allowedUnits: ByteCountFormatStyle.Units = .all, spellsOutZero: Bool = true, includesActualByteCount: Bool = false) -> Self
 ```
 
+Available when `Self` is `ByteCountFormatStyle`.
+
 #### Return Value
 
 A format style for formatting a measurement of data storage, customized with the provided behaviors.
 
 #### Discussion
 
-Use this type method when the call point allows the use of [`ByteCountFormatStyle`](bytecountformatstyle.md). You typically do this when calling the [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73) method of [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) values that represent byte counts, as seen here:
+Use this type method when the call point allows the use of [`ByteCountFormatStyle`](../bytecountformatstyle.md). You typically do this when calling the [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md) method of [`BinaryInteger`](../../Swift/binaryinteger.md) values that represent byte counts, as seen here:
 
 ```swift
 let count: Int64 = 1024
@@ -42,11 +45,12 @@ let formatted = count.formatted(.byteCount(style: .memory)) // "1 kB"
 
 ## See Also
 
-- [struct ByteCountFormatStyle](bytecountformatstyle.md)
+### Applying byte-count styles
+- [struct ByteCountFormatStyle](../bytecountformatstyle.md)
   A format style that provides string representations of byte counts.
-- [static func byteCount(style: Measurement<UnitInformationStorage>.FormatStyle.ByteCount.Style, allowedUnits: Measurement<UnitInformationStorage>.FormatStyle.ByteCount.Units, spellsOutZero: Bool, includesActualByteCount: Bool) -> Self](formatstyle/bytecount(style:allowedunits:spellsoutzero:includesactualbytecount:)-ev0u.md)
+- [static func byteCount(style: Measurement<UnitInformationStorage>.FormatStyle.ByteCount.Style, allowedUnits: Measurement<UnitInformationStorage>.FormatStyle.ByteCount.Units, spellsOutZero: Bool, includesActualByteCount: Bool) -> Self](./bytecount%28style,allowedunits,spellsoutzero,includesactualbytecount%29-ev0u.md)
   Returns a format style to format a data storage value represented with Foundation’s measurement type.
-- [Measurement.FormatStyle.ByteCount](measurement/formatstyle/bytecount.md)
+- [Measurement.FormatStyle.ByteCount](../measurement/formatstyle/bytecount.md)
   A format style that provides string representations of byte counts, expressed as measurements of information storage.
 
 

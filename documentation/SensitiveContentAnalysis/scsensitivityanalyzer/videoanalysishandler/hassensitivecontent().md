@@ -1,7 +1,8 @@
 # hasSensitiveContent()
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a result that indicates if the video file contains sensitive content.
 

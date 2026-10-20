@@ -1,7 +1,8 @@
 # maximumAbsoluteValue
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fitted maximum absolute value.
 

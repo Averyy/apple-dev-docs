@@ -1,7 +1,8 @@
 # triggerPendingUpload(completionHandler:)
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers an upload of the directory for any changes that were pending.
 
@@ -15,7 +16,15 @@ Triggers an upload of the directory for any changes that were pending.
 ## Declaration
 
 ```swift
+func triggerPendingUpload(completionHandler completion: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func triggerPendingUpload() async -> Bool
+```
+
+```objc
+- (void) triggerPendingUploadWithCompletionHandler:(void (^)(BOOL )) completion;
 ```
 
 #### Discussion
@@ -24,7 +33,8 @@ Calls the completion block with `YES` if there were pending uploads; otherwise w
 
 ## See Also
 
-- [func close()](gssynceddirectory/close.md)
+### Finishing with a directory
+- [func close()](./close%28%29.md)
   Closes the directory, and resumes syncing the directory to the cloud.
 
 

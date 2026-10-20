@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The most recently used game controller.
 
@@ -19,15 +20,20 @@ The most recently used game controller.
 class var current: GCController? { get }
 ```
 
+```objc
+@property (class, atomic, strong, readonly, nullable) GCController * current;
+```
+
 #### Discussion
 
 Use this property for a single-player game when you don’t need to distinguish the input from multiple controllers simultaneously.
 
 ## See Also
 
-- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
+### Handling multiple controllers
+- [static let GCControllerDidBecomeCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md)
   A notification that posts when a controller becomes the current controller.
-- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
+- [static let GCControllerDidStopBeingCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md)
   A notification that posts when a controller stops being the current controller.
 
 

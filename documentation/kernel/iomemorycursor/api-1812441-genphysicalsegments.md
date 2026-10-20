@@ -7,7 +7,7 @@ Generates a physical scatter/gather list given a memory descriptor.
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 genPhysicalSegments( 
  IOMemoryDescriptor *descriptor, 
  IOByteCount fromPosition, 
@@ -17,7 +17,7 @@ virtual UInt32 genPhysicalSegments(
  IOByteCount *transferSize = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 If the descriptor is exhausted of memory, a zero is returned, otherwise the number of segments that were filled in is returned.
 
@@ -36,9 +36,10 @@ Generates a list of physical segments from the given memory descriptor, relative
 
 ## See Also
 
-- [initWithSpecification](iomemorycursor/1812445-initwithspecification.md)
+### Miscellaneous
+- [initWithSpecification](./api-1812445-initwithspecification.md)
   Primary initializer for the IOMemoryCursor class.
-- [withSpecification](iomemorycursor/1812453-withspecification.md)
+- [withSpecification](./api-1812453-withspecification.md)
   Creates and initializes an IOMemoryCursor in one operation.
 
 

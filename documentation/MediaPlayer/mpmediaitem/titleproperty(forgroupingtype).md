@@ -1,7 +1,8 @@
 # titleProperty(forGroupingType:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Obtains the title key for a specified grouping type.
 
@@ -15,6 +16,10 @@ Obtains the title key for a specified grouping type.
 
 ```swift
 class func titleProperty(forGroupingType groupingType: MPMediaGrouping) -> String
+```
+
+```objc
++ (NSString *) titlePropertyForGroupingType:(MPMediaGrouping) groupingType;
 ```
 
 #### Return Value
@@ -37,7 +42,7 @@ let titleIDKey = [MPMediaItem.persistentIDProperty(forGroupingType: MPMediaGroup
 NSString *titleIDKey = [MPMediaItem titlePropertyForGroupingType: MPMediaGroupingAlbum];
 ```
 
-You could then obtain the specific title that you want by using the [`value(forProperty:)`](mpmediaentity/value(forproperty:).md) method. [`MPMediaGrouping`](mpmediagrouping.md) describes grouping keys.
+You could then obtain the specific title that you want by using the [`value(forProperty:)`](../mpmediaentity/value%28forproperty%29.md) method. [`MPMediaGrouping`](../mpmediagrouping.md) describes grouping keys.
 
 ## Parameters
 
@@ -45,7 +50,8 @@ You could then obtain the specific title that you want by using the [`value(forP
 
 ## See Also
 
-- [class func persistentIDProperty(forGroupingType: MPMediaGrouping) -> String](mpmediaitem/persistentidproperty(forgroupingtype:).md)
+### Obtaining group properties
+- [class func persistentIDProperty(forGroupingType: MPMediaGrouping) -> String](./persistentidproperty%28forgroupingtype%29.md)
   Obtains the persistent identifier key for a specified grouping type.
 
 

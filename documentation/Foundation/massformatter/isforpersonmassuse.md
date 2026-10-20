@@ -1,7 +1,8 @@
 # isForPersonMassUse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the resulting string represents a person’s mass.
 
@@ -20,27 +21,32 @@ A Boolean value that indicates whether the resulting string represents a person�
 var isForPersonMassUse: Bool { get set }
 ```
 
+```objc
+@property (getter=isForPersonMassUse) BOOL forPersonMassUse;
+```
+
 #### Discussion
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the value passed to [`string(fromKilograms:)`](massformatter/string(fromkilograms:).md) or [`unitString(fromKilograms:usedUnit:)`](massformatter/unitstring(fromkilograms:usedunit:).md) is a person’s mass; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). By default, this property returns [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the value passed to [`string(fromKilograms:)`](./string%28fromkilograms%29.md) or [`unitString(fromKilograms:usedUnit:)`](./unitstring%28fromkilograms,usedunit%29.md) is a person’s mass; otherwise, [`false`](../../Swift/false.md). By default, this property returns [`false`](../../Swift/false.md).
 
-The mass formatter uses this property when determining the best unit for a given locale (for example, in the [`string(fromKilograms:)`](massformatter/string(fromkilograms:).md) method).
+The mass formatter uses this property when determining the best unit for a given locale (for example, in the [`string(fromKilograms:)`](./string%28fromkilograms%29.md) method).
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](massformatter/getobjectvalue(_:for:errordescription:).md)
+### Formatting Mass Strings
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSMassFormatter` class.
-- [var numberFormatter: NumberFormatter!](massformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the numbers in a mass strings.
-- [func string(fromKilograms: Double) -> String](massformatter/string(fromkilograms:).md)
+- [func string(fromKilograms: Double) -> String](./string%28fromkilograms%29.md)
   Returns a mass string for the provided value.
-- [func string(fromValue: Double, unit: MassFormatter.Unit) -> String](massformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: MassFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted mass string for the given value and unit.
-- [func unitString(fromKilograms: Double, usedUnit: UnsafeMutablePointer<MassFormatter.Unit>?) -> String](massformatter/unitstring(fromkilograms:usedunit:).md)
+- [func unitString(fromKilograms: Double, usedUnit: UnsafeMutablePointer<MassFormatter.Unit>?) -> String](./unitstring%28fromkilograms,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: MassFormatter.Unit) -> String](massformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: MassFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](massformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

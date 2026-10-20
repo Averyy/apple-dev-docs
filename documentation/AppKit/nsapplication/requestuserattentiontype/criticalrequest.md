@@ -1,17 +1,22 @@
 # NSApplication.RequestUserAttentionType.criticalRequest
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user attention request is a critical request.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case criticalRequest
+```
+
+```c
+NSCriticalRequest
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The dock icon will bounce until either the app becomes active or the request is 
 
 ## See Also
 
-- [NSApplication.RequestUserAttentionType.informationalRequest](nsapplication/requestuserattentiontype/informationalrequest.md)
+### Constants
+- [NSApplication.RequestUserAttentionType.informationalRequest](./informationalrequest.md)
   The user attention request is an informational request.
 
 

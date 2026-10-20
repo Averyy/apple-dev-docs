@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that marks the bottom edge of the view.
 
@@ -22,15 +23,15 @@ static let bottom: VerticalAlignment
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Aligning views within a stack](../aligning-views-within-a-stack.md)
 
 #### Discussion
 
 Use this guide to align the bottom edges of views:
 
-![A box that contains the word, Bottom. A horizontal](/images/com.apple.SwiftUI/VerticalAlignment-bottom-1-iOS@2x.png)
+![A box that contains the word, Bottom. A horizontal](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/VerticalAlignment-bottom-1-iOS@2x.png)
 
-The following code generates the image above using an [`HStack`](hstack.md):
+The following code generates the image above using an [`HStack`](../hstack.md):
 
 ```swift
 struct VerticalAlignmentBottom: View {
@@ -46,13 +47,14 @@ struct VerticalAlignmentBottom: View {
 
 ## See Also
 
-- [static let top: VerticalAlignment](verticalalignment/top.md)
+### Getting guides
+- [static let top: VerticalAlignment](./top.md)
   A guide that marks the top edge of the view.
-- [static let center: VerticalAlignment](verticalalignment/center.md)
+- [static let center: VerticalAlignment](./center.md)
   A guide that marks the vertical center of the view.
-- [static let firstTextBaseline: VerticalAlignment](verticalalignment/firsttextbaseline.md)
+- [static let firstTextBaseline: VerticalAlignment](./firsttextbaseline.md)
   A guide that marks the top-most text baseline in a view.
-- [static let lastTextBaseline: VerticalAlignment](verticalalignment/lasttextbaseline.md)
+- [static let lastTextBaseline: VerticalAlignment](./lasttextbaseline.md)
   A guide that marks the bottom-most text baseline in a view.
 
 

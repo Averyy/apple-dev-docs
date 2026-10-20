@@ -1,7 +1,8 @@
 # init(version:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a library containing all node definitions supported by RealityKit for the given library version.
 

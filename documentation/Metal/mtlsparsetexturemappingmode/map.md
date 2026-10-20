@@ -1,7 +1,8 @@
 # MTLSparseTextureMappingMode.map
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request to map sparse tiles from the heap to a region in the texture.
 
@@ -19,9 +20,14 @@ A request to map sparse tiles from the heap to a region in the texture.
 case map
 ```
 
+```c
+MTLSparseTextureMappingModeMap
+```
+
 ## See Also
 
-- [MTLSparseTextureMappingMode.unmap](mtlsparsetexturemappingmode/unmap.md)
+### Specifying the mapping mode
+- [MTLSparseTextureMappingMode.unmap](./unmap.md)
   A request to remove any mappings for a region in the texture.
 
 

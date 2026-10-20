@@ -1,17 +1,24 @@
 # prepareOpenGL()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Used by subclasses to initialize OpenGL state.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
 ```swift
 func prepareOpenGL()
+```
+
+```objc
+- (void) prepareOpenGL;
 ```
 
 #### Discussion
@@ -20,10 +27,11 @@ This method is called only once after the OpenGL context is made the current con
 
 ## See Also
 
-- [func clearGLContext()](nsopenglview/clearglcontext.md)
-  Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the view.
-- [var openGLContext: NSOpenGLContext?](nsopenglview/openglcontext.md)
-  The [`NSOpenGLContext`](nsopenglcontext.md) object associated with the receiver.
+### Managing the NSOpenGLContext
+- [func clearGLContext()](./clearglcontext%28%29.md)
+  Releases the [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the view.
+- [var openGLContext: NSOpenGLContext?](./openglcontext.md)
+  The [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the receiver.
 
 
 ---

@@ -1,7 +1,8 @@
 # CSSM_WORDID_SYSTEM
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_WORDID_SYSTEM: Int { get }
+```
+
+```c
+CSSM_WORDID_SYSTEM
 ```
 
 

@@ -1,7 +1,8 @@
 # unownedExecutor
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optimized, unonwned reference to the model actor’s executor.
 
@@ -24,7 +25,8 @@ var unownedExecutor: UnownedSerialExecutor { get }
 
 ## See Also
 
-- [var modelExecutor: any ModelExecutor](modelactor/modelexecutor.md)
+### Accessing the executors
+- [var modelExecutor: any ModelExecutor](./modelexecutor.md)
   The executor that coordinates access to the model actor.
 
 

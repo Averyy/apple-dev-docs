@@ -1,7 +1,8 @@
 # deriveSharedSecret(for:method:context:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Derive a unique, high-entropy shared secret for this network connection, which can be used to pair and setup security for higher layer network protocols like TLS or IPSec without additional user action or entropy input.
 
@@ -22,7 +23,7 @@ A shared secret unique to the protocol, connection, and context supplied, or `ni
 
 #### Discussion
 
-The shared secret can be used to authenticate a [`PAKE`](https://developer.apple.comhttps://en.wikipedia.org/wiki/Password-authenticated_key_agreement) like SPAKE2, which is then used to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
+The shared secret can be used to authenticate a [PAKE](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement) like SPAKE2, which is then used to pair and derive long-term asymmetric keys for authentication and encryption of the upper-layer network protocol.
 
 Both sides of a connection will derive the same shared secret value if the same connection and input parameters are used:
 

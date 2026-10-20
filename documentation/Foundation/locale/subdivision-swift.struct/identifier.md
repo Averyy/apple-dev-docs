@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subdivision’s Unicode identifier.
 

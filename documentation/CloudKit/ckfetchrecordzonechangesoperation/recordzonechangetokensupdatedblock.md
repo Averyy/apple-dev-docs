@@ -1,7 +1,8 @@
 # recordZoneChangeTokensUpdatedBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when the change token updates.
 
@@ -20,6 +21,10 @@ The closure to execute when the change token updates.
 var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?) -> Void)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) void (^recordZoneChangeTokensUpdatedBlock)(CKRecordZoneID *recordZoneID, CKServerChangeToken *serverChangeToken, NSData *clientChangeTokenData);
+```
+
 #### Discussion
 
 The closure returns no value and takes the following parameters:
@@ -34,13 +39,14 @@ Set this property before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordzonechangesoperation/recordchangedblock.md)
+### Processing the Zone Change Operation Results
+- [var recordChangedBlock: ((CKRecord) -> Void)?](./recordchangedblock.md)
   The closure to execute with the contents of a changed record.
-- [var recordWithIDWasDeletedBlock: ((CKRecord.ID, CKRecord.RecordType) -> Void)?](ckfetchrecordzonechangesoperation/recordwithidwasdeletedblock-3z14c.md)
+- [var recordWithIDWasDeletedBlock: ((CKRecord.ID, CKRecord.RecordType) -> Void)?](./recordwithidwasdeletedblock-3z14c.md)
   The closure to execute when a record no longer exists.
-- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/recordzonefetchcompletionblock.md)
+- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](./recordzonefetchcompletionblock.md)
   The closure to execute when a record zone’s fetch finishes.
-- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/fetchrecordzonechangescompletionblock.md)
+- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](./fetchrecordzonechangescompletionblock.md)
   The closure to execute when the operation finishes.
 
 

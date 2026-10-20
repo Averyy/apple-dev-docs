@@ -1,7 +1,8 @@
 # configuration(shielding:in:)
 
 **Framework**: Managed Settings UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a configuration to use for a shield that covers a website because of its category.
 
@@ -27,7 +28,8 @@ The shield to display.
 
 ## See Also
 
-- [func configuration(shielding: WebDomain) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:)-18i24.md)
+### Styling a website shield
+- [func configuration(shielding: WebDomain) -> ShieldConfiguration](./configuration%28shielding%29-18i24.md)
   Requests a configuration to use for a shield that covers a website.
 
 

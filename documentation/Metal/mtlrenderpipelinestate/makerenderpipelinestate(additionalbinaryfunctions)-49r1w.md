@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new render pipeline state by adding binary functions to each stage of this pipeline state.
@@ -18,6 +19,10 @@ Creates a new render pipeline state by adding binary functions to each stage of 
 
 ```swift
 func makeRenderPipelineState(additionalBinaryFunctions binaryFunctionsDescriptor: MTL4RenderPipelineBinaryFunctionsDescriptor) throws -> any MTLRenderPipelineState
+```
+
+```objc
+- (id<MTLRenderPipelineState>) newRenderPipelineStateWithBinaryFunctions:(MTL4RenderPipelineBinaryFunctionsDescriptor *) binaryFunctionsDescriptor error:(NSError **) error;
 ```
 
 #### Return Value

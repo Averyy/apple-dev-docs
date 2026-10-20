@@ -1,7 +1,8 @@
 # CMSampleBufferCreateCopyWithNewTiming(allocator:sampleBuffer:sampleTimingEntryCount:sampleTimingArray:sampleBufferOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a copy of a sample buffer with new timing information.
 
@@ -20,9 +21,13 @@ Creates a copy of a sample buffer with new timing information.
 func CMSampleBufferCreateCopyWithNewTiming(allocator: CFAllocator?, sampleBuffer originalSBuf: CMSampleBuffer, sampleTimingEntryCount numSampleTimingEntries: CMItemCount, sampleTimingArray: UnsafePointer<CMSampleTimingInfo>?, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSampleBufferCreateCopyWithNewTiming(CFAllocatorRef allocator, CMSampleBufferRef originalSBuf, CMItemCount numSampleTimingEntries, const CMSampleTimingInfo *sampleTimingArray, CMSampleBufferRef*sampleBufferOut);
+```
+
 #### Return Value
 
-A result code. See [`Sample Buffer Error Codes`](sample-buffer-errors.md).
+A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
 #### Discussion
 
@@ -40,9 +45,10 @@ All parameters are copied; on return, the caller can release them, free them, or
 
 ## See Also
 
-- [func CMSampleBufferCreateCopy(allocator: CFAllocator?, sampleBuffer: CMSampleBuffer, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](cmsamplebuffercreatecopy(allocator:samplebuffer:samplebufferout:).md)
+### Copying Sample Buffers
+- [func CMSampleBufferCreateCopy(allocator: CFAllocator?, sampleBuffer: CMSampleBuffer, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmsamplebuffercreatecopy%28allocator,samplebuffer,samplebufferout%29.md)
   Creates a copy of a sample buffer.
-- [func CMSampleBufferCopySampleBufferForRange(allocator: CFAllocator?, sampleBuffer: CMSampleBuffer, sampleRange: CFRange, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](cmsamplebuffercopysamplebufferforrange(allocator:samplebuffer:samplerange:samplebufferout:).md)
+- [func CMSampleBufferCopySampleBufferForRange(allocator: CFAllocator?, sampleBuffer: CMSampleBuffer, sampleRange: CFRange, sampleBufferOut: UnsafeMutablePointer<CMSampleBuffer?>) -> OSStatus](./cmsamplebuffercopysamplebufferforrange%28allocator,samplebuffer,samplerange,samplebufferout%29.md)
   Creates a sample buffer that contains a range of samples from an existing sample buffer.
 
 

@@ -1,7 +1,8 @@
 # kCMIOSelectorControlClassID
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,16 @@
 var kCMIOSelectorControlClassID: Int { get }
 ```
 
+```c
+kCMIOSelectorControlClassID
+```
+
 ## See Also
 
-- [var kCMIOBooleanControlClassID: Int](kcmiobooleancontrolclassid.md)
-- [var kCMIOControlClassID: Int](kcmiocontrolclassid.md)
-- [var kCMIOFeatureControlClassID: Int](kcmiofeaturecontrolclassid.md)
+### Constants
+- [var kCMIOBooleanControlClassID: Int](./kcmiobooleancontrolclassid.md)
+- [var kCMIOControlClassID: Int](./kcmiocontrolclassid.md)
+- [var kCMIOFeatureControlClassID: Int](./kcmiofeaturecontrolclassid.md)
 
 
 ---

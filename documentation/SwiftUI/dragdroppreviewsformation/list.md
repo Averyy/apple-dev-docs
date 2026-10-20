@@ -1,7 +1,8 @@
 # list
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Drag images are laid out vertically, non-overlapping, and the left edges are aligned.
 

@@ -1,7 +1,8 @@
 # CVSenselArrayPattern
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Pattern indicating sensel arrangement.
 
@@ -23,36 +24,37 @@ enum CVSenselArrayPattern
 ## Topics
 
 ### Enumeration Cases
-- [CVSenselArrayPattern.bayerBGGR](cvsenselarraypattern/bayerbggr.md)
+- [CVSenselArrayPattern.bayerBGGR](./cvsenselarraypattern/bayerbggr.md)
   Top-left sensel of the frame is blue-filtered.
-- [CVSenselArrayPattern.bayerGBRG](cvsenselarraypattern/bayergbrg.md)
+- [CVSenselArrayPattern.bayerGBRG](./cvsenselarraypattern/bayergbrg.md)
   Top-left sensel of the frame is green-filtered, with the top row alternating between green and blue-filtered sensels.
-- [CVSenselArrayPattern.bayerGRBG](cvsenselarraypattern/bayergrbg.md)
+- [CVSenselArrayPattern.bayerGRBG](./cvsenselarraypattern/bayergrbg.md)
   Top-left sensel of the frame is green-filtered, with the top row alternating between green and red-filtered sensels.
-- [CVSenselArrayPattern.bayerRGGB](cvsenselarraypattern/bayerrggb.md)
+- [CVSenselArrayPattern.bayerRGGB](./cvsenselarraypattern/bayerrggb.md)
   Top-left sensel of the frame is red-filtered.
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](./cvattachmentvaluerepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+### Data Types
+- [struct CVPixelFormatDescription](./cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
-- [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
+- [struct CVFillExtendedPixelsCallBackData](./cvfillextendedpixelscallbackdata.md)
   A structure for holding information that describes a custom extended pixel fill algorithm.
-- [struct CVPixelFormatType](cvpixelformattype.md)
+- [struct CVPixelFormatType](./cvpixelformattype.md)
   Identifier for a pixel format type
-- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+- [struct CVSenselSitingOffsets](./cvsenselsitingoffsets.md)
   Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
 
 

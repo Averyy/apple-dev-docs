@@ -1,7 +1,8 @@
 # disablesSubpixelQuantization
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, subpixel quantization requested by the text engine is disabled. This can be useful for text that will be animated to prevent it jittering.
 

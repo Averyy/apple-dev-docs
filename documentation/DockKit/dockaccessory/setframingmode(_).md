@@ -1,7 +1,8 @@
 # setFramingMode(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Customize the dock accessory’s tracking behavior.
 
@@ -23,19 +24,20 @@ Use this method to change where DockKit places a subject within the frame. For e
 
 Set the frame mode to the desired value before performing your own custom tracking.
 
-The default is [`DockAccessory.FramingMode.automatic`](dockaccessory/framingmode-swift.enum/automatic.md). See [`DockAccessory.FramingMode`](dockaccessory/framingmode-swift.enum.md) for other values you can use to override.
+The default is [`DockAccessory.FramingMode.automatic`](./framingmode-swift.enum/automatic.md). See [`DockAccessory.FramingMode`](./framingmode-swift.enum.md) for other values you can use to override.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](dockkiterror/notsupported.md) in macOS.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device isn’t connected, or [`DockKitError.notSupported`](../dockkiterror/notsupported.md) in macOS.
 
 ## Parameters
 
-- `mode`: The framing mode to set tracking to. See [`DockAccessory.FramingMode`](dockaccessory/framingmode-swift.enum.md) for more information.
+- `mode`: The framing mode to set tracking to. See [`DockAccessory.FramingMode`](./framingmode-swift.enum.md) for more information.
 
 ## See Also
 
-- [var framingMode: DockAccessory.FramingMode](dockaccessory/framingmode-swift.property.md)
+### Setting framing mode
+- [var framingMode: DockAccessory.FramingMode](./framingmode-swift.property.md)
   The current framing mode.
-- [DockAccessory.FramingMode](dockaccessory/framingmode-swift.enum.md)
+- [DockAccessory.FramingMode](./framingmode-swift.enum.md)
   The mode to control framing of the subject when tracking.
 
 

@@ -1,7 +1,8 @@
 # applicationError
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The QUIC application error code to send for the connection, or received from the peer.
 
@@ -19,6 +20,8 @@ The QUIC application error code to send for the connection, or received from the
 ```swift
 final var applicationError: NWProtocolQUIC.ApplicationError { get set }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

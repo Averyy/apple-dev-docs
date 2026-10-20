@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The title of the album.

@@ -1,14 +1,15 @@
 # io_user_scalar_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t io_user_scalar_t;
 ```
 

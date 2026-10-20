@@ -1,7 +1,8 @@
 # placeOfBirth
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The place where the mobile document holder was born.
 

@@ -1,7 +1,8 @@
 # SCVideoEffectOutput
 
 **Framework**: ScreenCaptureKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 class SCVideoEffectOutput
 ```
 
+```objc
+@interface SCVideoEffectOutput : NSObject
+```
+
 #### Overview
 
 SCVideoEffectOutput
@@ -23,37 +28,38 @@ SCVideoEffectOutput represents a camera video effect session on a SCStream. Crea
 ## Topics
 
 ### Initializers
-- [init(cameraDevice: AVCaptureDevice)](scvideoeffectoutput/init(cameradevice:).md)
+- [init(cameraDevice: AVCaptureDevice)](./scvideoeffectoutput/init%28cameradevice%29.md)
 ### Instance Properties
-- [var cameraDevice: AVCaptureDevice](scvideoeffectoutput/cameradevice.md)
+- [var cameraDevice: AVCaptureDevice](./scvideoeffectoutput/cameradevice.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCStream](scstream.md)
+### Content capture
+- [class SCStream](./scstream.md)
   An instance that represents a stream of shareable content.
-- [class SCStreamConfiguration](scstreamconfiguration.md)
+- [class SCStreamConfiguration](./scstreamconfiguration.md)
   An instance that provides the output configuration for a stream.
-- [class SCContentFilter](sccontentfilter.md)
+- [class SCContentFilter](./sccontentfilter.md)
   An instance that filters the content a stream captures.
-- [protocol SCStreamDelegate](scstreamdelegate.md)
+- [protocol SCStreamDelegate](./scstreamdelegate.md)
   A delegate protocol your app implements to respond to stream events.
-- [class SCScreenshotManager](scscreenshotmanager.md)
+- [class SCScreenshotManager](./scscreenshotmanager.md)
   An instance for the capture of single frames from a stream.
-- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+- [class SCScreenshotConfiguration](./scscreenshotconfiguration.md)
   An object that contains screenshot properties such as output width, height, and image quality specifications.
-- [class SCScreenshotOutput](scscreenshotoutput.md)
+- [class SCScreenshotOutput](./scscreenshotoutput.md)
   An object that contains all images requested by the client.
 
 

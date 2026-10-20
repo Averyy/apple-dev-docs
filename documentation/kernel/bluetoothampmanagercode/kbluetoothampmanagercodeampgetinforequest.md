@@ -1,14 +1,15 @@
 # kBluetoothAMPManagerCodeAMPGetInfoRequest
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothAMPManagerCodeAMPGetInfoRequest = 0x06
 ```
 

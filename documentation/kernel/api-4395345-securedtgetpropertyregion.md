@@ -1,14 +1,15 @@
 # SecureDTGetPropertyRegion
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTGetPropertyRegion(const DTEntry entry, const char *propertyName, const void **propertyValue, unsigned int *propertySize, const vm_offset_t region_start, vm_size_t region_size);
 ```
 

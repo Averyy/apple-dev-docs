@@ -1,7 +1,8 @@
 # scrollView(_:handle:completion:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles a scroll update before the scroll view reacts to it.
 
@@ -14,7 +15,15 @@ Handles a scroll update before the scroll view reacts to it.
 ## Declaration
 
 ```swift
+optional func scrollView(_ scrollView: BEScrollView, handle scrollUpdate: BEScrollViewScrollUpdate, completion: @escaping (Bool) -> Void)
+```
+
+```swift
 optional func scrollView(_ scrollView: BEScrollView, handle scrollUpdate: BEScrollViewScrollUpdate) async -> Bool
+```
+
+```objc
+- (void) scrollView:(BEScrollView *) scrollView handleScrollUpdate:(BEScrollViewScrollUpdate *) scrollUpdate completion:(void (^)(BOOL handled)) completion;
 ```
 
 #### Discussion
@@ -25,7 +34,7 @@ Your `BEScrollViewDelegate` receives scroll updates before its delegating scroll
 
 ## Parameters
 
-- `scrollView`: The [`BEScrollView`](bescrollview.md) that receives the scroll update.
+- `scrollView`: The [`BEScrollView`](../bescrollview.md) that receives the scroll update.
 - `scrollUpdate`: An object that describes the scroll update. Retrieve all information from this object immediately on the main queue when the system calls your delegate method, as the values may change.
 - `completion`: A block to call when you finish processing the scroll update. Pass `true` if you handled the scroll event and the scroll view doesn’t need to react to it; pass `false` otherwise.
 

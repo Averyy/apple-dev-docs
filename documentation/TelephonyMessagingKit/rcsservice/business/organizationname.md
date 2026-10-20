@@ -1,7 +1,8 @@
 # RCSService.Business.OrganizationName
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure containing details about a business’ name.
 
@@ -17,31 +18,32 @@ struct OrganizationName
 ## Topics
 
 ### Accessing organization name properties
-- [let displayName: String](rcsservice/business/organizationname/displayname.md)
+- [let displayName: String](./organizationname/displayname.md)
   Display name for business.
-- [let nameType: RCSService.Business.OrganizationName.NameType](rcsservice/business/organizationname/nametype-swift.property.md)
+- [let nameType: RCSService.Business.OrganizationName.NameType](./organizationname/nametype-swift.property.md)
   The type of the name.
-- [RCSService.Business.OrganizationName.NameType](rcsservice/business/organizationname/nametype-swift.enum.md)
+- [RCSService.Business.OrganizationName.NameType](./organizationname/nametype-swift.enum.md)
   Enumeration representing the type of name specified by the business.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let description: String?](rcsservice/business/description.md)
+### Accessing business identity information
+- [let description: String?](./description.md)
   Description for business.
-- [let providerName: String?](rcsservice/business/providername.md)
+- [let providerName: String?](./providername.md)
   Name of business provider.
-- [let organizationNames: [RCSService.Business.OrganizationName]](rcsservice/business/organizationnames.md)
+- [let organizationNames: [RCSService.Business.OrganizationName]](./organizationnames.md)
   Array of names specified by business.
-- [let categoryNames: [String]](rcsservice/business/categorynames.md)
+- [let categoryNames: [String]](./categorynames.md)
   Array of category names which can be used to filter a list of businesses.
 
 

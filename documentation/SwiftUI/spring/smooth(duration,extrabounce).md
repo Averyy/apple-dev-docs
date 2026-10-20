@@ -1,7 +1,8 @@
 # smooth(duration:extraBounce:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A smooth spring with a predefined duration and no bounce that can be tuned.
 
@@ -28,15 +29,16 @@ static func smooth(duration: TimeInterval = 0.5, extraBounce: Double = 0.0) -> S
 
 ## See Also
 
-- [static var bouncy: Spring](spring/bouncy.md)
+### Getting built-in springs
+- [static var bouncy: Spring](./bouncy.md)
   A spring with a predefined duration and higher amount of bounce.
-- [static func bouncy(duration: TimeInterval, extraBounce: Double) -> Spring](spring/bouncy(duration:extrabounce:).md)
+- [static func bouncy(duration: TimeInterval, extraBounce: Double) -> Spring](./bouncy%28duration,extrabounce%29.md)
   A spring with a predefined duration and higher amount of bounce that can be tuned.
-- [static var smooth: Spring](spring/smooth.md)
+- [static var smooth: Spring](./smooth.md)
   A smooth spring with a predefined duration and no bounce.
-- [static var snappy: Spring](spring/snappy.md)
+- [static var snappy: Spring](./snappy.md)
   A spring with a predefined duration and small amount of bounce that feels more snappy.
-- [static func snappy(duration: TimeInterval, extraBounce: Double) -> Spring](spring/snappy(duration:extrabounce:).md)
+- [static func snappy(duration: TimeInterval, extraBounce: Double) -> Spring](./snappy%28duration,extrabounce%29.md)
   A spring with a predefined duration and small amount of bounce that feels more snappy and can be tuned.
 
 

@@ -1,7 +1,8 @@
 # init(sourceApplicationBundleIdentifier:sourceApplicationLocalizedName:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes browser data with the source app’s identifier and display name.
 
@@ -15,6 +16,10 @@ Initializes browser data with the source app’s identifier and display name.
 init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName: String?)
 ```
 
+```objc
+- (instancetype) initWithSourceApplicationBundleIdentifier:(NSString *) sourceApplicationBundleIdentifier sourceApplicationLocalizedName:(NSString *) sourceApplicationLocalizedName;
+```
+
 ## Parameters
 
 - `sourceApplicationBundleIdentifier`: The bundle identifier of the source browser app.
@@ -22,7 +27,8 @@ init(sourceApplicationBundleIdentifier: String?, sourceApplicationLocalizedName:
 
 ## See Also
 
-- [init?(coder: NSCoder)](bebrowserdata/init(coder:).md)
+### Creating a representation of browser data
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes browser data from a decoder.
 
 

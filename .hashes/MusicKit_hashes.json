@@ -231,9 +231,8 @@
       "hash": "9d4c1c19a368fbce67657330d976c319e3140ab29b8ad6aeb378c051a3b3f145"
     },
     "https://developer.apple.com/documentation/musickit/applicationmusicplayer/queue-swift.class/entries-swift.struct/init(_:)": {
-      "etag": "W/\"ecc7ca7b4bf134939a630cfe4c3cf98d\"",
       "file_path": "documentation/MusicKit/applicationmusicplayer/queue-swift.class/entries-swift.struct/init(_).md",
-      "hash": "a31dd557ff4bdbcea393851ccc27b4b1637e00c0e0d18752833ada40de82837c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/applicationmusicplayer/queue-swift.class/init(_:startingat:)": {
       "etag": "\"25d2-65d55e7c77651-df\"",
@@ -666,9 +665,8 @@
       "hash": "fcf8ccb409f8c7a3c84571ee2584d54551b96111a5c81dbfeb3ce7756d8c1e5f"
     },
     "https://developer.apple.com/documentation/musickit/explore_more_content_with_musickit": {
-      "etag": "W/\"4431f483a9debf3946d94206728f8293\"",
       "file_path": "documentation/MusicKit/explore_more_content_with_musickit.md",
-      "hash": "91af73976e52a3bca0590ae28131023462ab978a4384459748f616fd5a48462a"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/filterablemusicitem": {
       "etag": "\"502e-65d55e7c636ef-df\"",
@@ -1821,9 +1819,8 @@
       "hash": "2429bb91842c2e375532dde9d5ab851afbfc513c7b56c9a2311045208cfd23d9"
     },
     "https://developer.apple.com/documentation/musickit/musicitemcollection/!=(_:_:)": {
-      "etag": "W/\"7c380e703bf026ac382467410bdd7b38\"",
       "file_path": "documentation/MusicKit/musicitemcollection/noteq(_,_).md",
-      "hash": "2d38cad607cc362d229e224d91c36795633079cf6e0f2e04703e742e37b5601c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/musicitemcollection/+=(_:_:)": {
       "etag": "\"2208-65d55e7c77651-df\"",
@@ -1831,9 +1828,8 @@
       "hash": "d26d65050b9fab8ede64a6ce76bc1152978980769d12a441e0c2526f6af7694c"
     },
     "https://developer.apple.com/documentation/musickit/musicitemcollection/==(_:_:)": {
-      "etag": "W/\"49b76ec2795bdca2cae6435c822be63c\"",
       "file_path": "documentation/MusicKit/musicitemcollection/eqeq(_,_).md",
-      "hash": "ba1d7a4542fbf64ac8b2bd12de9b8b547df53452e94ff51d44bf60e1378b4df5"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/musicitemcollection/hasnextbatch": {
       "etag": "\"157c-65d55e7c77651-df\"",
@@ -1911,9 +1907,8 @@
       "hash": "ffe8b80a1a5db6b470890113a2349745189153ae87204ce5965f7b13765d8673"
     },
     "https://developer.apple.com/documentation/musickit/musiclibrary/error/!=(_:_:)": {
-      "etag": "W/\"6f521d5a8c593e6e20b9fe3bd310684b\"",
       "file_path": "documentation/MusicKit/musiclibrary/error/noteq(_,_).md",
-      "hash": "ef8e23cf66897698a4fa62d1e86e5ca0104bebf402eb2f9ec0fa6061fa4b2164"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/musiclibrary/error/addtoplaylistfailed": {
       "etag": "\"1194-65d55e7da13a9-df\"",
@@ -2951,9 +2946,8 @@
       "hash": "44974bdc563a8767388a34806beb1fc45c5628d5987c4ff2bdf3962ee21055d1"
     },
     "https://developer.apple.com/documentation/musickit/musicsubscription/error/!=(_:_:)": {
-      "etag": "W/\"51ed47facbda355049d4ed650df534f7\"",
       "file_path": "documentation/MusicKit/musicsubscription/error/noteq(_,_).md",
-      "hash": "e43b10874aa6c0a4d53351a0d1422f110bc699cc874dea588da195960157045a"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/musicsubscription/error/permissiondenied": {
       "etag": "\"1259-65d55e7c0921f-df\"",
@@ -3101,9 +3095,8 @@
       "hash": "a8359977090f3b2da7eee5f79b1b93a73e815759a5b43071187a89fde855de69"
     },
     "https://developer.apple.com/documentation/musickit/musictokenrequesterror/!=(_:_:)": {
-      "etag": "W/\"d785f1e70290f7ed793567ef3f5cf48c\"",
       "file_path": "documentation/MusicKit/musictokenrequesterror/noteq(_,_).md",
-      "hash": "fcc0120b645b931a7e6d485a6ea48b4d8b13713c46059ee745e820e7d87a2e6c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/musickit/musictokenrequesterror/developertokenrequestfailed": {
       "etag": "\"1028-65d55e7c77651-df\"",
@@ -4741,9 +4734,8 @@
       "hash": "61fc72fadedbaba816751dc3ffdd3a8873a2e0b77cfaa564ef5ab27612df4c48"
     },
     "https://developer.apple.com/documentation/musickit/using_musickit_to_integrate_with_apple_music": {
-      "etag": "W/\"928f225b4c3c3f22aa2140c855c08530\"",
       "file_path": "documentation/MusicKit/using_musickit_to_integrate_with_apple_music.md",
-      "hash": "c5dc0bda942348774325b98ba33e4df8dd490171fb58999b1a604ff126616fa0"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/MusicKit.json": {
       "etag": "\"16b5d-65d55e7da13a9-df\"",
@@ -4976,9 +4968,8 @@
       "hash": "9d4c1c19a368fbce67657330d976c319e3140ab29b8ad6aeb378c051a3b3f145"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/applicationmusicplayer/queue-swift.class/entries-swift.struct/init(_:).json": {
-      "etag": "W/\"ecc7ca7b4bf134939a630cfe4c3cf98d\"",
       "file_path": "documentation/MusicKit/applicationmusicplayer/queue-swift.class/entries-swift.struct/init(_).md",
-      "hash": "a31dd557ff4bdbcea393851ccc27b4b1637e00c0e0d18752833ada40de82837c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/applicationmusicplayer/queue-swift.class/init(_:startingat:).json": {
       "etag": "\"25d2-65d55e7c77651-df\"",
@@ -5411,9 +5402,8 @@
       "hash": "fcf8ccb409f8c7a3c84571ee2584d54551b96111a5c81dbfeb3ce7756d8c1e5f"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/explore_more_content_with_musickit.json": {
-      "etag": "W/\"4431f483a9debf3946d94206728f8293\"",
       "file_path": "documentation/MusicKit/explore_more_content_with_musickit.md",
-      "hash": "91af73976e52a3bca0590ae28131023462ab978a4384459748f616fd5a48462a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/filterablemusicitem.json": {
       "etag": "\"502e-65d55e7c636ef-df\"",
@@ -6566,9 +6556,8 @@
       "hash": "2429bb91842c2e375532dde9d5ab851afbfc513c7b56c9a2311045208cfd23d9"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicitemcollection/!=(_:_:).json": {
-      "etag": "W/\"7c380e703bf026ac382467410bdd7b38\"",
       "file_path": "documentation/MusicKit/musicitemcollection/noteq(_,_).md",
-      "hash": "2d38cad607cc362d229e224d91c36795633079cf6e0f2e04703e742e37b5601c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicitemcollection/+=(_:_:).json": {
       "etag": "\"2208-65d55e7c77651-df\"",
@@ -6576,9 +6565,8 @@
       "hash": "d26d65050b9fab8ede64a6ce76bc1152978980769d12a441e0c2526f6af7694c"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicitemcollection/==(_:_:).json": {
-      "etag": "W/\"49b76ec2795bdca2cae6435c822be63c\"",
       "file_path": "documentation/MusicKit/musicitemcollection/eqeq(_,_).md",
-      "hash": "ba1d7a4542fbf64ac8b2bd12de9b8b547df53452e94ff51d44bf60e1378b4df5"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicitemcollection/hasnextbatch.json": {
       "etag": "\"157c-65d55e7c77651-df\"",
@@ -6656,9 +6644,8 @@
       "hash": "ffe8b80a1a5db6b470890113a2349745189153ae87204ce5965f7b13765d8673"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musiclibrary/error/!=(_:_:).json": {
-      "etag": "W/\"6f521d5a8c593e6e20b9fe3bd310684b\"",
       "file_path": "documentation/MusicKit/musiclibrary/error/noteq(_,_).md",
-      "hash": "ef8e23cf66897698a4fa62d1e86e5ca0104bebf402eb2f9ec0fa6061fa4b2164"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musiclibrary/error/addtoplaylistfailed.json": {
       "etag": "\"1194-65d55e7da13a9-df\"",
@@ -7696,9 +7683,8 @@
       "hash": "44974bdc563a8767388a34806beb1fc45c5628d5987c4ff2bdf3962ee21055d1"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicsubscription/error/!=(_:_:).json": {
-      "etag": "W/\"51ed47facbda355049d4ed650df534f7\"",
       "file_path": "documentation/MusicKit/musicsubscription/error/noteq(_,_).md",
-      "hash": "e43b10874aa6c0a4d53351a0d1422f110bc699cc874dea588da195960157045a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musicsubscription/error/permissiondenied.json": {
       "etag": "\"1259-65d55e7c0921f-df\"",
@@ -7846,9 +7832,8 @@
       "hash": "a8359977090f3b2da7eee5f79b1b93a73e815759a5b43071187a89fde855de69"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musictokenrequesterror/!=(_:_:).json": {
-      "etag": "W/\"d785f1e70290f7ed793567ef3f5cf48c\"",
       "file_path": "documentation/MusicKit/musictokenrequesterror/noteq(_,_).md",
-      "hash": "fcc0120b645b931a7e6d485a6ea48b4d8b13713c46059ee745e820e7d87a2e6c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/musictokenrequesterror/developertokenrequestfailed.json": {
       "etag": "\"1028-65d55e7c77651-df\"",
@@ -9486,12 +9471,14 @@
       "hash": "61fc72fadedbaba816751dc3ffdd3a8873a2e0b77cfaa564ef5ab27612df4c48"
     },
     "https://developer.apple.com/tutorials/data/documentation/musickit/using_musickit_to_integrate_with_apple_music.json": {
-      "etag": "W/\"928f225b4c3c3f22aa2140c855c08530\"",
       "file_path": "documentation/MusicKit/using_musickit_to_integrate_with_apple_music.md",
-      "hash": "c5dc0bda942348774325b98ba33e4df8dd490171fb58999b1a604ff126616fa0"
+      "hash": ""
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1898
   }
 }

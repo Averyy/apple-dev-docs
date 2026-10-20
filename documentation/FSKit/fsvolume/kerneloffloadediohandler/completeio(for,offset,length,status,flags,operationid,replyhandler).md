@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Completes an I/O operation for a given file.
@@ -12,14 +13,22 @@ Completes an I/O operation for a given file.
 ## Declaration
 
 ```swift
+func completeIO(for file: FSItem, offset: off_t, length: Int, status: any Error, flags: FSCompleteIOFlags, operationID: FSOperationID, replyHandler reply: @escaping @Sendable (FSCompleteIOResult?, (any Error)?) -> Void)
+```
+
+```swift
 func completeIO(for file: FSItem, offset: off_t, length: Int, status: any Error, flags: FSCompleteIOFlags, operationID: FSOperationID) async throws -> FSCompleteIOResult
+```
+
+```objc
+- (void) completeIOForFile:(FSItem *) file offset:(off_t) offset length:(size_t) length status:(NSError *) status flags:(FSCompleteIOFlags) flags operationID:(FSOperationID) operationID replyHandler:(void (^)(FSCompleteIOResult *result, NSError *error)) reply;
 ```
 
 #### Discussion
 
 Implement this method by updating a file’s metadata, such as its size and modification time.
 
-FSKit may call this method without an earlier call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). In this case, the `operationID` is `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift).
+FSKit may call this method without an earlier call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](./blockmapfile%28_,offset,length,flags,operationid,packer,replyhandler%29.md). In this case, the `operationID` is `0` (Objective-C) or [`unspecified`](../../fsoperationid/unspecified.md) (Swift).
 
 ## Parameters
 
@@ -28,20 +37,21 @@ FSKit may call this method without an earlier call to [`blockmapFile(_:offset:le
 - `length`: The length of the I/O range (in bytes).
 - `status`: Any error that occurred during the operation. If no error occurred, this parameter is `nil`.
 - `flags`: Flags that affect the behavior of the complete I/O operation.
-- `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift) corresponds to a previous call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md) with the same `operationID`.
-- `reply`: A block or closure to indicate success or failure. If completing I/O succeeds, pass an instance of [`FSCompleteIOResult`](fscompleteioresult.md) containing the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, along with a `nil` error. If completing I/O fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCompleteIOResult`](fscompleteioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](../../fsoperationid/unspecified.md) (Swift) corresponds to a previous call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](./blockmapfile%28_,offset,length,flags,operationid,packer,replyhandler%29.md) with the same `operationID`.
+- `reply`: A block or closure to indicate success or failure. If completing I/O succeeds, pass an instance of [`FSCompleteIOResult`](../../fscompleteioresult.md) containing the updated [`FSItem.Attributes`](../../fsitem/attributes.md) of the file, along with a `nil` error. If completing I/O fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCompleteIOResult`](../../fscompleteioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [func blockmapFile(FSItem, offset: off_t, length: Int, flags: FSBlockmapFlags, operationID: FSOperationID, packer: FSExtentPacker, replyHandler: (FSBlockmapResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md)
+### Performing mapped I/O
+- [func blockmapFile(FSItem, offset: off_t, length: Int, flags: FSBlockmapFlags, operationID: FSOperationID, packer: FSExtentPacker, replyHandler: (FSBlockmapResult?, (any Error)?) -> Void)](./blockmapfile%28_,offset,length,flags,operationid,packer,replyhandler%29.md)
   Maps a file’s disk space into extents, allowing the kernel to perform I/O with that space.
-- [struct FSBlockmapFlags](fsblockmapflags.md)
+- [struct FSBlockmapFlags](../../fsblockmapflags.md)
   Flags that describe the behavior of a blockmap operation.
-- [class FSBlockmapResult](fsblockmapresult.md)
+- [class FSBlockmapResult](../../fsblockmapresult.md)
   The result of a blockmap call.
-- [struct FSCompleteIOFlags](fscompleteioflags.md)
+- [struct FSCompleteIOFlags](../../fscompleteioflags.md)
   Flags that describe the behavior of an I/O completion operation.
-- [class FSCompleteIOResult](fscompleteioresult.md)
+- [class FSCompleteIOResult](../../fscompleteioresult.md)
   The result of a complete-I/O call.
 
 

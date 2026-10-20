@@ -1,7 +1,8 @@
 # init(presentationDescriptor:isSideloaded:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance that contains the specified presentation descriptor.
 

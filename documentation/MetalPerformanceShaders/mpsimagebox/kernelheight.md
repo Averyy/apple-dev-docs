@@ -1,7 +1,8 @@
 # kernelHeight
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the filter window. Must be an odd number.
 
@@ -19,9 +20,14 @@ The height of the filter window. Must be an odd number.
 var kernelHeight: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger kernelHeight;
+```
+
 ## See Also
 
-- [var kernelWidth: Int](mpsimagebox/kernelwidth.md)
+### Properties
+- [var kernelWidth: Int](./kernelwidth.md)
   The width of the filter window. Must be an odd number.
 
 

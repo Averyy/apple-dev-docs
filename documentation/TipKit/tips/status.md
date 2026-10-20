@@ -1,7 +1,8 @@
 # Status
 
 **Framework**: TipKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the current display eligibility status for a tip.
 
@@ -23,24 +24,25 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [Tips.Status.available](tips/status/available.md)
+- [Tips.Status.available](./status/available.md)
   The tip is eligible for display.
-- [case invalidated(Tips.InvalidationReason)](tips/status/invalidated(_:).md)
+- [case invalidated(Tips.InvalidationReason)](./status/invalidated%28_%29.md)
   The tip is no longer valid.
-- [Tips.Status.pending](tips/status/pending.md)
+- [Tips.Status.pending](./status/pending.md)
   The tip is not eligible for display.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum InvalidationReason](tips/invalidationreason.md)
+### Status
+- [enum InvalidationReason](./invalidationreason.md)
   A type that describes why the system permanently invalidated a tip.
 
 

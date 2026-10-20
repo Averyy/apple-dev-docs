@@ -1,7 +1,8 @@
 # MSStickerSize.small
 
 **Framework**: Messages  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Small stickers.
 
@@ -16,15 +17,20 @@ Small stickers.
 case small
 ```
 
+```c
+MSStickerSizeSmall
+```
+
 #### Discussion
 
 Use 100 x 100 point images to create small stickers. Always provide @3x images for these stickers (300 x 300 pixels). The system generates the @2x and @1x versions by downscaling the @3x images at runtime.
 
 ## See Also
 
-- [MSStickerSize.regular](msstickersize/regular.md)
+### Constants
+- [MSStickerSize.regular](./regular.md)
   Medium-sized stickers.
-- [MSStickerSize.large](msstickersize/large.md)
+- [MSStickerSize.large](./large.md)
   Large stickers.
 
 

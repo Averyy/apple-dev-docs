@@ -1,7 +1,8 @@
 # kABInstantMessageUsernameKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The instant messaging username or handle.
 
@@ -14,9 +15,14 @@ The instant messaging username or handle.
 let kABInstantMessageUsernameKey: String
 ```
 
+```c
+extern NSString * const kABInstantMessageUsernameKey;
+```
+
 ## See Also
 
-- [let kABInstantMessageServiceKey: String](kabinstantmessageservicekey.md)
+### Constants
+- [let kABInstantMessageServiceKey: String](./kabinstantmessageservicekey.md)
   The instant messaging service.
 
 

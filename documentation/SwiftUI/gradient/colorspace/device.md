@@ -1,7 +1,8 @@
 # device
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolates gradient colors in the output color space.
 
@@ -22,7 +23,8 @@ static let device: Gradient.ColorSpace
 
 ## See Also
 
-- [static let perceptual: Gradient.ColorSpace](gradient/colorspace/perceptual.md)
+### Getting an interpolation method
+- [static let perceptual: Gradient.ColorSpace](./perceptual.md)
   Interpolates gradient colors in a perceptual color space.
 
 

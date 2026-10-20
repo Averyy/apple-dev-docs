@@ -1,17 +1,22 @@
 # parentGroups()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of the address book groups that this person belongs to.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func parentGroups() -> [Any]!
+```
+
+```objc
+- (NSArray *) parentGroups;
 ```
 
 #### Discussion

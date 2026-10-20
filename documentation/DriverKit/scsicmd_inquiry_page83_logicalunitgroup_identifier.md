@@ -1,17 +1,18 @@
 # SCSICmd_INQUIRY_Page83_LogicalUnitGroup_Identifier
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef struct SCSICmd_INQUIRY_Page83_LogicalUnitGroup_Identifier { ... } SCSICmd_INQUIRY_Page83_LogicalUnitGroup_Identifier;
 ```
 
@@ -22,26 +23,27 @@ INQUIRY Page 83h Logical Unit Group Identifier.
 ## Topics
 
 ### Instance Properties
-- [LOGICAL_UNIT_GROUP](scsicmd_inquiry_page83_logicalunitgroup_identifier/logical_unit_group.md)
-- [RESERVED](scsicmd_inquiry_page83_logicalunitgroup_identifier/reserved.md)
+- [LOGICAL_UNIT_GROUP](./scsicmd_inquiry_page83_logicalunitgroup_identifier/logical_unit_group.md)
+- [RESERVED](./scsicmd_inquiry_page83_logicalunitgroup_identifier/reserved.md)
 
 ## See Also
 
-- [IODMACommandSpecification](iodmacommandspecification.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IORPCMessageErrorReturnContent](iorpcmessageerrorreturncontent.md)
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Structures
+- [IODMACommandSpecification](./iodmacommandspecification.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IORPCMessageErrorReturnContent](./iorpcmessageerrorreturncontent.md)
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

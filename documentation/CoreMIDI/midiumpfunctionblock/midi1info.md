@@ -1,7 +1,8 @@
 # midi1Info
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var midi1Info: MIDIUMPFunctionBlockMIDI1Info { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDIUMPFunctionBlockMIDI1Info MIDI1Info;
 ```
 
 

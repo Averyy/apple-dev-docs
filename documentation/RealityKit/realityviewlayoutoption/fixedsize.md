@@ -1,7 +1,8 @@
 # fixedSize
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option that fixes the size of the frame to equal the size of the visual content and centers the content within the new frame size.
 
@@ -21,7 +22,7 @@ static let fixedSize: RealityViewLayoutOption
 
 ## Mentions
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+- [Controlling the layout behavior of a reality view](../controlling-the-layout-behavior-of-a-realityview.md)
 
 
 ---

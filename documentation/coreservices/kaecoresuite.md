@@ -1,7 +1,8 @@
 # kAECoreSuite
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An Apple event in the Standard Suite.
 

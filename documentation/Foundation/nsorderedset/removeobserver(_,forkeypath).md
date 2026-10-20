@@ -1,7 +1,8 @@
 # removeObserver(_:forKeyPath:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises an exception.
 
@@ -20,6 +21,10 @@ Raises an exception.
 func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 ```
 
+```objc
+- (void) removeObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath;
+```
+
 #### Discussion
 
 `NSOrderedSet` objects are not observable, so this method raises an exception when invoked on an `NSOrderedSet` object. Instead of observing an ordered set, observe the to-many relationship for which the ordered set is the collection of related objects.
@@ -31,9 +36,10 @@ func removeObserver(_ observer: NSObject, forKeyPath keyPath: String)
 
 ## See Also
 
-- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](nsorderedset/addobserver(_:forkeypath:options:context:).md)
+### Key-Value Observing Support
+- [func addObserver(NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?)](./addobserver%28_,forkeypath,options,context%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](nsorderedset/removeobserver(_:forkeypath:context:).md)
+- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](./removeobserver%28_,forkeypath,context%29.md)
   Raises an exception.
 
 

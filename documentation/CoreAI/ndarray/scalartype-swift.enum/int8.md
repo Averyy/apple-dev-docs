@@ -1,7 +1,8 @@
 # NDArray.ScalarType.int8
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit signed integer.
 
@@ -20,13 +21,14 @@ case int8
 
 ## See Also
 
-- [NDArray.ScalarType.int16](ndarray/scalartype-swift.enum/int16.md)
+### Defining standard integer types
+- [NDArray.ScalarType.int16](./int16.md)
   A 16-bit signed integer.
-- [NDArray.ScalarType.int32](ndarray/scalartype-swift.enum/int32.md)
+- [NDArray.ScalarType.int32](./int32.md)
   A 32-bit signed integer.
-- [NDArray.ScalarType.int64](ndarray/scalartype-swift.enum/int64.md)
+- [NDArray.ScalarType.int64](./int64.md)
   A 64-bit signed integer.
-- [NDArray.ScalarType.int128](ndarray/scalartype-swift.enum/int128.md)
+- [NDArray.ScalarType.int128](./int128.md)
   A 128-bit signed integer.
 
 

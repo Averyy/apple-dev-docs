@@ -1,7 +1,8 @@
 # kGSSICAppleSourceAppAuditToken
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The audit token of the app’s process.
 
@@ -18,15 +19,20 @@ The audit token of the app’s process.
 var kGSSICAppleSourceAppAuditToken: String { get }
 ```
 
+```c
+#define kGSSICAppleSourceAppAuditToken
+```
+
 #### Discussion
 
 The value is an `audit_token_t` value wrapped in a `CFDataRef`.
 
 ## See Also
 
-- [var kGSSICAppleSourceAppPID: String](kgssicapplesourceapppid.md)
+### Apple Source App Keys
+- [var kGSSICAppleSourceAppPID: String](./kgssicapplesourceapppid.md)
   A number that indicates the process ID of the app.
-- [var kGSSICAppleSourceAppSigningIdentity: String](kgssicapplesourceappsigningidentity.md)
+- [var kGSSICAppleSourceAppSigningIdentity: String](./kgssicapplesourceappsigningidentity.md)
   The bundle signing identity of the app.
 
 

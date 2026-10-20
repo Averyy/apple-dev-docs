@@ -1,15 +1,16 @@
 # kAudioUnitProperty_CurrentPlayTime
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioUnitProperty_CurrentPlayTime: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_CurrentPlayTime
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_ScheduleAudioSlice: AudioUnitPropertyID](kaudiounitproperty_scheduleaudioslice.md)
-- [var kAudioUnitProperty_ScheduleStartTimeStamp: AudioUnitPropertyID](kaudiounitproperty_schedulestarttimestamp.md)
+### Constants
+- [var kAudioUnitProperty_ScheduleAudioSlice: AudioUnitPropertyID](./kaudiounitproperty_scheduleaudioslice.md)
+- [var kAudioUnitProperty_ScheduleStartTimeStamp: AudioUnitPropertyID](./kaudiounitproperty_schedulestarttimestamp.md)
 
 
 ---

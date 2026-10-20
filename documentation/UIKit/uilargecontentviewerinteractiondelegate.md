@@ -1,7 +1,8 @@
 # UILargeContentViewerInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that customizes the behavior of the large content viewer interactions.
 
@@ -18,26 +19,31 @@ An object that customizes the behavior of the large content viewer interactions.
 protocol UILargeContentViewerInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UILargeContentViewerInteractionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Customizing large content viewer interactions
-- [func largeContentViewerInteraction(UILargeContentViewerInteraction, didEndOn: (any UILargeContentViewerItem)?, at: CGPoint)](uilargecontentviewerinteractiondelegate/largecontentviewerinteraction(_:didendon:at:).md)
+- [func largeContentViewerInteraction(UILargeContentViewerInteraction, didEndOn: (any UILargeContentViewerItem)?, at: CGPoint)](./uilargecontentviewerinteractiondelegate/largecontentviewerinteraction%28_,didendon,at%29.md)
   Performs an action when the large content viewer gesture ends at the location of the specified item.
-- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](uilargecontentviewerinteractiondelegate/largecontentviewerinteraction(_:itemat:).md)
+- [func largeContentViewerInteraction(UILargeContentViewerInteraction, itemAt: CGPoint) -> (any UILargeContentViewerItem)?](./uilargecontentviewerinteractiondelegate/largecontentviewerinteraction%28_,itemat%29.md)
   Identifies the large content viewer item for the specified interaction and location.
-- [func viewController(for: UILargeContentViewerInteraction) -> UIViewController](uilargecontentviewerinteractiondelegate/viewcontroller(for:).md)
+- [func viewController(for: UILargeContentViewerInteraction) -> UIViewController](./uilargecontentviewerinteractiondelegate/viewcontroller%28for%29.md)
   Specifies which view controller should display the large content viewer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)
+### Content viewer
+- [class UILargeContentViewerInteraction](./uilargecontentviewerinteraction.md)
   An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate.
-- [protocol UILargeContentViewerItem](uilargecontentvieweritem.md)
+- [protocol UILargeContentViewerItem](./uilargecontentvieweritem.md)
   Methods that provide details about how to display your custom content in the large content viewer.
 
 

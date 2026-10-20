@@ -1,7 +1,8 @@
 # minimumPressDuration
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum amount of time (in seconds) that the user’s fingers must be touching the interface object.
 
@@ -14,15 +15,20 @@ The minimum amount of time (in seconds) that the user’s fingers must be touchi
 var minimumPressDuration: CFTimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) CFTimeInterval minimumPressDuration;
+```
+
 #### Discussion
 
 The default value of this property is `0.5` seconds, but you can change this value when configuring the gesture recognizer in Interface Builder.
 
 ## See Also
 
-- [var numberOfTapsRequired: Int](wklongpressgesturerecognizer/numberoftapsrequired.md)
+### Configuring the Gesture Recognizer
+- [var numberOfTapsRequired: Int](./numberoftapsrequired.md)
   The number of taps on the interface object that are required for the gesture to be recognized.
-- [var allowableMovement: CGFloat](wklongpressgesturerecognizer/allowablemovement.md)
+- [var allowableMovement: CGFloat](./allowablemovement.md)
   The maximum movement of the finger on the interface object that allows the gesture to be recognized.
 
 

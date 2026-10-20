@@ -1,38 +1,40 @@
 # Anonymous
 
-**Framework**: Core Audio
+**Framework**: Core Audio  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kAudioBoxPropertyAcquired: AudioObjectPropertySelector](kaudioboxpropertyacquired.md)
-- [var kAudioBoxPropertyAcquisitionFailed: AudioObjectPropertySelector](kaudioboxpropertyacquisitionfailed.md)
-- [var kAudioBoxPropertyBoxUID: AudioObjectPropertySelector](kaudioboxpropertyboxuid.md)
-- [var kAudioBoxPropertyDeviceList: AudioObjectPropertySelector](kaudioboxpropertydevicelist.md)
-- [var kAudioBoxPropertyHasAudio: AudioObjectPropertySelector](kaudioboxpropertyhasaudio.md)
-- [var kAudioBoxPropertyHasMIDI: AudioObjectPropertySelector](kaudioboxpropertyhasmidi.md)
-- [var kAudioBoxPropertyHasVideo: AudioObjectPropertySelector](kaudioboxpropertyhasvideo.md)
-- [var kAudioBoxPropertyIsProtected: AudioObjectPropertySelector](kaudioboxpropertyisprotected.md)
-- [var kAudioBoxPropertyTransportType: AudioObjectPropertySelector](kaudioboxpropertytransporttype.md)
-- [var kAudioBoxPropertyClockDeviceList: AudioObjectPropertySelector](kaudioboxpropertyclockdevicelist.md)
+- [var kAudioBoxPropertyAcquired: AudioObjectPropertySelector](./kaudioboxpropertyacquired.md)
+- [var kAudioBoxPropertyAcquisitionFailed: AudioObjectPropertySelector](./kaudioboxpropertyacquisitionfailed.md)
+- [var kAudioBoxPropertyBoxUID: AudioObjectPropertySelector](./kaudioboxpropertyboxuid.md)
+- [var kAudioBoxPropertyDeviceList: AudioObjectPropertySelector](./kaudioboxpropertydevicelist.md)
+- [var kAudioBoxPropertyHasAudio: AudioObjectPropertySelector](./kaudioboxpropertyhasaudio.md)
+- [var kAudioBoxPropertyHasMIDI: AudioObjectPropertySelector](./kaudioboxpropertyhasmidi.md)
+- [var kAudioBoxPropertyHasVideo: AudioObjectPropertySelector](./kaudioboxpropertyhasvideo.md)
+- [var kAudioBoxPropertyIsProtected: AudioObjectPropertySelector](./kaudioboxpropertyisprotected.md)
+- [var kAudioBoxPropertyTransportType: AudioObjectPropertySelector](./kaudioboxpropertytransporttype.md)
+- [var kAudioBoxPropertyClockDeviceList: AudioObjectPropertySelector](./kaudioboxpropertyclockdevicelist.md)
 
 ## See Also
 
-- [Anonymous](1580748-anonymous.md)
-- [Anonymous](1580731-anonymous.md)
-- [Anonymous](1580722-anonymous.md)
-- [Anonymous](1580720-anonymous.md)
-- [Anonymous](1580736-anonymous.md)
-- [Anonymous](1580737-anonymous.md)
-- [Anonymous](1580746-anonymous.md)
-- [Anonymous](1580723-anonymous.md)
-- [Anonymous](1580747-anonymous.md)
-- [Anonymous](1580749-anonymous.md)
-- [Anonymous](1580719-anonymous.md)
-- [Anonymous](1580715-anonymous.md)
-- [Anonymous](1580740-anonymous.md)
-- [Anonymous](1580741-anonymous.md)
-- [Anonymous](1580726-anonymous.md)
+### Enumerations
+- [Anonymous](./api-1580748-anonymous.md)
+- [Anonymous](./api-1580731-anonymous.md)
+- [Anonymous](./api-1580722-anonymous.md)
+- [Anonymous](./api-1580720-anonymous.md)
+- [Anonymous](./api-1580736-anonymous.md)
+- [Anonymous](./api-1580737-anonymous.md)
+- [Anonymous](./api-1580746-anonymous.md)
+- [Anonymous](./api-1580723-anonymous.md)
+- [Anonymous](./api-1580747-anonymous.md)
+- [Anonymous](./api-1580749-anonymous.md)
+- [Anonymous](./api-1580719-anonymous.md)
+- [Anonymous](./api-1580715-anonymous.md)
+- [Anonymous](./api-1580740-anonymous.md)
+- [Anonymous](./api-1580741-anonymous.md)
+- [Anonymous](./api-1580726-anonymous.md)
 
 
 ---

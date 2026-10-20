@@ -1,26 +1,28 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousb20hubdescriptor/bdescriptortype.md)
-- [bNumberPorts](iousb20hubdescriptor/bnumberports.md)
-- [wHubCharacteristics](iousb20hubdescriptor/whubcharacteristics.md)
-- [bPowerOnToPowerGood](iousb20hubdescriptor/bpowerontopowergood.md)
-- [bHubControllerCurrent](iousb20hubdescriptor/bhubcontrollercurrent.md)
-- [deviceRemovable](iousb20hubdescriptor/deviceremovable.md)
-- [reserved](iousb20hubdescriptor/reserved.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
+- [bNumberPorts](./bnumberports.md)
+- [wHubCharacteristics](./whubcharacteristics.md)
+- [bPowerOnToPowerGood](./bpowerontopowergood.md)
+- [bHubControllerCurrent](./bhubcontrollercurrent.md)
+- [deviceRemovable](./deviceremovable.md)
+- [reserved](./reserved.md)
 
 
 ---

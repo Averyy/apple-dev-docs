@@ -1,7 +1,8 @@
 # errSSLCrypto
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An underlying cryptographic error was encountered.
 
@@ -18,6 +19,10 @@ An underlying cryptographic error was encountered.
 
 ```swift
 var errSSLCrypto: OSStatus { get }
+```
+
+```c
+errSSLCrypto
 ```
 
 

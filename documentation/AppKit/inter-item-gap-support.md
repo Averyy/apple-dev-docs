@@ -1,18 +1,20 @@
 # Inter-Item Gap Support
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Constant for supporting inter-item gaps.
 
 ## Topics
 
 ### Constants
-- [class let elementKindInterItemGapIndicator: String](nscollectionview/elementkindinteritemgapindicator.md)
+- [class let elementKindInterItemGapIndicator: String](./nscollectionview/elementkindinteritemgapindicator.md)
   The element kind string assigned to the attributes object when it represents an inter-item gap.
 
 ## See Also
 
-- [enum NSCollectionElementCategory](nscollectionelementcategory.md)
+### Constants
+- [enum NSCollectionElementCategory](./nscollectionelementcategory.md)
   Constants specifying the type of element in the collection view.
 
 

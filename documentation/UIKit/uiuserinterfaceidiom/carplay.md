@@ -1,7 +1,8 @@
 # UIUserInterfaceIdiom.carPlay
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface designed for an in-car experience.
 
@@ -18,19 +19,24 @@ An interface designed for an in-car experience.
 case carPlay
 ```
 
+```c
+UIUserInterfaceIdiomCarPlay
+```
+
 ## See Also
 
-- [UIUserInterfaceIdiom.unspecified](uiuserinterfaceidiom/unspecified.md)
+### Idioms
+- [UIUserInterfaceIdiom.unspecified](./unspecified.md)
   An unspecified idiom.
-- [UIUserInterfaceIdiom.phone](uiuserinterfaceidiom/phone.md)
+- [UIUserInterfaceIdiom.phone](./phone.md)
   An interface designed for iPhone and iPod touch.
-- [UIUserInterfaceIdiom.pad](uiuserinterfaceidiom/pad.md)
+- [UIUserInterfaceIdiom.pad](./pad.md)
   An interface designed for iPad.
-- [UIUserInterfaceIdiom.tv](uiuserinterfaceidiom/tv.md)
+- [UIUserInterfaceIdiom.tv](./tv.md)
   An interface designed for tvOS and Apple TV.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
-- [UIUserInterfaceIdiom.vision](uiuserinterfaceidiom/vision.md)
+- [UIUserInterfaceIdiom.vision](./vision.md)
   An interface designed for visionOS and Apple Vision Pro.
 
 

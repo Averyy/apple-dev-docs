@@ -1,15 +1,16 @@
 # kInstrumentInfoKey_LSB
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,14 +18,19 @@
 var kInstrumentInfoKey_LSB: String { get }
 ```
 
+```c
+#define kInstrumentInfoKey_LSB
+```
+
 ## See Also
 
-- [func CopyNameFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](copynamefromsoundbank(_:_:).md)
+### Instrument Functions
+- [func CopyNameFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./copynamefromsoundbank%28_,_%29.md)
   Copies the name of a sound bank from a sound bank file at a specified URL.
-- [func CopyInstrumentInfoFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](copyinstrumentinfofromsoundbank(_:_:).md)
-- [var kInstrumentInfoKey_MSB: String](kinstrumentinfokey_msb.md)
-- [var kInstrumentInfoKey_Name: String](kinstrumentinfokey_name.md)
-- [var kInstrumentInfoKey_Program: String](kinstrumentinfokey_program.md)
+- [func CopyInstrumentInfoFromSoundBank(CFURL, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./copyinstrumentinfofromsoundbank%28_,_%29.md)
+- [var kInstrumentInfoKey_MSB: String](./kinstrumentinfokey_msb.md)
+- [var kInstrumentInfoKey_Name: String](./kinstrumentinfokey_name.md)
+- [var kInstrumentInfoKey_Program: String](./kinstrumentinfokey_program.md)
 
 
 ---

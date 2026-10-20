@@ -1,7 +1,8 @@
 # failedZoneSaves
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record zones that CloudKit is unable to modify.
 
@@ -11,7 +12,7 @@ The record zones that CloudKit is unable to modify.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let failedZoneSaves: [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave]
 
 ## See Also
 
-- [let failedZoneDeletes: [CKRecordZone.ID : CKError]](cksyncengine-5sie5/event/sentdatabasechanges/failedzonedeletes.md)
+### Accessing failed changes
+- [let failedZoneDeletes: [CKRecordZone.ID : CKError]](./failedzonedeletes.md)
   The unique identifiers of the record zones CloudKit is unable to delete, and the reasons why.
-- [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave](cksyncengine-5sie5/event/sentdatabasechanges/failedzonesave.md)
+- [CKSyncEngine.Event.SentDatabaseChanges.FailedZoneSave](./failedzonesave.md)
   A type that describes an unsuccessful attempt to modify a single record zone.
 
 

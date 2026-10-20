@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `Key` backed by `rawValue`
 

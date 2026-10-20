@@ -1,7 +1,8 @@
 # category
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category of the node.
 
@@ -21,7 +22,8 @@ var category: NavigationMeshResource.PathNode.Category
 
 ## See Also
 
-- [NavigationMeshResource.PathNode.Category](navigationmeshresource/pathnode/category-swift.enum.md)
+### Categorizing path nodes
+- [NavigationMeshResource.PathNode.Category](./category-swift.enum.md)
   The categories of path nodes.
 
 

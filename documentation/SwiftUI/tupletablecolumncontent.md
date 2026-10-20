@@ -1,7 +1,8 @@
 # TupleTableColumnContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of table column content that creates table columns created from a Swift tuple of table columns.
 
@@ -21,18 +22,18 @@ nonisolated struct TupleTableColumnContent<RowValue, Sort, T> where RowValue : I
 
 #### Overview
 
-Don’t use this type directly; instead, SwiftUI uses this type as the return value from the various `buildBlock` methods in [`TableColumnBuilder`](tablecolumnbuilder.md). The size of the tuple corresponds to how many columns you create in the `columns` closure you provide to the [`Table`](table.md) initializer.
+Don’t use this type directly; instead, SwiftUI uses this type as the return value from the various `buildBlock` methods in [`TableColumnBuilder`](./tablecolumnbuilder.md). The size of the tuple corresponds to how many columns you create in the `columns` closure you provide to the [`Table`](./table.md) initializer.
 
 ## Topics
 
 ### Accessing the value
-- [var value: T](tupletablecolumncontent/value.md)
+- [var value: T](./tupletablecolumncontent/value.md)
   The value of a row presented by this column content.
 
 ## Relationships
 
 ### Conforms To
-- [TableColumnContent](tablecolumncontent.md)
+- [TableColumnContent](./tablecolumncontent.md)
 
 
 ---

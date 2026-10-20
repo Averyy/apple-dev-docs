@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and date when the system recorded the measurement.
 
@@ -17,9 +18,14 @@ The time and date when the system recorded the measurement.
 var startDate: Date { get }
 ```
 
+```objc
+@property (readonly) NSDate * startDate;
+```
+
 ## See Also
 
-- [var identifier: UInt64](cmrecordedpressuredata/identifier.md)
+### Instance Properties
+- [var identifier: UInt64](./identifier.md)
   A value that uniquely identifies this measurement.
 
 

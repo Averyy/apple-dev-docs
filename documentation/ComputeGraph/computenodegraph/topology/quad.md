@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Topology.quad
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each element emits four vertices, rendered as a quad (two triangles).
 
@@ -12,7 +13,7 @@ Each element emits four vertices, rendered as a quad (two triangles).
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

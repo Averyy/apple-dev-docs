@@ -1,7 +1,8 @@
 # deleteRecordZone(withID:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a specific record zone.
 
@@ -11,7 +12,7 @@ Deletes a specific record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -31,7 +32,7 @@ The identifier of the deleted record zone.
 
 This method throws an error if the request fails, such as when the zone does not exist on the server, the network is unavailable or the device doesn’t have an active iCloud account.
 
-For information on a more convenient way to delete record zones, see [`modifyRecordZones(saving:deleting:)`](ckdatabase/modifyrecordzones(saving:deleting:).md).
+For information on a more convenient way to delete record zones, see [`modifyRecordZones(saving:deleting:)`](./modifyrecordzones%28saving,deleting%29.md).
 
 ## Parameters
 

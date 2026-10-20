@@ -1,7 +1,8 @@
 # TabletopInteraction.Value.Gesture.Chirality.right
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a right-handed gesture.
 
@@ -16,7 +17,8 @@ case right
 
 ## See Also
 
-- [TabletopInteraction.Value.Gesture.Chirality.left](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.enum/left.md)
+### Handedness
+- [TabletopInteraction.Value.Gesture.Chirality.left](./left.md)
   Indicates a left-handed gesture.
 
 

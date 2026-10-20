@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Shows the fields in the shortest form possible. For example, “2h 10m”, “2時10分”
 

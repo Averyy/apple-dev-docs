@@ -1,21 +1,26 @@
 # SCNSceneSourceAssetCreatedDateKey
 
 **Framework**: SceneKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 let SCNSceneSourceAssetCreatedDateKey: String
+```
+
+```c
+extern NSString * const SCNSceneSourceAssetCreatedDateKey;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ The date when the file was created. The corresponding value is an `NSDate` insta
 
 ## See Also
 
-- [let SCNSceneSourceAssetContributorsKey: String](scnscenesourceassetcontributorskey.md)
+### Constants
+- [let SCNSceneSourceAssetContributorsKey: String](./scnscenesourceassetcontributorskey.md)
   The file contributors.
-- [let SCNSceneSourceAssetModifiedDateKey: String](scnscenesourceassetmodifieddatekey.md)
-- [let SCNSceneSourceAssetUpAxisKey: String](scnscenesourceassetupaxiskey.md)
-- [let SCNSceneSourceAssetUnitKey: String](scnscenesourceassetunitkey.md)
+- [let SCNSceneSourceAssetModifiedDateKey: String](./scnscenesourceassetmodifieddatekey.md)
+- [let SCNSceneSourceAssetUpAxisKey: String](./scnscenesourceassetupaxiskey.md)
+- [let SCNSceneSourceAssetUnitKey: String](./scnscenesourceassetunitkey.md)
 
 
 ---

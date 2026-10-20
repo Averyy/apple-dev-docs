@@ -1,7 +1,8 @@
 # cluster
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clustering annotation view that replaces the annotation view.
 
@@ -19,15 +20,20 @@ The clustering annotation view that replaces the annotation view.
 weak var cluster: MKAnnotationView? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) MKAnnotationView * clusterAnnotationView;
+```
+
 #### Discussion
 
 When the map is displaying this annotation view, the value of this property is `nil`.
 
 ## See Also
 
-- [Decluttering a Map with MapKit Annotation Clustering](decluttering-a-map-with-mapkit-annotation-clustering.md)
+### Clustering annotation views
+- [Decluttering a Map with MapKit Annotation Clustering](../decluttering-a-map-with-mapkit-annotation-clustering.md)
   Enhance the readability of a map by replacing overlapping annotations with a clustering annotation view.
-- [var clusteringIdentifier: String?](mkannotationview/clusteringidentifier.md)
+- [var clusteringIdentifier: String?](./clusteringidentifier.md)
   An identifier that determines whether the annotation view participates in clustering.
 
 

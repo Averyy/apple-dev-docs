@@ -1,7 +1,8 @@
 # infinite()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a region that defines a region that includes all points.
 
@@ -20,25 +21,30 @@ Returns a region that defines a region that includes all points.
 class func infinite() -> Self
 ```
 
+```objc
++ (instancetype) infiniteRegion;
+```
+
 #### Return Value
 
 Returns a singleton region that covers an infinite area.
 
 ## See Also
 
-- [init(size: CGSize)](skregion/init(size:).md)
+### Creating and Initializing Region Objects
+- [init(size: CGSize)](./init%28size%29.md)
   Initializes a new region with a rectangular area.
-- [init(radius: Float)](skregion/init(radius:).md)
+- [init(radius: Float)](./init%28radius%29.md)
   Initializes a new region with a circular area.
-- [init(path: CGPath)](skregion/init(path:).md)
+- [init(path: CGPath)](./init%28path%29.md)
   Initializes a new region using a Core Graphics path.
-- [func inverse() -> Self](skregion/inverse.md)
+- [func inverse() -> Self](./inverse%28%29.md)
   Returns a new region that is the mathematical inverse of an existing region.
-- [func byDifference(from: SKRegion) -> Self](skregion/bydifference(from:).md)
+- [func byDifference(from: SKRegion) -> Self](./bydifference%28from%29.md)
   Returns a new region created by subtracting the contents of another region from this region.
-- [func byIntersection(with: SKRegion) -> Self](skregion/byintersection(with:).md)
+- [func byIntersection(with: SKRegion) -> Self](./byintersection%28with%29.md)
   Returns a new region created by intersecting the contents of this region with another region.
-- [func byUnion(with: SKRegion) -> Self](skregion/byunion(with:).md)
+- [func byUnion(with: SKRegion) -> Self](./byunion%28with%29.md)
   Returns a new region created by combining the contents of this region with another region.
 
 

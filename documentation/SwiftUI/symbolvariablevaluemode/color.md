@@ -1,7 +1,8 @@
 # color
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The “color” variable value mode. Sets the opacity of each variable layer to either on or off depending on how its threshold compared to the current value.
 

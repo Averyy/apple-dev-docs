@@ -1,7 +1,8 @@
 # MTRDeviceAttestationDeviceInfo
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,38 +19,42 @@
 class MTRDeviceAttestationDeviceInfo
 ```
 
+```objc
+@interface MTRDeviceAttestationDeviceInfo : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var basicInformationProductID: NSNumber](mtrdeviceattestationdeviceinfo/basicinformationproductid.md)
-- [var basicInformationVendorID: NSNumber](mtrdeviceattestationdeviceinfo/basicinformationvendorid.md)
-- [var certificateDeclaration: Data?](mtrdeviceattestationdeviceinfo/certificatedeclaration.md)
-- [var dacCertificate: Data](mtrdeviceattestationdeviceinfo/daccertificate.md)
-- [var dacPAICertificate: Data](mtrdeviceattestationdeviceinfo/dacpaicertificate.md)
-- [var productID: NSNumber?](mtrdeviceattestationdeviceinfo/productid.md)
-- [var vendorID: NSNumber?](mtrdeviceattestationdeviceinfo/vendorid.md)
-- [var attestationChallenge: Data](mtrdeviceattestationdeviceinfo/attestationchallenge.md)
+- [var basicInformationProductID: NSNumber](./mtrdeviceattestationdeviceinfo/basicinformationproductid.md)
+- [var basicInformationVendorID: NSNumber](./mtrdeviceattestationdeviceinfo/basicinformationvendorid.md)
+- [var certificateDeclaration: Data?](./mtrdeviceattestationdeviceinfo/certificatedeclaration.md)
+- [var dacCertificate: Data](./mtrdeviceattestationdeviceinfo/daccertificate.md)
+- [var dacPAICertificate: Data](./mtrdeviceattestationdeviceinfo/dacpaicertificate.md)
+- [var productID: NSNumber?](./mtrdeviceattestationdeviceinfo/productid.md)
+- [var vendorID: NSNumber?](./mtrdeviceattestationdeviceinfo/vendorid.md)
+- [var attestationChallenge: Data](./mtrdeviceattestationdeviceinfo/attestationchallenge.md)
   The attestation challenge from the secure session.
-- [var attestationNonce: Data](mtrdeviceattestationdeviceinfo/attestationnonce.md)
+- [var attestationNonce: Data](./mtrdeviceattestationdeviceinfo/attestationnonce.md)
   The attestation nonce from the AttestationRequest command.
-- [var certificationDeclaration: Data?](mtrdeviceattestationdeviceinfo/certificationdeclaration.md)
+- [var certificationDeclaration: Data?](./mtrdeviceattestationdeviceinfo/certificationdeclaration.md)
   The certification declaration of the device, if available.  This is a DER-encoded string representing a CMS-formatted certification declaration.  May be nil only if attestation verification failed.
-- [var elementsSignature: Data](mtrdeviceattestationdeviceinfo/elementssignature.md)
+- [var elementsSignature: Data](./mtrdeviceattestationdeviceinfo/elementssignature.md)
   A signature, using the device attestation private key of the device that sent the attestation information, over the concatenation of elementsTLV and attestationChallenge.
-- [var elementsTLV: Data](mtrdeviceattestationdeviceinfo/elementstlv.md)
+- [var elementsTLV: Data](./mtrdeviceattestationdeviceinfo/elementstlv.md)
   The TLV-encoded attestation_elements_message that was used to find the certificationDeclaration (possibly unsuccessfully).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UITextFormattingViewController.ComponentKey
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Predefined text formatting view controller components.
 
@@ -17,27 +18,32 @@ Predefined text formatting view controller components.
 struct ComponentKey
 ```
 
+```c
+typedef NSString * UITextFormattingViewControllerComponentKey;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](uitextformattingviewcontroller/componentkey/init(rawvalue:).md)
+- [init(rawValue: String)](./componentkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UITextFormattingViewController.Highlight](uitextformattingviewcontroller/highlight.md)
+### Data Types
+- [UITextFormattingViewController.Highlight](./highlight.md)
   Text formatting highlight state.
-- [UITextFormattingViewController.TextAlignment](uitextformattingviewcontroller/textalignment.md)
+- [UITextFormattingViewController.TextAlignment](./textalignment.md)
   Text formatting horizontal alignment state.
-- [UITextFormattingViewController.TextList](uitextformattingviewcontroller/textlist.md)
+- [UITextFormattingViewController.TextList](./textlist.md)
   Text formatting text list state.
 
 

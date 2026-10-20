@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum task_transition_type : unsigned int {
     ...
 };
@@ -17,7 +17,7 @@ enum task_transition_type : unsigned int {
 ## Topics
 
 ### Constants
-- [kTaskIsTerminated](task_transition_type/ktaskisterminated.md)
+- [kTaskIsTerminated](./task_transition_type/ktaskisterminated.md)
 
 
 ---

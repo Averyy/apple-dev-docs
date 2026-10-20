@@ -1,7 +1,8 @@
 # ndArray
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array that the value wraps.
 
@@ -24,9 +25,10 @@ This property is `nil` when the value contains an image instead of an array. Acc
 
 ## See Also
 
-- [var kind: InferenceValue.Kind](inferencevalue/kind-swift.property.md)
+### Inspecting a value
+- [var kind: InferenceValue.Kind](./kind-swift.property.md)
   The kind of data this value contains.
-- [var pixelBuffer: CVMutablePixelBuffer?](inferencevalue/pixelbuffer.md)
+- [var pixelBuffer: CVMutablePixelBuffer?](./pixelbuffer.md)
   Consume this value to access the underlying pixel buffer.
 
 

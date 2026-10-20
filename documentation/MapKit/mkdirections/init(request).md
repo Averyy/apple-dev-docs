@@ -1,7 +1,8 @@
 # init(request:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a directions object using the specified request.
 
@@ -20,13 +21,17 @@ Creates and returns a directions object using the specified request.
 init(request: MKDirections.Request)
 ```
 
+```objc
+- (instancetype) initWithRequest:(MKDirectionsRequest *) request;
+```
+
 #### Return Value
 
 An initialized directions object.
 
 #### Discussion
 
-After initializing your directions object, you must call the [`calculate(completionHandler:)`](mkdirections/calculate(completionhandler:).md) or [`calculateETA(completionHandler:)`](mkdirections/calculateeta(completionhandler:).md) method to perform the request.
+After initializing your directions object, you must call the [`calculate(completionHandler:)`](./calculate%28completionhandler%29.md) or [`calculateETA(completionHandler:)`](./calculateeta%28completionhandler%29.md) method to perform the request.
 
 ## Parameters
 
@@ -34,10 +39,12 @@ After initializing your directions object, you must call the [`calculate(complet
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [MKDirections.Request](mkdirections/request.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a directions object
+- [MKDirections.Request](./request.md)
   The start and end points of a route, along with the planned mode of transportation.
-- [MKDirections.RoutePreference](mkdirections/routepreference.md)
+- [MKDirections.RoutePreference](./routepreference.md)
   Options that modify how the framework selects routes when calculating directions.
 
 

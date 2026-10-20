@@ -1,7 +1,8 @@
 # NSMenu.SelectionMode.selectOne
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A selection mode where someone can select at most one menu item in the same selection group at the same time.
 
@@ -14,15 +15,20 @@ A selection mode where someone can select at most one menu item in the same sele
 case selectOne
 ```
 
+```c
+NSMenuSelectionModeSelectOne
+```
+
 #### Discussion
 
 A change in selection deselects any previously selected item.
 
 ## See Also
 
-- [NSMenu.SelectionMode.automatic](nsmenu/selectionmode-swift.enum/automatic.md)
+### Defining the selection mode
+- [NSMenu.SelectionMode.automatic](./automatic.md)
   A selection mode where the menu determines the appropriate selection mode based on the context and its constants.
-- [NSMenu.SelectionMode.selectAny](nsmenu/selectionmode-swift.enum/selectany.md)
+- [NSMenu.SelectionMode.selectAny](./selectany.md)
   A selection mode where someone can select multiple items in the menu.
 
 

@@ -1,7 +1,8 @@
 # EntityRotationGestureRecognizer
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gesture recognizer that uses rotation gestures involving two touches to rotate a given entity.
 
@@ -20,38 +21,39 @@ A gesture recognizer that uses rotation gestures involving two touches to rotate
 ## Topics
 
 ### Creating a recognizer
-- [init(target: Any?, action: Selector?)](entityrotationgesturerecognizer/init(target:action:).md)
+- [init(target: Any?, action: Selector?)](./entityrotationgesturerecognizer/init%28target,action%29.md)
 ### Using the recognizer
-- [var entity: (any HasCollision)?](entityrotationgesturerecognizer/entity.md)
+- [var entity: (any HasCollision)?](./entityrotationgesturerecognizer/entity.md)
   The entity the receiver is associated with
-- [func canPrevent(UIGestureRecognizer) -> Bool](entityrotationgesturerecognizer/canprevent(_:).md)
-- [func touchesBegan(Set<UITouch>, with: UIEvent)](entityrotationgesturerecognizer/touchesbegan(_:with:).md)
+- [func canPrevent(UIGestureRecognizer) -> Bool](./entityrotationgesturerecognizer/canprevent%28_%29.md)
+- [func touchesBegan(Set<UITouch>, with: UIEvent)](./entityrotationgesturerecognizer/touchesbegan%28_,with%29.md)
   Sent to the gesture recognizer when one or more fingers touch down on the associated entity.
 
 ## Relationships
 
 ### Inherits From
-- [UIRotationGestureRecognizer](../uikit/uirotationgesturerecognizer.md)
+- [UIRotationGestureRecognizer](../UIKit/uirotationgesturerecognizer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [EntityGestureRecognizer](entitygesturerecognizer.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [EntityGestureRecognizer](./entitygesturerecognizer.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ARView.EntityGestures](arview/entitygestures.md)
+### UIKit and AppKit gestures
+- [ARView.EntityGestures](./arview/entitygestures.md)
   The set of possible entity gesture recognizers.
-- [class EntityScaleGestureRecognizer](entityscalegesturerecognizer.md)
+- [class EntityScaleGestureRecognizer](./entityscalegesturerecognizer.md)
   A gesture recognizer that uses a pinch gesture to scale or zoom an entity.
-- [class EntityTranslationGestureRecognizer](entitytranslationgesturerecognizer.md)
+- [class EntityTranslationGestureRecognizer](./entitytranslationgesturerecognizer.md)
   A gesture recognizer that uses a pan gesture to move an entity.
-- [protocol EntityGestureRecognizer](entitygesturerecognizer.md)
+- [protocol EntityGestureRecognizer](./entitygesturerecognizer.md)
   A gesture recognizer that works on entities.
 
 

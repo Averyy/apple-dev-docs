@@ -1,7 +1,8 @@
 # Dock.StaticItem.Tile-data.File-data
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 For Apple use only.
 
@@ -10,7 +11,7 @@ For Apple use only.
 
 ## Declaration
 
-```swift
+```
 object Dock.StaticItem.Tile-data.File-data
 ```
 

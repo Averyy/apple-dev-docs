@@ -1,7 +1,8 @@
 # init(bufferIndex:bufferOffset:bufferStride:stepFunction:stepRate:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layout with the given buffer index, offset, stride, step function, and step rate.
 

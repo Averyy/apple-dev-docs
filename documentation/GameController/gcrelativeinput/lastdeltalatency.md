@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time in seconds between the current and the previous delta values.
@@ -20,17 +21,22 @@ The time in seconds between the current and the previous delta values.
 var lastDeltaLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastDeltaLatency;
+```
+
 #### Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event.
 
 ## See Also
 
-- [var delta: Float](gcrelativeinput/delta.md)
+### Getting the delta value and timestamp
+- [var delta: Float](./delta.md)
   The most recent amount of change in values that the profile records.
-- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](gcrelativeinput/deltadidchangehandler.md)
+- [var deltaDidChangeHandler: ((any GCPhysicalInputElement, any GCRelativeInput, Float) -> Void)?](./deltadidchangehandler.md)
   The block that the profile calls when the element’s input changes.
-- [var lastDeltaTimestamp: TimeInterval](gcrelativeinput/lastdeltatimestamp.md)
+- [var lastDeltaTimestamp: TimeInterval](./lastdeltatimestamp.md)
   A timestamp for when the profile reports the delta value.
 
 

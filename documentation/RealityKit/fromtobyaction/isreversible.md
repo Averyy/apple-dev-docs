@@ -1,7 +1,8 @@
 # isReversible
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether you can play this action in reverse in order to undo prior operations.
 

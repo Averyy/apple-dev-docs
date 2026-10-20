@@ -1,18 +1,19 @@
 # size()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the size of the texture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Gets the size of the texture.
 func size() -> CGSize
 ```
 
+```objc
+- (CGSize) size;
+```
+
 ## Mentions
 
-- [Loading and Using Textures](loading-and-using-textures.md)
+- [Loading and Using Textures](../loading-and-using-textures.md)
 
 #### Return Value
 
@@ -34,7 +39,8 @@ If the texture was created using an image file and that image file hasn’t been
 
 ## See Also
 
-- [func textureRect() -> CGRect](sktexture/texturerect.md)
+### Reading a Texture’s Size and Optional Source Location
+- [func textureRect() -> CGRect](./texturerect%28%29.md)
   Gets a rectangle that defines the portion of the texture used to render its image.
 
 

@@ -1,7 +1,8 @@
 # points()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of map points associated with the shape.
 
@@ -20,22 +21,28 @@ Returns an array of map points associated with the shape.
 func points() -> UnsafeMutablePointer<MKMapPoint>
 ```
 
+```objc
+- (MKMapPoint *) points;
+```
+
 #### Return Value
 
-An unsafe mutable array of [`MKMapPoint`](mkmappoint.md) structures.
+An unsafe mutable array of [`MKMapPoint`](../mkmappoint.md) structures.
 
 #### Discussion
 
-The [`pointCount`](mkmultipoint/pointcount.md) property specifies the number of points in the array.
+The [`pointCount`](./pointcount.md) property specifies the number of points in the array.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var pointCount: Int](mkmultipoint/pointcount.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Accessing the points in the shape
+- [var pointCount: Int](./pointcount.md)
   The number of points associated with the shape.
-- [func location(atPointIndex: Int) -> CGFloat](mkmultipoint/location(atpointindex:).md)
+- [func location(atPointIndex: Int) -> CGFloat](./location%28atpointindex%29.md)
   Translates a point index into a unit distance along the shape.
-- [func locations(at: IndexSet) -> [CGFloat]](mkmultipoint/locations(at:).md)
+- [func locations(at: IndexSet) -> [CGFloat]](./locations%28at%29.md)
   Translates a point index set into a unit distance along the shape.
 
 

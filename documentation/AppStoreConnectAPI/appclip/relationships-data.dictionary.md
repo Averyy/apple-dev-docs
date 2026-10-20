@@ -1,7 +1,8 @@
 # AppClip.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships of the App Clips resource you included in the request and those on which you can operate.
 
@@ -10,19 +11,19 @@ The relationships of the App Clips resource you included in the request and thos
 
 ## Declaration
 
-```swift
+```
 object AppClip.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClip.Relationships.App](appclip/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppClip.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the App Clips and the Apps resource.
-- [object AppClip.Relationships.AppClipDefaultExperiences](appclip/relationships-data.dictionary/appclipdefaultexperiences-data.dictionary.md)
+- [object AppClip.Relationships.AppClipDefaultExperiences](./relationships-data.dictionary/appclipdefaultexperiences-data.dictionary.md)
   The data and links that describe the relationship between the App Clips and the Default App Clip Experiences resources.
 ### Dictionaries
-- [object AppClip.Relationships.AppClipAdvancedExperiences](appclip/relationships-data.dictionary/appclipadvancedexperiences-data.dictionary.md)
+- [object AppClip.Relationships.AppClipAdvancedExperiences](./relationships-data.dictionary/appclipadvancedexperiences-data.dictionary.md)
 
 ## Properties
 
@@ -32,7 +33,8 @@ object AppClip.Relationships
 
 ## See Also
 
-- [object AppClip.Attributes](appclip/attributes-data.dictionary.md)
+### Objects
+- [object AppClip.Attributes](./attributes-data.dictionary.md)
   The attributes that describe an App Clips resource.
 
 

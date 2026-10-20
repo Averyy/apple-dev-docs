@@ -1,7 +1,8 @@
 # init(isOn:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle that displays a custom label.
 
@@ -28,11 +29,12 @@ init(isOn: Binding<Bool>, @ContentBuilder label: () -> Label)
 
 ## See Also
 
-- [init(_:isOn:)](toggle/init(_:ison:).md)
+### Creating a toggle
+- [init(_:isOn:)](./init%28_,ison%29.md)
   Creates a toggle that generates its label from a localized string resource.
-- [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
+- [init(_:image:isOn:)](./init%28_,image,ison%29.md)
   Creates a toggle that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
+- [init(_:systemImage:isOn:)](./init%28_,systemimage,ison%29.md)
   Creates a toggle that generates its label from a localized string key and system image.
 
 

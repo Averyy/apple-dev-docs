@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of elements that the set can contain without allocating new storage.
 
@@ -20,11 +21,14 @@ The total number of elements that the set can contain without allocating new sto
 var capacity: Int { get }
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## See Also
 
-- [var isEmpty: Bool](set/isempty.md)
+### Inspecting a Set
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the set is empty.
-- [var count: Int](set/count.md)
+- [var count: Int](./count.md)
   The number of elements in the set.
 
 

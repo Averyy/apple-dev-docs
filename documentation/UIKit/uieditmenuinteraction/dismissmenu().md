@@ -1,7 +1,8 @@
 # dismissMenu()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismiss the edit menu if present.
 
@@ -17,21 +18,26 @@ Dismiss the edit menu if present.
 func dismissMenu()
 ```
 
+```objc
+- (void) dismissMenu;
+```
+
 #### Discussion
 
 You use this method to dismiss the menu, for example, from an observer callback in your app.
 
 ## See Also
 
-- [var delegate: (any UIEditMenuInteractionDelegate)?](uieditmenuinteraction/delegate.md)
+### Managing edit menu interactions
+- [var delegate: (any UIEditMenuInteractionDelegate)?](./delegate.md)
   An object that customizes presentation of the menu and actions to display for an edit menu interaction.
-- [func presentEditMenu(with: UIEditMenuConfiguration)](uieditmenuinteraction/presenteditmenu(with:).md)
+- [func presentEditMenu(with: UIEditMenuConfiguration)](./presenteditmenu%28with%29.md)
   Presents an edit menu using the object you provide for configuration.
-- [func reloadVisibleMenu()](uieditmenuinteraction/reloadvisiblemenu.md)
+- [func reloadVisibleMenu()](./reloadvisiblemenu%28%29.md)
   Updates the actions an edit menu displays.
-- [func updateVisibleMenuPosition(animated: Bool)](uieditmenuinteraction/updatevisiblemenuposition(animated:).md)
+- [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)
   Updates the position of the currently visible menu with an option to animate the action.
-- [func location(in: UIView?) -> CGPoint](uieditmenuinteraction/location(in:).md)
+- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
   Returns the location of the user interaction in the specified view’s coordinate system.
 
 

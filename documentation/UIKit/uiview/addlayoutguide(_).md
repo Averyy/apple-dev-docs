@@ -1,7 +1,8 @@
 # addLayoutGuide(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified layout guide to the view.
 
@@ -18,9 +19,13 @@ Adds the specified layout guide to the view.
 func addLayoutGuide(_ layoutGuide: UILayoutGuide)
 ```
 
+```objc
+- (void) addLayoutGuide:(UILayoutGuide *) layoutGuide;
+```
+
 #### Discussion
 
-This method adds the specified layout guide to the end of the view’s [`layoutGuides`](uiview/layoutguides.md) array. It also assigns the view to the guide’s [`owningView`](uilayoutguide/owningview.md) property. Each guide can have only one owning view.
+This method adds the specified layout guide to the end of the view’s [`layoutGuides`](./layoutguides.md) array. It also assigns the view to the guide’s [`owningView`](../uilayoutguide/owningview.md) property. Each guide can have only one owning view.
 
 After the guide has been added to a view, it can participate in Auto Layout constraints with that view’s hierarchy.
 
@@ -30,13 +35,14 @@ After the guide has been added to a view, it can participate in Auto Layout cons
 
 ## See Also
 
-- [var layoutGuides: [UILayoutGuide]](uiview/layoutguides.md)
+### Working with layout guides
+- [var layoutGuides: [UILayoutGuide]](./layoutguides.md)
   The array of layout guide objects owned by this view.
-- [var layoutMarginsGuide: UILayoutGuide](uiview/layoutmarginsguide.md)
+- [var layoutMarginsGuide: UILayoutGuide](./layoutmarginsguide.md)
   A layout guide representing the view’s margins.
-- [var readableContentGuide: UILayoutGuide](uiview/readablecontentguide.md)
+- [var readableContentGuide: UILayoutGuide](./readablecontentguide.md)
   A layout guide representing an area with a readable width within the view.
-- [func removeLayoutGuide(UILayoutGuide)](uiview/removelayoutguide(_:).md)
+- [func removeLayoutGuide(UILayoutGuide)](./removelayoutguide%28_%29.md)
   Removes the specified layout guide from the view.
 
 

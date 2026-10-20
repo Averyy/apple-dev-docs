@@ -1,7 +1,8 @@
 # compatibility
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines interoperability of pixel buffers with other frameworks
 

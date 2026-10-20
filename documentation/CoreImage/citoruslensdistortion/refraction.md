@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@
 var refraction: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float refraction;
+```
+
 ## See Also
 
-- [var center: CGPoint](citoruslensdistortion/center.md)
-- [var inputImage: CIImage?](citoruslensdistortion/inputimage.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var radius: Float](citoruslensdistortion/radius.md)
-- [var width: Float](citoruslensdistortion/width.md)
+- [var radius: Float](./radius.md)
+- [var width: Float](./width.md)
 
 
 ---

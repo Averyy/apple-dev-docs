@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ThreadNetwork  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the client object.
 
@@ -17,6 +18,10 @@ Creates the client object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

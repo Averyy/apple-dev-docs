@@ -1,16 +1,17 @@
 # willTerminateNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the app is about to terminate.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,23 +20,28 @@ nonisolated
 class let willTerminateNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIApplicationWillTerminateNotification;
+```
+
 #### Discussion
 
-This notification is associated with the delegate [`applicationWillTerminate(_:)`](uiapplicationdelegate/applicationwillterminate(_:).md) method. This notification does not contain a `userInfo` dictionary.
+This notification is associated with the delegate [`applicationWillTerminate(_:)`](../uiapplicationdelegate/applicationwillterminate%28_%29.md) method. This notification does not contain a `userInfo` dictionary.
 
 ## See Also
 
-- [func applicationDidEnterBackground(UIApplication)](uiapplicationdelegate/applicationdidenterbackground(_:).md)
+### Responding to app life-cycle events
+- [func applicationDidEnterBackground(UIApplication)](../uiapplicationdelegate/applicationdidenterbackground%28_%29.md)
   Tells the delegate that the app is now in the background.
-- [func applicationWillTerminate(UIApplication)](uiapplicationdelegate/applicationwillterminate(_:).md)
+- [func applicationWillTerminate(UIApplication)](../uiapplicationdelegate/applicationwillterminate%28_%29.md)
   Tells the delegate when the app is about to terminate.
-- [class let didBecomeActiveNotification: NSNotification.Name](uiapplication/didbecomeactivenotification.md)
+- [class let didBecomeActiveNotification: NSNotification.Name](./didbecomeactivenotification.md)
   A notification that posts when the app becomes active.
-- [class let didEnterBackgroundNotification: NSNotification.Name](uiapplication/didenterbackgroundnotification.md)
+- [class let didEnterBackgroundNotification: NSNotification.Name](./didenterbackgroundnotification.md)
   A notification that posts when the app enters the background.
-- [class let willEnterForegroundNotification: NSNotification.Name](uiapplication/willenterforegroundnotification.md)
+- [class let willEnterForegroundNotification: NSNotification.Name](./willenterforegroundnotification.md)
   A notification that posts shortly before your app’s UI transitions to the foreground.
-- [class let willResignActiveNotification: NSNotification.Name](uiapplication/willresignactivenotification.md)
+- [class let willResignActiveNotification: NSNotification.Name](./willresignactivenotification.md)
   A notification that posts when the app is no longer active and loses focus.
 
 

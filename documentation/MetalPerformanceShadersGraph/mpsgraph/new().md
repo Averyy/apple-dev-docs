@@ -1,7 +1,8 @@
 # new()
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new graph to insert nodes in.
 
@@ -17,6 +18,10 @@ Creates a new graph to insert nodes in.
 
 ```swift
 class func new() -> Self
+```
+
+```objc
++ (instancetype) new;
 ```
 
 

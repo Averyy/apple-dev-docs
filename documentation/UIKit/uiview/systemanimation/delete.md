@@ -1,7 +1,8 @@
 # UIView.SystemAnimation.delete
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Option to remove views from the view hierarchy when animation is complete.
 
@@ -9,13 +10,17 @@ Option to remove views from the view hierarchy when animation is complete.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 case delete
+```
+
+```c
+UISystemAnimationDelete
 ```
 
 

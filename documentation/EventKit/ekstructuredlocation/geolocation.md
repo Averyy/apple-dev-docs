@@ -1,7 +1,8 @@
 # geoLocation
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The core location.
 
@@ -19,15 +20,20 @@ The core location.
 var geoLocation: CLLocation? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CLLocation * geoLocation;
+```
+
 ## Mentions
 
-- [Setting an alarm](setting-an-alarm.md)
+- [Setting an alarm](../setting-an-alarm.md)
 
 ## See Also
 
-- [var title: String?](ekstructuredlocation/title.md)
+### Accessing Structured Location Properties
+- [var title: String?](./title.md)
   The title of the location.
-- [var radius: Double](ekstructuredlocation/radius.md)
+- [var radius: Double](./radius.md)
   A minimum distance from the core location that would trigger the alarm or reminder.
 
 

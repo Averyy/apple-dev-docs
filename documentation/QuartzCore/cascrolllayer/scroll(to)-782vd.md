@@ -1,7 +1,8 @@
 # scroll(to:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scroll the contents of the receiver to ensure that the rectangle is visible.
 
@@ -19,13 +20,18 @@ Scroll the contents of the receiver to ensure that the rectangle is visible.
 func scroll(to r: CGRect)
 ```
 
+```objc
+- (void) scrollToRect:(CGRect) r;
+```
+
 ## Parameters
 
 - `r`: The rectangle that should be visible.
 
 ## See Also
 
-- [func scroll(to: CGPoint)](cascrolllayer/scroll(to:)-37q0p.md)
+### Scrolling the layer
+- [func scroll(to: CGPoint)](./scroll%28to%29-37q0p.md)
   Changes the origin of the receiver to the specified point.
 
 

@@ -35,7 +35,7 @@ Prefix operators take one argument,
 the expression that follows them.
 
 For information about the behavior of these operators,
-see [Basic Operators](BasicOperators.md) and [Advanced Operators](AdvancedOperators.md).
+see [Basic Operators](../LanguageGuide/BasicOperators.md) and [Advanced Operators](../LanguageGuide/AdvancedOperators.md).
 
 For information about the operators provided by the Swift standard library,
 see [Operator Declarations](https://developer.apple.com/documentation/swift/operator_declarations).
@@ -56,7 +56,7 @@ as an in-out argument to a function call expression.
 ```
 
 For more information about in-out parameters and to see an example,
-see [In Out Parameters](Functions.md#In-Out-Parameters).
+see [In-Out Parameters](../LanguageGuide/Functions.md#In-Out-Parameters).
 
 In-out expressions are also used
 when providing a non-pointer argument
@@ -180,7 +180,7 @@ the `try` operator must appear first.
 -->
 
 For more information and to see examples of how to use `try`, `try?`, and `try!`,
-see [Error Handling](ErrorHandling.md).
+see [Error Handling](../LanguageGuide/ErrorHandling.md).
 
 > Grammar of a try expression:
 >
@@ -303,7 +303,7 @@ It has the following form:
 ```
 
 For information about the behavior of these operators,
-see [Basic Operators](BasicOperators.md) and [Advanced Operators](AdvancedOperators.md).
+see [Basic Operators](../LanguageGuide/BasicOperators.md) and [Advanced Operators](../LanguageGuide/AdvancedOperators.md).
 
 For information about the operators provided by the Swift standard library,
 see [Operator Declarations](https://developer.apple.com/documentation/swift/operator_declarations).
@@ -396,7 +396,7 @@ and returns its value.
 The unused expression isn't evaluated.
 
 For an example that uses the ternary conditional operator,
-see [Ternary Conditional Operator](BasicOperators.md#Ternary-Conditional-Operator).
+see [Ternary Conditional Operator](../LanguageGuide/BasicOperators.md#Ternary-Conditional-Operator).
 
 > Grammar of a conditional operator:
 >
@@ -522,7 +522,7 @@ The behavior of `x as! T` is the same as the behavior of `(x as? T)!`.
 
 For more information about type casting
 and to see examples that use the type-casting operators,
-see [Type Casting](TypeCasting.md).
+see [Type Casting](../LanguageGuide/TypeCasting.md).
 
 > Grammar of a type-casting operator:
 >
@@ -1007,7 +1007,7 @@ if it's called immediately
 or passed as a nonescaping function argument.
 Otherwise, the closure expression is escaping.
 
-For more information about escaping closures, see [Escaping Closures](Closures.md#Escaping-Closures).
+For more information about escaping closures, see [Escaping Closures](../LanguageGuide/Closures.md#Escaping-Closures).
 
 #### Capture Lists
 
@@ -1228,9 +1228,9 @@ myFunction { [weak parent = self.parent] in print(parent!.title) }
 -->
 
 For more information and examples of closure expressions,
-see [Closure Expressions](Closures.md#Closure-Expressions).
+see [Closure Expressions](../LanguageGuide/Closures.md#Closure-Expressions).
 For more information and examples of capture lists,
-see [Resolving Strong Reference Cycles for Closures](AutomaticReferenceCounting.md#Resolving-Strong-Reference-Cycles-for-Closures).
+see [Resolving Strong Reference Cycles for Closures](../LanguageGuide/AutomaticReferenceCounting.md#Resolving-Strong-Reference-Cycles-for-Closures).
 
 <!--
   - test: `async-throwing-closure-syntax`
@@ -1602,7 +1602,7 @@ Swift forms the overall expansion
 by collecting all of the generated AST nodes
 and putting them in their corresponding places in the AST.
 
-For an overview of macros in Swift, see [Macros](Macros.md).
+For an overview of macros in Swift, see [Macros](../LanguageGuide/Macros.md).
 
 > Grammar of a macro-expansion expression:
 >
@@ -2273,7 +2273,7 @@ to an expression.
 Syntactically, every primary expression is also a postfix expression.
 
 For information about the behavior of these operators,
-see [Basic Operators](BasicOperators.md) and [Advanced Operators](AdvancedOperators.md).
+see [Basic Operators](../LanguageGuide/BasicOperators.md) and [Advanced Operators](../LanguageGuide/AdvancedOperators.md).
 
 For information about the operators provided by the Swift standard library,
 see [Operator Declarations](https://developer.apple.com/documentation/swift/operator_declarations).

@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The state of the transition that the system provides to the delegate object.
 
@@ -24,33 +25,34 @@ Not all transitions are `.completed`, instead they are `.reversed` back to the `
 ## Topics
 
 ### Inspecting the transition
-- [let fromExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/fromexperience.md)
+- [let fromExperience: AVExperienceController.Experience](./transitioncontext/fromexperience.md)
   The experience of the `AVExperienceController` before the transition was initiated.
-- [let toExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/toexperience.md)
+- [let toExperience: AVExperienceController.Experience](./transitioncontext/toexperience.md)
   The experience to which the `AVExperienceController` has been requested to transition to.
-- [let status: AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.property.md)
+- [let status: AVExperienceController.TransitionContext.Status](./transitioncontext/status-swift.property.md)
   The status of the transition.
 ### Understanding transition results
-- [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
+- [AVExperienceController.TransitionContext.Status](./transitioncontext/status-swift.enum.md)
   Describes the status of a transition.
-- [AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transitioncontext/transitionresult.md)
+- [AVExperienceController.TransitionContext.TransitionResult](./transitioncontext/transitionresult.md)
   Describes the result of a transition.
-- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
+- [AVExperienceController.TransitionContext.ReversedReason](./transitioncontext/reversedreason.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangeavailableexperiences:).md)
+### Responding to experience changes
+- [func experienceController(AVExperienceController, didChangeAvailableExperiences: AVExperienceController.Experiences)](./delegate-swift.protocol/experiencecontroller%28_,didchangeavailableexperiences%29.md)
   Tells the delegate when the available experiences change.
-- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:preparefortransitionusing:).md)
+- [func experienceController(AVExperienceController, prepareForTransitionUsing: AVExperienceController.TransitionContext) async](./delegate-swift.protocol/experiencecontroller%28_,preparefortransitionusing%29.md)
   Tells the delegate that the system is preparing for a transition.
-- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](avexperiencecontroller/delegate-swift.protocol/experiencecontroller(_:didchangetransitioncontext:).md)
+- [func experienceController(AVExperienceController, didChangeTransitionContext: AVExperienceController.TransitionContext)](./delegate-swift.protocol/experiencecontroller%28_,didchangetransitioncontext%29.md)
   Tells the delegate when the transition context changes during a transition.
 
 

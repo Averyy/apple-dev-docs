@@ -1,7 +1,8 @@
 # MPSRNNDescriptor
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a recursive neural network block or layer.
 
@@ -19,36 +20,41 @@ A description of a recursive neural network block or layer.
 class MPSRNNDescriptor
 ```
 
+```objc
+@interface MPSRNNDescriptor : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var inputFeatureChannels: Int](mpsrnndescriptor/inputfeaturechannels.md)
-- [var layerSequenceDirection: MPSRNNSequenceDirection](mpsrnndescriptor/layersequencedirection.md)
-- [var outputFeatureChannels: Int](mpsrnndescriptor/outputfeaturechannels.md)
-- [var useFloat32Weights: Bool](mpsrnndescriptor/usefloat32weights.md)
-- [var useLayerInputUnitTransformMode: Bool](mpsrnndescriptor/uselayerinputunittransformmode.md)
+- [var inputFeatureChannels: Int](./mpsrnndescriptor/inputfeaturechannels.md)
+- [var layerSequenceDirection: MPSRNNSequenceDirection](./mpsrnndescriptor/layersequencedirection.md)
+- [var outputFeatureChannels: Int](./mpsrnndescriptor/outputfeaturechannels.md)
+- [var useFloat32Weights: Bool](./mpsrnndescriptor/usefloat32weights.md)
+- [var useLayerInputUnitTransformMode: Bool](./mpsrnndescriptor/uselayerinputunittransformmode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MPSGRUDescriptor](mpsgrudescriptor.md)
-- [MPSLSTMDescriptor](mpslstmdescriptor.md)
-- [MPSRNNSingleGateDescriptor](mpsrnnsinglegatedescriptor.md)
+- [MPSGRUDescriptor](./mpsgrudescriptor.md)
+- [MPSLSTMDescriptor](./mpslstmdescriptor.md)
+- [MPSRNNSingleGateDescriptor](./mpsrnnsinglegatedescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnimageinferencelayer/init(coder:device:).md)
-- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](mpsrnnimageinferencelayer/init(device:rnndescriptor:).md)
-- [init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])](mpsrnnimageinferencelayer/init(device:rnndescriptors:).md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsrnnimageinferencelayer/init%28coder,device%29.md)
+- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](./mpsrnnimageinferencelayer/init%28device,rnndescriptor%29.md)
+- [init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])](./mpsrnnimageinferencelayer/init%28device,rnndescriptors%29.md)
 
 
 ---

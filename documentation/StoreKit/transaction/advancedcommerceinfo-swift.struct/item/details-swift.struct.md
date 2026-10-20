@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Item.Details
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The item details.
 
@@ -23,26 +24,26 @@ struct Details
 ## Topics
 
 ### Instance Properties
-- [let description: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/description.md)
+- [let description: String](./details-swift.struct/description.md)
   The description of the item.
-- [let displayName: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/displayname.md)
+- [let displayName: String](./details-swift.struct/displayname.md)
   The display name of the item.
-- [let offer: Transaction.AdvancedCommerceInfo.Offer?](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/offer.md)
+- [let offer: Transaction.AdvancedCommerceInfo.Offer?](./details-swift.struct/offer.md)
   The offer applied to the purchase of this item, if any.
-- [let price: Decimal](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/price.md)
+- [let price: Decimal](./details-swift.struct/price.md)
   The price of the item.
-- [let sku: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/sku.md)
+- [let sku: String](./details-swift.struct/sku.md)
   Unique identifier for the item.
-- [let partners: [Transaction.AdvancedCommerceInfo.Partner]](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/partners.md)
+- [let partners: [Transaction.AdvancedCommerceInfo.Partner]](./details-swift.struct/partners.md)
   The partners associated with this item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

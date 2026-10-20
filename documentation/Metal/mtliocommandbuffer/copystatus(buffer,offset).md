@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that writes the input/output command buffer’s status to a buffer.
@@ -20,6 +21,10 @@ Encodes a command that writes the input/output command buffer’s status to a bu
 func copyStatus(buffer: any MTLBuffer, offset: Int)
 ```
 
+```objc
+- (void) copyStatusToBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset;
+```
+
 ## Parameters
 
 - `buffer`: A buffer instance the method copies the status into.
@@ -27,7 +32,8 @@ func copyStatus(buffer: any MTLBuffer, offset: Int)
 
 ## See Also
 
-- [func addCompletedHandler(MTLIOCommandBufferHandler)](mtliocommandbuffer/addcompletedhandler(_:).md)
+### Adding final commands
+- [func addCompletedHandler(MTLIOCommandBufferHandler)](./addcompletedhandler%28_%29.md)
   Adds a closure that Metal calls immediately after the GPU finishes executing the commands in the input/output command buffer.
 
 

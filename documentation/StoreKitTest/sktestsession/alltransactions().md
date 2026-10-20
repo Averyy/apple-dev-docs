@@ -1,7 +1,8 @@
 # allTransactions()
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a list of all transactions in the test environment.
 
@@ -20,6 +21,10 @@ Gets a list of all transactions in the test environment.
 func allTransactions() -> [SKTestTransaction]
 ```
 
+```objc
+- (NSArray<SKTestTransaction *> *) allTransactions;
+```
+
 #### Return Value
 
 An array that contains all transactions.
@@ -36,9 +41,10 @@ Use this list to work with Ask to Buy, to refund a specific transaction, or dele
 
 ## See Also
 
-- [func deleteTransaction(identifier: Int) throws](sktestsession/deletetransaction(identifier:).md)
+### Managing transactions in the test environment
+- [func deleteTransaction(identifier: Int) throws](./deletetransaction%28identifier%29.md)
   Deletes a specific transaction from the test environment.
-- [func clearTransactions()](sktestsession/cleartransactions.md)
+- [func clearTransactions()](./cleartransactions%28%29.md)
   Removes all transactions from the test environment.
 
 

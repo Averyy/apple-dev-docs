@@ -1,7 +1,8 @@
 # init(layoutSize:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item of the specified size.
 
@@ -18,9 +19,14 @@ Creates an item of the specified size.
 convenience init(layoutSize: NSCollectionLayoutSize)
 ```
 
+```objc
++ (instancetype) itemWithLayoutSize:(NSCollectionLayoutSize *) layoutSize;
+```
+
 ## See Also
 
-- [convenience init(layoutSize: NSCollectionLayoutSize, supplementaryItems: [NSCollectionLayoutSupplementaryItem])](nscollectionlayoutitem/init(layoutsize:supplementaryitems:).md)
+### Creating an item
+- [convenience init(layoutSize: NSCollectionLayoutSize, supplementaryItems: [NSCollectionLayoutSupplementaryItem])](./init%28layoutsize,supplementaryitems%29.md)
   Creates an item of the specified size with an array of supplementary items to attach to the item.
 
 

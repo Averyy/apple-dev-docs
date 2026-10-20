@@ -1,7 +1,8 @@
 # positionable
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to anchor this calibration in mixed reality 3D space rather than centering it on the person’s eye position.
 

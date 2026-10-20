@@ -1,7 +1,8 @@
 # kSecWritePermStatus
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the keychain is writable.
 
@@ -13,6 +14,10 @@ Indicates the keychain is writable.
 
 ```swift
 var kSecWritePermStatus: UInt32 { get }
+```
+
+```c
+kSecWritePermStatus
 ```
 
 

@@ -1,7 +1,8 @@
 # InsightEvaluator.EvaluationError.rateLimitExceeded
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework has received too many requests.
 
@@ -21,15 +22,16 @@ This may be due too many evaluation requests either for the app on the particula
 
 ## See Also
 
-- [InsightEvaluator.EvaluationError.contextInvalid(_:)](insightevaluator/evaluationerror/contextinvalid(_:).md)
+### Evaluation errors
+- [InsightEvaluator.EvaluationError.contextInvalid(_:)](./contextinvalid%28_%29.md)
   An error that indicates the framework couldn’t produce an evaluation for the provided context.
-- [InsightEvaluator.EvaluationError.denied](insightevaluator/evaluationerror/denied.md)
+- [InsightEvaluator.EvaluationError.denied](./denied.md)
   An error that indicates evaluations are unavailable due to a person’s options.
-- [InsightEvaluator.EvaluationError.localError](insightevaluator/evaluationerror/localerror.md)
+- [InsightEvaluator.EvaluationError.localError](./localerror.md)
   An error that indicates the framework couldn’t complete the evaluation.
-- [InsightEvaluator.EvaluationError.notAvailable](insightevaluator/evaluationerror/notavailable.md)
+- [InsightEvaluator.EvaluationError.notAvailable](./notavailable.md)
   An error that indicates evaluations are not available on this device.
-- [InsightEvaluator.EvaluationError.serverError](insightevaluator/evaluationerror/servererror.md)
+- [InsightEvaluator.EvaluationError.serverError](./servererror.md)
   An error that indicates the framework couldn’t complete the evaluation due to server or network issues.
 
 

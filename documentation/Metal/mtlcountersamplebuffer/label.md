@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the counter sample buffer.
@@ -20,15 +21,20 @@ A string that identifies the counter sample buffer.
 var label: String { get }
 ```
 
+```objc
+@property (readonly) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlcountersamplebuffer/device.md)
+### Inspecting the counter sample buffer’s configuration
+- [var device: any MTLDevice](./device.md)
   The GPU device instance that owns the counter sample buffer.
-- [var sampleCount: Int](mtlcountersamplebuffer/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples in the buffer.
 
 

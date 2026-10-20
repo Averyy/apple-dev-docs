@@ -10,15 +10,16 @@ An event that is fired when CloudKit JS is loaded. Used when `CloudKit.js` is lo
 
 ## Declaration
 
-```swift
+```
 const String CLOUDKIT_LOADED;
 ```
 
 ## See Also
 
-- [BUILD_VERSION](cloudkit/build_version.md)
+### Constants
+- [BUILD_VERSION](./build_version.md)
   The CloudKit JS build number.
-- [VERSION](cloudkit/version.md)
+- [VERSION](./version.md)
   The version of CloudKit JS.
 
 

@@ -1,7 +1,8 @@
 # defaultConfiguration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default configuration, if you don’t explicitly set one.
 
@@ -21,7 +22,8 @@ var defaultConfiguration: Entity.ConfigurationCatalog.Configuration { get }
 
 ## See Also
 
-- [var configurations: [String : Entity.ConfigurationCatalog.Configuration]](entity/configurationcatalog/configurationset/configurations.md)
+### Accessing configurations in a configuration set
+- [var configurations: [String : Entity.ConfigurationCatalog.Configuration]](./configurations.md)
   The alternative configurations that are available in a set.
 
 

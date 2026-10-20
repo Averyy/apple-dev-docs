@@ -1,7 +1,8 @@
 # program
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ var program: ShaderGraphMaterial.Program { get set }
 
 ## See Also
 
-- [ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.struct.md)
+### Accessing the program
+- [ShaderGraphMaterial.Program](./program-swift.struct.md)
 
 
 ---

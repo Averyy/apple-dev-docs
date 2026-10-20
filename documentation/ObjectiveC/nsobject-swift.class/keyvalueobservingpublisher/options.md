@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that determine which elements the publisher produces.
 
@@ -11,7 +12,7 @@ Options that determine which elements the publisher produces.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let options: NSKeyValueObservingOptions
 
 ## See Also
 
-- [let object: Subject](nsobject-swift.class/keyvalueobservingpublisher/object.md)
+### Inspecting KVO Publisher Properties
+- [let object: Subject](./object.md)
   The object that contains the property to publish.
-- [let keyPath: KeyPath<Subject, Value>](nsobject-swift.class/keyvalueobservingpublisher/keypath.md)
+- [let keyPath: KeyPath<Subject, Value>](./keypath.md)
   The key path, relative to the object receiving this message, of the property to publish.
 
 

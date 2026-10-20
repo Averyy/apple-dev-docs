@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The sharing and ownership state of the entity.

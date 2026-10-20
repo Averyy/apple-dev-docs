@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.notInteracted
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person doesn’t interact with a scheduled medication reminder.
 
@@ -17,6 +18,10 @@ The person doesn’t interact with a scheduled medication reminder.
 
 ```swift
 case notInteracted
+```
+
+```c
+HKMedicationDoseEventLogStatusNotInteracted
 ```
 
 #### Discussion

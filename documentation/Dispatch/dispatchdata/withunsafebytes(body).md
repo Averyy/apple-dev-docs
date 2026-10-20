@@ -1,16 +1,17 @@
 # withUnsafeBytes(body:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ func withUnsafeBytes<Result, ContentType>(body: (UnsafePointer<ContentType>) thr
 
 ## See Also
 
-- [init(bytes: UnsafeRawBufferPointer)](dispatchdata/init(bytes:)-9lrd.md)
+### Creating a Dispatch Data Structure
+- [init(bytes: UnsafeRawBufferPointer)](./init%28bytes%29-9lrd.md)
   Creates a new dispatch data object from the specified memory buffer.
-- [init(bytesNoCopy: UnsafeRawBufferPointer, deallocator: DispatchData.Deallocator)](dispatchdata/init(bytesnocopy:deallocator:)-vfoe.md)
+- [init(bytesNoCopy: UnsafeRawBufferPointer, deallocator: DispatchData.Deallocator)](./init%28bytesnocopy,deallocator%29-vfoe.md)
   Creates a new dispatch data object using the specified memory buffer and deallocator.
-- [DispatchData.Deallocator](dispatchdata/deallocator.md)
+- [DispatchData.Deallocator](./deallocator.md)
   Memory deallocators for dispatch data objects.
-- [static let empty: DispatchData](dispatchdata/empty.md)
+- [static let empty: DispatchData](./empty.md)
   A dispatch data object representing a zero-length memory region.
 
 

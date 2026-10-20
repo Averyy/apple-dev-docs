@@ -1,7 +1,8 @@
 # valueState
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Check if an IntentParameter was provided an initial value
 
@@ -20,12 +21,15 @@ Check if an IntentParameter was provided an initial value
 final var valueState: IntentParameter<Value>.ValueState { get }
 ```
 
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
+
 ## See Also
 
-- [let defaultValue: Value.UnwrappedType?](intentparameter/defaultvalue.md)
-- [var projectedValue: IntentParameter<Value>](intentparameter/projectedvalue.md)
-- [var wrappedValue: Value](intentparameter/wrappedvalue.md)
-- [IntentParameter.ValueState](intentparameter/valuestate-swift.enum.md)
+### Accessing the underlying value
+- [let defaultValue: Value.UnwrappedType?](./defaultvalue.md)
+- [var projectedValue: IntentParameter<Value>](./projectedvalue.md)
+- [var wrappedValue: Value](./wrappedvalue.md)
+- [IntentParameter.ValueState](./valuestate-swift.enum.md)
   Indicates whether an IntentParameter was provided an initial value or if it was unset
 
 

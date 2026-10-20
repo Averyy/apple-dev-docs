@@ -1,7 +1,8 @@
 # UDP
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The system definition of the User Datagram Protocol (UDP).
 
@@ -27,19 +28,19 @@ UDP supports sending and receiving datagrams.
 ## Topics
 
 ### Initializers
-- [init()](udp/init.md)
-- [init(() -> IP)](udp/init(_:).md)
+- [init()](./udp/init%28%29.md)
+- [init(() -> IP)](./udp/init%28_%29.md)
 ### Instance Methods
-- [func noChecksumPreferred(Bool) -> UDP](udp/nochecksumpreferred(_:).md)
+- [func noChecksumPreferred(Bool) -> UDP](./udp/nochecksumpreferred%28_%29.md)
   Skip computing checksums when sending UDP packets.
 
 ## Relationships
 
 ### Conforms To
-- [DatagramProtocol](datagramprotocol.md)
-- [MessageProtocol](messageprotocol.md)
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [DatagramProtocol](./datagramprotocol.md)
+- [MessageProtocol](./messageprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 
 
 ---

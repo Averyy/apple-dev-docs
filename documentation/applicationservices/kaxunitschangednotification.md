@@ -1,7 +1,8 @@
 # kAXUnitsChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the units have changed.
 
@@ -12,6 +13,10 @@ Notification that the units have changed.
 
 ```swift
 var kAXUnitsChangedNotification: String { get }
+```
+
+```c
+#define kAXUnitsChangedNotification
 ```
 
 

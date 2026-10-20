@@ -1,7 +1,8 @@
 # kSecAttrGeneric
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s user-defined attributes.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s user-defined attributes.
 let kSecAttrGeneric: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrGeneric;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains a user-defined attribute. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) have this attribute.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains a user-defined attribute. Items of class [`kSecClassGenericPassword`](./ksecclassgenericpassword.md) have this attribute.
 
 
 ---

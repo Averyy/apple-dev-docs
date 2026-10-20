@@ -1,7 +1,8 @@
 # documentDate
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The creation date of the scanned string.
 
@@ -26,11 +27,12 @@ Set `documentDate` to the creation date of the scanned string. For example, this
 
 ## See Also
 
-- [var documentLanguageCode: Locale.LanguageCode?](datadetector/options/documentlanguagecode.md)
+### Hints you can provide to add more context for the matching process
+- [var documentLanguageCode: Locale.LanguageCode?](./documentlanguagecode.md)
   An optional value that represents the language code of a specific locale.
-- [var documentRegion: Locale.Region?](datadetector/options/documentregion.md)
+- [var documentRegion: Locale.Region?](./documentregion.md)
   A locale region that’s relevant to the scanned string.
-- [var documentTimeZone: TimeZone?](datadetector/options/documenttimezone.md)
+- [var documentTimeZone: TimeZone?](./documenttimezone.md)
   A date that represents the date of the scanned string.
 
 

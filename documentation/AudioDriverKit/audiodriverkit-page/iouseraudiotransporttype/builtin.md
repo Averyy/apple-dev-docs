@@ -1,7 +1,8 @@
 # BuiltIn
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The transport type ID for AudioDevices built into the system.
 
@@ -10,13 +11,14 @@ The transport type ID for AudioDevices built into the system.
 
 ## Declaration
 
-```swift
+```c
 BuiltIn
 ```
 
 ## See Also
 
-- [Unknown](audiodriverkit/iouseraudiotransporttype/unknown.md)
+### Other Transport Types
+- [Unknown](./unknown.md)
   The transport type ID returned when a device doesn’t provide a transport type.
 
 

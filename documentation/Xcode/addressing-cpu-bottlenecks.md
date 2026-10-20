@@ -1,6 +1,7 @@
 # Addressing CPU bottlenecks
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Locate and fix pipeline stalls, cache misses, and other performance issues.
 
@@ -16,13 +17,13 @@ To keep a device’s CPU running at its highest effectiveness while it’s proce
 
 In situations where your app’s design, or the hints you provide to the compiler, don’t let the CPU take advantage of these features, the CPU can encounter a *bottleneck* where it can’t run at its maximum efficiency. Examples of CPU bottlenecks include situations that cause the CPU to wait because the next instruction it needs to process isn’t available yet, or where processing an instruction *stalls* because the CPU is waiting for a relatively slow access to memory. CPU bottlenecks reduce the rate at which the processor can finish your app’s work, increasing the time someone waits for your app to complete a task. Bottlenecks that occur on your app’s main thread contribute to freezes and hitches in your app’s UI.
 
-Additionally, using the CPU inefficiently increases the power used by the CPU when it runs your app. For information on measuring your app’s power use, see [`Measuring your app’s power use with Power Profiler`](measuring-your-app-s-power-use-with-power-profiler.md).
+Additionally, using the CPU inefficiently increases the power used by the CPU when it runs your app. For information on measuring your app’s power use, see [Measuring your app’s power use with Power Profiler](./measuring-your-app-s-power-use-with-power-profiler.md).
 
 Use coding strategies that avoid CPU bottlenecks. Identify areas in your app that need performance improvement, set performance targets, and write performance tests to validate that your changes improve performance. Use Instruments to detect situations where the CPU encounters a bottleneck while it runs your app’s code. Take steps to remove the bottlenecks, and improve your app’s performance.
 
-> **Note**:  Remove other sources of processor overhead, including inefficient algorithms and redundant memory management code, before you investigate CPU bottlenecks. For more information, see [`Analyzing CPU usage with the Processor Trace instrument`](analyzing-cpu-usage-with-processor-trace.md).
+> **Note**:  Remove other sources of processor overhead, including inefficient algorithms and redundant memory management code, before you investigate CPU bottlenecks. For more information, see [Analyzing CPU usage with the Processor Trace instrument](./analyzing-cpu-usage-with-processor-trace.md).
 
-##### Design Your App to Avoid Cpu Bottlenecks
+##### Design your app to avoid CPU bottlenecks
 
 The following design principles help the system to optimize CPU performance when someone uses your app.
 
@@ -30,25 +31,25 @@ Use system frameworks. Where the system provides a framework to perform a task, 
 
 Prefer dynamic task allocation to static thread pools. The system assigns your app’s threads to run on different cores in the processor, which can complete work at different rates depending on the type of core and the other work running on the device. Work assigned to threads in a static pool can finish at different times, leaving some threads without work to do while other threads catch up.
 
-Consider using [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks) to create tasks that the system schedules dynamically, based on resource availability.
+Consider using [Background Tasks](../BackgroundTasks/BackgroundTasks.md) to create tasks that the system schedules dynamically, based on resource availability.
 
 Indicate quality-of-service for background tasks. The system uses quality-of-service information to dynamically schedule tasks and make efficient use of available processing resources.
 
-If you use Background Tasks, pick the correct task type for the work you assign to the task. For more information, see [`Choosing Background Strategies for Your App`](https://developer.apple.com/documentation/backgroundtasks/choosing-background-strategies-for-your-app). If you use Grand Central Dispatch, dispatch your work to a queue with the appropriate [`DispatchQoS`](https://developer.apple.com/documentation/dispatch/dispatchqos).
+If you use Background Tasks, pick the correct task type for the work you assign to the task. For more information, see [Choosing Background Strategies for Your App](../BackgroundTasks/choosing-background-strategies-for-your-app.md). If you use Grand Central Dispatch, dispatch your work to a queue with the appropriate [`DispatchQoS`](../Dispatch/dispatchqos.md).
 
-For more guidance on optimizing your code for Apple silicon, see [`Tuning your code’s performance for Apple silicon`](https://developer.apple.com/documentation/apple-silicon/tuning-your-code-s-performance-for-apple-silicon).
+For more guidance on optimizing your code for Apple silicon, see [Tuning your code’s performance for Apple silicon](../apple-silicon/tuning-your-code-s-performance-for-apple-silicon.md).
 
-##### Establish Performance Goals
+##### Establish performance goals
 
-Use information from the Metrics Organizer, and feedback from people who test and use your app, to identify performance issues and define targets for improvement. For more information, see [`Improving your app’s performance`](improving-your-app-s-performance.md).
+Use information from the Metrics Organizer, and feedback from people who test and use your app, to identify performance issues and define targets for improvement. For more information, see [Improving your app’s performance](./improving-your-app-s-performance.md).
 
-##### Write Performance Tests
+##### Write performance tests
 
 When you identify features that need performance improvements, create performance tests to automatically exercise those features and measure their performance. Set a performance baseline and run the tests when you make code changes, to compare your app’s performance with the baseline and detect regressions.
 
-Use [`XCTCPUMetric`](https://developer.apple.com/documentation/xctest/xctcpumetric) to measure CPU activity in your tests, and [`XCTClockMetric`](https://developer.apple.com/documentation/xctest/xctclockmetric) to measure time elapsed during your tests. For more information, see [`Writing and running performance tests`](writing-and-running-performance-tests.md).
+Use [`XCTCPUMetric`](../XCTest/xctcpumetric.md) to measure CPU activity in your tests, and [`XCTClockMetric`](../XCTest/xctclockmetric.md) to measure time elapsed during your tests. For more information, see [Writing and running performance tests](./writing-and-running-performance-tests.md).
 
-##### Detect Cpu Bottlenecks
+##### Detect CPU bottlenecks
 
 When your performance tests reveal that your app doesn’t meet your performance goals, use the CPU Counters instrument to identify situations where the system encounters CPU bottlenecks when it runs your app.
 
@@ -69,7 +70,7 @@ If you don’t have a performance test for the features you want to analyze, fol
 6. Interact with the features in your app that you want to analyze.
 7. In Instruments, click the Stop button to stop gathering data.
 
-##### Discover Code That Causes Cpu Bottlenecks
+##### Discover code that causes CPU bottlenecks
 
 The CPU Counters instrument adds mode-specific lanes to the CPU Counters, process, and thread tracks you use to analyze the processor’s workload. In the initial CPU bottlenecks mode, the lane divides the maximum sustainable CPU bandwidth into four categories:
 
@@ -78,7 +79,7 @@ The CPU Counters instrument adds mode-specific lanes to the CPU Counters, proces
 - **Instruction Processing Bottleneck**: The CPU encounters a bottleneck because it completes instructions at a slower rate than it fetches them; for example, many instructions require the processor to load data from memory and take a long time to complete.
 - **Discarded Bottleneck**: The CPU encounters a bottleneck because it is busy with instructions that don’t contribute to making progress in your app’s code; for example, the CPU makes incorrect branch predictions and completes instructions only to discard the results.
 
-![A screenshot of Instruments, showing the CPU bandwidth categorized into useful bandwidth and bottlenecks in the CPU Counters lane.](/images/com.apple.Xcode/cpu-bottlenecks-counter-instrument@2x.png)
+![A screenshot of Instruments, showing the CPU bandwidth categorized into useful bandwidth and bottlenecks in the CPU Counters lane.](https://developer.apple.com/tutorials/images/com.apple.Xcode/cpu-bottlenecks-counter-instrument@2x.png)
 
 While the presence of CPU bottlenecks indicates opportunities to improve your app’s performance, the absence of bottlenecks doesn’t necessarily mean your code is as efficient as possible. For example, there might be a more efficient algorithm available to implement your app’s features, or your app might encounter other overhead that doesn’t result in CPU bottlenecks.
 
@@ -86,11 +87,11 @@ Use the Time Profiler track, and the tracks for your app’s threads, to correla
 
 Click the CPU Counters track to see the Summary: Metrics view, which shows the fraction of time the CPU spends doing useful work or encountering bottlenecks. Select a range in the timeline to focus the Summary: Metrics view on that range.
 
-##### Identify Causes of Cpu Bottlenecks
+##### Identify causes of CPU bottlenecks
 
 When you locate the code in your app that causes CPU bottlenecks and the category of bottleneck the processor encounters, gather more detailed information to determine the specific situations that lead to CPU bottlenecks, and plan to address those bottlenecks in code.
 
-> 💡 **Tip**:  Use [`OSSignposter`](https://developer.apple.com/documentation/os/ossignposter) to add signposts to the code that causes CPU bottlenecks, so that it’s easier to identify the relevant region in the timeline in your subsequent analysis work.
+> 💡 **Tip**:  Use [`OSSignposter`](../os/ossignposter.md) to add signposts to the code that causes CPU bottlenecks, so that it’s easier to identify the relevant region in the timeline in your subsequent analysis work.
 
 Follow these steps in Instruments:
 
@@ -101,17 +102,18 @@ Follow these steps in Instruments:
 
 The CPU Counters track and Summary: Metrics view show the fraction of particular categories of CPU bottlenecks that the processor encounters. Switch to the Remarks view to see information about bottleneck events that Instruments detected. Click a metric or remark in the detail view to read more information about the cause of that type of CPU bottleneck, and suggested code strategies to mitigate the bottleneck.
 
-![A screenshot of Instruments. A CPU bottleneck is highlighted in the Remarks view, and Instruments suggests how to mitigate the bottleneck.](/images/com.apple.Xcode/cpu-bottlenecks-remarks-view@2x.png)
+![A screenshot of Instruments. A CPU bottleneck is highlighted in the Remarks view, and Instruments suggests how to mitigate the bottleneck.](https://developer.apple.com/tutorials/images/com.apple.Xcode/cpu-bottlenecks-remarks-view@2x.png)
 
-Refer to the [`Apple Silicon CPU Optimization Guide`](https://developer.apple.com/documentation/apple-silicon/cpu-optimization-guide) for more information on Apple silicon and guidance on optimizing your code.
+Refer to the [Apple Silicon CPU Optimization Guide](../apple-silicon/cpu-optimization-guide.md) for more information on Apple silicon and guidance on optimizing your code.
 
 After you make a code change, re-run your performance tests, and use the CPU Counters instrument again to validate that your change improves your app’s processor usage.
 
 ## See Also
 
-- [Analyzing CPU usage with the Processor Trace instrument](analyzing-cpu-usage-with-processor-trace.md)
+### Processor usage
+- [Analyzing CPU usage with the Processor Trace instrument](./analyzing-cpu-usage-with-processor-trace.md)
   Identify code where your app uses the CPU inefficiently.
-- [Analyzing CPU profiles with call tree views](analyzing-cpu-profiles-with-call-tree-views.md)
+- [Analyzing CPU profiles with call tree views](./analyzing-cpu-profiles-with-call-tree-views.md)
   Use call tree visualizations to find performance bottlenecks in Instruments.
 
 

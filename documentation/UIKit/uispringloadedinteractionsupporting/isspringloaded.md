@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that specifies whether the object is participating in spring-loaded interaction for a drag and drop activity.
@@ -16,6 +17,10 @@ A Boolean value that specifies whether the object is participating in spring-loa
 
 ```swift
 var isSpringLoaded: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isSpringLoaded) BOOL springLoaded;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The names of all public functions in the library.
@@ -11,13 +12,17 @@ The names of all public functions in the library.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var functionNames: [String] { get }
+```
+
+```objc
+@property (readonly) NSArray<NSString *> * functionNames;
 ```
 
 #### Discussion

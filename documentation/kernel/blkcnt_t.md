@@ -1,14 +1,15 @@
 # blkcnt_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_blkcnt_t blkcnt_t;
 ```
 

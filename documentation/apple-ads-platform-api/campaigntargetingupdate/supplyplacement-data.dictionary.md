@@ -1,7 +1,8 @@
 # CampaignTargetingUpdate.SupplyPlacement
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The specific placement within a supply source where an existing campaign’s ads are eligible to appear.
 
@@ -10,13 +11,13 @@ The specific placement within a supply source where an existing campaign’s ads
 
 ## Declaration
 
-```swift
+```
 object CampaignTargetingUpdate.SupplyPlacement
 ```
 
 #### Discussion
 
-The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Omit to leave unchanged. Each placement belongs to exactly one [`CampaignTargetingUpdate.SupplySource`](campaigntargetingupdate/supplysource-data.dictionary.md):
+The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Omit to leave unchanged. Each placement belongs to exactly one [`CampaignTargetingUpdate.SupplySource`](./supplysource-data.dictionary.md):
 
 | Value | Supply source | Placement |
 | --- | --- | --- |
@@ -27,9 +28,9 @@ The `supplyPlacement` field is **include-only**; setting `exclude` has no effect
 | `MAPS_SEARCH_RESULTS` | `MAPS` | Apple Maps Search results |
 | `MAPS_SEARCH_HOME` | `MAPS` | Apple Maps Search home |
 
-Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
-> **Note**: Omitting `supplyPlacement` here leaves the campaign’s current placement(s) unchanged; it doesn’t switch targeting to every placement. Unlike at create time, there’s no way to widen an existing single-placement `MAPS` campaign to target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` via update. See [`CampaignTargetingCreate.SupplyPlacement`](campaigntargetingcreate/supplyplacement-data.dictionary.md) for the create-time behavior.
+> **Note**: Omitting `supplyPlacement` here leaves the campaign’s current placement(s) unchanged; it doesn’t switch targeting to every placement. Unlike at create time, there’s no way to widen an existing single-placement `MAPS` campaign to target both `MAPS_SEARCH_RESULTS` and `MAPS_SEARCH_HOME` via update. See [`CampaignTargetingCreate.SupplyPlacement`](../campaigntargetingcreate/supplyplacement-data.dictionary.md) for the create-time behavior.
 
 ## Properties
 

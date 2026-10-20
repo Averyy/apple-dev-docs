@@ -1,7 +1,8 @@
 # MTRError.Code.notFound
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Something was requested that could not be located.
 
@@ -18,6 +19,10 @@ Something was requested that could not be located.
 
 ```swift
 case notFound
+```
+
+```c
+MTRErrorCodeNotFound
 ```
 
 

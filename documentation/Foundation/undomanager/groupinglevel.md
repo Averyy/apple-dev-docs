@@ -1,7 +1,8 @@
 # groupingLevel
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of nested undo groups (or redo groups, if redo is the most recent operation) in the current event loop.
 
@@ -20,19 +21,25 @@ The number of nested undo groups (or redo groups, if redo is the most recent ope
 var groupingLevel: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger groupingLevel;
+```
+
 #### Discussion
 
 An integer indicating the number of nested groups. If 0 is returned, there is no open undo or redo group.
 
 ## See Also
 
-- [var levelsOfUndo: Int](undomanager/levelsofundo.md)
+### Related Documentation
+- [var levelsOfUndo: Int](./levelsofundo.md)
   The maximum number of top-level undo groups the undo manager holds.
-- [func beginUndoGrouping()](undomanager/beginundogrouping.md)
+### Creating undo groups
+- [func beginUndoGrouping()](./beginundogrouping%28%29.md)
   Marks the beginning of an undo group.
-- [func endUndoGrouping()](undomanager/endundogrouping.md)
+- [func endUndoGrouping()](./endundogrouping%28%29.md)
   Marks the end of an undo group.
-- [var groupsByEvent: Bool](undomanager/groupsbyevent.md)
+- [var groupsByEvent: Bool](./groupsbyevent.md)
   A Boolean value that indicates whether the manager automatically creates undo groups around each pass of the run loop.
 
 

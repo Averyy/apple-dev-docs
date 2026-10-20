@@ -1,9 +1,10 @@
 # isEndToEndEncrypted
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
+A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](../error/endtoendencryptionnotsupported.md).
 
 **Availability**:
 - iOS 26.5+

@@ -1,7 +1,8 @@
 # deviceId
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device where the change occurred.
 
@@ -10,7 +11,7 @@ The device where the change occurred.
 
 ## Declaration
 
-```swift
+```
 attribute string? deviceId;
 ```
 

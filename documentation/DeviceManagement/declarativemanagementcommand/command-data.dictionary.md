@@ -1,7 +1,8 @@
 # DeclarativeManagementCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
@@ -16,15 +17,19 @@ The command to enable your server to support declarative management or trigger a
 
 ## Declaration
 
-```swift
+```
 object DeclarativeManagementCommand.Command
 ```
 
 ## Properties
 
-- `Data` (data): The base64-encoded declarative management JSON request using a [`TokensResponse`](tokensresponse.md).
+- `Data` (data): The base64-encoded declarative management JSON request using a [`TokensResponse`](../tokensresponse.md).
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `DeclarativeManagement`
 
 
 ---

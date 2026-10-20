@@ -1,9 +1,10 @@
 # bodyComponent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
+The [`ClothBodyComponent`](../../../clothbodycomponent.md) of the intersecting body, if still present on the entity.
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,10 @@ var bodyComponent: ClothBodyComponent? { get }
 
 ## See Also
 
-- [let bodyEntity: Entity](clothqueryvolumeevents/newbodyintersections/intersection/bodyentity.md)
+### Inspecting the intersection
+- [let bodyEntity: Entity](./bodyentity.md)
   The entity of the body that intersected the volume.
-- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/intersection/withparticleindices(_:).md)
+- [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](./withparticleindices%28_%29.md)
   Provides access to the indices of particles that intersected the volume.
 
 

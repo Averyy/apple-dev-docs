@@ -1,7 +1,8 @@
 # horizontalSyncOffset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 First clock of horizontal sync.
 
@@ -10,7 +11,7 @@ First clock of horizontal sync.
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalSyncOffset;
 ```
 

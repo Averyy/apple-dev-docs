@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date indicating the time of the event.
 
@@ -19,11 +20,12 @@ var date: Date { get }
 
 ## See Also
 
-- [var identifier: String](clmonitor-2r51v/event/identifier.md)
+### Event characteristics
+- [var identifier: String](./identifier.md)
   A string that identifies the event.
-- [let refinement: (any CLCondition)?](clmonitor-2r51v/event/refinement.md)
+- [let refinement: (any CLCondition)?](./refinement.md)
   An optional instance of a condition that represents the most specific condition that this event can apply to.
-- [var state: CLMonitor.Event.State](clmonitor-2r51v/event/state-swift.property.md)
+- [var state: CLMonitor.Event.State](./state-swift.property.md)
   The event’s state.
 
 

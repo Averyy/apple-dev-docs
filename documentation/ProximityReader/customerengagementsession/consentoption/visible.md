@@ -1,7 +1,8 @@
 # CustomerEngagementSession.ConsentOption.visible
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shows the option with no default selected.
 

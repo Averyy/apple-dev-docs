@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an on-device index with the specified name.
 
@@ -18,6 +19,10 @@ Returns an on-device index with the specified name.
 init(name: String)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name;
+```
+
 #### Return Value
 
 An on-device index.
@@ -32,9 +37,10 @@ If you want to use batching or you want to index items in a specific protection 
 
 ## See Also
 
-- [class func `default`() -> Self](cssearchableindex/default.md)
+### Creating an index
+- [class func `default`() -> Self](./default%28%29.md)
   Returns the default on-device index.
-- [init(name: String, protectionClass: FileProtectionType?)](cssearchableindex/init(name:protectionclass:).md)
+- [init(name: String, protectionClass: FileProtectionType?)](./init%28name,protectionclass%29.md)
   Returns an on-device index with the specified name and data protection class.
 
 

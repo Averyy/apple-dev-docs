@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user’s current calendar.
 
@@ -20,23 +21,29 @@ The user’s current calendar.
 class var current: Calendar { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSCalendar * currentCalendar;
+```
+
 #### Return Value
 
 The logical calendar for the current user.
 
 #### Discussion
 
-The returned calendar is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. Settings you get from this calendar do not change as System Preferences are changed, so that your operations are consistent  (contrast with [`autoupdatingCurrent`](nscalendar/autoupdatingcurrent.md)).
+The returned calendar is formed from the settings for the current user’s chosen system locale overlaid with any custom settings the user has specified in System Preferences. Settings you get from this calendar do not change as System Preferences are changed, so that your operations are consistent  (contrast with [`autoupdatingCurrent`](./autoupdatingcurrent.md)).
 
 ## See Also
 
-- [Date and Time Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i)
-- [Data Formatting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
-- [init?(calendarIdentifier: NSCalendar.Identifier)](nscalendar/init(calendaridentifier:).md)
+### Related Documentation
+- [Date and Time Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DatesAndTimes/DatesAndTimes.html#//apple_ref/doc/uid/10000039i)
+- [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)
+- [init?(calendarIdentifier: NSCalendar.Identifier)](./init%28calendaridentifier%29.md)
   Initializes a calendar according to a given identifier.
-- [var calendarIdentifier: NSCalendar.Identifier](nscalendar/calendaridentifier.md)
+- [var calendarIdentifier: NSCalendar.Identifier](./calendaridentifier.md)
   An identifier for the calendar.
-- [class var autoupdatingCurrent: Calendar](nscalendar/autoupdatingcurrent.md)
+### Getting the User’s Calendar
+- [class var autoupdatingCurrent: Calendar](./autoupdatingcurrent.md)
   A calendar that tracks changes to user’s preferred calendar.
 
 

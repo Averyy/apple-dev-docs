@@ -1,7 +1,8 @@
 # connectSCO()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Open a SCO connection with the device
 
@@ -12,6 +13,10 @@ Open a SCO connection with the device
 
 ```swift
 func connectSCO()
+```
+
+```objc
+- (void) connectSCO;
 ```
 
 #### Discussion

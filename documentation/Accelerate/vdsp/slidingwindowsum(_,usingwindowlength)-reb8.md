@@ -1,7 +1,8 @@
 # slidingWindowSum(_:usingWindowLength:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the single-precision sliding window sum of a vector.
 
@@ -11,7 +12,7 @@ Returns the single-precision sliding window sum of a vector.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -49,7 +50,7 @@ print(output[0 ..< Int(outputCount)])
 
 The figure below illustrates the process the function uses to calculate the result:
 
-![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](/images/com.apple.accelerate/media-4329494@2x.png)
+![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4329494@2x.png)
 
 Alternatively, the following code shows how to process input elements to generate a specific number of output elements. Use this technique, for example, to process streaming input data. The code below takes `count` elements from the input collection and returns the sums at eight window positions:
 
@@ -83,7 +84,7 @@ print(output[0 ..< Int(outputCount)])
 
 The figure below illustrates the process the function uses to calculate the result:
 
-![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](/images/com.apple.accelerate/media-4329490@2x.png)
+![A diagram that depicts the steps taken by the function to compute the sliding window sum. The diagram consists of eight stacked rows that represent each step. Each step in the process moves a three-element sliding window from left to right, and the value for each step is the sum of values in the sliding window.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4329490@2x.png)
 
 ## Parameters
 
@@ -92,11 +93,12 @@ The figure below illustrates the process the function uses to calculate the resu
 
 ## See Also
 
-- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Double]](vdsp/slidingwindowsum(_:usingwindowlength:)-2t1dc.md)
+### Sliding-window summation functions
+- [static func slidingWindowSum<U>(U, usingWindowLength: Int) -> [Double]](./slidingwindowsum%28_,usingwindowlength%29-2t1dc.md)
   Returns the double-precision sliding window sum of a vector.
-- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](vdsp/slidingwindowsum(_:usingwindowlength:result:)-i972.md)
+- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](./slidingwindowsum%28_,usingwindowlength,result%29-i972.md)
   Calculates the double-precision sliding window sum of a vector.
-- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](vdsp/slidingwindowsum(_:usingwindowlength:result:)-5tg0h.md)
+- [static func slidingWindowSum<U, V>(U, usingWindowLength: Int, result: inout V)](./slidingwindowsum%28_,usingwindowlength,result%29-5tg0h.md)
   Calculates the single-precision sliding window sum of a vector.
 
 

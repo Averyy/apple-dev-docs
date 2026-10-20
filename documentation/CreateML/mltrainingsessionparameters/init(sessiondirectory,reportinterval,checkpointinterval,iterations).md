@@ -1,7 +1,8 @@
 # init(sessionDirectory:reportInterval:checkpointInterval:iterations:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of parameters for a training session.
 

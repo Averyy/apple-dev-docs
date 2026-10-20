@@ -1,7 +1,8 @@
 # bakeTypes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All bake types used by entities in this lightmap.
 

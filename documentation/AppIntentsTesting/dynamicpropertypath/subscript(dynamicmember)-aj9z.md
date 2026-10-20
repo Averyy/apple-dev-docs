@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Creates a dynamic path for navigating deeper into a nested property hierarchy.
 

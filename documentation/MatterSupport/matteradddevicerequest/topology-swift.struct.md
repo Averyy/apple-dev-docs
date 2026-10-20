@@ -1,7 +1,8 @@
 # MatterAddDeviceRequest.Topology
 
 **Framework**: MatterSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information describing the properties of the ecosystem.
 
@@ -10,7 +11,7 @@ Information describing the properties of the ecosystem.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,35 +26,36 @@ The topology of a fabric consists of its homes, rooms, and devices. The number o
 ## Topics
 
 ### Creating the topology
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Create the request from a decoder.
-- [init(ecosystemName: String, homes: [MatterAddDeviceRequest.Home])](matteradddevicerequest/topology-swift.struct/init(ecosystemname:homes:).md)
+- [init(ecosystemName: String, homes: [MatterAddDeviceRequest.Home])](./topology-swift.struct/init%28ecosystemname,homes%29.md)
   Creates the topology.
 ### Getting the properties
-- [var ecosystemName: String](matteradddevicerequest/topology-swift.struct/ecosystemname.md)
+- [var ecosystemName: String](./topology-swift.struct/ecosystemname.md)
   The name of your ecosystem.
-- [var homes: [MatterAddDeviceRequest.Home]](matteradddevicerequest/topology-swift.struct/homes.md)
+- [var homes: [MatterAddDeviceRequest.Home]](./topology-swift.struct/homes.md)
   An array of available homes to add the new device into.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MatterAddDeviceRequest.Home](matteradddevicerequest/home.md)
+### Setting up the request
+- [MatterAddDeviceRequest.Home](./home.md)
   The representation of a home that appears in the picker during device setup.
-- [MatterAddDeviceRequest.Room](matteradddevicerequest/room.md)
+- [MatterAddDeviceRequest.Room](./room.md)
   The representation of a room that appears in the picker during device setup.
-- [var setupPayload: MTRSetupPayload?](matteradddevicerequest/setuppayload.md)
+- [var setupPayload: MTRSetupPayload?](./setuppayload.md)
   The payload to use for Matter device setup.
-- [var topology: MatterAddDeviceRequest.Topology](matteradddevicerequest/topology-swift.property.md)
+- [var topology: MatterAddDeviceRequest.Topology](./topology-swift.property.md)
   A configuration object representing the topology of the initiating ecosystem.
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stack view from data in an unarchiver.
 
@@ -18,11 +19,16 @@ Creates a stack view from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init(arrangedSubviews: [UIView])](uistackview/init(arrangedsubviews:).md)
+### Initializing a stack view
+- [convenience init(arrangedSubviews: [UIView])](./init%28arrangedsubviews%29.md)
   Returns a new stack view object that manages the provided views.
-- [init(frame: CGRect)](uistackview/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a stack view with the specified frame.
 
 

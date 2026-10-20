@@ -1,15 +1,18 @@
 # assign(to:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assign this document to a user.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
-- visionOS ?+
+- iOS 17.4+ - Deprecated in 18.0
+- iPadOS 17.4+ - Deprecated in 18.0
+- Mac Catalyst 17.4+ - Deprecated in 18.0
+- visionOS
+
+> **Deprecated**: Use makeAssignedWorkDocument() instead
 
 ## Declaration
 

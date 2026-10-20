@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional image texture that defines the color of light emission.
 
@@ -20,8 +21,9 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var color: UIColor](custommaterial/emissivecolor-swift.struct/color-5hrho.md)
-- [var color: NSColor](custommaterial/emissivecolor-swift.struct/color-9scic.md)
+### Accessing emissive color data
+- [var color: UIColor](./color-5hrho.md)
+- [var color: NSColor](./color-9scic.md)
 
 
 ---

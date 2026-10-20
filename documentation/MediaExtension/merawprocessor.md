@@ -1,7 +1,8 @@
 # MERAWProcessor
 
 **Framework**: MediaExtension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the requirements for a RAW processor.
 
@@ -14,74 +15,81 @@ A protocol that defines the requirements for a RAW processor.
 protocol MERAWProcessor : NSObjectProtocol
 ```
 
+```objc
+@protocol MERAWProcessor <NSObject>
+```
+
 #### Overview
 
-This protocol provides an interface for [`Video Toolbox`](https://developer.apple.com/documentation/videotoolbox) to create and interact with MediaExtension RAW processors. [`MERAWProcessor`](merawprocessor.md) objects are instantiated by Video Toolbox and are closely linked to a corresponding [`MEVideoDecoder`](mevideodecoder.md) object that produces RAW video output.
+This protocol provides an interface for [Video Toolbox](../VideoToolbox/VideoToolbox.md) to create and interact with MediaExtension RAW processors. [`MERAWProcessor`](./merawprocessor.md) objects are instantiated by Video Toolbox and are closely linked to a corresponding [`MEVideoDecoder`](./mevideodecoder.md) object that produces RAW video output.
 
-> **Note**:  Developers who wish to build MediaExtension RAW processors using this API need to include a [`RAW processor entitlement`](raw-processor-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions. For more information, see [`Entitlements`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements), [`Create a development provisioning profile`](https://developer.apple.comhttps://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [`RAW processor property list dictionary`](raw-processor-property-list-dictionary.md).
+> **Note**:  Developers who wish to build MediaExtension RAW processors using this API need to include a [RAW processor entitlement](./raw-processor-entitlement.md), provisioning profile, and specialized dictionary in their Info.plist file when building their extensions.
+>
+> For more information, see [Entitlements](../BundleResources/entitlements.md), [Create a development provisioning profile](https://developer.apple.com/help/account/manage-provisioning-profiles/create-a-development-provisioning-profile), and [RAW processor property list dictionary](./raw-processor-property-list-dictionary.md).
 
-Once a user installs and runs the host app, embedded RAW processor extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](https://developer.apple.com/documentation/videotoolbox/vtregisterprofessionalvideoworkflowvideodecoders()).
+Once a user installs and runs the host app, embedded RAW processor extensions become available to any app on the user’s system that opts in to using them by calling [`VTRegisterProfessionalVideoWorkflowVideoDecoders()`](../VideoToolbox/vtregisterprofessionalvideoworkflowvideodecoders%28%29.md).
 
 > ❗ **Important**:  `MERAWProcessor` objects run in a sandboxed process without access to the filesystem, network, and other kernel resources.
 
-MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession).
+MediaExtension RAW processor’s operation and life cycle closely tie to [`VTRAWProcessingSession`](../VideoToolbox/vtrawprocessingsession.md).
 
-##### Creating a Raw Processor
+##### Creating a raw processor
 
-An instance of the [`MERAWProcessorExtension`](merawprocessorextension.md) factory object is created the first time the given processor is opened by Video Toolbox in a process. The [`makeProcessor(formatDescription:pixelBufferManager:)`](merawprocessorextension/makeprocessor(formatdescription:pixelbuffermanager:).md) method on the [`MERAWProcessorExtension`](merawprocessorextension.md) object will be called once for each processor instance needed. The processor can evaluate the provided [`CMVideoFormatDescription`](https://developer.apple.com/documentation/coremedia/cmvideoformatdescription) at this point and confirm whether it is able to process the specified format. If the processor cannot process the format, the factory routine should return [`MEError.Code.unsupportedFeature`](meerror-swift.struct/code/unsupportedfeature.md). This sequence of calls will happen inside of [`VTRAWProcessingSession`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsession).
+An instance of the [`MERAWProcessorExtension`](./merawprocessorextension.md) factory object is created the first time the given processor is opened by Video Toolbox in a process. The [`makeProcessor(formatDescription:pixelBufferManager:)`](./merawprocessorextension/makeprocessor%28formatdescription,pixelbuffermanager%29.md) method on the [`MERAWProcessorExtension`](./merawprocessorextension.md) object will be called once for each processor instance needed. The processor can evaluate the provided [`CMVideoFormatDescription`](../CoreMedia/cmvideoformatdescription.md) at this point and confirm whether it is able to process the specified format. If the processor cannot process the format, the factory routine should return [`MEError.Code.unsupportedFeature`](./meerror-swift.struct/code/unsupportedfeature.md). This sequence of calls will happen inside of [`VTRAWProcessingSession`](../VideoToolbox/vtrawprocessingsession.md).
 
-##### Configuring Pixel Buffer Requirements
+##### Configuring pixel buffer requirements
 
-At any point after instantiation, the processor can call back into the provided [`MERAWProcessorPixelBufferManager`](merawprocessorpixelbuffermanager.md) object to notify Video Toolbox of its output pixel buffer requirements. The processor extension may make multiple calls if output requirements change in response to properties being set or due to observed bitstream characteristics.
+At any point after instantiation, the processor can call back into the provided [`MERAWProcessorPixelBufferManager`](./merawprocessorpixelbuffermanager.md) object to notify Video Toolbox of its output pixel buffer requirements. The processor extension may make multiple calls if output requirements change in response to properties being set or due to observed bitstream characteristics.
 
-##### Processing Frames
+##### Processing frames
 
-Calls to [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) are serialized. A new frame is not sent to the processor until the last [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) has returned, but may be submitted before the [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) completion handler is called if the processing is happening asynchronously. These calls correspond to [`VTRAWProcessingSessionProcessFrame`](https://developer.apple.com/documentation/videotoolbox/vtrawprocessingsessionprocessframe) calls on the parent `VTRAWProcessingSession`.
+Calls to [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) are serialized. A new frame is not sent to the processor until the last [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) has returned, but may be submitted before the [`processFrame(fromImageBuffer:completionHandler:)`](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md) completion handler is called if the processing is happening asynchronously. These calls correspond to [`VTRAWProcessingSessionProcessFrame`](../VideoToolbox/vtrawprocessingsessionprocessframe.md) calls on the parent `VTRAWProcessingSession`.
 
-RAW processors must write their output frames into `CVPixelBuffers` allocated through the [`makePixelBuffer()`](merawprocessorpixelbuffermanager/makepixelbuffer().md) interface. Returning [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) from any other source may result in degraded performance or other issues.
+RAW processors must write their output frames into `CVPixelBuffers` allocated through the [`makePixelBuffer()`](./merawprocessorpixelbuffermanager/makepixelbuffer%28%29.md) interface. Returning [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) from any other source may result in degraded performance or other issues.
 
-If the processor’s internal processing queue is full, and it cannot process more frames, it should return [`NO`](https://developer.apple.com/documentation/objectivec/no) when the [`isReadyForMoreMediaData`](merawprocessor/isreadyformoremediadata.md) property is queried. This property should return [`YES`](https://developer.apple.com/documentation/objectivec/yes) again when the processor is able to accept new frames – generally after an earlier asynchronous frame processing operation is completed.
+If the processor’s internal processing queue is full, and it cannot process more frames, it should return [`NO`](../ObjectiveC/no.md) when the [`isReadyForMoreMediaData`](./merawprocessor/isreadyformoremediadata.md) property is queried. This property should return [`YES`](../ObjectiveC/yes.md) again when the processor is able to accept new frames – generally after an earlier asynchronous frame processing operation is completed.
 
 ## Topics
 
 ### Inspecting a RAW processor
-- [var metalDeviceRegistryID: UInt64](merawprocessor/metaldeviceregistryid.md)
+- [var metalDeviceRegistryID: UInt64](./merawprocessor/metaldeviceregistryid.md)
   Requests the processor use the provided Metal device for processing.
-- [var outputColorAttachments: [String : Any]](merawprocessor/outputcolorattachments.md)
+- [var outputColorAttachments: [String : Any]](./merawprocessor/outputcolorattachments.md)
   Returns the color-related Core Video image buffer keys and values that become attachments to the output pixel buffers.
-- [var processingParameters: [MERAWProcessingParameter]](merawprocessor/processingparameters.md)
+- [var processingParameters: [MERAWProcessingParameter]](./merawprocessor/processingparameters.md)
   Provides a list of processing parameters that can be changed by the client of Video Toolbox session to influence processing behavior.
-- [var isReadyForMoreMediaData: Bool](merawprocessor/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./merawprocessor/isreadyformoremediadata.md)
   Indicates the readiness of the processor to accept more sample buffers.
 ### Processing RAW frame
-- [func processFrame(fromImageBuffer: CVPixelBuffer, completionHandler: (CVPixelBuffer?, (any Error)?) -> Void)](merawprocessor/processframe(fromimagebuffer:completionhandler:).md)
+- [func processFrame(fromImageBuffer: CVPixelBuffer, completionHandler: (CVPixelBuffer?, (any Error)?) -> Void)](./merawprocessor/processframe%28fromimagebuffer,completionhandler%29.md)
   Requests the processor to process a video frame.
 ### Extension requirements
-- [RAW processor property list dictionary](raw-processor-property-list-dictionary.md)
+- [RAW processor property list dictionary](./raw-processor-property-list-dictionary.md)
   Include a property list dictionary to describe a RAW processor.
-- [RAW processor entitlement](raw-processor-entitlement.md)
+- [RAW processor entitlement](./raw-processor-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension RAW processor.
 ### Instance Properties
-- [var metadataForSidecarFile: Data](merawprocessor/metadataforsidecarfile.md)
+- [var metadataForSidecarFile: Data](./merawprocessor/metadataforsidecarfile.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MERAWProcessorExtension](merawprocessorextension.md)
+### RAW processors
+- [protocol MERAWProcessorExtension](./merawprocessorextension.md)
   A protocol that defines a factory to create RAW processors for a codec type that the extension implements.
-- [class MERAWProcessorPixelBufferManager](merawprocessorpixelbuffermanager.md)
+- [class MERAWProcessorPixelBufferManager](./merawprocessorpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [class MERAWProcessingParameter](merawprocessingparameter.md)
+- [class MERAWProcessingParameter](./merawprocessingparameter.md)
   An object for the RAW processor to describe each processing parameter the processor exposes.
-- [enum MERAWProcessorNotification](merawprocessornotification.md)
+- [enum MERAWProcessorNotification](./merawprocessornotification.md)
   Notifications that indicate a RAW processor state change.
-- [RAW processor property list dictionary](raw-processor-property-list-dictionary.md)
+- [RAW processor property list dictionary](./raw-processor-property-list-dictionary.md)
   Include a property list dictionary to describe a RAW processor.
-- [RAW processor entitlement](raw-processor-entitlement.md)
+- [RAW processor entitlement](./raw-processor-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension RAW processor.
 
 

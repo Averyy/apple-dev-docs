@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to detect whether the camera lens has a smudge.
 

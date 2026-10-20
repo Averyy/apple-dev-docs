@@ -1,7 +1,8 @@
 # prefersInterfaceOrientationLocked
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view controller prefers to lock the scene’s interface orientation when the scene is visible.
 
@@ -16,9 +17,13 @@ A Boolean value that indicates whether the view controller prefers to lock the s
 var prefersInterfaceOrientationLocked: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL prefersInterfaceOrientationLocked;
+```
+
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to indicate the view controller’s preference to lock the scene’s interface orientation. Check `UIWindowScene.effectiveGeometry.isInterfaceOrientationLocked` for the current state of the interface orientation lock. The system will consider locking the interface orientation when these conditions are true:
+The default is [`false`](../../Swift/false.md). Set this property to [`true`](../../Swift/true.md) to indicate the view controller’s preference to lock the scene’s interface orientation. Check `UIWindowScene.effectiveGeometry.isInterfaceOrientationLocked` for the current state of the interface orientation lock. The system will consider locking the interface orientation when these conditions are true:
 
 - The scene is centered on the screen
 - The scene is the same size as the screen
@@ -26,19 +31,20 @@ The default is [`false`](https://developer.apple.com/documentation/swift/false).
 
 The system continuously monitors the state and when the app no longer satisfies the requirements, it disables the interface orientation lock.
 
-If you change the value of `prefersInterfaceOrientationLocked`, call [`setNeedsUpdateOfPrefersInterfaceOrientationLocked()`](uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked().md).
+If you change the value of `prefersInterfaceOrientationLocked`, call [`setNeedsUpdateOfPrefersInterfaceOrientationLocked()`](./setneedsupdateofprefersinterfaceorientationlocked%28%29.md).
 
 ## See Also
 
-- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](uiviewcontroller/supportedinterfaceorientations.md)
+### Configuring the view rotation settings
+- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](./supportedinterfaceorientations.md)
   The interface orientations that the view controller supports.
-- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](uiviewcontroller/preferredinterfaceorientationforpresentation.md)
+- [var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation](./preferredinterfaceorientationforpresentation.md)
   The interface orientation to use when presenting the view controller.
-- [func setNeedsUpdateOfSupportedInterfaceOrientations()](uiviewcontroller/setneedsupdateofsupportedinterfaceorientations.md)
+- [func setNeedsUpdateOfSupportedInterfaceOrientations()](./setneedsupdateofsupportedinterfaceorientations%28%29.md)
   Notifies the view controller about a change in supported interface orientations or preferred interface orientation for presentation.
-- [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](uiviewcontroller/setneedsupdateofprefersinterfaceorientationlocked.md)
+- [func setNeedsUpdateOfPrefersInterfaceOrientationLocked()](./setneedsupdateofprefersinterfaceorientationlocked%28%29.md)
   Indicates that the view controller changed the interface orientation lock preference.
-- [var childForInterfaceOrientationLock: UIViewController?](uiviewcontroller/childforinterfaceorientationlock.md)
+- [var childForInterfaceOrientationLock: UIViewController?](./childforinterfaceorientationlock.md)
   A child view controller to query for the interface orientation lock preference.
 
 

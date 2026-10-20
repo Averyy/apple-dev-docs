@@ -1,7 +1,8 @@
 # CPSportsOverlay
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sports overlay that displays left and right team information.
 
@@ -17,34 +18,38 @@ A sports overlay that displays left and right team information.
 class CPSportsOverlay
 ```
 
+```objc
+@interface CPSportsOverlay : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpsportsoverlay/init(coder:).md)
-- [init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?)](cpsportsoverlay/init(leftteam:rightteam:eventstatus:).md)
+- [init?(coder: NSCoder)](./cpsportsoverlay/init%28coder%29.md)
+- [init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?)](./cpsportsoverlay/init%28leftteam,rightteam,eventstatus%29.md)
   Initialize a sports overlay with left and right team objects.
 ### Instance Properties
-- [var eventStatus: CPNowPlayingSportsEventStatus?](cpsportsoverlay/eventstatus.md)
+- [var eventStatus: CPNowPlayingSportsEventStatus?](./cpsportsoverlay/eventstatus.md)
   The event status label.
-- [var leftTeam: CPNowPlayingSportsTeam](cpsportsoverlay/leftteam.md)
+- [var leftTeam: CPNowPlayingSportsTeam](./cpsportsoverlay/leftteam.md)
   The left team information.
-- [var rightTeam: CPNowPlayingSportsTeam](cpsportsoverlay/rightteam.md)
+- [var rightTeam: CPNowPlayingSportsTeam](./cpsportsoverlay/rightteam.md)
   The right team information.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

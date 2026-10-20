@@ -1,7 +1,8 @@
 # Option
 
 **Framework**: TipKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the various customizations that you can make to a tip’s behavior.
 
@@ -23,22 +24,23 @@ typealias Option = TipOption
 ## Topics
 
 ### Tip options
-- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
+- [typealias IgnoresDisplayFrequency](./ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+- [typealias MaxDisplayCount](./maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+- [typealias MaxDisplayDuration](./maxdisplayduration.md)
   Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 ## See Also
 
-- [var options: [any TipOption]](tip/options.md)
+### Customizing tip behavior
+- [var options: [any TipOption]](./options.md)
   Customizations for a tip.
-- [typealias IgnoresDisplayFrequency](tip/ignoresdisplayfrequency.md)
+- [typealias IgnoresDisplayFrequency](./ignoresdisplayfrequency.md)
   Controls whether a tip obeys the preconfigured display frequency interval.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+- [typealias MaxDisplayCount](./maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+- [typealias MaxDisplayDuration](./maxdisplayduration.md)
   Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 

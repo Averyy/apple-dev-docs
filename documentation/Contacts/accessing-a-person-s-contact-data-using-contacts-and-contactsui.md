@@ -1,6 +1,8 @@
 # Accessing a person’s contact data using Contacts and ContactsUI
 
-**Framework**: Contacts
+**Framework**: Contacts  
+**Role**: Sample Code  
+**Download**: [AccessingAPersonsContactDataUsingContactsAndContactsUI.zip](https://docs-assets.developer.apple.com/published/afb4a67e7563/AccessingAPersonsContactDataUsingContactsAndContactsUI.zip)
 
 Allow people to grant your app access to contact data by adding the Contact access button and Contact access picker to your app.
 
@@ -12,21 +14,22 @@ Allow people to grant your app access to contact data by adding the Contact acce
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC24 session 10121: [`Meet the Contact Access Button`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10121/).
+> **Note**: This sample code project is associated with WWDC24 session 10121: [Meet the Contact Access Button](https://developer.apple.com/wwdc24/10121/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before running the sample code project in Xcode, select the sample target, then configure it to use your Developer team for signing.
 
 ## See Also
 
-- [Accessing the contact store](accessing-the-contact-store.md)
+### Essentials
+- [Accessing the contact store](./accessing-the-contact-store.md)
   Request permission from the person to read and write their contact data.
-- [class CNContactStore](cncontactstore.md)
+- [class CNContactStore](./cncontactstore.md)
   The object that fetches and saves contacts, groups, and containers from the user’s Contacts database.
-- [NSContactsUsageDescription](../bundleresources/information-property-list/nscontactsusagedescription.md)
+- [NSContactsUsageDescription](../BundleResources/information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
-- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../BundleResources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

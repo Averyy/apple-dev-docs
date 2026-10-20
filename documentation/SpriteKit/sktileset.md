@@ -1,7 +1,8 @@
 # SKTileSet
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for related tile groups.
 
@@ -20,65 +21,70 @@ A container for related tile groups.
 class SKTileSet
 ```
 
+```objc
+@interface SKTileSet : NSObject
+```
+
 #### Overview
 
-An [`SKTileSet`](sktileset.md) object contains an array of tile groups that define which tile definitions are available for use in a tile map.
+An [`SKTileSet`](./sktileset.md) object contains an array of tile groups that define which tile definitions are available for use in a tile map.
 
 Tile sets also define the arrangement of tiles within a tile map. In addition to the default rectangular grid layout, tile sets can also define hexagonal and isometric layouts.
 
 ## Topics
 
 ### Creating a Tile Set from a File
-- [convenience init?(named: String)](sktileset/init(named:).md)
+- [convenience init?(named: String)](./sktileset/init%28named%29.md)
   Initializes a tile set by searching the app bundle for an archived `.sks` file by name.
-- [convenience init?(from: URL)](sktileset/init(from:).md)
+- [convenience init?(from: URL)](./sktileset/init%28from%29.md)
   Initializes a tile set from a URL to an archived .sks file.
 ### Creating a Tile Set Programmatically
-- [init(tileGroups: [SKTileGroup])](sktileset/init(tilegroups:).md)
+- [init(tileGroups: [SKTileGroup])](./sktileset/init%28tilegroups%29.md)
   Initializes a new tile set with an array of tile groups and rectangular grid layout.
-- [init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)](sktileset/init(tilegroups:tilesettype:).md)
+- [init(tileGroups: [SKTileGroup], tileSetType: SKTileSetType)](./sktileset/init%28tilegroups,tilesettype%29.md)
   Initializes a new tile set with an array of tile groups and specified layout.
 ### Accessing or Reading a Tile Set’s Properties
-- [var defaultTileGroup: SKTileGroup?](sktileset/defaulttilegroup.md)
+- [var defaultTileGroup: SKTileGroup?](./sktileset/defaulttilegroup.md)
   The tile set’s default tile group.
-- [var defaultTileSize: CGSize](sktileset/defaulttilesize.md)
+- [var defaultTileSize: CGSize](./sktileset/defaulttilesize.md)
   The tile set’s default tile size.
-- [var name: String?](sktileset/name.md)
+- [var name: String?](./sktileset/name.md)
   A name associated with the tile set.
-- [var tileGroups: [SKTileGroup]](sktileset/tilegroups.md)
+- [var tileGroups: [SKTileGroup]](./sktileset/tilegroups.md)
   The tile set’s array of tile group objects.
-- [var type: SKTileSetType](sktileset/type.md)
+- [var type: SKTileSetType](./sktileset/type.md)
   The tile set’s type.
-- [enum SKTileSetType](sktilesettype.md)
+- [enum SKTileSetType](./sktilesettype.md)
   An enumeration defining how tiles are arranged.
 ### Initializers
-- [init?(coder: NSCoder)](sktileset/init(coder:).md)
-- [convenience init?(fromURL: URL)](sktileset/init(fromurl:).md)
+- [init?(coder: NSCoder)](./sktileset/init%28coder%29.md)
+- [convenience init?(fromURL: URL)](./sktileset/init%28fromurl%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SKTileMapNode](sktilemapnode.md)
+### Tiling
+- [class SKTileMapNode](./sktilemapnode.md)
   A two-dimensional array of images.
-- [class SKTileDefinition](sktiledefinition.md)
+- [class SKTileDefinition](./sktiledefinition.md)
   A single tile that can be repeated in a tile map.
-- [class SKTileGroup](sktilegroup.md)
+- [class SKTileGroup](./sktilegroup.md)
   A set of tiles that collectively define one type of terrain.
-- [class SKTileGroupRule](sktilegrouprule.md)
+- [class SKTileGroupRule](./sktilegrouprule.md)
   Rules that describe how various tiles should be placed in a map.
 
 

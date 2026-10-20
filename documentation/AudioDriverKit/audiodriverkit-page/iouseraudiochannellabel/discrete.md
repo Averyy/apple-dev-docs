@@ -1,7 +1,8 @@
 # Discrete
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A generic discrete channel.
 
@@ -10,7 +11,7 @@ A generic discrete channel.
 
 ## Declaration
 
-```swift
+```c
 Discrete
 ```
 

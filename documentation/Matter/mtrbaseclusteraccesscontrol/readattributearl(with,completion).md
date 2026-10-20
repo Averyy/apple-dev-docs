@@ -1,7 +1,8 @@
 # readAttributeARL(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeARL(with params: MTRReadParams?, completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeARL(with params: MTRReadParams?) async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeARLWithParams:(MTRReadParams *) params completion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

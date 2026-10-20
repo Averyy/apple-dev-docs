@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indices that are valid for subscripting the collection, in ascending order.
 

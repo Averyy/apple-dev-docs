@@ -1,7 +1,8 @@
 # rawData
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The decoded MIME data for a message.
 
@@ -14,9 +15,14 @@ The decoded MIME data for a message.
 var rawData: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * rawData;
+```
+
 ## See Also
 
-- [var securityInformation: MEMessageSecurityInformation](medecodedmessage/securityinformation.md)
+### Decoding Messages
+- [var securityInformation: MEMessageSecurityInformation](./securityinformation.md)
   An object that contains encryption and digital signature information about the message content.
 
 

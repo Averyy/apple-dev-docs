@@ -1,7 +1,8 @@
 # changes
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of forecasted weather changes, in chronological order.
 

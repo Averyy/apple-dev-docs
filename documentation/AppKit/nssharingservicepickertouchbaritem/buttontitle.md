@@ -1,7 +1,8 @@
 # buttonTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text displayed in the sharing service picker item button.
 
@@ -14,13 +15,18 @@ The text displayed in the sharing service picker item button.
 var buttonTitle: String { get set }
 ```
 
+```objc
+@property (copy) NSString * buttonTitle;
+```
+
 #### Discussion
 
 The default value of this property is the empty string.
 
 ## See Also
 
-- [var buttonImage: NSImage?](nssharingservicepickertouchbaritem/buttonimage.md)
+### Configuring the appearance
+- [var buttonImage: NSImage?](./buttonimage.md)
   The image displayed in the sharing service picker item button.
 
 

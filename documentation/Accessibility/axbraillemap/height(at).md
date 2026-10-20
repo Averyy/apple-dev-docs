@@ -1,7 +1,8 @@
 # height(at:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the height of an individual pin on the braille display.
 
@@ -20,6 +21,10 @@ Retrieves the height of an individual pin on the braille display.
 func height(at point: CGPoint) -> Float
 ```
 
+```objc
+- (float) heightAtPoint:(CGPoint) point;
+```
+
 #### Return Value
 
 A floating-point number between `0.0` and `1.0` that specifies the height of the pin. A value of `0.0` indicates that the pin is completely lowered, and a value of `1.0` indicates that the pin is completely raised.
@@ -30,9 +35,10 @@ A floating-point number between `0.0` and `1.0` that specifies the height of the
 
 ## See Also
 
-- [func setHeight(Float, at: CGPoint)](axbraillemap/setheight(_:at:).md)
+### Accessing dots
+- [func setHeight(Float, at: CGPoint)](./setheight%28_,at%29.md)
   Sets the height of an individual pin on the braille display.
-- [subscript(CGPoint) -> Float](axbraillemap/subscript(_:).md)
+- [subscript(CGPoint) -> Float](./subscript%28_%29.md)
   Accesses the height of an individual pin on the braille display.
 
 

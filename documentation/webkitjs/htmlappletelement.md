@@ -1,7 +1,8 @@
 # HTMLAppletElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,29 +10,29 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLAppletElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmlappletelement/1629447-align.md)
-- [alt](htmlappletelement/1628911-alt.md)
-- [archive](htmlappletelement/1631890-archive.md)
-- [code](htmlappletelement/1632227-code.md)
-- [codeBase](htmlappletelement/1630279-codebase.md)
-- [height](htmlappletelement/1629588-height.md)
-- [hspace](htmlappletelement/1631090-hspace.md)
-- [name](htmlappletelement/1632159-name.md)
-- [object](htmlappletelement/1631798-object.md)
-- [vspace](htmlappletelement/1633619-vspace.md)
-- [width](htmlappletelement/1633797-width.md)
+- [align](./htmlappletelement/api-1629447-align.md)
+- [alt](./htmlappletelement/api-1628911-alt.md)
+- [archive](./htmlappletelement/api-1631890-archive.md)
+- [code](./htmlappletelement/api-1632227-code.md)
+- [codeBase](./htmlappletelement/api-1630279-codebase.md)
+- [height](./htmlappletelement/api-1629588-height.md)
+- [hspace](./htmlappletelement/api-1631090-hspace.md)
+- [name](./htmlappletelement/api-1632159-name.md)
+- [object](./htmlappletelement/api-1631798-object.md)
+- [vspace](./htmlappletelement/api-1633619-vspace.md)
+- [width](./htmlappletelement/api-1633797-width.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

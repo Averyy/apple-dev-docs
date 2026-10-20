@@ -1,7 +1,8 @@
 # shouldBeMuted
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the tab should be muted.
 
@@ -16,6 +17,10 @@ Indicates whether the tab should be muted.
 
 ```swift
 var shouldBeMuted: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldBeMuted;
 ```
 
 

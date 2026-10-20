@@ -1,7 +1,8 @@
 # defaultDigits(amPM:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Custom format style portraying the minimum number of digits that represents the hour and locale-dependent day period formats.
 
@@ -34,15 +35,16 @@ This style may include the day period symbol (a.m. or p.m.), depending on locale
 
 ## See Also
 
-- [static var defaultDigitsNoAMPM: Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/defaultdigitsnoampm.md)
+### Modifying an Hour
+- [static var defaultDigitsNoAMPM: Date.FormatStyle.Symbol.Hour](./defaultdigitsnoampm.md)
   Custom format style portraying the minimum number of digits that represents the numeric hour.
-- [static var twoDigitsNoAMPM: Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/twodigitsnoampm.md)
+- [static var twoDigitsNoAMPM: Date.FormatStyle.Symbol.Hour](./twodigitsnoampm.md)
   Custom format style portraying the numeric hour using two digits.
-- [static func conversationalDefaultDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/conversationaldefaultdigits(ampm:).md)
+- [static func conversationalDefaultDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](./conversationaldefaultdigits%28ampm%29.md)
   Custom format style portraying the minimum number of digits that represents the hour and locale-dependent conversational day period formats.
-- [static func conversationalTwoDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/conversationaltwodigits(ampm:).md)
+- [static func conversationalTwoDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](./conversationaltwodigits%28ampm%29.md)
   Custom format style portraying two digits that represent the hour and locale-dependent conversational day period formats.
-- [static func twoDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour/twodigits(ampm:).md)
+- [static func twoDigits(amPM: Date.FormatStyle.Symbol.Hour.AMPMStyle) -> Date.FormatStyle.Symbol.Hour](./twodigits%28ampm%29.md)
   Custom format style portraying two digits that represent the hour and locale-dependent day period formats.
 
 

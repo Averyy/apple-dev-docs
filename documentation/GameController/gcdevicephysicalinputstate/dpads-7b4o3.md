@@ -1,7 +1,8 @@
 # dpads
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s directional pads as key-value pairs for lookup by name.
 
@@ -11,7 +12,7 @@ The device’s directional pads as key-value pairs for lookup by name.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ var dpads: GCPhysicalInputElementCollection<any GCDirectionPadElement> { get }
 
 ## See Also
 
-- [var elements: GCPhysicalInputElementCollection<any GCPhysicalInputElement>](gcdevicephysicalinputstate/elements-46hgy.md)
+### Accessing elements
+- [var elements: GCPhysicalInputElementCollection<any GCPhysicalInputElement>](./elements-46hgy.md)
   The device’s elements as key-value pairs for lookup by name.
-- [var axes: GCPhysicalInputElementCollection<any GCAxisElement>](gcdevicephysicalinputstate/axes-5u1xr.md)
+- [var axes: GCPhysicalInputElementCollection<any GCAxisElement>](./axes-5u1xr.md)
   The device’s axes as key-value pairs for lookup by name.
-- [var buttons: GCPhysicalInputElementCollection<any GCButtonElement>](gcdevicephysicalinputstate/buttons-2ovae.md)
+- [var buttons: GCPhysicalInputElementCollection<any GCButtonElement>](./buttons-2ovae.md)
   The device’s buttons as key-value pairs for lookup by name.
-- [var switches: GCPhysicalInputElementCollection<any GCSwitchElement>](gcdevicephysicalinputstate/switches-6dcny.md)
+- [var switches: GCPhysicalInputElementCollection<any GCSwitchElement>](./switches-6dcny.md)
   The device’s switches as key-value pairs for lookup by name.
-- [subscript(String) -> (any GCPhysicalInputElement)?](gcdevicephysicalinputstate/subscript(_:).md)
+- [subscript(String) -> (any GCPhysicalInputElement)?](./subscript%28_%29.md)
   Returns the element that the key specifies.
 
 

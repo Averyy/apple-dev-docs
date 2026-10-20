@@ -1,7 +1,8 @@
 # ConnectablePublisher
 
 **Framework**: Combine  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A publisher that provides an explicit means of connecting and canceling publication.
 
@@ -22,37 +23,38 @@ protocol ConnectablePublisher<Output, Failure> : Publisher
 
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
+- [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
+- [Replacing Foundation Timers with Timer Publishers](./replacing-foundation-timers-with-timer-publishers.md)
 
 #### Overview
 
-Use a [`ConnectablePublisher`](connectablepublisher.md) when you need to perform additional configuration or setup prior to producing any elements.
+Use a [`ConnectablePublisher`](./connectablepublisher.md) when you need to perform additional configuration or setup prior to producing any elements.
 
-This publisher doesn’t produce any elements until you call its [`connect()`](connectablepublisher/connect().md) method.
+This publisher doesn’t produce any elements until you call its [`connect()`](./connectablepublisher/connect%28%29.md) method.
 
-Use [`makeConnectable()`](publisher/makeconnectable().md) to create a [`ConnectablePublisher`](connectablepublisher.md) from any publisher whose failure type is [`Never`](https://developer.apple.com/documentation/swift/never).
+Use [`makeConnectable()`](./publisher/makeconnectable%28%29.md) to create a [`ConnectablePublisher`](./connectablepublisher.md) from any publisher whose failure type is [`Never`](../Swift/never.md).
 
 ## Topics
 
 ### Performing explicit connections
-- [func connect() -> any Cancellable](connectablepublisher/connect.md)
+- [func connect() -> any Cancellable](./connectablepublisher/connect%28%29.md)
   Connects to the publisher, allowing it to produce elements, and returns an instance with which to cancel publishing.
 ### Connecting automatically
-- [func autoconnect() -> Publishers.Autoconnect<Self>](connectablepublisher/autoconnect.md)
+- [func autoconnect() -> Publishers.Autoconnect<Self>](./connectablepublisher/autoconnect%28%29.md)
   Automates the process of connecting or disconnecting from this connectable publisher.
 
 ## Relationships
 
 ### Inherits From
-- [Publisher](publisher.md)
+- [Publisher](./publisher.md)
 ### Conforming Types
-- [Publishers.MakeConnectable](publishers/makeconnectable.md)
-- [Publishers.Multicast](publishers/multicast.md)
+- [Publishers.MakeConnectable](./publishers/makeconnectable.md)
+- [Publishers.Multicast](./publishers/multicast.md)
 
 ## See Also
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+### Connectable Publishers
+- [Controlling Publishing with Connectable Publishers](./controlling-publishing-with-connectable-publishers.md)
   Coordinate when publishers start sending elements to subscribers.
 
 

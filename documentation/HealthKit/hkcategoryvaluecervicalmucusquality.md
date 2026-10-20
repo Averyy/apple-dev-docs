@@ -1,7 +1,8 @@
 # HKCategoryValueCervicalMucusQuality
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Categories that represent the user’s cervical mucus quality.
 
@@ -19,6 +20,10 @@ Categories that represent the user’s cervical mucus quality.
 enum HKCategoryValueCervicalMucusQuality
 ```
 
+```c
+enum HKCategoryValueCervicalMucusQuality : NSInteger;
+```
+
 #### Overview
 
 These values are ordered from least-fertile (Dry) to most-fertile (EggWhite).
@@ -26,63 +31,64 @@ These values are ordered from least-fertile (Dry) to most-fertile (EggWhite).
 ## Topics
 
 ### Constants
-- [HKCategoryValueCervicalMucusQuality.dry](hkcategoryvaluecervicalmucusquality/dry.md)
+- [HKCategoryValueCervicalMucusQuality.dry](./hkcategoryvaluecervicalmucusquality/dry.md)
   Little or no mucus.
-- [HKCategoryValueCervicalMucusQuality.sticky](hkcategoryvaluecervicalmucusquality/sticky.md)
+- [HKCategoryValueCervicalMucusQuality.sticky](./hkcategoryvaluecervicalmucusquality/sticky.md)
   Sticky mucus.
-- [HKCategoryValueCervicalMucusQuality.creamy](hkcategoryvaluecervicalmucusquality/creamy.md)
+- [HKCategoryValueCervicalMucusQuality.creamy](./hkcategoryvaluecervicalmucusquality/creamy.md)
   Creamy mucus.
-- [HKCategoryValueCervicalMucusQuality.watery](hkcategoryvaluecervicalmucusquality/watery.md)
+- [HKCategoryValueCervicalMucusQuality.watery](./hkcategoryvaluecervicalmucusquality/watery.md)
   Watery mucus.
-- [HKCategoryValueCervicalMucusQuality.eggWhite](hkcategoryvaluecervicalmucusquality/eggwhite.md)
+- [HKCategoryValueCervicalMucusQuality.eggWhite](./hkcategoryvaluecervicalmucusquality/eggwhite.md)
   Mucus the color and consistency of egg whites.
 ### Initializers
-- [init?(rawValue: Int)](hkcategoryvaluecervicalmucusquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkcategoryvaluecervicalmucusquality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [HKCategoryValuePredicateProviding](hkcategoryvaluepredicateproviding.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKCategoryValuePredicateProviding](./hkcategoryvaluepredicateproviding.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKCategoryValue](hkcategoryvalue.md)
+### Assigning Values
+- [enum HKCategoryValue](./hkcategoryvalue.md)
   Categories that are undefined.
-- [enum HKCategoryValueMenstrualFlow](hkcategoryvaluemenstrualflow.md)
+- [enum HKCategoryValueMenstrualFlow](./hkcategoryvaluemenstrualflow.md)
   Categories that indicate the amount of menstrual flow for a given sample.
-- [enum HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult.md)
+- [enum HKCategoryValueOvulationTestResult](./hkcategoryvalueovulationtestresult.md)
   Categories that represent the result of an ovulation home test.
-- [enum HKCategoryValueContraceptive](hkcategoryvaluecontraceptive.md)
+- [enum HKCategoryValueContraceptive](./hkcategoryvaluecontraceptive.md)
   The type of contraceptive.
-- [enum HKCategoryValueSleepAnalysis](hkcategoryvaluesleepanalysis.md)
+- [enum HKCategoryValueSleepAnalysis](./hkcategoryvaluesleepanalysis.md)
   Categories that represent the result of a sleep analysis.
-- [enum HKCategoryValueAppetiteChanges](hkcategoryvalueappetitechanges.md)
+- [enum HKCategoryValueAppetiteChanges](./hkcategoryvalueappetitechanges.md)
   Categories that represent change in appetite.
-- [enum HKCategoryValuePresence](hkcategoryvaluepresence.md)
+- [enum HKCategoryValuePresence](./hkcategoryvaluepresence.md)
   Categories that indicate whether a symptom is present.
-- [enum HKCategoryValueSeverity](hkcategoryvalueseverity.md)
+- [enum HKCategoryValueSeverity](./hkcategoryvalueseverity.md)
   Categories that represent the severity of a symptom.
-- [enum HKCategoryValueEnvironmentalAudioExposureEvent](hkcategoryvalueenvironmentalaudioexposureevent.md)
+- [enum HKCategoryValueEnvironmentalAudioExposureEvent](./hkcategoryvalueenvironmentalaudioexposureevent.md)
   Exposure events for environmental audio.
-- [enum HKCategoryValueHeadphoneAudioExposureEvent](hkcategoryvalueheadphoneaudioexposureevent.md)
+- [enum HKCategoryValueHeadphoneAudioExposureEvent](./hkcategoryvalueheadphoneaudioexposureevent.md)
   Exposure events for headphone audio.
-- [enum HKCategoryValueLowCardioFitnessEvent](hkcategoryvaluelowcardiofitnessevent.md)
+- [enum HKCategoryValueLowCardioFitnessEvent](./hkcategoryvaluelowcardiofitnessevent.md)
   A value that indicates a low-level cardio fitness event.
-- [enum HKAppleWalkingSteadinessClassification](hkapplewalkingsteadinessclassification.md)
+- [enum HKAppleWalkingSteadinessClassification](./hkapplewalkingsteadinessclassification.md)
   A classification of a score based on the steadiness of the user’s gait.
-- [enum HKCategoryValueAppleWalkingSteadinessEvent](hkcategoryvalueapplewalkingsteadinessevent.md)
+- [enum HKCategoryValueAppleWalkingSteadinessEvent](./hkcategoryvalueapplewalkingsteadinessevent.md)
   The value of an event triggered by a reduced score for the steadiness of the user’s gait.
-- [enum HKCategoryValuePregnancyTestResult](hkcategoryvaluepregnancytestresult.md)
+- [enum HKCategoryValuePregnancyTestResult](./hkcategoryvaluepregnancytestresult.md)
   Category values that indicate the results of a home pregnancy test.
-- [enum HKCategoryValueProgesteroneTestResult](hkcategoryvalueprogesteronetestresult.md)
+- [enum HKCategoryValueProgesteroneTestResult](./hkcategoryvalueprogesteronetestresult.md)
   A category value that indicates the result from a home progesterone test.
 
 

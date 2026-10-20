@@ -1,7 +1,8 @@
 # errSecCSBadDiskImageFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The disk image format unrecognized, invalid, or unsuitable.
 
@@ -13,6 +14,10 @@ The disk image format unrecognized, invalid, or unsuitable.
 
 ```swift
 var errSecCSBadDiskImageFormat: OSStatus { get }
+```
+
+```c
+errSecCSBadDiskImageFormat
 ```
 
 

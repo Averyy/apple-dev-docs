@@ -1,7 +1,8 @@
 # requiredThreadsPerMeshThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the required number of mesh threads-per-threadgroup when drawing with a mesh shader pipeline you create from this descriptor.
 
@@ -19,11 +20,15 @@ Controls the required number of mesh threads-per-threadgroup when drawing with a
 var requiredThreadsPerMeshThreadgroup: MTLSize { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLSize requiredThreadsPerMeshThreadgroup;
+```
+
 #### Discussion
 
 This argument is optional, unless this pipeline uses `CooperativeTensors`, in which case you are responsible for providing it.
 
-When this value is set to non-zero, you are responsible for ensuring the parameter `threadsPerMeshThreadgroup` in any mesh dispatch draw calls that use this mesh render pipeline, such as [`drawMeshThreadgroups(threadgroupsPerGrid:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:)`](mtl4rendercommandencoder/drawmeshthreadgroups(threadgroupspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md), match it.
+When this value is set to non-zero, you are responsible for ensuring the parameter `threadsPerMeshThreadgroup` in any mesh dispatch draw calls that use this mesh render pipeline, such as [`drawMeshThreadgroups(threadgroupsPerGrid:threadsPerObjectThreadgroup:threadsPerMeshThreadgroup:)`](../mtl4rendercommandencoder/drawmeshthreadgroups%28threadgroupspergrid,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md), match it.
 
 Setting this value to a size of 0 in every dimension disables this property.
 

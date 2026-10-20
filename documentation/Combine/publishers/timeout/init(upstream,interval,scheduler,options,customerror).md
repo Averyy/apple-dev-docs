@@ -1,7 +1,8 @@
 # init(upstream:interval:scheduler:options:customError:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 

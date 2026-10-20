@@ -1,6 +1,8 @@
 # Accessing the main camera
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [AccessingTheMainCamera.zip](https://docs-assets.developer.apple.com/published/8255574a641d/AccessingTheMainCamera.zip)
 
 Add camera-based features to enterprise apps.
 
@@ -12,25 +14,25 @@ Add camera-based features to enterprise apps.
 
 This sample code project demonstrates how to use ARKit to access and display the main camera feed in your visionOS app. You can use this functionality to implement computer vision-powered experiences or livestreaming in your enterprise app. For instance, support technicians can livestream their surroundings to remote experts for improved guidance.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Replace `Enterprise.license` with your license file. The sample app requires a valid license file to display the main camera.
 
-##### Request the Entitlement
+##### Request the entitlement
 
-Main camera access is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use main camera access, you need to apply for the [`Main camera access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.main-camera-access.allow) entitlement. For more information, including how to apply for this entitlement, see [`Building spatial experiences for business apps with enterprise APIs for visionOS`](building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
+Main camera access is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use main camera access, you need to apply for the [`Main camera access`](../BundleResources/entitlements/com.apple.developer.arkit.main-camera-access.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
-##### Add Usage Descriptions for Arkit Data Access
+##### Add usage descriptions for ARKit data access
 
-To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmaincamerausagedescription) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
+To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](../BundleResources/information-property-list/nsmaincamerausagedescription.md) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
 
-> **Note**: Prior to visionOS 26, [`CameraFrameProvider`](https://developer.apple.com/documentation/arkit/cameraframeprovider) is only available in an immersive space. See [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [`Adopting best practices for privacy and user preferences`](adopting-best-practices-for-privacy.md).
+> **Note**: Prior to visionOS 26, [`CameraFrameProvider`](../ARKit/cameraframeprovider.md) is only available in an immersive space. See [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [Adopting best practices for privacy and user preferences](./adopting-best-practices-for-privacy.md).
 
-##### Access and Display Main Camera Frames
+##### Access and display main camera frames
 
 The code example below accesses and displays the main camera feed, which is a stereo camera that consists of left and right cameras. A person can configure the app to display the left, right, or combined stereo frames, with or without rectification, at one of two resolutions.
 
-The `MainCameraView` renders two instances of `CameraFrameView`, one to display a preview of the left camera feed and another to display a preview of the right camera feed. The left and right previews are instances of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer), and `CameraSessionManager` manages their updates. `CameraSessionManager` accesses camera frames using ARKit and renders them to their respective display layers. The `MainCameraView` uses a [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(name:priority:file:line:_:)) modifier to run `CameraSessionManager`.
+The `MainCameraView` renders two instances of `CameraFrameView`, one to display a preview of the left camera feed and another to display a preview of the right camera feed. The left and right previews are instances of [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md), and `CameraSessionManager` manages their updates. `CameraSessionManager` accesses camera frames using ARKit and renders them to their respective display layers. The `MainCameraView` uses a [`task(name:priority:file:line:_:)`](../SwiftUI/view/task%28name,priority,file,line,_%29.md) modifier to run `CameraSessionManager`.
 
 ```swift
 struct MainCameraView: View {
@@ -54,7 +56,7 @@ struct MainCameraView: View {
 }
 ```
 
-To access the main camera, `CameraSessionManager` starts an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with a [`CameraFrameProvider`](https://developer.apple.com/documentation/arkit/cameraframeprovider), and then requests [`CameraFrameProvider.CameraFrameUpdates`](https://developer.apple.com/documentation/arkit/cameraframeprovider/cameraframeupdates) in the format that the person using the app specifies.
+To access the main camera, `CameraSessionManager` starts an [`ARKitSession`](../ARKit/arkitsession.md) with a [`CameraFrameProvider`](../ARKit/cameraframeprovider.md), and then requests [`CameraFrameProvider.CameraFrameUpdates`](../ARKit/cameraframeprovider/cameraframeupdates.md) in the format that the person using the app specifies.
 
 ```swift
 final class CameraSessionManager {
@@ -88,7 +90,7 @@ final class CameraSessionManager {
 }
 ```
 
-ARKit delivers a stream of [`CameraFrame`](https://developer.apple.com/documentation/arkit/cameraframe) instances, and each frame includes a [`CameraFrame.Sample`](https://developer.apple.com/documentation/arkit/cameraframe/sample). As each `CameraFrame` arrives, `CameraSessionManager` updates its left and right `CameraFeed` instances using the respective `CameraFrame.Sample`.
+ARKit delivers a stream of [`CameraFrame`](../ARKit/cameraframe.md) instances, and each frame includes a [`CameraFrame.Sample`](../ARKit/cameraframe/sample.md). As each `CameraFrame` arrives, `CameraSessionManager` updates its left and right `CameraFeed` instances using the respective `CameraFrame.Sample`.
 
 ```swift
 final class CameraSessionManager {
@@ -143,7 +145,7 @@ final class CameraSessionManager {
 }
 ```
 
-The `CameraFeed` class updates its `preview`, an instance of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer), by rendering the [`CameraFrame.Sample`](https://developer.apple.com/documentation/arkit/cameraframe/sample) to the display layer. This is the same instance of [`AVSampleBufferDisplayLayer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferdisplaylayer) that `MainCameraView` displays.
+The `CameraFeed` class updates its `preview`, an instance of [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md), by rendering the [`CameraFrame.Sample`](../ARKit/cameraframe/sample.md) to the display layer. This is the same instance of [`AVSampleBufferDisplayLayer`](../AVFoundation/avsamplebufferdisplaylayer.md) that `MainCameraView` displays.
 
 ```swift
 final class CameraFeed {
@@ -182,11 +184,12 @@ final class CameraFeed {
 
 ## See Also
 
-- [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
+### Enterprise APIs for visionOS
+- [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
-- [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
+- [Locating and decoding barcodes in 3D space](./locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
-- [Monitoring fit and field of view fidelity](monitoring-fit-and-field-of-view-fidelity.md)
+- [Monitoring fit and field of view fidelity](./monitoring-fit-and-field-of-view-fidelity.md)
   Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 
 

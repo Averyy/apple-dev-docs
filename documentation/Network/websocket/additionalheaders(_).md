@@ -1,7 +1,8 @@
 # additionalHeaders(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set additional HTTP header fields to be sent by the client during the WebSocket handshake.
 

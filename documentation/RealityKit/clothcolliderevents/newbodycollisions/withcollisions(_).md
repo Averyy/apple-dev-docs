@@ -1,7 +1,8 @@
 # withCollisions(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the collisions with cloth bodies that took place.
 
@@ -30,7 +31,8 @@ This span is only available during the subscription callback of this event. The 
 
 ## See Also
 
-- [ClothColliderEvents.NewBodyCollisions.Collision](clothcolliderevents/newbodycollisions/collision.md)
+### Accessing collision data
+- [ClothColliderEvents.NewBodyCollisions.Collision](./collision.md)
   A collision with a cloth body.
 
 

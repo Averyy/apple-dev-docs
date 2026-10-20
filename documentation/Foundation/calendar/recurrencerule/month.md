@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Month
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Uniquely identifies a month in any calendar system.
 
@@ -23,23 +24,23 @@ struct Month
 ## Topics
 
 ### Initializers
-- [init(Int, isLeap: Bool)](calendar/recurrencerule/month/init(_:isleap:).md)
+- [init(Int, isLeap: Bool)](./month/init%28_,isleap%29.md)
 ### Instance Properties
-- [var index: Int](calendar/recurrencerule/month/index.md)
-- [var isLeap: Bool](calendar/recurrencerule/month/isleap.md)
+- [var index: Int](./month/index.md)
+- [var isLeap: Bool](./month/isleap.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [ExpressibleByIntegerLiteral](../../../Swift/expressiblebyintegerliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The mathematical constant pi (π), approximately equal to 3.14159.

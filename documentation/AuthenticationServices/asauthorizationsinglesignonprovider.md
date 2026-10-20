@@ -1,7 +1,8 @@
 # ASAuthorizationSingleSignOnProvider
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mechanism for generating requests to authenticate users with third-party providers.
 
@@ -18,48 +19,53 @@ A mechanism for generating requests to authenticate users with third-party provi
 class ASAuthorizationSingleSignOnProvider
 ```
 
+```objc
+@interface ASAuthorizationSingleSignOnProvider : NSObject
+```
+
 ## Topics
 
 ### Creating an Authorization Provider
-- [convenience init(identityProvider: URL)](asauthorizationsinglesignonprovider/init(identityprovider:).md)
+- [convenience init(identityProvider: URL)](./asauthorizationsinglesignonprovider/init%28identityprovider%29.md)
   Creates a single sign-on (SSO) authorization provider.
 ### Creating Authorization Requests
-- [var canPerformAuthorization: Bool](asauthorizationsinglesignonprovider/canperformauthorization.md)
+- [var canPerformAuthorization: Bool](./asauthorizationsinglesignonprovider/canperformauthorization.md)
   A Boolean value that indicates if the provider is capable of performing authorization within a given configuration.
-- [func createRequest() -> ASAuthorizationSingleSignOnRequest](asauthorizationsinglesignonprovider/createrequest.md)
+- [func createRequest() -> ASAuthorizationSingleSignOnRequest](./asauthorizationsinglesignonprovider/createrequest%28%29.md)
   Creates a single sign-on (SSO) authorization request.
-- [class ASAuthorizationSingleSignOnRequest](asauthorizationsinglesignonrequest.md)
+- [class ASAuthorizationSingleSignOnRequest](./asauthorizationsinglesignonrequest.md)
   An OpenID authorization request that provides single sign-on (SSO) functionality.
-- [class ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [class ASAuthorizationOpenIDRequest](./asauthorizationopenidrequest.md)
   An OpenID authorization request.
 ### Identifying the Identity Provider
-- [var url: URL](asauthorizationsinglesignonprovider/url.md)
+- [var url: URL](./asauthorizationsinglesignonprovider/url.md)
   The URL of the identity provider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASAuthorizationProvider](asauthorizationprovider.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASAuthorizationProvider](./asauthorizationprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ASAuthorizationSingleSignOnCredential](asauthorizationsinglesignoncredential.md)
+### Performing enterprise single sign-on
+- [class ASAuthorizationSingleSignOnCredential](./asauthorizationsinglesignoncredential.md)
   A credential that results from a successful single sign-on (SSO) authentication.
-- [protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler](asauthorizationproviderextensionauthorizationrequesthandler.md)
+- [protocol ASAuthorizationProviderExtensionAuthorizationRequestHandler](./asauthorizationproviderextensionauthorizationrequesthandler.md)
   An interface through which a single sign-on (SSO) authentication provider extension handles authentication requests.
-- [class ASAuthorizationProviderExtensionAuthorizationResult](asauthorizationproviderextensionauthorizationresult.md)
+- [class ASAuthorizationProviderExtensionAuthorizationResult](./asauthorizationproviderextensionauthorizationresult.md)
   The result of an authorization request.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./asauthorizationcontroller/requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

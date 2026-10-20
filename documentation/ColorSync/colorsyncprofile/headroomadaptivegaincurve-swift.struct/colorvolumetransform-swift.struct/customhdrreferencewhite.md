@@ -1,7 +1,8 @@
 # customHDRReferenceWhite
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom HDR reference white value, if specified.
 

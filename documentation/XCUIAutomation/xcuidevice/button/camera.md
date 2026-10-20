@@ -1,14 +1,15 @@
 # XCUIDevice.Button.camera
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device’s camera button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - Xcode 16.3+
 
 ## Declaration
@@ -17,15 +18,20 @@ The device’s camera button.
 case camera
 ```
 
+```c
+XCUIDeviceButtonCamera
+```
+
 ## See Also
 
-- [XCUIDevice.Button.home](xcuidevice/button/home.md)
+### Device buttons
+- [XCUIDevice.Button.home](./home.md)
   The device’s home button.
-- [XCUIDevice.Button.volumeUp](xcuidevice/button/volumeup.md)
+- [XCUIDevice.Button.volumeUp](./volumeup.md)
   The device’s volume up button.
-- [XCUIDevice.Button.volumeDown](xcuidevice/button/volumedown.md)
+- [XCUIDevice.Button.volumeDown](./volumedown.md)
   The device’s volume down button.
-- [XCUIDevice.Button.action](xcuidevice/button/action.md)
+- [XCUIDevice.Button.action](./action.md)
   The device’s action button.
 
 

@@ -1,7 +1,8 @@
 # MSSession
 
 **Framework**: Messages  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A session object used to create and update messages.
 
@@ -16,29 +17,33 @@ A session object used to create and update messages.
 class MSSession
 ```
 
+```objc
+@interface MSSession : NSObject
+```
+
 #### Overview
 
-> **Note**:  The [`MSSession`](mssession.md) class does not declare any instance methods or properties. iMessage apps use [`MSSession`](mssession.md) objects to identify and track updatable messages.
+> **Note**:  The [`MSSession`](./mssession.md) class does not declare any instance methods or properties. iMessage apps use [`MSSession`](./mssession.md) objects to identify and track updatable messages.
 
-[`MSMessage`](msmessage.md) objects associated with a session receive the following treatment in the transcript:
+[`MSMessage`](./msmessage.md) objects associated with a session receive the following treatment in the transcript:
 
 - The first time a session is used, the message appears normally in the transcript.
 - If a later message is sent using the same session, the previous message is removed from the transcript. The new message, with the updated content, is added to the bottom of the transcript, as normal.
-- If the previous message has a non-`nil` [`summaryText`](msmessage/summarytext.md) property, the Messages app creates a summary message from the text and inserts it in the message’s previous location.
+- If the previous message has a non-`nil` [`summaryText`](./msmessage/summarytext.md) property, the Messages app creates a summary message from the text and inserts it in the message’s previous location.
 
-##### Create New Updatable Messages
+##### Create New, Updatable Messages
 
 Use the following workflow to create a new, updatable message.
 
 1. Create the following:
 
-- A new URL that encodes the message’s initial state. For example, you could encode data as key-value pairs in the URL’s query string. For more information, see the [`MSMessage`](msmessage.md) class’s [`url`](msmessage/url.md) property.
-- A new layout object that describes the initial message’s appearance. For more information, see the [`MSMessage`](msmessage.md) class’s [`layout`](msmessage/layout.md) property.
-- A string that describes the message’s current state. For more information, see the [`MSMessage`](msmessage.md) class’s [`summaryText`](msmessage/summarytext.md) property.
+- A new URL that encodes the message’s initial state. For example, you could encode data as key-value pairs in the URL’s query string. For more information, see the [`MSMessage`](./msmessage.md) class’s [`url`](./msmessage/url.md) property.
+- A new layout object that describes the initial message’s appearance. For more information, see the [`MSMessage`](./msmessage.md) class’s [`layout`](./msmessage/layout.md) property.
+- A string that describes the message’s current state. For more information, see the [`MSMessage`](./msmessage.md) class’s [`summaryText`](./msmessage/summarytext.md) property.
 
-1. Instantiate a new [`MSSession`](mssession.md) object by calling its [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method.
-2. Instantiate a new [`MSMessage`](msmessage.md) object by calling its [`init(session:)`](msmessage/init(session:).md) method and passing the session object. Set the message’s [`url`](msmessage/url.md), [`layout`](msmessage/layout.md), and [`summaryText`](msmessage/summarytext.md) properties.
-3. Send the message by calling the conversation’s [`insert(_:completionHandler:)`](msconversation/insert(_:completionhandler:)-3g248.md) method. Pass `nil` for the change description.
+1. Instantiate a new [`MSSession`](./mssession.md) object by calling its [`init()`](../ObjectiveC/nsobject-swift.class/init%28%29.md) method.
+2. Instantiate a new [`MSMessage`](./msmessage.md) object by calling its [`init(session:)`](./msmessage/init%28session%29.md) method and passing the session object. Set the message’s [`url`](./msmessage/url.md), [`layout`](./msmessage/layout.md), and [`summaryText`](./msmessage/summarytext.md) properties.
+3. Send the message by calling the conversation’s [`insert(_:completionHandler:)`](./msconversation/insert%28_,completionhandler%29-3g248.md) method. Pass `nil` for the change description.
 
 The Messages app adds the message to the transcript as soon as the user taps the send button.
 
@@ -46,46 +51,47 @@ The Messages app adds the message to the transcript as soon as the user taps the
 
 Use the following workflow to receive and update a message.
 
-1. When the user taps on one of your [`MSMessage`](msmessage.md) entries, the conversation’s [`selectedMessage`](msconversation/selectedmessage.md) property is changed to the tapped message. Use key-value observing to respond to these changes. Extract the current state from the message’s [`url`](msmessage/url.md) property, and present it to the user. For more information on receiving messages, see [`MSMessage`](msmessage.md).
+1. When the user taps on one of your [`MSMessage`](./msmessage.md) entries, the conversation’s [`selectedMessage`](./msconversation/selectedmessage.md) property is changed to the tapped message. Use key-value observing to respond to these changes. Extract the current state from the message’s [`url`](./msmessage/url.md) property, and present it to the user. For more information on receiving messages, see [`MSMessage`](./msmessage.md).
 2. After the user responds, create the following:
 
-- A new URL that encodes the updated message state. For example, you could encode the data as key-value pairs in the URL’s query string. For more information, see the [`MSMessage`](msmessage.md) class’s [`url`](msmessage/url.md) property.
-- A new layout object that describes the updated message’s appearance. For more information, see the [`MSMessage`](msmessage.md) class’s [`layout`](msmessage/layout.md) property.
-- A string that describes the message’s current state. For more information, see the [`MSMessage`](msmessage.md) class’s [`summaryText`](msmessage/summarytext.md) property.
+- A new URL that encodes the updated message state. For example, you could encode the data as key-value pairs in the URL’s query string. For more information, see the [`MSMessage`](./msmessage.md) class’s [`url`](./msmessage/url.md) property.
+- A new layout object that describes the updated message’s appearance. For more information, see the [`MSMessage`](./msmessage.md) class’s [`layout`](./msmessage/layout.md) property.
+- A string that describes the message’s current state. For more information, see the [`MSMessage`](./msmessage.md) class’s [`summaryText`](./msmessage/summarytext.md) property.
 
-1. Instantiate a new [`MSMessage`](msmessage.md) object by calling its [`init(session:)`](msmessage/init(session:).md) method and passing the currently selected message’s [`MSSession`](mssession.md) object. Set the message’s [`url`](msmessage/url.md), [`layout`](msmessage/layout.md), and [`summaryText`](msmessage/summarytext.md) properties.
-2. Send the updated message by calling the conversation’s [`insert(_:completionHandler:)`](msconversation/insert(_:completionhandler:)-3g248.md) method.
+1. Instantiate a new [`MSMessage`](./msmessage.md) object by calling its [`init(session:)`](./msmessage/init%28session%29.md) method and passing the currently selected message’s [`MSSession`](./mssession.md) object. Set the message’s [`url`](./msmessage/url.md), [`layout`](./msmessage/layout.md), and [`summaryText`](./msmessage/summarytext.md) properties.
+2. Send the updated message by calling the conversation’s [`insert(_:completionHandler:)`](./msconversation/insert%28_,completionhandler%29-3g248.md) method.
 
 The Messages app updates the message in the transcript as soon as the user taps the send button.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mssession/init(coder:).md)
+- [init?(coder: NSCoder)](./mssession/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MSMessage](msmessage.md)
+### Interactive messages
+- [class MSMessage](./msmessage.md)
   A custom message object.
-- [class MSMessageLayout](msmessagelayout.md)
-  An abstract base class that defines the appearance of [`MSMessage`](msmessage.md) objects in the conversation transcript.
-- [class MSMessageTemplateLayout](msmessagetemplatelayout.md)
+- [class MSMessageLayout](./msmessagelayout.md)
+  An abstract base class that defines the appearance of [`MSMessage`](./msmessage.md) objects in the conversation transcript.
+- [class MSMessageTemplateLayout](./msmessagetemplatelayout.md)
   A template-based layout for custom messages.
-- [class MSMessageLiveLayout](msmessagelivelayout.md)
+- [class MSMessageLiveLayout](./msmessagelivelayout.md)
   A layout that provides a custom, interactive view inside the transcript.
 
 

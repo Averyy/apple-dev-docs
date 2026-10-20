@@ -1,7 +1,8 @@
 # CMTIMERANGE_IS_INVALID(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a time range is invalid.
 
@@ -22,7 +23,7 @@ func CMTIMERANGE_IS_INVALID(_ range: CMTimeRange) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `range` is invalid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if `range` is invalid; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -30,17 +31,18 @@ func CMTIMERANGE_IS_INVALID(_ range: CMTimeRange) -> Bool
 
 ## See Also
 
-- [func CMTIMERANGE_IS_EMPTY(CMTimeRange) -> Bool](cmtimerange_is_empty(_:).md)
+### Inspecting Time Ranges
+- [func CMTIMERANGE_IS_EMPTY(CMTimeRange) -> Bool](./cmtimerange_is_empty%28_%29.md)
   Returns a Boolean value that indicates whether a time range has a duration of zero.
-- [func CMTIMERANGE_IS_INDEFINITE(CMTimeRange) -> Bool](cmtimerange_is_indefinite(_:).md)
+- [func CMTIMERANGE_IS_INDEFINITE(CMTimeRange) -> Bool](./cmtimerange_is_indefinite%28_%29.md)
   Returns a Boolean value that indicates whether a time range is indefinite.
-- [func CMTIMERANGE_IS_VALID(CMTimeRange) -> Bool](cmtimerange_is_valid(_:).md)
+- [func CMTIMERANGE_IS_VALID(CMTimeRange) -> Bool](./cmtimerange_is_valid%28_%29.md)
   Returns a Boolean value that indicates whether a time range is valid.
-- [func CMTimeRangeGetEnd(CMTimeRange) -> CMTime](cmtimerangegetend(_:).md)
+- [func CMTimeRangeGetEnd(CMTimeRange) -> CMTime](./cmtimerangegetend%28_%29.md)
   Returns a time value that represents the end of a time range.
-- [func CMTimeRangeGetIntersection(CMTimeRange, otherRange: CMTimeRange) -> CMTimeRange](cmtimerangegetintersection(_:otherrange:).md)
+- [func CMTimeRangeGetIntersection(CMTimeRange, otherRange: CMTimeRange) -> CMTimeRange](./cmtimerangegetintersection%28_,otherrange%29.md)
   Returns a new time range with the time elements that are common between the input.
-- [func CMTimeRangeGetUnion(CMTimeRange, otherRange: CMTimeRange) -> CMTimeRange](cmtimerangegetunion(_:otherrange:).md)
+- [func CMTimeRangeGetUnion(CMTimeRange, otherRange: CMTimeRange) -> CMTimeRange](./cmtimerangegetunion%28_,otherrange%29.md)
   Returns a new time range with the time elements of the input.
 
 

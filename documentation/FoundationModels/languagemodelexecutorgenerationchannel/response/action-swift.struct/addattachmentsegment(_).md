@@ -1,7 +1,8 @@
 # addAttachmentSegment(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that adds an attachment segment to the entry.
 

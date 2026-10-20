@@ -1,7 +1,8 @@
 # Transform 2D
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A node that applies an affine transformation to a 2d input.
 
@@ -15,7 +16,18 @@ A node that applies an affine transformation to a 2d input.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `In` | Vector2f |
+| `Rotation` | Float |
+| `Scale` | Vector2f |
+| `Translation` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+#### Parameter descriptions
 
 - **`In`**: The vector to transform. This node appends an addtional component onto the `In` vector with a value of `1.0` to make the vector match the dimensions of the `Mat` matrix. When transformation is complete, this additional component clears.
 - **`Rotation`**: The degrees of counter-clockwise rotation to apply to the input.
@@ -28,11 +40,12 @@ The `Transform 2D` node takes a 2D vector as an input, applies the given rotatio
 
 ## See Also
 
-- [Image](2d-texture/image.md)
+### Nodes
+- [Image](./image.md)
   A texture referencing a 2D image file.
-- [Tiled Image](2d-texture/tiled-image.md)
+- [Tiled Image](./tiled-image.md)
   Samples data from an image with provisions for offsetting and tiling in UV space.
-- [UV Texture](2d-texture/uv-texture.md)
+- [UV Texture](./uv-texture.md)
   A MaterialX version of USD UV Texture reader.
 
 

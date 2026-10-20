@@ -1,7 +1,8 @@
 # ondevicemotion
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The event listener that is called when the device motion changes. 
 
@@ -11,19 +12,20 @@ The event listener that is called when the device motion changes.
 
 ## Declaration
 
-```swift
+```
 attribute EventHandler ondevicemotion;
 ```
 
 #### Discussion
 
-Read [`DeviceMotionEvent`](devicemotionevent.md) for details.
+Read [`DeviceMotionEvent`](../devicemotionevent.md) for details.
 
 ## See Also
 
-- [orientation](domwindow/1632568-orientation.md)
+### Getting Orientation and Motion Events
+- [orientation](./api-1632568-orientation.md)
   Specifies the orientation of the device.
-- [ondeviceorientation](domwindow/1628872-ondeviceorientation.md)
+- [ondeviceorientation](./api-1628872-ondeviceorientation.md)
   The event listener that is called while the device orientation changes around the x, y, and z axes. 
 
 

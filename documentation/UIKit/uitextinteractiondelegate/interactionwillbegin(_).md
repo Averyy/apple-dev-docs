@@ -1,7 +1,8 @@
 # interactionWillBegin(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the text interaction will begin.
 
@@ -17,15 +18,20 @@ Tells the delegate that the text interaction will begin.
 optional func interactionWillBegin(_ interaction: UITextInteraction)
 ```
 
+```objc
+- (void) interactionWillBegin:(UITextInteraction *) interaction;
+```
+
 ## Parameters
 
 - `interaction`: The text interaction that called this method.
 
 ## See Also
 
-- [func interactionShouldBegin(UITextInteraction, at: CGPoint) -> Bool](uitextinteractiondelegate/interactionshouldbegin(_:at:).md)
+### Handling text interaction events
+- [func interactionShouldBegin(UITextInteraction, at: CGPoint) -> Bool](./interactionshouldbegin%28_,at%29.md)
   Asks the delegate whether the text interaction should begin.
-- [func interactionDidEnd(UITextInteraction)](uitextinteractiondelegate/interactiondidend(_:).md)
+- [func interactionDidEnd(UITextInteraction)](./interactiondidend%28_%29.md)
   Tells the delegate that the text interaction ended.
 
 

@@ -1,7 +1,8 @@
 # rectangle
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A rectangle with square corners.
 

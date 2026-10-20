@@ -1,7 +1,8 @@
 # MusicPlayer.RepeatMode.all
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player is repeating the currently playing collection, such as an album or a playlist.
 

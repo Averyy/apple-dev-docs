@@ -1,22 +1,27 @@
 # MTLSizeMake(_:_:_:)
 
 **Framework**: Metal  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a size instance with values for its width, height, and depth properties.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func MTLSizeMake(_ width: Int, _ height: Int, _ depth: Int) -> MTLSize
+```
+
+```c
+static MTLSize MTLSizeMake(NSUInteger width, NSUInteger height, NSUInteger depth);
 ```
 
 ## Parameters
@@ -27,9 +32,10 @@ func MTLSizeMake(_ width: Int, _ height: Int, _ depth: Int) -> MTLSize
 
 ## See Also
 
-- [init()](mtlsize/init.md)
+### Creating a size instance
+- [init()](./mtlsize/init%28%29.md)
   Creates a default size instance by setting the initial values for its width, height, and depth properties to zero.
-- [init(width: Int, height: Int, depth: Int)](mtlsize/init(width:height:depth:).md)
+- [init(width: Int, height: Int, depth: Int)](./mtlsize/init%28width,height,depth%29.md)
   Creates a size instance with values for its width, height, and depth properties.
 
 

@@ -1,7 +1,8 @@
 # zoneName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name that identifies the record zone.
 
@@ -10,7 +11,7 @@ The name that identifies the record zone.
 
 ## Declaration
 
-```swift
+```
 attribute string zoneName;
 ```
 

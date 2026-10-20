@@ -1,7 +1,8 @@
 # IntentParameter.ElectricCharge
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,31 +19,34 @@
 enum ElectricCharge
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricCharge>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.ElectricCharge.ampereHours](intentparameter/electriccharge/amperehours.md)
-- [IntentParameter.ElectricCharge.coulombs](intentparameter/electriccharge/coulombs.md)
-- [IntentParameter.ElectricCharge.kiloampereHours](intentparameter/electriccharge/kiloamperehours.md)
-- [IntentParameter.ElectricCharge.megaampereHours](intentparameter/electriccharge/megaamperehours.md)
-- [IntentParameter.ElectricCharge.microampereHours](intentparameter/electriccharge/microamperehours.md)
-- [IntentParameter.ElectricCharge.milliampereHours](intentparameter/electriccharge/milliamperehours.md)
+- [IntentParameter.ElectricCharge.ampereHours](./electriccharge/amperehours.md)
+- [IntentParameter.ElectricCharge.coulombs](./electriccharge/coulombs.md)
+- [IntentParameter.ElectricCharge.kiloampereHours](./electriccharge/kiloamperehours.md)
+- [IntentParameter.ElectricCharge.megaampereHours](./electriccharge/megaamperehours.md)
+- [IntentParameter.ElectricCharge.microampereHours](./electriccharge/microamperehours.md)
+- [IntentParameter.ElectricCharge.milliampereHours](./electriccharge/milliamperehours.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.ElectricCharge?](intentparameter/unit-81ehc.md)
-- [var defaultUnit: IntentParameter<Value>.ElectricCharge?](intentparameter/defaultunit-1cdc2.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-2g1sv.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-3wgie.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.ElectricCharge?](./unit-81ehc.md)
+- [var defaultUnit: IntentParameter<Value>.ElectricCharge?](./defaultunit-1cdc2.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-2g1sv.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-3wgie.md)
 
 
 ---

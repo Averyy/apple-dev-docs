@@ -1,7 +1,8 @@
 # LitLightingModel.DiffuseModel.hammon
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Hammon diffuse, a physically based model that accounts for roughness.
 
@@ -21,9 +22,10 @@ case hammon
 
 ## See Also
 
-- [LitLightingModel.DiffuseModel.lambertian](litlightingmodel/diffusemodel-swift.enum/lambertian.md)
+### Choosing a diffuse model
+- [LitLightingModel.DiffuseModel.lambertian](./lambertian.md)
   Lambertian diffuse, a simple and performant constant-factor model.
-- [LitLightingModel.DiffuseModel.orenNayar](litlightingmodel/diffusemodel-swift.enum/orennayar.md)
+- [LitLightingModel.DiffuseModel.orenNayar](./orennayar.md)
   Oren-Nayar diffuse, a roughness-aware model suited to matte surfaces.
 
 

@@ -1,7 +1,8 @@
 # encryptionTimedOut
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.4+
@@ -20,10 +21,11 @@ static var encryptionTimedOut: CBError.Code { get }
 
 ## See Also
 
-- [static var leGattExceededBackgroundNotificationLimit: CBError.Code](cberror-swift.struct/legattexceededbackgroundnotificationlimit.md)
-- [static var leGattNearBackgroundNotificationLimit: CBError.Code](cberror-swift.struct/legattnearbackgroundnotificationlimit.md)
-- [static var peerRemovedPairingInformation: CBError.Code](cberror-swift.struct/peerremovedpairinginformation.md)
-- [static var tooManyLEPairedDevices: CBError.Code](cberror-swift.struct/toomanylepaireddevices.md)
+### Type Properties
+- [static var leGattExceededBackgroundNotificationLimit: CBError.Code](./legattexceededbackgroundnotificationlimit.md)
+- [static var leGattNearBackgroundNotificationLimit: CBError.Code](./legattnearbackgroundnotificationlimit.md)
+- [static var peerRemovedPairingInformation: CBError.Code](./peerremovedpairinginformation.md)
+- [static var tooManyLEPairedDevices: CBError.Code](./toomanylepaireddevices.md)
 
 
 ---

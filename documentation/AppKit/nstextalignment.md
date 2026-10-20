@@ -1,7 +1,8 @@
 # NSTextAlignment
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify text alignment.
 
@@ -14,39 +15,44 @@ Constants that specify text alignment.
 enum NSTextAlignment
 ```
 
+```c
+enum NSTextAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTextAlignment.left](nstextalignment/left.md)
+- [NSTextAlignment.left](./nstextalignment/left.md)
   Text is left-aligned.
-- [NSTextAlignment.right](nstextalignment/right.md)
+- [NSTextAlignment.right](./nstextalignment/right.md)
   Text is right-aligned.
-- [NSTextAlignment.center](nstextalignment/center.md)
+- [NSTextAlignment.center](./nstextalignment/center.md)
   Text is center-aligned.
-- [NSTextAlignment.justified](nstextalignment/justified.md)
+- [NSTextAlignment.justified](./nstextalignment/justified.md)
   Text is justified.
-- [NSTextAlignment.natural](nstextalignment/natural.md)
+- [NSTextAlignment.natural](./nstextalignment/natural.md)
   Text uses the default alignment for the current localization of the app.
 ### Initializers
-- [init?(rawValue: Int)](nstextalignment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nstextalignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSWritingDirection](nswritingdirection.md)
+### Constants
+- [enum NSWritingDirection](./nswritingdirection.md)
   Constants that specify the writing direction.
-- [Movement Codes](movement-codes.md)
+- [Movement Codes](./movement-codes.md)
   The reason for a change of editing focus among text fields.
-- [Common Unicode Characters](common-unicode-characters.md)
+- [Common Unicode Characters](./common-unicode-characters.md)
 
 
 ---

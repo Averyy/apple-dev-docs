@@ -1,7 +1,8 @@
 # textLayoutManager(_:cacheTextAttachmentViewProvider:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
 
@@ -12,6 +13,10 @@ Notifies the delegate that a view provider associated with a text attachment is 
 
 ```swift
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, cacheTextAttachmentViewProvider viewProvider: NSTextAttachmentViewProvider, for textAttachment: NSTextAttachment)
+```
+
+```objc
+- (void) textLayoutManager:(NSTextLayoutManager *) textLayoutManager cacheTextAttachmentViewProvider:(NSTextAttachmentViewProvider *) viewProvider forTextAttachment:(NSTextAttachment *) textAttachment;
 ```
 
 #### Discussion

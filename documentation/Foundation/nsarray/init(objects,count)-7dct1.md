@@ -1,7 +1,8 @@
 # init(objects:count:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an array that includes a given number of objects from a given C array.
 
@@ -18,6 +19,10 @@ Creates and returns an array that includes a given number of objects from a give
 
 ```swift
 convenience init(objects: UnsafePointer<AnyObject>, count cnt: Int)
+```
+
+```objc
++ (instancetype) arrayWithObjects:(ObjectType const[]) objects count:(NSUInteger) cnt;
 ```
 
 #### Return Value
@@ -45,7 +50,8 @@ NSArray *stringsArray = [NSArray arrayWithObjects:strings count:2];
 
 ## See Also
 
-- [convenience init(object: Any)](nsarray/init(object:).md)
+### Creating an Array
+- [convenience init(object: Any)](./init%28object%29.md)
   Creates and returns an array containing a given object.
 
 

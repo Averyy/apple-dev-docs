@@ -1,21 +1,22 @@
 # SubscriptionPricePoint.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPricePoint.Relationships.Territory
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPricePoint.Relationships.Territory.Data](subscriptionpricepoint/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionPricePoint.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
   The request body you use to update a subscription price point.
 
 ## Properties
@@ -24,9 +25,10 @@ object SubscriptionPricePoint.Relationships.Territory
 
 ## See Also
 
-- [object SubscriptionPricePoint.Relationships.Equalizations](subscriptionpricepoint/relationships-data.dictionary/equalizations-data.dictionary.md)
+### Objects
+- [object SubscriptionPricePoint.Relationships.Equalizations](./equalizations-data.dictionary.md)
   The links to the subscription price point’s territory equalizations relationship.
-- [object SubscriptionPricePoint.Relationships.AdjustedEqualizations](subscriptionpricepoint/relationships-data.dictionary/adjustedequalizations-data.dictionary.md)
+- [object SubscriptionPricePoint.Relationships.AdjustedEqualizations](./adjustedequalizations-data.dictionary.md)
   The links to the subscription price point’s adjusted territory equalizations relationship.
 
 

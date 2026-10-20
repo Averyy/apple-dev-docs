@@ -1,7 +1,8 @@
 # kSecTrustSettingsResult
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A number indicating the effective trust setting for this usage constraints dictionary.
 
@@ -15,9 +16,13 @@ A number indicating the effective trust setting for this usage constraints dicti
 var kSecTrustSettingsResult: String { get }
 ```
 
+```c
+#define kSecTrustSettingsResult
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) object containing an `SInt32` value.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing an `SInt32` value.
 
 
 ---

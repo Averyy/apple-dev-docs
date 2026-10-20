@@ -1,7 +1,8 @@
 # hostViewControllerWillDeactivate(_:error:)
 
 **Framework**: ExtensionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the host that the app extension disconnected and is no longer available.
 
@@ -20,11 +21,11 @@ optional func hostViewControllerWillDeactivate(_ viewController: EXHostViewContr
 
 ## Mentions
 
-- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
 #### Discussion
 
-The host view controller calls this method when the app extension exits or when you change the view controller’s [`configuration`](exhostviewcontroller/configuration-swift.property.md) property. Use this method to close out the previous connection to the app extension.
+The host view controller calls this method when the app extension exits or when you change the view controller’s [`configuration`](../exhostviewcontroller/configuration-swift.property.md) property. Use this method to close out the previous connection to the app extension.
 
 ## Parameters
 
@@ -33,7 +34,8 @@ The host view controller calls this method when the app extension exits or when 
 
 ## See Also
 
-- [func hostViewControllerDidActivate(EXHostViewController)](exhostviewcontrollerdelegate/hostviewcontrollerdidactivate(_:).md)
+### Responding to activation and deactivation events
+- [func hostViewControllerDidActivate(EXHostViewController)](./hostviewcontrollerdidactivate%28_%29.md)
   Tells the host that the app extension is active and ready to accept an XPC connection.
 
 

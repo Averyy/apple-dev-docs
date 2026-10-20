@@ -1,7 +1,8 @@
 # ReferenceComponent.LoadingPolicy.immediate
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Loads the contents from the referenced entity file immediately when the root entity loads.
 

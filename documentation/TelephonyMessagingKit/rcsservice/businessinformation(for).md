@@ -1,7 +1,8 @@
 # businessInformation(for:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests business information for a specified handle.
 
@@ -24,9 +25,10 @@ The actual render information structure or error.
 
 ## See Also
 
-- [RCSService.BusinessInformationRequest](rcsservice/businessinformationrequest.md)
+### Retrieving business information
+- [RCSService.BusinessInformationRequest](./businessinformationrequest.md)
   A structure representing a request to retrieve information about a business.
-- [RCSService.Business](rcsservice/business.md)
+- [RCSService.Business](./business.md)
   Structure containing details about a business.
 
 

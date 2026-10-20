@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The brightness of the spotlight.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The brightness of the spotlight.
 var brightness: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float brightness;
+```
+
 ## See Also
 
-- [var color: CIColor](cispotlight/color.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
   The color of the spotlight.
-- [var concentration: Float](cispotlight/concentration.md)
+- [var concentration: Float](./concentration.md)
   The size of the spotlight.
-- [var inputImage: CIImage?](cispotlight/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var lightPointsAt: CIVector](cispotlight/lightpointsat.md)
+- [var lightPointsAt: CIVector](./lightpointsat.md)
   The x and y position that the spotlight points at.
-- [var lightPosition: CIVector](cispotlight/lightposition.md)
+- [var lightPosition: CIVector](./lightposition.md)
   The x and y position of the spotlight.
 
 

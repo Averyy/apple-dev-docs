@@ -1,14 +1,15 @@
 # tcpi_tfo_recv_blackhole
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t tcpi_tfo_recv_blackhole:1;
 ```
 

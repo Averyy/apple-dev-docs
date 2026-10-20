@@ -1,7 +1,8 @@
 # LazySequence.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the sequence’s elements.
 
@@ -19,6 +20,8 @@ A type representing the sequence’s elements.
 ```swift
 typealias Element = Base.Element
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

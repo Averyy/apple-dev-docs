@@ -1,7 +1,8 @@
 # selection
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current selected elements on the canvas.
 
@@ -21,9 +22,10 @@ The current selected elements on the canvas.
 
 ## See Also
 
-- [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
+### Selecting elements
+- [var selectedMarkup: PaperMarkup](./selectedmarkup.md)
   The selected contents in the UI.
-- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
+- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](./suggestedframeforinserting%28contentinframe%29.md)
   Returns the suggested frame for inserting shapes and other content.
 
 

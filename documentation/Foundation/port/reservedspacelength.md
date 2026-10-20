@@ -1,7 +1,8 @@
 # reservedSpaceLength
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes of space reserved by the receiver for sending data.
 
@@ -20,15 +21,20 @@ The number of bytes of space reserved by the receiver for sending data.
 var reservedSpaceLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger reservedSpaceLength;
+```
+
 #### Discussion
 
 The number of bytes reserved by the receiver for sending data. The default length is `0`.
 
 ## See Also
 
-- [func send(before: Date, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](port/send(before:components:from:reserved:).md)
+### Setting information
+- [func send(before: Date, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](./send%28before,components,from,reserved%29.md)
   This method is provided for subclasses that have custom types of `NSPort`.
-- [func send(before: Date, msgid: Int, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](port/send(before:msgid:components:from:reserved:).md)
+- [func send(before: Date, msgid: Int, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](./send%28before,msgid,components,from,reserved%29.md)
   This method is provided for subclasses that have custom types of `NSPort`.
 
 

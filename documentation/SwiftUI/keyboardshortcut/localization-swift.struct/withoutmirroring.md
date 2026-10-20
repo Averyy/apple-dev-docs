@@ -1,7 +1,8 @@
 # withoutMirroring
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Don’t mirror shortcuts.
 
@@ -26,9 +27,10 @@ Don’t use this option for navigational shortcuts like “Go Back” because na
 
 ## See Also
 
-- [static let automatic: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/automatic.md)
+### Getting localization strategies
+- [static let automatic: KeyboardShortcut.Localization](./automatic.md)
   Remap shortcuts to their international counterparts, mirrored for right-to-left usage if appropriate.
-- [static let custom: KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct/custom.md)
+- [static let custom: KeyboardShortcut.Localization](./custom.md)
   Don’t use automatic shortcut remapping.
 
 

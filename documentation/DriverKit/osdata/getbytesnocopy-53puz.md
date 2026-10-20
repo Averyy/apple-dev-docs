@@ -1,19 +1,20 @@
 # getBytesNoCopy
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a pointer to the OSData object’s internal data buffer.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const void * getBytesNoCopy(size_t start, size_t numBytes) const;
 ```
 
@@ -28,10 +29,11 @@ A pointer to the data or NULL if the OSData does not have data for all the reque
 
 ## See Also
 
-- [getBytesNoCopy](osdata/getbytesnocopy-91vcg.md)
+### Getting Bytes
+- [getBytesNoCopy](./getbytesnocopy-91vcg.md)
   Returns a pointer to the OSData object’s internal data buffer.
-- [OSDataGetBytes](osdatagetbytes.md)
-- [OSDataGetBytesPtr](osdatagetbytesptr.md)
+- [OSDataGetBytes](../osdatagetbytes.md)
+- [OSDataGetBytesPtr](../osdatagetbytesptr.md)
 
 
 ---

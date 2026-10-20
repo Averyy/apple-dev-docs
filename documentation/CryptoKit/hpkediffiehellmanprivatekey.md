@@ -1,7 +1,8 @@
 # HPKEDiffieHellmanPrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the private key in a Diffie-Hellman key exchange.
 
@@ -24,17 +25,17 @@ protocol HPKEDiffieHellmanPrivateKey : DiffieHellmanKeyAgreement where Self.Publ
 ## Relationships
 
 ### Inherits From
-- [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DiffieHellmanKeyAgreement](./diffiehellmankeyagreement.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
+- [HPKEDiffieHellmanPrivateKeyGeneration](./hpkediffiehellmanprivatekeygeneration.md)
 ### Conforming Types
-- [Curve25519.KeyAgreement.PrivateKey](curve25519/keyagreement/privatekey.md)
-- [P256.KeyAgreement.PrivateKey](p256/keyagreement/privatekey.md)
-- [P384.KeyAgreement.PrivateKey](p384/keyagreement/privatekey.md)
-- [P521.KeyAgreement.PrivateKey](p521/keyagreement/privatekey.md)
-- [SecureEnclave.P256.KeyAgreement.PrivateKey](secureenclave/p256/keyagreement/privatekey.md)
+- [Curve25519.KeyAgreement.PrivateKey](./curve25519/keyagreement/privatekey.md)
+- [P256.KeyAgreement.PrivateKey](./p256/keyagreement/privatekey.md)
+- [P384.KeyAgreement.PrivateKey](./p384/keyagreement/privatekey.md)
+- [P521.KeyAgreement.PrivateKey](./p521/keyagreement/privatekey.md)
+- [SecureEnclave.P256.KeyAgreement.PrivateKey](./secureenclave/p256/keyagreement/privatekey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTRTimeFormatLocalizationHourFormat
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,24 +19,28 @@
 enum MTRTimeFormatLocalizationHourFormat
 ```
 
+```c
+enum MTRTimeFormatLocalizationHourFormat : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRTimeFormatLocalizationHourFormat.format12hr](mtrtimeformatlocalizationhourformat/format12hr.md)
-- [MTRTimeFormatLocalizationHourFormat.format24hr](mtrtimeformatlocalizationhourformat/format24hr.md)
-- [MTRTimeFormatLocalizationHourFormat.formatUseActiveLocale](mtrtimeformatlocalizationhourformat/formatuseactivelocale.md)
+- [MTRTimeFormatLocalizationHourFormat.format12hr](./mtrtimeformatlocalizationhourformat/format12hr.md)
+- [MTRTimeFormatLocalizationHourFormat.format24hr](./mtrtimeformatlocalizationhourformat/format24hr.md)
+- [MTRTimeFormatLocalizationHourFormat.formatUseActiveLocale](./mtrtimeformatlocalizationhourformat/formatuseactivelocale.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrtimeformatlocalizationhourformat/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrtimeformatlocalizationhourformat/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

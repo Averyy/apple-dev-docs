@@ -1,7 +1,8 @@
 # UINavigationItem.TitleAlignment.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system determines the alignment.
 
@@ -16,6 +17,10 @@ The system determines the alignment.
 
 ```swift
 case automatic
+```
+
+```c
+UINavigationItemTitleAlignmentAutomatic
 ```
 
 #### Discussion

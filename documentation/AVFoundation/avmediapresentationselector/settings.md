@@ -1,7 +1,8 @@
 # settings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides selectable mutually exclusive settings for the selector.
 
@@ -18,6 +19,10 @@ Provides selectable mutually exclusive settings for the selector.
 
 ```swift
 var settings: [AVMediaPresentationSetting] { get }
+```
+
+```objc
+@property (readonly) NSArray<AVMediaPresentationSetting *> * settings;
 ```
 
 

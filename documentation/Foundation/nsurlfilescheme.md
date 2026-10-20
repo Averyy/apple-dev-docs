@@ -1,7 +1,8 @@
 # NSURLFileScheme
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Identifies a URL that points to a file on a mounted volume.
 
@@ -18,6 +19,10 @@ Identifies a URL that points to a file on a mounted volume.
 
 ```swift
 let NSURLFileScheme: String
+```
+
+```c
+extern NSString * const NSURLFileScheme;
 ```
 
 

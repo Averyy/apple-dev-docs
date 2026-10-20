@@ -1,7 +1,8 @@
 # MPSImageArithmetic
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Base class for basic arithmetic nodes
 
@@ -19,46 +20,51 @@ Base class for basic arithmetic nodes
 class MPSImageArithmetic
 ```
 
+```objc
+@interface MPSImageArithmetic : MPSBinaryImageKernel
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](mpsimagearithmetic/bias.md)
-- [var primaryScale: Float](mpsimagearithmetic/primaryscale.md)
-- [var primaryStrideInPixels: MTLSize](mpsimagearithmetic/primarystrideinpixels.md)
-- [var secondaryScale: Float](mpsimagearithmetic/secondaryscale.md)
-- [var secondaryStrideInPixels: MTLSize](mpsimagearithmetic/secondarystrideinpixels.md)
-- [var maximumValue: Float](mpsimagearithmetic/maximumvalue.md)
-- [var minimumValue: Float](mpsimagearithmetic/minimumvalue.md)
+- [var bias: Float](./mpsimagearithmetic/bias.md)
+- [var primaryScale: Float](./mpsimagearithmetic/primaryscale.md)
+- [var primaryStrideInPixels: MTLSize](./mpsimagearithmetic/primarystrideinpixels.md)
+- [var secondaryScale: Float](./mpsimagearithmetic/secondaryscale.md)
+- [var secondaryStrideInPixels: MTLSize](./mpsimagearithmetic/secondarystrideinpixels.md)
+- [var maximumValue: Float](./mpsimagearithmetic/maximumvalue.md)
+- [var minimumValue: Float](./mpsimagearithmetic/minimumvalue.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSBinaryImageKernel](mpsbinaryimagekernel.md)
+- [MPSBinaryImageKernel](./mpsbinaryimagekernel.md)
 ### Inherited By
-- [MPSImageAdd](mpsimageadd.md)
-- [MPSImageDivide](mpsimagedivide.md)
-- [MPSImageMultiply](mpsimagemultiply.md)
-- [MPSImageSubtract](mpsimagesubtract.md)
+- [MPSImageAdd](./mpsimageadd.md)
+- [MPSImageDivide](./mpsimagedivide.md)
+- [MPSImageMultiply](./mpsimagemultiply.md)
+- [MPSImageSubtract](./mpsimagesubtract.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageAdd](mpsimageadd.md)
+### Image Arithmetic Filters
+- [class MPSImageAdd](./mpsimageadd.md)
   A filter that returns the element-wise sum of its two input images.
-- [class MPSImageSubtract](mpsimagesubtract.md)
+- [class MPSImageSubtract](./mpsimagesubtract.md)
   A filter that returns the element-wise difference of its two input images.
-- [class MPSImageMultiply](mpsimagemultiply.md)
+- [class MPSImageMultiply](./mpsimagemultiply.md)
   A filter that returns the element-wise product of its two input images.
-- [class MPSImageDivide](mpsimagedivide.md)
+- [class MPSImageDivide](./mpsimagedivide.md)
   A filter that returns the element-wise quotient of its two input images.
 
 

@@ -1,7 +1,8 @@
 # WarningLevel.error
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Treat as an error.
 

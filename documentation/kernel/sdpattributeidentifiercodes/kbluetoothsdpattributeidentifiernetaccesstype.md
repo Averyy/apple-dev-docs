@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierNetAccessType
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierNetAccessType = 0x030B
 ```
 

@@ -1,14 +1,15 @@
 # auditpinfo_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct auditpinfo {
     ...
 } auditpinfo_t;
@@ -17,11 +18,11 @@ typedef struct auditpinfo {
 ## Topics
 
 ### Instance Properties
-- [ap_asid](auditpinfo_t/1520335-ap_asid.md)
-- [ap_auid](auditpinfo_t/1520258-ap_auid.md)
-- [ap_mask](auditpinfo_t/1520317-ap_mask.md)
-- [ap_pid](auditpinfo_t/1520263-ap_pid.md)
-- [ap_termid](auditpinfo_t/1520374-ap_termid.md)
+- [ap_asid](./auditpinfo_t/api-1520335-ap_asid.md)
+- [ap_auid](./auditpinfo_t/api-1520258-ap_auid.md)
+- [ap_mask](./auditpinfo_t/api-1520317-ap_mask.md)
+- [ap_pid](./auditpinfo_t/api-1520263-ap_pid.md)
+- [ap_termid](./auditpinfo_t/api-1520374-ap_termid.md)
 
 
 ---

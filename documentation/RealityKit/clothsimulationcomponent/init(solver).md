@@ -1,7 +1,8 @@
 # init(solver:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new simulation component for cloth bodies.
 

@@ -1,7 +1,8 @@
 # stateUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives browser state updates.
 
@@ -23,11 +24,12 @@ final var stateUpdateHandler: (@Sendable (NWBrowser.State) -> Void)? { get set }
 
 ## See Also
 
-- [NWBrowser.State](nwbrowser/state-swift.enum.md)
+### Managing Browsers
+- [NWBrowser.State](./state-swift.enum.md)
   States indicating whether a browser is able to discover services.
-- [var state: NWBrowser.State](nwbrowser/state-swift.property.md)
+- [var state: NWBrowser.State](./state-swift.property.md)
   The current state of the browser.
-- [func cancel()](nwbrowser/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Stops browsing for services.
 
 

@@ -1,7 +1,8 @@
 # NWProtocolIP.Options.AddressPreference
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 14.0+
@@ -21,15 +22,15 @@ enum AddressPreference
 ## Topics
 
 ### Enumeration Cases
-- [NWProtocolIP.Options.AddressPreference.default](nwprotocolip/options/addresspreference/default.md)
-- [NWProtocolIP.Options.AddressPreference.stable](nwprotocolip/options/addresspreference/stable.md)
-- [NWProtocolIP.Options.AddressPreference.temporary](nwprotocolip/options/addresspreference/temporary.md)
+- [NWProtocolIP.Options.AddressPreference.default](./addresspreference/default.md)
+- [NWProtocolIP.Options.AddressPreference.stable](./addresspreference/stable.md)
+- [NWProtocolIP.Options.AddressPreference.temporary](./addresspreference/temporary.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

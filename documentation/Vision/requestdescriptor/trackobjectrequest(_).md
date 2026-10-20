@@ -1,7 +1,8 @@
 # RequestDescriptor.trackObjectRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a track object request.
 
@@ -22,7 +23,8 @@ case trackObjectRequest(TrackObjectRequest.Revision)
 
 ## See Also
 
-- [case trackRectangleRequest(TrackRectangleRequest.Revision)](requestdescriptor/trackrectanglerequest(_:).md)
+### Getting the object-tracking descriptor
+- [case trackRectangleRequest(TrackRectangleRequest.Revision)](./trackrectanglerequest%28_%29.md)
   A descriptor that describes a track rectangles request.
 
 

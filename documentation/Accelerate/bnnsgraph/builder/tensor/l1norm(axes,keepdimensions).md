@@ -1,7 +1,8 @@
 # l1Norm(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a sum-of-absolutes reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a sum-of-absolutes reduction operation along the given axis operation to th
 ```swift
 func l1Norm(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

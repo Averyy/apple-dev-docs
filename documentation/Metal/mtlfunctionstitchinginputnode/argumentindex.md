@@ -1,7 +1,8 @@
 # argumentIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index in the command’s buffer argument table that declares which data to read for this input node.
 
@@ -17,6 +18,10 @@ The index in the command’s buffer argument table that declares which data to r
 
 ```swift
 var argumentIndex: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger argumentIndex;
 ```
 
 

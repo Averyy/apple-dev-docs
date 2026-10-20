@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All change entries, keyed by the path of the affected spec.
 

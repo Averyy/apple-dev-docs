@@ -1,7 +1,8 @@
 # CFFileDescriptorGetContext(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the context for a given CFFileDescriptor.
 
@@ -20,18 +21,24 @@ Gets the context for a given CFFileDescriptor.
 func CFFileDescriptorGetContext(_ f: CFFileDescriptor!, _ context: UnsafeMutablePointer<CFFileDescriptorContext>!)
 ```
 
+```c
+extern void CFFileDescriptorGetContext(CFFileDescriptorRef f, CFFileDescriptorContext *context);
+```
+
 ## Parameters
 
 - `f`: A CFFileDescriptor.
-- `context`: Upon return, contains the context passed to `f` in [`CFFileDescriptorCreate(_:_:_:_:_:)`](cffiledescriptorcreate(_:_:_:_:_:).md).
+- `context`: Upon return, contains the context passed to `f` in [`CFFileDescriptorCreate(_:_:_:_:_:)`](./cffiledescriptorcreate%28_,_,_,_,_%29.md).
 
 ## See Also
 
-- [func CFFileDescriptorCreate(CFAllocator!, CFFileDescriptorNativeDescriptor, Bool, CFFileDescriptorCallBack!, UnsafePointer<CFFileDescriptorContext>!) -> CFFileDescriptor!](cffiledescriptorcreate(_:_:_:_:_:).md)
+### Related Documentation
+- [func CFFileDescriptorCreate(CFAllocator!, CFFileDescriptorNativeDescriptor, Bool, CFFileDescriptorCallBack!, UnsafePointer<CFFileDescriptorContext>!) -> CFFileDescriptor!](./cffiledescriptorcreate%28_,_,_,_,_%29.md)
   Creates a new CFFileDescriptor.
-- [func CFFileDescriptorGetNativeDescriptor(CFFileDescriptor!) -> CFFileDescriptorNativeDescriptor](cffiledescriptorgetnativedescriptor(_:).md)
+### Getting Information About a File Descriptor
+- [func CFFileDescriptorGetNativeDescriptor(CFFileDescriptor!) -> CFFileDescriptorNativeDescriptor](./cffiledescriptorgetnativedescriptor%28_%29.md)
   Returns the native file descriptor for a given CFFileDescriptor.
-- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](cffiledescriptorisvalid(_:).md)
+- [func CFFileDescriptorIsValid(CFFileDescriptor!) -> Bool](./cffiledescriptorisvalid%28_%29.md)
   Returns a Boolean value that indicates whether the native file descriptor for a given CFFileDescriptor is valid.
 
 

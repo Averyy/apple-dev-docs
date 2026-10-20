@@ -1,7 +1,8 @@
 # MTL4AlphaToOneState.enabled
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Enables alpha-to-one.
 
@@ -17,6 +18,10 @@ Enables alpha-to-one.
 
 ```swift
 case enabled
+```
+
+```c
+MTL4AlphaToOneStateEnabled
 ```
 
 

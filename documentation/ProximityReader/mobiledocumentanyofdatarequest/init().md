@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a composite mobile document data request.
 

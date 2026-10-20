@@ -1,7 +1,8 @@
 # commit()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the render server to coordinate transactions for the added views and layer hierarchies.
 
@@ -16,9 +17,13 @@ Notifies the render server to coordinate transactions for the added views and la
 func commit()
 ```
 
+```objc
+- (void) commit;
+```
+
 ## Mentions
 
-- [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
+- [Hosting browser view layers in the rendering extension](../hosting-browser-view-layers-in-the-rendering-extension.md)
 
 #### Discussion
 
@@ -32,13 +37,16 @@ Before calling this method:
 
 Use the instance only once; after you call this method, discard the instance.
 
-> **Note**: This method synchronizes changes committed in [`CATransaction`](https://developer.apple.com/documentation/quartzcore/catransaction) objects that affect the added views and layer hierarchies; it doesn’t commit the transactions. Call [`commit()`](https://developer.apple.com/documentation/quartzcore/catransaction/commit()) on each relevant transaction.
+> **Note**: This method synchronizes changes committed in [`CATransaction`](../../QuartzCore/catransaction.md) objects that affect the added views and layer hierarchies; it doesn’t commit the transactions.
+>
+> Call [`commit()`](../../QuartzCore/catransaction/commit%28%29.md) on each relevant transaction.
 
 ## See Also
 
-- [func add(LayerHierarchyHostingView)](layerhierarchyhostingtransactioncoordinator/add(_:)-7day0.md)
+### Synchronizing transactions
+- [func add(LayerHierarchyHostingView)](./add%28_%29-7day0.md)
   Notifies the transaction coordinator to start coordinating transactions for the given view.
-- [func add(LayerHierarchy)](layerhierarchyhostingtransactioncoordinator/add(_:)-i66q.md)
+- [func add(LayerHierarchy)](./add%28_%29-i66q.md)
   Notifies the transaction coordinator to start coordinating transactions for the given layer hierarchy.
 
 

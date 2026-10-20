@@ -1,17 +1,18 @@
 # PHASEEngine.UpdateMode
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Modes that determine when the framework consumes API calls and updates internal state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,45 +20,50 @@ Modes that determine when the framework consumes API calls and updates internal 
 enum UpdateMode
 ```
 
+```c
+enum PHASEUpdateMode : NSInteger;
+```
+
 #### Overview
 
-To define the manner in which PHASE processes commands and updates internal state, select an option from this enumeration and pass it to the `updateMode` parameter of the [`PHASEEngine`](phaseengine.md) initializer, [`init(updateMode:)`](phaseengine/init(updatemode:).md).
+To define the manner in which PHASE processes commands and updates internal state, select an option from this enumeration and pass it to the `updateMode` parameter of the [`PHASEEngine`](../phaseengine.md) initializer, [`init(updateMode:)`](./init%28updatemode%29.md).
 
 ## Topics
 
 ### Modes
-- [PHASEEngine.UpdateMode.automatic](phaseengine/updatemode/automatic.md)
+- [PHASEEngine.UpdateMode.automatic](./updatemode/automatic.md)
   A mode that indicates PHASE sets the timing of state adjustments.
-- [PHASEEngine.UpdateMode.manual](phaseengine/updatemode/manual.md)
+- [PHASEEngine.UpdateMode.manual](./updatemode/manual.md)
   A mode that indicates the app controls when the framework adjusts state.
 ### Initializers
-- [init?(rawValue: Int)](phaseengine/updatemode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./updatemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class PHASEEngine](phaseengine.md)
+### Setup
+- [class PHASEEngine](../phaseengine.md)
   An object that manages audio assets, controls playback, and configures environmental effects.
-- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+- [PHASEEngine.RenderingMode](./renderingmode.md)
   Modes that determine whether the system renders audio in process or out of process.
-- [class PHASEAssetRegistry](phaseassetregistry.md)
+- [class PHASEAssetRegistry](../phaseassetregistry.md)
   A central repository of audio assets.
-- [enum PHASENormalizationMode](phasenormalizationmode.md)
+- [enum PHASENormalizationMode](../phasenormalizationmode.md)
   Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
-- [enum PHASESpatializationMode](phasespatializationmode.md)
+- [enum PHASESpatializationMode](../phasespatializationmode.md)
   The manner in which PHASE outputs spatial audio.
-- [enum PHASEReverbPreset](phasereverbpreset.md)
+- [enum PHASEReverbPreset](../phasereverbpreset.md)
   The manner in which PHASE diffuses resonating sound.
-- [class PHASEMedium](phasemedium.md)
+- [class PHASEMedium](../phasemedium.md)
   A property or quality of the environment that affects how sound travels.
 
 

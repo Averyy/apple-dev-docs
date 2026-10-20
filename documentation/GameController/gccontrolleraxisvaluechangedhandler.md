@@ -1,7 +1,8 @@
 # GCControllerAxisValueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that executes when the user changes the axis value.
 
@@ -19,6 +20,10 @@ The signature for the block that executes when the user changes the axis value.
 typealias GCControllerAxisValueChangedHandler = (GCControllerAxisInput, Float) -> Void
 ```
 
+```c
+typedef void (^)(GCControllerAxisInput *, float) GCControllerAxisValueChangedHandler;
+```
+
 ## Parameters
 
 - `axis`: The axis that the user changed.
@@ -26,7 +31,8 @@ typealias GCControllerAxisValueChangedHandler = (GCControllerAxisInput, Float) -
 
 ## See Also
 
-- [var valueChangedHandler: GCControllerAxisValueChangedHandler?](gccontrolleraxisinput/valuechangedhandler.md)
+### Getting change information
+- [var valueChangedHandler: GCControllerAxisValueChangedHandler?](./gccontrolleraxisinput/valuechangedhandler.md)
   The block that the element calls when the user changes the axis value.
 
 

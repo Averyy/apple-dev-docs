@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to an object that owns the transfer.
 
@@ -10,15 +11,16 @@ A pointer to an object that owns the transfer.
 
 ## Declaration
 
-```swift
+```c
 void *owner;
 ```
 
 ## See Also
 
-- [action](iousbhostbundledcompletion/3230704-action.md)
+### Getting the Properties
+- [action](./api-3230704-action.md)
   The action that executes when the input/output request completes.
-- [parameter](iousbhostbundledcompletion/3230706-parameter.md)
+- [parameter](./api-3230706-parameter.md)
   A context pointer within the completion action.
 
 

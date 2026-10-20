@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a prominent picker subscription store control style.
 

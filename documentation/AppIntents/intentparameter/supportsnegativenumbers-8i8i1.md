@@ -1,7 +1,8 @@
 # supportsNegativeNumbers
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var supportsNegativeNumbers: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitFrequency>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Frequency?](intentparameter/unit-69agf.md)
-- [IntentParameter.Frequency](intentparameter/frequency.md)
-- [var defaultUnit: IntentParameter<Value>.Frequency?](intentparameter/defaultunit-61co5.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-52v1p.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Frequency?](./unit-69agf.md)
+- [IntentParameter.Frequency](./frequency.md)
+- [var defaultUnit: IntentParameter<Value>.Frequency?](./defaultunit-61co5.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-52v1p.md)
 
 
 ---

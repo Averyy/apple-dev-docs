@@ -1,7 +1,8 @@
 # NSURLRequest.CachePolicy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The constants used to specify interaction with the cached responses.
 
@@ -20,47 +21,52 @@ The constants used to specify interaction with the cached responses.
 enum CachePolicy
 ```
 
+```c
+enum NSURLRequestCachePolicy : NSUInteger;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Overview
 
-The default policy is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md).
+The default policy is [`NSURLRequest.CachePolicy.useProtocolCachePolicy`](./cachepolicy-swift.enum/useprotocolcachepolicy.md).
 
 ## Topics
 
 ### Policies
-- [NSURLRequest.CachePolicy.useProtocolCachePolicy](nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md)
+- [NSURLRequest.CachePolicy.useProtocolCachePolicy](./cachepolicy-swift.enum/useprotocolcachepolicy.md)
   Use the caching logic defined in the protocol implementation, if any, for a particular URL load request.
-- [NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalcachedata.md)
+- [NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData](./cachepolicy-swift.enum/reloadignoringlocalcachedata.md)
   The URL load should be loaded only from the originating source.
-- [NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md)
+- [NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData](./cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md)
   Ignore local cache data, and instruct proxies and other intermediates to disregard their caches so far as the protocol allows.
-- [static var reloadIgnoringCacheData: NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum/reloadignoringcachedata.md)
-  Replaced by [`NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData`](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalcachedata.md).
-- [NSURLRequest.CachePolicy.returnCacheDataElseLoad](nsurlrequest/cachepolicy-swift.enum/returncachedataelseload.md)
+- [static var reloadIgnoringCacheData: NSURLRequest.CachePolicy](./cachepolicy-swift.enum/reloadignoringcachedata.md)
+  Replaced by [`NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData`](./cachepolicy-swift.enum/reloadignoringlocalcachedata.md).
+- [NSURLRequest.CachePolicy.returnCacheDataElseLoad](./cachepolicy-swift.enum/returncachedataelseload.md)
   Use existing cache data, regardless or age or expiration date, loading from originating source only if there is no cached data.
-- [NSURLRequest.CachePolicy.returnCacheDataDontLoad](nsurlrequest/cachepolicy-swift.enum/returncachedatadontload.md)
+- [NSURLRequest.CachePolicy.returnCacheDataDontLoad](./cachepolicy-swift.enum/returncachedatadontload.md)
   Use existing cache data, regardless or age or expiration date, and fail if no cached data is available.
-- [NSURLRequest.CachePolicy.reloadRevalidatingCacheData](nsurlrequest/cachepolicy-swift.enum/reloadrevalidatingcachedata.md)
+- [NSURLRequest.CachePolicy.reloadRevalidatingCacheData](./cachepolicy-swift.enum/reloadrevalidatingcachedata.md)
   Use cache data if the origin source can validate it; otherwise, load from the origin.
 ### Initializers
-- [init?(rawValue: UInt)](nsurlrequest/cachepolicy-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./cachepolicy-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cachePolicy: NSURLRequest.CachePolicy](nsmutableurlrequest/cachepolicy.md)
+### Working with a cache policy
+- [var cachePolicy: NSURLRequest.CachePolicy](../nsmutableurlrequest/cachepolicy.md)
   The request’s cache policy.
 
 

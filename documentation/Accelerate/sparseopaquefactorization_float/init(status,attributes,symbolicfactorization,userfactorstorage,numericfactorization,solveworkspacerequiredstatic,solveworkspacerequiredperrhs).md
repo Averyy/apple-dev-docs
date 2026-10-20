@@ -1,18 +1,19 @@
 # init(status:attributes:symbolicFactorization:userFactorStorage:numericFactorization:solveWorkspaceRequiredStatic:solveWorkspaceRequiredPerRHS:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new opaque factorization with the specified parameters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -36,7 +37,8 @@ A new opaque factorization.
 
 ## See Also
 
-- [init()](sparseopaquefactorization_float/init.md)
+### Creating an Opaque Factorization
+- [init()](./init%28%29.md)
   Creates a new opaque factorization.
 
 

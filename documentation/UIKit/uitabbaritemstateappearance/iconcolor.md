@@ -1,7 +1,8 @@
 # iconColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of item icons.
 
@@ -17,6 +18,10 @@ The color of item icons.
 ```swift
 @NSCopying
 var iconColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * iconColor;
 ```
 
 

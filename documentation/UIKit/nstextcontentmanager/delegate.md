@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the content manager object.
 
@@ -18,11 +19,16 @@ The delegate for the content manager object.
 weak var delegate: (any NSTextContentManagerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextContentManagerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSTextContentManagerDelegate](nstextcontentmanagerdelegate.md)
+### Customizing and validating text elements
+- [protocol NSTextContentManagerDelegate](../nstextcontentmanagerdelegate.md)
   The optional methods that delegates of content manager objects implement for customizing or validating text elements.
-- [NSTextContentManager.EnumerationOptions](nstextcontentmanager/enumerationoptions.md)
+- [NSTextContentManager.EnumerationOptions](./enumerationoptions.md)
   Values that control the order in which the framework enumerates text elements.
 
 

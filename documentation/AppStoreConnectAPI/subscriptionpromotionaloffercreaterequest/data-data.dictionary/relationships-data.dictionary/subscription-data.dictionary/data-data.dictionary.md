@@ -1,7 +1,8 @@
 # SubscriptionPromotionalOfferCreateRequest.Data.Relationships.Subscription.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a subscription promotional offer.
 
@@ -10,14 +11,14 @@ The request body you use to create a subscription promotional offer.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPromotionalOfferCreateRequest.Data.Relationships.Subscription.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptions`
 
 
 ---

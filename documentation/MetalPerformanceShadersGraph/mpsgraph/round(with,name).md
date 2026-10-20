@@ -1,7 +1,8 @@
 # round(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Rounds the input tensor elements.
 
@@ -17,6 +18,10 @@ Rounds the input tensor elements.
 
 ```swift
 func round(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) roundWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

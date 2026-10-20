@@ -1,7 +1,8 @@
 # MTREventNumberKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTREventNumberKey: String
+```
+
+```c
+extern NSString * const MTREventNumberKey;
 ```
 
 

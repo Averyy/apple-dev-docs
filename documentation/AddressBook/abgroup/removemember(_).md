@@ -1,12 +1,13 @@
 # removeMember(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a person from a group.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Removes a person from a group.
 func removeMember(_ person: ABPerson!) -> Bool
 ```
 
+```objc
+- (BOOL) removeMember:(ABPerson *) person;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the `person` argument is not in the group, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). If `person` is `nil`, this method raises an exception.
+If the `person` argument is not in the group, this method does nothing and returns [`false`](../../Swift/false.md). If `person` is `nil`, this method raises an exception.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ If the `person` argument is not in the group, this method does nothing and retur
 
 ## See Also
 
-- [func addMember(ABPerson!) -> Bool](abgroup/addmember(_:).md)
+### Managing persons
+- [func addMember(ABPerson!) -> Bool](./addmember%28_%29.md)
   Adds a person to a group.
-- [func members() -> [Any]!](abgroup/members.md)
+- [func members() -> [Any]!](./members%28%29.md)
   Returns an array of persons in a group.
 
 

@@ -1,7 +1,8 @@
 # ensuresExtraLineFragment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Synthesize the extra line fragment when necessary.
 
@@ -18,13 +19,18 @@ Synthesize the extra line fragment when necessary.
 static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions { get }
 ```
 
+```c
+NSTextLayoutFragmentEnumerationOptionsEnsuresExtraLineFragment
+```
+
 ## See Also
 
-- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensureslayout.md)
+### Layout fragment characteristics
+- [static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions](./ensureslayout.md)
   When enumerating, tell the layout fragments to layout their contents.
-- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/estimatessize.md)
+- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](./estimatessize.md)
   When enumerating, tell the layout fragments to estimate their size.
-- [static var reverse: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/reverse.md)
+- [static var reverse: NSTextLayoutFragment.EnumerationOptions](./reverse.md)
   Causes the enumeration to start from the last element.
 
 

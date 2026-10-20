@@ -1,7 +1,8 @@
 # windowDidChangeOcclusionState(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window changed its occlusion state.
 
@@ -15,9 +16,13 @@ Tells the delegate that the window changed its occlusion state.
 optional func windowDidChangeOcclusionState(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidChangeOcclusionState:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: An [`didChangeOcclusionStateNotification`](nswindow/didchangeocclusionstatenotification.md) notification.
+- `notification`: An [`didChangeOcclusionStateNotification`](../nswindow/didchangeocclusionstatenotification.md) notification.
 
 
 ---

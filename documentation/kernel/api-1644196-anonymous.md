@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFrameBufferDeepSleepSupported](1644196-anonymous/kframebufferdeepsleepsupported.md)
-- [kPCICantSleep](1644196-anonymous/kpcicantsleep.md)
-- [kRootDomainSleepNotSupported](1644196-anonymous/krootdomainsleepnotsupported.md)
-- [kRootDomainSleepSupported](1644196-anonymous/krootdomainsleepsupported.md)
+- [kFrameBufferDeepSleepSupported](./api-1644196-anonymous/kframebufferdeepsleepsupported.md)
+- [kPCICantSleep](./api-1644196-anonymous/kpcicantsleep.md)
+- [kRootDomainSleepNotSupported](./api-1644196-anonymous/krootdomainsleepnotsupported.md)
+- [kRootDomainSleepSupported](./api-1644196-anonymous/krootdomainsleepsupported.md)
 
 
 ---

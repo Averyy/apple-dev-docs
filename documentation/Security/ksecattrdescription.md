@@ -1,7 +1,8 @@
 # kSecAttrDescription
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s a string indicating the item’s description.
 
@@ -20,9 +21,13 @@ A key with a value that’s a string indicating the item’s description.
 let kSecAttrDescription: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrDescription;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and specifies a user-visible string describing this kind of item (for example, “Disk image password”).
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and specifies a user-visible string describing this kind of item (for example, “Disk image password”).
 
 
 ---

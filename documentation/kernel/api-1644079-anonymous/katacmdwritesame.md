@@ -1,14 +1,15 @@
 # kATAcmdWriteSame
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAcmdWriteSame = 0x00E9
 ```
 

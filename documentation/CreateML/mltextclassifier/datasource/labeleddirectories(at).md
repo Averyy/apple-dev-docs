@@ -1,7 +1,8 @@
 # MLTextClassifier.DataSource.labeledDirectories(at:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A root directory of labeled directories for your data set.
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,16 +18,16 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBSuperSpeedHubCharacteristicsCompoundDevice](3166383-anonymous/kiousbsuperspeedhubcharacteristicscompounddevice.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentGlobal](3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentglobal.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentIndividual](3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentindividual.md)
-- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentMask](3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentmask.md)
-- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingGanged](3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingganged.md)
-- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingIndividual](3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingindividual.md)
-- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingMask](3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingmask.md)
-- [kIOUSBSuperSpeedHubCharacteristicsReserved](3166383-anonymous/kiousbsuperspeedhubcharacteristicsreserved.md)
-- [kIOUSBSuperSpeedHubDecodeLatencyMax](3166383-anonymous/kiousbsuperspeedhubdecodelatencymax.md)
-- [kIOUSBSuperSpeedHubDelayMax](3166383-anonymous/kiousbsuperspeedhubdelaymax.md)
+- [kIOUSBSuperSpeedHubCharacteristicsCompoundDevice](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicscompounddevice.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentGlobal](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentglobal.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentIndividual](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentindividual.md)
+- [kIOUSBSuperSpeedHubCharacteristicsOverCurrentMask](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicsovercurrentmask.md)
+- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingGanged](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingganged.md)
+- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingIndividual](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingindividual.md)
+- [kIOUSBSuperSpeedHubCharacteristicsPowerSwitchingMask](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicspowerswitchingmask.md)
+- [kIOUSBSuperSpeedHubCharacteristicsReserved](./api-3166383-anonymous/kiousbsuperspeedhubcharacteristicsreserved.md)
+- [kIOUSBSuperSpeedHubDecodeLatencyMax](./api-3166383-anonymous/kiousbsuperspeedhubdecodelatencymax.md)
+- [kIOUSBSuperSpeedHubDelayMax](./api-3166383-anonymous/kiousbsuperspeedhubdelaymax.md)
 
 
 ---

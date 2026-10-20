@@ -1,7 +1,8 @@
 # utilityPanel
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Utility panel window position.
 

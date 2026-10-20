@@ -1,7 +1,8 @@
 # WritingToolsBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The Writing Tools editing experience for text and text input.
 
@@ -21,28 +22,29 @@ struct WritingToolsBehavior
 ## Topics
 
 ### Type Properties
-- [static let automatic: WritingToolsBehavior](writingtoolsbehavior/automatic.md)
+- [static let automatic: WritingToolsBehavior](./writingtoolsbehavior/automatic.md)
   An appropriate editing experience will be provided based on context, which may include disabling the writing tools.
-- [static let complete: WritingToolsBehavior](writingtoolsbehavior/complete.md)
+- [static let complete: WritingToolsBehavior](./writingtoolsbehavior/complete.md)
   The complete inline-editing experience is provided if possible.
-- [static let disabled: WritingToolsBehavior](writingtoolsbehavior/disabled.md)
+- [static let disabled: WritingToolsBehavior](./writingtoolsbehavior/disabled.md)
   The writing tools are disabled.
-- [static let limited: WritingToolsBehavior](writingtoolsbehavior/limited.md)
+- [static let limited: WritingToolsBehavior](./writingtoolsbehavior/limited.md)
   The limited, overlay-panel experience is provided if possible.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
+### Configuring the Writing Tools behavior
+- [func writingToolsBehavior(WritingToolsBehavior) -> some View](./view/writingtoolsbehavior%28_%29.md)
   Specifies the Writing Tools behavior for text and text input in the environment.
-- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](./view/writingtoolsaffordancevisibility%28_%29.md)
   Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 
 

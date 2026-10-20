@@ -1,7 +1,8 @@
 # containerValue(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a particular container value of a view.
 
@@ -27,9 +28,9 @@ A view that has the given value set in its containerValues.
 
 #### Discussion
 
-Use this modifier to set one of the writable properties of the [`ContainerValues`](containervalues.md) structure, including custom values that you create.
+Use this modifier to set one of the writable properties of the [`ContainerValues`](../containervalues.md) structure, including custom values that you create.
 
-Like preferences, container values are able to be read by views above the view they’re set on. Unlike preferences, however, container values don’t have merging behavior because they don’t escape their closest container. In the following example, the container value is set on the contained view, but is dropped when it reaches the containing [`VStack`](vstack.md).
+Like preferences, container values are able to be read by views above the view they’re set on. Unlike preferences, however, container values don’t have merging behavior because they don’t escape their closest container. In the following example, the container value is set on the contained view, but is dropped when it reaches the containing [`VStack`](../vstack.md).
 
 ```swift
 VStack {
@@ -111,20 +112,21 @@ extension View {
 
 ## Parameters
 
-- `keyPath`: A key path that indicates the property of the [`ContainerValues`](containervalues.md) structure to update.
+- `keyPath`: A key path that indicates the property of the [`ContainerValues`](../containervalues.md) structure to update.
 - `value`: The new value to set for the item specified by `keyPath`.
 
 ## See Also
 
-- [struct Subview](subview.md)
+### Accessing a container’s subviews
+- [struct Subview](../subview.md)
   An opaque value representing a subview of another view.
-- [struct SubviewsCollection](subviewscollection.md)
+- [struct SubviewsCollection](../subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+- [struct SubviewsCollectionSlice](../subviewscollectionslice.md)
   A slice of a SubviewsCollection.
-- [struct ContainerValues](containervalues.md)
+- [struct ContainerValues](../containervalues.md)
   A collection of container values associated with a given view.
-- [protocol ContainerValueKey](containervaluekey.md)
+- [protocol ContainerValueKey](../containervaluekey.md)
   A key for accessing container values.
 
 

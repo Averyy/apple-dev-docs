@@ -1,7 +1,8 @@
 # VZMacGraphicsDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a Mac graphics device.
 
@@ -14,37 +15,43 @@ An object that represents a Mac graphics device.
 class VZMacGraphicsDevice
 ```
 
+```objc
+@interface VZMacGraphicsDevice : VZGraphicsDevice
+```
+
 #### Overview
 
-You don’t instantiate a `VZMacGraphicsDevice` directly. Graphics devices are first configured on the [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) through a subclass of [`VZMacGraphicsDeviceConfiguration`](vzmacgraphicsdeviceconfiguration.md).  When the framework creates a VZVirtualMachine from the configuration, the graphics devices are available through the `graphicsDevices` property.
+You don’t instantiate a `VZMacGraphicsDevice` directly. Graphics devices are first configured on the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZMacGraphicsDeviceConfiguration`](./vzmacgraphicsdeviceconfiguration.md).  When the framework creates a VZVirtualMachine from the configuration, the graphics devices are available through the `graphicsDevices` property.
 
 ## Relationships
 
 ### Inherits From
-- [VZGraphicsDevice](vzgraphicsdevice.md)
+- [VZGraphicsDevice](./vzgraphicsdevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacGraphicsDeviceConfiguration](vzmacgraphicsdeviceconfiguration.md)
+### Related Documentation
+- [class VZMacGraphicsDeviceConfiguration](./vzmacgraphicsdeviceconfiguration.md)
   Configuration for a display attached to a Mac graphics device.
-- [class VZGraphicsDevice](vzgraphicsdevice.md)
+### Devices
+- [class VZGraphicsDevice](./vzgraphicsdevice.md)
   A class that represents a graphics device in a VM.
-- [class VZGraphicsDisplay](vzgraphicsdisplay.md)
+- [class VZGraphicsDisplay](./vzgraphicsdisplay.md)
   A class that represents a graphics display in a VM.
-- [class VZVirtioGraphicsScanout](vzvirtiographicsscanout.md)
+- [class VZVirtioGraphicsScanout](./vzvirtiographicsscanout.md)
   A Virtio graphics scanout that corresponds to a Virtio graphics scanout configuration.
-- [class VZMacGraphicsDisplay](vzmacgraphicsdisplay.md)
+- [class VZMacGraphicsDisplay](./vzmacgraphicsdisplay.md)
   An object that represents the graphics display on a Mac.
-- [class VZVirtioGraphicsDevice](vzvirtiographicsdevice.md)
+- [class VZVirtioGraphicsDevice](./vzvirtiographicsdevice.md)
   A Virtio graphics device.
-- [struct VZVirtualMachineViewAdaptor](vzvirtualmachineviewadaptor.md)
+- [struct VZVirtualMachineViewAdaptor](./vzvirtualmachineviewadaptor.md)
   A sendable wrapper that connects a virtual machine view to a virtual machine.
 
 

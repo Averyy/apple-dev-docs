@@ -1,7 +1,8 @@
 # phoneticRepresentation
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A phonetic representation of the user’s name.
 
@@ -10,7 +11,7 @@ A phonetic representation of the user’s name.
 
 ## Declaration
 
-```swift
+```
 attribute string? phoneticRepresentation;
 ```
 

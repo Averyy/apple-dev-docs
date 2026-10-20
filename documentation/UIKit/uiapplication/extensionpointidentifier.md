@@ -1,16 +1,17 @@
 # UIApplication.ExtensionPointIdentifier
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that identifies types of extensions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ A structure that identifies types of extensions.
 struct ExtensionPointIdentifier
 ```
 
+```c
+typedef NSString * UIApplicationExtensionPointIdentifier;
+```
+
 ## Topics
 
 ### Constants
-- [static let keyboard: UIApplication.ExtensionPointIdentifier](uiapplication/extensionpointidentifier/keyboard.md)
+- [static let keyboard: UIApplication.ExtensionPointIdentifier](./extensionpointidentifier/keyboard.md)
   The identifier for custom keyboards.
 ### Initializers
-- [init(rawValue: String)](uiapplication/extensionpointidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./extensionpointidentifier/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func application(UIApplication, shouldAllowExtensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool](uiapplicationdelegate/application(_:shouldallowextensionpointidentifier:).md)
+### Disallowing specified app extension types
+- [func application(UIApplication, shouldAllowExtensionPointIdentifier: UIApplication.ExtensionPointIdentifier) -> Bool](../uiapplicationdelegate/application%28_,shouldallowextensionpointidentifier%29.md)
   Asks the delegate to grant permission to use app extensions that are based on a specified extension point identifier.
-- [static let keyboard: UIApplication.ExtensionPointIdentifier](uiapplication/extensionpointidentifier/keyboard.md)
+- [static let keyboard: UIApplication.ExtensionPointIdentifier](./extensionpointidentifier/keyboard.md)
   The identifier for custom keyboards.
 
 

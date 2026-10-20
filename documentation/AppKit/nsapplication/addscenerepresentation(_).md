@@ -1,7 +1,8 @@
 # addSceneRepresentation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified SwiftUI scene representation to the current application.
 
@@ -21,7 +22,7 @@ Scenes defined by the representation can be presented programmatically via the e
 
 For example, you can add a `Settings` scene to your app and present it when the corresponding menu item is selected:
 
-```None
+```
 import AppKit
 import SwiftUI
 

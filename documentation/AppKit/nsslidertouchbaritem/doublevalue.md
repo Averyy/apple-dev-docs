@@ -1,7 +1,8 @@
 # doubleValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The double value of the slider.
 
@@ -17,11 +18,16 @@ The double value of the slider.
 var doubleValue: Double { get set }
 ```
 
+```objc
+@property double doubleValue;
+```
+
 ## See Also
 
-- [var minimumSliderWidth: CGFloat](nsslidertouchbaritem/minimumsliderwidth.md)
+### Managing the slider’s value
+- [var minimumSliderWidth: CGFloat](./minimumsliderwidth.md)
   The minimum width of the slider’s track.
-- [var maximumSliderWidth: CGFloat](nsslidertouchbaritem/maximumsliderwidth.md)
+- [var maximumSliderWidth: CGFloat](./maximumsliderwidth.md)
   The maximum width of the slider’s track.
 
 

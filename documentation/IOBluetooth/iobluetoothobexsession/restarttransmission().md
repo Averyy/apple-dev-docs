@@ -1,17 +1,22 @@
 # restartTransmission()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If the transmission was stopped due to the lack of buffers this call restarts it.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func restartTransmission()
+```
+
+```objc
+- (void) restartTransmission;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # areaHistogram()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a histogram of a specified area of the image.
 
@@ -19,6 +20,10 @@ Returns a histogram of a specified area of the image.
 class func areaHistogram() -> any CIFilter & CIAreaHistogram
 ```
 
+```objc
++ (CIFilter<CIAreaHistogram> *) areaHistogramFilter;
+```
+
 #### Return Value
 
 A 1 pixel high image containing the calculated histogram`.`
@@ -29,8 +34,8 @@ This filter calculates histograms of the red, green, blue, and alpha colors in t
 
 The area histogram filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that specifies the subregion of the image that you want to process.
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`extent`**: A [`CGRect`](../../CoreFoundation/cgrect.md) that specifies the subregion of the image that you want to process.
 - **`scale`**: The scale value to use for the histogram values. If the scale is 1, then the total of all the counts in the histogram equals 1.
 - **`count`**: The number of bins for the histogram. This value determines the width of the output image. Minimum value 1, maximum value 2048.
 
@@ -51,7 +56,7 @@ func areaHistogram(inputImage: CIImage) -> CIImage {
 }
 ```
 
-To display the histogram, you can use the [`histogramDisplay()`](cifilter-swift.class/histogramdisplay().md) filter:
+To display the histogram, you can use the [`histogramDisplay()`](./histogramdisplay%28%29.md) filter:
 
 ```swift
 func histogramDisplay(inputImage: CIImage) -> CIImage {
@@ -65,33 +70,34 @@ func histogramDisplay(inputImage: CIImage) -> CIImage {
 
 ```
 
-![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of the histogram display filter. There are three overlaid charts showing the histogram of the red, green, and blue components.](/images/com.apple.coreimage/media-4332392@2x.png)
+![Two images arranged horizontally. The left image contains a photograph of three hydrangea flowers with leaves in the background. The image on the right shows the result of the histogram display filter. There are three overlaid charts showing the histogram of the red, green, and blue components.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4332392@2x.png)
 
 ## See Also
 
-- [class func areaAverage() -> any CIFilter & CIAreaAverage](cifilter-swift.class/areaaverage.md)
+### Filters
+- [class func areaAverage() -> any CIFilter & CIAreaAverage](./areaaverage%28%29.md)
   Returns a 1 x 1 pixel image that contains the average color for the region of interest.
-- [class func areaLogarithmicHistogram() -> any CIFilter & CIAreaLogarithmicHistogram](cifilter-swift.class/arealogarithmichistogram.md)
+- [class func areaLogarithmicHistogram() -> any CIFilter & CIAreaLogarithmicHistogram](./arealogarithmichistogram%28%29.md)
   Returns a logarithmic histogram of a specified area of the image.
-- [class func areaMaximum() -> any CIFilter & CIAreaMaximum](cifilter-swift.class/areamaximum.md)
+- [class func areaMaximum() -> any CIFilter & CIAreaMaximum](./areamaximum%28%29.md)
   Calculates the maximum color components of a specified area of the image.
-- [class func areaMaximumAlpha() -> any CIFilter & CIAreaMaximumAlpha](cifilter-swift.class/areamaximumalpha.md)
+- [class func areaMaximumAlpha() -> any CIFilter & CIAreaMaximumAlpha](./areamaximumalpha%28%29.md)
   Finds the pixel with the highest alpha value.
-- [class func areaMinimum() -> any CIFilter & CIAreaMinimum](cifilter-swift.class/areaminimum.md)
+- [class func areaMinimum() -> any CIFilter & CIAreaMinimum](./areaminimum%28%29.md)
   Calculates the minimum color component values for a specified area of the image.
-- [class func areaMinimumAlpha() -> any CIFilter & CIAreaMinimumAlpha](cifilter-swift.class/areaminimumalpha.md)
+- [class func areaMinimumAlpha() -> any CIFilter & CIAreaMinimumAlpha](./areaminimumalpha%28%29.md)
   Calculates the pixel within a specified area that has the smallest alpha value.
-- [class func areaMinMax() -> any CIFilter & CIAreaMinMax](cifilter-swift.class/areaminmax.md)
+- [class func areaMinMax() -> any CIFilter & CIAreaMinMax](./areaminmax%28%29.md)
   Calculates minimum and maximum color components for a specified area of the image.
-- [class func areaMinMaxRed() -> any CIFilter & CIAreaMinMaxRed](cifilter-swift.class/areaminmaxred.md)
+- [class func areaMinMaxRed() -> any CIFilter & CIAreaMinMaxRed](./areaminmaxred%28%29.md)
   Calculates the minimum and maximum red component value.
-- [class func columnAverage() -> any CIFilter & CIColumnAverage](cifilter-swift.class/columnaverage.md)
+- [class func columnAverage() -> any CIFilter & CIColumnAverage](./columnaverage%28%29.md)
   Calculates the average color for a specified column of an image.
-- [class func histogramDisplay() -> any CIFilter & CIHistogramDisplay](cifilter-swift.class/histogramdisplay.md)
+- [class func histogramDisplay() -> any CIFilter & CIHistogramDisplay](./histogramdisplay%28%29.md)
   Generates a histogram map from the image.
-- [class func kMeans() -> any CIFilter & CIKMeans](cifilter-swift.class/kmeans.md)
+- [class func kMeans() -> any CIFilter & CIKMeans](./kmeans%28%29.md)
   Applies the k-means algorithm to find the most common colors in an image.
-- [class func rowAverage() -> any CIFilter & CIRowAverage](cifilter-swift.class/rowaverage.md)
+- [class func rowAverage() -> any CIFilter & CIRowAverage](./rowaverage%28%29.md)
   Calculates the average color for the specified row of pixels in an image.
 
 

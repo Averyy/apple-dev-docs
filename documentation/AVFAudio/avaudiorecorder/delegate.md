@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the audio recorder.
 
@@ -20,9 +21,14 @@ The delegate object for the audio recorder.
 weak var delegate: (any AVAudioRecorderDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<AVAudioRecorderDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVAudioRecorderDelegate](avaudiorecorderdelegate.md)
+### Responding to recorder events
+- [protocol AVAudioRecorderDelegate](../avaudiorecorderdelegate.md)
   A protocol that defines the methods to respond to audio recording events and encoding errors.
 
 

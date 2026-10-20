@@ -1,7 +1,8 @@
 # MTLTensorPlaneType.data
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The main data plane, which every tensor has
 
@@ -17,6 +18,10 @@ The main data plane, which every tensor has
 
 ```swift
 case data
+```
+
+```c
+MTLTensorPlaneTypeData
 ```
 
 

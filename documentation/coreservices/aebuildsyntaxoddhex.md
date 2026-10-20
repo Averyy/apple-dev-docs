@@ -1,7 +1,8 @@
 # aeBuildSyntaxOddHex
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A hex string contained an odd number of digits.
 

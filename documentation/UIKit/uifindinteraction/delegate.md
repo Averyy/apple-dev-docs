@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that updates your app’s presentation and provides the session object for managing the interaction’s search.
 
@@ -17,15 +18,20 @@ An object that updates your app’s presentation and provides the session object
 weak var delegate: (any UIFindInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id<UIFindInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [func presentFindNavigator(showingReplace: Bool)](uifindinteraction/presentfindnavigator(showingreplace:).md)
+### Managing find interactions
+- [func presentFindNavigator(showingReplace: Bool)](./presentfindnavigator%28showingreplace%29.md)
   Begins a search, displaying the find panel.
-- [func dismissFindNavigator()](uifindinteraction/dismissfindnavigator.md)
+- [func dismissFindNavigator()](./dismissfindnavigator%28%29.md)
   Dismisses the find panel, if present.
-- [func findNext()](uifindinteraction/findnext.md)
+- [func findNext()](./findnext%28%29.md)
   Highlights the next found result in the content, relative to the currently highlighted result.
-- [func findPrevious()](uifindinteraction/findprevious.md)
+- [func findPrevious()](./findprevious%28%29.md)
   Highlights the previously found result in the document, relative to the currently highlighted result.
 
 

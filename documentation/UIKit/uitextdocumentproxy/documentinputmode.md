@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The text-input mode for the keyboard.
@@ -17,6 +18,10 @@ The text-input mode for the keyboard.
 
 ```swift
 var documentInputMode: UITextInputMode? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UITextInputMode * documentInputMode;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.advertisement
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains an advertisement.
 
@@ -14,6 +15,10 @@ The segment contains an advertisement.
 
 ```swift
 case advertisement
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeAdvertisement
 ```
 
 

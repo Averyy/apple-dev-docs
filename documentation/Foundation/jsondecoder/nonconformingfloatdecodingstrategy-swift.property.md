@@ -1,7 +1,8 @@
 # nonConformingFloatDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used by a decoder when it encounters exceptional floating-point values.
 
@@ -22,11 +23,12 @@ var nonConformingFloatDecodingStrategy: JSONDecoder.NonConformingFloatDecodingSt
 
 #### Discussion
 
-The default strategy is the [`JSONDecoder.NonConformingFloatDecodingStrategy.throw`](jsondecoder/nonconformingfloatdecodingstrategy-swift.enum/throw.md) strategy.
+The default strategy is the [`JSONDecoder.NonConformingFloatDecodingStrategy.throw`](./nonconformingfloatdecodingstrategy-swift.enum/throw.md) strategy.
 
 ## See Also
 
-- [JSONDecoder.NonConformingFloatDecodingStrategy](jsondecoder/nonconformingfloatdecodingstrategy-swift.enum.md)
+### Decoding Exceptional Numbers
+- [JSONDecoder.NonConformingFloatDecodingStrategy](./nonconformingfloatdecodingstrategy-swift.enum.md)
   The strategies for encoding nonconforming floating-point numbers, also known as IEEE 754 exceptional values.
 
 

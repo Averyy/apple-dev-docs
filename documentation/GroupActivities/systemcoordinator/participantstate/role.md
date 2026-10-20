@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role assigned to this participant, if any.
 

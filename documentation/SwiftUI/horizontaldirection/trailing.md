@@ -1,7 +1,8 @@
 # HorizontalDirection.trailing
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The trailing direction.
 

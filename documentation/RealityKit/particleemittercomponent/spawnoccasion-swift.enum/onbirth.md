@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SpawnOccasion.onBirth
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The spawned effect starts at the birth time of a main particle.
 

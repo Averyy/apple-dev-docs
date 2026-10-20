@@ -1,7 +1,8 @@
 # insertedModelsArray
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of inserted models that the context is yet to persist.
 
@@ -23,7 +24,8 @@ var insertedModelsArray: [any PersistentModel] { get }
 
 ## See Also
 
-- [func insert<T>(T)](modelcontext/insert(_:).md)
+### Inserting models
+- [func insert<T>(T)](./insert%28_%29.md)
   Registers the specified model with the context so it can include the model in the next save operation.
 
 

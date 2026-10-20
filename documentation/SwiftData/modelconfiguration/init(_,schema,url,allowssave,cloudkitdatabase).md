@@ -1,7 +1,8 @@
 # init(_:schema:url:allowsSave:cloudKitDatabase:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named model configuration that specifies the on-disk location of the schema’s persistent storage.
 
@@ -24,18 +25,19 @@ init(_ name: String? = nil, schema: Schema? = nil, url: URL, allowsSave: Bool = 
 ## Parameters
 
 - `name`: An optional name for the model configuration.
-- `schema`: A schema that maps model classes to the associated data in the persistent storage. For more information, see [`Schema`](schema.md).
+- `schema`: A schema that maps model classes to the associated data in the persistent storage. For more information, see [`Schema`](../schema.md).
 - `url`: The on-disk location of the schema’s persistent storage.
 - `allowsSave`: A Boolean value that determines whether the associated persistent storage is writable. The default value is `true`.
-- `cloudKitDatabase`: The option to use for detecting the configuration’s CloudKit database. For possible values, see [`ModelConfiguration.CloudKitDatabase`](modelconfiguration/cloudkitdatabase-swift.struct.md).
+- `cloudKitDatabase`: The option to use for detecting the configuration’s CloudKit database. For possible values, see [`ModelConfiguration.CloudKitDatabase`](./cloudkitdatabase-swift.struct.md).
 
 ## See Also
 
-- [init(isStoredInMemoryOnly: Bool)](modelconfiguration/init(isstoredinmemoryonly:).md)
+### Creating a model configuration
+- [init(isStoredInMemoryOnly: Bool)](./init%28isstoredinmemoryonly%29.md)
   Creates a basic model configuration.
-- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](modelconfiguration/init(for:isstoredinmemoryonly:).md)
+- [init(for: any PersistentModel.Type..., isStoredInMemoryOnly: Bool)](./init%28for,isstoredinmemoryonly%29.md)
   Creates a model configuration for the specified model types.
-- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](modelconfiguration/init(_:schema:isstoredinmemoryonly:allowssave:groupcontainer:cloudkitdatabase:).md)
+- [init(String?, schema: Schema?, isStoredInMemoryOnly: Bool, allowsSave: Bool, groupContainer: ModelConfiguration.GroupContainer, cloudKitDatabase: ModelConfiguration.CloudKitDatabase)](./init%28_,schema,isstoredinmemoryonly,allowssave,groupcontainer,cloudkitdatabase%29.md)
   Creates a named model configuration for the specified schema.
 
 

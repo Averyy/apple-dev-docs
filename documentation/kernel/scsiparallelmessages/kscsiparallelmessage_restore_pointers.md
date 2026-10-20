@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_RESTORE_POINTERS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_RESTORE_POINTERS = 0x03
 ```
 

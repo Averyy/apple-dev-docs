@@ -1,12 +1,15 @@
 # SecKeychainGetPath(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the path of a keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,15 +17,21 @@ Determines the path of a keychain.
 func SecKeychainGetPath(_ keychain: SecKeychain?, _ ioPathLength: UnsafeMutablePointer<UInt32>, _ pathName: UnsafeMutablePointer<CChar>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainGetPath(SecKeychainRef keychain, UInt32 *ioPathLength, char *pathName);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 
 - `keychain`: A reference to a keychain whose path you wish to obtain.
-- `ioPathLength`: On entry, a pointer to a variable containing the length (in bytes) of the buffer specified by `pathName`. On return, the string length of `pathName`, not including the null termination.
-- `pathName`: On entry, a pointer to a buffer that you have allocated. On return, the buffer contains POSIX path of the keychain as a null-terminated UTF-8 encoded string. The function returns [`errSecBufferTooSmall`](errsecbuffertoosmall.md) if the provided buffer is too small to hold the string with the null terminator byte.
+- `ioPathLength`: On entry, a pointer to a variable containing the length (in bytes) of the buffer specified by `pathName`.
+
+  On return, the string length of `pathName`, not including the null termination.
+- `pathName`: On entry, a pointer to a buffer that you have allocated. On return, the buffer contains POSIX path of the keychain as a null-terminated UTF-8 encoded string. The function returns [`errSecBufferTooSmall`](./errsecbuffertoosmall.md) if the provided buffer is too small to hold the string with the null terminator byte.
 
 
 ---

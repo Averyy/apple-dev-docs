@@ -1,12 +1,13 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action sent to the first responder when the user selects a new font from the Font panel or chooses a command from the Font menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The action sent to the first responder when the user selects a new font from the
 var action: Selector { get set }
 ```
 
+```objc
+@property SEL action;
+```
+
 #### Discussion
 
-The default action is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changefont:). You should rarely need to change this setting.
+The default action is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). You should rarely need to change this setting.
 
 ## See Also
 
-- [var target: AnyObject?](nsfontmanager/target.md)
+### Accessing the Action Property
+- [var target: AnyObject?](./target.md)
   The object that receives action messages related to the font manager.
 
 

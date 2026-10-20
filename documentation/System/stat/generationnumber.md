@@ -1,7 +1,8 @@
 # generationNumber
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 File generation number
 

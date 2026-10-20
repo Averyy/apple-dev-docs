@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an icon creation option using the specified raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

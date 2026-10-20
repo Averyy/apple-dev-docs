@@ -1,7 +1,8 @@
 # MKMapItem.Identifier
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unique identifier for a place.
 
@@ -20,51 +21,56 @@ A unique identifier for a place.
 class Identifier
 ```
 
+```objc
+@interface MKMapItemIdentifier : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mkmapitem/identifier-swift.class/init(coder:).md)
-- [init?(identifierString: String)](mkmapitem/identifier-swift.class/init(identifierstring:).md)
+- [init?(coder: NSCoder)](./identifier-swift.class/init%28coder%29.md)
+- [init?(identifierString: String)](./identifier-swift.class/init%28identifierstring%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var alternateIdentifiers: Set<MKMapItem.Identifier>](mkmapitem/alternateidentifiers.md)
+### Accessing the map item attributes
+- [var alternateIdentifiers: Set<MKMapItem.Identifier>](./alternateidentifiers.md)
   A set of alternative identifiers for a place.
-- [var identifier: MKMapItem.Identifier?](mkmapitem/identifier-swift.property.md)
+- [var identifier: MKMapItem.Identifier?](./identifier-swift.property.md)
   A unique identifier for a place.
-- [var isCurrentLocation: Bool](mkmapitem/iscurrentlocation.md)
+- [var isCurrentLocation: Bool](./iscurrentlocation.md)
   A Boolean value that indicates whether the map item represents the user’s location.
-- [var name: String?](mkmapitem/name.md)
+- [var name: String?](./name.md)
   The descriptive name associated with the map item.
-- [var placemark: MKPlacemark](mkmapitem/placemark.md)
+- [var placemark: MKPlacemark](./placemark.md)
   The placemark object containing the location information.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapitem/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./pointofinterestcategory.md)
   The point-of-interest category for the map item.
-- [var phoneNumber: String?](mkmapitem/phonenumber.md)
+- [var phoneNumber: String?](./phonenumber.md)
   The phone number associated with a business at the specified location.
-- [var timeZone: TimeZone?](mkmapitem/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone of the specified location.
-- [var url: URL?](mkmapitem/url.md)
+- [var url: URL?](./url.md)
   The URL associated with the specified location.
 
 

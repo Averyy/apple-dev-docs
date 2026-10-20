@@ -1,12 +1,13 @@
 # macOS Sonoma 14 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 14 SDK provides support to develop apps for Mac computers running Sonoma 14. The SDK comes bundled with Xcode 15 RC. For information on the compatibility requirements for Xcode 15 RC, see [`Xcode 15 RC Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
+The macOS 14 SDK provides support to develop apps for Mac computers running Sonoma 14. The SDK comes bundled with Xcode 15 RC. For information on the compatibility requirements for Xcode 15 RC, see [Xcode 15 RC Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
 ##### General
 
@@ -18,14 +19,20 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### New Features
 
-- Spatial - Introduced trigonometry functions for [`Spatial angle type`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/angle2d#4180998).
-- Introduced spherical linear interpolation for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d/4157007-slerp).
-- Introduced  swing-twist decomposition for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d#4130747).
-- BNNS - Introduced [`BNNSRandomFillCategoricalFloat`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4126856-bnnsrandomfillcategoricalfloat) that fills a tensor with random values from the categorical distributions with event probabilities.
-- Introduced [`k-nearest neighbors calculation`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/bnns#4164142).
-- vImage - Introduced [`vImageConvolveFloatKernel_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172614-vimageconvolvefloatkernel_argb88) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
-- Introduced [`vImageSepConvolve_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172615-vimagesepconvolve_argb8888) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
-- Added flood fill, perspective transform, and new lookup table transforms to [`vImage.PixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/vimage/pixelbuffer).  (105830806)
+- Spatial
+
+  - Introduced trigonometry functions for [Spatial angle type](../Spatial/angle2d.md#4180998).
+  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/api-4157007-slerp.md).
+  - Introduced  swing-twist decomposition for [Spatial rotations](../Spatial/rotation3d.md#4130747).
+- BNNS
+
+  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/api-4126856-bnnsrandomfillcategoricalfloat.md) that fills a tensor with random values from the categorical distributions with event probabilities.
+  - Introduced [k-nearest neighbors calculation](../Accelerate/bnns.md#4164142).
+- vImage
+
+  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/api-4172614-vimageconvolvefloatkernel_argb88.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
+  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/api-4172615-vimagesepconvolve_argb8888.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
+  - Added flood fill, perspective transform, and new lookup table transforms to [vImage.PixelBuffer](../Accelerate/vimage/pixelbuffer.md).  (105830806)
 
 ##### Accessibility
 
@@ -34,11 +41,11 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: VoiceOver might not speak inline predictive text in some text fields.  (109225941)
 - Fixed: VoiceOver users might not be able to move focus to enter Recovery mode. Instead users will hear “Accessibility Visuals Agent has no windows.”  (109588439)
 
-##### Airpods
+##### AirPods
 
 ###### New Features
 
-- To test new features such as Adaptive Audio, Personalized Volume, and Conversation Awareness, developers need to install AirPods beta firmware. To learn more, see [`Installing Apple Beta Software`](https://developer.apple.comhttps://developer.apple.com/support/install-beta/)  (110183983)
+- To test new features such as Adaptive Audio, Personalized Volume, and Conversation Awareness, developers need to install AirPods beta firmware. To learn more, see [Installing Apple Beta Software](https://developer.apple.com/support/install-beta/)  (110183983)
 - With Personalized Volume, when watching third party media, a volume slider might show up.  (110266313)
 - Conversation Awareness might react to self-made sounds such as humming, throat clearing, and might fail to end automatically when there is ongoing speech nearby.  (110266324)
 - Conversation Boost in Control Center Hearing Module will not turn on the feature.   (110266328)
@@ -58,13 +65,13 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: UI shown in Widget configuration and the Shortcuts editor might not respect the `size` of an array `@Parameter`.  (109050453)
 - Fixed: Widget configuration, Focus Filters, and Shortcuts editor might not allow some `Measurement` dimensions to be configured.  (109114787)
 
-##### Appkit
+##### AppKit
 
 ###### New Features
 
-- See [`AppKit Release Notes for macOS Sonoma 14`](appkit-release-notes-for-macos-14.md).  (110084217)
+- See [AppKit Release Notes for macOS Sonoma 14](./appkit-release-notes-for-macos-14.md).  (110084217)
 
-##### Ats and Atsui
+##### ATS and ATSUI
 
 ###### Deprecations
 
@@ -77,7 +84,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - The Credential Provider API for password managers has been expanded to support passkeys. Credential providers can save and offer passkeys for apps and websites across the system.  (83501802) (FB9651656)
 - `ASSettingsHelper` allows password manager apps to directly open the Settings view where the Credential Provider Extension for system-wide Password AutoFill and passkey sign-in can be enabled. `ASSettingsHelper` also allows verification code (TOTP) apps to directly open the Settings view where you can configure which app opens verification code setup links.  (106351958) (FB12039478)
 
-##### Camera and Avfoundation Capture
+##### Camera and AVFoundation Capture
 
 ###### Resolved Issues
 
@@ -89,17 +96,19 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Fixed: In Control Center’s Video Effects Menu, clicking on the zoom button should reset the zoom level to the default value. If you’re using a Continuity Camera device with only one camera, or the Apple Studio Display camera, it does not reset.  (109541385)
 
-##### Control Center Video Preview
+##### Control Center / Video Preview
 
 ###### Resolved Issues
 
 - Fixed: Zoom slider in Control Center video preview might be missing for apps when Center Stage is OFF.  (110818198)
 
-##### Createml
+##### CreateML
 
 ###### Known Issues
 
-- Create ML may crash or hang on launch on devices with macos 14.0 beta 7.  (113703568) **Workaround:** Use macos 14 beta 6 or earlier
+- Create ML may crash or hang on launch on devices with macos 14.0 beta 7.  (113703568)
+
+  **Workaround:** Use macos 14 beta 6 or earlier
 
 ##### Documentation
 
@@ -107,13 +116,13 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Fixed: Xcode crashes on macOS Sonoma Beta 1 and Beta 2 when scrolling documentation in Quick Help, the documentation window, and the Swift Package dependency manager.  (109810157)
 
-##### Facetime Handoff
+##### Facetime handoff
 
 ###### Resolved Issues
 
 - Fixed: Facetime handoff to another device might result in call drop or no media.  (110126569)
 
-##### Facetime on Apple Tv
+##### FaceTime on Apple TV
 
 ###### Resolved Issues
 
@@ -145,7 +154,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: Strokes drawn using Beta 2 might appear distorted when viewed on devices running Beta 1.   (107901155)
 - Fixed: The Follow Me feature will only work when collaborators are on the same Beta version.  (110656281)
 
-##### Icloud
+##### iCloud
 
 ###### Resolved Issues
 
@@ -153,7 +162,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: The System Settings application might become unresponsive after creating a new account and then signing out of iCloud.  (109789130)
 - Fixed: Non-local files in iCloud Drive might fail to download and open after using Migration Assistant to set up a new volume.  (109798846)
 
-##### Icloud Drive
+##### iCloud Drive
 
 ###### Resolved Issues
 
@@ -161,13 +170,13 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: Enabling desktop and documents sync might fail after upgrade to Sonoma.   (109507087)
 - Fixed: Finder or Apps might hang when accessing App created folder with .folder extension.  (112600553)
 
-##### Icloud Settings
+##### iCloud Settings
 
 ###### Resolved Issues
 
 - Fixed: Users might not be able to view Apps Syncing to Drive in iCloud Drive Settings.  (110732437)
 
-##### Imovie Theater Icloud Drive
+##### iMovie Theater & iCloud Drive
 
 ###### Known Issues
 
@@ -179,7 +188,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Fixed: Updates to macOS 14 beta will freeze if installing to a HFS formatted volume on intel machines.  (112165783)
 
-##### Iphone Widgets on Mac
+##### iPhone Widgets on Mac
 
 ###### New Features
 
@@ -230,7 +239,9 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Resolved Issues
 
-- Fixed: **Catalyst Optimized for Mac:* - SwiftUI `ToolbarContent` in Catalyst apps Optimized for Mac was previously bridged into the Mac toolbar (`NSToolbar`) dependent on whether the view containing the toolbar content filled the entire scene (width and height matched within a small floating point margin). In macOS 14.0 and later, toolbar content is now bridged into the Mac toolbar if the heights approximately match *and only the leading edge aligns with the scene’s leading edge*. In practice this might change a Catalyst app that had two `NavigationStack`s side by side with toolbar content. Prior to macOS 14.0, neither stack would have its toolbar content bridged into the Mac toolbar and all toolbar content would be in the toolbar of the `NavigationStack`s themselves. On and after macOS 14.0, the leading stack will have its toolbar content bridged, while the trailing stack’s content will stay in the stack’s toolbar.  (108519092)
+- Fixed: **Catalyst Optimized for Mac:*
+
+  - SwiftUI `ToolbarContent` in Catalyst apps Optimized for Mac was previously bridged into the Mac toolbar (`NSToolbar`) dependent on whether the view containing the toolbar content filled the entire scene (width and height matched within a small floating point margin). In macOS 14.0 and later, toolbar content is now bridged into the Mac toolbar if the heights approximately match *and only the leading edge aligns with the scene’s leading edge*. In practice this might change a Catalyst app that had two `NavigationStack`s side by side with toolbar content. Prior to macOS 14.0, neither stack would have its toolbar content bridged into the Mac toolbar and all toolbar content would be in the toolbar of the `NavigationStack`s themselves. On and after macOS 14.0, the leading stack will have its toolbar content bridged, while the trailing stack’s content will stay in the stack’s toolbar.  (108519092)
 
 ##### Maps
 
@@ -257,7 +268,9 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- The Catch up affordance might display incorrectly.  (109468262) **Workaround:** Leave and return to the affected conversation.
+- The Catch up affordance might display incorrectly.  (109468262)
+
+  **Workaround:** Leave and return to the affected conversation.
 
 ##### Metal Ray Tracing
 
@@ -271,12 +284,12 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### New Features
 
-- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [`Resumable Uploads for HTTP`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
+- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [Resumable Uploads for HTTP](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
 - Apple devices now support connection to 802.1X networks using EAP-TLS with TLS 1.3 (EAP-TLS 1.3). EAP-TLS 1.3 further improves security and privacy by always providing forward secrecy, never disclosing the peer identity, and by mandating use of revocation checking when compared to EAP-TLS with earlier versions of TLS.  (74526852)
 
 ###### Resolved Issues
 
-- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/security/preventing_insecure_network_connections). Exceptions can be made using [`NSExceptionDomains`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
+- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [Preventing Insecure Network Connections](../Security/preventing_insecure_network_connections.md). Exceptions can be made using [NSExceptionDomains](../BundleResources/information_property_list/nsapptransportsecurity/nsexceptiondomains.md), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
 - Fixed: For apps linked on or after iOS 17 beta, macOS 14 beta, watchOS 10 beta, and tvOS 17 beta, the `Transfer-Encoding` header field of a streamed `HTTP/1` request is set to `chunked` instead of `Chunked`.  (107390029)
 
 ##### Photos
@@ -289,7 +302,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Applications providing image content via `PHContentEditingOutput.renderedContentURL` in formats other than `UTType.jpeg` will fail with an `.invalidResource` error.  (110068158)
 
-##### Pre Filled Titles for Events and Reminders
+##### Pre-filled Titles for Events and Reminders
 
 ###### New Features
 
@@ -343,42 +356,48 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Fixed: Selecting a family member in Screen Time causes an error to occur in iCloud accounts with Family Sharing enabled and a family member that is under 18.  (110736804)
 
-##### Screensharing
+##### ScreenSharing
 
 ###### Deprecations
 
 - Use of legacy CGDisplayStream APIs to capture screen content will result in additional consent alerts.  (110529324)
 
-##### Shazamkit
+##### ShazamKit
 
 ###### Resolved Issues
 
 - Fixed: `SHManagedSession.State` is unavailable.  (109670750)
 - Fixed: `SHLibrary.default.items` is unavailable.  (109670918)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [`Transaction`](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
+- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [Transaction](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
 - StoreKit 2 now provides a collection of UI components to help merchandise in-app purchases. Use `ProductView`, `StoreView` and `SubscriptionStoreView` to add in-app purchases to an app with just a few lines of code.  (102066107)
 - Users can access in-app purchase product metadata and entitlement information from a SwiftUI view using new view modifier APIs in StoreKit. Declare a view as dependent on a single product or collection of products using `storeProductTask(for:priority:action:)` or `storeProductsTask(for:priority:action:)` respectively. Declare a view as dependent on the current entitlement for a product using `currentEntitlementTask(for:priority:action:)`. Declare a view as dependent on the status of a subscription group with `subscriptionStatusTask(for:priority:action:)`. All of the modifiers will start a task to load the data before the view appears, and provide your action with the state of the task as it progresses and whenever the data changes.  (102397222)
-- User have access to the new `groupLevel` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to understand the level of service of a subscription plan.  (103885148)
-- Users have access to the new `reason`, and `storefront` properties on [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [`RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo) to understand if and when a subscription will renew next.  (104246730)
-- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to get the localized display name of a subscription plan’s group.  (105689964)
-- The [`subscriptionStoreControlBackground(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstorecontrolbackground) view modifier is available when using StoreKit and SwiftUI. Use this modifier to set the background behind controls in [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances within a view to a gradient material effect, or any shape style.  (105690554)
-- The [`productViewIconBorder()`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) to add a standard border around the icon.  (106649532)
-- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview), [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) and [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances. Use the [`buttonStyle(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)-7qx1) view modifier to choose any standard button style, or a custom button style.  (107713282)
-- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [`init(id:icon:placeholderIcon:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview/4202217-init), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [`init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)``](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview/4203382-init) to provide an icon view for each phase.  (110470147)
-- The following StoreKit types are renamed: • `DefaultProductViewStyle` is renamed to [`AutomaticProductViewStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductviewstyle) • `DefaultSubscriptionStoreMarketingContent` is renamed to [`AutomaticSubscriptionStoreMarketingContent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticsubscriptionstoremarketingcontent) • `DefaultProductPlaceholderIcon` is renamed to [`AutomaticProductPlaceholderIcon`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon)  (111185321)
+- User have access to the new `groupLevel` property of [Product.SubscriptionInfo](../StoreKit/product/subscriptioninfo.md) to understand the level of service of a subscription plan.  (103885148)
+- Users have access to the new `reason`, and `storefront` properties on [Transaction](../StoreKit/transaction.md) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md) to understand if and when a subscription will renew next.  (104246730)
+- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) to get the localized display name of a subscription plan’s group.  (105689964)
+- The [subscriptionStoreControlBackground(_:)](../StoreKit/subscriptionstorecontrolbackground.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier to set the background behind controls in [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) instances within a view to a gradient material effect, or any shape style.  (105690554)
+- The [productViewIconBorder()](../StoreKit/automaticproductplaceholdericon/api-4278999-producticonborder.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md) to add a standard border around the icon.  (106649532)
+- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](../StoreKit/productview.md), [`StoreView`](../StoreKit/storeview.md) and [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) instances. Use the [buttonStyle(_:)](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) view modifier to choose any standard button style, or a custom button style.  (107713282)
+- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [init(id:icon:placeholderIcon:)](../StoreKit/productview/api-4202217-init.md), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)`](../StoreKit/storeview/api-4203382-init.md) to provide an icon view for each phase.  (110470147)
+- The following StoreKit types are renamed:
+
+  • `DefaultProductViewStyle` is renamed to [AutomaticProductViewStyle](../StoreKit/automaticproductviewstyle.md)
+
+  • `DefaultSubscriptionStoreMarketingContent` is renamed to [AutomaticSubscriptionStoreMarketingContent](../StoreKit/automaticsubscriptionstoremarketingcontent.md)
+
+  • `DefaultProductPlaceholderIcon` is renamed to [AutomaticProductPlaceholderIcon](../StoreKit/automaticproductplaceholdericon.md)  (111185321)
 
 ###### Resolved Issues
 
-- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
-- Fixed the loading animation for [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) instances displaying a single product.  (110414023)
-- Fixed: New StoreKitTest APIs are now available when testing on macOS: [`setSimulatedError(_:forAPI:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196369-setsimulatederror), [`simulatedError(forAPI:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196370-simulatederror), and [`buyProduct(identifier:options:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekittest/sktestsession/4196368-buyproduct)  (110547347)
-- Fixed issue where [`StoreView`](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
-- Fixed an issue which can cause unexpected layouts when providing a tall view as custom marketing content for a [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview).  (112862984) (FB12748731)
+- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
+- Fixed the loading animation for [`StoreView`](../StoreKit/storeview.md) instances displaying a single product.  (110414023)
+- Fixed: New StoreKitTest APIs are now available when testing on macOS: [setSimulatedError(_:forAPI:)](../StoreKitTest/sktestsession/api-4196369-setsimulatederror.md), [simulatedError(forAPI:)](../StoreKitTest/sktestsession/api-4196370-simulatederror.md), and [buyProduct(identifier:options:)](../StoreKitTest/sktestsession/api-4196368-buyproduct.md)  (110547347)
+- Fixed issue where [StoreView](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
+- Fixed an issue which can cause unexpected layouts when providing a tall view as custom marketing content for a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md).  (112862984) (FB12748731)
 
 ##### Swift
 
@@ -394,20 +413,24 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Use `chartXSelection`, `chartYSelection` and `chartAngleSelection` to enable selection on a chart. If needed, use `chartGesture` to override the default gesture for selection.  (79083764)
 - Swift Charts now supports creating pie charts and donut charts using the new `SectorMark` API.  (102309263)
 - Pass an `AnnotationOverflowResolution` to the `annotation` modifier to specify how to align an annotation when it would otherwise overflow the bounds of the chart or the plot.  (106009062)
-- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart. ```swift
- Chart { ... }
- .chartScrollableAxes(.horizontal)
- .chartOverlay { proxy in
-     GeometryReader { geometry in
-         if let plotContainerFrame = proxy.plotContainerFrame {
-             let frame = geometry[plotContainerFrame]
-             Path(frame)
-                 .stroke(.black, lineWidth: 1)
-                 .allowsHitTesting(false)
-         }
-     }
- }
-``` (109675790)
+- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart.
+
+  ```swift
+   Chart { ... }
+   .chartScrollableAxes(.horizontal)
+   .chartOverlay { proxy in
+       GeometryReader { geometry in
+           if let plotContainerFrame = proxy.plotContainerFrame {
+               let frame = geometry[plotContainerFrame]
+               Path(frame)
+                   .stroke(.black, lineWidth: 1)
+                   .allowsHitTesting(false)
+           }
+       }
+   }
+  ```
+
+  (109675790)
 
 ###### Resolved Issues
 
@@ -426,17 +449,27 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Annotations on a scrollable chart might be clipped.  (109164195)
 
-##### Swiftdata
+##### SwiftData
 
 ###### New Features
 
-- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.) For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`: ```swift
- @Query(filter: #Predicate<Person> { ... }) var people: [Person]
-``` Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`: ```swift
- @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
- 
- @Query(sort: \Person.name) var people: [Person]
-``` In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
+- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.)
+
+  For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`:
+
+  ```swift
+   @Query(filter: #Predicate<Person> { ... }) var people: [Person]
+  ```
+
+  Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`:
+
+  ```swift
+   @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
+   
+   @Query(sort: \Person.name) var people: [Person]
+  ```
+
+  In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
 
 ###### Resolved Issues
 
@@ -462,23 +495,37 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)
 
-##### Swiftui
+  **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+
+##### SwiftUI
 
 ###### New Features
 
-- Adds `.accessoryBar` and `.accessoryBarAction` button styles on macOS for buttons used in the context of an accessory toolbar (sometimes referred to as a “scope bar”). Buttons of the `.accessoryBar` style typically narrow the focus of a search or other operation. Buttons of the `.accessoryBarAction` style perform extra actions releative to the accessory toolbar’s main functions, like adding or editing filters. Both styles affect other view types that you can apply a button style to, like `Toggle`, `Picker`, and `Menu`, in addition to `Button`.  (44351471)
+- Adds `.accessoryBar` and `.accessoryBarAction` button styles on macOS for buttons used in the context of an accessory toolbar (sometimes referred to as a “scope bar”).
+
+  Buttons of the `.accessoryBar` style typically narrow the focus of a search or other operation.
+
+  Buttons of the `.accessoryBarAction` style perform extra actions releative to the accessory toolbar’s main functions, like adding or editing filters.
+
+  Both styles affect other view types that you can apply a button style to, like `Toggle`, `Picker`, and `Menu`, in addition to `Button`.  (44351471)
 - Bordered buttons on macOS now support flexibly large heights for larger label sizes. If the label has no preferred size or a small size, the button will be the standard macOS button height. However, if the button label has a larger minimum size, the button will also now grow larger instead of clipping the label.  (56652012) (FB7411612)
-- Adds new view modifiers to customize alerts and other dialogs within a view. - Use `dialogIcon(_:)` to customize the icon. In macOS, this icon replaces the default icon of the app. This modifier has no effect in other platforms.
-- Use `dialogSeverity(_:)` to set the severity of confirmation dialogs and alerts, which can help indicate that extra care should be taken when choosing a particular action in the dialog.
-- Use `dialogSuppressionToggle` to enable user supression of dialogs and alerts in macOS.  (62920817)
+- Adds new view modifiers to customize alerts and other dialogs within a view.
+
+  - Use `dialogIcon(_:)` to customize the icon. In macOS, this icon replaces the default icon of the app. This modifier has no effect in other platforms.
+  - Use `dialogSeverity(_:)` to set the severity of confirmation dialogs and alerts, which can help indicate that extra care should be taken when choosing a particular action in the dialog.
+  - Use `dialogSuppressionToggle` to enable user supression of dialogs and alerts in macOS.  (62920817)
 - `RoundedRectangle` now defaults to the continuous corner style.  (63246947)
 - `.onChange` has new overloads where the closure takes 0 or 2 arguments, these new versions will call the new version of the closure (i.e. after the specified value has changed), so any captured properties will have up to date values. The previous overload (which calls the old version of the closure) has been deprecated.  (67344857)
 - Spring animations will now default to being critically damped (i.e. a bounce of 0).  (75149732)
 - Scenes in Catalyst now support the `windowResizability` modifier.  (84203422)
 - Added support for `dialogSeverity` in Catalyst applications.  (95918809)
-- Use the `springLoadingBehavior(_:)` view modifier to control spring loading behavior of views. Some views, like `TabView`, default to allowing spring loading, while others, like `Button`, do not. Spring loading refers to a view being activated during a drag and drop interaction. On iOS this can occur when pausing briefly on top of a view with dragged content. On macOS this can occur with similar brief pauses or on pressure-sensitive systems by “force clicking” during the drag.  (96569875) (FB10572945)
+- Use the `springLoadingBehavior(_:)` view modifier to control spring loading behavior of views.
+
+  Some views, like `TabView`, default to allowing spring loading, while others, like `Button`, do not.
+
+  Spring loading refers to a view being activated during a drag and drop interaction. On iOS this can occur when pausing briefly on top of a view with dragged content. On macOS this can occur with similar brief pauses or on pressure-sensitive systems by “force clicking” during the drag.  (96569875) (FB10572945)
 - `List`s using the `SidebarListStyle` hosted in primary column of a UIKit `UISplitNavigationController` were previously rendering with an `insetGrouped` appearance.  With this change they will render as the expected `sidebar` appearance similar to if the `List` were hosted in a SwiftUI `NavigationSplitView`.  (96909195)
 - The `toolbar` and `navigationTitle` modifiers now work outside of the SwiftUI App Lifecycle on macOS. Use `NSHostingView.sceneBridgingOptions` to enable or disable this functionality.  (101092365)
 - The `SceneStorage` dynamic property now works when using an `NSHostingView`, provided the view and its window have been configured for state restoration via AppKit. See `NSUserInterfaceItemIdentification` and `NSWindowRestoration` for more information regarding state restoration in AppKit.  (101097013)
@@ -494,31 +541,35 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - When an `NSHostingView` is the `contentView` of an `NSWindow`, its `sceneBridgingOptions` property will default to `.all`, unless otherwise specified.  (106216343)
 - When using `@Environment(\.self)` to capture an entire `EnvironmentValues`, SwiftUI will now track which properties are accessed to only invalidate the property when those properties change.  (106310433)
 - Use the new `navigationDestination(item:destination:)` overload to present a navigation destination when a bound item is non-`nil`, or to dismiss the destination when the bound item becomes `nil` again.  (106319528)
-- The sidebar toggle toolbar item in `NavigationSplitView` was moved from over the detail column to over the sidebar column for apps linked on Ventura or later. If the new position is amenable, ensure that items previously in the sidebar column are not inadvertently hidden due to limited space. Either move these items into the detail/content column view builder, or set a minimum width on the sidebar column that allows these items to show with `navigationSplitViewColumnWidth(min:ideal:)`. If the prior behavior is desired, remove the toggle button with `toolbar(removing: .sidebarToggle)` and place your own sidebar toggle toolbar item. Note that `SidebarCommands()` is orthogonal to the button. ```swift
- struct ContentView: View {
-     @State private var visibility = NavigationSplitViewVisibility.all
- 
-     var body: some View {
-         NavigationSplitView(columnVisibility: $visibility) {
-             Color.red
-                 .toolbar(removing: .sidebarToggle)
-         } detail: {
-             Color.blue
-                 .toolbar {
-                     ToolbarItem(placement: .navigation) {
-                         Button {
-                             withAnimation {
-                                 visibility = visibility == .all ? .detailOnly : .all
-                             }
-                         } label: {
-                             Label("Toggle Sidebar", systemImage: "sidebar.leading")
-                         }
-                     }
-                 }
-         }
-     }
- }
-``` (107148514)
+- The sidebar toggle toolbar item in `NavigationSplitView` was moved from over the detail column to over the sidebar column for apps linked on Ventura or later. If the new position is amenable, ensure that items previously in the sidebar column are not inadvertently hidden due to limited space. Either move these items into the detail/content column view builder, or set a minimum width on the sidebar column that allows these items to show with `navigationSplitViewColumnWidth(min:ideal:)`. If the prior behavior is desired, remove the toggle button with `toolbar(removing: .sidebarToggle)` and place your own sidebar toggle toolbar item. Note that `SidebarCommands()` is orthogonal to the button.
+
+  ```swift
+   struct ContentView: View {
+       @State private var visibility = NavigationSplitViewVisibility.all
+   
+       var body: some View {
+           NavigationSplitView(columnVisibility: $visibility) {
+               Color.red
+                   .toolbar(removing: .sidebarToggle)
+           } detail: {
+               Color.blue
+                   .toolbar {
+                       ToolbarItem(placement: .navigation) {
+                           Button {
+                               withAnimation {
+                                   visibility = visibility == .all ? .detailOnly : .all
+                               }
+                           } label: {
+                               Label("Toggle Sidebar", systemImage: "sidebar.leading")
+                           }
+                       }
+                   }
+           }
+       }
+   }
+  ```
+
+  (107148514)
 - Shapes now default to mirroring when in a right to left layout direction.   (107405880)
 - Changing from one Gradient value to another will now animate, but only once apps are rebuilt against the new SDK.  (107408691)
 - All `Section`s inside `List` and `Table` can be configured to be collapsible using new initializers on Section. Previously all `Section`s inside `List`s using the `SidebarListStyle` received outline disclosure indicators in every header.  Section headers will no longer render this control by default.  An outline disclosure will only be provided in the header if the `Section` is initialized with an `isExpanded` binding to a bool.  This bool represents the `isExpanded` state of the `Section`.  Sections created with an `isExpanded` binding inside a `Table` on macOS will now provide a default outline disclosure indicator to collapse or expand the `Section`.  (107592493)
@@ -534,16 +585,24 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: `DatePicker` on macOS now maintains a fixed ideal size instead of filling the width of its container.  (98798881)
 - Fixed: Scroll environment properties like isScrollEnabled and scrollDismissesKeyboardMode are no longer propagated past nested scroll views.  (99195890)
 - Fixed: Previously it was possible for views animating their removal via a transition to be drawn above a view with the same zIndex that has not yet been removed. This was unintentional and has now been updated: views transitioning out of the view hierarchy are always drawn below non-removed views with the same zIndex.  (101085960)
-- Fixed: Table row identifiers in `ForEach` are now derived from their `ForEach` identifier rather than the `TableRow` identifier within the `ForEach`. In this example, from within a `Table`: ```None
- ForEach(myData) { data in
-     TableRow(data.someFieldAlsoOfTypeData)
- }
-``` the resulting identifiers used by SwiftUI are now `data.id` rather than `data.someFieldAlsoOfTypeData.id`. If user needs to restore prior behavior, specify the ID explicitly using the `id` of the `ForEach`.  (101174261)
+- Fixed: Table row identifiers in `ForEach` are now derived from their `ForEach` identifier rather than the `TableRow` identifier within the `ForEach`. In this example, from within a `Table`:
+
+  ```
+   ForEach(myData) { data in
+       TableRow(data.someFieldAlsoOfTypeData)
+   }
+  ```
+
+  the resulting identifiers used by SwiftUI are now `data.id` rather than `data.someFieldAlsoOfTypeData.id`. If user needs to restore prior behavior, specify the ID explicitly using the `id` of the `ForEach`.  (101174261)
 - Fixed: Table supports triggering primaryAction of contextMenu with return key.  (101194950)
 - Fixed: LazyVGrid or LazyHGrid has an improved layout when used with fixedSize().  (103075945)
 - Fixed: `List` and `Table` on macOS now have visible separators by default, unless unspecified or unless alternating row backgrounds are enabled. Separators can be explicitly hidden using the existing `listRowSeparator(.hidden)` modifier on the rows views.  (103687472)
 - Fixed: `fileImporter` and `fileMover` view modifiers now require calling `URL.startAccessingSecurityScopedResource()` before accessing the provided URL, and `URL.stopAccessingSecurityScopedResource()`  when user no longer needs access to a file or directory pointed to by a security-scoped URL.  (104448864)
-- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`. Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view. Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
+- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`.
+
+  Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view.
+
+  Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
 - Fixed: When a flexible frame modifier (e.g. frame(minHeight: 100, maxHeight: 200)) is used inside a scroll view the modified view could end up truncating content. This would most often be visible with the content view being a VStack with multiline text.  (107014454)
 - Fixed: When scrolling to the end of a scroll view using ScrollViewReader, the final offset will be clamped to the scroll view’s total content size and no longer overscroll.  (107558652) (FB12094127)
 - Fixed: Removed a spurious warning, “NavigationLink presenting a value must appear inside a NavigationContent-based NavigationView. Link will be disabled.”  (107877668) (FB12111423)
@@ -558,48 +617,58 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ###### Known Issues
 
-- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983) **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983)
 
-##### Swiftui Navigation
+  **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)
+
+  **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+
+##### SwiftUI Navigation
 
 ###### Resolved Issues
 
 - Fixed: Animations inside `Navigation*` structures are no longer disabled.  (107771283)
 
-##### Swiftui Outline
+##### SwiftUI Outline
 
 ###### Resolved Issues
 
-- Fixed: Leaf views in `OutlineGroup`s (those views where the `children` keyPath argument has a value of `nil`) are no longer wrapped in implicit `HStack`s. If relying on an implicit `HStack` before, users will now see multiple rows when linking against the new SDK. In this example: ```swift
- private struct Node: Identifiable {
-     let id = UUID()
-     let name: String
-     let children: [Node]?
- }
- 
- fileprivate let data = [
-     Node(name: "One", children: [.init(name: "Two", children: nil)]),
-     Node(name: "A", children: [
-         .init(name: "B", children: nil),
-         .init(name: "C", children: nil),
-         .init(name: "D", children: nil),
-     ])
- ]
- 
- struct OutlineExample: View {
-     var body: some View {
-         List(data) { node in
-             DisclosureGroup("Node \(node.name)", isExpanded: .constant(true)) {
-                 OutlineGroup(node, children: \.children) { child in
-                     Label("Row:", systemImage: "circle.hexagonpath.fill")
-                     Text("Node \(child.name)")
-                 }
-             }
-         }
-     }
- }
-``` (104751549)
+- Fixed: Leaf views in `OutlineGroup`s (those views where the `children` keyPath argument has a value of `nil`) are no longer wrapped in implicit `HStack`s. If relying on an implicit `HStack` before, users will now see multiple rows when linking against the new SDK.
+
+  In this example:
+
+  ```swift
+   private struct Node: Identifiable {
+       let id = UUID()
+       let name: String
+       let children: [Node]?
+   }
+   
+   fileprivate let data = [
+       Node(name: "One", children: [.init(name: "Two", children: nil)]),
+       Node(name: "A", children: [
+           .init(name: "B", children: nil),
+           .init(name: "C", children: nil),
+           .init(name: "D", children: nil),
+       ])
+   ]
+   
+   struct OutlineExample: View {
+       var body: some View {
+           List(data) { node in
+               DisclosureGroup("Node \(node.name)", isExpanded: .constant(true)) {
+                   OutlineGroup(node, children: \.children) { child in
+                       Label("Row:", systemImage: "circle.hexagonpath.fill")
+                       Text("Node \(child.name)")
+                   }
+               }
+           }
+       }
+   }
+  ```
+
+  (104751549)
 
 ##### Symbol Effects
 
@@ -607,7 +676,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 - Fixed: In the objective-C API in Symbols.framework, requesting `effectWithWholeSymbol` on `NSSymbolPulseEffect` and `NSSymbolBounceEffect` will result in the effect being configured to animate by layer instead.  (109284710)
 
-##### System Ui Languages
+##### System UI Languages
 
 ###### Resolved Issues
 
@@ -620,7 +689,7 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - `/usr/bin/syspolicy_check` is a new command line tool to help determine if the provided macOS application will pass the current running configurations’ system policy. This includes the same checks performed by the Apple notary service and other macOS Trusted Execution layers such as codesign, Gatekeeper, XProtect, and more. Please see the main page for additional details.  (108737781)
 - `/usr/bin/gktool` is a new command line tool to assess Gatekeeper Policy on applications. `gktool` can be called to pre-warm the system cache so users do not see the ‘Verifying…’ dialog on first launch of an application.  (109793778)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -666,20 +735,20 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 - Fixed: Clicking a notification activates the web app on the current page instead of opening the expected URL.  (107906244)
 - Fixed: After allowing permission access, the web app correctly appears in System Settings > Privacy & Security > Location Services.  (109499769)
 
-##### Wi Fi
+##### Wi-Fi
 
 ###### Resolved Issues
 
 - Fixed: While a Mac has active traffic via Wi-Fi, you might experience difficulty discovering and connecting to Continuity Camera.  (109954955)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
 - Fixed: Some widgets on macOS, especially those that use App Intents for Configuration, might not work properly the first time the system is started.  (109518265)
 - Fixed: Apps that use the `.showsWidgetContainerBackground` environment variable no longer crash.  (113947483) (FB12974903)
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
@@ -693,17 +762,18 @@ The macOS 14 SDK provides support to develop apps for Mac computers running Sono
 
 ## See Also
 
-- [macOS Sonoma 14.6 Release Notes](macos-14_6-release-notes.md)
+### macOS 14
+- [macOS Sonoma 14.6 Release Notes](./macos-14_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sonoma 14.5 Release Notes](macos-14_5-release-notes.md)
+- [macOS Sonoma 14.5 Release Notes](./macos-14_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sonoma 14.4 Release Notes](macos-14_4-release-notes.md)
+- [macOS Sonoma 14.4 Release Notes](./macos-14_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sonoma 14.3 Release Notes](macos-14_3-release-notes.md)
+- [macOS Sonoma 14.3 Release Notes](./macos-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sonoma 14.2 Release Notes](macos-14_2-release-notes.md)
+- [macOS Sonoma 14.2 Release Notes](./macos-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sonoma 14.1 Release Notes](macos-14_1-release-notes.md)
+- [macOS Sonoma 14.1 Release Notes](./macos-14_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

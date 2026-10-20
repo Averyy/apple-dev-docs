@@ -1,7 +1,8 @@
 # RCSService.Business.Suggestion.reply(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Suggested reply.
 
@@ -16,11 +17,12 @@ case reply(RCSService.Business.SuggestedReply)
 
 ## See Also
 
-- [case action(RCSService.Business.SuggestedAction)](rcsservice/business/suggestion/action(_:).md)
+### Determining suggestion type
+- [case action(RCSService.Business.SuggestedAction)](./action%28_%29.md)
   Suggested action.
-- [RCSService.Business.SuggestedAction](rcsservice/business/suggestedaction.md)
+- [RCSService.Business.SuggestedAction](../suggestedaction.md)
   Suggested action sent by a business.
-- [RCSService.Business.SuggestedReply](rcsservice/business/suggestedreply.md)
+- [RCSService.Business.SuggestedReply](../suggestedreply.md)
   Suggested reply in response to a business message.
 
 

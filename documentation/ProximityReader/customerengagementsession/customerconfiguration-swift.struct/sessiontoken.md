@@ -1,7 +1,8 @@
 # sessionToken
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session token from the customer’s device.
 

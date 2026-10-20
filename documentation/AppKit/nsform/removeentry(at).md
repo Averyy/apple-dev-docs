@@ -1,17 +1,24 @@
 # removeEntry(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and releases the entry at the specified index.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSTextField directly instead, and consider NSStackView for layout assistance
 
 ## Declaration
 
 ```swift
 func removeEntry(at index: Int)
+```
+
+```objc
+- (void) removeEntryAtIndex:(NSInteger) index;
 ```
 
 #### Discussion
@@ -24,9 +31,10 @@ If the specified index is invalid, this method does nothing.
 
 ## See Also
 
-- [func addEntry(String) -> NSFormCell](nsform/addentry(_:).md)
+### Adding and Removing Entries
+- [func addEntry(String) -> NSFormCell](./addentry%28_%29.md)
   Adds a new entry to the end of the receiver and gives it the specified title.
-- [func insertEntry(String, at: Int) -> NSFormCell!](nsform/insertentry(_:at:).md)
+- [func insertEntry(String, at: Int) -> NSFormCell!](./insertentry%28_,at%29.md)
   Inserts an entry with the specified title into the receiver.
 
 

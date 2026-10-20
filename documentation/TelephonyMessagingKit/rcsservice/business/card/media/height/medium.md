@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Media.Height.medium
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Medium height.
 
@@ -16,9 +17,10 @@ case medium
 
 ## See Also
 
-- [RCSService.Business.Card.Media.Height.short](rcsservice/business/card/media/height/short.md)
+### Determining height
+- [RCSService.Business.Card.Media.Height.short](./short.md)
   Short height.
-- [RCSService.Business.Card.Media.Height.tall](rcsservice/business/card/media/height/tall.md)
+- [RCSService.Business.Card.Media.Height.tall](./tall.md)
   Tall height.
 
 

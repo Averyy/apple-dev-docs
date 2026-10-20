@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsAttachedToEnclosureMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device has attached to an enclosure.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device has attached to an enclosure.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsAttachedToEnclosureMask = (1 << kUSBInformationDeviceIsAttachedToEnclosure)
 ```
 

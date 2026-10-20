@@ -1,7 +1,8 @@
 # addShortcut(forText:from:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents UI for a person to add a text-replacement shortcut to the keyboard dictionary.
 
@@ -17,9 +18,14 @@ Presents UI for a person to add a text-replacement shortcut to the keyboard dict
 func addShortcut(forText text: String, from presentationRect: CGRect)
 ```
 
+```objc
+- (void) addShortcutForText:(NSString *) text fromRect:(CGRect) presentationRect;
+```
+
 ## See Also
 
-- [func showReplacements(forText: String)](betextinteraction/showreplacements(fortext:).md)
+### Text replacements
+- [func showReplacements(forText: String)](./showreplacements%28fortext%29.md)
   Displays inline text replacements for the current selection.
 
 

@@ -1,7 +1,8 @@
 # commit()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Commit all changes made during the current transaction.
 
@@ -19,15 +20,20 @@ Commit all changes made during the current transaction.
 class func commit()
 ```
 
+```objc
++ (void) commit;
+```
+
 #### Discussion
 
 Raises an exception if no current transaction exists.
 
 ## See Also
 
-- [class func begin()](catransaction/begin.md)
+### Creating and Committing Transactions
+- [class func begin()](./begin%28%29.md)
   Begin a new transaction for the current thread.
-- [class func flush()](catransaction/flush.md)
+- [class func flush()](./flush%28%29.md)
   Flushes any extant implicit transaction.
 
 

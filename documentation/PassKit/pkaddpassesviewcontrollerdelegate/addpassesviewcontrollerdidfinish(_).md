@@ -1,7 +1,8 @@
 # addPassesViewControllerDidFinish(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate after the add-passes view controller has finished.
 
@@ -17,13 +18,18 @@ Sent to the delegate after the add-passes view controller has finished.
 optional func addPassesViewControllerDidFinish(_ controller: PKAddPassesViewController)
 ```
 
+```objc
+- (void) addPassesViewControllerDidFinish:(PKAddPassesViewController *) controller;
+```
+
 #### Discussion
 
 When this optional method is implemented, the delegate is responsible for dismissing the view controller in `controller`.
 
 ## See Also
 
-- [Wallet Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
+### Related Documentation
+- [Wallet Developer Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
 
 
 ---

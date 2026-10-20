@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the version of the receiver’s XML.
 
@@ -15,6 +16,10 @@ Sets the version of the receiver’s XML.
 var version: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * version;
+```
+
 #### Discussion
 
 Currently, the version should be either “1.0 “or “1.1”.
@@ -25,15 +30,16 @@ Currently, the version should be either “1.0 “or “1.1”.
 
 ## See Also
 
-- [var characterEncoding: String?](xmldocument/characterencoding.md)
+### Managing Document Attributes
+- [var characterEncoding: String?](./characterencoding.md)
   Sets the character encoding of the receiver to `encoding`,
-- [var documentContentKind: XMLDocument.ContentKind](xmldocument/documentcontentkind.md)
+- [var documentContentKind: XMLDocument.ContentKind](./documentcontentkind.md)
   Sets the kind of output content for the receiver.
-- [var dtd: XMLDTD?](xmldocument/dtd.md)
-  Returns an [`XMLDTD`](xmldtd.md) object representing the internal DTD associated with the receiver.
-- [var isStandalone: Bool](xmldocument/isstandalone.md)
+- [var dtd: XMLDTD?](./dtd.md)
+  Returns an [`XMLDTD`](../xmldtd.md) object representing the internal DTD associated with the receiver.
+- [var isStandalone: Bool](./isstandalone.md)
   Sets a Boolean value that specifies whether the receiver represents a standalone XML document.
-- [var mimeType: String?](xmldocument/mimetype.md)
+- [var mimeType: String?](./mimetype.md)
   Returns the MIME type for the receiver.
 
 

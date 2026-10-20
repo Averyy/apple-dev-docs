@@ -1,7 +1,8 @@
 # fHeader
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 SCSICmd_INQUIRY_PAGECx_Header fHeader;
 ```
 

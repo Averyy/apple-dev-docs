@@ -1,14 +1,17 @@
 # selectedImageTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color applied to the selected tab bar item.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
+- iOS 5.0+ - Deprecated in 8.0
+- iPadOS 5.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use the [`tintColor`](./tintcolor.md) property instead.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The tint color applied to the selected tab bar item.
 var selectedImageTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * selectedImageTintColor;
+```
+
 #### Discussion
 
-The default value is `nil`, which results in use of the tab bar’s [`tintColor`](uitabbar/tintcolor.md) property.
+The default value is `nil`, which results in use of the tab bar’s [`tintColor`](./tintcolor.md) property.
 
 ## See Also
 
-- [var unselectedItemTintColor: UIColor?](uitabbar/unselecteditemtintcolor.md)
+### Configuring selection appearance
+- [var unselectedItemTintColor: UIColor?](./unselecteditemtintcolor.md)
   The tint color to apply to unselected tabs.
-- [var selectionIndicatorImage: UIImage?](uitabbar/selectionindicatorimage.md)
+- [var selectionIndicatorImage: UIImage?](./selectionindicatorimage.md)
   The image to use for the selection indicator.
 
 

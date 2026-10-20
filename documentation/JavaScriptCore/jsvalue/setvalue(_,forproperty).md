@@ -1,7 +1,8 @@
 # setValue(_:forProperty:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the named property in the JavaScript object value.
 
@@ -15,8 +16,20 @@ Sets the value of the named property in the JavaScript object value.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```swift
+func setValue(_ value: Any!, forProperty property: Any!)
+```
+
+*tvOS*
+
 ```swift
 func setValue(_ value: Any!, forProperty property: String!)
+```
+
+```objc
+- (void) setValue:(id) value forProperty:(JSValueProperty) property;
 ```
 
 #### Discussion
@@ -31,24 +44,25 @@ Calling this method is equivalent to using the subscript operator with a string 
 ## Topics
 
 ### Related Documentation
-- [func setObject(Any!, forKeyedSubscript: Any!)](jsvalue/setobject(_:forkeyedsubscript:).md)
+- [func setObject(Any!, forKeyedSubscript: Any!)](./setobject%28_,forkeyedsubscript%29.md)
   Sets the value’s JavaScript property named with the specified key, allowing subscript syntax.
 
 ## See Also
 
-- [func defineProperty(Any!, descriptor: Any!)](jsvalue/defineproperty(_:descriptor:).md)
+### Working with Container Values
+- [func defineProperty(Any!, descriptor: Any!)](./defineproperty%28_,descriptor%29.md)
   Defines a property on the JavaScript object value or modifies a property’s definition.
-- [func hasProperty(Any!) -> Bool](jsvalue/hasproperty(_:).md)
+- [func hasProperty(Any!) -> Bool](./hasproperty%28_%29.md)
   Returns a Boolean value indicating whether the JavaScript value has a defined property with the specified name.
-- [func deleteProperty(Any!) -> Bool](jsvalue/deleteproperty(_:).md)
+- [func deleteProperty(Any!) -> Bool](./deleteproperty%28_%29.md)
   Deletes the named property from the JavaScript object value.
-- [func atIndex(Int) -> JSValue!](jsvalue/atindex(_:).md)
+- [func atIndex(Int) -> JSValue!](./atindex%28_%29.md)
   Returns the value at the specified numeric index in the JavaScript object value.
-- [func setValue(Any!, at: Int)](jsvalue/setvalue(_:at:).md)
+- [func setValue(Any!, at: Int)](./setvalue%28_,at%29.md)
   Sets the value at the specified numeric index in the JavaScript object value.
-- [func forProperty(Any!) -> JSValue!](jsvalue/forproperty(_:).md)
+- [func forProperty(Any!) -> JSValue!](./forproperty%28_%29.md)
   Returns the value of the named property in the JavaScript object value.
-- [typealias JSValueProperty](jsvalueproperty.md)
+- [typealias JSValueProperty](../jsvalueproperty.md)
   A type that identifies a property of a JavaScript value.
 
 

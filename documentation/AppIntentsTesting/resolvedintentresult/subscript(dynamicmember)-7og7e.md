@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: App Intents Testing  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the return value of the result, without casting.
 
@@ -34,7 +35,7 @@ result.value == nil
 let intent = PayCoffeeIntent.makeIntent(coffee: result.value)
 ```
 
-For more information about dynamic-member syntax, see [`dynamicMemberLookup`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#dynamicMemberLookup) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+For more information about dynamic-member syntax, see [dynamicMemberLookup](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#dynamicMemberLookup) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 
 ---

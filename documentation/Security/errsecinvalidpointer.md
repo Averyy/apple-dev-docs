@@ -1,7 +1,8 @@
 # errSecInvalidPointer
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid pointer was detected.
 
@@ -18,6 +19,10 @@ An invalid pointer was detected.
 
 ```swift
 var errSecInvalidPointer: OSStatus { get }
+```
+
+```c
+errSecInvalidPointer
 ```
 
 

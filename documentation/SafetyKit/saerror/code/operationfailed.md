@@ -1,7 +1,8 @@
 # SAError.Code.operationFailed
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested operation failed; retrying may succeed.
 
@@ -18,13 +19,18 @@ The requested operation failed; retrying may succeed.
 case operationFailed
 ```
 
+```c
+SAErrorOperationFailed
+```
+
 ## See Also
 
-- [SAError.Code.invalidArgument](saerror/code/invalidargument.md)
+### Determining the error type
+- [SAError.Code.invalidArgument](./invalidargument.md)
   The passed argument is invalid.
-- [SAError.Code.notAllowed](saerror/code/notallowed.md)
+- [SAError.Code.notAllowed](./notallowed.md)
   The system restricts the feature on this iPhone at the current time.
-- [SAError.Code.notAuthorized](saerror/code/notauthorized.md)
+- [SAError.Code.notAuthorized](./notauthorized.md)
   The app isn’t authorized to perform the requested operation.
 
 

@@ -1,7 +1,8 @@
 # xpc_string_create_with_format_and_arguments(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an XPC object that represents a C-string that the specified format string and argument list pointer generate.
 
@@ -10,7 +11,7 @@ Creates an XPC object that represents a C-string that the specified format strin
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates an XPC object that represents a C-string that the specified format strin
 
 ```swift
 func xpc_string_create_with_format_and_arguments(_ fmt: UnsafePointer<CChar>, _ ap: CVaListPointer) -> xpc_object_t
+```
+
+```c
+extern xpc_object_txpc_string_create_with_format_and_arguments(const char *fmt, va_list ap);
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ A new string object.
 
 ## See Also
 
-- [func xpc_string_create(UnsafePointer<CChar>) -> xpc_object_t](xpc_string_create(_:).md)
+### String objects
+- [func xpc_string_create(UnsafePointer<CChar>) -> xpc_object_t](./xpc_string_create%28_%29.md)
   Creates an XPC object that represents a null-terminated C-string.
-- [func xpc_string_get_length(xpc_object_t) -> Int](xpc_string_get_length(_:).md)
+- [func xpc_string_get_length(xpc_object_t) -> Int](./xpc_string_get_length%28_%29.md)
   Returns the length of the underlying string.
-- [func xpc_string_get_string_ptr(xpc_object_t) -> UnsafePointer<CChar>?](xpc_string_get_string_ptr(_:).md)
+- [func xpc_string_get_string_ptr(xpc_object_t) -> UnsafePointer<CChar>?](./xpc_string_get_string_ptr%28_%29.md)
   Returns a pointer to the internal storage of a string object.
 
 

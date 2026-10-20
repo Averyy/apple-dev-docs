@@ -1,15 +1,16 @@
 # getChildElements
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSArray * getChildElements();
 ```
 
@@ -19,12 +20,13 @@ Returns an array of child elements, if any.
 
 ## See Also
 
-- [getType](iohidelement/gettype.md)
-- [getCollectionType](iohidelement/getcollectiontype.md)
-- [getParentElement](iohidelement/getparentelement.md)
-- [IOHIDElementType](iohidelementtype.md)
+### Managing the Element Hierarchy
+- [getType](./gettype.md)
+- [getCollectionType](./getcollectiontype.md)
+- [getParentElement](./getparentelement.md)
+- [IOHIDElementType](../iohidelementtype.md)
   The types of HID elements that you can examine.
-- [IOHIDElementCollectionType](iohidelementcollectiontype.md)
+- [IOHIDElementCollectionType](../iohidelementcollectiontype.md)
   Constants that indicate the types of relationships that exist between two or more elements.
 
 

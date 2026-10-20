@@ -1,7 +1,8 @@
 # version
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the algorithm that the system uses to generate the face metrics and analytics.
 
@@ -16,13 +17,18 @@ The version of the algorithm that the system uses to generate the face metrics a
 var version: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * version;
+```
+
 ## See Also
 
-- [var sessionIdentifier: String](srfacemetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the camera session.
-- [var context: SRFaceMetrics.Context](srfacemetrics/context-swift.property.md)
+- [var context: SRFaceMetrics.Context](./context-swift.property.md)
   The context of the system during the camera session.
-- [SRFaceMetrics.Context](srfacemetrics/context-swift.struct.md)
+- [SRFaceMetrics.Context](./context-swift.struct.md)
   The context of the system during the camera session.
 
 

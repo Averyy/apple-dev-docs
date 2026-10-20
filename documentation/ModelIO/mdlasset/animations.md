@@ -1,7 +1,8 @@
 # animations
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var animations: any MDLObjectContainerComponent { get set }
+```
+
+```objc
+@property (nonatomic, retain) id<MDLObjectContainerComponent> animations;
 ```
 
 

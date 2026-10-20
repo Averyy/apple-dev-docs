@@ -1,7 +1,8 @@
 # draw(_:in:by:options:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,8 +21,9 @@ func draw(_ image: CGImage, in rect: CGRect, by toneMapping: CGToneMapping = .de
 
 ## See Also
 
-- [func resetClip()](cgcontext/resetclip.md)
-- [func setEDRTargetHeadroom(Float) -> Bool](cgcontext/setedrtargetheadroom(_:).md)
+### Instance Methods
+- [func resetClip()](./resetclip%28%29.md)
+- [func setEDRTargetHeadroom(Float) -> Bool](./setedrtargetheadroom%28_%29.md)
 
 
 ---

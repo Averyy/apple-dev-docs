@@ -1,18 +1,19 @@
 # init(Yp:Cr_R:Cr_G:Cb_G:Cb_B:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3 x 3 matrix for converting Y’CbCr signals to RGB.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,7 +29,7 @@ A 3 x 3 matrix for converting Y’CbCr signals to RGB.
 
 The vImage library uses this matrix to convert from YpCbCr to RGB using the following multiplication:
 
-```None
+```
                     | R |   | Yp    0     Cr_R |   | Y' |
                     | G | = | Yp   Cb_G   Cr_G | * | Cb |
                     | B |   | Yp   Cb_B     0  |   | Cr |
@@ -44,7 +45,8 @@ The vImage library uses this matrix to convert from YpCbCr to RGB using the foll
 
 ## See Also
 
-- [init()](vimage_ypcbcrtoargbmatrix/init.md)
+### Creating a conversion matrix
+- [init()](./init%28%29.md)
   Creates a 3 x 3 zero matrix for converting Y’CbCr signals to RGB.
 
 

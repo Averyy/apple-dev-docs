@@ -1,7 +1,8 @@
 # resolvedKeyDictionary
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a dictionary that contains the properties that were specified in the `make` Apple event command that has been converted to this `NSCreateCommand` object.
 
@@ -15,6 +16,10 @@ Returns a dictionary that contains the properties that were specified in the `ma
 var resolvedKeyDictionary: [String : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * resolvedKeyDictionary;
+```
+
 #### Return Value
 
 A dictionary that contains the properties that were specified in the `make` Apple event script command that has been converted to this `NSCreateCommand` object.
@@ -25,7 +30,8 @@ The keys in the returned dictionary are the names of properties (attributes or r
 
 ## See Also
 
-- [var createClassDescription: NSScriptClassDescription](nscreatecommand/createclassdescription.md)
+### Getting information about a create command
+- [var createClassDescription: NSScriptClassDescription](./createclassdescription.md)
   Returns the class description for the class that is to be created.
 
 

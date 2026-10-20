@@ -1,7 +1,8 @@
 # writeBuffersAvailableByteCount
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the write buffers memory (in bytes) exposed by the Virtio queue element that’s currently available for writing.
 
@@ -12,6 +13,10 @@ The size of the write buffers memory (in bytes) exposed by the Virtio queue elem
 
 ```swift
 var writeBuffersAvailableByteCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger writeBuffersAvailableByteCount;
 ```
 
 #### Discussion

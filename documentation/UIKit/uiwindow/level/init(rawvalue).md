@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a window level structure with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: CGFloat)
 
 ## See Also
 
-- [init(CGFloat)](uiwindow/level/init(_:).md)
+### Initializers
+- [init(CGFloat)](./init%28_%29.md)
   Creates a window level structure.
 
 

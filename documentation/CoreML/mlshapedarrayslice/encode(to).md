@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the array slice.
 
@@ -20,13 +21,16 @@ Encodes the array slice.
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `Encodable`.
+
 ## Parameters
 
 - `encoder`: The object that encodes the array slice.
 
 ## See Also
 
-- [init(from: any Decoder) throws](mlshapedarrayslice/init(from:).md)
+### Encoding and decoding an array slice
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates an array slice from the passed decoder.
 
 

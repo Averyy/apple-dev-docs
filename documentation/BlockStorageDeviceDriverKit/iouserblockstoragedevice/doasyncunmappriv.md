@@ -1,20 +1,22 @@
 # DoAsyncUnmapPriv
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DoAsyncUnmapPriv(uint32_t requestID, struct BlockRange *ranges, uint32_t numOfRanges);
 ```
 
 ## See Also
 
-- [RegisterDext](iouserblockstoragedevice/registerdext.md)
+### Instance Methods
+- [RegisterDext](./registerdext.md)
 
 
 ---

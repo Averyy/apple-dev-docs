@@ -1,7 +1,8 @@
 # LineMark
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents data using a sequence of connected line segments.
 
@@ -23,11 +24,11 @@ Chart content that represents data using a sequence of connected line segments.
 
 ## Mentions
 
-- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+- [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
 
 #### Overview
 
-You create a line chart by plotting a category or date property, typically with the x position, and plotting a number category, typically with the y position. The example below plots the `date` property to the x position and the `hoursOfSunshine` property to the y position using [`init(x:y:)`](linemark/init(x:y:).md):
+You create a line chart by plotting a category or date property, typically with the x position, and plotting a number category, typically with the y position. The example below plots the `date` property to the x position and the `hoursOfSunshine` property to the y position using [`init(x:y:)`](./linemark/init%28x,y%29.md):
 
 ```swift
 struct MonthlyHoursOfSunshine {
@@ -58,11 +59,11 @@ var body: some View {
 }
 ```
 
-![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](/images/com.apple.Charts/LineMarkSwift.LineMarkLineChart@2x.png)
+![Line chart with date on x-axis and hours of sunshine on y-axis. One line showing 12 points representing hours of sunshine in a month 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineMarkSwift.LineMarkLineChart@2x.png)
 
-##### Plotting Multiple Lines
+##### Plotting multiple lines
 
-You can plot multiple lines in a chart either by explicitly specifying the `series` parameter in [`init(x:y:series:)`](linemark/init(x:y:series:).md) or by applying the [`foregroundStyle(_:)`](chartcontent/foregroundstyle(_:).md) or [`lineStyle(_:)`](chartcontent/linestyle(_:).md) modifiers. Line marks with the same `series` value will always be rendered together as a single line. When `series` is unspecified line marks with the same value plotted to foreground style and line style will be grouped together and plotted on their own line. The example below plots one line per distinct value in `city` and colors each line based on the `city` it represents:
+You can plot multiple lines in a chart either by explicitly specifying the `series` parameter in [`init(x:y:series:)`](./linemark/init%28x,y,series%29.md) or by applying the [`foregroundStyle(_:)`](./chartcontent/foregroundstyle%28_%29.md) or [`lineStyle(_:)`](./chartcontent/linestyle%28_%29.md) modifiers. Line marks with the same `series` value will always be rendered together as a single line. When `series` is unspecified line marks with the same value plotted to foreground style and line style will be grouped together and plotted on their own line. The example below plots one line per distinct value in `city` and colors each line based on the `city` it represents:
 
 ```swift
 struct MonthlyHoursOfSunshine {
@@ -97,40 +98,41 @@ var body: some View {
 }
 ```
 
-![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](/images/com.apple.Charts/LineMarkSwift.LineMarkMultiSeriesLineChart@2x.png)
+![Multi-series line chart with date on x-axis and hours of sunshine on y-axis. Two lines showing 12 points representing hours of sunshine in a month for  a city. Seattle: 1 74, 2 99, 3 154, 4 201, 5 247, 6 234, 7 304, 8 248, 9 197, 10 122, 11 77, 12 62 and Cupertino: 1 196, 2 204, 3 253, 4 288, 5 311, 6 342, 7 360, 8 331, 9 300, 10 246, 11 212, 12 199.](https://developer.apple.com/tutorials/images/com.apple.Charts/LineMarkSwift.LineMarkMultiSeriesLineChart@2x.png)
 
 > **Note**: Colors are repeated if the number of series is greater than the total number of colors.
 
 ## Topics
 
 ### Creating a line mark
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](linemark/init(x:y:).md)
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](./linemark/init%28x,y%29.md)
   Creates a line mark.
-- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](linemark/init(x:y:series:).md)
+- [init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>)](./linemark/init%28x,y,series%29.md)
   Creates a separate line for each unique value of series.
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AreaMark](areamark.md)
+### Marks
+- [struct AreaMark](./areamark.md)
   Chart content that represents data using the area of one or more regions.
-- [struct PointMark](pointmark.md)
+- [struct PointMark](./pointmark.md)
   Chart content that represents data using points.
-- [struct RectangleMark](rectanglemark.md)
+- [struct RectangleMark](./rectanglemark.md)
   Chart content that represents data using rectangles.
-- [struct RuleMark](rulemark.md)
+- [struct RuleMark](./rulemark.md)
   Chart content that represents data using a single horizontal or vertical rule.
-- [struct BarMark](barmark.md)
+- [struct BarMark](./barmark.md)
   Chart content that represents data using bars.
-- [struct SectorMark](sectormark.md)
+- [struct SectorMark](./sectormark.md)
   A sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
 
 

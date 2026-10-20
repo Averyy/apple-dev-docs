@@ -1,7 +1,8 @@
 # NumericImputer.Strategy.constant(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Imputation strategy that replaces missing elements with a constant.
 
@@ -22,9 +23,10 @@ case constant(Element)
 
 ## See Also
 
-- [NumericImputer.Strategy.mean](numericimputer/strategy-swift.enum/mean.md)
+### Imputer strategies
+- [NumericImputer.Strategy.mean](./mean.md)
   Imputation strategy that replaces missing elements with the mean.
-- [NumericImputer.Strategy.median](numericimputer/strategy-swift.enum/median.md)
+- [NumericImputer.Strategy.median](./median.md)
   Imputation strategy that replaces missing elements with the median.
 
 

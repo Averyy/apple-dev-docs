@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset from the anchor’s generation marker.
 
@@ -21,7 +22,8 @@ You can use the offset to track a contiguous number of contact items you’ve su
 
 ## See Also
 
-- [var generationMarker: Data](contactitemsyncanchor/generationmarker.md)
+### Inspecting sync anchor properties
+- [var generationMarker: Data](./generationmarker.md)
   A value specific to your data source identifying the database generation you’re enumerating for changes.
 
 

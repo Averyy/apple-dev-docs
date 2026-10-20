@@ -1,14 +1,15 @@
 # kHIDPage_GenericDesktop
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDPage_GenericDesktop = 0x01
 ```
 

@@ -1,16 +1,17 @@
 # NSEC_PER_MSEC
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var NSEC_PER_MSEC: UInt64 { get }
 ```
 
+```c
+#define NSEC_PER_MSEC
+```
+
 ## See Also
 
-- [var USEC_PER_SEC: UInt64](usec_per_sec.md)
-- [var NSEC_PER_SEC: UInt64](nsec_per_sec.md)
-- [var NSEC_PER_USEC: UInt64](nsec_per_usec.md)
+### Time Multiplier Constants
+- [var USEC_PER_SEC: UInt64](./usec_per_sec.md)
+- [var NSEC_PER_SEC: UInt64](./nsec_per_sec.md)
+- [var NSEC_PER_USEC: UInt64](./nsec_per_usec.md)
 
 
 ---

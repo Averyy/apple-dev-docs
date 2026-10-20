@@ -1,7 +1,8 @@
 # UINavigationItem.LargeTitleDisplayMode.inline
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always use a large title when this item is topmost. If there is a back button present, this will revert to `Always`. Leading & center items will move to the overflow menu if present.
 
@@ -15,6 +16,10 @@ Always use a large title when this item is topmost. If there is a back button pr
 
 ```swift
 case inline
+```
+
+```c
+UINavigationItemLargeTitleDisplayModeInline
 ```
 
 

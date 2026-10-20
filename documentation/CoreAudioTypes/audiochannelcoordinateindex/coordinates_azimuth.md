@@ -1,7 +1,8 @@
 # coordinates_Azimuth
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 For spherical coordinates, `0` is front center, positive is right, negative is left, and measurements are in degrees.
 
@@ -20,13 +21,18 @@ For spherical coordinates, `0` is front center, positive is right, negative is l
 static var coordinates_Azimuth: AudioChannelCoordinateIndex { get }
 ```
 
+```c
+kAudioChannelCoordinates_Azimuth
+```
+
 ## See Also
 
-- [enum AudioChannelCoordinateIndex](audiochannelcoordinateindex.md)
-  Indexes the fields of the `mCoordinates` array in an [`AudioChannelDescription`](audiochanneldescription.md) structure.
-- [static var coordinates_Distance: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_distance.md)
+### Coordinates
+- [enum AudioChannelCoordinateIndex](../audiochannelcoordinateindex.md)
+  Indexes the fields of the `mCoordinates` array in an [`AudioChannelDescription`](../audiochanneldescription.md) structure.
+- [static var coordinates_Distance: AudioChannelCoordinateIndex](./coordinates_distance.md)
   For spherical coordinates, distance is radially from the center. The units are specified by the `mChannelFlags` field of the `AudioChannelDescription` structure.
-- [static var coordinates_Elevation: AudioChannelCoordinateIndex](audiochannelcoordinateindex/coordinates_elevation.md)
+- [static var coordinates_Elevation: AudioChannelCoordinateIndex](./coordinates_elevation.md)
   For spherical coordinates, `+90` is zenith, `0` is horizontal, `-90` is nadir, and measurements are in degrees.
 
 

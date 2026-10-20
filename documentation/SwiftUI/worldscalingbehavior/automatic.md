@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The scaling behavior that is standard for the window’s style.
 
@@ -16,7 +17,7 @@ static var automatic: WorldScalingBehavior { get }
 
 #### Discussion
 
-By default, regular [`WindowGroup`](windowgroup.md) windows have dynamic scaling, while windows with a [`volumetric`](windowstyle/volumetric.md) window style use fixed scaling.
+By default, regular [`WindowGroup`](../windowgroup.md) windows have dynamic scaling, while windows with a [`volumetric`](../windowstyle/volumetric.md) window style use fixed scaling.
 
 
 ---

@@ -1,7 +1,8 @@
 # ILClassificationRequest
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for classification requests.
 
@@ -17,33 +18,38 @@ The abstract superclass for classification requests.
 class ILClassificationRequest
 ```
 
+```objc
+@interface ILClassificationRequest : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](ilclassificationrequest/init(coder:).md)
+- [init?(coder: NSCoder)](./ilclassificationrequest/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [ILCallClassificationRequest](ilcallclassificationrequest.md)
-- [ILMessageClassificationRequest](ilmessageclassificationrequest.md)
+- [ILCallClassificationRequest](./ilcallclassificationrequest.md)
+- [ILMessageClassificationRequest](./ilmessageclassificationrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class ILMessageClassificationRequest](ilmessageclassificationrequest.md)
+### Requests
+- [class ILMessageClassificationRequest](./ilmessageclassificationrequest.md)
   A classification request for SMS messages.
-- [class ILCallClassificationRequest](ilcallclassificationrequest.md)
+- [class ILCallClassificationRequest](./ilcallclassificationrequest.md)
   A classification request for phone calls.
 
 

@@ -1,7 +1,8 @@
 # redoActionUserInfoValue(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the redo action’s user info value for the given key.
 
@@ -20,13 +21,17 @@ Retrieves the redo action’s user info value for the given key.
 func redoActionUserInfoValue(forKey key: UndoManager.UserInfoKey) -> Any?
 ```
 
+```objc
+- (id) redoActionUserInfoValueForKey:(NSUndoManagerUserInfoKey) key;
+```
+
 #### Return Value
 
-The value that you previously registered to this key with [`setActionUserInfoValue(_:forKey:)`](undomanager/setactionuserinfovalue(_:forkey:).md), or `nil` if the key is absent.
+The value that you previously registered to this key with [`setActionUserInfoValue(_:forKey:)`](./setactionuserinfovalue%28_,forkey%29.md), or `nil` if the key is absent.
 
 #### Discussion
 
-Use this method to retrieve a user info value for the redo action you previously set with [`setActionUserInfoValue(_:forKey:)`](undomanager/setactionuserinfovalue(_:forkey:).md).
+Use this method to retrieve a user info value for the redo action you previously set with [`setActionUserInfoValue(_:forKey:)`](./setactionuserinfovalue%28_,forkey%29.md).
 
 In this example, an app’s `redoButton()` method provides a SwiftUI view that incorporates a previously assigned icon for the action:
 
@@ -47,11 +52,12 @@ func redoButton() -> some SwiftUI.View {
 
 ## See Also
 
-- [func setActionUserInfoValue(Any?, forKey: UndoManager.UserInfoKey)](undomanager/setactionuserinfovalue(_:forkey:).md)
+### Working with user info
+- [func setActionUserInfoValue(Any?, forKey: UndoManager.UserInfoKey)](./setactionuserinfovalue%28_,forkey%29.md)
   Sets a user info value for an undo or redo action.
-- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](undomanager/undoactionuserinfovalue(forkey:).md)
+- [func undoActionUserInfoValue(forKey: UndoManager.UserInfoKey) -> Any?](./undoactionuserinfovalue%28forkey%29.md)
   Retrieves the undo action’s user info value for the given key.
-- [UndoManager.UserInfoKey](undomanager/userinfokey.md)
+- [UndoManager.UserInfoKey](./userinfokey.md)
   An extensible namespace for undo and redo user info keys.
 
 

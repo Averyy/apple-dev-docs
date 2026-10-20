@@ -1,7 +1,8 @@
 # makeTransformer()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a default-initialized model suitable for incremental fitting.
 
@@ -18,6 +19,8 @@ Creates a default-initialized model suitable for incremental fitting.
 ```swift
 func makeTransformer() -> TimeSeriesClassifier<Scalar, Label>.Model
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
 
 
 ---

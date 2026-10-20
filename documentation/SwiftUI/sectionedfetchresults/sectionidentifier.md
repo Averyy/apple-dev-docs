@@ -1,7 +1,8 @@
 # sectionIdentifier
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path that the system uses to group fetched results into sections.
 
@@ -23,17 +24,18 @@ The key path that the system uses to group fetched results into sections.
 
 #### Discussion
 
-Set this value to cause the associated [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new section identifier, producing an updated collection of results. Changing this value produces a new set of sections. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
+Set this value to cause the associated [`SectionedFetchRequest`](../sectionedfetchrequest.md) to execute a fetch with a new section identifier, producing an updated collection of results. Changing this value produces a new set of sections. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../sectionedfetchrequest/configuration.md).
 
 ## See Also
 
-- [var nsPredicate: NSPredicate?](sectionedfetchresults/nspredicate.md)
+### Configuring the associated sectioned fetch request
+- [var nsPredicate: NSPredicate?](./nspredicate.md)
   The request’s predicate.
-- [var sortDescriptors: [SortDescriptor<Result>]](sectionedfetchresults/sortdescriptors.md)
+- [var sortDescriptors: [SortDescriptor<Result>]](./sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
-- [var nsSortDescriptors: [NSSortDescriptor]](sectionedfetchresults/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
-- [SectionedFetchResults.Section](sectionedfetchresults/section.md)
+- [SectionedFetchResults.Section](./section.md)
   A collection of fetched results that share a specified identifier.
 
 

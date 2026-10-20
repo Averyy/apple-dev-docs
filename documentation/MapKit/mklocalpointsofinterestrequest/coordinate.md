@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center of the point of request as latitude and longitude.
 
@@ -20,13 +21,18 @@ The center of the point of request as latitude and longitude.
 var coordinate: CLLocationCoordinate2D { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+```
+
 ## See Also
 
-- [var region: MKCoordinateRegion](mklocalpointsofinterestrequest/region.md)
+### Configuring the request parameters
+- [var region: MKCoordinateRegion](./region.md)
   The region of the bounding box of the request provided or the derived bounding box of the circle created by the radius.
-- [var radius: CLLocationDistance](mklocalpointsofinterestrequest/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The distance provided in meters or the longest distance derived from the center point to the region’s bounding box.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalpointsofinterestrequest/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter that lists points of interest categories to include or exclude.
 
 

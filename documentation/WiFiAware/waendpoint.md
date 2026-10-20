@@ -1,7 +1,8 @@
 # WAEndpoint
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The endpoint of a Wi-Fi Aware connection.
 
@@ -19,38 +20,39 @@ struct WAEndpoint
 ## Topics
 
 ### Getting the service
-- [var publishedService: WAPublishableService?](waendpoint/publishedservice.md)
+- [var publishedService: WAPublishableService?](./waendpoint/publishedservice.md)
   The publishable service that is, or can be, connected.
-- [var subscribedService: WASubscribableService?](waendpoint/subscribedservice.md)
+- [var subscribedService: WASubscribableService?](./waendpoint/subscribedservice.md)
   The subscribable service that is, or can be, connected.
 ### Getting the device anchoring the endpoint
-- [let device: WAPairedDevice](waendpoint/device.md)
+- [let device: WAPairedDevice](./waendpoint/device.md)
   The remote device that is, or can be, connected.
 ### Getting a string description
-- [var description: String](waendpoint/description.md)
+- [var description: String](./waendpoint/description.md)
   The description of the object.
 ### Hashing and comparing
-- [static func == (WAEndpoint, WAEndpoint) -> Bool](waendpoint/==(_:_:).md)
+- [static func == (WAEndpoint, WAEndpoint) -> Bool](./waendpoint/eqeq%28_,_%29.md)
   Two endpoints are logically equivalent if they have the same service type (publish vs subscribe) with the same name, and refer to the same device.
-- [func hash(into: inout Hasher)](waendpoint/hash(into:).md)
+- [func hash(into: inout Hasher)](./waendpoint/hash%28into%29.md)
   Compute unique hash of this object.
 ### Instance Properties
-- [let performanceForecast: [WAPerformanceMode : WAPerformanceForecast]](waendpoint/performanceforecast.md)
+- [let performanceForecast: [WAPerformanceMode : WAPerformanceForecast]](./waendpoint/performanceforecast.md)
   The forecasted performance for connections setup to the remote device, per WAPerformanceMode.
 
 ## Relationships
 
 ### Conforms To
-- [Connectable](../network/connectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Connectable](../Network/connectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WAConnection](waconnection.md)
+### Connections
+- [class WAConnection](./waconnection.md)
   Provides access to the Wi-Fi Aware-specific configuration and information that underlies a given `Network/NetworkConnection`.
 
 

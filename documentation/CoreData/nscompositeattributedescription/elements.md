@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The composed attribute descriptions.
 
@@ -18,6 +19,10 @@ The composed attribute descriptions.
 
 ```swift
 var elements: [NSAttributeDescription] { get set }
+```
+
+```objc
+@property (copy) NSArray<__kindof NSAttributeDescription *> * elements;
 ```
 
 

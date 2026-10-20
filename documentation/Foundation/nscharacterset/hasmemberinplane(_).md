@@ -1,7 +1,8 @@
 # hasMemberInPlane(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the receiver has at least one member in a given character plane.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the receiver has at least one mem
 func hasMemberInPlane(_ thePlane: UInt8) -> Bool
 ```
 
+```objc
+- (BOOL) hasMemberInPlane:(uint8_t) thePlane;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has at least one member in `thePlane`, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver has at least one member in `thePlane`, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -34,11 +39,12 @@ This method makes it easier to find the plane containing the members of the curr
 
 ## See Also
 
-- [func characterIsMember(unichar) -> Bool](nscharacterset/characterismember(_:).md)
+### Testing Set Membership
+- [func characterIsMember(unichar) -> Bool](./characterismember%28_%29.md)
   Returns a Boolean value that indicates whether a given character is in the receiver.
-- [func isSuperset(of: CharacterSet) -> Bool](nscharacterset/issuperset(of:).md)
+- [func isSuperset(of: CharacterSet) -> Bool](./issuperset%28of%29.md)
   Returns a Boolean value that indicates whether the receiver is a superset of another given character set.
-- [func longCharacterIsMember(UTF32Char) -> Bool](nscharacterset/longcharacterismember(_:).md)
+- [func longCharacterIsMember(UTF32Char) -> Bool](./longcharacterismember%28_%29.md)
   Returns a Boolean value that indicates whether a given long character is a member of the receiver.
 
 

@@ -1,9 +1,10 @@
 # makeStream(of:throwing:bufferingPolicy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Initializes a new [`AsyncThrowingStream`](asyncthrowingstream.md) and an [`AsyncThrowingStream.Continuation`](asyncthrowingstream/continuation.md).
+Initializes a new [`AsyncThrowingStream`](../asyncthrowingstream.md) and an [`AsyncThrowingStream.Continuation`](./continuation.md).
 
 **Availability**:
 - iOS 13.0+
@@ -20,6 +21,8 @@ Initializes a new [`AsyncThrowingStream`](asyncthrowingstream.md) and an [`Async
 @backDeployed(before: macOS 14.0, iOS 17.0, watchOS 10.0, tvOS 17.0)
 static func makeStream(of elementType: Element.Type = Element.self, throwing failureType: Failure.Type = Failure.self, bufferingPolicy limit: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy = .unbounded) -> (stream: AsyncThrowingStream<Element, Failure>, continuation: AsyncThrowingStream<Element, Failure>.Continuation) where Failure == any Error
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Return Value
 

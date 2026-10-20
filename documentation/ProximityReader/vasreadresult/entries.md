@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of loyalty reward card entries received from the customer.
 
@@ -18,7 +19,8 @@ let entries: [VASReadResult.ReadEntry]
 
 ## See Also
 
-- [VASReadResult.ReadEntry](vasreadresult/readentry.md)
+### Getting the entry details
+- [VASReadResult.ReadEntry](./readentry.md)
   An object containing encrypted data associated with a customer’s loyalty or reward pass.
 
 

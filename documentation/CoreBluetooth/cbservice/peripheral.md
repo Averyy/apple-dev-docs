@@ -1,7 +1,8 @@
 # peripheral
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The peripheral to which this service belongs.
 
@@ -20,9 +21,14 @@ The peripheral to which this service belongs.
 weak var peripheral: CBPeripheral? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) CBPeripheral * peripheral;
+```
+
 ## See Also
 
-- [var isPrimary: Bool](cbservice/isprimary.md)
+### Identifying a Service
+- [var isPrimary: Bool](./isprimary.md)
   A Boolean value that indicates whether the type of service is primary or secondary.
 
 

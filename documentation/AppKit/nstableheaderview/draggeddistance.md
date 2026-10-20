@@ -1,17 +1,22 @@
 # draggedDistance
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal distance that the user has dragged a column.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var draggedDistance: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat draggedDistance;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ If the user is dragging a column, this property contains that column’s horizon
 
 ## See Also
 
-- [var draggedColumn: Int](nstableheaderview/draggedcolumn.md)
+### Checking altered columns
+- [var draggedColumn: Int](./draggedcolumn.md)
   The index of the column that the user is dragging.
-- [var resizedColumn: Int](nstableheaderview/resizedcolumn.md)
+- [var resizedColumn: Int](./resizedcolumn.md)
   The index of the column that the user is resizing.
 
 

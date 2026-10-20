@@ -1,7 +1,8 @@
 # CVPixelBufferFillExtendedPixels(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills the extended pixels of the pixel buffer.
 
@@ -20,9 +21,13 @@ Fills the extended pixels of the pixel buffer.
 func CVPixelBufferFillExtendedPixels(_ pixelBuffer: CVPixelBuffer) -> CVReturn
 ```
 
+```c
+extern CVReturn CVPixelBufferFillExtendedPixels(CVPixelBufferRef pixelBuffer);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Core Video Constants`](core-video-constants.md) for possible values.
+A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ This function replicates edge pixels to fill the entire extended region of the i
 
 ## See Also
 
-- [func CVPixelBufferLockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](cvpixelbufferlockbaseaddress(_:_:).md)
+### Modifying Pixel Buffers
+- [func CVPixelBufferLockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](./cvpixelbufferlockbaseaddress%28_,_%29.md)
   Locks the base address of the pixel buffer.
-- [func CVPixelBufferUnlockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](cvpixelbufferunlockbaseaddress(_:_:).md)
+- [func CVPixelBufferUnlockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](./cvpixelbufferunlockbaseaddress%28_,_%29.md)
   Unlocks the base address of the pixel buffer.
 
 

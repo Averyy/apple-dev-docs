@@ -1,7 +1,8 @@
 # FixedSpatialAudio
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A spatial experience that does not take user motion into account.
 
@@ -34,19 +35,19 @@ myPlayer.intendedSpatialExperience = .fixed(soundStageSize: .large)
 ## Topics
 
 ### Instance Properties
-- [var soundStageSize: SpatialAudioExperiences.SoundStageSize](fixedspatialaudio/soundstagesize.md)
+- [var soundStageSize: SpatialAudioExperiences.SoundStageSize](./fixedspatialaudio/soundstagesize.md)
   The experience’s sound stage size.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialAudioExperience](spatialaudioexperience.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialAudioExperience](./spatialaudioexperience.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kauth_cred_unref
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void kauth_cred_unref(kauth_cred_t *credp);
 ```
 

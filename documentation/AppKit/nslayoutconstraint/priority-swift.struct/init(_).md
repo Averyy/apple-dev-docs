@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.7+
@@ -14,7 +15,8 @@ init(_ rawValue: Float)
 
 ## See Also
 
-- [init(rawValue: Float)](nslayoutconstraint/priority-swift.struct/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: Float)](./init%28rawvalue%29.md)
 
 
 ---

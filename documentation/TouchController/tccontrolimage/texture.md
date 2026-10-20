@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal texture to use for the image.
 
@@ -16,15 +17,20 @@ The Metal texture to use for the image.
 var texture: any MTLTexture { get set }
 ```
 
+```objc
+@property (nonatomic, strong) id<MTLTexture> texture;
+```
+
 ## See Also
 
-- [var highlightTexture: (any MTLTexture)?](tccontrolimage/highlighttexture.md)
+### Inspecting the control image
+- [var highlightTexture: (any MTLTexture)?](./highlighttexture.md)
   The Metal texture to use for the image when highlighted. May be `nil`.
-- [var offset: CGPoint](tccontrolimage/offset.md)
+- [var offset: CGPoint](./offset.md)
   The offset from the center of the parent control in points.
-- [var size: CGSize](tccontrolimage/size.md)
+- [var size: CGSize](./size.md)
   The size of the image in points.
-- [var tintColor: CGColor](tccontrolimage/tintcolor.md)
+- [var tintColor: CGColor](./tintcolor.md)
   The color tint to apply to the texture. The color ref is retained.
 
 

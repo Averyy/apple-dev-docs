@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12.2+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDDispatchOptionPointerAbsolutToRelative](2765607-anonymous/khiddispatchoptionpointerabsoluttorelative.md)
-- [kHIDDispatchOptionPointerAffixToScreen](2765607-anonymous/khiddispatchoptionpointeraffixtoscreen.md)
-- [kHIDDispatchOptionPointerDisplayIntegrated](2765607-anonymous/khiddispatchoptionpointerdisplayintegrated.md)
-- [kHIDDispatchOptionPointerNoAcceleration](2765607-anonymous/khiddispatchoptionpointernoacceleration.md)
+- [kHIDDispatchOptionPointerAbsolutToRelative](./api-2765607-anonymous/khiddispatchoptionpointerabsoluttorelative.md)
+- [kHIDDispatchOptionPointerAffixToScreen](./api-2765607-anonymous/khiddispatchoptionpointeraffixtoscreen.md)
+- [kHIDDispatchOptionPointerDisplayIntegrated](./api-2765607-anonymous/khiddispatchoptionpointerdisplayintegrated.md)
+- [kHIDDispatchOptionPointerNoAcceleration](./api-2765607-anonymous/khiddispatchoptionpointernoacceleration.md)
 
 
 ---

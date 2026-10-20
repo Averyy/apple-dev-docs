@@ -1,7 +1,8 @@
 # kMDItemContentType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The UTI pedigree of a file. A CFString.
 
@@ -12,6 +13,10 @@ The UTI pedigree of a file. A CFString.
 
 ```swift
 let kMDItemContentType: CFString!
+```
+
+```c
+const CFStringRef kMDItemContentType;
 ```
 
 #### Discussion

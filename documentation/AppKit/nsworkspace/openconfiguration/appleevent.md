@@ -1,7 +1,8 @@
 # appleEvent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first Apple event to send to the new app.
 
@@ -14,17 +15,22 @@ The first Apple event to send to the new app.
 var appleEvent: NSAppleEventDescriptor? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSAppleEventDescriptor * appleEvent;
+```
+
 #### Discussion
 
 The default value of this property is `nil`, which causes the system to send a default Apple event, as needed. The system sends the event only if an instance of the app is already running.
 
 ## See Also
 
-- [var arguments: [String]](nsworkspace/openconfiguration/arguments.md)
+### Specifying launch attributes
+- [var arguments: [String]](./arguments.md)
   The set of command-line arguments to pass to a new app instance at launch time.
-- [var environment: [String : String]](nsworkspace/openconfiguration/environment.md)
+- [var environment: [String : String]](./environment.md)
   The set of environment variables to set in a new app instance.
-- [var architecture: cpu_type_t](nsworkspace/openconfiguration/architecture.md)
+- [var architecture: cpu_type_t](./architecture.md)
   The architecture version of the app to launch.
 
 

@@ -1,7 +1,8 @@
 # firmwareVersion
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The firmware version of the accessory.
 
@@ -19,11 +20,16 @@ The firmware version of the accessory.
 var firmwareVersion: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * firmwareVersion;
+```
+
 ## See Also
 
-- [var manufacturer: String?](hmaccessory/manufacturer.md)
+### Getting manufacturer information
+- [var manufacturer: String?](./manufacturer.md)
   The manufacturer of the accessory.
-- [var model: String?](hmaccessory/model.md)
+- [var model: String?](./model.md)
   The model name of the accessory.
 
 

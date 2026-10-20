@@ -1,7 +1,8 @@
 # AVAudioBuffer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a buffer of audio data with a format.
 
@@ -20,53 +21,58 @@ An object that represents a buffer of audio data with a format.
 class AVAudioBuffer
 ```
 
+```objc
+@interface AVAudioBuffer : NSObject
+```
+
 ## Topics
 
 ### Getting the buffer format
-- [var format: AVAudioFormat](avaudiobuffer/format.md)
+- [var format: AVAudioFormat](./avaudiobuffer/format.md)
   The format of the audio in the buffer.
 ### Getting the audio buffers
-- [var audioBufferList: UnsafePointer<AudioBufferList>](avaudiobuffer/audiobufferlist.md)
+- [var audioBufferList: UnsafePointer<AudioBufferList>](./avaudiobuffer/audiobufferlist.md)
   The buffer’s underlying audio buffer list.
-- [var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList>](avaudiobuffer/mutableaudiobufferlist.md)
+- [var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList>](./avaudiobuffer/mutableaudiobufferlist.md)
   A mutable version of the buffer’s underlying audio buffer list.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
-- [AVAudioPCMBuffer](avaudiopcmbuffer.md)
+- [AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
+- [AVAudioPCMBuffer](./avaudiopcmbuffer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioFile](avaudiofile.md)
+### Audio data
+- [class AVAudioFile](./avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+- [class AVAudioPCMBuffer](./avaudiopcmbuffer.md)
   An object that represents an audio buffer you use with PCM audio formats.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+- [struct AVReadOnlyAudioPCMBuffer](./avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
+- [class AVAudioChannelLayout](./avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [class AVAudioTime](avaudiotime.md)
+- [class AVAudioTime](./avaudiotime.md)
   An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

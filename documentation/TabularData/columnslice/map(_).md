@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column by applying a transformation to every element.
 

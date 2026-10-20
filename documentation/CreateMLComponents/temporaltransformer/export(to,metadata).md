@@ -1,7 +1,8 @@
 # export(to:metadata:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this temporal transformer as a CoreML model with user-supplied metadata.
 
@@ -30,7 +31,8 @@ func export(to url: URL, metadata: ModelMetadata) throws
 
 ## See Also
 
-- [func export(to: URL) throws](temporaltransformer/export(to:).md)
+### Exporting
+- [func export(to: URL) throws](./export%28to%29.md)
   Exports this temporal transformer as a CoreML model.
 
 

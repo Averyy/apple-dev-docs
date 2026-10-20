@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of element produced by this asynchronous sequence.
@@ -23,11 +24,12 @@ associatedtype Element where Self.Element == Self.AsyncIterator.Element
 
 ## See Also
 
-- [func makeAsyncIterator() -> Self.AsyncIterator](asyncsequence/makeasynciterator.md)
+### Creating an Iterator
+- [func makeAsyncIterator() -> Self.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [associatedtype AsyncIterator : AsyncIteratorProtocol](asyncsequence/asynciterator.md)
+- [associatedtype AsyncIterator : AsyncIteratorProtocol](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [protocol AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [protocol AsyncIteratorProtocol](../asynciteratorprotocol.md)
   A type that asynchronously supplies the values of a sequence one at a time.
 
 

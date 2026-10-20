@@ -1,7 +1,8 @@
 # archive
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A base type that represents an archive of files and directories.
 
@@ -26,13 +27,14 @@ The identifier for this type is `public.archive`.
 
 ## See Also
 
-- [static var zip: UTType](uttype-swift.struct/zip.md)
+### Compressed archives
+- [static var zip: UTType](./zip.md)
   A type that represents a zip archive.
-- [static var gzip: UTType](uttype-swift.struct/gzip.md)
+- [static var gzip: UTType](./gzip.md)
   A type that represents a GNU zip archive.
-- [static var bz2: UTType](uttype-swift.struct/bz2.md)
+- [static var bz2: UTType](./bz2.md)
   A type that represents a bzip2 archive.
-- [static var appleArchive: UTType](uttype-swift.struct/applearchive.md)
+- [static var appleArchive: UTType](./applearchive.md)
   A type that represents an Apple archive of files and directories.
 
 

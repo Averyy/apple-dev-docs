@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins or resumes a machine learning task.
 
@@ -20,13 +21,18 @@ Begins or resumes a machine learning task.
 func resume()
 ```
 
+```objc
+- (void) resume;
+```
+
 #### Discussion
 
-Use this method to start a task for the first time or resumes a task that has paused. Tasks pause when they notify your app’s progress handlers, such as those you provide to an [`MLUpdateProgressHandlers`](mlupdateprogresshandlers.md) instance.
+Use this method to start a task for the first time or resumes a task that has paused. Tasks pause when they notify your app’s progress handlers, such as those you provide to an [`MLUpdateProgressHandlers`](../mlupdateprogresshandlers.md) instance.
 
 ## See Also
 
-- [func cancel()](mltask/cancel.md)
+### Starting and stopping a task
+- [func cancel()](./cancel%28%29.md)
   Cancels a machine learning task before it completes.
 
 

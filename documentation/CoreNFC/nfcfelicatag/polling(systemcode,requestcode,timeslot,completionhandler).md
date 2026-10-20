@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Polling command as defined by FeliCa card specification to the tag.
@@ -14,14 +15,23 @@ Sends the Polling command as defined by FeliCa card specification to the tag.
 ## Declaration
 
 ```swift
+func polling(systemCode: Data, requestCode: NFCFeliCaPollingRequestCode, timeSlot: NFCFeliCaPollingTimeSlot, completionHandler: @escaping @Sendable (Data, Data, (any Error)?) -> Void)
+```
+
+```swift
 func polling(systemCode: Data, requestCode: NFCFeliCaPollingRequestCode, timeSlot: NFCFeliCaPollingTimeSlot) async throws -> (Data, Data)
+```
+
+```objc
+- (void) pollingWithSystemCode:(NSData *) systemCode requestCode:(NFCFeliCaPollingRequestCode) requestCode timeSlot:(NFCFeliCaPollingTimeSlot) timeSlot completionHandler:(void (^)(NSData *pmm, NSData *requestData, NSError *error)) completionHandler;
 ```
 
 ## See Also
 
-- [typealias PollingRequestCode](pollingrequestcode.md)
+### Polling
+- [typealias PollingRequestCode](../pollingrequestcode.md)
   Codes that specify the type of the data to request when polling.
-- [typealias PollingTimeSlot](pollingtimeslot.md)
+- [typealias PollingTimeSlot](../pollingtimeslot.md)
   Constants that specify the maximum number of time slots.
 
 

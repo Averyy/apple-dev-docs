@@ -1,7 +1,8 @@
 # TextSelection.Indices.multiSelection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The range-set of the selections.
 

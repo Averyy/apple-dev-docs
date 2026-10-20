@@ -1,7 +1,8 @@
 # phonemeCount
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of phonemes that the current synthesizer defines. Typically, this will correspond to the number of phonemes in the language supported by the synthesizer.
 
@@ -12,6 +13,10 @@ The number of phonemes that the current synthesizer defines. Typically, this wil
 
 ```swift
 var phonemeCount: Int16
+```
+
+```c
+SInt16 phonemeCount;
 ```
 
 

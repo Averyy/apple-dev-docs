@@ -1,15 +1,16 @@
 # sidebarHeader()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration you use to style a header in a sidebar list.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS ?+
+- iOS 14.0+ - Deprecated in 18.0 (renamed: header)
+- iPadOS 14.0+ - Deprecated in 18.0 (renamed: header)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: header)
+- visionOS
 
 ## Declaration
 
@@ -25,27 +26,28 @@ The default configuration for a header in a sidebar list.
 
 Create this configuration to update the content and styling of a header in a sidebar collection view list.
 
-For an appearance consistent with system defaults, display your header in a sidebar collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.sidebar`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) enumeration case.
+For an appearance consistent with system defaults, display your header in a sidebar collection view list that you configure with the [`UICollectionLayoutListConfiguration.Appearance.sidebar`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) enumeration case.
 
-Configure the background of your cell using one of the [`UIBackgroundConfiguration`](uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
+Configure the background of your cell using one of the [`UIBackgroundConfiguration`](../uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
 
 | Background configuration option | Matching table view or collection view styles |
 | --- | --- |
-| [`listSidebarHeader()`](uibackgroundconfiguration-swift.struct/listsidebarheader().md) | [`UICollectionLayoutListConfiguration.Appearance.sidebar`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) |
+| [`listSidebarHeader()`](../uibackgroundconfiguration-swift.struct/listsidebarheader%28%29.md) | [`UICollectionLayoutListConfiguration.Appearance.sidebar`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md) |
 
 ## See Also
 
-- [static func plainHeader() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/plainheader.md)
+### Creating header and footer configurations
+- [static func plainHeader() -> UIListContentConfiguration](./plainheader%28%29.md)
   Creates the default configuration you use to style a header in a plain list.
-- [static func plainFooter() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/plainfooter.md)
+- [static func plainFooter() -> UIListContentConfiguration](./plainfooter%28%29.md)
   Creates the default configuration you use to style a footer in a plain list.
-- [static func groupedHeader() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/groupedheader.md)
+- [static func groupedHeader() -> UIListContentConfiguration](./groupedheader%28%29.md)
   Creates the default configuration you use to style a header in a grouped list.
-- [static func groupedFooter() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/groupedfooter.md)
+- [static func groupedFooter() -> UIListContentConfiguration](./groupedfooter%28%29.md)
   Creates the default configuration you use to style a footer in a grouped list.
-- [static func prominentInsetGroupedHeader() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/prominentinsetgroupedheader.md)
+- [static func prominentInsetGroupedHeader() -> UIListContentConfiguration](./prominentinsetgroupedheader%28%29.md)
   Creates the default configuration you use to style a prominent header in an inset grouped list.
-- [static func extraProminentInsetGroupedHeader() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/extraprominentinsetgroupedheader.md)
+- [static func extraProminentInsetGroupedHeader() -> UIListContentConfiguration](./extraprominentinsetgroupedheader%28%29.md)
   Creates the default configuration you use to style an extra prominent header in an inset grouped list.
 
 

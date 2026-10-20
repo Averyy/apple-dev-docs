@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, rounded to the closest possible representation.
 
@@ -19,6 +20,8 @@ Creates a new value, rounded to the closest possible representation.
 ```swift
 init<Source>(_ value: Source) where Source : BinaryInteger
 ```
+
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

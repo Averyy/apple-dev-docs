@@ -1,7 +1,8 @@
 # WKWebExtensionContext.PermissionStatus.requestedImplicitly
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the permission was implicitly requested because of another explicitly requested permission.
 
@@ -16,6 +17,10 @@ Indicates that the permission was implicitly requested because of another explic
 
 ```swift
 case requestedImplicitly
+```
+
+```c
+WKWebExtensionContextPermissionStatusRequestedImplicitly
 ```
 
 

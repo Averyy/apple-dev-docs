@@ -1,7 +1,8 @@
 # physicalLength
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the range.
 
@@ -15,9 +16,14 @@ The length of the range.
 var physicalLength: UInt64
 ```
 
+```c
+uint64_t physicalLength;
+```
+
 ## See Also
 
-- [var physicalAddress: UInt64](pgphysicalmemoryrange_s/physicaladdress.md)
+### Inspecting Range Properties
+- [var physicalAddress: UInt64](./physicaladdress.md)
   The starting address of the range in physical memory.
 
 

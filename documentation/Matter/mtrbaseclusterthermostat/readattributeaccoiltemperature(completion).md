@@ -1,7 +1,8 @@
 # readAttributeACCoilTemperature(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeACCoilTemperature(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeACCoilTemperature() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeACCoilTemperatureWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

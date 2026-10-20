@@ -1,18 +1,25 @@
 # kAudioSessionInputRoute_BuiltInMic
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A built-in microphone input.
 
 **Availability**:
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- Mac Catalyst 14.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: no longer supported
 
 ## Declaration
 
 ```swift
 let kAudioSessionInputRoute_BuiltInMic: CFString!
+```
+
+```c
+extern CFStringRef const kAudioSessionInputRoute_BuiltInMic;
 ```
 
 #### Discussion
@@ -21,35 +28,36 @@ Some early iOS devices do not have this input.
 
 ## See Also
 
-- [let kAudioSessionInputRoute_BluetoothHFP: CFString!](kaudiosessioninputroute_bluetoothhfp.md)
+### Constants
+- [let kAudioSessionInputRoute_BluetoothHFP: CFString!](./kaudiosessioninputroute_bluetoothhfp.md)
   A microphone that is part of a Bluetooth Hands-Free Profile (HFP) device.
-- [let kAudioSessionInputRoute_HeadsetMic: CFString!](kaudiosessioninputroute_headsetmic.md)
+- [let kAudioSessionInputRoute_HeadsetMic: CFString!](./kaudiosessioninputroute_headsetmic.md)
   A microphone that is part of a headset.
-- [let kAudioSessionInputRoute_LineIn: CFString!](kaudiosessioninputroute_linein.md)
+- [let kAudioSessionInputRoute_LineIn: CFString!](./kaudiosessioninputroute_linein.md)
   A line in input
-- [let kAudioSessionInputRoute_USBAudio: CFString!](kaudiosessioninputroute_usbaudio.md)
+- [let kAudioSessionInputRoute_USBAudio: CFString!](./kaudiosessioninputroute_usbaudio.md)
   A Universal Serial Bus (USB) input, accessed through the device 30-pin connector.
-- [let kAudioSessionOutputRoute_AirPlay: CFString!](kaudiosessionoutputroute_airplay.md)
+- [let kAudioSessionOutputRoute_AirPlay: CFString!](./kaudiosessionoutputroute_airplay.md)
   An output on an AirPlay device.
-- [let kAudioSessionOutputRoute_BluetoothA2DP: CFString!](kaudiosessionoutputroute_bluetootha2dp.md)
+- [let kAudioSessionOutputRoute_BluetoothA2DP: CFString!](./kaudiosessionoutputroute_bluetootha2dp.md)
   Speakers in a Bluetooth A2DP device.
-- [let kAudioSessionOutputRoute_BluetoothHFP: CFString!](kaudiosessionoutputroute_bluetoothhfp.md)
+- [let kAudioSessionOutputRoute_BluetoothHFP: CFString!](./kaudiosessionoutputroute_bluetoothhfp.md)
   Speakers that are part of a Bluetooth Hands-Free Profile (HFP) accessory.
-- [let kAudioSessionOutputRoute_BuiltInReceiver: CFString!](kaudiosessionoutputroute_builtinreceiver.md)
+- [let kAudioSessionOutputRoute_BuiltInReceiver: CFString!](./kaudiosessionoutputroute_builtinreceiver.md)
   The built-in speaker you hold to your ear when on a phone call.
-- [let kAudioSessionOutputRoute_BuiltInSpeaker: CFString!](kaudiosessionoutputroute_builtinspeaker.md)
+- [let kAudioSessionOutputRoute_BuiltInSpeaker: CFString!](./kaudiosessionoutputroute_builtinspeaker.md)
   The primary built-in speaker.
-- [let kAudioSessionOutputRoute_HDMI: CFString!](kaudiosessionoutputroute_hdmi.md)
+- [let kAudioSessionOutputRoute_HDMI: CFString!](./kaudiosessionoutputroute_hdmi.md)
   An output available through the HDMI interface.
-- [let kAudioSessionOutputRoute_Headphones: CFString!](kaudiosessionoutputroute_headphones.md)
+- [let kAudioSessionOutputRoute_Headphones: CFString!](./kaudiosessionoutputroute_headphones.md)
   Speakers in headphones or in a headset.
-- [let kAudioSessionOutputRoute_LineOut: CFString!](kaudiosessionoutputroute_lineout.md)
+- [let kAudioSessionOutputRoute_LineOut: CFString!](./kaudiosessionoutputroute_lineout.md)
   Analog line-level output.
-- [let kAudioSessionOutputRoute_USBAudio: CFString!](kaudiosessionoutputroute_usbaudio.md)
+- [let kAudioSessionOutputRoute_USBAudio: CFString!](./kaudiosessionoutputroute_usbaudio.md)
   Speaker(s) in a Universal Serial Bus (USB) accessory, accessed through the device 30-pin connector.
-- [let kAudioSession_AudioRouteChangeKey_CurrentRouteDescription: CFString!](kaudiosession_audioroutechangekey_currentroutedescription.md)
+- [let kAudioSession_AudioRouteChangeKey_CurrentRouteDescription: CFString!](./kaudiosession_audioroutechangekey_currentroutedescription.md)
   Describes the current audio route.
-- [let kAudioSession_AudioRouteChangeKey_PreviousRouteDescription: CFString!](kaudiosession_audioroutechangekey_previousroutedescription.md)
+- [let kAudioSession_AudioRouteChangeKey_PreviousRouteDescription: CFString!](./kaudiosession_audioroutechangekey_previousroutedescription.md)
   Describes the previous audio route.
 
 

@@ -1,7 +1,8 @@
 # isGlobalPrivacyControlEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 

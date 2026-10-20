@@ -1,7 +1,8 @@
 # UnlockUserAccountCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to unlock a user account that the system locked because of too many failed password attempts.
 
@@ -10,18 +11,18 @@ The command to unlock a user account that the system locked because of too many 
 
 ## Declaration
 
-```swift
+```
 object UnlockUserAccountCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object UnlockUserAccountCommand.Command](unlockuseraccountcommand/command-data.dictionary.md)
+- [object UnlockUserAccountCommand.Command](./unlockuseraccountcommand/command-data.dictionary.md)
   The command to unlock a user account that the system locked because of too many failed password attempts.
 
 ## Properties
@@ -31,7 +32,8 @@ object UnlockUserAccountCommand
 
 ## See Also
 
-- [object UnlockUserAccountResponse](unlockuseraccountresponse.md)
+### Commands and responses
+- [object UnlockUserAccountResponse](./unlockuseraccountresponse.md)
   A response from the device after it processes the command to unlock a user account that the system locked because of too many failed password attempts.
 
 

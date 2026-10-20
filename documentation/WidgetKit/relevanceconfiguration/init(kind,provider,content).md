@@ -1,7 +1,8 @@
 # init(kind:provider:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a widget that provides relevance clues to the system.
 

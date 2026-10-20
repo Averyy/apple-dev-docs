@@ -1,7 +1,8 @@
 # deletePathExtension()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL constructed by removing any path extension.
 
@@ -26,7 +27,8 @@ If the URL has an empty path (e.g., `http://www.example.com`), then this functio
 
 ## See Also
 
-- [func deletingPathExtension() -> URL](url/deletingpathextension.md)
+### Removing a path extension
+- [func deletingPathExtension() -> URL](./deletingpathextension%28%29.md)
   Returns a URL constructed by removing any path extension.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The associated event parameter type.

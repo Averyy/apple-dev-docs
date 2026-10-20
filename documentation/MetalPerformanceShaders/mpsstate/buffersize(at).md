@@ -1,7 +1,8 @@
 # bufferSize(at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func bufferSize(at index: Int) -> Int
+```
+
+```objc
+- (NSUInteger) bufferSizeAtIndex:(NSUInteger) index;
 ```
 
 

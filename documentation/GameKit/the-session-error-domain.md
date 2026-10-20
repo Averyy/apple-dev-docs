@@ -1,26 +1,28 @@
 # The Session Error Domain
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: API Collection
 
-The [`GKSession`](gksession.md) error domain.
+The [`GKSession`](./gksession.md) error domain.
 
 ## Topics
 
 ### Constants
-- [let GKSessionErrorDomain: String](gksessionerrordomain.md)
-  An error occurred in [`GKSession`](gksession.md).
+- [let GKSessionErrorDomain: String](./gksessionerrordomain.md)
+  An error occurred in [`GKSession`](./gksession.md).
 
 ## See Also
 
-- [enum GKSendDataMode](gksenddatamode.md)
+### Constants
+- [enum GKSendDataMode](./gksenddatamode.md)
   The mechanism used to transmit data to other peers.
-- [enum GKSessionMode](gksessionmode.md)
+- [enum GKSessionMode](./gksessionmode.md)
   Modes that determine how a session interacts with other peers.
-- [enum GKPeerConnectionState](gkpeerconnectionstate.md)
+- [enum GKPeerConnectionState](./gkpeerconnectionstate.md)
   The state of a peer known to the session.
-- [GKSessionError.Code](gksessionerror-swift.struct/code.md)
+- [GKSessionError.Code](./gksessionerror-swift.struct/code.md)
   Error codes for the session error domain.
-- [struct GKSessionError](gksessionerror-swift.struct.md)
+- [struct GKSessionError](./gksessionerror-swift.struct.md)
 
 
 ---

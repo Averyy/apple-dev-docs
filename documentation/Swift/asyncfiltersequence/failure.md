@@ -1,7 +1,8 @@
 # AsyncFilterSequence.Failure
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the error that can be produced by the sequence.
 
@@ -19,6 +20,8 @@ The type of the error that can be produced by the sequence.
 ```swift
 typealias Failure = Base.Failure
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 #### Discussion
 

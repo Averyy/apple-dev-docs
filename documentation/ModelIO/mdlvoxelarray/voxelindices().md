@@ -1,7 +1,8 @@
 # voxelIndices()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a data object containing all voxels within the voxel array.
 
@@ -19,25 +20,30 @@ Returns a data object containing all voxels within the voxel array.
 func voxelIndices() -> Data?
 ```
 
+```objc
+- (NSData *) voxelIndices;
+```
+
 #### Return Value
 
-A data object containing [`MDLVoxelIndex`](mdlvoxelindex.md) values.
+A data object containing [`MDLVoxelIndex`](../mdlvoxelindex.md) values.
 
 #### Discussion
 
-The returned [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object contains an array of [`MDLVoxelIndex`](mdlvoxelindex.md) values describing the locations of voxels within the voxel array as well as their volumetric relationship to the object modeled by the voxel array.
+The returned [`NSData`](../../Foundation/nsdata.md) object contains an array of [`MDLVoxelIndex`](../mdlvoxelindex.md) values describing the locations of voxels within the voxel array as well as their volumetric relationship to the object modeled by the voxel array.
 
-Calling this method is equivalent to calling the [`voxels(within:)`](mdlvoxelarray/voxels(within:).md) method with the value of the [`voxelIndexExtent`](mdlvoxelarray/voxelindexextent.md) property.
+Calling this method is equivalent to calling the [`voxels(within:)`](./voxels%28within%29.md) method with the value of the [`voxelIndexExtent`](./voxelindexextent.md) property.
 
 ## See Also
 
-- [var count: Int](mdlvoxelarray/count.md)
+### Examining Voxels
+- [var count: Int](./count.md)
   The number of voxels in the array.
-- [var voxelIndexExtent: MDLVoxelIndexExtent](mdlvoxelarray/voxelindexextent.md)
+- [var voxelIndexExtent: MDLVoxelIndexExtent](./voxelindexextent.md)
   The indexes that define the corners of the three-dimensional voxel grid.
-- [func voxelExists(atIndex: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool, allowAnyZ: Bool, allowAnyShell: Bool) -> Bool](mdlvoxelarray/voxelexists(atindex:allowanyx:allowanyy:allowanyz:allowanyshell:).md)
+- [func voxelExists(atIndex: MDLVoxelIndex, allowAnyX: Bool, allowAnyY: Bool, allowAnyZ: Bool, allowAnyShell: Bool) -> Bool](./voxelexists%28atindex,allowanyx,allowanyy,allowanyz,allowanyshell%29.md)
   Returns a Boolean value indicating whether the voxel array contains voxel data for the specified index.
-- [func voxels(within: MDLVoxelIndexExtent) -> Data?](mdlvoxelarray/voxels(within:).md)
+- [func voxels(within: MDLVoxelIndexExtent) -> Data?](./voxels%28within%29.md)
   Returns a data object containing all voxels within the specified volume.
 
 

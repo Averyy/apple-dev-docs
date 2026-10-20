@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the scroll view.
 
@@ -9,7 +10,7 @@ The delegate of the scroll view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The delegate of the scroll view.
 weak var delegate: (any UIScrollViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIScrollViewDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`UIScrollViewDelegate`](uiscrollviewdelegate.md) protocol. The [`UIScrollView`](uiscrollview.md) class, which doesn’t retain the delegate, invokes each protocol method the delegate implements.
+The delegate must adopt the [`UIScrollViewDelegate`](../uiscrollviewdelegate.md) protocol. The [`UIScrollView`](../uiscrollview.md) class, which doesn’t retain the delegate, invokes each protocol method the delegate implements.
 
 ## See Also
 
-- [protocol UIScrollViewDelegate](uiscrollviewdelegate.md)
+### Responding to scroll view interactions
+- [protocol UIScrollViewDelegate](../uiscrollviewdelegate.md)
   The interface for the delegate of a scroll view.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Media  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Converts a time from one timebase or clock to another timebase or clock.

@@ -1,16 +1,19 @@
 # WKProcessPool
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque token that you use to run multiple web views in a single process.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 15.0
+- iPadOS 8.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.10+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Creating and using multiple instances of WKProcessPool no longer has any effect.
 
 ## Declaration
 
@@ -19,49 +22,54 @@ An opaque token that you use to run multiple web views in a single process.
 class WKProcessPool
 ```
 
+```objc
+@interface WKProcessPool : NSObject
+```
+
 #### Overview
 
-A [`WKProcessPool`](wkprocesspool.md) object represents a single process that WebKit uses to manage web content. To provide a more secure and stable experience, WebKit renders the content of web views in separate processes, rather than in your app’s process space. By default, WebKit gives each web view its own process space until it reaches an implementation-defined process limit. After that, web views with the same [`WKProcessPool`](wkprocesspool.md) object share the same web content process.
+A [`WKProcessPool`](./wkprocesspool.md) object represents a single process that WebKit uses to manage web content. To provide a more secure and stable experience, WebKit renders the content of web views in separate processes, rather than in your app’s process space. By default, WebKit gives each web view its own process space until it reaches an implementation-defined process limit. After that, web views with the same [`WKProcessPool`](./wkprocesspool.md) object share the same web content process.
 
-If your app creates multiple web views, assign the same [`WKProcessPool`](wkprocesspool.md) object to web views that may safely share a process space. Instantiate an instance of this class and assign it to the [`processPool`](wkwebviewconfiguration/processpool.md) property of each web view’s [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object.
+If your app creates multiple web views, assign the same [`WKProcessPool`](./wkprocesspool.md) object to web views that may safely share a process space. Instantiate an instance of this class and assign it to the [`processPool`](./wkwebviewconfiguration/processpool.md) property of each web view’s [`WKWebViewConfiguration`](./wkwebviewconfiguration.md) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](wkprocesspool/init(coder:).md)
+- [init?(coder: NSCoder)](./wkprocesspool/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebViewConfiguration](wkwebviewconfiguration.md)
+### Web view configuration
+- [class WKWebViewConfiguration](./wkwebviewconfiguration.md)
   A collection of properties that you use to initialize a web view.
-- [class WKWindowFeatures](wkwindowfeatures.md)
+- [class WKWindowFeatures](./wkwindowfeatures.md)
   Display-related attributes that a webpage requests for its window.
-- [class WKPreferences](wkpreferences.md)
+- [class WKPreferences](./wkpreferences.md)
   An object that encapsulates the standard behaviors to apply to websites.
-- [class WKWebpagePreferences](wkwebpagepreferences.md)
+- [class WKWebpagePreferences](./wkwebpagepreferences.md)
   An object that specifies the behaviors to use when loading and rendering page content.
-- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+- [WKWebpagePreferences.ContentMode](./wkwebpagepreferences/contentmode.md)
   Constants that indicate how to render web view content.
-- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
-- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
-- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](./wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](./wksecurityrestrictionmode.md)
+- [WKPreferences.InactiveSchedulingPolicy](./wkpreferences/inactiveschedulingpolicy-swift.enum.md)
   An enumeration that lists policies for how a web view that’s not in a window handles tasks.
-- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
+- [WKWebView.FullscreenState](./wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

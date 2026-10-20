@@ -1,9 +1,10 @@
 # requiresSecureCoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Indicates whether the receiver requires all unarchived classes to conform to [`NSSecureCoding`](nssecurecoding.md).
+Indicates whether the receiver requires all unarchived classes to conform to [`NSSecureCoding`](../nssecurecoding.md).
 
 **Availability**:
 - iOS 6.0+
@@ -20,31 +21,36 @@ Indicates whether the receiver requires all unarchived classes to conform to [`N
 var requiresSecureCoding: Bool { get set }
 ```
 
+```objc
+@property (readwrite) BOOL requiresSecureCoding;
+```
+
 #### Discussion
 
-If you set the receiver to require secure coding, it will throw an exception if you attempt to unarchive a class which does not conform to [`NSSecureCoding`](nssecurecoding.md).
+If you set the receiver to require secure coding, it will throw an exception if you attempt to unarchive a class which does not conform to [`NSSecureCoding`](../nssecurecoding.md).
 
-The secure coding requirement for [`NSKeyedUnarchiver`](nskeyedunarchiver.md) is designed to be set once at the top level and remain on. Once enabled, attempting to call `setRequiresSecureCoding:` with a value of [`false`](https://developer.apple.com/documentation/swift/false) will throw an exception. This is to prevent classes from selectively turning secure coding off.
+The secure coding requirement for [`NSKeyedUnarchiver`](../nskeyedunarchiver.md) is designed to be set once at the top level and remain on. Once enabled, attempting to call `setRequiresSecureCoding:` with a value of [`false`](../../Swift/false.md) will throw an exception. This is to prevent classes from selectively turning secure coding off.
 
-Note that the getter is on the superclass, [`NSCoder`](nscoder.md). See [`NSCoder`](nscoder.md) for more information about secure coding.
+Note that the getter is on the superclass, [`NSCoder`](../nscoder.md). See [`NSCoder`](../nscoder.md) for more information about secure coding.
 
 ## Parameters
 
-- `flag`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver requires [`NSSecureCoding`](nssecurecoding.md); [`false`](https://developer.apple.com/documentation/swift/false) if not.
+- `flag`: [`true`](../../Swift/true.md) if the receiver requires [`NSSecureCoding`](../nssecurecoding.md); [`false`](../../Swift/false.md) if not.
 
 ## See Also
 
-- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:).md)
+### Unarchiving Data
+- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](./unarchivetoplevelobjectwithdata%28_%29.md)
   Decodes a previously-archived object graph, and returns the root object.
-- [static func unarchivedObject<DecodedObjectType>(ofClass: DecodedObjectType.Type, from: Data) throws -> DecodedObjectType?](nskeyedunarchiver/unarchivedobject(ofclass:from:).md)
+- [static func unarchivedObject<DecodedObjectType>(ofClass: DecodedObjectType.Type, from: Data) throws -> DecodedObjectType?](./unarchivedobject%28ofclass,from%29.md)
   Decodes a previously-archived object graph, and returns the root object as the specified type.
-- [class func unarchivedObject(ofClasses: Set<AnyHashable>, from: Data) throws -> Any](nskeyedunarchiver/unarchivedobject(ofclasses:from:)-b9t5.md)
+- [class func unarchivedObject(ofClasses: Set<AnyHashable>, from: Data) throws -> Any](./unarchivedobject%28ofclasses,from%29-b9t5.md)
   Decodes a previously-archived object graph, returning the root object as one of the specified classes.
-- [static func unarchivedObject(ofClasses: [AnyClass], from: Data) throws -> Any?](nskeyedunarchiver/unarchivedobject(ofclasses:from:)-3h32t.md)
+- [static func unarchivedObject(ofClasses: [AnyClass], from: Data) throws -> Any?](./unarchivedobject%28ofclasses,from%29-3h32t.md)
   Decodes a previously-archived object graph, returning the root object as one of the specified classes.
-- [class func unarchiveObject(with: Data) -> Any?](nskeyedunarchiver/unarchiveobject(with:).md)
+- [class func unarchiveObject(with: Data) -> Any?](./unarchiveobject%28with%29.md)
   Decodes and returns the object graph previously encoded by `NSKeyedArchiver` and stored in a given `NSData` object.
-- [class func unarchiveObject(withFile: String) -> Any?](nskeyedunarchiver/unarchiveobject(withfile:).md)
+- [class func unarchiveObject(withFile: String) -> Any?](./unarchiveobject%28withfile%29.md)
   Decodes and returns the object graph previously encoded by `NSKeyedArchiver` written to the file at a given path.
 
 

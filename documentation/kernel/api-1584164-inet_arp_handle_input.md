@@ -1,18 +1,19 @@
 # inet_arp_handle_input
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 errno_t inet_arp_handle_input(ifnet_t ifp, u_int16_t arpop, const struct sockaddr_dl *sender_hw, const struct sockaddr_in *sender_ip, const struct sockaddr_in *target_ip);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success or an errno error value on failure.
 
@@ -32,8 +33,9 @@ This function will lookup the sender in the routing table and add an arp entry i
 
 ## See Also
 
-- [inet_arp_init_ifaddr](1584163-inet_arp_init_ifaddr.md)
-- [inet_arp_lookup](1584165-inet_arp_lookup.md)
+### Address Resolution
+- [inet_arp_init_ifaddr](./api-1584163-inet_arp_init_ifaddr.md)
+- [inet_arp_lookup](./api-1584165-inet_arp_lookup.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # removed
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receiver is removed from the presentation when the animation is completed.
 
@@ -19,13 +20,18 @@ The receiver is removed from the presentation when the animation is completed.
 static let removed: CAMediaTimingFillMode
 ```
 
+```c
+extern CAMediaTimingFillMode const kCAFillModeRemoved;
+```
+
 ## See Also
 
-- [static let forwards: CAMediaTimingFillMode](camediatimingfillmode/forwards.md)
+### Constants
+- [static let forwards: CAMediaTimingFillMode](./forwards.md)
   The receiver remains visible in its final state when the animation is completed.
-- [static let backwards: CAMediaTimingFillMode](camediatimingfillmode/backwards.md)
+- [static let backwards: CAMediaTimingFillMode](./backwards.md)
   The receiver clamps values before zero to zero when the animation is completed.
-- [static let both: CAMediaTimingFillMode](camediatimingfillmode/both.md)
+- [static let both: CAMediaTimingFillMode](./both.md)
   The receiver clamps values at both ends of the object’s time space
 
 

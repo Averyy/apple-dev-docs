@@ -1,7 +1,8 @@
 # SearchTermPopularityQueryRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request body for the search term popularity query endpoint.
 
@@ -10,7 +11,7 @@ Request body for the search term popularity query endpoint.
 
 ## Declaration
 
-```swift
+```
 object SearchTermPopularityQueryRequest
 ```
 
@@ -56,36 +57,36 @@ object SearchTermPopularityQueryRequest
 
 ## Properties
 
-- `filters` ([Filter]): Filter conditions to scope results to specific countries or genres. See [`Filterable Fields`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api/query-app-search-term-popularity-data#Filterable-Fields) for `genre` values matching App Store genre names.
+- `filters` ([Filter]): Filter conditions to scope results to specific countries or genres. See [Filterable Fields](./query-app-search-term-popularity-data.md#Filterable-Fields) for `genre` values matching App Store genre names.
 - `sorting` ([Sorting]): Sort criteria. Maximum two sort fields. Default genre ASC, `rankInGenre` ASC.
-- `timeRange` (SearchTermPopularityTimeRange) *(required)*: timeRange is required and specifies the date window to query. Timezone is fixed to UTC. See [`SearchTermPopularityTimeRange`](searchtermpopularitytimerange.md) for granularity rules.
-- `pagination` (RequestPagination): See [`RequestPagination`](requestpagination.md) for details. This endpoint caps `pageSize` at 5000.
+- `timeRange` (SearchTermPopularityTimeRange) *(required)*: timeRange is required and specifies the date window to query. Timezone is fixed to UTC. See [`SearchTermPopularityTimeRange`](./searchtermpopularitytimerange.md) for granularity rules.
+- `pagination` (RequestPagination): See [`RequestPagination`](./requestpagination.md) for details. This endpoint caps `pageSize` at 5000.
 
 ## See Also
 
-- [object ImpressionShareQueryRequest](impressionsharequeryrequest.md)
+- [object ImpressionShareQueryRequest](./impressionsharequeryrequest.md)
   Request body for the impression share query endpoint.
-- [object ImpressionShareQueryResponse](impressionsharequeryresponse.md)
+- [object ImpressionShareQueryResponse](./impressionsharequeryresponse.md)
   The impression share query endpoint returns this response wrapper.
-- [object ImpressionShareRow](impressionsharerow.md)
+- [object ImpressionShareRow](./impressionsharerow.md)
   A single impression share data row.
-- [object ImpressionShareTimeRange](impressionsharetimerange.md)
+- [object ImpressionShareTimeRange](./impressionsharetimerange.md)
   Time range for impression share queries.
-- [object ImpressionShareOptions](impressionshareoptions.md)
+- [object ImpressionShareOptions](./impressionshareoptions.md)
   Report options for impression share queries.
-- [object SearchTermPopularityQueryResponse](searchtermpopularityqueryresponse.md)
+- [object SearchTermPopularityQueryResponse](./searchtermpopularityqueryresponse.md)
   A response wrapper for search term popularity query results.
-- [object SearchTermPopularityRow](searchtermpopularityrow.md)
+- [object SearchTermPopularityRow](./searchtermpopularityrow.md)
   A single search term popularity data row.
-- [object SearchTermPopularityTimeRange](searchtermpopularitytimerange.md)
+- [object SearchTermPopularityTimeRange](./searchtermpopularitytimerange.md)
   Time range for search term popularity queries.
-- [object ImpressionShareResultContainer](impressionshareresultcontainer.md)
+- [object ImpressionShareResultContainer](./impressionshareresultcontainer.md)
   Container holding the array of impression share rows a query returns.
-- [object SearchTermPopularityResultContainer](searchtermpopularityresultcontainer.md)
+- [object SearchTermPopularityResultContainer](./searchtermpopularityresultcontainer.md)
   Container holding the array of search term popularity rows a query returns.
-- [object KeywordInsights](keywordinsights.md)
+- [object KeywordInsights](./keywordinsights.md)
   Insights for keyword reporting rows.
-- [object ReportingKeywordBidRecommendation](reportingkeywordbidrecommendation.md)
+- [object ReportingKeywordBidRecommendation](./reportingkeywordbidrecommendation.md)
   Keyword bid recommendation details, including a suggested bid amount.
 
 

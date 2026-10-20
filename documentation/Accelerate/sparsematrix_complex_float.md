@@ -1,23 +1,28 @@
 # SparseMatrix_Complex_Float
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing a sparse complex matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseMatrix_Complex_Float
+```
+
+```c
+typedef struct { ... } SparseMatrix_Complex_Float;
 ```
 
 #### Overview
@@ -30,19 +35,20 @@ struct SparseMatrix_Complex_Float
 ## Topics
 
 ### Initializers
-- [init(structure: SparseMatrixStructureComplex, data: OpaquePointer)](sparsematrix_complex_float/init(structure:data:).md)
+- [init(structure: SparseMatrixStructureComplex, data: OpaquePointer)](./sparsematrix_complex_float/init%28structure,data%29.md)
 ### Instance Properties
-- [var data: OpaquePointer](sparsematrix_complex_float/data.md)
-- [var structure: SparseMatrixStructureComplex](sparsematrix_complex_float/structure.md)
+- [var data: OpaquePointer](./sparsematrix_complex_float/data.md)
+- [var structure: SparseMatrixStructureComplex](./sparsematrix_complex_float/structure.md)
   A type representing the sparsity structure of a sparse complex matrix.
 
 ## See Also
 
-- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+### Creating sparse complex matrices
+- [struct SparseMatrix_Complex_Double](./sparsematrix_complex_double.md)
   A type representing a sparse complex matrix.
-- [struct SparseAttributesComplex_t](sparseattributescomplex_t.md)
+- [struct SparseAttributesComplex_t](./sparseattributescomplex_t.md)
   A type representing the attributes of a matrix.
-- [struct SparseMatrixStructureComplex](sparsematrixstructurecomplex.md)
+- [struct SparseMatrixStructureComplex](./sparsematrixstructurecomplex.md)
   A type representing the sparsity structure of a sparse complex matrix.
 
 

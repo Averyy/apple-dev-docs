@@ -1,7 +1,8 @@
 # init(sourceFrame:nextFrame:submissionMode:destinationOpticalFlow:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame, submissionMode: VTOpticalFlowParameters.SubmissionMode, destinationOpticalFlow: VTFrameProcessorOpticalFlow)
+```
+
+```objc
+- (instancetype) initWithSourceFrame:(VTFrameProcessorFrame *) sourceFrame nextFrame:(VTFrameProcessorFrame *) nextFrame submissionMode:(VTOpticalFlowParametersSubmissionMode) submissionMode destinationOpticalFlow:(VTFrameProcessorOpticalFlow *) destinationOpticalFlow;
 ```
 
 ## Parameters

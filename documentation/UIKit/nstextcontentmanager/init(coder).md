@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new content manager object from data in an unarchiver.
 
@@ -18,13 +19,18 @@ Creates a new content manager object from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: An unachiver that conforms to the [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) class.
+- `coder`: An unachiver that conforms to the [`NSCoder`](../../Foundation/nscoder.md) class.
 
 ## See Also
 
-- [init()](nstextcontentmanager/init.md)
+### Creating a content manager
+- [init()](./init%28%29.md)
   Creates a new content manager.
 
 

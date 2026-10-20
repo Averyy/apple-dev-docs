@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Options for the request. See IOStorageOptions.
 
@@ -10,13 +11,14 @@ Options for the request. See IOStorageOptions.
 
 ## Declaration
 
-```swift
+```c
 IOStorageOptions options;
 ```
 
 ## See Also
 
-- [bufattr](iostorageattributes/1574948-bufattr.md)
+### Fields
+- [bufattr](./api-1574948-bufattr.md)
   Reserved for future use. Set to zero.
 
 

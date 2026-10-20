@@ -1,7 +1,8 @@
 # openWindow(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func openWindow(with params: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func openWindow(with params: MTRAdministratorCommissioningClusterOpenCommissioningWindowParams) async throws
+```
+
+```objc
+- (void) openCommissioningWindowWithParams:(MTRAdministratorCommissioningClusterOpenCommissioningWindowParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

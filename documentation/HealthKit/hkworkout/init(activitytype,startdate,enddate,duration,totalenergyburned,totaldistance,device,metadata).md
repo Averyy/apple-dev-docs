@@ -1,15 +1,18 @@
 # init(activityType:startDate:endDate:duration:totalEnergyBurned:totalDistance:device:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.0+
-- macOS 13.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 9.0+ - Deprecated in 17.0
+- iPadOS 9.0+ - Deprecated in 17.0
+- Mac Catalyst 13.0+ - Deprecated in 16.0
+- macOS 13.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use HKWorkoutBuilder
 
 ## Declaration
 

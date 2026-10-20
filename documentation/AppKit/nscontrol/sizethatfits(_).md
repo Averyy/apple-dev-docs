@@ -1,7 +1,8 @@
 # sizeThatFits(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the control to calculate and return the size that best fits the specified size.
 
@@ -14,13 +15,17 @@ Asks the control to calculate and return the size that best fits the specified s
 func sizeThatFits(_ size: NSSize) -> NSSize
 ```
 
+```objc
+- (NSSize) sizeThatFits:(NSSize) size;
+```
+
 #### Return Value
 
 A new size that fits the receiver’s subviews.
 
 #### Discussion
 
-By default, this method returns the [`intrinsicContentSize`](nsview/intrinsiccontentsize.md) of the receiver.
+By default, this method returns the [`intrinsicContentSize`](../nsview/intrinsiccontentsize.md) of the receiver.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ By default, this method returns the [`intrinsicContentSize`](nsview/intrinsiccon
 
 ## See Also
 
-- [var controlSize: NSControl.ControlSize](nscontrol/controlsize-swift.property.md)
+### Resizing the Control
+- [var controlSize: NSControl.ControlSize](./controlsize-swift.property.md)
   The size of the control.
-- [NSControl.ControlSize](nscontrol/controlsize-swift.enum.md)
+- [NSControl.ControlSize](./controlsize-swift.enum.md)
   A constant for specifying a cell’s size.
-- [func sizeToFit()](nscontrol/sizetofit.md)
+- [func sizeToFit()](./sizetofit%28%29.md)
   Resizes the receiver’s frame so that it’s the minimum size needed to contain its cell.
 
 

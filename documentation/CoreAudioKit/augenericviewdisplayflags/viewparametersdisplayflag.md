@@ -1,12 +1,13 @@
 # viewParametersDisplayFlag
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If set, the generic view displays the audio unit parameters of the audio unit.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ If set, the generic view displays the audio unit parameters of the audio unit.
 static var viewParametersDisplayFlag: AUGenericViewDisplayFlags { get }
 ```
 
+```c
+AUViewParametersDisplayFlag
+```
+
 ## See Also
 
-- [static var viewPropertiesDisplayFlag: AUGenericViewDisplayFlags](augenericviewdisplayflags/viewpropertiesdisplayflag.md)
+### Display Flags
+- [static var viewPropertiesDisplayFlag: AUGenericViewDisplayFlags](./viewpropertiesdisplayflag.md)
   If set, the generic view displays the audio unit properties of the audio unit.
-- [static var viewTitleDisplayFlag: AUGenericViewDisplayFlags](augenericviewdisplayflags/viewtitledisplayflag.md)
+- [static var viewTitleDisplayFlag: AUGenericViewDisplayFlags](./viewtitledisplayflag.md)
   If set, the generic view displays the title and manufacturer of the audio unit.
 
 

@@ -1,19 +1,26 @@
 # ENStatus.bluetoothOff
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Bluetooth is turned off.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 case bluetoothOff
+```
+
+```c
+ENStatusBluetoothOff
 ```
 
 #### Discussion
@@ -26,17 +33,18 @@ Exposure Notification is a system service and can use Bluetooth in situations wh
 
 ## See Also
 
-- [ENStatus.active](enstatus/active.md)
+### States
+- [ENStatus.active](./active.md)
   Notification is active.
-- [ENStatus.disabled](enstatus/disabled.md)
+- [ENStatus.disabled](./disabled.md)
   Notification is disabled.
-- [ENStatus.restricted](enstatus/restricted.md)
+- [ENStatus.restricted](./restricted.md)
   Notification is not active due to system restrictions, such as parental controls.
-- [ENStatus.unknown](enstatus/unknown.md)
+- [ENStatus.unknown](./unknown.md)
   Notification is unknown.
-- [ENStatus.paused](enstatus/paused.md)
+- [ENStatus.paused](./paused.md)
   The user paused Exposure Notification.
-- [ENStatus.unauthorized](enstatus/unauthorized.md)
+- [ENStatus.unauthorized](./unauthorized.md)
   The user hasn’t authorized Exposure Notification.
 
 

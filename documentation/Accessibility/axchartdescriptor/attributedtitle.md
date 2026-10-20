@@ -1,7 +1,8 @@
 # attributedTitle
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed version of the chart title.
 
@@ -21,13 +22,18 @@ An attributed version of the chart title.
 var attributedTitle: NSAttributedString? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedTitle;
+```
+
 #### Discussion
 
-If you set the value of this property, the system uses this value instead of [`title`](axchartdescriptor/title.md).
+If you set the value of this property, the system uses this value instead of [`title`](./title.md).
 
 ## See Also
 
-- [var title: String?](axchartdescriptor/title.md)
+### Specifying the chart title
+- [var title: String?](./title.md)
   The title of the chart.
 
 

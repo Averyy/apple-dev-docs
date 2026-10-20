@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device object that created the rate map.
@@ -20,9 +21,14 @@ The device object that created the rate map.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var label: String?](mtlrasterizationratemap/label.md)
+### Identifying the rate map
+- [var label: String?](./label.md)
   A string that identifies the rate map.
 
 

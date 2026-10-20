@@ -1,7 +1,8 @@
 # dot(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the dot product of this vector and the specified vector.
 

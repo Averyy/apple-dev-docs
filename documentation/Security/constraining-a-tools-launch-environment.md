@@ -1,6 +1,8 @@
 # Constraining a tool’s launch environment
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Sample Code  
+**Download**: [ConstrainingAToolsLaunchEnvironment.zip](https://docs-assets.developer.apple.com/published/e78b2eb10802/ConstrainingAToolsLaunchEnvironment.zip)
 
 Improve the security of your macOS app by limiting the ways its components can run.
 
@@ -16,7 +18,7 @@ The Helper Tool has a constrained launch environment, which limits the parent pr
 
 When a process launches Helper Tool, the kernel checks whether the process’s code signing identifier and team identifier have the expected values. If they do, then the Helper Tool runs normally; otherwise, it doesn’t run.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To configure the sample code project, do the following in Xcode:
 
@@ -31,7 +33,7 @@ To configure the sample code project, do the following in Xcode:
 9. Paste the value you copied in step 8 into the Value field for the Team identifier key.
 10. Save the file.
 
-##### Run the Helper Tool As Part of the Apps Workflow
+##### Run the Helper Tool as part of the app’s workflow
 
 In Xcode, ensure the Launch Constraints Sample App scheme is selected in the scheme drop-down menu, and choose Product > Run. Xcode launches the sample app. Verify that you can enter numbers into the left-most two text fields and click Calculate to compute their sum.
 
@@ -39,11 +41,11 @@ When you click Calculate, the `sum` function uses `Process` to launch its Helper
 
 The app can launch the Helper Tool because when Xcode signs the app, it sets the app binary’s signing identifier to the app’s bundle ID, and embeds your Apple Developer team identifier. The Helper Tool’s launch constraint tests that its parent process — in this case, the app — has that signing identifier and team identifier.
 
-##### Run the Helper Tool As a Standalone Tool
+##### Run the Helper Tool as a standalone tool
 
 In Xcode, switch to the Helper Tool scheme in the scheme drop-down menu, and choose Product > Run. Xcode doesn’t run the Helper Tool, and an error appears in the debugger’s output:
 
-```None
+```
 Message from debugger: Terminated due to code signing error
 Program ended with exit code: 9
 ```

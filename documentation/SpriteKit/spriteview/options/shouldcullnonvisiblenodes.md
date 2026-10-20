@@ -1,7 +1,8 @@
 # shouldCullNonVisibleNodes
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,8 +20,9 @@ static let shouldCullNonVisibleNodes: SpriteView.Options
 
 ## See Also
 
-- [static let allowsTransparency: SpriteView.Options](spriteview/options/allowstransparency.md)
-- [static let ignoresSiblingOrder: SpriteView.Options](spriteview/options/ignoressiblingorder.md)
+### Type Properties
+- [static let allowsTransparency: SpriteView.Options](./allowstransparency.md)
+- [static let ignoresSiblingOrder: SpriteView.Options](./ignoressiblingorder.md)
 
 
 ---

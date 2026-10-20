@@ -1,38 +1,40 @@
 # Anonymous
 
-**Framework**: IOUSBHost
+**Framework**: IOUSBHost  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var IOUSBHostCITransferCompletionMessageControlDeviceAddress: UInt32](iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
-- [var IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase: UInt32](iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
-- [var IOUSBHostCITransferCompletionMessageControlEndpointAddress: UInt32](iousbhostcitransfercompletionmessagecontrolendpointaddress.md)
-- [var IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase: UInt32](iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
-- [var IOUSBHostCITransferCompletionMessageControlStatus: UInt32](iousbhostcitransfercompletionmessagecontrolstatus.md)
-- [var IOUSBHostCITransferCompletionMessageControlStatusPhase: UInt32](iousbhostcitransfercompletionmessagecontrolstatusphase.md)
-- [var IOUSBHostCITransferCompletionMessageData0TransferLength: Int](iousbhostcitransfercompletionmessagedata0transferlength.md)
-- [var IOUSBHostCITransferCompletionMessageData0TransferLengthPhase: Int](iousbhostcitransfercompletionmessagedata0transferlengthphase.md)
-- [var IOUSBHostCITransferCompletionMessageData1TransferStructure: UInt](iousbhostcitransfercompletionmessagedata1transferstructure.md)
-- [var IOUSBHostCITransferCompletionMessageData1TransferStructurePhase: UInt](iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
+- [var IOUSBHostCITransferCompletionMessageControlDeviceAddress: UInt32](./iousbhostcitransfercompletionmessagecontroldeviceaddress.md)
+- [var IOUSBHostCITransferCompletionMessageControlDeviceAddressPhase: UInt32](./iousbhostcitransfercompletionmessagecontroldeviceaddressphase.md)
+- [var IOUSBHostCITransferCompletionMessageControlEndpointAddress: UInt32](./iousbhostcitransfercompletionmessagecontrolendpointaddress.md)
+- [var IOUSBHostCITransferCompletionMessageControlEndpointAddressPhase: UInt32](./iousbhostcitransfercompletionmessagecontrolendpointaddressphase.md)
+- [var IOUSBHostCITransferCompletionMessageControlStatus: UInt32](./iousbhostcitransfercompletionmessagecontrolstatus.md)
+- [var IOUSBHostCITransferCompletionMessageControlStatusPhase: UInt32](./iousbhostcitransfercompletionmessagecontrolstatusphase.md)
+- [var IOUSBHostCITransferCompletionMessageData0TransferLength: Int](./iousbhostcitransfercompletionmessagedata0transferlength.md)
+- [var IOUSBHostCITransferCompletionMessageData0TransferLengthPhase: Int](./iousbhostcitransfercompletionmessagedata0transferlengthphase.md)
+- [var IOUSBHostCITransferCompletionMessageData1TransferStructure: UInt](./iousbhostcitransfercompletionmessagedata1transferstructure.md)
+- [var IOUSBHostCITransferCompletionMessageData1TransferStructurePhase: UInt](./iousbhostcitransfercompletionmessagedata1transferstructurephase.md)
 
 ## See Also
 
-- [Anonymous](3612464-anonymous.md)
-- [Anonymous](3612465-anonymous.md)
-- [Anonymous](3612466-anonymous.md)
-- [Anonymous](3612467-anonymous.md)
-- [Anonymous](3612468-anonymous.md)
-- [Anonymous](3612469-anonymous.md)
-- [Anonymous](3612470-anonymous.md)
-- [Anonymous](3612471-anonymous.md)
-- [Anonymous](3612472-anonymous.md)
-- [Anonymous](3612473-anonymous.md)
-- [Anonymous](3612474-anonymous.md)
-- [Anonymous](3612475-anonymous.md)
-- [Anonymous](3612476-anonymous.md)
-- [Anonymous](3612477-anonymous.md)
-- [Anonymous](3612478-anonymous.md)
+### Enumerations
+- [Anonymous](./api-3612464-anonymous.md)
+- [Anonymous](./api-3612465-anonymous.md)
+- [Anonymous](./api-3612466-anonymous.md)
+- [Anonymous](./api-3612467-anonymous.md)
+- [Anonymous](./api-3612468-anonymous.md)
+- [Anonymous](./api-3612469-anonymous.md)
+- [Anonymous](./api-3612470-anonymous.md)
+- [Anonymous](./api-3612471-anonymous.md)
+- [Anonymous](./api-3612472-anonymous.md)
+- [Anonymous](./api-3612473-anonymous.md)
+- [Anonymous](./api-3612474-anonymous.md)
+- [Anonymous](./api-3612475-anonymous.md)
+- [Anonymous](./api-3612476-anonymous.md)
+- [Anonymous](./api-3612477-anonymous.md)
+- [Anonymous](./api-3612478-anonymous.md)
 
 
 ---

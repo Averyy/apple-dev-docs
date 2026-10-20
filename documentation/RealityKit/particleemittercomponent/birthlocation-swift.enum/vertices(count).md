@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthLocation.vertices(count:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from the vertices of the shape. `count` is the number of vertices in each direction, the distribution depends on the EmitterShape chosen.
 

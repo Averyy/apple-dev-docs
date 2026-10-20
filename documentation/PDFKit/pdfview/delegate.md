@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the view’s delegate.
 
@@ -19,9 +20,14 @@ Returns the view’s delegate.
 weak var delegate: (any PDFViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<PDFViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol PDFViewDelegate](pdfviewdelegate.md)
+### Setting the Delegate
+- [protocol PDFViewDelegate](../pdfviewdelegate.md)
   The delegate for the `PDFView` object.
 
 

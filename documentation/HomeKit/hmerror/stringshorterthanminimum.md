@@ -1,7 +1,8 @@
 # stringShorterThanMinimum
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to use a string shorter than the required minimum.
 
@@ -21,21 +22,22 @@ static var stringShorterThanMinimum: HMError.Code { get }
 
 ## See Also
 
-- [static var invalidDataFormatSpecified: HMError.Code](hmerror/invaliddataformatspecified.md)
+### Detecting value errors
+- [static var invalidDataFormatSpecified: HMError.Code](./invaliddataformatspecified.md)
   An error indicating an invalid data format was specified.
-- [static var invalidValueType: HMError.Code](hmerror/invalidvaluetype.md)
+- [static var invalidValueType: HMError.Code](./invalidvaluetype.md)
   An attempt to use an invalid value type.
-- [static var nameContainsProhibitedCharacters: HMError.Code](hmerror/namecontainsprohibitedcharacters.md)
+- [static var nameContainsProhibitedCharacters: HMError.Code](./namecontainsprohibitedcharacters.md)
   An attempt to name an object with prohibited characters.
-- [static var nameDoesNotEndWithValidCharacters: HMError.Code](hmerror/namedoesnotendwithvalidcharacters.md)
+- [static var nameDoesNotEndWithValidCharacters: HMError.Code](./namedoesnotendwithvalidcharacters.md)
   An error indicating the provided name has invalid characters at the end.
-- [static var nameDoesNotStartWithValidCharacters: HMError.Code](hmerror/namedoesnotstartwithvalidcharacters.md)
+- [static var nameDoesNotStartWithValidCharacters: HMError.Code](./namedoesnotstartwithvalidcharacters.md)
   An attempt to start the name of an object with invalid characters.
-- [static var stringLongerThanMaximum: HMError.Code](hmerror/stringlongerthanmaximum.md)
+- [static var stringLongerThanMaximum: HMError.Code](./stringlongerthanmaximum.md)
   An attempt to use a string longer than the maximum allowed.
-- [static var valueHigherThanMaximum: HMError.Code](hmerror/valuehigherthanmaximum.md)
+- [static var valueHigherThanMaximum: HMError.Code](./valuehigherthanmaximum.md)
   An attempt to use a numeric value higher than the specified maximum value.
-- [static var valueLowerThanMinimum: HMError.Code](hmerror/valuelowerthanminimum.md)
+- [static var valueLowerThanMinimum: HMError.Code](./valuelowerthanminimum.md)
   An attempt to use a numeric value lower than the specified minimum value.
 
 

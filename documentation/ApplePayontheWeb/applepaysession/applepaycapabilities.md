@@ -1,7 +1,8 @@
 # applePayCapabilities
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates whether the device supports Apple Pay and whether the person has an active card in Wallet that qualifies for web payments.
 
@@ -11,7 +12,7 @@ Indicates whether the device supports Apple Pay and whether the person has an ac
 
 ## Declaration
 
-```swift
+```
 static Promise <PaymentCredentialStatusResponse> applePayCapabilities(
 	DOMString merchantIdentifier
 );
@@ -19,11 +20,11 @@ static Promise <PaymentCredentialStatusResponse> applePayCapabilities(
 
 ## Mentions
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+- [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
 #### Return Value
 
-Returns the [`PaymentCredentialStatus`](paymentcredentialstatus.md) object.
+Returns the [`PaymentCredentialStatus`](../paymentcredentialstatus.md) object.
 
 #### Discussion
 
@@ -31,7 +32,7 @@ Returns the [`PaymentCredentialStatus`](paymentcredentialstatus.md) object.
 
 This method asynchronously contacts the Apple Pay servers as part of the verification process. You can use this method to check for support on third-party browsers.
 
-According to the [`Acceptable Use Guidelines for Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the `applePayCapabilities` method and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole, payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](applepaysession/canmakepayments.md) instead. For more information, see [`Checking for Apple Pay availability`](checking-for-apple-pay-availability.md).
+According to the [Acceptable Use Guidelines for Apple Pay on the Web](https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/), if you invoke the `applePayCapabilities` method and determine that a person has an active card provisioned into Wallet, then Apple Pay should be the primary, but not necessarily sole, payment option on any webpage that accepts payments, like the checkout page or product detail page. In all other situations, use [`canMakePayments`](./canmakepayments.md) instead. For more information, see [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md).
 
 > **Note**:  Some cards, such as transit cards, are only enabled for POS payments and therefore won’t qualify for payments on the web.
 
@@ -64,15 +65,16 @@ The following code demonstrates calling this method with each of the possible re
 
 ## See Also
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+### Apple Pay availability
+- [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
   Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
-- [canMakePayments](applepaysession/canmakepayments.md)
+- [canMakePayments](./canmakepayments.md)
   Indicates whether the device supports Apple Pay.
-- [canMakePaymentsWithActiveCard](applepaysession/canmakepaymentswithactivecard.md)
+- [canMakePaymentsWithActiveCard](./canmakepaymentswithactivecard.md)
   Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
-- [PaymentCredentialStatus](paymentcredentialstatus.md)
+- [PaymentCredentialStatus](../paymentcredentialstatus.md)
   Information about whether the device supports Apple Pay and the possible payment credentials the person has provisioned in Wallet.
-- [PaymentCredentialStatusResponse](paymentcredentialstatusresponse.md)
+- [PaymentCredentialStatusResponse](../paymentcredentialstatusresponse.md)
   The response for information about the device’s support for Apple Pay and the payment credential status.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Add a new line on top of the paper.
@@ -24,11 +25,12 @@ func markupToolbarViewController(_ markupToolbarViewController: MarkupToolbarVie
 
 ## See Also
 
-- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewshape:).md)
+### Inserting content
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](./markuptoolbarviewcontroller%28_,insertnewshape%29.md)
   Add a new shape on top of the paper.
-- [func markupToolbarViewControllerInsertNewTextbox(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox(_:).md)
+- [func markupToolbarViewControllerInsertNewTextbox(MarkupToolbarViewController)](./markuptoolbarviewcontrollerinsertnewtextbox%28_%29.md)
   Add a new textbox on top of the paper.
-- [func markupToolbarViewController(MarkupToolbarViewController, insertNewContents: PaperMarkup)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewcontents:).md)
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewContents: PaperMarkup)](./markuptoolbarviewcontroller%28_,insertnewcontents%29.md)
   Add new content on top of the paper.
 
 

@@ -1,13 +1,14 @@
 # BundleIdCapabilityUpdateRequest.Data.Attributes
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapabilityUpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # preferredDisplayDynamicRange
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes how High Dynamic Range (HDR) video content renders.
 
@@ -16,6 +17,10 @@ Describes how High Dynamic Range (HDR) video content renders.
 var preferredDisplayDynamicRange: AVDisplayDynamicRange { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) AVDisplayDynamicRange preferredDisplayDynamicRange;
+```
+
 #### Discussion
 
 Defaults to `AVDisplayDynamicRangeAutomatic`.
@@ -24,7 +29,8 @@ Defaults to `AVDisplayDynamicRangeAutomatic`.
 
 ## See Also
 
-- [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
+### High dynamic range
+- [enum AVDisplayDynamicRange](../avdisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
 
 

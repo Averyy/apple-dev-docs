@@ -1,7 +1,8 @@
 # overlay(blockCount:)
 
 **Framework**: DiskImageKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An overlay layer with a specific block count.
 

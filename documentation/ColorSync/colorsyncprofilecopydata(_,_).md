@@ -1,7 +1,8 @@
 # ColorSyncProfileCopyData(_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the flattened data from a profile.
 
@@ -20,6 +21,10 @@ Copies the flattened data from a profile.
 func ColorSyncProfileCopyData(_ prof: ColorSyncProfile!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<CFData>!
 ```
 
+```c
+extern CFDataRefColorSyncProfileCopyData(ColorSyncProfileRef prof, CFErrorRef*error);
+```
+
 #### Return Value
 
 The profile data on success, or `NULL` in case of failure.
@@ -31,7 +36,8 @@ The profile data on success, or `NULL` in case of failure.
 
 ## See Also
 
-- [func ColorSyncProfileCreate(CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreate(_:_:).md)
+### Embedding and extracting profiles
+- [func ColorSyncProfileCreate(CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<ColorSyncProfile>?](./colorsyncprofilecreate%28_,_%29.md)
   Creates a profile from ICC profile data.
 
 

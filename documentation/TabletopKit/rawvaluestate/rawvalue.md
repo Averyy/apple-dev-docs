@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The integer value for this piece of equipment.
 

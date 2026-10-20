@@ -1,7 +1,8 @@
 # VSUserAccountManager.QueryOptions
 
 **Framework**: Video Subscriber Account  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that represent options you use to fetch a list of user accounts.
 
@@ -19,30 +20,35 @@ Constants that represent options you use to fetch a list of user accounts.
 struct QueryOptions
 ```
 
+```c
+enum VSUserAccountQueryOptions : NSInteger;
+```
+
 ## Topics
 
 ### Query options
-- [static var allDevices: VSUserAccountManager.QueryOptions](vsuseraccountmanager/queryoptions/alldevices.md)
+- [static var allDevices: VSUserAccountManager.QueryOptions](./queryoptions/alldevices.md)
   A constant that indicates fetching user accounts from all the user’s iCloud devices.
 ### Initializing query options
-- [init(rawValue: Int)](vsuseraccountmanager/queryoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./queryoptions/init%28rawvalue%29.md)
   Creates a query option from an integer value you provide.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func userAccounts(options: VSUserAccountManager.QueryOptions) async throws -> [VSUserAccount]](vsuseraccountmanager/useraccounts(options:).md)
+### Getting user accounts
+- [func userAccounts(options: VSUserAccountManager.QueryOptions) async throws -> [VSUserAccount]](./useraccounts%28options%29.md)
   Returns a list of registered user accounts for your app.
 
 

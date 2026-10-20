@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data that the central reads from or writes to the peripheral.
 
@@ -20,17 +21,22 @@ The data that the central reads from or writes to the peripheral.
 var value: Data? { get set }
 ```
 
+```objc
+@property (copy, readwrite, nullable) NSData * value;
+```
+
 #### Discussion
 
-The value of this property depends on whether the request type is read or write. For read requests, the property is `nil,` and you should set it before responding to the remote central through the [`respond(to:withResult:)`](cbperipheralmanager/respond(to:withresult:).md) method. For write requests, the value is the data to write to the characteristic’s value.
+The value of this property depends on whether the request type is read or write. For read requests, the property is `nil,` and you should set it before responding to the remote central through the [`respond(to:withResult:)`](../cbperipheralmanager/respond%28to,withresult%29.md) method. For write requests, the value is the data to write to the characteristic’s value.
 
 ## See Also
 
-- [var central: CBCentral](cbattrequest/central.md)
+### Requesting to Read and Write Characteristic Values
+- [var central: CBCentral](./central.md)
   The remote central device that originated the request.
-- [var characteristic: CBCharacteristic](cbattrequest/characteristic.md)
+- [var characteristic: CBCharacteristic](./characteristic.md)
   The characteristic to read or write the value of.
-- [var offset: Int](cbattrequest/offset.md)
+- [var offset: Int](./offset.md)
   The zero-based index of the first byte for the read or write request.
 
 

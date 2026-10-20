@@ -1,7 +1,8 @@
 # soundUnfilteredTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Provides the file types the `NSSound` class understands.
 
@@ -14,15 +15,20 @@ Provides the file types the `NSSound` class understands.
 class var soundUnfilteredTypes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * soundUnfilteredTypes;
+```
+
 #### Return Value
 
 Array of UTIs identifying the file types the `NSSound` class understands.
 
 ## See Also
 
-- [init?(named: NSSound.Name)](nssound/init(named:).md)
+### Getting Sound Information
+- [init?(named: NSSound.Name)](./init%28named%29.md)
   Returns the `NSSound` instance associated with a given name.
-- [var duration: TimeInterval](nssound/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration of the sound, in seconds.
 
 

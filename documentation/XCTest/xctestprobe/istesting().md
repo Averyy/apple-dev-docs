@@ -1,7 +1,8 @@
 # isTesting()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A Boolean value that indicates whether a test is running.
 
@@ -9,6 +10,10 @@ A Boolean value that indicates whether a test is running.
 
 ```swift
 class func isTesting() -> Bool
+```
+
+```objc
++ (BOOL) isTesting;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates toolbar overflow menu content.
 

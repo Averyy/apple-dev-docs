@@ -1,7 +1,8 @@
 # HIDDeviceError.badArgument
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The request contains an inappropriate argument.
 

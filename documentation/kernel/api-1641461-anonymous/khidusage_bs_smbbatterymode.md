@@ -1,14 +1,15 @@
 # kHIDUsage_BS_SMBBatteryMode
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BS_SMBBatteryMode = 0x01
 ```
 

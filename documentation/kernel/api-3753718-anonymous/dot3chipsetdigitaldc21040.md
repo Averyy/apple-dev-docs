@@ -1,14 +1,15 @@
 # dot3ChipSetDigitalDC21040
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3ChipSetDigitalDC21040 = 1
 ```
 

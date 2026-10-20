@@ -1,7 +1,8 @@
 # supportedTransports
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of transports that the accessory supports for sending sensitive information.
 
@@ -16,11 +17,11 @@ let supportedTransports: [AccessoryTransport]
 
 ## Mentions
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 
-The default is [`AccessoryTransport.bluetooth`](accessorytransport/bluetooth.md). To support the [`AccessoryTransport.internet`](accessorytransport/internet.md) or [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) transport types, use the [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cipher suite.
+The default is [`AccessoryTransport.bluetooth`](../accessorytransport/bluetooth.md). To support the [`AccessoryTransport.internet`](../accessorytransport/internet.md) or [`AccessoryTransport.localNetwork`](../accessorytransport/localnetwork.md) transport types, use the [`SecurityMessage.CipherSuite.xWing`](./ciphersuite-swift.enum/xwing.md) cipher suite.
 
 > **Note**: Specify all transports your accessory supports when initiating key exchange. The system automatically selects the best available transport for each message.
 

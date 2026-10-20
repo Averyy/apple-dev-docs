@@ -1,7 +1,8 @@
 # textureSemantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The intended use of the object’s texture property.
 
@@ -11,7 +12,7 @@ The intended use of the object’s texture property.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ static let textureSemantic: TextureResource.Semantic
 
 ## See Also
 
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/anisotropyangle-swift.struct/texture.md)
+### Accessing anisotropy angle values
+- [var texture: PhysicallyBasedMaterial.Texture?](./texture.md)
   The anisotropy angle values specified using a UV-mapped image.
-- [var scale: Float](physicallybasedmaterial/anisotropyangle-swift.struct/scale.md)
+- [var scale: Float](./scale.md)
   The anistropy angle specified as a single value.
 
 

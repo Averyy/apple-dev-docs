@@ -1,7 +1,8 @@
 # normalizedPosition
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that determines the current cell’s relative position on the screen.
 
@@ -12,6 +13,10 @@ The value that determines the current cell’s relative position on the screen.
 
 ```swift
 var normalizedPosition: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat normalizedPosition;
 ```
 
 #### Discussion

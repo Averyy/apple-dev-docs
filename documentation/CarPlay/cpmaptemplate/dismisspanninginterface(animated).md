@@ -1,7 +1,8 @@
 # dismissPanningInterface(animated:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the panning interface.
 
@@ -16,19 +17,24 @@ Dismisses the panning interface.
 func dismissPanningInterface(animated: Bool)
 ```
 
+```objc
+- (void) dismissPanningInterfaceAnimated:(BOOL) animated;
+```
+
 #### Discussion
 
 When dismissing the panning interface, the system shows the previously hidden map buttons.
 
 ## Parameters
 
-- `animated`: A Boolean value that determines whether to animate the dismissal of the panning interface. Set to [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal.
+- `animated`: A Boolean value that determines whether to animate the dismissal of the panning interface. Set to [`true`](../../Swift/true.md) to animate the dismissal.
 
 ## See Also
 
-- [func showPanningInterface(animated: Bool)](cpmaptemplate/showpanninginterface(animated:).md)
+### Panning the Map
+- [func showPanningInterface(animated: Bool)](./showpanninginterface%28animated%29.md)
   Shows the panning interface on the map.
-- [var isPanningInterfaceVisible: Bool](cpmaptemplate/ispanninginterfacevisible.md)
+- [var isPanningInterfaceVisible: Bool](./ispanninginterfacevisible.md)
   A Boolean value that indicates whether the map template is displaying the panning interface.
 
 

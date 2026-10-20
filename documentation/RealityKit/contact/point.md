@@ -1,7 +1,8 @@
 # point
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Point of contact in scene coordinate space.
 

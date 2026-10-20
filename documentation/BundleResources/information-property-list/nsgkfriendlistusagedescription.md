@@ -1,7 +1,8 @@
 # NSGKFriendListUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app needs access to their Game Center friends list.
 
@@ -9,9 +10,10 @@ A message that tells people why the app needs access to their Game Center friend
 - iOS 14.5+
 - iPadOS 14.5+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSGKFriendListUsageDescription`
+- **Type**: string
 
 
 ---

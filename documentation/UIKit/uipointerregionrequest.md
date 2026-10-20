@@ -1,7 +1,8 @@
 # UIPointerRegionRequest
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object to describe the pointer’s location in the interaction’s view.
 
@@ -18,6 +19,10 @@ An object to describe the pointer’s location in the interaction’s view.
 class UIPointerRegionRequest
 ```
 
+```objc
+@interface UIPointerRegionRequest : NSObject
+```
+
 #### Overview
 
 The `UIPointerRegionRequest` is given to the `UIPointerInteractionDelegate` to allow for changes to the pointer interaction.
@@ -25,27 +30,28 @@ The `UIPointerRegionRequest` is given to the `UIPointerInteractionDelegate` to a
 ## Topics
 
 ### Inspecting the region request
-- [var location: CGPoint](uipointerregionrequest/location.md)
+- [var location: CGPoint](./uipointerregionrequest/location.md)
   The location of the pointer in the interaction’s view’s coordinate space.
-- [var modifiers: UIKeyModifierFlags](uipointerregionrequest/modifiers.md)
+- [var modifiers: UIKeyModifierFlags](./uipointerregionrequest/modifiers.md)
   Key modifier flags representing keyboard keys pressed by the user at the time of this request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPointerRegion](uipointerregion.md)
+### Pointer region
+- [class UIPointerRegion](./uipointerregion.md)
   A rectangular region that interacts with pointer movements.
 
 

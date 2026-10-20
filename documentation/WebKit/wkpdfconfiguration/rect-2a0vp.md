@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of your web view to capture, specified as a rectangle in the view’s coordinate system.
 
@@ -10,7 +11,7 @@ The portion of your web view to capture, specified as a rectangle in the view’
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ The portion of your web view to capture, specified as a rectangle in the view’
 
 #### Discussion
 
-The default value of this property is [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](wkwebview.md) object.
+The default value of this property is [`CGRectNull`](../../CoreGraphics/cgrectnull.md), which captures everything in the view’s bounds rectangle. If you specify a custom rectangle, it must lie within the bounds rectangle of the [`WKWebView`](../wkwebview.md) object.
 
 
 ---

@@ -1,16 +1,17 @@
 # MIDINetworkConnectionPolicy.noOne
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 case noOne
 ```
 
+```c
+MIDINetworkConnectionPolicy_NoOne
+```
+
 ## See Also
 
-- [MIDINetworkConnectionPolicy.hostsInContactList](midinetworkconnectionpolicy/hostsincontactlist.md)
-- [MIDINetworkConnectionPolicy.anyone](midinetworkconnectionpolicy/anyone.md)
+### Connection Policies
+- [MIDINetworkConnectionPolicy.hostsInContactList](./hostsincontactlist.md)
+- [MIDINetworkConnectionPolicy.anyone](./anyone.md)
 
 
 ---

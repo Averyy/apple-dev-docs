@@ -1,7 +1,8 @@
 # zoneID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dictionary that identifies a record zone to monitor in the database.
 
@@ -10,13 +11,13 @@ Dictionary that identifies a record zone to monitor in the database.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ZoneID zoneID;
 ```
 
 #### Discussion
 
-See [`CloudKit JS Data Types`](cloudkit-js-data-types.md).
+See [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # textSelectionDataSource
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data source that provides text layout information to the selection manager.
 
@@ -14,15 +15,20 @@ The data source that provides text layout information to the selection manager.
 weak var textSelectionDataSource: (any NSTextSelectionDataSource)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextSelectionDataSource> textSelectionDataSource;
+```
+
 #### Discussion
 
 The data source is typically an `NSTextLayoutManager` or similar text layout object.
 
 ## See Also
 
-- [var textSelectionMode: NSTextSelectionManager.Mode](nstextselectionmanager/textselectionmode.md)
+### Configuring text selection
+- [var textSelectionMode: NSTextSelectionManager.Mode](./textselectionmode.md)
   The interaction mode for text selection.
-- [NSTextSelectionManager.Mode](nstextselectionmanager/mode.md)
+- [NSTextSelectionManager.Mode](./mode.md)
   Values for text selection interaction modes.
 
 

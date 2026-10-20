@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.binaryArithmetic(a:b:operation:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An arithmetic node with two operands of the given type, performing the specified operation
 
@@ -12,7 +13,7 @@ An arithmetic node with two operands of the given type, performing the specified
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

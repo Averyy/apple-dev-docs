@@ -1,7 +1,8 @@
 # onStorefrontChange(shouldContinuePurchase:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates whether a transaction needs to continue if the App Store storefront changes on the device during the transaction.
 
@@ -23,7 +24,7 @@ static func onStorefrontChange(shouldContinuePurchase: @escaping @Sendable (Stor
 
 #### Return Value
 
-[`Product.PurchaseOption`](product/purchaseoption.md)
+[`Product.PurchaseOption`](../purchaseoption.md)
 
 #### Discussion
 
@@ -31,7 +32,7 @@ The default value is `true` if this option isn’t added to the purchase.
 
 ## Parameters
 
-- `shouldContinuePurchase`: A closure that returns a Boolean value to indicate whether the purchase needs to continue when the App Store storefront changes to the [`storefront`](transaction/storefront.md) value during a transaction.
+- `shouldContinuePurchase`: A closure that returns a Boolean value to indicate whether the purchase needs to continue when the App Store storefront changes to the [`storefront`](../../transaction/storefront.md) value during a transaction.
 
 
 ---

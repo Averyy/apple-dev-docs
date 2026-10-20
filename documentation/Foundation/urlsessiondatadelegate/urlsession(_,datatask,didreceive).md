@@ -1,7 +1,8 @@
 # urlSession(_:dataTask:didReceive:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the data task has received some of the expected data.
 
@@ -20,13 +21,17 @@ Tells the delegate that the data task has received some of the expected data.
 optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session dataTask:(NSURLSessionDataTask *) dataTask didReceiveData:(NSData *) data;
+```
+
 ## Mentions
 
-- [Fetching website data into memory](fetching-website-data-into-memory.md)
+- [Fetching website data into memory](../fetching-website-data-into-memory.md)
 
 #### Discussion
 
-Because the data object parameter is often pieced together from a number of different data objects, whenever possible, use the [`enumerateBytes(_:)`](nsdata/enumeratebytes(_:).md) method to iterate through the data rather than using the [`bytes`](nsdata/bytes.md) method (which flattens the data object into a single memory block).
+Because the data object parameter is often pieced together from a number of different data objects, whenever possible, use the [`enumerateBytes(_:)`](../nsdata/enumeratebytes%28_%29.md) method to iterate through the data rather than using the [`bytes`](../nsdata/bytes.md) method (which flattens the data object into a single memory block).
 
 This delegate method may be called more than once, and each call provides only data received since the previous call. The app is responsible for accumulating this data if needed.
 

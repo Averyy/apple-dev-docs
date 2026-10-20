@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of revisions the request supports.
 
@@ -21,9 +22,10 @@ static let supportedRevisions: [DetectHumanBodyPose3DRequest.Revision]
 
 ## See Also
 
-- [let revision: DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectHumanBodyPose3DRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [DetectHumanBodyPose3DRequest.Revision](detecthumanbodypose3drequest/revision-swift.enum.md)
+- [DetectHumanBodyPose3DRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

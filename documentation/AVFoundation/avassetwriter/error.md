@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error object that describes an asset-writing failure.
 
@@ -19,11 +20,16 @@ An error object that describes an asset-writing failure.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 ## See Also
 
-- [var status: AVAssetWriter.Status](avassetwriter/status-swift.property.md)
+### Inspecting writing status
+- [var status: AVAssetWriter.Status](./status-swift.property.md)
   The status of writing samples to the output file.
-- [AVAssetWriter.Status](avassetwriter/status-swift.enum.md)
+- [AVAssetWriter.Status](./status-swift.enum.md)
   Values that indicate the state of an asset writer.
 
 

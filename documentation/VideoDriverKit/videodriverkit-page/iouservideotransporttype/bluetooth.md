@@ -1,7 +1,8 @@
 # Bluetooth
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The transport type identifier for video devices connected via Bluetooth Low Energy.
 
@@ -10,29 +11,30 @@ The transport type identifier for video devices connected via Bluetooth Low Ener
 
 ## Declaration
 
-```swift
+```c
 Bluetooth
 ```
 
 ## See Also
 
-- [PCI](videodriverkit/iouservideotransporttype/pci.md)
+### Protocol-based transport types
+- [PCI](./pci.md)
   The transport type identifier for video devices connected via the PCI bus.
-- [USB](videodriverkit/iouservideotransporttype/usb.md)
+- [USB](./usb.md)
   The transport type identifier for video devices connected via USB.
-- [FireWire](videodriverkit/iouservideotransporttype/firewire.md)
+- [FireWire](./firewire.md)
   The transport type identifier for video devices connected via FireWire.
-- [BluetoothLE](videodriverkit/iouservideotransporttype/bluetoothle.md)
+- [BluetoothLE](./bluetoothle.md)
   The transport type identifier for video devices connected via Bluetooth.
-- [HDMI](videodriverkit/iouservideotransporttype/hdmi.md)
+- [HDMI](./hdmi.md)
   The transport type identifier for video devices connected via HDMI.
-- [DisplayPort](videodriverkit/iouservideotransporttype/displayport.md)
+- [DisplayPort](./displayport.md)
   The transport type identifier for video devices connected via DisplayPort.
-- [AirPlay](videodriverkit/iouservideotransporttype/airplay.md)
+- [AirPlay](./airplay.md)
   The transport type identifier for video devices connected via AirPlay.
-- [AVB](videodriverkit/iouservideotransporttype/avb.md)
+- [AVB](./avb.md)
   The transport type identifier for video devices connected via AVB.
-- [Thunderbolt](videodriverkit/iouservideotransporttype/thunderbolt.md)
+- [Thunderbolt](./thunderbolt.md)
   The transport type identifier for video devices connected via Thunderbolt.
 
 

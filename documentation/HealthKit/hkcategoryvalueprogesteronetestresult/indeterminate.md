@@ -1,7 +1,8 @@
 # HKCategoryValueProgesteroneTestResult.indeterminate
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The test was inconclusive.
 
@@ -19,11 +20,16 @@ The test was inconclusive.
 case indeterminate
 ```
 
+```c
+HKCategoryValueProgesteroneTestResultIndeterminate
+```
+
 ## See Also
 
-- [HKCategoryValueProgesteroneTestResult.positive](hkcategoryvalueprogesteronetestresult/positive.md)
+### Test Results
+- [HKCategoryValueProgesteroneTestResult.positive](./positive.md)
   The test returned a positive result.
-- [HKCategoryValueProgesteroneTestResult.negative](hkcategoryvalueprogesteronetestresult/negative.md)
+- [HKCategoryValueProgesteroneTestResult.negative](./negative.md)
   The test returned a negative result.
 
 

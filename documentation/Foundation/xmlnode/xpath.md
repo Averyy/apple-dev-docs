@@ -1,7 +1,8 @@
 # xPath
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the XPath expression identifying the receiver’s location in the document tree.
 
@@ -15,17 +16,22 @@ Returns the XPath expression identifying the receiver’s location in the docume
 var xPath: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * XPath;
+```
+
 #### Discussion
 
-For example, this method might return a string such as “foo/bar[2]/baz”. The result of this method can be used directly in the [`nodes(forXPath:)`](xmlnode/nodes(forxpath:).md) and [`objects(forXQuery:constants:)`](xmlnode/objects(forxquery:constants:).md) methods.
+For example, this method might return a string such as “foo/bar[2]/baz”. The result of this method can be used directly in the [`nodes(forXPath:)`](./nodes%28forxpath%29.md) and [`objects(forXQuery:constants:)`](./objects%28forxquery,constants%29.md) methods.
 
 ## See Also
 
-- [func nodes(forXPath: String) throws -> [XMLNode]](xmlnode/nodes(forxpath:).md)
+### Executing Queries
+- [func nodes(forXPath: String) throws -> [XMLNode]](./nodes%28forxpath%29.md)
   Returns the nodes resulting from executing an XPath query upon the receiver.
-- [func objects(forXQuery: String) throws -> [Any]](xmlnode/objects(forxquery:).md)
+- [func objects(forXQuery: String) throws -> [Any]](./objects%28forxquery%29.md)
   Returns the objects resulting from executing an XQuery query upon the receiver.
-- [func objects(forXQuery: String, constants: [String : Any]?) throws -> [Any]](xmlnode/objects(forxquery:constants:).md)
+- [func objects(forXQuery: String, constants: [String : Any]?) throws -> [Any]](./objects%28forxquery,constants%29.md)
   Returns the objects resulting from executing an XQuery query upon the receiver.
 
 

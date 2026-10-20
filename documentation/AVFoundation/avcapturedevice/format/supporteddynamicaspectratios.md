@@ -1,7 +1,8 @@
 # supportedDynamicAspectRatios
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the supported aspect ratios for the device format.
 
@@ -16,13 +17,18 @@ Indicates the supported aspect ratios for the device format.
 var supportedDynamicAspectRatios: [AVCaptureDevice.AspectRatio] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * supportedDynamicAspectRatios;
+```
+
 #### Discussion
 
 An array that describes the aspect ratios that are supported for this format. If this device format does not support dynamic aspect ratio, this property returns an empty array.
 
 ## See Also
 
-- [func videoFieldOfView(for: AVCaptureDevice.AspectRatio, geometricDistortionCorrected: Bool) -> Float](avcapturedevice/format/videofieldofview(for:geometricdistortioncorrected:).md)
+### Determining dynamic aspect ratio support
+- [func videoFieldOfView(for: AVCaptureDevice.AspectRatio, geometricDistortionCorrected: Bool) -> Float](./videofieldofview%28for,geometricdistortioncorrected%29.md)
   Indicates the horizontal field of view for an aspect ratio, either uncorrected or corrected for geometric distortion.
 
 

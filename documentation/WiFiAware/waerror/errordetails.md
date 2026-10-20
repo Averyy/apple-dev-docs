@@ -1,7 +1,8 @@
 # WAError.ErrorDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the error.
 
@@ -19,14 +20,15 @@ struct ErrorDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case error(WAError.ErrorDetails)](waerror/error(_:).md)
+### Checking for general errors
+- [case error(WAError.ErrorDetails)](./error%28_%29.md)
   A general error.
 
 

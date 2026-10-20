@@ -1,7 +1,8 @@
 # setViewController(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the provided view controller in the specified column of the split view interface.
 
@@ -18,36 +19,41 @@ Presents the provided view controller in the specified column of the split view 
 func setViewController(_ vc: UIViewController?, for column: UISplitViewController.Column)
 ```
 
+```objc
+- (void) setViewController:(UIViewController *) vc forColumn:(UISplitViewControllerColumn) column;
+```
+
 #### Discussion
 
-This method doesn’t apply to classic split view controllers with a [`style`](uisplitviewcontroller/style-swift.property.md) of [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](uisplitviewcontroller/viewcontrollers.md) property to assign the primary and secondary view controllers that you want to display initially. After the split view controller is onscreen, set the child view controllers using the [`show(_:sender:)`](uisplitviewcontroller/show(_:sender:).md) and [`showDetailViewController(_:sender:)`](uisplitviewcontroller/showdetailviewcontroller(_:sender:).md) methods.
+This method doesn’t apply to classic split view controllers with a [`style`](./style-swift.property.md) of [`UISplitViewController.Style.unspecified`](./style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](./viewcontrollers.md) property to assign the primary and secondary view controllers that you want to display initially. After the split view controller is onscreen, set the child view controllers using the [`show(_:sender:)`](./show%28_,sender%29.md) and [`showDetailViewController(_:sender:)`](./showdetailviewcontroller%28_,sender%29.md) methods.
 
 For a column-style split view controller, you use this method to assign child view controllers to a specific column of the split view interface. In general, unless your view controller is a navigation controller, the split view creates its own navigation controller to wrap the view controller you assign to the primary, supplementary, and secondary columns. There are some exceptions to this behavior:
 
-- For the primary column, if you assign a [`UIViewController`](uiviewcontroller.md) (or custom subclass) whose first child view controller is a [`UINavigationController`](uinavigationcontroller.md), the split view controller uses that navigation controller as the primary view controller for collapsing the interface and for placing the button to change the display mode.
-- For the secondary column, if you assign a [`UIViewController`](uiviewcontroller.md) (or custom subclass) whose first child view controller is a [`UINavigationController`](uinavigationcontroller.md), the split view controller uses that navigation controller as the secondary view controller for placing the button to change the display mode.
+- For the primary column, if you assign a [`UIViewController`](../uiviewcontroller.md) (or custom subclass) whose first child view controller is a [`UINavigationController`](../uinavigationcontroller.md), the split view controller uses that navigation controller as the primary view controller for collapsing the interface and for placing the button to change the display mode.
+- For the secondary column, if you assign a [`UIViewController`](../uiviewcontroller.md) (or custom subclass) whose first child view controller is a [`UINavigationController`](../uinavigationcontroller.md), the split view controller uses that navigation controller as the secondary view controller for placing the button to change the display mode.
 
 | Column | Assigned As-Is |
 | --- | --- |
-| Primary | [`UINavigationController`](uinavigationcontroller.md) ![None](/images/com.apple.uikit/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
-| Supplementary | [`UINavigationController`](uinavigationcontroller.md) |
-| Secondary | [`UITabBarController`](uitabbarcontroller.md) with [`UINavigationController`](uinavigationcontroller.md)s in its tabs ![None](/images/com.apple.uikit/spacer.png) [`UINavigationController`](uinavigationcontroller.md) ![None](/images/com.apple.uikit/spacer.png) [`UIViewController`](uiviewcontroller.md) with [`UINavigationController`](uinavigationcontroller.md) as its first child |
-| Compact | Any [`UIViewController`](uiviewcontroller.md) |
+| Primary | [`UINavigationController`](../uinavigationcontroller.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UIViewController`](../uiviewcontroller.md) with [`UINavigationController`](../uinavigationcontroller.md) as its first child |
+| Supplementary | [`UINavigationController`](../uinavigationcontroller.md) |
+| Secondary | [`UITabBarController`](../uitabbarcontroller.md) with [`UINavigationController`](../uinavigationcontroller.md)s in its tabs ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UINavigationController`](../uinavigationcontroller.md) ![](https://developer.apple.com/tutorials/images/com.apple.uikit/spacer.png) [`UIViewController`](../uiviewcontroller.md) with [`UINavigationController`](../uinavigationcontroller.md) as its first child |
+| Compact | Any [`UIViewController`](../uiviewcontroller.md) |
 
-You can’t assign a [`UITabBarController`](uitabbarcontroller.md) to the primary or supplementary columns.
+You can’t assign a [`UITabBarController`](../uitabbarcontroller.md) to the primary or supplementary columns.
 
 ## Parameters
 
 - `vc`: The child view controller to associate with the provided column of the split view interface.
-- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](uisplitviewcontroller/column.md) for values.
+- `column`: The corresponding column of the split view interface. See [`UISplitViewController.Column`](./column.md) for values.
 
 ## See Also
 
-- [UISplitViewController.Column](uisplitviewcontroller/column.md)
+### Managing the child view controllers
+- [UISplitViewController.Column](./column.md)
   Constants that describe the columns within the split view interface.
-- [func viewController(for: UISplitViewController.Column) -> UIViewController?](uisplitviewcontroller/viewcontroller(for:).md)
+- [func viewController(for: UISplitViewController.Column) -> UIViewController?](./viewcontroller%28for%29.md)
   Returns the view controller associated with the specified column of the split view interface.
-- [var viewControllers: [UIViewController]](uisplitviewcontroller/viewcontrollers.md)
+- [var viewControllers: [UIViewController]](./viewcontrollers.md)
   The array of view controllers the split view controller manages.
 
 

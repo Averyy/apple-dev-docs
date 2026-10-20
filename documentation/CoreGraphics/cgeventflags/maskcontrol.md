@@ -1,13 +1,14 @@
 # maskControl
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the Control key is down for a keyboard, mouse, or flag-changed event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,23 +16,28 @@ Indicates that the Control key is down for a keyboard, mouse, or flag-changed ev
 static var maskControl: CGEventFlags { get }
 ```
 
+```c
+kCGEventFlagMaskControl
+```
+
 ## See Also
 
-- [static var maskAlphaShift: CGEventFlags](cgeventflags/maskalphashift.md)
+### Constants
+- [static var maskAlphaShift: CGEventFlags](./maskalphashift.md)
   Indicates that the Caps Lock key is down for a keyboard, mouse, or flag-changed event.
-- [static var maskShift: CGEventFlags](cgeventflags/maskshift.md)
+- [static var maskShift: CGEventFlags](./maskshift.md)
   Indicates that the Shift key is down for a keyboard, mouse, or flag-changed event.
-- [static var maskAlternate: CGEventFlags](cgeventflags/maskalternate.md)
+- [static var maskAlternate: CGEventFlags](./maskalternate.md)
   Indicates that the Alt or Option key is down for a keyboard, mouse, or flag-changed event.
-- [static var maskCommand: CGEventFlags](cgeventflags/maskcommand.md)
+- [static var maskCommand: CGEventFlags](./maskcommand.md)
   Indicates that the Command key is down for a keyboard, mouse, or flag-changed event.
-- [static var maskHelp: CGEventFlags](cgeventflags/maskhelp.md)
+- [static var maskHelp: CGEventFlags](./maskhelp.md)
   Indicates that the Help modifier key is down for a keyboard, mouse, or flag-changed event. This key is not present on most keyboards, and is different than the Help key found in the same row as Home and Page Up.
-- [static var maskSecondaryFn: CGEventFlags](cgeventflags/masksecondaryfn.md)
+- [static var maskSecondaryFn: CGEventFlags](./masksecondaryfn.md)
   Indicates that the Fn (Function) key is down for a keyboard, mouse, or flag-changed event. This key is found primarily on laptop keyboards.
-- [static var maskNumericPad: CGEventFlags](cgeventflags/masknumericpad.md)
+- [static var maskNumericPad: CGEventFlags](./masknumericpad.md)
   Identifies key events from the numeric keypad area on extended keyboards.
-- [static var maskNonCoalesced: CGEventFlags](cgeventflags/masknoncoalesced.md)
+- [static var maskNonCoalesced: CGEventFlags](./masknoncoalesced.md)
   Indicates that mouse and pen movement events are not being coalesced.
 
 

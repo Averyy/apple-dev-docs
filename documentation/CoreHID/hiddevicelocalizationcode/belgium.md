@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.belgium
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Belgian in the HID specification.
 

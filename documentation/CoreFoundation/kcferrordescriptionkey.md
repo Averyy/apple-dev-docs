@@ -1,7 +1,8 @@
 # kCFErrorDescriptionKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key to identify the description in the `userInfo` dictionary.
 
@@ -20,23 +21,28 @@ Key to identify the description in the `userInfo` dictionary.
 let kCFErrorDescriptionKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFErrorDescriptionKey;
+```
+
 #### Discussion
 
 When you create a CFError object, you can provide a value for this key if you do not have localizable error strings. The description should be a complete sentence if possible, and should not contain the domain name or error code.
 
 ## See Also
 
-- [let kCFErrorLocalizedDescriptionKey: CFString!](kcferrorlocalizeddescriptionkey.md)
+### Constants
+- [let kCFErrorLocalizedDescriptionKey: CFString!](./kcferrorlocalizeddescriptionkey.md)
   Key to identify the user-presentable description in the `userInfo` dictionary.
-- [let kCFErrorLocalizedFailureReasonKey: CFString!](kcferrorlocalizedfailurereasonkey.md)
+- [let kCFErrorLocalizedFailureReasonKey: CFString!](./kcferrorlocalizedfailurereasonkey.md)
   Key to identify the user-presentable failure reason in the `userInfo` dictionary.
-- [let kCFErrorLocalizedRecoverySuggestionKey: CFString!](kcferrorlocalizedrecoverysuggestionkey.md)
+- [let kCFErrorLocalizedRecoverySuggestionKey: CFString!](./kcferrorlocalizedrecoverysuggestionkey.md)
   Key to identify the user-presentable recovery suggestion in the `userInfo` dictionary.
-- [let kCFErrorUnderlyingErrorKey: CFString!](kcferrorunderlyingerrorkey.md)
+- [let kCFErrorUnderlyingErrorKey: CFString!](./kcferrorunderlyingerrorkey.md)
   Key to identify the underlying error in the `userInfo` dictionary.
-- [let kCFErrorURLKey: CFString!](kcferrorurlkey.md)
+- [let kCFErrorURLKey: CFString!](./kcferrorurlkey.md)
   Key to identify associated URL in the `userInfo` dictionary.
-- [let kCFErrorFilePathKey: CFString!](kcferrorfilepathkey.md)
+- [let kCFErrorFilePathKey: CFString!](./kcferrorfilepathkey.md)
   Key to identify associated file path in the `userInfo` dictionary.
 
 

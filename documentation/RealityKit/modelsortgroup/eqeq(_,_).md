@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean that indicates whether the model sort groups are equal.
 

@@ -1,7 +1,8 @@
 # LACredentialType.applicationPassword
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that a password is provided by the application.
 
@@ -19,13 +20,18 @@ Specifies that a password is provided by the application.
 case applicationPassword
 ```
 
+```c
+LACredentialTypeApplicationPassword
+```
+
 #### Discussion
 
 If not set, the user is prompted for their password when needed. When entered using the provided authentication dialog, the entered text is stored as UTF-8 encoded data.
 
 ## See Also
 
-- [LACredentialType.smartCardPIN](lacredentialtype/smartcardpin.md)
+### Cases
+- [LACredentialType.smartCardPIN](./smartcardpin.md)
 
 
 ---

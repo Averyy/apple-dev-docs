@@ -1,7 +1,8 @@
 # FMFontCallbackFilterProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias FMFontCallbackFilterProcPtr = (FMFont, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef OSStatus (*FMFontCallbackFilterProcPtr)(FMFont iFont, void *iRefCon);
 ```
 
 

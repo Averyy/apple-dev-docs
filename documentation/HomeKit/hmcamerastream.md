@@ -1,7 +1,8 @@
 # HMCameraStream
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a camera’s audiovisual stream.
 
@@ -19,44 +20,49 @@ An object that represents a camera’s audiovisual stream.
 class HMCameraStream
 ```
 
+```objc
+@interface HMCameraStream : HMCameraSource
+```
+
 ## Topics
 
 ### Configuring the audio stream
-- [var audioStreamSetting: HMCameraAudioStreamSetting](hmcamerastream/audiostreamsetting.md)
+- [var audioStreamSetting: HMCameraAudioStreamSetting](./hmcamerastream/audiostreamsetting.md)
   The stream’s current audio setting.
-- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](hmcamerastream/updateaudiostreamsetting(_:completionhandler:).md)
+- [func updateAudioStreamSetting(HMCameraAudioStreamSetting, completionHandler: ((any Error)?) -> Void)](./hmcamerastream/updateaudiostreamsetting%28_,completionhandler%29.md)
   Updates an audio stream’s settings.
-- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](hmcamerastream/setaudiostreamsetting(_:).md)
-- [enum HMCameraAudioStreamSetting](hmcameraaudiostreamsetting.md)
+- [func setAudioStreamSetting(HMCameraAudioStreamSetting)](./hmcamerastream/setaudiostreamsetting%28_%29.md)
+- [enum HMCameraAudioStreamSetting](./hmcameraaudiostreamsetting.md)
   The options associated with a camera’s audio stream.
 ### Initializers
-- [init()](hmcamerastream/init.md)
+- [init()](./hmcamerastream/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraSource](hmcamerasource.md)
+- [HMCameraSource](./hmcamerasource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func startStream()](hmcamerastreamcontrol/startstream.md)
+### Controlling the stream
+- [func startStream()](./hmcamerastreamcontrol/startstream%28%29.md)
   Starts the camera stream.
-- [func stopStream()](hmcamerastreamcontrol/stopstream.md)
+- [func stopStream()](./hmcamerastreamcontrol/stopstream%28%29.md)
   Stops the camera stream.
-- [var cameraStream: HMCameraStream?](hmcamerastreamcontrol/camerastream.md)
+- [var cameraStream: HMCameraStream?](./hmcamerastreamcontrol/camerastream.md)
   The current camera stream.
-- [var streamState: HMCameraStreamState](hmcamerastreamcontrol/streamstate.md)
+- [var streamState: HMCameraStreamState](./hmcamerastreamcontrol/streamstate.md)
   The current state of the camera stream.
-- [enum HMCameraStreamState](hmcamerastreamstate.md)
+- [enum HMCameraStreamState](./hmcamerastreamstate.md)
   The states associated with a camera stream.
 
 

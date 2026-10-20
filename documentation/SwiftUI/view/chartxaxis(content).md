@@ -1,7 +1,8 @@
 # chartXAxis(content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the x-axis for charts in the view.
 
@@ -84,7 +85,7 @@ Chart(BatteryData.data, id: \.date) {
 
 The above example above customizes the x-axis using two `AxisMarks` declarations. The first creates a grid line for every hour in the day. The second adds a tick and label for every six hours in the day, with a second line showing the date for the very beginning of the axis.
 
-> **Note**: To add an axis label, use one of the label modifiers, like [`chartXAxisLabel(position:alignment:spacing:content:)`](view/chartxaxislabel(position:alignment:spacing:content:).md).
+> **Note**: To add an axis label, use one of the label modifiers, like [`chartXAxisLabel(position:alignment:spacing:content:)`](./chartxaxislabel%28position,alignment,spacing,content%29.md).
 
 ## Parameters
 
@@ -92,19 +93,20 @@ The above example above customizes the x-axis using two `AxisMarks` declarations
 
 ## See Also
 
-- [func chartXAxis(Visibility) -> some View](view/chartxaxis(_:).md)
+### Axes
+- [func chartXAxis(Visibility) -> some View](./chartxaxis%28_%29.md)
   Sets the visibility of the x axis.
-- [func chartXAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartxaxisstyle(content:).md)
+- [func chartXAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](./chartxaxisstyle%28content%29.md)
   Configures the x axis content of charts.
-- [func chartYAxis(Visibility) -> some View](view/chartyaxis(_:).md)
+- [func chartYAxis(Visibility) -> some View](./chartyaxis%28_%29.md)
   Sets the visibility of the y axis.
-- [func chartYAxis<Content>(content: () -> Content) -> some View](view/chartyaxis(content:).md)
+- [func chartYAxis<Content>(content: () -> Content) -> some View](./chartyaxis%28content%29.md)
   Configures the y-axis for charts in the view.
-- [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartyaxisstyle(content:).md)
+- [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](./chartyaxisstyle%28content%29.md)
   Configures the y axis content of charts.
-- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+- [func chartZAxis(Visibility) -> some View](./chartzaxis%28_%29.md)
   Sets the visibility of the z axis.
-- [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
+- [func chartZAxis<Content>(content: () -> Content) -> some View](./chartzaxis%28content%29.md)
   Configures the z-axis for 3D charts in the view.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Convenience to compose multiple traits into a single trait.
 

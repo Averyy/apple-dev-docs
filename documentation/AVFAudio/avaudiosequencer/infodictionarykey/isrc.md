@@ -1,7 +1,8 @@
 # ISRC
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the international standard recording code.
 
@@ -17,6 +18,10 @@ A key that represents the international standard recording code.
 
 ```swift
 static let ISRC: AVAudioSequencer.InfoDictionaryKey
+```
+
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeyISRC;
 ```
 
 

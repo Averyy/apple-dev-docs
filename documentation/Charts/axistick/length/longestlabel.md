@@ -1,7 +1,8 @@
 # longestLabel
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Describes a tick that extends to the longest label on the axis.
 

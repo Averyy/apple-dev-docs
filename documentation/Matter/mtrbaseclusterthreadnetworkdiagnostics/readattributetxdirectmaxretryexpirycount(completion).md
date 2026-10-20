@@ -1,7 +1,8 @@
 # readAttributeTxDirectMaxRetryExpiryCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxDirectMaxRetryExpiryCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxDirectMaxRetryExpiryCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxDirectMaxRetryExpiryCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

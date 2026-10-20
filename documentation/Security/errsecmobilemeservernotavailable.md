@@ -1,7 +1,8 @@
 # errSecMobileMeServerNotAvailable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The MobileMe server is not available.
 
@@ -18,6 +19,10 @@ The MobileMe server is not available.
 
 ```swift
 var errSecMobileMeServerNotAvailable: OSStatus { get }
+```
+
+```c
+errSecMobileMeServerNotAvailable
 ```
 
 

@@ -1,7 +1,8 @@
 # temporarySetpoint
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var temporarySetpoint: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * temporarySetpoint;
 ```
 
 

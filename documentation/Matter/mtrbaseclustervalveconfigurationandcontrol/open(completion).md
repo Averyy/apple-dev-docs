@@ -1,7 +1,8 @@
 # open(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func open(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func open() async throws
+```
+
+```objc
+- (void) openWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

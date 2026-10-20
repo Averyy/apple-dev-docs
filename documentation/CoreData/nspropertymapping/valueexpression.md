@@ -1,7 +1,8 @@
 # valueExpression
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value expression for the property mapping.
 
@@ -10,7 +11,7 @@ The value expression for the property mapping.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The value expression for the property mapping.
 var valueExpression: NSExpression? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSExpression * valueExpression;
+```
+
 #### Discussion
 
 The expression is used to create the value for the destination property.
 
 ## See Also
 
-- [var name: String?](nspropertymapping/name.md)
+### Managing Mapping Attributes
+- [var name: String?](./name.md)
   The name of the property in the destination entity for the property mapping.
-- [var userInfo: [AnyHashable : Any]?](nspropertymapping/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info for the property mapping.
 
 

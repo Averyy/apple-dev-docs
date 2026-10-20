@@ -1,7 +1,8 @@
 # MainActor
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A singleton actor whose executor is equivalent to the main dispatch queue.
 
@@ -24,46 +25,47 @@ final actor MainActor
 ## Topics
 
 ### Instance Properties
-- [var unownedExecutor: UnownedSerialExecutor](mainactor/unownedexecutor.md)
+- [var unownedExecutor: UnownedSerialExecutor](./mainactor/unownedexecutor.md)
   Retrieve the executor for this actor as an optimized, unowned reference.
 ### Instance Methods
-- [func enqueue(UnownedJob)](mainactor/enqueue(_:).md)
+- [func enqueue(UnownedJob)](./mainactor/enqueue%28_%29.md)
 ### Type Aliases
-- [MainActor.ActorType](mainactor/actortype.md)
+- [MainActor.ActorType](./mainactor/actortype.md)
   The type of the shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
 ### Type Properties
-- [static let shared: MainActor](mainactor/shared.md)
+- [static let shared: MainActor](./mainactor/shared.md)
   The shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
-- [static var sharedUnownedExecutor: UnownedSerialExecutor](mainactor/sharedunownedexecutor.md)
+- [static var sharedUnownedExecutor: UnownedSerialExecutor](./mainactor/sharedunownedexecutor.md)
   Shorthand for referring to the `shared.unownedExecutor` of this global actor.
 ### Type Methods
-- [static func assumeIsolated<T>(() throws -> T, file: StaticString, line: UInt) rethrows -> T](mainactor/assumeisolated(_:file:line:).md)
+- [static func assumeIsolated<T>(() throws -> T, file: StaticString, line: UInt) rethrows -> T](./mainactor/assumeisolated%28_,file,line%29.md)
   Assume that the current task is executing on the main actor’s serial executor, or stop program execution.
-- [static func run<T>(resultType: T.Type, body: () throws -> T) async rethrows -> T](mainactor/run(resulttype:body:).md)
+- [static func run<T>(resultType: T.Type, body: () throws -> T) async rethrows -> T](./mainactor/run%28resulttype,body%29.md)
   Execute the given body closure on the main actor.
 ### Default Implementations
-- [Actor Implementations](mainactor/actor-implementations.md)
-- [GlobalActor Implementations](mainactor/globalactor-implementations.md)
+- [Actor Implementations](./mainactor/actor-implementations.md)
+- [GlobalActor Implementations](./mainactor/globalactor-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Actor](actor.md)
-- [GlobalActor](globalactor.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Actor](./actor.md)
+- [GlobalActor](./globalactor.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Sendable](sendable.md)
+### Actors
+- [protocol Sendable](./sendable.md)
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
-- [protocol Actor](actor.md)
+- [protocol Actor](./actor.md)
   Common protocol to which all actors conform.
-- [protocol GlobalActor](globalactor.md)
+- [protocol GlobalActor](./globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
-- [protocol SendableMetatype](sendablemetatype.md)
+- [protocol SendableMetatype](./sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
-- [macro isolation<T>() -> T](isolation().md)
+- [macro isolation<T>() -> T](./isolation%28%29.md)
   Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 
 

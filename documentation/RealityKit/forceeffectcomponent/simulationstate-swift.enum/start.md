@@ -1,7 +1,8 @@
 # ForceEffectComponent.SimulationState.start
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The simulation will start, and its time set to zero. The simulation will restart if already started.
 

@@ -1,11 +1,12 @@
 # Sequence Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeIterator() -> NSFastEnumerationIterator](nsenumerator/makeiterator.md)
+- [func makeIterator() -> NSFastEnumerationIterator](./makeiterator%28%29.md)
   Return an *iterator* over the *enumerator*.
 
 

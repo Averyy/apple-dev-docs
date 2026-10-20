@@ -1,7 +1,8 @@
 # filter(on:_:_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a selection of rows that satisfy a predicate in the columns you select by name.
 
@@ -32,7 +33,8 @@ A data frame slice that contains the rows that satisfy the predicate.
 
 ## See Also
 
-- [func filter<T>(on: ColumnID<T>, (T?) throws -> Bool) rethrows -> DataFrame.Slice](dataframe/slice/filter(on:_:).md)
+### Creating a Slice by Filtering Rows
+- [func filter<T>(on: ColumnID<T>, (T?) throws -> Bool) rethrows -> DataFrame.Slice](./filter%28on,_%29.md)
   Returns a selection of rows that satisfy a predicate in the columns you select by column identifier.
 
 

@@ -1,12 +1,16 @@
 # Determining service entitlement on the server
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Sample Code  
+**Download**: [DeterminingServiceEntitlementOnTheServer.zip](https://docs-assets.developer.apple.com/published/8334bfef2b2e/DeterminingServiceEntitlementOnTheServer.zip)
 
 Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.
 
 #### Overview
 
-> **Note**:  This sample code project is associated with WWDC22 session [`110404: Implement proactive Apple In-App Purchase restore`](https://developer.apple.comhttps://developer.apple.com/wwdc22/110404/). It’s also associated with WWDC 2020 session [`10671: Architecting for Subscriptions`](https://developer.apple.comhttps://developer.apple.com/wwdc20/10671/).
+> **Note**:  This sample code project is associated with WWDC22 session [110404: Implement proactive Apple In-App Purchase restore](https://developer.apple.com/wwdc22/110404/).
+>
+> It’s also associated with WWDC 2020 session [10671: Architecting for Subscriptions](https://developer.apple.com/wwdc20/10671/).
 
 When your app provides a subscription service, you receive data in the form of in-app receipts and App Store server notifications that provide a subscription’s state. After reading this data, your app determines whether to allow or restrict the user’s access to service, products, offers, and messages.
 
@@ -15,7 +19,7 @@ This server-side sample code project analyzes a receipt to help the app determin
 - URL: `localhost:3000/simulate` — Use `/simulate` for testing using real or artificial receipts. This endpoint requires no special configuration.
 - URL: `localhost:3000/entitle` — Use `/entitle` with real Base64-encoded receipts. This endpoint requires additional configuration.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Follow these steps to run the sample code project:
 
@@ -27,7 +31,7 @@ Follow these steps to run the sample code project:
 6. In Terminal, enter `npm start` and press Return to start the server. The server runs in your Terminal window. To stop the server, press Control-C while in Terminal.
 7. In Terminal, choose Shell > New Windows > New Window with Profile to open a second Teminal window to use to send the requests.
 
-##### Send a Request Using Sample Receipt Data
+##### Send a request using sample receipt data
 
 The requests to the service entitlement engine take JSON data from a receipt. The data must be in the same JSON format that you receive by calling the `/verifyReceipt` endpoint when you pass it a valid receipt. The example file `flatJSONExample` in the `Source/Example` directory contains sample receipt data in the correct format for the requests.
 
@@ -41,7 +45,7 @@ If the mocked JSON receipt data is in the correct format, the response contains 
 
 If you have real receipt data, replace the `<FLAT JSON DATA>` in the command with your receipt data.
 
-##### Receive the Sample Response
+##### Receive the sample response
 
 The response contains the result of the engine’s analysis of the receipt data. Use it to determine whether a customer has the necessary entitlements to service, offers, or other messaging. The response object contains an array of subscription objects organized by product ID, each containing fields that provide insights for that subscription.
 

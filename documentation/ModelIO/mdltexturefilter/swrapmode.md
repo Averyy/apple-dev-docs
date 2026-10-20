@@ -1,7 +1,8 @@
 # sWrapMode
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate wrapping mode for texture t-coordinates.
 
@@ -19,17 +20,22 @@ The coordinate wrapping mode for texture t-coordinates.
 var sWrapMode: MDLMaterialTextureWrapMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MDLMaterialTextureWrapMode sWrapMode;
+```
+
 #### Discussion
 
-Texture coordinates canonically range from `0.0` to `1.0`; wrap mode determines the behavior for samples from outside that range. For details, see [`MDLMaterialTextureWrapMode`](mdlmaterialtexturewrapmode.md).
+Texture coordinates canonically range from `0.0` to `1.0`; wrap mode determines the behavior for samples from outside that range. For details, see [`MDLMaterialTextureWrapMode`](../mdlmaterialtexturewrapmode.md).
 
 The s-coordinate is the first (or only) value in a set of texture coordinates, used with one-, two-, and three-dimensional textures.
 
 ## See Also
 
-- [var tWrapMode: MDLMaterialTextureWrapMode](mdltexturefilter/twrapmode.md)
+### Managing Texture Coordinate Wrap Modes
+- [var tWrapMode: MDLMaterialTextureWrapMode](./twrapmode.md)
   The coordinate wrapping mode for texture t-coordinates.
-- [var rWrapMode: MDLMaterialTextureWrapMode](mdltexturefilter/rwrapmode.md)
+- [var rWrapMode: MDLMaterialTextureWrapMode](./rwrapmode.md)
   The coordinate wrapping mode for texture r-coordinates.
 
 

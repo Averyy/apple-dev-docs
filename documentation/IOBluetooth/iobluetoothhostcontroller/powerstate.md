@@ -1,17 +1,22 @@
 # powerState
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the controller power state
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var powerState: BluetoothHCIPowerState { get }
+```
+
+```objc
+@property (readonly) BluetoothHCIPowerState powerState;
 ```
 
 #### Return Value

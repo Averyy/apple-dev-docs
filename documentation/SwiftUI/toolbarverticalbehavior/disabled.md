@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The vertical bar is disabled.
 
@@ -26,7 +27,8 @@ Bar content falls back to the standard horizontal top and bottom bars, and the v
 
 ## See Also
 
-- [static let automatic: ToolbarVerticalBehavior](toolbarverticalbehavior/automatic.md)
+### Getting behavior options
+- [static let automatic: ToolbarVerticalBehavior](./automatic.md)
   The system determines whether the vertical bar is rendered.
 
 

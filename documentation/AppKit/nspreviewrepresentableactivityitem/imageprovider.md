@@ -1,7 +1,8 @@
 # imageProvider
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides a visual representation of the item.
 
@@ -14,15 +15,20 @@ An object that provides a visual representation of the item.
 optional var imageProvider: NSItemProvider? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSItemProvider * imageProvider;
+```
+
 #### Discussion
 
 Provide a full-size representation of the content you’re sharing. For example, if the shared item is a link to a webpage, provide the hero image for that webpage or a rendering of the page.
 
 ## See Also
 
-- [var title: String?](nspreviewrepresentableactivityitem/title.md)
+### Providing Metadata About the Item
+- [var title: String?](./title.md)
   A localized string that contains the name of the item.
-- [var iconProvider: NSItemProvider?](nspreviewrepresentableactivityitem/iconprovider.md)
+- [var iconProvider: NSItemProvider?](./iconprovider.md)
   An object that provides an icon that represents the item’s source.
 
 

@@ -1,6 +1,8 @@
 # Adding intelligent app features with generative models
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Sample Code  
+**Download**: [AddingIntelligentAppFeaturesWithGenerativeModels.zip](https://docs-assets.developer.apple.com/published/5414fd17db13/AddingIntelligentAppFeaturesWithGenerativeModels.zip)
 
 Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
 
@@ -23,18 +25,18 @@ The app creates an interactive experience where people can:
 - Discover points of interest using a custom tool
 - Experience real-time content generation with streaming responses
 
-> **Note**: This sample code project is associated with WWDC25 session 259: [`Code-along: Add Intelligence to your App using the Foundation Models framework`](https://developer.apple.comhttps://developer.apple.com/wwdc25/259/).
+> **Note**: This sample code project is associated with WWDC25 session 259: [Code-along: Add Intelligence to your App using the Foundation Models framework](https://developer.apple.com/wwdc25/259/).
 
-#### Configure the Sample Code Project
+#### Configure the sample code project
 
 To run this sample, you’ll need to:
 
-1. Set the developer team in Xcode for the app target so it automatically manages the provisioning profile. For more information, see [`Set the bundle ID`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution#Set-the-bundle-ID) and [`Assign the project to a team`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution#Assign-the-project-to-a-team).
+1. Set the developer team in Xcode for the app target so it automatically manages the provisioning profile. For more information, see [Set the bundle ID](../Xcode/preparing-your-app-for-distribution.md#Set-the-bundle-ID) and [Assign the project to a team](../Xcode/preparing-your-app-for-distribution.md#Assign-the-project-to-a-team).
 2. In the Developer portal, enable the WeatherKit app service for your bundle ID so the app can access location-based weather information.
 
-#### Check Model Availability
+#### Check model availability
 
-Before using the on-device model in the app, check that the model is available by creating an instance of [`SystemLanguageModel`](systemlanguagemodel.md) with the [`default`](systemlanguagemodel/default.md) property:
+Before using the on-device model in the app, check that the model is available by creating an instance of [`SystemLanguageModel`](./systemlanguagemodel.md) with the [`default`](./systemlanguagemodel/default.md) property:
 
 ```swift
 let landmark: Landmark
@@ -63,13 +65,13 @@ var body: some View {
 
 The app handles two unavailability scenarios: Apple Intelligence isn’t enabled or the model isn’t ready for usage. If Apple Intelligence is off, the app tells the person they need to turn it on and if the model isn’t ready, it tells the person the Trip Planner isn’t ready and to try the app again later.
 
-> **Note**: To use the on-device language model, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
+> **Note**: To use the on-device language model, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [Apple Intelligence](https://www.apple.com/apple-intelligence/).
 
-#### Define Structured Data for Generation
+#### Define structured data for generation
 
-The app starts by defining data structures with specific constraints to control what the model generates. The `Itinerary` type uses the [`Generable`](generable.md) macro to create structured content that includes travel plans with activities, hotels, and restaurants.
+The app starts by defining data structures with specific constraints to control what the model generates. The `Itinerary` type uses the [`Generable`](./generable.md) macro to create structured content that includes travel plans with activities, hotels, and restaurants.
 
-The `@Generable` macro automatically converts Swift types into schemas that the model uses for constrained sampling, so you can specify guides to control the values you associate with it. For example, the app uses [`Guide(description:)`](guide(description:).md) to make sure the model creates an exciting name for the trip. It also uses [`anyOf(_:)`](generationguide/anyof(_:).md) and [`count(_:)`](generationguide/count(_:).md) to choose any destination from our `ModelData` and show exactly 3 `DayPlan` objects per destination, respectively.
+The `@Generable` macro automatically converts Swift types into schemas that the model uses for constrained sampling, so you can specify guides to control the values you associate with it. For example, the app uses [`Guide(description:)`](./guide%28description%29.md) to make sure the model creates an exciting name for the trip. It also uses [`anyOf(_:)`](./generationguide/anyof%28_%29.md) and [`count(_:)`](./generationguide/count%28_%29.md) to choose any destination from our `ModelData` and show exactly 3 `DayPlan` objects per destination, respectively.
 
 ```swift
 @Generable
@@ -114,11 +116,11 @@ enum Kind {
 }
 ```
 
-The `@Generable` macro automatically creates two versions of each type: the complete structure and a [`PartiallyGenerated`](generable/partiallygenerated.md) version which is a mirror of the outer structure except every property is optional. The app uses this `PartiallyGenerated` version when streaming and displaying the itinerary generation.
+The `@Generable` macro automatically creates two versions of each type: the complete structure and a [`PartiallyGenerated`](./generable/partiallygenerated.md) version which is a mirror of the outer structure except every property is optional. The app uses this `PartiallyGenerated` version when streaming and displaying the itinerary generation.
 
-#### Configure the Model Session
+#### Configure the model session
 
-After checking that the model is available, the app configures a [`LanguageModelSession`](languagemodelsession.md) object with custom tools and detailed instructions in `ItineraryPlanner`. Given a location, the initializer creates the session with structured guidance for generating personalized trip recommendations.
+After checking that the model is available, the app configures a [`LanguageModelSession`](./languagemodelsession.md) object with custom tools and detailed instructions in `ItineraryPlanner`. Given a location, the initializer creates the session with structured guidance for generating personalized trip recommendations.
 
 ```swift
 init(landmark: Landmark) {
@@ -154,7 +156,7 @@ init(landmark: Landmark) {
 
 In a generated itinerary, the model instructions ensure that each day contains an activity, hotel, and restaurant. To get the location-specific businesses and activities, the sample uses a custom tool, called `FindPointsOfInterestTool`, with the chosen landmark. The instructions also call the landmark description property as added context when generating the activities.
 
-#### Create a Custom Tool
+#### Create a custom tool
 
 You can use custom tools to extend the functionality of a model. Tool-calling allows the model to interact with external code you create to fetch up-to-date information, ground responses in sources of truth that you provide, and perform side effects.
 
@@ -197,11 +199,11 @@ struct Arguments {
 
 When you prompt the model with a question or make a request, the model decides whether it can provide an answer or if it needs the help of a tool. The app explicitly instructs the model to always use the `findPointsOfInterestTool` in the `ItineraryPlanner` instructions. This allows the model to automatically call the tool to find relevant hotels, restaurants, and activities for the destinations.
 
-#### Stream and Display Partial Responses in Real Time
+#### Stream and display partial responses in real time
 
-The app shows real-time content generation by streaming partial responses from the model. The `ItineraryPlanner` uses [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md) to generate `Itinerary.PartiallyGenerated` objects so itinerary items are shown incrementally to the person.
+The app shows real-time content generation by streaming partial responses from the model. The `ItineraryPlanner` uses [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](./languagemodelsession/streamresponse%28generating,includeschemainprompt,options,prompt%29.md) to generate `Itinerary.PartiallyGenerated` objects so itinerary items are shown incrementally to the person.
 
-You can opt for specific [`GenerationOptions`](generationoptions.md) to adjust the way the model generates these responses. For generating the itinerary, the app opts for a [`greedy`](generationoptions/samplingmode-swift.struct/greedy.md) sampling mode so the model always results in the same output for a given input. This ensures the prompt generates consistent recommendations for an itinerary specific to the given landmark.
+You can opt for specific [`GenerationOptions`](./generationoptions.md) to adjust the way the model generates these responses. For generating the itinerary, the app opts for a [`greedy`](./generationoptions/samplingmode-swift.struct/greedy.md) sampling mode so the model always results in the same output for a given input. This ensures the prompt generates consistent recommendations for an itinerary specific to the given landmark.
 
 ```swift
 private(set) var itinerary: Itinerary.PartiallyGenerated?
@@ -240,9 +242,9 @@ ForEach(planner.pointOfInterestTool.lookupHistory) { element in
 
 The app displays messages like “Searching **hotel** in Yosemite…” and “Searching **restaurant** in Yosemite…” to let people know which point of interest category the model provided as input to the tool when actively searching for nearby points of interest. In the background, however, the tool executes and provides updates to the view. The view shows a blurred overlay while generating each day plan, then reveals the full itinerary after the search completes.
 
-#### Tag Content Dynamically
+#### Tag content dynamically
 
-The app uses content tagging on the provided landmarks to help people quickly understand the characteristics of each destination. A content tagging model produces a list of categorizing tags based on the input text you provide. When you prompt the content tagging model, it produces a tag that uses one to a few lowercase words. The `LandmarkDescriptionView` prompts the content tagging model to automatically generate relevant hashtags for landmark descriptions, like `#nature`, `#hiking`, or `#scenic`, based on each landmark’s description. For more information on initializing content tagging, see [`Categorizing and organizing data with content tags`](categorizing-and-organizing-data-with-content-tags.md).
+The app uses content tagging on the provided landmarks to help people quickly understand the characteristics of each destination. A content tagging model produces a list of categorizing tags based on the input text you provide. When you prompt the content tagging model, it produces a tag that uses one to a few lowercase words. The `LandmarkDescriptionView` prompts the content tagging model to automatically generate relevant hashtags for landmark descriptions, like `#nature`, `#hiking`, or `#scenic`, based on each landmark’s description. For more information on initializing content tagging, see [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md).
 
 ```swift
 let contentTaggingModel = SystemLanguageModel(useCase: .contentTagging)
@@ -265,9 +267,9 @@ let contentTaggingModel = SystemLanguageModel(useCase: .contentTagging)
 }
 ```
 
-#### Integrate with Other Framework Features
+#### Integrate with other framework features
 
-You can combine these generative model features with other Apple frameworks. For example, the `LocationLookup` class uses [`MapKit`](https://developer.apple.com/documentation/mapkit) to search for addresses for our points of interest, showing how to combine model-generated content with weather information and location data for complete travel planning.
+You can combine these generative model features with other Apple frameworks. For example, the `LocationLookup` class uses [MapKit](../MapKit/MapKit.md) to search for addresses for our points of interest, showing how to combine model-generated content with weather information and location data for complete travel planning.
 
 ```swift
 @Observable @MainActor
@@ -303,9 +305,10 @@ The model generates location names as text, and the `LocationLookup` class conve
 
 ## See Also
 
-- [Foundation Models updates](../updates/foundationmodels.md)
+### Essentials
+- [Foundation Models updates](../Updates/foundationmodels.md)
   Learn about important changes to Foundation Models.
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
+- [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.
 
 

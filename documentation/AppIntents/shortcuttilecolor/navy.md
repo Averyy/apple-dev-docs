@@ -1,7 +1,8 @@
 # ShortcutTileColor.navy
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A navy blue color.
 
@@ -11,7 +12,7 @@ A navy blue color.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,33 +23,34 @@ case navy
 
 ## See Also
 
-- [ShortcutTileColor.blue](shortcuttilecolor/blue.md)
+### Getting the tile colors
+- [ShortcutTileColor.blue](./blue.md)
   A blue color.
-- [ShortcutTileColor.grape](shortcuttilecolor/grape.md)
+- [ShortcutTileColor.grape](./grape.md)
   A grape color.
-- [ShortcutTileColor.grayBlue](shortcuttilecolor/grayblue.md)
+- [ShortcutTileColor.grayBlue](./grayblue.md)
   A grayish-blue color.
-- [ShortcutTileColor.grayBrown](shortcuttilecolor/graybrown.md)
+- [ShortcutTileColor.grayBrown](./graybrown.md)
   A grayish-brown color.
-- [ShortcutTileColor.grayGreen](shortcuttilecolor/graygreen.md)
+- [ShortcutTileColor.grayGreen](./graygreen.md)
   A grayish-green color.
-- [ShortcutTileColor.lightBlue](shortcuttilecolor/lightblue.md)
+- [ShortcutTileColor.lightBlue](./lightblue.md)
   A light blue color.
-- [ShortcutTileColor.lime](shortcuttilecolor/lime.md)
+- [ShortcutTileColor.lime](./lime.md)
   A lime color.
-- [ShortcutTileColor.orange](shortcuttilecolor/orange.md)
+- [ShortcutTileColor.orange](./orange.md)
   An orange color.
-- [ShortcutTileColor.pink](shortcuttilecolor/pink.md)
+- [ShortcutTileColor.pink](./pink.md)
   A pink color.
-- [ShortcutTileColor.purple](shortcuttilecolor/purple.md)
+- [ShortcutTileColor.purple](./purple.md)
   A purple color.
-- [ShortcutTileColor.red](shortcuttilecolor/red.md)
+- [ShortcutTileColor.red](./red.md)
   A red color.
-- [ShortcutTileColor.tangerine](shortcuttilecolor/tangerine.md)
+- [ShortcutTileColor.tangerine](./tangerine.md)
   A tangerine color.
-- [ShortcutTileColor.teal](shortcuttilecolor/teal.md)
+- [ShortcutTileColor.teal](./teal.md)
   A teal color.
-- [ShortcutTileColor.yellow](shortcuttilecolor/yellow.md)
+- [ShortcutTileColor.yellow](./yellow.md)
   A yellow color.
 
 

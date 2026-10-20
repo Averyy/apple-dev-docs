@@ -1,7 +1,8 @@
 # didEndTracking
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didEndTracking: NotificationCenter.BaseMessageIdentifier<NSMenu.DidEndTrackingMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMenu.DidEndTrackingMessage>`.
 
 
 ---

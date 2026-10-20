@@ -1,7 +1,8 @@
 # AssistantSchemas.BrowserEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use for web browsing functionality.
 
@@ -23,16 +24,16 @@ protocol BrowserEnum : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](assistantschemas/browserenum/clearhistorytimeframe.md)
+- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](./browserenum/clearhistorytimeframe.md)
   The time frame for clearing the browser history
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

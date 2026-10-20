@@ -1,7 +1,8 @@
 # inverse(forRelationshipKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overridden by subclasses to return the name of the inverse relationship from a relationship specified by a given key.
 
@@ -13,6 +14,10 @@ Overridden by subclasses to return the name of the inverse relationship from a r
 
 ```swift
 func inverse(forRelationshipKey relationshipKey: String) -> String?
+```
+
+```objc
+- (NSString *) inverseForRelationshipKey:(NSString *) relationshipKey;
 ```
 
 #### Return Value
@@ -29,13 +34,14 @@ For a given key that defines the name of the relationship from the receiver’s 
 
 returns the string `employees`.
 
-If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`inverse(forRelationshipKey:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/inverse(forrelationshipkey:)) instead.
+If you have an instance of the class the receiver describes, you can use the `NSObject` instance method [`inverse(forRelationshipKey:)`](../../ObjectiveC/nsobject-swift.class/inverse%28forrelationshipkey%29.md) instead.
 
 ## See Also
 
-- [var toManyRelationshipKeys: [String]](nsclassdescription/tomanyrelationshipkeys.md)
+### Relationship keys
+- [var toManyRelationshipKeys: [String]](./tomanyrelationshipkeys.md)
   Overridden by subclasses to return the keys for the to-many relationship properties of instances of the described class.
-- [var toOneRelationshipKeys: [String]](nsclassdescription/toonerelationshipkeys.md)
+- [var toOneRelationshipKeys: [String]](./toonerelationshipkeys.md)
   Overridden by subclasses to return the keys for the to-one relationship properties of instances of the described class.
 
 

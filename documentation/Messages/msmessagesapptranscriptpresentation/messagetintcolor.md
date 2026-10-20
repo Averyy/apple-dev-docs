@@ -2,6 +2,7 @@
 
 **Framework**: Messages  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 var messageTintColor: UIColor? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIColor * messageTintColor;
 ```
 
 #### Discussion

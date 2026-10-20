@@ -1,7 +1,8 @@
 # WeatherCondition.tropicalStorm
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tropical storm.
 
@@ -22,7 +23,8 @@ case tropicalStorm
 
 ## See Also
 
-- [WeatherCondition.hurricane](weathercondition/hurricane.md)
+### Getting tropical hazard properties
+- [WeatherCondition.hurricane](./hurricane.md)
   Hurricane.
 
 

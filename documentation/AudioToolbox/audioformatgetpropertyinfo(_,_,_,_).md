@@ -1,7 +1,8 @@
 # AudioFormatGetPropertyInfo(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets information about an audio format property.
 
@@ -19,6 +20,10 @@ Gets information about an audio format property.
 func AudioFormatGetPropertyInfo(_ inPropertyID: AudioFormatPropertyID, _ inSpecifierSize: UInt32, _ inSpecifier: UnsafeRawPointer?, _ outPropertyDataSize: UnsafeMutablePointer<UInt32>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFormatGetPropertyInfo(AudioFormatPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *outPropertyDataSize);
+```
+
 #### Return Value
 
 A result code. Returns `noErr` if successful.
@@ -32,7 +37,8 @@ A result code. Returns `noErr` if successful.
 
 ## See Also
 
-- [func AudioFormatGetProperty(AudioFormatPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?) -> OSStatus](audioformatgetproperty(_:_:_:_:_:).md)
+### Audio Format Services Functions
+- [func AudioFormatGetProperty(AudioFormatPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?) -> OSStatus](./audioformatgetproperty%28_,_,_,_,_%29.md)
   Gets the value of an audio format property.
 
 

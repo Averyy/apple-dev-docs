@@ -1,14 +1,15 @@
 # printDCLProgram
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static void printDCLProgram(const DCLCommand *dcl, UInt32 count, void (*printFN)(const char *format), unsigned int lineDelayMS);
 ```
 

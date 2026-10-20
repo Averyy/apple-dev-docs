@@ -1,7 +1,8 @@
 # secondsFromGMT(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The current difference in seconds between the time zone and Greenwich Mean Time.
 
@@ -26,11 +27,12 @@ func secondsFromGMT(for date: Date = Date()) -> Int
 
 ## See Also
 
-- [var identifier: String](timezone/identifier.md)
+### Getting Time Zone Information
+- [var identifier: String](./identifier.md)
   The geopolitical region identifier that identifies the time zone.
-- [func abbreviation(for: Date) -> String?](timezone/abbreviation(for:).md)
+- [func abbreviation(for: Date) -> String?](./abbreviation%28for%29.md)
   Returns the abbreviation for the time zone at a given date.
-- [static var timeZoneDataVersion: String](timezone/timezonedataversion.md)
+- [static var timeZoneDataVersion: String](./timezonedataversion.md)
   Returns the time zone data version.
 
 

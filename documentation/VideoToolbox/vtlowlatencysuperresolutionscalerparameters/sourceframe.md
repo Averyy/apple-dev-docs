@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current source frame, which must be non `nil`.
 
@@ -17,6 +18,10 @@ Current source frame, which must be non `nil`.
 
 ```swift
 var sourceFrame: VTFrameProcessorFrame { get }
+```
+
+```objc
+@property (nonatomic, readonly) VTFrameProcessorFrame * sourceFrame;
 ```
 
 

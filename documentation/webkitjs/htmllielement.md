@@ -1,7 +1,8 @@
 # HTMLLIElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLLIElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [type](htmllielement/1633973-type.md)
-- [value](htmllielement/1633336-value.md)
+- [type](./htmllielement/api-1633973-type.md)
+- [value](./htmllielement/api-1633336-value.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

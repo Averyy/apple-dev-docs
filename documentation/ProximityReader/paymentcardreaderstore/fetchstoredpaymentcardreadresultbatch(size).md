@@ -1,7 +1,8 @@
 # fetchStoredPaymentCardReadResultBatch(size:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a batch of reads the framework previously stored, in chronological order, of the size you request.
 
@@ -18,13 +19,13 @@ func fetchStoredPaymentCardReadResultBatch(size: Int = 0) async throws -> StoreA
 
 #### Return Value
 
-[`StoreAndForwardBatch`](storeandforwardbatch.md) when successful.
+[`StoreAndForwardBatch`](../storeandforwardbatch.md) when successful.
 
 #### Discussion
 
 There is only one active batch per application at a given time and to fetch a new batch the caller needs to reset or resolve the current batch.
 
-> **Note**: This method throws a [`PaymentCardReaderStore.StoreError`](paymentcardreaderstore/storeerror.md) if the size is smaller than `0` or greater than the number of payments stored, or if there’s no payment stored.  The framework also throws a `StoreError` if a previous batch is pending resolution at the time when you call this  method.
+> **Throws**: This method throws a [`PaymentCardReaderStore.StoreError`](./storeerror.md) if the size is smaller than `0` or greater than the number of payments stored, or if there’s no payment stored.  The framework also throws a `StoreError` if a previous batch is pending resolution at the time when you call this  method.
 
 ## Parameters
 

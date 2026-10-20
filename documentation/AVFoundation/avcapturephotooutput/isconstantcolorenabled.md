@@ -1,7 +1,8 @@
 # isConstantColorEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the photo output configures the render pipeline to perform constant color capture.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the photo output configures the render pi
 var isConstantColorEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isConstantColorEnabled) BOOL constantColorEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to enable support for taking constant color photos. You can only enable constant color capture if the value of [`isConstantColorSupported`](avcapturephotooutput/isconstantcolorsupported.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to enable support for taking constant color photos. You can only enable constant color capture if the value of [`isConstantColorSupported`](./isconstantcolorsupported.md) is [`true`](../../Swift/true.md).
 
-> **Note**:  Enabling constant color requires a lengthy reconfiguration of the capture pipeline. If you intend to capture constant color photos, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling [`startRunning()`](avcapturesession/startrunning().md), or within [`beginConfiguration()`](avcapturesession/beginconfiguration().md) and [`commitConfiguration()`](avcapturesession/commitconfiguration().md) calls on a running capture session.
+> **Note**:  Enabling constant color requires a lengthy reconfiguration of the capture pipeline. If you intend to capture constant color photos, set this property to [`true`](../../Swift/true.md) before calling [`startRunning()`](../avcapturesession/startrunning%28%29.md), or within [`beginConfiguration()`](../avcapturesession/beginconfiguration%28%29.md) and [`commitConfiguration()`](../avcapturesession/commitconfiguration%28%29.md) calls on a running capture session.
 
 ## See Also
 
-- [var isConstantColorSupported: Bool](avcapturephotooutput/isconstantcolorsupported.md)
+### Configuring constant color
+- [var isConstantColorSupported: Bool](./isconstantcolorsupported.md)
   A Boolean value that indicates whether a photo output supports constant color capture.
 
 

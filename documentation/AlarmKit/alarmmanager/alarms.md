@@ -1,7 +1,8 @@
 # alarms
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Fetches all alarms from the daemon that belong to the current client.
 
@@ -22,9 +23,10 @@ As soon as an alarm fires and stops it’s deleted from the daemon’s store.  I
 
 ## See Also
 
-- [AlarmManager.AlarmUpdates](alarmmanager/alarmupdates-swift.struct.md)
+### Updating an alarm
+- [AlarmManager.AlarmUpdates](./alarmupdates-swift.struct.md)
   An async sequence that publishes whenever an alarm changes.
-- [var alarmUpdates: some AsyncSequence<Array<Alarm>, Never>](alarmmanager/alarmupdates-swift.property.md)
+- [var alarmUpdates: some AsyncSequence<Array<Alarm>, Never>](./alarmupdates-swift.property.md)
   An asynchronous sequence that emits events when the set of alarms changes.
 
 

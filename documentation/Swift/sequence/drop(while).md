@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
 
@@ -36,7 +37,7 @@ let startingWithNegative = numbers.drop(while: { $0 > 0 })
 
 If `predicate` matches every element in the sequence, the result is an empty sequence.
 
-> **Note**: O(*k*), where *k* is the number of elements to drop from the beginning of the sequence.
+> **Complexity**: O(*k*), where *k* is the number of elements to drop from the beginning of the sequence.
 
 ## Parameters
 
@@ -44,9 +45,10 @@ If `predicate` matches every element in the sequence, the result is an empty seq
 
 ## See Also
 
-- [func dropFirst(Int) -> DropFirstSequence<Self>](sequence/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> DropFirstSequence<Self>](./dropfirst%28_%29.md)
   Returns a sequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> [Self.Element]](sequence/droplast(_:).md)
+- [func dropLast(Int) -> [Self.Element]](./droplast%28_%29.md)
   Returns a sequence containing all but the given number of final elements.
 
 

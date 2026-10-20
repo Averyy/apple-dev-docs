@@ -1,7 +1,8 @@
 # stylizedImageKey
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key that accesses the stylized image value.
 
@@ -21,9 +22,10 @@ static let stylizedImageKey: ProgressUserInfoKey
 
 ## See Also
 
-- [static let contentLossKey: ProgressUserInfoKey](mlprogress/contentlosskey.md)
+### Accessing style transfer metrics
+- [static let contentLossKey: ProgressUserInfoKey](./contentlosskey.md)
   The key that accesses the content image loss value.
-- [static let styleLossKey: ProgressUserInfoKey](mlprogress/stylelosskey.md)
+- [static let styleLossKey: ProgressUserInfoKey](./stylelosskey.md)
   The key that accesses the style image loss value.
 
 

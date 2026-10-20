@@ -1,6 +1,7 @@
 # Character control, skeletons, and inverse kinematics
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 Direct the movements and animation of models.
 
@@ -8,75 +9,76 @@ Direct the movements and animation of models.
 
 Games and immersive game-like experiences often rely on animated character models to represent the player or non-player characters. The `CharacterControllerComponent` simplifies the process of moving a character around a scene. It handles basic movement, including navigating up and down stairs and slopes and jumping. It also allows you to sync the character movement with specific animations.
 
-To further animate models in the scene, you may need to define a [`SkeletalPose`](skeletalpose.md) or adopt a full inverse kinematics solution with [`IKComponent`](ikcomponent.md).
+To further animate models in the scene, you may need to define a [`SkeletalPose`](./skeletalpose.md) or adopt a full inverse kinematics solution with [`IKComponent`](./ikcomponent.md).
 
 ## Topics
 
 ### Character control
-- [struct CharacterControllerComponent](charactercontrollercomponent.md)
+- [struct CharacterControllerComponent](./charactercontrollercomponent.md)
   A component that manages character movement.
-- [CharacterControllerComponent.Collision](charactercontrollercomponent/collision.md)
+- [CharacterControllerComponent.Collision](./charactercontrollercomponent/collision.md)
   A container that holds collision state for the character controller.
-- [CharacterControllerComponent.CollisionFlags](charactercontrollercomponent/collisionflags.md)
+- [CharacterControllerComponent.CollisionFlags](./charactercontrollercomponent/collisionflags.md)
   An option set that specifies which parts of the character capsule have collided with other objects.
-- [struct CharacterControllerStateComponent](charactercontrollerstatecomponent.md)
+- [struct CharacterControllerStateComponent](./charactercontrollerstatecomponent.md)
   A component that represents the state of a character controller.
 ### Skeletons
-- [struct SkeletalPosesComponent](skeletalposescomponent.md)
+- [struct SkeletalPosesComponent](./skeletalposescomponent.md)
   A component that exposes the collection of named animation skeletal poses.
-- [struct SkeletalPose](skeletalpose.md)
+- [struct SkeletalPose](./skeletalpose.md)
   A container that holds the position and orientation of each joint in a single animation skeleton.
-- [struct SkeletalPoseSet](skeletalposeset.md)
+- [struct SkeletalPoseSet](./skeletalposeset.md)
   A collection of named skeletal poses.
 ### Inverse kinematics components
-- [struct IKComponent](ikcomponent.md)
+- [struct IKComponent](./ikcomponent.md)
   A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
-- [IKComponent.Joint](ikcomponent/joint.md)
+- [IKComponent.Joint](./ikcomponent/joint.md)
   The update stage object that lets you read and update the current settings of a single joint in an IK solver.
-- [IKComponent.JointCollection](ikcomponent/jointcollection.md)
+- [IKComponent.JointCollection](./ikcomponent/jointcollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Solver](ikcomponent/solver.md)
+- [IKComponent.Solver](./ikcomponent/solver.md)
   The update stage object that lets you read and update the current settings of a single solver instance.
-- [IKComponent.SolverCollection](ikcomponent/solvercollection.md)
+- [IKComponent.SolverCollection](./ikcomponent/solvercollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Constraint](ikcomponent/constraint.md)
+- [IKComponent.Constraint](./ikcomponent/constraint.md)
   The update stage object that lets you read and update the current settings of a single constraint in an IK solver.
-- [IKComponent.ConstraintCollection](ikcomponent/constraintcollection.md)
+- [IKComponent.ConstraintCollection](./ikcomponent/constraintcollection.md)
   Ordered dictionary like container with fixed size.
-- [class IKResource](ikresource.md)
+- [class IKResource](./ikresource.md)
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
-- [struct IKSolverDefinition](iksolverdefinition.md)
+- [struct IKSolverDefinition](./iksolverdefinition.md)
   A container describing a solver instance.
 ### Inverse kinematics rigs
-- [struct IKRig](ikrig.md)
+- [struct IKRig](./ikrig.md)
   A full body inverse kinematics rig definition for a single skeleton.
-- [struct Joint](ikrig/joint.md)
+- [struct Joint](./ikrig/joint.md)
   A definition of a rig joint and its IK solver settings.
-- [struct JointCollection](ikrig/jointcollection.md)
+- [struct JointCollection](./ikrig/jointcollection.md)
   Ordered dictionary-like container with a fixed size.
-- [struct Constraint](ikrig/constraint.md)
+- [struct Constraint](./ikrig/constraint.md)
   A definition of a rig constraint.
-- [struct ConstraintsCollection](ikrig/constraintscollection.md)
+- [struct ConstraintsCollection](./ikrig/constraintscollection.md)
   Ordered dictionary-like container.
 ### Skeletons and retargeting
-- [class SkeletonResource](skeletonresource.md)
+- [class SkeletonResource](./skeletonresource.md)
   A self-contained skeleton asset for animating characters and articulated objects.
-- [class RetargetingConfiguration](retargetingconfiguration.md)
+- [class RetargetingConfiguration](./retargetingconfiguration.md)
   A configuration for retargeting skeletal animations between different skeletons.
 
 ## See Also
 
-- [Gaming sample code projects](game-development-sample-code.md)
+### Game development
+- [Gaming sample code projects](./game-development-sample-code.md)
   Explore a collection of projects relating to game development.
-- [Entity animations](game-development-entity-animations.md)
+- [Entity animations](./game-development-entity-animations.md)
   Dynamically move, rotate, and scale entities at runtime.
-- [struct NavigationComponent](navigationcomponent.md)
+- [struct NavigationComponent](./navigationcomponent.md)
   A component that defines which areas of a navigation mesh an entity can move through.
-- [struct NavigationMeshComponent](navigationmeshcomponent.md)
+- [struct NavigationMeshComponent](./navigationmeshcomponent.md)
   A component that provides the navigation meshes an entity uses to find paths through a scene.
-- [struct NavigationController](navigationcontroller.md)
+- [struct NavigationController](./navigationcontroller.md)
   An interface for finding paths for an entity moving across a scene’s navigation mesh.
-- [class NavigationMeshResource](navigationmeshresource.md)
+- [class NavigationMeshResource](./navigationmeshresource.md)
   A representation of a scene’s navigable surfaces that the system uses to compute paths.
 
 

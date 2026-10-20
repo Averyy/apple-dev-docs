@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared manager.
 

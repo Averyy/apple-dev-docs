@@ -1,7 +1,8 @@
 # scaledFont(for:maximumPointSize:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a version of the specified font that adopts the current font metrics and is constrained to the specified maximum size.
 
@@ -19,6 +20,10 @@ Returns a version of the specified font that adopts the current font metrics and
 func scaledFont(for font: UIFont, maximumPointSize: CGFloat) -> UIFont
 ```
 
+```objc
+- (UIFont *) scaledFontForFont:(UIFont *) font maximumPointSize:(CGFloat) maximumPointSize;
+```
+
 #### Return Value
 
 A version of the specified font with the appropriate style information applied to it, and scaled appropriately for the specified settings.
@@ -30,13 +35,14 @@ A version of the specified font with the appropriate style information applied t
 
 ## See Also
 
-- [Scaling fonts automatically](scaling-fonts-automatically.md)
+### Creating Scaled Fonts
+- [Scaling fonts automatically](../scaling-fonts-automatically.md)
   Scale text in your interface automatically using Dynamic Type.
-- [func scaledFont(for: UIFont) -> UIFont](uifontmetrics/scaledfont(for:).md)
+- [func scaledFont(for: UIFont) -> UIFont](./scaledfont%28for%29.md)
   Returns a version of the specified font that adopts the current font metrics.
-- [func scaledFont(for: UIFont, compatibleWith: UITraitCollection?) -> UIFont](uifontmetrics/scaledfont(for:compatiblewith:).md)
+- [func scaledFont(for: UIFont, compatibleWith: UITraitCollection?) -> UIFont](./scaledfont%28for,compatiblewith%29.md)
   Returns a version of the specified font that adopts the current font metrics and supports the specified traits.
-- [func scaledFont(for: UIFont, maximumPointSize: CGFloat, compatibleWith: UITraitCollection?) -> UIFont](uifontmetrics/scaledfont(for:maximumpointsize:compatiblewith:).md)
+- [func scaledFont(for: UIFont, maximumPointSize: CGFloat, compatibleWith: UITraitCollection?) -> UIFont](./scaledfont%28for,maximumpointsize,compatiblewith%29.md)
   Returns a version of the specified font that adopts the current font metrics and is constrained to the specified traits and size.
 
 

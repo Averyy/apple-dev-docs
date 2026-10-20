@@ -1,7 +1,8 @@
 # Get Submission Log
 
 **Framework**: Notary API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch details about a single completed notarization.
 
@@ -10,13 +11,13 @@ Fetch details about a single completed notarization.
 
 ## Mentions
 
-- [Submitting software for notarization over the web](submitting-software-for-notarization-over-the-web.md)
+- [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md)
 
 #### Discussion
 
 Use this endpoint to get a URL that you can download a log file from that enumerates any issues found by the notary service. The URL that you receive is temporary, so be sure to use it to immediately fetch the log. If you need the log again in the future, ask for the URL again.
 
-The log file that you download contains JSON-formatted data, and might include both errors and warnings. For information about how to deal with common notarization problems, see [`Resolving common notarization issues`](https://developer.apple.com/documentation/security/resolving-common-notarization-issues).
+The log file that you download contains JSON-formatted data, and might include both errors and warnings. For information about how to deal with common notarization problems, see [Resolving common notarization issues](../Security/resolving-common-notarization-issues.md).
 
 ##### Example
 
@@ -49,15 +50,24 @@ https://appstoreconnect.apple.com/notary/v2/submissions/2EFE2717-52EF-43A5-96DC-
 
 ## Parameters
 
-- `submissionId` (string) *(required)*: The identifier that you receive from the notary service when you post to [`Submit Software`](submit-software.md) to start a new submission.
+### Path Parameters
+
+- `submissionId` (string) *(required)*: The identifier that you receive from the notary service when you post to [`Submit Software`](./submit-software.md) to start a new submission.
+
+## Responses
+
+- `200` OK (`SubmissionLogURLResponse`, `application/json`): The request succeeded. The response contains a URL that you access to download the log information.
+- `403` Forbidden (`ErrorResponse`, `application/json`): An authentication failure occurred.
+- `404` Not Found (`ErrorResponse`, `application/json`): No data was found for this team.
 
 ## See Also
 
-- [Get Submission Status](get-submission-status.md)
+### Notarization results
+- [Get Submission Status](./get-submission-status.md)
   Fetch the status of a software notarization submission.
-- [object SubmissionResponse](submissionresponse.md)
+- [object SubmissionResponse](./submissionresponse.md)
   The notary service’s response to a request for the status of a submission.
-- [object SubmissionLogURLResponse](submissionlogurlresponse.md)
+- [object SubmissionLogURLResponse](./submissionlogurlresponse.md)
   The notary service’s response to a request for the log information about a completed submission.
 
 

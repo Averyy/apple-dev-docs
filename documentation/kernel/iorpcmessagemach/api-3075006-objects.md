@@ -1,14 +1,15 @@
 # objects
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_port_descriptor_t objects[0];
 ```
 

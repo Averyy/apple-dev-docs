@@ -1,17 +1,22 @@
 # keyEquivalent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key equivalent associated with clicking the cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var keyEquivalent: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * keyEquivalent;
 ```
 
 #### Discussion

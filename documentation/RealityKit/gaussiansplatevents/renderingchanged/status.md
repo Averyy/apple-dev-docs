@@ -1,7 +1,8 @@
 # GaussianSplatEvents.RenderingChanged.Status
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The level of detail at which the framework renders an entity’s splats.
 
@@ -21,23 +22,23 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [GaussianSplatEvents.RenderingChanged.Status.low](gaussiansplatevents/renderingchanged/status/low.md)
+- [GaussianSplatEvents.RenderingChanged.Status.low](./status/low.md)
   The framework aggressively reduces the splat rendering work.
-- [GaussianSplatEvents.RenderingChanged.Status.medium](gaussiansplatevents/renderingchanged/status/medium.md)
+- [GaussianSplatEvents.RenderingChanged.Status.medium](./status/medium.md)
   The framework moderately reduces the splat rendering work.
-- [GaussianSplatEvents.RenderingChanged.Status.normal](gaussiansplatevents/renderingchanged/status/normal.md)
+- [GaussianSplatEvents.RenderingChanged.Status.normal](./status/normal.md)
   The framework renders the splats at full quality.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

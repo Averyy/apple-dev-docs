@@ -1,7 +1,8 @@
 # corners(topLeftRadius:topRightRadius:bottomLeftRadius:bottomRightRadius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration with independent radii for each corner.
 
@@ -12,6 +13,10 @@ A configuration with independent radii for each corner.
 
 ```swift
 class func corners(topLeftRadius: NSViewCornerRadius?, topRightRadius: NSViewCornerRadius?, bottomLeftRadius: NSViewCornerRadius?, bottomRightRadius: NSViewCornerRadius?) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithTopLeftRadius:(NSViewCornerRadius *) topLeftRadius topRightRadius:(NSViewCornerRadius *) topRightRadius bottomLeftRadius:(NSViewCornerRadius *) bottomLeftRadius bottomRightRadius:(NSViewCornerRadius *) bottomRightRadius;
 ```
 
 ## Parameters

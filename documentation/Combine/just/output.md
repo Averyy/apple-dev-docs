@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The one element that the publisher emits.
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOEventSource *eventChain;
 ```
 
@@ -15,13 +15,14 @@ Pointer to first event source in linked list.
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [controlG](./controlg.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setCustomActionControl(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCustomActionControl(_ control: NSSegmentedControl!)
+```
+
+```objc
+- (void) setCustomActionControl:(NSSegmentedControl *) control;
 ```
 
 

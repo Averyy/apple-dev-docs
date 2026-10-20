@@ -1,7 +1,8 @@
 # setSelected(_:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the selected state of a subitem in a grouped toolbar item.
 
@@ -17,6 +18,10 @@ Sets the selected state of a subitem in a grouped toolbar item.
 func setSelected(_ selected: Bool, at index: Int)
 ```
 
+```objc
+- (void) setSelected:(BOOL) selected atIndex:(NSInteger) index;
+```
+
 ## Parameters
 
 - `selected`: If `true`, indicates whether to select a subitem, `false` otherwise.
@@ -24,11 +29,12 @@ func setSelected(_ selected: Bool, at index: Int)
 
 ## See Also
 
-- [var subitems: [NSToolbarItem]](nstoolbaritemgroup/subitems.md)
+### Working with subitems
+- [var subitems: [NSToolbarItem]](./subitems.md)
   The subitems of the grouped toolbar item.
-- [var selectedIndex: Int](nstoolbaritemgroup/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The index value for the most recently selected subitem of a grouped toolbar item.
-- [func isSelected(at: Int) -> Bool](nstoolbaritemgroup/isselected(at:).md)
+- [func isSelected(at: Int) -> Bool](./isselected%28at%29.md)
   Indicates whether a specified index is currently selected.
 
 

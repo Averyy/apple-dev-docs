@@ -1,7 +1,8 @@
 # RemoteKeylessEntryConfigurableEnduringAction.EnduringExecutionRequest.Event.receivedContinuationRequest(_:)
 
 **Framework**: CarKey  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Received continuation request from the Vehicle executing the Enduring Action The enduring action may time out on the vehicle side if continuationRequest.continue() or stop() is not invoked promptly upon the receipt of this event.
 

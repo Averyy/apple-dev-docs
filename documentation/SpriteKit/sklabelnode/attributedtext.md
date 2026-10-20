@@ -1,7 +1,8 @@
 # attributedText
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed string displayed by the label.
 
@@ -21,6 +22,10 @@ The attributed string displayed by the label.
 var attributedText: NSAttributedString? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSAttributedString * attributedText;
+```
+
 #### Discussion
 
 The following properties are ignored if attributedText is defined:
@@ -32,7 +37,8 @@ The following properties are ignored if attributedText is defined:
 
 ## See Also
 
-- [var text: String?](sklabelnode/text.md)
+### Setting a Label’s Text
+- [var text: String?](./text.md)
   The string that the label node displays.
 
 

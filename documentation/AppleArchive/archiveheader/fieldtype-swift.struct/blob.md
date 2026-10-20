@@ -1,7 +1,8 @@
 # blob
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the field is a data blob.
 
@@ -11,7 +12,7 @@ A constant that indicates the field is a data blob.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ static let blob: ArchiveHeader.FieldType
 
 ## See Also
 
-- [static let flag: ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct/flag.md)
+### Field Types
+- [static let flag: ArchiveHeader.FieldType](./flag.md)
   A constant that indicates the field is a flag.
-- [static let hash: ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct/hash.md)
+- [static let hash: ArchiveHeader.FieldType](./hash.md)
   A constant that indicates the field is a hash.
-- [static let string: ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct/string.md)
+- [static let string: ArchiveHeader.FieldType](./string.md)
   A constant that indicates the field is a string.
-- [static let timespec: ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct/timespec.md)
+- [static let timespec: ArchiveHeader.FieldType](./timespec.md)
   A constant that indicates the field is a time value.
-- [static let uint: ArchiveHeader.FieldType](archiveheader/fieldtype-swift.struct/uint.md)
+- [static let uint: ArchiveHeader.FieldType](./uint.md)
   A constant that indicates the field is an unsigned integer.
 
 

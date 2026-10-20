@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.contains(argumentName:substring:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated contains argument matcher.
 

@@ -1,7 +1,8 @@
 # init(notPredicateWithSubpredicate:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new predicate that you form using a NOT operation on a specified predicate.
 
@@ -20,6 +21,10 @@ Returns a new predicate that you form using a NOT operation on a specified predi
 init(notPredicateWithSubpredicate predicate: NSPredicate)
 ```
 
+```objc
++ (NSCompoundPredicate *) notPredicateWithSubpredicate:(NSPredicate *) predicate;
+```
+
 #### Return Value
 
 A new predicate formed by NOT-ing the predicate specified by `predicate`.
@@ -34,13 +39,14 @@ For applications linked on macOS 10.5 or later, the `subpredicates` array is co
 
 ## See Also
 
-- [init(andPredicateWithSubpredicates: [NSPredicate])](nscompoundpredicate/init(andpredicatewithsubpredicates:).md)
+### Creating Compound Predicates
+- [init(andPredicateWithSubpredicates: [NSPredicate])](./init%28andpredicatewithsubpredicates%29.md)
   Returns a new predicate that you form using an AND operation on the predicates in a specified array.
-- [init(orPredicateWithSubpredicates: [NSPredicate])](nscompoundpredicate/init(orpredicatewithsubpredicates:).md)
+- [init(orPredicateWithSubpredicates: [NSPredicate])](./init%28orpredicatewithsubpredicates%29.md)
   Returns a new predicate that you form using an OR operation on the predicates in a specified array.
-- [init(type: NSCompoundPredicate.LogicalType, subpredicates: [NSPredicate])](nscompoundpredicate/init(type:subpredicates:).md)
+- [init(type: NSCompoundPredicate.LogicalType, subpredicates: [NSPredicate])](./init%28type,subpredicates%29.md)
   Returns the receiver that a specified type initializes using predicates from a specified array.
-- [init?(coder: NSCoder)](nscompoundpredicate/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a predicate by decoding from the coder you specify.
 
 

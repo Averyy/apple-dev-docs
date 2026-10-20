@@ -1,7 +1,8 @@
 # minimumByteCount
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of bytes needed for storage with this descriptor’s shape and preferred strides.
 
@@ -53,7 +54,8 @@ var outputs = inferenceFunction.run(inputs: inputs)
 
 ## See Also
 
-- [var preferredStrides: [Int]](ndarraydescriptor/preferredstrides.md)
+### Computing layout
+- [var preferredStrides: [Int]](./preferredstrides.md)
   The strides that avoid data layout transformations during inference.
 
 

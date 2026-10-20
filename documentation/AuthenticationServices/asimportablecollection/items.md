@@ -1,7 +1,8 @@
 # items
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items that are part of the collection.
 
@@ -20,15 +21,16 @@ var items: [ASImportableLinkedItem]
 
 ## See Also
 
-- [var id: Data](asimportablecollection/id.md)
+### Accessing collection properties
+- [var id: Data](./id.md)
   A unique identifier for the collection.
-- [var title: String](asimportablecollection/title.md)
+- [var title: String](./title.md)
   The title of the collection.
-- [var subtitle: String?](asimportablecollection/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle of the collection, if any.
-- [struct ASImportableLinkedItem](asimportablelinkeditem.md)
+- [struct ASImportableLinkedItem](../asimportablelinkeditem.md)
   A linked item for use in import and export.
-- [var subcollections: [ASImportableCollection]](asimportablecollection/subcollections.md)
+- [var subcollections: [ASImportableCollection]](./subcollections.md)
   Subcollections that are part of the collection.
 
 

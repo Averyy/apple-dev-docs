@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A confidence estimate for the detected landmarks.
 
@@ -17,6 +18,10 @@ A confidence estimate for the detected landmarks.
 
 ```swift
 var confidence: VNConfidence { get }
+```
+
+```objc
+@property (readonly) VNConfidence confidence;
 ```
 
 #### Discussion

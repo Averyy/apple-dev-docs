@@ -1,7 +1,8 @@
 # decodeWithOptimizer(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the encoded model and optimizer with a decoder.
 
@@ -20,6 +21,8 @@ Reads the encoded model and optimizer with a decoder.
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> MultivariateLinearRegressor<Scalar>.Model
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 #### Return Value
 
 The decoded model.
@@ -30,7 +33,8 @@ The decoded model.
 
 ## See Also
 
-- [func encodeWithOptimizer(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](multivariatelinearregressor/encodewithoptimizer(_:to:).md)
+### Encoding and decoding
+- [func encodeWithOptimizer(MultivariateLinearRegressor<Scalar>.Model, to: inout any EstimatorEncoder) throws](./encodewithoptimizer%28_,to%29.md)
   Encodes the model and optimizer to an encoder.
 
 

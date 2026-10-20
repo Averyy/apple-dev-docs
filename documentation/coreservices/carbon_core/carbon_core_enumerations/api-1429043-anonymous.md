@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kCSIdentityQueryStringBeginsWith: Int](kcsidentityquerystringbeginswith.md)
-- [var kCSIdentityQueryStringEquals: Int](kcsidentityquerystringequals.md)
+- [var kCSIdentityQueryStringBeginsWith: Int](../../kcsidentityquerystringbeginswith.md)
+- [var kCSIdentityQueryStringEquals: Int](../../kcsidentityquerystringequals.md)
 
 
 ---

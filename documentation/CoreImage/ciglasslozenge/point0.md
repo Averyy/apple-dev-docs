@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@
 var point0: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint point0;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciglasslozenge/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var point1: CGPoint](ciglasslozenge/point1.md)
-- [var radius: Float](ciglasslozenge/radius.md)
-- [var refraction: Float](ciglasslozenge/refraction.md)
+- [var point1: CGPoint](./point1.md)
+- [var radius: Float](./radius.md)
+- [var refraction: Float](./refraction.md)
 
 
 ---

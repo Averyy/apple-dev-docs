@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the FSKit client class.
 
@@ -12,6 +13,10 @@ The shared instance of the FSKit client class.
 
 ```swift
 class var shared: FSClient { get }
+```
+
+```objc
+@property (class, readonly) FSClient * sharedInstance;
 ```
 
 

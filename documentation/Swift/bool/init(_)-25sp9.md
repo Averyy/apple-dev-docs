@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance equal to the given Boolean value.
 
@@ -26,7 +27,8 @@ init(_ value: Bool)
 
 ## See Also
 
-- [init?(String)](bool/init(_:)-83vgw.md)
+### Creating a Boolean From Another Value
+- [init?(String)](./init%28_%29-83vgw.md)
   Creates a new Boolean value from the given string.
 
 

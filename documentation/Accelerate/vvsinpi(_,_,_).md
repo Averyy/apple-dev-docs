@@ -1,7 +1,8 @@
 # vvsinpi(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the sine of pi multiplied by each element in an array of double-precision values.
 
@@ -10,7 +11,7 @@ Calculates the sine of pi multiplied by each element in an array of double-preci
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,19 @@ Calculates the sine of pi multiplied by each element in an array of double-preci
 func vvsinpi(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafePointer<Int32>)
 ```
 
+```c
+void vvsinpi(double *, const double *, const int *);
+```
+
 #### Discussion
 
-##### Parameters
+##### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvsinpi(_:_:_:)`](vvsinpi(_:_:_:).md):
+The following code shows an example of using [`vvsinpi(_:_:_:)`](./vvsinpi%28_,_,_%29.md):
 
 **Swift**:
 
@@ -56,35 +61,36 @@ printf("y: [%lf, %lf, %lf]\n", y[0], y[1], y[2]);
 
 ## See Also
 
-- [static func acos<U>(U) -> [Double]](vforce/acos(_:)-8srk.md)
+### Array-Oriented Trigonometric Functions
+- [static func acos<U>(U) -> [Double]](./vforce/acos%28_%29-8srk.md)
   Returns the arccosine of each element in a vector of double-precision values.
-- [static func acos<U>(U) -> [Float]](vforce/acos(_:)-3hl5t.md)
+- [static func acos<U>(U) -> [Float]](./vforce/acos%28_%29-3hl5t.md)
   Returns the arccosine of each element in a vector of single-precision values.
-- [static func acos<U, V>(U, result: inout V)](vforce/acos(_:result:)-3c9qz.md)
+- [static func acos<U, V>(U, result: inout V)](./vforce/acos%28_,result%29-3c9qz.md)
   Calculates the arccosine of each element in a vector of double-precision values.
-- [static func acos<U, V>(U, result: inout V)](vforce/acos(_:result:)-6rc2f.md)
+- [static func acos<U, V>(U, result: inout V)](./vforce/acos%28_,result%29-6rc2f.md)
   Calculates the arccosine of each element in a vector of single-precision values.
-- [static func asin<U>(U) -> [Double]](vforce/asin(_:)-454ds.md)
+- [static func asin<U>(U) -> [Double]](./vforce/asin%28_%29-454ds.md)
   Returns the arcsine of each element in a vector of double-precision values.
-- [static func asin<U>(U) -> [Float]](vforce/asin(_:)-8vvt1.md)
+- [static func asin<U>(U) -> [Float]](./vforce/asin%28_%29-8vvt1.md)
   Returns the arcsine of each element in a vector of single-precision values.
-- [static func asin<U, V>(U, result: inout V)](vforce/asin(_:result:)-94jmy.md)
+- [static func asin<U, V>(U, result: inout V)](./vforce/asin%28_,result%29-94jmy.md)
   Calculates the arcsine of each element in a vector of double-precision values.
-- [static func asin<U, V>(U, result: inout V)](vforce/asin(_:result:)-ooti.md)
+- [static func asin<U, V>(U, result: inout V)](./vforce/asin%28_,result%29-ooti.md)
   Calculates the arcsine of each element in a vector of single-precision values.
-- [static func atan<U>(U) -> [Double]](vforce/atan(_:)-1ghr3.md)
+- [static func atan<U>(U) -> [Double]](./vforce/atan%28_%29-1ghr3.md)
   Returns the arctangent of each element in a vector of double-precision values.
-- [static func atan<U>(U) -> [Float]](vforce/atan(_:)-5ejvk.md)
+- [static func atan<U>(U) -> [Float]](./vforce/atan%28_%29-5ejvk.md)
   Returns the arctangent of each element in a vector of single-precision values.
-- [static func atan<U, V>(U, result: inout V)](vforce/atan(_:result:)-691jp.md)
+- [static func atan<U, V>(U, result: inout V)](./vforce/atan%28_,result%29-691jp.md)
   Calculates the arctangent of each element in a vector of double-precision values.
-- [static func atan<U, V>(U, result: inout V)](vforce/atan(_:result:)-6bb8n.md)
+- [static func atan<U, V>(U, result: inout V)](./vforce/atan%28_,result%29-6bb8n.md)
   Calculates the arctangent of each element in a vector of single-precision values.
-- [static func atan2<U, V>(x: U, y: V) -> [Double]](vforce/atan2(x:y:)-h54u.md)
+- [static func atan2<U, V>(x: U, y: V) -> [Double]](./vforce/atan2%28x,y%29-h54u.md)
   Returns the arctangent of each pair of elements in two vectors of double-precision values.
-- [static func atan2<U, V>(x: U, y: V) -> [Float]](vforce/atan2(x:y:)-3lku3.md)
+- [static func atan2<U, V>(x: U, y: V) -> [Float]](./vforce/atan2%28x,y%29-3lku3.md)
   Returns the arctangent of each pair of elements in two vectors of single-precision values.
-- [static func atan2<T, U, V>(x: T, y: U, result: inout V)](vforce/atan2(x:y:result:)-184b6.md)
+- [static func atan2<T, U, V>(x: T, y: U, result: inout V)](./vforce/atan2%28x,y,result%29-184b6.md)
   Calculates the arctangent of each pair of elements in two vectors of double-precision values.
 
 

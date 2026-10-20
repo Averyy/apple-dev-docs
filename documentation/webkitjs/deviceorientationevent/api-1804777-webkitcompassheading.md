@@ -7,7 +7,7 @@ A direction that is measured in degrees relative to magnetic north.
 
 ## Declaration
 
-```swift
+```
 readonly attribute double webkitCompassHeading
 ```
 
@@ -17,7 +17,8 @@ Direction values are measured in degrees starting at due north and continuing cl
 
 ## See Also
 
-- [webkitCompassAccuracy](deviceorientationevent/1804769-webkitcompassaccuracy.md)
+### Getting Compass Properties
+- [webkitCompassAccuracy](./api-1804769-webkitcompassaccuracy.md)
   The accuracy of the compass data in degrees.
 
 

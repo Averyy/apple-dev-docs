@@ -1,7 +1,8 @@
 # activeStatusDidChangeNotification
 
 **Framework**: Media Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the value of the Music Haptics system setting changes.
 
@@ -19,9 +20,14 @@ A notification that posts when the value of the Music Haptics system setting cha
 class let activeStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const MAMusicHapticsManagerActiveStatusDidChangeNotification;
+```
+
 ## See Also
 
-- [var isActive: Bool](mamusichapticsmanager/isactive.md)
+### Checking if Music Haptics is on
+- [var isActive: Bool](./isactive.md)
   A Boolean value that indicates whether the system setting for Music Haptics is on.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Scales the entity by the specified size.
@@ -24,6 +25,12 @@ mutating func scale(by size: Self.Size)
 ## Parameters
 
 - `size`: The size structure that defines that scale.
+
+## Default Implementations
+
+### Scalable3DProtocol Implementations
+- [func scale(by: Self.Size)](./scale%28by%29-1jbe4.md)
+  Scales the entity by the specified size.
 
 
 ---

@@ -1,7 +1,8 @@
 # pinByteOffset
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, within the APDU template to mark the location for filling in the PIN.
 
@@ -20,13 +21,18 @@ The offset, in bytes, within the APDU template to mark the location for filling 
 var pinByteOffset: Int { get set }
 ```
 
+```objc
+@property NSInteger PINByteOffset;
+```
+
 ## See Also
 
-- [var pinFormat: TKSmartCardPINFormat](tktokensmartcardpinauthoperation/pinformat.md)
+### Configuring the Operation
+- [var pinFormat: TKSmartCardPINFormat](./pinformat.md)
   The PIN format.
-- [var apduTemplate: Data?](tktokensmartcardpinauthoperation/apdutemplate.md)
+- [var apduTemplate: Data?](./apdutemplate.md)
   The template into which the PIN is filled in. `nil` by default.
-- [var smartCard: TKSmartCard?](tktokensmartcardpinauthoperation/smartcard.md)
+- [var smartCard: TKSmartCard?](./smartcard.md)
   A Smart Card to which the formatted APDU is sent in order to authenticate.
 
 

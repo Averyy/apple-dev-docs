@@ -1,7 +1,8 @@
 # ColumnSlice.Element
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the column slice’s elements, which is an optional type of the parent column’s type.
 
@@ -22,7 +23,8 @@ typealias Element = WrappedElement?
 
 ## See Also
 
-- [ColumnSlice.Index](columnslice/index.md)
+### Supporting Types
+- [ColumnSlice.Index](./index.md)
   The type that represents a position in the column slice.
 
 

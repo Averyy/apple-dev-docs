@@ -1,7 +1,8 @@
 # rawFileFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var rawFileFormat: [String : Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * rawFileFormat;
 ```
 
 

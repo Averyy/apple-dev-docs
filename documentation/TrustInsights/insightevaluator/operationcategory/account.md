@@ -1,7 +1,8 @@
 # InsightEvaluator.OperationCategory.account
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates an account operation including registration, login, or the modification of account details.
 
@@ -17,13 +18,14 @@ case account
 
 ## See Also
 
-- [InsightEvaluator.OperationCategory.communication](insightevaluator/operationcategory/communication.md)
+### Enumeration Cases - generated
+- [InsightEvaluator.OperationCategory.communication](./communication.md)
   A value that indicates a communication operation.
-- [InsightEvaluator.OperationCategory.other](insightevaluator/operationcategory/other.md)
+- [InsightEvaluator.OperationCategory.other](./other.md)
   A value that represents action types that don’t fall into other available categories.
-- [InsightEvaluator.OperationCategory.payment](insightevaluator/operationcategory/payment.md)
+- [InsightEvaluator.OperationCategory.payment](./payment.md)
   A value that indicates some form of payment or purchase.
-- [InsightEvaluator.OperationCategory.resourceUse](insightevaluator/operationcategory/resourceuse.md)
+- [InsightEvaluator.OperationCategory.resourceUse](./resourceuse.md)
   A value that indicates the use of some resource.
 
 

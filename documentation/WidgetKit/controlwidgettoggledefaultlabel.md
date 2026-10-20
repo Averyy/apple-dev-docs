@@ -1,7 +1,8 @@
 # ControlWidgetToggleDefaultLabel
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the default label for a toggle control if you don’t provide a label.
 
@@ -21,12 +22,12 @@ A view that represents the default label for a toggle control if you don’t pro
 
 #### Overview
 
-You don’t initialize this type yourself. Instead, WidgetKit creates this type when you initialize a [`ControlWidgetToggle`](controlwidgettoggle.md) without a label.
+You don’t initialize this type yourself. Instead, WidgetKit creates this type when you initialize a [`ControlWidgetToggle`](./controlwidgettoggle.md) without a label.
 
 ## Relationships
 
 ### Conforms To
-- [View](../swiftui/view.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SecProtocolType.telnet
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates Telnet.
 
@@ -13,6 +14,10 @@ Indicates Telnet.
 
 ```swift
 case telnet
+```
+
+```c
+kSecProtocolTypeTelnet
 ```
 
 

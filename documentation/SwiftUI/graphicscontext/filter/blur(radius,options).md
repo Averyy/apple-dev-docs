@@ -1,7 +1,8 @@
 # blur(radius:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that applies a Gaussian blur.
 

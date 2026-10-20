@@ -1,7 +1,8 @@
 # AVAssetSegmentReportSampleInformation
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides information about sample data in a track.
 
@@ -19,43 +20,48 @@ An object that provides information about sample data in a track.
 class AVAssetSegmentReportSampleInformation
 ```
 
+```objc
+@interface AVAssetSegmentReportSampleInformation : NSObject
+```
+
 ## Topics
 
 ### Inspecting the information
-- [var presentationTimeStamp: CMTime](avassetsegmentreportsampleinformation/presentationtimestamp.md)
+- [var presentationTimeStamp: CMTime](./avassetsegmentreportsampleinformation/presentationtimestamp.md)
   The presentation timestamp (PTS) of a sample.
-- [var offset: Int](avassetsegmentreportsampleinformation/offset.md)
+- [var offset: Int](./avassetsegmentreportsampleinformation/offset.md)
   The offset of a sample in the segment.
-- [var length: Int](avassetsegmentreportsampleinformation/length.md)
+- [var length: Int](./avassetsegmentreportsampleinformation/length.md)
   The length of the sample data.
-- [var isSyncSample: Bool](avassetsegmentreportsampleinformation/issyncsample.md)
+- [var isSyncSample: Bool](./avassetsegmentreportsampleinformation/issyncsample.md)
   A Boolean value that indicates whether the sample is a key frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var trackID: CMPersistentTrackID](avassetsegmenttrackreport/trackid.md)
+### Inspecting a report
+- [var trackID: CMPersistentTrackID](./avassetsegmenttrackreport/trackid.md)
   A persistent unique identifier for a track.
-- [var mediaType: AVMediaType](avassetsegmenttrackreport/mediatype.md)
+- [var mediaType: AVMediaType](./avassetsegmenttrackreport/mediatype.md)
   The type of media a track contains.
-- [var duration: CMTime](avassetsegmenttrackreport/duration.md)
+- [var duration: CMTime](./avassetsegmenttrackreport/duration.md)
   The duration of a track.
-- [var earliestPresentationTimeStamp: CMTime](avassetsegmenttrackreport/earliestpresentationtimestamp.md)
+- [var earliestPresentationTimeStamp: CMTime](./avassetsegmenttrackreport/earliestpresentationtimestamp.md)
   The earliest presentation timestamp (PTS) for this track.
-- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](avassetsegmenttrackreport/firstvideosampleinformation.md)
+- [var firstVideoSampleInformation: AVAssetSegmentReportSampleInformation?](./avassetsegmenttrackreport/firstvideosampleinformation.md)
   Information about the first video sample in a track.
 
 

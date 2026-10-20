@@ -1,7 +1,8 @@
 # appEntityUIElementProvider
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides app entity identifiers to make custom view content discoverable by Apple Intelligence and Siri when it appears onscreen.
 
@@ -23,7 +24,7 @@ Dynamically provide app entity identifiers for a custom view where your app mana
 
 If your custom view shows content you can describe with a single app entity, use the `appEntityIdentifier` property instead to associate the app entity with your custom view.
 
-For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri) and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../../AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../../AppIntents/AppIntents.md).
 
 
 ---

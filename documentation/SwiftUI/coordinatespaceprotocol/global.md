@@ -1,7 +1,8 @@
 # global
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The global coordinate space at the root of the view hierarchy.
 
@@ -20,17 +21,20 @@ The global coordinate space at the root of the view hierarchy.
 static var global: GlobalCoordinateSpace { get }
 ```
 
+Available when `Self` is `GlobalCoordinateSpace`.
+
 ## See Also
 
-- [static var immersiveSpace: NamedCoordinateSpace](coordinatespaceprotocol/immersivespace.md)
-  The named coordinate space that represents the currently opened [`ImmersiveSpace`](immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
-- [static var local: LocalCoordinateSpace](coordinatespaceprotocol/local.md)
+### Getting built-in coordinate spaces
+- [static var immersiveSpace: NamedCoordinateSpace](./immersivespace.md)
+  The named coordinate space that represents the currently opened [`ImmersiveSpace`](../immersivespace.md) scene. If no immersive space is currently opened, this CoordinateSpace provides the same behavior as the `.global` coordinate space.
+- [static var local: LocalCoordinateSpace](./local.md)
   The local coordinate space of the current view.
-- [static func named(some Hashable) -> NamedCoordinateSpace](coordinatespaceprotocol/named(_:).md)
+- [static func named(some Hashable) -> NamedCoordinateSpace](./named%28_%29.md)
   Creates a named coordinate space using the given value.
-- [static var scrollView: NamedCoordinateSpace](coordinatespaceprotocol/scrollview.md)
+- [static var scrollView: NamedCoordinateSpace](./scrollview.md)
   The named coordinate space that is added by the system for the innermost containing scroll view.
-- [static func scrollView(axis: Axis) -> Self](coordinatespaceprotocol/scrollview(axis:).md)
+- [static func scrollView(axis: Axis) -> Self](./scrollview%28axis%29.md)
   The named coordinate space that is added by the system for the innermost containing scroll view that allows scrolling along the provided axis.
 
 

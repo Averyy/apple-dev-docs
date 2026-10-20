@@ -1,7 +1,8 @@
 # dng
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An Adobe DNG (digital negative) image.
 

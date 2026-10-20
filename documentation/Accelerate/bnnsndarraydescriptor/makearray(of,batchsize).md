@@ -1,7 +1,8 @@
 # makeArray(of:batchSize:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new array that contains a copy of the n-dimensional array descriptorâ€™s data.
 
@@ -11,7 +12,7 @@ Returns a new array that contains a copy of the n-dimensional array descriptorâ€
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

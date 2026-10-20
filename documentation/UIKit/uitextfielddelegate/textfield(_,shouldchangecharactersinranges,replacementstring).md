@@ -1,7 +1,8 @@
 # textField(_:shouldChangeCharactersInRanges:replacementString:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func textField(_ textField: UITextField, shouldChangeCharactersInRanges ranges: [NSValue], replacementString string: String) -> Bool
+```
+
+```objc
+- (BOOL) textField:(UITextField *) textField shouldChangeCharactersInRanges:(NSArray<NSValue *> *) ranges replacementString:(NSString *) string;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # decode(_:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value of the specified type by decoding a property list using the default property list format.
 
@@ -22,7 +23,7 @@ func decode<T>(_ type: T.Type, from data: Data) throws -> T where T : Decodable
 
 #### Discussion
 
-If the data is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/swift/decodingerror/datacorrupted(_:)) error. If a value within the property list fails to decode, this method throws the corresponding error.
+If the data is not a valid property list, this method throws the [`DecodingError.dataCorrupted(_:)`](../../Swift/decodingerror/datacorrupted%28_%29.md) error. If a value within the property list fails to decode, this method throws the corresponding error.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ If the data is not a valid property list, this method throws the [`DecodingError
 
 ## See Also
 
-- [init()](propertylistdecoder/init.md)
+### Decoding
+- [init()](./init%28%29.md)
   Creates a new, reusable property list decoder.
 
 

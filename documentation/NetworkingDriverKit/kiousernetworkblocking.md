@@ -1,20 +1,22 @@
 # kIOUserNetworkBlocking
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkBlocking
 ```
 
 ## See Also
 
-- [kIOUserNetworkNonBlocking](kiousernetworknonblocking.md)
+### Blocking behavior
+- [kIOUserNetworkNonBlocking](./kiousernetworknonblocking.md)
 
 
 ---

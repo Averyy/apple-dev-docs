@@ -1,7 +1,8 @@
 # kSPCProcCmd_RELEASE_10
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCProcCmd_RELEASE_10 = 0x57
 ```
 

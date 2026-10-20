@@ -1,7 +1,8 @@
 # makeTrainingSession(trainingData:annotationType:parameters:sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an asynchronous object-detector training session.
 
@@ -16,26 +17,27 @@ static func makeTrainingSession(trainingData: MLObjectDetector.DataSource, annot
 
 #### Return Value
 
-An [`MLTrainingSession`](mltrainingsession.md) that represents the object-detector training session.
+An [`MLTrainingSession`](../mltrainingsession.md) that represents the object-detector training session.
 
 #### Discussion
 
-Use [`resume(_:)`](mlobjectdetector/resume(_:).md) to start the [`MLTrainingSession`](mltrainingsession.md) instance you get from this method.
+Use [`resume(_:)`](./resume%28_%29.md) to start the [`MLTrainingSession`](../mltrainingsession.md) instance you get from this method.
 
 ## Parameters
 
 - `trainingData`: The annotated images the task uses to train the object detector.
 - `annotationType`: The format type of the image annotations in the data source.
-- `parameters`: An [`MLObjectDetector.ModelParameters`](mlobjectdetector/modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
-- `sessionParameters`: An [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you use to configure the training session.
+- `parameters`: An [`MLObjectDetector.ModelParameters`](./modelparameters-swift.struct.md) instance you use to set the model configuration settings for the training session.
+- `sessionParameters`: An [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) instance you use to configure the training session.
 
 ## See Also
 
-- [static func train(trainingData: MLObjectDetector.DataSource, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLObjectDetector>](mlobjectdetector/train(trainingdata:annotationtype:parameters:sessionparameters:).md)
+### Training an object detector asynchronously
+- [static func train(trainingData: MLObjectDetector.DataSource, annotationType: MLObjectDetector.AnnotationType, parameters: MLObjectDetector.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLObjectDetector>](./train%28trainingdata,annotationtype,parameters,sessionparameters%29.md)
   Begins an asynchronous object-detector training session.
-- [static func resume(MLTrainingSession<MLObjectDetector>) throws -> MLJob<MLObjectDetector>](mlobjectdetector/resume(_:).md)
+- [static func resume(MLTrainingSession<MLObjectDetector>) throws -> MLJob<MLObjectDetector>](./resume%28_%29.md)
   Begins or continues an asynchronous object-detector training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLObjectDetector>](mlobjectdetector/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLObjectDetector>](./restoretrainingsession%28sessionparameters%29.md)
   Creates an asynchronous training session for an object detector by restoring an existing training session’s state from its parameters.
 
 

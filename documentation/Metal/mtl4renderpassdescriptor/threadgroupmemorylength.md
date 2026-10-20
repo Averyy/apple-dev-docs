@@ -1,7 +1,8 @@
 # threadgroupMemoryLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the per-tile size, in bytes, of the persistent threadgroup memory allocation of this render pass.
 
@@ -17,6 +18,10 @@ Assigns the per-tile size, in bytes, of the persistent threadgroup memory alloca
 
 ```swift
 var threadgroupMemoryLength: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger threadgroupMemoryLength;
 ```
 
 

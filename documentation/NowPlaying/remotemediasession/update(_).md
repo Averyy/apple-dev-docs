@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the session with new attributes.
 
@@ -19,9 +20,9 @@ func update(_ attributes: Attributes) async throws
 
 #### Discussion
 
-When session attributes change, call this method to send the updated attributes to your app extension through the [`update(_:)`](remotemediasessionrepresentable/update(_:).md) method.
+When session attributes change, call this method to send the updated attributes to your app extension through the [`update(_:)`](../remotemediasessionrepresentable/update%28_%29.md) method.
 
-> **Note**: [`RemoteMediaSessionError.invalidAttributes`](remotemediasessionerror/invalidattributes.md) if `attributes.id` doesn’t match this session’s id. [`RemoteMediaSessionError.internalFailure`](remotemediasessionerror/internalfailure.md) if the system couldn’t deliver the update.
+> **Throws**: [`RemoteMediaSessionError.invalidAttributes`](../remotemediasessionerror/invalidattributes.md) if `attributes.id` doesn’t match this session’s id. [`RemoteMediaSessionError.internalFailure`](../remotemediasessionerror/internalfailure.md) if the system couldn’t deliver the update.
 
 ## Parameters
 

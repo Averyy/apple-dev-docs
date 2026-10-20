@@ -1,7 +1,8 @@
 # RegulationResponseUpdate.ResponseValue
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The advertiser’s answer to the regulatory disclosure question.
 
@@ -10,9 +11,19 @@ The advertiser’s answer to the regulatory disclosure question.
 
 ## Declaration
 
-```swift
+```
 string RegulationResponseUpdate.ResponseValue
 ```
+
+## Possible Values
+
+- `AGENT`: The advertiser is an agent, as defined under the Sapin Law regulation.
+- `NOT_AGENT`: The advertiser is not an agent, as defined under the Sapin Law regulation.
+- `FRENCH_BUSINESS`: The advertiser is a French business, as defined under the Sapin Law regulation.
+- `NOT_FRENCH_BUSINESS`: The advertiser is not a French business, as defined under the Sapin Law regulation.
+- `TRUE`: A generic affirmative response.
+- `FALSE`: A generic negative response.
+- `NOT_ANSWERED`: No response has been provided yet.
 
 #### Discussion
 
@@ -27,7 +38,7 @@ Updating this value only makes sense when the campaign’s `regulationType` stil
 }
 ```
 
-See [`RegulationResponseValue`](regulationresponsevalue.md) for additional context.
+See [`RegulationResponseValue`](../regulationresponsevalue.md) for additional context.
 
 
 ---

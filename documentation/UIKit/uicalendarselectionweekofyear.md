@@ -1,7 +1,8 @@
 # UICalendarSelectionWeekOfYear
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that tracks a specific week a person selects from a calendar view.
 
@@ -18,9 +19,13 @@ An object that tracks a specific week a person selects from a calendar view.
 class UICalendarSelectionWeekOfYear
 ```
 
+```objc
+@interface UICalendarSelectionWeekOfYear : UICalendarSelection
+```
+
 #### Overview
 
-Use the [`UICalendarSelectionWeekOfYear`](uicalendarselectionweekofyear.md) selection behavior to allow selecting dates in a calendar view by week. The following code example shows how to configure a calendar view’s selection behavior to use week-of-year selection:
+Use the [`UICalendarSelectionWeekOfYear`](./uicalendarselectionweekofyear.md) selection behavior to allow selecting dates in a calendar view by week. The following code example shows how to configure a calendar view’s selection behavior to use week-of-year selection:
 
 ```swift
 // Create a calendar view.
@@ -41,42 +46,43 @@ selection.selectedWeekOfYear = DateComponents(
 ## Topics
 
 ### Creating a week-of-year selection
-- [init(delegate: (any UICalendarSelectionWeekOfYearDelegate)?)](uicalendarselectionweekofyear/init(delegate:).md)
+- [init(delegate: (any UICalendarSelectionWeekOfYearDelegate)?)](./uicalendarselectionweekofyear/init%28delegate%29.md)
   Creates an object that tracks a week a person selects from a calendar view, with an optional delegate to manage selectable weeks and selection changes.
 ### Setting the selection delegate
-- [var delegate: (any UICalendarSelectionWeekOfYearDelegate)?](uicalendarselectionweekofyear/delegate.md)
+- [var delegate: (any UICalendarSelectionWeekOfYearDelegate)?](./uicalendarselectionweekofyear/delegate.md)
   A delegate object that a calendar view asks about selectable weeks and informs of changes to the week selection.
-- [protocol UICalendarSelectionWeekOfYearDelegate](uicalendarselectionweekofyeardelegate.md)
+- [protocol UICalendarSelectionWeekOfYearDelegate](./uicalendarselectionweekofyeardelegate.md)
   A set of methods you implement to provide selectable weeks and handle changes to the week selection in a calendar view.
 ### Updating the selected week
-- [var selectedWeekOfYear: DateComponents?](uicalendarselectionweekofyear/selectedweekofyear.md)
+- [var selectedWeekOfYear: DateComponents?](./uicalendarselectionweekofyear/selectedweekofyear.md)
   The current week-of-year selection in the calendar view.
-- [func setSelected(DateComponents?, animated: Bool)](uicalendarselectionweekofyear/setselected(_:animated:).md)
+- [func setSelected(DateComponents?, animated: Bool)](./uicalendarselectionweekofyear/setselected%28_,animated%29.md)
   Updates the date component object that represents a selected week in a calendar view, with an option to animate the change.
 
 ## Relationships
 
 ### Inherits From
-- [UICalendarSelection](uicalendarselection.md)
+- [UICalendarSelection](./uicalendarselection.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var selectionBehavior: UICalendarSelection?](uicalendarview/selectionbehavior.md)
+### Handling date selections
+- [var selectionBehavior: UICalendarSelection?](./uicalendarview/selectionbehavior.md)
   The current date selection method of the calendar view.
-- [class UICalendarSelectionSingleDate](uicalendarselectionsingledate.md)
+- [class UICalendarSelectionSingleDate](./uicalendarselectionsingledate.md)
   An object that tracks a date the user selects from a calendar view.
-- [class UICalendarSelectionMultiDate](uicalendarselectionmultidate.md)
+- [class UICalendarSelectionMultiDate](./uicalendarselectionmultidate.md)
   An object that tracks multiple dates the user selects from a calendar view.
-- [class UICalendarSelection](uicalendarselection.md)
+- [class UICalendarSelection](./uicalendarselection.md)
   A base object that tracks one or more dates a user selects from a calendar view.
 
 

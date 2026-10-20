@@ -1,7 +1,8 @@
 # init(named:in:compatibleWith:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init?(named name: String, in bundle: Bundle?, compatibleWith traitCollection: UITraitCollection?)
+```
+
+```objc
++ (UIColor *) colorNamed:(NSString *) name inBundle:(NSBundle *) bundle compatibleWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
 

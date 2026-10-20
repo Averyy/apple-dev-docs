@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A required value that’s the monetary amount of the line item.
 
@@ -11,7 +12,7 @@ A required value that’s the monetary amount of the line item.
 
 ## Declaration
 
-```swift
+```
 DOMString amount;
 ```
 
@@ -19,17 +20,18 @@ DOMString amount;
 
 This number must follow the regular expression `-?[0-9]+(\.[0-9][0-9])?`. The amount is required and can’t be empty.
 
-You specify the currency for the entire transaction including line items by setting the [`currencyCode`](applepaypaymentrequest/currencycode.md) property in [`ApplePayPaymentRequest`](applepaypaymentrequest.md).
+You specify the currency for the entire transaction including line items by setting the [`currencyCode`](../applepaypaymentrequest/currencycode.md) property in [`ApplePayPaymentRequest`](../applepaypaymentrequest.md).
 
 If the payment request is for an automatic reload payment, the `amount` indicates the reload payment amount authorized when the account drops below the ``/ApplePayontheWeb/ApplePayLineItem/automaticReloadPaymentThresholdAmount```.`
 
 ## See Also
 
-- [label](applepaylineitem/label.md)
+### Setting line item properties
+- [label](./label.md)
   A required value that’s a short, localized description of the line item.
-- [type](applepaylineitem/type.md)
+- [type](./type.md)
   A value that indicates whether the line item is final or pending.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](../applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 

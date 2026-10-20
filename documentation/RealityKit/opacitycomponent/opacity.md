@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value the renderer applies to an entity and its descendants.
 

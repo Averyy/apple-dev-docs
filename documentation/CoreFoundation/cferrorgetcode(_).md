@@ -1,7 +1,8 @@
 # CFErrorGetCode(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the error code for a given CFError.
 
@@ -20,6 +21,10 @@ Returns the error code for a given CFError.
 func CFErrorGetCode(_ err: CFError!) -> CFIndex
 ```
 
+```c
+extern CFIndex CFErrorGetCode(CFErrorRef err);
+```
+
 #### Return Value
 
 The error code of `err`.
@@ -34,15 +39,16 @@ Note that this function returns the error code for the specified CFError, not an
 
 ## See Also
 
-- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](cferrorgetdomain(_:).md)
+### Getting Information About an Error
+- [func CFErrorGetDomain(CFError!) -> CFErrorDomain!](./cferrorgetdomain%28_%29.md)
   Returns the error domain for a given CFError.
-- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](cferrorcopyuserinfo(_:).md)
+- [func CFErrorCopyUserInfo(CFError!) -> CFDictionary!](./cferrorcopyuserinfo%28_%29.md)
   Returns the user info dictionary for a given CFError.
-- [func CFErrorCopyDescription(CFError!) -> CFString!](cferrorcopydescription(_:).md)
+- [func CFErrorCopyDescription(CFError!) -> CFString!](./cferrorcopydescription%28_%29.md)
   Returns a human-presentable description for a given error.
-- [func CFErrorCopyFailureReason(CFError!) -> CFString!](cferrorcopyfailurereason(_:).md)
+- [func CFErrorCopyFailureReason(CFError!) -> CFString!](./cferrorcopyfailurereason%28_%29.md)
   Returns a human-presentable failure reason for a given error.
-- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](cferrorcopyrecoverysuggestion(_:).md)
+- [func CFErrorCopyRecoverySuggestion(CFError!) -> CFString!](./cferrorcopyrecoverysuggestion%28_%29.md)
   Returns a human presentable recovery suggestion for a given error.
 
 

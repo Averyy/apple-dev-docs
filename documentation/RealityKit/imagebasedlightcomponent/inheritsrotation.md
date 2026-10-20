@@ -1,7 +1,8 @@
 # inheritsRotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the IBL inherit the rotation of the Entity
 

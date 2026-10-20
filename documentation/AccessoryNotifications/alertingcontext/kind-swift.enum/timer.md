@@ -1,7 +1,8 @@
 # AlertingContext.Kind.timer
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A timer notification.
 
@@ -16,11 +17,12 @@ case timer
 
 ## See Also
 
-- [AlertingContext.Kind.notification](alertingcontext/kind-swift.enum/notification.md)
+### Identifying notification types
+- [AlertingContext.Kind.notification](./notification.md)
   A standard notification.
-- [AlertingContext.Kind.incomingCall](alertingcontext/kind-swift.enum/incomingcall.md)
+- [AlertingContext.Kind.incomingCall](./incomingcall.md)
   An incoming call notification.
-- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
+- [AlertingContext.Kind.alarm](./alarm.md)
   A classification for alarm notifications.
 
 

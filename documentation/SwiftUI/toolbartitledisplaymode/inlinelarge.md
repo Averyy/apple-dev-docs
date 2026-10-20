@@ -1,7 +1,8 @@
 # inlineLarge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The inline large mode.
 
@@ -24,11 +25,12 @@ In iOS, this behavior displays the title as large inside the toolbar and moves a
 
 ## See Also
 
-- [static var automatic: ToolbarTitleDisplayMode](toolbartitledisplaymode/automatic.md)
+### Getting display modes
+- [static var automatic: ToolbarTitleDisplayMode](./automatic.md)
   The automatic mode.
-- [static var inline: ToolbarTitleDisplayMode](toolbartitledisplaymode/inline.md)
+- [static var inline: ToolbarTitleDisplayMode](./inline.md)
   The inline mode.
-- [static var large: ToolbarTitleDisplayMode](toolbartitledisplaymode/large.md)
+- [static var large: ToolbarTitleDisplayMode](./large.md)
   The large mode.
 
 

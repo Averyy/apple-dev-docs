@@ -1,7 +1,8 @@
 # animationSpeed
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which a noise or turbulence field node changes.
 
@@ -20,17 +21,22 @@ The rate at which a noise or turbulence field node changes.
 var animationSpeed: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float animationSpeed;
+```
+
 #### Discussion
 
 A value of `0.0` means that the field should not animate at all.
 
 ## See Also
 
-- [var smoothness: Float](skfieldnode/smoothness.md)
+### Configuring Other Field Properties
+- [var smoothness: Float](./smoothness.md)
   The smoothness of the noise used to generate the forces.
-- [var direction: vector_float3](skfieldnode/direction.md)
+- [var direction: vector_float3](./direction.md)
   The direction of a velocity field node.
-- [var texture: SKTexture?](skfieldnode/texture.md)
+- [var texture: SKTexture?](./texture.md)
   A normal texture that specifies the velocities at different points in a velocity field node.
 
 

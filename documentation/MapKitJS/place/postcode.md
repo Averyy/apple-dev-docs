@@ -1,7 +1,8 @@
 # postCode
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The postal code of the place.
 
@@ -10,17 +11,18 @@ The postal code of the place.
 
 ## Declaration
 
-```swift
+```
 postCode: string | null;
 ```
 
 ## See Also
 
-- [thoroughfare](place/thoroughfare.md)
+### Street address
+- [thoroughfare](./thoroughfare.md)
   The street name at the place.
-- [subThoroughfare](place/subthoroughfare.md)
+- [subThoroughfare](./subthoroughfare.md)
   The number on the street at the place.
-- [fullThoroughfare](place/fullthoroughfare.md)
+- [fullThoroughfare](./fullthoroughfare.md)
   A combination of thoroughfare and subthoroughfare.
 
 

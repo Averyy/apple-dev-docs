@@ -1,6 +1,7 @@
 # Configuring the View Controller for Your Custom Interface
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Configure your view controller to replace or augment the default interface in Siri or Maps.
 
@@ -28,7 +29,7 @@ If you want to keep the default Siri or Maps interface and only augment it with 
 
 The figure below shows the high-level life cycle of your view controller when you configure it to augment the default interface. The system creates your view controller and calls its [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) method, passing it the interaction object you need to configure your interface. Once configured, your view controller is presented onscreen with the rest of the Siri or Maps content.
 
-![Loading an Intents UI extension and calling the methods of your view controller to configure your interface.](/images/com.apple.sirikit/media-2864766@2x.png)
+![Loading an Intents UI extension and calling the methods of your view controller to configure your interface.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-2864766@2x.png)
 
 > **Note**:  While a view controller is onscreen, Maps may call the [`configure(with:context:completion:)`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontrolling/configure(with:context:completion:)) method again to deliver updated information for you to display. For example, Maps calls this method when your Intents extension provides a status update for a booked ride. Use any follow-up calls to update your view controller’s interface.
 
@@ -41,12 +42,12 @@ When the user dismisses the Siri or Maps interface, the system releases its refe
 Here are some tips for implementing the view controller for your Intents UI extension:
 
 - **Incorporate your brand into your interface.** Using your app’s color, imagery, and other design elements is a great way to add familiarity and convey the presence of your app within the Siri or Maps interfaces.
-- **Configure any animated content to run only when your view controller is visible.** Wait until your view controller’s [`viewDidAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidappear(_:)) method is called to start animations. Stop animations in your view controller’s [`viewWillDisappear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewwilldisappear(_:)) method.
+- **Configure any animated content to run only when your view controller is visible.** Wait until your view controller’s [`viewDidAppear(_:)`](../UIKit/uiviewcontroller/viewdidappear%28_%29.md) method is called to start animations. Stop animations in your view controller’s [`viewWillDisappear(_:)`](../UIKit/uiviewcontroller/viewwilldisappear%28_%29.md) method.
 - **Configure your view controller’s view as quickly as possible so that Siri can display it.** Your view controller may not be onscreen for very long, so use local resources and the provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object for the bulk of your configuration. If you need to fetch more information from a server, always do so asynchronously and update your interface later.
-- **Configure your interface using only the provided interaction object.** The provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object contains the original intent and the response provided by your Intents extension, which runs in a separate process. Using only the provided interaction object ensures that your view controller’s interface accurately reflects the information provided by your Intents extension. To communicate more information to your Intents UI app extension, your Intents app extension can include a custom [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object with its response and put the additional information in that object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary.
+- **Configure your interface using only the provided interaction object.** The provided [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) object contains the original intent and the response provided by your Intents extension, which runs in a separate process. Using only the provided interaction object ensures that your view controller’s interface accurately reflects the information provided by your Intents extension. To communicate more information to your Intents UI app extension, your Intents app extension can include a custom [`NSUserActivity`](../Foundation/nsuseractivity.md) object with its response and put the additional information in that object’s [`userInfo`](../Foundation/nsuseractivity/userinfo.md) dictionary.
 - **Do not include advertising in your interface.** You may include branding and information that is relevant to the user, but advertising is prohibited.
-- **Return a zero size when you want to hide your custom interface.** When calling the handler block of your configuration method, specify [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) for the size when you do not want the view controller to be shown onscreen. You might hide the view controller when there is no additional information to display for the specified intent.
-- **Do not include a map view when your view controller is shown in a Maps context.** When the context parameter is set to [`INUIHostedViewContext.mapsCard`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/mapscard), do not include an [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview) in your view controller’s interface. Maps already displays a map, so having two maps showing similar information would be confusing to users.
+- **Return a zero size when you want to hide your custom interface.** When calling the handler block of your configuration method, specify [`CGRectZero`](../CoreGraphics/cgrectzero.md) for the size when you do not want the view controller to be shown onscreen. You might hide the view controller when there is no additional information to display for the specified intent.
+- **Do not include a map view when your view controller is shown in a Maps context.** When the context parameter is set to [`INUIHostedViewContext.mapsCard`](https://developer.apple.com/documentation/intentsui/inuihostedviewcontext/mapscard), do not include an [`MKMapView`](../MapKit/mkmapview.md) in your view controller’s interface. Maps already displays a map, so having two maps showing similar information would be confusing to users.
 - **Use child view controllers to switch between different types of content.** Your Intents UI app extension has only one initial view controller. Using child view controllers lets you encapsulate the behavior for for different intents or different views of an intent in one place. During configuration of your initial view controller, all you have to do is instantiate the appropriate child view controller and install its view in your interface.
 
 ##### Hiding Portions of the Default Interface
@@ -57,35 +58,36 @@ For more information about hiding portions of the default interface, see [`INUIH
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
 
 

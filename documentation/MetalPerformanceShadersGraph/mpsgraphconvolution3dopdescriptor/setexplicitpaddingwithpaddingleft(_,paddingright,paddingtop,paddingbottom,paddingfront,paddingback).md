@@ -1,7 +1,8 @@
 # setExplicitPaddingWithPaddingLeft(_:paddingRight:paddingTop:paddingBottom:paddingFront:paddingBack:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the left, right, top, bottom, front, and back padding values.
 
@@ -19,13 +20,17 @@ Sets the left, right, top, bottom, front, and back padding values.
 func setExplicitPaddingWithPaddingLeft(_ paddingLeft: Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int, paddingFront: Int, paddingBack: Int)
 ```
 
+```objc
+- (void) setExplicitPaddingWithPaddingLeft:(NSUInteger) paddingLeft paddingRight:(NSUInteger) paddingRight paddingTop:(NSUInteger) paddingTop paddingBottom:(NSUInteger) paddingBottom paddingFront:(NSUInteger) paddingFront paddingBack:(NSUInteger) paddingBack;
+```
+
 ## Parameters
 
-- `paddingLeft`: See [`paddingLeft`](mpsgraphconvolution3dopdescriptor/paddingleft.md) property.
-- `paddingRight`: See [`paddingRight`](mpsgraphconvolution3dopdescriptor/paddingright.md) property.
-- `paddingTop`: See [`paddingTop`](mpsgraphconvolution3dopdescriptor/paddingtop.md) property.
-- `paddingBottom`: See [`paddingBottom`](mpsgraphconvolution3dopdescriptor/paddingbottom.md) property.
-- `paddingFront`: See [`paddingFront`](mpsgraphconvolution3dopdescriptor/paddingfront.md) property.
+- `paddingLeft`: See [`paddingLeft`](./paddingleft.md) property.
+- `paddingRight`: See [`paddingRight`](./paddingright.md) property.
+- `paddingTop`: See [`paddingTop`](./paddingtop.md) property.
+- `paddingBottom`: See [`paddingBottom`](./paddingbottom.md) property.
+- `paddingFront`: See [`paddingFront`](./paddingfront.md) property.
 
 
 ---

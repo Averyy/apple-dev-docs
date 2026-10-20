@@ -1,7 +1,8 @@
 # init(allowsExtendedAttributes:interpretedSyntax:failurePolicy:languageCode:appliesSourcePositionAttributes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Markdown parsing options instance with the specified values, optionally marking the source position of attributed text.
 
@@ -25,12 +26,13 @@ init(allowsExtendedAttributes: Bool = false, interpretedSyntax: AttributedString
 - `allowsExtendedAttributes`: A Boolean value that indicates whether parsing allows extensions to Markdown that specify extended attributes.
 - `interpretedSyntax`: The syntax for intepreting a Markdown string.
 - `failurePolicy`: The policy for handling a parsing failure.
-- `languageCode`: The [`BCP-47`](https://developer.apple.comhttps://tools.ietf.org/search/bcp47) language code for this document.
-- `appliesSourcePositionAttributes`: A Boolean value that indicates whether parsing applies attributes that indicate the position of attribute text in the original Markdown string. If this value is `true`, the resulting string may contain attributes of type [`AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute`](attributescopes/foundationattributes/markdownsourcepositionattribute.md).
+- `languageCode`: The [BCP-47](https://tools.ietf.org/search/bcp47) language code for this document.
+- `appliesSourcePositionAttributes`: A Boolean value that indicates whether parsing applies attributes that indicate the position of attribute text in the original Markdown string. If this value is `true`, the resulting string may contain attributes of type [`AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute`](../../attributescopes/foundationattributes/markdownsourcepositionattribute.md).
 
 ## See Also
 
-- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?)](attributedstring/markdownparsingoptions/init(allowsextendedattributes:interpretedsyntax:failurepolicy:languagecode:).md)
+### Creating Markdown Parsing Options
+- [init(allowsExtendedAttributes: Bool, interpretedSyntax: AttributedString.MarkdownParsingOptions.InterpretedSyntax, failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy, languageCode: String?)](./init%28allowsextendedattributes,interpretedsyntax,failurepolicy,languagecode%29.md)
   Creates a Markdown parsing options instance with the specified values.
 
 

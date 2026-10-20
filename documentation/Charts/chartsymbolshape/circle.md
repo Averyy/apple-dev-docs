@@ -1,7 +1,8 @@
 # circle
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Circle symbol.
 
@@ -19,6 +20,8 @@ Circle symbol.
 ```swift
 static var circle: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

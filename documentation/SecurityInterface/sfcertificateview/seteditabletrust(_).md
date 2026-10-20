@@ -1,7 +1,8 @@
 # setEditableTrust(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the user can edit the certificate’s trust settings.
 
@@ -14,27 +15,33 @@ Specifies whether the user can edit the certificate’s trust settings.
 func setEditableTrust(_ editable: Bool)
 ```
 
+```objc
+- (void) setEditableTrust:(BOOL) editable;
+```
+
 #### Discussion
 
-For behavioral compatibility with macOS 10.3, this method causes the certificate trust settings to be displayed if they are not currently visible (that is, if [`setDisplayTrust(_:)`](sfcertificateview/setdisplaytrust(_:).md) is set to [`false`](https://developer.apple.com/documentation/swift/false)).
+For behavioral compatibility with macOS 10.3, this method causes the certificate trust settings to be displayed if they are not currently visible (that is, if [`setDisplayTrust(_:)`](./setdisplaytrust%28_%29.md) is set to [`false`](../../Swift/false.md)).
 
 ## Parameters
 
-- `editable`: Pass [`true`](https://developer.apple.com/documentation/swift/true) if the trust settings should be editable.
+- `editable`: Pass [`true`](../../Swift/true.md) if the trust settings should be editable.
 
 ## See Also
 
-- [func setDisplayTrust(Bool)](sfcertificateview/setdisplaytrust(_:).md)
+### Related Documentation
+- [func setDisplayTrust(Bool)](./setdisplaytrust%28_%29.md)
   Specifies whether the user can see the certificate’s trust settings.
-- [func setDetailsDisclosed(Bool)](sfcertificateview/setdetailsdisclosed(_:).md)
+### Customizing the Appearance and Behavior of the View
+- [func setDetailsDisclosed(Bool)](./setdetailsdisclosed%28_%29.md)
   Sets whether the certificate details subview is disclosed.
-- [func setDisplayDetails(Bool)](sfcertificateview/setdisplaydetails(_:).md)
+- [func setDisplayDetails(Bool)](./setdisplaydetails%28_%29.md)
   Specifies whether the user can see the certificate details.
-- [func setDisplayTrust(Bool)](sfcertificateview/setdisplaytrust(_:).md)
+- [func setDisplayTrust(Bool)](./setdisplaytrust%28_%29.md)
   Specifies whether the user can see the certificate’s trust settings.
-- [func setPolicies(Any!)](sfcertificateview/setpolicies(_:).md)
+- [func setPolicies(Any!)](./setpolicies%28_%29.md)
   Specifies the policies to use when evaluating this certificate’s status.
-- [func setPoliciesDisclosed(Bool)](sfcertificateview/setpoliciesdisclosed(_:).md)
+- [func setPoliciesDisclosed(Bool)](./setpoliciesdisclosed%28_%29.md)
   Specifies whether the trust policy settings subview is disclosed.
 
 

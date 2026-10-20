@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialAssertionRequest
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to respond to authentication challenges in a web browser.
 
@@ -17,20 +18,25 @@ An interface you use to respond to authentication challenges in a web browser.
 protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialAssertionRequest
 ```
 
+```objc
+@protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialAssertionRequest
+```
+
 ## Topics
 
 ### Information about the assertion
-- [var clientData: ASPublicKeyCredentialClientData?](asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-1ld1w.md)
+- [var clientData: ASPublicKeyCredentialClientData?](./asauthorizationwebbrowsersecuritykeypublickeycredentialassertionrequest/clientdata-1ld1w.md)
   The client data to supply to the relying party.
 
 ## Relationships
 
 ### Conforming Types
-- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](./asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
 
 ## See Also
 
-- [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest.md)
+### Website authentication requests
+- [protocol ASAuthorizationWebBrowserSecurityKeyPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowsersecuritykeypublickeycredentialregistrationrequest.md)
   An interface you use to respond to password-creation challenges in a web browser.
 
 

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data of an IPv6 address.
 
@@ -22,25 +23,26 @@ var rawValue: Data { get }
 
 ## See Also
 
-- [let interface: NWInterface?](ipv6address/interface.md)
+### Inspecting Address Properties
+- [let interface: NWInterface?](./interface.md)
   The IPv6 scoped interface associated with this address.
-- [var multicastScope: IPv6Address.Scope?](ipv6address/multicastscope.md)
+- [var multicastScope: IPv6Address.Scope?](./multicastscope.md)
   The IPv6 multicast scope of the address.
-- [IPv6Address.Scope](ipv6address/scope.md)
+- [IPv6Address.Scope](./scope.md)
   An IPv6 multicast scope.
-- [var isAny: Bool](ipv6address/isany.md)
+- [var isAny: Bool](./isany.md)
   A Boolean indicating whether the address is the unspecified address (::).
-- [var is6to4: Bool](ipv6address/is6to4.md)
+- [var is6to4: Bool](./is6to4.md)
   A Boolean indicating whether the address is a 6to4 address.
-- [var isIPv4Compatabile: Bool](ipv6address/isipv4compatabile.md)
+- [var isIPv4Compatabile: Bool](./isipv4compatabile.md)
   A Boolean indicating whether the address is IPv4-compatible.
-- [var isIPv4Mapped: Bool](ipv6address/isipv4mapped.md)
+- [var isIPv4Mapped: Bool](./isipv4mapped.md)
   A Boolean indicating whether the address is an IPv4-mapped address.
-- [var isLinkLocal: Bool](ipv6address/islinklocal.md)
+- [var isLinkLocal: Bool](./islinklocal.md)
   A Boolean indicating whether this address is in a link-local range.
-- [var isLoopback: Bool](ipv6address/isloopback.md)
+- [var isLoopback: Bool](./isloopback.md)
   A Boolean indicating whether this address is a loopback address for the local device.
-- [var isMulticast: Bool](ipv6address/ismulticast.md)
+- [var isMulticast: Bool](./ismulticast.md)
   A Boolean indicating whether this address is a multicast address.
 
 

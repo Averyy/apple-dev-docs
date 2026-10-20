@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16TCP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16TCP = 0x0004
 ```
 

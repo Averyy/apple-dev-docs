@@ -1,7 +1,8 @@
 # currentDrawable
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drawable to use for the current frame.
 
@@ -19,21 +20,26 @@ The drawable to use for the current frame.
 var currentDrawable: (any CAMetalDrawable)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<CAMetalDrawable> currentDrawable;
+```
+
 #### Discussion
 
-If all drawable objects are in use, the value of this property is `nil`. Your app should check that [`currentDrawable`](mtkview/currentdrawable.md) isn’t `nil` before attempting to draw. The view changes the value of this property only after returning from a drawing function, either [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) from a subclassed instance of the view, or [`draw(in:)`](mtkviewdelegate/draw(in:).md) from the view’s delegate.
+If all drawable objects are in use, the value of this property is `nil`. Your app should check that [`currentDrawable`](./currentdrawable.md) isn’t `nil` before attempting to draw. The view changes the value of this property only after returning from a drawing function, either [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) from a subclassed instance of the view, or [`draw(in:)`](../mtkviewdelegate/draw%28in%29.md) from the view’s delegate.
 
-Use a [`MTLRenderCommandEncoder`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder) object to render into the drawable’s texture and present it for display (typically registered using the [`present(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/present(_:)) method of a command buffer). Try to minimize the time between when you fetch the drawable and when you submit the command buffer that uses it. For more information, see [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer).
+Use a [`MTLRenderCommandEncoder`](../../Metal/mtlrendercommandencoder.md) object to render into the drawable’s texture and present it for display (typically registered using the [`present(_:)`](../../Metal/mtlcommandbuffer/present%28_%29.md) method of a command buffer). Try to minimize the time between when you fetch the drawable and when you submit the command buffer that uses it. For more information, see [`CAMetalLayer`](../../QuartzCore/cametallayer.md).
 
 ## See Also
 
-- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](mtkview/currentrenderpassdescriptor.md)
+### Retrieving Render Target Information
+- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](./currentrenderpassdescriptor.md)
   A render pass descriptor to draw into the current drawable.
-- [var depthStencilTexture: (any MTLTexture)?](mtkview/depthstenciltexture.md)
+- [var depthStencilTexture: (any MTLTexture)?](./depthstenciltexture.md)
   A packed depth and stencil texture associated with the current drawable object’s texture.
-- [var depthStencilStorageMode: MTLStorageMode](mtkview/depthstencilstoragemode.md)
+- [var depthStencilStorageMode: MTLStorageMode](./depthstencilstoragemode.md)
   The storage mode that the packed depth and stencil texture use.
-- [var multisampleColorTexture: (any MTLTexture)?](mtkview/multisamplecolortexture.md)
+- [var multisampleColorTexture: (any MTLTexture)?](./multisamplecolortexture.md)
   The multisample color sample texture to render into.
 
 

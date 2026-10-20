@@ -1,7 +1,8 @@
 # maximumItemSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The largest allowable size for an item’s view.
 
@@ -14,17 +15,22 @@ The largest allowable size for an item’s view.
 var maximumItemSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize maximumItemSize;
+```
+
 #### Discussion
 
 Use this property to limit the maximum size of items displayed in the grid. The default value of this property is (`0.0`, `0.0`), which imposes no maximum size for items.
 
 ## See Also
 
-- [var maximumNumberOfRows: Int](nscollectionviewgridlayout/maximumnumberofrows.md)
+### Specifying the Grid Parameters
+- [var maximumNumberOfRows: Int](./maximumnumberofrows.md)
   The maximum number of rows to display in the collection view’s visible area.
-- [var maximumNumberOfColumns: Int](nscollectionviewgridlayout/maximumnumberofcolumns.md)
+- [var maximumNumberOfColumns: Int](./maximumnumberofcolumns.md)
   The maximum number of columns to display in the collection view’s visible area.
-- [var minimumItemSize: NSSize](nscollectionviewgridlayout/minimumitemsize.md)
+- [var minimumItemSize: NSSize](./minimumitemsize.md)
   The smallest allowable size for an item’s view.
 
 

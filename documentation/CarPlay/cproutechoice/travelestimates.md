@@ -1,7 +1,8 @@
 # travelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Trip preview information such as battery, fuel, or toll information to display for this route choice.
 
@@ -14,6 +15,10 @@ Trip preview information such as battery, fuel, or toll information to display f
 
 ```swift
 var travelEstimates: CPTravelEstimates? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) CPTravelEstimates * travelEstimates;
 ```
 
 #### Discussion

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create an object that encodes commands that perform graphics rendering operations and may be assigned to a different thread.
@@ -11,7 +12,7 @@ Create an object that encodes commands that perform graphics rendering operation
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,18 +21,23 @@ Create an object that encodes commands that perform graphics rendering operation
 func makeRenderCommandEncoder() -> (any MTLRenderCommandEncoder)?
 ```
 
+```objc
+- (id<MTLRenderCommandEncoder>) renderCommandEncoder;
+```
+
 #### Return Value
 
 A graphics rendering command encoder object
 
 #### Discussion
 
-The rendering commands encoded by [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects are executed in the order in which the [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) objects are created, not in the order they are ended.
+The rendering commands encoded by [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) objects are executed in the order in which the [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) objects are created, not in the order they are ended.
 
 ## See Also
 
-- [Metal Shading Language Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
-- [Metal Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
+### Related Documentation
+- [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364)
+- [Metal Programming Guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Conceptual/MetalProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014221)
 
 
 ---

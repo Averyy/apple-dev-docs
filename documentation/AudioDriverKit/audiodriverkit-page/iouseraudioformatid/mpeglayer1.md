@@ -1,7 +1,8 @@
 # MPEGLayer1
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The MPEG-1/2, Layer 1 audio format.
 
@@ -10,7 +11,7 @@ The MPEG-1/2, Layer 1 audio format.
 
 ## Declaration
 
-```swift
+```c
 MPEGLayer1
 ```
 
@@ -20,11 +21,12 @@ This format uses no flags.
 
 ## See Also
 
-- [MPEGLayer2](audiodriverkit/iouseraudioformatid/mpeglayer2.md)
+### Other MPEG Formats
+- [MPEGLayer2](./mpeglayer2.md)
   The MPEG-1/2, Layer 2 audio format.
-- [MPEGLayer3](audiodriverkit/iouseraudioformatid/mpeglayer3.md)
+- [MPEGLayer3](./mpeglayer3.md)
   The MPEG-1/2, Layer 3 audio format.
-- [MPEGD_USAC](audiodriverkit/iouseraudioformatid/mpegd_usac.md)
+- [MPEGD_USAC](./mpegd_usac.md)
   The MPEG-D Unified Speech and Audio Coding format.
 
 

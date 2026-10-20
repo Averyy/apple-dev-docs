@@ -1,7 +1,8 @@
 # IntentItemCollection
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Return this object to provide an advanced list of options, optionally divided in sections.
 
@@ -11,7 +12,7 @@ Return this object to provide an advanced list of options, optionally divided in
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -47,35 +48,36 @@ struct CreateBookIntent: AppIntent {
 ## Topics
 
 ### Initializers
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, items: [Result])](intentitemcollection/init(promptlabel:usesindexedcollation:items:).md)
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, items: [Result])](./intentitemcollection/init%28promptlabel,usesindexedcollation,items%29.md)
   Create a `ItemCollection` containing `Items`, or one or more `Sections`.
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sections: [IntentItemSection<Result>])](intentitemcollection/init(promptlabel:usesindexedcollation:sections:).md)
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sections: [IntentItemSection<Result>])](./intentitemcollection/init%28promptlabel,usesindexedcollation,sections%29.md)
   Create an `ItemCollection` containing one or more `Sections`.
-- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sectionsBuilder: () -> [IntentItemSection<Result>])](intentitemcollection/init(promptlabel:usesindexedcollation:sectionsbuilder:).md)
+- [init(promptLabel: LocalizedStringResource?, usesIndexedCollation: Bool, sectionsBuilder: () -> [IntentItemSection<Result>])](./intentitemcollection/init%28promptlabel,usesindexedcollation,sectionsbuilder%29.md)
   Create an `ItemCollection` containing `Items`, or one or more `Sections` provided by a builder.
 ### Instance Properties
-- [var items: [Result.ValueType]](intentitemcollection/items.md)
+- [var items: [Result.ValueType]](./intentitemcollection/items.md)
   Returns all results as an array.
-- [var sections: [IntentItemSection<Result>]](intentitemcollection/sections.md)
+- [var sections: [IntentItemSection<Result>]](./intentitemcollection/sections.md)
 ### Type Properties
-- [static var empty: IntentItemCollection<Result>](intentitemcollection/empty.md)
+- [static var empty: IntentItemCollection<Result>](./intentitemcollection/empty.md)
   Returns an empty result.
 
 ## Relationships
 
 ### Conforms To
-- [ResultsCollection](resultscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ResultsCollection](./resultscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IntentItem](intentitem.md)
+### Items and collections
+- [struct IntentItem](./intentitem.md)
   A type describing a value returned from a dynamic options provider, plus information about how to display it to users.
-- [struct IntentItemSection](intentitemsection.md)
+- [struct IntentItemSection](./intentitemsection.md)
   An object you use to divide dynamic options into sections.
-- [struct IntentCollectionSize](intentcollectionsize.md)
-- [struct IntentResponseStream](intentresponsestream.md)
+- [struct IntentCollectionSize](./intentcollectionsize.md)
+- [struct IntentResponseStream](./intentresponsestream.md)
 
 
 ---

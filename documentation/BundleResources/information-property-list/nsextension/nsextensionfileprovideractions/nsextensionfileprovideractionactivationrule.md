@@ -1,7 +1,8 @@
 # NSExtensionFileProviderActionActivationRule
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A predicate that determines whether a File Provider extension action appears in the context menu.
 
@@ -10,15 +11,17 @@ A predicate that determines whether a File Provider extension action appears in 
 - iPadOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionFileProviderActionActivationRule`
+- **Type**: string
 
 ## See Also
 
-- [NSExtensionFileProviderActionIdentifier](information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionidentifier.md)
+### Action Configuration
+- [NSExtensionFileProviderActionIdentifier](./nsextensionfileprovideractionidentifier.md)
   A unique identifier for a File Provider extension action.
-- [NSExtensionFileProviderActionName](information-property-list/nsextension/nsextensionfileprovideractions/nsextensionfileprovideractionname.md)
+- [NSExtensionFileProviderActionName](./nsextensionfileprovideractionname.md)
   The localized name for a File Provider extension action that appears in the context menu.
 
 

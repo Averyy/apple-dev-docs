@@ -1,7 +1,8 @@
 # linguisticTags(in:scheme:options:orthography:tokenRanges:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of linguistic tags for the specified range and requested tags within the receiving string.
 

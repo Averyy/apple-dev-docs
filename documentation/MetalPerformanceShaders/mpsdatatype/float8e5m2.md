@@ -1,7 +1,8 @@
 # MPSDataType.float8e5m2
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case float8e5m2
+```
+
+```c
+MPSDataTypeFloat8e5m2
 ```
 
 

@@ -1,7 +1,8 @@
 # retargetedPreview(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a targeted preview object with the same view and parameters, but with a different target container.
 
@@ -16,6 +17,10 @@ Returns a targeted preview object with the same view and parameters, but with a 
 
 ```swift
 func retargetedPreview(with newTarget: UIPreviewTarget) -> UITargetedPreview
+```
+
+```objc
+- (UITargetedPreview *) retargetedPreviewWithTarget:(UIPreviewTarget *) newTarget;
 ```
 
 #### Return Value

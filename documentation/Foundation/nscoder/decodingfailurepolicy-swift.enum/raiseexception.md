@@ -1,7 +1,8 @@
 # NSCoder.DecodingFailurePolicy.raiseException
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A failure policy that directs the coder to raise an exception.
 
@@ -20,13 +21,18 @@ A failure policy that directs the coder to raise an exception.
 case raiseException
 ```
 
+```c
+NSDecodingFailurePolicyRaiseException
+```
+
 #### Discussion
 
-With this policy, the [`NSCoder`](nscoder.md) raises an exception internally to propagate failure messages (and unwind the stack). In Objective-C, this exception can be transformed into an [`NSError`](nserror.md) via methods like [`decodeTopLevelObjectAndReturnError:`](nscoder/decodetoplevelobjectandreturnerror:.md)
+With this policy, the [`NSCoder`](../../nscoder.md) raises an exception internally to propagate failure messages (and unwind the stack). In Objective-C, this exception can be transformed into an [`NSError`](../../nserror.md) via methods like [`decodeTopLevelObjectAndReturnError:`](../decodetoplevelobjectandreturnerror_.md)
 
 ## See Also
 
-- [NSCoder.DecodingFailurePolicy.setErrorAndReturn](nscoder/decodingfailurepolicy-swift.enum/seterrorandreturn.md)
+### Failure Policies
+- [NSCoder.DecodingFailurePolicy.setErrorAndReturn](./seterrorandreturn.md)
   A failure policy that directs the coder to capture the failure as an error object.
 
 

@@ -1,7 +1,8 @@
 # reportConsumption(_:insightsUsed:)
 
 **Framework**: Trust Insights  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports the consumption status, and optionally provide one or more associated insights.
 
@@ -17,18 +18,19 @@ final func reportConsumption(_ status: InsightEvaluationConsumptionStatus, insig
 
 #### Discussion
 
-Before releasing an [`InsightEvaluation`](insightevaluation.md), call this to report how your app used the results. The system may present this value in transparency reporting and also helps with model improvement.
+Before releasing an [`InsightEvaluation`](../insightevaluation.md), call this to report how your app used the results. The system may present this value in transparency reporting and also helps with model improvement.
 
-> ❗ **Important**: Failure to call this method to report how your app used the insight before releasing an [`InsightEvaluation`](insightevaluation.md) may result in rate limiting or revocation of you access to the service.
+> ❗ **Important**: Failure to call this method to report how your app used the insight before releasing an [`InsightEvaluation`](../insightevaluation.md) may result in rate limiting or revocation of you access to the service.
 
 ## Parameters
 
 - `status`: A label that indicates how the app consumed the provided insights.
-- `insightsUsed`: An array of specific[`TrustInsight`](trustinsight.md)  objects, that your app used in making a decision. These values are optional.
+- `insightsUsed`: An array of specific[`TrustInsight`](../trustinsight.md)  objects, that your app used in making a decision. These values are optional.
 
 ## See Also
 
-- [func reportConsumption(InsightEvaluationConsumptionStatus, insightIDsUsed: [String])](insightevaluation/reportconsumption(_:insightidsused:).md)
+### Providing feedback
+- [func reportConsumption(InsightEvaluationConsumptionStatus, insightIDsUsed: [String])](./reportconsumption%28_,insightidsused%29.md)
   Reports the consumption status, and optionally provides one or more associated insight identifiers.
 
 

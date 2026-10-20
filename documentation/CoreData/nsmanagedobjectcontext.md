@@ -1,7 +1,8 @@
 # NSManagedObjectContext
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object space to manipulate and track changes to managed objects.
 
@@ -10,7 +11,7 @@ An object space to manipulate and track changes to managed objects.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -21,23 +22,27 @@ nonisolated
 class NSManagedObjectContext
 ```
 
+```objc
+@interface NSManagedObjectContext : NSObject
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
-- [Using Core Data in the background](using-core-data-in-the-background.md)
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack manually](./setting-up-a-core-data-stack-manually.md)
+- [Using Core Data in the background](./using-core-data-in-the-background.md)
+- [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
 
 #### Overview
 
 A context consists of a group of related model objects that represent an internally consistent view of one or more persistent stores. Changes to managed objects remain in memory in the associated context until Core Data saves that context to one or more persistent stores. A single managed object instance exists in one and only one context, but multiple copies of an object can exist in different contexts. Therefore, an object is unique to a particular context.
 
-##### Life Cycle Management
+##### Life cycle management
 
 The context is a powerful object with a central role in the life cycle of managed objects, with responsibilities from life cycle management (including faulting) to validation, inverse relationship handling, and undo/redo. Through a context you can retrieve or “fetch” objects from a persistent store, make changes to those objects, and then either discard the changes or—again through the context—commit them back to the persistent store. The context is responsible for watching for changes in its objects and maintains an undo manager so you can have finer-grained control over undo and redo. You can insert new objects and delete ones you have fetched, and commit these modifications to the persistent store.
 
 All objects fetched from an external store are registered in a context together with a global identifier (an instance of `NSManagedObjectID`) that’s used to uniquely identify each object to the external store.
 
-##### Parent Store
+##### Parent store
 
 Managed object contexts have a parent store from which they retrieve data representing managed objects and through which they commit changes to managed objects.
 
@@ -48,13 +53,13 @@ If a context’s parent store is another managed object context, fetch and save 
 - Performing background operations on a second thread or queue.
 - Managing discardable edits, such as in an inspector window or view.
 
-As the first scenario implies, a parent context can service requests from children on different threads. You cannot, therefore, use parent contexts created with the thread confinement type (see [`Concurrency`](nsmanagedobjectcontext#Concurrency.md)).
+As the first scenario implies, a parent context can service requests from children on different threads. You cannot, therefore, use parent contexts created with the thread confinement type (see [Concurrency](./nsmanagedobjectcontext.md#Concurrency)).
 
 When you save changes in a context, the changes are only committed “one store up.” If you save a child context, changes are pushed to its parent. Changes are not saved to the persistent store until the root context is saved. (A root managed object context is one whose parent context is `nil`.) In addition, a parent does not pull changes from children before it saves. You must save a child context if you want ultimately to commit the changes.
 
 ##### Notifications
 
-A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange) for example. Typically, you should register to receive these notifications only from known contexts:
+A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md) for example. Typically, you should register to receive these notifications only from known contexts:
 
 **Swift**:
 
@@ -74,25 +79,25 @@ NotificationCenter.default.addObserver(self,
                                       object:<#A managed object context#>];
 ```
 
-Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/addobserver(_:selector:name:object:))), then you may receive unexpected notifications that are difficult to handle.
+Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](../Foundation/notificationcenter/addobserver%28_,selector,name,object%29.md)), then you may receive unexpected notifications that are difficult to handle.
 
 ##### Concurrency
 
-Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see [`Core Data Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)). A consequence of this is that a context assumes the default owner is the thread or queue that creates it. Don’t, therefore, initialize a context on one thread then pass it to another. Instead, pass a reference to a persistent store coordinator and have the receiving thread or queue create a new context using that. If you use [`Operation`](https://developer.apple.com/documentation/foundation/operation), you must create the context in [`main()`](https://developer.apple.com/documentation/foundation/operation/main()) (for a serial queue) or [`start()`](https://developer.apple.com/documentation/foundation/operation/start()) (for a concurrent queue).
+Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)). A consequence of this is that a context assumes the default owner is the thread or queue that creates it. Don’t, therefore, initialize a context on one thread then pass it to another. Instead, pass a reference to a persistent store coordinator and have the receiving thread or queue create a new context using that. If you use [`Operation`](../Foundation/operation.md), you must create the context in [`main()`](../Foundation/operation/main%28%29.md) (for a serial queue) or [`start()`](../Foundation/operation/start%28%29.md) (for a concurrent queue).
 
 When you create a context you specify the concurrency type with which you’ll use it. When you create a managed object context, you have two options for its thread (queue) association:
 
 - Private: The context creates and manages a private queue.
 - Main: The context associates with the main queue and is dependent on the application’s event loop; otherwise, it’s similar to a private context. Use this type for contexts that update view controllers and other user interface elements.
 
-You use contexts using the queue-based concurrency types in conjunction with [`perform(_:)`](nsmanagedobjectcontext/perform(_:).md) and [`performAndWait(_:)`](nsmanagedobjectcontext/performandwait(_:)-ypye.md). You group “standard” messages to send to the context within a block to pass to one of these methods. There are two exceptions:
+You use contexts using the queue-based concurrency types in conjunction with [`perform(_:)`](./nsmanagedobjectcontext/perform%28_%29.md) and [`performAndWait(_:)`](./nsmanagedobjectcontext/performandwait%28_%29-ypye.md). You group “standard” messages to send to the context within a block to pass to one of these methods. There are two exceptions:
 
 - Setter methods on queue-based managed object contexts are thread-safe. You can invoke these methods directly on any thread.
 - If your code executes on the main thread, you can invoke methods on the main queue style contexts directly instead of using the block based API.
 
-[`perform(_:)`](nsmanagedobjectcontext/perform(_:).md) and [`performAndWait(_:)`](nsmanagedobjectcontext/performandwait(_:)-ypye.md) ensure the block operations execute on the correct queue for the context. The [`perform(_:)`](nsmanagedobjectcontext/perform(_:).md) method returns immediately and the context executes the block methods on its own thread. With the [`performAndWait(_:)`](nsmanagedobjectcontext/performandwait(_:)-ypye.md) method, the context still executes the block methods on its own thread, but the method doesn’t return until the block completes.
+[`perform(_:)`](./nsmanagedobjectcontext/perform%28_%29.md) and [`performAndWait(_:)`](./nsmanagedobjectcontext/performandwait%28_%29-ypye.md) ensure the block operations execute on the correct queue for the context. The [`perform(_:)`](./nsmanagedobjectcontext/perform%28_%29.md) method returns immediately and the context executes the block methods on its own thread. With the [`performAndWait(_:)`](./nsmanagedobjectcontext/performandwait%28_%29-ypye.md) method, the context still executes the block methods on its own thread, but the method doesn’t return until the block completes.
 
-It’s important to appreciate that blocks execute as a distinct body of work. As soon as your block ends, anyone else can enqueue another block, undo changes, reset the context, and so on. Thus blocks may be quite large, and typically end by invoking [`save()`](nsmanagedobjectcontext/save().md).
+It’s important to appreciate that blocks execute as a distinct body of work. As soon as your block ends, anyone else can enqueue another block, undo changes, reset the context, and so on. Thus blocks may be quite large, and typically end by invoking [`save()`](./nsmanagedobjectcontext/save%28%29.md).
 
 **Swift**:
 
@@ -164,209 +169,210 @@ __block NSUInteger count = 0;
 NSLog(@"The fetch request would return %lu objects", count);
 ```
 
-##### Subclassing Notes
+##### Subclassing notes
 
-You are strongly discouraged from subclassing `NSManagedObjectContext`. The change tracking and undo management mechanisms are highly optimized and hence intricate and delicate. Interposing your own additional logic that might impact [`processPendingChanges()`](nsmanagedobjectcontext/processpendingchanges().md) can have unforeseen consequences. In situations such as store migration, Core Data will create instances of `NSManagedObjectContext` for its own use. Under these circumstances, you cannot rely on any features of your custom subclass. Any `NSManagedObject` subclass must always be fully compatible with `NSManagedObjectContext` (that is, it cannot rely on features of a subclass of `NSManagedObjectContext`).
+You are strongly discouraged from subclassing `NSManagedObjectContext`. The change tracking and undo management mechanisms are highly optimized and hence intricate and delicate. Interposing your own additional logic that might impact [`processPendingChanges()`](./nsmanagedobjectcontext/processpendingchanges%28%29.md) can have unforeseen consequences. In situations such as store migration, Core Data will create instances of `NSManagedObjectContext` for its own use. Under these circumstances, you cannot rely on any features of your custom subclass. Any `NSManagedObject` subclass must always be fully compatible with `NSManagedObjectContext` (that is, it cannot rely on features of a subclass of `NSManagedObjectContext`).
 
 ## Topics
 
 ### Creating a context
-- [convenience init(NSManagedObjectContext.ConcurrencyType)](nsmanagedobjectcontext/init(_:).md)
+- [convenience init(NSManagedObjectContext.ConcurrencyType)](./nsmanagedobjectcontext/init%28_%29.md)
   Creates a context that uses the specified concurrency type.
-- [NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct.md)
+- [NSManagedObjectContext.ConcurrencyType](./nsmanagedobjectcontext/concurrencytype-swift.struct.md)
   The concurrency types to use with a managed object context.
-- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](nsmanagedobjectcontext/init(concurrencytype:).md)
+- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](./nsmanagedobjectcontext/init%28concurrencytype%29.md)
   Creates a context that uses the specified concurrency type.
-- [enum NSManagedObjectContextConcurrencyType](nsmanagedobjectcontextconcurrencytype.md)
+- [enum NSManagedObjectContextConcurrencyType](./nsmanagedobjectcontextconcurrencytype.md)
   The concurrency types you can use with a managed object context.
 ### Configuring a context
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](nsmanagedobjectcontext/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator?](./nsmanagedobjectcontext/persistentstorecoordinator.md)
   The persistent store coordinator of the context.
-- [var parent: NSManagedObjectContext?](nsmanagedobjectcontext/parent.md)
+- [var parent: NSManagedObjectContext?](./nsmanagedobjectcontext/parent.md)
   The parent of the context.
-- [var name: String?](nsmanagedobjectcontext/name.md)
+- [var name: String?](./nsmanagedobjectcontext/name.md)
   The developer-provided name of the context.
-- [var userInfo: NSMutableDictionary](nsmanagedobjectcontext/userinfo.md)
+- [var userInfo: NSMutableDictionary](./nsmanagedobjectcontext/userinfo.md)
   The user information for the context.
 ### Registering and fetching objects
-- [func fetch(NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]](nsmanagedobjectcontext/fetch(_:)-38ys1.md)
+- [func fetch(NSFetchRequest<any NSFetchRequestResult>) throws -> [Any]](./nsmanagedobjectcontext/fetch%28_%29-38ys1.md)
   Returns an array of objects that meet the criteria of the specified fetch request.
-- [func fetch<T>(NSFetchRequest<T>) throws -> [T]](nsmanagedobjectcontext/fetch(_:)-4xeoz.md)
+- [func fetch<T>(NSFetchRequest<T>) throws -> [T]](./nsmanagedobjectcontext/fetch%28_%29-4xeoz.md)
   Returns an array of items of the specified type that meet the fetch request’s critieria.
-- [func count(for: NSFetchRequest<any NSFetchRequestResult>) throws -> Int](nsmanagedobjectcontext/count(for:)-93zbm.md)
+- [func count(for: NSFetchRequest<any NSFetchRequestResult>) throws -> Int](./nsmanagedobjectcontext/count%28for%29-93zbm.md)
   Returns the number of objects the specified request fetches when it executes.
-- [func registeredObject(for: NSManagedObjectID) -> NSManagedObject?](nsmanagedobjectcontext/registeredobject(for:).md)
+- [func registeredObject(for: NSManagedObjectID) -> NSManagedObject?](./nsmanagedobjectcontext/registeredobject%28for%29.md)
   Returns an object that exists in the context.
-- [func object(with: NSManagedObjectID) -> NSManagedObject](nsmanagedobjectcontext/object(with:).md)
+- [func object(with: NSManagedObjectID) -> NSManagedObject](./nsmanagedobjectcontext/object%28with%29.md)
   Returns either an existing object from the context or a fault that represents that object.
-- [func existingObject(with: NSManagedObjectID) throws -> NSManagedObject](nsmanagedobjectcontext/existingobject(with:).md)
+- [func existingObject(with: NSManagedObjectID) throws -> NSManagedObject](./nsmanagedobjectcontext/existingobject%28with%29.md)
   Returns an existing object from either the context or the persistent store.
-- [var registeredObjects: Set<NSManagedObject>](nsmanagedobjectcontext/registeredobjects.md)
+- [var registeredObjects: Set<NSManagedObject>](./nsmanagedobjectcontext/registeredobjects.md)
   The set of registered managed objects in the context.
-- [func count<T>(for: NSFetchRequest<T>) throws -> Int](nsmanagedobjectcontext/count(for:)-3r91z.md)
+- [func count<T>(for: NSFetchRequest<T>) throws -> Int](./nsmanagedobjectcontext/count%28for%29-3r91z.md)
   Returns a count of the objects the specified request fetches when it executes.
-- [func execute(NSPersistentStoreRequest) throws -> NSPersistentStoreResult](nsmanagedobjectcontext/execute(_:).md)
+- [func execute(NSPersistentStoreRequest) throws -> NSPersistentStoreResult](./nsmanagedobjectcontext/execute%28_%29.md)
   Passes a request to the persistent store without affecting the contents of the managed object context, and returns a persistent store result.
-- [func refreshAllObjects()](nsmanagedobjectcontext/refreshallobjects.md)
+- [func refreshAllObjects()](./nsmanagedobjectcontext/refreshallobjects%28%29.md)
   Refreshes all of the registered managed objects in the context.
-- [var retainsRegisteredObjects: Bool](nsmanagedobjectcontext/retainsregisteredobjects.md)
+- [var retainsRegisteredObjects: Bool](./nsmanagedobjectcontext/retainsregisteredobjects.md)
   A Boolean value that indicates whether the context keeps strong references to all registered managed objects.
 ### Handling managed objects
-- [var shouldDeleteInaccessibleFaults: Bool](nsmanagedobjectcontext/shoulddeleteinaccessiblefaults.md)
+- [var shouldDeleteInaccessibleFaults: Bool](./nsmanagedobjectcontext/shoulddeleteinaccessiblefaults.md)
   A Boolean value that determines whether the context turns inaccessible faults into deleted objects.
-- [var insertedObjects: Set<NSManagedObject>](nsmanagedobjectcontext/insertedobjects.md)
+- [var insertedObjects: Set<NSManagedObject>](./nsmanagedobjectcontext/insertedobjects.md)
   The set of objects that have been inserted into the context but not yet saved in a persistent store.
-- [var updatedObjects: Set<NSManagedObject>](nsmanagedobjectcontext/updatedobjects.md)
+- [var updatedObjects: Set<NSManagedObject>](./nsmanagedobjectcontext/updatedobjects.md)
   The set of objects registered with the context that have uncommitted changes.
-- [var deletedObjects: Set<NSManagedObject>](nsmanagedobjectcontext/deletedobjects.md)
+- [var deletedObjects: Set<NSManagedObject>](./nsmanagedobjectcontext/deletedobjects.md)
   The set of objects that will be removed from their persistent store during the next save operation.
-- [func shouldHandleInaccessibleFault(NSManagedObject, for: NSManagedObjectID, triggeredByProperty: NSPropertyDescription?) -> Bool](nsmanagedobjectcontext/shouldhandleinaccessiblefault(_:for:triggeredbyproperty:).md)
+- [func shouldHandleInaccessibleFault(NSManagedObject, for: NSManagedObjectID, triggeredByProperty: NSPropertyDescription?) -> Bool](./nsmanagedobjectcontext/shouldhandleinaccessiblefault%28_,for,triggeredbyproperty%29.md)
   Creates a log of the inaccessible fault.
-- [func insert(NSManagedObject)](nsmanagedobjectcontext/insert(_:).md)
+- [func insert(NSManagedObject)](./nsmanagedobjectcontext/insert%28_%29.md)
   Registers an object to be inserted in the context’s persistent store the next time changes are saved.
-- [func delete(NSManagedObject)](nsmanagedobjectcontext/delete(_:).md)
+- [func delete(NSManagedObject)](./nsmanagedobjectcontext/delete%28_%29.md)
   Specifies an object that should be removed from its persistent store when changes are committed.
-- [func assign(Any, to: NSPersistentStore)](nsmanagedobjectcontext/assign(_:to:).md)
+- [func assign(Any, to: NSPersistentStore)](./nsmanagedobjectcontext/assign%28_,to%29.md)
   Specifies the store in which a newly inserted object will be saved.
-- [func obtainPermanentIDs(for: [NSManagedObject]) throws](nsmanagedobjectcontext/obtainpermanentids(for:).md)
+- [func obtainPermanentIDs(for: [NSManagedObject]) throws](./nsmanagedobjectcontext/obtainpermanentids%28for%29.md)
   Converts to permanent IDs the object IDs of the objects in a given array.
-- [func detectConflicts(for: NSManagedObject)](nsmanagedobjectcontext/detectconflicts(for:).md)
+- [func detectConflicts(for: NSManagedObject)](./nsmanagedobjectcontext/detectconflicts%28for%29.md)
   Marks an object for conflict detection.
-- [func refresh(NSManagedObject, mergeChanges: Bool)](nsmanagedobjectcontext/refresh(_:mergechanges:).md)
+- [func refresh(NSManagedObject, mergeChanges: Bool)](./nsmanagedobjectcontext/refresh%28_,mergechanges%29.md)
   Updates the persistent properties of a managed object to use the latest values from the persistent store.
-- [func processPendingChanges()](nsmanagedobjectcontext/processpendingchanges.md)
+- [func processPendingChanges()](./nsmanagedobjectcontext/processpendingchanges%28%29.md)
   Forces the context to process changes to the object graph.
-- [func observeValue(forKeyPath: String?, of: Any?, change: [String : Any]?, context: UnsafeMutableRawPointer?)](nsmanagedobjectcontext/observevalue(forkeypath:of:change:context:).md)
+- [func observeValue(forKeyPath: String?, of: Any?, change: [String : Any]?, context: UnsafeMutableRawPointer?)](./nsmanagedobjectcontext/observevalue%28forkeypath,of,change,context%29.md)
   Allows a context that has registered as an observer of a value to be notified of a change to that value.
 ### Managing concurrency
-- [let NSManagedObjectContextQueryGenerationKey: String](nsmanagedobjectcontextquerygenerationkey.md)
+- [let NSManagedObjectContextQueryGenerationKey: String](./nsmanagedobjectcontextquerygenerationkey.md)
   Constant used to reference the query generation token.
-- [class func mergeChanges(fromRemoteContextSave: [AnyHashable : Any], into: [NSManagedObjectContext])](nsmanagedobjectcontext/mergechanges(fromremotecontextsave:into:).md)
+- [class func mergeChanges(fromRemoteContextSave: [AnyHashable : Any], into: [NSManagedObjectContext])](./nsmanagedobjectcontext/mergechanges%28fromremotecontextsave,into%29.md)
   Handles changes from other processes or from a serialized state.
-- [var automaticallyMergesChangesFromParent: Bool](nsmanagedobjectcontext/automaticallymergeschangesfromparent.md)
+- [var automaticallyMergesChangesFromParent: Bool](./nsmanagedobjectcontext/automaticallymergeschangesfromparent.md)
   A Boolean value that indicates whether the context automatically merges changes saved to its persistent store coordinator or parent context.
-- [var concurrencyType: NSManagedObjectContextConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.property.md)
+- [var concurrencyType: NSManagedObjectContextConcurrencyType](./nsmanagedobjectcontext/concurrencytype-swift.property.md)
   The concurrency type for the context.
-- [var mergePolicy: Any](nsmanagedobjectcontext/mergepolicy.md)
+- [var mergePolicy: Any](./nsmanagedobjectcontext/mergepolicy.md)
   The merge policy of the context.
-- [var queryGenerationToken: NSQueryGenerationToken?](nsmanagedobjectcontext/querygenerationtoken.md)
+- [var queryGenerationToken: NSQueryGenerationToken?](./nsmanagedobjectcontext/querygenerationtoken.md)
   Returns the token associated with the query generation currently in use by this context.
-- [var transactionAuthor: String?](nsmanagedobjectcontext/transactionauthor.md)
+- [var transactionAuthor: String?](./nsmanagedobjectcontext/transactionauthor.md)
   The author for the context that is used as an identifier in persistent history transactions.
-- [func mergeChanges(fromContextDidSave: Notification)](nsmanagedobjectcontext/mergechanges(fromcontextdidsave:).md)
+- [func mergeChanges(fromContextDidSave: Notification)](./nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md)
   Merges the changes specified in a given notification.
-- [func setQueryGenerationFrom(NSQueryGenerationToken?) throws](nsmanagedobjectcontext/setquerygenerationfrom(_:).md)
+- [func setQueryGenerationFrom(NSQueryGenerationToken?) throws](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md)
   Sets the query generation this context should use.
 ### Managing notifications
-- [static let didChangeObjectsNotification: Notification.Name](nsmanagedobjectcontext/didchangeobjectsnotification.md)
+- [static let didChangeObjectsNotification: Notification.Name](./nsmanagedobjectcontext/didchangeobjectsnotification.md)
   A notification that posts when a context makes changes to its registered objects.
-- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
+- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
   A notification that posts when there are changes to context’s registered managed objects.
-- [static let didSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/didsaveobjectsnotification.md)
+- [static let didSaveObjectsNotification: Notification.Name](./nsmanagedobjectcontext/didsaveobjectsnotification.md)
   A notification that posts after a context completes a save.
-- [static let NSManagedObjectContextDidSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
+- [static let NSManagedObjectContextDidSave: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
   A notification that posts after a context finishes writing unsaved changes.
-- [static let willSaveObjectsNotification: Notification.Name](nsmanagedobjectcontext/willsaveobjectsnotification.md)
+- [static let willSaveObjectsNotification: Notification.Name](./nsmanagedobjectcontext/willsaveobjectsnotification.md)
   A notification that posts before a context writes pending changes to disk.
-- [static let NSManagedObjectContextWillSave: NSNotification.Name](../foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
+- [static let NSManagedObjectContextWillSave: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
   A notification that posts before a context writes unsaved changes.
-- [let NSInsertedObjectsKey: String](nsinsertedobjectskey.md)
+- [let NSInsertedObjectsKey: String](./nsinsertedobjectskey.md)
   A key for the set of objects that were inserted into the context.
-- [let NSUpdatedObjectsKey: String](nsupdatedobjectskey.md)
+- [let NSUpdatedObjectsKey: String](./nsupdatedobjectskey.md)
   A key for the set of objects that were updated.
-- [let NSDeletedObjectsKey: String](nsdeletedobjectskey.md)
+- [let NSDeletedObjectsKey: String](./nsdeletedobjectskey.md)
   A key for the set of objects that were marked for deletion during the previous event.
-- [let NSRefreshedObjectsKey: String](nsrefreshedobjectskey.md)
+- [let NSRefreshedObjectsKey: String](./nsrefreshedobjectskey.md)
   A key for the set of objects that were refreshed but were not dirtied in the scope of this context.
-- [let NSInvalidatedObjectsKey: String](nsinvalidatedobjectskey.md)
+- [let NSInvalidatedObjectsKey: String](./nsinvalidatedobjectskey.md)
   A key for the set of objects that were invalidated.
-- [let NSInvalidatedAllObjectsKey: String](nsinvalidatedallobjectskey.md)
+- [let NSInvalidatedAllObjectsKey: String](./nsinvalidatedallobjectskey.md)
   A key that specifies that all objects in the context have been invalidated.
-- [static let didMergeChangesObjectIDsNotification: Notification.Name](nsmanagedobjectcontext/didmergechangesobjectidsnotification.md)
+- [static let didMergeChangesObjectIDsNotification: Notification.Name](./nsmanagedobjectcontext/didmergechangesobjectidsnotification.md)
   A notification that posts after a context finishes merging changes from another notification.
-- [static let didSaveObjectIDsNotification: Notification.Name](nsmanagedobjectcontext/didsaveobjectidsnotification.md)
+- [static let didSaveObjectIDsNotification: Notification.Name](./nsmanagedobjectcontext/didsaveobjectidsnotification.md)
   A notification that posts after a context finishes saving changes to its managed objects.
-- [NSManagedObjectContext.NotificationKey](nsmanagedobjectcontext/notificationkey.md)
+- [NSManagedObjectContext.NotificationKey](./nsmanagedobjectcontext/notificationkey.md)
   Keys to access details in user info dictionaries of managed object context notifications.
 ### Managing unsaved and uncommitted changes
-- [func save() throws](nsmanagedobjectcontext/save.md)
+- [func save() throws](./nsmanagedobjectcontext/save%28%29.md)
   Attempts to commit unsaved changes to registered objects to the context’s parent store.
-- [var hasChanges: Bool](nsmanagedobjectcontext/haschanges.md)
+- [var hasChanges: Bool](./nsmanagedobjectcontext/haschanges.md)
   A Boolean value that indicates whether the context has uncommitted changes.
 ### Undoing changes
-- [var undoManager: UndoManager?](nsmanagedobjectcontext/undomanager.md)
+- [var undoManager: UndoManager?](./nsmanagedobjectcontext/undomanager.md)
   The object that provides undo support for the context.
-- [func undo()](nsmanagedobjectcontext/undo.md)
+- [func undo()](./nsmanagedobjectcontext/undo%28%29.md)
   Sends an undo message to the context’s undo manager, asking it to reverse the latest uncommitted changes applied to objects in the object graph.
-- [func redo()](nsmanagedobjectcontext/redo.md)
+- [func redo()](./nsmanagedobjectcontext/redo%28%29.md)
   Sends a redo message to the context’s undo manager, asking it to reverse the latest undo operation applied to objects in the object graph.
-- [func reset()](nsmanagedobjectcontext/reset.md)
+- [func reset()](./nsmanagedobjectcontext/reset%28%29.md)
   Returns the context to its base state.
-- [func rollback()](nsmanagedobjectcontext/rollback.md)
+- [func rollback()](./nsmanagedobjectcontext/rollback%28%29.md)
   Removes everything from the undo stack, discards all insertions and deletions, and restores updated objects to their last committed values.
 ### Handling delete propagation
-- [var propagatesDeletesAtEndOfEvent: Bool](nsmanagedobjectcontext/propagatesdeletesatendofevent.md)
+- [var propagatesDeletesAtEndOfEvent: Bool](./nsmanagedobjectcontext/propagatesdeletesatendofevent.md)
   A Boolean value that indicates whether the context propagates deletes at the end of the event in which a change was made.
 ### Managing the staleness interval
-- [var stalenessInterval: TimeInterval](nsmanagedobjectcontext/stalenessinterval.md)
+- [var stalenessInterval: TimeInterval](./nsmanagedobjectcontext/stalenessinterval.md)
   The maximum length of time that may have elapsed since the store previously fetched data before fulfilling a fault issues a new fetch.
 ### Performing block operations
-- [func perform(() -> Void)](nsmanagedobjectcontext/perform(_:).md)
+- [func perform(() -> Void)](./nsmanagedobjectcontext/perform%28_%29.md)
   Asynchronously performs the specified closure on the context’s queue.
-- [func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType, () throws -> T) async rethrows -> T](nsmanagedobjectcontext/perform(schedule:_:).md)
+- [func perform<T>(schedule: NSManagedObjectContext.ScheduledTaskType, () throws -> T) async rethrows -> T](./nsmanagedobjectcontext/perform%28schedule,_%29.md)
   Submits a closure to the context’s queue for asynchronous execution.
-- [func performAndWait(() -> Void)](nsmanagedobjectcontext/performandwait(_:)-ypye.md)
+- [func performAndWait(() -> Void)](./nsmanagedobjectcontext/performandwait%28_%29-ypye.md)
   Synchronously performs the specified closure on the context’s queue.
-- [func performAndWait<T>(() throws -> T) rethrows -> T](nsmanagedobjectcontext/performandwait(_:)-6aaf1.md)
+- [func performAndWait<T>(() throws -> T) rethrows -> T](./nsmanagedobjectcontext/performandwait%28_%29-6aaf1.md)
   Submits a closure to the context’s queue for synchronous execution.
-- [NSManagedObjectContext.ScheduledTaskType](nsmanagedobjectcontext/scheduledtasktype.md)
+- [NSManagedObjectContext.ScheduledTaskType](./nsmanagedobjectcontext/scheduledtasktype.md)
   The different types of scheduled tasks.
 ### Deprecated
-- [Deprecated symbols](nsmanagedobjectcontext-deprecated-symbols.md)
+- [Deprecated symbols](./nsmanagedobjectcontext-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Structures
-- [NSManagedObjectContext.DidMergeChangesAsyncMessage](nsmanagedobjectcontext/didmergechangesasyncmessage.md)
+- [NSManagedObjectContext.DidMergeChangesAsyncMessage](./nsmanagedobjectcontext/didmergechangesasyncmessage.md)
   Posted after a private queue context merges changes from another context, containing object IDs.
-- [NSManagedObjectContext.DidMergeChangesMessage](nsmanagedobjectcontext/didmergechangesmessage.md)
+- [NSManagedObjectContext.DidMergeChangesMessage](./nsmanagedobjectcontext/didmergechangesmessage.md)
   Posted after a main queue context merges changes from another context, containing object IDs.
-- [NSManagedObjectContext.DidSaveMessage](nsmanagedobjectcontext/didsavemessage.md)
+- [NSManagedObjectContext.DidSaveMessage](./nsmanagedobjectcontext/didsavemessage.md)
   Posted after a main queue context saves.
-- [NSManagedObjectContext.DidSaveObjectIDsAsyncMessage](nsmanagedobjectcontext/didsaveobjectidsasyncmessage.md)
+- [NSManagedObjectContext.DidSaveObjectIDsAsyncMessage](./nsmanagedobjectcontext/didsaveobjectidsasyncmessage.md)
   Posted after a private queue context saves, containing object IDs rather than full objects.
-- [NSManagedObjectContext.DidSaveObjectIDsMessage](nsmanagedobjectcontext/didsaveobjectidsmessage.md)
+- [NSManagedObjectContext.DidSaveObjectIDsMessage](./nsmanagedobjectcontext/didsaveobjectidsmessage.md)
   Posted after a main queue context saves, containing object IDs rather than full objects.
-- [NSManagedObjectContext.ObjectsDidChangeMessage](nsmanagedobjectcontext/objectsdidchangemessage.md)
+- [NSManagedObjectContext.ObjectsDidChangeMessage](./nsmanagedobjectcontext/objectsdidchangemessage.md)
   Posted when objects in a main queue context change (inserted, updated, deleted, refreshed, or invalidated).
-- [NSManagedObjectContext.WillSaveMessage](nsmanagedobjectcontext/willsavemessage.md)
+- [NSManagedObjectContext.WillSaveMessage](./nsmanagedobjectcontext/willsavemessage.md)
   Posted before a main queue context saves.
 ### Initializers
-- [init?(coder: NSCoder)](nsmanagedobjectcontext/init(coder:).md)
+- [init?(coder: NSCoder)](./nsmanagedobjectcontext/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSEditorRegistration](../appkit/nseditorregistration.md)
-- [NSLocking](../foundation/nslocking.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSEditorRegistration](../AppKit/nseditorregistration.md)
+- [NSLocking](../Foundation/nslocking.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSManagedObject](nsmanagedobject.md)
+### Object Management
+- [class NSManagedObject](./nsmanagedobject.md)
   The base class that all Core Data model objects inherit from.
-- [class NSManagedObjectID](nsmanagedobjectid.md)
+- [class NSManagedObjectID](./nsmanagedobjectid.md)
   A compact, universal identifier for a managed object.
 
 

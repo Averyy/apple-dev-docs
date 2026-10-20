@@ -1,6 +1,7 @@
 # Initiating VoIP conversations with LiveCommunicationKit
 
-**Framework**: LiveCommunicationKit
+**Framework**: LiveCommunicationKit  
+**Role**: Article
 
 Let people initiate and receive VoIP conversations, and configure your app so it can be the default calling app on a person’s device.
 
@@ -8,14 +9,14 @@ Let people initiate and receive VoIP conversations, and configure your app so it
 
 LiveCommunicationKit enables you to add VoIP capabilities to your app. For incoming and outgoing VoIP conversations, your app displays the same interface as the Phone app, responding appropriately to system-level behaviors, such as Do Not Disturb. Additionally, use LiveCommunicationKit to prepare your app to be the default dialer app, the default calling app, or both.
 
-For more information, see [`Preparing your app to be the default dialer app`](preparing-your-app-to-be-the-default-dialer-app.md) and [`Review default calling app functionality`](initiating-voip-conversations-with-livecommunicationkit#Review-default-calling-app-functionality.md).
+For more information, see [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md) and [Review default calling app functionality](./initiating-voip-conversations-with-livecommunicationkit.md#Review-default-calling-app-functionality).
 
-##### Start a Voip Conversation
+##### Start a VoIP conversation
 
 With LiveCommunicationKit, handle VoIP conversations with your VoIP services:
 
-1. Use [`ConversationManager`](conversationmanager.md) to perform conversation actions like [`StartConversationAction`](startconversationaction.md), [`EndConversationAction`](endconversationaction.md), and so on.
-2. Implement the [`ConversationManagerDelegate`](conversationmanagerdelegate.md) requirements and respond to VoIP conversation updates.
+1. Use [`ConversationManager`](./conversationmanager.md) to perform conversation actions like [`StartConversationAction`](./startconversationaction.md), [`EndConversationAction`](./endconversationaction.md), and so on.
+2. Implement the [`ConversationManagerDelegate`](./conversationmanagerdelegate.md) requirements and respond to VoIP conversation updates.
 3. Add code to use your VoIP conversation services.
 
 The following example shows how a VoIP app might start a conversation:
@@ -54,27 +55,28 @@ The following example shows how a VoIP app might start a conversation:
     }
 ```
 
-In your `ConversationManagerDelegate` implementation, you can handle conversation events. For example, the conversation manager calls [`conversationManager(_:didActivate:)`](conversationmanagerdelegate/conversationmanager(_:didactivate:).md) when an audio session starts, allowing you to update your app’s UI to show information about the ongoing audio session.
+In your `ConversationManagerDelegate` implementation, you can handle conversation events. For example, the conversation manager calls [`conversationManager(_:didActivate:)`](./conversationmanagerdelegate/conversationmanager%28_,didactivate%29.md) when an audio session starts, allowing you to update your app’s UI to show information about the ongoing audio session.
 
-##### Include a Fallback Option
+##### Include a fallback option
 
 If starting a VoIP conversation fails, you may wish to have the conversation fall back to the system to handle it. While optional, providing a fallback gives people another opportunity to have the conversation. When you let the conversation fall back to the system, the system passes it to the configured default calling app. If a person didn’t configure a default calling app or the default calling app hands the conversation back to the system, the system handles the conversation as a cellular network conversation.
 
-If your app supports being the default dialer app, use [`StartCellularConversationAction`](startcellularconversationaction.md) and [`TelephonyConversationManager`](telephonyconversationmanager.md). For more information, see [`Start a cellular network conversation`](preparing-your-app-to-be-the-default-dialer-app#Start-a-cellular-network-conversation.md).
+If your app supports being the default dialer app, use [`StartCellularConversationAction`](./startcellularconversationaction.md) and [`TelephonyConversationManager`](./telephonyconversationmanager.md). For more information, see [Start a cellular network conversation](./preparing-your-app-to-be-the-default-dialer-app.md#Start-a-cellular-network-conversation).
 
-If your app doesn’t support being the default dialer app, use a `telephony://` URL scheme for your fallback. For more information, see [`Preparing your app to be the default calling app`](https://developer.apple.com/documentation/callkit/preparing-your-app-to-be-the-default-calling-app).
+If your app doesn’t support being the default dialer app, use a `telephony://` URL scheme for your fallback. For more information, see [Preparing your app to be the default calling app](../CallKit/preparing-your-app-to-be-the-default-calling-app.md).
 
-##### Review Default Calling App Functionality
+##### Review default calling app functionality
 
 People may select another app — other than the Phone app or FaceTime — as the default calling app. Before someone can set your app as the default calling app on their device, your app needs to offer VoIP conversation functionality.
 
-When your app receives a conversation as the system’s default calling app, it handles VoIP conversations and passes cellular network conversations to the system as a fallback. For example, when someone configures your app as the default calling app, tapping a telephone number or account in a contact card asks the person for permission to start a conversation using your app. Upon confirmation, your app receives the recipient’s number for the conversation and attempts a VoIP conversation. If the VoIP conversation fails, your app requests the system to handle the conversation as a cellular network conversation. For more information, see [`Include a fallback option`](initiating-voip-conversations-with-livecommunicationkit#Include-a-fallback-option.md).
+When your app receives a conversation as the system’s default calling app, it handles VoIP conversations and passes cellular network conversations to the system as a fallback. For example, when someone configures your app as the default calling app, tapping a telephone number or account in a contact card asks the person for permission to start a conversation using your app. Upon confirmation, your app receives the recipient’s number for the conversation and attempts a VoIP conversation. If the VoIP conversation fails, your app requests the system to handle the conversation as a cellular network conversation. For more information, see [Include a fallback option](./initiating-voip-conversations-with-livecommunicationkit.md#Include-a-fallback-option).
 
 ## See Also
 
-- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+### Essentials
+- [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md)
   Let people configure their device to set your app as the default dialer app.
-- [LiveCommunicationKit updates](../updates/livecommunicationkit.md)
+- [LiveCommunicationKit updates](../Updates/livecommunicationkit.md)
   Learn about important changes to LiveCommunicationKit.
 
 

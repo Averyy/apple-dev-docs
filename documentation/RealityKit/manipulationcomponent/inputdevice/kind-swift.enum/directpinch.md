@@ -1,7 +1,8 @@
 # ManipulationComponent.InputDevice.Kind.directPinch
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pinching hand in close proximity to content.
 

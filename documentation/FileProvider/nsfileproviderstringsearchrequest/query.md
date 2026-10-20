@@ -1,7 +1,8 @@
 # query
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A plaintext string, representing the query a person entered into the system search UI.
 
@@ -12,6 +13,10 @@ A plaintext string, representing the query a person entered into the system sear
 
 ```swift
 var query: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * query;
 ```
 
 

@@ -1,7 +1,8 @@
 # diameter
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Part of the contact’s fit, it measures the diameter of the lens, measured in mm.
 
@@ -20,13 +21,18 @@ Part of the contact’s fit, it measures the diameter of the lens, measured in m
 var diameter: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * diameter;
+```
+
 #### Discussion
 
 The property’s range is 9 to 15 mm.
 
 ## See Also
 
-- [var baseCurve: HKQuantity?](hkcontactslensspecification/basecurve.md)
+### Accessing the specification’s data
+- [var baseCurve: HKQuantity?](./basecurve.md)
   Part of the contact’s fit, it measures the curve of the back side of the contact, measured in mm.
 
 

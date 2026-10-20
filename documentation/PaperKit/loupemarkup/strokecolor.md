@@ -1,7 +1,8 @@
 # strokeColor
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the loupe’s border.
 
@@ -24,9 +25,10 @@ Set this to `nil` for no border.
 
 ## See Also
 
-- [var magnification: CGFloat](loupemarkup/magnification.md)
+### Configuring appearance
+- [var magnification: CGFloat](./magnification.md)
   The magnification level applied to the content displayed within the loupe.
-- [var lineWidth: CGFloat](loupemarkup/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The width of the loupe’s border in points.
 
 

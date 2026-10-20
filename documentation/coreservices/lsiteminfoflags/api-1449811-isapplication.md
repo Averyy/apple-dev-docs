@@ -1,7 +1,8 @@
 # isApplication
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is a single-file or packaged application.
 

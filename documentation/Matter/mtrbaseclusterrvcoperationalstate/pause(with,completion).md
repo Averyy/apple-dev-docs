@@ -1,7 +1,8 @@
 # pause(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func pause(with params: MTRRVCOperationalStateClusterPauseParams?, completion: @escaping @Sendable (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func pause(with params: MTRRVCOperationalStateClusterPauseParams?) async throws -> MTRRVCOperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) pauseWithParams:(MTRRVCOperationalStateClusterPauseParams *) params completion:(void (^)(MTRRVCOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 

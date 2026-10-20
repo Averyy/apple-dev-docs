@@ -1,7 +1,8 @@
 # scaleVisibility
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visibility of the scale view.
 
@@ -18,17 +19,22 @@ The visibility of the scale view.
 var scaleVisibility: MKFeatureVisibility { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKFeatureVisibility scaleVisibility;
+```
+
 #### Discussion
 
 You can configure a scale view to be visible all the time or only when the scale of the map changes.
 
 ## See Also
 
-- [var mapView: MKMapView?](mkscaleview/mapview.md)
+### Getting the scale view attributes
+- [var mapView: MKMapView?](./mapview.md)
   The map view that provides the scale information to the scale view.
-- [var legendAlignment: MKScaleView.Alignment](mkscaleview/legendalignment.md)
+- [var legendAlignment: MKScaleView.Alignment](./legendalignment.md)
   The alignment of the distance information in the scale view.
-- [MKScaleView.Alignment](mkscaleview/alignment.md)
+- [MKScaleView.Alignment](./alignment.md)
   Constants that indicate how the framework should align measurements.
 
 

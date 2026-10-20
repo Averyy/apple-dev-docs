@@ -1,7 +1,8 @@
 # chartLineStyleScale(mapping:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the line style scale for charts.
 
@@ -27,15 +28,16 @@ func chartLineStyleScale<DataValue>(mapping: @escaping (DataValue) -> StrokeStyl
 
 ## See Also
 
-- [func chartLineStyleScale<DataValue>(KeyValuePairs<DataValue, StrokeStyle>) -> some View](view/chartlinestylescale(_:).md)
+### Line style scales
+- [func chartLineStyleScale<DataValue>(KeyValuePairs<DataValue, StrokeStyle>) -> some View](./chartlinestylescale%28_%29.md)
   Configures the line style scale for charts.
-- [func chartLineStyleScale<Domain>(domain: Domain) -> some View](view/chartlinestylescale(domain:).md)
+- [func chartLineStyleScale<Domain>(domain: Domain) -> some View](./chartlinestylescale%28domain%29.md)
   Configures the line style scale for charts.
-- [func chartLineStyleScale<Domain, Range>(domain: Domain, range: Range) -> some View](view/chartlinestylescale(domain:range:).md)
+- [func chartLineStyleScale<Domain, Range>(domain: Domain, range: Range) -> some View](./chartlinestylescale%28domain,range%29.md)
   Configures the line style scale for charts.
-- [func chartLineStyleScale<Range>(range: Range) -> some View](view/chartlinestylescale(range:).md)
+- [func chartLineStyleScale<Range>(range: Range) -> some View](./chartlinestylescale%28range%29.md)
   Configures the line style scale for charts.
-- [func chartLineStyleScale<Domain>(domain: Domain, mapping: (Domain.Element) -> StrokeStyle) -> some View](view/chartlinestylescale(domain:mapping:).md)
+- [func chartLineStyleScale<Domain>(domain: Domain, mapping: (Domain.Element) -> StrokeStyle) -> some View](./chartlinestylescale%28domain,mapping%29.md)
   Configures the line style scale for charts.
 
 

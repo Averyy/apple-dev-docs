@@ -1,14 +1,15 @@
 # kIOFBNS_UnDim
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNS_UnDim = 0x04
 ```
 

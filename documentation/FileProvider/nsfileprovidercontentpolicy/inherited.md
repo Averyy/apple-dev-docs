@@ -1,7 +1,8 @@
 # NSFileProviderContentPolicy.inherited
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -16,11 +17,16 @@
 case inherited
 ```
 
+```c
+NSFileProviderContentPolicyInherited
+```
+
 ## See Also
 
-- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](nsfileprovidercontentpolicy/downloadeagerlyandkeepdownloaded.md)
-- [NSFileProviderContentPolicy.downloadLazily](nsfileprovidercontentpolicy/downloadlazily.md)
-- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](nsfileprovidercontentpolicy/downloadlazilyandevictonremoteupdate.md)
+### Policies
+- [NSFileProviderContentPolicy.downloadEagerlyAndKeepDownloaded](./downloadeagerlyandkeepdownloaded.md)
+- [NSFileProviderContentPolicy.downloadLazily](./downloadlazily.md)
+- [NSFileProviderContentPolicy.downloadLazilyAndEvictOnRemoteUpdate](./downloadlazilyandevictonremoteupdate.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # macOS Tahoe 26 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26 SDK provides support to develop apps for Mac computers running Tahoe 26. The SDK comes bundled with Xcode 26. For information on the compatibility requirements for Xcode 26, see [`Xcode 26 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26-release-notes).
+The macOS 26 SDK provides support to develop apps for Mac computers running Tahoe 26. The SDK comes bundled with Xcode 26. For information on the compatibility requirements for Xcode 26, see [Xcode 26 Release Notes](../Xcode-Release-Notes/xcode-26-release-notes.md).
 
 ##### General
 
@@ -14,13 +15,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Recovery Assistant is a new way to recover your device if it doesn’t start up normally. It can look for problems and attempt to resolve them if found.  (151856202)
 
-##### Agl
+##### AGL
 
 ###### Deprecations
 
 - AGL is no longer available in the macOS SDK. AGL was previously used to present OpenGL content in Carbon apps, and Carbon no longer exists in the SDK. AGL symbols now do nothing on 64-bit systems, including Intel x86_64 and Apple Silicon Macs. It is safe to remove any AGL usage and stop linking AGL. OpenGL still remains in the SDK.  (153913819)
 
-##### Airplay
+##### AirPlay
 
 ###### Known Issues
 
@@ -36,7 +37,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: Updating iOS or iPadOS apps on macOS from the App Store might hang with a spinning progress indicator or with the progress partially complete.  (152878930)
 
-##### Appkit
+##### AppKit
 
 ###### Resolved Issues
 
@@ -55,21 +56,23 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Xcode features like Predictive Code Completion and the coding assistant might require Apple Intelligence to be enabled.   (150889516) **Workaround:** Enable Apple Intelligence in System Settings.
+- Xcode features like Predictive Code Completion and the coding assistant might require Apple Intelligence to be enabled.   (150889516)
 
-##### Assistantschemas
+  **Workaround:** Enable Apple Intelligence in System Settings.
+
+##### AssistantSchemas
 
 ###### Resolved Issues
 
 - Fixed: If you have adopted any of the following email AssistantSchemas, you will experience a compilation error due to a parameter type change: `createDraft`, `updateDraft`, `replyMail`, `forwardMail`, `message`, and `draft`.  (148633307)
 
-##### Authenticationservices
+##### AuthenticationServices
 
 ###### New Features
 
 - `ASAuthorizationControllerRequestOptions.preferImmediatelyAvailableCredentials` now works for passkey registration requests. This request only shows UI when the device is immediately able to create a passkey; otherwise, no UI is shown.  (150688929)
 
-##### Avfoundation
+##### AVFoundation
 
 ###### Resolved Issues
 
@@ -93,7 +96,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - For Catalyst apps built with the latest SDK, `UINavigationItem.title` is the window title rather than the window subtitle.  (142423319)
 - For Catalyst apps built with the latest SDK, `UIBarButtonSystemItem.fixedSpace` and `.flexibleSpace` are now bridged to `NSToolbar`. The system no longer ignores fixed and flexible spaces when `UIBarButtonItems` are automatically converted to the window toolbar in the Mac idiom. However, the width specified via `fixedSpaceItem(ofWidth:)` is ignored.  (145262754)
 
-##### Cloudkit
+##### CloudKit
 
 ###### Resolved Issues
 
@@ -105,26 +108,34 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Characters for Monogram Avatars in some non-English languages might show up as unexpected symbols.  (154824077)
 
-##### Coredata
+##### CoreData
 
 ###### Resolved Issues
 
-- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines. `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
+- Fixed: In beta 5 SDK, CoreData changed several `Sendable` annotations to resolve compatibility issues with Swift 6’s new `MainActor` default isolation feature. These changes include marking `NSManagedObject` as `NS_SWIFT_NONISOLATED NS_SWIFT_NONSENDABLE`, marking `NSManagedObjectContext` as `NS_SWIFT_NONISOLATED NS_SWIFT_SENDABLE`, and requiring `NS_SWIFT_SENDABLE` closures for the family of `perform`, `performBlock`, `performBlockAndWait` and similar methods. These changes are ABI compatible with past releases but might introduce new warnings while building source code that violates the longstanding CoreData concurrency guidelines.
+
+  `NSManagedObject` are mutable reference types inextricably related to others in a graph and cannot be made `Sendable`. They are expected to be isolated to the scope of the `NSManagedObjectContext` that creates or fetches them. `NSManagedObjectContext` is a style of actor which encapsulates its own dispatch queue. While it’s impermissible to use many methods on `NSManagedObjectContext` from other threads, it is permissible to pass references around to invoke the `performBlock` family of methods, for the purpose of routing a `Sendable` closure to its managed dispatch queue. CoreData supports a user default `-com.apple.CoreData.ConcurrencyDebug 1` which can be used to enable additional assertions.  (153848710) (FB18216198)
 
 ###### Deprecations
 
-- This release removes support for the following deprecated `NSPersistentStore` option keys: - `NSPersistentStoreUbiquitousContentNameKey`
-- `NSPersistentStoreUbiquitousContentURLKey`
-- `NSPersistentStoreUbiquitousPeerTokenOption`
-- `NSPersistentStoreRemoveUbiquitousMetadataOption`
-- `NSPersistentStoreUbiquitousContainerIdentifierKey`
-- `NSPersistentStoreRebuildFromUbiquitousContentOption` These keys have been deprecated for more than a decade. Affected apps rebuilt with the iOS or macOS 26 SDK will get errors. Apps built against older SDKs will log warnings when opening the store. The on-device persistent store will be fully usable after these keys are removed from options dictionary, albeit without syncing. For data syncing, these APIs were superseded by `NSPersistentCloudKitContainer` in iOS 13 and SwiftData in iOS 17. If absolutely necessary, the iCloud content remains accessible in the containers with the last baseline as a .zip archive file.  (157297746) (FB19286235)
+- This release removes support for the following deprecated `NSPersistentStore` option keys:
+
+  - `NSPersistentStoreUbiquitousContentNameKey`
+  - `NSPersistentStoreUbiquitousContentURLKey`
+  - `NSPersistentStoreUbiquitousPeerTokenOption`
+  - `NSPersistentStoreRemoveUbiquitousMetadataOption`
+  - `NSPersistentStoreUbiquitousContainerIdentifierKey`
+  - `NSPersistentStoreRebuildFromUbiquitousContentOption`
+
+  These keys have been deprecated for more than a decade. Affected apps rebuilt with the iOS or macOS 26 SDK will get errors. Apps built against older SDKs will log warnings when opening the store.
+
+  The on-device persistent store will be fully usable after these keys are removed from options dictionary, albeit without syncing. For data syncing, these APIs were superseded by `NSPersistentCloudKitContainer` in iOS 13 and SwiftData in iOS 17. If absolutely necessary, the iCloud content remains accessible in the containers with the last baseline as a .zip archive file.  (157297746) (FB19286235)
 
 ##### Disk Images
 
 ###### New Features
 
-- macOS now supports the Apple Sparse Image Format (ASIF). These space-efficient images can be created with the `diskutil image` command-line tool or the Disk Utility application and are suitable for various uses, including as a backing store for virtual machines storage via the Virtualization framework. See [`VZDiskImageStorageDeviceAttachment`](https://developer.apple.comhttps://developer.apple.com/documentation/virtualization/vzdiskimagestoragedeviceattachment).  (152040832)
+- macOS now supports the Apple Sparse Image Format (ASIF). These space-efficient images can be created with the `diskutil image` command-line tool or the Disk Utility application and are suitable for various uses, including as a backing store for virtual machines storage via the Virtualization framework. See [VZDiskImageStorageDeviceAttachment](../Virtualization/vzdiskimagestoragedeviceattachment.md).  (152040832)
 
 ##### Documents
 
@@ -140,7 +151,9 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Users who enable path bar or status bar in Finder and use list view might be unable to access the last item in the list.  (151917092) **Workaround:** Disable path bar or status bar temporarily.
+- Users who enable path bar or status bar in Finder and use list view might be unable to access the last item in the list.  (151917092)
+
+  **Workaround:** Disable path bar or status bar temporarily.
 
 ##### Foundation
 
@@ -153,7 +166,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: Functions that initialize a string from a C-string pointer do not validate that the provided encoding is a valid encoding for C-strings.  (143756086) (FB16417968)
 
-##### Foundation Models Framework
+##### Foundation Models framework
 
 ###### New Features
 
@@ -187,8 +200,12 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091) **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
-- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065) **Workaround:** Wrap the enum in a struct.
+- Some instructions and prompts to the model might not lead to expected responses. Use Feedback Assistant to report satisfactory or unsatisfactory cases. When applicable, you can use `LanguageModelSession.logFeedbackAttachment()` to serialize the feedback to a JSON file and attach it to Feedback Assistant.  (152318091)
+
+  **Workaround:** Refine your instructions and prompts using `#Playground` in Xcode. When applying guided generation with a `@Generable` type, add `@Guide` with a custom description on properties to steer the model’s responses.
+- If `Argument` type is an enum with associated type, tools will encounter a `ToolCallError` with an underlying `decodingFailure` when the model attempts to call it.  (156723065)
+
+  **Workaround:** Wrap the enum in a struct.
 
 ##### Full Screen
 
@@ -201,7 +218,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### New Features
 
 - For supported game controllers, pressing the Home button once opens the Game Overlay. Set `preferredSystemGestureState` to receive additional Home button press events.  (137780853)
-- Pair multiple Apple devices to your DualSense or DualSense Edge controller and easily switch between them directly using the controller or Bluetooth settings. See [`this PlayStation blog post`](https://developer.apple.comhttps://blog.playstation.com/2025/07/23/new-ps5-system-update-beta-previews-dualsense-wireless-controller-pairing-across-multiple-devices/) for details.  (137782227)
+- Pair multiple Apple devices to your DualSense or DualSense Edge controller and easily switch between them directly using the controller or Bluetooth settings. See [this PlayStation blog post](https://blog.playstation.com/2025/07/23/new-ps5-system-update-beta-previews-dualsense-wireless-controller-pairing-across-multiple-devices/) for details.  (137782227)
 
 ##### Game Mode
 
@@ -211,7 +228,9 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Game Mode will not activate for application binaries spawned directly from Terminal.  (153127050) **Workaround:** Use the `open` command to launch your game from Terminal. You can pass arguments, change environment variables, and redirect standard output/error when using this command, such as `open MyGame.app --stdout /tmp/mygame.out --stderr /tmp/mygame.err --env MTL_HUD_ENABLED=1 --args -MyGameArgument -AnotherArgument`. See `man open` for more information.
+- Game Mode will not activate for application binaries spawned directly from Terminal.  (153127050)
+
+  **Workaround:** Use the `open` command to launch your game from Terminal. You can pass arguments, change environment variables, and redirect standard output/error when using this command, such as `open MyGame.app --stdout /tmp/mygame.out --stderr /tmp/mygame.err --env MTL_HUD_ENABLED=1 --args -MyGameArgument -AnotherArgument`. See `man open` for more information.
 
 ##### Image Playground
 
@@ -240,7 +259,9 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663) **Workaround:** Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
+- Custom tap gesture callbacks registered using `onTapGesture` might not work as expected on a SwiftUI Map.  (157612948) (FB19394663)
+
+  **Workaround:** Use `simultaneousGesture(TapGesture().onEnded {})` to register the callback.
 
 ##### Memory Tools
 
@@ -266,14 +287,18 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Known Issues
 
 - Users on older devices won’t see compatibility messages for polls, so they might be unaware a poll was sent.  (148545742)
-- Expanding Conversation Details causes the list of conversations to collapse.  (149436051) **Workaround:** Closing Conversation Details will bring back the list.
-- Scrolling through a Messages conversation might be sluggish.  (152453655) **Workaround:** Quit and relaunch Messages.
+- Expanding Conversation Details causes the list of conversations to collapse.  (149436051)
+
+  **Workaround:** Closing Conversation Details will bring back the list.
+- Scrolling through a Messages conversation might be sluggish.  (152453655)
+
+  **Workaround:** Quit and relaunch Messages.
 
 ##### Metal
 
 ###### New Features
 
-- Metal 4 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (113781091)
+- Metal 4 is now supported. See [Metal](https://developer.apple.com/metal/) for additional details.  (113781091)
 
 ###### Resolved Issues
 
@@ -282,9 +307,11 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367) **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [`documentation`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/validating-your-apps-metal-shader-usage/#Selectively-enable-Shader-Validation).
+- Metal Shader Validation might not work with Metal 4 ray tracing pipelines.  (152520367)
 
-##### Metalfx
+  **Workaround:** Selectively disable Shader Validation for pipelines using ray tracing. See [documentation](../Xcode/validating-your-apps-metal-shader-usage.md#Selectively-enable-Shader-Validation).
+
+##### MetalFX
 
 ###### Resolved Issues
 
@@ -297,7 +324,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: You might experience audio issues when using the Music app and changing the underlying audio device sample rate.  (152465491)
 
-##### Networkextension
+##### NetworkExtension
 
 ###### Deprecations
 
@@ -309,13 +336,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: The icons for Calendar notifications might appear washed out.  (151658533)
 
-##### Nslog
+##### NSLog
 
 ###### New Features
 
 - Dynamic string data in format arguments for `NSLog` will be redacted to `\<private\>` in the Unified Logging System. This specifically targets data that enters the Unified Logging System via `NSLog`, and will not impact the Xcode console or `NSLog`’s `stdout` output. If you wish to log un-redacted data to the Unified Logging System please use the “os_log” or “Logger” interfaces.  (137129180)
 
-##### Nstextview
+##### NSTextView
 
 ###### New Features
 
@@ -327,11 +354,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - A new algorithm significantly improves `PhotogrammetrySession` reconstruction quality of low-texture objects not captured with the `ObjectCaptureSession` front end. It will be downloaded and cached once in the background when the `PhotogrammetrySession` is used at runtime. If network isn’t available at that time, the old low quality model will be used until the new one can be downloaded. There is no code change needed to get this improved model.  (145220451)
 
-##### Photos Photos Picker
+##### Photos / Photos Picker
 
 ###### Known Issues
 
-- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781) **Workaround:** Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
+- Invoking search in the Photos picker causes the picker to crash. Or invoking Search in a collection in Photos causes Search to crash.  (152403781)
+
+  **Workaround:** Use the Photos app to search for the content. Once you’ve found it, you can share or copy it to continue with the workflow. Use Search in the Library tab to find the content.
 
 ##### Photos Picker
 
@@ -345,11 +374,13 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: Variants menu does not open in Quick Look while trying to view different configurations of a USDZ asset made with Variants.  (154817946)
 
-##### Realitykit
+##### RealityKit
 
 ###### Resolved Issues
 
-- Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order. In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
+- Fixed: Entities with a PortalComponent ignore any ModelSortGroupComponent and instead use a fixed rendering order.
+
+  In case of sorting rendering issues with portal surface, explicitly add a ModelSortGroupComponent using a `.planarUIAlwaysBehind` sort group.  (149899345)
 - Fixed: `ParticleEmitterComponent` does not render properly on iOS, macOS, and tvOS.  (152201501)
 - Fixed: The `animate` functions on `Entity` and `RealityViewContent` do not start animations.  (152456435)
 
@@ -363,7 +394,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - You can test that your apps no longer depend on Rosetta by setting the boot-arg `nox86exec=1`. When this boot-arg is set, any process that would normally run through Rosetta will immediately crash on launch and generate a crash report. This can by set by running `sudo nvram boot-args="nox86exec=1"` and then rebooting the system.  (136764433)
 
-##### Rtl
+##### RTL
 
 ###### Known Issues
 
@@ -373,7 +404,11 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Resolved Issues
 
-- Fixed: macOS 26 users might experience Safari page loading issues on facebook.com and potentially other websites, due to a new race in the network stack. Affected users should update to macOS 26 beta 5 and clear related cache by visiting Safari > Settings… > Privacy > Manage Website Data…, then deleting entries for facebook. - and fbcdn.net resources. Restart Safari. Users will need to re-login to the website. Users experiencing issues on other websites can consider clearing cache for those websites or clearing all website data.  (153547547)
+- Fixed: macOS 26 users might experience Safari page loading issues on facebook.com and potentially other websites, due to a new race in the network stack.
+
+  Affected users should update to macOS 26 beta 5 and clear related cache by visiting Safari > Settings… > Privacy > Manage Website Data…, then deleting entries for facebook.
+
+  - and fbcdn.net resources. Restart Safari. Users will need to re-login to the website. Users experiencing issues on other websites can consider clearing cache for those websites or clearing all website data.  (153547547)
 
 ###### Known Issues
 
@@ -402,7 +437,9 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 ###### Known Issues
 
 - Users who enable Reduce Transparency might encounter flickering in background windows or the Dock.  (152060485)
-- If System Settings > Desktop & Dock > Displays have separate Spaces is disabled, WindowServer will crash at login time.  (153570422) **Workaround:** Boot into Recovery, then mount the Data volume on your partition. Launch Terminal and run `rm /Volumes/<Partition Name "Macintosh HD">/Users/<user name>/Library/Preferences/com.apple.Spaces.plist`.
+- If System Settings > Desktop & Dock > Displays have separate Spaces is disabled, WindowServer will crash at login time.  (153570422)
+
+  **Workaround:** Boot into Recovery, then mount the Data volume on your partition. Launch Terminal and run `rm /Volumes/<Partition Name "Macintosh HD">/Users/<user name>/Library/Preferences/com.apple.Spaces.plist`.
 
 ##### Setup Assistant
 
@@ -426,7 +463,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - Fixed: Siri Visual Responses might be illegible behind certain backgrounds.  (151682699)
 - Fixed: Knowledge requests that are handled by ChatGPT might produce results that are based on stale data.  (154889929)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
@@ -470,7 +507,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - `lengthOfBytes(using: .utf16)` and `-lengthOfBytesUsingEncoding: NSUTF16StringEncoding/NSUnicodeStringEncoding` might produce an incorrect result when used on Swift Strings, including `NSString`s formed by bridging Swift Strings to Objective-C.  (156675395)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -482,56 +519,60 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - In apps built with the macOS 26 and iOS 26 SDKs, a `Picker` view of a style that produces a button-like control now has a fitted sizing behavior by default. If needed, use the `buttonSizing(_:)` view modifier to make the `Picker` flexible and fill the available width of its container.  (136649748)
 - The default label style for macOS menu content is now `.titleAndIcon`.  (137306701)
 - The implementation of some macOS buttons no longer uses `NSButton`.  (139105246)
-- When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference: ```swift
- import SwiftUI
- 
- struct ContentView: View {
-     @State private var presentPopover = false
-     var body: some View {
-         NavigationLink("Custom Link", value: 84)
-             .buttonStyle(MyButtonStyle(containerValue: "Eighty-four"))
-     }
- }
- 
- struct ParentView: View {
-     var body: some View {
-         Group(subviews: ContentView()) { subviews in
-             ForEach(subviews) { subview in
-                 Text(subview.containerValues.myCustomValue)
-             }
-         }
-         .frame(minWidth: 100, minHeight: 100)
-     }
- }
- 
- struct MyButtonStyle: PrimitiveButtonStyle {
-     var containerValue: String
-     func makeBody(configuration: Configuration) -> some View {
-         Button(configuration)
-             .buttonBorderShape(.circle)
-             .containerValue(\.myCustomValue, containerValue)
-     }
- }
- 
- private struct MyContainerValueKey: ContainerValueKey {
-     static let defaultValue: String = "Default value"
- }
- 
- extension ContainerValues {
-     var myCustomValue: String {
-         get { self[MyContainerValueKey.self] }
-         set { self[MyContainerValueKey.self] = newValue }
-     }
- }
- 
- #Preview {
-     ParentView()
- }
-``` (140283584)
+- When linking news SDKs, `NavigationLink`s produce a single view, rather than a list of views in view list contexts. This change improves performance of many `NavigationLink`s in lazy containers like `List`. However, if you are relying on `ContainerValues` propagating out of the `label` view of a `NavigationLink`, or similarly relying on `ContainerValues` of a `ButtonStyle` used to style a link, the `containerValue(_:,_:)` modifier should be moved outside of the link. Below is a minimal example that demonstrates the behavior difference:
+
+  ```swift
+   import SwiftUI
+   
+   struct ContentView: View {
+       @State private var presentPopover = false
+       var body: some View {
+           NavigationLink("Custom Link", value: 84)
+               .buttonStyle(MyButtonStyle(containerValue: "Eighty-four"))
+       }
+   }
+   
+   struct ParentView: View {
+       var body: some View {
+           Group(subviews: ContentView()) { subviews in
+               ForEach(subviews) { subview in
+                   Text(subview.containerValues.myCustomValue)
+               }
+           }
+           .frame(minWidth: 100, minHeight: 100)
+       }
+   }
+   
+   struct MyButtonStyle: PrimitiveButtonStyle {
+       var containerValue: String
+       func makeBody(configuration: Configuration) -> some View {
+           Button(configuration)
+               .buttonBorderShape(.circle)
+               .containerValue(\.myCustomValue, containerValue)
+       }
+   }
+   
+   private struct MyContainerValueKey: ContainerValueKey {
+       static let defaultValue: String = "Default value"
+   }
+   
+   extension ContainerValues {
+       var myCustomValue: String {
+           get { self[MyContainerValueKey.self] }
+           set { self[MyContainerValueKey.self] = newValue }
+       }
+   }
+   
+   #Preview {
+       ParentView()
+   }
+  ```
+
+  (140283584)
 - `List` no longer ignores the vertical insets of rows with a height close to the default minimum height on iOS and visionOS. Use `listRowInsets(_:_:)` to change the vertical row insets.  (141160852)
 - In `NavigationSplitView` and `TabView`s configured as `sidebarAdaptable`, the view trailing the sidebar’s safe area is inset in the width of the sidebar. It can display content outside its safe area, underneath the sidebar.  (141222137)
 - In macOS, a `Form` of the `.grouped` style now has a more compact appearance when placed within a sidebar or inspector.  (141534926)
-- Reuse existing AppKit gesture recognizers in SwiftUI using [`NSGestureRecognizerRepresentable`](https://developer.apple.comhttps://developer.apple.com/documentation/SwiftUI/NSGestureRecognizerRepresentable), and refer to them by name using [`name`](https://developer.apple.comhttps://developer.apple.com/documentation/AppKit/NSGestureRecognizer/name).  (142918018)
+- Reuse existing AppKit gesture recognizers in SwiftUI using [NSGestureRecognizerRepresentable](../SwiftUI/nsgesturerecognizerrepresentable.md), and refer to them by name using [name](../AppKit/nsgesturerecognizer/name.md).  (142918018)
 - On macOS, after linking new SDKs, the style of search fields with `SearchFieldPlacement.sidebar` is now fixed to the toolbar. Previously the search field would scroll as the first element in the list.  (143546967)
 - In apps that adopt the new design, the `buttonBorderShape(_:)` view modifier can be used to customize the shape of bordered buttons. Previously this modifier only affected buttons in Widgets in macOS.  (145773436)
 - The `buttonSizing(_:)` view modifier specifies the sizing behavior of `Button`, `Picker`, `Menu`, and other button-producing controls. If you are using `Spacer` views or an infinite-width frame in your `Button` label to create a flexible button, apply `buttonSizing(.flexible)` to the `Button` instead.  (146327046)
@@ -543,7 +584,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - Fixed: In macOS, `Button` inherits its environment’s font instead of using a default font appropriate for its `controlSize`. Apply view modifiers to the button’s label to customize its font.  (92434021)
 - Fixed: In macOS, the value label of `MenuPickerStyle` does not truncate when it is long enough to cause the button to be wider than its container.  (93843377)
 - Fixed: The menu content of some `Menu` views does not update as the result of a state change.  (106878937)
-- Fixed: [`View.onHover(perform:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/onhover(perform:)) and [`View.onContinuousHover(coordinateSpace:perform:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/oncontinuoushover(coordinatespace:perform:)) affect hit-testing for gestures. Gestures are not received if one of these view modifiers is used within an overlay.  (108560020)
+- Fixed: [View.onHover(perform:)](../SwiftUI/view/onhover%28perform%29.md) and [View.onContinuousHover(coordinateSpace:perform:)](../SwiftUI/view/oncontinuoushover%28coordinatespace,perform%29.md) affect hit-testing for gestures. Gestures are not received if one of these view modifiers is used within an overlay.  (108560020)
 - Fixed: Section views without `isExpanded` binding are collapsible in a sidebar-styled List on macOS.  (115797465) (FB13192271)
 - Fixed: `listSectionSpacing` does not work correctly for sections that have headers and footers. For more control over the list section layout, use the `listSectionMargins` modifier.  (140929163)
 - Fixed: On iOS, `navigationSplitViewColumnWidth()` does not respect the specified minimum and maximum column widths.  (143529326)
@@ -551,21 +592,27 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 - Fixed: In custom layouts that do not implement `explicitAlignment(of:in:proposal:subviews:cache:)`, alignment guides do not work correctly for a right-to-left layout direction.  (145073832)
 - Fixed: Applying a `bold` modifier to `Text` resets the `weight` configuration. The interaction of `bold` and `weight` is not consistent between Text and Font.  (147270079)
 - Fixed: Environment updates from outside of a popover might fail to propagate into the popover’s content view.  (147954025)
-- Fixed: On platforms supporting edge-attached and non-edge-attached sheets, non-edge-attached sheets present erroneously as full-screen covers when `.navigationTransition(.zoom...)` is specified. If you wish to keep the full-screen cover in compact size classes, configure a sheet with: ```swift
- .sheet(...) {
-    ContentView()
-     .navigationTransition(.zoom...)
-     .presentationSizing(.page)
-     .presentationCompactAdaptation(.fullScreen)
-``` (150455117)
+- Fixed: On platforms supporting edge-attached and non-edge-attached sheets, non-edge-attached sheets present erroneously as full-screen covers when `.navigationTransition(.zoom...)` is specified. If you wish to keep the full-screen cover in compact size classes, configure a sheet with:
+
+  ```swift
+   .sheet(...) {
+      ContentView()
+       .navigationTransition(.zoom...)
+       .presentationSizing(.page)
+       .presentationCompactAdaptation(.fullScreen)
+  ```
+
+  (150455117)
 - Fixed: If Default Actor Isolation is set to `MainActor`, `@Animatable` macro emits concurrency warnings in Swift 5 language mode and does not compile in Swift 6 language mode.  (152524435)
-- Fixed: Gestures do not have the same lower priority over the view’s existing `UIGestureRecognizer`s and `NSGestureRecognizer`s as they do over the view’s existing SwiftUI gestures. In apps built with iOS 26, macOS 26, tvOS 26, and visionOS 26, use [`highPriorityGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/highprioritygesture(_:isenabled:)) to make sure your gesture takes precedence over the view’s existing gestures, or use [`simultaneousGesture(_:isEnabled:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/simultaneousgesture(_:isenabled:)) to give your gesture the same priority as the view’s existing gestures.  (155581361)
+- Fixed: Gestures do not have the same lower priority over the view’s existing `UIGestureRecognizer`s and `NSGestureRecognizer`s as they do over the view’s existing SwiftUI gestures.
+
+  In apps built with iOS 26, macOS 26, tvOS 26, and visionOS 26, use [highPriorityGesture(_:isEnabled:)](../SwiftUI/view/highprioritygesture%28_,isenabled%29.md) to make sure your gesture takes precedence over the view’s existing gestures, or use [simultaneousGesture(_:isEnabled:)](../SwiftUI/view/simultaneousgesture%28_,isenabled%29.md) to give your gesture the same priority as the view’s existing gestures.  (155581361)
 
 ###### Deprecations
 
 - `Text` concatenation using the `+` operator is deprecated because it makes it hard to create localized strings that are correct across all languages. Use `Text` interpolation instead. See documentation on `Text` for more info on how to produce localized strings.  (128144043)
 
-##### Textkit
+##### TextKit
 
 ###### New Features
 
@@ -573,9 +620,11 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Resolved Issues
 
-- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine. With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
+- Fixed: The directionality of `NSParagraphStyle` indentation properties (`firstLineHeadIndent`, `headIndent`, and `tailIndent`) is determined by inconsistent hidden rules implemented by the TextKit typesetting engine.
 
-##### Textkit 2
+  With iOS 26, macOS 26, tvOS 26, watchOS 26, and visionOS 26, the TextKit 2 typesetting engine has been standardized to utilize the resolved writing direction for the paragraph when linked with the OS 26 versions of the corresponding SDKs. For binary compatibility, applications developed with prior SDK versions will use the UI language in a subset of API interfaces. Specifically, for `UILabel`, `NSTextField`, `SwiftUI.Text`, and `NSStringDrawing`, the indentation directionality is determined by the UI language queried by passing nil to `NSParagraphStyle. defaultWritingDirection()` in applications built with prior SDK versions.  (155893102)
+
+##### TextKit 2
 
 ###### New Features
 
@@ -585,15 +634,17 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ###### Known Issues
 
-- For Catalyst apps using `.translationTask()`, buttons in the download approval UI might not work.  (151313115) **Workaround:** Either manually download the languages you need beforehand from System Settings, or build your Catalyst app with the “Optimize for Mac” setting.
+- For Catalyst apps using `.translationTask()`, buttons in the download approval UI might not work.  (151313115)
 
-##### Uikit
+  **Workaround:** Either manually download the languages you need beforehand from System Settings, or build your Catalyst app with the “Optimize for Mac” setting.
+
+##### UIKit
 
 ###### New Features
 
 - In TextKit 2, the `includesTextListMarkers` property has been introduced to `NSTextList`, `NSTextContentStorage` and `NSWritingToolsCoordinator`. For paragraphs associated with `NSTextList`, the property controls whether to include the text list marker string in the `NSAttributedString` contents. The classes within TextKit 1 expect the marker string, while the classes within TextKit 2 do not.  (144903293)
 
-##### Videotoolbox
+##### VideoToolbox
 
 ###### Resolved Issues
 
@@ -611,7 +662,7 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 - Fixed: Users might see a blank white button on some tips for Weather features. The button will be operable.  (152088799)
 
-##### Webkit Api
+##### WebKit API
 
 ###### New Features
 
@@ -634,17 +685,18 @@ The macOS 26 SDK provides support to develop apps for Mac computers running Taho
 
 ## See Also
 
-- [macOS Tahoe 26.6 Release Notes](macos-26_6-release-notes.md)
+### macOS 26
+- [macOS Tahoe 26.6 Release Notes](./macos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.5 Release Notes](macos-26_5-release-notes.md)
+- [macOS Tahoe 26.5 Release Notes](./macos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.4 Release Notes](macos-26_4-release-notes.md)
+- [macOS Tahoe 26.4 Release Notes](./macos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
+- [macOS Tahoe 26.3 Release Notes](./macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.2 Release Notes](macos-26_2-release-notes.md)
+- [macOS Tahoe 26.2 Release Notes](./macos-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Tahoe 26.1 Release Notes](macos-26_1-release-notes.md)
+- [macOS Tahoe 26.1 Release Notes](./macos-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

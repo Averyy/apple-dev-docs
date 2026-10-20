@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDButton.ButtonType.continue
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button type that continues the Sign in with Apple authorization process.
 
@@ -19,13 +20,18 @@ A button type that continues the Sign in with Apple authorization process.
 case `continue`
 ```
 
+```c
+ASAuthorizationAppleIDButtonTypeContinue
+```
+
 ## See Also
 
-- [static var `default`: ASAuthorizationAppleIDButton.ButtonType](asauthorizationappleidbutton/buttontype/default.md)
+### Choosing a Button Type
+- [static var `default`: ASAuthorizationAppleIDButton.ButtonType](./default.md)
   A default button type for the Sign in with Apple authorization process.
-- [ASAuthorizationAppleIDButton.ButtonType.signUp](asauthorizationappleidbutton/buttontype/signup.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signUp](./signup.md)
   A button type that allows the user to sign up for Sign in with Apple.
-- [ASAuthorizationAppleIDButton.ButtonType.signIn](asauthorizationappleidbutton/buttontype/signin.md)
+- [ASAuthorizationAppleIDButton.ButtonType.signIn](./signin.md)
   A button type that performs authorization using Sign in with Apple.
 
 

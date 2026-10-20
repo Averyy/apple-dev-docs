@@ -1,7 +1,8 @@
 # isExplicitlyIncluded
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
@@ -12,11 +13,16 @@
 var isExplicitlyIncluded: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isExplicitlyIncluded) BOOL explicitlyIncluded;
+```
+
 ## See Also
 
-- [var key: String?](nsdictionarycontrollerkeyvaluepair/key.md)
-- [var localizedKey: String?](nsdictionarycontrollerkeyvaluepair/localizedkey.md)
-- [var value: Any?](nsdictionarycontrollerkeyvaluepair/value.md)
+### Instance Properties
+- [var key: String?](./key.md)
+- [var localizedKey: String?](./localizedkey.md)
+- [var value: Any?](./value.md)
 
 
 ---

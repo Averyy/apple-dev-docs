@@ -1,22 +1,27 @@
 # intervalComponents
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date components that define the time interval for each statistics object in the collection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var intervalComponents: DateComponents { get }
+```
+
+```objc
+@property (copy, readonly) NSDateComponents * intervalComponents;
 ```
 
 #### Discussion
@@ -69,9 +74,10 @@ year.year = 1;
 
 ## See Also
 
-- [var anchorDate: Date](hkstatisticscollectionquery/anchordate.md)
+### Getting Property Data
+- [var anchorDate: Date](./anchordate.md)
   The anchor date for the collection’s time intervals.
-- [var options: HKStatisticsOptions](hkstatisticscollectionquery/options.md)
+- [var options: HKStatisticsOptions](./options.md)
   A list of options that define the type of statistical calculations performed and the way in which data from multiple sources are merged.
 
 

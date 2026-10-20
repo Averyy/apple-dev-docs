@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,9 +19,12 @@
 func map<T>(_ transform: @escaping (Output) -> T) -> Publishers.CompactMap<Upstream, T>
 ```
 
+Available when `Upstream` conforms to `Publisher`.
+
 ## See Also
 
-- [func compactMap<T>((Output) -> T?) -> Publishers.CompactMap<Upstream, T>](publishers/compactmap/compactmap(_:).md)
+### Mapping elements
+- [func compactMap<T>((Output) -> T?) -> Publishers.CompactMap<Upstream, T>](./compactmap%28_%29.md)
 
 
 ---

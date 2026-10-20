@@ -1,16 +1,17 @@
 # UIDynamicAnimatorDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-To respond to the pausing or resumption of UIKit dynamic animation, configure a custom class to adopt the [`UIDynamicAnimatorDelegate`](uidynamicanimatordelegate.md) protocol. Then, in a dynamic animator (an instance of the [`UIDynamicAnimator`](uidynamicanimator.md) class), set the delegate to be an instance of your custom class.
+To respond to the pausing or resumption of UIKit dynamic animation, configure a custom class to adopt the [`UIDynamicAnimatorDelegate`](./uidynamicanimatordelegate.md) protocol. Then, in a dynamic animator (an instance of the [`UIDynamicAnimator`](./uidynamicanimator.md) class), set the delegate to be an instance of your custom class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,27 @@ To respond to the pausing or resumption of UIKit dynamic animation, configure a 
 protocol UIDynamicAnimatorDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDynamicAnimatorDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to animation pausing and resumption
-- [func dynamicAnimatorDidPause(UIDynamicAnimator)](uidynamicanimatordelegate/dynamicanimatordidpause(_:).md)
+- [func dynamicAnimatorDidPause(UIDynamicAnimator)](./uidynamicanimatordelegate/dynamicanimatordidpause%28_%29.md)
   Called when a dynamic animator pauses the animations for its behaviors’ associated dynamic items.
-- [func dynamicAnimatorWillResume(UIDynamicAnimator)](uidynamicanimatordelegate/dynamicanimatorwillresume(_:).md)
+- [func dynamicAnimatorWillResume(UIDynamicAnimator)](./uidynamicanimatordelegate/dynamicanimatorwillresume%28_%29.md)
   Called when a dynamic animator is about to resume the animations for its behaviors’ associated dynamic items.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any UIDynamicAnimatorDelegate)?](uidynamicanimator/delegate.md)
+### Responding to animation changes
+- [var delegate: (any UIDynamicAnimatorDelegate)?](./uidynamicanimator/delegate.md)
   The delegate for responding to pausing or resumption of animation.
 
 

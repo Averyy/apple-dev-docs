@@ -1,26 +1,27 @@
 # Creating width and device variants of strings
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Change a localized string for different interface widths and devices.
 
 #### Overview
 
-> ❗ **Important**: In Xcode 15 and later, use Dynamic Type instead of width variants and string catalogs to create device variants. For more information, see [`Supporting multiple languages in your app`](supporting-multiple-languages-in-your-app.md) and  [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
+> ❗ **Important**: In Xcode 15 and later, use Dynamic Type instead of width variants and string catalogs to create device variants. For more information, see [Supporting multiple languages in your app](./supporting-multiple-languages-in-your-app.md) and  [Localizing and varying text with a string catalog](./localizing-and-varying-text-with-a-string-catalog.md).
 
 You can use a `.stringsdict` file to provide variants of a string for different view widths and for different devices. For example, display a different string for an iOS device in landscape or in portrait mode, or display a different string when your iPad app built with Mac Catalyst runs on a Mac.
 
 A `.stringsdict` file is a property list that defines plural, width, and device variants of localizable strings. The `.stringsdict` file contains a dictionary of key-value pairs where the values are either a plural, width, or device rule.
 
-The key for a rule is the string that you pass to [`Text`](https://developer.apple.com/documentation/swiftui/text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro, and similar APIs in your code. The rule can be a plural, width, or device rule that determines which formatted string the macro returns.
+The key for a rule is the string that you pass to [`Text`](../SwiftUI/text.md) structures, the [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro, and similar APIs in your code. The rule can be a plural, width, or device rule that determines which formatted string the macro returns.
 
-To create plural variants for formatted strings that contain amounts, see [`Localizing strings that contain plurals`](localizing-strings-that-contain-plurals.md).
+To create plural variants for formatted strings that contain amounts, see [Localizing strings that contain plurals](./localizing-strings-that-contain-plurals.md).
 
-##### Add a Strings Dictionary File to Your Project
+##### Add a strings dictionary file to your project
 
 To add a `.stringsdict` file to your project, choose File > New > File from Template. In the sheet that appears, select the platform, enter `strings` in the Filter field, select Stringsdict File, and click Next. In the dialog that appears, enter a name for the file, choose a location, and click Create.
 
-##### Provide String Variants for Different Widths
+##### Provide string variants for different widths
 
 A *width rule* specifies variants for different available widths in the user interface. It contains a single dictionary with a single key-value pair. The key in the dictionary is `NSStringVariableWidthRuleType` and the value is another dictionary with key-value pairs for each variant. The key for a variant is a width and the value is a string.
 
@@ -46,7 +47,7 @@ In the following `.stringsdict` file, for the `hello` string in the code, the wi
 
 ```
 
-For [`UILabel`](https://developer.apple.com/documentation/uikit/uilabel) objects, the width is in em units that fit across the app window; otherwise, the width doesn’t have an associated unit.
+For [`UILabel`](../UIKit/uilabel.md) objects, the width is in em units that fit across the app window; otherwise, the width doesn’t have an associated unit.
 
 The width rule defines variants for a range of widths:
 
@@ -55,9 +56,9 @@ The width rule defines variants for a range of widths:
 
 In the code above, if the width is `2`, the macro returns `Hi`. If the width is `52`, the macro returns `Hello`.
 
-To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/foundation/nsstring/variantfittingpresentationwidth(_:)) method.
+To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](../Foundation/nsstring/variantfittingpresentationwidth%28_%29.md) method.
 
-##### Provide Device Specific String Variants
+##### Provide device-specific string variants
 
 A *device rule* specifies a different string depending on the device. For example, your universal app may present different instructions to the user when running on an iOS device than when running on a Mac.
 
@@ -96,7 +97,8 @@ In the following `.stringsdict` file, when you pass `UserInstructions` as the st
 
 ## See Also
 
-- [Localizing strings that contain plurals](localizing-strings-that-contain-plurals.md)
+### Legacy localization techniques
+- [Localizing strings that contain plurals](./localizing-strings-that-contain-plurals.md)
   Use a strings dictionary file to ensure correct localization of strings that contain language plurals.
 
 

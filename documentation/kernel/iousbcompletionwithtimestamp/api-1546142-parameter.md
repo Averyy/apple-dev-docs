@@ -1,7 +1,8 @@
 # parameter
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The parameter to pass to the action function.
 
@@ -10,15 +11,16 @@ The parameter to pass to the action function.
 
 ## Declaration
 
-```swift
+```c
 void *parameter;
 ```
 
 ## See Also
 
-- [target](iousbcompletionwithtimestamp/1546468-target.md)
+### Getting the Properties
+- [target](./api-1546468-target.md)
   The target to pass to the action function.
-- [action](iousbcompletionwithtimestamp/1546300-action.md)
+- [action](./api-1546300-action.md)
   The function to call.
 
 

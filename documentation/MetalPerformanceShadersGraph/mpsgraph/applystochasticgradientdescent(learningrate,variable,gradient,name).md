@@ -1,7 +1,8 @@
 # applyStochasticGradientDescent(learningRate:variable:gradient:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The Stochastic gradient descent performs a gradient descent `variable = variable - (learningRate * g)` where, `g` is gradient of error wrt variable this op directly writes to the variable
 
@@ -17,6 +18,10 @@ The Stochastic gradient descent performs a gradient descent `variable = variable
 
 ```swift
 func applyStochasticGradientDescent(learningRate learningRateTensor: MPSGraphTensor, variable: MPSGraphVariableOp, gradient gradientTensor: MPSGraphTensor, name: String?) -> MPSGraphOperation
+```
+
+```objc
+- (MPSGraphOperation *) applyStochasticGradientDescentWithLearningRateTensor:(MPSGraphTensor *) learningRateTensor variable:(MPSGraphVariableOp *) variable gradientTensor:(MPSGraphTensor *) gradientTensor name:(NSString *) name;
 ```
 
 #### Return Value

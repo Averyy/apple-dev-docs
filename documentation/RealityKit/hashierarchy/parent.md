@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent entity.
 
@@ -11,7 +12,7 @@ The parent entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ The parent entity.
 
 #### Discussion
 
-An entity has at most one parent entity. If an entity isn’t part of a hierarchy, or if it is a root entity, the [`parent`](hashierarchy/parent.md) property is `nil`.
+An entity has at most one parent entity. If an entity isn’t part of a hierarchy, or if it is a root entity, the [`parent`](./parent.md) property is `nil`.
 
-Use the [`setParent(_:preservingWorldTransform:)`](hashierarchy/setparent(_:preservingworldtransform:).md) method to change an entity’s parent. Use the [`removeFromParent(preservingWorldTransform:)`](hashierarchy/removefromparent(preservingworldtransform:).md) method to remove the parent. These methods automatically update the corresponding [`children`](hashierarchy/children.md) collections of the new and old parent.
+Use the [`setParent(_:preservingWorldTransform:)`](./setparent%28_,preservingworldtransform%29.md) method to change an entity’s parent. Use the [`removeFromParent(preservingWorldTransform:)`](./removefromparent%28preservingworldtransform%29.md) method to remove the parent. These methods automatically update the corresponding [`children`](./children.md) collections of the new and old parent.
 
 ## See Also
 
-- [func setParent(Entity?, preservingWorldTransform: Bool)](hashierarchy/setparent(_:preservingworldtransform:).md)
+### Managing the parent
+- [func setParent(Entity?, preservingWorldTransform: Bool)](./setparent%28_,preservingworldtransform%29.md)
   Attaches the entity as a child to the specified entity.
-- [func removeFromParent(preservingWorldTransform: Bool)](hashierarchy/removefromparent(preservingworldtransform:).md)
+- [func removeFromParent(preservingWorldTransform: Bool)](./removefromparent%28preservingworldtransform%29.md)
   Removes the entity from its current parent or from the scene if it is a root entity.
 
 

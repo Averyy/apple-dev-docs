@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The lowest mipmap level of detail for the texture.
@@ -20,6 +21,10 @@ The lowest mipmap level of detail for the texture.
 var minLOD: Float { get }
 ```
 
+```objc
+@property (readonly) float minLOD;
+```
+
 #### Discussion
 
 The property represents the lower limit of the level-of-detail (LOD) range that texture operations access for the texture. When the GPU calculates a mipmap level, it applies the value of this property as the final step, after clamping the sampler LOD and applying the texture view level range offsets.
@@ -34,7 +39,7 @@ Each of the following texture operations has a requirement for the `minLOD` valu
 
 Each operation returns an out-of-bounds value if a parameter doesn’t meet a requirement.
 
-> **Note**: For the specific out-of-bounds value for each operation, see the *Texture Functions* section of the [`Metal Shading Language Specification (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+> **Note**: For the specific out-of-bounds value for each operation, see the *Texture Functions* section of the [Metal Shading Language Specification (PDF)](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 
 ---

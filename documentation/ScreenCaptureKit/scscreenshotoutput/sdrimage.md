@@ -1,7 +1,8 @@
 # sdrImage
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An output property that specifies the standard dynamic range version of the screenshot.
 
@@ -15,9 +16,13 @@ An output property that specifies the standard dynamic range version of the scre
 var sdrImage: CGImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CGImageRef sdrImage;
+```
+
 #### Discussion
 
-The output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) uses the same color space as the content capture display.
+The output [`CGImage`](../../CoreGraphics/cgimage.md) uses the same color space as the content capture display.
 
 
 ---

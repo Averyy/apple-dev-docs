@@ -1,12 +1,13 @@
 # NSButton.BezelStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of bezel styles to style buttons in your app.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,65 +15,70 @@ The set of bezel styles to style buttons in your app.
 enum BezelStyle
 ```
 
+```c
+enum NSBezelStyle : NSUInteger;
+```
+
 #### Overview
 
-For design guidance on buttons, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance on buttons, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## Topics
 
 ### Default
-- [NSButton.BezelStyle.automatic](nsbutton/bezelstyle-swift.enum/automatic.md)
+- [NSButton.BezelStyle.automatic](./bezelstyle-swift.enum/automatic.md)
   The default button style based on the button’s contents and position within the window.
 ### Push
-- [NSButton.BezelStyle.push](nsbutton/bezelstyle-swift.enum/push.md)
+- [NSButton.BezelStyle.push](./bezelstyle-swift.enum/push.md)
   A standard push style button.
-- [NSButton.BezelStyle.flexiblePush](nsbutton/bezelstyle-swift.enum/flexiblepush.md)
+- [NSButton.BezelStyle.flexiblePush](./bezelstyle-swift.enum/flexiblepush.md)
   A push button with a flexible height to accommodate longer text labels or an image.
 ### Disclosure
-- [NSButton.BezelStyle.disclosure](nsbutton/bezelstyle-swift.enum/disclosure.md)
+- [NSButton.BezelStyle.disclosure](./bezelstyle-swift.enum/disclosure.md)
   A bezel style button for use with a disclosure triangle.
-- [NSButton.BezelStyle.pushDisclosure](nsbutton/bezelstyle-swift.enum/pushdisclosure.md)
+- [NSButton.BezelStyle.pushDisclosure](./bezelstyle-swift.enum/pushdisclosure.md)
   A bezel style push button with a disclosure triangle.
 ### Toolbar
-- [NSButton.BezelStyle.toolbar](nsbutton/bezelstyle-swift.enum/toolbar.md)
+- [NSButton.BezelStyle.toolbar](./bezelstyle-swift.enum/toolbar.md)
   A button style that’s appropriate for a toolbar item.
-- [NSButton.BezelStyle.accessoryBar](nsbutton/bezelstyle-swift.enum/accessorybar.md)
+- [NSButton.BezelStyle.accessoryBar](./bezelstyle-swift.enum/accessorybar.md)
   A button style that’s typically used in the context of an accessory toolbar for buttons that narrow the focus of a search or other operation.
-- [NSButton.BezelStyle.accessoryBarAction](nsbutton/bezelstyle-swift.enum/accessorybaraction.md)
+- [NSButton.BezelStyle.accessoryBarAction](./bezelstyle-swift.enum/accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
 ### Informational
-- [NSButton.BezelStyle.helpButton](nsbutton/bezelstyle-swift.enum/helpbutton.md)
+- [NSButton.BezelStyle.helpButton](./bezelstyle-swift.enum/helpbutton.md)
   A round button with a question mark, providing the standard help button look.
-- [NSButton.BezelStyle.badge](nsbutton/bezelstyle-swift.enum/badge.md)
+- [NSButton.BezelStyle.badge](./bezelstyle-swift.enum/badge.md)
   A button style suitable for displaying additional information.
-- [NSButton.BezelStyle.circular](nsbutton/bezelstyle-swift.enum/circular.md)
+- [NSButton.BezelStyle.circular](./bezelstyle-swift.enum/circular.md)
   A round button that can contain either a single character or an icon.
 ### Other
-- [NSButton.BezelStyle.smallSquare](nsbutton/bezelstyle-swift.enum/smallsquare.md)
+- [NSButton.BezelStyle.smallSquare](./bezelstyle-swift.enum/smallsquare.md)
   A simple square bezel style that can scale to any size.
 ### Deprecated
-- [Deprecated symbols](bezelstyle-deprecated-symbols.md)
+- [Deprecated symbols](../bezelstyle-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Enumeration Cases
-- [NSButton.BezelStyle.glass](nsbutton/bezelstyle-swift.enum/glass.md)
+- [NSButton.BezelStyle.glass](./bezelstyle-swift.enum/glass.md)
   A bezel style with a glass effect
 ### Initializers
-- [init?(rawValue: UInt)](nsbutton/bezelstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./bezelstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSButton.ButtonType](nsbutton/buttontype.md)
-  Button types that you can specify using [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
+### Constants
+- [NSButton.ButtonType](./buttontype.md)
+  Button types that you can specify using [`setButtonType(_:)`](../nsbuttoncell/setbuttontype%28_%29.md).
 
 
 ---

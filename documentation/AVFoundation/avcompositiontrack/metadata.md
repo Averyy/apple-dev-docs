@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items for all metadata identifiers that have a value.
 
@@ -22,15 +23,16 @@ var metadata: [AVMetadataItem] { get }
 
 #### Discussion
 
-You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](avmetadataitem/metadataitems(from:filteredbyidentifier:).md) method.
+You can filter the array of metadata items according to language using the [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md) method. Filter the results by identifier using the [`metadataItems(from:filteredByIdentifier:)`](../avmetadataitem/metadataitems%28from,filteredbyidentifier%29.md) method.
 
 ## See Also
 
-- [var commonMetadata: [AVMetadataItem]](avcompositiontrack/commonmetadata.md)
+### Accessing metadata
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for all common metadata keys that have a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avcompositiontrack/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   An array of metadata formats available for the track.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avcompositiontrack/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns metadata items that a track contains for the specified format.
 
 

@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-overview-example
 
 # Examples
 
-**
-
-- [.rst](../_sources/source/opt-overview-examples.rst)
-- **
-
-.pdf
-
-**
-
-# Examples
-
- Table of contents 
-
-# Examples
-
 Examples here give an overview of
 a few of the compression techniques, results
 and the process that you may use

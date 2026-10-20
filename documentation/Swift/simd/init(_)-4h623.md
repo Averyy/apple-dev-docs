@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -11,7 +12,7 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 5.0 (renamed: init(repeating:))
 
 ## Declaration
 

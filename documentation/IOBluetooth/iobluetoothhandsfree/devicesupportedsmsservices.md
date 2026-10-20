@@ -1,7 +1,8 @@
 # deviceSupportedSMSServices
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the device’s supported SMS services.
 
@@ -12,6 +13,10 @@ Return the device’s supported SMS services.
 
 ```swift
 var deviceSupportedSMSServices: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t deviceSupportedSMSServices;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # excluded
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to exclude the query component from URL parsing.
 
@@ -23,7 +24,8 @@ When this value is `true`, parsing ignores all other query options.
 
 ## See Also
 
-- [var parameters: [String]?](neurlfiltermanager/parsingconfiguration/queryoptions/parameters.md)
+### Working with query options
+- [var parameters: [String]?](./parameters.md)
   An array of parameter names to extract.
 
 

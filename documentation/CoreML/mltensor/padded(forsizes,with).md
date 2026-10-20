@@ -1,7 +1,8 @@
 # padded(forSizes:with:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tensor padded with the given constant according to the specified padding sizes.
 
@@ -45,9 +46,10 @@ let y = x.padded(forSizes: [(0, 0), (2, 2)], with: 0.0)
 
 ## See Also
 
-- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](mltensor/padded(forsizes:mode:).md)
+### Padding the tensor
+- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](./padded%28forsizes,mode%29.md)
   Returns a padded tensor according to the specified padding sizes and mode.
-- [MLTensor.PaddingMode](mltensor/paddingmode.md)
+- [MLTensor.PaddingMode](./paddingmode.md)
   A mode that dictates how a tensor is padded.
 
 

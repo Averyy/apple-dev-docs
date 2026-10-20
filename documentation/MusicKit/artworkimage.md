@@ -1,7 +1,8 @@
 # ArtworkImage
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays the image for a music item’s artwork.
 
@@ -23,30 +24,31 @@ A view that displays the image for a music item’s artwork.
 
 #### Overview
 
-You can create an artwork image with an instance of [`Artwork`](artwork.md).
+You can create an artwork image with an instance of [`Artwork`](./artwork.md).
 
-While the artwork’s image data is loading, [`ArtworkImage`](artworkimage.md) automatically displays a placeholder with a solid color that matches the [`backgroundColor`](artwork/backgroundcolor.md) property of the artwork to render.
+While the artwork’s image data is loading, [`ArtworkImage`](./artworkimage.md) automatically displays a placeholder with a solid color that matches the [`backgroundColor`](./artwork/backgroundcolor.md) property of the artwork to render.
 
 ## Topics
 
 ### Initializers
-- [init(Artwork, height: CGFloat)](artworkimage/init(_:height:).md)
+- [init(Artwork, height: CGFloat)](./artworkimage/init%28_,height%29.md)
   Creates an instance with a specified height.
-- [init(Artwork, width: CGFloat)](artworkimage/init(_:width:).md)
+- [init(Artwork, width: CGFloat)](./artworkimage/init%28_,width%29.md)
   Creates an instance with a specified width.
-- [init(Artwork, width: CGFloat, height: CGFloat)](artworkimage/init(_:width:height:).md)
+- [init(Artwork, width: CGFloat, height: CGFloat)](./artworkimage/init%28_,width,height%29.md)
   Creates an instance with a specified width and height.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct Artwork](artwork.md)
+### Artwork
+- [struct Artwork](./artwork.md)
   An object that represents artwork for a music item.
 
 

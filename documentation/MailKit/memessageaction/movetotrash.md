@@ -1,7 +1,8 @@
 # moveToTrash
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that moves the message to the account’s Trash mailbox.
 
@@ -14,11 +15,16 @@ An object that moves the message to the account’s Trash mailbox.
 class var moveToTrash: MEMessageAction { get }
 ```
 
+```objc
+@property (class, readonly) MEMessageAction * moveToTrashAction;
+```
+
 ## See Also
 
-- [class var moveToArchive: MEMessageAction](memessageaction/movetoarchive.md)
+### Transferring Messages
+- [class var moveToArchive: MEMessageAction](./movetoarchive.md)
   An object that moves the message to the account’s Archive mailbox.
-- [class var moveToJunk: MEMessageAction](memessageaction/movetojunk.md)
+- [class var moveToJunk: MEMessageAction](./movetojunk.md)
   An object that moves the message to the account’s Junk mailbox.
 
 

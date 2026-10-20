@@ -5,15 +5,15 @@
 ## Topics
 
 ### Constants
-- [var btDupRecErr: Int](btduprecerr.md)
-- [var btKeyAttrErr: Int](btkeyattrerr.md)
-- [var btKeyLenErr: Int](btkeylenerr.md)
-- [var btNoSpace: Int](btnospace.md)
-- [var btRecNotFnd: Int](btrecnotfnd.md)
-- [var invalidIndexErr: Int](invalidindexerr.md)
-- [var notBTree: Int](notbtree.md)
-- [var recordDataTooBigErr: Int](recorddatatoobigerr.md)
-- [var unknownInsertModeErr: Int](unknowninsertmodeerr.md)
+- [var btDupRecErr: Int](../../btduprecerr.md)
+- [var btKeyAttrErr: Int](../../btkeyattrerr.md)
+- [var btKeyLenErr: Int](../../btkeylenerr.md)
+- [var btNoSpace: Int](../../btnospace.md)
+- [var btRecNotFnd: Int](../../btrecnotfnd.md)
+- [var invalidIndexErr: Int](../../invalidindexerr.md)
+- [var notBTree: Int](../../notbtree.md)
+- [var recordDataTooBigErr: Int](../../recorddatatoobigerr.md)
+- [var unknownInsertModeErr: Int](../../unknowninsertmodeerr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionAuthorizationResult
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that indicates the result of authorizing the addition of a payment card.
 
@@ -17,29 +18,34 @@ A value that indicates the result of authorizing the addition of a payment card.
 enum PKIssuerProvisioningExtensionAuthorizationResult
 ```
 
+```c
+enum PKIssuerProvisioningExtensionAuthorizationResult : NSInteger;
+```
+
 ## Topics
 
 ### Authorization results
-- [PKIssuerProvisioningExtensionAuthorizationResult.authorized](pkissuerprovisioningextensionauthorizationresult/authorized.md)
+- [PKIssuerProvisioningExtensionAuthorizationResult.authorized](./pkissuerprovisioningextensionauthorizationresult/authorized.md)
   A result that indicates the user successfully authorized adding the payment pass.
-- [PKIssuerProvisioningExtensionAuthorizationResult.canceled](pkissuerprovisioningextensionauthorizationresult/canceled.md)
+- [PKIssuerProvisioningExtensionAuthorizationResult.canceled](./pkissuerprovisioningextensionauthorizationresult/canceled.md)
   A result that indicates the user canceled authorization or wasn’t authorized to add the payment card.
 ### Initializers
-- [init?(rawValue: Int)](pkissuerprovisioningextensionauthorizationresult/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pkissuerprovisioningextensionauthorizationresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?](pkissuerprovisioningextensionauthorizationproviding/completionhandler.md)
+### Providing the result of authorization
+- [var completionHandler: ((PKIssuerProvisioningExtensionAuthorizationResult) -> Void)?](./pkissuerprovisioningextensionauthorizationproviding/completionhandler.md)
   A completion handler the system calls to find the result of authorizing the addition of the payment card.
 
 

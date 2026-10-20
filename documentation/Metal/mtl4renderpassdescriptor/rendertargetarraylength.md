@@ -1,7 +1,8 @@
 # renderTargetArrayLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the number of layers that all attachments this descriptor references have.
 
@@ -17,6 +18,10 @@ Assigns the number of layers that all attachments this descriptor references hav
 
 ```swift
 var renderTargetArrayLength: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger renderTargetArrayLength;
 ```
 
 

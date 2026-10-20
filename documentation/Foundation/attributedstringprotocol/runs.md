@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The attributed runs of the attributed string, as a view into the underlying string.
@@ -27,9 +28,10 @@ Runs begin and end when the attributes for the characters change. Use this prope
 
 ## See Also
 
-- [var characters: AttributedString.CharacterView](attributedstringprotocol/characters.md)
+### Accessing Views into the Attributed String
+- [var characters: AttributedString.CharacterView](./characters.md)
   The characters of the attributed string, as a view into the underlying string.
-- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstringprotocol/unicodescalars.md)
+- [var unicodeScalars: AttributedString.UnicodeScalarView](./unicodescalars.md)
   The Unicode scalars of the attributed string, as a view into the underlying string.
 
 

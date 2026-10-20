@@ -1,7 +1,8 @@
 # getUniform
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 any getUniform(
     WebGLProgram? program, 
     WebGLUniformLocation? location

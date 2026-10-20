@@ -1,7 +1,8 @@
 # retain
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The callback used retain the info pointer. This can be NULL.
 
@@ -13,6 +14,10 @@ The callback used retain the info pointer. This can be NULL.
 
 ```swift
 var retain: CFAllocatorRetainCallBack?
+```
+
+```c
+CFAllocatorRetainCallBack retain;
 ```
 
 

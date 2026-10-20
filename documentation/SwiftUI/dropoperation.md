@@ -1,7 +1,8 @@
 # DropOperation
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Operation types that determine how a drag and drop session resolves when the user drops a drag item.
 
@@ -21,47 +22,48 @@ enum DropOperation
 ## Topics
 
 ### Getting operation types
-- [DropOperation.cancel](dropoperation/cancel.md)
+- [DropOperation.cancel](./dropoperation/cancel.md)
   Cancel the drag operation and transfer no data.
-- [DropOperation.copy](dropoperation/copy.md)
+- [DropOperation.copy](./dropoperation/copy.md)
   Copy the data to the modified view.
-- [DropOperation.forbidden](dropoperation/forbidden.md)
+- [DropOperation.forbidden](./dropoperation/forbidden.md)
   The drop activity is not allowed at this time or location.
-- [DropOperation.move](dropoperation/move.md)
+- [DropOperation.move](./dropoperation/move.md)
   Move the data represented by the drag items instead of copying it.
 ### Structures
-- [DropOperation.Set](dropoperation/set.md)
+- [DropOperation.Set](./dropoperation/set.md)
   A set of drop operations, corresponding to matching cases in `DropOperation`.
 ### Enumeration Cases
-- [DropOperation.alias](dropoperation/alias.md)
-- [DropOperation.delete](dropoperation/delete.md)
+- [DropOperation.alias](./dropoperation/alias.md)
+- [DropOperation.delete](./dropoperation/delete.md)
   Delete the data. The item was dragged to Trash or to another destination that semantically represents deletion.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](view/itemprovider(_:).md)
+### Moving items using item providers
+- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](./view/itemprovider%28_%29.md)
   Provides a closure that vends the drag representation to be used for a particular data element.
-- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
+- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](./view/ondrag%28_,preview%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
+- [func onDrag(() -> NSItemProvider) -> some View](./view/ondrag%28_%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrop(of:isTargeted:perform:)](view/ondrop(of:istargeted:perform:).md)
+- [func onDrop(of:isTargeted:perform:)](./view/ondrop%28of,istargeted,perform%29.md)
   Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
-- [func onDrop(of:delegate:)](view/ondrop(of:delegate:).md)
+- [func onDrop(of:delegate:)](./view/ondrop%28of,delegate%29.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
-- [protocol DropDelegate](dropdelegate.md)
+- [protocol DropDelegate](./dropdelegate.md)
   An interface that you implement to interact with a drop operation in a view modified to accept drops.
-- [struct DropProposal](dropproposal.md)
+- [struct DropProposal](./dropproposal.md)
   The behavior of a drop.
-- [struct DropInfo](dropinfo.md)
+- [struct DropInfo](./dropinfo.md)
   The current state of a drop.
 
 

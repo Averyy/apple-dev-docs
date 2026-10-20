@@ -1,7 +1,8 @@
 # speedLimit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The speed limit configuration of the simulation.
 
@@ -18,15 +19,16 @@ var speedLimit: ClothSimulationComponent.SpeedLimit
 
 ## See Also
 
-- [var timeStep: Float](clothsimulationcomponent/timestep.md)
+### Controlling simulation timing
+- [var timeStep: Float](./timestep.md)
   The amount of time the simulation advances each time step, in seconds.
-- [var maximumStepsPerUpdate: ClothSimulationComponent.MaximumStepsPerUpdate](clothsimulationcomponent/maximumstepsperupdate-swift.property.md)
+- [var maximumStepsPerUpdate: ClothSimulationComponent.MaximumStepsPerUpdate](./maximumstepsperupdate-swift.property.md)
   The maximum number of time steps that the simulation can advance each update.
-- [ClothSimulationComponent.MaximumStepsPerUpdate](clothsimulationcomponent/maximumstepsperupdate-swift.struct.md)
+- [ClothSimulationComponent.MaximumStepsPerUpdate](./maximumstepsperupdate-swift.struct.md)
   The maximum number of time steps that can be processed per simulation update.
-- [ClothSimulationComponent.SpeedLimit](clothsimulationcomponent/speedlimit-swift.struct.md)
+- [ClothSimulationComponent.SpeedLimit](./speedlimit-swift.struct.md)
   Whether the speed of cloth bodies should be limited to improve self-collision robustness.
-- [var meshCollidersUpdateInterval: Int](clothsimulationcomponent/meshcollidersupdateinterval.md)
+- [var meshCollidersUpdateInterval: Int](./meshcollidersupdateinterval.md)
   The number of time steps between updates to the mesh colliders in the simulation.
 
 

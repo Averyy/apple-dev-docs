@@ -1,7 +1,8 @@
 # regionName
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region name, such as “United States”.
 
@@ -20,13 +21,18 @@ The region name, such as “United States”.
 var regionName: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * regionName;
+```
+
 ## See Also
 
-- [var cityName: String?](mkaddressrepresentations/cityname.md)
+### Getting parts of an address
+- [var cityName: String?](./cityname.md)
   The name of the city.
-- [var cityWithContext: String?](mkaddressrepresentations/citywithcontext.md)
+- [var cityWithContext: String?](./citywithcontext.md)
   The city name along with the country name, to provide additional disambiguating context.
-- [var region: Locale.Region?](mkaddressrepresentations/region.md)
+- [var region: Locale.Region?](./region.md)
 
 
 ---

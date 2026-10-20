@@ -1,7 +1,8 @@
 # freeTrial
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A payment mode of a product discount that indicates a free trial offer.
 
@@ -24,13 +25,14 @@ static let freeTrial: Product.SubscriptionOffer.PaymentMode
 
 With a Free trial payment mode, customers pay nothing during the discount period.
 
-![A timeline titled Free Trial that’s divided into three sections. The first section, which has a different timespan than the remaining sections, starts with the initial purchase and is the free trial period. The second section is labeled first renewal, and is at the regular price. The third section is labeled  second renewal, and is also at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](/images/com.apple.storekit/media-4311774@2x.png)
+![A timeline titled Free Trial that’s divided into three sections. The first section, which has a different timespan than the remaining sections, starts with the initial purchase and is the free trial period. The second section is labeled first renewal, and is at the regular price. The third section is labeled  second renewal, and is also at the regular price. Three dots at the end of the timeline indicate the pattern continues with renewals at the regular price.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-4311774@2x.png)
 
 ## See Also
 
-- [static let payAsYouGo: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct/payasyougo.md)
+### Getting the payment modes
+- [static let payAsYouGo: Product.SubscriptionOffer.PaymentMode](./payasyougo.md)
   A payment mode of a product discount that applies over a single billing period or multiple billing periods.
-- [static let payUpFront: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct/payupfront.md)
+- [static let payUpFront: Product.SubscriptionOffer.PaymentMode](./payupfront.md)
   A payment mode of a product discount that applies the discount up front.
 
 

@@ -1,7 +1,8 @@
 # simulationState
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired state of the simulation.
 

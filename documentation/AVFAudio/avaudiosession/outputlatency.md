@@ -1,7 +1,8 @@
 # outputLatency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latency for audio output, in seconds.
 
@@ -19,13 +20,18 @@ The latency for audio output, in seconds.
 var outputLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval outputLatency;
+```
+
 #### Discussion
 
 Using an AirPlay-enabled device for your audio content can result in a 2-second delay. Check for this delay in game content.
 
 ## See Also
 
-- [var inputLatency: TimeInterval](avaudiosession/inputlatency.md)
+### Inspecting latency
+- [var inputLatency: TimeInterval](./inputlatency.md)
   The latency for audio input, in seconds.
 
 

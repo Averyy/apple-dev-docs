@@ -1,7 +1,8 @@
 # interpolation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An interpolation hint.
 
@@ -14,15 +15,20 @@ An interpolation hint.
 static let interpolation: NSImageRep.HintKey
 ```
 
+```c
+extern NSImageHintKey const NSImageHintInterpolation;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) with an [`NSImageInterpolation`](nsimageinterpolation.md) value.
+The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) with an [`NSImageInterpolation`](../../nsimageinterpolation.md) value.
 
 ## See Also
 
-- [static let ctm: NSImageRep.HintKey](nsimagerep/hintkey/ctm.md)
+### Hint Keys
+- [static let ctm: NSImageRep.HintKey](./ctm.md)
   A context transform hint.
-- [static let userInterfaceLayoutDirection: NSImageRep.HintKey](nsimagerep/hintkey/userinterfacelayoutdirection.md)
+- [static let userInterfaceLayoutDirection: NSImageRep.HintKey](./userinterfacelayoutdirection.md)
   A layout direction hint.
 
 

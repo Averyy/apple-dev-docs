@@ -1,7 +1,8 @@
 # init(cornerPoint:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new arrow shape pointing in a specific direction.
 

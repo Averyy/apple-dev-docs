@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.web
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A web browser.
 

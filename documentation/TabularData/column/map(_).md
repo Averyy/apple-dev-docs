@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column by applying a transformation to every element.
 
@@ -26,7 +27,8 @@ func map<T>(_ transform: (Column<WrappedElement>.Element) throws -> T?) rethrows
 
 ## See Also
 
-- [func mapNonNil<T>((WrappedElement) throws -> T?) rethrows -> Column<T>](column/mapnonnil(_:).md)
+### Creating Transformed Columns
+- [func mapNonNil<T>((WrappedElement) throws -> T?) rethrows -> Column<T>](./mapnonnil%28_%29.md)
   Creates a new column by applying the transformation to every element that isn’t missing.
 
 

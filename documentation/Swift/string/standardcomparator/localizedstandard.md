@@ -1,7 +1,8 @@
 # localizedStandard
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Compares `String`s as compared by the Finder.
 

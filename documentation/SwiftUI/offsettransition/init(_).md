@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transition that offset the view by the specified amount.
 
@@ -23,7 +24,8 @@ init(_ offset: CGSize)
 
 ## See Also
 
-- [var offset: CGSize](offsettransition/offset.md)
+### Creating the transition
+- [var offset: CGSize](./offset.md)
   The amount to offset the view by.
 
 

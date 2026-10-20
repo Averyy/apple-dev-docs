@@ -1,7 +1,8 @@
 # PDFMarkupType.strikeOut
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Strikethrough style for the markup.
 
@@ -10,7 +11,7 @@ Strikethrough style for the markup.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ Strikethrough style for the markup.
 case strikeOut
 ```
 
+```c
+kPDFMarkupTypeStrikeOut
+```
+
 ## See Also
 
-- [PDFMarkupType.highlight](pdfmarkuptype/highlight.md)
+### Constants
+- [PDFMarkupType.highlight](./highlight.md)
   Highlight style for the markup.
-- [PDFMarkupType.underline](pdfmarkuptype/underline.md)
+- [PDFMarkupType.underline](./underline.md)
   Underline style for the markup.
-- [PDFMarkupType.redact](pdfmarkuptype/redact.md)
+- [PDFMarkupType.redact](./redact.md)
   The redaction style for markup.
 
 

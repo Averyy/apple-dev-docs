@@ -1,7 +1,8 @@
 # outOfDate
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status value that indicates that the downloaded asset pack is out of date.
 
@@ -21,15 +22,16 @@ static let outOfDate: AssetPack.Status
 
 #### Discussion
 
-The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`updateAvailable`](assetpack/status/updateavailable.md) to determine whether an update can currently be downloaded.
+The presence of this status value doesn’t necessarily imply that an update to the asset pack can be downloaded over the current network connection. Check for the presence of [`updateAvailable`](./updateavailable.md) to determine whether an update can currently be downloaded.
 
 ## See Also
 
-- [static let upToDate: AssetPack.Status](assetpack/status/uptodate.md)
+### Updating assets
+- [static let upToDate: AssetPack.Status](./uptodate.md)
   A status value that indicates that the downloaded asset pack is up to date.
-- [static let obsolete: AssetPack.Status](assetpack/status/obsolete.md)
+- [static let obsolete: AssetPack.Status](./obsolete.md)
   A status value that indicates that the asset pack is no longer available to download.
-- [static let updateAvailable: AssetPack.Status](assetpack/status/updateavailable.md)
+- [static let updateAvailable: AssetPack.Status](./updateavailable.md)
   A status value that indicates that an update to the asset pack is available to download.
 
 

@@ -1,19 +1,20 @@
 # getCStringNoCopy
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a pointer to the OSString object’s internal data buffer.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const char * getCStringNoCopy() const;
 ```
 
@@ -23,8 +24,9 @@ A pointer to the string or NULL if the OSString has zero length. The string will
 
 ## See Also
 
-- [OSStringGetStringPtr](osstringgetstringptr.md)
-- [OSStringPtr](osstringptr.md)
+### Getting a C String
+- [OSStringGetStringPtr](../osstringgetstringptr.md)
+- [OSStringPtr](../osstringptr.md)
 
 
 ---

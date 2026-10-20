@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A view that represents the web content that’s agnostic of zoom state.
@@ -18,17 +19,22 @@ A view that represents the web content that’s agnostic of zoom state.
 var unscaledView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * unscaledView;
+```
+
 #### Discussion
 
 This property draws zoom-agnostic system user interface, such as text selection handles.
 
 ## See Also
 
-- [var textInputView: UIView](betextinput/textinputview.md)
+### Managing the text input view
+- [var textInputView: UIView](./textinputview.md)
   An affiliated view that provides a coordinate system for all geometric values in this protocol.
-- [var selectionClipRect: CGRect](betextinput/selectioncliprect.md)
+- [var selectionClipRect: CGRect](./selectioncliprect.md)
   A rectangle that represents the bounds of editable elements.
-- [var unobscuredContentRect: CGRect](betextinput/unobscuredcontentrect.md)
+- [var unobscuredContentRect: CGRect](./unobscuredcontentrect.md)
   A rectangle that frames a user interface, such as text-selection handles, in an unobscured location.
 
 

@@ -1,7 +1,8 @@
 # activate(_:activationData:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates a Secure Element pass using the specified data.
 
@@ -15,27 +16,38 @@ Activates a Secure Element pass using the specified data.
 ## Declaration
 
 ```swift
+func activate(_ secureElementPass: PKSecureElementPass, activationData: Data, completion: (@Sendable (Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func activate(_ secureElementPass: PKSecureElementPass, activationData: Data) async throws -> Bool
+```
+
+```objc
+- (void) activateSecureElementPass:(PKSecureElementPass *) secureElementPass withActivationData:(NSData *) activationData completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
-You must provision the Secure Element pass and make sure it’s in the [`PKSecureElementPass.PassActivationState.requiresActivation`](pksecureelementpass/passactivationstate-swift.enum/requiresactivation.md) state before you call this method.
+You must provision the Secure Element pass and make sure it’s in the [`PKSecureElementPass.PassActivationState.requiresActivation`](../pksecureelementpass/passactivationstate-swift.enum/requiresactivation.md) state before you call this method.
 
 ## Parameters
 
 - `secureElementPass`: The Secure Element pass to activate.
 - `activationData`: A cryptographic value that the activation process requires.
-- `completion`: A closure that PassKit executes after it attempts activation. - **`success`**: A value that indicates whether activation is successful..
-- **`error`**: If activation fails, an error that describes the failure; otherwise, otherwise, `nil`.
+- `completion`: A closure that PassKit executes after it attempts activation.
+
+  - **`success`**: A value that indicates whether activation is successful..
+  - **`error`**: If activation fails, an error that describes the failure; otherwise, otherwise, `nil`.
 
 ## See Also
 
-- [var isSecureElementPassActivationAvailable: Bool](pkpasslibrary/issecureelementpassactivationavailable.md)
+### Managing passes
+- [var isSecureElementPassActivationAvailable: Bool](./issecureelementpassactivationavailable.md)
   A Boolean value that indicates whether the device supports creating Secure Element passes.
-- [func replacePass(with: PKPass) -> Bool](pkpasslibrary/replacepass(with:).md)
+- [func replacePass(with: PKPass) -> Bool](./replacepass%28with%29.md)
   Replaces a pass in the user’s pass library with the specified pass.
-- [func removePass(PKPass)](pkpasslibrary/removepass(_:).md)
+- [func removePass(PKPass)](./removepass%28_%29.md)
   Removes the pass from the user’s pass library.
 
 

@@ -1,7 +1,8 @@
 # kCTFontFeatureTooltipTextKey
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -18,17 +19,22 @@
 let kCTFontFeatureTooltipTextKey: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontFeatureTooltipTextKey;
+```
+
 ## See Also
 
-- [let kCTFontFeatureTypeIdentifierKey: CFString](kctfontfeaturetypeidentifierkey.md)
-- [let kCTFontFeatureTypeNameKey: CFString](kctfontfeaturetypenamekey.md)
-- [let kCTFontFeatureTypeExclusiveKey: CFString](kctfontfeaturetypeexclusivekey.md)
-- [let kCTFontFeatureTypeSelectorsKey: CFString](kctfontfeaturetypeselectorskey.md)
-- [let kCTFontFeatureSelectorIdentifierKey: CFString](kctfontfeatureselectoridentifierkey.md)
-- [let kCTFontFeatureSelectorNameKey: CFString](kctfontfeatureselectornamekey.md)
-- [let kCTFontFeatureSelectorDefaultKey: CFString](kctfontfeatureselectordefaultkey.md)
-- [let kCTFontFeatureSelectorSettingKey: CFString](kctfontfeatureselectorsettingkey.md)
-- [let kCTFontFeatureSampleTextKey: CFString](kctfontfeaturesampletextkey.md)
+### Constants
+- [let kCTFontFeatureTypeIdentifierKey: CFString](./kctfontfeaturetypeidentifierkey.md)
+- [let kCTFontFeatureTypeNameKey: CFString](./kctfontfeaturetypenamekey.md)
+- [let kCTFontFeatureTypeExclusiveKey: CFString](./kctfontfeaturetypeexclusivekey.md)
+- [let kCTFontFeatureTypeSelectorsKey: CFString](./kctfontfeaturetypeselectorskey.md)
+- [let kCTFontFeatureSelectorIdentifierKey: CFString](./kctfontfeatureselectoridentifierkey.md)
+- [let kCTFontFeatureSelectorNameKey: CFString](./kctfontfeatureselectornamekey.md)
+- [let kCTFontFeatureSelectorDefaultKey: CFString](./kctfontfeatureselectordefaultkey.md)
+- [let kCTFontFeatureSelectorSettingKey: CFString](./kctfontfeatureselectorsettingkey.md)
+- [let kCTFontFeatureSampleTextKey: CFString](./kctfontfeaturesampletextkey.md)
 
 
 ---

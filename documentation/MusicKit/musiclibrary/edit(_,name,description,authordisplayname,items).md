@@ -1,7 +1,8 @@
 # edit(_:name:description:authorDisplayName:items:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Edits a playlist that your app has created including items to rebuild the list of entries.
 

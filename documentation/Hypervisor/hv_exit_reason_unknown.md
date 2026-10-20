@@ -1,12 +1,13 @@
 # HV_EXIT_REASON_UNKNOWN
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that identifies unexpected exits.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The value that identifies unexpected exits.
 var HV_EXIT_REASON_UNKNOWN: hv_exit_reason_t { get }
 ```
 
+```c
+HV_EXIT_REASON_UNKNOWN
+```
+
 ## See Also
 
-- [var HV_EXIT_REASON_CANCELED: hv_exit_reason_t](hv_exit_reason_canceled.md)
+### Exit Reasons
+- [var HV_EXIT_REASON_CANCELED: hv_exit_reason_t](./hv_exit_reason_canceled.md)
   The value that identifies exits requested by exit handler on the host.
-- [var HV_EXIT_REASON_EXCEPTION: hv_exit_reason_t](hv_exit_reason_exception.md)
+- [var HV_EXIT_REASON_EXCEPTION: hv_exit_reason_t](./hv_exit_reason_exception.md)
   The value that identifies traps caused by the guest operations.
-- [var HV_EXIT_REASON_VTIMER_ACTIVATED: hv_exit_reason_t](hv_exit_reason_vtimer_activated.md)
+- [var HV_EXIT_REASON_VTIMER_ACTIVATED: hv_exit_reason_t](./hv_exit_reason_vtimer_activated.md)
   The value that identifies when the virtual timer enters the pending state.
 
 

@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder.
 

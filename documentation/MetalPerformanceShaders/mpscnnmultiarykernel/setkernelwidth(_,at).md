@@ -1,7 +1,8 @@
 # setKernelWidth(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setKernelWidth(_ width: Int, at index: Int)
+```
+
+```objc
+- (void) setKernelWidth:(NSUInteger) width atIndex:(NSUInteger) index;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a debug options enumeration from a raw value.
 
@@ -20,7 +21,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](arview/debugoptions-swift.struct/rawvalue.md)
+### Creating a debug option set
+- [let rawValue: Int](./rawvalue.md)
   Options for drawing overlay content in a scene that aids in debugging the scene.
 
 

@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the receiver to another NSUUID in constant time.
 
@@ -18,6 +19,10 @@ Compares the receiver to another NSUUID in constant time.
 
 ```swift
 func compare(_ otherUUID: UUID) -> ComparisonResult
+```
+
+```objc
+- (NSComparisonResult) compare:(NSUUID *) otherUUID;
 ```
 
 

@@ -1,7 +1,8 @@
 # backgroundStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred background style.
 
@@ -18,9 +19,14 @@ The preferred background style.
 var backgroundStyle: UIPageControl.BackgroundStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIPageControlBackgroundStyle backgroundStyle;
+```
+
 ## See Also
 
-- [UIPageControl.BackgroundStyle](uipagecontrol/backgroundstyle-swift.enum.md)
+### Customizing the background style
+- [UIPageControl.BackgroundStyle](./backgroundstyle-swift.enum.md)
   Constants that define the background styles of the page control.
 
 

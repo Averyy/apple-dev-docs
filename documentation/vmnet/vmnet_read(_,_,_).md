@@ -1,7 +1,8 @@
 # vmnet_read(_:_:_:)
 
 **Framework**: vmnet  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Attempts to read a specified number of packets from an interface.
 
@@ -15,13 +16,17 @@ Attempts to read a specified number of packets from an interface.
 func vmnet_read(_ interface: interface_ref, _ packets: UnsafeMutablePointer<vmpktdesc>, _ pktcnt: UnsafeMutablePointer<Int32>) -> vmnet_return_t
 ```
 
+```c
+vmnet_return_t vmnet_read(interface_ref interface, struct vmpktdesc *packets, int *pktcnt);
+```
+
 #### Return Value
 
 Returns `vmnet` on success, or an error code on failure. See `vmnet` for possible values.
 
 #### Discussion
 
-Each packet buffer passed should be at least as large as the value of [`vmnet_max_packet_size_key`](vmnet_max_packet_size_key.md) for the interface.
+Each packet buffer passed should be at least as large as the value of [`vmnet_max_packet_size_key`](./vmnet_max_packet_size_key.md) for the interface.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Each packet buffer passed should be at least as large as the value of [`vmnet_ma
 
 ## See Also
 
-- [func vmnet_write(interface_ref, UnsafeMutablePointer<vmpktdesc>, UnsafeMutablePointer<Int32>) -> vmnet_return_t](vmnet_write(_:_:_:).md)
+### Reading and Writing Packets
+- [func vmnet_write(interface_ref, UnsafeMutablePointer<vmpktdesc>, UnsafeMutablePointer<Int32>) -> vmnet_return_t](./vmnet_write%28_,_,_%29.md)
   Attempts to write specified packets to an interface.
 
 

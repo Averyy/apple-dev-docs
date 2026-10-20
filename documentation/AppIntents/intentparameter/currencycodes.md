@@ -1,7 +1,8 @@
 # currencyCodes
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,10 +19,13 @@
 final var currencyCodes: [String]? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `IntentCurrencyAmount`.
+
 ## See Also
 
-- [var inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?](intentparameter/inclusiverange-swift.property.md)
-- [IntentParameter.InclusiveRange](intentparameter/inclusiverange-swift.typealias.md)
+### Accessing the configuration
+- [var inclusiveRange: IntentParameter<Value>.InclusiveRange<Decimal>?](./inclusiverange-swift.property.md)
+- [IntentParameter.InclusiveRange](./inclusiverange-swift.typealias.md)
 
 
 ---

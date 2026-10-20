@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Accessory Access  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new error code with the provided value.
 

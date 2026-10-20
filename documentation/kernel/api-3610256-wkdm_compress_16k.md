@@ -1,14 +1,15 @@
 # WKdm_compress_16k
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int WKdm_compress_16k(WK_word *src_buf, WK_word *dest_buf, WK_word *scratch, unsigned int limit);
 ```
 

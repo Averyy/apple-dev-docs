@@ -1,7 +1,8 @@
 # nameKey
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the source editor command in its attributes.
 
@@ -14,11 +15,16 @@ The name of the source editor command in its attributes.
 static let nameKey: XCSourceEditorCommandDefinitionKey
 ```
 
+```c
+extern XCSourceEditorCommandDefinitionKey const XCSourceEditorCommandNameKey;
+```
+
 ## See Also
 
-- [static let classNameKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/classnamekey.md)
+### Populating a Command Definition Dictionary
+- [static let classNameKey: XCSourceEditorCommandDefinitionKey](./classnamekey.md)
   The class of the source editor command, in its attributes.
-- [static let identifierKey: XCSourceEditorCommandDefinitionKey](xcsourceeditorcommanddefinitionkey/identifierkey.md)
+- [static let identifierKey: XCSourceEditorCommandDefinitionKey](./identifierkey.md)
   The identifier of the source editor command in its attributes.
 
 

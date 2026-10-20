@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a context topic.
 

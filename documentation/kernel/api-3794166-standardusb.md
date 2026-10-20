@@ -1,14 +1,15 @@
 # StandardUSB::getEndpointMult
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 uint8_t StandardUSB::getEndpointMult(uint32_t usbDeviceSpeed, const EndpointDescriptor *descriptor, const SuperSpeedEndpointCompanionDescriptor *companionDescriptor, const SuperSpeedPlusIsochronousEndpointCompanionDescriptor *sspCompanionDescriptor);
 ```
 

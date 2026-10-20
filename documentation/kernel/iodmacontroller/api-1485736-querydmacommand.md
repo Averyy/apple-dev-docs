@@ -1,14 +1,15 @@
 # queryDMACommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn queryDMACommand(UInt32 dmaIndex, IODMACommand **dmaCommand, IOByteCount *transferCount, bool waitForIdle);
 ```
 

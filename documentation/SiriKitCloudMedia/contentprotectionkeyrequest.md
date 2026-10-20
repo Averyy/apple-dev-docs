@@ -1,7 +1,8 @@
 # ContentProtectionKeyRequest
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request for an item’s content protection key.
 
@@ -10,7 +11,7 @@ A request for an item’s content protection key.
 
 ## Declaration
 
-```swift
+```
 object ContentProtectionKeyRequest
 ```
 
@@ -22,24 +23,29 @@ If your service implements content protection, the client requests an item’s c
 - The client preloads each subsequent item in the queue.
 - The user manually transitions to an item in the queue.
 
-For more information on providing your service’s content protection configuration, see [`ExtensionConfig.Media.Queues.ContentProtectionKey`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md) and [`Retrieve an Asset’s Content Protection Key`](contentprotectionkey.md).
+For more information on providing your service’s content protection configuration, see [`ExtensionConfig.Media.Queues.ContentProtectionKey`](./extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md) and [`Retrieve an Asset’s Content Protection Key`](./contentprotectionkey.md).
 
 ## Properties
 
 - `assetIdentifier` (string): The item’s content key asset identifier.
+
+  **Maximum Length**: `4000`
 - `context` (PlayerContext) *(required)*: The content the client is playing.
-- `keyRequest` (byte) *(required)*: An encrypted key request that contains session, authentication, and integrity information. For FairPlay Streaming, this is the server playback context (SPC); for more information, see [`FairPlay Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/FairPlayStreamingOverview.pdf).
-- `keySystem` (ContentProtectionKeySystem) *(required)*: The content’s encryption type, which must match the configuration in  [`ExtensionConfig.Media.Queues.ContentProtectionKey.Cks`](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-data.dictionary.md).
+- `keyRequest` (byte) *(required)*: An encrypted key request that contains session, authentication, and integrity information. For FairPlay Streaming, this is the server playback context (SPC); for more information, see [FairPlay Streaming Overview](https://developer.apple.com/streaming/fps/FairPlayStreamingOverview.pdf).
+- `keySystem` (ContentProtectionKeySystem) *(required)*: The content’s encryption type, which must match the configuration in  [`ExtensionConfig.Media.Queues.ContentProtectionKey.Cks`](./extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-data.dictionary.md).
 - `userActivity` (UserActivity) *(required)*: A description of the client’s current playback queue.
 - `version` (string) *(required)*: The version of the client’s `SiriKitMediaAPI` library.
 
+  **Maximum Length**: `25`; **Allowed Values**: `/[0-9]+\.[0-9]+\.[0-9]+/`
+
 ## See Also
 
-- [Retrieve an Asset’s Content Protection Key](contentprotectionkey.md)
+### Content Protection
+- [Retrieve an Asset’s Content Protection Key](./contentprotectionkey.md)
   Provide the content key for a specific protected asset.
-- [object ContentProtectionKeyResponse](contentprotectionkeyresponse.md)
+- [object ContentProtectionKeyResponse](./contentprotectionkeyresponse.md)
   A response to a request for an item’s content protection key.
-- [type ContentProtectionKeySystem](contentprotectionkeysystem.md)
+- [type ContentProtectionKeySystem](./contentprotectionkeysystem.md)
   The content protection key systems that SiriKit Cloud Media supports.
 
 

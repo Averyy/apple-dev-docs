@@ -1,7 +1,8 @@
 # ExecuteDistributedTargetError.ErrorCode.missingGenericSubstitutions
 
 **Framework**: Distributed  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Target expects generic environment information, but invocation decoder provided no generic substitutions.
 
@@ -11,7 +12,7 @@ Target expects generic environment information, but invocation decoder provided 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

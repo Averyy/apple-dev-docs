@@ -1,7 +1,8 @@
 # GetName
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the name of the object.
 
@@ -10,13 +11,13 @@ Gets the name of the object.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetName();
 ```
 
 #### Return Value
 
-A `OSSharedPtr` to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the object name.
+A `OSSharedPtr` to an [`OSString`](../../DriverKit/osstring.md) containing the object name.
 
 #### Discussion
 
@@ -24,7 +25,8 @@ Getting the name synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetName](iouseraudioobject/setname.md)
+### Working with Object Names
+- [SetName](./setname.md)
   Sets the name of the object.
 
 

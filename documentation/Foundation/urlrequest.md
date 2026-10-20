@@ -1,7 +1,8 @@
 # URLRequest
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A URL load request that is independent of protocol or URL scheme.
 
@@ -22,121 +23,122 @@ struct URLRequest
 
 ## Mentions
 
-- [Uploading data to a website](uploading-data-to-a-website.md)
-- [Accessing cached data](accessing-cached-data.md)
-- [Downloading files from websites](downloading-files-from-websites.md)
-- [Downloading files in the background](downloading-files-in-the-background.md)
-- [Processing URL session data task results with Combine](processing-url-session-data-task-results-with-combine.md)
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading data to a website](./uploading-data-to-a-website.md)
+- [Accessing cached data](./accessing-cached-data.md)
+- [Downloading files from websites](./downloading-files-from-websites.md)
+- [Downloading files in the background](./downloading-files-in-the-background.md)
+- [Processing URL session data task results with Combine](./processing-url-session-data-task-results-with-combine.md)
+- [Uploading streams of data](./uploading-streams-of-data.md)
 
 #### Overview
 
-[`URLRequest`](urlrequest.md) encapsulates two essential properties of a load request: the URL to load and the policies used to load it. In addition, for HTTP and HTTPS requests, [`URLRequest`](urlrequest.md) includes the HTTP method (`GET`, `POST`, and so on) and the HTTP headers.
+[`URLRequest`](./urlrequest.md) encapsulates two essential properties of a load request: the URL to load and the policies used to load it. In addition, for HTTP and HTTPS requests, [`URLRequest`](./urlrequest.md) includes the HTTP method (`GET`, `POST`, and so on) and the HTTP headers.
 
-[`URLRequest`](urlrequest.md) only represents information about the request. Use other classes, such as [`URLSession`](urlsession.md), to send the request to a server. See [`Fetching website data into memory`](fetching-website-data-into-memory.md) and [`Uploading data to a website`](uploading-data-to-a-website.md) for an introduction to these techniques.
+[`URLRequest`](./urlrequest.md) only represents information about the request. Use other classes, such as [`URLSession`](./urlsession.md), to send the request to a server. See [Fetching website data into memory](./fetching-website-data-into-memory.md) and [Uploading data to a website](./uploading-data-to-a-website.md) for an introduction to these techniques.
 
-When writing Swift code, favor this structure over the [`NSURLRequest`](nsurlrequest.md) and [`NSMutableURLRequest`](nsmutableurlrequest.md) classes.
+When writing Swift code, favor this structure over the [`NSURLRequest`](./nsurlrequest.md) and [`NSMutableURLRequest`](./nsmutableurlrequest.md) classes.
 
-Certain header fields are reserved; see [`Reserved HTTP headers`](nsurlrequest#Reserved-HTTP-headers.md).
+Certain header fields are reserved; see [Reserved HTTP headers](./nsurlrequest.md#Reserved-HTTP-headers).
 
 ## Topics
 
 ### Creating a request
-- [init(url: URL, cachePolicy: URLRequest.CachePolicy, timeoutInterval: TimeInterval)](urlrequest/init(url:cachepolicy:timeoutinterval:).md)
+- [init(url: URL, cachePolicy: URLRequest.CachePolicy, timeoutInterval: TimeInterval)](./urlrequest/init%28url,cachepolicy,timeoutinterval%29.md)
   Creates and initializes a URL request with the given URL, cache policy, and timeout interval.
 ### Working with a cache policy
-- [var cachePolicy: URLRequest.CachePolicy](urlrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: URLRequest.CachePolicy](./urlrequest/cachepolicy-swift.property.md)
   The request’s cache policy.
-- [URLRequest.CachePolicy](urlrequest/cachepolicy-swift.typealias.md)
+- [URLRequest.CachePolicy](./urlrequest/cachepolicy-swift.typealias.md)
   An alias for the cache policy.
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+- [NSURLRequest.CachePolicy](./nsurlrequest/cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 ### Accessing request components
-- [var httpMethod: String?](urlrequest/httpmethod.md)
+- [var httpMethod: String?](./urlrequest/httpmethod.md)
   The HTTP request method.
-- [var url: URL?](urlrequest/url.md)
+- [var url: URL?](./urlrequest/url.md)
   The URL of the request.
-- [var httpBody: Data?](urlrequest/httpbody.md)
+- [var httpBody: Data?](./urlrequest/httpbody.md)
   The data sent as the message body of a request, such as for an HTTP POST request.
-- [var httpBodyStream: InputStream?](urlrequest/httpbodystream.md)
+- [var httpBodyStream: InputStream?](./urlrequest/httpbodystream.md)
   The stream used to deliver the HTTP body.
-- [var mainDocumentURL: URL?](urlrequest/maindocumenturl.md)
+- [var mainDocumentURL: URL?](./urlrequest/maindocumenturl.md)
   The main document URL associated with this request.
 ### Accessing header fields
-- [var allHTTPHeaderFields: [String : String]?](urlrequest/allhttpheaderfields.md)
+- [var allHTTPHeaderFields: [String : String]?](./urlrequest/allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func addValue(String, forHTTPHeaderField: String)](urlrequest/addvalue(_:forhttpheaderfield:).md)
+- [func addValue(String, forHTTPHeaderField: String)](./urlrequest/addvalue%28_,forhttpheaderfield%29.md)
   Adds a value to the header field.
-- [func setValue(String?, forHTTPHeaderField: String)](urlrequest/setvalue(_:forhttpheaderfield:).md)
+- [func setValue(String?, forHTTPHeaderField: String)](./urlrequest/setvalue%28_,forhttpheaderfield%29.md)
   Sets a value for the header field.
-- [func value(forHTTPHeaderField: String) -> String?](urlrequest/value(forhttpheaderfield:).md)
+- [func value(forHTTPHeaderField: String) -> String?](./urlrequest/value%28forhttpheaderfield%29.md)
   Retrieves a header value.
 ### Controlling request behavior
-- [var timeoutInterval: TimeInterval](urlrequest/timeoutinterval.md)
+- [var timeoutInterval: TimeInterval](./urlrequest/timeoutinterval.md)
   The timeout interval of the request.
-- [var httpShouldHandleCookies: Bool](urlrequest/httpshouldhandlecookies.md)
+- [var httpShouldHandleCookies: Bool](./urlrequest/httpshouldhandlecookies.md)
   A Boolean value indicating whether cookies will be sent with and set for this request.
-- [var httpShouldUsePipelining: Bool](urlrequest/httpshouldusepipelining.md)
+- [var httpShouldUsePipelining: Bool](./urlrequest/httpshouldusepipelining.md)
   A Boolean value indicating whether the request should transmit before the previous response is received.
-- [var allowsCellularAccess: Bool](urlrequest/allowscellularaccess.md)
+- [var allowsCellularAccess: Bool](./urlrequest/allowscellularaccess.md)
   A Boolean value indicating whether the request is allowed to use the built-in cellular radios to satisfy the request.
-- [var allowsPersistentDNS: Bool](urlrequest/allowspersistentdns.md)
+- [var allowsPersistentDNS: Bool](./urlrequest/allowspersistentdns.md)
   `true` if the request is allowed to store and use DNS answers, potentially beyond TTL expiry, in a persistent per-process cache, `false` otherwise. Defaults to `false`. This should only be set to `true` for hostnames whose resolutions are not expected to change across networks.
-- [var assumesHTTP3Capable: Bool](urlrequest/assumeshttp3capable.md)
+- [var assumesHTTP3Capable: Bool](./urlrequest/assumeshttp3capable.md)
   `true` if server endpoint is known to support HTTP/3. Enables QUIC racing without HTTP/3 service discovery. Defaults to `false`. The default may be `true` in a future OS update.
-- [var cookiePartitionIdentifier: String?](urlrequest/cookiepartitionidentifier.md)
-- [var requiresDNSSECValidation: Bool](urlrequest/requiresdnssecvalidation.md)
+- [var cookiePartitionIdentifier: String?](./urlrequest/cookiepartitionidentifier.md)
+- [var requiresDNSSECValidation: Bool](./urlrequest/requiresdnssecvalidation.md)
   `true` if the request is required to do DNSSEC validation during DNS lookup. `false` otherwise. Defaults to `false`.
 ### Supporting limited modes
-- [var allowsConstrainedNetworkAccess: Bool](urlrequest/allowsconstrainednetworkaccess.md)
+- [var allowsConstrainedNetworkAccess: Bool](./urlrequest/allowsconstrainednetworkaccess.md)
   A Boolean value that indicates whether the request may use the network when the user has specified Low Data Mode.
-- [var allowsExpensiveNetworkAccess: Bool](urlrequest/allowsexpensivenetworkaccess.md)
+- [var allowsExpensiveNetworkAccess: Bool](./urlrequest/allowsexpensivenetworkaccess.md)
   A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
 ### Accessing the service type
-- [var networkServiceType: URLRequest.NetworkServiceType](urlrequest/networkservicetype-swift.property.md)
+- [var networkServiceType: URLRequest.NetworkServiceType](./urlrequest/networkservicetype-swift.property.md)
   The type of network service for all tasks within network sessions to enable Cellular Network Slicing.
-- [URLRequest.NetworkServiceType](urlrequest/networkservicetype-swift.typealias.md)
+- [URLRequest.NetworkServiceType](./urlrequest/networkservicetype-swift.typealias.md)
   An alias for the network service type.
-- [NSURLRequest.NetworkServiceType](nsurlrequest/networkservicetype-swift.enum.md)
+- [NSURLRequest.NetworkServiceType](./nsurlrequest/networkservicetype-swift.enum.md)
   Constants that specify how a request uses network resources.
 ### Indicating the source of the request
-- [var attribution: URLRequest.Attribution](urlrequest/attribution-swift.property.md)
+- [var attribution: URLRequest.Attribution](./urlrequest/attribution-swift.property.md)
   The entity that initiates the network request.
-- [URLRequest.Attribution](urlrequest/attribution-swift.typealias.md)
+- [URLRequest.Attribution](./urlrequest/attribution-swift.typealias.md)
   A type that indicates the entities that can make a network request.
 ### Using reference types
-- [class NSURLRequest](nsurlrequest.md)
+- [class NSURLRequest](./nsurlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSMutableURLRequest](nsmutableurlrequest.md)
+- [class NSMutableURLRequest](./nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
-- [typealias MutableURLRequest](mutableurlrequest.md)
+- [typealias MutableURLRequest](./mutableurlrequest.md)
 ### Instance Properties
-- [var allowsUltraConstrainedNetworkAccess: Bool](urlrequest/allowsultraconstrainednetworkaccess.md)
+- [var allowsUltraConstrainedNetworkAccess: Bool](./urlrequest/allowsultraconstrainednetworkaccess.md)
   `true` if the receiver is allowed to use an interface marked as ultra-constrained to satify the request, `false` otherwise.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSURLRequest](nsurlrequest.md)
+### Requests and responses
+- [class NSURLRequest](./nsurlrequest.md)
   A URL load request that is independent of protocol or URL scheme.
-- [class NSMutableURLRequest](nsmutableurlrequest.md)
+- [class NSMutableURLRequest](./nsmutableurlrequest.md)
   A mutable URL load request that is independent of protocol or URL scheme.
-- [class URLResponse](urlresponse.md)
+- [class URLResponse](./urlresponse.md)
   The metadata associated with the response to a URL load request, independent of protocol and URL scheme.
-- [class HTTPURLResponse](httpurlresponse.md)
+- [class HTTPURLResponse](./httpurlresponse.md)
   The metadata associated with the response to an HTTP protocol URL load request.
 
 

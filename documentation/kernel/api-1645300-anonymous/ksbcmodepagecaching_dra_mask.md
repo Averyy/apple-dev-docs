@@ -1,14 +1,15 @@
 # kSBCModePageCaching_DRA_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSBCModePageCaching_DRA_Mask = (1 << kSBCModePageCaching_DRA_Bit)
 ```
 

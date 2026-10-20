@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func compare(_ other: JSValue) -> JSRelationCondition
+```
+
+```objc
+- (JSRelationCondition) compareJSValue:(JSValue *) other;
 ```
 
 #### Return Value

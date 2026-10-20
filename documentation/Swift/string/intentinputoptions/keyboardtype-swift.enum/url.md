@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType.URL
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A keyboard that provides URL entry.
 

@@ -1,7 +1,8 @@
 # NSFileProviderDeleteItemOptions
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for deleting items.
 
@@ -18,38 +19,43 @@ Options for deleting items.
 struct NSFileProviderDeleteItemOptions
 ```
 
+```c
+enum NSFileProviderDeleteItemOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Choosing Delete Options
-- [static var recursive: NSFileProviderDeleteItemOptions](nsfileproviderdeleteitemoptions/recursive.md)
+- [static var recursive: NSFileProviderDeleteItemOptions](./nsfileproviderdeleteitemoptions/recursive.md)
   A value indicating that the delete operation removes the item and all of its children.
 ### Creating Delete Options
-- [init(rawValue: UInt)](nsfileproviderdeleteitemoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfileproviderdeleteitemoptions/init%28rawvalue%29.md)
   Creates an option instance from the raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md)
+### Managing Items
+- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md)
   Tells the file provider to create or import an item based on a template.
-- [struct NSFileProviderCreateItemOptions](nsfileprovidercreateitemoptions.md)
+- [struct NSFileProviderCreateItemOptions](./nsfileprovidercreateitemoptions.md)
   Options for creating items.
-- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:).md)
+- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/modifyitem%28_,baseversion,changedfields,contents,options,request,completionhandler%29.md)
   Tells the file provider that an item’s content or metadata changed.
-- [struct NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions.md)
+- [struct NSFileProviderModifyItemOptions](./nsfileprovidermodifyitemoptions.md)
   Options for modifying items.
-- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).md)
+- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](./nsfileproviderreplicatedextension/deleteitem%28identifier,baseversion,options,request,completionhandler%29.md)
   Tells the file provider to delete an item forever.
 
 

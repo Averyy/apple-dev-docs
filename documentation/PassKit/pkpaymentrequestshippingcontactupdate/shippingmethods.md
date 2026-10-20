@@ -1,7 +1,8 @@
 # shippingMethods
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of shipping methods.
 
@@ -19,9 +20,14 @@ An array of shipping methods.
 var shippingMethods: [PKShippingMethod] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<PKShippingMethod *> * shippingMethods;
+```
+
 ## See Also
 
-- [var errors: [any Error]!](pkpaymentrequestshippingcontactupdate/errors.md)
+### Updating user errors and shipping methods
+- [var errors: [any Error]!](./errors.md)
   An array of shipping contact information errors that the user must resolve.
 
 

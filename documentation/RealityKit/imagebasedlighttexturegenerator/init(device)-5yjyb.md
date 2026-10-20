@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -16,9 +17,16 @@ nonisolated
 (nonsending) init(device: any MTLDevice) async
 ```
 
+**Other overloads**:
+
+```swift
+init(device: any MTLDevice)
+```
+
 ## See Also
 
-- [init(device: any MTLDevice)](imagebasedlighttexturegenerator/init(device:)-22qce.md)
+### Creating a generator
+- [init(device: any MTLDevice)](./init%28device%29-22qce.md)
 
 
 ---

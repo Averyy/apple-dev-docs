@@ -1,7 +1,8 @@
 # clamp(_:min:max:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clamps the values in the first tensor between the corresponding values in the minimum and maximum value tensor.
 
@@ -17,6 +18,10 @@ Clamps the values in the first tensor between the corresponding values in the mi
 
 ```swift
 func clamp(_ tensor: MPSGraphTensor, min minValueTensor: MPSGraphTensor, max maxValueTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) clampWithTensor:(MPSGraphTensor *) tensor minValueTensor:(MPSGraphTensor *) minValueTensor maxValueTensor:(MPSGraphTensor *) maxValueTensor name:(NSString *) name;
 ```
 
 #### Return Value

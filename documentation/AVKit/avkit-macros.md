@@ -1,11 +1,12 @@
 # Macros
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var PLATFORM_SUPPORTS_AVKITCORE: Bool](platform_supports_avkitcore.md)
+- [var PLATFORM_SUPPORTS_AVKITCORE: Bool](./platform_supports_avkitcore.md)
 
 
 ---

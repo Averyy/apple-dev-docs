@@ -1,7 +1,8 @@
 # ignoresViewportScaleLimits
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether a web view allows scaling of the webpage.
 
@@ -17,13 +18,18 @@ A Boolean value that determines whether a web view allows scaling of the webpage
 var ignoresViewportScaleLimits: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL ignoresViewportScaleLimits;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), this property overrides the `user-scalable` HTML property in a webpage, and lets the web view scale its webpage content regardless of the author’s intent. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When set to [`true`](../../Swift/true.md), this property overrides the `user-scalable` HTML property in a webpage, and lets the web view scale its webpage content regardless of the author’s intent. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var suppressesIncrementalRendering: Bool](wkwebviewconfiguration/suppressesincrementalrendering.md)
+### Configuring the rendering behavior
+- [var suppressesIncrementalRendering: Bool](./suppressesincrementalrendering.md)
   A Boolean value that indicates whether the web view suppresses content rendering until the content is fully loaded into memory.
 
 

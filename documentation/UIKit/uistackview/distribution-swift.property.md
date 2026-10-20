@@ -1,7 +1,8 @@
 # distribution
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distribution of the arranged views along the stack view’s axis.
 
@@ -18,21 +19,26 @@ The distribution of the arranged views along the stack view’s axis.
 var distribution: UIStackView.Distribution { get set }
 ```
 
+```objc
+@property (nonatomic) UIStackViewDistribution distribution;
+```
+
 #### Discussion
 
-This property determines how the stack view lays out its arranged views along its axis. The default value is [`UIStackView.Distribution.fill`](uistackview/distribution-swift.enum/fill.md). For a list of possible values, see [`UIStackView.Distribution`](uistackview/distribution-swift.enum.md).
+This property determines how the stack view lays out its arranged views along its axis. The default value is [`UIStackView.Distribution.fill`](./distribution-swift.enum/fill.md). For a list of possible values, see [`UIStackView.Distribution`](./distribution-swift.enum.md).
 
 ## See Also
 
-- [var axis: NSLayoutConstraint.Axis](uistackview/axis.md)
+### Configuring the layout
+- [var axis: NSLayoutConstraint.Axis](./axis.md)
   The axis along which the arranged views lay out.
-- [var alignment: UIStackView.Alignment](uistackview/alignment-swift.property.md)
+- [var alignment: UIStackView.Alignment](./alignment-swift.property.md)
   The alignment of the arranged subviews perpendicular to the stack view’s axis.
-- [var spacing: CGFloat](uistackview/spacing.md)
+- [var spacing: CGFloat](./spacing.md)
   The distance in points between the adjacent edges of the stack view’s arranged views.
-- [var isBaselineRelativeArrangement: Bool](uistackview/isbaselinerelativearrangement.md)
+- [var isBaselineRelativeArrangement: Bool](./isbaselinerelativearrangement.md)
   A Boolean value that determines whether the vertical spacing between views is measured from their baselines.
-- [var isLayoutMarginsRelativeArrangement: Bool](uistackview/islayoutmarginsrelativearrangement.md)
+- [var isLayoutMarginsRelativeArrangement: Bool](./islayoutmarginsrelativearrangement.md)
   A Boolean value that determines whether the stack view lays out its arranged views relative to its layout margins.
 
 

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents the background activity from being scheduled again.
 
@@ -14,11 +15,15 @@ Prevents the background activity from being scheduled again.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 When `invalidate` is used to stop an activity that is currently executing, the activity will still finish executing.
 
-See [`Stop Activity`](nsbackgroundactivityscheduler#Stop-Activity.md).
+See [Stop Activity](../nsbackgroundactivityscheduler.md#Stop-Activity).
 
 
 ---

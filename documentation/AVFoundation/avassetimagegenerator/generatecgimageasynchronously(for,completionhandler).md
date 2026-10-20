@@ -1,7 +1,8 @@
 # generateCGImageAsynchronously(for:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an image asynchronously for a requested time, and returns the result in a callback.
 
@@ -19,9 +20,13 @@ Generates an image asynchronously for a requested time, and returns the result i
 func generateCGImageAsynchronously(for requestedTime: CMTime, completionHandler handler: @escaping @Sendable (CGImage?, CMTime, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) generateCGImageAsynchronouslyForTime:(CMTime) requestedTime completionHandler:(void (^)(CGImageRef image, CMTime actualTime, NSError *error)) handler;
+```
+
 #### Discussion
 
-Swift clients should use the asynchronous [`image(at:)`](avassetimagegenerator/image(at:).md) method instead.
+Swift clients should use the asynchronous [`image(at:)`](./image%28at%29.md) method instead.
 
 ## Parameters
 
@@ -31,26 +36,27 @@ Swift clients should use the asynchronous [`image(at:)`](avassetimagegenerator/i
 ## Topics
 
 ### Data types
-- [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)
+- [typealias AVAssetImageGeneratorCompletionHandler](../avassetimagegeneratorcompletionhandler.md)
   A type alias for a closure that provides the result of an image generation request.
-- [AVAssetImageGenerator.Result](avassetimagegenerator/result.md)
+- [AVAssetImageGenerator.Result](./result.md)
   Constants that indicate the result of an image generation request.
 
 ## See Also
 
-- [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](avassetimagegenerator/image(at:).md)
+### Generating images
+- [func image(at: CMTime) async throws -> (image: CGImage, actualTime: CMTime)](./image%28at%29.md)
   Generates an image for a requested time.
-- [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](avassetimagegenerator/images(for:).md)
+- [func images(for: [CMTime]) -> sending AVAssetImageGenerator.Images](./images%28for%29.md)
   Generates images for times within the video timeline.
-- [AVAssetImageGenerator.Images](avassetimagegenerator/images.md)
+- [AVAssetImageGenerator.Images](./images.md)
   An asynchronous sequence of images created by an image generator.
-- [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](avassetimagegenerator/generatecgimagesasynchronously(fortimes:completionhandler:).md)
+- [func generateCGImagesAsynchronously(forTimes: [NSValue], completionHandler: AVAssetImageGeneratorCompletionHandler)](./generatecgimagesasynchronously%28fortimes,completionhandler%29.md)
   Generates images asynchronously for an array of requested times, and returns the results in a callback.
-- [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)
+- [typealias AVAssetImageGeneratorCompletionHandler](../avassetimagegeneratorcompletionhandler.md)
   A type alias for a closure that provides the result of an image generation request.
-- [func cancelAllCGImageGeneration()](avassetimagegenerator/cancelallcgimagegeneration.md)
+- [func cancelAllCGImageGeneration()](./cancelallcgimagegeneration%28%29.md)
   Cancels all pending image generation requests.
-- [func copyCGImage(at: CMTime, actualTime: UnsafeMutablePointer<CMTime>?) throws -> CGImage](avassetimagegenerator/copycgimage(at:actualtime:).md)
+- [func copyCGImage(at: CMTime, actualTime: UnsafeMutablePointer<CMTime>?) throws -> CGImage](./copycgimage%28at,actualtime%29.md)
   Returns an image for the asset at or near a specified time.
 
 

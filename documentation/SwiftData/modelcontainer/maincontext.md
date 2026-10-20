@@ -1,7 +1,8 @@
 # mainContext
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A model context that’s bound to app’s main actor.
 
@@ -24,7 +25,7 @@ var mainContext: ModelContext { get }
 
 ## Mentions
 
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+- [Reverting data changes using the undo manager](../reverting-data-changes-using-the-undo-manager.md)
 
 
 ---

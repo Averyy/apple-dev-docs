@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum threadgroup memory available to a compute kernel, in bytes.
@@ -20,9 +21,14 @@ The maximum threadgroup memory available to a compute kernel, in bytes.
 var maxThreadgroupMemoryLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maxThreadgroupMemoryLength;
+```
+
 ## See Also
 
-- [var maxThreadsPerThreadgroup: MTLSize](mtldevice/maxthreadsperthreadgroup.md)
+### Checking compute support
+- [var maxThreadsPerThreadgroup: MTLSize](./maxthreadsperthreadgroup.md)
   The maximum number of threads along each dimension of a threadgroup.
 
 

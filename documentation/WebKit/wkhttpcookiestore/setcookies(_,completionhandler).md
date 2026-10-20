@@ -1,7 +1,8 @@
 # setCookies(_:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func setCookies(_ cookies: [HTTPCookie], completionHandler: (@MainActor @Sendable () -> Void)? = nil)
+```
+
+```swift
 func setCookies(_ cookies: [HTTPCookie]) async
+```
+
+```objc
+- (void) setCookies:(NSArray<NSHTTPCookie *> *) cookies completionHandler:(void (^)(void)) completionHandler;
 ```
 
 #### Discussion

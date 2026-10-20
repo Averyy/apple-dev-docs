@@ -1,6 +1,7 @@
 # Prerelease Versions
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Platform-specific versions of your app intended for distribution to beta testers.
 
@@ -11,37 +12,38 @@ A `preReleaseVersions` resource represents a version of your app intended for Te
 ## Topics
 
 ### Getting Prerelease Version Information
-- [List prerelease versions](get-v1-prereleaseversions.md)
+- [List prerelease versions](./get-v1-prereleaseversions.md)
   Get a list of prerelease versions for all apps.
-- [Read prerelease version information](get-v1-prereleaseversions-_id_.md)
+- [Read prerelease version information](./get-v1-prereleaseversions-_id_.md)
   Get information about a specific prerelease version.
-- [Read the app information of a prerelease version](get-v1-prereleaseversions-_id_-app.md)
+- [Read the app information of a prerelease version](./get-v1-prereleaseversions-_id_-app.md)
   Get the app information for a specific prerelease version.
-- [Get the app ID for a prerelease version](get-v1-prereleaseversions-_id_-relationships-app.md)
+- [Get the app ID for a prerelease version](./get-v1-prereleaseversions-_id_-relationships-app.md)
 ### Getting Build Information
-- [List all builds of a prerelease version](get-v1-prereleaseversions-_id_-builds.md)
+- [List all builds of a prerelease version](./get-v1-prereleaseversions-_id_-builds.md)
   Get a list of builds of a specific prerelease version.
-- [List build IDs for a prerelease version](get-v1-prereleaseversions-_id_-relationships-builds.md)
+- [List build IDs for a prerelease version](./get-v1-prereleaseversions-_id_-relationships-builds.md)
 ### Objects
-- [object PrereleaseVersion](prereleaseversion.md)
+- [object PrereleaseVersion](./prereleaseversion.md)
   A pre-release version associated with a build, representing a development or beta software version before App Store submission.
-- [object PrereleaseVersionResponse](prereleaseversionresponse.md)
+- [object PrereleaseVersionResponse](./prereleaseversionresponse.md)
   The response body for endpoints that read a single prerelease version of an app.
-- [object PreReleaseVersionsResponse](prereleaseversionsresponse.md)
+- [object PreReleaseVersionsResponse](./prereleaseversionsresponse.md)
   A response containing a list of pre-release versions for an app.
-- [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
+- [object PrereleaseVersionWithoutIncludesResponse](./prereleaseversionwithoutincludesresponse.md)
   A response containing a single pre-release version, without related resources.
-- [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+- [object PreReleaseVersionsWithoutIncludesResponse](./prereleaseversionswithoutincludesresponse.md)
   A response containing a list of pre-release versions, without related resources.
-- [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
-- [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
-- [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)
+- [object AppPreReleaseVersionsLinkagesResponse](./appprereleaseversionslinkagesresponse.md)
+- [object PrereleaseVersionAppLinkageResponse](./prereleaseversionapplinkageresponse.md)
+- [object PrereleaseVersionBuildsLinkagesResponse](./prereleaseversionbuildslinkagesresponse.md)
 
 ## See Also
 
-- [Beta App Localizations](beta-app-localizations.md)
+### App Resources
+- [Beta App Localizations](./beta-app-localizations.md)
   Beta test information about apps, specific to a locale.
-- [Beta License Agreements](beta-license-agreements.md)
+- [Beta License Agreements](./beta-license-agreements.md)
   Beta license agreements for apps.
 
 

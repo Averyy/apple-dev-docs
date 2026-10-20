@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventAssetListResponseStatus.unavailable
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the asset list response is unavailable.
 
@@ -20,15 +21,20 @@ Indicates that the asset list response is unavailable.
 case unavailable
 ```
 
+```c
+AVPlayerInterstitialEventAssetListResponseStatusUnavailable
+```
+
 #### Discussion
 
 The system is unable to read the `X-ASSET-LIST` response from the stream.
 
 ## See Also
 
-- [AVPlayerInterstitialEventAssetListResponseStatus.available](avplayerinterstitialeventassetlistresponsestatus/available.md)
+### Status values
+- [AVPlayerInterstitialEventAssetListResponseStatus.available](./available.md)
   Indicates that a valid asset list response is available.
-- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](avplayerinterstitialeventassetlistresponsestatus/cleared.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.cleared](./cleared.md)
   Indicates that the system cleared the asset list response.
 
 

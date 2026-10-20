@@ -1,25 +1,27 @@
 # reply
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IORPCMessageMach * reply;
 ```
 
 ## See Also
 
-- [message](iorpc/message.md)
-- [replySize](iorpc/replysize.md)
-- [sendSize](iorpc/sendsize.md)
+### Getting the Properties
+- [message](./message.md)
+- [replySize](./replysize.md)
+- [sendSize](./sendsize.md)
 
 
 ---

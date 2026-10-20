@@ -1,7 +1,8 @@
 # synthNotReady
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Speech synthesizer is still busy speaking
 
@@ -17,19 +18,20 @@ var synthNotReady: Int { get }
 
 ## See Also
 
-- [var noSynthFound: Int](nosynthfound.md)
+### Result Codes
+- [var noSynthFound: Int](./nosynthfound.md)
   Could not find the specified speech synthesizer
-- [var synthOpenFailed: Int](synthopenfailed.md)
+- [var synthOpenFailed: Int](./synthopenfailed.md)
   Could not open another speech synthesizerchannel
-- [var bufTooSmall: Int](buftoosmall.md)
+- [var bufTooSmall: Int](./buftoosmall.md)
   Output buffer is too small to hold result
-- [var voiceNotFound: Int](voicenotfound.md)
+- [var voiceNotFound: Int](./voicenotfound.md)
   Voice resource not found
-- [var incompatibleVoice: Int](incompatiblevoice.md)
+- [var incompatibleVoice: Int](./incompatiblevoice.md)
   Specified voice cannot be used with synthesizer
-- [var badDictFormat: Int](baddictformat.md)
+- [var badDictFormat: Int](./baddictformat.md)
   Pronunciation dictionary format error
-- [var badInputText: Int](badinputtext.md)
+- [var badInputText: Int](./badinputtext.md)
   Raw phoneme text contains invalid characters
 
 

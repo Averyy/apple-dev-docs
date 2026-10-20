@@ -1,6 +1,7 @@
 # Debugging HTTP Server-Side Errors
 
-**Framework**: Network
+**Framework**: Network  
+**Role**: Article
 
 Understand HTTP server-side errors and how to debug them.
 
@@ -8,18 +9,18 @@ Understand HTTP server-side errors and how to debug them.
 
 Apple’s HTTP APIs report transport errors and server-side errors:
 
-- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](https://developer.apple.com/documentation/foundation/nserror) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](https://developer.apple.com/documentation/foundation/urlsessiontaskdelegate/urlsession(_:task:didcompletewitherror:)). If you get a transport error, investigate what is happening with your network traffic. To get started, read [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md).
-- A server-side error occurs due to problems detected by the server. The [`statusCode`](https://developer.apple.com/documentation/foundation/httpurlresponse/statuscode) property of the [`HTTPURLResponse`](https://developer.apple.com/documentation/foundation/httpurlresponse) contains the error.
+- A transport error occurs due to a problem getting your request to, or getting the response from, the server. This [`NSError`](../Foundation/nserror.md) value is typically passed to your completion handler block or to a delegate method like [`urlSession(_:task:didCompleteWithError:)`](../Foundation/urlsessiontaskdelegate/urlsession%28_,task,didcompletewitherror%29.md). If you get a transport error, investigate what is happening with your network traffic. To get started, read [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md).
+- A server-side error occurs due to problems detected by the server. The [`statusCode`](../Foundation/httpurlresponse/statuscode.md) property of the [`HTTPURLResponse`](../Foundation/httpurlresponse.md) contains the error.
 
-The status codes returned by the server aren’t always easy to interpret (see Section 6, *Response Status Codes*, of [`RFC 7231`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7231)) . Many HTTP server-side errors don’t give you a way to determine, from the client side, what went wrong. These include the 5xx errors (like *500 Internal Server Error*) and many 4xx errors (for example, with *400 Bad Request*, it’s hard to know exactly why the server considers the request bad).
+The status codes returned by the server aren’t always easy to interpret (see Section 6, *Response Status Codes*, of [RFC 7231](https://tools.ietf.org/html/rfc7231)) . Many HTTP server-side errors don’t give you a way to determine, from the client side, what went wrong. These include the 5xx errors (like *500 Internal Server Error*) and many 4xx errors (for example, with *400 Bad Request*, it’s hard to know exactly why the server considers the request bad).
 
-> **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [`Analyzing HTTP traffic with Instruments`](https://developer.apple.com/documentation/foundation/analyzing-http-traffic-with-instruments).
+> **Note**:  Xcode 13 includes the HTTP Tracing instrument to aid in debugging HTTP issues. See [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md).
 
 The following sections explain how to debug these server-side problems.
 
-##### Print the Http Response Body
+##### Print the HTTP Response Body
 
-In some cases, the error response from the server includes an HTTP response body that explains what the problem is. Look at the HTTP response body to see whether such an explanation is present. If it is, that’s the easiest way to figure out what went wrong. For example, consider this standard [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) request code.
+In some cases, the error response from the server includes an HTTP response body that explains what the problem is. Look at the HTTP response body to see whether such an explanation is present. If it is, that’s the easiest way to figure out what went wrong. For example, consider this standard [`URLSession`](../Foundation/urlsession.md) request code.
 
 ```swift
 URLSession.shared.dataTask(with: url) { (responseBody, response, error) in
@@ -59,7 +60,7 @@ If the HTTP response body doesn’t help, compare your request to a request issu
 
 If you have a working client, it’s relatively straightforward to debug your problem:
 
-1. Use the same network debugging tool to record the requests made by your client and the working client. If you’re using HTTP (not HTTPS), use a low-level packet trace tool to record these requests (see [`Recording a Packet Trace`](recording-a-packet-trace.md)). If you’re using HTTPS, with Transport Layer Security (TLS), you can’t see the HTTP request. In that case, if your server has a debugging mode that lets you see the plaintext request, look there. If not, a debugging HTTP proxy may let you see the request; see [`Debugging HTTP Proxies`](taking-advantage-of-third-party-network-debugging-tools#Debugging-HTTP-Proxies.md) for more information.
+1. Use the same network debugging tool to record the requests made by your client and the working client. If you’re using HTTP (not HTTPS), use a low-level packet trace tool to record these requests (see [Recording a Packet Trace](./recording-a-packet-trace.md)). If you’re using HTTPS, with Transport Layer Security (TLS), you can’t see the HTTP request. In that case, if your server has a debugging mode that lets you see the plaintext request, look there. If not, a debugging HTTP proxy may let you see the request; see [Debugging HTTP Proxies](./taking-advantage-of-third-party-network-debugging-tools.md#Debugging-HTTP-Proxies) for more information.
 2. Compare the two requests. Focus on the most significant values first. Do the URL paths match? Do the HTTP methods match? Do the `Content-Type` headers match? What about the remaining headers? Do the request bodies match? If these all match and things still don’t work, you may need to look at more obscure values, like the HTTP transfer encoding and, if you’re using HTTPS, various TLS parameters.
 3. Address any discrepancies.
 4. Retry with your updated client.
@@ -71,15 +72,16 @@ If you don’t have access to a working client, or you can’t get things to wor
 
 ## See Also
 
-- [Choosing a Network Debugging Tool](choosing-a-network-debugging-tool.md)
+### Network Debugging
+- [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md)
   Decide which tool works best for your network debugging problem.
-- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
+- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](./debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
   Use CFNetwork diagnostic logging to investigate HTTP and HTTPS problems.
-- [Recording a Packet Trace](recording-a-packet-trace.md)
+- [Recording a Packet Trace](./recording-a-packet-trace.md)
   Learn how to record a low-level trace of network traffic.
-- [Taking Advantage of Third-Party Network Debugging Tools](taking-advantage-of-third-party-network-debugging-tools.md)
+- [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md)
   Learn about the available third-party network debugging tools.
-- [Testing and Debugging L4S in Your App](testing-and-debugging-l4s-in-your-app.md)
+- [Testing and Debugging L4S in Your App](./testing-and-debugging-l4s-in-your-app.md)
   Learn how to verify your app on an L4S-capable host and network to improve your app’s responsiveness.
 
 

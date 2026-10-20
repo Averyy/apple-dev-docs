@@ -1,7 +1,8 @@
 # eventStream
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of events from the card session.
 
@@ -22,9 +23,10 @@ Use the Swift `for-await-in` syntax to receive and process events as the session
 
 ## See Also
 
-- [CardSession.EventStream](cardsession/eventstream-swift.class.md)
+### Handling card events
+- [CardSession.EventStream](./eventstream-swift.class.md)
   An asynchronous sequence of events produced by a card session.
-- [CardSession.Event](cardsession/event.md)
+- [CardSession.Event](./event.md)
   A type that enumerates events produced by a card session.
 
 

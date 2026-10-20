@@ -1,7 +1,8 @@
 # Creative.CreativeSpec
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Pre-tap ad experience specification with customizable attributes and assets.
 
@@ -10,7 +11,7 @@ Pre-tap ad experience specification with customizable attributes and assets.
 
 ## Declaration
 
-```swift
+```
 object Creative.CreativeSpec
 ```
 
@@ -26,7 +27,7 @@ Empty for Product Page ad creatives (`CUSTOM_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAG
 | `localizedText` | Map of locale to map of text key to string | Localized ad copy by locale key, then by text key (for example, `headline`, `body`). |
 | `defaultLocale` | String | Default locale used alongside `localizedText`. |
 
-See [`CreativeCreate.CreativeSpec`](creativecreate/creativespec-data.dictionary.md) for a create-time example.
+See [`CreativeCreate.CreativeSpec`](../creativecreate/creativespec-data.dictionary.md) for a create-time example.
 
 
 ---

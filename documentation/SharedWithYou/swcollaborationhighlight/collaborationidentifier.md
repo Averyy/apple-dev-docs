@@ -1,7 +1,8 @@
 # collaborationIdentifier
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier that the app hosting the collaboration provides.
 
@@ -18,17 +19,22 @@ A unique identifier that the app hosting the collaboration provides.
 var collaborationIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * collaborationIdentifier;
+```
+
 #### Discussion
 
 This identifier is unique across platforms and sharing sessions.
 
 ## See Also
 
-- [var contentType: UTType](swcollaborationhighlight/contenttype.md)
+### Accessing collaboration attributes
+- [var contentType: UTType](./contenttype.md)
   The UTI type for this collaboration highlight.
-- [var creationDate: Date](swcollaborationhighlight/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date the system creates this file.
-- [var title: String?](swcollaborationhighlight/title.md)
+- [var title: String?](./title.md)
   The title of the collaboration highlight.
 
 

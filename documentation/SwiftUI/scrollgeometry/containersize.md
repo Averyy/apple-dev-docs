@@ -1,7 +1,8 @@
 # containerSize
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the container of the scroll view.
 

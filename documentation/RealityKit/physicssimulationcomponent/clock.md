@@ -1,7 +1,8 @@
 # clock
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom clock which drives the physics simulation, defaults to the engine clock.
 

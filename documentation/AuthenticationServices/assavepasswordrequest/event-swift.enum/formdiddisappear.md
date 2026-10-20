@@ -1,7 +1,8 @@
 # ASSavePasswordRequest.Event.formDidDisappear
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The save event that occurs when a form is submitted or removed from the screen without prompting the user.
 
@@ -15,6 +16,10 @@ The save event that occurs when a form is submitted or removed from the screen w
 
 ```swift
 case formDidDisappear
+```
+
+```c
+ASSavePasswordRequestEventFormDidDisappear
 ```
 
 #### Discussion

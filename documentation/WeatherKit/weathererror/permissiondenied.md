@@ -1,7 +1,8 @@
 # WeatherError.permissionDenied
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating permission denied.
 
@@ -22,7 +23,8 @@ case permissionDenied
 
 ## See Also
 
-- [WeatherError.unknown](weathererror/unknown.md)
+### Getting the error type
+- [WeatherError.unknown](./unknown.md)
   An unknown error.
 
 

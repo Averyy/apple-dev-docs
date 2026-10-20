@@ -1,7 +1,8 @@
 # annotationForMapFeature
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method MapKit JS calls when the framework creates a map feature annotation.
 
@@ -10,7 +11,7 @@ The method MapKit JS calls when the framework creates a map feature annotation.
 
 ## Declaration
 
-```swift
+```
 get annotationForMapFeature():
     | ((
           mapFeatureAnnotation: MapFeatureAnnotation,
@@ -31,9 +32,10 @@ You can choose to return the annotation the method provides with modified proper
 
 ## See Also
 
-- [selectableMapFeatures](map/selectablemapfeatures.md)
+### Selecting map features
+- [selectableMapFeatures](./selectablemapfeatures.md)
   An array of map features that users can select from the map.
-- [selectableMapFeatureSelectionAccessory](map/selectablemapfeatureselectionaccessory.md)
+- [selectableMapFeatureSelectionAccessory](./selectablemapfeatureselectionaccessory.md)
   An accessory for displaying place information when a person selects a map feature.
 
 

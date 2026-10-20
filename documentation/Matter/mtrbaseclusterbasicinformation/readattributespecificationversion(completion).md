@@ -1,7 +1,8 @@
 # readAttributeSpecificationVersion(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSpecificationVersion(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSpecificationVersion() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSpecificationVersionWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

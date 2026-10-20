@@ -1,7 +1,8 @@
 # clearsOnBeginEditing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the text field removes old text when editing begins.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether the text field removes old text when edi
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,29 +19,34 @@ A Boolean value that determines whether the text field removes old text when edi
 var clearsOnBeginEditing: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL clearsOnBeginEditing;
+```
+
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the text field’s previous text is cleared when the user selects the text field to begin editing. If [`false`](https://developer.apple.com/documentation/swift/false), the text field places an insertion point at the place where the user tapped the field.
+If this property is set to [`true`](../../Swift/true.md), the text field’s previous text is cleared when the user selects the text field to begin editing. If [`false`](../../Swift/false.md), the text field places an insertion point at the place where the user tapped the field.
 
-> **Note**:  Even if this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the text field delegate can override this behavior by returning [`false`](https://developer.apple.com/documentation/swift/false) from its [`textFieldShouldClear(_:)`](uitextfielddelegate/textfieldshouldclear(_:).md) method.
+> **Note**:  Even if this property is set to [`true`](../../Swift/true.md), the text field delegate can override this behavior by returning [`false`](../../Swift/false.md) from its [`textFieldShouldClear(_:)`](../uitextfielddelegate/textfieldshouldclear%28_%29.md) method.
 
 ## See Also
 
-- [var isEditing: Bool](uitextfield/isediting.md)
+### Managing the editing behavior
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the text field is currently in edit mode.
-- [var clearsOnInsertion: Bool](uitextfield/clearsoninsertion.md)
+- [var clearsOnInsertion: Bool](./clearsoninsertion.md)
   A Boolean value that determines whether inserting text replaces the previous contents.
-- [var allowsEditingTextAttributes: Bool](uitextfield/allowseditingtextattributes.md)
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value that determines whether the user can edit the attributes of the text in the text field.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](./didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
-- [class let didEndEditingReasonUserInfoKey: String](uitextfield/didendeditingreasonuserinfokey.md)
+- [class let didEndEditingReasonUserInfoKey: String](./didendeditingreasonuserinfokey.md)
   A key that indicates the reason for ending editing in a text field.
-- [class let textDidBeginEditingNotification: NSNotification.Name](uitextfield/textdidbegineditingnotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](./textdidbegineditingnotification.md)
   A notification that alerts observers when an editing session begins in a text field.
-- [class let textDidChangeNotification: NSNotification.Name](uitextfield/textdidchangenotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   A notification that alerts observers when the text in a text field changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](uitextfield/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text field.
 
 

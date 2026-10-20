@@ -1,7 +1,8 @@
 # addAttachment(to:name:contentType:url:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously adds an attachment to the specified object.
 
@@ -10,7 +11,7 @@ Asynchronously adds an attachment to the specified object.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -45,7 +46,7 @@ do {
 }
 ```
 
-You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md), [`HKGlassesPrescription`](hkglassesprescription.md), and [`HKContactsPrescription`](hkcontactsprescription.md) samples. The attachment must be a static image or PDF (no videos or GIFs). HealthKit supports attaching Live Photos, however it automatically selects and attaches the key photo.
+You can only add attachments to [`HKVisionPrescription`](../hkvisionprescription.md), [`HKGlassesPrescription`](../hkglassesprescription.md), and [`HKContactsPrescription`](../hkcontactsprescription.md) samples. The attachment must be a static image or PDF (no videos or GIFs). HealthKit supports attaching Live Photos, however it automatically selects and attaches the key photo.
 
 ## Parameters
 
@@ -57,7 +58,8 @@ You can only add attachments to [`HKVisionPrescription`](hkvisionprescription.md
 
 ## See Also
 
-- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any], completion: (HKAttachment?, (any Error)?) -> Void)](hkattachmentstore/addattachment(to:name:contenttype:url:metadata:completion:).md)
+### Adding attachments
+- [func addAttachment(to: HKObject, name: String, contentType: UTType, url: URL, metadata: [String : Any], completion: (HKAttachment?, (any Error)?) -> Void)](./addattachment%28to,name,contenttype,url,metadata,completion%29.md)
   Adds an attachment to the specified object.
 
 

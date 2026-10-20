@@ -1,7 +1,8 @@
 # popFirst()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the first element of the collection.
 
@@ -20,13 +21,15 @@ Removes and returns the first element of the collection.
 mutating func popFirst() -> Self.Element?
 ```
 
+Available when `Self` is `Self.SubSequence`.
+
 #### Return Value
 
 The first element of the collection if the collection is not empty; otherwise, `nil`.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

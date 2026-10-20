@@ -1,7 +1,8 @@
 # performWithoutUserInteraction(generatePasswordsRequest:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempt to generate passwords based on developer-specified rules.
 
@@ -17,17 +18,21 @@ Attempt to generate passwords based on developer-specified rules.
 func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswordsRequest)
 ```
 
+```objc
+- (void) performGeneratePasswordsRequestWithoutUserInteraction:(ASGeneratePasswordsRequest *) generatePasswordsRequest;
+```
+
 #### Discussion
 
 To return results, you must call ``ASCredentialProviderExtensionContext/completeGeneratePasswordRequest(results:completionHandler:)`.
 
-> **Note**: When this method is called, your extension’s view controller is not present on the screen. [`userInteractionRequired`](asextensionerror/userinteractionrequired.md) will not be honored and treated as a failure.
+> **Note**: When this method is called, your extension’s view controller is not present on the screen. [`userInteractionRequired`](../asextensionerror/userinteractionrequired.md) will not be honored and treated as a failure.
 
 > **Note**: You should not update or replace any existing credentials when this API is called.
 
 To indicate support for this feature, add `SupportsGeneratePasswordCredentials` under the `ASCredentialProviderExtensionCapabilities` dictionary.
 
-```None
+```
 Info.plist
 ├─ NSExtension
     ├─ NSExtensionAttributes

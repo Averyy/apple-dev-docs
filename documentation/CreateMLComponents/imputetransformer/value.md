@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Impute value used to replace missing values.
 

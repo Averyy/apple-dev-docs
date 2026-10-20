@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,14 +18,19 @@
 var minimum: Float
 ```
 
+```c
+float minimum;
+```
+
 ## Mentions
 
-- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 ## See Also
 
-- [var maximum: Float](caframeraterange/maximum.md)
-- [var preferred: Float?](caframeraterange/preferred-7l3ki.md)
+### Instance Properties
+- [var maximum: Float](./maximum.md)
+- [var preferred: Float?](./preferred-7l3ki.md)
 
 
 ---

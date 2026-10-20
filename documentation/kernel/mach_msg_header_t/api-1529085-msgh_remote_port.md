@@ -1,14 +1,15 @@
 # msgh_remote_port
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mach_port_t msgh_remote_port;
 ```
 

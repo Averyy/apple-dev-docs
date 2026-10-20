@@ -6,17 +6,18 @@ Types of matches used for searches.
 
 ## See Also
 
-- [Session Keys](session-keys.md)
+### Constants
+- [Session Keys](./session-keys.md)
   Keys used when specifying session information.
-- [Node Types](1497602-node-types.md)
+- [Node Types](./api-1497602-node-types.md)
   Open Directory node types.
-- [Record Types](record-types.md)
+- [Record Types](./record-types.md)
   Types of Open Directory records.
-- [General Attribute Types](general-attribute-types.md)
+- [General Attribute Types](./general-attribute-types.md)
   Types of Open Directory attributes.
-- [Configuration Attribute Types](configuration-attribute-types.md)
+- [Configuration Attribute Types](./configuration-attribute-types.md)
   Types of Open Directory attributes specifically for use with configure nodes.
-- [Authentication Types](authentication-types.md)
+- [Authentication Types](./authentication-types.md)
   Types of authentication available in Open Directory.
 
 

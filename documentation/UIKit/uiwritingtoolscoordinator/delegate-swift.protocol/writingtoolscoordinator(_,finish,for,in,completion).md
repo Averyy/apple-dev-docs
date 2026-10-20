@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to clean up any state related to the specified Writing Tools animation.
@@ -15,12 +16,20 @@ Asks the delegate to clean up any state related to the specified Writing Tools a
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, finish textAnimation: UIWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: UIWritingToolsCoordinator.Context, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, finish textAnimation: UIWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: UIWritingToolsCoordinator.Context) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator finishTextAnimation:(UIWritingToolsCoordinatorTextAnimation) textAnimation forRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
@@ -38,9 +47,10 @@ Writing Tools calls this method only after previous calls to the `writingToolsCo
 
 ## See Also
 
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsPreviewFor: UIWritingToolsCoordinator.TextAnimation, of: NSRange, in: UIWritingToolsCoordinator.Context, completion: (UITargetedPreview?) -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:completion:).md)
+### Animating inline text changes
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, requestsPreviewFor: UIWritingToolsCoordinator.TextAnimation, of: NSRange, in: UIWritingToolsCoordinator.Context, completion: (UITargetedPreview?) -> Void)](./writingtoolscoordinator%28_,requestspreviewfor,of,in,completion%29.md)
   Asks the delegate for a preview image and layout information for the specified text.
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, prepareFor: UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, completion: () -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:preparefor:for:in:completion:).md)
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, prepareFor: UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, completion: () -> Void)](./writingtoolscoordinator%28_,preparefor,for,in,completion%29.md)
   Prepare for animations for the content that Writing Tools is evaluating.
 
 

@@ -1,7 +1,8 @@
 # addRotateOp(_:order:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addRotateOp(_ animatedValueName: String, order: MDLTransformOpRotationOrder, inverse: Bool) -> MDLTransformRotateOp
+```
+
+```objc
+- (MDLTransformRotateOp *) addRotateOp:(NSString *) animatedValueName order:(MDLTransformOpRotationOrder) order inverse:(bool) inverse;
 ```
 
 

@@ -1,7 +1,8 @@
 # table
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the table containing this text table block.
 
@@ -12,6 +13,10 @@ Returns the table containing this text table block.
 
 ```swift
 var table: NSTextTable { get }
+```
+
+```objc
+@property (strong, readonly) NSTextTable * table;
 ```
 
 #### Return Value

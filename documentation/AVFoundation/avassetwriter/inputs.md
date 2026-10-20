@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inputs an asset writer contains.
 
@@ -19,15 +20,20 @@ The inputs an asset writer contains.
 var inputs: [AVAssetWriterInput] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetWriterInput *> * inputs;
+```
+
 ## See Also
 
-- [var availableMediaTypes: [AVMediaType]](avassetwriter/availablemediatypes.md)
+### Configuring inputs
+- [var availableMediaTypes: [AVMediaType]](./availablemediatypes.md)
   The media types the asset writer supports adding as inputs.
-- [func canApply(outputSettings: [String : Any]?, forMediaType: AVMediaType) -> Bool](avassetwriter/canapply(outputsettings:formediatype:).md)
+- [func canApply(outputSettings: [String : Any]?, forMediaType: AVMediaType) -> Bool](./canapply%28outputsettings,formediatype%29.md)
   Determines whether the output file format supports the output settings for a specific media type.
-- [func canAdd(AVAssetWriterInput) -> Bool](avassetwriter/canadd(_:)-6al7j.md)
+- [func canAdd(AVAssetWriterInput) -> Bool](./canadd%28_%29-6al7j.md)
   Determines whether the asset writer supports adding the input.
-- [func add(AVAssetWriterInput)](avassetwriter/add(_:)-4c4d0.md)
+- [func add(AVAssetWriterInput)](./add%28_%29-4c4d0.md)
   Adds an input to an asset writer.
 
 

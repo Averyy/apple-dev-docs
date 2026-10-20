@@ -1,14 +1,15 @@
 # IOUSBHostCITransferCompletionMessageData1TransferStructurePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCITransferCompletionMessageData1TransferStructurePhase = IOUSBBitRangePhase(0, 63)
 ```
 

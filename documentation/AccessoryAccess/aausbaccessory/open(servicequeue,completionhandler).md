@@ -1,7 +1,8 @@
 # open(serviceQueue:completionHandler:)
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a connection to the USB accessory for this process to access it exclusively.
 
@@ -11,14 +12,22 @@ Opens a connection to the USB accessory for this process to access it exclusivel
 ## Declaration
 
 ```swift
+func open(serviceQueue: dispatch_queue_t?, completionHandler: @escaping @Sendable (IOUSBHostDevice, (any Error)?) -> Void)
+```
+
+```swift
 func open(serviceQueue: dispatch_queue_t?) async throws -> IOUSBHostDevice
+```
+
+```objc
+- (void) openWithServiceQueue:(dispatch_queue_t) serviceQueue completionHandler:(void (^)(IOUSBHostDevice *_Nullable_on_error, NSError *)) completionHandler;
 ```
 
 #### Discussion
 
-This operation opens a connection to the USB accessory for exclusive access and returns its [`IOUSBHostDevice`](https://developer.apple.com/documentation/iousbhost/iousbhostdevice) object. An app can call this multiple times, subsequent calls will return the same `IOUSBHostDevice` instance.
+This operation opens a connection to the USB accessory for exclusive access and returns its [`IOUSBHostDevice`](../../IOUSBHost/iousbhostdevice.md) object. An app can call this multiple times, subsequent calls will return the same `IOUSBHostDevice` instance.
 
-When the process no longer needs exclusive access to this accessory, call [`close(completionHandler:)`](aausbaccessory/close(completionhandler:).md) to close the accessory. This will close all open connections to the accessory and invalidate all the IOUSBHostDevice objects.
+When the process no longer needs exclusive access to this accessory, call [`close(completionHandler:)`](./close%28completionhandler%29.md) to close the accessory. This will close all open connections to the accessory and invalidate all the IOUSBHostDevice objects.
 
 ## Parameters
 
@@ -27,7 +36,8 @@ When the process no longer needs exclusive access to this accessory, call [`clos
 
 ## See Also
 
-- [func close(completionHandler: ((any Error)?) -> Void)](aausbaccessory/close(completionhandler:).md)
+### Managing a USB accessory
+- [func close(completionHandler: ((any Error)?) -> Void)](./close%28completionhandler%29.md)
   Closes all connections to the USB accessory for this process.
 
 

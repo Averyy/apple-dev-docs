@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty `Extensions` structure.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(base: [CFString : CFPropertyList]?)](cmformatdescription/extensions-swift.struct/init(base:).md)
+### Creating Extensions
+- [init(base: [CFString : CFPropertyList]?)](./init%28base%29.md)
   Creates an `Extensions` structure with existing values.
 
 

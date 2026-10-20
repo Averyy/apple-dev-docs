@@ -1,13 +1,14 @@
 # PKBarcodeEventConfigurationDataType.unknown
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -17,10 +18,15 @@
 case unknown
 ```
 
+```c
+PKBarcodeEventConfigurationDataTypeUnknown
+```
+
 ## See Also
 
-- [PKBarcodeEventConfigurationDataType.signingCertificate](pkbarcodeeventconfigurationdatatype/signingcertificate.md)
-- [PKBarcodeEventConfigurationDataType.signingKeyMaterial](pkbarcodeeventconfigurationdatatype/signingkeymaterial.md)
+### QR Code Purchase Signing Types
+- [PKBarcodeEventConfigurationDataType.signingCertificate](./signingcertificate.md)
+- [PKBarcodeEventConfigurationDataType.signingKeyMaterial](./signingkeymaterial.md)
 
 
 ---

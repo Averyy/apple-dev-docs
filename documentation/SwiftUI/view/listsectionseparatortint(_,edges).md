@@ -1,7 +1,8 @@
 # listSectionSeparatorTint(_:edges:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tint color associated with a section.
 
@@ -23,7 +24,7 @@ func listSectionSeparatorTint(_ color: Color?, edges: VerticalEdge.Set = .all) -
 
 Separators can be presented above and below a section. You can specify to which edge this preference should apply.
 
-This modifier expresses a preference to the containing [`List`](list.md). The list style is the final arbiter for the separator tint.
+This modifier expresses a preference to the containing [`List`](../list.md). The list style is the final arbiter for the separator tint.
 
 The following example shows a simple grouped list whose section separators are tinted based on section-specific data:
 
@@ -43,20 +44,21 @@ List {
 .listStyle(.grouped)
 ```
 
-To change the visibility and tint color for a row separator, use [`listRowSeparator(_:edges:)`](view/listrowseparator(_:edges:).md) and [`listRowSeparatorTint(_:edges:)`](view/listrowseparatortint(_:edges:).md). To hide a section separator, use [`listSectionSeparator(_:edges:)`](view/listsectionseparator(_:edges:).md).
+To change the visibility and tint color for a row separator, use [`listRowSeparator(_:edges:)`](./listrowseparator%28_,edges%29.md) and [`listRowSeparatorTint(_:edges:)`](./listrowseparatortint%28_,edges%29.md). To hide a section separator, use [`listSectionSeparator(_:edges:)`](./listsectionseparator%28_,edges%29.md).
 
 ## Parameters
 
 - `color`: The color to use to tint the section separators, or `nil` to use the default color for the current list style.
-- `edges`: The set of row edges for which the tint applies. The list style might decide to not display certain separators, typically the top edge. The default is [`all`](verticaledge/set/all.md).
+- `edges`: The set of row edges for which the tint applies. The list style might decide to not display certain separators, typically the top edge. The default is [`all`](../verticaledge/set/all.md).
 
 ## See Also
 
-- [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](view/listrowseparatortint(_:edges:).md)
+### Configuring separators
+- [func listRowSeparatorTint(Color?, edges: VerticalEdge.Set) -> some View](./listrowseparatortint%28_,edges%29.md)
   Sets the tint color associated with a row.
-- [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](view/listrowseparator(_:edges:).md)
+- [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](./listrowseparator%28_,edges%29.md)
   Sets the display mode for the separator associated with this specific row.
-- [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](view/listsectionseparator(_:edges:).md)
+- [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](./listsectionseparator%28_,edges%29.md)
   Sets whether to hide the separator associated with a list section.
 
 

@@ -1,7 +1,8 @@
 # init(pattern:color:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a line style.
 
@@ -27,9 +28,10 @@ init(pattern: Text.LineStyle.Pattern = .solid, color: Color? = nil)
 
 ## See Also
 
-- [init?(nsUnderlineStyle: NSUnderlineStyle)](text/linestyle/init(nsunderlinestyle:).md)
+### Creating a text line style
+- [init?(nsUnderlineStyle: NSUnderlineStyle)](./init%28nsunderlinestyle%29.md)
   Creates a `Text.LineStyle` from `NSUnderlineStyle`.
-- [Text.LineStyle.Pattern](text/linestyle/pattern.md)
+- [Text.LineStyle.Pattern](./pattern.md)
   The pattern, that the line has.
 
 

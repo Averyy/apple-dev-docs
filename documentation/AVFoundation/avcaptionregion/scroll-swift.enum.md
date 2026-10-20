@@ -1,7 +1,8 @@
 # AVCaptionRegion.Scroll
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the scrolling effects the system applies to a region.
 
@@ -17,29 +18,34 @@ Constants that indicate the scrolling effects the system applies to a region.
 enum Scroll
 ```
 
+```c
+enum AVCaptionRegionScroll : NSInteger;
+```
+
 ## Topics
 
 ### Scroll values
-- [AVCaptionRegion.Scroll.none](avcaptionregion/scroll-swift.enum/none.md)
+- [AVCaptionRegion.Scroll.none](./scroll-swift.enum/none.md)
   A type that indicates no scrolling.
-- [AVCaptionRegion.Scroll.rollUp](avcaptionregion/scroll-swift.enum/rollup.md)
+- [AVCaptionRegion.Scroll.rollUp](./scroll-swift.enum/rollup.md)
   A type that indicates a roll-up scroll effect.
 ### Initializers
-- [init?(rawValue: Int)](avcaptionregion/scroll-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scroll-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var scroll: AVCaptionRegion.Scroll](avcaptionregion/scroll-swift.property.md)
+### Accessing the scroll mode
+- [var scroll: AVCaptionRegion.Scroll](./scroll-swift.property.md)
   The scroll mode of the region.
 
 

@@ -1,7 +1,8 @@
 # init(dateSeparator:dateTimeSeparator:timeZone:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided date separator, date and time components separator, and time zone.
 
@@ -45,7 +46,7 @@ if let centralStandardTimeZone = TimeZone(identifier: "CST") {
 
 - `dateSeparator`: The separator character used between the year, month, and day.
 - `dateTimeSeparator`: The separator character used between the date and time components.
-- `timeZone`: The [`TimeZone`](timezone.md) used to create the string representation of the date.
+- `timeZone`: The [`TimeZone`](../../timezone.md) used to create the string representation of the date.
 
 
 ---

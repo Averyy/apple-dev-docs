@@ -1,14 +1,15 @@
 # task_policy_set_deallocate_mig
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void task_policy_set_deallocate_mig(task_policy_set_t task_policy_set);
 ```
 

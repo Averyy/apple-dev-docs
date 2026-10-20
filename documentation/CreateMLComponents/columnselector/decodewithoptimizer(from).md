@@ -1,7 +1,8 @@
 # decodeWithOptimizer(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the encoded transformer and optimizer with a decoder.
 
@@ -19,6 +20,8 @@ Reads the encoded transformer and optimizer with a decoder.
 ```swift
 func decodeWithOptimizer(from decoder: inout any EstimatorDecoder) throws -> ColumnSelector<Estimator, UnwrappedInput>.Transformer
 ```
+
+Available when `Estimator` conforms to `UpdatableEstimator` and `Estimator.Transformer.Input` is `UnwrappedInput?`.
 
 #### Return Value
 

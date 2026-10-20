@@ -1,7 +1,8 @@
 # textProperties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties for configuring the primary text.
 
@@ -10,7 +11,7 @@ Properties for configuring the primary text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

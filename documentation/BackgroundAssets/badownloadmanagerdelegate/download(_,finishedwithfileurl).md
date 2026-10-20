@@ -1,7 +1,8 @@
 # download(_:finishedWithFileURL:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate about a finished asset download and provides the on-disk location.
 
@@ -19,6 +20,10 @@ Informs the delegate about a finished asset download and provides the on-disk lo
 optional func download(_ download: BADownload, finishedWithFileURL fileURL: URL)
 ```
 
+```objc
+- (void) download:(BADownload *) download finishedWithFileURL:(NSURL *) fileURL;
+```
+
 #### Discussion
 
 Prefer to access downloaded assets in-place, rather than moving or copying them. This enables the system to include those assets when evaluating which files it can safely delete when a person’s device is running low on disk space.
@@ -30,7 +35,8 @@ Prefer to access downloaded assets in-place, rather than moving or copying them.
 
 ## See Also
 
-- [func download(BADownload, failedWithError: any Error)](badownloadmanagerdelegate/download(_:failedwitherror:).md)
+### Processing concluded downloads
+- [func download(BADownload, failedWithError: any Error)](./download%28_,failedwitherror%29.md)
   Informs the delegate about a failed asset download.
 
 

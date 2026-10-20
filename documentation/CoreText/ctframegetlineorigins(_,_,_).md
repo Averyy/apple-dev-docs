@@ -1,7 +1,8 @@
 # CTFrameGetLineOrigins(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies a range of line origins for a frame.
 
@@ -20,9 +21,13 @@ Copies a range of line origins for a frame.
 func CTFrameGetLineOrigins(_ frame: CTFrame, _ range: CFRange, _ origins: UnsafeMutablePointer<CGPoint>)
 ```
 
+```c
+extern void CTFrameGetLineOrigins(CTFrameRef frame, CFRange range, CGPoint origins[]);
+```
+
 #### Discussion
 
-This function copies a range of [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) structures into the `origins` buffer. The maximum number of line origins this function will copy into the `origins` buffer is the count of the array of lines (the length of the `range` parameter).
+This function copies a range of [`CGPoint`](../CoreFoundation/cgpoint.md) structures into the `origins` buffer. The maximum number of line origins this function will copy into the `origins` buffer is the count of the array of lines (the length of the `range` parameter).
 
 ##### Special Considerations
 
@@ -32,11 +37,12 @@ In versions of macOS prior to 10.7 and versions of iOS prior to 4.2, this functi
 
 - `frame`: The frame whose line origin array is copied.
 - `range`: The range of line origins you wish to copy. If the length of the range is 0, then the copy operation continues from the start index of the range to the last line origin.
-- `origins`: The buffer to which the origins are copied. The buffer must have at least as many elements as specified by range’s length. Each [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) in this array is the origin of the corresponding line in the array of lines returned by [`CTFrameGetLines(_:)`](ctframegetlines(_:).md) relative to the origin of the path’s bounding box, which can be obtained from `CGPathGetPathBoundingBox`.
+- `origins`: The buffer to which the origins are copied. The buffer must have at least as many elements as specified by range’s length. Each [`CGPoint`](../CoreFoundation/cgpoint.md) in this array is the origin of the corresponding line in the array of lines returned by [`CTFrameGetLines(_:)`](./ctframegetlines%28_%29.md) relative to the origin of the path’s bounding box, which can be obtained from `CGPathGetPathBoundingBox`.
 
 ## See Also
 
-- [func CTFrameGetLines(CTFrame) -> CFArray](ctframegetlines(_:).md)
+### Getting Lines
+- [func CTFrameGetLines(CTFrame) -> CFArray](./ctframegetlines%28_%29.md)
   Returns an array of lines stored in the frame.
 
 

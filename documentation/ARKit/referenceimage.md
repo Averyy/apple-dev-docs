@@ -1,7 +1,8 @@
 # ReferenceImage
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 2D image the system uses as a reference to find the same image in a person’s surroundings.
 
@@ -17,43 +18,44 @@ struct ReferenceImage
 ## Topics
 
 ### Creating a reference image
-- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](referenceimage/init(cgimage:physicalsize:orientation:).md)
+- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](./referenceimage/init%28cgimage,physicalsize,orientation%29.md)
   Creates a reference image from a Core Graphics image.
-- [init(pixelBuffer: CVPixelBuffer, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](referenceimage/init(pixelbuffer:physicalsize:orientation:).md)
+- [init(pixelBuffer: CVPixelBuffer, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](./referenceimage/init%28pixelbuffer,physicalsize,orientation%29.md)
   Creates a reference image from a pixel buffer.
-- [static func loadReferenceImages(inGroupNamed: String, bundle: Bundle?) -> [ReferenceImage]](referenceimage/loadreferenceimages(ingroupnamed:bundle:).md)
+- [static func loadReferenceImages(inGroupNamed: String, bundle: Bundle?) -> [ReferenceImage]](./referenceimage/loadreferenceimages%28ingroupnamed,bundle%29.md)
   Creates multiple reference images based on their group name in an asset catalog.
 ### Inspecting a reference image
-- [var physicalSize: CGSize](referenceimage/physicalsize.md)
+- [var physicalSize: CGSize](./referenceimage/physicalsize.md)
   The size, in meters, of a reference image in the real world.
-- [var name: String?](referenceimage/name.md)
+- [var name: String?](./referenceimage/name.md)
   The name of a reference image.
-- [var resourceGroupName: String?](referenceimage/resourcegroupname.md)
+- [var resourceGroupName: String?](./referenceimage/resourcegroupname.md)
   A string value the represents the name of the resource group the framework loads an image from.
-- [var description: String](referenceimage/description.md)
+- [var description: String](./referenceimage/description.md)
   A textual representation of this reference image.
 ### Default Implementations
-- [Equatable Implementations](referenceimage/equatable-implementations.md)
+- [Equatable Implementations](./referenceimage/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Tracking and altering images](tracking-and-altering-images.md)
+### Image tracking
+- [Tracking and altering images](./tracking-and-altering-images.md)
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
-- [Detecting Images in an AR Experience](detecting-images-in-an-ar-experience.md)
+- [Detecting Images in an AR Experience](./detecting-images-in-an-ar-experience.md)
   React to known 2D images in the user’s environment, and use their positions to place AR content.
-- [Tracking preregistered images in 3D space](../visionos/tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](../visionOS/tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [class ImageTrackingProvider](imagetrackingprovider.md)
+- [class ImageTrackingProvider](./imagetrackingprovider.md)
   A source of live data about a 2D image’s position in a person’s surroundings.
-- [struct ImageAnchor](imageanchor.md)
+- [struct ImageAnchor](./imageanchor.md)
   A 2D image’s position in a person’s surroundings.
 
 

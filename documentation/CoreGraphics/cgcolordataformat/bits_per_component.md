@@ -1,16 +1,17 @@
 # bits_per_component
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,14 +19,19 @@
 var bits_per_component: Int
 ```
 
+```c
+size_t bits_per_component;
+```
+
 ## See Also
 
-- [var bitmap_info: CGBitmapInfo](cgcolordataformat/bitmap_info.md)
-- [var bytes_per_row: Int](cgcolordataformat/bytes_per_row.md)
-- [var colorspace_info: Unmanaged<CFTypeRef>!](cgcolordataformat/colorspace_info.md)
-- [var decode: UnsafeMutablePointer<CGFloat>!](cgcolordataformat/decode.md)
-- [var intent: CGColorRenderingIntent](cgcolordataformat/intent.md)
-- [var version: UInt32](cgcolordataformat/version.md)
+### Instance Properties
+- [var bitmap_info: CGBitmapInfo](./bitmap_info.md)
+- [var bytes_per_row: Int](./bytes_per_row.md)
+- [var colorspace_info: Unmanaged<CFTypeRef>!](./colorspace_info.md)
+- [var decode: UnsafeMutablePointer<CGFloat>!](./decode.md)
+- [var intent: CGColorRenderingIntent](./intent.md)
+- [var version: UInt32](./version.md)
 
 
 ---

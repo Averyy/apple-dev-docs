@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Event.disconnected
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event indicating that the peer has disconnected.
 

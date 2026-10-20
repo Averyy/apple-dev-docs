@@ -1,7 +1,8 @@
 # AVAssetPlaybackConfigurationOption
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines playback configuration options for an asset.
 
@@ -20,35 +21,40 @@ A structure that defines playback configuration options for an asset.
 struct AVAssetPlaybackConfigurationOption
 ```
 
+```c
+typedef NSString * AVAssetPlaybackConfigurationOption;
+```
+
 ## Topics
 
 ### Configuration options
-- [static let stereoVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereovideo.md)
+- [static let stereoVideo: AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption/stereovideo.md)
   An option that indicates whether the asset can render as stereo video.
-- [static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/stereomultiviewvideo.md)
+- [static let stereoMultiviewVideo: AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption/stereomultiviewvideo.md)
   An option that indicates whether the asset is in a multiview compression format and can render as stereo video.
-- [static let spatialVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/spatialvideo.md)
+- [static let spatialVideo: AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption/spatialvideo.md)
   An option that indicates whether the asset can render as spatial video.
-- [static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/appleimmersivevideo.md)
+- [static let appleImmersiveVideo: AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption/appleimmersivevideo.md)
   Indicates whether the asset is Apple Immersive Video.
-- [static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption](avassetplaybackconfigurationoption/nonrectilinearprojection.md)
+- [static let nonRectilinearProjection: AVAssetPlaybackConfigurationOption](./avassetplaybackconfigurationoption/nonrectilinearprojection.md)
   Indicates whether the asset calls for the use of a non-rectilinear projection for rendering video.
 ### Initializers
-- [init(rawValue: String)](avassetplaybackconfigurationoption/init(rawvalue:).md)
+- [init(rawValue: String)](./avassetplaybackconfigurationoption/init%28rawvalue%29.md)
   Creates a configuration option from its raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAssetPlaybackAssistant](avassetplaybackassistant.md)
+### Utilities
+- [class AVAssetPlaybackAssistant](./avassetplaybackassistant.md)
   An object that provides playback information for an asset.
 
 

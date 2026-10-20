@@ -1,7 +1,8 @@
 # range(withName:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func range(withName name: String) -> NSRange
+```
+
+```objc
+- (NSRange) rangeWithName:(NSString *) name;
 ```
 
 

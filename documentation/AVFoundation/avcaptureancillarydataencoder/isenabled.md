@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether ancillary data should be encoded and transmitted.
 
@@ -16,6 +17,10 @@ Indicates whether ancillary data should be encoded and transmitted.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

@@ -1,20 +1,25 @@
 # primaryOffset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 11.3+
-- iPadOS 11.3+
-- Mac Catalyst 11.3+
-- macOS 10.13.4+
-- tvOS 11.3+
-- visionOS 1.0+
+- iOS 11.3+ - Deprecated in 13.0
+- iPadOS 11.3+ - Deprecated in 13.0
+- Mac Catalyst 11.3+ - Deprecated in 13.0
+- macOS 10.13.4+ - Deprecated in 10.15
+- tvOS 11.3+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 var primaryOffset: MPSOffset { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSOffset primaryOffset;
 ```
 
 

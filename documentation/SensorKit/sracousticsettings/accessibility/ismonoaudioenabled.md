@@ -1,7 +1,8 @@
 # isMonoAudioEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var isMonoAudioEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isMonoAudioEnabled) BOOL monoAudioEnabled;
 ```
 
 #### Discussion

@@ -1,14 +1,15 @@
 # EMBEDDED_SYNTHESIZER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_SYNTHESIZER = 0x0713
 ```
 

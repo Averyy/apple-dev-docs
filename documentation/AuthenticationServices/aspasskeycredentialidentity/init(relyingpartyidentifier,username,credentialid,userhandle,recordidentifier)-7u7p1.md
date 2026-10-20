@@ -1,7 +1,8 @@
 # init(relyingPartyIdentifier:userName:credentialID:userHandle:recordIdentifier:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey credential identity.
 
@@ -28,7 +29,8 @@ convenience init(relyingPartyIdentifier: String, userName: String, credentialID:
 
 ## See Also
 
-- [convenience init(relyingPartyIdentifier: String, userName: String, credentialID: Data, userHandle: Data, recordIdentifier: String?)](aspasskeycredentialidentity/init(relyingpartyidentifier:username:credentialid:userhandle:recordidentifier:)-9iuhb.md)
+### Creating a credential identity
+- [convenience init(relyingPartyIdentifier: String, userName: String, credentialID: Data, userHandle: Data, recordIdentifier: String?)](./init%28relyingpartyidentifier,username,credentialid,userhandle,recordidentifier%29-9iuhb.md)
   Creates and initializes a passkey credential identity.
 
 

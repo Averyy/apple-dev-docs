@@ -1,7 +1,8 @@
 # verticalOffset
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Vertical offset from the center of the image buffer.
 

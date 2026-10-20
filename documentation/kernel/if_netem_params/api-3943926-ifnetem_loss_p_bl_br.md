@@ -1,14 +1,15 @@
 # ifnetem_loss_p_bl_br
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t ifnetem_loss_p_bl_br;
 ```
 

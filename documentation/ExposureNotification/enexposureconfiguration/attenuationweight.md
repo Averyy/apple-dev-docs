@@ -1,19 +1,26 @@
 # attenuationWeight
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weight assigned to a score for the Bluetooth signal strength.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var attenuationWeight: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) double attenuationWeight;
 ```
 
 #### Discussion
@@ -24,11 +31,12 @@ This weight parameter is not used.
 
 ## See Also
 
-- [var daysSinceLastExposureWeight: Double](enexposureconfiguration/dayssincelastexposureweight.md)
+### Weight Configuration
+- [var daysSinceLastExposureWeight: Double](./dayssincelastexposureweight.md)
   The weight assigned to a score for the days since the user’s exposure.
-- [var durationWeight: Double](enexposureconfiguration/durationweight.md)
+- [var durationWeight: Double](./durationweight.md)
   The weight assigned to a score for the duration of the user’s exposure.
-- [var transmissionRiskWeight: Double](enexposureconfiguration/transmissionriskweight.md)
+- [var transmissionRiskWeight: Double](./transmissionriskweight.md)
   The weight assigned to a score for the affected user’s estimated risk of transmission.
 
 

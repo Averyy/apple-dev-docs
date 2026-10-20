@@ -1,7 +1,8 @@
 # formInset(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insets the rectangle by the specified size.
 

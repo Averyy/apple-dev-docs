@@ -1,7 +1,8 @@
 # confirmationDialog(_:isPresented:titleVisibility:actions:message:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 
@@ -19,6 +20,23 @@ Presents a confirmation dialog with a message when a given condition is true, us
 ```swift
 @export(implementation)
 nonisolated func confirmationDialog<A, M>(_ titleResource: LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func confirmationDialog<A, M>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
+```
+
+```swift
+nonisolated
+func confirmationDialog<A, M>(_ titleKey: LocalizedStringKey, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
+```
+
+```swift
+nonisolated
+func confirmationDialog<S, A, M>(_ title: S, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where S : StringProtocol, A : View, M : View
 ```
 
 #### Discussion
@@ -46,31 +64,32 @@ struct ConfirmEraseItems: View {
 }
 ```
 
-All actions in a confirmation dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [`defaultAction`](keyboardshortcut/defaultaction.md) keyboard shortcut.
+All actions in a confirmation dialog will dismiss the dialog after the action runs. The default button will be shown with greater prominence. You can influence the default button by assigning it the [`defaultAction`](../keyboardshortcut/defaultaction.md) keyboard shortcut.
 
 The system may reorder the buttons based on their role and prominence.
 
-Dialogs include a standard dismiss action by default. If you provide a button with a role of [`cancel`](buttonrole/cancel.md), that button takes the place of the default dismiss action. You don’t have to dismiss the presentation with the cancel button’s action.
+Dialogs include a standard dismiss action by default. If you provide a button with a role of [`cancel`](../buttonrole/cancel.md), that button takes the place of the default dismiss action. You don’t have to dismiss the presentation with the cancel button’s action.
 
 > **Note**: In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
 
 On iOS, tvOS, and watchOS, confirmation dialogs only support controls with labels that are `Text`. Passing any other type of view results in the content being omitted.
 
-This modifier creates a [`Text`](text.md) view for the title on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This modifier creates a [`Text`](../text.md) view for the title on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
 - `titleResource`: Text resource for the localized string that describes the title of the dialog.
 - `isPresented`: A binding to a Boolean value that determines whether to present the dialog. When the user presses or taps the dialog’s default action button, the system sets this value to `false`, dismissing the dialog.
-- `titleVisibility`: The visibility of the dialog’s title. The default value is [`Visibility.automatic`](visibility/automatic.md).
-- `actions`: A [`ContentBuilder`](contentbuilder.md) returning the dialog’s actions.
-- `message`: A [`ContentBuilder`](contentbuilder.md) returning the message for the dialog.
+- `titleVisibility`: The visibility of the dialog’s title. The default value is [`Visibility.automatic`](../visibility/automatic.md).
+- `actions`: A [`ContentBuilder`](../contentbuilder.md) returning the dialog’s actions.
+- `message`: A [`ContentBuilder`](../contentbuilder.md) returning the message for the dialog.
 
 ## See Also
 
-- [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
+### Showing a confirmation dialog with a message
+- [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](./confirmationdialog%28_,ispresented,titlevisibility,presenting,actions,message%29.md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
-- [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
+- [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](./dismissalconfirmationdialog%28_,shouldpresent,actions,message%29.md)
   Presents a confirmation dialog upon an attempt to dismiss the window for this view.
 
 

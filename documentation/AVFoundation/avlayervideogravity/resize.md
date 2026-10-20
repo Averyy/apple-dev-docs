@@ -1,7 +1,8 @@
 # resize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The video stretches to fill the layer’s bounds.
 
@@ -19,11 +20,16 @@ The video stretches to fill the layer’s bounds.
 static let resize: AVLayerVideoGravity
 ```
 
+```c
+extern AVLayerVideoGravity const AVLayerVideoGravityResize;
+```
+
 ## See Also
 
-- [static let resizeAspect: AVLayerVideoGravity](avlayervideogravity/resizeaspect.md)
+### Video gravities
+- [static let resizeAspect: AVLayerVideoGravity](./resizeaspect.md)
   The video preserves its aspect ratio and fits it within the layer’s bounds.
-- [static let resizeAspectFill: AVLayerVideoGravity](avlayervideogravity/resizeaspectfill.md)
+- [static let resizeAspectFill: AVLayerVideoGravity](./resizeaspectfill.md)
   The video preserves its aspect ratio and fills the layer’s bounds.
 
 

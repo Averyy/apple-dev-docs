@@ -1,7 +1,8 @@
 # rangeValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Foundation range structure representation of the value.
 
@@ -20,9 +21,14 @@ The Foundation range structure representation of the value.
 var rangeValue: NSRange { get }
 ```
 
+```objc
+@property (readonly) NSRange rangeValue;
+```
+
 ## See Also
 
-- [init(range: NSRange)](nsvalue/init(range:).md)
+### Working with Range Values
+- [init(range: NSRange)](./init%28range%29.md)
   Creates a new value object containing the specified Foundation range structure.
 
 

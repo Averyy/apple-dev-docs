@@ -1,7 +1,8 @@
 # mapRect
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map rectangle that describes the camera boundary.
 
@@ -19,13 +20,18 @@ The map rectangle that describes the camera boundary.
 var mapRect: MKMapRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKMapRect mapRect;
+```
+
 #### Discussion
 
-Both the [`mapRect`](mkmapview/cameraboundary-swift.class/maprect.md) and the [`region`](mkmapview/cameraboundary-swift.class/region.md) represent the same camera boundary.
+Both the [`mapRect`](./maprect.md) and the [`region`](./region.md) represent the same camera boundary.
 
 ## See Also
 
-- [var region: MKCoordinateRegion](mkmapview/cameraboundary-swift.class/region.md)
+### Accessing the boundary
+- [var region: MKCoordinateRegion](./region.md)
   The coordinate region that describes the camera boundary.
 
 

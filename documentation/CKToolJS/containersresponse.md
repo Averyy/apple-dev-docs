@@ -1,7 +1,8 @@
 # ContainersResponse
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents results of fetching multiple CloudKit containers.
 
@@ -10,7 +11,7 @@ An object that represents results of fetching multiple CloudKit containers.
 
 ## Declaration
 
-```swift
+```
 dictionary ContainersResponse {
 	string? nextKey;
 	string? previousKey;
@@ -32,24 +33,25 @@ import type { ContainersResponse } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [containers](containersresponse/containers.md)
+- [containers](./containersresponse/containers.md)
   The list of containers.
-- [nextKey](containersresponse/nextkey.md)
+- [nextKey](./containersresponse/nextkey.md)
   The record key for fetching the next page of results.
-- [previousKey](containersresponse/previouskey.md)
+- [previousKey](./containersresponse/previouskey.md)
   The record key for fetching the previous page of results.
-- [recentContainers](containersresponse/recentcontainers.md)
+- [recentContainers](./containersresponse/recentcontainers.md)
   The list of recently accessed containers.
 
 ## See Also
 
-- [Container](container.md)
+### Global Structures and Enumerations
+- [Container](./container.md)
   Details about a CloudKit container.
-- [CKEnvironment](ckenvironment.md)
+- [CKEnvironment](./ckenvironment.md)
   An enumeration of container environments.
-- [ContainersSortByField](containerssortbyfield.md)
+- [ContainersSortByField](./containerssortbyfield.md)
   An enumeration that indicates sorting options for retrieved containers.
-- [SortDirection](sortdirection.md)
+- [SortDirection](./sortdirection.md)
   An enumeration that indicates sorting direction when applying a custom sort.
 
 

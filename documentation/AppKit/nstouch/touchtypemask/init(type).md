@@ -1,12 +1,13 @@
 # init(type:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new touch type mask from the touch type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Creates a new touch type mask from the touch type.
 init(type: NSTouch.TouchType)
 ```
 
+```c
+static NSTouchTypeMask NSTouchTypeMaskFromType(NSTouchType type);
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](nstouch/touchtypemask/init(rawvalue:).md)
+### Creating a Touch Type Mask
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates a new touch type mask from the given raw value.
 
 

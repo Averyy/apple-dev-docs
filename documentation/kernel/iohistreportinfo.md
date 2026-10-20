@@ -1,14 +1,15 @@
 # IOHistReportInfo
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOHistReportInfo {
     ...
 } IOHistReportInfo;
@@ -17,25 +18,26 @@ typedef struct IOHistReportInfo {
 ## Topics
 
 ### Instance Properties
-- [bucketWidth](iohistreportinfo/1500896-bucketwidth.md)
-- [elem](iohistreportinfo/1500876-elem.md)
+- [bucketWidth](./iohistreportinfo/api-1500896-bucketwidth.md)
+- [elem](./iohistreportinfo/api-1500876-elem.md)
 
 ## See Also
 
-- [IOReportChannel](ioreportchannel.md)
-- [IOReportChannelList](ioreportchannellist.md)
-- [IOReportChannelType](ioreportchanneltype.md)
-- [IOReportElement](ioreportelement.md)
-- [IOReportElementValues](ioreportelementvalues.md)
-- [IOReportInterest](ioreportinterest.md)
-- [IOReportInterestList](ioreportinterestlist.md)
-- [IOHistogramReportValues](iohistogramreportvalues.md)
-- [IOHistogramSegmentConfig](iohistogramsegmentconfig.md)
-- [IONormDistReportValues](ionormdistreportvalues.md)
-- [IOSimpleArrayReportValues](iosimplearrayreportvalues.md)
-- [IOSimpleReportValues](iosimplereportvalues.md)
-- [IOStateReportInfo](iostatereportinfo.md)
-- [IOStateReportValues](iostatereportvalues.md)
+### Reports
+- [IOReportChannel](./ioreportchannel.md)
+- [IOReportChannelList](./ioreportchannellist.md)
+- [IOReportChannelType](./ioreportchanneltype.md)
+- [IOReportElement](./ioreportelement.md)
+- [IOReportElementValues](./ioreportelementvalues.md)
+- [IOReportInterest](./ioreportinterest.md)
+- [IOReportInterestList](./ioreportinterestlist.md)
+- [IOHistogramReportValues](./iohistogramreportvalues.md)
+- [IOHistogramSegmentConfig](./iohistogramsegmentconfig.md)
+- [IONormDistReportValues](./ionormdistreportvalues.md)
+- [IOSimpleArrayReportValues](./iosimplearrayreportvalues.md)
+- [IOSimpleReportValues](./iosimplereportvalues.md)
+- [IOStateReportInfo](./iostatereportinfo.md)
+- [IOStateReportValues](./iostatereportvalues.md)
 
 
 ---

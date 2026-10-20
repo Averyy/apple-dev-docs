@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A normalized percentage that designates how much effect this node has compared to peer nodes.
 
@@ -11,7 +12,7 @@ A normalized percentage that designates how much effect this node has compared t
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var weight: BlendWeight
 
 ## See Also
 
-- [var name: String](blendtreeblendnode/name.md)
+### Configuring the node
+- [var name: String](./name.md)
   A textual name for the blend node.
-- [var isAdditive: Bool](blendtreeblendnode/isadditive.md)
+- [var isAdditive: Bool](./isadditive.md)
   A Boolean value that indicates whether the animation builds on the current state of the target entity or resets the state before running.
 
 

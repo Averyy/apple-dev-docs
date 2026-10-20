@@ -1,7 +1,8 @@
 # version
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the algorithm that the system uses to generate the report.
 
@@ -14,6 +15,10 @@ The version of the algorithm that the system uses to generate the report.
 
 ```swift
 var version: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * version;
 ```
 
 

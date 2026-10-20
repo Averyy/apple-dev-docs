@@ -1,7 +1,8 @@
 # nextFocusedIndexPath
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index path of the collection view cell that’s receiving the focus.
 
@@ -18,13 +19,18 @@ The index path of the collection view cell that’s receiving the focus.
 var nextFocusedIndexPath: IndexPath? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSIndexPath * nextFocusedIndexPath;
+```
+
 #### Discussion
 
 This property contains the index path only when the view receiving focus belongs to a cell of the collection view. If focus is moving to a view outside of the collection view and its cells, this property is `nil`.
 
 ## See Also
 
-- [var previouslyFocusedIndexPath: IndexPath?](uicollectionviewfocusupdatecontext/previouslyfocusedindexpath.md)
+### Locating focusable items in the collection view
+- [var previouslyFocusedIndexPath: IndexPath?](./previouslyfocusedindexpath.md)
   The index path of the collection view cell that previously had the focus.
 
 

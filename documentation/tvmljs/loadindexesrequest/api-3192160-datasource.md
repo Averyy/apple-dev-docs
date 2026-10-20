@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A reference to the data source object that originated the request.
 
@@ -10,13 +11,14 @@ A reference to the data source object that originated the request.
 
 ## Declaration
 
-```swift
+```
 readonly attribute DataSource dataSource;
 ```
 
 ## See Also
 
-- [range](loadindexesrequest/3192161-range.md)
+### Accessing Request Properties
+- [range](./api-3192161-range.md)
   The index range to load.
 
 

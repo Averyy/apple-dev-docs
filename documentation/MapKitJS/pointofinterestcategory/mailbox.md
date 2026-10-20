@@ -1,7 +1,8 @@
 # Mailbox
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for mailboxes.
 
@@ -10,7 +11,7 @@ The point-of-interest category for mailboxes.
 
 ## Declaration
 
-```swift
+```
 readonly Mailbox: "Mailbox";
 ```
 

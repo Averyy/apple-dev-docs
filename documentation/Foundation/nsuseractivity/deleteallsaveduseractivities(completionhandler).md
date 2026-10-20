@@ -1,7 +1,8 @@
 # deleteAllSavedUserActivities(completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Deletes all user activities created by your app.
 
@@ -16,7 +17,15 @@ Deletes all user activities created by your app.
 ## Declaration
 
 ```swift
+class func deleteAllSavedUserActivities(completionHandler handler: @escaping @Sendable () -> Void)
+```
+
+```swift
 class func deleteAllSavedUserActivities() async
+```
+
+```objc
++ (void) deleteAllSavedUserActivitiesWithCompletionHandler:(void (^)()) handler;
 ```
 
 #### Discussion
@@ -29,15 +38,16 @@ Deletes all user activities stored by Core Spotlight or donated as Siri shortcut
 
 ## See Also
 
-- [func becomeCurrent()](nsuseractivity/becomecurrent.md)
+### Registering and invalidating activities
+- [func becomeCurrent()](./becomecurrent%28%29.md)
   Marks the activity as currently in use by the user.
-- [func resignCurrent()](nsuseractivity/resigncurrent.md)
+- [func resignCurrent()](./resigncurrent%28%29.md)
   Marks this activity object as inactive without invalidating it.
-- [func invalidate()](nsuseractivity/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates an activity and marks it as no longer eligible for continuation.
-- [var needsSave: Bool](nsuseractivity/needssave.md)
+- [var needsSave: Bool](./needssave.md)
   A Boolean value that indicates whether the state of the activity needs to be updated.
-- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
+- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](./deletesaveduseractivities%28withpersistentidentifiers,completionhandler%29.md)
   Deletes user activities created by your app that have the specified persistent identifiers.
 
 

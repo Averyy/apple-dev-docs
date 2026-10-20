@@ -1,7 +1,8 @@
 # LABiometryType.touchID
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device supports Touch ID.
 
@@ -19,13 +20,18 @@ The device supports Touch ID.
 case touchID
 ```
 
+```c
+LABiometryTypeTouchID
+```
+
 ## See Also
 
-- [LABiometryType.none](labiometrytype/none.md)
+### Types
+- [LABiometryType.none](./none.md)
   No biometry type is supported.
-- [LABiometryType.faceID](labiometrytype/faceid.md)
+- [LABiometryType.faceID](./faceid.md)
   The device supports Face ID.
-- [LABiometryType.opticID](labiometrytype/opticid.md)
+- [LABiometryType.opticID](./opticid.md)
   The device supports Optic ID.
 
 

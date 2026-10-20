@@ -1,7 +1,8 @@
 # title
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for items in the title area of the navigation bar.
 
@@ -19,7 +20,7 @@ static var title: ToolbarItemPlacement { get }
 
 #### Discussion
 
-The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the [`navigationTitle(_:)`](view/navigationtitle(_:).md) modifier.
+The view appears when the navigation bar renders its title inline, and takes precedence over the value provided to the [`navigationTitle(_:)`](../view/navigationtitle%28_%29.md) modifier.
 
 ```swift
 struct ContentView: View {

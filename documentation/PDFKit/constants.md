@@ -1,17 +1,19 @@
 # PDFKit Constants
 
-**Framework**: PDFKit
+**Framework**: PDFKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let PDFDocumentFoundSelectionKey: String](pdfdocumentfoundselectionkey.md)
-- [let PDFDocumentPageIndexKey: String](pdfdocumentpageindexkey.md)
+- [let PDFDocumentFoundSelectionKey: String](./pdfdocumentfoundselectionkey.md)
+- [let PDFDocumentPageIndexKey: String](./pdfdocumentpageindexkey.md)
 
 ## See Also
 
-- [PDFKit Enumerations](enumerations.md)
-- [PDFKit Data Types](data-types.md)
+### Reference
+- [PDFKit Enumerations](./enumerations.md)
+- [PDFKit Data Types](./data-types.md)
 
 
 ---

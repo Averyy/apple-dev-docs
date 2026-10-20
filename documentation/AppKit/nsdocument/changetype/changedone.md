@@ -1,12 +1,13 @@
 # NSDocument.ChangeType.changeDone
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Increment change count.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ Increment change count.
 case changeDone
 ```
 
+```c
+NSChangeDone
+```
+
 #### Discussion
 
-Pass this value to the [`updateChangeCount(_:)`](nsdocument/updatechangecount(_:).md) method to indicate that a single change has been done. For example, the built-in undo support in the [`NSDocument`](nsdocument.md) class passes this value whenever a document receives an [`NSUndoManagerDidCloseUndoGroup`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup) notification from its own undo manager.
+Pass this value to the [`updateChangeCount(_:)`](../updatechangecount%28_%29.md) method to indicate that a single change has been done. For example, the built-in undo support in the [`NSDocument`](../../nsdocument.md) class passes this value whenever a document receives an [`NSUndoManagerDidCloseUndoGroup`](../../../Foundation/nsnotification/name-swift.struct/nsundomanagerdidcloseundogroup.md) notification from its own undo manager.
 
 ## See Also
 
-- [NSDocument.ChangeType.changeUndone](nsdocument/changetype/changeundone.md)
+### Constants
+- [NSDocument.ChangeType.changeUndone](./changeundone.md)
   Decrement change count.
-- [NSDocument.ChangeType.changeCleared](nsdocument/changetype/changecleared.md)
+- [NSDocument.ChangeType.changeCleared](./changecleared.md)
   Set change count to 0.
-- [NSDocument.ChangeType.changeReadOtherContents](nsdocument/changetype/changereadothercontents.md)
+- [NSDocument.ChangeType.changeReadOtherContents](./changereadothercontents.md)
   The document has been initialized with the contents of a file or file package other than the one whose location is in the `fileURL` property, and therefore can’t possibly be synchronized with its persistent representation.
-- [NSDocument.ChangeType.changeAutosaved](nsdocument/changetype/changeautosaved.md)
+- [NSDocument.ChangeType.changeAutosaved](./changeautosaved.md)
   The document’s contents have been autosaved.
-- [NSDocument.ChangeType.changeRedone](nsdocument/changetype/changeredone.md)
+- [NSDocument.ChangeType.changeRedone](./changeredone.md)
   A single change has been redone.
-- [NSDocument.ChangeType.changeDiscardable](nsdocument/changetype/changediscardable.md)
+- [NSDocument.ChangeType.changeDiscardable](./changediscardable.md)
   A discardable change has been done.
 
 

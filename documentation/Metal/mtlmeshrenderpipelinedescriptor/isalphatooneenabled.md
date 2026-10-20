@@ -1,7 +1,8 @@
 # isAlphaToOneEnabled
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isAlphaToOneEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isAlphaToOneEnabled) BOOL alphaToOneEnabled;
 ```
 
 

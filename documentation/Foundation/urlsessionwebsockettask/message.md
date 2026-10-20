@@ -1,7 +1,8 @@
 # URLSessionWebSocketTask.Message
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of the types of messages sent and received.
 
@@ -23,24 +24,25 @@ enum Message
 ## Topics
 
 ### Message types
-- [URLSessionWebSocketTask.Message.data(_:)](urlsessionwebsockettask/message/data(_:).md)
+- [URLSessionWebSocketTask.Message.data(_:)](./message/data%28_%29.md)
   A WebSocket message that contains a block of data.
-- [URLSessionWebSocketTask.Message.string(_:)](urlsessionwebsockettask/message/string(_:).md)
+- [URLSessionWebSocketTask.Message.string(_:)](./message/string%28_%29.md)
   A WebSocket message that contains a string.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](urlsessionwebsockettask/send(_:completionhandler:).md)
+### Sending and receiving data
+- [func send(URLSessionWebSocketTask.Message, completionHandler: ((any Error)?) -> Void)](./send%28_,completionhandler%29.md)
   Sends a WebSocket message, receiving the result in a completion handler.
-- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](urlsessionwebsockettask/receive(completionhandler:).md)
+- [func receive(completionHandler: (Result<URLSessionWebSocketTask.Message, any Error>) -> Void)](./receive%28completionhandler%29.md)
   Reads a WebSocket message once all the frames of the message are available.
-- [var maximumMessageSize: Int](urlsessionwebsockettask/maximummessagesize.md)
+- [var maximumMessageSize: Int](./maximummessagesize.md)
   The maximum number of bytes to buffer before the receive call fails with an error.
 
 

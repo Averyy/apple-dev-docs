@@ -1,7 +1,8 @@
 # CInterop.PlatformUnicodeEncoding
 
 **Framework**: System  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The platform’s preferred Unicode encoding. On Unix this is UTF-8 and on Windows it is UTF-16. Native strings may contain invalid Unicode, which will be handled by either error-correction or failing, depending on API.
 

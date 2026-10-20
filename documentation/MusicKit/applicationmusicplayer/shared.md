@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared application music player, which plays music specifically for your app.
 

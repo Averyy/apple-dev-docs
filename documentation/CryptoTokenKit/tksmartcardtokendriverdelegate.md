@@ -1,18 +1,19 @@
 # TKSmartCardTokenDriverDelegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that a smart card token driver delegate implements to respond to token creation events.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,21 @@ The interface that a smart card token driver delegate implements to respond to t
 protocol TKSmartCardTokenDriverDelegate : TKTokenDriverDelegate
 ```
 
+```objc
+@protocol TKSmartCardTokenDriverDelegate <TKTokenDriverDelegate>
+```
+
 ## Topics
 
 ### Delegate Methods
-- [func tokenDriver(TKSmartCardTokenDriver, createTokenFor: TKSmartCard, aid: Data?) throws -> TKSmartCardToken](tksmartcardtokendriverdelegate/tokendriver(_:createtokenfor:aid:).md)
+- [func tokenDriver(TKSmartCardTokenDriver, createTokenFor: TKSmartCard, aid: Data?) throws -> TKSmartCardToken](./tksmartcardtokendriverdelegate/tokendriver%28_,createtokenfor,aid%29.md)
   Tells the delegate that a new Smart Card is detected.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [TKTokenDriverDelegate](tktokendriverdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [TKTokenDriverDelegate](./tktokendriverdelegate.md)
 
 
 ---

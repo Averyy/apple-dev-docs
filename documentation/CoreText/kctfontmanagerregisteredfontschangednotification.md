@@ -1,7 +1,8 @@
 # kCTFontManagerRegisteredFontsChangedNotification
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 7.0+
@@ -18,27 +19,32 @@
 let kCTFontManagerRegisteredFontsChangedNotification: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontManagerRegisteredFontsChangedNotification;
+```
+
 #### Discussion
 
 This is the string to use as the notification name when subscribing to Core Text Font Manager notifications. This notification is posted when fonts are added to the font registry. The client is responsible for registered with the distributed notification center to receive notifications for changes to the session or user scopes, and with a local notification center for changes to the process scope.
 
 ## See Also
 
-- [var ATSFONTREF_DEFINED: Int32](atsfontref_defined.md)
-- [var kBSLNIdeographicHighBaseline: Int](kbslnideographichighbaseline.md)
-- [let kCTAdaptiveImageProviderAttributeName: CFString](kctadaptiveimageproviderattributename.md)
-- [let kCTBackgroundColorAttributeName: CFString](kctbackgroundcolorattributename.md)
-- [let kCTBaselineClassAttributeName: CFString](kctbaselineclassattributename.md)
-- [let kCTBaselineClassHanging: CFString](kctbaselineclasshanging.md)
-- [let kCTBaselineClassIdeographicCentered: CFString](kctbaselineclassideographiccentered.md)
-- [let kCTBaselineClassIdeographicHigh: CFString](kctbaselineclassideographichigh.md)
-- [let kCTBaselineClassIdeographicLow: CFString](kctbaselineclassideographiclow.md)
-- [let kCTBaselineClassMath: CFString](kctbaselineclassmath.md)
-- [let kCTBaselineClassRoman: CFString](kctbaselineclassroman.md)
-- [let kCTBaselineInfoAttributeName: CFString](kctbaselineinfoattributename.md)
-- [let kCTBaselineOriginalFont: CFString](kctbaselineoriginalfont.md)
-- [let kCTBaselineReferenceFont: CFString](kctbaselinereferencefont.md)
-- [let kCTBaselineReferenceInfoAttributeName: CFString](kctbaselinereferenceinfoattributename.md)
+### Constants
+- [var ATSFONTREF_DEFINED: Int32](./atsfontref_defined.md)
+- [var kBSLNIdeographicHighBaseline: Int](./kbslnideographichighbaseline.md)
+- [let kCTAdaptiveImageProviderAttributeName: CFString](./kctadaptiveimageproviderattributename.md)
+- [let kCTBackgroundColorAttributeName: CFString](./kctbackgroundcolorattributename.md)
+- [let kCTBaselineClassAttributeName: CFString](./kctbaselineclassattributename.md)
+- [let kCTBaselineClassHanging: CFString](./kctbaselineclasshanging.md)
+- [let kCTBaselineClassIdeographicCentered: CFString](./kctbaselineclassideographiccentered.md)
+- [let kCTBaselineClassIdeographicHigh: CFString](./kctbaselineclassideographichigh.md)
+- [let kCTBaselineClassIdeographicLow: CFString](./kctbaselineclassideographiclow.md)
+- [let kCTBaselineClassMath: CFString](./kctbaselineclassmath.md)
+- [let kCTBaselineClassRoman: CFString](./kctbaselineclassroman.md)
+- [let kCTBaselineInfoAttributeName: CFString](./kctbaselineinfoattributename.md)
+- [let kCTBaselineOriginalFont: CFString](./kctbaselineoriginalfont.md)
+- [let kCTBaselineReferenceFont: CFString](./kctbaselinereferencefont.md)
+- [let kCTBaselineReferenceInfoAttributeName: CFString](./kctbaselinereferenceinfoattributename.md)
 
 
 ---

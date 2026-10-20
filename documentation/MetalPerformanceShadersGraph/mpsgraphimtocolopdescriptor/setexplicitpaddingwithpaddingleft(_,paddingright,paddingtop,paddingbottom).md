@@ -1,7 +1,8 @@
 # setExplicitPaddingWithPaddingLeft(_:paddingRight:paddingTop:paddingBottom:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the descriptor’s padding to the given values.
 
@@ -17,6 +18,10 @@ Sets the descriptor’s padding to the given values.
 
 ```swift
 func setExplicitPaddingWithPaddingLeft(_ paddingLeft: Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int)
+```
+
+```objc
+- (void) setExplicitPaddingWithPaddingLeft:(NSUInteger) paddingLeft paddingRight:(NSUInteger) paddingRight paddingTop:(NSUInteger) paddingTop paddingBottom:(NSUInteger) paddingBottom;
 ```
 
 ## Parameters

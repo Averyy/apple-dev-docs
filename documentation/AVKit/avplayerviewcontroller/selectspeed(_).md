@@ -1,7 +1,8 @@
 # selectSpeed(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects a specified playback speed.
 
@@ -18,9 +19,13 @@ Selects a specified playback speed.
 func selectSpeed(_ speed: AVPlaybackSpeed)
 ```
 
+```objc
+- (void) selectSpeed:(AVPlaybackSpeed *) speed;
+```
+
 #### Discussion
 
-If you call this method with a speed that isn’t contained in the [`speeds`](avplayerviewcontroller/speeds.md) property, the system ignores the call.
+If you call this method with a speed that isn’t contained in the [`speeds`](./speeds.md) property, the system ignores the call.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ If you call this method with a speed that isn’t contained in the [`speeds`](av
 
 ## See Also
 
-- [var speeds: [AVPlaybackSpeed]](avplayerviewcontroller/speeds.md)
+### Configuring playback speed
+- [var speeds: [AVPlaybackSpeed]](./speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
-- [var selectedSpeed: AVPlaybackSpeed?](avplayerviewcontroller/selectedspeed.md)
+- [var selectedSpeed: AVPlaybackSpeed?](./selectedspeed.md)
   The currently selected playback speed.
-- [class AVPlaybackSpeed](avplaybackspeed.md)
+- [class AVPlaybackSpeed](../avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
 
 

@@ -1,13 +1,14 @@
 # fd
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file descriptor number.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The file descriptor number.
 var fd: Int32
 ```
 
+```c
+int32_t fd;
+```
+
 ## See Also
 
-- [var fdtype: UInt32](es_fd_t/fdtype.md)
+### Inspecting File Descriptor Properties
+- [var fdtype: UInt32](./fdtype.md)
   The file descriptor type, as a libproc type.
 
 

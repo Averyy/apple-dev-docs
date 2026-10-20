@@ -1,7 +1,8 @@
 # VZVirtioFileSystemDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object the defines a VIRTIO file system device.
 
@@ -14,11 +15,15 @@ An object the defines a VIRTIO file system device.
 class VZVirtioFileSystemDevice
 ```
 
+```objc
+@interface VZVirtioFileSystemDevice : VZDirectorySharingDevice
+```
+
 #### Overview
 
 This device exposes host resources to the guest as a file system mount. The directory share defines which resources the host exposes to the guest.
 
-Create this device by instantiating a [`VZVirtioFileSystemDeviceConfiguration`](vzvirtiofilesystemdeviceconfiguration.md) in a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md). The file system device is available in the `VZVirtualMachine`.[`directorySharingDevices`](vzvirtualmachine/directorysharingdevices.md) property. The guest can use the [`tag`](vzvirtiofilesystemdevice/tag.md) label to mount and access the host resources.
+Create this device by instantiating a [`VZVirtioFileSystemDeviceConfiguration`](./vzvirtiofilesystemdeviceconfiguration.md) in a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md). The file system device is available in the `VZVirtualMachine`.[`directorySharingDevices`](./vzvirtualmachine/directorysharingdevices.md) property. The guest can use the [`tag`](./vzvirtiofilesystemdevice/tag.md) label to mount and access the host resources.
 
 With `VZVirtioFileSystemDevice`, the framework enforces several permissions policies for shared directories:
 
@@ -29,32 +34,34 @@ With `VZVirtioFileSystemDevice`, the framework enforces several permissions poli
 ## Topics
 
 ### Accessing directory properties
-- [var share: VZDirectoryShare?](vzvirtiofilesystemdevice/share.md)
+- [var share: VZDirectoryShare?](./vzvirtiofilesystemdevice/share.md)
   A value that defines the directory share the host exposes to the guest VM.
-- [var tag: String](vzvirtiofilesystemdevice/tag.md)
+- [var tag: String](./vzvirtiofilesystemdevice/tag.md)
   A string that identifies the device.
 
 ## Relationships
 
 ### Inherits From
-- [VZDirectorySharingDevice](vzdirectorysharingdevice.md)
+- [VZDirectorySharingDevice](./vzdirectorysharingdevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioFileSystemDeviceConfiguration](vzvirtiofilesystemdeviceconfiguration.md)
+### Related Documentation
+- [class VZVirtioFileSystemDeviceConfiguration](./vzvirtiofilesystemdeviceconfiguration.md)
   An object that represents the configuration of a Virtio file system device.
-- [class VZSingleDirectoryShare](vzsingledirectoryshare.md)
+- [class VZSingleDirectoryShare](./vzsingledirectoryshare.md)
   An object that defines the directory share for a single directory.
-- [class VZMultipleDirectoryShare](vzmultipledirectoryshare.md)
+- [class VZMultipleDirectoryShare](./vzmultipledirectoryshare.md)
   An object that describes a directory share for multiple directories.
-- [class VZDirectorySharingDevice](vzdirectorysharingdevice.md)
+### Shared directory devices
+- [class VZDirectorySharingDevice](./vzdirectorysharingdevice.md)
   The base class that represents a directory sharing device in a VM.
 
 

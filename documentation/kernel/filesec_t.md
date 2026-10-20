@@ -1,14 +1,15 @@
 # filesec_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _filesec *filesec_t;
 ```
 

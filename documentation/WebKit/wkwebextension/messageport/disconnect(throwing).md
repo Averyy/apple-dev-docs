@@ -1,7 +1,8 @@
 # disconnect(throwing:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disconnects the port, terminating all further messages with an optional error.
 
@@ -16,6 +17,10 @@ Disconnects the port, terminating all further messages with an optional error.
 
 ```swift
 func disconnect(throwing error: (any Error)?)
+```
+
+```objc
+- (void) disconnectWithError:(NSError *) error;
 ```
 
 ## Parameters

@@ -1,12 +1,13 @@
 # windows
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the app’s window objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ An array of the app’s window objects.
 var windows: [NSWindow] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSWindow *> * windows;
+```
+
 #### Discussion
 
-This property contains an array of [`NSWindow`](nswindow.md) objects corresponding to all currently existing windows for the app. The array includes all onscreen and offscreen windows, whether or not they are visible on any space. There is no guarantee of the order of the windows in the array.
+This property contains an array of [`NSWindow`](../nswindow.md) objects corresponding to all currently existing windows for the app. The array includes all onscreen and offscreen windows, whether or not they are visible on any space. There is no guarantee of the order of the windows in the array.
 
 ## See Also
 
-- [var keyWindow: NSWindow?](nsapplication/keywindow.md)
+### Managing App Windows
+- [var keyWindow: NSWindow?](./keywindow.md)
   The window that currently receives keyboard events.
-- [var mainWindow: NSWindow?](nsapplication/mainwindow.md)
+- [var mainWindow: NSWindow?](./mainwindow.md)
   The app’s main window.
-- [func window(withWindowNumber: Int) -> NSWindow?](nsapplication/window(withwindownumber:).md)
+- [func window(withWindowNumber: Int) -> NSWindow?](./window%28withwindownumber%29.md)
   Returns the window corresponding to the specified window number.
-- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](nsapplication/enumeratewindows(options:using:).md)
+- [func enumerateWindows(options: NSApplication.WindowListOptions, using: (NSWindow, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratewindows%28options,using%29.md)
   Executes a block for each of the app’s windows.
-- [NSApplication.WindowListOptions](nsapplication/windowlistoptions.md)
+- [NSApplication.WindowListOptions](./windowlistoptions.md)
   This constant indicates a window ordering.
-- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](nsapplication/makewindowsperform(_:inorder:).md)
+- [func makeWindowsPerform(Selector, inOrder: Bool) -> NSWindow?](./makewindowsperform%28_,inorder%29.md)
   Sends the specified message to each of the app’s window objects until one returns a non-`nil` value.
 
 

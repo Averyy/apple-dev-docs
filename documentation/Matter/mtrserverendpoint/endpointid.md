@@ -1,7 +1,8 @@
 # endpointID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var endpointID: NSNumber { get }
+```
+
+```objc
+@property (atomic, copy, readonly) NSNumber * endpointID;
 ```
 
 

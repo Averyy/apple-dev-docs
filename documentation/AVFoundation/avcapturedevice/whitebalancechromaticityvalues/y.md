@@ -1,7 +1,8 @@
 # y
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y component of the CIE 1931 chromaticity value.
 
@@ -17,13 +18,18 @@ The y component of the CIE 1931 chromaticity value.
 var y: Float
 ```
 
+```c
+float y;
+```
+
 #### Discussion
 
 Values span the range between `0` and `0.85`.
 
 ## See Also
 
-- [var x: Float](avcapturedevice/whitebalancechromaticityvalues/x.md)
+### Inspecting the values
+- [var x: Float](./x.md)
   The x component of the CIE 1931 chromaticity value.
 
 

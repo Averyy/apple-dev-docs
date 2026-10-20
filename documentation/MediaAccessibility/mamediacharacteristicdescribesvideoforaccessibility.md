@@ -1,7 +1,8 @@
 # MAMediaCharacteristicDescribesVideoForAccessibility
 
 **Framework**: Media Accessibility  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A media characteristic that indicates that a track or media selection option includes audible content that describes a video for accessibility.
 
@@ -19,15 +20,20 @@ A media characteristic that indicates that a track or media selection option inc
 let MAMediaCharacteristicDescribesVideoForAccessibility: CFString
 ```
 
+```c
+extern CFStringRef const MAMediaCharacteristicDescribesVideoForAccessibility;
+```
+
 ## See Also
 
-- [let kMAAudibleMediaSettingsChangedNotification: CFString](kmaaudiblemediasettingschangednotification.md)
+### Audible media selection settings
+- [let kMAAudibleMediaSettingsChangedNotification: CFString](./kmaaudiblemediasettingschangednotification.md)
   A notification that occurs when any user-defined audible media settings change.
-- [func MAAudibleMediaCopyPreferredCharacteristics() -> Unmanaged<CFArray>](maaudiblemediacopypreferredcharacteristics().md)
+- [func MAAudibleMediaCopyPreferredCharacteristics() -> Unmanaged<CFArray>](./maaudiblemediacopypreferredcharacteristics%28%29.md)
   Returns the preference for audible media characteristics.
-- [let MAMediaCharacteristicDescribesMusicAndSoundForAccessibility: CFString](mamediacharacteristicdescribesmusicandsoundforaccessibility.md)
+- [let MAMediaCharacteristicDescribesMusicAndSoundForAccessibility: CFString](./mamediacharacteristicdescribesmusicandsoundforaccessibility.md)
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that describes music and sound other than spoken dialog.
-- [let MAMediaCharacteristicTranscribesSpokenDialogForAccessibility: CFString](mamediacharacteristictranscribesspokendialogforaccessibility.md)
+- [let MAMediaCharacteristicTranscribesSpokenDialogForAccessibility: CFString](./mamediacharacteristictranscribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a track includes legible content in the language of its specified locale that transcribes spoken dialog and identifies the speakers.
 
 

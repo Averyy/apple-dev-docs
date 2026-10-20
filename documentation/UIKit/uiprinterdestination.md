@@ -1,7 +1,8 @@
 # UIPrinterDestination
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a single printer.
 
@@ -18,44 +19,49 @@ A description of a single printer.
 class UIPrinterDestination
 ```
 
+```objc
+@interface UIPrinterDestination : NSObject
+```
+
 #### Overview
 
-You can use `UIPrinterDestination` to describe a printer so that it populates in a [`UIPrinterPickerController`](uiprinterpickercontroller.md) when the printer’s capabilities match the print-job attributes. `UIPrinterDestination` requires a URL to locate the printer. You can include an optional display name that populates in the user interface and a TXT record to detail the printer’s additional features.
+You can use `UIPrinterDestination` to describe a printer so that it populates in a [`UIPrinterPickerController`](./uiprinterpickercontroller.md) when the printer’s capabilities match the print-job attributes. `UIPrinterDestination` requires a URL to locate the printer. You can include an optional display name that populates in the user interface and a TXT record to detail the printer’s additional features.
 
 ## Topics
 
 ### Creating a printer destination
-- [init(url: URL)](uiprinterdestination/init(url:)-7ck5j.md)
+- [init(url: URL)](./uiprinterdestination/init%28url%29-7ck5j.md)
   Creates a printer destination with the specified address.
 ### Describing the printer
-- [var displayName: String?](uiprinterdestination/displayname.md)
+- [var displayName: String?](./uiprinterdestination/displayname.md)
   A human-readable string that displays the name of a printer.
-- [var txtRecord: Data?](uiprinterdestination/txtrecord.md)
+- [var txtRecord: Data?](./uiprinterdestination/txtrecord.md)
   A DNS TXT record to identify the printer.
-- [var url: URL](uiprinterdestination/url.md)
+- [var url: URL](./uiprinterdestination/url.md)
   The address of the printer.
 ### Initializers
-- [init(URL: URL)](uiprinterdestination/init(url:)-c1e8.md)
-- [init?(coder: NSCoder)](uiprinterdestination/init(coder:).md)
+- [init(URL: URL)](./uiprinterdestination/init%28url%29-c1e8.md)
+- [init?(coder: NSCoder)](./uiprinterdestination/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPrintServiceExtension](uiprintserviceextension.md)
+### Printer service discovery
+- [class UIPrintServiceExtension](./uiprintserviceextension.md)
   An extension that locates and sets up a printer without a configuration profile.
 
 

@@ -1,7 +1,8 @@
 # init(hvglLoader:reusable:)
 
 **Framework**: hvf  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Use a loader specific to an HVGL table in memory Setting reusable to true preserves the input parameter values when rendering; otherwise they are destroyed by rendering
 

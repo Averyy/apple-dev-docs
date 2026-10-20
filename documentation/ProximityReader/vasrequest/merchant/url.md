@@ -1,7 +1,8 @@
 # url
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to display to the customer if the matching loyalty or reward ID isn’t found.
 
@@ -18,7 +19,7 @@ let url: URL?
 
 ## Mentions
 
-- [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+- [Accepting loyalty passes from Wallet](../../accepting-loyalty-passes-from-wallet.md)
 
 #### Discussion
 
@@ -26,7 +27,8 @@ If the customer isn’t part of the merchant’s loyalty program, they can use t
 
 ## See Also
 
-- [let shouldSendURLOnly: Bool](vasrequest/merchant/shouldsendurlonly.md)
+### Getting the merchant URL details
+- [let shouldSendURLOnly: Bool](./shouldsendurlonly.md)
   A Boolean value that indicates whether to send only the merchant URL to the customer’s device without requesting data.
 
 

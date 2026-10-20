@@ -1,17 +1,18 @@
 # AVAudioSession.Location
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe the location of the data source on device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,32 +20,37 @@ Constants that describe the location of the data source on device.
 struct Location
 ```
 
+```c
+typedef NSString * AVAudioSessionLocation;
+```
+
 ## Topics
 
 ### Creating a location
-- [init(rawValue: String)](avaudiosession/location/init(rawvalue:).md)
+- [init(rawValue: String)](./location/init%28rawvalue%29.md)
   Creates a new instance with the raw value you specify.
 ### Getting standard locations
-- [static let lower: AVAudioSession.Location](avaudiosession/location/lower.md)
+- [static let lower: AVAudioSession.Location](./location/lower.md)
   A value that indicates that the data source is located near the bottom end of the device.
-- [static let upper: AVAudioSession.Location](avaudiosession/location/upper.md)
+- [static let upper: AVAudioSession.Location](./location/upper.md)
   A value that indicates that the data source is located near the top end of the device.
 ### Deprecated
-- [Deprecated symbols](location-deprecated-symbols.md)
+- [Deprecated symbols](../location-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var location: AVAudioSession.Location?](avaudiosessiondatasourcedescription/location.md)
+### Retrieving the data source location
+- [var location: AVAudioSession.Location?](../avaudiosessiondatasourcedescription/location.md)
   The location of the data source on the device.
 
 

@@ -1,7 +1,8 @@
 # SimultaneousGesture
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gesture containing two gestures that can happen at the same time with neither of them preceding the other.
 
@@ -28,34 +29,35 @@ A simultaneous gesture is a container-event handler that evaluates its two child
 ## Topics
 
 ### Creating the gesture
-- [init(First, Second)](simultaneousgesture/init(_:_:).md)
+- [init(First, Second)](./simultaneousgesture/init%28_,_%29.md)
   Creates a gesture with two gestures that can receive updates or succeed independently of each other.
-- [var first: First](simultaneousgesture/first.md)
+- [var first: First](./simultaneousgesture/first.md)
   The first of two gestures that can happen simultaneously.
-- [var second: Second](simultaneousgesture/second.md)
+- [var second: Second](./simultaneousgesture/second.md)
   The second of two gestures that can happen simultaneously.
 ### Getting the gesture’s values
-- [SimultaneousGesture.Value](simultaneousgesture/value.md)
+- [SimultaneousGesture.Value](./simultaneousgesture/value.md)
   The value of a simultaneous gesture that indicates which of its two gestures receives events.
 
 ## Relationships
 
 ### Conforms To
-- [Gesture](gesture.md)
+- [Gesture](./gesture.md)
 
 ## See Also
 
-- [Composing SwiftUI gestures](composing-swiftui-gestures.md)
+### Combining gestures
+- [Composing SwiftUI gestures](./composing-swiftui-gestures.md)
   Combine gestures to create complex interactions.
-- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](view/simultaneousgesture(_:including:).md)
+- [func simultaneousGesture<T>(T, including: GestureMask) -> some View](./view/simultaneousgesture%28_,including%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](view/simultaneousgesture(_:isenabled:).md)
+- [func simultaneousGesture<T>(T, isEnabled: Bool) -> some View](./view/simultaneousgesture%28_,isenabled%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](view/simultaneousgesture(_:name:isenabled:).md)
+- [func simultaneousGesture<T>(T, name: String, isEnabled: Bool) -> some View](./view/simultaneousgesture%28_,name,isenabled%29.md)
   Attaches a gesture to the view to process simultaneously with gestures defined by the view.
-- [struct SequenceGesture](sequencegesture.md)
+- [struct SequenceGesture](./sequencegesture.md)
   A gesture that’s a sequence of two gestures.
-- [struct ExclusiveGesture](exclusivegesture.md)
+- [struct ExclusiveGesture](./exclusivegesture.md)
   A gesture that consists of two gestures where only one of them can succeed.
 
 

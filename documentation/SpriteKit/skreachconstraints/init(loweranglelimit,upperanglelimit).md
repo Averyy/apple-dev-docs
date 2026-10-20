@@ -1,7 +1,8 @@
 # init(lowerAngleLimit:upperAngleLimit:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new reach constraint object.
 
@@ -20,13 +21,17 @@ Initializes a new reach constraint object.
 init(lowerAngleLimit: CGFloat, upperAngleLimit: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithLowerAngleLimit:(CGFloat) lowerAngleLimit upperAngleLimit:(CGFloat) upperAngleLimit;
+```
+
 #### Return Value
 
 A newly initialized reach constraint.
 
 #### Discussion
 
-When a reach action is executed, a node’s [`zRotation`](sknode/zrotation.md) property may be changed by the action to satisfy the reach action. Any value calculated by the reach action for a node is always inside the range specified by the reach constraint attached to the node’s [`reachConstraints`](sknode/reachconstraints.md) property.
+When a reach action is executed, a node’s [`zRotation`](../sknode/zrotation.md) property may be changed by the action to satisfy the reach action. Any value calculated by the reach action for a node is always inside the range specified by the reach constraint attached to the node’s [`reachConstraints`](../sknode/reachconstraints.md) property.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ When a reach action is executed, a node’s [`zRotation`](sknode/zrotation.md) p
 
 ## See Also
 
-- [var lowerAngleLimit: CGFloat](skreachconstraints/loweranglelimit.md)
+### Working with Reach Constraints
+- [var lowerAngleLimit: CGFloat](./loweranglelimit.md)
   The minimum angle that the node can have after it is rotated by a reach event.
-- [var upperAngleLimit: CGFloat](skreachconstraints/upperanglelimit.md)
+- [var upperAngleLimit: CGFloat](./upperanglelimit.md)
   The maximum angle that the node can have after it is rotated by a reach event.
 
 

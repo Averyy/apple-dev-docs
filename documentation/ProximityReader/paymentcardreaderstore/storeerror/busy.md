@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.busy
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The store is busy executing a previous request.
 

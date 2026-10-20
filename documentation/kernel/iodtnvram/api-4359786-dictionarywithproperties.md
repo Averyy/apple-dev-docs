@@ -1,14 +1,15 @@
 # dictionaryWithProperties
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSPtr<OSDictionary> dictionaryWithProperties(void);
 ```
 

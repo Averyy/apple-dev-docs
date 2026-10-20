@@ -1,7 +1,8 @@
 # CFBundleURLSchemes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The URL schemes supported by this type.
 
@@ -13,17 +14,19 @@ The URL schemes supported by this type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `CFBundleURLSchemes` (URL Schemes)
+- **Type**: array of string 
 
 ## See Also
 
-- [CFBundleTypeRole](information-property-list/cfbundleurltypes/cfbundletyperole.md)
+### Property List Keys
+- [CFBundleTypeRole](./cfbundletyperole.md)
   The app’s role with respect to the type.
-- [CFBundleURLIconFile](information-property-list/cfbundleurltypes/cfbundleurliconfile.md)
+- [CFBundleURLIconFile](./cfbundleurliconfile.md)
   The name of the icon image file, without the extension, to be used for this type.
-- [CFBundleURLName](information-property-list/cfbundleurltypes/cfbundleurlname.md)
+- [CFBundleURLName](./cfbundleurlname.md)
   The abstract name for this type.
 
 

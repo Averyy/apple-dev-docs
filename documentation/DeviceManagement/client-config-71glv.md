@@ -1,7 +1,8 @@
 # Client Config
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read client-specific information from the server.
 
@@ -14,7 +15,7 @@ Read client-specific information from the server.
 
 **Request**:
 
-```None
+```
 
 ```
 
@@ -47,14 +48,20 @@ Read client-specific information from the server.
 ## Topics
 
 ### Response
-- [object ClientConfigResponse](clientconfigresponse.md)
+- [object ClientConfigResponse](./clientconfigresponse.md)
   The response that contains the client configuration.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 ## Endpoint
 
 `GET https://vpp.itunes.apple.com/mdm/v2/client/config`
+
+## Responses
+
+- `200` OK (`ClientConfigResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 
 ---

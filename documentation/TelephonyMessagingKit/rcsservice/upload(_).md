@@ -1,7 +1,8 @@
 # upload(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uploads a file to the RCS content server.
 
@@ -16,14 +17,14 @@ final func upload(_ uploadRequest: RCSService.FileUploadRequest) async throws ->
 
 #### Return Value
 
-A [`RCSService.FileUploadRequest.Metadata`](rcsservice/fileuploadrequest/metadata.md) instance that contains information about the uploaded file.
+A [`RCSService.FileUploadRequest.Metadata`](./fileuploadrequest/metadata.md) instance that contains information about the uploaded file.
 
 #### Discussion
 
 Sending a file to a recipient over RCS is a two-step process:
 
 1. Call `upload(_:)` to upload the file to the carrier.
-2. Send a message of type [`RCSMessage.FileTransfer`](rcsmessage/filetransfer.md) to the recipient, using metadata returned from the upload step.
+2. Send a message of type [`RCSMessage.FileTransfer`](../rcsmessage/filetransfer.md) to the recipient, using metadata returned from the upload step.
 
 The following example shows this process:
 
@@ -49,23 +50,24 @@ try await service.sendMessage(RCSMessage.FileTransfer(fileMetadata: uploadMetada
                     messageID: RCSMessageID(rawValue: SAMPLE_RCS_MESSAGE_ID))
 ```
 
-> **Note**:  If RCS file transfer isn’t supported, this method throws [`RCSService.Error.notSupported`](rcsservice/error/notsupported.md). If the file exceeds the maximum size, it throws [`RCSService.Error.maximumSizeExceeded`](rcsservice/error/maximumsizeexceeded.md).
+> **Throws**:  If RCS file transfer isn’t supported, this method throws [`RCSService.Error.notSupported`](./error/notsupported.md). If the file exceeds the maximum size, it throws [`RCSService.Error.maximumSizeExceeded`](./error/maximumsizeexceeded.md).
 
 ## Parameters
 
-- `uploadRequest`: A [`RCSService.FileUploadRequest`](rcsservice/fileuploadrequest.md) instance that describes the file to upload and an optional thumbnail.
+- `uploadRequest`: A [`RCSService.FileUploadRequest`](./fileuploadrequest.md) instance that describes the file to upload and an optional thumbnail.
 
 ## See Also
 
-- [RCSService.FileUploadRequest](rcsservice/fileuploadrequest.md)
+### Transferring files
+- [RCSService.FileUploadRequest](./fileuploadrequest.md)
   A structure that represents an RCS file upload request.
-- [RCSService.FileUploadRequest.Metadata](rcsservice/fileuploadrequest/metadata.md)
+- [RCSService.FileUploadRequest.Metadata](./fileuploadrequest/metadata.md)
   A structure that contains upload metadata from the content server.
-- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](rcsservice/download(_:).md)
+- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](./download%28_%29.md)
   Downloads a file from the RCS content server.
-- [RCSService.FileDownloadRequest](rcsservice/filedownloadrequest.md)
+- [RCSService.FileDownloadRequest](./filedownloadrequest.md)
   A structure that represents an RCS file download request.
-- [RCSService.FileDownloadRequest.Metadata](rcsservice/filedownloadrequest/metadata.md)
+- [RCSService.FileDownloadRequest.Metadata](./filedownloadrequest/metadata.md)
   A structure that contains download metadata from the content server.
 
 

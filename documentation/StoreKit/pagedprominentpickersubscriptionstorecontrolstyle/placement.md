@@ -1,7 +1,8 @@
 # PagedProminentPickerSubscriptionStoreControlStyle.Placement
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+

@@ -1,7 +1,8 @@
 # MLTensor.PaddingMode
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mode that dictates how a tensor is padded.
 
@@ -23,29 +24,30 @@ enum PaddingMode
 ## Topics
 
 ### Padding modes
-- [MLTensor.PaddingMode.constant(_:)](mltensor/paddingmode/constant(_:).md)
+- [MLTensor.PaddingMode.constant(_:)](./paddingmode/constant%28_%29.md)
   Pads the input tensor boundaries with a constant value.
-- [MLTensor.PaddingMode.reflection](mltensor/paddingmode/reflection.md)
+- [MLTensor.PaddingMode.reflection](./paddingmode/reflection.md)
   Pads the input tensor using the reflection of the input boundary.
-- [MLTensor.PaddingMode.symmetric](mltensor/paddingmode/symmetric.md)
+- [MLTensor.PaddingMode.symmetric](./paddingmode/symmetric.md)
   Pads the input tensor using the reflection of the input, including the edge value.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](mltensor/padded(forsizes:mode:).md)
+### Padding the tensor
+- [func padded(forSizes: [(before: Int, after: Int)], mode: MLTensor.PaddingMode) -> MLTensor](./padded%28forsizes,mode%29.md)
   Returns a padded tensor according to the specified padding sizes and mode.
-- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](mltensor/padded(forsizes:with:).md)
+- [func padded(forSizes: [(before: Int, after: Int)], with: Float) -> MLTensor](./padded%28forsizes,with%29.md)
   Returns a tensor padded with the given constant according to the specified padding sizes.
 
 

@@ -1,7 +1,8 @@
 # TKTokenKeychainContents
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the state of the keychain for a particular token.
 
@@ -20,44 +21,49 @@ A representation of the state of the keychain for a particular token.
 class TKTokenKeychainContents
 ```
 
+```objc
+@interface TKTokenKeychainContents : NSObject
+```
+
 ## Topics
 
 ### Adding Keychain Items
-- [func fill(with: [TKTokenKeychainItem])](tktokenkeychaincontents/fill(with:).md)
+- [func fill(with: [TKTokenKeychainItem])](./tktokenkeychaincontents/fill%28with%29.md)
   Fills the keychain with the specified items.
 ### Accessing Keychain Items
-- [var items: [TKTokenKeychainItem]](tktokenkeychaincontents/items.md)
+- [var items: [TKTokenKeychainItem]](./tktokenkeychaincontents/items.md)
   Returns all items for token in the keychain.
-- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](tktokenkeychaincontents/key(forobjectid:).md)
+- [func key(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainKey](./tktokenkeychaincontents/key%28forobjectid%29.md)
   Returns the key for a specified object identifier.
-- [func certificate(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](tktokenkeychaincontents/certificate(forobjectid:).md)
+- [func certificate(forObjectID: TKToken.ObjectID) throws -> TKTokenKeychainCertificate](./tktokenkeychaincontents/certificate%28forobjectid%29.md)
   Returns the key for a specified object identifier.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var keychainContents: TKTokenKeychainContents?](tktoken/keychaincontents.md)
+### Accessing Keychain Items
+- [var keychainContents: TKTokenKeychainContents?](./tktoken/keychaincontents.md)
   The contents of the keychain for this token.
-- [class TKTokenKeychainItem](tktokenkeychainitem.md)
+- [class TKTokenKeychainItem](./tktokenkeychainitem.md)
   An abstract base class for managing a token’s contents as keychain items.
-- [class TKTokenKeychainCertificate](tktokenkeychaincertificate.md)
+- [class TKTokenKeychainCertificate](./tktokenkeychaincertificate.md)
   A token’s certificate as stored in the keychain.
-- [class TKTokenKeychainKey](tktokenkeychainkey.md)
+- [class TKTokenKeychainKey](./tktokenkeychainkey.md)
   A token’s key as stored in the keychain.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
 
 

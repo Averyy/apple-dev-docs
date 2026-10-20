@@ -1,7 +1,8 @@
 # cmYxyData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The Yxy data color space.
 

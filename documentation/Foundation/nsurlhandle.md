@@ -1,7 +1,8 @@
 # NSURLHandle
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that accesses and manages resource data indicated by a URL.
 
@@ -15,11 +16,15 @@ An object that accesses and manages resource data indicated by a URL.
 class NSURLHandle
 ```
 
+```objc
+@interface NSURLHandle : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  [`NSURLHandle`](nsurlhandle.md) is deprecated in macOS 10.4 and later. Use [`URLSession`](urlsession.md) instead.
+> ❗ **Important**:  [`NSURLHandle`](./nsurlhandle.md) is deprecated in macOS 10.4 and later. Use [`URLSession`](./urlsession.md) instead.
 
-A single [`NSURLHandle`](nsurlhandle.md) can service multiple equivalent [`NSURL`](nsurl.md) objects, but only if these URLs map to the same resource.
+A single [`NSURLHandle`](./nsurlhandle.md) can service multiple equivalent [`NSURL`](./nsurl.md) objects, but only if these URLs map to the same resource.
 
 ##### Overview
 
@@ -28,20 +33,20 @@ Cocoa provides private concrete subclasses to handle HTTP and file URL schemes. 
 ## Topics
 
 ### Loading resource data
-- [NSURLHandle.Status](nsurlhandle/status-swift.enum.md)
-  These following constants are defined by `NSURLHandle` and are returned by [`status`](nsurlhandle/status-c.method.md).
+- [NSURLHandle.Status](./nsurlhandle/status-swift.enum.md)
+  These following constants are defined by `NSURLHandle` and are returned by [`status`](./nsurlhandle/status-c.method.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

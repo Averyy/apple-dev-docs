@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes the given value.
@@ -23,11 +24,19 @@ mutating func encode(_ value: Int8) throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
 ## Parameters
 
 - `value`: The value to encode.
+
+## Default Implementations
+
+### UnkeyedEncodingContainer Implementations
+- [func encode(UInt128) throws](./encode%28_%29-7suq1.md)
+  Encodes the given value.
+- [func encode(Int128) throws](./encode%28_%29-8m4kj.md)
+  Encodes the given value.
 
 
 ---

@@ -6,28 +6,13 @@ url: https://apple.github.io/coremltools/docs-guides/source/classifiers.html
 
 # Classifiers
 
-**
-
-- [.md](../_sources/source/classifiers.md)
-- **
-
-.pdf
-
-**
-
-# Classifiers
-
- Table of contents 
-
-## Contents
-
-# Classifiers
-
 A [classifier](https://deepai.org/machine-learning-glossary-and-terms/classifier) is a special kind of [Core ML](https://developer.apple.com/documentation/coreml) model that provides a class label and class name to a probability dictionary as outputs. This topic describes the steps to produce a classifier model using the [Unified Conversion API](unified-conversion-api.md) by using the [ClassifierConfig](https://apple.github.io/coremltools/source/coremltools.converters.mil.input_types.html#classifierconfig) class.
 
 ## Preview a Classifier Model
 
 Open the classifier model in Xcode. For an image input classifier, Xcode displays the following in its preview:
+
+![Xcode preview](https://apple.github.io/coremltools/docs-guides/_images/mobilenet-neural-network-classifier1.png)
 
 In the above Xcode preview:
 
@@ -47,30 +32,40 @@ The code in [Getting Started](introductory-quickstart.md), repeated below, shows
 To produce a classifier model, follow these steps:
 
 1. Define the inputs and class labels:
-import coremltools as ct
 
-# Define the inputs and class labels
-image_input = ct.ImageType(name="image", shape=(1, 224, 224, 3,),)
-classifier_config = ct.ClassifierConfig(class_labels)
+   ```
+   import coremltools as ct
+
+   # Define the inputs and class labels
+   image_input = ct.ImageType(name="image", shape=(1, 224, 224, 3,),)
+   classifier_config = ct.ClassifierConfig(class_labels)
+   ```
 2. Convert the model using the [Unified Conversion API](unified-conversion-api.md):
-# Convert the model using the Unified Conversion API
-model = ct.convert(
-	keras_model, inputs=[image_input], classifier_config=classifier_config,
-)
+
+   ```
+   # Convert the model using the Unified Conversion API
+   model = ct.convert(
+   	keras_model, inputs=[image_input], classifier_config=classifier_config,
+   )
+   ```
 
 1. Use PIL to load and resize the image to the expected size:
-# Use PIL to load and resize the image to expected size
-from PIL import Image
-example_image = Image.open("daisy.jpg").resize((224, 224))
-2. Make a prediction using Core ML, and print out the top-1 prediction:
-# Make a prediction using Core ML
-out_dict = model.predict({"image": example_image})
 
-# Print out top-1 prediction
-print(out_dict["classLabels"])
+   ```
+   # Use PIL to load and resize the image to expected size
+   from PIL import Image
+   example_image = Image.open("daisy.jpg").resize((224, 224))
+   ```
+2. Make a prediction using Core ML, and print out the top-1 prediction:
+
+   ```
+   # Make a prediction using Core ML
+   out_dict = model.predict({"image": example_image})
+
+   # Print out top-1 prediction
+   print(out_dict["classLabels"])
+   ```
 
 The Vision Classifier API
 
 All Core ML models use the Core ML framework and its APIs. However, with image input models you can also use the [Vision Classifier Observation API](https://developer.apple.com/documentation/vision/vnclassificationobservation), which provides image analysis and additional convenience features for preprocessing images.
-
-** Contents

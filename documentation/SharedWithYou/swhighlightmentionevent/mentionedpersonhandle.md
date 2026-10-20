@@ -1,7 +1,8 @@
 # mentionedPersonHandle
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handle of the person the sender mentions.
 
@@ -16,6 +17,10 @@ The handle of the person the sender mentions.
 
 ```swift
 var mentionedPersonHandle: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * mentionedPersonHandle;
 ```
 
 

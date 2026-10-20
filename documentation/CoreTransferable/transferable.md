@@ -1,7 +1,8 @@
 # Transferable
 
 **Framework**: Core Transferable  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that describes how a type interacts with transport APIs such as drag and drop or copy and paste.
 
@@ -23,7 +24,7 @@ protocol Transferable : Sendable
 
 #### Overview
 
-To conform to the [`Transferable`](transferable.md) protocol, implement the [`transferRepresentation`](transferable/transferrepresentation.md) property. For example, an image editing app’s layer type might conform to `Transferable` to let people drag and drop image layers to reorder them within a document.
+To conform to the [`Transferable`](./transferable.md) protocol, implement the [`transferRepresentation`](./transferable/transferrepresentation.md) property. For example, an image editing app’s layer type might conform to `Transferable` to let people drag and drop image layers to reorder them within a document.
 
 ```swift
 struct ImageDocumentLayer {
@@ -60,9 +61,9 @@ extension UTType {
 }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
-If one of your existing types conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable), `Transferable` automatically handles conversion to and from `Data`. The following declares a simple `Note` structure that’s `Codable` and an extension to make it `Transferable`:
+If one of your existing types conforms to [`Codable`](../Swift/codable.md), `Transferable` automatically handles conversion to and from `Data`. The following declares a simple `Note` structure that’s `Codable` and an extension to make it `Transferable`:
 
 ```swift
 struct Note: Codable {
@@ -93,46 +94,47 @@ The order of the representations in the transfer representation matters; place t
 ## Topics
 
 ### Implementing a transfer representation
-- [static var transferRepresentation: Self.Representation](transferable/transferrepresentation.md)
+- [static var transferRepresentation: Self.Representation](./transferable/transferrepresentation.md)
   The representation used to import and export the item.
-- [associatedtype Representation : TransferRepresentation](transferable/representation.md)
+- [associatedtype Representation : TransferRepresentation](./transferable/representation.md)
   The type of the representation used to import and export the item.
 ### Initializers
-- [init(importing: URL, contentType: UTType?) async throws](transferable/init(importing:contenttype:)-4pfpm.md)
+- [init(importing: URL, contentType: UTType?) async throws](./transferable/init%28importing,contenttype%29-4pfpm.md)
   Using the type’s `Transferable` conformance implementation, instantiates a value from the given file.
-- [init(importing: Data, contentType: UTType?) async throws](transferable/init(importing:contenttype:)-74t08.md)
+- [init(importing: Data, contentType: UTType?) async throws](./transferable/init%28importing,contenttype%29-74t08.md)
   Using the type’s `Transferable` conformance implementation, instantiates a value from given data.
 ### Instance Properties
-- [var suggestedFilename: String?](transferable/suggestedfilename.md)
+- [var suggestedFilename: String?](./transferable/suggestedfilename.md)
   A suggested filename of a `Transferable` value.
 ### Instance Methods
-- [func export(to: URL, contentType: UTType?) async throws -> URL](transferable/export(to:contenttype:).md)
+- [func export(to: URL, contentType: UTType?) async throws -> URL](./transferable/export%28to,contenttype%29.md)
   Using the type’s `Transferable` conformance implementation, exports a value by writing it to a provided destination directory.
-- [func exported(as: UTType?) async throws -> Data](transferable/exported(as:).md)
+- [func exported(as: UTType?) async throws -> Data](./transferable/exported%28as%29.md)
   Using the type’s `Transferable` conformance implementation, exports a value as binary data.
-- [func exportedContentTypes(TransferRepresentationVisibility) -> [UTType]](transferable/exportedcontenttypes(_:).md)
+- [func exportedContentTypes(TransferRepresentationVisibility) -> [UTType]](./transferable/exportedcontenttypes%28_%29.md)
   Content types supported by a given value’s `Transferable` conformance for export (like drag or copy).
-- [func importedContentTypes() -> [UTType]](transferable/importedcontenttypes-swift.method.md)
+- [func importedContentTypes() -> [UTType]](./transferable/importedcontenttypes%28%29-swift.method.md)
   Content types supported by a given value’s `Transferable` conformance for import (like drop or paste).
-- [func withExportedFile<Result>(contentType: UTType?, fileHandler: (URL) async throws -> Result) async throws -> Result](transferable/withexportedfile(contenttype:filehandler:).md)
+- [func withExportedFile<Result>(contentType: UTType?, fileHandler: (URL) async throws -> Result) async throws -> Result](./transferable/withexportedfile%28contenttype,filehandler%29.md)
   Using the type’s `Transferable` conformance implementation, exports a value by writing it to disk and removes when not needed.
 ### Type Methods
-- [static func exportedContentTypes(visibility: TransferRepresentationVisibility) -> [UTType]](transferable/exportedcontenttypes(visibility:).md)
+- [static func exportedContentTypes(visibility: TransferRepresentationVisibility) -> [UTType]](./transferable/exportedcontenttypes%28visibility%29.md)
   The types that the instance of a `Transferable` is able to provide a representation for.
-- [static func importedContentTypes() -> [UTType]](transferable/importedcontenttypes-swift.type.method.md)
+- [static func importedContentTypes() -> [UTType]](./transferable/importedcontenttypes%28%29-swift.type.method.md)
   Content types statically supported by the `Transferable` conformance of the type for import (like drop or paste).
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol TransferRepresentation](transferrepresentation.md)
+### Essentials
+- [protocol TransferRepresentation](./transferrepresentation.md)
   A declarative description of the process of importing and exporting a transferable item.
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
   Define a custom representation for your data using a combination of built-in types.
 
 

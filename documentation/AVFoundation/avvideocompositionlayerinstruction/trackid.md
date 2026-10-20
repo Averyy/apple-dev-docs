@@ -1,7 +1,8 @@
 # trackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track identifier of the source track to which the compositor will apply the instruction.
 
@@ -17,6 +18,10 @@ The track identifier of the source track to which the compositor will apply the 
 
 ```swift
 var trackID: CMPersistentTrackID { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CMPersistentTrackID trackID;
 ```
 
 

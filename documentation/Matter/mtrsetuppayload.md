@@ -1,7 +1,8 @@
 # MTRSetupPayload
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,65 +19,69 @@
 class MTRSetupPayload
 ```
 
+```objc
+@interface MTRSetupPayload : NSObject
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Initializers
-- [init(onboardingPayload: String) throws](mtrsetuppayload/init(onboardingpayload:).md)
-- [init?(payload: String)](mtrsetuppayload/init(payload:).md)
-- [init(setupPasscode: NSNumber, discriminator: NSNumber)](mtrsetuppayload/init(setuppasscode:discriminator:).md)
-- [init?(coder: NSCoder)](mtrsetuppayload/init(coder:).md)
+- [init(onboardingPayload: String) throws](./mtrsetuppayload/init%28onboardingpayload%29.md)
+- [init?(payload: String)](./mtrsetuppayload/init%28payload%29.md)
+- [init(setupPasscode: NSNumber, discriminator: NSNumber)](./mtrsetuppayload/init%28setuppasscode,discriminator%29.md)
+- [init?(coder: NSCoder)](./mtrsetuppayload/init%28coder%29.md)
 ### Instance Properties
-- [var commissioningFlow: MTRCommissioningFlow](mtrsetuppayload/commissioningflow.md)
-- [var discoveryCapabilities: MTRDiscoveryCapabilities](mtrsetuppayload/discoverycapabilities.md)
-- [var discriminator: NSNumber](mtrsetuppayload/discriminator.md)
-- [var hasShortDiscriminator: Bool](mtrsetuppayload/hasshortdiscriminator.md)
-- [var productID: NSNumber](mtrsetuppayload/productid.md)
-- [var rendezvousInformation: NSNumber?](mtrsetuppayload/rendezvousinformation.md)
-- [var serialNumber: String?](mtrsetuppayload/serialnumber.md)
-- [var setUpPINCode: NSNumber](mtrsetuppayload/setuppincode.md)
-- [var setupPasscode: NSNumber](mtrsetuppayload/setuppasscode.md)
-- [var vendorElements: [MTROptionalQRCodeInfo]](mtrsetuppayload/vendorelements.md)
-- [var vendorID: NSNumber](mtrsetuppayload/vendorid.md)
-- [var version: NSNumber](mtrsetuppayload/version.md)
-- [var isConcatenated: Bool](mtrsetuppayload/isconcatenated.md)
+- [var commissioningFlow: MTRCommissioningFlow](./mtrsetuppayload/commissioningflow.md)
+- [var discoveryCapabilities: MTRDiscoveryCapabilities](./mtrsetuppayload/discoverycapabilities.md)
+- [var discriminator: NSNumber](./mtrsetuppayload/discriminator.md)
+- [var hasShortDiscriminator: Bool](./mtrsetuppayload/hasshortdiscriminator.md)
+- [var productID: NSNumber](./mtrsetuppayload/productid.md)
+- [var rendezvousInformation: NSNumber?](./mtrsetuppayload/rendezvousinformation.md)
+- [var serialNumber: String?](./mtrsetuppayload/serialnumber.md)
+- [var setUpPINCode: NSNumber](./mtrsetuppayload/setuppincode.md)
+- [var setupPasscode: NSNumber](./mtrsetuppayload/setuppasscode.md)
+- [var vendorElements: [MTROptionalQRCodeInfo]](./mtrsetuppayload/vendorelements.md)
+- [var vendorID: NSNumber](./mtrsetuppayload/vendorid.md)
+- [var version: NSNumber](./mtrsetuppayload/version.md)
+- [var isConcatenated: Bool](./mtrsetuppayload/isconcatenated.md)
   Whether this object represents a concatenated QR Code payload consisting of two or more underlying payloads. If YES, then:
-- [var subPayloads: [MTRSetupPayload]](mtrsetuppayload/subpayloads.md)
+- [var subPayloads: [MTRSetupPayload]](./mtrsetuppayload/subpayloads.md)
   The individual constituent payloads, if the receiver represents a concatenated payload.
 ### Instance Methods
-- [func addOrReplaceVendorElement(MTROptionalQRCodeInfo)](mtrsetuppayload/addorreplacevendorelement(_:).md)
-- [func getAllOptionalVendorData() throws -> [MTROptionalQRCodeInfo]](mtrsetuppayload/getalloptionalvendordata.md)
-- [func manualEntryCode() -> String?](mtrsetuppayload/manualentrycode.md)
-- [func qrCodeString() -> String?](mtrsetuppayload/qrcodestring.md)
-- [func qrCodeString(NSErrorPointer) -> String?](mtrsetuppayload/qrcodestring(_:).md)
-- [func removeVendorElement(withTag: NSNumber)](mtrsetuppayload/removevendorelement(withtag:).md)
-- [func vendorElement(withTag: NSNumber) -> MTROptionalQRCodeInfo?](mtrsetuppayload/vendorelement(withtag:).md)
+- [func addOrReplaceVendorElement(MTROptionalQRCodeInfo)](./mtrsetuppayload/addorreplacevendorelement%28_%29.md)
+- [func getAllOptionalVendorData() throws -> [MTROptionalQRCodeInfo]](./mtrsetuppayload/getalloptionalvendordata%28%29.md)
+- [func manualEntryCode() -> String?](./mtrsetuppayload/manualentrycode%28%29.md)
+- [func qrCodeString() -> String?](./mtrsetuppayload/qrcodestring%28%29.md)
+- [func qrCodeString(NSErrorPointer) -> String?](./mtrsetuppayload/qrcodestring%28_%29.md)
+- [func removeVendorElement(withTag: NSNumber)](./mtrsetuppayload/removevendorelement%28withtag%29.md)
+- [func vendorElement(withTag: NSNumber) -> MTROptionalQRCodeInfo?](./mtrsetuppayload/vendorelement%28withtag%29.md)
 ### Type Methods
-- [class func generateRandomPIN() -> Int](mtrsetuppayload/generaterandompin.md)
-- [class func generateRandomSetupPasscode() -> NSNumber](mtrsetuppayload/generaterandomsetuppasscode.md)
-- [class func new() -> Self](mtrsetuppayload/new.md)
-- [class func isValidSetupPasscode(NSNumber) -> Bool](mtrsetuppayload/isvalidsetuppasscode(_:).md)
+- [class func generateRandomPIN() -> Int](./mtrsetuppayload/generaterandompin%28%29.md)
+- [class func generateRandomSetupPasscode() -> NSNumber](./mtrsetuppayload/generaterandomsetuppasscode%28%29.md)
+- [class func new() -> Self](./mtrsetuppayload/new%28%29.md)
+- [class func isValidSetupPasscode(NSNumber) -> Bool](./mtrsetuppayload/isvalidsetuppasscode%28_%29.md)
   Check whether the provided setup passcode (represented as an unsigned integer) is a valid setup passcode.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

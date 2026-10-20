@@ -1,7 +1,8 @@
 # kCMIOObjectPropertyElementWildcard
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,10 +14,15 @@
 var kCMIOObjectPropertyElementWildcard: UInt32 { get }
 ```
 
+```c
+kCMIOObjectPropertyElementWildcard
+```
+
 ## See Also
 
-- [var kCMIOObjectPropertyScopeWildcard: UInt32](kcmioobjectpropertyscopewildcard.md)
-- [var kCMIOObjectPropertySelectorWildcard: UInt32](kcmioobjectpropertyselectorwildcard.md)
+### Wildcards
+- [var kCMIOObjectPropertyScopeWildcard: UInt32](./kcmioobjectpropertyscopewildcard.md)
+- [var kCMIOObjectPropertySelectorWildcard: UInt32](./kcmioobjectpropertyselectorwildcard.md)
 
 
 ---

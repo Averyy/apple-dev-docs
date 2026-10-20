@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor for each splat’s rotation, stored as a four-component quaternion.
 

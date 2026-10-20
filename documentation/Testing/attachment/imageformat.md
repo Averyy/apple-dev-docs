@@ -1,7 +1,8 @@
 # imageFormat
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image format to use when encoding the represented image, if specified.
 
@@ -14,6 +15,8 @@ The image format to use when encoding the represented image, if specified.
 ```swift
 var imageFormat: AttachableImageFormat? { get }
 ```
+
+Available when `AttachableValue` conforms to `AttachableWrapper` and `AttachableValue.Wrapped` conforms to `AttachableAsImage`.
 
 
 ---

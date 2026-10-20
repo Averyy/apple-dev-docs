@@ -1,7 +1,8 @@
 # updateEventMask
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 If the bit specified by this mask is set, your callback function is invoked when a keychain item is updated.
 
@@ -13,6 +14,10 @@ If the bit specified by this mask is set, your callback function is invoked when
 
 ```swift
 static var updateEventMask: SecKeychainEventMask { get }
+```
+
+```c
+kSecUpdateEventMask
 ```
 
 

@@ -1,7 +1,8 @@
 # init(imageRep:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 27.0+

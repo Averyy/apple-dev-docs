@@ -1,27 +1,29 @@
 # wHubCharacteristics
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wHubCharacteristics;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedhubdescriptor/blength.md)
-- [bDescriptorType](iousbsuperspeedhubdescriptor/bdescriptortype.md)
-- [bNumberPorts](iousbsuperspeedhubdescriptor/bnumberports.md)
-- [bPowerOnToPowerGood](iousbsuperspeedhubdescriptor/bpowerontopowergood.md)
-- [bHubControllerCurrent](iousbsuperspeedhubdescriptor/bhubcontrollercurrent.md)
-- [bHubDecodeLatency](iousbsuperspeedhubdescriptor/bhubdecodelatency.md)
-- [wHubDelay](iousbsuperspeedhubdescriptor/whubdelay.md)
-- [deviceRemovable](iousbsuperspeedhubdescriptor/deviceremovable.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bNumberPorts](./bnumberports.md)
+- [bPowerOnToPowerGood](./bpowerontopowergood.md)
+- [bHubControllerCurrent](./bhubcontrollercurrent.md)
+- [bHubDecodeLatency](./bhubdecodelatency.md)
+- [wHubDelay](./whubdelay.md)
+- [deviceRemovable](./deviceremovable.md)
 
 
 ---

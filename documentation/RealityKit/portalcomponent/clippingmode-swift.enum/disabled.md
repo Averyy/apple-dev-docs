@@ -1,7 +1,8 @@
 # PortalComponent.ClippingMode.disabled
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Disables clipping of the contents within the portal.
 

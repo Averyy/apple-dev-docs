@@ -1,7 +1,8 @@
 # position
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view’s position, in window coordinates.
 
@@ -22,9 +23,10 @@ static let position: MatchedGeometryProperties
 
 ## See Also
 
-- [static let frame: MatchedGeometryProperties](matchedgeometryproperties/frame.md)
+### Matching properties
+- [static let frame: MatchedGeometryProperties](./frame.md)
   Both the `position` and `size` properties.
-- [static let size: MatchedGeometryProperties](matchedgeometryproperties/size.md)
+- [static let size: MatchedGeometryProperties](./size.md)
   The view’s size, in local coordinates.
 
 

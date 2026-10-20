@@ -1,7 +1,8 @@
 # xpc_connection_get_context(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the context for the connection.
 
@@ -10,7 +11,7 @@ Returns the context for the connection.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the context for the connection.
 
 ```swift
 func xpc_connection_get_context(_ connection: xpc_connection_t) -> UnsafeMutableRawPointer?
+```
+
+```c
+extern void *xpc_connection_get_context(xpc_connection_t connection);
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The context associated with the connection. `NULL` if there has been no context 
 
 ## See Also
 
-- [func xpc_connection_set_context(xpc_connection_t, UnsafeMutableRawPointer?)](xpc_connection_set_context(_:_:).md)
+### Context
+- [func xpc_connection_set_context(xpc_connection_t, UnsafeMutableRawPointer?)](./xpc_connection_set_context%28_,_%29.md)
   Sets a context on the connection.
-- [func xpc_connection_set_finalizer_f(xpc_connection_t, xpc_finalizer_t?)](xpc_connection_set_finalizer_f(_:_:).md)
+- [func xpc_connection_set_finalizer_f(xpc_connection_t, xpc_finalizer_t?)](./xpc_connection_set_finalizer_f%28_,_%29.md)
   Sets the finalizer for the connection.
-- [typealias xpc_finalizer_t](xpc_finalizer_t.md)
+- [typealias xpc_finalizer_t](./xpc_finalizer_t.md)
   A function to invoke when tearing down a connection and freeing its context.
 
 

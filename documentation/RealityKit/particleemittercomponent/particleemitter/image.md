@@ -1,7 +1,8 @@
 # image
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that each particle will use (requires pre-multiplied RGB values). Defaults to a white circular texture.
 

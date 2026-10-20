@@ -1,7 +1,8 @@
 # homeManager(_:didUpdate:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the authorization status changes.
 
@@ -19,10 +20,14 @@ Tells the delegate when the authorization status changes.
 optional func homeManager(_ manager: HMHomeManager, didUpdate status: HMHomeManagerAuthorizationStatus)
 ```
 
+```objc
+- (void) homeManager:(HMHomeManager *) manager didUpdateAuthorizationStatus:(HMHomeManagerAuthorizationStatus) status;
+```
+
 ## Parameters
 
 - `manager`: The home manager for which the status changed.
-- `status`: The new authorization status. You can also read this value at any time from the manager’s [`authorizationStatus`](hmhomemanager/authorizationstatus.md) property.
+- `status`: The new authorization status. You can also read this value at any time from the manager’s [`authorizationStatus`](../hmhomemanager/authorizationstatus.md) property.
 
 
 ---

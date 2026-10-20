@@ -1,7 +1,8 @@
 # SubscriptionPriceChangeRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to change the price of an auto-renewable subscription.
 
@@ -10,15 +11,15 @@ The request body you use to change the price of an auto-renewable subscription.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceChangeRequest
 ```
 
 ##### Discussion
 
-This is the request body for the [`Change Subscription Price`](change-subscription-price.md) endpoint.
+This is the request body for the [`Change Subscription Price`](./change-subscription-price.md) endpoint.
 
-The items array contains [`SubscriptionPriceChangeItem`](subscriptionpricechangeitem.md). Include one entry for each SKU within the subscription that has a price change.
+The items array contains [`SubscriptionPriceChangeItem`](./subscriptionpricechangeitem.md). Include one entry for each SKU within the subscription that has a price change.
 
 ## Properties
 
@@ -29,9 +30,10 @@ The items array contains [`SubscriptionPriceChangeItem`](subscriptionpricechange
 
 ## See Also
 
-- [Change Subscription Price](change-subscription-price.md)
+### Subscription price change from the server
+- [Change Subscription Price](./change-subscription-price.md)
   Increase or decrease the price of an auto-renewable subscription, a bundle, or individual items within a subscription at the next renewal.
-- [object SubscriptionPriceChangeResponse](subscriptionpricechangeresponse.md)
+- [object SubscriptionPriceChangeResponse](./subscriptionpricechangeresponse.md)
   A response that contains signed JWS renewal and JWS transaction information after a subscription price change request.
 
 

@@ -1,7 +1,8 @@
 # instanceDescriptorType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of the instance data in the descriptor buffer.
 
@@ -19,13 +20,19 @@ The format of the instance data in the descriptor buffer.
 var instanceDescriptorType: MTLAccelerationStructureInstanceDescriptorType { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAccelerationStructureInstanceDescriptorType instanceDescriptorType;
+```
+
 ## See Also
 
-- [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+### Related Documentation
+- [var instanceDescriptorBuffer: (any MTLBuffer)?](./instancedescriptorbuffer.md)
   A buffer that contains descriptions of each instance in the acceleration structure.
-- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](mtlinstanceaccelerationstructuredescriptor/instancedaccelerationstructures.md)
+### Specifying the instance structures
+- [var instancedAccelerationStructures: [any MTLAccelerationStructure]?](./instancedaccelerationstructures.md)
   The bottom-level acceleration structures that instances use in the instance acceleration structure .
-- [enum MTLAccelerationStructureInstanceDescriptorType](mtlaccelerationstructureinstancedescriptortype.md)
+- [enum MTLAccelerationStructureInstanceDescriptorType](../mtlaccelerationstructureinstancedescriptortype.md)
   Options for specifying different kinds of instance types.
 
 

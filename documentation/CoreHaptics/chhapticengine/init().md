@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the haptic engine.
 
@@ -19,13 +20,18 @@ Creates an instance of the haptic engine.
 init() throws
 ```
 
+```objc
+- (instancetype) initAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
 The haptic engine isn’t a singleton but a connection to the haptic server inside the user’s device. More than one connection with the haptic server may exist in your app’s view controller or delegate. Each connection functions independently of the others.
 
 ## See Also
 
-- [init(audioSession: AVAudioSession?) throws](chhapticengine/init(audiosession:).md)
+### Initializing a Haptic Engine
+- [init(audioSession: AVAudioSession?) throws](./init%28audiosession%29.md)
   Creates a haptic engine from an audio session.
 
 

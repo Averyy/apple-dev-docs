@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s delegate.
 
@@ -15,6 +16,10 @@ The controller’s delegate.
 weak var delegate: (any AMWorkflowControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AMWorkflowControllerDelegate> delegate;
+```
+
 #### Return Value
 
 The controller’s delegate.
@@ -25,7 +30,8 @@ This object receives updates on the progress and state of the workflow controlle
 
 ## See Also
 
-- [protocol AMWorkflowControllerDelegate](amworkflowcontrollerdelegate.md)
+### Accessing the Delegate
+- [protocol AMWorkflowControllerDelegate](../amworkflowcontrollerdelegate.md)
   A set of optional methods that a delegate of a workflow controller implements.
 
 

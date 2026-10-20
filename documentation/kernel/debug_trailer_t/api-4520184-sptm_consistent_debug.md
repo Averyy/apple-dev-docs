@@ -1,14 +1,15 @@
 # sptm_consistent_debug
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 struct sptm_consistent_debug *sptm_consistent_debug;
 ```
 

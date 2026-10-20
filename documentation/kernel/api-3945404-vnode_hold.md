@@ -1,14 +1,15 @@
 # vnode_hold
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void vnode_hold(vnode_t vp);
 ```
 

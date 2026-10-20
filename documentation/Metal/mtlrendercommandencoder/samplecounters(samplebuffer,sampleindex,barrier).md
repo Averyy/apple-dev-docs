@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that samples hardware counters during the render pass and stores the data into a counter sample buffer.
@@ -20,15 +21,25 @@ Encodes a command that samples hardware counters during the render pass and stor
 func sampleCounters(sampleBuffer: any MTLCounterSampleBuffer, sampleIndex: Int, barrier: Bool)
 ```
 
+```objc
+- (void) sampleCountersInBuffer:(id<MTLCounterSampleBuffer>) sampleBuffer atSampleIndex:(NSUInteger) sampleIndex withBarrier:(BOOL) barrier;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Parameters
 
-- `sampleBuffer`: An [`MTLCounterSampleBuffer`](mtlcountersamplebuffer.md) instance that stores the GPU hardware data.
+- `sampleBuffer`: An [`MTLCounterSampleBuffer`](../mtlcountersamplebuffer.md) instance that stores the GPU hardware data.
 - `sampleIndex`: An index within `sampleBuffer` the command stores the data to.
-- `barrier`: A Boolean value that indicates whether the command inserts a barrier before sampling the counter’s data. A barrier ensures that the commands you encode before this one complete before the GPU samples the hardware counters, but can negatively impact runtime performance. Running this command without a barrier means the GPU can sample counters concurrently with other commands from the encoder. Either way, the `barrier` parameter for the command has no impact on sampling commands from other passes.
+- `barrier`: A Boolean value that indicates whether the command inserts a barrier before sampling the counter’s data.
+
+  A barrier ensures that the commands you encode before this one complete before the GPU samples the hardware counters, but can negatively impact runtime performance.
+
+  Running this command without a barrier means the GPU can sample counters concurrently with other commands from the encoder.
+
+  Either way, the `barrier` parameter for the command has no impact on sampling commands from other passes.
 
 
 ---

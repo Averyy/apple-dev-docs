@@ -1,7 +1,8 @@
 # names
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the outputs in this collection.
 
@@ -20,9 +21,10 @@ var names: some Collection<String> { get }
 
 ## See Also
 
-- [func remove(String) -> InferenceValue?](inferencefunction/outputs/remove(_:).md)
+### Accessing outputs
+- [func remove(String) -> InferenceValue?](./remove%28_%29.md)
   Removes and returns the output value with the specified name.
-- [var count: Int](inferencefunction/outputs/count.md)
+- [var count: Int](./count.md)
   The number of outputs in this collection.
 
 

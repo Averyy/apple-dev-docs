@@ -1,7 +1,8 @@
 # browser(_:sizeToFitWidthOfColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the ideal width for a column.
 
@@ -13,6 +14,10 @@ Returns the ideal width for a column.
 ```swift
 @MainActor
 optional func browser(_ browser: NSBrowser, sizeToFitWidthOfColumn columnIndex: Int) -> CGFloat
+```
+
+```objc
+- (CGFloat) browser:(NSBrowser *) browser sizeToFitWidthOfColumn:(NSInteger) columnIndex;
 ```
 
 #### Return Value
@@ -27,7 +32,7 @@ Returning a value of `-1` allows you to opt-out of providing a width for the req
 
 #### Discussion
 
-This method applies only to browsers with resize type [`NSBrowser.ColumnResizingType.userColumnResizing`](nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md).
+This method applies only to browsers with resize type [`NSBrowser.ColumnResizingType.userColumnResizing`](../nsbrowser/columnresizingtype-swift.enum/usercolumnresizing.md).
 
 It is assumed that the implementation may be expensive, so it will be called only when necessary.
 
@@ -38,11 +43,12 @@ It is assumed that the implementation may be expensive, so it will be called onl
 
 ## See Also
 
-- [func browser(NSBrowser, shouldSizeColumn: Int, forUserResize: Bool, toWidth: CGFloat) -> CGFloat](nsbrowserdelegate/browser(_:shouldsizecolumn:foruserresize:towidth:).md)
+### Sizing
+- [func browser(NSBrowser, shouldSizeColumn: Int, forUserResize: Bool, toWidth: CGFloat) -> CGFloat](./browser%28_,shouldsizecolumn,foruserresize,towidth%29.md)
   Used to determine a column’s initial size.
-- [func browserColumnConfigurationDidChange(Notification)](nsbrowserdelegate/browsercolumnconfigurationdidchange(_:).md)
+- [func browserColumnConfigurationDidChange(Notification)](./browsercolumnconfigurationdidchange%28_%29.md)
   Used by clients to implement their own column width persistence.
-- [func browser(NSBrowser, heightOfRow: Int, inColumn: Int) -> CGFloat](nsbrowserdelegate/browser(_:heightofrow:incolumn:).md)
+- [func browser(NSBrowser, heightOfRow: Int, inColumn: Int) -> CGFloat](./browser%28_,heightofrow,incolumn%29.md)
   Specifies the height of the specified row in the specified column.
 
 

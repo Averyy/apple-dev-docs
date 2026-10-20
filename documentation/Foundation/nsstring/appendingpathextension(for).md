@@ -1,7 +1,8 @@
 # appendingPathExtension(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func appendingPathExtension(for contentType: UTType) -> String
+```
+
+```objc
+- (NSString *) stringByAppendingPathExtensionForType:(UTType *) contentType;
 ```
 
 

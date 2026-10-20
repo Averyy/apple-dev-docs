@@ -1,7 +1,8 @@
 # DiskImage.Format.raw
 
 **Framework**: DiskImageKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Raw disk image.
 
@@ -16,7 +17,8 @@ case raw
 
 ## See Also
 
-- [struct RAWCreationConfiguration](rawcreationconfiguration.md)
+### Related Documentation
+- [struct RAWCreationConfiguration](../../rawcreationconfiguration.md)
   The configuration to use to create RAW disk images.
 
 

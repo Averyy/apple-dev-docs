@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 A static factory method that allocates and initializes a video clock device.
 
@@ -10,7 +11,7 @@ A static factory method that allocates and initializes a video clock device.
 
 ## Declaration
 
-```swift
+```c
 static OSSharedPtr<IOUserVideoClockDevice> Create(IOUserVideoDriver *in_driver, OSString *in_device_uid, OSString *in_model_uid, OSString *in_manufacturer_uid);
 ```
 
@@ -31,9 +32,10 @@ If IOUserVideoClockDevice is subclassed to override behavior, don’t use this m
 
 ## See Also
 
-- [init](iouservideoclockdevice/init.md)
+### Creating a clock device
+- [init](./init.md)
   Initializes a video clock device.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](../iouservideodriver.md)
   A video driver.
 
 

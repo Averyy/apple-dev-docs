@@ -1,7 +1,8 @@
 # initializeElement(at:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the element at `index` to the given value.
 

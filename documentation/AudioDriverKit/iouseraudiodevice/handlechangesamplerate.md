@@ -1,7 +1,8 @@
 # HandleChangeSampleRate
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the device the sample rate is changing.
 
@@ -10,17 +11,17 @@ Tells the device the sample rate is changing.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeSampleRate(double in_sample_rate);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation calls [`SetSampleRate`](iouseraudioclockdevice/setsamplerate.md) and returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle changes to the sample rate and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) upon success.
+The default implementation calls [`SetSampleRate`](../iouseraudioclockdevice/setsamplerate.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the sample rate and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ The default implementation calls [`SetSampleRate`](iouseraudioclockdevice/setsam
 
 ## See Also
 
-- [DeviceSampleRateChanged](iouseraudiostream/devicesampleratechanged.md)
+### Supporting Sample Rate Changes
+- [DeviceSampleRateChanged](../iouseraudiostream/devicesampleratechanged.md)
   Updates stream formats, in response to the owning audio device changing its sample rate.
 
 

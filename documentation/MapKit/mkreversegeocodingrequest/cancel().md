@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method you call to cancel a reverse geocoding request that’s in progress.
 
@@ -18,6 +19,10 @@ A method you call to cancel a reverse geocoding request that’s in progress.
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

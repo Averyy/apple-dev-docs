@@ -6,21 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/index.html
 
 # MLX Data
 
-**
-
-- [.rst](_sources/index.rst)
-- **
-
-.pdf
-
-**
-
-# MLX Data
-
- Table of contents 
-
-# MLX Data
-
 MLX Data is a framework agnostic data loading library brought to you by Apple
 machine learning research.
 

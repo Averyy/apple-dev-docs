@@ -1,7 +1,8 @@
 # generic
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A generic activity.
 
@@ -25,9 +26,10 @@ This is the default value if no type is set.
 
 ## See Also
 
-- [static let listenTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/listentogether.md)
+### Getting the Activity Types
+- [static let listenTogether: GroupActivityMetadata.ActivityType](./listentogether.md)
   A shared listening activity, such as listening to music together.
-- [static let watchTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/watchtogether.md)
+- [static let watchTogether: GroupActivityMetadata.ActivityType](./watchtogether.md)
   A shared watching activity, such as watching an episode of a television show together.
 
 

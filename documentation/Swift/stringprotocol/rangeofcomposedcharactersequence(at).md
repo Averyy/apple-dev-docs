@@ -1,7 +1,8 @@
 # rangeOfComposedCharacterSequence(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range in the `String` of the composed character sequence located at a given index.
 

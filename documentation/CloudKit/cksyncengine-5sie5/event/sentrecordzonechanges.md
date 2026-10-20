@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.SentRecordZoneChanges
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The sync engine finished sending a batch of record zone changes to the server.
 
@@ -11,7 +12,7 @@ The sync engine finished sending a batch of record zone changes to the server.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct SentRecordZoneChanges
 
 #### Overview
 
-If a record save succeeded, you should encode the system fields of this record to use the next time you save. See [`encodeSystemFields(with:)`](ckrecord/encodesystemfields(with:).md).
+If a record save succeeded, you should encode the system fields of this record to use the next time you save. See [`encodeSystemFields(with:)`](../../ckrecord/encodesystemfields%28with%29.md).
 
 If a record deletion succeeded, you should remove any local system fields for that record.
 
@@ -31,47 +32,48 @@ If the record change failed, try to resolve the issue causing the error and save
 ## Topics
 
 ### Accessing successful changes
-- [let deletedRecordIDs: [CKRecord.ID]](cksyncengine-5sie5/event/sentrecordzonechanges/deletedrecordids.md)
+- [let deletedRecordIDs: [CKRecord.ID]](./sentrecordzonechanges/deletedrecordids.md)
   The unique identifiers of the deleted records.
-- [let savedRecords: [CKRecord]](cksyncengine-5sie5/event/sentrecordzonechanges/savedrecords.md)
+- [let savedRecords: [CKRecord]](./sentrecordzonechanges/savedrecords.md)
   The modified records.
 ### Accessing failed changes
-- [let failedRecordDeletes: [CKRecord.ID : CKError]](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecorddeletes.md)
+- [let failedRecordDeletes: [CKRecord.ID : CKError]](./sentrecordzonechanges/failedrecorddeletes.md)
   The unique identifiers of the records CloudKit is unable to delete, and the reasons why.
-- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsaves.md)
+- [let failedRecordSaves: [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave]](./sentrecordzonechanges/failedrecordsaves.md)
   The records that CloudKit is unable to modify.
-- [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave](cksyncengine-5sie5/event/sentrecordzonechanges/failedrecordsave.md)
+- [CKSyncEngine.Event.SentRecordZoneChanges.FailedRecordSave](./sentrecordzonechanges/failedrecordsave.md)
   A type that describes an unsuccessful attempt to modify a single record.
 ### Debugging the event
-- [var description: String](cksyncengine-5sie5/event/sentrecordzonechanges/description.md)
+- [var description: String](./sentrecordzonechanges/description.md)
   A textual description of the event that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/sentrecordzonechanges/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./sentrecordzonechanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case willSendChanges(CKSyncEngine.Event.WillSendChanges)](cksyncengine-5sie5/event/willsendchanges(_:).md)
+### Pending local changes
+- [case willSendChanges(CKSyncEngine.Event.WillSendChanges)](./willsendchanges%28_%29.md)
   The sync engine is about to send changes to the server.
-- [CKSyncEngine.Event.WillSendChanges](cksyncengine-5sie5/event/willsendchanges.md)
+- [CKSyncEngine.Event.WillSendChanges](./willsendchanges.md)
   A type that provides information about an imminent send of local changes.
-- [case sentDatabaseChanges(CKSyncEngine.Event.SentDatabaseChanges)](cksyncengine-5sie5/event/sentdatabasechanges(_:).md)
+- [case sentDatabaseChanges(CKSyncEngine.Event.SentDatabaseChanges)](./sentdatabasechanges%28_%29.md)
   The sync engine sent a batch of database changes to the server.
-- [CKSyncEngine.Event.SentDatabaseChanges](cksyncengine-5sie5/event/sentdatabasechanges.md)
+- [CKSyncEngine.Event.SentDatabaseChanges](./sentdatabasechanges.md)
   A type that provides information about a sent batch of database changes.
-- [case sentRecordZoneChanges(CKSyncEngine.Event.SentRecordZoneChanges)](cksyncengine-5sie5/event/sentrecordzonechanges(_:).md)
+- [case sentRecordZoneChanges(CKSyncEngine.Event.SentRecordZoneChanges)](./sentrecordzonechanges%28_%29.md)
   The sync engine sent a batch of record zone changes to the server.
-- [case didSendChanges(CKSyncEngine.Event.DidSendChanges)](cksyncengine-5sie5/event/didsendchanges(_:).md)
+- [case didSendChanges(CKSyncEngine.Event.DidSendChanges)](./didsendchanges%28_%29.md)
   The sync engine finished sending changes to the server.
-- [CKSyncEngine.Event.DidSendChanges](cksyncengine-5sie5/event/didsendchanges.md)
+- [CKSyncEngine.Event.DidSendChanges](./didsendchanges.md)
   A type that provides information about a finished send operation.
 
 

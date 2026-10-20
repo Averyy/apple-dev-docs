@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 nonisolated
 (nonsending) func supportsDataAttachmentType(_ type: UTType) async throws -> Bool
 ```
+
+## Default Implementations
+
+### LanguageModel Implementations
+- [func supportsDataAttachmentType(UTType) async throws -> Bool](./supportsdataattachmenttype%28_%29-1sn0q.md)
 
 
 ---

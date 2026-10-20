@@ -1,14 +1,15 @@
 # kBluetoothLEFeatureLLPrivacy
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLEFeatureLLPrivacy = (1 << 6L)
 ```
 

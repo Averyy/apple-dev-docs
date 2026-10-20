@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -20,7 +21,8 @@ init<S>(_ sequence: S) where Feature == S.Feature, S : TemporalSequence
 
 ## See Also
 
-- [init<S>(S, count: Int?)](anytemporalsequence/init(_:count:).md)
+### Creating a sequence
+- [init<S>(S, count: Int?)](./init%28_,count%29.md)
 
 
 ---

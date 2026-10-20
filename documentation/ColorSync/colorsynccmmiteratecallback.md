@@ -1,7 +1,8 @@
 # ColorSyncCMMIterateCallback
 
 **Framework**: ColorSync  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback that the framework invokes for each installed CMM during iteration.
 
@@ -15,6 +16,10 @@ A callback that the framework invokes for each installed CMM during iteration.
 typealias ColorSyncCMMIterateCallback = (ColorSyncCMM?, UnsafeMutableRawPointer?) -> Bool
 ```
 
+```c
+typedef _Bool (*)(struct ColorSyncCMM *, void *) ColorSyncCMMIterateCallback;
+```
+
 #### Discussion
 
 Return `false` to stop the iteration.
@@ -26,13 +31,14 @@ Return `false` to stop the iteration.
 
 ## See Also
 
-- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+### Implementing CMM callbacks
+- [typealias CMMApplyTransformProc](./cmmapplytransformproc.md)
   A function a CMM provider implements to apply a color transform to image data.
-- [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)
+- [typealias CMMCreateTransformPropertyProc](./cmmcreatetransformpropertyproc.md)
   A function a CMM provider implements to create a transform property for a given key.
-- [typealias CMMInitializeLinkProfileProc](cmminitializelinkprofileproc.md)
+- [typealias CMMInitializeLinkProfileProc](./cmminitializelinkprofileproc.md)
   A function a CMM provider implements to initialize a device-link profile.
-- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+- [typealias CMMInitializeTransformProc](./cmminitializetransformproc.md)
   A function a CMM provider implements to initialize a color transform.
 
 

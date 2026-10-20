@@ -1,7 +1,8 @@
 # replacing(with:where:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new tensor replacing values from `other` with the corresponding element in `self` where the associated element in `mask` is `true`.
 
@@ -18,6 +19,12 @@ Returns a new tensor replacing values from `other` with the corresponding elemen
 
 ```swift
 func replacing(with replacement: MLTensor, where mask: MLTensor) -> MLTensor
+```
+
+**Other overloads**:
+
+```swift
+func replacing(with replacement: some MLTensorScalar, where mask: MLTensor) -> MLTensor
 ```
 
 #### Return Value
@@ -43,9 +50,10 @@ await z.shapedArray(of: Float.self) // is [1, 5, 3]
 
 ## See Also
 
-- [func replacing(atIndices: MLTensor, with: some MLTensorScalar, alongAxis: Int) -> MLTensor](mltensor/replacing(atindices:with:alongaxis:).md)
+### Replacing the tensor values
+- [func replacing(atIndices: MLTensor, with: some MLTensorScalar, alongAxis: Int) -> MLTensor](./replacing%28atindices,with,alongaxis%29.md)
   Replaces slices along the specified indices with the given replacement values.
-- [func replacing(with: MLTensor, atIndices: MLTensor, alongAxis: Int) -> MLTensor](mltensor/replacing(with:atindices:alongaxis:).md)
+- [func replacing(with: MLTensor, atIndices: MLTensor, alongAxis: Int) -> MLTensor](./replacing%28with,atindices,alongaxis%29.md)
   Replaces slices along the specified indices with the given replacement values.
 
 

@@ -1,7 +1,8 @@
 # MPSAlphaType.alphaIsOne
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Alpha is guaranteed to be 1.
 
@@ -19,15 +20,20 @@ Alpha is guaranteed to be 1.
 case alphaIsOne
 ```
 
+```c
+MPSAlphaTypeAlphaIsOne
+```
+
 #### Overview
 
 The alpha value is guaranteed to be `1` even if it is not encoded as `1` or even not encoded at all.
 
 ## See Also
 
-- [MPSAlphaType.nonPremultiplied](mpsalphatype/nonpremultiplied.md)
+### Constants
+- [MPSAlphaType.nonPremultiplied](./nonpremultiplied.md)
   The image is not premultiplied by alpha.
-- [MPSAlphaType.premultiplied](mpsalphatype/premultiplied.md)
+- [MPSAlphaType.premultiplied](./premultiplied.md)
   The image is premultiplied by alpha.
 
 

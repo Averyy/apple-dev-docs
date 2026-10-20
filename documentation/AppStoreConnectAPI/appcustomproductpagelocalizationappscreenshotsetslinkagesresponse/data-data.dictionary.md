@@ -1,7 +1,8 @@
 # AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app custom product page localization app screenshot sets linkages response.
 
@@ -10,14 +11,14 @@ The request body you use to update an app custom product page localization app s
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appScreenshotSets`
 
 
 ---

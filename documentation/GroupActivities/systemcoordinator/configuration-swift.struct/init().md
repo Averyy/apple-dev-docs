@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the type you use to specify your app’s preferences for shared contexts.
 

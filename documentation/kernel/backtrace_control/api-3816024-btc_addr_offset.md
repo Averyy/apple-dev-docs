@@ -1,14 +1,15 @@
 # btc_addr_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 int64_t btc_addr_offset;
 ```
 

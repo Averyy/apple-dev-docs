@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date interval this report covers.
 
@@ -20,7 +21,8 @@ let timeRange: DateInterval
 
 ## See Also
 
-- [let environment: DiagnosticReport.Environment](diagnosticreport/environment-swift.property.md)
+### Report details
+- [let environment: DiagnosticReport.Environment](./environment-swift.property.md)
   Environment context for the device and app.
 
 

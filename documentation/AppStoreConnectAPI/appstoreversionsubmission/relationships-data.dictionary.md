@@ -1,23 +1,26 @@
 # AppStoreVersionSubmission.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 1.7
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionSubmission.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionSubmission.Relationships.AppStoreVersion](appstoreversionsubmission/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object AppStoreVersionSubmission.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties

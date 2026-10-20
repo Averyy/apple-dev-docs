@@ -1,23 +1,25 @@
 # OSArrayApply
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool OSArrayApply(OSArrayPtr obj, OSArrayApplier applier);
 ```
 
 ## See Also
 
-- [OSArrayApplier](osarrayapplier.md)
+### Modifying the Array Contents
+- [OSArrayApplier](./osarrayapplier.md)
 
 
 ---

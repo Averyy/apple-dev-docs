@@ -1,23 +1,26 @@
 # AppPreviewCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryVideoCreateRequest`](../../appassetlibraryvideocreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPreviewCreateRequest.Data.Relationships.AppPreviewSet](apppreviewcreaterequest/data-data.dictionary/relationships-data.dictionary/apppreviewset-data.dictionary.md)
+- [object AppPreviewCreateRequest.Data.Relationships.AppPreviewSet](./relationships-data.dictionary/apppreviewset-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -26,7 +29,8 @@ object AppPreviewCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppPreviewCreateRequest.Data.Attributes](apppreviewcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppPreviewCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

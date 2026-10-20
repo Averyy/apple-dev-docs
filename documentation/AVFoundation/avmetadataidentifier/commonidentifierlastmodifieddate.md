@@ -1,7 +1,8 @@
 # commonIdentifierLastModifiedDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that represents the last modification date of the media.
 
@@ -20,37 +21,42 @@ An identifier that represents the last modification date of the media.
 static let commonIdentifierLastModifiedDate: AVMetadataIdentifier
 ```
 
+```c
+extern AVMetadataIdentifier const AVMetadataCommonIdentifierLastModifiedDate;
+```
+
 ## See Also
 
-- [static let commonIdentifierAccessibilityDescription: AVMetadataIdentifier](avmetadataidentifier/commonidentifieraccessibilitydescription.md)
+### Common metadata identifiers
+- [static let commonIdentifierAccessibilityDescription: AVMetadataIdentifier](./commonidentifieraccessibilitydescription.md)
   An identifier that represents the accessibility description for the media.
-- [static let commonIdentifierAlbumName: AVMetadataIdentifier](avmetadataidentifier/commonidentifieralbumname.md)
+- [static let commonIdentifierAlbumName: AVMetadataIdentifier](./commonidentifieralbumname.md)
   An identifier that represents the name of the album.
-- [static let commonIdentifierArtist: AVMetadataIdentifier](avmetadataidentifier/commonidentifierartist.md)
+- [static let commonIdentifierArtist: AVMetadataIdentifier](./commonidentifierartist.md)
   An identifier that represents the name of the artist.
-- [static let commonIdentifierArtwork: AVMetadataIdentifier](avmetadataidentifier/commonidentifierartwork.md)
+- [static let commonIdentifierArtwork: AVMetadataIdentifier](./commonidentifierartwork.md)
   An identifier that represents an image relating to the album.
-- [static let commonIdentifierAssetIdentifier: AVMetadataIdentifier](avmetadataidentifier/commonidentifierassetidentifier.md)
+- [static let commonIdentifierAssetIdentifier: AVMetadataIdentifier](./commonidentifierassetidentifier.md)
   An identifier that represents the asset ID for the media.
-- [static let commonIdentifierAuthor: AVMetadataIdentifier](avmetadataidentifier/commonidentifierauthor.md)
+- [static let commonIdentifierAuthor: AVMetadataIdentifier](./commonidentifierauthor.md)
   An identifier that represents the name of the author.
-- [static let commonIdentifierContributor: AVMetadataIdentifier](avmetadataidentifier/commonidentifiercontributor.md)
+- [static let commonIdentifierContributor: AVMetadataIdentifier](./commonidentifiercontributor.md)
   An identifier that represents the name of the contributor.
-- [static let commonIdentifierCopyrights: AVMetadataIdentifier](avmetadataidentifier/commonidentifiercopyrights.md)
+- [static let commonIdentifierCopyrights: AVMetadataIdentifier](./commonidentifiercopyrights.md)
   An identifier that represents the copyright statement.
-- [static let commonIdentifierCreationDate: AVMetadataIdentifier](avmetadataidentifier/commonidentifiercreationdate.md)
+- [static let commonIdentifierCreationDate: AVMetadataIdentifier](./commonidentifiercreationdate.md)
   An identifier that represents the date of the original recording.
-- [static let commonIdentifierCreator: AVMetadataIdentifier](avmetadataidentifier/commonidentifiercreator.md)
+- [static let commonIdentifierCreator: AVMetadataIdentifier](./commonidentifiercreator.md)
   An identifier that represents the name of the creator.
-- [static let commonIdentifierDescription: AVMetadataIdentifier](avmetadataidentifier/commonidentifierdescription.md)
+- [static let commonIdentifierDescription: AVMetadataIdentifier](./commonidentifierdescription.md)
   An identifier that represents the description of the media.
-- [static let commonIdentifierFormat: AVMetadataIdentifier](avmetadataidentifier/commonidentifierformat.md)
+- [static let commonIdentifierFormat: AVMetadataIdentifier](./commonidentifierformat.md)
   An identifier that represents the file format of the media content.
-- [static let commonIdentifierLanguage: AVMetadataIdentifier](avmetadataidentifier/commonidentifierlanguage.md)
+- [static let commonIdentifierLanguage: AVMetadataIdentifier](./commonidentifierlanguage.md)
   An identifier that represents the language of the text or lyrics spoken or sung in the audio.
-- [static let commonIdentifierLocation: AVMetadataIdentifier](avmetadataidentifier/commonidentifierlocation.md)
+- [static let commonIdentifierLocation: AVMetadataIdentifier](./commonidentifierlocation.md)
   An identifier that represents the location information for the media.
-- [static let commonIdentifierMake: AVMetadataIdentifier](avmetadataidentifier/commonidentifiermake.md)
+- [static let commonIdentifierMake: AVMetadataIdentifier](./commonidentifiermake.md)
   An identifier that represents the name of the camera maker.
 
 

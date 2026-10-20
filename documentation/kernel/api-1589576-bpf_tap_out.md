@@ -1,14 +1,15 @@
 # bpf_tap_out
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 void bpf_tap_out(ifnet_t interface, u_int32_t dlt, mbuf_t packet, void *header, size_t header_len);
 ```
 
@@ -26,9 +27,10 @@ Call this function when your interface trasmits a packet. This function will che
 
 ## See Also
 
-- [bpf_attach](1589700-bpf_attach.md)
-- [bpf_tap_in](1589470-bpf_tap_in.md)
-- [bpfattach](1589467-bpfattach.md)
+### bpf
+- [bpf_attach](./api-1589700-bpf_attach.md)
+- [bpf_tap_in](./api-1589470-bpf_tap_in.md)
+- [bpfattach](./api-1589467-bpfattach.md)
 
 
 ---

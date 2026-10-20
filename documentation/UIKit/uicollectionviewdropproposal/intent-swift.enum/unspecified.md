@@ -1,7 +1,8 @@
 # UICollectionViewDropProposal.Intent.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No drop proposal was specified.
 
@@ -15,6 +16,10 @@ No drop proposal was specified.
 
 ```swift
 case unspecified
+```
+
+```c
+UICollectionViewDropIntentUnspecified
 ```
 
 

@@ -1,12 +1,13 @@
 # changeColor(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color of the selected content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sets the color of the selected content.
 func changeColor(_ sender: Any?)
 ```
 
+```objc
+- (void) changeColor:(id) sender;
+```
+
 #### Discussion
 
-This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeColor(_:)`](https://developer.apple.com/documentation/appkit/nstextview/changecolor(_:)) method in [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview).
+This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeColor(_:)`](../../AppKit/nstextview/changecolor%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 
 ## Parameters
 
@@ -24,11 +29,12 @@ This method is invoked by the `NSColorPanel` sender and behaves similar to the [
 
 ## See Also
 
-- [func changeFont(Any?)](webview-swift.class/changefont(_:).md)
+### Changing the Font, Color and Other Attributes When Editing
+- [func changeFont(Any?)](./changefont%28_%29.md)
   An action method that changes the font of the selection, or all content if there is no selection.
-- [func changeAttributes(Any?)](webview-swift.class/changeattributes(_:).md)
+- [func changeAttributes(Any?)](./changeattributes%28_%29.md)
   An action method that changes the attributes of the current selection.
-- [func changeDocumentBackgroundColor(Any?)](webview-swift.class/changedocumentbackgroundcolor(_:).md)
+- [func changeDocumentBackgroundColor(Any?)](./changedocumentbackgroundcolor%28_%29.md)
   Sets the background color of the selected content.
 
 

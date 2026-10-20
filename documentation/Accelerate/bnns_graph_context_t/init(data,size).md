@@ -1,7 +1,8 @@
 # init(data:size:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a graph context structure from the specified opaque graph context object.
 
@@ -27,7 +28,8 @@ init(data: UnsafeMutableRawPointer?, size: Int)
 
 ## See Also
 
-- [init()](bnns_graph_context_t/init.md)
+### Initializing a context
+- [init()](./init%28%29.md)
   Creates an empty graph context structure.
 
 

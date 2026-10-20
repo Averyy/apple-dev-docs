@@ -1,7 +1,8 @@
 # CKSyncEnginePendingDatabaseChangeType
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the type of a pending database change.
 
@@ -20,23 +21,27 @@ Describes the type of a pending database change.
 enum CKSyncEnginePendingDatabaseChangeType
 ```
 
+```c
+enum CKSyncEnginePendingDatabaseChangeType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CKSyncEnginePendingDatabaseChangeType.deleteZone](cksyncenginependingdatabasechangetype/deletezone.md)
-- [CKSyncEnginePendingDatabaseChangeType.saveZone](cksyncenginependingdatabasechangetype/savezone.md)
+- [CKSyncEnginePendingDatabaseChangeType.deleteZone](./cksyncenginependingdatabasechangetype/deletezone.md)
+- [CKSyncEnginePendingDatabaseChangeType.saveZone](./cksyncenginependingdatabasechangetype/savezone.md)
 ### Initializers
-- [init?(rawValue: Int)](cksyncenginependingdatabasechangetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cksyncenginependingdatabasechangetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

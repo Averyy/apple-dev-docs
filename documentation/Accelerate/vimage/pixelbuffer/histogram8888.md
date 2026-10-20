@@ -1,7 +1,8 @@
 # vImage.PixelBuffer.Histogram8888
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The histogram for four channel 8-bit pixel buffers.
 
@@ -11,7 +12,7 @@ The histogram for four channel 8-bit pixel buffers.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,16 @@ The histogram for four channel 8-bit pixel buffers.
 typealias Histogram8888 = ([vImagePixelCount], [vImagePixelCount], [vImagePixelCount], [vImagePixelCount])
 ```
 
+Available when `Format` conforms to `PixelFormat` and `Format.ComponentType` is `UInt8`.
+
 ## See Also
 
-- [vImage.PixelBuffer.Histogram888](vimage/pixelbuffer/histogram888.md)
+### Type aliases
+- [vImage.PixelBuffer.Histogram888](./histogram888.md)
   The histogram for three channel 8-bit pixel buffers.
-- [vImage.PixelBuffer.HistogramFFF](vimage/pixelbuffer/histogramfff.md)
+- [vImage.PixelBuffer.HistogramFFF](./histogramfff.md)
   The histogram for three channel 32-bit pixel buffers.
-- [vImage.PixelBuffer.HistogramFFFF](vimage/pixelbuffer/histogramffff.md)
+- [vImage.PixelBuffer.HistogramFFFF](./histogramffff.md)
   The histogram for four channel 32-bit pixel buffers.
 
 

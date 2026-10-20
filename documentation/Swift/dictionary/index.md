@@ -1,7 +1,8 @@
 # Dictionary.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The position of a key-value pair in a dictionary.
 
@@ -21,42 +22,49 @@ The position of a key-value pair in a dictionary.
 struct Index
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Overview
 
 Dictionary has two subscripting interfaces:
 
-1. Subscripting with a key, yielding an optional value: ```swift
-v = d[k]!
-```
-2. Subscripting with an index, yielding a key-value pair: ```swift
-(k, v) = d[i]
-```
+1. Subscripting with a key, yielding an optional value:
+
+   ```swift
+   v = d[k]!
+   ```
+2. Subscripting with an index, yielding a key-value pair:
+
+   ```swift
+   (k, v) = d[i]
+   ```
 
 ## Topics
 
 ### Default Implementations
-- [Comparable Implementations](dictionary/index/comparable-implementations.md)
-- [Equatable Implementations](dictionary/index/equatable-implementations.md)
-- [Hashable Implementations](dictionary/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [Dictionary.Keys](dictionary/keys-swift.struct.md)
+### Supporting Types
+- [Dictionary.Keys](./keys-swift.struct.md)
   A view of a dictionary’s keys.
-- [Dictionary.Values](dictionary/values-swift.struct.md)
+- [Dictionary.Values](./values-swift.struct.md)
   A view of a dictionary’s values.
-- [Dictionary.Indices](dictionary/indices.md)
+- [Dictionary.Indices](./indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Dictionary.Iterator](dictionary/iterator.md)
+- [Dictionary.Iterator](./iterator.md)
   An iterator over the members of a `Dictionary<Key, Value>`.
 
 

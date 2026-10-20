@@ -1,6 +1,7 @@
 # Placing a prim in the real world
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
 
@@ -10,9 +11,9 @@ When the runtime detects real-world landmarks such as surfaces, images, and face
 
 Use this schema to attach prims to anchors that the runtime can recognize and track in the physical environment. When you assign the prim an anchor type, the runtime places the prim on the first anchor of that type that it sees in the AR experience.
 
-> **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](https://developer.apple.com/documentation/realitykit/anchorentity) with the [`AnchoringComponent.Target`](https://developer.apple.com/documentation/realitykit/anchoringcomponent/target-swift.enum) set to the anchor type specified by the prim, such as a plane, image, or face.
+> **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](../RealityKit/anchorentity.md) with the [`AnchoringComponent.Target`](../RealityKit/anchoringcomponent/target-swift.enum.md) set to the anchor type specified by the prim, such as a plane, image, or face.
 
-##### Place a Prim on a Surface Image or Face
+##### Place a prim on a surface, image, or face
 
 The following cube requests that the runtime place it on the first real-world horizontal surface detected in the physical environment.
 
@@ -62,15 +63,16 @@ def Cube "FaceAnchoredCube" (
 
 ## See Also
 
-- [OpenUSD schemas for AR](usd-schemas-for-ar.md)
+### Essentials
+- [OpenUSD schemas for AR](./usd-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USD schemas.
-- [Schema definitions for third-party DCCs](schema-definitions-for-third-party-dccs.md)
+- [Schema definitions for third-party DCCs](./schema-definitions-for-third-party-dccs.md)
   Update your local USD library to add interactive and augmented reality features.
-- [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](./creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [Validating feature support for USD files](validating-usd-files.md)
+- [Validating feature support for USD files](./validating-usd-files.md)
   Ensure that the renderer that displays your USD assets supports its features.
-- [Previewing a Model with AR Quick Look](../arkit/previewing-a-model-with-ar-quick-look.md)
+- [Previewing a Model with AR Quick Look](../ARKit/previewing-a-model-with-ar-quick-look.md)
   Display a model or scene that the user can move, scale, and share with others.
 
 

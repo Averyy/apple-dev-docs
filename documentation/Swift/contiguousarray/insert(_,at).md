@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a new element at the specified position.
 
@@ -33,7 +34,7 @@ print(numbers)
 // Prints "[1, 2, 3, 100, 4, 5, 200]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
+> **Complexity**: O(*n*), where *n* is the length of the array. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 

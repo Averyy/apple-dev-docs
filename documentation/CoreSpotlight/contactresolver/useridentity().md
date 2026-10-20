@@ -2,6 +2,7 @@
 
 **Framework**: Core Spotlight  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the information for the current contact.

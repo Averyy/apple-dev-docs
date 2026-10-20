@@ -1,13 +1,14 @@
 # AddPassToWalletButtonFilter
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,22 +19,23 @@ struct AddPassToWalletButtonFilter
 ## Topics
 
 ### Type Methods
-- [static func paymentNetwork(PKPaymentNetwork) -> AddPassToWalletButtonFilter](addpasstowalletbuttonfilter/paymentnetwork(_:).md)
-- [static func primaryAccountIdentifier(String) -> AddPassToWalletButtonFilter](addpasstowalletbuttonfilter/primaryaccountidentifier(_:).md)
-- [static func productIdentifier(String) -> AddPassToWalletButtonFilter](addpasstowalletbuttonfilter/productidentifier(_:).md)
+- [static func paymentNetwork(PKPaymentNetwork) -> AddPassToWalletButtonFilter](./addpasstowalletbuttonfilter/paymentnetwork%28_%29.md)
+- [static func primaryAccountIdentifier(String) -> AddPassToWalletButtonFilter](./addpasstowalletbuttonfilter/primaryaccountidentifier%28_%29.md)
+- [static func productIdentifier(String) -> AddPassToWalletButtonFilter](./addpasstowalletbuttonfilter/productidentifier%28_%29.md)
 
 ## See Also
 
-- [class PKObject](pkobject.md)
+### Common data types
+- [class PKObject](./pkobject.md)
   An opaque type that acts as the superclass for the pass object.
-- [class PKAddPassButton](pkaddpassbutton.md)
+- [class PKAddPassButton](./pkaddpassbutton.md)
   Provides a button that enables users to add passes to Wallet.
-- [class PKLabeledValue](pklabeledvalue.md)
+- [class PKLabeledValue](./pklabeledvalue.md)
   An object that can represent a detail about a payment card or other item.
-- [struct AddPassToWalletButton](addpasstowalletbutton.md)
+- [struct AddPassToWalletButton](./addpasstowalletbutton.md)
   A type that provides a button that enables people to add a new or existing pass to Apple Wallet.
-- [struct AddPassToWalletButtonResponse](addpasstowalletbuttonresponse.md)
-- [struct AddPassToWalletButtonStyle](addpasstowalletbuttonstyle.md)
+- [struct AddPassToWalletButtonResponse](./addpasstowalletbuttonresponse.md)
+- [struct AddPassToWalletButtonStyle](./addpasstowalletbuttonstyle.md)
 
 
 ---

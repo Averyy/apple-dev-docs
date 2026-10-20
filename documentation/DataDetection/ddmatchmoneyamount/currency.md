@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains an ISO currency code, which the data detection system identifies from the matched string and user preferences.
 
@@ -20,9 +21,14 @@ A string that contains an ISO currency code, which the data detection system ide
 var currency: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * currency;
+```
+
 ## See Also
 
-- [var amount: Double](ddmatchmoneyamount/amount.md)
+### Getting money information
+- [var amount: Double](./amount.md)
   A number that represents an amount of money.
 
 

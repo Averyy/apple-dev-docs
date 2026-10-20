@@ -1,7 +1,8 @@
 # spatialMixerDefinitionForDistance
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that combines spatial audio layers.
 
@@ -19,13 +20,18 @@ An object that combines spatial audio layers.
 var spatialMixerDefinitionForDistance: PHASESpatialMixerDefinition? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PHASESpatialMixerDefinition * spatialMixerDefinitionForDistance;
+```
+
 #### Discussion
 
-The framework sets this property to the [`init(spatialMixerDefinition:)`](phaseblendnodedefinition/init(spatialmixerdefinition:).md) argument.
+The framework sets this property to the [`init(spatialMixerDefinition:)`](./init%28spatialmixerdefinition%29.md) argument.
 
 ## See Also
 
-- [var blendParameterDefinition: PHASENumberMetaParameterDefinition?](phaseblendnodedefinition/blendparameterdefinition.md)
+### Accessing Blend Properties
+- [var blendParameterDefinition: PHASENumberMetaParameterDefinition?](./blendparameterdefinition.md)
   The meta parameter definition that caps the blend range.
 
 

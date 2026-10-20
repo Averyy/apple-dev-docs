@@ -1,17 +1,22 @@
 # isEmpty
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A flag indicating whether the element was expressed in closed form.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var isEmpty: DarwinBoolean
+```
+
+```c
+Boolean isEmpty;
 ```
 
 

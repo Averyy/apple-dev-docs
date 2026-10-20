@@ -1,17 +1,18 @@
 # MAXIMUM_WRITE_SAME_LENGTH
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 UInt64 MAXIMUM_WRITE_SAME_LENGTH;
 ```
 

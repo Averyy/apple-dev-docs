@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var typeReplyPortAttr: DescType](../coreservices/typereplyportattr.md)
+- [var typeReplyPortAttr: DescType](../../coreservices/typereplyportattr.md)
 
 
 ---

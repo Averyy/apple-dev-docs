@@ -1,9 +1,10 @@
 # TipGroup.Priority.ordered
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Shows an eligible tip when all of the previous tips have been [`Tips.Status.invalidated(_:)`](tips/status/invalidated(_:).md).
+Shows an eligible tip when all of the previous tips have been [`invalidated`](../../tips/status/invalidated%28_%29.md).
 
 **Availability**:
 - iOS 18.0+

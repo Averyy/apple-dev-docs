@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Selects a tapped word with autocorrect suggestions.
@@ -18,9 +19,14 @@ Selects a tapped word with autocorrect suggestions.
 func selectWordForReplacement()
 ```
 
+```objc
+- (void) selectWordForReplacement;
+```
+
 ## See Also
 
-- [func transposeCharactersAroundSelection()](betextinput/transposecharactersaroundselection.md)
+### Adjusting text
+- [func transposeCharactersAroundSelection()](./transposecharactersaroundselection%28%29.md)
   Transposes the characters on either side of the caret.
 
 

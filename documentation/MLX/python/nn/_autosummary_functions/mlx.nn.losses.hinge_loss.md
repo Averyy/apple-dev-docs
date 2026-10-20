@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.hinge_loss
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary_functions/mlx.nn.losses.hinge_loss.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.losses.hinge_loss
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.losses.hinge_loss
-
 **class hinge_loss(*inputs: array*, *targets: array*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
 : Computes the hinge loss between inputs and targets.
 
@@ -40,8 +13,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 Parameters:
 
-**inputs** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The predicted values.
-**targets** ([array](../../_autosummary/mlx.core.array.html#mlx.core.array)) – The target values. They should be -1 or 1.
+**inputs** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The predicted values.
+**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The target values. They should be -1 or 1.
 **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
@@ -49,6 +22,4 @@ Returns:
 The computed hinge loss.
 
 Return type:
-[array](../../_autosummary/mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](../../_autosummary/mlx.core.array.md#mlx.core.array)

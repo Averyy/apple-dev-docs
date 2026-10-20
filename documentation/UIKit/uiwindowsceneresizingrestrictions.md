@@ -1,7 +1,8 @@
 # UIWindowSceneResizingRestrictions
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - visionOS 1.0+
@@ -12,47 +13,52 @@
 enum UIWindowSceneResizingRestrictions
 ```
 
+```c
+enum UIWindowSceneResizingRestrictions : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIWindowSceneResizingRestrictions.freeform](uiwindowsceneresizingrestrictions/freeform.md)
+- [UIWindowSceneResizingRestrictions.freeform](./uiwindowsceneresizingrestrictions/freeform.md)
   User resizes are only restricted by the system and other restrictions put in place
-- [UIWindowSceneResizingRestrictions.none](uiwindowsceneresizingrestrictions/none.md)
+- [UIWindowSceneResizingRestrictions.none](./uiwindowsceneresizingrestrictions/none.md)
   The user cannot resize the scene
-- [UIWindowSceneResizingRestrictions.uniform](uiwindowsceneresizingrestrictions/uniform.md)
+- [UIWindowSceneResizingRestrictions.uniform](./uiwindowsceneresizingrestrictions/uniform.md)
   User resizes are restricted to the current aspect ratio
-- [UIWindowSceneResizingRestrictions.unspecified](uiwindowsceneresizingrestrictions/unspecified.md)
+- [UIWindowSceneResizingRestrictions.unspecified](./uiwindowsceneresizingrestrictions/unspecified.md)
   App has no preference on user resize
 ### Initializers
-- [init?(rawValue: Int)](uiwindowsceneresizingrestrictions/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiwindowsceneresizingrestrictions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIWindowScene.ActivationAction](uiwindowscene/activationaction.md)
+### Supporting types
+- [UIWindowScene.ActivationAction](./uiwindowscene/activationaction.md)
   A menu element that requests a window scene.
-- [UIWindowScene.ActivationConfiguration](uiwindowscene/activationconfiguration.md)
+- [UIWindowScene.ActivationConfiguration](./uiwindowscene/activationconfiguration.md)
   An object that provides configuration options for a window scene request.
-- [UIWindowScene.ActivationInteraction](uiwindowscene/activationinteraction.md)
+- [UIWindowScene.ActivationInteraction](./uiwindowscene/activationinteraction.md)
   An interaction that facilitates activating a window scene when a user pinches out on the interaction’s view.
-- [UIWindowScene.ActivationRequestOptions](uiwindowscene/activationrequestoptions.md)
+- [UIWindowScene.ActivationRequestOptions](./uiwindowscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating a new window scene.
-- [class UIWindowSceneDestructionRequestOptions](uiwindowscenedestructionrequestoptions.md)
+- [class UIWindowSceneDestructionRequestOptions](./uiwindowscenedestructionrequestoptions.md)
   An object that contains information to use when removing a window scene from your app.
-- [UIWindowScene.DismissalAnimation](uiwindowscene/dismissalanimation.md)
+- [UIWindowScene.DismissalAnimation](./uiwindowscene/dismissalanimation.md)
   Constants that indicate the types of animations available for dismissing a scene’s windows.
-- [class UIWindowSceneDragInteraction](uiwindowscenedraginteraction.md)
+- [class UIWindowSceneDragInteraction](./uiwindowscenedraginteraction.md)
   An interaction you add to a view that enables pan gestures to change the containing window scene’s position.
-- [UIWindowScene.ResizingRestrictions](uiwindowscene/resizingrestrictions.md)
+- [UIWindowScene.ResizingRestrictions](./uiwindowscene/resizingrestrictions.md)
 
 
 ---

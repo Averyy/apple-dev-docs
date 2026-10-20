@@ -1,7 +1,8 @@
 # MTLDataType.r16Snorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary pixel with one component that’s a 16-bit, normalized, signed integer value.
 
@@ -19,17 +20,22 @@ An ordinary pixel with one component that’s a 16-bit, normalized, signed integ
 case r16Snorm
 ```
 
+```c
+MTLDataTypeR16Snorm
+```
+
 #### Discussion
 
 The single color component is for red.
 
 ## See Also
 
-- [MTLDataType.rg8Snorm](mtldatatype/rg8snorm.md)
+### 16-bit color integer types
+- [MTLDataType.rg8Snorm](./rg8snorm.md)
   An ordinary pixel with two components, each of which is an 8-bit, normalized, signed integer value.
-- [MTLDataType.rg8Unorm](mtldatatype/rg8unorm.md)
+- [MTLDataType.rg8Unorm](./rg8unorm.md)
   An ordinary pixel with two components, each of which is an 8-bit, normalized, unsigned integer value.
-- [MTLDataType.r16Unorm](mtldatatype/r16unorm.md)
+- [MTLDataType.r16Unorm](./r16unorm.md)
   An ordinary pixel with one component that’s a 16-bit, normalized, unsigned integer value.
 
 

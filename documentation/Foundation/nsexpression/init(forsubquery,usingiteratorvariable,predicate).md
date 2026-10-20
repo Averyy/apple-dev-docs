@@ -1,7 +1,8 @@
 # init(forSubquery:usingIteratorVariable:predicate:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an expression that filters a collection by storing elements in the collection in a specified variable and keeping the elements that the qualifier returns as true.
 
@@ -18,6 +19,10 @@ Creates an expression that filters a collection by storing elements in the colle
 
 ```swift
 init(forSubquery expression: NSExpression, usingIteratorVariable variable: String, predicate: NSPredicate)
+```
+
+```objc
++ (NSExpression *) expressionForSubquery:(NSExpression *) expression usingIteratorVariable:(NSString *) variable predicate:(NSPredicate *) predicate;
 ```
 
 #### Return Value

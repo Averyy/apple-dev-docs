@@ -1,17 +1,20 @@
 # NWTLSParameters
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 TLS properties for creating a connection.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`sec_protocol_options_t`](../Security/sec_protocol_options_t.md) type from the [Security](../Security/Security.md) framework instead.
 
 ## Declaration
 
@@ -19,35 +22,40 @@ TLS properties for creating a connection.
 class NWTLSParameters
 ```
 
+```objc
+@interface NWTLSParameters : NSObject
+```
+
 ## Topics
 
 ### Accessing TLS parameters
-- [var tlsSessionID: Data?](nwtlsparameters/tlssessionid.md)
+- [var tlsSessionID: Data?](./nwtlsparameters/tlssessionid.md)
   The Session ID to use for the associated TCP connection.
-- [var sslCipherSuites: Set<NSNumber>?](nwtlsparameters/sslciphersuites.md)
+- [var sslCipherSuites: Set<NSNumber>?](./nwtlsparameters/sslciphersuites.md)
   The set of allowed cipher suites when negotiating TLS.
-- [var minimumSSLProtocolVersion: Int](nwtlsparameters/minimumsslprotocolversion.md)
+- [var minimumSSLProtocolVersion: Int](./nwtlsparameters/minimumsslprotocolversion.md)
   The minimum allowed `SSLProtocol` value to use when negotiating TLS.
-- [var maximumSSLProtocolVersion: Int](nwtlsparameters/maximumsslprotocolversion.md)
+- [var maximumSSLProtocolVersion: Int](./nwtlsparameters/maximumsslprotocolversion.md)
   The maximum allowed `SSLProtocol` value to use when negotiating TLS.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NWTCPConnection](nwtcpconnection.md)
+### TCP connections
+- [class NWTCPConnection](./nwtcpconnection.md)
   An object to manage a TCP connection, with or without TLS.
-- [protocol NWTCPConnectionAuthenticationDelegate](nwtcpconnectionauthenticationdelegate.md)
+- [protocol NWTCPConnectionAuthenticationDelegate](./nwtcpconnectionauthenticationdelegate.md)
   A delegate protocol to customize the TLS authentication done by a connection.
 
 

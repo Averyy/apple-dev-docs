@@ -1,7 +1,8 @@
 # isVisible
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the access point is visible.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the access point is visible.
 var isVisible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-On Apple TV, you can set this property to [`true`](https://developer.apple.com/documentation/swift/true) to move the focus to the access point. This is an observable property.
+On Apple TV, you can set this property to [`true`](../../Swift/true.md) to move the focus to the access point. This is an observable property.
 
 ## See Also
 
-- [var isActive: Bool](gkaccesspoint/isactive.md)
+### Displaying the access point
+- [var isActive: Bool](./isactive.md)
   A Boolean value that determines whether to display the access point.
-- [var isPresentingGameCenter: Bool](gkaccesspoint/ispresentinggamecenter.md)
+- [var isPresentingGameCenter: Bool](./ispresentinggamecenter.md)
   A Boolean value that indicates whether the game is presenting the Game Center dashboard.
-- [var showHighlights: Bool](gkaccesspoint/showhighlights.md)
+- [var showHighlights: Bool](./showhighlights.md)
   A Boolean value that indicates whether to display highlights for achievements and current ranks for leaderboards.
 
 

@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/updatable-neural-net
 
 # Neural Network Classifier
 
-**
-
-- [.md](../_sources/source/updatable-neural-network-classifier-on-mnist-dataset.md)
-- **
-
-.pdf
-
-**
-
-# Neural Network Classifier
-
- Table of contents 
-
-## Contents
-
-# Neural Network Classifier
-
 A neural network is a collection of layers, each containing weights that get used alongside its other inputs to produce an output. To be able to update weights of a layer, we need to mark them as “updatable”.
 
 Loss function tells us how much the output of the neural network was off for a given input. Output of loss is feed to an optimizer that uses that loss along with our output to adjust the weights in our layers so that our neural network can provide outputs more in-line with what we’d expect.
@@ -101,66 +84,87 @@ convert_keras_to_mlmodel(keras_model_path , coreml_model_path)
 ## Load the Spec and Apply its Settings
 
 1. Inspect the last 3 layers of the model:
-# let's inspect the last few layers of this model
-import coremltools
-spec = coremltools.utils.load_spec(coreml_model_path)
-builder = coremltools.models.neural_network.NeuralNetworkBuilder(spec=spec)
-builder.inspect_layers(last=3)
 
-[Id: 9], Name: dense_2__activation__ (Type: softmax)
-		  Updatable: False
-		  Input blobs: [u'dense_2_output']
-		  Output blobs: [u'digitProbabilities']
-[Id: 8], Name: dense_2 (Type: innerProduct)
-		  Updatable: False
-		  Input blobs: [u'dense_1__activation___output']
-		  Output blobs: [u'dense_2_output']
-[Id: 7], Name: dense_1__activation__ (Type: activation)
-		  Updatable: False
-		  Input blobs: [u'dense_1_output']
-		  Output blobs: [u'dense_1__activation___output']
+   ```
+   # let's inspect the last few layers of this model
+   import coremltools
+   spec = coremltools.utils.load_spec(coreml_model_path)
+   builder = coremltools.models.neural_network.NeuralNetworkBuilder(spec=spec)
+   builder.inspect_layers(last=3)
+   ```
+
+   ```
+   [Id: 9], Name: dense_2__activation__ (Type: softmax)
+   		  Updatable: False
+   		  Input blobs: [u'dense_2_output']
+   		  Output blobs: [u'digitProbabilities']
+   [Id: 8], Name: dense_2 (Type: innerProduct)
+   		  Updatable: False
+   		  Input blobs: [u'dense_1__activation___output']
+   		  Output blobs: [u'dense_2_output']
+   [Id: 7], Name: dense_1__activation__ (Type: activation)
+   		  Updatable: False
+   		  Input blobs: [u'dense_1_output']
+   		  Output blobs: [u'dense_1__activation___output']
+   ```
 2. Inspect the input of the model. This information is needed later for the `make_updatable()` method:
-# let's inspect the input of the model as we need this information later on the make_updatable method
-builder.inspect_input_features()
 
-neuralnetwork_spec = builder.spec
+   ```
+   # let's inspect the input of the model as we need this information later on the make_updatable method
+   builder.inspect_input_features()
 
-[Id: 0] Name: image
-		  Type: multiArrayType {
-  shape: 1
-  shape: 28
-  shape: 28
-  dataType: DOUBLE
-}
+   neuralnetwork_spec = builder.spec
+   ```
+
+   ```
+   [Id: 0] Name: image
+   		  Type: multiArrayType {
+     shape: 1
+     shape: 28
+     shape: 28
+     dataType: DOUBLE
+   }
+   ```
 3. Change the input so the model can accept 28 x 28 grayscale images and inspect the input to confirm the changes:
-# change the input so the model can accept 28x28 grayscale images
-neuralnetwork_spec.description.input[0].type.imageType.width = 28
-neuralnetwork_spec.description.input[0].type.imageType.height = 28
 
-from coremltools.proto import FeatureTypes_pb2 as _FeatureTypes_pb2
-grayscale = _FeatureTypes_pb2.ImageFeatureType.ColorSpace.Value('GRAYSCALE')
-neuralnetwork_spec.description.input[0].type.imageType.colorSpace = grayscale
+   ```
+   # change the input so the model can accept 28x28 grayscale images
+   neuralnetwork_spec.description.input[0].type.imageType.width = 28
+   neuralnetwork_spec.description.input[0].type.imageType.height = 28
 
-# let's inspect the input again to confirm the change in input type
-builder.inspect_input_features()
+   from coremltools.proto import FeatureTypes_pb2 as _FeatureTypes_pb2
+   grayscale = _FeatureTypes_pb2.ImageFeatureType.ColorSpace.Value('GRAYSCALE')
+   neuralnetwork_spec.description.input[0].type.imageType.colorSpace = grayscale
 
-[Id: 0] Name: image
-		  Type: imageType {
-  width: 28
-  height: 28
-  colorSpace: GRAYSCALE
-}
+   # let's inspect the input again to confirm the change in input type
+   builder.inspect_input_features()
+   ```
+
+   ```
+   [Id: 0] Name: image
+   		  Type: imageType {
+     width: 28
+     height: 28
+     colorSpace: GRAYSCALE
+   }
+   ```
 4. Set the input and output descriptions:
-# Set input and output description
-neuralnetwork_spec.description.input[0].shortDescription = 'Input image of the handwriten digit to classify'
-neuralnetwork_spec.description.output[0].shortDescription = 'Probabilities / score for each possible digit'
-neuralnetwork_spec.description.output[1].shortDescription = 'Predicted digit'
+
+   ```
+   # Set input and output description
+   neuralnetwork_spec.description.input[0].shortDescription = 'Input image of the handwriten digit to classify'
+   neuralnetwork_spec.description.output[0].shortDescription = 'Probabilities / score for each possible digit'
+   neuralnetwork_spec.description.output[1].shortDescription = 'Predicted digit'
+   ```
 5. Provide the metadata:
-# Provide metadata
-neuralnetwork_spec.description.metadata.author = 'Core ML Tools'
-neuralnetwork_spec.description.metadata.license = 'MIT'
-neuralnetwork_spec.description.metadata.shortDescription = (
-		'An updatable hand-written digit classifier setup to train or be fine-tuned on MNIST like data.')
+
+   ```
+   # Provide metadata
+   neuralnetwork_spec.description.metadata.author = 'Core ML Tools'
+   neuralnetwork_spec.description.metadata.license = 'MIT'
+   neuralnetwork_spec.description.metadata.shortDescription = (
+   		'An updatable hand-written digit classifier setup to train or be fine-tuned on MNIST like data.')
+   ```
 
 ## Definemake_updatable
 
@@ -208,33 +212,46 @@ make_updatable(builder, coreml_model_path, coreml_updatable_model_path)
 ## Make the Model Updatable
 
 1. Add the input `digitProbabilities_true` as the target for the categorical cross-entropy loss layer:
-# let's inspect the loss layer of the Core ML model
-import coremltools
-spec = coremltools.utils.load_spec(coreml_updatable_model_path)
-builder = coremltools.models.neural_network.NeuralNetworkBuilder(spec=spec)
 
-builder.inspect_loss_layers()
+   ```
+   # let's inspect the loss layer of the Core ML model
+   import coremltools
+   spec = coremltools.utils.load_spec(coreml_updatable_model_path)
+   builder = coremltools.models.neural_network.NeuralNetworkBuilder(spec=spec)
 
-[Id: 0], Name: lossLayer (Type: categoricalCrossEntropyLossLayer)
-		  Loss Input: digitProbabilities
-		  Loss Target: digitProbabilities_true
+   builder.inspect_loss_layers()
+   ```
+
+   ```
+   [Id: 0], Name: lossLayer (Type: categoricalCrossEntropyLossLayer)
+   		  Loss Input: digitProbabilities
+   		  Loss Target: digitProbabilities_true
+   ```
 2. Inspect the optimizer of the Core ML model:
-# let's inspect the optimizer of the Core ML model
-builder.inspect_optimizer()
 
-Optimizer Type: sgdOptimizer
-lr: 0.01, min: 0.0, max: 1.0
-batch: 32, allowed_set: [32L]
-momentum: 0.0, min: 0.0, max: 1.0
+   ```
+   # let's inspect the optimizer of the Core ML model
+   builder.inspect_optimizer()
+   ```
+
+   ```
+   Optimizer Type: sgdOptimizer
+   lr: 0.01, min: 0.0, max: 1.0
+   batch: 32, allowed_set: [32L]
+   momentum: 0.0, min: 0.0, max: 1.0
+   ```
 3. Inspect the layers to see which are updatable:
-# let's see which layers are updatable
-builder.inspect_updatable_layers()
 
-Name: dense_2 (Type: innerProduct)
-		  Input blobs: [u'dense_1__activation___output']
-		  Output blobs: [u'dense_2_output']
-Name: dense_1 (Type: innerProduct)
-		  Input blobs: [u'flatten_1_output']
-		  Output blobs: [u'dense_1_output']
+   ```
+   # let's see which layers are updatable
+   builder.inspect_updatable_layers()
+   ```
 
-** Contents
+   ```
+   Name: dense_2 (Type: innerProduct)
+   		  Input blobs: [u'dense_1__activation___output']
+   		  Output blobs: [u'dense_2_output']
+   Name: dense_1 (Type: innerProduct)
+   		  Input blobs: [u'flatten_1_output']
+   		  Output blobs: [u'dense_1_output']
+   ```

@@ -1,7 +1,8 @@
 # evaluatedSSIDs
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of pre-evaluated Wi-Fi SSID strings.
 
@@ -19,7 +20,7 @@ final var evaluatedSSIDs: [String] { get set }
 
 #### Discussion
 
-The system doesn’t call [`NEHotspotEvaluationProvider`](nehotspotevaluationprovider.md) to evaluate any Wi-Fi network whose SSID is found in this array.
+The system doesn’t call [`NEHotspotEvaluationProvider`](../nehotspotevaluationprovider.md) to evaluate any Wi-Fi network whose SSID is found in this array.
 
 > **Note**: You can specify a maximum of two SSIDs for this property.
 

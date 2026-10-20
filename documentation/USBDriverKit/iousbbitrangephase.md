@@ -1,22 +1,24 @@
 # IOUSBBitRangePhase
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define IOUSBBitRangePhase(start, end)
 ```
 
 ## See Also
 
-- [IOUSBBit](iousbbit.md)
-- [IOUSBBitRange](iousbbitrange.md)
-- [IOUSBBitRange64](iousbbitrange64.md)
+### Bit Manipulations
+- [IOUSBBit](./iousbbit.md)
+- [IOUSBBitRange](./iousbbitrange.md)
+- [IOUSBBitRange64](./iousbbitrange64.md)
 
 
 ---

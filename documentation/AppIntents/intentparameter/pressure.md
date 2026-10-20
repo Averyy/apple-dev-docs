@@ -1,7 +1,8 @@
 # IntentParameter.Pressure
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,35 +19,38 @@
 enum Pressure
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitPressure>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Pressure.bars](intentparameter/pressure/bars.md)
-- [IntentParameter.Pressure.gigapascals](intentparameter/pressure/gigapascals.md)
-- [IntentParameter.Pressure.hectopascals](intentparameter/pressure/hectopascals.md)
-- [IntentParameter.Pressure.inchesOfMercury](intentparameter/pressure/inchesofmercury.md)
-- [IntentParameter.Pressure.kilopascals](intentparameter/pressure/kilopascals.md)
-- [IntentParameter.Pressure.megapascals](intentparameter/pressure/megapascals.md)
-- [IntentParameter.Pressure.millibars](intentparameter/pressure/millibars.md)
-- [IntentParameter.Pressure.millimetersOfMercury](intentparameter/pressure/millimetersofmercury.md)
-- [IntentParameter.Pressure.newtonsPerMetersSquared](intentparameter/pressure/newtonspermeterssquared.md)
-- [IntentParameter.Pressure.poundsForcePerSquareInch](intentparameter/pressure/poundsforcepersquareinch.md)
+- [IntentParameter.Pressure.bars](./pressure/bars.md)
+- [IntentParameter.Pressure.gigapascals](./pressure/gigapascals.md)
+- [IntentParameter.Pressure.hectopascals](./pressure/hectopascals.md)
+- [IntentParameter.Pressure.inchesOfMercury](./pressure/inchesofmercury.md)
+- [IntentParameter.Pressure.kilopascals](./pressure/kilopascals.md)
+- [IntentParameter.Pressure.megapascals](./pressure/megapascals.md)
+- [IntentParameter.Pressure.millibars](./pressure/millibars.md)
+- [IntentParameter.Pressure.millimetersOfMercury](./pressure/millimetersofmercury.md)
+- [IntentParameter.Pressure.newtonsPerMetersSquared](./pressure/newtonspermeterssquared.md)
+- [IntentParameter.Pressure.poundsForcePerSquareInch](./pressure/poundsforcepersquareinch.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Pressure?](intentparameter/unit-991uj.md)
-- [var defaultUnit: IntentParameter<Value>.Pressure?](intentparameter/defaultunit-4p4yh.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-83fjo.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-832oo.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Pressure?](./unit-991uj.md)
+- [var defaultUnit: IntentParameter<Value>.Pressure?](./defaultunit-4p4yh.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-83fjo.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-832oo.md)
 
 
 ---

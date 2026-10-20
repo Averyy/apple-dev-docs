@@ -1,7 +1,8 @@
 # errorCorrectedPayload
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-corrected payload that comprises the the Aztec code symbol.
 
@@ -19,6 +20,10 @@ The error-corrected payload that comprises the the Aztec code symbol.
 var errorCorrectedPayload: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * errorCorrectedPayload;
+```
+
 #### Discussion
 
 Aztec Codes are formally specified in ISO/IEC 24778:2008(E).
@@ -27,11 +32,12 @@ The error corrected payload consists of the 6-, 8-, 10-, or 12-bit message codew
 
 ## See Also
 
-- [var isCompact: Bool](ciazteccodedescriptor/iscompact-swift.property.md)
+### Examining a Descriptor
+- [var isCompact: Bool](./iscompact-swift.property.md)
   A Boolean value telling if the Aztec code is compact.
-- [var layerCount: Int](ciazteccodedescriptor/layercount-swift.property.md)
+- [var layerCount: Int](./layercount-swift.property.md)
   The number of data layers in the Aztec code symbol.
-- [var dataCodewordCount: Int](ciazteccodedescriptor/datacodewordcount-swift.property.md)
+- [var dataCodewordCount: Int](./datacodewordcount-swift.property.md)
   The number of non-error-correction codewords carried by the Aztec code symbol.
 
 

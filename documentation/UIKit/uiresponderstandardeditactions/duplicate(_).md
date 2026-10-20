@@ -1,7 +1,8 @@
 # duplicate(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Duplicates data.
 
@@ -18,13 +19,18 @@ Duplicates data.
 optional func duplicate(_ sender: Any?)
 ```
 
+```objc
+- (void) duplicate:(id) sender;
+```
+
 ## See Also
 
-- [func export(Any?)](uiresponderstandardeditactions/export(_:).md)
+### Handling data commands
+- [func export(Any?)](./export%28_%29.md)
   Exports data in different file formats or to other apps.
-- [func move(Any?)](uiresponderstandardeditactions/move(_:).md)
+- [func move(Any?)](./move%28_%29.md)
   Prompts a person to specify a new location and moves data to that location.
-- [func rename(Any?)](uiresponderstandardeditactions/rename(_:).md)
+- [func rename(Any?)](./rename%28_%29.md)
   Changes a title.
 
 

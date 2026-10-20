@@ -1,7 +1,8 @@
 # insertEmptyTimeRange(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an empty time range to a movie.
 
@@ -19,6 +20,10 @@ Adds an empty time range to a movie.
 func insertEmptyTimeRange(_ timeRange: CMTimeRange)
 ```
 
+```objc
+- (void) insertEmptyTimeRange:(CMTimeRange) timeRange;
+```
+
 #### Discussion
 
 You can’t add empty time ranges to the end of a movie.
@@ -29,11 +34,12 @@ You can’t add empty time ranges to the end of a movie.
 
 ## See Also
 
-- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, copySampleData: Bool) throws](avmutablemovie/inserttimerange(_:of:at:copysampledata:).md)
+### Managing time ranges
+- [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, copySampleData: Bool) throws](./inserttimerange%28_,of,at,copysampledata%29.md)
   Inserts all of the tracks in a specified time range of an asset into a movie.
-- [func scale(CMTimeRange, toDuration: CMTime)](avmutablemovie/scale(_:toduration:).md)
+- [func scale(CMTimeRange, toDuration: CMTime)](./scale%28_,toduration%29.md)
   Changes the duration of a time range in a movie.
-- [func removeTimeRange(CMTimeRange)](avmutablemovie/removetimerange(_:).md)
+- [func removeTimeRange(CMTimeRange)](./removetimerange%28_%29.md)
   Removes the specified time range from a movie.
 
 

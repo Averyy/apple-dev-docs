@@ -1,7 +1,8 @@
 # outline
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A presentation style that animates an outline around the view when the accessibility quick action is active.
 
@@ -15,11 +16,13 @@ A presentation style that animates an outline around the view when the accessibi
 static var outline: AccessibilityQuickActionOutlineStyle { get }
 ```
 
+Available when `Self` is `AccessibilityQuickActionOutlineStyle`.
+
 #### Discussion
 
-Use the [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) modifier to provide a shape for [`focusEffect`](contentshapekinds/focuseffect.md) if necessary.
+Use the [`contentShape(_:_:eoFill:)`](../view/contentshape%28_,_,eofill%29.md) modifier to provide a shape for [`focusEffect`](../contentshapekinds/focuseffect.md) if necessary.
 
-The following example shows how to add an [`accessibilityQuickAction(style:content:)`](view/accessibilityquickaction(style:content:).md) to play and pause music.
+The following example shows how to add an [`accessibilityQuickAction(style:content:)`](../view/accessibilityquickaction%28style,content%29.md) to play and pause music.
 
 ```swift
 @State private var isPlaying = false
@@ -37,7 +40,8 @@ var body: some View {
 
 ## See Also
 
-- [static var prompt: AccessibilityQuickActionPromptStyle](accessibilityquickactionstyle/prompt.md)
+### Getting built-in menu styles
+- [static var prompt: AccessibilityQuickActionPromptStyle](./prompt.md)
   A presentation style that displays a prompt to the user when the accessibility quick action is active.
 
 

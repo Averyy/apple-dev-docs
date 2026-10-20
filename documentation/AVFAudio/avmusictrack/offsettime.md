@@ -1,7 +1,8 @@
 # offsetTime
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset of the track’s start time, in beats.
 
@@ -19,19 +20,24 @@ The offset of the track’s start time, in beats.
 var offsetTime: AVMusicTimeStamp { get set }
 ```
 
+```objc
+@property (nonatomic) AVMusicTimeStamp offsetTime;
+```
+
 #### Discussion
 
 By default, this value is `0`.
 
 ## See Also
 
-- [var isMuted: Bool](avmusictrack/ismuted.md)
+### Configuring music track properties
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the track is in a muted state.
-- [var isSoloed: Bool](avmusictrack/issoloed.md)
+- [var isSoloed: Bool](./issoloed.md)
   A Boolean value that indicates whether the track is in a soloed state.
-- [var timeResolution: Int](avmusictrack/timeresolution.md)
+- [var timeResolution: Int](./timeresolution.md)
   The time resolution value for the sequence, in ticks (pulses) per quarter note.
-- [var usesAutomatedParameters: Bool](avmusictrack/usesautomatedparameters.md)
+- [var usesAutomatedParameters: Bool](./usesautomatedparameters.md)
   A Boolean value that indicates whether the track is an automation track.
 
 

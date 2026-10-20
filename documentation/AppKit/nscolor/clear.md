@@ -1,17 +1,22 @@
 # clear
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a color object whose grayscale and alpha values are both `0.0`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var clear: NSColor { get }
+```
+
+```objc
+@property (class, strong, readonly) NSColor * clearColor;
 ```
 
 #### Return Value

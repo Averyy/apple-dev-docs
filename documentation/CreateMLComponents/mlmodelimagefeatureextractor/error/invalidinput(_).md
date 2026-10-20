@@ -1,7 +1,8 @@
 # MLModelImageFeatureExtractor.Error.invalidInput(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the mlmodel does not take required input.
 
@@ -21,7 +22,8 @@ case invalidInput(String)
 
 ## See Also
 
-- [MLModelImageFeatureExtractor.Error.invalidOutput(_:)](mlmodelimagefeatureextractor/error/invalidoutput(_:).md)
+### Analyzing the error
+- [MLModelImageFeatureExtractor.Error.invalidOutput(_:)](./invalidoutput%28_%29.md)
   An error indicating that the mlmodel does not produce the required output.
 
 

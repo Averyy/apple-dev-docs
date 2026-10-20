@@ -1,7 +1,8 @@
 # AVCaptureDevice.Position.unspecified
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A position that’s unspecified.
 
@@ -19,11 +20,16 @@ A position that’s unspecified.
 case unspecified
 ```
 
+```c
+AVCaptureDevicePositionUnspecified
+```
+
 ## See Also
 
-- [AVCaptureDevice.Position.front](avcapturedevice/position-swift.enum/front.md)
+### Positions
+- [AVCaptureDevice.Position.front](./front.md)
   A position on the user-facing side of an iOS device.
-- [AVCaptureDevice.Position.back](avcapturedevice/position-swift.enum/back.md)
+- [AVCaptureDevice.Position.back](./back.md)
   A position on the subject-facing side of an iOS device.
 
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the padding type, suitable for debugging.
 
@@ -18,12 +19,17 @@ A textual description of the padding type, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCPaddingTypeDebugDescription(MLCPaddingType paddingType);
+```
+
 ## See Also
 
-- [MLCPaddingType.zero](mlcpaddingtype/zero.md)
-- [MLCPaddingType.reflect](mlcpaddingtype/reflect.md)
-- [MLCPaddingType.symmetric](mlcpaddingtype/symmetric.md)
-- [MLCPaddingType.constant](mlcpaddingtype/constant.md)
+### Enumeration Cases
+- [MLCPaddingType.zero](./zero.md)
+- [MLCPaddingType.reflect](./reflect.md)
+- [MLCPaddingType.symmetric](./symmetric.md)
+- [MLCPaddingType.constant](./constant.md)
 
 
 ---

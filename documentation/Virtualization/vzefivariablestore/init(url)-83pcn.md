@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the variable store from the URL of an existing file.
 
@@ -14,15 +15,20 @@ Initialize the variable store from the URL of an existing file.
 init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 ## Parameters
 
 - `URL`: The URL of the location on disk that contains the stored EFI information.
 
 ## See Also
 
-- [init(creatingVariableStoreAt: URL, options: VZEFIVariableStore.InitializationOptions) throws](vzefivariablestore/init(creatingvariablestoreat:options:).md)
+### Creating the variable store
+- [init(creatingVariableStoreAt: URL, options: VZEFIVariableStore.InitializationOptions) throws](./init%28creatingvariablestoreat,options%29.md)
   Creates a new EFI variable store at specified the URL on the filesystem, initialization options, and error-return variable.
-- [VZEFIVariableStore.InitializationOptions](vzefivariablestore/initializationoptions.md)
+- [VZEFIVariableStore.InitializationOptions](./initializationoptions.md)
   Constants that describe the options available when creating a new Extensible Firmware Interface (EFI) variable store.
 
 

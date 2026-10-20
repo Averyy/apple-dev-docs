@@ -1,23 +1,26 @@
 # InAppPurchaseImageCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`InAppPurchaseImageV2CreateRequest`](../../inapppurchaseimagev2createrequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseImageCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseImageCreateRequest.Data.Relationships.InAppPurchase](inapppurchaseimagecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
+- [object InAppPurchaseImageCreateRequest.Data.Relationships.InAppPurchase](./relationships-data.dictionary/inapppurchase-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +29,8 @@ object InAppPurchaseImageCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object InAppPurchaseImageCreateRequest.Data.Attributes](inapppurchaseimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object InAppPurchaseImageCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription purchase image request resource.
 
 

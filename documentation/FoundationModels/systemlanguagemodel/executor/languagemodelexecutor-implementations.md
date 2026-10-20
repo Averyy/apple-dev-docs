@@ -1,11 +1,12 @@
 # LanguageModelExecutor Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [SystemLanguageModel.Executor.Configuration](systemlanguagemodel/executor/configuration.md)
+- [SystemLanguageModel.Executor.Configuration](./configuration.md)
   A configuration for an executor capable of running an on-device system model.
 
 

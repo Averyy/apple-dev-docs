@@ -1,7 +1,8 @@
 # MeshResource.ShapeExtrusionOptions.ChamferMode.back
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only chamfer the back of the extrusion.
 

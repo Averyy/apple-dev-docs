@@ -1,7 +1,8 @@
 # replacing(_:with:subrange:maxReplacements:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection in which all occurrences of a sequence matching the given regex are replaced by another collection.
 
@@ -19,6 +20,8 @@ Returns a new collection in which all occurrences of a sequence matching the giv
 ```swift
 func replacing<Replacement>(_ regex: some RegexComponent, with replacement: Replacement, subrange: Range<Self.Index>, maxReplacements: Int = .max) -> Self where Replacement : Collection, Replacement.Element == Character
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

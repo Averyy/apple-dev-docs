@@ -1,7 +1,8 @@
 # XCTWaiter.Result.invertedFulfillment
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inverted expectation was fulfilled.
 
@@ -11,15 +12,20 @@ An inverted expectation was fulfilled.
 case invertedFulfillment
 ```
 
+```c
+XCTWaiterResultInvertedFulfillment
+```
+
 ## See Also
 
-- [XCTWaiter.Result.completed](xctwaiter/result/completed.md)
+### Result States
+- [XCTWaiter.Result.completed](./completed.md)
   All of the waiter’s expectations were fulfilled successfully.
-- [XCTWaiter.Result.timedOut](xctwaiter/result/timedout.md)
+- [XCTWaiter.Result.timedOut](./timedout.md)
   The waiter timed out before all of its expectations were fulfilled.
-- [XCTWaiter.Result.incorrectOrder](xctwaiter/result/incorrectorder.md)
+- [XCTWaiter.Result.incorrectOrder](./incorrectorder.md)
   The waiter’s expectations were not fulfilled in the required order.
-- [XCTWaiter.Result.interrupted](xctwaiter/result/interrupted.md)
+- [XCTWaiter.Result.interrupted](./interrupted.md)
   The waiter was interrupted prior to its expectations being fulfilled or timing out.
 
 

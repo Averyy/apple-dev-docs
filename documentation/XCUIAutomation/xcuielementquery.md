@@ -1,18 +1,19 @@
 # XCUIElementQuery
 
 **Framework**: XCUIAutomation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the search criteria a test uses to identify UI elements.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -22,9 +23,13 @@ An object that defines the search criteria a test uses to identify UI elements.
 class XCUIElementQuery
 ```
 
+```objc
+@interface XCUIElementQuery : NSObject
+```
+
 ## Mentions
 
-- [Recording UI automation for testing](recording-ui-automation-for-testing.md)
+- [Recording UI automation for testing](./recording-ui-automation-for-testing.md)
 
 #### Discussion
 
@@ -46,69 +51,70 @@ func testClickingAddCreatesAnUntitledBook() throws {
 ## Topics
 
 ### Creating new queries
-- [func children(matching: XCUIElement.ElementType) -> XCUIElementQuery](xcuielementquery/children(matching:).md)
+- [func children(matching: XCUIElement.ElementType) -> XCUIElementQuery](./xcuielementquery/children%28matching%29.md)
   Returns a new query that matches all direct children of the requested type.
-- [func descendants(matching: XCUIElement.ElementType) -> XCUIElementQuery](xcuielementquery/descendants(matching:).md)
+- [func descendants(matching: XCUIElement.ElementType) -> XCUIElementQuery](./xcuielementquery/descendants%28matching%29.md)
   Returns a new query that matches all descendants of the requested type.
-- [func containing(NSPredicate) -> XCUIElementQuery](xcuielementquery/containing(_:).md)
+- [func containing(NSPredicate) -> XCUIElementQuery](./xcuielementquery/containing%28_%29.md)
   Returns a new query that matches elements containing a descendant that meets the logical conditions of the provided predicate.
-- [func containing(XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery](xcuielementquery/containing(_:identifier:).md)
+- [func containing(XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery](./xcuielementquery/containing%28_,identifier%29.md)
   Returns a new query that matches elements that contain a descendant of the requested type and an identifying property that matches a provided identifier.
-- [func matching(identifier: String) -> XCUIElementQuery](xcuielementquery/matching(identifier:).md)
+- [func matching(identifier: String) -> XCUIElementQuery](./xcuielementquery/matching%28identifier%29.md)
   Returns a new query that matches elements that have an identifying property that matches a provided identifier.
-- [func matching(NSPredicate) -> XCUIElementQuery](xcuielementquery/matching(_:).md)
+- [func matching(NSPredicate) -> XCUIElementQuery](./xcuielementquery/matching%28_%29.md)
   Returns a new query that matches elements that meet the logical conditions of the provided predicate.
-- [func matching(XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery](xcuielementquery/matching(_:identifier:).md)
+- [func matching(XCUIElement.ElementType, identifier: String?) -> XCUIElementQuery](./xcuielementquery/matching%28_,identifier%29.md)
   Returns a new query that matches elements of the requested type and have an identifying property that matches a provided identifier.
 ### Accessing matched elements
-- [var allElementsBoundByAccessibilityElement: [XCUIElement]](xcuielementquery/allelementsboundbyaccessibilityelement.md)
+- [var allElementsBoundByAccessibilityElement: [XCUIElement]](./xcuielementquery/allelementsboundbyaccessibilityelement.md)
   Immediately evaluates the query and returns an array of elements bound to the resulting accessibility elements.
-- [var allElementsBoundByIndex: [XCUIElement]](xcuielementquery/allelementsboundbyindex.md)
+- [var allElementsBoundByIndex: [XCUIElement]](./xcuielementquery/allelementsboundbyindex.md)
   Immediately evaluates the query and returns an array of elements bound by the index of each result.
-- [var count: Int](xcuielementquery/count.md)
+- [var count: Int](./xcuielementquery/count.md)
   Evaluates the query and returns the number of elements that match.
-- [var element: XCUIElement](xcuielementquery/element.md)
+- [var element: XCUIElement](./xcuielementquery/element.md)
   The query’s single matching element.
-- [func element(boundBy: Int) -> XCUIElement](xcuielementquery/element(boundby:).md)
+- [func element(boundBy: Int) -> XCUIElement](./xcuielementquery/element%28boundby%29.md)
   Uses an index into the query’s results to determine which underlying accessibility element to use.
-- [func element(matching: NSPredicate) -> XCUIElement](xcuielementquery/element(matching:).md)
+- [func element(matching: NSPredicate) -> XCUIElement](./xcuielementquery/element%28matching%29.md)
   Matches the predicate.
-- [func element(matching: XCUIElement.ElementType, identifier: String?) -> XCUIElement](xcuielementquery/element(matching:identifier:).md)
+- [func element(matching: XCUIElement.ElementType, identifier: String?) -> XCUIElement](./xcuielementquery/element%28matching,identifier%29.md)
   Matches the provided element type and identifier.
-- [subscript(String) -> XCUIElement](xcuielementquery/subscript(_:).md)
+- [subscript(String) -> XCUIElement](./xcuielementquery/subscript%28_%29.md)
   Returns a descendant element that matches a provided identifier.
-- [func element(at: Int) -> XCUIElement](xcuielementquery/element(at:).md)
+- [func element(at: Int) -> XCUIElement](./xcuielementquery/element%28at%29.md)
   Returns an element that resolves to the index into the query’s result set.
 ### Debugging element queries
-- [var debugDescription: String](xcuielementquery/debugdescription.md)
+- [var debugDescription: String](./xcuielementquery/debugdescription.md)
   Provides debugging information about the query.
 ### Identifying window buttons
-- [let XCUIIdentifierCloseWindow: String](xcuiidentifierclosewindow.md)
+- [let XCUIIdentifierCloseWindow: String](./xcuiidentifierclosewindow.md)
   The identifier for a window’s close button.
-- [let XCUIIdentifierFullScreenWindow: String](xcuiidentifierfullscreenwindow.md)
+- [let XCUIIdentifierFullScreenWindow: String](./xcuiidentifierfullscreenwindow.md)
   The identifier for a window’s full-screen button.
-- [let XCUIIdentifierMinimizeWindow: String](xcuiidentifierminimizewindow.md)
+- [let XCUIIdentifierMinimizeWindow: String](./xcuiidentifierminimizewindow.md)
   The identifier for a window’s minimize button.
-- [let XCUIIdentifierZoomWindow: String](xcuiidentifierzoomwindow.md)
+- [let XCUIIdentifierZoomWindow: String](./xcuiidentifierzoomwindow.md)
   The identifier for a window’s zoom button.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [XCUIElementTypeQueryProvider](xcuielementtypequeryprovider.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [XCUIElementTypeQueryProvider](./xcuielementtypequeryprovider.md)
 
 ## See Also
 
-- [protocol XCUIElementTypeQueryProvider](xcuielementtypequeryprovider.md)
+### UI element queries
+- [protocol XCUIElementTypeQueryProvider](./xcuielementtypequeryprovider.md)
   A type that provides ready-made queries for locating descendant UI elements.
 
 

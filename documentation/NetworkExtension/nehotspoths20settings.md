@@ -1,7 +1,8 @@
 # NEHotspotHS20Settings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Settings for configuring Hotspot 2.0 Wi-Fi networks.
 
@@ -17,45 +18,50 @@ Settings for configuring Hotspot 2.0 Wi-Fi networks.
 class NEHotspotHS20Settings
 ```
 
+```objc
+@interface NEHotspotHS20Settings : NSObject
+```
+
 ## Topics
 
 ### Initializing Hotspot 2.0 settings
-- [init(domainName: String, roamingEnabled: Bool)](nehotspoths20settings/init(domainname:roamingenabled:).md)
+- [init(domainName: String, roamingEnabled: Bool)](./nehotspoths20settings/init%28domainname,roamingenabled%29.md)
   Creates a new hotspot configuration of a legacy Hotspot or HS 2.0 Wi-Fi network. with optional roaming enabled.
 ### Accessing Hotspot 2.0 properties
-- [var domainName: String](nehotspoths20settings/domainname.md)
+- [var domainName: String](./nehotspoths20settings/domainname.md)
   The domain name of a Hotspot 2.0 Wi-Fi Network.
-- [var isRoamingEnabled: Bool](nehotspoths20settings/isroamingenabled.md)
+- [var isRoamingEnabled: Bool](./nehotspoths20settings/isroamingenabled.md)
   A Boolean value indicating whether or not roaming is enabled on a Hotspot 2.0 Wi-Fi network.
-- [var mccAndMNCs: [String]](nehotspoths20settings/mccandmncs.md)
+- [var mccAndMNCs: [String]](./nehotspoths20settings/mccandmncs.md)
   An array of Mobile Country Code (MCC) and Mobile Network Code  (MNC) pairs used for Wi-Fi Hotspot 2.0 negotiation.
-- [var naiRealmNames: [String]](nehotspoths20settings/nairealmnames.md)
+- [var naiRealmNames: [String]](./nehotspoths20settings/nairealmnames.md)
   An array of Network Access Identifier (NAI) realm name strings used for Wi-Fi Hotspot 2.0 negotiation.
-- [var roamingConsortiumOIs: [String]](nehotspoths20settings/roamingconsortiumois.md)
+- [var roamingConsortiumOIs: [String]](./nehotspoths20settings/roamingconsortiumois.md)
   An array of Roaming Consortium Organization (RCO) identifiers used for Wi-Fi Hotspot 2.0 negotiation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEHotspotConfigurationManager](nehotspotconfigurationmanager.md)
+### Wi-Fi network configuration
+- [class NEHotspotConfigurationManager](./nehotspotconfigurationmanager.md)
   A manager that applies and removes hotspot configurations of Wi-Fi networks.
-- [class NEHotspotConfiguration](nehotspotconfiguration.md)
+- [class NEHotspotConfiguration](./nehotspotconfiguration.md)
   Configuration settings for a Wi-Fi network.
-- [class NEHotspotEAPSettings](nehotspoteapsettings.md)
+- [class NEHotspotEAPSettings](./nehotspoteapsettings.md)
   Extensible Authentication Protocol settings for configuring WPA and WPA2 enterprise Wi-Fi networks.
 
 

@@ -1,7 +1,8 @@
 # currentOffset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position within the resource of the next byte.
 
@@ -19,19 +20,24 @@ The position within the resource of the next byte.
 var currentOffset: Int64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) long long currentOffset;
+```
+
 #### Discussion
 
-When incrementally loading data you should begin loading at this offset, returning the data by invoking the [`respond(with:)`](avassetresourceloadingdatarequest/respond(with:).md) method. Bytes previous to this value have already been provided.
+When incrementally loading data you should begin loading at this offset, returning the data by invoking the [`respond(with:)`](./respond%28with%29.md) method. Bytes previous to this value have already been provided.
 
 ## See Also
 
-- [func respond(with: Data)](avassetresourceloadingdatarequest/respond(with:).md)
+### Providing data to a request
+- [func respond(with: Data)](./respond%28with%29.md)
   Provides data to the loading request.
-- [var requestedLength: Int](avassetresourceloadingdatarequest/requestedlength.md)
+- [var requestedLength: Int](./requestedlength.md)
   The length, in bytes, of the data requested.
-- [var requestedOffset: Int64](avassetresourceloadingdatarequest/requestedoffset.md)
+- [var requestedOffset: Int64](./requestedoffset.md)
   The position within the resource of the first byte requested.
-- [var requestsAllDataToEndOfResource: Bool](avassetresourceloadingdatarequest/requestsalldatatoendofresource.md)
+- [var requestsAllDataToEndOfResource: Bool](./requestsalldatatoendofresource.md)
   A Boolean value that indicates the entire remaining length of the resource from the offest to the end of the resource is being requested.
 
 

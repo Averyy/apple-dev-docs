@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this trigger.
 
@@ -19,17 +20,22 @@ A unique identifier for this trigger.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmtrigger/name.md)
+### Managing Triggers
+- [var name: String](./name.md)
   The name of the trigger.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmtrigger/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the trigger.
-- [var isEnabled: Bool](hmtrigger/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   State of the trigger.
-- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](hmtrigger/enable(_:completionhandler:).md)
+- [func enable(Bool, completionHandler: ((any Error)?) -> Void)](./enable%28_,completionhandler%29.md)
   Changes the enabled state of the trigger.
-- [var lastFireDate: Date?](hmtrigger/lastfiredate.md)
+- [var lastFireDate: Date?](./lastfiredate.md)
   The last time this trigger fired.
 
 

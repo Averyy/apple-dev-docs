@@ -1,7 +1,8 @@
 # ImagePlaygroundViewController.Delegate
 
 **Framework**: Image Playground  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to receive images and handle events related to an image-generation view controller.
 
@@ -21,28 +22,29 @@ An interface you use to receive images and handle events related to an image-gen
 
 #### Overview
 
-Adopt the [`ImagePlaygroundViewController.Delegate`](imageplaygroundviewcontroller/delegate-swift.protocol.md) protocol in a custom type and assign that type as the delegate of an [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) object. When you present the view controller, the system interface handles interactions with the person and reports the results back to your delegate object.
+Adopt the [`ImagePlaygroundViewController.Delegate`](./delegate-swift.protocol.md) protocol in a custom type and assign that type as the delegate of an [`ImagePlaygroundViewController`](../imageplaygroundviewcontroller.md) object. When you present the view controller, the system interface handles interactions with the person and reports the results back to your delegate object.
 
 ## Topics
 
 ### Receiving the image
-- [func imagePlaygroundViewController(ImagePlaygroundViewController, didCreateImageAt: URL)](imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreateimageat:).md)
+- [func imagePlaygroundViewController(ImagePlaygroundViewController, didCreateImageAt: URL)](./delegate-swift.protocol/imageplaygroundviewcontroller%28_,didcreateimageat%29.md)
   Returns the generated image to the delegate.
 ### Handling cancellation events
-- [func imagePlaygroundViewControllerDidCancel(ImagePlaygroundViewController)](imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_:).md)
+- [func imagePlaygroundViewControllerDidCancel(ImagePlaygroundViewController)](./delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel%28_%29.md)
   Notifies the delegate that the person canceled the generation of the image.
 ### Instance Methods
-- [func imagePlaygroundViewController(ImagePlaygroundViewController, didCreate: NSAdaptiveImageGlyph)](imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreate:).md)
+- [func imagePlaygroundViewController(ImagePlaygroundViewController, didCreate: NSAdaptiveImageGlyph)](./delegate-swift.protocol/imageplaygroundviewcontroller%28_,didcreate%29.md)
   Returns the generated genmoji to the delegate.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any ImagePlaygroundViewController.Delegate)?](imageplaygroundviewcontroller/delegate-swift.property.md)
+### Processing a generated image
+- [var delegate: (any ImagePlaygroundViewController.Delegate)?](./delegate-swift.property.md)
   The delegate object that receives the generated image and handles events from the view controller.
 
 

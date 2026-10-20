@@ -1,7 +1,8 @@
 # single
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Draw a single solid line.
 

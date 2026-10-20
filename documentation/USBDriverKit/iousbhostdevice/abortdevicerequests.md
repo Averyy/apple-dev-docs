@@ -1,7 +1,8 @@
 # AbortDeviceRequests
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Aborts device requests that you made previously from the current device client.
 
@@ -10,17 +11,17 @@ Aborts device requests that you made previously from the current device client.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AbortDeviceRequests(IOService *forClient, IOOptionBits options, IOReturn withError);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-Use this method to abort any requests you made previously with the [`AsyncDeviceRequest`](iousbhostdevice/asyncdevicerequest.md) method. This method aborts only the requests that the current device object initiated.
+Use this method to abort any requests you made previously with the [`AsyncDeviceRequest`](./asyncdevicerequest.md) method. This method aborts only the requests that the current device object initiated.
 
 ## Parameters
 
@@ -30,11 +31,12 @@ Use this method to abort any requests you made previously with the [`AsyncDevice
 
 ## See Also
 
-- [DeviceRequest](iousbhostdevice/devicerequest.md)
+### Requesting Information from the Device
+- [DeviceRequest](./devicerequest.md)
   Sends a synchronous request to the device on the default control endpoint.
-- [AsyncDeviceRequest](iousbhostdevice/asyncdevicerequest.md)
+- [AsyncDeviceRequest](./asyncdevicerequest.md)
   Enqueues a request on the default control endpoint of the device.
-- [CompleteAsyncDeviceRequest](iousbhostdevice/completeasyncdevicerequest.md)
+- [CompleteAsyncDeviceRequest](./completeasyncdevicerequest.md)
   The type definition for an asynchronous device request completion routine.
 
 

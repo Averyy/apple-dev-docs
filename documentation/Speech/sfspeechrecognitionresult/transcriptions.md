@@ -1,7 +1,8 @@
 # transcriptions
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of potential transcriptions, sorted in descending order of confidence.
 
@@ -18,15 +19,20 @@ An array of potential transcriptions, sorted in descending order of confidence.
 var transcriptions: [SFTranscription] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<SFTranscription *> * transcriptions;
+```
+
 #### Discussion
 
 All transcriptions correspond to the same utterance, which can be a partial or final result of the overall request. The first transcription in the array has the highest confidence rating, followed by transcriptions with decreasing confidence ratings.
 
 ## See Also
 
-- [var bestTranscription: SFTranscription](sfspeechrecognitionresult/besttranscription.md)
+### Getting transcriptions
+- [var bestTranscription: SFTranscription](./besttranscription.md)
   The transcription with the highest confidence level.
-- [var speechRecognitionMetadata: SFSpeechRecognitionMetadata?](sfspeechrecognitionresult/speechrecognitionmetadata.md)
+- [var speechRecognitionMetadata: SFSpeechRecognitionMetadata?](./speechrecognitionmetadata.md)
   An object that contains the metadata results for a speech recognition request.
 
 

@@ -1,7 +1,8 @@
 # scrubsLinearly
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether a paused animation scrubs linearly or uses its specified timing information.
 
@@ -18,25 +19,30 @@ A Boolean value indicating whether a paused animation scrubs linearly or uses it
 var scrubsLinearly: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL scrubsLinearly;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the animator to use a linear timing function during scrubbing. Setting the property to [`false`](https://developer.apple.com/documentation/swift/false) causes the animator to use its specified timing curve.
+The default value of this property is [`true`](../../Swift/true.md), which causes the animator to use a linear timing function during scrubbing. Setting the property to [`false`](../../Swift/false.md) causes the animator to use its specified timing curve.
 
 ## See Also
 
-- [var duration: TimeInterval](uiviewpropertyanimator/duration.md)
+### Accessing the animation parameters
+- [var duration: TimeInterval](./duration.md)
   The total duration (in seconds) of the main animations.
-- [var delay: TimeInterval](uiviewpropertyanimator/delay.md)
+- [var delay: TimeInterval](./delay.md)
   The delay (in seconds) after which the animations begin.
-- [var timingParameters: (any UITimingCurveProvider)?](uiviewpropertyanimator/timingparameters.md)
+- [var timingParameters: (any UITimingCurveProvider)?](./timingparameters.md)
   The information used to determine the timing curve for the animation.
-- [var isInterruptible: Bool](uiviewpropertyanimator/isinterruptible.md)
+- [var isInterruptible: Bool](./isinterruptible.md)
   A Boolean value indicating whether the animator is interruptible and can be paused or stopped.
-- [var isUserInteractionEnabled: Bool](uiviewpropertyanimator/isuserinteractionenabled.md)
+- [var isUserInteractionEnabled: Bool](./isuserinteractionenabled.md)
   A Boolean value indicating whether views receive touch events while animations are running.
-- [var isManualHitTestingEnabled: Bool](uiviewpropertyanimator/ismanualhittestingenabled.md)
+- [var isManualHitTestingEnabled: Bool](./ismanualhittestingenabled.md)
   A Boolean value indicating whether your app manages hit-testing while animations are in progress.
-- [var pausesOnCompletion: Bool](uiviewpropertyanimator/pausesoncompletion.md)
+- [var pausesOnCompletion: Bool](./pausesoncompletion.md)
   A Boolean value that indicates whether a completed animation remains in the active state.
 
 

@@ -1,7 +1,8 @@
 # readAttributeBatCapacity(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatCapacity(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatCapacity() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBatCapacityWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

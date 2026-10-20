@@ -1,17 +1,18 @@
 # mFileType
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A four-character code for the file type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ A four-character code for the file type.
 var mFileType: AudioFileTypeID
 ```
 
+```c
+AudioFileTypeID mFileType;
+```
+
 #### Discussion
 
-See [`AudioFileTypeID`](audiofiletypeid.md) for available file type identifiers.
+See [`AudioFileTypeID`](../audiofiletypeid.md) for available file type identifiers.
 
 
 ---

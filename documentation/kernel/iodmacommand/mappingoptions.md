@@ -7,7 +7,7 @@ Mapping types to indicate the desired mapper type for translating memory descrip
 
 ## Declaration
 
-```swift
+```c
 enum MappingOptions {
    kMapped = 0x00000000,
    kBypassed = 0x00000001,
@@ -22,36 +22,37 @@ enum MappingOptions {
 ## Topics
 
 ### Constants
-- [kNonCoherent](iodmacommand/mappingoptions/knoncoherent.md)
-- [kMapped](iodmacommand/mappingoptions/kmapped.md)
-- [kBypassed](iodmacommand/mappingoptions/kbypassed.md)
-- [kMaxMappingOptions](iodmacommand/mappingoptions/kmaxmappingoptions.md)
+- [kNonCoherent](./mappingoptions/knoncoherent.md)
+- [kMapped](./mappingoptions/kmapped.md)
+- [kBypassed](./mappingoptions/kbypassed.md)
+- [kMaxMappingOptions](./mappingoptions/kmaxmappingoptions.md)
 
 ## See Also
 
-- [withSpecification](iodmacommand/1811330-withspecification.md)
+### Creating a DMA Command
+- [withSpecification](./api-1811330-withspecification.md)
   Creates and initializes a DMA command in one operation.
-- [+ withSpecification](iodmacommand/1547758-withspecification.md)
+- [+ withSpecification](./api-1547758-withspecification.md)
   Creates and initializes an DMA command in one operation.
-- [+ withSpecification](iodmacommand/3516452-withspecification.md)
+- [+ withSpecification](./api-3516452-withspecification.md)
   Creates and initializes an DMA command in one operation.
-- [initWithSpecification](iodmacommand/1811207-initwithspecification.md)
+- [initWithSpecification](./api-1811207-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [- initWithSpecification](iodmacommand/1547748-initwithspecification.md)
+- [- initWithSpecification](./api-1547748-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [- initWithSpecification](iodmacommand/3516450-initwithspecification.md)
+- [- initWithSpecification](./api-3516450-initwithspecification.md)
   Primary initializer for the DMA command object.
-- [weakWithSpecification](iodmacommand/1811323-weakwithspecification.md)
+- [weakWithSpecification](./api-1811323-weakwithspecification.md)
   Creates and initializes an DMA command object in one operation if this version of the operating system supports it.
-- [+ withRefCon](iodmacommand/1547747-withrefcon.md)
-- [- initWithRefCon](iodmacommand/1547754-initwithrefcon.md)
-- [cloneCommand](iodmacommand/1811059-clonecommand.md)
+- [+ withRefCon](./api-1547747-withrefcon.md)
+- [- initWithRefCon](./api-1547754-initwithrefcon.md)
+- [cloneCommand](./api-1811059-clonecommand.md)
   Creates a new command based on the specification of the current one.
-- [- cloneCommand](iodmacommand/1547732-clonecommand.md)
+- [- cloneCommand](./api-1547732-clonecommand.md)
   Creates a new command based on the specification of the current one.
-- [- init](../driverkit/iodmacommand/init.md)
-- [- free](iodmacommand/1547725-free.md)
-- [SynchronizeOptions](iodmacommand/synchronizeoptions.md)
+- [- init](../../DriverKit/iodmacommand/init.md)
+- [- free](./api-1547725-free.md)
+- [SynchronizeOptions](./synchronizeoptions.md)
   Options for the synchronize method.
 
 

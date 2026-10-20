@@ -1,7 +1,8 @@
 # emphasized
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An intent that represents an emphasized presentation.
 
@@ -20,21 +21,26 @@ An intent that represents an emphasized presentation.
 static var emphasized: InlinePresentationIntent { get }
 ```
 
+```c
+NSInlinePresentationIntentEmphasized
+```
+
 ## See Also
 
-- [static var code: InlinePresentationIntent](inlinepresentationintent/code.md)
+### Getting inline presentation types
+- [static var code: InlinePresentationIntent](./code.md)
   An intent that represents a code voice presentation.
-- [static var lineBreak: InlinePresentationIntent](inlinepresentationintent/linebreak.md)
+- [static var lineBreak: InlinePresentationIntent](./linebreak.md)
   An intent that represents a line break.
-- [static var softBreak: InlinePresentationIntent](inlinepresentationintent/softbreak.md)
+- [static var softBreak: InlinePresentationIntent](./softbreak.md)
   An intent that represents a soft line break.
-- [static var strikethrough: InlinePresentationIntent](inlinepresentationintent/strikethrough.md)
+- [static var strikethrough: InlinePresentationIntent](./strikethrough.md)
   An intent that represents a strikethrough presentation.
-- [static var stronglyEmphasized: InlinePresentationIntent](inlinepresentationintent/stronglyemphasized.md)
+- [static var stronglyEmphasized: InlinePresentationIntent](./stronglyemphasized.md)
   An intent that represents a strongly emphasized presentation.
-- [static var inlineHTML: InlinePresentationIntent](inlinepresentationintent/inlinehtml.md)
+- [static var inlineHTML: InlinePresentationIntent](./inlinehtml.md)
   An intent that represents an inline HTML presentation.
-- [static var blockHTML: InlinePresentationIntent](inlinepresentationintent/blockhtml.md)
+- [static var blockHTML: InlinePresentationIntent](./blockhtml.md)
   An intent that represents a block HTML presentation.
 
 

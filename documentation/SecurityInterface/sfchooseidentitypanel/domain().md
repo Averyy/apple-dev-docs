@@ -1,7 +1,8 @@
 # domain()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the domain that will be associated with the chosen identity.
 
@@ -14,9 +15,14 @@ Returns the domain that will be associated with the chosen identity.
 func domain() -> String!
 ```
 
+```objc
+- (NSString *) domain;
+```
+
 ## See Also
 
-- [func setDomain(String!)](sfchooseidentitypanel/setdomain(_:).md)
+### Working with Domains
+- [func setDomain(String!)](./setdomain%28_%29.md)
   Sets an optional domain in which the identity is to be used.
 
 

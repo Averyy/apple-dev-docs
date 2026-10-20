@@ -1,7 +1,8 @@
 # CSVType.double
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A double-precision floating-point type.
 

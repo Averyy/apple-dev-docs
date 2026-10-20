@@ -1,7 +1,8 @@
 # NSTextTab.OptionKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The terminating character for a tab column.
 
@@ -14,22 +15,26 @@ The terminating character for a tab column.
 struct OptionKey
 ```
 
+```c
+typedef NSString * NSTextTabOptionKey;
+```
+
 ## Topics
 
 ### Values
-- [static let columnTerminators: NSTextTab.OptionKey](nstexttab/optionkey/columnterminators.md)
+- [static let columnTerminators: NSTextTab.OptionKey](./optionkey/columnterminators.md)
   The value is an `NSCharacterSet` object.
 ### Initializers
-- [init(rawValue: String)](nstexttab/optionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./optionkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

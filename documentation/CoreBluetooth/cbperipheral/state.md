@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection state of the peripheral.
 
@@ -20,15 +21,20 @@ The connection state of the peripheral.
 var state: CBPeripheralState { get }
 ```
 
+```objc
+@property (readonly) CBPeripheralState state;
+```
+
 #### Discussion
 
-This property represents the current connection state of the peripheral. For a list of the possible values, see [`CBPeripheralState`](cbperipheralstate.md).
+This property represents the current connection state of the peripheral. For a list of the possible values, see [`CBPeripheralState`](../cbperipheralstate.md).
 
 ## See Also
 
-- [enum CBPeripheralState](cbperipheralstate.md)
+### Monitoring a Peripheral’s Connection State
+- [enum CBPeripheralState](../cbperipheralstate.md)
   Values representing the connection state of a peripheral.
-- [var canSendWriteWithoutResponse: Bool](cbperipheral/cansendwritewithoutresponse.md)
+- [var canSendWriteWithoutResponse: Bool](./cansendwritewithoutresponse.md)
   A Boolean value that indicates whether the remote device can send a write without a response.
 
 

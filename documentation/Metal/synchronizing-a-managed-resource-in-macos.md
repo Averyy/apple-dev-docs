@@ -1,22 +1,23 @@
 # Synchronizing a managed resource in macOS
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Manually synchronize memory for a Metal resource in apps.
 
 #### Overview
 
-For Mac computers with Intel or external GPUs, Metal offers *managed resources.* Managed resources are [`MTLResource`](mtlresource.md) instances, such as an [`MTLTexture`](mtltexture.md) or [`MTLBuffer`](mtlbuffer.md), which use memory that your app can copy between the CPU and GPU. Managed resources use a [`storageMode`](mtlresource/storagemode.md) of [`MTLStorageMode.managed`](mtlstoragemode/managed.md).
+For Mac computers with Intel or external GPUs, Metal offers *managed resources.* Managed resources are [`MTLResource`](./mtlresource.md) instances, such as an [`MTLTexture`](./mtltexture.md) or [`MTLBuffer`](./mtlbuffer.md), which use memory that your app can copy between the CPU and GPU. Managed resources use a [`storageMode`](./mtlresource/storagemode.md) of [`MTLStorageMode.managed`](./mtlstoragemode/managed.md).
 
-You need to manually synchronize managed resources, copying changed memory between the CPU and GPU. This is different from Apple family GPUs, which use [`MTLStorageMode.shared`](mtlstoragemode/shared.md) for resources that the CPU and GPU can both access. Synchronize after your code finishes memory writes. After data synchronizes, you can safely read it in both your app and GPU functions.
+You need to manually synchronize managed resources, copying changed memory between the CPU and GPU. This is different from Apple family GPUs, which use [`MTLStorageMode.shared`](./mtlstoragemode/shared.md) for resources that the CPU and GPU can both access. Synchronize after your code finishes memory writes. After data synchronizes, you can safely read it in both your app and GPU functions.
 
 As a best practice, try to keep your data synchronization points to a minimum. Even synchronization calls which don’t copy data can result in a small performance hit.
 
-> **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [`Choosing a resource storage mode for Intel and AMD GPUs`](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
+> **Note**:  Managed resources are the default memory storage type for Intel and external GPU devices in Metal. For more information about macOS resource storage modes and how to select them, see [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md).
 
-##### Synchronize a Managed Buffer
+##### Synchronize a managed buffer
 
-First, create an [`MTLBuffer`](mtlbuffer.md) with the option [`MTLStorageMode.managed`](mtlstoragemode/managed.md), which tells Metal to reserve managed memory space for the resource:
+First, create an [`MTLBuffer`](./mtlbuffer.md) with the option [`MTLStorageMode.managed`](./mtlstoragemode/managed.md), which tells Metal to reserve managed memory space for the resource:
 
 **Swift**:
 
@@ -68,7 +69,7 @@ MatrixData *matrixData = (MatrixData*)_matrixBuffer.contents;
 matrixData->modelMatrix = updatedModelMatrix;
 ```
 
-After completing a CPU modification, call the [`didModifyRange:`](mtlbuffer/didmodifyrange:.md) method. This method updates a specific range of data and keeps the buffer synchronized. Before calling this method, the modified buffer’s data on the GPU is in an undefined state.
+After completing a CPU modification, call the [`didModifyRange:`](./mtlbuffer/didmodifyrange_.md) method. This method updates a specific range of data and keeps the buffer synchronized. Before calling this method, the modified buffer’s data on the GPU is in an undefined state.
 
 **Swift**:
 
@@ -84,7 +85,7 @@ matrixBuffer.didModifyRange(0..<MemoryLayout<matrix_float4x4>.size)
 [_matrixBuffer didModifyRange:NSMakeRange(0, sizeof(matrixData->modelMatrix))];
 ```
 
-After encoding a GPU modification, encode a [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) command. This command updates the entire buffer and keeps it synchronized. Before executing this command, the modified buffer’s data on the CPU is in an undefined state.
+After encoding a GPU modification, encode a [`synchronize(resource:)`](./mtlblitcommandencoder/synchronize%28resource%29.md) command. This command updates the entire buffer and keeps it synchronized. Before executing this command, the modified buffer’s data on the CPU is in an undefined state.
 
 **Swift**:
 
@@ -137,9 +138,9 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 [commandBuffer commit];
 ```
 
-##### Synchronize a Managed Texture
+##### Synchronize a managed texture
 
-First, create an [`MTLTexture`](mtltexture.md) in managed memory from an [`MTLTextureDescriptor`](mtltexturedescriptor.md) with its storage mode set to [`MTLStorageMode.managed`](mtlstoragemode/managed.md):
+First, create an [`MTLTexture`](./mtltexture.md) in managed memory from an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) with its storage mode set to [`MTLStorageMode.managed`](./mtlstoragemode/managed.md):
 
 **Swift**:
 
@@ -176,7 +177,7 @@ textureDescriptor.usage = MTLTextureUsageShaderRead | MTLTextureUsageShaderWrite
 _imageTexture = [_device newTextureWithDescriptor:textureDescriptor];
 ```
 
-To perform a CPU modification and simultaneously notify Metal about the change, call the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](mtltexture/replace(region:mipmaplevel:withbytes:bytesperrow:).md) method. This method updates a specific region of data and keeps the texture synchronized. To update a specific texture slice, call the [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](mtltexture/replace(region:mipmaplevel:slice:withbytes:bytesperrow:bytesperimage:).md) method instead. Before calling one of these methods, the modified texture’s data on the GPU is in an undefined state.
+To perform a CPU modification and simultaneously notify Metal about the change, call the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/replace%28region,mipmaplevel,withbytes,bytesperrow%29.md) method. This method updates a specific region of data and keeps the texture synchronized. To update a specific texture slice, call the [`replace(region:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:)`](./mtltexture/replace%28region,mipmaplevel,slice,withbytes,bytesperrow,bytesperimage%29.md) method instead. Before calling one of these methods, the modified texture’s data on the GPU is in an undefined state.
 
 **Swift**:
 
@@ -197,7 +198,7 @@ imageTexture.replace(region: region, mipmapLevel: 0, withBytes: textureData, byt
                  bytesPerRow:pixelSize*textureSize.width];
 ```
 
-After encoding a GPU modification, encode a [`synchronize(resource:)`](mtlblitcommandencoder/synchronize(resource:).md) command. This command updates the entire texture and keeps it synchronized. To update a specific texture slice or mipmap level, encode the [`synchronize(texture:slice:level:)`](mtlblitcommandencoder/synchronize(texture:slice:level:).md) command instead. Before executing this command, the modified texture’s data on the CPU is in an undefined state.
+After encoding a GPU modification, encode a [`synchronize(resource:)`](./mtlblitcommandencoder/synchronize%28resource%29.md) command. This command updates the entire texture and keeps it synchronized. To update a specific texture slice or mipmap level, encode the [`synchronize(texture:slice:level:)`](./mtlblitcommandencoder/synchronize%28texture,slice,level%29.md) command instead. Before executing this command, the modified texture’s data on the CPU is in an undefined state.
 
 **Swift**:
 
@@ -259,17 +260,18 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 
 ## See Also
 
-- [Setting resource storage modes](setting-resource-storage-modes.md)
+### Resource management
+- [Setting resource storage modes](./setting-resource-storage-modes.md)
   Set a storage mode that defines the memory location and access permissions of a resource.
-- [Choosing a resource storage mode for Apple GPUs](choosing-a-resource-storage-mode-for-apple-gpus.md)
+- [Choosing a resource storage mode for Apple GPUs](./choosing-a-resource-storage-mode-for-apple-gpus.md)
   Select an appropriate storage mode for your textures and buffers on Apple GPUs.
-- [Choosing a resource storage mode for Intel and AMD GPUs](choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
+- [Choosing a resource storage mode for Intel and AMD GPUs](./choosing-a-resource-storage-mode-for-intel-and-amd-gpus.md)
   Select an appropriate storage mode for your textures and buffers on AMD and Intel GPUs.
-- [Copying data to a private resource](copying-data-to-a-private-resource.md)
+- [Copying data to a private resource](./copying-data-to-a-private-resource.md)
   Use a blit command encoder to copy buffer or texture data to a private resource.
-- [Transferring data between connected GPUs](transferring-data-between-connected-gpus.md)
+- [Transferring data between connected GPUs](./transferring-data-between-connected-gpus.md)
   Use high-speed connections between GPUs to transfer data quickly.
-- [Reducing the memory footprint of Metal apps](reducing-the-memory-footprint-of-metal-apps.md)
+- [Reducing the memory footprint of Metal apps](./reducing-the-memory-footprint-of-metal-apps.md)
   Learn best practices for using memory efficiently in iOS and tvOS.
 
 

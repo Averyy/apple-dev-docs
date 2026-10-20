@@ -1,7 +1,8 @@
 # init(name:description:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tool for decoding machine-readable codes.
 

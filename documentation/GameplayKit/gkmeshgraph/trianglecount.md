@@ -1,7 +1,8 @@
 # triangleCount
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of triangles in the mesh.
 
@@ -19,17 +20,22 @@ The number of triangles in the mesh.
 var triangleCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger triangleCount;
+```
+
 #### Discussion
 
-This property’s value is valid only after calling the [`triangulate()`](gkmeshgraph/triangulate().md) to create a mesh around the current configuration of obstacles.
+This property’s value is valid only after calling the [`triangulate()`](./triangulate%28%29.md) to create a mesh around the current configuration of obstacles.
 
 ## See Also
 
-- [func triangulate()](gkmeshgraph/triangulate.md)
+### Managing the Mesh
+- [func triangulate()](./triangulate%28%29.md)
   Creates or updates the graph with a network of nodes that describes the open space around its obstacles.
-- [var triangulationMode: GKMeshGraphTriangulationMode](gkmeshgraph/triangulationmode.md)
+- [var triangulationMode: GKMeshGraphTriangulationMode](./triangulationmode.md)
   A set of options for how to place graph nodes when triangulating the graph.
-- [func triangle(at: Int) -> GKTriangle](gkmeshgraph/triangle(at:).md)
+- [func triangle(at: Int) -> GKTriangle](./triangle%28at%29.md)
   The triangle definition at the specified index.
 
 

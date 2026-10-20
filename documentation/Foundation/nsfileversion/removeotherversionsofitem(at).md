@@ -1,7 +1,8 @@
 # removeOtherVersionsOfItem(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes all versions of a file, except the current one, from the version store.
 
@@ -20,6 +21,10 @@ Removes all versions of a file, except the current one, from the version store.
 class func removeOtherVersionsOfItem(at url: URL) throws
 ```
 
+```objc
++ (BOOL) removeOtherVersionsOfItemAtURL:(NSURL *) url error:(NSError **) outError;
+```
+
 #### Discussion
 
 This method removes all versions except the current one from the version store, freeing up the associated storage space.
@@ -28,7 +33,9 @@ You should always remove file versions as part of a coordinated write operation 
 
 If successful, subsequent requests for the versions of the file reflect that only the current version is available. You can use this method to free up disk space by removing versions that are no longer needed.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -36,9 +43,10 @@ If successful, subsequent requests for the versions of the file reflect that onl
 
 ## See Also
 
-- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](nsfileversion/replaceitem(at:options:).md)
+### Replacing and Deleting Versions
+- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](./replaceitem%28at,options%29.md)
   Replace the contents of the specified file with the contents of the current version’s file.
-- [func remove() throws](nsfileversion/remove.md)
+- [func remove() throws](./remove%28%29.md)
   Remove this version object and its associated file from the version store.
 
 

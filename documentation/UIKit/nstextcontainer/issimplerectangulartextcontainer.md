@@ -1,7 +1,8 @@
 # isSimpleRectangularTextContainer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the text container’s region is a rectangle with no holes or gaps, and whose edges are parallel to the text view’s coordinate system axes.
 
@@ -18,17 +19,22 @@ A Boolean that indicates whether the text container’s region is a rectangle wi
 var isSimpleRectangularTextContainer: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSimpleRectangularTextContainer) BOOL simpleRectangularTextContainer;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the text container’s region is a rectangle with no holes or gaps and the edges are parallel to the text view’s coordinate system axes. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) when the [`exclusionPaths`](nstextcontainer/exclusionpaths.md) property contains one or more items, when the [`maximumNumberOfLines`](nstextcontainer/maximumnumberoflines.md) property is not zero, or when you override the [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md) method. Otherwise, the default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The value of this property is [`true`](../../Swift/true.md) when the text container’s region is a rectangle with no holes or gaps and the edges are parallel to the text view’s coordinate system axes. The default value of this property is [`false`](../../Swift/false.md) when the [`exclusionPaths`](./exclusionpaths.md) property contains one or more items, when the [`maximumNumberOfLines`](./maximumnumberoflines.md) property is not zero, or when you override the [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md) method. Otherwise, the default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var maximumNumberOfLines: Int](nstextcontainer/maximumnumberoflines.md)
+### Constraining text layout
+- [var maximumNumberOfLines: Int](./maximumnumberoflines.md)
   The maximum number of lines that the text container can store.
-- [var lineFragmentPadding: CGFloat](nstextcontainer/linefragmentpadding.md)
+- [var lineFragmentPadding: CGFloat](./linefragmentpadding.md)
   The value for the text inset within line fragment rectangles.
-- [func lineFragmentRect(forProposedRect: CGRect, at: Int, writingDirection: NSWritingDirection, remaining: UnsafeMutablePointer<CGRect>?) -> CGRect](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md)
+- [func lineFragmentRect(forProposedRect: CGRect, at: Int, writingDirection: NSWritingDirection, remaining: UnsafeMutablePointer<CGRect>?) -> CGRect](./linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md)
   Returns the bounds of a line fragment rectangle inside the text container for the proposed rectangle.
 
 

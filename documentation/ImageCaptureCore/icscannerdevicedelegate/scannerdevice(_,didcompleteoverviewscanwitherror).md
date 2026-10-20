@@ -1,7 +1,8 @@
 # scannerDevice(_:didCompleteOverviewScanWithError:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the client when the scanner completes an overview scan.
 
@@ -14,13 +15,18 @@ Tells the client when the scanner completes an overview scan.
 optional func scannerDevice(_ scanner: ICScannerDevice, didCompleteOverviewScanWithError error: (any Error)?)
 ```
 
+```objc
+- (void) scannerDevice:(ICScannerDevice *) scanner didCompleteOverviewScanWithError:(NSError *) error;
+```
+
 ## See Also
 
-- [func scannerDevice(ICScannerDevice, didCompleteScanWithError: (any Error)?)](icscannerdevicedelegate/scannerdevice(_:didcompletescanwitherror:).md)
+### Performing a Scan
+- [func scannerDevice(ICScannerDevice, didCompleteScanWithError: (any Error)?)](./scannerdevice%28_,didcompletescanwitherror%29.md)
   Tells the client when the scanner completes a scan.
-- [func scannerDevice(ICScannerDevice, didScanTo: ICScannerBandData)](icscannerdevicedelegate/scannerdevice(_:didscanto:)-6tht3.md)
+- [func scannerDevice(ICScannerDevice, didScanTo: ICScannerBandData)](./scannerdevice%28_,didscanto%29-6tht3.md)
   Tells the client when the scanner receives the requested scan progress notification and a band of data is sent for each notification received.
-- [func scannerDevice(ICScannerDevice, didScanTo: URL)](icscannerdevicedelegate/scannerdevice(_:didscanto:)-10whl.md)
+- [func scannerDevice(ICScannerDevice, didScanTo: URL)](./scannerdevice%28_,didscanto%29-10whl.md)
   Tells the client when the scanner receives the requested scan.
 
 

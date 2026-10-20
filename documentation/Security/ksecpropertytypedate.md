@@ -1,7 +1,8 @@
 # kSecPropertyTypeDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a key whose value is a string containing a date (or a string listing the bytes of an invalid date).
 
@@ -12,6 +13,10 @@ Specifies a key whose value is a string containing a date (or a string listing t
 
 ```swift
 let kSecPropertyTypeDate: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeDate;
 ```
 
 

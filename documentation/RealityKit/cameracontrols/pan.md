@@ -1,7 +1,8 @@
 # pan
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Move the viewport up, left, right, or down by dragging a trackpad or mouse.
 

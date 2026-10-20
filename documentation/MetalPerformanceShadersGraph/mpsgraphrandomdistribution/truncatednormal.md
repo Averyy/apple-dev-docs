@@ -1,7 +1,8 @@
 # MPSGraphRandomDistribution.truncatedNormal
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The normal distribution defined by mean and standard deviation, truncated to the range [min, max)
 
@@ -17,6 +18,10 @@ The normal distribution defined by mean and standard deviation, truncated to the
 
 ```swift
 case truncatedNormal
+```
+
+```c
+MPSGraphRandomDistributionTruncatedNormal
 ```
 
 

@@ -1,7 +1,8 @@
 # Create an Ad
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Creates a new ad that links an ad creative to an ad group for delivery.
 
@@ -111,17 +112,34 @@ POST /v1/ads
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AdCreate`
+
+## Responses
+
+- `200` OK (`AdResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Ads](post-ads-query.md)
+- [Query Ads](./post-ads-query.md)
   Searches and filters ads using structured query criteria including field filters, sorting, and pagination.
-- [Get an Ad](get-ads-_id_.md)
+- [Get an Ad](./get-ads-_id_.md)
   Retrieves a single ad by its unique identifier.
-- [Update an Ad](put-ads-_id_.md)
+- [Update an Ad](./put-ads-_id_.md)
   Updates the name or status of an existing ad by its unique identifier.
-- [Delete an Ad](delete-ads-_id_.md)
+- [Delete an Ad](./delete-ads-_id_.md)
   Soft-deletes an ad by its unique identifier, stopping delivery and removing it from active results.
 
 

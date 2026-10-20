@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a compute dispatch command with an arbitrarily sized grid, using an indirect buffer for arguments.
@@ -20,17 +21,22 @@ Encodes a compute dispatch command with an arbitrarily sized grid, using an indi
 func dispatchThreads(indirectBuffer: MTLGPUAddress)
 ```
 
+```objc
+- (void) dispatchThreadsWithIndirectBuffer:(MTLGPUAddress) indirectBuffer;
+```
+
 ## Parameters
 
-- `indirectBuffer`: GPUAddress of a [`MTLBuffer`](mtlbuffer.md) instance providing arguments. Lay out the data in this buffer as described in the [`MTLDispatchThreadsIndirectArguments`](mtldispatchthreadsindirectarguments.md) structure. This address requires 4-byte alignment.
+- `indirectBuffer`: GPUAddress of a [`MTLBuffer`](../mtlbuffer.md) instance providing arguments. Lay out the data in this buffer as described in the [`MTLDispatchThreadsIndirectArguments`](../mtldispatchthreadsindirectarguments.md) structure. This address requires 4-byte alignment.
 
 ## See Also
 
-- [func dispatchThreads(threadsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)](mtl4computecommandencoder/dispatchthreads(threadspergrid:threadsperthreadgroup:).md)
+### Running dispatch commands
+- [func dispatchThreads(threadsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)](./dispatchthreads%28threadspergrid,threadsperthreadgroup%29.md)
   Encodes a compute dispatch command using an arbitrarily-sized grid.
-- [func dispatchThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)](mtl4computecommandencoder/dispatchthreadgroups(threadgroupspergrid:threadsperthreadgroup:).md)
+- [func dispatchThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerThreadgroup: MTLSize)](./dispatchthreadgroups%28threadgroupspergrid,threadsperthreadgroup%29.md)
   Encodes a compute dispatch command with a grid that aligns to threadgroup boundaries.
-- [func dispatchThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerThreadgroup: MTLSize)](mtl4computecommandencoder/dispatchthreadgroups(indirectbuffer:threadsperthreadgroup:).md)
+- [func dispatchThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerThreadgroup: MTLSize)](./dispatchthreadgroups%28indirectbuffer,threadsperthreadgroup%29.md)
   Encodes a compute dispatch command with a grid that aligns to threadgroup boundaries, using an indirect buffer for arguments.
 
 

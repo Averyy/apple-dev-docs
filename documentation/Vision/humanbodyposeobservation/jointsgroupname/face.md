@@ -1,7 +1,8 @@
 # HumanBodyPoseObservation.JointsGroupName.face
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A group name that represents the face.
 
@@ -21,15 +22,16 @@ case face
 
 ## See Also
 
-- [HumanBodyPoseObservation.JointsGroupName.leftArm](humanbodyposeobservation/jointsgroupname/leftarm.md)
+### Getting the group names
+- [HumanBodyPoseObservation.JointsGroupName.leftArm](./leftarm.md)
   A group name that represents left arm.
-- [HumanBodyPoseObservation.JointsGroupName.leftLeg](humanbodyposeobservation/jointsgroupname/leftleg.md)
+- [HumanBodyPoseObservation.JointsGroupName.leftLeg](./leftleg.md)
   A group name that represents the left leg.
-- [HumanBodyPoseObservation.JointsGroupName.rightArm](humanbodyposeobservation/jointsgroupname/rightarm.md)
+- [HumanBodyPoseObservation.JointsGroupName.rightArm](./rightarm.md)
   A group name that represents the right arm.
-- [HumanBodyPoseObservation.JointsGroupName.rightLeg](humanbodyposeobservation/jointsgroupname/rightleg.md)
+- [HumanBodyPoseObservation.JointsGroupName.rightLeg](./rightleg.md)
   A group name that represents the right leg.
-- [HumanBodyPoseObservation.JointsGroupName.torso](humanbodyposeobservation/jointsgroupname/torso.md)
+- [HumanBodyPoseObservation.JointsGroupName.torso](./torso.md)
   A group name that represents the torso.
 
 

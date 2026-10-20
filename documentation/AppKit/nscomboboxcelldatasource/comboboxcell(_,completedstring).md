@@ -1,17 +1,22 @@
 # comboBoxCell(_:completedString:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the item from the combo box’s pop-up list that matches the text entered by the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func comboBoxCell(_ comboBoxCell: NSComboBoxCell, completedString uncompletedString: String) -> String?
+```
+
+```objc
+- (NSString *) comboBoxCell:(NSComboBoxCell *) comboBoxCell completedString:(NSString *) uncompletedString;
 ```
 
 #### Return Value
@@ -33,11 +38,12 @@ If you don’t implement this method, the receiver does not perform incremental 
 
 ## See Also
 
-- [func comboBoxCell(NSComboBoxCell, indexOfItemWithStringValue: String) -> Int](nscomboboxcelldatasource/comboboxcell(_:indexofitemwithstringvalue:).md)
+### Instance Methods
+- [func comboBoxCell(NSComboBoxCell, indexOfItemWithStringValue: String) -> Int](./comboboxcell%28_,indexofitemwithstringvalue%29.md)
   Invoked by an `NSComboBoxCell` object to synchronize the pop-up list’s selected item with the text field’s contents.
-- [func comboBoxCell(NSComboBoxCell, objectValueForItemAt: Int) -> Any](nscomboboxcelldatasource/comboboxcell(_:objectvalueforitemat:).md)
+- [func comboBoxCell(NSComboBoxCell, objectValueForItemAt: Int) -> Any](./comboboxcell%28_,objectvalueforitemat%29.md)
   Returns the object that corresponds to the item at the given index in the combo box cell.
-- [func numberOfItems(in: NSComboBoxCell) -> Int](nscomboboxcelldatasource/numberofitems(in:).md)
+- [func numberOfItems(in: NSComboBoxCell) -> Int](./numberofitems%28in%29.md)
   Returns the number of items managed for the combo box cell by your data source object.
 
 

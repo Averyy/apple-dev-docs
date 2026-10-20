@@ -1,12 +1,13 @@
 # NSTokenField.TokenStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The NSTokenStyle constants define how tokens are displayed and editable in the `NSTokenFieldCell`. These values are used by [`tokenStyle`](nstokenfieldcell/tokenstyle.md) and the delegate method [`tokenFieldCell(_:styleForRepresentedObject:)`](nstokenfieldcelldelegate/tokenfieldcell(_:styleforrepresentedobject:).md).
+The NSTokenStyle constants define how tokens are displayed and editable in the `NSTokenFieldCell`. These values are used by [`tokenStyle`](../nstokenfieldcell/tokenstyle.md) and the delegate method [`tokenFieldCell(_:styleForRepresentedObject:)`](../nstokenfieldcelldelegate/tokenfieldcell%28_,styleforrepresentedobject%29.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,26 +15,30 @@ The NSTokenStyle constants define how tokens are displayed and editable in the `
 enum TokenStyle
 ```
 
+```c
+enum NSTokenStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSTokenField.TokenStyle.default](nstokenfield/tokenstyle-swift.enum/default.md)
-- [NSTokenField.TokenStyle.none](nstokenfield/tokenstyle-swift.enum/none.md)
-- [NSTokenField.TokenStyle.plainSquared](nstokenfield/tokenstyle-swift.enum/plainsquared.md)
-- [NSTokenField.TokenStyle.rounded](nstokenfield/tokenstyle-swift.enum/rounded.md)
-- [NSTokenField.TokenStyle.squared](nstokenfield/tokenstyle-swift.enum/squared.md)
+- [NSTokenField.TokenStyle.default](./tokenstyle-swift.enum/default.md)
+- [NSTokenField.TokenStyle.none](./tokenstyle-swift.enum/none.md)
+- [NSTokenField.TokenStyle.plainSquared](./tokenstyle-swift.enum/plainsquared.md)
+- [NSTokenField.TokenStyle.rounded](./tokenstyle-swift.enum/rounded.md)
+- [NSTokenField.TokenStyle.squared](./tokenstyle-swift.enum/squared.md)
 ### Initializers
-- [init?(rawValue: UInt)](nstokenfield/tokenstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./tokenstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

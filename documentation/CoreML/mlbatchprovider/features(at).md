@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the feature provider at the given index.
@@ -21,6 +22,10 @@ Returns the feature provider at the given index.
 func features(at index: Int) -> any MLFeatureProvider
 ```
 
+```objc
+- (id<MLFeatureProvider>) featuresAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
 The feature provider at the given index.
@@ -31,7 +36,8 @@ The feature provider at the given index.
 
 ## See Also
 
-- [var count: Int](mlbatchprovider/count.md)
+### Accessing values
+- [var count: Int](./count.md)
   The number of feature providers in this batch.
 
 

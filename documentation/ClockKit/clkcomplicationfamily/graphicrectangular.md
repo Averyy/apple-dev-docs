@@ -1,7 +1,8 @@
 # CLKComplicationFamily.graphicRectangular
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A large rectangular area that ClockKit displays in the center of the Infograph Modular watch face.
 
@@ -14,21 +15,26 @@ A large rectangular area that ClockKit displays in the center of the Infograph M
 case graphicRectangular
 ```
 
+```c
+CLKComplicationFamilyGraphicRectangular
+```
+
 #### Discussion
 
 The following figure shows the size and location of the graphic rectangular complication.
 
-![Diagram showing the size and position of a graphic rectangular complication.](/images/com.apple.clockkit/media-3030700@2x.png)
+![Diagram showing the size and position of a graphic rectangular complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3030700@2x.png)
 
 ## See Also
 
-- [CLKComplicationFamily.graphicCorner](clkcomplicationfamily/graphiccorner.md)
+### Graphic
+- [CLKComplicationFamily.graphicCorner](./graphiccorner.md)
   A curved area that fills the corners in the Infograph watch face.
-- [CLKComplicationFamily.graphicCircular](clkcomplicationfamily/graphiccircular.md)
+- [CLKComplicationFamily.graphicCircular](./graphiccircular.md)
   A circular area that ClockKit displays on the Infograph and Infograph Modular watch faces.
-- [CLKComplicationFamily.graphicBezel](clkcomplicationfamily/graphicbezel.md)
+- [CLKComplicationFamily.graphicBezel](./graphicbezel.md)
   A circular area with optional curved text that ClockKit displays along the bezel of the Infograph watch face.
-- [CLKComplicationFamily.graphicExtraLarge](clkcomplicationfamily/graphicextralarge.md)
+- [CLKComplicationFamily.graphicExtraLarge](./graphicextralarge.md)
   A large square area that ClockKit displays on the X-Large watch face.
 
 

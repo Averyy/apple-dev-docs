@@ -1,7 +1,8 @@
 # affiliateToken
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An affiliate token for the Apple Services affiliate program.
 

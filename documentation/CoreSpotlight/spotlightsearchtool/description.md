@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A natural language description of when and how to use the Spotlight search tool.
 
@@ -20,7 +21,7 @@ var description: String { get }
 
 #### Discussion
 
-The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 
 
 ---

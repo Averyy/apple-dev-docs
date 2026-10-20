@@ -1,7 +1,8 @@
 # EnvironmentObject
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type for an observable object that a parent or ancestor view supplies.
 
@@ -23,35 +24,36 @@ A property wrapper type for an observable object that a parent or ancestor view 
 
 #### Overview
 
-An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
+An environment object invalidates the current view whenever the observable object that conforms to [`ObservableObject`](../Combine/observableobject.md) changes. If you declare a property as an environment object, be sure to set a corresponding model object on an ancestor view by calling its [`environmentObject(_:)`](./view/environmentobject%28_%29.md) modifier.
 
-> **Note**: If your observable object conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, use [`Environment`](environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](view/environment(_:).md) or [`environment(_:_:)`](view/environment(_:_:).md) modifiers.
+> **Note**: If your observable object conforms to the [`Observable`](../Observation/observable.md) protocol, use [`Environment`](./environment.md) instead of `EnvironmentObject` and set the model object in an ancestor view by calling its [`environment(_:)`](./view/environment%28_%29.md) or [`environment(_:_:)`](./view/environment%28_,_%29.md) modifiers.
 
 ## Topics
 
 ### Creating an environment object
-- [init()](environmentobject/init.md)
+- [init()](./environmentobject/init%28%29.md)
   Creates an environment object.
 ### Getting the value
-- [var wrappedValue: ObjectType](environmentobject/wrappedvalue.md)
+- [var wrappedValue: ObjectType](./environmentobject/wrappedvalue.md)
   The underlying value referenced by the environment object.
-- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](environmentobject/projectedvalue.md)
+- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](./environmentobject/projectedvalue.md)
   A projection of the environment object that creates bindings to its properties using dynamic member lookup.
-- [EnvironmentObject.Wrapper](environmentobject/wrapper.md)
+- [EnvironmentObject.Wrapper](./environmentobject/wrapper.md)
   A wrapper of the underlying environment object that can create bindings to its properties using dynamic member lookup.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func environmentObject<T>(T) -> some View](view/environmentobject(_:).md)
+### Distributing model data throughout your app
+- [func environmentObject<T>(T) -> some View](./view/environmentobject%28_%29.md)
   Supplies an observable object to a view’s hierarchy.
-- [func environmentObject<T>(T) -> some Scene](scene/environmentobject(_:).md)
+- [func environmentObject<T>(T) -> some Scene](./scene/environmentobject%28_%29.md)
   Supplies an `ObservableObject` to a view subhierarchy.
 
 

@@ -1,7 +1,8 @@
 # supportsDestination(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks to see whether a particular capture destination is supported.
 
@@ -17,6 +18,10 @@ Checks to see whether a particular capture destination is supported.
 
 ```swift
 func supportsDestination(_ destination: MTLCaptureDestination) -> Bool
+```
+
+```objc
+- (BOOL) supportsDestination:(MTLCaptureDestination) destination;
 ```
 
 ## Parameters

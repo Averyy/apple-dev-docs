@@ -1,7 +1,8 @@
 # DictationTranscriber.ResultAttributeOption
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options relating to the attributes of the transcription.
 
@@ -21,27 +22,28 @@ enum ResultAttributeOption
 ## Topics
 
 ### Result attribute options
-- [DictationTranscriber.ResultAttributeOption.audioTimeRange](dictationtranscriber/resultattributeoption/audiotimerange.md)
+- [DictationTranscriber.ResultAttributeOption.audioTimeRange](./resultattributeoption/audiotimerange.md)
   Includes time-code attributes in a transcription’s attributed string.
-- [DictationTranscriber.ResultAttributeOption.transcriptionConfidence](dictationtranscriber/resultattributeoption/transcriptionconfidence.md)
+- [DictationTranscriber.ResultAttributeOption.transcriptionConfidence](./resultattributeoption/transcriptionconfidence.md)
   Includes confidence attributes in a transcription’s attributed string.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DictationTranscriber.ContentHint](dictationtranscriber/contenthint.md)
+### Configuring transcription
+- [DictationTranscriber.ContentHint](./contenthint.md)
   Expected characteristics of the spoken audio content and its delivery.
-- [DictationTranscriber.ReportingOption](dictationtranscriber/reportingoption.md)
+- [DictationTranscriber.ReportingOption](./reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [DictationTranscriber.TranscriptionOption](dictationtranscriber/transcriptionoption.md)
+- [DictationTranscriber.TranscriptionOption](./transcriptionoption.md)
   Options relating to the text of the transcription.
 
 

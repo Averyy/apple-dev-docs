@@ -1,14 +1,15 @@
 # kDriverIsLoadedAtBoot
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kDriverIsLoadedAtBoot = 0x00000020
 ```
 

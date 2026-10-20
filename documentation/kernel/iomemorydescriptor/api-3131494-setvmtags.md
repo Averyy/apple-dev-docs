@@ -1,28 +1,30 @@
 # setVMTags
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 void setVMTags(uint32_t kernelTag, uint32_t userTag);
 ```
 
 ## See Also
 
-- [getTag](iomemorydescriptor/1812815-gettag.md)
+### Accessing the Buffer's Tag
+- [getTag](./api-1812815-gettag.md)
   Accessor to the retrieve the tag for the memory descriptor.
-- [- getTag](iomemorydescriptor/1442070-gettag.md)
+- [- getTag](./api-1442070-gettag.md)
   Accessor to the retrieve the tag for the memory descriptor.
-- [setTag](iomemorydescriptor/1812873-settag.md)
+- [setTag](./api-1812873-settag.md)
   Set the tag for the memory descriptor.
-- [- setTag](iomemorydescriptor/1441787-settag.md)
+- [- setTag](./api-1441787-settag.md)
   Set the tag for the memory descriptor.
-- [- getVMTag](iomemorydescriptor/3131493-getvmtag.md)
+- [- getVMTag](./api-3131493-getvmtag.md)
 
 
 ---

@@ -1,17 +1,22 @@
 # length
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space in the status bar that should be allocated to the status item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var length: CGFloat { get set }
+```
+
+```objc
+@property CGFloat length;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ If the status bar is horizontal, the value of this property is the width of the 
 
 ## See Also
 
-- [var isVisible: Bool](nsstatusitem/isvisible.md)
+### Configuring the status item’s appearance
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value indicating if the menu bar currently displays the status item.
-- [class let squareLength: CGFloat](nsstatusitem/squarelength.md)
+- [class let squareLength: CGFloat](./squarelength.md)
   A status item length that is equal to the status bar’s thickness.
-- [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
+- [class let variableLength: CGFloat](./variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
-- [var view: NSView?](nsstatusitem/view.md)
+- [var view: NSView?](./view.md)
   The custom view the status item displays at its position in the status bar.
 
 

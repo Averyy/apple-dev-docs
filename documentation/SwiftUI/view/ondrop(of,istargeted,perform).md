@@ -1,7 +1,8 @@
 # onDrop(of:isTargeted:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
 
@@ -19,6 +20,23 @@ nonisolated
 func onDrop(of supportedContentTypes: [UTType], isTargeted: Binding<Bool>?, perform action: @escaping ([NSItemProvider]) -> Bool) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func onDrop(of supportedContentTypes: [UTType], isTargeted: Binding<Bool>?, perform action: @escaping ([NSItemProvider], CGPoint) -> Bool) -> some View
+```
+
+```swift
+nonisolated
+func onDrop(of supportedTypes: [String], isTargeted: Binding<Bool>?, perform action: @escaping ([NSItemProvider]) -> Bool) -> some View
+```
+
+```swift
+nonisolated
+func onDrop(of supportedTypes: [String], isTargeted: Binding<Bool>?, perform action: @escaping ([NSItemProvider], CGPoint) -> Bool) -> some View
+```
+
 #### Return Value
 
 A view that provides a drop destination for a drag operation of the specified types.
@@ -29,7 +47,7 @@ The drop destination is the same size and position as this view.
 
 Make sure to start loading the contents of `NSItemProvider` instances within the scope of the `action` closure. Do not perform loading asynchronously on a different actor. Loading the contents may finish later, but it must start here. For security reasons, the drop receiver can access the dropped payload only before this closure returns.
 
-To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) instead.
+To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](../dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](./dropdestination%28for,isenabled,action%29.md) instead.
 
 ## Parameters
 
@@ -39,21 +57,22 @@ To use `Transferable` types directly and access a richer feature set — includi
 
 ## See Also
 
-- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](view/itemprovider(_:).md)
+### Moving items using item providers
+- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](./itemprovider%28_%29.md)
   Provides a closure that vends the drag representation to be used for a particular data element.
-- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
+- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](./ondrag%28_,preview%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
+- [func onDrag(() -> NSItemProvider) -> some View](./ondrag%28_%29.md)
   Activates this view as the source of a drag and drop operation.
-- [func onDrop(of:delegate:)](view/ondrop(of:delegate:).md)
+- [func onDrop(of:delegate:)](./ondrop%28of,delegate%29.md)
   Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
-- [protocol DropDelegate](dropdelegate.md)
+- [protocol DropDelegate](../dropdelegate.md)
   An interface that you implement to interact with a drop operation in a view modified to accept drops.
-- [struct DropProposal](dropproposal.md)
+- [struct DropProposal](../dropproposal.md)
   The behavior of a drop.
-- [enum DropOperation](dropoperation.md)
+- [enum DropOperation](../dropoperation.md)
   Operation types that determine how a drag and drop session resolves when the user drops a drag item.
-- [struct DropInfo](dropinfo.md)
+- [struct DropInfo](../dropinfo.md)
   The current state of a drop.
 
 

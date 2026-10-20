@@ -1,7 +1,8 @@
 # files(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a source that retrieves data from the files and directories you specify.
 
@@ -20,7 +21,8 @@ static func files(_ source: FileSource) -> SearchSource
 
 ## See Also
 
-- [static var files: SearchSource](searchsource/files.md)
+### Searching files and directories
+- [static var files: SearchSource](./files.md)
   A source that retrieves data from the files and directories you specify.
 
 

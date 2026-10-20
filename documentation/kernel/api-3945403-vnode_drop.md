@@ -1,14 +1,15 @@
 # vnode_drop
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 vnode_t vnode_drop(vnode_t vp);
 ```
 

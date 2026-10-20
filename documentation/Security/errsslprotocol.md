@@ -1,7 +1,8 @@
 # errSSLProtocol
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 SSL protocol error.
 
@@ -18,6 +19,10 @@ SSL protocol error.
 
 ```swift
 var errSSLProtocol: OSStatus { get }
+```
+
+```c
+errSSLProtocol
 ```
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a CPU metric that records data for the current process.
 
@@ -19,11 +20,16 @@ Creates a CPU metric that records data for the current process.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(application: XCUIApplication)](xctcpumetric/init(application:).md)
+### Initializers
+- [init(application: XCUIApplication)](./init%28application%29.md)
   Creates a CPU metric that records data for the requested app.
-- [init(limitingToCurrentThread: Bool)](xctcpumetric/init(limitingtocurrentthread:).md)
+- [init(limitingToCurrentThread: Bool)](./init%28limitingtocurrentthread%29.md)
   Creates a CPU metric that optionally records data only for the current thread.
 
 

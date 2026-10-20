@@ -1,7 +1,8 @@
 # play()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that tells an audio node to start playback.
 
@@ -20,47 +21,52 @@ Creates an action that tells an audio node to start playback.
 class func play() -> SKAction
 ```
 
+```objc
++ (SKAction *) play;
+```
+
 #### Return Value
 
 A new action object.
 
 #### Discussion
 
-This action may only be executed on an [`SKAudioNode`](skaudionode.md) object.
+This action may only be executed on an [`SKAudioNode`](../skaudionode.md) object.
 
 This action is not reversible.
 
 ## See Also
 
-- [class func playSoundFileNamed(String, waitForCompletion: Bool) -> SKAction](skaction/playsoundfilenamed(_:waitforcompletion:).md)
+### Controlling the Audio of a Node
+- [class func playSoundFileNamed(String, waitForCompletion: Bool) -> SKAction](./playsoundfilenamed%28_,waitforcompletion%29.md)
   Creates an action that plays a sound.
-- [class func pause() -> SKAction](skaction/pause.md)
+- [class func pause() -> SKAction](./pause%28%29.md)
   Creates an action that tells an audio node to pause playback.
-- [class func stop() -> SKAction](skaction/stop.md)
+- [class func stop() -> SKAction](./stop%28%29.md)
   Creates an action that tells an audio node to stop playback.
-- [class func changePlaybackRate(to: Float, duration: TimeInterval) -> SKAction](skaction/changeplaybackrate(to:duration:).md)
+- [class func changePlaybackRate(to: Float, duration: TimeInterval) -> SKAction](./changeplaybackrate%28to,duration%29.md)
   Creates an action that changes an audio node’s playback rate to a new value.
-- [class func changePlaybackRate(by: Float, duration: TimeInterval) -> SKAction](skaction/changeplaybackrate(by:duration:).md)
+- [class func changePlaybackRate(by: Float, duration: TimeInterval) -> SKAction](./changeplaybackrate%28by,duration%29.md)
   Creates an action that changes an audio node’s playback rate by a relative amount.
-- [class func changeVolume(to: Float, duration: TimeInterval) -> SKAction](skaction/changevolume(to:duration:).md)
+- [class func changeVolume(to: Float, duration: TimeInterval) -> SKAction](./changevolume%28to,duration%29.md)
   Creates an action that changes an audio node’s volume to a new value.
-- [class func changeVolume(by: Float, duration: TimeInterval) -> SKAction](skaction/changevolume(by:duration:).md)
+- [class func changeVolume(by: Float, duration: TimeInterval) -> SKAction](./changevolume%28by,duration%29.md)
   Creates an action that changes an audio node’s volume by a relative value.
-- [class func changeObstruction(to: Float, duration: TimeInterval) -> SKAction](skaction/changeobstruction(to:duration:).md)
+- [class func changeObstruction(to: Float, duration: TimeInterval) -> SKAction](./changeobstruction%28to,duration%29.md)
   Creates an action that changes an audio node’s obstruction to a new value.
-- [class func changeObstruction(by: Float, duration: TimeInterval) -> SKAction](skaction/changeobstruction(by:duration:).md)
+- [class func changeObstruction(by: Float, duration: TimeInterval) -> SKAction](./changeobstruction%28by,duration%29.md)
   Creates an action that changes an audio node’s obstruction by a relative value.
-- [class func changeOcclusion(to: Float, duration: TimeInterval) -> SKAction](skaction/changeocclusion(to:duration:).md)
+- [class func changeOcclusion(to: Float, duration: TimeInterval) -> SKAction](./changeocclusion%28to,duration%29.md)
   Creates an action that changes an audio node’s occlusion to a new value.
-- [class func changeOcclusion(by: Float, duration: TimeInterval) -> SKAction](skaction/changeocclusion(by:duration:).md)
+- [class func changeOcclusion(by: Float, duration: TimeInterval) -> SKAction](./changeocclusion%28by,duration%29.md)
   Creates an action that changes an audio node’s occlusion by a relative value.
-- [class func changeReverb(to: Float, duration: TimeInterval) -> SKAction](skaction/changereverb(to:duration:).md)
+- [class func changeReverb(to: Float, duration: TimeInterval) -> SKAction](./changereverb%28to,duration%29.md)
   Creates an action that changes an audio node’s reverb to a new value.
-- [class func changeReverb(by: Float, duration: TimeInterval) -> SKAction](skaction/changereverb(by:duration:).md)
+- [class func changeReverb(by: Float, duration: TimeInterval) -> SKAction](./changereverb%28by,duration%29.md)
   Creates an action that changes an audio node’s reverb by a relative value.
-- [class func stereoPan(to: Float, duration: TimeInterval) -> SKAction](skaction/stereopan(to:duration:).md)
+- [class func stereoPan(to: Float, duration: TimeInterval) -> SKAction](./stereopan%28to,duration%29.md)
   Creates an action that changes an audio node’s stereo panning to a new value.
-- [class func stereoPan(by: Float, duration: TimeInterval) -> SKAction](skaction/stereopan(by:duration:).md)
+- [class func stereoPan(by: Float, duration: TimeInterval) -> SKAction](./stereopan%28by,duration%29.md)
   Creates an action that changes an audio node’s stereo panning by a relative value.
 
 

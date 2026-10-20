@@ -1,7 +1,8 @@
 # free
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the level control.
 
@@ -10,7 +11,7 @@ Frees the level control.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

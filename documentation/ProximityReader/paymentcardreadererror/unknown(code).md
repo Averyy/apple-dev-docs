@@ -1,7 +1,8 @@
 # PaymentCardReaderError.unknown(code:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unexpected error happened, try again.
 
@@ -22,35 +23,36 @@ If the error persists, contact support with the provided code.
 
 ## See Also
 
-- [PaymentCardReaderError.accountAlreadyLinked](paymentcardreadererror/accountalreadylinked.md)
+### Getting the error code
+- [PaymentCardReaderError.accountAlreadyLinked](./accountalreadylinked.md)
   An error that indicates the merchant already accepted the Terms and Conditions.
-- [PaymentCardReaderError.accountDeactivated](paymentcardreadererror/accountdeactivated.md)
+- [PaymentCardReaderError.accountDeactivated](./accountdeactivated.md)
   An error that indicates the linked Apple Account account has been deactivated by the merchant.
-- [PaymentCardReaderError.accountLinkingCancelled](paymentcardreadererror/accountlinkingcancelled.md)
+- [PaymentCardReaderError.accountLinkingCancelled](./accountlinkingcancelled.md)
   An error that indicates the user cancelled the linking or relinking operation.
-- [PaymentCardReaderError.accountLinkingCheckFailed](paymentcardreadererror/accountlinkingcheckfailed.md)
+- [PaymentCardReaderError.accountLinkingCheckFailed](./accountlinkingcheckfailed.md)
   An error that indicates the system couldn’t check the account status of the merchant.
-- [PaymentCardReaderError.accountLinkingFailed](paymentcardreadererror/accountlinkingfailed.md)
+- [PaymentCardReaderError.accountLinkingFailed](./accountlinkingfailed.md)
   An error that indicates the system couldn’t link or relink the merchant using the provided Apple Account.
-- [PaymentCardReaderError.accountLinkingRequiresiCloudSignIn](paymentcardreadererror/accountlinkingrequiresicloudsignin.md)
+- [PaymentCardReaderError.accountLinkingRequiresiCloudSignIn](./accountlinkingrequiresicloudsignin.md)
   An error that indicates the merchant must be signed into an Apple Account on the device to accept the Terms and Conditions.
-- [PaymentCardReaderError.accountNotLinked](paymentcardreadererror/accountnotlinked.md)
+- [PaymentCardReaderError.accountNotLinked](./accountnotlinked.md)
   An error that indicates the merchant must accept the Terms and Conditions with a valid Apple Account.
-- [PaymentCardReaderError.backgroundRequestNotAllowed](paymentcardreadererror/backgroundrequestnotallowed.md)
+- [PaymentCardReaderError.backgroundRequestNotAllowed](./backgroundrequestnotallowed.md)
   An error that results from requests to the reader while the host app is in the background state.
-- [PaymentCardReaderError.deviceBanned(_:)](paymentcardreadererror/devicebanned(_:).md)
+- [PaymentCardReaderError.deviceBanned(_:)](./devicebanned%28_%29.md)
   An error that indicates the device is banned until the specified date.
-- [PaymentCardReaderError.emptyReaderToken](paymentcardreadererror/emptyreadertoken.md)
+- [PaymentCardReaderError.emptyReaderToken](./emptyreadertoken.md)
   An error that indicates the reader token is empty, which is invalid.
-- [PaymentCardReaderError.invalidMerchant](paymentcardreadererror/invalidmerchant.md)
+- [PaymentCardReaderError.invalidMerchant](./invalidmerchant.md)
   An error that indicates the merchant is invalid or unknown.
-- [PaymentCardReaderError.invalidReaderToken(_:)](paymentcardreadererror/invalidreadertoken(_:).md)
+- [PaymentCardReaderError.invalidReaderToken(_:)](./invalidreadertoken%28_%29.md)
   An error that indicates an invalid, non-empty reader token.
-- [PaymentCardReaderError.merchantBlocked](paymentcardreadererror/merchantblocked.md)
+- [PaymentCardReaderError.merchantBlocked](./merchantblocked.md)
   An error that indicates the merchant is blocked.
-- [PaymentCardReaderError.modelNotSupported](paymentcardreadererror/modelnotsupported.md)
+- [PaymentCardReaderError.modelNotSupported](./modelnotsupported.md)
   An error that indicates the current device isn’t supported.
-- [PaymentCardReaderError.networkAuthenticationError](paymentcardreadererror/networkauthenticationerror.md)
+- [PaymentCardReaderError.networkAuthenticationError](./networkauthenticationerror.md)
   An authentication error that occurred during connection to the server.
 
 

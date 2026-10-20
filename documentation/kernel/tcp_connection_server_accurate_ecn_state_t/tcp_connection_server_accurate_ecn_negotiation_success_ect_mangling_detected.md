@@ -1,14 +1,15 @@
 # tcp_connection_server_accurate_ecn_negotiation_success_ect_mangling_detected
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 tcp_connection_server_accurate_ecn_negotiation_success_ect_mangling_detected = 9
 ```
 

@@ -1,7 +1,8 @@
 # free
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees the audio stream.
 
@@ -10,7 +11,7 @@ Frees the audio stream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 

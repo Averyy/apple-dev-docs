@@ -1,14 +1,15 @@
 # IdentityDocumentProviderRegistrationStore.RegistrationError.notAuthorized
 
 **Framework**: IdentityDocumentServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the device is not authorized to interact with the identity document provider registration store.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

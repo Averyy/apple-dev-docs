@@ -1,7 +1,8 @@
 # errSecNoSuchKeychain
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keychain does not exist.
 
@@ -18,6 +19,10 @@ The keychain does not exist.
 
 ```swift
 var errSecNoSuchKeychain: OSStatus { get }
+```
+
+```c
+errSecNoSuchKeychain
 ```
 
 

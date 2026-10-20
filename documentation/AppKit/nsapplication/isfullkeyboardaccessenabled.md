@@ -1,7 +1,8 @@
 # isFullKeyboardAccessEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether Full Keyboard Access is enabled in the Keyboard preference pane.
 
@@ -14,9 +15,13 @@ A Boolean value indicating whether Full Keyboard Access is enabled in the Keyboa
 var isFullKeyboardAccessEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isFullKeyboardAccessEnabled) BOOL fullKeyboardAccessEnabled;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if Full Keyboard Access is enabled or [`false`](https://developer.apple.com/documentation/swift/false) if it’s not. You might use this value to implement your own key loop or to implement in-control tabbing behavior similar to [`NSTableView`](nstableview.md). Because of the nature of the preference storage, you won’t be notified of changes to this property if you attempt to observe it through key-value observing; however, accessing this property is fairly inexpensive, so you can access it directly rather than caching it.
+The value of this property is [`true`](../../Swift/true.md) if Full Keyboard Access is enabled or [`false`](../../Swift/false.md) if it’s not. You might use this value to implement your own key loop or to implement in-control tabbing behavior similar to [`NSTableView`](../nstableview.md). Because of the nature of the preference storage, you won’t be notified of changes to this property if you attempt to observe it through key-value observing; however, accessing this property is fairly inexpensive, so you can access it directly rather than caching it.
 
 
 ---

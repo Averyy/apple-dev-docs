@@ -1,7 +1,8 @@
 # setPropertyList(_:forType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value for a specified type as a property list.
 
@@ -14,9 +15,13 @@ Sets the value for a specified type as a property list.
 func setPropertyList(_ propertyList: Any, forType type: NSPasteboard.PasteboardType) -> Bool
 ```
 
+```objc
+- (BOOL) setPropertyList:(id) propertyList forType:(NSPasteboardType) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value was set successfully, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the value was set successfully, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -25,9 +30,10 @@ func setPropertyList(_ propertyList: Any, forType type: NSPasteboard.PasteboardT
 
 ## See Also
 
-- [func setData(Data, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboarditem/setdata(_:fortype:).md)
+### Setting values
+- [func setData(Data, forType: NSPasteboard.PasteboardType) -> Bool](./setdata%28_,fortype%29.md)
   Sets the value for a specified type as a data object.
-- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](nspasteboarditem/setstring(_:fortype:).md)
+- [func setString(String, forType: NSPasteboard.PasteboardType) -> Bool](./setstring%28_,fortype%29.md)
   Sets the value for a specified type as a string.
 
 

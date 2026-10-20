@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports a Core ML model file for use in your app.
 
@@ -16,7 +17,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata?) throws
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlclassifier/write(tofile:metadata:).md)
+### Saving a classifier
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 
 

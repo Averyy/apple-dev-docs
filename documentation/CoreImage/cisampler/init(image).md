@@ -1,7 +1,8 @@
 # init(image:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a sampler with an image object.
 
@@ -19,13 +20,18 @@ Initializes a sampler with an image object.
 convenience init(image im: CIImage)
 ```
 
+```objc
+- (instancetype) initWithImage:(CIImage *) im;
+```
+
 ## Parameters
 
 - `im`: The image object to initialize the sampler with.
 
 ## See Also
 
-- [init(image: CIImage, options: [AnyHashable : Any]?)](cisampler/init(image:options:).md)
+### Initializing a Sampler
+- [init(image: CIImage, options: [AnyHashable : Any]?)](./init%28image,options%29.md)
   Initializes the sampler with an image object using options specified in a dictionary.
 
 

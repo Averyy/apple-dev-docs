@@ -1,7 +1,8 @@
 # GLKTextureEnvMode
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The mode used to combine the texture with other color components.
 
@@ -17,31 +18,36 @@ The mode used to combine the texture with other color components.
 enum GLKTextureEnvMode
 ```
 
+```c
+enum GLKTextureEnvMode : GLint;
+```
+
 ## Topics
 
 ### Constants
-- [GLKTextureEnvMode.replace](glktextureenvmode/replace.md)
+- [GLKTextureEnvMode.replace](./glktextureenvmode/replace.md)
   The output color is set to the color fetched from the texture. The input color is ignored.
-- [GLKTextureEnvMode.modulate](glktextureenvmode/modulate.md)
+- [GLKTextureEnvMode.modulate](./glktextureenvmode/modulate.md)
   The output color is calculated by multiplying the texture’s color by the input color.
-- [GLKTextureEnvMode.decal](glktextureenvmode/decal.md)
+- [GLKTextureEnvMode.decal](./glktextureenvmode/decal.md)
   The output color is calculated by using the texture’s alpha component to blend the texture’s color with the input color.
 ### Initializers
-- [init?(rawValue: GLint)](glktextureenvmode/init(rawvalue:).md)
+- [init?(rawValue: GLint)](./glktextureenvmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum GLKTextureTarget](glktexturetarget.md)
+### Constants
+- [enum GLKTextureTarget](./glktexturetarget.md)
   The kind of texture pointed to by the property.
 
 

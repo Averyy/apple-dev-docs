@@ -1,7 +1,8 @@
 # WinBackOfferCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object WinBackOfferCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOfferCreateRequest.Data.Attributes](winbackoffercreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object WinBackOfferCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a winback offer resource.
-- [object WinBackOfferCreateRequest.Data.Relationships](winbackoffercreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object WinBackOfferCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,9 +29,12 @@ object WinBackOfferCreateRequest.Data
 - `relationships` (WinBackOfferCreateRequest.Data.Relationships) *(required)*: The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `winBackOffers`
+
 ## See Also
 
-- [object WinBackOfferPriceInlineCreate](winbackofferpriceinlinecreate.md)
+### Objects
+- [object WinBackOfferPriceInlineCreate](../winbackofferpriceinlinecreate.md)
   An inline object for specifying territory-specific pricing when creating or updating a win-back offer.
 
 

@@ -1,7 +1,8 @@
 # MLModelConfiguration
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The settings for creating or updating a machine learning model.
 
@@ -20,6 +21,10 @@ The settings for creating or updating a machine learning model.
 class MLModelConfiguration
 ```
 
+```objc
+@interface MLModelConfiguration : NSObject
+```
+
 #### Overview
 
 Use a model configuration to:
@@ -28,56 +33,57 @@ Use a model configuration to:
 - Designate which device the model uses to make predictions, such as a GPU.
 - Restrict the model to use a specific computational device category, such as a CPU.
 
-You typically use a model configuration instance to configure an [`MLModel`](mlmodel.md) instance as you create it with [`init(contentsOf:configuration:)`](mlmodel/init(contentsof:configuration:).md) or create an [`MLUpdateTask`](mlupdatetask.md). See [`Personalizing a Model with On-Device Updates`](personalizing-a-model-with-on-device-updates.md).
+You typically use a model configuration instance to configure an [`MLModel`](./mlmodel.md) instance as you create it with [`init(contentsOf:configuration:)`](./mlmodel/init%28contentsof,configuration%29.md) or create an [`MLUpdateTask`](./mlupdatetask.md). See [Personalizing a Model with On-Device Updates](./personalizing-a-model-with-on-device-updates.md).
 
-Configure your model parameters by setting values for each relevant [`MLParameterKey`](mlparameterkey.md) in the [`parameters`](mlmodelconfiguration/parameters.md) property.
+Configure your model parameters by setting values for each relevant [`MLParameterKey`](./mlparameterkey.md) in the [`parameters`](./mlmodelconfiguration/parameters.md) property.
 
 ## Topics
 
 ### Configuring model parameters
-- [var functionName: String?](mlmodelconfiguration/functionname.md)
+- [var functionName: String?](./mlmodelconfiguration/functionname.md)
   Function name that `MLModel` will use.
-- [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
+- [var modelDisplayName: String?](./mlmodelconfiguration/modeldisplayname.md)
   A human readable name of a model for display purposes.
-- [var parameters: [MLParameterKey : Any]?](mlmodelconfiguration/parameters.md)
+- [var parameters: [MLParameterKey : Any]?](./mlmodelconfiguration/parameters.md)
   A dictionary of configuration settings your app can override when loading a model.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](./mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 ### Configuring GPU usage
-- [var preferredMetalDevice: (any MTLDevice)?](mlmodelconfiguration/preferredmetaldevice.md)
+- [var preferredMetalDevice: (any MTLDevice)?](./mlmodelconfiguration/preferredmetaldevice.md)
   The metal device you prefer this model use to make predictions (inference) and update the model.
-- [var allowLowPrecisionAccumulationOnGPU: Bool](mlmodelconfiguration/allowlowprecisionaccumulationongpu.md)
+- [var allowLowPrecisionAccumulationOnGPU: Bool](./mlmodelconfiguration/allowlowprecisionaccumulationongpu.md)
   A Boolean value that determines whether to allow low-precision accumulation on a GPU.
 ### Allowing access to processing units
-- [var computeUnits: MLComputeUnits](mlmodelconfiguration/computeunits.md)
+- [var computeUnits: MLComputeUnits](./mlmodelconfiguration/computeunits.md)
   The processing unit or units the model uses to make predictions.
-- [enum MLComputeUnits](mlcomputeunits.md)
+- [enum MLComputeUnits](./mlcomputeunits.md)
   The set of processing-unit configurations the model can use to make predictions.
 ### Getting optimization hints
-- [var optimizationHints: MLOptimizationHints](mlmodelconfiguration/optimizationhints-1oq0g.md)
+- [var optimizationHints: MLOptimizationHints](./mlmodelconfiguration/optimizationhints-1oq0g.md)
   A group of hints for CoreML to optimize
 ### Initializers
-- [init?(coder: NSCoder)](mlmodelconfiguration/init(coder:).md)
+- [init?(coder: NSCoder)](./mlmodelconfiguration/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [struct MLOptimizationHints](mloptimizationhints-swift.struct.md)
-- [class MLKey](mlkey.md)
+### Supporting types
+- [struct MLOptimizationHints](./mloptimizationhints-swift.struct.md)
+- [class MLKey](./mlkey.md)
   An abstract base class for machine learning key types.
 
 

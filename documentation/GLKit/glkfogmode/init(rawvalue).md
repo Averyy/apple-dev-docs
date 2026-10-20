@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: GLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 5.0+

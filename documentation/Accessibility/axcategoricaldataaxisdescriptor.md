@@ -1,7 +1,8 @@
 # AXCategoricalDataAxisDescriptor
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an axis of categorical data.
 
@@ -20,6 +21,10 @@ An object that represents an axis of categorical data.
 class AXCategoricalDataAxisDescriptor
 ```
 
+```objc
+@interface AXCategoricalDataAxisDescriptor : NSObject
+```
+
 #### Overview
 
 A categorical data axis divides information into groups, or categories. For example, a categorical axis may represent blood type data divided into the possible categories *AB*, *A*, *B*, and *O*.
@@ -27,33 +32,34 @@ A categorical data axis divides information into groups, or categories. For exam
 ## Topics
 
 ### Creating a categorical data axis
-- [init(title: String, categoryOrder: [String])](axcategoricaldataaxisdescriptor/init(title:categoryorder:).md)
+- [init(title: String, categoryOrder: [String])](./axcategoricaldataaxisdescriptor/init%28title,categoryorder%29.md)
   Creates a categorical data axis with the specified title and an array of categories in the specified order.
-- [init(attributedTitle: NSAttributedString, categoryOrder: [String])](axcategoricaldataaxisdescriptor/init(attributedtitle:categoryorder:).md)
+- [init(attributedTitle: NSAttributedString, categoryOrder: [String])](./axcategoricaldataaxisdescriptor/init%28attributedtitle,categoryorder%29.md)
   Creates a categorical data axis with the specified attributed title and an array of categories in the specified order.
 ### Configuring the order of categories
-- [var categoryOrder: [String]](axcategoricaldataaxisdescriptor/categoryorder.md)
+- [var categoryOrder: [String]](./axcategoricaldataaxisdescriptor/categoryorder.md)
   A list of every category value for the axis in the order they appear visually in the graph or legend.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AXDataAxisDescriptor](axdataaxisdescriptor.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AXDataAxisDescriptor](./axdataaxisdescriptor.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AXDataAxisDescriptor](axdataaxisdescriptor.md)
+### Axis representation
+- [protocol AXDataAxisDescriptor](./axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
-- [class AXNumericDataAxisDescriptor](axnumericdataaxisdescriptor.md)
+- [class AXNumericDataAxisDescriptor](./axnumericdataaxisdescriptor.md)
   An object that represents an axis of numerical data.
 
 

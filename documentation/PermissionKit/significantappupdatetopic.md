@@ -1,7 +1,8 @@
 # SignificantAppUpdateTopic
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A topic for requesting permission for significant app updates.
 
@@ -39,24 +40,25 @@ let topic = SignificantAppUpdateTopic(
 ## Topics
 
 ### Creating topics
-- [init(description: String)](significantappupdatetopic/init(description:).md)
+- [init(description: String)](./significantappupdatetopic/init%28description%29.md)
   Creates a new significant app update topic with the specified description.
 ### Accessing properties
-- [let description: String](significantappupdatetopic/description.md)
+- [let description: String](./significantappupdatetopic/description.md)
   A description of the significant update that initiates the permission question.
-- [static let id: String](significantappupdatetopic/id.md)
+- [static let id: String](./significantappupdatetopic/id.md)
   The unique identifier the system uses to categorize this topic type.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [QuestionTopic](questiontopic.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [QuestionTopic](./questiontopic.md)
 
 ## See Also
 
-- [struct CommunicationTopic](communicationtopic.md)
+### Permission topics
+- [struct CommunicationTopic](./communicationtopic.md)
   A topic for requesting communication permission with specific people.
 
 

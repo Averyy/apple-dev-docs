@@ -1,7 +1,8 @@
 # LanguageModelFeedback.Issue.Category.didNotFollowInstructions
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A response that doesn’t follow instructions correctly.
 
@@ -25,19 +26,20 @@ An instruction issue might be where you asked for a recipe in numbered steps, an
 
 ## See Also
 
-- [LanguageModelFeedback.Issue.Category.incorrect](languagemodelfeedback/issue/category/incorrect.md)
+### Getting the issue category
+- [LanguageModelFeedback.Issue.Category.incorrect](./incorrect.md)
   An incorrect response.
-- [LanguageModelFeedback.Issue.Category.stereotypeOrBias](languagemodelfeedback/issue/category/stereotypeorbias.md)
+- [LanguageModelFeedback.Issue.Category.stereotypeOrBias](./stereotypeorbias.md)
   A response that exhibits bias or perpetuates a stereotype.
-- [LanguageModelFeedback.Issue.Category.suggestiveOrSexual](languagemodelfeedback/issue/category/suggestiveorsexual.md)
+- [LanguageModelFeedback.Issue.Category.suggestiveOrSexual](./suggestiveorsexual.md)
   A response with suggestive or sexual material.
-- [LanguageModelFeedback.Issue.Category.tooVerbose](languagemodelfeedback/issue/category/tooverbose.md)
+- [LanguageModelFeedback.Issue.Category.tooVerbose](./tooverbose.md)
   An overly verbose response.
-- [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](languagemodelfeedback/issue/category/triggeredguardrailunexpectedly.md)
+- [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](./triggeredguardrailunexpectedly.md)
   An unexpected guardrail violation.
-- [LanguageModelFeedback.Issue.Category.unhelpful](languagemodelfeedback/issue/category/unhelpful.md)
+- [LanguageModelFeedback.Issue.Category.unhelpful](./unhelpful.md)
   An unhelpful response.
-- [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](languagemodelfeedback/issue/category/vulgaroroffensive.md)
+- [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](./vulgaroroffensive.md)
   A response with vulgar or offensive material.
 
 

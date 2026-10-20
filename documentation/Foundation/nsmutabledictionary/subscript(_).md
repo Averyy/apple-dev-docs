@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the value associated with a given key.
 

@@ -1,14 +1,15 @@
 # init(time:detectionID:strong:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Makes a decision to focus on the best among those detections with the same detection group ID.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -30,7 +31,8 @@ A strong decision keeps focus for as long as possible on the detected subject.
 
 ## See Also
 
-- [init(time: CMTime, detectionGroupID: CNDetectionGroupID, strong: Bool)](cndecision-swift.struct/init(time:detectiongroupid:strong:).md)
+### Initializers
+- [init(time: CMTime, detectionGroupID: CNDetectionGroupID, strong: Bool)](./init%28time,detectiongroupid,strong%29.md)
   Makes a decision to focus on the detection with the given unique detection.
 
 

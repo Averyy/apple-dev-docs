@@ -1,7 +1,8 @@
 # step(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func step(with params: MTRLevelControlClusterStepParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func step(with params: MTRLevelControlClusterStepParams) async throws
+```
+
+```objc
+- (void) stepWithParams:(MTRLevelControlClusterStepParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

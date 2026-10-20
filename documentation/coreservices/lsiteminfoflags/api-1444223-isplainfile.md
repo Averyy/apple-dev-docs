@@ -1,7 +1,8 @@
 # isPlainFile
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is a data file (and not, for example, a directory, volume, or UNIX symbolic link).
 

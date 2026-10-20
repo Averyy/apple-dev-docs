@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of elements to publish.
 
@@ -22,7 +23,8 @@ let range: CountableRange<Int>
 
 ## See Also
 
-- [let upstream: Upstream](publishers/output/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives its elements.
 
 

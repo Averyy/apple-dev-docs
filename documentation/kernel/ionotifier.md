@@ -1,7 +1,8 @@
 # IONotifier
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An abstract base class defining common methods for controlling a notification request.
 
@@ -10,7 +11,7 @@ An abstract base class defining common methods for controlling a notification re
 
 ## Declaration
 
-```swift
+```cpp
 class IONotifier : OSObject
 ```
 
@@ -21,27 +22,28 @@ IOService notification requests are represented as implementations of the IONoti
 ## Topics
 
 ### Miscellaneous
-- [disable](ionotifier/1810461-disable.md)
+- [disable](./ionotifier/api-1810461-disable.md)
   Disables the notification request.
-- [enable](ionotifier/1810483-enable.md)
+- [enable](./ionotifier/api-1810483-enable.md)
   Sets the enable state of the notification request.
-- [remove](ionotifier/1810524-remove.md)
+- [remove](./ionotifier/api-1810524-remove.md)
   Removes the notification request and releases it.
 ### Instance Methods
-- [- disable](ionotifier/1529198-disable.md)
-- [- enable](ionotifier/1529202-enable.md)
-- [- getMetaClass](ionotifier/1529206-getmetaclass.md)
-- [- remove](ionotifier/1529200-remove.md)
+- [- disable](./ionotifier/api-1529198-disable.md)
+- [- enable](./ionotifier/api-1529202-enable.md)
+- [- getMetaClass](./ionotifier/api-1529206-getmetaclass.md)
+- [- remove](./ionotifier/api-1529200-remove.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOServiceNotificationDispatchSource](ioservicenotificationdispatchsource.md)
-- [IOServiceNotificationDispatchSourceInterface](ioservicenotificationdispatchsourceinterface.md)
+### Notifications
+- [IOServiceNotificationDispatchSource](./ioservicenotificationdispatchsource.md)
+- [IOServiceNotificationDispatchSourceInterface](./ioservicenotificationdispatchsourceinterface.md)
 
 
 ---

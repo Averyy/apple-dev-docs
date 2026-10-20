@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateHotResetActiveTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The hot reset active timeout.
 
@@ -10,7 +11,7 @@ The hot reset active timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateHotResetActiveTimeout = 12
 ```
 

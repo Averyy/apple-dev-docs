@@ -1,7 +1,8 @@
 # MIDISetupRemoveDevice(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a driver-owned MIDI device from the current MIDI setup.
 
@@ -18,13 +19,17 @@ Removes a driver-owned MIDI device from the current MIDI setup.
 func MIDISetupRemoveDevice(_ device: MIDIDeviceRef) -> OSStatus
 ```
 
+```c
+extern OSStatus MIDISetupRemoveDevice(MIDIDeviceRef device);
+```
+
 #### Return Value
 
 An `OSStatus` result code.
 
 #### Discussion
 
-Typically, only a studio-configuration editor calls this function to remove a device that’s offline and which the user has specified as permanently missing. It’s a good practice to have drivers set the deviceʼs [`kMIDIPropertyOffline`](kmidipropertyoffline.md) to 1, instead of removing the device from the setup, so if the device reappears later, the system preserves the deviceʼs property state.
+Typically, only a studio-configuration editor calls this function to remove a device that’s offline and which the user has specified as permanently missing. It’s a good practice to have drivers set the deviceʼs [`kMIDIPropertyOffline`](./kmidipropertyoffline.md) to 1, instead of removing the device from the setup, so if the device reappears later, the system preserves the deviceʼs property state.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Typically, only a studio-configuration editor calls this function to remove a de
 
 ## See Also
 
-- [func MIDISetupAddDevice(MIDIDeviceRef) -> OSStatus](midisetupadddevice(_:).md)
+### Managing Devices
+- [func MIDISetupAddDevice(MIDIDeviceRef) -> OSStatus](./midisetupadddevice%28_%29.md)
   Adds a driver-owned MIDI device to the current MIDI setup.
 
 

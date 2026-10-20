@@ -1,7 +1,8 @@
 # copy(into:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the elements of the array to a different array.
 
@@ -11,7 +12,7 @@ Copies the elements of the array to a different array.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ func copy(into destination: XPCArray)
 
 ## See Also
 
-- [init()](xpcarray/init.md)
+### Creating an array
+- [init()](./init%28%29.md)
   Creates a new, empty array.
-- [init(xpc_object_t)](xpcarray/init(_:).md)
+- [init(xpc_object_t)](./init%28_%29.md)
   Creates a new array that contains the given XPC object.
 
 

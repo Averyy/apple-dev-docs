@@ -1,6 +1,7 @@
 # Adding StandBy and CarPlay support to your widget
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Ensure that your small system family widget works well in StandBy and CarPlay.
 
@@ -8,7 +9,7 @@ Ensure that your small system family widget works well in StandBy and CarPlay.
 
 People can choose your small system family widgets from the widget gallery in StandBy or CarPlay:
 
-- **On iPhone in StandBy**: The Lock Screen shows two widgets side by side on a dark background. WidgetKit uses your [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md) widget and scales it to fit half of the screen.
+- **On iPhone in StandBy**: The Lock Screen shows two widgets side by side on a dark background. WidgetKit uses your [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md) widget and scales it to fit half of the screen.
 - **In CarPlay**: Widgets appear in one or more stacks to the left of the CarPlay Home Screen, in full color and with the background removed.
 
 Because widgets in StandBy appear similar to widgets in CarPlay, when you ensure your widget supports one, it automatically supports the other. To support StandBy and CarPlay appearances, update your small widget:
@@ -17,11 +18,11 @@ Because widgets in StandBy appear similar to widgets in CarPlay, when you ensure
 - Focus on showing only glanceable information.
 - Use larger typography, and make it easy to read from a distance.
 
-For more information about making a background removable and optimizing your widget for additional contexts, refer to [`Update your small widget to support StandBy and CarPlay`](preparing-widgets-for-additional-contexts-and-appearances#Update-your-small-widget-to-support-StandBy-and-CarPlay.md).
+For more information about making a background removable and optimizing your widget for additional contexts, refer to [Update your small widget to support StandBy and CarPlay](./preparing-widgets-for-additional-contexts-and-appearances.md#Update-your-small-widget-to-support-StandBy-and-CarPlay).
 
-If your widget isn’t a good fit for StandBy or CarPlay, consider marking the applicable context as a disfavored location as described in [`Indicate that a widget might not fit a specific context`](preparing-widgets-for-additional-contexts-and-appearances#Indicate-that-a-widget-might-not-fit-a-specific-context.md). Doing so doesn’t exclude your widget from CarPlay or StandBy, but it communicates to people that these locations aren’t the best fit.
+If your widget isn’t a good fit for StandBy or CarPlay, consider marking the applicable context as a disfavored location as described in [Indicate that a widget might not fit a specific context](./preparing-widgets-for-additional-contexts-and-appearances.md#Indicate-that-a-widget-might-not-fit-a-specific-context). Doing so doesn’t exclude your widget from CarPlay or StandBy, but it communicates to people that these locations aren’t the best fit.
 
-##### Linking to Your App in Carplay and Using Buttons or Toggles
+##### Linking to your app in CarPlay and using buttons or toggles
 
 In CarPlay, the way your widget links to your app depends on the specific context of using your app in a vehicle:
 
@@ -29,7 +30,7 @@ In CarPlay, the way your widget links to your app depends on the specific contex
 - If the vehicle supports touch input but your app doesn’t integrate with CarPlay, people can’t open your app from the widget and the system dims it to indicate that a tap doesn’t have an effect.
 - If the vehicle doesn’t support touch input, people can’t open your app from the widget.
 
-For additional information about linking to your app from your widget, refer to [`Review linking behavior in CarPlay`](linking-to-specific-app-scenes-from-your-widget-or-live-activity#Review-linking-behavior-in-CarPlay.md).
+For additional information about linking to your app from your widget, refer to [Review linking behavior in CarPlay](./linking-to-specific-app-scenes-from-your-widget-or-live-activity.md#Review-linking-behavior-in-CarPlay).
 
 | Vehicle features | Buttons and toggles functional | Open the app from a tap |
 | --- | --- | --- |
@@ -41,41 +42,42 @@ Additionally, your widget’s buttons and toggles behave differently to match th
 - If the vehicle supports touch input, people tap a widget’s buttons and toggles to perform their functionality.
 - If the vehicle doesn’t have a touchscreen, widgets and buttons are inactive, and people can’t tap the widget to open your app in CarPlay or on their phone.
 
-> **Note**: CarPlay integration is only available to apps with specific functionality. For more information, see [`CarPlay`](https://developer.apple.com/documentation/carplay).
+> **Note**: CarPlay integration is only available to apps with specific functionality. For more information, see [CarPlay](../CarPlay/CarPlay.md).
 
-##### Test Widgets in Carplay
+##### Test widgets in CarPlay
 
-To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md) and [`Using the CarPlay Simulator`](https://developer.apple.com/documentation/carplay/using-the-carplay-simulator).
+To test widgets in CarPlay, preview your widget in Xcode to verify that your widget works in StandBy and the CarPlay Simulator. For more information, refer to [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md) and [Using the CarPlay Simulator](../CarPlay/using-the-carplay-simulator.md).
 
 ## See Also
 
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
+### Layout and presentation
+- [Supporting additional widget sizes](./supporting-additional-widget-sizes.md)
   Offer widgets in additional contexts by adding support for various widget sizes.
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
+- [Displaying the right widget background](./displaying-the-right-widget-background.md)
   Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
+- [struct WidgetRenderingMode](./widgetrenderingmode.md)
   Constants that indicate the rendering mode for a widget.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+- [struct WidgetAccentedRenderingMode](./widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](./widgetrenderingmode/accented.md) mode.
+- [struct AccessoryWidgetBackground](./accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
+- [struct WidgetLocation](./widgetlocation.md)
   Values that indicate different widget locations.
 - [func widgetAccentable(Bool) -> some View
-](../swiftui/view/widgetaccentable(_:).md)
+](../SwiftUI/view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
-](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+](../SwiftUI/image/widgetaccentedrenderingmode%28_%29.md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
-- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](../SwiftUI/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](../SwiftUI/environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
-- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+- [static let widget: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/widget.md)
   The container background placement for a widget.
-- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+- [var showsWidgetContainerBackground: Bool](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
 
 

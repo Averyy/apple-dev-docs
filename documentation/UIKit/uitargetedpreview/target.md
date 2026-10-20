@@ -1,7 +1,8 @@
 # target
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container for the target view.
 
@@ -18,13 +19,18 @@ The container for the target view.
 var target: UIPreviewTarget { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPreviewTarget * target;
+```
+
 ## See Also
 
-- [var view: UIView](uitargetedpreview/view.md)
+### Getting the preview attributes
+- [var view: UIView](./view.md)
   The view that’s the target of the animation.
-- [var size: CGSize](uitargetedpreview/size.md)
+- [var size: CGSize](./size.md)
   The size of the view.
-- [var parameters: UIPreviewParameters](uitargetedpreview/parameters.md)
+- [var parameters: UIPreviewParameters](./parameters.md)
   Additional parameters to use when configuring the animations.
 
 

@@ -1,7 +1,8 @@
 # init(tabletop:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ init(tabletop: some Tabletop)
 
 ## See Also
 
-- [init(tabletop: some EntityTabletop)](tablesetup/init(tabletop:)-7ima6.md)
+### Creating a setup object from a table
+- [init(tabletop: some EntityTabletop)](./init%28tabletop%29-7ima6.md)
 
 
 ---

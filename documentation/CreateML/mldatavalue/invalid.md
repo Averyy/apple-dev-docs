@@ -1,7 +1,8 @@
 # MLDataValue.invalid
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid value.
 
@@ -21,7 +22,8 @@ case invalid
 
 ## See Also
 
-- [var isValid: Bool](mldatavalue/isvalid.md)
+### Handling errors
+- [var isValid: Bool](./isvalid.md)
   A Boolean value indicating whether the data value is valid.
 
 

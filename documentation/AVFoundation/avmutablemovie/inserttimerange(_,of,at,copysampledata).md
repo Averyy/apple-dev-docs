@@ -1,7 +1,8 @@
 # insertTimeRange(_:of:at:copySampleData:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts all of the tracks in a specified time range of an asset into a movie.
 
@@ -19,6 +20,10 @@ Inserts all of the tracks in a specified time range of an asset into a movie.
 func insertTimeRange(_ timeRange: CMTimeRange, of asset: AVAsset, at startTime: CMTime, copySampleData: Bool) throws
 ```
 
+```objc
+- (BOOL) insertTimeRange:(CMTimeRange) timeRange ofAsset:(AVAsset *) asset atTime:(CMTime) startTime copySampleData:(BOOL) copySampleData error:(NSError **) outError;
+```
+
 #### Discussion
 
 This method may add new tracks to the target movie to ensure that all tracks of the asset are represented in the inserted time range.
@@ -26,17 +31,18 @@ This method may add new tracks to the target movie to ensure that all tracks of 
 ## Parameters
 
 - `timeRange`: The time range of the asset to be inserted.
-- `asset`: An [`AVAsset`](avasset.md) object indicating the source of the inserted media. This value can’t be `nil`.
+- `asset`: An [`AVAsset`](../avasset.md) object indicating the source of the inserted media. This value can’t be `nil`.
 - `startTime`: The time in the target movie at which the media is to be inserted.
 - `copySampleData`: A Boolean value that indicates whether sample data is to be copied from the source to the destination during edits.
 
 ## See Also
 
-- [func insertEmptyTimeRange(CMTimeRange)](avmutablemovie/insertemptytimerange(_:).md)
+### Managing time ranges
+- [func insertEmptyTimeRange(CMTimeRange)](./insertemptytimerange%28_%29.md)
   Adds an empty time range to a movie.
-- [func scale(CMTimeRange, toDuration: CMTime)](avmutablemovie/scale(_:toduration:).md)
+- [func scale(CMTimeRange, toDuration: CMTime)](./scale%28_,toduration%29.md)
   Changes the duration of a time range in a movie.
-- [func removeTimeRange(CMTimeRange)](avmutablemovie/removetimerange(_:).md)
+- [func removeTimeRange(CMTimeRange)](./removetimerange%28_%29.md)
   Removes the specified time range from a movie.
 
 

@@ -1,7 +1,8 @@
 # CPManeuver
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a single navigation instruction.
 
@@ -16,94 +17,99 @@ An object that describes a single navigation instruction.
 class CPManeuver
 ```
 
+```objc
+@interface CPManeuver : NSObject
+```
+
 #### Overview
 
 You use maneuvers to provide turn-by-turn guidance in navigation apps. Each maneuver represents a single navigation instruction and can include a symbol, an instruction, and estimates for remaining time and distance.
 
-You supply an instruction as an array of variants, each with a different length. CarPlay chooses the longest variant that best fits the available space on the screen. You can optionally provide attributed variants that embed images using [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment). See [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md) for more information.
+You supply an instruction as an array of variants, each with a different length. CarPlay chooses the longest variant that best fits the available space on the screen. You can optionally provide attributed variants that embed images using [`NSTextAttachment`](../UIKit/nstextattachment.md). See [`attributedInstructionVariants`](./cpmaneuver/attributedinstructionvariants.md) for more information.
 
 In addition to the route guidance panel, you can show maneuvers on the CarPlay dashboard or in notification banners. Use the relevant properties to provide context-specific instructions and images.
 
 ## Topics
 
 ### Providing instructions
-- [var dashboardInstructionVariants: [String]](cpmaneuver/dashboardinstructionvariants.md)
+- [var dashboardInstructionVariants: [String]](./cpmaneuver/dashboardinstructionvariants.md)
   An array of instruction variants for the CarPlay dashboard.
-- [var notificationInstructionVariants: [String]](cpmaneuver/notificationinstructionvariants.md)
+- [var notificationInstructionVariants: [String]](./cpmaneuver/notificationinstructionvariants.md)
   An array of instruction variants for notification banners.
 ### Providing attributed instructions
-- [var attributedInstructionVariants: [NSAttributedString]](cpmaneuver/attributedinstructionvariants.md)
+- [var attributedInstructionVariants: [NSAttributedString]](./cpmaneuver/attributedinstructionvariants.md)
   An array of attributed instruction variants for the maneuver.
-- [var dashboardAttributedInstructionVariants: [NSAttributedString]](cpmaneuver/dashboardattributedinstructionvariants.md)
+- [var dashboardAttributedInstructionVariants: [NSAttributedString]](./cpmaneuver/dashboardattributedinstructionvariants.md)
   An array of attributed instruction variants for the CarPlay dashboard.
-- [var notificationAttributedInstructionVariants: [NSAttributedString]](cpmaneuver/notificationattributedinstructionvariants.md)
+- [var notificationAttributedInstructionVariants: [NSAttributedString]](./cpmaneuver/notificationattributedinstructionvariants.md)
   An array of attributed instruction variants for notification banners.
 ### Providing travel estimates
-- [var initialTravelEstimates: CPTravelEstimates?](cpmaneuver/initialtravelestimates.md)
+- [var initialTravelEstimates: CPTravelEstimates?](./cpmaneuver/initialtravelestimates.md)
   An object that describes the distance and time remaining before the maneuver completes.
 ### Providing symbol images
-- [var symbolImage: UIImage?](cpmaneuver/symbolimage.md)
+- [var symbolImage: UIImage?](./cpmaneuver/symbolimage.md)
   An image that represents the maneuver.
-- [var dashboardSymbolImage: UIImage?](cpmaneuver/dashboardsymbolimage.md)
+- [var dashboardSymbolImage: UIImage?](./cpmaneuver/dashboardsymbolimage.md)
   An image for the CarPlay dashboard that represents the maneuver.
-- [var notificationSymbolImage: UIImage?](cpmaneuver/notificationsymbolimage.md)
+- [var notificationSymbolImage: UIImage?](./cpmaneuver/notificationsymbolimage.md)
   An image for notification banners that represents the maneuver.
-- [var symbolSet: CPImageSet?](cpmaneuver/symbolset.md)
+- [var symbolSet: CPImageSet?](./cpmaneuver/symbolset.md)
   An image set that represents the maneuver.
 ### Providing junction images
-- [var junctionImage: UIImage?](cpmaneuver/junctionimage.md)
+- [var junctionImage: UIImage?](./cpmaneuver/junctionimage.md)
   An image that represents an upcoming junction.
-- [var dashboardJunctionImage: UIImage?](cpmaneuver/dashboardjunctionimage.md)
+- [var dashboardJunctionImage: UIImage?](./cpmaneuver/dashboardjunctionimage.md)
   An image for the CarPlay dashboard that represents an upcoming junction.
 ### Providing junction information
-- [var junctionType: CPJunctionType](cpmaneuver/junctiontype.md)
+- [var junctionType: CPJunctionType](./cpmaneuver/junctiontype.md)
   A value that represents the type of junction associated with this maneuver.
-- [var junctionExitAngle: Measurement<UnitAngle>?](cpmaneuver/junctionexitangle.md)
+- [var junctionExitAngle: Measurement<UnitAngle>?](./cpmaneuver/junctionexitangle.md)
   The angle of the exit road of this junction.
-- [var junctionElementAngles: Set<Measurement<UnitAngle>>?](cpmaneuver/junctionelementangles.md)
+- [var junctionElementAngles: Set<Measurement<UnitAngle>>?](./cpmaneuver/junctionelementangles.md)
   A set of angles for the rest of the roads of this junction.
 ### Providing maneuver information
-- [var maneuverType: CPManeuverType](cpmaneuver/maneuvertype.md)
+- [var maneuverType: CPManeuverType](./cpmaneuver/maneuvertype.md)
   A value that represents the type of maneuver.
-- [var roadFollowingManeuverVariants: [String]?](cpmaneuver/roadfollowingmaneuvervariants.md)
+- [var roadFollowingManeuverVariants: [String]?](./cpmaneuver/roadfollowingmaneuvervariants.md)
   An array of strings that represent the names of the road following this maneuver, arranged from most to least preferred.
-- [var linkedLaneGuidance: CPLaneGuidance](cpmaneuver/linkedlaneguidance.md)
+- [var linkedLaneGuidance: CPLaneGuidance](./cpmaneuver/linkedlaneguidance.md)
   A value that represents lane guidance associated with this maneuver.
-- [var highwayExitLabel: String](cpmaneuver/highwayexitlabel.md)
+- [var highwayExitLabel: String](./cpmaneuver/highwayexitlabel.md)
   A string that describes a highway exit.
-- [var trafficSide: CPTrafficSide](cpmaneuver/trafficside.md)
+- [var trafficSide: CPTrafficSide](./cpmaneuver/trafficside.md)
   A value that represents which side of the road the traffic drives on.
 ### Providing additional information
-- [var userInfo: Any?](cpmaneuver/userinfo.md)
+- [var userInfo: Any?](./cpmaneuver/userinfo.md)
   A custom object associated with the maneuver.
 ### Instance properties
-- [var cardBackgroundColor: UIColor?](cpmaneuver/cardbackgroundcolor.md)
+- [var cardBackgroundColor: UIColor?](./cpmaneuver/cardbackgroundcolor.md)
 ### Initializers
-- [init?(coder: NSCoder)](cpmaneuver/init(coder:).md)
+- [init?(coder: NSCoder)](./cpmaneuver/init%28coder%29.md)
 ### Instance Properties
-- [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
+- [var instructionVariants: [String]](./cpmaneuver/instructionvariants.md)
   An array of instruction variants for the maneuver.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [enum CPManeuverState](cpmaneuverstate.md)
+### Maneuvers
+- [enum CPManeuverState](./cpmaneuverstate.md)
   Values that describe the state of a maneuver.
-- [enum CPManeuverType](cpmaneuvertype.md)
+- [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
 
 

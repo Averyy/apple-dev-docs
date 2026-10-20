@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model’s creation date.
 
@@ -20,11 +21,12 @@ var creationDate: Date? { get set }
 
 ## See Also
 
-- [var description: String](aimodelasset/metadata-swift.struct/description.md)
+### Reading model information
+- [var description: String](./description.md)
   A human-readable description of the model.
-- [var author: String](aimodelasset/metadata-swift.struct/author.md)
+- [var author: String](./author.md)
   The name of the model’s author.
-- [var license: String](aimodelasset/metadata-swift.struct/license.md)
+- [var license: String](./license.md)
   The license text for the model.
 
 

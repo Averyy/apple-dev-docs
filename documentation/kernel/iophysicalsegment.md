@@ -1,14 +1,15 @@
 # IOPhysicalSegment
 
 **Framework**: Kernel  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 #define IOPhysicalSegment
 ```
 

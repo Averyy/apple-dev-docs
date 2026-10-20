@@ -1,26 +1,28 @@
 # IOMallocZero
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 void * IOMallocZero(vm_size_t size);
 ```
 
 ## See Also
 
-- [IOMalloc](1575326-iomalloc.md)
+### Allocation
+- [IOMalloc](./api-1575326-iomalloc.md)
   Allocates general purpose, wired memory in the kernel map.
-- [IOMallocAligned](1575291-iomallocaligned.md)
+- [IOMallocAligned](./api-1575291-iomallocaligned.md)
   Allocates wired memory in the kernel map, with an alignment restriction.
-- [IOMallocPageable](1575327-iomallocpageable.md)
+- [IOMallocPageable](./api-1575327-iomallocpageable.md)
   Allocates pageable memory in the kernel map.
-- [IORangeAllocator](iorangeallocator.md)
+- [IORangeAllocator](./iorangeallocator.md)
   A utility class to manage allocations from a range.
 
 

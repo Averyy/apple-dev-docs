@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ var content: (GeometryProxy) -> Content
 
 ## See Also
 
-- [init(content: (GeometryProxy) -> Content)](geometryreader/init(content:).md)
+### Creating a geometry reader
+- [init(content: (GeometryProxy) -> Content)](./init%28content%29.md)
 
 
 ---

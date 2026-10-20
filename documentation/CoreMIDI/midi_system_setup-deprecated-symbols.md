@@ -1,16 +1,17 @@
 # Deprecated Symbols
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Managing System Setup
-- [typealias MIDISetupRef](midisetupref.md)
+- [typealias MIDISetupRef](./midisetupref.md)
   A type that represents the global state of the MIDI system, that contains lists of the devices and serial port owners.
 ### Managing MIDI Devices
-- [func MIDIDeviceAddEntity(MIDIDeviceRef, CFString, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](midideviceaddentity(_:_:_:_:_:_:).md)
+- [func MIDIDeviceAddEntity(MIDIDeviceRef, CFString, Bool, Int, Int, UnsafeMutablePointer<MIDIEntityRef>) -> OSStatus](./midideviceaddentity%28_,_,_,_,_,_%29.md)
   Specifies one of the entities that make up a device.
 
 

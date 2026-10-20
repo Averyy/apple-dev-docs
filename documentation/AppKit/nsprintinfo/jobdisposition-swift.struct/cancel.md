@@ -1,12 +1,13 @@
 # cancel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cancel print job.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Cancel print job.
 static let cancel: NSPrintInfo.JobDisposition
 ```
 
+```c
+extern NSPrintJobDispositionValue const NSPrintCancelJob;
+```
+
 ## See Also
 
-- [static let spool: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/spool.md)
+### Constants
+- [static let spool: NSPrintInfo.JobDisposition](./spool.md)
   Normal print job.
-- [static let preview: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/preview.md)
+- [static let preview: NSPrintInfo.JobDisposition](./preview.md)
   Send to Preview application.
-- [static let save: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct/save.md)
+- [static let save: NSPrintInfo.JobDisposition](./save.md)
   Save to a file.
 
 

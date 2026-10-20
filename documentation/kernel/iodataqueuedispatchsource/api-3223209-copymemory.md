@@ -1,14 +1,15 @@
 # CopyMemory
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CopyMemory(IOMemoryDescriptor **memory, OSDispatchMethod supermethod);
 ```
 

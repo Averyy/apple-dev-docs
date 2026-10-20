@@ -1,7 +1,8 @@
 # handleTouchEnded(at:index:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles a touch ended event at the specified point.
 
@@ -16,6 +17,10 @@ Handles a touch ended event at the specified point.
 func handleTouchEnded(at point: CGPoint, index: Int) -> Bool
 ```
 
+```objc
+- (BOOL) handleTouchEndedAtPoint:(CGPoint) point index:(NSInteger) index;
+```
+
 #### Return Value
 
 `YES` if the touch was handled by a control, `NO` otherwise.
@@ -27,9 +32,10 @@ func handleTouchEnded(at point: CGPoint, index: Int) -> Bool
 
 ## See Also
 
-- [func handleTouchBegan(at: CGPoint, index: Int) -> Bool](tctouchcontroller/handletouchbegan(at:index:).md)
+### Handling a touch
+- [func handleTouchBegan(at: CGPoint, index: Int) -> Bool](./handletouchbegan%28at,index%29.md)
   Handles a touch began event at the specified point.
-- [func handleTouchMoved(at: CGPoint, index: Int) -> Bool](tctouchcontroller/handletouchmoved(at:index:).md)
+- [func handleTouchMoved(at: CGPoint, index: Int) -> Bool](./handletouchmoved%28at,index%29.md)
   Handles a touch moved event at the specified point.
 
 

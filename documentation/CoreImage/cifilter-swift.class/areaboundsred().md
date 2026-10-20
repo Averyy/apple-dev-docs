@@ -1,7 +1,8 @@
 # areaBoundsRed()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,11 +18,16 @@
 class func areaBoundsRed() -> any CIFilter & CIAreaBoundsRed
 ```
 
+```objc
++ (CIFilter<CIAreaBoundsRed> *) areaBoundsRedFilter;
+```
+
 ## See Also
 
-- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](cifilter-swift.class/areaalphaweightedhistogram.md)
-- [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](cifilter-swift.class/maximumscaletransform.md)
-- [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](cifilter-swift.class/tonemapheadroom.md)
+### Type methods
+- [class func areaAlphaWeightedHistogram() -> any CIFilter & CIAreaHistogram](./areaalphaweightedhistogram%28%29.md)
+- [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](./maximumscaletransform%28%29.md)
+- [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](./tonemapheadroom%28%29.md)
 
 
 ---

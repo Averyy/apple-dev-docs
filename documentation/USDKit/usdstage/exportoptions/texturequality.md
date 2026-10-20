@@ -1,7 +1,8 @@
 # USDStage.ExportOptions.TextureQuality
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A texture quality level.
 
@@ -22,20 +23,20 @@ struct TextureQuality
 ## Topics
 
 ### Type Properties
-- [static var low: USDStage.ExportOptions.TextureQuality](usdstage/exportoptions/texturequality/low.md)
+- [static var low: USDStage.ExportOptions.TextureQuality](./texturequality/low.md)
   Aggressively reduces the texture file size. Some visual details may be suppressed to reach the smallest file size.
-- [static var medium: USDStage.ExportOptions.TextureQuality](usdstage/exportoptions/texturequality/medium.md)
+- [static var medium: USDStage.ExportOptions.TextureQuality](./texturequality/medium.md)
   Further reduces the texture file size. Fine details may not be preserved to reach a small file size.
-- [static var standard: USDStage.ExportOptions.TextureQuality](usdstage/exportoptions/texturequality/standard.md)
+- [static var standard: USDStage.ExportOptions.TextureQuality](./texturequality/standard.md)
   Reduces the texture file size while preserving most details.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

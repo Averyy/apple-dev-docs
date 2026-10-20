@@ -1,7 +1,8 @@
 # AVRoutePickerView.ButtonState.normal
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The normal, or default, button state.
 
@@ -14,13 +15,18 @@ The normal, or default, button state.
 case normal
 ```
 
+```c
+AVRoutePickerViewButtonStateNormal
+```
+
 ## See Also
 
-- [AVRoutePickerView.ButtonState.normalHighlighted](avroutepickerview/buttonstate/normalhighlighted.md)
+### Button states
+- [AVRoutePickerView.ButtonState.normalHighlighted](./normalhighlighted.md)
   The highlighted button state when a mouse-down event occurs inside the button.
-- [AVRoutePickerView.ButtonState.active](avroutepickerview/buttonstate/active.md)
+- [AVRoutePickerView.ButtonState.active](./active.md)
   The button state when AirPlay is active.
-- [AVRoutePickerView.ButtonState.activeHighlighted](avroutepickerview/buttonstate/activehighlighted.md)
+- [AVRoutePickerView.ButtonState.activeHighlighted](./activehighlighted.md)
   The highlighted button state when AirPlay is active.
 
 

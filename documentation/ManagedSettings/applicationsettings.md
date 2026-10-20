@@ -1,7 +1,8 @@
 # ApplicationSettings
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constraints on the apps and categories of apps a user can run on their device.
 
@@ -19,44 +20,45 @@ struct ApplicationSettings
 ## Topics
 
 ### Blocking applications
-- [var blockedApplications: Set<Application>?](applicationsettings/blockedapplications-swift.property.md)
+- [var blockedApplications: Set<Application>?](./applicationsettings/blockedapplications-swift.property.md)
   A set of applications for the system to block.
-- [static let blockedApplications: SettingMetadata<Set<Application>>](applicationsettings/blockedapplications-swift.type.property.md)
+- [static let blockedApplications: SettingMetadata<Set<Application>>](./applicationsettings/blockedapplications-swift.type.property.md)
   A description of the setting that controls which apps a user can launch on their device.
 ### Preventing app installation and removal
-- [var denyAppInstallation: Bool?](applicationsettings/denyappinstallation-swift.property.md)
+- [var denyAppInstallation: Bool?](./applicationsettings/denyappinstallation-swift.property.md)
   A Boolean value that indicates whether to prevent the user from installing applications.
-- [static let denyAppInstallation: SettingMetadata<Bool>](applicationsettings/denyappinstallation-swift.type.property.md)
+- [static let denyAppInstallation: SettingMetadata<Bool>](./applicationsettings/denyappinstallation-swift.type.property.md)
   The metadata for the setting to prevent app installation.
-- [var denyAppRemoval: Bool?](applicationsettings/denyappremoval-swift.property.md)
+- [var denyAppRemoval: Bool?](./applicationsettings/denyappremoval-swift.property.md)
   A Boolean value that indicates whether to prevent the user from removing applications.
-- [static let denyAppRemoval: SettingMetadata<Bool>](applicationsettings/denyappremoval-swift.type.property.md)
+- [static let denyAppRemoval: SettingMetadata<Bool>](./applicationsettings/denyappremoval-swift.type.property.md)
   The metadata for the setting to prevent app removal.
 
 ## Relationships
 
 ### Conforms To
-- [ManagedSettingsGroup](managedsettingsgroup.md)
+- [ManagedSettingsGroup](./managedsettingsgroup.md)
 
 ## See Also
 
-- [var appStore: AppStoreSettings](managedsettingsstore/appstore.md)
+### Filtering media content
+- [var appStore: AppStoreSettings](./managedsettingsstore/appstore.md)
   Settings that affect the App Store.
-- [struct AppStoreSettings](appstoresettings.md)
+- [struct AppStoreSettings](./appstoresettings.md)
   Constraints on a user’s App Store settings.
-- [var application: ApplicationSettings](managedsettingsstore/application.md)
+- [var application: ApplicationSettings](./managedsettingsstore/application.md)
   Settings that affect applications.
-- [var effectiveMaximumMovieRating: Int](managedsettingsstore/effectivemaximummovierating.md)
+- [var effectiveMaximumMovieRating: Int](./managedsettingsstore/effectivemaximummovierating.md)
   The movie rating constraint that is active on this device.
-- [var effectiveMaximumTVShowRating: Int](managedsettingsstore/effectivemaximumtvshowrating.md)
+- [var effectiveMaximumTVShowRating: Int](./managedsettingsstore/effectivemaximumtvshowrating.md)
   The TV rating constraint that is active on this device.
-- [var gameCenter: GameCenterSettings](managedsettingsstore/gamecenter.md)
+- [var gameCenter: GameCenterSettings](./managedsettingsstore/gamecenter.md)
   Settings that affect Game Center.
-- [struct GameCenterSettings](gamecentersettings.md)
+- [struct GameCenterSettings](./gamecentersettings.md)
   Constraints on the user’s Game Center settings.
-- [var media: MediaSettings](managedsettingsstore/media.md)
+- [var media: MediaSettings](./managedsettingsstore/media.md)
   Settings that affect media.
-- [struct MediaSettings](mediasettings.md)
+- [struct MediaSettings](./mediasettings.md)
   Constraints on the media content the user can access.
 
 

@@ -1,7 +1,8 @@
 # setAllToUnknown()
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets all `AudioChannelDescriptions` to `kAudioChannelLabel_Unknown`.
 
@@ -11,7 +12,7 @@ Sets all `AudioChannelDescriptions` to `kAudioChannelLabel_Unknown`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

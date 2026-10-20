@@ -1,7 +1,8 @@
 # currentMediaItemDate
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 Contains the current time of the media item as a `Date` object.
 
@@ -10,19 +11,20 @@ Contains the current time of the media item as a `Date` object.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Date currentMediaItemDate;
 ```
 
 ## See Also
 
-- [currentMediaItem](player/1627325-currentmediaitem.md)
+### Inspecting Media Items
+- [currentMediaItem](./api-1627325-currentmediaitem.md)
   The currently selected media item in the playlist.
-- [currentMediaItemDuration](player/1682110-currentmediaitemduration.md)
+- [currentMediaItemDuration](./api-1682110-currentmediaitemduration.md)
   The length, in seconds, of the current media item.
-- [nextMediaItem](player/1627338-nextmediaitem.md)
+- [nextMediaItem](./api-1627338-nextmediaitem.md)
   The next media item in the playlist after the currently selected item.
-- [previousMediaItem](player/1627373-previousmediaitem.md)
+- [previousMediaItem](./api-1627373-previousmediaitem.md)
   The item in the playlist previous to the currently selected item.
 
 

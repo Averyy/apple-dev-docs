@@ -1,7 +1,8 @@
 # CrlFlags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CrlFlags: CSSM_APPLE_TP_CRL_OPT_FLAGS
+```
+
+```c
+CSSM_APPLE_TP_CRL_OPT_FLAGS CrlFlags;
 ```
 
 

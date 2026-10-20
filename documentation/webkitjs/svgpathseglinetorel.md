@@ -1,7 +1,8 @@
 # SVGPathSegLinetoRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathseglinetorel/1633295-x.md)
-- [y](svgpathseglinetorel/1628816-y.md)
+- [x](./svgpathseglinetorel/api-1633295-x.md)
+- [y](./svgpathseglinetorel/api-1628816-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

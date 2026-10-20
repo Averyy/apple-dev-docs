@@ -1,7 +1,8 @@
 # SecKeyOperationType.encrypt
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 case encrypt
 ```
 
+```c
+kSecKeyOperationTypeEncrypt
+```
+
 ## Mentions
 
-- [Using Keys for Encryption](using-keys-for-encryption.md)
+- [Using Keys for Encryption](../using-keys-for-encryption.md)
 
 
 ---

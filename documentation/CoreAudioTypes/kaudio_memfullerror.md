@@ -1,7 +1,8 @@
 # kAudio_MemFullError
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error that indicates that the heap zone is full.
 
@@ -20,13 +21,18 @@ An error that indicates that the heap zone is full.
 var kAudio_MemFullError: OSStatus { get }
 ```
 
+```c
+kAudio_MemFullError
+```
+
 ## See Also
 
-- [var kAudio_ParamError: OSStatus](kaudio_paramerror.md)
+### Errors
+- [var kAudio_ParamError: OSStatus](./kaudio_paramerror.md)
   An error in the parameter list of the function.
-- [var kAudio_FileNotFoundError: OSStatus](kaudio_filenotfounderror.md)
+- [var kAudio_FileNotFoundError: OSStatus](./kaudio_filenotfounderror.md)
   An error that indicates the file wasn’t found.
-- [var kAudio_UnimplementedError: OSStatus](kaudio_unimplementederror.md)
+- [var kAudio_UnimplementedError: OSStatus](./kaudio_unimplementederror.md)
   An error that indicates the app called an unimplemented system function.
 
 

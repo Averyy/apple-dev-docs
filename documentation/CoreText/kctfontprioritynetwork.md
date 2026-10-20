@@ -1,23 +1,28 @@
 # kCTFontPriorityNetwork
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Priority of network fonts.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var kCTFontPriorityNetwork: Int { get }
+```
+
+```c
+kCTFontPriorityNetwork
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ Network fonts are located in `/Network/Library/Fonts`.
 
 ## See Also
 
-- [var kCTFontPrioritySystem: Int](kctfontprioritysystem.md)
+### Font Priority
+- [var kCTFontPrioritySystem: Int](./kctfontprioritysystem.md)
   Priority of system fonts.
-- [var kCTFontPriorityComputer: Int](kctfontprioritycomputer.md)
+- [var kCTFontPriorityComputer: Int](./kctfontprioritycomputer.md)
   Priority of computer local fonts.
-- [var kCTFontPriorityUser: Int](kctfontpriorityuser.md)
+- [var kCTFontPriorityUser: Int](./kctfontpriorityuser.md)
   Priority of local fonts.
-- [var kCTFontPriorityDynamic: Int](kctfontprioritydynamic.md)
+- [var kCTFontPriorityDynamic: Int](./kctfontprioritydynamic.md)
   Priority of fonts registered dynamically, not located in a standard location.
-- [var kCTFontPriorityProcess: Int](kctfontpriorityprocess.md)
+- [var kCTFontPriorityProcess: Int](./kctfontpriorityprocess.md)
   Priority of fonts registered for the process.
 
 

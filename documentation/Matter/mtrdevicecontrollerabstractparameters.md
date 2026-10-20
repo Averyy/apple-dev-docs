@@ -1,7 +1,8 @@
 # MTRDeviceControllerAbstractParameters
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 class MTRDeviceControllerAbstractParameters
 ```
 
+```objc
+@interface MTRDeviceControllerAbstractParameters : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var startSuspended: Bool](mtrdevicecontrollerabstractparameters/startsuspended.md)
+- [var startSuspended: Bool](./mtrdevicecontrollerabstractparameters/startsuspended.md)
   Whether the controller should start out suspended.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRDeviceControllerParameters](mtrdevicecontrollerparameters.md)
-- [MTRXPCDeviceControllerParameters](mtrxpcdevicecontrollerparameters.md)
+- [MTRDeviceControllerParameters](./mtrdevicecontrollerparameters.md)
+- [MTRXPCDeviceControllerParameters](./mtrxpcdevicecontrollerparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

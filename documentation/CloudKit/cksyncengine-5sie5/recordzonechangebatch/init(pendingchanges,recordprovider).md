@@ -1,7 +1,8 @@
 # init(pendingChanges:recordProvider:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a batch of records to modify using the provided record zone changes.
 
@@ -11,7 +12,7 @@ Creates a batch of records to modify using the provided record zone changes.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -35,9 +36,10 @@ This method iterates over `pendingChanges` and adds the necessary information to
 
 ## See Also
 
-- [CKSyncEngine.PendingRecordZoneChange](cksyncengine-5sie5/pendingrecordzonechange.md)
+### Creating a batch
+- [CKSyncEngine.PendingRecordZoneChange](../pendingrecordzonechange.md)
   Describes an unsent record modification.
-- [init(recordsToSave: [CKRecord], recordIDsToDelete: [CKRecord.ID], atomicByZone: Bool)](cksyncengine-5sie5/recordzonechangebatch/init(recordstosave:recordidstodelete:atomicbyzone:).md)
+- [init(recordsToSave: [CKRecord], recordIDsToDelete: [CKRecord.ID], atomicByZone: Bool)](./init%28recordstosave,recordidstodelete,atomicbyzone%29.md)
   Creates a batch of records to modify.
 
 

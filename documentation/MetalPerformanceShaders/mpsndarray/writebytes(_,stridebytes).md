@@ -1,7 +1,8 @@
 # writeBytes(_:strideBytes:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func writeBytes(_ buffer: UnsafeMutableRawPointer, strideBytes strideBytesPerDimension: UnsafeMutablePointer<Int>?)
+```
+
+```objc
+- (void) writeBytes:(void *) buffer strideBytes:(NSInteger *) strideBytesPerDimension;
 ```
 
 

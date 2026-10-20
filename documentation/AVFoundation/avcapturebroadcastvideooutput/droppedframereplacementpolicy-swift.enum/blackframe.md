@@ -1,7 +1,8 @@
 # AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.blackFrame
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert a black frame as replacement. When a frame is dropped, a black frame is inserted at the expected presentation time. This maintains output timing continuity while providing a clear visual indication of the dropped frame.
 
@@ -16,6 +17,10 @@ Insert a black frame as replacement. When a frame is dropped, a black frame is i
 
 ```swift
 case blackFrame
+```
+
+```c
+AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicyBlackFrame
 ```
 
 

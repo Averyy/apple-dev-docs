@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that observes important events in the room-scanning process.
 
@@ -18,7 +19,8 @@ weak var delegate: (any RoomCaptureSessionDelegate)?
 
 ## See Also
 
-- [RoomCaptureSession.CaptureError](roomcapturesession/captureerror.md)
+### Responding to events
+- [RoomCaptureSession.CaptureError](./captureerror.md)
   Errors that can occur during a room-capture session.
 
 

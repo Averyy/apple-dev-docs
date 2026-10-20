@@ -1,7 +1,8 @@
 # SKAdTestError.Code
 
 **Framework**: StoreKit Test  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumerated error codes related to ad network testing in the testing environment.
 
@@ -16,156 +17,160 @@ Enumerated error codes related to ad network testing in the testing environment.
 enum Code
 ```
 
+```c
+enum SKAdTestErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Signature Errors
-- [SKAdTestError.Code.missingSignature](skadtesterror/code/missingsignature.md)
+- [SKAdTestError.Code.missingSignature](./code/missingsignature.md)
   The signature for the ad is missing, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidKey](skadtesterror/code/signatureinvalidkey.md)
+- [SKAdTestError.Code.signatureInvalidKey](./code/signatureinvalidkey.md)
   The public key isn’t a valid cryptographic key, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidOrder](skadtesterror/code/signatureinvalidorder.md)
+- [SKAdTestError.Code.signatureInvalidOrder](./code/signatureinvalidorder.md)
   The order of the parameters in the signature is invalid, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAdNetworkId](skadtesterror/code/signaturemissingadnetworkid.md)
+- [SKAdTestError.Code.signatureMissingAdNetworkId](./code/signaturemissingadnetworkid.md)
   The signature is missing an ad network identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAppAdamId](skadtesterror/code/signaturemissingappadamid.md)
+- [SKAdTestError.Code.signatureMissingAppAdamId](./code/signaturemissingappadamid.md)
   The signature is missing the app item identifier for the advertised app, in the testing environment.
-- [SKAdTestError.Code.signatureMissingFidelityType](skadtesterror/code/signaturemissingfidelitytype.md)
+- [SKAdTestError.Code.signatureMissingFidelityType](./code/signaturemissingfidelitytype.md)
   The signature is missing the fidelity type, in the testing environment.
-- [SKAdTestError.Code.signatureMissingNonce](skadtesterror/code/signaturemissingnonce.md)
+- [SKAdTestError.Code.signatureMissingNonce](./code/signaturemissingnonce.md)
   The signature is missing the nonce, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceAppAdamId](skadtesterror/code/signaturemissingsourceappadamid.md)
+- [SKAdTestError.Code.signatureMissingSourceAppAdamId](./code/signaturemissingsourceappadamid.md)
   The signature is missing the source app item identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceDomain](skadtesterror/code/signaturemissingsourcedomain.md)
+- [SKAdTestError.Code.signatureMissingSourceDomain](./code/signaturemissingsourcedomain.md)
   The signature is missing the source domain, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceIdentifier](skadtesterror/code/signaturemissingsourceidentifier.md)
+- [SKAdTestError.Code.signatureMissingSourceIdentifier](./code/signaturemissingsourceidentifier.md)
   The signature is missing the source identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingTimestamp](skadtesterror/code/signaturemissingtimestamp.md)
+- [SKAdTestError.Code.signatureMissingTimestamp](./code/signaturemissingtimestamp.md)
   The signature is missing a timestamp, in the testing environment.
-- [SKAdTestError.Code.signatureUnknownError](skadtesterror/code/signatureunknownerror.md)
+- [SKAdTestError.Code.signatureUnknownError](./code/signatureunknownerror.md)
   An unknown error occurred with the signature in the testing environment.
-- [SKAdTestError.Code.signatureVerificationFailed](skadtesterror/code/signatureverificationfailed.md)
+- [SKAdTestError.Code.signatureVerificationFailed](./code/signatureverificationfailed.md)
   The signature verification failed in the testing environment.
-- [SKAdTestError.Code.missingSignature](skadtesterror/code/missingsignature.md)
+- [SKAdTestError.Code.missingSignature](./code/missingsignature.md)
   The signature for the ad is missing, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidKey](skadtesterror/code/signatureinvalidkey.md)
+- [SKAdTestError.Code.signatureInvalidKey](./code/signatureinvalidkey.md)
   The public key isn’t a valid cryptographic key, in the testing environment.
-- [SKAdTestError.Code.signatureInvalidOrder](skadtesterror/code/signatureinvalidorder.md)
+- [SKAdTestError.Code.signatureInvalidOrder](./code/signatureinvalidorder.md)
   The order of the parameters in the signature is invalid, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAdNetworkId](skadtesterror/code/signaturemissingadnetworkid.md)
+- [SKAdTestError.Code.signatureMissingAdNetworkId](./code/signaturemissingadnetworkid.md)
   The signature is missing an ad network identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingAppAdamId](skadtesterror/code/signaturemissingappadamid.md)
+- [SKAdTestError.Code.signatureMissingAppAdamId](./code/signaturemissingappadamid.md)
   The signature is missing the app item identifier for the advertised app, in the testing environment.
-- [SKAdTestError.Code.signatureMissingFidelityType](skadtesterror/code/signaturemissingfidelitytype.md)
+- [SKAdTestError.Code.signatureMissingFidelityType](./code/signaturemissingfidelitytype.md)
   The signature is missing the fidelity type, in the testing environment.
-- [SKAdTestError.Code.signatureMissingNonce](skadtesterror/code/signaturemissingnonce.md)
+- [SKAdTestError.Code.signatureMissingNonce](./code/signaturemissingnonce.md)
   The signature is missing the nonce, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceAppAdamId](skadtesterror/code/signaturemissingsourceappadamid.md)
+- [SKAdTestError.Code.signatureMissingSourceAppAdamId](./code/signaturemissingsourceappadamid.md)
   The signature is missing the source app item identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceDomain](skadtesterror/code/signaturemissingsourcedomain.md)
+- [SKAdTestError.Code.signatureMissingSourceDomain](./code/signaturemissingsourcedomain.md)
   The signature is missing the source domain, in the testing environment.
-- [SKAdTestError.Code.signatureMissingSourceIdentifier](skadtesterror/code/signaturemissingsourceidentifier.md)
+- [SKAdTestError.Code.signatureMissingSourceIdentifier](./code/signaturemissingsourceidentifier.md)
   The signature is missing the source identifier, in the testing environment.
-- [SKAdTestError.Code.signatureMissingTimestamp](skadtesterror/code/signaturemissingtimestamp.md)
+- [SKAdTestError.Code.signatureMissingTimestamp](./code/signaturemissingtimestamp.md)
   The signature is missing a timestamp, in the testing environment.
-- [SKAdTestError.Code.signatureUnknownError](skadtesterror/code/signatureunknownerror.md)
+- [SKAdTestError.Code.signatureUnknownError](./code/signatureunknownerror.md)
   An unknown error occurred with the signature in the testing environment.
-- [SKAdTestError.Code.signatureVerificationFailed](skadtesterror/code/signatureverificationfailed.md)
+- [SKAdTestError.Code.signatureVerificationFailed](./code/signatureverificationfailed.md)
   The signature verification failed in the testing environment.
 ### Postback Errors
-- [SKAdTestError.Code.excessivePostbacks](skadtesterror/code/excessivepostbacks.md)
+- [SKAdTestError.Code.excessivePostbacks](./code/excessivepostbacks.md)
   Too many postbacks submitted to the test session.
-- [SKAdTestError.Code.invalidConversionValue](skadtesterror/code/invalidconversionvalue.md)
+- [SKAdTestError.Code.invalidConversionValue](./code/invalidconversionvalue.md)
   The conversion value isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidPostbackURL](skadtesterror/code/invalidpostbackurl.md)
+- [SKAdTestError.Code.invalidPostbackURL](./code/invalidpostbackurl.md)
   The URL for the postback isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidRunnerUpPostback](skadtesterror/code/invalidrunneruppostback.md)
+- [SKAdTestError.Code.invalidRunnerUpPostback](./code/invalidrunneruppostback.md)
   A non-winning postback is defined with a version prior to version 3, in the testing environment.
-- [SKAdTestError.Code.invalidWinningPostbackCount](skadtesterror/code/invalidwinningpostbackcount.md)
+- [SKAdTestError.Code.invalidWinningPostbackCount](./code/invalidwinningpostbackcount.md)
   The number of winning postbacks isn’t valid, in the testing environment.
-- [SKAdTestError.Code.malformedPostbacks](skadtesterror/code/malformedpostbacks.md)
+- [SKAdTestError.Code.malformedPostbacks](./code/malformedpostbacks.md)
   The postback in the testing environment is malformed.
-- [SKAdTestError.Code.missingPostbacks](skadtesterror/code/missingpostbacks.md)
+- [SKAdTestError.Code.missingPostbacks](./code/missingpostbacks.md)
   The testing environment doesn’t have any postbacks.
-- [SKAdTestError.Code.misplacedWinnerPostback](skadtesterror/code/misplacedwinnerpostback.md)
+- [SKAdTestError.Code.misplacedWinnerPostback](./code/misplacedwinnerpostback.md)
   A winning postback wasn’t found in the first position, in the testing environment.
-- [SKAdTestError.Code.missingWinningPostback](skadtesterror/code/missingwinningpostback.md)
+- [SKAdTestError.Code.missingWinningPostback](./code/missingwinningpostback.md)
   The testing environment is missing a winning postback.
-- [SKAdTestError.Code.noPendingPostbacks](skadtesterror/code/nopendingpostbacks.md)
+- [SKAdTestError.Code.noPendingPostbacks](./code/nopendingpostbacks.md)
   The test session doesn’t have any pending postbacks to send.
-- [SKAdTestError.Code.unlinkedWinningPostbacks](skadtesterror/code/unlinkedwinningpostbacks.md)
+- [SKAdTestError.Code.unlinkedWinningPostbacks](./code/unlinkedwinningpostbacks.md)
   The postbacks aren’t correctly related to one another.
-- [SKAdTestError.Code.excessivePostbacks](skadtesterror/code/excessivepostbacks.md)
+- [SKAdTestError.Code.excessivePostbacks](./code/excessivepostbacks.md)
   Too many postbacks submitted to the test session.
-- [SKAdTestError.Code.invalidConversionValue](skadtesterror/code/invalidconversionvalue.md)
+- [SKAdTestError.Code.invalidConversionValue](./code/invalidconversionvalue.md)
   The conversion value isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidPostbackURL](skadtesterror/code/invalidpostbackurl.md)
+- [SKAdTestError.Code.invalidPostbackURL](./code/invalidpostbackurl.md)
   The URL for the postback isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidRunnerUpPostback](skadtesterror/code/invalidrunneruppostback.md)
+- [SKAdTestError.Code.invalidRunnerUpPostback](./code/invalidrunneruppostback.md)
   A non-winning postback is defined with a version prior to version 3, in the testing environment.
-- [SKAdTestError.Code.invalidWinningPostbackCount](skadtesterror/code/invalidwinningpostbackcount.md)
+- [SKAdTestError.Code.invalidWinningPostbackCount](./code/invalidwinningpostbackcount.md)
   The number of winning postbacks isn’t valid, in the testing environment.
-- [SKAdTestError.Code.malformedPostbacks](skadtesterror/code/malformedpostbacks.md)
+- [SKAdTestError.Code.malformedPostbacks](./code/malformedpostbacks.md)
   The postback in the testing environment is malformed.
-- [SKAdTestError.Code.missingPostbacks](skadtesterror/code/missingpostbacks.md)
+- [SKAdTestError.Code.missingPostbacks](./code/missingpostbacks.md)
   The testing environment doesn’t have any postbacks.
-- [SKAdTestError.Code.misplacedWinnerPostback](skadtesterror/code/misplacedwinnerpostback.md)
+- [SKAdTestError.Code.misplacedWinnerPostback](./code/misplacedwinnerpostback.md)
   A winning postback wasn’t found in the first position, in the testing environment.
-- [SKAdTestError.Code.missingWinningPostback](skadtesterror/code/missingwinningpostback.md)
+- [SKAdTestError.Code.missingWinningPostback](./code/missingwinningpostback.md)
   The testing environment is missing a winning postback.
-- [SKAdTestError.Code.noPendingPostbacks](skadtesterror/code/nopendingpostbacks.md)
+- [SKAdTestError.Code.noPendingPostbacks](./code/nopendingpostbacks.md)
   The test session doesn’t have any pending postbacks to send.
-- [SKAdTestError.Code.unlinkedWinningPostbacks](skadtesterror/code/unlinkedwinningpostbacks.md)
+- [SKAdTestError.Code.unlinkedWinningPostbacks](./code/unlinkedwinningpostbacks.md)
   The postbacks aren’t correctly related to one another.
 ### Other Errors
-- [SKAdTestError.Code.invalidVersion](skadtesterror/code/invalidversion.md)
+- [SKAdTestError.Code.invalidVersion](./code/invalidversion.md)
   A postback contains an incorrect version number.
-- [SKAdTestError.Code.invalidImpressionId](skadtesterror/code/invalidimpressionid.md)
+- [SKAdTestError.Code.invalidImpressionId](./code/invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [SKAdTestError.Code.invalidSourceAppAdamId](skadtesterror/code/invalidsourceappadamid.md)
+- [SKAdTestError.Code.invalidSourceAppAdamId](./code/invalidsourceappadamid.md)
   The app ID is less than zero.
-- [SKAdTestError.Code.invalidSourceDomain](skadtesterror/code/invalidsourcedomain.md)
+- [SKAdTestError.Code.invalidSourceDomain](./code/invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [SKAdTestError.Code.invalidSourceIdentifier](skadtesterror/code/invalidsourceidentifier.md)
+- [SKAdTestError.Code.invalidSourceIdentifier](./code/invalidsourceidentifier.md)
   The postback’s identifier isn’t two, three, or four digits.
-- [SKAdTestError.Code.unknownError](skadtesterror/code/unknownerror.md)
+- [SKAdTestError.Code.unknownError](./code/unknownerror.md)
   An unknown error occurred in the testing environment.
-- [SKAdTestError.Code.invalidVersion](skadtesterror/code/invalidversion.md)
+- [SKAdTestError.Code.invalidVersion](./code/invalidversion.md)
   A postback contains an incorrect version number.
-- [SKAdTestError.Code.invalidImpressionId](skadtesterror/code/invalidimpressionid.md)
+- [SKAdTestError.Code.invalidImpressionId](./code/invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [SKAdTestError.Code.invalidSourceAppAdamId](skadtesterror/code/invalidsourceappadamid.md)
+- [SKAdTestError.Code.invalidSourceAppAdamId](./code/invalidsourceappadamid.md)
   The app ID is less than zero.
-- [SKAdTestError.Code.invalidSourceDomain](skadtesterror/code/invalidsourcedomain.md)
+- [SKAdTestError.Code.invalidSourceDomain](./code/invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [SKAdTestError.Code.invalidSourceIdentifier](skadtesterror/code/invalidsourceidentifier.md)
+- [SKAdTestError.Code.invalidSourceIdentifier](./code/invalidsourceidentifier.md)
   The postback’s identifier isn’t two, three, or four digits.
-- [SKAdTestError.Code.unknownError](skadtesterror/code/unknownerror.md)
+- [SKAdTestError.Code.unknownError](./code/unknownerror.md)
   An unknown error occurred in the testing environment.
 ### Older Errors
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+- [SKAdTestError.Code.invalidCampaignId](./code/invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+- [SKAdTestError.Code.signatureMissingCampaignId](./code/signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./code/conflictingsource.md)
   This error code is unused.
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+- [SKAdTestError.Code.invalidCampaignId](./code/invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.signatureMissingCampaignId](skadtesterror/code/signaturemissingcampaignid.md)
+- [SKAdTestError.Code.signatureMissingCampaignId](./code/signaturemissingcampaignid.md)
   The signature is missing the campaign identifier, in the testing environment.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./code/conflictingsource.md)
   This error code is unused.
 ### Initializers
-- [init?(rawValue: Int)](skadtesterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

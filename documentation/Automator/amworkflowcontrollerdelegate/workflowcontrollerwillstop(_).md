@@ -1,7 +1,8 @@
 # workflowControllerWillStop(_:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the workflow controller object is about to stop.
 
@@ -15,13 +16,18 @@ Tells the delegate that the workflow controller object is about to stop.
 optional func workflowControllerWillStop(_ controller: AMWorkflowController)
 ```
 
+```objc
+- (void) workflowControllerWillStop:(AMWorkflowController *) controller;
+```
+
 ## Parameters
 
 - `controller`: The workflow controller object to stop.
 
 ## See Also
 
-- [func workflowControllerDidStop(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerdidstop(_:).md)
+### Stopping
+- [func workflowControllerDidStop(AMWorkflowController)](./workflowcontrollerdidstop%28_%29.md)
   Tells the delegate that the workflow controller object has stopped.
 
 

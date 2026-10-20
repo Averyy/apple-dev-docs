@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the most suitable format for rendering on a device with the specified traits.
 
@@ -16,6 +17,10 @@ Creates the most suitable format for rendering on a device with the specified tr
 
 ```swift
 convenience init(for traitCollection: UITraitCollection)
+```
+
+```objc
++ (instancetype) formatForTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
 #### Return Value

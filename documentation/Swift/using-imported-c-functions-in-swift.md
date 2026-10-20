@@ -1,6 +1,7 @@
 # Using Imported C Functions in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Learn how to call imported functions that are declared in a C header.
 
@@ -28,9 +29,9 @@ func createPoint2D(_ x: Float, _ y: Float) -> Point2D
 func distance(_ from: Point2D, _ to: Point2D) -> Float
 ```
 
-##### Use a Cvalistpointer to Call Variadic Functions
+##### Use a CVaListPointer to Call Variadic Functions
 
-In Swift, you can call C variadic functions, such as `vasprintf(_:_:_:)`, using the Swift [`getVaList(_:)`](getvalist(_:).md) or [`withVaList(_:_:)`](withvalist(_:_:).md) functions. The `withVaList(_:_:)` function takes an array of [`CVarArg`](cvararg.md) values and provides a [`CVaListPointer`](cvalistpointer.md) value within the body of a closure parameter, whereas the `getVaList(_:)` function returns this value directly. With either function, you pass the resulting `CVaListPointer` value as the `va_list` argument of the C variadic function.
+In Swift, you can call C variadic functions, such as `vasprintf(_:_:_:)`, using the Swift [`getVaList(_:)`](./getvalist%28_%29.md) or [`withVaList(_:_:)`](./withvalist%28_,_%29.md) functions. The `withVaList(_:_:)` function takes an array of [`CVarArg`](./cvararg.md) values and provides a [`CVaListPointer`](./cvalistpointer.md) value within the body of a closure parameter, whereas the `getVaList(_:)` function returns this value directly. With either function, you pass the resulting `CVaListPointer` value as the `va_list` argument of the C variadic function.
 
 For example, here’s how to call the `vasprintf(_:_:_:)` function in Swift:
 
@@ -61,23 +62,23 @@ For return types, variables, and arguments, the following mappings apply:
 
 | C Syntax | Swift Syntax |
 | --- | --- |
-| `const Type *` | [`UnsafePointer`](unsafepointer.md)<Type> |
-| `Type *` | [`UnsafeMutablePointer`](unsafemutablepointer.md)<Type> |
+| `const Type *` | [`UnsafePointer`](./unsafepointer.md)<Type> |
+| `Type *` | [`UnsafeMutablePointer`](./unsafemutablepointer.md)<Type> |
 
 For class types, the following mappings apply:
 
 | C Syntax | Swift Syntax |
 | --- | --- |
-| `Type * const *` | [`UnsafePointer`](unsafepointer.md)<Type> |
-| `Type * __strong *` | [`UnsafeMutablePointer`](unsafemutablepointer.md)<Type> |
-| `Type **` | [`AutoreleasingUnsafeMutablePointer`](autoreleasingunsafemutablepointer.md)<Type> |
+| `Type * const *` | [`UnsafePointer`](./unsafepointer.md)<Type> |
+| `Type * __strong *` | [`UnsafeMutablePointer`](./unsafemutablepointer.md)<Type> |
+| `Type **` | [`AutoreleasingUnsafeMutablePointer`](./autoreleasingunsafemutablepointer.md)<Type> |
 
 For pointers to untyped, raw memory, the following mappings apply:
 
 | C Syntax | Swift Syntax |
 | --- | --- |
-| `const void *` | [`UnsafeRawPointer`](unsaferawpointer.md) |
-| `void *` | [`UnsafeMutableRawPointer`](unsafemutablerawpointer.md) |
+| `const void *` | [`UnsafeRawPointer`](./unsaferawpointer.md) |
+| `void *` | [`UnsafeMutableRawPointer`](./unsafemutablerawpointer.md) |
 
 C function pointers are imported into Swift as closures with the C function pointer calling convention, denoted by the `@convention(c)` attribute. For example, a function pointer that has the type `int (*)(void)` in C is imported into Swift as `@convention(c) () -> Int32`.
 
@@ -85,9 +86,10 @@ If the type of the value pointed to by a C pointer cannot be represented by Swif
 
 ## See Also
 
-- [Using Imported C Structs and Unions in Swift](using-imported-c-structs-and-unions-in-swift.md)
+### C APIs
+- [Using Imported C Structs and Unions in Swift](./using-imported-c-structs-and-unions-in-swift.md)
   Learn how Swift represents imported C structures and unions, including types with bitfields and unnamed fields.
-- [Using Imported C Macros in Swift](using-imported-c-macros-in-swift.md)
+- [Using Imported C Macros in Swift](./using-imported-c-macros-in-swift.md)
   Use imported C-defined macros as constants.
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ var id: EquipmentIdentifier
 
 ## See Also
 
-- [var pose: Pose3D](equipmentpose3d/pose.md)
+### Getting equipment pose properties
+- [var pose: Pose3D](./pose.md)
   The 3D position and orientation of equipment on the table.
 
 

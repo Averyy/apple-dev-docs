@@ -1,7 +1,8 @@
 # CIImageProcessorOutput
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A container for writing image data and information produced by a custom image processor.
 
@@ -19,48 +20,53 @@ A container for writing image data and information produced by a custom image pr
 protocol CIImageProcessorOutput
 ```
 
+```objc
+@protocol CIImageProcessorOutput
+```
+
 #### Overview
 
-Your app does not define classes that adopt this protocol; Core Image provides an object of this type when applying a custom image processor you create with a [`CIImageProcessorKernel`](ciimageprocessorkernel.md) subclass.
+Your app does not define classes that adopt this protocol; Core Image provides an object of this type when applying a custom image processor you create with a [`CIImageProcessorKernel`](./ciimageprocessorkernel.md) subclass.
 
-In your image processor class’ [`process(with:arguments:output:)`](ciimageprocessorkernel/process(with:arguments:output:).md) method, use an appropriate property of the provided `CIImageProcessorOutput` object to return processed pixel data to Core Image. For example, if you process the image using a Metal shader, bind the [`metalTexture`](ciimageprocessoroutput/metaltexture.md) property as an attachment in a render pass or as an output texture in a compute pass. Or, if you process the image using a CPU-based routine, write processed pixel data to memory using the [`baseAddress`](ciimageprocessoroutput/baseaddress.md) pointer. You must provide rendered output to one (and only one) of the properties listed in [`Providing Output Image Data`](ciimageprocessoroutput#Providing-Output-Image-Data.md).
+In your image processor class’ [`process(with:arguments:output:)`](./ciimageprocessorkernel/process%28with,arguments,output%29.md) method, use an appropriate property of the provided `CIImageProcessorOutput` object to return processed pixel data to Core Image. For example, if you process the image using a Metal shader, bind the [`metalTexture`](./ciimageprocessoroutput/metaltexture.md) property as an attachment in a render pass or as an output texture in a compute pass. Or, if you process the image using a CPU-based routine, write processed pixel data to memory using the [`baseAddress`](./ciimageprocessoroutput/baseaddress.md) pointer. You must provide rendered output to one (and only one) of the properties listed in [Providing Output Image Data](./ciimageprocessoroutput.md#Providing-Output-Image-Data).
 
-To access input pixel data in your image processor block, see the [`CIImageProcessorInput`](ciimageprocessorinput.md) class.
+To access input pixel data in your image processor block, see the [`CIImageProcessorInput`](./ciimageprocessorinput.md) class.
 
 ## Topics
 
 ### Providing Output Image Data
-- [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
+- [var baseAddress: UnsafeMutableRawPointer](./ciimageprocessoroutput/baseaddress.md)
   The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var metalTexture: (any MTLTexture)?](ciimageprocessoroutput/metaltexture.md)
+- [var metalTexture: (any MTLTexture)?](./ciimageprocessoroutput/metaltexture.md)
   A Metal texture object that can be bound for output using Metal.
-- [var pixelBuffer: CVPixelBuffer?](ciimageprocessoroutput/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer?](./ciimageprocessoroutput/pixelbuffer.md)
   An output pixelBuffer object that your Core Image Processor Kernel can write to.
-- [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
+- [var surface: IOSurfaceRef](./ciimageprocessoroutput/surface.md)
   An output surface object that your Core Image Processor Kernel can write to.
 ### Getting Supplemental Information for Image Processing
-- [var region: CGRect](ciimageprocessoroutput/region.md)
+- [var region: CGRect](./ciimageprocessoroutput/region.md)
   The rectangular region of the output image that your Core Image Processor Kernel must provide.
-- [var metalCommandBuffer: (any MTLCommandBuffer)?](ciimageprocessoroutput/metalcommandbuffer.md)
+- [var metalCommandBuffer: (any MTLCommandBuffer)?](./ciimageprocessoroutput/metalcommandbuffer.md)
   Returns a Metal command buffer object that can be used for encoding commands.
-- [var bytesPerRow: Int](ciimageprocessoroutput/bytesperrow.md)
+- [var bytesPerRow: Int](./ciimageprocessoroutput/bytesperrow.md)
   The bytes per row of the CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var format: CIFormat](ciimageprocessoroutput/format.md)
+- [var format: CIFormat](./ciimageprocessoroutput/format.md)
   The pixel format of the CPU memory that your Core Image Processor Kernel can write pixels to.
 ### Instance Properties
-- [var digest: UInt64](ciimageprocessoroutput/digest.md)
+- [var digest: UInt64](./ciimageprocessoroutput/digest.md)
   A 64-bit digest that uniquely describes the contents of the output of a processor.
 ### Instance Methods
-- [func temporaryPixelBuffer(identifier: String, format: OSType, width: Int, height: Int, attributes: [AnyHashable : Any]?) -> CVPixelBuffer?](ciimageprocessoroutput/temporarypixelbuffer(identifier:format:width:height:attributes:).md)
+- [func temporaryPixelBuffer(identifier: String, format: OSType, width: Int, height: Int, attributes: [AnyHashable : Any]?) -> CVPixelBuffer?](./ciimageprocessoroutput/temporarypixelbuffer%28identifier,format,width,height,attributes%29.md)
   Returns a temporary CVPixelBuffer that your Core Image Processor Kernel can use as scratch storage during processing.
-- [func temporarySurface(identifier: String, format: OSType, width: Int, height: Int) -> IOSurface?](ciimageprocessoroutput/temporarysurface(identifier:format:width:height:).md)
+- [func temporarySurface(identifier: String, format: OSType, width: Int, height: Int) -> IOSurface?](./ciimageprocessoroutput/temporarysurface%28identifier,format,width,height%29.md)
   Returns a temporary IOSurface that your Core Image Processor Kernel can use as scratch storage during processing.
 
 ## See Also
 
-- [class CIImageProcessorKernel](ciimageprocessorkernel.md)
+### Custom Image Processors
+- [class CIImageProcessorKernel](./ciimageprocessorkernel.md)
   The abstract class you extend to create custom image processors that can integrate with Core Image workflows.
-- [protocol CIImageProcessorInput](ciimageprocessorinput.md)
+- [protocol CIImageProcessorInput](./ciimageprocessorinput.md)
   A container of image data and information for use in a custom image processor.
 
 

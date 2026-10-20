@@ -1,7 +1,8 @@
 # AccessibilityTextContentType
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Textual context that assistive technologies can use to improve the presentation of spoken text.
 
@@ -22,41 +23,42 @@ struct AccessibilityTextContentType
 
 #### Overview
 
-Use an `AccessibilityTextContentType` value when setting the accessibility text content type of a view using the [`accessibilityTextContentType(_:)`](view/accessibilitytextcontenttype(_:).md) modifier.
+Use an `AccessibilityTextContentType` value when setting the accessibility text content type of a view using the [`accessibilityTextContentType(_:)`](./view/accessibilitytextcontenttype%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting content types
-- [static let console: AccessibilityTextContentType](accessibilitytextcontenttype/console.md)
+- [static let console: AccessibilityTextContentType](./accessibilitytextcontenttype/console.md)
   A type that represents text used for input, like in the Terminal app.
-- [static let fileSystem: AccessibilityTextContentType](accessibilitytextcontenttype/filesystem.md)
+- [static let fileSystem: AccessibilityTextContentType](./accessibilitytextcontenttype/filesystem.md)
   A type that represents text used by a file browser, like in the Finder app in macOS.
-- [static let messaging: AccessibilityTextContentType](accessibilitytextcontenttype/messaging.md)
+- [static let messaging: AccessibilityTextContentType](./accessibilitytextcontenttype/messaging.md)
   A type that represents text used in a message, like in the Messages app.
-- [static let narrative: AccessibilityTextContentType](accessibilitytextcontenttype/narrative.md)
+- [static let narrative: AccessibilityTextContentType](./accessibilitytextcontenttype/narrative.md)
   A type that represents text used in a story or poem, like in the Books app.
-- [static let plain: AccessibilityTextContentType](accessibilitytextcontenttype/plain.md)
+- [static let plain: AccessibilityTextContentType](./accessibilitytextcontenttype/plain.md)
   A type that represents generic text that has no specific type.
-- [static let sourceCode: AccessibilityTextContentType](accessibilitytextcontenttype/sourcecode.md)
+- [static let sourceCode: AccessibilityTextContentType](./accessibilitytextcontenttype/sourcecode.md)
   A type that represents text used in source code, like in Swift Playgrounds.
-- [static let spreadsheet: AccessibilityTextContentType](accessibilitytextcontenttype/spreadsheet.md)
+- [static let spreadsheet: AccessibilityTextContentType](./accessibilitytextcontenttype/spreadsheet.md)
   A type that represents text used in a grid of data, like in the Numbers app.
-- [static let wordProcessing: AccessibilityTextContentType](accessibilitytextcontenttype/wordprocessing.md)
+- [static let wordProcessing: AccessibilityTextContentType](./accessibilitytextcontenttype/wordprocessing.md)
   A type that represents text used in a document, like in the Pages app.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitytextcontenttype(_:).md)
+### Describing content
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
+- [enum AccessibilityHeadingLevel](./accessibilityheadinglevel.md)
   The hierarchy of a heading in relation to other headings.
 
 

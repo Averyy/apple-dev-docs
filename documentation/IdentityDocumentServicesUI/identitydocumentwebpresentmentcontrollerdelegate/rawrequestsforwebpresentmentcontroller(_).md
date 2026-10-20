@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServicesUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A method that allows the calling app to provide the incoming raw web presentment requests to the web presentment controller.
@@ -9,7 +10,7 @@ A method that allows the calling app to provide the incoming raw web presentment
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

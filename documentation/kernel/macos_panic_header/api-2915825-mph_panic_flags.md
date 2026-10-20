@@ -1,14 +1,15 @@
 # mph_panic_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 mph_panic_flags_t mph_panic_flags;
 ```
 

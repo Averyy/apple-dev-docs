@@ -1,6 +1,7 @@
 # Creating a timecode track for 29.97 FPS video
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Configure a timecode track to specify timecode information for other tracks.
 
@@ -16,7 +17,7 @@ The sample description for a timecode track specifies the timecode system being 
 
 Since the timecode media handler is a derived from the base media handler, the media information atom starts with a generic media header atom. The timecode atoms would contain the following data values:
 
-```None
+```
 Generic media header atom
 ├── Atom size: 80
 ├── Atom type: 'gmhd'
@@ -52,7 +53,7 @@ Generic media header atom
 
 The sample table atom contains all the standard sample atoms and has the following data values:
 
-```None
+```
 Sample table atom
 ├── Atom size: 174
 ├── Atom type: 'stbl' (sample table)
@@ -122,11 +123,12 @@ In this example, the video and sound tracks are tracks `1` and `2`. The timecode
 
 ## See Also
 
-- [Timecode sample description](timecode_sample_description.md)
+### Storing time code data
+- [Timecode sample description](./timecode_sample_description.md)
   An atom that defines how to interpret time code media data.
-- [Timecode media information atom ('tcmi')](timecode_media_information_atom.md)
+- [Timecode media information atom ('tcmi')](./timecode_media_information_atom.md)
   An atom that governs how the timecode text is displayed.
-- [Timecode sample data](timecode_sample_data.md)
+- [Timecode sample data](./timecode_sample_data.md)
   An atom that represents timecode sample data.
 
 

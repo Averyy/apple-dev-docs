@@ -1,17 +1,22 @@
 # selectedRanges
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of selected ranges.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional var selectedRanges: [NSValue] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSValue *> * selectedRanges;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This property is required for the replace all in selection, select all, and sele
 
 ## See Also
 
-- [var isSelectable: Bool](nstextfinderclient/isselectable.md)
+### Selection Information
+- [var isSelectable: Bool](./isselectable.md)
   Returns whether the text is selectable.
-- [var allowsMultipleSelection: Bool](nstextfinderclient/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   Returns whether multiple items can be selected.
-- [var firstSelectedRange: NSRange](nstextfinderclient/firstselectedrange.md)
+- [var firstSelectedRange: NSRange](./firstselectedrange.md)
   Returns the currently selected range.
 
 

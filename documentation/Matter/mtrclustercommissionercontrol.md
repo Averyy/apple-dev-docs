@@ -1,7 +1,8 @@
 # MTRClusterCommissionerControl
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Commissioner Control Supports the ability for clients to request the commissioning of themselves or other nodes onto a fabric which the cluster server can commission onto.
 
@@ -20,32 +21,36 @@ Cluster Commissioner Control Supports the ability for clients to request the com
 class MTRClusterCommissionerControl
 ```
 
+```objc
+@interface MTRClusterCommissionerControl : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustercommissionercontrol/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclustercommissionercontrol/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func commissionNode(with: MTRCommissionerControlClusterCommissionNodeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRCommissionerControlClusterReverseOpenCommissioningWindowParams?, (any Error)?) -> Void)](mtrclustercommissionercontrol/commissionnode(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSupportedDeviceCategories(with: MTRReadParams?) -> [String : Any]?](mtrclustercommissionercontrol/readattributesupporteddevicecategories(with:).md)
-- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustercommissionercontrol/requestcommissioningapproval(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func commissionNode(with: MTRCommissionerControlClusterCommissionNodeParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRCommissionerControlClusterReverseOpenCommissioningWindowParams?, (any Error)?) -> Void)](./mtrclustercommissionercontrol/commissionnode%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSupportedDeviceCategories(with: MTRReadParams?) -> [String : Any]?](./mtrclustercommissionercontrol/readattributesupporteddevicecategories%28with%29.md)
+- [func requestCommissioningApproval(with: MTRCommissionerControlClusterRequestCommissioningApprovalParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclustercommissionercontrol/requestcommissioningapproval%28with,expectedvalues,expectedvalueinterval,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

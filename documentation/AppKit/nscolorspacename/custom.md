@@ -1,12 +1,13 @@
 # custom
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom `NSColorSpace` object and floating-point components describing a color in that space
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ Custom `NSColorSpace` object and floating-point components describing a color in
 static let custom: NSColorSpaceName
 ```
 
+```c
+extern NSColorSpaceName NSCustomColorSpace;
+```
+
 #### Discussion
 
-A custom color-space object represents a color space that is not necessarily predefined by the Application Kit. See “[`Working With Color Spaces`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/UsingColorSpaces.html#//apple_ref/doc/uid/TP40001807)” for information on creating custom color-space objects.
+A custom color-space object represents a color space that is not necessarily predefined by the Application Kit. See “[Working With Color Spaces](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/UsingColorSpaces.html#//apple_ref/doc/uid/TP40001807)” for information on creating custom color-space objects.
 
 ## See Also
 
-- [static let calibratedRGB: NSColorSpaceName](nscolorspacename/calibratedrgb.md)
+### Color Space Names
+- [static let calibratedRGB: NSColorSpaceName](./calibratedrgb.md)
   Calibrated color space with red, green, blue, and alpha components.
-- [static let calibratedWhite: NSColorSpaceName](nscolorspacename/calibratedwhite.md)
+- [static let calibratedWhite: NSColorSpaceName](./calibratedwhite.md)
   Calibrated color space with white and alpha components (pure white is 1.0)
-- [static let deviceCMYK: NSColorSpaceName](nscolorspacename/devicecmyk.md)
+- [static let deviceCMYK: NSColorSpaceName](./devicecmyk.md)
   Device-dependent color space with cyan, magenta, yellow, black, and alpha components
-- [static let deviceRGB: NSColorSpaceName](nscolorspacename/devicergb.md)
+- [static let deviceRGB: NSColorSpaceName](./devicergb.md)
   Device-dependent color space with red, green, blue, and alpha components.
-- [static let deviceWhite: NSColorSpaceName](nscolorspacename/devicewhite.md)
+- [static let deviceWhite: NSColorSpaceName](./devicewhite.md)
   Device-dependent color space with white and alpha components (pure white is 1.0)
-- [static let named: NSColorSpaceName](nscolorspacename/named.md)
+- [static let named: NSColorSpaceName](./named.md)
   Catalog name and color name components
-- [static let pattern: NSColorSpaceName](nscolorspacename/pattern.md)
+- [static let pattern: NSColorSpaceName](./pattern.md)
   Pattern image (tiled)
 
 

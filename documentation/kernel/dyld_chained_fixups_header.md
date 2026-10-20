@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_fixups_header {
     ...
 };
@@ -17,13 +17,13 @@ struct dyld_chained_fixups_header {
 ## Topics
 
 ### Instance Properties
-- [fixups_version](dyld_chained_fixups_header/3553581-fixups_version.md)
-- [imports_count](dyld_chained_fixups_header/3553582-imports_count.md)
-- [imports_format](dyld_chained_fixups_header/3553583-imports_format.md)
-- [imports_offset](dyld_chained_fixups_header/3553584-imports_offset.md)
-- [starts_offset](dyld_chained_fixups_header/3553585-starts_offset.md)
-- [symbols_format](dyld_chained_fixups_header/3553586-symbols_format.md)
-- [symbols_offset](dyld_chained_fixups_header/3553587-symbols_offset.md)
+- [fixups_version](./dyld_chained_fixups_header/api-3553581-fixups_version.md)
+- [imports_count](./dyld_chained_fixups_header/api-3553582-imports_count.md)
+- [imports_format](./dyld_chained_fixups_header/api-3553583-imports_format.md)
+- [imports_offset](./dyld_chained_fixups_header/api-3553584-imports_offset.md)
+- [starts_offset](./dyld_chained_fixups_header/api-3553585-starts_offset.md)
+- [symbols_format](./dyld_chained_fixups_header/api-3553586-symbols_format.md)
+- [symbols_offset](./dyld_chained_fixups_header/api-3553587-symbols_offset.md)
 
 
 ---

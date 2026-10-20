@@ -1,7 +1,8 @@
 # decodeTimeRange(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the Core Media time range structure associated with a given key.
 
@@ -20,6 +21,10 @@ Returns the Core Media time range structure associated with a given key.
 func decodeTimeRange(forKey key: String) -> CMTimeRange
 ```
 
+```objc
+- (CMTimeRange) decodeCMTimeRangeForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The `CMTimeRange` structure associated with `key` in the archive.
@@ -30,11 +35,13 @@ The `CMTimeRange` structure associated with `key` in the archive.
 
 ## See Also
 
-- [func encode(CMTimeRange, forKey: String)](nscoder/encode(_:forkey:)-46lo8.md)
+### Related Documentation
+- [func encode(CMTimeRange, forKey: String)](./encode%28_,forkey%29-46lo8.md)
   Encodes a given Core Media time range structure and associates it with a specified key.
-- [func decodeTime(forKey: String) -> CMTime](nscoder/decodetime(forkey:).md)
+### Decoding Core Media Time Structures
+- [func decodeTime(forKey: String) -> CMTime](./decodetime%28forkey%29.md)
   Returns the Core Media time structure associated with a given key.
-- [func decodeTimeMapping(forKey: String) -> CMTimeMapping](nscoder/decodetimemapping(forkey:).md)
+- [func decodeTimeMapping(forKey: String) -> CMTimeMapping](./decodetimemapping%28forkey%29.md)
   Returns the Core Media time mapping structure associated with a given key.
 
 

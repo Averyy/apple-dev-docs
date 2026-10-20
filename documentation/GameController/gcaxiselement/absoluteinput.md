@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An input object that provides absolute axis values.
@@ -20,9 +21,14 @@ An input object that provides absolute axis values.
 var absoluteInput: (any GCAxisInput)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<GCAxisInput> absoluteInput;
+```
+
 ## See Also
 
-- [var relativeInput: any GCRelativeInput](gcaxiselement/relativeinput.md)
+### Getting the inputs
+- [var relativeInput: any GCRelativeInput](./relativeinput.md)
   An input object that provides relative axis values.
 
 

@@ -1,7 +1,8 @@
 # subscribeAttributeHoldTimeLimits(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeHoldTimeLimits(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTROccupancySensingClusterHoldTimeLimitsStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeHoldTimeLimitsWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTROccupancySensingClusterHoldTimeLimitsStruct *value, NSError *error)) reportHandler;
 ```
 
 

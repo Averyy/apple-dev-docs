@@ -1,7 +1,8 @@
 # presentForCurrentApplication()
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func presentForCurrentApplication()
+```
+
+```objc
+- (void) presentPickerForCurrentApplication;
 ```
 
 #### Discussion

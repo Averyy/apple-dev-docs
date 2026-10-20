@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a network device configuration object for you to configure.
 
@@ -14,13 +15,17 @@ Creates a network device configuration object for you to configure.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new network device configuration object.
 
 #### Discussion
 
-After creating the object, assign appropriate values to the inherited [`attachment`](vznetworkdeviceconfiguration/attachment.md) and [`macAddress`](vznetworkdeviceconfiguration/macaddress.md) properties to complete the configuration object.
+After creating the object, assign appropriate values to the inherited [`attachment`](../vznetworkdeviceconfiguration/attachment.md) and [`macAddress`](../vznetworkdeviceconfiguration/macaddress.md) properties to complete the configuration object.
 
 
 ---

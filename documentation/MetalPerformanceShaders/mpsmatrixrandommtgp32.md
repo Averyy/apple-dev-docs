@@ -1,7 +1,8 @@
 # MPSMatrixRandomMTGP32
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,30 +18,34 @@
 class MPSMatrixRandomMTGP32
 ```
 
+```objc
+@interface MPSMatrixRandomMTGP32 : MPSMatrixRandom
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixrandommtgp32/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsmatrixrandommtgp32/init(device:).md)
-- [convenience init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](mpsmatrixrandommtgp32/init(device:destinationdatatype:seed:).md)
-- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](mpsmatrixrandommtgp32/init(device:destinationdatatype:seed:distributiondescriptor:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsmatrixrandommtgp32/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsmatrixrandommtgp32/init%28device%29.md)
+- [convenience init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int)](./mpsmatrixrandommtgp32/init%28device,destinationdatatype,seed%29.md)
+- [init(device: any MTLDevice, destinationDataType: MPSDataType, seed: Int, distributionDescriptor: MPSMatrixRandomDistributionDescriptor)](./mpsmatrixrandommtgp32/init%28device,destinationdatatype,seed,distributiondescriptor%29.md)
 ### Instance Methods
-- [func synchronizeState(on: any MTLCommandBuffer)](mpsmatrixrandommtgp32/synchronizestate(on:).md)
+- [func synchronizeState(on: any MTLCommandBuffer)](./mpsmatrixrandommtgp32/synchronizestate%28on%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixRandom](mpsmatrixrandom.md)
+- [MPSMatrixRandom](./mpsmatrixrandom.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AVAudioContentSource.passthrough
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,9 +19,14 @@
 case passthrough
 ```
 
+```c
+AVAudioContentSource_Passthrough
+```
+
 ## See Also
 
-- [AVAudioContentSource.applePassthrough](avaudiocontentsource/applepassthrough.md)
+### Identifying passthrough content
+- [AVAudioContentSource.applePassthrough](./applepassthrough.md)
 
 
 ---

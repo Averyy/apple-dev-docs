@@ -1,7 +1,8 @@
 # marksOutputTrackAsEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to enable a track in the output for playback and processing.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether to enable a track in the output for playb
 var marksOutputTrackAsEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL marksOutputTrackAsEnabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If the format you’re writing supports disabling tracks, you can disable a track by setting this value to [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`true`](../../Swift/true.md). If the format you’re writing supports disabling tracks, you can disable a track by setting this value to [`false`](../../Swift/false.md).
 
 You can’t set this value after writing starts.
 
 ## See Also
 
-- [var naturalSize: CGSize](avassetwriterinput/naturalsize.md)
+### Configuring presentation
+- [var naturalSize: CGSize](./naturalsize.md)
   The natural display dimensions of the output’s visual media.
-- [var transform: CGAffineTransform](avassetwriterinput/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The transform to use for display of the output’s visual media.
-- [var preferredVolume: Float](avassetwriterinput/preferredvolume.md)
+- [var preferredVolume: Float](./preferredvolume.md)
   The volume to prefer for playback of the output’s audio data.
-- [var mediaTimeScale: CMTimeScale](avassetwriterinput/mediatimescale.md)
+- [var mediaTimeScale: CMTimeScale](./mediatimescale.md)
   The time scale of the track in the output file.
 
 

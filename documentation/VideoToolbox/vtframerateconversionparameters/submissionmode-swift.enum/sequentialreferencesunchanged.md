@@ -1,7 +1,8 @@
 # VTFrameRateConversionParameters.SubmissionMode.sequentialReferencesUnchanged
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 You are submitting frames sequentially.
 
@@ -15,6 +16,10 @@ You are submitting frames sequentially.
 
 ```swift
 case sequentialReferencesUnchanged
+```
+
+```c
+VTFrameRateConversionParametersSubmissionModeSequentialReferencesUnchanged
 ```
 
 #### Discussion

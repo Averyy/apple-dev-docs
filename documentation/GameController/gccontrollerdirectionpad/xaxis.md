@@ -1,7 +1,8 @@
 # xAxis
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The x-axis element of the directional pad.
 
@@ -19,9 +20,14 @@ The x-axis element of the directional pad.
 var xAxis: GCControllerAxisInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerAxisInput * xAxis;
+```
+
 ## See Also
 
-- [var yAxis: GCControllerAxisInput](gccontrollerdirectionpad/yaxis.md)
+### Accessing values using the axes
+- [var yAxis: GCControllerAxisInput](./yaxis.md)
   The y-axis element of the directional pad.
 
 

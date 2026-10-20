@@ -1,7 +1,8 @@
 # SRAmbientLightSample.SensorPlacement.frontBottomLeft
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the light source is toward the bottom-left of the sensor.
 
@@ -16,23 +17,28 @@ Indicates that the light source is toward the bottom-left of the sensor.
 case frontBottomLeft
 ```
 
+```c
+SRAmbientLightSensorPlacementFrontBottomLeft
+```
+
 ## See Also
 
-- [SRAmbientLightSample.SensorPlacement.frontBottom](srambientlightsample/sensorplacement/frontbottom.md)
+### Placement configurations
+- [SRAmbientLightSample.SensorPlacement.frontBottom](./frontbottom.md)
   Indicates that the light source is toward the bottom of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontBottomRight](srambientlightsample/sensorplacement/frontbottomright.md)
+- [SRAmbientLightSample.SensorPlacement.frontBottomRight](./frontbottomright.md)
   Indicates that the light source is toward the bottom-right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontLeft](srambientlightsample/sensorplacement/frontleft.md)
+- [SRAmbientLightSample.SensorPlacement.frontLeft](./frontleft.md)
   Indicates that the light source is toward the left of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontRight](srambientlightsample/sensorplacement/frontright.md)
+- [SRAmbientLightSample.SensorPlacement.frontRight](./frontright.md)
   Indicates that the light source is toward the right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTop](srambientlightsample/sensorplacement/fronttop.md)
+- [SRAmbientLightSample.SensorPlacement.frontTop](./fronttop.md)
   Indicates that the light source is toward the top of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTopLeft](srambientlightsample/sensorplacement/fronttopleft.md)
+- [SRAmbientLightSample.SensorPlacement.frontTopLeft](./fronttopleft.md)
   Indicates that the light source is toward the top-left of the sensor.
-- [SRAmbientLightSample.SensorPlacement.frontTopRight](srambientlightsample/sensorplacement/fronttopright.md)
+- [SRAmbientLightSample.SensorPlacement.frontTopRight](./fronttopright.md)
   Indicates that the light source is toward the top-right of the sensor.
-- [SRAmbientLightSample.SensorPlacement.unknown](srambientlightsample/sensorplacement/unknown.md)
+- [SRAmbientLightSample.SensorPlacement.unknown](./unknown.md)
   Indicates that the sensor can’t determine the light source’s location.
 
 

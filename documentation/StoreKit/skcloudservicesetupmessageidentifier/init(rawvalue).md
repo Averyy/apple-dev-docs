@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a cloud service setup message identifier based on the provided raw value.
 

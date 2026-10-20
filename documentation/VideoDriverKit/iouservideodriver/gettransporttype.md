@@ -1,7 +1,8 @@
 # GetTransportType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the transport type of the driver.
 
@@ -10,7 +11,7 @@ Gets the transport type of the driver.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoTransportType GetTransportType();
 ```
 
@@ -20,9 +21,10 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetTransportType](iouservideodriver/settransporttype.md)
+### Working with transport types
+- [SetTransportType](./settransporttype.md)
   Sets the transport type of the video driver.
-- [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+- [IOUserVideoTransportType](../videodriverkit-page/iouservideotransporttype.md)
   The transport type of a video stream.
 
 

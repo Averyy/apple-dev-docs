@@ -1,7 +1,8 @@
 # rightHanded
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var rightHanded: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL rightHanded;
 ```
 
 

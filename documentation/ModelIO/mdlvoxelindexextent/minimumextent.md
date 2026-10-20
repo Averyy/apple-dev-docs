@@ -1,7 +1,8 @@
 # minimumExtent
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lowest x, y, and z coordinates in the volume.
 
@@ -17,6 +18,10 @@ The lowest x, y, and z coordinates in the volume.
 
 ```swift
 var minimumExtent: MDLVoxelIndex
+```
+
+```c
+MDLVoxelIndex minimumExtent;
 ```
 
 

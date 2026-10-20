@@ -1,7 +1,8 @@
 # ARKitSession.AuthorizationType.accessoryTracking
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The authorization for access to accessory tracking data.
 

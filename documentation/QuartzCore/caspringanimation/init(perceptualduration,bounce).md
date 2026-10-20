@@ -1,7 +1,8 @@
 # init(perceptualDuration:bounce:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(perceptualDuration: CFTimeInterval, bounce: CGFloat)
+```
+
+```objc
+- (instancetype) initWithPerceptualDuration:(CFTimeInterval) perceptualDuration bounce:(CGFloat) bounce;
 ```
 
 

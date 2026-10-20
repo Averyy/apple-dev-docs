@@ -1,7 +1,8 @@
 # maxVertexBufferBindCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of buffers that you can set per command for the vertex stage.
 
@@ -19,15 +20,20 @@ The maximum number of buffers that you can set per command for the vertex stage.
 var maxVertexBufferBindCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxVertexBufferBindCount;
+```
+
 #### Discussion
 
-Metal ignores this property if [`inheritBuffers`](mtlindirectcommandbufferdescriptor/inheritbuffers.md) is [`true`](https://developer.apple.com/documentation/swift/true) or if you configured [`commandTypes`](mtlindirectcommandbufferdescriptor/commandtypes.md) for compute commands. Metal needs to reserve enough memory in each command to store this many arguments. Use the smallest value that works for all commands you plan to encode into the indirect command buffer.
+Metal ignores this property if [`inheritBuffers`](./inheritbuffers.md) is [`true`](../../Swift/true.md) or if you configured [`commandTypes`](./commandtypes.md) for compute commands. Metal needs to reserve enough memory in each command to store this many arguments. Use the smallest value that works for all commands you plan to encode into the indirect command buffer.
 
 ## See Also
 
-- [var maxFragmentBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxfragmentbufferbindcount.md)
+### Declaring the maximum number of argument buffers per command
+- [var maxFragmentBufferBindCount: Int](./maxfragmentbufferbindcount.md)
   The maximum number of buffers that you can set per command for the fragment stage.
-- [var maxKernelBufferBindCount: Int](mtlindirectcommandbufferdescriptor/maxkernelbufferbindcount.md)
+- [var maxKernelBufferBindCount: Int](./maxkernelbufferbindcount.md)
   The maximum number of buffers that you can set per command for the compute kernel.
 
 

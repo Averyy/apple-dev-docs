@@ -1,7 +1,8 @@
 # MiniGolf
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for mini golf courses.
 
@@ -10,7 +11,7 @@ The point-of-interest category for mini golf courses.
 
 ## Declaration
 
-```swift
+```
 readonly MiniGolf: "MiniGolf";
 ```
 

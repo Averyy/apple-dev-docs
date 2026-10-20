@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedLow
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The low connected speed.
 
@@ -10,7 +11,7 @@ The low connected speed.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedLow = (kIOUSBHostConnectionSpeedLow << IOUSBHostFamilyBitRangePhase(8, 10))
 ```
 

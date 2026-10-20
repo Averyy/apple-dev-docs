@@ -1,7 +1,8 @@
 # kMDItemTitle
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The title of the file. For example, this could be the title of a document, the name of a song, or the subject of an email message. A `CFString`.
 
@@ -12,6 +13,10 @@ The title of the file. For example, this could be the title of a document, the n
 
 ```swift
 let kMDItemTitle: CFString!
+```
+
+```c
+const CFStringRef kMDItemTitle;
 ```
 
 

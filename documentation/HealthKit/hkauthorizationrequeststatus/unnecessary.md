@@ -1,7 +1,8 @@
 # HKAuthorizationRequestStatus.unnecessary
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The application has already requested authorization for all the specified data types.
 
@@ -19,11 +20,16 @@ The application has already requested authorization for all the specified data t
 case unnecessary
 ```
 
+```c
+HKAuthorizationRequestStatusUnnecessary
+```
+
 ## See Also
 
-- [HKAuthorizationRequestStatus.unknown](hkauthorizationrequeststatus/unknown.md)
+### Statuses
+- [HKAuthorizationRequestStatus.unknown](./unknown.md)
   The authorization request status could not be determined because an error occurred.
-- [HKAuthorizationRequestStatus.shouldRequest](hkauthorizationrequeststatus/shouldrequest.md)
+- [HKAuthorizationRequestStatus.shouldRequest](./shouldrequest.md)
   The application has not yet requested authorization for all the specified data types.
 
 

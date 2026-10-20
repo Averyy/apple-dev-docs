@@ -1,7 +1,8 @@
 # appBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the URL filter app.
 
@@ -19,7 +20,8 @@ var appBundleIdentifier: String? { get }
 
 ## See Also
 
-- [var controlProviderBundleIdentifier: String?](neurlfiltermanager/controlproviderbundleidentifier.md)
+### Identifying app and extension bundles
+- [var controlProviderBundleIdentifier: String?](./controlproviderbundleidentifier.md)
   The bundle identifier of the filter controller provider app extension.
 
 

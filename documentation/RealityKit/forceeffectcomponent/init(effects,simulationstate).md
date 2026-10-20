@@ -1,7 +1,8 @@
 # init(effects:simulationState:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a force effect component.
 

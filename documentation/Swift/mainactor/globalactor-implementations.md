@@ -1,11 +1,12 @@
 # GlobalActor Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Properties
-- [static var sharedUnownedExecutor: UnownedSerialExecutor](mainactor/sharedunownedexecutor-1x66v.md)
+- [static var sharedUnownedExecutor: UnownedSerialExecutor](./sharedunownedexecutor-1x66v.md)
   Shorthand for referring to the `shared.unownedExecutor` of this global actor.
 
 

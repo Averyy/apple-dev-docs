@@ -1,7 +1,8 @@
 # events
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The schedule of interstitial events.
 
@@ -20,31 +21,36 @@ The schedule of interstitial events.
 var events: [AVPlayerInterstitialEvent] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<AVPlayerInterstitialEvent *> * events;
+```
+
 #### Discussion
 
-When the primary player’s content specifies the schedule of interstitial events intrinsically, this property value typically changes whenever primary player’s [`currentItem`](avplayer/currentitem.md) changes. For HLS content that specifies interstitials using of `DATERANGE` tags, the value of this property may also change whenever the set of `DATERANGE` tags in the current item’s media playlist changes.
+When the primary player’s content specifies the schedule of interstitial events intrinsically, this property value typically changes whenever primary player’s [`currentItem`](../avplayer/currentitem.md) changes. For HLS content that specifies interstitials using of `DATERANGE` tags, the value of this property may also change whenever the set of `DATERANGE` tags in the current item’s media playlist changes.
 
-When you specify the schedule of interstitial events using an [`AVPlayerInterstitialEventController`](avplayerinterstitialeventcontroller.md), this property value changes only when you update the interstitial event controller’s schedule.
+When you specify the schedule of interstitial events using an [`AVPlayerInterstitialEventController`](../avplayerinterstitialeventcontroller.md), this property value changes only when you update the interstitial event controller’s schedule.
 
-> **Note**:  The elements in the [`events`](avplayerinterstitialeventmonitor/events.md) array are immutable. Attempting to modify them generates an exception. To alter an event, make a copy and modify the new instance.
+> **Note**:  The elements in the [`events`](./events.md) array are immutable. Attempting to modify them generates an exception. To alter an event, make a copy and modify the new instance.
 
 ## See Also
 
-- [class let eventsDidChangeNotification: NSNotification.Name](avplayerinterstitialeventmonitor/eventsdidchangenotification.md)
+### Monitoring the event schedule
+- [class let eventsDidChangeNotification: NSNotification.Name](./eventsdidchangenotification.md)
   A notification the system posts when the monitor’s schedule of interstitial events changes.
-- [class let interstitialEventWasUnscheduledNotification: NSNotification.Name](avplayerinterstitialeventmonitor/interstitialeventwasunschedulednotification.md)
+- [class let interstitialEventWasUnscheduledNotification: NSNotification.Name](./interstitialeventwasunschedulednotification.md)
   A notification that is posted whenever an AVPlayerInterstitialEvent with loaded assets was unscheduled prior to playing.
-- [class let interstitialEventWasUnscheduledEventKey: String](avplayerinterstitialeventmonitor/interstitialeventwasunscheduledeventkey.md)
+- [class let interstitialEventWasUnscheduledEventKey: String](./interstitialeventwasunscheduledeventkey.md)
   The dictionary key for the AVPlayerInterstitialEvent that was unscheduled in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledNotification.
-- [class let interstitialEventWasUnscheduledErrorKey: String](avplayerinterstitialeventmonitor/interstitialeventwasunschedulederrorkey.md)
+- [class let interstitialEventWasUnscheduledErrorKey: String](./interstitialeventwasunschedulederrorkey.md)
   The dictionary key to indicate whether the event that was unscheduled was due to an error.
-- [class let interstitialEventDidFinishNotification: NSNotification.Name](avplayerinterstitialeventmonitor/interstitialeventdidfinishnotification.md)
+- [class let interstitialEventDidFinishNotification: NSNotification.Name](./interstitialeventdidfinishnotification.md)
   A notification that is posted whenever an AVPlayerInterstitialEvent finished playing.
-- [class let interstitialEventDidFinishEventKey: String](avplayerinterstitialeventmonitor/interstitialeventdidfinisheventkey.md)
+- [class let interstitialEventDidFinishEventKey: String](./interstitialeventdidfinisheventkey.md)
   The dictionary key for the AVPlayerInterstitialEvent that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [class let interstitialEventDidFinishPlayoutTimeKey: String](avplayerinterstitialeventmonitor/interstitialeventdidfinishplayouttimekey.md)
+- [class let interstitialEventDidFinishPlayoutTimeKey: String](./interstitialeventdidfinishplayouttimekey.md)
   The dictionary key for the playout time of the event that finished playing in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
-- [class let interstitialEventDidFinishDidPlayEntireEventKey: String](avplayerinterstitialeventmonitor/interstitialeventdidfinishdidplayentireeventkey.md)
+- [class let interstitialEventDidFinishDidPlayEntireEventKey: String](./interstitialeventdidfinishdidplayentireeventkey.md)
   The dictionary key to indicate whether the event that finished playing was fully played out in the payload of the AVPlayerInterstitialEventMonitorInterstitialEventDidFinishNotification.
 
 

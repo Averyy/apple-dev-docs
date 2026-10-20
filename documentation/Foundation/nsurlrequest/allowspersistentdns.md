@@ -1,7 +1,8 @@
 # allowsPersistentDNS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether storing and usage of DNS answers in a persistent per-process cache is allowed.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether storing and usage of DNS answers in a per
 
 ```swift
 var allowsPersistentDNS: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL allowsPersistentDNS;
 ```
 
 #### Discussion

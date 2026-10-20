@@ -1,7 +1,8 @@
 # tryCatch(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles errors from an upstream publisher by either replacing it with another publisher or throwing a new error.
 
@@ -26,9 +27,9 @@ A publisher that handles errors from an upstream publisher by replacing the fail
 
 #### Discussion
 
-Use [`tryCatch(_:)`](publisher/trycatch(_:).md) to decide how to handle from an upstream publisher by either replacing the publisher with a new publisher, or throwing a new error.
+Use [`tryCatch(_:)`](./trycatch%28_%29.md) to decide how to handle from an upstream publisher by either replacing the publisher with a new publisher, or throwing a new error.
 
-In the example below, an array publisher emits values that a [`tryMap(_:)`](publisher/trymap(_:).md) operator evaluates to ensure the values are greater than zero. If the values aren’t greater than zero, the operator throws an error to the downstream subscriber to let it know there was a problem. The subscriber, [`tryCatch(_:)`](publisher/trycatch(_:).md), replaces the error with a new publisher using [`Just`](just.md) to publish a final value before the stream ends normally.
+In the example below, an array publisher emits values that a [`tryMap(_:)`](./trymap%28_%29.md) operator evaluates to ensure the values are greater than zero. If the values aren’t greater than zero, the operator throws an error to the downstream subscriber to let it know there was a problem. The subscriber, [`tryCatch(_:)`](./trycatch%28_%29.md), replaces the error with a new publisher using [`Just`](../just.md) to publish a final value before the stream ends normally.
 
 ```swift
 enum SimpleError: Error { case error }
@@ -64,11 +65,12 @@ cancellable = numbers.publisher
 
 ## See Also
 
-- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](publisher/assertnofailure(_:file:line:).md)
+### Handling errors
+- [func assertNoFailure(String, file: StaticString, line: UInt) -> Publishers.AssertNoFailure<Self>](./assertnofailure%28_,file,line%29.md)
   Raises a fatal error when its upstream publisher fails, and otherwise republishes all received input.
-- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](publisher/catch(_:).md)
+- [func `catch`<P>((Self.Failure) -> P) -> Publishers.Catch<Self, P>](./catch%28_%29.md)
   Handles errors from an upstream publisher by replacing it with another publisher.
-- [func retry(Int) -> Publishers.Retry<Self>](publisher/retry(_:).md)
+- [func retry(Int) -> Publishers.Retry<Self>](./retry%28_%29.md)
   Attempts to recreate a failed subscription with the upstream publisher up to the number of times you specify.
 
 

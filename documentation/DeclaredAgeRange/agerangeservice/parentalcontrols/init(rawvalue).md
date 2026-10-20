@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Declared Age Range  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a parental controls option set with the specified raw value.
 

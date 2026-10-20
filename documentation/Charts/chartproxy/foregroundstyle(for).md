@@ -1,7 +1,8 @@
 # foregroundStyle(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the foreground style for the given data value. Returns `nil` if the foreground style scale is unavailable, or the value is invalid.
 

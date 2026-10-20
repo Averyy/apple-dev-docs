@@ -1,7 +1,8 @@
 # kPMColorSyncProfileIDStr
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMColorSyncProfileIDStr: String { get }
+```
+
+```c
+#define kPMColorSyncProfileIDStr
 ```
 
 

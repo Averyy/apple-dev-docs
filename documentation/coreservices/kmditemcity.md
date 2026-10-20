@@ -1,7 +1,8 @@
 # kMDItemCity
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Identifies city of origin according to guidelines established by the provider. A CFString.
 
@@ -12,6 +13,10 @@ Identifies city of origin according to guidelines established by the provider. A
 
 ```swift
 let kMDItemCity: CFString!
+```
+
+```c
+const CFStringRef kMDItemCity;
 ```
 
 #### Discussion

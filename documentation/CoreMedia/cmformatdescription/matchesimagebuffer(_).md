@@ -1,7 +1,8 @@
 # matchesImageBuffer(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the format description matches an image buffer.
 
@@ -26,9 +27,10 @@ func matchesImageBuffer(_ imageBuffer: CVImageBuffer) -> Bool
 
 ## See Also
 
-- [func cleanAperture(originIsAtTopLeft: Bool) -> CGRect](cmformatdescription/cleanaperture(originisattopleft:).md)
+### Working with Video Descriptions
+- [func cleanAperture(originIsAtTopLeft: Bool) -> CGRect](./cleanaperture%28originisattopleft%29.md)
   Returns the clean aperture.
-- [func presentationDimensions(usePixelAspectRatio: Bool, useCleanAperture: Bool) -> CGSize](cmformatdescription/presentationdimensions(usepixelaspectratio:usecleanaperture:).md)
+- [func presentationDimensions(usePixelAspectRatio: Bool, useCleanAperture: Bool) -> CGSize](./presentationdimensions%28usepixelaspectratio,usecleanaperture%29.md)
   Returns the dimensions to take the pixel aspect ratio or clean aperture into account.
 
 

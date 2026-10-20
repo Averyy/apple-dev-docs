@@ -1,7 +1,8 @@
 # init(activities:displayName:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new multisport workout for the specified activities.
 
@@ -25,9 +26,10 @@ init(activities: [SwimBikeRunWorkout.Activity], displayName: String? = nil)
 
 ## See Also
 
-- [SwimBikeRunWorkout.Activity](swimbikerunworkout/activity.md)
+### Creating new multisport workouts.
+- [SwimBikeRunWorkout.Activity](./activity.md)
   An activity in a multisport workout.
-- [static func supportsActivityOrdering([SwimBikeRunWorkout.Activity]) -> Bool](swimbikerunworkout/supportsactivityordering(_:).md)
+- [static func supportsActivityOrdering([SwimBikeRunWorkout.Activity]) -> Bool](./supportsactivityordering%28_%29.md)
   Returns a Boolean value that indicates whether the system supports a multisport workout with the specified list of activities.
 
 

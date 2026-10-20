@@ -1,7 +1,8 @@
 # caseAuthenticatedTags
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var caseAuthenticatedTags: Set<NSNumber>? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSSet<NSNumber *> * caseAuthenticatedTags;
 ```
 
 

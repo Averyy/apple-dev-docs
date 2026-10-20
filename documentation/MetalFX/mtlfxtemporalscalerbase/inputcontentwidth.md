@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width, in pixels, of the region within the color texture the scaler uses as its input.
@@ -18,6 +19,10 @@ The width, in pixels, of the region within the color texture the scaler uses as 
 
 ```swift
 var inputContentWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger inputContentWidth;
 ```
 
 

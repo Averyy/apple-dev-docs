@@ -1,7 +1,8 @@
 # CSIdentityQueryCreateForCurrentUser(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityQueryCreateForCurrentUser(_ allocator: CFAllocator!) -> Unmanaged<CSIdentityQuery>!
+```
+
+```c
+CSIdentityQueryRef CSIdentityQueryCreateForCurrentUser(CFAllocatorRef allocator);
 ```
 
 

@@ -1,7 +1,8 @@
 # deviceDescriptor
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var deviceDescriptor: UnsafePointer<IOUSBDeviceDescriptor>? { get }
 ```
 
+```objc
+@property (readonly, nullable) const IOUSBDeviceDescriptor * deviceDescriptor;
+```
+
 ## See Also
 
-- [var capabilityDescriptors: UnsafePointer<IOUSBBOSDescriptor>?](iousbhostobject/capabilitydescriptors.md)
+### Instance Properties
+- [var capabilityDescriptors: UnsafePointer<IOUSBBOSDescriptor>?](./capabilitydescriptors.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # es_unmute_path(_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Restores event delivery from a previously-muted path.
 
@@ -14,13 +15,17 @@ Restores event delivery from a previously-muted path.
 func es_unmute_path(_ client: OpaquePointer, _ path: UnsafePointer<CChar>, _ type: es_mute_path_type_t) -> es_return_t
 ```
 
+```c
+extern es_return_t es_unmute_path(es_client_t *client, const char *path, es_mute_path_type_t type);
+```
+
 #### Return Value
 
 A value that indicates whether the unmute request succeeded or failed with an error.
 
 #### Discussion
 
-To unmute a subset of events from a path, use [`es_unmute_path_events(_:_:_:_:_:)`](es_unmute_path_events(_:_:_:_:_:).md).
+To unmute a subset of events from a path, use [`es_unmute_path_events(_:_:_:_:_:)`](./es_unmute_path_events%28_,_,_,_,_%29.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ To unmute a subset of events from a path, use [`es_unmute_path_events(_:_:_:_:_:
 
 ## See Also
 
-- [func es_unmute_process(OpaquePointer, UnsafePointer<audit_token_t>) -> es_return_t](es_unmute_process(_:_:).md)
+### Unmuting Events
+- [func es_unmute_process(OpaquePointer, UnsafePointer<audit_token_t>) -> es_return_t](./es_unmute_process%28_,_%29.md)
   Restores event delivery from a previously-muted process.
-- [func es_unmute_process_events(OpaquePointer, UnsafePointer<audit_token_t>, UnsafePointer<es_event_type_t>, Int) -> es_return_t](es_unmute_process_events(_:_:_:_:).md)
+- [func es_unmute_process_events(OpaquePointer, UnsafePointer<audit_token_t>, UnsafePointer<es_event_type_t>, Int) -> es_return_t](./es_unmute_process_events%28_,_,_,_%29.md)
   Restores event delivery of a subset of events from a previously-muted process.
-- [func es_unmute_path_events(OpaquePointer, UnsafePointer<CChar>, es_mute_path_type_t, UnsafePointer<es_event_type_t>, Int) -> es_return_t](es_unmute_path_events(_:_:_:_:_:).md)
+- [func es_unmute_path_events(OpaquePointer, UnsafePointer<CChar>, es_mute_path_type_t, UnsafePointer<es_event_type_t>, Int) -> es_return_t](./es_unmute_path_events%28_,_,_,_,_%29.md)
   Restores event delivery of a subset of events from a previously-muted path.
-- [struct es_mute_path_type_t](es_mute_path_type_t.md)
+- [struct es_mute_path_type_t](./es_mute_path_type_t.md)
   The type of a path argument, such as a prefix or a path literal.
-- [func es_unmute_all_paths(OpaquePointer) -> es_return_t](es_unmute_all_paths(_:).md)
+- [func es_unmute_all_paths(OpaquePointer) -> es_return_t](./es_unmute_all_paths%28_%29.md)
   Restores event delivery from previously-muted paths.
 
 

@@ -1,7 +1,8 @@
 # shippingMethods
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of shipping methods available for a payment request.
 
@@ -17,6 +18,10 @@ The list of shipping methods available for a payment request.
 
 ```swift
 var shippingMethods: [PKShippingMethod] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<PKShippingMethod *> * shippingMethods;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # CMBatchedSensorManager
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 4.0+
@@ -16,47 +17,51 @@
 class CMBatchedSensorManager
 ```
 
+```objc
+@interface CMBatchedSensorManager : NSObject
+```
+
 ## Mentions
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+- [Getting processed device-motion data](./getting-processed-device-motion-data.md)
 
 ## Topics
 
 ### Determining authorization and availability
-- [class var authorizationStatus: CMAuthorizationStatus](cmbatchedsensormanager/authorizationstatus.md)
-- [class var isAccelerometerSupported: Bool](cmbatchedsensormanager/isaccelerometersupported.md)
-- [class var isDeviceMotionSupported: Bool](cmbatchedsensormanager/isdevicemotionsupported.md)
+- [class var authorizationStatus: CMAuthorizationStatus](./cmbatchedsensormanager/authorizationstatus.md)
+- [class var isAccelerometerSupported: Bool](./cmbatchedsensormanager/isaccelerometersupported.md)
+- [class var isDeviceMotionSupported: Bool](./cmbatchedsensormanager/isdevicemotionsupported.md)
 ### Configuring the update frequency
-- [var deviceMotionDataFrequency: Int](cmbatchedsensormanager/devicemotiondatafrequency.md)
-- [var accelerometerDataFrequency: Int](cmbatchedsensormanager/accelerometerdatafrequency.md)
+- [var deviceMotionDataFrequency: Int](./cmbatchedsensormanager/devicemotiondatafrequency.md)
+- [var accelerometerDataFrequency: Int](./cmbatchedsensormanager/accelerometerdatafrequency.md)
 ### Collecting device-motion data
-- [func startDeviceMotionUpdates()](cmbatchedsensormanager/startdevicemotionupdates.md)
-- [func startDeviceMotionUpdates(handler: ([CMDeviceMotion]?, (any Error)?) -> Void)](cmbatchedsensormanager/startdevicemotionupdates(handler:).md)
-- [func stopDeviceMotionUpdates()](cmbatchedsensormanager/stopdevicemotionupdates.md)
-- [var deviceMotionBatch: [CMDeviceMotion]?](cmbatchedsensormanager/devicemotionbatch.md)
-- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](cmbatchedsensormanager/devicemotionupdates.md)
-- [CMBatchedSensorManager.DeviceMotionUpdates](cmbatchedsensormanager/devicemotionupdates.md)
-- [var isDeviceMotionActive: Bool](cmbatchedsensormanager/isdevicemotionactive.md)
+- [func startDeviceMotionUpdates()](./cmbatchedsensormanager/startdevicemotionupdates%28%29.md)
+- [func startDeviceMotionUpdates(handler: ([CMDeviceMotion]?, (any Error)?) -> Void)](./cmbatchedsensormanager/startdevicemotionupdates%28handler%29.md)
+- [func stopDeviceMotionUpdates()](./cmbatchedsensormanager/stopdevicemotionupdates%28%29.md)
+- [var deviceMotionBatch: [CMDeviceMotion]?](./cmbatchedsensormanager/devicemotionbatch.md)
+- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](./cmbatchedsensormanager/devicemotionupdates%28%29.md)
+- [CMBatchedSensorManager.DeviceMotionUpdates](./cmbatchedsensormanager/devicemotionupdates.md)
+- [var isDeviceMotionActive: Bool](./cmbatchedsensormanager/isdevicemotionactive.md)
 ### Collecting accelerometer data
-- [func startAccelerometerUpdates()](cmbatchedsensormanager/startaccelerometerupdates.md)
-- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](cmbatchedsensormanager/startaccelerometerupdates(handler:).md)
-- [func stopAccelerometerUpdates()](cmbatchedsensormanager/stopaccelerometerupdates.md)
-- [var accelerometerBatch: [CMAccelerometerData]?](cmbatchedsensormanager/accelerometerbatch.md)
-- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](cmbatchedsensormanager/accelerometerupdates.md)
-- [CMBatchedSensorManager.AccelerometerUpdates](cmbatchedsensormanager/accelerometerupdates.md)
-- [var isAccelerometerActive: Bool](cmbatchedsensormanager/isaccelerometeractive.md)
+- [func startAccelerometerUpdates()](./cmbatchedsensormanager/startaccelerometerupdates%28%29.md)
+- [func startAccelerometerUpdates(handler: ([CMAccelerometerData]?, (any Error)?) -> Void)](./cmbatchedsensormanager/startaccelerometerupdates%28handler%29.md)
+- [func stopAccelerometerUpdates()](./cmbatchedsensormanager/stopaccelerometerupdates%28%29.md)
+- [var accelerometerBatch: [CMAccelerometerData]?](./cmbatchedsensormanager/accelerometerbatch.md)
+- [func accelerometerUpdates() -> CMBatchedSensorManager.AccelerometerUpdates](./cmbatchedsensormanager/accelerometerupdates%28%29.md)
+- [CMBatchedSensorManager.AccelerometerUpdates](./cmbatchedsensormanager/accelerometerupdates.md)
+- [var isAccelerometerActive: Bool](./cmbatchedsensormanager/isaccelerometeractive.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

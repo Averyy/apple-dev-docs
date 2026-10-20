@@ -1,14 +1,15 @@
 # KERNEL_SECURITY_TOKEN
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 const security_token_t KERNEL_SECURITY_TOKEN;
 ```
 

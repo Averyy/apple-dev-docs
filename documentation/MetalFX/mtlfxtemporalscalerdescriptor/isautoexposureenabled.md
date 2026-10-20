@@ -1,7 +1,8 @@
 # isAutoExposureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether MetalFX calculates the exposure for each frame.
 
@@ -18,35 +19,40 @@ A Boolean value that indicates whether MetalFX calculates the exposure for each 
 var isAutoExposureEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isAutoExposureEnabled) BOOL autoExposureEnabled;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) to create a temporal scaler that automatically calculates the exposure level for each image it scales.
+Set this property to [`true`](../../Swift/true.md) to create a temporal scaler that automatically calculates the exposure level for each image it scales.
 
 > **Note**: Temporal scaler instances that use auto exposure ignore its `MTLFXTemporalScaler/exposureTexture` property.
 
 ## See Also
 
-- [var inputWidth: Int](mtlfxtemporalscalerdescriptor/inputwidth.md)
+### Configuring a temporal effect’s input
+- [var inputWidth: Int](./inputwidth.md)
   The width of the input color texture for the temporal scaler you create with this descriptor.
-- [var inputHeight: Int](mtlfxtemporalscalerdescriptor/inputheight.md)
+- [var inputHeight: Int](./inputheight.md)
   The height of the input color texture for the temporal scaler you create with this descriptor.
-- [var isInputContentPropertiesEnabled: Bool](mtlfxtemporalscalerdescriptor/isinputcontentpropertiesenabled.md)
+- [var isInputContentPropertiesEnabled: Bool](./isinputcontentpropertiesenabled.md)
   A Boolean value that indicates whether the temporal scaler you create with this descriptor uses dynamic resolution.
-- [var inputContentMinScale: Float](mtlfxtemporalscalerdescriptor/inputcontentminscale.md)
+- [var inputContentMinScale: Float](./inputcontentminscale.md)
   The smallest scale factor the temporal scaler you create with this descriptor can use to generate output textures.
-- [var inputContentMaxScale: Float](mtlfxtemporalscalerdescriptor/inputcontentmaxscale.md)
+- [var inputContentMaxScale: Float](./inputcontentmaxscale.md)
   The largest scale factor the temporal scaler you create with this descriptor can use to generate output textures.
-- [var colorTextureFormat: MTLPixelFormat](mtlfxtemporalscalerdescriptor/colortextureformat.md)
+- [var colorTextureFormat: MTLPixelFormat](./colortextureformat.md)
   The pixel format of the input color texture for the temporal scaler you create with this descriptor.
-- [var motionTextureFormat: MTLPixelFormat](mtlfxtemporalscalerdescriptor/motiontextureformat.md)
+- [var motionTextureFormat: MTLPixelFormat](./motiontextureformat.md)
   The pixel format of the input motion texture for the temporal scaler you create with this descriptor.
-- [var depthTextureFormat: MTLPixelFormat](mtlfxtemporalscalerdescriptor/depthtextureformat.md)
+- [var depthTextureFormat: MTLPixelFormat](./depthtextureformat.md)
   The pixel format of the input depth texture for the temporal scaler you create with this descriptor.
-- [var requiresSynchronousInitialization: Bool](mtlfxtemporalscalerdescriptor/requiressynchronousinitialization.md)
+- [var requiresSynchronousInitialization: Bool](./requiressynchronousinitialization.md)
   A Boolean value that indicates whether MetalFX compiles a temporal scaling effect’s underlying upscaler as it creates the instance.
-- [var isReactiveMaskTextureEnabled: Bool](mtlfxtemporalscalerdescriptor/isreactivemasktextureenabled.md)
+- [var isReactiveMaskTextureEnabled: Bool](./isreactivemasktextureenabled.md)
   A Boolean value that indicates whether a temporal scaler you create with the descriptor applies a reactive mask.
-- [var reactiveMaskTextureFormat: MTLPixelFormat](mtlfxtemporalscalerdescriptor/reactivemasktextureformat.md)
+- [var reactiveMaskTextureFormat: MTLPixelFormat](./reactivemasktextureformat.md)
   The pixel format of the reactive mask input texture for a temporal scaler you create with the descriptor.
 
 

@@ -1,7 +1,8 @@
 # MTLTextureCompressionType.lossy
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case lossy
+```
+
+```c
+MTLTextureCompressionTypeLossy
 ```
 
 

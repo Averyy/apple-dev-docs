@@ -1,7 +1,8 @@
 # CiIssueResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single issue from an Xcode Cloud build action.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single issue from an Xcode Cloud bui
 
 ## Declaration
 
-```swift
+```
 object CiIssueResponse
 ```
 
@@ -21,9 +22,10 @@ object CiIssueResponse
 
 ## See Also
 
-- [object CiIssue](ciissue.md)
+### Objects
+- [object CiIssue](./ciissue.md)
   A warning or error produced during an Xcode Cloud build action, associated with a source file location.
-- [object FileLocation](filelocation.md)
+- [object FileLocation](./filelocation.md)
   A source code location reference indicating the file path, line number, and column of an issue in an Xcode Cloud build.
 
 

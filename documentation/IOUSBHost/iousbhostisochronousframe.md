@@ -1,13 +1,16 @@
 # IOUSBHostIsochronousFrame
 
 **Framework**: IOUSBHost  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a single frame in an isochronous transfer.
 
 **Availability**:
 - Mac Catalyst 14.0+
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
+
+> **Deprecated**: Use IOUSBHostIsochronousTransaction instead
 
 ## Declaration
 
@@ -15,49 +18,54 @@ A structure that represents a single frame in an isochronous transfer.
 struct IOUSBHostIsochronousFrame
 ```
 
+```c
+typedef struct IOUSBHostIsochronousFrame { ... } IOUSBHostIsochronousFrame;
+```
+
 ## Topics
 
 ### Frame Structure
-- [var status: IOReturn](iousbhostisochronousframe/status.md)
+- [var status: IOReturn](./iousbhostisochronousframe/status.md)
   The completion status for an individual frame.
-- [var requestCount: UInt32](iousbhostisochronousframe/requestcount.md)
+- [var requestCount: UInt32](./iousbhostisochronousframe/requestcount.md)
   The number of requested bytes to transfer for the frame.
-- [var completeCount: UInt32](iousbhostisochronousframe/completecount.md)
+- [var completeCount: UInt32](./iousbhostisochronousframe/completecount.md)
   The number of bytes that the system actually transferred for the frame.
-- [var timeStamp: IOUSBHostTime](iousbhostisochronousframe/timestamp.md)
+- [var timeStamp: IOUSBHostTime](./iousbhostisochronousframe/timestamp.md)
   The observed time for the frame’s completion.
 ### Initializing the Structure
-- [init()](iousbhostisochronousframe/init.md)
+- [init()](./iousbhostisochronousframe/init%28%29.md)
   Creates a new frame structure.
 ### Initializers
-- [init(status: IOReturn, requestCount: UInt32, completeCount: UInt32, reserved: UInt32, timeStamp: IOUSBHostTime)](iousbhostisochronousframe/init(status:requestcount:completecount:reserved:timestamp:).md)
+- [init(status: IOReturn, requestCount: UInt32, completeCount: UInt32, reserved: UInt32, timeStamp: IOUSBHostTime)](./iousbhostisochronousframe/init%28status,requestcount,completecount,reserved,timestamp%29.md)
 ### Instance Properties
-- [var reserved: UInt32](iousbhostisochronousframe/reserved.md)
-- [var completeCount: UInt32](iousbhostisochronousframe/completecount.md)
+- [var reserved: UInt32](./iousbhostisochronousframe/reserved.md)
+- [var completeCount: UInt32](./iousbhostisochronousframe/completecount.md)
   The number of bytes that the system actually transferred for the frame.
-- [var requestCount: UInt32](iousbhostisochronousframe/requestcount.md)
+- [var requestCount: UInt32](./iousbhostisochronousframe/requestcount.md)
   The number of requested bytes to transfer for the frame.
-- [var reserved: UInt32](iousbhostisochronousframe/reserved.md)
-- [var status: IOReturn](iousbhostisochronousframe/status.md)
+- [var reserved: UInt32](./iousbhostisochronousframe/reserved.md)
+- [var status: IOReturn](./iousbhostisochronousframe/status.md)
   The completion status for an individual frame.
-- [var timeStamp: IOUSBHostTime](iousbhostisochronousframe/timestamp.md)
+- [var timeStamp: IOUSBHostTime](./iousbhostisochronousframe/timestamp.md)
   The observed time for the frame’s completion.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias IOUSBHostIsochronousCompletionHandler](iousbhostisochronouscompletionhandler.md)
+### Sending Isochronous I/O
+- [typealias IOUSBHostIsochronousCompletionHandler](./iousbhostisochronouscompletionhandler.md)
   A completion handler for asynchronous isochronous transfers.
-- [typealias IOUSBHostTime](iousbhosttime.md)
+- [typealias IOUSBHostTime](./iousbhosttime.md)
   The absolute time.
-- [func enqueueIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousFrame>) -> Void)?) throws](iousbhostpipe/enqueueiorequest(with:framelist:framelistcount:firstframenumber:completionhandler:).md)
+- [func enqueueIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64, completionHandler: ((IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousFrame>) -> Void)?) throws](./iousbhostpipe/enqueueiorequest%28with,framelist,framelistcount,firstframenumber,completionhandler%29.md)
   Enqueues a request on an isochronous endpoint.
-- [func sendIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) throws](iousbhostpipe/sendiorequest(with:framelist:framelistcount:firstframenumber:).md)
+- [func sendIORequest(with: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) throws](./iousbhostpipe/sendiorequest%28with,framelist,framelistcount,firstframenumber%29.md)
   Sends a request on an isochronous endpoint.
 
 

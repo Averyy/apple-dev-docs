@@ -1,23 +1,25 @@
 # copyStringAtIndex
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSString * copyStringAtIndex(uint8_t index, uint16_t lang);
 ```
 
 ## See Also
 
-- [initPipes](iouserusbhosthiddevice/initpipes.md)
-- [getHIDDescriptorInfo](iouserusbhosthiddevice/gethiddescriptorinfo.md)
-- [CompleteZLP](iouserusbhosthiddevice/completezlp.md)
+### Configuring Private Settings
+- [initPipes](./initpipes.md)
+- [getHIDDescriptorInfo](./gethiddescriptorinfo.md)
+- [CompleteZLP](./completezlp.md)
 
 
 ---

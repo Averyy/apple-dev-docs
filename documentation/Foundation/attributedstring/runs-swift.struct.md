@@ -1,7 +1,8 @@
 # AttributedString.Runs
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterable view into segments of the attributed string, each of which indicates where a run of identical attributes begins or ends.
 
@@ -23,49 +24,50 @@ struct Runs
 ## Topics
 
 ### Structures
-- [AttributedString.Runs.AttributesSlice1](attributedstring/runs-swift.struct/attributesslice1.md)
-- [AttributedString.Runs.AttributesSlice2](attributedstring/runs-swift.struct/attributesslice2.md)
-- [AttributedString.Runs.AttributesSlice3](attributedstring/runs-swift.struct/attributesslice3.md)
-- [AttributedString.Runs.AttributesSlice4](attributedstring/runs-swift.struct/attributesslice4.md)
-- [AttributedString.Runs.AttributesSlice5](attributedstring/runs-swift.struct/attributesslice5.md)
-- [AttributedString.Runs.Run](attributedstring/runs-swift.struct/run.md)
+- [AttributedString.Runs.AttributesSlice1](./runs-swift.struct/attributesslice1.md)
+- [AttributedString.Runs.AttributesSlice2](./runs-swift.struct/attributesslice2.md)
+- [AttributedString.Runs.AttributesSlice3](./runs-swift.struct/attributesslice3.md)
+- [AttributedString.Runs.AttributesSlice4](./runs-swift.struct/attributesslice4.md)
+- [AttributedString.Runs.AttributesSlice5](./runs-swift.struct/attributesslice5.md)
+- [AttributedString.Runs.Run](./runs-swift.struct/run.md)
 ### Subscripts
-- [subscript<T>(T.Type) -> AttributedString.Runs.AttributesSlice1<T>](attributedstring/runs-swift.struct/subscript(_:)-5vfpg.md)
-- [subscript<T>(KeyPath<AttributeDynamicLookup, T>) -> AttributedString.Runs.AttributesSlice1<T>](attributedstring/runs-swift.struct/subscript(_:)-6aptr.md)
-- [subscript(AttributedString.Index) -> AttributedString.Runs.Run](attributedstring/runs-swift.struct/subscript(_:)-8hdu9.md)
-- [subscript<T, U>(T.Type, U.Type) -> AttributedString.Runs.AttributesSlice2<T, U>](attributedstring/runs-swift.struct/subscript(_:_:)-3taux.md)
-- [subscript<T, U>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>) -> AttributedString.Runs.AttributesSlice2<T, U>](attributedstring/runs-swift.struct/subscript(_:_:)-8nn2m.md)
-- [subscript<T, U, V>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>) -> AttributedString.Runs.AttributesSlice3<T, U, V>](attributedstring/runs-swift.struct/subscript(_:_:_:)-10o3s.md)
-- [subscript<T, U, V>(T.Type, U.Type, V.Type) -> AttributedString.Runs.AttributesSlice3<T, U, V>](attributedstring/runs-swift.struct/subscript(_:_:_:)-948ef.md)
-- [subscript<T, U, V, W>(T.Type, U.Type, V.Type, W.Type) -> AttributedString.Runs.AttributesSlice4<T, U, V, W>](attributedstring/runs-swift.struct/subscript(_:_:_:_:)-7h5tw.md)
-- [subscript<T, U, V, W>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>, KeyPath<AttributeDynamicLookup, W>) -> AttributedString.Runs.AttributesSlice4<T, U, V, W>](attributedstring/runs-swift.struct/subscript(_:_:_:_:)-sac8.md)
-- [subscript<T, U, V, W, X>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>, KeyPath<AttributeDynamicLookup, W>, KeyPath<AttributeDynamicLookup, X>) -> AttributedString.Runs.AttributesSlice5<T, U, V, W, X>](attributedstring/runs-swift.struct/subscript(_:_:_:_:_:)-9i87e.md)
-- [subscript<T, U, V, W, X>(T.Type, U.Type, V.Type, W.Type, X.Type) -> AttributedString.Runs.AttributesSlice5<T, U, V, W, X>](attributedstring/runs-swift.struct/subscript(_:_:_:_:_:)-o61e.md)
+- [subscript<T>(T.Type) -> AttributedString.Runs.AttributesSlice1<T>](./runs-swift.struct/subscript%28_%29-5vfpg.md)
+- [subscript<T>(KeyPath<AttributeDynamicLookup, T>) -> AttributedString.Runs.AttributesSlice1<T>](./runs-swift.struct/subscript%28_%29-6aptr.md)
+- [subscript(AttributedString.Index) -> AttributedString.Runs.Run](./runs-swift.struct/subscript%28_%29-8hdu9.md)
+- [subscript<T, U>(T.Type, U.Type) -> AttributedString.Runs.AttributesSlice2<T, U>](./runs-swift.struct/subscript%28_,_%29-3taux.md)
+- [subscript<T, U>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>) -> AttributedString.Runs.AttributesSlice2<T, U>](./runs-swift.struct/subscript%28_,_%29-8nn2m.md)
+- [subscript<T, U, V>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>) -> AttributedString.Runs.AttributesSlice3<T, U, V>](./runs-swift.struct/subscript%28_,_,_%29-10o3s.md)
+- [subscript<T, U, V>(T.Type, U.Type, V.Type) -> AttributedString.Runs.AttributesSlice3<T, U, V>](./runs-swift.struct/subscript%28_,_,_%29-948ef.md)
+- [subscript<T, U, V, W>(T.Type, U.Type, V.Type, W.Type) -> AttributedString.Runs.AttributesSlice4<T, U, V, W>](./runs-swift.struct/subscript%28_,_,_,_%29-7h5tw.md)
+- [subscript<T, U, V, W>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>, KeyPath<AttributeDynamicLookup, W>) -> AttributedString.Runs.AttributesSlice4<T, U, V, W>](./runs-swift.struct/subscript%28_,_,_,_%29-sac8.md)
+- [subscript<T, U, V, W, X>(KeyPath<AttributeDynamicLookup, T>, KeyPath<AttributeDynamicLookup, U>, KeyPath<AttributeDynamicLookup, V>, KeyPath<AttributeDynamicLookup, W>, KeyPath<AttributeDynamicLookup, X>) -> AttributedString.Runs.AttributesSlice5<T, U, V, W, X>](./runs-swift.struct/subscript%28_,_,_,_,_%29-9i87e.md)
+- [subscript<T, U, V, W, X>(T.Type, U.Type, V.Type, W.Type, X.Type) -> AttributedString.Runs.AttributesSlice5<T, U, V, W, X>](./runs-swift.struct/subscript%28_,_,_,_,_%29-o61e.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var characters: AttributedString.CharacterView](attributedstring/characters.md)
+### Accessing Views into the Attributed String
+- [var characters: AttributedString.CharacterView](./characters.md)
   The characters of the attributed string, as a view into the underlying string.
-- [AttributedString.CharacterView](attributedstring/characterview.md)
+- [AttributedString.CharacterView](./characterview.md)
   A view into the underlying storage of the attributed string, as Unicode characters.
-- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstring/unicodescalars.md)
+- [var unicodeScalars: AttributedString.UnicodeScalarView](./unicodescalars.md)
   The Unicode scalars of the attributed string, as a view into the underlying string.
-- [AttributedString.UnicodeScalarView](attributedstring/unicodescalarview.md)
+- [AttributedString.UnicodeScalarView](./unicodescalarview.md)
   A view into the underlying storage of the attributed string, as Unicode scalars.
-- [var runs: AttributedString.Runs](attributedstring/runs-swift.property.md)
+- [var runs: AttributedString.Runs](./runs-swift.property.md)
   The attributed runs of the attributed string, as a view into the underlying string.
 
 

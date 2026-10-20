@@ -1,7 +1,8 @@
 # transport
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transport method that the session uses to communicate with the accessory.
 
@@ -16,7 +17,7 @@ var transport: AccessoryTransport?
 
 ## Mentions
 
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 
@@ -26,9 +27,10 @@ Use this property to determine which transport the current instance handles, and
 
 ## See Also
 
-- [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
+### Determining the communication method
+- [var transportStateRestoreIdentifier: String?](./transportstaterestoreidentifier.md)
   An optional identifier for restoring transport state across sessions.
-- [var pushToken: Data?](accessorytransportsession/pushtoken.md)
+- [var pushToken: Data?](./pushtoken.md)
   A token that identifies the iOS device to the Apple Push Notification service for routing accessory responses over the internet.
 
 

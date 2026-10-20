@@ -1,7 +1,8 @@
 # allowsColorSelection
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Present color selection UI to the user. Defaults to the value set in `configuration`.
 
@@ -15,6 +16,10 @@ Present color selection UI to the user. Defaults to the value set in `configurat
 
 ```swift
 var allowsColorSelection: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsColorSelection;
 ```
 
 

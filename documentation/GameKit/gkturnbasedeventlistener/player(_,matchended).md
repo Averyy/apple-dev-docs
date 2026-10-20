@@ -1,7 +1,8 @@
 # player(_:matchEnded:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when the match ends.
 
@@ -20,9 +21,13 @@ Handles when the match ends.
 optional func player(_ player: GKPlayer, matchEnded match: GKTurnBasedMatch)
 ```
 
+```objc
+- (void) player:(GKPlayer *) player matchEnded:(GKTurnBasedMatch *) match;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 
@@ -35,13 +40,14 @@ Implement this method to stop gameplay, notify the player that the match is over
 
 ## See Also
 
-- [func player(GKPlayer, receivedTurnEventFor: GKTurnBasedMatch, didBecomeActive: Bool)](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md)
+### Handling Match-Related Events
+- [func player(GKPlayer, receivedTurnEventFor: GKTurnBasedMatch, didBecomeActive: Bool)](./player%28_,receivedturneventfor,didbecomeactive%29.md)
   Handles turn-based match events, such as accepting invitations, passing turns, and saving match data.
-- [func player(GKPlayer, didRequestMatchWithOtherPlayers: [GKPlayer])](gkturnbasedeventlistener/player(_:didrequestmatchwithotherplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithOtherPlayers: [GKPlayer])](./player%28_,didrequestmatchwithotherplayers%29.md)
   Handles when the player uses Game Center to start a match with other players.
-- [func player(GKPlayer, wantsToQuitMatch: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:wantstoquitmatch:).md)
+- [func player(GKPlayer, wantsToQuitMatch: GKTurnBasedMatch)](./player%28_,wantstoquitmatch%29.md)
   Handles when the current participant wants to quit a match.
-- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](gkturnbasedeventlistener/player(_:didrequestmatchwithplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](./player%28_,didrequestmatchwithplayers%29.md)
   Handles when the player uses Game Center to start a match with other players.
 
 

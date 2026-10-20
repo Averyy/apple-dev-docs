@@ -1,7 +1,8 @@
 # IOUserAudioTransportType
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of transport to deliver audio.
 
@@ -10,44 +11,45 @@ The type of transport to deliver audio.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioTransportType : uint32_t;
 ```
 
 ## Topics
 
 ### Protocol-based Transport Types
-- [PCI](audiodriverkit/iouseraudiotransporttype/pci.md)
+- [PCI](./iouseraudiotransporttype/pci.md)
   The transport type ID for audio devices connected with the PCI bus.
-- [USB](audiodriverkit/iouseraudiotransporttype/usb.md)
+- [USB](./iouseraudiotransporttype/usb.md)
   The transport type ID for audio devices connected with USB.
-- [FireWire](audiodriverkit/iouseraudiotransporttype/firewire.md)
+- [FireWire](./iouseraudiotransporttype/firewire.md)
   The transport type ID for audio devices connected with FireWire.
-- [Bluetooth](audiodriverkit/iouseraudiotransporttype/bluetooth.md)
+- [Bluetooth](./iouseraudiotransporttype/bluetooth.md)
   The transport type ID for audio devices connected with Bluetooth.
-- [BluetoothLE](audiodriverkit/iouseraudiotransporttype/bluetoothle.md)
+- [BluetoothLE](./iouseraudiotransporttype/bluetoothle.md)
   The transport type ID for audio devices connected with Bluetooth Low Energy.
-- [HDMI](audiodriverkit/iouseraudiotransporttype/hdmi.md)
+- [HDMI](./iouseraudiotransporttype/hdmi.md)
   The transport type ID for audio devices connected with HDMI.
-- [DisplayPort](audiodriverkit/iouseraudiotransporttype/displayport.md)
+- [DisplayPort](./iouseraudiotransporttype/displayport.md)
   The transport type ID for audio devices connected with DisplayPort.
-- [AirPlay](audiodriverkit/iouseraudiotransporttype/airplay.md)
+- [AirPlay](./iouseraudiotransporttype/airplay.md)
   The transport type ID for audio devices connected with AirPlay.
-- [AVB](audiodriverkit/iouseraudiotransporttype/avb.md)
+- [AVB](./iouseraudiotransporttype/avb.md)
   The transport type ID for audio devices connected with Audio Video Bridging (AVB).
-- [Thunderbolt](audiodriverkit/iouseraudiotransporttype/thunderbolt.md)
+- [Thunderbolt](./iouseraudiotransporttype/thunderbolt.md)
   The transport type ID for audio devices connected with Thunderbolt.
 ### Other Transport Types
-- [Unknown](audiodriverkit/iouseraudiotransporttype/unknown.md)
+- [Unknown](./iouseraudiotransporttype/unknown.md)
   The transport type ID returned when a device doesn’t provide a transport type.
-- [BuiltIn](audiodriverkit/iouseraudiotransporttype/builtin.md)
+- [BuiltIn](./iouseraudiotransporttype/builtin.md)
   The transport type ID for AudioDevices built into the system.
 
 ## See Also
 
-- [SetTransportType](iouseraudiobox/settransporttype.md)
+### Working with Transport Types
+- [SetTransportType](../iouseraudiobox/settransporttype.md)
   Sets the box’s transport type.
-- [GetTransportType](iouseraudiobox/gettransporttype.md)
+- [GetTransportType](../iouseraudiobox/gettransporttype.md)
   Returns the box’s transport type.
 
 

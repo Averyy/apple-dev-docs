@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s currency code.
 
@@ -20,17 +21,22 @@ The receiver’s currency code.
 var currencyCode: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * currencyCode;
+```
+
 #### Discussion
 
 A currency code is a three-letter code that is, in most cases, composed of a region’s two-character Internet region code plus an extra character to denote the currency unit. For example, the currency code for the Australian dollar is “AUD”. Currency codes are based on the ISO 4217 standard.
 
 ## See Also
 
-- [var currencySymbol: String!](numberformatter/currencysymbol.md)
+### Configuring the Format of Currency
+- [var currencySymbol: String!](./currencysymbol.md)
   The string used by the receiver as a local currency symbol.
-- [var internationalCurrencySymbol: String!](numberformatter/internationalcurrencysymbol.md)
+- [var internationalCurrencySymbol: String!](./internationalcurrencysymbol.md)
   The international currency symbol used by the receiver.
-- [var currencyGroupingSeparator: String!](numberformatter/currencygroupingseparator.md)
+- [var currencyGroupingSeparator: String!](./currencygroupingseparator.md)
   The currency grouping separator for the receiver.
 
 

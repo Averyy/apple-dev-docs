@@ -1,7 +1,8 @@
 # numberOfRows
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of row controllers available for you to retrieve.
 
@@ -14,13 +15,18 @@ The number of row controllers available for you to retrieve.
 var numberOfRows: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfRows;
+```
+
 #### Discussion
 
-The value of this property is `0` until you call the [`setRowTypes(_:)`](wkinterfacetable/setrowtypes(_:).md) or [`setNumberOfRows(_:withRowType:)`](wkinterfacetable/setnumberofrows(_:withrowtype:).md) method. After calling one of those methods, this property contains the number of row controllers that were created.
+The value of this property is `0` until you call the [`setRowTypes(_:)`](./setrowtypes%28_%29.md) or [`setNumberOfRows(_:withRowType:)`](./setnumberofrows%28_,withrowtype%29.md) method. After calling one of those methods, this property contains the number of row controllers that were created.
 
 ## See Also
 
-- [func rowController(at: Int) -> Any?](wkinterfacetable/rowcontroller(at:).md)
+### Getting the Row Controllers
+- [func rowController(at: Int) -> Any?](./rowcontroller%28at%29.md)
   Returns the row controller for the row at the specified index in the table.
 
 

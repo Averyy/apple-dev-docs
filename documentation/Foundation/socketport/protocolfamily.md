@@ -1,7 +1,8 @@
 # protocolFamily
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol family that the receiver uses for communication.
 
@@ -14,19 +15,24 @@ The protocol family that the receiver uses for communication.
 var protocolFamily: Int32 { get }
 ```
 
+```objc
+@property (readonly) int protocolFamily;
+```
+
 #### Discussion
 
 Possible values are defined in `<sys/socket.h>`, such as `AF_LOCAL`, `AF_INET`, and `AF_INET6`.
 
 ## See Also
 
-- [var address: Data](socketport/address.md)
-  The receiver’s socket address structure stored inside an [`NSData`](nsdata.md) object.
-- [var `protocol`: Int32](socketport/protocol.md)
+### Getting Information
+- [var address: Data](./address.md)
+  The receiver’s socket address structure stored inside an [`NSData`](../nsdata.md) object.
+- [var `protocol`: Int32](./protocol.md)
   The protocol that the receiver uses for communication.
-- [var socket: SocketNativeHandle](socketport/socket.md)
+- [var socket: SocketNativeHandle](./socket.md)
   The receiver’s native socket identifier on the platform.
-- [var socketType: Int32](socketport/sockettype.md)
+- [var socketType: Int32](./sockettype.md)
   The receiver’s socket type.
 
 

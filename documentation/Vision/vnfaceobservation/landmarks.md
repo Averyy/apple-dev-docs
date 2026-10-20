@@ -1,7 +1,8 @@
 # landmarks
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The facial features of the detected face.
 
@@ -19,19 +20,24 @@ The facial features of the detected face.
 var landmarks: VNFaceLandmarks2D? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) VNFaceLandmarks2D * landmarks;
+```
+
 #### Discussion
 
-This value is `nil` for face observations produced by a [`VNDetectFaceRectanglesRequest`](vndetectfacerectanglesrequest.md) analysis. Use the [`VNDetectFaceLandmarksRequest`](vndetectfacelandmarksrequest.md) class to find facial features.
+This value is `nil` for face observations produced by a [`VNDetectFaceRectanglesRequest`](../vndetectfacerectanglesrequest.md) analysis. Use the [`VNDetectFaceLandmarksRequest`](../vndetectfacelandmarksrequest.md) class to find facial features.
 
 ## See Also
 
-- [class VNFaceLandmarks2D](vnfacelandmarks2d.md)
+### Identifying Landmarks
+- [class VNFaceLandmarks2D](../vnfacelandmarks2d.md)
   A collection of facial features that a request detects.
-- [class VNFaceLandmarkRegion2D](vnfacelandmarkregion2d.md)
+- [class VNFaceLandmarkRegion2D](../vnfacelandmarkregion2d.md)
   2D geometry information for a specific facial feature.
-- [class VNFaceLandmarks](vnfacelandmarks.md)
+- [class VNFaceLandmarks](../vnfacelandmarks.md)
   The abstract superclass for containers of face landmark information.
-- [class VNFaceLandmarkRegion](vnfacelandmarkregion.md)
+- [class VNFaceLandmarkRegion](../vnfacelandmarkregion.md)
   The abstract superclass for information about a specific face landmark.
 
 

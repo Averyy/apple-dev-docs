@@ -1,7 +1,8 @@
 # decodeNil(forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes a null value for the given key.
 
@@ -26,7 +27,7 @@ Whether the encountered value was null.
 
 #### Discussion
 
-> **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
+> **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date this type represents.
 

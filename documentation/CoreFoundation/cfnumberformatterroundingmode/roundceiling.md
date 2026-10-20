@@ -1,18 +1,19 @@
 # CFNumberFormatterRoundingMode.roundCeiling
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round towards positive infinity.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ Round towards positive infinity.
 case roundCeiling
 ```
 
+```c
+kCFNumberFormatterRoundCeiling
+```
+
 ## See Also
 
-- [CFNumberFormatterRoundingMode.roundFloor](cfnumberformatterroundingmode/roundfloor.md)
+### Constants
+- [CFNumberFormatterRoundingMode.roundFloor](./roundfloor.md)
   Round towards negative infinity.
-- [CFNumberFormatterRoundingMode.roundDown](cfnumberformatterroundingmode/rounddown.md)
+- [CFNumberFormatterRoundingMode.roundDown](./rounddown.md)
   Round towards zero.
-- [CFNumberFormatterRoundingMode.roundUp](cfnumberformatterroundingmode/roundup.md)
+- [CFNumberFormatterRoundingMode.roundUp](./roundup.md)
   Round away from zero.
-- [CFNumberFormatterRoundingMode.roundHalfEven](cfnumberformatterroundingmode/roundhalfeven.md)
+- [CFNumberFormatterRoundingMode.roundHalfEven](./roundhalfeven.md)
   Round towards the nearest integer, or towards an even number if equidistant.
-- [CFNumberFormatterRoundingMode.roundHalfDown](cfnumberformatterroundingmode/roundhalfdown.md)
+- [CFNumberFormatterRoundingMode.roundHalfDown](./roundhalfdown.md)
   Round towards the nearest integer, or towards zero if equidistant.
-- [CFNumberFormatterRoundingMode.roundHalfUp](cfnumberformatterroundingmode/roundhalfup.md)
+- [CFNumberFormatterRoundingMode.roundHalfUp](./roundhalfup.md)
   Round towards the nearest integer, or away from zero if equidistant.
 
 

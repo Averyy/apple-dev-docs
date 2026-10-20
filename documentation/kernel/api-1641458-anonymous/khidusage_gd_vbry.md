@@ -1,14 +1,15 @@
 # kHIDUsage_GD_Vbry
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_GD_Vbry = 0x44
 ```
 

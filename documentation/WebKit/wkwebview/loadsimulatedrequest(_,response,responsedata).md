@@ -1,7 +1,8 @@
 # loadSimulatedRequest(_:response:responseData:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the web content from the data you provide as if the data were the response to the request.
 
@@ -18,6 +19,10 @@ Loads the web content from the data you provide as if the data were the response
 func loadSimulatedRequest(_ request: URLRequest, response: URLResponse, responseData data: Data) -> WKNavigation
 ```
 
+```objc
+- (WKNavigation *) loadSimulatedRequest:(NSURLRequest *) request response:(NSURLResponse *) response responseData:(NSData *) data;
+```
+
 #### Return Value
 
 A new navigation object you use to track the loading progress of the request.
@@ -30,21 +35,22 @@ A new navigation object you use to track the loading progress of the request.
 
 ## See Also
 
-- [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
+### Loading web content
+- [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](./load%28_,mimetype,characterencodingname,baseurl%29.md)
   Loads the content of the specified data object and navigates to it.
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
-- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
-- [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)
+- [func load(URLRequest) -> WKNavigation?](./load%28_%29-5siv6.md)
+- [func load(URL) -> WKNavigation?](./load%28_%29-4xx8m.md)
+- [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](./loadhtmlstring%28_,baseurl%29.md)
   Loads the contents of the specified HTML string and navigates to it.
-- [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](wkwebview/loadfilerequest(_:allowingreadaccessto:).md)
+- [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](./loadfilerequest%28_,allowingreadaccessto%29.md)
   Loads the web content from the file the URL request object specifies and navigates to that content.
-- [func loadFileURL(URL, allowingReadAccessTo: URL) -> WKNavigation?](wkwebview/loadfileurl(_:allowingreadaccessto:).md)
+- [func loadFileURL(URL, allowingReadAccessTo: URL) -> WKNavigation?](./loadfileurl%28_,allowingreadaccessto%29.md)
   Loads the web content from the specified file and navigates to it.
-- [func loadSimulatedRequest(URLRequest, responseHTML: String) -> WKNavigation](wkwebview/loadsimulatedrequest(_:responsehtml:).md)
+- [func loadSimulatedRequest(URLRequest, responseHTML: String) -> WKNavigation](./loadsimulatedrequest%28_,responsehtml%29.md)
   Loads the web content from the HTML you provide as if the HTML were the response to the request.
-- [var isLoading: Bool](wkwebview/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the view is currently loading content.
-- [var estimatedProgress: Double](wkwebview/estimatedprogress.md)
+- [var estimatedProgress: Double](./estimatedprogress.md)
   An estimate of what fraction of the current navigation has been loaded.
 
 

@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the timecode source.
 
@@ -18,6 +19,10 @@ A unique identifier for the timecode source.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uuid;
+```
+
 #### Discussion
 
 The UUID uniquely identifies this timecode source. It is particularly useful when multiple sources of the same type are available, allowing your application to distinguish between them.
@@ -26,9 +31,10 @@ The UUID uniquely identifies this timecode source. It is particularly useful whe
 
 ## See Also
 
-- [var displayName: String](avcapturetimecode/source/displayname.md)
+### Inspecting the source
+- [var displayName: String](./displayname.md)
   The name of the timecode source.
-- [var type: AVCaptureTimecode.SourceType](avcapturetimecode/source/type.md)
+- [var type: AVCaptureTimecode.SourceType](./type.md)
   The type of timecode source.
 
 

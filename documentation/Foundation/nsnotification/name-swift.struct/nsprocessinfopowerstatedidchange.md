@@ -1,7 +1,8 @@
 # NSProcessInfoPowerStateDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posts when the power state of a device changes.
 
@@ -20,21 +21,27 @@ Posts when the power state of a device changes.
 static let NSProcessInfoPowerStateDidChange: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSProcessInfoPowerStateDidChangeNotification;
+```
+
 #### Discussion
 
-After your observer receives this notification, query the [`isLowPowerModeEnabled`](processinfo/islowpowermodeenabled.md) property to determine the current power state of the device. If Low Power Mode is active, take appropriate steps to reduce activity in your app. Otherwise, your app can resume normal operations.
+After your observer receives this notification, query the [`isLowPowerModeEnabled`](../../processinfo/islowpowermodeenabled.md) property to determine the current power state of the device. If Low Power Mode is active, take appropriate steps to reduce activity in your app. Otherwise, your app can resume normal operations.
 
-The notification object is a [`ProcessInfo`](processinfo.md) instance.
+The notification object is a [`ProcessInfo`](../../processinfo.md) instance.
 
 ## See Also
 
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](notificationcenter/addobserver(_:selector:name:object:).md)
+### Related Documentation
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: Any?)](../../notificationcenter/addobserver%28_,selector,name,object%29.md)
   Adds an entry to the notification center to call the provided selector with the notification.
-- [var isLowPowerModeEnabled: Bool](processinfo/islowpowermodeenabled.md)
+- [var isLowPowerModeEnabled: Bool](../../processinfo/islowpowermodeenabled.md)
   A Boolean value that indicates the current state of Low Power Mode.
-- [class NotificationCenter](notificationcenter.md)
+- [class NotificationCenter](../../notificationcenter.md)
   A notification dispatch mechanism that enables the broadcast of information to registered observers.
-- [class let thermalStateDidChangeNotification: NSNotification.Name](processinfo/thermalstatedidchangenotification.md)
+### Working with notifications
+- [class let thermalStateDidChangeNotification: NSNotification.Name](../../processinfo/thermalstatedidchangenotification.md)
   Posts when the thermal state of the system changes.
 
 

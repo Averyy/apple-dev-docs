@@ -1,7 +1,8 @@
 # SubscriptionPlanAvailabilityUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription plan availability update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription plan availability update request resourc
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPlanAvailabilityUpdateRequest.Data.Attributes
 ```
 

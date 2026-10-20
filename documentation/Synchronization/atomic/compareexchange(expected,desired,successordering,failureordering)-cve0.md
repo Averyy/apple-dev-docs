@@ -1,7 +1,8 @@
 # compareExchange(expected:desired:successOrdering:failureOrdering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic compare and exchange operation on the current value, applying the specified success/failure memory orderings.
 
@@ -19,6 +20,8 @@ Perform an atomic compare and exchange operation on the current value, applying 
 ```swift
 func compareExchange(expected: consuming Value, desired: consuming Value, successOrdering: AtomicUpdateOrdering, failureOrdering: AtomicLoadOrdering) -> (exchanged: Bool, original: Value)
 ```
+
+Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic32BitStorage`.
 
 #### Return Value
 

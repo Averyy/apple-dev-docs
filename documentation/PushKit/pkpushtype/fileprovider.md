@@ -1,7 +1,8 @@
 # fileProvider
 
 **Framework**: PushKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A push type for file provider updates.
 
@@ -18,15 +19,20 @@ A push type for file provider updates.
 static let fileProvider: PKPushType
 ```
 
+```c
+extern PKPushType const PKPushTypeFileProvider;
+```
+
 #### Discussion
 
-Use file provider notifications to update your File Provider extension’s content from your server. For more information, see [`Tracking Your File Provider’s Changes`](https://developer.apple.com/documentation/fileprovider/tracking-your-file-provider-s-changes).
+Use file provider notifications to update your File Provider extension’s content from your server. For more information, see [Tracking Your File Provider’s Changes](../../FileProvider/tracking-your-file-provider-s-changes.md).
 
 ## See Also
 
-- [static let complication: PKPushType](pkpushtype/complication.md)
+### Notification Types
+- [static let complication: PKPushType](./complication.md)
   A push type for watchOS complications.
-- [static let voIP: PKPushType](pkpushtype/voip.md)
+- [static let voIP: PKPushType](./voip.md)
   A push type for Voice-over-IP (VoIP) call invitations.
 
 

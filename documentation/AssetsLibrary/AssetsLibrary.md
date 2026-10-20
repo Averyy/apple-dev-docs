@@ -1,7 +1,8 @@
 # Assets Library
 
 **Framework**: Assets Library  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Access the assets in a user’s media library.
 
@@ -14,14 +15,14 @@ Access the assets in a user’s media library.
 
 Use the Assets Library framework to access the pictures and videos managed by the Photos application.
 
-> ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the [`PhotoKit`](https://developer.apple.com/documentation/photokit) framework, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library.
+> ❗ **Important**:  The Assets Library framework is deprecated as of iOS 9.0. Instead, use the [PhotoKit](../PhotoKit/PhotoKit.md) framework, which in iOS 8.0 and later provides more features and better performance for working with a user’s photo library.
 
 ## Topics
 
 ### Reference
-- [AssetsLibrary Enumerations](assetslibrary-enumerations.md)
-- [AssetsLibrary Constants](assetslibrary-constants.md)
-- [AssetsLibrary Data Types](assetslibrary-data-types.md)
+- [AssetsLibrary Enumerations](./assetslibrary-enumerations.md)
+- [AssetsLibrary Constants](./assetslibrary-constants.md)
+- [AssetsLibrary Data Types](./assetslibrary-data-types.md)
 
 
 ---

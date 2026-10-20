@@ -1,7 +1,8 @@
 # overlapFactor
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of overlap between successive analysis windows when the model operates on a fixed-size audio block.
 
@@ -20,6 +21,10 @@ The amount of overlap between successive analysis windows when the model operate
 var overlapFactor: Double { get set }
 ```
 
+```objc
+@property (assign, readwrite) double overlapFactor;
+```
+
 #### Discussion
 
 The property defaults to `0.5` (50%) and supports values in the range `[0.0, 1.0]`.
@@ -30,7 +35,8 @@ Sound analyses that use a fixed-size audio block typically benefit with an overl
 
 ## See Also
 
-- [var windowDuration: CMTime](snclassifysoundrequest/windowduration.md)
+### Configuring a Request
+- [var windowDuration: CMTime](./windowduration.md)
   The duration of the audio buffer the request sends to the underlying sound classifier for each prediction.
 
 

@@ -1,7 +1,8 @@
 # collectionView(_:dropSessionDidExit:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies you when dragged content exits the collection view’s bounds rectangle.
 
@@ -17,11 +18,15 @@ Notifies you when dragged content exits the collection view’s bounds rectangle
 optional func collectionView(_ collectionView: UICollectionView, dropSessionDidExit session: any UIDropSession)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView dropSessionDidExit:(id<UIDropSession>) session;
+```
+
 #### Discussion
 
-UIKit calls this method when dragged content exits the bounds rectangle of the specified collection view. The method isn’t called again until the dragged content enters the collection view’s bounds (triggering a call to the [`collectionView(_:dropSessionDidEnter:)`](uicollectionviewdropdelegate/collectionview(_:dropsessiondidenter:).md) method) and exits again.
+UIKit calls this method when dragged content exits the bounds rectangle of the specified collection view. The method isn’t called again until the dragged content enters the collection view’s bounds (triggering a call to the [`collectionView(_:dropSessionDidEnter:)`](./collectionview%28_,dropsessiondidenter%29.md) method) and exits again.
 
-Use this method to clean up any state information that you configured in your [`collectionView(_:dropSessionDidEnter:)`](uicollectionviewdropdelegate/collectionview(_:dropsessiondidenter:).md) method.
+Use this method to clean up any state information that you configured in your [`collectionView(_:dropSessionDidEnter:)`](./collectionview%28_,dropsessiondidenter%29.md) method.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Use this method to clean up any state information that you configured in your [`
 
 ## See Also
 
-- [func collectionView(UICollectionView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UICollectionViewDropProposal](uicollectionviewdropdelegate/collectionview(_:dropsessiondidupdate:withdestinationindexpath:).md)
+### Tracking the drag movements
+- [func collectionView(UICollectionView, dropSessionDidUpdate: any UIDropSession, withDestinationIndexPath: IndexPath?) -> UICollectionViewDropProposal](./collectionview%28_,dropsessiondidupdate,withdestinationindexpath%29.md)
   Tells your delegate that the position of the dragged data over the collection view changed.
-- [func collectionView(UICollectionView, dropSessionDidEnter: any UIDropSession)](uicollectionviewdropdelegate/collectionview(_:dropsessiondidenter:).md)
+- [func collectionView(UICollectionView, dropSessionDidEnter: any UIDropSession)](./collectionview%28_,dropsessiondidenter%29.md)
   Notifies you when dragged content enters the collection view’s bounds rectangle.
-- [func collectionView(UICollectionView, dropSessionDidEnd: any UIDropSession)](uicollectionviewdropdelegate/collectionview(_:dropsessiondidend:).md)
+- [func collectionView(UICollectionView, dropSessionDidEnd: any UIDropSession)](./collectionview%28_,dropsessiondidend%29.md)
   Notifies you when the drag operation ends.
 
 

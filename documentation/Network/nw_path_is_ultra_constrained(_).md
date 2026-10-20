@@ -1,7 +1,8 @@
 # nw_path_is_ultra_constrained(_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func nw_path_is_ultra_constrained(_ path: nw_path_t) -> Bool
+```
+
+```c
+bool nw_path_is_ultra_constrained(nw_path_t path);
 ```
 
 #### Return Value

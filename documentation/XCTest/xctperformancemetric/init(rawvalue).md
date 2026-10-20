@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -17,7 +18,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](xctperformancemetric/init(_:).md)
+### Initializing an Item
+- [init(String)](./init%28_%29.md)
   Creates a new instance with the specified raw value.
 
 

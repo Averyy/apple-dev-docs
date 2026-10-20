@@ -1,14 +1,15 @@
 # kThreadWaitPThreadRWLockRead
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitPThreadRWLockRead = 0x0c
 ```
 

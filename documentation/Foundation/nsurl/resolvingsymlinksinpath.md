@@ -1,7 +1,8 @@
 # resolvingSymlinksInPath
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that points to the same resource as the receiver and includes no symbolic links. (read-only)
 
@@ -20,6 +21,10 @@ A URL that points to the same resource as the receiver and includes no symbolic 
 var resolvingSymlinksInPath: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * URLByResolvingSymlinksInPath;
+```
+
 #### Discussion
 
 If the receiver has no symbolic links, this property contains a copy of the original URL.
@@ -32,27 +37,28 @@ This property only works on URLs with the `file:` path scheme. For all other URL
 
 ## See Also
 
-- [var filePathURL: URL?](nsurl/filepathurl.md)
+### Modifying and Converting a File URL
+- [var filePathURL: URL?](./filepathurl.md)
   A file path URL that points to the same resource as the URL object. (read-only)
-- [func fileReferenceURL() -> URL?](nsurl/filereferenceurl.md)
+- [func fileReferenceURL() -> URL?](./filereferenceurl%28%29.md)
   Returns a new file reference URL that points to the same resource as the receiver.
-- [func appendingPathComponent(String) -> URL?](nsurl/appendingpathcomponent(_:).md)
+- [func appendingPathComponent(String) -> URL?](./appendingpathcomponent%28_%29.md)
   Returns a new URL by appending a path component to the original URL.
-- [func appendingPathComponent(String, isDirectory: Bool) -> URL?](nsurl/appendingpathcomponent(_:isdirectory:).md)
+- [func appendingPathComponent(String, isDirectory: Bool) -> URL?](./appendingpathcomponent%28_,isdirectory%29.md)
   Returns a new URL by appending a path component to the original URL, along with a trailing slash if the component is a directory.
-- [func appendingPathComponent(String, conformingTo: UTType) -> URL](nsurl/appendingpathcomponent(_:conformingto:).md)
+- [func appendingPathComponent(String, conformingTo: UTType) -> URL](./appendingpathcomponent%28_,conformingto%29.md)
   Returns a URL by appending the specified path component with the file extension for a uniform type identifier.
-- [func appendingPathExtension(String) -> URL?](nsurl/appendingpathextension(_:).md)
+- [func appendingPathExtension(String) -> URL?](./appendingpathextension%28_%29.md)
   Returns a new URL by appending a path extension to the original URL.
-- [func appendingPathExtension(for: UTType) -> URL](nsurl/appendingpathextension(for:).md)
+- [func appendingPathExtension(for: UTType) -> URL](./appendingpathextension%28for%29.md)
   Returns a URL by appending the path extension for a uniform type identifier.
-- [var deletingLastPathComponent: URL?](nsurl/deletinglastpathcomponent.md)
+- [var deletingLastPathComponent: URL?](./deletinglastpathcomponent.md)
   A URL you create by removing the last path component from the receiver. (read-only)
-- [var deletingPathExtension: URL?](nsurl/deletingpathextension.md)
+- [var deletingPathExtension: URL?](./deletingpathextension.md)
   A URL you create by removing the path extension from the receiver, if any. (read-only)
-- [var standardizingPath: URL?](nsurl/standardizingpath.md)
+- [var standardizingPath: URL?](./standardizingpath.md)
   A URL that points to the same resource as the original URL using an absolute path. (read-only)
-- [var hasDirectoryPath: Bool](nsurl/hasdirectorypath.md)
+- [var hasDirectoryPath: Bool](./hasdirectorypath.md)
   A Boolean value that indicates whether the URL string’s path represents a directory.
 
 

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -13,6 +14,10 @@
 
 ```swift
 class var shared: OSSystemExtensionsWorkspace { get }
+```
+
+```objc
+@property (class, readonly) OSSystemExtensionsWorkspace * sharedWorkspace;
 ```
 
 

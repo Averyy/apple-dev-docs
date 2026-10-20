@@ -1,12 +1,13 @@
 # timeZone
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone used to display time-related values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The time zone used to display time-related values.
 var timeZone: TimeZone? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSTimeZone * timeZone;
+```
+
 ## See Also
 
-- [var dateValue: Date](nsdatepickercell/datevalue.md)
+### Object Values
+- [var dateValue: Date](./datevalue.md)
   The date currently specified in the picker.
-- [var timeInterval: TimeInterval](nsdatepickercell/timeinterval.md)
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The time interval that represents the date range.
-- [var calendar: Calendar?](nsdatepickercell/calendar.md)
+- [var calendar: Calendar?](./calendar.md)
   The calendar used by the date picker.
-- [var locale: Locale?](nsdatepickercell/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used to display dates.
 
 

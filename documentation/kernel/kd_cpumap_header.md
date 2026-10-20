@@ -1,14 +1,15 @@
 # kd_cpumap_header
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kd_cpumap_header {
     ...
 } kd_cpumap_header;
@@ -17,8 +18,8 @@ typedef struct kd_cpumap_header {
 ## Topics
 
 ### Instance Properties
-- [cpu_count](kd_cpumap_header/3197801-cpu_count.md)
-- [version_no](kd_cpumap_header/3197802-version_no.md)
+- [cpu_count](./kd_cpumap_header/api-3197801-cpu_count.md)
+- [version_no](./kd_cpumap_header/api-3197802-version_no.md)
 
 
 ---

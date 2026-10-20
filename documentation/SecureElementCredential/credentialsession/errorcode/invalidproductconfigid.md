@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.invalidProductConfigID
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The product configuration ID is invalid.
 

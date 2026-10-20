@@ -1,7 +1,8 @@
 # GameCenterLeaderboardEntrySubmissionResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response confirming a player’s score submission to a Game Center leaderboard.
 
@@ -10,7 +11,7 @@ A response confirming a player’s score submission to a Game Center leaderboard
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardEntrySubmissionResponse
 ```
 
@@ -21,9 +22,10 @@ object GameCenterLeaderboardEntrySubmissionResponse
 
 ## See Also
 
-- [object GameCenterLeaderboardEntrySubmission](gamecenterleaderboardentrysubmission.md)
+### Objects
+- [object GameCenterLeaderboardEntrySubmission](./gamecenterleaderboardentrysubmission.md)
   A player’s score submission to a Game Center leaderboard, including the score value and context.
-- [object GameCenterLeaderboardEntrySubmissionCreateRequest](gamecenterleaderboardentrysubmissioncreaterequest.md)
+- [object GameCenterLeaderboardEntrySubmissionCreateRequest](./gamecenterleaderboardentrysubmissioncreaterequest.md)
   The request body you use to create a Game Center leaderboard entry submission.
 
 

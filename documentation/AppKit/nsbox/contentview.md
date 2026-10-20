@@ -1,17 +1,22 @@
 # contentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s content view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var contentView: NSView? { get set }
+```
+
+```objc
+@property (strong, nullable) NSView * contentView;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The content view of the `NSBox` object. The content view is created automaticall
 
 ## See Also
 
-- [var contentViewMargins: NSSize](nsbox/contentviewmargins.md)
+### Managing Content
+- [var contentViewMargins: NSSize](./contentviewmargins.md)
   The distances between the border and the content view.
 
 

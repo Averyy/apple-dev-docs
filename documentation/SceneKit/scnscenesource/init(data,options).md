@@ -1,23 +1,28 @@
 # init(data:options:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a scene source for reading the scene graph contained in an `NSData` object.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]? = nil)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data options:(NSDictionary<NSString *,id> *) options;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ An initialized scene source object, or `nil` if initialization was not successfu
 
 #### Discussion
 
-The `data` parameter of this method (an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata)) should contain the same data as directly read from a scene file (such as by using the [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) method [`init(contentsOfURL:)`](https://developer.apple.com/documentation/foundation/nsdata/init(contentsofurl:)-5gfaw)). Use this method when you have the contents of a scene file but not the file itself—for example, if your app downloads scene files from the network.
+The `data` parameter of this method (an [`NSData`](../../Foundation/nsdata.md)) should contain the same data as directly read from a scene file (such as by using the [`NSData`](../../Foundation/nsdata.md) method [`init(contentsOfURL:)`](../../Foundation/nsdata/init%28contentsofurl%29-5gfaw.md)). Use this method when you have the contents of a scene file but not the file itself—for example, if your app downloads scene files from the network.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ The `data` parameter of this method (an [`NSData`](https://developer.apple.com/d
 
 ## See Also
 
-- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-rw0y.md)
+### Creating a Scene Source
+- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](./init%28url,options%29-rw0y.md)
   Initializes a scene source for reading the scene graph from a specified file.
 
 

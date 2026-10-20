@@ -1,17 +1,24 @@
 # init(player:)
 
 **Framework**: TVMLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new customizable player from an existing player.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 init(player: AVPlayer)
+```
+
+```objc
+- (instancetype) initWithPlayer:(AVPlayer *) player;
 ```
 
 ## Parameters
@@ -20,9 +27,10 @@ init(player: AVPlayer)
 
 ## See Also
 
-- [var player: AVPlayer](tvplayer/player.md)
+### Setting Up the Player
+- [var player: AVPlayer](./player.md)
   The customizable media player.
-- [var playlist: TVPlaylist?](tvplayer/playlist.md)
+- [var playlist: TVPlaylist?](./playlist.md)
   The playlist for the media player.
 
 

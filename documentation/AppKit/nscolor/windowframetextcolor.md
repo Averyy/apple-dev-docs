@@ -1,12 +1,13 @@
 # windowFrameTextColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color to use for text in a window’s frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ The color to use for text in a window’s frame.
 class var windowFrameTextColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * windowFrameTextColor;
+```
+
 #### Return Value
 
-The color used for text in window frames. For more information, see [`NSColor`](nscolor.md).
+The color used for text in window frames. For more information, see [`NSColor`](../nscolor.md).
 
 ## See Also
 
-- [class var windowFrameColor: NSColor](nscolor/windowframecolor.md)
+### Related Documentation
+- [class var windowFrameColor: NSColor](./windowframecolor.md)
   The system color used for window frames, except for their text.
-- [class var windowBackgroundColor: NSColor](nscolor/windowbackgroundcolor.md)
+### Window colors
+- [class var windowBackgroundColor: NSColor](./windowbackgroundcolor.md)
   The color to use for the window background.
-- [class var underPageBackgroundColor: NSColor](nscolor/underpagebackgroundcolor.md)
+- [class var underPageBackgroundColor: NSColor](./underpagebackgroundcolor.md)
   The color to use in the area beneath your window’s views.
 
 

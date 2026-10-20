@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionLoginConfiguration.FederationType.none
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 13.3+
@@ -12,10 +13,15 @@
 case none
 ```
 
+```c
+ASAuthorizationProviderExtensionFederationTypeNone
+```
+
 ## See Also
 
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicWSTrust](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicwstrust.md)
-- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/wstrust.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicWSTrust](./dynamicwstrust.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust](./wstrust.md)
 
 
 ---

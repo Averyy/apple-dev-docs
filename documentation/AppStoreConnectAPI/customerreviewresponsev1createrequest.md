@@ -1,7 +1,8 @@
 # CustomerReviewResponseV1CreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body to use to create a response to a customer review.
 
@@ -10,14 +11,14 @@ The request body to use to create a response to a customer review.
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewResponseV1CreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object CustomerReviewResponseV1CreateRequest.Data](customerreviewresponsev1createrequest/data-data.dictionary.md)
+- [object CustomerReviewResponseV1CreateRequest.Data](./customerreviewresponsev1createrequest/data-data.dictionary.md)
   The data element of the request body for creating a response to a customer review.
 
 ## Properties
@@ -26,14 +27,15 @@ object CustomerReviewResponseV1CreateRequest
 
 ## See Also
 
-- [object CustomerReviewResponseV1Response](customerreviewresponsev1response.md)
+### Objects and types
+- [object CustomerReviewResponseV1Response](./customerreviewresponsev1response.md)
   The response body for endpoints that create, read, or modify a developer’s response to a customer review.
-- [object CustomerReviewResponseV1](customerreviewresponsev1.md)
+- [object CustomerReviewResponseV1](./customerreviewresponsev1.md)
   A developer’s public reply to a customer review on the App Store.
-- [object CustomerReview](customerreview.md)
+- [object CustomerReview](./customerreview.md)
   A customer’s rating and written review of your app on the App Store.
-- [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
-- [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
+- [object AppCustomerReviewsLinkagesResponse](./appcustomerreviewslinkagesresponse.md)
+- [object CustomerReviewResponseLinkageResponse](./customerreviewresponselinkageresponse.md)
 
 
 ---

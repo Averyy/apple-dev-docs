@@ -1,12 +1,13 @@
 # autoenablesItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the button enables and disables its items every time a user event occurs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the button enables and disables its items eve
 var autoenablesItems: Bool { get set }
 ```
 
+```objc
+@property BOOL autoenablesItems;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), user events cause the button to enable and disable its items automatically according to the NSMenuValidation protocol specification.
+When the value of this property is [`true`](../../Swift/true.md), user events cause the button to enable and disable its items automatically according to the NSMenuValidation protocol specification.
 
 ## See Also
 
-- [var pullsDown: Bool](nspopupbutton/pullsdown.md)
+### Setting the type of menu
+- [var pullsDown: Bool](./pullsdown.md)
   A Boolean value indicating whether the button displays a pull-down or pop-up menu.
 
 

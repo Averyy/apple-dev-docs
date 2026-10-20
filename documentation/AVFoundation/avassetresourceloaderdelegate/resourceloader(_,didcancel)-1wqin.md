@@ -1,7 +1,8 @@
 # resourceLoader(_:didCancel:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that a prior authentication challenge has been cancelled.
 
@@ -19,6 +20,10 @@ Informs the delegate that a prior authentication challenge has been cancelled.
 optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, didCancel authenticationChallenge: URLAuthenticationChallenge)
 ```
 
+```objc
+- (void) resourceLoader:(AVAssetResourceLoader *) resourceLoader didCancelAuthenticationChallenge:(NSURLAuthenticationChallenge *) authenticationChallenge;
+```
+
 ## Parameters
 
 - `resourceLoader`: The resource loader.
@@ -26,7 +31,8 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, didCancel 
 
 ## See Also
 
-- [func resourceLoader(AVAssetResourceLoader, shouldWaitForResponseTo: URLAuthenticationChallenge) -> Bool](avassetresourceloaderdelegate/resourceloader(_:shouldwaitforresponseto:).md)
+### Processing authentication challenges
+- [func resourceLoader(AVAssetResourceLoader, shouldWaitForResponseTo: URLAuthenticationChallenge) -> Bool](./resourceloader%28_,shouldwaitforresponseto%29.md)
   Tells the delegate that assistance is required of the application to respond to an authentication challenge.
 
 

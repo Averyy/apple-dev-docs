@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s delegate.
 
@@ -12,6 +13,10 @@ The receiver’s delegate.
 
 ```swift
 weak var delegate: (any NSPathControlDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSPathControlDelegate> delegate;
 ```
 
 

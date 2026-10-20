@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a child menu as the first element of the specified parent menu.
@@ -19,6 +20,10 @@ Adds a child menu as the first element of the specified parent menu.
 func insertChild(_ childMenu: UIMenu, atStartOfMenu parentIdentifier: UIMenu.Identifier)
 ```
 
+```objc
+- (void) insertChildMenu:(UIMenu *) childMenu atStartOfMenuForIdentifier:(UIMenuIdentifier) parentIdentifier;
+```
+
 ## Parameters
 
 - `childMenu`: The child menu to insert.
@@ -26,7 +31,8 @@ func insertChild(_ childMenu: UIMenu, atStartOfMenu parentIdentifier: UIMenu.Ide
 
 ## See Also
 
-- [func insertChild(UIMenu, atEndOfMenu: UIMenu.Identifier)](uimenubuilder/insertchild(_:atendofmenu:).md)
+### Inserting child menus
+- [func insertChild(UIMenu, atEndOfMenu: UIMenu.Identifier)](./insertchild%28_,atendofmenu%29.md)
   Adds a child menu as the last element of the specified parent menu.
 
 

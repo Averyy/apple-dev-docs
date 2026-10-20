@@ -1,17 +1,22 @@
 # classOfDevice
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the full class of device value for the remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var classOfDevice: BluetoothClassOfDevice { get }
+```
+
+```objc
+@property (nonatomic, readonly) BluetoothClassOfDevice classOfDevice;
 ```
 
 #### Discussion

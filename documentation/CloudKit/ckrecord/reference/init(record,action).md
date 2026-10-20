@@ -1,7 +1,8 @@
 # init(record:action:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference object that points to the specified record object.
 
@@ -10,7 +11,7 @@ Creates a reference object that points to the specified record object.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Creates a reference object that points to the specified record object.
 
 ```swift
 convenience init(record: CKRecord, action: CKRecord.ReferenceAction)
+```
+
+```objc
+- (instancetype) initWithRecord:(CKRecord *) record action:(CKReferenceAction) action;
 ```
 
 #### Return Value
@@ -33,13 +38,14 @@ When you create a reference object for use in a search predicate, the predicate 
 ## Parameters
 
 - `record`: The target record of the reference.
-- `action`: The ownership options to use for the records. If you specify the [`CKRecord.ReferenceAction.deleteSelf`](ckrecord/referenceaction/deleteself.md) option, the object that the `recordID` parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see [`CKRecord.ReferenceAction`](ckrecord/referenceaction.md).
+- `action`: The ownership options to use for the records. If you specify the [`CKRecord.ReferenceAction.deleteSelf`](../referenceaction/deleteself.md) option, the object that the `recordID` parameter references becomes the owner of (or acts as the parent of) any objects that use this reference object. For a list of possible values, see [`CKRecord.ReferenceAction`](../referenceaction.md).
 
 ## See Also
 
-- [init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)](ckrecord/reference/init(recordid:action:).md)
+### Creating a Reference
+- [init(recordID: CKRecord.ID, action: CKRecord.ReferenceAction)](./init%28recordid,action%29.md)
   Creates a reference object that points to the record with the specified ID.
-- [CKRecord.Reference.Action](ckrecord/reference/action-swift.typealias.md)
+- [CKRecord.Reference.Action](./action-swift.typealias.md)
   A type that represents additional actions that occur when deleting references.
 
 

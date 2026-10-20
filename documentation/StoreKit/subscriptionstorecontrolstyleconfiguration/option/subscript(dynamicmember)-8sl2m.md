@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: StoreKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Facilitates accessing optional subscription properties on an option value.
 
@@ -22,13 +23,14 @@ subscript<T>(dynamicMember keyPath: KeyPath<Product.SubscriptionInfo, T?>) -> T?
 
 #### Discussion
 
-You don’t use this subscript directly. Instead, access the properties of a [`Product.SubscriptionInfo`](product/subscriptioninfo.md) directly on a [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md) value. For an example of using a dynamic member lookup, see [`SubscriptionStoreControlStyleConfiguration.Option`](subscriptionstorecontrolstyleconfiguration/option.md).
+You don’t use this subscript directly. Instead, access the properties of a [`Product.SubscriptionInfo`](../../product/subscriptioninfo.md) directly on a [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md) value. For an example of using a dynamic member lookup, see [`SubscriptionStoreControlStyleConfiguration.Option`](../option.md).
 
 ## See Also
 
-- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](subscriptionstorecontrolstyleconfiguration/option/subscript(dynamicmember:)-wjww.md)
+### Looking up dynamic members
+- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](./subscript%28dynamicmember%29-wjww.md)
   Facilitates accessing subscription properties on an option value.
-- [subscript<T>(dynamicMember _: KeyPath<Product, T>) -> T](subscriptionstorecontrolstyleconfiguration/option/subscript(dynamicmember:)-9g2sm.md)
+- [subscript<T>(dynamicMember _: KeyPath<Product, T>) -> T](./subscript%28dynamicmember%29-9g2sm.md)
   Facilitates accessing product properties on an option value.
 
 

@@ -1,7 +1,8 @@
 # preferredIntervals
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The available skip intervals, in seconds, for a media item.
 
@@ -20,9 +21,13 @@ The available skip intervals, in seconds, for a media item.
 var preferredIntervals: [NSNumber] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSNumber *> * preferredIntervals;
+```
+
 #### Discussion
 
-The `preferredIntervals` property holds an array of [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) objects that designate different skip intervals for a media item. The skip intervals are defined in seconds.
+The `preferredIntervals` property holds an array of [`TimeInterval`](../../Foundation/timeinterval.md) objects that designate different skip intervals for a media item. The skip intervals are defined in seconds.
 
 
 ---

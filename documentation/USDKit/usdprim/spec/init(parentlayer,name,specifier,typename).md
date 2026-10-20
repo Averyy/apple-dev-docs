@@ -1,7 +1,8 @@
 # init(parentLayer:name:specifier:typeName:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new top-level prim spec under the given layer.
 

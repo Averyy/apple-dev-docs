@@ -1,7 +1,8 @@
 # FrameResizePosition.trailing
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The trailing edge of the frame.
 

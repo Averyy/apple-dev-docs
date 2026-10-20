@@ -1,7 +1,8 @@
 # ManagedAppView
 
 **Framework**: ManagedAppDistribution  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays a managed app.
 
@@ -21,22 +22,23 @@ A view that displays a managed app.
 ## Topics
 
 ### Creating a view
-- [init(app: ManagedApp)](managedappview/init(app:).md)
+- [init(app: ManagedApp)](./managedappview/init%28app%29.md)
   Create a managed app view from a managed app.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct ManagedContentView](managedcontentview.md)
-- [struct ManagedContentOfferState](managedcontentofferstate.md)
+### View creation
+- [struct ManagedContentView](./managedcontentview.md)
+- [struct ManagedContentOfferState](./managedcontentofferstate.md)
   The state for a managed content view offer.
-- [struct ManagedContentStyle](managedcontentstyle.md)
+- [struct ManagedContentStyle](./managedcontentstyle.md)
   A type that applies a custom appearance to the managed content view.
 
 

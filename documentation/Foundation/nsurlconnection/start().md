@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the connection to begin loading data, if it has not already.
 
@@ -20,17 +21,22 @@ Causes the connection to begin loading data, if it has not already.
 func start()
 ```
 
+```objc
+- (void) start;
+```
+
 #### Discussion
 
-Calling this method is necessary only if you create a connection with the [`init(request:delegate:startImmediately:)`](nsurlconnection/init(request:delegate:startimmediately:).md) method and provide [`false`](https://developer.apple.com/documentation/swift/false) for the `startImmediately` parameter. If you don’t schedule the connection in a run loop or an operation queue before calling this method, the connection is scheduled in the current run loop in the default mode.
+Calling this method is necessary only if you create a connection with the [`init(request:delegate:startImmediately:)`](./init%28request,delegate,startimmediately%29.md) method and provide [`false`](../../Swift/false.md) for the `startImmediately` parameter. If you don’t schedule the connection in a run loop or an operation queue before calling this method, the connection is scheduled in the current run loop in the default mode.
 
 ## See Also
 
-- [init?(request: URLRequest, delegate: Any?)](nsurlconnection/init(request:delegate:).md)
+### Loading Data Asynchronously
+- [init?(request: URLRequest, delegate: Any?)](./init%28request,delegate%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request.
-- [init?(request: URLRequest, delegate: Any?, startImmediately: Bool)](nsurlconnection/init(request:delegate:startimmediately:).md)
+- [init?(request: URLRequest, delegate: Any?, startImmediately: Bool)](./init%28request,delegate,startimmediately%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request, if specified.
-- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](nsurlconnection/sendasynchronousrequest(_:queue:completionhandler:).md)
+- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](./sendasynchronousrequest%28_,queue,completionhandler%29.md)
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
 
 

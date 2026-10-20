@@ -1,7 +1,8 @@
 # confirmation(_:expectedCount:isolation:sourceLocation:_:)
 
 **Framework**: Swift Testing  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Confirm that some event occurs during the invocation of a function.
 
@@ -17,8 +18,8 @@ func confirmation<R>(_ comment: Comment? = nil, expectedCount: some RangeExpress
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
-- [Testing asynchronous code](testing-asynchronous-code.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
+- [Testing asynchronous code](./testing-asynchronous-code.md)
 
 #### Return Value
 
@@ -26,7 +27,7 @@ Whatever is returned by `body`.
 
 #### Discussion
 
-> **Note**: Whatever is thrown by `body`.
+> **Throws**: Whatever is thrown by `body`.
 
 Use confirmations to check that an event occurs while a test is running in complex scenarios where `#expect()` and `#require()` are insufficient. For example, a confirmation may be useful when an expected event occurs:
 
@@ -34,7 +35,7 @@ Use confirmations to check that an event occurs while a test is running in compl
 - More than once, or never; or
 - As a callback that is invoked as part of a larger operation.
 
-To use a confirmation, pass a closure containing the work to be performed. The testing library will then pass an instance of [`Confirmation`](confirmation.md) to the closure. Every time the event in question occurs, the closure should call the confirmation:
+To use a confirmation, pass a closure containing the work to be performed. The testing library will then pass an instance of [`Confirmation`](./confirmation.md) to the closure. Every time the event in question occurs, the closure should call the confirmation:
 
 ```swift
 let minBuns = 5
@@ -54,7 +55,7 @@ await confirmation(
 
 When the closure returns, the testing library checks if the confirmation’s preconditions have been met, and records an issue if they have not.
 
-If an exact count is expected, use [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md) instead.
+If an exact count is expected, use [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) instead.
 
 ## Parameters
 
@@ -66,11 +67,12 @@ If an exact count is expected, use [`confirmation(_:expectedCount:isolation:sour
 
 ## See Also
 
-- [Testing asynchronous code](testing-asynchronous-code.md)
+### Confirming that asynchronous events occur
+- [Testing asynchronous code](./testing-asynchronous-code.md)
   Validate whether your code causes expected events to happen.
-- [func confirmation<R>(Comment?, expectedCount: Int, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md)
+- [func confirmation<R>(Comment?, expectedCount: Int, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, (Confirmation) async throws -> sending R) async rethrows -> R](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md)
   Confirm that some event occurs during the invocation of a function.
-- [struct Confirmation](confirmation.md)
+- [struct Confirmation](./confirmation.md)
   A type that can be used to confirm that an event occurs zero or more times.
 
 

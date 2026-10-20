@@ -1,7 +1,8 @@
 # activityType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The workout activity performed during this session.
 
@@ -9,9 +10,11 @@ The workout activity performed during this session.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use [`workoutConfiguration`](./workoutconfiguration.md) instead.
 
 ## Declaration
 
@@ -19,17 +22,22 @@ The workout activity performed during this session.
 var activityType: HKWorkoutActivityType { get }
 ```
 
+```objc
+@property (readonly) HKWorkoutActivityType activityType;
+```
+
 #### Discussion
 
-For a list of possible activity types, see [`HKWorkoutActivityType`](hkworkoutactivitytype.md).
+For a list of possible activity types, see [`HKWorkoutActivityType`](../hkworkoutactivitytype.md).
 
 ## See Also
 
-- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](hkworkoutsession/init(activitytype:locationtype:).md)
+### Deprecated methods
+- [init(activityType: HKWorkoutActivityType, locationType: HKWorkoutSessionLocationType)](./init%28activitytype,locationtype%29.md)
   Returns a newly instantiated workout session.
-- [init(configuration: HKWorkoutConfiguration) throws](hkworkoutsession/init(configuration:).md)
+- [init(configuration: HKWorkoutConfiguration) throws](./init%28configuration%29.md)
   Returns a newly instantiated workout session.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
 
 

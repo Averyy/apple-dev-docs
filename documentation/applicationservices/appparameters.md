@@ -1,7 +1,8 @@
 # AppParameters
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,15 +13,21 @@
 struct AppParameters
 ```
 
+```c
+typedef struct AppParameters {
+    ...
+} AppParameters;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](appparameters/1461985-init.md)
-- [init(theMsgEvent: AppParameters.__Unnamed_struct_theMsgEvent, eventRefCon: UInt32, messageLength: UInt32)](appparameters/1461815-init.md)
+- [init()](./appparameters/api-1461985-init.md)
+- [init(theMsgEvent: AppParameters.__Unnamed_struct_theMsgEvent, eventRefCon: UInt32, messageLength: UInt32)](./appparameters/api-1461815-init.md)
 ### Instance Properties
-- [var eventRefCon: UInt32](appparameters/1462847-eventrefcon.md)
-- [var messageLength: UInt32](appparameters/1463729-messagelength.md)
-- [var theMsgEvent: AppParameters.__Unnamed_struct_theMsgEvent](appparameters/1462322-themsgevent.md)
+- [var eventRefCon: UInt32](./appparameters/api-1462847-eventrefcon.md)
+- [var messageLength: UInt32](./appparameters/api-1463729-messagelength.md)
+- [var theMsgEvent: AppParameters.__Unnamed_struct_theMsgEvent](./appparameters/api-1462322-themsgevent.md)
 
 
 ---

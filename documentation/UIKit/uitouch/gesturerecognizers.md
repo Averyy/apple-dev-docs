@@ -1,7 +1,8 @@
 # gestureRecognizers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture recognizers that are receiving the touch object.
 
@@ -9,7 +10,7 @@ The gesture recognizers that are receiving the touch object.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The gesture recognizers that are receiving the touch object.
 var gestureRecognizers: [UIGestureRecognizer]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<UIGestureRecognizer *> * gestureRecognizers;
+```
+
 #### Discussion
 
-The objects in the array are instances of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md). If there are no gesture recognizers currently receiving the touch, this property contains an empty array.
+The objects in the array are instances of a subclass of the abstract base class [`UIGestureRecognizer`](../uigesturerecognizer.md). If there are no gesture recognizers currently receiving the touch, this property contains an empty array.
 
 
 ---

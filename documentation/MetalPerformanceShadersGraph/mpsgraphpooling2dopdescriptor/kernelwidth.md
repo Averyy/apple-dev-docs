@@ -1,7 +1,8 @@
 # kernelWidth
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the pooling window size for the width dimension.
 
@@ -17,6 +18,10 @@ Defines the pooling window size for the width dimension.
 
 ```swift
 var kernelWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelWidth;
 ```
 
 

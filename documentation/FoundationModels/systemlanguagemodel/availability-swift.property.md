@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The availability of the language model.
 
@@ -20,9 +21,10 @@ final var availability: SystemLanguageModel.Availability { get }
 
 ## See Also
 
-- [var isAvailable: Bool](systemlanguagemodel/isavailable.md)
+### Checking model availability
+- [var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether the system is entirely ready.
-- [SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.enum.md)
+- [SystemLanguageModel.Availability](./availability-swift.enum.md)
   The availability status for a specific system language model.
 
 

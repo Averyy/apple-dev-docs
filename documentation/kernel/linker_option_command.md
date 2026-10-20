@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct linker_option_command {
     ...
 };
@@ -17,9 +17,9 @@ struct linker_option_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](linker_option_command/1525799-cmd.md)
-- [cmdsize](linker_option_command/1525381-cmdsize.md)
-- [count](linker_option_command/1525795-count.md)
+- [cmd](./linker_option_command/api-1525799-cmd.md)
+- [cmdsize](./linker_option_command/api-1525381-cmdsize.md)
+- [count](./linker_option_command/api-1525795-count.md)
 
 
 ---

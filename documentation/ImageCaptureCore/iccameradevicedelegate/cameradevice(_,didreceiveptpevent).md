@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client about a PTP event.
@@ -17,6 +18,10 @@ Tells the client about a PTP event.
 
 ```swift
 func cameraDevice(_ camera: ICCameraDevice, didReceivePTPEvent eventData: Data)
+```
+
+```objc
+- (void) cameraDevice:(ICCameraDevice *) camera didReceivePTPEvent:(NSData *) eventData;
 ```
 
 

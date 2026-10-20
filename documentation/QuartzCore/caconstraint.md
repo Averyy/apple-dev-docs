@@ -1,7 +1,8 @@
 # CAConstraint
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a single layout constraint between two layers.
 
@@ -15,9 +16,13 @@ A representation of a single layout constraint between two layers.
 class CAConstraint
 ```
 
+```objc
+@interface CAConstraint : NSObject
+```
+
 #### Overview
 
-Each [`CAConstraint`](caconstraint.md) instance encapsulates one geometry relationship between two layers on the same axis.
+Each [`CAConstraint`](./caconstraint.md) instance encapsulates one geometry relationship between two layers on the same axis.
 
 Sibling layers are referenced by name, using the name property of each layer. The special name `superlayer` is used to refer to the layer’s superlayer.
 
@@ -46,54 +51,55 @@ A minimum of two relationships must be specified per axis. If you specify constr
 ## Topics
 
 ### Create a New Constraint
-- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, offset: CGFloat)](caconstraint/init(attribute:relativeto:attribute:offset:).md)
+- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, offset: CGFloat)](./caconstraint/init%28attribute,relativeto,attribute,offset%29.md)
   Creates and returns an `CAConstraint` object with the specified parameters.
-- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute)](caconstraint/init(attribute:relativeto:attribute:).md)
+- [convenience init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute)](./caconstraint/init%28attribute,relativeto,attribute%29.md)
   Creates and returns an `CAConstraint` object with the specified parameters.
-- [init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, scale: CGFloat, offset: CGFloat)](caconstraint/init(attribute:relativeto:attribute:scale:offset:).md)
+- [init(attribute: CAConstraintAttribute, relativeTo: String, attribute: CAConstraintAttribute, scale: CGFloat, offset: CGFloat)](./caconstraint/init%28attribute,relativeto,attribute,scale,offset%29.md)
   Returns an `CAConstraint` object with the specified parameters. Designated initializer.
 ### Accessing Constraint Values
-- [var attribute: CAConstraintAttribute](caconstraint/attribute.md)
+- [var attribute: CAConstraintAttribute](./caconstraint/attribute.md)
   The attribute the constraint affects.
-- [var offset: CGFloat](caconstraint/offset.md)
+- [var offset: CGFloat](./caconstraint/offset.md)
   Offset value of the constraint attribute.
-- [var scale: CGFloat](caconstraint/scale.md)
+- [var scale: CGFloat](./caconstraint/scale.md)
   Scale factor of the constraint attribute.
-- [var sourceAttribute: CAConstraintAttribute](caconstraint/sourceattribute.md)
+- [var sourceAttribute: CAConstraintAttribute](./caconstraint/sourceattribute.md)
   The constraint attribute of the layer the receiver is calculated relative to
-- [var sourceName: String](caconstraint/sourcename.md)
+- [var sourceName: String](./caconstraint/sourcename.md)
   Name of the layer that the constraint is calculated relative to.
 ### Constants
-- [enum CAConstraintAttribute](caconstraintattribute.md)
+- [enum CAConstraintAttribute](./caconstraintattribute.md)
   The constraint attribute type.
 ### Initializers
-- [init?(coder: NSCoder)](caconstraint/init(coder:).md)
+- [init?(coder: NSCoder)](./caconstraint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CALayer](calayer.md)
+### Layer Basics
+- [class CALayer](./calayer.md)
   An object that manages image-based content and allows you to perform animations on that content.
-- [protocol CALayerDelegate](calayerdelegate.md)
+- [protocol CALayerDelegate](./calayerdelegate.md)
   Methods your app can implement to respond to layer-related events.
-- [protocol CALayoutManager](calayoutmanager.md)
+- [protocol CALayoutManager](./calayoutmanager.md)
   Methods that allow an object to manage the layout of a layer and its sublayers.
-- [class CAConstraintLayoutManager](caconstraintlayoutmanager.md)
+- [class CAConstraintLayoutManager](./caconstraintlayoutmanager.md)
   An object that provides a constraint-based layout manager.
-- [protocol CAAction](caaction.md)
+- [protocol CAAction](./caaction.md)
   An interface that allows instances to respond to actions triggered by a Core Animation layer change.
 
 

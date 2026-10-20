@@ -1,7 +1,8 @@
 # ContactProviderError.pageExpired
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The page expired and is no longer valid.
 
@@ -21,7 +22,8 @@ When this error occurs, the system discards locally cached data and restarts a c
 
 ## See Also
 
-- [ContactProviderError.changeAnchorExpired](contactprovidererror/changeanchorexpired.md)
+### Expiration errors
+- [ContactProviderError.changeAnchorExpired](./changeanchorexpired.md)
   The change anchor expired and is no longer valid.
 
 

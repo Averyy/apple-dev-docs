@@ -1,7 +1,8 @@
 # description(withLocale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string that represents the contents of the array, formatted as a property list.
 
@@ -20,13 +21,17 @@ Returns a string that represents the contents of the array, formatted as a prope
 func description(withLocale locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Return Value
 
 A string that represents the contents of the array, formatted as a property list.
 
 #### Discussion
 
-For a description of how `locale` is applied to each element in the receiving array, see [`description(withLocale:indent:)`](nsarray/description(withlocale:indent:).md).
+For a description of how `locale` is applied to each element in the receiving array, see [`description(withLocale:indent:)`](./description%28withlocale,indent%29.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ For a description of how `locale` is applied to each element in the receiving ar
 
 ## See Also
 
-- [var description: String](nsarray/description.md)
+### Creating a Description
+- [var description: String](./description.md)
   A string that represents the contents of the array, formatted as a property list.
-- [func description(withLocale: Any?, indent: Int) -> String](nsarray/description(withlocale:indent:).md)
+- [func description(withLocale: Any?, indent: Int) -> String](./description%28withlocale,indent%29.md)
   Returns a string that represents the contents of the array, formatted as a property list.
 
 

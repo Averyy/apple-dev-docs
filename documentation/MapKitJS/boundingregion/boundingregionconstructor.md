@@ -1,7 +1,8 @@
 # new BoundingRegion(northLatitude, eastLongitude, southLatitude, westLongitude)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a rectangular bounding region, which the latitude and longitude coordinates of the rectangle’s northeast and southwest corners define.
 
@@ -10,7 +11,7 @@ Creates a rectangular bounding region, which the latitude and longitude coordina
 
 ## Declaration
 
-```swift
+```
 constructor(
     northLatitude?: number,
     eastLongitude?: number,

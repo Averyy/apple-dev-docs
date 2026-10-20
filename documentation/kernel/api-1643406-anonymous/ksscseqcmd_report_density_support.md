@@ -1,7 +1,8 @@
 # kSSCSeqCmd_REPORT_DENSITY_SUPPORT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSSCSeqCmd_REPORT_DENSITY_SUPPORT = 0x44
 ```
 

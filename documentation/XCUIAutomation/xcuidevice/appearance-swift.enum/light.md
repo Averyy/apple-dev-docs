@@ -1,18 +1,19 @@
 # XCUIDevice.Appearance.light
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The light interface style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,11 +22,16 @@ The light interface style.
 case light
 ```
 
+```c
+XCUIDeviceAppearanceLight
+```
+
 ## See Also
 
-- [XCUIDevice.Appearance.unspecified](xcuidevice/appearance-swift.enum/unspecified.md)
+### Appearances
+- [XCUIDevice.Appearance.unspecified](./unspecified.md)
   An unspecified interface style.
-- [XCUIDevice.Appearance.dark](xcuidevice/appearance-swift.enum/dark.md)
+- [XCUIDevice.Appearance.dark](./dark.md)
   The dark interface style.
 
 

@@ -1,7 +1,8 @@
 # MTLPipelineBufferDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The mutability options for a buffer that a render or compute pipeline uses.
 
@@ -19,46 +20,51 @@ The mutability options for a buffer that a render or compute pipeline uses.
 class MTLPipelineBufferDescriptor
 ```
 
+```objc
+@interface MTLPipelineBufferDescriptor : NSObject
+```
+
 #### Overview
 
 Metal can perform additional optimizations if you guarantee that neither the CPU nor the GPU modify a buffer’s contents before starting a pass. Use immutable buffers as much as possible to take advantage of Metal optimizations.
 
-To declare that a buffer is immutable, set the [`mutability`](mtlpipelinebufferdescriptor/mutability.md) property of their associated [`MTLPipelineBufferDescriptor`](mtlpipelinebufferdescriptor.md) object to [`MTLMutability.immutable`](mtlmutability/immutable.md).
+To declare that a buffer is immutable, set the [`mutability`](./mtlpipelinebufferdescriptor/mutability.md) property of their associated [`MTLPipelineBufferDescriptor`](./mtlpipelinebufferdescriptor.md) object to [`MTLMutability.immutable`](./mtlmutability/immutable.md).
 
 ## Topics
 
 ### Setting buffer mutability
-- [var mutability: MTLMutability](mtlpipelinebufferdescriptor/mutability.md)
+- [var mutability: MTLMutability](./mtlpipelinebufferdescriptor/mutability.md)
   A mutability option that determines whether you can update a buffer’s contents before related commands use the buffer.
-- [enum MTLMutability](mtlmutability.md)
+- [enum MTLMutability](./mtlmutability.md)
   The options that determine the mutability of a buffer’s contents.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+### Configuring a compute pipeline state
+- [class MTL4ComputePipelineDescriptor](./mtl4computepipelinedescriptor.md)
   Describes a compute pipeline state.
-- [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
+- [class MTLComputePipelineDescriptor](./mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
-- [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
+- [protocol MTLComputePipelineState](./mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
-- [class MTLStageInputOutputDescriptor](mtlstageinputoutputdescriptor.md)
+- [class MTLStageInputOutputDescriptor](./mtlstageinputoutputdescriptor.md)
   A description of the input and output data of a function.
-- [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
+- [class MTLPipelineBufferDescriptorArray](./mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
-- [struct MTLPipelineOption](mtlpipelineoption.md)
+- [struct MTLPipelineOption](./mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
 
 

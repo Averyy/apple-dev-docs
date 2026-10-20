@@ -1,7 +1,8 @@
 # rangeOfUser
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the character range of the user in the string returned by the string property.
 
@@ -28,19 +29,20 @@ If the component does not exist, nil is returned.
 
 ## See Also
 
-- [var rangeOfFragment: Range<String.Index>?](urlcomponents/rangeoffragment.md)
+### Locating components in the URL string representation
+- [var rangeOfFragment: Range<String.Index>?](./rangeoffragment.md)
   Returns the character range of the fragment in the string returned by the string property.
-- [var rangeOfHost: Range<String.Index>?](urlcomponents/rangeofhost.md)
+- [var rangeOfHost: Range<String.Index>?](./rangeofhost.md)
   Returns the character range of the host in the string returned by the string property.
-- [var rangeOfPassword: Range<String.Index>?](urlcomponents/rangeofpassword.md)
+- [var rangeOfPassword: Range<String.Index>?](./rangeofpassword.md)
   Returns the character range of the password in the string returned by the string property.
-- [var rangeOfPath: Range<String.Index>?](urlcomponents/rangeofpath.md)
+- [var rangeOfPath: Range<String.Index>?](./rangeofpath.md)
   Returns the character range of the path in the string returned by the string property.
-- [var rangeOfPort: Range<String.Index>?](urlcomponents/rangeofport.md)
+- [var rangeOfPort: Range<String.Index>?](./rangeofport.md)
   Returns the character range of the port in the string returned by the string property.
-- [var rangeOfQuery: Range<String.Index>?](urlcomponents/rangeofquery.md)
+- [var rangeOfQuery: Range<String.Index>?](./rangeofquery.md)
   Returns the character range of the query in the string returned by the string property.
-- [var rangeOfScheme: Range<String.Index>?](urlcomponents/rangeofscheme.md)
+- [var rangeOfScheme: Range<String.Index>?](./rangeofscheme.md)
   Returns the character range of the scheme in the string returned by the string property.
 
 

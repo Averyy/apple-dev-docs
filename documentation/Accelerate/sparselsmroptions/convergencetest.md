@@ -1,18 +1,19 @@
 # convergenceTest
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The convergence test to use for iterative solve methods.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,39 +21,44 @@ The convergence test to use for iterative solve methods.
 var convergenceTest: SparseLSMRConvergenceTest_t
 ```
 
+```c
+SparseLSMRConvergenceTest_t convergenceTest;
+```
+
 #### Discussion
 
-For [`SparseLSMRCTDefault`](sparselsmrctdefault.md), iterations stop when:
+For [`SparseLSMRCTDefault`](../sparselsmrctdefault.md), iterations stop when:
 
-- *‖ Aᵀ(b-Ax) ‖₂ < [`rtol`](sparselsmroptions/rtol.md) * ‖ Aᵀ(b-Ax_₀) ‖₂ + [`atol`](sparselsmroptions/atol.md)*
+- *‖ Aᵀ(b-Ax) ‖₂ < [`rtol`](./rtol.md) * ‖ Aᵀ(b-Ax_₀) ‖₂ + [`atol`](./atol.md)*
 
-For [`SparseLSMRCTFongSaunders`](sparselsmrctfongsaunders.md), iterations stop when any of the following occur:
+For [`SparseLSMRCTFongSaunders`](../sparselsmrctfongsaunders.md), iterations stop when any of the following occur:
 
-- *‖ b-Ax ‖₂ < [`btol`](sparselsmroptions/btol.md) * ‖ b ‖₂ + [`atol`](sparselsmroptions/atol.md) * ‖ A ‖₂ ‖ x ‖₂*    (*‖A‖₂* is an estimate)
-- *‖ Aᵀ (b-Ax) ‖₂ < [`atol`](sparselsmroptions/atol.md) * ‖ A ‖₂ * ‖ A-bx ‖₂*             (*‖A‖₂* is an estimate)
-- Estimated condition of *matrix >= [`conditionLimit`](sparselsmroptions/conditionlimit.md)*
+- *‖ b-Ax ‖₂ < [`btol`](./btol.md) * ‖ b ‖₂ + [`atol`](./atol.md) * ‖ A ‖₂ ‖ x ‖₂*    (*‖A‖₂* is an estimate)
+- *‖ Aᵀ (b-Ax) ‖₂ < [`atol`](./atol.md) * ‖ A ‖₂ * ‖ A-bx ‖₂*             (*‖A‖₂* is an estimate)
+- Estimated condition of *matrix >= [`conditionLimit`](./conditionlimit.md)*
 
 ## See Also
 
-- [var atol: Double](sparselsmroptions/atol.md)
+### Inspecting LSMR Options
+- [var atol: Double](./atol.md)
   The absolute tolerance (default test) or *A* tolerance (Fong-Saunders test).
-- [var btol: Double](sparselsmroptions/btol.md)
+- [var btol: Double](./btol.md)
   The *B* tolerance (Fong-Saunders test only).
-- [var conditionLimit: Double](sparselsmroptions/conditionlimit.md)
+- [var conditionLimit: Double](./conditionlimit.md)
   The condition number limit (Fong-Saunders test only).
-- [struct SparseLSMRConvergenceTest_t](sparselsmrconvergencetest_t.md)
+- [struct SparseLSMRConvergenceTest_t](../sparselsmrconvergencetest_t.md)
   Constants that specify the type of convergence test.
-- [var lambda: Double](sparselsmroptions/lambda.md)
+- [var lambda: Double](./lambda.md)
   The damping parameter lambda for regularized least squares.
-- [var maxIterations: Int32](sparselsmroptions/maxiterations.md)
+- [var maxIterations: Int32](./maxiterations.md)
   The maximum number of iterations.
-- [var nvec: Int32](sparselsmroptions/nvec.md)
+- [var nvec: Int32](./nvec.md)
   The number of vectors to use for local reorthogonalization.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./reporterror.md)
   An optional error-reporting routine.
-- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](sparselsmroptions/reportstatus.md)
+- [var reportStatus: ((UnsafePointer<CChar>) -> Void)?](./reportstatus.md)
   An optional status-reporting routine.
-- [var rtol: Double](sparselsmroptions/rtol.md)
+- [var rtol: Double](./rtol.md)
   The relative convergence tolerance (default test only).
 
 

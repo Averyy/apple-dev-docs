@@ -1,7 +1,8 @@
 # isAccelerometerRecordingAvailable()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether accelerometer recording is supported on the current device.
 
@@ -17,9 +18,13 @@ Returns a Boolean value indicating whether accelerometer recording is supported 
 class func isAccelerometerRecordingAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) isAccelerometerRecordingAvailable;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if accelerometer recording is available or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if accelerometer recording is available or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 
@@ -27,11 +32,12 @@ Call this method before trying to record or retrieve any accelerometer data usin
 
 ## See Also
 
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmsensorrecorder/authorizationstatus.md)
+### Checking the Availability of Sensor Recording
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns a value indicating whether the app is authorized to record sensor data.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
-- [class func isAuthorizedForRecording() -> Bool](cmsensorrecorder/isauthorizedforrecording.md)
+- [class func isAuthorizedForRecording() -> Bool](./isauthorizedforrecording%28%29.md)
   Returns a Boolean value indicating whether the app is authorized to record sensor data.
 
 

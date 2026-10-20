@@ -1,7 +1,8 @@
 # retransmitFinDrop(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure TCP to drop the connection after a FIN does not receive an ACK.
 

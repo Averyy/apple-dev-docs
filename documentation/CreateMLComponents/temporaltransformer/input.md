@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The input type.
@@ -23,15 +24,16 @@ associatedtype Input
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/applied(to:eventhandler:).md)
+### Applying and adapting
+- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](./applied%28to,eventhandler%29.md)
   Performs the transformation on an input sequence.
-- [func adaptedAsEstimator() -> TemporalTransformerToEstimatorAdaptor<Self>](temporaltransformer/adaptedasestimator.md)
+- [func adaptedAsEstimator() -> TemporalTransformerToEstimatorAdaptor<Self>](./adaptedasestimator%28%29.md)
   Exposes this temporal transformer as a trivial temporal estimator.
-- [func adaptedAsUpdatableEstimator() -> TemporalTransformerToUpdatableEstimatorAdaptor<Self>](temporaltransformer/adaptedasupdatableestimator.md)
+- [func adaptedAsUpdatableEstimator() -> TemporalTransformerToUpdatableEstimatorAdaptor<Self>](./adaptedasupdatableestimator%28%29.md)
   Exposes this temporal transformer as a trivial temporal estimator.
-- [associatedtype Output](temporaltransformer/output.md)
+- [associatedtype Output](./output.md)
   The output type.
-- [associatedtype OutputSequence : TemporalSequence](temporaltransformer/outputsequence.md)
+- [associatedtype OutputSequence : TemporalSequence](./outputsequence.md)
   The output async sequence type.
 
 

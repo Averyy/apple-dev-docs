@@ -1,7 +1,8 @@
 # position
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position
 
@@ -18,6 +19,10 @@ The position
 
 ```swift
 var position: Point3DFloat
+```
+
+```c
+SPPoint3DFloat position;
 ```
 
 

@@ -1,7 +1,8 @@
 # arrowOffset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance (measured in points) from the center of the view to the center line of the arrow.
 
@@ -9,12 +10,16 @@ The distance (measured in points) from the center of the view to the center line
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
 ```swift
 var arrowOffset: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CGFloat arrowOffset;
 ```
 
 #### Discussion
@@ -27,7 +32,8 @@ Offsets are always specified relative to the center of your view object. Adding 
 
 ## See Also
 
-- [var arrowDirection: UIPopoverArrowDirection](uipopoverbackgroundview/arrowdirection.md)
+### Accessing the arrow metrics
+- [var arrowDirection: UIPopoverArrowDirection](./arrowdirection.md)
   The direction in which the popover arrow is pointing.
 
 

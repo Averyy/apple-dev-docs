@@ -1,7 +1,8 @@
 # disableDialogs
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the testing environment disables dialogs during automated testing.
 
@@ -20,15 +21,20 @@ A Boolean value that determines whether the testing environment disables dialogs
 var disableDialogs: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL disableDialogs;
+```
+
 #### Discussion
 
 The default value is `false`. Set this value to `true` when you run automated tests and want to suppress interactive dialogs.
 
 ## See Also
 
-- [var storefront: String](sktestsession/storefront.md)
+### Configuring the test environment
+- [var storefront: String](./storefront.md)
   The three-letter code that represents the region associated with the App Store storefront.
-- [var locale: Locale](sktestsession/locale.md)
+- [var locale: Locale](./locale.md)
   The value that determines the localization metadata the test environment uses.
 
 

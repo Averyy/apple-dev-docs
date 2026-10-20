@@ -7,7 +7,8 @@ The title of the distribution package, as a String.
 
 ## See Also
 
-- [description](choice/1812191-description.md)
+### Accessing a Choice’s Metadata
+- [description](./api-1812191-description.md)
   The description of the distribution, as a String.
 
 

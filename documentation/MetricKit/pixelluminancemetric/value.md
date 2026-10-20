@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Average pixel luminance for the application with statistical data.
 

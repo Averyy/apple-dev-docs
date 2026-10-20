@@ -1,16 +1,17 @@
 # init(sequenceLength:featureChannelCount:batchSize:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tensor without data, with the sequence length, number of feature channels, and batch size you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,13 @@ Creates a tensor without data, with the sequence length, number of feature chann
 convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int)
 ```
 
+```objc
++ (instancetype) tensorWithSequenceLength:(NSUInteger) sequenceLength featureChannelCount:(NSUInteger) featureChannelCount batchSize:(NSUInteger) batchSize;
+```
+
 #### Discussion
 
-The tensor data type is [`MLCDataType.float32`](mlcdatatype/float32.md). This tensor is typically used by a recurrent layer.
+The tensor data type is [`MLCDataType.float32`](../mlcdatatype/float32.md). This tensor is typically used by a recurrent layer.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The tensor data type is [`MLCDataType.float32`](mlcdatatype/float32.md). This te
 
 ## See Also
 
-- [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData?)](mlctensor/init(sequencelength:featurechannelcount:batchsize:data:).md)
+### Creating Tensors by Specifying Sequence Lengths
+- [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, data: MLCTensorData?)](./init%28sequencelength,featurechannelcount,batchsize,data%29.md)
   Creates a tensor with the sequence length, number of feature channels, batch size, and data you specify.
-- [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, data: MLCTensorData?)](mlctensor/init(sequencelengths:sortedsequences:featurechannelcount:batchsize:data:).md)
+- [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, data: MLCTensorData?)](./init%28sequencelengths,sortedsequences,featurechannelcount,batchsize,data%29.md)
   Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and data you specify.
-- [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](mlctensor/init(sequencelength:featurechannelcount:batchsize:randominitializertype:).md)
+- [convenience init(sequenceLength: Int, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./init%28sequencelength,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sequence length, number of feature channels, batch size, and random initializer type you specify.
-- [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](mlctensor/init(sequencelengths:sortedsequences:featurechannelcount:batchsize:randominitializertype:).md)
+- [convenience init?(sequenceLengths: [Int], sortedSequences: Bool, featureChannelCount: Int, batchSize: Int, randomInitializerType: MLCRandomInitializerType)](./init%28sequencelengths,sortedsequences,featurechannelcount,batchsize,randominitializertype%29.md)
   Creates a tensor with the sequence lengths, sorting indicator, number of feature channels, batch size, and random initializer type you specify.
 
 

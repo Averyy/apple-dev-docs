@@ -1,7 +1,8 @@
 # middleName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Secondary name bestowed upon an individual to differentiate them from others that have the same given name.
 
@@ -26,17 +27,18 @@ An example of a middle name would be Anne.
 
 ## See Also
 
-- [var namePrefix: String?](personnamecomponents/nameprefix.md)
+### Accessing Person Name Components
+- [var namePrefix: String?](./nameprefix.md)
   The portion of a name’s full form of address that precedes the name itself.
-- [var givenName: String?](personnamecomponents/givenname.md)
+- [var givenName: String?](./givenname.md)
   Name bestowed upon an individual to differentiate them from other members of a group that share a family name.
-- [var familyName: String?](personnamecomponents/familyname.md)
+- [var familyName: String?](./familyname.md)
   Name bestowed upon an individual to denote membership in a group or family.
-- [var nameSuffix: String?](personnamecomponents/namesuffix.md)
+- [var nameSuffix: String?](./namesuffix.md)
   The portion of a name’s full form of address that follows the name itself.
-- [var nickname: String?](personnamecomponents/nickname.md)
+- [var nickname: String?](./nickname.md)
   Name substituted for the purposes of familiarity.
-- [var phoneticRepresentation: PersonNameComponents?](personnamecomponents/phoneticrepresentation.md)
+- [var phoneticRepresentation: PersonNameComponents?](./phoneticrepresentation.md)
   The phonetic representation name components of the receiver.
 
 

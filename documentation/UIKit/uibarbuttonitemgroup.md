@@ -1,7 +1,8 @@
 # UIBarButtonItemGroup
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
 
@@ -19,85 +20,90 @@ A group of one or more bar button items for placement on a navigation bar or sho
 class UIBarButtonItemGroup
 ```
 
+```objc
+@interface UIBarButtonItemGroup : NSObject
+```
+
 #### Overview
 
 A group contains one or more bar button items and an optional representative item that’s displayed instead of the individual items under space constraints. You can create any number of groups and configure each group with any number of items.
 
 When creating a group with more than one bar button item, it’s recommended that you also provide a representative item to display. The representative item must be a completely separate bar button item; it must not be one of the items already in the group. UIKit displays the representative item when there isn’t enough room to display all of the group’s items in the bar. Taps in the representative item call that item’s action method. When you don’t specify an action method, UIKit automatically displays the items in the group using a standard interface. To present your own interface, provide a custom action method and use it to display the interface you want.
 
-##### Support the Shortcuts Bar
+##### Support the shortcuts bar
 
-After configuring a group, assign it to the [`UITextInputAssistantItem`](uitextinputassistantitem.md) object associated with one of your app’s responder objects. Your custom items are displayed only in conjunction with the system keyboard. When the keyboard is displayed, UIKit retrieves your custom groups from the text input assistant item and adds the corresponding items to the shortcuts bar. You may specify more than one group before and after the typing suggestions. UIKit tries to display as many items as possible on the shortcuts bar, falling back to the groups’ representative items as needed.
+After configuring a group, assign it to the [`UITextInputAssistantItem`](./uitextinputassistantitem.md) object associated with one of your app’s responder objects. Your custom items are displayed only in conjunction with the system keyboard. When the keyboard is displayed, UIKit retrieves your custom groups from the text input assistant item and adds the corresponding items to the shortcuts bar. You may specify more than one group before and after the typing suggestions. UIKit tries to display as many items as possible on the shortcuts bar, falling back to the groups’ representative items as needed.
 
 ## Topics
 
 ### Creating a group
-- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/fixedgroup(representativeitem:items:).md)
+- [class func fixedGroup(representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./uibarbuttonitemgroup/fixedgroup%28representativeitem,items%29.md)
   Creates a fixed group that a person can’t move or remove from the navigation bar during layout customization.
-- [class func movableGroup(customizationIdentifier: String, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/movablegroup(customizationidentifier:representativeitem:items:).md)
+- [class func movableGroup(customizationIdentifier: String, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./uibarbuttonitemgroup/movablegroup%28customizationidentifier,representativeitem,items%29.md)
   Creates a movable group that a person can move but can’t remove from the navigation bar during layout customization.
-- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](uibarbuttonitemgroup/optionalgroup(customizationidentifier:isindefaultcustomization:representativeitem:items:).md)
+- [class func optionalGroup(customizationIdentifier: String, isInDefaultCustomization: Bool, representativeItem: UIBarButtonItem?, items: [UIBarButtonItem]) -> UIBarButtonItemGroup](./uibarbuttonitemgroup/optionalgroup%28customizationidentifier,isindefaultcustomization,representativeitem,items%29.md)
   Creates an optional group that a person can move, add to, or remove from the navigation bar during layout customization.
-- [init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)](uibarbuttonitemgroup/init(barbuttonitems:representativeitem:).md)
+- [init(barButtonItems: [UIBarButtonItem], representativeItem: UIBarButtonItem?)](./uibarbuttonitemgroup/init%28barbuttonitems,representativeitem%29.md)
   Creates a fixed group with the specified items.
-- [init?(coder: NSCoder)](uibarbuttonitemgroup/init(coder:).md)
+- [init?(coder: NSCoder)](./uibarbuttonitemgroup/init%28coder%29.md)
   Creates a bar button item group from data in an unarchiver.
 ### Configuring the group
-- [var barButtonItems: [UIBarButtonItem]](uibarbuttonitemgroup/barbuttonitems.md)
+- [var barButtonItems: [UIBarButtonItem]](./uibarbuttonitemgroup/barbuttonitems.md)
   The bar button items to display on the bar.
-- [var representativeItem: UIBarButtonItem?](uibarbuttonitemgroup/representativeitem.md)
+- [var representativeItem: UIBarButtonItem?](./uibarbuttonitemgroup/representativeitem.md)
   The item to display for a group when space is constrained.
-- [var alwaysAvailable: Bool](uibarbuttonitemgroup/alwaysavailable.md)
+- [var alwaysAvailable: Bool](./uibarbuttonitemgroup/alwaysavailable.md)
   A Boolean value that determines whether the group is always available through the UI.
 ### Determining the group’s appearance
-- [var isDisplayingRepresentativeItem: Bool](uibarbuttonitemgroup/isdisplayingrepresentativeitem.md)
+- [var isDisplayingRepresentativeItem: Bool](./uibarbuttonitemgroup/isdisplayingrepresentativeitem.md)
   A Boolean value indicating whether the representative item is showing in place of the group’s items.
-- [var isHidden: Bool](uibarbuttonitemgroup/ishidden.md)
+- [var isHidden: Bool](./uibarbuttonitemgroup/ishidden.md)
   A Boolean that determines the visibility of the group.
 ### Representing the group in a menu
-- [var menuRepresentation: UIMenuElement?](uibarbuttonitemgroup/menurepresentation.md)
+- [var menuRepresentation: UIMenuElement?](./uibarbuttonitemgroup/menurepresentation.md)
   A menu element that represents the group when it appears in a menu.
 ### Type Methods
-- [class func fixedSpace() -> UIBarButtonItemGroup](uibarbuttonitemgroup/fixedspace.md)
+- [class func fixedSpace() -> UIBarButtonItemGroup](./uibarbuttonitemgroup/fixedspace%28%29.md)
   Returns a new group that contains a single zero-width fixed space item inside it.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIBarItem](uibaritem.md)
+### Bars
+- [class UIBarItem](./uibaritem.md)
   An abstract superclass for items that you can add to a bar that appears at the bottom of the screen.
-- [class UIBarButtonItem](uibarbuttonitem.md)
+- [class UIBarButtonItem](./uibarbuttonitem.md)
   A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
-- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
-- [class UINavigationBar](uinavigationbar.md)
+- [struct UIBarButtonItemVisibilityPriority](./uibarbuttonitemvisibilitypriority.md)
+- [class UINavigationBar](./uinavigationbar.md)
   A region that displays the title and controls provided by navigation items.
-- [class UISearchBar](uisearchbar.md)
+- [class UISearchBar](./uisearchbar.md)
   A specialized view for receiving search-related information from the user.
-- [class UIToolbar](uitoolbar.md)
+- [class UIToolbar](./uitoolbar.md)
   A control that displays one or more buttons along an edge of your interface.
-- [class UITabBar](uitabbar.md)
+- [class UITabBar](./uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
-- [class UITabBarItem](uitabbaritem.md)
+- [class UITabBarItem](./uitabbaritem.md)
   An object that describes an item in a tab bar.
-- [protocol UIBarPositioning](uibarpositioning.md)
+- [protocol UIBarPositioning](./uibarpositioning.md)
   A set of methods for defining the positioning of bars in iOS apps.
-- [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
-  A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
-- [struct UIBarMinimization](uibarminimization-swift.struct.md)
-- [enum UIVerticalBarEdge](uiverticalbaredge.md)
+- [protocol UIBarPositioningDelegate](./uibarpositioningdelegate.md)
+  A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](./uibarpositioning.md) protocol.
+- [struct UIBarMinimization](./uibarminimization-swift.struct.md)
+- [enum UIVerticalBarEdge](./uiverticalbaredge.md)
   The edge where the system places the vertical bar.
 
 

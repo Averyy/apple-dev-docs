@@ -1,7 +1,8 @@
 # gpsString
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The GPS String of the file in standard format.
 
@@ -16,6 +17,10 @@ The GPS String of the file in standard format.
 
 ```swift
 var gpsString: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * gpsString;
 ```
 
 

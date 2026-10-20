@@ -1,7 +1,8 @@
 # errSecKeyIsSensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key must be wrapped to be exported.
 
@@ -18,6 +19,10 @@ The key must be wrapped to be exported.
 
 ```swift
 var errSecKeyIsSensitive: OSStatus { get }
+```
+
+```c
+errSecKeyIsSensitive
 ```
 
 

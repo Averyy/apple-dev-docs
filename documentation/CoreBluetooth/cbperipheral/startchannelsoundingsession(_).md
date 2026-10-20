@@ -1,7 +1,8 @@
 # startChannelSoundingSession(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func startChannelSoundingSession(_ configuration: CBChannelSoundingSessionConfiguration)
+```
+
+```objc
+- (void) startChannelSoundingSession:(CBChannelSoundingSessionConfiguration *) configuration;
 ```
 
 #### Discussion

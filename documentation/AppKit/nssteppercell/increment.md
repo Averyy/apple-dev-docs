@@ -1,17 +1,22 @@
 # increment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which the receiver will change per increment or decrement.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var increment: Double { get set }
+```
+
+```objc
+@property double increment;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The default is 1.
 
 ## See Also
 
-- [var maxValue: Double](nssteppercell/maxvalue.md)
+### Specifying value range
+- [var maxValue: Double](./maxvalue.md)
   The maximum value for the receiver.
-- [var minValue: Double](nssteppercell/minvalue.md)
+- [var minValue: Double](./minvalue.md)
   The minimum value for the receiver.
 
 

@@ -1,7 +1,8 @@
 # occluded(by:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The entity receives a depth-based occlusion treatment within the specified environment type.
 

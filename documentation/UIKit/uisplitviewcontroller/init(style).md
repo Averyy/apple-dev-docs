@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a split view controller with the specified column style.
 
@@ -18,15 +19,20 @@ Creates a split view controller with the specified column style.
 init(style: UISplitViewController.Style)
 ```
 
+```objc
+- (instancetype) initWithStyle:(UISplitViewControllerStyle) style;
+```
+
 ## Parameters
 
-- `style`: The split view controller’s style, which describes how many columns the split view controller displays. You can pass in any of the [`UISplitViewController.Style`](uisplitviewcontroller/style-swift.enum.md) values except [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md).
+- `style`: The split view controller’s style, which describes how many columns the split view controller displays. You can pass in any of the [`UISplitViewController.Style`](./style-swift.enum.md) values except [`UISplitViewController.Style.unspecified`](./style-swift.enum/unspecified.md).
 
 ## See Also
 
-- [init(nibName: String?, bundle: Bundle?)](uisplitviewcontroller/init(nibname:bundle:).md)
+### Creating a split view controller
+- [init(nibName: String?, bundle: Bundle?)](./init%28nibname,bundle%29.md)
   Creates a split view controller with the nib file in the specified bundle.
-- [init?(coder: NSCoder)](uisplitviewcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a split view controller from data in an unarchiver.
 
 

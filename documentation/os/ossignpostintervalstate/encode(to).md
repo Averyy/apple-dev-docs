@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the interval state into the provided encoder.
 
@@ -11,7 +12,7 @@ Encodes the interval state into the provided encoder.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 #### Discussion
 
-> ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to encode the interval state, which must adopt the [`Encoder`](https://developer.apple.com/documentation/swift/encoder) protocol, calls it on your behalf as part of the serialization process.
+> ❗ **Important**:  You don’t call this method directly. Instead, the object you’re using to encode the interval state, which must adopt the [`Encoder`](../../Swift/encoder.md) protocol, calls it on your behalf as part of the serialization process.
 
 The method throws an error if the interval state is invalid for the specified encoder’s format.
 

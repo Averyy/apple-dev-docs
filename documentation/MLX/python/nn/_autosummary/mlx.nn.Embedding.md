@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.E
 
 # mlx.nn.Embedding
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Embedding.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Embedding
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Embedding
-
 **class Embedding(*num_embeddings: int*, *dims: int*)**
 : Implements a simple lookup table that maps each input integer to a
 high-dimensional vector.
@@ -50,6 +23,4 @@ Methods
 Call the embedding layer as a linear layer.
 
 `to_quantized`([group_size, bits, mode, ...])
-Return a [QuantizedEmbedding](mlx.nn.QuantizedEmbedding.html#mlx.nn.QuantizedEmbedding) layer that approximates this embedding layer.
-
-** Contents
+Return a [QuantizedEmbedding](mlx.nn.QuantizedEmbedding.md#mlx.nn.QuantizedEmbedding) layer that approximates this embedding layer.

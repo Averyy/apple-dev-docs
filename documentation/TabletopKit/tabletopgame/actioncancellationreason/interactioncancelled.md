@@ -1,7 +1,8 @@
 # TabletopGame.ActionCancellationReason.interactionCancelled
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The action was cancelled back because the interaction that generated it got cancelled
 
@@ -16,7 +17,8 @@ case interactionCancelled
 
 ## See Also
 
-- [TabletopGame.ActionCancellationReason.actionInvalidated](tabletopgame/actioncancellationreason/actioninvalidated.md)
+### Cancellation reasons
+- [TabletopGame.ActionCancellationReason.actionInvalidated](./actioninvalidated.md)
   The action became invalid due to other cancelled actions
 
 

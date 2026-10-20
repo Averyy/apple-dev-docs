@@ -1,7 +1,8 @@
 # animationState
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation state for the action.
 
@@ -23,7 +24,7 @@ var animationState: (any AnimationStateProtocol)? { get }
 
 Used to procedurally animate a target value with cross-fading, and additive blending support.
 
-The animation state is available when a bind target along with its type is defined for the action. (See [`AnimationStateProtocol`](animationstateprotocol.md))
+The animation state is available when a bind target along with its type is defined for the action. (See [`AnimationStateProtocol`](../animationstateprotocol.md))
 
 The following example returns an animated value to the animation system for the current frame by storing its value within the returned animation state.
 

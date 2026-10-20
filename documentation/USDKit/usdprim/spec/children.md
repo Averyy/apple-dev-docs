@@ -1,7 +1,8 @@
 # children
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The child prim specs in authoring order.
 

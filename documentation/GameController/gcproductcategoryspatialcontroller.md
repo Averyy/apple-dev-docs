@@ -1,7 +1,8 @@
 # GCProductCategorySpatialController
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The category for game controller products that support 6DoF tracking on visionOS.
 
@@ -19,9 +20,14 @@ The category for game controller products that support 6DoF tracking on visionOS
 let GCProductCategorySpatialController: String
 ```
 
+```c
+extern NSString * const GCProductCategorySpatialController;
+```
+
 ## See Also
 
-- [let GCProductCategorySpatialStylus: String](gcproductcategoryspatialstylus.md)
+### Spatial categoriess
+- [let GCProductCategorySpatialStylus: String](./gcproductcategoryspatialstylus.md)
   The category for stylus products that support 6DoF tracking on visionOS.
 
 

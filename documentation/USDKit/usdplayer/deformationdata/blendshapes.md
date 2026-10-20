@@ -1,7 +1,8 @@
 # blendShapes
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Blend shape deformation data.
 

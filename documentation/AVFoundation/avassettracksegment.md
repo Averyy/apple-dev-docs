@@ -1,7 +1,8 @@
 # AVAssetTrackSegment
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a time range segment of an asset track.
 
@@ -20,39 +21,44 @@ An object that represents a time range segment of an asset track.
 class AVAssetTrackSegment
 ```
 
+```objc
+@interface AVAssetTrackSegment : NSObject
+```
+
 ## Topics
 
 ### Retrieving segment information
-- [var timeMapping: CMTimeMapping](avassettracksegment/timemapping.md)
+- [var timeMapping: CMTimeMapping](./avassettracksegment/timemapping.md)
   The time range of the track that this segment presents.
-- [var isEmpty: Bool](avassettracksegment/isempty.md)
+- [var isEmpty: Bool](./avassettracksegment/isempty.md)
   A Boolean value that indicates whether the segment is empty.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVCompositionTrackSegment](avcompositiontracksegment.md)
+- [AVCompositionTrackSegment](./avcompositiontracksegment.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAsset](avasset.md)
+### Assets
+- [class AVAsset](./avasset.md)
   An object that models timed audiovisual media.
-- [class AVURLAsset](avurlasset.md)
+- [class AVURLAsset](./avurlasset.md)
   An asset that represents media at a local or remote URL.
-- [class AVAssetTrack](avassettrack.md)
+- [class AVAssetTrack](./avassettrack.md)
   An object that models a track of media that an asset contains.
-- [class AVAssetTrackGroup](avassettrackgroup.md)
+- [class AVAssetTrackGroup](./avassettrackgroup.md)
   A group of related tracks in an asset.
 
 

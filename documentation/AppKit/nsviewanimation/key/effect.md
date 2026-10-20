@@ -1,17 +1,22 @@
 # effect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An effect to apply to the animation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static let effect: NSViewAnimation.Key
+```
+
+```c
+extern NSViewAnimationKey NSViewAnimationEffectKey;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Takes a string constant specifying fade-in or fade-out effects for the target: `
 
 ## See Also
 
-- [static let endFrame: NSViewAnimation.Key](nsviewanimation/key/endframe.md)
+### Keys
+- [static let endFrame: NSViewAnimation.Key](./endframe.md)
   The size and location of the window or view at the end of the animation.
-- [static let startFrame: NSViewAnimation.Key](nsviewanimation/key/startframe.md)
+- [static let startFrame: NSViewAnimation.Key](./startframe.md)
   The size and location of the window or view at the start of the animation.
-- [static let target: NSViewAnimation.Key](nsviewanimation/key/target.md)
+- [static let target: NSViewAnimation.Key](./target.md)
   The target of the animation.
 
 

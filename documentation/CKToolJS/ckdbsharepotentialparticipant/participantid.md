@@ -1,7 +1,8 @@
 # participantId
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the potential participant.
 
@@ -10,7 +11,7 @@ The unique identifier for the potential participant.
 
 ## Declaration
 
-```swift
+```
 attribute string? participantId;
 ```
 

@@ -1,14 +1,15 @@
 # strategy_fcn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef void (struct buf *) strategy_fcn_t;
 ```
 

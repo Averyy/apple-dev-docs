@@ -1,7 +1,8 @@
 # drawPDFPage(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the content of a PDF page into the current graphics context.
 
@@ -10,7 +11,7 @@ Draws the content of a PDF page into the current graphics context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Draws the content of a PDF page into the current graphics context.
 func drawPDFPage(_ page: CGPDFPage)
 ```
 
+```c
+extern void CGContextDrawPDFPage(CGContextRef c, CGPDFPageRef page);
+```
+
 #### Discussion
 
-This function works in conjunction with the [`CGPDFPage`](cgpdfpage.md) type to draw individual PDF pages into a context.
+This function works in conjunction with the [`CGPDFPage`](../cgpdfpage.md) type to draw individual PDF pages into a context.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ This function works in conjunction with the [`CGPDFPage`](cgpdfpage.md) type to 
 
 ## See Also
 
-- [func draw(CGImage, in: CGRect, byTiling: Bool)](cgcontext/draw(_:in:bytiling:).md)
+### Drawing Images and PDF Content
+- [func draw(CGImage, in: CGRect, byTiling: Bool)](./draw%28_,in,bytiling%29.md)
   Draws an image in the specified area.
-- [var interpolationQuality: CGInterpolationQuality](cgcontext/interpolationquality.md)
+- [var interpolationQuality: CGInterpolationQuality](./interpolationquality.md)
   Returns the current level of interpolation quality for a graphics context.
-- [enum CGInterpolationQuality](cginterpolationquality.md)
+- [enum CGInterpolationQuality](../cginterpolationquality.md)
   Levels of interpolation quality for rendering an image.
 
 

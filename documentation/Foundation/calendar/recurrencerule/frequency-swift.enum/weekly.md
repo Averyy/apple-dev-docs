@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Frequency.weekly
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

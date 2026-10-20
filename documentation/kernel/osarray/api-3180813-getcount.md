@@ -1,7 +1,8 @@
 # getCount
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns count of members in array.
 
@@ -11,19 +12,28 @@ Returns count of members in array.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual uint32_t getCount(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int getCount(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Count of members in array.
 
 ## See Also
 
-- [- getCapacity](osarray/3180812-getcapacity.md)
+### Inspecting an Array
+- [- getCapacity](./api-3180812-getcapacity.md)
   Returns count of currently allocated capacity for members in array.
-- [- ensureCapacity](osarray/3180809-ensurecapacity.md)
+- [- ensureCapacity](./api-3180809-ensurecapacity.md)
   Allocates capacity for members in array.
 
 

@@ -1,7 +1,8 @@
 # NSTouchBarItem.Priority
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Priorities for the visibility of a Touch Bar item.
 
@@ -17,43 +18,48 @@ Priorities for the visibility of a Touch Bar item.
 struct Priority
 ```
 
+```c
+typedef float NSTouchBarItemPriority;
+```
+
 #### Discussion
 
-Use these constants to set the [`visibilityPriority`](nstouchbaritem/visibilitypriority.md) property of an [`NSTouchBarItem`](nstouchbaritem.md) instance. The Touch Bar hides items of lower priority when there isn’t enough space to show all items.
+Use these constants to set the [`visibilityPriority`](./visibilitypriority.md) property of an [`NSTouchBarItem`](../nstouchbaritem.md) instance. The Touch Bar hides items of lower priority when there isn’t enough space to show all items.
 
 ## Topics
 
 ### Priorities
-- [static var low: NSTouchBarItem.Priority](nstouchbaritem/priority/low.md)
+- [static var low: NSTouchBarItem.Priority](./priority/low.md)
   A constant indicating a low visibility priority.
-- [static var normal: NSTouchBarItem.Priority](nstouchbaritem/priority/normal.md)
+- [static var normal: NSTouchBarItem.Priority](./priority/normal.md)
   A constant indicating a normal visibility priority.
-- [static var high: NSTouchBarItem.Priority](nstouchbaritem/priority/high.md)
+- [static var high: NSTouchBarItem.Priority](./priority/high.md)
   A constant indicating a high visibility priority.
 ### Initializers
-- [init(Float)](nstouchbaritem/priority/init(_:).md)
+- [init(Float)](./priority/init%28_%29.md)
   Creates a new priority structure from the given value.
-- [init(rawValue: Float)](nstouchbaritem/priority/init(rawvalue:).md)
+- [init(rawValue: Float)](./priority/init%28rawvalue%29.md)
   Creates a new priority structure from the given raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var visibilityPriority: NSTouchBarItem.Priority](nstouchbaritem/visibilitypriority.md)
+### Managing item visibility
+- [var visibilityPriority: NSTouchBarItem.Priority](./visibilitypriority.md)
   Determines which items are shown in a bar when space is limited.
-- [var isVisible: Bool](nstouchbaritem/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that reflects whether or not the item is visible.
 
 

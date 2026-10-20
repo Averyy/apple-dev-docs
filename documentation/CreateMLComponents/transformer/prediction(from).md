@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction from a single input.
 
@@ -20,6 +21,12 @@ Performs a prediction from a single input.
 func prediction<Label>(from input: Self.Input) async throws -> ClassificationDistribution<Label> where Label : Hashable, Self.Output == ClassificationDistribution<Label>
 ```
 
+**Other overloads**:
+
+```swift
+func prediction<S, Label>(from input: S) async throws -> [ClassificationDistribution<Label>] where S : Sequence, Label : Hashable, Self.Input == S.Element, Self.Output == ClassificationDistribution<Label>
+```
+
 #### Return Value
 
 A classification array.
@@ -30,9 +37,10 @@ A classification array.
 
 ## See Also
 
-- [func callAsFunction(_:eventHandler:)](transformer/callasfunction(_:eventhandler:).md)
+### Transforming and predicting
+- [func callAsFunction(_:eventHandler:)](./callasfunction%28_,eventhandler%29.md)
   Performs the transformation on a single input.
-- [func prediction<S, Annotation>(from: S, eventHandler: EventHandler?) async throws -> [AnnotatedPrediction<Self.Output, Annotation>]](transformer/prediction(from:eventhandler:).md)
+- [func prediction<S, Annotation>(from: S, eventHandler: EventHandler?) async throws -> [AnnotatedPrediction<Self.Output, Annotation>]](./prediction%28from,eventhandler%29.md)
   Performs a prediction on a sequence of annotated inputs.
 
 

@@ -1,7 +1,8 @@
 # DockKitError.notConnected
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory isn’t connected to a device.
 
@@ -19,11 +20,12 @@ case notConnected
 
 ## See Also
 
-- [DockKitError.invalidParameter](dockkiterror/invalidparameter.md)
+### Getting errors
+- [DockKitError.invalidParameter](./invalidparameter.md)
   The supplied parameter is invalid.
-- [DockKitError.notSupported](dockkiterror/notsupported.md)
+- [DockKitError.notSupported](./notsupported.md)
   The method isn’t supported on a specific platform.
-- [DockKitError.notSupportedByDevice](dockkiterror/notsupportedbydevice.md)
+- [DockKitError.notSupportedByDevice](./notsupportedbydevice.md)
   The device doesn’t support the requested operation.
 
 

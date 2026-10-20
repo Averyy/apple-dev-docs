@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the final element in the classification distribution.
 
@@ -22,11 +23,12 @@ var endIndex: Int { get }
 
 ## See Also
 
-- [var labelsSortedByProbability: [Label]](classificationdistribution/labelssortedbyprobability.md)
+### Getting the properties
+- [var labelsSortedByProbability: [Label]](./labelssortedbyprobability.md)
   The labels sorted  by decreasing probability.
-- [var mostLikelyLabel: Label?](classificationdistribution/mostlikelylabel.md)
+- [var mostLikelyLabel: Label?](./mostlikelylabel.md)
   The label with the highest probability.
-- [var startIndex: Int](classificationdistribution/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The index of the initial element in the classification distribution.
 
 

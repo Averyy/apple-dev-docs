@@ -1,7 +1,8 @@
 # missingCount
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of missing elements in the column slice.
 
@@ -22,13 +23,14 @@ var missingCount: Int { get }
 
 ## See Also
 
-- [var name: String](anycolumnslice/name.md)
+### Inspecting a Type-Erased Column Slice
+- [var name: String](./name.md)
   The name of the slice’s parent column.
-- [var count: Int](anycolumnslice/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column slice.
-- [var wrappedElementType: any Any.Type](anycolumnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func isNil(at: Int) -> Bool](anycolumnslice/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at the index is missing.
 
 

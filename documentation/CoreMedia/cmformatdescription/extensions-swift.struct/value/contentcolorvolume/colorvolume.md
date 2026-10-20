@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.ContentColorVolume.ColorVolume
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -22,21 +23,21 @@ struct ColorVolume
 ## Topics
 
 ### Initializers
-- [init(green: Int32, blue: Int32, red: Int32)](cmformatdescription/extensions-swift.struct/value/contentcolorvolume/colorvolume/init(green:blue:red:).md)
+- [init(green: Int32, blue: Int32, red: Int32)](./colorvolume/init%28green,blue,red%29.md)
 ### Instance Properties
-- [var blue: Int32](cmformatdescription/extensions-swift.struct/value/contentcolorvolume/colorvolume/blue.md)
-- [var green: Int32](cmformatdescription/extensions-swift.struct/value/contentcolorvolume/colorvolume/green.md)
-- [var red: Int32](cmformatdescription/extensions-swift.struct/value/contentcolorvolume/colorvolume/red.md)
+- [var blue: Int32](./colorvolume/blue.md)
+- [var green: Int32](./colorvolume/green.md)
+- [var red: Int32](./colorvolume/red.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../../../Swift/copyable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

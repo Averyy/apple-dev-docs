@@ -1,7 +1,8 @@
 # PredicateExpressions.PredicateRegex
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,19 +22,19 @@ struct PredicateRegex
 ## Topics
 
 ### Initializers
-- [init?(some RegexComponent)](predicateexpressions/predicateregex/init(_:).md)
+- [init?(some RegexComponent)](./predicateregex/init%28_%29.md)
 ### Instance Properties
-- [let stringRepresentation: String](predicateexpressions/predicateregex/stringrepresentation.md)
+- [let stringRepresentation: String](./predicateregex/stringrepresentation.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

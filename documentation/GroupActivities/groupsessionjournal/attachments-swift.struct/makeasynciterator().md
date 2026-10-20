@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -25,9 +26,10 @@ func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator
 
 ## See Also
 
-- [GroupSessionJournal.Attachments.Iterator](groupsessionjournal/attachments-swift.struct/iterator.md)
+### Creating an iterator
+- [GroupSessionJournal.Attachments.Iterator](./iterator.md)
   The asynchronous iterator that produces a sequence of attachments.
-- [GroupSessionJournal.Attachments.Element](groupsessionjournal/attachments-swift.struct/element.md)
+- [GroupSessionJournal.Attachments.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

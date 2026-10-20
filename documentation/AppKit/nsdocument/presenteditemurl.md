@@ -1,7 +1,8 @@
 # presentedItemURL
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
@@ -13,10 +14,15 @@ nonisolated
 var presentedItemURL: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * presentedItemURL;
+```
+
 ## See Also
 
-- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](nsdocument/observedpresenteditemubiquityattributes.md)
-- [var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]?](nsdocument/previewrepresentableactivityitems.md)
+### Instance Properties
+- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](./observedpresenteditemubiquityattributes.md)
+- [var previewRepresentableActivityItems: [any NSPreviewRepresentableActivityItem]?](./previewrepresentableactivityitems.md)
 
 
 ---

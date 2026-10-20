@@ -1,7 +1,8 @@
 # kvImageNoInterpolation
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Nearest neighbor interpolation.
 
@@ -10,7 +11,7 @@ Nearest neighbor interpolation.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ Nearest neighbor interpolation.
 var kvImageNoInterpolation: vImage_InterpolationMethod { get }
 ```
 
+```c
+kvImageNoInterpolation
+```
+
 ## See Also
 
-- [var kvImageHalfInterpolation: vImage_InterpolationMethod](kvimagehalfinterpolation.md)
+### Interpolation method constants
+- [var kvImageHalfInterpolation: vImage_InterpolationMethod](./kvimagehalfinterpolation.md)
   Partial linear interpolation.
-- [var kvImageFullInterpolation: vImage_InterpolationMethod](kvimagefullinterpolation.md)
+- [var kvImageFullInterpolation: vImage_InterpolationMethod](./kvimagefullinterpolation.md)
   Full linear interpolation.
 
 

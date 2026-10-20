@@ -1,7 +1,8 @@
 # init(perEntityData:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the resource with the given entity descriptors, but does not specify any atlas textures. Skips validation of atlas texture indices and slices within bake descriptors. This is helpful for providing a SurfaceExtractor with information about how entities are laid out in the lightmap without needing to provide any texture data along with it.
 

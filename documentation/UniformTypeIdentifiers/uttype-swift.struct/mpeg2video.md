@@ -1,7 +1,8 @@
 # mpeg2Video
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents an MPEG-2 video.
 
@@ -24,25 +25,26 @@ static var mpeg2Video: UTType { get }
 
 The identifier for this type is `public.mpeg-2-video`.
 
-This type conforms to [`UTTypeVideo`](uttypevideo.md).
+This type conforms to [`UTTypeVideo`](../uttypevideo.md).
 
 ## See Also
 
-- [static var quickTimeMovie: UTType](uttype-swift.struct/quicktimemovie.md)
+### Audio and video
+- [static var quickTimeMovie: UTType](./quicktimemovie.md)
   A type that represents a QuickTime movie.
-- [static var mpeg: UTType](uttype-swift.struct/mpeg.md)
+- [static var mpeg: UTType](./mpeg.md)
   A type that represents an MPEG-1 or MPEG-2 movie.
-- [static var mpeg2TransportStream: UTType](uttype-swift.struct/mpeg2transportstream.md)
+- [static var mpeg2TransportStream: UTType](./mpeg2transportstream.md)
   A type that represents data in MPEG-2 transport stream movie format.
-- [static var mpeg4Movie: UTType](uttype-swift.struct/mpeg4movie.md)
+- [static var mpeg4Movie: UTType](./mpeg4movie.md)
   A type that represents an MPEG-4 movie.
-- [static var mpeg4Audio: UTType](uttype-swift.struct/mpeg4audio.md)
+- [static var mpeg4Audio: UTType](./mpeg4audio.md)
   A type that represents an MPEG-4 audio layer file.
-- [static var appleProtectedMPEG4Video: UTType](uttype-swift.struct/appleprotectedmpeg4video.md)
+- [static var appleProtectedMPEG4Video: UTType](./appleprotectedmpeg4video.md)
   A type that represents data in Apple-protected MPEG-4 format.
-- [static var appleProtectedMPEG4Audio: UTType](uttype-swift.struct/appleprotectedmpeg4audio.md)
+- [static var appleProtectedMPEG4Audio: UTType](./appleprotectedmpeg4audio.md)
   A type that represents data in Apple-protected MPEG-4 format.
-- [static var avi: UTType](uttype-swift.struct/avi.md)
+- [static var avi: UTType](./avi.md)
   A type that represents data in AVI movie format.
 
 

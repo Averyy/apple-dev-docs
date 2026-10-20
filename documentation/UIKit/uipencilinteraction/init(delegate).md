@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interaction with the specified delegate.
 
@@ -15,6 +16,10 @@ Creates an interaction with the specified delegate.
 
 ```swift
 init(delegate: any UIPencilInteractionDelegate)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<UIPencilInteractionDelegate>) delegate;
 ```
 
 

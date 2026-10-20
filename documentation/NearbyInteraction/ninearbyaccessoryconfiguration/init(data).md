@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for interaction between iPhone and third-party accessories.
 
@@ -17,17 +18,22 @@ Creates a configuration for interaction between iPhone and third-party accessori
 init(data: Data) throws
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 ## Parameters
 
-- `data`: The accessory’s configuration data formatted to the [`Ultra Wideband (UWB) third-party device specification`](https://developer.apple.comhttps://developer.apple.com/nearby-interaction).
+- `data`: The accessory’s configuration data formatted to the [Ultra Wideband (UWB) third-party device specification](https://developer.apple.com/nearby-interaction).
 
 ## See Also
 
-- [init(accessoryData: Data, bluetoothPeerIdentifier: UUID) throws](ninearbyaccessoryconfiguration/init(accessorydata:bluetoothpeeridentifier:).md)
+### Creating a configuration for UWB accessories
+- [init(accessoryData: Data, bluetoothPeerIdentifier: UUID) throws](./init%28accessorydata,bluetoothpeeridentifier%29.md)
   Creates a configuration for an accessory with the given Bluetooth peer identifier.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a constraints invalidation structure.
 
@@ -10,7 +11,7 @@ Creates a constraints invalidation structure.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -21,7 +22,8 @@ init()
 
 ## See Also
 
-- [var constraints: [NSLayoutConstraint]](uiview/constraints.md)
+### Creating the invalidation structure
+- [var constraints: [NSLayoutConstraint]](../../constraints.md)
   The constraints held by the view.
 
 

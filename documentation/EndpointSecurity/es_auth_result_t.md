@@ -1,13 +1,14 @@
 # es_auth_result_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values used when responding to an authorization event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,35 +16,40 @@ Values used when responding to an authorization event.
 struct es_auth_result_t
 ```
 
+```c
+typedef enum { ... } es_auth_result_t;
+```
+
 ## Topics
 
 ### Authorization Values
-- [var ES_AUTH_RESULT_ALLOW: es_auth_result_t](es_auth_result_allow.md)
+- [var ES_AUTH_RESULT_ALLOW: es_auth_result_t](./es_auth_result_allow.md)
   The caller authorizes the event and allows it to continue.
-- [var ES_AUTH_RESULT_DENY: es_auth_result_t](es_auth_result_deny.md)
+- [var ES_AUTH_RESULT_DENY: es_auth_result_t](./es_auth_result_deny.md)
   The caller denies authorization to the event and prevents it from continuing.
 ### Initializers
-- [init(UInt32)](es_auth_result_t/init(_:).md)
-- [init(rawValue: UInt32)](es_auth_result_t/init(rawvalue:).md)
+- [init(UInt32)](./es_auth_result_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./es_auth_result_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](es_auth_result_t/rawvalue.md)
+- [var rawValue: UInt32](./es_auth_result_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](es_respond_auth_result(_:_:_:_:).md)
+### Responding to Events
+- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](./es_respond_auth_result%28_,_,_,_%29.md)
   Responds to an event that requires an authorization response.
-- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](es_respond_flags_result(_:_:_:_:).md)
+- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](./es_respond_flags_result%28_,_,_,_%29.md)
   Responds to an event that requires authorization flags as a response.
-- [struct es_respond_result_t](es_respond_result_t.md)
+- [struct es_respond_result_t](./es_respond_result_t.md)
   Values that indicate the result of responding to a message.
 
 

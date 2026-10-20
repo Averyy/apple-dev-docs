@@ -1,7 +1,8 @@
 # init(localizedName:streamID:direction:clockType:source:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stream.
 
@@ -15,6 +16,10 @@ Creates a stream.
 init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direction, clockType: CMIOExtensionStream.ClockType, source: any CMIOExtensionStreamSource)
 ```
 
+```objc
+- (instancetype) initWithLocalizedName:(NSString *) localizedName streamID:(NSUUID *) streamID direction:(CMIOExtensionStreamDirection) direction clockType:(CMIOExtensionStreamClockType) clockType source:(id<CMIOExtensionStreamSource>) source;
+```
+
 ## Parameters
 
 - `localizedName`: A localized name for the stream.
@@ -25,7 +30,8 @@ init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direc
 
 ## See Also
 
-- [init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direction, customClockConfiguration: CMIOExtensionStreamCustomClockConfiguration, source: any CMIOExtensionStreamSource)](cmioextensionstream/init(localizedname:streamid:direction:customclockconfiguration:source:).md)
+### Creating a Stream
+- [init(localizedName: String, streamID: UUID, direction: CMIOExtensionStream.Direction, customClockConfiguration: CMIOExtensionStreamCustomClockConfiguration, source: any CMIOExtensionStreamSource)](./init%28localizedname,streamid,direction,customclockconfiguration,source%29.md)
   Creates a stream that uses a custom clock configuration.
 
 

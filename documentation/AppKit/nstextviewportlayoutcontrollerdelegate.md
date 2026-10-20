@@ -1,7 +1,8 @@
 # NSTextViewportLayoutControllerDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Optional methods that delegates implement to respond to viewport layout changes.
 
@@ -14,35 +15,40 @@ Optional methods that delegates implement to respond to viewport layout changes.
 protocol NSTextViewportLayoutControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextViewportLayoutControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to changes in the viewport
-- [func textViewportLayoutController(NSTextViewportLayoutController, configureRenderingSurfaceFor: NSTextLayoutFragment)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:configurerenderingsurfacefor:).md)
+- [func textViewportLayoutController(NSTextViewportLayoutController, configureRenderingSurfaceFor: NSTextLayoutFragment)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller%28_,configurerenderingsurfacefor%29.md)
   The method the framework calls when the layout controller lays out a text layout fragment in the UI.
-- [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerdidlayout(_:).md)
+- [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerdidlayout%28_%29.md)
   The method the framework calls when the text viewport layout controller finishes its layout process.
-- [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerwilllayout(_:).md)
+- [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerwilllayout%28_%29.md)
   The method the framework calls before the text viewport layout controller starts its layout process.
-- [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](nstextviewportlayoutcontrollerdelegate/viewportbounds(for:).md)
+- [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](./nstextviewportlayoutcontrollerdelegate/viewportbounds%28for%29.md)
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
 ### Instance Methods
-- [func textViewportLayoutController(NSTextViewportLayoutController, cacheRenderingSurface: any NSTextViewportRenderingSurface, for: any NSTextViewportRenderingSurfaceKey)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:cacherenderingsurface:for:).md)
+- [func textViewportLayoutController(NSTextViewportLayoutController, cacheRenderingSurface: any NSTextViewportRenderingSurface, for: any NSTextViewportRenderingSurfaceKey)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller%28_,cacherenderingsurface,for%29.md)
   Asks the delegate to cache a rendering surface for later retrieval.
-- [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:retrievecachedrenderingsurfacefor:).md)
+- [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller%28_,retrievecachedrenderingsurfacefor%29.md)
   Asks the delegate to return a previously cached rendering surface.
-- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](./nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout%28_%29.md)
   Triggers relayout of the view.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSTextView](nstextview.md)
+- [NSTextView](./nstextview.md)
 
 ## See Also
 
-- [var delegate: (any NSTextViewportLayoutControllerDelegate)?](nstextviewportlayoutcontroller/delegate.md)
+### Responding to changes in viewport layout
+- [var delegate: (any NSTextViewportLayoutControllerDelegate)?](./nstextviewportlayoutcontroller/delegate.md)
   The delegate for the text layout manager object.
 
 

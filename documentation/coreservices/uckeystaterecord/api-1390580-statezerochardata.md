@@ -1,7 +1,8 @@
 # stateZeroCharData
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A value of type `UCKeyCharSeq` specifying the Unicode character(s) produced from a given key code while no dead-key state is in effect. 
 
@@ -13,6 +14,10 @@ A value of type `UCKeyCharSeq` specifying the Unicode character(s) produced from
 
 ```swift
 var stateZeroCharData: UCKeyCharSeq
+```
+
+```c
+UCKeyCharSeq stateZeroCharData;
 ```
 
 

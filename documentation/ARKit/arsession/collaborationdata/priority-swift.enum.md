@@ -1,7 +1,8 @@
 # ARSession.CollaborationData.Priority
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that help you choose the appropriate network protocol or settings for a given data instance.
 
@@ -15,33 +16,38 @@ Options that help you choose the appropriate network protocol or settings for a 
 enum Priority
 ```
 
+```c
+enum ARCollaborationDataPriority : NSInteger;
+```
+
 #### Discussion
 
-When you send [`ARSession.CollaborationData`](arsession/collaborationdata.md) over the network by using a protocol that allows you to specify varying reliability, this property provides you with a hint about which reliability setting to use for a given collaboration data instance. Depending on its priority, you may also choose to send a given collaboration data instance using different protocols.
+When you send [`ARSession.CollaborationData`](../collaborationdata.md) over the network by using a protocol that allows you to specify varying reliability, this property provides you with a hint about which reliability setting to use for a given collaboration data instance. Depending on its priority, you may also choose to send a given collaboration data instance using different protocols.
 
 ## Topics
 
 ### Enumeration Cases
-- [ARSession.CollaborationData.Priority.critical](arsession/collaborationdata/priority-swift.enum/critical.md)
+- [ARSession.CollaborationData.Priority.critical](./priority-swift.enum/critical.md)
   A priority that indicates that collaboration depends on this data.
-- [ARSession.CollaborationData.Priority.optional](arsession/collaborationdata/priority-swift.enum/optional.md)
+- [ARSession.CollaborationData.Priority.optional](./priority-swift.enum/optional.md)
   A priority that indicates that collaboration can continue without this data.
 ### Initializers
-- [init?(rawValue: Int)](arsession/collaborationdata/priority-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./priority-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var priority: ARSession.CollaborationData.Priority](arsession/collaborationdata/priority-swift.property.md)
+### Observing Priority
+- [var priority: ARSession.CollaborationData.Priority](./priority-swift.property.md)
   A property that gives you a hint about how to send a given data instance over the network.
 
 

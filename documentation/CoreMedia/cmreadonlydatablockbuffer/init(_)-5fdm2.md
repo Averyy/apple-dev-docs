@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a readonly block buffer from existing block buffer.
 

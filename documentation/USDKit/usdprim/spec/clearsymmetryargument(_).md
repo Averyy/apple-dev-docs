@@ -1,7 +1,8 @@
 # clearSymmetryArgument(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes `name` from the symmetry arguments dictionary.
 

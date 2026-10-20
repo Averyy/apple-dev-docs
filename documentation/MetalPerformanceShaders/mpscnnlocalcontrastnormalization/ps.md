@@ -1,7 +1,8 @@
 # ps
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The “ps” variable of the kernel function.
 
@@ -19,21 +20,26 @@ The “ps” variable of the kernel function.
 var ps: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float ps;
+```
+
 #### Discussion
 
 The default value is `1.0`.
 
 ## See Also
 
-- [var alpha: Float](mpscnnlocalcontrastnormalization/alpha.md)
+### Instance Properties
+- [var alpha: Float](./alpha.md)
   The “alpha” variable of the kernel function.
-- [var beta: Float](mpscnnlocalcontrastnormalization/beta.md)
+- [var beta: Float](./beta.md)
   The “beta” variable of the kernel function.
-- [var delta: Float](mpscnnlocalcontrastnormalization/delta.md)
+- [var delta: Float](./delta.md)
   The “delta” variable of the kernel function.
-- [var p0: Float](mpscnnlocalcontrastnormalization/p0.md)
+- [var p0: Float](./p0.md)
   The “p0” variable of the kernel function.
-- [var pm: Float](mpscnnlocalcontrastnormalization/pm.md)
+- [var pm: Float](./pm.md)
   The “pm” variable of the kernel function.
 
 

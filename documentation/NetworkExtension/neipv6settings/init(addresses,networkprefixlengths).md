@@ -1,7 +1,8 @@
 # init(addresses:networkPrefixLengths:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the IPv6 settings object.
 
@@ -17,6 +18,10 @@ Initializes the IPv6 settings object.
 
 ```swift
 init(addresses: [String], networkPrefixLengths: [NSNumber])
+```
+
+```objc
+- (instancetype) initWithAddresses:(NSArray<NSString *> *) addresses networkPrefixLengths:(NSArray<NSNumber *> *) networkPrefixLengths;
 ```
 
 #### Return Value

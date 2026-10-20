@@ -1,7 +1,8 @@
 # keyM
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the m or M character.
 
@@ -19,37 +20,42 @@ The keyboard code for the m or M character.
 static let keyM: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodeKeyM;
+```
+
 ## See Also
 
-- [static let keyA: GCKeyCode](gckeycode/keya.md)
+### Letter and Number Keys
+- [static let keyA: GCKeyCode](./keya.md)
   The keyboard code for the a or A character.
-- [static let keyB: GCKeyCode](gckeycode/keyb.md)
+- [static let keyB: GCKeyCode](./keyb.md)
   The keyboard code for the b or B character.
-- [static let keyC: GCKeyCode](gckeycode/keyc.md)
+- [static let keyC: GCKeyCode](./keyc.md)
   The keyboard code for the c or C character.
-- [static let keyD: GCKeyCode](gckeycode/keyd.md)
+- [static let keyD: GCKeyCode](./keyd.md)
   The keyboard code for the d or D character.
-- [static let keyE: GCKeyCode](gckeycode/keye.md)
+- [static let keyE: GCKeyCode](./keye.md)
   The keyboard code for the e or E character.
-- [static let keyF: GCKeyCode](gckeycode/keyf.md)
+- [static let keyF: GCKeyCode](./keyf.md)
   The keyboard code for the f or F character.
-- [static let keyG: GCKeyCode](gckeycode/keyg.md)
+- [static let keyG: GCKeyCode](./keyg.md)
   The keyboard code for the g or G character.
-- [static let keyH: GCKeyCode](gckeycode/keyh.md)
+- [static let keyH: GCKeyCode](./keyh.md)
   The keyboard code for the h or H character.
-- [static let keyI: GCKeyCode](gckeycode/keyi.md)
+- [static let keyI: GCKeyCode](./keyi.md)
   The keyboard code for the i or I character.
-- [static let keyJ: GCKeyCode](gckeycode/keyj.md)
+- [static let keyJ: GCKeyCode](./keyj.md)
   The keyboard code for the j or J character.
-- [static let keyK: GCKeyCode](gckeycode/keyk.md)
+- [static let keyK: GCKeyCode](./keyk.md)
   The keyboard code for the k or K character.
-- [static let keyL: GCKeyCode](gckeycode/keyl.md)
+- [static let keyL: GCKeyCode](./keyl.md)
   The keyboard code for the l or L character.
-- [static let keyN: GCKeyCode](gckeycode/keyn.md)
+- [static let keyN: GCKeyCode](./keyn.md)
   The keyboard code for the n or N character.
-- [static let keyO: GCKeyCode](gckeycode/keyo.md)
+- [static let keyO: GCKeyCode](./keyo.md)
   The keyboard code for the o or O character.
-- [static let keyP: GCKeyCode](gckeycode/keyp.md)
+- [static let keyP: GCKeyCode](./keyp.md)
   The keyboard code for the p or P character.
 
 

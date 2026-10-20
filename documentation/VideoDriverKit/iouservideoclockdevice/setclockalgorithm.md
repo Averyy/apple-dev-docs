@@ -1,7 +1,8 @@
 # SetClockAlgorithm
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the algorithm for the video clock device.
 
@@ -10,7 +11,7 @@ Sets the algorithm for the video clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetClockAlgorithm(IOUserVideoClockAlgorithm in_clock_algorithm);
 ```
 
@@ -28,13 +29,14 @@ Drivers can change the clock algorithm of the clock device dynamically. If succe
 
 ## See Also
 
-- [GetClockAlgorithm](iouservideoclockdevice/getclockalgorithm.md)
+### Working with clock device behavior
+- [GetClockAlgorithm](./getclockalgorithm.md)
   Gets the clock algorithm of the clock device.
-- [IOUserVideoClockAlgorithm](videodriverkit/iouservideoclockalgorithm.md)
+- [IOUserVideoClockAlgorithm](../videodriverkit-page/iouservideoclockalgorithm.md)
   Clock smoothing algorithm selectors.
-- [SetClockIsStable](iouservideoclockdevice/setclockisstable.md)
+- [SetClockIsStable](./setclockisstable.md)
   Sets the clock stability of the clock device.
-- [GetClockIsStable](iouservideoclockdevice/getclockisstable.md)
+- [GetClockIsStable](./getclockisstable.md)
   Gets a Boolean value for clock stability of the clock device.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified position.
 
@@ -11,7 +12,7 @@ Accesses the element at the specified position.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ Accesses the element at the specified position.
 
 ## See Also
 
-- [Scene.AnchorCollection.SubSequence](scene/anchorcollection/subsequence.md)
+### Accessing anchors
+- [Scene.AnchorCollection.SubSequence](./subsequence.md)
   A sequence that represents a contiguous subrange of the collection’s elements.
 
 

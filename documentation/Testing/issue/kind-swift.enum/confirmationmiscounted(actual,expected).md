@@ -1,18 +1,19 @@
 # Issue.Kind.confirmationMiscounted(actual:expected:)
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An issue due to a confirmation being confirmed the wrong number of times.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,12 +25,12 @@ indirect case confirmationMiscounted(actual: Int, expected: any RangeExpression 
 
 #### Discussion
 
-This issue can occur when calling [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-5mqz2.md) or [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](confirmation(_:expectedcount:isolation:sourcelocation:_:)-l3il.md) when the confirmation passed to these functions’ `body` closures is confirmed too few or too many times.
+This issue can occur when calling [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](../../confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) or [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](../../confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md) when the confirmation passed to these functions’ `body` closures is confirmed too few or too many times.
 
 ## Parameters
 
-- `actual`: The number of times [`confirm(count:)`](confirmation/confirm(count:).md) was actually called.
-- `expected`: The expected number of times [`confirm(count:)`](confirmation/confirm(count:).md) should have been called.
+- `actual`: The number of times [`confirm(count:)`](../../confirmation/confirm%28count%29.md) was actually called.
+- `expected`: The expected number of times [`confirm(count:)`](../../confirmation/confirm%28count%29.md) should have been called.
 
 
 ---

@@ -1,7 +1,8 @@
 # cameraEnhancement
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The enhancement applied to this anchor’s pixel buffer.
 

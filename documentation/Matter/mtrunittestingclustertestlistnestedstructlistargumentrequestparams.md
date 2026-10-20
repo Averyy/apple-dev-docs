@@ -1,7 +1,8 @@
 # MTRUnitTestingClusterTestListNestedStructListArgumentRequestParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,27 +19,31 @@
 class MTRUnitTestingClusterTestListNestedStructListArgumentRequestParams
 ```
 
+```objc
+@interface MTRUnitTestingClusterTestListNestedStructListArgumentRequestParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var arg1: [Any]](mtrunittestingclustertestlistnestedstructlistargumentrequestparams/arg1.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrunittestingclustertestlistnestedstructlistargumentrequestparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrunittestingclustertestlistnestedstructlistargumentrequestparams/timedinvoketimeoutms.md)
+- [var arg1: [Any]](./mtrunittestingclustertestlistnestedstructlistargumentrequestparams/arg1.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrunittestingclustertestlistnestedstructlistargumentrequestparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrunittestingclustertestlistnestedstructlistargumentrequestparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTestClusterClusterTestListNestedStructListArgumentRequestParams](mtrtestclusterclustertestlistnestedstructlistargumentrequestparams.md)
+- [MTRTestClusterClusterTestListNestedStructListArgumentRequestParams](./mtrtestclusterclustertestlistnestedstructlistargumentrequestparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -22,7 +23,8 @@ func makeAsyncIterator() -> AsyncStream<Element>.Iterator
 
 ## See Also
 
-- [AsyncStream.Iterator](asyncstream/iterator.md)
+### Creating an Iterator
+- [AsyncStream.Iterator](./iterator.md)
   The asynchronous iterator for iterating an asynchronous stream.
 
 

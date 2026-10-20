@@ -1,7 +1,8 @@
 # TextureResource.Semantic.hdrColor
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the texture to store a high-dynamic range image.
 
@@ -11,7 +12,7 @@ Use the texture to store a high-dynamic range image.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,13 +26,14 @@ Properties that specify a semantic of `hdrColor` use the texture to store high-d
 
 ## See Also
 
-- [TextureResource.Semantic.raw](textureresource/semantic-swift.enum/raw.md)
+### Specifying intended use
+- [TextureResource.Semantic.raw](./raw.md)
   Use the texture unmodified.
-- [TextureResource.Semantic.color](textureresource/semantic-swift.enum/color.md)
+- [TextureResource.Semantic.color](./color.md)
   Use the texture to store colors data.
-- [TextureResource.Semantic.normal](textureresource/semantic-swift.enum/normal.md)
+- [TextureResource.Semantic.normal](./normal.md)
   Use the texture to store surface normals.
-- [TextureResource.Semantic.scalar](textureresource/semantic-swift.enum/scalar.md)
+- [TextureResource.Semantic.scalar](./scalar.md)
   Use the texture to store a single value in each pixel.
 
 

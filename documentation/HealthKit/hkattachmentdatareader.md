@@ -1,7 +1,8 @@
 # HKAttachmentDataReader
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reader that provides access to an attachment’s data.
 
@@ -10,7 +11,7 @@ A reader that provides access to an attachment’s data.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -61,21 +62,22 @@ do {
 ## Topics
 
 ### Reading attachment data
-- [var data: Data](hkattachmentdatareader/data.md)
+- [var data: Data](./hkattachmentdatareader/data.md)
   The abstract’s data.
-- [var bytes: HKAttachment.AsyncBytes](hkattachmentdatareader/bytes.md)
+- [var bytes: HKAttachment.AsyncBytes](./hkattachmentdatareader/bytes.md)
   An asynchronous sequence that provides the attachment’s data.
-- [var progress: Progress](hkattachmentdatareader/progress.md)
+- [var progress: Progress](./hkattachmentdatareader/progress.md)
   An object you can use to track the progress while reading an attachment’s data.
 ### Accessing the attachment object
-- [var attachment: HKAttachment](hkattachmentdatareader/attachment.md)
+- [var attachment: HKAttachment](./hkattachmentdatareader/attachment.md)
   An attachment object that represents the file from which the reader is reading.
 
 ## See Also
 
-- [class HKAttachment](hkattachment.md)
+### Attachments
+- [class HKAttachment](./hkattachment.md)
   A file that is attached to a sample in the HealthKit store.
-- [class HKAttachmentStore](hkattachmentstore.md)
+- [class HKAttachmentStore](./hkattachmentstore.md)
   The access point for attachments associated with samples in the HealthKit store.
 
 

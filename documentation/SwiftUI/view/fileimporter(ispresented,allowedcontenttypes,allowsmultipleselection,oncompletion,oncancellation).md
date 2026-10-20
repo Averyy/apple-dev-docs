@@ -1,7 +1,8 @@
 # fileImporter(isPresented:allowedContentTypes:allowsMultipleSelection:onCompletion:onCancellation:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a system dialog for allowing the user to import multiple files.
 
@@ -66,7 +67,7 @@ For example, a button that allows the user to choose multiple PDF files for the 
 
 > **Note**: Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
-To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileDialogURLEnabled(_:)`](view/filedialogurlenabled(_:).md), [`fileDialogImportsUnresolvedAliases(_:)`](view/filedialogimportsunresolvedaliases(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
+To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](./filedialogdefaultdirectory%28_%29.md), [`fileDialogConfirmationLabel(_:)`](./filedialogconfirmationlabel%28_%29.md), [`fileDialogMessage(_:)`](./filedialogmessage%28_%29.md), [`fileDialogBrowserOptions(_:)`](./filedialogbrowseroptions%28_%29.md), [`fileDialogURLEnabled(_:)`](./filedialogurlenabled%28_%29.md), [`fileDialogImportsUnresolvedAliases(_:)`](./filedialogimportsunresolvedaliases%28_%29.md), and [`fileDialogCustomizationID(_:)`](./filedialogcustomizationid%28_%29.md).
 
 ## Parameters
 
@@ -78,9 +79,10 @@ To further configure the dialog’s appearance and behavior, use these view modi
 
 ## See Also
 
-- [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
+### Importing from file
+- [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](./fileimporter%28ispresented,allowedcontenttypes,allowsmultipleselection,oncompletion%29.md)
   Presents a system dialog for allowing the user to import multiple files.
-- [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:oncompletion:).md)
+- [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onCompletion: (Result<URL, any Error>) -> Void) -> some View](./fileimporter%28ispresented,allowedcontenttypes,oncompletion%29.md)
   Presents a system dialog for allowing the user to import an existing file.
 
 

@@ -1,22 +1,27 @@
 # refitScratchBufferSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of scratch memory, in bytes, the GPU device needs to refit the acceleration structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var refitScratchBufferSize: Int
+```
+
+```c
+NSUInteger refitScratchBufferSize;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ This value can be zero, which indicates that refitting the acceleration structur
 
 ## See Also
 
-- [var accelerationStructureSize: Int](mtlaccelerationstructuresizes/accelerationstructuresize.md)
+### Retrieving the sizes
+- [var accelerationStructureSize: Int](./accelerationstructuresize.md)
   The size of the acceleration structure, in bytes.
-- [var buildScratchBufferSize: Int](mtlaccelerationstructuresizes/buildscratchbuffersize.md)
+- [var buildScratchBufferSize: Int](./buildscratchbuffersize.md)
   The amount of scratch memory, in bytes, the GPU devices needs to build the acceleration structure.
 
 

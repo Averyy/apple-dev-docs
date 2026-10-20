@@ -1,14 +1,15 @@
 # callPlatformFunction
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn callPlatformFunction(const OSSymbol *functionName, bool waitForFunction, void *p1, void *p2, void *p3, void *p4);
 ```
 

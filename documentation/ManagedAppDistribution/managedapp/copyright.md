@@ -1,7 +1,8 @@
 # copyright
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s copyright information.
 
@@ -20,9 +21,10 @@ let copyright: String?
 
 ## See Also
 
-- [let privacyPolicy: URL?](managedapp/privacypolicy.md)
+### Obtaining privacy and copyright information
+- [let privacyPolicy: URL?](./privacypolicy.md)
   The app’s privacy policy URL.
-- [var licenseAgreement: URL?](managedapp/licenseagreement.md)
+- [var licenseAgreement: URL?](./licenseagreement.md)
   The app’s license agreement URL.
 
 

@@ -1,14 +1,15 @@
 # unknown
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unknown duration of energy or runtime data.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,15 +19,16 @@ var unknown: Measure?
 
 ## See Also
 
-- [var criticalPeak: Measure?](electricityinsightrecord/tariffpeak/criticalpeak.md)
+### Getting the peak energy data
+- [var criticalPeak: Measure?](./criticalpeak.md)
   The duration of energy or runtime data during critical peak hours.
-- [var offPeak: Measure?](electricityinsightrecord/tariffpeak/offpeak.md)
+- [var offPeak: Measure?](./offpeak.md)
   The duration of energy or runtime data during off-peak hours.
-- [var onPeak: Measure?](electricityinsightrecord/tariffpeak/onpeak.md)
+- [var onPeak: Measure?](./onpeak.md)
   The duration of energy or runtime data during peak hours.
-- [var partialPeak: Measure?](electricityinsightrecord/tariffpeak/partialpeak.md)
+- [var partialPeak: Measure?](./partialpeak.md)
   The duration of energy or runtime data during partial peak hours.
-- [var superOffPeak: Measure?](electricityinsightrecord/tariffpeak/superoffpeak.md)
+- [var superOffPeak: Measure?](./superoffpeak.md)
   The duration of energy or runtime data during super off-peak hours.
 
 

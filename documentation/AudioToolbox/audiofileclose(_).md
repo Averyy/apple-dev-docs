@@ -1,7 +1,8 @@
 # AudioFileClose(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Closes an audio file.
 
@@ -19,6 +20,10 @@ Closes an audio file.
 func AudioFileClose(_ inAudioFile: AudioFileID) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileClose(AudioFileID inAudioFile);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -29,9 +34,10 @@ A result code. See Result Codes.
 
 ## See Also
 
-- [func AudioFileOpenURL(CFURL, AudioFilePermissions, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](audiofileopenurl(_:_:_:_:).md)
+### Opening and Closing Audio Files
+- [func AudioFileOpenURL(CFURL, AudioFilePermissions, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](./audiofileopenurl%28_,_,_,_%29.md)
   Open an existing audio file specified by a URL.
-- [func AudioFileOpenWithCallbacks(UnsafeMutableRawPointer, AudioFile_ReadProc, AudioFile_WriteProc?, AudioFile_GetSizeProc, AudioFile_SetSizeProc?, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](audiofileopenwithcallbacks(_:_:_:_:_:_:_:).md)
+- [func AudioFileOpenWithCallbacks(UnsafeMutableRawPointer, AudioFile_ReadProc, AudioFile_WriteProc?, AudioFile_GetSizeProc, AudioFile_SetSizeProc?, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](./audiofileopenwithcallbacks%28_,_,_,_,_,_,_%29.md)
   Opens an existing file with callbacks you provide.
 
 

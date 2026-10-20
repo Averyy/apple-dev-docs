@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.reinterpret(from:to:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reinterpret one type scalar or vector type as another of the same number of size and bytes.
 
@@ -12,7 +13,7 @@ Reinterpret one type scalar or vector type as another of the same number of size
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

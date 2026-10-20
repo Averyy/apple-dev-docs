@@ -1,7 +1,8 @@
 # textContainerInset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inset of the text container’s layout area within the text view’s content area.
 
@@ -9,7 +10,7 @@ The inset of the text container’s layout area within the text view’s content
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The inset of the text container’s layout area within the text view’s content
 var textContainerInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIEdgeInsets textContainerInset;
+```
+
 #### Discussion
 
 This property provides text margins for text laid out in the text view. By default the value of this property is `(8, 0, 8, 0)`.
 
 ## See Also
 
-- [var usesStandardTextScaling: Bool](uitextview/usesstandardtextscaling.md)
+### Configuring layout attributes
+- [var usesStandardTextScaling: Bool](./usesstandardtextscaling.md)
   A Boolean value that determines the rendering scale of the text.
-- [var sizingRule: UILetterformAwareSizingRule](uiletterformawareadjusting/sizingrule.md)
+- [var sizingRule: UILetterformAwareSizingRule](../uiletterformawareadjusting/sizingrule.md)
   The typographic bounds-sizing behavior that handles text with fonts that contain oversize characters.
 
 

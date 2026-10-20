@@ -1,12 +1,13 @@
 # textTransform
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current transformation matrix of the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The current transformation matrix of the font.
 var textTransform: AffineTransform { get }
 ```
 
+```objc
+@property (copy, readonly) NSAffineTransform * textTransform;
+```
+
 ## See Also
 
-- [func set()](nsfont/set.md)
+### Related Documentation
+- [func set()](./set%28%29.md)
   Sets this font as the font for the current graphics context.
-- [var matrix: UnsafePointer<CGFloat>](nsfont/matrix.md)
+### Getting the Font Matrices
+- [var matrix: UnsafePointer<CGFloat>](./matrix.md)
   The transformation matrix associated with the font.
-- [class var identityMatrix: UnsafePointer<CGFloat>](nsfont/identitymatrix.md)
+- [class var identityMatrix: UnsafePointer<CGFloat>](./identitymatrix.md)
   The identify matrix for the font.
 
 

@@ -1,7 +1,8 @@
 # init(strokes:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drawing object with the strokes you supply.
 
@@ -18,15 +19,20 @@ Creates a drawing object with the strokes you supply.
 convenience init(strokes: [PKStroke])
 ```
 
+```objc
+- (instancetype) initWithStrokes:(NSArray<PKStroke *> *) strokes;
+```
+
 ## Parameters
 
-- `strokes`: An array of [`PKStrokeReference`](pkstrokereference.md) elements.
+- `strokes`: An array of [`PKStrokeReference`](../pkstrokereference.md) elements.
 
 ## See Also
 
-- [init(data: Data) throws](pkdrawingreference/init(data:).md)
+### Creating a drawing object
+- [init(data: Data) throws](./init%28data%29.md)
   Creates a drawing object and populates it with previously drawn content.
-- [init()](pkdrawingreference/init.md)
+- [init()](./init%28%29.md)
   Creates an empty drawing object.
 
 

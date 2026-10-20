@@ -1,7 +1,8 @@
 # UIBackgroundConfiguration
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration that describes a specific background appearance.
 
@@ -10,7 +11,7 @@ A configuration that describes a specific background appearance.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ struct UIBackgroundConfiguration
 
 #### Overview
 
-Background configurations provide a lightweight way for you to create backgrounds for your views. Using a background configuration, you can obtain system default background styling for a variety of different view states. You apply background configurations directly to [`UIButton`](uibutton.md) or to cells, headers, and footers in [`UICollectionView`](uicollectionview.md) and [`UITableView`](uitableview.md).
+Background configurations provide a lightweight way for you to create backgrounds for your views. Using a background configuration, you can obtain system default background styling for a variety of different view states. You apply background configurations directly to [`UIButton`](./uibutton.md) or to cells, headers, and footers in [`UICollectionView`](./uicollectionview.md) and [`UITableView`](./uitableview.md).
 
 To use a background configuration:
 
@@ -39,9 +40,9 @@ cell.backgroundConfiguration = backgroundConfig
 
 You can also start by creating an empty background configuration using `clear()`, which produces a transparent background.
 
-Each of the system background styles provides system default values for different configuration states ([`UIConfigurationState`](uiconfigurationstate-8d7pd.md)). If you apply a background configuration to a view whose [`automaticallyUpdatesBackgroundConfiguration`](uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md) property is [`true`](https://developer.apple.com/documentation/swift/true), the system automatically updates the background configuration when the view’s state changes.
+Each of the system background styles provides system default values for different configuration states ([`UIConfigurationState`](./uiconfigurationstate-8d7pd.md)). If you apply a background configuration to a view whose [`automaticallyUpdatesBackgroundConfiguration`](./uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md) property is [`true`](../Swift/true.md), the system automatically updates the background configuration when the view’s state changes.
 
-If you want additional customization beyond the system default values, you can choose to manually update the background configuration by overriding the view’s [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) method.
+If you want additional customization beyond the system default values, you can choose to manually update the background configuration by overriding the view’s [`updateConfiguration(using:)`](./uicollectionviewcell/updateconfiguration%28using%29.md) method.
 
 ```swift
 override func updateConfiguration(using state: UIConfigurationState) {
@@ -63,75 +64,75 @@ When you apply a configuration to a view, UIKit performs the actual drawing and 
 ## Topics
 
 ### Creating cell background configurations
-- [static func listPlainCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listplaincell.md)
+- [static func listPlainCell() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listplaincell%28%29.md)
   Creates the default configuration you use to style a cell in a plain list.
-- [static func listGroupedCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listgroupedcell.md)
+- [static func listGroupedCell() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listgroupedcell%28%29.md)
   Creates the default configuration you use to style a cell in a grouped list.
-- [static func listSidebarCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listsidebarcell.md)
+- [static func listSidebarCell() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listsidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in a sidebar list.
-- [static func listAccompaniedSidebarCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listaccompaniedsidebarcell.md)
+- [static func listAccompaniedSidebarCell() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listaccompaniedsidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in an accompanied sidebar list.
 ### Creating header and footer background configurations
-- [static func listPlainHeaderFooter() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listplainheaderfooter.md)
+- [static func listPlainHeaderFooter() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listplainheaderfooter%28%29.md)
   Creates the default configuration you use to style a plain list header or footer.
-- [static func listGroupedHeaderFooter() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listgroupedheaderfooter.md)
+- [static func listGroupedHeaderFooter() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listgroupedheaderfooter%28%29.md)
   Creates the default configuration you use to style a grouped list header or footer.
-- [static func listSidebarHeader() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listsidebarheader.md)
+- [static func listSidebarHeader() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listsidebarheader%28%29.md)
   Creates the default configuration you use to style a sidebar list header.
 ### Creating an empty background configuration
-- [static func clear() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/clear.md)
+- [static func clear() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/clear%28%29.md)
   Creates an empty background configuration with a transparent background and no default styling.
 ### Customizing the background
-- [var customView: UIView?](uibackgroundconfiguration-swift.struct/customview.md)
+- [var customView: UIView?](./uibackgroundconfiguration-swift.struct/customview.md)
   A custom view for the background.
-- [var cornerRadius: CGFloat](uibackgroundconfiguration-swift.struct/cornerradius.md)
+- [var cornerRadius: CGFloat](./uibackgroundconfiguration-swift.struct/cornerradius.md)
   The preferred corner radius, using a continuous corner curve, for the background and stroke.
-- [var backgroundInsets: NSDirectionalEdgeInsets](uibackgroundconfiguration-swift.struct/backgroundinsets.md)
+- [var backgroundInsets: NSDirectionalEdgeInsets](./uibackgroundconfiguration-swift.struct/backgroundinsets.md)
   The insets (or outsets, if negative) for the background and stroke, relative to the edges of the containing view.
-- [var edgesAddingLayoutMarginsToBackgroundInsets: NSDirectionalRectEdge](uibackgroundconfiguration-swift.struct/edgesaddinglayoutmarginstobackgroundinsets.md)
+- [var edgesAddingLayoutMarginsToBackgroundInsets: NSDirectionalRectEdge](./uibackgroundconfiguration-swift.struct/edgesaddinglayoutmarginstobackgroundinsets.md)
   The edges on which the configuration adds the containing view’s layout margins to the background insets.
-- [var backgroundColor: UIColor?](uibackgroundconfiguration-swift.struct/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./uibackgroundconfiguration-swift.struct/backgroundcolor.md)
   The color of the background.
-- [var backgroundColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/backgroundcolortransformer.md)
+- [var backgroundColorTransformer: UIConfigurationColorTransformer?](./uibackgroundconfiguration-swift.struct/backgroundcolortransformer.md)
   The color transformer for resolving the background color.
-- [func resolvedBackgroundColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedbackgroundcolor(for:).md)
+- [func resolvedBackgroundColor(for: UIColor) -> UIColor](./uibackgroundconfiguration-swift.struct/resolvedbackgroundcolor%28for%29.md)
   Generates the resolved background color for the specified tint color, using the background color and color transformer.
-- [var visualEffect: UIVisualEffect?](uibackgroundconfiguration-swift.struct/visualeffect.md)
+- [var visualEffect: UIVisualEffect?](./uibackgroundconfiguration-swift.struct/visualeffect.md)
   The visual effect that the configuration applies to the background.
-- [var shadowProperties: UIShadowProperties](uibackgroundconfiguration-swift.struct/shadowproperties.md)
-- [struct UIShadowProperties](uishadowproperties-swift.struct.md)
-- [var strokeColor: UIColor?](uibackgroundconfiguration-swift.struct/strokecolor.md)
+- [var shadowProperties: UIShadowProperties](./uibackgroundconfiguration-swift.struct/shadowproperties.md)
+- [struct UIShadowProperties](./uishadowproperties-swift.struct.md)
+- [var strokeColor: UIColor?](./uibackgroundconfiguration-swift.struct/strokecolor.md)
   The color of the stroke.
-- [var strokeColorTransformer: UIConfigurationColorTransformer?](uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
+- [var strokeColorTransformer: UIConfigurationColorTransformer?](./uibackgroundconfiguration-swift.struct/strokecolortransformer.md)
   The color transformer for resolving the stroke color.
-- [func resolvedStrokeColor(for: UIColor) -> UIColor](uibackgroundconfiguration-swift.struct/resolvedstrokecolor(for:).md)
+- [func resolvedStrokeColor(for: UIColor) -> UIColor](./uibackgroundconfiguration-swift.struct/resolvedstrokecolor%28for%29.md)
   Generates the resolved stroke color for the specified tint color, using the stroke color and color transformer.
-- [var strokeWidth: CGFloat](uibackgroundconfiguration-swift.struct/strokewidth.md)
+- [var strokeWidth: CGFloat](./uibackgroundconfiguration-swift.struct/strokewidth.md)
   The width of the stroke.
-- [var strokeOutset: CGFloat](uibackgroundconfiguration-swift.struct/strokeoutset.md)
+- [var strokeOutset: CGFloat](./uibackgroundconfiguration-swift.struct/strokeoutset.md)
   The outset (or inset, if negative) for the stroke.
-- [var image: UIImage?](uibackgroundconfiguration-swift.struct/image.md)
+- [var image: UIImage?](./uibackgroundconfiguration-swift.struct/image.md)
   The image displayed in the view’s background.
-- [var imageContentMode: UIView.ContentMode](uibackgroundconfiguration-swift.struct/imagecontentmode.md)
+- [var imageContentMode: UIView.ContentMode](./uibackgroundconfiguration-swift.struct/imagecontentmode.md)
   A property that determines the layout of a background image in a view when its bounds change.
 ### Updating background configurations
-- [func updated(for: any UIConfigurationState) -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/updated(for:).md)
+- [func updated(for: any UIConfigurationState) -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/updated%28for%29.md)
   Generates a configuration for the specified state by applying the configuration’s default values for that state to any properties that you haven’t customized.
 ### Type Methods
-- [static func listCell() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listcell.md)
-- [static func listFooter() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listfooter.md)
-- [static func listHeader() -> UIBackgroundConfiguration](uibackgroundconfiguration-swift.struct/listheader.md)
+- [static func listCell() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listcell%28%29.md)
+- [static func listFooter() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listfooter%28%29.md)
+- [static func listHeader() -> UIBackgroundConfiguration](./uibackgroundconfiguration-swift.struct/listheader%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # desiredRecordTypes
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of record types that limit the amount of records returned. Only the record types specified in the array are returned.
 
@@ -10,7 +11,7 @@ An array of record types that limit the amount of records returned. Only the rec
 
 ## Declaration
 
-```swift
+```
 attribute String[] desiredRecordTypes;
 ```
 

@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar to use when parsing date strings and creating the date.
 

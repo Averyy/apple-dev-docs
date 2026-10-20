@@ -1,7 +1,8 @@
 # showsSuppressionButton
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether the alert includes a suppression checkbox, which you can employ to allow a user to opt out of seeing the alert again.
 
@@ -14,9 +15,13 @@ Specifies whether the alert includes a suppression checkbox, which you can emplo
 var showsSuppressionButton: Bool { get set }
 ```
 
+```objc
+@property BOOL showsSuppressionButton;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which specifies the absence of a suppression checkbox in the alert. Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to show a suppression checkbox in the alert.
+The default value of this property is [`false`](../../Swift/false.md), which specifies the absence of a suppression checkbox in the alert. Set the value to [`true`](../../Swift/true.md) to show a suppression checkbox in the alert.
 
 By default, a suppression checkbox has the title, “Do not show this message again.” In macOS 11.0 and later, if the alert displays multiple buttons that prompt the user to make a choice, the title is “Do not ask again.” To customize it, use the checkbox’s `title` property, as follows:
 
@@ -48,17 +53,18 @@ if defaults.bool(forKey: alertSuppressionKey) {
 }
 ```
 
-![Alert with a suppression checkbox and customized text](/images/com.apple.appkit/media-3686600@2x.png)
+![Alert with a suppression checkbox and customized text](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3686600@2x.png)
 
 ## See Also
 
-- [func runModal() -> NSApplication.ModalResponse](nsalert/runmodal.md)
+### Displaying alerts
+- [func runModal() -> NSApplication.ModalResponse](./runmodal%28%29.md)
   Runs the alert as an app-modal dialog and returns the constant that identifies the button clicked.
-- [func beginSheetModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nsalert/beginsheetmodal(for:completionhandler:).md)
+- [func beginSheetModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./beginsheetmodal%28for,completionhandler%29.md)
   Runs the alert modally as a sheet attached to the specified window.
-- [var suppressionButton: NSButton?](nsalert/suppressionbutton.md)
+- [var suppressionButton: NSButton?](./suppressionbutton.md)
   The alert’s suppression checkbox.
-- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsalert/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
+- [func beginSheetModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](./beginsheetmodal%28for,modaldelegate,didend,contextinfo%29.md)
   Runs the alert modally as an alert sheet attached to a specified window.
 
 

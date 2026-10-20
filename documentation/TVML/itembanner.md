@@ -28,36 +28,37 @@ Use `itemBanner` element to display information inside of a `relatedContent` ele
 </itemBanner>
 ```
 
-##### Subelements of Itembanner
+##### Subelements of itemBanner
 
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
-- [`row`](row.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
+- [row](./row.md)
 
-##### Elements That Use Itembanner
+##### Elements that Use itemBanner
 
-- [`relatedContent`](relatedcontent.md)
+- [relatedContent](./relatedcontent.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [banner](banner.md)
+### Banner Elements
+- [banner](./banner.md)
   Displays information along the top of a TVML page.
-- [identityBanner](identitybanner.md)
+- [identityBanner](./identitybanner.md)
   Displays information about an artist or performer.
 
 

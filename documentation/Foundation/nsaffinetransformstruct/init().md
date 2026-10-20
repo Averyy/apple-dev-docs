@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a zero-filled transformation matrix.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [init(m11: Double, m12: Double, m21: Double, m22: Double, tX: Double, tY: Double)](nsaffinetransformstruct/init(m11:m12:m21:m22:tx:ty:).md)
+### Initializers
+- [init(m11: Double, m12: Double, m21: Double, m22: Double, tX: Double, tY: Double)](./init%28m11,m12,m21,m22,tx,ty%29.md)
 
 
 ---

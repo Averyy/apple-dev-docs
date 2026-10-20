@@ -1,7 +1,8 @@
 # GameCenterChallengeCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body for a challenge.
 
@@ -10,23 +11,23 @@ The data structure of the request body for a challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeCreateRequest.Data.Attributes](gamecenterchallengecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterChallengeCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new challenge resource.
-- [object GameCenterChallengeCreateRequest.Data.Relationships](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterChallengeCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `attributes` (GameCenterChallengeCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterChallengeCreateRequest.Data.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallenges`
 
 
 ---

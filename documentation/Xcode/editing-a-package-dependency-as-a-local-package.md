@@ -1,6 +1,7 @@
 # Editing a package dependency as a local package
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Override a package dependency and edit its content by adding it as a local package.
 
@@ -21,9 +22,10 @@ Now you can make changes to the local package and verify them by building and ru
 
 ## See Also
 
-- [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
+### Package dependencies
+- [Adding package dependencies to your app](./adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
-- [Identifying binary dependencies](identifying-binary-dependencies.md)
+- [Identifying binary dependencies](./identifying-binary-dependencies.md)
   Find out if a package dependency references a binary and verify the binary’s authenticity.
 
 

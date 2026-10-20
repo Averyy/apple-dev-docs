@@ -1,7 +1,8 @@
 # AVExtendedNoteOnEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a custom extension of a MIDI note on event.
 
@@ -19,6 +20,10 @@ An object that represents a custom extension of a MIDI note on event.
 class AVExtendedNoteOnEvent
 ```
 
+```objc
+@interface AVExtendedNoteOnEvent : AVMusicEvent
+```
+
 #### Overview
 
 Use this to allow an app to trigger a custom note on event on one of several Apple audio units that support it. The floating point note and velocity numbers allow for optional fractional control of the note’s runtime properties that the system modulates by those inputs. This event supports the possibility of an audio unit with more than the standard 16 MIDI channels.
@@ -26,51 +31,52 @@ Use this to allow an app to trigger a custom note on event on one of several App
 ## Topics
 
 ### Creating a note-on event
-- [init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:groupid:duration:)-60hve.md)
+- [init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](./avextendednoteonevent/init%28midinote,velocity,groupid,duration%29-60hve.md)
   Creates an event with a MIDI note, velocity, group identifier, and duration.
-- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:)-rqr5.md)
+- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](./avextendednoteonevent/init%28midinote,velocity,instrumentid,groupid,duration%29-rqr5.md)
   Creates a note on event with the default instrument.
 ### Configuring a note-on event
-- [var midiNote: Float](avextendednoteonevent/midinote.md)
+- [var midiNote: Float](./avextendednoteonevent/midinote.md)
   The MIDI note number.
-- [var velocity: Float](avextendednoteonevent/velocity.md)
+- [var velocity: Float](./avextendednoteonevent/velocity.md)
   The MDI velocity.
-- [var instrumentID: UInt32](avextendednoteonevent/instrumentid.md)
+- [var instrumentID: UInt32](./avextendednoteonevent/instrumentid.md)
   The instrument identifier.
-- [var groupID: UInt32](avextendednoteonevent/groupid.md)
+- [var groupID: UInt32](./avextendednoteonevent/groupid.md)
   The audio unit channel that handles the event.
-- [var duration: AVMusicTimeStamp](avextendednoteonevent/duration.md)
+- [var duration: AVMusicTimeStamp](./avextendednoteonevent/duration.md)
   The duration of the event, in beats.
 ### Getting the default instrument
-- [class let defaultInstrument: UInt32](avextendednoteonevent/defaultinstrument.md)
+- [class let defaultInstrument: UInt32](./avextendednoteonevent/defaultinstrument.md)
   A constant that represents the default instrument identifier.
 ### Initializers
-- [init(MIDINote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:groupid:duration:)-985j8.md)
-- [init(MIDINote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:)-3a40r.md)
+- [init(MIDINote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](./avextendednoteonevent/init%28midinote,velocity,groupid,duration%29-985j8.md)
+- [init(MIDINote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](./avextendednoteonevent/init%28midinote,velocity,instrumentid,groupid,duration%29-3a40r.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMusicEvent](avmusicevent.md)
+- [AVMusicEvent](./avmusicevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMusicEvent](avmusicevent.md)
+### Handling music events
+- [class AVMusicEvent](./avmusicevent.md)
   A base class for the events you associate with a music track.
-- [class AVMusicUserEvent](avmusicuserevent.md)
+- [class AVMusicUserEvent](./avmusicuserevent.md)
   An object that represents a custom user message.
-- [class AVParameterEvent](avparameterevent.md)
+- [class AVParameterEvent](./avparameterevent.md)
   An object that represents a parameter event on a music track’s destination.
-- [class AVAUPresetEvent](avaupresetevent.md)
+- [class AVAUPresetEvent](./avaupresetevent.md)
   An object that represents a preset load and change on the music track’s destination audio unit.
-- [class AVExtendedTempoEvent](avextendedtempoevent.md)
+- [class AVExtendedTempoEvent](./avextendedtempoevent.md)
   An object that represents a tempo change to a specific beats-per-minute value.
 
 

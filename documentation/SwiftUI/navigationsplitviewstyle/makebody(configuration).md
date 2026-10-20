@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a navigation split view.
@@ -24,7 +25,7 @@ Creates a view that represents the body of a navigation split view.
 
 #### Discussion
 
-SwiftUI calls this method for each instance of [`NavigationSplitView`](navigationsplitview.md), where this style is the current [`NavigationSplitViewStyle`](navigationsplitviewstyle.md).
+SwiftUI calls this method for each instance of [`NavigationSplitView`](../navigationsplitview.md), where this style is the current [`NavigationSplitViewStyle`](../navigationsplitviewstyle.md).
 
 ## Parameters
 
@@ -32,9 +33,10 @@ SwiftUI calls this method for each instance of [`NavigationSplitView`](navigatio
 
 ## See Also
 
-- [NavigationSplitViewStyle.Configuration](navigationsplitviewstyle/configuration.md)
+### Creating custom styles
+- [NavigationSplitViewStyle.Configuration](./configuration.md)
   The properties of a navigation split view instance.
-- [associatedtype Body : View](navigationsplitviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a navigation split view.
 
 

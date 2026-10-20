@@ -1,7 +1,8 @@
 # ARKitSession.Events
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of events.
 
@@ -18,27 +19,28 @@ struct Events
 ## Topics
 
 ### Structures
-- [ARKitSession.Events.Iterator](arkitsession/events-swift.struct/iterator.md)
+- [ARKitSession.Events.Iterator](./events-swift.struct/iterator.md)
   A type that provides a sequence’s iteration interface and encapsulates its iteration state.
 ### Instance Methods
-- [func makeAsyncIterator() -> ARKitSession.Events.Iterator](arkitsession/events-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> ARKitSession.Events.Iterator](./events-swift.struct/makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces `Event` elements on this asynchronous sequence.
 ### Type Aliases
-- [ARKitSession.Events.Element](arkitsession/events-swift.struct/element.md)
+- [ARKitSession.Events.Element](./events-swift.struct/element.md)
   A type representing a sequence’s elements.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var events: ARKitSession.Events](arkitsession/events-swift.property.md)
+### Observing a session
+- [var events: ARKitSession.Events](./events-swift.property.md)
   An asynchronous sequence of events that provide updates to the current authorization status of the session.
-- [ARKitSession.Event](arkitsession/event.md)
+- [ARKitSession.Event](./event.md)
   Enumeration of possible session events.
-- [var description: String](arkitsession/description.md)
+- [var description: String](./description.md)
   A textual representation of this session.
 
 

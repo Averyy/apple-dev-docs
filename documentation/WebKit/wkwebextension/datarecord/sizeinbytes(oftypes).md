@@ -1,7 +1,8 @@
 # sizeInBytes(ofTypes:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the size in bytes of the specific data types in this data record.
 
@@ -18,13 +19,18 @@ Retrieves the size in bytes of the specific data types in this data record.
 func sizeInBytes(ofTypes dataTypes: Set<WKWebExtension.DataType>) -> Int
 ```
 
+```objc
+- (NSUInteger) sizeInBytesOfTypes:(NSSet<NSString *> *) dataTypes;
+```
+
 ## Parameters
 
 - `dataTypes`: The set of data types to measure the size for.
 
 ## See Also
 
-- [var totalSizeInBytes: Int](wkwebextension/datarecord/totalsizeinbytes.md)
+### Related Documentation
+- [var totalSizeInBytes: Int](./totalsizeinbytes.md)
   The total size in bytes of all data types contained in this data record.
 
 

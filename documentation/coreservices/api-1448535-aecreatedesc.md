@@ -1,7 +1,8 @@
 # AECreateDesc(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new descriptor that incorporates the specified data.
 
@@ -14,30 +15,35 @@ Creates a new descriptor that incorporates the specified data.
 func AECreateDesc(_ typeCode: DescType, _ dataPtr: UnsafeRawPointer!, _ dataSize: Size, _ result: UnsafeMutablePointer<AEDesc>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AECreateDesc(DescType typeCode, const void *dataPtr, Size dataSize, AEDesc *result);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
 While it is possible to create an Apple event descriptor or a descriptor list or a descriptor with the `AECreateDesc` function (assuming you have access to the raw data for an Apple event, list, or descriptor), you typically create these structured objects with their specific creation routines—`AECreateAppleEvent`, `AECreateList`, or `AECreateDesc`. 
 
-##### 1770172
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `typeCode`: The descriptor type for the new descriptor. For a list of AppleScript’s predefined descriptor types, see [`Descriptor Type Constants`](apple_events/1542788-descriptor_type_constants.md). See [`DescType`](desctype.md).
-- `dataPtr`: A pointer to the data for the new descriptor. This data is copied into a newly-allocated block of memory for the descriptor that is created. To minimize copying overhead, consider using [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](1446239-aecreatedescfromexternalptr.md).
+- `typeCode`: The descriptor type for the new descriptor. For a list of AppleScript’s predefined descriptor types, see [Descriptor Type Constants](./apple_events/api-1542788-descriptor_type_constants.md). See [`DescType`](./desctype.md).
+- `dataPtr`: A pointer to the data for the new descriptor. This data is copied into a newly-allocated block of memory for the descriptor that is created. To minimize copying overhead, consider using [`AECreateDescFromExternalPtr(_:_:_:_:_:_:)`](./api-1446239-aecreatedescfromexternalptr.md).
 - `dataSize`: The length, in bytes, of the data for the new descriptor.
-- `result`: A pointer to a descriptor. On successful return, a descriptor that incorporates the data specified by the `dataPtr` parameter. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
+- `result`: A pointer to a descriptor. On successful return, a descriptor that incorporates the data specified by the `dataPtr` parameter. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AECreateDescFromExternalPtr(OSType, UnsafeRawPointer!, Size, AEDisposeExternalUPP!, SRefCon!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](1446239-aecreatedescfromexternalptr.md)
+### Creating and Duplicating Descriptors
+- [func AECreateDescFromExternalPtr(OSType, UnsafeRawPointer!, Size, AEDisposeExternalUPP!, SRefCon!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](./api-1446239-aecreatedescfromexternalptr.md)
   Creates a new descriptor that uses a memory buffer supplied by the caller.
-- [func AEDuplicateDesc(UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](1442661-aeduplicatedesc.md)
+- [func AEDuplicateDesc(UnsafePointer<AEDesc>!, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1442661-aeduplicatedesc.md)
   Creates a copy of a descriptor.
 
 

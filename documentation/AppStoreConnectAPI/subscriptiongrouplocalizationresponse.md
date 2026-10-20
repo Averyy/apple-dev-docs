@@ -1,16 +1,19 @@
 # SubscriptionGroupLocalizationResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify a single subscription group localization.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionGroupLocalizationV2Response`](./subscriptiongrouplocalizationv2response.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationResponse
 ```
 
@@ -22,11 +25,12 @@ object SubscriptionGroupLocalizationResponse
 
 ## See Also
 
-- [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)
+### Objects
+- [object SubscriptionGroupLocalization](./subscriptiongrouplocalization.md)
   The localized display name and optional custom app name for a subscription group, shown to customers on the App Store.
-- [object SubscriptionGroupLocalizationCreateRequest](subscriptiongrouplocalizationcreaterequest.md)
+- [object SubscriptionGroupLocalizationCreateRequest](./subscriptiongrouplocalizationcreaterequest.md)
   The request body you use to create a subscription group localization.
-- [object SubscriptionGroupLocalizationUpdateRequest](subscriptiongrouplocalizationupdaterequest.md)
+- [object SubscriptionGroupLocalizationUpdateRequest](./subscriptiongrouplocalizationupdaterequest.md)
   The request body you use to update a subscription group localization update request.
 
 

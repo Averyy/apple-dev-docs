@@ -1,7 +1,8 @@
 # LightmapResource.BakeType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the type of data contained within a lightmap.
 
@@ -22,18 +23,18 @@ enum BakeType
 ## Topics
 
 ### Specifying the bake type
-- [LightmapResource.BakeType.finalShadedColor](lightmapresource/baketype/finalshadedcolor.md)
+- [LightmapResource.BakeType.finalShadedColor](./baketype/finalshadedcolor.md)
   Lightmaps with this type contain the final shaded color. No runtime shading calculations are performed for objects using this type of lightmap.
-- [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
-- [LightmapResource.BakeType.ambientOcclusion](lightmapresource/baketype/ambientocclusion.md)
+- [LightmapResource.BakeType.indirectDiffuseIrradiance](./baketype/indirectdiffuseirradiance.md)
+- [LightmapResource.BakeType.ambientOcclusion](./baketype/ambientocclusion.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

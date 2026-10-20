@@ -1,7 +1,8 @@
 # personWeight
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A usage of a mass measurement related to a person’s weight.
 
@@ -19,6 +20,8 @@ A usage of a mass measurement related to a person’s weight.
 ```swift
 static var personWeight: MeasurementFormatUnitUsage<UnitMass> { get }
 ```
+
+Available when `UnitType` is `UnitMass`.
 
 
 ---

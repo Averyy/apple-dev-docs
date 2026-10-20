@@ -1,7 +1,8 @@
 # PagingInformation
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paging information for data responses.
 
@@ -10,14 +11,14 @@ Paging information for data responses.
 
 ## Declaration
 
-```swift
+```
 object PagingInformation
 ```
 
 ## Topics
 
 ### Objects
-- [object PagingInformation.Paging](paginginformation/paging-data.dictionary.md)
+- [object PagingInformation.Paging](./paginginformation/paging-data.dictionary.md)
   Paging details such as the total number of resources and the per-page limit.
 
 ## Properties
@@ -26,13 +27,14 @@ object PagingInformation
 
 ## See Also
 
-- [object PagedDocumentLinks](pageddocumentlinks.md)
+### Objects
+- [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
-- [object ResourceLinks](resourcelinks.md)
+- [object ResourceLinks](./resourcelinks.md)
   Self-links to requested resources.
-- [object DocumentLinks](documentlinks.md)
+- [object DocumentLinks](./documentlinks.md)
   Self-links to documents that can contain information for one or more resources.
-- [object RelationshipLinks](relationshiplinks.md)
+- [object RelationshipLinks](./relationshiplinks.md)
   Links related to the response document, including self links.
 
 

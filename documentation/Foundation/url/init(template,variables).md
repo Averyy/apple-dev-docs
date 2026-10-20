@@ -1,7 +1,8 @@
 # init(template:variables:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `URL` by expanding the RFC 6570 template and variables.
 

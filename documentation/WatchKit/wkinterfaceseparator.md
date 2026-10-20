@@ -1,7 +1,8 @@
 # WKInterfaceSeparator
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface object that displays a visual separator within a group.
 
@@ -14,9 +15,13 @@ An interface object that displays a visual separator within a group.
 class WKInterfaceSeparator
 ```
 
+```objc
+@interface WKInterfaceSeparator : WKInterfaceObject
+```
+
 #### Overview
 
-Use [`WKInterfaceSeparator`](wkinterfaceseparator.md) to manipulate a separator at runtime, such as changing its color. You can also use the inherited methods to show or hide it and configure other attributes.
+Use [`WKInterfaceSeparator`](./wkinterfaceseparator.md) to manipulate a separator at runtime, such as changing its color. You can also use the inherited methods to show or hide it and configure other attributes.
 
 Do not subclass or create instances of this class yourself. Instead, define outlets in your interface controller class and connect them to the corresponding objects in your storyboard file. For example, to refer to a separator object in your interface, define a property with the following syntax in your interface controller class:
 
@@ -40,33 +45,34 @@ Xcode lets you configure information about your separator interface object in yo
 
 | Attribute | Description |
 | --- | --- |
-| Color | The default color of the separator. You can also set this value programmatically using the [`setColor(_:)`](wkinterfaceseparator/setcolor(_:).md) method. |
+| Color | The default color of the separator. You can also set this value programmatically using the [`setColor(_:)`](./wkinterfaceseparator/setcolor%28_%29.md) method. |
 
 ## Topics
 
 ### Configuring the Separator
-- [func setColor(UIColor?)](wkinterfaceseparator/setcolor(_:).md)
+- [func setColor(UIColor?)](./wkinterfaceseparator/setcolor%28_%29.md)
   Sets the color of the separator bar.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceObject](wkinterfaceobject.md)
+- [WKInterfaceObject](./wkinterfaceobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKInterfaceGroup](wkinterfacegroup.md)
+### Containers
+- [class WKInterfaceGroup](./wkinterfacegroup.md)
   A container for one or more interface objects.
-- [class WKInterfaceTable](wkinterfacetable.md)
+- [class WKInterfaceTable](./wkinterfacetable.md)
   An object that creates and manages the contents of a single-column table interface.
-- [class WKInterfacePicker](wkinterfacepicker.md)
+- [class WKInterfacePicker](./wkinterfacepicker.md)
   An interface element that presents a scrolling list of items for the user to choose from.
 
 

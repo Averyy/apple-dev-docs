@@ -1,7 +1,8 @@
 # setDate(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the date to display in the date picker, with an option to animate the setting.
 
@@ -17,20 +18,25 @@ Sets the date to display in the date picker, with an option to animate the setti
 func setDate(_ date: Date, animated: Bool)
 ```
 
+```objc
+- (void) setDate:(NSDate *) date animated:(BOOL) animated;
+```
+
 ## Parameters
 
 - `date`: An `NSDate` object representing the new date to display in the date picker.
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the setting of the new date, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The animation rotates the wheels until the new date and time is shown under the highlight rectangle.
+- `animated`: [`true`](../../Swift/true.md) to animate the setting of the new date, otherwise [`false`](../../Swift/false.md). The animation rotates the wheels until the new date and time is shown under the highlight rectangle.
 
 ## See Also
 
-- [var calendar: Calendar!](uidatepicker/calendar.md)
+### Managing the date and calendar
+- [var calendar: Calendar!](./calendar.md)
   The calendar to use for the date picker.
-- [var date: Date](uidatepicker/date.md)
+- [var date: Date](./date.md)
   The date displayed by the date picker.
-- [var locale: Locale?](uidatepicker/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale used by the date picker.
-- [var timeZone: TimeZone?](uidatepicker/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone reflected in the date displayed by the date picker.
 
 

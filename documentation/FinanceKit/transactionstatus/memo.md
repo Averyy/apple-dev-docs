@@ -1,7 +1,8 @@
 # TransactionStatus.memo
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A memo that provides information about the transaction.
 
@@ -17,13 +18,14 @@ case memo
 
 ## See Also
 
-- [TransactionStatus.authorized](transactionstatus/authorized.md)
+### Enumeration Cases
+- [TransactionStatus.authorized](./authorized.md)
   The transaction is in an authorized state.
-- [TransactionStatus.booked](transactionstatus/booked.md)
+- [TransactionStatus.booked](./booked.md)
   The transaction is in a booked state.
-- [TransactionStatus.pending](transactionstatus/pending.md)
+- [TransactionStatus.pending](./pending.md)
   The transaction is in a pending state.
-- [TransactionStatus.rejected](transactionstatus/rejected.md)
+- [TransactionStatus.rejected](./rejected.md)
   The transaction is in a rejected state.
 
 

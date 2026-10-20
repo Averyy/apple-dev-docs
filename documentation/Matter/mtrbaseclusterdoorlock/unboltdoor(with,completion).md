@@ -1,7 +1,8 @@
 # unboltDoor(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command UnboltDoor
 
@@ -17,7 +18,15 @@ Command UnboltDoor
 ## Declaration
 
 ```swift
+func unboltDoor(with params: MTRDoorLockClusterUnboltDoorParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func unboltDoor(with params: MTRDoorLockClusterUnboltDoorParams?) async throws
+```
+
+```objc
+- (void) unboltDoorWithParams:(MTRDoorLockClusterUnboltDoorParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

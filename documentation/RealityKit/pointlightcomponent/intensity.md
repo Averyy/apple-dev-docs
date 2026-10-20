@@ -1,7 +1,8 @@
 # intensity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of the point light, measured in lumen.
 
@@ -23,13 +24,14 @@ var intensity: Float
 
 The default value is `26963.76` lumens.
 
-See [`PointLightComponent`](pointlightcomponent.md) for more information about how the `intensity` and [`attenuationRadius`](pointlightcomponent/attenuationradius.md) properties affect this light.
+See [`PointLightComponent`](../pointlightcomponent.md) for more information about how the `intensity` and [`attenuationRadius`](./attenuationradius.md) properties affect this light.
 
 ## See Also
 
-- [var attenuationRadius: Float](pointlightcomponent/attenuationradius.md)
+### Configuring the light
+- [var attenuationRadius: Float](./attenuationradius.md)
   The distance from the light source where its intensity reaches zero.
-- [var attenuationFalloffExponent: Float](pointlightcomponent/attenuationfalloffexponent.md)
+- [var attenuationFalloffExponent: Float](./attenuationfalloffexponent.md)
   The exponent value for the light’s intensity falloff-transition curve.
 
 

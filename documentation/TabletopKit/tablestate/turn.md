@@ -1,7 +1,8 @@
 # turn
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The seats that are currently in turn.
 
@@ -16,9 +17,10 @@ var turn: Set<TableSeatIdentifier> { get set }
 
 ## See Also
 
-- [var counters: CounterCollection](tablestate/counters.md)
+### Getting the table state
+- [var counters: CounterCollection](./counters.md)
   The collection of score counters.
-- [var equipment: EquipmentCollection](tablestate/equipment.md)
+- [var equipment: EquipmentCollection](./equipment.md)
   The collection of equipment.
 
 

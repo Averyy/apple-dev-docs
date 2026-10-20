@@ -1,7 +1,8 @@
 # toString()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the map size object.
 
@@ -10,7 +11,7 @@ Returns a string representation of the map size object.
 
 ## Declaration
 
-```swift
+```
 toString(): string;
 ```
 

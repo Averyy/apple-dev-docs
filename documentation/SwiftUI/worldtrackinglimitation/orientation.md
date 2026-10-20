@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device capabilities of tracking orientation changes in all dimensions are currently limited.
 

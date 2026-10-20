@@ -1,7 +1,8 @@
 # targets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target paths authored on this relationship.
 

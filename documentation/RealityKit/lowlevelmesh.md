@@ -1,7 +1,8 @@
 # LowLevelMesh
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for vertex data that you can use to create and update meshes using your own format.
 
@@ -22,15 +23,15 @@ class LowLevelMesh
 
 ## Mentions
 
-- [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
+- [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)
 
 #### Overview
 
 Use `LowLevelMesh` when you want to bring your own vertex format to RealityKit or update your data frequently. To update your data in `LowLevelMesh`, you can either use Swift for CPU processing, or Metal Compute Shaders for GPU processing.
 
-> **Note**: Use [`MeshDescriptor`](meshdescriptor.md) for a simpler alternative to `LowLevelMesh`. For information on loading a model from a USD or Reality file, see [`Loading entities from a file`](loading-entities-from-a-file.md).
+> **Note**: Use [`MeshDescriptor`](./meshdescriptor.md) for a simpler alternative to `LowLevelMesh`. For information on loading a model from a USD or Reality file, see [Loading entities from a file](./loading-entities-from-a-file.md).
 
-Express your vertex by creating a [`LowLevelMesh.Descriptor`](lowlevelmesh/descriptor-swift.struct.md) that describes your layout, along with the required index and vertex capacities. This descriptor is similar to [`MTLVertexDescriptor`](https://developer.apple.com/documentation/metal/mtlvertexdescriptor), with additional semantics that make the data available in your shaders.
+Express your vertex by creating a [`LowLevelMesh.Descriptor`](./lowlevelmesh/descriptor-swift.struct.md) that describes your layout, along with the required index and vertex capacities. This descriptor is similar to [`MTLVertexDescriptor`](../Metal/mtlvertexdescriptor.md), with additional semantics that make the data available in your shaders.
 
 To use `LowLevelMesh`, first define your own vertex structure, either in a Metal header or using a Swift structure:
 
@@ -64,7 +65,7 @@ extension MyVertex {
 }
 ```
 
-Create a [`LowLevelMesh.Descriptor`](lowlevelmesh/descriptor-swift.struct.md) and `LowLevelMesh`, and assign your mesh data and parts:
+Create a [`LowLevelMesh.Descriptor`](./lowlevelmesh/descriptor-swift.struct.md) and `LowLevelMesh`, and assign your mesh data and parts:
 
 ```swift
 func triangleMesh() throws -> LowLevelMesh {
@@ -101,7 +102,7 @@ func triangleMesh() throws -> LowLevelMesh {
 }
 ```
 
-To finish, create a [`MeshResource`](meshresource.md) from the `LowLevelMesh`, and add it to a [`ModelComponent`](modelcomponent.md). You can then add this model to any [`Entity`](entity.md) in your scene:
+To finish, create a [`MeshResource`](./meshresource.md) from the `LowLevelMesh`, and add it to a [`ModelComponent`](./modelcomponent.md). You can then add this model to any [`Entity`](./entity.md) in your scene:
 
 ```swift
 func triangleEntity() throws -> Entity {
@@ -120,89 +121,90 @@ func triangleEntity() throws -> Entity {
 
 The low-level mesh creates a triangular shape in your RealityKit scene:
 
-![A screenshot of an isosceles triangle, floating in a kitchen scene. The triangle appears light gray in color.](/images/com.apple.RealityKit/lowlevelmesh-triangle-unlit.jpg)
+![A screenshot of an isosceles triangle, floating in a kitchen scene. The triangle appears light gray in color.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/lowlevelmesh-triangle-unlit.jpg)
 
-The [`MeshResource`](meshresource.md) retains a reference to the `LowLevelMesh`, reflecting any changes when the renderer updates.
+The [`MeshResource`](./meshresource.md) retains a reference to the `LowLevelMesh`, reflecting any changes when the renderer updates.
 
 ## Topics
 
 ### Creating a low-level mesh
-- [init(descriptor: LowLevelMesh.Descriptor) throws](lowlevelmesh/init(descriptor:).md)
+- [init(descriptor: LowLevelMesh.Descriptor) throws](./lowlevelmesh/init%28descriptor%29.md)
   Constructs a low-level mesh from a descriptor.
 ### Describing a low-level mesh
-- [let descriptor: LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.property.md)
+- [let descriptor: LowLevelMesh.Descriptor](./lowlevelmesh/descriptor-swift.property.md)
   The definition of the structure of this low-level mesh.
-- [var parts: LowLevelMesh.PartsCollection](lowlevelmesh/parts.md)
+- [var parts: LowLevelMesh.PartsCollection](./lowlevelmesh/parts.md)
   A mutable collection of parts.
-- [var indexCapacity: Int](lowlevelmesh/indexcapacity.md)
+- [var indexCapacity: Int](./lowlevelmesh/indexcapacity.md)
   The capacity of the index buffer, measured in indices.
-- [var vertexCapacity: Int](lowlevelmesh/vertexcapacity.md)
+- [var vertexCapacity: Int](./lowlevelmesh/vertexcapacity.md)
   The capacity of the vertex buffer, measured in vertices.
 ### Accessing mesh data on the CPU with Swift
-- [func withUnsafeBytes(bufferIndex: Int, (UnsafeRawBufferPointer) -> Void)](lowlevelmesh/withunsafebytes(bufferindex:_:).md)
+- [func withUnsafeBytes(bufferIndex: Int, (UnsafeRawBufferPointer) -> Void)](./lowlevelmesh/withunsafebytes%28bufferindex,_%29.md)
   Reads a Metal vertex buffer synchronously on the CPU.
-- [func withUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/withunsafemutablebytes(bufferindex:_:).md)
+- [func withUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](./lowlevelmesh/withunsafemutablebytes%28bufferindex,_%29.md)
   Updates a Metal vertex buffer synchronously on the CPU.
-- [func withUnsafeIndices((UnsafeRawBufferPointer) -> Void)](lowlevelmesh/withunsafeindices(_:).md)
+- [func withUnsafeIndices((UnsafeRawBufferPointer) -> Void)](./lowlevelmesh/withunsafeindices%28_%29.md)
   Reads the index buffer synchronously on the CPU.
-- [func withUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/withunsafemutableindices(_:).md)
+- [func withUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](./lowlevelmesh/withunsafemutableindices%28_%29.md)
   Updates the index buffer synchronously on the CPU.
-- [func replaceUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/replaceunsafemutablebytes(bufferindex:_:).md)
+- [func replaceUnsafeMutableBytes(bufferIndex: Int, (UnsafeMutableRawBufferPointer) -> Void)](./lowlevelmesh/replaceunsafemutablebytes%28bufferindex,_%29.md)
   Replaces a Metal vertex buffer synchronously on the CPU.
-- [func replaceUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](lowlevelmesh/replaceunsafemutableindices(_:).md)
+- [func replaceUnsafeMutableIndices((UnsafeMutableRawBufferPointer) -> Void)](./lowlevelmesh/replaceunsafemutableindices%28_%29.md)
   Replaces the index buffer synchronously on the CPU.
 ### Accessing mesh data on the GPU with Metal
-- [func read(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/read(bufferindex:using:).md)
+- [func read(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](./lowlevelmesh/read%28bufferindex,using%29.md)
   Retrieves a Metal vertex buffer at the specified index, for GPU reading.
-- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/readindices(using:).md)
+- [func readIndices(using: any MTLCommandBuffer) -> any MTLBuffer](./lowlevelmesh/readindices%28using%29.md)
   Retrieves the Metal index buffer for GPU reading.
-- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/replace(bufferindex:using:).md)
+- [func replace(bufferIndex: Int, using: any MTLCommandBuffer) -> any MTLBuffer](./lowlevelmesh/replace%28bufferindex,using%29.md)
   Retrieves a Metal vertex buffer you can use to replace the contents of the specified buffer on the GPU using Metal.
-- [func replaceIndices(using: any MTLCommandBuffer) -> any MTLBuffer](lowlevelmesh/replaceindices(using:).md)
+- [func replaceIndices(using: any MTLCommandBuffer) -> any MTLBuffer](./lowlevelmesh/replaceindices%28using%29.md)
   Retrieves a Metal index buffer that you can use to replace the indices of this low-level mesh.
 ### Structures
-- [LowLevelMesh.Attribute](lowlevelmesh/attribute.md)
+- [LowLevelMesh.Attribute](./lowlevelmesh/attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
-- [LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.struct.md)
+- [LowLevelMesh.Descriptor](./lowlevelmesh/descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMesh.Layout](lowlevelmesh/layout.md)
+- [LowLevelMesh.Layout](./lowlevelmesh/layout.md)
   An object that describes a set of attributes that share a buffer index, offset, and stride.
-- [LowLevelMesh.Part](lowlevelmesh/part.md)
+- [LowLevelMesh.Part](./lowlevelmesh/part.md)
   An object that describes a range of primitives to display, and their material index.
-- [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
+- [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
 ### Enumerations
-- [LowLevelMesh.VertexSemantic](lowlevelmesh/vertexsemantic.md)
+- [LowLevelMesh.VertexSemantic](./lowlevelmesh/vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+### Updatable meshes
+- [Integrating virtual objects with your environment](./integrating-virtual-objects-with-your-environment.md)
   Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
+- [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)
   Create a low-level mesh and set its vertex positions and normals to form a plane.
-- [LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.struct.md)
+- [LowLevelMesh.Descriptor](./lowlevelmesh/descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMesh.Part](lowlevelmesh/part.md)
+- [LowLevelMesh.Part](./lowlevelmesh/part.md)
   An object that describes a range of primitives to display, and their material index.
-- [LowLevelMesh.Layout](lowlevelmesh/layout.md)
+- [LowLevelMesh.Layout](./lowlevelmesh/layout.md)
   An object that describes a set of attributes that share a buffer index, offset, and stride.
-- [LowLevelMesh.Attribute](lowlevelmesh/attribute.md)
+- [LowLevelMesh.Attribute](./lowlevelmesh/attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
-- [LowLevelMesh.VertexSemantic](lowlevelmesh/vertexsemantic.md)
+- [LowLevelMesh.VertexSemantic](./lowlevelmesh/vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
-- [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
+- [LowLevelMesh.PartsCollection](./lowlevelmesh/partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
-- [class LowLevelBuffer](lowlevelbuffer.md)
-- [class LowLevelInstanceData](lowlevelinstancedata.md)
+- [class LowLevelBuffer](./lowlevelbuffer.md)
+- [class LowLevelInstanceData](./lowlevelinstancedata.md)
 
 
 ---

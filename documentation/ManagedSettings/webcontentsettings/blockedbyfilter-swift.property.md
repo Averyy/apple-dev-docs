@@ -1,7 +1,8 @@
 # blockedByFilter
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current policy for filtering websites.
 
@@ -22,9 +23,10 @@ Setting any filter policy besides `.none` will disable Safari private browsing. 
 
 ## See Also
 
-- [static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>](webcontentsettings/blockedbyfilter-swift.type.property.md)
+### Filtering web domains
+- [static let blockedByFilter: SettingMetadata<WebContentSettings.FilterPolicy>](./blockedbyfilter-swift.type.property.md)
   A description of the setting that controls which websites a user can access.
-- [WebContentSettings.FilterPolicy](webcontentsettings/filterpolicy.md)
+- [WebContentSettings.FilterPolicy](./filterpolicy.md)
   The policies available for filtering web content based on specific web domains.
 
 

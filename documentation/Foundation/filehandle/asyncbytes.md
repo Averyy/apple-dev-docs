@@ -1,7 +1,8 @@
 # FileHandle.AsyncBytes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of bytes.
 
@@ -22,34 +23,35 @@ struct AsyncBytes
 
 #### Overview
 
-Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. For text files, you can also use its [`characters`](https://developer.apple.com/documentation/swift/asyncsequence/characters), [`unicodeScalars`](https://developer.apple.com/documentation/swift/asyncsequence/unicodescalars), or [`lines`](https://developer.apple.com/documentation/swift/asyncsequence/lines) properties to retrieve the contents in a more convenient format. Since all of these properties conform to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), as does the [`FileHandle`](filehandle.md) property [`bytes`](filehandle/bytes.md), you can use methods defined by [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) to perform powerful inline processing. For example, you can skip the first `n` bytes of the file with `myFileHandle.bytes.prefix(n)`.
+Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. For text files, you can also use its [`characters`](../../Swift/asyncsequence/characters.md), [`unicodeScalars`](../../Swift/asyncsequence/unicodescalars.md), or [`lines`](../../Swift/asyncsequence/lines.md) properties to retrieve the contents in a more convenient format. Since all of these properties conform to [`AsyncSequence`](../../Swift/asyncsequence.md), as does the [`FileHandle`](../filehandle.md) property [`bytes`](./bytes.md), you can use methods defined by [`AsyncSequence`](../../Swift/asyncsequence.md) to perform powerful inline processing. For example, you can skip the first `n` bytes of the file with `myFileHandle.bytes.prefix(n)`.
 
 ## Topics
 
 ### Adapting Textual Sequences
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+- [struct AsyncCharacterSequence](../asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](../asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](../asynclinesequence.md)
   An asynchronous sequence of lines of text.
 ### Creating an Iterator
-- [func makeAsyncIterator() -> FileHandle.AsyncBytes.Iterator](filehandle/asyncbytes/makeasynciterator.md)
+- [func makeAsyncIterator() -> FileHandle.AsyncBytes.Iterator](./asyncbytes/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 ### Structures
-- [FileHandle.AsyncBytes.Iterator](filehandle/asyncbytes/iterator.md)
+- [FileHandle.AsyncBytes.Iterator](./asyncbytes/iterator.md)
   An iterator that produces the bytes of a file handle.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bytes: FileHandle.AsyncBytes](filehandle/bytes.md)
+### Reading from a file handle asynchronously
+- [var bytes: FileHandle.AsyncBytes](./bytes.md)
   The file’s contents, as an asynchronous sequence of bytes.
 
 

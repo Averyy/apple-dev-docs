@@ -1,7 +1,8 @@
 # exportProperties
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of the device-to-device export.
 
@@ -17,9 +18,10 @@ let exportProperties: AppMigrationTester.DeviceToDeviceExportProperties
 
 ## See Also
 
-- [let extractedResourcesURL: URL](appmigrationtester/resourcesexportresult/extractedresourcesurl.md)
+### Inspecting result properties
+- [let extractedResourcesURL: URL](./extractedresourcesurl.md)
   A URL that refers to the directory containing the the exported resources.
-- [AppMigrationTester.DeviceToDeviceExportProperties](appmigrationtester/devicetodeviceexportproperties.md)
+- [AppMigrationTester.DeviceToDeviceExportProperties](../devicetodeviceexportproperties.md)
   Properties that describe the result of a device-to-device export.
 
 

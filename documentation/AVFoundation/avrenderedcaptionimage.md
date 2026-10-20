@@ -1,7 +1,8 @@
 # AVRenderedCaptionImage
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides a rendered pixel buffer and its position in pixels.
 
@@ -17,52 +18,57 @@ An object that provides a rendered pixel buffer and its position in pixels.
 class AVRenderedCaptionImage
 ```
 
+```objc
+@interface AVRenderedCaptionImage : NSObject
+```
+
 ## Topics
 
 ### Inspecting the image
-- [var pixelBuffer: CVPixelBuffer](avrenderedcaptionimage/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer](./avrenderedcaptionimage/pixelbuffer.md)
   An object that contains pixel data for the rendered caption.
-- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](avrenderedcaptionimage/readonlypixelbuffer.md)
+- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](./avrenderedcaptionimage/readonlypixelbuffer.md)
   A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
-- [var position: CGPoint](avrenderedcaptionimage/position.md)
+- [var position: CGPoint](./avrenderedcaptionimage/position.md)
   A point that defines the position, in pixels, of the rendered caption image relative to the video frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVPlayerVideoOutput](avplayervideooutput.md)
+### Media output
+- [class AVPlayerVideoOutput](./avplayervideooutput.md)
   An object that receives video data from a player object.
-- [class AVVideoOutputSpecification](avvideooutputspecification.md)
+- [class AVVideoOutputSpecification](./avvideooutputspecification.md)
   An object that specifies the pixel buffer attributes and tag collections handled by a player video output.
-- [class AVPlayerItemOutput](avplayeritemoutput.md)
+- [class AVPlayerItemOutput](./avplayeritemoutput.md)
   An abstract class that defines the common interface to output media data from a player item.
-- [class AVPlayerItemVideoOutput](avplayeritemvideooutput.md)
+- [class AVPlayerItemVideoOutput](./avplayeritemvideooutput.md)
   An object that outputs video frames from a player item.
-- [class AVPlayerItemLegibleOutput](avplayeritemlegibleoutput.md)
+- [class AVPlayerItemLegibleOutput](./avplayeritemlegibleoutput.md)
   An object that vends attributed strings for media with a legible characteristic.
-- [class AVPlayerItemRenderedLegibleOutput](avplayeritemrenderedlegibleoutput.md)
+- [class AVPlayerItemRenderedLegibleOutput](./avplayeritemrenderedlegibleoutput.md)
   A player item output that vends media with a legible characteristic as rendered pixel buffers.
-- [class AVPlayerItemMetadataOutput](avplayeritemmetadataoutput.md)
+- [class AVPlayerItemMetadataOutput](./avplayeritemmetadataoutput.md)
   An object that vends collections of metadata items that a player item’s tracks carry.
-- [protocol AVPlayerItemOutputPushDelegate](avplayeritemoutputpushdelegate.md)
+- [protocol AVPlayerItemOutputPushDelegate](./avplayeritemoutputpushdelegate.md)
   A protocol that defines the methods to implement to respond to changes in the media data sequence.
-- [class AVPlayerItemSampleBufferOutput](avplayeritemsamplebufferoutput.md)
-  [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md) delivers `CMSampleBuffers` for [`AVPlayerItem`](avplayeritem.md) playback.
-- [class AVPlayerItemSampleBufferOutputConfiguration](avplayeritemsamplebufferoutputconfiguration.md)
-  Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
-- [class AVPlayerItemSampleBufferOutputAudioConfiguration](avplayeritemsamplebufferoutputaudioconfiguration.md)
-  Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
+- [class AVPlayerItemSampleBufferOutput](./avplayeritemsamplebufferoutput.md)
+  [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md) delivers `CMSampleBuffers` for [`AVPlayerItem`](./avplayeritem.md) playback.
+- [class AVPlayerItemSampleBufferOutputConfiguration](./avplayeritemsamplebufferoutputconfiguration.md)
+  Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
+- [class AVPlayerItemSampleBufferOutputAudioConfiguration](./avplayeritemsamplebufferoutputaudioconfiguration.md)
+  Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](./avplayeritemsamplebufferoutput.md).
 
 
 ---

@@ -1,9 +1,10 @@
 # NSKeyValueOperator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
 
 **Availability**:
 - iOS 2.0+
@@ -20,58 +21,63 @@ These constants define the available array operators. See [`Using Collection Ope
 struct NSKeyValueOperator
 ```
 
+```c
+typedef NSString * NSKeyValueOperator;
+```
+
 ## Topics
 
 ### Type Properties
-- [static let averageKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/averagekeyvalueoperator.md)
+- [static let averageKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/averagekeyvalueoperator.md)
   The @avg array operator.
-- [static let countKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/countkeyvalueoperator.md)
+- [static let countKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/countkeyvalueoperator.md)
   The @count array operator.
-- [static let distinctUnionOfArraysKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofarrayskeyvalueoperator.md)
+- [static let distinctUnionOfArraysKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofarrayskeyvalueoperator.md)
   The @distinctUnionOfArrays array operator.
-- [static let distinctUnionOfObjectsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofobjectskeyvalueoperator.md)
+- [static let distinctUnionOfObjectsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofobjectskeyvalueoperator.md)
   The @distinctUnionOfObjects array operator.
-- [static let distinctUnionOfSetsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/distinctunionofsetskeyvalueoperator.md)
+- [static let distinctUnionOfSetsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/distinctunionofsetskeyvalueoperator.md)
   The @distinctUnionOfSets array operator.
-- [static let maximumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/maximumkeyvalueoperator.md)
+- [static let maximumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/maximumkeyvalueoperator.md)
   The @max array operator.
-- [static let minimumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/minimumkeyvalueoperator.md)
+- [static let minimumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/minimumkeyvalueoperator.md)
   The @min array operator.
-- [static let sumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/sumkeyvalueoperator.md)
+- [static let sumKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/sumkeyvalueoperator.md)
   The @sum array operator.
-- [static let unionOfArraysKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofarrayskeyvalueoperator.md)
+- [static let unionOfArraysKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofarrayskeyvalueoperator.md)
   The @unionOfArrays array operator.
-- [static let unionOfObjectsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofobjectskeyvalueoperator.md)
+- [static let unionOfObjectsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofobjectskeyvalueoperator.md)
   The @unionOfObjects array operator.
-- [static let unionOfSetsKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/unionofsetskeyvalueoperator.md)
+- [static let unionOfSetsKeyValueOperator: NSKeyValueOperator](./nskeyvalueoperator/unionofsetskeyvalueoperator.md)
   The @unionOfSets array operator.
 ### Initializers
-- [init(rawValue: String)](nskeyvalueoperator/init(rawvalue:).md)
+- [init(rawValue: String)](./nskeyvalueoperator/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+### Structures
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](./asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
+- [struct NSKeyValueChangeKey](./nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
-- [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
-- [struct PresentationIntent](presentationintent.md)
+- [struct NSKeyValueObservedChange](./nskeyvalueobservedchange.md)
+- [struct PresentationIntent](./presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

@@ -1,7 +1,8 @@
 # widgetRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The widget’s rendering mode, based on where the system is displaying it.
 
@@ -55,13 +56,14 @@ var body: some View {
 
 ## See Also
 
-- [var showsWidgetContainerBackground: Bool](environmentvalues/showswidgetcontainerbackground.md)
+### Widgets
+- [var showsWidgetContainerBackground: Bool](./showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
-- [var showsWidgetLabel: Bool](environmentvalues/showswidgetlabel.md)
+- [var showsWidgetLabel: Bool](./showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
-- [var widgetFamily: WidgetFamily](environmentvalues/widgetfamily.md)
+- [var widgetFamily: WidgetFamily](./widgetfamily.md)
   The template of the widget — small, medium, or large.
-- [var widgetContentMargins: EdgeInsets](environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](./widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
 
 

@@ -1,7 +1,8 @@
 # init(scaledPose:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new transform from the specified scaled pose.
 

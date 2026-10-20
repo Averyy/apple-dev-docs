@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item identifier with the specified raw value.
 
@@ -9,7 +10,7 @@ Creates a toolbar item identifier with the specified raw value.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nstoolbaritem/identifier/init(_:).md)
+### Creating an identifier
+- [init(String)](./init%28_%29.md)
   Creates a toolbar item identifier.
 
 

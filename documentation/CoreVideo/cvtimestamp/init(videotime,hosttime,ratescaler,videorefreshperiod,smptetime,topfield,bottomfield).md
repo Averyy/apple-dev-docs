@@ -1,7 +1,8 @@
 # init(videoTime:hostTime:rateScaler:videoRefreshPeriod:smpteTime:topField:bottomField:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a CVTimeStamp containing specified fields. The bits corrsrponding to non-nil arguments are set in `CVTimeStamp.flags`.
 

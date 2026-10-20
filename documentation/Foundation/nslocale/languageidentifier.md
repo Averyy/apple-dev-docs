@@ -1,7 +1,8 @@
 # languageIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the identifier for the language part of the locale. For example, returns “en-US” for “en_US@rg=gbzzzz”  locale.
 
@@ -18,6 +19,10 @@ Returns the identifier for the language part of the locale. For example, returns
 
 ```swift
 var languageIdentifier: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * languageIdentifier;
 ```
 
 

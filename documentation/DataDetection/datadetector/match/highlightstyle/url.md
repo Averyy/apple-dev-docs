@@ -1,7 +1,8 @@
 # DataDetector.Match.HighlightStyle.url
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A highlight style that indicates the match displays like a regular web link.
 

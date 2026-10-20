@@ -1,7 +1,8 @@
 # kUSBHostPortStatusConnectedSpeedMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The connected speed mask.
 
@@ -10,7 +11,7 @@ The connected speed mask.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusConnectedSpeedMask = kIOUSBHostPortStatusConnectedSpeedMask
 ```
 

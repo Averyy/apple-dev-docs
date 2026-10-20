@@ -1,7 +1,8 @@
 # kSecAttrSynchronizableAny
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies that both synchronizable and non-synchronizable results should be returned from a query.
 
@@ -20,9 +21,13 @@ Specifies that both synchronizable and non-synchronizable results should be retu
 let kSecAttrSynchronizableAny: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrSynchronizableAny;
+```
+
 #### Discussion
 
-This may be used as a value for the [`kSecAttrSynchronizable`](ksecattrsynchronizable.md) dictionary key (in place of `kCFBooleanTrue` or `kCFBooleanFalse`) in a call to [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md), [`SecItemUpdate(_:_:)`](secitemupdate(_:_:).md), or [`SecItemDelete(_:)`](secitemdelete(_:).md).
+This may be used as a value for the [`kSecAttrSynchronizable`](./ksecattrsynchronizable.md) dictionary key (in place of `kCFBooleanTrue` or `kCFBooleanFalse`) in a call to [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md), [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md), or [`SecItemDelete(_:)`](./secitemdelete%28_%29.md).
 
 
 ---

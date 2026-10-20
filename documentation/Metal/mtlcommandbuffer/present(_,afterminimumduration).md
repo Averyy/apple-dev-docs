@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Presents a drawable after the system presents the previous drawable for an amount of time.
@@ -20,22 +21,27 @@ Presents a drawable after the system presents the previous drawable for an amoun
 func present(_ drawable: any MTLDrawable, afterMinimumDuration duration: CFTimeInterval)
 ```
 
+```objc
+- (void) presentDrawable:(id<MTLDrawable>) drawable afterMinimumDuration:(CFTimeInterval) duration;
+```
+
 #### Discussion
 
-This convenience method calls the drawable’s [`present(afterMinimumDuration:)`](mtldrawable/present(afterminimumduration:).md) method after the command queue schedules the command buffer for execution. The command buffer does this by adding a completion handler by calling its own [`addScheduledHandler(_:)`](mtlcommandbuffer/addscheduledhandler(_:).md) method for you.
+This convenience method calls the drawable’s [`present(afterMinimumDuration:)`](../mtldrawable/present%28afterminimumduration%29.md) method after the command queue schedules the command buffer for execution. The command buffer does this by adding a completion handler by calling its own [`addScheduledHandler(_:)`](./addscheduledhandler%28_%29.md) method for you.
 
-> ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
+> ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](./commit%28%29.md) method.
 
 ## Parameters
 
-- `drawable`: An [`MTLDrawable`](mtldrawable.md) instance that contains a texture the system can show on a display.
+- `drawable`: An [`MTLDrawable`](../mtldrawable.md) instance that contains a texture the system can show on a display.
 - `duration`: The shortest display time you want the system to give to the previous drawable before presenting this one.
 
 ## See Also
 
-- [func present(any MTLDrawable)](mtlcommandbuffer/present(_:).md)
+### Presenting a drawable
+- [func present(any MTLDrawable)](./present%28_%29.md)
   Presents a drawable as early as possible.
-- [func present(any MTLDrawable, atTime: CFTimeInterval)](mtlcommandbuffer/present(_:attime:).md)
+- [func present(any MTLDrawable, atTime: CFTimeInterval)](./present%28_,attime%29.md)
   Presents a drawable at a specific time.
 
 

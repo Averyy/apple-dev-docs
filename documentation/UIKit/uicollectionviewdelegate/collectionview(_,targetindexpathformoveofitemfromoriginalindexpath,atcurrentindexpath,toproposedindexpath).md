@@ -1,7 +1,8 @@
 # collectionView(_:targetIndexPathForMoveOfItemFromOriginalIndexPath:atCurrentIndexPath:toProposedIndexPath:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the index path to use when moving an item.
 
@@ -16,6 +17,10 @@ Asks the delegate for the index path to use when moving an item.
 
 ```swift
 optional func collectionView(_ collectionView: UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath originalIndexPath: IndexPath, atCurrentIndexPath currentIndexPath: IndexPath, toProposedIndexPath proposedIndexPath: IndexPath) -> IndexPath
+```
+
+```objc
+- (NSIndexPath *) collectionView:(UICollectionView *) collectionView targetIndexPathForMoveOfItemFromOriginalIndexPath:(NSIndexPath *) originalIndexPath atCurrentIndexPath:(NSIndexPath *) currentIndexPath toProposedIndexPath:(NSIndexPath *) proposedIndexPath;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ During the interactive moving of an item, the collection view calls this method 
 
 ## See Also
 
-- [func collectionView(UICollectionView, transitionLayoutForOldLayout: UICollectionViewLayout, newLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout](uicollectionviewdelegate/collectionview(_:transitionlayoutforoldlayout:newlayout:).md)
+### Handling layout changes
+- [func collectionView(UICollectionView, transitionLayoutForOldLayout: UICollectionViewLayout, newLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout](./collectionview%28_,transitionlayoutforoldlayout,newlayout%29.md)
   Asks for the custom transition layout to use when moving between the specified layouts.
-- [func collectionView(UICollectionView, targetContentOffsetForProposedContentOffset: CGPoint) -> CGPoint](uicollectionviewdelegate/collectionview(_:targetcontentoffsetforproposedcontentoffset:).md)
+- [func collectionView(UICollectionView, targetContentOffsetForProposedContentOffset: CGPoint) -> CGPoint](./collectionview%28_,targetcontentoffsetforproposedcontentoffset%29.md)
   Gives the delegate an opportunity to customize the content offset for layout changes and animated updates.
 
 

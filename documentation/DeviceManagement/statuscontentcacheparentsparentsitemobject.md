@@ -1,7 +1,8 @@
 # StatusContentCacheParentsParentsItemObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A parent Content Cache.
 
@@ -10,13 +11,15 @@ A parent Content Cache.
 
 ## Declaration
 
-```swift
+```
 object StatusContentCacheParentsParentsItemObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the system removed the parent entry and only this key and the `identifier` key are present in the status item object.
+
+  **Default**: `false`
 - `address` (string) *(required)*: The local IPv4 address of the parent Content Cache.
 - `healthy` (boolean) *(required)*: If `true,` the parent Content Cache is able to respond to requests from this Content Cache.
 - `identifier` (string) *(required)*: The unique identifier of the parent Content Cache.

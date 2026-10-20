@@ -1,7 +1,8 @@
 # allowsAccessibilityReader
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow the Accessibility Reader during an assessment.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether to allow the Accessibility Reader during 
 var allowsAccessibilityReader: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilityReader;
+```
+
 #### Discussion
 
-Users can enable the Accessibility Reader in the Settings app (Accessibility > Read & Speak > Accessibility Reader) to have text content formatted or read aloud. An assessment session disables the Accessibility Reader by default, but you can allow it by setting [`allowsAccessibilityReader`](aeassessmentconfiguration/allowsaccessibilityreader.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable the Accessibility Reader in the Settings app (Accessibility > Read & Speak > Accessibility Reader) to have text content formatted or read aloud. An assessment session disables the Accessibility Reader by default, but you can allow it by setting [`allowsAccessibilityReader`](./allowsaccessibilityreader.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](avassetexportsession/resumptionfailurereason/init(rawvalue:).md)
+### Creating a failure reason
+- [init(rawValue: String)](./init%28rawvalue%29.md)
 
 
 ---

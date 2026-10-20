@@ -1,7 +1,8 @@
 # lockSetDestroyed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Lock set has been destroyed and is no longer available.
 

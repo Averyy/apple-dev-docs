@@ -1,7 +1,8 @@
 # month(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Change the representation of the month in the format.
 

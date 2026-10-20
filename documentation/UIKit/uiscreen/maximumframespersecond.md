@@ -1,7 +1,8 @@
 # maximumFramesPerSecond
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of frames per second a screen can render.
 
@@ -15,6 +16,10 @@ The maximum number of frames per second a screen can render.
 
 ```swift
 var maximumFramesPerSecond: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger maximumFramesPerSecond;
 ```
 
 #### Discussion

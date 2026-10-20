@@ -1,7 +1,8 @@
 # init(duration:dampingRatio:animations:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the animator object with spring-based timing information.
 
@@ -18,6 +19,10 @@ Initializes the animator object with spring-based timing information.
 convenience init(duration: TimeInterval, dampingRatio ratio: CGFloat, animations: (() -> Void)? = nil)
 ```
 
+```objc
+- (instancetype) initWithDuration:(NSTimeInterval) duration dampingRatio:(CGFloat) ratio animations:(void (^)()) animations;
+```
+
 #### Return Value
 
 An initialized animator object or `nil` if the object could not be created.
@@ -26,7 +31,7 @@ An initialized animator object or `nil` if the object could not be created.
 
 Spring-based animations cause the value of a property to accelerate initially toward its new value and then oscillate around that value until before finally coming to rest on the value. The initial amount of acceleration is proportional to the difference between the start and end values of the property. In other words, the greater the difference between the start and end values, the greater the initial acceleration. The `ratio` parameter determines the amount of damping applied to the initial acceleration. Lower damping values correspond to less resistance to the acceleration and more oscillation before coming to rest. Higher damping values correspond to more resistance and less oscillation.
 
-The animator object returned by this method begins in the [`UIViewAnimatingState.inactive`](uiviewanimatingstate/inactive.md) state. You must explicitly start the animations by calling the [`startAnimation()`](uiviewanimating/startanimation().md) method.
+The animator object returned by this method begins in the [`UIViewAnimatingState.inactive`](../uiviewanimatingstate/inactive.md) state. You must explicitly start the animations by calling the [`startAnimation()`](../uiviewanimating/startanimation%28%29.md) method.
 
 ## Parameters
 
@@ -36,13 +41,14 @@ The animator object returned by this method begins in the [`UIViewAnimatingState
 
 ## See Also
 
-- [convenience init(duration: TimeInterval, curve: UIView.AnimationCurve, animations: (() -> Void)?)](uiviewpropertyanimator/init(duration:curve:animations:).md)
+### Initializing a property animator
+- [convenience init(duration: TimeInterval, curve: UIView.AnimationCurve, animations: (() -> Void)?)](./init%28duration,curve,animations%29.md)
   Initializes the animator with a built-in UIKit timing curve.
-- [convenience init(duration: TimeInterval, controlPoint1: CGPoint, controlPoint2: CGPoint, animations: (() -> Void)?)](uiviewpropertyanimator/init(duration:controlpoint1:controlpoint2:animations:).md)
+- [convenience init(duration: TimeInterval, controlPoint1: CGPoint, controlPoint2: CGPoint, animations: (() -> Void)?)](./init%28duration,controlpoint1,controlpoint2,animations%29.md)
   Initializes the animator object with a cubic Bézier timing curve.
-- [init(duration: TimeInterval, timingParameters: any UITimingCurveProvider)](uiviewpropertyanimator/init(duration:timingparameters:).md)
+- [init(duration: TimeInterval, timingParameters: any UITimingCurveProvider)](./init%28duration,timingparameters%29.md)
   Initializes the animator object with a custom timing curve object.
-- [class func runningPropertyAnimator(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((UIViewAnimatingPosition) -> Void)?) -> Self](uiviewpropertyanimator/runningpropertyanimator(withduration:delay:options:animations:completion:).md)
+- [class func runningPropertyAnimator(withDuration: TimeInterval, delay: TimeInterval, options: UIView.AnimationOptions, animations: () -> Void, completion: ((UIViewAnimatingPosition) -> Void)?) -> Self](./runningpropertyanimator%28withduration,delay,options,animations,completion%29.md)
   Creates and returns an animator object that begins running its animations immediately.
 
 

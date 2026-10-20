@@ -1,7 +1,8 @@
 # connect(to:completionHandler:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connects the reader session to a tag and activates that tag.
 
@@ -24,11 +25,16 @@ A tag stays connected until your app connects to a different tag or restarts pol
 ## Parameters
 
 - `tag`: A tag to which the reader session should attempt to connect.
-- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter: - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`Error`](https://developer.apple.com/documentation/swift/error) object. The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCTagReaderSession`](nfctagreadersession.md).
+- `completionHandler`: A handler that the reader session invokes after completing the tag-connect request. The handler has the following parameter:
+
+  - **error**: `nil` when the session successfully connects to the tag; otherwise, an [`Error`](../../Swift/error.md) object.
+
+  The session calls `completionHandler` on the dispatch queue provided when creating the [`NFCTagReaderSession`](../nfctagreadersession.md).
 
 ## See Also
 
-- [var connectedTag: NFCTag?](nfctagreadersession/connectedtag-3mlqu.md)
+### Connecting to a Tag
+- [var connectedTag: NFCTag?](./connectedtag-3mlqu.md)
   The tag connected to the reader session.
 
 

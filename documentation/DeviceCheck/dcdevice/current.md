@@ -1,7 +1,8 @@
 # current
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A representation of the device for which you want to query the two bits of data.
 
@@ -18,6 +19,10 @@ A representation of the device for which you want to query the two bits of data.
 
 ```swift
 class var current: DCDevice { get }
+```
+
+```objc
+@property (class, readonly) DCDevice * currentDevice;
 ```
 
 

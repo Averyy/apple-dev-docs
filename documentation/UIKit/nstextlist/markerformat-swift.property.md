@@ -1,7 +1,8 @@
 # markerFormat
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the marker format string used by the receiver.
 
@@ -19,19 +20,25 @@ Returns the marker format string used by the receiver.
 var markerFormat: NSTextList.MarkerFormat { get }
 ```
 
+```objc
+@property (strong, readonly) NSTextListMarkerFormat markerFormat;
+```
+
 #### Return Value
 
 The marker format string used by the receiver.
 
 ## See Also
 
-- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](nstextlist/init(markerformat:options:).md)
+### Related Documentation
+- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](./init%28markerformat,options%29.md)
   Returns an initialized text list.
-- [NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct.md)
+### Working with markers
+- [NSTextList.MarkerFormat](./markerformat-swift.struct.md)
   Constants that describe marker symbols you can apply to list elements in text lists.
-- [func marker(forItemNumber: Int) -> String](nstextlist/marker(foritemnumber:).md)
+- [func marker(forItemNumber: Int) -> String](./marker%28foritemnumber%29.md)
   Returns the computed value for a specific ordinal position in the list.
-- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+- [class var includesTextListMarkers: Bool](./includestextlistmarkers.md)
   A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
 

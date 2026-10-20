@@ -1,7 +1,8 @@
 # networkSettingsCanceled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The request to set or clear the tunnel network settings was canceled.
 
@@ -21,9 +22,10 @@ static var networkSettingsCanceled: NETunnelProviderError.Code { get }
 
 ## See Also
 
-- [static var networkSettingsInvalid: NETunnelProviderError.Code](netunnelprovidererror-swift.struct/networksettingsinvalid.md)
+### Error codes
+- [static var networkSettingsInvalid: NETunnelProviderError.Code](./networksettingsinvalid.md)
   The provided tunnel network settings are invalid.
-- [static var networkSettingsFailed: NETunnelProviderError.Code](netunnelprovidererror-swift.struct/networksettingsfailed.md)
+- [static var networkSettingsFailed: NETunnelProviderError.Code](./networksettingsfailed.md)
   The request to set or clear the tunnel network settings failed.
 
 

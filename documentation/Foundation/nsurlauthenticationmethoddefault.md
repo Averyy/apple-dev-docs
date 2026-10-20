@@ -1,7 +1,8 @@
 # NSURLAuthenticationMethodDefault
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use the default authentication method for a protocol.
 
@@ -20,13 +21,18 @@ Use the default authentication method for a protocol.
 let NSURLAuthenticationMethodDefault: String
 ```
 
+```c
+extern NSString * const NSURLAuthenticationMethodDefault;
+```
+
 ## See Also
 
-- [let NSURLAuthenticationMethodHTMLForm: String](nsurlauthenticationmethodhtmlform.md)
+### Task-specific authentication challenges
+- [let NSURLAuthenticationMethodHTMLForm: String](./nsurlauthenticationmethodhtmlform.md)
   Use HTML form authentication for this protection space.
-- [let NSURLAuthenticationMethodHTTPBasic: String](nsurlauthenticationmethodhttpbasic.md)
+- [let NSURLAuthenticationMethodHTTPBasic: String](./nsurlauthenticationmethodhttpbasic.md)
   Use HTTP basic authentication for this protection space.
-- [let NSURLAuthenticationMethodHTTPDigest: String](nsurlauthenticationmethodhttpdigest.md)
+- [let NSURLAuthenticationMethodHTTPDigest: String](./nsurlauthenticationmethodhttpdigest.md)
   Use HTTP digest authentication for this protection space.
 
 

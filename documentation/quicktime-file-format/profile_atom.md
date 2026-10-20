@@ -1,9 +1,12 @@
 # Profile atom ('prfl')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that expresses profiles or feature codes for features that occur in the movie.
+
+> **Deprecated**: Profile atoms are deprecated in the QuickTime file format. The information that follows documents existing content containing profile atoms and should not be used for new development.
 
 #### Overview
 
@@ -36,12 +39,12 @@ The following table shows the layout of the profile atom.
 
 | Data field | Bytes |
 | --- | --- |
-| [`Size`](profile_atom/size.md) | 4 |
-| [`Type`](profile_atom/type.md) = `'prfl'` | 4 |
-| [`Version`](profile_atom/version.md) | 1 |
-| [`Flags`](profile_atom/flags.md) | 3 |
-| [`Number of feature entries`](profile_atom/number_of_feature_entries.md) | 4 |
-| [`Feature entries`](profile_atom/feature_entries.md) | `n` x 32 |
+| [`Size`](./profile_atom/size.md) | 4 |
+| [`Type`](./profile_atom/type.md) = `'prfl'` | 4 |
+| [`Version`](./profile_atom/version.md) | 1 |
+| [`Flags`](./profile_atom/flags.md) | 3 |
+| [`Number of feature entries`](./profile_atom/number_of_feature_entries.md) | 4 |
+| [`Feature entries`](./profile_atom/feature_entries.md) | `n` x 32 |
 
 #### Syntax
 
@@ -62,28 +65,29 @@ aligned(8) class ProfileAtom
 
 The profile atom is a full atom, so it has an 8-bit version and 24 bits of flags. For this specification, the version is `0` and the flags have the value `0`. A reader compliant with this specification should treat any profile atom with a nonzero version value as if it did not exist.
 
-For more information on setting feature entries, see [`Feature entries`](profile_atom/feature_entries.md).
+For more information on setting feature entries, see [`Feature entries`](./profile_atom/feature_entries.md).
 
 ## Topics
 
 ### Data fields
-- [Size](profile_atom/size.md)
+- [Size](./profile_atom/size.md)
   A 32-bit integer that specifies the number of bytes in this atom.
-- [Type](profile_atom/type.md)
+- [Type](./profile_atom/type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](profile_atom/version.md)
+- [Version](./profile_atom/version.md)
   An 8-bit integer that holds the version.
-- [Flags](profile_atom/flags.md)
+- [Flags](./profile_atom/flags.md)
   An 8-bit integer with flags.
-- [Number of feature entries](profile_atom/number_of_feature_entries.md)
+- [Number of feature entries](./profile_atom/number_of_feature_entries.md)
   A 32-bit integer that indicates how many feature entries are in the atom.
-- [Feature entries](profile_atom/feature_entries.md)
+- [Feature entries](./profile_atom/feature_entries.md)
   A list of feature entries.
 
 ## See Also
 
-- [About this appendix](about_this_appendix.md)
-- [Universal features](universal_features.md)
+### Building a profile atom
+- [About this appendix](./about_this_appendix.md)
+- [Universal features](./universal_features.md)
   Features that you include in any file that includes a profile atom.
 
 

@@ -1,7 +1,8 @@
 # init(channel:key:velocity:duration:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a MIDI channel, key number, velocity, and duration.
 
@@ -17,6 +18,10 @@ Creates an event with a MIDI channel, key number, velocity, and duration.
 
 ```swift
 init(channel: UInt32, key keyNum: UInt32, velocity: UInt32, duration: AVMusicTimeStamp)
+```
+
+```objc
+- (instancetype) initWithChannel:(UInt32) channel key:(UInt32) keyNum velocity:(UInt32) velocity duration:(AVMusicTimeStamp) duration;
 ```
 
 ## Parameters

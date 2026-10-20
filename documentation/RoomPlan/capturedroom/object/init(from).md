@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object by deserializing the specified decoder.
 

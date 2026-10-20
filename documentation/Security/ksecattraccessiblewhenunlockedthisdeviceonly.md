@@ -1,7 +1,8 @@
 # kSecAttrAccessibleWhenUnlockedThisDeviceOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The data in the keychain item can be accessed only while the device is unlocked by the user.
 
@@ -20,9 +21,13 @@ The data in the keychain item can be accessed only while the device is unlocked 
 let kSecAttrAccessibleWhenUnlockedThisDeviceOnly: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrAccessibleWhenUnlockedThisDeviceOnly;
+```
+
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # DecodingError
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during the decoding of a value.
 
@@ -23,45 +24,46 @@ enum DecodingError
 ## Topics
 
 ### Structures
-- [DecodingError.Context](decodingerror/context.md)
+- [DecodingError.Context](./decodingerror/context.md)
   The context in which the error occurred.
 ### Enumeration Cases
-- [case dataCorrupted(DecodingError.Context)](decodingerror/datacorrupted(_:).md)
+- [case dataCorrupted(DecodingError.Context)](./decodingerror/datacorrupted%28_%29.md)
   An indication that the data is corrupted or otherwise invalid.
-- [case keyNotFound(any CodingKey, DecodingError.Context)](decodingerror/keynotfound(_:_:).md)
+- [case keyNotFound(any CodingKey, DecodingError.Context)](./decodingerror/keynotfound%28_,_%29.md)
   An indication that a keyed decoding container was asked for an entry for the given key, but did not contain one.
-- [case typeMismatch(any Any.Type, DecodingError.Context)](decodingerror/typemismatch(_:_:).md)
+- [case typeMismatch(any Any.Type, DecodingError.Context)](./decodingerror/typemismatch%28_,_%29.md)
   An indication that a value of the given type could not be decoded because it did not match the type of what was found in the encoded payload.
-- [case valueNotFound(any Any.Type, DecodingError.Context)](decodingerror/valuenotfound(_:_:).md)
+- [case valueNotFound(any Any.Type, DecodingError.Context)](./decodingerror/valuenotfound%28_,_%29.md)
   An indication that a non-optional value of the given type was expected, but a null value was found.
 ### Type Methods
-- [static func dataCorruptedError<C>(forKey: C.Key, in: C, debugDescription: String) -> DecodingError](decodingerror/datacorruptederror(forkey:in:debugdescription:).md)
+- [static func dataCorruptedError<C>(forKey: C.Key, in: C, debugDescription: String) -> DecodingError](./decodingerror/datacorruptederror%28forkey,in,debugdescription%29.md)
   Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
-- [static func dataCorruptedError(in: any SingleValueDecodingContainer, debugDescription: String) -> DecodingError](decodingerror/datacorruptederror(in:debugdescription:)-4ruvu.md)
+- [static func dataCorruptedError(in: any SingleValueDecodingContainer, debugDescription: String) -> DecodingError](./decodingerror/datacorruptederror%28in,debugdescription%29-4ruvu.md)
   Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
-- [static func dataCorruptedError(in: any UnkeyedDecodingContainer, debugDescription: String) -> DecodingError](decodingerror/datacorruptederror(in:debugdescription:)-5on9z.md)
+- [static func dataCorruptedError(in: any UnkeyedDecodingContainer, debugDescription: String) -> DecodingError](./decodingerror/datacorruptederror%28in,debugdescription%29-5on9z.md)
   Returns a new `.dataCorrupted` error using a constructed coding path and the given debug description.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](decodingerror/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./decodingerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Error](error.md)
-- [Escapable](escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Error](./error.md)
+- [Escapable](./escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Encoder](encoder.md)
+### Encoders and Decoders
+- [protocol Encoder](./encoder.md)
   A type that can encode values into a native format for external representation.
-- [protocol Decoder](decoder.md)
+- [protocol Decoder](./decoder.md)
   A type that can decode values from a native format into in-memory representations.
-- [enum EncodingError](encodingerror.md)
+- [enum EncodingError](./encodingerror.md)
   An error that occurs during the encoding of a value.
 
 

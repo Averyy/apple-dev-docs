@@ -1,7 +1,8 @@
 # makeMutablePixelBuffer()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Vends a CVMutablePixelBuffer to use for rendering. The buffer will have its kCVImageBufferCleanApertureKey and kCVImageBufferPixelAspectRatioKey attachments set to match the current composition processor properties.
 
@@ -25,11 +26,12 @@ A CVMutablePixelBuffer to use for rendering.
 
 #### Discussion
 
-> **Note**: Insufficient memory or other system error.
+> **Throws**: Insufficient memory or other system error.
 
 ## See Also
 
-- [func newPixelBuffer() -> CVPixelBuffer?](avvideocompositionrendercontext/newpixelbuffer.md)
+### Creating the pixel buffer
+- [func newPixelBuffer() -> CVPixelBuffer?](./newpixelbuffer%28%29.md)
   Returns a pixel buffer to use for rendering.
 
 

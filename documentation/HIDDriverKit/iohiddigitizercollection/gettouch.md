@@ -1,21 +1,23 @@
 # getTouch
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool getTouch();
 ```
 
 ## See Also
 
-- [setTouch](iohiddigitizercollection/settouch.md)
+### Accessing Touch Data
+- [setTouch](./settouch.md)
 
 
 ---

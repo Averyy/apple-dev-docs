@@ -1,7 +1,8 @@
 # $isExpanded
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +19,8 @@ var $isExpanded: Binding<Bool> { get }
 
 ## See Also
 
-- [var isExpanded: Bool](disclosuregroupstyleconfiguration/isexpanded.md)
+### Managing disclosure
+- [var isExpanded: Bool](./isexpanded.md)
   A binding to a Boolean that indicates whether the disclosure group is expanded.
 
 

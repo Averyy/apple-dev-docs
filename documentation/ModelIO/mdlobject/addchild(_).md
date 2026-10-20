@@ -1,7 +1,8 @@
 # addChild(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child object to this object, creating a container for the object’s children if necessary.
 
@@ -19,11 +20,15 @@ Adds a child object to this object, creating a container for the object’s chil
 func addChild(_ child: MDLObject)
 ```
 
+```objc
+- (void) addChild:(MDLObject *) child;
+```
+
 #### Discussion
 
-Many asset formats describe a hierarchy of transforms that model the spatial relationships between meshes, lights, and cameras in the asset. In such formats, hierarchic transforms are [`MDLObject`](mdlobject.md) instances whose [`children`](mdlobject/children.md) property references the objects affected by the transform—and those objects can be other [`MDLObject`](mdlobject.md) instances with children of their own.
+Many asset formats describe a hierarchy of transforms that model the spatial relationships between meshes, lights, and cameras in the asset. In such formats, hierarchic transforms are [`MDLObject`](../mdlobject.md) instances whose [`children`](./children.md) property references the objects affected by the transform—and those objects can be other [`MDLObject`](../mdlobject.md) instances with children of their own.
 
-If the object’s [`children`](mdlobject/children.md) property is `nil`, this method sets that property to a new [`MDLObjectContainer`](mdlobjectcontainer.md) instance before adding the child object.
+If the object’s [`children`](./children.md) property is `nil`, this method sets that property to a new [`MDLObjectContainer`](../mdlobjectcontainer.md) instance before adding the child object.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ If the object’s [`children`](mdlobject/children.md) property is `nil`, this me
 
 ## See Also
 
-- [var parent: MDLObject?](mdlobject/parent.md)
+### Working with Object Hierarchies
+- [var parent: MDLObject?](./parent.md)
   The parent object that contains this object.
-- [var children: any MDLObjectContainerComponent](mdlobject/children.md)
+- [var children: any MDLObjectContainerComponent](./children.md)
   A component that manages this object’s collection of children.
-- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](mdlobject/enumeratechildobjects(of:root:using:stoppointer:).md)
+- [func enumerateChildObjects(of: AnyClass, root: MDLObject, using: (MDLObject, UnsafeMutablePointer<ObjCBool>) -> Void, stopPointer: UnsafeMutablePointer<ObjCBool>)](./enumeratechildobjects%28of,root,using,stoppointer%29.md)
   Executes the specified block using each object in this object’s child hierarchy.
-- [var path: String](mdlobject/path.md)
+- [var path: String](./path.md)
   A path that identifies the object in an asset’s object hierarchy using object names.
-- [func atPath(String) -> MDLObject](mdlobject/atpath(_:).md)
+- [func atPath(String) -> MDLObject](./atpath%28_%29.md)
   Returns the child object at the specified path.
 
 

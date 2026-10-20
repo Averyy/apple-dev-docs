@@ -1,7 +1,8 @@
 # nonRetainedElements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document elements you’re requesting and intend to retain no longer than necessary to process the result in realtime.
 
@@ -18,11 +19,12 @@ var nonRetainedElements: [MobilePhotoIDDataRequest.Element]
 
 ## See Also
 
-- [init(retainedElements: [MobilePhotoIDDataRequest.Element], nonRetainedElements: [MobilePhotoIDDataRequest.Element])](mobilephotoiddatarequest/init(retainedelements:nonretainedelements:).md)
+### Creating a data request
+- [init(retainedElements: [MobilePhotoIDDataRequest.Element], nonRetainedElements: [MobilePhotoIDDataRequest.Element])](./init%28retainedelements,nonretainedelements%29.md)
   Returns a photo ID data request.
-- [MobilePhotoIDDataRequest.Element](mobilephotoiddatarequest/element.md)
+- [MobilePhotoIDDataRequest.Element](./element.md)
   A type that represents an element you can request from a photo ID.
-- [var retainedElements: [MobilePhotoIDDataRequest.Element]](mobilephotoiddatarequest/retainedelements.md)
+- [var retainedElements: [MobilePhotoIDDataRequest.Element]](./retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
 
 

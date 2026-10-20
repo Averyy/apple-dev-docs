@@ -1,7 +1,8 @@
 # prefersHoverToolPreview
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person’s preference for whether holding a supported model of Apple Pencil close to the screen shows a preview of the current drawing tool, as specified in the Settings app.
 
@@ -15,6 +16,10 @@ A person’s preference for whether holding a supported model of Apple Pencil cl
 
 ```swift
 class var prefersHoverToolPreview: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) BOOL prefersHoverToolPreview;
 ```
 
 

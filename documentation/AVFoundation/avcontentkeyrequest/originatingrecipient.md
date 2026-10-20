@@ -1,7 +1,8 @@
 # originatingRecipient
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AVContentKeyRecipient which initiated this request, if any.
 
@@ -20,6 +21,10 @@ The AVContentKeyRecipient which initiated this request, if any.
 weak var originatingRecipient: (any AVContentKeyRecipient)? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) id<AVContentKeyRecipient> originatingRecipient;
+```
+
 #### Discussion
 
 The originatingRecipient is an AVFoundation object responsible for initiating an AVContentKeyRequest. For example, an AVURLAsset used for playback can trigger an AVContentKeyRequest.
@@ -32,19 +37,20 @@ These interstitial AVURLAssets may be retrieved from the primary AVURLAsset via 
 
 ## See Also
 
-- [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
+### Getting content key request properties
+- [var identifier: (any Sendable)?](./identifier.md)
   The identifier for the content key.
-- [var canProvidePersistableContentKey: Bool](avcontentkeyrequest/canprovidepersistablecontentkey.md)
+- [var canProvidePersistableContentKey: Bool](./canprovidepersistablecontentkey.md)
   The content key request used to create a persistable content key or respond to a previous request with a persistable content key.
-- [var error: (any Error)?](avcontentkeyrequest/error.md)
+- [var error: (any Error)?](./error.md)
   The error description for a failed key request.
-- [var initializationData: Data?](avcontentkeyrequest/initializationdata.md)
+- [var initializationData: Data?](./initializationdata.md)
   The data used to obtain a key response.
-- [var renewsExpiringResponseData: Bool](avcontentkeyrequest/renewsexpiringresponsedata.md)
+- [var renewsExpiringResponseData: Bool](./renewsexpiringresponsedata.md)
   A Boolean value that indicates whether the content key request renews previously provided response data.
-- [var status: AVContentKeyRequest.Status](avcontentkeyrequest/status-swift.property.md)
+- [var status: AVContentKeyRequest.Status](./status-swift.property.md)
   The current state of the content key request.
-- [AVContentKeyRequest.Status](avcontentkeyrequest/status-swift.enum.md)
+- [AVContentKeyRequest.Status](./status-swift.enum.md)
   The status for a content key request.
 
 

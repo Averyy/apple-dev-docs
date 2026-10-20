@@ -1,7 +1,8 @@
 # function
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The arithmetic function.
 
@@ -11,8 +12,10 @@ The arithmetic function.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,11 +25,12 @@ var function: BNNS.ArithmeticBinaryFunction
 
 ## See Also
 
-- [var inputADescriptorType: BNNS.DescriptorType](bnns/fusedbinaryarithmeticparameters/inputadescriptortype.md)
+### Inspecting the Properties of a Fused Arithmetic Parameters Structure
+- [var inputADescriptorType: BNNS.DescriptorType](./inputadescriptortype.md)
   The descriptor type of the first input.
-- [var inputBDescriptorType: BNNS.DescriptorType](bnns/fusedbinaryarithmeticparameters/inputbdescriptortype.md)
+- [var inputBDescriptorType: BNNS.DescriptorType](./inputbdescriptortype.md)
   The descriptor type of the second input.
-- [var outputDescriptorType: BNNS.DescriptorType](bnns/fusedbinaryarithmeticparameters/outputdescriptortype.md)
+- [var outputDescriptorType: BNNS.DescriptorType](./outputdescriptortype.md)
   The descriptor type of the output.
 
 

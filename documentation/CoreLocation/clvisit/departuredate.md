@@ -1,7 +1,8 @@
 # departureDate
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The approximate time at which the user left the specified location.
 
@@ -17,13 +18,18 @@ The approximate time at which the user left the specified location.
 var departureDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * departureDate;
+```
+
 #### Discussion
 
-When the visit object does not include departure information, this property is set to the date returned by the [`distantFuture`](https://developer.apple.com/documentation/foundation/nsdate/distantfuture) method of [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate).
+When the visit object does not include departure information, this property is set to the date returned by the [`distantFuture`](../../Foundation/nsdate/distantfuture.md) method of [`NSDate`](../../Foundation/nsdate.md).
 
 ## See Also
 
-- [var arrivalDate: Date](clvisit/arrivaldate.md)
+### Getting the visit duration
+- [var arrivalDate: Date](./arrivaldate.md)
   The approximate time at which the user arrived at the specified location.
 
 

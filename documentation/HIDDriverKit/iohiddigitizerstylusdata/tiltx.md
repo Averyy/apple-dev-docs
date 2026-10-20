@@ -1,51 +1,53 @@
 # tiltX
 
 **Framework**: HIDDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tilt of the stylus across the x-axis.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOFixed tiltX;
 ```
 
 ## See Also
 
-- [identifier](iohiddigitizerstylusdata/identifier.md)
+### Getting the Stylus Data
+- [identifier](./identifier.md)
   A unique stylus identifier.
-- [x](iohiddigitizerstylusdata/x.md)
+- [x](./x.md)
   An x-axis value in the range `0.0` to `1.0`.
-- [y](iohiddigitizerstylusdata/y.md)
+- [y](./y.md)
   A y-axis value in the range `0.0` to `1.0`.
-- [tipPressure](iohiddigitizerstylusdata/tippressure.md)
+- [tipPressure](./tippressure.md)
   A tip pressure value in the range `0.0` to `1.0`.
-- [barrelPressure](iohiddigitizerstylusdata/barrelpressure.md)
+- [barrelPressure](./barrelpressure.md)
   The barrel pressure value in the range `0.0` to `1.0`.
-- [tiltY](iohiddigitizerstylusdata/tilty.md)
+- [tiltY](./tilty.md)
   The tilt of the stylus across the y-axis.
-- [twist](iohiddigitizerstylusdata/twist.md)
+- [twist](./twist.md)
   The clockwise rotation of the stylus.
-- [pointerType](iohiddigitizerstylusdata/pointertype.md)
+- [pointerType](./pointertype.md)
   An optional pointer type defined by vendor.
-- [effect](iohiddigitizerstylusdata/effect.md)
+- [effect](./effect.md)
   An optional stylus effect defined by vendor.
-- [uniqueID](iohiddigitizerstylusdata/uniqueid.md)
+- [uniqueID](./uniqueid.md)
   An optional unique identifier for the stylus.
-- [inRange](iohiddigitizerstylusdata/inrange.md)
+- [inRange](./inrange.md)
   A single-bit Boolean that indicates whether the stylus is in range.
-- [tip](iohiddigitizerstylusdata/tip.md)
+- [tip](./tip.md)
   A single-bit Boolean that indicates whether the tip of the stylus is in contact with the surface of the digitizer.
-- [barrelSwitch](iohiddigitizerstylusdata/barrelswitch.md)
+- [barrelSwitch](./barrelswitch.md)
   A single-bit Boolean that indicates whether the barrel switch button is pressed.
-- [invert](iohiddigitizerstylusdata/invert.md)
+- [invert](./invert.md)
   A single-bit Boolean that indicates whether the stylus is inverted.
-- [eraser](iohiddigitizerstylusdata/eraser.md)
+- [eraser](./eraser.md)
   A Boolean value that indicates whether the inverted stylus is in contact with the surface of the digitizer.
 
 

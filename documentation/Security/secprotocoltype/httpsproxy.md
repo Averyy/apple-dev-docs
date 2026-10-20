@@ -1,7 +1,8 @@
 # SecProtocolType.httpsProxy
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates HTTPS proxy.
 
@@ -13,6 +14,10 @@ Indicates HTTPS proxy.
 
 ```swift
 case httpsProxy
+```
+
+```c
+kSecProtocolTypeHTTPSProxy
 ```
 
 

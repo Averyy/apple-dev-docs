@@ -1,7 +1,8 @@
 # init(targetEntity:isEnabled:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set entity enabled action.
 

@@ -1,7 +1,8 @@
 # locationManager(_:didUpdateTo:from:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new location value is available.
 
@@ -14,9 +15,13 @@ Tells the delegate that a new location value is available.
 optional func locationManager(_ manager: CLLocationManager, didUpdateTo newLocation: CLLocation, from oldLocation: CLLocation)
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didUpdateToLocation:(CLLocation *) newLocation fromLocation:(CLLocation *) oldLocation;
+```
+
 #### Discussion
 
-By the time this message is delivered to your delegate, the new location data is also available directly from the [`CLLocationManager`](cllocationmanager.md) object. The `newLocation` parameter may contain the data that was cached from a previous usage of the location service. You can use the [`timestamp`](cllocation/timestamp.md) property of the location object to determine how recent the location data is.
+By the time this message is delivered to your delegate, the new location data is also available directly from the [`CLLocationManager`](../cllocationmanager.md) object. The `newLocation` parameter may contain the data that was cached from a previous usage of the location service. You can use the [`timestamp`](../cllocation/timestamp.md) property of the location object to determine how recent the location data is.
 
 ## Parameters
 
@@ -26,9 +31,10 @@ By the time this message is delivered to your delegate, the new location data is
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didUpdateLocations: [CLLocation])](cllocationmanagerdelegate/locationmanager(_:didupdatelocations:).md)
+### Receiving location updates
+- [func locationManager(CLLocationManager, didUpdateLocations: [CLLocation])](./locationmanager%28_,didupdatelocations%29.md)
   Tells the delegate that new location data is available.
-- [func locationManager(CLLocationManager, didFinishDeferredUpdatesWithError: (any Error)?)](cllocationmanagerdelegate/locationmanager(_:didfinishdeferredupdateswitherror:).md)
+- [func locationManager(CLLocationManager, didFinishDeferredUpdatesWithError: (any Error)?)](./locationmanager%28_,didfinishdeferredupdateswitherror%29.md)
   Tells the delegate that updates will no longer be deferred.
 
 

@@ -1,7 +1,8 @@
 # buttonImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed in the sharing service picker item button.
 
@@ -14,13 +15,26 @@ The image displayed in the sharing service picker item button.
 var buttonImage: NSImage? { get set }
 ```
 
+*Mac Catalyst*
+
+```objc
+@property (strong, nullable) UIImage * buttonImage;
+```
+
+*macOS*
+
+```objc
+@property (strong, nullable) NSImage * buttonImage;
+```
+
 #### Discussion
 
 The default value of this property is a sharing service picker image.
 
 ## See Also
 
-- [var buttonTitle: String](nssharingservicepickertouchbaritem/buttontitle.md)
+### Configuring the appearance
+- [var buttonTitle: String](./buttontitle.md)
   The text displayed in the sharing service picker item button.
 
 

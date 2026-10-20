@@ -1,7 +1,8 @@
 # ListFormatStyle.Width.standard
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a standard list style.
 
@@ -28,9 +29,10 @@ The rawValue of `standard` is 0.
 
 ## See Also
 
-- [ListFormatStyle.Width.short](listformatstyle/width-swift.enum/short.md)
+### Widths
+- [ListFormatStyle.Width.short](./short.md)
   Specifies a short list style.
-- [ListFormatStyle.Width.narrow](listformatstyle/width-swift.enum/narrow.md)
+- [ListFormatStyle.Width.narrow](./narrow.md)
   Specifies a narrow list style, the shortest list style.
 
 

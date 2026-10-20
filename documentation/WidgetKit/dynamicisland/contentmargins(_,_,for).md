@@ -1,7 +1,8 @@
 # contentMargins(_:_:for:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides default content margins for the provided content modes in the Dynamic Island.
 
@@ -46,7 +47,8 @@ dynamicIsland
 
 ## See Also
 
-- [struct DynamicIslandMode](dynamicislandmode.md)
+### Specifying content margins
+- [struct DynamicIslandMode](../dynamicislandmode.md)
   A structure that offers values that describe the content mode for a Live Activity.
 
 

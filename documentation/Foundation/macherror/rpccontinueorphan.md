@@ -1,7 +1,8 @@
 # rpcContinueOrphan
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow an orphaned activation to continue executing.
 

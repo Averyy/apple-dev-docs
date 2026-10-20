@@ -1,7 +1,8 @@
 # reshape(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a dynamic reshape operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a dynamic reshape operation to the current graph.
 ```swift
 func reshape(to shape: some BNNSGraph.Builder.OperationParameter<Int32>) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: Link Presentation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a placeholder link view without metadata for a given URL.
 
@@ -19,9 +20,14 @@ Initializes a placeholder link view without metadata for a given URL.
 init(url URL: URL)
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
+```
+
 ## See Also
 
-- [init(metadata: LPLinkMetadata)](lplinkview/init(metadata:).md)
+### Creating a link view
+- [init(metadata: LPLinkMetadata)](./init%28metadata%29.md)
   Initializes a link view with specified metadata.
 
 

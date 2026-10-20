@@ -1,7 +1,8 @@
 # ClothSimulationComponent.Material.bodyMaterial(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A material for cloth bodies.
 
@@ -18,7 +19,8 @@ case bodyMaterial(ClothBodyMaterial)
 
 ## See Also
 
-- [ClothSimulationComponent.Material.colliderMaterial(_:)](clothsimulationcomponent/material/collidermaterial(_:).md)
+### Creating a material
+- [ClothSimulationComponent.Material.colliderMaterial(_:)](./collidermaterial%28_%29.md)
   A material for cloth colliders.
 
 

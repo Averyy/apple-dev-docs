@@ -1,6 +1,7 @@
 # About Component Behaviors
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Learn how to affect components’ reactions to device motion and scrolling.
 
@@ -16,23 +17,25 @@ Apple News Format has these behaviors for components:
 - [`Parallax`](https://developer.apple.com/documentation/applenewsformat/parallax). Causes a component to move at a specific speed.
 - [`Springy`](https://developer.apple.com/documentation/applenewsformat/springy). Causes a component to act as if it is held in place with a short spring.
 
-A *behavior* is different from an *animation*. A behavior is persistent and always in effect as long as the user is viewing the article. An animation occurs only once each time the user views the article. See [`About Component Animations`](about-component-animations.md).
+A *behavior* is different from an *animation*. A behavior is persistent and always in effect as long as the user is viewing the article. An animation occurs only once each time the user views the article. See [About Component Animations](./about-component-animations.md).
 
 ## See Also
 
-- [Adding Parallax Behavior](adding-parallax-behavior.md)
+### Related Documentation
+- [Adding Parallax Behavior](./adding-parallax-behavior.md)
   Create an illusion of multiple flat layers by causing the article body to overlap the header as the user scrolls.
-- [object Behavior](../applenewsformat/behavior.md)
+### Behaviors
+- [object Behavior](https://developer.apple.com/documentation/applenewsformat/behavior)
   Properties shared by all the behaviors you can use to affect how components react to device motion and scrolling.
-- [object BackgroundMotion](../applenewsformat/backgroundmotion.md)
+- [object BackgroundMotion](https://developer.apple.com/documentation/applenewsformat/backgroundmotion)
   The behavior whereby the background of a component moves in the opposite direction from the motion of the device.
-- [object BackgroundParallax](../applenewsformat/backgroundparallax.md)
+- [object BackgroundParallax](https://developer.apple.com/documentation/applenewsformat/backgroundparallax)
   The behavior whereby the background of a component moves slightly slower than a person’s scroll speed.
-- [object Motion](../applenewsformat/motion.md)
+- [object Motion](https://developer.apple.com/documentation/applenewsformat/motion)
   The behavior whereby a component reacts to the motion of the person’s device.
-- [object Parallax](../applenewsformat/parallax.md)
+- [object Parallax](https://developer.apple.com/documentation/applenewsformat/parallax)
   The behavior whereby a component moves at a speed different from the scroll speed.
-- [object Springy](../applenewsformat/springy.md)
+- [object Springy](https://developer.apple.com/documentation/applenewsformat/springy)
   The behavior whereby a component acts as if it’s on a short spring.
 
 

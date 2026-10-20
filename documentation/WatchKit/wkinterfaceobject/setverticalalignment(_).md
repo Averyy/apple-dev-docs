@@ -1,7 +1,8 @@
 # setVerticalAlignment(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the vertical alignment of an object relative to its container’s bounds.
 
@@ -14,6 +15,10 @@ Sets the vertical alignment of an object relative to its container’s bounds.
 func setVerticalAlignment(_ verticalAlignment: WKInterfaceObjectVerticalAlignment)
 ```
 
+```objc
+- (void) setVerticalAlignment:(WKInterfaceObjectVerticalAlignment) verticalAlignment;
+```
+
 #### Discussion
 
 Changes to the vertical alignment of an object are animatable.
@@ -24,7 +29,8 @@ Changes to the vertical alignment of an object are animatable.
 
 ## See Also
 
-- [func setHorizontalAlignment(WKInterfaceObjectHorizontalAlignment)](wkinterfaceobject/sethorizontalalignment(_:).md)
+### Setting an Object’s Alignment
+- [func setHorizontalAlignment(WKInterfaceObjectHorizontalAlignment)](./sethorizontalalignment%28_%29.md)
   Sets the horizontal alignment of an object relative to its container’s bounds.
 
 

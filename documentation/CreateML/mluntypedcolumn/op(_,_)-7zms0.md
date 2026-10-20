@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by testing whether each element in the first column is less than the corresponding element in the second column.
 
@@ -19,6 +20,16 @@ Creates a column of Booleans by testing whether each element in the first column
 static func < (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
+**Other overloads**:
+
+```swift
+static func < (a: MLUntypedColumn, b: any MLDataValueConvertible) -> MLUntypedColumn
+```
+
+```swift
+static func < (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
+```
+
 #### Return Value
 
 A new column of Booleans if the columns have the same size and underlying type; otherwise an invalid column.
@@ -30,15 +41,16 @@ A new column of Booleans if the columns have the same size and underlying type; 
 
 ## See Also
 
-- [static func == (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/==(_:_:)-3o7mo.md)
+### Comparing columns to generate an untyped column of booleans
+- [static func == (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./eqeq%28_,_%29-3o7mo.md)
   Creates a column of Booleans by testing whether each element in the first column is equal to the corresponding element in the second column.
-- [static func != (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/!=(_:_:)-86hu4.md)
+- [static func != (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./noteq%28_,_%29-86hu4.md)
   Creates a column of Booleans by testing whether each element in the first column is not equal to the corresponding element in the second column.
-- [static func > (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_(_:_:)-9r2zq.md)
+- [static func > (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./op%28_,_%29-9r2zq.md)
   Creates a column of Booleans by testing whether each element in the first column is greater than the corresponding element in the second column.
-- [static func <= (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_=(_:_:)-5xmwz.md)
+- [static func <= (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./opeq%28_,_%29-5xmwz.md)
   Creates a column of Booleans by testing whether each element in the first column is less than or equal to the corresponding element in the second column.
-- [static func >= (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](mluntypedcolumn/_=(_:_:)-4u3ir.md)
+- [static func >= (MLUntypedColumn, MLUntypedColumn) -> MLUntypedColumn](./opeq%28_,_%29-4u3ir.md)
   Creates a column of Booleans by testing whether each element in the first column is greater than or equal to the corresponding element in the second column.
 
 

@@ -1,7 +1,8 @@
 # applied(_:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reshapes a sequence of inputs.
 
@@ -31,7 +32,8 @@ An array of shaped arrays.
 
 ## See Also
 
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) throws -> MLShapedArray<Scalar>](reshaper/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) throws -> MLShapedArray<Scalar>](./applied%28to,eventhandler%29.md)
   Reshapes the input.
 
 

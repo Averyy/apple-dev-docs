@@ -1,7 +1,8 @@
 # extensionContext
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The context your credential provider extension uses to provide information to the system.
 
@@ -18,9 +19,14 @@ The context your credential provider extension uses to provide information to th
 var extensionContext: ASCredentialProviderExtensionContext { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ASCredentialProviderExtensionContext * extensionContext;
+```
+
 ## See Also
 
-- [class ASCredentialProviderExtensionContext](ascredentialproviderextensioncontext.md)
+### Getting the extension context
+- [class ASCredentialProviderExtensionContext](../ascredentialproviderextensioncontext.md)
   A mechanism that credential provider extensions use to communicate with the system.
 
 

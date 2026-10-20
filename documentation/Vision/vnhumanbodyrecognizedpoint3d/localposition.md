@@ -1,7 +1,8 @@
 # localPosition
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The three-dimensional position.
 
@@ -19,9 +20,13 @@ The three-dimensional position.
 var localPosition: simd_float4x4 { get }
 ```
 
+```objc
+@property (readonly) simd_float4x4 localPosition;
+```
+
 ## Mentions
 
-- [Identifying 3D human body poses in images](identifying-3d-human-body-poses-in-images.md)
+- [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
 
 ---

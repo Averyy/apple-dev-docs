@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-pruning-api.html
 
 # API Overview
 
-**
-
-- [.md](../_sources/source/opt-pruning-api.md)
-- **
-
-.pdf
-
-**
-
-# API Overview
-
- Table of contents 
-
-## Contents
-
-# API Overview
-
 ## Pruning APIs for Core ML model
 
 - [OpMagnitudePrunerConfig](https://apple.github.io/coremltools/source/coremltools.optimize.coreml.config.html#coremltools.optimize.coreml.OpMagnitudePrunerConfig): Prune the weights with a constant sparsity percentile.
@@ -181,5 +164,3 @@ pruner.finalize(inplace=True)
 If the Torch model already contains weights that have been zeroed out but are still in a dense representation, the `ct.optimize.coreml` APIs mentioned above can be used to generate a sparse representation Core ML model. If the Torch model was pruned using the `ct.optimize.torch` APIs mentioned above, then simply calling `ct.convert` should be sufficient to generate the sparse Core ML model.
 
 For more details, refer to [PyTorch Conversion Workflow](convert-pytorch-workflow.md).
-
-** Contents

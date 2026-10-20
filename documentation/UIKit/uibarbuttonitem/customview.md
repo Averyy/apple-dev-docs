@@ -1,7 +1,8 @@
 # customView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom view representing the item.
 
@@ -9,13 +10,17 @@ A custom view representing the item.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var customView: UIView? { get set }
+```
+
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIView * customView;
 ```
 
 

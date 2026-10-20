@@ -1,7 +1,8 @@
 # LogOutUserCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to force the current user to log out of a device.
 
@@ -12,14 +13,14 @@ The command to force the current user to log out of a device.
 
 ## Declaration
 
-```swift
+```
 object LogOutUserCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object LogOutUserCommand.Command](logoutusercommand/command-data.dictionary.md)
+- [object LogOutUserCommand.Command](./logoutusercommand/command-data.dictionary.md)
   The command to force the current user to log out of a device.
 
 ## Properties
@@ -29,7 +30,8 @@ object LogOutUserCommand
 
 ## See Also
 
-- [object LogOutUserResponse](logoutuserresponse.md)
+### Commands and responses
+- [object LogOutUserResponse](./logoutuserresponse.md)
   A response from the device after it processes the command to force the current user to log out of a device.
 
 

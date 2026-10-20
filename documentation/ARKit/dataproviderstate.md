@@ -1,7 +1,8 @@
 # DataProviderState
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of a data provider.
 
@@ -18,42 +19,43 @@ enum DataProviderState
 ## Topics
 
 ### Getting the state of a data provider
-- [DataProviderState.initialized](dataproviderstate/initialized.md)
+- [DataProviderState.initialized](./dataproviderstate/initialized.md)
   The data provider has been created.
-- [DataProviderState.running](dataproviderstate/running.md)
+- [DataProviderState.running](./dataproviderstate/running.md)
   The data provider is running.
-- [DataProviderState.stopped](dataproviderstate/stopped.md)
+- [DataProviderState.stopped](./dataproviderstate/stopped.md)
   The data provider is stopped.
-- [DataProviderState.paused](dataproviderstate/paused.md)
+- [DataProviderState.paused](./dataproviderstate/paused.md)
   The data provider is paused.
 ### Comparing data provider states
-- [var description: String](dataproviderstate/description.md)
+- [var description: String](./dataproviderstate/description.md)
   A textual representation of the state.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Setting up access to ARKit data](../visionos/setting-up-access-to-arkit-data.md)
+### Setup
+- [Setting up access to ARKit data](../visionOS/setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [class ARKitSession](arkitsession.md)
+- [class ARKitSession](./arkitsession.md)
   The main entry point for receiving data from ARKit.
-- [protocol DataProvider](dataprovider.md)
+- [protocol DataProvider](./dataprovider.md)
   A source of live data from ARKit.
-- [protocol Anchor](anchor.md)
+- [protocol Anchor](./anchor.md)
   The identity, location, and orientation of an object in world space.
-- [protocol TrackableAnchor](trackableanchor.md)
+- [protocol TrackableAnchor](./trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
-- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+- [protocol ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
   A type that provides an ARKit coordinate space with an optional correction applied.
-- [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
+- [struct ARKitCoordinateSpace](./arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 
 

@@ -1,7 +1,8 @@
 # UV Texture
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A MaterialX version of USD UV Texture reader.
 
@@ -15,7 +16,26 @@ A MaterialX version of USD UV Texture reader.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `Bias` | Color4 |
+| `Fallback` | Color4 |
+| `File` | AssetPath |
+| `Scale` | Color4 |
+| `St` | Vector2f |
+| `Wrap S` | String |
+| `Wrap T` | String |
+
+| Output | Type |
+| --- | --- |
+| `RGBA` | Color4 |
+| `RGB` | Color3 |
+| `Red` | Float |
+| `Green` | Float |
+| `Blue` | Float |
+| `Alpha` | Float |
+
+#### Parameter descriptions
 
 - **Bias**: The bias the node applies to all components of the texture. The node adds this parameter to the texture after multiplying it by the scale.
 - **Fallback**: The value to use if the texture can’t be read from the file.
@@ -25,7 +45,7 @@ A MaterialX version of USD UV Texture reader.
 - **Wrap S**: The way that the node handles `S` values outside of the range of `0-1`.
 - **Wrap T**: The way that the node handles `T` values outside of the range of `0-1`.
 
-#### Output Descriptions
+#### Output descriptions
 
 - **RGBA**: The `Color4` output of the texture that contains a red, green, blue, and alpha component.
 - **RGB**: The standard `Color3` output of the texture that contains a red, green, and blue component.
@@ -44,11 +64,12 @@ The `Wrap` parameters for the node tell the node how to handle `S` and `T` value
 
 ## See Also
 
-- [Image](2d-texture/image.md)
+### Nodes
+- [Image](./image.md)
   A texture referencing a 2D image file.
-- [Tiled Image](2d-texture/tiled-image.md)
+- [Tiled Image](./tiled-image.md)
   Samples data from an image with provisions for offsetting and tiling in UV space.
-- [Transform 2D](2d-texture/transform-2d.md)
+- [Transform 2D](./transform-2d.md)
   A node that applies an affine transformation to a 2d input.
 
 

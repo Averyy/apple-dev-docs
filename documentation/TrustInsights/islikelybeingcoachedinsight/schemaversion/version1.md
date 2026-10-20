@@ -1,7 +1,8 @@
 # IsLikelyBeingCoachedInsight.SchemaVersion.version1
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Values available in schema version1.
 
@@ -17,7 +18,7 @@ case version1
 
 #### Discussion
 
-The possible values for this version of the [`IsLikelyBeingCoachedInsight`](islikelybeingcoachedinsight.md)are “unknown”,  “medium”, and “high.”
+The possible values for this version of the [`IsLikelyBeingCoachedInsight`](../../islikelybeingcoachedinsight.md)are “unknown”,  “medium”, and “high.”
 
 
 ---

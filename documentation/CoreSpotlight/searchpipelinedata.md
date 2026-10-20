@@ -1,7 +1,8 @@
 # SearchPipelineData
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type you use to store the output from a custom stage.
 
@@ -25,41 +26,42 @@ A custom stage receives data as input and generate a `SearchPipelineData` struct
 ## Topics
 
 ### Configuring the pipeline data
-- [init(payload: SearchPipelineData.Payload)](searchpipelinedata/init(payload:).md)
+- [init(payload: SearchPipelineData.Payload)](./searchpipelinedata/init%28payload%29.md)
   Initializes the pipeline data with the specified payload value.
-- [static func items([SearchableItem]) -> SearchPipelineData](searchpipelinedata/items(_:).md)
+- [static func items([SearchableItem]) -> SearchPipelineData](./searchpipelinedata/items%28_%29.md)
   Creates a pipeline data structure from the an array of searchable items.
-- [static func scoredItems([ScoredSearchableItem]) -> SearchPipelineData](searchpipelinedata/scoreditems(_:).md)
+- [static func scoredItems([ScoredSearchableItem]) -> SearchPipelineData](./searchpipelinedata/scoreditems%28_%29.md)
   Creates a pipeline data structure from the an array of scored searchable items.
-- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
+- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](./searchpipelinedata/groupeditems%28_%29.md)
   Creates a pipeline data structure from a dictionary of attributes and searchable items.
-- [static func text(String) -> SearchPipelineData](searchpipelinedata/text(_:).md)
+- [static func text(String) -> SearchPipelineData](./searchpipelinedata/text%28_%29.md)
   Creates a pipeline data structure from a text string.
-- [static func count(Int) -> SearchPipelineData](searchpipelinedata/count(_:).md)
+- [static func count(Int) -> SearchPipelineData](./searchpipelinedata/count%28_%29.md)
   Creates a pipeline data structure from an integer value.
-- [static func statistic(name: String, value: Double) -> SearchPipelineData](searchpipelinedata/statistic(name:value:).md)
+- [static func statistic(name: String, value: Double) -> SearchPipelineData](./searchpipelinedata/statistic%28name,value%29.md)
   Creates a pipeline data structure from statistical information.
-- [static func table(SearchResultsTable) -> SearchPipelineData](searchpipelinedata/table(_:).md)
+- [static func table(SearchResultsTable) -> SearchPipelineData](./searchpipelinedata/table%28_%29.md)
   Creates a pipeline data structure from tabular data.
 ### Getting the pipeline data
-- [let payload: SearchPipelineData.Payload](searchpipelinedata/payload-swift.property.md)
+- [let payload: SearchPipelineData.Payload](./searchpipelinedata/payload-swift.property.md)
   The output data your custom stage produced.
-- [SearchPipelineData.Payload](searchpipelinedata/payload-swift.enum.md)
+- [SearchPipelineData.Payload](./searchpipelinedata/payload-swift.enum.md)
   The typed variants of data a pipeline stage can produce.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol CustomStage](customstage.md)
+### Tool customization
+- [protocol CustomStage](./customstage.md)
   A custom processing stage the Spotlight search tool uses to identify search results.
-- [enum SearchPipelineDataType](searchpipelinedatatype.md)
+- [enum SearchPipelineDataType](./searchpipelinedatatype.md)
   Data types that a pipeline stage accepts or produces.
-- [struct ScoredSearchableItem](scoredsearchableitem.md)
+- [struct ScoredSearchableItem](./scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 
 

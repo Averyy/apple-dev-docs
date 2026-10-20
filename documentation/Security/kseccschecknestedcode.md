@@ -1,7 +1,8 @@
 # kSecCSCheckNestedCode
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For code in bundle form, locate and recursively check embedded code.
 
@@ -13,6 +14,10 @@ For code in bundle form, locate and recursively check embedded code.
 
 ```swift
 var kSecCSCheckNestedCode: UInt32 { get }
+```
+
+```c
+kSecCSCheckNestedCode
 ```
 
 #### Discussion

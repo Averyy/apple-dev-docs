@@ -1,7 +1,8 @@
 # Locale.LanguageCode.IdentifierType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of ISO 639 language code.
 
@@ -23,18 +24,18 @@ enum IdentifierType
 ## Topics
 
 ### Enumeration Cases
-- [Locale.LanguageCode.IdentifierType.alpha2](locale/languagecode-swift.struct/identifiertype/alpha2.md)
+- [Locale.LanguageCode.IdentifierType.alpha2](./identifiertype/alpha2.md)
   Two-letter alpha-2 code, e.g. “en” for English
-- [Locale.LanguageCode.IdentifierType.alpha3](locale/languagecode-swift.struct/identifiertype/alpha3.md)
+- [Locale.LanguageCode.IdentifierType.alpha3](./identifiertype/alpha3.md)
   Three-letter alpha-3 code, e.g. “eng” for English
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

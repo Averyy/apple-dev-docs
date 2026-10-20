@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the type of content carried by a sample buffer instance.
 
@@ -23,24 +24,24 @@ enum ContentType
 ## Topics
 
 ### Enumeration Cases
-- [CMSampleBuffer.ContentType.dataBuffer](cmsamplebuffer/contenttype-swift.enum/databuffer.md)
+- [CMSampleBuffer.ContentType.dataBuffer](./contenttype-swift.enum/databuffer.md)
   Sample buffer is carrying a block buffer containing bytes.
-- [CMSampleBuffer.ContentType.markerOnly](cmsamplebuffer/contenttype-swift.enum/markeronly.md)
+- [CMSampleBuffer.ContentType.markerOnly](./contenttype-swift.enum/markeronly.md)
   Marker sample buffers have neither data nor format description. These buffers are used for signaling events via the attachments when sample buffer content is not available.
-- [CMSampleBuffer.ContentType.pixelBuffer](cmsamplebuffer/contenttype-swift.enum/pixelbuffer.md)
+- [CMSampleBuffer.ContentType.pixelBuffer](./contenttype-swift.enum/pixelbuffer.md)
   Sample buffer is carrying a CoreVideo pixel buffer.
-- [CMSampleBuffer.ContentType.sampleReference](cmsamplebuffer/contenttype-swift.enum/samplereference.md)
+- [CMSampleBuffer.ContentType.sampleReference](./contenttype-swift.enum/samplereference.md)
   Sample buffer references sample data at a URL.
-- [CMSampleBuffer.ContentType.taggedBuffers](cmsamplebuffer/contenttype-swift.enum/taggedbuffers.md)
+- [CMSampleBuffer.ContentType.taggedBuffers](./contenttype-swift.enum/taggedbuffers.md)
   Sample buffer is carrying a group of tagged buffers.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

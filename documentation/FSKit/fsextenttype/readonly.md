@@ -1,7 +1,8 @@
 # FSExtentType.readOnly
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An extent type to indicate read-only data.
 
@@ -14,15 +15,20 @@ An extent type to indicate read-only data.
 case readOnly
 ```
 
+```c
+FSExtentTypeReadOnly
+```
+
 #### Discussion
 
 Use this type to represent ranges in the file that data can be read but not written to.
 
 ## See Also
 
-- [FSExtentType.data](fsextenttype/data.md)
+### Working with extent types
+- [FSExtentType.data](./data.md)
   An extent type to indicate valid data.
-- [FSExtentType.zeroFill](fsextenttype/zerofill.md)
+- [FSExtentType.zeroFill](./zerofill.md)
   An extent type to indicate uninitialized data.
 
 

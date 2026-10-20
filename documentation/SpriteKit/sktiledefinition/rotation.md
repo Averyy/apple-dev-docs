@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the tile definition in 90˚ increments.
 
@@ -20,9 +21,14 @@ The rotation of the tile definition in 90˚ increments.
 var rotation: SKTileDefinitionRotation { get set }
 ```
 
+```objc
+@property (nonatomic) SKTileDefinitionRotation rotation;
+```
+
 ## See Also
 
-- [enum SKTileDefinitionRotation](sktiledefinitionrotation.md)
+### Rotating a Tile
+- [enum SKTileDefinitionRotation](../sktiledefinitionrotation.md)
   The allowed rotations for a given tile.
 
 

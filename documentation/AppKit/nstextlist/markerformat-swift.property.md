@@ -1,7 +1,8 @@
 # markerFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the marker format string used by the receiver.
 
@@ -14,15 +15,20 @@ Returns the marker format string used by the receiver.
 var markerFormat: NSTextList.MarkerFormat { get }
 ```
 
+```objc
+@property (strong, readonly) NSTextListMarkerFormat markerFormat;
+```
+
 #### Return Value
 
 The marker format string used by the receiver.
 
 ## See Also
 
-- [NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct.md)
+### Working with markers
+- [NSTextList.MarkerFormat](./markerformat-swift.struct.md)
   Constants that describe marker symbols you can apply to list elements in text lists.
-- [func marker(forItemNumber: Int) -> String](nstextlist/marker(foritemnumber:).md)
+- [func marker(forItemNumber: Int) -> String](./marker%28foritemnumber%29.md)
   Returns the computed value for a specific ordinal position in the list.
 
 

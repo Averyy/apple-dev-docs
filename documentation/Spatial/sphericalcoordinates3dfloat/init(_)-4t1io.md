@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new spherical coordinates structure from the specified Cartesian coordinates represented by a Spatial vector.
 

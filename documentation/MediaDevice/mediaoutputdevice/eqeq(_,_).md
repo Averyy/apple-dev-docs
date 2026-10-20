@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Media Device  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two devices are equal.
 

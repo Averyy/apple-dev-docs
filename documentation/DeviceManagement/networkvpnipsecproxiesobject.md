@@ -1,7 +1,8 @@
 # NetworkVPNIPSecProxiesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to use to configure `Proxies` for use with `VPN`.
 
@@ -14,33 +15,38 @@ The dictionary to use to configure `Proxies` for use with `VPN`.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecProxiesObject
 ```
 
 ## Topics
 
 ### Objects
-- [object NetworkVPNIPSecProxies_ProtocolObject](networkvpnipsecproxies_protocolobject.md)
+- [object NetworkVPNIPSecProxies_ProtocolObject](./networkvpnipsecproxies_protocolobject.md)
   The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 
 ## Properties
 
 - `AutoConfigEnable` (boolean): If `true`, enables automatic proxy configuration.
+
+  **Default**: `false`
 - `AutoConfigURLString` (string): The URL to the location of the proxy auto-configuration file. Used only when `ProxyAutoConfigEnable` is `true`.
 - `AutoDiscoveryEnable` (boolean): If `true`, enables proxy auto discovery.
+
+  **Default**: `true`
 - `Protocol` (NetworkVPNIPSecProxies_ProtocolObject): The dictionary to use to configure HTTP servers  for `Proxies` for use with `VPN`.
 - `SupplementalMatchDomains` ([string]): An array of domains that defines which hosts use proxy settings for hosts.
 
 ## See Also
 
-- [object NetworkVPNIPSecAuthenticationObject](networkvpnipsecauthenticationobject.md)
+### Objects
+- [object NetworkVPNIPSecAuthenticationObject](./networkvpnipsecauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIPSecDNSObject](networkvpnipsecdnsobject.md)
+- [object NetworkVPNIPSecDNSObject](./networkvpnipsecdnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIPSecIdleObject](networkvpnipsecidleobject.md)
+- [object NetworkVPNIPSecIdleObject](./networkvpnipsecidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIPSecOnDemandObject](networkvpnipsecondemandobject.md)
+- [object NetworkVPNIPSecOnDemandObject](./networkvpnipsecondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
 
 

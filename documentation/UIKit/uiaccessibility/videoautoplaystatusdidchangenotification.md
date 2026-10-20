@@ -1,7 +1,8 @@
 # videoAutoplayStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system’s Auto-Play Video Previews setting changes.
 
@@ -19,9 +20,14 @@ nonisolated
 static let videoAutoplayStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityVideoAutoplayStatusDidChangeNotification;
+```
+
 ## See Also
 
-- [static var isVideoAutoplayEnabled: Bool](uiaccessibility/isvideoautoplayenabled.md)
+### Autoplay videos
+- [static var isVideoAutoplayEnabled: Bool](./isvideoautoplayenabled.md)
   A Boolean value that indicates whether the Auto-Play Video Previews setting is in an enabled state.
 
 

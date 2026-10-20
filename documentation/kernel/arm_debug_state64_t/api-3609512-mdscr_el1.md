@@ -1,14 +1,15 @@
 # mdscr_el1
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 __uint64_t mdscr_el1;
 ```
 

@@ -1,7 +1,8 @@
 # VSUserAccount.AccountType.free
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates a user has access to free content.
 
@@ -10,7 +11,7 @@ A constant that indicates a user has access to free content.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ case free
 
 ## See Also
 
-- [VSUserAccount.AccountType.paid](vsuseraccount-swift.struct/accounttype-swift.enum/paid.md)
+### Account types
+- [VSUserAccount.AccountType.paid](./paid.md)
   A constant that indicate a user has access to paid content.
 
 

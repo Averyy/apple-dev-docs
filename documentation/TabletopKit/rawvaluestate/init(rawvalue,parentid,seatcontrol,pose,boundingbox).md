@@ -1,7 +1,8 @@
 # init(rawValue:parentID:seatControl:pose:boundingBox:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a state for equipment using the specified raw value, location, and player interactions.
 
@@ -16,7 +17,8 @@ init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSe
 
 ## See Also
 
-- [init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](rawvaluestate/init(rawvalue:parentid:seatcontrol:pose:entity:).md)
+### Creating a die state
+- [init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, entity: Entity)](./init%28rawvalue,parentid,seatcontrol,pose,entity%29.md)
 
 
 ---

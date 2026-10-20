@@ -1,7 +1,8 @@
 # cgContext
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics context, which is a low-level, platform-specific graphics context.
 
@@ -14,9 +15,14 @@ The Core Graphics context, which is a low-level, platform-specific graphics cont
 var cgContext: CGContext { get }
 ```
 
+```objc
+@property (readonly) CGContextRef CGContext;
+```
+
 ## See Also
 
-- [class var current: NSGraphicsContext?](nsgraphicscontext/current.md)
+### Managing the Current Context
+- [class var current: NSGraphicsContext?](./current.md)
   Returns the current graphics context of the current thread.
 
 

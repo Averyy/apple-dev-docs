@@ -1,7 +1,8 @@
 # USDLayer.ListOperationType.prepended
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items added to the front.
 

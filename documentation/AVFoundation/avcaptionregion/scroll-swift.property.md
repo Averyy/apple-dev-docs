@@ -1,7 +1,8 @@
 # scroll
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll mode of the region.
 
@@ -17,9 +18,14 @@ The scroll mode of the region.
 var scroll: AVCaptionRegion.Scroll { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptionRegionScroll scroll;
+```
+
 ## See Also
 
-- [AVCaptionRegion.Scroll](avcaptionregion/scroll-swift.enum.md)
+### Accessing the scroll mode
+- [AVCaptionRegion.Scroll](./scroll-swift.enum.md)
   Constants that indicate the scrolling effects the system applies to a region.
 
 

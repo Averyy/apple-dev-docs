@@ -1,7 +1,8 @@
 # stretchFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How much a particle’s shape is stretched along its velocity direction (Billboard particles only).
 

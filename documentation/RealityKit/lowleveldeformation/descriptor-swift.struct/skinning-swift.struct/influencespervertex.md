@@ -1,7 +1,8 @@
 # influencesPerVertex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of joint influences per vertex.
 
@@ -19,7 +20,8 @@ var influencesPerVertex: Int
 
 ## See Also
 
-- [var jointTransformCount: Int](lowleveldeformation/descriptor-swift.struct/skinning-swift.struct/jointtransformcount.md)
+### Configuring skinning parameters
+- [var jointTransformCount: Int](./jointtransformcount.md)
   The number of joint transforms.
 
 

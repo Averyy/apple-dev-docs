@@ -1,7 +1,8 @@
 # withParticleIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides access to the indices of particles that intersected the volume.
 
@@ -30,10 +31,11 @@ This span is only available during the subscription callback of this event. The 
 
 ## See Also
 
-- [let bodyEntity: Entity](clothqueryvolumeevents/newbodyintersections/intersection/bodyentity.md)
+### Inspecting the intersection
+- [let bodyEntity: Entity](./bodyentity.md)
   The entity of the body that intersected the volume.
-- [var bodyComponent: ClothBodyComponent?](clothqueryvolumeevents/newbodyintersections/intersection/bodycomponent.md)
-  The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
+- [var bodyComponent: ClothBodyComponent?](./bodycomponent.md)
+  The [`ClothBodyComponent`](../../../clothbodycomponent.md) of the intersecting body, if still present on the entity.
 
 
 ---

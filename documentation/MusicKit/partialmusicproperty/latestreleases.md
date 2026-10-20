@@ -1,7 +1,8 @@
 # latestReleases
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the association property that returns a collection of the most recent releases for the record label.
 
@@ -19,6 +20,8 @@ An identifier for the association property that returns a collection of the most
 ```swift
 static var latestReleases: MusicRelationshipProperty<RecordLabel, Album> { get }
 ```
+
+Available when `Root` is `RecordLabel`.
 
 
 ---

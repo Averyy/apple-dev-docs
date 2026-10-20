@@ -1,7 +1,8 @@
 # CKShare.ParticipantAcceptanceStatus.unknown
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant’s status is unknown.
 
@@ -20,13 +21,18 @@ The participant’s status is unknown.
 case unknown
 ```
 
+```c
+CKShareParticipantAcceptanceStatusUnknown
+```
+
 ## See Also
 
-- [CKShare.ParticipantAcceptanceStatus.pending](ckshare/participantacceptancestatus/pending.md)
+### Constants
+- [CKShare.ParticipantAcceptanceStatus.pending](./pending.md)
   The participant’s acceptance of the share request is pending.
-- [CKShare.ParticipantAcceptanceStatus.accepted](ckshare/participantacceptancestatus/accepted.md)
+- [CKShare.ParticipantAcceptanceStatus.accepted](./accepted.md)
   The participant accepted the share request.
-- [CKShare.ParticipantAcceptanceStatus.removed](ckshare/participantacceptancestatus/removed.md)
+- [CKShare.ParticipantAcceptanceStatus.removed](./removed.md)
   The system removed the participant from the share.
 
 

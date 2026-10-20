@@ -1,7 +1,8 @@
 # Apply Redemption Code
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Complete the installation of an app using a redemption code.
 
@@ -18,7 +19,7 @@ Sending a redemption code to an app that doesn’t need it produces an error.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -72,9 +73,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ApplyRedemptionCodeCommand](applyredemptioncodecommand.md)
+- [object ApplyRedemptionCodeCommand](./applyredemptioncodecommand.md)
   The command to complete the installation of an app using a redemption code.
-- [object ApplyRedemptionCodeResponse](applyredemptioncoderesponse.md)
+- [object ApplyRedemptionCodeResponse](./applyredemptioncoderesponse.md)
   A response from the device after it processes the command to complete the installation of an app using a redemption code.
 
 ## Endpoint
@@ -83,27 +84,35 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ApplyRedemptionCodeCommand`
+
 The request object the server returns for the Apply Redemption Code Command.
+
+## Responses
+
+- `200` OK (`ApplyRedemptionCodeResponse`, `application/xml`): The response object the system returns for the Apply Redemption Code Command.
 
 ## See Also
 
-- [Install Application](install-application-command.md)
+### Managed apps
+- [Install Application](./install-application-command.md)
   Install a third-party app on a device.
-- [Install Enterprise Application](install-enterprise-application-command.md)
+- [Install Enterprise Application](./install-enterprise-application-command.md)
   Install an enterprise app on a device.
-- [Installed Application List](installed-application-list-command.md)
+- [Installed Application List](./installed-application-list-command.md)
   Get a list of the installed apps on a device.
-- [Managed Application List](managed-application-list-command.md)
+- [Managed Application List](./managed-application-list-command.md)
   Get the status of all managed apps on a device.
-- [Remove Application](remove-application-command.md)
+- [Remove Application](./remove-application-command.md)
   Remove an app.
-- [Validate Applications](validate-applications-command.md)
+- [Validate Applications](./validate-applications-command.md)
   Force validation of developer and universal provisioning profiles for enterprise apps.
-- [Managed Application Attributes](managed-application-attributes-command.md)
+- [Managed Application Attributes](./managed-application-attributes-command.md)
   Query attributes in managed apps on a device.
-- [Managed Application Configuration](managed-application-configuration-command.md)
+- [Managed Application Configuration](./managed-application-configuration-command.md)
   Get app configurations from managed apps on a device.
-- [Managed Application Feedback](managed-application-feedback-command.md)
+- [Managed Application Feedback](./managed-application-feedback-command.md)
   Get app feedback from a managed app on the device.
 
 

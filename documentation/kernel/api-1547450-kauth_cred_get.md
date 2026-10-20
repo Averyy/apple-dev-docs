@@ -1,14 +1,15 @@
 # kauth_cred_get
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kauth_cred_t kauth_cred_get(void);
 ```
 

@@ -1,18 +1,19 @@
 # play()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins playback of the current item.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,29 +22,34 @@ nonisolated
 func play()
 ```
 
+```objc
+- (void) play;
+```
+
 ## Mentions
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](../controlling-the-transport-behavior-of-a-player.md)
 
 #### Discussion
 
-Calling this method is the same as setting the [`rate`](avplayer/rate.md) to `1.0`.
+Calling this method is the same as setting the [`rate`](./rate.md) to `1.0`.
 
 > **Note**:  Before macOS 13, iOS 16, tvOS 16, and watchOS 9, you can only call this method on the main thread or queue.
 
 ## See Also
 
-- [var defaultRate: Float](avplayer/defaultrate.md)
+### Controlling playback
+- [var defaultRate: Float](./defaultrate.md)
   A default rate at which to begin playback.
-- [func pause()](avplayer/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the current item.
-- [var rate: Float](avplayer/rate.md)
+- [var rate: Float](./rate.md)
   The current playback rate.
-- [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
+- [class let rateDidChangeNotification: NSNotification.Name](./ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
-- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](./ratedidchangereason/playheadreachedliveedge.md)
   Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
-- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
+- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](./ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
   Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 
 

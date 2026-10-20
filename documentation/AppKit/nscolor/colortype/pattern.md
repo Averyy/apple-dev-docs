@@ -1,12 +1,13 @@
 # NSColor.ColorType.pattern
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Colors that include an image to be used as a pattern.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Colors that include an image to be used as a pattern.
 case pattern
 ```
 
+```c
+NSColorTypePattern
+```
+
 #### Discussion
 
-Colors of this type store a value in the [`patternImage`](nscolor/patternimage.md) property.
+Colors of this type store a value in the [`patternImage`](../patternimage.md) property.
 
 ## See Also
 
-- [NSColor.ColorType.componentBased](nscolor/colortype/componentbased.md)
+### Color Types
+- [NSColor.ColorType.componentBased](./componentbased.md)
   Colors that include floating-point color components and a color space.
-- [NSColor.ColorType.catalog](nscolor/colortype/catalog.md)
+- [NSColor.ColorType.catalog](./catalog.md)
   Colors that are retrieved from an asset catalog.
 
 

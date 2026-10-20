@@ -1,7 +1,8 @@
 # FormatFlagIsPacked
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Set if the sample bits occupy the entire available bits for the channel, clear if they are high or low aligned within the channel.
 
@@ -10,27 +11,28 @@ Set if the sample bits occupy the entire available bits for the channel, clear i
 
 ## Declaration
 
-```swift
+```c
 FormatFlagIsPacked
 ```
 
 #### Discussion
 
-Even if this flag is clear, it is implied that this flag is set if the [`IOUserVideoStreamBasicDescription`](videodriverkit/iouservideostreambasicdescription.md) is filled out such that the fields have the following relationship:
+Even if this flag is clear, it is implied that this flag is set if the [`IOUserVideoStreamBasicDescription`](../iouservideostreambasicdescription.md) is filled out such that the fields have the following relationship:
 
-```None
+```
 ((mBitsPerSample / 8) * mChannelsPerFrame) == mBytesPerFrame
 ```
 
 ## See Also
 
-- [FormatFlagIsAlignedHigh](videodriverkit/iouservideoformatflags/formatflagisalignedhigh.md)
+### Bitwise layout flags
+- [FormatFlagIsAlignedHigh](./formatflagisalignedhigh.md)
   Set if the sample bits are placed into the high bits of the channel, clear for low bit placement.
-- [LinearPCMFormatFlagIsAlignedHigh](videodriverkit/iouservideoformatflags/linearpcmformatflagisalignedhigh.md)
+- [LinearPCMFormatFlagIsAlignedHigh](./linearpcmformatflagisalignedhigh.md)
   Synonym for `FormatFlagIsAlignedHigh`.
-- [LinearPCMFormatFlagIsPacked](videodriverkit/iouservideoformatflags/linearpcmformatflagispacked.md)
+- [LinearPCMFormatFlagIsPacked](./linearpcmformatflagispacked.md)
   Synonym for `FormatFlagIsPacked`.
-- [FormatFlagsNativeFloatPacked](videodriverkit/iouservideoformatflags/formatflagsnativefloatpacked.md)
+- [FormatFlagsNativeFloatPacked](./formatflagsnativefloatpacked.md)
 
 
 ---

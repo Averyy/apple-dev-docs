@@ -1,7 +1,8 @@
 # es_set_deadline_min_milliseconds(_:_:_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Set the minimum deadline in milliseconds for specified auth event types for this client
 
@@ -12,6 +13,10 @@ Set the minimum deadline in milliseconds for specified auth event types for this
 
 ```swift
 func es_set_deadline_min_milliseconds(_ client: OpaquePointer, _ events: UnsafePointer<es_event_type_t>, _ event_count: UInt32, _ milliseconds: UInt32) -> es_return_t
+```
+
+```c
+extern es_return_t es_set_deadline_min_milliseconds(es_client_t *client, const es_event_type_t *events, uint32_t event_count, uint32_t milliseconds);
 ```
 
 #### Return Value

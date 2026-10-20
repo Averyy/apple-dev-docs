@@ -1,7 +1,8 @@
 # BillboardAction
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that animates the blend factor of an entity’s billboard component.
 
@@ -21,15 +22,15 @@ struct BillboardAction
 
 #### Overview
 
-This action animates the [`blendFactor`](billboardcomponent/blendfactor.md) value of an entity’s [`BillboardComponent`](billboardcomponent.md).
+This action animates the [`blendFactor`](./billboardcomponent/blendfactor.md) value of an entity’s [`BillboardComponent`](./billboardcomponent.md).
 
-Over its duration, the action updates the `blendFactor` property to `1.0`. If you provide a [`transitionIn`](billboardaction/transitionin.md) configuration, the action interpolates the value of the component’s current value for [`blendFactor`](billboardcomponent/blendfactor.md) towards `1.0`. If you provide a [`transitionOut`](billboardaction/transitionout.md) configuration, the action interpolates the component’s [`blendFactor`](billboardcomponent/blendfactor.md) value from `1.0` to its original value for that component.
+Over its duration, the action updates the `blendFactor` property to `1.0`. If you provide a [`transitionIn`](./billboardaction/transitionin.md) configuration, the action interpolates the value of the component’s current value for [`blendFactor`](./billboardcomponent/blendfactor.md) towards `1.0`. If you provide a [`transitionOut`](./billboardaction/transitionout.md) configuration, the action interpolates the component’s [`blendFactor`](./billboardcomponent/blendfactor.md) value from `1.0` to its original value for that component.
 
 The example below creates a three-part animation that:
 
-- Interpolates [`blendFactor`](billboardcomponent/blendfactor.md) from `0.0` to `1.0`
+- Interpolates [`blendFactor`](./billboardcomponent/blendfactor.md) from `0.0` to `1.0`
 - Pauses for one second
-- Interpolates [`blendFactor`](billboardcomponent/blendfactor.md) from `1.0` back to `0.0`
+- Interpolates [`blendFactor`](./billboardcomponent/blendfactor.md) from `1.0` back to `0.0`
 
 ```swift
 // Load a robot model from a resource file.
@@ -68,52 +69,55 @@ let billboardAnimation = try AnimationResource
 robotModel.playAnimation(billboardAnimation)
 ```
 
-> **Note**: If an entity doesn’t have a [`BillboardComponent`](billboardcomponent.md), the default initializer creates one for you so that it can restore the entity back to a state without the billboard.
+[Video: A screen recording of a vintage-style robot toy in a living room scene. At the start, the robot isn't looking at the camera, then its body moves in place to look at the camera, stays still for one second, and its body moves back to its original orientation.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/billboardaction-simple-loop.mp4)
 
-> ❗ **Important**: This action directly animates the [`BindTarget.billboardBlendFactor`](bindtarget/billboardblendfactor.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
+> **Note**: If an entity doesn’t have a [`BillboardComponent`](./billboardcomponent.md), the default initializer creates one for you so that it can restore the entity back to a state without the billboard.
 
-Ensure the action can transition back to a non-billboard state by adding the component to the entity and check the [`blendFactor`](billboardcomponent/blendfactor.md) property has a value that you expect.
+> ❗ **Important**: This action directly animates the [`BindTarget.billboardBlendFactor`](./bindtarget/billboardblendfactor.md) on the bound entity. Ensure a correct bind target is supplied when creating the animation.
+
+Ensure the action can transition back to a non-billboard state by adding the component to the entity and check the [`blendFactor`](./billboardcomponent/blendfactor.md) property has a value that you expect.
 
 ## Topics
 
 ### Structures
-- [BillboardAction.Transition](billboardaction/transition.md)
+- [BillboardAction.Transition](./billboardaction/transition.md)
   The duration and timing of how an action event transitions from one state to another.
 ### Initializers
-- [init(transitionIn: BillboardAction.Transition, transitionOut: BillboardAction.Transition)](billboardaction/init(transitionin:transitionout:).md)
+- [init(transitionIn: BillboardAction.Transition, transitionOut: BillboardAction.Transition)](./billboardaction/init%28transitionin,transitionout%29.md)
   Creates a new billboard action.
 ### Instance Properties
-- [var animatedValueType: (any AnimatableData.Type)?](billboardaction/animatedvaluetype.md)
+- [var animatedValueType: (any AnimatableData.Type)?](./billboardaction/animatedvaluetype.md)
   The type for the value that the action modifies over time.
-- [var transitionIn: BillboardAction.Transition](billboardaction/transitionin.md)
+- [var transitionIn: BillboardAction.Transition](./billboardaction/transitionin.md)
   The rate of change at the beginning of the action.
-- [var transitionOut: BillboardAction.Transition](billboardaction/transitionout.md)
+- [var transitionOut: BillboardAction.Transition](./billboardaction/transitionout.md)
   The rate of change at the end of the action.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [EntityAction](entityaction.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [EntityAction](./entityaction.md)
 
 ## See Also
 
-- [struct EmphasizeAction](emphasizeaction.md)
+### Built-in actions
+- [struct EmphasizeAction](./emphasizeaction.md)
   An action that performs an animation to call attention to an entity.
-- [struct FromToByAction](fromtobyaction.md)
+- [struct FromToByAction](./fromtobyaction.md)
   An action that starts, stops, or increments by a specific value.
-- [struct ImpulseAction](impulseaction.md)
+- [struct ImpulseAction](./impulseaction.md)
   An action that applies an impulse to the physics body at its center of mass when played as an animation.
-- [struct OrbitEntityAction](orbitentityaction.md)
+- [struct OrbitEntityAction](./orbitentityaction.md)
   An action which animates the transform of an entity to revolve around a specified pivot entity.
-- [struct PlayAnimationAction](playanimationaction.md)
+- [struct PlayAnimationAction](./playanimationaction.md)
   An action that plays an animation on the given target entity with a range of playback options.
-- [struct PlayAudioAction](playaudioaction.md)
+- [struct PlayAudioAction](./playaudioaction.md)
   An action which plays an audio resource on the given target entity.
-- [struct SetEntityEnabledAction](setentityenabledaction.md)
+- [struct SetEntityEnabledAction](./setentityenabledaction.md)
   An action that enables or disables the targeted entity and its descendants when played as an animation.
-- [struct SpinAction](spinaction.md)
+- [struct SpinAction](./spinaction.md)
   An action which animates the transform of an entity to rotate around a specified local axis.
 
 

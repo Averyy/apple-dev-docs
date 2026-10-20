@@ -1,7 +1,8 @@
 # UIContentSizeCategory.DidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,16 +19,16 @@ struct DidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(contentSize: String, screen: UIScreen)](uicontentsizecategory/didchangemessage/init(contentsize:screen:).md)
+- [init(contentSize: String, screen: UIScreen)](./didchangemessage/init%28contentsize,screen%29.md)
 ### Instance Properties
-- [var contentSize: String](uicontentsizecategory/didchangemessage/contentsize.md)
-- [var screen: UIScreen](uicontentsizecategory/didchangemessage/screen.md)
+- [var contentSize: String](./didchangemessage/contentsize.md)
+- [var screen: UIScreen](./didchangemessage/screen.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

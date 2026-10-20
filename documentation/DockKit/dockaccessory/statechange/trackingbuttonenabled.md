@@ -1,7 +1,8 @@
 # trackingButtonEnabled
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the tracking button on the dock accessory.
 

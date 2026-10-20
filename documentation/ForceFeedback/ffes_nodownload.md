@@ -1,7 +1,8 @@
 # FFES_NODOWNLOAD
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var FFES_NODOWNLOAD: UInt32 { get }
 ```
 
+```c
+FFES_NODOWNLOAD
+```
+
 ## See Also
 
-- [var FFES_SOLO: UInt32](ffes_solo.md)
+### Constants
+- [var FFES_SOLO: UInt32](./ffes_solo.md)
 
 
 ---

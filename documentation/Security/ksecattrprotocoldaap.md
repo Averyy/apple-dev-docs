@@ -1,7 +1,8 @@
 # kSecAttrProtocolDAAP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DAAP protocol.
 
@@ -18,6 +19,10 @@ DAAP protocol.
 
 ```swift
 let kSecAttrProtocolDAAP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolDAAP;
 ```
 
 

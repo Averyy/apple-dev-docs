@@ -1,19 +1,20 @@
 # Races on collections and other APIs
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detects when one thread accesses a mutable object while another thread is writing to it.
 
 #### Overview
 
-In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [`Foundation`](https://developer.apple.com/documentation/foundation) and [`Core Foundation`](https://developer.apple.com/documentation/corefoundation) framework APIs. This feature applies to the following collection types:
+In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [Foundation](../Foundation/Foundation.md) and [Core Foundation](../CoreFoundation/CoreFoundation.md) framework APIs. This feature applies to the following collection types:
 
-- [`NSMutableArray`](https://developer.apple.com/documentation/foundation/nsmutablearray)
-- [`NSMutableDictionary`](https://developer.apple.com/documentation/foundation/nsmutabledictionary)
-- [`CFMutableArray`](https://developer.apple.com/documentation/corefoundation/cfmutablearray)
-- [`CFMutableDictionary`](https://developer.apple.com/documentation/corefoundation/cfmutabledictionary)
+- [`NSMutableArray`](../Foundation/nsmutablearray.md)
+- [`NSMutableDictionary`](../Foundation/nsmutabledictionary.md)
+- [`CFMutableArray`](../CoreFoundation/cfmutablearray.md)
+- [`CFMutableDictionary`](../CoreFoundation/cfmutabledictionary.md)
 
-##### Collection Race with a Mutable Array
+##### Collection race with a mutable array
 
 In the following example, the code enumerates a mutable array in one thread while writing to the array from another without synchronizing access:
 
@@ -45,9 +46,9 @@ for (id value in array) {
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `array` across multiple threads.
+Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `array` across multiple threads.
 
-##### Collection Race with a Mutable Dictionary
+##### Collection race with a mutable dictionary
 
 In the following example, the code enumerates a mutable dictionary in one thread while writing to the dictionary from another without synchronizing access:
 
@@ -77,17 +78,18 @@ dictionary[@"forty-two"] = @42;
 
 ###### Solution
 
-Use [`Dispatch`](https://developer.apple.com/documentation/dispatch) APIs to coordinate access to `dictionary` across multiple threads.
+Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `dictionary` across multiple threads.
 
 ## See Also
 
-- [Data races](data-races.md)
+### Thread Sanitizer
+- [Data races](./data-races.md)
   Detects unsynchronized access to mutable state across multiple threads.
-- [Swift access races](swift-access-races.md)
+- [Swift access races](./swift-access-races.md)
   Detects unsynchronized access to mutable state across multiple threads in Swift.
-- [Uninitialized mutexes](uninitialized-mutexes.md)
+- [Uninitialized mutexes](./uninitialized-mutexes.md)
   Detects when you use an uninitialized mutex.
-- [Thread leaks](thread-leaks.md)
+- [Thread leaks](./thread-leaks.md)
   Detects when you don’t close threads after use.
 
 

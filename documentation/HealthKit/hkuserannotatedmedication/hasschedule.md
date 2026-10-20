@@ -1,7 +1,8 @@
 # hasSchedule
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a medication has a schedule set up.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether a medication has a schedule set up.
 
 ```swift
 var hasSchedule: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL hasSchedule;
 ```
 
 #### Discussion

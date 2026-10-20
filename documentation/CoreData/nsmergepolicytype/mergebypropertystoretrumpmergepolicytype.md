@@ -1,23 +1,28 @@
 # NSMergePolicyType.mergeByPropertyStoreTrumpMergePolicyType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A property-based merge policy that applies external changes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case mergeByPropertyStoreTrumpMergePolicyType
+```
+
+```c
+NSMergeByPropertyStoreTrumpMergePolicyType
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ A policy that merges conflicts between the persistent store’s version of the o
 
 ## See Also
 
-- [NSMergePolicyType.errorMergePolicyType](nsmergepolicytype/errormergepolicytype.md)
+### Policies
+- [NSMergePolicyType.errorMergePolicyType](./errormergepolicytype.md)
   The default merge policy for all managed object contexts.
-- [NSMergePolicyType.mergeByPropertyObjectTrumpMergePolicyType](nsmergepolicytype/mergebypropertyobjecttrumpmergepolicytype.md)
+- [NSMergePolicyType.mergeByPropertyObjectTrumpMergePolicyType](./mergebypropertyobjecttrumpmergepolicytype.md)
   A property-based merge policy that applies in-memory changes.
-- [NSMergePolicyType.overwriteMergePolicyType](nsmergepolicytype/overwritemergepolicytype.md)
+- [NSMergePolicyType.overwriteMergePolicyType](./overwritemergepolicytype.md)
   A merge policy type that overwrites the entire stored object.
-- [NSMergePolicyType.rollbackMergePolicyType](nsmergepolicytype/rollbackmergepolicytype.md)
+- [NSMergePolicyType.rollbackMergePolicyType](./rollbackmergepolicytype.md)
   A merge policy that discards unsaved changes.
 
 

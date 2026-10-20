@@ -1,7 +1,8 @@
 # NSRequiresNIAPTLSPackageVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string that indicates the version to use for the NIAP Functional Package for TLS.
 
@@ -14,9 +15,16 @@ A string that indicates the version to use for the NIAP Functional Package for T
 - visionOS 26.4+
 - watchOS 26.4+
 
+## Details
 
+- **Name**: `NSRequiresNIAPTLSPackageVersion` (Requires NIAP TLS Package Version)
+- **Type**: string
 
-**Type**: string
+## Possible Values
+
+- `none`
+- `FCP_v2.1`
+- `recommended`
 
 #### Discussion
 
@@ -25,15 +33,15 @@ App Transport Security (ATS) allows you to further restrict default TLS client b
 The value of this key is a string, which can have the following values:
 
 - **`none`**: Apply no additional requirements. This value results in the default ATS behavior.
-- **`FCP_v2.1`**: Make your default client connections enforce additional requirements (described below) as specified in the [`Functional Package for Transport Layer Security (TLS) Version 2.1`](https://developer.apple.comhttps://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html).
+- **`FCP_v2.1`**: Make your default client connections enforce additional requirements (described below) as specified in the [Functional Package for Transport Layer Security (TLS) Version 2.1](https://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html).
 - **`recommended`**: Use the recommended version of the NIAP functional package for the operating system version your app is running on. Currently, this is equivalent to `FCP_v2.1`.
 
 The `FCP_v2.1` value adds the following requirements on top of standard ATS:
 
 - The client offers the same TLS 1.3 ciphersuites as the default ATS policy. For TLS 1.2, the client offers only perfect forward secret (using ECDHE), AES-GCM ciphersuites with a SHA-256 or greater pseudorandom function (PRF).
-- The client no longer offers the signature algorithm `rsa_pkcs15_sha1`, as specified in [`FCS_TLSC_EXT.1.4`](https://developer.apple.comhttps://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html#FCS_TLSC_EXT.1.4).
-- The server’s certificate signature  must use a signature algorithm offered in the client hello, as defined in [`RFC 8446 Section 4.2.3`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8446#section-4.2.3) and [`RFC 5246 Section 7.4.2`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2).
-- TLS 1.2 connections must negotiate the Extended Master Secret extension, as specified in [`RFC 7627`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc7627).
+- The client no longer offers the signature algorithm `rsa_pkcs15_sha1`, as specified in [FCS_TLSC_EXT.1.4](https://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html#FCS_TLSC_EXT.1.4).
+- The server’s certificate signature  must use a signature algorithm offered in the client hello, as defined in [RFC 8446 Section 4.2.3](https://datatracker.ietf.org/doc/html/rfc8446#section-4.2.3) and [RFC 5246 Section 7.4.2](https://datatracker.ietf.org/doc/html/rfc5246#section-7.4.2).
+- TLS 1.2 connections must negotiate the Extended Master Secret extension, as specified in [RFC 7627](https://datatracker.ietf.org/doc/html/rfc7627).
 
 Use this key to opt in to the compliance behavior globally, as shown in the following example.
 
@@ -45,11 +53,12 @@ Use this key to opt in to the compliance behavior globally, as shown in the foll
 </dict>
 ```
 
-You can use the [`NSExceptionRequiresNIAPTLSPackageVersion`](information-property-list/nsexceptionrequiresniaptlspackageversion.md) key within the [`NSExceptionDomains`](information-property-list/nsapptransportsecurity/nsexceptiondomains.md) dictionary to carve out behavior exceptions for specific domains.
+You can use the [`NSExceptionRequiresNIAPTLSPackageVersion`](./nsexceptionrequiresniaptlspackageversion.md) key within the [`NSExceptionDomains`](./nsapptransportsecurity/nsexceptiondomains.md) dictionary to carve out behavior exceptions for specific domains.
 
 ## See Also
 
-- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+### TLS Functionality Package Compliance
+- [NSExceptionRequiresNIAPTLSPackageVersion](./nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 

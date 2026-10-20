@@ -1,7 +1,8 @@
 # clientIdentifierInvalid
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the client identifier is invalid.
 
@@ -21,35 +22,36 @@ static var clientIdentifierInvalid: CNError.Code { get }
 
 ## See Also
 
-- [static var authorizationDenied: CNError.Code](cnerror/authorizationdenied.md)
+### Error codes
+- [static var authorizationDenied: CNError.Code](./authorizationdenied.md)
   An error that indicates the system denied authorization.
-- [static var changeHistoryExpired: CNError.Code](cnerror/changehistoryexpired.md)
+- [static var changeHistoryExpired: CNError.Code](./changehistoryexpired.md)
   An error that indicates the change history expired.
-- [static var changeHistoryInvalidAnchor: CNError.Code](cnerror/changehistoryinvalidanchor.md)
+- [static var changeHistoryInvalidAnchor: CNError.Code](./changehistoryinvalidanchor.md)
   An error that indicates a change history anchor is invalid.
-- [static var changeHistoryInvalidFetchRequest: CNError.Code](cnerror/changehistoryinvalidfetchrequest.md)
+- [static var changeHistoryInvalidFetchRequest: CNError.Code](./changehistoryinvalidfetchrequest.md)
   An error that indicates a change history fetch request is invalid.
-- [static var clientIdentifierCollision: CNError.Code](cnerror/clientidentifiercollision.md)
+- [static var clientIdentifierCollision: CNError.Code](./clientidentifiercollision.md)
   An error that indicates a client identifier collision.
-- [static var clientIdentifierDoesNotExist: CNError.Code](cnerror/clientidentifierdoesnotexist.md)
+- [static var clientIdentifierDoesNotExist: CNError.Code](./clientidentifierdoesnotexist.md)
   An error that indicates the client identifier doesn’t exist.
-- [static var communicationError: CNError.Code](cnerror/communicationerror.md)
+- [static var communicationError: CNError.Code](./communicationerror.md)
   An error that indicates a communication error occurred.
-- [static var containmentCycle: CNError.Code](cnerror/containmentcycle.md)
+- [static var containmentCycle: CNError.Code](./containmentcycle.md)
   An error with the containment cycle.
-- [static var containmentScope: CNError.Code](cnerror/containmentscope.md)
+- [static var containmentScope: CNError.Code](./containmentscope.md)
   An error with containment scope.
-- [static var dataAccessError: CNError.Code](cnerror/dataaccesserror.md)
+- [static var dataAccessError: CNError.Code](./dataaccesserror.md)
   An error with data access.
-- [static var featureDisabledByUser: CNError.Code](cnerror/featuredisabledbyuser.md)
+- [static var featureDisabledByUser: CNError.Code](./featuredisabledbyuser.md)
   An error that indicates the user disabled the feature.
-- [static var featureNotAvailable: CNError.Code](cnerror/featurenotavailable.md)
+- [static var featureNotAvailable: CNError.Code](./featurenotavailable.md)
   An error that indicates the feature isn’t available.
-- [static var insertedRecordAlreadyExists: CNError.Code](cnerror/insertedrecordalreadyexists.md)
+- [static var insertedRecordAlreadyExists: CNError.Code](./insertedrecordalreadyexists.md)
   An error that indicates the inserted record already exists.
-- [static var noAccessableWritableContainers: CNError.Code](cnerror/noaccessablewritablecontainers.md)
+- [static var noAccessableWritableContainers: CNError.Code](./noaccessablewritablecontainers.md)
   An error that indicates there are no accessible writable containers.
-- [static var parentContainerNotWritable: CNError.Code](cnerror/parentcontainernotwritable.md)
+- [static var parentContainerNotWritable: CNError.Code](./parentcontainernotwritable.md)
   An error that indicates the parent container isn’t writable.
 
 

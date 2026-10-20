@@ -1,7 +1,8 @@
 # setValue(_:at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value at the specified position in the noise map.
 
@@ -19,6 +20,10 @@ Sets the value at the specified position in the noise map.
 func setValue(_ value: Float, at position: vector_int2)
 ```
 
+```objc
+- (void) setValue:(float) value atPosition:(vector_int2) position;
+```
+
 #### Discussion
 
 ## Parameters
@@ -28,9 +33,10 @@ func setValue(_ value: Float, at position: vector_int2)
 
 ## See Also
 
-- [func value(at: vector_int2) -> Float](gknoisemap/value(at:).md)
+### Accessing Noise Values
+- [func value(at: vector_int2) -> Float](./value%28at%29.md)
   Returns the value at the specified position in the noise map’s discrete sample grid.
-- [func interpolatedValue(at: vector_float2) -> Float](gknoisemap/interpolatedvalue(at:).md)
+- [func interpolatedValue(at: vector_float2) -> Float](./interpolatedvalue%28at%29.md)
   Returns the value at the specified position in the noise map, interpolating results for positions not on the discrete sample grid.
 
 

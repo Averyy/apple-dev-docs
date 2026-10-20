@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct build_tool_version {
     ...
 };
@@ -17,8 +17,8 @@ struct build_tool_version {
 ## Topics
 
 ### Instance Properties
-- [tool](build_tool_version/2870225-tool.md)
-- [version](build_tool_version/2870217-version.md)
+- [tool](./build_tool_version/api-2870225-tool.md)
+- [version](./build_tool_version/api-2870217-version.md)
 
 
 ---

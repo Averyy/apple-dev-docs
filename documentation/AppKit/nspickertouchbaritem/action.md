@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,9 +16,14 @@
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nspickertouchbaritem/target.md)
+### Handling picker interaction
+- [var target: AnyObject?](./target.md)
 
 
 ---

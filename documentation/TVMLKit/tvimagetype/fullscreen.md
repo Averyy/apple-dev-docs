@@ -1,12 +1,15 @@
 # TVImageType.fullscreen
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image occupies the entire screen.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The image occupies the entire screen.
 case fullscreen
 ```
 
+```c
+TVImageTypeFullscreen
+```
+
 ## See Also
 
-- [TVImageType.image](tvimagetype/image.md)
+### Constants
+- [TVImageType.image](./image.md)
   The image is presented in its actual size.
-- [TVImageType.decoration](tvimagetype/decoration.md)
+- [TVImageType.decoration](./decoration.md)
   The image is a decoration image, which is used to display an image inside of another image.
-- [TVImageType.hero](tvimagetype/hero.md)
+- [TVImageType.hero](./hero.md)
   The image is a hero image, which is used to display a product image.
 
 

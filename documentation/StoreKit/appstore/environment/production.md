@@ -1,7 +1,8 @@
 # production
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the production server environment.
 
@@ -22,9 +23,10 @@ static let production: AppStore.Environment
 
 ## See Also
 
-- [static let sandbox: AppStore.Environment](appstore/environment/sandbox.md)
+### Getting the environment value
+- [static let sandbox: AppStore.Environment](./sandbox.md)
   A value that indicates the sandbox server environment.
-- [static let xcode: AppStore.Environment](appstore/environment/xcode.md)
+- [static let xcode: AppStore.Environment](./xcode.md)
   A value that indicates the StoreKit Testing in Xcode environment.
 
 

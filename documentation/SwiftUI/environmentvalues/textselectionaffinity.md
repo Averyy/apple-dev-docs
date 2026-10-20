@@ -1,7 +1,8 @@
 # textSelectionAffinity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 
@@ -22,21 +23,22 @@ var textSelectionAffinity: TextSelectionAffinity { get set }
 
 #### Discussion
 
-You can configure the selection affinity on a given hierarchy by using the [`textSelectionAffinity(_:)`](view/textselectionaffinity(_:).md) modifier.
+You can configure the selection affinity on a given hierarchy by using the [`textSelectionAffinity(_:)`](../view/textselectionaffinity%28_%29.md) modifier.
 
 ## See Also
 
-- [func textSelection<S>(S) -> some View](view/textselection(_:).md)
+### Selecting text
+- [func textSelection<S>(S) -> some View](../view/textselection%28_%29.md)
   Controls whether people can select text within this view.
-- [protocol TextSelectability](textselectability.md)
+- [protocol TextSelectability](../textselectability.md)
   A type that describes the ability to select text.
-- [struct TextSelection](textselection.md)
+- [struct TextSelection](../textselection.md)
   Represents a selection of text.
-- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](../view/textselectionaffinity%28_%29.md)
   Sets the direction of a selection or cursor relative to a text character.
-- [enum TextSelectionAffinity](textselectionaffinity.md)
+- [enum TextSelectionAffinity](../textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [struct AttributedTextSelection](attributedtextselection.md)
+- [struct AttributedTextSelection](../attributedtextselection.md)
   Represents a selection of attributed text.
 
 

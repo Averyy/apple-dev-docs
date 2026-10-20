@@ -1,7 +1,8 @@
 # readAttributeBatFunctionalWhileCharging(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatFunctionalWhileCharging(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatFunctionalWhileCharging() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeBatFunctionalWhileChargingWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

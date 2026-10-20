@@ -1,7 +1,8 @@
 # kSPCCmd_EXTENDED_COPY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCCmd_EXTENDED_COPY = 0x83
 ```
 

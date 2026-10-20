@@ -1,7 +1,8 @@
 # streamDescription
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio format properties of a stream of audio data.
 
@@ -20,9 +21,13 @@ The audio format properties of a stream of audio data.
 var streamDescription: UnsafePointer<AudioStreamBasicDescription> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) const AudioStreamBasicDescription * streamDescription;
+```
+
 #### Discussion
 
-Returns an [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) that you use with lower-level audio APIs.
+Returns an [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) that you use with lower-level audio APIs.
 
 
 ---

@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity’s position, rotation, and scale, enabling observation of its complete spatial state.
 

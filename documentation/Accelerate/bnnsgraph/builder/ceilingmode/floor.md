@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.CeilingMode.floor
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation calculates the output size using floor division.
 

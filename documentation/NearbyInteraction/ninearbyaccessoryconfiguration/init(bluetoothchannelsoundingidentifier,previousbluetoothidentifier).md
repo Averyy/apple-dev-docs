@@ -1,7 +1,8 @@
 # init(bluetoothChannelSoundingIdentifier:previousBluetoothIdentifier:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a configuration for Bluetooth Channel Sounding ranging with an accessory.
 
@@ -16,13 +17,17 @@ Initializes a configuration for Bluetooth Channel Sounding ranging with an acces
 init(bluetoothChannelSoundingIdentifier bluetoothIdentifier: UUID, previousBluetoothIdentifier: UUID?)
 ```
 
+```objc
+- (instancetype) initWithBluetoothChannelSoundingIdentifier:(NSUUID *) bluetoothIdentifier previousBluetoothIdentifier:(NSUUID *) previousBluetoothIdentifier;
+```
+
 #### Discussion
 
 Bluetooth Channel Sounding is a Bluetooth 6.0 specification ranging strategy that measure distance between iPhone and a paired accessory over a standard Bluetooth connection without requiring dedicated Ultra Wideband hardware.
 
-Use this initializer to create an accessory configuration that implements Bluetooth Channel Sounding. Call [`supportsBluetoothChannelSounding`](nidevicecapability/supportsbluetoothchannelsounding.md) before running a session to ensure device support, and pair your accessory with [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [`AccessorySetupKit`](https://developer.apple.com/documentation/accessorysetupkit).
+Use this initializer to create an accessory configuration that implements Bluetooth Channel Sounding. Call [`supportsBluetoothChannelSounding`](../nidevicecapability/supportsbluetoothchannelsounding.md) before running a session to ensure device support, and pair your accessory with [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md); the Nearby Interaction framework only supports Bluetooth Channel Sounding with accessories paired through [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md).
 
-##### Handle Reconnections
+##### Handle reconnections
 
 When reconnecting to an accessory where the Bluetooth identifier can change, provide the previous identifier using the `previousBluetoothIdentifier` parameter. This allows the session to maintain internal state continuity across reconnections. For initial connections, pass `nil` for this parameter.
 

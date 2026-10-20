@@ -1,7 +1,8 @@
 # SCStreamError.Code
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
 
@@ -19,71 +20,75 @@ Codes for user cancellation events and errors that can occur in ScreenCaptureKit
 enum Code
 ```
 
+```c
+enum SCStreamErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### User cancellation
-- [SCStreamError.Code.userStopped](scstreamerror/code/userstopped.md)
+- [SCStreamError.Code.userStopped](./code/userstopped.md)
   An error message that indicates the user stopped the stream.
 ### Privacy and entitlements
-- [SCStreamError.Code.userDeclined](scstreamerror/code/userdeclined.md)
+- [SCStreamError.Code.userDeclined](./code/userdeclined.md)
   An error message that indicates the user didn’t grant Screen Recording permission to your app.
-- [SCStreamError.Code.missingEntitlements](scstreamerror/code/missingentitlements.md)
+- [SCStreamError.Code.missingEntitlements](./code/missingentitlements.md)
   An error message that indicates missing entitlements in your app.
 ### Stream management
-- [SCStreamError.Code.attemptToStartStreamState](scstreamerror/code/attempttostartstreamstate.md)
+- [SCStreamError.Code.attemptToStartStreamState](./code/attempttostartstreamstate.md)
   An error message that indicates a stream is already running or doesn’t exist when trying to start a stream.
-- [SCStreamError.Code.attemptToStopStreamState](scstreamerror/code/attempttostopstreamstate.md)
+- [SCStreamError.Code.attemptToStopStreamState](./code/attempttostopstreamstate.md)
   An error message that indicates a stream is already stopped or doesn’t exist when trying to stop a stream.
-- [SCStreamError.Code.attemptToUpdateFilterState](scstreamerror/code/attempttoupdatefilterstate.md)
+- [SCStreamError.Code.attemptToUpdateFilterState](./code/attempttoupdatefilterstate.md)
   An error message that indicates a stream couldn’t update its content filter.
-- [SCStreamError.Code.attemptToConfigState](scstreamerror/code/attempttoconfigstate.md)
+- [SCStreamError.Code.attemptToConfigState](./code/attempttoconfigstate.md)
   An error message that indicates a stream couldn’t update its configuration.
-- [SCStreamError.Code.failedToStart](scstreamerror/code/failedtostart.md)
+- [SCStreamError.Code.failedToStart](./code/failedtostart.md)
   An error message that indicates a stream failed to start.
-- [SCStreamError.Code.removingStream](scstreamerror/code/removingstream.md)
+- [SCStreamError.Code.removingStream](./code/removingstream.md)
   An error message that indicates a stream wasn’t removed.
-- [SCStreamError.Code.failedToStartAudioCapture](scstreamerror/code/failedtostartaudiocapture.md)
+- [SCStreamError.Code.failedToStartAudioCapture](./code/failedtostartaudiocapture.md)
   An error message that indicates an audio stream failed to start.
-- [SCStreamError.Code.failedToStopAudioCapture](scstreamerror/code/failedtostopaudiocapture.md)
+- [SCStreamError.Code.failedToStopAudioCapture](./code/failedtostopaudiocapture.md)
   An error message that indicates an audio stream failed to stop.
-- [SCStreamError.Code.failedToStartMicrophoneCapture](scstreamerror/code/failedtostartmicrophonecapture.md)
+- [SCStreamError.Code.failedToStartMicrophoneCapture](./code/failedtostartmicrophonecapture.md)
   An error message that indicates microphone capture failed to start.
-- [SCStreamError.Code.systemStoppedStream](scstreamerror/code/systemstoppedstream.md)
+- [SCStreamError.Code.systemStoppedStream](./code/systemstoppedstream.md)
   An error message that indicates the system stopped the stream.
-- [SCStreamError.Code.internalError](scstreamerror/code/internalerror.md)
+- [SCStreamError.Code.internalError](./code/internalerror.md)
   An error message that indicates a stream can’t start due to a failure in ScreenCaptureKit’s internals.
 ### Shareable content
-- [SCStreamError.Code.noCaptureSource](scstreamerror/code/nocapturesource.md)
+- [SCStreamError.Code.noCaptureSource](./code/nocapturesource.md)
   An error message that indicates a stream doesn’t have a source to capture.
-- [SCStreamError.Code.noDisplayList](scstreamerror/code/nodisplaylist.md)
+- [SCStreamError.Code.noDisplayList](./code/nodisplaylist.md)
   An error message that indicates a stream doesn’t have displays available.
-- [SCStreamError.Code.noWindowList](scstreamerror/code/nowindowlist.md)
+- [SCStreamError.Code.noWindowList](./code/nowindowlist.md)
   An error message that indicates a stream doesn’t have windows available.
-- [SCStreamError.Code.failedApplicationConnectionInvalid](scstreamerror/code/failedapplicationconnectioninvalid.md)
+- [SCStreamError.Code.failedApplicationConnectionInvalid](./code/failedapplicationconnectioninvalid.md)
   An error message that indicates the stream lost its connection to an app.
-- [SCStreamError.Code.failedApplicationConnectionInterrupted](scstreamerror/code/failedapplicationconnectioninterrupted.md)
+- [SCStreamError.Code.failedApplicationConnectionInterrupted](./code/failedapplicationconnectioninterrupted.md)
   An error message that indicates there was an interruption in a connection to an app.
-- [SCStreamError.Code.failedNoMatchingApplicationContext](scstreamerror/code/failednomatchingapplicationcontext.md)
+- [SCStreamError.Code.failedNoMatchingApplicationContext](./code/failednomatchingapplicationcontext.md)
   An error message that indicates there isn’t a matching app context for streaming.
 ### Invalid parameters
-- [SCStreamError.Code.invalidParameter](scstreamerror/code/invalidparameter.md)
+- [SCStreamError.Code.invalidParameter](./code/invalidparameter.md)
   An error message that indicates an operation failed because of an invalid parameter value.
 ### Creating an error
-- [init?(rawValue: Int)](scstreamerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 ### Enumeration Cases
-- [SCStreamError.Code.insufficientStorage](scstreamerror/code/insufficientstorage.md)
-- [SCStreamError.Code.missingBackgroundMode](scstreamerror/code/missingbackgroundmode.md)
-- [SCStreamError.Code.notSupported](scstreamerror/code/notsupported.md)
+- [SCStreamError.Code.insufficientStorage](./code/insufficientstorage.md)
+- [SCStreamError.Code.missingBackgroundMode](./code/missingbackgroundmode.md)
+- [SCStreamError.Code.notSupported](./code/notsupported.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

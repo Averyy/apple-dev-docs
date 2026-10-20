@@ -1,7 +1,8 @@
 # MACaptionAppearanceCopyActiveProfileID()
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 func MACaptionAppearanceCopyActiveProfileID() -> CFString
 ```
 
+```c
+extern CFStringRefMACaptionAppearanceCopyActiveProfileID();
+```
+
 #### Return Value
 
 The currently-selected profileID.
@@ -27,10 +32,11 @@ Gets the currently-selected caption drawing profileID system wide.
 
 ## See Also
 
-- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](macaptionappearancecopyprofileids().md)
-- [func MACaptionAppearanceSetActiveProfileID(CFString)](macaptionappearancesetactiveprofileid(_:).md)
-- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](macaptionappearancecopyprofilename(_:).md)
-- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](macaptionappearanceexecuteblockforprofileid(_:_:).md)
+### Profile settings
+- [func MACaptionAppearanceCopyProfileIDs() -> CFArray](./macaptionappearancecopyprofileids%28%29.md)
+- [func MACaptionAppearanceSetActiveProfileID(CFString)](./macaptionappearancesetactiveprofileid%28_%29.md)
+- [func MACaptionAppearanceCopyProfileName(CFString) -> CFString](./macaptionappearancecopyprofilename%28_%29.md)
+- [func MACaptionAppearanceExecuteBlockForProfileID(CFString, () -> Void)](./macaptionappearanceexecuteblockforprofileid%28_,_%29.md)
 
 
 ---

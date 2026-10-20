@@ -1,6 +1,8 @@
 # Enhancing your app with machine learning-based video effects
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: Sample Code  
+**Download**: [EnhancingYourAppWithMachineLearningBasedVideoEffects.zip](https://docs-assets.developer.apple.com/published/53819f8657ca/EnhancingYourAppWithMachineLearningBasedVideoEffects.zip)
 
 Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 
@@ -12,17 +14,18 @@ Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 
 Using this sample app, you can learn how to enhance your videos using one of several video effects.
 
-> **Note**: This sample code project is associated with WWDC25 session 300: [`Enhance your app with machine learning-based video effects`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/300).
+> **Note**: This sample code project is associated with WWDC25 session 300: [Enhance your app with machine learning-based video effects](https://developer.apple.com/videos/play/wwdc2025/300).
 
 ## See Also
 
-- [class VTFrameProcessor](vtframeprocessor.md)
+### Frame processor
+- [class VTFrameProcessor](./vtframeprocessor.md)
   A class that creates a new frame processor for the configured video effect.
-- [protocol VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [protocol VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
   A protocol that describes the configuration of a processor to use during a video processing session.
-- [class VTFrameProcessorFrame](vtframeprocessorframe.md)
+- [class VTFrameProcessorFrame](./vtframeprocessorframe.md)
   An object that wraps video frames to send to the processor, as source, reference, or output frames.
-- [protocol VTFrameProcessorParameters](vtframeprocessorparameters.md)
+- [protocol VTFrameProcessorParameters](./vtframeprocessorparameters.md)
   The base protocol for input and output processing parameters for a frame processor implementation.
 
 

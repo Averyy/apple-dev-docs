@@ -1,7 +1,8 @@
 # SHSession.Results
 
 **Framework**: ShazamKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits updates from a session object query.
 
@@ -23,27 +24,28 @@ struct Results
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> SHSession.Results.Iterator](./results-swift.struct/makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces results from an asynchronous sequence.
-- [SHSession.Results.Iterator](shsession/results-swift.struct/iterator.md)
+- [SHSession.Results.Iterator](./results-swift.struct/iterator.md)
   An iterator for accessing session results.
-- [SHSession.Results.Element](shsession/results-swift.struct/element.md)
+- [SHSession.Results.Element](./results-swift.struct/element.md)
   A set of results that a session result object returns.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any SHSessionDelegate)?](shsession/delegate.md)
+### Reading the session properties
+- [var delegate: (any SHSessionDelegate)?](./delegate.md)
   The object that the session calls with the result of a match request.
-- [var catalog: SHCatalog](shsession/catalog.md)
+- [var catalog: SHCatalog](./catalog.md)
   The catalog object containing the reference signatures and their associated metadata that the session uses to perform matches.
-- [var results: SHSession.Results](shsession/results-swift.property.md)
+- [var results: SHSession.Results](./results-swift.property.md)
   The results as an asynchronous sequence of matches.
 
 

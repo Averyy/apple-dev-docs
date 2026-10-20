@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s centered horizontally on the bottom edge of a view.
 
@@ -22,13 +23,14 @@ static let bottom: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottom`](alignment/bottom.md) alignment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottom`](../alignment/bottom.md) alignment.
 
 ## See Also
 
-- [static let bottomLeading: UnitPoint](unitpoint/bottomleading.md)
+### Getting bottom points
+- [static let bottomLeading: UnitPoint](./bottomleading.md)
   A point that’s in the bottom, leading corner of a view.
-- [static let bottomTrailing: UnitPoint](unitpoint/bottomtrailing.md)
+- [static let bottomTrailing: UnitPoint](./bottomtrailing.md)
   A point that’s in the bottom, trailing corner of a view.
 
 

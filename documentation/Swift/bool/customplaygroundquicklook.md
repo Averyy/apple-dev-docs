@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for the `Bool` instance.
 
@@ -14,6 +15,8 @@ A custom playground Quick Look for the `Bool` instance.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Bool.customPlaygroundQuickLook will be removed in a future Swift version
+
 ## Declaration
 
 ```swift
@@ -22,11 +25,12 @@ var customPlaygroundQuickLook: _PlaygroundQuickLook { get }
 
 ## See Also
 
-- [var customMirror: Mirror](bool/custommirror.md)
+### Inspecting a Boolean
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Bool` instance.
-- [var hashValue: Int](bool/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](bool/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

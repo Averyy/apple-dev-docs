@@ -1,12 +1,13 @@
 # usesFontPanel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that controls whether the receiver uses the Font panel and Font menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean that controls whether the receiver uses the Font panel and Font menu.
 var usesFontPanel: Bool { get set }
 ```
 
+```objc
+@property BOOL usesFontPanel;
+```
+
 #### Discussion
 
-If `flag` is [`true`](https://developer.apple.com/documentation/swift/true), the receiver responds to messages from the Font panel and from the Font menu and updates the Font panel with the selection font whenever it changes. If `flag` is [`false`](https://developer.apple.com/documentation/swift/false) the receiver doesn’t do any of these actions.
+If `flag` is [`true`](../../Swift/true.md), the receiver responds to messages from the Font panel and from the Font menu and updates the Font panel with the selection font whenever it changes. If `flag` is [`false`](../../Swift/false.md) the receiver doesn’t do any of these actions.
 
 
 ---

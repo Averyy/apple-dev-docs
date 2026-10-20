@@ -1,12 +1,13 @@
 # WatchKitError
 
 **Framework**: WatchKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error reported by WatchKit.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -17,36 +18,36 @@ struct WatchKitError
 ## Topics
 
 ### Accessing Error Codes
-- [static var downloadFailed: WatchKitError.Code](watchkiterror/downloadfailed.md)
+- [static var downloadFailed: WatchKitError.Code](./watchkiterror/downloadfailed.md)
   A download error.
-- [static var invalidArgument: WatchKitError.Code](watchkiterror/invalidargument.md)
+- [static var invalidArgument: WatchKitError.Code](./watchkiterror/invalidargument.md)
   An invalid argument error.
-- [static var mediaPlayerFailed: WatchKitError.Code](watchkiterror/mediaplayerfailed.md)
+- [static var mediaPlayerFailed: WatchKitError.Code](./watchkiterror/mediaplayerfailed.md)
   A media player error.
-- [static var recordingFailed: WatchKitError.Code](watchkiterror/recordingfailed.md)
+- [static var recordingFailed: WatchKitError.Code](./watchkiterror/recordingfailed.md)
   An audio recording error.
-- [static var unknown: WatchKitError.Code](watchkiterror/unknown.md)
+- [static var unknown: WatchKitError.Code](./watchkiterror/unknown.md)
   An unknown error.
-- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](watchkiterror/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](./watchkiterror/applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 ### Accessing the Error Domain
-- [let WatchKitErrorDomain: String](watchkiterrordomain.md)
+- [let WatchKitErrorDomain: String](./watchkiterrordomain.md)
   The domain for WatchKit errors.
 ### Accessing Error Properties
-- [WatchKitError.Code](watchkiterror/code.md)
+- [WatchKitError.Code](./watchkiterror/code.md)
   Error codes reported by WatchKit.
 ### Type Properties
-- [static var errorDomain: String](watchkiterror/errordomain.md)
+- [static var errorDomain: String](./watchkiterror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

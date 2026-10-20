@@ -1,7 +1,8 @@
 # CSSM_PROC_ADDR_PTR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_PROC_ADDR_PTR = UnsafeMutablePointer<CSSM_PROC_ADDR?>
+```
+
+```c
+typedef CSSM_PROC_ADDR* CSSM_PROC_ADDR_PTR;
 ```
 
 

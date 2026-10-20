@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera configuration.
 
@@ -20,13 +21,14 @@ init()
 
 ## See Also
 
-- [init(position: VideoReader.CameraConfiguration.Position, pixelFormat: VideoReader.CameraConfiguration.PixelFormat, resolution: VideoReader.CameraConfiguration.Resolution, frameRate: Double)](videoreader/cameraconfiguration/init(position:pixelformat:resolution:framerate:).md)
+### Creating a camera configuration
+- [init(position: VideoReader.CameraConfiguration.Position, pixelFormat: VideoReader.CameraConfiguration.PixelFormat, resolution: VideoReader.CameraConfiguration.Resolution, frameRate: Double)](./init%28position,pixelformat,resolution,framerate%29.md)
   Creates a camera configuration.
-- [VideoReader.CameraConfiguration.PixelFormat](videoreader/cameraconfiguration/pixelformat-swift.enum.md)
+- [VideoReader.CameraConfiguration.PixelFormat](./pixelformat-swift.enum.md)
   The camera pixel format.
-- [VideoReader.CameraConfiguration.Position](videoreader/cameraconfiguration/position-swift.enum.md)
+- [VideoReader.CameraConfiguration.Position](./position-swift.enum.md)
   The position of the camera for an iOS device.
-- [VideoReader.CameraConfiguration.Resolution](videoreader/cameraconfiguration/resolution-swift.enum.md)
+- [VideoReader.CameraConfiguration.Resolution](./resolution-swift.enum.md)
   The camera resolution.
 
 

@@ -1,18 +1,19 @@
 # init(circleOfRadius:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circular physics body centered on the owning node’s origin.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a circular physics body centered on the owning node’s origin.
 init(circleOfRadius r: CGFloat)
 ```
 
+```objc
++ (SKPhysicsBody *) bodyWithCircleOfRadius:(CGFloat) r;
+```
+
 ## Mentions
 
-- [Shaping a Physics Body to Match a Node’s Graphics](shaping-a-physics-body-to-match-a-node-s-graphics.md)
+- [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
 #### Return Value
 
@@ -58,13 +63,14 @@ If the physics body were significantly smaller than the sprite’s image, the da
 
 ## See Also
 
-- [init(circleOfRadius: CGFloat, center: CGPoint)](skphysicsbody/init(circleofradius:center:).md)
+### Creating a Body from a Shape
+- [init(circleOfRadius: CGFloat, center: CGPoint)](./init%28circleofradius,center%29.md)
   Creates a circular physics body centered on an arbitrary point.
-- [init(rectangleOf: CGSize)](skphysicsbody/init(rectangleof:).md)
+- [init(rectangleOf: CGSize)](./init%28rectangleof%29.md)
   Creates a rectangular physics body centered on the owning node’s origin.
-- [init(rectangleOf: CGSize, center: CGPoint)](skphysicsbody/init(rectangleof:center:).md)
+- [init(rectangleOf: CGSize, center: CGPoint)](./init%28rectangleof,center%29.md)
   Creates a rectangular physics body centered on an arbitrary point.
-- [init(polygonFrom: CGPath)](skphysicsbody/init(polygonfrom:).md)
+- [init(polygonFrom: CGPath)](./init%28polygonfrom%29.md)
   Creates a polygonal physics body.
 
 

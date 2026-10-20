@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraPosition.right
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Right camera.
 

@@ -1,7 +1,8 @@
 # CPListItemAccessoryType.cloud
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Show a cloud icon.
 
@@ -16,11 +17,16 @@ Show a cloud icon.
 case cloud
 ```
 
+```c
+CPListItemAccessoryTypeCloud
+```
+
 ## See Also
 
-- [CPListItemAccessoryType.none](cplistitemaccessorytype/none.md)
+### Accessory Types
+- [CPListItemAccessoryType.none](./none.md)
   Don’t show an accessory.
-- [CPListItemAccessoryType.disclosureIndicator](cplistitemaccessorytype/disclosureindicator.md)
+- [CPListItemAccessoryType.disclosureIndicator](./disclosureindicator.md)
   Show a chevron icon.
 
 

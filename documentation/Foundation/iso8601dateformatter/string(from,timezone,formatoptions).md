@@ -1,7 +1,8 @@
 # string(from:timeZone:formatOptions:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a representation of the specified date with a given time zone and format options.
 
@@ -18,6 +19,10 @@ Creates a representation of the specified date with a given time zone and format
 
 ```swift
 class func string(from date: Date, timeZone: TimeZone, formatOptions: ISO8601DateFormatter.Options = []) -> String
+```
+
+```objc
++ (NSString *) stringFromDate:(NSDate *) date timeZone:(NSTimeZone *) timeZone formatOptions:(NSISO8601DateFormatOptions) formatOptions;
 ```
 
 #### Return Value
@@ -61,13 +66,14 @@ string = [NSISO8601DateFormatter stringFromDate:date timeZone:GMT formatOptions:
 
 - `date`: The date to be represented.
 - `timeZone`: The time zone used.
-- `formatOptions`: The options used. For possible values, see [`ISO8601DateFormatter.Options`](iso8601dateformatter/options.md).
+- `formatOptions`: The options used. For possible values, see [`ISO8601DateFormatter.Options`](./options.md).
 
 ## See Also
 
-- [func string(from: Date) -> String](iso8601dateformatter/string(from:).md)
+### Converting ISO 8601 Dates
+- [func string(from: Date) -> String](./string%28from%29.md)
   Creates and returns an ISO 8601 formatted string representation of the specified date.
-- [func date(from: String) -> Date?](iso8601dateformatter/date(from:).md)
+- [func date(from: String) -> Date?](./date%28from%29.md)
   Creates and returns a date object from the specified ISO 8601 formatted string representation.
 
 

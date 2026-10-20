@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.SoundStageSize
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Configure the distribution of audio channels in 3D space.
 
@@ -21,24 +22,24 @@ For multi-channel sounds, the sound stage size describes how the channels are po
 ## Topics
 
 ### Enumeration Cases
-- [SpatialAudioExperiences.SoundStageSize.automatic](spatialaudioexperiences/soundstagesize/automatic.md)
+- [SpatialAudioExperiences.SoundStageSize.automatic](./soundstagesize/automatic.md)
   A system-defined sound stage size.
-- [SpatialAudioExperiences.SoundStageSize.large](spatialaudioexperiences/soundstagesize/large.md)
+- [SpatialAudioExperiences.SoundStageSize.large](./soundstagesize/large.md)
   Spreads an audio stream’s channels around the user according to the coordinates described in its channel layout.
-- [SpatialAudioExperiences.SoundStageSize.medium](spatialaudioexperiences/soundstagesize/medium.md)
+- [SpatialAudioExperiences.SoundStageSize.medium](./soundstagesize/medium.md)
   Pulls an audio stream’s channels closer to the channel layout’s front.
-- [SpatialAudioExperiences.SoundStageSize.small](spatialaudioexperiences/soundstagesize/small.md)
+- [SpatialAudioExperiences.SoundStageSize.small](./soundstagesize/small.md)
   Places all of an audio stream’s channels near the layout’s front.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

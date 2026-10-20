@@ -1,7 +1,8 @@
 # kCVReturnLast
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Placeholder to mark the end of Core Video result codes (not returned by any functions).
 
@@ -20,18 +21,23 @@ Placeholder to mark the end of Core Video result codes (not returned by any func
 var kCVReturnLast: CVReturn { get }
 ```
 
+```c
+kCVReturnLast
+```
+
 ## See Also
 
-- [var kCVReturnAllocationFailed: CVReturn](kcvreturnallocationfailed.md)
+### Common
+- [var kCVReturnAllocationFailed: CVReturn](./kcvreturnallocationfailed.md)
   Memory allocation for a buffer or buffer pool failed.
-- [var kCVReturnError: CVReturn](kcvreturnerror.md)
+- [var kCVReturnError: CVReturn](./kcvreturnerror.md)
   An otherwise undefined error occurred.
-- [var kCVReturnInvalidArgument: CVReturn](kcvreturninvalidargument.md)
+- [var kCVReturnInvalidArgument: CVReturn](./kcvreturninvalidargument.md)
   Invalid function parameter. For example, out of range or the wrong type.
-- [var kCVReturnSuccess: CVReturn](kcvreturnsuccess.md)
+- [var kCVReturnSuccess: CVReturn](./kcvreturnsuccess.md)
   Indicates the operation completed successfully.
-- [var kCVReturnUnsupported: CVReturn](kcvreturnunsupported.md)
-- [var kCVReturnFirst: CVReturn](kcvreturnfirst.md)
+- [var kCVReturnUnsupported: CVReturn](./kcvreturnunsupported.md)
+- [var kCVReturnFirst: CVReturn](./kcvreturnfirst.md)
   Placeholder to mark the beginning of Core Video result codes (not returned by any functions).
 
 

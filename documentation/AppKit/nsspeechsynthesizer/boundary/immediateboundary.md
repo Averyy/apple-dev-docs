@@ -1,12 +1,15 @@
 # NSSpeechSynthesizer.Boundary.immediateBoundary
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Speech should be paused or stopped immediately.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -14,11 +17,16 @@ Speech should be paused or stopped immediately.
 case immediateBoundary
 ```
 
+```c
+NSSpeechImmediateBoundary
+```
+
 ## See Also
 
-- [NSSpeechSynthesizer.Boundary.wordBoundary](nsspeechsynthesizer/boundary/wordboundary.md)
+### Constants
+- [NSSpeechSynthesizer.Boundary.wordBoundary](./wordboundary.md)
   Speech should be paused or stopped at the end of the word.
-- [NSSpeechSynthesizer.Boundary.sentenceBoundary](nsspeechsynthesizer/boundary/sentenceboundary.md)
+- [NSSpeechSynthesizer.Boundary.sentenceBoundary](./sentenceboundary.md)
   Speech should be paused or stopped at the end of the sentence.
 
 

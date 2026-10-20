@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element to the end of the array.
 
@@ -24,7 +25,7 @@ mutating func append(_ item: consuming Element)
 
 If the array does not have sufficient capacity to hold any more elements, then this reallocates the array’s storage to grow its capacity, using a geometric growth rate.
 
-> **Note**: O(1) as amortized over many invocations on the same array.
+> **Complexity**: O(1) as amortized over many invocations on the same array.
 
 ## Parameters
 

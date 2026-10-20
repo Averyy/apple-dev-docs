@@ -1,7 +1,8 @@
 # quickTimeMovie
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A sound description that selects the QuickTime movie format.
 
@@ -20,13 +21,18 @@ A sound description that selects the QuickTime movie format.
 static let quickTimeMovie: CMSoundDescriptionFlavor
 ```
 
+```c
+extern CMSoundDescriptionFlavor const kCMSoundDescriptionFlavor_QuickTimeMovie;
+```
+
 ## See Also
 
-- [static let isoFamily: CMSoundDescriptionFlavor](cmsounddescriptionflavor/isofamily.md)
+### Sound Description Flavors
+- [static let isoFamily: CMSoundDescriptionFlavor](./isofamily.md)
   A sound description that selects the ISO family sample format.
-- [static let mobile3GPFamily: CMSoundDescriptionFlavor](cmsounddescriptionflavor/mobile3gpfamily.md)
+- [static let mobile3GPFamily: CMSoundDescriptionFlavor](./mobile3gpfamily.md)
   A sound description that selects the 3GP family sample format.
-- [static let quickTimeMovieV2: CMSoundDescriptionFlavor](cmsounddescriptionflavor/quicktimemoviev2.md)
+- [static let quickTimeMovieV2: CMSoundDescriptionFlavor](./quicktimemoviev2.md)
   A sound description that selects the second version of the QuickTime movie format.
 
 

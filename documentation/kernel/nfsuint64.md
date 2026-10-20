@@ -1,14 +1,15 @@
 # nfsuint64
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct nfs_uquad {
     ...
 } nfsuint64;
@@ -17,7 +18,7 @@ typedef struct nfs_uquad {
 ## Topics
 
 ### Instance Properties
-- [nfsuquad](nfsuint64/3945336-nfsuquad.md)
+- [nfsuquad](./nfsuint64/api-3945336-nfsuquad.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GCMouse.DidBecomeCurrentMessage
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message that posts after a mouse becomes the most recently used mouse.
 
@@ -23,7 +24,7 @@ struct DidBecomeCurrentMessage
 
 Use the `.didBecomeCurrent` identifier with `NotificationCenter` to listen for this message.
 
-```None
+```
 let observation = NotificationCenter.default.addObserver(of: GCMouse.self, for: .didBecomeCurrent) { message in
    let mouse = message.mouse
 }
@@ -32,16 +33,16 @@ let observation = NotificationCenter.default.addObserver(of: GCMouse.self, for: 
 ## Topics
 
 ### Initializers
-- [init(mouse: GCMouse)](gcmouse/didbecomecurrentmessage/init(mouse:).md)
+- [init(mouse: GCMouse)](./didbecomecurrentmessage/init%28mouse%29.md)
 ### Instance Properties
-- [var mouse: GCMouse](gcmouse/didbecomecurrentmessage/mouse.md)
+- [var mouse: GCMouse](./didbecomecurrentmessage/mouse.md)
   The mouse object that became current.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

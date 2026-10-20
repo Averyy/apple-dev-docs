@@ -1,7 +1,8 @@
 # ScrollTransitionConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration of a scroll transition that controls how a transition is applied as a view is scrolled through the visible region of a containing scroll view or other container.
 
@@ -23,31 +24,32 @@ struct ScrollTransitionConfiguration
 ## Topics
 
 ### Getting the configuration
-- [static let identity: ScrollTransitionConfiguration](scrolltransitionconfiguration/identity.md)
+- [static let identity: ScrollTransitionConfiguration](./scrolltransitionconfiguration/identity.md)
   Creates a new configuration that does not change the appearance of the view.
-- [static let animated: ScrollTransitionConfiguration](scrolltransitionconfiguration/animated.md)
+- [static let animated: ScrollTransitionConfiguration](./scrolltransitionconfiguration/animated.md)
   Creates a new configuration that discretely animates the transition when the view becomes visible.
-- [static func animated(Animation) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/animated(_:).md)
+- [static func animated(Animation) -> ScrollTransitionConfiguration](./scrolltransitionconfiguration/animated%28_%29.md)
   Creates a new configuration that discretely animates the transition when the view becomes visible.
-- [static let interactive: ScrollTransitionConfiguration](scrolltransitionconfiguration/interactive.md)
+- [static let interactive: ScrollTransitionConfiguration](./scrolltransitionconfiguration/interactive.md)
   Creates a new configuration that interactively interpolates the transition’s effect as the view is scrolled into the visible region of the container.
-- [static func interactive(timingCurve: UnitCurve) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/interactive(timingcurve:).md)
+- [static func interactive(timingCurve: UnitCurve) -> ScrollTransitionConfiguration](./scrolltransitionconfiguration/interactive%28timingcurve%29.md)
   Creates a new configuration that interactively interpolates the transition’s effect as the view is scrolled into the visible region of the container.
 ### Accessing the configuration
-- [func animation(Animation) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/animation(_:).md)
+- [func animation(Animation) -> ScrollTransitionConfiguration](./scrolltransitionconfiguration/animation%28_%29.md)
   Sets the animation with which the transition will be applied.
-- [func threshold(ScrollTransitionConfiguration.Threshold) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/threshold(_:).md)
+- [func threshold(ScrollTransitionConfiguration.Threshold) -> ScrollTransitionConfiguration](./scrolltransitionconfiguration/threshold%28_%29.md)
   Sets the threshold at which the view will be considered fully visible.
-- [ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold.md)
+- [ScrollTransitionConfiguration.Threshold](./scrolltransitionconfiguration/threshold.md)
   Describes a specific point in the progression of a target view within a container from hidden (fully outside the container) to visible.
 
 ## See Also
 
-- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(_:axis:transition:).md)
+### Animating scroll transitions
+- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](./view/scrolltransition%28_,axis,transition%29.md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
-- [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
+- [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](./view/scrolltransition%28topleading,bottomtrailing,axis,transition%29.md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
-- [enum ScrollTransitionPhase](scrolltransitionphase.md)
+- [enum ScrollTransitionPhase](./scrolltransitionphase.md)
   The phases that a view transitions between when it scrolls among other views.
 
 

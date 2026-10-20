@@ -1,7 +1,8 @@
 # boundingBoxStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns the stride, in bytes, between bounding boxes in the bounding box buffer `boundingBoxBuffer` references.
 
@@ -17,6 +18,10 @@ Assigns the stride, in bytes, between bounding boxes in the bounding box buffer 
 
 ```swift
 var boundingBoxStride: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger boundingBoxStride;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # FSVolumeRenameResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a rename-volume call.
 
@@ -14,33 +15,38 @@ The result of a rename-volume call.
 class FSVolumeRenameResult
 ```
 
+```objc
+@interface FSVolumeRenameResult : FSVolumeHandlerResult
+```
+
 #### Overview
 
-Use this type in your implementation of [`setVolumeName(_:context:replyHandler:)`](fsvolume/renamehandler/setvolumename(_:context:replyhandler:).md).
+Use this type in your implementation of [`setVolumeName(_:context:replyHandler:)`](./fsvolume/renamehandler/setvolumename%28_,context,replyhandler%29.md).
 
 ## Topics
 
 ### Creating a volume-rename result
-- [init?(newName: FSFileName)](fsvolumerenameresult/init(newname:).md)
+- [init?(newName: FSFileName)](./fsvolumerenameresult/init%28newname%29.md)
   Creates a result for a volume-renaming operation.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](./fsfilename.md)
   The name of a file, expressed as a data buffer.
 
 ## Relationships
 
 ### Inherits From
-- [FSVolumeHandlerResult](fsvolumehandlerresult.md)
+- [FSVolumeHandlerResult](./fsvolumehandlerresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func setVolumeName(FSFileName, context: FSContext, replyHandler: (FSVolumeRenameResult?, (any Error)?) -> Void)](fsvolume/renamehandler/setvolumename(_:context:replyhandler:).md)
+### Renaming the volume
+- [func setVolumeName(FSFileName, context: FSContext, replyHandler: (FSVolumeRenameResult?, (any Error)?) -> Void)](./fsvolume/renamehandler/setvolumename%28_,context,replyhandler%29.md)
   Sets a new name for the volume.
 
 

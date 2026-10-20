@@ -1,7 +1,8 @@
 # Font.Leading.tight
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reduced line spacing.
 
@@ -26,9 +27,10 @@ This value typically reduces line spacing by 1 point for watchOS and 2 points on
 
 ## See Also
 
-- [Font.Leading.standard](font/leading/standard.md)
+### Getting leading line spacing options
+- [Font.Leading.standard](./standard.md)
   The font’s default line spacing.
-- [Font.Leading.loose](font/leading/loose.md)
+- [Font.Leading.loose](./loose.md)
   Increased line spacing.
 
 

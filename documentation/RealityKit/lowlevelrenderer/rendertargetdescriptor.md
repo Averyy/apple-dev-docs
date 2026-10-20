@@ -1,7 +1,8 @@
 # renderTargetDescriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The render target descriptor derived from the renderer’s configuration.
 
@@ -19,9 +20,10 @@ final var renderTargetDescriptor: LowLevelRenderTarget.Descriptor { get }
 
 ## See Also
 
-- [var output: LowLevelRenderer.Output](lowlevelrenderer/output-swift.property.md)
+### Accessing render output
+- [var output: LowLevelRenderer.Output](./output-swift.property.md)
   The per-frame output target configuration, including color and depth textures, viewports, and render target dimensions.
-- [LowLevelRenderer.Output](lowlevelrenderer/output-swift.struct.md)
+- [LowLevelRenderer.Output](./output-swift.struct.md)
   The per-frame output target configuration for a renderer.
 
 

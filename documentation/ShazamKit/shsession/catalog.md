@@ -1,7 +1,8 @@
 # catalog
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The catalog object containing the reference signatures and their associated metadata that the session uses to perform matches.
 
@@ -20,13 +21,26 @@ The catalog object containing the reference signatures and their associated meta
 var catalog: SHCatalog { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly) SHCatalog * catalog;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly) SHCatalog * catalog;
+```
+
 ## See Also
 
-- [var delegate: (any SHSessionDelegate)?](shsession/delegate.md)
+### Reading the session properties
+- [var delegate: (any SHSessionDelegate)?](./delegate.md)
   The object that the session calls with the result of a match request.
-- [var results: SHSession.Results](shsession/results-swift.property.md)
+- [var results: SHSession.Results](./results-swift.property.md)
   The results as an asynchronous sequence of matches.
-- [SHSession.Results](shsession/results-swift.struct.md)
+- [SHSession.Results](./results-swift.struct.md)
   An asynchronous sequence that emits updates from a session object query.
 
 

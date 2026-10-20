@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef IOReturn ( *Action)(
    void *target,
    void *param0,
@@ -28,7 +28,8 @@ Definition of a C function that can be called through executeCommand().
 
 ## See Also
 
-- [Action](ioworkloop/action.md)
+### Callbacks
+- [Action](../ioworkloop/action.md)
 
 
 ---

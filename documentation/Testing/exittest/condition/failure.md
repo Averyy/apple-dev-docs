@@ -1,7 +1,8 @@
 # failure
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A condition that matches when a process exits abnormally
 
@@ -17,7 +18,7 @@ static var failure: ExitTest.Condition { get }
 
 ## Mentions
 
-- [Exit testing](exit-testing.md)
+- [Exit testing](../../exit-testing.md)
 
 #### Discussion
 
@@ -25,9 +26,10 @@ This condition matches any exit code other than `EXIT_SUCCESS` or any signal tha
 
 ## See Also
 
-- [static func exitCode(CInt) -> ExitTest.Condition](exittest/condition/exitcode(_:).md)
+### Failing exit conditions
+- [static func exitCode(CInt) -> ExitTest.Condition](./exitcode%28_%29.md)
   Creates a condition that matches when a process terminates with a given exit code.
-- [static func signal(CInt) -> ExitTest.Condition](exittest/condition/signal(_:).md)
+- [static func signal(CInt) -> ExitTest.Condition](./signal%28_%29.md)
   Creates a condition that matches when a process exits with a given signal.
 
 

@@ -1,7 +1,8 @@
 # passCount
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of passes the render took.
 
@@ -19,13 +20,18 @@ The number of passes the render took.
 var passCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger passCount;
+```
+
 ## See Also
 
-- [var kernelExecutionTime: TimeInterval](cirenderinfo/kernelexecutiontime.md)
+### Instance Properties
+- [var kernelExecutionTime: TimeInterval](./kernelexecutiontime.md)
   The amount of time a render spent executing kernels.
-- [var pixelsProcessed: Int](cirenderinfo/pixelsprocessed.md)
+- [var pixelsProcessed: Int](./pixelsprocessed.md)
   The number of pixels the render produced executing kernels.
-- [var kernelCompileTime: TimeInterval](cirenderinfo/kernelcompiletime.md)
+- [var kernelCompileTime: TimeInterval](./kernelcompiletime.md)
 
 
 ---

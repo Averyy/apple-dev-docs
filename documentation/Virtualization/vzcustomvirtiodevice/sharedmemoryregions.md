@@ -1,7 +1,8 @@
 # sharedMemoryRegions
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of shared memory regions that this device exposes to the guest.
 
@@ -14,9 +15,14 @@ An array of shared memory regions that this device exposes to the guest.
 var sharedMemoryRegions: [VZVirtioSharedMemoryRegion] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<VZVirtioSharedMemoryRegion *> * sharedMemoryRegions;
+```
+
 ## See Also
 
-- [class VZVirtioSharedMemoryRegion](vzvirtiosharedmemoryregion.md)
+### Related Documentation
+- [class VZVirtioSharedMemoryRegion](../vzvirtiosharedmemoryregion.md)
   A class that represents a Virtio shared memory region for a custom Virtio device in a virtual machine.
 
 

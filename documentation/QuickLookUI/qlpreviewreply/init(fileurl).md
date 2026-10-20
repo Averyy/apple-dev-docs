@@ -1,7 +1,8 @@
 # init(fileURL:)
 
 **Framework**: Quick Look UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview reply from an existing file URL.
 
@@ -14,9 +15,13 @@ Creates a preview reply from an existing file URL.
 init(fileURL: URL)
 ```
 
+```objc
+- (instancetype) initWithFileURL:(NSURL *) fileURL;
+```
+
 #### Discussion
 
-Use [`init(fileURL:)`](qlpreviewreply/init(fileurl:).md) to create a reply from an existing file URL, such as an image or PDF. The following example illustrates creating a reply from an existing URL:
+Use [`init(fileURL:)`](./init%28fileurl%29.md) to create a reply from an existing file URL, such as an image or PDF. The following example illustrates creating a reply from an existing URL:
 
 ```swift
 guard let imageFileURL = Bundle.main.url(forResource: "yourImage", 

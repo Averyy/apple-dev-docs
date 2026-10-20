@@ -1,18 +1,23 @@
 # ODQueryCopyResults(_:_:_:)
 
 **Framework**: Open Directory  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns results from a query synchronously.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
 
 ```swift
 func ODQueryCopyResults(_ query: ODQueryRef!, _ allowPartialResults: Bool, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFArray>!
+```
+
+```c
+extern CFArrayRefODQueryCopyResults(ODQueryRef query, bool allowPartialResults, CFErrorRef*error);
 ```
 
 #### Return Value
@@ -27,21 +32,22 @@ The results of the query in an array of `ODRecord` objects.
 
 ## See Also
 
-- [func ODQueryCreateWithNode(CFAllocator!, ODNodeRef!, CFTypeRef!, String!, ODMatchType, CFTypeRef!, CFTypeRef!, CFIndex, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODQueryRef>!](odquerycreatewithnode(_:_:_:_:_:_:_:_:_:).md)
+### Working with Queries
+- [func ODQueryCreateWithNode(CFAllocator!, ODNodeRef!, CFTypeRef!, String!, ODMatchType, CFTypeRef!, CFTypeRef!, CFIndex, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODQueryRef>!](./odquerycreatewithnode%28_,_,_,_,_,_,_,_,_%29.md)
   Creates a query with a node using provided parameters.
-- [func ODQueryCreateWithNodeType(CFAllocator!, ODNodeType, CFTypeRef!, String!, ODMatchType, CFTypeRef!, CFTypeRef!, CFIndex, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODQueryRef>!](odquerycreatewithnodetype(_:_:_:_:_:_:_:_:_:).md)
+- [func ODQueryCreateWithNodeType(CFAllocator!, ODNodeType, CFTypeRef!, String!, ODMatchType, CFTypeRef!, CFTypeRef!, CFIndex, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<ODQueryRef>!](./odquerycreatewithnodetype%28_,_,_,_,_,_,_,_,_%29.md)
   Creates a query for a particular node type using provided parameters.
-- [func ODQueryGetTypeID() -> CFTypeID](odquerygettypeid().md)
+- [func ODQueryGetTypeID() -> CFTypeID](./odquerygettypeid%28%29.md)
   Returns the type ID for an Open Directory query.
-- [func ODQueryScheduleWithRunLoop(ODQueryRef!, CFRunLoop!, CFString!)](odqueryschedulewithrunloop(_:_:_:).md)
+- [func ODQueryScheduleWithRunLoop(ODQueryRef!, CFRunLoop!, CFString!)](./odqueryschedulewithrunloop%28_,_,_%29.md)
   Retrieves results from a query asynchronously by scheduling the query in a run loop.
-- [func ODQuerySetCallback(ODQueryRef!, ODQueryCallback!, UnsafeMutableRawPointer!)](odquerysetcallback(_:_:_:).md)
+- [func ODQuerySetCallback(ODQueryRef!, ODQueryCallback!, UnsafeMutableRawPointer!)](./odquerysetcallback%28_,_,_%29.md)
   Sets the callback for an asynchronous query.
-- [func ODQuerySetDispatchQueue(ODQueryRef!, dispatch_queue_t!)](odquerysetdispatchqueue(_:_:).md)
+- [func ODQuerySetDispatchQueue(ODQueryRef!, dispatch_queue_t!)](./odquerysetdispatchqueue%28_,_%29.md)
   Retrieves results from a query asynchronously by adding the query to a dispatch queue.
-- [func ODQuerySynchronize(ODQueryRef!)](odquerysynchronize(_:).md)
+- [func ODQuerySynchronize(ODQueryRef!)](./odquerysynchronize%28_%29.md)
   Restarts a query, disposing of any results it has obtained.
-- [func ODQueryUnscheduleFromRunLoop(ODQueryRef!, CFRunLoop!, CFString!)](odqueryunschedulefromrunloop(_:_:_:).md)
+- [func ODQueryUnscheduleFromRunLoop(ODQueryRef!, CFRunLoop!, CFString!)](./odqueryunschedulefromrunloop%28_,_,_%29.md)
   Removes a query from a specified run loop.
 
 

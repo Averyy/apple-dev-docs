@@ -1,7 +1,8 @@
 # wifiAware
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get the current connection information for Wi-Fi Aware if the connection is over Wi-Fi Aware, `nil` if it’s not over Wi-Fi Aware.
 
@@ -14,6 +15,8 @@ Get the current connection information for Wi-Fi Aware if the connection is over
 ```swift
 final var wifiAware: WAConnection<ApplicationProtocol>? { get }
 ```
+
+Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
 
 ---

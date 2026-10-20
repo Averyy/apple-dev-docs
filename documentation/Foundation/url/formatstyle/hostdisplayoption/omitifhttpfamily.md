@@ -1,7 +1,8 @@
 # omitIfHTTPFamily
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A display option that omits the host component if the URL scheme is HTTP or HTTPS.
 
@@ -22,19 +23,20 @@ static var omitIfHTTPFamily: URL.FormatStyle.HostDisplayOption { get }
 
 ## See Also
 
-- [static var always: URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/always.md)
+### Display options
+- [static var always: URL.FormatStyle.HostDisplayOption](./always.md)
   A display option that always displays the host component.
-- [static var never: URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/never.md)
+- [static var never: URL.FormatStyle.HostDisplayOption](./never.md)
   A display option that never displays the host component.
-- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/displaywhen(_:matches:).md)
+- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./displaywhen%28_,matches%29.md)
   Returns a display option that displays the host component when a specified component matches against a set of requirement values.
-- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitwhen(_:matches:).md)
+- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./omitwhen%28_,matches%29.md)
   Returns a display option that displays the host component when a specified component matches against a set of requirement values.
-- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitspecificsubdomains(_:includemultilevelsubdomains:).md)
+- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool) -> URL.FormatStyle.HostDisplayOption](./omitspecificsubdomains%28_,includemultilevelsubdomains%29.md)
   Returns a display option that omits the host component if it matches a set of subdomains.
-- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool, when: URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitspecificsubdomains(_:includemultilevelsubdomains:when:matches:).md)
+- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool, when: URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./omitspecificsubdomains%28_,includemultilevelsubdomains,when,matches%29.md)
   Returns a display option that omits the host component if it matches a set of subdomains and a specified component matches a set of requirements.
-- [URL.FormatStyle.Component](url/formatstyle/component.md)
+- [URL.FormatStyle.Component](../component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
 
 

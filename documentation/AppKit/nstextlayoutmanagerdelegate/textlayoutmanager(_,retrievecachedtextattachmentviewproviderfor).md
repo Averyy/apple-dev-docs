@@ -1,7 +1,8 @@
 # textLayoutManager(_:retrieveCachedTextAttachmentViewProviderFor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
@@ -12,6 +13,10 @@ Returns a cached `NSTextAttachmentViewProvider` to be associated with a particul
 
 ```swift
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor attachment: NSTextAttachment) -> NSTextAttachmentViewProvider?
+```
+
+```objc
+- (NSTextAttachmentViewProvider *) textLayoutManager:(NSTextLayoutManager *) textLayoutManager retrieveCachedTextAttachmentViewProviderForTextAttachment:(NSTextAttachment *) attachment;
 ```
 
 #### Return Value

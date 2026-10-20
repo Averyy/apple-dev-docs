@@ -1,7 +1,8 @@
 # UISpringLoadedInteractionSupporting
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that determines if an object supports a spring-loaded interaction for drag and drop activities.
 
@@ -18,38 +19,43 @@ The interface that determines if an object supports a spring-loaded interaction 
 protocol UISpringLoadedInteractionSupporting : NSObjectProtocol
 ```
 
+```objc
+@protocol UISpringLoadedInteractionSupporting <NSObject>
+```
+
 ## Topics
 
 ### Checking the spring-loaded interaction status
-- [var isSpringLoaded: Bool](uispringloadedinteractionsupporting/isspringloaded.md)
+- [var isSpringLoaded: Bool](./uispringloadedinteractionsupporting/isspringloaded.md)
   A Boolean value that specifies whether the object is participating in spring-loaded interaction for a drag and drop activity.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UIAlertController](uialertcontroller.md)
-- [UIBarButtonItem](uibarbuttonitem.md)
-- [UIButton](uibutton.md)
-- [UICollectionView](uicollectionview.md)
-- [UISearchTab](uisearchtab.md)
-- [UISegmentedControl](uisegmentedcontrol.md)
-- [UITab](uitab.md)
-- [UITabBar](uitabbar.md)
-- [UITabBarItem](uitabbaritem.md)
-- [UITabGroup](uitabgroup.md)
-- [UITableView](uitableview.md)
+- [UIAlertController](./uialertcontroller.md)
+- [UIBarButtonItem](./uibarbuttonitem.md)
+- [UIButton](./uibutton.md)
+- [UICollectionView](./uicollectionview.md)
+- [UISearchTab](./uisearchtab.md)
+- [UISegmentedControl](./uisegmentedcontrol.md)
+- [UITab](./uitab.md)
+- [UITabBar](./uitabbar.md)
+- [UITabBarItem](./uitabbaritem.md)
+- [UITabGroup](./uitabgroup.md)
+- [UITableView](./uitableview.md)
 
 ## See Also
 
-- [protocol UISpringLoadedInteractionBehavior](uispringloadedinteractionbehavior.md)
+### Spring-loaded interactions
+- [protocol UISpringLoadedInteractionBehavior](./uispringloadedinteractionbehavior.md)
   The interface for specifying the behavior of a spring-loaded interaction.
-- [class UISpringLoadedInteraction](uispringloadedinteraction.md)
+- [class UISpringLoadedInteraction](./uispringloadedinteraction.md)
   An interaction object for configuring and controlling spring-loaded, user-driven navigation during a drag activity.
-- [protocol UISpringLoadedInteractionContext](uispringloadedinteractioncontext.md)
+- [protocol UISpringLoadedInteractionContext](./uispringloadedinteractioncontext.md)
   The interface an object implements to provide information about a spring-loaded interaction.
-- [protocol UISpringLoadedInteractionEffect](uispringloadedinteractioneffect.md)
+- [protocol UISpringLoadedInteractionEffect](./uispringloadedinteractioneffect.md)
   The interface for providing visual styling to a spring-loaded interaction based on the interaction state.
 
 

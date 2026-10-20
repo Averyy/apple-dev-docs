@@ -1,7 +1,8 @@
 # noDump
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Do not dump the file during backups.
 

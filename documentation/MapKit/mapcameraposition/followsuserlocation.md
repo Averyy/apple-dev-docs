@@ -1,7 +1,8 @@
 # followsUserLocation
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map is following someone’s location.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether the map is following someone’s location
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var followsUserLocation: Bool { get }
 
 ## See Also
 
-- [var followsUserHeading: Bool](mapcameraposition/followsuserheading.md)
+### Accessing information about someone’s location
+- [var followsUserHeading: Bool](./followsuserheading.md)
   A Boolean value that indicates whether the map is following someone’s heading.
 
 

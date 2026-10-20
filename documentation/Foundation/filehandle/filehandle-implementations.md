@@ -1,15 +1,16 @@
 # FileHandle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [convenience init(forReadingFromURL: URL) throws](filehandle/init(forreadingfromurl:).md)
+- [convenience init(forReadingFromURL: URL) throws](./init%28forreadingfromurl%29.md)
   Returns a file handle initialized for reading the file, device, or named socket at the specified URL.
-- [convenience init(forUpdatingURL: URL) throws](filehandle/init(forupdatingurl:).md)
+- [convenience init(forUpdatingURL: URL) throws](./init%28forupdatingurl%29.md)
   Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
-- [convenience init(forWritingToURL: URL) throws](filehandle/init(forwritingtourl:).md)
+- [convenience init(forWritingToURL: URL) throws](./init%28forwritingtourl%29.md)
   Returns a file handle initialized for writing to the file, device, or named socket at the specified URL.
 
 

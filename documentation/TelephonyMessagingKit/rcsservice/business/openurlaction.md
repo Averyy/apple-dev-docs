@@ -1,7 +1,8 @@
 # RCSService.Business.OpenURLAction
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Suggested action to open a URL.
 
@@ -17,50 +18,51 @@ struct OpenURLAction
 ## Topics
 
 ### Accessing action properties
-- [let url: URL](rcsservice/business/openurlaction/url.md)
+- [let url: URL](./openurlaction/url.md)
   URL to open.
-- [let target: RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.property.md)
+- [let target: RCSService.Business.OpenURLAction.Target](./openurlaction/target-swift.property.md)
   Target to use when opening URL.
-- [RCSService.Business.OpenURLAction.Target](rcsservice/business/openurlaction/target-swift.enum.md)
+- [RCSService.Business.OpenURLAction.Target](./openurlaction/target-swift.enum.md)
   Enumeration representing the target to open the URL in.
 ### Supporting types
-- [RCSService.Business.OpenURLAction.Detent](rcsservice/business/openurlaction/detent.md)
+- [RCSService.Business.OpenURLAction.Detent](./openurlaction/detent.md)
   Enumeration that represents a height to apply when opening a URL.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.Business.Card](rcsservice/business/card.md)
+### Supporting types
+- [RCSService.Business.Card](./card.md)
   Structure representing a standalone card.
-- [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
+- [RCSService.Business.CardCarousel](./cardcarousel.md)
   Structure representing a card carousel.
-- [RCSService.Business.ComposeRecordingAction](rcsservice/business/composerecordingaction.md)
+- [RCSService.Business.ComposeRecordingAction](./composerecordingaction.md)
   Compose a draft message with a media recording.
-- [RCSService.Business.ComposeTextAction](rcsservice/business/composetextaction.md)
+- [RCSService.Business.ComposeTextAction](./composetextaction.md)
   Compose a draft text message.
-- [RCSService.Business.CreateCalendarEventAction](rcsservice/business/createcalendareventaction.md)
+- [RCSService.Business.CreateCalendarEventAction](./createcalendareventaction.md)
   Structure representing an action to create a calendar event.
-- [RCSService.Business.DialPhoneNumberAction](rcsservice/business/dialphonenumberaction.md)
+- [RCSService.Business.DialPhoneNumberAction](./dialphonenumberaction.md)
   Suggested action to dial a phone number.
-- [RCSService.Business.Media](rcsservice/business/media.md)
+- [RCSService.Business.Media](./media.md)
   Structure containing media information provided by a business.
-- [RCSService.Business.ShowLocationAction](rcsservice/business/showlocationaction.md)
+- [RCSService.Business.ShowLocationAction](./showlocationaction.md)
   Shows a location on a map.
-- [RCSService.Business.SuggestedAction](rcsservice/business/suggestedaction.md)
+- [RCSService.Business.SuggestedAction](./suggestedaction.md)
   Suggested action sent by a business.
-- [RCSService.Business.SuggestedReply](rcsservice/business/suggestedreply.md)
+- [RCSService.Business.SuggestedReply](./suggestedreply.md)
   Suggested reply in response to a business message.
-- [RCSService.Business.TelephoneDetails](rcsservice/business/telephonedetails.md)
+- [RCSService.Business.TelephoneDetails](./telephonedetails.md)
   Structure containing the telephone number details provided by a business.
-- [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
+- [RCSService.Business.URIEntry](./urientry.md)
   Structure containing details of a URI provided by a business.
 
 

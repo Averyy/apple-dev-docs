@@ -1,7 +1,8 @@
 # getParagraphStart(_:end:contentsEnd:for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference the beginning of the first paragraph and the end of the last paragraph touched by the given range.
 

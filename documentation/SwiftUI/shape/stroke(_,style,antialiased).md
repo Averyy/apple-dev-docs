@@ -1,7 +1,8 @@
 # stroke(_:style:antialiased:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Traces the outline of this shape with a color or gradient.
 
@@ -52,15 +53,16 @@ Capsule()
 
 ## See Also
 
-- [func stroke<S>(S, lineWidth: CGFloat) -> some View](shape/stroke(_:linewidth:).md)
+### Setting the stroke characteristics
+- [func stroke<S>(S, lineWidth: CGFloat) -> some View](./stroke%28_,linewidth%29.md)
   Traces the outline of this shape with a color or gradient.
-- [func stroke<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeShapeView<Self, S, EmptyView>](shape/stroke(_:linewidth:antialiased:).md)
+- [func stroke<S>(S, lineWidth: CGFloat, antialiased: Bool) -> StrokeShapeView<Self, S, EmptyView>](./stroke%28_,linewidth,antialiased%29.md)
   Traces the outline of this shape with a color or gradient.
-- [func stroke(lineWidth: CGFloat) -> some Shape](shape/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some Shape](./stroke%28linewidth%29.md)
   Returns a new shape that is a stroked copy of `self` with line-width defined by `lineWidth` and all other properties of `StrokeStyle` having their default values.
-- [func stroke<S>(S, style: StrokeStyle) -> some View](shape/stroke(_:style:).md)
+- [func stroke<S>(S, style: StrokeStyle) -> some View](./stroke%28_,style%29.md)
   Traces the outline of this shape with a color or gradient.
-- [func stroke(style: StrokeStyle) -> some Shape](shape/stroke(style:).md)
+- [func stroke(style: StrokeStyle) -> some Shape](./stroke%28style%29.md)
   Returns a new shape that is a stroked copy of `self`, using the contents of `style` to define the stroke characteristics.
 
 

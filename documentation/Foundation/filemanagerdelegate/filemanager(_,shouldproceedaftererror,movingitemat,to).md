@@ -1,7 +1,8 @@
 # fileManager(_:shouldProceedAfterError:movingItemAt:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the move operation should continue after an error occurs while moving the item at the specified URL.
 
@@ -20,15 +21,19 @@ Asks the delegate if the move operation should continue after an error occurs wh
 optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError error: any Error, movingItemAt srcURL: URL, to dstURL: URL) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldProceedAfterError:(NSError *) error movingItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation should proceed or [`false`](../../Swift/false.md) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The file manager calls this method when there is a problem moving the item to the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager proceeds to remove the item from its current location as if the move operation had completed successfully.
+The file manager calls this method when there is a problem moving the item to the specified location. If you return [`true`](../../Swift/true.md), the file manager proceeds to remove the item from its current location as if the move operation had completed successfully.
 
-This method performs the same task as the [`fileManager(_:shouldProceedAfterError:movingItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:movingitematpath:topath:).md) method and is preferred over that method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldProceedAfterError:movingItemAtPath:toPath:)`](./filemanager%28_,shouldproceedaftererror,movingitematpath,topath%29.md) method and is preferred over that method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -39,15 +44,17 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 ## See Also
 
-- [func moveItem(atPath: String, toPath: String) throws](filemanager/moveitem(atpath:topath:).md)
+### Related Documentation
+- [func moveItem(atPath: String, toPath: String) throws](../filemanager/moveitem%28atpath,topath%29.md)
   Moves the file or directory at the specified path to a new location synchronously.
-- [func moveItem(at: URL, to: URL) throws](filemanager/moveitem(at:to:).md)
+- [func moveItem(at: URL, to: URL) throws](../filemanager/moveitem%28at,to%29.md)
   Moves the file or directory at the specified URL to a new location synchronously.
-- [func fileManager(FileManager, shouldMoveItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldmoveitemat:to:).md)
+### Moving  an Item
+- [func fileManager(FileManager, shouldMoveItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldmoveitemat,to%29.md)
   Asks the delegate if the file manager should move the specified item to the new URL.
-- [func fileManager(FileManager, shouldMoveItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldmoveitematpath:topath:).md)
+- [func fileManager(FileManager, shouldMoveItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldmoveitematpath,topath%29.md)
   Asks the delegate if the file manager should move the specified item to the new path.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:movingitematpath:topath:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, movingItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldproceedaftererror,movingitematpath,topath%29.md)
   Asks the delegate if the move operation should continue after an error occurs while moving the item at the specified path.
 
 

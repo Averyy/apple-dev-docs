@@ -1,14 +1,15 @@
 # kThreadWaitExclaveKit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.2+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitExclaveKit = 0x1f
 ```
 

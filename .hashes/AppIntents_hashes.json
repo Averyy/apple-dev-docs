@@ -19006,14 +19006,12 @@
       "hash": "18b53d282d8f5d6cd7254b27f9674b1c3b719e2778c24f44d2da9f823e42ac34"
     },
     "https://developer.apple.com/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/!=(_:_:)": {
-      "etag": "W/\"483a94bd60f144e699ad7005a5d62ebc\"",
       "file_path": "documentation/AppIntents/intentpaymentmethod/paymenttype-swift.enum/noteq(_,_).md",
-      "hash": "bebad8bbdb9fb0d279bfccfb168b9d3c34b3a065bd403826cc3c9eb91b6e6ea9"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/==(_:_:)": {
-      "etag": "W/\"0cfc85edecc820f618197dadbdba9133\"",
       "file_path": "documentation/AppIntents/intentpaymentmethod/paymenttype-swift.enum/eqeq(_,_).md",
-      "hash": "5f3cf484286d8da3d9d286c103ea63ad4f8504c5154d03e9dff9c5e7976697b6"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/applepay": {
       "etag": "\"26ca-65d55d9fe9156-df\"",
@@ -19221,14 +19219,12 @@
       "hash": "a7798ce25a2f0e621983e081c839c4af3a30cb7c6838586a35f65f9dd7555de4"
     },
     "https://developer.apple.com/documentation/appintents/intentperson/identifier-swift.enum/!=(_:_:)": {
-      "etag": "W/\"3ce644daf84579a44c50fb7e6559daa1\"",
       "file_path": "documentation/AppIntents/intentperson/identifier-swift.enum/noteq(_,_).md",
-      "hash": "c95f49208e8522d365ec1b07f724354bc3a5215d943c29a0494e0ae4c30cc41a"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentperson/identifier-swift.enum/==(_:_:)": {
-      "etag": "W/\"e22a812a9e2267d469f3ea51b54cb667\"",
       "file_path": "documentation/AppIntents/intentperson/identifier-swift.enum/eqeq(_,_).md",
-      "hash": "ff59176a00f49cb05c114d5fbfaa83d56438dc4ca29e7188cd5cd226d28e984e"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentperson/identifier-swift.enum/applicationdefined(_:)": {
       "etag": "\"1a01-65d55da04e1e7-df\"",
@@ -19276,14 +19272,12 @@
       "hash": "29b416dc82ab516c4bb559894daa3626c24e1948aa858d225e7da8c9074bb48e"
     },
     "https://developer.apple.com/documentation/appintents/intentperson/name-swift.enum/!=(_:_:)": {
-      "etag": "W/\"985c87b7c40ab2fb92e328cd53898b66\"",
       "file_path": "documentation/AppIntents/intentperson/name-swift.enum/noteq(_,_).md",
-      "hash": "d766f4c6c42eb6cfada3958c43382354b3a2586a9e77eeba6dc2d5eb84bec650"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentperson/name-swift.enum/==(_:_:)": {
-      "etag": "W/\"90b0d01377a6b1669339f88eff685209\"",
       "file_path": "documentation/AppIntents/intentperson/name-swift.enum/eqeq(_,_).md",
-      "hash": "7e7e4bae4734c396a59b976016507aa6ed7d190588f15ea19865547521f934e6"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/intentperson/name-swift.enum/components(_:)": {
       "etag": "\"16fe-65d55da03798c-df\"",
@@ -20356,9 +20350,8 @@
       "hash": "ef4fb66d9b58fb607cd86856d82c29b3e157e6a3a5a3f348271b723b775ba15d"
     },
     "https://developer.apple.com/documentation/appintents/openurlintent/init()": {
-      "etag": "W/\"0ba8854a4770aceb0ab831c6d50be035\"",
       "file_path": "documentation/AppIntents/openurlintent/init().md",
-      "hash": "114586dd4aa5f6dde8dd7983891f9c3fba4570e5cfad88c3354a763805b03f4c"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/openurlintent/init(_:)": {
       "etag": "\"12ef-65d55da006cc7-df\"",
@@ -21761,9 +21754,8 @@
       "hash": "580a0b582efbd847b15c48010ee0d9a3aa25d808794b67a7834c3ced8de68732"
     },
     "https://developer.apple.com/documentation/appintents/uniqueappentityprovider/init()": {
-      "etag": "W/\"2c1eb807698d289a3f5f24321638ab2f\"",
       "file_path": "documentation/AppIntents/uniqueappentityprovider/init().md",
-      "hash": "f7f9b7c6e472d8b33479b9166716155c93095d497b8a84e970c2570af0acbcb1"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appintents/uniqueappentityprovider/init(_:)": {
       "etag": "\"1240-65d55d9dbf0d6-df\"",
@@ -40910,14 +40902,12 @@
       "hash": "18b53d282d8f5d6cd7254b27f9674b1c3b719e2778c24f44d2da9f823e42ac34"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"483a94bd60f144e699ad7005a5d62ebc\"",
       "file_path": "documentation/AppIntents/intentpaymentmethod/paymenttype-swift.enum/noteq(_,_).md",
-      "hash": "bebad8bbdb9fb0d279bfccfb168b9d3c34b3a065bd403826cc3c9eb91b6e6ea9"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/==(_:_:).json": {
-      "etag": "W/\"0cfc85edecc820f618197dadbdba9133\"",
       "file_path": "documentation/AppIntents/intentpaymentmethod/paymenttype-swift.enum/eqeq(_,_).md",
-      "hash": "5f3cf484286d8da3d9d286c103ea63ad4f8504c5154d03e9dff9c5e7976697b6"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentpaymentmethod/paymenttype-swift.enum/applepay.json": {
       "etag": "\"26ca-65d55d9fe9156-df\"",
@@ -41125,14 +41115,12 @@
       "hash": "a7798ce25a2f0e621983e081c839c4af3a30cb7c6838586a35f65f9dd7555de4"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/identifier-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"3ce644daf84579a44c50fb7e6559daa1\"",
       "file_path": "documentation/AppIntents/intentperson/identifier-swift.enum/noteq(_,_).md",
-      "hash": "c95f49208e8522d365ec1b07f724354bc3a5215d943c29a0494e0ae4c30cc41a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/identifier-swift.enum/==(_:_:).json": {
-      "etag": "W/\"e22a812a9e2267d469f3ea51b54cb667\"",
       "file_path": "documentation/AppIntents/intentperson/identifier-swift.enum/eqeq(_,_).md",
-      "hash": "ff59176a00f49cb05c114d5fbfaa83d56438dc4ca29e7188cd5cd226d28e984e"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/identifier-swift.enum/applicationdefined(_:).json": {
       "etag": "\"1a01-65d55da04e1e7-df\"",
@@ -41180,14 +41168,12 @@
       "hash": "29b416dc82ab516c4bb559894daa3626c24e1948aa858d225e7da8c9074bb48e"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/name-swift.enum/!=(_:_:).json": {
-      "etag": "W/\"985c87b7c40ab2fb92e328cd53898b66\"",
       "file_path": "documentation/AppIntents/intentperson/name-swift.enum/noteq(_,_).md",
-      "hash": "d766f4c6c42eb6cfada3958c43382354b3a2586a9e77eeba6dc2d5eb84bec650"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/name-swift.enum/==(_:_:).json": {
-      "etag": "W/\"90b0d01377a6b1669339f88eff685209\"",
       "file_path": "documentation/AppIntents/intentperson/name-swift.enum/eqeq(_,_).md",
-      "hash": "7e7e4bae4734c396a59b976016507aa6ed7d190588f15ea19865547521f934e6"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/intentperson/name-swift.enum/components(_:).json": {
       "etag": "\"16fe-65d55da03798c-df\"",
@@ -42260,9 +42246,8 @@
       "hash": "ef4fb66d9b58fb607cd86856d82c29b3e157e6a3a5a3f348271b723b775ba15d"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/openurlintent/init().json": {
-      "etag": "W/\"0ba8854a4770aceb0ab831c6d50be035\"",
       "file_path": "documentation/AppIntents/openurlintent/init().md",
-      "hash": "114586dd4aa5f6dde8dd7983891f9c3fba4570e5cfad88c3354a763805b03f4c"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/openurlintent/init(_:).json": {
       "etag": "\"12ef-65d55da006cc7-df\"",
@@ -43665,9 +43650,8 @@
       "hash": "580a0b582efbd847b15c48010ee0d9a3aa25d808794b67a7834c3ced8de68732"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/uniqueappentityprovider/init().json": {
-      "etag": "W/\"2c1eb807698d289a3f5f24321638ab2f\"",
       "file_path": "documentation/AppIntents/uniqueappentityprovider/init().md",
-      "hash": "f7f9b7c6e472d8b33479b9166716155c93095d497b8a84e970c2570af0acbcb1"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appintents/uniqueappentityprovider/init(_:).json": {
       "etag": "\"1240-65d55d9dbf0d6-df\"",
@@ -43806,6 +43790,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 8761
   }
 }

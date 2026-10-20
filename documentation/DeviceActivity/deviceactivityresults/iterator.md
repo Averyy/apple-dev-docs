@@ -1,7 +1,8 @@
 # DeviceActivityResults.Iterator
 
 **Framework**: Device Activity  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An asynchronous iterator for filtered device activity.
 
@@ -19,13 +20,13 @@ class Iterator<IteratorElement>
 ## Topics
 
 ### Instance Methods
-- [func next() async -> IteratorElement?](deviceactivityresults/iterator/next.md)
+- [func next() async -> IteratorElement?](./iterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
 
 
 ---

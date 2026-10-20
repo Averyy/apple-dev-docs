@@ -1,7 +1,8 @@
 # init(type:permissions:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `FileMode` from the given file type and permissions.
 

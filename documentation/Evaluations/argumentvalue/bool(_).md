@@ -1,7 +1,8 @@
 # ArgumentValue.bool(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Boolean value.
 
@@ -22,11 +23,12 @@ case bool(Bool)
 
 ## See Also
 
-- [ArgumentValue.string(_:)](argumentvalue/string(_:).md)
+### Values
+- [ArgumentValue.string(_:)](./string%28_%29.md)
   A string value.
-- [ArgumentValue.int(_:)](argumentvalue/int(_:).md)
+- [ArgumentValue.int(_:)](./int%28_%29.md)
   An integer value.
-- [ArgumentValue.double(_:)](argumentvalue/double(_:).md)
+- [ArgumentValue.double(_:)](./double%28_%29.md)
   A double-precision floating-point value.
 
 

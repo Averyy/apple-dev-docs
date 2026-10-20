@@ -1,7 +1,8 @@
 # WKNotificationScene
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene which appears in response to receiving the specified category of remote or local notifications.
 
@@ -17,18 +18,18 @@ struct WKNotificationScene<Content, Controller> where Content : View, Controller
 
 ## Mentions
 
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
 
 ## Topics
 
 ### Creating a notification scene
-- [init(controller: Controller.Type, category: String)](wknotificationscene/init(controller:category:).md)
+- [init(controller: Controller.Type, category: String)](./wknotificationscene/init%28controller,category%29.md)
   Creates a scene that appears in response to receiving a specific category of remote or local notifications.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 
 ---

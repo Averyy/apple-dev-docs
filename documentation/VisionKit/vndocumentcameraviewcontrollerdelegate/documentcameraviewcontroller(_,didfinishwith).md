@@ -1,7 +1,8 @@
 # documentCameraViewController(_:didFinishWith:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user successfully saved a scanned document from the document camera.
 
@@ -17,6 +18,10 @@ Tells the delegate that the user successfully saved a scanned document from the 
 optional func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan)
 ```
 
+```objc
+- (void) documentCameraViewController:(VNDocumentCameraViewController *) controller didFinishWithScan:(VNDocumentCameraScan *) scan;
+```
+
 ## Parameters
 
 - `controller`: The document camera view controller that captured the scan.
@@ -24,9 +29,10 @@ optional func documentCameraViewController(_ controller: VNDocumentCameraViewCon
 
 ## See Also
 
-- [func documentCameraViewControllerDidCancel(VNDocumentCameraViewController)](vndocumentcameraviewcontrollerdelegate/documentcameraviewcontrollerdidcancel(_:).md)
+### Determining scan results
+- [func documentCameraViewControllerDidCancel(VNDocumentCameraViewController)](./documentcameraviewcontrollerdidcancel%28_%29.md)
   Tells the delegate that the user canceled out of the document scanner camera.
-- [func documentCameraViewController(VNDocumentCameraViewController, didFailWithError: any Error)](vndocumentcameraviewcontrollerdelegate/documentcameraviewcontroller(_:didfailwitherror:).md)
+- [func documentCameraViewController(VNDocumentCameraViewController, didFailWithError: any Error)](./documentcameraviewcontroller%28_,didfailwitherror%29.md)
   Tells the delegate that document scanning failed while the camera view controller was active.
 
 

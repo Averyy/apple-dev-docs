@@ -1,7 +1,8 @@
 # init(toFleeAgent:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a goal whose effect is to move an agent away from the current position of the specified other agent.
 
@@ -19,13 +20,17 @@ Creates a goal whose effect is to move an agent away from the current position o
 convenience init(toFleeAgent agent: GKAgent)
 ```
 
+```objc
++ (instancetype) goalToFleeAgent:(GKAgent *) agent;
+```
+
 #### Return Value
 
 A new goal object.
 
 #### Discussion
 
-This goal is similar to one produced by the [`init(toAvoid:maxPredictionTime:)`](gkgoal/init(toavoid:maxpredictiontime:)-96a0i.md) method with a single agent and a `maxPredictionTime` parameter of zero. Affected agents will attempt to move away from the target agent, but without taking the target’s movement into account.
+This goal is similar to one produced by the [`init(toAvoid:maxPredictionTime:)`](./init%28toavoid,maxpredictiontime%29-96a0i.md) method with a single agent and a `maxPredictionTime` parameter of zero. Affected agents will attempt to move away from the target agent, but without taking the target’s movement into account.
 
 You can also use this goal when you want an agent to move away from a target point, such as the current mouse or touch location. Create another agent that remains stationary at the target point (that is, has no velocity and no goals), and use that agent as the parameter when creating a goal with this method.
 
@@ -35,11 +40,12 @@ You can also use this goal when you want an agent to move away from a target poi
 
 ## See Also
 
-- [convenience init(toSeekAgent: GKAgent)](gkgoal/init(toseekagent:).md)
+### Creating Goals for General Movement Behavior
+- [convenience init(toSeekAgent: GKAgent)](./init%28toseekagent%29.md)
   Creates a goal whose effect is to move an agent toward the current position of the specified other agent.
-- [convenience init(toReachTargetSpeed: Float)](gkgoal/init(toreachtargetspeed:).md)
+- [convenience init(toReachTargetSpeed: Float)](./init%28toreachtargetspeed%29.md)
   Creates a goal whose effect is to accelerate or decelerate an agent until it reaches the specified speed.
-- [convenience init(toWander: Float)](gkgoal/init(towander:).md)
+- [convenience init(toWander: Float)](./init%28towander%29.md)
   Creates a goal whose effect is to make an agent wander aimlessly, moving forward and turning at random.
 
 

@@ -1,7 +1,8 @@
 # replacementFormatDescription
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The replacement format description.
 
@@ -20,9 +21,14 @@ The replacement format description.
 var replacementFormatDescription: CMFormatDescription { get }
 ```
 
+```objc
+@property (readonly) CMFormatDescriptionRef replacementFormatDescription;
+```
+
 ## See Also
 
-- [var originalFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/originalformatdescription.md)
+### Managing format descriptions
+- [var originalFormatDescription: CMFormatDescription](./originalformatdescription.md)
   The format description to replace.
 
 

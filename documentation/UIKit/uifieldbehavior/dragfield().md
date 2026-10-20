@@ -1,7 +1,8 @@
 # dragField()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a field behavior for slowing an object’s velocity.
 
@@ -18,35 +19,40 @@ Creates and returns a field behavior for slowing an object’s velocity.
 class func dragField() -> Self
 ```
 
+```objc
++ (instancetype) dragField;
+```
+
 #### Return Value
 
 A field behavior object that applies a drag force to items.
 
 #### Discussion
 
-This field simulates the force of friction on an item. The force is applied in the opposite direction of the affected item’s velocity vector and has a magnitude that is proportional to the field’s [`strength`](uifieldbehavior/strength.md) property and the item’s current velocity.
+This field simulates the force of friction on an item. The force is applied in the opposite direction of the affected item’s velocity vector and has a magnitude that is proportional to the field’s [`strength`](./strength.md) property and the item’s current velocity.
 
 ## See Also
 
-- [class func springField() -> Self](uifieldbehavior/springfield.md)
+### Getting the field behaviors
+- [class func springField() -> Self](./springfield%28%29.md)
   Creates and returns a spring field behavior.
-- [class func velocityField(direction: CGVector) -> Self](uifieldbehavior/velocityfield(direction:).md)
+- [class func velocityField(direction: CGVector) -> Self](./velocityfield%28direction%29.md)
   Creates and returns a field behavior object that applies a directional velocity to items.
-- [class func electricField() -> Self](uifieldbehavior/electricfield.md)
+- [class func electricField() -> Self](./electricfield%28%29.md)
   Creates and returns a field behavior object that interacts with charged items.
-- [class func magneticField() -> Self](uifieldbehavior/magneticfield.md)
+- [class func magneticField() -> Self](./magneticfield%28%29.md)
   Creates and returns a field behavior that interacts with charged items.
-- [class func radialGravityField(position: CGPoint) -> Self](uifieldbehavior/radialgravityfield(position:).md)
+- [class func radialGravityField(position: CGPoint) -> Self](./radialgravityfield%28position%29.md)
   Creates and returns a field behavior object that models a radial gravitational force.
-- [class func linearGravityField(direction: CGVector) -> Self](uifieldbehavior/lineargravityfield(direction:).md)
+- [class func linearGravityField(direction: CGVector) -> Self](./lineargravityfield%28direction%29.md)
   Creates and returns a field behavior object that models a linear gravitational force.
-- [class func vortexField() -> Self](uifieldbehavior/vortexfield.md)
+- [class func vortexField() -> Self](./vortexfield%28%29.md)
   Creates and returns a field behavior object that applies a rotational force relative to the field’s position.
-- [class func noiseField(smoothness: CGFloat, animationSpeed: CGFloat) -> Self](uifieldbehavior/noisefield(smoothness:animationspeed:).md)
+- [class func noiseField(smoothness: CGFloat, animationSpeed: CGFloat) -> Self](./noisefield%28smoothness,animationspeed%29.md)
   Creates and returns a field behavior object that applies random noise to other forces.
-- [class func turbulenceField(smoothness: CGFloat, animationSpeed: CGFloat) -> Self](uifieldbehavior/turbulencefield(smoothness:animationspeed:).md)
+- [class func turbulenceField(smoothness: CGFloat, animationSpeed: CGFloat) -> Self](./turbulencefield%28smoothness,animationspeed%29.md)
   Creates and returns a field behavior object that applies noise to an item in motion.
-- [class func field(evaluationBlock: (UIFieldBehavior, CGPoint, CGVector, CGFloat, CGFloat, TimeInterval) -> CGVector) -> Self](uifieldbehavior/field(evaluationblock:).md)
+- [class func field(evaluationBlock: (UIFieldBehavior, CGPoint, CGVector, CGFloat, CGFloat, TimeInterval) -> CGVector) -> Self](./field%28evaluationblock%29.md)
   Creates and returns a field behavior object that applies an app-specified field to items.
 
 

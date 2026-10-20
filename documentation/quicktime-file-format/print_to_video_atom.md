@@ -1,7 +1,8 @@
 # Print to video atom ('ptv ')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom you use to play the movie in full-screen mode, with no window and no visible controller.
 
@@ -14,20 +15,21 @@ This atom is often added and removed transiently to control the display mode of 
 ## Topics
 
 ### Data fields
-- [Display size](print_to_video_atom/display_size.md)
+- [Display size](./print_to_video_atom/display_size.md)
   A 16-bit little-endian integer indicating the display size for the movie.
-- [Reserved](print_to_video_atom/reserved1.md)
+- [Reserved](./print_to_video_atom/reserved1.md)
   A 16-bit integer.
-- [Reserved](print_to_video_atom/reserved2.md)
+- [Reserved](./print_to_video_atom/reserved2.md)
   A 16-bit integer.
-- [Play on open](print_to_video_atom/play_on_open.md)
+- [Play on open](./print_to_video_atom/play_on_open.md)
   An 8-bit Boolean value that indicates whether the movie plays when opened.
 
 ## See Also
 
-- [User data atom ('udta')](user_data_atom.md)
+### Atoms for user data
+- [User data atom ('udta')](./user_data_atom.md)
   An atom where you define and store data associated with a QuickTime object.
-- [Track name atom ('tnam')](track_name_atom.md)
+- [Track name atom ('tnam')](./track_name_atom.md)
   An atom that provides a name for a track.
 
 

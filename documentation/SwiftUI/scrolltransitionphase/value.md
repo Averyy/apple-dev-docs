@@ -1,7 +1,8 @@
 # value
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A phase-derived value that can be used to scale or otherwise modify effects.
 
@@ -26,7 +27,8 @@ Returns -1.0 when in the topLeading phase, zero when in the identity phase, and 
 
 ## See Also
 
-- [var isIdentity: Bool](scrolltransitionphase/isidentity.md)
+### Accessing the phase state
+- [var isIdentity: Bool](./isidentity.md)
 
 
 ---

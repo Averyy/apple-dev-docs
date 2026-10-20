@@ -1,7 +1,8 @@
 # addPeer(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the game that a new peer has connected
 
@@ -20,11 +21,12 @@ func addPeer(_ peer: TabletopNetworkSession<Coordinator>.Peer)
 
 ## See Also
 
-- [var peers: Set<TabletopNetworkSession<Coordinator>.Peer>](tabletopnetworksession/peers.md)
+### Managing network session peers
+- [var peers: Set<TabletopNetworkSession<Coordinator>.Peer>](./peers.md)
   The set of peers known by the game
-- [func removePeer(TabletopNetworkSession<Coordinator>.Peer)](tabletopnetworksession/removepeer(_:).md)
+- [func removePeer(TabletopNetworkSession<Coordinator>.Peer)](./removepeer%28_%29.md)
   Notify the game that an existing peer disconnected
-- [TabletopNetworkSession.Peer](tabletopnetworksession/peer.md)
+- [TabletopNetworkSession.Peer](./peer.md)
 
 
 ---

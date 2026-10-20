@@ -2956,9 +2956,8 @@
       "hash": "20a3d70915e1eec38ff9598f7ef01263a7204d803caab2520d7d08e33f8db0f8"
     },
     "https://developer.apple.com/documentation/charts/visualizing_your_app_s_data": {
-      "etag": "W/\"7800157f360a5e9210423b2e67044cad\"",
       "file_path": "documentation/Charts/visualizing_your_app_s_data.md",
-      "hash": "ecfb072ec4110b2c578a3f5dbac253dd0b790cd22ba406c6fef3f1a8844cf98a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/Charts.json": {
       "etag": "\"adbd-65d55e8c27462-df\"",
@@ -5916,12 +5915,14 @@
       "hash": "20a3d70915e1eec38ff9598f7ef01263a7204d803caab2520d7d08e33f8db0f8"
     },
     "https://developer.apple.com/tutorials/data/documentation/charts/visualizing_your_app_s_data.json": {
-      "etag": "W/\"7800157f360a5e9210423b2e67044cad\"",
       "file_path": "documentation/Charts/visualizing_your_app_s_data.md",
-      "hash": "ecfb072ec4110b2c578a3f5dbac253dd0b790cd22ba406c6fef3f1a8844cf98a"
+      "hash": ""
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1184
   }
 }

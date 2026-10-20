@@ -1,7 +1,8 @@
 # setConfiguration(pirServerURL:pirPrivacyPassIssuerURL:pirAuthenticationToken:controlProviderBundleIdentifier:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a URL filter configuration with the required PIR server attributes and app extension information.
 
@@ -22,17 +23,18 @@ func setConfiguration(pirServerURL: URL, pirPrivacyPassIssuerURL: URL?, pirAuthe
 - `pirServerURL`: The PIR server URL.  The URL must contain only the domain name of the PIR server, and must match the value defined in the `NSPIRConfiguration` dictionary in the information property list.
 - `pirPrivacyPassIssuerURL`: The PIR Privacy Pass issuer URL. The URL must contain only the domain name of the Privacy Pass issuer. If `nil`, the configuration uses the PIR server URL as the Privacy Pass issuer URL. This value must match the value defined in the `NSPIRConfiguration` dictionary in the information property list.
 - `pirAuthenticationToken`: An HTTP bearer token that authenticates the person using your app. The system uses this token to attest that it’s a valid user when requesting anonymous authentication tokens.
-- `controlProviderBundleIdentifier`: The bundle identifier of the [`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) app extension.
+- `controlProviderBundleIdentifier`: The bundle identifier of the [`NEURLFilterControlProvider`](../neurlfiltercontrolprovider.md) app extension.
 
 ## See Also
 
-- [func loadFromPreferences() async throws](neurlfiltermanager/loadfrompreferences.md)
+### Working with the filter configuration
+- [func loadFromPreferences() async throws](./loadfrompreferences%28%29.md)
   Loads the current URL filter configuration from the caller’s URL filter preferences.
-- [func saveToPreferences() async throws](neurlfiltermanager/savetopreferences.md)
+- [func saveToPreferences() async throws](./savetopreferences%28%29.md)
   Saves the URL filter configuration in the caller’s URL filter preferences.
-- [func removeFromPreferences() async throws](neurlfiltermanager/removefrompreferences.md)
+- [func removeFromPreferences() async throws](./removefrompreferences%28%29.md)
   Removes the URL filter configuration from the caller’s URL filter preferences.
-- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](neurlfiltermanager/handleconfigchange.md)
+- [func handleConfigChange() -> any AsyncSequence<Bool, Never>](./handleconfigchange%28%29.md)
   Sets up an observer for the filter configuration change notification and models it as an asynchronous sequence.
 
 

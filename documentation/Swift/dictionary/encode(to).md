@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the contents of this dictionary into the given encoder.
 
@@ -20,6 +21,8 @@ Encodes the contents of this dictionary into the given encoder.
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Key` conforms to `Encodable`, `Key` conforms to `Hashable`, and `Value` conforms to `Encodable`.
+
 #### Discussion
 
 If the dictionary uses keys that are `String`, `Int`, or a type conforming to `CodingKeyRepresentable`, the contents are encoded in a keyed container. Otherwise, the contents are encoded as alternating key-value pairs in an unkeyed container.
@@ -32,7 +35,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [init(from: any Decoder) throws](dictionary/init(from:)-6e6js.md)
+### Encoding and Decoding
+- [init(from: any Decoder) throws](./init%28from%29-6e6js.md)
   Creates a new dictionary by decoding from the given decoder.
 
 

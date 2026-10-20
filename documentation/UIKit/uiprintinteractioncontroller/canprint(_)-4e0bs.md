@@ -1,7 +1,8 @@
 # canPrint(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether UIKit can print the contents of a data object.
 
@@ -17,25 +18,30 @@ Returns a Boolean value that indicates whether UIKit can print the contents of a
 class func canPrint(_ data: Data) -> Bool
 ```
 
+```objc
++ (BOOL) canPrintData:(NSData *) data;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if UIKit can print the contents of the data object, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The method returns [`false`](https://developer.apple.com/documentation/swift/false) if `data` is PDF data that specifies that printing is not allowed.
+[`true`](../../Swift/true.md) if UIKit can print the contents of the data object, otherwise [`false`](../../Swift/false.md). The method returns [`false`](../../Swift/false.md) if `data` is PDF data that specifies that printing is not allowed.
 
 #### Discussion
 
-You should call this method to test a data object prior to assigning it to [`printingItem`](uiprintinteractioncontroller/printingitem.md) or [`printingItems`](uiprintinteractioncontroller/printingitems.md).
+You should call this method to test a data object prior to assigning it to [`printingItem`](./printingitem.md) or [`printingItems`](./printingitems.md).
 
 ## Parameters
 
-- `data`: An instance of the [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) class that contains PDF data or an image in a format supported by the Image I/O framework. See [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [`View Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
+- `data`: An instance of the [`NSData`](../../Foundation/nsdata.md) class that contains PDF data or an image in a format supported by the Image I/O framework. See [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) in [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503) for a list of the supported image formats.
 
 ## See Also
 
-- [class var isPrintingAvailable: Bool](uiprintinteractioncontroller/isprintingavailable.md)
+### Determining printability
+- [class var isPrintingAvailable: Bool](./isprintingavailable.md)
   A Boolean value that indicates whether the device supports printing.
-- [class func canPrint(URL) -> Bool](uiprintinteractioncontroller/canprint(_:)-364vj.md)
+- [class func canPrint(URL) -> Bool](./canprint%28_%29-364vj.md)
   Returns a Boolean value that indicates whether UIKit can print the file that the specified URL references.
-- [class var printableUTIs: Set<String>](uiprintinteractioncontroller/printableutis.md)
+- [class var printableUTIs: Set<String>](./printableutis.md)
   Returns a set of the Uniform Type Identifiers for the types of data that UIKit can print.
 
 

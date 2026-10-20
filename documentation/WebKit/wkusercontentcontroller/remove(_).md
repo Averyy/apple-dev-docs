@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified rule list from the content controller object.
 
@@ -18,9 +19,13 @@ Removes the specified rule list from the content controller object.
 func remove(_ contentRuleList: WKContentRuleList)
 ```
 
+```objc
+- (void) removeContentRuleList:(WKContentRuleList *) contentRuleList;
+```
+
 #### Discussion
 
-This method removes the rule list only from the user content controller object. You can still access the rule list from the [`WKContentRuleListStore`](wkcontentruleliststore.md) object you used to create it.
+This method removes the rule list only from the user content controller object. You can still access the rule list from the [`WKContentRuleListStore`](../wkcontentruleliststore.md) object you used to create it.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ This method removes the rule list only from the user content controller object. 
 
 ## See Also
 
-- [func add(WKContentRuleList)](wkusercontentcontroller/add(_:).md)
+### Adding and Removing Content Rules
+- [func add(WKContentRuleList)](./add%28_%29.md)
   Adds the specified content rule list to the content controller object.
-- [func removeAllContentRuleLists()](wkusercontentcontroller/removeallcontentrulelists.md)
+- [func removeAllContentRuleLists()](./removeallcontentrulelists%28%29.md)
   Removes all rules lists from the content controller.
-- [class WKContentRuleList](wkcontentrulelist.md)
+- [class WKContentRuleList](../wkcontentrulelist.md)
   A compiled list of rules to apply to web content.
 
 

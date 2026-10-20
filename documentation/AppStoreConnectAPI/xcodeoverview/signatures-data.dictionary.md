@@ -1,7 +1,8 @@
 # xcodeOverview.Signatures
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The top performance signatures for an app, such as its top hang, launch, and disk-write points.
 
@@ -10,7 +11,7 @@ The top performance signatures for an app, such as its top hang, launch, and dis
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.Signatures
 ```
 
@@ -22,9 +23,10 @@ object xcodeOverview.Signatures
 
 ## See Also
 
-- [object xcodeOverview.AppMetadata](xcodeoverview/appmetadata-data.dictionary.md)
+### Objects
+- [object xcodeOverview.AppMetadata](./appmetadata-data.dictionary.md)
   Metadata about the app that a performance overview describes.
-- [object xcodeOverview.Insights](xcodeoverview/insights-data.dictionary.md)
+- [object xcodeOverview.Insights](./insights-data.dictionary.md)
   Performance insights for an app, including regressions and metrics that are trending up.
 
 

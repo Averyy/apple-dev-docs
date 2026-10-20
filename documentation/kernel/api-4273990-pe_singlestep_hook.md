@@ -1,14 +1,15 @@
 # PE_singlestep_hook
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_singlestep_hook(void);
 ```
 

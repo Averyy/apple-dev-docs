@@ -1,11 +1,12 @@
 # kAudioAggregateDriftCompensationHighQuality
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,12 +14,17 @@
 var kAudioAggregateDriftCompensationHighQuality: UInt32 { get }
 ```
 
+```c
+kAudioAggregateDriftCompensationHighQuality
+```
+
 ## See Also
 
-- [var kAudioAggregateDriftCompensationLowQuality: UInt32](kaudioaggregatedriftcompensationlowquality.md)
-- [var kAudioAggregateDriftCompensationMaxQuality: UInt32](kaudioaggregatedriftcompensationmaxquality.md)
-- [var kAudioAggregateDriftCompensationMediumQuality: UInt32](kaudioaggregatedriftcompensationmediumquality.md)
-- [var kAudioAggregateDriftCompensationMinQuality: UInt32](kaudioaggregatedriftcompensationminquality.md)
+### Constants
+- [var kAudioAggregateDriftCompensationLowQuality: UInt32](./kaudioaggregatedriftcompensationlowquality.md)
+- [var kAudioAggregateDriftCompensationMaxQuality: UInt32](./kaudioaggregatedriftcompensationmaxquality.md)
+- [var kAudioAggregateDriftCompensationMediumQuality: UInt32](./kaudioaggregatedriftcompensationmediumquality.md)
+- [var kAudioAggregateDriftCompensationMinQuality: UInt32](./kaudioaggregatedriftcompensationminquality.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CHHapticEngine.FinishedAction
 
 **Framework**: Core Haptics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible actions to take after the haptic engine finishes execution.
 
@@ -9,7 +10,7 @@ Possible actions to take after the haptic engine finishes execution.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,31 +20,36 @@ Possible actions to take after the haptic engine finishes execution.
 enum FinishedAction
 ```
 
+```c
+enum CHHapticEngineFinishedAction : NSInteger;
+```
+
 ## Topics
 
 ### Finished Actions
-- [CHHapticEngine.FinishedAction.leaveEngineRunning](chhapticengine/finishedaction/leaveenginerunning.md)
+- [CHHapticEngine.FinishedAction.leaveEngineRunning](./finishedaction/leaveenginerunning.md)
   Keeps the engine running after it finishes playing all haptic patterns.
-- [CHHapticEngine.FinishedAction.stopEngine](chhapticengine/finishedaction/stopengine.md)
+- [CHHapticEngine.FinishedAction.stopEngine](./finishedaction/stopengine.md)
   Stops the engine after it finishes playing all haptic patterns.
 ### Initializers
-- [init?(rawValue: Int)](chhapticengine/finishedaction/init(rawvalue:).md)
+- [init?(rawValue: Int)](./finishedaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func notifyWhenPlayersFinished(finishedHandler: CHHapticEngine.FinishedHandler)](chhapticengine/notifywhenplayersfinished(finishedhandler:).md)
+### Monitoring Finished Playback
+- [func notifyWhenPlayersFinished(finishedHandler: CHHapticEngine.FinishedHandler)](./notifywhenplayersfinished%28finishedhandler%29.md)
   Notifies you when all haptic pattern players have finished playing their haptic patterns.
-- [CHHapticEngine.FinishedHandler](chhapticengine/finishedhandler.md)
+- [CHHapticEngine.FinishedHandler](./finishedhandler.md)
   A type alias for a completion handler to execute after finishing haptic playback.
 
 

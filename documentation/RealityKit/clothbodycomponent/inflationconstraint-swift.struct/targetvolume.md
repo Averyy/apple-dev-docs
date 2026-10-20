@@ -1,7 +1,8 @@
 # targetVolume
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target volume (in ㎥) that the body tries to match.
 
@@ -18,11 +19,12 @@ var targetVolume: Float? { get set }
 
 #### Discussion
 
-Must be positive when non-`nil`. When `nil`, the volume of the body’s [`mesh`](clothbodycomponent/mesh.md) is used.
+Must be positive when non-`nil`. When `nil`, the volume of the body’s [`mesh`](../mesh.md) is used.
 
 ## See Also
 
-- [var stiffness: Float](clothbodycomponent/inflationconstraint-swift.struct/stiffness.md)
+### Configuring inflation
+- [var stiffness: Float](./stiffness.md)
   The resistance of the body’s volume to diverge from `targetVolume`.
 
 

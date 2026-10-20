@@ -1,12 +1,13 @@
 # select(withFrame:in:editor:delegate:start:length:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the specified text range in the cell’s field editor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Selects the specified text range in the cell’s field editor.
 func select(withFrame rect: NSRect, in controlView: NSView, editor textObj: NSText, delegate: Any?, start selStart: Int, length selLength: Int)
 ```
 
+```objc
+- (void) selectWithFrame:(NSRect) rect inView:(NSView *) controlView editor:(NSText *) textObj delegate:(id) delegate start:(NSInteger) selStart length:(NSInteger) selLength;
+```
+
 #### Discussion
 
-This method is similar to [`edit(withFrame:in:editor:delegate:event:)`](nscell/edit(withframe:in:editor:delegate:event:).md), except that it can be invoked in any situation, not only on a mouse-down event. This method returns without doing anything if `controlView`, `textObj`, or the receiver is `nil`, or if the receiver has no font set for it.
+This method is similar to [`edit(withFrame:in:editor:delegate:event:)`](./edit%28withframe,in,editor,delegate,event%29.md), except that it can be invoked in any situation, not only on a mouse-down event. This method returns without doing anything if `controlView`, `textObj`, or the receiver is `nil`, or if the receiver has no font set for it.
 
 ## Parameters
 
@@ -29,17 +34,18 @@ This method is similar to [`edit(withFrame:in:editor:delegate:event:)`](nscell/e
 
 ## See Also
 
-- [func edit(withFrame: NSRect, in: NSView, editor: NSText, delegate: Any?, event: NSEvent?)](nscell/edit(withframe:in:editor:delegate:event:).md)
+### Editing and Selecting Text
+- [func edit(withFrame: NSRect, in: NSView, editor: NSText, delegate: Any?, event: NSEvent?)](./edit%28withframe,in,editor,delegate,event%29.md)
   Begins editing of the receiver’s text using the specified field editor.
-- [var sendsActionOnEndEditing: Bool](nscell/sendsactiononendediting.md)
+- [var sendsActionOnEndEditing: Bool](./sendsactiononendediting.md)
   A Boolean value indicating whether the cell’s control object sends its action message when the user finishes editing the cell’s text.
-- [func endEditing(NSText)](nscell/endediting(_:).md)
+- [func endEditing(NSText)](./endediting%28_%29.md)
   Ends the editing of text in the receiver using the specified field editor.
-- [var wantsNotificationForMarkedText: Bool](nscell/wantsnotificationformarkedtext.md)
+- [var wantsNotificationForMarkedText: Bool](./wantsnotificationformarkedtext.md)
   A Boolean value indicating whether the cell’s field editor should post text change notifications.
-- [func fieldEditor(for: NSView) -> NSTextView?](nscell/fieldeditor(for:).md)
+- [func fieldEditor(for: NSView) -> NSTextView?](./fieldeditor%28for%29.md)
   Returns a custom field editor for editing in the view.
-- [var usesSingleLineMode: Bool](nscell/usessinglelinemode.md)
+- [var usesSingleLineMode: Bool](./usessinglelinemode.md)
   A Boolean value indicating whether the cell restricts layout and rendering of text to a single line.
 
 

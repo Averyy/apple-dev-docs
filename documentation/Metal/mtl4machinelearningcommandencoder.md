@@ -1,7 +1,8 @@
 # MTL4MachineLearningCommandEncoder
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Encodes machine learning model inference commands for a single pass.
 
@@ -19,38 +20,43 @@ Encodes machine learning model inference commands for a single pass.
 protocol MTL4MachineLearningCommandEncoder : MTL4CommandEncoder
 ```
 
+```objc
+@protocol MTL4MachineLearningCommandEncoder <MTL4CommandEncoder>
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
 #### Overview
 
-Create a machine learning encoder by calling a factory method of an [`MTL4CommandBuffer`](mtl4commandbuffer.md) instance, such as [`makeMachineLearningCommandEncoder()`](mtl4commandbuffer/makemachinelearningcommandencoder().md).
+Create a machine learning encoder by calling a factory method of an [`MTL4CommandBuffer`](./mtl4commandbuffer.md) instance, such as [`makeMachineLearningCommandEncoder()`](./mtl4commandbuffer/makemachinelearningcommandencoder%28%29.md).
 
-The [`dispatchNetwork(intermediatesHeap:)`](mtl4machinelearningcommandencoder/dispatchnetwork(intermediatesheap:).md) method applies to the [`machineLearning`](mtlstages/machinelearning.md) stage of a machine learning pass. For more information about stages and synchronization, see [`MTLStages`](mtlstages.md) and [`Resource synchronization`](resource-synchronization.md).
+The [`dispatchNetwork(intermediatesHeap:)`](./mtl4machinelearningcommandencoder/dispatchnetwork%28intermediatesheap%29.md) method applies to the [`machineLearning`](./mtlstages/machinelearning.md) stage of a machine learning pass. For more information about stages and synchronization, see [`MTLStages`](./mtlstages.md) and [Resource synchronization](./resource-synchronization.md).
 
 ## Topics
 
 ### Configuring the pass
-- [func setPipelineState(any MTL4MachineLearningPipelineState)](mtl4machinelearningcommandencoder/setpipelinestate(_:).md)
+- [func setPipelineState(any MTL4MachineLearningPipelineState)](./mtl4machinelearningcommandencoder/setpipelinestate%28_%29.md)
   Configures the encoder with a machine learning pipeline state instance.
-- [func setArgumentTable((any MTL4ArgumentTable)?)](mtl4machinelearningcommandencoder/setargumenttable(_:).md)
+- [func setArgumentTable((any MTL4ArgumentTable)?)](./mtl4machinelearningcommandencoder/setargumenttable%28_%29.md)
   Sets an argument table for the command encoder’s machine learning shader stage.
 ### Running machine learning networks
-- [func dispatchNetwork(intermediatesHeap: any MTLHeap)](mtl4machinelearningcommandencoder/dispatchnetwork(intermediatesheap:).md)
+- [func dispatchNetwork(intermediatesHeap: any MTLHeap)](./mtl4machinelearningcommandencoder/dispatchnetwork%28intermediatesheap%29.md)
   Dispatches a machine learning network using the current pipeline state and argument table.
 
 ## Relationships
 
 ### Inherits From
-- [MTL4CommandEncoder](mtl4commandencoder.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTL4CommandEncoder](./mtl4commandencoder.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
+### Encoding a machine learning pass
+- [Running a machine learning model on the GPU timeline](./running-a-machine-learning-model-on-the-gpu-timeline.md)
   Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
-- [protocol MTL4MachineLearningPipelineState](mtl4machinelearningpipelinestate.md)
+- [protocol MTL4MachineLearningPipelineState](./mtl4machinelearningpipelinestate.md)
   A pipeline state that you can use with machine-learning encoder instances.
 
 

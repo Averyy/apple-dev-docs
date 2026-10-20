@@ -1,7 +1,8 @@
 # nextContentProposal
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item proposed to follow the current content.
 
@@ -14,13 +15,18 @@ The item proposed to follow the current content.
 var nextContentProposal: AVContentProposal? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) AVContentProposal * nextContentProposal;
+```
+
 #### Discussion
 
 You can use this property to associate content proposed to follow the current content.
 
 ## See Also
 
-- [var navigationMarkerGroups: [AVNavigationMarkersGroup]](avplayeritem/navigationmarkergroups.md)
+### Configuring player items for AVKit
+- [var navigationMarkerGroups: [AVNavigationMarkersGroup]](./navigationmarkergroups.md)
   The time marker groups that provide ways to navigate the player item’s content.
 
 

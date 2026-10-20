@@ -1,7 +1,8 @@
 # init(localMember:members:activeRemoteMembers:capabilities:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object with updated conversation attributes and capabilities.
 

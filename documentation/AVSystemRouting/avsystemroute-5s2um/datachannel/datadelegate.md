@@ -1,7 +1,8 @@
 # dataDelegate
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that handles incoming data from a remote application.
 
@@ -18,7 +19,7 @@ weak final var dataDelegate: (any AVSystemRouteDataDelegate)? { get set }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../../routing-and-streaming-media-to-remote-devices.md)
 
 
 ---

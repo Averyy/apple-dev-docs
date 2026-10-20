@@ -1,7 +1,8 @@
 # shouldCheckForSupport
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to check for PRF support.
 
@@ -20,7 +21,8 @@ let shouldCheckForSupport: Bool
 
 ## See Also
 
-- [static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput](asauthorizationpublickeycredentialprfregistrationinput-swift.struct/checkforsupport.md)
+### Checking for support
+- [static var checkForSupport: ASAuthorizationPublicKeyCredentialPRFRegistrationInput](./checkforsupport.md)
   A check to determine extension support for the newly created passkey.
 
 

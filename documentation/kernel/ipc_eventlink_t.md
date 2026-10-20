@@ -1,14 +1,15 @@
 # ipc_eventlink_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ipc_eventlink *ipc_eventlink_t;
 ```
 

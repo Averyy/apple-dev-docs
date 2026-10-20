@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all elements from the array.
 
@@ -22,7 +23,7 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the length of the array.
+> **Complexity**: O(*n*), where *n* is the length of the array.
 
 ## Parameters
 

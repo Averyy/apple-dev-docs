@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root layer of the layer-tree the receiver should render.
 
@@ -19,9 +20,14 @@ The root layer of the layer-tree the receiver should render.
 var layer: CALayer? { get set }
 ```
 
+```objc
+@property (strong, nullable) CALayer * layer;
+```
+
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

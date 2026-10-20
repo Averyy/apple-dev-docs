@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the change.
 
@@ -10,7 +11,7 @@ The time of the change.
 
 ## Declaration
 
-```swift
+```
 attribute date timestamp;
 ```
 

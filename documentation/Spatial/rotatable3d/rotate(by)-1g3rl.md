@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Rotates the entity by an angle over an axis.
@@ -12,7 +13,7 @@ Rotates the entity by an angle over an axis.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -25,13 +26,22 @@ mutating func rotate(by rotation: Rotation3D)
 
 - `rotation`: The rotation structure that defines the rotation’s angle and axis.
 
+## Default Implementations
+
+### Rotatable3D Implementations
+- [func rotate(by: Rotation3D)](./rotate%28by%29-2eo1e.md)
+  Rotates the entity by an angle over an axis.
+- [func rotate(by: simd_quatd)](./rotate%28by%29-lrh8.md)
+  Rotates the entity by a quaternion.
+
 ## See Also
 
-- [func rotate(by: simd_quatd)](rotatable3d/rotate(by:)-usrg.md)
+### Instance methods
+- [func rotate(by: simd_quatd)](./rotate%28by%29-usrg.md)
   Rotates the entity by a quaternion.
-- [func rotated(by: simd_quatd) -> Self](rotatable3d/rotated(by:)-4gdqe.md)
+- [func rotated(by: simd_quatd) -> Self](./rotated%28by%29-4gdqe.md)
   Returns the entity that a quaternion rotates.
-- [func rotated(by: Rotation3D) -> Self](rotatable3d/rotated(by:)-7bx4w.md)
+- [func rotated(by: Rotation3D) -> Self](./rotated%28by%29-7bx4w.md)
   Returns the entity that results from applying the specified rotation.
 
 

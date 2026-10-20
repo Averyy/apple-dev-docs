@@ -1,7 +1,8 @@
 # width
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the region, in meters. This is [-width/2, width/2] from the center.
 

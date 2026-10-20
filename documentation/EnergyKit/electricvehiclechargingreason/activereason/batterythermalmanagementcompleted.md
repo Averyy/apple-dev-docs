@@ -1,14 +1,15 @@
 # ElectricVehicleChargingReason.ActiveReason.batteryThermalManagementCompleted
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reason that indicates charging starts after battery thermal management completes.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,15 +19,16 @@ case batteryThermalManagementCompleted
 
 ## See Also
 
-- [ElectricVehicleChargingReason.ActiveReason.demandResponseEnded](electricvehiclechargingreason/activereason/demandresponseended.md)
+### System conditions resolved
+- [ElectricVehicleChargingReason.ActiveReason.demandResponseEnded](./demandresponseended.md)
   A reason that indicates charging starts because a utility-demand response event ends.
-- [ElectricVehicleChargingReason.ActiveReason.batteryHealthManagementCompleted](electricvehiclechargingreason/activereason/batteryhealthmanagementcompleted.md)
+- [ElectricVehicleChargingReason.ActiveReason.batteryHealthManagementCompleted](./batteryhealthmanagementcompleted.md)
   A reason that indicates charging starts after battery health management completes.
-- [ElectricVehicleChargingReason.ActiveReason.chargerFaultCleared](electricvehiclechargingreason/activereason/chargerfaultcleared.md)
+- [ElectricVehicleChargingReason.ActiveReason.chargerFaultCleared](./chargerfaultcleared.md)
   A reason that indicates charging starts after a charger fault resolves.
-- [ElectricVehicleChargingReason.ActiveReason.sufficientPowerRestored](electricvehiclechargingreason/activereason/sufficientpowerrestored.md)
+- [ElectricVehicleChargingReason.ActiveReason.sufficientPowerRestored](./sufficientpowerrestored.md)
   A reason that indicates charging starts after sufficient power becomes available.
-- [ElectricVehicleChargingReason.ActiveReason.loadBalancingCompleted](electricvehiclechargingreason/activereason/loadbalancingcompleted.md)
+- [ElectricVehicleChargingReason.ActiveReason.loadBalancingCompleted](./loadbalancingcompleted.md)
   A reason that indicates charging starts after load-balancing completes.
 
 

@@ -1,7 +1,8 @@
 # addAction(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the UIAction to a given event. UIActions are uniqued based on their identifier, and subsequent actions with the same identifier replace previously added actions. You may add multiple UIActions for corresponding controlEvents, and you may add the same action to multiple controlEvents.
 
@@ -18,24 +19,29 @@ Adds the UIAction to a given event. UIActions are uniqued based on their identif
 func addAction(_ action: UIAction, for controlEvents: UIControl.Event)
 ```
 
+```objc
+- (void) addAction:(UIAction *) action forControlEvents:(UIControlEvents) controlEvents;
+```
+
 ## See Also
 
-- [func addTarget(Any?, action: Selector, for: UIControl.Event)](uicontrol/addtarget(_:action:for:).md)
+### Managing the control’s targets and actions
+- [func addTarget(Any?, action: Selector, for: UIControl.Event)](./addtarget%28_,action,for%29.md)
   Associates a target object and action method with the control.
-- [func removeTarget(Any?, action: Selector?, for: UIControl.Event)](uicontrol/removetarget(_:action:for:).md)
+- [func removeTarget(Any?, action: Selector?, for: UIControl.Event)](./removetarget%28_,action,for%29.md)
   Stops the delivery of events to the specified target object.
-- [var allTargets: Set<AnyHashable>](uicontrol/alltargets.md)
+- [var allTargets: Set<AnyHashable>](./alltargets.md)
   Returns all target objects associated with the control.
-- [func removeAction(UIAction, for: UIControl.Event)](uicontrol/removeaction(_:for:).md)
+- [func removeAction(UIAction, for: UIControl.Event)](./removeaction%28_,for%29.md)
   Removes the action from the set of passed control events.
-- [func removeAction(identifiedBy: UIAction.Identifier, for: UIControl.Event)](uicontrol/removeaction(identifiedby:for:).md)
+- [func removeAction(identifiedBy: UIAction.Identifier, for: UIControl.Event)](./removeaction%28identifiedby,for%29.md)
   Removes the action with the provided identifier from the set of passed control events.
-- [func actions(forTarget: Any?, forControlEvent: UIControl.Event) -> [String]?](uicontrol/actions(fortarget:forcontrolevent:).md)
+- [func actions(forTarget: Any?, forControlEvent: UIControl.Event) -> [String]?](./actions%28fortarget,forcontrolevent%29.md)
   Returns the actions performed on a target object when the specified event occurs.
-- [var allControlEvents: UIControl.Event](uicontrol/allcontrolevents.md)
+- [var allControlEvents: UIControl.Event](./allcontrolevents.md)
   Returns the events for which the control has associated actions.
-- [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](uicontrol/enumerateeventhandlers(_:).md)
-- [UIControl.Event](uicontrol/event.md)
+- [func enumerateEventHandlers((UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)](./enumerateeventhandlers%28_%29.md)
+- [UIControl.Event](./event.md)
   Constants describing the types of events possible for controls.
 
 

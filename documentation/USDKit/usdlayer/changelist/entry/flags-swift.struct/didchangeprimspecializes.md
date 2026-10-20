@@ -1,7 +1,8 @@
 # didChangePrimSpecializes
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a prim’s specializes list changed.
 

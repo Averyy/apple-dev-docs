@@ -1,7 +1,8 @@
 # isLockingFocusWithCustomLensPositionSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports locking focus to a specific lens position.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the device supports locking focus to a sp
 var isLockingFocusWithCustomLensPositionSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLockingFocusWithCustomLensPositionSupported) BOOL lockingFocusWithCustomLensPositionSupported;
+```
+
 #### Discussion
 
-If this property’s value is [`false`](https://developer.apple.com/documentation/swift/false), calling the [`setFocusModeLocked(lensPosition:completionHandler:)`](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md) method with a lens position value other than [`currentLensPosition`](avcapturedevice/currentlensposition.md) raises an exception.
+If this property’s value is [`false`](../../Swift/false.md), calling the [`setFocusModeLocked(lensPosition:completionHandler:)`](./setfocusmodelocked%28lensposition,completionhandler%29.md) method with a lens position value other than [`currentLensPosition`](./currentlensposition.md) raises an exception.
 
 ## See Also
 
-- [var lensPosition: Float](avcapturedevice/lensposition.md)
+### Setting focus manually
+- [var lensPosition: Float](./lensposition.md)
   The current focus position of the lens.
-- [class let currentLensPosition: Float](avcapturedevice/currentlensposition.md)
+- [class let currentLensPosition: Float](./currentlensposition.md)
   A constant that represents the current lens position.
-- [func setFocusModeLocked(lensPosition: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setfocusmodelocked(lensposition:completionhandler:).md)
+- [func setFocusModeLocked(lensPosition: Float, completionHandler: ((CMTime) -> Void)?)](./setfocusmodelocked%28lensposition,completionhandler%29.md)
   Locks the lens position at the specified value, and sets the focus mode to a locked state.
 
 

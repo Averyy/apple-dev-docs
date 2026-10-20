@@ -1,7 +1,8 @@
 # titleBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A window style which displays the title bar section of the window.
 
@@ -15,15 +16,18 @@ A window style which displays the title bar section of the window.
 static var titleBar: TitleBarWindowStyle { get }
 ```
 
+Available when `Self` is `TitleBarWindowStyle`.
+
 ## See Also
 
-- [static var automatic: DefaultWindowStyle](windowstyle/automatic.md)
+### Getting built-in window styles
+- [static var automatic: DefaultWindowStyle](./automatic.md)
   The default window style.
-- [static var hiddenTitleBar: HiddenTitleBarWindowStyle](windowstyle/hiddentitlebar.md)
+- [static var hiddenTitleBar: HiddenTitleBarWindowStyle](./hiddentitlebar.md)
   A window style which hides both the window’s title and the backing of the titlebar area, allowing more of the window’s content to show.
-- [static var plain: PlainWindowStyle](windowstyle/plain.md)
+- [static var plain: PlainWindowStyle](./plain.md)
   The plain window style.
-- [static var volumetric: VolumetricWindowStyle](windowstyle/volumetric.md)
+- [static var volumetric: VolumetricWindowStyle](./volumetric.md)
   A window style that creates a 3D volumetric window.
 
 

@@ -1,7 +1,8 @@
 # Quartz
 
 **Framework**: Quartz  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Allow users to browse, edit, and save images, using slideshows and Core Image filters.
 
@@ -15,23 +16,24 @@ This collection of documents provides the API reference for the Quartz framework
 ## Topics
 
 ### Viewing and Transforming Images
-- [ImageKit](imagekit.md)
+- [ImageKit](./imagekit.md)
 ### Displaying PDFs
-- [PDFKit](pdfkit.md)
+- [PDFKit](./pdfkit.md)
 ### Quartz Composer
-- [Quartz Composer](quartz-composer.md)
+- [Quartz Composer](./quartz-composer.md)
 ### Using Quick Look
-- [Quick Look](quick-look.md)
+- [Quick Look](./quick-look.md)
 ### Conversion Filters
-- [Quartz Filter](quartz-filter.md)
+- [Quartz Filter](./quartz-filter.md)
 ### Constants
-- [Quartz Constants](quartz-constants.md)
+- [Quartz Constants](./quartz-constants.md)
 
 ## See Also
 
-- [Quartz Composer Custom Patch Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787)
-- [PDF Kit Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/PDFKitGuide/PDFKit_Prog_Intro/PDFKit_Prog_Intro.html#//apple_ref/doc/uid/TP40001863)
-- [Image Kit Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageKitProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004907)
+### Related Documentation
+- [Quartz Composer Custom Patch Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787)
+- [PDF Kit Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/PDFKitGuide/PDFKit_Prog_Intro/PDFKit_Prog_Intro.html#//apple_ref/doc/uid/TP40001863)
+- [Image Kit Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/ImageKitProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004907)
 
 
 ---

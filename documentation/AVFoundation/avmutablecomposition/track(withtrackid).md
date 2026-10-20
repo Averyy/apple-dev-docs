@@ -1,23 +1,28 @@
 # track(withTrackID:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a track that contains the specified identifier.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func track(withTrackID trackID: CMPersistentTrackID) -> AVMutableCompositionTrack?
+```
+
+```objc
+- (AVMutableCompositionTrack *) trackWithTrackID:(CMPersistentTrackID) trackID;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A composition track or `nil` if no track is available.
 
 #### Discussion
 
-Apple discourages using this method. Load a track asynchronously using [`loadTrack(withTrackID:completionHandler:)`](avmutablecomposition/loadtrack(withtrackid:completionhandler:).md) instead.
+Apple discourages using this method. Load a track asynchronously using [`loadTrack(withTrackID:completionHandler:)`](./loadtrack%28withtrackid,completionhandler%29.md) instead.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ Apple discourages using this method. Load a track asynchronously using [`loadTra
 
 ## See Also
 
-- [var tracks: [AVMutableCompositionTrack]](avmutablecomposition/tracks.md)
+### Accessing tracks
+- [var tracks: [AVMutableCompositionTrack]](./tracks.md)
   The tracks that a composition contains.
-- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVMutableCompositionTrack]](./tracks%28withmediatype%29.md)
   Returns tracks that contain media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](avmutablecomposition/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVMutableCompositionTrack]](./tracks%28withmediacharacteristic%29.md)
   Returns tracks that contain media of a specified characteristic.
 
 

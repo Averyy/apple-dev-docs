@@ -1,7 +1,8 @@
 # VZLinuxRosettaDirectoryShare.CachingOptions.unixSocket(_:)
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that describes an UNIX domain socket at a path that you specify.
 
@@ -24,7 +25,8 @@ case unixSocket(String)
 
 ## See Also
 
-- [VZLinuxRosettaDirectoryShare.CachingOptions.abstractSocket(_:)](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum/abstractsocket(_:).md)
+### Socket types
+- [VZLinuxRosettaDirectoryShare.CachingOptions.abstractSocket(_:)](./abstractsocket%28_%29.md)
   The value that describes an abstract socket with a name you specify.
 
 

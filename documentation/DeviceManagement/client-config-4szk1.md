@@ -1,7 +1,8 @@
 # Client Config
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Store client-specific information on the server.
 
@@ -10,11 +11,11 @@ Store client-specific information on the server.
 
 ## Mentions
 
-- [Getting started with the management API](getting-started-with-the-management-api.md)
-- [Managing assets](managing-assets.md)
-- [Managing users](managing-users.md)
-- [Subscribing to notifications](subscribing-to-notifications.md)
-- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Getting started with the management API](./getting-started-with-the-management-api.md)
+- [Managing assets](./managing-assets.md)
+- [Managing users](./managing-users.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
+- [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
 #### Discussion
 
@@ -22,7 +23,7 @@ Store client-specific information on the server.
 
 **Request**:
 
-```None
+```
 {
     "mdmInfo": {
         "id": "522d5c43-44ca-4f7e-ba7a-53570cf60765",
@@ -69,14 +70,14 @@ Store client-specific information on the server.
 ## Topics
 
 ### Request and Response
-- [object ClientConfigRequest](clientconfigrequest.md)
+- [object ClientConfigRequest](./clientconfigrequest.md)
   The request for the client configuration.
-- [object ClientConfigResponse](clientconfigresponse.md)
+- [object ClientConfigResponse](./clientconfigresponse.md)
   The response that contains the client configuration.
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 ### Read-Only
-- [Client Config](client-config-71glv.md)
+- [Client Config](./client-config-71glv.md)
   Read client-specific information from the server.
 
 ## Endpoint
@@ -85,11 +86,22 @@ Store client-specific information on the server.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ClientConfigRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`ClientConfigResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`): The provided token is invalid. It may either be missing or expired.
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An internal server error occurred. Try again later.
 
 ## See Also
 
-- [Service Config](service-config.md)
+### Configuration management
+- [Service Config](./service-config.md)
   Provides the full list of web service URLs, notification types, request limits, and possible error codes.
 
 

@@ -1,7 +1,8 @@
 # lowerBound
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -16,6 +17,10 @@
 ```swift
 @NSCopying
 var lowerBound: HKQuantity? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * lowerBound;
 ```
 
 #### Discussion

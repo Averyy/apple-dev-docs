@@ -1,7 +1,8 @@
 # determined
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user has set the app’s level of access to home data.
 
@@ -19,11 +20,16 @@ The user has set the app’s level of access to home data.
 static var determined: HMHomeManagerAuthorizationStatus { get }
 ```
 
+```c
+HMHomeManagerAuthorizationStatusDetermined
+```
+
 ## See Also
 
-- [static var authorized: HMHomeManagerAuthorizationStatus](hmhomemanagerauthorizationstatus/authorized.md)
+### Recognizing Status Values
+- [static var authorized: HMHomeManagerAuthorizationStatus](./authorized.md)
   The app has access to home data.
-- [static var restricted: HMHomeManagerAuthorizationStatus](hmhomemanagerauthorizationstatus/restricted.md)
+- [static var restricted: HMHomeManagerAuthorizationStatus](./restricted.md)
   The app doesn’t have access to home data.
 
 

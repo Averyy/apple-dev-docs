@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests cancellation of any running requests.
 
@@ -25,7 +26,8 @@ When cancellation has completed, a `.processingCancelled` message will be output
 
 ## See Also
 
-- [func process(requests: [PhotogrammetrySession.Request]) throws](photogrammetrysession/process(requests:).md)
+### Controlling object creation
+- [func process(requests: [PhotogrammetrySession.Request]) throws](./process%28requests%29.md)
   Starts processing of the provided processing `requests`.  Messages begin to be produced to the `output` publisher.
 
 

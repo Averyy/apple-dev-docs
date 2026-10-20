@@ -1,7 +1,8 @@
 # kCTFontFamilyNameAttribute
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The font family name from the font descriptor.
 
@@ -20,41 +21,46 @@ The font family name from the font descriptor.
 let kCTFontFamilyNameAttribute: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontFamilyNameAttribute;
+```
+
 #### Discussion
 
-The value associated with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object.
+The value associated with this key is a [`CFString`](../CoreFoundation/cfstring.md) object.
 
 ## See Also
 
-- [let kCTFontURLAttribute: CFString](kctfonturlattribute.md)
+### Font Attribute Keys
+- [let kCTFontURLAttribute: CFString](./kctfonturlattribute.md)
   The font URL from the font descriptor.
-- [let kCTFontNameAttribute: CFString](kctfontnameattribute.md)
+- [let kCTFontNameAttribute: CFString](./kctfontnameattribute.md)
   The PostScript name from the font descriptor.
-- [let kCTFontDisplayNameAttribute: CFString](kctfontdisplaynameattribute.md)
+- [let kCTFontDisplayNameAttribute: CFString](./kctfontdisplaynameattribute.md)
   The name used to display the font.
-- [let kCTFontStyleNameAttribute: CFString](kctfontstylenameattribute.md)
+- [let kCTFontStyleNameAttribute: CFString](./kctfontstylenameattribute.md)
   The style name of the font.
-- [let kCTFontTraitsAttribute: CFString](kctfonttraitsattribute.md)
+- [let kCTFontTraitsAttribute: CFString](./kctfonttraitsattribute.md)
   The dictionary of font traits for stylistic information.
-- [let kCTFontVariationAttribute: CFString](kctfontvariationattribute.md)
+- [let kCTFontVariationAttribute: CFString](./kctfontvariationattribute.md)
   The dictionary of font variation.
-- [let kCTFontSizeAttribute: CFString](kctfontsizeattribute.md)
+- [let kCTFontSizeAttribute: CFString](./kctfontsizeattribute.md)
   The font point size.
-- [let kCTFontMatrixAttribute: CFString](kctfontmatrixattribute.md)
+- [let kCTFontMatrixAttribute: CFString](./kctfontmatrixattribute.md)
   The font transformation matrix when creating a font.
-- [let kCTFontCascadeListAttribute: CFString](kctfontcascadelistattribute.md)
+- [let kCTFontCascadeListAttribute: CFString](./kctfontcascadelistattribute.md)
   The cascade list used for a font reference.
-- [let kCTFontCharacterSetAttribute: CFString](kctfontcharactersetattribute.md)
+- [let kCTFontCharacterSetAttribute: CFString](./kctfontcharactersetattribute.md)
   The Unicode character coverage set for a font reference.
-- [let kCTFontLanguagesAttribute: CFString](kctfontlanguagesattribute.md)
+- [let kCTFontLanguagesAttribute: CFString](./kctfontlanguagesattribute.md)
   A list of covered languages for a font reference.
-- [let kCTFontBaselineAdjustAttribute: CFString](kctfontbaselineadjustattribute.md)
+- [let kCTFontBaselineAdjustAttribute: CFString](./kctfontbaselineadjustattribute.md)
   The baseline adjustment for a font reference.
-- [let kCTFontMacintoshEncodingsAttribute: CFString](kctfontmacintoshencodingsattribute.md)
+- [let kCTFontMacintoshEncodingsAttribute: CFString](./kctfontmacintoshencodingsattribute.md)
   The Macintosh encodings for a font reference.
-- [let kCTFontFeaturesAttribute: CFString](kctfontfeaturesattribute.md)
+- [let kCTFontFeaturesAttribute: CFString](./kctfontfeaturesattribute.md)
   The font features for a font reference.
-- [let kCTFontFeatureSettingsAttribute: CFString](kctfontfeaturesettingsattribute.md)
+- [let kCTFontFeatureSettingsAttribute: CFString](./kctfontfeaturesettingsattribute.md)
   The font features settings for a font reference.
 
 

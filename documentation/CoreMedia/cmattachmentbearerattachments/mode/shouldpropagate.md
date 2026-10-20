@@ -1,7 +1,8 @@
 # CMAttachmentBearerAttachments.Mode.shouldPropagate
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that propagates attachments.
 
@@ -22,7 +23,8 @@ case shouldPropagate
 
 ## See Also
 
-- [CMAttachmentBearerAttachments.Mode.shouldNotPropagate](cmattachmentbearerattachments/mode/shouldnotpropagate.md)
+### Cases
+- [CMAttachmentBearerAttachments.Mode.shouldNotPropagate](./shouldnotpropagate.md)
   A mode that doesn’t propagate attachments.
 
 

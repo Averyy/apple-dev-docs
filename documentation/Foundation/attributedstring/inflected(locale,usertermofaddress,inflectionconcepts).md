@@ -1,7 +1,8 @@
 # inflected(locale:userTermOfAddress:inflectionConcepts:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Process automatic grammar agreement and formatting attributes.
 

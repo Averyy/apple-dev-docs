@@ -1,7 +1,8 @@
 # orientationMatchesAngle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system rotates the accessory to match its angle.
 
@@ -17,9 +18,13 @@ A Boolean value that indicates whether the system rotates the accessory to match
 var orientationMatchesAngle: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL orientationMatchesAngle;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false) for custom accessories, and varies for system accessories.
+The default value of this property is [`false`](../../Swift/false.md) for custom accessories, and varies for system accessories.
 
 
 ---

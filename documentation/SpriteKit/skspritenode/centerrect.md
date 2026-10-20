@@ -1,18 +1,19 @@
 # centerRect
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enable nine-part stretching of the sprite’s texture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ Enable nine-part stretching of the sprite’s texture.
 var centerRect: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect centerRect;
+```
+
 ## Mentions
 
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [Animating a Sprite by Changing its Texture](animating-a-sprite-by-changing-its-texture.md)
+- [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
+- [Animating a Sprite by Changing its Texture](../animating-a-sprite-by-changing-its-texture.md)
 
 #### Discussion
 
@@ -42,7 +47,8 @@ This is what’s referred to as a 9-part scaling algorithm.
 
 ## See Also
 
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
+### Scaling a Sprite in Nine Parts
+- [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
   Scale a sprite using nine-part algorithm.
 
 

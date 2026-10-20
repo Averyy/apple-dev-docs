@@ -1,9 +1,10 @@
 # anchorPoint
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Defines the point in the tile map that corresponds to its [`position`](sknode/position.md).
+Defines the point in the tile map that corresponds to its [`position`](../sknode/position.md).
 
 **Availability**:
 - iOS 10.0+
@@ -18,6 +19,10 @@ Defines the point in the tile map that corresponds to its [`position`](sknode/po
 
 ```swift
 var anchorPoint: CGPoint { get set }
+```
+
+```objc
+@property (nonatomic) CGPoint anchorPoint;
 ```
 
 

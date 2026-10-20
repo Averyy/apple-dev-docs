@@ -1,7 +1,8 @@
 # Model3DPhase
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current phase of the asynchronous model loading operation.
 
@@ -16,7 +17,7 @@ enum Model3DPhase
 
 #### Overview
 
-When you create a [`Model3D`](model3d.md) instance with the [`init(url:transaction:content:)`](model3d/init(url:transaction:content:).md) or `Model3D/init(named:transaction:content:)` initializers, you define the appearance of the view using a `content` closure. [`Model3D`](model3d.md) calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to display. For example, you can display the loaded model if it exists, a view that indicates an error, or a placeholder:
+When you create a [`Model3D`](./model3d.md) instance with the [`init(url:transaction:content:)`](./model3d/init%28url,transaction,content%29.md) or `Model3D/init(named:transaction:content:)` initializers, you define the appearance of the view using a `content` closure. [`Model3D`](./model3d.md) calls the closure with a phase value at different points during the load operation to indicate the current state. Use the phase to decide what to display. For example, you can display the loaded model if it exists, a view that indicates an error, or a placeholder:
 
 ```swift
 let url = URL(string: "https://example.com/robot.usdz")!
@@ -34,27 +35,28 @@ Model3D(url: url) { phase in
 ## Topics
 
 ### Accessing the model
-- [var model: ResolvedModel3D?](model3dphase/model.md)
+- [var model: ResolvedModel3D?](./model3dphase/model.md)
   The loaded model, if any.
-- [var error: (any Error)?](model3dphase/error.md)
+- [var error: (any Error)?](./model3dphase/error.md)
   The error that occurred when attempting to load a model, if any.
 ### Obtaining the result
-- [Model3DPhase.empty](model3dphase/empty.md)
+- [Model3DPhase.empty](./model3dphase/empty.md)
   No model is loaded.
-- [case success(ResolvedModel3D)](model3dphase/success(_:).md)
+- [case success(ResolvedModel3D)](./model3dphase/success%28_%29.md)
   A model has successfully loaded.
-- [Model3DPhase.failure(_:)](model3dphase/failure(_:).md)
+- [Model3DPhase.failure(_:)](./model3dphase/failure%28_%29.md)
   An model failed to load with an error.
 
 ## See Also
 
-- [struct Model3D](model3d.md)
+### SwiftUI 3D model presentation
+- [struct Model3D](./model3d.md)
   A view that asynchronously loads and displays a 3D model.
-- [struct ResolvedModel3D](resolvedmodel3d.md)
+- [struct ResolvedModel3D](./resolvedmodel3d.md)
   A view for displaying static three-dimensional models.
-- [struct Model3DPlaceholderContent](model3dplaceholdercontent.md)
+- [struct Model3DPlaceholderContent](./model3dplaceholdercontent.md)
   A container view that presents either a 3D model or a placeholder for one.
-- [class Model3DAsset](model3dasset.md)
+- [class Model3DAsset](./model3dasset.md)
   A container used to represent the asset loaded into the Model3D View.
 
 

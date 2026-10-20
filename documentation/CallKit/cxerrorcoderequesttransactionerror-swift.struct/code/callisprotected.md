@@ -1,7 +1,8 @@
 # CXErrorCodeRequestTransactionError.Code.callIsProtected
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case callIsProtected
+```
+
+```c
+CXErrorCodeRequestTransactionErrorCallIsProtected
 ```
 
 

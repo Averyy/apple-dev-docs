@@ -1,7 +1,8 @@
 # relativeStartTime
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time the user starts the app relative to the start time of the first app in a report interval.
 
@@ -16,13 +17,18 @@ The time the user starts the app relative to the start time of the first app in 
 var relativeStartTime: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval relativeStartTime;
+```
+
 #### Discussion
 
 Use this property to order and determine the time between app instances in the same report. The first instance of this property in the report interval is `0`.
 
 ## See Also
 
-- [var usageTime: TimeInterval](srdeviceusagereport/applicationusage/usagetime.md)
+### Timing App Use
+- [var usageTime: TimeInterval](./usagetime.md)
   The amount of time the user uses the app.
 
 

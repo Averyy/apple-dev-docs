@@ -1,7 +1,8 @@
 # readCount
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of successful reads the framework performed using a Store and Forward session.
 
@@ -18,7 +19,8 @@ let readCount: Int
 
 ## See Also
 
-- [let expiration: Date](storeandforwardstatus/expiration.md)
+### Getting the status
+- [let expiration: Date](./expiration.md)
   The date when the Store and Forward session expires.
 
 

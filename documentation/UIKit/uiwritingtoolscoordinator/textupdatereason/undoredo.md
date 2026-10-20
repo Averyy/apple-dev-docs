@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextUpdateReason.undoRedo
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that changed the view’s text as part of an undo or redo command.
 
@@ -17,13 +18,18 @@ An operation that changed the view’s text as part of an undo or redo command.
 case undoRedo
 ```
 
+```c
+UIWritingToolsCoordinatorTextUpdateReasonUndoRedo
+```
+
 #### Discussion
 
 Specify this option when an undo or redo command initiated the change to your view.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.TextUpdateReason.typing](uiwritingtoolscoordinator/textupdatereason/typing.md)
+### Getting the reasons
+- [UIWritingToolsCoordinator.TextUpdateReason.typing](./typing.md)
   An operation that involved a person editing the text in your view.
 
 

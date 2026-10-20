@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -21,8 +22,9 @@
 
 ## See Also
 
-- [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent)](subscriptionperiodgroupset/init(marketingcontent:).md)
-- [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent, label: (Product.SubscriptionPeriod?) -> Label)](subscriptionperiodgroupset/init(marketingcontent:label:).md)
+### Creating subscription period group sets
+- [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent)](./init%28marketingcontent%29.md)
+- [init(marketingContent: (Product.SubscriptionPeriod?) -> MarketingContent, label: (Product.SubscriptionPeriod?) -> Label)](./init%28marketingcontent,label%29.md)
 
 
 ---

@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a custom attribute value for a given glyph.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setIntAttribute(_ attributeTag: Int, value val: Int, forGlyphAt glyphIndex: Int)
+```
+
+```objc
+- (void) setIntAttribute:(NSInteger) attributeTag value:(NSInteger) val forGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
 #### Discussion
@@ -27,7 +32,8 @@ Custom attributes are glyph attributes such as `NSGlyphInscription` or attribute
 
 ## See Also
 
-- [func insertGlyphs(UnsafePointer<NSGlyph>, length: Int, forStartingGlyphAt: Int, characterIndex: Int)](nsglyphstorage/insertglyphs(_:length:forstartingglyphat:characterindex:).md)
+### Modifying the glyph cache
+- [func insertGlyphs(UnsafePointer<NSGlyph>, length: Int, forStartingGlyphAt: Int, characterIndex: Int)](./insertglyphs%28_,length,forstartingglyphat,characterindex%29.md)
   Inserts the given glyphs into the glyph cache and maps them to the specified characters.
 
 

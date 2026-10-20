@@ -1,14 +1,15 @@
 # kIOAudioSMPTETimeType2997Drop
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOAudioSMPTETimeType2997Drop = 5
 ```
 

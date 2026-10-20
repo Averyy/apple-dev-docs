@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the kernel routine.
 
@@ -10,7 +11,7 @@ The name of the kernel routine.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ The name of the kernel routine.
 var name: String { get }
 ```
 
+```objc
+@property (atomic, readonly) NSString * name;
+```
+
 #### Discussion
 
-The name of a kernel routine is the identifier used to declare it in the Core Image Kernel Language source code. For example, if you use the [`init(source:)`](cikernel/init(source:).md) method to create a kernel from the source code below, the name of the returned [`CIKernel`](cikernel.md) object is “moveUpTwoPixels”.
+The name of a kernel routine is the identifier used to declare it in the Core Image Kernel Language source code. For example, if you use the [`init(source:)`](./init%28source%29.md) method to create a kernel from the source code below, the name of the returned [`CIKernel`](../cikernel.md) object is “moveUpTwoPixels”.
 
 ```objc
 kernel vec4 moveUpTwoPixels (sampler image) {

@@ -1,7 +1,8 @@
 # getValue(_:size:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the value into the specified buffer.
 
@@ -18,6 +19,10 @@ Copies the value into the specified buffer.
 
 ```swift
 func getValue(_ value: UnsafeMutableRawPointer, size: Int)
+```
+
+```objc
+- (void) getValue:(void *) value size:(NSUInteger) size;
 ```
 
 ## Parameters

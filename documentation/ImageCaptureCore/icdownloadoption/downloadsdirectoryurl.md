@@ -1,7 +1,8 @@
 # downloadsDirectoryURL
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A writable directory where the downloaded files should be saved.
 
@@ -18,23 +19,28 @@ A writable directory where the downloaded files should be saved.
 static let downloadsDirectoryURL: ICDownloadOption
 ```
 
+```c
+extern ICDownloadOption const ICDownloadsDirectoryURL;
+```
+
 #### Discussion
 
-Specify the directory as an [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object.
+Specify the directory as an [`NSURL`](../../Foundation/nsurl.md) object.
 
 ## See Also
 
-- [static let saveAsFilename: ICDownloadOption](icdownloadoption/saveasfilename.md)
+### Download Options
+- [static let saveAsFilename: ICDownloadOption](./saveasfilename.md)
   The name to be used for the downloaded file.
-- [static let savedFilename: ICDownloadOption](icdownloadoption/savedfilename.md)
+- [static let savedFilename: ICDownloadOption](./savedfilename.md)
   The actual name of the saved file.
-- [static let savedAncillaryFiles: ICDownloadOption](icdownloadoption/savedancillaryfiles.md)
+- [static let savedAncillaryFiles: ICDownloadOption](./savedancillaryfiles.md)
   An array of files associated with the file being downloaded.
-- [static let overwrite: ICDownloadOption](icdownloadoption/overwrite.md)
+- [static let overwrite: ICDownloadOption](./overwrite.md)
   A Boolean value indicating whether the downloaded file should overwrite an existing file with the same name and extension.
-- [static let deleteAfterSuccessfulDownload: ICDownloadOption](icdownloadoption/deleteaftersuccessfuldownload.md)
+- [static let deleteAfterSuccessfulDownload: ICDownloadOption](./deleteaftersuccessfuldownload.md)
   A Boolean value indicating whether to delete the file from the device after a successful download.
-- [static let sidecarFiles: ICDownloadOption](icdownloadoption/sidecarfiles.md)
+- [static let sidecarFiles: ICDownloadOption](./sidecarfiles.md)
   A Boolean value indicating whether to download all sidecar files along with the media file.
 
 

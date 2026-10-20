@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ContentTypeDidChange.ContentType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,26 +21,26 @@ enum ContentType
 ## Topics
 
 ### Enumeration Cases
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.equirectangular](videoplayerevents/contenttypedidchange/contenttype-swift.enum/equirectangular.md)
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.halfEquirectangular](videoplayerevents/contenttypedidchange/contenttype-swift.enum/halfequirectangular.md)
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.immersive](videoplayerevents/contenttypedidchange/contenttype-swift.enum/immersive.md)
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.invalid](videoplayerevents/contenttypedidchange/contenttype-swift.enum/invalid.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.equirectangular](./contenttype-swift.enum/equirectangular.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.halfEquirectangular](./contenttype-swift.enum/halfequirectangular.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.immersive](./contenttype-swift.enum/immersive.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.invalid](./contenttype-swift.enum/invalid.md)
   Inavlid videos
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.mono](videoplayerevents/contenttypedidchange/contenttype-swift.enum/mono.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.mono](./contenttype-swift.enum/mono.md)
   2D videos
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.parametricImmersive](videoplayerevents/contenttypedidchange/contenttype-swift.enum/parametricimmersive.md)
-- [VideoPlayerEvents.ContentTypeDidChange.ContentType.stereo](videoplayerevents/contenttypedidchange/contenttype-swift.enum/stereo.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.parametricImmersive](./contenttype-swift.enum/parametricimmersive.md)
+- [VideoPlayerEvents.ContentTypeDidChange.ContentType.stereo](./contenttype-swift.enum/stereo.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

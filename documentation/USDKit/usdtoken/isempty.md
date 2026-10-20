@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,8 +20,9 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-- [var string: String](usdtoken/string.md)
-- [var namespaceComponents: [USDToken]](usdtoken/namespacecomponents.md)
+### Inspecting the token
+- [var string: String](./string.md)
+- [var namespaceComponents: [USDToken]](./namespacecomponents.md)
   The token split into its namespace components, separated by `:`.
 
 

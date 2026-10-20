@@ -1,7 +1,8 @@
 # GKTransportType.unreliable
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data is sent once and is not sent again if a transmission error occurs.
 
@@ -20,13 +21,18 @@ The data is sent once and is not sent again if a transmission error occurs.
 case unreliable
 ```
 
+```c
+GKTransportTypeUnreliable
+```
+
 #### Discussion
 
 Use this for small packets of data that must arrive quickly to be useful to the recipient.
 
 ## See Also
 
-- [GKTransportType.reliable](gktransporttype/reliable.md)
+### Constants
+- [GKTransportType.reliable](./reliable.md)
   The data is sent continuously until it is successfully received by the intended recipients or the connection times out.
 
 

@@ -1,7 +1,8 @@
 # unsignedAct
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that a passphrase should be required when an unsigned application attempts to use the keychain.
 
@@ -12,6 +13,10 @@ Indicates that a passphrase should be required when an unsigned application atte
 
 ```swift
 static var unsignedAct: SecKeychainPromptSelector { get }
+```
+
+```c
+kSecKeychainPromptUnsignedAct
 ```
 
 

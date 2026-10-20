@@ -1,7 +1,8 @@
 # init(persistentReference:)
 
 **Framework**: Collaboration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the identity object matching the persistent reference data.
 
@@ -12,6 +13,10 @@ Returns the identity object matching the persistent reference data.
 
 ```swift
 init?(persistentReference data: Data)
+```
+
+```objc
++ (CBIdentity *) identityWithPersistentReference:(NSData *) data;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ A persistent reference is an opaque data object suitable for persistent storage.
 
 ## See Also
 
-- [init?(name: String, authority: CBIdentityAuthority)](cbidentity/init(name:authority:).md)
+### Finding Identities
+- [init?(name: String, authority: CBIdentityAuthority)](./init%28name,authority%29.md)
   Returns the identity object with the given name from the specified identity authority.
-- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-13vns.md)
+- [init?(uuidString: String, authority: CBIdentityAuthority)](./init%28uuidstring,authority%29-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
 
 

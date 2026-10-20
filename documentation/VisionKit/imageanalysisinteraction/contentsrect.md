@@ -1,7 +1,8 @@
 # contentsRect
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle, in unit coordinate space, that describes the content area of the interaction.
 
@@ -20,11 +21,12 @@ final var contentsRect: CGRect { get }
 
 #### Discussion
 
-If the interaction’s view isn’t an instance of [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview), your app sets the value for this property by implementing the [`ImageAnalysisInteractionDelegate`](imageanalysisinteractiondelegate.md) callback [`contentsRect(for:)`](imageanalysisinteractiondelegate/contentsrect(for:).md). The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
+If the interaction’s view isn’t an instance of [`UIImageView`](../../UIKit/uiimageview.md), your app sets the value for this property by implementing the [`ImageAnalysisInteractionDelegate`](../imageanalysisinteractiondelegate.md) callback [`contentsRect(for:)`](../imageanalysisinteractiondelegate/contentsrect%28for%29.md). The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
 
 ## See Also
 
-- [func setContentsRectNeedsUpdate()](imageanalysisinteraction/setcontentsrectneedsupdate.md)
+### Managing custom image views
+- [func setContentsRectNeedsUpdate()](./setcontentsrectneedsupdate%28%29.md)
   Informs the view that contains the image when the layout changes and the view needs to reload its content.
 
 

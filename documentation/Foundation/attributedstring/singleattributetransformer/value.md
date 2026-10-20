@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the attribute.
 

@@ -1,7 +1,8 @@
 # dismissNotificationContentExtension()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -16,10 +17,15 @@
 func dismissNotificationContentExtension()
 ```
 
+```objc
+- (void) dismissNotificationContentExtension;
+```
+
 ## See Also
 
-- [var notificationActions: [UNNotificationAction]](nsextensioncontext/notificationactions.md)
-- [func performNotificationDefaultAction()](nsextensioncontext/performnotificationdefaultaction.md)
+### Handling notification actions
+- [var notificationActions: [UNNotificationAction]](./notificationactions.md)
+- [func performNotificationDefaultAction()](./performnotificationdefaultaction%28%29.md)
 
 
 ---

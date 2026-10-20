@@ -1,7 +1,8 @@
 # invalidSamples
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Samples that the validator rejected during the most recent run.
 
@@ -22,7 +23,7 @@ var invalidSamples: [SampleType] { get }
 
 ## Mentions
 
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
+- [Generating synthetic datasets](../generating-synthetic-evaluation-datasets.md)
 
 #### Discussion
 
@@ -30,7 +31,8 @@ Returns an empty array when no validator was provided.
 
 ## See Also
 
-- [var samples: [SampleType]](samplegenerator/samples.md)
+### Accessing results
+- [var samples: [SampleType]](./samples.md)
   All initial and generated samples from the most recent run.
 
 

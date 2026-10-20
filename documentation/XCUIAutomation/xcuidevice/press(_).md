@@ -1,17 +1,18 @@
 # press(_:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Simulates the user pressing a physical button.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -20,19 +21,24 @@ Simulates the user pressing a physical button.
 func press(_ button: XCUIDevice.Button)
 ```
 
+```objc
+- (void) pressButton:(XCUIDeviceButton) button;
+```
+
 ## Parameters
 
 - `button`: The button to press on the device.
 
 ## See Also
 
-- [func hasHardwareButton(XCUIDevice.Button) -> Bool](xcuidevice/hashardwarebutton(_:).md)
+### Interacting with buttons and the Digital Crown
+- [func hasHardwareButton(XCUIDevice.Button) -> Bool](./hashardwarebutton%28_%29.md)
   Determines whether the device supports the button type you provide.
-- [XCUIDevice.Button](xcuidevice/button.md)
+- [XCUIDevice.Button](./button.md)
   A physical button on an iOS device.
-- [func rotateDigitalCrown(delta: CGFloat)](xcuidevice/rotatedigitalcrown(delta:).md)
+- [func rotateDigitalCrown(delta: CGFloat)](./rotatedigitalcrown%28delta%29.md)
   Simulates the user rotating the Digital Crown on an Apple Watch by the delta amount.
-- [func rotateDigitalCrown(delta: CGFloat, velocity: XCUIGestureVelocity)](xcuidevice/rotatedigitalcrown(delta:velocity:).md)
+- [func rotateDigitalCrown(delta: CGFloat, velocity: XCUIGestureVelocity)](./rotatedigitalcrown%28delta,velocity%29.md)
   Simulates the user rotating the Digital Crown on an Apple Watch by the delta amount and speed you provide.
 
 

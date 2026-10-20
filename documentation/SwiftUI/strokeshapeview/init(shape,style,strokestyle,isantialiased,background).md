@@ -1,7 +1,8 @@
 # init(shape:style:strokeStyle:isAntialiased:background:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a StrokeShapeView.
 

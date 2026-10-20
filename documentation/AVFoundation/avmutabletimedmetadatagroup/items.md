@@ -1,7 +1,8 @@
 # items
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items in the timed metadata group.
 
@@ -20,13 +21,18 @@ An array of metadata items in the timed metadata group.
 var items: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSArray<AVMetadataItem *> * items;
+```
+
 #### Discussion
 
-The array contains instances of [`AVMetadataItem`](avmetadataitem.md).
+The array contains instances of [`AVMetadataItem`](../avmetadataitem.md).
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avmutabletimedmetadatagroup/timerange.md)
+### Configuring the group
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the timed metadata.
 
 

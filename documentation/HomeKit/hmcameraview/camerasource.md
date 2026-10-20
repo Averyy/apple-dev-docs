@@ -1,7 +1,8 @@
 # cameraSource
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,9 +17,14 @@
 var cameraSource: HMCameraSource? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) HMCameraSource * cameraSource;
+```
+
 ## See Also
 
-- [class HMCameraSource](hmcamerasource.md)
+### Getting the Camera Source
+- [class HMCameraSource](../hmcamerasource.md)
   An abstract class for a camera’s data source.
 
 

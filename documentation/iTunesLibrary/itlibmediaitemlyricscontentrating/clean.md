@@ -1,7 +1,8 @@
 # ITLibMediaItemLyricsContentRating.clean
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media item lyrics don’t contain explicit language.
 
@@ -15,11 +16,16 @@ The media item lyrics don’t contain explicit language.
 case clean
 ```
 
+```c
+ITLibMediaItemLyricsContentRatingClean
+```
+
 ## See Also
 
-- [ITLibMediaItemLyricsContentRating.none](itlibmediaitemlyricscontentrating/none.md)
+### Media Item Lyric Content Ratings
+- [ITLibMediaItemLyricsContentRating.none](./none.md)
   There is no rating information for the media item lyrics.
-- [ITLibMediaItemLyricsContentRating.explicit](itlibmediaitemlyricscontentrating/explicit.md)
+- [ITLibMediaItemLyricsContentRating.explicit](./explicit.md)
   The media item lyrics contain explicit language.
 
 

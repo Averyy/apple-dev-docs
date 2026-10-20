@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeHTTPDigest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTTP Digest Access authentication.
 
@@ -18,6 +19,10 @@ HTTP Digest Access authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeHTTPDigest: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeHTTPDigest;
 ```
 
 

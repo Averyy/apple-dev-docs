@@ -1,7 +1,8 @@
 # VTFrameRateConversionConfiguration
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that enables the frame rate conversion on a frame processing session.
 
@@ -17,63 +18,68 @@ An object that enables the frame rate conversion on a frame processing session.
 class VTFrameRateConversionConfiguration
 ```
 
+```objc
+@interface VTFrameRateConversionConfiguration : NSObject
+```
+
 ## Topics
 
 ### Creating a frame rate conversion configuration
-- [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization, revision: VTFrameRateConversionConfiguration.Revision)](vtframerateconversionconfiguration/init(framewidth:frameheight:useprecomputedflow:qualityprioritization:revision:).md)
+- [init?(frameWidth: Int, frameHeight: Int, usePrecomputedFlow: Bool, qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization, revision: VTFrameRateConversionConfiguration.Revision)](./vtframerateconversionconfiguration/init%28framewidth,frameheight,useprecomputedflow,qualityprioritization,revision%29.md)
   Creates a new frame rate conversion configuration with specified flow width and height.
 ### Determining processor availability
-- [class var isSupported: Bool](vtframerateconversionconfiguration/issupported.md)
+- [class var isSupported: Bool](./vtframerateconversionconfiguration/issupported.md)
   Reports whether the system supports this processor.
 ### Inspecting the configuration
-- [var frameWidth: Int](vtframerateconversionconfiguration/framewidth.md)
+- [var frameWidth: Int](./vtframerateconversionconfiguration/framewidth.md)
   The width of a source frame in pixels.
-- [var frameHeight: Int](vtframerateconversionconfiguration/frameheight.md)
+- [var frameHeight: Int](./vtframerateconversionconfiguration/frameheight.md)
   The height of a source frame in pixels.
-- [var usePrecomputedFlow: Bool](vtframerateconversionconfiguration/useprecomputedflow.md)
+- [var usePrecomputedFlow: Bool](./vtframerateconversionconfiguration/useprecomputedflow.md)
   A Boolean value to indicates whether the optical flow will be provided by the user.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./vtframerateconversionconfiguration/sourcepixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing requirements for pixel buffers used as source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./vtframerateconversionconfiguration/destinationpixelbufferattributes.md)
   A dictionary of pixel buffer attributes describing the requirements for pixel buffers used as destination frames.
-- [var supportedPixelFormats: [OSType]](vtframerateconversionconfiguration/supportedpixelformats.md)
-- [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.property.md)
+- [var supportedPixelFormats: [OSType]](./vtframerateconversionconfiguration/supportedpixelformats.md)
+- [var qualityPrioritization: VTFrameRateConversionConfiguration.QualityPrioritization](./vtframerateconversionconfiguration/qualityprioritization-swift.property.md)
   A value that specifies whether to prioritize quality or performance.
-- [VTFrameRateConversionConfiguration.QualityPrioritization](vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
+- [VTFrameRateConversionConfiguration.QualityPrioritization](./vtframerateconversionconfiguration/qualityprioritization-swift.enum.md)
   Values that specify whether to prioritize quality or performance.
 ### Inspecting revision information
-- [var revision: VTFrameRateConversionConfiguration.Revision](vtframerateconversionconfiguration/revision-swift.property.md)
+- [var revision: VTFrameRateConversionConfiguration.Revision](./vtframerateconversionconfiguration/revision-swift.property.md)
   The specific algorithm or configuration revision to use to perform the request.
-- [class var defaultRevision: VTFrameRateConversionConfiguration.Revision](vtframerateconversionconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTFrameRateConversionConfiguration.Revision](./vtframerateconversionconfiguration/defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [class var supportedRevisions: IndexSet](vtframerateconversionconfiguration/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./vtframerateconversionconfiguration/supportedrevisions.md)
   The collection of currently-supported algorithms or configuration revisions for the class of configurations.
-- [VTFrameRateConversionConfiguration.Revision](vtframerateconversionconfiguration/revision-swift.enum.md)
+- [VTFrameRateConversionConfiguration.Revision](./vtframerateconversionconfiguration/revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 ### Deprecated
-- [class var processorSupported: Bool](vtframerateconversionconfiguration/processorsupported.md)
+- [class var processorSupported: Bool](./vtframerateconversionconfiguration/processorsupported.md)
   A Boolean value that indicates whether the processor supported on the current configuration.
-- [var frameSupportedPixelFormats: [NSNumber]](vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md)
+- [var frameSupportedPixelFormats: [NSNumber]](./vtframerateconversionconfiguration/framesupportedpixelformats-54soi.md)
   A list of source frame supported pixel formats for the current configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VTFrameProcessorConfiguration](vtframeprocessorconfiguration.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VTFrameProcessorConfiguration](./vtframeprocessorconfiguration.md)
 
 ## See Also
 
-- [class VTFrameRateConversionParameters](vtframerateconversionparameters.md)
+### Frame rate conversion
+- [class VTFrameRateConversionParameters](./vtframerateconversionparameters.md)
   An object that contains the required input and output parameters to run a frame rate conversion processor on a frame.
 
 

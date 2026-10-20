@@ -1,7 +1,8 @@
 # App.Relationships.AppCustomProductPages.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related app custom product page resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related app custom product page resource.
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.AppCustomProductPages.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPages`
 
 
 ---

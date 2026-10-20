@@ -1,7 +1,8 @@
 # everything
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the dynamic items, associated with the collision behavior, collide with each other *and* with specified collision boundaries.
 
@@ -9,7 +10,7 @@ Specifies that the dynamic items, associated with the collision behavior, collid
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Specifies that the dynamic items, associated with the collision behavior, collid
 static var everything: UICollisionBehavior.Mode { get }
 ```
 
+```c
+UICollisionBehaviorModeEverything
+```
+
 #### Discussion
 
 This is the default collision behavior mode.
 
 ## See Also
 
-- [static var items: UICollisionBehavior.Mode](uicollisionbehavior/mode/items.md)
+### Constants
+- [static var items: UICollisionBehavior.Mode](./items.md)
   Specifies that the dynamic items, associated with the collision behavior, collide only with each other and not with specified collision boundaries.
-- [static var boundaries: UICollisionBehavior.Mode](uicollisionbehavior/mode/boundaries.md)
+- [static var boundaries: UICollisionBehavior.Mode](./boundaries.md)
   Specifies that the dynamic items, associated with the collision behavior, collide only with specified collision boundaries and don’t collide with each other.
 
 

@@ -1,7 +1,8 @@
 # quickLookPreviewableItems(inRanges:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of URLs for items that can be displayed by QuickLook in the specified ranges.
 
@@ -14,13 +15,17 @@ Returns an array of URLs for items that can be displayed by QuickLook in the spe
 func quickLookPreviewableItems(inRanges ranges: [NSValue]) -> [any QLPreviewItem]
 ```
 
+```objc
+- (NSArray<id<QLPreviewItem>> *) quickLookPreviewableItemsInRanges:(NSArray<NSValue *> *) ranges;
+```
+
 #### Return Value
 
 Returns an array of document URLs for text attachment content, if available.
 
 #### Discussion
 
-Each preview item must conform to the [`QLPreviewItem`](https://developer.apple.com/documentation/quicklookui/qlpreviewitem) protocol.
+Each preview item must conform to the [`QLPreviewItem`](../../QuickLookUI/qlpreviewitem.md) protocol.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Each preview item must conform to the [`QLPreviewItem`](https://developer.apple.
 
 ## See Also
 
-- [func updateQuickLookPreviewPanel()](nstextview/updatequicklookpreviewpanel.md)
+### Supporting QuickLook
+- [func updateQuickLookPreviewPanel()](./updatequicklookpreviewpanel%28%29.md)
   Notifies the QuickLook panel that an update may be required.
-- [func toggleQuickLookPreviewPanel(Any?)](nstextview/togglequicklookpreviewpanel(_:).md)
+- [func toggleQuickLookPreviewPanel(Any?)](./togglequicklookpreviewpanel%28_%29.md)
   An action message that toggles the visibility state of the Quick Look preview panel.
 
 

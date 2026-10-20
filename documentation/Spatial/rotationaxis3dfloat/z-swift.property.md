@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z-axis value.
 

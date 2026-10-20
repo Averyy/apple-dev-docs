@@ -1,7 +1,8 @@
 # Query Daily Budget Recommendations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve daily budget recommendations for campaigns that may have more opportunities.
 
@@ -10,14 +11,14 @@ Retrieve daily budget recommendations for campaigns that may have more opportuni
 
 #### Discussion
 
-Each [`DailyCapRecommendation`](dailycaprecommendation.md) result includes:
+Each [`DailyCapRecommendation`](./dailycaprecommendation.md) result includes:
 
 - `suggestedDailyBudgetAmount`: the recommended new daily budget
 - `dailyBudget`: the current budget for comparison
 - Historical metrics: `installs`, `spend`, `impression`, `taps`, `averageCPA`, `averageCPT`, `ttr`
 - Expected metrics: projected performance if the budget is raised
 
-See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supported comparison operators.
+See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -25,7 +26,7 @@ See [`FilterOperator`](recommendationfilteroperator.md) for the full set of supp
 | --- | --- | --- | --- |
 | `promotedObjectId` | string | `EQUALS`, `IN` | Required. The ID of the promoted object. For `APPSTORE_APP`, this is the app Adam ID. For `BUSINESS_BRAND`, this is the brand ID. |
 | `promotedObjectType` | string (enum) | `EQUALS` | Required. The type of promoted object. Accepts exactly one value. |
-| `recommendationType` | string (enum) | `EQUALS`, `IN` | Optional. The recommendation category, for example `DAILYCAP` or `SDAILYCAP`. See [`RecommendationCategory`](recommendationcategory.md). |
+| `recommendationType` | string (enum) | `EQUALS`, `IN` | Optional. The recommendation category, for example `DAILYCAP` or `SDAILYCAP`. See [`RecommendationCategory`](./recommendationcategory.md). |
 | `campaignId` | integer | `EQUALS`, `IN` | Optional. Filter by a specific campaign. |
 | `campaignName` | string | `EQUALS`, `CONTAINS_ANY`, `STARTS_WITH` | Optional. The campaign’s display name. |
 | `suggestedDailyBudgetAmount` | money | `EQUALS`, `GREATER_THAN`, `LESS_THAN`, `BETWEEN` | Optional. The recommended new daily budget. |
@@ -283,23 +284,38 @@ POST /v1/recommendations/daily-budgets/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`RecommendationQueryRequest`](recommendationqueryrequest.md).
+**Content-Type**: `application/json`  
+**Type**: `RecommendationQueryRequest`
+
+See [`RecommendationQueryRequest`](./recommendationqueryrequest.md).
+
+## Responses
+
+- `200` OK (`RecommendationQueryDailyBudgetResponse`, `application/json`)
+- `400` Bad Request (`RecommendationResponseBody`, `application/json`)
+- `401` Unauthorized (`RecommendationResponseBody`, `application/json`)
+- `403` Forbidden (`RecommendationResponseBody`, `application/json`)
+- `404` Not Found (`RecommendationResponseBody`, `application/json`)
+- `429` Too Many Requests (`RecommendationResponseBody`, `application/json`)
+- `500` Internal Server Error (`RecommendationResponseBody`, `application/json`)
 
 ## See Also
 
-- [Query Target CPA Recommendations](query-target-cpa-recommendations.md)
+- [Query Target CPA Recommendations](./query-target-cpa-recommendations.md)
   Retrieve target cost-per-acquisition recommendations for campaigns using a Maximize Conversions bid strategy.
-- [Apply Target CPA Recommendations](apply-target-cpa-recommendations.md)
+- [Apply Target CPA Recommendations](./apply-target-cpa-recommendations.md)
   Apply one or more target CPA recommendations.
-- [Dismiss Target CPA Recommendations](dismiss-target-cpa-recommendations.md)
+- [Dismiss Target CPA Recommendations](./dismiss-target-cpa-recommendations.md)
   Dismiss one or more target CPA recommendations without changing the campaign’s bid strategy.
-- [Apply Daily Budget Recommendations](apply-daily-budget-recommendations.md)
+- [Apply Daily Budget Recommendations](./apply-daily-budget-recommendations.md)
   Apply one or more daily budget recommendations, updating the campaign’s daily budget to the suggested amount.
-- [Dismiss Daily Budget Recommendations](dismiss-daily-budget-recommendations.md)
+- [Dismiss Daily Budget Recommendations](./dismiss-daily-budget-recommendations.md)
   Dismiss one or more daily budget recommendations without changing the campaign’s budget.
 
 

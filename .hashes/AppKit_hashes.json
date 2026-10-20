@@ -2291,7 +2291,7 @@
       "hash": "dc492f730e06b5fb39c4f8165bf1d6f652fbafdf2205eeba25b533efdb26eaaa"
     },
     "https://developer.apple.com/documentation/appkit/nsaccessibility-swift.struct/subrole/suggestionsubrole": {
-      "etag": "\"7d71-65d55e60cb9b5\"",
+      "etag": "\"7d71-65d55e60cb9b5-df\"",
       "file_path": "documentation/AppKit/nsaccessibility-swift.struct/subrole/suggestionsubrole.md",
       "hash": "be6b81e18bf3b35f780ede7666dd6023c4e744530ff65603af18c6372ec3f343"
     },
@@ -20576,7 +20576,7 @@
       "hash": "62032b8571f8fe5caaec8ad527fa2dba5127d24cc9609fc26e74616630c95b26"
     },
     "https://developer.apple.com/documentation/appkit/nsevent/associatedeventsmask": {
-      "etag": "\"47d5-65d55e5747da6-df\"",
+      "etag": "\"47d5-65d55e5747da6\"",
       "file_path": "documentation/AppKit/nsevent/associatedeventsmask.md",
       "hash": "93722aeac88c3bd7261cb8ef4e1f7891ea41aa2880585d27c2553a6a67859e6f"
     },
@@ -33361,7 +33361,7 @@
       "hash": "60f55783a6e690101f6871194bfe5b5b1581cfd25f68b8f3009dec8e8e1244a8"
     },
     "https://developer.apple.com/documentation/appkit/nsparagraphstyle/hyphenationfactor": {
-      "etag": "\"4906-65d55e58d1938-df\"",
+      "etag": "\"4906-65d55e58d1938\"",
       "file_path": "documentation/AppKit/nsparagraphstyle/hyphenationfactor.md",
       "hash": "8bb36d116607766c06118e6daf7eaf0cbaa1997cc33436ec769f7d1ef1f25b9c"
     },
@@ -40596,7 +40596,7 @@
       "hash": "652490550be0ad78f63f0a2b3d7268746c869084ac350bfae915b54b822f7992"
     },
     "https://developer.apple.com/documentation/appkit/nssegueperforming/performsegue(withidentifier:sender:)": {
-      "etag": "\"4b04-65d55e5edb2cc\"",
+      "etag": "\"4b04-65d55e5edb2cc-df\"",
       "file_path": "documentation/AppKit/nssegueperforming/performsegue(withidentifier,sender).md",
       "hash": "0520c246b37e7855df9e0f374e2f38f21bcf6d0b1522a2772cf1738e5858057b"
     },
@@ -65755,7 +65755,7 @@
       "hash": "dc492f730e06b5fb39c4f8165bf1d6f652fbafdf2205eeba25b533efdb26eaaa"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsaccessibility-swift.struct/subrole/suggestionsubrole.json": {
-      "etag": "\"7d71-65d55e60cb9b5\"",
+      "etag": "\"7d71-65d55e60cb9b5-df\"",
       "file_path": "documentation/AppKit/nsaccessibility-swift.struct/subrole/suggestionsubrole.md",
       "hash": "be6b81e18bf3b35f780ede7666dd6023c4e744530ff65603af18c6372ec3f343"
     },
@@ -84045,7 +84045,7 @@
       "hash": "62032b8571f8fe5caaec8ad527fa2dba5127d24cc9609fc26e74616630c95b26"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsevent/associatedeventsmask.json": {
-      "etag": "\"47d5-65d55e5747da6-df\"",
+      "etag": "\"47d5-65d55e5747da6\"",
       "file_path": "documentation/AppKit/nsevent/associatedeventsmask.md",
       "hash": "93722aeac88c3bd7261cb8ef4e1f7891ea41aa2880585d27c2553a6a67859e6f"
     },
@@ -96830,7 +96830,7 @@
       "hash": "60f55783a6e690101f6871194bfe5b5b1581cfd25f68b8f3009dec8e8e1244a8"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nsparagraphstyle/hyphenationfactor.json": {
-      "etag": "\"4906-65d55e58d1938-df\"",
+      "etag": "\"4906-65d55e58d1938\"",
       "file_path": "documentation/AppKit/nsparagraphstyle/hyphenationfactor.md",
       "hash": "8bb36d116607766c06118e6daf7eaf0cbaa1997cc33436ec769f7d1ef1f25b9c"
     },
@@ -104065,7 +104065,7 @@
       "hash": "652490550be0ad78f63f0a2b3d7268746c869084ac350bfae915b54b822f7992"
     },
     "https://developer.apple.com/tutorials/data/documentation/appkit/nssegueperforming/performsegue(withidentifier:sender:).json": {
-      "etag": "\"4b04-65d55e5edb2cc\"",
+      "etag": "\"4b04-65d55e5edb2cc-df\"",
       "file_path": "documentation/AppKit/nssegueperforming/performsegue(withidentifier,sender).md",
       "hash": "0520c246b37e7855df9e0f374e2f38f21bcf6d0b1522a2772cf1738e5858057b"
     },
@@ -126936,6 +126936,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 25387
   }
 }

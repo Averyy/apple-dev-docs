@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regular expression with a dynamic capture list from the given regular expression.
 
@@ -19,6 +20,8 @@ Creates a regular expression with a dynamic capture list from the given regular 
 ```swift
 init<OtherOutput>(_ regex: Regex<OtherOutput>)
 ```
+
+Available when `Output` is `AnyRegexOutput`.
 
 #### Discussion
 

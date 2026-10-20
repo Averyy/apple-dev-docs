@@ -1,7 +1,8 @@
 # displayGamut
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gamut of the current display.
 
@@ -18,11 +19,16 @@ The gamut of the current display.
 var displayGamut: UIDisplayGamut { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIDisplayGamut displayGamut;
+```
+
 ## See Also
 
-- [var displayScale: CGFloat](uitraitcollection/displayscale.md)
+### Retrieving display-related traits
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of the trait collection.
-- [enum UIDisplayGamut](uidisplaygamut.md)
+- [enum UIDisplayGamut](../uidisplaygamut.md)
   Constants that indicate the gamut of the current display.
 
 

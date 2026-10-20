@@ -1,7 +1,8 @@
 # delay
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds the system waits before starting its animations.
 
@@ -17,9 +18,14 @@ The number of seconds the system waits before starting its animations.
 var delay: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat delay;
+```
+
 ## See Also
 
-- [var duration: CGFloat](uiwritingtoolscoordinator/animationparameters/duration.md)
+### Getting the animation values
+- [var duration: CGFloat](./duration.md)
   The number of seconds it takes the system animations to run.
 
 

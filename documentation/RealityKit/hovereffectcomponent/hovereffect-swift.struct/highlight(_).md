@@ -1,7 +1,8 @@
 # highlight(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a hover effect style that uniformly highlights the entity and also applies a feathered spotlight effect.
 
@@ -20,7 +21,7 @@ static func highlight(_ style: HoverEffectComponent.HighlightHoverEffectStyle) -
 
 ## Parameters
 
-- `style`: A [`HoverEffectComponent.HighlightHoverEffectStyle`](hovereffectcomponent/highlighthovereffectstyle.md) instance that allows you to customize various aspects of this hover effect.
+- `style`: A [`HoverEffectComponent.HighlightHoverEffectStyle`](../highlighthovereffectstyle.md) instance that allows you to customize various aspects of this hover effect.
 
 
 ---

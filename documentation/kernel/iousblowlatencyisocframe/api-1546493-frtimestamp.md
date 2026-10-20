@@ -1,7 +1,8 @@
 # frTimeStamp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A timestamp that indicates when the system processed the frame.
 
@@ -10,17 +11,18 @@ A timestamp that indicates when the system processed the frame.
 
 ## Declaration
 
-```swift
+```c
 AbsoluteTime frTimeStamp;
 ```
 
 ## See Also
 
-- [frActCount](iousblowlatencyisocframe/1546558-fractcount.md)
+### Getting the Properties
+- [frActCount](./api-1546558-fractcount.md)
   The actual number of bytes that were transferred.
-- [frReqCount](iousblowlatencyisocframe/1546127-frreqcount.md)
+- [frReqCount](./api-1546127-frreqcount.md)
   Input specifiying the number of bytes to read or write.
-- [frStatus](iousblowlatencyisocframe/1546079-frstatus.md)
+- [frStatus](./api-1546079-frstatus.md)
   The status of the frame.
 
 

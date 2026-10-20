@@ -1,7 +1,8 @@
 # addresses
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IPv6 addresses to assign to the TUN interface.
 
@@ -19,9 +20,14 @@ The IPv6 addresses to assign to the TUN interface.
 var addresses: [String] { get }
 ```
 
+```objc
+@property (readonly) NSArray<NSString *> * addresses;
+```
+
 ## See Also
 
-- [var networkPrefixLengths: [NSNumber]](neipv6settings/networkprefixlengths.md)
+### Accessing IPv6 properties
+- [var networkPrefixLengths: [NSNumber]](./networkprefixlengths.md)
   The IPv6 network prefix lengths to assign to the TUN interface.
 
 

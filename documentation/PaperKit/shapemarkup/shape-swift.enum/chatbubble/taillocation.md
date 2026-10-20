@@ -1,7 +1,8 @@
 # tailLocation
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the tail tip in unit coordinate space.
 

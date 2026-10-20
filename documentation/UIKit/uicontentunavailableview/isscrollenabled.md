@@ -1,7 +1,8 @@
 # isScrollEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the view content can scroll.
 
@@ -16,6 +17,10 @@ A Boolean value that determines whether the view content can scroll.
 
 ```swift
 var isScrollEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 ```
 
 #### Discussion

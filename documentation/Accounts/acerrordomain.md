@@ -1,7 +1,8 @@
 # ACErrorDomain
 
 **Framework**: Accounts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for the Accounts framework.
 
@@ -17,9 +18,14 @@ The error domain for the Accounts framework.
 let ACErrorDomain: String
 ```
 
+```c
+extern NSString * const ACErrorDomain;
+```
+
 ## See Also
 
-- [struct ACErrorCode](acerrorcode.md)
+### Errors
+- [struct ACErrorCode](./acerrorcode.md)
   Codes for errors that may occur.
 
 

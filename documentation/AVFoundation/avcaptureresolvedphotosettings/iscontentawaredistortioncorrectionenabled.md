@@ -1,7 +1,8 @@
 # isContentAwareDistortionCorrectionEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system applies content-aware distortion correction when capturing the photo.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether the system applies content-aware distorti
 var isContentAwareDistortionCorrectionEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isContentAwareDistortionCorrectionEnabled) BOOL contentAwareDistortionCorrectionEnabled;
+```
+
 ## See Also
 
-- [var isFlashEnabled: Bool](avcaptureresolvedphotosettings/isflashenabled.md)
+### Examining photo capture settings
+- [var isFlashEnabled: Bool](./isflashenabled.md)
   A Boolean value indicating whether the camera flash fires for this capture.
-- [var isRedEyeReductionEnabled: Bool](avcaptureresolvedphotosettings/isredeyereductionenabled.md)
+- [var isRedEyeReductionEnabled: Bool](./isredeyereductionenabled.md)
   A Boolean value indicating whether the camera automatically reduces red-eye when capturing photos.
-- [var isVirtualDeviceFusionEnabled: Bool](avcaptureresolvedphotosettings/isvirtualdevicefusionenabled.md)
+- [var isVirtualDeviceFusionEnabled: Bool](./isvirtualdevicefusionenabled.md)
   A Boolean value that specifies whether the system automatically uses virtual device image fusion.
-- [var isFastCapturePrioritizationEnabled: Bool](avcaptureresolvedphotosettings/isfastcaptureprioritizationenabled.md)
+- [var isFastCapturePrioritizationEnabled: Bool](./isfastcaptureprioritizationenabled.md)
   A Boolean value that indicates whether the system uses fast capture prioritization when capturing the photo.
-- [var isStillImageStabilizationEnabled: Bool](avcaptureresolvedphotosettings/isstillimagestabilizationenabled.md)
+- [var isStillImageStabilizationEnabled: Bool](./isstillimagestabilizationenabled.md)
   A Boolean value indicating whether this capture uses image stabilization.
-- [var isDualCameraFusionEnabled: Bool](avcaptureresolvedphotosettings/isdualcamerafusionenabled.md)
+- [var isDualCameraFusionEnabled: Bool](./isdualcamerafusionenabled.md)
   A Boolean value indicating whether this capture combines image data from a dual camera.
 
 

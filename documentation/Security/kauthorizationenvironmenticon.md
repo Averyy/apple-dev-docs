@@ -1,7 +1,8 @@
 # kAuthorizationEnvironmentIcon
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The type for an authorization item containing the name of the item that should be passed into the environment when specifying an alternate icon.
 
@@ -13,6 +14,10 @@ The type for an authorization item containing the name of the item that should b
 
 ```swift
 var kAuthorizationEnvironmentIcon: String { get }
+```
+
+```c
+#define kAuthorizationEnvironmentIcon
 ```
 
 #### Discussion

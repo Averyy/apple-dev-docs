@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the arithmetic operation you use for debugging.
 
@@ -16,6 +17,10 @@ A textual description of the arithmetic operation you use for debugging.
 
 ```swift
 var debugDescription: String { get }
+```
+
+```c
+NSString *MLCArithmeticOperationDebugDescription(MLCArithmeticOperation operation);
 ```
 
 

@@ -1,7 +1,8 @@
 # kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 let kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecodeFrameOptionKey_ContentAnalyzerCropRectangle;
+```
+
 #### Discussion
 
 CGRect within the image to be used for content analysis, cropped before applying rotation.
@@ -25,7 +30,8 @@ This value specifies a rectangle within the original frame that should be used f
 
 ## See Also
 
-- [let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString](kvtdecodeframeoptionkey_contentanalyzerrotation.md)
+### Per-Frame Decoder Options
+- [let kVTDecodeFrameOptionKey_ContentAnalyzerRotation: CFString](./kvtdecodeframeoptionkey_contentanalyzerrotation.md)
 
 
 ---

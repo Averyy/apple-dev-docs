@@ -1,15 +1,20 @@
 # OBEXTransportEvent
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct OBEXTransportEvent
+```
+
+```c
+struct OBEXTransportEvent;
 ```
 
 #### Overview
@@ -19,22 +24,23 @@ You will need to construcy these when data is received, and then pass a pointer 
 ## Topics
 
 ### Initializers
-- [init()](obextransportevent/init.md)
-- [init(type: OBEXTransportEventType, status: OBEXError, dataPtr: UnsafeMutableRawPointer!, dataLength: Int)](obextransportevent/init(type:status:dataptr:datalength:).md)
+- [init()](./obextransportevent/init%28%29.md)
+- [init(type: OBEXTransportEventType, status: OBEXError, dataPtr: UnsafeMutableRawPointer!, dataLength: Int)](./obextransportevent/init%28type,status,dataptr,datalength%29.md)
 ### Instance Properties
-- [var dataLength: Int](obextransportevent/datalength.md)
-- [var dataPtr: UnsafeMutableRawPointer!](obextransportevent/dataptr.md)
-- [var status: OBEXError](obextransportevent/status.md)
-- [var type: OBEXTransportEventType](obextransportevent/type.md)
+- [var dataLength: Int](./obextransportevent/datalength.md)
+- [var dataPtr: UnsafeMutableRawPointer!](./obextransportevent/dataptr.md)
+- [var status: OBEXError](./obextransportevent/status.md)
+- [var type: OBEXTransportEventType](./obextransportevent/type.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [typealias OBEXTransportEventType](obextransporteventtype.md)
+### DataTypes
+- [typealias OBEXTransportEventType](./obextransporteventtype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to fetch default personal recommendations for the user.
 

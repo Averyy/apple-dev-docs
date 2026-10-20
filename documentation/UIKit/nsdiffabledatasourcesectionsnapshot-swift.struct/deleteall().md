@@ -1,7 +1,8 @@
 # deleteAll()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes all of the items from the section snapshot.
 
@@ -10,7 +11,7 @@ Deletes all of the items from the section snapshot.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ mutating func deleteAll()
 
 ## See Also
 
-- [func delete([ItemIdentifierType])](nsdiffabledatasourcesectionsnapshot-swift.struct/delete(_:).md)
+### Removing items
+- [func delete([ItemIdentifierType])](./delete%28_%29.md)
   Deletes the items with the specified identifiers, and any of their child items, from the section snapshot.
 
 

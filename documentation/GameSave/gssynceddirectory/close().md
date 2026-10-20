@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the directory, and resumes syncing the directory to the cloud.
 
@@ -18,9 +19,14 @@ Closes the directory, and resumes syncing the directory to the cloud.
 func close()
 ```
 
+```objc
+- (void) close;
+```
+
 ## See Also
 
-- [func triggerPendingUpload(completionHandler: (Bool) -> Void)](gssynceddirectory/triggerpendingupload(completionhandler:).md)
+### Finishing with a directory
+- [func triggerPendingUpload(completionHandler: (Bool) -> Void)](./triggerpendingupload%28completionhandler%29.md)
   Triggers an upload of the directory for any changes that were pending.
 
 

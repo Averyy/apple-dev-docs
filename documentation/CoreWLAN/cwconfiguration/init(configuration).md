@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Core WLAN  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a CWConfiguration object initialized with the given CWConfiguration object.
 
@@ -14,6 +15,10 @@ Creates and returns a CWConfiguration object initialized with the given CWConfig
 init(configuration: CWConfiguration)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(CWConfiguration *) configuration;
+```
+
 #### Return Value
 
 A CWConfiguration object.
@@ -24,7 +29,8 @@ A CWConfiguration object.
 
 ## See Also
 
-- [init()](cwconfiguration/init.md)
+### Creating a configuration
+- [init()](./init%28%29.md)
   Creates an empty CWConfiguration object.
 
 

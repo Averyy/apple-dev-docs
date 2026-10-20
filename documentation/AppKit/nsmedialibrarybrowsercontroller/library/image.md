@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Display image media.
 
@@ -14,11 +15,16 @@ Display image media.
 static var image: NSMediaLibraryBrowserController.Library { get }
 ```
 
+```c
+NSMediaLibraryImage
+```
+
 ## See Also
 
-- [static var audio: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library/audio.md)
+### Constants
+- [static var audio: NSMediaLibraryBrowserController.Library](./audio.md)
   Display audio media.
-- [static var movie: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library/movie.md)
+- [static var movie: NSMediaLibraryBrowserController.Library](./movie.md)
   Display movie media.
 
 

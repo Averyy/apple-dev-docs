@@ -1,15 +1,16 @@
 # kDelayParam_WetDryMix
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kDelayParam_WetDryMix: AudioUnitParameterID { get }
 ```
 
+```c
+kDelayParam_WetDryMix
+```
+
 ## See Also
 
-- [var kDelayParam_DelayTime: AudioUnitParameterID](kdelayparam_delaytime.md)
-- [var kDelayParam_Feedback: AudioUnitParameterID](kdelayparam_feedback.md)
-- [var kDelayParam_LopassCutoff: AudioUnitParameterID](kdelayparam_lopasscutoff.md)
+### Constants
+- [var kDelayParam_DelayTime: AudioUnitParameterID](./kdelayparam_delaytime.md)
+- [var kDelayParam_Feedback: AudioUnitParameterID](./kdelayparam_feedback.md)
+- [var kDelayParam_LopassCutoff: AudioUnitParameterID](./kdelayparam_lopasscutoff.md)
 
 
 ---

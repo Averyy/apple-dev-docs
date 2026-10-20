@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a beta recruitment criterion.
 
@@ -10,14 +11,14 @@ The request body you use to create a beta recruitment criterion.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `betaGroups`
 
 
 ---

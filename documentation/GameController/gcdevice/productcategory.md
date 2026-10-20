@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The product category that identifies the type of controller.
@@ -20,15 +21,20 @@ The product category that identifies the type of controller.
 var productCategory: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * productCategory;
+```
+
 ## Mentions
 
-- [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
+- [Letting players use their second-generation Siri Remote as a game controller](../letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
 
 ## See Also
 
-- [var vendorName: String?](gcdevice/vendorname.md)
+### Getting device information
+- [var vendorName: String?](./vendorname.md)
   The manufacturer-provided name for the device, or the user’s name for the device.
-- [Product category constants](product-category-constants.md)
+- [Product category constants](../product-category-constants.md)
 
 
 ---

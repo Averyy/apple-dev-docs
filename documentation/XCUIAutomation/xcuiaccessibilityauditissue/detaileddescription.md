@@ -1,7 +1,8 @@
 # detailedDescription
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,10 +20,15 @@
 var detailedDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * detailedDescription;
+```
+
 ## See Also
 
-- [var auditType: XCUIAccessibilityAuditType](xcuiaccessibilityauditissue/audittype.md)
-- [var compactDescription: String](xcuiaccessibilityauditissue/compactdescription.md)
+### Type and description
+- [var auditType: XCUIAccessibilityAuditType](./audittype.md)
+- [var compactDescription: String](./compactdescription.md)
 
 
 ---

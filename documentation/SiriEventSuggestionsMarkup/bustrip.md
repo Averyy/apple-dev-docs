@@ -1,7 +1,8 @@
 # BusTrip
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Location and scheduling information for a bus trip.
 
@@ -10,13 +11,13 @@ Location and scheduling information for a bus trip.
 
 ## Declaration
 
-```swift
+```
 object BusTrip
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `BusTrip`
 - `arrivalBusStop` (BusStation) *(required)*: The station where the bus reservation ends.
 - `arrivalTime` (dateTimeISO8601) *(required)*: The scheduled time the bus arrives.
 - `busName` (string) *(required)*: The name of the bus.
@@ -27,7 +28,8 @@ object BusTrip
 
 ## See Also
 
-- [object BusStation](busstation.md)
+### Defining a Bus Reservation
+- [object BusStation](./busstation.md)
   The name and location of a bus station.
 
 

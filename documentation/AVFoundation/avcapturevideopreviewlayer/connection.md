@@ -1,7 +1,8 @@
 # connection
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that describes the connection from the layer to a particular input port.
 
@@ -18,19 +19,24 @@ An object that describes the connection from the layer to a particular input por
 var connection: AVCaptureConnection? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVCaptureConnection * connection;
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](../setting-up-a-capture-session.md)
 
 #### Discussion
 
-When you associate a preview layer with a capture session, the session automatically creates a connection to the first eligible video [`AVCaptureInput.Port`](avcaptureinput/port.md) object. If you detach a preview layer from a session, the connection property becomes `nil`.
+When you associate a preview layer with a capture session, the session automatically creates a connection to the first eligible video [`AVCaptureInput.Port`](../avcaptureinput/port.md) object. If you detach a preview layer from a session, the connection property becomes `nil`.
 
 ## See Also
 
-- [var session: AVCaptureSession?](avcapturevideopreviewlayer/session.md)
+### Session configuration
+- [var session: AVCaptureSession?](./session.md)
   A capture session with visual output to preview.
-- [func setSessionWithNoConnection(AVCaptureSession)](avcapturevideopreviewlayer/setsessionwithnoconnection(_:).md)
+- [func setSessionWithNoConnection(AVCaptureSession)](./setsessionwithnoconnection%28_%29.md)
   Associates a session with the layer without automatically forming a connection to an eligible input port.
 
 

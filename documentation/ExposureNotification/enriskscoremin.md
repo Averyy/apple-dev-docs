@@ -1,14 +1,17 @@
 # ENRiskScoreMin
 
 **Framework**: Exposure Notification  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that is the minimum for risk score.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,9 +19,14 @@ The value that is the minimum for risk score.
 var ENRiskScoreMin: Int { get }
 ```
 
+```c
+ENRiskScoreMin
+```
+
 ## See Also
 
-- [var ENRiskScoreMax: Int](enriskscoremax.md)
+### Constants
+- [var ENRiskScoreMax: Int](./enriskscoremax.md)
   The value that is the maximum for risk score.
 
 

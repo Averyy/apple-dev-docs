@@ -1,27 +1,29 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the dispatch queue object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iodispatchqueue/create.md)
+### Creating a Dispatch Queue
+- [Create](./create.md)
   Creates a new dispatch queue object.
-- [init](iodispatchqueue/init.md)
+- [init](./init.md)
   Initializes the dispatch queue object.
 
 

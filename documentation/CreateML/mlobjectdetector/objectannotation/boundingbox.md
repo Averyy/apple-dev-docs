@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangular region that encloses an item the object detector found in the image.
 
@@ -16,9 +17,10 @@ var boundingBox: CGRect
 
 ## See Also
 
-- [var label: String](mlobjectdetector/objectannotation/label.md)
+### Inspecting an annotation
+- [var label: String](./label.md)
   The name of the item the object detector found in an image.
-- [var confidence: Double](mlobjectdetector/objectannotation/confidence.md)
+- [var confidence: Double](./confidence.md)
   The object detector’s confidence score for its prediction’s accuracy.
 
 

@@ -1,10 +1,11 @@
 # NSUserInterfaceItemIdentifier
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,24 +13,29 @@
 struct NSUserInterfaceItemIdentifier
 ```
 
+```c
+typedef NSString * NSUserInterfaceItemIdentifier;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](nsuserinterfaceitemidentifier/init(_:).md)
-- [init(rawValue: String)](nsuserinterfaceitemidentifier/init(rawvalue:).md)
+- [init(String)](./nsuserinterfaceitemidentifier/init%28_%29.md)
+- [init(rawValue: String)](./nsuserinterfaceitemidentifier/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: NSUserInterfaceItemIdentifier?](nsuserinterfaceitemidentification/identifier.md)
+### Accessing the User Interface Identifier
+- [var identifier: NSUserInterfaceItemIdentifier?](./nsuserinterfaceitemidentification/identifier.md)
   A string that identifies the user interface item.
 
 

@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a ray that’s transformed by the specified scaled pose.
 

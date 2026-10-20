@@ -1,15 +1,18 @@
 # supportsFocus
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the screen supports focus-based inputs.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 15.0
+- iPadOS 9.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 15.0
+
+> **Deprecated**: Use [`focusSystem`](../uiwindowscene/focussystem.md) `!= nil` instead.
 
 ## Declaration
 
@@ -17,19 +20,24 @@ A Boolean value that indicates whether the screen supports focus-based inputs.
 var supportsFocus: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsFocus;
+```
+
 ## See Also
 
-- [class var main: UIScreen](uiscreen/main.md)
+### Deprecated properties
+- [class var main: UIScreen](./main.md)
   Returns the screen object representing the device’s screen.
-- [class var screens: [UIScreen]](uiscreen/screens.md)
+- [class var screens: [UIScreen]](./screens.md)
   Returns an array containing all of the screens attached to the device.
-- [var applicationFrame: CGRect](uiscreen/applicationframe.md)
+- [var applicationFrame: CGRect](./applicationframe.md)
   The frame rectangle for the app window, measured in points.
-- [var focusedItem: (any UIFocusItem)?](uiscreen/focuseditem.md)
+- [var focusedItem: (any UIFocusItem)?](./focuseditem.md)
   The item that is currently focused.
-- [var focusedView: UIView?](uiscreen/focusedview.md)
+- [var focusedView: UIView?](./focusedview.md)
   The view that is currently focused.
-- [var isCaptured: Bool](uiscreen/iscaptured.md)
+- [var isCaptured: Bool](./iscaptured.md)
   A Boolean value that indicates whether the system is actively cloning the screen to another destination.
 
 

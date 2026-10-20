@@ -1,7 +1,8 @@
 # UITextFormattingViewController.ChangeValue
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,23 +18,23 @@ enum ChangeValue
 ## Topics
 
 ### Enumeration Cases
-- [UITextFormattingViewController.ChangeValue.bold(_:)](uitextformattingviewcontroller/changevalue/bold(_:).md)
-- [UITextFormattingViewController.ChangeValue.decreaseFontSize](uitextformattingviewcontroller/changevalue/decreasefontsize.md)
-- [UITextFormattingViewController.ChangeValue.decreaseIndentation](uitextformattingviewcontroller/changevalue/decreaseindentation.md)
-- [UITextFormattingViewController.ChangeValue.font(_:)](uitextformattingviewcontroller/changevalue/font(_:).md)
-- [UITextFormattingViewController.ChangeValue.fontSize(_:)](uitextformattingviewcontroller/changevalue/fontsize(_:).md)
-- [UITextFormattingViewController.ChangeValue.formattingStyle(_:)](uitextformattingviewcontroller/changevalue/formattingstyle(_:).md)
-- [case highlight(UITextFormattingViewController.Highlight?)](uitextformattingviewcontroller/changevalue/highlight(_:).md)
-- [UITextFormattingViewController.ChangeValue.increaseFontSize](uitextformattingviewcontroller/changevalue/increasefontsize.md)
-- [UITextFormattingViewController.ChangeValue.increaseIndentation](uitextformattingviewcontroller/changevalue/increaseindentation.md)
-- [UITextFormattingViewController.ChangeValue.italic(_:)](uitextformattingviewcontroller/changevalue/italic(_:).md)
-- [UITextFormattingViewController.ChangeValue.lineHeightPointSize(_:)](uitextformattingviewcontroller/changevalue/lineheightpointsize(_:).md)
-- [UITextFormattingViewController.ChangeValue.strikethrough(_:)](uitextformattingviewcontroller/changevalue/strikethrough(_:).md)
-- [case textAlignment(UITextFormattingViewController.TextAlignment)](uitextformattingviewcontroller/changevalue/textalignment(_:).md)
-- [UITextFormattingViewController.ChangeValue.textColor(_:)](uitextformattingviewcontroller/changevalue/textcolor(_:).md)
-- [UITextFormattingViewController.ChangeValue.textList(_:)](uitextformattingviewcontroller/changevalue/textlist(_:).md)
-- [UITextFormattingViewController.ChangeValue.undefined](uitextformattingviewcontroller/changevalue/undefined.md)
-- [UITextFormattingViewController.ChangeValue.underline(_:)](uitextformattingviewcontroller/changevalue/underline(_:).md)
+- [UITextFormattingViewController.ChangeValue.bold(_:)](./changevalue/bold%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.decreaseFontSize](./changevalue/decreasefontsize.md)
+- [UITextFormattingViewController.ChangeValue.decreaseIndentation](./changevalue/decreaseindentation.md)
+- [UITextFormattingViewController.ChangeValue.font(_:)](./changevalue/font%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.fontSize(_:)](./changevalue/fontsize%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.formattingStyle(_:)](./changevalue/formattingstyle%28_%29.md)
+- [case highlight(UITextFormattingViewController.Highlight?)](./changevalue/highlight%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.increaseFontSize](./changevalue/increasefontsize.md)
+- [UITextFormattingViewController.ChangeValue.increaseIndentation](./changevalue/increaseindentation.md)
+- [UITextFormattingViewController.ChangeValue.italic(_:)](./changevalue/italic%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.lineHeightPointSize(_:)](./changevalue/lineheightpointsize%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.strikethrough(_:)](./changevalue/strikethrough%28_%29.md)
+- [case textAlignment(UITextFormattingViewController.TextAlignment)](./changevalue/textalignment%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.textColor(_:)](./changevalue/textcolor%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.textList(_:)](./changevalue/textlist%28_%29.md)
+- [UITextFormattingViewController.ChangeValue.undefined](./changevalue/undefined.md)
+- [UITextFormattingViewController.ChangeValue.underline(_:)](./changevalue/underline%28_%29.md)
 
 
 ---

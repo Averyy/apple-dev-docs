@@ -1,7 +1,8 @@
 # droppedFrameReason
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,21 +21,22 @@ static let droppedFrameReason: CMSampleBuffer.AttachmentKey
 
 ## See Also
 
-- [static let cameraIntrinsicMatrix: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/cameraintrinsicmatrix.md)
-- [static let displayEmptyMediaImmediately: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/displayemptymediaimmediately.md)
-- [static let drainAfterDecoding: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/drainafterdecoding.md)
-- [static let droppedFrameReasonInfo: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/droppedframereasoninfo.md)
-- [static let emptyMedia: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/emptymedia.md)
-- [static let endsPreviousSampleDuration: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/endsprevioussampleduration.md)
-- [static let fillDiscontinuitiesWithSilence: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/filldiscontinuitieswithsilence.md)
-- [static let forceKeyFrame: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/forcekeyframe.md)
-- [static let gradualDecoderRefresh: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/gradualdecoderrefresh.md)
-- [static let permanentEmptyMedia: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/permanentemptymedia.md)
-- [static let postNotificationWhenConsumed: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/postnotificationwhenconsumed.md)
-- [static let resetDecoderBeforeDecoding: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/resetdecoderbeforedecoding.md)
-- [static let resumeOutput: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/resumeoutput.md)
-- [static let reverse: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/reverse.md)
-- [static let sampleReferenceByteOffset: CMSampleBuffer.AttachmentKey](cmsamplebuffer/attachmentkey/samplereferencebyteoffset.md)
+### Attachment Keys
+- [static let cameraIntrinsicMatrix: CMSampleBuffer.AttachmentKey](./cameraintrinsicmatrix.md)
+- [static let displayEmptyMediaImmediately: CMSampleBuffer.AttachmentKey](./displayemptymediaimmediately.md)
+- [static let drainAfterDecoding: CMSampleBuffer.AttachmentKey](./drainafterdecoding.md)
+- [static let droppedFrameReasonInfo: CMSampleBuffer.AttachmentKey](./droppedframereasoninfo.md)
+- [static let emptyMedia: CMSampleBuffer.AttachmentKey](./emptymedia.md)
+- [static let endsPreviousSampleDuration: CMSampleBuffer.AttachmentKey](./endsprevioussampleduration.md)
+- [static let fillDiscontinuitiesWithSilence: CMSampleBuffer.AttachmentKey](./filldiscontinuitieswithsilence.md)
+- [static let forceKeyFrame: CMSampleBuffer.AttachmentKey](./forcekeyframe.md)
+- [static let gradualDecoderRefresh: CMSampleBuffer.AttachmentKey](./gradualdecoderrefresh.md)
+- [static let permanentEmptyMedia: CMSampleBuffer.AttachmentKey](./permanentemptymedia.md)
+- [static let postNotificationWhenConsumed: CMSampleBuffer.AttachmentKey](./postnotificationwhenconsumed.md)
+- [static let resetDecoderBeforeDecoding: CMSampleBuffer.AttachmentKey](./resetdecoderbeforedecoding.md)
+- [static let resumeOutput: CMSampleBuffer.AttachmentKey](./resumeoutput.md)
+- [static let reverse: CMSampleBuffer.AttachmentKey](./reverse.md)
+- [static let sampleReferenceByteOffset: CMSampleBuffer.AttachmentKey](./samplereferencebyteoffset.md)
 
 
 ---

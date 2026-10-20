@@ -1,7 +1,8 @@
 # maximumZ
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The maximum zoom level of the overlay.
 
@@ -10,7 +11,7 @@ The maximum zoom level of the overlay.
 
 ## Declaration
 
-```swift
+```
 maximumZ: number;
 ```
 
@@ -20,11 +21,12 @@ The default value is `null`.
 
 ## See Also
 
-- [data](tileoverlayconstructoroptions/data.md)
+### Initializing tile overlay options
+- [data](./data.md)
   Custom data for populating the URL template.
-- [minimumZ](tileoverlayconstructoroptions/minimumz.md)
+- [minimumZ](./minimumz.md)
   The minimum zoom level of the overlay.
-- [opacity](tileoverlayconstructoroptions/opacity.md)
+- [opacity](./opacity.md)
   The opacity level of the overlay.
 
 

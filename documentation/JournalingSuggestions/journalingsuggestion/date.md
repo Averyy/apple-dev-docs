@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of time in which the suggested event takes place.
 
@@ -16,7 +17,8 @@ let date: DateInterval?
 
 ## See Also
 
-- [let title: String](journalingsuggestion/title.md)
+### Inspecting suggestion details
+- [let title: String](./title.md)
   The title for the suggestion.
 
 

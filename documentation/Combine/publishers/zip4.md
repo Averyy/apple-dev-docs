@@ -1,7 +1,8 @@
 # Publishers.Zip4
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher created by applying the zip function to four upstream publishers.
 
@@ -29,61 +30,62 @@ If any upstream publisher finishes successfully or fails with an error, so too d
 ## Topics
 
 ### Creating a zip-four Publisher
-- [init(A, B, C, D)](publishers/zip4/init(_:_:_:_:).md)
+- [init(A, B, C, D)](./zip4/init%28_,_,_,_%29.md)
   Creates a publisher created by applying the zip function to four upstream publishers.
 ### Declaring supporting types
-- [Publishers.Zip4.Output](publishers/zip4/output.md)
+- [Publishers.Zip4.Output](./zip4/output.md)
   The kind of values published by this publisher.
-- [Publishers.Zip4.Failure](publishers/zip4/failure.md)
+- [Publishers.Zip4.Failure](./zip4/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let a: A](publishers/zip4/a.md)
+- [let a: A](./zip4/a.md)
   A publisher to zip.
-- [let b: B](publishers/zip4/b.md)
+- [let b: B](./zip4/b.md)
   A second publisher to zip.
-- [let c: C](publishers/zip4/c.md)
+- [let c: C](./zip4/c.md)
   A third publisher to zip.
-- [let d: D](publishers/zip4/d.md)
+- [let d: D](./zip4/d.md)
   A fourth publisher to zip.
 ### Comparing publishers
-- [static func == (Publishers.Zip4<A, B, C, D>, Publishers.Zip4<A, B, C, D>) -> Bool](publishers/zip4/==(_:_:).md)
+- [static func == (Publishers.Zip4<A, B, C, D>, Publishers.Zip4<A, B, C, D>) -> Bool](./zip4/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 ### Default Implementations
-- [Equatable Implementations](publishers/zip4/equatable-implementations.md)
+- [Equatable Implementations](./zip4/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Publisher](publisher.md)
+- [Equatable](../../Swift/equatable.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.CombineLatest](publishers/combinelatest.md)
+### Combining elements from multiple publishers
+- [Publishers.CombineLatest](./combinelatest.md)
   A publisher that receives and combines the latest elements from two publishers.
-- [Publishers.CombineLatest3](publishers/combinelatest3.md)
+- [Publishers.CombineLatest3](./combinelatest3.md)
   A publisher that receives and combines the latest elements from three publishers.
-- [Publishers.CombineLatest4](publishers/combinelatest4.md)
+- [Publishers.CombineLatest4](./combinelatest4.md)
   A publisher that receives and combines the latest elements from four publishers.
-- [Publishers.Merge](publishers/merge.md)
+- [Publishers.Merge](./merge.md)
   A publisher created by applying the merge function to two upstream publishers.
-- [Publishers.Merge3](publishers/merge3.md)
+- [Publishers.Merge3](./merge3.md)
   A publisher created by applying the merge function to three upstream publishers.
-- [Publishers.Merge4](publishers/merge4.md)
+- [Publishers.Merge4](./merge4.md)
   A publisher created by applying the merge function to four upstream publishers.
-- [Publishers.Merge5](publishers/merge5.md)
+- [Publishers.Merge5](./merge5.md)
   A publisher created by applying the merge function to five upstream publishers.
-- [Publishers.Merge6](publishers/merge6.md)
+- [Publishers.Merge6](./merge6.md)
   A publisher created by applying the merge function to six upstream publishers.
-- [Publishers.Merge7](publishers/merge7.md)
+- [Publishers.Merge7](./merge7.md)
   A publisher created by applying the merge function to seven upstream publishers.
-- [Publishers.Merge8](publishers/merge8.md)
+- [Publishers.Merge8](./merge8.md)
   A publisher created by applying the merge function to eight upstream publishers.
-- [Publishers.MergeMany](publishers/mergemany.md)
+- [Publishers.MergeMany](./mergemany.md)
   A publisher created by applying the merge function to an arbitrary number of upstream publishers.
-- [Publishers.Zip](publishers/zip.md)
+- [Publishers.Zip](./zip.md)
   A publisher created by applying the zip function to two upstream publishers.
-- [Publishers.Zip3](publishers/zip3.md)
+- [Publishers.Zip3](./zip3.md)
   A publisher created by applying the zip function to three upstream publishers.
 
 

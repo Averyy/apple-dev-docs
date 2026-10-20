@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The world-to-view transformation matrix this frame interpolator uses as part of its operation.
@@ -19,9 +20,13 @@ The world-to-view transformation matrix this frame interpolator uses as part of 
 var worldToViewMatrix: simd_float4x4 { get set }
 ```
 
+```objc
+@property (nonatomic) simd_float4x4 worldToViewMatrix;
+```
+
 #### Discussion
 
-Set this and [`viewToClipMatrix`](mtlfxframeinterpolatorbase/viewtoclipmatrix.md) to the matrices you use to render the scene into the color buffer. This frame interpolator derives camera-only motion from the pair, and treats two identity matrices as “not supplied”.
+Set this and [`viewToClipMatrix`](./viewtoclipmatrix.md) to the matrices you use to render the scene into the color buffer. This frame interpolator derives camera-only motion from the pair, and treats two identity matrices as “not supplied”.
 
 
 ---

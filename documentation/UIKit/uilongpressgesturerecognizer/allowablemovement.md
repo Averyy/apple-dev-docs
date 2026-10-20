@@ -1,7 +1,8 @@
 # allowableMovement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum movement of the fingers on the view before the gesture fails.
 
@@ -9,7 +10,7 @@ The maximum movement of the fingers on the view before the gesture fails.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The maximum movement of the fingers on the view before the gesture fails.
 var allowableMovement: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat allowableMovement;
+```
+
 #### Discussion
 
 The allowable distance, measured in points. The default distance is `10` points.
 
 ## See Also
 
-- [var minimumPressDuration: TimeInterval](uilongpressgesturerecognizer/minimumpressduration.md)
+### Configuring the gesture recognizer
+- [var minimumPressDuration: TimeInterval](./minimumpressduration.md)
   The minimum time that the user must press on the view for the gesture to be recognized.
-- [var numberOfTouchesRequired: Int](uilongpressgesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
   The number of fingers that must touch the view for gesture recognition.
-- [var numberOfTapsRequired: Int](uilongpressgesturerecognizer/numberoftapsrequired.md)
+- [var numberOfTapsRequired: Int](./numberoftapsrequired.md)
   The number of taps on the view necessary for gesture recognition.
 
 

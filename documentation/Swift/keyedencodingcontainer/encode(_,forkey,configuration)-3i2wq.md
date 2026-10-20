@@ -1,7 +1,8 @@
 # encode(_:forKey:configuration:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func encode<T, C>(_ t: T, forKey key: KeyedEncodingContainer<K>.Key, configuration: C.Type) throws where T : EncodableWithConfiguration, C : EncodingConfigurationProviding, T.EncodingConfiguration == C.EncodingConfiguration
 ```
+
+Available when `K` conforms to `CodingKey`.
 
 
 ---

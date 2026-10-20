@@ -1,7 +1,8 @@
 # SecProtocolType.LDAP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates LDAP.
 
@@ -13,6 +14,10 @@ Indicates LDAP.
 
 ```swift
 case LDAP
+```
+
+```c
+kSecProtocolTypeLDAP
 ```
 
 

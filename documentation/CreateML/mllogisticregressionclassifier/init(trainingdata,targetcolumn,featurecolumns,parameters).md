@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logistic regression classifier.
 
@@ -19,6 +20,12 @@ Creates a logistic regression classifier.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLLogisticRegressionClassifier.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLLogisticRegressionClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
@@ -28,9 +35,10 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 ## See Also
 
-- [var targetColumn: String](mllogisticregressionclassifier/targetcolumn.md)
+### Training a logistic regression classifier synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mllogisticregressionclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

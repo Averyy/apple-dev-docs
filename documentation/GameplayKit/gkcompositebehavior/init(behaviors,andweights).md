@@ -1,7 +1,8 @@
 # init(behaviors:andWeights:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a behavior with the specified behaviors and weights.
 
@@ -19,9 +20,13 @@ Creates a behavior with the specified behaviors and weights.
 convenience init(behaviors: [GKBehavior], andWeights weights: [NSNumber])
 ```
 
+```objc
++ (instancetype) behaviorWithBehaviors:(NSArray<GKBehavior *> *) behaviors andWeights:(NSArray<NSNumber *> *) weights;
+```
+
 #### Return Value
 
-A new behavior object. To assign a behavior to an agent, use the agent’s [`behavior`](gkagent/behavior.md) property.
+A new behavior object. To assign a behavior to an agent, use the agent’s [`behavior`](../gkagent/behavior.md) property.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A new behavior object. To assign a behavior to an agent, use the agent’s [`beh
 
 ## See Also
 
-- [convenience init(behaviors: [GKBehavior])](gkcompositebehavior/init(behaviors:).md)
+### Creating a Composite Behavior
+- [convenience init(behaviors: [GKBehavior])](./init%28behaviors%29.md)
   Creates a composite behavior from the specified individual behaviors.
 
 

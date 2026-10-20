@@ -7,12 +7,12 @@ Initializes the iteration context for a collection subclass.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initIterator(
  void *iterationContext) const = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if initialization was successful, `false` otherwise.
 
@@ -28,27 +28,28 @@ This function can be called repeatedly for a given context, whenever the iterato
 
 ## See Also
 
-- [copyCollection](oscollection/1808206-copycollection.md)
+### Miscellaneous
+- [copyCollection](./api-1808206-copycollection.md)
   Creates a deep copy of a collection.
-- [ensureCapacity](oscollection/1808212-ensurecapacity.md)
+- [ensureCapacity](./api-1808212-ensurecapacity.md)
   Ensures the collection has enough space to store the requested number of objects.
-- [flushCollection](oscollection/1808219-flushcollection.md)
+- [flushCollection](./api-1808219-flushcollection.md)
   Empties the collection, releasing any objects retained.
-- [getCapacity](oscollection/1808225-getcapacity.md)
+- [getCapacity](./api-1808225-getcapacity.md)
   Returns the number of objects the collection can store without reallocating.
-- [getCapacityIncrement](oscollection/1808233-getcapacityincrement.md)
+- [getCapacityIncrement](./api-1808233-getcapacityincrement.md)
   Returns the storage increment of the collection.
-- [getCount](oscollection/1808238-getcount.md)
+- [getCount](./api-1808238-getcount.md)
   Returns the number of objects in the collection.
-- [getNextObjectForIterator](oscollection/1808244-getnextobjectforiterator.md)
+- [getNextObjectForIterator](./api-1808244-getnextobjectforiterator.md)
   Returns the next member of a collection.
-- [haveUpdated](oscollection/1808248-haveupdated.md)
+- [haveUpdated](./api-1808248-haveupdated.md)
   Tracks updates to the collection.
-- [init](oscollection/1808252-init.md)
+- [init](./api-1808252-init.md)
   Initializes the OSCollection object.
-- [iteratorSize](oscollection/1808262-iteratorsize.md)
+- [iteratorSize](./api-1808262-iteratorsize.md)
   Returns the size in bytes of a subclass's iteration context.
-- [setCapacityIncrement](oscollection/1808267-setcapacityincrement.md)
+- [setCapacityIncrement](./api-1808267-setcapacityincrement.md)
   Sets the storage increment of the collection.
 
 

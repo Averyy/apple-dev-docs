@@ -1,7 +1,8 @@
 # SubscriptionIntroductoryOffer
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A discounted price or free trial period offered to new subscribers of an auto-renewable subscription.
 
@@ -10,16 +11,16 @@ A discounted price or free trial period offered to new subscribers of an auto-re
 
 ## Declaration
 
-```swift
+```
 object SubscriptionIntroductoryOffer
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionIntroductoryOffer.Attributes](subscriptionintroductoryoffer/attributes-data.dictionary.md)
+- [object SubscriptionIntroductoryOffer.Attributes](./subscriptionintroductoryoffer/attributes-data.dictionary.md)
   Attributes that describe a subscription introductory offer resource.
-- [object SubscriptionIntroductoryOffer.Relationships](subscriptionintroductoryoffer/relationships-data.dictionary.md)
+- [object SubscriptionIntroductoryOffer.Relationships](./subscriptionintroductoryoffer/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,39 +29,40 @@ object SubscriptionIntroductoryOffer
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (SubscriptionIntroductoryOffer.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionIntroductoryOffers`
 
 ## See Also
 
-- [object SubscriptionCreateRequest](subscriptioncreaterequest.md)
+### Objects and data types
+- [object SubscriptionCreateRequest](./subscriptioncreaterequest.md)
   The request body you use to create a subscription.
-- [object SubscriptionUpdateRequest](subscriptionupdaterequest.md)
+- [object SubscriptionUpdateRequest](./subscriptionupdaterequest.md)
   The request body you use to update a subscription update request.
-- [object SubscriptionResponse](subscriptionresponse.md)
+- [object SubscriptionResponse](./subscriptionresponse.md)
   The response body for endpoints that create, read, or modify a single auto-renewable subscription.
-- [object SubscriptionsResponse](subscriptionsresponse.md)
+- [object SubscriptionsResponse](./subscriptionsresponse.md)
   The response body for endpoints that list auto-renewable subscriptions in a subscription group.
-- [object Subscription](subscription.md)
+- [object Subscription](./subscription.md)
   An auto-renewable subscription product offered within an app, with configurable pricing, duration, and promotional offers.
-- [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
+- [object SubscriptionIntroductoryOffersResponse](./subscriptionintroductoryoffersresponse.md)
   The response body for endpoints that list introductory offers for a subscription.
-- [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
+- [object SubscriptionIntroductoryOffersLinkagesRequest](./subscriptionintroductoryofferslinkagesrequest.md)
   The request body for updating the list of introductory offers linked to a subscription.
-- [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
+- [object SubscriptionIntroductoryOffersLinkagesResponse](./subscriptionintroductoryofferslinkagesresponse.md)
   A response containing the resource identifiers of introductory offers linked to a subscription.
-- [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
+- [object SubscriptionOfferCodeResponse](./subscriptionoffercoderesponse.md)
   The response body for endpoints that create, read, or modify a single subscription offer code.
-- [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
+- [object SubscriptionOfferCodesResponse](./subscriptionoffercodesresponse.md)
   The response body for endpoints that list offer codes for a subscription.
-- [object SubscriptionOfferCode](subscriptionoffercode.md)
+- [object SubscriptionOfferCode](./subscriptionoffercode.md)
   A promotional code that gives customers a discounted or free subscription for a specified duration and eligibility group.
-- [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
+- [object PromotedPurchaseResponse](./promotedpurchaseresponse.md)
   The response body for endpoints that read or modify a promoted In-App Purchase or subscription.
-- [object PromotedPurchase](promotedpurchase.md)
+- [object PromotedPurchase](./promotedpurchase.md)
   An In-App Purchase or subscription configured to appear on the app’s App Store product page.
-- [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
+- [object SubscriptionPricePointsResponse](./subscriptionpricepointsresponse.md)
   The response body for endpoints that list available price points for a subscription.
-- [object SubscriptionPricesResponse](subscriptionpricesresponse.md)
+- [object SubscriptionPricesResponse](./subscriptionpricesresponse.md)
   The response body for endpoints that list scheduled prices for a subscription.
 
 

@@ -1,7 +1,8 @@
 # init(recordIDs:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fetch operation for retrieving the records with the specified IDs.
 
@@ -10,7 +11,7 @@ Creates a fetch operation for retrieving the records with the specified IDs.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,19 +21,24 @@ Creates a fetch operation for retrieving the records with the specified IDs.
 convenience init(recordIDs: [CKRecord.ID])
 ```
 
+```objc
+- (instancetype) initWithRecordIDs:(NSArray<CKRecordID *> *) recordIDs;
+```
+
 #### Discussion
 
-A fetch operation retrieves all of a record’s fields, including any assets that those fields reference. If you want to minimize the amount of data that the operation returns, configure the [`desiredKeys`](ckfetchrecordsoperation/desiredkeys-34l1l.md) property with only the keys that contain the values that you have an interest in.
+A fetch operation retrieves all of a record’s fields, including any assets that those fields reference. If you want to minimize the amount of data that the operation returns, configure the [`desiredKeys`](./desiredkeys-34l1l.md) property with only the keys that contain the values that you have an interest in.
 
 After initializing the operation, you must associate at least one progress handler with the operation (excluding the completion handler) to process the results.
 
 ## Parameters
 
-- `recordIDs`: An array of [`CKRecord.ID`](ckrecord/id.md) objects that represents the records you want to retrieve. If you provide an empty array, you must set the [`recordIDs`](ckfetchrecordsoperation/recordids.md) property before you execute the operation.
+- `recordIDs`: An array of [`CKRecord.ID`](../ckrecord/id.md) objects that represents the records you want to retrieve. If you provide an empty array, you must set the [`recordIDs`](./recordids.md) property before you execute the operation.
 
 ## See Also
 
-- [init()](ckfetchrecordsoperation/init.md)
+### Creating a Record Fetch Operation
+- [init()](./init%28%29.md)
   Creates an empty fetch operation.
 
 

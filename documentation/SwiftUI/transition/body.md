@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view representing the body.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func body(content: Self.Content, phase: TransitionPhase) -> Self.Body](transition/body(content:phase:).md)
+### Creating a custom transition
+- [func body(content: Self.Content, phase: TransitionPhase) -> Self.Body](./body%28content,phase%29.md)
   Gets the current body of the caller.
-- [Transition.Content](transition/content.md)
+- [Transition.Content](./content.md)
   The content view type passed to `body()`.
 
 

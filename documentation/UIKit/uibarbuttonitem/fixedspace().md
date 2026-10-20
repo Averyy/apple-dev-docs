@@ -1,7 +1,8 @@
 # fixedSpace()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new fixed space item of zero width.
 
@@ -18,15 +19,20 @@ Creates a new fixed space item of zero width.
 class func fixedSpace() -> Self
 ```
 
+```objc
++ (instancetype) fixedSpaceItem;
+```
+
 #### Discussion
 
 A fixed space of 0 width separates the shared background used in navigation bars and toolbars to visually group items.
 
 ## See Also
 
-- [class func fixedSpace(CGFloat) -> Self](uibarbuttonitem/fixedspace(_:).md)
+### Creating space items
+- [class func fixedSpace(CGFloat) -> Self](./fixedspace%28_%29.md)
   Creates a new fixed-width space item.
-- [class func flexibleSpace() -> Self](uibarbuttonitem/flexiblespace.md)
+- [class func flexibleSpace() -> Self](./flexiblespace%28%29.md)
   Creates a new flexible-width space item.
 
 

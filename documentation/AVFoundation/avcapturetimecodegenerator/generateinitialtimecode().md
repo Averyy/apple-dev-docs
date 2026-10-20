@@ -1,7 +1,8 @@
 # generateInitialTimecode()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an initial timecode intended to be the first in a sequence.
 
@@ -18,9 +19,13 @@ Generates an initial timecode intended to be the first in a sequence.
 func generateInitialTimecode() -> AVCaptureTimecode
 ```
 
+```objc
+- (AVCaptureTimecode) generateInitialTimecode;
+```
+
 #### Return Value
 
-A populated [`AVCaptureTimecode`](avcapturetimecode.md) structure.
+A populated [`AVCaptureTimecode`](../avcapturetimecode.md) structure.
 
 
 ---

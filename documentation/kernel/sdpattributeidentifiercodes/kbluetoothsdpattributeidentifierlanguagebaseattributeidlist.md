@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierLanguageBaseAttributeIDList
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierLanguageBaseAttributeIDList = 0x0006
 ```
 

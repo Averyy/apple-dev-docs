@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the region.
 
@@ -15,6 +16,10 @@ A string that identifies the region.
 
 ```swift
 var identifier: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * identifier;
 ```
 
 #### Discussion

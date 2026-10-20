@@ -1,7 +1,8 @@
 # srcRect
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The optimal bounding rectangle for the resolution indicated by the `hRes` and `vRes` fields. To display a picture at a resolution other than that specified in the `hRes` and `vRes` fields, your application should compute an appropriate destination rectangle by scaling the image’s width and height by the destination resolution divided by the source resolution.
 
@@ -12,6 +13,10 @@ The optimal bounding rectangle for the resolution indicated by the `hRes` and `v
 
 ```swift
 var srcRect: Rect
+```
+
+```c
+Rect srcRect;
 ```
 
 

@@ -1,7 +1,8 @@
 # mmsService
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 MMS service associated with this session.
 
@@ -16,11 +17,12 @@ final var mmsService: MMSService { get }
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 ## See Also
 
-- [class MMSService](mmsservice.md)
+### Using Multimedia Messaging Service (MMS)
+- [class MMSService](../mmsservice.md)
   A class that provides an interface for performing MMS operations.
 
 

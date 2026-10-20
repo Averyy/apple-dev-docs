@@ -1,7 +1,8 @@
 # isWritable
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the file system supports writing to the contents of the path URL.
 
@@ -14,9 +15,14 @@ A Boolean value that indicates whether the file system supports writing to the c
 var isWritable: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isWritable) BOOL writable;
+```
+
 ## See Also
 
-- [var url: URL](fspathurlresource/url.md)
+### Accessing resource properties
+- [var url: URL](./url.md)
   The URL represented by the resource.
 
 

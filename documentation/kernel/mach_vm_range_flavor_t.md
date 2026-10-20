@@ -1,14 +1,15 @@
 # mach_vm_range_flavor_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum mach_vm_range_flavor_t : uint32_t {
     ...
 } mach_vm_range_flavor_t;
@@ -17,8 +18,8 @@ typedef enum mach_vm_range_flavor_t : uint32_t {
 ## Topics
 
 ### Constants
-- [MACH_VM_RANGE_FLAVOR_INVALID](mach_vm_range_flavor_t/mach_vm_range_flavor_invalid.md)
-- [MACH_VM_RANGE_FLAVOR_V1](mach_vm_range_flavor_t/mach_vm_range_flavor_v1.md)
+- [MACH_VM_RANGE_FLAVOR_INVALID](./mach_vm_range_flavor_t/mach_vm_range_flavor_invalid.md)
+- [MACH_VM_RANGE_FLAVOR_V1](./mach_vm_range_flavor_t/mach_vm_range_flavor_v1.md)
 
 
 ---

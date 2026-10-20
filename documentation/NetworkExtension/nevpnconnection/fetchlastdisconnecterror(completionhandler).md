@@ -1,7 +1,8 @@
 # fetchLastDisconnectError(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrives the most recent error that caused the VPN to disconnect.
 
@@ -16,12 +17,20 @@ Retrives the most recent error that caused the VPN to disconnect.
 ## Declaration
 
 ```swift
+func fetchLastDisconnectError(completionHandler handler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func fetchLastDisconnectError() async throws
+```
+
+```objc
+- (void) fetchLastDisconnectErrorWithCompletionHandler:(void (^)(NSError *)) handler;
 ```
 
 #### Discussion
 
-If VPN system (including the IPsec client) generated the error, then the error uses the [`NEVPNConnectionErrorDomain`](nevpnconnectionerrordomain.md) error domain. If the error came from a tunnel provider app extension instead, then the error is the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that the provider passed when disconnecting the tunnel.
+If VPN system (including the IPsec client) generated the error, then the error uses the [`NEVPNConnectionErrorDomain`](../nevpnconnectionerrordomain.md) error domain. If the error came from a tunnel provider app extension instead, then the error is the [`NSError`](../../Foundation/nserror.md) that the provider passed when disconnecting the tunnel.
 
 ## Parameters
 
@@ -29,9 +38,10 @@ If VPN system (including the IPsec client) generated the error, then the error u
 
 ## See Also
 
-- [let NEVPNConnectionErrorDomain: String](nevpnconnectionerrordomain.md)
+### Handling errors
+- [let NEVPNConnectionErrorDomain: String](../nevpnconnectionerrordomain.md)
   The domain for errors resulting from VPN connection calls.
-- [enum NEVPNConnectionError](nevpnconnectionerror.md)
+- [enum NEVPNConnectionError](../nevpnconnectionerror.md)
   Error codes specific to VPN connections.
 
 

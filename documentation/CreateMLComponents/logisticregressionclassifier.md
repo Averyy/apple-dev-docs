@@ -1,7 +1,8 @@
 # LogisticRegressionClassifier
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A logistic regression classifier.
 
@@ -23,66 +24,67 @@ struct LogisticRegressionClassifier<Scalar, Label> where Scalar : MLShapedArrayS
 ## Topics
 
 ### Creating a classifier
-- [init(labels: Set<Label>, configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration)](logisticregressionclassifier/init(labels:configuration:).md)
+- [init(labels: Set<Label>, configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration)](./logisticregressionclassifier/init%28labels,configuration%29.md)
   Creates a logistic regression classifier.
-- [LogisticRegressionClassifier.Configuration](logisticregressionclassifier/configuration-swift.struct.md)
+- [LogisticRegressionClassifier.Configuration](./logisticregressionclassifier/configuration-swift.struct.md)
   A logistic regression classifier configuration.
 ### Getting the properties
-- [var configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration](logisticregressionclassifier/configuration-swift.property.md)
+- [var configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration](./logisticregressionclassifier/configuration-swift.property.md)
   The logistic regression classifier configuration.
-- [var labels: Set<Label>](logisticregressionclassifier/labels.md)
+- [var labels: Set<Label>](./logisticregressionclassifier/labels.md)
   The set of possible labels.
 ### Encoding and decoding
-- [func encodeWithOptimizer(LogisticRegressionClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](logisticregressionclassifier/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(LogisticRegressionClassifier<Scalar, Label>.Transformer, to: inout any EstimatorEncoder) throws](./logisticregressionclassifier/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](./logisticregressionclassifier/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 ### Fitting
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](./logisticregressionclassifier/fitted%28to,eventhandler%29.md)
   Fits a logistic regression classifier model to a sequence of examples while validating with a validation sequence.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifierModel<Scalar, Label>](logisticregressionclassifier/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifierModel<Scalar, Label>](./logisticregressionclassifier/fitted%28to,validateon,eventhandler%29.md)
   Fits a logistic regression classifier model to a sequence of examples.
-- [LogisticRegressionClassifier.Annotation](logisticregressionclassifier/annotation.md)
+- [LogisticRegressionClassifier.Annotation](./logisticregressionclassifier/annotation.md)
   The annotation type.
-- [LogisticRegressionClassifier.Transformer](logisticregressionclassifier/transformer.md)
+- [LogisticRegressionClassifier.Transformer](./logisticregressionclassifier/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [UpdatableSupervisedEstimator Implementations](logisticregressionclassifier/updatablesupervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./logisticregressionclassifier/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [protocol Classifier](classifier.md)
+### Classifiers
+- [protocol Classifier](./classifier.md)
   An estimator that predicts classification probabilities.
-- [struct LogisticRegressionClassifierModel](logisticregressionclassifiermodel.md)
+- [struct LogisticRegressionClassifierModel](./logisticregressionclassifiermodel.md)
   A trained logistic regression classifier model.
-- [struct BoostedTreeClassifier](boostedtreeclassifier.md)
+- [struct BoostedTreeClassifier](./boostedtreeclassifier.md)
   A gradient boosted decision tree classifier.
-- [struct BoostedTreeConfiguration](boostedtreeconfiguration.md)
+- [struct BoostedTreeConfiguration](./boostedtreeconfiguration.md)
   A boosted tree configuration.
-- [struct FullyConnectedNetworkClassifier](fullyconnectednetworkclassifier.md)
+- [struct FullyConnectedNetworkClassifier](./fullyconnectednetworkclassifier.md)
   A classifier that uses a fully connected network.
-- [struct FullyConnectedNetworkClassifierModel](fullyconnectednetworkclassifiermodel.md)
+- [struct FullyConnectedNetworkClassifierModel](./fullyconnectednetworkclassifiermodel.md)
   A classifier model that uses a fully connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifier](fullyconnectednetworkmultilabelclassifier.md)
+- [struct FullyConnectedNetworkMultiLabelClassifier](./fullyconnectednetworkmultilabelclassifier.md)
   A classifier that uses a multi-label fully-connected network.
-- [struct FullyConnectedNetworkMultiLabelClassifierModel](fullyconnectednetworkmultilabelclassifiermodel.md)
+- [struct FullyConnectedNetworkMultiLabelClassifierModel](./fullyconnectednetworkmultilabelclassifiermodel.md)
   A multi-label classifier model that uses a fully-connected network.
-- [struct FullyConnectedNetworkConfiguration](fullyconnectednetworkconfiguration.md)
+- [struct FullyConnectedNetworkConfiguration](./fullyconnectednetworkconfiguration.md)
   A fully connected network configuration.
-- [struct TreeClassifierModel](treeclassifiermodel.md)
+- [struct TreeClassifierModel](./treeclassifiermodel.md)
   A trained tree classifier model.
-- [struct TimeSeriesClassifier](timeseriesclassifier.md)
-- [struct TimeSeriesClassifierConfiguration](timeseriesclassifierconfiguration.md)
+- [struct TimeSeriesClassifier](./timeseriesclassifier.md)
+- [struct TimeSeriesClassifierConfiguration](./timeseriesclassifierconfiguration.md)
   The configuration for a time-series classifier.
 
 

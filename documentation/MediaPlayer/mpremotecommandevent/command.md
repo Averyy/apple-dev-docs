@@ -1,7 +1,8 @@
 # command
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command that sent the event.
 
@@ -20,9 +21,14 @@ The command that sent the event.
 var command: MPRemoteCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPRemoteCommand * command;
+```
+
 ## See Also
 
-- [var timestamp: TimeInterval](mpremotecommandevent/timestamp.md)
+### Retrieving command information
+- [var timestamp: TimeInterval](./timestamp.md)
   The time the event occurred.
 
 

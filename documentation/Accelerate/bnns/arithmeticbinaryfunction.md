@@ -1,7 +1,8 @@
 # BNNS.ArithmeticBinaryFunction
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe binary arithmetic functions.
 
@@ -11,8 +12,10 @@ Constants that describe binary arithmetic functions.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,35 +26,35 @@ enum ArithmeticBinaryFunction
 ## Topics
 
 ### Binary Arithmetic Functions
-- [BNNS.ArithmeticBinaryFunction.add](bnns/arithmeticbinaryfunction/add.md)
+- [BNNS.ArithmeticBinaryFunction.add](./arithmeticbinaryfunction/add.md)
   An operation that calculates the element-wise sum of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.subtract](bnns/arithmeticbinaryfunction/subtract.md)
+- [BNNS.ArithmeticBinaryFunction.subtract](./arithmeticbinaryfunction/subtract.md)
   An operation that calculates the element-wise difference of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.divide](bnns/arithmeticbinaryfunction/divide.md)
+- [BNNS.ArithmeticBinaryFunction.divide](./arithmeticbinaryfunction/divide.md)
   An operation that calculates the element-wise division of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.divideNoNaN](bnns/arithmeticbinaryfunction/dividenonan.md)
+- [BNNS.ArithmeticBinaryFunction.divideNoNaN](./arithmeticbinaryfunction/dividenonan.md)
   An operation that calculates the element-wise division of its two inputs and returns zero if the second input is zero.
-- [BNNS.ArithmeticBinaryFunction.multiply](bnns/arithmeticbinaryfunction/multiply.md)
+- [BNNS.ArithmeticBinaryFunction.multiply](./arithmeticbinaryfunction/multiply.md)
   An operation that calculates the element-wise product of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.multiplyNoNaN](bnns/arithmeticbinaryfunction/multiplynonan.md)
+- [BNNS.ArithmeticBinaryFunction.multiplyNoNaN](./arithmeticbinaryfunction/multiplynonan.md)
   An operation that calculates the element-wise product of its two inputs and returns zero if the second input is zero, even if the first input is NaN or infinity.
-- [BNNS.ArithmeticBinaryFunction.pow](bnns/arithmeticbinaryfunction/pow.md)
+- [BNNS.ArithmeticBinaryFunction.pow](./arithmeticbinaryfunction/pow.md)
   An operation that calculates the element-wise first input raised to the power of its second input.
-- [BNNS.ArithmeticBinaryFunction.max](bnns/arithmeticbinaryfunction/max.md)
+- [BNNS.ArithmeticBinaryFunction.max](./arithmeticbinaryfunction/max.md)
   An operation that calculates the element-wise maximum of its two inputs.
-- [BNNS.ArithmeticBinaryFunction.min](bnns/arithmeticbinaryfunction/min.md)
+- [BNNS.ArithmeticBinaryFunction.min](./arithmeticbinaryfunction/min.md)
   An operation that calculates the element-wise minimum of its two inputs.
 ### Enumeration Cases
-- [BNNS.ArithmeticBinaryFunction.flooringDivide](bnns/arithmeticbinaryfunction/flooringdivide.md)
-- [BNNS.ArithmeticBinaryFunction.truncatingDivide](bnns/arithmeticbinaryfunction/truncatingdivide.md)
-- [BNNS.ArithmeticBinaryFunction.truncatingRemainder](bnns/arithmeticbinaryfunction/truncatingremainder.md)
+- [BNNS.ArithmeticBinaryFunction.flooringDivide](./arithmeticbinaryfunction/flooringdivide.md)
+- [BNNS.ArithmeticBinaryFunction.truncatingDivide](./arithmeticbinaryfunction/truncatingdivide.md)
+- [BNNS.ArithmeticBinaryFunction.truncatingRemainder](./arithmeticbinaryfunction/truncatingremainder.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

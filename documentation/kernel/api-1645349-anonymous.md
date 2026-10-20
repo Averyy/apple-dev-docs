@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWIsochChannelChannelNotAvailable](1645349-anonymous/kfwisochchannelchannelnotavailable.md)
-- [kFWIsochChannelNotEnoughBandwidth](1645349-anonymous/kfwisochchannelnotenoughbandwidth.md)
-- [kFWIsochChannelUnknownCondition](1645349-anonymous/kfwisochchannelunknowncondition.md)
+- [kFWIsochChannelChannelNotAvailable](./api-1645349-anonymous/kfwisochchannelchannelnotavailable.md)
+- [kFWIsochChannelNotEnoughBandwidth](./api-1645349-anonymous/kfwisochchannelnotenoughbandwidth.md)
+- [kFWIsochChannelUnknownCondition](./api-1645349-anonymous/kfwisochchannelunknowncondition.md)
 
 
 ---

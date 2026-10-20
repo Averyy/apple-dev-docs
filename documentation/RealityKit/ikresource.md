@@ -1,7 +1,8 @@
 # IKResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
 
@@ -21,41 +22,42 @@ class IKResource
 
 #### Overview
 
-Use this resource with an [`IKComponent`](ikcomponent.md).
+Use this resource with an [`IKComponent`](./ikcomponent.md).
 
 ## Topics
 
 ### Initializers
-- [convenience init(rig: IKRig) throws](ikresource/init(rig:).md)
+- [convenience init(rig: IKRig) throws](./ikresource/init%28rig%29.md)
   Creates a new resource instance for a single solver using the given rig and an automatic solver identifier.
 ### Instance Properties
-- [var solverDefinitions: [IKSolverDefinition]](ikresource/solverdefinitions.md)
+- [var solverDefinitions: [IKSolverDefinition]](./ikresource/solverdefinitions.md)
   Getter for the deserialized resource contents as a collection of solver definitions.
 
 ## Relationships
 
 ### Conforms To
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IKComponent](ikcomponent.md)
+### Inverse kinematics components
+- [struct IKComponent](./ikcomponent.md)
   A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
-- [IKComponent.Joint](ikcomponent/joint.md)
+- [IKComponent.Joint](./ikcomponent/joint.md)
   The update stage object that lets you read and update the current settings of a single joint in an IK solver.
-- [IKComponent.JointCollection](ikcomponent/jointcollection.md)
+- [IKComponent.JointCollection](./ikcomponent/jointcollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Solver](ikcomponent/solver.md)
+- [IKComponent.Solver](./ikcomponent/solver.md)
   The update stage object that lets you read and update the current settings of a single solver instance.
-- [IKComponent.SolverCollection](ikcomponent/solvercollection.md)
+- [IKComponent.SolverCollection](./ikcomponent/solvercollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Constraint](ikcomponent/constraint.md)
+- [IKComponent.Constraint](./ikcomponent/constraint.md)
   The update stage object that lets you read and update the current settings of a single constraint in an IK solver.
-- [IKComponent.ConstraintCollection](ikcomponent/constraintcollection.md)
+- [IKComponent.ConstraintCollection](./ikcomponent/constraintcollection.md)
   Ordered dictionary like container with fixed size.
-- [struct IKSolverDefinition](iksolverdefinition.md)
+- [struct IKSolverDefinition](./iksolverdefinition.md)
   A container describing a solver instance.
 
 

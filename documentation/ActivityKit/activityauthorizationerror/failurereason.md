@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the error that occurred.
 
@@ -17,7 +18,8 @@ var failureReason: String? { get }
 
 ## See Also
 
-- [var recoverySuggestion: String?](activityauthorizationerror/recoverysuggestion.md)
+### Getting error information
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A localized message that describes how to recover from the error.
 
 

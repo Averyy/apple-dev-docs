@@ -1,7 +1,8 @@
 # issuerIdentifier
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that represents the card’s issuer.
 
@@ -16,6 +17,10 @@ An identifier that represents the card’s issuer.
 
 ```swift
 var issuerIdentifier: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * issuerIdentifier;
 ```
 
 

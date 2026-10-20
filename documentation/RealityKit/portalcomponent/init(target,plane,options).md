@@ -1,7 +1,8 @@
 # init(target:plane:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a portal component with a target entity, a single planar definition, and portal options.
 
@@ -21,9 +22,9 @@ init(target: Entity, plane: PortalComponent.Plane, options: PortalComponent.Opti
 
 #### Discussion
 
-Use this initializer to toggle [`clippingMode`](portalcomponent/clippingmode-swift.property.md) and [`crossingMode`](portalcomponent/crossingmode-swift.property.md) with the same [`PortalComponent.Plane`](portalcomponent/plane.md).
+Use this initializer to toggle [`clippingMode`](./clippingmode-swift.property.md) and [`crossingMode`](./crossingmode-swift.property.md) with the same [`PortalComponent.Plane`](./plane.md).
 
-For new code, prefer [`init(target:clippingMode:crossingMode:)`](portalcomponent/init(target:clippingmode:crossingmode:).md), which lets you configure clipping and crossing independently and supports [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md) and [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md) for box-shaped boundaries.
+For new code, prefer [`init(target:clippingMode:crossingMode:)`](./init%28target,clippingmode,crossingmode%29.md), which lets you configure clipping and crossing independently and supports [`PortalComponent.ClippingMode.volume(_:)`](./clippingmode-swift.enum/volume%28_%29.md) and [`PortalComponent.CrossingMode.volume(_:)`](./crossingmode-swift.enum/volume%28_%29.md) for box-shaped boundaries.
 
 ## Parameters
 

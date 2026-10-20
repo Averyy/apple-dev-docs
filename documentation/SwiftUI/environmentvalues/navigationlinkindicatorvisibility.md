@@ -1,7 +1,8 @@
 # navigationLinkIndicatorVisibility
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that says whether a built-in navigation link would show a disclosure indicator in the current context.
 
@@ -23,7 +24,7 @@ var navigationLinkIndicatorVisibility: Visibility { get }
 
 #### Discussion
 
-You can set this value with [`navigationLinkIndicatorVisibility(_:)`](view/navigationlinkindicatorvisibility(_:).md).
+You can set this value with [`navigationLinkIndicatorVisibility(_:)`](../view/navigationlinkindicatorvisibility%28_%29.md).
 
 
 ---

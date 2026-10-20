@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,18 +18,18 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWTCodeCycleStart](1642792-anonymous/kfwtcodecyclestart.md)
-- [kFWTCodeIsochronousBlock](1642792-anonymous/kfwtcodeisochronousblock.md)
-- [kFWTCodeLock](1642792-anonymous/kfwtcodelock.md)
-- [kFWTCodeLockResponse](1642792-anonymous/kfwtcodelockresponse.md)
-- [kFWTCodePHYPacket](1642792-anonymous/kfwtcodephypacket.md)
-- [kFWTCodeReadBlock](1642792-anonymous/kfwtcodereadblock.md)
-- [kFWTCodeReadBlockResponse](1642792-anonymous/kfwtcodereadblockresponse.md)
-- [kFWTCodeReadQuadlet](1642792-anonymous/kfwtcodereadquadlet.md)
-- [kFWTCodeReadQuadletResponse](1642792-anonymous/kfwtcodereadquadletresponse.md)
-- [kFWTCodeWriteBlock](1642792-anonymous/kfwtcodewriteblock.md)
-- [kFWTCodeWriteQuadlet](1642792-anonymous/kfwtcodewritequadlet.md)
-- [kFWTCodeWriteResponse](1642792-anonymous/kfwtcodewriteresponse.md)
+- [kFWTCodeCycleStart](./api-1642792-anonymous/kfwtcodecyclestart.md)
+- [kFWTCodeIsochronousBlock](./api-1642792-anonymous/kfwtcodeisochronousblock.md)
+- [kFWTCodeLock](./api-1642792-anonymous/kfwtcodelock.md)
+- [kFWTCodeLockResponse](./api-1642792-anonymous/kfwtcodelockresponse.md)
+- [kFWTCodePHYPacket](./api-1642792-anonymous/kfwtcodephypacket.md)
+- [kFWTCodeReadBlock](./api-1642792-anonymous/kfwtcodereadblock.md)
+- [kFWTCodeReadBlockResponse](./api-1642792-anonymous/kfwtcodereadblockresponse.md)
+- [kFWTCodeReadQuadlet](./api-1642792-anonymous/kfwtcodereadquadlet.md)
+- [kFWTCodeReadQuadletResponse](./api-1642792-anonymous/kfwtcodereadquadletresponse.md)
+- [kFWTCodeWriteBlock](./api-1642792-anonymous/kfwtcodewriteblock.md)
+- [kFWTCodeWriteQuadlet](./api-1642792-anonymous/kfwtcodewritequadlet.md)
+- [kFWTCodeWriteResponse](./api-1642792-anonymous/kfwtcodewriteresponse.md)
 
 
 ---

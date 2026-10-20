@@ -1,7 +1,8 @@
 # CMFormatDescriptionEqual(_:otherFormatDescription:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two format descriptions are equal.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two format descriptions are equal
 func CMFormatDescriptionEqual(_ formatDescription: CMFormatDescription?, otherFormatDescription: CMFormatDescription?) -> Bool
 ```
 
+```c
+extern Boolean CMFormatDescriptionEqual(CMFormatDescriptionRef formatDescription, CMFormatDescriptionRef otherFormatDescription);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two descriptions are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the two descriptions are equal; otherwise, [`false`](../Swift/false.md).
 
 #### Discussion
 
@@ -35,7 +40,8 @@ This calls `CFEqual` on the provided `CMFormatDescription` objects. In contrast 
 
 ## See Also
 
-- [func CMFormatDescriptionEqualIgnoringExtensionKeys(CMFormatDescription?, otherFormatDescription: CMFormatDescription?, extensionKeysToIgnore: CFTypeRef?, sampleDescriptionExtensionAtomKeysToIgnore: CFTypeRef?) -> Bool](cmformatdescriptionequalignoringextensionkeys(_:otherformatdescription:extensionkeystoignore:sampledescriptionextensionatomkeystoignore:).md)
+### Comparing Format Descriptions
+- [func CMFormatDescriptionEqualIgnoringExtensionKeys(CMFormatDescription?, otherFormatDescription: CMFormatDescription?, extensionKeysToIgnore: CFTypeRef?, sampleDescriptionExtensionAtomKeysToIgnore: CFTypeRef?) -> Bool](./cmformatdescriptionequalignoringextensionkeys%28_,otherformatdescription,extensionkeystoignore,sampledescriptionextensionatomkeystoignore%29.md)
   Returns a Boolean value that indicates whether two format descriptions are equal, ignoring differences in the extension keys you specify.
 
 

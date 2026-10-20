@@ -1,7 +1,8 @@
 # MTLCommandEncoderErrorState.pending
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error state that indicates the GPU didn’t execute the commands.
 
@@ -19,15 +20,20 @@ An error state that indicates the GPU didn’t execute the commands.
 case pending
 ```
 
+```c
+MTLCommandEncoderErrorStatePending
+```
+
 ## See Also
 
-- [MTLCommandEncoderErrorState.completed](mtlcommandencodererrorstate/completed.md)
+### Getting the error state
+- [MTLCommandEncoderErrorState.completed](./completed.md)
   A state that indicates the GPU successfully executed the commands without any errors.
-- [MTLCommandEncoderErrorState.affected](mtlcommandencodererrorstate/affected.md)
+- [MTLCommandEncoderErrorState.affected](./affected.md)
   An error state that indicates the GPU failed to fully execute the commands because of an error.
-- [MTLCommandEncoderErrorState.faulted](mtlcommandencodererrorstate/faulted.md)
+- [MTLCommandEncoderErrorState.faulted](./faulted.md)
   An error state that indicates the commands in the command buffer are the cause of an error.
-- [MTLCommandEncoderErrorState.unknown](mtlcommandencodererrorstate/unknown.md)
+- [MTLCommandEncoderErrorState.unknown](./unknown.md)
   An error state that indicates the command buffer doesn’t know the state of its commands on the GPU.
 
 

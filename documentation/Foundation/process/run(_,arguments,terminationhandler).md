@@ -1,7 +1,8 @@
 # run(_:arguments:terminationHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and runs a task with a specified executable and arguments.
 
@@ -12,6 +13,10 @@ Creates and runs a task with a specified executable and arguments.
 
 ```swift
 class func run(_ url: URL, arguments: [String], terminationHandler: (@Sendable (Process) -> Void)? = nil) throws -> Process
+```
+
+```objc
++ (NSTask *) launchedTaskWithExecutableURL:(NSURL *) url arguments:(NSArray<NSString *> *) arguments error:(NSError **) error terminationHandler:(void (^)(NSTask *)) terminationHandler;
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ An initialized `NSTask` object with the environment of the current process.
 
 ## See Also
 
-- [init()](process/init.md)
+### Creating and initializing a process
+- [init()](./init%28%29.md)
   Returns an initialized process object with the environment of the current process.
 
 

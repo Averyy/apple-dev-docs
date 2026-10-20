@@ -1,7 +1,8 @@
 # CVImageChromaField.SampleLocation.topLeft
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Chroma sample is co-sited with the top-left luma sample.
 

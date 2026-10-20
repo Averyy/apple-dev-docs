@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance of the file provider for the specified domain.
@@ -19,13 +20,18 @@ Creates an instance of the file provider for the specified domain.
 init(domain: NSFileProviderDomain)
 ```
 
+```objc
+- (instancetype) initWithDomain:(NSFileProviderDomain *) domain;
+```
+
 ## Parameters
 
 - `domain`: The domain for the file provider.
 
 ## See Also
 
-- [func invalidate()](nsfileproviderreplicatedextension/invalidate.md)
+### Creating and Removing File Providers
+- [func invalidate()](./invalidate%28%29.md)
   Tells the file provider to perform any necessary cleanup so that the system can deallocate it.
 
 

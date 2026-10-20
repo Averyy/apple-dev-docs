@@ -1,7 +1,8 @@
 # statusForLegacyPlist(at:)
 
 **Framework**: Service Management  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Check the authorization status of an earlier OS version login item.
 
@@ -15,13 +16,17 @@ Check the authorization status of an earlier OS version login item.
 class func statusForLegacyPlist(at url: URL) -> SMAppService.Status
 ```
 
+```objc
++ (SMAppServiceStatus) statusForLegacyURL:(NSURL *) url;
+```
+
 ## Mentions
 
-- [Updating helper executables from earlier versions of macOS](updating-helper-executables-from-earlier-versions-of-macos.md)
+- [Updating helper executables from earlier versions of macOS](../updating-helper-executables-from-earlier-versions-of-macos.md)
 
 #### Return Value
 
-One of the [`SMAppService.Status`](smappservice/status-swift.enum.md) constants that indicate the current authorization status.
+One of the [`SMAppService.Status`](./status-swift.enum.md) constants that indicate the current authorization status.
 
 ## Parameters
 

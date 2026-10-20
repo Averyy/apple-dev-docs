@@ -1,7 +1,8 @@
 # litersPer100Kilometers
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The liters per 100 kilometers unit of fuel efficiency.
 
@@ -21,11 +22,16 @@ The liters per 100 kilometers unit of fuel efficiency.
 class var litersPer100Kilometers: UnitFuelEfficiency { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitFuelEfficiency * litersPer100Kilometers;
+```
+
 ## See Also
 
-- [class var milesPerImperialGallon: UnitFuelEfficiency](unitfuelefficiency/milesperimperialgallon.md)
+### Accessing Predefined Units
+- [class var milesPerImperialGallon: UnitFuelEfficiency](./milesperimperialgallon.md)
   The miles per imperial gallon unit of fuel efficiency.
-- [class var milesPerGallon: UnitFuelEfficiency](unitfuelefficiency/milespergallon.md)
+- [class var milesPerGallon: UnitFuelEfficiency](./milespergallon.md)
   The miles per gallon unit of fuel efficiency.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFramebufferDisableAltivecAccess](1645106-anonymous/kframebufferdisablealtivecaccess.md)
-- [kFramebufferSupportsCopybackCache](1645106-anonymous/kframebuffersupportscopybackcache.md)
-- [kFramebufferSupportsGammaCorrection](1645106-anonymous/kframebuffersupportsgammacorrection.md)
-- [kFramebufferSupportsWritethruCache](1645106-anonymous/kframebuffersupportswritethrucache.md)
+- [kFramebufferDisableAltivecAccess](./api-1645106-anonymous/kframebufferdisablealtivecaccess.md)
+- [kFramebufferSupportsCopybackCache](./api-1645106-anonymous/kframebuffersupportscopybackcache.md)
+- [kFramebufferSupportsGammaCorrection](./api-1645106-anonymous/kframebuffersupportsgammacorrection.md)
+- [kFramebufferSupportsWritethruCache](./api-1645106-anonymous/kframebuffersupportswritethrucache.md)
 
 
 ---

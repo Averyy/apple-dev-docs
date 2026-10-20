@@ -1,7 +1,8 @@
 # sharedInstance
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the shared call directory manager instance for the app.
 
@@ -15,6 +16,10 @@ Returns the shared call directory manager instance for the app.
 
 ```swift
 class var sharedInstance: CXCallDirectoryManager { get }
+```
+
+```objc
+@property (class, readonly) CXCallDirectoryManager * sharedInstance;
 ```
 
 

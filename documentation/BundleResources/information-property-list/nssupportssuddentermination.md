@@ -1,22 +1,25 @@
 # NSSupportsSuddenTermination
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the system may terminate the app to log out or shut down more quickly.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSSupportsSuddenTermination` (Application can be killed immediately when user is shutting down or logging out)
+- **Type**: boolean
 
 ## See Also
 
-- [LSGetAppDiedEvents](information-property-list/lsgetappdiedevents.md)
+### Termination
+- [LSGetAppDiedEvents](./lsgetappdiedevents.md)
   A Boolean value indicating whether the app is notified when a child process dies.
-- [UIApplicationExitsOnSuspend](information-property-list/uiapplicationexitsonsuspend.md)
+- [UIApplicationExitsOnSuspend](./uiapplicationexitsonsuspend.md)
   A Boolean value indicating whether the app terminates, rather than moves to the background, when the app quits.
 
 

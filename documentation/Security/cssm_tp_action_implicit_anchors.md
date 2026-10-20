@@ -1,7 +1,8 @@
 # CSSM_TP_ACTION_IMPLICIT_ANCHORS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_TP_ACTION_IMPLICIT_ANCHORS: Int { get }
+```
+
+```c
+CSSM_TP_ACTION_IMPLICIT_ANCHORS
 ```
 
 

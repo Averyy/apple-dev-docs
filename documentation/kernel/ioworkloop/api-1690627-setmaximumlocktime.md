@@ -1,14 +1,15 @@
 # setMaximumLockTime
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 void setMaximumLockTime(uint64_t interval, uint32_t options);
 ```
 

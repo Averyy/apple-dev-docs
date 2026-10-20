@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Wi-Fi network to share with a connected accessory.
 
@@ -19,55 +20,56 @@ struct Network
 ## Topics
 
 ### Identifying a network
-- [var id: WINetworkSharingProvider.Network.ID](winetworksharingprovider/network/id-swift.property.md)
+- [var id: WINetworkSharingProvider.Network.ID](./network/id-swift.property.md)
   A stable identifier that uniquely identifies this network.
-- [WINetworkSharingProvider.Network.ID](winetworksharingprovider/network/id-swift.struct.md)
+- [WINetworkSharingProvider.Network.ID](./network/id-swift.struct.md)
   An opaque identifier for a given network.
 ### Getting the network SSID
-- [let ssid: WISSID](winetworksharingprovider/network/ssid.md)
+- [let ssid: WISSID](./network/ssid.md)
   The Service Set Identifier (SSID) of the network, also known as the network name.
-- [let isSSIDBroadcast: Bool](winetworksharingprovider/network/isssidbroadcast.md)
+- [let isSSIDBroadcast: Bool](./network/isssidbroadcast.md)
   A Boolean value indicating whether the access point broadcasts the SSID.
 ### Getting the network credentials
-- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](winetworksharingprovider/network/securitypolicy-swift.property.md)
+- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](./network/securitypolicy-swift.property.md)
   The set of security types allowed for connecting to this network.
-- [WINetworkSharingProvider.Network.SecurityPolicy](winetworksharingprovider/network/securitypolicy-swift.enum.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy](./network/securitypolicy-swift.enum.md)
   The security policies allowed for connecting to a Wi-Fi network.
-- [let credentials: WINetworkSharingProvider.Network.Credentials](winetworksharingprovider/network/credentials-swift.property.md)
+- [let credentials: WINetworkSharingProvider.Network.Credentials](./network/credentials-swift.property.md)
   The credentials the accessory needs to connect to this network.
-- [WINetworkSharingProvider.Network.Credentials](winetworksharingprovider/network/credentials-swift.enum.md)
+- [WINetworkSharingProvider.Network.Credentials](./network/credentials-swift.enum.md)
   Credentials for authenticating to a Wi-Fi network.
-- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](winetworksharingprovider/network/captiveportallogin-swift.property.md)
+- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](./network/captiveportallogin-swift.property.md)
   The captive portal login information for the network.
-- [WINetworkSharingProvider.Network.CaptivePortalLogin](winetworksharingprovider/network/captiveportallogin-swift.struct.md)
+- [WINetworkSharingProvider.Network.CaptivePortalLogin](./network/captiveportallogin-swift.struct.md)
   Captive portal login information for a Wi-Fi network.
 ### Getting the date
-- [let lastModified: Date](winetworksharingprovider/network/lastmodified.md)
+- [let lastModified: Date](./network/lastmodified.md)
   The date when this network was last modified.
-- [let firstShared: Date](winetworksharingprovider/network/firstshared.md)
+- [let firstShared: Date](./network/firstshared.md)
   The date when this network was first shared to the accessory.
 ### Getting a network description
-- [var description: String](winetworksharingprovider/network/description.md)
+- [var description: String](./network/description.md)
   A string description of the network, for debugging purposes.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
+### Getting network updates
 - [func networkEvents(matching: Predicate<WINetworkSharingProvider.Network>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.NetworkEvent, any Error>
-](winetworksharingprovider/networkevents(matching:).md)
+](./networkevents%28matching%29.md)
   Returns an async sequence of network events, containing current shared networks and future updates.
-- [WINetworkSharingProvider.NetworkEvent](winetworksharingprovider/networkevent.md)
+- [WINetworkSharingProvider.NetworkEvent](./networkevent.md)
   An event that occurred, indicating an update to the available shared networks.
 
 

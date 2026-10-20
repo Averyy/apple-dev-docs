@@ -1,7 +1,8 @@
 # Flags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer.
 
@@ -11,13 +12,14 @@ Currently always 0.
 
 ## See Also
 
-- [Size](component_detect_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this component detect atom.
-- [Type](component_detect_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
-- [Component description](component_detect_atom/component_description.md)
+- [Component description](./component_description.md)
   A component description record.
-- [Minimum version](component_detect_atom/minimum_version.md)
+- [Minimum version](./minimum_version.md)
   An unsigned 32-bit integer containing the minimum required version of the specified component.
 
 

@@ -1,7 +1,8 @@
 # firesOnce
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether push notifications should be triggered once. If `true`, push notifications are sent once. If `false`, they can be sent multiple times. The default value is `false`.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether push notifications should be triggered once. 
 
 ## Declaration
 
-```swift
+```
 attribute Boolean firesOnce;
 ```
 

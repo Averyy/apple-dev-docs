@@ -1,7 +1,8 @@
 # init(titleVariants:subtitleVariants:image:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dashboard button that displays a title, an optional subtitle, and an image.
 
@@ -14,6 +15,10 @@ Creates a dashboard button that displays a title, an optional subtitle, and an i
 
 ```swift
 init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handler: ((CPDashboardButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants image:(UIImage *) image handler:(void (^)(CPDashboardButton *barButton)) handler;
 ```
 
 #### Return Value

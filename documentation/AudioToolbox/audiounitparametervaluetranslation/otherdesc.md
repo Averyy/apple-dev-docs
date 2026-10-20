@@ -1,15 +1,20 @@
 # otherDesc
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var otherDesc: AudioUnitOtherPluginDesc
+```
+
+```c
+AudioUnitOtherPluginDesc otherDesc;
 ```
 
 

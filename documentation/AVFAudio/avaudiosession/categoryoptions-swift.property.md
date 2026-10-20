@@ -1,7 +1,8 @@
 # categoryOptions
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of options associated with the current audio session category.
 
@@ -19,19 +20,24 @@ The set of options associated with the current audio session category.
 var categoryOptions: AVAudioSession.CategoryOptions { get }
 ```
 
+```objc
+@property (readonly) AVAudioSessionCategoryOptions categoryOptions;
+```
+
 #### Discussion
 
-You use category options to tailor the behavior of the active audio session category. See [`AVAudioSession.CategoryOptions`](avaudiosession/categoryoptions-swift.struct.md) for the supported values.
+You use category options to tailor the behavior of the active audio session category. See [`AVAudioSession.CategoryOptions`](./categoryoptions-swift.struct.md) for the supported values.
 
 ## See Also
 
-- [var category: AVAudioSession.Category](avaudiosession/category-swift.property.md)
+### Inspecting the category configuration
+- [var category: AVAudioSession.Category](./category-swift.property.md)
   The current audio session category.
-- [var availableCategories: [AVAudioSession.Category]](avaudiosession/availablecategories.md)
+- [var availableCategories: [AVAudioSession.Category]](./availablecategories.md)
   The audio session categories available on the current device.
-- [AVAudioSession.Category](avaudiosession/category-swift.struct.md)
+- [AVAudioSession.Category](./category-swift.struct.md)
   Audio session category identifiers.
-- [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
+- [AVAudioSession.CategoryOptions](./categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
 
 

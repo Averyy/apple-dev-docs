@@ -1,14 +1,15 @@
 # cpuid_leaf7_features
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 uint64_t cpuid_leaf7_features;
 ```
 

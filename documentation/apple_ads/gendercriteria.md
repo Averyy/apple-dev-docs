@@ -1,53 +1,61 @@
 # GenderCriteria
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The defined targeted audience to include using the gender demographic.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object GenderCriteria
 ```
 
 ## Properties
 
-- `included` ([string]): The dimension to include targeting criteria values for [`Gender`](gender.md). To specify all genders, set this to `NULL`. ```json
-"gender": {
-      "included": [
-        "F",
-        "M"
-      ]
-    },
-```
+- `included` ([string]): The dimension to include targeting criteria values for [`Gender`](./gender.md). To specify all genders, set this to `NULL`.
+
+  ```json
+  "gender": {
+        "included": [
+          "F",
+          "M"
+        ]
+      },
+  ```
+
+  **Allowed Values**: `F`, `M`
 
 ## See Also
 
-- [object TargetingDimensions](targetingdimensions.md)
+### Audience Refinement
+- [object TargetingDimensions](./targetingdimensions.md)
   The optional criteria to use with ad groups to narrow the audience that views your ads.
-- [object AppCategoryCriteria](appcategorycriteria.md)
+- [object AppCategoryCriteria](./appcategorycriteria.md)
   The defined target audience by app category.
-- [object AppDownloaderCriteria](appdownloadercriteria.md)
+- [object AppDownloaderCriteria](./appdownloadercriteria.md)
   The defined targeted audience according to app downloads.
-- [object AdminAreaCriteria](adminareacriteria.md)
+- [object AdminAreaCriteria](./adminareacriteria.md)
   The defined targeted audience by administrative area.
-- [object CountryCriteria](countrycriteria.md)
+- [object CountryCriteria](./countrycriteria.md)
   The defined targeted audience by country or region.
-- [object LocalityCriteria](localitycriteria.md)
+- [object LocalityCriteria](./localitycriteria.md)
   The defined targeted audience by locality.
-- [object AgeCriteria](agecriteria.md)
+- [object AgeCriteria](./agecriteria.md)
   The defined targeted audience to include using the age demographic.
-- [object AgeRange](agerange.md)
+- [object AgeRange](./agerange.md)
   The defined target audience to include using the age-range demographic.
-- [object DaypartCriteria](daypartcriteria.md)
+- [object DaypartCriteria](./daypartcriteria.md)
   The defined targeted audience to include for a specific time of day.
-- [object DaypartDetail](daypartdetail.md)
+- [object DaypartDetail](./daypartdetail.md)
   The defined targeted audience to include by a specific time of day.
-- [object DeviceClassCriteria](deviceclasscriteria.md)
+- [object DeviceClassCriteria](./deviceclasscriteria.md)
   The defined targeted audience to include by device type.
 
 

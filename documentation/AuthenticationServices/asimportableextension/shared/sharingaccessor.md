@@ -1,7 +1,8 @@
 # ASImportableExtension.Shared.SharingAccessor
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -19,29 +20,29 @@ struct SharingAccessor
 ## Topics
 
 ### Initializers
-- [init(type: ASImportableExtension.Shared.SharingAccessor.AccessorType, accountID: Data, name: String, permissions: [ASImportableExtension.Shared.SharingAccessor.Permission])](asimportableextension/shared/sharingaccessor/init(type:accountid:name:permissions:).md)
+- [init(type: ASImportableExtension.Shared.SharingAccessor.AccessorType, accountID: Data, name: String, permissions: [ASImportableExtension.Shared.SharingAccessor.Permission])](./sharingaccessor/init%28type,accountid,name,permissions%29.md)
 ### Instance Properties
-- [var accountID: Data](asimportableextension/shared/sharingaccessor/accountid.md)
+- [var accountID: Data](./sharingaccessor/accountid.md)
   The ID of the account that has been granted access to this shared entity.
-- [var name: String](asimportableextension/shared/sharingaccessor/name.md)
+- [var name: String](./sharingaccessor/name.md)
   The name of the accessor’s account.
-- [var permissions: [ASImportableExtension.Shared.SharingAccessor.Permission]](asimportableextension/shared/sharingaccessor/permissions.md)
+- [var permissions: [ASImportableExtension.Shared.SharingAccessor.Permission]](./sharingaccessor/permissions.md)
   The permissions given to this accessor.
-- [var type: ASImportableExtension.Shared.SharingAccessor.AccessorType](asimportableextension/shared/sharingaccessor/type.md)
+- [var type: ASImportableExtension.Shared.SharingAccessor.AccessorType](./sharingaccessor/type.md)
   The type of accessor.
 ### Enumerations
-- [ASImportableExtension.Shared.SharingAccessor.AccessorType](asimportableextension/shared/sharingaccessor/accessortype.md)
-- [ASImportableExtension.Shared.SharingAccessor.Permission](asimportableextension/shared/sharingaccessor/permission.md)
+- [ASImportableExtension.Shared.SharingAccessor.AccessorType](./sharingaccessor/accessortype.md)
+- [ASImportableExtension.Shared.SharingAccessor.Permission](./sharingaccessor/permission.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

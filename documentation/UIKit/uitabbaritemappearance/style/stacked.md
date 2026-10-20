@@ -1,16 +1,17 @@
 # UITabBarItemAppearance.Style.stacked
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A vertically stacked icon and title.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ A vertically stacked icon and title.
 case stacked
 ```
 
+```c
+UITabBarItemAppearanceStyleStacked
+```
+
 ## See Also
 
-- [UITabBarItemAppearance.Style.inline](uitabbaritemappearance/style/inline.md)
+### Item layout
+- [UITabBarItemAppearance.Style.inline](./inline.md)
   A side-by-side layout of the icon and title, suitable for use in regular-width environments.
-- [UITabBarItemAppearance.Style.compactInline](uitabbaritemappearance/style/compactinline.md)
+- [UITabBarItemAppearance.Style.compactInline](./compactinline.md)
   A side-by-side layout of the icon and title, suitable for use in compact-width environments.
 
 

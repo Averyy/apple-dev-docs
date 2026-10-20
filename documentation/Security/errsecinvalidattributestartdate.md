@@ -1,7 +1,8 @@
 # errSecInvalidAttributeStartDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A start date attribute is not valid.
 
@@ -18,6 +19,10 @@ A start date attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeStartDate: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeStartDate
 ```
 
 

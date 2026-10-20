@@ -1,9 +1,10 @@
 # LowLevelDeformationContext
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-An object that manages shared resources for [`LowLevelDeformation`](lowleveldeformation.md) instances.
+An object that manages shared resources for [`LowLevelDeformation`](./lowleveldeformation.md) instances.
 
 **Availability**:
 - iOS 27.0+
@@ -20,21 +21,22 @@ final class LowLevelDeformationContext
 ## Topics
 
 ### Creating deformation pipelines
-- [func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: LowLevelDeformation.Descriptor) throws -> LowLevelDeformation](lowleveldeformationcontext/makedeformation(pipeline:descriptor:).md)
+- [func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: LowLevelDeformation.Descriptor) throws -> LowLevelDeformation](./lowleveldeformationcontext/makedeformation%28pipeline,descriptor%29.md)
   Creates a deformation bound to a compiled pipeline.
 ### Accessing the device
-- [let device: any MTLDevice](lowleveldeformationcontext/device.md)
+- [let device: any MTLDevice](./lowleveldeformationcontext/device.md)
   The Metal device this context targets.
 ### Initializers
-- [init(any MTLDevice) throws](lowleveldeformationcontext/init(_:).md)
+- [init(any MTLDevice) throws](./lowleveldeformationcontext/init%28_%29.md)
   Creates a context targeting the specified Metal device.
 ### Instance Methods
-- [func makePipeline(_:)](lowleveldeformationcontext/makepipeline(_:).md)
+- [func makePipeline(_:)](./lowleveldeformationcontext/makepipeline%28_%29.md)
   Creates a compute pipeline synchronously.
 
 ## See Also
 
-- [class LowLevelDeformation](lowleveldeformation.md)
+### Low-level deformation
+- [class LowLevelDeformation](./lowleveldeformation.md)
   An object that encodes blend-shape, skinning, and renormalization passes into a Metal compute command encoder.
 
 

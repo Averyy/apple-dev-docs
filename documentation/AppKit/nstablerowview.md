@@ -1,7 +1,8 @@
 # NSTableRowView
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The view shown for a row in a table view.
 
@@ -14,91 +15,96 @@ The view shown for a row in a table view.
 class NSTableRowView
 ```
 
+```objc
+@interface NSTableRowView : NSView
+```
+
 #### Overview
 
-[`NSTableRowView`](nstablerowview.md) is responsible for displaying attributes associated with the row, including the selection highlight, and group row look.
+[`NSTableRowView`](./nstablerowview.md) is responsible for displaying attributes associated with the row, including the selection highlight, and group row look.
 
 ## Topics
 
 ### Display Style
-- [var isEmphasized: Bool](nstablerowview/isemphasized.md)
+- [var isEmphasized: Bool](./nstablerowview/isemphasized.md)
   Determines whether the row will draw with the alternate or secondary color (unless overridden).
-- [var interiorBackgroundStyle: NSView.BackgroundStyle](nstablerowview/interiorbackgroundstyle.md)
+- [var interiorBackgroundStyle: NSView.BackgroundStyle](./nstablerowview/interiorbackgroundstyle.md)
   Specifies how the subviews should draw.
-- [var isFloating: Bool](nstablerowview/isfloating.md)
+- [var isFloating: Bool](./nstablerowview/isfloating.md)
   Specifies whether the row is drawn using the floating style.
 ### Row Selection
-- [var isSelected: Bool](nstablerowview/isselected.md)
+- [var isSelected: Bool](./nstablerowview/isselected.md)
   Determines whether the row is selected.
-- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](nstablerowview/selectionhighlightstyle.md)
+- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](./nstablerowview/selectionhighlightstyle.md)
   Specifies the selection highlight style.
 ### Drag and Drop
-- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](nstablerowview/draggingdestinationfeedbackstyle.md)
+- [var draggingDestinationFeedbackStyle: NSTableView.DraggingDestinationFeedbackStyle](./nstablerowview/draggingdestinationfeedbackstyle.md)
   Specifies the dragging destination feedback style.
-- [var indentationForDropOperation: CGFloat](nstablerowview/indentationfordropoperation.md)
+- [var indentationForDropOperation: CGFloat](./nstablerowview/indentationfordropoperation.md)
   Defines the amount the drag target for a row should be indented.
-- [var isTargetForDropOperation: Bool](nstablerowview/istargetfordropoperation.md)
+- [var isTargetForDropOperation: Bool](./nstablerowview/istargetfordropoperation.md)
   Specifies whether this row will draw a drop indicator based on the current dragging feedback style.
 ### Row Grouping
-- [var isGroupRowStyle: Bool](nstablerowview/isgrouprowstyle.md)
+- [var isGroupRowStyle: Bool](./nstablerowview/isgrouprowstyle.md)
   Specifies whether this row view is a group row.
-- [var numberOfColumns: Int](nstablerowview/numberofcolumns.md)
+- [var numberOfColumns: Int](./nstablerowview/numberofcolumns.md)
   Returns the number of columns represented by views in the table row view.
 ### Overriding Row View Display Characteristics
-- [var backgroundColor: NSColor](nstablerowview/backgroundcolor.md)
+- [var backgroundColor: NSColor](./nstablerowview/backgroundcolor.md)
   The background color of the row.
-- [func drawBackground(in: NSRect)](nstablerowview/drawbackground(in:).md)
+- [func drawBackground(in: NSRect)](./nstablerowview/drawbackground%28in%29.md)
   Draws the background of the row in the rectangle.
-- [func drawDraggingDestinationFeedback(in: NSRect)](nstablerowview/drawdraggingdestinationfeedback(in:).md)
+- [func drawDraggingDestinationFeedback(in: NSRect)](./nstablerowview/drawdraggingdestinationfeedback%28in%29.md)
   Draws the row’s dragging destination feedback when the entire row is a drop target.
-- [func drawSelection(in: NSRect)](nstablerowview/drawselection(in:).md)
+- [func drawSelection(in: NSRect)](./nstablerowview/drawselection%28in%29.md)
   Draws the selected row.
-- [func drawSeparator(in: NSRect)](nstablerowview/drawseparator(in:).md)
+- [func drawSeparator(in: NSRect)](./nstablerowview/drawseparator%28in%29.md)
   Draws the horizontal separator between table rows.
 ### Accessing A Row Column View
-- [func view(atColumn: Int) -> Any?](nstablerowview/view(atcolumn:).md)
+- [func view(atColumn: Int) -> Any?](./nstablerowview/view%28atcolumn%29.md)
   Provides access to the given view at a particular column.
 ### Instance Properties
-- [var isNextRowSelected: Bool](nstablerowview/isnextrowselected.md)
-- [var isPreviousRowSelected: Bool](nstablerowview/ispreviousrowselected.md)
+- [var isNextRowSelected: Bool](./nstablerowview/isnextrowselected.md)
+- [var isPreviousRowSelected: Bool](./nstablerowview/ispreviousrowselected.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSView](nsview.md)
+- [NSView](./nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityGroup](nsaccessibilitygroup.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAccessibilityRow](nsaccessibilityrow.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityGroup](./nsaccessibilitygroup.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAccessibilityRow](./nsaccessibilityrow.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSTableHeaderView](nstableheaderview.md)
+### Rows and Columns
+- [class NSTableHeaderView](./nstableheaderview.md)
   An object that draws headers over a table view’s columns and handles mouse events in those headers.
-- [class NSTableHeaderCell](nstableheadercell.md)
+- [class NSTableHeaderCell](./nstableheadercell.md)
   An object that a table header view uses to draw the content of the column headers.
-- [class NSTableColumn](nstablecolumn.md)
+- [class NSTableColumn](./nstablecolumn.md)
   The display characteristics and identifier for a column in a table view.
-- [class NSTableViewRowAction](nstableviewrowaction.md)
+- [class NSTableViewRowAction](./nstableviewrowaction.md)
   A single action to present when the user swipes horizontally on a table row.
-- [NSTableColumn.ResizingOptions](nstablecolumn/resizingoptions.md)
+- [NSTableColumn.ResizingOptions](./nstablecolumn/resizingoptions.md)
 
 
 ---

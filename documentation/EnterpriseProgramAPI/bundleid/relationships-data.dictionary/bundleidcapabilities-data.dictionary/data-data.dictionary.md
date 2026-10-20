@@ -1,24 +1,26 @@
 # BundleId.Relationships.BundleIdCapabilities.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object BundleId.Relationships.BundleIdCapabilities.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `bundleIdCapabilities`
 
 ## See Also
 
-- [links](bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links.md)
+### Objects
+- [links](./links.md)
   The links to the related data and the relationship’s self-link.
 
 

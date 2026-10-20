@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceContentMetadata
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Swift-friendly structure representing media metadata.
 
@@ -23,36 +24,37 @@ This structure provides metadata information about media content including title
 ## Topics
 
 ### Structures
-- [AVPlaybackUserInterfaceContentMetadata.VideoProperties](avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct.md)
+- [AVPlaybackUserInterfaceContentMetadata.VideoProperties](./avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct.md)
   Properties specific to video content.
 ### Initializers
-- [init(videoProperties: AVPlaybackUserInterfaceContentMetadata.VideoProperties?, title: String?, subtitle: String?, artworkRepresentations: [AVPlaybackUserInterfaceContentArtwork])](avplaybackuserinterfacecontentmetadata-swift.struct/init(videoproperties:title:subtitle:artworkrepresentations:).md)
+- [init(videoProperties: AVPlaybackUserInterfaceContentMetadata.VideoProperties?, title: String?, subtitle: String?, artworkRepresentations: [AVPlaybackUserInterfaceContentArtwork])](./avplaybackuserinterfacecontentmetadata-swift.struct/init%28videoproperties,title,subtitle,artworkrepresentations%29.md)
   Creates a new metadata object.
 ### Instance Properties
-- [var artworkRepresentations: [AVPlaybackUserInterfaceContentArtwork]](avplaybackuserinterfacecontentmetadata-swift.struct/artworkrepresentations.md)
+- [var artworkRepresentations: [AVPlaybackUserInterfaceContentArtwork]](./avplaybackuserinterfacecontentmetadata-swift.struct/artworkrepresentations.md)
   Array of available artwork representations in various formats and sizes.
-- [var subtitle: String?](avplaybackuserinterfacecontentmetadata-swift.struct/subtitle.md)
+- [var subtitle: String?](./avplaybackuserinterfacecontentmetadata-swift.struct/subtitle.md)
   Secondary descriptive text such as artist name or episode description.
-- [var title: String?](avplaybackuserinterfacecontentmetadata-swift.struct/title.md)
+- [var title: String?](./avplaybackuserinterfacecontentmetadata-swift.struct/title.md)
   Primary title or name of the media content.
-- [var videoProperties: AVPlaybackUserInterfaceContentMetadata.VideoProperties?](avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.property.md)
+- [var videoProperties: AVPlaybackUserInterfaceContentMetadata.VideoProperties?](./avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.property.md)
   Properties describing the video content. `nil` if the content contains no video.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+### Content metadata
+- [protocol AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-814y4.md)
   Provides metadata information about media content including title, artwork, and content type.
-- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+- [class AVPlaybackUserInterfaceContentArtwork](./avplaybackuserinterfacecontentartwork.md)
   Base class representing artwork or cover art for media content.
-- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+- [class AVPlaybackUserInterfaceContentURLArtwork](./avplaybackuserinterfacecontenturlartwork.md)
   An artwork subclass that references artwork via a URL and content type.
 
 

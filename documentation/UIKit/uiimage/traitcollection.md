@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trait collection that describes the current variant of the image.
 
@@ -9,7 +10,7 @@ The trait collection that describes the current variant of the image.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,16 @@ The trait collection that describes the current variant of the image.
 var traitCollection: UITraitCollection { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UITraitCollection * traitCollection;
+```
+
 ## See Also
 
-- [var configuration: UIImage.Configuration?](uiimage/configuration-swift.property.md)
+### Getting the image configuration
+- [var configuration: UIImage.Configuration?](./configuration-swift.property.md)
   The configuration details for the image.
-- [var symbolConfiguration: UIImage.SymbolConfiguration?](uiimage/symbolconfiguration-swift.property.md)
+- [var symbolConfiguration: UIImage.SymbolConfiguration?](./symbolconfiguration-swift.property.md)
   The configuration details for a symbol image.
 
 

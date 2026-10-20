@@ -1,7 +1,8 @@
 # extrinsicMatrix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A matrix relating a camera’s position and orientation to a world or scene coordinate system.
 
@@ -19,11 +20,15 @@ A matrix relating a camera’s position and orientation to a world or scene coor
 var extrinsicMatrix: matrix_float4x3 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) matrix_float4x3 extrinsicMatrix;
+```
+
 #### Discussion
 
 The extrinsic matrix consists of a unitless 3 x 3 rotation matrix (`R`) on the left and a 3 x 1 column vector translation (`t`) on the right. The translation vector’s units are millimeters.
 
-![None](/images/com.apple.avfoundation/media-2902624@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-2902624@2x.png)
 
 The camera’s pose is expressed with respect to a reference camera (camera-to-world view). If the rotation matrix is an identity matrix, then this camera is the reference camera.
 
@@ -31,11 +36,12 @@ The camera’s pose is expressed with respect to a reference camera (camera-to-w
 
 ## See Also
 
-- [var intrinsicMatrix: matrix_float3x3](avcameracalibrationdata/intrinsicmatrix.md)
+### Mapping pixels to scene geometry
+- [var intrinsicMatrix: matrix_float3x3](./intrinsicmatrix.md)
   A matrix that relates a camera’s internal properties to an ideal pinhole-camera model.
-- [var intrinsicMatrixReferenceDimensions: CGSize](avcameracalibrationdata/intrinsicmatrixreferencedimensions.md)
+- [var intrinsicMatrixReferenceDimensions: CGSize](./intrinsicmatrixreferencedimensions.md)
   The image dimensions to which the camera’s intrinsic matrix values are relative.
-- [var pixelSize: Float](avcameracalibrationdata/pixelsize.md)
+- [var pixelSize: Float](./pixelsize.md)
   The size, in millimeters, of one image pixel.
 
 

@@ -1,7 +1,8 @@
 # bottomTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s in the bottom, trailing corner of a view.
 
@@ -22,13 +23,14 @@ static let bottomTrailing: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottomTrailing`](alignment/bottomtrailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottomTrailing`](../alignment/bottomtrailing.md) alignment. The trailing edge appears on the right in a left-to-right language environment and on the left in a right-to-left environment.
 
 ## See Also
 
-- [static let bottomLeading: UnitPoint](unitpoint/bottomleading.md)
+### Getting bottom points
+- [static let bottomLeading: UnitPoint](./bottomleading.md)
   A point that’s in the bottom, leading corner of a view.
-- [static let bottom: UnitPoint](unitpoint/bottom.md)
+- [static let bottom: UnitPoint](./bottom.md)
   A point that’s centered horizontally on the bottom edge of a view.
 
 

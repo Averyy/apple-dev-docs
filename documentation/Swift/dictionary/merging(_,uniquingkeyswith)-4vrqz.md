@@ -1,7 +1,8 @@
 # merging(_:uniquingKeysWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a dictionary by merging the given dictionary into this dictionary, using a combining closure to determine the value for duplicate keys.
 
@@ -19,6 +20,8 @@ Creates a dictionary by merging the given dictionary into this dictionary, using
 ```swift
 func merging<E>(_ other: [Key : Value], uniquingKeysWith combine: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value] where E : Error
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Return Value
 

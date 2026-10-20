@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the overlay responds to user interaction.
 
@@ -10,14 +11,14 @@ A Boolean value that determines whether the overlay responds to user interaction
 
 ## Declaration
 
-```swift
+```
 get enabled(): boolean;
 set enabled(value: boolean);
 ```
 
 ## Mentions
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
 #### Discussion
 
@@ -25,15 +26,16 @@ The default value is `true`.
 
 ## See Also
 
-- [data](overlay/data.md)
+### Setting overlay options
+- [data](./data.md)
   Custom data to associate with the overlay.
-- [visible](overlay/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether an overlay is visible.
-- [selected](overlay/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the user selects the overlay.
-- [style](overlay/style.md)
+- [style](./style.md)
   Style properties to apply to the overlay.
-- [map](overlay/map.md)
+- [map](./map.md)
   The map you add the overlay to.
 
 

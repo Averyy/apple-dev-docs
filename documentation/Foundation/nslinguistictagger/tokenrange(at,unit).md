@@ -1,23 +1,30 @@
 # tokenRange(at:unit:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of the linguistic unit containing the specified character index.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
-- watchOS 4.0+
+- iOS 11.0+ - Deprecated in 27.2
+- iPadOS 11.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.13+ - Deprecated in 27.2
+- tvOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 4.0+ - Deprecated in 27.2
+
+> **Deprecated**: All NSLinguisticTagger API should be replaced with NaturalLanguage.framework API
 
 ## Declaration
 
 ```swift
 func tokenRange(at charIndex: Int, unit: NSLinguisticTaggerUnit) -> NSRange
+```
+
+```objc
+- (NSRange) tokenRangeAtIndex:(NSUInteger) charIndex unit:(NSLinguisticTaggerUnit) unit;
 ```
 
 #### Return Value
@@ -27,11 +34,12 @@ The range of the substring for the linguistic unit.
 ## Parameters
 
 - `charIndex`: The character index to begin examination.
-- `unit`: The linguistic unit. For possible values, see [`NSLinguisticTaggerUnit`](nslinguistictaggerunit.md).
+- `unit`: The linguistic unit. For possible values, see [`NSLinguisticTaggerUnit`](../nslinguistictaggerunit.md).
 
 ## See Also
 
-- [func sentenceRange(for: NSRange) -> NSRange](nslinguistictagger/sentencerange(for:).md)
+### Determining the Range of a Unit Token
+- [func sentenceRange(for: NSRange) -> NSRange](./sentencerange%28for%29.md)
   Returns the range of a sentence containing the specified range.
 
 

@@ -1,7 +1,8 @@
 # kMTAudioProcessingTapCreationFlag_PreEffects
 
 **Framework**: Media Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Signifies that the processing tap is inserted before any effects.
 
@@ -19,9 +20,14 @@ Signifies that the processing tap is inserted before any effects.
 var kMTAudioProcessingTapCreationFlag_PreEffects: MTAudioProcessingTapCreationFlags { get }
 ```
 
+```c
+kMTAudioProcessingTapCreationFlag_PreEffects
+```
+
 ## See Also
 
-- [var kMTAudioProcessingTapCreationFlag_PostEffects: MTAudioProcessingTapCreationFlags](kmtaudioprocessingtapcreationflag_posteffects.md)
+### Flags
+- [var kMTAudioProcessingTapCreationFlag_PostEffects: MTAudioProcessingTapCreationFlags](./kmtaudioprocessingtapcreationflag_posteffects.md)
   Signifies that the processing tap is inserted before any effects.
 
 

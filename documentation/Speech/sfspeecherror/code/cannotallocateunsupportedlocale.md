@@ -1,7 +1,8 @@
 # cannotAllocateUnsupportedLocale
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The asset locale being requested is not supported by SpeechFramework.
 
@@ -21,13 +22,14 @@ static var cannotAllocateUnsupportedLocale: SFSpeechError.Code { get }
 
 ## See Also
 
-- [static var assetLocaleNotAllocated: SFSpeechError.Code](sfspeecherror/code/assetlocalenotallocated.md)
+### Asset errors
+- [static var assetLocaleNotAllocated: SFSpeechError.Code](./assetlocalenotallocated.md)
   The asset locale has not been allocated, but module requires it.
-- [static var noModel: SFSpeechError.Code](sfspeecherror/code/nomodel.md)
+- [static var noModel: SFSpeechError.Code](./nomodel.md)
   The selected locale/options does not have an appropriate model available or downloadable.
-- [SFSpeechError.Code.timeout](sfspeecherror/code/timeout.md)
+- [SFSpeechError.Code.timeout](./timeout.md)
   The operation timed out.
-- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](sfspeecherror/code/toomanyassetlocalesallocated.md)
+- [static var tooManyAssetLocalesAllocated: SFSpeechError.Code](./toomanyassetlocalesallocated.md)
   The application has allocated too many locales.
 
 

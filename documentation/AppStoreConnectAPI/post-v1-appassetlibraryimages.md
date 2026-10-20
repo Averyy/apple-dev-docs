@@ -1,7 +1,8 @@
 # Create an app asset library image
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create an app asset library image.
 
@@ -10,9 +11,9 @@ Create an app asset library image.
 
 ## Mentions
 
-- [App Store Connect API 4.5.1 release notes](app-store-connect-api-4-5-1-release-notes.md)
-- [Migrating to the App Asset Library](migrating-to-the-app-asset-library.md)
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
+- [App Store Connect API 4.5.1 release notes](./app-store-connect-api-4-5-1-release-notes.md)
+- [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Create an app asset library image.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages
 
 {
@@ -89,13 +90,27 @@ POST https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AppAssetLibraryImageCreateRequest`
+
 The request body you use to create an app asset library image.
+
+## Responses
+
+- `201` Created (`AppAssetLibraryImageResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Modify an app asset library image](patch-v1-appassetlibraryimages-_id_.md)
+### Creating, modifying, and deleting images
+- [Modify an app asset library image](./patch-v1-appassetlibraryimages-_id_.md)
   Update an app asset library image.
-- [Delete an app asset library image](delete-v1-appassetlibraryimages-_id_.md)
+- [Delete an app asset library image](./delete-v1-appassetlibraryimages-_id_.md)
   Delete an app asset library image.
 
 

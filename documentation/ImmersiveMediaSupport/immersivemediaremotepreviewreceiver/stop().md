@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops receiving remote immersive video frames.
 

@@ -1,7 +1,8 @@
 # CSSMERR_CSSM_INVALID_HANDLE_USAGE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_CSSM_INVALID_HANDLE_USAGE: Int { get }
+```
+
+```c
+CSSMERR_CSSM_INVALID_HANDLE_USAGE
 ```
 
 

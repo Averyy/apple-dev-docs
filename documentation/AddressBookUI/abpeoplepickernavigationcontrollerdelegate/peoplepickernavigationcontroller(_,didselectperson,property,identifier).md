@@ -1,7 +1,8 @@
 # peoplePickerNavigationController(_:didSelectPerson:property:identifier:)
 
 **Framework**: Address Book UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after a property has been selected by the user.
 
@@ -16,9 +17,13 @@ Called after a property has been selected by the user.
 optional func peoplePickerNavigationController(_ peoplePicker: ABPeoplePickerNavigationController, didSelectPerson person: ABRecord, property: ABPropertyID, identifier: ABMultiValueIdentifier)
 ```
 
+```objc
+- (void) peoplePickerNavigationController:(ABPeoplePickerNavigationController *) peoplePicker didSelectPerson:(ABRecordRef) person property:(ABPropertyID) property identifier:(ABMultiValueIdentifier) identifier;
+```
+
 #### Discussion
 
-This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](https://developer.apple.com/documentation/addressbook/abmultivaluegetindexforidentifier(_:_:)) function to get the corresponding index.
+This method is called with an identifier. If you need an index, use the [`ABMultiValueGetIndexForIdentifier(_:_:)`](../../AddressBook/abmultivaluegetindexforidentifier%28_,_%29.md) function to get the corresponding index.
 
 ## Parameters
 
@@ -29,13 +34,14 @@ This method is called with an identifier. If you need an index, use the [`ABMult
 
 ## See Also
 
-- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, shouldContinueAfterSelectingPerson: ABRecord) -> Bool](abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:shouldcontinueafterselectingperson:).md)
+### Responding to User Events
+- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, shouldContinueAfterSelectingPerson: ABRecord) -> Bool](./peoplepickernavigationcontroller%28_,shouldcontinueafterselectingperson%29.md)
   Sent when the user selects a contact.
-- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, shouldContinueAfterSelectingPerson: ABRecord, property: ABPropertyID, identifier: ABMultiValueIdentifier) -> Bool](abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:shouldcontinueafterselectingperson:property:identifier:).md)
+- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, shouldContinueAfterSelectingPerson: ABRecord, property: ABPropertyID, identifier: ABMultiValueIdentifier) -> Bool](./peoplepickernavigationcontroller%28_,shouldcontinueafterselectingperson,property,identifier%29.md)
   Sent when the user selects one of a person’s properties.
-- [func peoplePickerNavigationControllerDidCancel(ABPeoplePickerNavigationController)](abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontrollerdidcancel(_:).md)
+- [func peoplePickerNavigationControllerDidCancel(ABPeoplePickerNavigationController)](./peoplepickernavigationcontrollerdidcancel%28_%29.md)
   Sent when the user taps Cancel.
-- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, didSelectPerson: ABRecord)](abpeoplepickernavigationcontrollerdelegate/peoplepickernavigationcontroller(_:didselectperson:).md)
+- [func peoplePickerNavigationController(ABPeoplePickerNavigationController, didSelectPerson: ABRecord)](./peoplepickernavigationcontroller%28_,didselectperson%29.md)
   Called after a person has been selected by the user.
 
 

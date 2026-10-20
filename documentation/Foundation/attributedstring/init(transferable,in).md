@@ -1,7 +1,8 @@
 # init(transferable:in:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Extract an attributed string from SwiftUI’s transferable representation in a certain environment.
 
@@ -26,7 +27,7 @@ Use this initializer with a `AttributedTextFormatting/Transferable` that was imp
 
 > **Note**: This initializer applies the `AttributedTextFormattingDefinition` in the given `environment` to the imported text before returning.
 
-> **Note**: `View/attributedTextFormattingDefinition(_:)-81jn6`, `AttributedTextValueConstraint/constrain(_:)-6cp64`
+> **See Also**: `View/attributedTextFormattingDefinition(_:)-81jn6`, `AttributedTextValueConstraint/constrain(_:)-6cp64`
 
 
 ---

@@ -1,7 +1,8 @@
 # IKGroupDisclosureStyle
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A disclosure triangle.
 
@@ -14,9 +15,14 @@ A disclosure triangle.
 var IKGroupDisclosureStyle: Int { get }
 ```
 
+```c
+IKGroupDisclosureStyle
+```
+
 ## See Also
 
-- [var IKGroupBezelStyle: Int](ikgroupbezelstyle.md)
+### Constants
+- [var IKGroupBezelStyle: Int](./ikgroupbezelstyle.md)
   A bezel style.
 
 

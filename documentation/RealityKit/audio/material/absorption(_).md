@@ -1,7 +1,8 @@
 # absorption(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new audio material with the provided absorption data.
 
@@ -23,7 +24,7 @@ func absorption(_ data: Audio.Absorption) -> Audio.Material
 
 Example usage:
 
-```None
+```
 let material: Audio.Material = .concrete.absorption([500: 0.3, 1000: 0.4, 4000: 0.5])
 ```
 

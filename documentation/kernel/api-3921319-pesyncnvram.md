@@ -1,14 +1,15 @@
 # PESyncNVRAM
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 boolean_t PESyncNVRAM(void);
 ```
 

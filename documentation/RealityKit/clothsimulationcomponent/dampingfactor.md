@@ -1,7 +1,8 @@
 # dampingFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The damping factor affecting all the cloth bodies in the simulation. The expected range is between 0 and 1 (included).
 
@@ -24,9 +25,10 @@ The default value is 0
 
 ## See Also
 
-- [var gravity: SIMD3<Float>](clothsimulationcomponent/gravity.md)
+### Applying forces
+- [var gravity: SIMD3<Float>](./gravity.md)
   The gravitational acceleration for the bodies in the simulation, in m/s².
-- [var wind: SIMD3<Float>](clothsimulationcomponent/wind.md)
+- [var wind: SIMD3<Float>](./wind.md)
   The wind force affecting all the cloth bodies in the simulation, in Newtons.
 
 

@@ -1,14 +1,15 @@
 # sched_perfcontrol_abandon_preemption_disable_measurement
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 void sched_perfcontrol_abandon_preemption_disable_measurement(void);
 ```
 

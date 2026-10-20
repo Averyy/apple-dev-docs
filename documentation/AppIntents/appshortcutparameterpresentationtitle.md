@@ -1,7 +1,8 @@
 # AppShortcutParameterPresentationTitle
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct that represents the title of the presentation of an App Shortcut.
 
@@ -11,8 +12,10 @@ A struct that represents the title of the presentation of an App Shortcut.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
+
+> **Deprecated**: Please use init(for:summary:optionsCollections:)
 
 ## Declaration
 
@@ -27,17 +30,18 @@ Provide a specific and a generic title. The specific title should include the pa
 ## Topics
 
 ### Initializers
-- [init(specific: AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, ParameterKeyPath>, generic: StaticString, table: StaticString?)](appshortcutparameterpresentationtitle/init(specific:generic:table:).md)
+- [init(specific: AppShortcutParameterPresentationTitleString<Intent, Value, Parameter, ParameterKeyPath>, generic: StaticString, table: StaticString?)](./appshortcutparameterpresentationtitle/init%28specific,generic,table%29.md)
   Initializes an `AppShortcutParameterPresentationTitle` with the specified parameters.
 
 ## See Also
 
-- [struct AppShortcutParameterPresentation](appshortcutparameterpresentation.md)
+### App Shortcut parameter presentation
+- [struct AppShortcutParameterPresentation](./appshortcutparameterpresentation.md)
   Describes the presentation of an App Shortcut  for the provided parameter.
-- [struct AppShortcutParameterPresentationSummary](appshortcutparameterpresentationsummary.md)
+- [struct AppShortcutParameterPresentationSummary](./appshortcutparameterpresentationsummary.md)
   The summary of the presentation of an App Shortcut parameter.
-- [struct AppShortcutParameterPresentationSummaryString](appshortcutparameterpresentationsummarystring.md)
-- [struct AppShortcutParameterPresentationTitleString](appshortcutparameterpresentationtitlestring.md)
+- [struct AppShortcutParameterPresentationSummaryString](./appshortcutparameterpresentationsummarystring.md)
+- [struct AppShortcutParameterPresentationTitleString](./appshortcutparameterpresentationtitlestring.md)
 
 
 ---

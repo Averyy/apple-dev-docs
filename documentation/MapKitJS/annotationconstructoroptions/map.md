@@ -1,7 +1,8 @@
 # map
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Sets the annotation’s map.
 
@@ -10,7 +11,7 @@ Sets the annotation’s map.
 
 ## Declaration
 
-```swift
+```
 map?: Map;
 ```
 

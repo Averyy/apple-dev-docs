@@ -1,19 +1,20 @@
 # JSValue Implementations
 
-**Framework**: JavaScriptCore
+**Framework**: JavaScriptCore  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init!(JSValueRef: JSValueRef!, inContext: JSContext!)](jsvalue/init(jsvalueref:incontext:).md)
+- [init!(JSValueRef: JSValueRef!, inContext: JSContext!)](./init%28jsvalueref,incontext%29.md)
   Creates a JavaScript value object from the equivalent C representation.
-- [init!(point: CGPoint, inContext: JSContext!)](jsvalue/init(point:incontext:).md)
+- [init!(point: CGPoint, inContext: JSContext!)](./init%28point,incontext%29.md)
   Creates a JavaScript representation of the specified point.
-- [init!(range: NSRange, inContext: JSContext!)](jsvalue/init(range:incontext:).md)
+- [init!(range: NSRange, inContext: JSContext!)](./init%28range,incontext%29.md)
   Creates a JavaScript representation of the specified range.
-- [init!(rect: CGRect, inContext: JSContext!)](jsvalue/init(rect:incontext:).md)
+- [init!(rect: CGRect, inContext: JSContext!)](./init%28rect,incontext%29.md)
   Creates a JavaScript representation of the specified rectangle.
-- [init!(size: CGSize, inContext: JSContext!)](jsvalue/init(size:incontext:).md)
+- [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
 
 

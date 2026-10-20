@@ -1,7 +1,8 @@
 # setOutputEnabled(_:enabled:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the enable state of an output identified by ID
 
@@ -20,7 +21,7 @@ mutating func setOutputEnabled(_ outputID: ComputeNodeGraph.NodeID, enabled: Boo
 
 #### Discussion
 
-This will cause the output mesh to disappear, and output stages to stop executing. The simulation, however, will continue to execute. See [`pause()`](computegraphcomponent/pause().md), [`play()`](computegraphcomponent/play().md), and `RealityKit.Entity.isEnabled` to control the simulation as a whole
+This will cause the output mesh to disappear, and output stages to stop executing. The simulation, however, will continue to execute. See [`pause()`](./pause%28%29.md), [`play()`](./play%28%29.md), and `RealityKit.Entity.isEnabled` to control the simulation as a whole
 
 
 ---

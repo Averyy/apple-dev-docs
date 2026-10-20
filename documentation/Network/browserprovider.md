@@ -1,7 +1,8 @@
 # BrowserProvider
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 BrowserProviders can be used when creating NetworkBrowsers.
 
@@ -23,20 +24,20 @@ protocol BrowserProvider : Sendable
 ## Topics
 
 ### Associated Types
-- [associatedtype Endpoint : Connectable](browserprovider/endpoint.md)
+- [associatedtype Endpoint : Connectable](./browserprovider/endpoint.md)
 ### Type Methods
-- [static func bonjour(String, domain: String?, includeTxtRecord: Bool) -> Bonjour](browserprovider/bonjour(_:domain:includetxtrecord:).md)
+- [static func bonjour(String, domain: String?, includeTxtRecord: Bool) -> Bonjour](./browserprovider/bonjour%28_,domain,includetxtrecord%29.md)
   Create a Bonjour browser provider used to browse for Bonjour services.
-- [static func wifiAware(WASubscriberBrowser.Action, active: Duration?) -> Self](browserprovider/wifiaware(_:active:).md)
+- [static func wifiAware(WASubscriberBrowser.Action, active: Duration?) -> Self](./browserprovider/wifiaware%28_,active%29.md)
   Setup a `NetworkBrowser` to subscribe to Wi-Fi Aware services on selected, paired devices.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Bonjour](bonjour.md)
+- [Bonjour](./bonjour.md)
 
 
 ---

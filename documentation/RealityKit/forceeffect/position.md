@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Position of the force effect relative to the effect’s transform component.
 

@@ -1,13 +1,14 @@
 # MusicLibraryRequestable Implementations
 
-**Framework**: MusicKit
+**Framework**: MusicKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [Playlist.Entry.LibraryFilter](playlist/entry/libraryfilter.md)
+- [Playlist.Entry.LibraryFilter](./libraryfilter.md)
   The associated type that contains the playlist entry properties your app uses for a library request.
-- [Playlist.Entry.LibrarySortProperties](playlist/entry/librarysortproperties.md)
+- [Playlist.Entry.LibrarySortProperties](./librarysortproperties.md)
   The associated type that contains the set of playlist entry properties your app uses to sort results for a library request.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with a preference.
 
@@ -23,7 +24,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/init(_:).md)
+### Creating the transport type
+- [init(String)](./init%28_%29.md)
   Creates the object with a transport type.
 
 

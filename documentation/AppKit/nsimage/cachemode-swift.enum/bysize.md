@@ -1,12 +1,13 @@
 # NSImage.CacheMode.bySize
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cache if the cache size is smaller than the original data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Cache if the cache size is smaller than the original data.
 case bySize
 ```
 
+```c
+NSImageCacheBySize
+```
+
 ## See Also
 
-- [NSImage.CacheMode.default](nsimage/cachemode-swift.enum/default.md)
+### Cache Options
+- [NSImage.CacheMode.default](./default.md)
   Caching is unspecified.
-- [NSImage.CacheMode.always](nsimage/cachemode-swift.enum/always.md)
+- [NSImage.CacheMode.always](./always.md)
   Always generate a cache when drawing.
-- [NSImage.CacheMode.never](nsimage/cachemode-swift.enum/never.md)
+- [NSImage.CacheMode.never](./never.md)
   Never cache; always draw direct.
 
 

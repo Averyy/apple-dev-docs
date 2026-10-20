@@ -1,6 +1,7 @@
 # vectorOps
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform vector and matrix BLAS functions on arrays of 128-bit vectors.
 
@@ -11,63 +12,63 @@ vectorOps.h declares a set of vector and matrix BLAS functions on arrays of 128-
 ## Topics
 
 ### Vector-Scalar Linear Algebra Functions (from vectorOps.h)
-- [func vIsamax(Int32, UnsafePointer<vFloat>) -> Int32](visamax(_:_:).md)
+- [func vIsamax(Int32, UnsafePointer<vFloat>) -> Int32](./visamax%28_,_%29.md)
   Finds the position of the first vector element having the largest absolute value.
-- [func vIsamin(Int32, UnsafePointer<vFloat>) -> Int32](visamin(_:_:).md)
+- [func vIsamin(Int32, UnsafePointer<vFloat>) -> Int32](./visamin%28_,_%29.md)
   Finds the position of the first vector element having the smallest absolute value.
-- [func vIsmax(Int32, UnsafePointer<vFloat>) -> Int32](vismax(_:_:).md)
+- [func vIsmax(Int32, UnsafePointer<vFloat>) -> Int32](./vismax%28_,_%29.md)
   Finds the position of the first vector element having the maximum value.
-- [func vIsmin(Int32, UnsafePointer<vFloat>) -> Int32](vismin(_:_:).md)
+- [func vIsmin(Int32, UnsafePointer<vFloat>) -> Int32](./vismin%28_,_%29.md)
   Finds the position of the first vector element having the minimum value.
-- [func vSasum(Int32, UnsafePointer<vFloat>) -> Float](vsasum(_:_:).md)
+- [func vSasum(Int32, UnsafePointer<vFloat>) -> Float](./vsasum%28_,_%29.md)
   Finds the sum of the absolute values of the elements in a vector.
-- [func vSsum(Int32, UnsafePointer<vFloat>) -> Float](vssum(_:_:).md)
+- [func vSsum(Int32, UnsafePointer<vFloat>) -> Float](./vssum%28_,_%29.md)
   Finds the sum of the values of the elements in a vector.
-- [func vSaxpy(Int32, Float, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsaxpy(_:_:_:_:).md)
+- [func vSaxpy(Int32, Float, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsaxpy%28_,_,_,_%29.md)
   Multiplies a vector by a scalar , adds it to a second vector , and stores the result in the second vector.
-- [func vSnaxpy(Int32, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsnaxpy(_:_:_:_:_:).md)
+- [func vSnaxpy(Int32, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsnaxpy%28_,_,_,_,_%29.md)
   Performs the computation of `vSaxpy` `n` times, using a different multiplier each time.
-- [func vScopy(Int32, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vscopy(_:_:_:).md)
+- [func vScopy(Int32, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vscopy%28_,_,_%29.md)
   Copies one vector to another.
-- [func vSdot(Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>) -> Float](vsdot(_:_:_:).md)
+- [func vSdot(Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>) -> Float](./vsdot%28_,_,_%29.md)
   Computes the dot product of two vectors.
-- [func vSndot(Int32, Int32, UnsafeMutablePointer<Float>, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>)](vsndot(_:_:_:_:_:_:).md)
+- [func vSndot(Int32, Int32, UnsafeMutablePointer<Float>, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>)](./vsndot%28_,_,_,_,_,_%29.md)
   Computes the dot products of n pairs of vectors, accumulating or storing the results in an array of `n` `float` values.
-- [func vSnrm2(Int32, UnsafePointer<vFloat>) -> Float](vsnrm2(_:_:).md)
+- [func vSnrm2(Int32, UnsafePointer<vFloat>) -> Float](./vsnrm2%28_,_%29.md)
   Finds the Euclidean length of a vector.
-- [func vSnorm2(Int32, UnsafePointer<vFloat>) -> Float](vsnorm2(_:_:).md)
+- [func vSnorm2(Int32, UnsafePointer<vFloat>) -> Float](./vsnorm2%28_,_%29.md)
   Finds the Euclidean length of a vector.
-- [func vSrot(Int32, UnsafeMutablePointer<vFloat>, UnsafeMutablePointer<vFloat>, Float, Float)](vsrot(_:_:_:_:_:).md)
+- [func vSrot(Int32, UnsafeMutablePointer<vFloat>, UnsafeMutablePointer<vFloat>, Float, Float)](./vsrot%28_,_,_,_,_%29.md)
   Applies planar rotation to a set of n points whose x and y coordinates are contained in two arrays of vectors.
-- [func vSscal(Int32, Float, UnsafeMutablePointer<vFloat>)](vsscal(_:_:_:).md)
+- [func vSscal(Int32, Float, UnsafeMutablePointer<vFloat>)](./vsscal%28_,_,_%29.md)
   Scales a vector in place.
-- [func vSswap(Int32, UnsafeMutablePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsswap(_:_:_:).md)
+- [func vSswap(Int32, UnsafeMutablePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsswap%28_,_,_%29.md)
   Interchanges the elements of two vectors.
-- [func vSyax(Int32, Float, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsyax(_:_:_:_:).md)
+- [func vSyax(Int32, Float, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsyax%28_,_,_,_%29.md)
   Multiplies each element of a vector and stores the results in a second vector.
-- [func vSzaxpy(Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vszaxpy(_:_:_:_:_:).md)
+- [func vSzaxpy(Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vszaxpy%28_,_,_,_,_%29.md)
   Multiplies a vector by a scalar, adds it to a second vector, and stores the result in a third vector.
 ### Matrix-Vector Linear Algebra Functions (from vectorOps.h)
-- [func vSgemv(CChar, Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, Float, UnsafeMutablePointer<vFloat>)](vsgemv(_:_:_:_:_:_:_:_:).md)
+- [func vSgemv(CChar, Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, Float, UnsafeMutablePointer<vFloat>)](./vsgemv%28_,_,_,_,_,_,_,_%29.md)
   Multiplies a vector by a scalar. Multiplies a matrix by another scalar, then by a second vector, and adds the resulting vector to the first vector. This function can also perform the calculation with the transpose of the original matrix instead of the matrix itself. A selector parameter determines whether the transpose is used.
-- [func vSgemx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsgemx(_:_:_:_:_:_:).md)
+- [func vSgemx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsgemx%28_,_,_,_,_,_%29.md)
   Multiplies a matrix by a scalar and then by a vector, and adds the resulting vector to a second vector.
-- [func vSgemtx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsgemtx(_:_:_:_:_:_:).md)
+- [func vSgemtx(Int32, Int32, Float, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsgemtx%28_,_,_,_,_,_%29.md)
   Forms the transpose of a matrix, multiplies it by a scalar and then by a vector, and adds the resulting vector to a second vector.
 ### Matrix Operations (from vectorOps.h)
-- [func vSgeadd(Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](vsgeadd(_:_:_:_:_:_:_:).md)
+- [func vSgeadd(Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](./vsgeadd%28_,_,_,_,_,_,_%29.md)
   Adds two general matrices or their transposes.
-- [func vSgesub(Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](vsgesub(_:_:_:_:_:_:_:).md)
+- [func vSgesub(Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](./vsgesub%28_,_,_,_,_,_,_%29.md)
   Subtracts two general matrices or their transposes.
-- [func vSgemul(Int32, Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](vsgemul(_:_:_:_:_:_:_:_:).md)
+- [func vSgemul(Int32, Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>)](./vsgemul%28_,_,_,_,_,_,_,_%29.md)
   Multiplies two general matrices or their transposes.
-- [func vSgemm(Int32, Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>, Float, Float, UnsafeMutablePointer<vFloat>)](vsgemm(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func vSgemm(Int32, Int32, Int32, UnsafePointer<vFloat>, CChar, UnsafePointer<vFloat>, CChar, UnsafeMutablePointer<vFloat>, Float, Float, UnsafeMutablePointer<vFloat>)](./vsgemm%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Multiples two general matrices or their transposes, then scales and adds a third.
-- [func vSgetmi(Int32, UnsafeMutablePointer<vFloat>)](vsgetmi(_:_:).md)
+- [func vSgetmi(Int32, UnsafeMutablePointer<vFloat>)](./vsgetmi%28_,_%29.md)
   Transposes a matrix in place.
-- [func vSgetmo(Int32, Int32, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsgetmo(_:_:_:_:).md)
+- [func vSgetmo(Int32, Int32, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsgetmo%28_,_,_,_%29.md)
   Transposes a matrix out of place.
-- [func vSgevv(Int32, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](vsgevv(_:_:_:_:_:).md)
+- [func vSgevv(Int32, Int32, UnsafePointer<vFloat>, UnsafePointer<vFloat>, UnsafeMutablePointer<vFloat>)](./vsgevv%28_,_,_,_,_%29.md)
   Produces the outer product of two vectors and places the results into a matrix.
 
 

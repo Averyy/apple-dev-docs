@@ -1,23 +1,28 @@
 # dictionaryWithValues(forKeys:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary containing the property values identified by each of the keys in a given array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func dictionaryWithValues(forKeys keys: [String]) -> [String : Any]
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) dictionaryWithValuesForKeys:(NSArray<NSString *> *) keys;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A dictionary containing as keys the property names in `keys`, with corresponding
 
 #### Discussion
 
-The default implementation invokes [`value(forKey:)`](nsobject-swift.class/value(forkey:).md) for each key in `keys` and substitutes `NSNull` values in the dictionary for returned `nil` values.
+The default implementation invokes [`value(forKey:)`](./value%28forkey%29.md) for each key in `keys` and substitutes `NSNull` values in the dictionary for returned `nil` values.
 
 ## Parameters
 
@@ -34,25 +39,27 @@ The default implementation invokes [`value(forKey:)`](nsobject-swift.class/value
 
 ## See Also
 
-- [func setValuesForKeys([String : Any])](nsobject-swift.class/setvaluesforkeys(_:).md)
+### Related Documentation
+- [func setValuesForKeys([String : Any])](./setvaluesforkeys%28_%29.md)
   Sets properties of the receiver with values from a given dictionary, using its keys to identify the properties.
-- [func value(forKey: String) -> Any?](nsobject-swift.class/value(forkey:).md)
+### Getting Values
+- [func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the value for the property identified by a given key.
-- [func value(forKeyPath: String) -> Any?](nsobject-swift.class/value(forkeypath:).md)
+- [func value(forKeyPath: String) -> Any?](./value%28forkeypath%29.md)
   Returns the value for the derived property identified by a given key path.
-- [func value(forUndefinedKey: String) -> Any?](nsobject-swift.class/value(forundefinedkey:).md)
-  Invoked by [`value(forKey:)`](nsobject-swift.class/value(forkey:).md) when it finds no property corresponding to a given key.
-- [func mutableArrayValue(forKey: String) -> NSMutableArray](nsobject-swift.class/mutablearrayvalue(forkey:).md)
+- [func value(forUndefinedKey: String) -> Any?](./value%28forundefinedkey%29.md)
+  Invoked by [`value(forKey:)`](./value%28forkey%29.md) when it finds no property corresponding to a given key.
+- [func mutableArrayValue(forKey: String) -> NSMutableArray](./mutablearrayvalue%28forkey%29.md)
   Returns a mutable array proxy that provides read-write access to an ordered to-many relationship specified by a given key.
-- [func mutableArrayValue(forKeyPath: String) -> NSMutableArray](nsobject-swift.class/mutablearrayvalue(forkeypath:).md)
+- [func mutableArrayValue(forKeyPath: String) -> NSMutableArray](./mutablearrayvalue%28forkeypath%29.md)
   Returns a mutable array that provides read-write access to the ordered to-many relationship specified by a given key path.
-- [func mutableSetValue(forKey: String) -> NSMutableSet](nsobject-swift.class/mutablesetvalue(forkey:).md)
+- [func mutableSetValue(forKey: String) -> NSMutableSet](./mutablesetvalue%28forkey%29.md)
   Returns a mutable set proxy that provides read-write access to the unordered to-many relationship specified by a given key.
-- [func mutableSetValue(forKeyPath: String) -> NSMutableSet](nsobject-swift.class/mutablesetvalue(forkeypath:).md)
+- [func mutableSetValue(forKeyPath: String) -> NSMutableSet](./mutablesetvalue%28forkeypath%29.md)
   Returns a mutable set that provides read-write access to the unordered to-many relationship specified by a given key path.
-- [func mutableOrderedSetValue(forKey: String) -> NSMutableOrderedSet](nsobject-swift.class/mutableorderedsetvalue(forkey:).md)
+- [func mutableOrderedSetValue(forKey: String) -> NSMutableOrderedSet](./mutableorderedsetvalue%28forkey%29.md)
   Returns a mutable ordered set that provides read-write access to the uniquing ordered to-many relationship specified by a given key.
-- [func mutableOrderedSetValue(forKeyPath: String) -> NSMutableOrderedSet](nsobject-swift.class/mutableorderedsetvalue(forkeypath:).md)
+- [func mutableOrderedSetValue(forKeyPath: String) -> NSMutableOrderedSet](./mutableorderedsetvalue%28forkeypath%29.md)
   Returns a mutable ordered set that provides read-write access to the uniquing ordered to-many relationship specified by a given key path.
 
 

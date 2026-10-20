@@ -1,7 +1,8 @@
 # AppAndroidToIosAppMappingDetailsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents an Android to iOS app mapping details linkages response resource.
 
@@ -10,14 +11,14 @@ The data structure that represents an Android to iOS app mapping details linkage
 
 ## Declaration
 
-```swift
+```
 object AppAndroidToIosAppMappingDetailsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `androidToIosAppMappingDetails`
 
 
 ---

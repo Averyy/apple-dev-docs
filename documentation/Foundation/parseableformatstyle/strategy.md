@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,8 @@ associatedtype Strategy : ParseStrategy where Self.FormatInput == Self.Strategy.
 
 ## See Also
 
-- [var parseStrategy: Self.Strategy](parseableformatstyle/parsestrategy.md)
+### Declaring Parse Strategy
+- [var parseStrategy: Self.Strategy](./parsestrategy.md)
   A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
 
 

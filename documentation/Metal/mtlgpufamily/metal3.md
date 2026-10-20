@@ -1,7 +1,8 @@
 # MTLGPUFamily.metal3
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents the Metal 3 features.
 
@@ -19,6 +20,10 @@ Represents the Metal 3 features.
 case metal3
 ```
 
+```c
+MTLGPUFamilyMetal3
+```
+
 #### Discussion
 
 The following platform and GPU combinations support Metal 3:
@@ -26,12 +31,13 @@ The following platform and GPU combinations support Metal 3:
 |  | GPUs |
 | --- | --- |
 | iOS | A14 and later |
-| iPadOS | A14 and later ![None](/images/com.apple.metal/spacer.png) M1 and later |
-| macOS | M1 and later ![None](/images/com.apple.metal/spacer.png) AMD Vega ![None](/images/com.apple.metal/spacer.png) AMD 5000-series ![None](/images/com.apple.metal/spacer.png) AMD 6000-series ![None](/images/com.apple.metal/spacer.png) Intel Iris Pro Graphics  ![None](/images/com.apple.metal/spacer.png) Intel UHD Graphics 630 |
+| iPadOS | A14 and later ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) M1 and later |
+| macOS | M1 and later ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) AMD Vega ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) AMD 5000-series ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) AMD 6000-series ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) Intel Iris Pro Graphics  ![](https://developer.apple.com/tutorials/images/com.apple.metal/spacer.png) Intel UHD Graphics 630 |
 
 ## See Also
 
-- [MTLGPUFamily.metal4](mtlgpufamily/metal4.md)
+### Checking for Metal family GPU support
+- [MTLGPUFamily.metal4](./metal4.md)
 
 
 ---

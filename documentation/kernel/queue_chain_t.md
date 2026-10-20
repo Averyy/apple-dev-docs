@@ -1,14 +1,15 @@
 # queue_chain_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct queue_entry queue_chain_t;
 ```
 

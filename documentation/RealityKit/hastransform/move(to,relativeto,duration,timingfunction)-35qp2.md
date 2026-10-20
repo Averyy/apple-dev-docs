@@ -1,7 +1,8 @@
 # move(to:relativeTo:duration:timingFunction:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves an entity over a period of time to a new location given by a transform.
 
@@ -11,7 +12,7 @@ Moves an entity over a period of time to a new location given by a transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,16 @@ Moves an entity over a period of time to a new location given by a transform.
 @MainActor @preconcurrency func move(to target: Transform, relativeTo referenceEntity: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction = .default) -> AnimationPlaybackController
 ```
 
+**Other overloads**:
+
+```swift
+@discardableResult
+@MainActor @preconcurrency func move(to target: float4x4, relativeTo referenceEntity: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction = .default) -> AnimationPlaybackController
+```
+
 #### Return Value
 
-An [`AnimationPlaybackController`](animationplaybackcontroller.md) instance that you use to control the animation playback.
+An [`AnimationPlaybackController`](../animationplaybackcontroller.md) instance that you use to control the animation playback.
 
 #### Discussion
 
@@ -30,14 +38,15 @@ Animating the scale of an entity to 0 will cause a subsequent inverse of the ent
 
 ## Parameters
 
-- `target`: A [`Transform`](transform.md) instance that indicates the new location.
+- `target`: A [`Transform`](../transform.md) instance that indicates the new location.
 - `referenceEntity`: The entity that defines a frame of reference. Set this to `nil` to indicate world space.
 - `duration`: The time in seconds over which the move should occur.
 - `timingFunction`: A timing function that controls the progress of the animation.
 
 ## See Also
 
-- [func move(to: float4x4, relativeTo: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction) -> AnimationPlaybackController](hastransform/move(to:relativeto:duration:timingfunction:)-6la93.md)
+### Animating an entity
+- [func move(to: float4x4, relativeTo: Entity?, duration: TimeInterval, timingFunction: AnimationTimingFunction) -> AnimationPlaybackController](./move%28to,relativeto,duration,timingfunction%29-6la93.md)
   Moves an entity over a period of time to a new location given by a 4x4 matrix.
 
 

@@ -1,7 +1,8 @@
 # DonationTimeRange
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A duration of time for filtering event donations.
 
@@ -23,33 +24,34 @@ struct DonationTimeRange
 ## Topics
 
 ### Type Properties
-- [static var day: Tips.DonationTimeRange](tips/donationtimerange/day.md)
-- [static var hour: Tips.DonationTimeRange](tips/donationtimerange/hour.md)
-- [static var minute: Tips.DonationTimeRange](tips/donationtimerange/minute.md)
-- [static var week: Tips.DonationTimeRange](tips/donationtimerange/week.md)
+- [static var day: Tips.DonationTimeRange](./donationtimerange/day.md)
+- [static var hour: Tips.DonationTimeRange](./donationtimerange/hour.md)
+- [static var minute: Tips.DonationTimeRange](./donationtimerange/minute.md)
+- [static var week: Tips.DonationTimeRange](./donationtimerange/week.md)
 ### Type Methods
-- [static func days(Int) -> Tips.DonationTimeRange](tips/donationtimerange/days(_:).md)
-- [static func hours(Int) -> Tips.DonationTimeRange](tips/donationtimerange/hours(_:).md)
-- [static func minutes(Int) -> Tips.DonationTimeRange](tips/donationtimerange/minutes(_:).md)
-- [static func weeks(Int) -> Tips.DonationTimeRange](tips/donationtimerange/weeks(_:).md)
+- [static func days(Int) -> Tips.DonationTimeRange](./donationtimerange/days%28_%29.md)
+- [static func hours(Int) -> Tips.DonationTimeRange](./donationtimerange/hours%28_%29.md)
+- [static func minutes(Int) -> Tips.DonationTimeRange](./donationtimerange/minutes%28_%29.md)
+- [static func weeks(Int) -> Tips.DonationTimeRange](./donationtimerange/weeks%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Event](tips/event.md)
+### Events
+- [struct Event](./event.md)
   A repeatable user-defined action.
-- [struct DonationLimit](tips/donationlimit.md)
+- [struct DonationLimit](./donationlimit.md)
   Specify the maximum number of donations for an event.
-- [struct EmptyDonation](tips/emptydonation.md)
+- [struct EmptyDonation](./emptydonation.md)
   An empty event donation.
 
 

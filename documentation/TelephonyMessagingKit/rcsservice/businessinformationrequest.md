@@ -1,7 +1,8 @@
 # RCSService.BusinessInformationRequest
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure representing a request to retrieve information about a business.
 
@@ -16,37 +17,38 @@ struct BusinessInformationRequest
 
 #### Overview
 
-To create an instance of this type, use the [`CellularServiceID`](cellularserviceid.md) and [`RCSHandle`](rcshandle.md) from an [`RCSMessage`](rcsmessage.md) you receive in the RCS service’s [`incomingMessageNotifications`](rcsservice/incomingmessagenotifications.md). Then call [`businessInformation(for:)`](rcsservice/businessinformation(for:).md) on the RCS service, which returns an instance of the [`RCSService.Business`](rcsservice/business.md) type.
+To create an instance of this type, use the [`CellularServiceID`](../cellularserviceid.md) and [`RCSHandle`](../rcshandle.md) from an [`RCSMessage`](../rcsmessage.md) you receive in the RCS service’s [`incomingMessageNotifications`](./incomingmessagenotifications.md). Then call [`businessInformation(for:)`](./businessinformation%28for%29.md) on the RCS service, which returns an instance of the [`RCSService.Business`](./business.md) type.
 
 ## Topics
 
 ### Creating a business information request
-- [init(cellularServiceID: CellularServiceID, handle: RCSHandle.URI, cachePolicy: RCSService.BusinessInformationRequest.CachePolicy)](rcsservice/businessinformationrequest/init(cellularserviceid:handle:cachepolicy:).md)
+- [init(cellularServiceID: CellularServiceID, handle: RCSHandle.URI, cachePolicy: RCSService.BusinessInformationRequest.CachePolicy)](./businessinformationrequest/init%28cellularserviceid,handle,cachepolicy%29.md)
 ### Accessing request properties
-- [var cellularServiceID: CellularServiceID](rcsservice/businessinformationrequest/cellularserviceid.md)
+- [var cellularServiceID: CellularServiceID](./businessinformationrequest/cellularserviceid.md)
   Service identifier to use for this request.
-- [var handle: RCSHandle.URI](rcsservice/businessinformationrequest/handle.md)
+- [var handle: RCSHandle.URI](./businessinformationrequest/handle.md)
   URI handle of the target.
-- [var cachePolicy: RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.property.md)
+- [var cachePolicy: RCSService.BusinessInformationRequest.CachePolicy](./businessinformationrequest/cachepolicy-swift.property.md)
   Cache policy to use for request.
-- [RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.enum.md)
+- [RCSService.BusinessInformationRequest.CachePolicy](./businessinformationrequest/cachepolicy-swift.enum.md)
   `
 ### Structures
-- [RCSService.BusinessInformationRequest.WelcomeMessageInformation](rcsservice/businessinformationrequest/welcomemessageinformation-swift.struct.md)
+- [RCSService.BusinessInformationRequest.WelcomeMessageInformation](./businessinformationrequest/welcomemessageinformation-swift.struct.md)
 ### Instance Properties
-- [var welcomeMessageInformation: RCSService.BusinessInformationRequest.WelcomeMessageInformation?](rcsservice/businessinformationrequest/welcomemessageinformation-swift.property.md)
+- [var welcomeMessageInformation: RCSService.BusinessInformationRequest.WelcomeMessageInformation?](./businessinformationrequest/welcomemessageinformation-swift.property.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func businessInformation(for: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?](rcsservice/businessinformation(for:).md)
+### Retrieving business information
+- [func businessInformation(for: RCSService.BusinessInformationRequest) async throws -> RCSService.Business?](./businessinformation%28for%29.md)
   Requests business information for a specified handle.
-- [RCSService.Business](rcsservice/business.md)
+- [RCSService.Business](./business.md)
   Structure containing details about a business.
 
 

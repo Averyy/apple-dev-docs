@@ -1,7 +1,8 @@
 # minimumRadius
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum distance at which to start calculating new values for the field.
 
@@ -18,27 +19,32 @@ The minimum distance at which to start calculating new values for the field.
 var minimumRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat minimumRadius;
+```
+
 #### Discussion
 
-Use this property to modify the behavior of distance-based effects when objects are close to the center of the field. Distances that are less than the minimum value are treated as if they are equal to the minimum value. In addition, effects such as [`falloff`](uifieldbehavior/falloff.md) are not applied until the minimum distance is reached.
+Use this property to modify the behavior of distance-based effects when objects are close to the center of the field. Distances that are less than the minimum value are treated as if they are equal to the minimum value. In addition, effects such as [`falloff`](./falloff.md) are not applied until the minimum distance is reached.
 
 The default value of this property is very small, but not zero.
 
 ## See Also
 
-- [var position: CGPoint](uifieldbehavior/position.md)
+### Configuring the field attributes
+- [var position: CGPoint](./position.md)
   The position of the field in the reference coordinate system.
-- [var region: UIRegion](uifieldbehavior/region.md)
+- [var region: UIRegion](./region.md)
   The shape of the field.
-- [var strength: CGFloat](uifieldbehavior/strength.md)
+- [var strength: CGFloat](./strength.md)
   The strength of the field.
-- [var falloff: CGFloat](uifieldbehavior/falloff.md)
+- [var falloff: CGFloat](./falloff.md)
   The rate of decay for the field strength.
-- [var direction: CGVector](uifieldbehavior/direction.md)
+- [var direction: CGVector](./direction.md)
   The direction of motion for a linear field.
-- [var smoothness: CGFloat](uifieldbehavior/smoothness.md)
+- [var smoothness: CGFloat](./smoothness.md)
   The smoothness of the noise used to generate the field.
-- [var animationSpeed: CGFloat](uifieldbehavior/animationspeed.md)
+- [var animationSpeed: CGFloat](./animationspeed.md)
   The rate at which the animation should proceed.
 
 

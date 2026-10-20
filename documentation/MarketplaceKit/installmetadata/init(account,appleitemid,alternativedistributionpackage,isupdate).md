@@ -1,7 +1,8 @@
 # init(account:appleItemID:alternativeDistributionPackage:isUpdate:)
 
 **Framework**: MarketplaceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an install metadata object with the given app information.
 
@@ -17,11 +18,12 @@ init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: 
 
 ## Mentions
 
-- [Ingesting an alternative distribution package](ingesting-an-alternative-distribution-package.md)
+- [Ingesting an alternative distribution package](../ingesting-an-alternative-distribution-package.md)
 
 ## See Also
 
-- [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool, appShareURL: URL?, requestAgeException: Bool)](installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:appshareurl:requestageexception:).md)
+### Initializing an install metadata instance
+- [init(account: String, appleItemID: AppleItemID, alternativeDistributionPackage: URL, isUpdate: Bool, appShareURL: URL?, requestAgeException: Bool)](./init%28account,appleitemid,alternativedistributionpackage,isupdate,appshareurl,requestageexception%29.md)
   Initializes an install metadata object with the given app information and exception request indicator.
 
 

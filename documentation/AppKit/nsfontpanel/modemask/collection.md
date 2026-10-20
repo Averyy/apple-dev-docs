@@ -1,10 +1,11 @@
 # collection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 static var collection: NSFontPanel.ModeMask { get }
 ```
 
+```c
+NSFontPanelModeMaskCollection
+```
+
 ## See Also
 
-- [static var allEffects: NSFontPanel.ModeMask](nsfontpanel/modemask/alleffects.md)
-- [static var allModes: NSFontPanel.ModeMask](nsfontpanel/modemask/allmodes.md)
-- [static var documentColorEffect: NSFontPanel.ModeMask](nsfontpanel/modemask/documentcoloreffect.md)
-- [static var face: NSFontPanel.ModeMask](nsfontpanel/modemask/face.md)
-- [static var shadowEffect: NSFontPanel.ModeMask](nsfontpanel/modemask/shadoweffect.md)
-- [static var size: NSFontPanel.ModeMask](nsfontpanel/modemask/size.md)
-- [static var standardModes: NSFontPanel.ModeMask](nsfontpanel/modemask/standardmodes.md)
-- [static var strikethroughEffect: NSFontPanel.ModeMask](nsfontpanel/modemask/strikethrougheffect.md)
-- [static var textColorEffect: NSFontPanel.ModeMask](nsfontpanel/modemask/textcoloreffect.md)
-- [static var underlineEffect: NSFontPanel.ModeMask](nsfontpanel/modemask/underlineeffect.md)
+### Type Properties
+- [static var allEffects: NSFontPanel.ModeMask](./alleffects.md)
+- [static var allModes: NSFontPanel.ModeMask](./allmodes.md)
+- [static var documentColorEffect: NSFontPanel.ModeMask](./documentcoloreffect.md)
+- [static var face: NSFontPanel.ModeMask](./face.md)
+- [static var shadowEffect: NSFontPanel.ModeMask](./shadoweffect.md)
+- [static var size: NSFontPanel.ModeMask](./size.md)
+- [static var standardModes: NSFontPanel.ModeMask](./standardmodes.md)
+- [static var strikethroughEffect: NSFontPanel.ModeMask](./strikethrougheffect.md)
+- [static var textColorEffect: NSFontPanel.ModeMask](./textcoloreffect.md)
+- [static var underlineEffect: NSFontPanel.ModeMask](./underlineeffect.md)
 
 
 ---

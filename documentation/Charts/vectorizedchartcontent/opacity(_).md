@@ -1,7 +1,8 @@
 # opacity(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -25,14 +26,15 @@ func opacity(_ keyPath: KeyPath<Self.DataElement, CGFloat>) -> some VectorizedCh
 
 ## See Also
 
+### Styling marks
 - [func foregroundStyle(KeyPath<Self.DataElement, some ShapeStyle>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/foregroundstyle(_:).md)
+](./foregroundstyle%28_%29.md)
   Represents data using a foreground style.
 - [func lineStyle(KeyPath<Self.DataElement, StrokeStyle>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/linestyle(_:).md)
+](./linestyle%28_%29.md)
   Represents data using line styles.
 - [func position(by: PlottableProjection<Self.DataElement, some Plottable>, axis: Axis?, span: MarkDimension) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/position(by:axis:span:).md)
+](./position%28by,axis,span%29.md)
 
 
 ---

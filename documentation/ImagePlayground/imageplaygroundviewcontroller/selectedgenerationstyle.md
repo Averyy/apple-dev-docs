@@ -1,7 +1,8 @@
 # selectedGenerationStyle
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Generation style to pre-select upong launching the playground among those in `allowedGenerationStyles`.
 
@@ -25,11 +26,12 @@ Use `ImagePlaygroundStyle.all` to check the list of all possible styles, and pas
 
 ## See Also
 
-- [var allowedGenerationStyles: [ImagePlaygroundStyle]](imageplaygroundviewcontroller/allowedgenerationstyles.md)
+### Specifying the configuration of the playground
+- [var allowedGenerationStyles: [ImagePlaygroundStyle]](./allowedgenerationstyles.md)
   A list of allowed generation styles to choose from in the playground.
-- [var personalizationPolicy: ImagePlaygroundPersonalizationPolicy](imageplaygroundviewcontroller/personalizationpolicy.md)
+- [var personalizationPolicy: ImagePlaygroundPersonalizationPolicy](./personalizationpolicy.md)
   The policy to apply when determining whether to include people in generated images.
-- [enum ImagePlaygroundPersonalizationPolicy](imageplaygroundpersonalizationpolicy.md)
+- [enum ImagePlaygroundPersonalizationPolicy](../imageplaygroundpersonalizationpolicy.md)
   An option for enabling or disabling personalization in the system interface.
 
 

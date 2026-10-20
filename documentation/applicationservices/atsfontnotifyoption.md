@@ -1,7 +1,8 @@
 # ATSFontNotifyOption
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,25 @@
 struct ATSFontNotifyOption
 ```
 
+```c
+typedef enum ATSFontNotifyOption : unsigned int {
+    ...
+} ATSFontNotifyOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](atsfontnotifyoption/1464537-init.md)
-- [init(rawValue: UInt32)](atsfontnotifyoption/1463214-init.md)
+- [init(UInt32)](./atsfontnotifyoption/api-1464537-init.md)
+- [init(rawValue: UInt32)](./atsfontnotifyoption/api-1463214-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](atsfontnotifyoption/1460764-rawvalue.md)
+- [var rawValue: UInt32](./atsfontnotifyoption/api-1460764-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

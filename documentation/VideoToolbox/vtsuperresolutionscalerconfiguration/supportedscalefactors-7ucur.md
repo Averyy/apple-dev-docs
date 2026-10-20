@@ -1,7 +1,8 @@
 # supportedScaleFactors
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,7 +18,8 @@ class var supportedScaleFactors: [Int] { get }
 
 ## See Also
 
-- [class var isSupported: Bool](vtsuperresolutionscalerconfiguration/issupported.md)
+### Determining processor availability
+- [class var isSupported: Bool](./issupported.md)
   Reports whether the system supports this processor.
 
 

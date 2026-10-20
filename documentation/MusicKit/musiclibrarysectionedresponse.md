@@ -1,7 +1,8 @@
 # MusicLibrarySectionedResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a library sectioned request.
 
@@ -23,20 +24,20 @@ struct MusicLibrarySectionedResponse<SectionType, MusicItemType> where SectionTy
 ## Topics
 
 ### Instance Properties
-- [let sections: [MusicLibrarySection<SectionType, MusicItemType>]](musiclibrarysectionedresponse/sections.md)
+- [let sections: [MusicLibrarySection<SectionType, MusicItemType>]](./musiclibrarysectionedresponse/sections.md)
   An array of sections that match the filters on the originating library request.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

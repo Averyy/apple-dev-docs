@@ -1,7 +1,8 @@
 # VerificationResult.VerificationError
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error cases for StoreKit JWS verification.
 
@@ -23,34 +24,35 @@ enum VerificationError
 ## Topics
 
 ### Error Codes
-- [VerificationResult.VerificationError.invalidCertificateChain](verificationresult/verificationerror/invalidcertificatechain.md)
+- [VerificationResult.VerificationError.invalidCertificateChain](./verificationerror/invalidcertificatechain.md)
   An error indicating that the certificate chain is invalid.
-- [VerificationResult.VerificationError.invalidDeviceVerification](verificationresult/verificationerror/invaliddeviceverification.md)
+- [VerificationResult.VerificationError.invalidDeviceVerification](./verificationerror/invaliddeviceverification.md)
   An error that indicates the signed value wasn’t generated for the current device.
-- [VerificationResult.VerificationError.invalidEncoding](verificationresult/verificationerror/invalidencoding.md)
+- [VerificationResult.VerificationError.invalidEncoding](./verificationerror/invalidencoding.md)
   An error that indicates the signature, certificate chain, or other part of value uses invalid encoding.
-- [VerificationResult.VerificationError.invalidSignature](verificationresult/verificationerror/invalidsignature.md)
+- [VerificationResult.VerificationError.invalidSignature](./verificationerror/invalidsignature.md)
   An error that indicates that the signature didn’t match the header and payload.
-- [VerificationResult.VerificationError.missingRequiredProperties](verificationresult/verificationerror/missingrequiredproperties.md)
+- [VerificationResult.VerificationError.missingRequiredProperties](./verificationerror/missingrequiredproperties.md)
   An error that indicates the header or payload are missing information that’s required to verify the signature.
-- [VerificationResult.VerificationError.revokedCertificate](verificationresult/verificationerror/revokedcertificate.md)
+- [VerificationResult.VerificationError.revokedCertificate](./verificationerror/revokedcertificate.md)
   An error that indicates the certificate chain includes a revoked certificate.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum VerificationResult](verificationresult.md)
+### JWS verification
+- [enum VerificationResult](../verificationresult.md)
   A type that describes the result of a StoreKit verification.
 
 

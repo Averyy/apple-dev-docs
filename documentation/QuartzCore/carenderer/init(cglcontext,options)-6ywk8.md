@@ -1,11 +1,14 @@
 # init(CGLContext:options:)
 
 **Framework**: Core Animation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst 13.1+
-- macOS 10.5+
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL is deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 

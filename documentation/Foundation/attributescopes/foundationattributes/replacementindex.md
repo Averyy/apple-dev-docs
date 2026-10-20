@@ -1,7 +1,8 @@
 # replacementIndex
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a replacement index attribute.
 
@@ -22,7 +23,8 @@ let replacementIndex: AttributeScopes.FoundationAttributes.ReplacementIndexAttri
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](attributescopes/foundationattributes/replacementindexattribute.md)
+### Using string formatting attributes
+- [AttributeScopes.FoundationAttributes.ReplacementIndexAttribute](./replacementindexattribute.md)
   A type for using a replacement index as an attribute.
 
 

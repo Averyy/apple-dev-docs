@@ -1,7 +1,8 @@
 # isSingle
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the album consists of a single song.
 

@@ -1,7 +1,8 @@
 # ActionEntityResolution.entityPath(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that resolves an entity by specifying a bind path relative to the entity playing the action.
 

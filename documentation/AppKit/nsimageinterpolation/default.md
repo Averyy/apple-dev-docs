@@ -1,12 +1,13 @@
 # NSImageInterpolation.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the context’s default interpolation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Use the context’s default interpolation.
 case `default`
 ```
 
+```c
+NSImageInterpolationDefault
+```
+
 ## See Also
 
-- [NSImageInterpolation.none](nsimageinterpolation/none.md)
+### Constants
+- [NSImageInterpolation.none](./none.md)
   No interpolation.
-- [NSImageInterpolation.low](nsimageinterpolation/low.md)
+- [NSImageInterpolation.low](./low.md)
   Fast, low-quality interpolation.
-- [NSImageInterpolation.medium](nsimageinterpolation/medium.md)
+- [NSImageInterpolation.medium](./medium.md)
   Medium quality, slower than the low interpolation option.
-- [NSImageInterpolation.high](nsimageinterpolation/high.md)
+- [NSImageInterpolation.high](./high.md)
   Highest quality, slower than the medium interpolation option.
 
 

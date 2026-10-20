@@ -1,7 +1,8 @@
 # dictionaryRepresentation(forAuxiliaryDataType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A dictionary of primitive map information used for writing an image file with a portrait effects matte.
 
@@ -20,21 +21,26 @@ A dictionary of primitive map information used for writing an image file with a 
 func dictionaryRepresentation(forAuxiliaryDataType outAuxDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?
 ```
 
+```objc
+- (NSDictionary *) dictionaryRepresentationForAuxiliaryDataType:(NSString **) outAuxDataType;
+```
+
 #### Return Value
 
-A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagedestinationaddauxiliarydatainfo(_:_:_:)).
+A dictionary of primitive map information for [`CGImageDestinationAddAuxiliaryDataInfo(_:_:_:)`](../../ImageIO/cgimagedestinationaddauxiliarydatainfo%28_,_,_%29.md).
 
 ## Parameters
 
-- `outAuxDataType`: Must be [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](https://developer.apple.com/documentation/imageio/kcgimageauxiliarydatatypeportraiteffectsmatte).
+- `outAuxDataType`: Must be [`kCGImageAuxiliaryDataTypePortraitEffectsMatte`](../../ImageIO/kcgimageauxiliarydatatypeportraiteffectsmatte.md).
 
 ## See Also
 
-- [Extracting Portrait Effects matte image data from a photo](extracting-portrait-effects-matte-image-data-from-a-photo.md)
+### Examining a Portrait Effects matte
+- [Extracting Portrait Effects matte image data from a photo](../extracting-portrait-effects-matte-image-data-from-a-photo.md)
   Check for portrait effects matte metadata in existing images.
-- [var mattingImage: CVPixelBuffer](avportraiteffectsmatte/mattingimage.md)
+- [var mattingImage: CVPixelBuffer](./mattingimage.md)
   The portrait effects matte’s internal image, formatted as a pixel buffer.
-- [var pixelFormatType: OSType](avportraiteffectsmatte/pixelformattype.md)
+- [var pixelFormatType: OSType](./pixelformattype.md)
   The pixel format type of this portrait effects matte’s internal image.
 
 

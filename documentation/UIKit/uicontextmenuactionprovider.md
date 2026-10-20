@@ -1,21 +1,26 @@
 # UIContextMenuActionProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias UIContextMenuActionProvider = ([UIMenuElement]) -> UIMenu?
+```
+
+```c
+typedef UIMenu *(^)(NSArray<UIMenuElement *> *) UIContextMenuActionProvider;
 ```
 
 #### Return Value
@@ -24,7 +29,7 @@ The menu object containing the actions for the user to select.
 
 #### Discussion
 
-Use this handler to create [`UIAction`](uiaction.md) objects representing the actions the user may choose from your menu. To organize groups of actions hierarchically, create a [`UIMenu`](uimenu.md) object to represent a submenu and add nested actions to it. Finally, build your top-level [`UIMenu`](uimenu.md) object from the actions and submenus you created, and return that menu object from your handler.
+Use this handler to create [`UIAction`](./uiaction.md) objects representing the actions the user may choose from your menu. To organize groups of actions hierarchically, create a [`UIMenu`](./uimenu.md) object to represent a submenu and add nested actions to it. Finally, build your top-level [`UIMenu`](./uimenu.md) object from the actions and submenus you created, and return that menu object from your handler.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ Use this handler to create [`UIAction`](uiaction.md) objects representing the ac
 
 ## See Also
 
-- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](uicontextmenuconfiguration/init(identifier:previewprovider:actionprovider:).md)
+### Creating the menu configuration object
+- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](./uicontextmenuconfiguration/init%28identifier,previewprovider,actionprovider%29.md)
   Creates a menu configuration object with the specified action and preview providers.
-- [typealias UIContextMenuContentPreviewProvider](uicontextmenucontentpreviewprovider.md)
+- [typealias UIContextMenuContentPreviewProvider](./uicontextmenucontentpreviewprovider.md)
   Returns the custom view controller to use when previewing your content.
 
 

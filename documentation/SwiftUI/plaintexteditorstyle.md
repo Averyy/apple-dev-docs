@@ -1,7 +1,8 @@
 # PlainTextEditorStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text editor style with no decoration.
 
@@ -21,23 +22,24 @@ struct PlainTextEditorStyle
 
 #### Overview
 
-You can also use [`plain`](texteditorstyle/plain.md) to create this style.
+You can also use [`plain`](./texteditorstyle/plain.md) to create this style.
 
 ## Topics
 
 ### Creating the text editor style
-- [init()](plaintexteditorstyle/init.md)
+- [init()](./plaintexteditorstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [TextEditorStyle](texteditorstyle.md)
+- [TextEditorStyle](./texteditorstyle.md)
 
 ## See Also
 
-- [struct AutomaticTextEditorStyle](automatictexteditorstyle.md)
+### Supporting types
+- [struct AutomaticTextEditorStyle](./automatictexteditorstyle.md)
   The default text editor style, based on the text editor’s context.
-- [struct RoundedBorderTextEditorStyle](roundedbordertexteditorstyle.md)
+- [struct RoundedBorderTextEditorStyle](./roundedbordertexteditorstyle.md)
   A text editor style with a system-defined rounded border.
 
 

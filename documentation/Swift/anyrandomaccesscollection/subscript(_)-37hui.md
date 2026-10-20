@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element indicated by `position`.
 
@@ -22,7 +23,7 @@ subscript(position: AnyRandomAccessCollection<Element>.Index) -> Element { get }
 
 #### Overview
 
-> **Note**: `position` indicates a valid position in `self` and `position != endIndex`.
+> **Precondition**: `position` indicates a valid position in `self` and `position != endIndex`.
 
 
 ---

@@ -1,7 +1,8 @@
 # setOperationalCertificateIssuer(_:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func setOperationalCertificateIssuer(_ operationalCertificateIssuer: any MTROperationalCertificateIssuer, queue: dispatch_queue_t)
+```
+
+```objc
+- (void) setOperationalCertificateIssuer:(id<MTROperationalCertificateIssuer>) operationalCertificateIssuer queue:(dispatch_queue_t) queue;
 ```
 
 

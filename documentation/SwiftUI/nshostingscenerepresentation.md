@@ -1,7 +1,8 @@
 # NSHostingSceneRepresentation
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An AppKit type that hosts and can present SwiftUI scenes
 
@@ -46,25 +47,26 @@ class ApplicationDelegate: NSApplicationDelegate {
 ## Topics
 
 ### Initializers
-- [init(rootScene: () -> Content)](nshostingscenerepresentation/init(rootscene:).md)
+- [init(rootScene: () -> Content)](./nshostingscenerepresentation/init%28rootscene%29.md)
   Creates a new hosting scene representation for the specified scene(s).
 ### Instance Properties
-- [var environment: EnvironmentValues](nshostingscenerepresentation/environment.md)
+- [var environment: EnvironmentValues](./nshostingscenerepresentation/environment.md)
   The environment for any scene(s) being represented by `self`.
 
 ## See Also
 
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+### Displaying SwiftUI views in AppKit
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class NSHostingController](nshostingcontroller.md)
+- [class NSHostingController](./nshostingcontroller.md)
   An AppKit view controller that hosts SwiftUI view hierarchy.
-- [class NSHostingView](nshostingview.md)
+- [class NSHostingView](./nshostingview.md)
   An AppKit view that hosts a SwiftUI view hierarchy.
-- [class NSHostingMenu](nshostingmenu.md)
+- [class NSHostingMenu](./nshostingmenu.md)
   An AppKit menu with menu items that are defined by a SwiftUI View.
-- [struct NSHostingSizingOptions](nshostingsizingoptions.md)
+- [struct NSHostingSizingOptions](./nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
-- [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
+- [struct NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 
 

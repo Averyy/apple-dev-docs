@@ -1,7 +1,8 @@
 # GeoEntityType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The geographic granularity (dimension) of a geo entity, from country down to postal code.
 
@@ -10,13 +11,20 @@ The geographic granularity (dimension) of a geo entity, from country down to pos
 
 ## Declaration
 
-```swift
+```
 string GeoEntityType
 ```
 
+## Possible Values
+
+- `Country`: A country-level geo entity.
+- `AdminArea`: A state, province, or other administrative-area-level geo entity.
+- `Locality`: A city or locality-level geo entity.
+- `PostalCode`: A postal-code-level geo entity.
+
 ## See Also
 
-- [type SearchSupplySourceType](searchsupplysourcetype.md)
+- [type SearchSupplySourceType](./searchsupplysourcetype.md)
   The supply source context (App Store or Apple Maps) used to scope a geo location search.
 
 

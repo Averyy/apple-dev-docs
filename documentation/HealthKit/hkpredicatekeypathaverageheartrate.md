@@ -1,7 +1,8 @@
 # HKPredicateKeyPathAverageHeartRate
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for the sample’s average heart rate.
 
@@ -19,15 +20,20 @@ The key path for the sample’s average heart rate.
 let HKPredicateKeyPathAverageHeartRate: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathAverageHeartRate;
+```
+
 #### Discussion
 
 Use this constant whenever you want to include the ECG’s average heart rate in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 
 ## See Also
 
-- [let HKPredicateKeyPathECGClassification: String](hkpredicatekeypathecgclassification.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathECGClassification: String](./hkpredicatekeypathecgclassification.md)
   The key path for the sample’s classification.
-- [let HKPredicateKeyPathECGSymptomsStatus: String](hkpredicatekeypathecgsymptomsstatus.md)
+- [let HKPredicateKeyPathECGSymptomsStatus: String](./hkpredicatekeypathecgsymptomsstatus.md)
   The key path for the sample’s symptom status.
 
 

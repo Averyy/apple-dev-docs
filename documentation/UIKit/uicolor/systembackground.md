@@ -1,7 +1,8 @@
 # systemBackground
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color for the main background of your interface.
 
@@ -17,15 +18,20 @@ The color for the main background of your interface.
 class var systemBackground: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * systemBackgroundColor;
+```
+
 #### Discussion
 
 Use this color for standard table views and designs that have a white primary background in a light environment.
 
 ## See Also
 
-- [class var secondarySystemBackground: UIColor](uicolor/secondarysystembackground.md)
+### Standard content background colors
+- [class var secondarySystemBackground: UIColor](./secondarysystembackground.md)
   The color for content layered on top of the main background.
-- [class var tertiarySystemBackground: UIColor](uicolor/tertiarysystembackground.md)
+- [class var tertiarySystemBackground: UIColor](./tertiarysystembackground.md)
   The color for content layered on top of secondary backgrounds.
 
 

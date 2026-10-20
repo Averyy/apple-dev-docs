@@ -1,7 +1,8 @@
 # init(attributedString:range:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context object with the specified attributed string and range information.
 
@@ -12,6 +13,10 @@ Creates a context object with the specified attributed string and range informat
 
 ```swift
 init(attributedString: NSAttributedString, range: NSRange)
+```
+
+```objc
+- (instancetype) initWithAttributedString:(NSAttributedString *) attributedString range:(NSRange) range;
 ```
 
 #### Discussion

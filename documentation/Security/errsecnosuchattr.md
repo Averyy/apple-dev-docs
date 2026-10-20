@@ -1,7 +1,8 @@
 # errSecNoSuchAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attribute does not exist.
 
@@ -18,6 +19,10 @@ The attribute does not exist.
 
 ```swift
 var errSecNoSuchAttr: OSStatus { get }
+```
+
+```c
+errSecNoSuchAttr
 ```
 
 

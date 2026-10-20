@@ -1,7 +1,8 @@
 # haptics
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the haptics for the device, if supported.
 
@@ -12,6 +13,10 @@ Gets the haptics for the device, if supported.
 
 ```swift
 var haptics: GCDeviceHaptics? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) GCDeviceHaptics * haptics;
 ```
 
 #### Discussion

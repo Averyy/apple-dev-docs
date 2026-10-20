@@ -1,7 +1,8 @@
 # defaultDirectoryURL
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The location of the directory that contains the persistent stores.
 
@@ -11,7 +12,7 @@ The location of the directory that contains the persistent stores.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ class var defaultDirectoryURL: URL { get }
 
 ## See Also
 
-- [class func defaultDirectoryURL() -> URL](nspersistentcontainer/defaultdirectoryurl.md)
+### Accessing the Default Directory
+- [class func defaultDirectoryURL() -> URL](./defaultdirectoryurl%28%29.md)
   Returns the location of the directory that contains the persistent stores.
 
 

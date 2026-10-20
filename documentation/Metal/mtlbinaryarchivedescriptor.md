@@ -1,7 +1,8 @@
 # MTLBinaryArchiveDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a binary shader archive that you want to create.
 
@@ -19,36 +20,41 @@ A description of a binary shader archive that you want to create.
 class MTLBinaryArchiveDescriptor
 ```
 
+```objc
+@interface MTLBinaryArchiveDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 ## Topics
 
 ### Choosing an archive file
-- [var url: URL?](mtlbinaryarchivedescriptor/url.md)
+- [var url: URL?](./mtlbinaryarchivedescriptor/url.md)
   A URL to a Metal binary archive file.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func makeBinaryArchive(descriptor: MTLBinaryArchiveDescriptor) throws -> any MTLBinaryArchive](mtldevice/makebinaryarchive(descriptor:).md)
+### Creating binary shader archives
+- [func makeBinaryArchive(descriptor: MTLBinaryArchiveDescriptor) throws -> any MTLBinaryArchive](./mtldevice/makebinaryarchive%28descriptor%29.md)
   Creates a Metal binary archive instance.
-- [MTLBinaryArchiveError.Code](mtlbinaryarchiveerror-swift.struct/code.md)
+- [MTLBinaryArchiveError.Code](./mtlbinaryarchiveerror-swift.struct/code.md)
   Error codes when creating binary archives of compiled shader code.
-- [let MTLBinaryArchiveDomain: String](mtlbinaryarchivedomain.md)
+- [let MTLBinaryArchiveDomain: String](./mtlbinaryarchivedomain.md)
   The domain for Metal binary archive errors.
 
 

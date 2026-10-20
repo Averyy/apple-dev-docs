@@ -1,7 +1,8 @@
 # init(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor referencing the named function in the given library.
 

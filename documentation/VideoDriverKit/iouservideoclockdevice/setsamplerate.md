@@ -1,7 +1,8 @@
 # SetSampleRate
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current sample rate for the clock device.
 
@@ -10,7 +11,7 @@ Sets the current sample rate for the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetSampleRate(double in_sample_rate);
 ```
 
@@ -24,13 +25,14 @@ Changing the sample rate will send a notification to the host to update the obje
 
 ## See Also
 
-- [GetSampleRate](iouservideoclockdevice/getsamplerate.md)
+### Working with sample rates
+- [GetSampleRate](./getsamplerate.md)
   Gets sample rate of the clock device.
-- [SetAvailableSampleRates](iouservideoclockdevice/setavailablesamplerates.md)
+- [SetAvailableSampleRates](./setavailablesamplerates.md)
   Sets the available sample rates for the clock device.
-- [GetAvailableSampleRates](iouservideoclockdevice/getavailablesamplerates.md)
+- [GetAvailableSampleRates](./getavailablesamplerates.md)
   Gets available sample rates of the clock device.
-- [GetNumberAvailableSampleRates](iouservideoclockdevice/getnumberavailablesamplerates.md)
+- [GetNumberAvailableSampleRates](./getnumberavailablesamplerates.md)
   Gets number of available sample rates of the clock device.
 
 

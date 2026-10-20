@@ -1,7 +1,8 @@
 # SWAttributionView.DisplayContext
 
 **Framework**: Shared with You  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The context for the content that influences the ranking of this view’s highlight.
 
@@ -19,39 +20,44 @@ The context for the content that influences the ranking of this view’s highlig
 enum DisplayContext
 ```
 
+```c
+enum SWAttributionViewDisplayContext : NSInteger;
+```
+
 ## Mentions
 
-- [Making your app content shareable](making-your-app-content-shareable.md)
+- [Making your app content shareable](../making-your-app-content-shareable.md)
 
 #### Overview
 
-Set the appropriate display context on [`SWAttributionView`](swattributionview.md) before the system adds the view to a window. This informs the system about how the user is consuming the attributed content, and influences future relevancy ranking of the [`SWHighlight`](swhighlight.md) for this view.
+Set the appropriate display context on [`SWAttributionView`](../swattributionview.md) before the system adds the view to a window. This informs the system about how the user is consuming the attributed content, and influences future relevancy ranking of the [`SWHighlight`](../swhighlight.md) for this view.
 
 ## Topics
 
 ### Context styles
-- [SWAttributionView.DisplayContext.summary](swattributionview/displaycontext-swift.enum/summary.md)
+- [SWAttributionView.DisplayContext.summary](./displaycontext-swift.enum/summary.md)
   Indicates that the system is offering the attributed content shown along with this view to the user for consumption.
-- [SWAttributionView.DisplayContext.detail](swattributionview/displaycontext-swift.enum/detail.md)
+- [SWAttributionView.DisplayContext.detail](./displaycontext-swift.enum/detail.md)
   Indicates that the attributed content shown along with this view is being actively consumed by the user.
 ### Initializers
-- [init?(rawValue: Int)](swattributionview/displaycontext-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./displaycontext-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SWAttributionView.BackgroundStyle](swattributionview/backgroundstyle-swift.enum.md)
+### Customizing the view
+- [SWAttributionView.BackgroundStyle](./backgroundstyle-swift.enum.md)
   The background styling of the attribution view’s contents.
-- [SWAttributionView.HorizontalAlignment](swattributionview/horizontalalignment-swift.enum.md)
+- [SWAttributionView.HorizontalAlignment](./horizontalalignment-swift.enum.md)
   The horizontal alignment of attribution view’s contents.
 
 

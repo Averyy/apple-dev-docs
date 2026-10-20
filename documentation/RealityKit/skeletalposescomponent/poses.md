@@ -1,7 +1,8 @@
 # poses
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of the skeletal poses for a single entity.
 

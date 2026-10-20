@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the control.
@@ -24,7 +25,7 @@ The content and behavior of the control.
 
 For any controls that you create, provide a computed `body` property that defines the control using some control widget configuration.
 
-Swift infers the control’s [`Body`](controlwidget/body-swift.associatedtype.md) associated type based on the contents of the `body` property.
+Swift infers the control’s [`Body`](./body-swift.associatedtype.md) associated type based on the contents of the `body` property.
 
 
 ---

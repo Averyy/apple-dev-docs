@@ -1,14 +1,15 @@
 # getAsyncTargetAndMethodForIndex
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOExternalAsyncMethod * getAsyncTargetAndMethodForIndex(OSSharedPtr<IOService> & targetP, UInt32 index);
 ```
 

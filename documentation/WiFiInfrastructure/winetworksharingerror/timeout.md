@@ -1,7 +1,8 @@
 # WINetworkSharingError.timeout
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the requested operation timed out.
 

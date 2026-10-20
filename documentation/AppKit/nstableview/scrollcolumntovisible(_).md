@@ -1,12 +1,13 @@
 # scrollColumnToVisible(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls the view so the specified column is visible.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,21 @@ Scrolls the view so the specified column is visible.
 func scrollColumnToVisible(_ column: Int)
 ```
 
+```objc
+- (void) scrollColumnToVisible:(NSInteger) column;
+```
+
 ## Parameters
 
-- `column`: The index of the column in the [`tableColumns`](nstableview/tablecolumns.md) array.
+- `column`: The index of the column in the [`tableColumns`](./tablecolumns.md) array.
 
 ## See Also
 
-- [func scroll(to: NSPoint)](nsclipview/scroll(to:).md)
+### Related Documentation
+- [func scroll(to: NSPoint)](../nsclipview/scroll%28to%29.md)
   Changes the origin of the clip view’s bounds rectangle to `newOrigin`.
-- [func scrollRowToVisible(Int)](nstableview/scrollrowtovisible(_:).md)
+### Scrolling
+- [func scrollRowToVisible(Int)](./scrollrowtovisible%28_%29.md)
   Scrolls the view so the specified row is visible.
 
 

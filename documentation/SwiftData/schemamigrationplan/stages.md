@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -22,7 +23,8 @@ static var stages: [MigrationStage] { get }
 
 ## See Also
 
-- [enum MigrationStage](migrationstage.md)
+### Managing migration stages
+- [enum MigrationStage](../migrationstage.md)
   Describes a migration between two versions of the same schema.
 
 

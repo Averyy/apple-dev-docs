@@ -1,7 +1,8 @@
 # Transcript.AttachmentSegment
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A segment containing attached files or images.
 
@@ -22,32 +23,33 @@ struct AttachmentSegment
 ## Topics
 
 ### Creating an attachment segment
-- [init(id: String, content: Transcript.Attachment, label: String?)](transcript/attachmentsegment/init(id:content:label:).md)
+- [init(id: String, content: Transcript.Attachment, label: String?)](./attachmentsegment/init%28id,content,label%29.md)
   Creates an attachment segment that wraps the content you provide.
 ### Inspecting an attachment segment
-- [var content: Transcript.Attachment](transcript/attachmentsegment/content.md)
+- [var content: Transcript.Attachment](./attachmentsegment/content.md)
   The attached file or image.
-- [var label: String?](transcript/attachmentsegment/label.md)
+- [var label: String?](./attachmentsegment/label.md)
   An optional label that identifies the attachment.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Segment](transcript/segment.md)
+### Segments
+- [Transcript.Segment](./segment.md)
   The types of segments that may be included in a transcript entry.
-- [Transcript.TextSegment](transcript/textsegment.md)
+- [Transcript.TextSegment](./textsegment.md)
   A segment containing text.
-- [Transcript.StructuredSegment](transcript/structuredsegment.md)
+- [Transcript.StructuredSegment](./structuredsegment.md)
   A segment containing structured content.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the elements of a sequence or collection to the end of this collection.
@@ -34,11 +35,17 @@ print(numbers)
 // Prints "[1, 2, 3, 4, 5, 10, 11, 12, 13, 14, 15]"
 ```
 
-> **Note**: O(*m*), where *m* is the length of `newElements`.
+> **Complexity**: O(*m*), where *m* is the length of `newElements`.
 
 ## Parameters
 
 - `newElements`: The elements to append to the collection.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func append<S>(contentsOf: S)](./append%28contentsof%29-15j8g.md)
+  Adds the elements of a sequence or collection to the end of this collection.
 
 
 ---

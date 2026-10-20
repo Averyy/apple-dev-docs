@@ -1,7 +1,8 @@
 # printerPickerControllerDidPresent(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the printer picker was displayed and is now visible.
 
@@ -17,6 +18,10 @@ Tells the delegate that the printer picker was displayed and is now visible.
 optional func printerPickerControllerDidPresent(_ printerPickerController: UIPrinterPickerController)
 ```
 
+```objc
+- (void) printerPickerControllerDidPresent:(UIPrinterPickerController *) printerPickerController;
+```
+
 #### Discussion
 
 Use this method to perform any tasks associated with displaying the printer picker controller.
@@ -27,13 +32,14 @@ Use this method to perform any tasks associated with displaying the printer pick
 
 ## See Also
 
-- [func printerPickerControllerParentViewController(UIPrinterPickerController) -> UIViewController?](uiprinterpickercontrollerdelegate/printerpickercontrollerparentviewcontroller(_:).md)
+### Responding to Printer Picker Events
+- [func printerPickerControllerParentViewController(UIPrinterPickerController) -> UIViewController?](./printerpickercontrollerparentviewcontroller%28_%29.md)
   Asks the delegate to provide the view controller to act as the parent of the printer picker.
-- [func printerPickerControllerWillPresent(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerwillpresent(_:).md)
+- [func printerPickerControllerWillPresent(UIPrinterPickerController)](./printerpickercontrollerwillpresent%28_%29.md)
   Tells the delegate that the printer picker is about to be displayed.
-- [func printerPickerControllerWillDismiss(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerwilldismiss(_:).md)
+- [func printerPickerControllerWillDismiss(UIPrinterPickerController)](./printerpickercontrollerwilldismiss%28_%29.md)
   Tells the delegate that the printer picker is about to be dismissed.
-- [func printerPickerControllerDidDismiss(UIPrinterPickerController)](uiprinterpickercontrollerdelegate/printerpickercontrollerdiddismiss(_:).md)
+- [func printerPickerControllerDidDismiss(UIPrinterPickerController)](./printerpickercontrollerdiddismiss%28_%29.md)
   Tells the delegate that the printer picker was dismissed.
 
 

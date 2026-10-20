@@ -1,7 +1,8 @@
 # String.IntentInputOptions.CapitalizationType.allCharacters
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that capitalizes all characters.
 

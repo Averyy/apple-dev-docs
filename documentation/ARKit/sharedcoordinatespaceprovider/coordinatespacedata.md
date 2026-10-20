@@ -1,7 +1,8 @@
 # SharedCoordinateSpaceProvider.CoordinateSpaceData
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A coordinate space data object.
 
@@ -21,19 +22,19 @@ struct CoordinateSpaceData
 ## Topics
 
 ### Initializers
-- [init?(data: Data)](sharedcoordinatespaceprovider/coordinatespacedata/init(data:).md)
+- [init?(data: Data)](./coordinatespacedata/init%28data%29.md)
   Initialize a `CoordinateSpaceData` from a data blob.
 ### Instance Properties
-- [var data: Data](sharedcoordinatespaceprovider/coordinatespacedata/data.md)
+- [var data: Data](./coordinatespacedata/data.md)
   Extract a `Data` object.
-- [var recipientIdentifiers: [UUID]](sharedcoordinatespaceprovider/coordinatespacedata/recipientidentifiers.md)
+- [var recipientIdentifiers: [UUID]](./coordinatespacedata/recipientidentifiers.md)
   Participant identifiers of the intended recipient for this data. Data should be broadcast if the list is empty.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

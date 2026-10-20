@@ -2,6 +2,7 @@
 
 **Framework**: ImageCaptureCore  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that a device has been added.
@@ -19,6 +20,10 @@ Tells the delegate that a device has been added.
 func deviceBrowser(_ browser: ICDeviceBrowser, didAdd device: ICDevice, moreComing: Bool)
 ```
 
+```objc
+- (void) deviceBrowser:(ICDeviceBrowser *) browser didAddDevice:(ICDevice *) device moreComing:(BOOL) moreComing;
+```
+
 #### Discussion
 
 If several devices are found during the initial search, then this message is sent once for each device with the value of `moreComing` set to `true` in each message except the last one.
@@ -27,10 +32,11 @@ Not all devices are reported using this method. Devices that fail to communicate
 
 ## See Also
 
-- [func deviceBrowser(ICDeviceBrowser, didRemove: ICDevice, moreGoing: Bool)](icdevicebrowserdelegate/devicebrowser(_:didremove:moregoing:).md)
+### Adding and Removing Devices
+- [func deviceBrowser(ICDeviceBrowser, didRemove: ICDevice, moreGoing: Bool)](./devicebrowser%28_,didremove,moregoing%29.md)
   Tells the delegate that a device has been removed.
-- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](icdevicebrowserdelegate/devicebrowserdidenumeratelocaldevices(_:).md)
-  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](icdevicebrowserdelegate/devicebrowser(_:didadd:morecoming:).md) for all local devices.
+- [func deviceBrowserDidEnumerateLocalDevices(ICDeviceBrowser)](./devicebrowserdidenumeratelocaldevices%28_%29.md)
+  Tells the delegate that the device browser has completed sending [`deviceBrowser(_:didAdd:moreComing:)`](./devicebrowser%28_,didadd,morecoming%29.md) for all local devices.
 
 
 ---

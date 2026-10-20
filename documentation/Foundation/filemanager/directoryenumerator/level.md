@@ -1,7 +1,8 @@
 # level
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of levels deep the current object is in the directory hierarchy being enumerated.
 
@@ -20,15 +21,20 @@ The number of levels deep the current object is in the directory hierarchy being
 var level: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger level;
+```
+
 #### Discussion
 
-The number of levels, with the directory passed to [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](nsfilemanager/enumeratoraturl:includingpropertiesforkeys:options:errorhandler:.md) (`NSFileManager`) considered to be level `0`.
+The number of levels, with the directory passed to [`enumeratorAtURL:includingPropertiesForKeys:options:errorHandler:`](../../nsfilemanager/enumeratoraturl_includingpropertiesforkeys_options_errorhandler_.md) (`NSFileManager`) considered to be level `0`.
 
 ## See Also
 
-- [var directoryAttributes: [FileAttributeKey : Any]?](filemanager/directoryenumerator/directoryattributes.md)
+### Getting File and Directory Attributes
+- [var directoryAttributes: [FileAttributeKey : Any]?](./directoryattributes.md)
   A dictionary with the attributes of the directory at which enumeration started.
-- [var fileAttributes: [FileAttributeKey : Any]?](filemanager/directoryenumerator/fileattributes.md)
+- [var fileAttributes: [FileAttributeKey : Any]?](./fileattributes.md)
   A dictionary with the attributes of the most recently returned file or subdirectory (as referenced by the pathname).
 
 

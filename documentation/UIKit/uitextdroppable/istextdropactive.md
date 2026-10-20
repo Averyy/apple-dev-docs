@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the text view has at least one active drop session.
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the text view has at least one active dro
 
 ```swift
 var isTextDropActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isTextDropActive) BOOL textDropActive;
 ```
 
 

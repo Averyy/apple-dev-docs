@@ -1,7 +1,8 @@
 # dimensionsForSemanticSegmentationMatte(ofType:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the resolved dimensions of the semantic segmentation mattes that the photo output delivers.
 
@@ -17,9 +18,13 @@ Retrieves the resolved dimensions of the semantic segmentation mattes that the p
 func dimensionsForSemanticSegmentationMatte(ofType semanticSegmentationMatteType: AVSemanticSegmentationMatte.MatteType) -> CMVideoDimensions
 ```
 
+```objc
+- (CMVideoDimensions) dimensionsForSemanticSegmentationMatteOfType:(AVSemanticSegmentationMatteType) semanticSegmentationMatteType;
+```
+
 #### Return Value
 
-A [`CMVideoDimensions`](https://developer.apple.com/documentation/coremedia/cmvideodimensions) structure that provides the height and width of the image mattes.
+A [`CMVideoDimensions`](../../CoreMedia/cmvideodimensions.md) structure that provides the height and width of the image mattes.
 
 ## Parameters
 
@@ -27,23 +32,24 @@ A [`CMVideoDimensions`](https://developer.apple.com/documentation/coremedia/cmvi
 
 ## See Also
 
-- [var photoDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/photodimensions.md)
+### Examining output dimensions
+- [var photoDimensions: CMVideoDimensions](./photodimensions.md)
   The size, in pixels, of the photo image (in a processed format, such as JPEG) that the capture delivers.
-- [var deferredPhotoProxyDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/deferredphotoproxydimensions.md)
+- [var deferredPhotoProxyDimensions: CMVideoDimensions](./deferredphotoproxydimensions.md)
   The resolved dimensions of the photo proxy when using deferred photo delivery.
-- [var rawPhotoDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/rawphotodimensions.md)
+- [var rawPhotoDimensions: CMVideoDimensions](./rawphotodimensions.md)
   The size, in pixels, of the RAW-format photo image that the capture delivers.
-- [var previewDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/previewdimensions.md)
+- [var previewDimensions: CMVideoDimensions](./previewdimensions.md)
   The size, in pixels, of the preview image that the system delivers with the capture.
-- [var embeddedThumbnailDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/embeddedthumbnaildimensions.md)
+- [var embeddedThumbnailDimensions: CMVideoDimensions](./embeddedthumbnaildimensions.md)
   The size, in pixels, of the thumbnail image that the capture delivers.
-- [var rawEmbeddedThumbnailDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/rawembeddedthumbnaildimensions.md)
+- [var rawEmbeddedThumbnailDimensions: CMVideoDimensions](./rawembeddedthumbnaildimensions.md)
   The size, in pixels, of the RAW-format embedded thumbnail image that the capture delivers.
-- [var livePhotoMovieDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/livephotomoviedimensions.md)
+- [var livePhotoMovieDimensions: CMVideoDimensions](./livephotomoviedimensions.md)
   The size, in pixels, of the Live Photo movie content that the capture delivers.
-- [var portraitEffectsMatteDimensions: CMVideoDimensions](avcaptureresolvedphotosettings/portraiteffectsmattedimensions.md)
+- [var portraitEffectsMatteDimensions: CMVideoDimensions](./portraiteffectsmattedimensions.md)
   The size, in pixels, of the portrait effects matte that the capture delivers.
-- [var photoProcessingTimeRange: CMTimeRange](avcaptureresolvedphotosettings/photoprocessingtimerange.md)
+- [var photoProcessingTimeRange: CMTimeRange](./photoprocessingtimerange.md)
   The time range in which to expect the system to deliver the photo to the delegate.
 
 

@@ -1,14 +1,15 @@
 # PE_handle_platform_error
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool PE_handle_platform_error(vm_offset_t far);
 ```
 

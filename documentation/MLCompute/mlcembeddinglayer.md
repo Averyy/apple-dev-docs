@@ -1,16 +1,17 @@
 # MLCEmbeddingLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that stores a word embedding.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,42 +19,47 @@ A layer that stores a word embedding.
 class MLCEmbeddingLayer
 ```
 
+```objc
+@interface MLCEmbeddingLayer : MLCLayer
+```
+
 ## Topics
 
 ### Creating Embedding Layers
-- [convenience init(descriptor: MLCEmbeddingDescriptor, weights: MLCTensor)](mlcembeddinglayer/init(descriptor:weights:).md)
+- [convenience init(descriptor: MLCEmbeddingDescriptor, weights: MLCTensor)](./mlcembeddinglayer/init%28descriptor,weights%29.md)
   Creates an embedding layer with the descriptor and word embedding weights tensor you specify.
-- [class MLCEmbeddingDescriptor](mlcembeddingdescriptor.md)
+- [class MLCEmbeddingDescriptor](./mlcembeddingdescriptor.md)
   A configuration object you use to create an embedding layer.
 ### Inspecting Embedding Layers
-- [var descriptor: MLCEmbeddingDescriptor](mlcembeddinglayer/descriptor.md)
+- [var descriptor: MLCEmbeddingDescriptor](./mlcembeddinglayer/descriptor.md)
   The configuration object you use to create the embedding layer.
-- [var weights: MLCTensor](mlcembeddinglayer/weights.md)
+- [var weights: MLCTensor](./mlcembeddinglayer/weights.md)
   The weights tensor that contains the word embedding.
-- [var weightsParameter: MLCTensorParameter](mlcembeddinglayer/weightsparameter.md)
+- [var weightsParameter: MLCTensorParameter](./mlcembeddinglayer/weightsparameter.md)
   The tensor parameter that describes the weights for the optimizer update.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCConvolutionLayer](mlcconvolutionlayer.md)
+### Convolution and Recurrent Layers
+- [class MLCConvolutionLayer](./mlcconvolutionlayer.md)
   A layer that applies a convolution over a signal.
-- [class MLCLSTMLayer](mlclstmlayer.md)
+- [class MLCLSTMLayer](./mlclstmlayer.md)
   A layer that represents long short-term memory (LSTM) networks.
-- [class MLCPoolingLayer](mlcpoolinglayer.md)
+- [class MLCPoolingLayer](./mlcpoolinglayer.md)
   A layer that summarizes the average presence of a feature.
-- [class MLCUpsampleLayer](mlcupsamplelayer.md)
+- [class MLCUpsampleLayer](./mlcupsamplelayer.md)
   A layer that applies upsampling with the shape you specify.
 
 

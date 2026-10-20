@@ -1,17 +1,20 @@
 # append(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a timed metadata group to the adaptor.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAssetWriter.inputMetadataReceiver(for:) instead
 
 ## Declaration
 
@@ -19,15 +22,19 @@ Appends a timed metadata group to the adaptor.
 func append(_ timedMetadataGroup: AVTimedMetadataGroup) -> Bool
 ```
 
+```objc
+- (BOOL) appendTimedMetadataGroup:(AVTimedMetadataGroup *) timedMetadataGroup;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the adaptor appends the group; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the adaptor appends the group; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
 The timing of metadata items in the output asset correspond to the time range of the timed metadata group, regardless of the values of their individual time and duration properties.
 
-> ❗ **Important**:  Only call this method after you’ve attached the related input to the asset writer and called its [`startWriting()`](avassetwriter/startwriting().md) method.
+> ❗ **Important**:  Only call this method after you’ve attached the related input to the asset writer and called its [`startWriting()`](../avassetwriter/startwriting%28%29.md) method.
 
 ## Parameters
 

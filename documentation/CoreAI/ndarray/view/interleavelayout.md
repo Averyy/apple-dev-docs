@@ -1,7 +1,8 @@
 # interleaveLayout
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
@@ -18,19 +19,22 @@ Returns which dimension is interleaved, and by what factor it is interleaved. Or
 var interleaveLayout: NDArray.InterleaveLayout? { get }
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Discussion
 
-See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md) for full documentation.
+See [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md) for full documentation.
 
 ## See Also
 
-- [var isContiguous: Bool](ndarray/view/iscontiguous.md)
+### Inspecting the view
+- [var isContiguous: Bool](./iscontiguous.md)
   Returns `true` if the elements in this view have a row-major contiguous layout.
-- [var rank: Int](ndarray/view/rank.md)
+- [var rank: Int](./rank.md)
   The rank of the tensor.
-- [var shape: Span<Int>](ndarray/view/shape.md)
+- [var shape: Span<Int>](./shape.md)
   The shape of the tensor.
-- [var strides: Span<Int>](ndarray/view/strides.md)
+- [var strides: Span<Int>](./strides.md)
   The strides of the tensor.
 
 

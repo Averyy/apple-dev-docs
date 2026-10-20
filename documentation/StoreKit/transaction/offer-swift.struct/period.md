@@ -1,7 +1,8 @@
 # period
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the offer applied to a transaction.
 
@@ -22,15 +23,16 @@ let period: Product.SubscriptionPeriod?
 
 ## See Also
 
-- [let id: String?](transaction/offer-swift.struct/id.md)
+### Getting offer details
+- [let id: String?](./id.md)
   A string that identifies an offer that applies to the transaction.
-- [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
+- [let type: Transaction.OfferType](./type.md)
   The type of offer that applies to the transaction.
-- [Transaction.OfferType](transaction/offertype-swift.struct.md)
+- [Transaction.OfferType](../offertype-swift.struct.md)
   The types of offers that apply to a transaction.
-- [let paymentMode: Transaction.Offer.PaymentMode?](transaction/offer-swift.struct/paymentmode-swift.property.md)
+- [let paymentMode: Transaction.Offer.PaymentMode?](./paymentmode-swift.property.md)
   The payment mode for a subscription offer on an auto-renewable subscription that applies to the transaction.
-- [Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct.md)
+- [Transaction.Offer.PaymentMode](./paymentmode-swift.struct.md)
   The payment modes for offers that apply to a transaction.
 
 

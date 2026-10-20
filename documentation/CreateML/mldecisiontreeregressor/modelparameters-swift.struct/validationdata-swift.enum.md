@@ -1,7 +1,8 @@
 # MLDecisionTreeRegressor.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for specifying validation data.
 
@@ -22,19 +23,20 @@ enum ValidationData
 ## Topics
 
 ### Specifying validation data
-- [MLDecisionTreeRegressor.ModelParameters.ValidationData.split(strategy:)](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLDecisionTreeRegressor.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLDecisionTreeRegressor.ModelParameters.ValidationData.table(_:)](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.enum/table(_:).md)
+- [MLDecisionTreeRegressor.ModelParameters.ValidationData.table(_:)](./validationdata-swift.enum/table%28_%29.md)
   Set validation data from the MLDataTable provided.
-- [MLDecisionTreeRegressor.ModelParameters.ValidationData.dataFrame(_:)](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLDecisionTreeRegressor.ModelParameters.ValidationData.dataFrame(_:)](./validationdata-swift.enum/dataframe%28_%29.md)
   Set validation data from the DataFrame provided.
-- [MLDecisionTreeRegressor.ModelParameters.ValidationData.none](mldecisiontreeregressor/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLDecisionTreeRegressor.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   Do not set validation data.
 
 ## See Also
 
-- [init(validation: MLDecisionTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](mldecisiontreeregressor/modelparameters-swift.struct/init(validation:maxdepth:minlossreduction:minchildweight:randomseed:).md)
-- [init(validationData: MLDataTable?, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](mldecisiontreeregressor/modelparameters-swift.struct/init(validationdata:maxdepth:minlossreduction:minchildweight:randomseed:).md)
+### Creating parameters
+- [init(validation: MLDecisionTreeRegressor.ModelParameters.ValidationData, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](./init%28validation,maxdepth,minlossreduction,minchildweight,randomseed%29.md)
+- [init(validationData: MLDataTable?, maxDepth: Int, minLossReduction: Double, minChildWeight: Double, randomSeed: Int)](./init%28validationdata,maxdepth,minlossreduction,minchildweight,randomseed%29.md)
   Creates a new set of parameters.
 
 

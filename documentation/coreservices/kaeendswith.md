@@ -1,7 +1,8 @@
 # kAEEndsWith
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of `operand1` ends with the value of `operand2` (for example, the string `"operand"` ends with the string `"and"`).
 

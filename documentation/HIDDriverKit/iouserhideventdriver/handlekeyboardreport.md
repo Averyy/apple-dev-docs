@@ -1,17 +1,18 @@
 # handleKeyboardReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Iterates through keyboard elements and dispatches them if the element value has been updated.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleKeyboardReport(uint64_t timestamp, uint32_t reportID);
 ```
 
@@ -26,17 +27,18 @@ This method iterates over the keyboard elements from the report and dispatches e
 
 ## See Also
 
-- [handleReport](iouserhideventdriver/handlereport.md)
+### Handling New Data Reports
+- [handleReport](./handlereport.md)
   Processes the information in a new device report and dispatches any relevant events in response.
-- [handleRelativePointerReport](iouserhideventdriver/handlerelativepointerreport.md)
+- [handleRelativePointerReport](./handlerelativepointerreport.md)
   Iterates through relative pointer elements and dispatches them if the element value has been updated.
-- [handleAbsolutePointerReport](iouserhideventdriver/handleabsolutepointerreport.md)
+- [handleAbsolutePointerReport](./handleabsolutepointerreport.md)
   Iterates through absolute pointer elements and dispatches them if the element value has been updated.
-- [handleScrollReport](iouserhideventdriver/handlescrollreport.md)
+- [handleScrollReport](./handlescrollreport.md)
   Iterates through scroll elements and dispatches them if the element value has been updated.
-- [handleDigitizerReport](iouserhideventdriver/handledigitizerreport.md)
+- [handleDigitizerReport](./handledigitizerreport.md)
   Processes the digitizer elements and dispatches events for any updated values.
-- [createEventForDigitizerCollection](iouserhideventdriver/createeventfordigitizercollection.md)
+- [createEventForDigitizerCollection](./createeventfordigitizercollection.md)
   Creates a HID event object that represents a digitizer collection.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: PaperKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unrotated frame that tightly fits the rendered contents of the element.
@@ -25,11 +26,12 @@ This frame includes padding around `frame` to ensure it includes all the rendere
 
 ## See Also
 
-- [var frame: CGRect](markup/frame.md)
+### Laying out
+- [var frame: CGRect](./frame.md)
   The element’s unrotated frame.
-- [var rotation: CGFloat](markup/rotation.md)
+- [var rotation: CGFloat](./rotation.md)
   The element’s rotation around the center of its frame.
-- [func applyTransform(CGAffineTransform)](markup/applytransform(_:).md)
+- [func applyTransform(CGAffineTransform)](./applytransform%28_%29.md)
   Transforms this element with the specified transform.
 
 

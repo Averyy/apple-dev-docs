@@ -1,7 +1,8 @@
 # backItem
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item immediately preceding the current item, if any.
 
@@ -18,15 +19,20 @@ The item immediately preceding the current item, if any.
 var backItem: WKBackForwardListItem? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) WKBackForwardListItem * backItem;
+```
+
 #### Discussion
 
 If the current item is the first item in the list, the value in this property is `nil`.
 
 ## See Also
 
-- [var currentItem: WKBackForwardListItem?](wkbackforwardlist/currentitem.md)
+### Getting the Most Recent Items
+- [var currentItem: WKBackForwardListItem?](./currentitem.md)
   The current item.
-- [var forwardItem: WKBackForwardListItem?](wkbackforwardlist/forwarditem.md)
+- [var forwardItem: WKBackForwardListItem?](./forwarditem.md)
   The item immediately following the current item, if any.
 
 

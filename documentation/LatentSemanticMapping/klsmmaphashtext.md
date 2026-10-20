@@ -1,18 +1,23 @@
 # kLSMMapHashText
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option that specifies to transform the text so it’s not human-readable.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kLSMMapHashText: Int { get }
+```
+
+```c
+kLSMMapHashText
 ```
 
 #### Discussion
@@ -21,9 +26,10 @@ If you specify this option when storing the map, this option hashes the map if i
 
 ## See Also
 
-- [var kLSMMapPairs: Int](klsmmappairs.md)
+### Constants
+- [var kLSMMapPairs: Int](./klsmmappairs.md)
   An option that specifies to use pairs in addition to single words.
-- [var kLSMMapTriplets: Int](klsmmaptriplets.md)
+- [var kLSMMapTriplets: Int](./klsmmaptriplets.md)
   An option that specifies to use triplets and pairs in addition to single words.
 
 

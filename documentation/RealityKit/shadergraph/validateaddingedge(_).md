@@ -1,7 +1,8 @@
 # validateAddingEdge(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates that an edge can be added to the graph without adding it, throwing a descriptive error if not.
 
@@ -19,7 +20,7 @@ final func validateAddingEdge(_ edge: ShaderGraph.Edge) throws
 
 #### Discussion
 
-Use [`canAddEdge(_:)`](shadergraph/canaddedge(_:).md) instead when only a yes/no answer is needed.
+Use [`canAddEdge(_:)`](./canaddedge%28_%29.md) instead when only a yes/no answer is needed.
 
 
 ---

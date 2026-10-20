@@ -1,7 +1,8 @@
 # SimultaneousGesture.Value
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The value of a simultaneous gesture that indicates which of its two gestures receives events.
 
@@ -24,18 +25,18 @@ struct Value
 ## Topics
 
 ### Getting gesture values
-- [var first: First.Value?](simultaneousgesture/value/first.md)
+- [var first: First.Value?](./value/first.md)
   The value of the first gesture.
-- [var second: Second.Value?](simultaneousgesture/value/second.md)
+- [var second: Second.Value?](./value/second.md)
   The value of the second gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

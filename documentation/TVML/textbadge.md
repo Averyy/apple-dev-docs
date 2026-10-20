@@ -12,51 +12,52 @@ The `textBadge` element contains a link to an image that is to be displayed. Her
 <textBadge>SDH</textBadge>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`header`](header.md)
-- [`organizer`](organizer.md)
+- [header](./header.md)
+- [organizer](./organizer.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [background-color](background-color.md)
+- [background-color](./background-color.md)
   Changes the background color of an element.
-- [border-radius](border-radius.md)
+- [border-radius](./border-radius.md)
   Changes the shape of an element’s corner.
-- [color](color.md)
+- [color](./color.md)
   Changes the color of an element.
-- [font-family](font-family.md)
+- [font-family](./font-family.md)
   Specifies the font used for the text in an element.
-- [font-size](font-size.md)
+- [font-size](./font-size.md)
   Specifies the font size for the text in an element.
-- [font-weight](font-weight.md)
+- [font-weight](./font-weight.md)
   Specifies the font weight for the text in an element.
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [text-shadow](text-shadow.md)
+- [text-shadow](./text-shadow.md)
   Adds a shadow effect to displayed text.
-- [tv-tint-color](tv-tint-color.md)
+- [tv-tint-color](./tv-tint-color.md)
   Sets the tint color for an element.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
-- [type](type.md)
+- [type](./type.md)
   Specifies how a badge is drawn.
 
 ## See Also
 
-- [badge](badge.md)
+### Badge Elements
+- [badge](./badge.md)
   A small image displayed alongside or on top of another image.
-- [ratingBadge](ratingbadge.md)
+- [ratingBadge](./ratingbadge.md)
   Displays an image used to rate a product.
-- [seasonBadge](seasonbadge.md)
+- [seasonBadge](./seasonbadge.md)
   Displays an image that indicates the season for an associated media item.
 
 

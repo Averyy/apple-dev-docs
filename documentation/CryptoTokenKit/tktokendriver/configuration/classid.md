@@ -1,7 +1,8 @@
 # classID
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The class identifier of the token driver.
 
@@ -20,15 +21,20 @@ The class identifier of the token driver.
 var classID: TKTokenDriver.ClassID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) TKTokenDriverClassID classID;
+```
+
 #### Discussion
 
 The identifier uses a reverse-DNS format, such as `com.example.id`.
 
 ## See Also
 
-- [var tokenConfigurations: [TKToken.InstanceID : TKToken.Configuration]](tktokendriver/configuration/tokenconfigurations.md)
+### Reporting Configuration Information
+- [var tokenConfigurations: [TKToken.InstanceID : TKToken.Configuration]](./tokenconfigurations.md)
   A dictionary of all currently configured tokens for this token class, which the token instance identifier keys.
-- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](tktokendriver/configuration/driverconfigurations.md)
+- [class var driverConfigurations: [TKTokenDriver.ClassID : TKTokenDriver.Configuration]](./driverconfigurations.md)
   A dictionary of token class configurations which the class identifier of the token driver keys.
 
 

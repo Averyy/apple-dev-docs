@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of this deferred menu element.
 
@@ -18,9 +19,14 @@ The identifier of this deferred menu element.
 var identifier: UIDeferredMenuElement.Identifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UIDeferredMenuElementIdentifier identifier;
+```
+
 ## See Also
 
-- [UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.struct.md)
+### Setting an identifier
+- [UIDeferredMenuElement.Identifier](./identifier-swift.struct.md)
 
 
 ---

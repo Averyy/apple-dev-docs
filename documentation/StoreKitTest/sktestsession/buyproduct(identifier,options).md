@@ -1,7 +1,8 @@
 # buyProduct(identifier:options:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ func buyProduct(identifier: Product.ID, options: Set<Product.PurchaseOption> = [
 
 ## See Also
 
-- [func setSimulatedError<API>(API.Failure?, forAPI: API) async throws](sktestsession/setsimulatederror(_:forapi:).md)
-- [func simulatedError<API>(forAPI: API) async -> API.Failure?](sktestsession/simulatederror(forapi:).md)
+### Instance Methods
+- [func setSimulatedError<API>(API.Failure?, forAPI: API) async throws](./setsimulatederror%28_,forapi%29.md)
+- [func simulatedError<API>(forAPI: API) async -> API.Failure?](./simulatederror%28forapi%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # indexRange(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return a `Range<IndexSet.Index>` which can be used to subscript the index set.
 

@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: StoreKit Test  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the test session with a configuration file you provide through a URL.
 
@@ -20,11 +21,15 @@ Initializes the test session with a configuration file you provide through a URL
 init(contentsOf fileURL: URL) throws
 ```
 
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) fileURL error:(NSError **) error;
+```
+
 #### Discussion
 
 The file must have a `.storekit` extension. Create a configuration file in Xcode by selecting File > New > File and choosing StoreKit Configuration File.
 
-To return all settings in the test session to the states defined in this StoreKit configuration file, call [`resetToDefaultState()`](sktestsession/resettodefaultstate().md).
+To return all settings in the test session to the states defined in this StoreKit configuration file, call [`resetToDefaultState()`](./resettodefaultstate%28%29.md).
 
 ## Parameters
 
@@ -32,9 +37,10 @@ To return all settings in the test session to the states defined in this StoreKi
 
 ## See Also
 
-- [convenience init(configurationFileNamed: String) throws](sktestsession/init(configurationfilenamed:).md)
+### Initializing test sessions
+- [convenience init(configurationFileNamed: String) throws](./init%28configurationfilenamed%29.md)
   Initializes the test session with the provided configuration file that you include in your application’s bundle.
-- [func resetToDefaultState()](sktestsession/resettodefaultstate.md)
+- [func resetToDefaultState()](./resettodefaultstate%28%29.md)
   Removes all property overrides and resets all test session settings to their default state.
 
 

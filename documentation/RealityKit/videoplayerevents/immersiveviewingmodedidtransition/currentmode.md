@@ -1,7 +1,8 @@
 # currentMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current immersive viewing mode
 

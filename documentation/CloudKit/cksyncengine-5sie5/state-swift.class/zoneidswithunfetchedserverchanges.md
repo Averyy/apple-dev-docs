@@ -1,7 +1,8 @@
 # zoneIDsWithUnfetchedServerChanges
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of zones with changes on the server that have not yet been fetched.
 
@@ -11,7 +12,7 @@ The identifiers of zones with changes on the server that have not yet been fetch
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

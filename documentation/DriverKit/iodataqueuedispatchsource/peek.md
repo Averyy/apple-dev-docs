@@ -1,25 +1,26 @@
 # Peek
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next queue entry without removing it from the queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Peek(IODataQueueClientDequeueEntryBlock callback);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, [`kIOReturnUnderrun`](kioreturnunderrun.md) if the queue is empty, or [`kIOReturnError`](kioreturnerror.md) if the queue is corrupt. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, [`kIOReturnUnderrun`](../kioreturnunderrun.md) if the queue is empty, or [`kIOReturnError`](../kioreturnerror.md) if the queue is corrupt. See [Error Codes](../error-codes.md).
 
 ## Parameters
 
@@ -27,19 +28,20 @@ kern_return_t Peek(IODataQueueClientDequeueEntryBlock callback);
 
 ## See Also
 
-- [SetDataAvailableHandler](iodataqueuedispatchsource/setdataavailablehandler.md)
+### Removing Work from the Queue
+- [SetDataAvailableHandler](./setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
-- [DataAvailable](iodataqueuedispatchsource/dataavailable.md)
+- [DataAvailable](./dataavailable.md)
   Responds to the addition of new data to the queue.
-- [IsDataAvailable](iodataqueuedispatchsource/isdataavailable.md)
+- [IsDataAvailable](./isdataavailable.md)
   Checks whether the data queue contains data to process.
-- [Dequeue](iodataqueuedispatchsource/dequeue.md)
+- [Dequeue](./dequeue.md)
   Removes the next entry from the queue.
-- [DequeueWithCoalesce](iodataqueuedispatchsource/dequeuewithcoalesce.md)
+- [DequeueWithCoalesce](./dequeuewithcoalesce.md)
   Removes the next queue entry, but doesn’t automatically send notifications.
-- [SendDataServiced](iodataqueuedispatchsource/senddataserviced.md)
+- [SendDataServiced](./senddataserviced.md)
   Notifies interested parties that you removed data from the queue.
-- [IODataQueueClientDequeueEntryBlock](iodataqueueclientdequeueentryblock.md)
+- [IODataQueueClientDequeueEntryBlock](../iodataqueueclientdequeueentryblock.md)
   The handler block you use to remove data from a queue.
 
 

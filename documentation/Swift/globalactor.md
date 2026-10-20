@@ -1,7 +1,8 @@
 # GlobalActor
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 
@@ -28,46 +29,47 @@ A type that conforms to the `GlobalActor` protocol and is marked with the `@glob
 
 A global actor uses a custom executor if it needs to customize its execution semantics, for example, by making sure all of its invocations are run on a specific thread or dispatch queue.
 
-This is done the same way as with normal non-global actors, by declaring a [`unownedExecutor`](actor/unownedexecutor.md) nonisolated property in the [`ActorType`](globalactor/actortype.md) underlying this global actor.
+This is done the same way as with normal non-global actors, by declaring a [`unownedExecutor`](./actor/unownedexecutor.md) nonisolated property in the [`ActorType`](./globalactor/actortype.md) underlying this global actor.
 
-It is *not* necessary to override the [`sharedUnownedExecutor`](globalactor/sharedunownedexecutor.md) static property of the global actor, as its default implementation already delegates to the `shared.unownedExecutor`, which is the most reasonable and correct implementation of this protocol requirement.
+It is *not* necessary to override the [`sharedUnownedExecutor`](./globalactor/sharedunownedexecutor.md) static property of the global actor, as its default implementation already delegates to the `shared.unownedExecutor`, which is the most reasonable and correct implementation of this protocol requirement.
 
-You can find out more about custom executors, by referring to the [`SerialExecutor`](serialexecutor.md) protocol’s documentation.
+You can find out more about custom executors, by referring to the [`SerialExecutor`](./serialexecutor.md) protocol’s documentation.
 
-> **Note**: [`SerialExecutor`](serialexecutor.md)
+> **See Also**: [`SerialExecutor`](./serialexecutor.md)
 
 ## Topics
 
 ### Associated Types
-- [associatedtype ActorType : Actor](globalactor/actortype.md)
+- [associatedtype ActorType : Actor](./globalactor/actortype.md)
   The type of the shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
 ### Type Properties
-- [static var shared: Self.ActorType](globalactor/shared.md)
+- [static var shared: Self.ActorType](./globalactor/shared.md)
   The shared actor instance that will be used to provide mutually-exclusive access to declarations annotated with the given global actor type.
-- [static var sharedUnownedExecutor: UnownedSerialExecutor](globalactor/sharedunownedexecutor.md)
+- [static var sharedUnownedExecutor: UnownedSerialExecutor](./globalactor/sharedunownedexecutor.md)
   Shorthand for referring to the `shared.unownedExecutor` of this global actor.
 ### Type Methods
-- [static func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](globalactor/assertisolated(_:file:line:).md)
+- [static func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./globalactor/assertisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this actor’s serial executor.
-- [static func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](globalactor/preconditionisolated(_:file:line:).md)
+- [static func preconditionIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](./globalactor/preconditionisolated%28_,file,line%29.md)
   Stops program execution if the current task is not executing on this actor’s serial executor.
 
 ## Relationships
 
 ### Conforming Types
-- [MainActor](mainactor.md)
+- [MainActor](./mainactor.md)
 
 ## See Also
 
-- [protocol Sendable](sendable.md)
+### Actors
+- [protocol Sendable](./sendable.md)
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
-- [protocol Actor](actor.md)
+- [protocol Actor](./actor.md)
   Common protocol to which all actors conform.
-- [actor MainActor](mainactor.md)
+- [actor MainActor](./mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
-- [protocol SendableMetatype](sendablemetatype.md)
+- [protocol SendableMetatype](./sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
-- [macro isolation<T>() -> T](isolation().md)
+- [macro isolation<T>() -> T](./isolation%28%29.md)
   Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 
 

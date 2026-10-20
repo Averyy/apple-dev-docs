@@ -1,11 +1,12 @@
 # NSURLCredential Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(forTrust: SecTrust)](urlcredential/init(fortrust:).md)
+- [init(forTrust: SecTrust)](./init%28fortrust%29.md)
   Creates a URL credential instance for server trust authentication with a given accepted trust.
 
 

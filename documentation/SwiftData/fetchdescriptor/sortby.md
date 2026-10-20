@@ -1,7 +1,8 @@
 # sortBy
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort descriptors that tell the fetch how to order its results.
 
@@ -25,17 +26,18 @@ var sortBy: [SortDescriptor<T>]
 
 Use this property to specify how to arrange the collection of models that a fetch returns. For example, if your app defines a `Person` model, you may want to sort by the `surname` attribute, then by the `firstName` attribute. The fetch applies the sort descriptors in the same order as they appear in the array.
 
-The default value is the array you specify when calling [`init(predicate:sortBy:)`](fetchdescriptor/init(predicate:sortby:).md).
+The default value is the array you specify when calling [`init(predicate:sortBy:)`](./init%28predicate,sortby%29.md).
 
 ## See Also
 
-- [var predicate: Predicate<T>?](fetchdescriptor/predicate.md)
+### Constraining the fetch
+- [var predicate: Predicate<T>?](./predicate.md)
   The logical condition that determines whether the fetch includes a specific model in its results.
-- [var fetchLimit: Int?](fetchdescriptor/fetchlimit.md)
+- [var fetchLimit: Int?](./fetchlimit.md)
   The maximum number of models the fetch can return.
-- [var fetchOffset: Int?](fetchdescriptor/fetchoffset.md)
+- [var fetchOffset: Int?](./fetchoffset.md)
   The offset of the first matching model to fetch.
-- [var includePendingChanges: Bool](fetchdescriptor/includependingchanges.md)
+- [var includePendingChanges: Bool](./includependingchanges.md)
   A Boolean value that indicates whether, when the fetch runs, it matches against currently unsaved changes in the model context.
 
 

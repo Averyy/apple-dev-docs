@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial speed, in meters per second, for newly spawned particles. Defaults to 0.5.
 

@@ -1,17 +1,22 @@
 # NSCollectionLayoutSectionVisibleItemsInvalidationHandler
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure called before each layout cycle to allow modification of items in a section immediately before they’re displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias NSCollectionLayoutSectionVisibleItemsInvalidationHandler = ([any NSCollectionLayoutVisibleItem], NSPoint, any NSCollectionLayoutEnvironment) -> Void
+```
+
+```c
+typedef void (^)(NSArray<id<NSCollectionLayoutVisibleItem>> *, struct CGPoint, id<NSCollectionLayoutEnvironment>) NSCollectionLayoutSectionVisibleItemsInvalidationHandler;
 ```
 
 #### Discussion
@@ -40,7 +45,8 @@ NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup
 
 ## See Also
 
-- [protocol NSCollectionLayoutVisibleItem](nscollectionlayoutvisibleitem.md)
+### Layout updates
+- [protocol NSCollectionLayoutVisibleItem](./nscollectionlayoutvisibleitem.md)
   An item that’s currently visible within the bounds of a section.
 
 

@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drop operation that the drop proposes to perform.
 
@@ -20,7 +21,8 @@ let operation: DropOperation
 
 ## See Also
 
-- [init(operation: DropOperation)](dropproposal/init(operation:).md)
+### Creating a drop proposal
+- [init(operation: DropOperation)](./init%28operation%29.md)
 
 
 ---

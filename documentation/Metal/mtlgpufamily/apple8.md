@@ -1,7 +1,8 @@
 # MTLGPUFamily.apple8
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents the Apple family 8 GPU features that correspond to the Apple A15, A16, and M2 GPUs.
 
@@ -19,27 +20,32 @@ Represents the Apple family 8 GPU features that correspond to the Apple A15, A16
 case apple8
 ```
 
+```c
+MTLGPUFamilyApple8
+```
+
 ## Mentions
 
-- [Improving your game’s graphics performance and settings](improving-your-games-graphics-performance-and-settings.md)
+- [Improving your game’s graphics performance and settings](../improving-your-games-graphics-performance-and-settings.md)
 
 ## See Also
 
-- [MTLGPUFamily.apple9](mtlgpufamily/apple9.md)
+### Checking for Apple family GPU support
+- [MTLGPUFamily.apple9](./apple9.md)
   Represents the Apple family 9 GPU features that correspond to the Apple A17, M3, and M4 GPUs.
-- [MTLGPUFamily.apple7](mtlgpufamily/apple7.md)
+- [MTLGPUFamily.apple7](./apple7.md)
   Represents the Apple family 7 GPU features that correspond to the Apple A14 and M1 GPUs.
-- [MTLGPUFamily.apple6](mtlgpufamily/apple6.md)
+- [MTLGPUFamily.apple6](./apple6.md)
   Represents the Apple family 6 GPU features that correspond to the Apple A13 GPUs.
-- [MTLGPUFamily.apple5](mtlgpufamily/apple5.md)
+- [MTLGPUFamily.apple5](./apple5.md)
   Represents the Apple family 5 GPU features that correspond to the Apple A12 GPUs.
-- [MTLGPUFamily.apple4](mtlgpufamily/apple4.md)
+- [MTLGPUFamily.apple4](./apple4.md)
   Represents the Apple family 4 GPU features that correspond to the Apple A11 GPUs.
-- [MTLGPUFamily.apple3](mtlgpufamily/apple3.md)
+- [MTLGPUFamily.apple3](./apple3.md)
   Represents the Apple family 3 GPU features that correspond to the Apple A9 and A10 GPUs.
-- [MTLGPUFamily.apple2](mtlgpufamily/apple2.md)
+- [MTLGPUFamily.apple2](./apple2.md)
   Represents the Apple family 2 GPU features that correspond to the Apple A8 GPUs.
-- [MTLGPUFamily.apple1](mtlgpufamily/apple1.md)
+- [MTLGPUFamily.apple1](./apple1.md)
   Represents the Apple family 1 GPU features that correspond to the Apple A7 GPUs.
 
 

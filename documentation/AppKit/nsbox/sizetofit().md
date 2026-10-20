@@ -1,17 +1,22 @@
 # sizeToFit()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resizes and moves the receiver’s content view so it just encloses its subviews.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sizeToFit()
+```
+
+```objc
+- (void) sizeToFit;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ The mechanism by which the content view is moved and resized depends on whether 
 
 ## See Also
 
-- [func setFrameFromContentFrame(NSRect)](nsbox/setframefromcontentframe(_:).md)
+### Sizing
+- [func setFrameFromContentFrame(NSRect)](./setframefromcontentframe%28_%29.md)
   Places the receiver so its content view lies on the specified frame.
 
 

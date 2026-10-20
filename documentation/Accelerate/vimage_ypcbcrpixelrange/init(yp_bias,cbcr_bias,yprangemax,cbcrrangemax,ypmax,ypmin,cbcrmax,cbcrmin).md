@@ -1,18 +1,19 @@
 # init(Yp_bias:CbCr_bias:YpRangeMax:CbCrRangeMax:YpMax:YpMin:CbCrMax:CbCrMin:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a structure describing range and clamping information for Y’CbCr pixel formats.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -37,7 +38,8 @@ A structure describing range and clamping information for Y’CbCr pixel formats
 
 ## See Also
 
-- [init()](vimage_ypcbcrpixelrange/init.md)
+### Creating a Pixel Range
+- [init()](./init%28%29.md)
 
 
 ---

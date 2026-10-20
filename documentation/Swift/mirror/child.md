@@ -1,7 +1,8 @@
 # Mirror.Child
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An element of the reflected instance’s structure.
 

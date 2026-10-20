@@ -1,7 +1,8 @@
 # AVAudioSessionRouteChangePreviousRouteKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user info key that’s used to retrieve the previously active audio session route.
 
@@ -19,13 +20,18 @@ A user info key that’s used to retrieve the previously active audio session ro
 let AVAudioSessionRouteChangePreviousRouteKey: String
 ```
 
+```c
+extern NSString * const AVAudioSessionRouteChangePreviousRouteKey;
+```
+
 #### Discussion
 
-The value for this key is an [`AVAudioSessionRouteDescription`](avaudiosessionroutedescription.md) object that describes the audio route settings prior to the route change.
+The value for this key is an [`AVAudioSessionRouteDescription`](./avaudiosessionroutedescription.md) object that describes the audio route settings prior to the route change.
 
 ## See Also
 
-- [let AVAudioSessionRouteChangeReasonKey: String](avaudiosessionroutechangereasonkey.md)
+### User info keys
+- [let AVAudioSessionRouteChangeReasonKey: String](./avaudiosessionroutechangereasonkey.md)
   A user info key that’s used to retrieve the route change reason.
 
 

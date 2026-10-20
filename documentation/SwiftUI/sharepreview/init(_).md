@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview representation.
 
@@ -20,17 +21,34 @@ Creates a preview representation.
 init(_ titleResource: LocalizedStringResource)
 ```
 
+Available when `Image` is `Never` and `Icon` is `Never`.
+
+**Other overloads**:
+
+```swift
+init(_ title: Text)
+```
+
+```swift
+init(_ titleKey: LocalizedStringKey)
+```
+
+```swift
+init<S>(_ title: S) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: A resource for the title to show in a preview.
 
 ## See Also
 
-- [init(_:image:)](sharepreview/init(_:image:).md)
+### Creating a preview
+- [init(_:image:)](./init%28_,image%29.md)
   Creates a preview representation.
-- [init(_:icon:)](sharepreview/init(_:icon:).md)
+- [init(_:icon:)](./init%28_,icon%29.md)
   Creates a preview representation.
-- [init(_:image:icon:)](sharepreview/init(_:image:icon:).md)
+- [init(_:image:icon:)](./init%28_,image,icon%29.md)
   Creates a preview representation.
 
 

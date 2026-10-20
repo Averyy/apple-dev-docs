@@ -1,0 +1,33 @@
+# identifier
+
+**Framework**: Foundation  
+**Kind**: property  
+**Role**: Instance Property
+
+The identifier used to create the language code.
+
+**Availability**:
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.0+
+- watchOS 9.0+
+
+## Declaration
+
+```swift
+var identifier: String { get set }
+```
+
+## See Also
+
+### Examining language code properties
+- [var isISOLanguage: Bool](./isisolanguage.md)
+  A Boolean value that indicates whether this language code is in the list of ISO-defined languages.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/locale/languagecode-swift.struct/identifier)*

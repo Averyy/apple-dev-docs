@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.MessageChannel.ID
 
 **Framework**: Foveated Streaming  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for a message channel.
 
@@ -17,21 +18,21 @@ struct ID
 ## Topics
 
 ### Initializers
-- [init(String)](foveatedstreamingsession/messagechannel/id-swift.struct/init(_:)-5o0sl.md)
+- [init(String)](./id-swift.struct/init%28_%29-5o0sl.md)
   Constructs an ID from a String.
-- [init(UUID)](foveatedstreamingsession/messagechannel/id-swift.struct/init(_:)-5qq8b.md)
+- [init(UUID)](./id-swift.struct/init%28_%29-5qq8b.md)
   Constructs an ID from a UUID.
 ### Instance Properties
-- [var stringRepresentation: String](foveatedstreamingsession/messagechannel/id-swift.struct/stringrepresentation.md)
+- [var stringRepresentation: String](./id-swift.struct/stringrepresentation.md)
   The String representation of this ID.
-- [var uuidRepresentation: UUID?](foveatedstreamingsession/messagechannel/id-swift.struct/uuidrepresentation.md)
+- [var uuidRepresentation: UUID?](./id-swift.struct/uuidrepresentation.md)
   The UUID representation of this ID, if it can be represented as one.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

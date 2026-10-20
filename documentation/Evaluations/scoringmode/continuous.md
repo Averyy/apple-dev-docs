@@ -1,7 +1,8 @@
 # ScoringMode.continuous
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that allows the model to return any floating-point value. The scale serves as a guide but is not enforced at the generation level.
 

@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The framer options to use with this framer.
 

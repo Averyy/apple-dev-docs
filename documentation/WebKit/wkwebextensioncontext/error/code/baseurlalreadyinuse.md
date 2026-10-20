@@ -1,7 +1,8 @@
 # WKWebExtensionContext.Error.Code.baseURLAlreadyInUse
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that another context is already using the specified base URL.
 
@@ -16,6 +17,10 @@ Indicates that another context is already using the specified base URL.
 
 ```swift
 case baseURLAlreadyInUse
+```
+
+```c
+WKWebExtensionContextErrorBaseURLAlreadyInUse
 ```
 
 

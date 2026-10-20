@@ -1,7 +1,8 @@
 # NSGrammaticalPronounType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -18,37 +19,42 @@
 enum NSGrammaticalPronounType
 ```
 
+```c
+enum NSGrammaticalPronounType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSGrammaticalPronounType.notSet](nsgrammaticalpronountype/notset.md)
-- [NSGrammaticalPronounType.personal](nsgrammaticalpronountype/personal.md)
-- [NSGrammaticalPronounType.possessive](nsgrammaticalpronountype/possessive.md)
-- [NSGrammaticalPronounType.reflexive](nsgrammaticalpronountype/reflexive.md)
+- [NSGrammaticalPronounType.notSet](./nsgrammaticalpronountype/notset.md)
+- [NSGrammaticalPronounType.personal](./nsgrammaticalpronountype/personal.md)
+- [NSGrammaticalPronounType.possessive](./nsgrammaticalpronountype/possessive.md)
+- [NSGrammaticalPronounType.reflexive](./nsgrammaticalpronountype/reflexive.md)
 ### Initializers
-- [init?(rawValue: Int)](nsgrammaticalpronountype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsgrammaticalpronountype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSGrammaticalCase](nsgrammaticalcase.md)
-- [enum NSGrammaticalDefiniteness](nsgrammaticaldefiniteness.md)
-- [enum NSGrammaticalDetermination](nsgrammaticaldetermination.md)
-- [enum NSGrammaticalPerson](nsgrammaticalperson.md)
-- [enum NSKeyValueChange](nskeyvaluechange.md)
+### Enumerations
+- [enum NSGrammaticalCase](./nsgrammaticalcase.md)
+- [enum NSGrammaticalDefiniteness](./nsgrammaticaldefiniteness.md)
+- [enum NSGrammaticalDetermination](./nsgrammaticaldetermination.md)
+- [enum NSGrammaticalPerson](./nsgrammaticalperson.md)
+- [enum NSKeyValueChange](./nskeyvaluechange.md)
   The kinds of changes that can be observed.
-- [struct NSKeyValueObservingOptions](nskeyvalueobservingoptions.md)
+- [struct NSKeyValueObservingOptions](./nskeyvalueobservingoptions.md)
   The values that can be returned in a change dictionary.
-- [enum NSKeyValueSetMutationKind](nskeyvaluesetmutationkind.md)
+- [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
 
 
 ---

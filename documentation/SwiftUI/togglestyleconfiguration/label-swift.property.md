@@ -1,7 +1,8 @@
 # label
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that describes the effect of switching the toggle between states.
 
@@ -22,9 +23,9 @@ let label: ToggleStyleConfiguration.Label
 
 #### Discussion
 
-Use this value in your implementation of the [`makeBody(configuration:)`](togglestyle/makebody(configuration:).md) method when defining a custom [`ToggleStyle`](togglestyle.md). Access it through the that method’s `configuration` parameter.
+Use this value in your implementation of the [`makeBody(configuration:)`](../togglestyle/makebody%28configuration%29.md) method when defining a custom [`ToggleStyle`](../togglestyle.md). Access it through the that method’s `configuration` parameter.
 
-Because the label is a [`View`](view.md), you can incorporate it into the view hierarchy that you return from your style definition. For example, you can combine the label with a circle image in an [`HStack`](hstack.md):
+Because the label is a [`View`](../view.md), you can incorporate it into the view hierarchy that you return from your style definition. For example, you can combine the label with a circle image in an [`HStack`](../hstack.md):
 
 ```swift
 HStack {
@@ -37,7 +38,8 @@ HStack {
 
 ## See Also
 
-- [ToggleStyleConfiguration.Label](togglestyleconfiguration/label-swift.struct.md)
+### Getting the label view
+- [ToggleStyleConfiguration.Label](./label-swift.struct.md)
   A type-erased label of a toggle.
 
 

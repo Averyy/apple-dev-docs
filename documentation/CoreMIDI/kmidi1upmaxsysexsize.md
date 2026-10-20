@@ -1,16 +1,17 @@
 # kMIDI1UPMaxSysexSize
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,18 +19,23 @@
 var kMIDI1UPMaxSysexSize: UInt8 { get }
 ```
 
+```c
+static const UInt8 kMIDI1UPMaxSysexSize;
+```
+
 ## See Also
 
-- [var kMIDIDeviceIDFunctionBlock: MIDICIDeviceID](kmidideviceidfunctionblock.md)
-- [var kMIDIDeviceIDUMPGroup: MIDICIDeviceID](kmidideviceidumpgroup.md)
-- [let kMIDIPropertyAssociatedEndpoint: CFString](kmidipropertyassociatedendpoint.md)
-- [let kMIDIPropertyUMPActiveGroupBitmap: CFString](kmidipropertyumpactivegroupbitmap.md)
-- [let kMIDIPropertyUMPCanTransmitGroupless: CFString](kmidipropertyumpcantransmitgroupless.md)
-- [var kMIDIUInteger14Max: MIDIUInteger14](kmidiuinteger14max.md)
-- [var kMIDIUInteger28Max: MIDIUInteger28](kmidiuinteger28max.md)
-- [var kMIDIUInteger2Max: MIDIUInteger2](kmidiuinteger2max.md)
-- [var kMIDIUInteger4Max: MIDIUInteger4](kmidiuinteger4max.md)
-- [var kMIDIUInteger7Max: MIDIUInteger7](kmidiuinteger7max.md)
+### Constants
+- [var kMIDIDeviceIDFunctionBlock: MIDICIDeviceID](./kmidideviceidfunctionblock.md)
+- [var kMIDIDeviceIDUMPGroup: MIDICIDeviceID](./kmidideviceidumpgroup.md)
+- [let kMIDIPropertyAssociatedEndpoint: CFString](./kmidipropertyassociatedendpoint.md)
+- [let kMIDIPropertyUMPActiveGroupBitmap: CFString](./kmidipropertyumpactivegroupbitmap.md)
+- [let kMIDIPropertyUMPCanTransmitGroupless: CFString](./kmidipropertyumpcantransmitgroupless.md)
+- [var kMIDIUInteger14Max: MIDIUInteger14](./kmidiuinteger14max.md)
+- [var kMIDIUInteger28Max: MIDIUInteger28](./kmidiuinteger28max.md)
+- [var kMIDIUInteger2Max: MIDIUInteger2](./kmidiuinteger2max.md)
+- [var kMIDIUInteger4Max: MIDIUInteger4](./kmidiuinteger4max.md)
+- [var kMIDIUInteger7Max: MIDIUInteger7](./kmidiuinteger7max.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # decibelHearingLevel()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring the intensity of a sound.
 
@@ -19,13 +20,18 @@ Returns a HealthKit unit for measuring the intensity of a sound.
 class func decibelHearingLevel() -> Self
 ```
 
+```objc
++ (instancetype) decibelHearingLevelUnit;
+```
+
 #### Discussion
 
 This unit measures the intensity of the sound relative to the quietest sound a typical young, healthy individual can hear.
 
 ## See Also
 
-- [class func decibelAWeightedSoundPressureLevel() -> Self](hkunit/decibelaweightedsoundpressurelevel.md)
+### Related Documentation
+- [class func decibelAWeightedSoundPressureLevel() -> Self](./decibelaweightedsoundpressurelevel%28%29.md)
   Returns a HealthKit unit for measuring the difference between the local pressure and the ambient atmospheric pressure caused by sound.
 
 

@@ -1,7 +1,8 @@
 # MKMapItemRequest
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A utility class you use to request additional information about a map feature.
 
@@ -20,71 +21,76 @@ A utility class you use to request additional information about a map feature.
 class MKMapItemRequest
 ```
 
+```objc
+@interface MKMapItemRequest : NSObject
+```
+
 ## Mentions
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
 
 ## Topics
 
 ### Creating a request
-- [convenience init(feature: MapFeature)](mkmapitemrequest/init(feature:).md)
+- [convenience init(feature: MapFeature)](./mkmapitemrequest/init%28feature%29.md)
   Creates a new map item request with the specified map feature.
-- [init(mapItemIdentifier: MKMapItem.Identifier)](mkmapitemrequest/init(mapitemidentifier:).md)
+- [init(mapItemIdentifier: MKMapItem.Identifier)](./mkmapitemrequest/init%28mapitemidentifier%29.md)
   Create a request with a map item identifier.
-- [init(mapFeatureAnnotation: MKMapFeatureAnnotation)](mkmapitemrequest/init(mapfeatureannotation:).md)
+- [init(mapFeatureAnnotation: MKMapFeatureAnnotation)](./mkmapitemrequest/init%28mapfeatureannotation%29.md)
   Creates a new map item request with the specified feature annotation.
 ### Configuring the item request
-- [var mapFeature: MapFeature?](mkmapitemrequest/mapfeature.md)
+- [var mapFeature: MapFeature?](./mkmapitemrequest/mapfeature.md)
   The map feature.
-- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](mkmapitemrequest/mapfeatureannotation.md)
+- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](./mkmapitemrequest/mapfeatureannotation.md)
   The feature annotation.
-- [var mapItemIdentifier: MKMapItem.Identifier?](mkmapitemrequest/mapitemidentifier.md)
+- [var mapItemIdentifier: MKMapItem.Identifier?](./mkmapitemrequest/mapitemidentifier.md)
   The map item identifer.
-- [var feature: MapFeature](mkmapitemrequest/feature.md)
+- [var feature: MapFeature](./mkmapitemrequest/feature.md)
   The map feature.
-- [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
+- [var featureAnnotation: MKMapFeatureAnnotation](./mkmapitemrequest/featureannotation.md)
   The feature annotation.
-- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+- [var placeDescriptor: PlaceDescriptor?](./mkmapitemrequest/placedescriptor.md)
   The place descriptor that contains information that’s helpful in uniquely identifying this place.
 ### Starting and stopping requests
-- [func cancel()](mkmapitemrequest/cancel.md)
+- [func cancel()](./mkmapitemrequest/cancel%28%29.md)
   Cancels an in-progress map item request.
-- [func getMapItem(completionHandler: (MKMapItem?, (any Error)?) -> Void)](mkmapitemrequest/getmapitem(completionhandler:).md)
+- [func getMapItem(completionHandler: (MKMapItem?, (any Error)?) -> Void)](./mkmapitemrequest/getmapitem%28completionhandler%29.md)
   Requests a map item and calls the provided completion handler.
 ### Checking the status of a request
-- [var isCancelled: Bool](mkmapitemrequest/iscancelled.md)
+- [var isCancelled: Bool](./mkmapitemrequest/iscancelled.md)
   A Boolean value that indicates if the cancellation of the request was successful.
-- [var isLoading: Bool](mkmapitemrequest/isloading.md)
+- [var isLoading: Bool](./mkmapitemrequest/isloading.md)
   A Boolean value that indicates if the request is loading.
 ### Initializers
-- [convenience init(placeDescriptor: PlaceDescriptor)](mkmapitemrequest/init(placedescriptor:).md)
+- [convenience init(placeDescriptor: PlaceDescriptor)](./mkmapitemrequest/init%28placedescriptor%29.md)
   Creates a new map item request with the specified place descriptor
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+### Points of interest
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
   Obtain information about a point of interest that persists over its lifetime.
-- [class MKMapFeatureAnnotation](mkmapfeatureannotation.md)
+- [class MKMapFeatureAnnotation](./mkmapfeatureannotation.md)
   A class that describes an annotation element on the map’s display such as a point of interest, territorial boundary, or physical feature.
-- [struct MKMapFeatureOptions](mkmapfeatureoptions.md)
+- [struct MKMapFeatureOptions](./mkmapfeatureoptions.md)
   A structure you use to tell the map which kinds of features users can interact with.
-- [class MKIconStyle](mkiconstyle.md)
+- [class MKIconStyle](./mkiconstyle.md)
   A class you use to customize the annotation view icon of a point of interest (POI) on the map.
-- [class MKPointOfInterestFilter](mkpointofinterestfilter.md)
+- [class MKPointOfInterestFilter](./mkpointofinterestfilter.md)
   A filter that includes or excludes point of interest categories from a map view, local search, or local search completer.
-- [struct MKPointOfInterestCategory](mkpointofinterestcategory.md)
+- [struct MKPointOfInterestCategory](./mkpointofinterestcategory.md)
   A point of interest category.
 
 

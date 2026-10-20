@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an accessory from a GCDevice.
 
@@ -16,7 +17,7 @@ init(device: any GCDevice) async throws
 
 #### Discussion
 
-> **Note**: `AccessoryTrackingProvider.Error`
+> **Throws**: `AccessoryTrackingProvider.Error`
 
 ## Parameters
 

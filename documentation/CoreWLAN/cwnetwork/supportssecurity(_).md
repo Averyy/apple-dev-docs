@@ -1,7 +1,8 @@
 # supportsSecurity(_:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Method for determining which security types a network supports.
 
@@ -12,6 +13,10 @@ Method for determining which security types a network supports.
 
 ```swift
 func supportsSecurity(_ security: CWSecurity) -> Bool
+```
+
+```objc
+- (BOOL) supportsSecurity:(CWSecurity) security;
 ```
 
 #### Return Value

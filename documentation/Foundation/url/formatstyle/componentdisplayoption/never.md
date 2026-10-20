@@ -1,7 +1,8 @@
 # never
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A display option that never displays the component.
 
@@ -22,15 +23,16 @@ static var never: URL.FormatStyle.ComponentDisplayOption { get }
 
 ## See Also
 
-- [static var always: URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/always.md)
+### Display options
+- [static var always: URL.FormatStyle.ComponentDisplayOption](./always.md)
   A display option that always displays the component.
-- [static var omitIfHTTPFamily: URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/omitifhttpfamily.md)
+- [static var omitIfHTTPFamily: URL.FormatStyle.ComponentDisplayOption](./omitifhttpfamily.md)
   A display option that omits the component if the URL scheme is any flavor of HTTP.
-- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/displaywhen(_:matches:).md)
+- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](./displaywhen%28_,matches%29.md)
   Returns a display option that displays the component when a specified component meets the specified requirements.
-- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption/omitwhen(_:matches:).md)
+- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.ComponentDisplayOption](./omitwhen%28_,matches%29.md)
   Returns a display option that omits the component when a specified component meets the specified requirements.
-- [URL.FormatStyle.Component](url/formatstyle/component.md)
+- [URL.FormatStyle.Component](../component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
 
 

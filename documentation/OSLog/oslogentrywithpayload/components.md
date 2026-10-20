@@ -2,6 +2,7 @@
 
 **Framework**: OSLog  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The payload’s components.
@@ -21,17 +22,22 @@ The payload’s components.
 var components: [OSLogMessageComponent] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<OSLogMessageComponent *> * components;
+```
+
 #### Discussion
 
-This property contains an array of [`OSLogMessageComponent`](oslogmessagecomponent.md) objects from the composed message.
+This property contains an array of [`OSLogMessageComponent`](../oslogmessagecomponent.md) objects from the composed message.
 
 ## See Also
 
-- [var category: String](oslogentrywithpayload/category.md)
+### Elements of a Payload
+- [var category: String](./category.md)
   The payload’s category.
-- [var formatString: String](oslogentrywithpayload/formatstring.md)
+- [var formatString: String](./formatstring.md)
   The payload’s format string.
-- [var subsystem: String](oslogentrywithpayload/subsystem.md)
+- [var subsystem: String](./subsystem.md)
   The payload’s subsystem.
 
 

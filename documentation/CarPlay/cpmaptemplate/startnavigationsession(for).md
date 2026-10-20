@@ -1,7 +1,8 @@
 # startNavigationSession(for:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins navigational guidance for a trip.
 
@@ -14,6 +15,10 @@ Begins navigational guidance for a trip.
 
 ```swift
 func startNavigationSession(for trip: CPTrip) -> CPNavigationSession
+```
+
+```objc
+- (CPNavigationSession *) startNavigationSessionForTrip:(CPTrip *) trip;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Keep a reference to the navigation session to perform guidance updates.
 
 ## See Also
 
-- [class CPNavigationSession](cpnavigationsession.md)
+### Navigating a Trip
+- [class CPNavigationSession](../cpnavigationsession.md)
   An object that represents an active route guidance session.
 
 

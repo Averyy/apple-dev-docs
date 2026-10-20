@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales an input.
 
@@ -18,6 +19,12 @@ Scales an input.
 
 ```swift
 func applied(to input: Element, eventHandler: EventHandler? = nil) -> Element
+```
+
+**Other overloads**:
+
+```swift
+func applied<S>(to input: S, eventHandler: EventHandler? = nil) -> [Element] where Element == S.Element, S : Sequence
 ```
 
 #### Return Value

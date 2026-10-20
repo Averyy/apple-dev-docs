@@ -1,7 +1,8 @@
 # NEFilterErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors resulting from calls to the filter manager.
 
@@ -18,13 +19,18 @@ The domain for errors resulting from calls to the filter manager.
 let NEFilterErrorDomain: String
 ```
 
+```c
+extern NSString * const NEFilterErrorDomain;
+```
+
 #### Discussion
 
-Match this constant to the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) encountered when calling methods on [`NEFilterManager`](nefiltermanager.md). The [`NEFilterManagerError`](nefiltermanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/foundation/nserror/code) values for these errors.
+Match this constant to the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) encountered when calling methods on [`NEFilterManager`](./nefiltermanager.md). The [`NEFilterManagerError`](./nefiltermanagererror.md) enumeration defines possible [`code`](../Foundation/nserror/code.md) values for these errors.
 
 ## See Also
 
-- [enum NEFilterManagerError](nefiltermanagererror.md)
+### Errors
+- [enum NEFilterManagerError](./nefiltermanagererror.md)
   Error codes specific to filter managers.
 
 

@@ -1,7 +1,8 @@
 # refCon
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to application-defined data that is passed to your custom pixel fill function.
 
@@ -20,10 +21,15 @@ A pointer to application-defined data that is passed to your custom pixel fill f
 var refCon: UnsafeMutableRawPointer?
 ```
 
+```c
+void * refCon;
+```
+
 ## See Also
 
-- [var fillCallBack: CVFillExtendedPixelsCallBack?](cvfillextendedpixelscallbackdata/fillcallback.md)
-- [var version: CFIndex](cvfillextendedpixelscallbackdata/version.md)
+### Properties
+- [var fillCallBack: CVFillExtendedPixelsCallBack?](./fillcallback.md)
+- [var version: CFIndex](./version.md)
   The version of this fill algorithm.
 
 

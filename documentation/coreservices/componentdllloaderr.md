@@ -1,7 +1,8 @@
 # componentDllLoadErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Windows error returned when a component is loading. 
 

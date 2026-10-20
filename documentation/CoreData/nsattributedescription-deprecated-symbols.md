@@ -1,13 +1,14 @@
 # Deprecated symbols
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated properties
-- [var attributeType: NSAttributeType](nsattributedescription/attributetype-swift.property.md)
+- [var attributeType: NSAttributeType](./nsattributedescription/attributetype-swift.property.md)
   The attribute’s type.
 
 

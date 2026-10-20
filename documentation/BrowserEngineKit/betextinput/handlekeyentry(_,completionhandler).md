@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Accepts key-entry events from the text system for the text view to process.
@@ -15,16 +16,24 @@ Accepts key-entry events from the text system for the text view to process.
 ## Declaration
 
 ```swift
+func handleKeyEntry(_ entry: BEKeyEntry, completionHandler: @escaping @Sendable (BEKeyEntry, Bool) -> Void)
+```
+
+```swift
 func handleKeyEntry(_ entry: BEKeyEntry) async -> (BEKeyEntry, Bool)
+```
+
+```objc
+- (void) handleKeyEntry:(BEKeyEntry *) entry withCompletionHandler:(void (^)(BEKeyEntry *theEvent, BOOL wasHandled)) completionHandler;
 ```
 
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
-Implement this method to receive keyboard events from the system. If you handle the `entry` in code, call the completion handler with `true` as the second parameter. Otherwise, call the completion handler with `false` as the second argument, and call the delegate’s [`shouldDeferEventHandlingToSystem(for:context:)`](betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).md) method. In either case, pass the `entry` you received as the first parameter to the completion handler.
+Implement this method to receive keyboard events from the system. If you handle the `entry` in code, call the completion handler with `true` as the second parameter. Otherwise, call the completion handler with `false` as the second argument, and call the delegate’s [`shouldDeferEventHandlingToSystem(for:context:)`](../betextinputdelegate/shoulddefereventhandlingtosystem%28for,context%29.md) method. In either case, pass the `entry` you received as the first parameter to the completion handler.
 
 The system delivers events on a serial queue, so call the completion handler after your view processes an event to allow the system to send a subsequent event.
 

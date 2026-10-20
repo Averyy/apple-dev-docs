@@ -1,7 +1,8 @@
 # nearPupillaryDistance
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance between the pupil and the center of the nose when looking at a nearby object, measured in mm.
 
@@ -20,13 +21,18 @@ The distance between the pupil and the center of the nose when looking at a near
 var nearPupillaryDistance: HKQuantity? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) HKQuantity * nearPupillaryDistance;
+```
+
 ## See Also
 
-- [var farPupillaryDistance: HKQuantity?](hkglasseslensspecification/farpupillarydistance.md)
+### Accessing the specification’s data
+- [var farPupillaryDistance: HKQuantity?](./farpupillarydistance.md)
   The distance between the pupil and the center of the nose when looking at an object far away, measured in mm.
-- [var prism: HKVisionPrism?](hkglasseslensspecification/prism.md)
+- [var prism: HKVisionPrism?](./prism.md)
   An object that contains information about the eye alignment correction.
-- [var vertexDistance: HKQuantity?](hkglasseslensspecification/vertexdistance.md)
+- [var vertexDistance: HKQuantity?](./vertexdistance.md)
   The distance between the back of the lens and the eye, measured in mm.
 
 

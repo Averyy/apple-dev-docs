@@ -1,14 +1,15 @@
 # IdentityDocumentRegistration
 
 **Framework**: IdentityDocumentServices  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an identity document registration.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -23,22 +24,23 @@ Each kind of document format needs its own concrete type that conforms to this p
 ## Topics
 
 ### Instance Properties
-- [var documentIdentifier: String](identitydocumentregistration/documentidentifier.md)
+- [var documentIdentifier: String](./identitydocumentregistration/documentidentifier.md)
   An identifier that uniquely refers to the required document.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [MobileDocumentRegistration](mobiledocumentregistration.md)
+- [MobileDocumentRegistration](./mobiledocumentregistration.md)
 
 ## See Also
 
-- [actor IdentityDocumentProviderRegistrationStore](identitydocumentproviderregistrationstore.md)
+### Registering as an identity document provider
+- [actor IdentityDocumentProviderRegistrationStore](./identitydocumentproviderregistrationstore.md)
   A store that notifies the system which documents an app has available for presentment.
-- [struct MobileDocumentRegistration](mobiledocumentregistration.md)
+- [struct MobileDocumentRegistration](./mobiledocumentregistration.md)
   A type you use to register mobile documents.
 
 

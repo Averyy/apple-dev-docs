@@ -1,12 +1,13 @@
 # makeTextSmaller(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Action method that reduces the text size by one unit.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ Action method that reduces the text size by one unit.
 func makeTextSmaller(_ sender: Any?)
 ```
 
+```objc
+- (void) makeTextSmaller:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The object that sent this message.
 
 ## See Also
 
-- [var canMakeTextLarger: Bool](webview-swift.class/canmaketextlarger.md)
+### Changing the Text Size
+- [var canMakeTextLarger: Bool](./canmaketextlarger.md)
   A Boolean that indicates whether the text can be made larger.
-- [func makeTextLarger(Any?)](webview-swift.class/maketextlarger(_:).md)
+- [func makeTextLarger(Any?)](./maketextlarger%28_%29.md)
   Action method that increases the text size by one unit.
-- [var canMakeTextSmaller: Bool](webview-swift.class/canmaketextsmaller.md)
+- [var canMakeTextSmaller: Bool](./canmaketextsmaller.md)
   A Boolean that indicates whether the text can be made smaller.
 
 

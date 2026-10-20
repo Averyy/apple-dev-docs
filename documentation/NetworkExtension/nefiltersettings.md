@@ -1,7 +1,8 @@
 # NEFilterSettings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The rules and other settings that define the operation of a filter.
 
@@ -14,41 +15,46 @@ The rules and other settings that define the operation of a filter.
 class NEFilterSettings
 ```
 
+```objc
+@interface NEFilterSettings : NSObject
+```
+
 #### Overview
 
-[`NEFilterDataProvider`](nefilterdataprovider.md) instances use [`NEFilterSettings`](nefiltersettings.md) to communicate the desired settings for the filter to the framework. The framework takes care of applying the contained settings to the system.
+[`NEFilterDataProvider`](./nefilterdataprovider.md) instances use [`NEFilterSettings`](./nefiltersettings.md) to communicate the desired settings for the filter to the framework. The framework takes care of applying the contained settings to the system.
 
 ## Topics
 
 ### Creating Filter Settings
-- [init(rules: [NEFilterRule], defaultAction: NEFilterAction)](nefiltersettings/init(rules:defaultaction:).md)
+- [init(rules: [NEFilterRule], defaultAction: NEFilterAction)](./nefiltersettings/init%28rules,defaultaction%29.md)
   Creates a new settings instance from an array of rules and a default action.
-- [class NEFilterRule](nefilterrule.md)
+- [class NEFilterRule](./nefilterrule.md)
   A rule for filters that combines a rule to match network traffic and an action to take when the rule matches.
 ### Inspecting Filter Settings
-- [var rules: [NEFilterRule]](nefiltersettings/rules.md)
+- [var rules: [NEFilterRule]](./nefiltersettings/rules.md)
   An ordered list of rules that define the filter’s operation.
-- [var defaultAction: NEFilterAction](nefiltersettings/defaultaction.md)
+- [var defaultAction: NEFilterAction](./nefiltersettings/defaultaction.md)
   The default action to take for flows of network data that don’t match any of the specified rules.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func apply(NEFilterSettings?, completionHandler: ((any Error)?) -> Void)](nefilterdataprovider/apply(_:completionhandler:).md)
+### Changing filter settings
+- [func apply(NEFilterSettings?, completionHandler: ((any Error)?) -> Void)](./nefilterdataprovider/apply%28_,completionhandler%29.md)
   Applies a set of filtering rules associated with the provider and changes the default filtering action.
 
 

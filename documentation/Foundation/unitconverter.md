@@ -1,7 +1,8 @@
 # UnitConverter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that provides a description of how to convert a unit to and from the base unit of its dimension.
 
@@ -20,50 +21,55 @@ An abstract class that provides a description of how to convert a unit to and fr
 class UnitConverter
 ```
 
+```objc
+@interface NSUnitConverter : NSObject
+```
+
 #### Overview
 
-For units that can be converted by a scale factor or linear equation, use the concrete subclass [`UnitConverterLinear`](unitconverterlinear.md).
+For units that can be converted by a scale factor or linear equation, use the concrete subclass [`UnitConverterLinear`](./unitconverterlinear.md).
 
 ##### Subclassing Notes
 
-[`UnitConverter`](unitconverter.md) is an abstract class that is intended for subclassing. You can implement your own subclass of [`UnitConverter`](unitconverter.md) to convert between units according to any desired mapping function. For example, units may be converted using a logarithmic, exponential, or quantile scale.
+[`UnitConverter`](./unitconverter.md) is an abstract class that is intended for subclassing. You can implement your own subclass of [`UnitConverter`](./unitconverter.md) to convert between units according to any desired mapping function. For example, units may be converted using a logarithmic, exponential, or quantile scale.
 
 ###### Methods to Override
 
 All subclasses must fully implement the following methods:
 
-- [`baseUnitValue(fromValue:)`](unitconverter/baseunitvalue(fromvalue:).md)
-- [`value(fromBaseUnitValue:)`](unitconverter/value(frombaseunitvalue:).md)
+- [`baseUnitValue(fromValue:)`](./unitconverter/baseunitvalue%28fromvalue%29.md)
+- [`value(fromBaseUnitValue:)`](./unitconverter/value%28frombaseunitvalue%29.md)
 
 ###### Alternatives to Subclassing
 
-As stated above, most physical units can be converted using a linear equation with [`UnitConverterLinear`](unitconverterlinear.md). You should only create a custom subclass of [`UnitConverter`](unitconverter.md) for units that cannot be converted in this way.
+As stated above, most physical units can be converted using a linear equation with [`UnitConverterLinear`](./unitconverterlinear.md). You should only create a custom subclass of [`UnitConverter`](./unitconverter.md) for units that cannot be converted in this way.
 
 ## Topics
 
 ### Converting Between Units
-- [func baseUnitValue(fromValue: Double) -> Double](unitconverter/baseunitvalue(fromvalue:).md)
+- [func baseUnitValue(fromValue: Double) -> Double](./unitconverter/baseunitvalue%28fromvalue%29.md)
   For a given unit, returns the specified value of that unit in terms of the base unit of its dimension.
-- [func value(fromBaseUnitValue: Double) -> Double](unitconverter/value(frombaseunitvalue:).md)
+- [func value(fromBaseUnitValue: Double) -> Double](./unitconverter/value%28frombaseunitvalue%29.md)
   For a given unit, returns the specified value of the base unit in terms of that unit.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UnitConverterLinear](unitconverterlinear.md)
+- [UnitConverterLinear](./unitconverterlinear.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UnitConverterLinear](unitconverterlinear.md)
+### Conversion
+- [class UnitConverterLinear](./unitconverterlinear.md)
   A description of how to convert between units using a linear equation.
 
 

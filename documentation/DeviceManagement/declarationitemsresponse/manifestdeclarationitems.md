@@ -1,20 +1,21 @@
 # DeclarationItemsResponse.ManifestDeclarationItems
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary that contains the lists of declarations available on the server.
 
 ## Declaration
 
-```swift
+```
 object DeclarationItemsResponse.ManifestDeclarationItems
 ```
 
 ## Topics
 
 ### Supporting Objects
-- [object ManifestDeclaration](manifestdeclaration.md)
+- [object ManifestDeclaration](../manifestdeclaration.md)
   A dictionary that describes a declaration.
 
 ## Properties
@@ -26,7 +27,8 @@ object DeclarationItemsResponse.ManifestDeclarationItems
 
 ## See Also
 
-- [object ManifestDeclaration](manifestdeclaration.md)
+### Supporting Objects
+- [object ManifestDeclaration](../manifestdeclaration.md)
   A dictionary that describes a declaration.
 
 

@@ -1,16 +1,21 @@
 # kAudioStereoPanControlClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioStereoPanControlClassID: AudioClassID { get }
+```
+
+```c
+kAudioStereoPanControlClassID
 ```
 
 

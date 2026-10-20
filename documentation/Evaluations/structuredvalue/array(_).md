@@ -1,7 +1,8 @@
 # StructuredValue.array(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An array of `StructuredValue` instances.
 
@@ -22,7 +23,8 @@ case array([StructuredValue])
 
 ## See Also
 
-- [case dictionary([String : StructuredValue])](structuredvalue/dictionary(_:).md)
+### Collection values
+- [case dictionary([String : StructuredValue])](./dictionary%28_%29.md)
   A dictionary with string keys and `StructuredValue` instances as values.
 
 

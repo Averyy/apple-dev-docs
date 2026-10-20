@@ -1,15 +1,16 @@
 # PKAddPassesViewControllerDelegate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods that an add-passes view controller’s delegate implements.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,20 +18,25 @@ Methods that an add-passes view controller’s delegate implements.
 protocol PKAddPassesViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol PKAddPassesViewControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Delegate methods
-- [func addPassesViewControllerDidFinish(PKAddPassesViewController)](pkaddpassesviewcontrollerdelegate/addpassesviewcontrollerdidfinish(_:).md)
+- [func addPassesViewControllerDidFinish(PKAddPassesViewController)](./pkaddpassesviewcontrollerdelegate/addpassesviewcontrollerdidfinish%28_%29.md)
   Sent to the delegate after the add-passes view controller has finished.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any PKAddPassesViewControllerDelegate)?](pkaddpassesviewcontroller/delegate.md)
+### Adding passes
+- [var delegate: (any PKAddPassesViewControllerDelegate)?](./pkaddpassesviewcontroller/delegate.md)
   The view controller’s delegate.
 
 

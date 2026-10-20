@@ -1,7 +1,8 @@
 # GLKLightingType.perPixel
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the inputs to the lighting calculation are interpolated across a triangle and the lighting calculations are performed at each fragment.
 
@@ -17,9 +18,14 @@ Indicates that the inputs to the lighting calculation are interpolated across a 
 case perPixel
 ```
 
+```c
+GLKLightingTypePerPixel
+```
+
 ## See Also
 
-- [GLKLightingType.perVertex](glklightingtype/pervertex.md)
+### Constants
+- [GLKLightingType.perVertex](./pervertex.md)
   Indicates that the lighting calculations are performed at each vertex in a triangle and then interpolated across the triangle.
 
 

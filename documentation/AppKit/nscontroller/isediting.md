@@ -1,12 +1,13 @@
 # isEditing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if any editors are registered with the controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ A Boolean value indicating if any editors are registered with the controller.
 var isEditing: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEditing) BOOL editing;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when an editor is registered with the controller object or [`false`](https://developer.apple.com/documentation/swift/false) when no editor is registered.
+The value of this property is [`true`](../../Swift/true.md) when an editor is registered with the controller object or [`false`](../../Swift/false.md) when no editor is registered.
 
 ## See Also
 
-- [func objectDidBeginEditing(any NSEditor)](nscontroller/objectdidbeginediting(_:).md)
+### Managing editing
+- [func objectDidBeginEditing(any NSEditor)](./objectdidbeginediting%28_%29.md)
   Invoked to inform the receiver that `editor` has uncommitted changes that can affect the receiver.
-- [func objectDidEndEditing(any NSEditor)](nscontroller/objectdidendediting(_:).md)
+- [func objectDidEndEditing(any NSEditor)](./objectdidendediting%28_%29.md)
   Invoked to inform the receiver that `editor` has committed or discarded its changes.
-- [func commitEditing() -> Bool](nscontroller/commitediting.md)
+- [func commitEditing() -> Bool](./commitediting%28%29.md)
   Attempts to commit any pending edits.
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nscontroller/commitediting(withdelegate:didcommit:contextinfo:).md)
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
   Attempts to commit any pending changes in known editors of the receiver.
-- [func discardEditing()](nscontroller/discardediting.md)
+- [func discardEditing()](./discardediting%28%29.md)
   Discards any pending changes by registered editors.
 
 

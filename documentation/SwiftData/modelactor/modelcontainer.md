@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The ModelContainer for the ModelActor The container that manages the app’s schema and model storage configuration
@@ -25,7 +26,8 @@ var modelContainer: ModelContainer { get }
 
 ## See Also
 
-- [var modelContext: ModelContext](modelactor/modelcontext.md)
+### Accessing the container and context
+- [var modelContext: ModelContext](./modelcontext.md)
   The context that serializes any code running on the model actor.
 
 

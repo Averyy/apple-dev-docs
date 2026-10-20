@@ -1,7 +1,8 @@
 # kSCPropNet6to4Relay
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The 6to4 key `Relay`, whose value is of type `CFString`.
 
@@ -12,6 +13,10 @@ The 6to4 key `Relay`, whose value is of type `CFString`.
 
 ```swift
 let kSCPropNet6to4Relay: CFString
+```
+
+```c
+extern CFStringRef const kSCPropNet6to4Relay;
 ```
 
 

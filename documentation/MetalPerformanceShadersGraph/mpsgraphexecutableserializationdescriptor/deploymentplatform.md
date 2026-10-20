@@ -1,7 +1,8 @@
 # deploymentPlatform
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The deployment platform used to serialize the executable.
 
@@ -17,6 +18,10 @@ The deployment platform used to serialize the executable.
 
 ```swift
 var deploymentPlatform: MPSGraphDeploymentPlatform { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphDeploymentPlatform deploymentPlatform;
 ```
 
 #### Discussion

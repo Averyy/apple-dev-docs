@@ -1,7 +1,8 @@
 # createdFilename
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The created name of the file.
 
@@ -18,9 +19,14 @@ The created name of the file.
 var createdFilename: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * createdFilename;
+```
+
 ## See Also
 
-- [var originalFilename: String?](iccamerafile/originalfilename.md)
+### Inspecting a File’s Name
+- [var originalFilename: String?](./originalfilename.md)
   The original name of the file on disk.
 
 

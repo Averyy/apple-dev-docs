@@ -1,7 +1,8 @@
 # dictionaryResultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The request returns dictionaries.
 
@@ -10,7 +11,7 @@ The request returns dictionaries.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The request returns dictionaries.
 static var dictionaryResultType: NSFetchRequestResultType { get }
 ```
 
+```c
+NSDictionaryResultType
+```
+
 #### Discussion
 
-See also [`includesPendingChanges`](nsfetchrequest/includespendingchanges.md) and [`propertiesToFetch`](nsfetchrequest/propertiestofetch.md).
+See also [`includesPendingChanges`](../nsfetchrequest/includespendingchanges.md) and [`propertiesToFetch`](../nsfetchrequest/propertiestofetch.md).
 
 ## See Also
 
-- [static var managedObjectResultType: NSFetchRequestResultType](nsfetchrequestresulttype/managedobjectresulttype.md)
+### Result Types
+- [static var managedObjectResultType: NSFetchRequestResultType](./managedobjectresulttype.md)
   The request returns managed objects.
-- [static var managedObjectIDResultType: NSFetchRequestResultType](nsfetchrequestresulttype/managedobjectidresulttype.md)
+- [static var managedObjectIDResultType: NSFetchRequestResultType](./managedobjectidresulttype.md)
   The request returns managed object IDs.
-- [static var countResultType: NSFetchRequestResultType](nsfetchrequestresulttype/countresulttype.md)
+- [static var countResultType: NSFetchRequestResultType](./countresulttype.md)
   The request returns the count of the objects that match the request.
 
 

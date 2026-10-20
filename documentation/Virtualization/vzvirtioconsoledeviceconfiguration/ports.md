@@ -1,7 +1,8 @@
 # ports
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of Virtio port configurations.
 
@@ -12,6 +13,10 @@ The list of Virtio port configurations.
 
 ```swift
 var ports: VZVirtioConsolePortConfigurationArray { get }
+```
+
+```objc
+@property (strong, readonly) VZVirtioConsolePortConfigurationArray * ports;
 ```
 
 

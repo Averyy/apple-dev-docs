@@ -1,7 +1,8 @@
 # instantiate(withOwner:topLevelObjects:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instantiates objects in the nib file with the specified owner.
 
@@ -14,9 +15,13 @@ Instantiates objects in the nib file with the specified owner.
 func instantiate(withOwner owner: Any?, topLevelObjects: AutoreleasingUnsafeMutablePointer<NSArray?>?) -> Bool
 ```
 
+```objc
+- (BOOL) instantiateWithOwner:(id) owner topLevelObjects:(NSArray **) topLevelObjects;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the nib is instantiated; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the nib is instantiated; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 

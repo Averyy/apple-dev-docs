@@ -1,7 +1,8 @@
 # Packetization hint sample data
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that describes the sample data for data using the Real-Time Transport Protocol (RTP).
 
@@ -19,38 +20,39 @@ The packetization hint sample data contains the data elements listed in the foll
 
 | Packetization hint sample data | Bytes |
 | --- | --- |
-| [`Entry count`](packetization_hint_sample_data/entry_count.md) | 2 |
-| [`Reserved`](packetization_hint_sample_data/reserved.md) | 2 |
-| [`Packet entry table`](packetization_hint_sample_data/packet_entry_table.md) | Variable |
-| [`Additional data`](packetization_hint_sample_data/additional_data.md) | Variable |
+| [`Entry count`](./packetization_hint_sample_data/entry_count.md) | 2 |
+| [`Reserved`](./packetization_hint_sample_data/reserved.md) | 2 |
+| [`Packet entry table`](./packetization_hint_sample_data/packet_entry_table.md) | Variable |
+| [`Additional data`](./packetization_hint_sample_data/additional_data.md) | Variable |
 
 ## Topics
 
 ### Data fields
-- [Entry count](packetization_hint_sample_data/entry_count.md)
+- [Entry count](./packetization_hint_sample_data/entry_count.md)
   A 16-bit unsigned integer indicating the number of packet entries in the table.
-- [Reserved](packetization_hint_sample_data/reserved.md)
+- [Reserved](./packetization_hint_sample_data/reserved.md)
   Two bytes.
-- [Packet entry table](packetization_hint_sample_data/packet_entry_table.md)
+- [Packet entry table](./packetization_hint_sample_data/packet_entry_table.md)
   A variable length table containing packet entries.
-- [Additional data](packetization_hint_sample_data/additional_data.md)
+- [Additional data](./packetization_hint_sample_data/additional_data.md)
   A variable length field containing data pointed to by the entries in the data table.
 ### Packet entries
-- [Packet entry](packet_entry.md)
+- [Packet entry](./packet_entry.md)
   A packet entry.
 ### Data modes
-- [Data modes](data_modes.md)
+- [Data modes](./data_modes.md)
   Data formats you use in extra information TLVs.
 
 ## See Also
 
-- [Hint media](hint_media.md)
+### Hint media
+- [Hint media](./hint_media.md)
   Provide information about data units to stream in hint tracks.
-- [Finding an original media track from a hint track](finding_an_original_media_track_from_a_hint_track.md)
+- [Finding an original media track from a hint track](./finding_an_original_media_track_from_a_hint_track.md)
   Use track reference atoms from hint tracks to locate the original media track.
-- [RTP hint tracks](rtp_hint_tracks.md)
+- [RTP hint tracks](./rtp_hint_tracks.md)
   Allow a streaming server to create RTP streams from a QuickTime movie.
-- [Hint track sample description](hint_track_sample_description.md)
+- [Hint track sample description](./hint_track_sample_description.md)
   An atom that specifies the data format and location of the hint track sample data.
 
 

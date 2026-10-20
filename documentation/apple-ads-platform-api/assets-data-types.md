@@ -1,6 +1,7 @@
 # Assets Data Types
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Look up the enumerations and scalar types used for assets.
 
@@ -9,20 +10,21 @@ Look up the enumerations and scalar types used for assets.
 
 ## Topics
 
-- [type AssetType](assettype.md)
+- [type AssetType](./assettype.md)
   The media type of an asset.
-- [type ImageType](imagetype.md)
+- [type ImageType](./imagetype.md)
   Image format type for an uploaded asset.
-- [type Orientation](orientation.md)
+- [type Orientation](./orientation.md)
   Asset orientation and aspect ratio classification.
-- [type AssetEligibilityStatus](asseteligibilitystatus.md)
+- [type AssetEligibilityStatus](./asseteligibilitystatus.md)
   Overall eligibility status for an asset’s policy evaluation.
 
 ## See Also
 
-- [Assets Endpoints](assets-endpoints.md)
+### Assets
+- [Assets Endpoints](./assets-endpoints.md)
   Upload, query, retrieve, and delete Apple Maps creative assets.
-- [Assets Data Objects](assets-data-objects.md)
+- [Assets Data Objects](./assets-data-objects.md)
   Reference the request and response objects for asset endpoints.
 
 

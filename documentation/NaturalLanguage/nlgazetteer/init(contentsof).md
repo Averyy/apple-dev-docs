@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Natural Language gazetteer from a model created with the Create ML framework.
 
@@ -20,9 +21,13 @@ Creates a Natural Language gazetteer from a model created with the Create ML fra
 init(contentsOf url: URL) throws
 ```
 
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this initializer to create an [`NLGazetteer`](nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](https://developer.apple.com/documentation/createml/mlgazetteer) in the `Create ML` framework.
+Use this initializer to create an [`NLGazetteer`](../nlgazetteer.md) from an `.mlmodel` file saved by [`MLGazetteer`](../../CreateML/mlgazetteer.md) in the `Create ML` framework.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Use this initializer to create an [`NLGazetteer`](nlgazetteer.md) from an `.mlmo
 
 ## See Also
 
-- [init(data: Data) throws](nlgazetteer/init(data:).md)
+### Creating a Gazetteer
+- [init(data: Data) throws](./init%28data%29.md)
   Creates a gazetteer from a data instance.
-- [init(dictionary: [String : [String]], language: NLLanguage?) throws](nlgazetteer/init(dictionary:language:).md)
+- [init(dictionary: [String : [String]], language: NLLanguage?) throws](./init%28dictionary,language%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary.
-- [class func write([String : [String]], language: NLLanguage?, to: URL) throws](nlgazetteer/write(_:language:to:).md)
+- [class func write([String : [String]], language: NLLanguage?, to: URL) throws](./write%28_,language,to%29.md)
   Creates a gazetteer from a set of labels for terms represented by a dictionary and saves the gazetteer to a file.
 
 

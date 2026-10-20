@@ -1,7 +1,8 @@
 # ContainerValueKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A key for accessing container values.
 
@@ -22,7 +23,7 @@ protocol ContainerValueKey
 
 #### Overview
 
-You can create custom container values by extending the [`ContainerValues`](containervalues.md) structure with new properties. First declare a new container value key type and specify a value for the required [`defaultValue`](containervaluekey/defaultvalue.md) property:
+You can create custom container values by extending the [`ContainerValues`](./containervalues.md) structure with new properties. First declare a new container value key type and specify a value for the required [`defaultValue`](./containervaluekey/defaultvalue.md) property:
 
 ```swift
 private struct MyContainerValueKey: ContainerValueKey {
@@ -30,7 +31,7 @@ private struct MyContainerValueKey: ContainerValueKey {
 }
 ```
 
-The Swift compiler automatically infers the associated [`Value`](containervaluekey/value.md) type as the type you specify for the default value. Then use the key to define a new container value property:
+The Swift compiler automatically infers the associated [`Value`](./containervaluekey/value.md) type as the type you specify for the default value. Then use the key to define a new container value property:
 
 ```swift
 extension ContainerValues {
@@ -41,7 +42,7 @@ extension ContainerValues {
 }
 ```
 
-Clients of your container value never use the key directly. Instead, they use the key path of your custom container value property. To set the container value for a view, add the [`containerValue(_:_:)`](view/containervalue(_:_:).md) view modifier to that view:
+Clients of your container value never use the key directly. Instead, they use the key path of your custom container value property. To set the container value for a view, add the [`containerValue(_:_:)`](./view/containervalue%28_,_%29.md) view modifier to that view:
 
 ```swift
 MyView()
@@ -106,23 +107,24 @@ struct MyContainer<Content: View>: View {
 ## Topics
 
 ### Associated Types
-- [associatedtype Value](containervaluekey/value.md)
+- [associatedtype Value](./containervaluekey/value.md)
   The type of value produced by the container value.
 ### Type Properties
-- [static var defaultValue: Self.Value](containervaluekey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./containervaluekey/defaultvalue.md)
   The default value of the container value.
 
 ## See Also
 
-- [struct Subview](subview.md)
+### Accessing a container’s subviews
+- [struct Subview](./subview.md)
   An opaque value representing a subview of another view.
-- [struct SubviewsCollection](subviewscollection.md)
+- [struct SubviewsCollection](./subviewscollection.md)
   An opaque collection representing the subviews of view.
-- [struct SubviewsCollectionSlice](subviewscollectionslice.md)
+- [struct SubviewsCollectionSlice](./subviewscollectionslice.md)
   A slice of a SubviewsCollection.
-- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](./view/containervalue%28_,_%29.md)
   Sets a particular container value of a view.
-- [struct ContainerValues](containervalues.md)
+- [struct ContainerValues](./containervalues.md)
   A collection of container values associated with a given view.
 
 

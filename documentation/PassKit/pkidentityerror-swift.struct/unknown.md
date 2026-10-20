@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates an unknown error.
 
@@ -20,19 +21,20 @@ static var unknown: PKIdentityError.Code { get }
 
 ## See Also
 
-- [static var cancelled: PKIdentityError.Code](pkidentityerror-swift.struct/cancelled.md)
+### Constants
+- [static var cancelled: PKIdentityError.Code](./cancelled.md)
   An error that indicates the user cancels the presented sheet.
-- [static var invalidElement: PKIdentityError.Code](pkidentityerror-swift.struct/invalidelement.md)
+- [static var invalidElement: PKIdentityError.Code](./invalidelement.md)
   An error that indicates an element the app requests isn’t valid.
-- [static var invalidNonce: PKIdentityError.Code](pkidentityerror-swift.struct/invalidnonce.md)
+- [static var invalidNonce: PKIdentityError.Code](./invalidnonce.md)
   An error that indicates the number is too large or unsuitable.
-- [static var notSupported: PKIdentityError.Code](pkidentityerror-swift.struct/notsupported.md)
+- [static var notSupported: PKIdentityError.Code](./notsupported.md)
   An error that indicates the request originates from a device the framework doesn’t support.
-- [static var networkUnavailable: PKIdentityError.Code](pkidentityerror-swift.struct/networkunavailable.md)
+- [static var networkUnavailable: PKIdentityError.Code](./networkunavailable.md)
   An error that indicates a network isn’t available.
-- [static var noElementsRequested: PKIdentityError.Code](pkidentityerror-swift.struct/noelementsrequested.md)
+- [static var noElementsRequested: PKIdentityError.Code](./noelementsrequested.md)
   An error that indicates the elements aren’t supported.
-- [static var requestAlreadyInProgress: PKIdentityError.Code](pkidentityerror-swift.struct/requestalreadyinprogress.md)
+- [static var requestAlreadyInProgress: PKIdentityError.Code](./requestalreadyinprogress.md)
   An error that indicates a request is already in progress.
 
 

@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of objects that collectively describe the physical characteristics of a surface.
 
@@ -19,9 +20,14 @@ An array of objects that collectively describe the physical characteristics of a
 var elements: [PHASEShape.Element] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<PHASEShapeElement *> * elements;
+```
+
 ## See Also
 
-- [PHASEShape.Element](phaseshape/element.md)
+### Describing Surface Characteristics
+- [PHASEShape.Element](./element.md)
   An object that describes the characteristics of a physical surface.
 
 

@@ -1,7 +1,8 @@
 # init(style:isHidden:reservedLayoutWidth:tintColor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an outline disclosure options structure.
 
@@ -9,7 +10,7 @@ Creates an outline disclosure options structure.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

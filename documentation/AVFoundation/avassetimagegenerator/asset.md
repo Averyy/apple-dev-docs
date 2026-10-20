@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset that initialized the image generator.
 
@@ -17,6 +18,10 @@ The asset that initialized the image generator.
 
 ```swift
 var asset: AVAsset { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAsset * asset;
 ```
 
 

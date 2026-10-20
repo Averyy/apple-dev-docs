@@ -1,7 +1,8 @@
 # audioListener
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity which defines the listener position and orientation for spatial audio.
 

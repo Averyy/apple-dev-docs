@@ -1,7 +1,8 @@
 # afterScreenUpdates
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to take the snapshot after incorporating any pending screen updates.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether to take the snapshot after incorporating 
 var afterScreenUpdates: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL afterScreenUpdates;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which causes the web view to incorporate any recent changes to the view’s content and then generate the snapshot. If you change the value to [`false`](https://developer.apple.com/documentation/swift/false), the web view takes the snapshot immediately, and before incorporating any new changes.
+The default value of this property is [`true`](../../Swift/true.md), which causes the web view to incorporate any recent changes to the view’s content and then generate the snapshot. If you change the value to [`false`](../../Swift/false.md), the web view takes the snapshot immediately, and before incorporating any new changes.
 
 
 ---

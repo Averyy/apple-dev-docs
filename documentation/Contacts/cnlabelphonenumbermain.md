@@ -1,7 +1,8 @@
 # CNLabelPhoneNumberMain
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for identifying the contact’s main phone number.
 
@@ -19,25 +20,30 @@ The label for identifying the contact’s main phone number.
 let CNLabelPhoneNumberMain: String
 ```
 
+```c
+extern NSString * const CNLabelPhoneNumberMain;
+```
+
 #### Discussion
 
 This label takes a string value.
 
 ## See Also
 
-- [let CNLabelPhoneNumberiPhone: String](cnlabelphonenumberiphone.md)
+### Getting phone number labels
+- [let CNLabelPhoneNumberiPhone: String](./cnlabelphonenumberiphone.md)
   The label for identifying the contact’s iPhone number.
-- [let CNLabelPhoneNumberAppleWatch: String](cnlabelphonenumberapplewatch.md)
+- [let CNLabelPhoneNumberAppleWatch: String](./cnlabelphonenumberapplewatch.md)
   The label for identifying the contact’s Apple Watch phone number.
-- [let CNLabelPhoneNumberMobile: String](cnlabelphonenumbermobile.md)
+- [let CNLabelPhoneNumberMobile: String](./cnlabelphonenumbermobile.md)
   The label for identifying the contact’s mobile phone number.
-- [let CNLabelPhoneNumberPager: String](cnlabelphonenumberpager.md)
+- [let CNLabelPhoneNumberPager: String](./cnlabelphonenumberpager.md)
   The label for identifying the contact’s pager number.
-- [let CNLabelPhoneNumberWorkFax: String](cnlabelphonenumberworkfax.md)
+- [let CNLabelPhoneNumberWorkFax: String](./cnlabelphonenumberworkfax.md)
   The label for identifying the contact’s work fax number.
-- [let CNLabelPhoneNumberHomeFax: String](cnlabelphonenumberhomefax.md)
+- [let CNLabelPhoneNumberHomeFax: String](./cnlabelphonenumberhomefax.md)
   The label for identifying the contact’s home fax number.
-- [let CNLabelPhoneNumberOtherFax: String](cnlabelphonenumberotherfax.md)
+- [let CNLabelPhoneNumberOtherFax: String](./cnlabelphonenumberotherfax.md)
   The label for identifying another fax number.
 
 

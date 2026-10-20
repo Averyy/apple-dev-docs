@@ -1,10 +1,11 @@
 # init(mScope:mElement:mParameterID:mFlags:mSubRangeMin:mSubRangeMax:mStatus:mData1:reserved1:reserved2:reserved3:)
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # UIWindowScene.ActivationAction.ConfigurationProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias defining a closure that provides an activation configuration for the activation action.
 
@@ -17,17 +18,22 @@ A type alias defining a closure that provides an activation configuration for th
 typealias ConfigurationProvider = (UIWindowScene.ActivationAction) -> UIWindowScene.ActivationConfiguration?
 ```
 
+```c
+typedef UIWindowSceneActivationConfiguration *(^)(__kindof UIWindowSceneActivationAction *) UIWindowSceneActivationActionConfigurationProvider;
+```
+
 #### Return Value
 
 An activation configuration you can use to request a window scene.
 
 ## Parameters
 
-- `action`: The [`UIWindowScene.ActivationAction`](uiwindowscene/activationaction.md) requesting a configuration.
+- `action`: The [`UIWindowScene.ActivationAction`](../activationaction.md) requesting a configuration.
 
 ## See Also
 
-- [convenience init(title: String?, subtitle: String?, image: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, alternate: UIAction?, UIWindowScene.ActivationAction.ConfigurationProvider)](uiwindowscene/activationaction/init(title:subtitle:image:identifier:discoverabilitytitle:attributes:alternate:_:).md)
+### Creating an activation action
+- [convenience init(title: String?, subtitle: String?, image: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, alternate: UIAction?, UIWindowScene.ActivationAction.ConfigurationProvider)](./init%28title,subtitle,image,identifier,discoverabilitytitle,attributes,alternate,_%29.md)
   Creates an activation action using the specified parameters.
 
 

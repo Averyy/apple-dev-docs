@@ -1,7 +1,8 @@
 # GLKVector4MakeWithVector3(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new four-component vector created by combining a three-component vector with a scalar value.
 
@@ -17,6 +18,10 @@ Returns a new four-component vector created by combining a three-component vecto
 func GLKVector4MakeWithVector3(_ vector: GLKVector3, _ w: Float) -> GLKVector4
 ```
 
+```c
+static GLKVector4 GLKVector4MakeWithVector3(GLKVector3 vector, float w);
+```
+
 #### Return Value
 
 A new vector.
@@ -28,9 +33,10 @@ A new vector.
 
 ## See Also
 
-- [func GLKVector4Make(Float, Float, Float, Float) -> GLKVector4](glkvector4make(_:_:_:_:).md)
+### Creating Vectors
+- [func GLKVector4Make(Float, Float, Float, Float) -> GLKVector4](./glkvector4make%28_,_,_,_%29.md)
   Returns a new four-component vector created from individual component values.
-- [func GLKVector4MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector4](glkvector4makewitharray(_:).md)
+- [func GLKVector4MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector4](./glkvector4makewitharray%28_%29.md)
   Returns a new four-component vector created from an array of components.
 
 

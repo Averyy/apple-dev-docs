@@ -2,6 +2,7 @@
 
 **Framework**: TranslationUIProvider  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type for this UI providers extensions’s body

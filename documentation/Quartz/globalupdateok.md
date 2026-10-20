@@ -1,7 +1,8 @@
 # globalUpdateOK
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -12,11 +13,16 @@
 var globalUpdateOK: DarwinBoolean
 ```
 
+```c
+extern Boolean globalUpdateOK;
+```
+
 ## See Also
 
-- [let kQuartzFilterApplicationDomain: String](kquartzfilterapplicationdomain.md)
-- [let kQuartzFilterPDFWorkflowDomain: String](kquartzfilterpdfworkflowdomain.md)
-- [let kQuartzFilterPrintingDomain: String](kquartzfilterprintingdomain.md)
+### Constants
+- [let kQuartzFilterApplicationDomain: String](./kquartzfilterapplicationdomain.md)
+- [let kQuartzFilterPDFWorkflowDomain: String](./kquartzfilterpdfworkflowdomain.md)
+- [let kQuartzFilterPrintingDomain: String](./kquartzfilterprintingdomain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # spaceUsed
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of used disk storage on the current device.
 
@@ -17,7 +18,8 @@ let spaceUsed: Measurement<UnitInformationStorage>
 
 ## See Also
 
-- [let capacity: Measurement<UnitInformationStorage>](totaldiskspacecapacitymetric/capacity.md)
+### Measurements
+- [let capacity: Measurement<UnitInformationStorage>](./capacity.md)
   The total disk space capacity of the current device.
 
 

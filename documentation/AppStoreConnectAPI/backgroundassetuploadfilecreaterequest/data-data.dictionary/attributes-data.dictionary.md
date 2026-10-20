@@ -1,7 +1,8 @@
 # BackgroundAssetUploadFileCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset upload file create request resource.
 
@@ -10,16 +11,20 @@ Attributes that describe a background asset upload file create request resource.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetUploadFileCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `assetType` (string) *(required)*: - **`ASSET`**: the .aar file that contains your background assets
-- **`MANIFEST`**: The manifest you generate to describe the .aar file.
+- `assetType` (string) *(required)*:
+
+  - **`ASSET`**: the .aar file that contains your background assets
+  - **`MANIFEST`**: The manifest you generate to describe the .aar file.
+
+  **Allowed Values**: `ASSET`, `MANIFEST`
 - `fileName` (string) *(required)*
-- `fileSize` (int64) *(required)*
+- `fileSize` (int64) *(required)*: **Minimum**: `1`; **Maximum**: `9007199254740991`
 
 
 ---

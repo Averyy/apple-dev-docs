@@ -1,7 +1,8 @@
 # init(owner:name:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new variant set spec nested inside a variant spec.
 

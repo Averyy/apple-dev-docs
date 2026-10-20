@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 

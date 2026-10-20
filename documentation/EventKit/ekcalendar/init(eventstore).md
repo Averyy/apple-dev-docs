@@ -1,17 +1,22 @@
 # init(eventStore:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a calendar belonging to a specified event store.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
 ```swift
 init(eventStore: EKEventStore)
+```
+
+```objc
++ (EKCalendar *) calendarWithEventStore:(EKEventStore *) eventStore;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The created calendar.
 
 ## See Also
 
-- [init(for: EKEntityType, eventStore: EKEventStore)](ekcalendar/init(for:eventstore:).md)
+### Creating Calendars
+- [init(for: EKEntityType, eventStore: EKEventStore)](./init%28for,eventstore%29.md)
   Creates a new calendar that can contain the given entity type.
 
 

@@ -1,12 +1,15 @@
 # init(window:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new graphics context for drawing into a window.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Add instances of NSView to display content in a window
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Creates a new graphics context for drawing into a window.
 init(window: NSWindow)
 ```
 
+```objc
++ (NSGraphicsContext *) graphicsContextWithWindow:(NSWindow *) window;
+```
+
 #### Return Value
 
-The created [`NSGraphicsContext`](nsgraphicscontext.md) object, or `nil` if the object could not be created.
+The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 
 ## Parameters
 
@@ -24,9 +31,10 @@ The created [`NSGraphicsContext`](nsgraphicscontext.md) object, or `nil` if the 
 
 ## See Also
 
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
+### Deprecated methods
+- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](./init%28graphicsport,flipped%29.md)
   Creates a new graphics context from the specified graphics port.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
+- [class func setGraphicsState(Int)](./setgraphicsstate%28_%29.md)
   Makes the graphics context of the specified graphics state current, and resets graphics state.
 
 

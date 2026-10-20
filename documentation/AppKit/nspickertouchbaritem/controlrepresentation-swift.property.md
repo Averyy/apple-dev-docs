@@ -1,7 +1,8 @@
 # controlRepresentation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,16 +16,21 @@
 var controlRepresentation: NSPickerTouchBarItem.ControlRepresentation { get set }
 ```
 
+```objc
+@property NSPickerTouchBarItemControlRepresentation controlRepresentation;
+```
+
 ## See Also
 
-- [var numberOfOptions: Int](nspickertouchbaritem/numberofoptions.md)
-- [func setLabel(String, at: Int)](nspickertouchbaritem/setlabel(_:at:).md)
-- [func label(at: Int) -> String?](nspickertouchbaritem/label(at:).md)
-- [func setImage(UIImage?, at: Int)](nspickertouchbaritem/setimage(_:at:).md)
-- [func image(at: Int) -> UIImage?](nspickertouchbaritem/image(at:).md)
-- [var collapsedRepresentationImage: UIImage?](nspickertouchbaritem/collapsedrepresentationimage.md)
-- [var collapsedRepresentationLabel: String](nspickertouchbaritem/collapsedrepresentationlabel.md)
-- [NSPickerTouchBarItem.ControlRepresentation](nspickertouchbaritem/controlrepresentation-swift.enum.md)
+### Configuring picker appearance
+- [var numberOfOptions: Int](./numberofoptions.md)
+- [func setLabel(String, at: Int)](./setlabel%28_,at%29.md)
+- [func label(at: Int) -> String?](./label%28at%29.md)
+- [func setImage(UIImage?, at: Int)](./setimage%28_,at%29.md)
+- [func image(at: Int) -> UIImage?](./image%28at%29.md)
+- [var collapsedRepresentationImage: UIImage?](./collapsedrepresentationimage.md)
+- [var collapsedRepresentationLabel: String](./collapsedrepresentationlabel.md)
+- [NSPickerTouchBarItem.ControlRepresentation](./controlrepresentation-swift.enum.md)
   Constants that specify display styles for picker bar items.
 
 

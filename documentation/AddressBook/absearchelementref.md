@@ -1,12 +1,13 @@
 # ABSearchElementRef
 
 **Framework**: Address Book  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to an ABSearchElement object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A reference to an ABSearchElement object.
 class ABSearchElementRef
 ```
 
+```c
+typedef struct __ABSearchElementRef * ABSearchElementRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [class ABSearchElement](absearchelement.md)
+### Search Elements
+- [class ABSearchElement](./absearchelement.md)
   An object you use to specify a search query for records in the Address Book database.
 
 

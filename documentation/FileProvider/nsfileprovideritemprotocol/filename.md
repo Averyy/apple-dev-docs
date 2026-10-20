@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item’s filename.
@@ -19,15 +20,20 @@ The item’s filename.
 var filename: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * filename;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovideritemprotocol/itemidentifier.md)
+### Providing Required Properties
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The item’s persistent identifier.
-- [var typeIdentifier: String](nsfileprovideritemprotocol/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The item’s Uniform Type Identifier (UTI).
-- [var contentType: UTType](nsfileprovideritemprotocol/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The item’s Uniform Type Identifier (UTI).
-- [var capabilities: NSFileProviderItemCapabilities](nsfileprovideritemprotocol/capabilities.md)
+- [var capabilities: NSFileProviderItemCapabilities](./capabilities.md)
   The item’s capabilities.
 
 

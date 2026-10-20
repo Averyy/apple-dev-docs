@@ -1,23 +1,28 @@
 # CFReadStreamClose(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Closes a readable stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFReadStreamClose(_ stream: CFReadStream!)
+```
+
+```c
+extern void CFReadStreamClose(CFReadStreamRef stream);
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ This function terminates the flow of bytes and releases any system resources req
 
 ## See Also
 
-- [func CFReadStreamOpen(CFReadStream!) -> Bool](cfreadstreamopen(_:).md)
+### Opening and Closing a Read Stream
+- [func CFReadStreamOpen(CFReadStream!) -> Bool](./cfreadstreamopen%28_%29.md)
   Opens a stream for reading.
 
 

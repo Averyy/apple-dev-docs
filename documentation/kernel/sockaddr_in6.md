@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_in6 {
     ...
 };
@@ -17,12 +17,12 @@ struct sockaddr_in6 {
 ## Topics
 
 ### Instance Properties
-- [sin6_addr](sockaddr_in6/1527618-sin6_addr.md)
-- [sin6_family](sockaddr_in6/1527724-sin6_family.md)
-- [sin6_flowinfo](sockaddr_in6/1527569-sin6_flowinfo.md)
-- [sin6_len](sockaddr_in6/1527600-sin6_len.md)
-- [sin6_port](sockaddr_in6/1527662-sin6_port.md)
-- [sin6_scope_id](sockaddr_in6/1527562-sin6_scope_id.md)
+- [sin6_addr](./sockaddr_in6/api-1527618-sin6_addr.md)
+- [sin6_family](./sockaddr_in6/api-1527724-sin6_family.md)
+- [sin6_flowinfo](./sockaddr_in6/api-1527569-sin6_flowinfo.md)
+- [sin6_len](./sockaddr_in6/api-1527600-sin6_len.md)
+- [sin6_port](./sockaddr_in6/api-1527662-sin6_port.md)
+- [sin6_scope_id](./sockaddr_in6/api-1527562-sin6_scope_id.md)
 
 
 ---

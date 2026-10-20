@@ -1,7 +1,8 @@
 # errSecCSHostProtocolInvalidAttribute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing host returned invalid or inconsistent attributes for guest code.
 
@@ -13,6 +14,10 @@ Code signing host returned invalid or inconsistent attributes for guest code.
 
 ```swift
 var errSecCSHostProtocolInvalidAttribute: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolInvalidAttribute
 ```
 
 

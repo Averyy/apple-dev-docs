@@ -1,7 +1,8 @@
 # JSONType.date
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A date type.
 

@@ -1,7 +1,8 @@
 # kCMIOControlPropertyScope
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,10 +14,15 @@
 var kCMIOControlPropertyScope: Int { get }
 ```
 
+```c
+kCMIOControlPropertyScope
+```
+
 ## See Also
 
-- [var kCMIOControlPropertyElement: Int](kcmiocontrolpropertyelement.md)
-- [var kCMIOControlPropertyVariant: Int](kcmiocontrolpropertyvariant.md)
+### Constants
+- [var kCMIOControlPropertyElement: Int](./kcmiocontrolpropertyelement.md)
+- [var kCMIOControlPropertyVariant: Int](./kcmiocontrolpropertyvariant.md)
 
 
 ---

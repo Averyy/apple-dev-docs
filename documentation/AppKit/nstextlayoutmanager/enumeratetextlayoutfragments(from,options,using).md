@@ -1,7 +1,8 @@
 # enumerateTextLayoutFragments(from:options:using:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enumerates the text layout fragments starting at the specified location.
 
@@ -14,9 +15,13 @@ Enumerates the text layout fragments starting at the specified location.
 func enumerateTextLayoutFragments(from location: (any NSTextLocation)?, options: NSTextLayoutFragment.EnumerationOptions = [], using block: (NSTextLayoutFragment) -> Bool) -> (any NSTextLocation)?
 ```
 
+```objc
+- (id<NSTextLocation>) enumerateTextLayoutFragmentsFromLocation:(id<NSTextLocation>) location options:(NSTextLayoutFragmentEnumerationOptions) options usingBlock:(BOOL (^)(NSTextLayoutFragment *layoutFragment)) block;
+```
+
 #### Return Value
 
-An [`NSTextLocation`](nstextlocation.md), or `nil`.
+An [`NSTextLocation`](../nstextlocation.md), or `nil`.
 
 #### Discussion
 
@@ -29,26 +34,27 @@ Returning `false` from `block` breaks out of the enumeration.
 ## Parameters
 
 - `location`: The location where youstart the enumeration.
-- `options`: One or more of the available [`NSTextLayoutFragment.EnumerationOptions`](nstextlayoutfragment/enumerationoptions.md).
+- `options`: One or more of the available [`NSTextLayoutFragment.EnumerationOptions`](../nstextlayoutfragment/enumerationoptions.md).
 - `block`: A closure you provide that determines if the enumeration finishes early.
 
 ## See Also
 
-- [var textViewportLayoutController: NSTextViewportLayoutController](nstextlayoutmanager/textviewportlayoutcontroller.md)
+### Causing layout generation
+- [var textViewportLayoutController: NSTextViewportLayoutController](./textviewportlayoutcontroller.md)
   The text viewport layout controller associated with the layout manager’s text container.
-- [func invalidateLayout(for: NSTextRange)](nstextlayoutmanager/invalidatelayout(for:).md)
+- [func invalidateLayout(for: NSTextRange)](./invalidatelayout%28for%29.md)
   Invalidates the layout information for specified text range.
-- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-68dez.md)
+- [func textLayoutFragment(for: any NSTextLocation) -> NSTextLayoutFragment?](./textlayoutfragment%28for%29-68dez.md)
   Returns the text layout fragment from the document at the specified location.
-- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](nstextlayoutmanager/textlayoutfragment(for:)-4dhrx.md)
+- [func textLayoutFragment(for: CGPoint) -> NSTextLayoutFragment?](./textlayoutfragment%28for%29-4dhrx.md)
   Returns the text layout fragment at the position you specify in the text container.
-- [func ensureLayout(for: CGRect)](nstextlayoutmanager/ensurelayout(for:)-6ptsj.md)
+- [func ensureLayout(for: CGRect)](./ensurelayout%28for%29-6ptsj.md)
   Performs the layout for filling the bounds you specify inside the last text container.
-- [func ensureLayout(for: NSTextRange)](nstextlayoutmanager/ensurelayout(for:)-3duae.md)
+- [func ensureLayout(for: NSTextRange)](./ensurelayout%28for%29-3duae.md)
   Performs the layout for specified text range.
-- [NSTextLayoutManager.SegmentType](nstextlayoutmanager/segmenttype.md)
+- [NSTextLayoutManager.SegmentType](./segmenttype.md)
   Values that describe the rendering of selection boundaries.
-- [NSTextLayoutManager.SegmentOptions](nstextlayoutmanager/segmentoptions.md)
+- [NSTextLayoutManager.SegmentOptions](./segmentoptions.md)
   Values that describe where and how the framework extends segments of a selection.
 
 

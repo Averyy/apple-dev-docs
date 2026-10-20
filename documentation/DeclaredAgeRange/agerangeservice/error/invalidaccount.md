@@ -1,7 +1,8 @@
 # AgeRangeService.Error.invalidAccount
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the current Apple Account isn’t eligible for age range sharing.
 

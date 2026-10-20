@@ -1,7 +1,8 @@
 # Scene.AnchorCollection.Iterator
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An iterator that presents the elements of the collection.
 
@@ -11,7 +12,7 @@ An iterator that presents the elements of the collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ typealias Iterator = Entity.ChildCollection.IndexingIterator<Scene.AnchorCollect
 
 ## See Also
 
-- [func makeIterator() -> Scene.AnchorCollection.Iterator](scene/anchorcollection/makeiterator.md)
+### Iterating over the collection
+- [func makeIterator() -> Scene.AnchorCollection.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
-- [Scene.AnchorCollection.Element](scene/anchorcollection/element.md)
+- [Scene.AnchorCollection.Element](./element.md)
   The type of element traversed by the iterator.
 
 

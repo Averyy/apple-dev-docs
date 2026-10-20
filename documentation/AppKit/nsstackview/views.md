@@ -1,17 +1,22 @@
 # views
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of views owned by the stack view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var views: [NSView] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<__kindof NSView *> * views;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The `views` array always contains all of the views owned and managed by the stac
 
 ## See Also
 
-- [func views(in: NSStackView.Gravity) -> [NSView]](nsstackview/views(in:).md)
+### Inspecting a Stack View
+- [func views(in: NSStackView.Gravity) -> [NSView]](./views%28in%29.md)
   Returns the array of views in the specified gravity area in the stack view.
-- [var detachedViews: [NSView]](nsstackview/detachedviews.md)
+- [var detachedViews: [NSView]](./detachedviews.md)
   An array that contains the detached views from all the stack view’s gravity areas.
-- [func clippingResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsstackview/clippingresistancepriority(for:).md)
+- [func clippingResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./clippingresistancepriority%28for%29.md)
   Returns the Auto Layout priority for resisting clipping of views in the stack view when Auto Layout attempts to reduce the stack view’s size.
-- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsstackview/huggingpriority(for:).md)
+- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./huggingpriority%28for%29.md)
   Returns the Auto Layout priority for the stack view to minimize its size to fit its contained views as closely as possible, for a specified user interface axis.
 
 

@@ -1,7 +1,8 @@
 # ENOTCONN
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Socket is not connected.
 

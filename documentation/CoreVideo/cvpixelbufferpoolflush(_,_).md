@@ -1,7 +1,8 @@
 # CVPixelBufferPoolFlush(_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Frees pixel buffers from the pool based on the options that you specify.
 
@@ -20,10 +21,14 @@ Frees pixel buffers from the pool based on the options that you specify.
 func CVPixelBufferPoolFlush(_ pool: CVPixelBufferPool, _ options: CVPixelBufferPoolFlushFlags)
 ```
 
+```c
+extern void CVPixelBufferPoolFlush(CVPixelBufferPoolRef pool, CVPixelBufferPoolFlushFlags options);
+```
+
 ## Parameters
 
 - `pool`: The pixel buffer pool to free.
-- `options`: Set to [`excessBuffers`](cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of their age. Pass an empty set to free only all aged-out buffers, or set it to [`excessBuffers`](cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of age.
+- `options`: Set to [`excessBuffers`](./cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of their age. Pass an empty set to free only all aged-out buffers, or set it to [`excessBuffers`](./cvpixelbufferpoolflushflags/excessbuffers.md) to free all unused buffers regardless of age.
 
 
 ---

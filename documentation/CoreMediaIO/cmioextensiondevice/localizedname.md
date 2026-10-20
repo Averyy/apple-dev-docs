@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized name for a device.
 
@@ -15,15 +16,20 @@ A localized name for a device.
 var localizedName: String { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSString * localizedName;
+```
+
 ## Mentions
 
-- [Creating a camera extension with Core Media I/O](creating-a-camera-extension-with-core-media-i-o.md)
+- [Creating a camera extension with Core Media I/O](../creating-a-camera-extension-with-core-media-i-o.md)
 
 ## See Also
 
-- [var deviceID: UUID](cmioextensiondevice/deviceid.md)
+### Identifying a Device
+- [var deviceID: UUID](./deviceid.md)
   A universally unique device identifier value.
-- [var legacyDeviceID: String](cmioextensiondevice/legacydeviceid.md)
+- [var legacyDeviceID: String](./legacydeviceid.md)
   A legacy device identifier.
 
 

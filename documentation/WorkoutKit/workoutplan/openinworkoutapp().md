@@ -1,12 +1,13 @@
 # openInWorkoutApp()
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the workout in Workout on Apple Watch.
 
 **Availability**:
-- macOS ?+
+- macOS
 - watchOS 10.0+
 
 ## Declaration

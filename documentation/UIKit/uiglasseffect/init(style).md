@@ -1,7 +1,8 @@
 # init(style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a glass effect with the specified style.
 
@@ -15,6 +16,10 @@ Creates a glass effect with the specified style.
 
 ```swift
 init(style: UIGlassEffect.Style)
+```
+
+```objc
++ (UIGlassEffect *) effectWithStyle:(UIGlassEffectStyle) style;
 ```
 
 

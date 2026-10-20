@@ -1,7 +1,8 @@
 # init(addressBook:)
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a record using the given address book.
 
@@ -14,6 +15,10 @@ Initializes a record using the given address book.
 init!(addressBook: ABAddressBook!)
 ```
 
+```objc
+- (id) initWithAddressBook:(ABAddressBook *) addressBook;
+```
+
 #### Discussion
 
 The record is added to `addressBook` but is not visible to other address books until `addressBook` is saved. This method is the designated initializer for this class.
@@ -24,7 +29,8 @@ The record is added to `addressBook` but is not visible to other address books u
 
 ## See Also
 
-- [init!()](abrecord-swift.class/init.md)
+### Creating a Record
+- [init!()](./init%28%29.md)
   Initializes a record using the shared address book.
 
 

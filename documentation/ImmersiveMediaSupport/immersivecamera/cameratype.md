@@ -1,7 +1,8 @@
 # ImmersiveCamera.CameraType
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the type of immersive camera.
 
@@ -21,18 +22,18 @@ enum CameraType
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveCamera.CameraType.stereoCamera](immersivecamera/cameratype/stereocamera.md)
+- [ImmersiveCamera.CameraType.stereoCamera](./cameratype/stereocamera.md)
   A value that represents a camera rig made up of two cameras.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

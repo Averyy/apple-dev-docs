@@ -1,7 +1,8 @@
 # vector
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -18,15 +19,20 @@
 var vector: simd_double3 { get set }
 ```
 
+```c
+simd_double3 vector;
+```
+
 ## See Also
 
-- [var x: Double](point3d/x.md)
+### Inspecting a 3D point’s properties
+- [var x: Double](./x.md)
   The x-coordinate value.
-- [var y: Double](point3d/y.md)
+- [var y: Double](./y.md)
   The y-coordinate value.
-- [var z: Double](point3d/z.md)
+- [var z: Double](./z.md)
   The z-coordinate value.
-- [var magnitudeSquared: Double](point3d/magnitudesquared.md)
+- [var magnitudeSquared: Double](./magnitudesquared.md)
 
 
 ---

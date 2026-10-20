@@ -1,7 +1,8 @@
 # saveGState()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pushes a copy of the current graphics state onto the graphics state stack for the context.
 
@@ -10,7 +11,7 @@ Pushes a copy of the current graphics state onto the graphics state stack for th
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Pushes a copy of the current graphics state onto the graphics state stack for th
 
 ```swift
 func saveGState()
+```
+
+```c
+extern void CGContextSaveGState(CGContextRef c);
 ```
 
 #### Discussion
@@ -49,11 +54,12 @@ Each graphics context maintains a stack of graphics states. Note that not all as
 - the font smoothing parameter
 - blend mode
 
-To restore your drawing environment to a previously saved state, you can use [`restoreGState()`](cgcontext/restoregstate().md).
+To restore your drawing environment to a previously saved state, you can use [`restoreGState()`](./restoregstate%28%29.md).
 
 ## See Also
 
-- [func restoreGState()](cgcontext/restoregstate.md)
+### Saving and Restoring Graphics State
+- [func restoreGState()](./restoregstate%28%29.md)
   Sets the current graphics state to the state most recently saved.
 
 

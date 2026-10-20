@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates an instance of the conforming type from a string representation.
 
@@ -22,17 +23,18 @@ init?(_ description: String)
 
 ## See Also
 
-- [init(UInt8)](unicode/scalar/init(_:)-2oo2e.md)
+### Creating a Scalar
+- [init(UInt8)](./init%28_%29-2oo2e.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init(Unicode.Scalar)](unicode/scalar/init(_:)-5d6us.md)
+- [init(Unicode.Scalar)](./init%28_%29-5d6us.md)
   Creates a duplicate of the given Unicode scalar.
-- [init?(UInt32)](unicode/scalar/init(_:)-9eo1y.md)
+- [init?(UInt32)](./init%28_%29-9eo1y.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init?(UInt16)](unicode/scalar/init(_:)-18u1m.md)
+- [init?(UInt16)](./init%28_%29-18u1m.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init?(Int)](unicode/scalar/init(_:)-96l5f.md)
+- [init?(Int)](./init%28_%29-96l5f.md)
   Creates a Unicode scalar with the specified numeric value.
-- [init(unicodeScalarLiteral: Unicode.Scalar)](unicode/scalar/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: Unicode.Scalar)](./init%28unicodescalarliteral%29.md)
   Creates a Unicode scalar with the specified value.
 
 

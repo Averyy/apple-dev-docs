@@ -1,25 +1,26 @@
 # EvCmd
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum EvCmd EvCmd;
 ```
 
 ## Topics
 
 ### Constants
-- [EVHIDE](evcmd/evhide.md)
-- [EVLEVEL](evcmd/evlevel.md)
-- [EVMOVE](evcmd/evmove.md)
-- [EVNOP](evcmd/evnop.md)
-- [EVSHOW](evcmd/evshow.md)
+- [EVHIDE](./evcmd/evhide.md)
+- [EVLEVEL](./evcmd/evlevel.md)
+- [EVMOVE](./evcmd/evmove.md)
+- [EVNOP](./evcmd/evnop.md)
+- [EVSHOW](./evcmd/evshow.md)
 
 
 ---

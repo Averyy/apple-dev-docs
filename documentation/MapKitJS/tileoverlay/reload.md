@@ -1,7 +1,8 @@
 # reload()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the tile overlay for the displayed map region with the latest data values.
 
@@ -10,15 +11,16 @@ Reloads the tile overlay for the displayed map region with the latest data value
 
 ## Declaration
 
-```swift
+```
 reload(): void;
 ```
 
 ## See Also
 
-- [imageForTile](tileoverlay/imagefortile.md)
+### Customizing the tile overlay
+- [imageForTile](./imagefortile.md)
   A string, or callback function, that provides the requested tile.
-- [data](tileoverlay/data.md)
+- [data](./data.md)
   A dictionary of custom properties to use with the URL template.
 
 

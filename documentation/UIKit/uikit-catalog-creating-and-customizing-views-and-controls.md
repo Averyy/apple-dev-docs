@@ -1,6 +1,8 @@
 # UIKit Catalog: Creating and customizing views and controls
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [UIKitCatalogCreatingAndCustomizingViewsAndControls.zip](https://docs-assets.developer.apple.com/published/b311f3c6a450/UIKitCatalogCreatingAndCustomizingViewsAndControls.zip)
 
 Customize your app’s user interface with views and controls.
 
@@ -18,38 +20,38 @@ The name of each secondary view controller reflects its target item. For example
 
 This sample demonstrates the following views and controls; several of which are referenced in the sections below:
 
-- [`UIActivityIndicatorView`](uiactivityindicatorview.md)
-- [`UIAlertController`](uialertcontroller.md)
-- [`UIButton`](uibutton.md)
-- [`UIButton.PointerStyleProvider`](uibutton/pointerstyleprovider-swift.typealias.md)
-- [`UIDatePicker`](uidatepicker.md)
-- [`UIPickerView`](uipickerview.md)
-- [`UIColorPickerViewController`](uicolorpickerviewcontroller.md)
-- [`UIColorWell`](uicolorwell.md)
-- [`UIFontPickerViewController`](uifontpickerviewcontroller.md)
-- [`UIImagePickerController`](uiimagepickercontroller.md)
-- [`UIImageView`](uiimageview.md)
-- [`UIImageView with SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview)
-- [`UIPageControl`](uipagecontrol.md)
-- [`UIProgressView`](uiprogressview.md)
-- [`UISearchBar`](uisearchbar.md)
-- [`UISegmentedControl`](uisegmentedcontrol.md)
-- [`UISlider`](uislider.md)
-- [`UIStackView`](uistackview.md)
-- [`UIStepper`](uistepper.md)
-- [`UISwitch`](uiswitch.md)
-- [`UITextField`](uitextfield.md)
-- [`UITextFormattingCoordinator`](uitextformattingcoordinator.md)
-- [`UITextView`](uitextview.md)
-- [`UIToolbar`](uitoolbar.md)
-- [`UIVisualEffect`](uivisualeffect.md)
-- [`WKWebView`](https://developer.apple.com/documentation/webkit/wkwebview)
+- [`UIActivityIndicatorView`](./uiactivityindicatorview.md)
+- [`UIAlertController`](./uialertcontroller.md)
+- [`UIButton`](./uibutton.md)
+- [`UIButton.PointerStyleProvider`](./uibutton/pointerstyleprovider-swift.typealias.md)
+- [`UIDatePicker`](./uidatepicker.md)
+- [`UIPickerView`](./uipickerview.md)
+- [`UIColorPickerViewController`](./uicolorpickerviewcontroller.md)
+- [`UIColorWell`](./uicolorwell.md)
+- [`UIFontPickerViewController`](./uifontpickerviewcontroller.md)
+- [`UIImagePickerController`](./uiimagepickercontroller.md)
+- [`UIImageView`](./uiimageview.md)
+- [UIImageView with SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview)
+- [`UIPageControl`](./uipagecontrol.md)
+- [`UIProgressView`](./uiprogressview.md)
+- [`UISearchBar`](./uisearchbar.md)
+- [`UISegmentedControl`](./uisegmentedcontrol.md)
+- [`UISlider`](./uislider.md)
+- [`UIStackView`](./uistackview.md)
+- [`UIStepper`](./uistepper.md)
+- [`UISwitch`](./uiswitch.md)
+- [`UITextField`](./uitextfield.md)
+- [`UITextFormattingCoordinator`](./uitextformattingcoordinator.md)
+- [`UITextView`](./uitextview.md)
+- [`UIToolbar`](./uitoolbar.md)
+- [`UIVisualEffect`](./uivisualeffect.md)
+- [`WKWebView`](../WebKit/wkwebview.md)
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 In Xcode, select your development team on the iOS-Mac target’s Signing and Capabilities tab.
 
-##### Customize the Look of Buttons with Button Configurations
+##### Customize the look of buttons with button configurations
 
 You can customize the appearance and behavior of a UIButton by using `UIButton.Configuration`. This sample uses a `filled()` configuration so that the button draws with a red background color:
 
@@ -59,7 +61,7 @@ config.background.backgroundColor = .systemRed
 button.configuration = config
 ```
 
-##### Display a Custom Alert
+##### Display a custom alert
 
 `AlertControllerViewController` demonstrates several techniques to display modal alerts and action sheets from an interface. The configuration process is similar for all alerts:
 
@@ -90,7 +92,7 @@ func showSimpleAlert() {
 }
 ```
 
-##### Customize the Appearance of Sliders
+##### Customize the appearance of sliders
 
 This sample demonstrates different ways to display a `UISlider`, a control to select a single value from a continuous range of values. Customize the appearance of a slider by assigning stretchable images for left-side tracking, right-side tracking, and the thumb. In this example, the track image is stretchable and is one pixel wide. Make the track images wider to provide rounded corners, but be sure to set these images’ `capInsets` property to allow for the corners.
 
@@ -139,7 +141,7 @@ func configureCustomSlider(slider: UISlider) {
 }
 ```
 
-##### Add a Search Bar to an Interface
+##### Add a search bar to an interface
 
 Use a `UISearchBar` to receive search-related information from the user. There are various ways to customize the look of the search bar:
 
@@ -169,7 +171,7 @@ func configureSearchBar() {
 }
 ```
 
-##### Customize the Appearance of Toolbars
+##### Customize the appearance of toolbars
 
 This sample shows how to customize a `UIToolbar`, a specialized view that displays one or more buttons along the bottom edge of an interface. Customize a toolbar by determining its bar style (black or default), translucency, tint color, and background color.
 
@@ -213,7 +215,7 @@ override func viewDidLoad() {
 }
 ```
 
-##### Add a Page Control Interface
+##### Add a page control interface
 
 Use a `UIPageControl` to structure an app’s user interface. A *page control* is a specialized control that displays a horizontal series of dots, each of which corresponds to a page in the app’s document or other data-model entity. Customize a page control by setting its tint color for all the page-indicator dots, and for the current page-indicator dot.
 
@@ -232,9 +234,9 @@ func configurePageControl() {
 }
 ```
 
-##### Add Menus to Controls
+##### Add menus to controls
 
-Attach menus to controls like `UIButton` and `UIBarButtonItem`. Create menus with the [`UIAction`](uiaction.md) class, and attach a menu to each control by setting the [`UIMenu`](uimenu.md) property.
+Attach menus to controls like `UIButton` and `UIBarButtonItem`. Create menus with the [`UIAction`](./uiaction.md) class, and attach a menu to each control by setting the [`UIMenu`](./uimenu.md) property.
 
 Attach a menu to a `UIButton` as shown here:
 
@@ -263,7 +265,7 @@ var customTitleBarButtonItem: UIBarButtonItem {
 }
 ```
 
-##### Add Accessibility Support to Your Views
+##### Add accessibility support to your views
 
 VoiceOver and other system accessibility technologies use the information provided by views and controls to help all users navigate content. UIKit views include default accessibility support. Improve user experience by providing custom accessibility information.
 
@@ -287,7 +289,7 @@ func pickerView(_ pickerView: UIPickerView, accessibilityLabelForComponent compo
 
 ##### Support Mac Catalyst
 
-This sample app is built with Mac Catalyst, which means the sample runs on both iOS and Mac. This is achieved by selecting the Mac checkbox in Project Settings. For more about how Mac Catalyst works see [`Mac Catalyst`](https://developer.apple.comhttps://developer.apple.com/mac-catalyst/).
+This sample app is built with Mac Catalyst, which means the sample runs on both iOS and Mac. This is achieved by selecting the Mac checkbox in Project Settings. For more about how Mac Catalyst works see [Mac Catalyst](https://developer.apple.com/mac-catalyst/).
 
 When built for Mac Catalyst, this sample achieves:
 
@@ -297,15 +299,16 @@ When built for Mac Catalyst, this sample achieves:
 
 ## See Also
 
-- [Building and improving your app with Mac Catalyst](building-and-improving-your-app-with-mac-catalyst.md)
+### User interface
+- [Building and improving your app with Mac Catalyst](./building-and-improving-your-app-with-mac-catalyst.md)
   Improve your iPadOS app with Mac Catalyst by supporting native controls, multiple windows, sharing, printing, menus and keyboard shortcuts.
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](./displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
   Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
-- [Removing the title bar in your Mac app built with Mac Catalyst](removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
+- [Removing the title bar in your Mac app built with Mac Catalyst](./removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
   Display content that fills the entire height of a window by removing the title bar.
-- [Toolbar](toolbar.md)
+- [Toolbar](./toolbar.md)
   Provide a space for controls under a window’s title bar and above your custom content.
-- [Touch Bar](../appkit/touch-bar.md)
+- [Touch Bar](../AppKit/touch-bar.md)
   Display interactive content and controls in the Touch Bar.
 
 

@@ -1,7 +1,8 @@
 # GaussianSplatResource.SphericalHarmonicDegree.third
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 48 values: seven third-order lobes plus the degree-two coefficients.
 

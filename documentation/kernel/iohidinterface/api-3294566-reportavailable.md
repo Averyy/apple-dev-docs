@@ -1,14 +1,15 @@
 # ReportAvailable
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t reportLength, IOHIDReportType type, IOMemoryDescriptor *report, OSAction *action, OSDispatchMethod supermethod);
 ```
 

@@ -1,7 +1,8 @@
 # writeAttributeOccupiedSetback(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeOccupiedSetback(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeOccupiedSetback(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeOccupiedSetbackWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

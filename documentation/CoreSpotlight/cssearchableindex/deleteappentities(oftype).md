@@ -1,7 +1,8 @@
 # deleteAppEntities(ofType:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes all app entities of the specified type from the current index.
 
@@ -28,9 +29,10 @@ This method removes all entities of the specified type from the app’s indexes.
 
 ## See Also
 
-- [func indexAppEntities([some IndexedEntity], priority: Int) async throws](cssearchableindex/indexappentities(_:priority:).md)
+### Indexing app entities
+- [func indexAppEntities([some IndexedEntity], priority: Int) async throws](./indexappentities%28_,priority%29.md)
   Indexes one or more app entities and assigns an optional priority to them.
-- [func deleteAppEntities<Entity>(identifiedBy: [Entity.ID], ofType: Entity.Type) async throws](cssearchableindex/deleteappentities(identifiedby:oftype:).md)
+- [func deleteAppEntities<Entity>(identifiedBy: [Entity.ID], ofType: Entity.Type) async throws](./deleteappentities%28identifiedby,oftype%29.md)
   Deletes entities with the specified identifiers and type from the current index.
 
 

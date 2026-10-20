@@ -1,14 +1,15 @@
 # disable_kprintf_output
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 bool disable_kprintf_output;
 ```
 

@@ -1,7 +1,8 @@
 # inheritFrontFacingWinding
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures whether the indirect command buffer inherits the front facing winding from the encoder.
 
@@ -19,9 +20,13 @@ Configures whether the indirect command buffer inherits the front facing winding
 var inheritFrontFacingWinding: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL inheritFrontFacingWinding;
+```
+
 #### Discussion
 
-The property’s default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The property’s default value is [`true`](../../Swift/true.md).
 
 
 ---

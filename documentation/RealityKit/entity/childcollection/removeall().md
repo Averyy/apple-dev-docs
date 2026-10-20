@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all children from this entity.
 

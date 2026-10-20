@@ -1,7 +1,8 @@
 # standardDeviation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard deviation of the distribution.
 
@@ -17,6 +18,10 @@ The standard deviation of the distribution.
 
 ```swift
 var standardDeviation: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float standardDeviation;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # apply(_:to:animatingDifferences:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes and executing a completion handler.
 
@@ -10,7 +11,7 @@ Updates the section UI to reflect the state of the data in the specified snapsho
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,14 @@ Updates the section UI to reflect the state of the data in the specified snapsho
 @preconcurrency func apply(_ snapshot: NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>, to section: SectionIdentifierType, animatingDifferences: Bool = true, completion: (() -> Void)? = nil)
 ```
 
+Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
+
 ## See Also
 
-- [func snapshot(for: SectionIdentifierType) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](uicollectionviewdiffabledatasource-9tqpa/snapshot(for:).md)
+### Updating section data
+- [func snapshot(for: SectionIdentifierType) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>](./snapshot%28for%29.md)
   Returns a representation of the current state of the data in the specified section of the collection view.
-- [func apply(NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>, to: SectionIdentifierType, animatingDifferences: Bool) async](uicollectionviewdiffabledatasource-9tqpa/apply(_:to:animatingdifferences:).md)
+- [func apply(NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>, to: SectionIdentifierType, animatingDifferences: Bool) async](./apply%28_,to,animatingdifferences%29.md)
   Updates the section UI to reflect the state of the data in the specified snapshot, optionally animating the UI changes.
 
 

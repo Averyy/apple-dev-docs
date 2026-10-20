@@ -1,7 +1,8 @@
 # listRowHoverEffectDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the containing list row have its hover effect disabled.
 
@@ -29,11 +30,12 @@ By default, `List` rows have built-in hover effects in visionOS. In some cases, 
 
 ## See Also
 
-- [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](view/swipeactions(edge:allowsfullswipe:content:).md)
+### Configuring interaction
+- [func swipeActions<T>(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> T) -> some View](./swipeactions%28edge,allowsfullswipe,content%29.md)
   Adds custom swipe actions to a row in a list.
-- [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
+- [func selectionDisabled(Bool) -> some View](./selectiondisabled%28_%29.md)
   Adds a condition that controls whether users can select this view.
-- [func listRowHoverEffect(HoverEffect?) -> some View](view/listrowhovereffect(_:).md)
+- [func listRowHoverEffect(HoverEffect?) -> some View](./listrowhovereffect%28_%29.md)
   Requests that the containing list row use the provided hover effect.
 
 

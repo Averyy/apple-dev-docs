@@ -1,7 +1,8 @@
 # ASImportableCredential.TOTP.Algorithm.sha1
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The SHA-1 algorithm.
 
@@ -20,9 +21,10 @@ case sha1
 
 ## See Also
 
-- [ASImportableCredential.TOTP.Algorithm.sha256](asimportablecredential/totp/algorithm-swift.enum/sha256.md)
+### Algorithms
+- [ASImportableCredential.TOTP.Algorithm.sha256](./sha256.md)
   The SHA-256 algorithm.
-- [ASImportableCredential.TOTP.Algorithm.sha512](asimportablecredential/totp/algorithm-swift.enum/sha512.md)
+- [ASImportableCredential.TOTP.Algorithm.sha512](./sha512.md)
   The SHA-512 algorithm.
 
 

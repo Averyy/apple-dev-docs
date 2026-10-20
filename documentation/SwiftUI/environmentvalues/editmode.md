@@ -1,7 +1,8 @@
 # editMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indication of whether the user can edit the contents of a view associated with this environment.
 
@@ -20,11 +21,11 @@ var editMode: Binding<EditMode>? { get set }
 
 #### Discussion
 
-Read this environment value to receive a optional binding to the edit mode state. The binding contains an [`EditMode`](editmode.md) value that indicates whether edit mode is active, and that you can use to change the mode. To learn how to read an environment value, see [`EnvironmentValues`](environmentvalues.md).
+Read this environment value to receive a optional binding to the edit mode state. The binding contains an [`EditMode`](../editmode.md) value that indicates whether edit mode is active, and that you can use to change the mode. To learn how to read an environment value, see [`EnvironmentValues`](../environmentvalues.md).
 
-Certain built-in views automatically alter their appearance and behavior in edit mode. For example, a [`List`](list.md) with a [`ForEach`](foreach.md) that’s configured with the [`onDelete(perform:)`](dynamicviewcontent/ondelete(perform:).md) or [`onMove(perform:)`](dynamicviewcontent/onmove(perform:).md) modifier provides controls to delete or move list items while in edit mode. On devices without an attached keyboard and mouse or trackpad, people can make multiple selections in lists only when edit mode is active.
+Certain built-in views automatically alter their appearance and behavior in edit mode. For example, a [`List`](../list.md) with a [`ForEach`](../foreach.md) that’s configured with the [`onDelete(perform:)`](../dynamicviewcontent/ondelete%28perform%29.md) or [`onMove(perform:)`](../dynamicviewcontent/onmove%28perform%29.md) modifier provides controls to delete or move list items while in edit mode. On devices without an attached keyboard and mouse or trackpad, people can make multiple selections in lists only when edit mode is active.
 
-You can also customize your own views to react to edit mode. The following example replaces a read-only [`Text`](text.md) view with an editable [`TextField`](textfield.md), checking for edit mode by testing the wrapped value’s [`isEditing`](editmode/isediting.md) property:
+You can also customize your own views to react to edit mode. The following example replaces a read-only [`Text`](../text.md) view with an editable [`TextField`](../textfield.md), checking for edit mode by testing the wrapped value’s [`isEditing`](../editmode/isediting.md) property:
 
 ```swift
 @Environment(\.editMode) private var editMode
@@ -45,21 +46,22 @@ var body: some View {
 }
 ```
 
-You can set the edit mode through the binding, or you can rely on an [`EditButton`](editbutton.md) to do that for you, as the example above demonstrates. The button activates edit mode when the user taps the Edit button, and disables editing mode when the user taps Done.
+You can set the edit mode through the binding, or you can rely on an [`EditButton`](../editbutton.md) to do that for you, as the example above demonstrates. The button activates edit mode when the user taps the Edit button, and disables editing mode when the user taps Done.
 
 ## See Also
 
-- [func moveDisabled(Bool) -> some View](view/movedisabled(_:).md)
+### Editing a list
+- [func moveDisabled(Bool) -> some View](../view/movedisabled%28_%29.md)
   Adds a condition for whether the view’s view hierarchy is movable.
-- [func deleteDisabled(Bool) -> some View](view/deletedisabled(_:).md)
+- [func deleteDisabled(Bool) -> some View](../view/deletedisabled%28_%29.md)
   Adds a condition for whether the view’s view hierarchy is deletable.
-- [enum EditMode](editmode.md)
+- [enum EditMode](../editmode.md)
   A mode that indicates whether the user can edit a view’s content.
-- [struct EditActions](editactions.md)
+- [struct EditActions](../editactions.md)
   A set of edit actions on a collection of data that a view can offer to a user.
-- [struct EditableCollectionContent](editablecollectioncontent.md)
+- [struct EditableCollectionContent](../editablecollectioncontent.md)
   An opaque wrapper view that adds editing capabilities to a row in a list.
-- [struct IndexedIdentifierCollection](indexedidentifiercollection.md)
+- [struct IndexedIdentifierCollection](../indexedidentifiercollection.md)
   A collection wrapper that iterates over the indices and identifiers of a collection together.
 
 

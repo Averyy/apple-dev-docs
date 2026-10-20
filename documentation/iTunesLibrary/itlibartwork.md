@@ -1,7 +1,8 @@
 # ITLibArtwork
 
 **Framework**: iTunes Library  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class represents the artwork for a media item.
 
@@ -15,40 +16,45 @@ This class represents the artwork for a media item.
 class ITLibArtwork
 ```
 
+```objc
+@interface ITLibArtwork : NSObject
+```
+
 ## Topics
 
 ### Getting Artwork Info
-- [var image: NSImage?](itlibartwork/image.md)
+- [var image: NSImage?](./itlibartwork/image.md)
   The artwork image.
-- [var imageData: Data?](itlibartwork/imagedata.md)
-  The raw image data of the artwork in the format that [`imageDataFormat`](itlibartwork/imagedataformat.md) specifies.
-- [var imageDataFormat: ITLibArtworkFormat](itlibartwork/imagedataformat.md)
-  The format of the artwork image data that [`imageData`](itlibartwork/imagedata.md) returns.
+- [var imageData: Data?](./itlibartwork/imagedata.md)
+  The raw image data of the artwork in the format that [`imageDataFormat`](./itlibartwork/imagedataformat.md) specifies.
+- [var imageDataFormat: ITLibArtworkFormat](./itlibartwork/imagedataformat.md)
+  The format of the artwork image data that [`imageData`](./itlibartwork/imagedata.md) returns.
 ### Artwork Formats
-- [enum ITLibArtworkFormat](itlibartworkformat.md)
-  These constants specify the possible formats of the data that [`imageDataFormat`](itlibartwork/imagedataformat.md) returns.
+- [enum ITLibArtworkFormat](./itlibartworkformat.md)
+  These constants specify the possible formats of the data that [`imageDataFormat`](./itlibartwork/imagedataformat.md) returns.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ITLibMediaItem](itlibmediaitem.md)
+### Media Items
+- [class ITLibMediaItem](./itlibmediaitem.md)
   This class describes a media item (a track) in the iTunes library, such as a song, a video, or a podcast.
-- [class ITLibMediaEntity](itlibmediaentity.md)
+- [class ITLibMediaEntity](./itlibmediaentity.md)
   This class describes a media entity, which can be a media item, such as an audio track.
-- [class ITLibArtist](itlibartist.md)
+- [class ITLibArtist](./itlibartist.md)
   This class represents an artist, such as the performer of a song.
-- [class ITLibMediaItemVideoInfo](itlibmediaitemvideoinfo.md)
+- [class ITLibMediaItemVideoInfo](./itlibmediaitemvideoinfo.md)
   This class encapsulates the video information of a video media item.
 
 

@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified locale.
 

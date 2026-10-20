@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.RenderContext
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object the compositer uses for rendering all effects associated with a layer renderer drawable.
 
@@ -22,29 +23,30 @@ A `RenderContext` is required for apps to render using the progressive immersion
 ## Topics
 
 ### Rendering with Metal 4
-- [func drawMaskOnStencilAttachment(commandEncoder: any MTL4RenderCommandEncoder, value: UInt8)](layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-7npim.md)
+- [func drawMaskOnStencilAttachment(commandEncoder: any MTL4RenderCommandEncoder, value: UInt8)](./rendercontext/drawmaskonstencilattachment%28commandencoder,value%29-7npim.md)
   Store the value parameter in the stencil texture in the pixels that the Compositor displays onscreen.
-- [func endEncoding(commandEncoder: any MTL4RenderCommandEncoder)](layerrenderer/drawable/rendercontext/endencoding(commandencoder:)-2l6lk.md)
+- [func endEncoding(commandEncoder: any MTL4RenderCommandEncoder)](./rendercontext/endencoding%28commandencoder%29-2l6lk.md)
   Finish encoding the render context.
 ### Rendering with Metal
-- [func drawMaskOnStencilAttachment(commandEncoder: any MTLRenderCommandEncoder, value: UInt8)](layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-65i67.md)
+- [func drawMaskOnStencilAttachment(commandEncoder: any MTLRenderCommandEncoder, value: UInt8)](./rendercontext/drawmaskonstencilattachment%28commandencoder,value%29-65i67.md)
   Store the value parameter in the stencil texture in the pixels that the compositor will display onscreen.
-- [func endEncoding(commandEncoder: any MTLRenderCommandEncoder)](layerrenderer/drawable/rendercontext/endencoding(commandencoder:)-4hx0m.md)
+- [func endEncoding(commandEncoder: any MTLRenderCommandEncoder)](./rendercontext/endencoding%28commandencoder%29-4hx0m.md)
   Finish encoding the render context.
 ### Initializers
-- [init()](layerrenderer/drawable/rendercontext/init.md)
+- [init()](./rendercontext/init%28%29.md)
   Creates a new render context.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext(commandbuffer:).md)
+### Adding a render context
+- [func addRenderContext(commandBuffer: any MTLCommandBuffer) -> LayerRenderer.Drawable.RenderContext](./addrendercontext%28commandbuffer%29.md)
   Adds and returns a render context to a `LayerRenderer.Drawable` providing a metal command buffer.
-- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](layerrenderer/drawable/addrendercontext.md)
+- [func addRenderContext() -> LayerRenderer.Drawable.RenderContext](./addrendercontext%28%29.md)
   Adds and returns a render context to a `LayerRenderer.Drawable` that draws any content required by the compositor.
 
 

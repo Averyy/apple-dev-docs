@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The lightness of the hue-saturation gradient.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The lightness of the hue-saturation gradient.
 var value: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float value;
+```
+
 ## See Also
 
-- [var colorSpace: CGColorSpace?](cihuesaturationvaluegradient/colorspace.md)
+### Instance Properties
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The color space for the generated color wheel.
-- [var dither: Float](cihuesaturationvaluegradient/dither.md)
+- [var dither: Float](./dither.md)
   A Boolean value specifying whether the dither the generated output.
-- [var radius: Float](cihuesaturationvaluegradient/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
-- [var softness: Float](cihuesaturationvaluegradient/softness.md)
+- [var softness: Float](./softness.md)
   The softness of the generated color wheel.
 
 

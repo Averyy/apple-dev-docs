@@ -1,7 +1,8 @@
 # alignsResumptionWithPrimarySegmentBoundary
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the resumption time of primary playback should snap to a segment boundary of the primary asset.
 
@@ -20,23 +21,28 @@ A Boolean value that indicates whether the resumption time of primary playback s
 var alignsResumptionWithPrimarySegmentBoundary: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL alignsResumptionWithPrimarySegmentBoundary;
+```
+
 #### Discussion
 
-If the value is [`true`](https://developer.apple.com/documentation/swift/true), the system adjusts the resumption time of primary playback following an interstitial to the nearest segment boundary when the primary player is playing an HTTP Live Streaming asset.
+If the value is [`true`](../../Swift/true.md), the system adjusts the resumption time of primary playback following an interstitial to the nearest segment boundary when the primary player is playing an HTTP Live Streaming asset.
 
 ## See Also
 
-- [var time: CMTime](avplayerinterstitialevent/time.md)
+### Inspecting timing
+- [var time: CMTime](./time.md)
   A time within the timeline of the primary content that playback of interstitial content begins.
-- [var date: Date?](avplayerinterstitialevent/date.md)
+- [var date: Date?](./date.md)
   A date within the date range of the primary content that playback of interstitial content begins.
-- [var willPlayOnce: Bool](avplayerinterstitialevent/willplayonce.md)
+- [var willPlayOnce: Bool](./willplayonce.md)
   A Boolean value that indicates whether to schedule this event one time only and suppress subsequent replay.
-- [var resumptionOffset: CMTime](avplayerinterstitialevent/resumptionoffset.md)
+- [var resumptionOffset: CMTime](./resumptionoffset.md)
   A time offset at which playback of primary content resumes after interstitial content finishes.
-- [var playoutLimit: CMTime](avplayerinterstitialevent/playoutlimit.md)
+- [var playoutLimit: CMTime](./playoutlimit.md)
   The time offset at which playback of the interstitial ends.
-- [var alignsStartWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsstartwithprimarysegmentboundary.md)
+- [var alignsStartWithPrimarySegmentBoundary: Bool](./alignsstartwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the start time of interstitial playback should snap to a segment boundary of the primary asset.
 
 

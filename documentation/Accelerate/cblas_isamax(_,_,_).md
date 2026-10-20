@@ -1,7 +1,8 @@
 # cblas_isamax(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the element with the largest absolute value in a vector (single-precision).
 
@@ -20,6 +21,10 @@ Returns the index of the element with the largest absolute value in a vector (si
 func cblas_isamax(_ N: __LAPACK_int, _ X: UnsafePointer<Float>?, _ INCX: __LAPACK_int) -> __LAPACK_int
 ```
 
+```c
+__LAPACK_int cblas_isamax(const __LAPACK_int N, const float *X, const __LAPACK_int INCX);
+```
+
 #### Return Value
 
 Returns an index in the range 0..N-1 corresponding with the element with the largest absolute value.
@@ -36,11 +41,12 @@ Returns an index in the range 0..N-1 corresponding with the element with the lar
 
 ## See Also
 
-- [func cblas_icamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](cblas_icamax(_:_:_:).md)
+### General functions
+- [func cblas_icamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](./cblas_icamax%28_,_,_%29.md)
   Returns the index of the element with the largest absolute value in a vector (single-precision complex).
-- [func cblas_idamax(__LAPACK_int, UnsafePointer<Double>?, __LAPACK_int) -> __LAPACK_int](cblas_idamax(_:_:_:).md)
+- [func cblas_idamax(__LAPACK_int, UnsafePointer<Double>?, __LAPACK_int) -> __LAPACK_int](./cblas_idamax%28_,_,_%29.md)
   Returns the index of the element with the largest absolute value in a vector (double-precision).
-- [func cblas_izamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](cblas_izamax(_:_:_:).md)
+- [func cblas_izamax(__LAPACK_int, OpaquePointer?, __LAPACK_int) -> __LAPACK_int](./cblas_izamax%28_,_,_%29.md)
   Returns the index of the element with the largest absolute value in a vector (double-precision complex).
 
 

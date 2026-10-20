@@ -1,7 +1,8 @@
 # isEligibleForIntroOffer
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the customer is eligible for an introductory offer.
 
@@ -22,7 +23,7 @@ var isEligibleForIntroOffer: Bool { get async }
 
 #### Discussion
 
-This value is `true` if the customer is eligible for an introductory offer on this auto-renewable subscription, or any auto-renewable subscription in the same subscription group; this value is `false` otherwise. This value may be `true` even if you haven’t set up an introductory offer in App Store Connect. The following example illustrates checking the [`subscription`](product/subscription.md) property of a product to determine whether the user is eligible for an introductory offer.
+This value is `true` if the customer is eligible for an introductory offer on this auto-renewable subscription, or any auto-renewable subscription in the same subscription group; this value is `false` otherwise. This value may be `true` even if you haven’t set up an introductory offer in App Store Connect. The following example illustrates checking the [`subscription`](../subscription.md) property of a product to determine whether the user is eligible for an introductory offer.
 
 ```swift
 func eligibleForIntro(product: Product) async throws -> Bool {
@@ -38,15 +39,16 @@ func eligibleForIntro(product: Product) async throws -> Bool {
 }
 ```
 
-To specify a customer’s eligibility for an introductory offer, see [`introductoryOfferEligibility(compactJWS:)`](product/purchaseoption/introductoryoffereligibility(compactjws:).md).
+To specify a customer’s eligibility for an introductory offer, see [`introductoryOfferEligibility(compactJWS:)`](../purchaseoption/introductoryoffereligibility%28compactjws%29.md).
 
 ## See Also
 
-- [static func isEligibleForIntroOffer(for: String) async -> Bool](product/subscriptioninfo/iseligibleforintrooffer(for:).md)
+### Getting introductory offer details
+- [static func isEligibleForIntroOffer(for: String) async -> Bool](./iseligibleforintrooffer%28for%29.md)
   Returns a Boolean value that determines the customer’s eligibility for an introductory offer within the provided subscription group.
-- [let introductoryOffer: Product.SubscriptionOffer?](product/subscriptioninfo/introductoryoffer.md)
+- [let introductoryOffer: Product.SubscriptionOffer?](./introductoryoffer.md)
   Information about the introductory offer available for the auto-renewable subscription.
-- [Product.SubscriptionOffer](product/subscriptionoffer.md)
+- [Product.SubscriptionOffer](../subscriptionoffer.md)
   Information about a subscription offer that you configure in App Store Connect.
 
 

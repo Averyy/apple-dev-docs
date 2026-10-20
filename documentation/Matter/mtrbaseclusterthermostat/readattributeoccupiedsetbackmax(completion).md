@@ -1,7 +1,8 @@
 # readAttributeOccupiedSetbackMax(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOccupiedSetbackMax(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOccupiedSetbackMax() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeOccupiedSetbackMaxWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

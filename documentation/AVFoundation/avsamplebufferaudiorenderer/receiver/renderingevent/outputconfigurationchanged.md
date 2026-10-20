@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.RenderingEvent.outputConfigurationChanged
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the audio output configuration has changed.
 
@@ -22,9 +23,10 @@ case outputConfigurationChanged
 
 ## See Also
 
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.wasFlushedAutomatically(at:)](avsamplebufferaudiorenderer/receiver/renderingevent/wasflushedautomatically(at:).md)
+### Rendering events
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.wasFlushedAutomatically(at:)](./wasflushedautomatically%28at%29.md)
   The enqueued media data has been flushed for a reason other than a call to the `flush()` method.
-- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.failed(_:)](avsamplebufferaudiorenderer/receiver/renderingevent/failed(_:).md)
+- [AVSampleBufferAudioRenderer.Receiver.RenderingEvent.failed(_:)](./failed%28_%29.md)
   Indicates that the receiver cannot currently enqueue or render sample buffers because of the associated error.
 
 

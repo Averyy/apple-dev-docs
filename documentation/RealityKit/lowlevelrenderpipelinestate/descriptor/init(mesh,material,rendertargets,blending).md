@@ -1,7 +1,8 @@
 # init(mesh:material:renderTargets:blending:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for the given mesh format, material, render targets, and optional blending configuration.
 

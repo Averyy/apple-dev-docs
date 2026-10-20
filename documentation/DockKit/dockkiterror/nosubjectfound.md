@@ -1,7 +1,8 @@
 # DockKitError.noSubjectFound
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There is no subject in the video frame.
 

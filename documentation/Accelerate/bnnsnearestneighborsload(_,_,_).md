@@ -1,7 +1,8 @@
 # BNNSNearestNeighborsLoad(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds new sample data to a k-nearest neighbors object.
 
@@ -20,13 +21,17 @@ Adds new sample data to a k-nearest neighbors object.
 func BNNSNearestNeighborsLoad(_ knn: BNNSNearestNeighbors?, _ n_new_samples: UInt32, _ data_ptr: UnsafeRawPointer) -> Int32
 ```
 
+```c
+int BNNSNearestNeighborsLoad(BNNSNearestNeighbors knn, const unsigned int n_new_samples, const void *data_ptr);
+```
+
 #### Return Value
 
 `0` when the load is successful; otherwise, a nonzero value.
 
 #### Discussion
 
-The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`BNNSNearestNeighborsLoad(_:_:_:)`](bnnsnearestneighborsload(_:_:_:).md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
+The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`BNNSNearestNeighborsLoad(_:_:_:)`](./bnnsnearestneighborsload%28_,_,_%29.md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
 
 ```swift
 let samples: [Float] = [
@@ -75,7 +80,7 @@ BNNSNearestNeighborsGetInfo(
 
 On return, the `indices` array contains the values `[7, 2, 4, 6]` and the distances array contains the values `[0.0, 1.4142135, 2.236068, 3.0]`.
 
-![A scatter plot showing the eight sample positions in the code listing. The sample positions at indices 6, 4, and 2 are linked by lines to the sample at index 7, with labels indicating the distance between the two samples.](/images/com.apple.accelerate/media-4182667@2x.png)
+![A scatter plot showing the eight sample positions in the code listing. The sample positions at indices 6, 4, and 2 are linked by lines to the sample at index 7, with labels indicating the distance between the two samples.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4182667@2x.png)
 
 ## Parameters
 
@@ -85,15 +90,16 @@ On return, the `indices` array contains the values `[7, 2, 4, 6]` and the distan
 
 ## See Also
 
-- [struct NearestNeighbors](bnns/nearestneighbors.md)
+### K-nearest neighbors calculation
+- [struct NearestNeighbors](./bnns/nearestneighbors.md)
   A structure that calculates k-nearest neighbors.
-- [typealias BNNSNearestNeighbors](bnnsnearestneighbors.md)
+- [typealias BNNSNearestNeighbors](./bnnsnearestneighbors.md)
   A k-nearest neighbors object.
-- [func BNNSCreateNearestNeighbors(UInt32, UInt32, UInt32, BNNSDataType, UnsafePointer<BNNSFilterParameters>?) -> BNNSNearestNeighbors?](bnnscreatenearestneighbors(_:_:_:_:_:).md)
+- [func BNNSCreateNearestNeighbors(UInt32, UInt32, UInt32, BNNSDataType, UnsafePointer<BNNSFilterParameters>?) -> BNNSNearestNeighbors?](./bnnscreatenearestneighbors%28_,_,_,_,_%29.md)
   Returns a new k-nearest neighbors object.
-- [func BNNSNearestNeighborsGetInfo(BNNSNearestNeighbors?, Int32, UnsafeMutablePointer<Int32>?, UnsafeMutableRawPointer?) -> Int32](bnnsnearestneighborsgetinfo(_:_:_:_:).md)
+- [func BNNSNearestNeighborsGetInfo(BNNSNearestNeighbors?, Int32, UnsafeMutablePointer<Int32>?, UnsafeMutableRawPointer?) -> Int32](./bnnsnearestneighborsgetinfo%28_,_,_,_%29.md)
   Calculates the sorted indices and Euclidean distances of the k-nearest neighbors to a specified sample data point.
-- [func BNNSDestroyNearestNeighbors(BNNSNearestNeighbors?)](bnnsdestroynearestneighbors(_:).md)
+- [func BNNSDestroyNearestNeighbors(BNNSNearestNeighbors?)](./bnnsdestroynearestneighbors%28_%29.md)
   Destroys a k-nearest neighbors object.
 
 

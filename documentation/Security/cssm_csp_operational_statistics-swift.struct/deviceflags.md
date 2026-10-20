@@ -1,7 +1,8 @@
 # DeviceFlags
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var DeviceFlags: CSSM_CSP_FLAGS
+```
+
+```c
+CSSM_CSP_FLAGS DeviceFlags;
 ```
 
 

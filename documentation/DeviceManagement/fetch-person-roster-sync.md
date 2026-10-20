@@ -1,7 +1,8 @@
 # Sync the List of People
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get updates about the list of people the server manages.
 
@@ -20,13 +21,22 @@ This service may return the same person more than once. You can identify duplica
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `RosterRequest`
+
 The object containing the request information.
+
+## Responses
+
+- `200` OK (`RosterPersonResponse`, `application/json`): The request was successful. The server returns a list of people.
+- `400` Bad Request: The server was unable to process the request.
 
 ## See Also
 
-- [object RosterPerson](rosterperson.md)
+### People management
+- [object RosterPerson](./rosterperson.md)
   A person’s properties and their values.
-- [Get the List of People](fetch-person-roster.md)
+- [Get the List of People](./fetch-person-roster.md)
   Obtain a list of people the server manages, across the organization.
 
 

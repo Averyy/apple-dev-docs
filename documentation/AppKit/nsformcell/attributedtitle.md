@@ -1,12 +1,13 @@
 # attributedTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the cell as an attributed string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ The title of the cell as an attributed string.
 var attributedTitle: NSAttributedString { get set }
 ```
 
+```objc
+@property (copy) NSAttributedString * attributedTitle;
+```
+
 ## See Also
 
-- [var title: String](nsformcell/title.md)
+### Accessing a Cell’s Title
+- [var title: String](./title.md)
   The cell’s title text.
-- [var titleAlignment: NSTextAlignment](nsformcell/titlealignment.md)
+- [var titleAlignment: NSTextAlignment](./titlealignment.md)
   The alignment of the title.
-- [var titleBaseWritingDirection: NSWritingDirection](nsformcell/titlebasewritingdirection.md)
+- [var titleBaseWritingDirection: NSWritingDirection](./titlebasewritingdirection.md)
   The default writing direction used to render the form cell’s title.
-- [var titleFont: NSFont](nsformcell/titlefont.md)
+- [var titleFont: NSFont](./titlefont.md)
   The font used to draw cell’s title.
-- [var titleWidth: CGFloat](nsformcell/titlewidth.md)
+- [var titleWidth: CGFloat](./titlewidth.md)
   The width of the title field.
 
 

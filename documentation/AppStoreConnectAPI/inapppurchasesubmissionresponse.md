@@ -1,16 +1,19 @@
 # InAppPurchaseSubmissionResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response confirming the submission of an In-App Purchase for App Store review.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use the review submissions workflow instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseSubmissionResponse
 ```
 
@@ -22,9 +25,10 @@ object InAppPurchaseSubmissionResponse
 
 ## See Also
 
-- [object InAppPurchaseSubmissionCreateRequest](inapppurchasesubmissioncreaterequest.md)
+### Objects
+- [object InAppPurchaseSubmissionCreateRequest](./inapppurchasesubmissioncreaterequest.md)
   The request body you use to create an In-App Purchase submission.
-- [object InAppPurchaseSubmission](inapppurchasesubmission.md)
+- [object InAppPurchaseSubmission](./inapppurchasesubmission.md)
   A submission of an In-App Purchase to App Store review, triggering the review process for that item.
 
 

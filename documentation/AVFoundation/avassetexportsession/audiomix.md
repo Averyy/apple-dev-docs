@@ -1,7 +1,8 @@
 # audioMix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters for audio mixing and an indication of whether to enable nondefault audio mixing for export.
 
@@ -20,13 +21,18 @@ The parameters for audio mixing and an indication of whether to enable nondefaul
 var audioMix: AVAudioMix? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) AVAudioMix * audioMix;
+```
+
 #### Discussion
 
 This value is key-value observable.
 
 ## See Also
 
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avassetexportsession/audiotimepitchalgorithm.md)
+### Configuring audio output
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./audiotimepitchalgorithm.md)
   A processing algorithm for managing audio pitch for scaled audio edits.
 
 

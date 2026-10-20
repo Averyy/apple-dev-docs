@@ -1,7 +1,8 @@
 # data
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the signed data from the requested digital identity in X.509 DER format.
 

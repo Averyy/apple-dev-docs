@@ -129,7 +129,7 @@ the *statements* in a `while` statement can be executed zero or more times.
 The value of the *condition*
 must be of type `Bool` or a type bridged to `Bool`.
 The condition can also be an optional binding declaration,
-as discussed in [Optional Binding](TheBasics.md#Optional-Binding).
+as discussed in [Optional Binding](../LanguageGuide/TheBasics.md#Optional-Binding).
 
 > Grammar of a while statement:
 >
@@ -239,7 +239,7 @@ if <#condition 1#> {
 The value of any condition in an `if` statement
 must be of type `Bool` or a type bridged to `Bool`.
 The condition can also be an optional binding declaration,
-as discussed in [Optional Binding](TheBasics.md#Optional-Binding).
+as discussed in [Optional Binding](../LanguageGuide/TheBasics.md#Optional-Binding).
 
 > Grammar of an if statement:
 >
@@ -262,7 +262,7 @@ guard <#condition#> else {
 The value of any condition in a `guard` statement
 must be of type `Bool` or a type bridged to `Bool`.
 The condition can also be an optional binding declaration,
-as discussed in [Optional Binding](TheBasics.md#Optional-Binding).
+as discussed in [Optional Binding](../LanguageGuide/TheBasics.md#Optional-Binding).
 
 Any constants or variables assigned a value
 from an optional binding declaration in a `guard` statement condition
@@ -323,7 +323,7 @@ tuples, instances of custom classes, and optionals.
 The value of the *control expression* can even be matched to the value of a case in an enumeration
 and checked for inclusion in a specified range of values.
 For examples of how to use these various types of values in `switch` statements,
-see [Switch](ControlFlow.md#Switch) in [Control Flow](ControlFlow.md).
+see [Switch](../LanguageGuide/ControlFlow.md#Switch) in [Control Flow](../LanguageGuide/ControlFlow.md).
 
 A `switch` case can optionally contain a `where` clause after each pattern.
 A *where clause* is introduced by the `where` keyword followed by an expression,
@@ -542,7 +542,7 @@ You can nest labeled statements, but the name of each statement label must be un
 
 For more information and to see examples
 of how to use statement labels,
-see [Labeled Statements](ControlFlow.md#Labeled-Statements) in [Control Flow](ControlFlow.md).
+see [Labeled Statements](../LanguageGuide/ControlFlow.md#Labeled-Statements) in [Control Flow](../LanguageGuide/ControlFlow.md).
 
 <!--
   - test: `backtick-identifier-is-legal-label`
@@ -611,8 +611,8 @@ In both cases, program control is then transferred to the first line
 of code following the enclosing loop or `switch` statement, if any.
 
 For examples of how to use a `break` statement,
-see [Break](ControlFlow.md#Break) and [Labeled Statements](ControlFlow.md#Labeled-Statements)
-in [Control Flow](ControlFlow.md).
+see [Break](../LanguageGuide/ControlFlow.md#Break) and [Labeled Statements](../LanguageGuide/ControlFlow.md#Labeled-Statements)
+in [Control Flow](../LanguageGuide/ControlFlow.md).
 
 > Grammar of a break statement:
 >
@@ -647,8 +647,8 @@ the increment expression is still evaluated after the `continue` statement is ex
 because the increment expression is evaluated after the execution of the loop's body.
 
 For examples of how to use a `continue` statement,
-see [Continue](ControlFlow.md#Continue) and [Labeled Statements](ControlFlow.md#Labeled-Statements)
-in [Control Flow](ControlFlow.md).
+see [Continue](../LanguageGuide/ControlFlow.md#Continue) and [Labeled Statements](../LanguageGuide/ControlFlow.md#Labeled-Statements)
+in [Control Flow](../LanguageGuide/ControlFlow.md).
 
 > Grammar of a continue statement:
 >
@@ -671,8 +671,8 @@ It also can't transfer control into a case block
 whose pattern contains value binding patterns.
 
 For an example of how to use a `fallthrough` statement in a `switch` statement,
-see [Control Transfer Statements](ControlFlow.md#Control-Transfer-Statements)
-in [Control Flow](ControlFlow.md).
+see [Control Transfer Statements](../LanguageGuide/ControlFlow.md#Control-Transfer-Statements)
+in [Control Flow](../LanguageGuide/ControlFlow.md).
 
 > Grammar of a fallthrough statement:
 >
@@ -739,8 +739,8 @@ declares the type of errors it throws,
 the value of the *expression* must be an instance of that type.
 
 For an example of how to use a `throw` statement,
-see [Propagating Errors Using Throwing Functions](ErrorHandling.md#Propagating-Errors-Using-Throwing-Functions)
-in [Error Handling](ErrorHandling.md).
+see [Propagating Errors Using Throwing Functions](../LanguageGuide/ErrorHandling.md#Propagating-Errors-Using-Throwing-Functions)
+in [Error Handling](../LanguageGuide/ErrorHandling.md).
 
 > Grammar of a throw statement:
 >
@@ -919,7 +919,7 @@ Swift infers the error type as follows:
   then Swift infers that the `do` statement throws `any Error`.
 
 For more information about working with errors that have explicit types,
-see [Specifying the Error Type](ErrorHandling.md#Specifying-the-Error-Type).
+see [Specifying the Error Type](../LanguageGuide/ErrorHandling.md#Specifying-the-Error-Type).
 
 If any statement in the `do` code block throws an error,
 program control is transferred
@@ -958,7 +958,7 @@ For more information about the patterns you can use in a `catch` clause,
 see [Patterns](Patterns.md).
 
 To see an example of how to use a `do` statement with several `catch` clauses,
-see [Handling Errors](ErrorHandling.md#Handling-Errors).
+see [Handling Errors](../LanguageGuide/ErrorHandling.md#Handling-Errors).
 
 > Grammar of a do statement:
 >

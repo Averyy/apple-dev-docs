@@ -1,11 +1,12 @@
 # kAudioObjectPropertyScopeInput
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,12 +14,17 @@
 var kAudioObjectPropertyScopeInput: AudioObjectPropertyScope { get }
 ```
 
+```c
+kAudioObjectPropertyScopeInput
+```
+
 ## See Also
 
-- [var kAudioObjectPropertyElementMaster: AudioObjectPropertyScope](kaudioobjectpropertyelementmaster.md)
-- [var kAudioObjectPropertyScopeGlobal: AudioObjectPropertyScope](kaudioobjectpropertyscopeglobal.md)
-- [var kAudioObjectPropertyScopeOutput: AudioObjectPropertyScope](kaudioobjectpropertyscopeoutput.md)
-- [var kAudioObjectPropertyScopePlayThrough: AudioObjectPropertyScope](kaudioobjectpropertyscopeplaythrough.md)
+### Constants
+- [var kAudioObjectPropertyElementMaster: AudioObjectPropertyScope](./kaudioobjectpropertyelementmaster.md)
+- [var kAudioObjectPropertyScopeGlobal: AudioObjectPropertyScope](./kaudioobjectpropertyscopeglobal.md)
+- [var kAudioObjectPropertyScopeOutput: AudioObjectPropertyScope](./kaudioobjectpropertyscopeoutput.md)
+- [var kAudioObjectPropertyScopePlayThrough: AudioObjectPropertyScope](./kaudioobjectpropertyscopeplaythrough.md)
 
 
 ---

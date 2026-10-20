@@ -1,7 +1,8 @@
 # instanceNorm(epsilon:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a instance normalization operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a instance normalization operation to the current graph.
 ```swift
 func instanceNorm(epsilon: Float = .ulpOfOne.squareRoot()) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

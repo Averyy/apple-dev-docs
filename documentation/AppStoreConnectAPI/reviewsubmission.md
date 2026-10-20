@@ -1,7 +1,8 @@
 # ReviewSubmission
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A formal submission to App Store review grouping one or more items — app versions, In-App Purchases, or events — for simultaneous review.
 
@@ -10,16 +11,16 @@ A formal submission to App Store review grouping one or more items — app versi
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmission
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmission.Attributes](reviewsubmission/attributes-data.dictionary.md)
+- [object ReviewSubmission.Attributes](./reviewsubmission/attributes-data.dictionary.md)
   Attributes that describe a review submission resource.
-- [object ReviewSubmission.Relationships](reviewsubmission/relationships-data.dictionary.md)
+- [object ReviewSubmission.Relationships](./reviewsubmission/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,23 +29,24 @@ object ReviewSubmission
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (ReviewSubmission.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `reviewSubmissions`
 
 ## See Also
 
-- [object ReviewSubmissionItem](reviewsubmissionitem.md)
+### Objects
+- [object ReviewSubmissionItem](./reviewsubmissionitem.md)
   An individual reviewable item — such as an app version, In-App Purchase, or App Clip — included in a review submission.
-- [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
+- [object ReviewSubmissionUpdateRequest](./reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
-- [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
+- [object ReviewSubmissionCreateRequest](./reviewsubmissioncreaterequest.md)
   The request body for creating a review submission for an App Store version or associated items.
-- [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
+- [object ReviewSubmissionResponse](./reviewsubmissionresponse.md)
   The response body for endpoints that create, read, or modify a single review submission.
-- [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
+- [object ReviewSubmissionsResponse](./reviewsubmissionsresponse.md)
   The response body for endpoints that list review submissions for an app.
-- [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
+- [object AppReviewSubmissionsLinkagesResponse](./appreviewsubmissionslinkagesresponse.md)
   A response containing the resource identifiers of review submissions associated with an app.
-- [object ReviewSubmissionItemsLinkagesResponse](reviewsubmissionitemslinkagesresponse.md)
+- [object ReviewSubmissionItemsLinkagesResponse](./reviewsubmissionitemslinkagesresponse.md)
   A response containing the resource identifiers of items included in a review submission.
 
 

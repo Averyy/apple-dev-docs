@@ -1,7 +1,8 @@
 # FSError
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error encountered when performing an FSKit operation.
 
@@ -17,39 +18,40 @@ struct FSError
 ## Topics
 
 ### Identifying errors
-- [static var invalidDirectoryCookie: FSError.Code](fserror/invaliddirectorycookie.md)
-- [static var moduleLoadFailed: FSError.Code](fserror/moduleloadfailed.md)
-- [static var resourceDamaged: FSError.Code](fserror/resourcedamaged.md)
-- [static var resourceUnrecognized: FSError.Code](fserror/resourceunrecognized.md)
-- [static var resourceUnusable: FSError.Code](fserror/resourceunusable.md)
-- [static var statusOperationInProgress: FSError.Code](fserror/statusoperationinprogress.md)
-- [static var statusOperationPaused: FSError.Code](fserror/statusoperationpaused.md)
+- [static var invalidDirectoryCookie: FSError.Code](./fserror/invaliddirectorycookie.md)
+- [static var moduleLoadFailed: FSError.Code](./fserror/moduleloadfailed.md)
+- [static var resourceDamaged: FSError.Code](./fserror/resourcedamaged.md)
+- [static var resourceUnrecognized: FSError.Code](./fserror/resourceunrecognized.md)
+- [static var resourceUnusable: FSError.Code](./fserror/resourceunusable.md)
+- [static var statusOperationInProgress: FSError.Code](./fserror/statusoperationinprogress.md)
+- [static var statusOperationPaused: FSError.Code](./fserror/statusoperationpaused.md)
 ### Identifying the error domain
-- [static var errorDomain: String](fserror/errordomain.md)
+- [static var errorDomain: String](./fserror/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func fs_errorForCocoaError(Int32) -> any Error](fs_errorforcocoaerror(_:).md)
+### Errors and logging
+- [func fs_errorForCocoaError(Int32) -> any Error](./fs_errorforcocoaerror%28_%29.md)
   Creates an error object for the given Cocoa error code.
-- [func fs_errorForMachError(Int32) -> any Error](fs_errorformacherror(_:).md)
+- [func fs_errorForMachError(Int32) -> any Error](./fs_errorformacherror%28_%29.md)
   Creates an error object for the given Mach error code.
-- [func fs_errorForPOSIXError(Int32) -> any Error](fs_errorforposixerror(_:).md)
+- [func fs_errorForPOSIXError(Int32) -> any Error](./fs_errorforposixerror%28_%29.md)
   Creates an error object for the given POSIX error code.
-- [FSError.Code](fserror/code.md)
+- [FSError.Code](./fserror/code.md)
   A code that indicates a specific FSKit error.
-- [let FSKitErrorDomain: String](fskiterrordomain.md)
+- [let FSKitErrorDomain: String](./fskiterrordomain.md)
   An error domain for FSKit errors.
-- [struct FSDataCacheError](fsdatacacheerror.md)
+- [struct FSDataCacheError](./fsdatacacheerror.md)
   An error encountered when performing an FSKit data caching operation.
 
 

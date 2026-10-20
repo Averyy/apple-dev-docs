@@ -1,7 +1,8 @@
 # granularityCount
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A count of granularity units that defines the scope of the document request.
 
@@ -17,13 +18,18 @@ A count of granularity units that defines the scope of the document request.
 var granularityCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger granularityCount;
+```
+
 #### Discussion
 
-Use this value with [`surroundingGranularity`](betextdocumentrequest/surroundinggranularity.md) to determine the extent of the text context that the system requests.
+Use this value with [`surroundingGranularity`](./surroundinggranularity.md) to determine the extent of the text context that the system requests.
 
 ## See Also
 
-- [var surroundingGranularity: UITextGranularity](betextdocumentrequest/surroundinggranularity.md)
+### Scoping the document request
+- [var surroundingGranularity: UITextGranularity](./surroundinggranularity.md)
   The unit of measurement for the document request’s scope.
 
 

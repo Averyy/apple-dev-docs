@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether this interval contains the given date.
 

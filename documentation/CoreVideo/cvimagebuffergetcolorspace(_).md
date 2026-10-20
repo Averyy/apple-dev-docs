@@ -1,7 +1,8 @@
 # CVImageBufferGetColorSpace(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the color space of a Core Video image buffer.
 
@@ -20,9 +21,13 @@ Returns the color space of a Core Video image buffer.
 func CVImageBufferGetColorSpace(_ imageBuffer: CVImageBuffer) -> Unmanaged<CGColorSpace>?
 ```
 
+```c
+extern CGColorSpaceRefCVImageBufferGetColorSpace(CVImageBufferRef imageBuffer);
+```
+
 #### Return Value
 
-The color space of the image buffer, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](cvimagebuffer.md) type.
+The color space of the image buffer, or [`nil`](../ObjectiveC/nil-227m0.md) if you pass a value for the image buffer that isn’t a [`CVImageBuffer`](./cvimagebuffer.md) type.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The color space of the image buffer, or [`nil`](https://developer.apple.com/docu
 
 ## See Also
 
-- [func CVImageBufferGetCleanRect(CVImageBuffer) -> CGRect](cvimagebuffergetcleanrect(_:).md)
+### Inspecting image buffers
+- [func CVImageBufferGetCleanRect(CVImageBuffer) -> CGRect](./cvimagebuffergetcleanrect%28_%29.md)
   Returns the source rectangle of a Core Video image buffer that represents the clean aperture of the buffer in encoded pixels.
-- [func CVImageBufferGetDisplaySize(CVImageBuffer) -> CGSize](cvimagebuffergetdisplaysize(_:).md)
+- [func CVImageBufferGetDisplaySize(CVImageBuffer) -> CGSize](./cvimagebuffergetdisplaysize%28_%29.md)
   Returns the nominal output display size, in square pixels, of a Core Video image buffer.
-- [func CVImageBufferGetEncodedSize(CVImageBuffer) -> CGSize](cvimagebuffergetencodedsize(_:).md)
+- [func CVImageBufferGetEncodedSize(CVImageBuffer) -> CGSize](./cvimagebuffergetencodedsize%28_%29.md)
   Returns the full encoded dimensions of a Core Video image buffer.
-- [func CVImageBufferIsFlipped(CVImageBuffer) -> Bool](cvimagebufferisflipped(_:).md)
+- [func CVImageBufferIsFlipped(CVImageBuffer) -> Bool](./cvimagebufferisflipped%28_%29.md)
   Returns a Boolean value indicating whether the image is vertically flipped.
 
 

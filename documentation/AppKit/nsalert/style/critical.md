@@ -1,17 +1,22 @@
 # NSAlert.Style.critical
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alert style to inform someone about a critical event.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case critical
+```
+
+```c
+NSAlertStyleCritical
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ Use this alert style sparingly and only when extra attention is really needed (f
 
 ## See Also
 
-- [NSAlert.Style.warning](nsalert/style/warning.md)
+### Enumeration Cases
+- [NSAlert.Style.warning](./warning.md)
   An alert style to warn someone about a current or impending event.
-- [NSAlert.Style.informational](nsalert/style/informational.md)
+- [NSAlert.Style.informational](./informational.md)
   An alert style to inform someone about a current or impending event.
 
 

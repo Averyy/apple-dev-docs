@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+

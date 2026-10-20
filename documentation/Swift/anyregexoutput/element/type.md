@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of this capture.
 

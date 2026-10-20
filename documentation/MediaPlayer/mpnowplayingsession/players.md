@@ -1,7 +1,8 @@
 # players
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of players associated with the session.
 
@@ -18,11 +19,16 @@ The array of players associated with the session.
 var players: [AVPlayer] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<AVPlayer *> * players;
+```
+
 ## See Also
 
-- [func addPlayer(AVPlayer)](mpnowplayingsession/addplayer(_:).md)
+### Managing players
+- [func addPlayer(AVPlayer)](./addplayer%28_%29.md)
   Adds a player to the session.
-- [func removePlayer(AVPlayer)](mpnowplayingsession/removeplayer(_:).md)
+- [func removePlayer(AVPlayer)](./removeplayer%28_%29.md)
   Removes a player from the session.
 
 

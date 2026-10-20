@@ -1,15 +1,20 @@
 # activityItemsConfiguration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
 ```swift
 var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id<UIActivityItemsConfigurationReading> activityItemsConfiguration;
 ```
 
 

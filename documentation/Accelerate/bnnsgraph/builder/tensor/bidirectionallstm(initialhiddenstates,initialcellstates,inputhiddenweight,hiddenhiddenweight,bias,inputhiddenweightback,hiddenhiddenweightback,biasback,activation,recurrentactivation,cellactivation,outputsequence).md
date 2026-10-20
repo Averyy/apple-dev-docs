@@ -1,7 +1,8 @@
 # bidirectionalLSTM(initialHiddenStates:initialCellStates:inputHiddenWeight:hiddenHiddenWeight:bias:inputHiddenWeightBack:hiddenHiddenWeightBack:biasBack:activation:recurrentActivation:cellActivation:outputSequence:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a bidirectional LSTM operation to the current graph.
 
@@ -20,6 +21,8 @@ Adds a bidirectional LSTM operation to the current graph.
 func bidirectionalLSTM(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, initialCellStates: BNNSGraph.Builder.Tensor<T>, inputHiddenWeight: BNNSGraph.Builder.Tensor<T>, hiddenHiddenWeight: BNNSGraph.Builder.Tensor<T>, bias: BNNSGraph.Builder.Tensor<T>, inputHiddenWeightBack: BNNSGraph.Builder.Tensor<T>, hiddenHiddenWeightBack: BNNSGraph.Builder.Tensor<T>, biasBack: BNNSGraph.Builder.Tensor<T>, activation: BNNSGraph.Builder.Activation, recurrentActivation: BNNSGraph.Builder.Activation, cellActivation: BNNSGraph.Builder.Activation, outputSequence: Bool) -> (output: BNNSGraph.Builder.Tensor<T>, hiddenStates: BNNSGraph.Builder.Tensor<T>, memoryStates: BNNSGraph.Builder.Tensor<T>)
 ```
 
+Available when `T` conforms to `BNNSScalar`.
+
 #### Discussion
 
 The input tensor `x` is of shape `(L, N, Hin)`
@@ -30,7 +33,7 @@ The input tensor `x` is of shape `(L, N, Hin)`
 
 `memoryStates` is of shape `(N, 2*Hout)` and contains memory states from the last step, `c[-1, ...]`
 
-> **Note**: [`lstm(initialHiddenStates:initialCellStates:inputHiddenWeight:hiddenHiddenWeight:bias:direction:activation:recurrentActivation:cellActivation:outputSequence:)`](bnnsgraph/builder/tensor/lstm(initialhiddenstates:initialcellstates:inputhiddenweight:hiddenhiddenweight:bias:direction:activation:recurrentactivation:cellactivation:outputsequence:).md)
+> **See Also**: [`lstm(initialHiddenStates:initialCellStates:inputHiddenWeight:hiddenHiddenWeight:bias:direction:activation:recurrentActivation:cellActivation:outputSequence:)`](./lstm%28initialhiddenstates,initialcellstates,inputhiddenweight,hiddenhiddenweight,bias,direction,activation,recurrentactivation,cellactivation,outputsequence%29.md)
 
 ## Parameters
 

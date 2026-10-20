@@ -2,24 +2,29 @@
 
 **Framework**: XCUIAutomation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a snapshot of an element’s attributes and descendant user interface hierarchy.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func snapshot() throws -> any XCUIElementSnapshot
+```
+
+```objc
+- (id<XCUIElementSnapshot>) snapshotWithError:(NSError **) outError;
 ```
 
 #### Return Value

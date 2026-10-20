@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for a media item picker.
 
@@ -16,13 +17,18 @@ The delegate for a media item picker.
 weak var delegate: (any MPMediaPickerControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MPMediaPickerControllerDelegate> delegate;
+```
+
 #### Discussion
 
 Typically, you set the delegate to be the same object that initializes and displays the media item picker.
 
 ## See Also
 
-- [protocol MPMediaPickerControllerDelegate](mpmediapickercontrollerdelegate.md)
+### Responding to media item picker selections
+- [protocol MPMediaPickerControllerDelegate](../mpmediapickercontrollerdelegate.md)
   The protocol you implement so that a media item picker can respond to a user making media item selections.
 
 

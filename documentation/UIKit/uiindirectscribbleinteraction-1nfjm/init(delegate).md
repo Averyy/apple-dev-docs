@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an indirect Scribble interaction item with the specified delegate.
 
@@ -9,7 +10,7 @@ Creates an indirect Scribble interaction item with the specified delegate.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ Creates an indirect Scribble interaction item with the specified delegate.
 
 ## Parameters
 
-- `delegate`: The object that acts as the delegate of this [`UIIndirectScribbleInteraction`](uiindirectscribbleinteraction-1nfjm.md) instance.
+- `delegate`: The object that acts as the delegate of this [`UIIndirectScribbleInteraction`](../uiindirectscribbleinteraction-1nfjm.md) instance.
 
 
 ---

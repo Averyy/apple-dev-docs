@@ -1,6 +1,7 @@
 # Verifying your App Intents implementation
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: Article
 
 Confirm that your app intents work correctly, the system can understand your content, and that it can run your app’s actions.
 
@@ -8,10 +9,10 @@ Confirm that your app intents work correctly, the system can understand your con
 
 To verify the behavior of your App Intents code and integrations with system experiences, perform the following tasks to test different aspects of your App Intents implementation:
 
-1. Write integration tests with the [`App Intents Testing`](https://developer.apple.com/documentation/appintentstesting) framework for code-level verification of your app intents and entities.
+1. Write integration tests with the [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md) framework for code-level verification of your app intents and entities.
 2. Check that app intents, their parameters, and their results appear correctly in the Shortcuts app.
 3. Search for your entities in Spotlight to verify that Apple Intelligence and Siri can discover the entities that your app intents need and the ones that represent contextual cues you provide to Apple Intelligence and Siri.
-4. Test the end-to-end Siri experience of [`App Shortcuts`](app-shortcuts.md) and app intents that conform to a schema in an [`App schema domains`](app-schema-domains.md).
+4. Test the end-to-end Siri experience of [App Shortcuts](./app-shortcuts.md) and app intents that conform to a schema in an [app schema domain](./app-schema-domains.md).
 
 The verification tasks above build on top of each other, and each step helps you catch different problems. For example:
 
@@ -20,20 +21,20 @@ The verification tasks above build on top of each other, and each step helps you
 - Spotlight confirms that your entities are discoverable, but it can’t verify that Siri correctly acts on a phrase people say.
 - Verification of the end-to-end experience with Siri makes sure people can use natural language to perform your app’s actions.
 
-> **Note**: On iPhone and iPad, Settings > Developer includes an option to display donations on the Lock Screen. This setting only applies to custom shortcuts you donate with [`SiriKit`](https://developer.apple.com/documentation/sirikit); it doesn’t apply to intents or entities you donate using App Intents.
+> **Note**: On iPhone and iPad, Settings > Developer includes an option to display donations on the Lock Screen. This setting only applies to custom shortcuts you donate with [SiriKit](../SiriKit/SiriKit.md); it doesn’t apply to intents or entities you donate using App Intents.
 
-#### Write Integration Tests with App Intents Testing
+#### Write integration tests with App Intents Testing
 
-Create integration tests for your app intents code with the [`App Intents Testing`](https://developer.apple.com/documentation/appintentstesting) framework. App Intents Testing performs your code out-of-process, the same way Siri or Shortcuts perform them. As a result, it helps you verify the actual behavior of your app intents logic. To write tests for your app intents code:
+Create integration tests for your app intents code with the [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md) framework. App Intents Testing performs your code out-of-process, the same way Siri or Shortcuts perform them. As a result, it helps you verify the actual behavior of your app intents logic. To write tests for your app intents code:
 
 1. Create tests that invoke the intents directly, including parameter values.
 2. Assert on the result the same way you do with any other integration test.
 
-Your App Intents code likely calls more general business logic like loading data from a database. To test your business logic, continue to use [`XCTest`](https://developer.apple.com/documentation/xctest) and [`Swift Testing`](https://developer.apple.com/documentation/testing).
+Your App Intents code likely calls more general business logic like loading data from a database. To test your business logic, continue to use [XCTest](../XCTest/XCTest.md) and [Swift Testing](../Testing/Testing.md).
 
-For more information about using the App Intents Testing framework, see [`Testing your App Intents code`](https://developer.apple.com/documentation/appintentstesting/testing-your-app-intents-code).
+For more information about using the App Intents Testing framework, see [Testing your App Intents code](../AppIntentsTesting/testing-your-app-intents-code.md).
 
-#### Verify Intents Entities and Intent Results with the Shortcuts App
+#### Verify intents, entities, and intent results with the Shortcuts app
 
 App intents by themselves don’t have a direct visual representation, and system experiences display intent parameters and their results differently based on a person’s device or context.
 
@@ -60,7 +61,7 @@ To see a visual representation of your app intent in Shortcuts and use it to ver
 
 To debug issues when you run the intent in Shortcuts, set a breakpoint at the top of your `perform()` method before you run it. The debugger pauses execution immediately after you run the shortcut. Step through the code and, for example, inspect the intent’s parameters to verify they have the values they require.
 
-#### Confirm That Entities and App Shortcuts Appear in Spotlight
+#### Confirm that entities and App Shortcuts appear in Spotlight
 
 To integrate your app with Apple Intelligence and Siri, donate your app entities to the Spotlight index and make them discoverable by the system. Then, manually test entity donations with Spotlight to verify that the system can find the data it needs to respond to a person’s request:
 
@@ -72,9 +73,9 @@ Additionally, Spotlight allows you to verify your App Shortcuts. Make sure the p
 
 > **Note**: Spotlight indexing depends on device behavior that doesn’t always match Simulator. Validate Spotlight integration and entity discoverability on a physical device. To reset the Spotlight index and start Spotlight indexing from scratch, use the options that the device’s Developer settings provide in the CoreSpotlight Testing section.
 
-For more information about making entities discoverable and integrating your app with Spotlight, see [`Making app entities available in Spotlight`](making-app-entities-available-in-spotlight.md).
+For more information about making entities discoverable and integrating your app with Spotlight, see [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-#### Validate the End to End Experience with Siri
+#### Validate the end-to-end experience with Siri
 
 People can invoke actions using natural language with Apple Intelligence and Siri if you adopt app schemas for your intents, entities, and enums or provide App Shortcuts. To verify the integration with Apple Intelligence and Siri end-to-end, use Siri to test your app intents with phrases people actually say.
 
@@ -88,9 +89,10 @@ To use realistic phrases in your testing:
 
 ## See Also
 
-- [Testing your App Intents code](../appintentstesting/testing-your-app-intents-code.md)
+### Testing
+- [Testing your App Intents code](../AppIntentsTesting/testing-your-app-intents-code.md)
   Evaluate intents, entities, and queries, and verify your integration with system features like Spotlight and Siri.
-- [App Intents Testing](../appintentstesting/appintentstesting.md)
+- [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md)
   Test your app intents, entities, queries, and integration with system features like Siri or Spotlight.
 
 

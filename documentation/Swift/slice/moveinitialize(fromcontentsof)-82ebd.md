@@ -1,7 +1,8 @@
 # moveInitialize(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves every element of an initialized source buffer into the uninitialized memory referenced by this buffer slice, leaving the source memory uninitialized and this buffer slice’s memory initialized.
 
@@ -20,6 +21,8 @@ Moves every element of an initialized source buffer into the uninitialized memor
 func moveInitialize<Element>(fromContentsOf source: UnsafeMutableBufferPointer<Element>) -> Slice<Base>.Index where Base == UnsafeMutableBufferPointer<Element>
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Return Value
 
 The index one past the last element of the buffer slice initialized by this function.
@@ -32,7 +35,7 @@ The returned index is the position of the next uninitialized element in the buff
 
 > **Note**: The memory regions referenced by `source` and this buffer slice may overlap.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 ## Parameters
 

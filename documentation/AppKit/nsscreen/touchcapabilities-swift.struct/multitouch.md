@@ -1,7 +1,8 @@
 # multiTouch
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 static var multiTouch: NSScreen.TouchCapabilities { get }
+```
+
+```c
+NSScreenTouchCapabilitiesMultiTouch
 ```
 
 

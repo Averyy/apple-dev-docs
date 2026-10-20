@@ -1,7 +1,8 @@
 # Manipulable.Operation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes an operation applied to a view when a person is manipulating a view.
 
@@ -17,25 +18,25 @@ struct Operation
 ## Topics
 
 ### Structures
-- [Manipulable.Operation.Set](manipulable/operation/set.md)
+- [Manipulable.Operation.Set](./operation/set.md)
   An efficient set of manipulable operations.
 ### Type Properties
-- [static let primaryRotation: Manipulable.Operation](manipulable/operation/primaryrotation.md)
+- [static let primaryRotation: Manipulable.Operation](./operation/primaryrotation.md)
   A primary rotation operation.
-- [static let scale: Manipulable.Operation](manipulable/operation/scale.md)
+- [static let scale: Manipulable.Operation](./operation/scale.md)
   A scale operation.
-- [static let secondaryRotation: Manipulable.Operation](manipulable/operation/secondaryrotation.md)
+- [static let secondaryRotation: Manipulable.Operation](./operation/secondaryrotation.md)
   A secondary rotation operation.
-- [static let translate: Manipulable.Operation](manipulable/operation/translate.md)
+- [static let translate: Manipulable.Operation](./operation/translate.md)
   A translation operation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -34,7 +34,7 @@ If you are working on porting or modifying a model you have a few options:
 
 `IntegrationTesting.xcodeproj` integrates with the HuggingFace
 downloader and tokenizer packages directly and uses [MLXHuggingFace](MLXHuggingFace)
-macros to adapt their APIs, see <doc:using> for more information.
+macros to adapt their APIs, see [Using mlx-swift-lm](using.md) for more information.
 This uses code from `IntegrationTestHelpers`
 to download weights and run real models.  You can easily change which models
 it uses or add your own custom tests.
@@ -69,4 +69,4 @@ In both cases you will get an override of the mlx-swift-lm dependency for this
 project.  In addition to using your local copy, you can also _edit_ mlx-swift-lm
 at the same time that you use mlx-swift-examples.
 
-For more details on how to configure projects in general, see <doc:using>.
+For more details on how to configure projects in general, see [Using mlx-swift-lm](using.md).

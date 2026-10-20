@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Implemented to override the default action of enabling or disabling a specific menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,9 +17,13 @@ Implemented to override the default action of enabling or disabling a specific m
 func validateMenuItem(_ menuItem: NSMenuItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateMenuItem:(NSMenuItem *) menuItem;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to enable `menuItem`, [`false`](https://developer.apple.com/documentation/swift/false) to disable it.
+[`true`](../../Swift/true.md) to enable `menuItem`, [`false`](../../Swift/false.md) to disable it.
 
 #### Discussion
 
@@ -42,7 +47,7 @@ The following example disables the menu item associated with the `nextRecord` ac
 
 ## Parameters
 
-- `menuItem`: An [`NSMenuItem`](nsmenuitem.md) object that represents the menu item.
+- `menuItem`: An [`NSMenuItem`](../nsmenuitem.md) object that represents the menu item.
 
 
 ---

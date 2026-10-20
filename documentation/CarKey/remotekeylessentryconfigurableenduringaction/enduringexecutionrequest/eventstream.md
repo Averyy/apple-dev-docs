@@ -1,7 +1,8 @@
 # eventStream
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asynchronous event stream on which Continuation Requests are sent
 

@@ -1,7 +1,8 @@
 # init(unsafeBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a ready sample buffer with dynamic content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Create a ready sample buffer with dynamic content from an existing sample buffer
 ```swift
 init(unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `CMSampleBuffer.DynamicContent`.
 
 
 ---

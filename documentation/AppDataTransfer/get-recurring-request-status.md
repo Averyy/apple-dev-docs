@@ -1,7 +1,8 @@
 # Get recurring request status
 
 **Framework**: App Data Transfer  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get the status of an instance of a recurring download request.
 
@@ -12,7 +13,7 @@ Get the status of an instance of a recurring download request.
 
 **Request**:
 
-```None
+```
 % curl -X GET \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -22,7 +23,7 @@ Get the status of an instance of a recurring download request.
 
 **Response**:
 
-```None
+```
 {
   "jobStatus": "in_progress",
   "status": "success",
@@ -36,14 +37,25 @@ Get the status of an instance of a recurring download request.
 
 ## Parameters
 
+### Path Parameters
+
 - `parentRequestId` (string) *(required)*: A UUID that identifies the series of recurring download requests.
 - `requestId` (string) *(required)*: A UUID that identifies the individual request.
 
+## Responses
+
+- `200` OK (`RequestStatus`, `application/json`)
+- `400` Bad Request
+- `401` Unauthorized
+- `403` Forbidden
+- `500` Internal Server Error
+
 ## See Also
 
-- [Get one-time request status](get-one-time-request-status.md)
+### Status
+- [Get one-time request status](./get-one-time-request-status.md)
   Find the status of a one-time download request.
-- [object RequestStatus](requeststatus.md)
+- [object RequestStatus](./requeststatus.md)
   An object that represents the status of a download request.
 
 

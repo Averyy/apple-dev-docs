@@ -1,7 +1,8 @@
 # continueCommissioningDevice(_:ignoreAttestationFailure:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 func continueCommissioningDevice(_ opaqueDeviceHandle: UnsafeMutableRawPointer, ignoreAttestationFailure: Bool) throws
+```
+
+```objc
+- (BOOL) continueCommissioningDevice:(void *) opaqueDeviceHandle ignoreAttestationFailure:(BOOL) ignoreAttestationFailure error:(NSError **) error;
 ```
 
 

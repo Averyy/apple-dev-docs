@@ -1,7 +1,8 @@
 # AMError.Code.conversionFailedError
 
 **Framework**: Automator  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when, for example, the converter encounters an error converting data from one type to another.
 
@@ -15,11 +16,16 @@ An error that occurs when, for example, the converter encounters an error conver
 case conversionFailedError
 ```
 
+```c
+AMConversionFailedError
+```
+
 ## See Also
 
-- [AMError.Code.conversionNoDataError](amerror/code/conversionnodataerror.md)
+### Data Conversion Errors
+- [AMError.Code.conversionNoDataError](./conversionnodataerror.md)
   An error that occurs when the converter determines that the conversion, though possible, would produce a nil result.
-- [AMError.Code.conversionNotPossibleError](amerror/code/conversionnotpossibleerror.md)
+- [AMError.Code.conversionNotPossibleError](./conversionnotpossibleerror.md)
   An error that occurs when the converter determines that it is unable to convert from one data type to another.
 
 

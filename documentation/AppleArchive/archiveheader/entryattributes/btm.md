@@ -1,7 +1,8 @@
 # btm
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time specification value that represents the backup time of the entry.
 
@@ -11,7 +12,7 @@ A time specification value that represents the backup time of the entry.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ var btm: timespec? { get set }
 
 ## See Also
 
-- [var ctm: timespec?](archiveheader/entryattributes/ctm.md)
+### Instance Properties
+- [var ctm: timespec?](./ctm.md)
   A time specification value that represents the creation time of the entry.
-- [var flg: UInt32?](archiveheader/entryattributes/flg.md)
+- [var flg: UInt32?](./flg.md)
   An unsigned integer that represents the BSD flags of the entry.
-- [var gid: UInt32?](archiveheader/entryattributes/gid.md)
+- [var gid: UInt32?](./gid.md)
   An unsigned integer that represents the group ID of the entry.
-- [var mod: UInt32?](archiveheader/entryattributes/mod.md)
+- [var mod: UInt32?](./mod.md)
   An unsigned integer that represents the file modes of the entry.
-- [var mtm: timespec?](archiveheader/entryattributes/mtm.md)
+- [var mtm: timespec?](./mtm.md)
   A time specification value that represents the modification time of the entry.
-- [var uid: UInt32?](archiveheader/entryattributes/uid.md)
+- [var uid: UInt32?](./uid.md)
   An unsigned integer that represents the user ID of the entry.
 
 

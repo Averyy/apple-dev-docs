@@ -1,7 +1,8 @@
 # kMDItemStarRating
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 User rating of this item. For example, the stars rating of an iTunes track. A CFNumber.
 
@@ -12,6 +13,10 @@ User rating of this item. For example, the stars rating of an iTunes track. A CF
 
 ```swift
 let kMDItemStarRating: CFString!
+```
+
+```c
+const CFStringRef kMDItemStarRating;
 ```
 
 

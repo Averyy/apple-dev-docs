@@ -1,7 +1,8 @@
 # UserListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of users with active accounts on a device.
 
@@ -13,18 +14,18 @@ The command to get a list of users with active accounts on a device.
 
 ## Declaration
 
-```swift
+```
 object UserListCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object UserListCommand.Command](userlistcommand/command-data.dictionary.md)
+- [object UserListCommand.Command](./userlistcommand/command-data.dictionary.md)
   The command to get a list of users with active accounts on a device.
 
 ## Properties
@@ -34,7 +35,8 @@ object UserListCommand
 
 ## See Also
 
-- [object UserListResponse](userlistresponse.md)
+### Commands and responses
+- [object UserListResponse](./userlistresponse.md)
   A response from the device after it processes the command to get a list of users with active accounts on a device.
 
 

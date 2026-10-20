@@ -1,7 +1,8 @@
 # ParameterSummary
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for defining the visual representation of an app intent’s parameters.
 
@@ -11,7 +12,7 @@ An interface for defining the visual representation of an app intent’s paramet
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,33 +23,34 @@ protocol ParameterSummary
 
 #### Overview
 
-For more information about using parameters and providing a parameter summary, see [`Provide an interactive parameter summary for your intent`](adding-parameters-to-an-app-intent#Provide-an-interactive-parameter-summary-for-your-intent.md).
+For more information about using parameters and providing a parameter summary, see [Provide an interactive parameter summary for your intent](./adding-parameters-to-an-app-intent.md#Provide-an-interactive-parameter-summary-for-your-intent).
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Intent : AppIntent](parametersummary/intent.md)
+- [associatedtype Intent : AppIntent](./parametersummary/intent.md)
 
 ## Relationships
 
 ### Conforming Types
-- [IntentParameterSummary](intentparametersummary.md)
-- [ParameterSummarySwitchCondition](parametersummaryswitchcondition.md)
-- [ParameterSummaryWhenCondition](parametersummarywhencondition.md)
+- [IntentParameterSummary](./intentparametersummary.md)
+- [ParameterSummarySwitchCondition](./parametersummaryswitchcondition.md)
+- [ParameterSummaryWhenCondition](./parametersummarywhencondition.md)
 
 ## See Also
 
-- [struct IntentParameterSummary](intentparametersummary.md)
+### Shortcuts support
+- [struct IntentParameterSummary](./intentparametersummary.md)
   A type that describes the user interface configuration of an app intent’s parameters.
-- [struct ParameterSummaryString](parametersummarystring.md)
+- [struct ParameterSummaryString](./parametersummarystring.md)
   A human-readable string that interpolates parameter key paths to provide user-configurable placeholders in the Shortcuts app.
-- [struct ParameterSummaryWhenCondition](parametersummarywhencondition.md)
+- [struct ParameterSummaryWhenCondition](./parametersummarywhencondition.md)
   A type that represents a conditional statement in a parameter summary.
-- [struct ParameterSummarySwitchCondition](parametersummaryswitchcondition.md)
+- [struct ParameterSummarySwitchCondition](./parametersummaryswitchcondition.md)
   A type that represents a switch statement in a parameter summary.
-- [struct ParameterSummaryCaseCondition](parametersummarycasecondition.md)
+- [struct ParameterSummaryCaseCondition](./parametersummarycasecondition.md)
   A type that represents an individual case of a switch statement in a parameter summary.
-- [struct ParameterSummaryDefaultCaseCondition](parametersummarydefaultcasecondition.md)
+- [struct ParameterSummaryDefaultCaseCondition](./parametersummarydefaultcasecondition.md)
   A type that represents the default case of a switch statement in a parameter summary.
 
 

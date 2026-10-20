@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that customizes presentation of the menu and actions to display for an edit menu interaction.
 
@@ -17,17 +18,22 @@ An object that customizes presentation of the menu and actions to display for an
 weak var delegate: (any UIEditMenuInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIEditMenuInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [func presentEditMenu(with: UIEditMenuConfiguration)](uieditmenuinteraction/presenteditmenu(with:).md)
+### Managing edit menu interactions
+- [func presentEditMenu(with: UIEditMenuConfiguration)](./presenteditmenu%28with%29.md)
   Presents an edit menu using the object you provide for configuration.
-- [func reloadVisibleMenu()](uieditmenuinteraction/reloadvisiblemenu.md)
+- [func reloadVisibleMenu()](./reloadvisiblemenu%28%29.md)
   Updates the actions an edit menu displays.
-- [func updateVisibleMenuPosition(animated: Bool)](uieditmenuinteraction/updatevisiblemenuposition(animated:).md)
+- [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)
   Updates the position of the currently visible menu with an option to animate the action.
-- [func dismissMenu()](uieditmenuinteraction/dismissmenu.md)
+- [func dismissMenu()](./dismissmenu%28%29.md)
   Dismiss the edit menu if present.
-- [func location(in: UIView?) -> CGPoint](uieditmenuinteraction/location(in:).md)
+- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
   Returns the location of the user interaction in the specified view’s coordinate system.
 
 

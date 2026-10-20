@@ -1,7 +1,8 @@
 # page
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the page that the destination refers to.
 
@@ -19,15 +20,20 @@ Returns the page that the destination refers to.
 weak var page: PDFPage? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) PDFPage * page;
+```
+
 #### Return Value
 
 The page referred to by the destination.
 
 ## See Also
 
-- [var point: CGPoint](pdfdestination/point.md)
+### Getting Pages and Points
+- [var point: CGPoint](./point.md)
   Returns the point, in page space, that the destination refers to.
-- [let kPDFDestinationUnspecifiedValue: CGFloat](kpdfdestinationunspecifiedvalue.md)
+- [let kPDFDestinationUnspecifiedValue: CGFloat](../kpdfdestinationunspecifiedvalue.md)
 
 
 ---

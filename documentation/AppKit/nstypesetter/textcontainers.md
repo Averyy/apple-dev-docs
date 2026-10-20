@@ -1,17 +1,22 @@
 # textContainers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array containing the text containers belonging to the current layout manager.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var textContainers: NSArray? { get }
+```
+
+```objc
+@property (assign, readonly, nullable) NSArray<NSTextContainer *> * textContainers;
 ```
 
 #### Return Value
@@ -20,11 +25,13 @@ An array containing the text containers belonging to the current layout manager.
 
 ## See Also
 
-- [var layoutManager: NSLayoutManager?](nstypesetter/layoutmanager.md)
+### Related Documentation
+- [var layoutManager: NSLayoutManager?](./layoutmanager.md)
   Returns the layout manager for the text being typeset.
-- [var currentTextContainer: NSTextContainer?](nstypesetter/currenttextcontainer.md)
+### Managing text containers
+- [var currentTextContainer: NSTextContainer?](./currenttextcontainer.md)
   Returns the text container for the text being typeset.
-- [var lineFragmentPadding: CGFloat](nstypesetter/linefragmentpadding.md)
+- [var lineFragmentPadding: CGFloat](./linefragmentpadding.md)
   Returns the current line fragment padding, in points.
 
 

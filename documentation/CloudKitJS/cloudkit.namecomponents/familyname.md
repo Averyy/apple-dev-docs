@@ -1,7 +1,8 @@
 # familyName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s last name.
 
@@ -10,7 +11,7 @@ The user’s last name.
 
 ## Declaration
 
-```swift
+```
 attribute String familyName;
 ```
 

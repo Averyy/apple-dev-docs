@@ -1,7 +1,8 @@
 # centered
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The target view is centered within the container
 
@@ -22,9 +23,10 @@ static var centered: ScrollTransitionConfiguration.Threshold { get }
 
 ## See Also
 
-- [static let hidden: ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/hidden.md)
-- [static let visible: ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/visible.md)
-- [static func visible(Double) -> ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold/visible(_:).md)
+### Getting the threshold
+- [static let hidden: ScrollTransitionConfiguration.Threshold](./hidden.md)
+- [static let visible: ScrollTransitionConfiguration.Threshold](./visible.md)
+- [static func visible(Double) -> ScrollTransitionConfiguration.Threshold](./visible%28_%29.md)
   The target view is visible by the given amount, where zero is fully hidden, and one is fully visible.
 
 

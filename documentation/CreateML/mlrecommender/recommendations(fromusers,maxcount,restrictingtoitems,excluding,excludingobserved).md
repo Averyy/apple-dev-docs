@@ -1,12 +1,13 @@
 # recommendations(fromUsers:maxCount:restrictingToItems:excluding:excludingObserved:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the highest scored item for the given array of users, based on item similarity and the rating column.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -14,9 +15,15 @@ Retrieves the highest scored item for the given array of users, based on item si
 func recommendations(fromUsers: [any MLIdentifier], maxCount: Int = 10, restrictingToItems: [any MLIdentifier]? = nil, excluding userItemObservations: MLDataTable? = nil, excludingObserved: Bool = true) throws -> MLDataTable
 ```
 
+**Other overloads**:
+
+```swift
+func recommendations<T>(fromUsers: MLDataColumn<T>, maxCount: Int = 10, restrictingToItems: MLDataColumn<T>? = nil, excluding userItemObservations: MLDataTable? = nil, excludingObserved: Bool = true) throws -> MLDataTable where T : MLDataValueConvertible, T : MLIdentifier
+```
+
 #### Return Value
 
-An [`MLDataTable`](mldatatable.md) containing columns with user identifiers, item identifiers, scores and ranks (numbered between `1` and the `maxCount`).
+An [`MLDataTable`](../mldatatable.md) containing columns with user identifiers, item identifiers, scores and ranks (numbered between `1` and the `maxCount`).
 
 ## Parameters
 
@@ -28,9 +35,10 @@ An [`MLDataTable`](mldatatable.md) containing columns with user identifiers, ite
 
 ## See Also
 
-- [protocol MLIdentifier](mlidentifier.md)
+### Testing a recommender
+- [protocol MLIdentifier](../mlidentifier.md)
   A type the Create ML framework can use as a machine learning identifier.
-- [func getSimilarItems(fromItems:maxCount:)](mlrecommender/getsimilaritems(fromitems:maxcount:).md)
+- [func getSimilarItems(fromItems:maxCount:)](./getsimilaritems%28fromitems,maxcount%29.md)
   Returns the top ranked similar items based on the model’s similarity type.
 
 

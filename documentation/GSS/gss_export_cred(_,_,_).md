@@ -1,7 +1,8 @@
 # gss_export_cred(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Exports a credential to a token.
 
@@ -18,13 +19,17 @@ Exports a credential to a token.
 func gss_export_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cred_handle: gss_cred_id_t, _ token: gss_buffer_t) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_export_cred(OM_uint32 *minor_status, gss_cred_id_t cred_handle, gss_buffer_t token);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 #### Discussion
 
-You can recover the credential exported this way using [`gss_import_cred(_:_:_:)`](gss_import_cred(_:_:_:).md).
+You can recover the credential exported this way using [`gss_import_cred(_:_:_:)`](./gss_import_cred%28_,_,_%29.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ You can recover the credential exported this way using [`gss_import_cred(_:_:_:)
 
 ## See Also
 
-- [func gss_import_cred(UnsafeMutablePointer<OM_uint32>, gss_buffer_t, UnsafeMutablePointer<gss_cred_id_t?>) -> OM_uint32](gss_import_cred(_:_:_:).md)
+### Import and Export
+- [func gss_import_cred(UnsafeMutablePointer<OM_uint32>, gss_buffer_t, UnsafeMutablePointer<gss_cred_id_t?>) -> OM_uint32](./gss_import_cred%28_,_,_%29.md)
   Imports a credential from a token.
 
 

@@ -1,14 +1,15 @@
 # scl_health
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 EXDisplayPipeHealthRecord scl_health;
 ```
 

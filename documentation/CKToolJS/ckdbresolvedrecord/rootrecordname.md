@@ -1,7 +1,8 @@
 # rootRecordName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the root record that was shared.
 
@@ -10,7 +11,7 @@ The name of the root record that was shared.
 
 ## Declaration
 
-```swift
+```
 attribute string? rootRecordName;
 ```
 

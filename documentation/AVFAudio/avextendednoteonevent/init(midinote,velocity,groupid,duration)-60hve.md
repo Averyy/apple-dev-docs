@@ -1,7 +1,8 @@
 # init(midiNote:velocity:groupID:duration:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a MIDI note, velocity, group identifier, and duration.
 
@@ -19,6 +20,10 @@ Creates an event with a MIDI note, velocity, group identifier, and duration.
 init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)
 ```
 
+```objc
+- (instancetype) initWithMIDINote:(float) midiNote velocity:(float) velocity groupID:(UInt32) groupID duration:(AVMusicTimeStamp) duration;
+```
+
 ## Parameters
 
 - `midiNote`: The MIDI note number.
@@ -28,7 +33,8 @@ init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeSta
 
 ## See Also
 
-- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:)-rqr5.md)
+### Creating a note-on event
+- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](./init%28midinote,velocity,instrumentid,groupid,duration%29-rqr5.md)
   Creates a note on event with the default instrument.
 
 

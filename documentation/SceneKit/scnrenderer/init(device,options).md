@@ -1,23 +1,28 @@
 # init(device:options:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a renderer with the specified Metal device.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(device: (any MTLDevice)?, options: [AnyHashable : Any]? = nil)
+```
+
+```objc
++ (instancetype) rendererWithDevice:(id<MTLDevice>) device options:(NSDictionary *) options;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A new renderer object.
 
 #### Discussion
 
-Use this initializer to create a SceneKit renderer that draws into the rendering targets your app already uses to draw other content. For the `device` parameter, pass the [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) object your app uses for drawing. Then, to tell SceneKit to render your content, call the [`SCNRenderer`](scnrenderer.md) method, providing a command buffer and render pass descriptor for SceneKit to use in its rendering.
+Use this initializer to create a SceneKit renderer that draws into the rendering targets your app already uses to draw other content. For the `device` parameter, pass the [`MTLDevice`](../../Metal/mtldevice.md) object your app uses for drawing. Then, to tell SceneKit to render your content, call the [`SCNRenderer`](../scnrenderer.md) method, providing a command buffer and render pass descriptor for SceneKit to use in its rendering.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ Use this initializer to create a SceneKit renderer that draws into the rendering
 
 ## See Also
 
-- [convenience init(context: EAGLContext?, options: [AnyHashable : Any]?)](scnrenderer/init(context:options:).md)
+### Creating a Renderer
+- [convenience init(context: EAGLContext?, options: [AnyHashable : Any]?)](./init%28context,options%29.md)
   Creates a renderer with the specified OpenGL context.
 
 

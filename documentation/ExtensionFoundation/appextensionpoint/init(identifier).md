@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the type with a string you can use to find the extension point.
 
@@ -22,7 +23,9 @@ init(identifier: StaticString) throws
 
 #### Discussion
 
-- Paramerters: - identifier: The name of the extension point. This string isn’t the same as the value you put in the [`AppExtensionPoint.Identifier`](appextensionpoint/identifier.md) type.
+- Paramerters:
+
+  - identifier: The name of the extension point. This string isn’t the same as the value you put in the [`AppExtensionPoint.Identifier`](./identifier.md) type.
 
 
 ---

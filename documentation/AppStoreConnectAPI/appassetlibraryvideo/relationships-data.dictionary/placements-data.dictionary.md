@@ -1,7 +1,8 @@
 # AppAssetLibraryVideo.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The placements that reuse the app asset library video.
 
@@ -10,14 +11,14 @@ The placements that reuse the app asset library video.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideo.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryVideo.Relationships.Placements.Data](appassetlibraryvideo/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryVideo.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

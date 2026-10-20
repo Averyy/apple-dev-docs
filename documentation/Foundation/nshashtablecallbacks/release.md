@@ -1,7 +1,8 @@
 # release
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function that decrements a reference count for the given element, and if the reference count becomes 0, frees the given element. If `NULL`, then nothing is done for reference counting or releasing.
 
@@ -18,6 +19,10 @@ Points to the function that decrements a reference count for the given element, 
 
 ```swift
 var release: ((NSHashTable<AnyObject>, UnsafeMutableRawPointer) -> Void)?
+```
+
+```c
+void (*)(NSHashTable *, void *) release;
 ```
 
 

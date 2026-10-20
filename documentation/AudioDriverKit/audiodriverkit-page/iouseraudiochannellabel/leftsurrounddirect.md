@@ -1,7 +1,8 @@
 # LeftSurroundDirect
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The left surround direct channel.
 
@@ -10,25 +11,26 @@ The left surround direct channel.
 
 ## Declaration
 
-```swift
+```c
 LeftSurroundDirect
 ```
 
 ## See Also
 
-- [CenterSurround](audiodriverkit/iouseraudiochannellabel/centersurround.md)
+### Surround Channels
+- [CenterSurround](./centersurround.md)
   The center surround channel.
-- [CenterSurroundDirect](audiodriverkit/iouseraudiochannellabel/centersurrounddirect.md)
+- [CenterSurroundDirect](./centersurrounddirect.md)
   The center surround direct channel.
-- [LeftSurround](audiodriverkit/iouseraudiochannellabel/leftsurround.md)
+- [LeftSurround](./leftsurround.md)
   The left surround channel.
-- [RearSurroundLeft](audiodriverkit/iouseraudiochannellabel/rearsurroundleft.md)
+- [RearSurroundLeft](./rearsurroundleft.md)
   The rear left surround channel.
-- [RearSurroundRight](audiodriverkit/iouseraudiochannellabel/rearsurroundright.md)
+- [RearSurroundRight](./rearsurroundright.md)
   The right rear surround channel.
-- [RightSurround](audiodriverkit/iouseraudiochannellabel/rightsurround.md)
+- [RightSurround](./rightsurround.md)
   The right surround channel.
-- [RightSurroundDirect](audiodriverkit/iouseraudiochannellabel/rightsurrounddirect.md)
+- [RightSurroundDirect](./rightsurrounddirect.md)
   The right surround direct channel.
 
 

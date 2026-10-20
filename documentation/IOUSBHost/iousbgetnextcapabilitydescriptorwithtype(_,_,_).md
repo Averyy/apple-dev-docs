@@ -1,7 +1,8 @@
 # IOUSBGetNextCapabilityDescriptorWithType(_:_:_:)
 
 **Framework**: IOUSBHost  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the next descriptor matching a specific type within a BOS descriptor.
 
@@ -15,13 +16,17 @@ Obtains the next descriptor matching a specific type within a BOS descriptor.
 func IOUSBGetNextCapabilityDescriptorWithType(_ bosDescriptor: UnsafePointer<IOUSBBOSDescriptor>!, _ currentDescriptor: UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!, _ type: UInt8) -> UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!
 ```
 
+```c
+const IOUSBDeviceCapabilityDescriptorHeader *IOUSBGetNextCapabilityDescriptorWithType(const IOUSBBOSDescriptor *bosDescriptor, const IOUSBDeviceCapabilityDescriptorHeader *currentDescriptor, const uint8_t type);
+```
+
 #### Return Value
 
 A device capability descriptor pointer, or `nil` if no matching descriptor returns.
 
 #### Discussion
 
-This method uses [`IOUSBGetNextCapabilityDescriptor(_:_:)`](iousbgetnextcapabilitydescriptor(_:_:).md), and further validates that the returned descriptor’s `bDevCapabilityType` field matches the type parameter.
+This method uses [`IOUSBGetNextCapabilityDescriptor(_:_:)`](./iousbgetnextcapabilitydescriptor%28_,_%29.md), and further validates that the returned descriptor’s `bDevCapabilityType` field matches the type parameter.
 
 ## Parameters
 
@@ -31,15 +36,16 @@ This method uses [`IOUSBGetNextCapabilityDescriptor(_:_:)`](iousbgetnextcapabili
 
 ## See Also
 
-- [func IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityUSB2Extension>!](iousbgetusb20extensiondevicecapabilitydescriptor(_:).md)
+### BOS Descriptor Parsing
+- [func IOUSBGetUSB20ExtensionDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityUSB2Extension>!](./iousbgetusb20extensiondevicecapabilitydescriptor%28_%29.md)
   Obtains the first USB 2.0 extension capability descriptor in a BOS descriptor.
-- [func IOUSBGetNextCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!, UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!) -> UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!](iousbgetnextcapabilitydescriptor(_:_:).md)
+- [func IOUSBGetNextCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!, UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!) -> UnsafePointer<IOUSBDeviceCapabilityDescriptorHeader>!](./iousbgetnextcapabilitydescriptor%28_,_%29.md)
   Obtains the next device capability descriptor in a BOS descriptor.
-- [func IOUSBGetSuperSpeedDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilitySuperSpeedUSB>!](iousbgetsuperspeeddevicecapabilitydescriptor(_:).md)
+- [func IOUSBGetSuperSpeedDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilitySuperSpeedUSB>!](./iousbgetsuperspeeddevicecapabilitydescriptor%28_%29.md)
   Obtains the first SuperSpeed capability descriptor in a BOS descriptor.
-- [func IOUSBGetContainerIDDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityContainerID>!](iousbgetcontaineriddescriptor(_:).md)
+- [func IOUSBGetContainerIDDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityContainerID>!](./iousbgetcontaineriddescriptor%28_%29.md)
   Obtains the first container ID capability descriptor in a BOS descriptor.
-- [func IOUSBGetBillboardDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityBillboard>!](iousbgetbillboarddescriptor(_:).md)
+- [func IOUSBGetBillboardDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilityBillboard>!](./iousbgetbillboarddescriptor%28_%29.md)
   Obtains the first billboard capability descriptor in a BOS descriptor.
 
 

@@ -1,7 +1,8 @@
 # exploreTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared exploration activity, such as planning a trip together or browsing a web feed together.
 

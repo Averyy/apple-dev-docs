@@ -1,6 +1,8 @@
 # Messaging a Web Extension’s Native App
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Sample Code  
+**Download**: [MessagingAWebExtensionsNativeApp.zip](https://docs-assets.developer.apple.com/published/783afed94c2e/MessagingAWebExtensionsNativeApp.zip)
 
 Communicate between your Safari web extension and its containing app.
 
@@ -10,7 +12,7 @@ Communicate between your Safari web extension and its containing app.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC20 session [`10665: Meet Safari Web Extensions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10665/).
+> **Note**: This sample code project is associated with WWDC20 session [10665: Meet Safari Web Extensions](https://developer.apple.com/videos/play/wwdc2020/10665/).
 
 ##### Configure the Sample Code Project
 
@@ -24,13 +26,14 @@ Before you run the sample code project in Xcode:
 
 ## See Also
 
-- [Messaging between the app and JavaScript in a Safari web extension](messaging-between-the-app-and-javascript-in-a-safari-web-extension.md)
+### Messaging
+- [Messaging between the app and JavaScript in a Safari web extension](./messaging-between-the-app-and-javascript-in-a-safari-web-extension.md)
   Communicate about events and share data between the containing app and JavaScript by using native messaging and app groups.
-- [let SFExtensionMessageKey: String](sfextensionmessagekey.md)
+- [let SFExtensionMessageKey: String](./sfextensionmessagekey.md)
   A string the system uses as a key in a user info dictionary to identify a message.
-- [let SFExtensionProfileKey: String](sfextensionprofilekey.md)
+- [let SFExtensionProfileKey: String](./sfextensionprofilekey.md)
   A string the system uses as a key in a user info dictionary to identify a profile identifier.
-- [Messaging between a webpage and your Safari web extension](messaging-between-a-webpage-and-your-safari-web-extension.md)
+- [Messaging between a webpage and your Safari web extension](./messaging-between-a-webpage-and-your-safari-web-extension.md)
   Configure your extension to enable messaging from webpages, and then update your extension to handle messages.
 
 

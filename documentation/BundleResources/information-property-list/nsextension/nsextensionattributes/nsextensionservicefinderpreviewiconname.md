@@ -1,30 +1,33 @@
 # NSExtensionServiceFinderPreviewIconName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of an icon for display when the extension appears in the Finder Preview pane and Quick Actions menu.
 
 **Availability**:
 - macOS 10.14+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSExtensionServiceFinderPreviewIconName`
+- **Type**: string
 
 #### Discussion
 
-This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md) key.
+This key is used in conjunction with the [`NSExtensionServiceAllowsFinderPreviewItem`](./nsextensionserviceallowsfinderpreviewitem.md) key.
 
-Set the [`NSExtensionServiceFinderPreviewIconName`](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewiconname.md) key’s value to a system icon name or the name of an icon in the extension bundle. This icon should be a *template image*: a monochromatic image with transparency, anti-aliasing, and no drop shadow that uses a mask to define its shape. For design guidance, see [`Human Interface Guidelines > macOS > Custom Icons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/custom-icons/). If no icon is specified, a default icon is used.
+Set the [`NSExtensionServiceFinderPreviewIconName`](./nsextensionservicefinderpreviewiconname.md) key’s value to a system icon name or the name of an icon in the extension bundle. This icon should be a *template image*: a monochromatic image with transparency, anti-aliasing, and no drop shadow that uses a mask to define its shape. For design guidance, see [Human Interface Guidelines > macOS > Custom Icons](https://developer.apple.com/design/human-interface-guidelines/macos/icons-and-images/custom-icons/). If no icon is specified, a default icon is used.
 
 ## See Also
 
-- [NSExtensionServiceAllowsFinderPreviewItem](information-property-list/nsextension/nsextensionattributes/nsextensionserviceallowsfinderpreviewitem.md)
+### Quick Actions
+- [NSExtensionServiceAllowsFinderPreviewItem](./nsextensionserviceallowsfinderpreviewitem.md)
   A Boolean value indicating whether the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceFinderPreviewLabel](information-property-list/nsextension/nsextensionattributes/nsextensionservicefinderpreviewlabel.md)
+- [NSExtensionServiceFinderPreviewLabel](./nsextensionservicefinderpreviewlabel.md)
   A name for display when the extension appears in the Finder Preview pane and Quick Actions menu.
-- [NSExtensionServiceRoleType](information-property-list/nsextension/nsextensionattributes/nsextensionserviceroletype.md)
+- [NSExtensionServiceRoleType](./nsextensionserviceroletype.md)
   The type of task an Action extension performs.
 
 

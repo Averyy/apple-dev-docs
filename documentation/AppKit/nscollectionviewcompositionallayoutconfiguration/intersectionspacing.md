@@ -1,7 +1,8 @@
 # interSectionSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of space between the sections in the layout.
 
@@ -12,6 +13,10 @@ The amount of space between the sections in the layout.
 
 ```swift
 var interSectionSpacing: CGFloat { get set }
+```
+
+```objc
+@property CGFloat interSectionSpacing;
 ```
 
 #### Discussion

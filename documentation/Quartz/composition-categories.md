@@ -1,28 +1,30 @@
 # Composition Categories
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 Categories for compositions.
 
 ## Topics
 
 ### Constants
-- [let QCCompositionCategoryDistortion: String](qccompositioncategorydistortion.md)
+- [let QCCompositionCategoryDistortion: String](./qccompositioncategorydistortion.md)
   A composition that produces a distortion effect.
-- [let QCCompositionCategoryStylize: String](qccompositioncategorystylize.md)
+- [let QCCompositionCategoryStylize: String](./qccompositioncategorystylize.md)
   A composition that produces a stylize effect.
-- [let QCCompositionCategoryUtility: String](qccompositioncategoryutility.md)
+- [let QCCompositionCategoryUtility: String](./qccompositioncategoryutility.md)
   A utility composition.
 
 ## See Also
 
-- [Attribute Keys](attribute-keys.md)
+### Constants
+- [Attribute Keys](./attribute-keys.md)
   Attributes of a composition.
-- [Standard Protocol Input Keys](standard-protocol-input-keys.md)
+- [Standard Protocol Input Keys](./standard-protocol-input-keys.md)
   Input ports of a composition.
-- [Standard Protocol Output Keys](standard-protocol-output-keys.md)
+- [Standard Protocol Output Keys](./standard-protocol-output-keys.md)
   Output ports of a composition.
-- [Standard Protocols](standard-protocols.md)
+- [Standard Protocols](./standard-protocols.md)
   Protocols for a composition.
 
 

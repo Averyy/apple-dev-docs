@@ -1,7 +1,8 @@
 # countOfBytesReceived
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes that the task has received from the server in the response body.
 
@@ -20,21 +21,26 @@ The number of bytes that the task has received from the server in the response b
 var countOfBytesReceived: Int64 { get }
 ```
 
+```objc
+@property (readonly) int64_t countOfBytesReceived;
+```
+
 #### Discussion
 
-To be notified when this value changes, implement the [`urlSession(_:dataTask:didReceive:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:).md) delegate method (for data and upload tasks) or the [`urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didwritedata:totalbyteswritten:totalbytesexpectedtowrite:).md) method (for download tasks).
+To be notified when this value changes, implement the [`urlSession(_:dataTask:didReceive:)`](../urlsessiondatadelegate/urlsession%28_,datatask,didreceive%29.md) delegate method (for data and upload tasks) or the [`urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)`](../urlsessiondownloaddelegate/urlsession%28_,downloadtask,didwritedata,totalbyteswritten,totalbytesexpectedtowrite%29.md) method (for download tasks).
 
 ## See Also
 
-- [var progress: Progress](urlsessiontask/progress.md)
+### Obtaining task progress
+- [var progress: Progress](./progress.md)
   A representation of the overall task progress.
-- [var countOfBytesExpectedToReceive: Int64](urlsessiontask/countofbytesexpectedtoreceive.md)
+- [var countOfBytesExpectedToReceive: Int64](./countofbytesexpectedtoreceive.md)
   The number of bytes that the task expects to receive in the response body.
-- [var countOfBytesExpectedToSend: Int64](urlsessiontask/countofbytesexpectedtosend.md)
+- [var countOfBytesExpectedToSend: Int64](./countofbytesexpectedtosend.md)
   The number of bytes that the task expects to send in the request body.
-- [var countOfBytesSent: Int64](urlsessiontask/countofbytessent.md)
+- [var countOfBytesSent: Int64](./countofbytessent.md)
   The number of bytes that the task has sent to the server in the request body.
-- [let NSURLSessionTransferSizeUnknown: Int64](nsurlsessiontransfersizeunknown.md)
+- [let NSURLSessionTransferSizeUnknown: Int64](../nsurlsessiontransfersizeunknown.md)
   The total size of the transfer cannot be determined.
 
 

@@ -1,42 +1,44 @@
 # IOPlatformExpertDevice
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOPlatformExpertDevice : IOService
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- compareName](ioplatformexpertdevice/1451675-comparename.md)
-- [- configureDefaults](ioplatformexpertdevice/3553368-configuredefaults.md)
-- [- createNVRAM](ioplatformexpertdevice/3553369-createnvram.md)
-- [- free](ioplatformexpertdevice/1451570-free.md)
-- [- generatePlatformUUID](ioplatformexpertdevice/3553370-generateplatformuuid.md)
-- [- getMetaClass](ioplatformexpertdevice/1451523-getmetaclass.md)
-- [- getWorkLoop](ioplatformexpertdevice/1451636-getworkloop.md)
-- [- init](ioplatformexpertdevice/3553371-init.md)
-- [- newUserClient](ioplatformexpertdevice/1451665-newuserclient.md)
-- [- setProperties](ioplatformexpertdevice/1451548-setproperties.md)
-- [- startIOServiceMatching](ioplatformexpertdevice/3553372-startioservicematching.md)
+- [- compareName](./ioplatformexpertdevice/api-1451675-comparename.md)
+- [- configureDefaults](./ioplatformexpertdevice/api-3553368-configuredefaults.md)
+- [- createNVRAM](./ioplatformexpertdevice/api-3553369-createnvram.md)
+- [- free](./ioplatformexpertdevice/api-1451570-free.md)
+- [- generatePlatformUUID](./ioplatformexpertdevice/api-3553370-generateplatformuuid.md)
+- [- getMetaClass](./ioplatformexpertdevice/api-1451523-getmetaclass.md)
+- [- getWorkLoop](./ioplatformexpertdevice/api-1451636-getworkloop.md)
+- [- init](./ioplatformexpertdevice/api-3553371-init.md)
+- [- newUserClient](./ioplatformexpertdevice/api-1451665-newuserclient.md)
+- [- setProperties](./ioplatformexpertdevice/api-1451548-setproperties.md)
+- [- startIOServiceMatching](./ioplatformexpertdevice/api-3553372-startioservicematching.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IOPlatformDevice](ioplatformdevice.md)
-- [Platform Expert](driver_support/platform_expert.md)
-- [Device Tree](driver_support/device_tree.md)
+### Default Devices
+- [IOPlatformDevice](./ioplatformdevice.md)
+- [Platform Expert](./driver_support/platform_expert.md)
+- [Device Tree](./driver_support/device_tree.md)
 
 
 ---

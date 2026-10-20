@@ -1,7 +1,8 @@
 # CurrencyAmount
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes a monetary amount and its currency.
 
@@ -18,36 +19,37 @@ struct CurrencyAmount
 ## Topics
 
 ### Instance Properties
-- [let amount: Decimal](currencyamount/amount.md)
+- [let amount: Decimal](./currencyamount/amount.md)
   The numeric value of the amount.
-- [let currencyCode: String](currencyamount/currencycode.md)
+- [let currencyCode: String](./currencyamount/currencycode.md)
   The currency of the amount.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](financestore/transactionhistory(foraccountid:since:ismonitoring:).md)
+### Transactions
+- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](./financestore/transactionhistory%28foraccountid,since,ismonitoring%29.md)
   Returns the transactions for the specified account ID, optional starting time, and monitoring indicator for long running transaction queries.
-- [func transactions(query: TransactionQuery) async throws -> [Transaction]](financestore/transactions(query:).md)
+- [func transactions(query: TransactionQuery) async throws -> [Transaction]](./financestore/transactions%28query%29.md)
   Returns transactions that match the provided transaction query.
-- [struct AccountQuery](accountquery.md)
+- [struct AccountQuery](./accountquery.md)
   A structure that defines an account query.
-- [struct AccountCreditInformation](accountcreditinformation.md)
+- [struct AccountCreditInformation](./accountcreditinformation.md)
   A structure that describes the credit information associated with an account.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   A structure that represents a transaction relating to a specific financial account.
-- [struct TransactionQuery](transactionquery.md)
+- [struct TransactionQuery](./transactionquery.md)
   A structure that describes the parameters to use for a transaction query.
-- [enum TransactionType](transactiontype.md)
+- [enum TransactionType](./transactiontype.md)
   Values that describe kinds of transactions.
-- [enum TransactionStatus](transactionstatus.md)
+- [enum TransactionStatus](./transactionstatus.md)
   Values that describe the status of a transaction.
 
 

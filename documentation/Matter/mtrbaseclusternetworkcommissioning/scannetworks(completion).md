@@ -1,7 +1,8 @@
 # scanNetworks(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func scanNetworks(completion: @escaping @Sendable (MTRNetworkCommissioningClusterScanNetworksResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func scanNetworks() async throws -> MTRNetworkCommissioningClusterScanNetworksResponseParams
+```
+
+```objc
+- (void) scanNetworksWithCompletion:(void (^)(MTRNetworkCommissioningClusterScanNetworksResponseParams *data, NSError *error)) completion;
 ```
 
 

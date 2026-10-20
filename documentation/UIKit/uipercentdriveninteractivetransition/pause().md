@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses an interruptible transition animation.
 
@@ -18,17 +19,22 @@ Pauses an interruptible transition animation.
 func pause()
 ```
 
+```objc
+- (void) pauseInteractiveTransition;
+```
+
 #### Discussion
 
-This is a convenience method that calls through to the [`pauseInteractiveTransition()`](uiviewcontrollercontexttransitioning/pauseinteractivetransition().md) method of the context object. You might call this method so that you can begin driving an animation interactively. For example, when the user’s finger touches the screen, your gesture handler would call this method to stop the animation and then use changes to the touch location to update the [`percentComplete`](uipercentdriveninteractivetransition/percentcomplete.md) property.
+This is a convenience method that calls through to the [`pauseInteractiveTransition()`](../uiviewcontrollercontexttransitioning/pauseinteractivetransition%28%29.md) method of the context object. You might call this method so that you can begin driving an animation interactively. For example, when the user’s finger touches the screen, your gesture handler would call this method to stop the animation and then use changes to the touch location to update the [`percentComplete`](./percentcomplete.md) property.
 
 ## See Also
 
-- [func update(CGFloat)](uipercentdriveninteractivetransition/update(_:).md)
+### Managing a transition
+- [func update(CGFloat)](./update%28_%29.md)
   Updates the completion percentage of the transition.
-- [func cancel()](uipercentdriveninteractivetransition/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Notifies the system that user interactions canceled the transition.
-- [func finish()](uipercentdriveninteractivetransition/finish.md)
+- [func finish()](./finish%28%29.md)
   Notifies the system that user interactions signaled the completion of the transition.
 
 

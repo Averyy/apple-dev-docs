@@ -1,7 +1,8 @@
 # HistoricalComparison.highTemperature(_:)
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The comparison relates to the location’s maximum temperature averaged since ~1970.
 

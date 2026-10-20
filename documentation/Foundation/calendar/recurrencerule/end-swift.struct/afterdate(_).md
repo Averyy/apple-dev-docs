@@ -1,7 +1,8 @@
 # afterDate(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The event stops repeating after a given date
 

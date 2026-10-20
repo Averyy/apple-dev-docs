@@ -1,7 +1,8 @@
 # username
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The username for logging into the macOS virtual machine.
 
@@ -12,6 +13,10 @@ The username for logging into the macOS virtual machine.
 
 ```swift
 var username: String { get set }
+```
+
+```objc
+@property (copy, readwrite) NSString * username;
 ```
 
 

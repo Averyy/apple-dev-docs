@@ -1,7 +1,8 @@
 # localizedTypeName
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized type name of the component.
 
@@ -19,17 +20,22 @@ The localized type name of the component.
 var localizedTypeName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedTypeName;
+```
+
 ## See Also
 
-- [var iconURL: URL?](avaudiounitcomponent/iconurl.md)
+### Getting Audio Unit component tags
+- [var iconURL: URL?](./iconurl.md)
   The URL of an icon that represents the audio unit component.
-- [var icon: UIImage?](avaudiounitcomponent/icon.md)
+- [var icon: UIImage?](./icon.md)
   An icon that represents the component.
-- [var allTagNames: [String]](avaudiounitcomponent/alltagnames.md)
+- [var allTagNames: [String]](./alltagnames.md)
   An array of tag names for the audio unit component.
-- [var userTagNames: [String]](avaudiounitcomponent/usertagnames.md)
+- [var userTagNames: [String]](./usertagnames.md)
   An array of tags the user creates.
-- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+- [AVAudioUnitComponent.TagsDidChangeMessage](./tagsdidchangemessage.md)
   Type-safe notification message for audio unit component tag changes.
 
 

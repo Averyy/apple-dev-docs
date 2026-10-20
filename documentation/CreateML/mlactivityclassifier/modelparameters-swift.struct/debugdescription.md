@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the activity-model parameters that’s suitable for output during debugging.
 
@@ -16,9 +17,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlactivityclassifier/modelparameters-swift.struct/description.md)
+### Describing parameters
+- [var description: String](./description.md)
   A text representation of the activity-model parameters.
-- [var playgroundDescription: Any](mlactivityclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the activity-model parameters shown in a playground.
 
 

@@ -1,7 +1,8 @@
 # AppUnionValue
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides nominal type identity and metadata for union values.
 
@@ -50,35 +51,36 @@ extension Reaction {
 ## Topics
 
 ### Associated Types
-- [associatedtype Cases : AppUnionValueCasesProviding](appunionvalue/cases.md)
+- [associatedtype Cases : AppUnionValueCasesProviding](./appunionvalue/cases.md)
   The nominal type representing the cases of this union value.
 ### Type Properties
-- [static var caseDisplayRepresentations: [Self.Cases : DisplayRepresentation]](appunionvalue/casedisplayrepresentations.md)
+- [static var caseDisplayRepresentations: [Self.Cases : DisplayRepresentation]](./appunionvalue/casedisplayrepresentations.md)
   A dictionary that maps each case to the visual elements that represent it.
 
 ## Relationships
 
 ### Inherits From
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol AppEntity](appentity.md)
+### App entity types
+- [protocol AppEntity](./appentity.md)
   An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
-- [protocol FileEntity](fileentity.md)
+- [protocol FileEntity](./fileentity.md)
   An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
+- [protocol IndexedEntity](./indexedentity.md)
   An interface that allows you to include an entity in your app’s Spotlight index.
-- [protocol SyncableEntity](syncableentity.md)
+- [protocol SyncableEntity](./syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
-- [protocol TransientAppEntity](transientappentity.md)
+- [protocol TransientAppEntity](./transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
-- [protocol UniqueAppEntity](uniqueappentity.md)
+- [protocol UniqueAppEntity](./uniqueappentity.md)
   An AppEntity subtype for entities that only have a single instance.
-- [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [protocol OwnershipProvidingEntity](./ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
-- [macro UnionValue()](unionvalue().md)
-- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+- [macro UnionValue()](./unionvalue%28%29.md)
+- [protocol AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
   A protocol for the cases enumeration of an `AppUnionValue`.
 
 

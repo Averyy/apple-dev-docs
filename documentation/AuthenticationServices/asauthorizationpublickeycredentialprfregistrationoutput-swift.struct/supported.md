@@ -1,7 +1,8 @@
 # supported
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates the newly created passkey supports the PRF extension.
 
@@ -20,7 +21,8 @@ static var supported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput { 
 
 ## See Also
 
-- [static var unsupported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](asauthorizationpublickeycredentialprfregistrationoutput-swift.struct/unsupported.md)
+### Using defined support values
+- [static var unsupported: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput](./unsupported.md)
   A Boolean value that indicates the newly created passkey doesn’t support the PRF extension.
 
 

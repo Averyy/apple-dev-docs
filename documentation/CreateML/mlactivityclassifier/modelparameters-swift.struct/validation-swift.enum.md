@@ -1,7 +1,8 @@
 # MLActivityClassifier.ModelParameters.Validation
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The source of a validation dataset for an activity classifier.
 
@@ -17,18 +18,19 @@ enum Validation
 ## Topics
 
 ### Specifying validation data
-- [MLActivityClassifier.ModelParameters.Validation.split(strategy:)](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum/split(strategy:).md)
+- [MLActivityClassifier.ModelParameters.Validation.split(strategy:)](./validation-swift.enum/split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the training data.
-- [MLActivityClassifier.ModelParameters.Validation.dataSource(_:)](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum/datasource(_:).md)
+- [MLActivityClassifier.ModelParameters.Validation.dataSource(_:)](./validation-swift.enum/datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLActivityClassifier.ModelParameters.Validation.none](mlactivityclassifier/modelparameters-swift.struct/validation-swift.enum/none.md)
+- [MLActivityClassifier.ModelParameters.Validation.none](./validation-swift.enum/none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 ## See Also
 
-- [init(validation: MLActivityClassifier.ModelParameters.Validation, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](mlactivityclassifier/modelparameters-swift.struct/init(validation:batchsize:maximumiterations:predictionwindowsize:).md)
+### Creating parameters
+- [init(validation: MLActivityClassifier.ModelParameters.Validation, batchSize: Int?, maximumIterations: Int?, predictionWindowSize: Int?)](./init%28validation,batchsize,maximumiterations,predictionwindowsize%29.md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
-- [init(validationData:batchSize:maximumIterations:predictionWindowSize:)](mlactivityclassifier/modelparameters-swift.struct/init(validationdata:batchsize:maximumiterations:predictionwindowsize:).md)
+- [init(validationData:batchSize:maximumIterations:predictionWindowSize:)](./init%28validationdata,batchsize,maximumiterations,predictionwindowsize%29.md)
   Creates a set of activity classifier parameters that includes a validation dataset in a data source.
 
 

@@ -1,7 +1,8 @@
 # PreviewRelevanceEntryBuilder
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A builder that allows you to construct a list of relevance entries to preview your widget.
 
@@ -18,15 +19,16 @@ struct PreviewRelevanceEntryBuilder<Entry> where Entry : RelevanceEntry
 ## Topics
 
 ### Previewing relevance widgets
-- [static func buildArray([[Entry]]) -> [Entry]](previewrelevanceentrybuilder/buildarray(_:).md)
-- [static func buildExpression(Entry) -> [Entry]](previewrelevanceentrybuilder/buildexpression(_:).md)
-- [static func buildPartialBlock(first: [Entry]) -> [Entry]](previewrelevanceentrybuilder/buildpartialblock(first:).md)
-- [static func buildPartialBlock(accumulated: [Entry], next: [Entry]) -> [Entry]](previewrelevanceentrybuilder/buildpartialblock(accumulated:next:).md)
+- [static func buildArray([[Entry]]) -> [Entry]](./previewrelevanceentrybuilder/buildarray%28_%29.md)
+- [static func buildExpression(Entry) -> [Entry]](./previewrelevanceentrybuilder/buildexpression%28_%29.md)
+- [static func buildPartialBlock(first: [Entry]) -> [Entry]](./previewrelevanceentrybuilder/buildpartialblock%28first%29.md)
+- [static func buildPartialBlock(accumulated: [Entry], next: [Entry]) -> [Entry]](./previewrelevanceentrybuilder/buildpartialblock%28accumulated,next%29.md)
 
 ## See Also
 
-- [struct PreviewActivityBuilder](previewactivitybuilder.md)
-- [struct PreviewTimelineBuilder](previewtimelinebuilder.md)
+### Generated structures
+- [struct PreviewActivityBuilder](./previewactivitybuilder.md)
+- [struct PreviewTimelineBuilder](./previewtimelinebuilder.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(from:to:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio converter object from the specified input and output formats.
 
@@ -20,9 +21,13 @@ Creates an audio converter object from the specified input and output formats.
 init?(from fromFormat: AVAudioFormat, to toFormat: AVAudioFormat)
 ```
 
+```objc
+- (instancetype) initFromFormat:(AVAudioFormat *) fromFormat toFormat:(AVAudioFormat *) toFormat;
+```
+
 #### Return Value
 
-An [`AVAudioConverter`](avaudioconverter.md) instance, or `nil` if the format conversion isn’t possible.
+An [`AVAudioConverter`](../avaudioconverter.md) instance, or `nil` if the format conversion isn’t possible.
 
 ## Parameters
 

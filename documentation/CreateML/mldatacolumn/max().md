@@ -1,7 +1,8 @@
 # max()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the element with the highest value in a column of doubles.
 
@@ -19,13 +20,22 @@ Returns the element with the highest value in a column of doubles.
 func max() -> Double?
 ```
 
+Available when `Element` is `Double`.
+
+**Other overloads**:
+
+```swift
+func max() -> Int?
+```
+
 #### Return Value
 
-A [`Double`](https://developer.apple.com/documentation/swift/double); otherwise `nil` if the column is empty or invalid.
+A [`Double`](../../Swift/double.md); otherwise `nil` if the column is empty or invalid.
 
 ## See Also
 
-- [func min()](mldatacolumn/min.md)
+### Getting the min and max element values
+- [func min()](./min%28%29.md)
   Returns the element with the lowest value in a column of doubles.
 
 

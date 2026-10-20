@@ -1,17 +1,18 @@
 # EKAlarmProximity.leave
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm is set to fire when leaving a region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The alarm is set to fire when leaving a region.
 case leave
 ```
 
+```c
+EKAlarmProximityLeave
+```
+
 ## See Also
 
-- [EKAlarmProximity.none](ekalarmproximity/none.md)
+### Constants
+- [EKAlarmProximity.none](./none.md)
   The alarm has no proximity trigger.
-- [EKAlarmProximity.enter](ekalarmproximity/enter.md)
+- [EKAlarmProximity.enter](./enter.md)
   The alarm is set to fire when entering a region.
 
 

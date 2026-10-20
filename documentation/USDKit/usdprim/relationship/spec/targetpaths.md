@@ -1,7 +1,8 @@
 # targetPaths
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored target paths, or `nil` if none authored.
 

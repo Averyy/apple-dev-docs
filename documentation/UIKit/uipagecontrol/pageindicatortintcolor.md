@@ -1,7 +1,8 @@
 # pageIndicatorTintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the page indicator.
 
@@ -9,7 +10,7 @@ The tint color to apply to the page indicator.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The tint color to apply to the page indicator.
 var pageIndicatorTintColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * pageIndicatorTintColor;
+```
+
 #### Discussion
 
-The default color is a translucent white for the page indicator dot. The page indicator dot is used for all of the pages not visible on the screen. Assigning a new value to this property does not automatically change the color in the [`currentPageIndicatorTintColor`](uipagecontrol/currentpageindicatortintcolor.md) property because the value for these two properties is not automatically derived from the other. Both properties must be specified independently. Similarly, no alpha is applied to this property for you. It is recommended (but not required) that the color you specify for this parameter contains some transparency–i.e. the alpha value should be less than 1.0.
+The default color is a translucent white for the page indicator dot. The page indicator dot is used for all of the pages not visible on the screen. Assigning a new value to this property does not automatically change the color in the [`currentPageIndicatorTintColor`](./currentpageindicatortintcolor.md) property because the value for these two properties is not automatically derived from the other. Both properties must be specified independently. Similarly, no alpha is applied to this property for you. It is recommended (but not required) that the color you specify for this parameter contains some transparency–i.e. the alpha value should be less than 1.0.
 
 ## See Also
 
-- [var currentPageIndicatorTintColor: UIColor?](uipagecontrol/currentpageindicatortintcolor.md)
+### Coloring the page indicator
+- [var currentPageIndicatorTintColor: UIColor?](./currentpageindicatortintcolor.md)
   The tint color to apply to the current page indicator.
 
 

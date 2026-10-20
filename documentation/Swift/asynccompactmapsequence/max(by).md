@@ -1,7 +1,8 @@
 # max(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum element in the asynchronous sequence, using the given predicate as the comparison between elements.
 

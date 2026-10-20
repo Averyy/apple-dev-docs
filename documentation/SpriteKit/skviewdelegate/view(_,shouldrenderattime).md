@@ -1,7 +1,8 @@
 # view(_:shouldRenderAtTime:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the view should render at the given time.
 
@@ -17,6 +18,10 @@ Specifies whether the view should render at the given time.
 
 ```swift
 optional func view(_ view: SKView, shouldRenderAtTime time: TimeInterval) -> Bool
+```
+
+```objc
+- (BOOL) view:(SKView *) view shouldRenderAtTime:(NSTimeInterval) time;
 ```
 
 #### Return Value

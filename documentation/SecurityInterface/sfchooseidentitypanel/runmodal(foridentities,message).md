@@ -1,7 +1,8 @@
 # runModal(forIdentities:message:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a list of identities in a modal panel.
 
@@ -14,22 +15,28 @@ Displays a list of identities in a modal panel.
 func runModal(forIdentities identities: [Any]!, message: String!) -> Int
 ```
 
+```objc
+- (NSInteger) runModalForIdentities:(NSArray *) identities message:(NSString *) message;
+```
+
 #### Discussion
 
-This method returns [`NSOKButton`](https://developer.apple.com/documentation/appkit/nsokbutton) if the default button is clicked, or [`NSCancelButton`](https://developer.apple.com/documentation/appkit/nscancelbutton) if the alternate button is clicked.
+This method returns [`NSOKButton`](../../AppKit/nsokbutton.md) if the default button is clicked, or [`NSCancelButton`](../../AppKit/nscancelbutton.md) if the alternate button is clicked.
 
-Use the [`identity()`](sfchooseidentitypanel/identity().md) method to obtain the identity chosen by the user.
+Use the [`identity()`](./identity%28%29.md) method to obtain the identity chosen by the user.
 
 ## Parameters
 
-- `identities`: An array of identity objects (objects of type [`SecIdentity`](https://developer.apple.com/documentation/security/secidentity). Use the [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/secidentitysearchcopynext) function (in Security/SecIdentitySearch.h) to find identity objects.
+- `identities`: An array of identity objects (objects of type [`SecIdentity`](../../Security/secidentity.md). Use the [`SecIdentitySearchCopyNext`](../../Security/secidentitysearchcopynext.md) function (in Security/SecIdentitySearch.h) to find identity objects.
 - `message`: A message string to display in the panel.
 
 ## See Also
 
-- [func identity() -> Unmanaged<SecIdentity>!](sfchooseidentitypanel/identity.md)
+### Related Documentation
+- [func identity() -> Unmanaged<SecIdentity>!](./identity%28%29.md)
   Returns the identity that the user chose in the panel or sheet.
-- [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, identities: [Any]!, message: String!)](sfchooseidentitypanel/beginsheet(for:modaldelegate:didend:contextinfo:identities:message:).md)
+### Displaying a Sheet or Panel
+- [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, identities: [Any]!, message: String!)](./beginsheet%28for,modaldelegate,didend,contextinfo,identities,message%29.md)
   Displays a list of identities in a modal sheet from which the user can select an identity.
 
 

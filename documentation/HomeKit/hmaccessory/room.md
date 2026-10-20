@@ -1,7 +1,8 @@
 # room
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The room containing the accessory.
 
@@ -19,13 +20,18 @@ The room containing the accessory.
 weak var room: HMRoom? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) HMRoom * room;
+```
+
 #### Discussion
 
-Assign accessories to new rooms using [`assignAccessory(_:to:completionHandler:)`](hmhome/assignaccessory(_:to:completionhandler:).md).
+Assign accessories to new rooms using [`assignAccessory(_:to:completionHandler:)`](../hmhome/assignaccessory%28_,to,completionhandler%29.md).
 
 ## See Also
 
-- [class HMRoom](hmroom.md)
+### Locating an accessory
+- [class HMRoom](../hmroom.md)
   The smallest subdivision of a home’s space.
 
 

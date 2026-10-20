@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates `CVError` with the given error code. Returns nil if `rawValue` is `kCVReturnSuccess`
 

@@ -1,7 +1,8 @@
 # AttributeScopes.TranslationAttributes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scope that defines translation-specific properties on attributed strings.
 
@@ -22,27 +23,28 @@ struct TranslationAttributes
 
 #### Overview
 
-Use this scope to access translation attributes when working with [`AttributedString`](attributedstring.md) instances.
+Use this scope to access translation attributes when working with [`AttributedString`](../attributedstring.md) instances.
 
 ## Topics
 
 ### Handling translation behavior
-- [let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttribute](attributescopes/translationattributes/skipstranslation.md)
+- [let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttribute](./translationattributes/skipstranslation.md)
   An attribute that marks portions of an attributed string to be excluded from translation.
-- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute](attributescopes/translationattributes/skiptranslationattribute.md)
+- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute](./translationattributes/skiptranslationattribute.md)
   The attribute key for skipping translation.
 
 ## Relationships
 
 ### Conforms To
-- [AttributeScope](attributescope.md)
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributeScope](../attributescope.md)
+- [DecodingConfigurationProviding](../decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](../encodingconfigurationproviding.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var translation: AttributeScopes.TranslationAttributes.Type](attributescopes/translation.md)
+### Translation-Defined Attributes
+- [var translation: AttributeScopes.TranslationAttributes.Type](./translation.md)
   Provides access to translation-related attributes.
 
 

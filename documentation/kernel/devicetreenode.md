@@ -1,14 +1,15 @@
 # DeviceTreeNode
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct OpaqueDTEntry {
     ...
 } DeviceTreeNode;
@@ -17,8 +18,8 @@ typedef struct OpaqueDTEntry {
 ## Topics
 
 ### Instance Properties
-- [nChildren](devicetreenode/1541461-nchildren.md)
-- [nProperties](devicetreenode/1541479-nproperties.md)
+- [nChildren](./devicetreenode/api-1541461-nchildren.md)
+- [nProperties](./devicetreenode/api-1541479-nproperties.md)
 
 
 ---

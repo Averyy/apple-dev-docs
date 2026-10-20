@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new pipeline state object with additional callable functions.
@@ -18,6 +19,10 @@ Creates a new pipeline state object with additional callable functions.
 
 ```swift
 func makeComputePipelineStateWithAdditionalBinaryFunctions(functions: [any MTLFunction]) throws -> any MTLComputePipelineState
+```
+
+```objc
+- (id<MTLComputePipelineState>) newComputePipelineStateWithAdditionalBinaryFunctions:(NSArray<id<MTLFunction>> *) functions error:(NSError **) error;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # keyboardWillDismiss()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user has requested the keyboard to dismiss itself.
 
@@ -17,9 +18,13 @@ Called when the user has requested the keyboard to dismiss itself.
 optional func keyboardWillDismiss()
 ```
 
+```objc
+- (void) keyboardWillDismiss;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 
 ---

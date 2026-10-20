@@ -1,7 +1,8 @@
 # kMDItemTempo
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A float value that specifies the beats per minute of the music contained in the audio file. A CFNumber.
 
@@ -12,6 +13,10 @@ A float value that specifies the beats per minute of the music contained in the 
 
 ```swift
 let kMDItemTempo: CFString!
+```
+
+```c
+const CFStringRef kMDItemTempo;
 ```
 
 

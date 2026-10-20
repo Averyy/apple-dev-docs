@@ -1,9 +1,10 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiterativesegmentationrequest.md).
+The revisions supported by [`GenerateIterativeSegmentationRequest`](../generateiterativesegmentationrequest.md).
 
 **Availability**:
 - iOS 27.0+
@@ -21,13 +22,14 @@ static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [let revision: GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: GenerateIterativeSegmentationRequest.Revision](./revision-swift.property.md)
   The request’s configured revision.
-- [GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.enum.md)
+- [GenerateIterativeSegmentationRequest.Revision](./revision-swift.enum.md)
 
 
 ---

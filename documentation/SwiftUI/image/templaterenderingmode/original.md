@@ -1,7 +1,8 @@
 # Image.TemplateRenderingMode.original
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that renders pixels of bitmap images as-is.
 
@@ -26,7 +27,8 @@ For system images created from the SF Symbol set, multicolor symbols respect the
 
 ## See Also
 
-- [Image.TemplateRenderingMode.template](image/templaterenderingmode/template.md)
+### Getting rendering modes
+- [Image.TemplateRenderingMode.template](./template.md)
   A mode that renders all non-transparent pixels as the foreground color.
 
 

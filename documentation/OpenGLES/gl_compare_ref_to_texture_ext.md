@@ -1,7 +1,8 @@
 # GL_COMPARE_REF_TO_TEXTURE_EXT
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_COMPARE_REF_TO_TEXTURE_EXT: Int32 { get }
+```
+
+```c
+#define GL_COMPARE_REF_TO_TEXTURE_EXT
 ```
 
 

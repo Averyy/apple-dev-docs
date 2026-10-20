@@ -1,23 +1,28 @@
 # CFNotificationCallback
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function invoked for each observer of a notification when the notification is posted.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFNotificationCallback = (CFNotificationCenter?, UnsafeMutableRawPointer?, CFNotificationName?, UnsafeRawPointer?, CFDictionary?) -> Void
+```
+
+```c
+typedef void (*)(struct __CFNotificationCenter *, void *, const struct __CFString *, const void *, const struct __CFDictionary *) CFNotificationCallback;
 ```
 
 ## Parameters
@@ -26,7 +31,9 @@ typealias CFNotificationCallback = (CFNotificationCenter?, UnsafeMutableRawPoint
 - `observer`: An arbitrary value, other than `NULL`, that identifies the observer.
 - `name`: The name of the notification being posted.
 - `object`: An arbitrary value that identifies the object posting the notification. For distributed notifications, `object` is always a CFString object. This value could be `NULL`.
-- `userInfo`: A dictionary containing additional information regarding the notification. This value could be `NULL`. If the notification center is a Darwin notification center, this value must be ignored.
+- `userInfo`: A dictionary containing additional information regarding the notification. This value could be `NULL`.
+
+  If the notification center is a Darwin notification center, this value must be ignored.
 
 
 ---

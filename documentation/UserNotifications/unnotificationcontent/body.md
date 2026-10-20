@@ -1,7 +1,8 @@
 # body
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text that provides the notification’s main content.
 
@@ -19,6 +20,18 @@ The localized text that provides the notification’s main content.
 var body: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * body;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * body;
+```
+
 #### Discussion
 
 The body text contains the final text that you want to display. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
@@ -27,9 +40,10 @@ If you specified two percent symbols (`%%`) in the message body, the system repl
 
 ## See Also
 
-- [var title: String](unnotificationcontent/title.md)
+### Accessing the primary content
+- [var title: String](./title.md)
   The localized text that provides the notification’s primary description.
-- [var subtitle: String](unnotificationcontent/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   The localized text that provides the notification’s secondary description.
 
 

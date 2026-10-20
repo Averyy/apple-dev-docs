@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current transform matrix, defining user space coordinates.
 
@@ -26,13 +27,14 @@ Modify this matrix to transform content that you subsequently draw into the cont
 
 ## See Also
 
-- [func scaleBy(x: CGFloat, y: CGFloat)](graphicscontext/scaleby(x:y:).md)
+### Applying transforms
+- [func scaleBy(x: CGFloat, y: CGFloat)](./scaleby%28x,y%29.md)
   Scales subsequent drawing operations by an amount in each dimension.
-- [func rotate(by: Angle)](graphicscontext/rotate(by:).md)
+- [func rotate(by: Angle)](./rotate%28by%29.md)
   Rotates subsequent drawing operations by an angle.
-- [func translateBy(x: CGFloat, y: CGFloat)](graphicscontext/translateby(x:y:).md)
+- [func translateBy(x: CGFloat, y: CGFloat)](./translateby%28x,y%29.md)
   Moves subsequent drawing operations by an amount in each dimension.
-- [func concatenate(CGAffineTransform)](graphicscontext/concatenate(_:).md)
+- [func concatenate(CGAffineTransform)](./concatenate%28_%29.md)
   Appends the given transform to the context’s existing transform.
 
 

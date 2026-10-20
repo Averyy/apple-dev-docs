@@ -1,7 +1,8 @@
 # read
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that describes a read operation.
 
@@ -14,9 +15,14 @@ A flag that describes a read operation.
 static var read: FSBlockmapFlags { get }
 ```
 
+```c
+FSBlockmapFlagsRead
+```
+
 ## See Also
 
-- [static var write: FSBlockmapFlags](fsblockmapflags/write.md)
+### Declaring block map behaviors
+- [static var write: FSBlockmapFlags](./write.md)
   A flag that describes a write operation.
 
 

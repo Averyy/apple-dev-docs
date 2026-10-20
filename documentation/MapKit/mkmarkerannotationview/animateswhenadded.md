@@ -1,7 +1,8 @@
 # animatesWhenAdded
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the marker animates into position onscreen.
 
@@ -17,6 +18,10 @@ A Boolean that indicates whether the marker animates into position onscreen.
 
 ```swift
 var animatesWhenAdded: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL animatesWhenAdded;
 ```
 
 #### Discussion

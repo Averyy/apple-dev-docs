@@ -1,7 +1,8 @@
 # TKSmartCardUserInteractionDelegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface implemented by a Smart Card user interaction delegate to handle user interaction events.
 
@@ -20,27 +21,32 @@ The interface implemented by a Smart Card user interaction delegate to handle us
 protocol TKSmartCardUserInteractionDelegate
 ```
 
+```objc
+@protocol TKSmartCardUserInteractionDelegate
+```
+
 ## Topics
 
 ### Delegate Methods
-- [func characterEntered(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/characterentered(in:).md)
+- [func characterEntered(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/characterentered%28in%29.md)
   Tells the delegate that a valid character has been entered.
-- [func correctionKeyPressed(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/correctionkeypressed(in:).md)
+- [func correctionKeyPressed(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/correctionkeypressed%28in%29.md)
   Tells the delegate that a correction key has been pressed.
-- [func validationKeyPressed(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/validationkeypressed(in:).md)
+- [func validationKeyPressed(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/validationkeypressed%28in%29.md)
   Tells the delegate that the validation key has been pressed, indicating the end of PIN entry.
-- [func invalidCharacterEntered(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/invalidcharacterentered(in:).md)
+- [func invalidCharacterEntered(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/invalidcharacterentered%28in%29.md)
   Tells the delegate that an invalid character has been entered.
-- [func oldPINRequested(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/oldpinrequested(in:).md)
+- [func oldPINRequested(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/oldpinrequested%28in%29.md)
   Tells the delegate that the old PIN needs to be entered.
-- [func newPINRequested(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/newpinrequested(in:).md)
+- [func newPINRequested(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/newpinrequested%28in%29.md)
   Tells the delegate that the new PIN needs to be entered.
-- [func newPINConfirmationRequested(in: TKSmartCardUserInteraction)](tksmartcarduserinteractiondelegate/newpinconfirmationrequested(in:).md)
+- [func newPINConfirmationRequested(in: TKSmartCardUserInteraction)](./tksmartcarduserinteractiondelegate/newpinconfirmationrequested%28in%29.md)
   Tells the delegate that the new PIN needs to be re-entered for confirmation.
 
 ## See Also
 
-- [var delegate: (any TKSmartCardUserInteractionDelegate)?](tksmartcarduserinteraction/delegate.md)
+### Handling User Interaction Events
+- [var delegate: (any TKSmartCardUserInteractionDelegate)?](./tksmartcarduserinteraction/delegate.md)
   The delegate for observing events that occur during the user interaction.
 
 

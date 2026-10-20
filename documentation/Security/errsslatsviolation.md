@@ -1,7 +1,8 @@
 # errSSLATSViolation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An App Transport Security violation occurred.
 
@@ -20,9 +21,13 @@ An App Transport Security violation occurred.
 var errSSLATSViolation: OSStatus { get }
 ```
 
+```c
+errSSLATSViolation
+```
+
 #### Overview
 
-For more information about App Transport Security (ATS) compliance, see [`Preventing Insecure Network Connections`](preventing-insecure-network-connections.md).
+For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 
 
 ---

@@ -1,6 +1,7 @@
 # Addressing architectural differences in your macOS code
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Fix problems that stem from architectural differences between Apple silicon and Intel-based Mac computers.
 
@@ -12,7 +13,7 @@ Assumptions you make for your code on Intel-based Mac computers may not always a
 
 Code that depends on specific system details or hardware configurations may crash or yield unexpected behaviors on Apple silicon. Many hardware features are different on Apple silicon and Intel-based Mac computers; some system features may also be different. If you hardcode a particular value for a feature, your code may not work as expected on systems where the value is different.
 
-Instead of hardcoding values related to the underlying system, fetch those values dynamically from system global variables whenever possible. For example, fetch the size of virtual memory pages from the `vm_page_size` global variable. When a global variable isn’t available, use the `sysctl` or [`sysctlbyname`](https://developer.apple.com/documentation/kernel/1387446-sysctlbyname) functions to fetch the information instead.
+Instead of hardcoding values related to the underlying system, fetch those values dynamically from system global variables whenever possible. For example, fetch the size of virtual memory pages from the `vm_page_size` global variable. When a global variable isn’t available, use the `sysctl` or [`sysctlbyname`](../kernel/api-1387446-sysctlbyname.md) functions to fetch the information instead.
 
 Some features of Apple silicon are decidedly different than those of Intel-based Mac computers, and may impact your code if you don’t fetch them dynamically. These features include:
 
@@ -28,18 +29,18 @@ Always protect shared data with locks, memory barriers, and other synchronizatio
 
 macOS includes numerous synchronization primitives:
 
-- Grand Central Dispatch (GCD) provides serial queues and other ways to synchronize tasks; see [`Dispatch`](https://developer.apple.com/documentation/dispatch).
+- Grand Central Dispatch (GCD) provides serial queues and other ways to synchronize tasks; see [Dispatch](../Dispatch/Dispatch.md).
 - The `@synchronized` directive creates a mutex lock for Objective-C code.
-- The [`Foundation`](https://developer.apple.com/documentation/foundation) framework defines standard mutexes, conditions, and other types of locks.
-- The [`os`](https://developer.apple.com/documentation/os) framework provides “unfair” locks for synchronization.
+- The [Foundation](../Foundation/Foundation.md) framework defines standard mutexes, conditions, and other types of locks.
+- The [os](../os/os.md) framework provides “unfair” locks for synchronization.
 - The pthreads library defines standard mutexes and condition variables.
 - The C11/C++11 primitives in `stdatomic.h` support custom memory ordering in atomic operations.
 
 If you use lockless algorithms or custom synchronization techniques, consider replacing them with system-provided primitives. If you’re not able to adopt the system primitives, validate the correctness of your custom code on Apple silicon before deploying it in your binary.
 
-> **Note**: Use the thread sanitizer to detect data races and identify places where your code requires synchronization. For more information, see [`Diagnosing memory, thread, and crash issues early`](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early).
+> **Note**: Use the thread sanitizer to detect data races and identify places where your code requires synchronization. For more information, see [Diagnosing memory, thread, and crash issues early](../Xcode/diagnosing-memory-thread-and-crash-issues-early.md).
 
-##### Dont Redeclare a Function to Have Variable Parameters
+##### Don’t Redeclare a Function to Have Variable Parameters
 
 The `x86_64` and `arm64` architectures have different calling conventions for variadic functions—functions with a variable number of parameters. On `x86_64`, the compiler treats fixed and variadic parameters the same, placing parameters in registers first and only using the stack when no more registers are available. On `arm64`, the compiler always places variadic parameters on the stack, regardless of whether registers are available. If you implement a function with fixed parameters, but redeclare it with variadic parameters, the mismatch causes unexpected behavior at runtime.
 
@@ -68,13 +69,13 @@ void printTestValues() {
 
 The same code fails on `arm64` because the caller of the function and the function itself marshal the parameters differently. The function expects all of the parameters to be in registers. However, the caller passes only the first parameter in a register; it passes all remaining parameters on the stack. As a result, the function implementation looks for the parameters in the wrong place, leading to unexpected results.
 
-Even if you don’t redeclare your functions explicitly, functions like [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) redeclare your functions and methods implicitly. For more information, see [`Enable Strict Type Enforcement for Dynamic Method Dispatching`](addressing-architectural-differences-in-your-macos-code#Enable-Strict-Type-Enforcement-for-Dynamic-Method-Dispatching.md).
+Even if you don’t redeclare your functions explicitly, functions like [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) redeclare your functions and methods implicitly. For more information, see [Enable Strict Type Enforcement for Dynamic Method Dispatching](./addressing-architectural-differences-in-your-macos-code.md#Enable-Strict-Type-Enforcement-for-Dynamic-Method-Dispatching).
 
 ##### Enable Strict Type Enforcement for Dynamic Method Dispatching
 
-Due to calling convention differences between the `x86_64` and `arm64` architectures, update your dynamic-dispatching code to pass parameters correctly on both platforms. A function like [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) calls a method of an object, passing the parameters you supply to that method. Because [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) must support calls to any method, it accepts a variable list of parameters instead of fixed parameters. This usage of variable parameters changes how [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) calls your function, effectively redeclaring your method as a variadic function.
+Due to calling convention differences between the `x86_64` and `arm64` architectures, update your dynamic-dispatching code to pass parameters correctly on both platforms. A function like [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) calls a method of an object, passing the parameters you supply to that method. Because [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) must support calls to any method, it accepts a variable list of parameters instead of fixed parameters. This usage of variable parameters changes how [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) calls your function, effectively redeclaring your method as a variadic function.
 
-To illustrate the problem, consider an example where you want to call the following method using [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend):
+To illustrate the problem, consider an example where you want to call the following method using [`objc_msgSend`](../ObjectiveC/objc_msgsend.md):
 
 ```occ
 - (void)document:(NSDocument*)doc 
@@ -82,9 +83,9 @@ To illustrate the problem, consider an example where you want to call the follow
      contextInfo:(void*)contextInfo;
 ```
 
-Because [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) declares your method as variadic, the compiler places the method’s parameters on the stack, in accordance with the calling conventions for the `arm64` architecture. However, the original method declaration contains fixed parameters, not variable parameters. As a result, the method’s implementation looks for its parameters in registers, which is where the compiler places fixed parameters for `arm64`. This mismatch causes the method call to generate undefined results.
+Because [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) declares your method as variadic, the compiler places the method’s parameters on the stack, in accordance with the calling conventions for the `arm64` architecture. However, the original method declaration contains fixed parameters, not variable parameters. As a result, the method’s implementation looks for its parameters in registers, which is where the compiler places fixed parameters for `arm64`. This mismatch causes the method call to generate undefined results.
 
-To fix dynamic-dispatching issues in your code, define a type-safe function pointer instead of calling [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) directly. You can use type-safe function pointers in both your `arm64` and `x86_64` code. A type-safe function pointer specifies the exact number of parameters, and incorporates the type information for each parameter into the [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) call, allowing the compiler to generate the calling conventions the method expects. For example, a type-safe function pointer for the `document:didSave:contextInfo:` method looks like the following:
+To fix dynamic-dispatching issues in your code, define a type-safe function pointer instead of calling [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) directly. You can use type-safe function pointers in both your `arm64` and `x86_64` code. A type-safe function pointer specifies the exact number of parameters, and incorporates the type information for each parameter into the [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) call, allowing the compiler to generate the calling conventions the method expects. For example, a type-safe function pointer for the `document:didSave:contextInfo:` method looks like the following:
 
 ```occ
 // Declare a type-safe function pointer.
@@ -99,15 +100,15 @@ To initiate the dynamic dispatch operation, pass the target object, selector, an
 didSaveDispatcher(myDelegate, mySelector, myDocument, NO, myPtr);
 ```
 
-To locate places where you’re not calling [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend) in a type-safe way, enable the Enable strict Checking of objc_msgSend Calls build setting. When the value of that setting is `YES`, the compiler flags your code where you’re not using a type-safe function pointer with [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend).
+To locate places where you’re not calling [`objc_msgSend`](../ObjectiveC/objc_msgsend.md) in a type-safe way, enable the Enable strict Checking of objc_msgSend Calls build setting. When the value of that setting is `YES`, the compiler flags your code where you’re not using a type-safe function pointer with [`objc_msgSend`](../ObjectiveC/objc_msgsend.md).
 
 ##### Address Numerical Differences in Specific Frameworks
 
 Some frameworks include minor changes that might impact code when porting to Apple silicon. For example:
 
-- The [`NSTextAlignment`](https://developer.apple.com/documentation/uikit/nstextalignment) enumeration uses different numerical values for some constants on `arm64` and `x86_64` architectures. When referring to constants using numerical values, validate that you use the correct values on each architecture.
-- The [`NSImage.ResizingMode`](https://developer.apple.com/documentation/appkit/nsimage/resizingmode-swift.enum) and [`UIImage.ResizingMode`](https://developer.apple.com/documentation/uikit/uiimage/resizingmode-swift.enum) enumerations uses different numerical values for some constants on `arm64` and `x86_64` architectures. When referring to constants using numerical values, validate that you use the correct values on each architecture.
-- Encoder IDs in the Video Toolbox framework may differ on `arm64` and `x86_64` architectures and on different versions of macOS. For example, the value in [`kVTVideoEncoderSpecification_EncoderID`](https://developer.apple.com/documentation/videotoolbox/kvtvideoencoderspecification_encoderid) may differ between architectures.
+- The [`NSTextAlignment`](../UIKit/nstextalignment.md) enumeration uses different numerical values for some constants on `arm64` and `x86_64` architectures. When referring to constants using numerical values, validate that you use the correct values on each architecture.
+- The [`NSImage.ResizingMode`](../AppKit/nsimage/resizingmode-swift.enum.md) and [`UIImage.ResizingMode`](../UIKit/uiimage/resizingmode-swift.enum.md) enumerations uses different numerical values for some constants on `arm64` and `x86_64` architectures. When referring to constants using numerical values, validate that you use the correct values on each architecture.
+- Encoder IDs in the Video Toolbox framework may differ on `arm64` and `x86_64` architectures and on different versions of macOS. For example, the value in [`kVTVideoEncoderSpecification_EncoderID`](../VideoToolbox/kvtvideoencoderspecification_encoderid.md) may differ between architectures.
 
 For additional information about framework differences, see the specific framework reference.
 
@@ -166,9 +167,9 @@ int BAD_count_leading_zeroes(int x){
 }
 ```
 
-For a list of builtin intrinsic functions provided by the clang compiler, see the clang documentation at [`https://llvm.org`](https://developer.apple.comhttps://llvm.org).
+For a list of builtin intrinsic functions provided by the clang compiler, see the clang documentation at [https://llvm.org](https://llvm.org).
 
-##### Update Processor Specific Vector Instructions
+##### Update Processor-Specific Vector Instructions
 
 If your code includes instructions for the SSE, AVX, AVX2, or AVX512 units of Intel processors, update that code to support Apple silicon. The best alternative to processor-specific vector code is to use the Accelerate framework, which provides a vast library of vector operations optimized for all Mac computers. Accelerate leverages all available hardware of the current system to perform:
 
@@ -179,13 +180,13 @@ If your code includes instructions for the SSE, AVX, AVX2, or AVX512 units of In
 - Compression
 - Neural network operations
 
-For more information about the Accelerate framework, see [`Accelerate`](https://developer.apple.com/documentation/accelerate).
+For more information about the Accelerate framework, see [Accelerate](../Accelerate/Accelerate.md).
 
 ##### Apply Timebase Information to Mach Absolute Time Values
 
-Always apply timebase information to values you receive from [`mach_absolute_time`](https://developer.apple.com/documentation/kernel/1462446-mach_absolute_time) and never assume that the function returns the number of nanoseconds since boot. The value returned by the [`mach_absolute_time`](https://developer.apple.com/documentation/kernel/1462446-mach_absolute_time) function is different for native and translated processes, and doesn’t necessarily correspond to the number of nanoseconds since boot. Applying timebase information ensures that you can distribute time values between processes and between different computers.
+Always apply timebase information to values you receive from [`mach_absolute_time`](../kernel/api-1462446-mach_absolute_time.md) and never assume that the function returns the number of nanoseconds since boot. The value returned by the [`mach_absolute_time`](../kernel/api-1462446-mach_absolute_time.md) function is different for native and translated processes, and doesn’t necessarily correspond to the number of nanoseconds since boot. Applying timebase information ensures that you can distribute time values between processes and between different computers.
 
-The following code shows how to apply the timebase information to the value returned by the [`mach_absolute_time`](https://developer.apple.com/documentation/kernel/1462446-mach_absolute_time) function:
+The following code shows how to apply the timebase information to the value returned by the [`mach_absolute_time`](../kernel/api-1462446-mach_absolute_time.md) function:
 
 ```occ
 uint64_t MachTimeToNanoseconds(uint64_t machTime) {
@@ -200,9 +201,9 @@ uint64_t MachTimeToNanoseconds(uint64_t machTime) {
 }
 ```
 
-To retrieve time values in nanoseconds without converting  [`mach_absolute_time`](https://developer.apple.com/documentation/kernel/1462446-mach_absolute_time) values, call the `clock_gettime_nsec_np` function instead.
+To retrieve time values in nanoseconds without converting  [`mach_absolute_time`](../kernel/api-1462446-mach_absolute_time.md) values, call the `clock_gettime_nsec_np` function instead.
 
-##### Audit Code That Contains Float to Int Conversions
+##### Audit Code that Contains Float-to-Int Conversions
 
 Apple silicon and Intel-based Mac computers handle some float-to-int conversions differently in C-based languages. To illustrate one of the differences, consider the conversion of the floating-point representation of infinity to a `uint32_t` or `int32_t` value:
 
@@ -229,15 +230,15 @@ b = 0x80000000 = -21474836548  // The indefinite integer value.
 
 If your code converts floating-point numbers to integers, audit your code to make sure that you handle boundary conditions correctly. One way to detect invalid conversions is to run the UBSan tool with the `float-cast-overflow` option selected. To detect implicit conversions by the compiler, enable the `-Wconversion` compiler flag when building your code.
 
-For information about how to use the UBSan tool, see [`Diagnosing memory, thread, and crash issues early`](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early).
+For information about how to use the UBSan tool, see [Diagnosing memory, thread, and crash issues early](../Xcode/diagnosing-memory-thread-and-crash-issues-early.md).
 
-##### Treat Bool Variables As Binary Values
+##### Treat BOOL Variables as Binary Values
 
-As a rule, the Objective-C [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) type has only two appropriate values: `YES` or `NO`. On Apple silicon, the compiler defines the [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) type to be a native `bool`, but on Intel-based Mac computers, it is a signed` char`. To avoid issues in universal binaries:
+As a rule, the Objective-C [`BOOL`](../ObjectiveC/bool.md) type has only two appropriate values: `YES` or `NO`. On Apple silicon, the compiler defines the [`BOOL`](../ObjectiveC/bool.md) type to be a native `bool`, but on Intel-based Mac computers, it is a signed` char`. To avoid issues in universal binaries:
 
-- Never perform mathematical operations on [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) variables.
-- Never increment or decrement [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) variables.
-- Never assume the numerical value of a [`BOOL`](https://developer.apple.com/documentation/objectivec/bool) is anything other than `0` or `1`.
+- Never perform mathematical operations on [`BOOL`](../ObjectiveC/bool.md) variables.
+- Never increment or decrement [`BOOL`](../ObjectiveC/bool.md) variables.
+- Never assume the numerical value of a [`BOOL`](../ObjectiveC/bool.md) is anything other than `0` or `1`.
 
 To illustrate the problem, consider the following example:
 
@@ -261,21 +262,22 @@ BOOL receivedBytes = !!nBytes;
 
 > **Note**: Enable the `-Wobjc-signed-char-bool-implicit-int-conversion` compiler option to generate warnings for implicit `BOOL` conversions at compile time.
 
-##### Update Just in Time Compilers
+##### Update Just-In-Time Compilers
 
-Update the workflow of any just-in-time compilers to support Apple silicon, which prevent all memory pages from being simultaneously writable and executable. On Intel-based Mac computers, this same behavior applies only to apps that adopt the [`Hardened Runtime`](https://developer.apple.com/documentation/security/hardened-runtime).
+Update the workflow of any just-in-time compilers to support Apple silicon, which prevent all memory pages from being simultaneously writable and executable. On Intel-based Mac computers, this same behavior applies only to apps that adopt the [Hardened Runtime](../Security/hardened-runtime.md).
 
-For more information, see [`Porting just-in-time compilers to Apple silicon`](porting-just-in-time-compilers-to-apple-silicon.md).
+For more information, see [Porting just-in-time compilers to Apple silicon](./porting-just-in-time-compilers-to-apple-silicon.md).
 
 ##### Update C++ Code
 
-The C++ ABI for Apple silicon matches the ABI for iOS devices, and not the ABI for Intel-based Mac computers. For information about the ABI, see [`iOS ABI Function Call Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Conceptual/iPhoneOSABIReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009020-SW1).
+The C++ ABI for Apple silicon matches the ABI for iOS devices, and not the ABI for Intel-based Mac computers. For information about the ABI, see [iOS ABI Function Call Guide](https://developer.apple.com/library/archive/documentation/Xcode/Conceptual/iPhoneOSABIReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009020-SW1).
 
 ## See Also
 
-- [Porting your audio code to Apple silicon](porting-your-audio-code-to-apple-silicon.md)
+### General porting tips
+- [Porting your audio code to Apple silicon](./porting-your-audio-code-to-apple-silicon.md)
   Eliminate issues in your audio-specific code when running on Apple silicon Mac computers.
-- [Porting just-in-time compilers to Apple silicon](porting-just-in-time-compilers-to-apple-silicon.md)
+- [Porting just-in-time compilers to Apple silicon](./porting-just-in-time-compilers-to-apple-silicon.md)
   Update your just-in-time (JIT) compiler to work with the Hardened Runtime capability, and with Apple silicon.
 
 

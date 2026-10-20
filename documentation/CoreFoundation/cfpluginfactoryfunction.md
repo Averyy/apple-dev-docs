@@ -1,18 +1,19 @@
 # CFPlugInFactoryFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function that a plug-in author must implement to create a plug-in instance.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Callback function that a plug-in author must implement to create a plug-in insta
 typealias CFPlugInFactoryFunction = (CFAllocator?, CFUUID?) -> UnsafeMutableRawPointer?
 ```
 
+```c
+typedef void *(*)(const struct __CFAllocator *, const struct __CFUUID *) CFPlugInFactoryFunction;
+```
+
 #### Discussion
 
-The plug-in author’s implementation of this function is registered with `CFPlugIn` either statically in the plug-in’s information property list, or dynamically. This function is executed as a result of a call to [`CFPlugInInstanceCreate(_:_:_:)`](cfplugininstancecreate(_:_:_:).md) by the plug-in host.
+The plug-in author’s implementation of this function is registered with `CFPlugIn` either statically in the plug-in’s information property list, or dynamically. This function is executed as a result of a call to [`CFPlugInInstanceCreate(_:_:_:)`](./cfplugininstancecreate%28_,_,_%29.md) by the plug-in host.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ The plug-in author’s implementation of this function is registered with `CFPlu
 
 ## See Also
 
-- [typealias CFPlugInDynamicRegisterFunction](cfplugindynamicregisterfunction.md)
+### Callbacks
+- [typealias CFPlugInDynamicRegisterFunction](./cfplugindynamicregisterfunction.md)
   A callback which provides a plug-in the opportunity to dynamically register its types with a host.
-- [typealias CFPlugInUnloadFunction](cfpluginunloadfunction.md)
+- [typealias CFPlugInUnloadFunction](./cfpluginunloadfunction.md)
   Callback function that is called, if present, just before a plug-in’s code is unloaded.
 
 

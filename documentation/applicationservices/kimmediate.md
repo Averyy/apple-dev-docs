@@ -1,7 +1,8 @@
 # kImmediate
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Speech should be paused or stopped immediately.
 

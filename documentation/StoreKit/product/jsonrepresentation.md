@@ -1,7 +1,8 @@
 # jsonRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The JSON representation of the product information.
 
@@ -22,7 +23,7 @@ var jsonRepresentation: Data { get }
 
 #### Discussion
 
-The [`jsonRepresentation`](product/jsonrepresentation.md) is UTF-8 string data. You can use the JSON data to decode the product information into your own data type instead of using the [`Product`](product.md) value directly.
+The [`jsonRepresentation`](./jsonrepresentation.md) is UTF-8 string data. You can use the JSON data to decode the product information into your own data type instead of using the [`Product`](../product.md) value directly.
 
 
 ---

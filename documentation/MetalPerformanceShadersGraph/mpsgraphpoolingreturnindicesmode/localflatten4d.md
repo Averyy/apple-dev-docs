@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.localFlatten4D
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns indices within pooling window, flattened in 4 innermost dimensions.
 
@@ -17,6 +18,10 @@ Returns indices within pooling window, flattened in 4 innermost dimensions.
 
 ```swift
 case localFlatten4D
+```
+
+```c
+MPSGraphPoolingReturnIndicesLocalFlatten4D
 ```
 
 

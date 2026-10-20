@@ -1,7 +1,8 @@
 # shouldMuteAudio
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Intervention guidance that suggests the app mute the audio of the current video stream.
 
@@ -16,11 +17,16 @@ Intervention guidance that suggests the app mute the audio of the current video 
 var shouldMuteAudio: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL shouldMuteAudio;
+```
+
 ## See Also
 
-- [var shouldIndicateSensitivity: Bool](scsensitivityanalysis/shouldindicatesensitivity.md)
+### Receiving intervention guidance
+- [var shouldIndicateSensitivity: Bool](./shouldindicatesensitivity.md)
   Intervention guidance that suggests the app indicate the presence of sensitive content.
-- [var shouldInterruptVideo: Bool](scsensitivityanalysis/shouldinterruptvideo.md)
+- [var shouldInterruptVideo: Bool](./shouldinterruptvideo.md)
   Intervention guidance that suggests the app interrupt the video stream.
 
 

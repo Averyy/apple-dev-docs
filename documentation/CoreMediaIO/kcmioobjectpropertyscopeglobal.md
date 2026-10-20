@@ -1,7 +1,8 @@
 # kCMIOObjectPropertyScopeGlobal
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,13 +14,18 @@
 var kCMIOObjectPropertyScopeGlobal: Int { get }
 ```
 
+```c
+kCMIOObjectPropertyScopeGlobal
+```
+
 ## See Also
 
-- [var kCMIOObjectClassID: Int](kcmioobjectclassid.md)
-- [var kCMIOObjectClassIDWildcard: Int](kcmioobjectclassidwildcard.md)
-- [var kCMIOObjectPropertyElementMaster: Int](kcmioobjectpropertyelementmaster.md)
-- [var kCMIOObjectUnknown: Int](kcmioobjectunknown.md)
-- [var kCMIOObjectPropertyElementMain: Int](kcmioobjectpropertyelementmain.md)
+### Constants
+- [var kCMIOObjectClassID: Int](./kcmioobjectclassid.md)
+- [var kCMIOObjectClassIDWildcard: Int](./kcmioobjectclassidwildcard.md)
+- [var kCMIOObjectPropertyElementMaster: Int](./kcmioobjectpropertyelementmaster.md)
+- [var kCMIOObjectUnknown: Int](./kcmioobjectunknown.md)
+- [var kCMIOObjectPropertyElementMain: Int](./kcmioobjectpropertyelementmain.md)
 
 
 ---

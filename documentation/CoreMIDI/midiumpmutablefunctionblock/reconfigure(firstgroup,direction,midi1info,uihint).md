@@ -1,7 +1,8 @@
 # reconfigure(firstGroup:direction:MIDI1Info:UIHint:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func reconfigure(firstGroup: MIDIUMPGroupNumber, direction: MIDIUMPFunctionBlockDirection, MIDI1Info: MIDIUMPFunctionBlockMIDI1Info, UIHint: MIDIUMPFunctionBlockUIHint) throws
+```
+
+```objc
+- (BOOL) reconfigureWithFirstGroup:(MIDIUMPGroupNumber) firstGroup direction:(MIDIUMPFunctionBlockDirection) direction MIDI1Info:(MIDIUMPFunctionBlockMIDI1Info) MIDI1Info UIHint:(MIDIUMPFunctionBlockUIHint) UIHint error:(NSError **) error;
 ```
 
 

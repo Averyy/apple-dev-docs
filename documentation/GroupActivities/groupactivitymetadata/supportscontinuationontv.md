@@ -1,7 +1,8 @@
 # supportsContinuationOnTV
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether your app supports activity continuation on an Apple TV.
 
@@ -25,9 +26,10 @@ The default value of this property is `false`. Set it to `true` to allow partici
 
 ## See Also
 
-- [var preferredBroadcastOptions: BroadcastOptions](groupactivitymetadata/preferredbroadcastoptions.md)
+### Specifying media-related behavior
+- [var preferredBroadcastOptions: BroadcastOptions](./preferredbroadcastoptions.md)
   Preferences for how to present audio and video on the main communication channel.
-- [struct BroadcastOptions](broadcastoptions.md)
+- [struct BroadcastOptions](../broadcastoptions.md)
   Options for how to broadcast media on the shared communications channel.
 
 

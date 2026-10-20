@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s sort descriptors, accessed as value types.
 
@@ -20,15 +21,18 @@ The request’s sort descriptors, accessed as value types.
 var sortDescriptors: [SortDescriptor<Result>] { get set }
 ```
 
+Available when `SectionIdentifier` conforms to `Hashable` and `Result` inherits `NSManagedObject`.
+
 #### Discussion
 
-Set this configuration value to cause a [`SectionedFetchRequest`](sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances. If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances, set [`nsSortDescriptors`](sectionedfetchrequest/configuration/nssortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md).
+Set this configuration value to cause a [`SectionedFetchRequest`](../../sectionedfetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances. If you want to use [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances, set [`nsSortDescriptors`](./nssortdescriptors.md) instead. Use care to coordinate section and sort updates, as described in [`SectionedFetchRequest.Configuration`](../configuration.md).
 
-Access this value for a given request by using the [`sortDescriptors`](sectionedfetchresults/sortdescriptors.md) property on the associated [`SectionedFetchResults`](sectionedfetchresults.md) instance, either directly or with a [`Binding`](binding.md).
+Access this value for a given request by using the [`sortDescriptors`](../../sectionedfetchresults/sortdescriptors.md) property on the associated [`SectionedFetchResults`](../../sectionedfetchresults.md) instance, either directly or with a [`Binding`](../../binding.md).
 
 ## See Also
 
-- [var nsSortDescriptors: [NSSortDescriptor]](sectionedfetchrequest/configuration/nssortdescriptors.md)
+### Setting sort descriptors
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
 
 

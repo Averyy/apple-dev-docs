@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatically determines the marker style.
 

@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The velocity of the pinch in scale factor per second.
 
@@ -17,9 +18,14 @@ The velocity of the pinch in scale factor per second.
 var velocity: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat velocity;
+```
+
 ## See Also
 
-- [var scale: CGFloat](uipinchgesturerecognizer/scale.md)
+### Interpreting the pinching gesture
+- [var scale: CGFloat](./scale.md)
   The scale factor relative to the points of the two touches in screen coordinates.
 
 

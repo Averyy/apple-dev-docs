@@ -1,7 +1,8 @@
 # addStreamOutput(_:type:sampleHandlerQueue:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a destination that receives the stream output.
 
@@ -19,9 +20,13 @@ Adds a destination that receives the stream output.
 func addStreamOutput(_ output: any SCStreamOutput, type: SCStreamOutputType, sampleHandlerQueue: dispatch_queue_t?) throws
 ```
 
+```objc
+- (BOOL) addStreamOutput:(id<SCStreamOutput>) output type:(SCStreamOutputType) type sampleHandlerQueue:(dispatch_queue_t) sampleHandlerQueue error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this method to attach an object that conforms to [`SCStreamOutput`](scstreamoutput.md) to receive stream content. Optionally, provide a [`DispatchQueue`](https://developer.apple.com/documentation/dispatch/dispatchqueue) to send output to a queue that’s responsible for processing the output.
+Use this method to attach an object that conforms to [`SCStreamOutput`](../scstreamoutput.md) to receive stream content. Optionally, provide a [`DispatchQueue`](../../Dispatch/dispatchqueue.md) to send output to a queue that’s responsible for processing the output.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Use this method to attach an object that conforms to [`SCStreamOutput`](scstream
 
 ## See Also
 
-- [func removeStreamOutput(any SCStreamOutput, type: SCStreamOutputType) throws](scstream/removestreamoutput(_:type:).md)
+### Adding and removing stream output
+- [func removeStreamOutput(any SCStreamOutput, type: SCStreamOutputType) throws](./removestreamoutput%28_,type%29.md)
   Removes a destination from receiving stream output.
 
 

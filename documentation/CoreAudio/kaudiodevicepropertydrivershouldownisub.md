@@ -1,11 +1,12 @@
 # kAudioDevicePropertyDriverShouldOwniSub
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,16 @@
 var kAudioDevicePropertyDriverShouldOwniSub: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioDevicePropertyDriverShouldOwniSub
+```
+
 ## See Also
 
-- [var kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](kaudiodevicepropertyplaythruvolumedecibelstoscalartransferfunction.md)
-- [var kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](kaudiodevicepropertysubvolumedecibelstoscalartransferfunction.md)
-- [var kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](kaudiodevicepropertyvolumedecibelstoscalartransferfunction.md)
+### Constants
+- [var kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](./kaudiodevicepropertyplaythruvolumedecibelstoscalartransferfunction.md)
+- [var kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](./kaudiodevicepropertysubvolumedecibelstoscalartransferfunction.md)
+- [var kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction: AudioObjectPropertySelector](./kaudiodevicepropertyvolumedecibelstoscalartransferfunction.md)
 
 
 ---

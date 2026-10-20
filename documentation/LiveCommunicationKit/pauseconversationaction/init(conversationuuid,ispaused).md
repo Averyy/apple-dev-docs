@@ -1,7 +1,8 @@
 # init(conversationUUID:isPaused:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that starts or stops all audio and video streams for a conversation.
 

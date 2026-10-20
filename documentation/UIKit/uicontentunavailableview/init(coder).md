@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view from data in an unarchiver.
 
@@ -16,6 +17,10 @@ Creates a view from data in an unarchiver.
 
 ```swift
 init(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 

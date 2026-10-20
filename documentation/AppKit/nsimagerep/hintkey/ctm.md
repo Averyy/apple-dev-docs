@@ -1,7 +1,8 @@
 # ctm
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A context transform hint.
 
@@ -14,15 +15,20 @@ A context transform hint.
 static let ctm: NSImageRep.HintKey
 ```
 
+```c
+extern NSImageHintKey const NSImageHintCTM;
+```
+
 #### Discussion
 
-The value for this key is an [`NSAffineTransform`](https://developer.apple.com/documentation/foundation/nsaffinetransform).
+The value for this key is an [`NSAffineTransform`](../../../Foundation/nsaffinetransform.md).
 
 ## See Also
 
-- [static let interpolation: NSImageRep.HintKey](nsimagerep/hintkey/interpolation.md)
+### Hint Keys
+- [static let interpolation: NSImageRep.HintKey](./interpolation.md)
   An interpolation hint.
-- [static let userInterfaceLayoutDirection: NSImageRep.HintKey](nsimagerep/hintkey/userinterfacelayoutdirection.md)
+- [static let userInterfaceLayoutDirection: NSImageRep.HintKey](./userinterfacelayoutdirection.md)
   A layout direction hint.
 
 

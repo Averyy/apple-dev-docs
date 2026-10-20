@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound description flavor.
 
@@ -26,7 +27,8 @@ init(_ rawValue: CFString)
 
 ## See Also
 
-- [init(rawValue: CFString)](cmsounddescriptionflavor/init(rawvalue:).md)
+### Creating Sound Description Flavors
+- [init(rawValue: CFString)](./init%28rawvalue%29.md)
   Creates a sound description flavor.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase offer code create request.
 
@@ -10,18 +11,19 @@ The request body you use to create an In-App Purchase offer code create request.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
-- `customerEligibilities` ([string]) *(required)*
+- `customerEligibilities` ([string]) *(required)*: **Allowed Values**: `NON_SPENDER`, `ACTIVE_SPENDER`, `CHURNED_SPENDER`
 - `name` (string) *(required)*
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

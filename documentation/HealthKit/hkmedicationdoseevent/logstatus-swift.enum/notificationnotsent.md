@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.notificationNotSent
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system assigns this status when it fails to deliver a scheduled medication notification.
 
@@ -17,6 +18,10 @@ The system assigns this status when it fails to deliver a scheduled medication n
 
 ```swift
 case notificationNotSent
+```
+
+```c
+HKMedicationDoseEventLogStatusNotificationNotSent
 ```
 
 #### Discussion

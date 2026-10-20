@@ -1,11 +1,12 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> Element?](collectionofone/iterator/next.md)
+- [func next() -> Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 
 

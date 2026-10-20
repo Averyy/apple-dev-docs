@@ -1,7 +1,8 @@
 # cachedResponse(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cached URL response in the cache for the specified URL request.
 
@@ -20,9 +21,13 @@ Returns the cached URL response in the cache for the specified URL request.
 func cachedResponse(for request: URLRequest) -> CachedURLResponse?
 ```
 
+```objc
+- (NSCachedURLResponse *) cachedResponseForRequest:(NSURLRequest *) request;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ The cached URL response for `request`, or `nil` if no response has been cached.
 
 #### Discussion
 
-If you override this method, you should also override [`getCachedResponse(for:completionHandler:)`](urlcache/getcachedresponse(for:completionhandler:).md).
+If you override this method, you should also override [`getCachedResponse(for:completionHandler:)`](./getcachedresponse%28for,completionhandler%29.md).
 
 ## Parameters
 
@@ -38,11 +43,12 @@ If you override this method, you should also override [`getCachedResponse(for:co
 
 ## See Also
 
-- [func storeCachedResponse(CachedURLResponse, for: URLRequest)](urlcache/storecachedresponse(_:for:)-7p7bl.md)
+### Getting and storing cached objects
+- [func storeCachedResponse(CachedURLResponse, for: URLRequest)](./storecachedresponse%28_,for%29-7p7bl.md)
   Stores a cached URL response for a specified request.
-- [func getCachedResponse(for: URLSessionDataTask, completionHandler: (CachedURLResponse?) -> Void)](urlcache/getcachedresponse(for:completionhandler:).md)
+- [func getCachedResponse(for: URLSessionDataTask, completionHandler: (CachedURLResponse?) -> Void)](./getcachedresponse%28for,completionhandler%29.md)
   Gets the cached URL response for a data task, passing it to the provided completion handler.
-- [func storeCachedResponse(CachedURLResponse, for: URLSessionDataTask)](urlcache/storecachedresponse(_:for:)-8uq91.md)
+- [func storeCachedResponse(CachedURLResponse, for: URLSessionDataTask)](./storecachedresponse%28_,for%29-8uq91.md)
   Stores a cached URL response for a specified data task.
 
 

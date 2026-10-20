@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an acceleration structure with the specified values.
 

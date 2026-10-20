@@ -1,17 +1,22 @@
 # selectCell(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the specified cell and redraws the control as needed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func selectCell(_ cell: NSCell)
+```
+
+```objc
+- (void) selectCell:(NSCell *) cell;
 ```
 
 #### Discussion
@@ -24,21 +29,22 @@ If the cell is already selected (or does not belong to the receiver), this metho
 
 ## See Also
 
-- [func selectedCell() -> NSCell?](nscontrol/selectedcell.md)
+### Deprecated methods
+- [func selectedCell() -> NSCell?](./selectedcell%28%29.md)
   Returns the receiver’s selected cell.
-- [func selectedTag() -> Int](nscontrol/selectedtag.md)
+- [func selectedTag() -> Int](./selectedtag%28%29.md)
   Returns the tag of the receiver’s selected cell.
-- [func setNeedsDisplay()](nscontrol/setneedsdisplay.md)
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Marks the receiver as needing redisplay (assuming automatic display is enabled).
-- [func calcSize()](nscontrol/calcsize.md)
+- [func calcSize()](./calcsize%28%29.md)
   Recomputes any internal sizing information for the receiver, if necessary.
-- [func drawCell(NSCell)](nscontrol/drawcell(_:).md)
+- [func drawCell(NSCell)](./drawcell%28_%29.md)
   Draws the specified cell, as long as it belongs to the receiver.
-- [func drawCellInside(NSCell)](nscontrol/drawcellinside(_:).md)
+- [func drawCellInside(NSCell)](./drawcellinside%28_%29.md)
   Draws the inside of the receiver’s cell (the area within the bezel or border)
-- [func updateCell(NSCell)](nscontrol/updatecell(_:).md)
+- [func updateCell(NSCell)](./updatecell%28_%29.md)
   Marks the specified cell as in need of redrawing.
-- [func updateCellInside(NSCell)](nscontrol/updatecellinside(_:).md)
+- [func updateCellInside(NSCell)](./updatecellinside%28_%29.md)
   Marks the inside of the specified cell as in need of redrawing.
 
 

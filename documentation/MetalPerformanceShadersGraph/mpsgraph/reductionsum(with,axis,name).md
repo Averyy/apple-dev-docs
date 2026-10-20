@@ -1,7 +1,8 @@
 # reductionSum(with:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reduction sum operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a reduction sum operation and returns the result tensor.
 
 ```swift
 func reductionSum(with tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reductionSumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

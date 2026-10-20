@@ -1,17 +1,22 @@
 # webView(_:didChangeLocationWithinPageFor:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the scroll position within a frame changes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didChangeLocationWithinPageFor frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didChangeLocationWithinPageForFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

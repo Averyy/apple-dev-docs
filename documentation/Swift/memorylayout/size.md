@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The contiguous memory footprint of `T`, in bytes.
 
@@ -28,9 +29,10 @@ When allocating memory for multiple instances of `T` using an unsafe pointer, us
 
 ## See Also
 
-- [static var alignment: Int](memorylayout/alignment.md)
+### Accessing the Layout of a Type
+- [static var alignment: Int](./alignment.md)
   The default memory alignment of `T`, in bytes.
-- [static var stride: Int](memorylayout/stride.md)
+- [static var stride: Int](./stride.md)
   The number of bytes from the start of one instance of `T` to the start of the next when stored in contiguous memory or in an `Array<T>`.
 
 

@@ -1,7 +1,8 @@
 # sendKey(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func sendKey(with params: MTRKeypadInputClusterSendKeyParams, completion: @escaping @Sendable (MTRKeypadInputClusterSendKeyResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func sendKey(with params: MTRKeypadInputClusterSendKeyParams) async throws -> MTRKeypadInputClusterSendKeyResponseParams
+```
+
+```objc
+- (void) sendKeyWithParams:(MTRKeypadInputClusterSendKeyParams *) params completion:(void (^)(MTRKeypadInputClusterSendKeyResponseParams *data, NSError *error)) completion;
 ```
 
 

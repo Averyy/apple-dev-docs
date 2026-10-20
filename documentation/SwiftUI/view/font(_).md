@@ -1,7 +1,8 @@
 # font(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default font for text in this view.
 
@@ -23,9 +24,9 @@ func font(_ font: Font?) -> some View
 
 ## Mentions
 
-- [Configuring views](configuring-views.md)
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Configuring views](../configuring-views.md)
+- [Aligning views within a stack](../aligning-views-within-a-stack.md)
+- [Declaring a custom view](../declaring-a-custom-view.md)
 
 #### Return Value
 
@@ -37,7 +38,7 @@ Use `font(_:)` to apply a specific font to all of the text in a view.
 
 The example below shows the effects of applying fonts to individual views and to view hierarchies. Font information flows down the view hierarchy as part of the environment, and remains in effect unless overridden at the level of an individual view or view container.
 
-Here, the outermost [`VStack`](vstack.md) applies a 16-point system font as a default font to views contained in that [`VStack`](vstack.md). Inside that stack, the example applies a [`largeTitle`](font/largetitle.md) font to just the first text view; this explicitly overrides the default. The remaining stack and the views contained with it continue to use the 16-point system font set by their containing view:
+Here, the outermost [`VStack`](../vstack.md) applies a 16-point system font as a default font to views contained in that [`VStack`](../vstack.md). Inside that stack, the example applies a [`largeTitle`](../font/largetitle.md) font to just the first text view; this explicitly overrides the default. The remaining stack and the views contained with it continue to use the 16-point system font set by their containing view:
 
 ```swift
 VStack {
@@ -52,7 +53,7 @@ VStack {
 .font(.system(size: 16, weight: .light, design: .default))
 ```
 
-![A screenshot showing the application fonts to an individual text field](/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
+![A screenshot showing the application fonts to an individual text field](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
 
 ## Parameters
 
@@ -60,17 +61,18 @@ VStack {
 
 ## See Also
 
-- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
+### Setting a font
+- [Applying custom fonts to text](../applying-custom-fonts-to-text.md)
   Add and use a font in your app that scales with Dynamic Type.
-- [func fontDesign(Font.Design?) -> some View](view/fontdesign(_:).md)
+- [func fontDesign(Font.Design?) -> some View](./fontdesign%28_%29.md)
   Sets the font design of the text in this view.
-- [func fontWeight(Font.Weight?) -> some View](view/fontweight(_:).md)
+- [func fontWeight(Font.Weight?) -> some View](./fontweight%28_%29.md)
   Sets the font weight of the text in this view.
-- [func fontWidth(Font.Width?) -> some View](view/fontwidth(_:).md)
+- [func fontWidth(Font.Width?) -> some View](./fontwidth%28_%29.md)
   Sets the font width of the text in this view.
-- [var font: Font?](environmentvalues/font.md)
+- [var font: Font?](../environmentvalues/font.md)
   The default font of this environment.
-- [struct Font](font.md)
+- [struct Font](../font.md)
   An environment-dependent font.
 
 

@@ -1,7 +1,8 @@
 # FaceObservation.CaptureQuality
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An indicator of the quality of a face capture.
 
@@ -23,26 +24,27 @@ struct CaptureQuality
 ## Topics
 
 ### Getting the score
-- [let score: Float](faceobservation/capturequality-swift.struct/score.md)
+- [let score: Float](./capturequality-swift.struct/score.md)
   A value that indicates the quality of the face capture.
 ### Accessing the originating descriptor
-- [let originatingRequestDescriptor: RequestDescriptor?](faceobservation/capturequality-swift.struct/originatingrequestdescriptor.md)
+- [let originatingRequestDescriptor: RequestDescriptor?](./capturequality-swift.struct/originatingrequestdescriptor.md)
   The descriptor of the request that produced the capture quality.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
+### Getting the capture quality
+- [var captureQuality: FaceObservation.CaptureQuality?](./capturequality-swift.property.md)
   The quality of the face capture.
 
 

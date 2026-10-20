@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of communication handle.
 
@@ -20,7 +21,8 @@ var kind: CommunicationHandle.Kind { get set }
 
 ## See Also
 
-- [var value: String](communicationhandle/value.md)
+### Accessing properties
+- [var value: String](./value.md)
   The value of the communication handle.
 
 

@@ -1,7 +1,8 @@
 # init(version:flags:passphrase:alertTitle:alertPrompt:accessRef:keyUsage:keyAttributes:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new import/export parameter structure.
 

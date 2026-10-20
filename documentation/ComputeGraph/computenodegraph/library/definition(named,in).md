@@ -1,7 +1,8 @@
 # definition(named:in:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first node definition with the given name, or `nil` if none is found.
 
@@ -12,7 +13,7 @@ Returns the first node definition with the given name, or `nil` if none is found
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

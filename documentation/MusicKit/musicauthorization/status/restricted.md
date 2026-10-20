@@ -1,7 +1,8 @@
 # MusicAuthorization.Status.restricted
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apps on this device can’t access MusicKit in a way that the user can’t change.
 

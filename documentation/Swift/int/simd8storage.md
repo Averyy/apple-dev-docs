@@ -1,7 +1,8 @@
 # Int.SIMD8Storage
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Storage for a vector of eight integers.
 
@@ -24,37 +25,38 @@ struct SIMD8Storage
 ## Topics
 
 ### Initializers
-- [init()](int/simd8storage/init.md)
+- [init()](./simd8storage/init%28%29.md)
   Creates a vector with zero in all lanes.
 ### Instance Properties
-- [var scalarCount: Int](int/simd8storage/scalarcount.md)
+- [var scalarCount: Int](./simd8storage/scalarcount.md)
   The number of scalars, or elements, in the vector.
 ### Subscripts
-- [subscript(Int) -> Int](int/simd8storage/subscript(_:).md)
+- [subscript(Int) -> Int](./simd8storage/subscript%28_%29.md)
   Accesses the element at the specified index.
 ### Type Aliases
-- [Int.SIMD8Storage.Scalar](int/simd8storage/scalar.md)
+- [Int.SIMD8Storage.Scalar](./simd8storage/scalar.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [SIMDStorage](simdstorage.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [SIMDStorage](../simdstorage.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [typealias SIMDMaskScalar](int/simdmaskscalar.md)
-- [struct SIMD2Storage](int/simd2storage.md)
+### SIMD-Supporting Types
+- [typealias SIMDMaskScalar](./simdmaskscalar.md)
+- [struct SIMD2Storage](./simd2storage.md)
   Storage for a vector of two integers.
-- [struct SIMD4Storage](int/simd4storage.md)
+- [struct SIMD4Storage](./simd4storage.md)
   Storage for a vector of four integers.
-- [struct SIMD16Storage](int/simd16storage.md)
+- [struct SIMD16Storage](./simd16storage.md)
   Storage for a vector of 16 integers.
-- [struct SIMD32Storage](int/simd32storage.md)
+- [struct SIMD32Storage](./simd32storage.md)
   Storage for a vector of 32 integers.
-- [struct SIMD64Storage](int/simd64storage.md)
+- [struct SIMD64Storage](./simd64storage.md)
   Storage for a vector of 64 integers.
 
 

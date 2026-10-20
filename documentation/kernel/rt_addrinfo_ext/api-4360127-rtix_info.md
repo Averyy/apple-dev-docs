@@ -1,14 +1,15 @@
 # rtix_info
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 struct rt_addrinfo rtix_info;
 ```
 

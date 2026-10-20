@@ -1,7 +1,8 @@
 # BetaTesterUsagesV1MetricResponse.Data.DataPoints.Values
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The usage count values within a single data point of the beta tester usage metric.
 
@@ -10,7 +11,7 @@ The usage count values within a single data point of the beta tester usage metri
 
 ## Declaration
 
-```swift
+```
 object BetaTesterUsagesV1MetricResponse.Data.DataPoints.Values
 ```
 

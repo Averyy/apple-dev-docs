@@ -1,22 +1,27 @@
 # edgeTessellationFactor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge tessellation factors, with each index value providing the tessellation factor for a particular edge.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var edgeTessellationFactor: (UInt16, UInt16, UInt16)
+```
+
+```c
+uint16_t edgeTessellationFactor[3];
 ```
 
 #### Discussion

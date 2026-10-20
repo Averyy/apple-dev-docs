@@ -1,18 +1,19 @@
 # forbidRemoteReferenceToLocal
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A remote asset shouldn’t follow references to local media.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A remote asset shouldn’t follow references to local media.
 static var forbidRemoteReferenceToLocal: AVAssetReferenceRestrictions { get }
 ```
 
+```c
+AVAssetReferenceRestrictionForbidRemoteReferenceToLocal
+```
+
 ## See Also
 
-- [static var forbidAll: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidall.md)
+### Reference restrictions
+- [static var forbidAll: AVAssetReferenceRestrictions](./forbidall.md)
   The asset can only reference media stored within its container file.
-- [static var forbidLocalReferenceToRemote: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidlocalreferencetoremote.md)
+- [static var forbidLocalReferenceToRemote: AVAssetReferenceRestrictions](./forbidlocalreferencetoremote.md)
   A local asset shouldn’t follow references to remote media.
-- [static var forbidCrossSiteReference: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidcrosssitereference.md)
+- [static var forbidCrossSiteReference: AVAssetReferenceRestrictions](./forbidcrosssitereference.md)
   A remote asset shouldn’t follow references to remote media data stored at a different host.
-- [static var forbidLocalReferenceToLocal: AVAssetReferenceRestrictions](avassetreferencerestrictions/forbidlocalreferencetolocal.md)
+- [static var forbidLocalReferenceToLocal: AVAssetReferenceRestrictions](./forbidlocalreferencetolocal.md)
   A local asset shouldn’t follow references to local media data stored outside its container file.
-- [static var defaultPolicy: AVAssetReferenceRestrictions](avassetreferencerestrictions/defaultpolicy.md)
+- [static var defaultPolicy: AVAssetReferenceRestrictions](./defaultpolicy.md)
   The asset should use the default reference restrictions policy.
 
 

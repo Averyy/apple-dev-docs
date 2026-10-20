@@ -1,14 +1,15 @@
 # kHIDUsage_Button_232
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Button_232 = 0xe8
 ```
 

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A session that can share cookies and other browsing data with a person’s normal browser session.
 
@@ -22,7 +23,8 @@ static var shared: WebAuthenticationSession.BrowserSession { get }
 
 ## See Also
 
-- [static var ephemeral: WebAuthenticationSession.BrowserSession](webauthenticationsession/browsersession/ephemeral.md)
+### Behaviors
+- [static var ephemeral: WebAuthenticationSession.BrowserSession](./ephemeral.md)
   A session that doesn’t share cookies or other browsing data with a person’s normal browser session.
 
 

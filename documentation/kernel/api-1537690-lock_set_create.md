@@ -1,14 +1,15 @@
 # lock_set_create
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t lock_set_create(task_t task, lock_set_t *new_lock_set, int n_ulocks, int policy);
 ```
 

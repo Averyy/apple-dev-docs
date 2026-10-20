@@ -1,7 +1,8 @@
 # GCQuaternion
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A quaternion that represents a controller’s measurement of attitude.
 
@@ -19,38 +20,43 @@ A quaternion that represents a controller’s measurement of attitude.
 struct GCQuaternion
 ```
 
+```c
+typedef struct GCQuaternion { ... } GCQuaternion;
+```
+
 ## Topics
 
 ### Getting Quaternion Values
-- [var x: Double](gcquaternion/x.md)
+- [var x: Double](./gcquaternion/x.md)
   The value for the x-axis of the quaternion.
-- [var y: Double](gcquaternion/y.md)
+- [var y: Double](./gcquaternion/y.md)
   The value for the y-axis of the quaternion.
-- [var z: Double](gcquaternion/z.md)
+- [var z: Double](./gcquaternion/z.md)
   The value for the z-axis of the quaternion.
-- [var w: Double](gcquaternion/w.md)
+- [var w: Double](./gcquaternion/w.md)
   The value for the w-axis of the quaternion.
 ### Initializers
-- [init()](gcquaternion/init.md)
+- [init()](./gcquaternion/init%28%29.md)
   Creates a quaternion structure.
-- [init(x: Double, y: Double, z: Double, w: Double)](gcquaternion/init(x:y:z:w:).md)
+- [init(x: Double, y: Double, z: Double, w: Double)](./gcquaternion/init%28x,y,z,w%29.md)
   Creates a quaternion structure with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var attitude: GCQuaternion](gcmotion/attitude.md)
+### Accessing Attitude and Rotation Data
+- [var attitude: GCQuaternion](./gcmotion/attitude.md)
   The attitude of the controller.
-- [var rotationRate: GCRotationRate](gcmotion/rotationrate.md)
+- [var rotationRate: GCRotationRate](./gcmotion/rotationrate.md)
   The rotation rate of the controller.
-- [struct GCRotationRate](gcrotationrate.md)
+- [struct GCRotationRate](./gcrotationrate.md)
   A structure that represents rotation rates around the x, y, and z axes.
-- [struct GCEulerAngles](gceulerangles.md)
+- [struct GCEulerAngles](./gceulerangles.md)
   A structure that specifies the controller’s attitude as a series of rotations around the x, y, and z axes.
 
 

@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of writing samples to the output file.
 
@@ -19,15 +20,20 @@ The status of writing samples to the output file.
 var status: AVAssetWriter.Status { get }
 ```
 
+```objc
+@property (readonly) AVAssetWriterStatus status;
+```
+
 #### Discussion
 
 This property is thread safe.
 
 ## See Also
 
-- [AVAssetWriter.Status](avassetwriter/status-swift.enum.md)
+### Inspecting writing status
+- [AVAssetWriter.Status](./status-swift.enum.md)
   Values that indicate the state of an asset writer.
-- [var error: (any Error)?](avassetwriter/error.md)
+- [var error: (any Error)?](./error.md)
   An error object that describes an asset-writing failure.
 
 

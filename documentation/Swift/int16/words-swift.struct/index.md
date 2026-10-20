@@ -1,7 +1,8 @@
 # Int16.Words.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a position in the collection.
 

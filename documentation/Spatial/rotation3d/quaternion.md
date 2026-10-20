@@ -1,7 +1,8 @@
 # quaternion
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A quaternion that represents the rotation.
 
@@ -20,17 +21,22 @@ A quaternion that represents the rotation.
 var quaternion: simd_quatd { get set }
 ```
 
+```c
+simd_quatd quaternion;
+```
+
 ## See Also
 
-- [var angle: Angle2D](rotation3d/angle.md)
+### Inspecting a 3D rotation’s properties
+- [var angle: Angle2D](./angle.md)
   The angle of the rotation.
-- [var axis: RotationAxis3D](rotation3d/axis.md)
+- [var axis: RotationAxis3D](./axis.md)
   The axis of the rotation.
-- [func eulerAngles(order: __SPEulerAngleOrder) -> EulerAngles](rotation3d/eulerangles(order:).md)
+- [func eulerAngles(order: __SPEulerAngleOrder) -> EulerAngles](./eulerangles%28order%29.md)
   Returns a rotation’s Euler angles.
-- [struct EulerAngles](eulerangles.md)
+- [struct EulerAngles](../eulerangles.md)
   A vector that represents three Euler angles and specifies the angle ordering.
-- [var vector: simd_double4](rotation3d/vector.md)
+- [var vector: simd_double4](./vector.md)
   The underlying vector of the rotation.
 
 

@@ -1,6 +1,7 @@
 # Adding Parallel Real-Time Threads to Audio Workgroups
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 Optimize the performance of real-time audio threads that run in sync with the I/O thread by adding them to the audio device workgroup.
 
@@ -10,7 +11,7 @@ If your app creates one or more auxiliary real-time threads that run in sync wit
 
 ##### Add Your Threads to the Audio Device Workgroup
 
-Begin by retrieving the audio device’s workgroup, so you can join your threads to it. Retrieve it from the I/O Audio Unit (AUHAL or AURemoteIO) using either the [`kAudioOutputUnitProperty_OSWorkgroup`](kaudiooutputunitproperty_osworkgroup.md) property for AUv2, or the [`AUAudioUnit`](auaudiounit.md) [`osWorkgroup`](auaudiounit/osworkgroup.md) property for AUv3. In macOS, you can also get it directly from the audio device by using the HAL API. Then, in your real-time thread, call [`os_workgroup_join`](https://developer.apple.com/documentation/os/os_workgroup_join) to join it to the workgroup, and call [`os_workgroup_leave`](https://developer.apple.com/documentation/os/os_workgroup_leave) when you’ve finished your work, as shown in the example below.
+Begin by retrieving the audio device’s workgroup, so you can join your threads to it. Retrieve it from the I/O Audio Unit (AUHAL or AURemoteIO) using either the [`kAudioOutputUnitProperty_OSWorkgroup`](./kaudiooutputunitproperty_osworkgroup.md) property for AUv2, or the [`AUAudioUnit`](./auaudiounit.md) [`osWorkgroup`](./auaudiounit/osworkgroup.md) property for AUv3. In macOS, you can also get it directly from the audio device by using the HAL API. Then, in your real-time thread, call [`os_workgroup_join`](../os/os_workgroup_join.md) to join it to the workgroup, and call [`os_workgroup_leave`](../os/os_workgroup_leave.md) when you’ve finished your work, as shown in the example below.
 
 ```objc
 #import <AudioToolbox/AudioToolbox.h>
@@ -57,11 +58,12 @@ void realtimeThreadFunction(os_workgroup_t workgroup) {
 
 ## See Also
 
-- [Understanding Audio Workgroups](understanding-audio-workgroups.md)
+### Essentials
+- [Understanding Audio Workgroups](./understanding-audio-workgroups.md)
   Learn how to optimize real-time rendering performance with the Audio Workgroups API.
-- [Adding Asynchronous Real-Time Threads to Audio Workgroups](adding-asynchronous-real-time-threads-to-audio-workgroups.md)
+- [Adding Asynchronous Real-Time Threads to Audio Workgroups](./adding-asynchronous-real-time-threads-to-audio-workgroups.md)
   Optimize system performance by adding real-time audio threads that run asynchronously to the I/O thread to custom audio workgroups.
-- [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
+- [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](./adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
   If your Audio Unit plug-in creates auxiliary real-time rendering threads, add them to the host app’s audio workgroup so the system can schedule them appropriately.
 
 

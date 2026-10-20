@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var count: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger count;
+```
+
 ## See Also
 
-- [var inputMeans: CIImage?](cikmeans/inputmeans.md)
-- [var passes: Float](cikmeans/passes.md)
-- [var perceptual: Bool](cikmeans/perceptual.md)
+### Instance Properties
+- [var inputMeans: CIImage?](./inputmeans.md)
+- [var passes: Float](./passes.md)
+- [var perceptual: Bool](./perceptual.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kIOUserVideoObjectIDDriver
 
 **Framework**: VideoDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The video object identifier of the driver.
 
@@ -10,7 +11,7 @@ The video object identifier of the driver.
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserVideoObjectID kIOUserVideoObjectIDDriver;
 ```
 

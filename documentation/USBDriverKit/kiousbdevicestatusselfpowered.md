@@ -1,26 +1,28 @@
 # kIOUSBDeviceStatusSelfPowered
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceStatusSelfPowered
 ```
 
 ## See Also
 
-- [kIOUSBDeviceStatusRemoteWakeEnable](kiousbdevicestatusremotewakeenable.md)
-- [kIOUSBDeviceStatusU1Enable](kiousbdevicestatusu1enable.md)
-- [kIOUSBDeviceStatusU2Enable](kiousbdevicestatusu2enable.md)
-- [kIOUSBDeviceStatusLTMEnable](kiousbdevicestatusltmenable.md)
-- [kIOUSBInterfaceStatusRemoteWakeCapable](kiousbinterfacestatusremotewakecapable.md)
-- [kIOUSBInterfaceStatusRemoteWakeEnable](kiousbinterfacestatusremotewakeenable.md)
-- [IOUSBEndpointStatusHalt](iousbendpointstatushalt.md)
+### Getting the Options
+- [kIOUSBDeviceStatusRemoteWakeEnable](./kiousbdevicestatusremotewakeenable.md)
+- [kIOUSBDeviceStatusU1Enable](./kiousbdevicestatusu1enable.md)
+- [kIOUSBDeviceStatusU2Enable](./kiousbdevicestatusu2enable.md)
+- [kIOUSBDeviceStatusLTMEnable](./kiousbdevicestatusltmenable.md)
+- [kIOUSBInterfaceStatusRemoteWakeCapable](./kiousbinterfacestatusremotewakecapable.md)
+- [kIOUSBInterfaceStatusRemoteWakeEnable](./kiousbinterfacestatusremotewakeenable.md)
+- [IOUSBEndpointStatusHalt](./iousbendpointstatushalt.md)
 
 
 ---

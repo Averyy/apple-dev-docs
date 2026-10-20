@@ -1,7 +1,8 @@
 # repeatedTimePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 What to do when there are multiple recurrences occurring at the same time of the day but in different time zones due to a daylight saving transition.
 

@@ -1,7 +1,8 @@
 # WKAudioRecorderPreset.highQualityAudio
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A high-quality audio recording. This preset records audio with a 44.1 kHz sampling rate using either the LPCM 705.6 kbps or AAC 96 kbps format.
 
@@ -14,11 +15,16 @@ A high-quality audio recording. This preset records audio with a 44.1 kHz sampli
 case highQualityAudio
 ```
 
+```c
+WKAudioRecorderPresetHighQualityAudio
+```
+
 ## See Also
 
-- [WKAudioRecorderPreset.narrowBandSpeech](wkaudiorecorderpreset/narrowbandspeech.md)
+### Constants
+- [WKAudioRecorderPreset.narrowBandSpeech](./narrowbandspeech.md)
   Audio quality suitable for basic speech recording. This preset records audio with an 8 kHz sampling rate using either the LPCM 128 kbps or AAC 24 kbps format.
-- [WKAudioRecorderPreset.wideBandSpeech](wkaudiorecorderpreset/widebandspeech.md)
+- [WKAudioRecorderPreset.wideBandSpeech](./widebandspeech.md)
   Audio quality suitable for higher fidelity speech recording. This preset records audio with a 16 kHz sampling rate using either the LPCM 256 kbps or AAC 32 kbps format.
 
 

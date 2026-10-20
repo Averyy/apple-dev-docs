@@ -1,7 +1,8 @@
 # EnumeratedSequence.Index
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a position in the collection.
 
@@ -21,6 +22,8 @@ A type that represents a position in the collection.
 struct Index
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Overview
 
 Valid indices consist of the position of every element and a “past the end” position that’s not valid for use as a subscript argument.
@@ -28,17 +31,17 @@ Valid indices consist of the position of every element and a “past the end” 
 ## Topics
 
 ### Instance Properties
-- [let base: Base.Index](enumeratedsequence/index/base.md)
+- [let base: Base.Index](./index/base.md)
   The position in the underlying collection.
 ### Default Implementations
-- [Comparable Implementations](enumeratedsequence/index/comparable-implementations.md)
-- [Equatable Implementations](enumeratedsequence/index/equatable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
 
 
 ---

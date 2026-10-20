@@ -1,7 +1,8 @@
 # nw_ws_response_status_accept
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The client request is being accepted.
 
@@ -20,11 +21,16 @@ The client request is being accepted.
 var nw_ws_response_status_accept: nw_ws_response_status_t { get }
 ```
 
+```c
+nw_ws_response_status_accept
+```
+
 ## See Also
 
-- [var nw_ws_response_status_invalid: nw_ws_response_status_t](nw_ws_response_status_invalid.md)
+### Handshake Status Values
+- [var nw_ws_response_status_invalid: nw_ws_response_status_t](./nw_ws_response_status_invalid.md)
   An invalid response status.
-- [var nw_ws_response_status_reject: nw_ws_response_status_t](nw_ws_response_status_reject.md)
+- [var nw_ws_response_status_reject: nw_ws_response_status_t](./nw_ws_response_status_reject.md)
   The client request is being rejected.
 
 

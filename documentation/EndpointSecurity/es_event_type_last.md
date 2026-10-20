@@ -1,18 +1,23 @@
 # ES_EVENT_TYPE_LAST
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates the last member of the enumeration.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_EVENT_TYPE_LAST: es_event_type_t { get }
+```
+
+```c
+ES_EVENT_TYPE_LAST
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.PostalCode
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Postal code geographic targeting.
 
@@ -10,13 +11,13 @@ Postal code geographic targeting.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.PostalCode
 ```
 
 #### Discussion
 
-Postal code IDs are returned by [`Search Geo Locations`](searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](gets-a-list-of-geo-locations.md). Applies to Apple Maps campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Postal code IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Applies to Apple Maps campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "postalCode": {

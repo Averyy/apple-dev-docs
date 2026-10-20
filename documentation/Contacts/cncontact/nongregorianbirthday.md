@@ -1,7 +1,8 @@
 # nonGregorianBirthday
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date component for the non-Gregorian birthday of the contact.
 
@@ -19,15 +20,28 @@ A date component for the non-Gregorian birthday of the contact.
 var nonGregorianBirthday: DateComponents? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDateComponents * nonGregorianBirthday;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSDateComponents * nonGregorianBirthday;
+```
+
 #### Discussion
 
-Non-Gregorian birthdays can be displayed using this property, which has values that are the relevant properties of an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object. Day and month components are required; year and leap month are optional. The calendar component is also required and must be an [`NSCalendar`](https://developer.apple.com/documentation/foundation/nscalendar) object with an identifier other than [`gregorian`](https://developer.apple.com/documentation/foundation/nscalendar/identifier/gregorian). For example, some supported calendars are Chinese, Hebrew, or Islamic. All other date components are invalid and including them results in an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](cnerror/code/validationconfigurationerror.md).
+Non-Gregorian birthdays can be displayed using this property, which has values that are the relevant properties of an [`NSDateComponents`](../../Foundation/nsdatecomponents.md) object. Day and month components are required; year and leap month are optional. The calendar component is also required and must be an [`NSCalendar`](../../Foundation/nscalendar.md) object with an identifier other than [`gregorian`](../../Foundation/nscalendar/identifier/gregorian.md). For example, some supported calendars are Chinese, Hebrew, or Islamic. All other date components are invalid and including them results in an [`NSError`](../../Foundation/nserror.md) object that includes the key paths of the invalid components and the error code [`CNError.Code.validationConfigurationError`](../cnerror/code/validationconfigurationerror.md).
 
 ## See Also
 
-- [var birthday: DateComponents?](cncontact/birthday.md)
+### Getting Birthday Information
+- [var birthday: DateComponents?](./birthday.md)
   A date component for the Gregorian birthday of the contact.
-- [var dates: [CNLabeledValue<NSDateComponents>]](cncontact/dates.md)
+- [var dates: [CNLabeledValue<NSDateComponents>]](./dates.md)
   An array containing labeled Gregorian dates.
 
 

@@ -1,7 +1,8 @@
 # UIButton.Role.cancel
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button role that responds to a cancel action.
 
@@ -18,13 +19,18 @@ A button role that responds to a cancel action.
 case cancel
 ```
 
+```c
+UIButtonRoleCancel
+```
+
 ## See Also
 
-- [UIButton.Role.normal](uibutton/role-swift.enum/normal.md)
+### Button Roles
+- [UIButton.Role.normal](./normal.md)
   A button role for a default button style.
-- [UIButton.Role.primary](uibutton/role-swift.enum/primary.md)
+- [UIButton.Role.primary](./primary.md)
   A button role that responds to a primary key press.
-- [UIButton.Role.destructive](uibutton/role-swift.enum/destructive.md)
+- [UIButton.Role.destructive](./destructive.md)
   A button role with a red background color.
 
 

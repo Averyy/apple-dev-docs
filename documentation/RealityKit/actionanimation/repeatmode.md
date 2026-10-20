@@ -1,7 +1,8 @@
 # repeatMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that determines how the animation repeats.
 

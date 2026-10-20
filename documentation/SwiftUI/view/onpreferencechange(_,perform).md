@@ -1,7 +1,8 @@
 # onPreferenceChange(_:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the specified preference key’s value changes.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The content of the dynamic profile modifier.
@@ -23,13 +24,14 @@ The content of the dynamic profile modifier.
 
 ## See Also
 
-- [LanguageModelSession.DynamicProfileModifier.Content](languagemodelsession/dynamicprofilemodifier/content.md)
+### Implementing a profile modifier
+- [LanguageModelSession.DynamicProfileModifier.Content](./content.md)
   The type of dynamic profile content that this modifier wraps.
-- [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofilemodifier/body.md)
+- [associatedtype Body : LanguageModelSession.DynamicProfile](./body.md)
   The type of dynamic profile modifier that represents this modifier.
-- [LanguageModelSession.DynamicProfileModifier.SessionProperty](languagemodelsession/dynamicprofilemodifier/sessionproperty.md)
+- [LanguageModelSession.DynamicProfileModifier.SessionProperty](./sessionproperty.md)
   A property wrapper that provides access to a session property from within a dynamic profile modifier.
-- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](languagemodelsession/dynamicprofilemodifier/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfileModifier.DynamicProfile](./dynamicprofile.md)
   The dynamic profile type that a modifier’s body returns.
 
 

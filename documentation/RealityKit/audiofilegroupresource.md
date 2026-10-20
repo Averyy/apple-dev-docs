@@ -1,7 +1,8 @@
 # AudioFileGroupResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An audio file group.
 
@@ -23,42 +24,43 @@ An audio file group.
 ## Topics
 
 ### Creating a resource
-- [init([AudioFileResource]) throws](audiofilegroupresource/init(_:).md)
+- [init([AudioFileResource]) throws](./audiofilegroupresource/init%28_%29.md)
   Creates a group resource from an array of audio file resources (backward compatibility).
-- [convenience init(named: String, from: String, in: Bundle) async throws](audiofilegroupresource/init(named:from:in:).md)
+- [convenience init(named: String, from: String, in: Bundle) async throws](./audiofilegroupresource/init%28named,from,in%29.md)
   Initializes an audio resource from a Reality Composer Pro project.
-- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](audiofilegroupresource/load(named:from:in:).md)
+- [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](./audiofilegroupresource/load%28named,from,in%29.md)
   Loads an audio resource from a Reality Composer Pro project.
 ### Working with the resource contents
-- [let resources: [AudioFileResource]](audiofilegroupresource/resources.md)
+- [let resources: [AudioFileResource]](./audiofilegroupresource/resources.md)
   The `AudioFileResource` objects which comprise this `AudioFileGroupResource`.
 ### Operators
-- [static func == (AudioFileGroupResource, AudioFileGroupResource) -> Bool](audiofilegroupresource/==(_:_:).md)
+- [static func == (AudioFileGroupResource, AudioFileGroupResource) -> Bool](./audiofilegroupresource/eqeq%28_,_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioResource](audioresource.md)
+- [AudioResource](./audioresource.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AudioFileResource](audiofileresource.md)
+### Audio resources
+- [class AudioFileResource](./audiofileresource.md)
   An audio resource that you load from a file or from a URL.
-- [class AudioBufferResource](audiobufferresource.md)
-  An audio resource that you load from an [`AVAudioBuffer`](https://developer.apple.com/documentation/avfaudio/avaudiobuffer).
-- [struct AudioLibraryComponent](audiolibrarycomponent.md)
+- [class AudioBufferResource](./audiobufferresource.md)
+  An audio resource that you load from an [`AVAudioBuffer`](../AVFAudio/avaudiobuffer.md).
+- [struct AudioLibraryComponent](./audiolibrarycomponent.md)
   A container for audio resources that you can look up by user-defined names.
-- [class AudioResource](audioresource.md)
+- [class AudioResource](./audioresource.md)
   A playable audio resource
-- [AudioResource.Calibration](audioresource/calibration.md)
+- [AudioResource.Calibration](./audioresource/calibration.md)
   A container for different calibration modes that can be applied for playback.
-- [AudioResource.Normalization](audioresource/normalization.md)
+- [AudioResource.Normalization](./audioresource/normalization.md)
   Normalization adjusts the level of an audio file or buffer to be at a defined target.
 
 

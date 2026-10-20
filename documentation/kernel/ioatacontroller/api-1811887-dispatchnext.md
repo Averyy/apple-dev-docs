@@ -7,20 +7,21 @@ Causes the command at the front of the queue to dequeue, made the current comman
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn dispatchNext(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 noErr indicates successful dispatch.
 
 ## See Also
 
-- [busCanDispatch](ioatacontroller/1811873-buscandispatch.md)
+### Miscellaneous
+- [busCanDispatch](./api-1811873-buscandispatch.md)
   answers whether the bus is in state such that the next command can be dispatched.
-- [handleCommand](ioatacontroller/1811902-handlecommand.md)
+- [handleCommand](./api-1811902-handlecommand.md)
   Called by executeCommand() to handle the client command from the workloop context.
 
 

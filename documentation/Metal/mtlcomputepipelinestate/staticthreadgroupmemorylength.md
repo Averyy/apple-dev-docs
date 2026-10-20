@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The length, in bytes, of statically allocated threadgroup memory.
@@ -20,11 +21,16 @@ The length, in bytes, of statically allocated threadgroup memory.
 var staticThreadgroupMemoryLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger staticThreadgroupMemoryLength;
+```
+
 ## See Also
 
-- [var maxTotalThreadsPerThreadgroup: Int](mtlcomputepipelinestate/maxtotalthreadsperthreadgroup.md)
+### Checking threadgroup attributes
+- [var maxTotalThreadsPerThreadgroup: Int](./maxtotalthreadsperthreadgroup.md)
   The maximum number of threads in a threadgroup that you can dispatch to the pipeline.
-- [var threadExecutionWidth: Int](mtlcomputepipelinestate/threadexecutionwidth.md)
+- [var threadExecutionWidth: Int](./threadexecutionwidth.md)
   The number of threads that the GPU executes simultaneously.
 
 

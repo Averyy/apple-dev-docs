@@ -1,7 +1,8 @@
 # AVCaptureSmartFramingMonitor
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object associated with a capture device that monitors the scene and suggests an optimal framing.
 
@@ -16,51 +17,56 @@ An object associated with a capture device that monitors the scene and suggests 
 class AVCaptureSmartFramingMonitor
 ```
 
+```objc
+@interface AVCaptureSmartFramingMonitor : NSObject
+```
+
 ## Mentions
 
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
 
 #### Overview
 
-A smart framing monitor observes its associated device for objects of interest entering and exiting the camera’s field of view and recommends an optimal framing for good photographic composition. This framing recommendation consists of an aspect ratio and zoom factor. You may respond to the device’s framing recommendation by calling [`setDynamicAspectRatio(_:completionHandler:)`](avcapturedevice/setdynamicaspectratio(_:completionhandler:).md) and setting [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) on the associated device in whatever order best matches your animation between old and new framings.
+A smart framing monitor observes its associated device for objects of interest entering and exiting the camera’s field of view and recommends an optimal framing for good photographic composition. This framing recommendation consists of an aspect ratio and zoom factor. You may respond to the device’s framing recommendation by calling [`setDynamicAspectRatio(_:completionHandler:)`](./avcapturedevice/setdynamicaspectratio%28_,completionhandler%29.md) and setting [`videoZoomFactor`](./avcapturedevice/videozoomfactor.md) on the associated device in whatever order best matches your animation between old and new framings.
 
 ## Topics
 
 ### Configuring framings
-- [var supportedFramings: [AVCaptureFraming]](avcapturesmartframingmonitor/supportedframings.md)
+- [var supportedFramings: [AVCaptureFraming]](./avcapturesmartframingmonitor/supportedframings.md)
   An array of framings supported by the monitor in its current configuration.
-- [var enabledFramings: [AVCaptureFraming]](avcapturesmartframingmonitor/enabledframings.md)
+- [var enabledFramings: [AVCaptureFraming]](./avcapturesmartframingmonitor/enabledframings.md)
   An array of framings that the monitor is allowed to suggest.
-- [var recommendedFraming: AVCaptureFraming?](avcapturesmartframingmonitor/recommendedframing.md)
+- [var recommendedFraming: AVCaptureFraming?](./avcapturesmartframingmonitor/recommendedframing.md)
   The latest recommended framing from the monitor.
 ### Managing the life cycle
-- [var isMonitoring: Bool](avcapturesmartframingmonitor/ismonitoring.md)
+- [var isMonitoring: Bool](./avcapturesmartframingmonitor/ismonitoring.md)
   Yes when the receiver is actively monitoring.
-- [func startMonitoring() throws](avcapturesmartframingmonitor/startmonitoring.md)
+- [func startMonitoring() throws](./avcapturesmartframingmonitor/startmonitoring%28%29.md)
   Begins monitoring the device’s active scene and making framing recommendations.
-- [func stopMonitoring()](avcapturesmartframingmonitor/stopmonitoring.md)
+- [func stopMonitoring()](./avcapturesmartframingmonitor/stopmonitoring%28%29.md)
   Stops monitoring the device’s active scene and making framing recommendations.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Observable](../observation/observable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Observable](../Observation/observable.md)
 
 ## See Also
 
-- [var smartFramingMonitor: AVCaptureSmartFramingMonitor?](avcapturedevice/smartframingmonitor.md)
+### Configuring smart framing
+- [var smartFramingMonitor: AVCaptureSmartFramingMonitor?](./avcapturedevice/smartframingmonitor.md)
   A monitor owned by the device that recommends an optimal framing based on the content in the scene.
-- [class AVCaptureFraming](avcaptureframing.md)
+- [class AVCaptureFraming](./avcaptureframing.md)
   A framing, consisting of an aspect ratio and a zoom factor.
 
 

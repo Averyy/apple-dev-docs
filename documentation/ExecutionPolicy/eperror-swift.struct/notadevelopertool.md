@@ -1,7 +1,8 @@
 # notADeveloperTool
 
 **Framework**: Execution Policy  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -15,7 +16,8 @@ static var notADeveloperTool: EPError.Code { get }
 
 ## See Also
 
-- [static var generic: EPError.Code](eperror-swift.struct/generic.md)
+### Type Properties
+- [static var generic: EPError.Code](./generic.md)
 
 
 ---

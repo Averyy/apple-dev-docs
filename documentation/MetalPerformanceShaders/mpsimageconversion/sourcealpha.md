@@ -1,7 +1,8 @@
 # sourceAlpha
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Premultiplication description for the source texture.
 
@@ -19,13 +20,18 @@ Premultiplication description for the source texture.
 var sourceAlpha: MPSAlphaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPSAlphaType sourceAlpha;
+```
+
 #### Discussion
 
-Most color space conversion operations can not work directly on premultiplied data. Use this property to tag premultiplied data so that the source texture can be un-premultiplied prior to the application of these transforms. The default value is [`MPSAlphaType.alphaIsOne`](mpsalphatype/alphaisone.md).
+Most color space conversion operations can not work directly on premultiplied data. Use this property to tag premultiplied data so that the source texture can be un-premultiplied prior to the application of these transforms. The default value is [`MPSAlphaType.alphaIsOne`](../mpsalphatype/alphaisone.md).
 
 ## See Also
 
-- [var destinationAlpha: MPSAlphaType](mpsimageconversion/destinationalpha.md)
+### Properties
+- [var destinationAlpha: MPSAlphaType](./destinationalpha.md)
   Premultiplication description for the destination texture.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A reactive-mask texture input for this scaler to evaluate.
@@ -17,6 +18,10 @@ A reactive-mask texture input for this scaler to evaluate.
 
 ```swift
 var reactiveMaskTexture: (any MTLTexture)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> reactiveMaskTexture;
 ```
 
 #### Discussion

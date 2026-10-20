@@ -1,7 +1,8 @@
 # pathExtension
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path extension, if any, of the string as interpreted as a path.
 
@@ -20,9 +21,13 @@ The path extension, if any, of the string as interpreted as a path.
 var pathExtension: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * pathExtension;
+```
+
 #### Discussion
 
-The path extension is the portion of the last path component which follows the final period, if there is one. The extension divider is not included. The following table illustrates the effect of [`pathExtension`](nsstring/pathextension.md) on a variety of different paths:
+The path extension is the portion of the last path component which follows the final period, if there is one. The extension divider is not included. The following table illustrates the effect of [`pathExtension`](./pathextension.md) on a variety of different paths:
 
 | Receiver’s String Value | String Returned |
 | --- | --- |
@@ -36,35 +41,36 @@ Note that this method only works with file paths (not, for example, string repre
 
 ## See Also
 
-- [class func path(withComponents: [String]) -> String](nsstring/path(withcomponents:).md)
+### Working with Paths
+- [class func path(withComponents: [String]) -> String](./path%28withcomponents%29.md)
   Returns a string built from the strings in a given array by concatenating them with a path separator between each pair.
-- [var pathComponents: [String]](nsstring/pathcomponents.md)
+- [var pathComponents: [String]](./pathcomponents.md)
   The file-system path components of the receiver.
-- [func completePath(into: AutoreleasingUnsafeMutablePointer<NSString?>?, caseSensitive: Bool, matchesInto: AutoreleasingUnsafeMutablePointer<NSArray?>?, filterTypes: [String]?) -> Int](nsstring/completepath(into:casesensitive:matchesinto:filtertypes:).md)
+- [func completePath(into: AutoreleasingUnsafeMutablePointer<NSString?>?, caseSensitive: Bool, matchesInto: AutoreleasingUnsafeMutablePointer<NSArray?>?, filterTypes: [String]?) -> Int](./completepath%28into,casesensitive,matchesinto,filtertypes%29.md)
   Interprets the receiver as a path in the file system and attempts to perform filename completion, returning a numeric value that indicates whether a match was possible, and by reference the longest path that matches the receiver.
-- [var fileSystemRepresentation: UnsafePointer<CChar>](nsstring/filesystemrepresentation.md)
+- [var fileSystemRepresentation: UnsafePointer<CChar>](./filesystemrepresentation.md)
   A file system-specific representation of the receiver.
-- [func getFileSystemRepresentation(UnsafeMutablePointer<CChar>, maxLength: Int) -> Bool](nsstring/getfilesystemrepresentation(_:maxlength:).md)
+- [func getFileSystemRepresentation(UnsafeMutablePointer<CChar>, maxLength: Int) -> Bool](./getfilesystemrepresentation%28_,maxlength%29.md)
   Interprets the receiver as a system-independent path and fills a buffer with a C-string in a format and encoding suitable for use with file-system calls.
-- [var isAbsolutePath: Bool](nsstring/isabsolutepath.md)
+- [var isAbsolutePath: Bool](./isabsolutepath.md)
   A Boolean value that indicates whether the receiver represents an absolute path.
-- [var lastPathComponent: String](nsstring/lastpathcomponent.md)
+- [var lastPathComponent: String](./lastpathcomponent.md)
   The last path component of the receiver.
-- [var abbreviatingWithTildeInPath: String](nsstring/abbreviatingwithtildeinpath.md)
+- [var abbreviatingWithTildeInPath: String](./abbreviatingwithtildeinpath.md)
   A new string that replaces the current home directory portion of the current path with a tilde (`~`) character.
-- [func appendingPathComponent(String) -> String](nsstring/appendingpathcomponent(_:).md)
+- [func appendingPathComponent(String) -> String](./appendingpathcomponent%28_%29.md)
   Returns a new string made by appending to the receiver a given string.
-- [func appendingPathExtension(String) -> String?](nsstring/appendingpathextension(_:).md)
+- [func appendingPathExtension(String) -> String?](./appendingpathextension%28_%29.md)
   Returns a new string made by appending to the receiver an extension separator followed by a given extension.
-- [var deletingLastPathComponent: String](nsstring/deletinglastpathcomponent.md)
+- [var deletingLastPathComponent: String](./deletinglastpathcomponent.md)
   A new string made by deleting the last path component from the receiver, along with any final path separator.
-- [var deletingPathExtension: String](nsstring/deletingpathextension.md)
+- [var deletingPathExtension: String](./deletingpathextension.md)
   A new string made by deleting the extension (if any, and only the last) from the receiver.
-- [var expandingTildeInPath: String](nsstring/expandingtildeinpath.md)
+- [var expandingTildeInPath: String](./expandingtildeinpath.md)
   A new string made by expanding the initial component of the receiver to its full path value.
-- [var resolvingSymlinksInPath: String](nsstring/resolvingsymlinksinpath.md)
+- [var resolvingSymlinksInPath: String](./resolvingsymlinksinpath.md)
   A new string made from the receiver by resolving all symbolic links and standardizing path.
-- [var standardizingPath: String](nsstring/standardizingpath.md)
+- [var standardizingPath: String](./standardizingpath.md)
   A new string made by removing extraneous path components from the receiver.
 
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for uploading your asset.
 
@@ -10,7 +11,7 @@ The URL for uploading your asset.
 
 ## Declaration
 
-```swift
+```
 attribute string url;
 ```
 

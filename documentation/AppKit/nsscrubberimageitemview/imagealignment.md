@@ -1,7 +1,8 @@
 # imageAlignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of the image within the scrubber item.
 
@@ -14,11 +15,15 @@ The alignment of the image within the scrubber item.
 var imageAlignment: NSImageAlignment { get set }
 ```
 
+```objc
+@property NSImageAlignment imageAlignment;
+```
+
 #### Discussion
 
 The image is scaled proportionally to fit the frame of the item. This property determines how the image is cropped within that frame.
 
-For possible values, see [`NSImageAlignment`](nsimagealignment.md).
+For possible values, see [`NSImageAlignment`](../nsimagealignment.md).
 
 
 ---

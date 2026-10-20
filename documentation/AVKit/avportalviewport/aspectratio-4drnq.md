@@ -1,7 +1,8 @@
 # aspectRatio
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width-to-height ratio of the portal frame.
 

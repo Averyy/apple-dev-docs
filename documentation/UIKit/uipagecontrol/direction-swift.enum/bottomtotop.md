@@ -1,7 +1,8 @@
 # UIPageControl.Direction.bottomToTop
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A direction that lays out the page indicators from bottom to top.
 
@@ -18,15 +19,20 @@ A direction that lays out the page indicators from bottom to top.
 case bottomToTop
 ```
 
+```c
+UIPageControlDirectionBottomToTop
+```
+
 ## See Also
 
-- [UIPageControl.Direction.natural](uipagecontrol/direction-swift.enum/natural.md)
+### Directions
+- [UIPageControl.Direction.natural](./natural.md)
   A direction that infers the lay out from the system’s locale.
-- [UIPageControl.Direction.leftToRight](uipagecontrol/direction-swift.enum/lefttoright.md)
+- [UIPageControl.Direction.leftToRight](./lefttoright.md)
   A direction that lays out the page indicators from left to right.
-- [UIPageControl.Direction.rightToLeft](uipagecontrol/direction-swift.enum/righttoleft.md)
+- [UIPageControl.Direction.rightToLeft](./righttoleft.md)
   A direction that lays out the page indicators from right to left.
-- [UIPageControl.Direction.topToBottom](uipagecontrol/direction-swift.enum/toptobottom.md)
+- [UIPageControl.Direction.topToBottom](./toptobottom.md)
   A direction that lays out the page indicators from top to bottom.
 
 

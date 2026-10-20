@@ -1,15 +1,20 @@
 # inputDataPath
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var inputDataPath: BluetoothHCIInputDataPath
+```
+
+```c
+BluetoothHCIInputDataPath inputDataPath;
 ```
 
 

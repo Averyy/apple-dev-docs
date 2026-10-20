@@ -1,7 +1,8 @@
 # destinationPixelBufferAttributes
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 
@@ -17,20 +18,25 @@ Pixel buffer attributes dictionary that describes requirements for pixel buffers
 var destinationPixelBufferAttributes: [String : any Sendable] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * destinationPixelBufferAttributes;
+```
+
 #### Discussion
 
 Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary with your pixel buffer attributes dictionary.
 
 ## See Also
 
-- [var frameWidth: Int](vttemporalnoisefilterconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
-- [class var supportedSourcePixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [class var supportedSourcePixelFormats: [OSType]](./supportedsourcepixelformats-4ipcg.md)
 
 
 ---

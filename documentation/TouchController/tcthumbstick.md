@@ -1,7 +1,8 @@
 # TCThumbstick
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a single on-screen thumbstick.
 
@@ -16,6 +17,10 @@ Represents a single on-screen thumbstick.
 class TCThumbstick
 ```
 
+```objc
+@interface TCThumbstick : NSObject
+```
+
 #### Overview
 
 This is mirrored by a `GCControllerDirectionPad` on the associated `GCController` instance.
@@ -23,49 +28,50 @@ This is mirrored by a `GCControllerDirectionPad` on the associated `GCController
 ## Topics
 
 ### Inspecting a thumbstick
-- [var backgroundContents: TCControlContents?](tcthumbstick/backgroundcontents.md)
+- [var backgroundContents: TCControlContents?](./tcthumbstick/backgroundcontents.md)
   The contents for the background of the thumbstick.
-- [var hidesWhenNotPressed: Bool](tcthumbstick/hideswhennotpressed.md)
+- [var hidesWhenNotPressed: Bool](./tcthumbstick/hideswhennotpressed.md)
   A Boolean value that indicates whether to hide the thumbstick when it is not being pressed.
-- [var highlightDuration: TimeInterval](tcthumbstick/highlightduration.md)
+- [var highlightDuration: TimeInterval](./tcthumbstick/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var stickContents: TCControlContents?](tcthumbstick/stickcontents.md)
+- [var stickContents: TCControlContents?](./tcthumbstick/stickcontents.md)
   The contents for the thumbstick itself.
-- [var stickSize: CGSize](tcthumbstick/sticksize.md)
+- [var stickSize: CGSize](./tcthumbstick/sticksize.md)
   The size (width, height) of the thumbstick stick itself in points.
 ### Getting the collider shape
-- [var colliderShape: TCColliderShape](tcthumbstick/collidershape.md)
+- [var colliderShape: TCColliderShape](./tcthumbstick/collidershape.md)
   The collider shape for the thumbstick.
-- [enum TCColliderShape](tccollidershape.md)
+- [enum TCColliderShape](./tccollidershape.md)
   Defines the shape of a control collider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [TCControl](tccontrol.md)
-- [TCControlLayout](tccontrollayout.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [TCControl](./tccontrol.md)
+- [TCControlLayout](./tccontrollayout.md)
 
 ## See Also
 
-- [protocol TCControl](tccontrol.md)
+### Controls
+- [protocol TCControl](./tccontrol.md)
   A protocol that defines the base properties and methods for all touch controls.
-- [class TCButton](tcbutton.md)
+- [class TCButton](./tcbutton.md)
   A control that represents a single on-screen button.
-- [class TCDirectionPad](tcdirectionpad.md)
+- [class TCDirectionPad](./tcdirectionpad.md)
   An object that represents a direction pad.
-- [class TCSwitch](tcswitch.md)
+- [class TCSwitch](./tcswitch.md)
   A control that represents a single on-screen switch.
-- [class TCThrottle](tcthrottle.md)
+- [class TCThrottle](./tcthrottle.md)
   Represents a single on-screen throttle - a one axis input.
-- [class TCTouchpad](tctouchpad.md)
+- [class TCTouchpad](./tctouchpad.md)
   Represents a single on-screen touchpad that reports absolute coordinates or delta movements.
 
 

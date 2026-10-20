@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,7 +20,8 @@ var isEmpty: Bool { get }
 
 ## See Also
 
-- [var count: Int](mluntypedcolumn/count.md)
+### Getting the number of elements
+- [var count: Int](./count.md)
   The number of elements in the column.
 
 

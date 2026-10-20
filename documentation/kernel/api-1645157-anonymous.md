@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,27 +18,27 @@ enum : int {
 ## Topics
 
 ### Constants
-- [SlpTypeErr](1645157-anonymous/slptypeerr.md)
-- [badCksmErr](1645157-anonymous/badcksmerr.md)
-- [badUnitErr](1645157-anonymous/baduniterr.md)
-- [closErr](1645157-anonymous/closerr.md)
-- [controlErr](1645157-anonymous/controlerr.md)
-- [corErr](1645157-anonymous/corerr.md)
-- [dInstErr](1645157-anonymous/dinsterr.md)
-- [dRemovErr](1645157-anonymous/dremoverr.md)
-- [noHardwareErr](1645157-anonymous/nohardwareerr.md)
-- [notEnoughHardwareErr](1645157-anonymous/notenoughhardwareerr.md)
-- [openErr](1645157-anonymous/openerr.md)
-- [paramErr](1645157-anonymous/paramerr.md)
-- [qErr](1645157-anonymous/qerr.md)
-- [readErr](1645157-anonymous/readerr.md)
-- [seNoDB](1645157-anonymous/senodb.md)
-- [statusErr](1645157-anonymous/statuserr.md)
-- [unimpErr](1645157-anonymous/unimperr.md)
-- [unitEmptyErr](1645157-anonymous/unitemptyerr.md)
-- [userCanceledErr](1645157-anonymous/usercancelederr.md)
-- [vTypErr](1645157-anonymous/vtyperr.md)
-- [writErr](1645157-anonymous/writerr.md)
+- [SlpTypeErr](./api-1645157-anonymous/slptypeerr.md)
+- [badCksmErr](./api-1645157-anonymous/badcksmerr.md)
+- [badUnitErr](./api-1645157-anonymous/baduniterr.md)
+- [closErr](./api-1645157-anonymous/closerr.md)
+- [controlErr](./api-1645157-anonymous/controlerr.md)
+- [corErr](./api-1645157-anonymous/corerr.md)
+- [dInstErr](./api-1645157-anonymous/dinsterr.md)
+- [dRemovErr](./api-1645157-anonymous/dremoverr.md)
+- [noHardwareErr](./api-1645157-anonymous/nohardwareerr.md)
+- [notEnoughHardwareErr](./api-1645157-anonymous/notenoughhardwareerr.md)
+- [openErr](./api-1645157-anonymous/openerr.md)
+- [paramErr](./api-1645157-anonymous/paramerr.md)
+- [qErr](./api-1645157-anonymous/qerr.md)
+- [readErr](./api-1645157-anonymous/readerr.md)
+- [seNoDB](./api-1645157-anonymous/senodb.md)
+- [statusErr](./api-1645157-anonymous/statuserr.md)
+- [unimpErr](./api-1645157-anonymous/unimperr.md)
+- [unitEmptyErr](./api-1645157-anonymous/unitemptyerr.md)
+- [userCanceledErr](./api-1645157-anonymous/usercancelederr.md)
+- [vTypErr](./api-1645157-anonymous/vtyperr.md)
+- [writErr](./api-1645157-anonymous/writerr.md)
 
 
 ---

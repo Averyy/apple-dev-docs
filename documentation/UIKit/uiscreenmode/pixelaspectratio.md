@@ -1,7 +1,8 @@
 # pixelAspectRatio
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aspect ratio of a single pixel.
 
@@ -9,12 +10,16 @@ The aspect ratio of a single pixel.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
 ```swift
 var pixelAspectRatio: CGFloat { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGFloat pixelAspectRatio;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ The aspect ratio is defined as `x/y`, where `x` is the width of the pixel and `y
 
 ## See Also
 
-- [var size: CGSize](uiscreenmode/size.md)
+### Accessing the screen mode attributes
+- [var size: CGSize](./size.md)
   The screen size, measured in pixels.
 
 

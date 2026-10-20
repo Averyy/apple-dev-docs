@@ -1,7 +1,8 @@
 # init(group:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section containing the specified group.
 
@@ -18,11 +19,16 @@ Creates a section containing the specified group.
 convenience init(group: NSCollectionLayoutGroup)
 ```
 
+```objc
++ (instancetype) sectionWithGroup:(NSCollectionLayoutGroup *) group;
+```
+
 ## See Also
 
-- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](nscollectionlayoutsection/list(using:layoutenvironment:).md)
+### Creating a section
+- [static func list(using: UICollectionLayoutListConfiguration, layoutEnvironment: any NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection](./list%28using,layoutenvironment%29.md)
   Creates a list section with the specified list configuration and layout environment.
-- [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](nscollectionlayoutsection/orthogonallayoutsectionformediaitems.md)
+- [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](./orthogonallayoutsectionformediaitems%28%29.md)
   Creates an orthogonally scrolling section with system default spacing.
 
 

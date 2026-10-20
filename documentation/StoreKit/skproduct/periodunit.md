@@ -1,18 +1,21 @@
 # SKProduct.PeriodUnit
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values representing the duration of an interval, from a day up to a year.
 
 **Availability**:
-- iOS 11.2+
-- iPadOS 11.2+
-- Mac Catalyst 13.1+
-- macOS 10.13.2+
-- tvOS 11.2+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 11.2+ - Deprecated in 18.0
+- iPadOS 11.2+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.13.2+ - Deprecated in 15.0
+- tvOS 11.2+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Use Product.SubscriptionPeriod.Unit.
 
 ## Declaration
 
@@ -20,41 +23,46 @@ Values representing the duration of an interval, from a day up to a year.
 enum PeriodUnit
 ```
 
+```c
+enum SKProductPeriodUnit : NSUInteger;
+```
+
 #### Overview
 
-The period unit represents the duration of an interval. Period units are used with the number of units to determine one period in [`SKProductSubscriptionPeriod`](skproductsubscriptionperiod.md).
+The period unit represents the duration of an interval. Period units are used with the number of units to determine one period in [`SKProductSubscriptionPeriod`](../skproductsubscriptionperiod.md).
 
 ## Topics
 
 ### Period Units
-- [SKProduct.PeriodUnit.day](skproduct/periodunit/day.md)
+- [SKProduct.PeriodUnit.day](./periodunit/day.md)
   An interval lasting one day.
-- [SKProduct.PeriodUnit.month](skproduct/periodunit/month.md)
+- [SKProduct.PeriodUnit.month](./periodunit/month.md)
   An interval lasting one month.
-- [SKProduct.PeriodUnit.week](skproduct/periodunit/week.md)
+- [SKProduct.PeriodUnit.week](./periodunit/week.md)
   An interval lasting one week.
-- [SKProduct.PeriodUnit.year](skproduct/periodunit/year.md)
+- [SKProduct.PeriodUnit.year](./periodunit/year.md)
   An interval lasting one year.
 ### Initializers
-- [init?(rawValue: UInt)](skproduct/periodunit/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./periodunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var subscriptionGroupIdentifier: String?](skproduct/subscriptiongroupidentifier.md)
+### Getting Subscription Information
+- [var subscriptionGroupIdentifier: String?](./subscriptiongroupidentifier.md)
   The identifier of the subscription group to which the subscription belongs.
-- [var subscriptionPeriod: SKProductSubscriptionPeriod?](skproduct/subscriptionperiod.md)
+- [var subscriptionPeriod: SKProductSubscriptionPeriod?](./subscriptionperiod.md)
   The period details for products that are subscriptions.
-- [class SKProductSubscriptionPeriod](skproductsubscriptionperiod.md)
+- [class SKProductSubscriptionPeriod](../skproductsubscriptionperiod.md)
   An object containing the subscription period duration information.
 
 

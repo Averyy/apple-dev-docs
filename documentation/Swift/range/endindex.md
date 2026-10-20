@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
 
@@ -19,6 +20,8 @@ The collection’s “past the end” position—that is, the position one great
 ```swift
 var endIndex: Range<Bound>.Index { get }
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 #### Discussion
 

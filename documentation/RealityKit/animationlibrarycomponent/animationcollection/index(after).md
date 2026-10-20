@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position in the collection that follows an index.
 
@@ -25,13 +26,14 @@ func index(after i: AnimationLibraryComponent.AnimationCollection.Index) -> Anim
 
 ## See Also
 
-- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/startindex.md)
+### Manipulating indices
+- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](./startindex.md)
   An index to the first animation in the collection.
-- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/endindex.md)
+- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](./endindex.md)
   An index to the last animation in the collection.
-- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](animationlibrarycomponent/animationcollection/formindex(after:).md)
+- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](./formindex%28after%29.md)
   Replaces the index with its successor.
-- [AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/index.md)
+- [AnimationLibraryComponent.AnimationCollection.Index](./index.md)
   An object that represents a position in the collection.
 
 

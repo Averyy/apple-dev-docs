@@ -1,7 +1,8 @@
 # logState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shader logging configuration that the command buffer uses.
 
@@ -19,13 +20,18 @@ The shader logging configuration that the command buffer uses.
 var logState: (any MTLLogState)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MTLLogState> logState;
+```
+
 ## See Also
 
-- [var retainedReferences: Bool](mtlcommandbufferdescriptor/retainedreferences.md)
+### Configuring the command buffer
+- [var retainedReferences: Bool](./retainedreferences.md)
   A Boolean value that indicates whether the command buffer the descriptor creates maintains strong references to the resources it uses.
-- [var errorOptions: MTLCommandBufferErrorOption](mtlcommandbufferdescriptor/erroroptions.md)
+- [var errorOptions: MTLCommandBufferErrorOption](./erroroptions.md)
   The reporting configuration that indicates which information the GPU driver stores in a command buffer’s error property.
-- [struct MTLCommandBufferErrorOption](mtlcommandbuffererroroption.md)
+- [struct MTLCommandBufferErrorOption](../mtlcommandbuffererroroption.md)
   Options for reporting errors from a command buffer.
 
 

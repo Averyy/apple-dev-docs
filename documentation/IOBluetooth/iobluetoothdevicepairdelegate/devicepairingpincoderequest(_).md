@@ -1,15 +1,20 @@
 # devicePairingPINCodeRequest(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func devicePairingPINCodeRequest(_ sender: Any!)
+```
+
+```objc
+- (void) devicePairingPINCodeRequest:(id) sender;
 ```
 
 

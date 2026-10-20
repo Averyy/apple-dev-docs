@@ -1,7 +1,8 @@
 # headsetMic
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An input from a wired headset’s built-in microphone.
 
@@ -19,13 +20,18 @@ An input from a wired headset’s built-in microphone.
 static let headsetMic: AVAudioSession.Port
 ```
 
+```c
+extern AVAudioSessionPort const AVAudioSessionPortHeadsetMic;
+```
+
 ## See Also
 
-- [static let builtInMic: AVAudioSession.Port](avaudiosession/port/builtinmic.md)
+### Getting input ports
+- [static let builtInMic: AVAudioSession.Port](./builtinmic.md)
   An input from a device’s built-in microphone.
-- [static let continuityMicrophone: AVAudioSession.Port](avaudiosession/port/continuitymicrophone.md)
+- [static let continuityMicrophone: AVAudioSession.Port](./continuitymicrophone.md)
   An input from a Continuity Microphone on Apple TV.
-- [static let lineIn: AVAudioSession.Port](avaudiosession/port/linein.md)
+- [static let lineIn: AVAudioSession.Port](./linein.md)
   A line-level input from the dock connector.
 
 

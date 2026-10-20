@@ -1,7 +1,8 @@
 # hide
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A display strategy that hides leading fields whose value is zero.
 
@@ -22,7 +23,8 @@ static var hide: Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy { get }
 
 ## See Also
 
-- [static func show(length: Int) -> Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy](duration/unitsformatstyle/zerovalueunitsdisplaystrategy/show(length:).md)
+### Using common strategies
+- [static func show(length: Int) -> Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy](./show%28length%29.md)
   Returns display strategy that shows leading fields whose value is zero, with a given number of digits.
 
 

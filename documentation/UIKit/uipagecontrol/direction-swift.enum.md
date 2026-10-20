@@ -1,7 +1,8 @@
 # UIPageControl.Direction
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Decribes the layout direction of a page control’s indicators.
 
@@ -18,35 +19,40 @@ Decribes the layout direction of a page control’s indicators.
 enum Direction
 ```
 
+```c
+enum UIPageControlDirection : NSInteger;
+```
+
 ## Topics
 
 ### Directions
-- [UIPageControl.Direction.natural](uipagecontrol/direction-swift.enum/natural.md)
+- [UIPageControl.Direction.natural](./direction-swift.enum/natural.md)
   A direction that infers the lay out from the system’s locale.
-- [UIPageControl.Direction.leftToRight](uipagecontrol/direction-swift.enum/lefttoright.md)
+- [UIPageControl.Direction.leftToRight](./direction-swift.enum/lefttoright.md)
   A direction that lays out the page indicators from left to right.
-- [UIPageControl.Direction.rightToLeft](uipagecontrol/direction-swift.enum/righttoleft.md)
+- [UIPageControl.Direction.rightToLeft](./direction-swift.enum/righttoleft.md)
   A direction that lays out the page indicators from right to left.
-- [UIPageControl.Direction.topToBottom](uipagecontrol/direction-swift.enum/toptobottom.md)
+- [UIPageControl.Direction.topToBottom](./direction-swift.enum/toptobottom.md)
   A direction that lays out the page indicators from top to bottom.
-- [UIPageControl.Direction.bottomToTop](uipagecontrol/direction-swift.enum/bottomtotop.md)
+- [UIPageControl.Direction.bottomToTop](./direction-swift.enum/bottomtotop.md)
   A direction that lays out the page indicators from bottom to top.
 ### Initializers
-- [init?(rawValue: Int)](uipagecontrol/direction-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./direction-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var direction: UIPageControl.Direction](uipagecontrol/direction-swift.property.md)
+### Customizing the layout direction
+- [var direction: UIPageControl.Direction](./direction-swift.property.md)
   The layout direction of the page indicators.
 
 

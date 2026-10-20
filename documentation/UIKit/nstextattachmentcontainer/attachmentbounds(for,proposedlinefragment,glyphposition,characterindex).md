@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the layout bounds of the text attachment to the layout manager.
@@ -19,9 +20,13 @@ Returns the layout bounds of the text attachment to the layout manager.
 func attachmentBounds(for textContainer: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition position: CGPoint, characterIndex charIndex: Int) -> CGRect
 ```
 
+```objc
+- (CGRect) attachmentBoundsForTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) lineFrag glyphPosition:(CGPoint) position characterIndex:(NSUInteger) charIndex;
+```
+
 #### Return Value
 
-The [`bounds`](nstextattachment/bounds.md) rectangle of the text attachment if not [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero); otherwise, the rectangle of the [`size`](uiimage/size.md) property of the attachment’s [`image`](nstextattachment/image.md) property.
+The [`bounds`](../nstextattachment/bounds.md) rectangle of the text attachment if not [`CGRectZero`](../../CoreGraphics/cgrectzero.md); otherwise, the rectangle of the [`size`](../uiimage/size.md) property of the attachment’s [`image`](../nstextattachment/image.md) property.
 
 #### Discussion
 

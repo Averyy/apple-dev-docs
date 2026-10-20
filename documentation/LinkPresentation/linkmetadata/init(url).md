@@ -1,9 +1,10 @@
 # init(url:)
 
 **Framework**: Link Presentation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`LinkMetadata`](linkmetadata.md) value for the specified URL.
+Creates a new [`LinkMetadata`](../linkmetadata.md) value for the specified URL.
 
 **Availability**:
 - iOS 26.4+

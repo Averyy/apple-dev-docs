@@ -1,7 +1,8 @@
 # setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_:restrictedSwitchingBehaviorConditions:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the camera switching behavior to use during recording.
 
@@ -18,24 +19,31 @@ Sets the camera switching behavior to use during recording.
 func setPrimaryConstituentDeviceSwitchingBehaviorForRecording(_ switchingBehavior: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior, restrictedSwitchingBehaviorConditions: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions)
 ```
 
+```objc
+- (void) setPrimaryConstituentDeviceSwitchingBehaviorForRecording:(AVCapturePrimaryConstituentDeviceSwitchingBehavior) switchingBehavior restrictedSwitchingBehaviorConditions:(AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions) restrictedSwitchingBehaviorConditions;
+```
+
 #### Discussion
 
-Use this method to control the camera switching behavior the system uses when recording a movie. The behavior you specify takes effect when you enable it by setting the value of [`isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled`](avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md) to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to control the camera switching behavior the system uses when recording a movie. The behavior you specify takes effect when you enable it by setting the value of [`isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled`](./isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md) to [`true`](../../Swift/true.md).
 
-When a capture device doesn’t support constituent device selection, attempting to set a behavior other than [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) causes the system to throw an invalid argument exception.
+When a capture device doesn’t support constituent device selection, attempting to set a behavior other than [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported`](../avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md) causes the system to throw an invalid argument exception.
 
 ## Parameters
 
-- `switchingBehavior`: The switching behavior to set on the movie file output. Attempting to restrict the switching behavior of a capture device that doesn’t support constituent device switching results in an error.
-- `restrictedSwitchingBehaviorConditions`: The conditions during which camera switching occurs. Only set a condition when you set the switching behavior to [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md). In all other cases, set the value to [`AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone`](avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md).
+- `switchingBehavior`: The switching behavior to set on the movie file output.
+
+  Attempting to restrict the switching behavior of a capture device that doesn’t support constituent device switching results in an error.
+- `restrictedSwitchingBehaviorConditions`: The conditions during which camera switching occurs. Only set a condition when you set the switching behavior to [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](../avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md). In all other cases, set the value to [`AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditionNone`](../avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditions/avcaptureprimaryconstituentdevicerestrictedswitchingbehaviorconditionnone.md).
 
 ## See Also
 
-- [var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool](avcapturemoviefileoutput/isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md)
+### Restricting camera switching
+- [var isPrimaryConstituentDeviceSwitchingBehaviorForRecordingEnabled: Bool](./isprimaryconstituentdeviceswitchingbehaviorforrecordingenabled.md)
   A Boolean value that indicates whether to restrict constituent device switching behavior during recording.
-- [var primaryConstituentDeviceSwitchingBehaviorForRecording: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](avcapturemoviefileoutput/primaryconstituentdeviceswitchingbehaviorforrecording.md)
+- [var primaryConstituentDeviceSwitchingBehaviorForRecording: AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior](./primaryconstituentdeviceswitchingbehaviorforrecording.md)
   The camera switching behavior to use for recording.
-- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturemoviefileoutput/primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
+- [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](./primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
   The conditions during which camera switching may occur while recording.
 
 

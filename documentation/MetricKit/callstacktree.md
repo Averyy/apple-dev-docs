@@ -1,7 +1,8 @@
 # CallStackTree
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tree structure representing a collection of call stacks captured during a diagnostic event.
 
@@ -20,15 +21,15 @@ struct CallStackTree
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Each diagnostic struct — including [`CrashDiagnostic`](crashdiagnostic.md), [`HangDiagnostic`](hangdiagnostic.md), [`CPUExceptionDiagnostic`](cpuexceptiondiagnostic.md), [`DiskWriteExceptionDiagnostic`](diskwriteexceptiondiagnostic.md), [`AppLaunchDiagnostic`](applaunchdiagnostic.md), and [`MemoryExceptionDiagnostic`](memoryexceptiondiagnostic.md) — carries a `callStackTree` property of this type.
+Each diagnostic struct — including [`CrashDiagnostic`](./crashdiagnostic.md), [`HangDiagnostic`](./hangdiagnostic.md), [`CPUExceptionDiagnostic`](./cpuexceptiondiagnostic.md), [`DiskWriteExceptionDiagnostic`](./diskwriteexceptiondiagnostic.md), [`AppLaunchDiagnostic`](./applaunchdiagnostic.md), and [`MemoryExceptionDiagnostic`](./memoryexceptiondiagnostic.md) — carries a `callStackTree` property of this type.
 
-The tree is organized into threads via [`callStackThreads`](callstacktree/callstackthreads.md). Each [`CallStackThread`](callstackthread.md) contains root [`CallStackFrame`](callstackframe.md) values that form a tree of sub-frames. Binary metadata is deduplicated in [`binaryInfo`](callstacktree/binaryinfo-swift.property.md), keyed by UUID, so frames reference binaries by UUID rather than repeating the name.
+The tree is organized into threads via [`callStackThreads`](./callstacktree/callstackthreads.md). Each [`CallStackThread`](./callstackthread.md) contains root [`CallStackFrame`](./callstackframe.md) values that form a tree of sub-frames. Binary metadata is deduplicated in [`binaryInfo`](./callstacktree/binaryinfo-swift.property.md), keyed by UUID, so frames reference binaries by UUID rather than repeating the name.
 
-Use [`forEachFrame(_:)`](callstacktree/foreachframe(_:).md) for an optimized iterative depth-first traversal of all frames across all threads:
+Use [`forEachFrame(_:)`](./callstacktree/foreachframe%28_%29.md) for an optimized iterative depth-first traversal of all frames across all threads:
 
 ```swift
 callStackTree.forEachFrame { frame in
@@ -41,41 +42,42 @@ callStackTree.forEachFrame { frame in
 ## Topics
 
 ### Threads and frames
-- [let callStackThreads: ContiguousArray<CallStackThread>](callstacktree/callstackthreads.md)
+- [let callStackThreads: ContiguousArray<CallStackThread>](./callstacktree/callstackthreads.md)
   Array of call stack threads
-- [let callStackPerThread: Bool](callstacktree/callstackperthread.md)
+- [let callStackPerThread: Bool](./callstacktree/callstackperthread.md)
   Whether call stacks are organized per-thread
-- [func forEachFrame((CallStackFrame) throws -> Void) rethrows](callstacktree/foreachframe(_:).md)
+- [func forEachFrame((CallStackFrame) throws -> Void) rethrows](./callstacktree/foreachframe%28_%29.md)
   Iterates all frames efficiently.
 ### Binary information
-- [let binaryInfo: [UUID : CallStackTree.BinaryInfo]](callstacktree/binaryinfo-swift.property.md)
+- [let binaryInfo: [UUID : CallStackTree.BinaryInfo]](./callstacktree/binaryinfo-swift.property.md)
   Deduplicated binary information indexed by UUID
 ### Related types
-- [struct CallStackThread](callstackthread.md)
+- [struct CallStackThread](./callstackthread.md)
   A single stack thread within a call stack tree.
-- [struct CallStackFrame](callstackframe.md)
+- [struct CallStackFrame](./callstackframe.md)
   A single frame within a call stack thread.
 ### Structures
-- [CallStackTree.BinaryInfo](callstacktree/binaryinfo-swift.struct.md)
+- [CallStackTree.BinaryInfo](./callstacktree/binaryinfo-swift.struct.md)
   Metadata for a binary referenced in a call stack tree.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CallStackThread](callstackthread.md)
+### Call stack data
+- [struct CallStackThread](./callstackthread.md)
   A single stack thread within a call stack tree.
-- [struct CallStackFrame](callstackframe.md)
+- [struct CallStackFrame](./callstackframe.md)
   A single frame within a call stack thread.
-- [struct SignpostRecord](signpostrecord.md)
+- [struct SignpostRecord](./signpostrecord.md)
   A record of a signpost event associated with a diagnostic report.
 
 

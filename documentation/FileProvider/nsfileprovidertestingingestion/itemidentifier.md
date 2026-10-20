@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for the item that changed.
@@ -19,11 +20,16 @@ The unique identifier for the item that changed.
 var itemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItemIdentifier itemIdentifier;
+```
+
 ## See Also
 
-- [var item: NSFileProviderItem?](nsfileprovidertestingingestion/item.md)
+### Accessing the Operation’s Data
+- [var item: NSFileProviderItem?](./item.md)
   A description of the item that changed.
-- [var side: NSFileProviderTestingOperationSide](nsfileprovidertestingingestion/side.md)
+- [var side: NSFileProviderTestingOperationSide](./side.md)
   The location where the change occurred.
 
 

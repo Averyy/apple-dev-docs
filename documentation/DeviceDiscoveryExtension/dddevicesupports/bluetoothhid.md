@@ -1,7 +1,8 @@
 # bluetoothHID
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device supports bring up of classic transport profiles when low energy transport for peripheral is connected.
 
@@ -9,13 +10,17 @@ Device supports bring up of classic transport profiles when low energy transport
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 static var bluetoothHID: DDDeviceSupports { get }
+```
+
+```c
+DDDeviceSupportsBluetoothHID
 ```
 
 

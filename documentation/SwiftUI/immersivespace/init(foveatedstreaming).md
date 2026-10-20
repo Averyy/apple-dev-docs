@@ -1,7 +1,8 @@
 # init(foveatedStreaming:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immersive space to display foveated streaming content.
 
@@ -14,6 +15,8 @@ Creates an immersive space to display foveated streaming content.
 nonisolated
 init(foveatedStreaming session: FoveatedStreamingSession) where Content == ImmersiveSpaceViewContent<FoveatedStreamingSpaceContent>, Data == Never
 ```
+
+Available when `Content` conforms to `ImmersiveSpaceContent`, `Data` conforms to `Decodable`, `Data` conforms to `Encodable`, and `Data` conforms to `Hashable`.
 
 ## Parameters
 

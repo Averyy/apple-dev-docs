@@ -1,24 +1,25 @@
 # UserExportDCLLabel
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef struct UserExportDCLLabelStruct UserExportDCLLabel;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compilerData](userexportdcllabel/1561311-compilerdata.md)
-- [opcode](userexportdcllabel/1561013-opcode.md)
-- [pClientDCLStruct](userexportdcllabel/1561346-pclientdclstruct.md)
-- [pNextDCLCommand](userexportdcllabel/1561016-pnextdclcommand.md)
+- [compilerData](./userexportdcllabel/api-1561311-compilerdata.md)
+- [opcode](./userexportdcllabel/api-1561013-opcode.md)
+- [pClientDCLStruct](./userexportdcllabel/api-1561346-pclientdclstruct.md)
+- [pNextDCLCommand](./userexportdcllabel/api-1561016-pnextdclcommand.md)
 
 
 ---

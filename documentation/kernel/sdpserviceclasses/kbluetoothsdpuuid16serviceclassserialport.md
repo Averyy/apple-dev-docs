@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassSerialPort
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassSerialPort = 0x1101
 ```
 

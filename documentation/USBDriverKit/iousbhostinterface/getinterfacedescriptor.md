@@ -1,7 +1,8 @@
 # GetInterfaceDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the version of the interface descriptor that is associated with the specified configuration.
 
@@ -10,7 +11,7 @@ Returns the version of the interface descriptor that is associated with the spec
 
 ## Declaration
 
-```swift
+```cpp
 virtual const IOUSBInterfaceDescriptor * GetInterfaceDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor);
 ```
 
@@ -24,11 +25,12 @@ The interface descriptor structure.
 
 ## See Also
 
-- [CopyConfigurationDescriptor](iousbhostinterface/copyconfigurationdescriptor.md)
+### Getting Interface-Related Descriptors
+- [CopyConfigurationDescriptor](./copyconfigurationdescriptor.md)
   Retrieves the parent configuration descriptor for this interface.
-- [CopyStringDescriptor](iousbhostinterface/copystringdescriptor-83du1.md)
+- [CopyStringDescriptor](./copystringdescriptor-83du1.md)
   Returns a descriptor from the device in the specified language.
-- [CopyStringDescriptor](iousbhostinterface/copystringdescriptor-8k65j.md)
+- [CopyStringDescriptor](./copystringdescriptor-8k65j.md)
   Returns a string descriptor from the device.
 
 

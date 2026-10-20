@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data format of all elements in the plane.
 
@@ -17,6 +18,10 @@ The data format of all elements in the plane.
 
 ```swift
 var dataType: MTLTensorDataType { get }
+```
+
+```objc
+@property (readonly) MTLTensorDataType dataType;
 ```
 
 

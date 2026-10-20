@@ -1,9 +1,10 @@
 # OnDiskCodeSigningFlags.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`OnDiskCodeSigningFlags`](ondiskcodesigningflags.md)
+The type of this constraint: [`OnDiskCodeSigningFlags`](../ondiskcodesigningflags.md)
 
 **Availability**:
 - iOS 17.4+

@@ -1,7 +1,8 @@
 # triggerEffect(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func triggerEffect(with params: MTRIdentifyClusterTriggerEffectParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func triggerEffect(with params: MTRIdentifyClusterTriggerEffectParams) async throws
+```
+
+```objc
+- (void) triggerEffectWithParams:(MTRIdentifyClusterTriggerEffectParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

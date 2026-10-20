@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine CWNetworkProfile object equality.
 
@@ -12,6 +13,10 @@ Determine CWNetworkProfile object equality.
 
 ```swift
 func isEqual(to networkProfile: CWNetworkProfile) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToNetworkProfile:(CWNetworkProfile *) networkProfile;
 ```
 
 #### Return Value

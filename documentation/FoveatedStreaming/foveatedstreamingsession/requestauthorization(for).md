@@ -1,9 +1,10 @@
 # requestAuthorization(for:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Requests authorization for the given input capabilities, prompting the user for any capability whose status is [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](foveatedstreamingsession/authorizationstatus/notdetermined.md).
+Requests authorization for the given input capabilities, prompting the user for any capability whose status is [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](./authorizationstatus/notdetermined.md).
 
 **Availability**:
 - visionOS 27.0+
@@ -21,11 +22,11 @@ A dictionary mapping each requested capability to its authorization status follo
 
 #### Discussion
 
-Use this method to drive authorization prompts ahead of [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) so apps that want to surface their own pre-flight UI can do so.  At [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) time the framework also calls this method automatically for [`requestedInputCapabilities`](foveatedstreamingsession/requestedinputcapabilities.md).
+Use this method to drive authorization prompts ahead of [`connect(endpoint:)`](./connect%28endpoint%29.md) so apps that want to surface their own pre-flight UI can do so.  At [`connect(endpoint:)`](./connect%28endpoint%29.md) time the framework also calls this method automatically for [`requestedInputCapabilities`](./requestedinputcapabilities.md).
 
 ## Parameters
 
-- `inputCapabilities`: The capabilities to authorize.  When `nil` (the default), the session’s [`requestedInputCapabilities`](foveatedstreamingsession/requestedinputcapabilities.md) are used.
+- `inputCapabilities`: The capabilities to authorize.  When `nil` (the default), the session’s [`requestedInputCapabilities`](./requestedinputcapabilities.md) are used.
 
 
 ---

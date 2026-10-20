@@ -1,7 +1,8 @@
 # generateRandomSetupPasscode()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.2+
@@ -16,6 +17,10 @@
 
 ```swift
 class func generateRandomSetupPasscode() -> NSNumber
+```
+
+```objc
++ (NSNumber *) generateRandomSetupPasscode;
 ```
 
 

@@ -1,7 +1,8 @@
 # kCTFontVariationAxisNameKey
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Key to get the localized variation axis name string.
 
@@ -20,17 +21,22 @@ Key to get the localized variation axis name string.
 let kCTFontVariationAxisNameKey: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontVariationAxisNameKey;
+```
+
 ## See Also
 
-- [let kCTFontVariationAxisIdentifierKey: CFString](kctfontvariationaxisidentifierkey.md)
+### Constants
+- [let kCTFontVariationAxisIdentifierKey: CFString](./kctfontvariationaxisidentifierkey.md)
   Key to get the variation axis identifier.
-- [let kCTFontVariationAxisMinimumValueKey: CFString](kctfontvariationaxisminimumvaluekey.md)
+- [let kCTFontVariationAxisMinimumValueKey: CFString](./kctfontvariationaxisminimumvaluekey.md)
   Key to get the variation axis minimum value.
-- [let kCTFontVariationAxisMaximumValueKey: CFString](kctfontvariationaxismaximumvaluekey.md)
+- [let kCTFontVariationAxisMaximumValueKey: CFString](./kctfontvariationaxismaximumvaluekey.md)
   Key to get the variation axis maximum value.
-- [let kCTFontVariationAxisDefaultValueKey: CFString](kctfontvariationaxisdefaultvaluekey.md)
+- [let kCTFontVariationAxisDefaultValueKey: CFString](./kctfontvariationaxisdefaultvaluekey.md)
   Key to get the variation axis default value.
-- [let kCTFontVariationAxisHiddenKey: CFString](kctfontvariationaxishiddenkey.md)
+- [let kCTFontVariationAxisHiddenKey: CFString](./kctfontvariationaxishiddenkey.md)
   The key to find out if the axis is hidden.
 
 

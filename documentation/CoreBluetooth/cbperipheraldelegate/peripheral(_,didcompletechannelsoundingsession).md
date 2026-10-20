@@ -1,7 +1,8 @@
 # peripheral(_:didCompleteChannelSoundingSession:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 optional func peripheral(_ peripheral: CBPeripheral, didCompleteChannelSoundingSession error: (any Error)?)
+```
+
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didCompleteChannelSoundingSession:(NSError *) error;
 ```
 
 #### Discussion

@@ -1,6 +1,7 @@
 # Storing Keys in the Keychain
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Store and access cryptographic keys in the keychain.
 
@@ -8,11 +9,11 @@ Store and access cryptographic keys in the keychain.
 
 The keychain is the best place to store small secrets, like passwords and cryptographic keys. You use the functions of the keychain services API to add, retrieve, delete, or modify keychain items.
 
-For information about storing cryptographic keys that you create with the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/cryptokit/storing-cryptokit-keys-in-the-keychain).
+For information about storing cryptographic keys that you create with the [Apple CryptoKit](../CryptoKit/CryptoKit.md) framework, see [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md).
 
 ##### Create a Query Dictionary
 
-When you generate keys yourself, as described in [`Generating New Cryptographic Keys`](generating-new-cryptographic-keys.md), you can store them in the keychain as an implicit part of that process. If you obtain a key by some other means, you can still store it in the keychain. To do this, begin by creating a query dictionary containing and describing the item:
+When you generate keys yourself, as described in [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md), you can store them in the keychain as an implicit part of that process. If you obtain a key by some other means, you can still store it in the keychain. To do this, begin by creating a query dictionary containing and describing the item:
 
 **Swift**:
 
@@ -35,11 +36,11 @@ NSDictionary* addquery = @{ (id)kSecValueRef: (__bridge id)key,
                            };
 ```
 
-This query dictionary uses the [`kSecClassKey`](ksecclasskey.md) value for the [`kSecClass`](ksecclass.md) entry to indicate a key item (as opposed to a certificate, identity, or password). You also apply an application tag that lets you distinguish the key from others when later searching for it.
+This query dictionary uses the [`kSecClassKey`](./ksecclasskey.md) value for the [`kSecClass`](./ksecclass.md) entry to indicate a key item (as opposed to a certificate, identity, or password). You also apply an application tag that lets you distinguish the key from others when later searching for it.
 
 ##### Store the Item
 
-Use the [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) function to actually store the item:
+Use the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) function to actually store the item:
 
 **Swift**:
 
@@ -79,11 +80,11 @@ NSDictionary *getquery = @{ (id)kSecClass: (id)kSecClassKey,
                          };
 ```
 
-The above dictionary indicates that the key should be of type [`kSecAttrKeyTypeRSA`](ksecattrkeytypersa.md), as in [`Creating an Asymmetric Key Pair`](generating-new-cryptographic-keys#Creating-an-Asymmetric-Key-Pair.md), and that it should have the tag used in that example and above. The last line says that the retrieval should return a key reference (as opposed, for example, to the actual key data).
+The above dictionary indicates that the key should be of type [`kSecAttrKeyTypeRSA`](./ksecattrkeytypersa.md), as in [Creating an Asymmetric Key Pair](./generating-new-cryptographic-keys.md#Creating-an-Asymmetric-Key-Pair), and that it should have the tag used in that example and above. The last line says that the retrieval should return a key reference (as opposed, for example, to the actual key data).
 
-> **Note**:  This is a simple query that doesn’t refine the search as much as you may need. For additional ways to do that, see [`Refine the Search`](storing-keys-in-the-keychain#Refine-the-Search.md) below.
+> **Note**:  This is a simple query that doesn’t refine the search as much as you may need. For additional ways to do that, see [Refine the Search](./storing-keys-in-the-keychain.md#Refine-the-Search) below.
 
-You use this query with the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function to execute a search and populate an empty reference that you supply:
+You use this query with the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function to execute a search and populate an empty reference that you supply:
 
 **Swift**:
 
@@ -114,9 +115,9 @@ The query in the example above doesn’t restrict the search to a particular key
 
 There are several ways to deal with this. For example, you can:
 
-- **Widen the search.** If you add the [`kSecMatchLimit`](ksecmatchlimit.md) entry to the query dictionary with a value of [`kSecMatchLimitAll`](ksecmatchlimitall.md), instead of a single key reference, [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) produces an array of key references, which you can inspect to find the key of interest.
+- **Widen the search.** If you add the [`kSecMatchLimit`](./ksecmatchlimit.md) entry to the query dictionary with a value of [`kSecMatchLimitAll`](./ksecmatchlimitall.md), instead of a single key reference, [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) produces an array of key references, which you can inspect to find the key of interest.
 - **Narrow the search.** If you have other attributes that distinguish your keys, such as key size or key class, add the corresponding entries to the query dictionary before conducting the search.
-- **Avoid reusing tags in the first place.** Before adding a key with a given tag and type (or whatever other distinguishing characteristic you have), read existing keys from the keychain with those same characteristics. If you find a potential duplicate, either reuse the original key and skip creating a new one, create the new key using a different tag, or delete the old key using the [`SecItemDelete(_:)`](secitemdelete(_:).md) function before adding a new one.
+- **Avoid reusing tags in the first place.** Before adding a key with a given tag and type (or whatever other distinguishing characteristic you have), read existing keys from the keychain with those same characteristics. If you find a potential duplicate, either reuse the original key and skip creating a new one, create the new key using a different tag, or delete the old key using the [`SecItemDelete(_:)`](./secitemdelete%28_%29.md) function before adding a new one.
 
 
 ---

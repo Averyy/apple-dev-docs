@@ -1,7 +1,8 @@
 # rightTrigger
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s right adaptive trigger element.
 
@@ -19,9 +20,14 @@ The controller’s right adaptive trigger element.
 var rightTrigger: GCDualSenseAdaptiveTrigger { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCDualSenseAdaptiveTrigger * rightTrigger;
+```
+
 ## See Also
 
-- [var leftTrigger: GCDualSenseAdaptiveTrigger](gcdualsensegamepad/lefttrigger.md)
+### Getting adaptive triggers
+- [var leftTrigger: GCDualSenseAdaptiveTrigger](./lefttrigger.md)
   The controller’s left adaptive trigger element.
 
 

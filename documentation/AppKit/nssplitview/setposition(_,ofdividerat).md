@@ -1,7 +1,8 @@
 # setPosition(_:ofDividerAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the location of a divider you specify by index.
 
@@ -14,11 +15,15 @@ Updates the location of a divider you specify by index.
 func setPosition(_ position: CGFloat, ofDividerAt dividerIndex: Int)
 ```
 
+```objc
+- (void) setPosition:(CGFloat) position ofDividerAtIndex:(NSInteger) dividerIndex;
+```
+
 #### Discussion
 
 One of the views adjacent to the divider may collapse because the method’s default implementation assumes a person is dragging the divider to the new location. The Auto Layout system collapses the view if it can’t satisfy the view’s constraints — typically imposed by its delegate — with the divider’s new location.
 
-[`NSSplitView`](nssplitview.md) doesn’t invoke this method.
+[`NSSplitView`](../nssplitview.md) doesn’t invoke this method.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ One of the views adjacent to the divider may collapse because the method’s def
 
 ## See Also
 
-- [func minPossiblePositionOfDivider(at: Int) -> CGFloat](nssplitview/minpossiblepositionofdivider(at:).md)
+### Constraining Split Position
+- [func minPossiblePositionOfDivider(at: Int) -> CGFloat](./minpossiblepositionofdivider%28at%29.md)
   Returns the minimum possible position of the divider at the specified index.
-- [func maxPossiblePositionOfDivider(at: Int) -> CGFloat](nssplitview/maxpossiblepositionofdivider(at:).md)
+- [func maxPossiblePositionOfDivider(at: Int) -> CGFloat](./maxpossiblepositionofdivider%28at%29.md)
   Returns the maximum possible position of the divider at the specified index.
 
 

@@ -1,7 +1,8 @@
 # kCTTabColumnTerminatorsAttributeName
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies the terminating character for a tab column.
 
@@ -20,13 +21,18 @@ Specifies the terminating character for a tab column.
 let kCTTabColumnTerminatorsAttributeName: CFString
 ```
 
+```c
+extern CFStringRef const kCTTabColumnTerminatorsAttributeName;
+```
+
 #### Discussion
 
-The value associated with this attribute is a [`CFCharacterSet`](https://developer.apple.com/documentation/corefoundation/cfcharacterset) object. The character set is used to determine the terminating character for a tab column. The tab and newline characters are implied even if they don’t exist in the character set. This attribute can be used to implement decimal tabs, for instance. This attribute is optional.
+The value associated with this attribute is a [`CFCharacterSet`](../CoreFoundation/cfcharacterset.md) object. The character set is used to determine the terminating character for a tab column. The tab and newline characters are implied even if they don’t exist in the character set. This attribute can be used to implement decimal tabs, for instance. This attribute is optional.
 
 ## See Also
 
-- [func CTTextTabCreate(CTTextAlignment, Double, CFDictionary?) -> CTTextTab](cttexttabcreate(_:_:_:).md)
+### Creating Text Tabs
+- [func CTTextTabCreate(CTTextAlignment, Double, CFDictionary?) -> CTTextTab](./cttexttabcreate%28_,_,_%29.md)
   Creates and initializes a new text tab object.
 
 

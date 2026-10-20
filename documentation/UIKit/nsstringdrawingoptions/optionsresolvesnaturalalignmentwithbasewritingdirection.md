@@ -1,9 +1,10 @@
 # optionsResolvesNaturalAlignmentWithBaseWritingDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
+Specifies the behavior for resolving [`NSTextAlignment.natural`](../nstextalignment/natural.md) to the visual alignment.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@ Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment
 
 ```swift
 static var optionsResolvesNaturalAlignmentWithBaseWritingDirection: NSStringDrawingOptions { get }
+```
+
+```c
+NSStringDrawingOptionsResolvesNaturalAlignmentWithBaseWritingDirection
 ```
 
 #### Discussion

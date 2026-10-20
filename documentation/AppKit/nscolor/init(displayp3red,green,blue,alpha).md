@@ -1,7 +1,8 @@
 # init(displayP3Red:green:blue:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object from the specified components in the Display P3 color space.
 
@@ -12,6 +13,10 @@ Creates a color object from the specified components in the Display P3 color spa
 
 ```swift
 init(displayP3Red red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
+```
+
+```objc
++ (NSColor *) colorWithDisplayP3Red:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -31,13 +36,14 @@ Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as
 
 ## See Also
 
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md)
+### Creating a color using RGB components
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28srgbred,green,blue,alpha%29-9oz51.md)
   Creates a color object from the specified components in the sRGB colorspace.
-- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(red:green:blue:alpha:).md)
+- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28red,green,blue,alpha%29.md)
   Creates a color object with the specified red, green, blue, and alpha channel values.
-- [init(calibratedRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(calibratedred:green:blue:alpha:).md)
+- [init(calibratedRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28calibratedred,green,blue,alpha%29.md)
   Creates a color object using the given opacity and RGB components.
-- [init(deviceRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(devicered:green:blue:alpha:).md)
+- [init(deviceRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28devicered,green,blue,alpha%29.md)
   Creates a color object using the given opacity value and RGB components.
 
 

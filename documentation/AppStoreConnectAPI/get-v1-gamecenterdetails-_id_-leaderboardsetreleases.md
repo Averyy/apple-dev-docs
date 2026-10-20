@@ -1,12 +1,15 @@
 # Get leaderboard set releases information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all leaderboard set releases for a Game Center detail.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This endpoint is deprecated.
 
 ## Endpoint
 
@@ -14,25 +17,41 @@ List all leaderboard set releases for a Game Center detail.
 
 ## Parameters
 
-- `fields[gameCenterDetails]` ([string])
-- `fields[gameCenterLeaderboardSetReleases]` ([string])
-- `fields[gameCenterLeaderboardSets]` ([string])
-- `filter[gameCenterLeaderboardSet]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of game center for an app`](./get-v1-apps-_id_-gamecenterdetail.md) response.
+
+### Query Parameters
+
+- `fields[gameCenterDetails]` ([string]): **Allowed Values**: `arcadeEnabled`, `challengeEnabled`, `app`, `gameCenterAppVersions`, `gameCenterGroup`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`, `defaultLeaderboard`, `defaultLeaderboardV2`, `defaultGroupLeaderboard`, `defaultGroupLeaderboardV2`, `achievementReleases`, `activityReleases`, `challengeReleases`, `leaderboardReleases`, `leaderboardSetReleases`, `blockedPlayers`, `challengesMinimumPlatformVersions`
+- `fields[gameCenterLeaderboardSetReleases]` ([string]): **Allowed Values**: `live`, `gameCenterDetail`, `gameCenterLeaderboardSet`
+- `fields[gameCenterLeaderboardSets]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `gameCenterDetail`, `gameCenterGroup`, `groupLeaderboardSet`, `localizations`, `gameCenterLeaderboards`, `releases`
+- `filter[gameCenterLeaderboardSet]` ([string]) *(deprecated)*
 - `filter[live]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `include` ([string]): **Allowed Values**: `gameCenterDetail`, `gameCenterLeaderboardSet`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`GameCenterLeaderboardSetReleasesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List All Game Center Leaderboard Sets for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterleaderboardsetsv2.md)
+### Reading and editing leaderboard sets in a Game Center detail
+- [List All Game Center Leaderboard Sets for a Game Center Detail](./get-v1-gamecenterdetails-_id_-gamecenterleaderboardsetsv2.md)
   Get a list of leaderboard sets for a specific Game Center detail.
-- [Get All Leaderboard Set IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsetsv2.md)
+- [Get All Leaderboard Set IDs for a Game Center Detail](./get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsetsv2.md)
   Get a list of leaderboard set resource IDs for a specific Game Center detail.
-- [Get leaderboard sets information](get-v1-gamecenterdetails-_id_-gamecenterleaderboardsets.md)
+- [Get leaderboard sets information](./get-v1-gamecenterdetails-_id_-gamecenterleaderboardsets.md)
   Get all leaderboard sets and related information for a Game Center detail.
-- [List Leaderboard Sets](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsets.md)
+- [List Leaderboard Sets](./get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsets.md)
   List all leaderboards for a Game Center detail.
-- [List leaderboard set release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-leaderboardsetreleases.md)
+- [List leaderboard set release IDs for a Game Center detail](./get-v1-gamecenterdetails-_id_-relationships-leaderboardsetreleases.md)
 
 
 ---

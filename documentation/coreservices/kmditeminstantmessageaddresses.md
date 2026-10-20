@@ -1,7 +1,8 @@
 # kMDItemInstantMessageAddresses
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Instant message addresses related to this item. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Instant message addresses related to this item. A CFArray of CFStrings.
 
 ```swift
 let kMDItemInstantMessageAddresses: CFString!
+```
+
+```c
+const CFStringRef kMDItemInstantMessageAddresses;
 ```
 
 

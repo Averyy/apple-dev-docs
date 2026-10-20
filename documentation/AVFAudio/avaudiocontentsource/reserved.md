@@ -1,7 +1,8 @@
 # AVAudioContentSource.reserved
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,9 +19,14 @@
 case reserved
 ```
 
+```c
+AVAudioContentSource_Reserved
+```
+
 ## See Also
 
-- [AVAudioContentSource.unspecified](avaudiocontentsource/unspecified.md)
+### Using placeholder values
+- [AVAudioContentSource.unspecified](./unspecified.md)
 
 
 ---

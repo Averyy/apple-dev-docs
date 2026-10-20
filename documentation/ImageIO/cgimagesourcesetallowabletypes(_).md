@@ -1,7 +1,8 @@
 # CGImageSourceSetAllowableTypes(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Restricts which image formats can be decoded in the current process.
 
@@ -20,24 +21,29 @@ Restricts which image formats can be decoded in the current process.
 func CGImageSourceSetAllowableTypes(_ allowableTypes: CFArray) -> OSStatus
 ```
 
+```c
+extern OSStatus CGImageSourceSetAllowableTypes(CFArrayRef allowableTypes);
+```
+
 #### Discussion
 
 When this method has been called, ImageIO will only decode images whose format matches one of the entries in the allow list for the remaining lifetime of the process.
 
-If per-asset format restrictions are set via [`kCGImageSourceAllowableTypes`](kcgimagesourceallowabletypes.md), only formats allowed by both mechanisms are permitted. If `allowableTypes` is empty, all image parsing is disabled. Unknown format identifiers are ignored. Can only be called once per process; subsequent calls are ignored.
+If per-asset format restrictions are set via [`kCGImageSourceAllowableTypes`](./kcgimagesourceallowabletypes.md), only formats allowed by both mechanisms are permitted. If `allowableTypes` is empty, all image parsing is disabled. Unknown format identifiers are ignored. Can only be called once per process; subsequent calls are ignored.
 
-See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers).
+See also [System-declared uniform type identifiers](../UniformTypeIdentifiers/system-declared-uniform-type-identifiers.md).
 
 ## Parameters
 
-- `allowableTypes`: A [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) containing [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) Uniform Type Identifiers (UTIs) of allowed image formats.
+- `allowableTypes`: A [`CFArray`](../CoreFoundation/cfarray.md) containing [`CFString`](../CoreFoundation/cfstring.md) Uniform Type Identifiers (UTIs) of allowed image formats.
 
 ## See Also
 
-- [func CGImageDestinationAddImageAndMetadata(CGImageDestination, CGImage, CGImageMetadata?, CFDictionary?)](cgimagedestinationaddimageandmetadata(_:_:_:_:).md)
-- [func CGImageDestinationCopyImageSource(CGImageDestination, CGImageSource, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](cgimagedestinationcopyimagesource(_:_:_:_:).md)
-- [func CGImageSourceCopyMetadataAtIndex(CGImageSource, Int, CFDictionary?) -> CGImageMetadata?](cgimagesourcecopymetadataatindex(_:_:_:).md)
-- [func CGImageSourceRemoveCacheAtIndex(CGImageSource, Int)](cgimagesourceremovecacheatindex(_:_:).md)
+### Functions
+- [func CGImageDestinationAddImageAndMetadata(CGImageDestination, CGImage, CGImageMetadata?, CFDictionary?)](./cgimagedestinationaddimageandmetadata%28_,_,_,_%29.md)
+- [func CGImageDestinationCopyImageSource(CGImageDestination, CGImageSource, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Bool](./cgimagedestinationcopyimagesource%28_,_,_,_%29.md)
+- [func CGImageSourceCopyMetadataAtIndex(CGImageSource, Int, CFDictionary?) -> CGImageMetadata?](./cgimagesourcecopymetadataatindex%28_,_,_%29.md)
+- [func CGImageSourceRemoveCacheAtIndex(CGImageSource, Int)](./cgimagesourceremovecacheatindex%28_,_%29.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMirrorCommonGammaMask](1644562-anonymous/kmirrorcommongammamask.md)
-- [kMirrorSameDepthOnlyMirrorMask](1644562-anonymous/kmirrorsamedepthonlymirrormask.md)
-- [kMirrorSameSizeOnlyMirrorMask](1644562-anonymous/kmirrorsamesizeonlymirrormask.md)
-- [kMirrorSameTimingOnlyMirrorMask](1644562-anonymous/kmirrorsametimingonlymirrormask.md)
+- [kMirrorCommonGammaMask](./api-1644562-anonymous/kmirrorcommongammamask.md)
+- [kMirrorSameDepthOnlyMirrorMask](./api-1644562-anonymous/kmirrorsamedepthonlymirrormask.md)
+- [kMirrorSameSizeOnlyMirrorMask](./api-1644562-anonymous/kmirrorsamesizeonlymirrormask.md)
+- [kMirrorSameTimingOnlyMirrorMask](./api-1644562-anonymous/kmirrorsametimingonlymirrormask.md)
 
 
 ---

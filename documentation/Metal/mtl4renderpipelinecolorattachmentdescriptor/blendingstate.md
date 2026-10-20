@@ -1,7 +1,8 @@
 # blendingState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configure the blend state for color attachments the pipeline state uses.
 
@@ -19,9 +20,13 @@ Configure the blend state for color attachments the pipeline state uses.
 var blendingState: MTL4BlendState { get set }
 ```
 
+```objc
+@property (nonatomic) MTL4BlendState blendingState;
+```
+
 #### Discussion
 
-This property’s default value is [`MTL4BlendState.disabled`](mtl4blendstate/disabled.md).
+This property’s default value is [`MTL4BlendState.disabled`](../mtl4blendstate/disabled.md).
 
 
 ---

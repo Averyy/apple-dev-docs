@@ -1,7 +1,8 @@
 # BetaTester
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An individual enrolled as a beta tester in TestFlight, identified by their email address and associated with one or more apps or groups.
 
@@ -10,20 +11,20 @@ An individual enrolled as a beta tester in TestFlight, identified by their email
 
 ## Declaration
 
-```swift
+```
 object BetaTester
 ```
 
 ## Topics
 
 ### Attributes and Relationships
-- [object BetaTester.Attributes](betatester/attributes-data.dictionary.md)
+- [object BetaTester.Attributes](./betatester/attributes-data.dictionary.md)
   Attributes that describe a beta tester resource.
-- [type BetaInviteType](betainvitetype.md)
+- [type BetaInviteType](./betainvitetype.md)
   String that indicates how you offer a beta invitation.
-- [type BetaTesterState](betatesterstate.md)
+- [type BetaTesterState](./betatesterstate.md)
   String that describes the state of a beta tester.
-- [object BetaTester.Relationships](betatester/relationships-data.dictionary.md)
+- [object BetaTester.Relationships](./betatester/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -32,33 +33,36 @@ object BetaTester
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `relationships` (BetaTester.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaTesters`
 - `links` (ResourceLinks): Navigational links that include the self-link.
 
 ## See Also
 
-- [object BetaTestersWithoutIncludesResponse](betatesterswithoutincludesresponse.md)
+### Objects
+- [object BetaTestersWithoutIncludesResponse](./betatesterswithoutincludesresponse.md)
   A response containing a list of TestFlight beta testers, without related resources.
-- [object BetaTesterAppsLinkagesRequest](betatesterappslinkagesrequest.md)
+- [object BetaTesterAppsLinkagesRequest](./betatesterappslinkagesrequest.md)
   A request body you use to remove an app from a beta tester.
-- [object BetaTesterAppsLinkagesResponse](betatesterappslinkagesresponse.md)
+- [object BetaTesterAppsLinkagesResponse](./betatesterappslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
-- [object BetaTesterBetaGroupsLinkagesRequest](betatesterbetagroupslinkagesrequest.md)
+- [object BetaTesterBetaGroupsLinkagesRequest](./betatesterbetagroupslinkagesrequest.md)
   A request body you use to add or remove beta groups from a beta tester.
-- [object BetaTesterBetaGroupsLinkagesResponse](betatesterbetagroupslinkagesresponse.md)
+- [object BetaTesterBetaGroupsLinkagesResponse](./betatesterbetagroupslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
-- [object BetaTesterBuildsLinkagesRequest](betatesterbuildslinkagesrequest.md)
+- [object BetaTesterBuildsLinkagesRequest](./betatesterbuildslinkagesrequest.md)
   A request body you use to add or remove builds from a beta tester.
-- [object BetaTesterBuildsLinkagesResponse](betatesterbuildslinkagesresponse.md)
+- [object BetaTesterBuildsLinkagesResponse](./betatesterbuildslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
-- [object BetaTesterCreateRequest](betatestercreaterequest.md)
+- [object BetaTesterCreateRequest](./betatestercreaterequest.md)
   The request body you use to create a BetaTester.
-- [object BetaTesterResponse](betatesterresponse.md)
+- [object BetaTesterResponse](./betatesterresponse.md)
   The response body for endpoints that create, read, or modify a TestFlight beta tester.
-- [object BetaTestersResponse](betatestersresponse.md)
+- [object BetaTestersResponse](./betatestersresponse.md)
   The response body for endpoints that list TestFlight beta testers.
-- [object AppsBetaTesterUsagesV1MetricResponse](appsbetatesterusagesv1metricresponse.md)
+- [object AppsBetaTesterUsagesV1MetricResponse](./appsbetatesterusagesv1metricresponse.md)
   A response that contains one or more beta app tester metric resources.
-- [object BetaTesterUsagesV1MetricResponse](betatesterusagesv1metricresponse.md)
+- [object BetaTesterUsagesV1MetricResponse](./betatesterusagesv1metricresponse.md)
   A response that contains one or more beta tester usage metric resources.
 
 

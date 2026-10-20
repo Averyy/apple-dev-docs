@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates capabilities specifying the
 

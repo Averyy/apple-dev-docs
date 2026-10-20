@@ -1,7 +1,8 @@
 # tracked
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File is tracked for the purpose of document IDs.
 

@@ -1,7 +1,8 @@
 # VNDetectFaceCaptureQualityRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that produces a floating-point number that represents the capture quality of a face in a photo.
 
@@ -19,50 +20,55 @@ A request that produces a floating-point number that represents the capture qual
 class VNDetectFaceCaptureQualityRequest
 ```
 
+```objc
+@interface VNDetectFaceCaptureQualityRequest : VNImageBasedRequest
+```
+
 #### Overview
 
-This request produces or updates a [`VNFaceObservation`](vnfaceobservation.md) object’s property [`faceCaptureQuality`](vnfaceobservation/facecapturequality-bjg5.md) with a floating-point value. The value ranges from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
+This request produces or updates a [`VNFaceObservation`](./vnfaceobservation.md) object’s property [`faceCaptureQuality`](./vnfaceobservation/facecapturequality-bjg5.md) with a floating-point value. The value ranges from `0` to `1`. Faces with quality closer to `1` are better lit, sharper, and more centrally positioned than faces with quality closer to `0`.
 
-If you don’t execute the request, or the request fails, the property [`faceCaptureQuality`](vnfaceobservation/facecapturequality-bjg5.md) is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+If you don’t execute the request, or the request fails, the property [`faceCaptureQuality`](./vnfaceobservation/facecapturequality-bjg5.md) is [`nil`](../ObjectiveC/nil-227m0.md).
 
 ## Topics
 
 ### Accessing the Results
-- [var results: [VNFaceObservation]?](vndetectfacecapturequalityrequest/results.md)
+- [var results: [VNFaceObservation]?](./vndetectfacecapturequalityrequest/results.md)
   The results of the face-capture quality request.
-- [class VNFaceObservation](vnfaceobservation.md)
+- [class VNFaceObservation](./vnfaceobservation.md)
   Face or facial-feature information that an image analysis request detects.
 ### Identifying Request Revisions
-- [var VNDetectFaceCaptureQualityRequestRevision2: Int](vndetectfacecapturequalityrequestrevision2.md)
+- [var VNDetectFaceCaptureQualityRequestRevision2: Int](./vndetectfacecapturequalityrequestrevision2.md)
   Revision 2 of the request algorithm.
-- [var VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
+- [var VNDetectFaceCaptureQualityRequestRevision1: Int](./vndetectfacecapturequalityrequestrevision1.md)
   A constant for specifying revision 1 of the face capture detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VNFaceObservationAccepting](vnfaceobservationaccepting.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VNFaceObservationAccepting](./vnfaceobservationaccepting.md)
 
 ## See Also
 
-- [Selecting a selfie based on capture quality](selecting-a-selfie-based-on-capture-quality.md)
+### Face and body detection
+- [Selecting a selfie based on capture quality](./selecting-a-selfie-based-on-capture-quality.md)
   Compare face-capture quality in a set of images by using Vision.
-- [class VNDetectFaceLandmarksRequest](vndetectfacelandmarksrequest.md)
+- [class VNDetectFaceLandmarksRequest](./vndetectfacelandmarksrequest.md)
   An image-analysis request that finds facial features like eyes and mouth in an image.
-- [class VNDetectFaceRectanglesRequest](vndetectfacerectanglesrequest.md)
+- [class VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md)
   A request that finds faces within an image.
-- [class VNDetectHumanRectanglesRequest](vndetecthumanrectanglesrequest.md)
+- [class VNDetectHumanRectanglesRequest](./vndetecthumanrectanglesrequest.md)
   A request that finds rectangular regions that contain people in an image.
-- [class VNHumanObservation](vnhumanobservation.md)
+- [class VNHumanObservation](./vnhumanobservation.md)
   An object that represents a person that the request detects.
 
 

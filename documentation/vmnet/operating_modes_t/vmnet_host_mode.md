@@ -1,7 +1,8 @@
 # operating_modes_t.VMNET_HOST_MODE
 
 **Framework**: vmnet  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,13 +14,18 @@
 case VMNET_HOST_MODE
 ```
 
+```c
+VMNET_HOST_MODE
+```
+
 #### Discussion
 
 Mode that allows the guest network interface to communicate with other guest network interfaces in the host mode and with the native host.
 
 ## See Also
 
-- [operating_modes_t.VMNET_SHARED_MODE](operating_modes_t/vmnet_shared_mode.md)
+### Constants
+- [operating_modes_t.VMNET_SHARED_MODE](./vmnet_shared_mode.md)
 
 
 ---

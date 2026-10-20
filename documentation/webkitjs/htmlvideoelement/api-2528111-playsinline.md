@@ -1,7 +1,8 @@
 # playsInline
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A Boolean value indicating whether the video plays inline.
 
@@ -11,17 +12,18 @@ A Boolean value indicating whether the video plays inline.
 
 ## Declaration
 
-```swift
+```
 attribute boolean playsInline;
 ```
 
 ## See Also
 
-- [webkitSetPresentationMode](htmlvideoelement/1631224-webkitsetpresentationmode.md)
+### Displaying Presentation Mode
+- [webkitSetPresentationMode](./api-1631224-webkitsetpresentationmode.md)
   Sets the presentation mode for video playback. 
-- [webkitSupportsPresentationMode](htmlvideoelement/1629816-webkitsupportspresentationmode.md)
+- [webkitSupportsPresentationMode](./api-1629816-webkitsupportspresentationmode.md)
   A Boolean value indicating whether the video can be played in presentation mode.
-- [webkitPresentationMode](htmlvideoelement/1631913-webkitpresentationmode.md)
+- [webkitPresentationMode](./api-1631913-webkitpresentationmode.md)
   A property indicating the presentation mode. 
 
 

@@ -1,7 +1,8 @@
 # onloadend
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function that is called when the request is completed for any reason.
 
@@ -10,7 +11,7 @@ A callback function that is called when the request is completed for any reason.
 
 ## Declaration
 
-```swift
+```
 attribute function onloadend;
 ```
 
@@ -20,17 +21,18 @@ This attribute must be set to a function; for example, `XMLHttpRequest.onloadend
 
 ## See Also
 
-- [onabort](xmlhttprequest/1627410-onabort.md)
+### Implementing Callback Functions
+- [onabort](./api-1627410-onabort.md)
   A callback function called when a request is cancelled by the user.
-- [onerror](xmlhttprequest/1627328-onerror.md)
+- [onerror](./api-1627328-onerror.md)
   A callback function that is called if the request fails due to an error.
-- [onload](xmlhttprequest/1627316-onload.md)
+- [onload](./api-1627316-onload.md)
   A callback function that is called when the request is successfully completed.
-- [onloadstart](xmlhttprequest/1627440-onloadstart.md)
+- [onloadstart](./api-1627440-onloadstart.md)
   A callback function that is called when the request begins.
-- [onreadystatechange](xmlhttprequest/1627414-onreadystatechange.md)
-  A callback function that is called when the [`readyState`](xmlhttprequest/1627324-readystate.md) attribute changes.
-- [ontimeout](xmlhttprequest/1627321-ontimeout.md)
+- [onreadystatechange](./api-1627414-onreadystatechange.md)
+  A callback function that is called when the [`readyState`](./api-1627324-readystate.md) attribute changes.
+- [ontimeout](./api-1627321-ontimeout.md)
   A callback function that is called when a request times out.
 
 

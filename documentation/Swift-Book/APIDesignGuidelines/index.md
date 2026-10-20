@@ -1,32 +1,9 @@
 ---
-layout: page
-title: API Design Guidelines
-official_url: https://swift.org/documentation/api-design-guidelines/
-redirect_from: /documentation/api-design-guidelines.html
+source: swiftlang/swift-org-website
+url: https://swift.org/documentation/api-design-guidelines/
 ---
-<!-- {% comment %}
-The width of <pre> elements on this page is carefully regulated, so we
-can afford to drop the scrollbar boxes.
-{% endcomment %} -->
-<style>
-article pre {
-    overflow: visible;
-}
-</style>
 
-<!-- {% comment %}
-Define some variables that help us build expanding detail sections
-without too much boilerplate.  We use checkboxes instead of
-<details>...</details> because it allows us to:
-
-  * Write CSS ensuring that details aren't hidden when printing.
-  * Add a button that expands or collapses all sections at once.
-{% endcomment %} -->
-{% capture expand %}{::nomarkdown}
-<input type="checkbox" class="detail">
-{:/nomarkdown}{% endcapture %}
-{% assign detail = '<div class="more" markdown="1">' %}
-{% assign enddetail = '</div>' %}
+# API Design Guidelines
 
 <div class="info screenonly" markdown="1">
 To facilitate use as a quick reference, the details of many guidelines
@@ -36,10 +13,6 @@ is printed.
 </div>
 
 ## Table of Contents
-{:.no_toc}
-
-* TOC
-{:toc}
 
 ## Introduction
 
@@ -54,31 +27,23 @@ These design guidelines explain how to make sure that your code feels like a par
   concise.  When evaluating a design, reading a declaration is seldom
   sufficient; always examine a use case to make sure it looks
   clear in context.
-  {:#clarity-at-the-point-of-use}
 
 * **Clarity is more important than brevity.**  Although Swift
   code can be compact, it is a *non-goal*
   to enable the smallest possible code with the fewest characters.
   Brevity in Swift code, where it occurs, is a side-effect of the
   strong type system and features that naturally reduce boilerplate.
-  {:#clarity-over-brevity}
 
 * **Write a documentation comment**
   for every declaration. Insights gained by writing documentation can
   have a profound impact on your design, so don't put it off.
-  {:#write-doc-comment}
 
   <div class="warning" markdown="1">
   If you are having trouble describing your API's
   functionality in simple terms, **you may have designed the wrong API.**
   </div>
 
-  {{expand}}
-  {{detail}}
-  {% assign ref = 'https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/' %}
-  {% capture SymbolDoc %}{{ref}}SymbolDocumentation.html#//apple_ref/doc/uid/TP40016497-CH51-{% endcapture %}
-
-  * **Use Swift's [dialect of Markdown]({{ref}}).**
+  * **Use Swift's [dialect of Markdown](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/).**
 
   * **Begin with a summary** that describes the entity being declared.
     Often, an API can be completely understood from its declaration and
@@ -89,9 +54,6 @@ These design guidelines explain how to make sure that your code feels like a par
     /// **reverse order.**
     func reversed() -> ReverseCollection<Self>
     ~~~
-
-    {{expand}}
-    {{detail}}
 
     * **Focus on the summary**; it's the most important part. Many
       excellent documentation comments consist of nothing more than a
@@ -146,8 +108,6 @@ These design guidelines explain how to make sure that your code feels like a par
         ...
       ~~~
 
-    {{enddetail}}
-
   * **Optionally, continue** with one or more paragraphs and bullet
     items.  Paragraphs are separated by blank lines and use complete
     sentences.
@@ -161,41 +121,34 @@ These design guidelines explain how to make sure that your code feels like a par
     ///
     /// - **Parameter separator**: text to be printed    <span class="graphic">⎫</span>
     ///   between items.                             <span class="graphic">⎟</span>
-    /// - **Parameter terminator**: text to be printed   <span class="graphic">⎬</span><span class="commentary"> <a href="{{SymbolDoc}}SW14">Parameters section</a></span>
+    /// - **Parameter terminator**: text to be printed   <span class="graphic">⎬</span><span class="commentary"> <a href="https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/SymbolDocumentation.html#//apple_ref/doc/uid/TP40016497-CH51-SW14">Parameters section</a></span>
     ///   at the end.                                <span class="graphic">⎟</span>
     ///                                              <span class="graphic">⎭</span>
     /// - **Note**: To print without a trailing          <span class="graphic">⎫</span>
     ///   newline, pass `terminator: ""`             <span class="graphic">⎟</span>
-    ///                                              <span class="graphic">⎬</span><span class="commentary"> <a href="{{SymbolDoc}}SW13">Symbol commands</a></span>
+    ///                                              <span class="graphic">⎬</span><span class="commentary"> <a href="https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/SymbolDocumentation.html#//apple_ref/doc/uid/TP40016497-CH51-SW13">Symbol commands</a></span>
     /// - **SeeAlso**: `CustomDebugStringConvertible`,   <span class="graphic">⎟</span>
     ///   `CustomStringConvertible`, `debugPrint`.   <span class="graphic">⎭</span>
     public func print<Target: OutputStreamType>(
       _ items: Any..., separator: String = " ", terminator: String = "\n")
     ~~~
 
-    {{expand}}
-    {{detail}}
-
     * **Use recognized
-      [symbol documentation markup]({{SymbolDoc}}SW1)
+      [symbol documentation markup](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/SymbolDocumentation.html#//apple_ref/doc/uid/TP40016497-CH51-SW1)
       elements** to add information beyond the summary, whenever
       appropriate.
 
     * **Know and use recognized bullet items with
-      [symbol command syntax]({{SymbolDoc}}SW13).** Popular development
+      [symbol command syntax](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/SymbolDocumentation.html#//apple_ref/doc/uid/TP40016497-CH51-SW13).** Popular development
       tools such as Xcode give special treatment to bullet items that
       start with the following keywords:
 
-      | [Attention]({{ref}}Attention.html) | [Author]({{ref}}Author.html) | [Authors]({{ref}}Authors.html) | [Bug]({{ref}}Bug.html) |
-      | [Complexity]({{ref}}Complexity.html) | [Copyright]({{ref}}Copyright.html) | [Date]({{ref}}Date.html) | [Experiment]({{ref}}Experiment.html) |
-      | [Important]({{ref}}Important.html) | [Invariant]({{ref}}Invariant.html) | [Note]({{ref}}Note.html) | [Parameter]({{ref}}Parameter.html) |
-      | [Parameters]({{ref}}Parameters.html) | [Postcondition]({{ref}}Postcondition.html) | [Precondition]({{ref}}Precondition.html) | [Remark]({{ref}}Remark.html) |
-      | [Requires]({{ref}}Requires.html) | [Returns]({{ref}}Returns.html) | [SeeAlso]({{ref}}SeeAlso.html) | [Since]({{ref}}Since.html) |
-      | [Throws]({{ref}}Throws.html) | [ToDo]({{ref}}Todo.html) | [Version]({{ref}}Version.html) | [Warning]({{ref}}Warning.html) |
-
-    {{enddetail}}
-
-  {{enddetail}}
+      | [Attention](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Attention.html) | [Author](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Author.html) | [Authors](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Authors.html) | [Bug](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Bug.html) |
+      | [Complexity](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Complexity.html) | [Copyright](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Copyright.html) | [Date](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Date.html) | [Experiment](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Experiment.html) |
+      | [Important](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Important.html) | [Invariant](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Invariant.html) | [Note](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Note.html) | [Parameter](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Parameter.html) |
+      | [Parameters](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Parameters.html) | [Postcondition](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Postcondition.html) | [Precondition](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Precondition.html) | [Remark](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Remark.html) |
+      | [Requires](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Requires.html) | [Returns](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Returns.html) | [SeeAlso](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/SeeAlso.html) | [Since](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Since.html) |
+      | [Throws](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Throws.html) | [ToDo](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Todo.html) | [Version](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Version.html) | [Warning](https://developer.apple.com/library/prerelease/mac/documentation/Xcode/Reference/xcode_markup_formatting_ref/Warning.html) |
 
 ## Naming
 
@@ -203,10 +156,7 @@ These design guidelines explain how to make sure that your code feels like a par
 
 * **Include all the words needed to avoid ambiguity** for a person
   reading code where the name is used.
-  {:#include-words-to-avoid-ambiguity}
 
-  {{expand}}
-  {{detail}}
   For example, consider a method that removes the element at a
   given position within a collection.
 
@@ -216,7 +166,7 @@ These design guidelines explain how to make sure that your code feels like a par
   }
   employees.remove(at: x)
   ~~~
-  {:.good}
+  *(good)*
 
   If we were to omit the word `at` from the method signature, it could
   imply to the reader that the method searches for and removes an
@@ -226,16 +176,11 @@ These design guidelines explain how to make sure that your code feels like a par
   ~~~ swift
   employees.remove(x) // unclear: are we removing x?
   ~~~
-  {:.bad}
-
-  {{enddetail}}
+  *(bad)*
 
 * **Omit needless words.** Every word in a name should convey salient
   information at the use site.
-  {:#omit-needless-words}
 
-  {{expand}}
-  {{detail}}
   More words may be needed to clarify intent or disambiguate
   meaning, but those that are redundant with information the reader
   already possesses should be omitted. In particular, omit words that
@@ -246,7 +191,7 @@ These design guidelines explain how to make sure that your code feels like a par
 
   allViews.removeElement(cancelButton)
   ~~~
-  {:.bad}
+  *(bad)*
 
   In this case, the word `Element` adds nothing salient at the call
   site. This API would be better:
@@ -256,20 +201,16 @@ These design guidelines explain how to make sure that your code feels like a par
 
   allViews.remove(cancelButton) // clearer
   ~~~
-  {:.good}
+  *(good)*
 
   Occasionally, repeating type information is necessary to avoid
   ambiguity, but in general it is better to use a word that
   describes a parameter's *role* rather than its type. See the next
   item for details.
-  {{enddetail}}
 
 * **Name variables, parameters, and associated types according to
   their roles,** rather than their type constraints.
-  {:#name-according-to-roles}
 
-  {{expand}}
-  {{detail}}
   ~~~ swift
   var **string** = "Hello"
   protocol ViewController {
@@ -279,7 +220,7 @@ These design guidelines explain how to make sure that your code feels like a par
     func restock(from **widgetFactory**: WidgetFactory)
   }
   ~~~
-  {:.bad}
+  *(bad)*
 
   Repurposing a type name in this way fails to optimize clarity and
   expressivity. Instead, strive to choose a name that expresses the
@@ -294,7 +235,7 @@ These design guidelines explain how to make sure that your code feels like a par
     func restock(from **supplier**: WidgetFactory)
   }
   ~~~
-  {:.good}
+  *(good)*
 
   If an associated type is so tightly bound to its protocol constraint
   that the protocol name *is* the role, avoid collision by appending
@@ -306,13 +247,9 @@ These design guidelines explain how to make sure that your code feels like a par
   }
   protocol Iterator**Protocol** { ... }
   ~~~
-  {{enddetail}}
 
 * **Compensate for weak type information** to clarify a parameter's role.
-  {:#weak-type-information}
 
-  {{expand}}
-  {{detail}}
   Especially when a parameter type is `NSObject`, `Any`, `AnyObject`,
   or a fundamental type such as `Int` or `String`, type information and
   context at the point of use may not fully convey intent. In this
@@ -323,7 +260,7 @@ These design guidelines explain how to make sure that your code feels like a par
 
   grid.add(self, for: graphics) // vague
   ~~~
-  {:.bad}
+  *(bad)*
 
   To restore clarity, **precede each weakly typed parameter with a
   noun describing its role**:
@@ -332,30 +269,26 @@ These design guidelines explain how to make sure that your code feels like a par
   func add**Observer**(_ observer: NSObject, for**KeyPath** path: String)
   grid.addObserver(self, forKeyPath: graphics) // clear
   ~~~
-  {:.good}
-  {{enddetail}}
+  *(good)*
 
 ### Strive for Fluent Usage
 
 * **Prefer method and function names that make use sites form
   grammatical English phrases.**
-  {:#methods-and-functions-read-as-phrases}
 
-  {{expand}}
-  {{detail}}
   ~~~swift
   x.insert(y, at: z)          <span class="commentary">“x, insert y at z”</span>
   x.subviews(havingColor: y)  <span class="commentary">“x's subviews having color y”</span>
   x.capitalizingNouns()       <span class="commentary">“x, capitalizing nouns”</span>
   ~~~
-  {:.good}
+  *(good)*
 
   ~~~swift
   x.insert(y, position: z)
   x.subviews(color: y)
   x.nounCapitalize()
   ~~~
-  {:.bad}
+  *(bad)*
 
   It is acceptable for fluency to degrade after the first argument or
   two when those arguments are not central to the call's meaning:
@@ -365,20 +298,15 @@ These design guidelines explain how to make sure that your code feels like a par
     with: description,
     **options: [.inProcess], completionHandler: stopProgressBar**)
   ~~~
-  {{enddetail}}
 
 * **Begin names of factory methods with “`make`”,**
   e.g. `x.makeIterator()`.
-  {:#begin-factory-name-with-make}
 
 * The first argument to **initializer and
   [factory methods](https://en.wikipedia.org/wiki/Factory_method_pattern) calls**
   should not form a phrase starting with the base name,
   e.g. `x.makeWidget(cogCount: 47)`
-  {:#init-factory-phrase-ends-with-basename}
 
-  {{expand}}
-  {{detail}}
   For example, the first arguments to these calls do not read as part of the same
   phrase as the base name:
 
@@ -387,7 +315,7 @@ These design guidelines explain how to make sure that your code feels like a par
   let newPart = **factory.makeWidget**(gears: 42, spindles: 14)
   let ref = **Link**(target: destination)
   ~~~
-  {:.good}
+  *(good)*
 
   In the following, the API author has tried to create grammatical
   continuity with the first argument.
@@ -397,7 +325,7 @@ These design guidelines explain how to make sure that your code feels like a par
   let newPart = **factory.makeWidget(havingGearCount: 42, andSpindleCount: 14)**
   let ref = **Link(to: destination)**
   ~~~
-  {:.bad}
+  *(bad)*
 
   In practice, this guideline along with those for
   [argument labels](#argument-labels) means the first argument will
@@ -407,10 +335,8 @@ These design guidelines explain how to make sure that your code feels like a par
   ~~~swift
   let rgbForeground = RGBColor(cmykForeground)
   ~~~
-  {{enddetail}}
 
 * **Name functions and methods according to their side-effects**
-  {:#name-according-to-side-effects}
 
   * Those without side-effects should read as noun phrases,
     e.g. `x.distance(to: y)`, `i.successor()`.
@@ -431,9 +357,6 @@ These design guidelines explain how to make sure that your code feels like a par
       |-
       |`x.sort()`|`z = x.sorted()`|
       |`x.append(y)`|`z = x.appending(y)`|
-
-      {{expand}}
-      {{detail}}
 
       * Prefer to name the nonmutating variant using the verb's past
         [participle](https://en.wikipedia.org/wiki/Participle) (usually
@@ -466,8 +389,6 @@ These design guidelines explain how to make sure that your code feels like a par
         let oneLine = t.strippingNewlines()
         ~~~
 
-      {{enddetail}}
-
     * When the operation is **naturally described by a noun**, use the
       noun for the nonmutating method and apply the “form” prefix to
       name its mutating counterpart.
@@ -480,20 +401,16 @@ These design guidelines explain how to make sure that your code feels like a par
 * **Uses of Boolean methods and properties should read as assertions
   about the receiver** when the use is nonmutating, e.g. `x.isEmpty`,
   `line1.intersects(line2)`.
-  {:#boolean-assertions}
 
 * **Protocols that describe *what something is* should read as
   nouns** (e.g. `Collection`).
-  {:#protocols-describing-what-is-should-read-as-nouns}
 
 * **Protocols that describe a *capability*
   should be named using the suffixes `able`, `ible`, or `ing`**
   (e.g. `Equatable`, `ProgressReporting`).
-  {:#protocols-describing-capability-should-use-suffixes}
 
 * The names of other **types, properties, variables, and constants
   should read as nouns.**
-  {:#name-of-others-should-read-as-nouns}
 
 ### Use Terminology Well
 
@@ -505,13 +422,9 @@ These design guidelines explain how to make sure that your code feels like a par
   as well.  Don't say “epidermis” if “skin” will serve your purpose.
   Terms of art are an essential communication tool, but should only be
   used to capture crucial meaning that would otherwise be lost.
-  {:#avoid-obscure-terms}
 
 * **Stick to the established meaning** if you do use a term of art.
-  {:#stick-to-established-meaning}
 
-  {{expand}}
-  {{detail}}
   The only reason to use a technical term rather than a more common
   word is that it *precisely* expresses something that would
   otherwise be ambiguous or unclear.  Therefore, an API should use
@@ -520,27 +433,20 @@ These design guidelines explain how to make sure that your code feels like a par
   * **Don't surprise an expert**: anyone already familiar with the term
     will be surprised and probably angered if we appear to have
     invented a new meaning for it.
-    {:#do-not-surprise-an-expert}
 
   * **Don't confuse a beginner**: anyone trying to learn the term is
     likely to do a web search and find its traditional meaning.
-    {:#do-not-confuse-a-beginner}
-  {{enddetail}}
 
 * **Avoid abbreviations.** Abbreviations, especially non-standard
   ones, are effectively terms-of-art, because understanding depends on
   correctly translating them into their non-abbreviated forms.
-  {:#avoid-abbreviations}
 
   > The intended meaning for any abbreviation you use should be
   > easily found by a web search.
 
 * **Embrace precedent.** Don't optimize terms for the total beginner
   at the expense of conformance to existing culture.
-  {:#embrace-precedent}
 
-  {{expand}}
-  {{detail}}
   It is better to name a contiguous data structure `Array` than to
   use a simplified term such as `List`, even though a beginner
   might grasp the meaning of `List` more easily.  Arrays are
@@ -557,7 +463,6 @@ These design guidelines explain how to make sure that your code feels like a par
   avoid abbreviations: although the complete word is `sine`,
   “sin(*x*)” has been in common use among programmers for decades,
   and among mathematicians for centuries.
-  {{enddetail}}
 
 ## Conventions
 
@@ -568,14 +473,9 @@ These design guidelines explain how to make sure that your code feels like a par
   significant computation, because they have stored properties as a
   mental model. Be sure to alert them when that assumption may be
   violated.
-  {:#document-computed-property-complexity}
 
 * **Prefer methods and properties to free functions.**  Free functions
   are used only in special cases:
-  {:#prefer-method-and-properties-to-functions}
-
-  {{expand}}
-  {{detail}}
 
   1. When there's no obvious `self`:
 
@@ -595,14 +495,8 @@ These design guidelines explain how to make sure that your code feels like a par
      sin(x)
      ~~~
 
-  {{enddetail}}
-
 * **Follow case conventions.** Names of types and protocols are
   `UpperCamelCase`.  Everything else is `lowerCamelCase`.
-  {:#follow-case-conventions}
-
-  {{expand}}
-  {{detail}}
 
   [Acronyms and initialisms](https://en.wikipedia.org/wiki/Acronym)
   that commonly appear as all upper case in American English should be
@@ -620,22 +514,10 @@ These design guidelines explain how to make sure that your code feels like a par
   var **radar**Detector: **Radar**Scanner
   var enjoys**Scuba**Diving = true
   ~~~
-  {{enddetail}}
-
-{% comment %}
-* **Be conscious of grammatical ambiguity**. Many words can act as
-   either a noun or a verb, e.g. “insert,” “record,” “contract,” and
-   “drink.”  Consider how these dual roles may affect the clarity of
-   your API.
-  {:#be-conscious-of-grammatical-ambiguity}
-{% endcomment %}
 
 * **Methods can share a base name** when they share the same basic
   meaning or when they operate in distinct domains.
-  {:#similar-methods-can-share-a-base-name}
 
-  {{expand}}
-  {{detail}}
   For example, the following is encouraged, since the methods do essentially
   the same things:
 
@@ -654,7 +536,7 @@ These design guidelines explain how to make sure that your code feels like a par
     func **contains**(_ other: **LineSegment**) -> Bool { ... }
   }
   ~~~
-  {:.good}
+  *(good)*
 
   And since geometric types and collections are separate domains,
   this is also fine in the same program:
@@ -666,7 +548,7 @@ These design guidelines explain how to make sure that your code feels like a par
     func **contains**(_ sought: Element) -> Bool { ... }
   }
   ~~~
-  {:.good}
+  *(good)*
 
   However, these `index` methods have different semantics, and should
   have been named differently:
@@ -680,7 +562,7 @@ These design guidelines explain how to make sure that your code feels like a par
     func **index**(_ n: Int, inTable: TableID) -> TableRow { ... }
   }
   ~~~
-  {:.bad}
+  *(bad)*
 
   Lastly, avoid “overloading on return type” because it causes
   ambiguities in the presence of type inference.
@@ -696,12 +578,9 @@ These design guidelines explain how to make sure that your code feels like a par
     func **value**() -> String? { ... }
   }
   ~~~
-  {:.bad}
-
-  {{enddetail}}
+  *(bad)*
 
 ### Parameters
-{:#parameter-names}
 
 ~~~swift
 func move(from **start**: Point, to **end**: Point)
@@ -710,10 +589,7 @@ func move(from **start**: Point, to **end**: Point)
 * **Choose parameter names to serve documentation**. Even though
   parameter names do not appear at a function or method's point of
   use, they play an important explanatory role.
-  {:#choose-parameter-names-to-serve-doc}
 
-  {{expand}}
-  {{detail}}
   Choose these names to make documentation easy to read.  For example,
   these names make documentation read naturally:
 
@@ -725,7 +601,7 @@ func move(from **start**: Point, to **end**: Point)
   /// Replace the given `**subRange**` of elements with `**newElements**`.
   mutating func replaceRange(_ **subRange**: Range<Index>, with **newElements**: [E])
   ~~~
-  {:.good}
+  *(good)*
 
   These, however, make the documentation awkward and ungrammatical:
 
@@ -738,17 +614,12 @@ func move(from **start**: Point, to **end**: Point)
   /// the contents of `**with**`.
   mutating func replaceRange(_ **r**: Range<Index>, **with**: [E])
   ~~~
-  {:.bad}
-
-  {{enddetail}}
+  *(bad)*
 
 * **Take advantage of defaulted parameters** when it simplifies common
   uses.  Any parameter with a single commonly-used value is a
   candidate for a default.
-  {:#take-advantage-of-defaulted-parameters}
 
-  {{expand}}
-  {{detail}}
   Default arguments improve readability by
   hiding irrelevant information.  For example:
 
@@ -756,14 +627,14 @@ func move(from **start**: Point, to **end**: Point)
   let order = lastName.compare(
     royalFamilyName**, options: [], range: nil, locale: nil**)
   ~~~
-  {:.bad}
+  *(bad)*
 
   can become the much simpler:
 
   ~~~ swift
   let order = lastName.**compare(royalFamilyName)**
   ~~~
-  {:.good}
+  *(good)*
 
   Default arguments are generally preferable to the use of method
   families, because they impose a lower cognitive burden on anyone
@@ -778,7 +649,7 @@ func move(from **start**: Point, to **end**: Point)
     ) -> Ordering
   }
   ~~~
-  {:.good}
+  *(good)*
 
   The above may not be simple, but it is much simpler than:
 
@@ -797,7 +668,7 @@ func move(from **start**: Point, to **end**: Point)
        range: Range<Index>, locale: Locale) -> Ordering
   }
   ~~~
-  {:.bad}
+  *(bad)*
 
   Every member of a method family needs to be separately documented
   and understood by users. To decide among them, a user needs to
@@ -806,13 +677,11 @@ func move(from **start**: Point, to **end**: Point)
   this a tedious process of ferreting out minor differences in
   mostly identical documentation.  Using a single method with
   defaults provides a vastly superior programmer experience.
-  {{enddetail}}
 
 * **Prefer to locate parameters with defaults toward the end** of the
   parameter list.  Parameters without defaults are usually more
   essential to the semantics of a method, and provide a stable initial
   pattern of use where methods are invoked.
-  {:#parameter-with-defaults-towards-the-end}
 
 * **If your API will run in production, prefer `#fileID`** over alternatives.
   `#fileID` saves space and protects developers’ privacy. Use `#filePath` in
@@ -829,14 +698,10 @@ x.move(**from:** x, **to:** y)
 
 * **Omit all labels when arguments can't be usefully distinguished**,
   e.g. `min(number1, number2)`, `zip(sequence1, sequence2)`.
-  {:#no-labels-for-indistinguishable-arguments}
 
 * **In initializers that perform value preserving type conversions, omit the
   first argument label**, e.g. `Int64(someUInt32)`
-  {:#type-conversion}
 
-  {{expand}}
-  {{detail}}
   The first argument should always be the source of the conversion.
 
   ~~~
@@ -880,17 +745,12 @@ x.move(**from:** x, **to:** y)
   > Note: the ability to retrieve the original value has no bearing
   > on whether a conversion is value preserving.
 
-  {{enddetail}}
-
 * **When the first argument forms part of a
   [prepositional phrase](https://en.wikipedia.org/wiki/Adpositional_phrase#Prepositional_phrases),
   give it an argument label**.  The argument label should normally begin at the
   [preposition](https://en.wikipedia.org/wiki/Preposition),
   e.g. `x.removeBoxes(havingLength: 12)`.
-  {:#give-prepositional-phrase-argument-label}
 
-  {{expand}}
-  {{detail}}
   An exception arises when the first two arguments represent parts of
   a single abstraction.
 
@@ -898,7 +758,7 @@ x.move(**from:** x, **to:** y)
   a.move(**toX:** b, **y:** c)
   a.fade(**fromRed:** b, **green:** c, **blue:** d)
   ~~~
-  {:.bad}
+  *(bad)*
 
   In such cases, begin the argument label *after* the preposition, to
   keep the abstraction clear.
@@ -907,16 +767,12 @@ x.move(**from:** x, **to:** y)
   a.moveTo(**x:** b, **y:** c)
   a.fadeFrom(**red:** b, **green:** c, **blue:** d)
   ~~~
-  {:.good}
-  {{enddetail}}
+  *(good)*
 
 * **Otherwise, if the first argument forms part of a grammatical
   phrase, omit its label**, appending any preceding words to the base
   name, e.g. `x.addSubview(y)`
-  {:#omit-first-argument-if-partial-phrase}
 
-  {{expand}}
-  {{detail}}
   This guideline implies that if the first argument *doesn't* form
   part of a grammatical phrase, it should have a label.
 
@@ -925,7 +781,7 @@ x.move(**from:** x, **to:** y)
   let text = words.split(**maxSplits:** 12)
   let studentsByName = students.sorted(**isOrderedBefore:** Student.namePrecedes)
   ~~~
-  {:.good}
+  *(good)*
 
   Note that it's important that the phrase convey the correct meaning.
   The following would be grammatical but would express the wrong
@@ -935,12 +791,11 @@ x.move(**from:** x, **to:** y)
   view.dismiss(false)   <span class="commentary">Don't dismiss? Dismiss a Bool?</span>
   words.split(12)       <span class="commentary">Split the number 12?</span>
   ~~~
-  {:.bad}
+  *(bad)*
 
   Note also that arguments with default values can be omitted, and
   in that case do not form part of a grammatical phrase, so they
   should always have labels.
-  {{enddetail}}
 
 * **Label all other arguments**.
 
@@ -948,10 +803,7 @@ x.move(**from:** x, **to:** y)
 
 * **Label tuple members and name closure parameters** where they
   appear in your API.
-  {:#label-closure-parameters}
 
-  {{expand}}
-  {{detail}}
   These names have
   explanatory power, can be referenced from documentation comments,
   and provide expressive access to tuple members.
@@ -978,15 +830,11 @@ x.move(**from:** x, **to:** y)
   Names used for closure parameters should be chosen like
   [parameter names](#parameter-names) for top-level functions. Labels for
   closure arguments that appear at the call site are not supported.
-  {{enddetail}}
 
 * **Take extra care with unconstrained polymorphism** (e.g. `Any`,
   `AnyObject`, and unconstrained generic parameters) to avoid
   ambiguities in overload sets.
-  {:#unconstrained-polymorphism}
 
-  {{expand}}
-  {{detail}}
   For example, consider this overload set:
 
   ~~~ swift
@@ -1000,7 +848,7 @@ x.move(**from:** x, **to:** y)
       where S.Generator.Element == Element
   }
   ~~~
-  {:.bad}
+  *(bad)*
 
   These methods form a semantic family, and the argument types
   appear at first to be sharply distinct.  However, when `Element`
@@ -1011,7 +859,7 @@ x.move(**from:** x, **to:** y)
   var values: [Any] = [1, "a"]
   values.append([2, 3, 4]) // [1, "a", [2, 3, 4]] or [1, "a", 2, 3, 4]?
   ~~~
-  {:.bad}
+  *(bad)*
 
   To eliminate the ambiguity, name the second overload more
   explicitly.
@@ -1027,12 +875,11 @@ x.move(**from:** x, **to:** y)
       where S.Generator.Element == Element
   }
   ~~~
-  {:.good}
+  *(good)*
 
   Notice how the new name better matches the documentation comment.
   In this case, the act of writing the documentation comment
   actually brought the issue to the API author's attention.
-  {{enddetail}}
 
 <script>
 var elements = document.querySelectorAll("pre code");

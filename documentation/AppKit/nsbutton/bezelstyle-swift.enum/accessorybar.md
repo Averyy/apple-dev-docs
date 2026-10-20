@@ -1,17 +1,22 @@
 # NSButton.BezelStyle.accessoryBar
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A button style that’s typically used in the context of an accessory toolbar for buttons that narrow the focus of a search or other operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case accessoryBar
+```
+
+```c
+NSBezelStyleAccessoryBar
 ```
 
 #### Discussion
@@ -50,15 +55,16 @@ orderButton.bezelStyle = NSBezelStyleAccessoryBar;
 [orderButton setButtonType:NSButtonTypePushOnPushOff];
 ```
 
-![A screenshot of a label, and two accessory bar buttons that display side-by-side. The label on the left says sort by. The buttons that follow on the right side say search rank and page order.](/images/com.apple.appkit/media-4307818@2x.png)
+![A screenshot of a label, and two accessory bar buttons that display side-by-side. The label on the left says sort by. The buttons that follow on the right side say search rank and page order.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4307818@2x.png)
 
-For design guidance, see [`Human Interface Guidelines > Buttons`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/buttons).
+For design guidance, see [Human Interface Guidelines > Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons).
 
 ## See Also
 
-- [NSButton.BezelStyle.toolbar](nsbutton/bezelstyle-swift.enum/toolbar.md)
+### Toolbar
+- [NSButton.BezelStyle.toolbar](./toolbar.md)
   A button style that’s appropriate for a toolbar item.
-- [NSButton.BezelStyle.accessoryBarAction](nsbutton/bezelstyle-swift.enum/accessorybaraction.md)
+- [NSButton.BezelStyle.accessoryBarAction](./accessorybaraction.md)
   A button style that you use for extra actions in an accessory toolbar.
 
 

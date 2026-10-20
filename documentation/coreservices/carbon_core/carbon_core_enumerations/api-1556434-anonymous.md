@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kDesktopIconResource: Int](kdesktopiconresource.md)
-- [var kGenericFileServerIconResource: Int](kgenericfileservericonresource.md)
-- [var kGenericHardDiskIconResource: Int](kgenericharddiskiconresource.md)
-- [var kGenericMoverObjectIconResource: Int](kgenericmoverobjecticonresource.md)
-- [var kGenericSuitcaseIconResource: Int](kgenericsuitcaseiconresource.md)
-- [var kOpenFolderIconResource: Int](kopenfoldericonresource.md)
+- [var kDesktopIconResource: Int](../../kdesktopiconresource.md)
+- [var kGenericFileServerIconResource: Int](../../kgenericfileservericonresource.md)
+- [var kGenericHardDiskIconResource: Int](../../kgenericharddiskiconresource.md)
+- [var kGenericMoverObjectIconResource: Int](../../kgenericmoverobjecticonresource.md)
+- [var kGenericSuitcaseIconResource: Int](../../kgenericsuitcaseiconresource.md)
+- [var kOpenFolderIconResource: Int](../../kopenfoldericonresource.md)
 
 
 ---

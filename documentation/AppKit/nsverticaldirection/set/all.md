@@ -1,7 +1,8 @@
 # all
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing all vertical directions (up and down)
 

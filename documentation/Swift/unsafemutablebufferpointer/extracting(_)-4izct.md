@@ -1,7 +1,8 @@
 # extracting(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
 

@@ -1,7 +1,8 @@
 # displayMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that describes the display mode of an indicator.
 
@@ -14,17 +15,22 @@ A value that describes the display mode of an indicator.
 var displayMode: NSTextInsertionIndicator.DisplayMode { get set }
 ```
 
+```objc
+@property NSTextInsertionIndicatorDisplayMode displayMode;
+```
+
 #### Discussion
 
-Set the [`displayMode`](nstextinsertionindicator/displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.automatic`](nstextinsertionindicator/displaymode-swift.enum/automatic.md) when your custom view becomes the first responder. When your custom view resigns first responder, set the [`displayMode`](nstextinsertionindicator/displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.hidden`](nstextinsertionindicator/displaymode-swift.enum/hidden.md) to indicate that key events aren’t sent to your view.
+Set the [`displayMode`](./displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.automatic`](./displaymode-swift.enum/automatic.md) when your custom view becomes the first responder. When your custom view resigns first responder, set the [`displayMode`](./displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.hidden`](./displaymode-swift.enum/hidden.md) to indicate that key events aren’t sent to your view.
 
 ## See Also
 
-- [var automaticModeOptions: NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.property.md)
+### Setting the display mode
+- [var automaticModeOptions: NSTextInsertionIndicator.AutomaticModeOptions](./automaticmodeoptions-swift.property.md)
   Options that affect the automatic display mode.
-- [NSTextInsertionIndicator.AutomaticModeOptions](nstextinsertionindicator/automaticmodeoptions-swift.struct.md)
+- [NSTextInsertionIndicator.AutomaticModeOptions](./automaticmodeoptions-swift.struct.md)
   Options that affect the automatic display mode.
-- [NSTextInsertionIndicator.DisplayMode](nstextinsertionindicator/displaymode-swift.enum.md)
+- [NSTextInsertionIndicator.DisplayMode](./displaymode-swift.enum.md)
   Constants that determine how to display the system text cursor in a custom text UI.
 
 

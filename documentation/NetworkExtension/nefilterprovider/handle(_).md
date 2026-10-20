@@ -1,7 +1,8 @@
 # handle(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receives a report from the framework.
 
@@ -18,9 +19,13 @@ Receives a report from the framework.
 func handle(_ report: NEFilterReport)
 ```
 
+```objc
+- (void) handleReport:(NEFilterReport *) report;
+```
+
 #### Discussion
 
-The framework calls this method when the data provider extension returns a verdict with the [`shouldReport`](nefilterverdict/shouldreport.md) property set to [`true`](https://developer.apple.com/documentation/swift/true). Override this method in a subclass if you want to handle the flow report.
+The framework calls this method when the data provider extension returns a verdict with the [`shouldReport`](../nefilterverdict/shouldreport.md) property set to [`true`](../../Swift/true.md). Override this method in a subclass if you want to handle the flow report.
 
 ## Parameters
 

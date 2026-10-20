@@ -1,9 +1,10 @@
 # init(symmetricEdgeInset:falloff:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes both [`positiveEdgeInset`](clippingcomponent/featherededge-swift.struct/positiveedgeinset.md) and [`negativeEdgeInset`](clippingcomponent/featherededge-swift.struct/negativeedgeinset.md) with the same symmetric value.
+Initializes both [`positiveEdgeInset`](./positiveedgeinset.md) and [`negativeEdgeInset`](./negativeedgeinset.md) with the same symmetric value.
 
 **Availability**:
 - iOS 27.0+

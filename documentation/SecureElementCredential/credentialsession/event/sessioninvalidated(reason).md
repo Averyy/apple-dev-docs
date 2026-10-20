@@ -1,7 +1,8 @@
 # CredentialSession.Event.sessionInvalidated(reason:)
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session became invalidated.
 
@@ -21,7 +22,8 @@ The associated value `reason` provides a reason for the invalidation.
 
 ## See Also
 
-- [CredentialSession.ErrorCode](credentialsession/errorcode.md)
+### Invalidation events
+- [CredentialSession.ErrorCode](../errorcode.md)
   An error encountered by a credential session.
 
 

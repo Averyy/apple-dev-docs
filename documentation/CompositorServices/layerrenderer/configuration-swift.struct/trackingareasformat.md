@@ -1,7 +1,8 @@
 # trackingAreasFormat
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format used when creating the tracking areas textures for the layer.
 

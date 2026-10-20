@@ -1,7 +1,8 @@
 # standaloneWeekdaySymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of standalone weekday symbols for this calendar.
 
@@ -20,17 +21,22 @@ A list of standalone weekday symbols for this calendar.
 var standaloneWeekdaySymbols: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * standaloneWeekdaySymbols;
+```
+
 ## See Also
 
-- [var weekdaySymbols: [String]](nscalendar/weekdaysymbols.md)
+### Getting Weekday Symbols
+- [var weekdaySymbols: [String]](./weekdaysymbols.md)
   A list of weekdays in this calendar.
-- [var shortWeekdaySymbols: [String]](nscalendar/shortweekdaysymbols.md)
+- [var shortWeekdaySymbols: [String]](./shortweekdaysymbols.md)
   A list of shorter-named weekdays in this calendar.
-- [var veryShortWeekdaySymbols: [String]](nscalendar/veryshortweekdaysymbols.md)
+- [var veryShortWeekdaySymbols: [String]](./veryshortweekdaysymbols.md)
   A list of very-shortly-named weekdays in this calendar.
-- [var shortStandaloneWeekdaySymbols: [String]](nscalendar/shortstandaloneweekdaysymbols.md)
+- [var shortStandaloneWeekdaySymbols: [String]](./shortstandaloneweekdaysymbols.md)
   A list of short standalone weekday symbols for this calendar.
-- [var veryShortStandaloneWeekdaySymbols: [String]](nscalendar/veryshortstandaloneweekdaysymbols.md)
+- [var veryShortStandaloneWeekdaySymbols: [String]](./veryshortstandaloneweekdaysymbols.md)
   A list of very short standalone weekday symbols for this calendar.
 
 

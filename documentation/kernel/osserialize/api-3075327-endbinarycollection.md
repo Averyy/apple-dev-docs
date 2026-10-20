@@ -1,14 +1,15 @@
 # endBinaryCollection
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 void endBinaryCollection(uint32_t startCollection);
 ```
 

@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.State.rendering
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A drawable that’s assigned to a frame and ready to accept your drawing commands.
 
@@ -15,11 +16,16 @@ A drawable that’s assigned to a frame and ready to accept your drawing command
 case rendering
 ```
 
+```c
+cp_drawable_state_rendering
+```
+
 ## See Also
 
-- [LayerRenderer.Drawable.State.available](layerrenderer/drawable/state-swift.enum/available.md)
+### Getting the states
+- [LayerRenderer.Drawable.State.available](./available.md)
   A drawable that’s not in use and ready for assignment to a frame.
-- [LayerRenderer.Drawable.State.presenting](layerrenderer/drawable/state-swift.enum/presenting.md)
+- [LayerRenderer.Drawable.State.presenting](./presenting.md)
   A drawable that the compositor is currently displaying.
 
 

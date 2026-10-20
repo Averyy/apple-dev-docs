@@ -1,12 +1,13 @@
 # isMainWindow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window is the application’s main window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,27 @@ A Boolean value that indicates whether the window is the application’s main wi
 var isMainWindow: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isMainWindow) BOOL mainWindow;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window is the main window for the application; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the window is the main window for the application; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isKeyWindow: Bool](nswindow/iskeywindow.md)
+### Related Documentation
+- [var isKeyWindow: Bool](./iskeywindow.md)
   A Boolean value that indicates whether the window is the key window for the application.
-- [var canBecomeMain: Bool](nswindow/canbecomemain.md)
+### Managing Main Status
+- [var canBecomeMain: Bool](./canbecomemain.md)
   A Boolean value that indicates whether the window can become the application’s main window.
-- [func makeMain()](nswindow/makemain.md)
+- [func makeMain()](./makemain%28%29.md)
   Makes the window the main window.
-- [func becomeMain()](nswindow/becomemain.md)
+- [func becomeMain()](./becomemain%28%29.md)
   Informs the window that it has become the main window.
-- [func resignMain()](nswindow/resignmain.md)
+- [func resignMain()](./resignmain%28%29.md)
   Resigns the window’s main window status.
 
 

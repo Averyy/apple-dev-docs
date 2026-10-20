@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Provides dynamic member lookup for translation attributes.
 
@@ -26,7 +27,7 @@ The attribute key type that can be used to get or set attribute values.
 
 #### Overview
 
-This subscript enables the convenient dot-syntax access to translation attributes on [`AttributedString`](attributedstring.md):
+This subscript enables the convenient dot-syntax access to translation attributes on [`AttributedString`](../attributedstring.md):
 
 ```swift
 var text = AttributedString("Product Name")

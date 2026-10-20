@@ -1,11 +1,12 @@
 # NSMutableDictionary Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(contentsOfURL: URL)](nsmutabledictionary/init(contentsofurl:).md)
+- [init?(contentsOfURL: URL)](./init%28contentsofurl%29.md)
 
 
 ---

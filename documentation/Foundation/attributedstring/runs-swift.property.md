@@ -1,7 +1,8 @@
 # runs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed runs of the attributed string, as a view into the underlying string.
 
@@ -26,15 +27,16 @@ Runs begin and end when the attributes for the characters change. Use this prope
 
 ## See Also
 
-- [var characters: AttributedString.CharacterView](attributedstring/characters.md)
+### Accessing Views into the Attributed String
+- [var characters: AttributedString.CharacterView](./characters.md)
   The characters of the attributed string, as a view into the underlying string.
-- [AttributedString.CharacterView](attributedstring/characterview.md)
+- [AttributedString.CharacterView](./characterview.md)
   A view into the underlying storage of the attributed string, as Unicode characters.
-- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstring/unicodescalars.md)
+- [var unicodeScalars: AttributedString.UnicodeScalarView](./unicodescalars.md)
   The Unicode scalars of the attributed string, as a view into the underlying string.
-- [AttributedString.UnicodeScalarView](attributedstring/unicodescalarview.md)
+- [AttributedString.UnicodeScalarView](./unicodescalarview.md)
   A view into the underlying storage of the attributed string, as Unicode scalars.
-- [AttributedString.Runs](attributedstring/runs-swift.struct.md)
+- [AttributedString.Runs](./runs-swift.struct.md)
   An iterable view into segments of the attributed string, each of which indicates where a run of identical attributes begins or ends.
 
 

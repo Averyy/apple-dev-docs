@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -20,13 +21,16 @@ Returns a Boolean value indicating whether two values are equal.
 static func == (a: Result<Success, Failure>, b: Result<Success, Failure>) -> Bool
 ```
 
+Available when `Success` conforms to `Equatable`, `Failure` conforms to `Equatable`, and `Failure` conforms to `Error`.
+
 #### Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 
 ## See Also
 
-- [static func != (borrowing Self, borrowing Self) -> Bool](result/!=(_:_:).md)
+### Comparing Results
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

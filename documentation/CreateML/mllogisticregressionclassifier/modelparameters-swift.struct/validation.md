@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data.
 
@@ -25,13 +26,14 @@ The default is `.split(strategy: .automatic)`, which automatically generates the
 
 ## See Also
 
-- [var convergenceThreshold: Double](mllogisticregressionclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mllogisticregressionclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var l1Penalty: Double](mllogisticregressionclassifier/modelparameters-swift.struct/l1penalty.md)
-- [var l2Penalty: Double](mllogisticregressionclassifier/modelparameters-swift.struct/l2penalty.md)
-- [var maxIterations: Int](mllogisticregressionclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var stepSize: Double](mllogisticregressionclassifier/modelparameters-swift.struct/stepsize.md)
-- [var validationData: MLDataTable?](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+### Accessing parameters
+- [var convergenceThreshold: Double](./convergencethreshold.md)
+- [var featureRescaling: Bool](./featurerescaling.md)
+- [var l1Penalty: Double](./l1penalty.md)
+- [var l2Penalty: Double](./l2penalty.md)
+- [var maxIterations: Int](./maxiterations.md)
+- [var stepSize: Double](./stepsize.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
 
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
@@ -23,7 +24,7 @@ init()
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, use the [`columns`](formstyle/columns.md) static variable to create this style:
+Don’t call this initializer directly. Instead, use the [`columns`](../formstyle/columns.md) static variable to create this style:
 
 ```swift
 Form {

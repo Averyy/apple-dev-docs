@@ -1,7 +1,8 @@
 # bestMatch(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the appearance name that most closely matches the current appearance object.
 
@@ -12,6 +13,10 @@ Returns the appearance name that most closely matches the current appearance obj
 
 ```swift
 func bestMatch(from appearances: [NSAppearance.Name]) -> NSAppearance.Name?
+```
+
+```objc
+- (NSAppearanceName) bestMatchFromAppearancesWithNames:(NSArray<NSString *> *) appearances;
 ```
 
 #### Return Value

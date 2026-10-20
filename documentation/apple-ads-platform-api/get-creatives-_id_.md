@@ -1,7 +1,8 @@
 # Get an Ad Creative
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a single ad creative by its unique identifier.
 
@@ -35,7 +36,7 @@ A couple of edge cases are worth calling out when fetching an ad creative by ID.
 
 Retrieves a custom product page ad creative. The response includes the full ad creative object with its current review state and eligibility details.
 
-```None
+```
 GET https://api.ads.apple.com/v1/creatives/666777888
 ```
 
@@ -82,7 +83,7 @@ GET https://api.ads.apple.com/v1/creatives/666777888
 
 Retrieves an Apple Maps ad creative. The response includes the ad creative spec with localized text and brand configuration.
 
-```None
+```
 GET https://api.ads.apple.com/v1/creatives/666777889
 ```
 
@@ -136,17 +137,33 @@ GET https://api.ads.apple.com/v1/creatives/666777889
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`CreativeResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Creative](post-creatives.md)
+- [Create an Ad Creative](./post-creatives.md)
   Add a new ad creative that defines the visual presentation and tap destination for an ad.
-- [Query Ad Creatives](post-creatives-query.md)
+- [Query Ad Creatives](./post-creatives-query.md)
   Retrieve ad creatives that match structured filter, sort, and pagination criteria.
-- [Update an Ad Creative](put-creatives-_id_.md)
+- [Update an Ad Creative](./put-creatives-_id_.md)
   Change an ad creative’s name or creative spec by its unique identifier.
-- [Delete an Ad Creative](delete-creatives-_id_.md)
+- [Delete an Ad Creative](./delete-creatives-_id_.md)
   Remove an ad creative by its unique identifier.
 
 

@@ -1,7 +1,8 @@
 # readAttributeTimeZone(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTimeZone(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTimeZone() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeTimeZoneWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

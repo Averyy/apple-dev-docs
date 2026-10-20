@@ -1,7 +1,8 @@
 # customizedLanguage(modelConfiguration:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A hint specifying a custom language model applicable to the expected spoken audio content.
 
@@ -20,11 +21,12 @@ static func customizedLanguage(modelConfiguration: SFSpeechLanguageModel.Configu
 
 ## See Also
 
-- [static let shortForm: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/shortform.md)
+### Content hints
+- [static let shortForm: DictationTranscriber.ContentHint](./shortform.md)
   A processing hint indicating that the audio is only expected to be a minute or so long.
-- [static let farField: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/farfield.md)
+- [static let farField: DictationTranscriber.ContentHint](./farfield.md)
   A processing hint indicating that the audio should be processed as if it were from a speaker far from the microphone.
-- [static let atypicalSpeech: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/atypicalspeech.md)
+- [static let atypicalSpeech: DictationTranscriber.ContentHint](./atypicalspeech.md)
   A processing hint indicating that the audio is from a speaker with a heavy accent, lisp, or other confounding factor.
 
 

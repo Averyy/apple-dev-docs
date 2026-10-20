@@ -1,7 +1,8 @@
 # suspending
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Configures the render pass as *suspending*.
 
@@ -19,9 +20,13 @@ Configures the render pass as *suspending*.
 static var suspending: MTL4RenderEncoderOptions { get }
 ```
 
+```c
+MTL4RenderEncoderOptionSuspending
+```
+
 #### Discussion
 
-Pass this option to [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) to specify that Metal can stitch the work a render command encoder encodes with a subsequent “resuming” render command encoder.
+Pass this option to [`makeRenderCommandEncoder(descriptor:options:)`](../mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md) to specify that Metal can stitch the work a render command encoder encodes with a subsequent “resuming” render command encoder.
 
 
 ---

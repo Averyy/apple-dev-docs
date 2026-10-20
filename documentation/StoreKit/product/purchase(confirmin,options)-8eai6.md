@@ -1,7 +1,8 @@
 # purchase(confirmIn:options:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes a purchase for the product.
 
@@ -20,7 +21,7 @@ The result of the purchase
 
 #### Discussion
 
-> **Note**: A `PurchaseError` or `StoreKitError`.
+> **Throws**: A `PurchaseError` or `StoreKitError`.
 
 ## Parameters
 
@@ -29,17 +30,18 @@ The result of the purchase
 
 ## See Also
 
-- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(options:).md)
+### Purchasing a product
+- [func purchase(options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28options%29.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-6dj6y.md)
+- [func purchase(confirmIn: some UIScene, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28confirmin,options%29-6dj6y.md)
   Initiates a purchase for the product with the App Store and displays the confirmation sheet.
-- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](product/purchase(confirmin:options:)-3bivf.md)
+- [func purchase(confirmIn: UIViewController, options: Set<Product.PurchaseOption>) async throws -> Product.PurchaseResult](./purchase%28confirmin,options%29-3bivf.md)
   Processes a purchase for the product.
-- [Product.PurchaseOption](product/purchaseoption.md)
+- [Product.PurchaseOption](./purchaseoption.md)
   Optional settings for a product purchase that add account information, purchase details, and offers, or that specify behaviors.
-- [Product.PurchaseResult](product/purchaseresult.md)
+- [Product.PurchaseResult](./purchaseresult.md)
   The result of a purchase.
-- [Product.PurchaseError](product/purchaseerror.md)
+- [Product.PurchaseError](./purchaseerror.md)
   Error information for product purchase errors.
 
 

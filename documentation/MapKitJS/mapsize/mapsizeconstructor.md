@@ -1,7 +1,8 @@
 # new MapSize(width, height)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates an object containing the width and height of a projected coordinate span.
 
@@ -10,7 +11,7 @@ Creates an object containing the width and height of a projected coordinate span
 
 ## Declaration
 
-```swift
+```
 constructor(width?: number, height?: number);
 ```
 
@@ -31,7 +32,8 @@ const height = mapSize.height; // 0.4
 
 ## See Also
 
-- [interface MapSizeData](mapsizedata.md)
+### Creating a map size
+- [interface MapSizeData](../mapsizedata.md)
   A plain object representation of dimensions in map units.
 
 

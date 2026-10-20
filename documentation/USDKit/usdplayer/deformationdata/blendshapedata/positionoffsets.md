@@ -1,7 +1,8 @@
 # positionOffsets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Per-vertex position delta vectors for each blend shape target.
 

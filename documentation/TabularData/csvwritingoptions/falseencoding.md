@@ -1,7 +1,8 @@
 # falseEncoding
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string the CSV file generator uses to represent false Boolean values.
 

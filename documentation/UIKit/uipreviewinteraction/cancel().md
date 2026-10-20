@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the current preview interaction.
 
@@ -17,15 +18,20 @@ Cancels the current preview interaction.
 func cancel()
 ```
 
+```objc
+- (void) cancelInteraction;
+```
+
 #### Discussion
 
 When a preview interaction is in progress, use this method to cancel it, preventing any further callbacks to the delegate methods.
 
 ## See Also
 
-- [var view: UIView?](uipreviewinteraction/view.md)
+### Handling preview interactions
+- [var view: UIView?](./view.md)
   The view from which the preview interaction receives touch events.
-- [func location(in: (any UICoordinateSpace)?) -> CGPoint](uipreviewinteraction/location(in:).md)
+- [func location(in: (any UICoordinateSpace)?) -> CGPoint](./location%28in%29.md)
   Returns the location of the touch that started the interaction.
 
 

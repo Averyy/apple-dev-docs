@@ -1,7 +1,8 @@
 # MusicLibrarySearchResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a library search request.
 
@@ -23,33 +24,33 @@ struct MusicLibrarySearchResponse
 ## Topics
 
 ### Instance Properties
-- [let albums: MusicItemCollection<Album>](musiclibrarysearchresponse/albums.md)
+- [let albums: MusicItemCollection<Album>](./musiclibrarysearchresponse/albums.md)
   A collection of albums.
-- [let artists: MusicItemCollection<Artist>](musiclibrarysearchresponse/artists.md)
+- [let artists: MusicItemCollection<Artist>](./musiclibrarysearchresponse/artists.md)
   A collection of artists.
-- [let musicVideos: MusicItemCollection<MusicVideo>](musiclibrarysearchresponse/musicvideos.md)
+- [let musicVideos: MusicItemCollection<MusicVideo>](./musiclibrarysearchresponse/musicvideos.md)
   A collection of music videos.
-- [let playlists: MusicItemCollection<Playlist>](musiclibrarysearchresponse/playlists.md)
+- [let playlists: MusicItemCollection<Playlist>](./musiclibrarysearchresponse/playlists.md)
   A collection of playlists.
-- [let songs: MusicItemCollection<Song>](musiclibrarysearchresponse/songs.md)
+- [let songs: MusicItemCollection<Song>](./musiclibrarysearchresponse/songs.md)
   A collection of songs.
-- [let topResults: MusicItemCollection<MusicLibrarySearchResponse.TopResult>](musiclibrarysearchresponse/topresults.md)
+- [let topResults: MusicItemCollection<MusicLibrarySearchResponse.TopResult>](./musiclibrarysearchresponse/topresults.md)
   A collection of top results.
 ### Enumerations
-- [MusicLibrarySearchResponse.TopResult](musiclibrarysearchresponse/topresult.md)
+- [MusicLibrarySearchResponse.TopResult](./musiclibrarysearchresponse/topresult.md)
   An item that represents one of the top results in a library search response.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

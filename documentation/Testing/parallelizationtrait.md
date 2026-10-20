@@ -1,18 +1,19 @@
 # ParallelizationTrait
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines whether the testing library runs this test serially or in parallel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -30,36 +31,37 @@ When you add this trait to a test suite, that suite runs its contained test func
 
 This trait does not affect the execution of a test relative to its peers or to unrelated tests. This trait has no effect if you disable test parallelization globally (for example, by passing `--no-parallel` to the `swift test` command.)
 
-To add this trait to a test, use [`serialized`](trait/serialized.md).
+To add this trait to a test, use [`serialized`](./trait/serialized.md).
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SuiteTrait](suitetrait.md)
-- [TestScoping](testscoping.md)
-- [TestTrait](testtrait.md)
-- [Trait](trait.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SuiteTrait](./suitetrait.md)
+- [TestScoping](./testscoping.md)
+- [TestTrait](./testtrait.md)
+- [Trait](./trait.md)
 
 ## See Also
 
-- [struct Bug](bug.md)
+### Supporting types
+- [struct Bug](./bug.md)
   A type that represents a bug report tracked by a test.
-- [struct Comment](comment.md)
+- [struct Comment](./comment.md)
   A type that represents a comment related to a test.
-- [struct ConditionTrait](conditiontrait.md)
+- [struct ConditionTrait](./conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
-- [struct IssueHandlingTrait](issuehandlingtrait.md)
+- [struct IssueHandlingTrait](./issuehandlingtrait.md)
   A type that allows transforming or filtering the issues recorded by a test.
-- [struct Tag](tag.md)
+- [struct Tag](./tag.md)
   A type representing a tag that can be applied to a test.
-- [struct List](tag/list.md)
+- [struct List](./tag/list.md)
   A type representing one or more tags applied to a test.
-- [struct TimeLimitTrait](timelimittrait.md)
+- [struct TimeLimitTrait](./timelimittrait.md)
   A type that defines a time limit to apply to a test.
 
 

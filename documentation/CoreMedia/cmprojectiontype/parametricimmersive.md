@@ -1,7 +1,8 @@
 # CMProjectionType.parametricImmersive
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case parametricImmersive
+```
+
+```c
+kCMProjectionType_ParametricImmersive
 ```
 
 

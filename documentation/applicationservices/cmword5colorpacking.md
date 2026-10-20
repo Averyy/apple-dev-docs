@@ -1,7 +1,8 @@
 # cmWord5ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for three 5-bit color channels are stored consecutively in 16-bits, with the highest order bit unused.
 

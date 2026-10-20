@@ -1,14 +1,17 @@
 # webView(_:shouldStartLoadWith:navigationType:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent before a web view begins loading a frame.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 2.0+
+- iOS 2.0+ - Deprecated in 12.0
+- iPadOS 2.0+ - Deprecated in 12.0
+- Mac Catalyst 2.0+ - Deprecated in 12.0
+
+> **Deprecated**: For more information, see [`UIWebView`](../uiwebview.md).
 
 ## Declaration
 
@@ -16,9 +19,13 @@ Sent before a web view begins loading a frame.
 optional func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool
 ```
 
+```objc
+- (BOOL) webView:(UIWebView *) webView shouldStartLoadWithRequest:(NSURLRequest *) request navigationType:(UIWebViewNavigationType) navigationType;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the web view should begin loading content; otherwise, [`false`](https://developer.apple.com/documentation/swift/false) .
+[`true`](../../Swift/true.md) if the web view should begin loading content; otherwise, [`false`](../../Swift/false.md) .
 
 ## Parameters
 
@@ -28,11 +35,12 @@ optional func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequ
 
 ## See Also
 
-- [func webViewDidStartLoad(UIWebView)](uiwebviewdelegate/webviewdidstartload(_:).md)
+### Deprecated
+- [func webViewDidStartLoad(UIWebView)](./webviewdidstartload%28_%29.md)
   Sent after a web view starts loading a frame.
-- [func webViewDidFinishLoad(UIWebView)](uiwebviewdelegate/webviewdidfinishload(_:).md)
+- [func webViewDidFinishLoad(UIWebView)](./webviewdidfinishload%28_%29.md)
   Sent after a web view finishes loading a frame.
-- [func webView(UIWebView, didFailLoadWithError: any Error)](uiwebviewdelegate/webview(_:didfailloadwitherror:).md)
+- [func webView(UIWebView, didFailLoadWithError: any Error)](./webview%28_,didfailloadwitherror%29.md)
   Sent if a web view failed to load a frame.
 
 

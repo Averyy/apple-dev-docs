@@ -1,7 +1,8 @@
 # liveTextButtonVisible
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the Live Text button appears.
 
@@ -24,13 +25,14 @@ When a person taps the Live Text button, it highlights recognized items in the i
 
 ## See Also
 
-- [var isSupplementaryInterfaceHidden: Bool](imageanalysisinteraction/issupplementaryinterfacehidden.md)
+### Querying the interface state
+- [var isSupplementaryInterfaceHidden: Bool](./issupplementaryinterfacehidden.md)
   A Boolean value that indicates whether the view hides supplementary interface objects.
-- [func hasInteractiveItem(at: CGPoint) -> Bool](imageanalysisinteraction/hasinteractiveitem(at:).md)
+- [func hasInteractiveItem(at: CGPoint) -> Bool](./hasinteractiveitem%28at%29.md)
   Returns a Boolean value that indicates whether active text, data detectors, or supplementary interface objects exist at the specified point.
-- [func hasSupplementaryInterface(at: CGPoint) -> Bool](imageanalysisinteraction/hassupplementaryinterface(at:).md)
+- [func hasSupplementaryInterface(at: CGPoint) -> Bool](./hassupplementaryinterface%28at%29.md)
   Returns a Boolean value that indicates whether supplementary interface objects exist at the specified point.
-- [var selectableItemsHighlighted: Bool](imageanalysisinteraction/selectableitemshighlighted.md)
+- [var selectableItemsHighlighted: Bool](./selectableitemshighlighted.md)
   A Boolean value that indicates whether the interaction highlights actionable text or data the analyzer detects in text.
 
 

@@ -1,7 +1,8 @@
 # jsonRepresentableDataFrame(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms a DataFrame into one with column types compatible with JSON representation.
 
@@ -26,7 +27,7 @@ A new DataFrame with JSON-serializable column types.
 
 #### Discussion
 
-The detailed branch always excludes the `Transcript` column from this public helper; transcript serialization is opted into through [`jsonData(includeReportMetadata:includeTranscripts:jsonOptions:)`](evaluationresult/jsondata(includereportmetadata:includetranscripts:jsonoptions:).md).
+The detailed branch always excludes the `Transcript` column from this public helper; transcript serialization is opted into through [`jsonData(includeReportMetadata:includeTranscripts:jsonOptions:)`](./jsondata%28includereportmetadata,includetranscripts,jsonoptions%29.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ The detailed branch always excludes the `Transcript` column from this public hel
 
 ## See Also
 
-- [var groupedSummary: String](evaluationresult/groupedsummary.md)
+### Formatting results
+- [var groupedSummary: String](./groupedsummary.md)
   A formatted description of summary metrics organized by groups.
 
 

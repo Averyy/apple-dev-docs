@@ -1,7 +1,8 @@
 # MerchantId.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a merchant ID resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a merchant ID resource.
 
 ## Declaration
 
-```swift
+```
 object MerchantId.Attributes
 ```
 

@@ -1,22 +1,27 @@
 # player(_:didComplete:issuedByFriend:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when the local player completes a challenge that a friend issues.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 26.0
+- iPadOS 7.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.10+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 optional func player(_ player: GKPlayer, didComplete challenge: GKChallenge, issuedByFriend friendPlayer: GKPlayer)
+```
+
+```objc
+- (void) player:(GKPlayer *) player didCompleteChallenge:(GKChallenge *) challenge issuedByFriend:(GKPlayer *) friendPlayer;
 ```
 
 ## Parameters
@@ -27,7 +32,8 @@ optional func player(_ player: GKPlayer, didComplete challenge: GKChallenge, iss
 
 ## See Also
 
-- [func player(GKPlayer, issuedChallengeWasCompleted: GKChallenge, byFriend: GKPlayer)](gkchallengelistener/player(_:issuedchallengewascompleted:byfriend:).md)
+### Completing a Challenge
+- [func player(GKPlayer, issuedChallengeWasCompleted: GKChallenge, byFriend: GKPlayer)](./player%28_,issuedchallengewascompleted,byfriend%29.md)
   Handles when a friend completes a challenge that the local player issues.
 
 

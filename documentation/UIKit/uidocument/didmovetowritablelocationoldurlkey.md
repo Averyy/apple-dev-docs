@@ -1,7 +1,8 @@
 # didMoveToWritableLocationOldURLKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` dictionary that contains the previous readonly file URL.
 
@@ -15,6 +16,10 @@ The key in a `UIDocumentDidMoveToWritableLocationNotification`’s `userInfo` di
 
 ```swift
 class let didMoveToWritableLocationOldURLKey: String
+```
+
+```c
+extern NSString * const UIDocumentDidMoveToWritableLocationOldURLKey;
 ```
 
 

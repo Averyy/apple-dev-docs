@@ -1,7 +1,8 @@
 # attractionCenter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spot that the particles are attracted to. In local space. Defaults to (1, 1, 0).
 

@@ -1,7 +1,8 @@
 # init(group:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a section containing the specified group.
 
@@ -12,6 +13,10 @@ Creates a section containing the specified group.
 
 ```swift
 convenience init(group: NSCollectionLayoutGroup)
+```
+
+```objc
++ (instancetype) sectionWithGroup:(NSCollectionLayoutGroup *) group;
 ```
 
 

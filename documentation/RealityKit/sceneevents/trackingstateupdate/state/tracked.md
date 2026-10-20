@@ -1,7 +1,8 @@
 # SceneEvents.TrackingStateUpdate.State.tracked
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device anchor is tracking position and orientation.
 

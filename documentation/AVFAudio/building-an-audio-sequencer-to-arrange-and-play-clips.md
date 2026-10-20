@@ -1,6 +1,8 @@
 # Building an audio sequencer to arrange and play clips
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Sample Code  
+**Download**: [BuildingAnAudioSequencerToArrangeAndPlayClips.zip](https://docs-assets.developer.apple.com/published/66724d961c0e/BuildingAnAudioSequencerToArrangeAndPlayClips.zip)
 
 Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 
@@ -14,15 +16,15 @@ Synchronizing multiple audio loops with different tempos requires precise timing
 
 This sample builds a grid-based clip launcher that synchronizes multiple audio loops in real time, adjusting their playback rates to match a main tempo while maintaining sample-accurate timing. The sample uses Swift concurrency features for thread-safe buffer sharing and concurrent audio metering. The app uses an actor to handle file input and audio analysis on background threads, while the main actor manages audio engine operations. The sample demonstrates:
 
-- Automatic BPM detection using the [`Music Understanding`](https://developer.apple.com/documentation/musicunderstanding) framework.
+- Automatic BPM detection using the [Music Understanding](../MusicUnderstanding/MusicUnderstanding.md) framework.
 - Per-track rate adjustment to synchronize loops with different BPMs
 - Quantized clip launching aligned to bar boundaries
 - Drift-free looping through manual buffer rescheduling
 - Real-time volume unit (VU) metering with smooth decay
 
-#### Load Clips and Detect Tempo
+#### Load clips and detect tempo
 
-The `ClipLoader` actor performs file operations on background threads while analyzing audio files to detect tempo information. It uses [`AVReadOnlyAudioPCMBuffer`](avreadonlyaudiopcmbuffer.md) for thread-safe buffer sharing across actor boundaries:
+The `ClipLoader` actor performs file operations on background threads while analyzing audio files to detect tempo information. It uses [`AVReadOnlyAudioPCMBuffer`](./avreadonlyaudiopcmbuffer.md) for thread-safe buffer sharing across actor boundaries:
 
 ```swift
 actor ClipLoader {
@@ -73,9 +75,9 @@ actor ClipLoader {
 }
 ```
 
-The clip loader analyzes audio content to detect BPM using the [`Music Understanding`](https://developer.apple.com/documentation/musicunderstanding) framework. For clips shorter than 15 seconds, the `analyzeRhythm` helper repeats the audio to provide enough data for accurate tempo detection.
+The clip loader analyzes audio content to detect BPM using the [Music Understanding](../MusicUnderstanding/MusicUnderstanding.md) framework. For clips shorter than 15 seconds, the `analyzeRhythm` helper repeats the audio to provide enough data for accurate tempo detection.
 
-#### Configure the Audio Engine
+#### Configure the audio engine
 
 The audio engine uses a per-track signal path architecture that enables independent processing and metering for each track. When you load a clip, the engine creates a dedicated chain of audio nodes and connects them to the mixer hierarchy:
 
@@ -126,9 +128,9 @@ func loadClip(_ clip: AudioClip, into track: TrackID) {
 }
 ```
 
-Each track has its own [`AVAudioMixerNode`](avaudiomixernode.md) that connects to the main mixer, allowing the sample to load new clips without disconnecting currently playing clips. The [`AVAudioUnitVarispeed`](avaudiounitvarispeed.md) node adjusts the playback rate based on the clip’s BPM and the main tempo, so that all loops play in sync.
+Each track has its own [`AVAudioMixerNode`](./avaudiomixernode.md) that connects to the main mixer, allowing the sample to load new clips without disconnecting currently playing clips. The [`AVAudioUnitVarispeed`](./avaudiounitvarispeed.md) node adjusts the playback rate based on the clip’s BPM and the main tempo, so that all loops play in sync.
 
-#### Quantize Clip Launches
+#### Quantize clip launches
 
 When a person launches a clip, the engine defers playback to the next bar boundary so that all clips stay in musical sync. The `TransportTiming` structure calculates the next quantized start time based on the transport grid:
 
@@ -180,9 +182,9 @@ func quantizedStart(
 
 For the first clip, the method establishes the transport grid and schedules playback one bar in the future. For subsequent clips, it snaps to the nearest bar boundary using a 2 percent tolerance window to account for minor timing variations. This ensures that clips launched at slightly different moments still start on the beat.
 
-#### Create Drift Free Looping
+#### Create drift-free looping
 
-Instead of using the built-in looping option on [`AVAudioPlayerNode`](avaudioplayernode.md), the sample manually reschedules clips at each loop boundary. This avoids the timing drift that accumulates from floating-point errors over many iterations. A timer monitors loop end times and schedules the next iteration precisely when necessary.
+Instead of using the built-in looping option on [`AVAudioPlayerNode`](./avaudioplayernode.md), the sample manually reschedules clips at each loop boundary. This avoids the timing drift that accumulates from floating-point errors over many iterations. A timer monitors loop end times and schedules the next iteration precisely when necessary.
 
 ```swift
 func scheduleClip(_ loaded: LoadedClip, track: TrackID, startHostTime: UInt64) {
@@ -249,9 +251,9 @@ func rescheduleLoop(track: TrackID, loaded: LoadedClip, currentLoopEndHostTime: 
 
 This approach maintains sample-accurate synchronization across all tracks and prevents the gradual timing drift that occurs with the built-in looping option.
 
-#### Adapt to Tempo Changes
+#### Adapt to tempo changes
 
-When the tempo changes, the engine clamps the value to the valid range and updates all [`AVAudioUnitVarispeed`](avaudiounitvarispeed.md) nodes so that every clip immediately plays at the correct rate for the new tempo:
+When the tempo changes, the engine clamps the value to the valid range and updates all [`AVAudioUnitVarispeed`](./avaudiounitvarispeed.md) nodes so that every clip immediately plays at the correct rate for the new tempo:
 
 ```swift
 func setTempo(_ bpm: Double) {
@@ -272,11 +274,11 @@ func updateAllRates() {
 }
 ```
 
-The [`AVAudioUnitVarispeed`](avaudiounitvarispeed.md) node applies the rate change in real time, so clips adjust their playback speed instantly without interrupting playback.
+The [`AVAudioUnitVarispeed`](./avaudiounitvarispeed.md) node applies the rate change in real time, so clips adjust their playback speed instantly without interrupting playback.
 
-#### Perform Audio Metering
+#### Perform audio metering
 
-The `AudioLevelTap` class monitors audio levels using [`installAudioTap(onBus:bufferSize:format:tapProvider:)`](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md), which receives [`AVReadOnlyAudioPCMBuffer`](avreadonlyaudiopcmbuffer.md) for thread-safe concurrent processing. The tap block runs on the audio thread and uses the [`Accelerate`](https://developer.apple.com/documentation/accelerate) framework for efficient peak detection:
+The `AudioLevelTap` class monitors audio levels using [`installAudioTap(onBus:bufferSize:format:tapProvider:)`](./avaudionode/installaudiotap%28onbus,buffersize,format,tapprovider%29.md), which receives [`AVReadOnlyAudioPCMBuffer`](./avreadonlyaudiopcmbuffer.md) for thread-safe concurrent processing. The tap block runs on the audio thread and uses the [Accelerate](../Accelerate/Accelerate.md) framework for efficient peak detection:
 
 ```swift
 @Observable
@@ -355,9 +357,10 @@ This architecture keeps audio metering responsive and accurate without adding `T
 
 ## See Also
 
-- [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
+### Scheduled playback
+- [Playing custom audio with your own player](./playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
-- [class AVAudioPlayerNode](avaudioplayernode.md)
+- [class AVAudioPlayerNode](./avaudioplayernode.md)
   An object for scheduling the playback of buffers or segments of audio files.
 
 

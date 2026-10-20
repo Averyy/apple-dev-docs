@@ -1,7 +1,8 @@
 # value(forHTTPHeaderField:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a header value.
 
@@ -34,11 +35,12 @@ Note that, in keeping with the HTTP RFC, HTTP header field names are case-insens
 
 ## See Also
 
-- [var allHTTPHeaderFields: [String : String]?](urlrequest/allhttpheaderfields.md)
+### Accessing header fields
+- [var allHTTPHeaderFields: [String : String]?](./allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func addValue(String, forHTTPHeaderField: String)](urlrequest/addvalue(_:forhttpheaderfield:).md)
+- [func addValue(String, forHTTPHeaderField: String)](./addvalue%28_,forhttpheaderfield%29.md)
   Adds a value to the header field.
-- [func setValue(String?, forHTTPHeaderField: String)](urlrequest/setvalue(_:forhttpheaderfield:).md)
+- [func setValue(String?, forHTTPHeaderField: String)](./setvalue%28_,forhttpheaderfield%29.md)
   Sets a value for the header field.
 
 

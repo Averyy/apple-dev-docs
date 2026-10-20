@@ -1,7 +1,8 @@
 # init(decodingCString:as:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string from the null-terminated sequence of bytes at the given pointer.
 

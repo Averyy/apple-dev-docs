@@ -1,7 +1,8 @@
 # init(named:rootJoint:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an IK rig from a joint hierarchy.
 
@@ -21,7 +22,7 @@ init(named name: String, rootJoint: SkeletonResource.Joint) throws
 
 #### Discussion
 
-> **Note**: If the joint hierarchy contains invalid data.
+> **Throws**: If the joint hierarchy contains invalid data.
 
 ## Parameters
 

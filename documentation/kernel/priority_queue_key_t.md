@@ -1,14 +1,15 @@
 # priority_queue_key_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint16_t priority_queue_key_t;
 ```
 

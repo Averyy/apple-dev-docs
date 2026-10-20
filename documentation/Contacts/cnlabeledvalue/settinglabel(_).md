@@ -1,7 +1,8 @@
 # settingLabel(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a labeled value object with an existing value and identifier.
 
@@ -19,6 +20,10 @@ Returns a labeled value object with an existing value and identifier.
 func settingLabel(_ label: String?) -> Self
 ```
 
+```objc
+- (instancetype) labeledValueBySettingLabel:(NSString *) label;
+```
+
 #### Return Value
 
 A labeled value object with an existing value and identifier.
@@ -29,9 +34,10 @@ A labeled value object with an existing value and identifier.
 
 ## See Also
 
-- [func settingLabel(String?, value: ValueType) -> Self](cnlabeledvalue/settinglabel(_:value:).md)
+### Setting labels and values
+- [func settingLabel(String?, value: ValueType) -> Self](./settinglabel%28_,value%29.md)
   Returns a labeled value object with the specified label and value with the existing identifier.
-- [func settingValue(ValueType) -> Self](cnlabeledvalue/settingvalue(_:).md)
+- [func settingValue(ValueType) -> Self](./settingvalue%28_%29.md)
   Returns a new value for an existing label and identifier.
 
 

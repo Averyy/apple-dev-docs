@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The input types to user’s custom force computation.
@@ -19,6 +20,12 @@ The input types to user’s custom force computation.
 ```swift
 var parameterTypes: PhysicsBodyParameterTypes { get }
 ```
+
+## Default Implementations
+
+### ForceEffectProtocol Implementations
+- [var parameterTypes: PhysicsBodyParameterTypes](./parametertypes-whuc.md)
+  Positions are returned by default to effect handlers.
 
 
 ---

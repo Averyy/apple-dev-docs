@@ -1,7 +1,8 @@
 # Notary API
 
 **Framework**: Notary API  
-**Kind**: module
+**Kind**: module  
+**Role**: Web Service
 
 Submit your macOS software for notarization through a web interface.
 
@@ -17,36 +18,36 @@ Notarization gives people confidence that your Developer ID-signed macOS softwa
 - Retrieve a log file that provides details about a submission.
 - Get a list of your team’s previous submissions.
 
-To learn how notarization works, see [`Notarizing macOS software before distribution`](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution). For details about using the notary service REST API to upload your software, see [`Submitting software for notarization over the web`](submitting-software-for-notarization-over-the-web.md).
+To learn how notarization works, see [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md). For details about using the notary service REST API to upload your software, see [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md).
 
 ## Topics
 
 ### Essentials
-- [Submitting software for notarization over the web](submitting-software-for-notarization-over-the-web.md)
+- [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md)
   Eliminate a dependency on macOS in your notarization workflow by interfacing directly with the notary service.
 ### Software submission
-- [Submit Software](submit-software.md)
+- [Submit Software](./submit-software.md)
   Start the process of uploading a new version of your software to the notary service.
-- [object NewSubmissionRequest](newsubmissionrequest.md)
+- [object NewSubmissionRequest](./newsubmissionrequest.md)
   Data that you provide when starting a submission to the notary service.
-- [object NewSubmissionResponse](newsubmissionresponse.md)
+- [object NewSubmissionResponse](./newsubmissionresponse.md)
   The notary service’s response to a software submission.
 ### Notarization results
-- [Get Submission Status](get-submission-status.md)
+- [Get Submission Status](./get-submission-status.md)
   Fetch the status of a software notarization submission.
-- [object SubmissionResponse](submissionresponse.md)
+- [object SubmissionResponse](./submissionresponse.md)
   The notary service’s response to a request for the status of a submission.
-- [Get Submission Log](get-submission-log.md)
+- [Get Submission Log](./get-submission-log.md)
   Fetch details about a single completed notarization.
-- [object SubmissionLogURLResponse](submissionlogurlresponse.md)
+- [object SubmissionLogURLResponse](./submissionlogurlresponse.md)
   The notary service’s response to a request for the log information about a completed submission.
 ### History
-- [Get Previous Submissions](get-previous-submissions.md)
+- [Get Previous Submissions](./get-previous-submissions.md)
   Fetch a list of your team’s previous notarization submissions.
-- [object SubmissionListResponse](submissionlistresponse.md)
+- [object SubmissionListResponse](./submissionlistresponse.md)
   The notary service’s response to a request for information about your team’s previous submissions.
 ### Errors
-- [object ErrorResponse](errorresponse.md)
+- [object ErrorResponse](./errorresponse.md)
   The notary service’s response when an error occurs.
 
 

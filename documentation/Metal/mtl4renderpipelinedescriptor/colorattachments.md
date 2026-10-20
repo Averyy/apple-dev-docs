@@ -1,7 +1,8 @@
 # colorAttachments
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Accesses an array containing descriptions of the color attachments this pipeline writes to.
 
@@ -17,6 +18,10 @@ Accesses an array containing descriptions of the color attachments this pipeline
 
 ```swift
 var colorAttachments: MTL4RenderPipelineColorAttachmentDescriptorArray { get }
+```
+
+```objc
+@property (readonly) MTL4RenderPipelineColorAttachmentDescriptorArray * colorAttachments;
 ```
 
 

@@ -1,7 +1,8 @@
 # PhotogrammetrySession.PointCloud
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sparse point cloud data structure output as the payload of a `.pointCloud` request. A point cloud is an array of `PointCloud.Point` instances.
 
@@ -20,26 +21,27 @@ struct PointCloud
 ## Topics
 
 ### Structures
-- [PhotogrammetrySession.PointCloud.Point](photogrammetrysession/pointcloud/point.md)
+- [PhotogrammetrySession.PointCloud.Point](./pointcloud/point.md)
 ### Instance Properties
-- [let points: [PhotogrammetrySession.PointCloud.Point]](photogrammetrysession/pointcloud/points.md)
+- [let points: [PhotogrammetrySession.PointCloud.Point]](./pointcloud/points.md)
   The fixed array of points describing the point cloud.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PhotogrammetrySession.Result](photogrammetrysession/result.md)
+### Obtaining results
+- [PhotogrammetrySession.Result](./result.md)
   An object that holds the created 3D object.
-- [PhotogrammetrySession.Error](photogrammetrysession/error.md)
+- [PhotogrammetrySession.Error](./error.md)
   The errors that can occur during reconstruction in a photogrammetry session.
-- [PhotogrammetrySession.Pose](photogrammetrysession/pose.md)
+- [PhotogrammetrySession.Pose](./pose.md)
   A 6DOF pose relative to the estimated coordinate system.
-- [PhotogrammetrySession.Poses](photogrammetrysession/poses.md)
+- [PhotogrammetrySession.Poses](./poses.md)
   Once initial photogrammetric calculations are complete, a data structure mapping the sample ID (or index if a folder was used) to the 6DOF algorithmically estimated pose of that sample is returned.
 
 

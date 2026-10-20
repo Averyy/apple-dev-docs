@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: AVSystemRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the session and terminates media playback on the remote device.
 
@@ -18,13 +19,13 @@ final func stop()
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 #### Discussion
 
 Call this function to end the playback session and clean up resources on both the local and remote devices. After calling this function, the session is terminated and further calls to session functions will have no effect.
 
-The system automatically handles disconnection and cleanup of the remote app or player. If you need to start playback again, create a new [`AVSystemRouteSession`](avsystemroutesession-gp78.md) instance.
+The system automatically handles disconnection and cleanup of the remote app or player. If you need to start playback again, create a new [`AVSystemRouteSession`](../avsystemroutesession-gp78.md) instance.
 
 > **Note**: Always call this function when playback ends to ensure proper resource cleanup and to notify the remote device that the session has concluded.
 

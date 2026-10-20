@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var color: CIColor](ciroundedrectanglestrokegenerator/color.md)
-- [var extent: CGRect](ciroundedrectanglestrokegenerator/extent.md)
-- [var radius: Float](ciroundedrectanglestrokegenerator/radius.md)
+### Instance Properties
+- [var color: CIColor](./color.md)
+- [var extent: CGRect](./extent.md)
+- [var radius: Float](./radius.md)
 
 
 ---

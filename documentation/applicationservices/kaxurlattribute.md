@@ -1,7 +1,8 @@
 # kAXURLAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The URL that describes the location of the document or application represented by this accessibility object.
 
@@ -12,6 +13,10 @@ The URL that describes the location of the document or application represented b
 
 ```swift
 var kAXURLAttribute: String { get }
+```
+
+```c
+#define kAXURLAttribute
 ```
 
 

@@ -1,12 +1,13 @@
 # windingRule
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The winding rule used to fill the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,35 @@ The winding rule used to fill the path.
 var windingRule: NSBezierPath.WindingRule { get set }
 ```
 
+```objc
+@property NSWindingRule windingRule;
+```
+
 #### Discussion
 
-This value may be either [`NSNonZeroWindingRule`](nsnonzerowindingrule.md) or [`NSEvenOddWindingRule`](nsevenoddwindingrule.md). This value overrides the default value returned by the [`defaultWindingRule`](nsbezierpath/defaultwindingrule.md) method.
+This value may be either [`NSNonZeroWindingRule`](../nsnonzerowindingrule.md) or [`NSEvenOddWindingRule`](../nsevenoddwindingrule.md). This value overrides the default value returned by the [`defaultWindingRule`](./defaultwindingrule.md) method.
 
 ## See Also
 
-- [func fill()](nsbezierpath/fill.md)
+### Related Documentation
+- [func fill()](./fill%28%29.md)
   Paints the region enclosed by the path.
-- [class var defaultWindingRule: NSBezierPath.WindingRule](nsbezierpath/defaultwindingrule.md)
+- [class var defaultWindingRule: NSBezierPath.WindingRule](./defaultwindingrule.md)
   Returns the default winding rule used to fill all paths.
-- [var lineCapStyle: NSBezierPath.LineCapStyle](nsbezierpath/linecapstyle-swift.property.md)
+### Accessing a Path’s Attributes
+- [var lineCapStyle: NSBezierPath.LineCapStyle](./linecapstyle-swift.property.md)
   The line cap style for the path.
-- [var lineJoinStyle: NSBezierPath.LineJoinStyle](nsbezierpath/linejoinstyle-swift.property.md)
+- [var lineJoinStyle: NSBezierPath.LineJoinStyle](./linejoinstyle-swift.property.md)
   The line join style for the path.
-- [var lineWidth: CGFloat](nsbezierpath/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The width of stroked path lines.
-- [var miterLimit: CGFloat](nsbezierpath/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   The limit at which miter joins are converted to bevel joins.
-- [var flatness: CGFloat](nsbezierpath/flatness.md)
+- [var flatness: CGFloat](./flatness.md)
   The accuracy with which curves are rendered.
-- [func getLineDash(UnsafeMutablePointer<CGFloat>?, count: UnsafeMutablePointer<Int>?, phase: UnsafeMutablePointer<CGFloat>?)](nsbezierpath/getlinedash(_:count:phase:).md)
+- [func getLineDash(UnsafeMutablePointer<CGFloat>?, count: UnsafeMutablePointer<Int>?, phase: UnsafeMutablePointer<CGFloat>?)](./getlinedash%28_,count,phase%29.md)
   Returns the line-stroking pattern for the receiver.
-- [func setLineDash(UnsafePointer<CGFloat>?, count: Int, phase: CGFloat)](nsbezierpath/setlinedash(_:count:phase:).md)
+- [func setLineDash(UnsafePointer<CGFloat>?, count: Int, phase: CGFloat)](./setlinedash%28_,count,phase%29.md)
   Sets the line-stroking pattern for the path.
 
 

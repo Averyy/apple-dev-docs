@@ -1,7 +1,8 @@
 # setNeedsSelectionUpdate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system to update the selection UI to match the current selection state.
 
@@ -18,9 +19,13 @@ Tells the system to update the selection UI to match the current selection state
 func setNeedsSelectionUpdate()
 ```
 
+```objc
+- (void) setNeedsSelectionUpdate;
+```
+
 ## Mentions
 
-- [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
+- [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ When the selection state changes in your text input view, call this method to no
 
 ## See Also
 
-- [func layoutManagedSubviews()](uitextselectiondisplayinteraction/layoutmanagedsubviews.md)
+### Reporting changes to the selection
+- [func layoutManagedSubviews()](./layoutmanagedsubviews%28%29.md)
   Loads the selection from the text input view and lays out the selection-related views.
 
 

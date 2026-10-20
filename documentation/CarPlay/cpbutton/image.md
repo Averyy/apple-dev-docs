@@ -1,7 +1,8 @@
 # image
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button’s image.
 
@@ -17,9 +18,13 @@ The button’s image.
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * image;
+```
+
 #### Discussion
 
-This property returns the custom image you provide at initialization, or a system image when using a concrete subclass like [`CPContactCallButton`](cpcontactcallbutton.md).
+This property returns the custom image you provide at initialization, or a system image when using a concrete subclass like [`CPContactCallButton`](../cpcontactcallbutton.md).
 
 CarPlay doesn’t support animated images. If you provide an animated image, this property returns the first image in the animation sequence.
 

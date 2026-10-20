@@ -1,7 +1,8 @@
 # MERAWProcessingParameter.FloatingPoint
 
 **Framework**: MediaExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a floating-point parameter of a RAW processor.
 
@@ -14,47 +15,52 @@ An object that describes a floating-point parameter of a RAW processor.
 class FloatingPoint
 ```
 
+```objc
+@interface MERAWProcessingFloatParameter : MERAWProcessingParameter
+```
+
 ## Topics
 
 ### Creating a floating-point parameter object
-- [convenience init(name: String, key: String, description: String, initialValue: Float, maximum: Float, minimum: Float, neutralValue: Float?, cameraValue: Float?)](merawprocessingparameter/floatingpoint/init(name:key:description:initialvalue:maximum:minimum:neutralvalue:cameravalue:).md)
+- [convenience init(name: String, key: String, description: String, initialValue: Float, maximum: Float, minimum: Float, neutralValue: Float?, cameraValue: Float?)](./floatingpoint/init%28name,key,description,initialvalue,maximum,minimum,neutralvalue,cameravalue%29.md)
   Creates a floating-point parameter object.
 ### Properties
-- [var currentValue: Float](merawprocessingparameter/floatingpoint/currentvalue.md)
+- [var currentValue: Float](./floatingpoint/currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Float](merawprocessingparameter/floatingpoint/initialvalue.md)
+- [var initialValue: Float](./floatingpoint/initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
-- [var maximumValue: Float](merawprocessingparameter/floatingpoint/maximumvalue.md)
+- [var maximumValue: Float](./floatingpoint/maximumvalue.md)
   The maximum value for this parameter.
-- [var minimumValue: Float](merawprocessingparameter/floatingpoint/minimumvalue.md)
+- [var minimumValue: Float](./floatingpoint/minimumvalue.md)
   The minimum value for this parameter.
 ### Instance Properties
-- [var cameraValue: Float?](merawprocessingparameter/floatingpoint/cameravalue.md)
-- [var neutralValue: Float?](merawprocessingparameter/floatingpoint/neutralvalue.md)
+- [var cameraValue: Float?](./floatingpoint/cameravalue.md)
+- [var neutralValue: Float?](./floatingpoint/neutralvalue.md)
 
 ## Relationships
 
 ### Inherits From
-- [MERAWProcessingParameter](merawprocessingparameter.md)
+- [MERAWProcessingParameter](../merawprocessingparameter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [MERAWProcessingParameter.Boolean](merawprocessingparameter/boolean.md)
+### Processing parameters
+- [MERAWProcessingParameter.Boolean](./boolean.md)
   An object that describes a Boolean parameter of a RAW processor.
-- [MERAWProcessingParameter.Integer](merawprocessingparameter/integer.md)
+- [MERAWProcessingParameter.Integer](./integer.md)
   An object that describes an integer parameter of a RAW processor.
-- [MERAWProcessingParameter.List](merawprocessingparameter/list.md)
+- [MERAWProcessingParameter.List](./list.md)
   An object that describes a list parameter of a RAW processor.
-- [MERAWProcessingParameter.ListElement](merawprocessingparameter/listelement.md)
+- [MERAWProcessingParameter.ListElement](./listelement.md)
   An object that describes a list element parameter of a RAW processor.
-- [MERAWProcessingParameter.SubGroup](merawprocessingparameter/subgroup.md)
+- [MERAWProcessingParameter.SubGroup](./subgroup.md)
   An object that describes a sub group parameter of a RAW processor.
 
 

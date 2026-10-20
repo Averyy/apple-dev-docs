@@ -1,7 +1,8 @@
 # cmOpenReadSpool
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Directs the function to begin the process of reading data.
 

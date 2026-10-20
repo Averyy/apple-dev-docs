@@ -1,9 +1,10 @@
 # id
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The unique identifier for the section, which is its [`title`](resultssection/title.md).
+The unique identifier for the section, which is its [`title`](./title.md).
 
 **Availability**:
 - iOS 27.0+

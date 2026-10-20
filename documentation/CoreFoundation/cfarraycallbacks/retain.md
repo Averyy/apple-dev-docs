@@ -1,23 +1,28 @@
 # retain
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The callback used to retain each value as they are added to the collection. If `NULL`, values are not retained. See [`CFArrayRetainCallBack`](cfarrayretaincallback.md) for a description of this callback.
+The callback used to retain each value as they are added to the collection. If `NULL`, values are not retained. See [`CFArrayRetainCallBack`](../cfarrayretaincallback.md) for a description of this callback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var retain: CFArrayRetainCallBack!
+```
+
+```c
+CFArrayRetainCallBack retain;
 ```
 
 

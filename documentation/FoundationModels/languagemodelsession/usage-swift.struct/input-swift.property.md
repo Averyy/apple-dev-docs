@@ -1,7 +1,8 @@
 # input
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input token counts from the transcript.
 
@@ -21,15 +22,16 @@ var input: LanguageModelSession.Usage.Input
 
 ## See Also
 
-- [LanguageModelSession.Usage.Input](languagemodelsession/usage-swift.struct/input-swift.struct.md)
+### Updating the usage
+- [LanguageModelSession.Usage.Input](./input-swift.struct.md)
   Token counts for the transcript submitted to the model.
-- [var output: LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.property.md)
+- [var output: LanguageModelSession.Usage.Output](./output-swift.property.md)
   The output token counts from the response.
-- [LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.struct.md)
+- [LanguageModelSession.Usage.Output](./output-swift.struct.md)
   Token counts for the output produced by the model.
-- [var metadata: [String : GeneratedContent]](languagemodelsession/usage-swift.struct/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Additional usage statistics that the language model encodes for the response.
-- [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/totaltokencount.md)
+- [var totalTokenCount: Int](./totaltokencount.md)
   The total number of tokens involved in this generation, combining input and output counts.
 
 

@@ -1,7 +1,8 @@
 # AudioServicesPlaySystemSoundWithCompletion(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 9.0+
@@ -17,12 +18,17 @@
 func AudioServicesPlaySystemSoundWithCompletion(_ inSystemSoundID: SystemSoundID, _ inCompletionBlock: (() -> Void)?)
 ```
 
+```c
+extern void AudioServicesPlaySystemSoundWithCompletion(SystemSoundID inSystemSoundID, void (^inCompletionBlock)());
+```
+
 ## See Also
 
-- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](audioservicesplayalertsoundwithcompletion(_:_:).md)
-- [func AudioServicesPlayAlertSound(SystemSoundID)](audioservicesplayalertsound(_:).md)
+### Playing Sounds
+- [func AudioServicesPlayAlertSoundWithCompletion(SystemSoundID, (() -> Void)?)](./audioservicesplayalertsoundwithcompletion%28_,_%29.md)
+- [func AudioServicesPlayAlertSound(SystemSoundID)](./audioservicesplayalertsound%28_%29.md)
   Plays a system sound as an alert.
-- [func AudioServicesPlaySystemSound(SystemSoundID)](audioservicesplaysystemsound(_:).md)
+- [func AudioServicesPlaySystemSound(SystemSoundID)](./audioservicesplaysystemsound%28_%29.md)
   Plays a system sound object.
 
 

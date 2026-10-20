@@ -1,7 +1,8 @@
 # impulseDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Impulse direction in scene coordinate space.
 

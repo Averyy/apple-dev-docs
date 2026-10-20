@@ -1,12 +1,13 @@
 # setURL(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the destination for the link as a URL.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Sets the destination for the link as a URL.
 func setURL(_ url: URL!)
 ```
 
+```objc
+- (void) setURL:(NSURL *) url;
+```
+
 ## See Also
 
-- [func destination() -> PDFDestination!](pdfannotationlink/destination.md)
+### Working with link destinations
+- [func destination() -> PDFDestination!](./destination%28%29.md)
   Gets the destination for the link when the destination was specified as a PDFDestination object.
-- [func setDestination(PDFDestination!)](pdfannotationlink/setdestination(_:).md)
+- [func setDestination(PDFDestination!)](./setdestination%28_%29.md)
   Sets the destination for the link as a PDFDestination object.
-- [func url() -> URL!](pdfannotationlink/url.md)
+- [func url() -> URL!](./url%28%29.md)
   Gets the destination for the link when the destination was specified as a URL.
 
 

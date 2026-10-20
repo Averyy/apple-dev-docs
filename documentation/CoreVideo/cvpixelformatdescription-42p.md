@@ -1,6 +1,7 @@
 # CVPixelFormatDescription
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
 An API that provides functions and types for defining custom pixel formats.
 
@@ -11,44 +12,45 @@ The Core Video pixel format description API defines functions and types for defi
 ## Topics
 
 ### Creating Format Descriptions
-- [func CVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocator?, OSType) -> CFDictionary?](cvpixelformatdescriptioncreatewithpixelformattype(_:_:).md)
+- [func CVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocator?, OSType) -> CFDictionary?](./cvpixelformatdescriptioncreatewithpixelformattype%28_,_%29.md)
   Creates a pixel format description from a given `OSType` identifier.
-- [func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionary, OSType)](cvpixelformatdescriptionregisterdescriptionwithpixelformattype(_:_:).md)
+- [func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionary, OSType)](./cvpixelformatdescriptionregisterdescriptionwithpixelformattype%28_,_%29.md)
   Registers a pixel format description with Core Video.
 ### Retrieving Format Descriptions
-- [func CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(CFAllocator?) -> CFArray?](cvpixelformatdescriptionarraycreatewithallpixelformattypes(_:).md)
+- [func CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(CFAllocator?) -> CFArray?](./cvpixelformatdescriptionarraycreatewithallpixelformattypes%28_%29.md)
   Returns all the pixel format descriptions known to Core Video.
 ### Converting format types
-- [func CVPixelFormatTypeCopyFourCharCodeString(OSType) -> CFString](cvpixelformattypecopyfourcharcodestring(_:).md)
+- [func CVPixelFormatTypeCopyFourCharCodeString(OSType) -> CFString](./cvpixelformattypecopyfourcharcodestring%28_%29.md)
 ### Data Types
-- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+- [struct CVPixelFormatDescription](./cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
-- [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
+- [struct CVFillExtendedPixelsCallBackData](./cvfillextendedpixelscallbackdata.md)
   A structure for holding information that describes a custom extended pixel fill algorithm.
-- [struct CVPixelFormatType](cvpixelformattype.md)
+- [struct CVPixelFormatType](./cvpixelformattype.md)
   Identifier for a pixel format type
-- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+- [struct CVSenselSitingOffsets](./cvsenselsitingoffsets.md)
   Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
-- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+- [enum CVSenselArrayPattern](./cvsenselarraypattern.md)
   Pattern indicating sensel arrangement.
 ### Callbacks
-- [typealias CVFillExtendedPixelsCallBack](cvfillextendedpixelscallback.md)
+- [typealias CVFillExtendedPixelsCallBack](./cvfillextendedpixelscallback.md)
   Defines a pointer to a custom extended pixel-fill function, which is called whenever the system needs to pad a buffer holding your custom pixel format.
 ### Constants
-- [Pixel Format Description Keys](pixel-format-description-keys.md)
+- [Pixel Format Description Keys](./pixel-format-description-keys.md)
   The attributes of a pixel format.
-- [Pixel Format Identifiers](pixel-format-identifiers.md)
+- [Pixel Format Identifiers](./pixel-format-identifiers.md)
   Core Video does not provide support for all of these formats; this list defines only their names.
 
 ## See Also
 
-- [CVBuffer](cvbuffer-nfm.md)
+### Data Processing
+- [CVBuffer](./cvbuffer-nfm.md)
   An abstract base class that defines how to interact with data buffers.
-- [CVImageBuffer](cvimagebuffer-q40.md)
+- [CVImageBuffer](./cvimagebuffer-q40.md)
   An interface for managing different types of image data.
-- [CVPixelBuffer](cvpixelbuffer-q2e.md)
+- [CVPixelBuffer](./cvpixelbuffer-q2e.md)
   An image buffer that holds pixels in main memory.
-- [CVPixelBufferPool](cvpixelbufferpool-77o.md)
+- [CVPixelBufferPool](./cvpixelbufferpool-77o.md)
   A utility object for managing a recyclable set of pixel buffer objects.
 
 

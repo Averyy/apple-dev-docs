@@ -1,7 +1,8 @@
 # contextMenu(menuItems:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a context menu to a table row.
 
@@ -25,7 +26,7 @@ A row that can display a context menu.
 
 #### Discussion
 
-Use this modifier to add a context menu to a table row. Compose the menu by returning controls like [`Button`](button.md), [`Toggle`](toggle.md), and [`Picker`](picker.md) from the `menuItems` closure. You can also use [`Menu`](menu.md) to define submenus, or [`Section`](section.md) to group items.
+Use this modifier to add a context menu to a table row. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus, or [`Section`](../section.md) to group items.
 
 The following example adds a context menu to each row in a table that people can use to send an email to the person represented by that row:
 
@@ -43,7 +44,7 @@ Table(of: Person.self) {
 }
 ```
 
-If you want to display a preview beside the context menu, use [`contextMenu(menuItems:preview:)`](tablerowcontent/contextmenu(menuitems:preview:).md). If you want to display a context menu that’s based on the current selection, use [`contextMenu(forSelectionType:menu:primaryAction:)`](view/contextmenu(forselectiontype:menu:primaryaction:).md). To add context menus to other kinds of views, use [`contextMenu(menuItems:)`](view/contextmenu(menuitems:).md).
+If you want to display a preview beside the context menu, use [`contextMenu(menuItems:preview:)`](./contextmenu%28menuitems,preview%29.md). If you want to display a context menu that’s based on the current selection, use [`contextMenu(forSelectionType:menu:primaryAction:)`](../view/contextmenu%28forselectiontype,menu,primaryaction%29.md). To add context menus to other kinds of views, use [`contextMenu(menuItems:)`](../view/contextmenu%28menuitems%29.md).
 
 ## Parameters
 
@@ -51,7 +52,8 @@ If you want to display a preview beside the context menu, use [`contextMenu(menu
 
 ## See Also
 
-- [func contextMenu<M, P>(menuItems: () -> M, preview: () -> P) -> ModifiedContent<Self, _ContextMenuPreviewTableRowModifier<M, P>>](tablerowcontent/contextmenu(menuitems:preview:).md)
+### Adding a context menu to a row
+- [func contextMenu<M, P>(menuItems: () -> M, preview: () -> P) -> ModifiedContent<Self, _ContextMenuPreviewTableRowModifier<M, P>>](./contextmenu%28menuitems,preview%29.md)
   Adds a context menu with a preview to a table row.
 
 

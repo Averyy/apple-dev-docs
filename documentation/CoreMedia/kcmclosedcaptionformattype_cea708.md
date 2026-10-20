@@ -1,18 +1,19 @@
 # kCMClosedCaptionFormatType_CEA708
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A type that describes CEA 708-compliant samples.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ A type that describes CEA 708-compliant samples.
 var kCMClosedCaptionFormatType_CEA708: CMClosedCaptionFormatType { get }
 ```
 
+```c
+kCMClosedCaptionFormatType_CEA708
+```
+
 ## See Also
 
-- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](kcmclosedcaptionformattype_cea608.md)
+### Constants
+- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](./kcmclosedcaptionformattype_cea608.md)
   A type that describes CEA 608-compliant samples.
 
 

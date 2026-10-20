@@ -1,7 +1,8 @@
 # MPSGraphTensorNamedDataLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The tensor layout.
 
@@ -19,43 +20,47 @@ The tensor layout.
 enum MPSGraphTensorNamedDataLayout
 ```
 
+```c
+enum MPSGraphTensorNamedDataLayout : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphTensorNamedDataLayout.CHW](mpsgraphtensornameddatalayout/chw.md)
+- [MPSGraphTensorNamedDataLayout.CHW](./mpsgraphtensornameddatalayout/chw.md)
   LayoutCHW
-- [MPSGraphTensorNamedDataLayout.DHWIO](mpsgraphtensornameddatalayout/dhwio.md)
+- [MPSGraphTensorNamedDataLayout.DHWIO](./mpsgraphtensornameddatalayout/dhwio.md)
   LayoutDHWIO
-- [MPSGraphTensorNamedDataLayout.HW](mpsgraphtensornameddatalayout/hw.md)
+- [MPSGraphTensorNamedDataLayout.HW](./mpsgraphtensornameddatalayout/hw.md)
   LayoutHW
-- [MPSGraphTensorNamedDataLayout.HWC](mpsgraphtensornameddatalayout/hwc.md)
+- [MPSGraphTensorNamedDataLayout.HWC](./mpsgraphtensornameddatalayout/hwc.md)
   LayoutHWC
-- [MPSGraphTensorNamedDataLayout.HWIO](mpsgraphtensornameddatalayout/hwio.md)
+- [MPSGraphTensorNamedDataLayout.HWIO](./mpsgraphtensornameddatalayout/hwio.md)
   LayoutHWIO
-- [MPSGraphTensorNamedDataLayout.NCDHW](mpsgraphtensornameddatalayout/ncdhw.md)
+- [MPSGraphTensorNamedDataLayout.NCDHW](./mpsgraphtensornameddatalayout/ncdhw.md)
   LayoutNCDHW
-- [MPSGraphTensorNamedDataLayout.NCHW](mpsgraphtensornameddatalayout/nchw.md)
+- [MPSGraphTensorNamedDataLayout.NCHW](./mpsgraphtensornameddatalayout/nchw.md)
   LayoutNCHW
-- [MPSGraphTensorNamedDataLayout.NDHWC](mpsgraphtensornameddatalayout/ndhwc.md)
+- [MPSGraphTensorNamedDataLayout.NDHWC](./mpsgraphtensornameddatalayout/ndhwc.md)
   LayoutNDHWC
-- [MPSGraphTensorNamedDataLayout.NHWC](mpsgraphtensornameddatalayout/nhwc.md)
+- [MPSGraphTensorNamedDataLayout.NHWC](./mpsgraphtensornameddatalayout/nhwc.md)
   LayoutNHWC
-- [MPSGraphTensorNamedDataLayout.OIDHW](mpsgraphtensornameddatalayout/oidhw.md)
+- [MPSGraphTensorNamedDataLayout.OIDHW](./mpsgraphtensornameddatalayout/oidhw.md)
   LayoutOIDHW
-- [MPSGraphTensorNamedDataLayout.OIHW](mpsgraphtensornameddatalayout/oihw.md)
+- [MPSGraphTensorNamedDataLayout.OIHW](./mpsgraphtensornameddatalayout/oihw.md)
   LayoutOIHW
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphtensornameddatalayout/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphtensornameddatalayout/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

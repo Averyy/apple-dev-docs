@@ -1,7 +1,8 @@
 # init(blending:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a custom material’s blending property.
 
@@ -20,7 +21,7 @@ init(blending value: CustomMaterial.Blending)
 
 #### Discussion
 
-This initializer creates a `PhysicallyBasedMaterial.Blending` instance using the values from an existing [`CustomMaterial.Blending`](custommaterial/blending-swift.enum.md) object.
+This initializer creates a `PhysicallyBasedMaterial.Blending` instance using the values from an existing [`CustomMaterial.Blending`](../../custommaterial/blending-swift.enum.md) object.
 
 ## Parameters
 

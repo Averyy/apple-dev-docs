@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-defined name or title of this item.
 

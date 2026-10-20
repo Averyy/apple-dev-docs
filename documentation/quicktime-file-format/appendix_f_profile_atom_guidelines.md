@@ -1,6 +1,7 @@
 # Appendix F: Profile atom guidelines
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: API Collection
 
 Summarize profile information about a QuickTime movie so readers can easily determine features and complexity.
 
@@ -23,17 +24,18 @@ If a feature value cannot be accurately represented (for example, the value is n
 ## Topics
 
 ### Building a profile atom
-- [About this appendix](about_this_appendix.md)
-- [Profile atom ('prfl')](profile_atom.md)
+- [About this appendix](./about_this_appendix.md)
+- [Profile atom ('prfl')](./profile_atom.md)
   An atom that expresses profiles or feature codes for features that occur in the movie.
-- [Universal features](universal_features.md)
+- [Universal features](./universal_features.md)
   Features that you include in any file that includes a profile atom.
 
 ## See Also
 
-- [Movie profile atom ('prfl')](movie_profile_atom.md)
+### Movie atoms
+- [Movie profile atom ('prfl')](./movie_profile_atom.md)
   An atom that summarizes the features and complexity of a movie.
-- [Track profile atom ('prfl')](track_profile_atom.md)
+- [Track profile atom ('prfl')](./track_profile_atom.md)
   A child atom of movie atoms or track atoms.
 
 

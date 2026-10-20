@@ -1,7 +1,8 @@
 # IntentValueQuery
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A query that provides entity values to the system; for example, for visual intelligence search.
 
@@ -23,31 +24,32 @@ protocol IntentValueQuery : PersistentlyIdentifiable, _SupportsAppDependencies, 
 ## Topics
 
 ### Associated Types
-- [associatedtype Input : _IntentValue](intentvaluequery/input.md)
-- [associatedtype Result : ResultsCollection = [Self.ResultValue]](intentvaluequery/result.md)
-- [associatedtype ResultValue = Self.Result.Result.ValueType](intentvaluequery/resultvalue.md)
+- [associatedtype Input : _IntentValue](./intentvaluequery/input.md)
+- [associatedtype Result : ResultsCollection = [Self.ResultValue]](./intentvaluequery/result.md)
+- [associatedtype ResultValue = Self.Result.Result.ValueType](./intentvaluequery/resultvalue.md)
 ### Initializers
-- [init()](intentvaluequery/init.md)
+- [init()](./intentvaluequery/init%28%29.md)
 ### Instance Methods
-- [func values(for: Self.Input) async throws -> Self.Result](intentvaluequery/values(for:).md)
+- [func values(for: Self.Input) async throws -> Self.Result](./intentvaluequery/values%28for%29.md)
 ### Type Aliases
-- [IntentValueQuery.ExecutionTargets](intentvaluequery/executiontargets.md)
+- [IntentValueQuery.ExecutionTargets](./intentvaluequery/executiontargets.md)
 ### Type Properties
-- [static var allowedExecutionTargets: IntentExecutionTargets](intentvaluequery/allowedexecutiontargets.md)
+- [static var allowedExecutionTargets: IntentExecutionTargets](./intentvaluequery/allowedexecutiontargets.md)
   A set of targets that can run this query.
 
 ## Relationships
 
 ### Inherits From
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct IntentValueContainer](intentvaluecontainer.md)
+### Intent queries
+- [struct IntentValueContainer](./intentvaluecontainer.md)
   A container that stores a value that supports intent value conversion.
-- [struct IntentValueExpression](intentvalueexpression.md)
+- [struct IntentValueExpression](./intentvalueexpression.md)
   A type that represents a lazily evaluated intent value.
 
 

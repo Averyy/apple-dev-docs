@@ -1,7 +1,8 @@
 # replacing(with:maxReplacements:content:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new collection in which all matches for the regex are replaced, using the given closure to create the regex.
 
@@ -19,6 +20,8 @@ Returns a new collection in which all matches for the regex are replaced, using 
 ```swift
 func replacing<Replacement>(with replacement: Replacement, maxReplacements: Int = .max, @RegexComponentBuilder content: () -> some RegexComponent) -> Self where Replacement : Collection, Replacement.Element == Character
 ```
+
+Available when `Self` conforms to `BidirectionalCollection` and `SubSequence` is `Substring`.
 
 #### Return Value
 

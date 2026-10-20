@@ -1,7 +1,8 @@
 # DataStoreBatchDeleteRequest
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,19 +23,20 @@ struct DataStoreBatchDeleteRequest<T> where T : PersistentModel
 ## Topics
 
 ### Instance Properties
-- [let editingState: EditingState](datastorebatchdeleterequest/editingstate.md)
-- [let includeSubclasses: Bool](datastorebatchdeleterequest/includesubclasses.md)
-- [let predicate: Predicate<T>?](datastorebatchdeleterequest/predicate.md)
+- [let editingState: EditingState](./datastorebatchdeleterequest/editingstate.md)
+- [let includeSubclasses: Bool](./datastorebatchdeleterequest/includesubclasses.md)
+- [let predicate: Predicate<T>?](./datastorebatchdeleterequest/predicate.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](datastorebatching/delete(_:).md)
+### Deleting persisted model data
+- [func delete<T>(DataStoreBatchDeleteRequest<T>) throws](./datastorebatching/delete%28_%29.md)
 
 
 ---

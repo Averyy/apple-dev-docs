@@ -1,7 +1,8 @@
 # symbolEffectsRemoved(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new view with its inherited symbol image effects either removed or left unchanged.
 
@@ -44,11 +45,12 @@ VStack {
 
 ## See Also
 
-- [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](view/symboleffect(_:options:isactive:).md)
+### Managing symbol effects
+- [func symbolEffect<T>(T, options: SymbolEffectOptions, isActive: Bool) -> some View](./symboleffect%28_,options,isactive%29.md)
   Returns a new view with a symbol effect added to it.
-- [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](view/symboleffect(_:options:value:).md)
+- [func symbolEffect<T, U>(T, options: SymbolEffectOptions, value: U) -> some View](./symboleffect%28_,options,value%29.md)
   Returns a new view with a symbol effect added to it.
-- [struct SymbolEffectTransition](symboleffecttransition.md)
+- [struct SymbolEffectTransition](../symboleffecttransition.md)
   Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbol animation to symbol images within the inserted or removed view hierarchy.
 
 

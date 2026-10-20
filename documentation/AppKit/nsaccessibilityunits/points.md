@@ -1,7 +1,8 @@
 # NSAccessibilityUnits.points
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The units are points.
 
@@ -14,15 +15,20 @@ The units are points.
 case points
 ```
 
+```c
+NSAccessibilityUnitsPoints
+```
+
 ## See Also
 
-- [NSAccessibilityUnits.unknown](nsaccessibilityunits/unknown.md)
+### Constants
+- [NSAccessibilityUnits.unknown](./unknown.md)
   The units are unknown.
-- [NSAccessibilityUnits.inches](nsaccessibilityunits/inches.md)
+- [NSAccessibilityUnits.inches](./inches.md)
   The units are inches.
-- [NSAccessibilityUnits.centimeters](nsaccessibilityunits/centimeters.md)
+- [NSAccessibilityUnits.centimeters](./centimeters.md)
   The units are centimeters.
-- [NSAccessibilityUnits.picas](nsaccessibilityunits/picas.md)
+- [NSAccessibilityUnits.picas](./picas.md)
   The units are picas.
 
 

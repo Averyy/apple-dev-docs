@@ -1,7 +1,8 @@
 # kSecPropertyTypeData
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a data object.
 
@@ -12,6 +13,10 @@ A key whose value is a data object.
 
 ```swift
 let kSecPropertyTypeData: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeData;
 ```
 
 

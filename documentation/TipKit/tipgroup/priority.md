@@ -1,9 +1,10 @@
 # TipGroup.Priority
 
 **Framework**: TipKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Order priority for a [`TipGroup`](tipgroup.md).
+Order priority for a [`TipGroup`](../tipgroup.md).
 
 **Availability**:
 - iOS 18.0+
@@ -23,18 +24,18 @@ enum Priority
 ## Topics
 
 ### Enumeration Cases
-- [TipGroup.Priority.firstAvailable](tipgroup/priority/firstavailable.md)
+- [TipGroup.Priority.firstAvailable](./priority/firstavailable.md)
   Shows the first tip eligible for display.
-- [TipGroup.Priority.ordered](tipgroup/priority/ordered.md)
-  Shows an eligible tip when all of the previous tips have been [`Tips.Status.invalidated(_:)`](tips/status/invalidated(_:).md).
+- [TipGroup.Priority.ordered](./priority/ordered.md)
+  Shows an eligible tip when all of the previous tips have been [`invalidated`](../tips/status/invalidated%28_%29.md).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

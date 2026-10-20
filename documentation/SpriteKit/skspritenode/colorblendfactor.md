@@ -1,18 +1,19 @@
 # colorBlendFactor
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A floating-point value that describes how the color is blended with the sprite’s texture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A floating-point value that describes how the color is blended with the sprite�
 var colorBlendFactor: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat colorBlendFactor;
+```
+
 ## Mentions
 
-- [Tinting a Sprite](tinting-a-sprite.md)
+- [Tinting a Sprite](../tinting-a-sprite.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ The value must be a number between `0.0` and `1.0`, inclusive. The default value
 
 ## See Also
 
-- [Tinting a Sprite](tinting-a-sprite.md)
+### Tinting a Sprite
+- [Tinting a Sprite](../tinting-a-sprite.md)
   Provide a color and blend factor to additively color your sprite.
-- [var color: UIColor](skspritenode/color.md)
+- [var color: UIColor](./color.md)
   The sprite’s color.
 
 

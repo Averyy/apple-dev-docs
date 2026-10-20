@@ -1,7 +1,8 @@
 # init(scale:rotation:translation:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transformation using the given values.
 
@@ -11,7 +12,7 @@ Creates a new transformation using the given values.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,11 +28,12 @@ init(scale: SIMD3<Float> = SIMD3<Float>(x: 1, y: 1, z: 1), rotation: simd_quatf 
 
 ## See Also
 
-- [init()](transform/init.md)
+### Creating a transform
+- [init()](./init%28%29.md)
   Creates a transform with the values of the identity transform.
-- [init(pitch: Float, yaw: Float, roll: Float)](transform/init(pitch:yaw:roll:).md)
+- [init(pitch: Float, yaw: Float, roll: Float)](./init%28pitch,yaw,roll%29.md)
   Creates a new transform from the specified Euler angles.
-- [init(matrix: float4x4)](transform/init(matrix:).md)
+- [init(matrix: float4x4)](./init%28matrix%29.md)
   Creates a new transform represented as a 4x4 matrix.
 
 

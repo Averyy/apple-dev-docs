@@ -1,7 +1,8 @@
 # init(base64Encoded:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `Data` from a Base-64, UTF-8 encoded `Data`.
 

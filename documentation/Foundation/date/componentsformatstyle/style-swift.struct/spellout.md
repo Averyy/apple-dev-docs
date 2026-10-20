@@ -1,7 +1,8 @@
 # spellOut
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Values are spelled out and fields are displayed in their full name. For example, “two hours, ten minutes”, “2小時10分鐘”
 

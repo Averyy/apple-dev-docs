@@ -1,7 +1,8 @@
 # spatialPipeline
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that adds sound layers for environmental effects.
 
@@ -19,9 +20,13 @@ An object that adds sound layers for environmental effects.
 var spatialPipeline: PHASESpatialPipeline { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) PHASESpatialPipeline * spatialPipeline;
+```
+
 #### Discussion
 
-The framework sets the value to the `spatialPipeline` initializer argument. See [`init(spatialPipeline:)`](phasespatialmixerdefinition/init(spatialpipeline:).md).
+The framework sets the value to the `spatialPipeline` initializer argument. See [`init(spatialPipeline:)`](./init%28spatialpipeline%29.md).
 
 
 ---

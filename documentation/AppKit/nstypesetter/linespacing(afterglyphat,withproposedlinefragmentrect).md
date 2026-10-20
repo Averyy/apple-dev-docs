@@ -1,17 +1,22 @@
 # lineSpacing(afterGlyphAt:withProposedLineFragmentRect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the line spacing in effect following the specified glyph.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func lineSpacing(afterGlyphAt glyphIndex: Int, withProposedLineFragmentRect rect: NSRect) -> CGFloat
+```
+
+```objc
+- (CGFloat) lineSpacingAfterGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
 #### Return Value
@@ -20,11 +25,11 @@ The line spacing in effect following the glyph at `glyphIndex`.
 
 #### Discussion
 
-The [`NSATSTypesetter`](nsatstypesetter.md) calls this method to determine the number of points of space to include below the descenders in the used rectangle for the proposed line fragment rectangle `rect`.
+The [`NSATSTypesetter`](../nsatstypesetter.md) calls this method to determine the number of points of space to include below the descenders in the used rectangle for the proposed line fragment rectangle `rect`.
 
-Line spacing, also called leading, is an attribute of [`NSParagraphStyle`](nsparagraphstyle.md), which you can set on an [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) object. A font typically includes a default minimum line spacing metric used if none is set in the paragraph style.
+Line spacing, also called leading, is an attribute of [`NSParagraphStyle`](../nsparagraphstyle.md), which you can set on an [`NSMutableParagraphStyle`](../nsmutableparagraphstyle.md) object. A font typically includes a default minimum line spacing metric used if none is set in the paragraph style.
 
-If the typesetter behavior specified in the layout manager is `NSTypesetterOriginalBehavior`, the text system uses the original, private typesetter `NSSimpleHorizontalTypesetter`, which adds the line spacing above the ascender. Similarly, [`NSATSTypesetter`](nsatstypesetter.md) adds the line spacing above the ascender if the value is negative.
+If the typesetter behavior specified in the layout manager is `NSTypesetterOriginalBehavior`, the text system uses the original, private typesetter `NSSimpleHorizontalTypesetter`, which adds the line spacing above the ascender. Similarly, [`NSATSTypesetter`](../nsatstypesetter.md) adds the line spacing above the ascender if the value is negative.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ If the typesetter behavior specified in the layout manager is `NSTypesetterOrigi
 
 ## See Also
 
-- [func paragraphSpacing(afterGlyphAt: Int, withProposedLineFragmentRect: NSRect) -> CGFloat](nstypesetter/paragraphspacing(afterglyphat:withproposedlinefragmentrect:).md)
+### Getting spacing information
+- [func paragraphSpacing(afterGlyphAt: Int, withProposedLineFragmentRect: NSRect) -> CGFloat](./paragraphspacing%28afterglyphat,withproposedlinefragmentrect%29.md)
   Returns the paragraph spacing that is in effect after the specified glyph.
-- [func paragraphSpacing(beforeGlyphAt: Int, withProposedLineFragmentRect: NSRect) -> CGFloat](nstypesetter/paragraphspacing(beforeglyphat:withproposedlinefragmentrect:).md)
+- [func paragraphSpacing(beforeGlyphAt: Int, withProposedLineFragmentRect: NSRect) -> CGFloat](./paragraphspacing%28beforeglyphat,withproposedlinefragmentrect%29.md)
   Returns the number of points of space—added before a paragraph—that is in effect before the specified glyph.
 
 

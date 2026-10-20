@@ -1,7 +1,8 @@
 # SpeechTranscriber.ReportingOption.fastResults
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Biases the transcriber towards responsiveness, yielding faster but also less accurate results.
 
@@ -25,9 +26,10 @@ If included, the transcriber reduces result latency by using a smaller “contex
 
 ## See Also
 
-- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](speechtranscriber/reportingoption/alternativetranscriptions.md)
+### Reporting options
+- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](./alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [SpeechTranscriber.ReportingOption.volatileResults](speechtranscriber/reportingoption/volatileresults.md)
+- [SpeechTranscriber.ReportingOption.volatileResults](./volatileresults.md)
   Provides tentative results for an audio range in addition to the finalized result.
 
 

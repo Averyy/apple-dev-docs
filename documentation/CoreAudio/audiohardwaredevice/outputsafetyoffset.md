@@ -1,12 +1,13 @@
 # outputSafetyOffset
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An Int whose value indicates the number for frames ahead of the current hardware position that is safe to do IO.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

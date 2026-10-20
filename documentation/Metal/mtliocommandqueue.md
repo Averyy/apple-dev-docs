@@ -1,7 +1,8 @@
 # MTLIOCommandQueue
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A command queue that schedules input/output commands for reading files in the file system, and writing to GPU resources and memory.
 
@@ -19,44 +20,49 @@ A command queue that schedules input/output commands for reading files in the fi
 protocol MTLIOCommandQueue : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol MTLIOCommandQueue <NSObject>
+```
+
 #### Overview
 
-Use an input/output command queue to submit commands, in command buffers, that load assets from the file system directly into GPU resources. Your app can then use those resources with other commands it submits to an [`MTLCommandQueue`](mtlcommandqueue.md) that comes from the same [`MTLDevice`](mtldevice.md).
+Use an input/output command queue to submit commands, in command buffers, that load assets from the file system directly into GPU resources. Your app can then use those resources with other commands it submits to an [`MTLCommandQueue`](./mtlcommandqueue.md) that comes from the same [`MTLDevice`](./mtldevice.md).
 
-You make input/output command queues by creating and configuring an [`MTLIOCommandQueueDescriptor`](mtliocommandqueuedescriptor.md) instance and calling an [`MTLDevice`](mtldevice.md) instance’s [`makeIOCommandQueue(descriptor:)`](mtldevice/makeiocommandqueue(descriptor:).md) method.
+You make input/output command queues by creating and configuring an [`MTLIOCommandQueueDescriptor`](./mtliocommandqueuedescriptor.md) instance and calling an [`MTLDevice`](./mtldevice.md) instance’s [`makeIOCommandQueue(descriptor:)`](./mtldevice/makeiocommandqueue%28descriptor%29.md) method.
 
 ## Topics
 
 ### Creating a input/output command buffer
-- [func makeCommandBuffer() -> any MTLIOCommandBuffer](mtliocommandqueue/makecommandbuffer.md)
+- [func makeCommandBuffer() -> any MTLIOCommandBuffer](./mtliocommandqueue/makecommandbuffer%28%29.md)
   Creates an input/output command buffer for the command queue.
-- [func makeCommandBufferWithUnretainedReferences() -> any MTLIOCommandBuffer](mtliocommandqueue/makecommandbufferwithunretainedreferences.md)
+- [func makeCommandBufferWithUnretainedReferences() -> any MTLIOCommandBuffer](./mtliocommandqueue/makecommandbufferwithunretainedreferences%28%29.md)
   Creates an input/output command buffer for the command queue that doesn’t retain the instances you pass to its methods.
 ### Adding a barrier to the queue
-- [func enqueueBarrier()](mtliocommandqueue/enqueuebarrier.md)
+- [func enqueueBarrier()](./mtliocommandqueue/enqueuebarrier%28%29.md)
   Appends a barrier that tells the input/output command queue to finish running all in-flight command buffers before running any new command buffers.
 ### Naming the queue
-- [var label: String?](mtliocommandqueue/label.md)
+- [var label: String?](./mtliocommandqueue/label.md)
   An optional name for the input/output command queue.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLIOCommandQueueDescriptor](mtliocommandqueuedescriptor.md)
+### I/O command queues
+- [class MTLIOCommandQueueDescriptor](./mtliocommandqueuedescriptor.md)
   A configuration template you use to create a new input/output command queue.
-- [enum MTLIOPriority](mtliopriority.md)
+- [enum MTLIOPriority](./mtliopriority.md)
   Designates the priority for a new input/output command queue.
-- [enum MTLIOCommandQueueType](mtliocommandqueuetype.md)
+- [enum MTLIOCommandQueueType](./mtliocommandqueuetype.md)
   Designates the queue type for a new input/output command queue.
-- [protocol MTLIOScratchBufferAllocator](mtlioscratchbufferallocator.md)
+- [protocol MTLIOScratchBufferAllocator](./mtlioscratchbufferallocator.md)
   A protocol your app implements to provide scratch memory to an input/output command queue.
-- [protocol MTLIOScratchBuffer](mtlioscratchbuffer.md)
+- [protocol MTLIOScratchBuffer](./mtlioscratchbuffer.md)
   A protocol your app implements that wraps a Metal buffer instance to serve as scratch memory for an input/output command queue.
 
 

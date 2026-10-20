@@ -1,7 +1,8 @@
 # receive(subscription:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the subscriber that it has successfully subscribed to the publisher and may request items.
 
@@ -22,7 +23,7 @@ final func receive(subscription: any Subscription)
 
 #### Discussion
 
-Use the received [`Subscription`](subscription.md) to request items from the publisher.
+Use the received [`Subscription`](../../subscription.md) to request items from the publisher.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Use the received [`Subscription`](subscription.md) to request items from the pub
 
 ## See Also
 
-- [func receive(completion: Subscribers.Completion<Never>)](subscribers/assign/receive(completion:).md)
+### Receiving life cycle events
+- [func receive(completion: Subscribers.Completion<Never>)](./receive%28completion%29.md)
   Tells the subscriber that the publisher has completed publishing, either normally or with an error.
 
 

@@ -1,7 +1,8 @@
 # eventScore
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric score string for this team in the current event. Depending on the size of the car screen, a maximum of 3 to 5 characters may be displayed.
 
@@ -14,6 +15,10 @@ The numeric score string for this team in the current event. Depending on the si
 
 ```swift
 var eventScore: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * eventScore;
 ```
 
 

@@ -1,7 +1,8 @@
 # shader
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text file that defines code that does custom per-pixel drawing or colorization.
 
@@ -20,29 +21,34 @@ A text file that defines code that does custom per-pixel drawing or colorization
 var shader: SKShader? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKShader * shader;
+```
+
 ## Mentions
 
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
+- [Applying Shaders to a Sprite](../applying-shaders-to-a-sprite.md)
 
 #### Discussion
 
 The default value is `nil`, which means the default behavior for sprite rendering is performed. SpriteKit implements many sprite features using a default shader, such as:
 
-- Animations on [`alpha`](sknode/alpha.md).
-- `SKTexture` [`filteringMode`](sktexture/filteringmode.md).
-- Light from [`SKLightNode`](sklightnode.md).
+- Animations on [`alpha`](../sknode/alpha.md).
+- `SKTexture` [`filteringMode`](../sktexture/filteringmode.md).
+- Light from [`SKLightNode`](../sklightnode.md).
 
 If you supply a custom value for `shader`, your custom shader overrides the default shader which neutralizes the default features. It is the responsibility of your custom shader to implement any of the features your sprites require.
 
 ## See Also
 
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
+### Adding a Custom Shader to a Sprite
+- [Applying Shaders to a Sprite](../applying-shaders-to-a-sprite.md)
   Write custom GLSL code that modifies the look of your sprite.
-- [var attributeValues: [String : SKAttributeValue]](skspritenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skspritenode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skspritenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   Sets the value of a shader attribute.
 
 

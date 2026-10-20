@@ -1,16 +1,17 @@
 # AVAudioDynamicRangeControlConfiguration
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,33 +19,38 @@
 enum AVAudioDynamicRangeControlConfiguration
 ```
 
+```c
+enum AVAudioDynamicRangeControlConfiguration : NSInteger;
+```
+
 ## Topics
 
 ### Creating a configuration
-- [init?(rawValue: Int)](avaudiodynamicrangecontrolconfiguration/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudiodynamicrangecontrolconfiguration/init%28rawvalue%29.md)
 ### Choosing a dynamic range profile
-- [AVAudioDynamicRangeControlConfiguration.capture](avaudiodynamicrangecontrolconfiguration/capture.md)
-- [AVAudioDynamicRangeControlConfiguration.movie](avaudiodynamicrangecontrolconfiguration/movie.md)
-- [AVAudioDynamicRangeControlConfiguration.music](avaudiodynamicrangecontrolconfiguration/music.md)
-- [AVAudioDynamicRangeControlConfiguration.none](avaudiodynamicrangecontrolconfiguration/none.md)
-- [AVAudioDynamicRangeControlConfiguration.speech](avaudiodynamicrangecontrolconfiguration/speech.md)
+- [AVAudioDynamicRangeControlConfiguration.capture](./avaudiodynamicrangecontrolconfiguration/capture.md)
+- [AVAudioDynamicRangeControlConfiguration.movie](./avaudiodynamicrangecontrolconfiguration/movie.md)
+- [AVAudioDynamicRangeControlConfiguration.music](./avaudiodynamicrangecontrolconfiguration/music.md)
+- [AVAudioDynamicRangeControlConfiguration.none](./avaudiodynamicrangecontrolconfiguration/none.md)
+- [AVAudioDynamicRangeControlConfiguration.speech](./avaudiodynamicrangecontrolconfiguration/speech.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audioSyncPacketFrequency: Int](avaudioconverter/audiosyncpacketfrequency.md)
-- [var contentSource: AVAudioContentSource](avaudioconverter/contentsource.md)
-- [enum AVAudioContentSource](avaudiocontentsource.md)
-- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
+### Managing packet dependencies
+- [var audioSyncPacketFrequency: Int](./avaudioconverter/audiosyncpacketfrequency.md)
+- [var contentSource: AVAudioContentSource](./avaudioconverter/contentsource.md)
+- [enum AVAudioContentSource](./avaudiocontentsource.md)
+- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](./avaudioconverter/dynamicrangecontrolconfiguration.md)
 
 
 ---

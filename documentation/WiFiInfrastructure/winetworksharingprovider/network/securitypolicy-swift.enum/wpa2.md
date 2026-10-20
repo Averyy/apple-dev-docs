@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.Network.SecurityPolicy.wpa2
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows WPA2 authentication.
 

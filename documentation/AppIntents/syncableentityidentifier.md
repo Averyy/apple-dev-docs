@@ -1,7 +1,8 @@
 # SyncableEntityIdentifier
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-safe wrapper you use to specify different local and stable identifiers for an entity.
 
@@ -22,11 +23,11 @@ struct SyncableEntityIdentifier<LocalID, StableID> where LocalID : EntityIdentif
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
-Use this structure if you maintain separate local and stable identifiers in one of your entity types. Assign this structure to the `id` property of your entity and use the value in the [`local`](syncableentityidentifier/local.md) property to refer to the entity in your code. The system uses the [`stable`](syncableentityidentifier/stable.md) value to refer to the same entity during operations that occur on another device.
+Use this structure if you maintain separate local and stable identifiers in one of your entity types. Assign this structure to the `id` property of your entity and use the value in the [`local`](./syncableentityidentifier/local.md) property to refer to the entity in your code. The system uses the [`stable`](./syncableentityidentifier/stable.md) value to refer to the same entity during operations that occur on another device.
 
 When referring to an entity in your code, you can refer to this type directly. The following example shows an entity that uses this type for its identifier. The query object for the entity similarly refers to this type directly in methods.
 
@@ -43,52 +44,53 @@ struct PhotoQuery: EntityQuery {
 }
 ```
 
-For additional information about how to use this type, see [`SyncableEntity`](syncableentity.md).
+For additional information about how to use this type, see [`SyncableEntity`](./syncableentity.md).
 
 ## Topics
 
 ### Initializers
-- [init(id: LocalID)](syncableentityidentifier/init(id:).md)
+- [init(id: LocalID)](./syncableentityidentifier/init%28id%29.md)
   Creates an identifier where the local and stable IDs are identical.
-- [init(local: LocalID, stable: StableID)](syncableentityidentifier/init(local:stable:).md)
+- [init(local: LocalID, stable: StableID)](./syncableentityidentifier/init%28local,stable%29.md)
   Creates an identifier with both local and stable IDs.
 ### Instance Properties
-- [let local: LocalID?](syncableentityidentifier/local.md)
+- [let local: LocalID?](./syncableentityidentifier/local.md)
   The identifier you use to refer to the entity on the current device.
-- [let stable: StableID?](syncableentityidentifier/stable.md)
+- [let stable: StableID?](./syncableentityidentifier/stable.md)
   The identifier you use to refer to the entity across devices.
 ### Default Implementations
-- [EntityIdentifierConvertible Implementations](syncableentityidentifier/entityidentifierconvertible-implementations.md)
-- [Equatable Implementations](syncableentityidentifier/equatable-implementations.md)
-- [Hashable Implementations](syncableentityidentifier/hashable-implementations.md)
+- [EntityIdentifierConvertible Implementations](./syncableentityidentifier/entityidentifierconvertible-implementations.md)
+- [Equatable Implementations](./syncableentityidentifier/equatable-implementations.md)
+- [Hashable Implementations](./syncableentityidentifier/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [EntityIdentifierConvertible](entityidentifierconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [EntityIdentifierConvertible](./entityidentifierconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EntityIdentifier](entityidentifier.md)
+### Entity identity
+- [struct EntityIdentifier](./entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
-- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+- [protocol EntityIdentifierConvertible](./entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
-- [struct FileEntityIdentifier](fileentityidentifier.md)
+- [struct FileEntityIdentifier](./fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+- [protocol PersistentlyIdentifiable](./persistentlyidentifiable.md)
   Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
-- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+- [struct AttributedEntityIdentifier](./attributedentityidentifier.md)
   A unique identifier for an app entity instance within an application.
-- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+- [struct AttributedTypeIdentifier](./attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [protocol AppEntityAnnotatable](appentityannotatable.md)
+- [protocol AppEntityAnnotatable](./appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
 
 

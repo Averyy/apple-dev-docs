@@ -1,7 +1,8 @@
 # usesDefaultHyphenation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
 
@@ -14,21 +15,26 @@ A Boolean value that indicates whether the paragraph style uses the system hyphe
 var usesDefaultHyphenation: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL usesDefaultHyphenation;
+```
+
 ## See Also
 
-- [var lineBreakMode: NSLineBreakMode](nsparagraphstyle/linebreakmode.md)
+### Getting line-break information
+- [var lineBreakMode: NSLineBreakMode](./linebreakmode.md)
   The mode for breaking lines in the paragraph that don’t fit within a container.
-- [enum NSLineBreakMode](nslinebreakmode.md)
+- [enum NSLineBreakMode](../nslinebreakmode.md)
   Constants that specify what happens when a line is too long for a container.
-- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.property.md)
+- [var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.property.md)
   The strategy for breaking lines while laying out paragraphs.
-- [NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct.md)
+- [NSParagraphStyle.LineBreakStrategy](./linebreakstrategy-swift.struct.md)
   Constants that specify how the text system breaks lines while laying out paragraphs.
-- [var hyphenationFactor: Float](nsparagraphstyle/hyphenationfactor.md)
+- [var hyphenationFactor: Float](./hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
-- [var tighteningFactorForTruncation: Float](nsparagraphstyle/tighteningfactorfortruncation.md)
+- [var tighteningFactorForTruncation: Float](./tighteningfactorfortruncation.md)
   The threshold for using tightening as an alternative to truncation.
-- [var allowsDefaultTighteningForTruncation: Bool](nsparagraphstyle/allowsdefaulttighteningfortruncation.md)
+- [var allowsDefaultTighteningForTruncation: Bool](./allowsdefaulttighteningfortruncation.md)
   A Boolean value that indicates whether the system tightens character spacing before truncating text.
 
 

@@ -1,7 +1,8 @@
 # clearDisplayName()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the authored display name on this object.
 

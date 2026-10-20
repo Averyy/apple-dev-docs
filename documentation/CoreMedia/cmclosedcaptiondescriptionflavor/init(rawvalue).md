@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a closed caption description flavor.
 
@@ -26,7 +27,8 @@ init(rawValue: CFString)
 
 ## See Also
 
-- [init(CFString)](cmclosedcaptiondescriptionflavor/init(_:).md)
+### Initializers
+- [init(CFString)](./init%28_%29.md)
   Creates a closed caption description flavor.
 
 

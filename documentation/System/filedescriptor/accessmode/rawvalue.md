@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C access mode.
 
@@ -22,7 +23,8 @@ var rawValue: CInt
 
 ## See Also
 
-- [init(rawValue: CInt)](filedescriptor/accessmode/init(rawvalue:).md)
+### Working with C APIs
+- [init(rawValue: CInt)](./init%28rawvalue%29.md)
   Creates a strongly-typed access mode from a raw C access mode.
 
 

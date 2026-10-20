@@ -1,7 +1,8 @@
 # operation
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation to perform for the reaction.
 

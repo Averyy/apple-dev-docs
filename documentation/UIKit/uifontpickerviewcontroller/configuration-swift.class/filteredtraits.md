@@ -1,7 +1,8 @@
 # filteredTraits
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate to filter fonts based on their traits, like bold, italic, or monospace.
 
@@ -17,13 +18,18 @@ A predicate to filter fonts based on their traits, like bold, italic, or monospa
 var filteredTraits: UIFontDescriptor.SymbolicTraits { get set }
 ```
 
+```objc
+@property (nonatomic) UIFontDescriptorSymbolicTraits filteredTraits;
+```
+
 ## See Also
 
-- [var includeFaces: Bool](uifontpickerviewcontroller/configuration-swift.class/includefaces.md)
+### Filtering available fonts
+- [var includeFaces: Bool](./includefaces.md)
   A Boolean value that determines whether the font picker should allow the user to select from font faces, or just font families.
-- [var filteredLanguagesPredicate: NSPredicate?](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md)
+- [var filteredLanguagesPredicate: NSPredicate?](./filteredlanguagespredicate.md)
   A predicate to filter fonts based on the languages they support.
-- [class func filterPredicate(forFilteredLanguages: [String]) -> NSPredicate?](uifontpickerviewcontroller/configuration-swift.class/filterpredicate(forfilteredlanguages:).md)
+- [class func filterPredicate(forFilteredLanguages: [String]) -> NSPredicate?](./filterpredicate%28forfilteredlanguages%29.md)
   Creates a font picker filter based on language support.
 
 

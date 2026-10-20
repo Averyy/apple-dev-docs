@@ -1,7 +1,8 @@
 # CSSM_DL_PKCS11_ATTRIBUTE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_DL_PKCS11_ATTRIBUTE = UnsafeMutablePointer<cssm_dl_pkcs11_attributes>
+```
+
+```c
+typedef struct cssm_dl_pkcs11_attributes * CSSM_DL_PKCS11_ATTRIBUTE;
 ```
 
 

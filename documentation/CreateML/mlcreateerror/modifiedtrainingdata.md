@@ -1,7 +1,8 @@
 # MLCreateError.modifiedTrainingData
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the training data is different from the data when you created the session.
 
@@ -21,17 +22,18 @@ case modifiedTrainingData
 
 ## See Also
 
-- [MLCreateError.cancelled](mlcreateerror/cancelled.md)
+### Identifying errors
+- [MLCreateError.cancelled](./cancelled.md)
   An error that indicates you canceled the training session.
-- [case incompatibleParameters(parameter: String, originalValue: String, newValue: String)](mlcreateerror/incompatibleparameters(parameter:originalvalue:newvalue:).md)
+- [case incompatibleParameters(parameter: String, originalValue: String, newValue: String)](./incompatibleparameters%28parameter,originalvalue,newvalue%29.md)
   An error that indicates the training session parameters are incompatible.
-- [MLCreateError.io(reason:)](mlcreateerror/io(reason:).md)
+- [MLCreateError.io(reason:)](./io%28reason%29.md)
   An error that indicates an I/O failure.
-- [MLCreateError.type(reason:)](mlcreateerror/type(reason:).md)
+- [MLCreateError.type(reason:)](./type%28reason%29.md)
   An error that indicates a missing or incorrect type.
-- [MLCreateError.generic(reason:)](mlcreateerror/generic(reason:).md)
+- [MLCreateError.generic(reason:)](./generic%28reason%29.md)
   An error that indicates a failure not covered by one of the other errors.
-- [let MLCreateErrorDomain: String](mlcreateerrordomain.md)
+- [let MLCreateErrorDomain: String](../mlcreateerrordomain.md)
   A global constant that defines the domain for Create ML errors.
 
 

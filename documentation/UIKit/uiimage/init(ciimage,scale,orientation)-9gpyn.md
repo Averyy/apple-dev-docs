@@ -1,7 +1,8 @@
 # init(ciImage:scale:orientation:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an image object with the specified Core Image object and properties.
 
@@ -9,13 +10,17 @@ Initializes and returns an image object with the specified Core Image object and
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)
+```
+
+```objc
+- (instancetype) initWithCIImage:(CIImage *) ciImage scale:(CGFloat) scale orientation:(UIImageOrientation) orientation;
 ```
 
 #### Return Value
@@ -25,24 +30,25 @@ An initialized `UIImage` object. In Objective-C, this method returns `nil` if th
 ## Parameters
 
 - `ciImage`: The Core Image object.
-- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the [`size`](uiimage/size.md) property.
+- `scale`: The scale factor to assume when interpreting the image data. Applying a scale factor of 1.0 results in an image whose size matches the pixel-based dimensions of the image. Applying a different scale factor changes the size of the image as reported by the [`size`](./size.md) property.
 - `orientation`: The orientation of the image data. You can use this parameter to specify any rotation factors applied to the image.
 
 ## See Also
 
-- [init?(contentsOfFile: String)](uiimage/init(contentsoffile:).md)
+### Creating and initializing image objects
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes and returns the image object with the contents of the specified file.
-- [init?(data: Data)](uiimage/init(data:).md)
+- [init?(data: Data)](./init%28data%29.md)
   Initializes and returns the image object with the specified data.
-- [init?(data: Data, scale: CGFloat)](uiimage/init(data:scale:).md)
+- [init?(data: Data, scale: CGFloat)](./init%28data,scale%29.md)
   Initializes and returns the image object with the specified data and scale factor.
-- [init(cgImage: CGImage)](uiimage/init(cgimage:)-14qlb.md)
+- [init(cgImage: CGImage)](./init%28cgimage%29-14qlb.md)
   Initializes and returns the image object with the specified Quartz image reference.
-- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](uiimage/init(cgimage:scale:orientation:)-2ouhh.md)
+- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](./init%28cgimage,scale,orientation%29-2ouhh.md)
   Initializes and returns an image object with the specified scale and orientation factors.
-- [init(ciImage: CIImage)](uiimage/init(ciimage:)-93vu1.md)
+- [init(ciImage: CIImage)](./init%28ciimage%29-93vu1.md)
   Initializes and returns an image object with the specified Core Image object.
-- [struct UIImageReader](uiimagereader-swift.struct.md)
+- [struct UIImageReader](../uiimagereader-swift.struct.md)
 
 
 ---

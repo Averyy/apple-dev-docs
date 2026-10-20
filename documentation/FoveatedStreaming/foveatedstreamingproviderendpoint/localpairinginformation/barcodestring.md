@@ -1,7 +1,8 @@
 # barcodeString
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The barcode content decoded as a UTF-8 string, if representable.
 

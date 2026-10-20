@@ -1,7 +1,8 @@
 # PassFields
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the groups of fields that display information on the front and back of a pass.
 
@@ -12,32 +13,32 @@ An object that represents the groups of fields that display information on the f
 
 ## Declaration
 
-```swift
+```
 object PassFields
 ```
 
 ## Mentions
 
-- [Creating a coupon pass](creating-a-coupon-pass.md)
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
-- [Creating a store card pass](creating-a-store-card-pass.md)
+- [Creating a coupon pass](./creating-a-coupon-pass.md)
+- [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md)
+- [Creating a store card pass](./creating-a-store-card-pass.md)
 
 ## Topics
 
 ### Adding content to the front of a pass
-- [object PassFields.PrimaryFields](passfields/primaryfields-data.dictionary.md)
+- [object PassFields.PrimaryFields](./passfields/primaryfields-data.dictionary.md)
   An object that represents the fields that display the most important information on the front of a pass.
-- [object PassFields.SecondaryFields](passfields/secondaryfields-data.dictionary.md)
+- [object PassFields.SecondaryFields](./passfields/secondaryfields-data.dictionary.md)
   An object that represents the fields that display supporting information on the front of a pass.
-- [object PassFields.AuxiliaryFields](passfields/auxiliaryfields-data.dictionary.md)
+- [object PassFields.AuxiliaryFields](./passfields/auxiliaryfields-data.dictionary.md)
   An object that represents the fields that display additional information on the front of a pass.
-- [object PassFields.HeaderFields](passfields/headerfields-data.dictionary.md)
+- [object PassFields.HeaderFields](./passfields/headerfields-data.dictionary.md)
   An object that represents the fields that display information at the top of a pass.
 ### Adding content to the back of a pass
-- [object PassFields.BackFields](passfields/backfields-data.dictionary.md)
+- [object PassFields.BackFields](./passfields/backfields-data.dictionary.md)
   An object that represents the fields that display information on the back of a pass.
 ### Adding content to the Additional Info section
-- [object PassFields.AdditionalInfoFields](passfields/additionalinfofields-data.dictionary.md)
+- [object PassFields.AdditionalInfoFields](./passfields/additionalinfofields-data.dictionary.md)
   An object that represents fields that display in the Additional Info section below a pass.
 
 ## Properties
@@ -52,27 +53,28 @@ object PassFields
 ## Relationships
 
 ### Inherited By
-- [Pass.BoardingPass](pass/boardingpass-data.dictionary.md)
-- [Pass.Coupon](pass/coupon-data.dictionary.md)
-- [Pass.EventTicket](pass/eventticket-data.dictionary.md)
-- [Pass.Generic](pass/generic-data.dictionary.md)
-- [Pass.StoreCard](pass/storecard-data.dictionary.md)
+- [Pass.BoardingPass](./pass/boardingpass-data.dictionary.md)
+- [Pass.Coupon](./pass/coupon-data.dictionary.md)
+- [Pass.EventTicket](./pass/eventticket-data.dictionary.md)
+- [Pass.Generic](./pass/generic-data.dictionary.md)
+- [Pass.StoreCard](./pass/storecard-data.dictionary.md)
 
 ## See Also
 
-- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+### Essentials
+- [Creating a pass with Pass Designer](./creating-a-pass-with-pass-designer.md)
   Construct and customize a variety of pass styles with this easy-to-use tool.
-- [Creating a Poster Generic Pass](creating-a-poster-generic-pass.md)
+- [Creating a Poster Generic Pass](./creating-a-poster-generic-pass.md)
   Construct a digital pass with information that enables people to take action.
-- [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
+- [Creating the Source for a Pass](./creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
-- [Building a Pass](building-a-pass.md)
+- [Building a Pass](./building-a-pass.md)
   Build a distributable pass.
-- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+- [Defining the metadata of your Wallet Pass](./defining-the-metadata-of-your-wallet-pass.md)
   Provide customizable information for your Wallet Pass.
-- [Distributing and updating a pass](distributing-and-updating-a-pass.md)
+- [Distributing and updating a pass](./distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
-- [object Pass](pass.md)
+- [object Pass](./pass.md)
   An object that represents a pass.
 
 

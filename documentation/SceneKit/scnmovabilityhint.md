@@ -1,18 +1,19 @@
 # SCNMovabilityHint
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Values that inform SceneKit’s rendering for movement-related effects, used by the [`movabilityHint`](scnnode/movabilityhint.md) property.
+Values that inform SceneKit’s rendering for movement-related effects, used by the [`movabilityHint`](./scnnode/movabilityhint.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,37 +21,42 @@ Values that inform SceneKit’s rendering for movement-related effects, used by 
 enum SCNMovabilityHint
 ```
 
+```c
+enum SCNMovabilityHint : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SCNMovabilityHint.fixed](scnmovabilityhint/fixed.md)
+- [SCNMovabilityHint.fixed](./scnmovabilityhint/fixed.md)
   The node is not expected to move over time.
-- [SCNMovabilityHint.movable](scnmovabilityhint/movable.md)
+- [SCNMovabilityHint.movable](./scnmovabilityhint/movable.md)
   The node is expected to move over time.
 ### Initializers
-- [init?(rawValue: Int)](scnmovabilityhint/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnmovabilityhint/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isHidden: Bool](scnnode/ishidden.md)
+### Modifying the Node Visibility
+- [var isHidden: Bool](./scnnode/ishidden.md)
   A Boolean value that determines the visibility of the node’s contents. Animatable.
-- [var opacity: CGFloat](scnnode/opacity.md)
+- [var opacity: CGFloat](./scnnode/opacity.md)
   The opacity value of the node. Animatable.
-- [var renderingOrder: Int](scnnode/renderingorder.md)
+- [var renderingOrder: Int](./scnnode/renderingorder.md)
   The order the node’s content is drawn in relative to that of other nodes.
-- [var castsShadow: Bool](scnnode/castsshadow.md)
+- [var castsShadow: Bool](./scnnode/castsshadow.md)
   A Boolean value that determines whether SceneKit renders the node’s contents into shadow maps.
-- [var movabilityHint: SCNMovabilityHint](scnnode/movabilityhint.md)
+- [var movabilityHint: SCNMovabilityHint](./scnnode/movabilityhint.md)
   A value that indicates how SceneKit should handle the node when rendering movement-related effects.
 
 

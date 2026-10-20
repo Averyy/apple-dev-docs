@@ -1,7 +1,8 @@
 # USDValue.Vec4f
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 4-component single-precision vector.
 
@@ -23,38 +24,38 @@ struct Vec4f
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec4f/init.md)
+- [init()](./vec4f/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD4<Float>)](usdvalue/vec4f/init(_:).md)
+- [init(SIMD4<Float>)](./vec4f/init%28_%29.md)
   Creates a vector from a `SIMD4<Float>`.
-- [init(Float, Float, Float, Float)](usdvalue/vec4f/init(_:_:_:_:).md)
+- [init(Float, Float, Float, Float)](./vec4f/init%28_,_,_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD4<Float>](usdvalue/vec4f/simd.md)
+- [var simd: SIMD4<Float>](./vec4f/simd.md)
   The vector as a `SIMD4<Float>`.
-- [var w: Float](usdvalue/vec4f/w.md)
-- [var x: Float](usdvalue/vec4f/x.md)
-- [var y: Float](usdvalue/vec4f/y.md)
-- [var z: Float](usdvalue/vec4f/z.md)
+- [var w: Float](./vec4f/w.md)
+- [var x: Float](./vec4f/x.md)
+- [var y: Float](./vec4f/y.md)
+- [var z: Float](./vec4f/z.md)
 ### Subscripts
-- [subscript(Int) -> Float](usdvalue/vec4f/subscript(_:).md)
+- [subscript(Int) -> Float](./vec4f/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

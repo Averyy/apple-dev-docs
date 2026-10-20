@@ -1,7 +1,8 @@
 # AVSampleRateConverterAlgorithm_Normal
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The usual encoder bit rate strategy.
 
@@ -20,11 +21,16 @@ The usual encoder bit rate strategy.
 let AVSampleRateConverterAlgorithm_Normal: String
 ```
 
+```c
+extern NSString * const AVSampleRateConverterAlgorithm_Normal;
+```
+
 ## See Also
 
-- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](avsamplerateconverteralgorithm_minimumphase.md)
+### Sample rate algorithms
+- [let AVSampleRateConverterAlgorithm_MinimumPhase: String](./avsamplerateconverteralgorithm_minimumphase.md)
   The minimum phase encoder bit rate strategy.
-- [let AVSampleRateConverterAlgorithm_Mastering: String](avsamplerateconverteralgorithm_mastering.md)
+- [let AVSampleRateConverterAlgorithm_Mastering: String](./avsamplerateconverteralgorithm_mastering.md)
   The mastering encoder bit rate strategy.
 
 

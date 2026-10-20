@@ -1,7 +1,8 @@
 # currentCommit
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The commit currently checked out.
 

@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.MeasurementAttribute.Component
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,21 +22,21 @@ enum Component
 ## Topics
 
 ### Enumeration Cases
-- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component.unit](attributescopes/foundationattributes/measurementattribute/component/unit.md)
-- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component.value](attributescopes/foundationattributes/measurementattribute/component/value.md)
+- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component.unit](./component/unit.md)
+- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component.value](./component/value.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

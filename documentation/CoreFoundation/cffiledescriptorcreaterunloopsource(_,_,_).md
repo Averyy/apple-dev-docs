@@ -1,7 +1,8 @@
 # CFFileDescriptorCreateRunLoopSource(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new runloop source for a given CFFileDescriptor.
 
@@ -20,19 +21,23 @@ Creates a new runloop source for a given CFFileDescriptor.
 func CFFileDescriptorCreateRunLoopSource(_ allocator: CFAllocator!, _ f: CFFileDescriptor!, _ order: CFIndex) -> CFRunLoopSource!
 ```
 
+```c
+extern CFRunLoopSourceRefCFFileDescriptorCreateRunLoopSource(CFAllocatorRef allocator, CFFileDescriptorRef f, CFIndex order);
+```
+
 #### Return Value
 
-A new runloop source for `f`, or `NULL` if there was a problem creating the object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new runloop source for `f`, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
-The context for the new runloop (see [`CFRunLoopSourceCreate(_:_:_:)`](cfrunloopsourcecreate(_:_:_:).md)) is the same as the context passed in when the CFFileDescriptor was created (see [`CFFileDescriptorCreate(_:_:_:_:_:)`](cffiledescriptorcreate(_:_:_:_:_:).md)).
+The context for the new runloop (see [`CFRunLoopSourceCreate(_:_:_:)`](./cfrunloopsourcecreate%28_,_,_%29.md)) is the same as the context passed in when the CFFileDescriptor was created (see [`CFFileDescriptorCreate(_:_:_:_:_:)`](./cffiledescriptorcreate%28_,_,_,_,_%29.md)).
 
 ## Parameters
 
 - `allocator`: The allocator to use to allocate memory for the new bag and its storage for values. Pass `NULL` or kCFAllocatorDefault to use the current default allocator.
 - `f`: A CFFileDescriptor.
-- `order`: The order for the new run loop (see [`CFRunLoopSourceCreate(_:_:_:)`](cfrunloopsourcecreate(_:_:_:).md)).
+- `order`: The order for the new run loop (see [`CFRunLoopSourceCreate(_:_:_:)`](./cfrunloopsourcecreate%28_,_,_%29.md)).
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the directory share with an empty set of directories.
 
@@ -14,9 +15,14 @@ Initializes the directory share with an empty set of directories.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(directories: [String : VZSharedDirectory])](vzmultipledirectoryshare/init(directories:).md)
+### Creating a directory share
+- [init(directories: [String : VZSharedDirectory])](./init%28directories%29.md)
   Creates the directory share with a set of directories on the host.
 
 

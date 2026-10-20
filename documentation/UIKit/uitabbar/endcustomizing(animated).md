@@ -1,7 +1,8 @@
 # endCustomizing(animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the standard interface used to customize the tab bar.
 
@@ -16,9 +17,13 @@ Dismisses the standard interface used to customize the tab bar.
 func endCustomizing(animated: Bool) -> Bool
 ```
 
+```objc
+- (BOOL) endCustomizingAnimated:(BOOL) animated;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if items on the tab bar changed or [`false`](https://developer.apple.com/documentation/swift/false) if they did not.
+[`true`](../../Swift/true.md) if items on the tab bar changed or [`false`](../../Swift/false.md) if they did not.
 
 #### Discussion
 
@@ -26,13 +31,14 @@ You rarely need to call this method. Typically, the user dismisses the modal vie
 
 ## Parameters
 
-- `animated`: If [`true`](https://developer.apple.com/documentation/swift/true), animate the dismissal of the interface.
+- `animated`: If [`true`](../../Swift/true.md), animate the dismissal of the interface.
 
 ## See Also
 
-- [func beginCustomizingItems([UITabBarItem])](uitabbar/begincustomizingitems(_:).md)
+### Supporting user customization of tab bars
+- [func beginCustomizingItems([UITabBarItem])](./begincustomizingitems%28_%29.md)
   Presents a standard interface that lets the user customize the contents of the tab bar.
-- [var isCustomizing: Bool](uitabbar/iscustomizing.md)
+- [var isCustomizing: Bool](./iscustomizing.md)
   A Boolean value indicating whether the user is currently customizing the tab bar.
 
 

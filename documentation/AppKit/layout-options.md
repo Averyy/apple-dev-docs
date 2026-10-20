@@ -1,17 +1,18 @@
 # Layout Options
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
-Layout options returned as a bit mask by the [`layoutOptions()`](nsglyphstorage/layoutoptions().md) method.
+Layout options returned as a bit mask by the [`layoutOptions()`](./nsglyphstorage/layoutoptions%28%29.md) method.
 
 ## Topics
 
 ### Constants
-- [var NSShowControlGlyphs: Int](nsshowcontrolglyphs.md)
+- [var NSShowControlGlyphs: Int](./nsshowcontrolglyphs.md)
   Generates displayable glyphs for control characters.
-- [var NSShowInvisibleGlyphs: Int](nsshowinvisibleglyphs.md)
+- [var NSShowInvisibleGlyphs: Int](./nsshowinvisibleglyphs.md)
   Generates displayable glyphs for invisible characters.
-- [var NSWantsBidiLevels: Int](nswantsbidilevels.md)
+- [var NSWantsBidiLevels: Int](./nswantsbidilevels.md)
   Generates directional formatting codes for bidirectional text.
 
 

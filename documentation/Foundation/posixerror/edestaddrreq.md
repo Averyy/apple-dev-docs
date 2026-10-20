@@ -1,7 +1,8 @@
 # EDESTADDRREQ
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Destination address required.
 

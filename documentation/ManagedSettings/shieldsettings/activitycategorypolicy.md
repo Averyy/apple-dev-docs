@@ -1,7 +1,8 @@
 # ShieldSettings.ActivityCategoryPolicy
 
 **Framework**: Managed Settings  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Policies available for shielding activities based on their category.
 
@@ -19,30 +20,31 @@ enum ActivityCategoryPolicy<Activity>
 ## Topics
 
 ### Shielding categories
-- [ShieldSettings.ActivityCategoryPolicy.none](shieldsettings/activitycategorypolicy/none.md)
+- [ShieldSettings.ActivityCategoryPolicy.none](./activitycategorypolicy/none.md)
   A policy that indicates the device doesn’t shield any content.
-- [ShieldSettings.ActivityCategoryPolicy.all(except:)](shieldsettings/activitycategorypolicy/all(except:).md)
+- [ShieldSettings.ActivityCategoryPolicy.all(except:)](./activitycategorypolicy/all%28except%29.md)
   A policy that indicates the device shields all apps and websites, except content that you specify.
-- [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](shieldsettings/activitycategorypolicy/specific(_:except:).md)
+- [case specific(Set<ActivityCategoryToken>, except: Set<Token<Activity>>)](./activitycategorypolicy/specific%28_,except%29.md)
   A policy that indicates the device shields specific categories of activity, with some exceptions.
 ### Comparing category policies
-- [static func == (ShieldSettings.ActivityCategoryPolicy<Activity>, ShieldSettings.ActivityCategoryPolicy<Activity>) -> Bool](shieldsettings/activitycategorypolicy/==(_:_:).md)
+- [static func == (ShieldSettings.ActivityCategoryPolicy<Activity>, ShieldSettings.ActivityCategoryPolicy<Activity>) -> Bool](./activitycategorypolicy/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](shieldsettings/applicationcategories-swift.property.md)
+### Blocking categories of apps and websites
+- [var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>?](./applicationcategories-swift.property.md)
   Categories of apps for the system to cover with a shielding view.
-- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](shieldsettings/applicationcategories-swift.type.property.md)
+- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](./applicationcategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of apps for the system to cover with a shielding view.
-- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](shieldsettings/webdomaincategories-swift.property.md)
+- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](./webdomaincategories-swift.property.md)
   Categories of websites for the system to cover with a shielding view.
-- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](shieldsettings/webdomaincategories-swift.type.property.md)
+- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](./webdomaincategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of websites for the system to shield.
 
 

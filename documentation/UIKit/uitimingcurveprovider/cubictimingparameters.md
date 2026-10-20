@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The cubic timing parameters to use.
@@ -19,17 +20,22 @@ The cubic timing parameters to use.
 var cubicTimingParameters: UICubicTimingParameters? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UICubicTimingParameters * cubicTimingParameters;
+```
+
 #### Discussion
 
-Implement this property and use it to provide your custom cubic timing information. If the value of the [`timingCurveType`](uitimingcurveprovider/timingcurvetype.md) property is [`UITimingCurveType.builtin`](uitimingcurvetype/builtin.md), [`UITimingCurveType.cubic`](uitimingcurvetype/cubic.md), or [`UITimingCurveType.composed`](uitimingcurvetype/composed.md), you must return an object from this property. The object you return can specify one of the built-in UIKit curves, such as [`UIView.AnimationCurve.linear`](uiview/animationcurve/linear.md), or it can specify a timing curve based on a custom Bézier path.
+Implement this property and use it to provide your custom cubic timing information. If the value of the [`timingCurveType`](./timingcurvetype.md) property is [`UITimingCurveType.builtin`](../uitimingcurvetype/builtin.md), [`UITimingCurveType.cubic`](../uitimingcurvetype/cubic.md), or [`UITimingCurveType.composed`](../uitimingcurvetype/composed.md), you must return an object from this property. The object you return can specify one of the built-in UIKit curves, such as [`UIView.AnimationCurve.linear`](../uiview/animationcurve/linear.md), or it can specify a timing curve based on a custom Bézier path.
 
-For more information about configuring this object, see [`UICubicTimingParameters`](uicubictimingparameters.md).
+For more information about configuring this object, see [`UICubicTimingParameters`](../uicubictimingparameters.md).
 
 ## See Also
 
-- [var timingCurveType: UITimingCurveType](uitimingcurveprovider/timingcurvetype.md)
+### Getting the timing information
+- [var timingCurveType: UITimingCurveType](./timingcurvetype.md)
   The type of timing information to use.
-- [var springTimingParameters: UISpringTimingParameters?](uitimingcurveprovider/springtimingparameters.md)
+- [var springTimingParameters: UISpringTimingParameters?](./springtimingparameters.md)
   The spring-based timing parameters to use.
 
 

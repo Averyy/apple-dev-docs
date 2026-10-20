@@ -1,21 +1,28 @@
 # sec_protocol_options_add_tls_ciphersuite(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 12.0+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
-- watchOS 5.0+
+- iOS 12.0+ - Deprecated in 13.0
+- iPadOS 12.0+ - Deprecated in 13.0
+- Mac Catalyst 12.0+ - Deprecated in 13.0
+- macOS 10.14+ - Deprecated in 10.15
+- tvOS 12.0+ - Deprecated in 13.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use sec_protocol_options_append_tls_ciphersuite
 
 ## Declaration
 
 ```swift
 func sec_protocol_options_add_tls_ciphersuite(_ options: sec_protocol_options_t, _ ciphersuite: SSLCipherSuite)
+```
+
+```c
+void sec_protocol_options_add_tls_ciphersuite(sec_protocol_options_t options, SSLCipherSuite ciphersuite);
 ```
 
 #### Discussion

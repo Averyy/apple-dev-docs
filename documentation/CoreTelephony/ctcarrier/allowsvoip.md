@@ -1,14 +1,17 @@
 # allowsVOIP
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates if the carrier allows making VoIP calls on its network.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 16.0
+- iPadOS 4.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+
+> **Deprecated**: Deprecated; returns YES at some point in the future
 
 ## Declaration
 
@@ -16,21 +19,26 @@ Indicates if the carrier allows making VoIP calls on its network.
 var allowsVOIP: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL allowsVOIP;
+```
+
 #### Discussion
 
-A read-only Boolean value that is [`true`](https://developer.apple.com/documentation/swift/true) if the carrier allows making VoIP calls on its network, or [`false`](https://developer.apple.com/documentation/swift/false) if not.
+A read-only Boolean value that is [`true`](../../Swift/true.md) if the carrier allows making VoIP calls on its network, or [`false`](../../Swift/false.md) if not.
 
 If you configure a device for a carrier and then remove the SIM card, this property retains the Boolean value indicating the carrier’s policy regarding VoIP. If you then install a new SIM card, its VoIP policy Boolean replaces the previous value of this property.
 
 ## See Also
 
-- [var carrierName: String?](ctcarrier/carriername.md)
+### Getting Information About the Cellular Service Provider
+- [var carrierName: String?](./carriername.md)
   The name of the user’s home cellular service provider.
-- [var isoCountryCode: String?](ctcarrier/isocountrycode.md)
+- [var isoCountryCode: String?](./isocountrycode.md)
   The ISO country code for the user’s cellular service provider.
-- [var mobileCountryCode: String?](ctcarrier/mobilecountrycode.md)
+- [var mobileCountryCode: String?](./mobilecountrycode.md)
   The mobile country code (MCC) for the user’s cellular service provider.
-- [var mobileNetworkCode: String?](ctcarrier/mobilenetworkcode.md)
+- [var mobileNetworkCode: String?](./mobilenetworkcode.md)
   The mobile network code for the user’s cellular service provider.
 
 

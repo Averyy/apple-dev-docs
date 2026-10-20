@@ -1,7 +1,8 @@
 # noteHeightOfRowsWithIndexesChanged(_:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Immediately retiles the browser’s columns using row heights specified by the browser’s delegate.
 
@@ -12,6 +13,10 @@ Immediately retiles the browser’s columns using row heights specified by the b
 
 ```swift
 func noteHeightOfRowsWithIndexesChanged(_ indexSet: IndexSet, inColumn columnIndex: Int)
+```
+
+```objc
+- (void) noteHeightOfRowsWithIndexesChanged:(NSIndexSet *) indexSet inColumn:(NSInteger) columnIndex;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ The browser’s delegate must implement
 
 ## See Also
 
-- [func reloadData(forRowIndexes: IndexSet, inColumn: Int)](nsbrowser/reloaddata(forrowindexes:incolumn:).md)
+### Updating Browsers
+- [func reloadData(forRowIndexes: IndexSet, inColumn: Int)](./reloaddata%28forrowindexes,incolumn%29.md)
   Updates the rows in the column with the specified column index with indexes in the specified set.
 
 

@@ -1,7 +1,8 @@
 # menuRepresentation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu element that represents the item when it appears in a menu.
 
@@ -16,6 +17,10 @@ A menu element that represents the item when it appears in a menu.
 ```swift
 @NSCopying
 var menuRepresentation: UIMenuElement? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIMenuElement * menuRepresentation;
 ```
 
 

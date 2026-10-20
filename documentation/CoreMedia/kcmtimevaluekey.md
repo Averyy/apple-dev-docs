@@ -1,7 +1,8 @@
 # kCMTimeValueKey
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary key for a time value.
 
@@ -20,13 +21,18 @@ A dictionary key for a time value.
 let kCMTimeValueKey: CFString
 ```
 
+```c
+extern CFStringRef const kCMTimeValueKey;
+```
+
 ## See Also
 
-- [let kCMTimeScaleKey: CFString](kcmtimescalekey.md)
+### Constants
+- [let kCMTimeScaleKey: CFString](./kcmtimescalekey.md)
   A dictionary key for a timescale.
-- [let kCMTimeEpochKey: CFString](kcmtimeepochkey.md)
+- [let kCMTimeEpochKey: CFString](./kcmtimeepochkey.md)
   A dictionary key for a time epoch.
-- [let kCMTimeFlagsKey: CFString](kcmtimeflagskey.md)
+- [let kCMTimeFlagsKey: CFString](./kcmtimeflagskey.md)
   A dictionary key for time flags.
 
 

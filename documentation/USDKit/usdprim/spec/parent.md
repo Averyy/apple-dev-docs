@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent prim spec, or `nil` if this is a top-level prim spec.
 

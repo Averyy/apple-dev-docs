@@ -1,7 +1,8 @@
 # WKWebExtension.WindowState.normal
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a window is in its normal state.
 
@@ -16,6 +17,10 @@ Indicates a window is in its normal state.
 
 ```swift
 case normal
+```
+
+```c
+WKWebExtensionWindowStateNormal
 ```
 
 

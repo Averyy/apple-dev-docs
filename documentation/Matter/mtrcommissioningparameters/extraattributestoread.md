@@ -1,7 +1,8 @@
 # extraAttributesToRead
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 List of attribute paths to read from the commissionee (in addition to whatever attributes are already read to handle readEndpointInformation being YES, or to handle other commissioning tasks).
 
@@ -18,6 +19,10 @@ List of attribute paths to read from the commissionee (in addition to whatever a
 
 ```swift
 var extraAttributesToRead: [MTRAttributeRequestPath]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<MTRAttributeRequestPath *> * extraAttributesToRead;
 ```
 
 #### Discussion

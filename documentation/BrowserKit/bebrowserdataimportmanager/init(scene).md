@@ -1,7 +1,8 @@
 # init(scene:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an import manager for a window scene.
 
@@ -14,6 +15,10 @@ Initializes an import manager for a window scene.
 ```swift
 @MainActor
 init(scene: UIWindowScene?)
+```
+
+```objc
+- (instancetype) initWithScene:(UIWindowScene *) scene;
 ```
 
 ## Parameters

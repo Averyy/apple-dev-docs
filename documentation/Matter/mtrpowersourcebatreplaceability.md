@@ -1,7 +1,8 @@
 # MTRPowerSourceBatReplaceability
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,25 +19,29 @@
 enum MTRPowerSourceBatReplaceability
 ```
 
+```c
+enum MTRPowerSourceBatReplaceability : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPowerSourceBatReplaceability.factoryReplaceable](mtrpowersourcebatreplaceability/factoryreplaceable.md)
-- [MTRPowerSourceBatReplaceability.notReplaceable](mtrpowersourcebatreplaceability/notreplaceable.md)
-- [MTRPowerSourceBatReplaceability.unspecified](mtrpowersourcebatreplaceability/unspecified.md)
-- [MTRPowerSourceBatReplaceability.userReplaceable](mtrpowersourcebatreplaceability/userreplaceable.md)
+- [MTRPowerSourceBatReplaceability.factoryReplaceable](./mtrpowersourcebatreplaceability/factoryreplaceable.md)
+- [MTRPowerSourceBatReplaceability.notReplaceable](./mtrpowersourcebatreplaceability/notreplaceable.md)
+- [MTRPowerSourceBatReplaceability.unspecified](./mtrpowersourcebatreplaceability/unspecified.md)
+- [MTRPowerSourceBatReplaceability.userReplaceable](./mtrpowersourcebatreplaceability/userreplaceable.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpowersourcebatreplaceability/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpowersourcebatreplaceability/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

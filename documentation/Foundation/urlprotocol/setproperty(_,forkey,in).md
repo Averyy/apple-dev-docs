@@ -1,7 +1,8 @@
 # setProperty(_:forKey:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the property associated with the specified key in the specified request.
 
@@ -20,9 +21,13 @@ Sets the property associated with the specified key in the specified request.
 class func setProperty(_ value: Any, forKey key: String, in request: NSMutableURLRequest)
 ```
 
+```objc
++ (void) setProperty:(id) value forKey:(NSString *) key inRequest:(NSMutableURLRequest *) request;
+```
+
 #### Discussion
 
-Use this method to provide an interface for protocol implementors to customize protocol-specific information associated with [`URLRequest`](urlrequest.md) objects.
+Use this method to provide an interface for protocol implementors to customize protocol-specific information associated with [`URLRequest`](../urlrequest.md) objects.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ Use this method to provide an interface for protocol implementors to customize p
 
 ## See Also
 
-- [class func property(forKey: String, in: URLRequest) -> Any?](urlprotocol/property(forkey:in:).md)
+### Getting and setting request properties
+- [class func property(forKey: String, in: URLRequest) -> Any?](./property%28forkey,in%29.md)
   Fetches the property associated with the specified key in the specified request.
-- [class func removeProperty(forKey: String, in: NSMutableURLRequest)](urlprotocol/removeproperty(forkey:in:).md)
+- [class func removeProperty(forKey: String, in: NSMutableURLRequest)](./removeproperty%28forkey,in%29.md)
   Removes the property associated with the specified key in the specified request.
 
 

@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a multiplier applied to the cell-defined particle scale.
 
@@ -19,25 +20,30 @@ Defines a multiplier applied to the cell-defined particle scale.
 var scale: Float { get set }
 ```
 
+```objc
+@property float scale;
+```
+
 #### Discussion
 
 Default value is `1.0`.
 
 ## See Also
 
-- [var seed: UInt32](caemitterlayer/seed.md)
+### Emitter Cell Attribute Multipliers
+- [var seed: UInt32](./seed.md)
   Specifies the seed used to initialize the random number generator.
-- [var spin: Float](caemitterlayer/spin.md)
+- [var spin: Float](./spin.md)
   Defines a multiplier applied to the cell-defined particle spin. Animatable.
-- [var velocity: Float](caemitterlayer/velocity.md)
+- [var velocity: Float](./velocity.md)
   Defines a multiplier applied to the cell-defined particle velocity. Animatable.
-- [var birthRate: Float](caemitterlayer/birthrate.md)
+- [var birthRate: Float](./birthrate.md)
   Defines a multiplier that is applied to the cell-defined birth rate. Animatable
-- [var emitterMode: CAEmitterLayerEmitterMode](caemitterlayer/emittermode.md)
+- [var emitterMode: CAEmitterLayerEmitterMode](./emittermode.md)
   Specifies the emitter mode.
-- [var lifetime: Float](caemitterlayer/lifetime.md)
+- [var lifetime: Float](./lifetime.md)
   Defines a multiplier applied to the cell-defined lifetime range when particles are created. Animatable.
-- [var preservesDepth: Bool](caemitterlayer/preservesdepth.md)
+- [var preservesDepth: Bool](./preservesdepth.md)
   Defines whether the layer flattens the particles into its plane.
 
 

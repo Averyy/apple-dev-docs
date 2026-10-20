@@ -1,7 +1,8 @@
 # webExtensionController(_:openOptionsPageFor:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests its options page to be opened.
 
@@ -15,12 +16,20 @@ Called when an extension context requests its options page to be opened.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, openOptionsPageFor extensionContext: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, openOptionsPageFor extensionContext: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller openOptionsPageForExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-This method should be implemented by the app to handle requests to display the extension’s options page. The app can decide how and where to display the options page (e.g., in a new tab or a separate window). The app should call the completion handler once the options page is visible to the user, or with an error if the operation was declined or failed. If not implemented, the options page will be opened in a new tab using the [`webExtensionController(_:openNewTabUsing:for:completionHandler:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:opennewtabusing:for:completionhandler:).md) delegate method.
+This method should be implemented by the app to handle requests to display the extension’s options page. The app can decide how and where to display the options page (e.g., in a new tab or a separate window). The app should call the completion handler once the options page is visible to the user, or with an error if the operation was declined or failed. If not implemented, the options page will be opened in a new tab using the [`webExtensionController(_:openNewTabUsing:for:completionHandler:)`](./webextensioncontroller%28_,opennewtabusing,for,completionhandler%29.md) delegate method.
 
 ## Parameters
 

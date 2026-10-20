@@ -1,7 +1,8 @@
 # init(strokes:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a drawing object and populates it with a sequence of strokes the user provides.
 
@@ -20,13 +21,14 @@ init<S>(strokes: S) where S : Sequence, S.Element == PKStroke
 
 ## Parameters
 
-- `strokes`: A sequence of [`PKStroke`](pkstroke-swift.struct.md) elements.
+- `strokes`: A sequence of [`PKStroke`](../pkstroke-swift.struct.md) elements.
 
 ## See Also
 
-- [init(data: Data) throws](pkdrawing-swift.struct/init(data:).md)
+### Creating a drawing object
+- [init(data: Data) throws](./init%28data%29.md)
   Creates a drawing object and populates it with previously drawn content.
-- [init()](pkdrawing-swift.struct/init.md)
+- [init()](./init%28%29.md)
   Creates an empty drawing object.
 
 

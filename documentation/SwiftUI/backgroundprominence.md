@@ -1,7 +1,8 @@
 # BackgroundProminence
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The prominence of backgrounds underneath other views.
 
@@ -29,28 +30,29 @@ This can be read and written for views with the `EnvironmentValues.backgroundPro
 ## Topics
 
 ### Getting background prominence
-- [static let standard: BackgroundProminence](backgroundprominence/standard.md)
+- [static let standard: BackgroundProminence](./backgroundprominence/standard.md)
   The standard prominence of a background
-- [static let increased: BackgroundProminence](backgroundprominence/increased.md)
+- [static let increased: BackgroundProminence](./backgroundprominence/increased.md)
   A more prominent background that likely requires some changes to the views above it.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func listRowBackground<V>(V?) -> some View](view/listrowbackground(_:).md)
+### Configuring backgrounds
+- [func listRowBackground<V>(V?) -> some View](./view/listrowbackground%28_%29.md)
   Places a custom background view behind a list row item.
-- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](view/alternatingrowbackgrounds(_:).md)
+- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](./view/alternatingrowbackgrounds%28_%29.md)
   Overrides whether lists and tables in this view have alternating row backgrounds.
-- [struct AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior.md)
+- [struct AlternatingRowBackgroundBehavior](./alternatingrowbackgroundbehavior.md)
   The styling of views with respect to alternating row backgrounds.
-- [var backgroundProminence: BackgroundProminence](environmentvalues/backgroundprominence.md)
+- [var backgroundProminence: BackgroundProminence](./environmentvalues/backgroundprominence.md)
   The prominence of the background underneath views associated with this environment.
 
 

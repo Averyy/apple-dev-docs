@@ -1,7 +1,8 @@
 # discretePositionCount
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of discrete control positions that the DualSense adaptive triggers support.
 
@@ -19,17 +20,23 @@ The number of discrete control positions that the DualSense adaptive triggers su
 class var discretePositionCount: Int { get }
 ```
 
+```c
+GCDualSenseAdaptiveTriggerDiscretePositionCount
+```
+
 #### Discussion
 
 You can configure each of these positions separately in multiposition feedback and vibration modes.
 
 ## See Also
 
-- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](gcdualsenseadaptivetrigger/setmodefeedback(resistivestrengths:).md)
+### Related Documentation
+- [func setModeFeedback(resistiveStrengths: GCDualSenseAdaptiveTrigger.PositionalResistiveStrengths)](./setmodefeedback%28resistivestrengths%29.md)
   Sets the mode to provide feedback with the specified strengths for each possible trigger position.
-- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](gcdualsenseadaptivetrigger/setmodevibration(amplitudes:frequency:).md)
+- [func setModeVibration(amplitudes: GCDualSenseAdaptiveTrigger.PositionalAmplitudes, frequency: Float)](./setmodevibration%28amplitudes,frequency%29.md)
   Sets the mode to vibrate with the specified amplitudes for each possible trigger position.
-- [var armPosition: Float](gcdualsenseadaptivetrigger/armposition.md)
+### Getting the arm position
+- [var armPosition: Float](./armposition.md)
   The position of the trigger’s arm.
 
 

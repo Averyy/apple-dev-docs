@@ -1,7 +1,8 @@
 # count()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func count() -> Result<Int, Failure>.Publisher
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

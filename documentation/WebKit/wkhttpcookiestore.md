@@ -1,7 +1,8 @@
 # WKHTTPCookieStore
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the HTTP cookies associated with a particular web view.
 
@@ -19,63 +20,68 @@ An object that manages the HTTP cookies associated with a particular web view.
 class WKHTTPCookieStore
 ```
 
+```objc
+@interface WKHTTPCookieStore : NSObject
+```
+
 #### Overview
 
-Use a [`WKHTTPCookieStore`](wkhttpcookiestore.md) to specify the initial cookies for your webpages, and to manage cookies for your web content. For example, you might use this object to delete the cookie for the current session when the user logs out. To detect when the webpage changes a cookie, install a cookie observer using the [`add(_:)`](wkhttpcookiestore/add(_:).md) method.
+Use a [`WKHTTPCookieStore`](./wkhttpcookiestore.md) to specify the initial cookies for your webpages, and to manage cookies for your web content. For example, you might use this object to delete the cookie for the current session when the user logs out. To detect when the webpage changes a cookie, install a cookie observer using the [`add(_:)`](./wkhttpcookiestore/add%28_%29.md) method.
 
-You don’t create a [`WKHTTPCookieStore`](wkhttpcookiestore.md) object directly. Instead, retrieve this object from the [`WKWebsiteDataStore`](wkwebsitedatastore.md) object in your web view’s configuration object.
+You don’t create a [`WKHTTPCookieStore`](./wkhttpcookiestore.md) object directly. Instead, retrieve this object from the [`WKWebsiteDataStore`](./wkwebsitedatastore.md) object in your web view’s configuration object.
 
 ## Topics
 
 ### Managing cookies
-- [func getAllCookies(([HTTPCookie]) -> Void)](wkhttpcookiestore/getallcookies(_:).md)
+- [func getAllCookies(([HTTPCookie]) -> Void)](./wkhttpcookiestore/getallcookies%28_%29.md)
   Fetches all stored cookies asynchronously and delivers them to the specified completion handler.
-- [func setCookie(HTTPCookie, completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookie(_:completionhandler:).md)
+- [func setCookie(HTTPCookie, completionHandler: (() -> Void)?)](./wkhttpcookiestore/setcookie%28_,completionhandler%29.md)
   Adds a cookie to the cookie store.
-- [func delete(HTTPCookie, completionHandler: (() -> Void)?)](wkhttpcookiestore/delete(_:completionhandler:).md)
+- [func delete(HTTPCookie, completionHandler: (() -> Void)?)](./wkhttpcookiestore/delete%28_,completionhandler%29.md)
   Deletes the specified cookie.
 ### Permitting cookie storage
-- [func getCookiePolicy((WKHTTPCookieStore.CookiePolicy) -> Void)](wkhttpcookiestore/getcookiepolicy(_:).md)
+- [func getCookiePolicy((WKHTTPCookieStore.CookiePolicy) -> Void)](./wkhttpcookiestore/getcookiepolicy%28_%29.md)
   Returns a cookie policy that indicates whether the cookie store allows cookie storage.
-- [func setCookiePolicy(WKHTTPCookieStore.CookiePolicy, completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookiepolicy(_:completionhandler:).md)
+- [func setCookiePolicy(WKHTTPCookieStore.CookiePolicy, completionHandler: (() -> Void)?)](./wkhttpcookiestore/setcookiepolicy%28_,completionhandler%29.md)
   Sets a cookie policy that indicates whether the cookie store allows cookie storage.
-- [WKHTTPCookieStore.CookiePolicy](wkhttpcookiestore/cookiepolicy.md)
+- [WKHTTPCookieStore.CookiePolicy](./wkhttpcookiestore/cookiepolicy.md)
   An enumeration with cases that indicate whether a cookie store allows cookie storage.
 ### Observing cookie store changes
-- [func add(any WKHTTPCookieStoreObserver)](wkhttpcookiestore/add(_:).md)
+- [func add(any WKHTTPCookieStoreObserver)](./wkhttpcookiestore/add%28_%29.md)
   Adds an observer to the cookie store.
-- [func remove(any WKHTTPCookieStoreObserver)](wkhttpcookiestore/remove(_:).md)
+- [func remove(any WKHTTPCookieStoreObserver)](./wkhttpcookiestore/remove%28_%29.md)
   Removes an observer from the cookie store.
-- [protocol WKHTTPCookieStoreObserver](wkhttpcookiestoreobserver.md)
+- [protocol WKHTTPCookieStoreObserver](./wkhttpcookiestoreobserver.md)
   The methods to adopt in an object that monitors changes to a webpage’s cookies.
 ### Instance Methods
-- [func getCookies(for: URL, completionHandler: ([HTTPCookie]) -> Void)](wkhttpcookiestore/getcookies(for:completionhandler:).md)
-- [func setCookies([HTTPCookie], completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookies(_:completionhandler:).md)
+- [func getCookies(for: URL, completionHandler: ([HTTPCookie]) -> Void)](./wkhttpcookiestore/getcookies%28for,completionhandler%29.md)
+- [func setCookies([HTTPCookie], completionHandler: (() -> Void)?)](./wkhttpcookiestore/setcookies%28_,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebsiteDataStore](wkwebsitedatastore.md)
+### Web data management
+- [class WKWebsiteDataStore](./wkwebsitedatastore.md)
   An object that manages cookies, disk and memory caches, and other types of data for a web view.
-- [class WKWebsiteDataRecord](wkwebsitedatarecord.md)
+- [class WKWebsiteDataRecord](./wkwebsitedatarecord.md)
   A record of the data that a particular website stores persistently.
-- [protocol WKURLSchemeHandler](wkurlschemehandler.md)
+- [protocol WKURLSchemeHandler](./wkurlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
-- [protocol WKURLSchemeTask](wkurlschemetask.md)
+- [protocol WKURLSchemeTask](./wkurlschemetask.md)
   An interface that WebKit uses to request custom resources from your app.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](../Foundation/nsattributedstring/documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
 
 

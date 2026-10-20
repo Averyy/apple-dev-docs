@@ -1,7 +1,8 @@
 # reversePlaybackReachedStartOfSeekableRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 
@@ -20,19 +21,24 @@ Indicates that the player automatically switched rate to 1.0 when the reverse pl
 static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason
 ```
 
+```c
+extern AVPlayerRateDidChangeReason const AVPlayerRateDidChangeReasonReversePlaybackReachedStartOfSeekableRange;
+```
+
 ## See Also
 
-- [var defaultRate: Float](avplayer/defaultrate.md)
+### Controlling playback
+- [var defaultRate: Float](../defaultrate.md)
   A default rate at which to begin playback.
-- [func play()](avplayer/play.md)
+- [func play()](../play%28%29.md)
   Begins playback of the current item.
-- [func pause()](avplayer/pause.md)
+- [func pause()](../pause%28%29.md)
   Pauses playback of the current item.
-- [var rate: Float](avplayer/rate.md)
+- [var rate: Float](../rate.md)
   The current playback rate.
-- [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
+- [class let rateDidChangeNotification: NSNotification.Name](../ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
-- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](./playheadreachedliveedge.md)
   Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
 
 

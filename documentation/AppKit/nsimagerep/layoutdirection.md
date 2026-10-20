@@ -1,7 +1,8 @@
 # layoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction for the image.
 
@@ -14,25 +15,30 @@ The layout direction for the image.
 var layoutDirection: NSImage.LayoutDirection { get set }
 ```
 
+```objc
+@property NSImageLayoutDirection layoutDirection;
+```
+
 #### Discussion
 
-For possible values, see [`NSImage.LayoutDirection`](nsimage/layoutdirection.md). The default value for new image representation objects is [`NSImage.LayoutDirection.unspecified`](nsimage/layoutdirection/unspecified.md).
+For possible values, see [`NSImage.LayoutDirection`](../nsimage/layoutdirection.md). The default value for new image representation objects is [`NSImage.LayoutDirection.unspecified`](../nsimage/layoutdirection/unspecified.md).
 
 ## See Also
 
-- [var bitsPerSample: Int](nsimagerep/bitspersample.md)
+### Specifying Information About the Representation
+- [var bitsPerSample: Int](./bitspersample.md)
   The number of bits per sample in the object (if the object is a planar image, this property contains the number of bits per sample per plane).
-- [var colorSpaceName: NSColorSpaceName](nsimagerep/colorspacename.md)
+- [var colorSpaceName: NSColorSpaceName](./colorspacename.md)
   The name of the color space used by the image data.
-- [var hasAlpha: Bool](nsimagerep/hasalpha.md)
+- [var hasAlpha: Bool](./hasalpha.md)
   A Boolean value that indicates whether the image data has an alpha channel.
-- [var isOpaque: Bool](nsimagerep/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the image is opaque.
-- [var pixelsHigh: Int](nsimagerep/pixelshigh.md)
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of the image, measured in pixels.
-- [var pixelsWide: Int](nsimagerep/pixelswide.md)
+- [var pixelsWide: Int](./pixelswide.md)
   The width of the image, measured in pixels.
-- [Device-Specific Value](device-specific-value.md)
+- [Device-Specific Value](../device-specific-value.md)
   A constant that is used by image representations to denote an attribute whose value changes to match the display device.
 
 

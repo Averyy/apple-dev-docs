@@ -1,10 +1,11 @@
 # kBluetoothVoiceSettingInputCodingLinearInputCoding
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothVoiceSettingInputCodingLinearInputCoding: Int { get }
 ```
 
+```c
+kBluetoothVoiceSettingInputCodingLinearInputCoding
+```
+
 ## See Also
 
-- [var kBluetoothVoiceSettingInputCodingALawInputCoding: Int](kbluetoothvoicesettinginputcodingalawinputcoding.md)
-- [var kBluetoothVoiceSettingInputCodingMask: Int](kbluetoothvoicesettinginputcodingmask.md)
-- [var kBluetoothVoiceSettingInputCodingULawInputCoding: Int](kbluetoothvoicesettinginputcodingulawinputcoding.md)
+### Constants
+- [var kBluetoothVoiceSettingInputCodingALawInputCoding: Int](./kbluetoothvoicesettinginputcodingalawinputcoding.md)
+- [var kBluetoothVoiceSettingInputCodingMask: Int](./kbluetoothvoicesettinginputcodingmask.md)
+- [var kBluetoothVoiceSettingInputCodingULawInputCoding: Int](./kbluetoothvoicesettinginputcodingulawinputcoding.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Compress the view by applying the specified compression options.
@@ -13,6 +14,10 @@ Compress the view by applying the specified compression options.
 
 ```swift
 func compress(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions])
+```
+
+```objc
+- (void) compressWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
 ```
 
 #### Discussion

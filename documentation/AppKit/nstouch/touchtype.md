@@ -1,7 +1,8 @@
 # NSTouch.TouchType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A bit mask identifying a direct or indirect touch type.
 
@@ -14,31 +15,36 @@ A bit mask identifying a direct or indirect touch type.
 enum TouchType
 ```
 
+```c
+enum NSTouchType : NSInteger;
+```
+
 ## Topics
 
 ### Touch Types
-- [NSTouch.TouchType.direct](nstouch/touchtype/direct.md)
+- [NSTouch.TouchType.direct](./touchtype/direct.md)
   A direct touch from a user’s finger on a screen.
-- [NSTouch.TouchType.indirect](nstouch/touchtype/indirect.md)
+- [NSTouch.TouchType.indirect](./touchtype/indirect.md)
   An indirect touch that is not on a screen, like a digitizer touch.
 ### Initializers
-- [init?(rawValue: Int)](nstouch/touchtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./touchtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: NSTouch.TouchType](nstouch/type.md)
+### Getting the Touch Type
+- [var type: NSTouch.TouchType](./type.md)
   A type of touch from a Touch Bar interaction.
-- [NSTouch.TouchTypeMask](nstouch/touchtypemask.md)
+- [NSTouch.TouchTypeMask](./touchtypemask.md)
   A bit mask identifying a direct or indirect touch type.
 
 

@@ -1,7 +1,8 @@
 # AudioChannelFlags
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define the audio channel flags of an audio channel description.
 
@@ -20,45 +21,50 @@ Constants that define the audio channel flags of an audio channel description.
 struct AudioChannelFlags
 ```
 
+```c
+enum AudioChannelFlags : UInt32;
+```
+
 ## Topics
 
 ### Flags
-- [static var meters: AudioChannelFlags](audiochannelflags/meters.md)
+- [static var meters: AudioChannelFlags](./audiochannelflags/meters.md)
   A flag that indicates that unit values are in meters.
-- [static var rectangularCoordinates: AudioChannelFlags](audiochannelflags/rectangularcoordinates.md)
+- [static var rectangularCoordinates: AudioChannelFlags](./audiochannelflags/rectangularcoordinates.md)
   A flag that indicates the channel uses the speaker position’s cartesian coordinates.
-- [static var sphericalCoordinates: AudioChannelFlags](audiochannelflags/sphericalcoordinates.md)
+- [static var sphericalCoordinates: AudioChannelFlags](./audiochannelflags/sphericalcoordinates.md)
   A flag that indicates the channel uses the speaker position’s spherical coordinates.
 ### Initializers
-- [init(rawValue: UInt32)](audiochannelflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./audiochannelflags/init%28rawvalue%29.md)
   Creates a audio channel flags structure with a unsigned integer value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var mChannelFlags: AudioChannelFlags](audiochanneldescription/mchannelflags.md)
+### Accessing the Data
+- [var mChannelFlags: AudioChannelFlags](./audiochanneldescription/mchannelflags.md)
   The audio channel flags that indicate how to interpret the channel coordinates.
-- [var mChannelLabel: AudioChannelLabel](audiochanneldescription/mchannellabel.md)
+- [var mChannelLabel: AudioChannelLabel](./audiochanneldescription/mchannellabel.md)
   A label that describes the audio channel.
-- [var mCoordinates: (Float32, Float32, Float32)](audiochanneldescription/mcoordinates.md)
+- [var mCoordinates: (Float32, Float32, Float32)](./audiochanneldescription/mcoordinates.md)
   The coordinates that specify a precise speaker location.
-- [typealias AudioChannelLabel](audiochannellabel.md)
+- [typealias AudioChannelLabel](./audiochannellabel.md)
   Identifies how an audio data channel is to be used.
-- [Audio Channel Coordinates](audio-channel-coordinates.md)
-  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
-- [Audio Channel Labels](audio-channel-labels.md)
-  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](audiochanneldescription.md) structure.
+- [Audio Channel Coordinates](./audio-channel-coordinates.md)
+  Used in the `mChannelFlags` field of an [`AudioChannelDescription`](./audiochanneldescription.md) structure.
+- [Audio Channel Labels](./audio-channel-labels.md)
+  Channel labels for use in the `mChannelLabel` field of an [`AudioChannelDescription`](./audiochanneldescription.md) structure.
 
 
 ---

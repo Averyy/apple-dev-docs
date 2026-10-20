@@ -1,17 +1,22 @@
 # drawSeparatorItem(withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a menu item separator.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawSeparatorItem(withFrame cellFrame: NSRect, in controlView: NSView)
+```
+
+```objc
+- (void) drawSeparatorItemWithFrame:(NSRect) cellFrame inView:(NSView *) controlView;
 ```
 
 #### Discussion
@@ -23,23 +28,25 @@ You should not need to invoke this method directly. Subclasses may override this
 ## Parameters
 
 - `cellFrame`: A rectangle defining the receiver’s frame area.
-- `controlView`: The view object that contains this cell (usually an [`NSControl`](nscontrol.md) object).
+- `controlView`: The view object that contains this cell (usually an [`NSControl`](../nscontrol.md) object).
 
 ## See Also
 
-- [var isFlipped: Bool](nsview/isflipped.md)
+### Related Documentation
+- [var isFlipped: Bool](../nsview/isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.
-- [func drawBorderAndBackground(withFrame: NSRect, in: NSView)](nsmenuitemcell/drawborderandbackground(withframe:in:).md)
+### Drawing the Menu Item
+- [func drawBorderAndBackground(withFrame: NSRect, in: NSView)](./drawborderandbackground%28withframe,in%29.md)
   Draws the borders and background associated with the receiver’s menu item (if any).
-- [func drawImage(withFrame: NSRect, in: NSView)](nsmenuitemcell/drawimage(withframe:in:).md)
+- [func drawImage(withFrame: NSRect, in: NSView)](./drawimage%28withframe,in%29.md)
   Draws the image associated with the menu item.
-- [func drawKeyEquivalent(withFrame: NSRect, in: NSView)](nsmenuitemcell/drawkeyequivalent(withframe:in:).md)
+- [func drawKeyEquivalent(withFrame: NSRect, in: NSView)](./drawkeyequivalent%28withframe,in%29.md)
   Draws the key equivalent associated with the menu item.
-- [func drawStateImage(withFrame: NSRect, in: NSView)](nsmenuitemcell/drawstateimage(withframe:in:).md)
+- [func drawStateImage(withFrame: NSRect, in: NSView)](./drawstateimage%28withframe,in%29.md)
   Draws the state image associated with the menu item.
-- [func drawTitle(withFrame: NSRect, in: NSView)](nsmenuitemcell/drawtitle(withframe:in:).md)
+- [func drawTitle(withFrame: NSRect, in: NSView)](./drawtitle%28withframe,in%29.md)
   Draws the title associated with the menu item.
-- [var needsDisplay: Bool](nsmenuitemcell/needsdisplay.md)
+- [var needsDisplay: Bool](./needsdisplay.md)
   A Boolean value indicating whether the menu item needs to be displayed.
 
 

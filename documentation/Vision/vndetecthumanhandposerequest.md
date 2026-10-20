@@ -1,7 +1,8 @@
 # VNDetectHumanHandPoseRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that detects a human hand pose.
 
@@ -19,6 +20,10 @@ A request that detects a human hand pose.
 class VNDetectHumanHandPoseRequest
 ```
 
+```objc
+@interface VNDetectHumanHandPoseRequest : VNImageBasedRequest
+```
+
 #### Overview
 
 The framework provides the detected hand pose as a `VNIdentifiedPointsObservation`.
@@ -26,60 +31,61 @@ The framework provides the detected hand pose as a `VNIdentifiedPointsObservatio
 ## Topics
 
 ### Configuring the Request
-- [var maximumHandCount: Int](vndetecthumanhandposerequest/maximumhandcount.md)
+- [var maximumHandCount: Int](./vndetecthumanhandposerequest/maximumhandcount.md)
   The maximum number of hands to detect in an image.
 ### Determining Supported Joints
-- [var supportedJointNames: [VNHumanHandPoseObservation.JointName]](vndetecthumanhandposerequest/supportedjointnames.md)
+- [var supportedJointNames: [VNHumanHandPoseObservation.JointName]](./vndetecthumanhandposerequest/supportedjointnames.md)
   Retrieves the supported joint names.
-- [class func supportedJointNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointName]](vndetecthumanhandposerequest/supportedjointnames(forrevision:).md)
+- [class func supportedJointNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointName]](./vndetecthumanhandposerequest/supportedjointnames%28forrevision%29.md)
   Retrieves the supported joint names for a revision.
-- [var supportedJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](vndetecthumanhandposerequest/supportedjointsgroupnames.md)
+- [var supportedJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./vndetecthumanhandposerequest/supportedjointsgroupnames.md)
   Retrieves the supported joint group names.
-- [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointsGroupName]](vndetecthumanhandposerequest/supportedjointsgroupnames(forrevision:).md)
+- [class func supportedJointsGroupNames(forRevision: Int) throws -> [VNHumanHandPoseObservation.JointsGroupName]](./vndetecthumanhandposerequest/supportedjointsgroupnames%28forrevision%29.md)
   Retrieves the supported joint group names for a revision.
 ### Accessing the Results
-- [var results: [VNHumanHandPoseObservation]?](vndetecthumanhandposerequest/results.md)
+- [var results: [VNHumanHandPoseObservation]?](./vndetecthumanhandposerequest/results.md)
   The observed hand poses.
 ### Identifying Hand Pose Revisions
-- [var VNDetectHumanHandPoseRequestRevision1: Int](vndetecthumanhandposerequestrevision1.md)
+- [var VNDetectHumanHandPoseRequestRevision1: Int](./vndetecthumanhandposerequestrevision1.md)
   A constant for specifying revision 1 of the hand pose detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+### Body and hand pose detection
+- [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
   Add the capability to detect human body poses to your app using the Vision framework.
-- [Detecting Hand Poses with Vision](detecting-hand-poses-with-vision.md)
+- [Detecting Hand Poses with Vision](./detecting-hand-poses-with-vision.md)
   Create a virtual drawing app by using Vision’s capability to detect hand poses.
-- [class VNDetectHumanBodyPoseRequest](vndetecthumanbodyposerequest.md)
+- [class VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md)
   A request that detects a human body pose.
-- [class VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [class VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
   An observation that provides the points the analysis recognized.
-- [class VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
+- [class VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
   An observation that provides the body points the analysis recognized.
-- [class VNHumanHandPoseObservation](vnhumanhandposeobservation.md)
+- [class VNHumanHandPoseObservation](./vnhumanhandposeobservation.md)
   An observation that provides the hand points the analysis recognized.
-- [class VNPoint](vnpoint.md)
+- [class VNPoint](./vnpoint.md)
   An immutable object that represents a single 2D point in an image.
-- [class VNDetectedPoint](vndetectedpoint.md)
+- [class VNDetectedPoint](./vndetectedpoint.md)
   An object that represents a normalized point in an image, along with a confidence value.
-- [class VNRecognizedPoint](vnrecognizedpoint.md)
+- [class VNRecognizedPoint](./vnrecognizedpoint.md)
   An object that represents a normalized point in an image, along with an identifier label and a confidence value.
-- [struct VNRecognizedPointKey](vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](./vnrecognizedpointkey.md)
   The data type for all recognized point keys.
-- [struct VNRecognizedPointGroupKey](vnrecognizedpointgroupkey.md)
+- [struct VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey.md)
   The data type for all recognized-point group keys.
 
 

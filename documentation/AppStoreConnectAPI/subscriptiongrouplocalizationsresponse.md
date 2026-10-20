@@ -1,16 +1,19 @@
 # SubscriptionGroupLocalizationsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list localizations for a subscription group.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionGroupLocalizationsV2Response`](./subscriptiongrouplocalizationsv2response.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationsResponse
 ```
 
@@ -23,24 +26,25 @@ object SubscriptionGroupLocalizationsResponse
 
 ## See Also
 
-- [object SubscriptionGroupResponse](subscriptiongroupresponse.md)
+### Objects
+- [object SubscriptionGroupResponse](./subscriptiongroupresponse.md)
   The response body for endpoints that create, read, or modify a single subscription group.
-- [object SubscriptionGroup](subscriptiongroup.md)
+- [object SubscriptionGroup](./subscriptiongroup.md)
   A group of related auto-renewable subscriptions that share upgrade, downgrade, and cross-grade eligibility for customers.
-- [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)
+- [object SubscriptionGroupLocalization](./subscriptiongrouplocalization.md)
   The localized display name and optional custom app name for a subscription group, shown to customers on the App Store.
-- [object SubscriptionGroupCreateRequest](subscriptiongroupcreaterequest.md)
+- [object SubscriptionGroupCreateRequest](./subscriptiongroupcreaterequest.md)
   The request body you use to create a subscription group.
-- [object SubscriptionGroupUpdateRequest](subscriptiongroupupdaterequest.md)
+- [object SubscriptionGroupUpdateRequest](./subscriptiongroupupdaterequest.md)
   The request body you use to update a subscription group update request.
-- [object SubscriptionGroupsResponse](subscriptiongroupsresponse.md)
+- [object SubscriptionGroupsResponse](./subscriptiongroupsresponse.md)
   The response body for endpoints that list subscription groups for an app.
-- [object AppSubscriptionGroupsLinkagesResponse](appsubscriptiongroupslinkagesresponse.md)
-- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
-- [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
+- [object AppSubscriptionGroupsLinkagesResponse](./appsubscriptiongroupslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](./subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionsLinkagesResponse](./subscriptiongroupsubscriptionslinkagesresponse.md)
   A response containing the resource identifiers of subscriptions within a subscription group.
-- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
-- [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](./subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
+- [object SubscriptionGroupSubscriptionsLinkagesResponse](./subscriptiongroupsubscriptionslinkagesresponse.md)
   A response containing the resource identifiers of subscriptions within a subscription group.
 
 

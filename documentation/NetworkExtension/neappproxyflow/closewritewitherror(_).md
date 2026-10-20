@@ -1,7 +1,8 @@
 # closeWriteWithError(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Close the flow for further write operations.
 
@@ -18,9 +19,13 @@ Close the flow for further write operations.
 func closeWriteWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) closeWriteWithError:(NSError *) error;
+```
+
 ## Mentions
 
-- [Handling Flow Copying](handling-flow-copying.md)
+- [Handling Flow Copying](../handling-flow-copying.md)
 
 ## Parameters
 
@@ -28,9 +33,10 @@ func closeWriteWithError(_ error: (any Error)?)
 
 ## See Also
 
-- [func open(withLocalEndpoint: NWHostEndpoint?, completionHandler: ((any Error)?) -> Void)](neappproxyflow/open(withlocalendpoint:completionhandler:).md)
+### Managing the flow life cycle
+- [func open(withLocalEndpoint: NWHostEndpoint?, completionHandler: ((any Error)?) -> Void)](./open%28withlocalendpoint,completionhandler%29.md)
   Opens the flow, indicating to the system that the caller is ready to start receiving and sending data.
-- [func closeReadWithError((any Error)?)](neappproxyflow/closereadwitherror(_:).md)
+- [func closeReadWithError((any Error)?)](./closereadwitherror%28_%29.md)
   Close the flow for further read operations.
 
 

@@ -1,7 +1,8 @@
 # alignmentGuide(_:computeValue:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the view’s horizontal alignment.
 
@@ -21,10 +22,22 @@ Sets the view’s horizontal alignment.
 nonisolated func alignmentGuide(_ g: HorizontalAlignment, computeValue: @escaping @Sendable (ViewDimensions) -> CGFloat) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+@preconcurrency
+nonisolated func alignmentGuide(_ g: VerticalAlignment, computeValue: @escaping @Sendable (ViewDimensions) -> CGFloat) -> some View
+```
+
+```swift
+nonisolated
+func alignmentGuide(_ g: DepthAlignment, computeValue: @escaping (ViewDimensions3D) -> CGFloat) -> some View
+```
+
 ## Mentions
 
-- [Aligning views across stacks](aligning-views-across-stacks.md)
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+- [Aligning views across stacks](../aligning-views-across-stacks.md)
+- [Aligning views within a stack](../aligning-views-within-a-stack.md)
 
 #### Return Value
 
@@ -32,9 +45,9 @@ A view modified with respect to its horizontal alignment according to the comput
 
 #### Discussion
 
-Use `alignmentGuide(_:computeValue:)` to calculate specific offsets to reposition views in relationship to one another. You can return a constant or can use the [`ViewDimensions`](viewdimensions.md) argument to the closure to calculate a return value.
+Use `alignmentGuide(_:computeValue:)` to calculate specific offsets to reposition views in relationship to one another. You can return a constant or can use the [`ViewDimensions`](../viewdimensions.md) argument to the closure to calculate a return value.
 
-In the example below, the [`HStack`](hstack.md) is offset by a constant of 50 points to the right of center:
+In the example below, the [`HStack`](../hstack.md) is offset by a constant of 50 points to the right of center:
 
 ```swift
 VStack {
@@ -54,34 +67,35 @@ VStack {
 
 Changing the alignment of one view may have effects on surrounding views. Here the offset values inside a stack and its contained views is the difference of their absolute offsets.
 
-![A view showing the two emoji offset from a text element using a](/images/com.apple.SwiftUI/SwiftUI-View-HAlignmentGuide@2x.png)
+![A view showing the two emoji offset from a text element using a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-HAlignmentGuide@2x.png)
 
 ## Parameters
 
-- `g`: A [`HorizontalAlignment`](horizontalalignment.md) value at which to base the offset.
+- `g`: A [`HorizontalAlignment`](../horizontalalignment.md) value at which to base the offset.
 - `computeValue`: A closure that returns the offset value to apply to this view.
 
 ## See Also
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+### Aligning views
+- [Aligning views within a stack](../aligning-views-within-a-stack.md)
   Position views inside a stack using alignment guides.
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views across stacks](../aligning-views-across-stacks.md)
   Create a custom alignment and use it to align views across multiple stacks.
-- [struct Alignment](alignment.md)
+- [struct Alignment](../alignment.md)
   An alignment in both axes.
-- [struct HorizontalAlignment](horizontalalignment.md)
+- [struct HorizontalAlignment](../horizontalalignment.md)
   An alignment position along the horizontal axis.
-- [struct VerticalAlignment](verticalalignment.md)
+- [struct VerticalAlignment](../verticalalignment.md)
   An alignment position along the vertical axis.
-- [struct DepthAlignment](depthalignment.md)
+- [struct DepthAlignment](../depthalignment.md)
   An alignment position along the depth axis.
-- [protocol AlignmentID](alignmentid.md)
+- [protocol AlignmentID](../alignmentid.md)
   A type that you use to create custom alignment guides.
-- [struct ViewDimensions](viewdimensions.md)
+- [struct ViewDimensions](../viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
-- [struct ViewDimensions3D](viewdimensions3d.md)
+- [struct ViewDimensions3D](../viewdimensions3d.md)
   A view’s 3D size and alignment guides in its own coordinate space.
-- [struct SpatialContainer](spatialcontainer.md)
+- [struct SpatialContainer](../spatialcontainer.md)
   A layout container that aligns overlapping content in 3D space.
 
 

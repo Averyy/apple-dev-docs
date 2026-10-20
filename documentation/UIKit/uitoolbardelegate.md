@@ -1,15 +1,16 @@
 # UIToolbarDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that toolbar delegate objects implement to manage the toolbar behavior.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@ The interface that toolbar delegate objects implement to manage the toolbar beha
 protocol UIToolbarDelegate : UIBarPositioningDelegate
 ```
 
+```objc
+@protocol UIToolbarDelegate <UIBarPositioningDelegate>
+```
+
 #### Overview
 
-This protocol declares no methods of its own, but conforms to the [`UIBarPositioningDelegate`](uibarpositioningdelegate.md) protocol to support the positioning of a toolbar when it’s moved to a window.
+This protocol declares no methods of its own, but conforms to the [`UIBarPositioningDelegate`](./uibarpositioningdelegate.md) protocol to support the positioning of a toolbar when it’s moved to a window.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIBarPositioningDelegate](uibarpositioningdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIBarPositioningDelegate](./uibarpositioningdelegate.md)
 
 ## See Also
 
-- [var delegate: (any UIToolbarDelegate)?](uitoolbar/delegate.md)
+### Managing toolbar changes
+- [var delegate: (any UIToolbarDelegate)?](./uitoolbar/delegate.md)
   The toolbar’s delegate object.
 
 

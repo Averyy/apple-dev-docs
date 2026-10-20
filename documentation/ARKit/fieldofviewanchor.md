@@ -1,7 +1,8 @@
 # FieldOfViewAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
 
@@ -21,40 +22,41 @@ This anchor provides polygon points that define preset FoV boundaries, allowing 
 ## Topics
 
 ### Instance Properties
-- [var description: String](fieldofviewanchor/description.md)
+- [var description: String](./fieldofviewanchor/description.md)
   A textual representation of this anchor.
-- [var id: UUID](fieldofviewanchor/id.md)
+- [var id: UUID](./fieldofviewanchor/id.md)
   The unique identifier of this anchor.
-- [var leftPolygonPoints: [simd_float4]](fieldofviewanchor/leftpolygonpoints.md)
+- [var leftPolygonPoints: [simd_float4]](./fieldofviewanchor/leftpolygonpoints.md)
   Left eye polygon boundary points defining the preset field of view.
-- [var originFromAnchorTransform: simd_float4x4](fieldofviewanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./fieldofviewanchor/originfromanchortransform.md)
   The transform from the anchor to the origin coordinate system.
-- [var rightPolygonPoints: [simd_float4]](fieldofviewanchor/rightpolygonpoints.md)
+- [var rightPolygonPoints: [simd_float4]](./fieldofviewanchor/rightpolygonpoints.md)
   Right eye polygon boundary points defining the preset field of view.
-- [var timestamp: TimeInterval](fieldofviewanchor/timestamp.md)
+- [var timestamp: TimeInterval](./fieldofviewanchor/timestamp.md)
   The timestamp of this anchor.
 ### Instance Methods
-- [func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](fieldofviewanchor/coordinatespace(correction:).md)
+- [func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](./fieldofviewanchor/coordinatespace%28correction%29.md)
   The anchor’s coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VisualFidelityProvider](visualfidelityprovider.md)
+### Visual Fidelity
+- [class VisualFidelityProvider](./visualfidelityprovider.md)
   A data provider that delivers visual fidelity monitoring data.
-- [struct VisualFidelityData](visualfidelitydata.md)
+- [struct VisualFidelityData](./visualfidelitydata.md)
   Visual fidelity data containing device fit and field of view verification.
-- [enum DeviceFitStatus](devicefitstatus.md)
+- [enum DeviceFitStatus](./devicefitstatus.md)
   Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
 

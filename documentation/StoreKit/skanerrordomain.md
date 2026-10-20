@@ -1,7 +1,8 @@
 # SKANErrorDomain
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the SKAdNetwork error domain.
 
@@ -17,11 +18,16 @@ A string that identifies the SKAdNetwork error domain.
 let SKANErrorDomain: String
 ```
 
+```c
+extern NSString * const SKANErrorDomain;
+```
+
 ## See Also
 
-- [struct SKANError](skanerror-swift.struct.md)
+### Error handling
+- [struct SKANError](./skanerror-swift.struct.md)
   An error that an ad network attribution operation returns.
-- [SKANError.Code](skanerror-swift.struct/code.md)
+- [SKANError.Code](./skanerror-swift.struct/code.md)
   Constants that indicate the type of error for an ad network attribution operation.
 
 

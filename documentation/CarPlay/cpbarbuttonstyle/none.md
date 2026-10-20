@@ -1,7 +1,8 @@
 # CPBarButtonStyle.none
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that provides no additional styling.
 
@@ -16,9 +17,14 @@ A style that provides no additional styling.
 case none
 ```
 
+```c
+CPBarButtonStyleNone
+```
+
 ## See Also
 
-- [CPBarButtonStyle.rounded](cpbarbuttonstyle/rounded.md)
+### Button Styles
+- [CPBarButtonStyle.rounded](./rounded.md)
   A style that provides a rounded background.
 
 

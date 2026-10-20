@@ -1,7 +1,8 @@
 # findCompatibleTrack(for:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads an asset track from which you can insert any time range into the composition track.
 
@@ -17,22 +18,33 @@ Loads an asset track from which you can insert any time range into the compositi
 ## Declaration
 
 ```swift
+func findCompatibleTrack(for compositionTrack: AVCompositionTrack, completionHandler: @escaping @Sendable (AVAssetTrack?, (any Error)?) -> Void)
+```
+
+```swift
 func findCompatibleTrack(for compositionTrack: AVCompositionTrack) async throws -> AVAssetTrack?
+```
+
+```objc
+- (void) findCompatibleTrackForCompositionTrack:(AVCompositionTrack *) compositionTrack completionHandler:(void (^)(AVAssetTrack *, NSError *)) completionHandler;
 ```
 
 #### Discussion
 
-This method is the logical complement of [`mutableTrack(compatibleWith:)`](avmutablecomposition/mutabletrack(compatiblewith:).md).
+This method is the logical complement of [`mutableTrack(compatibleWith:)`](../avmutablecomposition/mutabletrack%28compatiblewith%29.md).
 
 ## Parameters
 
 - `compositionTrack`: A composition track to request an asset track for.
-- `completionHandler`: A callback the system invokes after it finishes the request. The system calls the completion handler with the following arguments: - **track**: The compatible asset track, or `nil` if there isn’t one or an error occurs.
-- **error**: An error object if the request fails; otherwise, `nil`.
+- `completionHandler`: A callback the system invokes after it finishes the request. The system calls the completion handler with the following arguments:
+
+  - **track**: The compatible asset track, or `nil` if there isn’t one or an error occurs.
+  - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 
-- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](avpartialasyncproperty/tracks-44ptx.md)
+### Loading tracks
+- [static var tracks: AVAsyncProperty<Root, [AVAssetTrack]>](../avpartialasyncproperty/tracks-44ptx.md)
   The tracks an asset contains.
 
 

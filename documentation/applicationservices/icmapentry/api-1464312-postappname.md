@@ -1,7 +1,8 @@
 # postAppName
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var postAppName: Str255
+```
+
+```c
+Str255 postAppName;
 ```
 
 

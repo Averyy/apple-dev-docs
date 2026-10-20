@@ -1,7 +1,8 @@
 # SecTrustCallback
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block called with the results of an asynchronous trust evaluation.
 
@@ -20,14 +21,18 @@ A block called with the results of an asynchronous trust evaluation.
 typealias SecTrustCallback = (SecTrust, SecTrustResultType) -> Void
 ```
 
+```c
+typedef void (^)(struct __SecTrust *, enum SecTrustResultType) SecTrustCallback;
+```
+
 #### Discussion
 
-Use a block of this type when making a call to [`SecTrustEvaluateAsync(_:_:_:)`](sectrustevaluateasync(_:_:_:).md) to receive the result of the trust evaluation.
+Use a block of this type when making a call to [`SecTrustEvaluateAsync(_:_:_:)`](./sectrustevaluateasync%28_,_,_%29.md) to receive the result of the trust evaluation.
 
 ## Parameters
 
 - `trustRef`: The trust that was evaluated.
-- `trustResult`: The result of the trust evaluation. See [`SecTrustResultType`](sectrustresulttype.md) for a list of possible values.
+- `trustResult`: The result of the trust evaluation. See [`SecTrustResultType`](./sectrustresulttype.md) for a list of possible values.
 
 
 ---

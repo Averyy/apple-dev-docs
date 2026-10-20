@@ -1,7 +1,8 @@
 # passThruParams
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to an Apple event descriptor that ispassed untouched as an optional parameter, with keyword `keyAEPropData` (`'prdt'`),in the Apple event sent to each application launched or activated(whether individual preferred applications or the application designatedby `appRef`). See the *AppleEvent Manager Reference* in the Carbon Interapplication CommunicationDocumentation for a description of the `AEDesc` datatype. The value of this field can be `NULL`.
 
@@ -12,6 +13,10 @@ A pointer to an Apple event descriptor that ispassed untouched as an optional pa
 
 ```swift
 var passThruParams: UnsafePointer<AEDesc>!
+```
+
+```c
+const AEDesc *passThruParams;
 ```
 
 

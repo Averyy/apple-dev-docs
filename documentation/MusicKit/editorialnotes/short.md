@@ -1,7 +1,8 @@
 # short
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Abbreviated notes that display inline or when the content appears alongside other content.
 

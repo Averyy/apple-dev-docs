@@ -1,7 +1,8 @@
 # Schema.PropertyMetadata
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -22,7 +23,7 @@ struct PropertyMetadata
 ## Topics
 
 ### Initializers
-- [init(name: String, keypath: AnyKeyPath, defaultValue: Any?, metadata: (any SchemaProperty)?)](schema/propertymetadata/init(name:keypath:defaultvalue:metadata:).md)
+- [init(name: String, keypath: AnyKeyPath, defaultValue: Any?, metadata: (any SchemaProperty)?)](./propertymetadata/init%28name,keypath,defaultvalue,metadata%29.md)
 
 
 ---

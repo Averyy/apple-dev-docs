@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.ValidationData.split(strategy:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset derived by randomly selecting a portion of the sound classifier’s training dataset using the split strategy.
 
@@ -24,11 +25,12 @@ case split(strategy: MLSplitStrategy)
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ValidationData.dataSource(_:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+### Designating validation data
+- [MLSoundClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLSoundClassifier.ModelParameters.ValidationData.dictionary(_:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/dictionary(_:).md)
+- [MLSoundClassifier.ModelParameters.ValidationData.dictionary(_:)](./dictionary%28_%29.md)
   A validation dataset represented by a dictionary.
-- [MLSoundClassifier.ModelParameters.ValidationData.none](mlsoundclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLSoundClassifier.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

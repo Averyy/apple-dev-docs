@@ -1,7 +1,8 @@
 # MTLObjectPayloadBinding
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -17,36 +18,41 @@
 protocol MTLObjectPayloadBinding : MTLBinding
 ```
 
+```objc
+@protocol MTLObjectPayloadBinding <MTLBinding>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var objectPayloadAlignment: Int](mtlobjectpayloadbinding/objectpayloadalignment.md)
-- [var objectPayloadDataSize: Int](mtlobjectpayloadbinding/objectpayloaddatasize.md)
+- [var objectPayloadAlignment: Int](./mtlobjectpayloadbinding/objectpayloadalignment.md)
+- [var objectPayloadDataSize: Int](./mtlobjectpayloadbinding/objectpayloaddatasize.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLBinding](mtlbinding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MTLBinding](./mtlbinding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLComputePipelineReflection](mtlcomputepipelinereflection.md)
+### Introspection data
+- [class MTLComputePipelineReflection](./mtlcomputepipelinereflection.md)
   Information about the arguments of a compute function.
-- [typealias MTLAutoreleasedComputePipelineReflection](mtlautoreleasedcomputepipelinereflection.md)
+- [typealias MTLAutoreleasedComputePipelineReflection](./mtlautoreleasedcomputepipelinereflection.md)
   A convenience type alias for an autoreleased compute pipeline reflection object.
-- [class MTLRenderPipelineReflection](mtlrenderpipelinereflection.md)
+- [class MTLRenderPipelineReflection](./mtlrenderpipelinereflection.md)
   Information about the arguments of a graphics function.
-- [typealias MTLAutoreleasedRenderPipelineReflection](mtlautoreleasedrenderpipelinereflection.md)
+- [typealias MTLAutoreleasedRenderPipelineReflection](./mtlautoreleasedrenderpipelinereflection.md)
   A convenience type alias for an autoreleased pipeline reflection instance.
-- [enum MTLBindingType](mtlbindingtype.md)
-- [protocol MTLBinding](mtlbinding.md)
-- [enum MTLBindingAccess](mtlbindingaccess.md)
-- [protocol MTLBufferBinding](mtlbufferbinding.md)
-- [protocol MTLTextureBinding](mtltexturebinding.md)
-- [protocol MTLThreadgroupBinding](mtlthreadgroupbinding.md)
+- [enum MTLBindingType](./mtlbindingtype.md)
+- [protocol MTLBinding](./mtlbinding.md)
+- [enum MTLBindingAccess](./mtlbindingaccess.md)
+- [protocol MTLBufferBinding](./mtlbufferbinding.md)
+- [protocol MTLTextureBinding](./mtltexturebinding.md)
+- [protocol MTLThreadgroupBinding](./mtlthreadgroupbinding.md)
 
 
 ---

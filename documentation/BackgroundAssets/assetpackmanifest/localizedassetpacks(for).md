@@ -1,7 +1,8 @@
 # localizedAssetPacks(for:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the subset of asset packs in this manifest that are available to download and that best match the specified language.
 
@@ -21,7 +22,7 @@ func localizedAssetPacks(for language: Locale.Language) -> Set<AssetPack>
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Return Value
 
@@ -37,7 +38,8 @@ Depending on which languages are available, the returned asset packs’ respecti
 
 ## See Also
 
-- [var localizedAssetPacks: Set<AssetPack>](assetpackmanifest/localizedassetpacks.md)
+### Getting localized asset packs
+- [var localizedAssetPacks: Set<AssetPack>](./localizedassetpacks.md)
   The subset of asset packs in this manifest that best match the current preferred languages.
 
 

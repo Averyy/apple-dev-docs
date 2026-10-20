@@ -1,7 +1,8 @@
 # MTRClusterServiceArea
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Service Area The Service Area cluster provides an interface for controlling the areas where a device should operate, and for querying the current area being serviced.
 
@@ -20,37 +21,41 @@ Cluster Service Area The Service Area cluster provides an interface for controll
 class MTRClusterServiceArea
 ```
 
+```objc
+@interface MTRClusterServiceArea : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterservicearea/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterservicearea/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentArea(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributecurrentarea(with:).md)
-- [func readAttributeEstimatedEndTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeestimatedendtime(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeProgress(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeprogress(with:).md)
-- [func readAttributeSelectedAreas(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributeselectedareas(with:).md)
-- [func readAttributeSupportedAreas(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributesupportedareas(with:).md)
-- [func readAttributeSupportedMaps(with: MTRReadParams?) -> [String : Any]?](mtrclusterservicearea/readattributesupportedmaps(with:).md)
-- [func selectAreas(with: MTRServiceAreaClusterSelectAreasParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRServiceAreaClusterSelectAreasResponseParams?, (any Error)?) -> Void)](mtrclusterservicearea/selectareas(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func skip(with: MTRServiceAreaClusterSkipAreaParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRServiceAreaClusterSkipAreaResponseParams?, (any Error)?) -> Void)](mtrclusterservicearea/skip(with:expectedvalues:expectedvalueinterval:completion:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentArea(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributecurrentarea%28with%29.md)
+- [func readAttributeEstimatedEndTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeestimatedendtime%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeProgress(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeprogress%28with%29.md)
+- [func readAttributeSelectedAreas(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributeselectedareas%28with%29.md)
+- [func readAttributeSupportedAreas(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributesupportedareas%28with%29.md)
+- [func readAttributeSupportedMaps(with: MTRReadParams?) -> [String : Any]?](./mtrclusterservicearea/readattributesupportedmaps%28with%29.md)
+- [func selectAreas(with: MTRServiceAreaClusterSelectAreasParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRServiceAreaClusterSelectAreasResponseParams?, (any Error)?) -> Void)](./mtrclusterservicearea/selectareas%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func skip(with: MTRServiceAreaClusterSkipAreaParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRServiceAreaClusterSkipAreaResponseParams?, (any Error)?) -> Void)](./mtrclusterservicearea/skip%28with,expectedvalues,expectedvalueinterval,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

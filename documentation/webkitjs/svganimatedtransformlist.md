@@ -1,7 +1,8 @@
 # SVGAnimatedTransformList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedTransformList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedtransformlist/1629111-animval.md)
-- [baseVal](svganimatedtransformlist/1628865-baseval.md)
+- [animVal](./svganimatedtransformlist/api-1629111-animval.md)
+- [baseVal](./svganimatedtransformlist/api-1628865-baseval.md)
 
 
 ---

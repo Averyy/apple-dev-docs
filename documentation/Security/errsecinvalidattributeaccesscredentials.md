@@ -1,7 +1,8 @@
 # errSecInvalidAttributeAccessCredentials
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An access credentials attribute is not valid.
 
@@ -18,6 +19,10 @@ An access credentials attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeAccessCredentials: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeAccessCredentials
 ```
 
 

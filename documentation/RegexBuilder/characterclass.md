@@ -1,7 +1,8 @@
 # CharacterClass
 
 **Framework**: RegexBuilder  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A class of characters that match in a regex.
 
@@ -11,7 +12,7 @@ A class of characters that match in a regex.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,37 +28,38 @@ A character class can represent individual characters, a group of characters, th
 ## Topics
 
 ### Instance Properties
-- [var inverted: CharacterClass](characterclass/inverted.md)
+- [var inverted: CharacterClass](./characterclass/inverted.md)
   A character class that matches any character that does not match this character class.
 ### Instance Methods
-- [func intersection(CharacterClass) -> CharacterClass](characterclass/intersection(_:).md)
+- [func intersection(CharacterClass) -> CharacterClass](./characterclass/intersection%28_%29.md)
   Returns a character class from the intersection of this class and the given class.
-- [func subtracting(CharacterClass) -> CharacterClass](characterclass/subtracting(_:).md)
+- [func subtracting(CharacterClass) -> CharacterClass](./characterclass/subtracting%28_%29.md)
   Returns a character class by subtracting the given class from this class.
-- [func symmetricDifference(CharacterClass) -> CharacterClass](characterclass/symmetricdifference(_:).md)
+- [func symmetricDifference(CharacterClass) -> CharacterClass](./characterclass/symmetricdifference%28_%29.md)
   Returns a character class matching elements in one or the other, but not both, of this class and the given class.
-- [func union(CharacterClass) -> CharacterClass](characterclass/union(_:).md)
+- [func union(CharacterClass) -> CharacterClass](./characterclass/union%28_%29.md)
   Returns a character class from the union of this class and the given class.
 ### Type Methods
-- [static func generalCategory(Unicode.GeneralCategory) -> CharacterClass](characterclass/generalcategory(_:).md)
+- [static func generalCategory(Unicode.GeneralCategory) -> CharacterClass](./characterclass/generalcategory%28_%29.md)
   Returns a character class that matches any element with the given Unicode general category.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RegexComponent](../swift/regexcomponent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RegexComponent](../Swift/regexcomponent.md)
 
 ## See Also
 
-- [struct Anchor](anchor.md)
+### Components
+- [struct Anchor](./anchor.md)
   A regex component that matches a specific condition at a particular position in an input string.
-- [struct Lookahead](lookahead.md)
+- [struct Lookahead](./lookahead.md)
   A regex component that allows a match to continue only if its contents match at the given location.
-- [struct NegativeLookahead](negativelookahead.md)
+- [struct NegativeLookahead](./negativelookahead.md)
   A regex component that allows a match to continue only if its contents do not match at the given location.
-- [struct ChoiceOf](choiceof.md)
+- [struct ChoiceOf](./choiceof.md)
   A regex component that chooses exactly one of its constituent regex components when matching.
 
 

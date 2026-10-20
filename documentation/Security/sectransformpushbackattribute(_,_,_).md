@@ -1,12 +1,15 @@
 # SecTransformPushbackAttribute(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Pushes a single value back for a specific attribute.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Pushes a single value back for a specific attribute.
 func SecTransformPushbackAttribute(_ ref: SecTransformImplementationRef, _ attribute: SecTransformStringOrAttribute, _ value: CFTypeRef) -> CFTypeRef?
 ```
 
+```c
+extern CFTypeRefSecTransformPushbackAttribute(SecTransformImplementationRef ref, SecTransformStringOrAttributeRef attribute, CFTypeRef value);
+```
+
 #### Return Value
 
-An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free the error’s memory when you are done with it.
+An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
 #### Discussion
 
@@ -24,8 +31,8 @@ Calling this function stops the flow of data into the specified attribute until 
 
 ## Parameters
 
-- `ref`: A [`SecTransformImplementationRef`](sectransformimplementationref.md) that is bound to an instance of a custom transform.
-- `attribute`: The name or the attribute handle of the attribute whose value is to be pushed back. When using a name, see [`Transform Attributes`](transform-attributes.md) for a list of valid key names.
+- `ref`: A [`SecTransformImplementationRef`](./sectransformimplementationref.md) that is bound to an instance of a custom transform.
+- `attribute`: The name or the attribute handle of the attribute whose value is to be pushed back. When using a name, see [Transform Attributes](./transform-attributes.md) for a list of valid key names.
 - `value`: The value being pushed back.
 
 

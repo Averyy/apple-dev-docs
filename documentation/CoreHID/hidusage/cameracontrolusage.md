@@ -1,7 +1,8 @@
 # HIDUsage.CameraControlUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,21 +16,21 @@ enum CameraControlUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.CameraControlUsage.cameraAutoFocus](hidusage/cameracontrolusage/cameraautofocus.md)
-- [HIDUsage.CameraControlUsage.cameraShutter](hidusage/cameracontrolusage/camerashutter.md)
+- [HIDUsage.CameraControlUsage.cameraAutoFocus](./cameracontrolusage/cameraautofocus.md)
+- [HIDUsage.CameraControlUsage.cameraShutter](./cameracontrolusage/camerashutter.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/cameracontrolusage/page.md)
+- [static let page: UInt16](./cameracontrolusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

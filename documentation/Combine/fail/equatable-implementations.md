@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Combine
+**Framework**: Combine  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Fail<Output, Failure>, Fail<Output, Failure>) -> Bool](fail/==(_:_:).md)
+- [static func == (Fail<Output, Failure>, Fail<Output, Failure>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two publishers are equivalent.
 
 

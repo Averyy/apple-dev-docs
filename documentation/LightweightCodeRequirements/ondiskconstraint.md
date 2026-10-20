@@ -1,7 +1,8 @@
 # OnDiskConstraint
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to which a lightweight code requirement constraint conforms if you can use it in on-disk code requirements.
 
@@ -23,39 +24,40 @@ protocol OnDiskConstraint : Decodable, Encodable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CodeDirectoryHash](codedirectoryhash.md)
-- [EntitlementsQuery](entitlementsquery.md)
-- [InfoPlistHash](infoplisthash.md)
-- [IsMainBinary](ismainbinary.md)
-- [IsSIPProtected](issipprotected.md)
-- [OnDiskCodeSigningFlags](ondiskcodesigningflags.md)
-- [PlatformType](platformtype.md)
-- [SigningIdentifier](signingidentifier.md)
-- [TeamIdentifier](teamidentifier.md)
-- [ValidationCategory](validationcategory.md)
+- [CodeDirectoryHash](./codedirectoryhash.md)
+- [EntitlementsQuery](./entitlementsquery.md)
+- [InfoPlistHash](./infoplisthash.md)
+- [IsMainBinary](./ismainbinary.md)
+- [IsSIPProtected](./issipprotected.md)
+- [OnDiskCodeSigningFlags](./ondiskcodesigningflags.md)
+- [PlatformType](./platformtype.md)
+- [SigningIdentifier](./signingidentifier.md)
+- [TeamIdentifier](./teamidentifier.md)
+- [ValidationCategory](./validationcategory.md)
 
 ## See Also
 
-- [func SecStaticCodeCheckValidityWithOnDiskRequirement(code: SecStaticCode, flags: SecCSFlags, requirement: OnDiskCodeRequirement) -> ValidationResult](secstaticcodecheckvaliditywithondiskrequirement(code:flags:requirement:).md)
+### Checking code requirements for code files on disk
+- [func SecStaticCodeCheckValidityWithOnDiskRequirement(code: SecStaticCode, flags: SecCSFlags, requirement: OnDiskCodeRequirement) -> ValidationResult](./secstaticcodecheckvaliditywithondiskrequirement%28code,flags,requirement%29.md)
   Checks whether static code on disk satisfies a lightweight code requirement.
-- [func SecCodeCheckValidityWithOnDiskRequirement(code: SecCode, flags: SecCSFlags, requirement: OnDiskCodeRequirement) -> ValidationResult](seccodecheckvaliditywithondiskrequirement(code:flags:requirement:).md)
+- [func SecCodeCheckValidityWithOnDiskRequirement(code: SecCode, flags: SecCSFlags, requirement: OnDiskCodeRequirement) -> ValidationResult](./seccodecheckvaliditywithondiskrequirement%28code,flags,requirement%29.md)
   Checks whether code on disk satisfies a lightweight code requirement.
-- [struct ValidationResult](validationresult.md)
+- [struct ValidationResult](./validationresult.md)
   A structure that represents the result of testing a lightweight code requirement.
-- [struct OnDiskCodeRequirement](ondiskcoderequirement.md)
+- [struct OnDiskCodeRequirement](./ondiskcoderequirement.md)
   A lightweight code requirement that you use to evaluate a code file on disk.
-- [func allOf(requirement: () -> [any OnDiskConstraint]) -> any OnDiskConstraint](allof(requirement:)-2ocwl.md)
+- [func allOf(requirement: () -> [any OnDiskConstraint]) -> any OnDiskConstraint](./allof%28requirement%29-2ocwl.md)
   Creates a constraint that requires code on disk to satisfy all of the provided constraints.
-- [func anyOf(requirement: () -> [any OnDiskConstraint]) -> any OnDiskConstraint](anyof(requirement:)-71pff.md)
+- [func anyOf(requirement: () -> [any OnDiskConstraint]) -> any OnDiskConstraint](./anyof%28requirement%29-71pff.md)
   Creates a constraint that requires code on disk to satisfy any of the provided constraints.
-- [struct OnDiskCodeSigningFlags](ondiskcodesigningflags.md)
+- [struct OnDiskCodeSigningFlags](./ondiskcodesigningflags.md)
   A constraint that tests the code-signing flags of a code file on disk.
-- [struct OnDiskConstraintBuilder](ondiskconstraintbuilder.md)
+- [struct OnDiskConstraintBuilder](./ondiskconstraintbuilder.md)
   A custom parameter attribute that constructs on-disk constraints from closures.
 
 

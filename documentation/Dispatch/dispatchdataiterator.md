@@ -1,18 +1,19 @@
 # DispatchDataIterator
 
 **Framework**: Dispatch  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A byte-by-byte iterator over the contents of a dispatch data object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -23,31 +24,32 @@ struct DispatchDataIterator
 ## Topics
 
 ### Iterating Over a Sequence’s Elements
-- [func next() -> DispatchData.Element?](dispatchdataiterator/next.md)
+- [func next() -> DispatchData.Element?](./dispatchdataiterator/next%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [IteratorProtocol](../Swift/iteratorprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [class DispatchSource](dispatchsource.md)
+### System Event Monitoring
+- [class DispatchSource](./dispatchsource.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [Dispatch Source](dispatch-source.md)
+- [Dispatch Source](./dispatch-source.md)
   An object that coordinates the processing of specific low-level system events, such as file-system events, timers, and UNIX signals.
-- [class DispatchIO](dispatchio.md)
+- [class DispatchIO](./dispatchio.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [struct DispatchData](dispatchdata.md)
+- [struct DispatchData](./dispatchdata.md)
   An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
-- [Dispatch I/O](dispatch-i-o.md)
+- [Dispatch I/O](./dispatch-i-o.md)
   An object that manages operations on a file descriptor using either stream-based or random-access semantics.
-- [Dispatch Data](dispatch-data.md)
+- [Dispatch Data](./dispatch-data.md)
   An object that manages a memory-based data buffer and exposes it as a contiguous block of memory.
-- [protocol DispatchSourceProtocol](dispatchsourceprotocol.md)
+- [protocol DispatchSourceProtocol](./dispatchsourceprotocol.md)
   Defines a common set of properties and methods that are shared with all dispatch source types.
 
 

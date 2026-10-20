@@ -1,10 +1,12 @@
 # LinkPresentation Macros
 
-**Framework**: Link Presentation
+**Framework**: Link Presentation  
+**Role**: API Collection
 
 ## See Also
 
-- [LinkPresentation Errors](errors.md)
+### Reference
+- [LinkPresentation Errors](./errors.md)
 
 
 ---

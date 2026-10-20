@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Produces final per-particle results for rendering.
 
@@ -12,7 +13,7 @@ Produces final per-particle results for rendering.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

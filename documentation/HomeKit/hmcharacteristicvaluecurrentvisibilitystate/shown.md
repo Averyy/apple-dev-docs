@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentVisibilityState.shown
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media source is displayed.
 
@@ -19,13 +20,18 @@ The media source is displayed.
 case shown
 ```
 
+```c
+HMCharacteristicValueCurrentVisibilityStateShown
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentVisibilityState.alwaysShown](hmcharacteristicvaluecurrentvisibilitystate/alwaysshown.md)
+### Visibility states
+- [HMCharacteristicValueCurrentVisibilityState.alwaysShown](./alwaysshown.md)
   The media source is always displayed.
-- [HMCharacteristicValueCurrentVisibilityState.connected](hmcharacteristicvaluecurrentvisibilitystate/connected.md)
+- [HMCharacteristicValueCurrentVisibilityState.connected](./connected.md)
   The media source is displayed since there’s a device connected to the input source.
-- [HMCharacteristicValueCurrentVisibilityState.hidden](hmcharacteristicvaluecurrentvisibilitystate/hidden.md)
+- [HMCharacteristicValueCurrentVisibilityState.hidden](./hidden.md)
   The media source isn’t displayed.
 
 

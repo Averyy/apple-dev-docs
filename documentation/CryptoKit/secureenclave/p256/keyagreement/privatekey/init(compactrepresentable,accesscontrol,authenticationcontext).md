@@ -1,7 +1,8 @@
 # init(compactRepresentable:accessControl:authenticationContext:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-256 private key for key agreement with the specified access control.
 
@@ -27,7 +28,8 @@ init(compactRepresentable: Bool = true, accessControl: SecAccessControl = SecAcc
 
 ## See Also
 
-- [init(dataRepresentation: Data, authenticationContext: LAContext?) throws](secureenclave/p256/keyagreement/privatekey/init(datarepresentation:authenticationcontext:).md)
+### Creating a private key
+- [init(dataRepresentation: Data, authenticationContext: LAContext?) throws](./init%28datarepresentation,authenticationcontext%29.md)
   Creates a P-256 private key for key agreement from a data representation of the key with the given authentication context.
 
 

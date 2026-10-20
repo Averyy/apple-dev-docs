@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range to which the instruction applies.
 
@@ -19,17 +20,22 @@ The time range to which the instruction applies.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
+```
+
 #### Discussion
 
-If the time range is invalid, the video compositor will ignore it. See also the requirements of the [`timeRange`](avvideocompositioninstruction-swift.class/timerange.md) property in the array of objects implementing the [`AVVideoCompositionInstructionProtocol`](avvideocompositioninstructionprotocol.md) protocol as described in the [`AVVideoComposition`](avvideocomposition.md) class’s [`instructions`](avvideocomposition/instructions.md) property.
+If the time range is invalid, the video compositor will ignore it. See also the requirements of the [`timeRange`](./timerange.md) property in the array of objects implementing the [`AVVideoCompositionInstructionProtocol`](../avvideocompositioninstructionprotocol.md) protocol as described in the [`AVVideoComposition`](../avvideocomposition.md) class’s [`instructions`](../avvideocomposition/instructions.md) property.
 
 ## See Also
 
-- [var backgroundColor: CGColor?](avvideocompositioninstruction-swift.class/backgroundcolor.md)
+### Inspecting the instruction
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the composition.
-- [var layerInstructions: [AVVideoCompositionLayerInstruction]](avvideocompositioninstruction-swift.class/layerinstructions.md)
+- [var layerInstructions: [AVVideoCompositionLayerInstruction]](./layerinstructions.md)
   Instructions that specify how to layer and compose video frames from source tracks.
-- [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/enablepostprocessing.md)
+- [var enablePostProcessing: Bool](./enablepostprocessing.md)
   A Boolean value that indicates whether the instruction requires post processing.
 
 

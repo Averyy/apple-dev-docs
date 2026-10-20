@@ -1,7 +1,8 @@
 # SupportedActivityFamiliesEnvironmentKey
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An environment key for the size of a rendered Live Activity.
 
@@ -17,12 +18,12 @@ struct SupportedActivityFamiliesEnvironmentKey
 
 #### Overview
 
-To detect the currently rendered activity family size, use the [`activityFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/activityfamily) environment variable.
+To detect the currently rendered activity family size, use the [`activityFamily`](../SwiftUI/environmentvalues/activityfamily.md) environment variable.
 
 ## Relationships
 
 ### Conforms To
-- [EnvironmentKey](../swiftui/environmentkey.md)
+- [EnvironmentKey](../SwiftUI/environmentkey.md)
 
 
 ---

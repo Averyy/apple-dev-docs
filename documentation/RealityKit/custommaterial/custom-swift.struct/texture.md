@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom UV-mapped image texture that the framework sends to the material’s shader functions.
 
@@ -20,7 +21,8 @@ var texture: CustomMaterial.Texture?
 
 ## See Also
 
-- [var value: SIMD4<Float>](custommaterial/custom-swift.struct/value.md)
+### Accessing custom values
+- [var value: SIMD4<Float>](./value.md)
   A custom vector that the framework sends to the material’s shader functions.
 
 

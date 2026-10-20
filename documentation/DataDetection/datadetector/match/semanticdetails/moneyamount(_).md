@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.moneyAmount(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents an amount of money.
 
@@ -22,7 +23,7 @@ case moneyAmount(DataDetector.Match.SemanticDetails.MoneyAmount)
 
 ## Parameters
 
-- `MoneyAmount`: A [`DataDetector.Match.SemanticDetails.MoneyAmount`](datadetector/match/semanticdetails/moneyamount.md) structure.
+- `MoneyAmount`: A [`DataDetector.Match.SemanticDetails.MoneyAmount`](./moneyamount.md) structure.
 
 
 ---

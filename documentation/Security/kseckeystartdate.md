@@ -1,7 +1,8 @@
 # kSecKeyStartDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type `CSSM_DATE`.  Earliest date at which this key may be used.  If the value is all zeros or not present, no restriction applies.
 
@@ -9,7 +10,7 @@ Type `CSSM_DATE`.  Earliest date at which this key may be used.  If the value is
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 12.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ Type `CSSM_DATE`.  Earliest date at which this key may be used.  If the value is
 
 ```swift
 var kSecKeyStartDate: Int32 { get }
+```
+
+```c
+kSecKeyStartDate
 ```
 
 

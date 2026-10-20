@@ -1,7 +1,8 @@
 # continuityDevicePicker(isPresented:onDidConnect:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
 
@@ -22,15 +23,16 @@ A `continuityDevicePicker` should be used to discover and connect nearby continu
 
 ## See Also
 
-- [struct CameraView](../homekit/cameraview.md)
+### Displaying media
+- [struct CameraView](../../HomeKit/cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [struct NowPlayingView](../watchkit/nowplayingview.md)
+- [struct NowPlayingView](../../WatchKit/nowplayingview.md)
   A view that displays the system’s Now Playing interface so that the user can control audio.
-- [struct VideoPlayer](../avkit/videoplayer.md)
+- [struct VideoPlayer](../../AVKit/videoplayer.md)
   A view that displays content from a player and a native user interface to control playback.
-- [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
+- [func cameraAnchor(isActive: Bool) -> some View](./cameraanchor%28isactive%29.md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
-- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](./foveatedstreamingpausesheet%28session%29.md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 

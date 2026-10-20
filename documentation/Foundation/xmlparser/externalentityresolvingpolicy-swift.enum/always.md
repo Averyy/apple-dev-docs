@@ -1,7 +1,8 @@
 # XMLParser.ExternalEntityResolvingPolicy.always
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The parser always resolves external entities.
 
@@ -20,19 +21,24 @@ The parser always resolves external entities.
 case always
 ```
 
+```c
+NSXMLParserResolveExternalEntitiesAlways
+```
+
 ## See Also
 
-- [XMLParser.ExternalEntityResolvingPolicy.never](xmlparser/externalentityresolvingpolicy-swift.enum/never.md)
+### Constants
+- [XMLParser.ExternalEntityResolvingPolicy.never](./never.md)
   The parser should never resolve external entities.
-- [XMLParser.ExternalEntityResolvingPolicy.noNetwork](xmlparser/externalentityresolvingpolicy-swift.enum/nonetwork.md)
+- [XMLParser.ExternalEntityResolvingPolicy.noNetwork](./nonetwork.md)
   The parser resolves external entities but does not load them over the network.
-- [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](xmlparser/externalentityresolvingpolicy-swift.enum/sameoriginonly.md)
+- [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](./sameoriginonly.md)
   The parser resolves external entities only from the same origin as the original URL. Only applies to `NSXMLParser` instances initialized with `-initWithContentsOfURL:`.
-- [XMLParser.ExternalEntityResolvingPolicy.never](xmlparser/externalentityresolvingpolicy-swift.enum/never.md)
+- [XMLParser.ExternalEntityResolvingPolicy.never](./never.md)
   The parser should never resolve external entities.
-- [XMLParser.ExternalEntityResolvingPolicy.noNetwork](xmlparser/externalentityresolvingpolicy-swift.enum/nonetwork.md)
+- [XMLParser.ExternalEntityResolvingPolicy.noNetwork](./nonetwork.md)
   The parser resolves external entities but does not load them over the network.
-- [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](xmlparser/externalentityresolvingpolicy-swift.enum/sameoriginonly.md)
+- [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](./sameoriginonly.md)
   The parser resolves external entities only from the same origin as the original URL. Only applies to `NSXMLParser` instances initialized with `-initWithContentsOfURL:`.
 
 

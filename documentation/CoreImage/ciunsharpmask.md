@@ -1,17 +1,18 @@
 # CIUnsharpMask
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure an unsharp mask filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,26 +20,32 @@ The properties you use to configure an unsharp mask filter.
 protocol CIUnsharpMask : CIFilterProtocol
 ```
 
+```objc
+@protocol CIUnsharpMask <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var inputImage: CIImage?](ciunsharpmask/inputimage.md)
+- [var inputImage: CIImage?](./ciunsharpmask/inputimage.md)
   The image to use as an input image.
-- [var intensity: Float](ciunsharpmask/intensity.md)
+- [var intensity: Float](./ciunsharpmask/intensity.md)
   The intensity of the effect.
-- [var radius: Float](ciunsharpmask/radius.md)
+- [var radius: Float](./ciunsharpmask/radius.md)
   The radius of the unsharp mask effect.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func unsharpMask() -> any CIFilter & CIUnsharpMask](cifilter-swift.class/unsharpmask.md)
+### Related Documentation
+- [class func unsharpMask() -> any CIFilter & CIUnsharpMask](./cifilter-swift.class/unsharpmask%28%29.md)
   Increases an image’s contrast between two colors.
-- [protocol CISharpenLuminance](cisharpenluminance.md)
+### Protocols
+- [protocol CISharpenLuminance](./cisharpenluminance.md)
   The properties you use to configure a sharpen luminance filter.
 
 

@@ -1,7 +1,8 @@
 # Transcript.HistoryView.Element
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of entry the view contains.
 

@@ -1,7 +1,8 @@
 # HKPredicateKeyPathMetadata
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the object’s metadata dictionary inside a predicate format string.
 
@@ -19,9 +20,14 @@ The key path for accessing the object’s metadata dictionary inside a predicate
 let HKPredicateKeyPathMetadata: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathMetadata;
+```
+
 ## See Also
 
-- [let HKPredicateKeyPathUUID: String](hkpredicatekeypathuuid.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathUUID: String](./hkpredicatekeypathuuid.md)
   The key path for accessing the object’s UUID inside a predicate format string.
 
 

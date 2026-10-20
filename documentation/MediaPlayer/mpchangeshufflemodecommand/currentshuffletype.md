@@ -1,7 +1,8 @@
 # currentShuffleType
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current shuffle mode for a media item.
 
@@ -18,6 +19,10 @@ The current shuffle mode for a media item.
 
 ```swift
 var currentShuffleType: MPShuffleType { get set }
+```
+
+```objc
+@property (nonatomic, assign) MPShuffleType currentShuffleType;
 ```
 
 

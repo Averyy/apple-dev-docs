@@ -1,7 +1,8 @@
 # SWRemoveParticipantAlert
 
 **Framework**: Shared with You  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An alert that prompts the user to remove a participant from a Messages group.
 
@@ -14,28 +15,33 @@ An alert that prompts the user to remove a participant from a Messages group.
 class SWRemoveParticipantAlert
 ```
 
+```objc
+@interface SWRemoveParticipantAlert : NSObject
+```
+
 ## Topics
 
 ### Requesting participant removal
-- [class func show(withParticipant: SWPerson, highlight: SWCollaborationHighlight, in: NSWindow?)](swremoveparticipantalert/show(withparticipant:highlight:in:).md)
-- [class SWRemoveParticipantAlertController](swremoveparticipantalertcontroller.md)
+- [class func show(withParticipant: SWPerson, highlight: SWCollaborationHighlight, in: NSWindow?)](./swremoveparticipantalert/show%28withparticipant,highlight,in%29.md)
+- [class SWRemoveParticipantAlertController](./swremoveparticipantalertcontroller.md)
   The view controller for the remove-participant alert.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SWPerson](../sharedwithyoucore/swperson.md)
+### Participants
+- [class SWPerson](https://developer.apple.com/documentation/sharedwithyoucore/swperson)
   An object that tracks participants in a collaboration.
 
 

@@ -1,7 +1,8 @@
 # autoFocusSystem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The auto focus system the format uses.
 
@@ -18,9 +19,14 @@ The auto focus system the format uses.
 var autoFocusSystem: AVCaptureDevice.Format.AutoFocusSystem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureAutoFocusSystem autoFocusSystem;
+```
+
 ## See Also
 
-- [AVCaptureDevice.Format.AutoFocusSystem](avcapturedevice/format/autofocussystem-swift.enum.md)
+### Determining the auto focus system
+- [AVCaptureDevice.Format.AutoFocusSystem](./autofocussystem-swift.enum.md)
   An enumeration of auto focus systems.
 
 

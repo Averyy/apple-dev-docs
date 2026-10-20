@@ -1,7 +1,8 @@
 # unsafeValue(assumingType:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the wrapped value as `T` without checking the dynamic type.
 
@@ -21,7 +22,7 @@ func unsafeValue<T>(assumingType type: T.Type = T.self) -> T where T : USDValueP
 
 #### Discussion
 
-> ❗ **Important**: The behaviour is undefined when `T` does not match the stored type. Prefer [`value(as:)`](usdvalue/value(as:).md) unless you have already confirmed the type with [`isHolding(_:)`](usdvalue/isholding(_:).md).
+> ❗ **Important**: The behaviour is undefined when `T` does not match the stored type. Prefer [`value(as:)`](./value%28as%29.md) unless you have already confirmed the type with [`isHolding(_:)`](./isholding%28_%29.md).
 
 
 ---

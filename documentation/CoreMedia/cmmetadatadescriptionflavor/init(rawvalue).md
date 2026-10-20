@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metadata description flavor.
 
@@ -26,7 +27,8 @@ init(rawValue: CFString)
 
 ## See Also
 
-- [init(CFString)](cmmetadatadescriptionflavor/init(_:).md)
+### Creating Metadata Description Flavors
+- [init(CFString)](./init%28_%29.md)
   Creates a metadata description flavor.
 
 

@@ -1,14 +1,15 @@
 # powergate_stub_addr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t powergate_stub_addr;
 ```
 

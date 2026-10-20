@@ -1,7 +1,8 @@
 # UIPointerShape.roundedRect(_:radius:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pointer morphs into a rounded rectangle using the provided corner radius.
 
@@ -9,7 +10,7 @@ The pointer morphs into a rounded rectangle using the provided corner radius.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ case roundedRect(CGRect, radius: CGFloat = UIPointerShape.defaultCornerRadius)
 
 If you don’t specify a radius, the rounded rectangle uses the `defaultCornerRadius`.
 
-> **Note**:  If used alongside a content effect, this rectangle must be in the view coordinate space of the [`preview`](uipointereffect-swift.enum/preview.md). Otherwise, it’s centered around the pointer’s current location, and the rectangle’s origin is interpreted as an offset.
+> **Note**:  If used alongside a content effect, this rectangle must be in the view coordinate space of the [`preview`](../uipointereffect-swift.enum/preview.md). Otherwise, it’s centered around the pointer’s current location, and the rectangle’s origin is interpreted as an offset.
 
 ## See Also
 
-- [UIPointerShape.horizontalBeam(length:)](uipointershape-swift.enum/horizontalbeam(length:).md)
+### Specifying pointer shapes
+- [UIPointerShape.horizontalBeam(length:)](./horizontalbeam%28length%29.md)
   The pointer morphs into a horizontal beam using the specified length.
-- [UIPointerShape.verticalBeam(length:)](uipointershape-swift.enum/verticalbeam(length:).md)
+- [UIPointerShape.verticalBeam(length:)](./verticalbeam%28length%29.md)
   The pointer morphs into a vertical beam using the specified length.
-- [UIPointerShape.path(_:)](uipointershape-swift.enum/path(_:).md)
+- [UIPointerShape.path(_:)](./path%28_%29.md)
   The pointer morphs into the given Bézier path.
 
 

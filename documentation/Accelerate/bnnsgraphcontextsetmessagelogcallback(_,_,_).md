@@ -1,7 +1,8 @@
 # BNNSGraphContextSetMessageLogCallback(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies a customized callback function that reports execution-time messages.
 
@@ -18,6 +19,10 @@ Specifies a customized callback function that reports execution-time messages.
 
 ```swift
 func BNNSGraphContextSetMessageLogCallback(_ context: bnns_graph_context_t, _ log_callback_fn: bnns_graph_execute_message_fn_t, _ additional_logging_arguments: UnsafeMutablePointer<bnns_user_message_data_t>?) -> Int32
+```
+
+```c
+int BNNSGraphContextSetMessageLogCallback(bnns_graph_context_t context, bnns_graph_execute_message_fn_t log_callback_fn, bnns_user_message_data_t *additional_logging_arguments);
 ```
 
 #### Return Value
@@ -51,11 +56,12 @@ func messageLogCallback(msg_level: BNNSGraphMessageLevel,
 
 ## See Also
 
-- [typealias bnns_graph_execute_message_fn_t](bnns_graph_execute_message_fn_t.md)
+### Specifying a context’s execute-time message callback
+- [typealias bnns_graph_execute_message_fn_t](./bnns_graph_execute_message_fn_t.md)
   The graph execute-message logging callback function.
-- [struct BNNSGraphMessageLevel](bnnsgraphmessagelevel.md)
+- [struct BNNSGraphMessageLevel](./bnnsgraphmessagelevel.md)
   Constants that specify the mask for compile-time messages.
-- [struct bnns_user_message_data_t](bnns_user_message_data_t.md)
+- [struct bnns_user_message_data_t](./bnns_user_message_data_t.md)
   Additional user-defined logging argument for message-logging callbacks.
 
 

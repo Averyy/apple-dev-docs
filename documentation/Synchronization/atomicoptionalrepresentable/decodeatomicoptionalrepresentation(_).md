@@ -2,6 +2,7 @@
 
 **Framework**: Synchronization  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Recovers the logical atomic type `Self?` by destroying some `AtomicOptionalRepresentation` storage instance returned from an atomic operation on `Optional`.

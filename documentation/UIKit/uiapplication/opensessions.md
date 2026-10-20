@@ -1,7 +1,8 @@
 # openSessions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sessions whose scenes are either currently active or archived by the system.
 
@@ -18,15 +19,20 @@ The sessions whose scenes are either currently active or archived by the system.
 var openSessions: Set<UISceneSession> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSSet<UISceneSession *> * openSessions;
+```
+
 #### Discussion
 
 An archived session doesn’t have a connected scene, but a snapshot of its UI does appear in the app switcher. When the user selects that UI in the app switcher, the system asks your app to recreate the UI from the session information.
 
 ## See Also
 
-- [var supportsMultipleScenes: Bool](uiapplication/supportsmultiplescenes.md)
+### Getting scene information
+- [var supportsMultipleScenes: Bool](./supportsmultiplescenes.md)
   A Boolean value that indicates whether the app may display multiple scenes simultaneously.
-- [var connectedScenes: Set<UIScene>](uiapplication/connectedscenes.md)
+- [var connectedScenes: Set<UIScene>](./connectedscenes.md)
   The app’s currently connected scenes.
 
 

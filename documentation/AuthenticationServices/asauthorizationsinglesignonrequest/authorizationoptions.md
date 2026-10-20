@@ -1,7 +1,8 @@
 # authorizationOptions
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options that control the authorization process.
 
@@ -18,9 +19,14 @@ Options that control the authorization process.
 var authorizationOptions: [URLQueryItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSURLQueryItem *> * authorizationOptions;
+```
+
 ## See Also
 
-- [var isUserInterfaceEnabled: Bool](asauthorizationsinglesignonrequest/isuserinterfaceenabled.md)
+### Setting Options
+- [var isUserInterfaceEnabled: Bool](./isuserinterfaceenabled.md)
 
 
 ---

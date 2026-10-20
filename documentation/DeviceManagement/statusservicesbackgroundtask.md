@@ -1,7 +1,8 @@
 # StatusServicesBackgroundTask
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s background task details.
 
@@ -10,13 +11,13 @@ The status item that reports the device’s background task details.
 
 ## Declaration
 
-```swift
+```
 object StatusServicesBackgroundTask
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ object StatusServicesBackgroundTask
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 **New or updated task**:
 
@@ -79,7 +80,7 @@ Reports a removed background task.
 ## Topics
 
 ### Objects
-- [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
+- [object StatusServicesBackgroundTaskBackgroundTaskObject](./statusservicesbackgroundtaskbackgroundtaskobject.md)
   The status item that reports a background task.
 
 ## Properties
@@ -88,7 +89,8 @@ Reports a removed background task.
 
 ## See Also
 
-- [object StatusScreenSharingConnectionGroupUnresolvedConnections](statusscreensharingconnectiongroupunresolvedconnections.md)
+### Miscellaneous items
+- [object StatusScreenSharingConnectionGroupUnresolvedConnections](./statusscreensharingconnectiongroupunresolvedconnections.md)
   The status item that lists connection groups with member connection references that the device couldn’t resolve.
 
 

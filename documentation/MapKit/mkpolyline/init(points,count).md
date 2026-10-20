@@ -1,7 +1,8 @@
 # init(points:count:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a polyline object from the specified set of map points.
 
@@ -20,6 +21,10 @@ Creates a polyline object from the specified set of map points.
 convenience init(points: UnsafePointer<MKMapPoint>, count: Int)
 ```
 
+```objc
++ (instancetype) polylineWithPoints:(const MKMapPoint *) points count:(NSUInteger) count;
+```
+
 #### Return Value
 
 A new polyline object.
@@ -31,8 +36,10 @@ A new polyline object.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](mkpolyline/init(coordinates:count:).md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Creating a polyline overlay
+- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](./init%28coordinates,count%29.md)
   Creates a polyline object from the specified set of coordinates.
 
 

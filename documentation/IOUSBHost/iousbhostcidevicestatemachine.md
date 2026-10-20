@@ -1,7 +1,8 @@
 # IOUSBHostCIDeviceStateMachine
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,36 +14,41 @@
 class IOUSBHostCIDeviceStateMachine
 ```
 
+```objc
+@interface IOUSBHostCIDeviceStateMachine : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var completeRoute: Int](iousbhostcidevicestatemachine/completeroute.md)
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostcidevicestatemachine/controllerinterface.md)
-- [var deviceAddress: Int](iousbhostcidevicestatemachine/deviceaddress.md)
-- [var deviceState: IOUSBHostCIDeviceState](iousbhostcidevicestatemachine/devicestate.md)
+- [var completeRoute: Int](./iousbhostcidevicestatemachine/completeroute.md)
+- [var controllerInterface: IOUSBHostControllerInterface](./iousbhostcidevicestatemachine/controllerinterface.md)
+- [var deviceAddress: Int](./iousbhostcidevicestatemachine/deviceaddress.md)
+- [var deviceState: IOUSBHostCIDeviceState](./iousbhostcidevicestatemachine/devicestate.md)
 ### Instance Methods
-- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](iousbhostcidevicestatemachine/inspectcommand(_:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](iousbhostcidevicestatemachine/respond(tocommand:status:).md)
-- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, deviceAddress: Int) throws](iousbhostcidevicestatemachine/respond(tocommand:status:deviceaddress:).md)
+- [func inspectCommand(UnsafePointer<IOUSBHostCIMessage>) throws](./iousbhostcidevicestatemachine/inspectcommand%28_%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus) throws](./iousbhostcidevicestatemachine/respond%28tocommand,status%29.md)
+- [func respond(toCommand: UnsafePointer<IOUSBHostCIMessage>, status: IOUSBHostCIMessageStatus, deviceAddress: Int) throws](./iousbhostcidevicestatemachine/respond%28tocommand,status,deviceaddress%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostCIControllerStateMachine](iousbhostcicontrollerstatemachine.md)
-- [class IOUSBHostCIEndpointStateMachine](iousbhostciendpointstatemachine.md)
-- [class IOUSBHostCIPortStateMachine](iousbhostciportstatemachine.md)
-- [class IOUSBHostControllerInterface](iousbhostcontrollerinterface.md)
+### Classes
+- [class IOUSBHostCIControllerStateMachine](./iousbhostcicontrollerstatemachine.md)
+- [class IOUSBHostCIEndpointStateMachine](./iousbhostciendpointstatemachine.md)
+- [class IOUSBHostCIPortStateMachine](./iousbhostciportstatemachine.md)
+- [class IOUSBHostControllerInterface](./iousbhostcontrollerinterface.md)
 
 
 ---

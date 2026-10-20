@@ -1,7 +1,8 @@
 # pushHandler(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register a type that can handle push tokens changing for widgets.
 
@@ -26,7 +27,7 @@ Use this to opt this widget into supporting updates via push notifications.
 
 If you have multiple widget configurations, you can choose to use the same push handler type for those widget configurations.
 
-When the push configuration of your widgets changes, each unique handler type will be instantiated and [`pushTokenDidChange(_:widgets:)`](https://developer.apple.com/documentation/widgetkit/widgetpushhandler/pushtokendidchange(_:widgets:)) will be called.
+When the push configuration of your widgets changes, each unique handler type will be instantiated and [`pushTokenDidChange(_:widgets:)`](../../WidgetKit/widgetpushhandler/pushtokendidchange%28_,widgets%29.md) will be called.
 
 ## Parameters
 

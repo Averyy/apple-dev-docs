@@ -1,15 +1,16 @@
 # kAudioUnitSubType_MatrixMixer
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var kAudioUnitSubType_MatrixMixer: UInt32 { get }
 ```
 
+```c
+kAudioUnitSubType_MatrixMixer
+```
+
 ## See Also
 
-- [var kAudioUnitSubType_MultiChannelMixer: UInt32](kaudiounitsubtype_multichannelmixer.md)
+### Constants
+- [var kAudioUnitSubType_MultiChannelMixer: UInt32](./kaudiounitsubtype_multichannelmixer.md)
   An audio unit that can have any number of input buses, with any number of channels on each input bus, and one output bus. In macOS, the output bus can have any number of channels. In iOS, the output bus always has two channels.
-- [var kAudioUnitSubType_SpatialMixer: UInt32](kaudiounitsubtype_spatialmixer.md)
+- [var kAudioUnitSubType_SpatialMixer: UInt32](./kaudiounitsubtype_spatialmixer.md)
 
 
 ---

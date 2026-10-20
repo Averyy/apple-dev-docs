@@ -1,7 +1,8 @@
 # filter()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a filter object based on the filter chain.
 
@@ -12,6 +13,10 @@ Creates a filter object based on the filter chain.
 
 ```swift
 func filter() -> CIFilter
+```
+
+```objc
+- (CIFilter *) filter;
 ```
 
 #### Return Value

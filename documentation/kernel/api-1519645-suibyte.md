@@ -1,14 +1,15 @@
 # suibyte
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int suibyte(user_addr_t addr, int byte);
 ```
 

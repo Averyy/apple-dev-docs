@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieve the localized description for this error.
 

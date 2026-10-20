@@ -1,7 +1,8 @@
 # AppEvent
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A time-limited promotional or informational event for an app, displayed to customers on the App Store product page.
 
@@ -10,16 +11,16 @@ A time-limited promotional or informational event for an app, displayed to custo
 
 ## Declaration
 
-```swift
+```
 object AppEvent
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEvent.Attributes](appevent/attributes-data.dictionary.md)
+- [object AppEvent.Attributes](./appevent/attributes-data.dictionary.md)
   The attributes that describe an In-App event.
-- [object AppEvent.Relationships](appevent/relationships-data.dictionary.md)
+- [object AppEvent.Relationships](./appevent/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,21 +29,22 @@ object AppEvent
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppEvent.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appEvents`
 
 ## See Also
 
-- [object AppEventCreateRequest](appeventcreaterequest.md)
+### Objects and types
+- [object AppEventCreateRequest](./appeventcreaterequest.md)
   The request body you use to create an app event.
-- [object AppEventUpdateRequest](appeventupdaterequest.md)
+- [object AppEventUpdateRequest](./appeventupdaterequest.md)
   The request body you use to update an app event update request.
-- [object AppEventsResponse](appeventsresponse.md)
+- [object AppEventsResponse](./appeventsresponse.md)
   The response body for endpoints that list in-app events for an app.
-- [object AppEventResponse](appeventresponse.md)
+- [object AppEventResponse](./appeventresponse.md)
   The response body for endpoints that create, read, or modify an in-app event.
-- [type AppEventAssetType](appeventassettype.md)
+- [type AppEventAssetType](./appeventassettype.md)
   A string that represents the type of asset for an app event.
-- [object AppEventLocalizationsLinkagesResponse](appeventlocalizationslinkagesresponse.md)
+- [object AppEventLocalizationsLinkagesResponse](./appeventlocalizationslinkagesresponse.md)
 
 
 ---

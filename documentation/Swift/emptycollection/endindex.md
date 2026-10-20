@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Always zero, just like `startIndex`.
 

@@ -1,6 +1,7 @@
 # Movie Rating Icons (United States)
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Icons that pertain to United States movie ratings.
 
@@ -12,19 +13,19 @@ United States movie rating icons indicate who is allowed to watch a movie in the
 
 The resource name for the general admission icon for the United States is `mpaa-g`. Place a general admission rating icon next to content to indicate that the content is suitable to be watched by people of any age. Place the general admissions rating icon using `<img src="resource://mpaa-g" />`.
 
-![The letter G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-1@2x.png)
+![The letter G, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-1@2x.png)
 
 ##### Parental Guidance
 
 The resource name for the parental guidance icon for the United States is `mpaa-pg`. Place a parental guidance rating icon next to content to indicate that parents should review the content before allowing their children to see it. Place a parental guidance rating icon using `<img src="resource://mpaa-pg" />`.
 
-![The phrase P G, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-2@2x.png)
+![The phrase P G, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-2@2x.png)
 
 ##### Parents Strongly Cautioned
 
 The resource name for the parents strongly cautioned icon for the United States is `mpaa-pg13`. Place a parents strongly cautioned rating icon next to content to indicate that parents should review the content before allowing children under the age of 13 to see it. Place a parents strongly cautioned rating icon using `<img src="resource://mpaa-pg13" />`.
 
-![The phrase P G dash thirteen, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-3@2x.png)
+![The phrase P G dash thirteen, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-3@2x.png)
 
 ##### Restricted
 
@@ -32,43 +33,44 @@ The resource name for the restricted icon for the United States is `mpaa-r`. Pla
 
 > **Note**: In Tennessee, children under the age of 18 must be accompanied by an adult to watch a restricted movie.
 
-![The letter R, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-4@2x.png)
+![The letter R, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-4@2x.png)
 
 ##### Adults Only
 
 The resource name for the adults only icon for the United States is `mpaa-nc17`. Place an adults only rating icon next to content to indicate that the content can only be watched by someone who is 18 or older. Place an adults only rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://mpaa-nc17" />`.
 
-![The phrase N C dash seventeen, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-5@2x.png)
+![The phrase N C dash seventeen, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-5@2x.png)
 
 ##### Unrated
 
 The resource name for the unrated icon for the United States is `unrated`. Place an unrated rating icon next to content to indicate that the content has not been rated by the MPAA. This icon is often used with an extended or director’s cut version of a movie. Place an unrated rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://unrated" />`.
 
-![The word unrated, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-6@2x.png)
+![The word unrated, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-6@2x.png)
 
 ##### Not Rated
 
 The resource name for the not rated icon for the United States is `nr`. Place a not rated rating icon next to content to indicate that the content has not been rated by the MPAA. This icon is often used to indicate that the movie was never submitted to the MPAA. Place a not rated rating icon using <img src=“resource://mpaa-pg13” /> `<img src="resource://nr" />`.
 
-![The phrase not rated, inside a black rectangle with rounded corners.](/images/com.apple.TVML/movie-rating-icons-united-states-7@2x.png)
+![The phrase not rated, inside a black rectangle with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/movie-rating-icons-united-states-7@2x.png)
 
 ## See Also
 
-- [Adding Resource Icons](adding-resource-icons.md)
+### Resource Icons
+- [Adding Resource Icons](./adding-resource-icons.md)
   Add Apple-provided icons to buttons and as independent images.
-- [Button Icons](button-icons.md)
+- [Button Icons](./button-icons.md)
   Icons that indicate the function of a button.
-- [Television Rating Icons (United States)](television-rating-icons-united-states.md)
+- [Television Rating Icons (United States)](./television-rating-icons-united-states.md)
   Icons that pertain to United States television ratings.
-- [Rating Icons (New Zealand)](rating-icons-new-zealand.md)
+- [Rating Icons (New Zealand)](./rating-icons-new-zealand.md)
   Icons that pertain to New Zealand movie ratings.
-- [Rating Icons (United Kingdom)](rating-icons-united-kingdom.md)
+- [Rating Icons (United Kingdom)](./rating-icons-united-kingdom.md)
   Icons that pertain to United Kingdom movie ratings.
-- [Rating Icons (Brazil)](rating-icons-brazil.md)
+- [Rating Icons (Brazil)](./rating-icons-brazil.md)
   Icons that pertain to Brazil movie ratings.
-- [Rotten Tomatoes Rating Icons](rotten-tomatoes-rating-icons.md)
+- [Rotten Tomatoes Rating Icons](./rotten-tomatoes-rating-icons.md)
   Icons pertaining to the Rotten Tomatoes rating system.
-- [Miscellaneous Icons](miscellaneous-icons.md)
+- [Miscellaneous Icons](./miscellaneous-icons.md)
   Miscellaneous icons that don’t fall into a specific category.
 
 

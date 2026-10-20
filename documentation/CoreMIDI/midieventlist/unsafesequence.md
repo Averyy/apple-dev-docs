@@ -1,14 +1,15 @@
 # MIDIEventList.UnsafeSequence
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,12 +20,12 @@ struct UnsafeSequence
 ## Topics
 
 ### Instance Properties
-- [var count: Int](midieventlist/unsafesequence/count.md)
+- [var count: Int](./unsafesequence/count.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HKPredicateKeyPathCategoryValue
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the category sample’s value.
 
@@ -17,6 +18,10 @@ The key path for accessing the category sample’s value.
 
 ```swift
 let HKPredicateKeyPathCategoryValue: String
+```
+
+```c
+extern NSString * const HKPredicateKeyPathCategoryValue;
 ```
 
 #### Discussion

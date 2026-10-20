@@ -1,10 +1,11 @@
 # kReadAllStoredLinkKeys
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kReadAllStoredLinkKeys: BluetoothHCIReadStoredLinkKeysFlags { get }
 ```
 
+```c
+kReadAllStoredLinkKeys
+```
+
 ## See Also
 
-- [var kReturnLinkKeyForSpecifiedDeviceOnly: BluetoothHCIReadStoredLinkKeysFlags](kreturnlinkkeyforspecifieddeviceonly.md)
+### Constants
+- [var kReturnLinkKeyForSpecifiedDeviceOnly: BluetoothHCIReadStoredLinkKeysFlags](./kreturnlinkkeyforspecifieddeviceonly.md)
 
 
 ---

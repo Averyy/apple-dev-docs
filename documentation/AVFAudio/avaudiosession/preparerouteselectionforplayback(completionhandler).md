@@ -1,7 +1,8 @@
 # prepareRouteSelectionForPlayback(completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the route selection for long-form video playback.
 
@@ -14,7 +15,15 @@ Prepares the route selection for long-form video playback.
 ## Declaration
 
 ```swift
+func prepareRouteSelectionForPlayback(completionHandler: @escaping @Sendable (Bool, AVAudioSession.RouteSelection) -> Void)
+```
+
+```swift
 func prepareRouteSelectionForPlayback() async -> (Bool, AVAudioSession.RouteSelection)
+```
+
+```objc
+- (void) prepareRouteSelectionForPlaybackWithCompletionHandler:(void (^)(BOOL shouldStartPlayback, AVAudioSessionRouteSelection routeSelection)) completionHandler;
 ```
 
 #### Discussion
@@ -34,14 +43,18 @@ session.prepareRouteSelectionForPlayback { shouldStartPlayback, routeSelection i
 
 ## Parameters
 
-- `completionHandler`: A completion handler called after the system finishes preparing the playback route. The system passes the completion handler the following parameters: - **`shouldStartPlayback`**: A Boolean value that indicates whether playback should start.
-- **`routeSelection`**: A route selection value that indicates the active playback route.
+- `completionHandler`: A completion handler called after the system finishes preparing the playback route. The system passes the completion handler the following parameters:
+
+  - **`shouldStartPlayback`**: A Boolean value that indicates whether playback should start.
+  - **`routeSelection`**: A route selection value that indicates the active playback route.
 
 ## See Also
 
-- [func setCategory(AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions) throws](avaudiosession/setcategory(_:mode:policy:options:).md)
+### Related Documentation
+- [func setCategory(AVAudioSession.Category, mode: AVAudioSession.Mode, policy: AVAudioSession.RouteSharingPolicy, options: AVAudioSession.CategoryOptions) throws](./setcategory%28_,mode,policy,options%29.md)
   Sets the session category, mode, route-sharing policy, and options.
-- [AVAudioSession.RouteSelection](avaudiosession/routeselection.md)
+### Preparing for long-form video playback
+- [AVAudioSession.RouteSelection](./routeselection.md)
   Constants used to define the active route selection.
 
 

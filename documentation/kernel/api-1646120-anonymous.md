@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,31 +18,31 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSBootVolumeInconsistentBit](1646120-anonymous/khfsbootvolumeinconsistentbit.md)
-- [kHFSBootVolumeInconsistentMask](1646120-anonymous/khfsbootvolumeinconsistentmask.md)
-- [kHFSCatalogNodeIDsReusedBit](1646120-anonymous/khfscatalognodeidsreusedbit.md)
-- [kHFSCatalogNodeIDsReusedMask](1646120-anonymous/khfscatalognodeidsreusedmask.md)
-- [kHFSContentProtectionBit](1646120-anonymous/khfscontentprotectionbit.md)
-- [kHFSContentProtectionMask](1646120-anonymous/khfscontentprotectionmask.md)
-- [kHFSMDBAttributesMask](1646120-anonymous/khfsmdbattributesmask.md)
-- [kHFSUnusedNodeFixBit](1646120-anonymous/khfsunusednodefixbit.md)
-- [kHFSUnusedNodeFixMask](1646120-anonymous/khfsunusednodefixmask.md)
-- [kHFSVolumeHardwareLockBit](1646120-anonymous/khfsvolumehardwarelockbit.md)
-- [kHFSVolumeHardwareLockMask](1646120-anonymous/khfsvolumehardwarelockmask.md)
-- [kHFSVolumeInconsistentBit](1646120-anonymous/khfsvolumeinconsistentbit.md)
-- [kHFSVolumeInconsistentMask](1646120-anonymous/khfsvolumeinconsistentmask.md)
-- [kHFSVolumeJournaledBit](1646120-anonymous/khfsvolumejournaledbit.md)
-- [kHFSVolumeJournaledMask](1646120-anonymous/khfsvolumejournaledmask.md)
-- [kHFSVolumeNoCacheRequiredBit](1646120-anonymous/khfsvolumenocacherequiredbit.md)
-- [kHFSVolumeNoCacheRequiredMask](1646120-anonymous/khfsvolumenocacherequiredmask.md)
-- [kHFSVolumeSoftwareLockBit](1646120-anonymous/khfsvolumesoftwarelockbit.md)
-- [kHFSVolumeSoftwareLockMask](1646120-anonymous/khfsvolumesoftwarelockmask.md)
-- [kHFSVolumeSparedBlocksBit](1646120-anonymous/khfsvolumesparedblocksbit.md)
-- [kHFSVolumeSparedBlocksMask](1646120-anonymous/khfsvolumesparedblocksmask.md)
-- [kHFSVolumeUnmountedBit](1646120-anonymous/khfsvolumeunmountedbit.md)
-- [kHFSVolumeUnmountedMask](1646120-anonymous/khfsvolumeunmountedmask.md)
-- [kHFSExpandedTimesBit](1646120-anonymous/khfsexpandedtimesbit.md)
-- [kHFSExpandedTimesMask](1646120-anonymous/khfsexpandedtimesmask.md)
+- [kHFSBootVolumeInconsistentBit](./api-1646120-anonymous/khfsbootvolumeinconsistentbit.md)
+- [kHFSBootVolumeInconsistentMask](./api-1646120-anonymous/khfsbootvolumeinconsistentmask.md)
+- [kHFSCatalogNodeIDsReusedBit](./api-1646120-anonymous/khfscatalognodeidsreusedbit.md)
+- [kHFSCatalogNodeIDsReusedMask](./api-1646120-anonymous/khfscatalognodeidsreusedmask.md)
+- [kHFSContentProtectionBit](./api-1646120-anonymous/khfscontentprotectionbit.md)
+- [kHFSContentProtectionMask](./api-1646120-anonymous/khfscontentprotectionmask.md)
+- [kHFSMDBAttributesMask](./api-1646120-anonymous/khfsmdbattributesmask.md)
+- [kHFSUnusedNodeFixBit](./api-1646120-anonymous/khfsunusednodefixbit.md)
+- [kHFSUnusedNodeFixMask](./api-1646120-anonymous/khfsunusednodefixmask.md)
+- [kHFSVolumeHardwareLockBit](./api-1646120-anonymous/khfsvolumehardwarelockbit.md)
+- [kHFSVolumeHardwareLockMask](./api-1646120-anonymous/khfsvolumehardwarelockmask.md)
+- [kHFSVolumeInconsistentBit](./api-1646120-anonymous/khfsvolumeinconsistentbit.md)
+- [kHFSVolumeInconsistentMask](./api-1646120-anonymous/khfsvolumeinconsistentmask.md)
+- [kHFSVolumeJournaledBit](./api-1646120-anonymous/khfsvolumejournaledbit.md)
+- [kHFSVolumeJournaledMask](./api-1646120-anonymous/khfsvolumejournaledmask.md)
+- [kHFSVolumeNoCacheRequiredBit](./api-1646120-anonymous/khfsvolumenocacherequiredbit.md)
+- [kHFSVolumeNoCacheRequiredMask](./api-1646120-anonymous/khfsvolumenocacherequiredmask.md)
+- [kHFSVolumeSoftwareLockBit](./api-1646120-anonymous/khfsvolumesoftwarelockbit.md)
+- [kHFSVolumeSoftwareLockMask](./api-1646120-anonymous/khfsvolumesoftwarelockmask.md)
+- [kHFSVolumeSparedBlocksBit](./api-1646120-anonymous/khfsvolumesparedblocksbit.md)
+- [kHFSVolumeSparedBlocksMask](./api-1646120-anonymous/khfsvolumesparedblocksmask.md)
+- [kHFSVolumeUnmountedBit](./api-1646120-anonymous/khfsvolumeunmountedbit.md)
+- [kHFSVolumeUnmountedMask](./api-1646120-anonymous/khfsvolumeunmountedmask.md)
+- [kHFSExpandedTimesBit](./api-1646120-anonymous/khfsexpandedtimesbit.md)
+- [kHFSExpandedTimesMask](./api-1646120-anonymous/khfsexpandedtimesmask.md)
 
 
 ---

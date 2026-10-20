@@ -1,14 +1,17 @@
 # init(timestamp:measurement:session:deviceID:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an electric vehicle load event.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst ?+
+- iOS 26.0+ - Deprecated in 27.0
+- iPadOS 26.0+ - Deprecated in 27.0
+- Mac Catalyst
+
+> **Deprecated**: Use init(timestamp:measurement:session:device:) instead
 
 ## Declaration
 
@@ -18,7 +21,7 @@ init(timestamp: Date, measurement: ElectricVehicleLoadEvent.ElectricalMeasuremen
 
 #### Discussion
 
-> **Note**: [`EnergyKitError.invalidLoadEvent`](energykiterror/invalidloadevent.md)
+> **Throws**: [`EnergyKitError.invalidLoadEvent`](../energykiterror/invalidloadevent.md)
 
 ## Parameters
 

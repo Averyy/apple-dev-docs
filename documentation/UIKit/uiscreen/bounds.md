@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding rectangle of the screen, measured in points.
 
@@ -9,12 +10,16 @@ The bounding rectangle of the screen, measured in points.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 
 ## Declaration
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect bounds;
 ```
 
 #### Discussion
@@ -23,11 +28,12 @@ This rectangle is specified in the current coordinate space, which takes into ac
 
 ## See Also
 
-- [var nativeBounds: CGRect](uiscreen/nativebounds.md)
+### Getting the size and scale
+- [var nativeBounds: CGRect](./nativebounds.md)
   The bounding rectangle of the physical screen, measured in pixels.
-- [var nativeScale: CGFloat](uiscreen/nativescale.md)
+- [var nativeScale: CGFloat](./nativescale.md)
   The native scale factor for the physical screen.
-- [var scale: CGFloat](uiscreen/scale.md)
+- [var scale: CGFloat](./scale.md)
   The natural scale factor associated with the screen.
 
 

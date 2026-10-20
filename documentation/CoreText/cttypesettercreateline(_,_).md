@@ -1,7 +1,8 @@
 # CTTypesetterCreateLine(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable line from the typesetter.
 
@@ -20,13 +21,17 @@ Creates an immutable line from the typesetter.
 func CTTypesetterCreateLine(_ typesetter: CTTypesetter, _ stringRange: CFRange) -> CTLine
 ```
 
+```c
+extern CTLineRefCTTypesetterCreateLine(CTTypesetterRef typesetter, CFRange stringRange);
+```
+
 #### Return Value
 
 A reference to a CTLine object if the call was successful; otherwise, `NULL`.
 
 #### Discussion
 
-The resultant line consists of glyphs in the correct visual order, ready to draw. This function is equivalent to [`CTTypesetterCreateLineWithOffset(_:_:_:)`](cttypesettercreatelinewithoffset(_:_:_:).md) with an offset of 0.0.
+The resultant line consists of glyphs in the correct visual order, ready to draw. This function is equivalent to [`CTTypesetterCreateLineWithOffset(_:_:_:)`](./cttypesettercreatelinewithoffset%28_,_,_%29.md) with an offset of 0.0.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ The resultant line consists of glyphs in the correct visual order, ready to draw
 
 ## See Also
 
-- [func CTTypesetterCreateLineWithOffset(CTTypesetter, CFRange, Double) -> CTLine](cttypesettercreatelinewithoffset(_:_:_:).md)
+### Creating Lines
+- [func CTTypesetterCreateLineWithOffset(CTTypesetter, CFRange, Double) -> CTLine](./cttypesettercreatelinewithoffset%28_,_,_%29.md)
   Creates an immutable line from the typesetter at a specified line offset.
 
 

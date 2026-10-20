@@ -1,7 +1,8 @@
 # draggable
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the place annotation is draggable.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the place annotation is draggable.
 
 ## Declaration
 
-```swift
+```
 get draggable(): boolean;
 ```
 

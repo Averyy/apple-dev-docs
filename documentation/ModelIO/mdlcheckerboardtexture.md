@@ -1,7 +1,8 @@
 # MDLCheckerboardTexture
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A generator of texel data that creates a checkerboard pattern with two specified colors.
 
@@ -19,53 +20,58 @@ A generator of texel data that creates a checkerboard pattern with two specified
 class MDLCheckerboardTexture
 ```
 
+```objc
+@interface MDLCheckerboardTexture : MDLTexture
+```
+
 #### Overview
 
-Like other procedural [`MDLTexture`](mdltexture.md) subclasses, the [`MDLCheckerboardTexture`](mdlcheckerboardtexture.md) class generates texel data only when that data is first referenced, and then caches it for future use.
+Like other procedural [`MDLTexture`](./mdltexture.md) subclasses, the [`MDLCheckerboardTexture`](./mdlcheckerboardtexture.md) class generates texel data only when that data is first referenced, and then caches it for future use.
 
 ## Topics
 
 ### Creating a Checkerboard Texture
-- [init(divisions: Float, name: String?, dimensions: vector_int2, channelCount: Int32, channelEncoding: MDLTextureChannelEncoding, color1: CGColor, color2: CGColor)](mdlcheckerboardtexture/init(divisions:name:dimensions:channelcount:channelencoding:color1:color2:).md)
+- [init(divisions: Float, name: String?, dimensions: vector_int2, channelCount: Int32, channelEncoding: MDLTextureChannelEncoding, color1: CGColor, color2: CGColor)](./mdlcheckerboardtexture/init%28divisions,name,dimensions,channelcount,channelencoding,color1,color2%29.md)
   Initializes a checkerboard texture with the specified colors and other properties.
 ### Configuring the Checkerboard Pattern
-- [var color1: CGColor?](mdlcheckerboardtexture/color1.md)
+- [var color1: CGColor?](./mdlcheckerboardtexture/color1.md)
   The color for half of the squares in the checkerboard pattern.
-- [var color2: CGColor?](mdlcheckerboardtexture/color2.md)
+- [var color2: CGColor?](./mdlcheckerboardtexture/color2.md)
   The color for the other half of the squares in the checkerboard pattern.
-- [var divisions: Float](mdlcheckerboardtexture/divisions.md)
+- [var divisions: Float](./mdlcheckerboardtexture/divisions.md)
   The number of squares along each dimension in the checkerboard pattern.
 
 ## Relationships
 
 ### Inherits From
-- [MDLTexture](mdltexture.md)
+- [MDLTexture](./mdltexture.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MDLTexture](mdltexture.md)
+### Textures
+- [class MDLTexture](./mdltexture.md)
   A source of texel data to be used in rendering material surface appearances.
-- [class MDLColorSwatchTexture](mdlcolorswatchtexture.md)
+- [class MDLColorSwatchTexture](./mdlcolorswatchtexture.md)
   A generator of texel data that creates a gradient between two specified colors.
-- [class MDLNoiseTexture](mdlnoisetexture.md)
+- [class MDLNoiseTexture](./mdlnoisetexture.md)
   A generator of texel data that creates a field of random noise.
-- [class MDLNormalMapTexture](mdlnormalmaptexture.md)
+- [class MDLNormalMapTexture](./mdlnormalmaptexture.md)
   A generator of texel data that computes a normal map from a supplied texture.
-- [class MDLSkyCubeTexture](mdlskycubetexture.md)
+- [class MDLSkyCubeTexture](./mdlskycubetexture.md)
   A generator of texel data that creates cube textures using a physically realistic simulation of the sunlit sky.
-- [class MDLURLTexture](mdlurltexture.md)
+- [class MDLURLTexture](./mdlurltexture.md)
   A lightweight reference to a URL from which to load texture data.
-- [class MDLTextureFilter](mdltexturefilter.md)
+- [class MDLTextureFilter](./mdltexturefilter.md)
   A description of filtering modes for a renderer to use when sampling from a texture.
-- [class MDLTextureSampler](mdltexturesampler.md)
+- [class MDLTextureSampler](./mdltexturesampler.md)
   An object that pairs a source of texture data with sampling parameters to be used in rendering the texture.
 
 

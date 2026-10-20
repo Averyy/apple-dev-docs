@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short LOADED;
 ```
 
 ## See Also
 
-- [ERROR](htmltrackelement/1630502-error.md)
-- [LOADING](htmltrackelement/1630449-loading.md)
-- [NONE](htmltrackelement/1631823-none.md)
+### Miscellaneous
+- [ERROR](./api-1630502-error.md)
+- [LOADING](./api-1630449-loading.md)
+- [NONE](./api-1631823-none.md)
 
 
 ---

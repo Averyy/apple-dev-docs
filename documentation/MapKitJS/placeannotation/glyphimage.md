@@ -1,7 +1,8 @@
 # glyphImage
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The glyph image for the place.
 
@@ -10,25 +11,26 @@ The glyph image for the place.
 
 ## Declaration
 
-```swift
+```
 get glyphImage(): MapFeatureAnnotationGlyphImage | null;
 ```
 
 #### Discussion
 
-Not all places have a glyph image. When a place does, this property returns a [`MapFeatureAnnotationGlyphImage`](mapfeatureannotationglyphimage.md) object that allows you to access the glyph image. You can’t set the glyph image property of the place annotation.
+Not all places have a glyph image. When a place does, this property returns a [`MapFeatureAnnotationGlyphImage`](../mapfeatureannotationglyphimage.md) object that allows you to access the glyph image. You can’t set the glyph image property of the place annotation.
 
 ## See Also
 
-- [title](mapfeatureannotation/title.md)
+### Annotation properties
+- [title](../mapfeatureannotation/title.md)
   The title of the feature.
-- [featureType](mapfeatureannotation/featuretype.md)
+- [featureType](../mapfeatureannotation/featuretype.md)
   A value that describes the type of place the feature represents.
-- [pointOfInterestCategory](mapfeatureannotation/pointofinterestcategory.md)
+- [pointOfInterestCategory](../mapfeatureannotation/pointofinterestcategory.md)
   The point-of-interest category of the feature.
-- [color](placeannotation/color.md)
+- [color](./color.md)
   The color of the place.
-- [selectedGlyphImage](placeannotation/selectedglyphimage.md)
+- [selectedGlyphImage](./selectedglyphimage.md)
   The selected glyph image for the place.
 
 

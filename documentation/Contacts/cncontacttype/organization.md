@@ -1,7 +1,8 @@
 # CNContactType.organization
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The contact is an Organization.
 
@@ -19,9 +20,14 @@ The contact is an Organization.
 case organization
 ```
 
+```c
+CNContactTypeOrganization
+```
+
 ## See Also
 
-- [CNContactType.person](cncontacttype/person.md)
+### Constants
+- [CNContactType.person](./person.md)
   The contact is a person.
 
 

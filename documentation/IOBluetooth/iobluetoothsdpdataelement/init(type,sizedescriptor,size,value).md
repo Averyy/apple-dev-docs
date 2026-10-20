@@ -1,17 +1,22 @@
 # init(type:sizeDescriptor:size:value:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new IOBluetoothSDPDataElement with the given attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(type newType: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor newSizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size newSize: UInt32, value newValue: NSObject!)
+```
+
+```objc
+- (instancetype) initWithType:(BluetoothSDPDataElementTypeDescriptor) newType sizeDescriptor:(BluetoothSDPDataElementSizeDescriptor) newSizeDescriptor size:(uint32_t) newSize value:(NSObject *) newValue;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ Warning - be careful using this method. There is next to no error checking done 
 
 ## See Also
 
-- [init!(elementValue: NSObject!)](iobluetoothsdpdataelement/init(elementvalue:).md)
+### Initializers
+- [init!(elementValue: NSObject!)](./init%28elementvalue%29.md)
   Initializes a new IOBluetoothSDPDataElement with the given value.
 
 

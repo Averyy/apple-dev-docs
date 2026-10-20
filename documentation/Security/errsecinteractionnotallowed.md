@@ -1,7 +1,8 @@
 # errSecInteractionNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Interaction with the Security Server is not allowed.
 
@@ -18,6 +19,10 @@ Interaction with the Security Server is not allowed.
 
 ```swift
 var errSecInteractionNotAllowed: OSStatus { get }
+```
+
+```c
+errSecInteractionNotAllowed
 ```
 
 

@@ -1,7 +1,8 @@
 # init(buffer:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio input object.
 
@@ -31,9 +32,10 @@ The audio buffer must not overlap or precede other audio input, as determined by
 
 ## See Also
 
-- [init(buffer: AVAudioPCMBuffer)](analyzerinput/init(buffer:)-2ysg3.md)
+### Creating an input element
+- [init(buffer: AVAudioPCMBuffer)](./init%28buffer%29-2ysg3.md)
   Creates an audio input object.
-- [init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)](analyzerinput/init(buffer:bufferstarttime:).md)
+- [init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)](./init%28buffer,bufferstarttime%29.md)
   Creates an audio input object for audio that may be discontiguous with previous input.
 
 

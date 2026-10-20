@@ -1,7 +1,8 @@
 # endpoint
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Creates an endpoint from the listener.
 

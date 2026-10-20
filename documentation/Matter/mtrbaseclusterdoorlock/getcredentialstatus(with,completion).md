@@ -1,7 +1,8 @@
 # getCredentialStatus(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getCredentialStatus(with params: MTRDoorLockClusterGetCredentialStatusParams, completion: @escaping @Sendable (MTRDoorLockClusterGetCredentialStatusResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func credentialStatus(with params: MTRDoorLockClusterGetCredentialStatusParams) async throws -> MTRDoorLockClusterGetCredentialStatusResponseParams
+```
+
+```objc
+- (void) getCredentialStatusWithParams:(MTRDoorLockClusterGetCredentialStatusParams *) params completion:(void (^)(MTRDoorLockClusterGetCredentialStatusResponseParams *data, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # Song
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A music item that represents a song.
 
@@ -23,132 +24,133 @@ struct Song
 ## Topics
 
 ### Instance Properties
-- [var albumTitle: String?](song/albumtitle.md)
+- [var albumTitle: String?](./song/albumtitle.md)
   The title of the album the song appears on.
-- [var albums: MusicItemCollection<Album>?](song/albums.md)
+- [var albums: MusicItemCollection<Album>?](./song/albums.md)
   The song’s associated albums.
-- [var artistName: String](song/artistname.md)
+- [var artistName: String](./song/artistname.md)
   The artist’s name.
-- [var artistURL: URL?](song/artisturl.md)
+- [var artistURL: URL?](./song/artisturl.md)
   The artist’s URL.
-- [var artists: MusicItemCollection<Artist>?](song/artists.md)
+- [var artists: MusicItemCollection<Artist>?](./song/artists.md)
   The song’s associated artists.
-- [var artwork: Artwork?](song/artwork.md)
+- [var artwork: Artwork?](./song/artwork.md)
   The artwork for the song.
-- [var attribution: String?](song/attribution.md)
+- [var attribution: String?](./song/attribution.md)
   For classical music only, the name of the artist or composer to attribute to the song.
-- [var audioVariants: [AudioVariant]?](song/audiovariants.md)
+- [var audioVariants: [AudioVariant]?](./song/audiovariants.md)
   The variants that indicate the quality of audio available for the song.
-- [var composerName: String?](song/composername.md)
+- [var composerName: String?](./song/composername.md)
   The name of the song’s composer.
-- [var composers: MusicItemCollection<Artist>?](song/composers.md)
+- [var composers: MusicItemCollection<Artist>?](./song/composers.md)
   The song’s composers.
-- [var contentRating: ContentRating?](song/contentrating.md)
+- [var contentRating: ContentRating?](./song/contentrating.md)
   The rating of the content.
-- [var discNumber: Int?](song/discnumber.md)
+- [var discNumber: Int?](./song/discnumber.md)
   The number of the disc the song appears on.
-- [var duration: TimeInterval?](song/duration.md)
+- [var duration: TimeInterval?](./song/duration.md)
   The duration of the song.
-- [var editorialNotes: EditorialNotes?](song/editorialnotes.md)
+- [var editorialNotes: EditorialNotes?](./song/editorialnotes.md)
   The editorial notes for the song.
-- [var endTime: TimeInterval?](song/endtime.md)
+- [var endTime: TimeInterval?](./song/endtime.md)
   The custom end time for the song.
-- [var genreNames: [String]](song/genrenames.md)
+- [var genreNames: [String]](./song/genrenames.md)
   The names of the song’s associated genres.
-- [var genres: MusicItemCollection<Genre>?](song/genres.md)
+- [var genres: MusicItemCollection<Genre>?](./song/genres.md)
   The song’s associated genres.
-- [var hasLyrics: Bool](song/haslyrics.md)
+- [var hasLyrics: Bool](./song/haslyrics.md)
   A Boolean value that indicates whether the song has lyrics available in the catalog. If true, the song has lyrics available; otherwise, it doesn’t.
-- [let id: MusicItemID](song/id.md)
+- [let id: MusicItemID](./song/id.md)
   The unique identifier for the song.
-- [var isAppleDigitalMaster: Bool?](song/isappledigitalmaster.md)
+- [var isAppleDigitalMaster: Bool?](./song/isappledigitalmaster.md)
   A Boolean value that indicates whether the song is an Apple Digital Master.
-- [var isrc: String?](song/isrc.md)
+- [var isrc: String?](./song/isrc.md)
   The International Standard Recording Code (ISRC) for the song.
-- [var lastPlayedDate: Date?](song/lastplayeddate.md)
+- [var lastPlayedDate: Date?](./song/lastplayeddate.md)
   The date when the user last played the song on this device.
-- [var libraryAddedDate: Date?](song/libraryaddeddate.md)
+- [var libraryAddedDate: Date?](./song/libraryaddeddate.md)
   The date when the user added the song to the library.
-- [var movementCount: Int?](song/movementcount.md)
+- [var movementCount: Int?](./song/movementcount.md)
   For classical music only, the movement count of this song.
-- [var movementName: String?](song/movementname.md)
+- [var movementName: String?](./song/movementname.md)
   For classical music only, the movement name of this song.
-- [var movementNumber: Int?](song/movementnumber.md)
+- [var movementNumber: Int?](./song/movementnumber.md)
   For classical music only, the movement number of this song.
-- [var musicVideos: MusicItemCollection<MusicVideo>?](song/musicvideos.md)
+- [var musicVideos: MusicItemCollection<MusicVideo>?](./song/musicvideos.md)
   The song’s associated music videos.
-- [var playCount: Int?](song/playcount.md)
+- [var playCount: Int?](./song/playcount.md)
   The number of times the user played the song.
-- [var playParameters: PlayParameters?](song/playparameters.md)
+- [var playParameters: PlayParameters?](./song/playparameters.md)
   The parameters to use to play the song.
-- [var previewAssets: [PreviewAsset]?](song/previewassets.md)
+- [var previewAssets: [PreviewAsset]?](./song/previewassets.md)
   The preview assets for the song.
-- [var releaseDate: Date?](song/releasedate.md)
+- [var releaseDate: Date?](./song/releasedate.md)
   The release date (or expected prerelease date) for the song.
-- [var startTime: TimeInterval?](song/starttime.md)
+- [var startTime: TimeInterval?](./song/starttime.md)
   The custom start time for the song.
-- [var station: Station?](song/station.md)
+- [var station: Station?](./song/station.md)
   The song’s associated station.
-- [var title: String](song/title.md)
+- [var title: String](./song/title.md)
   The title of the song.
-- [var trackNumber: Int?](song/tracknumber.md)
+- [var trackNumber: Int?](./song/tracknumber.md)
   The song’s number in the album’s track list.
-- [var url: URL?](song/url.md)
+- [var url: URL?](./song/url.md)
   The URL for the song.
-- [var workName: String?](song/workname.md)
+- [var workName: String?](./song/workname.md)
   For classical music only, the name of the associated work.
 ### Default Implementations
-- [FilterableMusicItem Implementations](song/filterablemusicitem-implementations.md)
-- [MusicLibraryRequestable Implementations](song/musiclibraryrequestable-implementations.md)
+- [FilterableMusicItem Implementations](./song/filterablemusicitem-implementations.md)
+- [MusicLibraryRequestable Implementations](./song/musiclibraryrequestable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FilterableMusicItem](filterablemusicitem.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicCatalogChartRequestable](musiccatalogchartrequestable.md)
-- [MusicCatalogSearchable](musiccatalogsearchable.md)
-- [MusicItem](musicitem.md)
-- [MusicLibraryAddable](musiclibraryaddable.md)
-- [MusicLibraryRequestable](musiclibraryrequestable.md)
-- [MusicLibrarySearchable](musiclibrarysearchable.md)
-- [MusicPlaylistAddable](musicplaylistaddable.md)
-- [MusicPropertyContainer](musicpropertycontainer.md)
-- [MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
-- [PickableMusicItem](pickablemusicitem.md)
-- [PlayableMusicItem](playablemusicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [FilterableMusicItem](./filterablemusicitem.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MusicCatalogChartRequestable](./musiccatalogchartrequestable.md)
+- [MusicCatalogSearchable](./musiccatalogsearchable.md)
+- [MusicItem](./musicitem.md)
+- [MusicLibraryAddable](./musiclibraryaddable.md)
+- [MusicLibraryRequestable](./musiclibraryrequestable.md)
+- [MusicLibrarySearchable](./musiclibrarysearchable.md)
+- [MusicPlaylistAddable](./musicplaylistaddable.md)
+- [MusicPropertyContainer](./musicpropertycontainer.md)
+- [MusicRecentlyPlayedRequestable](./musicrecentlyplayedrequestable.md)
+- [PickableMusicItem](./pickablemusicitem.md)
+- [PlayableMusicItem](./playablemusicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Album](album.md)
+### Music Items
+- [struct Album](./album.md)
   A music item that represents an album.
-- [struct Artist](artist.md)
+- [struct Artist](./artist.md)
   A music item that represents an artist.
-- [struct Curator](curator.md)
+- [struct Curator](./curator.md)
   A music item that represents a curator.
-- [struct Genre](genre.md)
+- [struct Genre](./genre.md)
   A music item that represents a genre.
-- [struct MusicVideo](musicvideo.md)
+- [struct MusicVideo](./musicvideo.md)
   A music item that represents a music video.
-- [struct Playlist](playlist.md)
+- [struct Playlist](./playlist.md)
   A music item that represents a playlist.
-- [struct RadioShow](radioshow.md)
+- [struct RadioShow](./radioshow.md)
   A music item that represents a radio show.
-- [struct RecordLabel](recordlabel.md)
+- [struct RecordLabel](./recordlabel.md)
   A music item that represents a record label.
-- [struct Station](station.md)
+- [struct Station](./station.md)
   A music item that represents a station.
-- [enum Track](track.md)
+- [enum Track](./track.md)
   A music item that represents a track.
 
 

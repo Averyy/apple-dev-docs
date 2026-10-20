@@ -1,7 +1,8 @@
 # surroundingGranularity
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit of measurement for the document request’s scope.
 
@@ -17,9 +18,14 @@ The unit of measurement for the document request’s scope.
 var surroundingGranularity: UITextGranularity { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UITextGranularity surroundingGranularity;
+```
+
 ## See Also
 
-- [var granularityCount: Int](betextdocumentrequest/granularitycount.md)
+### Scoping the document request
+- [var granularityCount: Int](./granularitycount.md)
   A count of granularity units that defines the scope of the document request.
 
 

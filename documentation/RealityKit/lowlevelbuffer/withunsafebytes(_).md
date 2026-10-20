@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Read the buffer synchronously on the CPU. The buffer provided is only valid for the lifetime of the callback.
 

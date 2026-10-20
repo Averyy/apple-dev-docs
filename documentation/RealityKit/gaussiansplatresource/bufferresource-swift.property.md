@@ -1,7 +1,8 @@
 # bufferResource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer-based splat data the resource renders, if any.
 

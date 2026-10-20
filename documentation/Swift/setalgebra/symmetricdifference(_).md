@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a new set with the elements that are either in this set or in the given set, but not in both.
@@ -41,17 +42,24 @@ print(eitherNeighborsOrEmployees)
 
 - `other`: A set of the same type as the current set.
 
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func symmetricDifference(Self) -> Self](./symmetricdifference%28_%29-81pzi.md)
+  Returns a new option set with the elements contained in this set or in the given set, but not in both.
+
 ## See Also
 
-- [func union(Self) -> Self](setalgebra/union(_:).md)
+### Combining Sets
+- [func union(Self) -> Self](./union%28_%29.md)
   Returns a new set with the elements of both this and the given set.
-- [func formUnion(Self)](setalgebra/formunion(_:).md)
+- [func formUnion(Self)](./formunion%28_%29.md)
   Adds the elements of the given set to the set.
-- [func intersection(Self) -> Self](setalgebra/intersection(_:).md)
+- [func intersection(Self) -> Self](./intersection%28_%29.md)
   Returns a new set with the elements that are common to both this set and the given set.
-- [func formIntersection(Self)](setalgebra/formintersection(_:).md)
+- [func formIntersection(Self)](./formintersection%28_%29.md)
   Removes the elements of this set that aren’t also in the given set.
-- [func formSymmetricDifference(Self)](setalgebra/formsymmetricdifference(_:).md)
+- [func formSymmetricDifference(Self)](./formsymmetricdifference%28_%29.md)
   Removes the elements of the set that are also in the given set and adds the members of the given set that are not already in the set.
 
 

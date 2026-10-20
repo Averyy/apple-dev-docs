@@ -1,7 +1,8 @@
 # nightlife
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for nightlife.
 
@@ -20,9 +21,14 @@ The point of interest category for nightlife.
 static let nightlife: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryNightlife;
+```
+
 ## See Also
 
-- [static let movieTheater: MKPointOfInterestCategory](mkpointofinterestcategory/movietheater.md)
+### Entertainment
+- [static let movieTheater: MKPointOfInterestCategory](./movietheater.md)
   The point of interest category for movie theaters.
 
 

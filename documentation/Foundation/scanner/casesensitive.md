@@ -1,7 +1,8 @@
 # caseSensitive
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flag that indicates whether the receiver distinguishes case in the characters it scans.
 
@@ -20,17 +21,22 @@ Flag that indicates whether the receiver distinguishes case in the characters it
 var caseSensitive: Bool { get set }
 ```
 
+```objc
+@property BOOL caseSensitive;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver distinguishes case in the characters it scans, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false). Note that case sensitivity doesn’t apply to the characters to be skipped.
+[`true`](../../Swift/true.md) if the receiver distinguishes case in the characters it scans, otherwise [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md). Note that case sensitivity doesn’t apply to the characters to be skipped.
 
 ## See Also
 
-- [var scanLocation: Int](scanner/scanlocation.md)
+### Configuring a Scanner
+- [var scanLocation: Int](./scanlocation.md)
   The character position at which the receiver will begin its next scanning operation.
-- [var charactersToBeSkipped: CharacterSet?](scanner/characterstobeskipped.md)
+- [var charactersToBeSkipped: CharacterSet?](./characterstobeskipped.md)
   Character set containing the characters the scanner ignores when looking for a scannable element.
-- [var locale: Any?](scanner/locale.md)
+- [var locale: Any?](./locale.md)
   The locale to use when scanning.
 
 

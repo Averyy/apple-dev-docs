@@ -1,7 +1,8 @@
 # GSSyncedDirectoryVersion
 
 **Framework**: GameSave  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -16,44 +17,49 @@
 class GSSyncedDirectoryVersion
 ```
 
-##### Accessing Saved Game State
+```objc
+@interface GSSyncedDirectoryVersion : NSObject
+```
 
-- [`url`](gssynceddirectoryversion/url.md)
-- [`isLocal`](gssynceddirectoryversion/islocal.md)
+##### Accessing saved game state
 
-##### Comparing Versions
+- [`url`](./gssynceddirectoryversion/url.md)
+- [`isLocal`](./gssynceddirectoryversion/islocal.md)
 
-- [`localizedNameOfSavingComputer`](gssynceddirectoryversion/localizednameofsavingcomputer.md)
-- [`modifiedDate`](gssynceddirectoryversion/modifieddate.md)
+##### Comparing versions
+
+- [`localizedNameOfSavingComputer`](./gssynceddirectoryversion/localizednameofsavingcomputer.md)
+- [`modifiedDate`](./gssynceddirectoryversion/modifieddate.md)
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](gssynceddirectoryversion/description.md)
-- [var isLocal: Bool](gssynceddirectoryversion/islocal.md)
+- [var description: String](./gssynceddirectoryversion/description.md)
+- [var isLocal: Bool](./gssynceddirectoryversion/islocal.md)
   `YES` if the directory version is local; otherwise `NO`.
-- [var localizedNameOfSavingComputer: String](gssynceddirectoryversion/localizednameofsavingcomputer.md)
+- [var localizedNameOfSavingComputer: String](./gssynceddirectoryversion/localizednameofsavingcomputer.md)
   The localized name of the device that saved this version.
-- [var modifiedDate: Date](gssynceddirectoryversion/modifieddate.md)
+- [var modifiedDate: Date](./gssynceddirectoryversion/modifieddate.md)
   The date that this version was last modified.
-- [var url: URL](gssynceddirectoryversion/url.md)
+- [var url: URL](./gssynceddirectoryversion/url.md)
   The URL of a directory where you read and write game-save data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func resolveConflicts(with: GSSyncedDirectoryVersion)](gssynceddirectory/resolveconflicts(with:).md)
+### Resolving conflicts
+- [func resolveConflicts(with: GSSyncedDirectoryVersion)](./gssynceddirectory/resolveconflicts%28with%29.md)
   Indicates that you resolved a conflict.
 
 

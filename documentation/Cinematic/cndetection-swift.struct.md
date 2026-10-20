@@ -1,14 +1,15 @@
 # CNDetection
 
 **Framework**: Cinematic  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a detected subject, face, torso or pet at a particular time.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -27,46 +28,47 @@ Some types of detections also include a unique group number that associates rela
 ## Topics
 
 ### Initializers
-- [init(time: CMTime, detectionType: CNDetectionType, normalizedRect: CGRect, focusDisparity: Float)](cndetection-swift.struct/init(time:detectiontype:normalizedrect:focusdisparity:).md)
+- [init(time: CMTime, detectionType: CNDetectionType, normalizedRect: CGRect, focusDisparity: Float)](./cndetection-swift.struct/init%28time,detectiontype,normalizedrect,focusdisparity%29.md)
   Creates a Cinematic detection of a subject.
 ### Instance Properties
-- [var detectionGroupID: CNDetectionGroupID?](cndetection-swift.struct/detectiongroupid.md)
+- [var detectionGroupID: CNDetectionGroupID?](./cndetection-swift.struct/detectiongroupid.md)
   A unique number representing the detection to focus on if this is a group decision.
-- [var detectionID: CNDetectionID?](cndetection-swift.struct/detectionid.md)
+- [var detectionID: CNDetectionID?](./cndetection-swift.struct/detectionid.md)
   An unique identifier assigned by the Cinematic script to all detections of the same subject and detection type across time.
-- [var detectionType: CNDetectionType](cndetection-swift.struct/detectiontype.md)
+- [var detectionType: CNDetectionType](./cndetection-swift.struct/detectiontype.md)
   The type of object detected, such as the face, torso, cat, dog, and so on.
-- [var focusDisparity: Float](cndetection-swift.struct/focusdisparity.md)
+- [var focusDisparity: Float](./cndetection-swift.struct/focusdisparity.md)
   The disparity to use in order to focus on the object.
-- [var normalizedRect: CGRect](cndetection-swift.struct/normalizedrect.md)
+- [var normalizedRect: CGRect](./cndetection-swift.struct/normalizedrect.md)
   The rectangle within the image where the object occurs, normalized such that (0.0, 0.0) is the top-left and (1.0, 1.0) is the bottom-right.
-- [var time: CMTime](cndetection-swift.struct/time.md)
+- [var time: CMTime](./cndetection-swift.struct/time.md)
   The first presentation time which the subject should be in focus.
 ### Type Methods
-- [static func accessibilityLabel(for: CNDetectionType) -> String](cndetection-swift.struct/accessibilitylabel(for:).md)
+- [static func accessibilityLabel(for: CNDetectionType) -> String](./cndetection-swift.struct/accessibilitylabel%28for%29.md)
   A localized accessibility label converting a specific detection type into a broad category such as a person, pet, and so on.
-- [static func disparity(in: CGRect, sourceDisparity: CVPixelBuffer, detectionType: CNDetectionType, priorDisparity: Float?) -> Float](cndetection-swift.struct/disparity(in:sourcedisparity:detectiontype:priordisparity:).md)
+- [static func disparity(in: CGRect, sourceDisparity: CVPixelBuffer, detectionType: CNDetectionType, priorDisparity: Float?) -> Float](./cndetection-swift.struct/disparity%28in,sourcedisparity,detectiontype,priordisparity%29.md)
   Determines the disparity to use to focus on the object in the rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Editing Spatial Audio with an audio mix](editing-spatial-audio-with-an-audio-mix.md)
+### Editing
+- [Editing Spatial Audio with an audio mix](./editing-spatial-audio-with-an-audio-mix.md)
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
-- [struct CNDecision](cndecision-swift.struct.md)
+- [struct CNDecision](./cndecision-swift.struct.md)
   An object that represents a decision to focus on a particular detection, or group of detections, at a particular time.
-- [class CNDetectionTrack](cndetectiontrack-2bxtd.md)
+- [class CNDetectionTrack](./cndetectiontrack-2bxtd.md)
   An object representing a series of detections of the same subject over time.
-- [class CNFixedDetectionTrack](cnfixeddetectiontrack-93rrw.md)
+- [class CNFixedDetectionTrack](./cnfixeddetectiontrack-93rrw.md)
   An object representing the fixed detection track.
-- [class CNCustomDetectionTrack](cncustomdetectiontrack-9a2zo.md)
+- [class CNCustomDetectionTrack](./cncustomdetectiontrack-9a2zo.md)
   An object representing a discrete detection track composed of individual detections.
-- [enum CNDetectionType](cndetectiontype.md)
+- [enum CNDetectionType](./cndetectiontype.md)
   The type of object detected, such as face, torso, cat, dog and so on.
 
 

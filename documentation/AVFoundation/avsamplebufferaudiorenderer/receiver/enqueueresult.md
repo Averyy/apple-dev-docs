@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.EnqueueResult
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value indicating the result of a call to `enqueue(_:)` or `enqueueImmediately(_:)`.
 
@@ -23,26 +24,27 @@ enum EnqueueResult
 ## Topics
 
 ### Enqueue results
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.enqueued](avsamplebufferaudiorenderer/receiver/enqueueresult/enqueued.md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.enqueued](./enqueueresult/enqueued.md)
   The sample buffer was enqueued successfully.
-- [case enqueuedWithSuggestedFlush([AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason])](avsamplebufferaudiorenderer/receiver/enqueueresult/enqueuedwithsuggestedflush(_:).md)
+- [case enqueuedWithSuggestedFlush([AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason])](./enqueueresult/enqueuedwithsuggestedflush%28_%29.md)
   The sample buffer was enqueued successfully, but the receiver suggests that the client flush and re-enqueue.
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToFlush](avsamplebufferaudiorenderer/receiver/enqueueresult/cancelledduetoflush.md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToFlush](./enqueueresult/cancelledduetoflush.md)
   The sample buffer was not enqueued because the Receiver was flushed while the enqueue was suspended.
-- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](avsamplebufferaudiorenderer/receiver/enqueueresult/cancelledduetoerror(_:).md)
+- [AVSampleBufferAudioRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](./enqueueresult/cancelledduetoerror%28_%29.md)
   The sample buffer was not enqueued because the Receiver failed.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](avsamplebufferaudiorenderer/receiver/enqueue(_:).md)
+### Enqueuing sample buffers
+- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](./enqueue%28_%29.md)
   Suspends until the receiver is ready for more media data, then enqueues a sample buffer in order to render its contents.
-- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](avsamplebufferaudiorenderer/receiver/enqueueimmediately(_:).md)
+- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferAudioRenderer.Receiver.EnqueueResult](./enqueueimmediately%28_%29.md)
   Enqueues a sample buffer in order to render its contents, without waiting for the renderer to become ready for more media data.
 
 

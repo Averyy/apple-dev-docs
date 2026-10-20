@@ -1,7 +1,8 @@
 # BrowserError
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error type that indicates the browser doesn’t support the Look Around experience.
 
@@ -10,7 +11,7 @@ An error type that indicates the browser doesn’t support the Look Around exper
 
 ## Declaration
 
-```swift
+```
 readonly BrowserError: "browser-error";
 ```
 

@@ -1,7 +1,8 @@
 # hasHeaderRow
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the CSV file has a header row.
 

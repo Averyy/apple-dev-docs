@@ -1,7 +1,8 @@
 # VZVirtualMachineConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
 
@@ -14,100 +15,105 @@ The environment attributes and list of devices to use during the configuration o
 class VZVirtualMachineConfiguration
 ```
 
+```objc
+@interface VZVirtualMachineConfiguration : NSObject
+```
+
 ## Mentions
 
-- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
 #### Overview
 
-Use a [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object to configure the environment for a macOS or Linux VM. This configuration object contains information about the VM environment, including the devices that the VM exposes to the guest operating system. For example, use the configuration object to specify the network interfaces and storage devices that the operating system may access. For more information on the devices that macOS and Linux guests can support, see the Devices section on the [`Virtualization`](Virtualization.md) framework page.
+Use a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object to configure the environment for a macOS or Linux VM. This configuration object contains information about the VM environment, including the devices that the VM exposes to the guest operating system. For example, use the configuration object to specify the network interfaces and storage devices that the operating system may access. For more information on the devices that macOS and Linux guests can support, see the Devices section on the [Virtualization](./Virtualization.md) framework page.
 
-You create and configure [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) objects directly. After validating the configuration object, use it to initialize the [`VZVirtualMachine`](vzvirtualmachine.md) object that manages the virtual environment. The smallest valid configuration includes a value for the [`bootLoader`](vzvirtualmachineconfiguration/bootloader.md) property; you can also include more devices in the configuration depending on the needs of your app, such as graphics devices, shared directories, and so on. When you finish configuring the object, call the [`validate()`](vzvirtualmachineconfiguration/validate().md) method to determine whether a VM can successfully support your configuration. A configuration object is invalid if your app doesn’t have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.virtualization) entitlement.
+You create and configure [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) objects directly. After validating the configuration object, use it to initialize the [`VZVirtualMachine`](./vzvirtualmachine.md) object that manages the virtual environment. The smallest valid configuration includes a value for the [`bootLoader`](./vzvirtualmachineconfiguration/bootloader.md) property; you can also include more devices in the configuration depending on the needs of your app, such as graphics devices, shared directories, and so on. When you finish configuring the object, call the [`validate()`](./vzvirtualmachineconfiguration/validate%28%29.md) method to determine whether a VM can successfully support your configuration. A configuration object is invalid if your app doesn’t have the [`com.apple.security.virtualization`](../BundleResources/entitlements/com.apple.security.virtualization.md) entitlement.
 
-For more information on using `VZVirtualMachineConfiguration`, see [`Installing macOS on a Virtual Machine`](installing-macos-on-a-virtual-machine.md) and [`Creating and Running a Linux Virtual Machine`](creating-and-running-a-linux-virtual-machine.md).
+For more information on using `VZVirtualMachineConfiguration`, see [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md) and [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md).
 
 ## Topics
 
 ### Configuring the guest system
-- [var bootLoader: VZBootLoader?](vzvirtualmachineconfiguration/bootloader.md)
+- [var bootLoader: VZBootLoader?](./vzvirtualmachineconfiguration/bootloader.md)
   The guest system to boot when the VM starts.
 ### Setting the number of CPUs
-- [var cpuCount: Int](vzvirtualmachineconfiguration/cpucount.md)
+- [var cpuCount: Int](./vzvirtualmachineconfiguration/cpucount.md)
   The number of CPUs you make available to the guest operating system.
-- [class var minimumAllowedCPUCount: Int](vzvirtualmachineconfiguration/minimumallowedcpucount.md)
+- [class var minimumAllowedCPUCount: Int](./vzvirtualmachineconfiguration/minimumallowedcpucount.md)
   The minimum number of CPUs you may configure for the VM.
-- [class var maximumAllowedCPUCount: Int](vzvirtualmachineconfiguration/maximumallowedcpucount.md)
+- [class var maximumAllowedCPUCount: Int](./vzvirtualmachineconfiguration/maximumallowedcpucount.md)
   The maximum number of CPUs you may configure for the VM.
 ### Sizing the memory partition
-- [var memorySize: UInt64](vzvirtualmachineconfiguration/memorysize.md)
+- [var memorySize: UInt64](./vzvirtualmachineconfiguration/memorysize.md)
   The amount of physical memory the guest operating system recognizes.
-- [class var minimumAllowedMemorySize: UInt64](vzvirtualmachineconfiguration/minimumallowedmemorysize.md)
+- [class var minimumAllowedMemorySize: UInt64](./vzvirtualmachineconfiguration/minimumallowedmemorysize.md)
   The minimum amount of memory that you may configure for the VM.
-- [class var maximumAllowedMemorySize: UInt64](vzvirtualmachineconfiguration/maximumallowedmemorysize.md)
+- [class var maximumAllowedMemorySize: UInt64](./vzvirtualmachineconfiguration/maximumallowedmemorysize.md)
   The maximum amount of memory that you may configure for the VM.
-- [var memoryBalloonDevices: [VZMemoryBalloonDeviceConfiguration]](vzvirtualmachineconfiguration/memoryballoondevices.md)
+- [var memoryBalloonDevices: [VZMemoryBalloonDeviceConfiguration]](./vzvirtualmachineconfiguration/memoryballoondevices.md)
   An array that you configure with a memory balloon device, used to update the memory in the VM.
 ### Adding devices to the VM
-- [var audioDevices: [VZAudioDeviceConfiguration]](vzvirtualmachineconfiguration/audiodevices.md)
+- [var audioDevices: [VZAudioDeviceConfiguration]](./vzvirtualmachineconfiguration/audiodevices.md)
   The list of audio devices.
-- [var consoleDevices: [VZConsoleDeviceConfiguration]](vzvirtualmachineconfiguration/consoledevices.md)
+- [var consoleDevices: [VZConsoleDeviceConfiguration]](./vzvirtualmachineconfiguration/consoledevices.md)
   The array of console devices that you expose to the guest operating system.
-- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](./vzvirtualmachineconfiguration/customvirtiodevices.md)
   The array of custom virtio devices that you expose to the guest operating system.
-- [var directorySharingDevices: [VZDirectorySharingDeviceConfiguration]](vzvirtualmachineconfiguration/directorysharingdevices.md)
+- [var directorySharingDevices: [VZDirectorySharingDeviceConfiguration]](./vzvirtualmachineconfiguration/directorysharingdevices.md)
   The list of directory sharing devices.
-- [var entropyDevices: [VZEntropyDeviceConfiguration]](vzvirtualmachineconfiguration/entropydevices.md)
+- [var entropyDevices: [VZEntropyDeviceConfiguration]](./vzvirtualmachineconfiguration/entropydevices.md)
   The array of randomization devices that you expose to the guest operating system.
-- [var graphicsDevices: [VZGraphicsDeviceConfiguration]](vzvirtualmachineconfiguration/graphicsdevices.md)
+- [var graphicsDevices: [VZGraphicsDeviceConfiguration]](./vzvirtualmachineconfiguration/graphicsdevices.md)
   The list of graphics devices.
-- [var keyboards: [VZKeyboardConfiguration]](vzvirtualmachineconfiguration/keyboards.md)
+- [var keyboards: [VZKeyboardConfiguration]](./vzvirtualmachineconfiguration/keyboards.md)
   The list of keyboards.
-- [var networkDevices: [VZNetworkDeviceConfiguration]](vzvirtualmachineconfiguration/networkdevices.md)
+- [var networkDevices: [VZNetworkDeviceConfiguration]](./vzvirtualmachineconfiguration/networkdevices.md)
   The array of network devices that you expose to the guest operating system.
-- [var platform: VZPlatformConfiguration](vzvirtualmachineconfiguration/platform.md)
+- [var platform: VZPlatformConfiguration](./vzvirtualmachineconfiguration/platform.md)
   The hardware platform to use.
-- [var pointingDevices: [VZPointingDeviceConfiguration]](vzvirtualmachineconfiguration/pointingdevices.md)
+- [var pointingDevices: [VZPointingDeviceConfiguration]](./vzvirtualmachineconfiguration/pointingdevices.md)
   The list of pointing devices.
-- [var serialPorts: [VZSerialPortConfiguration]](vzvirtualmachineconfiguration/serialports.md)
+- [var serialPorts: [VZSerialPortConfiguration]](./vzvirtualmachineconfiguration/serialports.md)
   The array of serial ports that you expose to the guest operating system.
-- [var socketDevices: [VZSocketDeviceConfiguration]](vzvirtualmachineconfiguration/socketdevices.md)
+- [var socketDevices: [VZSocketDeviceConfiguration]](./vzvirtualmachineconfiguration/socketdevices.md)
   The socket device that you use to implement port-based communication with the guest operating system.
-- [var storageDevices: [VZStorageDeviceConfiguration]](vzvirtualmachineconfiguration/storagedevices.md)
+- [var storageDevices: [VZStorageDeviceConfiguration]](./vzvirtualmachineconfiguration/storagedevices.md)
   The array of storage devices that you expose to the guest operating system.
-- [var usbControllers: [VZUSBControllerConfiguration]](vzvirtualmachineconfiguration/usbcontrollers.md)
+- [var usbControllers: [VZUSBControllerConfiguration]](./vzvirtualmachineconfiguration/usbcontrollers.md)
   The list of configured USB controllers for the VM.
-- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](./vzvirtualmachineconfiguration/customvirtiodevices.md)
   The array of custom virtio devices that you expose to the guest operating system.
 ### Naming the VM
-- [var label: String?](vzvirtualmachineconfiguration/label.md)
+- [var label: String?](./vzvirtualmachineconfiguration/label.md)
   An optional label for the virtual machine.
 ### Validating the configuration
-- [func validate() throws](vzvirtualmachineconfiguration/validate.md)
+- [func validate() throws](./vzvirtualmachineconfiguration/validate%28%29.md)
   Validates the current configuration settings and reports any issues that might prevent the successful initialization of the VM.
-- [func validateSaveRestoreSupport() throws](vzvirtualmachineconfiguration/validatesaverestoresupport.md)
+- [func validateSaveRestoreSupport() throws](./vzvirtualmachineconfiguration/validatesaverestoresupport%28%29.md)
   Determines whether the framework can save or restore the VM’s current configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtualMachineStartOptions](vzvirtualmachinestartoptions.md)
+### Configurations
+- [class VZVirtualMachineStartOptions](./vzvirtualmachinestartoptions.md)
   The abstract class for VM start options.
-- [class VZGenericPlatformConfiguration](vzgenericplatformconfiguration.md)
+- [class VZGenericPlatformConfiguration](./vzgenericplatformconfiguration.md)
   The platform configuration for a generic Intel or ARM virtual machine.
-- [class VZPlatformConfiguration](vzplatformconfiguration.md)
+- [class VZPlatformConfiguration](./vzplatformconfiguration.md)
   The base class for a platform configuration.
 
 

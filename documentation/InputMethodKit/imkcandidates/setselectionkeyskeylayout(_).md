@@ -1,7 +1,8 @@
 # setSelectionKeysKeylayout(_:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the key layout that is used to map virtual key codes to characters.
 
@@ -14,17 +15,22 @@ Sets the key layout that is used to map virtual key codes to characters.
 func setSelectionKeysKeylayout(_ layout: TISInputSource!)
 ```
 
+```objc
+- (void) setSelectionKeysKeylayout:(TISInputSourceRef) layout;
+```
+
 ## Parameters
 
 - `layout`: The key layout to use.
 
 ## See Also
 
-- [func setSelectionKeys([Any]!)](imkcandidates/setselectionkeys(_:).md)
+### Managing Selection Keys
+- [func setSelectionKeys([Any]!)](./setselectionkeys%28_%29.md)
   Sets the selection keys for the candidates.
-- [func selectionKeys() -> [Any]!](imkcandidates/selectionkeys.md)
+- [func selectionKeys() -> [Any]!](./selectionkeys%28%29.md)
   Returns an array of `NSNumber` objects where each `NSNumber` object represents a virtual key code.
-- [func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!](imkcandidates/selectionkeyskeylayout.md)
+- [func selectionKeysKeylayout() -> Unmanaged<TISInputSource>!](./selectionkeyskeylayout%28%29.md)
   Returns the key layout that maps virtual key codes to selection keys.
 
 

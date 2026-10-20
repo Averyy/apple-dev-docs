@@ -1,14 +1,15 @@
 # task_basic_info_64_2_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct task_basic_info_64_2 {
     ...
 } task_basic_info_64_2_data_t;
@@ -17,12 +18,12 @@ typedef struct task_basic_info_64_2 {
 ## Topics
 
 ### Instance Properties
-- [policy](task_basic_info_64_2_data_t/3609686-policy.md)
-- [resident_size](task_basic_info_64_2_data_t/3609687-resident_size.md)
-- [suspend_count](task_basic_info_64_2_data_t/3609688-suspend_count.md)
-- [system_time](task_basic_info_64_2_data_t/3609689-system_time.md)
-- [user_time](task_basic_info_64_2_data_t/3609690-user_time.md)
-- [virtual_size](task_basic_info_64_2_data_t/3609691-virtual_size.md)
+- [policy](./task_basic_info_64_2_data_t/api-3609686-policy.md)
+- [resident_size](./task_basic_info_64_2_data_t/api-3609687-resident_size.md)
+- [suspend_count](./task_basic_info_64_2_data_t/api-3609688-suspend_count.md)
+- [system_time](./task_basic_info_64_2_data_t/api-3609689-system_time.md)
+- [user_time](./task_basic_info_64_2_data_t/api-3609690-user_time.md)
+- [virtual_size](./task_basic_info_64_2_data_t/api-3609691-virtual_size.md)
 
 
 ---

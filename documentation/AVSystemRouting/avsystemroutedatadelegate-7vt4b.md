@@ -1,7 +1,8 @@
 # AVSystemRouteDataDelegate
 
 **Framework**: AVSystemRouting  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for handling data from a remote application.
 
@@ -18,20 +19,21 @@ protocol AVSystemRouteDataDelegate : AnyObject
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
 ## Topics
 
 ### Instance Methods
-- [func receive(Data) async throws](avsystemroutedatadelegate-7vt4b/receive(_:).md)
+- [func receive(Data) async throws](./avsystemroutedatadelegate-7vt4b/receive%28_%29.md)
   Receives data sent from a connected remote applicaiton.
 
 ## See Also
 
-- [class AVSystemRouteMediaSession](avsystemroutemediasession-98ioq.md)
+### Playback and communication
+- [class AVSystemRouteMediaSession](./avsystemroutemediasession-98ioq.md)
   An object that provides playback controls and a data channel for a session running on a remote device.
-- [AVSystemRoute.DataChannel](avsystemroute-5s2um/datachannel.md)
+- [AVSystemRoute.DataChannel](./avsystemroute-5s2um/datachannel.md)
   An object that manages bidirectional data communication with a remote application.
 
 

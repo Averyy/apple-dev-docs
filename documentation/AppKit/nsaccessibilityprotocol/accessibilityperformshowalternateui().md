@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Displays the accessibility element’s alternative UI.
@@ -15,9 +16,13 @@ Displays the accessibility element’s alternative UI.
 func accessibilityPerformShowAlternateUI() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformShowAlternateUI;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the action was successfully triggered; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
+[`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 
 #### Discussion
 
@@ -25,11 +30,12 @@ Use this method to trigger changes to the UI due to a mouse-hover or similar eve
 
 ## See Also
 
-- [func accessibilityPerformShowDefaultUI() -> Bool](nsaccessibilityprotocol/accessibilityperformshowdefaultui.md)
+### Showing user interface elements
+- [func accessibilityPerformShowDefaultUI() -> Bool](./accessibilityperformshowdefaultui%28%29.md)
   Returns to the accessibility element’s original UI.
-- [func accessibilityPerformShowMenu() -> Bool](nsaccessibilityprotocol/accessibilityperformshowmenu.md)
+- [func accessibilityPerformShowMenu() -> Bool](./accessibilityperformshowmenu%28%29.md)
   Displays the menu accessibility element.
-- [func accessibilityPerformRaise() -> Bool](nsaccessibilityprotocol/accessibilityperformraise.md)
+- [func accessibilityPerformRaise() -> Bool](./accessibilityperformraise%28%29.md)
   Brings the window to the front.
 
 

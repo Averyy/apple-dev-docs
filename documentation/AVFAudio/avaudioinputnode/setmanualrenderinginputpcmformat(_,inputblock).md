@@ -1,7 +1,8 @@
 # setManualRenderingInputPCMFormat(_:inputBlock:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Supplies the data through the input node to the engine while operating in the manual rendering mode.
 
@@ -20,6 +21,10 @@ Supplies the data through the input node to the engine while operating in the ma
 func setManualRenderingInputPCMFormat(_ format: AVAudioFormat, inputBlock block: @escaping AVAudioIONodeInputBlock) -> Bool
 ```
 
+```objc
+- (BOOL) setManualRenderingInputPCMFormat:(AVAudioFormat *) format inputBlock:(AVAudioIONodeInputBlock) block;
+```
+
 #### Discussion
 
 The block must be non-`nil` when using an input node while the engine is operating in manual rendering mode. If you switch the engine to render to and from an audio device, it invalidates any previous block.
@@ -27,11 +32,12 @@ The block must be non-`nil` when using an input node while the engine is operati
 ## Parameters
 
 - `format`: The format of the PCM audio data the block supplies to the engine.
-- `block`: The block the engine calls on the input node to get the audio to send to the output when operating in the manual rendering mode. For more information, see [`AVAudioIONodeInputBlock`](avaudioionodeinputblock.md).
+- `block`: The block the engine calls on the input node to get the audio to send to the output when operating in the manual rendering mode. For more information, see [`AVAudioIONodeInputBlock`](../avaudioionodeinputblock.md).
 
 ## See Also
 
-- [typealias AVAudioIONodeInputBlock](avaudioionodeinputblock.md)
+### Supplying manual rendering input
+- [typealias AVAudioIONodeInputBlock](../avaudioionodeinputblock.md)
   The type that represents a block to render operation calls to get input data when in manual rendering mode.
 
 

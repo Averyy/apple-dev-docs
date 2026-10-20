@@ -1,18 +1,21 @@
 # BNNSFilterCreateLayerEmbedding(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new embedding layer.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+- tvOS 15.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 8.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Returns a new embedding layer.
 func BNNSFilterCreateLayerEmbedding(_ layer_params: UnsafePointer<BNNSLayerParametersEmbedding>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?
 ```
 
+```c
+BNNSFilterBNNSFilterCreateLayerEmbedding(const BNNSLayerParametersEmbedding *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use this function in conjunction with [`BNNSLayerParametersEmbedding`](bnnslayerparametersembedding.md) to create an embedding layer that accesses dictionary items based on the integer indices that the input tensor defines.
+Use this function in conjunction with [`BNNSLayerParametersEmbedding`](./bnnslayerparametersembedding.md) to create an embedding layer that accesses dictionary items based on the integer indices that the input tensor defines.
 
 For example, the following code shows how to access three dictionary items at indices `1`, `5`, and `2`. The dictionary contains seven items that are five-element vectors. Therefore, the indices descriptor has the shape `(3)`, the dictionary descriptor has the shape `(5, 7)`, and the output descriptor has the shape `(5, 3)`.
 
@@ -190,9 +197,10 @@ static func embeddingLayerClipByNorm() {
 
 ## See Also
 
-- [class EmbeddingLayer](bnns/embeddinglayer.md)
+### Embedding layers
+- [class EmbeddingLayer](./bnns/embeddinglayer.md)
   A layer object that wraps an embedding filter and manages its deinitialization.
-- [struct BNNSLayerParametersEmbedding](bnnslayerparametersembedding.md)
+- [struct BNNSLayerParametersEmbedding](./bnnslayerparametersembedding.md)
   A structure that contains the parameters of an embedding layer.
 
 

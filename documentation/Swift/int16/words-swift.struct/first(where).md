@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first element of the sequence that satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let firstNegative = numbers.first(where: { $0 < 0 }) {
 // Prints "The first negative number is -2."
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

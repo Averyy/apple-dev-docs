@@ -1,12 +1,13 @@
 # vertical
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The element is oriented vertically.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The element is oriented vertically.
 static let vertical: NSAccessibility.OrientationValue
 ```
 
+```c
+extern NSAccessibilityOrientationValue const NSAccessibilityVerticalOrientationValue;
+```
+
 ## See Also
 
-- [static let horizontal: NSAccessibility.OrientationValue](nsaccessibility-swift.struct/orientationvalue/horizontal.md)
+### Orientations
+- [static let horizontal: NSAccessibility.OrientationValue](./horizontal.md)
   The element is oriented horizontally.
-- [static let unknown: NSAccessibility.OrientationValue](nsaccessibility-swift.struct/orientationvalue/unknown.md)
+- [static let unknown: NSAccessibility.OrientationValue](./unknown.md)
   The element has unknown orientation.
 
 

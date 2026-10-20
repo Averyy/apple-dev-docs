@@ -1,7 +1,8 @@
 # boundingBox
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extent of the voxel array’s volume in world coordinate space.
 
@@ -19,17 +20,22 @@ The extent of the voxel array’s volume in world coordinate space.
 var boundingBox: MDLAxisAlignedBoundingBox { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MDLAxisAlignedBoundingBox boundingBox;
+```
+
 #### Discussion
 
-The coordinate space for the bounding box is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](mdlvoxelarray/init(data:boundingbox:voxelextent:).md) initializer, the bounding box specified at initialization.
+The coordinate space for the bounding box is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 
 ## See Also
 
-- [func index(ofSpatialLocation: vector_float3) -> MDLVoxelIndex](mdlvoxelarray/index(ofspatiallocation:).md)
+### Relating Voxels to Scene Space
+- [func index(ofSpatialLocation: vector_float3) -> MDLVoxelIndex](./index%28ofspatiallocation%29.md)
   Returns voxel information corresponding to the specified point in the world coordinate space of the asset from which the voxel array was created.
-- [func spatialLocation(ofIndex: MDLVoxelIndex) -> vector_float3](mdlvoxelarray/spatiallocation(ofindex:).md)
+- [func spatialLocation(ofIndex: MDLVoxelIndex) -> vector_float3](./spatiallocation%28ofindex%29.md)
   Returns the location of the specified voxel in world coordinate space.
-- [func voxelBoundingBox(atIndex: MDLVoxelIndex) -> MDLAxisAlignedBoundingBox](mdlvoxelarray/voxelboundingbox(atindex:).md)
+- [func voxelBoundingBox(atIndex: MDLVoxelIndex) -> MDLAxisAlignedBoundingBox](./voxelboundingbox%28atindex%29.md)
   Returns the extent of the specified voxel’s volume in the world coordinate space of the asset from which the voxel array was created.
 
 

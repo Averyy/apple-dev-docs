@@ -1,7 +1,8 @@
 # isViable
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device can peform RCS operations at this time.
 

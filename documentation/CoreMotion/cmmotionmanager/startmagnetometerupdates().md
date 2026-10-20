@@ -1,7 +1,8 @@
 # startMagnetometerUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts magnetometer updates without a block handler.
 
@@ -17,21 +18,26 @@ Starts magnetometer updates without a block handler.
 func startMagnetometerUpdates()
 ```
 
+```objc
+- (void) startMagnetometerUpdates;
+```
+
 #### Discussion
 
-You can get the latest magnetometer data through the [`magnetometerData`](cmmotionmanager/magnetometerdata.md) property. You must call [`stopMagnetometerUpdates()`](cmmotionmanager/stopmagnetometerupdates().md) when you no longer want your app to process magnetometer updates.
+You can get the latest magnetometer data through the [`magnetometerData`](./magnetometerdata.md) property. You must call [`stopMagnetometerUpdates()`](./stopmagnetometerupdates%28%29.md) when you no longer want your app to process magnetometer updates.
 
 ## See Also
 
-- [var magnetometerUpdateInterval: TimeInterval](cmmotionmanager/magnetometerupdateinterval.md)
+### Managing Magnetometer Updates
+- [var magnetometerUpdateInterval: TimeInterval](./magnetometerupdateinterval.md)
   The interval, in seconds, at which the system delivers magnetometer data to the block handler.
-- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md)
+- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](./startmagnetometerupdates%28to,withhandler%29.md)
   Starts magnetometer updates on an operation queue and with a specified handler.
-- [func stopMagnetometerUpdates()](cmmotionmanager/stopmagnetometerupdates.md)
+- [func stopMagnetometerUpdates()](./stopmagnetometerupdates%28%29.md)
   Stops magnetometer updates.
-- [var magnetometerData: CMMagnetometerData?](cmmotionmanager/magnetometerdata.md)
+- [var magnetometerData: CMMagnetometerData?](./magnetometerdata.md)
   The latest sample of magnetometer data.
-- [typealias CMMagnetometerHandler](cmmagnetometerhandler.md)
+- [typealias CMMagnetometerHandler](../cmmagnetometerhandler.md)
   The type of block callback for handling magnetometer data.
 
 

@@ -1,7 +1,8 @@
 # magnetometerData
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest sample of magnetometer data.
 
@@ -17,21 +18,26 @@ The latest sample of magnetometer data.
 var magnetometerData: CMMagnetometerData? { get }
 ```
 
+```objc
+@property (readonly, nullable) CMMagnetometerData * magnetometerData;
+```
+
 #### Discussion
 
-If no magnetometer data is available, the value of this property is `nil`. An app that is receiving magnetometer data after calling [`startMagnetometerUpdates()`](cmmotionmanager/startmagnetometerupdates().md) periodically checks the value of this property and processes the magnetometer data.
+If no magnetometer data is available, the value of this property is `nil`. An app that is receiving magnetometer data after calling [`startMagnetometerUpdates()`](./startmagnetometerupdates%28%29.md) periodically checks the value of this property and processes the magnetometer data.
 
 ## See Also
 
-- [var magnetometerUpdateInterval: TimeInterval](cmmotionmanager/magnetometerupdateinterval.md)
+### Managing Magnetometer Updates
+- [var magnetometerUpdateInterval: TimeInterval](./magnetometerupdateinterval.md)
   The interval, in seconds, at which the system delivers magnetometer data to the block handler.
-- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md)
+- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](./startmagnetometerupdates%28to,withhandler%29.md)
   Starts magnetometer updates on an operation queue and with a specified handler.
-- [func startMagnetometerUpdates()](cmmotionmanager/startmagnetometerupdates.md)
+- [func startMagnetometerUpdates()](./startmagnetometerupdates%28%29.md)
   Starts magnetometer updates without a block handler.
-- [func stopMagnetometerUpdates()](cmmotionmanager/stopmagnetometerupdates.md)
+- [func stopMagnetometerUpdates()](./stopmagnetometerupdates%28%29.md)
   Stops magnetometer updates.
-- [typealias CMMagnetometerHandler](cmmagnetometerhandler.md)
+- [typealias CMMagnetometerHandler](../cmmagnetometerhandler.md)
   The type of block callback for handling magnetometer data.
 
 

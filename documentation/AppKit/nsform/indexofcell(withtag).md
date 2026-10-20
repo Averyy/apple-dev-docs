@@ -1,17 +1,24 @@
 # indexOfCell(withTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the entry whose tag is `tag`.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use NSTextField directly instead, and consider NSStackView for layout assistance
 
 ## Declaration
 
 ```swift
 func indexOfCell(withTag tag: Int) -> Int
+```
+
+```objc
+- (NSInteger) indexOfCellWithTag:(NSInteger) tag;
 ```
 
 ## Parameters
@@ -20,11 +27,13 @@ func indexOfCell(withTag tag: Int) -> Int
 
 ## See Also
 
-- [var tag: Int](nscell/tag.md)
+### Related Documentation
+- [var tag: Int](../nscell/tag.md)
   A tag for identifying the cell.
-- [func indexOfSelectedItem() -> Int](nsform/indexofselecteditem.md)
+### Getting Cells and Indices
+- [func indexOfSelectedItem() -> Int](./indexofselecteditem%28%29.md)
   Returns the index of the selected entry.
-- [func cell(at: Int) -> Any!](nsform/cell(at:).md)
+- [func cell(at: Int) -> Any!](./cell%28at%29.md)
   Returns the entry at the specified index.
 
 

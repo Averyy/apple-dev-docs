@@ -1,7 +1,8 @@
 # USDLayer.ListOperationType.appended
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items added to the back.
 

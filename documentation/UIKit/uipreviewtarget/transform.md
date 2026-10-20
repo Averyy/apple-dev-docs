@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An affine transform to apply to the view being animated.
 
@@ -18,11 +19,16 @@ An affine transform to apply to the view being animated.
 var transform: CGAffineTransform { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGAffineTransform transform;
+```
+
 ## See Also
 
-- [var container: UIView](uipreviewtarget/container.md)
+### Getting the target attributes
+- [var container: UIView](./container.md)
   The container for the view being animated.
-- [var center: CGPoint](uipreviewtarget/center.md)
+- [var center: CGPoint](./center.md)
   The point in the containing view at which to place the center of the view being animated.
 
 

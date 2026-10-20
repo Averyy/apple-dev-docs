@@ -5,17 +5,17 @@
 ## Topics
 
 ### Constants
-- [var kPMDestinationFax: Int](kpmdestinationfax.md)
+- [var kPMDestinationFax: Int](../kpmdestinationfax.md)
   Specifies output to a fax. This destination is currently not supported.
-- [var kPMDestinationFile: Int](kpmdestinationfile.md)
+- [var kPMDestinationFile: Int](../kpmdestinationfile.md)
   Specifies output to a file.
-- [var kPMDestinationInvalid: Int](kpmdestinationinvalid.md)
+- [var kPMDestinationInvalid: Int](../kpmdestinationinvalid.md)
   Specifies the destination is invalid.
-- [var kPMDestinationPreview: Int](kpmdestinationpreview.md)
+- [var kPMDestinationPreview: Int](../kpmdestinationpreview.md)
   Specifies output to print preview.
-- [var kPMDestinationPrinter: Int](kpmdestinationprinter.md)
+- [var kPMDestinationPrinter: Int](../kpmdestinationprinter.md)
   Specifies output to a printer.
-- [var kPMDestinationProcessPDF: Int](kpmdestinationprocesspdf.md)
+- [var kPMDestinationProcessPDF: Int](../kpmdestinationprocesspdf.md)
   Specifies output to a PDF workflow option.
 
 

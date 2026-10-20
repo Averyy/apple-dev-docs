@@ -1,6 +1,8 @@
 # Restoring your app’s state with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [RestoringYourAppsStateWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/cc4ebfd8f9d2/RestoringYourAppsStateWithSwiftUI.zip)
 
 Provide app continuity for users by preserving their current activities.
 
@@ -18,19 +20,19 @@ When using your app, the user performs actions that affect the user interface. F
 
 This sample app demonstrates the use of state preservation and restoration for scenarios where the system interrupts the app. The sample project manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore a product in its `DetailView`.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s Signing and Capabilities tab.
 
-##### Enable State Preservation and Restoration
+##### Enable state preservation and restoration
 
-This sample code project uses SwiftUI’s [`Scene`](scene.md) to manage the app’s user interface with its life cycle managed by the system. On iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. It’s necessary to save and restore state associated with each one. On the iPad, it’s especially important because an app in the switcher is not necessarily running. Scene-level state restoration preserves the illusion they are running.
+This sample code project uses SwiftUI’s [`Scene`](./scene.md) to manage the app’s user interface with its life cycle managed by the system. On iOS, state restoration is especially important at the window or scene level, because windows come and go frequently. It’s necessary to save and restore state associated with each one. On the iPad, it’s especially important because an app in the switcher is not necessarily running. Scene-level state restoration preserves the illusion they are running.
 
-To support state preservation and restoration, this sample uses [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. For each user activity, the app must supply an activity type defined in its `Info.plist`.
+To support state preservation and restoration, this sample uses [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. For each user activity, the app must supply an activity type defined in its `Info.plist`.
 
-##### Use Scene Storage
+##### Use scene storage
 
-SwiftUI has the concept of “storing scene data” or [`SceneStorage`](scenestorage.md). Operating similar to [`State`](state.md), scene storage is a property wrapper type that consists of a key/value pair. The key makes it possible for the system to save and restore the value correctly. The value is required to be of a `plist` type, so the system can save and restore it correctly. iOS ingests this scene storage using the key/value and then reads and writes to persisted, per-scene storage. The OS manages saving and restoring scene storage on the user’s behalf. The underlying data that backs scene storage is not directly available, so the app must access it via `@SceneStorage` property wrapper. The OS makes no guarantees as to when and how often the data will be persisted. The data in scene storage is not necessarily equivalent to an application’s data model. Scene storage is intended to be used *with* the data model. Ultimately, consider scene storage a “state scoped to a scene”. Don’t use scene storage with sensitive data.
+SwiftUI has the concept of “storing scene data” or [`SceneStorage`](./scenestorage.md). Operating similar to [`State`](./state.md), scene storage is a property wrapper type that consists of a key/value pair. The key makes it possible for the system to save and restore the value correctly. The value is required to be of a `plist` type, so the system can save and restore it correctly. iOS ingests this scene storage using the key/value and then reads and writes to persisted, per-scene storage. The OS manages saving and restoring scene storage on the user’s behalf. The underlying data that backs scene storage is not directly available, so the app must access it via `@SceneStorage` property wrapper. The OS makes no guarantees as to when and how often the data will be persisted. The data in scene storage is not necessarily equivalent to an application’s data model. Scene storage is intended to be used *with* the data model. Ultimately, consider scene storage a “state scoped to a scene”. Don’t use scene storage with sensitive data.
 
 Each view that needs its own state preservation implements a `@SceneStorage` property wrapper. For example `ContentView` uses one to restore the selected product:
 
@@ -46,13 +48,13 @@ Each view that needs its own state preservation implements a `@SceneStorage` pro
 
 > **Note**: Each scene storage key must be unique, and properly scoped to the area or use within the app. Because this scene storage is local to the app, it’s not necessary to prefix it with the app’s bundle identifier. Use some disambiguating prefix where needed to ensure its uniqueness.
 
-##### Restore the App State with an Activity Object
+##### Restore the app state with an activity object
 
 An `NSUserActivity` object captures the app’s state at the current moment in time. For example, include information about the data the app is currently displaying. The system saves the provided object and returns it to the app the next time it launches. The sample creates a new `NSUserActivity` object when the user closes the app or the app enters the background.
 
-Each SwiftUI view that wants to advertise an `NSUserActivity` for handoff, Spotlight, etc. must specify a [`userActivity(_:isActive:_:)`](view/useractivity(_:isactive:_:).md) view modifier to advertise the `NSUserActivity`. The `activityType` parameter is the user activity’s type, the `isActive` parameter indicates whether a user activity of the specified type is advertised (this parameter defaults to `true`), and whether it uses the specified handler to fill in the user-activity contents. The scope of the user activity applies only to the scene or window in which the view is. Multiple views can advertise the same activity type, and the handlers can all contribute to the contents of the user activity. Note that handlers are only called for `userActivity` view modifiers where the `isActive` parameter is `true`. If none of the `userActivity` view modifiers specify `isActive` as `true`, the user activity will not be advertised by iOS.
+Each SwiftUI view that wants to advertise an `NSUserActivity` for handoff, Spotlight, etc. must specify a [`userActivity(_:isActive:_:)`](./view/useractivity%28_,isactive,_%29.md) view modifier to advertise the `NSUserActivity`. The `activityType` parameter is the user activity’s type, the `isActive` parameter indicates whether a user activity of the specified type is advertised (this parameter defaults to `true`), and whether it uses the specified handler to fill in the user-activity contents. The scope of the user activity applies only to the scene or window in which the view is. Multiple views can advertise the same activity type, and the handlers can all contribute to the contents of the user activity. Note that handlers are only called for `userActivity` view modifiers where the `isActive` parameter is `true`. If none of the `userActivity` view modifiers specify `isActive` as `true`, the user activity will not be advertised by iOS.
 
-Each SwiftUI view that wants to handle incoming `NSUserActivities` must specify a [`onContinueUserActivity(_:perform:)`](view/oncontinueuseractivity(_:perform:).md) view modifier. This takes the `NSUserActivity` type and a handler to invoke when the view receives the specified activity type for the scene or window in which the view is.
+Each SwiftUI view that wants to handle incoming `NSUserActivities` must specify a [`onContinueUserActivity(_:perform:)`](./view/oncontinueuseractivity%28_,perform%29.md) view modifier. This takes the `NSUserActivity` type and a handler to invoke when the view receives the specified activity type for the scene or window in which the view is.
 
 ```swift
 .onContinueUserActivity(DetailView.productUserActivityType) { userActivity in
@@ -62,7 +64,7 @@ Each SwiftUI view that wants to handle incoming `NSUserActivities` must specify 
 }
 ```
 
-##### Test State Restoration
+##### Test state restoration
 
 This sample restores the following user interface:
 
@@ -89,11 +91,12 @@ To use Spotlight with Handoff, follow these steps:
 
 ## See Also
 
-- [func defaultAppStorage(UserDefaults) -> some View](view/defaultappstorage(_:).md)
+### Saving state across app launches
+- [func defaultAppStorage(UserDefaults) -> some View](./view/defaultappstorage%28_%29.md)
   The default store used by `AppStorage` contained within the view.
-- [struct AppStorage](appstorage.md)
+- [struct AppStorage](./appstorage.md)
   A property wrapper type that reflects a value from `UserDefaults` and invalidates a view on a change in value in that user default.
-- [struct SceneStorage](scenestorage.md)
+- [struct SceneStorage](./scenestorage.md)
   A property wrapper type that reads and writes to persisted, per-scene storage.
 
 

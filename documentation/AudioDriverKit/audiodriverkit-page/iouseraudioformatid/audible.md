@@ -1,7 +1,8 @@
 # Audible
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The Audible audiobooks format.
 
@@ -10,7 +11,7 @@ The Audible audiobooks format.
 
 ## Declaration
 
-```swift
+```c
 Audible
 ```
 

@@ -1,16 +1,17 @@
 # shouldInvalidateLayout(forBoundsChange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the layout object if the new bounds require a layout update.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,15 +19,19 @@ Asks the layout object if the new bounds require a layout update.
 func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool
 ```
 
+```objc
+- (BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect) newBounds;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the collection view requires a layout update or [`false`](https://developer.apple.com/documentation/swift/false) if the layout does not need to change.
+[`true`](../../Swift/true.md) if the collection view requires a layout update or [`false`](../../Swift/false.md) if the layout does not need to change.
 
 #### Discussion
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false). Subclasses can override it and return an appropriate value based on whether changes in the bounds of the collection view require changes to the layout of cells and supplementary views.
+The default implementation of this method returns [`false`](../../Swift/false.md). Subclasses can override it and return an appropriate value based on whether changes in the bounds of the collection view require changes to the layout of cells and supplementary views.
 
-If the bounds of the collection view change and this method returns [`true`](https://developer.apple.com/documentation/swift/true), the collection view invalidates the layout by calling the [`invalidateLayout(with:)`](uicollectionviewlayout/invalidatelayout(with:).md) method.
+If the bounds of the collection view change and this method returns [`true`](../../Swift/true.md), the collection view invalidates the layout by calling the [`invalidateLayout(with:)`](./invalidatelayout%28with%29.md) method.
 
 ## Parameters
 
@@ -34,21 +39,22 @@ If the bounds of the collection view change and this method returns [`true`](htt
 
 ## See Also
 
-- [func invalidateLayout()](uicollectionviewlayout/invalidatelayout.md)
+### Invalidating the layout
+- [func invalidateLayout()](./invalidatelayout%28%29.md)
   Invalidates the current layout and triggers a layout update.
-- [func invalidateLayout(with: UICollectionViewLayoutInvalidationContext)](uicollectionviewlayout/invalidatelayout(with:).md)
+- [func invalidateLayout(with: UICollectionViewLayoutInvalidationContext)](./invalidatelayout%28with%29.md)
   Invalidates the current layout using the information in the provided context object.
-- [class var invalidationContextClass: AnyClass](uicollectionviewlayout/invalidationcontextclass.md)
+- [class var invalidationContextClass: AnyClass](./invalidationcontextclass.md)
   Returns the class to use when creating an invalidation context for the layout.
-- [func invalidationContext(forBoundsChange: CGRect) -> UICollectionViewLayoutInvalidationContext](uicollectionviewlayout/invalidationcontext(forboundschange:).md)
+- [func invalidationContext(forBoundsChange: CGRect) -> UICollectionViewLayoutInvalidationContext](./invalidationcontext%28forboundschange%29.md)
   Retrieves a context object that defines the portions of the layout that should change when a bounds change occurs.
-- [func shouldInvalidateLayout(forPreferredLayoutAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes: UICollectionViewLayoutAttributes) -> Bool](uicollectionviewlayout/shouldinvalidatelayout(forpreferredlayoutattributes:withoriginalattributes:).md)
+- [func shouldInvalidateLayout(forPreferredLayoutAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes: UICollectionViewLayoutAttributes) -> Bool](./shouldinvalidatelayout%28forpreferredlayoutattributes,withoriginalattributes%29.md)
   Asks the layout object if changes to a self-sizing cell require a layout update.
-- [func invalidationContext(forPreferredLayoutAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutInvalidationContext](uicollectionviewlayout/invalidationcontext(forpreferredlayoutattributes:withoriginalattributes:).md)
+- [func invalidationContext(forPreferredLayoutAttributes: UICollectionViewLayoutAttributes, withOriginalAttributes: UICollectionViewLayoutAttributes) -> UICollectionViewLayoutInvalidationContext](./invalidationcontext%28forpreferredlayoutattributes,withoriginalattributes%29.md)
   Retrieves a context object that identifies the portions of the layout that should change in response to dynamic cell changes.
-- [func invalidationContext(forInteractivelyMovingItems: [IndexPath], withTargetPosition: CGPoint, previousIndexPaths: [IndexPath], previousPosition: CGPoint) -> UICollectionViewLayoutInvalidationContext](uicollectionviewlayout/invalidationcontext(forinteractivelymovingitems:withtargetposition:previousindexpaths:previousposition:).md)
+- [func invalidationContext(forInteractivelyMovingItems: [IndexPath], withTargetPosition: CGPoint, previousIndexPaths: [IndexPath], previousPosition: CGPoint) -> UICollectionViewLayoutInvalidationContext](./invalidationcontext%28forinteractivelymovingitems,withtargetposition,previousindexpaths,previousposition%29.md)
   Retrieves a context object that identifies the items that are being interactively moved in the layout.
-- [func invalidationContextForEndingInteractiveMovementOfItems(toFinalIndexPaths: [IndexPath], previousIndexPaths: [IndexPath], movementCancelled: Bool) -> UICollectionViewLayoutInvalidationContext](uicollectionviewlayout/invalidationcontextforendinginteractivemovementofitems(tofinalindexpaths:previousindexpaths:movementcancelled:).md)
+- [func invalidationContextForEndingInteractiveMovementOfItems(toFinalIndexPaths: [IndexPath], previousIndexPaths: [IndexPath], movementCancelled: Bool) -> UICollectionViewLayoutInvalidationContext](./invalidationcontextforendinginteractivemovementofitems%28tofinalindexpaths,previousindexpaths,movementcancelled%29.md)
   Retrieves a context object that identifies the items that were moved
 
 

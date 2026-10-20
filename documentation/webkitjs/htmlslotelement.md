@@ -1,7 +1,8 @@
 # HTMLSlotElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLSlotElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [name](htmlslotelement/1777761-name.md)
+- [name](./htmlslotelement/api-1777761-name.md)
 ### Instance Methods
-- [assignedNodes](htmlslotelement/1777778-assignednodes.md)
+- [assignedNodes](./htmlslotelement/api-1777778-assignednodes.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

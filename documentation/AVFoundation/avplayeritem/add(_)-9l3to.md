@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified media data collector to the player item’s collection of media collectors.
 
@@ -21,19 +22,24 @@ nonisolated
 func add(_ collector: AVPlayerItemMediaDataCollector)
 ```
 
+```objc
+- (void) addMediaDataCollector:(AVPlayerItemMediaDataCollector *) collector;
+```
+
 #### Discussion
 
 This method may incur additional I/O to collect the requested media data asynchronously.
 
 ## Parameters
 
-- `collector`: An instance of [`AVPlayerItemMediaDataCollector`](avplayeritemmediadatacollector.md).
+- `collector`: An instance of [`AVPlayerItemMediaDataCollector`](../avplayeritemmediadatacollector.md).
 
 ## See Also
 
-- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](avplayeritem/mediadatacollectors.md)
+### Managing player item data collectors
+- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](./mediadatacollectors.md)
   The collection of associated media data collectors.
-- [func remove(AVPlayerItemMediaDataCollector)](avplayeritem/remove(_:)-29iuz.md)
+- [func remove(AVPlayerItemMediaDataCollector)](./remove%28_%29-29iuz.md)
   Removes the specified media data collector from the player item’s collection of media collectors.
 
 

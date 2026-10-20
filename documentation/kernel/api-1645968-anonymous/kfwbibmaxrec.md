@@ -1,14 +1,15 @@
 # kFWBIBMaxRec
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWBIBMaxRec = FWBitRange (16, 19)
 ```
 

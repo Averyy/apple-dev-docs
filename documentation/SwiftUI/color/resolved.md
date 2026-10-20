@@ -1,7 +1,8 @@
 # Color.Resolved
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A concrete color value.
 
@@ -25,46 +26,46 @@ struct Resolved
 
 `Color.Resolved` is a set of RGBA values that represent a color that can be shown. The values are stored in the Linear sRGB color space, using extended range. This is a low-level type, most colors are represented by the `Color` type.
 
-> **Note**: `Color.ResolvedHDR`, `Color`.
+> **See Also**: `Color.ResolvedHDR`, `Color`.
 
 ## Topics
 
 ### Initializers
-- [init(colorSpace: Color.RGBColorSpace, red: Float, green: Float, blue: Float, opacity: Float)](color/resolved/init(colorspace:red:green:blue:opacity:).md)
+- [init(colorSpace: Color.RGBColorSpace, red: Float, green: Float, blue: Float, opacity: Float)](./resolved/init%28colorspace,red,green,blue,opacity%29.md)
   Creates a resolved color from red, green, and blue component values.
 ### Instance Properties
-- [var blue: Float](color/resolved/blue.md)
+- [var blue: Float](./resolved/blue.md)
   The amount of blue in the color in the sRGB color space.
-- [var cgColor: CGColor](color/resolved/cgcolor.md)
+- [var cgColor: CGColor](./resolved/cgcolor.md)
   A Core Graphics representation of the color.
-- [var green: Float](color/resolved/green.md)
+- [var green: Float](./resolved/green.md)
   The amount of green in the color in the sRGB color space.
-- [var linearBlue: Float](color/resolved/linearblue.md)
+- [var linearBlue: Float](./resolved/linearblue.md)
   The amount of blue in the color in the sRGB linear color space.
-- [var linearGreen: Float](color/resolved/lineargreen.md)
+- [var linearGreen: Float](./resolved/lineargreen.md)
   The amount of green in the color in the sRGB linear color space.
-- [var linearRed: Float](color/resolved/linearred.md)
+- [var linearRed: Float](./resolved/linearred.md)
   The amount of red in the color in the sRGB linear color space.
-- [var opacity: Float](color/resolved/opacity.md)
+- [var opacity: Float](./resolved/opacity.md)
   The degree of opacity in the color, given in the range `0` to `1`.
-- [var red: Float](color/resolved/red.md)
+- [var red: Float](./resolved/red.md)
   The amount of red in the color in the sRGB color space.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Animatable](../animatable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [ShapeStyle](../shapestyle.md)
 
 
 ---

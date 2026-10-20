@@ -1,17 +1,22 @@
 # init(textProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has a single line of text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(textProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithTextProvider:(CLKTextProvider *) textProvider;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ init(textProvider: CLKTextProvider)
 
 ## See Also
 
-- [init(textProvider: CLKTextProvider, imageProvider: CLKImageProvider?)](clkcomplicationtemplateutilitariansmallflat/init(textprovider:imageprovider:).md)
+### Creating the Template
+- [init(textProvider: CLKTextProvider, imageProvider: CLKImageProvider?)](./init%28textprovider,imageprovider%29.md)
   Creates a new template that has a single row with an image and a line of text.
 
 

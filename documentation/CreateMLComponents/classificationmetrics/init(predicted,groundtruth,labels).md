@@ -1,7 +1,8 @@
 # init(predicted:groundTruth:labels:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates classification metrics for predicted and ground truth labels.
 
@@ -24,19 +25,22 @@ init<Predicted, Correct>(predicted: Predicted, groundTruth: Correct, labels: Set
 
 The predicted and ground truth collections are matched element by element in the order they are provided. Both collections must have the same number of elements. Labels not in the labels set are ignored.
 
-- Parameters - predicted: The predicted labels.
-- groundTruth: The true labels.
-- labels: The set of labels to consider.
+- Parameters
+
+  - predicted: The predicted labels.
+  - groundTruth: The true labels.
+  - labels: The set of labels to consider.
 
 ## See Also
 
-- [init<Predicted, Correct>(Predicted, Correct)](classificationmetrics/init(_:_:).md)
+### Creating the distribution
+- [init<Predicted, Correct>(Predicted, Correct)](./init%28_,_%29.md)
   Creates classification metrics for predicted and ground truth labels.
-- [init()](classificationmetrics/init.md)
+- [init()](./init%28%29.md)
   Creates empty classification metrics.
-- [init(_:)](classificationmetrics/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates classification metrics for a sequence of predicted and ground truth label pairs.
-- [init(some Sequence<(predicted: Label, label: Label)>, labels: Set<Label>)](classificationmetrics/init(_:labels:).md)
+- [init(some Sequence<(predicted: Label, label: Label)>, labels: Set<Label>)](./init%28_,labels%29.md)
   Creates classification metrics for a sequence of predicted and ground truth label pairs.
 
 

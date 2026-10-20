@@ -1,7 +1,8 @@
 # FeatureSet.Feature.shapeOpacity
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports shapes with opacity.
 
@@ -20,11 +21,12 @@ case shapeOpacity
 
 ## See Also
 
-- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
+### Describing shape features
+- [FeatureSet.Feature.shapeFills](./shapefills.md)
   Supports shapes with fills.
-- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
+- [FeatureSet.Feature.shapeStrokes](./shapestrokes.md)
   Supports shapes with strokes.
-- [FeatureSet.Feature.text](featureset/feature/text.md)
+- [FeatureSet.Feature.text](./text.md)
   Supports shapes with text.
 
 

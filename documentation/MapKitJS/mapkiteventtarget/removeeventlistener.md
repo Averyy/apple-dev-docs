@@ -1,16 +1,19 @@
 # removeEventListener(eventType, listener, thisObject)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unsubscribes a listener function from an event type.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Removed in MapKit JS 6.0.0. Use standard `EventTarget` instead.
 
 ## Declaration
 
-```swift
+```
 removeEventListener(
         eventType?: string,
         listener?: MapKitEventListener,
@@ -20,7 +23,7 @@ removeEventListener(
 
 #### Discussion
 
-Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](mapkiteventtarget.md) doesn’t go through bubbling or capturing phases. The system also interprets the second and the third parameters differently from the DOM’s `EventTarget`.
+Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](../mapkiteventtarget.md) doesn’t go through bubbling or capturing phases. The system also interprets the second and the third parameters differently from the DOM’s `EventTarget`.
 
 ## Parameters
 

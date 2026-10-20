@@ -1,7 +1,8 @@
 # notificationFilterPredicate
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An `NSPredicate` for system to filter the user’s notifications of the app when a Focus is active.
 
@@ -11,7 +12,7 @@ An `NSPredicate` for system to filter the user’s notifications of the app when
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

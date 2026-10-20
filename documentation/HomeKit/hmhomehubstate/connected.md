@@ -1,7 +1,8 @@
 # HMHomeHubState.connected
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The home hub is connected.
 
@@ -19,11 +20,16 @@ The home hub is connected.
 case connected
 ```
 
+```c
+HMHomeHubStateConnected
+```
+
 ## See Also
 
-- [HMHomeHubState.disconnected](hmhomehubstate/disconnected.md)
+### Specifying the State
+- [HMHomeHubState.disconnected](./disconnected.md)
   The home hub is disconnected.
-- [HMHomeHubState.notAvailable](hmhomehubstate/notavailable.md)
+- [HMHomeHubState.notAvailable](./notavailable.md)
   No home hub is present.
 
 

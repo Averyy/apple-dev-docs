@@ -1,7 +1,8 @@
 # flush(agedOutOnly:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Frees as many buffers from the pool as possible.
 

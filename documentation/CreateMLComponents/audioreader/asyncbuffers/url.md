@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio file URL, used when throwing an error.
 

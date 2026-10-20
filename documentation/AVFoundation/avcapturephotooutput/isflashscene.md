@@ -1,7 +1,8 @@
 # isFlashScene
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scene currently being previewed by the camera warrants use of the flash.
 
@@ -17,17 +18,22 @@ A Boolean value indicating whether the scene currently being previewed by the ca
 var isFlashScene: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isFlashScene;
+```
+
 #### Discussion
 
 This property’s value changes depending on the scene currently visible to the camera. For example, you might use this property to highlight the flash control in your app’s camera UI, indicating to the user that the scene is dark enough that enabling the flash might be desirable.
 
-If the photo capture output’s [`supportedFlashModes`](avcapturephotooutput/supportedflashmodes-4u69s.md) value is [`AVCaptureDevice.FlashMode.off`](avcapturedevice/flashmode-swift.enum/off.md), this property’s value is always [`false`](https://developer.apple.com/documentation/swift/false).
+If the photo capture output’s [`supportedFlashModes`](./supportedflashmodes-4u69s.md) value is [`AVCaptureDevice.FlashMode.off`](../avcapturedevice/flashmode-swift.enum/off.md), this property’s value is always [`false`](../../Swift/false.md).
 
 This property supports key-value observing.
 
 ## See Also
 
-- [var photoSettingsForSceneMonitoring: AVCapturePhotoSettings?](avcapturephotooutput/photosettingsforscenemonitoring.md)
+### Monitoring the visible scene
+- [var photoSettingsForSceneMonitoring: AVCapturePhotoSettings?](./photosettingsforscenemonitoring.md)
   A photo settings object that controls how the photo output detects and handles automatic flash and stabilization modes.
 
 

@@ -1,7 +1,8 @@
 # remove(_:using:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified object from the tree, using a reference to its containing node.
 
@@ -19,13 +20,17 @@ Removes the specified object from the tree, using a reference to its containing 
 func remove(_ data: ElementType, using node: GKQuadtreeNode) -> Bool
 ```
 
+```objc
+- (BOOL) removeElement:(ElementType) data withNode:(GKQuadtreeNode *) node;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the object was removed from the tree. [`false`](https://developer.apple.com/documentation/swift/false) if the specified object or node is not in the tree.
+[`true`](../../Swift/true.md) if the object was removed from the tree. [`false`](../../Swift/false.md) if the specified object or node is not in the tree.
 
 #### Discussion
 
-By referencing the node that contains the object to remove, this method can quickly remove an object from the tree without needing to perform an exhaustive search. To make use of this performance optimization, keep a reference to the node returned when you add elements with the [`add(_:at:)`](gkquadtree/add(_:at:).md) or [`add(_:in:)`](gkquadtree/add(_:in:).md) methods.
+By referencing the node that contains the object to remove, this method can quickly remove an object from the tree without needing to perform an exhaustive search. To make use of this performance optimization, keep a reference to the node returned when you add elements with the [`add(_:at:)`](./add%28_,at%29.md) or [`add(_:in:)`](./add%28_,in%29.md) methods.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ By referencing the node that contains the object to remove, this method can quic
 
 ## See Also
 
-- [func add(ElementType, at: vector_float2) -> GKQuadtreeNode](gkquadtree/add(_:at:).md)
+### Adding and Removing Elements
+- [func add(ElementType, at: vector_float2) -> GKQuadtreeNode](./add%28_,at%29.md)
   Adds an object to the tree corresponding to the specified point in 2D space.
-- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](gkquadtree/add(_:in:).md)
+- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](./add%28_,in%29.md)
   Adds an object to the tree corresponding to the specified region of 2D space.
-- [func remove(ElementType) -> Bool](gkquadtree/remove(_:).md)
+- [func remove(ElementType) -> Bool](./remove%28_%29.md)
   Searches for the specified object and removes it from the tree.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An option that determines how the animation repeats.
@@ -12,7 +13,7 @@ An option that determines how the animation repeats.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ var repeatMode: AnimationRepeatMode { get set }
 
 #### Discussion
 
-If you call [`trimmed(start:end:duration:)`](animationdefinition/trimmed(start:end:duration:).md) with a `start` or `end` that lies outside of the timeline defined by [`duration`](animationdefinition/duration.md), the animation fills the additional playback by applying this property.
+If you call [`trimmed(start:end:duration:)`](./trimmed%28start,end,duration%29.md) with a `start` or `end` that lies outside of the timeline defined by [`duration`](./duration.md), the animation fills the additional playback by applying this property.
 
 ## See Also
 
-- [var fillMode: AnimationFillMode](animationdefinition/fillmode.md)
+### Repeating animation playback
+- [var fillMode: AnimationFillMode](./fillmode.md)
   An option that determines which data displays outside of the normal duration.
-- [func repeated(count: TimeInterval) -> Self](animationdefinition/repeated(count:)-937w.md)
+- [func repeated(count: TimeInterval) -> Self](./repeated%28count%29-937w.md)
   Repeats an animation the number of times specified by an irrational number.
-- [func repeated(count: Int) -> Self](animationdefinition/repeated(count:)-941x8.md)
+- [func repeated(count: Int) -> Self](./repeated%28count%29-941x8.md)
   Repeats an animation the number of times specified by a whole number.
-- [func repeatingForever() -> Self](animationdefinition/repeatingforever.md)
+- [func repeatingForever() -> Self](./repeatingforever%28%29.md)
   Repeats the animation infinitely.
 
 

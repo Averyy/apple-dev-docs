@@ -1,7 +1,8 @@
 # UIUpdateInfo
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains detailed information about the current UI update state.
 
@@ -19,52 +20,57 @@ An object that contains detailed information about the current UI update state.
 class UIUpdateInfo
 ```
 
+```objc
+@interface UIUpdateInfo : NSObject
+```
+
 #### Overview
 
-During a UI update, this object provides details about the state of the update. When using a [`UIUpdateLink`](uiupdatelink.md), you can query this UI update information object to learn about the current UI update.
+During a UI update, this object provides details about the state of the update. When using a [`UIUpdateLink`](./uiupdatelink.md), you can query this UI update information object to learn about the current UI update.
 
-A UI update can service views on different displays simultaneously, which means these views can have a different [`UIUpdateInfo`](uiupdateinfo.md). Get the UI update information for a specific view using [`current(for:)`](uiupdateinfo/current(for:)-34zby.md) or a specific window using [`current(for:)`](uiupdateinfo/current(for:)-6y1z9.md). The UI update information can also change as the current UI update progresses through its phases.
+A UI update can service views on different displays simultaneously, which means these views can have a different [`UIUpdateInfo`](./uiupdateinfo.md). Get the UI update information for a specific view using [`current(for:)`](./uiupdateinfo/current%28for%29-34zby.md) or a specific window using [`current(for:)`](./uiupdateinfo/current%28for%29-6y1z9.md). The UI update information can also change as the current UI update progresses through its phases.
 
 ## Topics
 
 ### Getting the current UI update information
-- [class func current(for: UIView) -> Self?](uiupdateinfo/current(for:)-34zby.md)
+- [class func current(for: UIView) -> Self?](./uiupdateinfo/current%28for%29-34zby.md)
   Returns an object that describes the current UI update state for the specified view.
-- [class func current(for: UIWindowScene) -> Self?](uiupdateinfo/current(for:)-6y1z9.md)
+- [class func current(for: UIWindowScene) -> Self?](./uiupdateinfo/current%28for%29-6y1z9.md)
   Returns an object that describes the current UI update state for the specified window.
 ### Getting information about timing
-- [var modelTime: TimeInterval](uiupdateinfo/modeltime.md)
+- [var modelTime: TimeInterval](./uiupdateinfo/modeltime.md)
   The time interval that represents a reference point for the current time of the UI update.
-- [var completionDeadlineTime: TimeInterval](uiupdateinfo/completiondeadlinetime.md)
+- [var completionDeadlineTime: TimeInterval](./uiupdateinfo/completiondeadlinetime.md)
   The time interval that represents the time by which an app needs to finish submitting changes to the render server.
-- [var estimatedPresentationTime: TimeInterval](uiupdateinfo/estimatedpresentationtime.md)
+- [var estimatedPresentationTime: TimeInterval](./uiupdateinfo/estimatedpresentationtime.md)
   The time interval that represents an estimate for when current UI update changes become visible onscreen.
 ### Working with low-latency updates
-- [var isImmediatePresentationExpected: Bool](uiupdateinfo/isimmediatepresentationexpected.md)
+- [var isImmediatePresentationExpected: Bool](./uiupdateinfo/isimmediatepresentationexpected.md)
   A Boolean value that indicates whether the system presents UI updates immediately upon completion.
-- [var isLowLatencyEventDispatchConfirmed: Bool](uiupdateinfo/islowlatencyeventdispatchconfirmed.md)
+- [var isLowLatencyEventDispatchConfirmed: Bool](./uiupdateinfo/islowlatencyeventdispatchconfirmed.md)
   A Boolean value that indicates whether the system runs low-latency phases for the UI update.
-- [var isPerformingLowLatencyPhases: Bool](uiupdateinfo/isperforminglowlatencyphases.md)
+- [var isPerformingLowLatencyPhases: Bool](./uiupdateinfo/isperforminglowlatencyphases.md)
   A Boolean value that indicates whether the UI update is in the low-latency phases.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIUpdateLink](uiupdatelink.md)
+### UI updates
+- [class UIUpdateLink](./uiupdatelink.md)
   An object you use to observe, participate in, and affect the UI update process.
-- [class UIUpdateActionPhase](uiupdateactionphase.md)
+- [class UIUpdateActionPhase](./uiupdateactionphase.md)
   An object that defines specific phases of the UI update process.
 
 

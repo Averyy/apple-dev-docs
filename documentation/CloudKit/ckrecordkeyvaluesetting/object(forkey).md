@@ -2,6 +2,7 @@
 
 **Framework**: CloudKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the object that the record stores for the specified key.
@@ -21,6 +22,10 @@ Returns the object that the record stores for the specified key.
 func object(forKey key: String) -> (any __CKRecordObjCValue)?
 ```
 
+```objc
+- (id<CKRecordValue>) objectForKey:(CKRecordFieldKey) key;
+```
+
 #### Return Value
 
 The object for the specified key, or `nil` if no such key exists in the record.
@@ -31,13 +36,14 @@ The object for the specified key, or `nil` if no such key exists in the record.
 
 ## See Also
 
-- [subscript(String) -> (any __CKRecordObjCValue)?](ckrecordkeyvaluesetting/subscript(_:).md)
+### Accessing a Record’s Fields
+- [subscript(String) -> (any __CKRecordObjCValue)?](./subscript%28_%29.md)
   Returns the object that the record stores for the specified key.
-- [func setObject((any __CKRecordObjCValue)?, forKey: String)](ckrecordkeyvaluesetting/setobject(_:forkey:).md)
+- [func setObject((any __CKRecordObjCValue)?, forKey: String)](./setobject%28_,forkey%29.md)
   Stores an object in the record using the specified key.
-- [func allKeys() -> [String]](ckrecordkeyvaluesetting/allkeys.md)
+- [func allKeys() -> [String]](./allkeys%28%29.md)
   Returns an array of the record’s keys.
-- [func changedKeys() -> [String]](ckrecordkeyvaluesetting/changedkeys.md)
+- [func changedKeys() -> [String]](./changedkeys%28%29.md)
   Returns an array of keys with recent changes to their values.
 
 

@@ -1,7 +1,8 @@
 # decodeXPCObject(ofType:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes an object and validates that its type matches the type a service provides over XPC.
 
@@ -20,15 +21,19 @@ Decodes an object and validates that its type matches the type a service provide
 func decodeXPCObject(ofType type: xpc_type_t, forKey key: String) -> xpc_object_t?
 ```
 
+```objc
+- (xpc_object_t) decodeXPCObjectOfType:(xpc_type_t) type forKey:(NSString *) key;
+```
+
 #### Return Value
 
 An object that XPC can encode.
 
 #### Discussion
 
-The [`decodeXPCObject(ofType:forKey:)`](nsxpccoder/decodexpcobject(oftype:forkey:).md) method validates that the type of the decoded object matches the type of the encoded object. If they don’t match, the [`NSXPCCoder`](nsxpccoder.md) throws an exception in support of [`NSSecureCoding`](nssecurecoding.md).
+The [`decodeXPCObject(ofType:forKey:)`](./decodexpcobject%28oftype,forkey%29.md) method validates that the type of the decoded object matches the type of the encoded object. If they don’t match, the [`NSXPCCoder`](../nsxpccoder.md) throws an exception in support of [`NSSecureCoding`](../nssecurecoding.md).
 
-Be sure to check the result against [`null`](nsnull/null.md) if you call an [`XPC`](https://developer.apple.com/documentation/xpc) function because calling an [`XPC`](https://developer.apple.com/documentation/xpc) function on a [`null`](nsnull/null.md) object results in a crash.
+Be sure to check the result against [`null`](../nsnull/null.md) if you call an [XPC](../../XPC/XPC.md) function because calling an [XPC](../../XPC/XPC.md) function on a [`null`](../nsnull/null.md) object results in a crash.
 
 ## Parameters
 
@@ -37,7 +42,8 @@ Be sure to check the result against [`null`](nsnull/null.md) if you call an [`XP
 
 ## See Also
 
-- [func encodeXPCObject(xpc_object_t, forKey: String)](nsxpccoder/encodexpcobject(_:forkey:).md)
+### Encoding and Decoding
+- [func encodeXPCObject(xpc_object_t, forKey: String)](./encodexpcobject%28_,forkey%29.md)
   Encodes an object to send over an XPC connection.
 
 

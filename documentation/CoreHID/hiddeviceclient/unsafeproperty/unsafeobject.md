@@ -1,7 +1,8 @@
 # unsafeObject
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object may not be safe to use concurrently.
 

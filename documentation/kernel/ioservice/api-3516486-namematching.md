@@ -1,14 +1,15 @@
 # nameMatching
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<OSDictionary> nameMatching(const OSString *name, OSDictionary *table);
 ```
 

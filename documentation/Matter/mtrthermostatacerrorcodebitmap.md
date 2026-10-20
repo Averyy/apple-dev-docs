@@ -1,7 +1,8 @@
 # MTRThermostatACErrorCodeBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,28 +19,32 @@
 struct MTRThermostatACErrorCodeBitmap
 ```
 
+```c
+enum MTRThermostatACErrorCodeBitmap : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrthermostatacerrorcodebitmap/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrthermostatacerrorcodebitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var coilSensorFail: MTRThermostatACErrorCodeBitmap](mtrthermostatacerrorcodebitmap/coilsensorfail.md)
-- [static var compressorFail: MTRThermostatACErrorCodeBitmap](mtrthermostatacerrorcodebitmap/compressorfail.md)
-- [static var fanFail: MTRThermostatACErrorCodeBitmap](mtrthermostatacerrorcodebitmap/fanfail.md)
-- [static var outdoorSensorFail: MTRThermostatACErrorCodeBitmap](mtrthermostatacerrorcodebitmap/outdoorsensorfail.md)
-- [static var roomSensorFail: MTRThermostatACErrorCodeBitmap](mtrthermostatacerrorcodebitmap/roomsensorfail.md)
+- [static var coilSensorFail: MTRThermostatACErrorCodeBitmap](./mtrthermostatacerrorcodebitmap/coilsensorfail.md)
+- [static var compressorFail: MTRThermostatACErrorCodeBitmap](./mtrthermostatacerrorcodebitmap/compressorfail.md)
+- [static var fanFail: MTRThermostatACErrorCodeBitmap](./mtrthermostatacerrorcodebitmap/fanfail.md)
+- [static var outdoorSensorFail: MTRThermostatACErrorCodeBitmap](./mtrthermostatacerrorcodebitmap/outdoorsensorfail.md)
+- [static var roomSensorFail: MTRThermostatACErrorCodeBitmap](./mtrthermostatacerrorcodebitmap/roomsensorfail.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

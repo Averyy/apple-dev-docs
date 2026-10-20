@@ -1,7 +1,8 @@
 # UIInteraction
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that an interaction implements to access the view that owns it.
 
@@ -19,60 +20,65 @@ The protocol that an interaction implements to access the view that owns it.
 protocol UIInteraction : NSObjectProtocol
 ```
 
+```objc
+@protocol UIInteraction <NSObject>
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
 ## Topics
 
 ### Getting the View
-- [var view: UIView?](uiinteraction/view.md)
+- [var view: UIView?](./uiinteraction/view.md)
   The view that owns the interaction.
 ### Tracking the Movements
-- [func didMove(to: UIView?)](uiinteraction/didmove(to:).md)
+- [func didMove(to: UIView?)](./uiinteraction/didmove%28to%29.md)
   Tells the interaction that a view added or removed it from the view’s interactions array.
-- [func willMove(to: UIView?)](uiinteraction/willmove(to:).md)
+- [func willMove(to: UIView?)](./uiinteraction/willmove%28to%29.md)
   Tells the interaction that a view will add or remove it from the view’s interactions array.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UIBandSelectionInteraction](uibandselectioninteraction.md)
-- [UICanvasFeedbackGenerator](uicanvasfeedbackgenerator.md)
-- [UIContextMenuInteraction](uicontextmenuinteraction.md)
-- [UIDragInteraction](uidraginteraction.md)
-- [UIDropInteraction](uidropinteraction.md)
-- [UIEditMenuInteraction](uieditmenuinteraction.md)
-- [UIFeedbackGenerator](uifeedbackgenerator.md)
-- [UIFindInteraction](uifindinteraction.md)
-- [UIHingeInteraction](uihingeinteraction.md)
-- [UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
-- [UIIndirectScribbleInteraction](uiindirectscribbleinteraction-1nfjm.md)
-- [UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)
-- [UILookToScrollInteraction](uilooktoscrollinteraction.md)
-- [UINotificationFeedbackGenerator](uinotificationfeedbackgenerator.md)
-- [UIPencilInteraction](uipencilinteraction.md)
-- [UIPointerInteraction](uipointerinteraction.md)
-- [UIScribbleInteraction](uiscribbleinteraction.md)
-- [UIScrollEdgeElementContainerInteraction](uiscrolledgeelementcontainerinteraction.md)
-- [UISelectionFeedbackGenerator](uiselectionfeedbackgenerator.md)
-- [UISpringLoadedInteraction](uispringloadedinteraction.md)
-- [UITextInteraction](uitextinteraction.md)
-- [UITextSelectionDisplayInteraction](uitextselectiondisplayinteraction.md)
-- [UIToolTipInteraction](uitooltipinteraction.md)
-- [UIWindowScene.ActivationInteraction](uiwindowscene/activationinteraction.md)
-- [UIWindowSceneDragInteraction](uiwindowscenedraginteraction.md)
-- [UIWritingToolsCoordinator](uiwritingtoolscoordinator.md)
+- [UIBandSelectionInteraction](./uibandselectioninteraction.md)
+- [UICanvasFeedbackGenerator](./uicanvasfeedbackgenerator.md)
+- [UIContextMenuInteraction](./uicontextmenuinteraction.md)
+- [UIDragInteraction](./uidraginteraction.md)
+- [UIDropInteraction](./uidropinteraction.md)
+- [UIEditMenuInteraction](./uieditmenuinteraction.md)
+- [UIFeedbackGenerator](./uifeedbackgenerator.md)
+- [UIFindInteraction](./uifindinteraction.md)
+- [UIHingeInteraction](./uihingeinteraction.md)
+- [UIImpactFeedbackGenerator](./uiimpactfeedbackgenerator.md)
+- [UIIndirectScribbleInteraction](./uiindirectscribbleinteraction-1nfjm.md)
+- [UILargeContentViewerInteraction](./uilargecontentviewerinteraction.md)
+- [UILookToScrollInteraction](./uilooktoscrollinteraction.md)
+- [UINotificationFeedbackGenerator](./uinotificationfeedbackgenerator.md)
+- [UIPencilInteraction](./uipencilinteraction.md)
+- [UIPointerInteraction](./uipointerinteraction.md)
+- [UIScribbleInteraction](./uiscribbleinteraction.md)
+- [UIScrollEdgeElementContainerInteraction](./uiscrolledgeelementcontainerinteraction.md)
+- [UISelectionFeedbackGenerator](./uiselectionfeedbackgenerator.md)
+- [UISpringLoadedInteraction](./uispringloadedinteraction.md)
+- [UITextInteraction](./uitextinteraction.md)
+- [UITextSelectionDisplayInteraction](./uitextselectiondisplayinteraction.md)
+- [UIToolTipInteraction](./uitooltipinteraction.md)
+- [UIWindowScene.ActivationInteraction](./uiwindowscene/activationinteraction.md)
+- [UIWindowSceneDragInteraction](./uiwindowscenedraginteraction.md)
+- [UIWritingToolsCoordinator](./uiwritingtoolscoordinator.md)
 
 ## See Also
 
-- [func addInteraction(any UIInteraction)](uiview/addinteraction(_:).md)
+### Adding and removing interactions
+- [func addInteraction(any UIInteraction)](./uiview/addinteraction%28_%29.md)
   Adds an interaction to the view.
-- [func removeInteraction(any UIInteraction)](uiview/removeinteraction(_:).md)
+- [func removeInteraction(any UIInteraction)](./uiview/removeinteraction%28_%29.md)
   Removes an interaction from the view.
-- [var interactions: [any UIInteraction]](uiview/interactions.md)
+- [var interactions: [any UIInteraction]](./uiview/interactions.md)
   The array of interactions for the view.
 
 

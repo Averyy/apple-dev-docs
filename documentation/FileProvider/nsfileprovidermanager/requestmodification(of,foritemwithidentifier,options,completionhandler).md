@@ -1,7 +1,8 @@
 # requestModification(of:forItemWithIdentifier:options:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -13,26 +14,39 @@
 ## Declaration
 
 ```swift
+func requestModification(of fields: NSFileProviderItemFields, forItemWithIdentifier itemIdentifier: NSFileProviderItemIdentifier, options: NSFileProviderModifyItemOptions = [], completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func requestModification(of fields: NSFileProviderItemFields, forItemWithIdentifier itemIdentifier: NSFileProviderItemIdentifier, options: NSFileProviderModifyItemOptions = []) async throws
+```
+
+```objc
+- (void) requestModificationOfFields:(NSFileProviderItemFields) fields forItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier options:(NSFileProviderModifyItemOptions) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func requestModification(of fields: NSFileProviderItemFields, forItemWithIdentifier itemIdentifier: NSFileProviderItemIdentifier, options: NSFileProviderModifyItemOptions = []) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func requestModification(of fields: NSFileProviderItemFields, forItemWithIdentifier itemIdentifier: NSFileProviderItemIdentifier, options: NSFileProviderModifyItemOptions = []) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 ## See Also
 
-- [func reimportItems(below: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/reimportitems(below:completionhandler:).md)
+### Working with items
+- [func reimportItems(below: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](./reimportitems%28below,completionhandler%29.md)
   Tells the system to reimport the item and its content recursively.
-- [func evictItem(identifier: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/evictitem(identifier:completionhandler:).md)
+- [func evictItem(identifier: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](./evictitem%28identifier,completionhandler%29.md)
   Asks the system to remove an item from its cache.
-- [func requestDownloadForItem(withIdentifier: NSFileProviderItemIdentifier, requestedRange: NSRange?) async throws](nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:).md)
-- [func requestDownloadForItem(withIdentifier: NSFileProviderItemIdentifier, requestedRange: NSRange?, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/requestdownloadforitem(withidentifier:requestedrange:completionhandler:).md)
-- [func enumeratorForMaterializedItems() -> any NSFileProviderEnumerator](nsfileprovidermanager/enumeratorformaterializeditems.md)
+- [func requestDownloadForItem(withIdentifier: NSFileProviderItemIdentifier, requestedRange: NSRange?) async throws](./requestdownloadforitem%28withidentifier,requestedrange%29.md)
+- [func requestDownloadForItem(withIdentifier: NSFileProviderItemIdentifier, requestedRange: NSRange?, completionHandler: ((any Error)?) -> Void)](./requestdownloadforitem%28withidentifier,requestedrange,completionhandler%29.md)
+- [func enumeratorForMaterializedItems() -> any NSFileProviderEnumerator](./enumeratorformaterializeditems%28%29.md)
   Returns an enumerator for all the items the system currently stores on disk.
-- [func enumeratorForPendingItems() -> any NSFileProviderPendingSetEnumerator](nsfileprovidermanager/enumeratorforpendingitems.md)
+- [func enumeratorForPendingItems() -> any NSFileProviderPendingSetEnumerator](./enumeratorforpendingitems%28%29.md)
   Returns an enumerator for the set of pending items.
 
 

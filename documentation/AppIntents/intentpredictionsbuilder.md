@@ -1,7 +1,8 @@
 # IntentPredictionsBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that allows you to declaratively describe the predictions for an app intent.
 
@@ -11,7 +12,7 @@ A result builder that allows you to declaratively describe the predictions for a
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,32 +25,33 @@ enum IntentPredictionsBuilder<Intent> where Intent : AppIntent
 ## Topics
 
 ### Building predictions
-- [static func buildBlock<A0>(A0) -> A0](intentpredictionsbuilder/buildblock(_:).md)
-- [static func buildBlock<A0, A1>(A0, A1) -> TupleIntentPrediction<A0.Intent, (A0, A1)>](intentpredictionsbuilder/buildblock(_:_:).md)
-- [static func buildBlock<A0, A1, A2>(A0, A1, A2) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2)>](intentpredictionsbuilder/buildblock(_:_:_:).md)
-- [struct TupleIntentPrediction](tupleintentprediction.md)
+- [static func buildBlock<A0>(A0) -> A0](./intentpredictionsbuilder/buildblock%28_%29.md)
+- [static func buildBlock<A0, A1>(A0, A1) -> TupleIntentPrediction<A0.Intent, (A0, A1)>](./intentpredictionsbuilder/buildblock%28_,_%29.md)
+- [static func buildBlock<A0, A1, A2>(A0, A1, A2) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2)>](./intentpredictionsbuilder/buildblock%28_,_,_%29.md)
+- [struct TupleIntentPrediction](./tupleintentprediction.md)
   A type that represents a collection of predictions for a specific app intent.
 ### Type Methods
-- [static func buildBlock<A0, A1, A2, A3>(A0, A1, A2, A3) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3)>](intentpredictionsbuilder/buildblock(_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4>(A0, A1, A2, A3, A4) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5>(A0, A1, A2, A3, A4, A5) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6>(A0, A1, A2, A3, A4, A5, A6) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7>(A0, A1, A2, A3, A4, A5, A6, A7) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8>(A0, A1, A2, A3, A4, A5, A6, A7, A8) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14)>](intentpredictionsbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
-- [static func buildExpression<A0>(A0) -> A0](intentpredictionsbuilder/buildexpression(_:).md)
+- [static func buildBlock<A0, A1, A2, A3>(A0, A1, A2, A3) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3)>](./intentpredictionsbuilder/buildblock%28_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4>(A0, A1, A2, A3, A4) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5>(A0, A1, A2, A3, A4, A5) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6>(A0, A1, A2, A3, A4, A5, A6) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7>(A0, A1, A2, A3, A4, A5, A6, A7) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8>(A0, A1, A2, A3, A4, A5, A6, A7, A8) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildBlock<A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14>(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14) -> TupleIntentPrediction<A0.Intent, (A0, A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14)>](./intentpredictionsbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
+- [static func buildExpression<A0>(A0) -> A0](./intentpredictionsbuilder/buildexpression%28_%29.md)
 
 ## See Also
 
-- [struct IntentPrediction](intentprediction.md)
+### Getting the supporting types
+- [struct IntentPrediction](./intentprediction.md)
   A prediction for an app intent that the system might display to someone when it’s relevant.
-- [associatedtype Prediction : IntentPredictionConfiguration](predictableintent/prediction.md)
-- [protocol IntentPredictionConfiguration](intentpredictionconfiguration.md)
+- [associatedtype Prediction : IntentPredictionConfiguration](./predictableintent/prediction.md)
+- [protocol IntentPredictionConfiguration](./intentpredictionconfiguration.md)
   An interface that provides the configuration for a single prediction.
 
 

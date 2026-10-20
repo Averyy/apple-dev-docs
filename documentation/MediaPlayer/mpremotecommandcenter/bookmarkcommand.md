@@ -1,7 +1,8 @@
 # bookmarkCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for indicating that a user wants to remember a media item.
 
@@ -18,6 +19,10 @@ The command object for indicating that a user wants to remember a media item.
 
 ```swift
 var bookmarkCommand: MPFeedbackCommand { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPFeedbackCommand * bookmarkCommand;
 ```
 
 #### Discussion

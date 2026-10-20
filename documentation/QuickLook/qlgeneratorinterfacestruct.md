@@ -1,7 +1,8 @@
 # QLGeneratorInterfaceStruct
 
 **Framework**: Quick Look  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque reference that provides callbacks that the platform uses to interface with a Quick Look plug-in.
 
@@ -14,23 +15,27 @@ An opaque reference that provides callbacks that the platform uses to interface 
 struct QLGeneratorInterfaceStruct
 ```
 
+```c
+typedef struct { ... } QLGeneratorInterfaceStruct;
+```
+
 ## Topics
 
 ### Creating a Quick Look Plug-In
-- [init()](qlgeneratorinterfacestruct/init.md)
+- [init()](./qlgeneratorinterfacestruct/init%28%29.md)
   Creates the interface structure that the platform uses to interface with a Quick Look plug-in.
-- [var QueryInterface: ((UnsafeMutableRawPointer?, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT)!](qlgeneratorinterfacestruct/queryinterface.md)
-- [var AddRef: ((UnsafeMutableRawPointer?) -> ULONG)!](qlgeneratorinterfacestruct/addref.md)
-- [var Release: ((UnsafeMutableRawPointer?) -> ULONG)!](qlgeneratorinterfacestruct/release.md)
-- [var GenerateThumbnailForURL: ((UnsafeMutableRawPointer?, QLThumbnailRequest?, CFURL?, CFString?, CFDictionary?, CGSize) -> OSStatus)!](qlgeneratorinterfacestruct/generatethumbnailforurl.md)
-- [var CancelThumbnailGeneration: ((UnsafeMutableRawPointer?, QLThumbnailRequest?) -> Void)!](qlgeneratorinterfacestruct/cancelthumbnailgeneration.md)
-- [var GeneratePreviewForURL: ((UnsafeMutableRawPointer?, QLPreviewRequest?, CFURL?, CFString?, CFDictionary?) -> OSStatus)!](qlgeneratorinterfacestruct/generatepreviewforurl.md)
-- [var CancelPreviewGeneration: ((UnsafeMutableRawPointer?, QLPreviewRequest?) -> Void)!](qlgeneratorinterfacestruct/cancelpreviewgeneration.md)
+- [var QueryInterface: ((UnsafeMutableRawPointer?, REFIID, UnsafeMutablePointer<LPVOID?>?) -> HRESULT)!](./qlgeneratorinterfacestruct/queryinterface.md)
+- [var AddRef: ((UnsafeMutableRawPointer?) -> ULONG)!](./qlgeneratorinterfacestruct/addref.md)
+- [var Release: ((UnsafeMutableRawPointer?) -> ULONG)!](./qlgeneratorinterfacestruct/release.md)
+- [var GenerateThumbnailForURL: ((UnsafeMutableRawPointer?, QLThumbnailRequest?, CFURL?, CFString?, CFDictionary?, CGSize) -> OSStatus)!](./qlgeneratorinterfacestruct/generatethumbnailforurl.md)
+- [var CancelThumbnailGeneration: ((UnsafeMutableRawPointer?, QLThumbnailRequest?) -> Void)!](./qlgeneratorinterfacestruct/cancelthumbnailgeneration.md)
+- [var GeneratePreviewForURL: ((UnsafeMutableRawPointer?, QLPreviewRequest?, CFURL?, CFString?, CFDictionary?) -> OSStatus)!](./qlgeneratorinterfacestruct/generatepreviewforurl.md)
+- [var CancelPreviewGeneration: ((UnsafeMutableRawPointer?, QLPreviewRequest?) -> Void)!](./qlgeneratorinterfacestruct/cancelpreviewgeneration.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

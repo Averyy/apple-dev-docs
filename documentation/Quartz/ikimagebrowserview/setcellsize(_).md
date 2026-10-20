@@ -1,7 +1,8 @@
 # setCellSize(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the cell  size.
 
@@ -14,9 +15,13 @@ Sets the cell  size.
 func setCellSize(_ size: NSSize)
 ```
 
+```objc
+- (void) setCellSize:(NSSize) size;
+```
+
 #### Discussion
 
-You must use `setCellSize` or [`setZoomValue(_:)`](ikimagebrowserview/setzoomvalue(_:).md), but not both. Setting the zoom value changes the cell size, and vice versa.
+You must use `setCellSize` or [`setZoomValue(_:)`](./setzoomvalue%28_%29.md), but not both. Setting the zoom value changes the cell size, and vice versa.
 
 ## Parameters
 
@@ -24,9 +29,11 @@ You must use `setCellSize` or [`setZoomValue(_:)`](ikimagebrowserview/setzoomval
 
 ## See Also
 
-- [func setZoomValue(Float)](ikimagebrowserview/setzoomvalue(_:).md)
+### Related Documentation
+- [func setZoomValue(Float)](./setzoomvalue%28_%29.md)
   Sets the zoom value.
-- [func cellSize() -> NSSize](ikimagebrowserview/cellsize.md)
+### Setting and Getting Cell Size
+- [func cellSize() -> NSSize](./cellsize%28%29.md)
   Returns the cell size.
 
 

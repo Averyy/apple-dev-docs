@@ -1,7 +1,8 @@
 # ApplePayMerchandisingPartnerConfiguration
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines the partner configuration for the ApplePayMerchandisingView
 
@@ -18,18 +19,18 @@ struct ApplePayMerchandisingPartnerConfiguration
 ## Topics
 
 ### Type Properties
-- [static let all: ApplePayMerchandisingPartnerConfiguration](applepaymerchandisingpartnerconfiguration/all.md)
+- [static let all: ApplePayMerchandisingPartnerConfiguration](./applepaymerchandisingpartnerconfiguration/all.md)
   Show all possible partners
-- [static let none: ApplePayMerchandisingPartnerConfiguration](applepaymerchandisingpartnerconfiguration/none.md)
+- [static let none: ApplePayMerchandisingPartnerConfiguration](./applepaymerchandisingpartnerconfiguration/none.md)
   Show no partners
 ### Type Methods
-- [static func limited(partnerIdentifiers: [String]) -> ApplePayMerchandisingPartnerConfiguration](applepaymerchandisingpartnerconfiguration/limited(partneridentifiers:).md)
+- [static func limited(partnerIdentifiers: [String]) -> ApplePayMerchandisingPartnerConfiguration](./applepaymerchandisingpartnerconfiguration/limited%28partneridentifiers%29.md)
   Show a limited number of specified partners
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,19 +18,19 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDFeaturesBUFWriteMask](1645935-anonymous/kdvdfeaturesbufwritemask.md)
-- [kDVDFeaturesCSSMask](1645935-anonymous/kdvdfeaturescssmask.md)
-- [kDVDFeaturesHDRAMMask](1645935-anonymous/kdvdfeatureshdrammask.md)
-- [kDVDFeaturesHDRMask](1645935-anonymous/kdvdfeatureshdrmask.md)
-- [kDVDFeaturesHDRWMask](1645935-anonymous/kdvdfeatureshdrwmask.md)
-- [kDVDFeaturesHDReadMask](1645935-anonymous/kdvdfeatureshdreadmask.md)
-- [kDVDFeaturesPlusRMask](1645935-anonymous/kdvdfeaturesplusrmask.md)
-- [kDVDFeaturesPlusRWMask](1645935-anonymous/kdvdfeaturesplusrwmask.md)
-- [kDVDFeaturesRandomWriteableMask](1645935-anonymous/kdvdfeaturesrandomwriteablemask.md)
-- [kDVDFeaturesReWriteableMask](1645935-anonymous/kdvdfeaturesrewriteablemask.md)
-- [kDVDFeaturesReadStructuresMask](1645935-anonymous/kdvdfeaturesreadstructuresmask.md)
-- [kDVDFeaturesTestWriteMask](1645935-anonymous/kdvdfeaturestestwritemask.md)
-- [kDVDFeaturesWriteOnceMask](1645935-anonymous/kdvdfeatureswriteoncemask.md)
+- [kDVDFeaturesBUFWriteMask](./api-1645935-anonymous/kdvdfeaturesbufwritemask.md)
+- [kDVDFeaturesCSSMask](./api-1645935-anonymous/kdvdfeaturescssmask.md)
+- [kDVDFeaturesHDRAMMask](./api-1645935-anonymous/kdvdfeatureshdrammask.md)
+- [kDVDFeaturesHDRMask](./api-1645935-anonymous/kdvdfeatureshdrmask.md)
+- [kDVDFeaturesHDRWMask](./api-1645935-anonymous/kdvdfeatureshdrwmask.md)
+- [kDVDFeaturesHDReadMask](./api-1645935-anonymous/kdvdfeatureshdreadmask.md)
+- [kDVDFeaturesPlusRMask](./api-1645935-anonymous/kdvdfeaturesplusrmask.md)
+- [kDVDFeaturesPlusRWMask](./api-1645935-anonymous/kdvdfeaturesplusrwmask.md)
+- [kDVDFeaturesRandomWriteableMask](./api-1645935-anonymous/kdvdfeaturesrandomwriteablemask.md)
+- [kDVDFeaturesReWriteableMask](./api-1645935-anonymous/kdvdfeaturesrewriteablemask.md)
+- [kDVDFeaturesReadStructuresMask](./api-1645935-anonymous/kdvdfeaturesreadstructuresmask.md)
+- [kDVDFeaturesTestWriteMask](./api-1645935-anonymous/kdvdfeaturestestwritemask.md)
+- [kDVDFeaturesWriteOnceMask](./api-1645935-anonymous/kdvdfeatureswriteoncemask.md)
 
 
 ---

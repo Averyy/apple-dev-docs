@@ -1,7 +1,8 @@
 # SubscriptionOfferMode
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that indicates the payment mode of a subscription offer.
 
@@ -10,23 +11,30 @@ A string that indicates the payment mode of a subscription offer.
 
 ## Declaration
 
-```swift
+```
 string SubscriptionOfferMode
 ```
+
+## Possible Values
+
+- `PAY_AS_YOU_GO`: A constant that indicates a subscription offer is billed over multiple billing periods.
+- `PAY_UP_FRONT`: A constant that indicates a subscription offer is billed one time, up front.
+- `FREE_TRIAL`: A constant that indicates a subscription offer is a free trial.
 
 #### Discussion
 
 ## See Also
 
-- [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)
+### Objects and types
+- [object SubscriptionOfferCode.Attributes](./subscriptionoffercode/attributes-data.dictionary.md)
   Attributes that describe a subscription offer code resource.
-- [type SubscriptionOfferDuration](subscriptionofferduration.md)
+- [type SubscriptionOfferDuration](./subscriptionofferduration.md)
   A length of time that can be assigned to a subscription.
-- [type SubscriptionOfferEligibility](subscriptionoffereligibility.md)
+- [type SubscriptionOfferEligibility](./subscriptionoffereligibility.md)
   A string that represents the eligibility of a subscription offer.
-- [type SubscriptionCustomerEligibility](subscriptioncustomereligibility.md)
+- [type SubscriptionCustomerEligibility](./subscriptioncustomereligibility.md)
   A string that represents a customer’s eligibility for a subscription offer.
-- [object SubscriptionOfferCode.Relationships](subscriptionoffercode/relationships-data.dictionary.md)
+- [object SubscriptionOfferCode.Relationships](./subscriptionoffercode/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,6 +1,7 @@
 # ForceFeedback.h
 
-**Framework**: Force Feedback
+**Framework**: Force Feedback  
+**Role**: API Collection
 
 Public Interfaces to the Force Feedback implementation in macOS.
 
@@ -19,73 +20,74 @@ The Force Feedback API allows developers to control Force Feedback devices attac
 ## Topics
 
 ### Miscellaneous
-- [func FFCreateDevice(io_service_t, UnsafeMutablePointer<FFDeviceObjectReference?>!) -> HRESULT](ffcreatedevice(_:_:).md)
+- [func FFCreateDevice(io_service_t, UnsafeMutablePointer<FFDeviceObjectReference?>!) -> HRESULT](./ffcreatedevice%28_,_%29.md)
   Creates a new API device object from an OS object in preparation to use the device for force feedback.
-- [func FFDeviceCreateEffect(FFDeviceObjectReference!, CFUUID!, UnsafeMutablePointer<FFEFFECT>!, UnsafeMutablePointer<FFEffectObjectReference?>!) -> HRESULT](ffdevicecreateeffect(_:_:_:_:).md)
+- [func FFDeviceCreateEffect(FFDeviceObjectReference!, CFUUID!, UnsafeMutablePointer<FFEFFECT>!, UnsafeMutablePointer<FFEffectObjectReference?>!) -> HRESULT](./ffdevicecreateeffect%28_,_,_,_%29.md)
   Creates and initializes an instance of an effect identified by the effect UUID on the device.
-- [func FFDeviceEscape(FFDeviceObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](ffdeviceescape(_:_:).md)
+- [func FFDeviceEscape(FFDeviceObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](./ffdeviceescape%28_,_%29.md)
   Sends a hardware-specific command to the device.
-- [func FFDeviceGetForceFeedbackCapabilities(FFDeviceObjectReference!, UnsafeMutablePointer<FFCAPABILITIES>!) -> HRESULT](ffdevicegetforcefeedbackcapabilities(_:_:).md)
+- [func FFDeviceGetForceFeedbackCapabilities(FFDeviceObjectReference!, UnsafeMutablePointer<FFCAPABILITIES>!) -> HRESULT](./ffdevicegetforcefeedbackcapabilities%28_,_%29.md)
   Retrieves the device’s force feedback capabilities.
-- [func FFDeviceGetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!, IOByteCount) -> HRESULT](ffdevicegetforcefeedbackproperty(_:_:_:_:).md)
+- [func FFDeviceGetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!, IOByteCount) -> HRESULT](./ffdevicegetforcefeedbackproperty%28_,_,_,_%29.md)
   Gets properties that define the device behavior.
-- [func FFDeviceGetForceFeedbackState(FFDeviceObjectReference!, UnsafeMutablePointer<FFState>!) -> HRESULT](ffdevicegetforcefeedbackstate(_:_:).md)
+- [func FFDeviceGetForceFeedbackState(FFDeviceObjectReference!, UnsafeMutablePointer<FFState>!) -> HRESULT](./ffdevicegetforcefeedbackstate%28_,_%29.md)
   Retrieves the state of the device’s force feedback system.
-- [func FFDeviceReleaseEffect(FFDeviceObjectReference!, FFEffectObjectReference!) -> HRESULT](ffdevicereleaseeffect(_:_:).md)
+- [func FFDeviceReleaseEffect(FFDeviceObjectReference!, FFEffectObjectReference!) -> HRESULT](./ffdevicereleaseeffect%28_,_%29.md)
   Disposes of an API effect object created with FFDeviceCreateEffect.
-- [func FFDeviceSendForceFeedbackCommand(FFDeviceObjectReference!, FFCommandFlag) -> HRESULT](ffdevicesendforcefeedbackcommand(_:_:).md)
+- [func FFDeviceSendForceFeedbackCommand(FFDeviceObjectReference!, FFCommandFlag) -> HRESULT](./ffdevicesendforcefeedbackcommand%28_,_%29.md)
   Sends a command to the device’s force feedback system.
-- [func FFDeviceSetCooperativeLevel(FFDeviceObjectReference!, UnsafeMutableRawPointer!, FFCooperativeLevelFlag) -> HRESULT](ffdevicesetcooperativelevel(_:_:_:).md)
+- [func FFDeviceSetCooperativeLevel(FFDeviceObjectReference!, UnsafeMutableRawPointer!, FFCooperativeLevelFlag) -> HRESULT](./ffdevicesetcooperativelevel%28_,_,_%29.md)
   Function is unimplemented in version 1.0 of this API
-- [func FFDeviceSetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!) -> HRESULT](ffdevicesetforcefeedbackproperty(_:_:_:).md)
+- [func FFDeviceSetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!) -> HRESULT](./ffdevicesetforcefeedbackproperty%28_,_,_%29.md)
   Retrieves the device’s force feedback capabilities.
-- [func FFEffectDownload(FFEffectObjectReference!) -> HRESULT](ffeffectdownload(_:).md)
+- [func FFEffectDownload(FFEffectObjectReference!) -> HRESULT](./ffeffectdownload%28_%29.md)
   Places the effect on the device. If the effect is already on the device, the existing effect is updated to match the values set by the FFEffectSetParameters method.
-- [func FFEffectEscape(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](ffeffectescape(_:_:).md)
+- [func FFEffectEscape(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](./ffeffectescape%28_,_%29.md)
   Sends a hardware-specific command to the driver.
-- [func FFEffectGetEffectStatus(FFEffectObjectReference!, UnsafeMutablePointer<FFEffectStatusFlag>!) -> HRESULT](ffeffectgeteffectstatus(_:_:).md)
+- [func FFEffectGetEffectStatus(FFEffectObjectReference!, UnsafeMutablePointer<FFEffectStatusFlag>!) -> HRESULT](./ffeffectgeteffectstatus%28_,_%29.md)
   Sends a hardware-specific command to the driver.
-- [func FFEffectGetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](ffeffectgetparameters(_:_:_:).md)
+- [func FFEffectGetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](./ffeffectgetparameters%28_,_,_%29.md)
   Retrieves information about an effect.
-- [func FFEffectSetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](ffeffectsetparameters(_:_:_:).md)
+- [func FFEffectSetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](./ffeffectsetparameters%28_,_,_%29.md)
   Sets the characteristics of an effect.
-- [func FFEffectStart(FFEffectObjectReference!, UInt32, FFEffectStartFlag) -> HRESULT](ffeffectstart(_:_:_:).md)
+- [func FFEffectStart(FFEffectObjectReference!, UInt32, FFEffectStartFlag) -> HRESULT](./ffeffectstart%28_,_,_%29.md)
   Begins playing an effect. If the effect is already playing, it is restarted from the beginning. If the effect has not been downloaded or has been modified since its last download, it is downloaded before being started. This default behavior can be suppressed by passing the FFES_NODOWNLOAD flag.
-- [func FFEffectStop(FFEffectObjectReference!) -> HRESULT](ffeffectstop(_:).md)
+- [func FFEffectStop(FFEffectObjectReference!) -> HRESULT](./ffeffectstop%28_%29.md)
   Stops playing an effect.
-- [func FFEffectUnload(FFEffectObjectReference!) -> HRESULT](ffeffectunload(_:).md)
+- [func FFEffectUnload(FFEffectObjectReference!) -> HRESULT](./ffeffectunload%28_%29.md)
   Removes the effect from the device. If the effect is playing, it is automatically stopped before it is unloaded.
-- [func FFIsForceFeedback(io_service_t) -> HRESULT](ffisforcefeedback(_:).md)
+- [func FFIsForceFeedback(io_service_t) -> HRESULT](./ffisforcefeedback%28_%29.md)
   Used to determine if a particular device provided by HID Manager is a force feedback device.
-- [func FFReleaseDevice(FFDeviceObjectReference!) -> HRESULT](ffreleasedevice(_:).md)
+- [func FFReleaseDevice(FFDeviceObjectReference!) -> HRESULT](./ffreleasedevice%28_%29.md)
   Disposes of an API device object created with FFCreateDevice.
 ### Data Types
-- [struct FFCAPABILITIES](ffcapabilities.md)
+- [struct FFCAPABILITIES](./ffcapabilities.md)
   Used by the FFDeviceGetForceFeedbackCapabilities method to retrieve device force-feedback capabilities.
-- [struct FFCONDITION](ffcondition.md)
+- [struct FFCONDITION](./ffcondition.md)
   A structure containing type-specific information for certain effects.
-- [struct FFCONSTANTFORCE](ffconstantforce.md)
+- [struct FFCONSTANTFORCE](./ffconstantforce.md)
   Contains type-specific information for the CONSTANTFORCE effect.
-- [struct FFCUSTOMFORCE](ffcustomforce.md)
+- [struct FFCUSTOMFORCE](./ffcustomforce.md)
   Contains type-specific information for the CUSTOMFORCE effect.
-- [struct FFEFFECT](ffeffect.md)
+- [struct FFEFFECT](./ffeffect.md)
   UsUsed by the FFDeviceCreateEffect method to initialize a new effect object. It is also used by the FFEffectSetParameters and FFEffectGetParameters functions.
-- [struct FFEFFESCAPE](ffeffescape.md)
+- [struct FFEFFESCAPE](./ffeffescape.md)
   The FFEFFESCAPE structure passes hardware-specific data directly to the Force Feedback plugIn.
-- [struct FFENVELOPE](ffenvelope.md)
+- [struct FFENVELOPE](./ffenvelope.md)
   Used by the FFEFFECT structure to specify the optional envelope parameters for an effect.
-- [struct FFPERIODIC](ffperiodic.md)
+- [struct FFPERIODIC](./ffperiodic.md)
   A structure containing type-specific information for certain effects.
-- [struct FFRAMPFORCE](fframpforce.md)
+- [struct FFRAMPFORCE](./fframpforce.md)
   Contains type-specific information for the RAMPFORCE effect.
 
 ## See Also
 
-- [ForceFeedbackConstants.h](forcefeedbackconstants-h.md)
+### Reference
+- [ForceFeedbackConstants.h](./forcefeedbackconstants-h.md)
   Constants used in the public interfaces to the Force Feedback implementation in macOS.
-- [ForceFeedback Enumerations](forcefeedback-enumerations.md)
-- [ForceFeedback Constants](forcefeedback-constants.md)
-- [ForceFeedback Data Types](forcefeedback-data-types.md)
+- [ForceFeedback Enumerations](./forcefeedback-enumerations.md)
+- [ForceFeedback Constants](./forcefeedback-constants.md)
+- [ForceFeedback Data Types](./forcefeedback-data-types.md)
 
 
 ---

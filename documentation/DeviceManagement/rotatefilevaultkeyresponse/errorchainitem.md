@@ -1,7 +1,8 @@
 # RotateFileVaultKeyResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -10,7 +11,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object RotateFileVaultKeyResponse.ErrorChainItem
 ```
 
@@ -23,7 +24,8 @@ object RotateFileVaultKeyResponse.ErrorChainItem
 
 ## See Also
 
-- [object RotateFileVaultKeyResponse.RotateResult](rotatefilevaultkeyresponse/rotateresult-data.dictionary.md)
+### Objects
+- [object RotateFileVaultKeyResponse.RotateResult](./rotateresult-data.dictionary.md)
   The result of rotating the personal recovery key.
 
 

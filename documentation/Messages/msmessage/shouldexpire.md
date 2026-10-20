@@ -1,7 +1,8 @@
 # shouldExpire
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the message should expire after being read.
 
@@ -16,29 +17,34 @@ A Boolean value that determines whether the message should expire after being re
 var shouldExpire: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL shouldExpire;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the message should expire after it is read. Expired messages are deleted a short time after being read by the recipient. The recipient may opt to keep the message.
+If [`true`](../../Swift/true.md), the message should expire after it is read. Expired messages are deleted a short time after being read by the recipient. The recipient may opt to keep the message.
 
-The `shouldExpire` property defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+The `shouldExpire` property defaults to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var accessibilityLabel: String?](msmessage/accessibilitylabel.md)
+### Message Properties
+- [var accessibilityLabel: String?](./accessibilitylabel.md)
   A localized string that describes the message.
-- [var error: (any Error)?](msmessage/error.md)
+- [var error: (any Error)?](./error.md)
   An error object describing why the system failed to send the message.
-- [var isPending: Bool](msmessage/ispending.md)
+- [var isPending: Bool](./ispending.md)
   A Boolean value that indicates whether the message is pending or whether it has been sent or received.
-- [var layout: MSMessageLayout?](msmessage/layout.md)
+- [var layout: MSMessageLayout?](./layout.md)
   A layout object that defines the message’s appearance.
-- [var senderParticipantIdentifier: UUID](msmessage/senderparticipantidentifier.md)
+- [var senderParticipantIdentifier: UUID](./senderparticipantidentifier.md)
   A UUID identifying the participant that sent the message.
-- [var session: MSSession?](msmessage/session.md)
+- [var session: MSSession?](./session.md)
   The session that this message belongs to.
-- [var summaryText: String?](msmessage/summarytext.md)
+- [var summaryText: String?](./summarytext.md)
   A succinct description of the message.
-- [var url: URL?](msmessage/url.md)
+- [var url: URL?](./url.md)
   A URL that encodes data to be transmitted with the message.
 
 

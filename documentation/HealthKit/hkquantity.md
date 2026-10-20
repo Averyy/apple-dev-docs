@@ -1,7 +1,8 @@
 # HKQuantity
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores a value for a given unit.
 
@@ -19,10 +20,14 @@ An object that stores a value for a given unit.
 class HKQuantity
 ```
 
+```objc
+@interface HKQuantity : NSObject
+```
+
 ## Mentions
 
-- [Defining and converting units and quantities](defining-and-converting-units-and-quantities.md)
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Defining and converting units and quantities](./defining-and-converting-units-and-quantities.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
 #### Overview
 
@@ -36,48 +41,49 @@ You can request the value from a quantity object in any compatible units. For ex
 
 ##### Using Quantities
 
-As with many HealthKit classes, don’t subclass the [`HKQuantity`](hkquantity.md) class. To help promote sharing data between apps, [`HKQuantity`](hkquantity.md) objects use only the units defined by the [`HKUnit`](hkunit.md) class.
+As with many HealthKit classes, don’t subclass the [`HKQuantity`](./hkquantity.md) class. To help promote sharing data between apps, [`HKQuantity`](./hkquantity.md) objects use only the units defined by the [`HKUnit`](./hkunit.md) class.
 
 ## Topics
 
 ### Creating Quantities
-- [convenience init(unit: HKUnit, doubleValue: Double)](hkquantity/init(unit:doublevalue:).md)
+- [convenience init(unit: HKUnit, doubleValue: Double)](./hkquantity/init%28unit,doublevalue%29.md)
   Instantiates and returns a new quantity object.
 ### Working With Units
-- [func `is`(compatibleWith: HKUnit) -> Bool](hkquantity/is(compatiblewith:).md)
+- [func `is`(compatibleWith: HKUnit) -> Bool](./hkquantity/is%28compatiblewith%29.md)
   Returns a boolean value indicating whether the quantity is compatible with the provided unit.
-- [func doubleValue(for: HKUnit) -> Double](hkquantity/doublevalue(for:).md)
+- [func doubleValue(for: HKUnit) -> Double](./hkquantity/doublevalue%28for%29.md)
   Returns the quantity’s value in the provided unit.
 ### Comparing Quantities
-- [func compare(HKQuantity) -> ComparisonResult](hkquantity/compare(_:).md)
+- [func compare(HKQuantity) -> ComparisonResult](./hkquantity/compare%28_%29.md)
   Compares two values after converting them to the same units.
 ### Initializers
-- [init?(coder: NSCoder)](hkquantity/init(coder:).md)
+- [init?(coder: NSCoder)](./hkquantity/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Defining and converting units and quantities](defining-and-converting-units-and-quantities.md)
+### Units and quantities
+- [Defining and converting units and quantities](./defining-and-converting-units-and-quantities.md)
   Create and convert units and quantities.
-- [class HKUnit](hkunit.md)
+- [class HKUnit](./hkunit.md)
   A class for managing the units of measure within HealthKit.
-- [enum HKMetricPrefix](hkmetricprefix.md)
+- [enum HKMetricPrefix](./hkmetricprefix.md)
   Prefixes that can be added to SI units to change the order of magnitude.
 
 

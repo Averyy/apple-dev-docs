@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the protocol implementation has been redirected.
@@ -19,6 +20,10 @@ Tells the client that the protocol implementation has been redirected.
 
 ```swift
 func urlProtocol(_ protocol: URLProtocol, wasRedirectedTo request: URLRequest, redirectResponse: URLResponse)
+```
+
+```objc
+- (void) URLProtocol:(NSURLProtocol *) protocol wasRedirectedToRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) redirectResponse;
 ```
 
 ## Parameters

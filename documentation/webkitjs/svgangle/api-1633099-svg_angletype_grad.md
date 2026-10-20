@@ -9,16 +9,17 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_ANGLETYPE_GRAD;
 ```
 
 ## See Also
 
-- [SVG_ANGLETYPE_DEG](svgangle/1629400-svg_angletype_deg.md)
-- [SVG_ANGLETYPE_RAD](svgangle/1629016-svg_angletype_rad.md)
-- [SVG_ANGLETYPE_UNKNOWN](svgangle/1628939-svg_angletype_unknown.md)
-- [SVG_ANGLETYPE_UNSPECIFIED](svgangle/1630860-svg_angletype_unspecified.md)
+### Miscellaneous
+- [SVG_ANGLETYPE_DEG](./api-1629400-svg_angletype_deg.md)
+- [SVG_ANGLETYPE_RAD](./api-1629016-svg_angletype_rad.md)
+- [SVG_ANGLETYPE_UNKNOWN](./api-1628939-svg_angletype_unknown.md)
+- [SVG_ANGLETYPE_UNSPECIFIED](./api-1630860-svg_angletype_unspecified.md)
 
 
 ---

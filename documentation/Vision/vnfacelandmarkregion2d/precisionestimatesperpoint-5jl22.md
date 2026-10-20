@@ -1,7 +1,8 @@
 # precisionEstimatesPerPoint
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Requests an array of precision estimates for each landmark point.
 
@@ -21,11 +22,12 @@ var precisionEstimatesPerPoint: [Float]? { get }
 
 #### Discussion
 
-This property is only populated when you configure your [`VNDetectFaceLandmarksRequest`](vndetectfacelandmarksrequest.md) object with [`VNRequestFaceLandmarksConstellation.constellation76Points`](vnrequestfacelandmarksconstellation/constellation76points.md). For other constellation types, this array is set to `nil`.
+This property is only populated when you configure your [`VNDetectFaceLandmarksRequest`](../vndetectfacelandmarksrequest.md) object with [`VNRequestFaceLandmarksConstellation.constellation76Points`](../vnrequestfacelandmarksconstellation/constellation76points.md). For other constellation types, this array is set to `nil`.
 
 ## See Also
 
-- [var normalizedPoints: [CGPoint]](vnfacelandmarkregion2d/normalizedpoints-7s7im.md)
+### Specifying Region Properties
+- [var normalizedPoints: [CGPoint]](./normalizedpoints-7s7im.md)
   The array of normalized landmark points.
 
 

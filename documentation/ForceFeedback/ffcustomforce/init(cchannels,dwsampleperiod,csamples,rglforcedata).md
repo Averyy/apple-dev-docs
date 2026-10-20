@@ -1,7 +1,8 @@
 # init(cChannels:dwSamplePeriod:cSamples:rglForceData:)
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init(cChannels: DWORD, dwSamplePeriod: DWORD, cSamples: DWORD, rglForceData: LPL
 
 ## See Also
 
-- [init()](ffcustomforce/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

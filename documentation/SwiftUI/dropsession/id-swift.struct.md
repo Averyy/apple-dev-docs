@@ -1,7 +1,8 @@
 # DropSession.ID
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The identifier of a drag session.
 
@@ -21,33 +22,34 @@ struct ID
 ## Topics
 
 ### Instance Methods
-- [func matches(_:)](dropsession/id-swift.struct/matches(_:).md)
+- [func matches(_:)](./id-swift.struct/matches%28_%29.md)
   Checks if the session value describes the same drag session as the object provided by AppKit.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var id: DropSession.ID](dropsession/id-swift.property.md)
+### Getting drop session details
+- [var id: DropSession.ID](./id-swift.property.md)
   The unique identifier of the drop session.
-- [var localSession: DropSession.LocalSession?](dropsession/localsession-swift.property.md)
+- [var localSession: DropSession.LocalSession?](./localsession-swift.property.md)
   Provides additional information about a session if it originated within the app.
-- [DropSession.LocalSession](dropsession/localsession-swift.struct.md)
+- [DropSession.LocalSession](./localsession-swift.struct.md)
   Describes the session originated within the app.
-- [var phase: DropSession.Phase](dropsession/phase-swift.property.md)
+- [var phase: DropSession.Phase](./phase-swift.property.md)
   The phase of the current drop session.
-- [DropSession.Phase](dropsession/phase-swift.enum.md)
+- [DropSession.Phase](./phase-swift.enum.md)
   The phase of the current drop session.
-- [var suggestedOperations: DropOperation.Set](dropsession/suggestedoperations.md)
+- [var suggestedOperations: DropOperation.Set](./suggestedoperations.md)
   Operations suggested by the drag source.
 
 

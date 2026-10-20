@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance from a string interpolation.
@@ -28,6 +29,12 @@ Most `StringInterpolation` types will store information about the literals and i
 ## Parameters
 
 - `stringInterpolation`: An instance of `StringInterpolation` which has had each segment of the string literal appended to it.
+
+## Default Implementations
+
+### ExpressibleByStringInterpolation Implementations
+- [init(stringInterpolation: DefaultStringInterpolation)](./init%28stringinterpolation%29-hhnp.md)
+  Creates a new instance from an interpolated string literal.
 
 
 ---

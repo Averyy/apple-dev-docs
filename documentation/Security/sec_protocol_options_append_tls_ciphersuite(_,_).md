@@ -1,7 +1,8 @@
 # sec_protocol_options_append_tls_ciphersuite(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_append_tls_ciphersuite(_ options: sec_protocol_options_t, _ ciphersuite: tls_ciphersuite_t)
+```
+
+```c
+void sec_protocol_options_append_tls_ciphersuite(sec_protocol_options_t options, tls_ciphersuite_t ciphersuite);
 ```
 
 #### Discussion

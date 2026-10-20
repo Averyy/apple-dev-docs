@@ -1,7 +1,8 @@
 # MTLTriangleFillMode.fill
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rasterize triangle and triangle strip primitives as filled triangles.
 
@@ -10,7 +11,7 @@ Rasterize triangle and triangle strip primitives as filled triangles.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ Rasterize triangle and triangle strip primitives as filled triangles.
 case fill
 ```
 
+```c
+MTLTriangleFillModeFill
+```
+
 ## See Also
 
-- [MTLTriangleFillMode.lines](mtltrianglefillmode/lines.md)
+### Fill modes
+- [MTLTriangleFillMode.lines](./lines.md)
   Rasterize triangle and triangle strip primitives as lines.
 
 

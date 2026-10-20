@@ -1,12 +1,13 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a shared instance of the typesetter.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Returns a shared instance of the typesetter.
 class var shared: NSATSTypesetter { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSATSTypesetter * sharedTypesetter;
+```
+
 ## See Also
 
-- [class NSTypesetter](nstypesetter.md)
+### Related Documentation
+- [class NSTypesetter](../nstypesetter.md)
   An abstract class that performs various type layout tasks.
 
 

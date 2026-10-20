@@ -1,211 +1,213 @@
 # View styles
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Apply built-in and custom appearances and behaviors to different types of views.
 
 #### Overview
 
-SwiftUI defines built-in styles for certain kinds of views and automatically selects the appropriate style for a particular presentation context. For example, a [`Label`](label.md) might appear as an icon, a string title, or both, depending on factors like the platform, whether the view appears in a toolbar, and so on.
+SwiftUI defines built-in styles for certain kinds of views and automatically selects the appropriate style for a particular presentation context. For example, a [`Label`](./label.md) might appear as an icon, a string title, or both, depending on factors like the platform, whether the view appears in a toolbar, and so on.
 
-![None](/images/com.apple.SwiftUI/view-styles-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/view-styles-hero@2x.png)
 
 You can override the automatic style by using one of the style view modifiers. These modifiers typically propagate throughout a container view, so that you can wrap a view hierarchy in a style modifier to affect all the views of the given type within the hierarchy.
 
-Any of the style protocols that define a `makeBody(configuration:)` method, like [`ToggleStyle`](togglestyle.md), also enable you to define custom styles. Create a type that conforms to the corresponding style protocol and implement its `makeBody(configuration:)` method. Then apply the new style using a style view modifier exactly like a built-in style.
+Any of the style protocols that define a `makeBody(configuration:)` method, like [`ToggleStyle`](./togglestyle.md), also enable you to define custom styles. Create a type that conforms to the corresponding style protocol and implement its `makeBody(configuration:)` method. Then apply the new style using a style view modifier exactly like a built-in style.
 
 ## Topics
 
 ### Styling views with Liquid Glass
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
   Configure, combine, and morph views using Liquid Glass effects.
-- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
+- [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.
-- [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
+- [func glassEffect(Glass, in: some Shape) -> some View](./view/glasseffect%28_,in%29.md)
   Applies the Liquid Glass effect to a view.
-- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](./view/glasseffectid%28_,in%29.md)
   Associates an identity value to Liquid Glass effects defined within this view.
-- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+- [func glassEffectTransition(GlassEffectTransition) -> some View](./view/glasseffecttransition%28_%29.md)
   Associates a glass effect transition with any glass effects defined within this view.
-- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](./view/glasseffectunion%28id,namespace%29.md)
   Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
-- [func interactive(Bool) -> Glass](glass/interactive(_:).md)
+- [func interactive(Bool) -> Glass](./glass/interactive%28_%29.md)
   Returns a copy of the structure configured to be interactive.
-- [struct GlassEffectContainer](glasseffectcontainer.md)
+- [struct GlassEffectContainer](./glasseffectcontainer.md)
   A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
-- [struct GlassEffectTransition](glasseffecttransition.md)
+- [struct GlassEffectTransition](./glasseffecttransition.md)
   A structure that describes changes to apply when a glass effect is added or removed from the view hierarchy.
-- [struct GlassButtonStyle](glassbuttonstyle.md)
+- [struct GlassButtonStyle](./glassbuttonstyle.md)
   A button style that applies glass border artwork based on the button’s context.
-- [struct GlassProminentButtonStyle](glassprominentbuttonstyle.md)
+- [struct GlassProminentButtonStyle](./glassprominentbuttonstyle.md)
   A button style that applies prominent glass border artwork based on the button’s context.
-- [struct DefaultGlassEffectShape](defaultglasseffectshape.md)
+- [struct DefaultGlassEffectShape](./defaultglasseffectshape.md)
   The default shape applied by glass effects, a capsule.
 ### Styling buttons
-- [func buttonStyle(_:)](view/buttonstyle(_:).md)
+- [func buttonStyle(_:)](./view/buttonstyle%28_%29.md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [protocol ButtonStyle](buttonstyle.md)
+- [protocol ButtonStyle](./buttonstyle.md)
   A type that applies standard interaction behavior and a custom appearance to all buttons within a view hierarchy.
-- [struct ButtonStyleConfiguration](buttonstyleconfiguration.md)
+- [struct ButtonStyleConfiguration](./buttonstyleconfiguration.md)
   The properties of a button.
-- [protocol PrimitiveButtonStyle](primitivebuttonstyle.md)
+- [protocol PrimitiveButtonStyle](./primitivebuttonstyle.md)
   A type that applies custom interaction behavior and a custom appearance to all buttons within a view hierarchy.
-- [struct PrimitiveButtonStyleConfiguration](primitivebuttonstyleconfiguration.md)
+- [struct PrimitiveButtonStyleConfiguration](./primitivebuttonstyleconfiguration.md)
   The properties of a button.
-- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
+- [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](./view/signinwithapplebuttonstyle%28_%29.md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./view/buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](./buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
 ### Styling pickers
-- [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
+- [func pickerStyle<S>(S) -> some View](./view/pickerstyle%28_%29.md)
   Sets the style for pickers within this view.
-- [protocol PickerStyle](pickerstyle.md)
+- [protocol PickerStyle](./pickerstyle.md)
   A type that specifies the appearance and interaction of all pickers within a view hierarchy.
-- [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
+- [func datePickerStyle<S>(S) -> some View](./view/datepickerstyle%28_%29.md)
   Sets the style for date pickers within this view.
-- [protocol DatePickerStyle](datepickerstyle.md)
+- [protocol DatePickerStyle](./datepickerstyle.md)
   A type that specifies the appearance and interaction of all date pickers within a view hierarchy.
 ### Styling menus
-- [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
+- [func menuStyle<S>(S) -> some View](./view/menustyle%28_%29.md)
   Sets the style for menus within this view.
-- [protocol MenuStyle](menustyle.md)
+- [protocol MenuStyle](./menustyle.md)
   A type that applies standard interaction behavior and a custom appearance to all menus within a view hierarchy.
-- [struct MenuStyleConfiguration](menustyleconfiguration.md)
+- [struct MenuStyleConfiguration](./menustyleconfiguration.md)
   A configuration of a menu.
 ### Styling toggles
-- [func toggleStyle<S>(S) -> some View](view/togglestyle(_:).md)
+- [func toggleStyle<S>(S) -> some View](./view/togglestyle%28_%29.md)
   Sets the style for toggles in a view hierarchy.
-- [protocol ToggleStyle](togglestyle.md)
+- [protocol ToggleStyle](./togglestyle.md)
   The appearance and behavior of a toggle.
-- [struct ToggleStyleConfiguration](togglestyleconfiguration.md)
+- [struct ToggleStyleConfiguration](./togglestyleconfiguration.md)
   The properties of a toggle instance.
 ### Styling indicators
-- [func gaugeStyle<S>(S) -> some View](view/gaugestyle(_:).md)
+- [func gaugeStyle<S>(S) -> some View](./view/gaugestyle%28_%29.md)
   Sets the style for gauges within this view.
-- [protocol GaugeStyle](gaugestyle.md)
+- [protocol GaugeStyle](./gaugestyle.md)
   Defines the implementation of all gauge instances within a view hierarchy.
-- [struct GaugeStyleConfiguration](gaugestyleconfiguration.md)
+- [struct GaugeStyleConfiguration](./gaugestyleconfiguration.md)
   The properties of a gauge instance.
-- [func progressViewStyle<S>(S) -> some View](view/progressviewstyle(_:).md)
+- [func progressViewStyle<S>(S) -> some View](./view/progressviewstyle%28_%29.md)
   Sets the style for progress views in this view.
-- [protocol ProgressViewStyle](progressviewstyle.md)
+- [protocol ProgressViewStyle](./progressviewstyle.md)
   A type that applies standard interaction behavior to all progress views within a view hierarchy.
-- [struct ProgressViewStyleConfiguration](progressviewstyleconfiguration.md)
+- [struct ProgressViewStyleConfiguration](./progressviewstyleconfiguration.md)
   The properties of a progress view instance.
 ### Styling views that display text
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
-- [protocol LabelStyle](labelstyle.md)
+- [protocol LabelStyle](./labelstyle.md)
   A type that applies a custom appearance to all labels within a view.
-- [struct LabelStyleConfiguration](labelstyleconfiguration.md)
+- [struct LabelStyleConfiguration](./labelstyleconfiguration.md)
   The properties of a label.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [protocol TextFieldStyle](textfieldstyle.md)
+- [protocol TextFieldStyle](./textfieldstyle.md)
   A specification for the appearance and interaction of a text field.
-- [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
+- [func textEditorStyle(some TextEditorStyle) -> some View](./view/texteditorstyle%28_%29.md)
   Sets the style for text editors within this view.
-- [protocol TextEditorStyle](texteditorstyle.md)
+- [protocol TextEditorStyle](./texteditorstyle.md)
   A specification for the appearance and interaction of a text editor.
-- [struct TextEditorStyleConfiguration](texteditorstyleconfiguration.md)
+- [struct TextEditorStyleConfiguration](./texteditorstyleconfiguration.md)
   The properties of a text editor.
 ### Styling collection views
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
-- [protocol ListStyle](liststyle.md)
+- [protocol ListStyle](./liststyle.md)
   A protocol that describes the behavior and appearance of a list.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
-- [protocol TableStyle](tablestyle.md)
+- [protocol TableStyle](./tablestyle.md)
   A type that applies a custom appearance to all tables within a view.
-- [struct TableStyleConfiguration](tablestyleconfiguration.md)
+- [struct TableStyleConfiguration](./tablestyleconfiguration.md)
   The properties of a table.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
-- [protocol DisclosureGroupStyle](disclosuregroupstyle.md)
+- [protocol DisclosureGroupStyle](./disclosuregroupstyle.md)
   A type that specifies the appearance and interaction of disclosure groups within a view hierarchy.
 ### Styling navigation views
-- [func navigationSplitViewStyle<S>(S) -> some View](view/navigationsplitviewstyle(_:).md)
+- [func navigationSplitViewStyle<S>(S) -> some View](./view/navigationsplitviewstyle%28_%29.md)
   Sets the style for navigation split views within this view.
-- [protocol NavigationSplitViewStyle](navigationsplitviewstyle.md)
+- [protocol NavigationSplitViewStyle](./navigationsplitviewstyle.md)
   A type that specifies the appearance and interaction of navigation split views within a view hierarchy.
-- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+- [func tabViewStyle<S>(S) -> some View](./view/tabviewstyle%28_%29.md)
   Sets the style for the tab view within the current environment.
-- [protocol TabViewStyle](tabviewstyle.md)
+- [protocol TabViewStyle](./tabviewstyle.md)
   A specification for the appearance and interaction of a tab view.
 ### Styling groups
-- [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
+- [func controlGroupStyle<S>(S) -> some View](./view/controlgroupstyle%28_%29.md)
   Sets the style for control groups within this view.
-- [protocol ControlGroupStyle](controlgroupstyle.md)
+- [protocol ControlGroupStyle](./controlgroupstyle.md)
   Defines the implementation of all control groups within a view hierarchy.
-- [struct ControlGroupStyleConfiguration](controlgroupstyleconfiguration.md)
+- [struct ControlGroupStyleConfiguration](./controlgroupstyleconfiguration.md)
   The properties of a control group.
-- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+- [func formStyle<S>(S) -> some View](./view/formstyle%28_%29.md)
   Sets the style for forms in a view hierarchy.
-- [protocol FormStyle](formstyle.md)
+- [protocol FormStyle](./formstyle.md)
   The appearance and behavior of a form.
-- [struct FormStyleConfiguration](formstyleconfiguration.md)
+- [struct FormStyleConfiguration](./formstyleconfiguration.md)
   The properties of a form instance.
-- [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
+- [func groupBoxStyle<S>(S) -> some View](./view/groupboxstyle%28_%29.md)
   Sets the style for group boxes within this view.
-- [protocol GroupBoxStyle](groupboxstyle.md)
+- [protocol GroupBoxStyle](./groupboxstyle.md)
   A type that specifies the appearance and interaction of all group boxes within a view hierarchy.
-- [struct GroupBoxStyleConfiguration](groupboxstyleconfiguration.md)
+- [struct GroupBoxStyleConfiguration](./groupboxstyleconfiguration.md)
   The properties of a group box instance.
-- [func indexViewStyle<S>(S) -> some View](view/indexviewstyle(_:).md)
+- [func indexViewStyle<S>(S) -> some View](./view/indexviewstyle%28_%29.md)
   Sets the style for the index view within the current environment.
-- [protocol IndexViewStyle](indexviewstyle.md)
+- [protocol IndexViewStyle](./indexviewstyle.md)
   Defines the implementation of all `IndexView` instances within a view hierarchy.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./view/labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
-- [protocol LabeledContentStyle](labeledcontentstyle.md)
+- [protocol LabeledContentStyle](./labeledcontentstyle.md)
   The appearance and behavior of a labeled content instance..
-- [struct LabeledContentStyleConfiguration](labeledcontentstyleconfiguration.md)
+- [struct LabeledContentStyleConfiguration](./labeledcontentstyleconfiguration.md)
   The properties of a labeled content instance.
 ### Styling windows from a view inside the window
-- [func presentedWindowStyle<S>(S) -> some View](view/presentedwindowstyle(_:).md)
+- [func presentedWindowStyle<S>(S) -> some View](./view/presentedwindowstyle%28_%29.md)
   Sets the style for windows created by interacting with this view.
-- [func presentedWindowToolbarStyle<S>(S) -> some View](view/presentedwindowtoolbarstyle(_:).md)
+- [func presentedWindowToolbarStyle<S>(S) -> some View](./view/presentedwindowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar in windows created by interacting with this view.
 ### Adding a glass background on views in visionOS
-- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
+- [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
-- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
+- [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](./view/glassbackgroundeffect%28in,displaymode%29.md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
-- [enum GlassBackgroundDisplayMode](glassbackgrounddisplaymode.md)
+- [enum GlassBackgroundDisplayMode](./glassbackgrounddisplaymode.md)
   The display mode of a glass background.
-- [protocol GlassBackgroundEffect](glassbackgroundeffect.md)
+- [protocol GlassBackgroundEffect](./glassbackgroundeffect.md)
   A specification for the appearance of a glass background.
-- [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
+- [struct AutomaticGlassBackgroundEffect](./automaticglassbackgroundeffect.md)
   The automatic glass background effect.
-- [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
+- [struct GlassBackgroundEffectConfiguration](./glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
-- [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+- [struct FeatheredGlassBackgroundEffect](./featheredglassbackgroundeffect.md)
   The feathered glass background effect.
-- [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
+- [struct PlateGlassBackgroundEffect](./plateglassbackgroundeffect.md)
   The plate glass background effect.
 
 ## See Also
 
-- [View fundamentals](view-fundamentals.md)
+### Views
+- [View fundamentals](./view-fundamentals.md)
   Define the visual elements of your app using a hierarchy of views.
-- [View configuration](view-configuration.md)
+- [View configuration](./view-configuration.md)
   Adjust the characteristics of views in a hierarchy.
-- [Animations](animations.md)
+- [Animations](./animations.md)
   Create smooth visual updates in response to state changes.
-- [Text input and output](text-input-and-output.md)
+- [Text input and output](./text-input-and-output.md)
   Display formatted text and get text input from the user.
-- [Images](images.md)
+- [Images](./images.md)
   Add images and symbols to your app’s user interface.
-- [Controls and indicators](controls-and-indicators.md)
+- [Controls and indicators](./controls-and-indicators.md)
   Display values and get user selections.
-- [Menus and commands](menus-and-commands.md)
+- [Menus and commands](./menus-and-commands.md)
   Provide space-efficient, context-dependent access to commands and controls.
-- [Shapes](shapes.md)
+- [Shapes](./shapes.md)
   Trace and fill built-in and custom shapes with a color, gradient, or other pattern.
-- [Drawing and graphics](drawing-and-graphics.md)
+- [Drawing and graphics](./drawing-and-graphics.md)
   Enhance your views with graphical effects and customized drawings.
 
 

@@ -1,17 +1,22 @@
 # pictRepresentation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image representation’s PICT data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var pictRepresentation: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * PICTRepresentation;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The data does not include the 512-byte header, if it was present in the original
 
 ## See Also
 
-- [var boundingBox: NSRect](nspictimagerep/boundingbox.md)
+### Getting Data
+- [var boundingBox: NSRect](./boundingbox.md)
   The rectangle that bounds the image representation.
 
 

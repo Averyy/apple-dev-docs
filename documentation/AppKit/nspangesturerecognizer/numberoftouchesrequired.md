@@ -1,12 +1,13 @@
 # numberOfTouchesRequired
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 **Availability**:
-- macOS 10.12.2+
+- macOS 10.12.2+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The number of necessary touches on a Touch Bar for the gesture recognizer to mat
 var numberOfTouchesRequired: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfTouchesRequired;
+```
+
 ## See Also
 
-- [class NSTouchBar](nstouchbar.md)
+### Related Documentation
+- [class NSTouchBar](../nstouchbar.md)
   An object that provides dynamic contextual controls in the Touch Bar of supported models of MacBook Pro.
-- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
+### Setting the number of touches
+- [var maximumNumberOfTouches: Int](./maximumnumberoftouches.md)
   The maximum number of touches allowed to recognize this gesture
-- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+- [var minimumNumberOfTouches: Int](./minimumnumberoftouches.md)
   The minimum number of touches needed to recognize this gesture
 
 

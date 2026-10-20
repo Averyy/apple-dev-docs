@@ -1,7 +1,8 @@
 # setClassName(_:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a mapping for this archiver to encode instances of a given class with the provided name, rather than their real name.
 
@@ -20,6 +21,10 @@ Sets a mapping for this archiver to encode instances of a given class with the p
 func setClassName(_ codedName: String?, for cls: AnyClass)
 ```
 
+```objc
+- (void) setClassName:(NSString *) codedName forClass:(Class) cls;
+```
+
 #### Discussion
 
 When encoding, the receiver’s translation map overrides any translation that may also be present in the class’s map.
@@ -31,11 +36,12 @@ When encoding, the receiver’s translation map overrides any translation that m
 
 ## See Also
 
-- [class func setClassName(String?, for: AnyClass)](nskeyedarchiver/setclassname(_:for:)-swift.type.method.md)
+### Managing Classes and Class Names
+- [class func setClassName(String?, for: AnyClass)](./setclassname%28_,for%29-swift.type.method.md)
   Sets a global translation mapping to encode instances of a given class with the provided name, rather than their real name.
-- [class func className(for: AnyClass) -> String?](nskeyedarchiver/classname(for:)-swift.type.method.md)
+- [class func className(for: AnyClass) -> String?](./classname%28for%29-swift.type.method.md)
   Returns the class name with which the archiver class encodes instances of a given class.
-- [func className(for: AnyClass) -> String?](nskeyedarchiver/classname(for:)-swift.method.md)
+- [func className(for: AnyClass) -> String?](./classname%28for%29-swift.method.md)
   Returns the class name with which this archiver encodes instances of a given class.
 
 

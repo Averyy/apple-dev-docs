@@ -1,7 +1,8 @@
 # min()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum element in the sequence.
 
@@ -21,6 +22,8 @@ Returns the minimum element in the sequence.
 func min() -> Self.Element?
 ```
 
+Available when `Element` conforms to `Comparable`.
+
 #### Return Value
 
 The sequence’s minimum element. If the sequence has no elements, returns `nil`.
@@ -36,7 +39,7 @@ print(lowestHeight)
 // Prints "Optional(58.5)"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 
 ---

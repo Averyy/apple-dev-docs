@@ -1,7 +1,8 @@
 # transientEntities
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Retrieve a transient app entity definition using subscript syntax.
 
@@ -35,15 +36,16 @@ let tempOrder = definitions.transientEntities[
 
 ## See Also
 
-- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](intentdefinitions/entities.md)
+### Accessing app entities and queries
+- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](./entities.md)
   The definitions for the target app’s app entities.
-- [struct AppEntityDefinition](appentitydefinition.md)
+- [struct AppEntityDefinition](../appentitydefinition.md)
   A definition you use to dynamically create entity instances for testing.
-- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](intentdefinitions/valuequeries.md)
+- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](./valuequeries.md)
   The definitions for the app’s intent value queries.
-- [struct IntentValueQueryDefinition](intentvaluequerydefinition.md)
+- [struct IntentValueQueryDefinition](../intentvaluequerydefinition.md)
   A definition you use to create an intent value query for testing.
-- [struct TransientAppEntityDefinition](transientappentitydefinition.md)
+- [struct TransientAppEntityDefinition](../transientappentitydefinition.md)
   A definition you use to dynamically create transient app entities for testing.
 
 

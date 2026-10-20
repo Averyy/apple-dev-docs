@@ -1,7 +1,8 @@
 # callAsFunction(at:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the document at the specified file URL.
 
@@ -17,7 +18,7 @@ func callAsFunction(at url: URL) async throws
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`openDocument`](environmentvalues/opendocument.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`openDocument`](../environmentvalues/opendocument.md) action:
 
 ```swift
 do {
@@ -27,7 +28,7 @@ do {
 }
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 

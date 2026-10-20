@@ -1,15 +1,20 @@
 # totalSCOBytesReceived
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var totalSCOBytesReceived: UInt64
+```
+
+```c
+uint64_t totalSCOBytesReceived;
 ```
 
 

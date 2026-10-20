@@ -1,7 +1,8 @@
 # collisionDelegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that you want to respond to collisions for the collision behavior.
 
@@ -9,7 +10,7 @@ The delegate object that you want to respond to collisions for the collision beh
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,10 +19,15 @@ The delegate object that you want to respond to collisions for the collision beh
 weak var collisionDelegate: (any UICollisionBehaviorDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, readwrite, nullable) id<UICollisionBehaviorDelegate> collisionDelegate;
+```
+
 ## See Also
 
-- [protocol UICollisionBehaviorDelegate](uicollisionbehaviordelegate.md)
-  To respond to UIKit dynamic item collisions, configure a custom class to adopt the [`UICollisionBehaviorDelegate`](uicollisionbehaviordelegate.md) protocol. Then, in a collision behavior (an instance of the [`UICollisionBehavior`](uicollisionbehavior.md) class), set the delegate to be an instance of your custom class.
+### Customizing the collision behavior
+- [protocol UICollisionBehaviorDelegate](../uicollisionbehaviordelegate.md)
+  To respond to UIKit dynamic item collisions, configure a custom class to adopt the [`UICollisionBehaviorDelegate`](../uicollisionbehaviordelegate.md) protocol. Then, in a collision behavior (an instance of the [`UICollisionBehavior`](../uicollisionbehavior.md) class), set the delegate to be an instance of your custom class.
 
 
 ---

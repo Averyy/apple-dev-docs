@@ -1,7 +1,8 @@
 # IOUSBDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The base descriptor type.
 
@@ -10,23 +11,24 @@ The base descriptor type.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDescriptorHeader IOUSBDescriptor;
 ```
 
 #### Discussion
 
-Use this type to represent generic descriptor definitions. For more information about descriptors, see section 9.5 of the USB 2.0 specification at [`https://www.usb.org/`](https://developer.apple.comhttps://www.usb.org/).
+Use this type to represent generic descriptor definitions. For more information about descriptors, see section 9.5 of the USB 2.0 specification at [https://www.usb.org/](https://www.usb.org/).
 
 ## See Also
 
-- [IOUSBDescriptorHeader](iousbdescriptorheader.md)
+### Descriptor Fundamentals
+- [IOUSBDescriptorHeader](./iousbdescriptorheader.md)
   The base descriptor header.
-- [tIOUSBDescriptorType](tiousbdescriptortype.md)
+- [tIOUSBDescriptorType](./tiousbdescriptortype.md)
   Constants describing the types of descriptors available for a USB device.
-- [tIOUSBDescriptorSize](tiousbdescriptorsize.md)
+- [tIOUSBDescriptorSize](./tiousbdescriptorsize.md)
   Constants for the number of bytes in descriptor structures.
-- [Descriptor Utilities](descriptor-utilities.md)
+- [Descriptor Utilities](./descriptor-utilities.md)
   Iterate over the descriptors of a USB device and fetch specific values.
 
 

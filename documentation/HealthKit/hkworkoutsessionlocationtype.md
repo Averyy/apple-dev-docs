@@ -1,7 +1,8 @@
 # HKWorkoutSessionLocationType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A constant indicating whether the workout session takes place indoors or outdoors.
 
@@ -19,39 +20,44 @@ A constant indicating whether the workout session takes place indoors or outdoor
 enum HKWorkoutSessionLocationType
 ```
 
+```c
+enum HKWorkoutSessionLocationType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [HKWorkoutSessionLocationType.unknown](hkworkoutsessionlocationtype/unknown.md)
+- [HKWorkoutSessionLocationType.unknown](./hkworkoutsessionlocationtype/unknown.md)
   It is not known whether the workout session is taking place indoors or outdoors.
-- [HKWorkoutSessionLocationType.indoor](hkworkoutsessionlocationtype/indoor.md)
+- [HKWorkoutSessionLocationType.indoor](./hkworkoutsessionlocationtype/indoor.md)
   The workout session is indoors.
-- [HKWorkoutSessionLocationType.outdoor](hkworkoutsessionlocationtype/outdoor.md)
+- [HKWorkoutSessionLocationType.outdoor](./hkworkoutsessionlocationtype/outdoor.md)
   The workout session is outdoors.
 ### Initializers
-- [init?(rawValue: Int)](hkworkoutsessionlocationtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkworkoutsessionlocationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var activityType: HKWorkoutActivityType](hkworkoutconfiguration/activitytype.md)
+### Session settings
+- [var activityType: HKWorkoutActivityType](./hkworkoutconfiguration/activitytype.md)
   The workout session’s activity type.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutconfiguration/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./hkworkoutconfiguration/locationtype.md)
   The workout session’s location.
-- [var swimmingLocationType: HKWorkoutSwimmingLocationType](hkworkoutconfiguration/swimminglocationtype.md)
+- [var swimmingLocationType: HKWorkoutSwimmingLocationType](./hkworkoutconfiguration/swimminglocationtype.md)
   The workout session’s swimming location.
-- [enum HKWorkoutSwimmingLocationType](hkworkoutswimminglocationtype.md)
+- [enum HKWorkoutSwimmingLocationType](./hkworkoutswimminglocationtype.md)
   The possible locations for swimming.
-- [var lapLength: HKQuantity?](hkworkoutconfiguration/laplength.md)
+- [var lapLength: HKQuantity?](./hkworkoutconfiguration/laplength.md)
   The length of the lap for a workout session.
 
 

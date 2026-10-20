@@ -1,7 +1,8 @@
 # init(set:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a counted set object initialized with the contents of a given set.
 
@@ -20,6 +21,10 @@ Returns a counted set object initialized with the contents of a given set.
 convenience init(set: Set<AnyHashable>)
 ```
 
+```objc
+- (instancetype) initWithSet:(NSSet<id> *) set;
+```
+
 #### Return Value
 
 An initialized counted set object with the contents of `set`. The returned object might be different than the original receiver.
@@ -30,11 +35,13 @@ An initialized counted set object with the contents of `set`. The returned objec
 
 ## See Also
 
-- [convenience init(set: Set<AnyHashable>)](nsset/init(set:)-1xovx.md)
+### Related Documentation
+- [convenience init(set: Set<AnyHashable>)](../nsset/init%28set%29-1xovx.md)
   Initializes a newly allocated set and adds to it objects from another given set.
-- [convenience init(array: [Any])](nscountedset/init(array:).md)
+### Initializing a Counted Set
+- [convenience init(array: [Any])](./init%28array%29.md)
   Returns a counted set object initialized with the contents of a given array.
-- [init(capacity: Int)](nscountedset/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns a counted set object initialized with enough memory to hold a given number of objects.
 
 

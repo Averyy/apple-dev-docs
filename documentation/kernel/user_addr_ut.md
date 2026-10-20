@@ -1,14 +1,15 @@
 # user_addr_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef user_addr_t user_addr_ut;
 ```
 

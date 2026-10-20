@@ -1,7 +1,8 @@
 # errSSLUnrecognizedName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unknown or unrecognized name.
 
@@ -18,6 +19,10 @@ Unknown or unrecognized name.
 
 ```swift
 var errSSLUnrecognizedName: OSStatus { get }
+```
+
+```c
+errSSLUnrecognizedName
 ```
 
 

@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of the provider.
 
@@ -19,9 +20,13 @@ The configuration of the provider.
 var configuration: CXProviderConfiguration { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) CXProviderConfiguration * configuration;
+```
+
 #### Discussion
 
-This property returns a copy of the provider configuration. To change the configuration of the provider, you must set this property to a  new [`CXProviderConfiguration`](cxproviderconfiguration.md) object.
+This property returns a copy of the provider configuration. To change the configuration of the provider, you must set this property to a  new [`CXProviderConfiguration`](../cxproviderconfiguration.md) object.
 
 
 ---

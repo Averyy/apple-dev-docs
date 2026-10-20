@@ -1,7 +1,8 @@
 # address
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Address of business.
 
@@ -16,7 +17,8 @@ let address: String
 
 ## See Also
 
-- [let label: String](rcsservice/business/addressentry/label.md)
+### Accessing address details
+- [let label: String](./label.md)
   Label for address.
 
 

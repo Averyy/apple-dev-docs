@@ -1,7 +1,8 @@
 # copyElements(from:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the elements from `sequence` into this view in row-major order.
 
@@ -19,6 +20,8 @@ Copies the elements from `sequence` into this view in row-major order.
 mutating func copyElements(from sequence: some Sequence<Element>)
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Discussion
 
 The number of elements in `sequence` must be less than or equal to `layout.scalarCount`.
@@ -29,7 +32,8 @@ The number of elements in `sequence` must be less than or equal to `layout.scala
 
 ## See Also
 
-- [func copyElements(fromContentsOf: some Collection<Element>)](ndarray/mutableview/copyelements(fromcontentsof:).md)
+### Writing data
+- [func copyElements(fromContentsOf: some Collection<Element>)](./copyelements%28fromcontentsof%29.md)
   Copies the elements from `collection` into this view in row-major order.
 
 

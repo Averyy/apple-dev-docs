@@ -1,9 +1,12 @@
 # XCTestProbe
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that observes test activity status.
+
+> **Deprecated**: Use [`XCTestObservationCenter`](./xctestobservationcenter.md) instead.
 
 ## Declaration
 
@@ -11,29 +14,34 @@ An object that observes test activity status.
 class XCTestProbe
 ```
 
+```objc
+@interface XCTestProbe : NSObject
+```
+
 ## Topics
 
 ### Inspecting a Test
-- [class func isTesting() -> Bool](xctestprobe/istesting.md)
+- [class func isTesting() -> Bool](./xctestprobe/istesting%28%29.md)
   A Boolean value that indicates whether a test is running.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTestLog](xctestlog.md)
+### Deprecated Classes
+- [class XCTestLog](./xctestlog.md)
   An object that logs test failures and errors.
-- [class XCTestObserver](xctestobserver.md)
+- [class XCTestObserver](./xctestobserver.md)
   An object that observes test activity and events.
 
 

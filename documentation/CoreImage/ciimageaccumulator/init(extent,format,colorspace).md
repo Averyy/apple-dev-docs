@@ -1,7 +1,8 @@
 # init(extent:format:colorSpace:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an image accumulator with the specified extent, pixel format, and color space.
 
@@ -19,6 +20,10 @@ Initializes an image accumulator with the specified extent, pixel format, and co
 init?(extent: CGRect, format: CIFormat, colorSpace: CGColorSpace)
 ```
 
+```objc
+- (instancetype) initWithExtent:(CGRect) extent format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace;
+```
+
 #### Return Value
 
 The initialized image accumulator object.
@@ -26,12 +31,13 @@ The initialized image accumulator object.
 ## Parameters
 
 - `extent`: A rectangle that specifies the x-value of the rectangle origin, the y-value of the rectangle origin, and the width and height.
-- `format`: The format and size of each pixel. You must supply a pixel format constant, such askCIFormatARGB8  (32 bit-per-pixel, fixed-point pixel format) or kCIFormatRGBAf (128 bit-per-pixel, floating-point pixel format). See [`CIImage`](ciimage.md) for more information about pixel format constants.
-- `colorSpace`: A [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) object describing the color space for the image accumulator.
+- `format`: The format and size of each pixel. You must supply a pixel format constant, such askCIFormatARGB8  (32 bit-per-pixel, fixed-point pixel format) or kCIFormatRGBAf (128 bit-per-pixel, floating-point pixel format). See [`CIImage`](../ciimage.md) for more information about pixel format constants.
+- `colorSpace`: A [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) object describing the color space for the image accumulator.
 
 ## See Also
 
-- [init?(extent: CGRect, format: CIFormat)](ciimageaccumulator/init(extent:format:).md)
+### Initializing an Image Accumulator
+- [init?(extent: CGRect, format: CIFormat)](./init%28extent,format%29.md)
   Initializes an image accumulator with the specified extent and pixel format.
 
 

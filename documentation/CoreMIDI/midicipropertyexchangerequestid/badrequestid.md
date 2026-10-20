@@ -1,16 +1,17 @@
 # badRequestID
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 static var badRequestID: MIDICIPropertyExchangeRequestID
 ```
 
+```c
+static MIDICIPropertyExchangeRequestID kMIDICIPropertyExchangeBadRequestID;
+```
+
 ## See Also
 
-- [static let endpointObject: MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey/endpointobject.md)
-- [static let functionBlockObject: MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey/functionblockobject.md)
+### Macros
+- [static let endpointObject: MIDIUMPEndpointManager.DictionaryKey](../midiumpendpointmanager/dictionarykey/endpointobject.md)
+- [static let functionBlockObject: MIDIUMPEndpointManager.DictionaryKey](../midiumpendpointmanager/dictionarykey/functionblockobject.md)
 
 
 ---

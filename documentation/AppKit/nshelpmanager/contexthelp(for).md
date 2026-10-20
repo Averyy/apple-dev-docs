@@ -1,17 +1,22 @@
 # contextHelp(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns context-sensitive help for an object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func contextHelp(for object: Any) -> NSAttributedString?
+```
+
+```objc
+- (NSAttributedString *) contextHelpForObject:(id) object;
 ```
 
 #### Return Value
@@ -24,12 +29,14 @@ Context-sensitive help content.
 
 ## See Also
 
-- [func setContextHelp(NSAttributedString, for: Any)](nshelpmanager/setcontexthelp(_:for:).md)
+### Related Documentation
+- [func setContextHelp(NSAttributedString, for: Any)](./setcontexthelp%28_,for%29.md)
   Associates help content with an object.
-- [func showContextHelp(for: Any, locationHint: NSPoint) -> Bool](nshelpmanager/showcontexthelp(for:locationhint:).md)
+### Displaying Context-Sensitive Help
+- [func showContextHelp(for: Any, locationHint: NSPoint) -> Bool](./showcontexthelp%28for,locationhint%29.md)
   Displays the context-sensitive help for a given object at or near the point on the screen specified by a given point.
-- [NSHelpManager.ContextHelpKey](nshelpmanager/contexthelpkey.md)
-- [class var isContextHelpModeActive: Bool](nshelpmanager/iscontexthelpmodeactive.md)
+- [NSHelpManager.ContextHelpKey](./contexthelpkey.md)
+- [class var isContextHelpModeActive: Bool](./iscontexthelpmodeactive.md)
 
 
 ---

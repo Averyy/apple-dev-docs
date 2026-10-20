@@ -1,24 +1,25 @@
 # ProfileCreateRequest.Data.Relationships
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object ProfileCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ProfileCreateRequest.Data.Relationships.BundleId](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships.BundleId](./relationships-data.dictionary/bundleid-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object ProfileCreateRequest.Data.Relationships.Certificates](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships.Certificates](./relationships-data.dictionary/certificates-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object ProfileCreateRequest.Data.Relationships.Devices](profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.md)
+- [object ProfileCreateRequest.Data.Relationships.Devices](./relationships-data.dictionary/devices-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -29,7 +30,8 @@ object ProfileCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object ProfileCreateRequest.Data.Attributes](profilecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object ProfileCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The total number of parts in the composite’s structure tree (including its own)

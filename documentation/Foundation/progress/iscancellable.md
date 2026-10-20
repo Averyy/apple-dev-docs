@@ -1,7 +1,8 @@
 # isCancellable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is tracking work that you can cancel.
 
@@ -20,37 +21,43 @@ A Boolean value that indicates whether the receiver is tracking work that you ca
 var isCancellable: Bool { get set }
 ```
 
+```objc
+@property (getter=isCancellable) BOOL cancellable;
+```
+
 #### Discussion
 
-By default, [`Progress`](progress.md) objects are cancelable.
+By default, [`Progress`](../progress.md) objects are cancelable.
 
-You typically use this property to communicate whether controls for canceling appear in a progress-reporting user interface. [`Progress`](progress.md) itself doesn’t do anything with this property other than help pass the value from progress reporters to progress observers.
+You typically use this property to communicate whether controls for canceling appear in a progress-reporting user interface. [`Progress`](../progress.md) itself doesn’t do anything with this property other than help pass the value from progress reporters to progress observers.
 
-If an [`Progress`](progress.md) is cancelable, implement the ability to cancel progress either by setting a block for the [`cancellationHandler`](progress/cancellationhandler.md) property, or by polling the [`isCancelled`](progress/iscancelled.md) property periodically while performing the relevant work.
+If an [`Progress`](../progress.md) is cancelable, implement the ability to cancel progress either by setting a block for the [`cancellationHandler`](./cancellationhandler.md) property, or by polling the [`isCancelled`](./iscancelled.md) property periodically while performing the relevant work.
 
-It’s valid for the value of this property to change during the lifetime of an [`Progress`](progress.md) object. By default, [`Progress`](progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
+It’s valid for the value of this property to change during the lifetime of an [`Progress`](../progress.md) object. By default, [`Progress`](../progress.md) is KVO-compliant for this property. It sends notifications on the same thread that updates the property.
 
 ## See Also
 
-- [func cancel()](progress/cancel.md)
+### Related Documentation
+- [func cancel()](./cancel%28%29.md)
   Cancels progress tracking.
-- [var totalUnitCount: Int64](progress/totalunitcount.md)
+### Reporting Progress
+- [var totalUnitCount: Int64](./totalunitcount.md)
   The total number of tracked units of work for the current progress.
-- [var completedUnitCount: Int64](progress/completedunitcount.md)
+- [var completedUnitCount: Int64](./completedunitcount.md)
   The number of completed units of work for the current job.
-- [var localizedDescription: String!](progress/localizeddescription.md)
+- [var localizedDescription: String!](./localizeddescription.md)
   A localized description of tracked progress for the receiver.
-- [var localizedAdditionalDescription: String!](progress/localizedadditionaldescription.md)
+- [var localizedAdditionalDescription: String!](./localizedadditionaldescription.md)
   A more specific localized description of tracked progress for the receiver.
-- [var isCancelled: Bool](progress/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that Indicates whether the receiver is tracking canceled work.
-- [var cancellationHandler: (() -> Void)?](progress/cancellationhandler.md)
+- [var cancellationHandler: (() -> Void)?](./cancellationhandler.md)
   The block to invoke when canceling progress.
-- [var isPausable: Bool](progress/ispausable.md)
+- [var isPausable: Bool](./ispausable.md)
   A Boolean value that indicates whether the receiver is tracking work that you can pause.
-- [var isPaused: Bool](progress/ispaused.md)
+- [var isPaused: Bool](./ispaused.md)
   A Boolean value that indicates whether the receiver is tracking paused work.
-- [var pausingHandler: (() -> Void)?](progress/pausinghandler.md)
+- [var pausingHandler: (() -> Void)?](./pausinghandler.md)
   The block to invoke when pausing progress.
 
 

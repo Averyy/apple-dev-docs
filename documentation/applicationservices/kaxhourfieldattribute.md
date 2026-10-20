@@ -1,7 +1,8 @@
 # kAXHourFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The hour field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display hours.
 
@@ -12,6 +13,10 @@ The hour field of a time field represented by this accessibility object. This at
 
 ```swift
 var kAXHourFieldAttribute: String { get }
+```
+
+```c
+#define kAXHourFieldAttribute
 ```
 
 

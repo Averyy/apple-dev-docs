@@ -1,7 +1,8 @@
 # open(_:_:options:permissions:retryOnInterrupt:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens or creates a file for reading or writing.
 
@@ -34,15 +35,16 @@ The corresponding C function is `open`.
 - `mode`: The read and write access to use.
 - `options`: The behavior for opening the file.
 - `permissions`: The file permissions to use for created files.
-- `retryOnInterrupt`: Whether to retry the open operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the open operation if it throws [`interrupted`](../errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 ## See Also
 
-- [static func open(FilePath, FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions, permissions: FilePermissions?, retryOnInterrupt: Bool) throws -> FileDescriptor](filedescriptor/open(_:_:options:permissions:retryoninterrupt:)-4ql4b.md)
+### Opening a File
+- [static func open(FilePath, FileDescriptor.AccessMode, options: FileDescriptor.OpenOptions, permissions: FilePermissions?, retryOnInterrupt: Bool) throws -> FileDescriptor](./open%28_,_,options,permissions,retryoninterrupt%29-4ql4b.md)
   Opens or creates a file for reading or writing.
-- [FileDescriptor.AccessMode](filedescriptor/accessmode.md)
+- [FileDescriptor.AccessMode](./accessmode.md)
   The desired read and write access for a newly opened file.
-- [FileDescriptor.OpenOptions](filedescriptor/openoptions.md)
+- [FileDescriptor.OpenOptions](./openoptions.md)
   Options that specify behavior for a newly-opened file.
 
 

@@ -1,31 +1,33 @@
 # throttle_info_mount_rel
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 void throttle_info_mount_rel(mount_t mp);
 ```
 
 ## See Also
 
-- [throttle_info_create](1519622-throttle_info_create.md)
-- [throttle_info_disable_throttle](1519606-throttle_info_disable_throttle.md)
-- [throttle_info_io_will_be_throttled](1519647-throttle_info_io_will_be_throttl.md)
-- [throttle_info_mount_ref](1519621-throttle_info_mount_ref.md)
-- [throttle_info_ref_by_mask](1519602-throttle_info_ref_by_mask.md)
-- [throttle_info_rel_by_mask](1519618-throttle_info_rel_by_mask.md)
-- [throttle_info_release](1519640-throttle_info_release.md)
-- [throttle_info_update](1519620-throttle_info_update.md)
-- [throttle_info_update_by_mask](1519642-throttle_info_update_by_mask.md)
-- [throttle_lowpri_io](1519650-throttle_lowpri_io.md)
-- [throttle_lowpri_io_will_be_throttled](3192010-throttle_lowpri_io_will_be_throt.md)
-- [throttle_set_thread_io_policy](1519605-throttle_set_thread_io_policy.md)
+### throttle
+- [throttle_info_create](./api-1519622-throttle_info_create.md)
+- [throttle_info_disable_throttle](./api-1519606-throttle_info_disable_throttle.md)
+- [throttle_info_io_will_be_throttled](./api-1519647-throttle_info_io_will_be_throttl.md)
+- [throttle_info_mount_ref](./api-1519621-throttle_info_mount_ref.md)
+- [throttle_info_ref_by_mask](./api-1519602-throttle_info_ref_by_mask.md)
+- [throttle_info_rel_by_mask](./api-1519618-throttle_info_rel_by_mask.md)
+- [throttle_info_release](./api-1519640-throttle_info_release.md)
+- [throttle_info_update](./api-1519620-throttle_info_update.md)
+- [throttle_info_update_by_mask](./api-1519642-throttle_info_update_by_mask.md)
+- [throttle_lowpri_io](./api-1519650-throttle_lowpri_io.md)
+- [throttle_lowpri_io_will_be_throttled](./api-3192010-throttle_lowpri_io_will_be_throt.md)
+- [throttle_set_thread_io_policy](./api-1519605-throttle_set_thread_io_policy.md)
 
 
 ---

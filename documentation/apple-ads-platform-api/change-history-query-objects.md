@@ -1,6 +1,7 @@
 # Change History Query Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Build the filter, sort, and pagination inputs for change history query requests.
 
@@ -9,22 +10,23 @@ Build the filter, sort, and pagination inputs for change history query requests.
 
 ## Topics
 
-- [object AuditQuery](auditquery.md)
+- [object AuditQuery](./auditquery.md)
   Request body for the Query Change History endpoint.
-- [object AuditFilter](auditfilter.md)
+- [object AuditFilter](./auditfilter.md)
   A single filter condition in an audit query request, specifying the field to filter on, the comparison operator, and one or more values to match against.
-- [object AuditSorting](auditsorting.md)
+- [object AuditSorting](./auditsorting.md)
   A sort directive in an audit query request, specifying a field to sort by and the direction.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   Pagination state in change history list responses.
 
 ## See Also
 
-- [Change History Endpoints](change-history-endpoints.md)
+### Change History
+- [Change History Endpoints](./change-history-endpoints.md)
   Query audit summaries and retrieve change detail records for entities in an ad account.
-- [Change History Response Objects](change-history-response-objects.md)
+- [Change History Response Objects](./change-history-response-objects.md)
   Parse the audit summary and change detail objects returned by change history endpoints.
-- [Change History Enumerations](change-history-enumerations.md)
+- [Change History Enumerations](./change-history-enumerations.md)
   Look up the enumerated values accepted in change history query and response fields.
 
 

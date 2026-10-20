@@ -1,7 +1,8 @@
 # callStack
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of source code frames that describes the call stack when a test issue occurs.
 
@@ -11,9 +12,14 @@ An array of source code frames that describes the call stack when a test issue o
 var callStack: [XCTSourceCodeFrame] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<XCTSourceCodeFrame *> * callStack;
+```
+
 ## See Also
 
-- [var location: XCTSourceCodeLocation?](xctsourcecodecontext/location.md)
+### Context Information
+- [var location: XCTSourceCodeLocation?](./location.md)
   A representation of a location in source code where a test issue occurred.
 
 

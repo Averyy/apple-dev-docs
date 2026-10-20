@@ -1,7 +1,8 @@
 # ICCharTablePtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICCharTablePtr = UnsafeMutablePointer<ICCharTable>
+```
+
+```c
+typedef ICCharTable *ICCharTablePtr;
 ```
 
 

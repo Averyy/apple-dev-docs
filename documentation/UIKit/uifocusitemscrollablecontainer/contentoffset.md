@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current content offset for the scrollable container.
@@ -19,15 +20,20 @@ The current content offset for the scrollable container.
 var contentOffset: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGPoint contentOffset;
+```
+
 #### Discussion
 
 If the scrollable container contains `bounds`, then `bounds.origin` must be equal to the content offset. The system repeatedly sets this property to simulate animated scrolling.
 
 ## See Also
 
-- [var contentSize: CGSize](uifocusitemscrollablecontainer/contentsize.md)
+### Retrieving the content size
+- [var contentSize: CGSize](./contentsize.md)
   The total size of the content contained by this container.
-- [var visibleSize: CGSize](uifocusitemscrollablecontainer/visiblesize.md)
+- [var visibleSize: CGSize](./visiblesize.md)
   The visible size of the scrollable container.
 
 

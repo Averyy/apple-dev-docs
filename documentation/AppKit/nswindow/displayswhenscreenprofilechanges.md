@@ -1,12 +1,13 @@
 # displaysWhenScreenProfileChanges
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the window context should be updated when the screen profile changes or when the window moves to a different screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the window context should be updated when
 var displaysWhenScreenProfileChanges: Bool { get set }
 ```
 
+```objc
+@property BOOL displaysWhenScreenProfileChanges;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the window context should be updated when the ColorSync profile of the current screen changes or when a majority of the window is moved to a different screen whose profile is different than the previous screen; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) when the window context should be updated when the ColorSync profile of the current screen changes or when a majority of the window is moved to a different screen whose profile is different than the previous screen; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
-After the window context is updated, the window is told to display itself. If you need to update offscreen caches for the window, you should register to receive the [`didChangeScreenProfileNotification`](nswindow/didchangescreenprofilenotification.md) notification.
+After the window context is updated, the window is told to display itself. If you need to update offscreen caches for the window, you should register to receive the [`didChangeScreenProfileNotification`](./didchangescreenprofilenotification.md) notification.
 
 ## See Also
 
-- [var screen: NSScreen?](nswindow/screen.md)
+### Accessing Screen Information
+- [var screen: NSScreen?](./screen.md)
   The screen the window is on.
-- [var deepestScreen: NSScreen?](nswindow/deepestscreen.md)
+- [var deepestScreen: NSScreen?](./deepestscreen.md)
   The deepest screen the window is on (it may be split over several screens).
 
 

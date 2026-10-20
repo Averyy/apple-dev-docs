@@ -1,7 +1,8 @@
 # VNRecognizedText
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Text recognized in an image through a text recognition request.
 
@@ -19,42 +20,47 @@ Text recognized in an image through a text recognition request.
 class VNRecognizedText
 ```
 
+```objc
+@interface VNRecognizedText : NSObject
+```
+
 #### Overview
 
-A single [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) can contain multiple recognized text objects—one for each candidate.
+A single [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) can contain multiple recognized text objects—one for each candidate.
 
 ## Topics
 
 ### Creating a Recognized Text Instance
-- [init?(coder: NSCoder)](vnrecognizedtext/init(coder:).md)
+- [init?(coder: NSCoder)](./vnrecognizedtext/init%28coder%29.md)
 ### Determining Recognized Text
-- [var string: String](vnrecognizedtext/string.md)
+- [var string: String](./vnrecognizedtext/string.md)
   The top candidate for recognized text.
-- [var confidence: VNConfidence](vnrecognizedtext/confidence.md)
+- [var confidence: VNConfidence](./vnrecognizedtext/confidence.md)
   A normalized confidence score for the text recognition result.
 ### Locating Recognized Text
-- [func boundingBox(for: Range<String.Index>) throws -> VNRectangleObservation?](vnrecognizedtext/boundingbox(for:).md)
+- [func boundingBox(for: Range<String.Index>) throws -> VNRectangleObservation?](./vnrecognizedtext/boundingbox%28for%29.md)
   Calculates the bounding box around the characters in the range of a string.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [func topCandidates(Int) -> [VNRecognizedText]](vnrecognizedtextobservation/topcandidates(_:).md)
+### Obtaining Recognized Text
+- [func topCandidates(Int) -> [VNRecognizedText]](./vnrecognizedtextobservation/topcandidates%28_%29.md)
   Requests the *n* top candidates for a recognized text string.
 
 

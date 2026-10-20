@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfs_user_stat_path_rec {
     ...
 };
@@ -17,8 +17,8 @@ struct nfs_user_stat_path_rec {
 ## Topics
 
 ### Instance Properties
-- [path](nfs_user_stat_path_rec/3944847-path.md)
-- [rec_type](nfs_user_stat_path_rec/3944848-rec_type.md)
+- [path](./nfs_user_stat_path_rec/api-3944847-path.md)
+- [rec_type](./nfs_user_stat_path_rec/api-3944848-rec_type.md)
 
 
 ---

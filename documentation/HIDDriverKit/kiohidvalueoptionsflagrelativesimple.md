@@ -1,25 +1,27 @@
 # kIOHIDValueOptionsFlagRelativeSimple
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option to return a simplified version of the value.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDValueOptionsFlagRelativeSimple
 ```
 
 ## See Also
 
-- [kIOHIDValueOptionsFlagPrevious](kiohidvalueoptionsflagprevious.md)
+### Getting the Options
+- [kIOHIDValueOptionsFlagPrevious](./kiohidvalueoptionsflagprevious.md)
   An option to retrieve the element’s previous value.
-- [kIOHIDValueOptionsUpdateElementValues](kiohidvalueoptionsupdateelementvalues.md)
+- [kIOHIDValueOptionsUpdateElementValues](./kiohidvalueoptionsupdateelementvalues.md)
   An option to update the element’s value before returning it.
 
 

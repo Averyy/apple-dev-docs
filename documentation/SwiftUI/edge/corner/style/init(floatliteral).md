@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a fixed corner style with a float value as its corner radius. This is a shorthand of writing `.fixed(value)`.
 

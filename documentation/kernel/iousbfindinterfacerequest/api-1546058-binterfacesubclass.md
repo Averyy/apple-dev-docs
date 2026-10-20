@@ -1,7 +1,8 @@
 # bInterfaceSubClass
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The interface subclass to find.
 
@@ -10,17 +11,18 @@ The interface subclass to find.
 
 ## Declaration
 
-```swift
+```c
 UInt16 bInterfaceSubClass;
 ```
 
 ## See Also
 
-- [bAlternateSetting](iousbfindinterfacerequest/1546002-balternatesetting.md)
+### Getting the Properties
+- [bAlternateSetting](./api-1546002-balternatesetting.md)
   The alternative setting to find.
-- [bInterfaceClass](iousbfindinterfacerequest/1546291-binterfaceclass.md)
+- [bInterfaceClass](./api-1546291-binterfaceclass.md)
   The interface class to find.
-- [bInterfaceProtocol](iousbfindinterfacerequest/1546022-binterfaceprotocol.md)
+- [bInterfaceProtocol](./api-1546022-binterfaceprotocol.md)
   The interface protocol to find.
 
 

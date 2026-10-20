@@ -1,7 +1,8 @@
 # init(function:alpha:beta:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new common activation function parameters structure that uses the specified function, alpha, and beta.
 
@@ -11,8 +12,10 @@ Returns a new common activation function parameters structure that uses the spec
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -32,9 +35,10 @@ A new common activation function parameters structure.
 
 ## See Also
 
-- [init()](bnnsactivation/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new common activation function parameters structure.
-- [init(function: BNNSActivationFunction, alpha: Float, beta: Float, iscale: Int32, ioffset: Int32, ishift: Int32, iscale_per_channel: UnsafePointer<Int32>?, ioffset_per_channel: UnsafePointer<Int32>?, ishift_per_channel: UnsafePointer<Int32>?)](bnnsactivation/init(function:alpha:beta:iscale:ioffset:ishift:iscale_per_channel:ioffset_per_channel:ishift_per_channel:).md)
+- [init(function: BNNSActivationFunction, alpha: Float, beta: Float, iscale: Int32, ioffset: Int32, ishift: Int32, iscale_per_channel: UnsafePointer<Int32>?, ioffset_per_channel: UnsafePointer<Int32>?, ishift_per_channel: UnsafePointer<Int32>?)](./init%28function,alpha,beta,iscale,ioffset,ishift,iscale_per_channel,ioffset_per_channel,ishift_per_channel%29.md)
   Returns a new common activation function parameters structure that uses the specified function, alpha, beta, integer scale, offset, and shift.
 
 

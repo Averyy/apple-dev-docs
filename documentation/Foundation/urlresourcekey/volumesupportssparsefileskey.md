@@ -1,7 +1,8 @@
 # volumeSupportsSparseFilesKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Key for determining whether the volume supports sparse files, returned as a Boolean `NSNumber` object (read-only).
 
@@ -20,37 +21,42 @@ Key for determining whether the volume supports sparse files, returned as a Bool
 static let volumeSupportsSparseFilesKey: URLResourceKey
 ```
 
+```c
+extern NSURLResourceKey const NSURLVolumeSupportsSparseFilesKey;
+```
+
 ## See Also
 
-- [static let isMountTriggerKey: URLResourceKey](urlresourcekey/ismounttriggerkey.md)
+### Volume support keys
+- [static let isMountTriggerKey: URLResourceKey](./ismounttriggerkey.md)
   Key for determining whether the URL is a file system trigger directory, returned as a Boolean `NSNumber` object (read-only). Traversing or opening a file system trigger directory causes an attempt to mount a file system on the directory.
-- [static let isVolumeKey: URLResourceKey](urlresourcekey/isvolumekey.md)
+- [static let isVolumeKey: URLResourceKey](./isvolumekey.md)
   Key for determining whether the resource is the root directory of a volume, returned as a Boolean `NSNumber` object (read-only).
-- [static let volumeCreationDateKey: URLResourceKey](urlresourcekey/volumecreationdatekey.md)
+- [static let volumeCreationDateKey: URLResourceKey](./volumecreationdatekey.md)
   Key for the volume’s creation date, returned as an `NSDate` object, or `NULL` if it cannot be determined (read-only).
-- [static let volumeIdentifierKey: URLResourceKey](urlresourcekey/volumeidentifierkey.md)
+- [static let volumeIdentifierKey: URLResourceKey](./volumeidentifierkey.md)
   The unique identifier of the resource’s volume, returned as an `id` (read-only).
-- [static let volumeLocalizedFormatDescriptionKey: URLResourceKey](urlresourcekey/volumelocalizedformatdescriptionkey.md)
+- [static let volumeLocalizedFormatDescriptionKey: URLResourceKey](./volumelocalizedformatdescriptionkey.md)
   Key for the volume’s descriptive format name, returned as an `NSString` object (read-only).
-- [static let volumeLocalizedNameKey: URLResourceKey](urlresourcekey/volumelocalizednamekey.md)
+- [static let volumeLocalizedNameKey: URLResourceKey](./volumelocalizednamekey.md)
   The name of the volume as it should be displayed in the user interface, returned as an `NSString` object (read-only).
-- [static let volumeMaximumFileSizeKey: URLResourceKey](urlresourcekey/volumemaximumfilesizekey.md)
+- [static let volumeMaximumFileSizeKey: URLResourceKey](./volumemaximumfilesizekey.md)
   Key for the largest file size supported by the volume in bytes, returned as a Boolean `NSNumber` object, or `nil` if it cannot be determined (read-only).
-- [static let volumeNameKey: URLResourceKey](urlresourcekey/volumenamekey.md)
+- [static let volumeNameKey: URLResourceKey](./volumenamekey.md)
   The name of the volume, returned as an string object.
-- [static let volumeResourceCountKey: URLResourceKey](urlresourcekey/volumeresourcecountkey.md)
+- [static let volumeResourceCountKey: URLResourceKey](./volumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as an `NSNumber` object (read-only).
-- [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)
+- [static let volumeSupportsAccessPermissionsKey: URLResourceKey](./volumesupportsaccesspermissionskey.md)
   `true` if the volume supports setting POSIX access permissions with the `NSURLFileSecurityKey` property. (Read-only, value type boolean `NSNumber`).
-- [static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey](urlresourcekey/volumesupportsadvisoryfilelockingkey.md)
+- [static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey](./volumesupportsadvisoryfilelockingkey.md)
   Key for determining whether the volume implements whole-file advisory locks in the style of flock, along with the `O_EXLOCK` and `O_SHLOCK` flags of the open function, returned as a Boolean `NSNumber` object (read-only).
-- [static let volumeSupportsCasePreservedNamesKey: URLResourceKey](urlresourcekey/volumesupportscasepreservednameskey.md)
+- [static let volumeSupportsCasePreservedNamesKey: URLResourceKey](./volumesupportscasepreservednameskey.md)
   Key for determining whether the volume supports case-preserved names, returned as a Boolean `NSNumber` object (read-only).
-- [static let volumeSupportsCaseSensitiveNamesKey: URLResourceKey](urlresourcekey/volumesupportscasesensitivenameskey.md)
+- [static let volumeSupportsCaseSensitiveNamesKey: URLResourceKey](./volumesupportscasesensitivenameskey.md)
   Key for determining whether the volume supports case-sensitive names, returned as a Boolean `NSNumber` object (read-only).
-- [static let volumeSupportsCompressionKey: URLResourceKey](urlresourcekey/volumesupportscompressionkey.md)
+- [static let volumeSupportsCompressionKey: URLResourceKey](./volumesupportscompressionkey.md)
   Whether the volume supports transparent decompression of compressed files using `decmpfs`, returned as `NSNumber` containing a Boolean value (read-only).
-- [static let volumeSupportsExclusiveRenamingKey: URLResourceKey](urlresourcekey/volumesupportsexclusiverenamingkey.md)
+- [static let volumeSupportsExclusiveRenamingKey: URLResourceKey](./volumesupportsexclusiverenamingkey.md)
   Whether the volume supports exclusive renaming using `renamex_np(2)` with the `RENAME_EXCL` option, returned as `NSNumber` containing a Boolean value (read-only).
 
 

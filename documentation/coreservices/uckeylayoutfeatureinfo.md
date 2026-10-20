@@ -1,7 +1,8 @@
 # UCKeyLayoutFeatureInfo
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the longest possible output string to be produced by the current `'uchr'` resource.
 
@@ -15,6 +16,12 @@ Specifies the longest possible output string to be produced by the current `'uch
 struct UCKeyLayoutFeatureInfo
 ```
 
+```c
+typedef struct UCKeyLayoutFeatureInfo {
+    ...
+} UCKeyLayoutFeatureInfo;
+```
+
 #### Overview
 
 The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyLayoutFeatureInfo` type is used in the header section of the `'uchr'` resource. 
@@ -22,14 +29,14 @@ The Unicode keyboard-layout ( `'uchr'`) resource contains the data necessary to 
 ## Topics
 
 ### Initializers
-- [init()](uckeylayoutfeatureinfo/1442653-init.md)
-- [init(keyLayoutFeatureInfoFormat: UInt16, reserved: UInt16, maxOutputStringLength: UInt32)](uckeylayoutfeatureinfo/1445182-init.md)
+- [init()](./uckeylayoutfeatureinfo/api-1442653-init.md)
+- [init(keyLayoutFeatureInfoFormat: UInt16, reserved: UInt16, maxOutputStringLength: UInt32)](./uckeylayoutfeatureinfo/api-1445182-init.md)
 ### Instance Properties
-- [var keyLayoutFeatureInfoFormat: UInt16](uckeylayoutfeatureinfo/1390617-keylayoutfeatureinfoformat.md)
+- [var keyLayoutFeatureInfoFormat: UInt16](./uckeylayoutfeatureinfo/api-1390617-keylayoutfeatureinfoformat.md)
   An unsigned 16-bit integer identifying the format of the `UCKeyLayoutFeatureInfo` structure. Set to `kUCKeyLayoutFeatureInfoFormat`.
-- [var maxOutputStringLength: UInt32](uckeylayoutfeatureinfo/1390572-maxoutputstringlength.md)
+- [var maxOutputStringLength: UInt32](./uckeylayoutfeatureinfo/api-1390572-maxoutputstringlength.md)
   An unsigned 32-bit integer specifying the longest possible output string of Unicode characters to be produced by this `'uchr'` resource.
-- [var reserved: UInt16](uckeylayoutfeatureinfo/1390566-reserved.md)
+- [var reserved: UInt16](./uckeylayoutfeatureinfo/api-1390566-reserved.md)
   Reserved. Set to 0.
 
 

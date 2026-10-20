@@ -1,7 +1,8 @@
 # vvpow(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Raises each element in an array to the power of the corresponding element in a second array of double-precision values.
 
@@ -10,7 +11,7 @@ Raises each element in an array to the power of the corresponding element in a s
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,16 +21,20 @@ Raises each element in an array to the power of the corresponding element in a s
 func vvpow(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafePointer<Double>, _: UnsafePointer<Int32>)
 ```
 
+```c
+void vvpow(double *, const double *, const double *, const int *);
+```
+
 #### Discussion
 
-##### Parameters
+##### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The exponent input array, *y*.
 - **parameter 3**: The base input array, *x*.
 - **parameter 4**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvpow(_:_:_:_:)`](vvpow(_:_:_:_:).md):
+The following code shows an example of using [`vvpow(_:_:_:_:)`](./vvpow%28_,_,_,_%29.md):
 
 **Swift**:
 
@@ -82,15 +87,16 @@ The following special values of `x` and `y` produce the given value of `z`:
 
 ## See Also
 
-- [static func pow<U, V>(bases: U, exponents: V) -> [Double]](vforce/pow(bases:exponents:)-94dha.md)
+### Array-Oriented Power Functions
+- [static func pow<U, V>(bases: U, exponents: V) -> [Double]](./vforce/pow%28bases,exponents%29-94dha.md)
   Returns each double-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [static func pow<U, V>(bases: U, exponents: V) -> [Float]](vforce/pow(bases:exponents:)-3gl7v.md)
+- [static func pow<U, V>(bases: U, exponents: V) -> [Float]](./vforce/pow%28bases,exponents%29-3gl7v.md)
   Returns each single-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](vforce/pow(bases:exponents:result:)-4bso.md)
+- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](./vforce/pow%28bases,exponents,result%29-4bso.md)
   Calculates each double-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](vforce/pow(bases:exponents:result:)-6pffz.md)
+- [static func pow<T, U, V>(bases: T, exponents: U, result: inout V)](./vforce/pow%28bases,exponents,result%29-6pffz.md)
   Calculates each single-precision element in the bases vector, raised to the power of the corresponding element in the exponents vector.
-- [func vvpowf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](vvpowf(_:_:_:_:).md)
+- [func vvpowf(UnsafeMutablePointer<Float>, UnsafePointer<Float>, UnsafePointer<Float>, UnsafePointer<Int32>)](./vvpowf%28_,_,_,_%29.md)
   Raises each element in an array to the power of the corresponding element in a second array of single-precision values.
 
 

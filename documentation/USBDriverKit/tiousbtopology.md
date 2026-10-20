@@ -1,28 +1,29 @@
 # tIOUSBTopology
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 enum tIOUSBTopology : unsigned int;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [kIOUSBTopology1Hub](tiousbtopology/kiousbtopology1hub.md)
-- [kIOUSBTopology2Hub](tiousbtopology/kiousbtopology2hub.md)
-- [kIOUSBTopology3Hub](tiousbtopology/kiousbtopology3hub.md)
-- [kIOUSBTopology4Hub](tiousbtopology/kiousbtopology4hub.md)
-- [kIOUSBTopology5Hub](tiousbtopology/kiousbtopology5hub.md)
-- [kIOUSBTopologyHost](tiousbtopology/kiousbtopologyhost.md)
-- [kIOUSBTopologyRootPort](tiousbtopology/kiousbtopologyrootport.md)
-- [kIOUSBTopologyTierLimit](tiousbtopology/kiousbtopologytierlimit.md)
+- [kIOUSBTopology1Hub](./tiousbtopology/kiousbtopology1hub.md)
+- [kIOUSBTopology2Hub](./tiousbtopology/kiousbtopology2hub.md)
+- [kIOUSBTopology3Hub](./tiousbtopology/kiousbtopology3hub.md)
+- [kIOUSBTopology4Hub](./tiousbtopology/kiousbtopology4hub.md)
+- [kIOUSBTopology5Hub](./tiousbtopology/kiousbtopology5hub.md)
+- [kIOUSBTopologyHost](./tiousbtopology/kiousbtopologyhost.md)
+- [kIOUSBTopologyRootPort](./tiousbtopology/kiousbtopologyrootport.md)
+- [kIOUSBTopologyTierLimit](./tiousbtopology/kiousbtopologytierlimit.md)
 
 
 ---

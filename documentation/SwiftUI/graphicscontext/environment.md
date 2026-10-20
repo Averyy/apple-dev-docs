@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The environment associated with the graphics context.
 
@@ -22,7 +23,7 @@ var environment: EnvironmentValues { get set }
 
 #### Discussion
 
-SwiftUI initially sets this to the environment of the context’s enclosing view. The context uses values like display resolution and the color scheme from the environment to resolve types like [`Image`](image.md) and [`Color`](color.md). You can also access values stored in the environment for your own purposes.
+SwiftUI initially sets this to the environment of the context’s enclosing view. The context uses values like display resolution and the color scheme from the environment to resolve types like [`Image`](../image.md) and [`Color`](../color.md). You can also access values stored in the environment for your own purposes.
 
 
 ---

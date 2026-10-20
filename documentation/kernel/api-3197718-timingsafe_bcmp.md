@@ -1,14 +1,15 @@
 # timingsafe_bcmp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 int timingsafe_bcmp(const void *b1, const void *b2, size_t n);
 ```
 

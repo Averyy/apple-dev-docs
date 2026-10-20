@@ -1,7 +1,8 @@
 # kCLErrorUserInfoAlternateRegionKey
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key in the user information dictionary of an error relating to a delayed region-monitoring response.
 
@@ -18,15 +19,20 @@ A key in the user information dictionary of an error relating to a delayed regio
 let kCLErrorUserInfoAlternateRegionKey: String
 ```
 
+```c
+extern NSString * const kCLErrorUserInfoAlternateRegionKey;
+```
+
 #### Discussion
 
-This key is included in an error of type [`regionMonitoringResponseDelayed`](clerror-swift.struct/regionmonitoringresponsedelayed.md). The value is a [`CLRegion`](clregion.md) object containing the region that location services can monitor more effectively.
+This key is included in an error of type [`regionMonitoringResponseDelayed`](./clerror-swift.struct/regionmonitoringresponsedelayed.md). The value is a [`CLRegion`](./clregion.md) object containing the region that location services can monitor more effectively.
 
 ## See Also
 
-- [struct CLError](clerror-swift.struct.md)
+### Errors
+- [struct CLError](./clerror-swift.struct.md)
   A Core Location error.
-- [let kCLErrorDomain: String](kclerrordomain.md)
+- [let kCLErrorDomain: String](./kclerrordomain.md)
   The domain for Core Location errors.
 
 

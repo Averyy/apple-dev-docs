@@ -1,18 +1,19 @@
 # CFNumberFormatterCreateNumberFromString(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a number object representing a given string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,27 +21,32 @@ Returns a number object representing a given string.
 func CFNumberFormatterCreateNumberFromString(_ allocator: CFAllocator!, _ formatter: CFNumberFormatter!, _ string: CFString!, _ rangep: UnsafeMutablePointer<CFRange>!, _ options: CFOptionFlags) -> CFNumber!
 ```
 
+```c
+extern CFNumberRefCFNumberFormatterCreateNumberFromString(CFAllocatorRef allocator, CFNumberFormatterRef formatter, CFStringRef string, CFRange *rangep, CFOptionFlags options);
+```
+
 #### Return Value
 
-A new number that represents the given string. Returns `NULL` if there was a problem creating the number. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new number that represents the given string. Returns `NULL` if there was a problem creating the number. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `formatter`: The number formatter to use.
 - `string`: The string to parse.
 - `rangep`: A reference to a range that specifies the substring of  `string` to be parsed. If `NULL`, the whole string is parsed. On return, contains the range of the actual extent of the parse (may be less than the given range).
-- `options`: Specifies various configuration options to change the behavior of the parse. Currently, [`parseIntegersOnly`](cfnumberformatteroptionflags/parseintegersonly.md) is the only possible value for this parameter.
+- `options`: Specifies various configuration options to change the behavior of the parse. Currently, [`parseIntegersOnly`](./cfnumberformatteroptionflags/parseintegersonly.md) is the only possible value for this parameter.
 
 ## See Also
 
-- [func CFNumberFormatterCreateStringWithNumber(CFAllocator!, CFNumberFormatter!, CFNumber!) -> CFString!](cfnumberformattercreatestringwithnumber(_:_:_:).md)
+### Formatting Values
+- [func CFNumberFormatterCreateStringWithNumber(CFAllocator!, CFNumberFormatter!, CFNumber!) -> CFString!](./cfnumberformattercreatestringwithnumber%28_,_,_%29.md)
   Returns a string representation of the given number using the specified number formatter.
-- [func CFNumberFormatterCreateStringWithValue(CFAllocator!, CFNumberFormatter!, CFNumberType, UnsafeRawPointer!) -> CFString!](cfnumberformattercreatestringwithvalue(_:_:_:_:).md)
+- [func CFNumberFormatterCreateStringWithValue(CFAllocator!, CFNumberFormatter!, CFNumberType, UnsafeRawPointer!) -> CFString!](./cfnumberformattercreatestringwithvalue%28_,_,_,_%29.md)
   Returns a string representation of the given number or value using the specified number formatter.
-- [func CFNumberFormatterGetDecimalInfoForCurrencyCode(CFString!, UnsafeMutablePointer<Int32>!, UnsafeMutablePointer<Double>!) -> Bool](cfnumberformattergetdecimalinfoforcurrencycode(_:_:_:).md)
+- [func CFNumberFormatterGetDecimalInfoForCurrencyCode(CFString!, UnsafeMutablePointer<Int32>!, UnsafeMutablePointer<Double>!) -> Bool](./cfnumberformattergetdecimalinfoforcurrencycode%28_,_,_%29.md)
   Returns the number of fraction digits that should be displayed, and the rounding increment, for a given currency.
-- [func CFNumberFormatterGetValueFromString(CFNumberFormatter!, CFString!, UnsafeMutablePointer<CFRange>!, CFNumberType, UnsafeMutableRawPointer!) -> Bool](cfnumberformattergetvaluefromstring(_:_:_:_:_:).md)
+- [func CFNumberFormatterGetValueFromString(CFNumberFormatter!, CFString!, UnsafeMutablePointer<CFRange>!, CFNumberType, UnsafeMutableRawPointer!) -> Bool](./cfnumberformattergetvaluefromstring%28_,_,_,_,_%29.md)
   Returns a number or value representing a given string.
 
 

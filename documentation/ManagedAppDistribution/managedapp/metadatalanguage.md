@@ -1,7 +1,8 @@
 # metadataLanguage
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language of the localized properties of this managed app.
 
@@ -20,7 +21,8 @@ let metadataLanguage: Locale.Language?
 
 ## See Also
 
-- [let languages: [Locale.Language]](managedapp/languages.md)
+### Obtaining supported languages
+- [let languages: [Locale.Language]](./languages.md)
   The app’s supported languages.
 
 

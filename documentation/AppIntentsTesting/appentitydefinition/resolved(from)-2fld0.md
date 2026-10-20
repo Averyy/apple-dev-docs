@@ -1,7 +1,8 @@
 # resolved(from:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves an entity from an exported intent file through the entity type’s transferable conformance.
 
@@ -26,9 +27,9 @@ The resolved entity.
 
 #### Discussion
 
-Use this to verify the import direction — that an [`IntentFile`](https://developer.apple.com/documentation/appintents/intentfile) produced by `AnyAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into an entity through the same pipeline used at runtime.
+Use this to verify the import direction — that an [`IntentFile`](../../AppIntents/intentfile.md) produced by `AnyAppEntity/exported(as:)-swift.method` (or constructed from test data) can be resolved back into an entity through the same pipeline used at runtime.
 
-> **Note**: If the entity type does not support the file’s content type.
+> **Throws**: If the entity type does not support the file’s content type.
 
 ```swift
 let file = try await entity.exported(as: .json)

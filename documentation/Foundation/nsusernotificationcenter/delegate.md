@@ -1,12 +1,15 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the notification center delegate.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Specifies the notification center delegate.
 unowned(unsafe) var delegate: (any NSUserNotificationCenterDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<NSUserNotificationCenterDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must conform to the [`NSUserNotificationCenterDelegate`](nsusernotificationcenterdelegate.md) protocol.
+The delegate must conform to the [`NSUserNotificationCenterDelegate`](../nsusernotificationcenterdelegate.md) protocol.
 
 
 ---

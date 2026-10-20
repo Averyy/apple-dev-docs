@@ -1,14 +1,15 @@
 # ae_exp_gwrite
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kauth_ace_rights_t ae_exp_gwrite;
 ```
 

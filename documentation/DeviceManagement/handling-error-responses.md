@@ -1,16 +1,17 @@
 # Handling error responses
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Investigate and resolve service request errors.
 
 #### Overview
 
-When tasks for a service request result in a failure, you receive information about the failure either synchronously in the service response, or asynchronously in status endpoint responses or background notifications. The error information resides in the `ErrorResponse` objects. An [`ErrorResponse`](errorresponse.md) object contains two fields: an `errorNumber` field and an `errorMessage` field. In some cases, the `ErrorResponse` object also contains an `errorInfo` field with metadata about the failure for diagnostic purposes. Any `errorMessage` value uniquely maps to an `errorNumber` value, but not the other way around.
+When tasks for a service request result in a failure, you receive information about the failure either synchronously in the service response, or asynchronously in status endpoint responses or background notifications. The error information resides in the `ErrorResponse` objects. An [`ErrorResponse`](./errorresponse.md) object contains two fields: an `errorNumber` field and an `errorMessage` field. In some cases, the `ErrorResponse` object also contains an `errorInfo` field with metadata about the failure for diagnostic purposes. Any `errorMessage` value uniquely maps to an `errorNumber` value, but not the other way around.
 
-#### Handle Synchronous Error Responses
+#### Handle synchronous error responses
 
-When a service request results in a synchronous failure, the response is itself an [`ErrorResponse`](errorresponse.md) object containing an `errorMessage` and `errorNumber`.
+When a service request results in a synchronous failure, the response is itself an [`ErrorResponse`](./errorresponse.md) object containing an `errorMessage` and `errorNumber`.
 
 > ❗ **Important**:  Synchronous failures result in no asynchronous processing.
 
@@ -23,7 +24,7 @@ In addition to the response body, the HTTP status code provides information abou
 }
 ```
 
-#### Handle Retry After Headers
+#### Handle retry-after headers
 
 For HTTP `5xx` server error responses, a `Retry-After` header indicates how long the client must wait before making additional requests.
 
@@ -33,9 +34,9 @@ The header for a 2-minute wait resembles the following:
 Retry-After: 120
 ```
 
-If notifications for an event are missing, use [`Event Status`](events-status.md) to verify that the event’s state isn’t pending. Then start a sync with either [`Get Assets`](get-assets-44p83.md) or [`Get Users`](get-users-5boi1.md) to sync the changes since the request.
+If notifications for an event are missing, use [`Event Status`](./events-status.md) to verify that the event’s state isn’t pending. Then start a sync with either [`Get Assets`](./get-assets-44p83.md) or [`Get Users`](./get-users-5boi1.md) to sync the changes since the request.
 
-#### Handle Error Responses in Status
+#### Handle error responses in status
 
 If a task for a submitted service request fails while processing in the background, the `Status` endpoint for that task provides information about the failure. The `Status` endpoint includes a `failures` field with a value that’s an array of `ErrorResponse` objects.
 
@@ -62,9 +63,9 @@ If a task for a submitted service request fails while processing in the backgrou
 }
 ```
 
-#### Handle Error Responses in Notifications
+#### Handle error responses in notifications
 
-If a task for a submitted service request fails while processing in the background, and if your device management service that submits the request can receive notifications, the notification contains an [`ErrorResponse`](errorresponse.md) object with information about the failure and affected entities. A notification can have at most one `ErrorResponse` object in it (potentially affecting multiple entities).
+If a task for a submitted service request fails while processing in the background, and if your device management service that submits the request can receive notifications, the notification contains an [`ErrorResponse`](./errorresponse.md) object with information about the failure and affected entities. A notification can have at most one `ErrorResponse` object in it (potentially affecting multiple entities).
 
 ```javascript
 {
@@ -95,7 +96,7 @@ If a task for a submitted service request fails while processing in the backgrou
 }
 ```
 
-#### Review Synchronous Error Codes
+#### Review synchronous error codes
 
 | Error number | Error message | HTTP status code |
 | --- | --- | --- |
@@ -148,9 +149,9 @@ If a task for a submitted service request fails while processing in the backgrou
 | `9817` | The user is already assigned to this subscription through group membership. | `400` |
 | `9818` | Subscriptions exist for the organizational unit, so subscription management can’t be disabled. | `400` |
 
-#### Review Asynchronous Error Codes
+#### Review asynchronous error codes
 
-The server may return these error codes in either [`StatusResponse`](statusresponse.md) or in background notifications.
+The server may return these error codes in either [`StatusResponse`](./statusresponse.md) or in background notifications.
 
 | Error number | Error message |
 | --- | --- |
@@ -163,15 +164,16 @@ The server may return these error codes in either [`StatusResponse`](statusrespo
 
 > ❗ **Important**:  The server may add additional error codes in the future.
 
-##### Related Objects
+##### Related objects
 
-- [`ResponseErrorCode`](responseerrorcode.md)
+- [`ResponseErrorCode`](./responseerrorcode.md)
 
 ## See Also
 
-- [Using paginated endpoints](using-paginated-endpoints.md)
+### Common tasks
+- [Using paginated endpoints](./using-paginated-endpoints.md)
   Traverse large result sets with page-index and cursor-based pagination.
-- [Subscribing to notifications](subscribing-to-notifications.md)
+- [Subscribing to notifications](./subscribing-to-notifications.md)
   Monitor events for assets, assignments, and users in your organization.
 
 

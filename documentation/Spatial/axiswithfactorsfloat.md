@@ -1,7 +1,8 @@
 # AxisWithFactorsFloat
 
 **Framework**: Spatial  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The axis of a shear transform.
 
@@ -23,11 +24,11 @@ enum AxisWithFactorsFloat
 ## Topics
 
 ### Enumeration Cases
-- [AxisWithFactorsFloat.xAxis(yShearFactor:zShearFactor:)](axiswithfactorsfloat/xaxis(yshearfactor:zshearfactor:).md)
+- [AxisWithFactorsFloat.xAxis(yShearFactor:zShearFactor:)](./axiswithfactorsfloat/xaxis%28yshearfactor,zshearfactor%29.md)
   The shear is on the *x* axis using the *y* and *z* shear factors.
-- [AxisWithFactorsFloat.yAxis(xShearFactor:zShearFactor:)](axiswithfactorsfloat/yaxis(xshearfactor:zshearfactor:).md)
+- [AxisWithFactorsFloat.yAxis(xShearFactor:zShearFactor:)](./axiswithfactorsfloat/yaxis%28xshearfactor,zshearfactor%29.md)
   The shear is on the *y* axis using the *x* and *z* shear factors.
-- [AxisWithFactorsFloat.zAxis(xShearFactor:yShearFactor:)](axiswithfactorsfloat/zaxis(xshearfactor:yshearfactor:).md)
+- [AxisWithFactorsFloat.zAxis(xShearFactor:yShearFactor:)](./axiswithfactorsfloat/zaxis%28xshearfactor,yshearfactor%29.md)
   The shear is on the *z* axis using the *x* and *y* shear factors.
 
 

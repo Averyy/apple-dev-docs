@@ -1,7 +1,8 @@
 # PortalMaterial
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A material that makes the mesh part a portal to a different world.
 
@@ -21,9 +22,9 @@ struct PortalMaterial
 
 #### Overview
 
-You use a `PortalMaterial` with [`PortalComponent`](portalcomponent.md) and [`WorldComponent`](worldcomponent.md) to enable portal features.
+You use a `PortalMaterial` with [`PortalComponent`](./portalcomponent.md) and [`WorldComponent`](./worldcomponent.md) to enable portal features.
 
-You can set this material on individual mesh parts. For example, create a box with [`generateBox(width:height:depth:cornerRadius:splitFaces:)`](meshresource/generatebox(width:height:depth:cornerradius:splitfaces:).md). It can have some faces using [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) and some faces using `PortalMaterial`.
+You can set this material on individual mesh parts. For example, create a box with [`generateBox(width:height:depth:cornerRadius:splitFaces:)`](./meshresource/generatebox%28width,height,depth,cornerradius,splitfaces%29.md). It can have some faces using [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) and some faces using `PortalMaterial`.
 
 ```swift
 let portal = Entity()
@@ -49,63 +50,64 @@ portal.components.set(PortalComponent(
 ))
 ```
 
-![A screenshot of cyan color box with only one face using portal material and a spaceship poking out of it](/images/com.apple.RealityKit/portal-material-box.png)
+![A screenshot of cyan color box with only one face using portal material and a spaceship poking out of it](https://developer.apple.com/tutorials/images/com.apple.RealityKit/portal-material-box.png)
 
 RealityKit treats each mesh part with a `PortalMaterial` as a different portal, even if they are pointing to the same world. Beware of the performance impact of this usage.
 
-See [`PortalComponent`](portalcomponent.md) for example usage.
+See [`PortalComponent`](./portalcomponent.md) for example usage.
 
 ## Topics
 
 ### Specifying the shader program
-- [var program: PortalMaterial.Program](portalmaterial/program-swift.property.md)
+- [var program: PortalMaterial.Program](./portalmaterial/program-swift.property.md)
   The compiled program that drives this material’s surface and geometry shading.
-- [PortalMaterial.Program](portalmaterial/program-swift.struct.md)
+- [PortalMaterial.Program](./portalmaterial/program-swift.struct.md)
   A compiled shader program that drives the appearance of a portal’s surface and geometry.
 ### Accessing shader parameters
-- [func getParameter(name: String) -> MaterialParameters.Value?](portalmaterial/getparameter(name:).md)
+- [func getParameter(name: String) -> MaterialParameters.Value?](./portalmaterial/getparameter%28name%29.md)
   Returns the value of a parameter by name.
-- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](portalmaterial/getparameter(handle:).md)
+- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](./portalmaterial/getparameter%28handle%29.md)
   Returns the value of a parameter identified by a handle.
-- [func setParameter(name: String, value: MaterialParameters.Value) throws](portalmaterial/setparameter(name:value:).md)
+- [func setParameter(name: String, value: MaterialParameters.Value) throws](./portalmaterial/setparameter%28name,value%29.md)
   Sets the value of a parameter by name.
-- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](portalmaterial/setparameter(handle:value:).md)
+- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](./portalmaterial/setparameter%28handle,value%29.md)
   Sets the value of a parameter identified by a handle.
-- [static func parameterHandle(name: String) -> MaterialParameters.Handle](portalmaterial/parameterhandle(name:).md)
+- [static func parameterHandle(name: String) -> MaterialParameters.Handle](./portalmaterial/parameterhandle%28name%29.md)
   Returns a handle for the parameter with the given name.
 ### Initializers
-- [init()](portalmaterial/init.md)
-- [init(program: PortalMaterial.Program)](portalmaterial/init(program:).md)
+- [init()](./portalmaterial/init%28%29.md)
+- [init(program: PortalMaterial.Program)](./portalmaterial/init%28program%29.md)
   Creates a portal material from a previously compiled program.
 ### Instance Properties
-- [var faceCulling: PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.property.md)
+- [var faceCulling: PortalMaterial.FaceCulling](./portalmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.
-- [var triangleFillMode: PortalMaterial.TriangleFillMode](portalmaterial/trianglefillmode-swift.property.md)
+- [var triangleFillMode: PortalMaterial.TriangleFillMode](./portalmaterial/trianglefillmode-swift.property.md)
   The object that controls how RealityKit draws triangles.
 ### Type Aliases
-- [PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.typealias.md)
+- [PortalMaterial.FaceCulling](./portalmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [PortalMaterial.TriangleFillMode](portalmaterial/trianglefillmode-swift.typealias.md)
+- [PortalMaterial.TriangleFillMode](./portalmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
 
 ## Relationships
 
 ### Conforms To
-- [Material](material.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Material](./material.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.typealias.md)
+### Portals
+- [PortalMaterial.FaceCulling](./portalmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [PortalMaterial.TriangleFillMode](portalmaterial/trianglefillmode-swift.typealias.md)
+- [PortalMaterial.TriangleFillMode](./portalmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [struct PortalComponent](portalcomponent.md)
+- [struct PortalComponent](./portalcomponent.md)
   A component that turns mesh surfaces into portals to a different world.
-- [struct WorldComponent](worldcomponent.md)
+- [struct WorldComponent](./worldcomponent.md)
   A component that defines a portal world.
-- [struct PortalCrossingComponent](portalcrossingcomponent.md)
+- [struct PortalCrossingComponent](./portalcrossingcomponent.md)
   A component that allows entities to cross portal boundaries.
 
 

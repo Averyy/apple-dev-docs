@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](columnslice/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the column slice suitable for debugging.
 
 

@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with an identifier.
 

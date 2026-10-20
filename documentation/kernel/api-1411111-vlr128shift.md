@@ -1,7 +1,8 @@
 # vLR128Shift
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 128-bit logical right shift.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 vUInt32 vLR128Shift(vUInt32 vA, vUInt8 vShiftFactor);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the shifted vector.
 

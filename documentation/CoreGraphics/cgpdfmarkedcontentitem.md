@@ -1,7 +1,8 @@
 # CGPDFMarkedContentItem
 
 **Framework**: Core Graphics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -16,11 +17,15 @@
 class CGPDFMarkedContentItem
 ```
 
+```c
+typedef struct CGPDFMarkedContentItem * CGPDFMarkedContentItemRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

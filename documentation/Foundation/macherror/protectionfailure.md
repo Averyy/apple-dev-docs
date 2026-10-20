@@ -1,7 +1,8 @@
 # protectionFailure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specified memory is valid, but does not permit the required forms of access.
 

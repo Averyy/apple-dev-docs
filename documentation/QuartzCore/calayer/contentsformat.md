@@ -1,7 +1,8 @@
 # contentsFormat
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hint for the desired storage format of the layer contents.
 
@@ -19,29 +20,34 @@ A hint for the desired storage format of the layer contents.
 var contentsFormat: CALayerContentsFormat { get set }
 ```
 
+```objc
+@property (copy) CALayerContentsFormat contentsFormat;
+```
+
 #### Discussion
 
-The default value of this property is [`RGBA8Uint`](calayercontentsformat/rgba8uint.md).
+The default value of this property is [`RGBA8Uint`](../calayercontentsformat/rgba8uint.md).
 
-[`UIView`](https://developer.apple.com/documentation/uikit/uiview) and layer-backed [`NSView`](https://developer.apple.com/documentation/appkit/nsview) objects may change the value to a format appropriate for the current device.
+[`UIView`](../../UIKit/uiview.md) and layer-backed [`NSView`](../../AppKit/nsview.md) objects may change the value to a format appropriate for the current device.
 
 ## See Also
 
-- [var isOpaque: Bool](calayer/isopaque.md)
+### Configuring the layer’s rendering behavior
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value indicating whether the layer contains completely opaque content.
-- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](calayer/edgeantialiasingmask.md)
+- [var edgeAntialiasingMask: CAEdgeAntialiasingMask](./edgeantialiasingmask.md)
   A bitmask defining how the edges of the receiver are rasterized.
-- [func contentsAreFlipped() -> Bool](calayer/contentsareflipped.md)
+- [func contentsAreFlipped() -> Bool](./contentsareflipped%28%29.md)
   Returns a Boolean indicating whether the layer content is implicitly flipped when rendered.
-- [var isGeometryFlipped: Bool](calayer/isgeometryflipped.md)
+- [var isGeometryFlipped: Bool](./isgeometryflipped.md)
   A Boolean that indicates whether the geometry of the layer and its sublayers is flipped vertically.
-- [var drawsAsynchronously: Bool](calayer/drawsasynchronously.md)
+- [var drawsAsynchronously: Bool](./drawsasynchronously.md)
   A Boolean indicating whether drawing commands are deferred and processed asynchronously in a background thread.
-- [var shouldRasterize: Bool](calayer/shouldrasterize.md)
+- [var shouldRasterize: Bool](./shouldrasterize.md)
   A Boolean that indicates whether the layer is rendered as a bitmap before compositing. Animatable
-- [var rasterizationScale: CGFloat](calayer/rasterizationscale.md)
+- [var rasterizationScale: CGFloat](./rasterizationscale.md)
   The scale at which to rasterize content, relative to the coordinate space of the layer. Animatable
-- [func render(in: CGContext)](calayer/render(in:).md)
+- [func render(in: CGContext)](./render%28in%29.md)
   Renders the layer and its sublayers into the specified context.
 
 

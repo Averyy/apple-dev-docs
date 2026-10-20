@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scope from the given string.
 
@@ -22,7 +23,7 @@ init(rawValue: String)
 
 #### Discussion
 
-Typically you use one of the predefined scopes, like [`email`](asauthorization/scope/email.md), instead of initializing one from a string.
+Typically you use one of the predefined scopes, like [`email`](./email.md), instead of initializing one from a string.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Typically you use one of the predefined scopes, like [`email`](asauthorization/s
 
 ## See Also
 
-- [init(String)](asauthorization/scope/init(_:).md)
+### Creating a Scope
+- [init(String)](./init%28_%29.md)
   Creates a scope from the given string.
 
 

@@ -1,7 +1,8 @@
 # directoryNotEmpty
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Directory not empty.
 
@@ -22,7 +23,7 @@ static var directoryNotEmpty: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,19 +33,20 @@ The corresponding C error is `ENOTEMPTY`.
 
 ## See Also
 
-- [static var badFileTypeOrFormat: Errno](errno/badfiletypeorformat.md)
+### File System Errors
+- [static var badFileTypeOrFormat: Errno](./badfiletypeorformat.md)
   Inappropriate file type or format.
-- [static var diskQuotaExceeded: Errno](errno/diskquotaexceeded.md)
+- [static var diskQuotaExceeded: Errno](./diskquotaexceeded.md)
   Disk quota exceeded.
-- [static var noSpace: Errno](errno/nospace.md)
+- [static var noSpace: Errno](./nospace.md)
   Device out of space.
-- [static var readOnlyFileSystem: Errno](errno/readonlyfilesystem.md)
+- [static var readOnlyFileSystem: Errno](./readonlyfilesystem.md)
   Read-only file system.
-- [static var tooManyLinks: Errno](errno/toomanylinks.md)
+- [static var tooManyLinks: Errno](./toomanylinks.md)
   Too many links.
-- [static var tooManyOpenFilesInSystem: Errno](errno/toomanyopenfilesinsystem.md)
+- [static var tooManyOpenFilesInSystem: Errno](./toomanyopenfilesinsystem.md)
   The system has too many open files.
-- [static var tooManyOpenFiles: Errno](errno/toomanyopenfiles.md)
+- [static var tooManyOpenFiles: Errno](./toomanyopenfiles.md)
   This process has too many open files.
 
 

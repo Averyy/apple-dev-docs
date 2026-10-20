@@ -1,23 +1,28 @@
 # MKLocalSearch.CompletionHandler
 
 **Framework**: MapKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A completion handler block for a search operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CompletionHandler = (MKLocalSearch.Response?, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(MKLocalSearchResponse *, NSError *) MKLocalSearchCompletionHandler;
 ```
 
 #### Discussion
@@ -31,11 +36,12 @@ This block has no return value.
 
 ## See Also
 
-- [func start(completionHandler: (MKLocalSearch.Response?, (any Error)?) -> Void)](mklocalsearch/start(completionhandler:).md)
+### Performing the search
+- [func start(completionHandler: (MKLocalSearch.Response?, (any Error)?) -> Void)](./start%28completionhandler%29.md)
   Starts the search and delivers the results to the specified completion handler.
-- [var isSearching: Bool](mklocalsearch/issearching.md)
+- [var isSearching: Bool](./issearching.md)
   A Boolean value that indicates whether the search is in progress.
-- [func cancel()](mklocalsearch/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress search operation.
 
 

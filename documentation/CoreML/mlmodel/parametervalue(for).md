@@ -1,7 +1,8 @@
 # parameterValue(for:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a model parameter value for a key.
 
@@ -20,21 +21,26 @@ Returns a model parameter value for a key.
 func parameterValue(for key: MLParameterKey) throws -> Any
 ```
 
+```objc
+- (id) parameterValueForKey:(MLParameterKey *) key error:(NSError **) error;
+```
+
 ## Parameters
 
 - `key`: The key to a model parameter value.
 
 ## See Also
 
-- [static var availableComputeDevices: [MLComputeDevice]](mlmodel/availablecomputedevices-6klyt.md)
+### Inspecting a model
+- [static var availableComputeDevices: [MLComputeDevice]](./availablecomputedevices-6klyt.md)
   The list of available compute devices that the model’s prediction methods use.
-- [var configuration: MLModelConfiguration](mlmodel/configuration.md)
+- [var configuration: MLModelConfiguration](./configuration.md)
   The configuration of the model set during initialization.
-- [var modelDescription: MLModelDescription](mlmodel/modeldescription.md)
+- [var modelDescription: MLModelDescription](./modeldescription.md)
   Model information you use at runtime during development, which Xcode also displays in its Core ML model editor view.
-- [class MLModelDescription](mlmodeldescription.md)
+- [class MLModelDescription](../mlmodeldescription.md)
   Information about a model, primarily the input and output format for each feature the model expects, and optional metadata.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

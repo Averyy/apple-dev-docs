@@ -1,7 +1,8 @@
 # centralManager(_:didUpdateANCSAuthorizationFor:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the authorization status changed for a ANCS-requiring connected peripheral.
 
@@ -19,10 +20,14 @@ Tells the delegate the authorization status changed for a ANCS-requiring connect
 optional func centralManager(_ central: CBCentralManager, didUpdateANCSAuthorizationFor peripheral: CBPeripheral)
 ```
 
+```objc
+- (void) centralManager:(CBCentralManager *) central didUpdateANCSAuthorizationForPeripheral:(CBPeripheral *) peripheral;
+```
+
 ## Parameters
 
 - `central`: The central manager providing this information.
-- `peripheral`: The [`CBPeripheral`](cbperipheral.md) that caused the event.
+- `peripheral`: The [`CBPeripheral`](../cbperipheral.md) that caused the event.
 
 
 ---

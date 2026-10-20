@@ -1,12 +1,13 @@
 # NSSharingServicePickerDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for managing content for the macOS share sheet.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ An interface for managing content for the macOS share sheet.
 protocol NSSharingServicePickerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSSharingServicePickerDelegate <NSObject>
+```
+
 #### Overview
 
-Adopt the [`NSSharingServicePickerDelegate`](nssharingservicepickerdelegate.md) protocol in one of your app’s types, and use it to manage interactions with an [`NSSharingServicePicker`](nssharingservicepicker.md) object. Use your delegate object to customize the services for the proposed items and respond to the selection of a shared service.
+Adopt the [`NSSharingServicePickerDelegate`](./nssharingservicepickerdelegate.md) protocol in one of your app’s types, and use it to manage interactions with an [`NSSharingServicePicker`](./nssharingservicepicker.md) object. Use your delegate object to customize the services for the proposed items and respond to the selection of a shared service.
 
-For information about how to display the share sheet and configure your delegate, see [`NSSharingServicePicker`](nssharingservicepicker.md).
+For information about how to display the share sheet and configure your delegate, see [`NSSharingServicePicker`](./nssharingservicepicker.md).
 
 ## Topics
 
 ### Configuring the Sharing Services
-- [func sharingServicePicker(NSSharingServicePicker, sharingServicesForItems: [Any], proposedSharingServices: [NSSharingService]) -> [NSSharingService]](nssharingservicepickerdelegate/sharingservicepicker(_:sharingservicesforitems:proposedsharingservices:).md)
+- [func sharingServicePicker(NSSharingServicePicker, sharingServicesForItems: [Any], proposedSharingServices: [NSSharingService]) -> [NSSharingService]](./nssharingservicepickerdelegate/sharingservicepicker%28_,sharingservicesforitems,proposedsharingservices%29.md)
   Asks the delegate to specify which services to make available from the sharing service picker.
 ### Customizing Behavior
-- [func sharingServicePicker(NSSharingServicePicker, didChoose: NSSharingService?)](nssharingservicepickerdelegate/sharingservicepicker(_:didchoose:).md)
+- [func sharingServicePicker(NSSharingServicePicker, didChoose: NSSharingService?)](./nssharingservicepickerdelegate/sharingservicepicker%28_,didchoose%29.md)
   Tells the delegate that the person selected a sharing service for the current item.
-- [func sharingServicePicker(NSSharingServicePicker, delegateFor: NSSharingService) -> (any NSSharingServiceDelegate)?](nssharingservicepickerdelegate/sharingservicepicker(_:delegatefor:).md)
+- [func sharingServicePicker(NSSharingServicePicker, delegateFor: NSSharingService) -> (any NSSharingServiceDelegate)?](./nssharingservicepickerdelegate/sharingservicepicker%28_,delegatefor%29.md)
   Asks your delegate to provide an object that the selected sharing service can use as its delegate.
 ### Instance Methods
-- [func sharingServicePickerCollaborationModeRestrictions(NSSharingServicePicker) -> [NSSharingServicePicker.CollaborationModeRestriction]?](nssharingservicepickerdelegate/sharingservicepickercollaborationmoderestrictions(_:).md)
+- [func sharingServicePickerCollaborationModeRestrictions(NSSharingServicePicker) -> [NSSharingServicePicker.CollaborationModeRestriction]?](./nssharingservicepickerdelegate/sharingservicepickercollaborationmoderestrictions%28_%29.md)
   Used to specify the case where the share picker should not support some modes of sharing even if they are supported by the items being shared. Disabling all possible modes at the same time is not supported behavior.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSSharingServicePickerToolbarItemDelegate](nssharingservicepickertoolbaritemdelegate.md)
-- [NSSharingServicePickerTouchBarItemDelegate](nssharingservicepickertouchbaritemdelegate.md)
+- [NSSharingServicePickerToolbarItemDelegate](./nssharingservicepickertoolbaritemdelegate.md)
+- [NSSharingServicePickerTouchBarItemDelegate](./nssharingservicepickertouchbaritemdelegate.md)
 
 ## See Also
 
-- [var delegate: (any NSSharingServicePickerDelegate)?](nssharingservicepicker/delegate.md)
+### Managing the sharing service picker
+- [var delegate: (any NSSharingServicePickerDelegate)?](./nssharingservicepicker/delegate.md)
   The object for managing the sharing service picker.
 
 

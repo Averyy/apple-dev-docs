@@ -1,7 +1,8 @@
 # noDMAErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Can't do DMA digitizing; that is, can't go to the requested destination. 
 

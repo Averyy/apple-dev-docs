@@ -1,7 +1,8 @@
 # loadAssociatedTracks(ofType:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads associated tracks that have the specified association type.
 
@@ -17,18 +18,29 @@ Loads associated tracks that have the specified association type.
 ## Declaration
 
 ```swift
+func loadAssociatedTracks(ofType trackAssociationType: AVAssetTrack.AssociationType, completionHandler: @escaping @Sendable ([AVAssetTrack]?, (any Error)?) -> Void)
+```
+
+```swift
 func loadAssociatedTracks(ofType trackAssociationType: AVAssetTrack.AssociationType) async throws -> [AVAssetTrack]
+```
+
+```objc
+- (void) loadAssociatedTracksOfType:(AVTrackAssociationType) trackAssociationType completionHandler:(void (^)(NSArray<AVAssetTrack *> *, NSError *)) completionHandler;
 ```
 
 ## Parameters
 
 - `trackAssociationType`: The track association type to load tracks for.
-- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters: - **tracks**: The array of associated tracks, which may be empty if there are no tracks for the specified association type. The value is `nil` if an error occurs.
-- **error**: An error object if the request fails; otherwise, `nil`.
+- `completionHandler`: A callback that the system invokes after it finishes the loading request. It passes the completion handler the following parameters:
+
+  - **tracks**: The array of associated tracks, which may be empty if there are no tracks for the specified association type. The value is `nil` if an error occurs.
+  - **error**: An error object if the request fails; otherwise, `nil`.
 
 ## See Also
 
-- [static var availableTrackAssociationTypes: AVAsyncProperty<Root, [AVAssetTrack.AssociationType]>](avpartialasyncproperty/availabletrackassociationtypes.md)
+### Loading track associations
+- [static var availableTrackAssociationTypes: AVAsyncProperty<Root, [AVAssetTrack.AssociationType]>](../avpartialasyncproperty/availabletrackassociationtypes.md)
   An array of association types that the track uses to associate with other tracks.
 
 

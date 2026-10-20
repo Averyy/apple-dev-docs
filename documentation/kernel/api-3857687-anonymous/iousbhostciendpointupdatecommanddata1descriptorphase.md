@@ -1,14 +1,15 @@
 # IOUSBHostCIEndpointUpdateCommandData1DescriptorPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIEndpointUpdateCommandData1DescriptorPhase = IOUSBBitRangePhase(0, 63)
 ```
 

@@ -1,7 +1,8 @@
 # maximumActionsCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of actions that a @c CPNavigationAlert can display.
 
@@ -14,6 +15,10 @@ The maximum number of actions that a @c CPNavigationAlert can display.
 
 ```swift
 class var maximumActionsCount: Int { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) NSInteger maximumActionsCount;
 ```
 
 

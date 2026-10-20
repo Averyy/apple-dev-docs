@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/new-features.html
 
 # New Features
 
-**
-
-- [.md](../_sources/source/new-features.md)
-- **
-
-.pdf
-
-**
-
-# New Features
-
- Table of contents 
-
-## Contents
-
-# New Features
-
 The following sections describe new features and improvements in the most recent versions of Core ML Tools.
 
 ## New in Core ML Tools 8
@@ -70,8 +53,8 @@ If you used `coremltools` 3 for neural network model conversion from TensorFlow 
 
 | Conversion from | coremltools 3 | coremltools 4 and newer |
 | --- | --- | --- |
-| TensorFlow | Installcoremltools 3.4andtfcoreml 1.1and use thetfcoreml.convertAPI. | Use the newcoremltools.convertAPI. SeeUnified Conversion API. |
-| PyTorch | First export the PyTorch model to theONNXformat and then installcoremltools 3.4andonnx-coreml 1.3and use theonnx_coreml.convertAPI. | Use the newcoremltools.convertAPI. SeeUnified Conversion API. |
+| TensorFlow | Install [coremltools 3.4](https://pypi.org/project/coremltools/3.4/) and [tfcoreml 1.1](https://pypi.org/project/tfcoreml/1.1/) and use the `tfcoreml.convert` API. | Use the new `coremltools.convert` API. See [Unified Conversion API](unified-conversion-api.md). |
+| PyTorch | First export the PyTorch model to the [ONNX](https://github.com/onnx/onnx) format and then install [coremltools 3.4](https://pypi.org/project/coremltools/3.4/) and [onnx-coreml 1.3](https://pypi.org/project/onnx-coreml/1.3/) and use the `onnx_coreml.convert` API. | Use the new `coremltools.convert` API. See [Unified Conversion API](unified-conversion-api.md). |
 
 ### Convert from TensorFlow
 
@@ -103,5 +86,3 @@ In coremltools 4 and newer, the following class and methods available in previou
 - Keras.io and ONNX converters will be deprecated in coremltools 6. Users are recommended to transition to the TensorFlow/PyTorch conversion using the [Unified Conversion API](unified-conversion-api.md).
 
 The current version of coremltools ([version 7.1](https://github.com/apple/coremltools)) includes wheels for Python 3.7, 3.8, 3.9, 3.10, and 3.11.
-
-** Contents

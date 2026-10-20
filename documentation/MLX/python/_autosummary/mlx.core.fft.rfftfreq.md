@@ -6,36 +6,9 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.rfftfreq
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.fft.rfftfreq.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.fft.rfftfreq
-
- Table of contents 
-
-## Contents
-
-# mlx.core.fft.rfftfreq
-
-**rfftfreq(*n: int*, *d: float = 1.0*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**rfftfreq(*n: int*, *d: float = 1.0*, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Return the discrete Fourier Transform sample frequencies
-for use with [rfft()](mlx.core.fft.rfft.html#mlx.core.fft.rfft) and [irfft()](mlx.core.fft.irfft.html#mlx.core.fft.irfft).
+for use with [rfft()](mlx.core.fft.rfft.md#mlx.core.fft.rfft) and [irfft()](mlx.core.fft.irfft.md#mlx.core.fft.irfft).
 The returned array contains the non-negative frequency terms
 in the range `[0, floor(n/2)]`.
 
@@ -48,6 +21,4 @@ Returns:
 The sample frequencies as a one-dimensional array of type `float32`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

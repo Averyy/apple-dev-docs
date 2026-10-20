@@ -1,23 +1,28 @@
 # init(named:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture atlas from data stored in the app bundle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 convenience init(named name: String)
+```
+
+```objc
++ (instancetype) atlasNamed:(NSString *) name;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ If the texture atlas cannot be found, an exception is thrown.
 
 ## See Also
 
-- [convenience init(dictionary: [String : Any])](sktextureatlas/init(dictionary:).md)
+### Creating a Texture Atlas Programmatically
+- [convenience init(dictionary: [String : Any])](./init%28dictionary%29.md)
   Creates a texture atlas from a set of image files.
 
 

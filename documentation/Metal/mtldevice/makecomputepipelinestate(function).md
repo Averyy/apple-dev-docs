@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronously creates a compute pipeline state with a function instance.
@@ -11,7 +12,7 @@ Synchronously creates a compute pipeline state with a function instance.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,25 +21,30 @@ Synchronously creates a compute pipeline state with a function instance.
 func makeComputePipelineState(function computeFunction: any MTLFunction) throws -> any MTLComputePipelineState
 ```
 
+```objc
+- (id<MTLComputePipelineState>) newComputePipelineStateWithFunction:(id<MTLFunction>) computeFunction error:(NSError **) error;
+```
+
 #### Discussion
 
-Use the compute pipeline state to configure a compute pass by calling the [`setComputePipelineState(_:)`](mtlcomputecommandencoder/setcomputepipelinestate(_:).md) method of an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instance.
+Use the compute pipeline state to configure a compute pass by calling the [`setComputePipelineState(_:)`](../mtlcomputecommandencoder/setcomputepipelinestate%28_%29.md) method of an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance.
 
 ## Parameters
 
-- `computeFunction`: An [`MTLFunction`](mtlfunction.md) instance.
+- `computeFunction`: An [`MTLFunction`](../mtlfunction.md) instance.
 
 ## See Also
 
-- [func makeComputePipelineState(descriptor: MTLComputePipelineDescriptor, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedComputePipelineReflection?>?) throws -> any MTLComputePipelineState](mtldevice/makecomputepipelinestate(descriptor:options:reflection:).md)
+### Creating compute pipeline states
+- [func makeComputePipelineState(descriptor: MTLComputePipelineDescriptor, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedComputePipelineReflection?>?) throws -> any MTLComputePipelineState](./makecomputepipelinestate%28descriptor,options,reflection%29.md)
   Synchronously creates a compute pipeline state and reflection information.
-- [func makeComputePipelineState(descriptor: MTLComputePipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLComputePipelineState)?, MTLComputePipelineReflection?, (any Error)?) -> Void)](mtldevice/makecomputepipelinestate(descriptor:options:completionhandler:).md)
+- [func makeComputePipelineState(descriptor: MTLComputePipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLComputePipelineState)?, MTLComputePipelineReflection?, (any Error)?) -> Void)](./makecomputepipelinestate%28descriptor,options,completionhandler%29.md)
   Asynchronously creates a compute pipeline state and reflection information.
-- [func makeComputePipelineState(function: any MTLFunction, completionHandler: ((any MTLComputePipelineState)?, (any Error)?) -> Void)](mtldevice/makecomputepipelinestate(function:completionhandler:).md)
+- [func makeComputePipelineState(function: any MTLFunction, completionHandler: ((any MTLComputePipelineState)?, (any Error)?) -> Void)](./makecomputepipelinestate%28function,completionhandler%29.md)
   Asynchronously creates a compute pipeline state with a function instance.
-- [func makeComputePipelineState(function: any MTLFunction, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedComputePipelineReflection?>?) throws -> any MTLComputePipelineState](mtldevice/makecomputepipelinestate(function:options:reflection:).md)
+- [func makeComputePipelineState(function: any MTLFunction, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedComputePipelineReflection?>?) throws -> any MTLComputePipelineState](./makecomputepipelinestate%28function,options,reflection%29.md)
   Synchronously creates a compute pipeline state and reflection with a function instance.
-- [func makeComputePipelineState(function: any MTLFunction, options: MTLPipelineOption, completionHandler: ((any MTLComputePipelineState)?, MTLComputePipelineReflection?, (any Error)?) -> Void)](mtldevice/makecomputepipelinestate(function:options:completionhandler:).md)
+- [func makeComputePipelineState(function: any MTLFunction, options: MTLPipelineOption, completionHandler: ((any MTLComputePipelineState)?, MTLComputePipelineReflection?, (any Error)?) -> Void)](./makecomputepipelinestate%28function,options,completionhandler%29.md)
   Asynchronously creates a compute pipeline state and reflection with a function instance.
 
 

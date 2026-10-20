@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of drop operations using the provided raw value.
 

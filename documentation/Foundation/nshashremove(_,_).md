@@ -1,7 +1,8 @@
 # NSHashRemove(_:_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes an element from the specified hash table.
 
@@ -20,47 +21,53 @@ Removes an element from the specified hash table.
 func NSHashRemove(_ table: NSHashTable<AnyObject>, _ pointer: UnsafeRawPointer?)
 ```
 
+```c
+extern void NSHashRemove(NSHashTable *table, const void *pointer);
+```
+
 #### Discussion
 
 If `pointer` matches an item already in `table`, this function releases the preexisting item.
 
 ## See Also
 
-- [func NSHashInsertKnownAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?)](nshashinsertknownabsent(_:_:).md)
+### Related Documentation
+- [func NSHashInsertKnownAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?)](./nshashinsertknownabsent%28_,_%29.md)
   Adds an element to the specified hash table.
-- [func NSHashInsert(NSHashTable<AnyObject>, UnsafeRawPointer?)](nshashinsert(_:_:).md)
+- [func NSHashInsert(NSHashTable<AnyObject>, UnsafeRawPointer?)](./nshashinsert%28_,_%29.md)
   Adds an element to the specified hash table.
-- [func NSHashInsertIfAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](nshashinsertifabsent(_:_:).md)
+- [func NSHashInsertIfAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](./nshashinsertifabsent%28_,_%29.md)
   Adds an element to the specified hash table only if the table does not already contain the element.
-- [func NSAllHashTableObjects(NSHashTable<AnyObject>) -> [Any]](nsallhashtableobjects(_:).md)
+### Functions
+- [func NSAllHashTableObjects(NSHashTable<AnyObject>) -> [Any]](./nsallhashtableobjects%28_%29.md)
   Returns all of the elements in the specified hash table.
-- [func NSCompareHashTables(NSHashTable<AnyObject>, NSHashTable<AnyObject>) -> Bool](nscomparehashtables(_:_:).md)
+- [func NSCompareHashTables(NSHashTable<AnyObject>, NSHashTable<AnyObject>) -> Bool](./nscomparehashtables%28_,_%29.md)
   Returns a Boolean value that indicates whether the elements of two hash tables are equal.
-- [func NSCopyHashTableWithZone(NSHashTable<AnyObject>, NSZone?) -> NSHashTable<AnyObject>](nscopyhashtablewithzone(_:_:).md)
+- [func NSCopyHashTableWithZone(NSHashTable<AnyObject>, NSZone?) -> NSHashTable<AnyObject>](./nscopyhashtablewithzone%28_,_%29.md)
   Performs a shallow copy of the specified hash table.
-- [func NSCountHashTable(NSHashTable<AnyObject>) -> Int](nscounthashtable(_:).md)
+- [func NSCountHashTable(NSHashTable<AnyObject>) -> Int](./nscounthashtable%28_%29.md)
   Returns the number of elements in a hash table.
-- [func NSCreateHashTable(NSHashTableCallBacks, Int) -> NSHashTable<AnyObject>](nscreatehashtable(_:_:).md)
+- [func NSCreateHashTable(NSHashTableCallBacks, Int) -> NSHashTable<AnyObject>](./nscreatehashtable%28_,_%29.md)
   Creates and returns a new hash table.
-- [func NSCreateHashTableWithZone(NSHashTableCallBacks, Int, NSZone?) -> NSHashTable<AnyObject>](nscreatehashtablewithzone(_:_:_:).md)
+- [func NSCreateHashTableWithZone(NSHashTableCallBacks, Int, NSZone?) -> NSHashTable<AnyObject>](./nscreatehashtablewithzone%28_,_,_%29.md)
   Creates a new hash table in a given zone.
-- [func NSEndHashTableEnumeration(UnsafeMutablePointer<NSHashEnumerator>)](nsendhashtableenumeration(_:).md)
+- [func NSEndHashTableEnumeration(UnsafeMutablePointer<NSHashEnumerator>)](./nsendhashtableenumeration%28_%29.md)
   Used when finished with an enumerator.
-- [func NSEnumerateHashTable(NSHashTable<AnyObject>) -> NSHashEnumerator](nsenumeratehashtable(_:).md)
+- [func NSEnumerateHashTable(NSHashTable<AnyObject>) -> NSHashEnumerator](./nsenumeratehashtable%28_%29.md)
   Creates an enumerator for the specified hash table.
-- [func NSFreeHashTable(NSHashTable<AnyObject>)](nsfreehashtable(_:).md)
+- [func NSFreeHashTable(NSHashTable<AnyObject>)](./nsfreehashtable%28_%29.md)
   Deletes the specified hash table.
-- [func NSHashGet(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer](nshashget(_:_:).md)
+- [func NSHashGet(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer](./nshashget%28_,_%29.md)
   Returns an element of the hash table.
-- [func NSHashInsert(NSHashTable<AnyObject>, UnsafeRawPointer?)](nshashinsert(_:_:).md)
+- [func NSHashInsert(NSHashTable<AnyObject>, UnsafeRawPointer?)](./nshashinsert%28_,_%29.md)
   Adds an element to the specified hash table.
-- [func NSHashInsertIfAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](nshashinsertifabsent(_:_:).md)
+- [func NSHashInsertIfAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](./nshashinsertifabsent%28_,_%29.md)
   Adds an element to the specified hash table only if the table does not already contain the element.
-- [func NSHashInsertKnownAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?)](nshashinsertknownabsent(_:_:).md)
+- [func NSHashInsertKnownAbsent(NSHashTable<AnyObject>, UnsafeRawPointer?)](./nshashinsertknownabsent%28_,_%29.md)
   Adds an element to the specified hash table.
-- [func NSNextHashEnumeratorItem(UnsafeMutablePointer<NSHashEnumerator>) -> UnsafeMutableRawPointer?](nsnexthashenumeratoritem(_:).md)
+- [func NSNextHashEnumeratorItem(UnsafeMutablePointer<NSHashEnumerator>) -> UnsafeMutableRawPointer?](./nsnexthashenumeratoritem%28_%29.md)
   Returns the next hash-table element in the enumeration.
-- [func NSResetHashTable(NSHashTable<AnyObject>)](nsresethashtable(_:).md)
+- [func NSResetHashTable(NSHashTable<AnyObject>)](./nsresethashtable%28_%29.md)
   Deletes the elements of the specified hash table.
 
 

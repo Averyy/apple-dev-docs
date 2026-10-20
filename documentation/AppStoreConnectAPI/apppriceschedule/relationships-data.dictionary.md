@@ -1,7 +1,8 @@
 # AppPriceSchedule.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,17 +11,17 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppPriceSchedule.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPriceSchedule.Relationships.App](apppriceschedule/relationships-data.dictionary/app-data.dictionary.md)
-- [object AppPriceSchedule.Relationships.AutomaticPrices](apppriceschedule/relationships-data.dictionary/automaticprices-data.dictionary.md)
-- [object AppPriceSchedule.Relationships.BaseTerritory](apppriceschedule/relationships-data.dictionary/baseterritory-data.dictionary.md)
-- [object AppPriceSchedule.Relationships.ManualPrices](apppriceschedule/relationships-data.dictionary/manualprices-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.AutomaticPrices](./relationships-data.dictionary/automaticprices-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.BaseTerritory](./relationships-data.dictionary/baseterritory-data.dictionary.md)
+- [object AppPriceSchedule.Relationships.ManualPrices](./relationships-data.dictionary/manualprices-data.dictionary.md)
 
 ## Properties
 

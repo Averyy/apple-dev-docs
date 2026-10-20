@@ -1,7 +1,8 @@
 # allowsExpensiveNetworkAccess
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether connections may use a network interface that the system considers expensive.
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether connections may use a network interface t
 var allowsExpensiveNetworkAccess: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsExpensiveNetworkAccess;
+```
+
 #### Discussion
 
-The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive. If there are no nonexpensive network interfaces available and the session’s [`allowsExpensiveNetworkAccess`](urlsessionconfiguration/allowsexpensivenetworkaccess.md) property is [`false`](https://developer.apple.com/documentation/swift/false), any task created from the session fails. In this case, the error provided when the task fails has a [`networkUnavailableReason`](urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonExpensive`](nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonexpensive.md).
+The system determines what constitutes “expensive” based on the nature of the network interface and other factors. iOS 13 considers most cellular networks and personal hotspots expensive. If there are no nonexpensive network interfaces available and the session’s [`allowsExpensiveNetworkAccess`](./allowsexpensivenetworkaccess.md) property is [`false`](../../Swift/false.md), any task created from the session fails. In this case, the error provided when the task fails has a [`networkUnavailableReason`](../urlerror/networkunavailablereason-swift.property.md) property whose value is [`NSURLErrorNetworkUnavailableReasonExpensive`](../nsurlerrornetworkunavailablereason/nsurlerrornetworkunavailablereasonexpensive.md).
 
-You can limit your app’s of use of expensive network access to user-initiated tasks, and put off discretionary tasks until a nonexpensive interface becomes available. To do this, set [`allowsExpensiveNetworkAccess`](urlsessionconfiguration/allowsexpensivenetworkaccess.md) (and [`allowsConstrainedNetworkAccess`](urlsessionconfiguration/allowsconstrainednetworkaccess.md)) to [`false`](https://developer.apple.com/documentation/swift/false) and [`waitsForConnectivity`](urlsessionconfiguration/waitsforconnectivity.md) to [`true`](https://developer.apple.com/documentation/swift/true). This way, your [`URLSessionTask`](urlsessiontask.md) waits for a suitable interface to become available before sending or receiving data.
+You can limit your app’s of use of expensive network access to user-initiated tasks, and put off discretionary tasks until a nonexpensive interface becomes available. To do this, set [`allowsExpensiveNetworkAccess`](./allowsexpensivenetworkaccess.md) (and [`allowsConstrainedNetworkAccess`](./allowsconstrainednetworkaccess.md)) to [`false`](../../Swift/false.md) and [`waitsForConnectivity`](./waitsforconnectivity.md) to [`true`](../../Swift/true.md). This way, your [`URLSessionTask`](../urlsessiontask.md) waits for a suitable interface to become available before sending or receiving data.
 
 To test the behavior of this property, you can override the device’s current values for cellular and Wi-Fi cost in Settings > Developer > Network Override.
 
-> 💡 **Tip**:  Prefer basing your app’s policy logic around the [`allowsConstrainedNetworkAccess`](urlsessionconfiguration/allowsconstrainednetworkaccess.md) property rather than this one. People using your app can use the “Low Data Mode” setting to set the constrained status, and thereby choose to use a potentially expensive network.
+> 💡 **Tip**:  Prefer basing your app’s policy logic around the [`allowsConstrainedNetworkAccess`](./allowsconstrainednetworkaccess.md) property rather than this one. People using your app can use the “Low Data Mode” setting to set the constrained status, and thereby choose to use a potentially expensive network.
 
 ## See Also
 
-- [var allowsConstrainedNetworkAccess: Bool](urlsessionconfiguration/allowsconstrainednetworkaccess.md)
+### Supporting limited modes
+- [var allowsConstrainedNetworkAccess: Bool](./allowsconstrainednetworkaccess.md)
   A Boolean value that indicates whether connections may use the network when the user has specified Low Data Mode.
 
 

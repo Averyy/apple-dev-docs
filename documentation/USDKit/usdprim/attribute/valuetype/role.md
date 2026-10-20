@@ -1,7 +1,8 @@
 # role
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this type’s role, if it has one.
 

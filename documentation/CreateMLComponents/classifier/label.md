@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The classification label type.

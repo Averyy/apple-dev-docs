@@ -7,9 +7,10 @@
 
 ## See Also
 
-- [start](iodevicememory/initelement/start.md)
+### Fields
+- [start](./start.md)
   First physical address in the range.
-- [length](iodevicememory/initelement/length.md)
+- [length](./length.md)
   Length of the range.
 
 

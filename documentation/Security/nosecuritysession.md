@@ -1,7 +1,8 @@
 # noSecuritySession
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Not a valid session.
 
@@ -13,6 +14,10 @@ Not a valid session.
 
 ```swift
 var noSecuritySession: SecuritySessionId { get }
+```
+
+```c
+noSecuritySession
 ```
 
 

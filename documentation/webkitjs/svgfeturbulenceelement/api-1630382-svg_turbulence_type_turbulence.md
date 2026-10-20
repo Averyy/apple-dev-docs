@@ -9,17 +9,18 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_TURBULENCE_TYPE_TURBULENCE;
 ```
 
 ## See Also
 
-- [SVG_STITCHTYPE_NOSTITCH](svgfeturbulenceelement/1633688-svg_stitchtype_nostitch.md)
-- [SVG_STITCHTYPE_STITCH](svgfeturbulenceelement/1629637-svg_stitchtype_stitch.md)
-- [SVG_STITCHTYPE_UNKNOWN](svgfeturbulenceelement/1630514-svg_stitchtype_unknown.md)
-- [SVG_TURBULENCE_TYPE_FRACTALNOISE](svgfeturbulenceelement/1632466-svg_turbulence_type_fractalnoise.md)
-- [SVG_TURBULENCE_TYPE_UNKNOWN](svgfeturbulenceelement/1629904-svg_turbulence_type_unknown.md)
+### Miscellaneous
+- [SVG_STITCHTYPE_NOSTITCH](./api-1633688-svg_stitchtype_nostitch.md)
+- [SVG_STITCHTYPE_STITCH](./api-1629637-svg_stitchtype_stitch.md)
+- [SVG_STITCHTYPE_UNKNOWN](./api-1630514-svg_stitchtype_unknown.md)
+- [SVG_TURBULENCE_TYPE_FRACTALNOISE](./api-1632466-svg_turbulence_type_fractalnoise.md)
+- [SVG_TURBULENCE_TYPE_UNKNOWN](./api-1629904-svg_turbulence_type_unknown.md)
 
 
 ---

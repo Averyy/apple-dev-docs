@@ -1,7 +1,8 @@
 # loadView()
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the view that the controller manages.
 
@@ -19,13 +20,14 @@ override dynamic func loadView()
 
 ## See Also
 
-- [func viewDidLoad()](datascannerviewcontroller/viewdidload.md)
+### Responding to view controller events
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Performs some action after the system loads the view into memory.
-- [func viewWillAppear(Bool)](datascannerviewcontroller/viewwillappear(_:).md)
+- [func viewWillAppear(Bool)](./viewwillappear%28_%29.md)
   Performs some action before the view appears.
-- [func viewDidDisappear(Bool)](datascannerviewcontroller/viewdiddisappear(_:).md)
+- [func viewDidDisappear(Bool)](./viewdiddisappear%28_%29.md)
   Performs some action after the view disappears.
-- [func removeFromParent()](datascannerviewcontroller/removefromparent.md)
+- [func removeFromParent()](./removefromparent%28%29.md)
   Removes the view controller from its parent.
 
 

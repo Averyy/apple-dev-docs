@@ -1,6 +1,7 @@
 # Analyzing images with multimodal prompting
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Analyze and extract information from images by combining them with descriptive text prompts.
 
@@ -13,7 +14,7 @@ The Foundation Models framework supports using text and images in your prompts, 
 - Generating accessibility descriptions for images that you share on the web.
 - Identifying a list of items within a photo of a fridge to generate recipe ideas.
 
-#### Prompt an on Device Model with Images
+#### Prompt an on-device model with images
 
 When including an image with a text prompt, the model processes both the visual content and any accompanying text to generate a response. This multimodal approach allows the model to interpret visual details that are difficult to convey through text alone.
 
@@ -21,17 +22,17 @@ To improve the results, consider the following strategies when including an imag
 
 - Describe clearly what you want the model to analyze or extract. Instead of asking, “What’s in this image?,” try “List all food items in this photo.”
 - Consider whether preprocessing is necessary before passing an image to an on-device model, such as isolating a region of interest.
-- Use the [`Generable`](generable.md) protocol to constrain responses to specific formats, making it easier to extract structured data or classify images.
+- Use the [`Generable`](./generable.md) protocol to constrain responses to specific formats, making it easier to extract structured data or classify images.
 
-#### Include Images in Your Request
+#### Include images in your request
 
-The framework supports several image types to include in your prompts, like [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage), [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer), and image URLs.
+The framework supports several image types to include in your prompts, like [`CGImage`](../CoreGraphics/cgimage.md), [`CIImage`](../CoreImage/ciimage.md), [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md), and image URLs.
 
-Use a URL whenever your image comes from a file and verify that it points to an actual image. The framework infers whether a URL represents an image based on its [`UTType`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct). If your app captures images or processes video streams, use [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer).
+Use a URL whenever your image comes from a file and verify that it points to an actual image. The framework infers whether a URL represents an image based on its [`UTType`](../UniformTypeIdentifiers/uttype-swift.struct.md). If your app captures images or processes video streams, use [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md).
 
 > ❗ **Important**: The framework performs the necessary scaling and color conversions before passing an image to the model, so you don’t need to scale or convert images to different formats.
 
-To include an image with your text prompt, use the [`Attachment`](attachment.md) structure and specify additional details about the image attachment, like the display orientation of the image. When specifying the orientation, the framework performs a transform before sending the image to the model:
+To include an image with your text prompt, use the [`Attachment`](./attachment.md) structure and specify additional details about the image attachment, like the display orientation of the image. When specifying the orientation, the framework performs a transform before sending the image to the model:
 
 ```swift
 func compareImages(imageOne: CGImage, imageTwo: CGImage) async throws -> String {
@@ -50,11 +51,25 @@ func compareImages(imageOne: CGImage, imageTwo: CGImage) async throws -> String 
 }
 ```
 
-Perform image analysis with the on-device model first. If you determine that more reasoning or context is necessary for the task, initialize [`LanguageModelSession`](languagemodelsession.md) using [`PrivateCloudComputeLanguageModel`](privatecloudcomputelanguagemodel.md).
+**Model input**:
 
-#### Define Custom Types to Perform Image Analysis
+![An image of a squirrel.](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/animals-brown-squirrel.png)
 
-For more structured results, use the [`Generable`](generable.md) protocol to create an enumeration with specific labels you use to identify the contents of an image. This approach is useful when you need to classify images into predefined categories, ensuring the model returns one of your specified labels rather than free-form text. For example, the following prompts the model to identify which label best represents the image:
+![An image of an eastern bluebird.](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/animals-eastern-bluebird.png)
+
+**Model response**:
+
+Here are three comparisons between the two images:
+
+- **Setting:** The first image is set in a mountainous region with a squirrel standing on a rock. The second image is set on a wooden post with a bluebird perched on it.
+- **Subject:** The first image features a squirrel eating a nut, while the second image features a bluebird perched on a wooden post.
+- **Color:** The first image has a warm and natural color palette, with browns, greens, and blues. The second image has a cool and vibrant color palette, with blues, oranges, and greens.
+
+Perform image analysis with the on-device model first. If you determine that more reasoning or context is necessary for the task, initialize [`LanguageModelSession`](./languagemodelsession.md) using [`PrivateCloudComputeLanguageModel`](./privatecloudcomputelanguagemodel.md).
+
+#### Define custom types to perform image analysis
+
+For more structured results, use the [`Generable`](./generable.md) protocol to create an enumeration with specific labels you use to identify the contents of an image. This approach is useful when you need to classify images into predefined categories, ensuring the model returns one of your specified labels rather than free-form text. For example, the following prompts the model to identify which label best represents the image:
 
 ```swift
 @Generable
@@ -79,15 +94,15 @@ func classifyImage(_ image: CGImage) async throws -> ImageLabel {
 }
 ```
 
-> 💡 **Tip**: Use the [`greedy`](generationoptions/samplingmode-swift.struct/greedy.md) sampling option when you want the model to always pick the most likely option; otherwise, the model may select an option that’s close.
+> 💡 **Tip**: Use the [`greedy`](./generationoptions/samplingmode-swift.struct/greedy.md) sampling option when you want the model to always pick the most likely option; otherwise, the model may select an option that’s close.
 
-For more information on guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
+For more information on guided generation, see [Generating Swift data structures with guided generation](./generating-swift-data-structures-with-guided-generation.md).
 
-#### Use Built in Image Analysis Tools
+#### Use built-in image analysis tools
 
-The [`Vision`](https://developer.apple.com/documentation/vision) framework provides optical character recognition (OCR) and barcode tools that you can add to a session in the Foundation Models framework. Use [`BarcodeReaderTool`](https://developer.apple.com/documentation/vision/barcodereadertool) to detect barcodes and interpret their encoded content, and [`OCRTool`](https://developer.apple.com/documentation/vision/ocrtool) to extract text from images.
+The [Vision](../Vision/Vision.md) framework provides optical character recognition (OCR) and barcode tools that you can add to a session in the Foundation Models framework. Use [`BarcodeReaderTool`](../Vision/barcodereadertool.md) to detect barcodes and interpret their encoded content, and [`OCRTool`](../Vision/ocrtool.md) to extract text from images.
 
-When you use tools, provide an [`label(_:)`](attachment/label(_:).md) to help the model identify a specific attachment. The following shows how to prompt the model to get information about an image that contains a barcode:
+When you use tools, provide an [`label(_:)`](./attachment/label%28_%29.md) to help the model identify a specific attachment. The following shows how to prompt the model to get information about an image that contains a barcode:
 
 ```swift
 func analyzeBarcodeImage(_ image: CGImage) async {
@@ -111,9 +126,9 @@ func analyzeBarcodeImage(_ image: CGImage) async {
 }
 ```
 
-#### Create a Custom Tool to Perform Image Analysis
+#### Create a custom tool to perform image analysis
 
-Provide custom image processing to the model by creating a custom tool. When you create a tool, you specify the arguments that the model provides when calling your tool. When defining your arguments, use [`ImageReference`](imagereference.md) to receive a reference to your image:
+Provide custom image processing to the model by creating a custom tool. When you create a tool, you specify the arguments that the model provides when calling your tool. When defining your arguments, use [`ImageReference`](./imagereference.md) to receive a reference to your image:
 
 ```swift
 @Generable
@@ -123,7 +138,7 @@ struct Arguments {
 }
 ```
 
-When the model calls your tool, the [`call(arguments:)`](tool/call(arguments:).md) method receives a reference you use to access the image. For example, to create a tool that uses the [`Vision`](https://developer.apple.com/documentation/vision) framework to get classification details:
+When the model calls your tool, the [`call(arguments:)`](./tool/call%28arguments%29.md) method receives a reference you use to access the image. For example, to create a tool that uses the [Vision](../Vision/Vision.md) framework to get classification details:
 
 ```swift
 func call(arguments: Arguments) async throws -> String {
@@ -140,15 +155,16 @@ func call(arguments: Arguments) async throws -> String {
 }
 ```
 
-For more information on creating tools, see [`Expanding generation with tool calling`](expanding-generation-with-tool-calling.md).
+For more information on creating tools, see [Expanding generation with tool calling](./expanding-generation-with-tool-calling.md).
 
 ## See Also
 
-- [struct Attachment](attachment.md)
+### Prompt attachments
+- [struct Attachment](./attachment.md)
   An asset provided to the model.
-- [struct ImageAttachmentContent](imageattachmentcontent.md)
+- [struct ImageAttachmentContent](./imageattachmentcontent.md)
   A type that holds image data.
-- [struct ImageReference](imagereference.md)
+- [struct ImageReference](./imagereference.md)
   A reference to an image in a session’s transcript.
 
 

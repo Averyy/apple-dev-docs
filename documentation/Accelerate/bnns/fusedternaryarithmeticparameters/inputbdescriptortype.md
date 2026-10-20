@@ -1,7 +1,8 @@
 # inputBDescriptorType
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor type of the second input.
 
@@ -11,8 +12,10 @@ The descriptor type of the second input.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,13 +25,14 @@ var inputBDescriptorType: BNNS.DescriptorType
 
 ## See Also
 
-- [var function: BNNS.ArithmeticTernaryFunction](bnns/fusedternaryarithmeticparameters/function.md)
+### Inspecting the Properties of a Fused Arithmetic Parameters Structure
+- [var function: BNNS.ArithmeticTernaryFunction](./function.md)
   The arithmetic function.
-- [var inputADescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/inputadescriptortype.md)
+- [var inputADescriptorType: BNNS.DescriptorType](./inputadescriptortype.md)
   The descriptor type of the first input.
-- [var inputCDescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/inputcdescriptortype.md)
+- [var inputCDescriptorType: BNNS.DescriptorType](./inputcdescriptortype.md)
   The descriptor type of the third input.
-- [var outputDescriptorType: BNNS.DescriptorType](bnns/fusedternaryarithmeticparameters/outputdescriptortype.md)
+- [var outputDescriptorType: BNNS.DescriptorType](./outputdescriptortype.md)
   The descriptor type of the output.
 
 

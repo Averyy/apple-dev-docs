@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an opacity object using a single value.
 
@@ -11,7 +12,7 @@ Creates an opacity object using a single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,9 +26,10 @@ init(floatLiteral value: Float)
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/opacity/init(scale:texture:).md)
+### Creating an opacity object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an opacity object using a single value or a texture.
-- [init(CustomMaterial.Opacity)](physicallybasedmaterial/opacity/init(_:).md)
+- [init(CustomMaterial.Opacity)](./init%28_%29.md)
   Creates an opacity object using a custom material’s opacity property.
 
 

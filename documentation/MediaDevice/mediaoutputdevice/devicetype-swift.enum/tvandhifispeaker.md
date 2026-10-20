@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType.tvAndHifiSpeaker
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A television with a connected hi-fi speaker.
 

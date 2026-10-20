@@ -1,7 +1,8 @@
 # ignoreCreator
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 When set, causes Launch Services to ignorethe content item’s creator when selecting a role handler for thespecified content type.
 

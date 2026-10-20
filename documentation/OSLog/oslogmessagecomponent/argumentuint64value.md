@@ -1,7 +1,8 @@
 # argumentUInt64Value
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument formatted as an unsigned 64-bit integer.
 
@@ -20,17 +21,22 @@ The argument formatted as an unsigned 64-bit integer.
 var argumentUInt64Value: UInt64 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) uint64_t argumentUInt64Value;
+```
+
 ## See Also
 
-- [var argumentDataValue: Data?](oslogmessagecomponent/argumentdatavalue.md)
+### Accessing the Argument
+- [var argumentDataValue: Data?](./argumentdatavalue.md)
   The argument formatted as a sequence of bytes.
-- [var argumentDoubleValue: Double](oslogmessagecomponent/argumentdoublevalue.md)
+- [var argumentDoubleValue: Double](./argumentdoublevalue.md)
   The argument formatted as a double.
-- [var argumentInt64Value: Int64](oslogmessagecomponent/argumentint64value.md)
+- [var argumentInt64Value: Int64](./argumentint64value.md)
   The argument formatted as a signed 64-bit integer.
-- [var argumentNumberValue: NSNumber?](oslogmessagecomponent/argumentnumbervalue.md)
+- [var argumentNumberValue: NSNumber?](./argumentnumbervalue.md)
   The argument formatted as a number.
-- [var argumentStringValue: String?](oslogmessagecomponent/argumentstringvalue.md)
+- [var argumentStringValue: String?](./argumentstringvalue.md)
   The argument formatted as a string.
 
 

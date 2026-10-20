@@ -1,7 +1,8 @@
 # sampleBuffer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth data captured at this synchronization point.
 
@@ -17,11 +18,15 @@ The depth data captured at this synchronization point.
 var sampleBuffer: CMSampleBuffer { get }
 ```
 
+```objc
+@property (readonly) CMSampleBufferRef sampleBuffer;
+```
+
 #### Discussion
 
-Note that if the [`sampleBufferWasDropped`](avcapturesynchronizedsamplebufferdata/samplebufferwasdropped.md) property is [`true`](https://developer.apple.com/documentation/swift/true), this [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) object does not contain pixel data (instead, it contains only metadata).
+Note that if the [`sampleBufferWasDropped`](./samplebufferwasdropped.md) property is [`true`](../../Swift/true.md), this [`CMSampleBuffer`](../../CoreMedia/cmsamplebuffer.md) object does not contain pixel data (instead, it contains only metadata).
 
-This value is equivalent to that provided by the [`captureOutput(_:didOutput:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md) or [`captureOutput(_:didDrop:from:)`](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:diddrop:from:).md) delegate method when using a video data output without a data output synchronizer.
+This value is equivalent to that provided by the [`captureOutput(_:didOutput:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md) or [`captureOutput(_:didDrop:from:)`](../avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,diddrop,from%29.md) delegate method when using a video data output without a data output synchronizer.
 
 
 ---

@@ -1,7 +1,8 @@
 # cursorShow
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The cursor is displayed when cursorShow is 0.
 
@@ -10,7 +11,7 @@ The cursor is displayed when cursorShow is 0.
 
 ## Declaration
 
-```swift
+```c
 char cursorShow;
 ```
 

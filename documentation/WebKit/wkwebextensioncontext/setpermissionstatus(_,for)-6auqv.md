@@ -1,7 +1,8 @@
 # setPermissionStatus(_:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the status of a match pattern with a distant future expiration date.
 
@@ -18,9 +19,13 @@ Sets the status of a match pattern with a distant future expiration date.
 func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for pattern: WKWebExtension.MatchPattern)
 ```
 
+```objc
+- (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forMatchPattern:(WKWebExtensionMatchPattern *) pattern;
+```
+
 #### Discussion
 
-This method will update [`grantedPermissionMatchPatterns`](wkwebextensioncontext/grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](wkwebextensioncontext/deniedpermissionmatchpatterns.md). Use this method for changing a single match pattern’s status. Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](wkwebextensioncontext/permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](wkwebextensioncontext/permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](wkwebextensioncontext/permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
+This method will update [`grantedPermissionMatchPatterns`](./grantedpermissionmatchpatterns.md) and [`deniedPermissionMatchPatterns`](./deniedpermissionmatchpatterns.md). Use this method for changing a single match pattern’s status. Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](./permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](./permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](./permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ This method will update [`grantedPermissionMatchPatterns`](wkwebextensioncontext
 
 ## See Also
 
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern, expirationDate: Date?)](wkwebextensioncontext/setpermissionstatus(_:for:expirationdate:)-7038f.md)
+### Related Documentation
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.MatchPattern, expirationDate: Date?)](./setpermissionstatus%28_,for,expirationdate%29-7038f.md)
   Sets the status of a match pattern with a specific expiration date.
 
 

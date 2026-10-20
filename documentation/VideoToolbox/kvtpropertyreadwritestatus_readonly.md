@@ -1,7 +1,8 @@
 # kVTPropertyReadWriteStatus_ReadOnly
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,9 +18,14 @@
 let kVTPropertyReadWriteStatus_ReadOnly: CFString
 ```
 
+```c
+extern CFStringRef const kVTPropertyReadWriteStatus_ReadOnly;
+```
+
 ## See Also
 
-- [let kVTPropertyReadWriteStatus_ReadWrite: CFString](kvtpropertyreadwritestatus_readwrite.md)
+### Status Constants
+- [let kVTPropertyReadWriteStatus_ReadWrite: CFString](./kvtpropertyreadwritestatus_readwrite.md)
 
 
 ---

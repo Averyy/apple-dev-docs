@@ -1,7 +1,8 @@
 # callAsFunction(id:value:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the window defined by the window group that is presenting the specified value type and that’s associated with the specified identifier.
 
@@ -21,13 +22,13 @@ Dismisses the window defined by the window group that is presenting the specifie
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](environmentvalues/dismisswindow.md) action with an identifier and a value:
+Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](../environmentvalues/dismisswindow.md) action with an identifier and a value:
 
 ```swift
 dismissWindow(id: "message", value: message.id)
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#Methods-with-Special-Names) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -36,11 +37,12 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction()](dismisswindowaction/callasfunction.md)
+### Calling the action
+- [func callAsFunction()](./callasfunction%28%29.md)
   Dismisses the current window.
-- [func callAsFunction(id: String)](dismisswindowaction/callasfunction(id:).md)
+- [func callAsFunction(id: String)](./callasfunction%28id%29.md)
   Dismisses the window that’s associated with the specified identifier.
-- [func callAsFunction<D>(value: D)](dismisswindowaction/callasfunction(value:).md)
+- [func callAsFunction<D>(value: D)](./callasfunction%28value%29.md)
   Dismisses the window defined by the window group that is presenting the specified value type.
 
 

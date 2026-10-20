@@ -1,7 +1,8 @@
 # printableRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that represents the portion of the paper that can be imaged upon.
 
@@ -17,13 +18,18 @@ The rectangle that represents the portion of the paper that can be imaged upon.
 var printableRect: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect printableRect;
+```
+
 #### Discussion
 
-Typically, UIKit passes this value into the last argument of the [`UIPrintPageRenderer`](uiprintpagerenderer.md) method [`drawPage(at:in:)`](uiprintpagerenderer/drawpage(at:in:).md).
+Typically, UIKit passes this value into the last argument of the [`UIPrintPageRenderer`](../uiprintpagerenderer.md) method [`drawPage(at:in:)`](../uiprintpagerenderer/drawpage%28at,in%29.md).
 
 ## See Also
 
-- [var paperSize: CGSize](uiprintpaper/papersize.md)
+### Getting the paper size and the printing area
+- [var paperSize: CGSize](./papersize.md)
   The size of the sheet to use for printing.
 
 

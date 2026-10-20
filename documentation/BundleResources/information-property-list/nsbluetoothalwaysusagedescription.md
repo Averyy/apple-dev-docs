@@ -1,7 +1,8 @@
 # NSBluetoothAlwaysUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app needs access to Bluetooth.
 
@@ -13,19 +14,21 @@ A message that tells people why the app needs access to Bluetooth.
 - visionOS 1.0+
 - watchOS 6.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSBluetoothAlwaysUsageDescription` (Privacy - Bluetooth Always Usage Description)
+- **Type**: string
 
 #### Discussion
 
 This key is required if your app uses the device’s Bluetooth interface.
 
-> ❗ **Important**:  If your app has a deployment target earlier than iOS 13, add the [`NSBluetoothPeripheralUsageDescription`](information-property-list/nsbluetoothperipheralusagedescription.md) key to your app’s [`Information Property List`](information-property-list.md) file in addition to this key.
+> ❗ **Important**:  If your app has a deployment target earlier than iOS 13, add the [`NSBluetoothPeripheralUsageDescription`](./nsbluetoothperipheralusagedescription.md) key to your app’s [`Information Property List`](../information-property-list.md) file in addition to this key.
 
 ## See Also
 
-- [NSBluetoothPeripheralUsageDescription](information-property-list/nsbluetoothperipheralusagedescription.md)
+### Bluetooth
+- [NSBluetoothPeripheralUsageDescription](./nsbluetoothperipheralusagedescription.md)
   A message that tells people why the app is requesting the ability to connect to Bluetooth peripherals.
 
 

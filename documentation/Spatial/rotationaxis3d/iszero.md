@@ -1,7 +1,8 @@
 # isZero
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the rotation axis is zero.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the rotation axis is zero.
 var isZero: Bool { get }
 ```
 
+```c
+static bool SPRotationAxis3DIsZero(SPRotationAxis3D axis);
+```
+
 ## See Also
 
-- [var x: Double](rotationaxis3d/x-swift.property.md)
+### Checking characteristics
+- [var x: Double](./x-swift.property.md)
   The x-coordinate value.
-- [var y: Double](rotationaxis3d/y-swift.property.md)
+- [var y: Double](./y-swift.property.md)
   The y-coordinate value.
-- [var z: Double](rotationaxis3d/z-swift.property.md)
+- [var z: Double](./z-swift.property.md)
   The z-coordinate value.
-- [var vector: simd_double3](rotationaxis3d/vector.md)
+- [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
 
 

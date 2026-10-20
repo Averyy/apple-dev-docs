@@ -1,7 +1,8 @@
 # ContentAttributes.Artwork
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Imagery for media content, such as an album cover.
 
@@ -10,13 +11,15 @@ Imagery for media content, such as an album cover.
 
 ## Declaration
 
-```swift
+```
 object ContentAttributes.Artwork
 ```
 
 ## Properties
 
 - `url` (string): The path to request the artwork.
+
+  **Maximum Length**: `2000`
 
 
 ---

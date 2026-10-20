@@ -1,7 +1,8 @@
 # String.LocalizationValue.Placeholder
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of types that can appear as a placeholder in a string interpolation.
 
@@ -22,37 +23,37 @@ enum Placeholder
 
 #### Overview
 
-Foundation uses this type when you create a string with the `\(placeholder: type)` syntax and supply an array of replacement values in a `String.LocalizationOptions`. Placeholders work with [`String`](string.md) initializers that take an `options:` parameter:
+Foundation uses this type when you create a string with the `\(placeholder: type)` syntax and supply an array of replacement values in a `String.LocalizationOptions`. Placeholders work with [`String`](../../string.md) initializers that take an `options:` parameter:
 
-- [`init(localized:options:table:bundle:locale:comment:)`](string/init(localized:options:table:bundle:locale:comment:).md)
-- [`init(localized:options:)`](string/init(localized:options:).md)
-- [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](string/init(localized:defaultvalue:options:table:bundle:locale:comment:).md)
+- [`init(localized:options:table:bundle:locale:comment:)`](../init%28localized,options,table,bundle,locale,comment%29.md)
+- [`init(localized:options:)`](../init%28localized,options%29.md)
+- [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](../init%28localized,defaultvalue,options,table,bundle,locale,comment%29.md)
 
 You only use this type directly when specifying one of its enumeration cases in the placeholder syntax, like `\(placeholder: .int)`.
 
 ## Topics
 
 ### Placeholder types
-- [String.LocalizationValue.Placeholder.int](string/localizationvalue/placeholder/int.md)
+- [String.LocalizationValue.Placeholder.int](./placeholder/int.md)
   The signed integer type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.uint](string/localizationvalue/placeholder/uint.md)
+- [String.LocalizationValue.Placeholder.uint](./placeholder/uint.md)
   The unsigned integer type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.float](string/localizationvalue/placeholder/float.md)
+- [String.LocalizationValue.Placeholder.float](./placeholder/float.md)
   The single-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.double](string/localizationvalue/placeholder/double.md)
+- [String.LocalizationValue.Placeholder.double](./placeholder/double.md)
   The double-precision floating-point type, as used for replacement values with the localized string placeholder syntax.
-- [String.LocalizationValue.Placeholder.object](string/localizationvalue/placeholder/object.md)
+- [String.LocalizationValue.Placeholder.object](./placeholder/object.md)
   The object type, as used for replacement values with the localized string placeholder syntax.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Decodable](../../decodable.md)
+- [Encodable](../../encodable.md)
+- [Equatable](../../equatable.md)
+- [Hashable](../../hashable.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

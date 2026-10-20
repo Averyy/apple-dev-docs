@@ -1,11 +1,12 @@
 # kAudioTransportManagerCreateEndPointDevice
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 var kAudioTransportManagerCreateEndPointDevice: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioTransportManagerCreateEndPointDevice
+```
+
 ## See Also
 
-- [var kAudioTransportManagerDestroyEndPointDevice: AudioObjectPropertySelector](kaudiotransportmanagerdestroyendpointdevice.md)
+### Constants
+- [var kAudioTransportManagerDestroyEndPointDevice: AudioObjectPropertySelector](./kaudiotransportmanagerdestroyendpointdevice.md)
 
 
 ---

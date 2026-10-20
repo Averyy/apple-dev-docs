@@ -1,7 +1,8 @@
 # kMDItemDeliveryType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The delivery type. Values are “Fast start” or “RTSP”. A CFString.
 
@@ -12,6 +13,10 @@ The delivery type. Values are “Fast start” or “RTSP”. A CFString.
 
 ```swift
 let kMDItemDeliveryType: CFString!
+```
+
+```c
+const CFStringRef kMDItemDeliveryType;
 ```
 
 

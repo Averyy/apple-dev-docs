@@ -1,7 +1,8 @@
 # GameCenterChallengeCreateRequest.Data.Relationships.Versions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the versions for a related challenge.
 
@@ -10,14 +11,14 @@ The data that describes the versions for a related challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeCreateRequest.Data.Relationships.Versions
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeCreateRequest.Data.Relationships.Versions.Data](gamecenterchallengecreaterequest/data-data.dictionary/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallengeCreateRequest.Data.Relationships.Versions.Data](./versions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

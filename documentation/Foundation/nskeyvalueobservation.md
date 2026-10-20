@@ -1,7 +1,8 @@
 # NSKeyValueObservation
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 8.0+
@@ -22,28 +23,29 @@
 ## Topics
 
 ### Instance Methods
-- [func invalidate()](nskeyvalueobservation/invalidate.md)
+- [func invalidate()](./nskeyvalueobservation/invalidate%28%29.md)
   invalidate() will be called automatically when an NSKeyValueObservation is deinited
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+### Classes
+- [class NSKeyValueSharedObservers](./nskeyvaluesharedobservers.md)
   A collection of key-value observations which may be registered with multiple observable objects
-- [class NSKeyValueSharedObserversSnapshot](nskeyvaluesharedobserverssnapshot.md)
+- [class NSKeyValueSharedObserversSnapshot](./nskeyvaluesharedobserverssnapshot.md)
   A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 
 

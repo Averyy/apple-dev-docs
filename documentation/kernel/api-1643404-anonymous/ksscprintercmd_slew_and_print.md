@@ -1,7 +1,8 @@
 # kSSCPrinterCmd_SLEW_AND_PRINT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSSCPrinterCmd_SLEW_AND_PRINT = 0x0B
 ```
 

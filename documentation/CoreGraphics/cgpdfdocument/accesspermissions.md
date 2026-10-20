@@ -1,7 +1,8 @@
 # accessPermissions
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -18,9 +19,14 @@
 var accessPermissions: CGPDFAccessPermissions { get }
 ```
 
+```c
+extern CGPDFAccessPermissions CGPDFDocumentGetAccessPermissions(CGPDFDocumentRef document);
+```
+
 ## See Also
 
-- [var outline: CFDictionary?](cgpdfdocument/outline.md)
+### Instance Properties
+- [var outline: CFDictionary?](./outline.md)
 
 
 ---

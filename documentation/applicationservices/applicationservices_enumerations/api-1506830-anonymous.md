@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kPMUnlocked: Int](kpmunlocked.md)
+- [var kPMUnlocked: Int](../kpmunlocked.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GL_BUFFER_SIZE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_BUFFER_SIZE: Int32 { get }
+```
+
+```c
+#define GL_BUFFER_SIZE
 ```
 
 

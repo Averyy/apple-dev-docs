@@ -1,7 +1,8 @@
 # authorizationViewDidAuthorize(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to indicate the user was authorized and the authorization view was changed to unlocked.
 
@@ -12,6 +13,10 @@ Sent to the delegate to indicate the user was authorized and the authorization v
 
 ```swift
 func authorizationViewDidAuthorize(_ view: SFAuthorizationView!)
+```
+
+```objc
+- (void) authorizationViewDidAuthorize:(SFAuthorizationView *) view;
 ```
 
 

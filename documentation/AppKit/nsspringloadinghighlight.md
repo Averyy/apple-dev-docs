@@ -1,7 +1,8 @@
 # NSSpringLoadingHighlight
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A group of constants that indicate a highlighting style for your app’s user interface to display during a spring-loading operation.
 
@@ -14,43 +15,48 @@ A group of constants that indicate a highlighting style for your app’s user in
 enum NSSpringLoadingHighlight
 ```
 
+```c
+enum NSSpringLoadingHighlight : NSInteger;
+```
+
 #### Overview
 
-The [`springLoadingHighlight`](nsdragginginfo/springloadinghighlight.md) method provides one of these constant values.
+The [`springLoadingHighlight`](./nsdragginginfo/springloadinghighlight.md) method provides one of these constant values.
 
-Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](nsspringloadingdestination/springloadingactivated(_:dragginginfo:).md) method alerts your app when spring-loading activation occurs.
+Do not use highlighting as a means to determine whether spring-loading has actually been activated or deactivated. The [`springLoadingActivated(_:draggingInfo:)`](./nsspringloadingdestination/springloadingactivated%28_,dragginginfo%29.md) method alerts your app when spring-loading activation occurs.
 
 ## Topics
 
 ### Constants
-- [NSSpringLoadingHighlight.none](nsspringloadinghighlight/none.md)
+- [NSSpringLoadingHighlight.none](./nsspringloadinghighlight/none.md)
   A constant that indicates no highlighting.
-- [NSSpringLoadingHighlight.standard](nsspringloadinghighlight/standard.md)
+- [NSSpringLoadingHighlight.standard](./nsspringloadinghighlight/standard.md)
   A constant that indicates standard highlighting to show the destination supports spring-loading.
-- [NSSpringLoadingHighlight.emphasized](nsspringloadinghighlight/emphasized.md)
+- [NSSpringLoadingHighlight.emphasized](./nsspringloadinghighlight/emphasized.md)
   A constant that indicates emphasized highlighting to show active spring-loading on the destination.
 ### Initializers
-- [init?(rawValue: Int)](nsspringloadinghighlight/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsspringloadinghighlight/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSDragOperation](nsdragoperation.md)
+### Constants
+- [struct NSDragOperation](./nsdragoperation.md)
   A group of constants that represent which operations the dragging source can perform on dragging items.
-- [struct NSDraggingItemEnumerationOptions](nsdraggingitemenumerationoptions.md)
+- [struct NSDraggingItemEnumerationOptions](./nsdraggingitemenumerationoptions.md)
   A group of constants that specify options to use when enumerating dragging items.
-- [enum NSDraggingFormation](nsdraggingformation.md)
+- [enum NSDraggingFormation](./nsdraggingformation.md)
   Constants that control the visual format of multiple dragging items.
-- [enum NSDraggingContext](nsdraggingcontext.md)
+- [enum NSDraggingContext](./nsdraggingcontext.md)
   Constants that specify whether a drag terminates within or outside the application.
 
 

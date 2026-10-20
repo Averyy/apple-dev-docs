@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -20,9 +21,10 @@ associatedtype Results : Sendable, AsyncSequence where Self.Results.Failure == a
 
 ## See Also
 
-- [var results: Self.Results](speechmodule/results-swift.property.md)
+### Getting results
+- [var results: Self.Results](./results-swift.property.md)
   An asynchronous sequence containing this module’s analysis results. Results are added to the sequence as they are created.
-- [associatedtype Result : SpeechModuleResult, Sendable](speechmodule/result.md)
+- [associatedtype Result : SpeechModuleResult, Sendable](./result.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that contains the configuration details for the web view.
 
@@ -19,19 +20,25 @@ The object that contains the configuration details for the web view.
 var configuration: WKWebViewConfiguration { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) WKWebViewConfiguration * configuration;
+```
+
 #### Discussion
 
 Use the object in this property to obtain information about your web view’s configuration. Because this property returns a copy of the configuration object, changes you make to that object don’t affect the web view’s configuration.
 
-If you didn’t create your web view using the [`init(frame:configuration:)`](wkwebview/init(frame:configuration:).md) method, this property contains a default configuration object.
+If you didn’t create your web view using the [`init(frame:configuration:)`](./init%28frame,configuration%29.md) method, this property contains a default configuration object.
 
 ## See Also
 
-- [class WKWebViewConfiguration](wkwebviewconfiguration.md)
+### Related Documentation
+- [class WKWebViewConfiguration](../wkwebviewconfiguration.md)
   A collection of properties that you use to initialize a web view.
-- [init(frame: CGRect, configuration: WKWebViewConfiguration)](wkwebview/init(frame:configuration:).md)
+### Creating a web view
+- [init(frame: CGRect, configuration: WKWebViewConfiguration)](./init%28frame,configuration%29.md)
   Creates a web view and initializes it with the specified frame and configuration data.
-- [init?(coder: NSCoder)](wkwebview/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an object initialized from data in the specified coder object.
 
 

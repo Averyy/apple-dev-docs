@@ -1,7 +1,8 @@
 # CLError.Code.historicalLocationError
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case historicalLocationError
+```
+
+```c
+kCLErrorHistoricalLocationError
 ```
 
 

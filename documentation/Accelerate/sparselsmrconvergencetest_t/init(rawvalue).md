@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ init(rawValue: Int32)
 
 ## See Also
 
-- [init(Int32)](sparselsmrconvergencetest_t/init(_:).md)
-- [var rawValue: Int32](sparselsmrconvergencetest_t/rawvalue.md)
+### Raw Values
+- [init(Int32)](./init%28_%29.md)
+- [var rawValue: Int32](./rawvalue.md)
 
 
 ---

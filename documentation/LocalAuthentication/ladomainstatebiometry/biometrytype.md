@@ -1,7 +1,8 @@
 # biometryType
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates biometry type available on the device.
 
@@ -16,6 +17,10 @@ Indicates biometry type available on the device.
 
 ```swift
 var biometryType: LABiometryType { get }
+```
+
+```objc
+@property (nonatomic, readonly) LABiometryType biometryType;
 ```
 
 

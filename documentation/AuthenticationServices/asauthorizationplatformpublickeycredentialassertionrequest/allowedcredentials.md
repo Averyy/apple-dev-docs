@@ -1,7 +1,8 @@
 # allowedCredentials
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of allowed credentials.
 
@@ -19,15 +20,20 @@ The array of allowed credentials.
 var allowedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<ASAuthorizationPlatformPublicKeyCredentialDescriptor *> * allowedCredentials;
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/largeblob-9kvvl.md)
+### Accessing request properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput?](./largeblob-9kvvl.md)
   The request’s binary large object value.
-- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](asauthorizationplatformpublickeycredentialassertionrequest/prf-47uoa.md)
+- [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionInput?](./prf-47uoa.md)
 
 
 ---

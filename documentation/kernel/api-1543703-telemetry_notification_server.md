@@ -1,14 +1,15 @@
 # telemetry_notification_server
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 boolean_t telemetry_notification_server(mach_msg_header_t *InHeadP, mach_msg_header_t *OutHeadP);
 ```
 

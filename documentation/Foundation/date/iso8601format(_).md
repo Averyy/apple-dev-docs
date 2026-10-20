@@ -1,7 +1,8 @@
 # ISO8601Format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a locale-aware string representation of a date using the ISO 8601 date format.
 
@@ -26,27 +27,28 @@ A string, formatted according to the specified style.
 
 #### Discussion
 
-Calling this method is equivalent to passing a [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) to a date’s [`formatted()`](date/formatted().md) method.
+Calling this method is equivalent to passing a [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md) to a date’s [`formatted()`](./formatted%28%29.md) method.
 
 ## Parameters
 
-- `style`: A customized [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) to apply. By default, the method applies an unmodified ISO 8601 format style.
+- `style`: A customized [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md) to apply. By default, the method applies an unmodified ISO 8601 format style.
 
 ## See Also
 
-- [func formatted() -> String](date/formatted.md)
+### Formatting a Date
+- [func formatted() -> String](./formatted%28%29.md)
   Generates a locale-aware string representation of a date using the default date format style.
-- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](date/formatted(date:time:).md)
+- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](./formatted%28date,time%29.md)
   Generates a locale-aware string representation of a date using specified date and time format styles.
-- [func formatted<F>(F) -> F.FormatOutput](date/formatted(_:).md)
+- [func formatted<F>(F) -> F.FormatOutput](./formatted%28_%29.md)
   Generates a locale-aware string representation of a date using the specified date format style.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 
 

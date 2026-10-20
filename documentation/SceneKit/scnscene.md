@@ -1,18 +1,19 @@
 # SCNScene
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for the node hierarchy and global properties that together form a displayable 3D scene.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,17 @@ A container for the node hierarchy and global properties that together form a di
 class SCNScene
 ```
 
+```objc
+@interface SCNScene : NSObject
+```
+
 #### Overview
 
 To display 3D content with SceneKit, you create a scene containing a hierarchy of the nodes and attributes that together represent your visual elements. Typically, you build your assets in a 3D visual editor, then assemble them into a scene using Xcode’s SceneKit Scene Editor, ready for SceneKit to render.
 
-![At the left, a diagram showing a simple scene composed of the node hierarchy and presentation attributes. At the right, the resulting rendered scene.](/images/com.apple.scenekit/media-2994226@2x.png)
+![At the left, a diagram showing a simple scene composed of the node hierarchy and presentation attributes. At the right, the resulting rendered scene.](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2994226@2x.png)
 
-To display your scene, you need to load it at runtime, then set it as the scene property of an [`SCNView`](scnview.md):
+To display your scene, you need to load it at runtime, then set it as the scene property of an [`SCNView`](./scnview.md):
 
 ```swift
 guard let myScene = SCNScene(named: "MyScene") 
@@ -41,92 +46,93 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
 ## Topics
 
 ### Creating a Scene from a File
-- [convenience init?(named: String)](scnscene/init(named:).md)
+- [convenience init?(named: String)](./scnscene/init%28named%29.md)
   Loads a scene from a file with the specified name in the app’s main bundle.
-- [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](scnscene/init(named:indirectory:options:).md)
+- [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](./scnscene/init%28named,indirectory,options%29.md)
   Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
-- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:)-7ugvv.md)
+- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](./scnscene/init%28url,options%29-7ugvv.md)
   Loads a scene from the specified URL.
 ### Managing Animated Effects in a Scene
-- [var isPaused: Bool](scnscene/ispaused.md)
+- [var isPaused: Bool](./scnscene/ispaused.md)
   A Boolean value that determines whether to run actions, animations, particle systems, and physics simulations in the scene graph.
 ### Accessing Scene Contents
-- [var rootNode: SCNNode](scnscene/rootnode.md)
+- [var rootNode: SCNNode](./scnscene/rootnode.md)
   The root node of the scene graph.
-- [var background: SCNMaterialProperty](scnscene/background.md)
+- [var background: SCNMaterialProperty](./scnscene/background.md)
   A background to be rendered before the rest of the scene.
-- [var lightingEnvironment: SCNMaterialProperty](scnscene/lightingenvironment.md)
+- [var lightingEnvironment: SCNMaterialProperty](./scnscene/lightingenvironment.md)
   A cube map texture that depicts the environment surrounding the scene’s contents, used for advanced lighting effects.
 ### Managing Scene Attributes
-- [func attribute(forKey: String) -> Any?](scnscene/attribute(forkey:).md)
+- [func attribute(forKey: String) -> Any?](./scnscene/attribute%28forkey%29.md)
   Returns the scene attribute for the specified key.
-- [func setAttribute(Any?, forKey: String)](scnscene/setattribute(_:forkey:).md)
+- [func setAttribute(Any?, forKey: String)](./scnscene/setattribute%28_,forkey%29.md)
   Sets a scene attribute for the specified key.
-- [SCNScene.Attribute](scnscene/attribute.md)
+- [SCNScene.Attribute](./scnscene/attribute.md)
 ### Exporting a Scene File
-- [func write(to: URL, options: [String : Any]?, delegate: (any SCNSceneExportDelegate)?, progressHandler: SCNSceneExportProgressHandler?) -> Bool](scnscene/write(to:options:delegate:progresshandler:).md)
+- [func write(to: URL, options: [String : Any]?, delegate: (any SCNSceneExportDelegate)?, progressHandler: SCNSceneExportProgressHandler?) -> Bool](./scnscene/write%28to,options,delegate,progresshandler%29.md)
   Exports the scene and its contents to a file at the specified URL.
-- [protocol SCNSceneExportDelegate](scnsceneexportdelegate.md)
+- [protocol SCNSceneExportDelegate](./scnsceneexportdelegate.md)
   Methods you can implement to participate in the process of exporting a scene to a file.
 ### Adding Fog to a Scene
-- [var fogStartDistance: CGFloat](scnscene/fogstartdistance.md)
+- [var fogStartDistance: CGFloat](./scnscene/fogstartdistance.md)
   The distance from a point of view at which the scene’s contents begin to be obscured by fog. Animatable.
-- [var fogEndDistance: CGFloat](scnscene/fogenddistance.md)
+- [var fogEndDistance: CGFloat](./scnscene/fogenddistance.md)
   The distance from a point of view at which the scene’s contents are completely obscured by fog. Animatable.
-- [var fogDensityExponent: CGFloat](scnscene/fogdensityexponent.md)
+- [var fogDensityExponent: CGFloat](./scnscene/fogdensityexponent.md)
   The transition curve for the fog’s intensity between its start and end distances. Animatable.
-- [var fogColor: Any](scnscene/fogcolor.md)
+- [var fogColor: Any](./scnscene/fogcolor.md)
   The color of the fog effect to be rendered with the scene. Animatable.
 ### Working With Physics in the Scene
-- [var physicsWorld: SCNPhysicsWorld](scnscene/physicsworld.md)
+- [var physicsWorld: SCNPhysicsWorld](./scnscene/physicsworld.md)
   The physics simulation associated with the scene.
 ### Working with Particle Systems in the Scene
-- [func addParticleSystem(SCNParticleSystem, transform: SCNMatrix4)](scnscene/addparticlesystem(_:transform:).md)
+- [func addParticleSystem(SCNParticleSystem, transform: SCNMatrix4)](./scnscene/addparticlesystem%28_,transform%29.md)
   Attaches a particle system to the scene, using the specified transform.
-- [var particleSystems: [SCNParticleSystem]?](scnscene/particlesystems.md)
+- [var particleSystems: [SCNParticleSystem]?](./scnscene/particlesystems.md)
   The particle systems attached to the scene.
-- [func removeParticleSystem(SCNParticleSystem)](scnscene/removeparticlesystem(_:).md)
+- [func removeParticleSystem(SCNParticleSystem)](./scnscene/removeparticlesystem%28_%29.md)
   Removes a particle system attached to the scene.
-- [func removeAllParticleSystems()](scnscene/removeallparticlesystems.md)
+- [func removeAllParticleSystems()](./scnscene/removeallparticlesystems%28%29.md)
   Removes any particle systems directly attached to the scene.
 ### Constants
-- [Scene Attributes](scene-attributes.md)
-  Attribute keys available in the options dictionary for the methods  [`attribute(forKey:)`](scnscene/attribute(forkey:).md) and [`setAttribute(_:forKey:)`](scnscene/setattribute(_:forkey:).md)
-- [Scene Export Options](scene-export-options.md)
-  Options for the [`write(to:options:delegate:progressHandler:)`](scnscene/write(to:options:delegate:progresshandler:).md) method.
-- [typealias SCNSceneExportProgressHandler](scnsceneexportprogresshandler.md)
+- [Scene Attributes](./scene-attributes.md)
+  Attribute keys available in the options dictionary for the methods  [`attribute(forKey:)`](./scnscene/attribute%28forkey%29.md) and [`setAttribute(_:forKey:)`](./scnscene/setattribute%28_,forkey%29.md)
+- [Scene Export Options](./scene-export-options.md)
+  Options for the [`write(to:options:delegate:progressHandler:)`](./scnscene/write%28to,options,delegate,progresshandler%29.md) method.
+- [typealias SCNSceneExportProgressHandler](./scnsceneexportprogresshandler.md)
   The signature for the block that SceneKit calls during scene export.
 ### Initializers
-- [convenience init(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:)-2hc8n.md)
-- [init?(coder: NSCoder)](scnscene/init(coder:).md)
+- [convenience init(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](./scnscene/init%28url,options%29-2hc8n.md)
+- [init?(coder: NSCoder)](./scnscene/init%28coder%29.md)
 ### Instance Properties
-- [var screenSpaceReflectionMaximumDistance: CGFloat](scnscene/screenspacereflectionmaximumdistance.md)
-- [var screenSpaceReflectionSampleCount: Int](scnscene/screenspacereflectionsamplecount.md)
-- [var screenSpaceReflectionStride: CGFloat](scnscene/screenspacereflectionstride.md)
-- [var wantsScreenSpaceReflection: Bool](scnscene/wantsscreenspacereflection.md)
+- [var screenSpaceReflectionMaximumDistance: CGFloat](./scnscene/screenspacereflectionmaximumdistance.md)
+- [var screenSpaceReflectionSampleCount: Int](./scnscene/screenspacereflectionsamplecount.md)
+- [var screenSpaceReflectionStride: CGFloat](./scnscene/screenspacereflectionstride.md)
+- [var wantsScreenSpaceReflection: Bool](./scnscene/wantsscreenspacereflection.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [GKSceneRootNodeType](../gameplaykit/gkscenerootnodetype.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [GKSceneRootNodeType](../GameplayKit/gkscenerootnodetype.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SCNView](scnview.md)
+### Essentials
+- [class SCNView](./scnview.md)
   A view for displaying 3D SceneKit content.
-- [struct SceneView](sceneview.md)
+- [struct SceneView](./sceneview.md)
   A SwiftUI view for displaying 3D SceneKit content.
 
 

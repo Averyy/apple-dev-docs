@@ -1,7 +1,8 @@
 # output
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element with which to replace errors from the upstream publisher.
 
@@ -22,7 +23,8 @@ let output: Publishers.ReplaceError<Upstream>.Output
 
 ## See Also
 
-- [let upstream: Upstream](publishers/replaceerror/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

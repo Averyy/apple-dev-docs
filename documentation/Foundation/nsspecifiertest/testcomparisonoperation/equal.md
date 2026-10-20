@@ -1,7 +1,8 @@
 # NSSpecifierTest.TestComparisonOperation.equal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Binary comparison operator that results in true if the two objects are equal.
 
@@ -15,21 +16,26 @@ Binary comparison operator that results in true if the two objects are equal.
 case equal
 ```
 
+```c
+NSEqualToComparison
+```
+
 ## See Also
 
-- [NSSpecifierTest.TestComparisonOperation.lessThanOrEqual](nsspecifiertest/testcomparisonoperation/lessthanorequal.md)
+### Constants
+- [NSSpecifierTest.TestComparisonOperation.lessThanOrEqual](./lessthanorequal.md)
   Binary comparison operator that results in true if the value of the test object is equal to or less than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.lessThan](nsspecifiertest/testcomparisonoperation/lessthan.md)
+- [NSSpecifierTest.TestComparisonOperation.lessThan](./lessthan.md)
   Binary comparison operator that results in true if the value of the test object is less than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.greaterThanOrEqual](nsspecifiertest/testcomparisonoperation/greaterthanorequal.md)
+- [NSSpecifierTest.TestComparisonOperation.greaterThanOrEqual](./greaterthanorequal.md)
   Binary comparison operator that results in true if the value of the test object is greater than or equal to the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.greaterThan](nsspecifiertest/testcomparisonoperation/greaterthan.md)
+- [NSSpecifierTest.TestComparisonOperation.greaterThan](./greaterthan.md)
   Binary comparison operator that results in true if the value of the test object is greater than the value of the other object.
-- [NSSpecifierTest.TestComparisonOperation.beginsWith](nsspecifiertest/testcomparisonoperation/beginswith.md)
+- [NSSpecifierTest.TestComparisonOperation.beginsWith](./beginswith.md)
   Binary containment operator that results in true if the test object is a list or string that matches the beginning of the other object (which is also a list or string).
-- [NSSpecifierTest.TestComparisonOperation.endsWith](nsspecifiertest/testcomparisonoperation/endswith.md)
+- [NSSpecifierTest.TestComparisonOperation.endsWith](./endswith.md)
   Binary containment operator that results in true if the test object is a list or string that matches the end of the other object (which is also a list or string).
-- [NSSpecifierTest.TestComparisonOperation.contains](nsspecifiertest/testcomparisonoperation/contains.md)
+- [NSSpecifierTest.TestComparisonOperation.contains](./contains.md)
   Binary containment operator that results in true if the test object is a list or string that matches the other object (which is also a list or string) at any location.
 
 

@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Ordered reasoning segments.
 
@@ -25,11 +26,12 @@ May be empty or a partial/summary representation; full text may not be available
 
 ## See Also
 
-- [var description: String](transcript/reasoning/description.md)
+### Inspecting the reasoning
+- [var description: String](./description.md)
   A textual representation of the reasoning entry.
-- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata produced by the model while generating this reasoning entry.
-- [var signature: Data?](transcript/reasoning/signature.md)
+- [var signature: Data?](./signature.md)
   Opaque producer-supplied signature for this reasoning entry.
 
 

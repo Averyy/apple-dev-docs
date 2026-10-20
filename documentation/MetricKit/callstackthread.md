@@ -1,7 +1,8 @@
 # CallStackThread
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single stack thread within a call stack tree.
 
@@ -20,33 +21,34 @@ struct CallStackThread
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
 ## Topics
 
 ### Frames
-- [let rootFrames: ContiguousArray<CallStackFrame>](callstackthread/rootframes.md)
+- [let rootFrames: ContiguousArray<CallStackFrame>](./callstackthread/rootframes.md)
   Root frames for this call stack thread
-- [let threadAttributed: Bool?](callstackthread/threadattributed.md)
+- [let threadAttributed: Bool?](./callstackthread/threadattributed.md)
   Indicates whether this call stack is attributed to a specific thread.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CallStackTree](callstacktree.md)
+### Call stack data
+- [struct CallStackTree](./callstacktree.md)
   A tree structure representing a collection of call stacks captured during a diagnostic event.
-- [struct CallStackFrame](callstackframe.md)
+- [struct CallStackFrame](./callstackframe.md)
   A single frame within a call stack thread.
-- [struct SignpostRecord](signpostrecord.md)
+- [struct SignpostRecord](./signpostrecord.md)
   A record of a signpost event associated with a diagnostic report.
 
 

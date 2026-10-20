@@ -1,14 +1,15 @@
 # Create
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner, IOUserNetworkServiceClass serviceClass, uint32_t capacity, uint32_t queueId, IODispatchQueue *dispatchQueue, IOUserNetworkTxSubmissionQueueCompat **queue);
 ```
 

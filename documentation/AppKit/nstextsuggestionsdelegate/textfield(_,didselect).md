@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when an item in the suggestions menu has been selected.
@@ -24,6 +25,12 @@ The default implementation inserts the item’s text completion (`textField(_:te
 
 - `textField`: The text field whose suggestions item was highlighted.
 - `item`: The item that was selected.
+
+## Default Implementations
+
+### NSTextSuggestionsDelegate Implementations
+- [func textField(NSTextField, didSelect: Self.Item)](./textfield%28_,didselect%29-1pke6.md)
+  Called when an item in the suggestions menu has been selected.
 
 
 ---

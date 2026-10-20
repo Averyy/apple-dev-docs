@@ -1,7 +1,8 @@
 # makeImageBasedLightingFunction()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lighting function using image-based lighting (IBL).
 
@@ -19,15 +20,16 @@ final func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.
 
 #### Return Value
 
-An image-based [`LowLevelMaterialResource.LightingFunction`](lowlevelmaterialresource/lightingfunction.md).
+An image-based [`LowLevelMaterialResource.LightingFunction`](../lowlevelmaterialresource/lightingfunction.md).
 
 #### Discussion
 
-The lighting function expects two cubemap textures bound via its corresponding [`LowLevelArgumentTable`](lowlevelargumenttable.md): one for diffuse and one for specular. Prepare these using [`ImageBasedLightTextureGenerator.generateDiffuse(using:fromSkyboxCube:quality:into:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:)) and [`ImageBasedLightTextureGenerator.generateSpecular(using:fromSkyboxCube:quality:into:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:)).
+The lighting function expects two cubemap textures bound via its corresponding [`LowLevelArgumentTable`](../lowlevelargumenttable.md): one for diffuse and one for specular. Prepare these using [ImageBasedLightTextureGenerator.generateDiffuse(using:fromSkyboxCube:quality:into:)](../imagebasedlighttexturegenerator/generatediffuse%28using,fromskyboxcube,quality,into%29.md) and [ImageBasedLightTextureGenerator.generateSpecular(using:fromSkyboxCube:quality:into:)](../imagebasedlighttexturegenerator/generatespecular%28using,fromskyboxcube,quality,into%29.md).
 
 ## See Also
 
-- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeunlitlightingfunction.md)
+### Creating lighting functions
+- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./makeunlitlightingfunction%28%29.md)
   Returns an unlit lighting function that emits the surface emissive color directly, without any lighting calculations.
 
 

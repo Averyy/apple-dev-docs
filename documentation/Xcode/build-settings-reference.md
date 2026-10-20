@@ -1,6 +1,7 @@
 # Build settings reference
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 A detailed list of individual Xcode build settings that control or change the way a target is built.
 
@@ -14,13 +15,13 @@ Look up build settings for your Xcode project.
 
 A string identifying the build system action being performed.
 
-##### Additional Sdks
+##### Additional SDKs
 
 **Setting name:** `ADDITIONAL_SDKS`
 
 The locations of any sparse SDKs that should be layered on top of the one specified by `SDKROOT`. If more than one SDK is listed, the first one has highest precedence. Every SDK specified in this setting should be a “sparse” SDK, for example, not an SDK for an entire macOS release.
 
-##### Allow Multi Platform Builds
+##### Allow Multi-Platform Builds
 
 **Setting name:** `ALLOW_TARGET_PLATFORM_SPECIALIZATION`
 
@@ -50,7 +51,7 @@ The owner name or uid for the files listed under the `ALTERNATE_PERMISSIONS_FILE
 
 List of files to which the alternate owner, group and permissions are applied.
 
-##### Alternative Distribution Web
+##### Alternative Distribution - Web
 
 **Setting name:** `ALTERNATIVE_DISTRIBUTION_WEB`
 
@@ -62,7 +63,7 @@ Enable overriding your app’s distributor identifier for web distribution when 
 
 Always embed the Swift standard libraries in the target’s products, even if the target does not contain any Swift code.  For example, this should be enabled if the target is embedding other products which contain Swift, or if it is a test target which does not contain Swift but which is testing a product which does.  This setting only applies to wrapped products, not to standalone binary products.
 
-##### Always Search User Paths Deprecated
+##### Always Search User Paths (Deprecated)
 
 **Setting name:** `ALWAYS_SEARCH_USER_PATHS`
 
@@ -72,7 +73,7 @@ If enabled, both `#include <header.h>`-style and `#include "header.h"`-style dir
 
 For backwards compatibility reasons, this setting is enabled by default. Disabling it is strongly recommended.
 
-##### Require Only App Extension Safe Api
+##### Require Only App-Extension-Safe API
 
 **Setting name:** `APPLICATION_EXTENSION_API_ONLY`
 
@@ -150,7 +151,7 @@ The name of a color resource to use as a the target’s accent color, used as th
 
 When true, all app icon assets from the target’s Asset Catalogs will be included in the built product, making the available at runtime for use as alternate app icons. When false, only the primary app icon will be included in the built product.
 
-##### Include Asset Localizations in Infoplist
+##### Include Asset Localizations in Info.plist
 
 **Setting name:** `ASSETCATALOG_COMPILER_INCLUDE_INFOPLIST_LOCALIZATIONS`
 
@@ -222,7 +223,7 @@ Pass additional flags through to the asset catalog compiler.
 
 Show warnings encountered during the compilation of asset catalogs.
 
-##### Asset Pack Manifest Url Prefix
+##### Asset Pack Manifest URL Prefix
 
 **Setting name:** `ASSET_PACK_MANIFEST_URL_PREFIX`
 
@@ -258,7 +259,7 @@ When enabled, only builds content for languages explicitly supported by the proj
 
 A list of the build variants of the linked binary that will be produced. By default, only the `normal` variant is produced. Other common values include `debug` and `profile`.
 
-##### Builtproductsdir
+##### BUILT_PRODUCTS_DIR
 
 **Setting name:** `BUILT_PRODUCTS_DIR`
 
@@ -276,7 +277,7 @@ Specifies the executable that will load the bundle output file being linked. Und
 
 Check for C++ container overflow when Address Sanitizer is enabled. This check requires the entire application to be built with Address Sanitizer. If not, it may report false positives.
 
-##### Allow Non Modular Includes in Framework Modules
+##### Allow Non-modular Includes In Framework Modules
 
 **Setting name:** `CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES`
 
@@ -288,7 +289,7 @@ Enabling this setting allows non-modular includes to be used from within framewo
 
 Check for values stored to variables and never read again.
 
-##### Division By Zero
+##### Division by Zero
 
 **Setting name:** `CLANG_ANALYZER_DIVIDE_BY_ZERO`
 
@@ -300,13 +301,13 @@ Check for division by zero.
 
 Check for misuses of the Grand Central Dispatch API.
 
-##### Performance Anti Patterns with Grand Central Dispatch
+##### Performance Anti-Patterns with Grand Central Dispatch
 
 **Setting name:** `CLANG_ANALYZER_GCD_PERFORMANCE`
 
 Check for Grand Central Dispatch idioms that may lead to poor performance.
 
-##### Violation of Iokit and Libkern Reference Counting Rules
+##### Violation of IOKit and libkern Reference Counting Rules
 
 **Setting name:** `CLANG_ANALYZER_LIBKERN_RETAIN_COUNT`
 
@@ -336,7 +337,7 @@ Warn about memory leaks, use-after-free, and other API misuses.
 
 Warn when a MIG routine violates memory management conventions.
 
-##### Misuse of Nonnull
+##### Misuse of ‘nonnull’
 
 **Setting name:** `CLANG_ANALYZER_NONNULL`
 
@@ -348,31 +349,31 @@ Check for misuses of `nonnull` parameter and return types.
 
 Check for dereferences of null pointers.
 
-##### Suspicious Conversions of Nsnumber and Cfnumberref
+##### Suspicious Conversions of NSNumber and CFNumberRef
 
 **Setting name:** `CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION`
 
 Warn when a number object, such as an instance of `NSNumber`, `CFNumberRef`, `OSNumber`, or `OSBoolean` is compared or converted to a primitive value instead of another object.
 
-##### Synchronized with Nil Mutex
+##### @synchronized with nil mutex
 
 **Setting name:** `CLANG_ANALYZER_OBJC_ATSYNC`
 
 Warn on `nil` pointers used as mutexes for `@synchronized`.
 
-##### Misuse of Collections Api
+##### Misuse of Collections API
 
 **Setting name:** `CLANG_ANALYZER_OBJC_COLLECTIONS`
 
 Warn if `CF` collections are created with non-pointer-size values. Check if `NS` collections are initialized with non-Objective-C type elements.
 
-##### Improper Instance Cleanup in Dealloc
+##### Improper Instance Cleanup in ‘-dealloc’
 
 **Setting name:** `CLANG_ANALYZER_OBJC_DEALLOC`
 
 Warn when an instance is improperly cleaned up in `-dealloc`.
 
-##### Misuse of Objective C Generics
+##### Misuse of Objective-C generics
 
 **Setting name:** `CLANG_ANALYZER_OBJC_GENERICS`
 
@@ -384,7 +385,7 @@ Warn if a specialized generic type is converted to an incompatible type.
 
 Warn about Objective-C method signatures with type incompatibilities.
 
-##### Improper Handling of Cferror and Nserror
+##### Improper Handling of CFError and NSError
 
 **Setting name:** `CLANG_ANALYZER_OBJC_NSCFERROR`
 
@@ -396,7 +397,7 @@ Warn if functions accepting `CFErrorRef` or `NSError` cannot indicate that an er
 
 Warn on leaks and improper reference count management.
 
-##### Violation of Self = Super Init Rule
+##### Violation of ‘self = [super init]’ Rule
 
 **Setting name:** `CLANG_ANALYZER_OBJC_SELF_INIT`
 
@@ -408,43 +409,43 @@ Check that `super init` is properly called within an Objective-C initialization 
 
 Warn about private ivars that are never used.
 
-##### C Style Downcasts of Iokit Objects
+##### C-style Downcasts of IOKit Objects
 
 **Setting name:** `CLANG_ANALYZER_OSOBJECT_C_STYLE_CAST`
 
 Warn when a C-style cast is used for downcasting a pointer to an OSObject. RTTI-aware casts (OSRequiredCast, OSDynamicCast) are more secure and should be used instead of C-style casts in order to avoid potential type confusion attacks.
 
-##### Experimental Buffer Overflows
+##### EXPERIMENTAL Buffer overflows
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_BUFFER_OVERFLOW_EXPERIMENTAL`
 
 Check for potential buffer overflows.
 
-##### Floating Point Value Used As Loop Counter
+##### Floating Point Value Used as Loop Counter
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER`
 
 Warn on using a floating point value as a loop counter (CERT: FLP30-C, FLP30-CPP).
 
-##### Use of Getpw Gets Buffer Overflow
+##### Use of ‘getpw’, ‘gets’ (Buffer Overflow)
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_INSECUREAPI_GETPW_GETS`
 
 Warn on uses of `getpw` and `gets`. The functions are dangerous as they may trigger a buffer overflow.
 
-##### Use of Mktemp or Predictable Mktemps
+##### Use of ‘mktemp’ or Predictable ‘mktemps’
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_INSECUREAPI_MKSTEMP`
 
 Warn on uses of `mktemp`, which produces predictable temporary files. It is obsoleted by `mktemps`. Warn when `mkstemp` is passed fewer than 6 `X`’s in the format string.
 
-##### Use of Rand Functions
+##### Use of ‘rand’ Functions
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND`
 
 Warn on uses of `rand`, `random`, and related functions, which produce predictable random number sequences. Use `arc4random` instead.
 
-##### Use of Strcpy and Strcat
+##### Use of ‘strcpy’ and ‘strcat’
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY`
 
@@ -456,19 +457,19 @@ Warn on uses of the `strcpy` and `strcat` functions, which can result in buffer 
 
 Warn on uses of sensitive functions whose return values must be always checked.
 
-##### Use of Vfork
+##### Use of ‘vfork’
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_INSECUREAPI_VFORK`
 
 Warn on uses of the `vfork` function, which is inherently insecure. Use the safer `posix_spawn` function instead.
 
-##### Misuse of Keychain Services Api
+##### Misuse of Keychain Services API
 
 **Setting name:** `CLANG_ANALYZER_SECURITY_KEYCHAIN_API`
 
 Check for leaks of keychain attribute lists and data buffers returned by the Keychain Services API.
 
-##### Use After Move Errors in C++
+##### Use-After-Move Errors in C++
 
 **Setting name:** `CLANG_ANALYZER_USE_AFTER_MOVE`
 
@@ -533,7 +534,7 @@ Controls whether variables with static or thread storage duration should have th
 
 Enables compiler rewriting of allocation calls in C to provide type information to the allocator. Mitigates use-after-free security vulnerabilities.
 
-##### Enable Modules C and Objective C
+##### Enable Modules (C and Objective-C)
 
 **Setting name:** `CLANG_ENABLE_MODULES`
 
@@ -545,13 +546,13 @@ Enables the use of modules for system APIs. System headers are imported as seman
 
 When this setting is enabled, `clang` will use the shared debug info available in `clang` modules and precompiled headers. This results in smaller build artifacts, faster compile times, and more complete debug info. This setting should only be disabled when building static libraries with debug info for distribution.
 
-##### Objective C Automatic Reference Counting
+##### Objective-C Automatic Reference Counting
 
 **Setting name:** `CLANG_ENABLE_OBJC_ARC`
 
 Compiles reference-counted Objective-C code to use Automatic Reference Counting. Code compiled using automated reference counting is compatible with other code (such as frameworks) compiled using either manual reference counting (for example, traditional `retain` and `release` messages) or automated reference counting. [-fobjc-arc]
 
-##### Enable Objective C Arc Exceptions
+##### Enable Objective-C ARC Exceptions
 
 **Setting name:** `CLANG_ENABLE_OBJC_ARC_EXCEPTIONS`
 
@@ -569,13 +570,13 @@ Compiles Objective-C code to enable weak references for code compiled with manua
 
 Automatically initializes stack variables to zero as a security protection.
 
-##### Do Not Index C Macros
+##### Do not index C macros
 
 **Setting name:** `CLANG_INDEX_STORE_IGNORE_MACROS`
 
 Do not emit entries for C macros into the Index Store.
 
-##### Implicitly Link Objective C Runtime Support
+##### Implicitly Link Objective-C Runtime Support
 
 **Setting name:** `CLANG_LINK_OBJC_RUNTIME`
 
@@ -599,13 +600,13 @@ Disable warnings related to the recommended use of private module naming. This o
 
 The path to the file of the profile data to use when `CLANG_USE_OPTIMIZATION_PROFILE` is enabled.
 
-##### Mode of Analysis for Build
+##### Mode of Analysis for ‘Build’
 
 **Setting name:** `CLANG_STATIC_ANALYZER_MODE`
 
 The depth the static analyzer uses during the Build action. Use `Deep` to exercise the full power of the analyzer. Use `Shallow` for faster analysis.
 
-##### Mode of Analysis for Analyze
+##### Mode of Analysis for ‘Analyze’
 
 **Setting name:** `CLANG_STATIC_ANALYZER_MODE_ON_ANALYZE_ACTION`
 
@@ -629,7 +630,7 @@ Warn when a loop is discovered to have no termination condition.
 
 Warn when use of std::move on a universal reference would cause non-expiring lvalue arguments to be moved unexpectedly.
 
-##### Redundant Nested If Conditions
+##### Redundant Nested ‘if’ Conditions
 
 **Setting name:** `CLANG_TIDY_BUGPRONE_REDUNDANT_BRANCH_CONDITION`
 
@@ -641,7 +642,7 @@ Warn when an if-statement is redundant because its condition is equivalent to th
 
 Warn when a sub-expression of an arithmetic or logic expression can be omitted because it has no effect on the result.
 
-##### Trivial Automatic Variable Initialization
+##### Trivial automatic variable initialization
 
 **Setting name:** `CLANG_TRIVIAL_AUTO_VAR_INIT`
 
@@ -671,13 +672,13 @@ When this setting is enabled, `clang` will use the optimization profile collecte
 
 When this setting is enabled, the build system will use response files to share common arguments between similar invocations of `clang`, eliminating redundant information in build logs.
 
-##### Out of Range Enum Assignments
+##### Out-of-Range Enum Assignments
 
 **Setting name:** `CLANG_WARN_ASSIGN_ENUM`
 
 Warn about assigning integer constants to enum values that are out of the range of the enumerated type.
 
-##### Usage of Implicit Sequentially Consistent Atomics
+##### Usage of implicit sequentially-consistent atomics
 
 **Setting name:** `CLANG_WARN_ATOMIC_IMPLICIT_SEQ_CST`
 
@@ -713,7 +714,7 @@ Warn when a function-like parameter annotated as a completion handler is called 
 
 Warn about implicit conversions of constant values that cause the constant value to change, either through a loss of precision, or entirely in its meaning.
 
-##### Using C++11 Extensions in Earlier Versions of C++
+##### Using C++11 extensions in earlier versions of C++
 
 **Setting name:** `CLANG_WARN_CXX0X_EXTENSIONS`
 
@@ -725,13 +726,13 @@ When compiling C++ code using a language standard older than C++11, warn about t
 
 Warn when deleting an instance of a polymorphic class with virtual functions but without a virtual destructor.
 
-##### Overriding Deprecated Objective C Methods
+##### Overriding Deprecated Objective-C Methods
 
 **Setting name:** `CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS`
 
 Warn if an Objective-C class either subclasses a deprecated class or overrides a method that has been marked deprecated or unavailable.
 
-##### Direct Usage of Isa
+##### Direct usage of ‘isa’
 
 **Setting name:** `CLANG_WARN_DIRECT_OBJC_ISA_USAGE`
 
@@ -797,7 +798,7 @@ Warn about implicit conversions between pointers and integers. For example, this
 
 Warn about noescape annotations that are missing in a method’s signature.
 
-##### Implicit Non Literal Null Conversions
+##### Implicit Non-Literal Null Conversions
 
 **Setting name:** `CLANG_WARN_NON_LITERAL_NULL_CONVERSION`
 
@@ -809,19 +810,19 @@ Warn about non-literal expressions that evaluate to zero being treated as a null
 
 Warns when a nullable expression is used somewhere it’s not allowed, such as when passed as a `_Nonnull` parameter.
 
-##### Implicit Ownership Types on Out Parameters
+##### Implicit ownership types on out parameters
 
 **Setting name:** `CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE`
 
 Warn about implicit ownership types on Objective-C object references as out parameters. For example, declaring a parameter with type `NSObject**` will produce a warning because the compiler will assume that the out parameter’s ownership type is `__autoreleasing`.
 
-##### Implicit Atomic Objective C Properties
+##### Implicit Atomic Objective-C Properties
 
 **Setting name:** `CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES`
 
 Warn about `@property` declarations that are implicitly atomic.
 
-##### Implicit Retain of Self Within Blocks
+##### Implicit retain of ‘self’ within blocks
 
 **Setting name:** `CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF`
 
@@ -833,7 +834,7 @@ Warn about implicit retains of `self` within blocks, which can create a retain-c
 
 Warn about instance variable declarations in `@interface`.
 
-##### Implicit Objective C Literal Conversions
+##### Implicit Objective-C Literal Conversions
 
 **Setting name:** `CLANG_WARN_OBJC_LITERAL_CONVERSION`
 
@@ -845,7 +846,7 @@ Warn about implicit conversions from Objective-C literals to values of incompati
 
 Starting in Xcode 4.4, Apple Clang will implicitly synthesize properties that are not explicitly synthesized using `@synthesize`. This setting warns about such implicit behavior, even though the property is still synthesized. This is essentially a backwards compatibility warning, or for those who wish to continue to explicitly use `@synthesize`.
 
-##### Repeatedly Using a Weak Reference
+##### Repeatedly using a __weak reference
 
 **Setting name:** `CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK`
 
@@ -869,13 +870,13 @@ Warn when a translation unit is missing terminating ‘#pragma pack (pop)’ dir
 
 Warn about private modules that do not use the recommended private module layout.
 
-##### Quoted Include in Framework Header
+##### Quoted Include In Framework Header
 
 **Setting name:** `CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER`
 
 Warns when a quoted include is used instead of a framework style include in a framework header.
 
-##### Range Based for Loops
+##### Range-based For Loops
 
 **Setting name:** `CLANG_WARN_RANGE_LOOP_ANALYSIS`
 
@@ -905,7 +906,7 @@ Warn about various implicit conversions that can lose information or are otherwi
 
 Warn about suspicious uses of `std::move`.
 
-##### Unguarded Availability
+##### Unguarded availability
 
 **Setting name:** `CLANG_WARN_UNGUARDED_AVAILABILITY`
 
@@ -923,7 +924,7 @@ Warns about potentially unreachable code.
 
 Warn about a parsing ambiguity between a variable declaration and a function-style cast.
 
-##### Using Bridge Casts Outside of Arc
+##### Using __bridge Casts Outside of ARC
 
 **Setting name:** `CLANG_WARN__ARC_BRIDGE_CAST_NONARC`
 
@@ -935,7 +936,7 @@ Warn about using `__bridge` casts when not using ARC, where they have no effect.
 
 Warn about declaring the same method more than once within the same `@interface`.
 
-##### Exit Time C++ Destructors
+##### Exit-Time C++ Destructors
 
 **Setting name:** `CLANG_WARN__EXIT_TIME_DESTRUCTORS`
 
@@ -971,7 +972,7 @@ Automatically inject entitlements from the platform’s BaseEntitlements.plist i
 
 This setting specifies the method used to acquire and locate signing assets. Choose `Automatic` to let Xcode automatically create and update profiles, app IDs, and certificates. Choose `Manual` to create and update these yourself on the developer website.
 
-##### Combinehidpiimages
+##### COMBINE_HIDPI_IMAGES
 
 **Setting name:** `COMBINE_HIDPI_IMAGES`
 
@@ -989,49 +990,49 @@ Caches the results of compilations for a particular set of inputs.
 
 Emits diagnostic information for cached compilation tasks.
 
-##### Enable Index While Building Functionality
+##### Enable Index-While-Building Functionality
 
 **Setting name:** `COMPILER_INDEX_STORE_ENABLE`
 
 Control whether the compiler should emit index data while building.
 
-##### Compress Png Files
+##### Compress PNG Files
 
 **Setting name:** `COMPRESS_PNG_FILES`
 
 If enabled, PNG resource files are compressed as they are copied.
 
-##### Configuration
+##### CONFIGURATION
 
 **Setting name:** `CONFIGURATION`
 
 Identifies the build configuration, such as `Debug` or `Release`, that the target uses to generate the product.
 
-##### Per Configuration Build Products Path
+##### Per-configuration Build Products Path
 
 **Setting name:** `CONFIGURATION_BUILD_DIR`
 
 The base path where build products will be placed during a build for a given configuration. By default, this is set to `$(BUILD_DIR)/$(CONFIGURATION)`.
 
-##### Per Configuration Intermediate Build Files Path
+##### Per-configuration Intermediate Build Files Path
 
 **Setting name:** `CONFIGURATION_TEMP_DIR`
 
 The base path where intermediates will be placed during a build for a given configuration. By default, this is set to `$(PROJECT_TEMP_DIR)/$(CONFIGURATION)`.
 
-##### Contentsfolderpath
+##### CONTENTS_FOLDER_PATH
 
 **Setting name:** `CONTENTS_FOLDER_PATH`
 
 Specifies the directory inside the generated bundle that contains the product’s files.
 
-##### Preserve Hfs Data
+##### Preserve HFS Data
 
 **Setting name:** `COPYING_PRESERVES_HFS_DATA`
 
 Causes the copying of resources to preserve resource forks and Finder info.
 
-##### Run Unifdef on Product Headers
+##### Run unifdef on Product Headers
 
 **Setting name:** `COPY_HEADERS_RUN_UNIFDEF`
 
@@ -1049,13 +1050,13 @@ Specifies the flags to pass to `unifdef(1)` when invoking that tool to copy head
 
 Specifies whether binary files that are copied during the build, such as in a Copy Bundle Resources or Copy Files build phase, should be stripped of debugging symbols. It does not cause the linked product of a target to be stripped—use `STRIP_INSTALLED_PRODUCT` for that.
 
-##### Coreml Model Class Generation Language
+##### CoreML Model Class Generation Language
 
 **Setting name:** `COREML_CODEGEN_LANGUAGE`
 
 The Source-code language to use for generated CoreML model class.  By default “Automatic” will analyze your project to determine the correct language.  Adjust this setting to explicitly select “Swift” or “Objective-C”, or select “None” to disable model class generation.
 
-##### Coreml Generated Model Inherits Nsobject
+##### CoreML Generated Model Inherits NSObject
 
 **Setting name:** `COREML_CODEGEN_SWIFT_GLOBAL_MODULE`
 
@@ -1073,17 +1074,17 @@ Other flags to pass to the C preprocessor when using the standalone C Preprocess
 
 Space-separated list of preprocessor macros of the form `foo` or `foo=bar`. These macros are used when preprocessing using the standalone C Preprocessor rule.
 
-##### Create Infoplist Section in Binary
+##### Create Info.plist Section in Binary
 
 **Setting name:** `CREATE_INFOPLIST_SECTION_IN_BINARY`
 
 Enabling this setting creates a section called `__info_plist` in the `__TEXT` segment of the product’s linked binary containing the processed `Info.plist` file for the target.
 
-You can read the processed `Info.plist` file from the linked binary at runtime using the [`CFBundle`](https://developer.apple.comhttps://developer.apple.com/documentation/corefoundation/cfbundle) and [`NSBundle`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nsbundle) (Objective-C) or [`NSBundle`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/nsbundle) (Swift) APIs. To print the processed `Info.plist` file, use the `plutil(1)` command-line utility.
+You can read the processed `Info.plist` file from the linked binary at runtime using the [CFBundle](../CoreFoundation/cfbundle.md) and [NSBundle](../Foundation/nsbundle.md) (Objective-C) or [Bundle](../Foundation/nsbundle.md) (Swift) APIs. To print the processed `Info.plist` file, use the `plutil(1)` command-line utility.
 
 This setting only applies to command-line tool targets.
 
-##### Currentarch
+##### CURRENT_ARCH
 
 **Setting name:** `CURRENT_ARCH`
 
@@ -1095,9 +1096,9 @@ The name of the active architecture being processed.
 
 This setting defines the current version of the project. The value must be a integer or floating point number, such as `57` or `365.8`.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleVersion](../BundleResources/information-property-list/cfbundleversion.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Currentvariant
+##### CURRENT_VARIANT
 
 **Setting name:** `CURRENT_VARIANT`
 
@@ -1158,7 +1159,7 @@ If enabled, indicates that binaries should be stripped and file mode, owner, and
 
 The name of the build setting for the deployment target for the effective platform. This can be used to evaluate the build setting using build setting interpolation without hard-coding the name, e.g. `$($(DEPLOYMENT_TARGET_SETTING_NAME))`, or to compose the names of other settings which contain its name, such as the `RECOMMENDED_<platform>_DEPLOYMENT_TARGET` settings.
 
-##### Derivedfiledir
+##### DERIVED_FILE_DIR
 
 **Setting name:** `DERIVED_FILE_DIR`
 
@@ -1182,7 +1183,7 @@ Files and directories used only for development. Archive and install builds will
 
 The team ID of a development team to use for signing certificates and provisioning profiles.
 
-##### Build Documentation for C++objective C++
+##### Build Documentation for C++/Objective-C++
 
 **Setting name:** `DOCC_ENABLE_CXX_SUPPORT`
 
@@ -1194,31 +1195,31 @@ Include documentation for symbols defined in C++/Objective-C++ headers.
 
 Extract Swift symbol information for symbols defined within an extension to a type that is not defined in the current module.
 
-##### Build Multi Language Documentation for Swift Only Targets
+##### Build Multi-Language Documentation for Swift Only Targets
 
 **Setting name:** `DOCC_EXTRACT_OBJC_INFO_FOR_SWIFT_SYMBOLS`
 
 Extract Objective-C symbol information for targets that contain only Swift code so that the documentation output can be read as both Swift and Objective-C.
 
-##### Build Multi Language Documentation for Objective C Only Targets
+##### Build Multi-Language Documentation for Objective-C Only Targets
 
 **Setting name:** `DOCC_EXTRACT_SWIFT_INFO_FOR_OBJC_SYMBOLS`
 
 Extract Swift symbol information for targets that contain only Objective-C code so that the documentation output can be read as both Swift and Objective-C.
 
-##### Docc Archive Hosting Base Path
+##### DocC Archive Hosting Base Path
 
 **Setting name:** `DOCC_HOSTING_BASE_PATH`
 
 The base path your documentation website will be hosted at. For example, if you plan on hosting your DocC archive at `https://example.com/ProjectName/documentation` instead of `https://example.com/documentation`, set this value to `"ProjectName"`.
 
-##### Documentationfolderpath
+##### DOCUMENTATION_FOLDER_PATH
 
 **Setting name:** `DOCUMENTATION_FOLDER_PATH`
 
 Identifies the directory that contains the bundle’s documentation files.
 
-##### Dont Force Infoplist Generation
+##### Don’t Force Info.plist Generation
 
 **Setting name:** `DONT_GENERATE_INFOPLIST_FILE`
 
@@ -1232,13 +1233,13 @@ The path at which all products will be rooted when performing an install build. 
 
 Typically this path is not set per target, but is provided as an option on the command line when performing an `xcodebuild install`. It may also be set in a build configuration in special circumstances.
 
-##### Dsymutilembedresources
+##### DSYMUTIL_EMBED_RESOURCES
 
 **Setting name:** `DSYMUTIL_EMBED_RESOURCES`
 
 A list of resources to embed into the dSYM bundle. Each entry has the form ‘=’ where the source path is a file or directory on disk and the destination path is relative to the bundle’s Contents/Resources directory.
 
-##### Other Dtrace Flags
+##### Other DTrace Flags
 
 **Setting name:** `DTRACE_OTHER_FLAGS`
 
@@ -1248,13 +1249,13 @@ Space-separated list of additional flags to pass to the `dtrace` compiler. Be su
 
 **Setting name:** `DYLIB_COMPATIBILITY_VERSION`
 
-Determines the compatibility version of the resulting library, bundle, or framework binary. See [`Dynamic Library Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/DynamicLibraryDesignGuidelines.html#//apple_ref/doc/uid/TP40002013-SW19) in [`Dynamic Library Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html) for details on assigning version numbers of dynamic libraries.
+Determines the compatibility version of the resulting library, bundle, or framework binary. See [Dynamic Library Design Guidelines](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/DynamicLibraryDesignGuidelines.html#//apple_ref/doc/uid/TP40002013-SW19) in [Dynamic Library Programming Topics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html) for details on assigning version numbers of dynamic libraries.
 
 ##### Current Library Version
 
 **Setting name:** `DYLIB_CURRENT_VERSION`
 
-This setting defines the current version of any framework built by the project. As with `CURRENT_PROJECT_VERSION`, the value must be an integer or floating point number, such as `57` or `365.8`. See [`Dynamic Library Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/DynamicLibraryDesignGuidelines.html#//apple_ref/doc/uid/TP40002013-SW19) in [`Dynamic Library Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html) for details on assigning version numbers of dynamic libraries.
+This setting defines the current version of any framework built by the project. As with `CURRENT_PROJECT_VERSION`, the value must be an integer or floating point number, such as `57` or `365.8`. See [Dynamic Library Design Guidelines](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/100-Articles/DynamicLibraryDesignGuidelines.html#//apple_ref/doc/uid/TP40002013-SW19) in [Dynamic Library Programming Topics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html) for details on assigning version numbers of dynamic libraries.
 
 ##### Dynamic Library Install Name Base
 
@@ -1268,7 +1269,7 @@ Sets the base value for the internal `install path` (`LC_ID_DYLIB`) in a dynamic
 
 If enabled, the build system will emit a TBD file for Swift-only framework and dynamic library targets to unblock linking of dependent targets before their dependency has finished linking.
 
-##### Embed Asset Packs in Product Bundle
+##### Embed Asset Packs In Product Bundle
 
 **Setting name:** `EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE`
 
@@ -1286,7 +1287,7 @@ When set, enables App Sandbox for a target.
 
 Enables building with code coverage instrumentation. This is only used when the build has code coverage enabled, which is typically done via the Xcode scheme or test plan settings.
 
-##### Enforce Bounds Safe Buffer Usage in C++
+##### Enforce Bounds-Safe Buffer Usage in C++
 
 **Setting name:** `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS`
 
@@ -1340,19 +1341,19 @@ This setting indicates whether App Sandbox allows access to files in the user’
 
 Enable hardened runtime restrictions.
 
-##### Enable Hardware Checked Pointer Arithmetic Slice
+##### Enable Hardware-Checked Pointer Arithmetic Slice
 
 **Setting name:** `ENABLE_HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE`
 
 Builds the target with hardware-checked pointer arithmetic enabled. Adds an additional architectural slice (arm64e.x1) with hardware-checked pointer arithmetic instructions to `ARCHS_STANDARD`. Has no effect if `ARCHS` has been overridden to not be based on `ARCHS_STANDARD`.
 
-##### Enableheaderdependencies
+##### ENABLE_HEADER_DEPENDENCIES
 
 **Setting name:** `ENABLE_HEADER_DEPENDENCIES`
 
 Specifies whether to automatically track dependencies on included header files.
 
-##### Incoming Connections Server
+##### Incoming Connections (Server)
 
 **Setting name:** `ENABLE_INCOMING_NETWORK_CONNECTIONS`
 
@@ -1382,13 +1383,13 @@ Controls whether assertion logic provided by `NSAssert` is included in the prepr
 
 Omit inapplicable resources when building for a single device. For example, when building for a device with a Retina display, exclude 1x resources.
 
-##### Enable on Demand Resources
+##### Enable On Demand Resources
 
 **Setting name:** `ENABLE_ON_DEMAND_RESOURCES`
 
 If enabled, tagged assets—files and asset catalog entries—are built into asset packs based on their combination of tags. Untagged resources are treated normally.
 
-##### Outgoing Connections Client
+##### Outgoing Connections (Client)
 
 **Setting name:** `ENABLE_OUTGOING_NETWORK_CONNECTIONS`
 
@@ -1448,19 +1449,19 @@ A Boolean value that indicates whether the app has read-write access to the user
 
 When set, enables access to print documents and media using the system’s configured printers.
 
-##### Usb
+##### USB
 
 **Setting name:** `ENABLE_RESOURCE_ACCESS_USB`
 
 When set, enables communication with connected USB devices.
 
-##### Enable Security Relevant Compiler Warnings
+##### Enable Security-Relevant Compiler Warnings
 
 **Setting name:** `ENABLE_SECURITY_COMPILER_WARNINGS`
 
 Enables a set of security-relevant compiler warnings that check for common bounds-safety and lifetime-safety issues.
 
-##### Enable Strict Checking of Objcmsgsend Calls
+##### Enable Strict Checking of objc_msgSend Calls
 
 **Setting name:** `ENABLE_STRICT_OBJC_MSGSEND`
 
@@ -1511,7 +1512,7 @@ A list of architectures for which the target should not be built. These architec
 
 A list of patterns (as defined by `fnmatch(3)`) specifying the names of explicit target dependencies to *exclude* when determining which targets to build (see also `INCLUDED_EXPLICIT_TARGET_DEPENDENCIES`). This setting can be used to define complex filters for which targets should be built in response to other build settings.
 
-##### Sub Directories to Exclude in Recursive Searches
+##### Sub-Directories to Exclude in Recursive Searches
 
 **Setting name:** `EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES`
 
@@ -1523,7 +1524,7 @@ This is a list of `fnmatch()`-style patterns of file or directory names to exclu
 
 A list of patterns (as defined by `fnmatch(3)`) specifying the names of source files to explicitly *exclude* when processing the files in the target’s build phases (see also `INCLUDED_SOURCE_FILE_NAMES`). This setting can be used to define complex filters for which files from the phase should be built in response to other build settings; for example, a value of `*.$(CURRENT_ARCH).c` could serve to exclude particular files based on the architecture being built.
 
-##### Executablesfolderpath
+##### EXECUTABLES_FOLDER_PATH
 
 **Setting name:** `EXECUTABLES_FOLDER_PATH`
 
@@ -1535,21 +1536,21 @@ Identifies the directory that contains additional binary files.
 
 This is the extension used for the executable product generated by the target, which has a default value based on the product type.
 
-##### Executablefolderpath
+##### EXECUTABLE_FOLDER_PATH
 
 **Setting name:** `EXECUTABLE_FOLDER_PATH`
 
 Identifies the directory that contains the binary the target builds.
 
-##### Executablename
+##### EXECUTABLE_NAME
 
 **Setting name:** `EXECUTABLE_NAME`
 
 Specifies the name of the binary the target produces.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleExecutable`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleexecutable) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleExecutable](../BundleResources/information-property-list/cfbundleexecutable.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Executablepath
+##### EXECUTABLE_PATH
 
 **Setting name:** `EXECUTABLE_PATH`
 
@@ -1561,7 +1562,7 @@ Specifies the path to the binary the target produces within its bundle.
 
 The prefix used for the executable product generated by the target, which has a default value based on the product type.
 
-##### Executablesuffix
+##### EXECUTABLE_SUFFIX
 
 **Setting name:** `EXECUTABLE_SUFFIX`
 
@@ -1573,7 +1574,7 @@ Specifies the suffix of the binary filename, including the character that separa
 
 This is a project-relative path to a file that lists the symbols to export. See `ld -exported_symbols_list` for details on exporting symbols.
 
-##### Frameworksfolderpath
+##### FRAMEWORKS_FOLDER_PATH
 
 **Setting name:** `FRAMEWORKS_FOLDER_PATH`
 
@@ -1597,13 +1598,13 @@ Framework bundles are versioned by having contents in subfolders of a version fo
 
 If enabled, consecutive run script phases will be allowed to run in parallel if they fully specify their input and output dependencies.
 
-##### Char Type Is Unsigned
+##### ‘char’ Type Is Unsigned
 
 **Setting name:** `GCC_CHAR_IS_UNSIGNED_CHAR`
 
 Enabling this setting causes `char` to be unsigned by default, disabling it causes `char` to be signed by default.
 
-##### Codewarriorms Style Inline Assembly
+##### CodeWarrior/MS-Style Inline Assembly
 
 **Setting name:** `GCC_CW_ASM_SYNTAX`
 
@@ -1628,13 +1629,13 @@ Choose a standard or non-standard C language dialect.
 - *GNU23:* Accept ISO C23 and GNU extensions. [-std=gnu23]
 - *Compiler Default:* Tells the compiler to use its default C language dialect. This is normally the best choice unless you have specific needs. (Currently equivalent to GNU99.)
 
-##### Generate Position Dependent Code
+##### Generate Position-Dependent Code
 
 **Setting name:** `GCC_DYNAMIC_NO_PIC`
 
 Faster function calls for applications. Not appropriate for shared libraries, which need to be position-independent.
 
-##### Allow Asm Inline Typeof
+##### Allow ‘asm’, ‘inline’, ‘typeof’
 
 **Setting name:** `GCC_ENABLE_ASM_KEYWORD`
 
@@ -1678,7 +1679,7 @@ Generate output containing library calls for floating point.
 
 Activating this setting enables kernel development mode.
 
-##### Enable Objective C Exceptions
+##### Enable Objective-C Exceptions
 
 **Setting name:** `GCC_ENABLE_OBJC_EXCEPTIONS`
 
@@ -1692,19 +1693,19 @@ Recognize and construct Pascal-style string literals. Its use in new code is dis
 
 Pascal string literals take the form `"\pstring"` . The special escape sequence `\p` denotes the Pascal length byte for the string, and will be replaced at compile time with the number of characters that follow. The `\p` may only appear at the beginning of a string literal, and may not appear in wide string literals or as an integral constant.
 
-##### Enable Sse3 Extensions
+##### Enable SSE3 Extensions
 
 **Setting name:** `GCC_ENABLE_SSE3_EXTENSIONS`
 
 Specifies whether the binary uses the builtin functions that provide access to the SSE3 extensions to the IA-32 architecture.
 
-##### Enable Sse41 Extensions
+##### Enable SSE4.1 Extensions
 
 **Setting name:** `GCC_ENABLE_SSE41_EXTENSIONS`
 
 Specifies whether the binary uses the builtin functions that provide access to the SSE4.1 extensions to the IA-32 architecture.
 
-##### Enable Sse42 Extensions
+##### Enable SSE4.2 Extensions
 
 **Setting name:** `GCC_ENABLE_SSE42_EXTENSIONS`
 
@@ -1716,7 +1717,7 @@ Specifies whether the binary uses the builtin functions that provide access to t
 
 Controls whether or not trigraphs are permitted in the source code.
 
-##### Relax Ieee Compliance
+##### Relax IEEE Compliance
 
 **Setting name:** `GCC_FAST_MATH`
 
@@ -1762,7 +1763,7 @@ Specifies whether to compile each source file according to its file type, or whe
 
 Activating this setting indicates that code should be added so program flow arcs are instrumented.
 
-##### Enable Linking with Shared Libraries
+##### Enable Linking With Shared Libraries
 
 **Setting name:** `GCC_LINK_WITH_DYNAMIC_LIBRARIES`
 
@@ -1808,13 +1809,13 @@ Implicitly include the named header. The path given should either be a project r
 
 Space-separated list of preprocessor macros of the form `foo` or `foo=bar`.
 
-##### Preprocessor Macros Not Used in Precompiled Headers
+##### Preprocessor Macros Not Used In Precompiled Headers
 
 **Setting name:** `GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS`
 
 Space-separated list of preprocessor macros of the form `foo` or `foo=bar`. These macros are not used when precompiling a prefix header file.
 
-##### Make Strings Read Only
+##### Make Strings Read-Only
 
 **Setting name:** `GCC_REUSE_STRINGS`
 
@@ -1834,31 +1835,31 @@ This setting generates code that may not be binary compatible with code generate
 
 Optimize code by making more aggressive assumptions about whether pointers can point to the same objects as other pointers. Programs that use pointers a lot may benefit from this, but programs that don’t strictly follow the ISO C rules about the type with which an object may be accessed may behave unexpectedly.
 
-##### Symbols Hidden By Default
+##### Symbols Hidden by Default
 
 **Setting name:** `GCC_SYMBOLS_PRIVATE_EXTERN`
 
-When enabled, all symbols are declared `private extern` unless explicitly marked to be exported using `__attribute__((visibility("default")))` in code. If not enabled, all symbols are exported unless explicitly marked as `private extern`. See [`Controlling Symbol Visibility`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/CppRuntimeEnv/Articles/SymbolVisibility.html#//apple_ref/doc/uid/TP40001670-CJBGBHEJ) in [`C++ Runtime Environment Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/CppRuntimeEnv/CPPRuntimeEnv.html).
+When enabled, all symbols are declared `private extern` unless explicitly marked to be exported using `__attribute__((visibility("default")))` in code. If not enabled, all symbols are exported unless explicitly marked as `private extern`. See [Controlling Symbol Visibility](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/CppRuntimeEnv/Articles/SymbolVisibility.html#//apple_ref/doc/uid/TP40001670-CJBGBHEJ) in [C++ Runtime Environment Programming Guide](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/CppRuntimeEnv/CPPRuntimeEnv.html).
 
-##### Statics Are Thread Safe
+##### Statics are Thread-Safe
 
 **Setting name:** `GCC_THREADSAFE_STATICS`
 
 Emits extra code to use the routines specified in the C++ ABI for thread-safe initialization of local statics. You can disable this option to reduce code size slightly in code that doesn’t need to be thread-safe.
 
-##### Treat Missing Function Prototypes As Errors
+##### Treat Missing Function Prototypes as Errors
 
 **Setting name:** `GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS`
 
 Causes warnings about missing function prototypes to be treated as errors. Only applies to C and Objective-C.
 
-##### Treat Incompatible Pointer Type Warnings As Errors
+##### Treat Incompatible Pointer Type Warnings as Errors
 
 **Setting name:** `GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS`
 
 Enabling this option causes warnings about incompatible pointer types to be treated as errors.
 
-##### Treat Warnings As Errors
+##### Treat Warnings as Errors
 
 **Setting name:** `GCC_TREAT_WARNINGS_AS_ERRORS`
 
@@ -1876,7 +1877,7 @@ Unrolls loops. Unrolling makes the code larger, but may make it faster by reduci
 
 Controls whether the standard system directories are searched for header files. When disabled, only the directories you have specified with `-I` options (and the directory of the current file, if appropriate) are searched.
 
-##### Compiler for Cc++objective C
+##### Compiler for C/C++/Objective-C
 
 **Setting name:** `GCC_VERSION`
 
@@ -1894,7 +1895,7 @@ Warn if a value is implicitly converted from a 64-bit type to a 32-bit type. Thi
 
 Warn about the use of deprecated functions, variables, and types (as indicated by the `deprecated` attribute).
 
-##### Undefined Use of Offsetof Macro
+##### Undefined Use of offsetof Macro
 
 **Setting name:** `GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO`
 
@@ -1908,19 +1909,19 @@ The restrictions on `offsetof` may be relaxed in a future version of the C++ sta
 
 Warn if a structure’s initializer has some fields missing. For example, the following code would cause such a warning because `x.h` is implicitly zero:
 
-```None
+```
 struct s { int f, g, h; };
 struct s x = { 3, 4 };
 ```
 
 This option does not warn about designated initializers, so the following modification would not trigger a warning:
 
-```None
+```
 struct s { int f, g, h; };
 struct s x = { .f = 3, .g = 4 };
 ```
 
-##### Missing Newline at End of File
+##### Missing Newline At End Of File
 
 **Setting name:** `GCC_WARN_ABOUT_MISSING_NEWLINE`
 
@@ -1944,7 +1945,7 @@ Warn when pointers passed via arguments or assigned to a variable differ in sign
 
 Causes warnings to be emitted when a function with a defined return type (not `void`) contains a return statement without a return-value or when it does not contain any return statements. Also emits a warning when a function with a void return type tries to return a value.
 
-##### Incomplete Objective C Protocols
+##### Incomplete Objective-C Protocols
 
 **Setting name:** `GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL`
 
@@ -1970,7 +1971,7 @@ Warn when a function declaration hides virtual functions from a base class.
 
 For example, in the following example, the `A` class version of `f()` is hidden in `B`.
 
-```None
+```
 struct A {
   virtual void f();
 };
@@ -1982,7 +1983,7 @@ struct B: public A {
 
 As a result, the following code will fail to compile.
 
-```None
+```
 B* b;
 b->f();
 ```
@@ -2001,7 +2002,7 @@ Inhibit all warning messages.
 
 Warn if an aggregate or union initializer is not fully bracketed. In the following example, the initializer for `a` is not fully bracketed, but the initializer for `b` is fully bracketed.
 
-```None
+```
 int a[2][2] = { 0, 1, 2, 3 };
 int b[2][2] = { { 0, 1 }, { 2, 3 } };
 ```
@@ -2012,7 +2013,7 @@ int b[2][2] = { { 0, 1 }, { 2, 3 } };
 
 Warn if parentheses are omitted in certain contexts, such as when there is an assignment in a context where a truth value is expected, or when operators are nested whose precedence causes confusion. Also, warn about constructions where there may be confusion as to which `if` statement an `else` branch belongs. For example:
 
-```None
+```
 {
   if (a)
     if (b)
@@ -2024,7 +2025,7 @@ Warn if parentheses are omitted in certain contexts, such as when there is an as
 
 In C, every `else` branch belongs to the innermost possible `if` statement, which in the example above is `if (b)`. This is often not what the programmer expects, as illustrated by indentation used in the example above. This build setting causes GCC to issue a warning when there is the potential for this confusion. To eliminate the warning, add explicit braces around the innermost `if` statement so there is no way the `else` could belong to the enclosing `if`. For example:
 
-```None
+```
 {
   if (a)
     {
@@ -2066,7 +2067,7 @@ Warn when a comparison between signed and unsigned values could produce an incor
 
 Warn if multiple methods with differing argument and/or return types are found for a given selector when attempting to send a message using this selector to a receiver of type `id` or `Class`. When this setting is disabled, the compiler will omit such warnings if any differences found are confined to types that share the same size and alignment.
 
-##### Typecheck Calls to Printfscanf
+##### Typecheck Calls to printf/scanf
 
 **Setting name:** `GCC_WARN_TYPECHECK_CALLS_TO_PRINTF`
 
@@ -2122,13 +2123,13 @@ Warn whenever a statement computes a result that is explicitly not used.
 
 Warn whenever a local variable or nonconstant static variable is unused aside from its declaration.
 
-##### Generate Infoplist File
+##### Generate Info.plist File
 
 **Setting name:** `GENERATE_INFOPLIST_FILE`
 
 Automatically generate an Info.plist file.
 
-##### Enable Intermediate Text Based Stubs Generation
+##### Enable Intermediate Text-Based Stubs Generation
 
 **Setting name:** `GENERATE_INTERMEDIATE_TEXT_BASED_STUBS`
 
@@ -2140,7 +2141,7 @@ Enables the generation of intermediate Text-Based stubs for dynamic libraries an
 
 Forces the `PkgInfo` file to be written to wrapped products even if this file is not expected.
 
-##### Perform Single Object Prelink
+##### Perform Single-Object Prelink
 
 **Setting name:** `GENERATE_PRELINK_OBJECT_FILE`
 
@@ -2152,25 +2153,25 @@ Activating this setting will cause the object files built by a target to be prel
 
 Activating this setting will cause the compiler and linker to generate profiling code. For example, GCC will generate code suitable for use with `gprof(1)`.
 
-##### Enable Text Based Stubs Generation
+##### Enable Text-Based Stubs Generation
 
 **Setting name:** `GENERATE_TEXT_BASED_STUBS`
 
 Enables the generation of Text-Based stubs for dynamic libraries and frameworks.
 
-##### Headermapincludesflatentriesfortargetbeingbuilt
+##### HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT
 
 **Setting name:** `HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT`
 
 Specifies whether the header map contains a name/path entry for every header in the target being built.
 
-##### Headermapincludesframeworkentriesforallproducttypes
+##### HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES
 
 **Setting name:** `HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES`
 
 Specifies whether the header map contains a framework-name/path entry for every header in the target being built, including targets that do not build frameworks.
 
-##### Headermapincludesprojectheaders
+##### HEADERMAP_INCLUDES_PROJECT_HEADERS
 
 **Setting name:** `HEADERMAP_INCLUDES_PROJECT_HEADERS`
 
@@ -2182,13 +2183,13 @@ Specifies whether the header map contains a name/path entry for every header in 
 
 This is a list of paths to folders to be searched by the compiler for included or imported header files when compiling C, Objective-C, C++, or Objective-C++. Paths are delimited by whitespace, so any paths with spaces in them need to be properly quoted.
 
-##### Compiler Mode for Cocoatouch Documents
+##### Compiler Mode for CocoaTouch Documents
 
 **Setting name:** `IBC_COCOATOUCH_COMPILER_MODE`
 
 Instructs the compiler on which compilation mode to use.
 
-##### Auto Activate Custom Fonts
+##### Auto-Activate Custom Fonts
 
 **Setting name:** `IBC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS`
 
@@ -2200,7 +2201,7 @@ Instructs the XIB compiler to add custom fonts to the application’s `Info.plis
 
 Show errors encountered during the compilation of XIB files.
 
-##### Flatten Compiled Xib Files
+##### Flatten Compiled XIB Files
 
 **Setting name:** `IBC_FLATTEN_NIBS`
 
@@ -2224,25 +2225,25 @@ Show notices encountered during the compilation of XIB files.
 
 A list of additional flags to pass to the Interface Builder Compiler. Use this setting if Xcode does not already provide UI for a particular Interface Builder Compiler flag.
 
-##### Overriding Plug in and Framework Directory
+##### Overriding Plug-In and Framework Directory
 
 **Setting name:** `IBC_OVERRIDING_PLUGINS_AND_FRAMEWORKS_DIR`
 
 Instructs Interface Builder to load frameworks and Interface Builder plugins from the specified directory. Setting this value to `$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)` will ensure that Interface Builder will load frameworks and plug-ins from the built products directory of the current build configuration.
 
-##### Plug Ins
+##### Plug-Ins
 
 **Setting name:** `IBC_PLUGINS`
 
 A list of paths to Interface Builder plugins to load when compiling XIB files.
 
-##### Plug in Search Paths
+##### Plug-In Search Paths
 
 **Setting name:** `IBC_PLUGIN_SEARCH_PATHS`
 
 A list of paths to be searched for Interface Builder plug-ins to load when compiling XIB files.
 
-##### Strip Nib Files
+##### Strip NIB Files
 
 **Setting name:** `IBC_STRIP_NIBS`
 
@@ -2254,13 +2255,13 @@ Strips an Interface Builder NIB to reduce its size for deployment.  The resultin
 
 Show warnings encountered during the compilation of XIB files.
 
-##### Compiler Mode for Cocoatouch Documents
+##### Compiler Mode for CocoaTouch Documents
 
 **Setting name:** `IBSC_COCOATOUCH_COMPILER_MODE`
 
 Instructs the compiler on which compilation mode to use.
 
-##### Auto Activate Custom Fonts
+##### Auto-Activate Custom Fonts
 
 **Setting name:** `IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS`
 
@@ -2320,7 +2321,7 @@ The domain in which the target will match or be matched for implicit dependencie
 
 A list of patterns (as defined by `fnmatch(3)`) specifying the names of explicit target dependencies to *include* when determining which targets to build. This setting is only useful when combined with `EXCLUDED_EXPLICIT_TARGET_DEPENDENCIES`, and can be used to define complex filters for which targets should be built in response to other build settings.
 
-##### Sub Directories to Include in Recursive Searches
+##### Sub-Directories to Include in Recursive Searches
 
 **Setting name:** `INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES`
 
@@ -2338,19 +2339,19 @@ A list of patterns (as defined by `fnmatch(3)`) specifying the names of source f
 
 Compress the index store, reducing its size on disk.
 
-##### Index Only Project Files
+##### Index only project files
 
 **Setting name:** `INDEX_STORE_ONLY_PROJECT_FILES`
 
 Only index the source files that are being compiled within this project. Do not emit data into the index store for system modules.
 
-##### Expand Build Settings in Infoplist File
+##### Expand Build Settings in Info.plist File
 
 **Setting name:** `INFOPLIST_EXPAND_BUILD_SETTINGS`
 
 Expand build settings in the `Info.plist` file.
 
-##### Infoplist File
+##### Info.plist File
 
 **Setting name:** `INFOPLIST_FILE`
 
@@ -2358,19 +2359,19 @@ The project-relative path to the property list file that contains the `Info.plis
 
 The build system merges the values you specify in this file with other values it generates during the build process. The product type, target platform, App Privacy manifests, input from other build tools, and other built-in logic impact the contents of the final `Info.plist` file it produces. When `GENERATE_INFOPLIST_FILE` is enabled, the build system also includes content from build settings in the merge process.
 
-For details on information property list files, see [`Information Property List`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list).
+For details on information property list files, see [Information Property List](../BundleResources/information-property-list.md).
 
 ##### Bundle Display Name
 
 **Setting name:** `INFOPLIST_KEY_CFBundleDisplayName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleDisplayName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledisplayname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleDisplayName](../BundleResources/information-property-list/cfbundledisplayname.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Complication Principal Class
 
 **Setting name:** `INFOPLIST_KEY_CLKComplicationPrincipalClass`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CLKComplicationPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/clkcomplicationprincipalclass) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CLKComplicationPrincipalClass](../BundleResources/information-property-list/clkcomplicationprincipalclass.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Game Controller User Interaction
 
@@ -2384,41 +2385,41 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the GCSupportsContr
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the GCSupportsGameMode key in the `Info.plist` file to the value of this build setting.
 
-##### App Uses Non Exempt Encryption
+##### App Uses Non-Exempt Encryption
 
 **Setting name:** `INFOPLIST_KEY_ITSAppUsesNonExemptEncryption`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSAppUsesNonExemptEncryption`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/itsappusesnonexemptencryption) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [ITSAppUsesNonExemptEncryption](../BundleResources/information-property-list/itsappusesnonexemptencryption.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### App Encryption Export Compliance Code
 
 **Setting name:** `INFOPLIST_KEY_ITSEncryptionExportComplianceCode`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`ITSEncryptionExportComplianceCode`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/itsencryptionexportcompliancecode) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [ITSEncryptionExportComplianceCode](../BundleResources/information-property-list/itsencryptionexportcompliancecode.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Application Category
 
 **Setting name:** `INFOPLIST_KEY_LSApplicationCategoryType`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSApplicationCategoryType`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsapplicationcategorytype) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [LSApplicationCategoryType](../BundleResources/information-property-list/lsapplicationcategorytype.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Application Is Background Only
+##### Application is Background Only
 
 **Setting name:** `INFOPLIST_KEY_LSBackgroundOnly`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSBackgroundOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsbackgroundonly) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [LSBackgroundOnly](../BundleResources/information-property-list/lsbackgroundonly.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Opening Documents in Place
 
 **Setting name:** `INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSSupportsOpeningDocumentsInPlace`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lssupportsopeningdocumentsinplace) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [LSSupportsOpeningDocumentsInPlace](../BundleResources/information-property-list/lssupportsopeningdocumentsinplace.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Application Is Agent Uielement
+##### Application is Agent (UIElement)
 
 **Setting name:** `INFOPLIST_KEY_LSUIElement`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSUIElement`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [LSUIElement](../BundleResources/information-property-list/lsuielement.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Metal Capture Enabled
 
@@ -2426,335 +2427,335 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`LSUIElement`]
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the MetalCaptureEnabled key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Nfc Scan Usage Description
+##### Privacy - NFC Scan Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NFCReaderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NFCReaderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nfcreaderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NFCReaderUsageDescription](../BundleResources/information-property-list/nfcreaderusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Accessory Tracking Usage Description
+##### Privacy - Accessory Tracking Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAccessoryTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAccessoryTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsaccessorytrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSAccessoryTrackingUsageDescription](../BundleResources/information-property-list/nsaccessorytrackingusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Other Application Data Usage Description
+##### Privacy - Other Application Data Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppDataUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsappdatausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSAppDataUsageDescription](../BundleResources/information-property-list/nsappdatausagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Appleevents Sending Usage Description
+##### Privacy - AppleEvents Sending Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppleEventsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleEventsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsappleeventsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSAppleEventsUsageDescription](../BundleResources/information-property-list/nsappleeventsusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Media Library Usage Description
+##### Privacy - Media Library Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSAppleMusicUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSAppleMusicUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsapplemusicusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSAppleMusicUsageDescription](../BundleResources/information-property-list/nsapplemusicusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Bluetooth Always Usage Description
+##### Privacy - Bluetooth Always Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSBluetoothAlwaysUsageDescription](../BundleResources/information-property-list/nsbluetoothalwaysusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Bluetooth Peripheral Usage Description
+##### Privacy - Bluetooth Peripheral Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSBluetoothPeripheralUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsbluetoothperipheralusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSBluetoothPeripheralUsageDescription](../BundleResources/information-property-list/nsbluetoothperipheralusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Bluetooth While in Use Usage Description
+##### Privacy - Bluetooth While In Use Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSBluetoothWhileInUseUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSBluetoothWhileInUseUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Calendars Full Access Usage Description
+##### Privacy - Calendars Full Access Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSCalendarsFullAccessUsageDescription](../BundleResources/information-property-list/nscalendarsfullaccessusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Calendars Usage Description
+##### Privacy - Calendars Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSCalendarsUsageDescription](../BundleResources/information-property-list/nscalendarsusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Calendars Write Only Usage Description
+##### Privacy - Calendars Write Only Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCalendarsWriteOnlyAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCalendarsWriteOnlyAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscalendarswriteonlyaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSCalendarsWriteOnlyAccessUsageDescription](../BundleResources/information-property-list/nscalendarswriteonlyaccessusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Camera Usage Description
+##### Privacy - Camera Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCameraUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSCameraUsageDescription](../BundleResources/information-property-list/nscamerausagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Contacts Usage Description
+##### Privacy - Contacts Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSContactsUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSContactsUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscontactsusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSContactsUsageDescription](../BundleResources/information-property-list/nscontactsusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Critical Messaging Usage Description
+##### Privacy - Critical Messaging Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSCriticalMessagingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSCriticalMessagingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nscriticalmessagingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSCriticalMessagingUsageDescription](../BundleResources/information-property-list/nscriticalmessagingusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Desktop Folder Usage Description
+##### Privacy - Desktop Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDesktopFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDesktopFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdesktopfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSDesktopFolderUsageDescription](../BundleResources/information-property-list/nsdesktopfolderusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Documents Folder Usage Description
+##### Privacy - Documents Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDocumentsFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDocumentsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdocumentsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSDocumentsFolderUsageDescription](../BundleResources/information-property-list/nsdocumentsfolderusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Downloads Folder Usage Description
+##### Privacy - Downloads Folder Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSDownloadsFolderUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSDownloadsFolderUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsdownloadsfolderusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSDownloadsFolderUsageDescription](../BundleResources/information-property-list/nsdownloadsfolderusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Face Id Usage Description
+##### Privacy - Face ID Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFaceIDUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfaceidusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSFaceIDUsageDescription](../BundleResources/information-property-list/nsfaceidusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Fall Detection Usage Description
+##### Privacy - Fall Detection Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFallDetectionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFallDetectionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfalldetectionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSFallDetectionUsageDescription](../BundleResources/information-property-list/nsfalldetectionusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Access to a File Provide Domain Usage Description
+##### Privacy - Access to a File Provide Domain Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFileProviderDomainUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFileProviderDomainUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfileproviderdomainusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSFileProviderDomainUsageDescription](../BundleResources/information-property-list/nsfileproviderdomainusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy File Provider Presence Usage Description
+##### Privacy - File Provider Presence Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFileProviderPresenceUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSFileProviderPresenceUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Financial Data Usage Description
+##### Privacy - Financial Data Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFinancialDataUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSFinancialDataUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsfinancialdatausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSFinancialDataUsageDescription](../BundleResources/information-property-list/nsfinancialdatausagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Focus Status Usage Description
+##### Privacy - Focus Status Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSFocusStatusUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSFocusStatusUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Gamekit Friend List Usage Description
+##### Privacy - GameKit Friend List Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSGKFriendListUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSGKFriendListUsageDescription](../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Hands Tracking Usage Description
+##### Privacy - Hands Tracking Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHandsTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHandsTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshandstrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHandsTrackingUsageDescription](../BundleResources/information-property-list/nshandstrackingusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Health Records Usage Description
+##### Privacy - Health Records Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthClinicalHealthRecordsShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHealthClinicalHealthRecordsShareUsageDescription](../BundleResources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Health Share Usage Description
+##### Privacy - Health Share Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthShareUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthShareUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHealthShareUsageDescription](../BundleResources/information-property-list/nshealthshareusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Health Update Usage Description
+##### Privacy - Health Update Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHealthUpdateUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHealthUpdateUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHealthUpdateUsageDescription](../BundleResources/information-property-list/nshealthupdateusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Homekit Usage Description
+##### Privacy - HomeKit Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSHomeKitUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHomeKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshomekitusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHomeKitUsageDescription](../BundleResources/information-property-list/nshomekitusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Copyright Human Readable
+##### Copyright (Human-Readable)
 
 **Setting name:** `INFOPLIST_KEY_NSHumanReadableCopyright`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSHumanReadableCopyright`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nshumanreadablecopyright) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSHumanReadableCopyright](../BundleResources/information-property-list/nshumanreadablecopyright.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Identity Usage Description
+##### Privacy - Identity Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSIdentityUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSIdentityUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsidentityusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSIdentityUsageDescription](../BundleResources/information-property-list/nsidentityusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Local Network Usage Description
+##### Privacy - Local Network Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocalNetworkUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocalNetworkUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocalnetworkusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocalNetworkUsageDescription](../BundleResources/information-property-list/nslocalnetworkusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Location Always and When in Use Usage Description
+##### Privacy - Location Always and When In Use Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Location Always Usage Description
+##### Privacy - Location Always Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationAlwaysUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationAlwaysUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocationAlwaysUsageDescription](../BundleResources/information-property-list/nslocationalwaysusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Location Temporary Usage Description Dictionary
+##### Privacy - Location Temporary Usage Description Dictionary
 
 **Setting name:** `INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationtemporaryusagedescriptiondictionary) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocationTemporaryUsageDescriptionDictionary](../BundleResources/information-property-list/nslocationtemporaryusagedescriptiondictionary.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Location Usage Description
+##### Privacy - Location Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocationUsageDescription](../BundleResources/information-property-list/nslocationusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Location When in Use Usage Description
+##### Privacy - Location When In Use Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSLocationWhenInUseUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSLocationWhenInUseUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSLocationWhenInUseUsageDescription](../BundleResources/information-property-list/nslocationwheninuseusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Main Camera Usage Description
+##### Privacy - Main Camera Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMainCameraUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainCameraUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmaincamerausagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSMainCameraUsageDescription](../BundleResources/information-property-list/nsmaincamerausagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Main Nib File Base Name
 
 **Setting name:** `INFOPLIST_KEY_NSMainNibFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainNibFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmainnibfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSMainNibFile](../BundleResources/information-property-list/nsmainnibfile.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Appkit Main Storyboard File Base Name
+##### AppKit Main Storyboard File Base Name
 
 **Setting name:** `INFOPLIST_KEY_NSMainStoryboardFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSMainStoryboardFile](../BundleResources/information-property-list/nsmainstoryboardfile.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Microphone Usage Description
+##### Privacy - Microphone Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMicrophoneUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSMicrophoneUsageDescription](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Motion Usage Description
+##### Privacy - Motion Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSMotionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSMotionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSMotionUsageDescription](../BundleResources/information-property-list/nsmotionusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Nearby Interaction Allow Once Usage Description
+##### Privacy - Nearby Interaction Allow Once Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNearbyInteractionAllowOnceUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionAllowOnceUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionallowonceusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSNearbyInteractionAllowOnceUsageDescription](../BundleResources/information-property-list/nsnearbyinteractionallowonceusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Nearby Interaction Usage Description
+##### Privacy - Nearby Interaction Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNearbyInteractionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNearbyInteractionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnearbyinteractionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSNearbyInteractionUsageDescription](../BundleResources/information-property-list/nsnearbyinteractionusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Network Volumes Usage Description
+##### Privacy - Network Volumes Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSNetworkVolumesUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSNetworkVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsnetworkvolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSNetworkVolumesUsageDescription](../BundleResources/information-property-list/nsnetworkvolumesusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Photo Library Additions Usage Description
+##### Privacy - Photo Library Additions Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSPhotoLibraryAddUsageDescription](../BundleResources/information-property-list/nsphotolibraryaddusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Photo Library Usage Description
+##### Privacy - Photo Library Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSPhotoLibraryUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPhotoLibraryUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSPhotoLibraryUsageDescription](../BundleResources/information-property-list/nsphotolibraryusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Principal Class
 
 **Setting name:** `INFOPLIST_KEY_NSPrincipalClass`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSPrincipalClass`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSPrincipalClass](../BundleResources/information-property-list/nsprincipalclass.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Reminders Full Access Usage Description
+##### Privacy - Reminders Full Access Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemindersFullAccessUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersFullAccessUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremindersfullaccessusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSRemindersFullAccessUsageDescription](../BundleResources/information-property-list/nsremindersfullaccessusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Reminders Usage Description
+##### Privacy - Reminders Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemindersUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemindersUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremindersusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSRemindersUsageDescription](../BundleResources/information-property-list/nsremindersusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Removable Volumes Usage Description
+##### Privacy - Removable Volumes Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSRemovableVolumesUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSRemovableVolumesUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsremovablevolumesusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSRemovableVolumesUsageDescription](../BundleResources/information-property-list/nsremovablevolumesusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Sensorkit Privacy Policy Url
+##### Privacy - SensorKit Privacy Policy URL
 
 **Setting name:** `INFOPLIST_KEY_NSSensorKitPrivacyPolicyURL`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitPrivacyPolicyURL`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitprivacypolicyurl) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSensorKitPrivacyPolicyURL](../BundleResources/information-property-list/nssensorkitprivacypolicyurl.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Sensorkit Usage Description
+##### Privacy - SensorKit Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSensorKitUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSensorKitUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssensorkitusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSensorKitUsageDescription](../BundleResources/information-property-list/nssensorkitusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Siri Usage Description
+##### Privacy - Siri Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSiriUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSiriUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssiriusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSiriUsageDescription](../BundleResources/information-property-list/nssiriusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Speech Recognition Usage Description
+##### Privacy - Speech Recognition Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSpeechRecognitionUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSpeechRecognitionUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSpeechRecognitionUsageDescription](../BundleResources/information-property-list/nsspeechrecognitionusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Sticker Sharing Level
 
@@ -2766,163 +2767,163 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSStickerSharin
 
 **Setting name:** `INFOPLIST_KEY_NSSupportsLiveActivities`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivities) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSupportsLiveActivities](../BundleResources/information-property-list/nssupportsliveactivities.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Frequent Updates of Live Activities
 
 **Setting name:** `INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSupportsLiveActivitiesFrequentUpdates`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssupportsliveactivitiesfrequentupdates) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSupportsLiveActivitiesFrequentUpdates](../BundleResources/information-property-list/nssupportsliveactivitiesfrequentupdates.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy System Administration Usage Description
+##### Privacy - System Administration Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSystemAdministrationUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSSystemAdministrationUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nssystemadministrationusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSSystemAdministrationUsageDescription](../BundleResources/information-property-list/nssystemadministrationusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy System Extension Usage Description
+##### Privacy - System Extension Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSSystemExtensionUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSSystemExtensionUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Tracking Usage Description
+##### Privacy - Tracking Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSUserTrackingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSUserTrackingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsusertrackingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSUserTrackingUsageDescription](../BundleResources/information-property-list/nsusertrackingusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Tv Provider Usage Description
+##### Privacy - TV Provider Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSVideoSubscriberAccountUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSVideoSubscriberAccountUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsvideosubscriberaccountusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSVideoSubscriberAccountUsageDescription](../BundleResources/information-property-list/nsvideosubscriberaccountusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### View Gesture Recognizer Is Exclusive
 
 **Setting name:** `INFOPLIST_KEY_NSViewGestureRecognizerIsExclusive`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsviewgesturerecognizerisexclusive) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSViewGestureRecognizerIsExclusive](../BundleResources/information-property-list/nsviewgesturerecognizerisexclusive.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Voip Usage Description
+##### Privacy - VoIP Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSVoIPUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the NSVoIPUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy World Sensing Usage Description
+##### Privacy - World Sensing Usage Description
 
 **Setting name:** `INFOPLIST_KEY_NSWorldSensingUsageDescription`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`NSWorldSensingUsageDescription`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [NSWorldSensingUsageDescription](../BundleResources/information-property-list/nsworldsensingusagedescription.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Privacy Driver Extension Usage Description
+##### Privacy - Driver Extension Usage Description
 
 **Setting name:** `INFOPLIST_KEY_OSBundleUsageDescription`
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the OSBundleUsageDescription key in the `Info.plist` file to the value of this build setting.
 
-##### Application Scene Manifest Generation
+##### Application Scene Manifest (Generation)
 
 **Setting name:** `INFOPLIST_KEY_UIApplicationSceneManifest_Generation`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSceneManifest`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest) key in the Info.plist file to an entry suitable for a multi-window application.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIApplicationSceneManifest](../BundleResources/information-property-list/uiapplicationscenemanifest.md) key in the Info.plist file to an entry suitable for a multi-window application.
 
 ##### Supports Indirect Events
 
 **Setting name:** `INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIApplicationSupportsIndirectInputEvents`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationsupportsindirectinputevents) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIApplicationSupportsIndirectInputEvents](../BundleResources/information-property-list/uiapplicationsupportsindirectinputevents.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Launch Screen Generation
+##### Launch Screen (Generation)
 
 **Setting name:** `INFOPLIST_KEY_UILaunchScreen_Generation`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchscreen) key in the Info.plist file to an empty dictionary.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UILaunchScreen](../BundleResources/information-property-list/uilaunchscreen.md) key in the Info.plist file to an empty dictionary.
 
 ##### Launch Screen Interface File Base Name
 
 **Setting name:** `INFOPLIST_KEY_UILaunchStoryboardName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UILaunchStoryboardName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uilaunchstoryboardname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UILaunchStoryboardName](../BundleResources/information-property-list/uilaunchstoryboardname.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Uikit Main Storyboard File Base Name
+##### UIKit Main Storyboard File Base Name
 
 **Setting name:** `INFOPLIST_KEY_UIMainStoryboardFile`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIMainStoryboardFile`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uimainstoryboardfile) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIMainStoryboardFile](../BundleResources/information-property-list/uimainstoryboardfile.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Required Device Capabilities
 
 **Setting name:** `INFOPLIST_KEY_UIRequiredDeviceCapabilities`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiredDeviceCapabilities`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIRequiredDeviceCapabilities](../BundleResources/information-property-list/uirequireddevicecapabilities.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Requires Full Screen
 
 **Setting name:** `INFOPLIST_KEY_UIRequiresFullScreen`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIRequiresFullScreen`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uirequiresfullscreen) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIRequiresFullScreen](../BundleResources/information-property-list/uirequiresfullscreen.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Status Bar Initially Hidden
 
 **Setting name:** `INFOPLIST_KEY_UIStatusBarHidden`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarHidden`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uistatusbarhidden) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIStatusBarHidden](../BundleResources/information-property-list/uistatusbarhidden.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Status Bar Style
 
 **Setting name:** `INFOPLIST_KEY_UIStatusBarStyle`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIStatusBarStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uistatusbarstyle) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIStatusBarStyle](../BundleResources/information-property-list/uistatusbarstyle.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supported Interface Orientations
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UISupportedInterfaceOrientations](../BundleResources/information-property-list/uisupportedinterfaceorientations.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Supported Interface Orientations Ipad
+##### Supported Interface Orientations (iPad)
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UISupportedInterfaceOrientations~iPad](../BundleResources/information-property-list/uisupportedinterfaceorientations.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Supported Interface Orientations Iphone
+##### Supported Interface Orientations (iPhone)
 
 **Setting name:** `INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportedInterfaceOrientations`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportedinterfaceorientations) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UISupportedInterfaceOrientations~iPhone](../BundleResources/information-property-list/uisupportedinterfaceorientations.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Document Browser
 
 **Setting name:** `INFOPLIST_KEY_UISupportsDocumentBrowser`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UISupportsDocumentBrowser`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uisupportsdocumentbrowser) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UISupportsDocumentBrowser](../BundleResources/information-property-list/uisupportsdocumentbrowser.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### User Interface Style
 
 **Setting name:** `INFOPLIST_KEY_UIUserInterfaceStyle`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`UIUserInterfaceStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/uiuserinterfacestyle) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [UIUserInterfaceStyle](../BundleResources/information-property-list/uiuserinterfacestyle.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Watchkit Companion App Bundle Identifier
+##### WatchKit Companion App Bundle Identifier
 
 **Setting name:** `INFOPLIST_KEY_WKCompanionAppBundleIdentifier`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKCompanionAppBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkcompanionappbundleidentifier) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [WKCompanionAppBundleIdentifier](../BundleResources/information-property-list/wkcompanionappbundleidentifier.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Watchkit Extension Delegate Class Name
+##### WatchKit Extension Delegate Class Name
 
 **Setting name:** `INFOPLIST_KEY_WKExtensionDelegateClassName`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKExtensionDelegateClassName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkextensiondelegateclassname) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [WKExtensionDelegateClassName](../BundleResources/information-property-list/wkextensiondelegateclassname.md) key in the `Info.plist` file to the value of this build setting.
 
-##### App Can Run Independently of Companion Iphone App
+##### App Can Run Independently of Companion iPhone App
 
 **Setting name:** `INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKRunsIndependentlyOfCompanionApp`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkrunsindependentlyofcompanionapp) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [WKRunsIndependentlyOfCompanionApp](../BundleResources/information-property-list/wkrunsindependentlyofcompanionapp.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Supports Launch for Live Activity Attribute Types
 
@@ -2930,49 +2931,49 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKRunsIndepen
 
 When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the WKSupportsLiveActivityLaunchAttributeTypes key in the `Info.plist` file to the value of this build setting.
 
-##### App Is Available Only on Apple Watch
+##### App is Available Only on Apple Watch
 
 **Setting name:** `INFOPLIST_KEY_WKWatchOnly`
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`WKWatchOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/wkwatchonly) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [WKWatchOnly](../BundleResources/information-property-list/wkwatchonly.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Infoplist Other Preprocessor Flags
+##### Info.plist Other Preprocessor Flags
 
 **Setting name:** `INFOPLIST_OTHER_PREPROCESSOR_FLAGS`
 
 Other flags to pass to the C preprocessor when preprocessing the `Info.plist` file.
 
-##### Infoplist Output Encoding
+##### Info.plist Output Encoding
 
 **Setting name:** `INFOPLIST_OUTPUT_FORMAT`
 
 Specifies the output encoding for the output `Info.plist`. The output encodings can be `binary` or `XML`. By default, the output encoding will be unchanged from the input.
 
-##### Infoplistpath
+##### INFOPLIST_PATH
 
 **Setting name:** `INFOPLIST_PATH`
 
 Specifies the path to the bundle’s information property list file.
 
-##### Infoplist Preprocessor Prefix File
+##### Info.plist Preprocessor Prefix File
 
 **Setting name:** `INFOPLIST_PREFIX_HEADER`
 
 Implicitly include the given file when preprocessing the `Info.plist` file. The path given should either be a project relative path or an absolute path.
 
-##### Preprocess Infoplist File
+##### Preprocess Info.plist File
 
 **Setting name:** `INFOPLIST_PREPROCESS`
 
 Preprocess the `Info.plist` file using the C Preprocessor.
 
-##### Infoplist Preprocessor Definitions
+##### Info.plist Preprocessor Definitions
 
 **Setting name:** `INFOPLIST_PREPROCESSOR_DEFINITIONS`
 
 Space-separated list of preprocessor macros of the form `foo` or `foo=bar`. These macros are used when preprocessing the `Info.plist` file.
 
-##### Infostringspath
+##### INFOSTRINGS_PATH
 
 **Setting name:** `INFOSTRINGS_PATH`
 
@@ -2984,25 +2985,25 @@ Specifies the file that contains the bundle’s localized strings file.
 
 This is the name of the routine to use for initialization.
 
-##### Enable Text Based Stubs Inlining
+##### Enable Text-Based Stubs Inlining
 
 **Setting name:** `INLINE_PRIVATE_FRAMEWORKS`
 
 Enables private framework inlining for Text-Based Stubs.
 
-##### Perform Copy Files Phases During Installhdrs
+##### Perform Copy Files Phases During `installhdrs`
 
 **Setting name:** `INSTALLHDRS_COPY_PHASE`
 
 Specifies whether the target’s Copy Files build phases are executed in `installhdr` builds.
 
-##### Perform Shell Script Phases During Installhdrs
+##### Perform Shell Script Phases During `installhdrs`
 
 **Setting name:** `INSTALLHDRS_SCRIPT_PHASE`
 
 Specifies whether the target’s Run Script build phases are executed in `installhdr` builds. See `ACTION` for details on `installhdr` builds.
 
-##### Installdir
+##### INSTALL_DIR
 
 **Setting name:** `INSTALL_DIR`
 
@@ -3090,7 +3091,7 @@ This setting restricts the clients allowed to link a dylib by passing `-allowabl
 
 **Setting name:** `LD_DYLIB_INSTALL_NAME`
 
-Sets an internal `install path` (`LC_ID_DYLIB`) in a dynamic library. Any clients linked against the library will record that path as the way `dyld` should locate this library. If this option is not specified, then the `-o` path will be used. This setting is ignored when building any product other than a dynamic library. See [`Dynamic Library Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html).
+Sets an internal `install path` (`LC_ID_DYLIB`) in a dynamic library. Any clients linked against the library will record that path as the way `dyld` should locate this library. If this option is not specified, then the `-o` path will be used. This setting is ignored when building any product other than a dynamic library. See [Dynamic Library Programming Topics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html).
 
 ##### Dynamic Linker Environment
 
@@ -3116,7 +3117,7 @@ Activating this setting will cause the linker to write a map file to disk, which
 
 This setting defines the path to the map file written by the linker when the `LD_GENERATE_MAP_FILE` setting is activated. By default, a separate file will be written for each architecture and build variant, and these will be generated in the Intermediates directory for the target whose product is being linked.
 
-##### Generate Position Dependent Executable
+##### Generate Position-Dependent Executable
 
 **Setting name:** `LD_NO_PIE`
 
@@ -3134,7 +3135,7 @@ This setting controls whether arguments to the linker should be quoted using `-X
 
 **Setting name:** `LD_RUNPATH_SEARCH_PATHS`
 
-This is a list of paths to be added to the `runpath` search path list for the image being created. At runtime, `dyld` uses the `runpath` when searching for dylibs whose load path begins with `@rpath/`. See [`Dynamic Library Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html).
+This is a list of paths to be added to the `runpath` search path list for the image being created. At runtime, `dyld` uses the `runpath` when searching for dylibs whose load path begins with `@rpath/`. See [Dynamic Library Programming Topics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/DynamicLibraries/000-Introduction/Introduction.html).
 
 ##### Duplicate Libraries
 
@@ -3154,13 +3155,13 @@ Warn for any dylib linked to but not used.
 
 Space-separated list of additional flags to pass to `lex`. Be sure to backslash-escape any arguments that contain spaces or special characters, such as path names that may contain spaces. Use this setting if Xcode does not already provide UI for a `lex` flag.
 
-##### Generate Case Insensitive Scanner
+##### Generate Case-Insensitive Scanner
 
 **Setting name:** `LEX_CASE_INSENSITIVE_SCANNER`
 
 Enabling this option causes `lex` to generate a case-insensitive scanner. The case of letters given in the `lex` input patterns will be ignored, and tokens in the input will be matched regardless of case. The matched text given in `yytext` will have the preserved case (for example, it will not be folded).
 
-##### Insert Line Directives
+##### Insert #line Directives
 
 **Setting name:** `LEX_INSERT_LINE_DIRECTIVES`
 
@@ -3196,13 +3197,13 @@ This is a list of paths to folders to be searched by the linker for libraries us
 
 Activating this setting causes the linker to display mangled names for C++ symbols. Normally, this is not recommended, but turning it on can help to diagnose and solve C++ link errors.
 
-##### Link with Standard Libraries
+##### Link With Standard Libraries
 
 **Setting name:** `LINK_WITH_STANDARD_LIBRARIES`
 
 When this setting is enabled, the compiler driver will automatically pass its standard libraries to the linker to use during linking. If desired, this flag can be used to disable linking with the standard libraries, and then individual libraries can be passed as `OTHER_LDFLAGS`.
 
-##### Link Time Optimization
+##### Link-Time Optimization
 
 **Setting name:** `LLVM_LTO`
 
@@ -3236,17 +3237,17 @@ When enabled, localizable strings wrapped in NSLocalizedString and similar strin
 
 The base names for NSLocalizedString-like macros or functions used to produce localized strings in source code. The default base names of NSLocalizedString and CFCopyLocalizedString are always considered, even if this setting is empty.
 
-##### Localized String Swiftui Support
+##### Localized String SwiftUI Support
 
 **Setting name:** `LOCALIZED_STRING_SWIFTUI_SUPPORT`
 
 When enabled, literal strings in SwiftUI will be extracted during localization export. This will only extract string literals in `Text()` initializers, unless `SWIFT_EMIT_LOC_STRINGS` is also enabled.
 
-##### Mach O Type
+##### Mach-O Type
 
 **Setting name:** `MACH_O_TYPE`
 
-This setting determines the format of the produced binary and how it can be linked when building other binaries. For information on binary types, see [`Building Mach-O Files`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/MachOTopics/1-Articles/building_files.html#//apple_ref/doc/uid/TP40001828-SW1) in [`Mach-O Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/MachOTopics/0-Introduction/introduction.html).
+This setting determines the format of the produced binary and how it can be linked when building other binaries. For information on binary types, see [Building Mach-O Files](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/MachOTopics/1-Articles/building_files.html#//apple_ref/doc/uid/TP40001828-SW1) in [Mach-O Programming Topics](https://developer.apple.com/library/content/documentation/DeveloperTools/Conceptual/MachOTopics/0-Introduction/introduction.html).
 
 - *Executable:* Executables and standalone binaries and cannot be linked. [mh_execute]
 - *Dynamic Library:* Dynamic libraries are linked at build time and loaded automatically when needed. [mh_dylib]
@@ -3254,7 +3255,7 @@ This setting determines the format of the produced binary and how it can be link
 - *Static Library:* Static libraries are linked at build time and loaded at execution time. [staticlib]
 - *Relocatable Object File:* Object files are single-module files that are linked at build time. [mh_object]
 
-##### Suppress All Mapc Warnings
+##### Suppress all mapc warnings
 
 **Setting name:** `MAPC_NO_WARNINGS`
 
@@ -3266,9 +3267,9 @@ Compile `.xcmappingmodel` files into `.cdm` without reporting warnings.
 
 This setting defines the user-visible version of the project.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleShortVersionString`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleShortVersionString](../BundleResources/information-property-list/cfbundleshortversionstring.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Alternative Distribution Marketplaces
+##### Alternative Distribution - Marketplaces
 
 **Setting name:** `MARKETPLACES`
 
@@ -3280,7 +3281,7 @@ Enable overriding your app’s distributor identifier with a list of additional 
 
 For dynamic libraries and frameworks, links this target’s binary as a mergeable library which can be merged into the product of a target which depends on it if that target is configured to do so. This target will be linked as a mergeable library in release builds so it can be merged, but will instead be linked as a normal dynamic library to be reexported in debug builds. For other binary types, this setting has no effect.
 
-For more information on mergeable libraries, see [`Configuring your project to use mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).
+For more information on mergeable libraries, see [Configuring your project to use mergeable libraries](./configuring-your-project-to-use-mergeable-libraries.md).
 
 ##### Create Merged Binary
 
@@ -3291,7 +3292,7 @@ Use this setting to link the target’s binary by combining it with mergeable li
 - When set to Automatic, this target’s immediate dependencies which build dynamic libraries or frameworks and are in its Link Binaries With Libraries will automatically be built as mergeable libraries and merged into this target’s binary during release builds, or reexported during debug builds.
 - When set to Manual, only immediate dependencies which have Build Mergeable Library explicitly enabled will be merged or reexported.
 
-For more information on mergeable libraries, see [`Configuring your project to use mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).
+For more information on mergeable libraries, see [Configuring your project to use mergeable libraries](./configuring-your-project-to-use-mergeable-libraries.md).
 
 ##### Module Map File
 
@@ -3305,13 +3306,13 @@ This is the project-relative path to the LLVM module map file that defines the m
 
 This is the project-relative path to the LLVM module map file that defines the module structure for private headers.
 
-##### Modulesfolderpath
+##### MODULES_FOLDER_PATH
 
 **Setting name:** `MODULES_FOLDER_PATH`
 
 Specifies the directory that contains the product’s Clang module maps and Swift module content.
 
-##### Modulecachedir
+##### MODULE_CACHE_DIR
 
 **Setting name:** `MODULE_CACHE_DIR`
 
@@ -3353,31 +3354,31 @@ Language dialects to verify the module, i.e. the language dialects supported for
 
 This is the version of the kernel module listed in the generated stub. This is only used when building kernel extensions.
 
-##### Suppress Momc Warnings for Delete Rules
+##### Suppress momc warnings for delete rules
 
 **Setting name:** `MOMC_NO_DELETE_RULE_WARNINGS`
 
 Suppress managed object model compiler (`momc`) warnings for delete rules during the compilation of `.xcdatamodel(d)` files.
 
-##### Suppress Momc Warnings on Missing Inverse Relationships
+##### Suppress momc warnings on missing inverse relationships
 
 **Setting name:** `MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS`
 
 Suppress managed object model compiler (`momc`) warnings from output on missing inverse relationships during the compilation of `.xcdatamodel(d)` files
 
-##### Suppress Momc Warnings for Entities with More Than 100 Properties
+##### Suppress momc warnings for entities with more than 100 properties
 
 **Setting name:** `MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS`
 
 Suppress managed object model compiler (`momc`) warnings from output on entities with more than 100 properties during the compilation of `.xcdatamodel(d)` files.
 
-##### Suppress All Momc Warnings
+##### Suppress all momc warnings
 
 **Setting name:** `MOMC_NO_WARNINGS`
 
 Suppress managed object model compiler (`momc`) warnings from output during the compilation of `.xcdatamodel(d)` files
 
-##### Suppress Momc Error on Transient Inverse Relationships
+##### Suppress momc error on transient inverse relationships
 
 **Setting name:** `MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR`
 
@@ -3401,13 +3402,13 @@ Space-separated list of compiler flags
 
 Debugging information is required for shader debugging and profiling.
 
-##### Enable Index While Building Functionality Metal
+##### Enable Index-While-Building Functionality (Metal)
 
 **Setting name:** `MTL_ENABLE_INDEX_STORE`
 
 Control whether the compiler should emit index data while building.
 
-##### Enable Modules Metal
+##### Enable Modules (Metal)
 
 **Setting name:** `MTL_ENABLE_MODULES`
 
@@ -3441,7 +3442,7 @@ Enabling this option causes all warnings to be ignored.  [MTL_IGNORE_WARNINGS, -
 
 Determine the language revision to use. A value for this option must be provided.
 
-##### Single Precision Floating Point Functions
+##### Single-Precision Floating Point Functions
 
 **Setting name:** `MTL_MATH_FP32_FUNCTIONS`
 
@@ -3468,19 +3469,19 @@ Optimization level for the Metal compiler.
 
 Space-separated list of preprocessor macros of the form “foo” or “foo=bar”.
 
-##### Treat Warnings As Errors
+##### Treat Warnings as Errors
 
 **Setting name:** `MTL_TREAT_WARNINGS_AS_ERRORS`
 
 Enabling this option causes all warnings to be treated as errors.  [MTL_TREAT_WARNINGS_AS_ERRORS, -Werror]
 
-##### Nativearch
+##### NATIVE_ARCH
 
 **Setting name:** `NATIVE_ARCH`
 
 Identifies the architecture on which the build is being performed.
 
-##### Objectfiledir
+##### OBJECT_FILE_DIR
 
 **Setting name:** `OBJECT_FILE_DIR`
 
@@ -3510,25 +3511,25 @@ Defined a set of initial On Demand Resources tags to be downloaded and installed
 
 Once your app is installed, this defined a set of On Demand Resources tags that should be downloaded. These tags are downloaded after the initial installation of your application, and will be downloaded in the order the tags provided in the list from first to last.
 
-##### Opencl Architectures
+##### OpenCL Architectures
 
 **Setting name:** `OPENCL_ARCHS`
 
 A list of the architectures for which the product will be built. This is usually set to a predefined build setting provided by the platform.
 
-##### Auto Vectorizer
+##### Auto-vectorizer
 
 **Setting name:** `OPENCL_AUTO_VECTORIZE_ENABLE`
 
 Auto-vectorizes the `OpenCL` kernels for the CPU. This setting takes effect only for the CPU. This makes it possible to write a single kernel that is portable and performant across CPUs and GPUs.
 
-##### Opencl Compiler Version
+##### OpenCL Compiler Version
 
 **Setting name:** `OPENCL_COMPILER_VERSION`
 
 The `OpenCL` C compiler version supported by the platform.
 
-##### Flush Denorms to Zero
+##### Flush denorms to zero
 
 **Setting name:** `OPENCL_DENORMS_ARE_ZERO`
 
@@ -3540,13 +3541,13 @@ This option is ignored for double precision numbers if the device does not suppo
 
 This flag only applies for scalar and vector single precision floating-point variables and computations on these floating-point variables inside a program. It does not apply to reading from or writing to image objects.
 
-##### Double As Single
+##### Double as single
 
 **Setting name:** `OPENCL_DOUBLE_AS_SINGLE`
 
 Treat double precision floating-point expression as a single precision floating-point expression. This option is available for GPUs only.
 
-##### Relax Ieee Compliance
+##### Relax IEEE Compliance
 
 **Setting name:** `OPENCL_FAST_RELAXED_MATH`
 
@@ -3556,7 +3557,7 @@ This is intended to be a performance optimization.
 
 This option causes the preprocessor macro `__FAST_RELAXED_MATH__` to be defined in the `OpenCL` program.
 
-##### Use Mad
+##### Use MAD
 
 **Setting name:** `OPENCL_MAD_ENABLE`
 
@@ -3574,13 +3575,13 @@ This is intended to be a performance optimization.
 - *Fastest:* Turns on all optimizations specified by the `Faster` setting and also turns on function inlining and register renaming options. This setting may result in a larger binary. [-O3]
 - *Fastest, smallest:* Optimize for size. This setting enables all `Faster` optimizations that do not typically increase code size. It also performs further optimizations designed to reduce code size. [-Os]
 
-##### Opencl Other Flags
+##### OpenCL Other Flags
 
 **Setting name:** `OPENCL_OTHER_BC_FLAGS`
 
 Space-separated list of additional flags to pass to the compiler. Be sure to backslash-escape any arguments that contain spaces or special characters, such as path names that may contain spaces. Use this setting if Xcode does not already provide UI for a particular compiler flag.
 
-##### Opencl Preprocessor Macros
+##### OpenCL Preprocessor Macros
 
 **Setting name:** `OPENCL_PREPROCESSOR_DEFINITIONS`
 
@@ -3596,7 +3597,7 @@ For each section in the output file, any symbol in that section that are specifi
 
 Generally you should not specify an order file in Debug or Development configurations, as this will make the linked binary less readable to the debugger. Use them only in Release or Deployment configurations.
 
-##### Save As Execute Only
+##### Save as Execute-Only
 
 **Setting name:** `OSACOMPILE_EXECUTE_ONLY`
 
@@ -3620,19 +3621,19 @@ A list of additional options to pass to `codesign(1)`.
 
 Space-separated list of additional flags to pass to the compiler for C++ and Objective-C++ files. Be sure to backslash-escape any arguments that contain spaces or special characters, such as path names that may contain spaces. Use this setting if Xcode does not already provide UI for a C++ or Objective-C++ compiler flag.
 
-##### Other Docc Flags
+##### Other DocC Flags
 
 **Setting name:** `OTHER_DOCC_FLAGS`
 
 A list of additional flags to pass to DocC
 
-##### Other Iig C Flags
+##### Other IIG C Flags
 
 **Setting name:** `OTHER_IIG_CFLAGS`
 
 Space-separated list of additional flags to pass to the `iig` invocation of clang. Be sure to backslash-escape any arguments that contain spaces or special characters, such as path names that may contain spaces. Use this setting if Xcode does not already provide UI for a particular `iig` flag
 
-##### Other Iig Flags
+##### Other IIG Flags
 
 **Setting name:** `OTHER_IIG_FLAGS`
 
@@ -3650,7 +3651,7 @@ Options defined in this setting are passed to invocations of the linker.
 
 Options defined in this setting are passed to all invocations of the archive librarian, which is used to generate static libraries.
 
-##### Other Mig Flags
+##### Other MiG Flags
 
 **Setting name:** `OTHER_MIGFLAGS`
 
@@ -3662,7 +3663,7 @@ Space-separated list of additional flags to pass to `mig`. Be sure to backslash-
 
 Additional flags to pass to the modules-verifier tool.
 
-##### Other Osacompile Flags
+##### Other OSACompile Flags
 
 **Setting name:** `OTHER_OSACOMPILEFLAGS`
 
@@ -3680,13 +3681,13 @@ Space-separated list of additional flags to pass to the `Rez` compiler. Be sure 
 
 A list of additional flags to pass to the Swift compiler.
 
-##### Other Text Based Installapi Flags
+##### Other Text-Based InstallAPI Flags
 
 **Setting name:** `OTHER_TAPI_FLAGS`
 
 Options defined in this setting are passed to invocations of the `Text-Based InstallAPI` tool.
 
-##### Packagetype
+##### PACKAGE_TYPE
 
 **Setting name:** `PACKAGE_TYPE`
 
@@ -3698,7 +3699,7 @@ Uniform type identifier. Identifies the type of the product the target builds. S
 
 Specifies the output encoding for property list files (`.plist`). The output encodings can be `binary` or `XML`. By default, the output encoding will be unchanged from the input.
 
-##### Pluginsfolderpath
+##### PLUGINS_FOLDER_PATH
 
 **Setting name:** `PLUGINS_FOLDER_PATH`
 
@@ -3712,13 +3713,13 @@ This setting allows for better control of sharing precompiled prefix header file
 
 If your prefix file never includes files from the build directory you may set this to `NO` to improve sharing of precompiled headers. If the prefix does use files from a build directory that is inside your project directory, you may set this to `YES` to avoid unintended sharing that may result in build failures.
 
-##### Single Object Prelink Flags
+##### Single-Object Prelink Flags
 
 **Setting name:** `PRELINK_FLAGS`
 
 Additional flags to pass when performing a single-object prelink.
 
-##### Prelink Libraries
+##### Prelink libraries
 
 **Setting name:** `PRELINK_LIBS`
 
@@ -3730,7 +3731,7 @@ Additional libraries to pass when performing a single-object prelink.
 
 The location to copy the private headers to during building, relative to the built products folder.
 
-##### Processedinfoplistpath
+##### PROCESSED_INFOPLIST_PATH
 
 **Setting name:** `PROCESSED_INFOPLIST_PATH`
 
@@ -3742,9 +3743,9 @@ Path of the per-architecture, per-variant intermediate Info.plist after C prepro
 
 A string that uniquely identifies the bundle. The string should be in reverse DNS format using only alphanumeric characters (`A-Z`, `a-z`, `0-9`), the dot (`.`), and the hyphen (`-`).
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleIdentifier](../BundleResources/information-property-list/cfbundleidentifier.md) key in the `Info.plist` file to the value of this build setting.
 
-##### Productdefinitionplist
+##### PRODUCT_DEFINITION_PLIST
 
 **Setting name:** `PRODUCT_DEFINITION_PLIST`
 
@@ -3762,7 +3763,7 @@ The name to use for the source code module constructed for this target, and whic
 
 This is the basename of the product generated by the target.
 
-When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleName`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/cfbundlename) key in the `Info.plist` file to the value of this build setting.
+When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [CFBundleName](../BundleResources/information-property-list/cfbundlename.md) key in the `Info.plist` file to the value of this build setting.
 
 ##### Project Name
 
@@ -3770,7 +3771,7 @@ When `GENERATE_INFOPLIST_FILE` is enabled, sets the value of the [`CFBundleName`
 
 The name of the current project.
 
-##### Projecttempdir
+##### PROJECT_TEMP_DIR
 
 **Setting name:** `PROJECT_TEMP_DIR`
 
@@ -3788,25 +3789,25 @@ Must contain a profile name (or UUID). A missing or invalid profile will cause a
 
 The location to copy the public headers to during building, relative to the built products folder.
 
-##### Re Exported Framework Names
+##### Re-Exported Framework Names
 
 **Setting name:** `REEXPORTED_FRAMEWORK_NAMES`
 
 List of framework names that should have their symbols be reexported from the built library.
 
-##### Re Exported Library Names
+##### Re-Exported Library Names
 
 **Setting name:** `REEXPORTED_LIBRARY_NAMES`
 
 List of library names that should have their symbols be reexported from the built library.
 
-##### Re Exported Library Paths
+##### Re-Exported Library Paths
 
 **Setting name:** `REEXPORTED_LIBRARY_PATHS`
 
 List of library paths that should have their symbols be reexported from the built library.
 
-##### Strip Usdz Files From Reference Object
+##### Strip USDZ file(s) from Reference Object
 
 **Setting name:** `REFERENCEOBJECT_STRIP_USDZ`
 
@@ -3818,25 +3819,25 @@ Strip any embedded USDZ files when compiling a Reference Object file.
 
 Register app groups in profiles.
 
-##### Removecvsfromresources
+##### REMOVE_CVS_FROM_RESOURCES
 
 **Setting name:** `REMOVE_CVS_FROM_RESOURCES`
 
 Specifies whether to remove `CVS` directories from bundle resources when they are copied.
 
-##### Removegitfromresources
+##### REMOVE_GIT_FROM_RESOURCES
 
 **Setting name:** `REMOVE_GIT_FROM_RESOURCES`
 
 Specifies whether to remove `.git` directories from bundle resources when they are copied.
 
-##### Removehgfromresources
+##### REMOVE_HG_FROM_RESOURCES
 
 **Setting name:** `REMOVE_HG_FROM_RESOURCES`
 
 Specifies whether to remove `.hg` directories from bundle resources when they are copied.
 
-##### Removesvnfromresources
+##### REMOVE_SVN_FROM_RESOURCES
 
 **Setting name:** `REMOVE_SVN_FROM_RESOURCES`
 
@@ -3854,19 +3855,19 @@ Determines whether `ResMerger` treats binary input files as data-fork hosted or 
 
 Overrides `TARGETED_DEVICE_FAMILY` when the resource copying needs to differ from the default targeted device.
 
-##### Retainrawbinaries
+##### RETAIN_RAW_BINARIES
 
 **Setting name:** `RETAIN_RAW_BINARIES`
 
 Specifies whether to keep copies of unstripped binaries available.
 
-##### Rezcollectordir
+##### REZ_COLLECTOR_DIR
 
 **Setting name:** `REZ_COLLECTOR_DIR`
 
 Specifies the directory in which the collected Resource Manager resources generated by `ResMerger` are stored before they are added to the product.
 
-##### Rezobjectsdir
+##### REZ_OBJECTS_DIR
 
 **Setting name:** `REZ_OBJECTS_DIR`
 
@@ -3896,7 +3897,7 @@ These strings will be undefined when compiling resource manager resources.
 
 Enables aliases to be unresolved or conditionally resolved. The default is to resolve aliases always.
 
-##### Read Only Resource Map
+##### Read-only Resource Map
 
 **Setting name:** `REZ_RESOURCE_MAP_READ_ONLY`
 
@@ -3926,13 +3927,13 @@ Enabling this option causes version and progress information to be written when 
 
 Enabling this option causes warnings about redeclared resource types to be suppressed.
 
-##### Allow Dyld Environment Variables
+##### Allow DYLD Environment Variables
 
 **Setting name:** `RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES`
 
 A Boolean value that indicates whether the app may be affected by dynamic linker environment variables, which you can use to inject code into your app’s process.
 
-##### Allow Jit
+##### Allow JIT
 
 **Setting name:** `RUNTIME_EXCEPTION_ALLOW_JIT`
 
@@ -3962,13 +3963,13 @@ A Boolean value that indicates whether to disable all code signing protections w
 
 A Boolean value that indicates whether the app loads arbitrary plug-ins or frameworks, without requiring code signing.
 
-##### Analyze During Build
+##### Analyze During ‘Build’
 
 **Setting name:** `RUN_CLANG_STATIC_ANALYZER`
 
 Activating this setting will cause Xcode to run the `Clang` static analysis tool on qualifying source files during every build.
 
-##### Build Documentation During Build
+##### Build Documentation During ‘Build’
 
 **Setting name:** `RUN_DOCUMENTATION_COMPILER`
 
@@ -3982,13 +3983,13 @@ Activating this setting will cause all source files to be scanned for includes (
 
 This setting is useful if your project contains files of unusual types, which are compiled using a custom build rule.
 
-##### Scriptsfolderpath
+##### SCRIPTS_FOLDER_PATH
 
 **Setting name:** `SCRIPTS_FOLDER_PATH`
 
 Specifies the directory that contains the product’s scripts.
 
-##### Base Sdk
+##### Base SDK
 
 **Setting name:** `SDKROOT`
 
@@ -4008,7 +4009,7 @@ Generally you should not specify symbol ordering options in Debug or Development
 
 Activating this setting when the linked product’s symbols are to be edited will cause editing to occur via a separate invocation of `nmedit(1)`. Otherwise editing will occur during linking, if possible.
 
-##### Sharedframeworksfolderpath
+##### SHARED_FRAMEWORKS_FOLDER_PATH
 
 **Setting name:** `SHARED_FRAMEWORKS_FOLDER_PATH`
 
@@ -4032,27 +4033,27 @@ If enabled, don’t install built products even if deployment locations are acti
 
 For mergeable libraries, skips adding a hook into the library’s resource bundle. This will prevent `Bundle(for:)` from returning this library’s resource bundle.
 
-For more information on mergeable libraries, see [`Configuring your project to use mergeable libraries`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/configuring-your-project-to-use-mergeable-libraries).
+For more information on mergeable libraries, see [Configuring your project to use mergeable libraries](./configuring-your-project-to-use-mergeable-libraries.md).
 
-##### Srcroot
+##### SRCROOT
 
 **Setting name:** `SRCROOT`
 
 Identifies the directory containing the target’s source files.
 
-##### Stringsdatadir
+##### STRINGSDATA_DIR
 
 **Setting name:** `STRINGSDATA_DIR`
 
 The location to write .stringsdata files to when SWIFT_EMIT_LOC_STRINGS is enabled.
 
-##### Stringsdataroot
+##### STRINGSDATA_ROOT
 
 **Setting name:** `STRINGSDATA_ROOT`
 
 The location to traverse and collect .stringsdata files from when exporting for localization.
 
-##### Adjust Strings File Names for Infoplist
+##### Adjust Strings File Names for Info.plist
 
 **Setting name:** `STRINGS_FILE_INFOPLIST_RENAME`
 
@@ -4082,7 +4083,7 @@ Additional flags to be passed when stripping the linked product of the build.
 
 If enabled,  the linked product of the build will be stripped of symbols when performing deployment postprocessing.
 
-##### Remove Text Metadata From Png Files
+##### Remove Text Metadata From PNG Files
 
 **Setting name:** `STRIP_PNG_TEXT`
 
@@ -4116,19 +4117,19 @@ The list of supported platforms from which a base SDK can be used. This setting 
 
 Support building this target for Mac Catalyst.
 
-##### Show Mac Designed for Iphone Ipad Destination
+##### Show Mac (Designed for iPhone & iPad) Destination
 
 **Setting name:** `SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD`
 
 Show the Mac (Designed for iPhone) and Mac (Designed for iPad) destinations.
 
-##### Supports Text Based Installapi
+##### Supports Text-Based InstallAPI
 
 **Setting name:** `SUPPORTS_TEXT_BASED_API`
 
 Enable to indicate that the target supports `Text-Based InstallAPI`, which will enable its generation during `install` builds.
 
-##### Show Apple Vision Designed for Iphone Ipad Destination
+##### Show Apple Vision (Designed for iPhone & iPad) Destination
 
 **Setting name:** `SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD`
 
@@ -4146,7 +4147,7 @@ A list of compilation conditions to enable for conditional compilation expressio
 
 Enables upcoming features that aim to provide a more approachable path to Swift Concurrency: DisableOutwardActorInference, GlobalActorIsolatedTypesUsability, InferIsolatedConformances, InferSendableFromCaptures, and NonisolatedNonsendingByDefault.
 
-##### Bridging Header Is Internal to the Module
+##### Bridging Header is Internal to the Module
 
 **Setting name:** `SWIFT_BRIDGING_HEADER_IS_INTERNAL`
 
@@ -4173,7 +4174,7 @@ Controls default actor isolation for unannotated code. When set to ‘MainActor�
 
 Disable runtime safety checks when optimizing.
 
-##### Const Value Emission Protocol List
+##### Const value emission protocol list
 
 **Setting name:** `SWIFT_EMIT_CONST_VALUE_PROTOCOLS`
 
@@ -4191,7 +4192,7 @@ When enabled, the Swift compiler will be used to extract Swift string literal an
 
 Enables the use of the forward slash syntax for regular-expressions (`/.../`). This is always enabled when in the Swift 6 language mode.
 
-##### Emit Swift Const Values
+##### Emit Swift const values
 
 **Setting name:** `SWIFT_ENABLE_EMIT_CONST_VALUES`
 
@@ -4245,7 +4246,7 @@ Path to the header defining the C interfaces to be exposed in Swift.
 
 Name to use for the header that is generated by the Swift compiler for use in `#import` statements in Objective-C or C++.
 
-##### C++ and Objective C Interoperability
+##### C++ and Objective-C Interoperability
 
 **Setting name:** `SWIFT_OBJC_INTEROP_MODE`
 
@@ -4324,7 +4325,7 @@ Don’t emit any warnings.
 
 A list of paths to be searched by the Swift compiler for additional system Swift modules. Warnings found in system modules will not be emitted.
 
-##### Treat Warnings As Errors
+##### Treat Warnings as Errors
 
 **Setting name:** `SWIFT_TREAT_WARNINGS_AS_ERRORS`
 
@@ -4354,7 +4355,7 @@ Removes inferred actor isolation inference from property wrappers. This is alway
 
 Enable actor isolation checking at runtime for synchronous isolated functions. This is always enabled when in the Swift 6 language mode.
 
-##### Require Existential Any
+##### Require Existential any
 
 **Setting name:** `SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY`
 
@@ -4366,7 +4367,7 @@ Changes existential types to require explicit annotation with the `any` keyword.
 
 Updates trailing closures to be evaluated such that arguments are matched forwards instead of backwards. This is always enabled when in the Swift 6 language mode.
 
-##### Global Actor Isolated Types Usability
+##### Global-Actor-Isolated Types Usability
 
 **Setting name:** `SWIFT_UPCOMING_FEATURE_GLOBAL_ACTOR_ISOLATED_TYPES_USABILITY`
 
@@ -4384,7 +4385,7 @@ Adds a warning for global variables that are neither isolated to a global actor 
 
 Enables passing an existential where a generic is expected. This is always enabled when in the Swift 6 language mode.
 
-##### Import Objective C Forward Declarations
+##### Import Objective-C Forward Declarations
 
 **Setting name:** `SWIFT_UPCOMING_FEATURE_IMPORT_OBJC_FORWARD_DECLS`
 
@@ -4426,7 +4427,7 @@ Requires that a module be imported directly in order for its member declarations
 
 Enable errors when switching over nonfrozen enums without an `@unknown default` case. This is always enabled when in the Swift 6 language mode.
 
-##### Nonisolatednonsending By Default
+##### nonisolated(nonsending) By Default
 
 **Setting name:** `SWIFT_UPCOMING_FEATURE_NONISOLATED_NONSENDING_BY_DEFAULT`
 
@@ -4444,7 +4445,7 @@ Enable passing non-Sendable values over isolation boundaries when there’s no p
 
 The language version used to compile the target’s Swift code.
 
-##### Diagnostic Groups Treated As Errors
+##### Diagnostic Groups Treated as Errors
 
 **Setting name:** `SWIFT_WARNINGS_AS_ERRORS_GROUPS`
 
@@ -4456,13 +4457,13 @@ Specify diagnostic groups that should be treated as errors (format: ‘’)
 
 Specify diagnostic groups that should remain warnings (format: ‘’)
 
-##### Module Name
+##### Module name
 
 **Setting name:** `SYMBOL_GRAPH_EXTRACTOR_MODULE_NAME`
 
 The name of the main module to extract.
 
-##### Output Directory
+##### Output directory
 
 **Setting name:** `SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR`
 
@@ -4486,13 +4487,13 @@ This is a list of paths to folders containing system frameworks to be searched b
 
 This is a list of paths to folders to be searched by the compiler for included or imported system header files when compiling C, Objective-C, C++, or Objective-C++. The order is from highest to lowest precedence. Paths are delimited by whitespace, so any paths with spaces in them need to be properly quoted. This setting is very similar to “Header Search Paths”, except that headers are passed to the compiler in a way that suppresses most warnings for headers found in system search paths. If the compiler doesn’t support the concept of system header search paths, then the search paths are appended to any existing header search paths defined in “Header Search Paths”.
 
-##### Text Based Installapi Demangle Symbols
+##### Text-Based InstallAPI Demangle Symbols
 
 **Setting name:** `TAPI_DEMANGLE`
 
 Display demangled symbols when building `Text-Based InstallAPI`.
 
-##### Enable Text Based Installapi for Project Headers
+##### Enable Text-Based InstallAPI for Project Headers
 
 **Setting name:** `TAPI_ENABLE_PROJECT_HEADERS`
 
@@ -4534,19 +4535,19 @@ Add project-level headers from other targets when building `Text-Based InstallAP
 
 Add public-level headers from other targets when building `Text-Based InstallAPI`.
 
-##### Text Based Installapi Language Mode
+##### Text-Based InstallAPI Language Mode
 
 **Setting name:** `TAPI_LANGUAGE`
 
 Selects the language mode when building `Text-Based InstallAPI`.
 
-##### Text Based Installapi Language Dialect
+##### Text-Based InstallAPI Language Dialect
 
 **Setting name:** `TAPI_LANGUAGE_STANDARD`
 
 Selects the language dialect when building `Text-Based InstallAPI`.
 
-##### Text Based Installapi Verification Mode
+##### Text-Based InstallAPI Verification Mode
 
 **Setting name:** `TAPI_VERIFY_MODE`
 
@@ -4569,7 +4570,7 @@ Possible values include:
 - **6**: Mac Catalyst using “Optimize for Mac” Interface
 - **7**: Apple Vision
 
-##### Targetbuilddir
+##### TARGET_BUILD_DIR
 
 **Setting name:** `TARGET_BUILD_DIR`
 
@@ -4581,7 +4582,7 @@ Identifies the root of the directory hierarchy that contains the product’s fil
 
 The name of the current target.
 
-##### Targettempdir
+##### TARGET_TEMP_DIR
 
 **Setting name:** `TARGET_TEMP_DIR`
 
@@ -4593,13 +4594,13 @@ Identifies the directory containing the target’s intermediate build files. Run
 
 Path to the executable into which a bundle of tests is injected. Only specify this setting if testing an application or other executable.
 
-##### Treat Missing Baselines As Test Failures
+##### Treat missing baselines as test failures
 
 **Setting name:** `TREAT_MISSING_BASELINES_AS_TEST_FAILURES`
 
 When running tests that measure performance via `XCTestCase`, report missing baselines as test failures.
 
-##### Treat Missing Script Phase Outputs As Errors
+##### Treat Missing Script Phase Outputs as Errors
 
 **Setting name:** `TREAT_MISSING_SCRIPT_PHASE_OUTPUTS_AS_ERRORS`
 
@@ -4611,7 +4612,7 @@ Enabling this option causes warnings about incremental build performance issues 
 
 A project-relative path to a file that lists the symbols not to export. See `ld -exported_symbols_list` for details on exporting symbols.
 
-##### Unlocalizedresourcesfolderpath
+##### UNLOCALIZED_RESOURCES_FOLDER_PATH
 
 **Setting name:** `UNLOCALIZED_RESOURCES_FOLDER_PATH`
 
@@ -4635,7 +4636,7 @@ Enable the use of *Header Maps*, which provide the compiler with a mapping from 
 
 If enabled, perform validation checks on the product as part of the build process.
 
-##### Verbosepbxcp
+##### VERBOSE_PBXCP
 
 **Setting name:** `VERBOSE_PBXCP`
 
@@ -4693,13 +4694,13 @@ Space-separated list of additional warning flags to pass to the compiler. Use th
 
 The extension used for product wrappers, which has a default value based on the product type.
 
-##### Wrappername
+##### WRAPPER_NAME
 
 **Setting name:** `WRAPPER_NAME`
 
 Specifies the filename, including the appropriate extension, of the product bundle.
 
-##### Wrappersuffix
+##### WRAPPER_SUFFIX
 
 **Setting name:** `WRAPPER_SUFFIX`
 
@@ -4723,7 +4724,7 @@ The file stem to use for the files generated by `yacc`. The files will be named 
 
 Enabling this option changes the preprocessor directives generated by `yacc` so that debugging statements will be incorporated in the compiled code.
 
-##### Insert Line Directives
+##### Insert #line Directives
 
 **Setting name:** `YACC_INSERT_LINE_DIRECTIVES`
 
@@ -4731,13 +4732,14 @@ Enabling this option causes `yacc` to insert the `#line` directives in the gener
 
 ## See Also
 
-- [Configuring the build settings of a target](configuring-the-build-settings-of-a-target.md)
+### Build settings
+- [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md)
   Specify the options you use to compile, link, and produce a product from a target, and identify settings inherited from your project or the system.
-- [Adding a build configuration file to your project](adding-a-build-configuration-file-to-your-project.md)
+- [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md)
   Specify your project’s build settings in plain-text files, and supply different settings for debug and release builds.
-- [Identifying and addressing framework module issues](identifying-and-addressing-framework-module-issues.md)
+- [Identifying and addressing framework module issues](./identifying-and-addressing-framework-module-issues.md)
   Detect and fix common problems found in framework modules with the module verifier.
-- [Understanding build product layout changes in Xcode](understanding-build-product-layout-changes.md)
+- [Understanding build product layout changes in Xcode](./understanding-build-product-layout-changes.md)
 
 
 ---

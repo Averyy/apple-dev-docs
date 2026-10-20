@@ -1,7 +1,8 @@
 # class(forScriptingClass:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a class object that represents a particular class in the target application.
 
@@ -15,13 +16,17 @@ Returns a class object that represents a particular class in the target applicat
 func `class`(forScriptingClass className: String) -> AnyClass?
 ```
 
+```objc
+- (Class) classForScriptingClass:(NSString *) className;
+```
+
 #### Return Value
 
 A `Class` object representing the scripting class.
 
 #### Discussion
 
-You invoke this method on an instance of a scriptable application. Once you have the class object, you may allocate an instance of the class and appropriately the raw instance. Or you may use it in a call to [`isKind(of:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/iskind(of:)) to determine the class type of an object.
+You invoke this method on an instance of a scriptable application. Once you have the class object, you may allocate an instance of the class and appropriately the raw instance. Or you may use it in a call to [`isKind(of:)`](../../ObjectiveC/nsobjectprotocol/iskind%28of%29.md) to determine the class type of an object.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # init(dataRepresentation:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the hardware model described by the specified data representation.
 
@@ -12,6 +13,10 @@ Creates an instance of the hardware model described by the specified data repres
 
 ```swift
 init?(dataRepresentation: Data)
+```
+
+```objc
+- (instancetype) initWithDataRepresentation:(NSData *) dataRepresentation;
 ```
 
 ## Parameters

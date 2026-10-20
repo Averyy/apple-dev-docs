@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property for which this instance exposes a publisher.
 
@@ -22,11 +23,12 @@ var projectedValue: Published<Value>.Publisher { mutating get set }
 
 #### Discussion
 
-The [`projectedValue`](published/projectedvalue.md) is the property accessed with the `$` operator.
+The [`projectedValue`](./projectedvalue.md) is the property accessed with the `$` operator.
 
 ## See Also
 
-- [Published.Publisher](published/publisher.md)
+### Publishing the value
+- [Published.Publisher](./publisher.md)
   A publisher for properties marked with the `@Published` attribute.
 
 

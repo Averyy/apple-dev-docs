@@ -1,7 +1,8 @@
 # RecognizeTextRequest.Revision.revision3
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An algorithm or implementation that represents the third revision.
 

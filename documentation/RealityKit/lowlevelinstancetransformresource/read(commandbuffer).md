@@ -1,7 +1,8 @@
 # read(commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal buffer containing the current transform data for GPU read operations.
 
@@ -31,7 +32,8 @@ The renderer waits for the provided command buffer to complete before discarding
 
 ## See Also
 
-- [func read<R, E>((consuming Span<float4x4>) throws(E) -> R) throws(E) -> R](lowlevelinstancetransformresource/read(_:).md)
+### Reading transform data
+- [func read<R, E>((consuming Span<float4x4>) throws(E) -> R) throws(E) -> R](./read%28_%29.md)
   Reads the current transform data synchronously on the CPU.
 
 

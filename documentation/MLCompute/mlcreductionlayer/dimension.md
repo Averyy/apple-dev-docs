@@ -1,16 +1,17 @@
 # dimension
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimension to perform the reduction operation on.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The dimension to perform the reduction operation on.
 var dimension: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger dimension;
+```
+
 ## See Also
 
-- [var reductionType: MLCReductionType](mlcreductionlayer/reductiontype.md)
+### Inspecting Reduction Layers
+- [var reductionType: MLCReductionType](./reductiontype.md)
   The function reduction type the system uses for reduction.
-- [var dimensions: [Int]](mlcreductionlayer/dimensions-9oph6.md)
+- [var dimensions: [Int]](./dimensions-9oph6.md)
   The dimensions to perform the reduction operation on.
 
 

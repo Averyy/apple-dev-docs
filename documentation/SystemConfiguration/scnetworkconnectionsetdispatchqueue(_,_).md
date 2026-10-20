@@ -1,7 +1,8 @@
 # SCNetworkConnectionSetDispatchQueue(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies a dispatch queue to use for the connection’s callback function and enables notifications.
 
@@ -14,9 +15,13 @@ Specifies a dispatch queue to use for the connection’s callback function and e
 func SCNetworkConnectionSetDispatchQueue(_ connection: SCNetworkConnection, _ queue: dispatch_queue_t?) -> Bool
 ```
 
+```c
+Boolean SCNetworkConnectionSetDispatchQueue(SCNetworkConnectionRef connection, dispatch_queue_t queue);
+```
+
 #### Return Value
 
-`TRUE` if successful; otherwise, `FALSE` (use the [`SCError()`](scerror().md) function to retrieve the specific error).
+`TRUE` if successful; otherwise, `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 
 ## Parameters
 

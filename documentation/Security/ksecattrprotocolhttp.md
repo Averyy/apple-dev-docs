@@ -1,7 +1,8 @@
 # kSecAttrProtocolHTTP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTTP protocol.
 
@@ -18,6 +19,10 @@ HTTP protocol.
 
 ```swift
 let kSecAttrProtocolHTTP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolHTTP;
 ```
 
 

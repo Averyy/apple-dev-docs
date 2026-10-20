@@ -1,7 +1,8 @@
 # hv_ipa_granule_t
 
 **Framework**: Hypervisor  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -12,6 +13,10 @@
 struct hv_ipa_granule_t
 ```
 
+```c
+typedef enum { ... } hv_ipa_granule_t;
+```
+
 #### Overview
 
 Supported intermediate physical address (IPA) granules.
@@ -19,19 +24,19 @@ Supported intermediate physical address (IPA) granules.
 ## Topics
 
 ### Initializers
-- [init(UInt32)](hv_ipa_granule_t/init(_:).md)
-- [init(rawValue: UInt32)](hv_ipa_granule_t/init(rawvalue:).md)
+- [init(UInt32)](./hv_ipa_granule_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./hv_ipa_granule_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](hv_ipa_granule_t/rawvalue.md)
+- [var rawValue: UInt32](./hv_ipa_granule_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mixer’s volume.
 
@@ -19,13 +20,18 @@ The mixer’s volume.
 var gain: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double gain;
+```
+
 #### Discussion
 
 The framework clamps the value to the range between `0` and `1`, where `0` silences the mixer’s volume and `1` doesn’t modify the volume.
 
 ## See Also
 
-- [var gainMetaParameter: PHASEMetaParameter?](phasemixer/gainmetaparameter.md)
+### Adjusting Volume
+- [var gainMetaParameter: PHASEMetaParameter?](./gainmetaparameter.md)
   A parameter that changes the mixer’s volume gradually over a period of time.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIEndpointSetNextTransferCommandData1Address](3612501-anonymous/iousbhostciendpointsetnexttransfercommanddata1address.md)
-- [IOUSBHostCIEndpointSetNextTransferCommandData1AddressPhase](3612501-anonymous/iousbhostciendpointsetnexttransfercommanddata1addressphase.md)
+- [IOUSBHostCIEndpointSetNextTransferCommandData1Address](./api-3612501-anonymous/iousbhostciendpointsetnexttransfercommanddata1address.md)
+- [IOUSBHostCIEndpointSetNextTransferCommandData1AddressPhase](./api-3612501-anonymous/iousbhostciendpointsetnexttransfercommanddata1addressphase.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cancelPendingSeeks()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels any pending seek requests and invokes the corresponding completion handlers if present.
 
@@ -21,19 +22,24 @@ nonisolated
 func cancelPendingSeeks()
 ```
 
+```objc
+- (void) cancelPendingSeeks;
+```
+
 #### Discussion
 
 Use this method to cancel and release the completion handlers of pending seeks.
 
-The `finished` parameter of the completion handlers will be set to [`false`](https://developer.apple.com/documentation/swift/false).
+The `finished` parameter of the completion handlers will be set to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:completionhandler:)-91gnw.md)
+### Seeking through media
+- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](./seek%28to,completionhandler%29-91gnw.md)
   Sets the current playback time to the specified time.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](./seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Sets the current playback time within a specified time bound and invokes the specified block when the seek operation completes or is interrupted.
-- [func seek(to: Date, completionHandler: ((Bool) -> Void)?) -> Bool](avplayeritem/seek(to:completionhandler:)-1dibq.md)
+- [func seek(to: Date, completionHandler: ((Bool) -> Void)?) -> Bool](./seek%28to,completionhandler%29-1dibq.md)
   Sets the current playback time to the time specified by the date object.
 
 

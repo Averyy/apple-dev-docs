@@ -1,7 +1,8 @@
 # LayerRendererConfigurationError
 
 **Framework**: Compositor Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that can occur when configuring layers.
 
@@ -18,54 +19,54 @@ enum LayerRendererConfigurationError
 ## Topics
 
 ### Getting the configuration errors
-- [LayerRendererConfigurationError.layoutNotSupported](layerrendererconfigurationerror/layoutnotsupported.md)
+- [LayerRendererConfigurationError.layoutNotSupported](./layerrendererconfigurationerror/layoutnotsupported.md)
   An error that indicates the configuration’s current layout value is invalid.
-- [LayerRendererConfigurationError.missingConfiguration](layerrendererconfigurationerror/missingconfiguration.md)
+- [LayerRendererConfigurationError.missingConfiguration](./layerrendererconfigurationerror/missingconfiguration.md)
   An error that indicates the system didn’t find a default layer configuration.
-- [LayerRendererConfigurationError.notEnoughFramesRequested](layerrendererconfigurationerror/notenoughframesrequested.md)
+- [LayerRendererConfigurationError.notEnoughFramesRequested](./layerrendererconfigurationerror/notenoughframesrequested.md)
   An error that indicates not enough frames are available for rendering.
-- [LayerRendererConfigurationError.temporalAntiAliasingNotSupported](layerrendererconfigurationerror/temporalantialiasingnotsupported.md)
+- [LayerRendererConfigurationError.temporalAntiAliasingNotSupported](./layerrendererconfigurationerror/temporalantialiasingnotsupported.md)
   An error that occurs when you try to enable temporal anti-aliasing but the current configuration parameters don’t support it.
-- [LayerRendererConfigurationError.tooManyFramesRequested](layerrendererconfigurationerror/toomanyframesrequested.md)
+- [LayerRendererConfigurationError.tooManyFramesRequested](./layerrendererconfigurationerror/toomanyframesrequested.md)
   An error that indicates your app requested too many frames for rendering.
-- [LayerRendererConfigurationError.unsupportedForwardDepthRange](layerrendererconfigurationerror/unsupportedforwarddepthrange.md)
+- [LayerRendererConfigurationError.unsupportedForwardDepthRange](./layerrendererconfigurationerror/unsupportedforwarddepthrange.md)
   An error that indicates the depth range values aren’t in reverse-z order.
-- [LayerRendererConfigurationError.unsupportedNearPlaneDistance](layerrendererconfigurationerror/unsupportednearplanedistance.md)
+- [LayerRendererConfigurationError.unsupportedNearPlaneDistance](./layerrendererconfigurationerror/unsupportednearplanedistance.md)
   An error that indicates the near plane of the client is closer than the minimum supported distance.
-- [LayerRendererConfigurationError.variableRasterizationRateIsNotSupported](layerrendererconfigurationerror/variablerasterizationrateisnotsupported.md)
+- [LayerRendererConfigurationError.variableRasterizationRateIsNotSupported](./layerrendererconfigurationerror/variablerasterizationrateisnotsupported.md)
   An error that indicates foveation is enabled but not supported.
-- [LayerRendererConfigurationError.unsupportedColorFormat](layerrendererconfigurationerror/unsupportedcolorformat.md)
+- [LayerRendererConfigurationError.unsupportedColorFormat](./layerrendererconfigurationerror/unsupportedcolorformat.md)
   An error that indicates the system doesn’t support the specified color format choice.
-- [LayerRendererConfigurationError.unsupportedColorUsage](layerrendererconfigurationerror/unsupportedcolorusage.md)
+- [LayerRendererConfigurationError.unsupportedColorUsage](./layerrendererconfigurationerror/unsupportedcolorusage.md)
   An error that indicates the system doesn’t support the specified color usage option.
-- [LayerRendererConfigurationError.unsupportedDepthFormat](layerrendererconfigurationerror/unsupporteddepthformat.md)
+- [LayerRendererConfigurationError.unsupportedDepthFormat](./layerrendererconfigurationerror/unsupporteddepthformat.md)
   An error that indicates the system doesn’t support the specified depth format choice.
-- [LayerRendererConfigurationError.unsupportedDepthUsage](layerrendererconfigurationerror/unsupporteddepthusage.md)
+- [LayerRendererConfigurationError.unsupportedDepthUsage](./layerrendererconfigurationerror/unsupporteddepthusage.md)
   An error that indicates the system doesn’t support the specified depth usage choice.
-- [LayerRendererConfigurationError.unsupportedDrawableRenderContextStencilFormat](layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.md)
+- [LayerRendererConfigurationError.unsupportedDrawableRenderContextStencilFormat](./layerrendererconfigurationerror/unsupporteddrawablerendercontextstencilformat.md)
   An error that indicates the layer doesn’t support the current pixel format for the stencil texture.
-- [LayerRendererConfigurationError.unsupportedRenderQuality](layerrendererconfigurationerror/unsupportedrenderquality.md)
+- [LayerRendererConfigurationError.unsupportedRenderQuality](./layerrendererconfigurationerror/unsupportedrenderquality.md)
   An error that indicates the configuration’s render quality is unsupported. This could be because foveation is disabled or the quality is outside of the valid range of [0, 1], the error `userInfo` will contain additional information.
 ### Getting the error details
-- [var description: String](layerrendererconfigurationerror/description.md)
+- [var description: String](./layerrendererconfigurationerror/description.md)
 ### Enumeration Cases
-- [LayerRendererConfigurationError.unsupportedTrackingAreasFormat](layerrendererconfigurationerror/unsupportedtrackingareasformat.md)
+- [LayerRendererConfigurationError.unsupportedTrackingAreasFormat](./layerrendererconfigurationerror/unsupportedtrackingareasformat.md)
   An error that indicates the layer doesn’t support the current pixel format for tracking areas textures.
-- [LayerRendererConfigurationError.unsupportedTrackingAreasUsage](layerrendererconfigurationerror/unsupportedtrackingareasusage.md)
+- [LayerRendererConfigurationError.unsupportedTrackingAreasUsage](./layerrendererconfigurationerror/unsupportedtrackingareasusage.md)
   An error that indicates the layer doesn’t support the current texture usage for tracking areas textures.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

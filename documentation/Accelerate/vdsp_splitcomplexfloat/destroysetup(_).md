@@ -1,7 +1,8 @@
 # destroySetup(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Releases an FFT setup object.
 
@@ -11,7 +12,7 @@ Releases an FFT setup object.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

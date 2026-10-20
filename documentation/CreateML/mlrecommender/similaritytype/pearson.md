@@ -1,7 +1,8 @@
 # MLRecommender.SimilarityType.pearson
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Pearson correlation similarity measure.
 
@@ -20,9 +21,10 @@ Use Pearson correlation similarity for comparing item ratings.
 
 ## See Also
 
-- [MLRecommender.SimilarityType.jaccard](mlrecommender/similaritytype/jaccard.md)
+### Similarity types
+- [MLRecommender.SimilarityType.jaccard](./jaccard.md)
   The Jaccard similarity measure.
-- [MLRecommender.SimilarityType.cosine](mlrecommender/similaritytype/cosine.md)
+- [MLRecommender.SimilarityType.cosine](./cosine.md)
   The cosine similarity measure.
 
 

@@ -1,23 +1,28 @@
 # CFBagApplyFunction(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calls a function once for each value in a bag.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFBagApplyFunction(_ theBag: CFBag!, _ applier: ((UnsafeRawPointer?, UnsafeMutableRawPointer?) -> Void)!, _ context: UnsafeMutableRawPointer!)
+```
+
+```c
+extern void CFBagApplyFunction(CFBagRef theBag, CFBagApplierFunction applier, void *context);
 ```
 
 #### Discussion

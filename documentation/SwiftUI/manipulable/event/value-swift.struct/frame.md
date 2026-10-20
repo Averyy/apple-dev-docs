@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 3D bounding box of the manipulated view.
 

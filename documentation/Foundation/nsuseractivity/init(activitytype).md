@@ -1,7 +1,8 @@
 # init(activityType:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user activity object with the specified type.
 
@@ -20,9 +21,13 @@ Creates a user activity object with the specified type.
 init(activityType: String)
 ```
 
+```objc
+- (instancetype) initWithActivityType:(NSString *) activityType;
+```
+
 #### Return Value
 
-An [`NSUserActivity`](nsuseractivity.md) object.
+An [`NSUserActivity`](../nsuseractivity.md) object.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ An [`NSUserActivity`](nsuseractivity.md) object.
 
 ## See Also
 
-- [Handoff Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)
+### Related Documentation
+- [Handoff Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)
 
 
 ---

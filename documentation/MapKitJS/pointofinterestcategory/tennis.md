@@ -1,7 +1,8 @@
 # Tennis
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for tennis facilities.
 
@@ -10,7 +11,7 @@ The point-of-interest category for tennis facilities.
 
 ## Declaration
 
-```swift
+```
 readonly Tennis: "Tennis";
 ```
 

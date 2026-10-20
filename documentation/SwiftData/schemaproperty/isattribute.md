@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -19,6 +20,11 @@
 ```swift
 var isAttribute: Bool { get }
 ```
+
+## Default Implementations
+
+### SchemaProperty Implementations
+- [var isAttribute: Bool](./isattribute-9nk86.md)
 
 
 ---

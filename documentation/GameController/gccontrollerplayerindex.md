@@ -1,7 +1,8 @@
 # GCControllerPlayerIndex
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible values for controller player indices.
 
@@ -19,35 +20,40 @@ The possible values for controller player indices.
 enum GCControllerPlayerIndex
 ```
 
+```c
+enum GCControllerPlayerIndex : NSInteger;
+```
+
 ## Topics
 
 ### Player indices
-- [GCControllerPlayerIndex.indexUnset](gccontrollerplayerindex/indexunset.md)
+- [GCControllerPlayerIndex.indexUnset](./gccontrollerplayerindex/indexunset.md)
   The default index for a player on a controller.
-- [GCControllerPlayerIndex.index1](gccontrollerplayerindex/index1.md)
+- [GCControllerPlayerIndex.index1](./gccontrollerplayerindex/index1.md)
   Player one is using the controller.
-- [GCControllerPlayerIndex.index2](gccontrollerplayerindex/index2.md)
+- [GCControllerPlayerIndex.index2](./gccontrollerplayerindex/index2.md)
   Player two is using the controller.
-- [GCControllerPlayerIndex.index3](gccontrollerplayerindex/index3.md)
+- [GCControllerPlayerIndex.index3](./gccontrollerplayerindex/index3.md)
   Player three is using the controller.
-- [GCControllerPlayerIndex.index4](gccontrollerplayerindex/index4.md)
+- [GCControllerPlayerIndex.index4](./gccontrollerplayerindex/index4.md)
   Player four is using the controller.
 ### Initializers
-- [init?(rawValue: Int)](gccontrollerplayerindex/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gccontrollerplayerindex/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var playerIndex: GCControllerPlayerIndex](gccontroller/playerindex.md)
+### Identifying controllers and displaying a player index
+- [var playerIndex: GCControllerPlayerIndex](./gccontroller/playerindex.md)
   The player index for the controller.
 
 

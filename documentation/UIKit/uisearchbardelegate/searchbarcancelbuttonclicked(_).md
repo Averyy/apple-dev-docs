@@ -1,7 +1,8 @@
 # searchBarCancelButtonClicked(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the cancel button was tapped.
 
@@ -17,6 +18,10 @@ Tells the delegate that the cancel button was tapped.
 optional func searchBarCancelButtonClicked(_ searchBar: UISearchBar)
 ```
 
+```objc
+- (void) searchBarCancelButtonClicked:(UISearchBar *) searchBar;
+```
+
 #### Discussion
 
 Typically, you implement this method to dismiss the search bar.
@@ -27,13 +32,15 @@ Typically, you implement this method to dismiss the search bar.
 
 ## See Also
 
-- [var showsCancelButton: Bool](uisearchbar/showscancelbutton.md)
+### Related Documentation
+- [var showsCancelButton: Bool](../uisearchbar/showscancelbutton.md)
   A Boolean value indicating whether the cancel button is displayed.
-- [func searchBarBookmarkButtonClicked(UISearchBar)](uisearchbardelegate/searchbarbookmarkbuttonclicked(_:).md)
+### Responding to clicks in search controls
+- [func searchBarBookmarkButtonClicked(UISearchBar)](./searchbarbookmarkbuttonclicked%28_%29.md)
   Tells the delegate that the bookmark button was tapped.
-- [func searchBarSearchButtonClicked(UISearchBar)](uisearchbardelegate/searchbarsearchbuttonclicked(_:).md)
+- [func searchBarSearchButtonClicked(UISearchBar)](./searchbarsearchbuttonclicked%28_%29.md)
   Tells the delegate that the search button was tapped.
-- [func searchBarResultsListButtonClicked(UISearchBar)](uisearchbardelegate/searchbarresultslistbuttonclicked(_:).md)
+- [func searchBarResultsListButtonClicked(UISearchBar)](./searchbarresultslistbuttonclicked%28_%29.md)
   Tells the delegate that the search results list button was tapped.
 
 

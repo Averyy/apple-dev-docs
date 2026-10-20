@@ -1,7 +1,8 @@
 # perform()
 
 **Framework**: MatterSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launch the user interface to set up a Matter device in the ecosystem.
 
@@ -10,7 +11,7 @@ Launch the user interface to set up a Matter device in the ecosystem.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ func perform() async throws
 
 ## See Also
 
-- [var shouldScanNetworks: Bool](matteradddevicerequest/shouldscannetworks.md)
+### Performing the request
+- [var shouldScanNetworks: Bool](./shouldscannetworks.md)
   A flag that indicates whether to receive network scan results.
 
 

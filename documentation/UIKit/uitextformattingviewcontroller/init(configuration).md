@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(configuration: UITextFormattingViewController.Configuration)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(UITextFormattingViewControllerConfiguration *) configuration;
 ```
 
 

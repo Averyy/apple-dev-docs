@@ -1,7 +1,8 @@
 # isSearching
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a search operation is in progress.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether a search operation is in progress.
 var isSearching: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isSearching) BOOL searching;
+```
+
 ## See Also
 
-- [func cancel()](mklocalsearchcompleter/cancel.md)
+### Canceling the query
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress search operation.
 
 

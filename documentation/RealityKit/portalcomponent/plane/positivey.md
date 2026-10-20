@@ -1,7 +1,8 @@
 # positiveY
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A portal plane sitting at the origin facing the positive y direction.
 

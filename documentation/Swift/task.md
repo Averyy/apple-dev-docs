@@ -1,7 +1,8 @@
 # Task
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unit of asynchronous work.
 
@@ -31,7 +32,7 @@ Only code that’s running as part of the task can interact with that task. To i
 
 A task’s execution can be seen as a series of periods where the task ran. Each such period ends at a suspension point or the completion of the task. These periods of execution are represented by instances of `PartialAsyncTask`. Unless you’re implementing a custom executor, you don’t directly interact with partial tasks.
 
-For information about the language-level concurrency model that `Task` is part of, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
+For information about the language-level concurrency model that `Task` is part of, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
 ### Task Cancellation
 
@@ -39,7 +40,7 @@ Tasks include a shared mechanism for indicating cancellation, but not a shared i
 
 Cancellation is a purely Boolean state; there’s no way to include additional information like the reason for cancellation. This reflects the fact that a task can be canceled for many reasons, and additional reasons can accrue during the cancellation process.
 
-##### Task Closure Lifetime
+##### Task closure lifetime
 
 Tasks are initialized by passing a closure containing the code that will be executed by a given task.
 
@@ -95,144 +96,145 @@ deinit actor
 ## Topics
 
 ### Creating a Task
-- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:priority:operation:)-2dll5.md)
+- [init(name: String?, priority: TaskPriority?, operation: sending () async -> Success)](./task/init%28name,priority,operation%29-2dll5.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:priority:operation:)-43wmk.md)
+- [init(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success)](./task/init%28name,priority,operation%29-43wmk.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](task/init(name:executorpreference:priority:operation:)-59bfi.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success)](./task/init%28name,executorpreference,priority,operation%29-59bfi.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* top-level task.
-- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](task/init(name:executorpreference:priority:operation:)-81pay.md)
+- [init(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success)](./task/init%28name,executorpreference,priority,operation%29-81pay.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* top-level task.
-- [static var currentPriority: TaskPriority](task/currentpriority.md)
+- [static var currentPriority: TaskPriority](./task/currentpriority.md)
   The current task’s priority.
-- [static var basePriority: TaskPriority?](task/basepriority.md)
+- [static var basePriority: TaskPriority?](./task/basepriority.md)
   The current task’s base priority.
-- [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](withtaskpriorityescalationhandler(operation:onpriorityescalated:).md)
+- [func withTaskPriorityEscalationHandler<T, E>(operation: nonisolated(nonsending) () async throws(E) -> T, onPriorityEscalated: (TaskPriority, TaskPriority) -> Void) async throws(E) -> T](./withtaskpriorityescalationhandler%28operation,onpriorityescalated%29.md)
   Runs the passed `operation` while registering a task priority escalation handler. The handler will be triggered concurrently to the current task if the current is subject to priority escalation.
 ### Creating a Detached Task
-- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:priority:operation:)-795w1.md)
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./task/detached%28name,priority,operation%29-795w1.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
-- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:priority:operation:)-9xki7.md)
+- [static func detached(name: String?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](./task/detached%28name,priority,operation%29-9xki7.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
-- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/detached(name:executorpreference:priority:operation:)-6r16s.md)
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./task/detached%28name,executorpreference,priority,operation%29-6r16s.md)
   Runs the given throwing operation asynchronously as part of a new *unstructured* *detached* top-level task.
-- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](task/detached(name:executorpreference:priority:operation:)-75ffe.md)
+- [static func detached(name: String?, executorPreference: (any TaskExecutor)?, priority: TaskPriority?, operation: sending () async -> Success) -> Task<Success, Never>](./task/detached%28name,executorpreference,priority,operation%29-75ffe.md)
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 ### Creating a Task that Starts Immediately
-- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediate(name:priority:executorpreference:operation:)-88o80.md)
+- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](./task/immediate%28name,priority,executorpreference,operation%29-88o80.md)
   Create and immediately start running a new task in the context of the calling thread/task.
-- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:executorpreference:operation:)-9bghc.md)
+- [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./task/immediate%28name,priority,executorpreference,operation%29-9bghc.md)
   Create and immediately start running a new task in the context of the calling thread/task.
-- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediatedetached(name:priority:executorpreference:operation:)-52ipd.md)
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](./task/immediatedetached%28name,priority,executorpreference,operation%29-52ipd.md)
   Create and immediately start running a new detached task in the context of the calling thread/task.
-- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediatedetached(name:priority:executorpreference:operation:)-7h41b.md)
+- [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](./task/immediatedetached%28name,priority,executorpreference,operation%29-7h41b.md)
   Create and immediately start running a new detached task in the context of the calling thread/task.
 ### Accessing Results
-- [var value: Success](task/value-60t02.md)
+- [var value: Success](./task/value-60t02.md)
   The result from a throwing task, after it completes.
-- [var value: Success](task/value-40dtq.md)
+- [var value: Success](./task/value-40dtq.md)
   The result from a nonthrowing task, after it completes.
-- [var result: Result<Success, Failure>](task/result.md)
+- [var result: Result<Success, Failure>](./task/result.md)
   The result or error from a throwing task, after it completes.
 ### Accessing the Current Task’s Name
-- [static var name: String?](task/name-swift.type.property.md)
+- [static var name: String?](./task/name-swift.type.property.md)
   Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 ### Canceling Tasks
-- [struct CancellationError](cancellationerror.md)
+- [struct CancellationError](./cancellationerror.md)
   An error that indicates a task was canceled.
-- [func cancel()](task/cancel.md)
+- [func cancel()](./task/cancel%28%29.md)
   Cancels this task.
-- [var isCancelled: Bool](task/iscancelled-swift.property.md)
+- [var isCancelled: Bool](./task/iscancelled-swift.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static var isCancelled: Bool](task/iscancelled-swift.type.property.md)
+- [static var isCancelled: Bool](./task/iscancelled-swift.type.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [static func checkCancellation() throws](task/checkcancellation.md)
+- [static func checkCancellation() throws](./task/checkcancellation%28%29.md)
   Throws an error if the task was canceled.
-- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
+- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](./withtaskcancellationhandler%28operation,oncancel%29.md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
-- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
+- [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](./withtaskcancellationhandler%28operation,oncancel,isolation%29.md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 ### Shielding Tasks from Cancellation
-- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
+- [static var hasActiveCancellationShield: Bool](./task/hasactivecancellationshield.md)
   Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
-- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](./withtaskcancellationshield%28operation%29-2lzl8.md)
   Enters a scope in which a task cancellation shield is active.
-- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
+- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](./withtaskcancellationshield%28operation%29-8zlgh.md)
   Enters a scope in which a task cancellation shield is active.
 ### Suspending Execution
-- [static func yield() async](task/yield.md)
+- [static func yield() async](./task/yield%28%29.md)
   Suspends the current task and allows other tasks to execute.
-- [static func sleep(nanoseconds: UInt64) async throws](task/sleep(nanoseconds:).md)
+- [static func sleep(nanoseconds: UInt64) async throws](./task/sleep%28nanoseconds%29.md)
   Suspends the current task for at least the given duration in nanoseconds.
-- [static func sleep<C>(for: C.Instant.Duration, tolerance: C.Instant.Duration?, clock: C) async throws](task/sleep(for:tolerance:clock:).md)
+- [static func sleep<C>(for: C.Instant.Duration, tolerance: C.Instant.Duration?, clock: C) async throws](./task/sleep%28for,tolerance,clock%29.md)
   Suspends the current task for the given duration.
-- [static func sleep<C>(until: C.Instant, tolerance: C.Instant.Duration?, clock: C) async throws](task/sleep(until:tolerance:clock:).md)
+- [static func sleep<C>(until: C.Instant, tolerance: C.Instant.Duration?, clock: C) async throws](./task/sleep%28until,tolerance,clock%29.md)
   Suspends the current task until the given deadline within a tolerance.
 ### Escalating Tasks
-- [func escalatePriority(to: TaskPriority)](task/escalatepriority(to:).md)
+- [func escalatePriority(to: TaskPriority)](./task/escalatepriority%28to%29.md)
   Manually escalate the task `priority` of this task to the `newPriority`.
 ### Comparing Tasks
-- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
+- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](./task/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./task/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [var hashValue: Int](task/hashvalue.md)
+- [var hashValue: Int](./task/hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](task/hash(into:).md)
+- [func hash(into: inout Hasher)](./task/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Deprecated
-- [typealias Group](task/group.md)
-- [typealias Handle](task/handle.md)
-- [typealias Priority](task/priority.md)
-- [static func CancellationError() -> CancellationError](task/cancellationerror.md)
-- [func getResult() async -> Result<Success, Failure>](task/getresult.md)
-- [func get() async throws -> Success](task/get-4i2gt.md)
-- [func get() async -> Success](task/get-4ohks.md)
-- [static func sleep(UInt64) async](task/sleep(_:).md)
-- [static func suspend() async](task/suspend.md)
-- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
+- [typealias Group](./task/group.md)
+- [typealias Handle](./task/handle.md)
+- [typealias Priority](./task/priority.md)
+- [static func CancellationError() -> CancellationError](./task/cancellationerror%28%29.md)
+- [func getResult() async -> Result<Success, Failure>](./task/getresult%28%29.md)
+- [func get() async throws -> Success](./task/get%28%29-4i2gt.md)
+- [func get() async -> Success](./task/get%28%29-4ohks.md)
+- [static func sleep(UInt64) async](./task/sleep%28_%29.md)
+- [static func suspend() async](./task/suspend%28%29.md)
+- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](./task/rundetached%28priority,operation%29-88zf5.md)
   Deprecated, available only for source compatibility reasons.
-- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
+- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](./task/rundetached%28priority,operation%29-8s8lh.md)
   Deprecated, available only for source compatibility reasons.
-- [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
-- [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
-- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](./task/withcancellationhandler%28handler,operation%29.md)
+- [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](./task/withgroup%28resulttype,returning,body%29.md)
+- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](./withtaskcancellationhandler%28handler,operation%29.md)
 ### Instance Properties
-- [var name: String?](task/name-swift.property.md)
+- [var name: String?](./task/name-swift.property.md)
   Return the task’s name, if it was set during its creation.
 ### Default Implementations
-- [Equatable Implementations](task/equatable-implementations.md)
-- [Hashable Implementations](task/hashable-implementations.md)
+- [Equatable Implementations](./task/equatable-implementations.md)
+- [Hashable Implementations](./task/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct TaskGroup](taskgroup.md)
+### Tasks
+- [struct TaskGroup](./taskgroup.md)
   A group that contains dynamically created child tasks.
-- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](withtaskgroup(of:returning:isolation:body:).md)
+- [func withTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout TaskGroup<ChildTaskResult>) async -> GroupResult) async -> GroupResult](./withtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingTaskGroup](throwingtaskgroup.md)
+- [struct ThrowingTaskGroup](./throwingtaskgroup.md)
   A group that contains throwing, dynamically created child tasks.
-- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](withthrowingtaskgroup(of:returning:isolation:body:).md)
+- [func withThrowingTaskGroup<ChildTaskResult, GroupResult>(of: ChildTaskResult.Type, returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingTaskGroup<ChildTaskResult, any Error>) async throws -> GroupResult) async rethrows -> GroupResult](./withthrowingtaskgroup%28of,returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of throwing child tasks.
-- [struct TaskPriority](taskpriority.md)
+- [struct TaskPriority](./taskpriority.md)
   The priority of a task.
-- [struct DiscardingTaskGroup](discardingtaskgroup.md)
+- [struct DiscardingTaskGroup](./discardingtaskgroup.md)
   A discarding group that contains dynamically created child tasks.
-- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](withdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout DiscardingTaskGroup) async -> GroupResult) async -> GroupResult](./withdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct ThrowingDiscardingTaskGroup](throwingdiscardingtaskgroup.md)
+- [struct ThrowingDiscardingTaskGroup](./throwingdiscardingtaskgroup.md)
   A throwing discarding group that contains dynamically created child tasks.
-- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](withthrowingdiscardingtaskgroup(returning:isolation:body:).md)
+- [func withThrowingDiscardingTaskGroup<GroupResult>(returning: GroupResult.Type, isolation: isolated (any Actor)?, body: (inout ThrowingDiscardingTaskGroup<any Error>) async throws -> GroupResult) async throws -> GroupResult](./withthrowingdiscardingtaskgroup%28returning,isolation,body%29.md)
   Starts a new scope that can contain a dynamic number of child tasks.
-- [struct UnsafeCurrentTask](unsafecurrenttask.md)
+- [struct UnsafeCurrentTask](./unsafecurrenttask.md)
   An unsafe reference to the current task.
 
 

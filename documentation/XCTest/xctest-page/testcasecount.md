@@ -1,7 +1,8 @@
 # testCaseCount
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of test cases in the test.
 
@@ -11,17 +12,22 @@ The number of test cases in the test.
 var testCaseCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger testCaseCount;
+```
+
 #### Discussion
 
 Must be overridden by subclasses.
 
 ## See Also
 
-- [var name: String](xctest/name.md)
+### Examining Test Properties
+- [var name: String](./name.md)
   The name of the test.
-- [var testRun: XCTestRun?](xctest/testrun.md)
+- [var testRun: XCTestRun?](./testrun.md)
   The test run object that executes the test.
-- [var testRunClass: AnyClass?](xctest/testrunclass.md)
+- [var testRunClass: AnyClass?](./testrunclass.md)
   The test run subclass to instantiate when the test runs, which records the test’s results.
 
 

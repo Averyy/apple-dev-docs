@@ -1,7 +1,8 @@
 # supplementariesFollowContentInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the section’s supplementary items follow the specified content insets for the section.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the section’s supplementary items follo
 var supplementariesFollowContentInsets: Bool { get set }
 ```
 
+```objc
+@property BOOL supplementariesFollowContentInsets;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value of this property is [`true`](../../Swift/true.md).
 
 
 ---

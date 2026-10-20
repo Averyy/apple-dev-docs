@@ -1,7 +1,8 @@
 # detailCalloutAccessoryView
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detail accessory view to use in the standard callout.
 
@@ -15,23 +16,44 @@ The detail accessory view to use in the standard callout.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var detailCalloutAccessoryView: UIView? { get set }
+```
+
+*macOS*
+
 ```swift
 var detailCalloutAccessoryView: NSView? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, nullable) UIView * detailCalloutAccessoryView;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, strong, nullable) NSView * detailCalloutAccessoryView;
+```
+
 ## See Also
 
-- [var accessoryOffset: CGPoint](mkannotationview/accessoryoffset.md)
+### Managing callout views
+- [var accessoryOffset: CGPoint](./accessoryoffset.md)
   An offset that changes the accessory’s default anchor point.
-- [var canShowCallout: Bool](mkannotationview/canshowcallout.md)
+- [var canShowCallout: Bool](./canshowcallout.md)
   A Boolean value that indicates whether the annotation view is able to display extra information in a callout.
-- [var leftCalloutAccessoryView: UIView?](mkannotationview/leftcalloutaccessoryview.md)
+- [var leftCalloutAccessoryView: UIView?](./leftcalloutaccessoryview.md)
   The view to display on the left side of the standard callout.
-- [var rightCalloutAccessoryView: UIView?](mkannotationview/rightcalloutaccessoryview.md)
+- [var rightCalloutAccessoryView: UIView?](./rightcalloutaccessoryview.md)
   The view to display on the right side of the standard callout.
-- [var leftCalloutOffset: CGPoint](mkannotationview/leftcalloutoffset.md)
+- [var leftCalloutOffset: CGPoint](./leftcalloutoffset.md)
   The offset in points from the middle-left of the annotation view.
-- [var rightCalloutOffset: CGPoint](mkannotationview/rightcalloutoffset.md)
+- [var rightCalloutOffset: CGPoint](./rightcalloutoffset.md)
   The offset in points from the middle-right of the annotation view.
 
 

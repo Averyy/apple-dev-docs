@@ -1,7 +1,8 @@
 # MTKModelIOVertexFormatFromMetal(_:)
 
 **Framework**: MetalKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a converted Model I/O vertex format.
 
@@ -19,13 +20,17 @@ Returns a converted Model I/O vertex format.
 func MTKModelIOVertexFormatFromMetal(_ vertexFormat: MTLVertexFormat) -> MDLVertexFormat
 ```
 
+```c
+extern MDLVertexFormat MTKModelIOVertexFormatFromMetal(MTLVertexFormat vertexFormat);
+```
+
 #### Return Value
 
 A Model I/O vertex format value.
 
 #### Discussion
 
-This function returns [`MDLVertexFormat.invalid`](https://developer.apple.com/documentation/modelio/mdlvertexformat/invalid) if no matching [`MDLVertexFormat`](https://developer.apple.com/documentation/modelio/mdlvertexformat) exists.
+This function returns [`MDLVertexFormat.invalid`](../ModelIO/mdlvertexformat/invalid.md) if no matching [`MDLVertexFormat`](../ModelIO/mdlvertexformat.md) exists.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This function returns [`MDLVertexFormat.invalid`](https://developer.apple.com/do
 
 ## See Also
 
-- [func MTKMetalVertexFormatFromModelIO(MDLVertexFormat) -> MTLVertexFormat](mtkmetalvertexformatfrommodelio(_:).md)
+### Converting Between Model I/O and Metal Vertex Formats
+- [func MTKMetalVertexFormatFromModelIO(MDLVertexFormat) -> MTLVertexFormat](./mtkmetalvertexformatfrommodelio%28_%29.md)
   Returns a converted Metal vertex format.
 
 

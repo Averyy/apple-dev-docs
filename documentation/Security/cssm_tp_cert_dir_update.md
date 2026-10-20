@@ -1,7 +1,8 @@
 # CSSM_TP_CERT_DIR_UPDATE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_TP_CERT_DIR_UPDATE: Int { get }
+```
+
+```c
+CSSM_TP_CERT_DIR_UPDATE
 ```
 
 

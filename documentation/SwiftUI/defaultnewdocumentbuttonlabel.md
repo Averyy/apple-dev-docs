@@ -1,7 +1,8 @@
 # DefaultNewDocumentButtonLabel
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default label used for a new document button.
 
@@ -21,36 +22,37 @@ The default label used for a new document button.
 
 #### Overview
 
-You don’t use this type directly. Instead, [`NewDocumentButton`](newdocumentbutton.md) uses it automatically depending on how you create a button.
+You don’t use this type directly. Instead, [`NewDocumentButton`](./newdocumentbutton.md) uses it automatically depending on how you create a button.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
+### Configuring the document launch experience
+- [struct DocumentGroupLaunchScene](./documentgrouplaunchscene.md)
   A launch scene for document-based applications.
-- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+- [func documentLaunchTitle(_:)](./scene/documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./scene/documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [struct DocumentLaunchView](documentlaunchview.md)
+- [struct DocumentLaunchView](./documentlaunchview.md)
   A view to present when launching document-related user experience.
-- [func documentLaunchTitle(_:)](view/documentlaunchtitle(_:).md)
+- [func documentLaunchTitle(_:)](./view/documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./view/documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
-- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](./view/documentbrowsercontextmenu%28_%29.md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
-- [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
+- [struct DocumentLaunchGeometryProxy](./documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
-- [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
+- [struct DefaultDocumentGroupLaunchActions](./defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
-- [struct NewDocumentButton](newdocumentbutton.md)
+- [struct NewDocumentButton](./newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct DocumentCreationSource](documentcreationsource.md)
+- [struct DocumentCreationSource](./documentcreationsource.md)
   Describes the source used to create a new document.
 
 

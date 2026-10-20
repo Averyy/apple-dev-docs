@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an analysis type with the given value.
 
@@ -24,7 +25,8 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [var rawValue: UInt](imageanalyzer/analysistypes/rawvalue.md)
+### Creating sets
+- [var rawValue: UInt](./rawvalue.md)
   A unique, underlying value for the analysis type.
 
 

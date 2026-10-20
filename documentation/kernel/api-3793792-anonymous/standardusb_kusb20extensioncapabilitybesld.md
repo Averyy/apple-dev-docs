@@ -1,14 +1,15 @@
 # StandardUSB::kUSB20ExtensionCapabilityBESLD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB::kUSB20ExtensionCapabilityBESLD = kIOUSBUSB20ExtensionCapabilityBESLD
 ```
 

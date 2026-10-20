@@ -1,7 +1,8 @@
 # popover(arrowEdge:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Return a configuration that will present a SwiftUI popover.
 

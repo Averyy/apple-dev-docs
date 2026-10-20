@@ -1,17 +1,18 @@
 # AVPlayerLooper.Status.ready
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The looper is ready to perform looping playback.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The looper is ready to perform looping playback.
 case ready
 ```
 
+```c
+AVPlayerLooperStatusReady
+```
+
 ## See Also
 
-- [AVPlayerLooper.Status.unknown](avplayerlooper/status-swift.enum/unknown.md)
+### Status values
+- [AVPlayerLooper.Status.unknown](./unknown.md)
   The status isn’t known.
-- [AVPlayerLooper.Status.failed](avplayerlooper/status-swift.enum/failed.md)
+- [AVPlayerLooper.Status.failed](./failed.md)
   The looper isn’t able to perform looping playback due to an error.
-- [AVPlayerLooper.Status.cancelled](avplayerlooper/status-swift.enum/cancelled.md)
+- [AVPlayerLooper.Status.cancelled](./cancelled.md)
   The app canceled looping on the player.
 
 

@@ -1,17 +1,24 @@
 # wantsExtendedDynamicRangeOpenGLSurface
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables extended dynamic range values on the screen.
 
 **Availability**:
-- macOS 10.11+
+- macOS 10.11+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL API deprecated; please use Metal and MetalKit.  (Define GL_SILENCE_DEPRECATION to silence these warnings.)
 
 ## Declaration
 
 ```swift
 var wantsExtendedDynamicRangeOpenGLSurface: Bool { get set }
+```
+
+```objc
+@property BOOL wantsExtendedDynamicRangeOpenGLSurface;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ If any view on the screen has this enabled, the screen which the OpenGL surface 
 
 ## See Also
 
-- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md)
+### Related Documentation
+- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](../nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md)
   The current maximum color component value for the screen.
 
 

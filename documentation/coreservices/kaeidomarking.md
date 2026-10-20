@@ -1,9 +1,10 @@
 # kAEIDoMarking
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The application provides marking callback functions. Marking callback functions are described in [`Apple Event Manager`](https://developer.apple.com/documentation/applicationservices/apple_event_manager).
+The application provides marking callback functions. Marking callback functions are described in [Apple Event Manager](../applicationservices/apple_event_manager.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

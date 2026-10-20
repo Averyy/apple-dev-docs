@@ -1,7 +1,8 @@
 # operationGroupID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation group’s unique identifier.
 
@@ -20,23 +21,28 @@ The operation group’s unique identifier.
 var operationGroupID: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * operationGroupID;
+```
+
 #### Discussion
 
-The framework generates this value and it’s unique to this operation group. The system sends this identifier to CloudKit, which can use it to identify server-side logs for [`CKOperationGroup`](ckoperationgroup.md).
+The framework generates this value and it’s unique to this operation group. The system sends this identifier to CloudKit, which can use it to identify server-side logs for [`CKOperationGroup`](../ckoperationgroup.md).
 
 ## See Also
 
-- [var defaultConfiguration: CKOperation.Configuration!](ckoperationgroup/defaultconfiguration.md)
+### Configuring an Operation Group
+- [var defaultConfiguration: CKOperation.Configuration!](./defaultconfiguration.md)
   The default configuration for operations in the group.
-- [var expectedReceiveSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedreceivesize.md)
+- [var expectedReceiveSize: CKOperationGroup.TransferSize](./expectedreceivesize.md)
   The estimated size of traffic to download from CloudKit.
-- [var expectedSendSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedsendsize.md)
+- [var expectedSendSize: CKOperationGroup.TransferSize](./expectedsendsize.md)
   The estimated size of traffic to upload to CloudKit.
-- [var name: String?](ckoperationgroup/name.md)
+- [var name: String?](./name.md)
   The operation group’s name.
-- [var quantity: Int](ckoperationgroup/quantity.md)
+- [var quantity: Int](./quantity.md)
   The number of operations in the operation group.
-- [CKOperationGroup.TransferSize](ckoperationgroup/transfersize.md)
+- [CKOperationGroup.TransferSize](./transfersize.md)
   Constants that represent possible data transfer sizes.
 
 

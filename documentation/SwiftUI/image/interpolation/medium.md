@@ -1,7 +1,8 @@
 # Image.Interpolation.medium
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a medium level of interpolation quality, between the low- and high-quality values.
 
@@ -22,15 +23,16 @@ case medium
 
 ## Mentions
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+- [Fitting images into available space](../../fitting-images-into-available-space.md)
 
 ## See Also
 
-- [Image.Interpolation.high](image/interpolation/high.md)
+### Getting interpolation options
+- [Image.Interpolation.high](./high.md)
   A value that indicates a high level of interpolation quality, which may slow down image rendering.
-- [Image.Interpolation.low](image/interpolation/low.md)
+- [Image.Interpolation.low](./low.md)
   A value that indicates a low level of interpolation quality, which may speed up image rendering.
-- [Image.Interpolation.none](image/interpolation/none.md)
+- [Image.Interpolation.none](./none.md)
   A value that indicates SwiftUI doesn’t interpolate image data.
 
 

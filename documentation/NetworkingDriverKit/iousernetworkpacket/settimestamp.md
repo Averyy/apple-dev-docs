@@ -1,14 +1,15 @@
 # setTimestamp
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setTimestamp(uint64_t timestamp);
 ```
 

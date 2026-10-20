@@ -1,17 +1,18 @@
 # EKWeekday.monday
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value for Monday.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,19 +20,24 @@ The value for Monday.
 case monday
 ```
 
+```c
+EKWeekdayMonday
+```
+
 ## See Also
 
-- [EKWeekday.sunday](ekweekday/sunday.md)
+### Constants
+- [EKWeekday.sunday](./sunday.md)
   The value for Sunday.
-- [EKWeekday.tuesday](ekweekday/tuesday.md)
+- [EKWeekday.tuesday](./tuesday.md)
   The value for Tuesday.
-- [EKWeekday.wednesday](ekweekday/wednesday.md)
+- [EKWeekday.wednesday](./wednesday.md)
   The value for Wednesday.
-- [EKWeekday.thursday](ekweekday/thursday.md)
+- [EKWeekday.thursday](./thursday.md)
   The value for Thursday.
-- [EKWeekday.friday](ekweekday/friday.md)
+- [EKWeekday.friday](./friday.md)
   The value for Friday.
-- [EKWeekday.saturday](ekweekday/saturday.md)
+- [EKWeekday.saturday](./saturday.md)
   The value for Saturday.
 
 

@@ -1,7 +1,8 @@
 # transformMatrix(relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
 
@@ -21,7 +22,7 @@ The transform of the entity relative to `referenceSpace`, or `nil` when the give
 
 #### Discussion
 
-This method overloads  [`transformMatrix(relativeTo:)`](hastransform/transformmatrix(relativeto:).md).
+This method overloads  [`transformMatrix(relativeTo:)`](../hastransform/transformmatrix%28relativeto%29.md).
 
 ## Parameters
 
@@ -29,13 +30,14 @@ This method overloads  [`transformMatrix(relativeTo:)`](hastransform/transformma
 
 ## See Also
 
-- [protocol HasTransform](hastransform.md)
+### Positioning entities in space
+- [protocol HasTransform](../hastransform.md)
   An interface that enables manipulating the scale, rotation, and translation of an entity.
-- [struct Transform](transform.md)
+- [struct Transform](../transform.md)
   A component that defines the scale, rotation, and translation of an entity.
-- [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
+- [Entity.CoordinateSpaceReference](./coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
-- [Entity.ForwardDirection](entity/forwarddirection.md)
+- [Entity.ForwardDirection](./forwarddirection.md)
   Defines the forward direction for an entity.
 
 

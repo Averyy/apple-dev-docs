@@ -1,36 +1,38 @@
 # C Types
 
-**Framework**: Address Book
+**Framework**: Address Book  
+**Role**: API Collection
 
 Identify the C types that correspond to Address Book objects.
 
 ## Topics
 
 ### Essentials
-- [typealias ABAddressBook](abaddressbook-swift.typealias.md)
+- [typealias ABAddressBook](./abaddressbook-swift.typealias.md)
   A reference to an ABAddressBook object.
 ### Data Types
-- [class ABPersonRef](abpersonref.md)
+- [class ABPersonRef](./abpersonref.md)
   A reference to an ABPerson object.
-- [class ABGroupRef](abgroupref.md)
+- [class ABGroupRef](./abgroupref.md)
   A reference to an ABGroup object.
-- [typealias ABMultiValue](abmultivalue-swift.typealias.md)
+- [typealias ABMultiValue](./abmultivalue-swift.typealias.md)
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
-- [typealias ABMutableMultiValue](abmutablemultivalue-swift.typealias.md)
+- [typealias ABMutableMultiValue](./abmutablemultivalue-swift.typealias.md)
   A reference to an ABMutableMultiValue object.
 ### Deprecated
-- [struct ABPersonImageFormat](abpersonimageformat.md)
+- [struct ABPersonImageFormat](./abpersonimageformat.md)
   Indicates an image format.
 
 ## See Also
 
-- [AddressBook Functions](addressbook-functions.md)
+### C Interfaces
+- [AddressBook Functions](./addressbook-functions.md)
   Find the C functions and function-like macros you use to manipulate Address Book data.
-- [Address Book Constants](address-book-constants.md)
+- [Address Book Constants](./address-book-constants.md)
   Get the constants you use to specify Address Book information.
-- [AddressBook Enumerations](addressbook-enumerations.md)
+- [AddressBook Enumerations](./addressbook-enumerations.md)
   Get the enumerations you use to specify Address Book information.
-- [AddressBook Data Types](addressbook-data-types.md)
+- [AddressBook Data Types](./addressbook-data-types.md)
   Get the data types you use to specify Address Book information.
 
 

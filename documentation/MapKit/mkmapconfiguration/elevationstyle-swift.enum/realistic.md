@@ -1,7 +1,8 @@
 # MKMapConfiguration.ElevationStyle.realistic
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents a map elevation style with realistic ground contours.
 
@@ -20,9 +21,14 @@ The value that represents a map elevation style with realistic ground contours.
 case realistic
 ```
 
+```c
+MKMapElevationStyleRealistic
+```
+
 ## See Also
 
-- [MKMapConfiguration.ElevationStyle.flat](mkmapconfiguration/elevationstyle-swift.enum/flat.md)
+### Constants
+- [MKMapConfiguration.ElevationStyle.flat](./flat.md)
   The value that represents the flat map elevation style.
 
 

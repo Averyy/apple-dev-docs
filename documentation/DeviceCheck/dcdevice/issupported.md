@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports the DeviceCheck API.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the device supports the DeviceCheck API.
 
 ```swift
 var isSupported: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSupported) BOOL supported;
 ```
 
 

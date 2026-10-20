@@ -1,7 +1,8 @@
 # minor
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraint’s value for the minor identity characteristic.
 
@@ -22,7 +23,8 @@ The minor characteristic is optional. If it’s present, a beacon’s minor valu
 
 ## See Also
 
-- [var major: UInt16?](clbeaconidentityconstraint/major.md)
+### Getting the beacon identity
+- [var major: UInt16?](./major.md)
   The constraint’s value for the major identity characteristic.
 
 

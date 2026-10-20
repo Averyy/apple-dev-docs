@@ -1,7 +1,8 @@
 # com.apple.developer.web-browser
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that indicates whether the app can act as the user’s default web browser.
 
@@ -9,19 +10,21 @@ An entitlement that indicates whether the app can act as the user’s default we
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.web-browser`
+- **Type**: boolean
 
 #### Discussion
 
-For more information about using this entitlement, see [`Preparing your app to be the default web browser`](https://developer.apple.com/documentation/xcode/preparing-your-app-to-be-the-default-browser).
+For more information about using this entitlement, see [Preparing your app to be the default web browser](../../Xcode/preparing-your-app-to-be-the-default-browser.md).
 
 ## See Also
 
-- [com.apple.developer.web-browser.public-key-credential](entitlements/com.apple.developer.web-browser.public-key-credential.md)
+### Web browsers
+- [com.apple.developer.web-browser.public-key-credential](./com.apple.developer.web-browser.public-key-credential.md)
   An entitlement that lets your app make registration and assertion requests for passkeys and security keys for any relying party identifier.
-- [com.apple.developer.browser.app-installation](entitlements/com.apple.developer.browser.app-installation.md)
+- [com.apple.developer.browser.app-installation](./com.apple.developer.browser.app-installation.md)
   An entitlement that enables a browser to install alternative distribution apps from a website.
 
 

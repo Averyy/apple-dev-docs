@@ -1,7 +1,8 @@
 # videoOutput
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video output for this player.
 
@@ -19,6 +20,10 @@ The video output for this player.
 ```swift
 nonisolated
 var videoOutput: AVPlayerVideoOutput? { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, nullable) AVPlayerVideoOutput * videoOutput;
 ```
 
 #### Discussion

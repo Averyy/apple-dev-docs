@@ -1,7 +1,8 @@
 # lowPriority
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A low URL session task priority, with a floating point value above the minimum of `0` and below the default value.
 
@@ -20,11 +21,16 @@ A low URL session task priority, with a floating point value above the minimum o
 class let lowPriority: Float
 ```
 
+```c
+extern const float NSURLSessionTaskPriorityLow;
+```
+
 ## See Also
 
-- [class let defaultPriority: Float](urlsessiontask/defaultpriority.md)
+### Priority constants
+- [class let defaultPriority: Float](./defaultpriority.md)
   The default URL session task priority, used implicitly for any task you have not prioritized.
-- [class let highPriority: Float](urlsessiontask/highpriority.md)
+- [class let highPriority: Float](./highpriority.md)
   A high URL session task priority, with a floating point value above the default value and below the maximum of `1.0`.
 
 

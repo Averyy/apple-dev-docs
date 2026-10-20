@@ -1,9 +1,10 @@
 # accuracy
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](cmmagneticfieldcalibrationaccuracy.md).
+An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](../cmmagneticfieldcalibrationaccuracy.md).
 
 **Availability**:
 - iOS 4.0+
@@ -19,10 +20,15 @@ An enum-constant value that indicates the accuracy of the magnetic field estimat
 var accuracy: CMMagneticFieldCalibrationAccuracy
 ```
 
+```c
+CMMagneticFieldCalibrationAccuracy accuracy;
+```
+
 ## See Also
 
-- [var field: CMMagneticField](cmcalibratedmagneticfield/field.md)
-  A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](cmmagneticfield.md) structure.
+### Accessing the Field Values
+- [var field: CMMagneticField](./field.md)
+  A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](../cmmagneticfield.md) structure.
 
 
 ---

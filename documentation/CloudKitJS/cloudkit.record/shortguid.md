@@ -1,7 +1,8 @@
 # shortGUID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A global unique identifier for this record used for sharing.
 
@@ -10,7 +11,7 @@ A global unique identifier for this record used for sharing.
 
 ## Declaration
 
-```swift
+```
 attribute String shortGUID;
 ```
 

@@ -1,7 +1,8 @@
 # allowsEditingTextAttributes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user can edit the attributes of the text in the text field.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether the user can edit the attributes of the 
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,29 +19,34 @@ A Boolean value that determines whether the user can edit the attributes of the 
 var allowsEditingTextAttributes: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsEditingTextAttributes;
+```
+
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the user may edit the style information of the text. In addition, pasting styled text into the text field retains any embedded style information. If [`false`](https://developer.apple.com/documentation/swift/false), the text field prohibits the editing of style information and strips style information from any pasted text. However, you can still set the style information programmatically using the methods of this class.
+If this property is set to [`true`](../../Swift/true.md), the user may edit the style information of the text. In addition, pasting styled text into the text field retains any embedded style information. If [`false`](../../Swift/false.md), the text field prohibits the editing of style information and strips style information from any pasted text. However, you can still set the style information programmatically using the methods of this class.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isEditing: Bool](uitextfield/isediting.md)
+### Managing the editing behavior
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the text field is currently in edit mode.
-- [var clearsOnBeginEditing: Bool](uitextfield/clearsonbeginediting.md)
+- [var clearsOnBeginEditing: Bool](./clearsonbeginediting.md)
   A Boolean value that determines whether the text field removes old text when editing begins.
-- [var clearsOnInsertion: Bool](uitextfield/clearsoninsertion.md)
+- [var clearsOnInsertion: Bool](./clearsoninsertion.md)
   A Boolean value that determines whether inserting text replaces the previous contents.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](./didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
-- [class let didEndEditingReasonUserInfoKey: String](uitextfield/didendeditingreasonuserinfokey.md)
+- [class let didEndEditingReasonUserInfoKey: String](./didendeditingreasonuserinfokey.md)
   A key that indicates the reason for ending editing in a text field.
-- [class let textDidBeginEditingNotification: NSNotification.Name](uitextfield/textdidbegineditingnotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](./textdidbegineditingnotification.md)
   A notification that alerts observers when an editing session begins in a text field.
-- [class let textDidChangeNotification: NSNotification.Name](uitextfield/textdidchangenotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   A notification that alerts observers when the text in a text field changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](uitextfield/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text field.
 
 

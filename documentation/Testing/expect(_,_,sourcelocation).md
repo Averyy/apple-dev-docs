@@ -1,18 +1,19 @@
 # expect(_:_:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Check that an expectation has passed after a condition has been evaluated.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -25,13 +26,13 @@ Check that an expectation has passed after a condition has been evaluated.
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
-- [Describing and reflecting values](describing-values.md)
-- [Testing for errors in Swift code](testing-for-errors-in-swift-code.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
+- [Describing and reflecting values](./describing-values.md)
+- [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
 #### Overview
 
-If `condition` evaluates to `false`, an [`Issue`](issue.md) is recorded for the test that is running in the current task.
+If `condition` evaluates to `false`, an [`Issue`](./issue.md) is recorded for the test that is running in the current task.
 
 ## Parameters
 
@@ -41,9 +42,10 @@ If `condition` evaluates to `false`, an [`Issue`](issue.md) is recorded for the 
 
 ## See Also
 
-- [macro require(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](require(_:_:sourcelocation:)-5l63q.md)
+### Checking expectations
+- [macro require(Bool, @autoclosure () -> Comment?, sourceLocation: SourceLocation)](./require%28_,_,sourcelocation%29-5l63q.md)
   Check that an expectation has passed after a condition has been evaluated and throw an error if it failed.
-- [macro require<T>(T?, @autoclosure () -> Comment?, sourceLocation: SourceLocation) -> T](require(_:_:sourcelocation:)-6w9oo.md)
+- [macro require<T>(T?, @autoclosure () -> Comment?, sourceLocation: SourceLocation) -> T](./require%28_,_,sourcelocation%29-6w9oo.md)
   Unwrap an optional value or, if it is `nil`, fail and throw an error.
 
 

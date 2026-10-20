@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/comparing-ml-program
 
 # Comparing ML Programs and Neural Networks
 
-**
-
-- [.md](../_sources/source/comparing-ml-programs-and-neural-networks.md)
-- **
-
-.pdf
-
-**
-
-# Comparing ML Programs and Neural Networks
-
- Table of contents 
-
-## Contents
-
-# Comparing ML Programs and Neural Networks
-
 As ML models evolve in sophistication and complexity, their [representations](#model-representations) are also evolving to describe how they work. *ML programs* are models that are represented as operations in code. The ML program model type is the foundation for future Core ML improvements.
 
 A few of the major differences between a neural network and an ML program are as follows:
@@ -51,13 +34,13 @@ An `mlprogram` model type represents a neural network in a different way than th
 
 There are several ways to represent a deep learning model. At a foundational level, models can be represented as a set of mathematical equations (as shown in the left side of the following figure), which is how they are often described in a machine learning course for beginners.
 
-![Ways to represent a deep learning model](../_images/model-representations-no-numbers.png)
+![Ways to represent a deep learning model](https://apple.github.io/coremltools/docs-guides/_images/model-representations-no-numbers.png)
 
 Three ways to represent a deep learning model.
 
 To express a neural network, the mathematical descriptions are often abstracted into a *computational graph*, which is a more concise and scalable representation (as shown in the center of the previous figure). A computational graph is a directed graph in which computational layers connect to each other — the input feeds into the *source* layers and undergoes a series of mathematical transformations to generate the outputs through the *sink* layers.
 
-At the center of the Core ML [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.md) are the layers that form the nodes of the graph. There are many different types of layers, and each describes a particular mathematical operation. Each layer specifies its input and output names, which are the *edges* of the graph. Connections are established by matching an output name of a layer to another layer’s input name.
+At the center of the Core ML [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.html) are the layers that form the nodes of the graph. There are many different types of layers, and each describes a particular mathematical operation. Each layer specifies its input and output names, which are the *edges* of the graph. Connections are established by matching an output name of a layer to another layer’s input name.
 
 Although the graphical representation is useful for understanding and visualization, the graphs are actually special kinds of programs. A neural network is just like any other program and can be directly represented and stored in a code-like form (as shown in the right side of the previous figure). By representing the model as code, the ML program model provides more flexibility in defining neural networks by incorporating programmatic features such as functions, blocks, control flow, and strongly typed variables.
 
@@ -103,6 +86,4 @@ MIL enables the unification of TensorFlow 1, TensorFlow 2, and PyTorch converter
 3. MIL is simplified through a sequence of passes.
 4. Finally, MIL is translated into one of the backends for serialization on disk. In coremltools version 4, the backend was `neuralnetwork`. In subsequent versions `mlprogram` is available as another backend.
 
-The MIL IR for the `neuralnetwork` model type must be further converted to the [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.md) specification. By comparison, the translation to the ML program specification is straightforward because the same internal MIL Python object is converted to the protobuf format ([MIL.proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/MIL.proto)). The opset of ML program is identical to the ops available in the MIL builder. For details, see the [MIL Ops Reference](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.md) and the [Python source code](https://github.com/apple/coremltools/tree/main/coremltools/converters/mil/mil/ops/defs).
-
-** Contents
+The MIL IR for the `neuralnetwork` model type must be further converted to the [NeuralNetwork](https://apple.github.io/coremltools/mlmodel/Format/NeuralNetwork.html) specification. By comparison, the translation to the ML program specification is straightforward because the same internal MIL Python object is converted to the protobuf format ([MIL.proto](https://github.com/apple/coremltools/blob/main/mlmodel/format/MIL.proto)). The opset of ML program is identical to the ops available in the MIL builder. For details, see the [MIL Ops Reference](https://apple.github.io/coremltools/source/coremltools.converters.mil.mil.ops.defs.html) and the [Python source code](https://github.com/apple/coremltools/tree/main/coremltools/converters/mil/mil/ops/defs).

@@ -1,17 +1,22 @@
 # info
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An arbitrary program-defined value passed to all the callbacks in this structure and in the [`CFXMLParserCallBacks`](cfxmlparsercallbacks.md) structure.
+An arbitrary program-defined value passed to all the callbacks in this structure and in the [`CFXMLParserCallBacks`](../cfxmlparsercallbacks.md) structure.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var info: UnsafeMutableRawPointer!
+```
+
+```c
+void * info;
 ```
 
 

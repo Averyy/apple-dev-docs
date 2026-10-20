@@ -1,6 +1,7 @@
 # Connecting Xcode Cloud to GitHub Enterprise
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Allow Xcode Cloud to access your GitHub Enterprise repository.
 
@@ -8,14 +9,14 @@ Allow Xcode Cloud to access your GitHub Enterprise repository.
 
 When you first configure your project or workspace to use Xcode Cloud, you need to allow Xcode Cloud to access your Git repository. It uses this access to automatically build and test your code when you make changes to the codebase.
 
-If you host your code as part of a GitHub organization, the person who first configures a project to use Xcode Cloud must be an *organization owner*. If you don’t use a GitHub organization, the person who first configures a project to use Xcode Cloud must have the *admin* permission. If you don’t have the required role or permission, see [`Connect Xcode Cloud to an admin-managed Git repository`](configuring-xcode-cloud-for-your-team#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository.md).
+If you host your code as part of a GitHub organization, the person who first configures a project to use Xcode Cloud must be an *organization owner*. If you don’t use a GitHub organization, the person who first configures a project to use Xcode Cloud must have the *admin* permission. If you don’t have the required role or permission, see [Connect Xcode Cloud to an admin-managed Git repository](./configuring-xcode-cloud-for-your-team.md#Connect-Xcode-Cloud-to-an-admin-managed-Git-repository).
 
-If your GitHub Enterprise instance settings have an IP allow list, make sure that you have added [`our IP address ranges`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/Setting-up-your-project-to-use-Xcode-Cloud#Use-a-remote-source-control-repository) to it before proceeding.
+If your GitHub Enterprise instance settings have an IP allow list, make sure that you have added [our IP address ranges](./setting-up-your-project-to-use-xcode-cloud.md#Use-a-remote-source-control-repository) to it before proceeding.
 
-To allow Xcode Cloud to access your repository on [`GitHub Enterprise`](https://developer.apple.comhttps://github.com/enterprise):
+To allow Xcode Cloud to access your repository on [GitHub Enterprise](https://github.com/enterprise):
 
-1. Configure your project or workspace to use Xcode Cloud and create your first workflow as described in [`Configuring your first Xcode Cloud workflow`](configuring-your-first-xcode-cloud-workflow.md). Xcode analyzes your project to learn which SCM provider you use and then displays the URL of your GitHub Enterprise instance on the Grant Access to Your Source Code sheet.
-2. Click Grant Access. Xcode opens your browser and takes you to the [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) website.
+1. Configure your project or workspace to use Xcode Cloud and create your first workflow as described in [Configuring your first Xcode Cloud workflow](./configuring-your-first-xcode-cloud-workflow.md). Xcode analyzes your project to learn which SCM provider you use and then displays the URL of your GitHub Enterprise instance on the Grant Access to Your Source Code sheet.
+2. Click Grant Access. Xcode opens your browser and takes you to the [App Store Connect](https://appstoreconnect.apple.com) website.
 3. Choose GitHub Enterprise.
 4. Register the host name of your GitHub Enterprise host. The corresponding field should already contain your instance’s URL. Check if it’s correct; for example, make sure it contains a required port.
 5. Click Complete Step 1 in GitHub Enterprise to navigate to the website of your GitHub Enterprise host.
@@ -28,7 +29,8 @@ To allow Xcode Cloud to access your repository on [`GitHub Enterprise`](https://
 
 ## See Also
 
-- [Connecting Xcode Cloud to GitHub](connecting-xcode-cloud-to-github.md)
+### GitHub and GitHub Enterprise
+- [Connecting Xcode Cloud to GitHub](./connecting-xcode-cloud-to-github.md)
   Allow Xcode Cloud to access your GitHub repository.
 
 

@@ -1,14 +1,15 @@
 # policy_rr_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct policy_rr_info {
     ...
 } policy_rr_info_data_t;
@@ -17,11 +18,11 @@ typedef struct policy_rr_info {
 ## Topics
 
 ### Instance Properties
-- [base_priority](policy_rr_info_data_t/1396967-base_priority.md)
-- [depress_priority](policy_rr_info_data_t/1396960-depress_priority.md)
-- [depressed](policy_rr_info_data_t/1396890-depressed.md)
-- [max_priority](policy_rr_info_data_t/1396932-max_priority.md)
-- [quantum](policy_rr_info_data_t/1396912-quantum.md)
+- [base_priority](./policy_rr_info_data_t/api-1396967-base_priority.md)
+- [depress_priority](./policy_rr_info_data_t/api-1396960-depress_priority.md)
+- [depressed](./policy_rr_info_data_t/api-1396890-depressed.md)
+- [max_priority](./policy_rr_info_data_t/api-1396932-max_priority.md)
+- [quantum](./policy_rr_info_data_t/api-1396912-quantum.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kPMQualityNormal
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies a general usage mode that balances quality and speed.
 

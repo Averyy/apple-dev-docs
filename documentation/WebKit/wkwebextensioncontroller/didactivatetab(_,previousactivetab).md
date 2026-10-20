@@ -1,7 +1,8 @@
 # didActivateTab(_:previousActiveTab:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a tab is activated to notify all loaded web extensions.
 

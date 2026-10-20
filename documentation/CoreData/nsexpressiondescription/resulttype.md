@@ -1,7 +1,8 @@
 # resultType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute type of the expression’s result.
 
@@ -11,7 +12,7 @@ The attribute type of the expression’s result.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var resultType: NSAttributeDescription.AttributeType { get set }
 
 ## See Also
 
-- [var expression: NSExpression?](nsexpressiondescription/expression.md)
+### Configuring the Expression Description
+- [var expression: NSExpression?](./expression.md)
   The expression to evaluate.
-- [var expressionResultType: NSAttributeType](nsexpressiondescription/expressionresulttype.md)
+- [var expressionResultType: NSAttributeType](./expressionresulttype.md)
   The attribute type of the expression’s result.
 
 

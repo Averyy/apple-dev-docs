@@ -1,16 +1,17 @@
 # isUpdatable
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether this tensor parameter is updatable.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A Boolean that indicates whether this tensor parameter is updatable.
 var isUpdatable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL isUpdatable;
+```
+
 ## See Also
 
-- [var tensor: MLCTensor](mlctensorparameter/tensor.md)
+### Inspecting Tensor Parameters
+- [var tensor: MLCTensor](./tensor.md)
   The underlying tensor.
 
 

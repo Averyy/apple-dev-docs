@@ -1,14 +1,17 @@
 # PayLaterViewAction
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values you use to set the Apple Pay Later action.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Apple Pay Later is deprecated.
 
 ## Declaration
 
@@ -19,17 +22,17 @@ struct PayLaterViewAction
 ## Topics
 
 ### Pay Later actions
-- [static let calculator: PayLaterViewAction](paylaterviewaction/calculator.md)
+- [static let calculator: PayLaterViewAction](./paylaterviewaction/calculator.md)
   An action the provides the standard price breakdown calculator for Apple Pay Later.
-- [static let learnMore: PayLaterViewAction](paylaterviewaction/learnmore.md)
+- [static let learnMore: PayLaterViewAction](./paylaterviewaction/learnmore.md)
   An action that displays a button that a person can tap to learn more about Apple Pay Later.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

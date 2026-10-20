@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pre-defined unknown or invalid region.
 

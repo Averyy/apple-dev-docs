@@ -1,7 +1,8 @@
 # regularBilling
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The regular billing cycle for the recurring payment, including start and end dates, an interval, and an interval count.
 
@@ -11,7 +12,7 @@ The regular billing cycle for the recurring payment, including start and end dat
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem regularBilling;
 ```
 
@@ -19,13 +20,14 @@ required ApplePayLineItem regularBilling;
 
 This line item applies to a regular billing cycle for a recurring payment.
 
-> **Note**:  Set the [`paymentTiming`](applepaylineitem/paymenttiming.md) property of the line item to `"recurring"` to avoid an error.
+> **Note**:  Set the [`paymentTiming`](../applepaylineitem/paymenttiming.md) property of the line item to `"recurring"` to avoid an error.
 
 ## See Also
 
-- [trialBilling](applepayrecurringpaymentrequest/trialbilling.md)
+### Setting the payment summary items
+- [trialBilling](./trialbilling.md)
   The trial billing cycle for the recurring payment.
-- [ApplePayLineItem](applepaylineitem.md)
+- [ApplePayLineItem](../applepaylineitem.md)
   A line item in a payment request—for example, total, tax, discount, or grand total.
 
 

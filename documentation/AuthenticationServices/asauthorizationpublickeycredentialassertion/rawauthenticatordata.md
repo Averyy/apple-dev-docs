@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A byte sequence that contains additional information about the credential.
@@ -20,15 +21,20 @@ A byte sequence that contains additional information about the credential.
 var rawAuthenticatorData: Data! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * rawAuthenticatorData;
+```
+
 #### Discussion
 
-This authenticator data object contains additional information about the credential. To learn more, see the [`W3C Web Authentication specification`](https://developer.apple.comhttps://www.w3.org/TR/webauthn-2/#authenticator-data).
+This authenticator data object contains additional information about the credential. To learn more, see the [W3C Web Authentication specification](https://www.w3.org/TR/webauthn-2/#authenticator-data).
 
 ## See Also
 
-- [var signature: Data!](asauthorizationpublickeycredentialassertion/signature.md)
+### Getting the properties
+- [var signature: Data!](./signature.md)
   The signature for the assertion.
-- [var userID: Data!](asauthorizationpublickeycredentialassertion/userid.md)
+- [var userID: Data!](./userid.md)
   A user identifier for the assertion.
 
 

@@ -1,7 +1,8 @@
 # valueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the profile calls when an element’s value changes.
 
@@ -19,13 +20,18 @@ The block that the profile calls when an element’s value changes.
 var valueChangedHandler: GCMotionValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCMotionValueChangedHandler valueChangedHandler;
+```
+
 #### Discussion
 
 If multiple elements change values at the same time, the profile calls this block once for each element that changes. If the value of a subelement changes, the profile only calls the block for the containing element.
 
 ## See Also
 
-- [typealias GCMotionValueChangedHandler](gcmotionvaluechangedhandler.md)
+### Receiving a Callback When Input Values Change
+- [typealias GCMotionValueChangedHandler](../gcmotionvaluechangedhandler.md)
   The signature for the block that the profile calls when an element’s value changes.
 
 

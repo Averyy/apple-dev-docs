@@ -1,7 +1,8 @@
 # availablePackages
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current managed apps available to this device.
 

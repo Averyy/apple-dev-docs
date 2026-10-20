@@ -1,7 +1,8 @@
 # indexPath(forItemIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index path for the item with the specified identifier in the collection view.
 
@@ -12,6 +13,10 @@ Returns an index path for the item with the specified identifier in the collecti
 
 ```swift
 func indexPath(forItemIdentifier identifier: Any) -> IndexPath?
+```
+
+```objc
+- (NSIndexPath *) indexPathForItemIdentifier:(ItemIdentifierType) identifier;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ This method is a constant time operation, O(1), which means you can look up an i
 
 ## See Also
 
-- [func itemIdentifier(for: IndexPath) -> Any?](nscollectionviewdiffabledatasourcereference/itemidentifier(for:).md)
+### Identifying Items
+- [func itemIdentifier(for: IndexPath) -> Any?](./itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the collection view.
 
 

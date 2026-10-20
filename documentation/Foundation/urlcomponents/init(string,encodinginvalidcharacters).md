@@ -1,7 +1,8 @@
 # init(string:encodingInvalidCharacters:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
 
@@ -31,11 +32,12 @@ If `encodingInvalidCharacters` is `true`, this initializer tries to encode the s
 
 ## See Also
 
-- [init()](urlcomponents/init.md)
+### Creating URL components
+- [init()](./init%28%29.md)
   Creates a URL components instance without defining any of the components.
-- [init?(string: String)](urlcomponents/init(string:).md)
+- [init?(string: String)](./init%28string%29.md)
   Creates a URL components instance from a URL string.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](urlcomponents/init(url:resolvingagainstbaseurl:).md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](./init%28url,resolvingagainstbaseurl%29.md)
   Creates a URL components instance from a URL string, optionally resolving against a base URL.
 
 

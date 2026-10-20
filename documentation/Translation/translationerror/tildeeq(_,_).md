@@ -1,7 +1,8 @@
 # ~=(_:_:)
 
 **Framework**: Translation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 This operator allows you to check for a given value of a translation error and handle each error case.
 

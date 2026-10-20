@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the set has no members in common with the given set.
@@ -39,6 +40,12 @@ print(employees.isDisjoint(with: visitors))
 ## Parameters
 
 - `other`: A set of the same type as the current set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func isDisjoint(with: Self) -> Bool](./isdisjoint%28with%29-59c10.md)
+  Returns a Boolean value that indicates whether the set has no members in common with the given set.
 
 
 ---

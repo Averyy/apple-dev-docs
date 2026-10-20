@@ -1,7 +1,8 @@
 # cancelMigrationWithError(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the migration with a given error.
 
@@ -10,7 +11,7 @@ Cancels the migration with a given error.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Cancels the migration with a given error.
 func cancelMigrationWithError(_ error: any Error)
 ```
 
+```objc
+- (void) cancelMigrationWithError:(NSError *) error;
+```
+
 #### Discussion
 
-You can invoke this method from anywhere in the migration process to abort the migration. Calling this method causes [`migrateStore(from:sourceType:options:with:toDestinationURL:destinationType:destinationOptions:)`](nsmigrationmanager/migratestore(from:sourcetype:options:with:todestinationurl:destinationtype:destinationoptions:).md) to abort the migration and return `error`—you should provide an appropriate error to indicate the reason for the cancellation.
+You can invoke this method from anywhere in the migration process to abort the migration. Calling this method causes [`migrateStore(from:sourceType:options:with:toDestinationURL:destinationType:destinationOptions:)`](./migratestore%28from,sourcetype,options,with,todestinationurl,destinationtype,destinationoptions%29.md) to abort the migration and return `error`—you should provide an appropriate error to indicate the reason for the cancellation.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ You can invoke this method from anywhere in the migration process to abort the m
 
 ## See Also
 
-- [func reset()](nsmigrationmanager/reset.md)
+### Aborting a Migration
+- [func reset()](./reset%28%29.md)
   Resets the association tables for the migration.
 
 

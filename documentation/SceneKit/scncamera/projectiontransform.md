@@ -1,23 +1,28 @@
 # projectionTransform
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera’s projection transformation.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var projectionTransform: SCNMatrix4 { get set }
+```
+
+```objc
+@property (nonatomic) SCNMatrix4 projectionTransform;
 ```
 
 #### Discussion
@@ -26,13 +31,16 @@ This transformation expresses the combination of all the camera’s geometric pr
 
 You can use this transformation directly if your app needs to convert between view and renderer coordinates for other purposes. Alternatively, if you compute your own projection transform matrix, you can set this property to override the transformation synthesized from the camera’s geometric properties.
 
-> ❗ **Important**:  If you set this property to a custom value, properties such as [`zFar`](scncamera/zfar.md), [`zNear`](scncamera/znear.md), and [`fieldOfView`](scncamera/fieldofview.md) no longer reflect the current camera projection. (The mathematical process that derives a projection matrix from those properties cannot be reversed.) When you use SceneKit for an ARKit app with the [`ARSCNView`](https://developer.apple.com/documentation/arkit/arscnview) class, ARKit overrides the camera’s projection matrix.
+> ❗ **Important**:  If you set this property to a custom value, properties such as [`zFar`](./zfar.md), [`zNear`](./znear.md), and [`fieldOfView`](./fieldofview.md) no longer reflect the current camera projection. (The mathematical process that derives a projection matrix from those properties cannot be reversed.)
+>
+> When you use SceneKit for an ARKit app with the [`ARSCNView`](../../ARKit/arscnview.md) class, ARKit overrides the camera’s projection matrix.
 
 ## See Also
 
-- [var usesOrthographicProjection: Bool](scncamera/usesorthographicprojection.md)
+### Managing the Projection Transform
+- [var usesOrthographicProjection: Bool](./usesorthographicprojection.md)
   A Boolean value that determines whether the camera uses an orthographic projection.
-- [var orthographicScale: Double](scncamera/orthographicscale.md)
+- [var orthographicScale: Double](./orthographicscale.md)
   Specifies the camera’s magnification factor when using an orthographic projection.
 
 

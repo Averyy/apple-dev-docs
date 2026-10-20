@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The shared Wi-Fi client object.
 
@@ -12,6 +13,10 @@ The shared Wi-Fi client object.
 
 ```swift
 class func shared() -> CWWiFiClient
+```
+
+```objc
++ (CWWiFiClient *) sharedWiFiClient;
 ```
 
 #### Discussion

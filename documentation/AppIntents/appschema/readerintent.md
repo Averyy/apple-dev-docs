@@ -1,7 +1,8 @@
 # AppSchema.ReaderIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the reader domain.
 
@@ -21,51 +22,52 @@ protocol ReaderIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var deletePages: some AppSchemaIntent](appschema/readerintent/deletepages.md)
+- [var deletePages: some AppSchemaIntent](./readerintent/deletepages.md)
   An intent schema that deletes the specified pages.
-- [var enhanceDocuments: some AppSchemaIntent](appschema/readerintent/enhancedocuments.md)
+- [var enhanceDocuments: some AppSchemaIntent](./readerintent/enhancedocuments.md)
   An intent schema that enhances the documents.
-- [var insertPages: some AppSchemaIntent](appschema/readerintent/insertpages.md)
+- [var insertPages: some AppSchemaIntent](./readerintent/insertpages.md)
   An intent schema that inserts pages from the specified files.
-- [var openDocument: some AppSchemaIntent](appschema/readerintent/opendocument.md)
+- [var openDocument: some AppSchemaIntent](./readerintent/opendocument.md)
   An intent schema that opens the specified files in the reader.
-- [var openPage: some AppSchemaIntent](appschema/readerintent/openpage.md)
+- [var openPage: some AppSchemaIntent](./readerintent/openpage.md)
   An intent schema that opens the app to the specified document page.
-- [var resizeDocuments: some AppSchemaIntent](appschema/readerintent/resizedocuments.md)
+- [var resizeDocuments: some AppSchemaIntent](./readerintent/resizedocuments.md)
   An intent schema that resizes the documents to a particular width and height.
-- [var rotateDocuments: some AppSchemaIntent](appschema/readerintent/rotatedocuments.md)
+- [var rotateDocuments: some AppSchemaIntent](./readerintent/rotatedocuments.md)
   An intent schema that rotates the documents in the specified direction.
-- [var rotatePages: some AppSchemaIntent](appschema/readerintent/rotatepages.md)
+- [var rotatePages: some AppSchemaIntent](./readerintent/rotatepages.md)
   An intent schema that rotates the pages in the specified direction.
-- [var searchDocuments: some AppSchemaIntent](appschema/readerintent/searchdocuments.md)
+- [var searchDocuments: some AppSchemaIntent](./readerintent/searchdocuments.md)
   An intent schema that searches for text in the documents.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var deletePages: some AppSchemaIntent](appschema/readerintent/deletepages.md)
+### Actions
+- [var deletePages: some AppSchemaIntent](./readerintent/deletepages.md)
   An intent schema that deletes the specified pages.
-- [var enhanceDocuments: some AppSchemaIntent](appschema/readerintent/enhancedocuments.md)
+- [var enhanceDocuments: some AppSchemaIntent](./readerintent/enhancedocuments.md)
   An intent schema that enhances the documents.
-- [var insertPages: some AppSchemaIntent](appschema/readerintent/insertpages.md)
+- [var insertPages: some AppSchemaIntent](./readerintent/insertpages.md)
   An intent schema that inserts pages from the specified files.
-- [var openDocument: some AppSchemaIntent](appschema/readerintent/opendocument.md)
+- [var openDocument: some AppSchemaIntent](./readerintent/opendocument.md)
   An intent schema that opens the specified files in the reader.
-- [var openPage: some AppSchemaIntent](appschema/readerintent/openpage.md)
+- [var openPage: some AppSchemaIntent](./readerintent/openpage.md)
   An intent schema that opens the app to the specified document page.
-- [var resizeDocuments: some AppSchemaIntent](appschema/readerintent/resizedocuments.md)
+- [var resizeDocuments: some AppSchemaIntent](./readerintent/resizedocuments.md)
   An intent schema that resizes the documents to a particular width and height.
-- [var rotateDocuments: some AppSchemaIntent](appschema/readerintent/rotatedocuments.md)
+- [var rotateDocuments: some AppSchemaIntent](./readerintent/rotatedocuments.md)
   An intent schema that rotates the documents in the specified direction.
-- [var rotatePages: some AppSchemaIntent](appschema/readerintent/rotatepages.md)
+- [var rotatePages: some AppSchemaIntent](./readerintent/rotatepages.md)
   An intent schema that rotates the pages in the specified direction.
-- [var searchDocuments: some AppSchemaIntent](appschema/readerintent/searchdocuments.md)
+- [var searchDocuments: some AppSchemaIntent](./readerintent/searchdocuments.md)
   An intent schema that searches for text in the documents.
 
 

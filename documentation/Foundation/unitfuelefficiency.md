@@ -1,7 +1,8 @@
 # UnitFuelEfficiency
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unit of measure for fuel efficiency.
 
@@ -20,51 +21,55 @@ A unit of measure for fuel efficiency.
 class UnitFuelEfficiency
 ```
 
+```objc
+@interface NSUnitFuelEfficiency : NSDimension
+```
+
 #### Overview
 
-You typically use instances of [`UnitFuelEfficiency`](unitfuelefficiency.md) to represent specific quantities of fuel efficiency using the [`NSMeasurement`](nsmeasurement.md) class.
+You typically use instances of [`UnitFuelEfficiency`](./unitfuelefficiency.md) to represent specific quantities of fuel efficiency using the [`NSMeasurement`](./nsmeasurement.md) class.
 
 ##### Fuel Efficiency
 
 Fuel efficiency corresponds to the thermal efficiency of a process that converts the chemical potential energy of a fuel into kinetic energy. Fuel efficiency can be expressed by SI derived units in terms of cubic meters per meter (m3/m), but is more commonly expressed in terms of liters per kilometer (L/km) and miles per gallon (mpg).
 
-The [`UnitFuelEfficiency`](unitfuelefficiency.md) class defines its [`baseUnit()`](dimension/baseunit().md) as [`litersPer100Kilometers`](unitfuelefficiency/litersper100kilometers.md), and provides the following units:
+The [`UnitFuelEfficiency`](./unitfuelefficiency.md) class defines its [`baseUnit()`](./dimension/baseunit%28%29.md) as [`litersPer100Kilometers`](./unitfuelefficiency/litersper100kilometers.md), and provides the following units:
 
 | Name | Method | Symbol |
 | --- | --- | --- |
-| Liters Per 100 Kilometers | [`litersPer100Kilometers`](unitfuelefficiency/litersper100kilometers.md) | L/100km |
-| Miles Per Gallon | [`milesPerGallon`](unitfuelefficiency/milespergallon.md) | mpg |
-| Miles Per Imperial Gallon | [`milesPerImperialGallon`](unitfuelefficiency/milesperimperialgallon.md) | mpg |
+| Liters Per 100 Kilometers | [`litersPer100Kilometers`](./unitfuelefficiency/litersper100kilometers.md) | L/100km |
+| Miles Per Gallon | [`milesPerGallon`](./unitfuelefficiency/milespergallon.md) | mpg |
+| Miles Per Imperial Gallon | [`milesPerImperialGallon`](./unitfuelefficiency/milesperimperialgallon.md) | mpg |
 
 ## Topics
 
 ### Accessing the Base Unit
-- [class func baseUnit() -> Self](dimension/baseunit.md)
+- [class func baseUnit() -> Self](./dimension/baseunit%28%29.md)
   Returns the base unit.
 ### Accessing Predefined Units
-- [class var milesPerImperialGallon: UnitFuelEfficiency](unitfuelefficiency/milesperimperialgallon.md)
+- [class var milesPerImperialGallon: UnitFuelEfficiency](./unitfuelefficiency/milesperimperialgallon.md)
   The miles per imperial gallon unit of fuel efficiency.
-- [class var litersPer100Kilometers: UnitFuelEfficiency](unitfuelefficiency/litersper100kilometers.md)
+- [class var litersPer100Kilometers: UnitFuelEfficiency](./unitfuelefficiency/litersper100kilometers.md)
   The liters per 100 kilometers unit of fuel efficiency.
-- [class var milesPerGallon: UnitFuelEfficiency](unitfuelefficiency/milespergallon.md)
+- [class var milesPerGallon: UnitFuelEfficiency](./unitfuelefficiency/milespergallon.md)
   The miles per gallon unit of fuel efficiency.
 
 ## Relationships
 
 ### Inherits From
-- [Dimension](dimension.md)
+- [Dimension](./dimension.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

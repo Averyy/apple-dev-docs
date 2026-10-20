@@ -1,7 +1,8 @@
 # thumbnailImageData
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thumbnail version of the contact’s profile picture.
 
@@ -19,15 +20,28 @@ The thumbnail version of the contact’s profile picture.
 var thumbnailImageData: Data? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * thumbnailImageData;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSData * thumbnailImageData;
+```
+
 #### Discussion
 
-The [`thumbnailImageData`](cncontact/thumbnailimagedata.md) property is derived from the [`imageData`](cncontact/imagedata.md) property, including cropping information from vCards or edits from contact viewing. It is recommended that you fetch this property only when you need to access its value, such as when you need to display the contact’s profile thumbnail picture.
+The [`thumbnailImageData`](./thumbnailimagedata.md) property is derived from the [`imageData`](./imagedata.md) property, including cropping information from vCards or edits from contact viewing. It is recommended that you fetch this property only when you need to access its value, such as when you need to display the contact’s profile thumbnail picture.
 
 ## See Also
 
-- [var imageData: Data?](cncontact/imagedata.md)
+### Getting Contact Images
+- [var imageData: Data?](./imagedata.md)
   The profile picture of a contact.
-- [var imageDataAvailable: Bool](cncontact/imagedataavailable.md)
+- [var imageDataAvailable: Bool](./imagedataavailable.md)
   A Boolean indicating whether a contact has a profile picture.
 
 

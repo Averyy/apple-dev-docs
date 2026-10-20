@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The output type for this regular expression.
@@ -25,15 +26,16 @@ associatedtype RegexOutput
 
 A `Regex` instance’s output type depends on whether the `Regex` has captures and how it is created.
 
-- A `Regex` created from a string using the `init(_:)` initializer has an output type of [`AnyRegexOutput`](anyregexoutput.md), whether it has captures or not.
+- A `Regex` created from a string using the `init(_:)` initializer has an output type of [`AnyRegexOutput`](../anyregexoutput.md), whether it has captures or not.
 - A `Regex` without captures created from a regex literal, the `init(_:as:)` initializer, or a `RegexBuilder` closure has a `Substring` output type, where the substring is the portion of the string that was matched.
 - A `Regex` with captures created from a regex literal or the `init(_:as:)` initializer has a tuple of substrings as its output type. The first component of the tuple is the full portion of the string that was matched, with the remaining components holding the captures.
 
 ## See Also
 
-- [RegexComponent.DateStyle](regexcomponent/datestyle.md)
+### Supporting types
+- [RegexComponent.DateStyle](./datestyle.md)
   A type alias to use when matching date components in a regular expression.
-- [RegexComponent.TimeStyle](regexcomponent/timestyle.md)
+- [RegexComponent.TimeStyle](./timestyle.md)
   A type alias to use when matching time components in a regular expression.
 
 

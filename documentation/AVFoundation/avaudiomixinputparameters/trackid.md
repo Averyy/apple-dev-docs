@@ -1,7 +1,8 @@
 # trackID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the audio track to which the parameters should be applied.
 
@@ -18,6 +19,10 @@ The identifier of the audio track to which the parameters should be applied.
 
 ```swift
 var trackID: CMPersistentTrackID { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID trackID;
 ```
 
 

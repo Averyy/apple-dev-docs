@@ -1,7 +1,8 @@
 # AssetCredentialCertificate
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reference to one PKCS #1 or PEM encoded certificate.
 
@@ -16,7 +17,7 @@ A reference to one PKCS #1 or PEM encoded certificate.
 
 ## Declaration
 
-```swift
+```
 object AssetCredentialCertificate
 ```
 
@@ -24,7 +25,7 @@ object AssetCredentialCertificate
 
 Specify `com.apple.asset.credential.certificate` as the declaration type.
 
-##### Asset Example
+##### Asset example
 
 ```json
 {
@@ -43,9 +44,9 @@ Specify `com.apple.asset.credential.certificate` as the declaration type.
 ## Topics
 
 ### Objects
-- [object AssetCredentialCertificateAuthenticationObject](assetcredentialcertificateauthenticationobject.md)
+- [object AssetCredentialCertificateAuthenticationObject](./assetcredentialcertificateauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
-- [object AssetCredentialCertificateReferenceObject](assetcredentialcertificatereferenceobject.md)
+- [object AssetCredentialCertificateReferenceObject](./assetcredentialcertificatereferenceobject.md)
   The external reference. Ensure the asset data contains exactly one certificate. If the PEM data contains more than one certificate, the system installs the first certificate and ignores the rest. Ensure that the asset data uses a media type of `application/pkcs1` or `application/pem` to correctly identify the type of encoded certificate. If the asset data includes a `ContentType` sub-key, set it to the corresponding media type.
 
 ## Properties
@@ -55,17 +56,18 @@ Specify `com.apple.asset.credential.certificate` as the declaration type.
 
 ## See Also
 
-- [object AssetCredentialACME](assetcredentialacme.md)
+### Assets
+- [object AssetCredentialACME](./assetcredentialacme.md)
   A reference to an ACME identity.
-- [object AssetCredentialIdentity](assetcredentialidentity.md)
+- [object AssetCredentialIdentity](./assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
-- [object AssetCredentialSCEP](assetcredentialscep.md)
+- [object AssetCredentialSCEP](./assetcredentialscep.md)
   A reference to a SCEP identity.
-- [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
+- [object AssetCredentialUserNameAndPassword](./assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
-- [object AssetData](assetdata.md)
+- [object AssetData](./assetdata.md)
   A reference to arbitrary data with a specific media type.
-- [object AssetUserIdentity](assetuseridentity.md)
+- [object AssetUserIdentity](./assetuseridentity.md)
   The user-identity data.
 
 

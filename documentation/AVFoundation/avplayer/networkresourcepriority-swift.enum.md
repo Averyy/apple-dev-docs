@@ -1,7 +1,8 @@
 # AVPlayer.NetworkResourcePriority
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 This defines the network resource priority for a player.
 
@@ -20,31 +21,36 @@ This defines the network resource priority for a player.
 enum NetworkResourcePriority
 ```
 
+```c
+enum AVPlayerNetworkResourcePriority : NSInteger;
+```
+
 ## Topics
 
 ### Priorities
-- [AVPlayer.NetworkResourcePriority.default](avplayer/networkresourcepriority-swift.enum/default.md)
+- [AVPlayer.NetworkResourcePriority.default](./networkresourcepriority-swift.enum/default.md)
   The default priority level given to a player for loading network resources. Use this when the player requires an optimal level of network resources and streaming in high-quality resolution is ideal. Players with AVPlayerNetworkResourcePriorityHigh will take precedence over this player. This player will take precedence over players with AVPlayerNetworkResourcePriorityLow.
-- [AVPlayer.NetworkResourcePriority.high](avplayer/networkresourcepriority-swift.enum/high.md)
+- [AVPlayer.NetworkResourcePriority.high](./networkresourcepriority-swift.enum/high.md)
   Indicates a high priority level for loading network resources. Use this when the player requires a high level of network resources and streaming in high-quality resolution is crucial. This player will take precedence over other lower priority players.
-- [AVPlayer.NetworkResourcePriority.low](avplayer/networkresourcepriority-swift.enum/low.md)
+- [AVPlayer.NetworkResourcePriority.low](./networkresourcepriority-swift.enum/low.md)
   Indicates a low priority level for loading network resources. Use this when the player requires minimal network bandwidth and streaming in high-quality resolution is not crucial. Other players with higher priority will take precedence over this player.
 ### Initializers
-- [init?(rawValue: Int)](avplayer/networkresourcepriority-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./networkresourcepriority-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.property.md)
+### Configuring the network resource priority
+- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](./networkresourcepriority-swift.property.md)
   Indicates the priority of this player for network bandwidth resource distribution.
 
 

@@ -1,7 +1,8 @@
 # <=(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 

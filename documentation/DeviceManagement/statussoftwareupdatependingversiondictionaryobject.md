@@ -1,7 +1,8 @@
 # StatusSoftwareUpdatePendingVersionDictionaryObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains the build and OS versions of the software update that’s pending on the device.
 
@@ -15,7 +16,7 @@ A dictionary that contains the build and OS versions of the software update that
 
 ## Declaration
 
-```swift
+```
 object StatusSoftwareUpdatePendingVersionDictionaryObject
 ```
 

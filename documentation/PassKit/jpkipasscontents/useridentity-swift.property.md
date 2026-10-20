@@ -1,7 +1,8 @@
 # userIdentity
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows for access to the user identity, if present in the JPKI applet.
 
@@ -17,9 +18,10 @@ let userIdentity: JPKIPassContents.UserIdentity?
 
 ## See Also
 
-- [func changePIN(from: String, to: String) async throws](jpkipasscontents/useridentity-swift.struct/changepin(from:to:).md)
+### Identifying the pass user
+- [func changePIN(from: String, to: String) async throws](./useridentity-swift.struct/changepin%28from,to%29.md)
   A function that allows for the change of the PIN associated with the user identity.
-- [JPKIPassContents.UserIdentity.AuthenticationType](jpkipasscontents/useridentity-swift.struct/authenticationtype.md)
+- [JPKIPassContents.UserIdentity.AuthenticationType](./useridentity-swift.struct/authenticationtype.md)
   Defines valid authentication types associated with the user identity.
 
 

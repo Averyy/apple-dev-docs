@@ -1,11 +1,12 @@
 # ExpressibleByUnicodeScalarLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias UnicodeScalarLiteralType](string/unicodescalarliteraltype.md)
+- [typealias UnicodeScalarLiteralType](./unicodescalarliteraltype.md)
   A type that represents a Unicode scalar literal.
 
 

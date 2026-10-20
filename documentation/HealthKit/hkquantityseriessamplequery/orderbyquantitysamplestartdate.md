@@ -1,7 +1,8 @@
 # orderByQuantitySampleStartDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the query groups the results based on the quantity sample’s start date.
 
@@ -19,15 +20,20 @@ A Boolean value that determines whether the query groups the results based on th
 var orderByQuantitySampleStartDate: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL orderByQuantitySampleStartDate;
+```
+
 #### Discussion
 
-By default the query returns all the quantities in ascending order based on their start date. If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), HealthKit first sorts the matching [`HKQuantitySample`](hkquantitysample.md) objects by their [`startDate`](hksample/startdate.md) parameter. Then, for each sample, it returns all the quantity objects in ascending order. If the sample objects overlap, then the quantities may not appear in ascending order when switching from one sample to the next.
+By default the query returns all the quantities in ascending order based on their start date. If you set this property to [`true`](../../Swift/true.md), HealthKit first sorts the matching [`HKQuantitySample`](../hkquantitysample.md) objects by their [`startDate`](../hksample/startdate.md) parameter. Then, for each sample, it returns all the quantity objects in ascending order. If the sample objects overlap, then the quantities may not appear in ascending order when switching from one sample to the next.
 
 ## See Also
 
-- [init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)](hkquantityseriessamplequery/init(quantitytype:predicate:quantityhandler:).md)
+### Creating a Series Query
+- [init(quantityType: HKQuantityType, predicate: NSPredicate?, quantityHandler: (HKQuantitySeriesSampleQuery, HKQuantity?, DateInterval?, HKQuantitySample?, Bool, (any Error)?) -> Void)](./init%28quantitytype,predicate,quantityhandler%29.md)
   Creates a new query for a series of the specified quantity type.
-- [var includeSample: Bool](hkquantityseriessamplequery/includesample.md)
+- [var includeSample: Bool](./includesample.md)
   A Boolean value that determines whether the query should return the series sample.
 
 

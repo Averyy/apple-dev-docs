@@ -1,7 +1,8 @@
 # DebugReplaceableView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Erases view opaque result types in debug builds.
 
@@ -34,7 +35,7 @@ This type acts similarly to an `AnyView` in that it type-erases its content, how
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 
 ---

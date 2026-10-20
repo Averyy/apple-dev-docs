@@ -1,7 +1,8 @@
 # DOMPath
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMPath
 ```
 
 ## Topics
 
 ### Instance Methods
-- [addPath](dompath/1634450-addpath.md)
+- [addPath](./dompath/api-1634450-addpath.md)
 
 
 ---

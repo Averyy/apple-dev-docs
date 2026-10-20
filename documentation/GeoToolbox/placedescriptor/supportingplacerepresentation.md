@@ -1,7 +1,8 @@
 # PlaceDescriptor.SupportingPlaceRepresentation
 
 **Framework**: GeoToolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the representation of a physical place using proprietary attributes, such as an alphanumeric location identifier from a mapping service provider.
 
@@ -23,21 +24,22 @@ enum SupportingPlaceRepresentation
 ## Topics
 
 ### Getting available supporting representations
-- [PlaceDescriptor.SupportingPlaceRepresentation.serviceIdentifiers(_:)](placedescriptor/supportingplacerepresentation/serviceidentifiers(_:).md)
+- [PlaceDescriptor.SupportingPlaceRepresentation.serviceIdentifiers(_:)](./supportingplacerepresentation/serviceidentifiers%28_%29.md)
   Identifiers that represent a place for different mapping service providers
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [PlaceDescriptor.PlaceRepresentation](placedescriptor/placerepresentation.md)
+### Values that describe places and mapping service providers
+- [PlaceDescriptor.PlaceRepresentation](./placerepresentation.md)
   Values that represent a physical place, suitable for use when searching or retrieving rich data.
 
 

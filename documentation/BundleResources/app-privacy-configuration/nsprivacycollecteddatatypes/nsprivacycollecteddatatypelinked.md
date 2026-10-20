@@ -1,7 +1,8 @@
 # NSPrivacyCollectedDataTypeLinked
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean that indicates whether your app or third-party SDK links this data type to the user’s identity.
 
@@ -14,21 +15,23 @@ A Boolean that indicates whether your app or third-party SDK links this data typ
 - visionOS 1.0+
 - watchOS 10.0+
 
+## Details
+
+- **Name**: `NSPrivacyCollectedDataTypeLinked` (Linked to User)
+- **Type**: boolean
+
 ## Mentions
 
-- [Describing data use in privacy manifests](describing-data-use-in-privacy-manifests.md)
-
-
-
-**Type**: boolean
+- [Describing data use in privacy manifests](../../describing-data-use-in-privacy-manifests.md)
 
 #### Discussion
 
-For more information, see Data linked to the user in [`App privacy details on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/app-privacy-details/#linked-data).
+For more information, see Data linked to the user in [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/#linked-data).
 
 ## See Also
 
-- [NSPrivacyCollectedDataTypeTracking](app-privacy-configuration/nsprivacycollecteddatatypes/nsprivacycollecteddatatypetracking.md)
+### Reporting tracking and linking collected data
+- [NSPrivacyCollectedDataTypeTracking](./nsprivacycollecteddatatypetracking.md)
   A Boolean that indicates whether your app or third-party SDK uses this data type to track.
 
 

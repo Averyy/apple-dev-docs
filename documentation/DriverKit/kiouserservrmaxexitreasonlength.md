@@ -1,17 +1,18 @@
 # kIOUserServrMaxExitReasonLength
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOUserServrMaxExitReasonLength
 ```
 

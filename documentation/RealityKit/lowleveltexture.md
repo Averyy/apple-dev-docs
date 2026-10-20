@@ -1,7 +1,8 @@
 # LowLevelTexture
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for texture data allowing you to create and update textures using your own format.
 
@@ -22,15 +23,15 @@ class LowLevelTexture
 
 ## Mentions
 
-- [Creating a dynamic height and normal map with low-level texture](creating-a-dynamic-height-map-with-low-level-texture.md)
+- [Creating a dynamic height and normal map with low-level texture](./creating-a-dynamic-height-map-with-low-level-texture.md)
 
 #### Overview
 
 Use `LowLevelTexture` when you want to bring your own texture data to RealityKit, or update your data frequently. You update the data on the GPU with Metal compute shaders. This is ideal for bringing your own textures to RealityKit as-is, or when you intend to update your data frequently.
 
-> **Note**: For a simpler alternative, consider creating your [`TextureResource`](textureresource.md) from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) with `TextureResource/init(image:withName:options:)-4qz9s`, `TextureResource/texture2DArray(slices:named:options:)-50g10`, `TextureResource/cube(slices:named:options:)-57yj1`, or `TextureResource/texture3D(slices:named:options:)-6pude`.
+> **Note**: For a simpler alternative, consider creating your [`TextureResource`](./textureresource.md) from a [`CGImage`](../CoreGraphics/cgimage.md) with `TextureResource/init(image:withName:options:)-4qz9s`, `TextureResource/texture2DArray(slices:named:options:)-50g10`, `TextureResource/cube(slices:named:options:)-57yj1`, or `TextureResource/texture3D(slices:named:options:)-6pude`.
 
-Express your texture by creating a [`LowLevelTexture.Descriptor`](lowleveltexture/descriptor-swift.struct.md) that describes how the data is laid out, along with the size of the texture.  This descriptor is similar to [`MTLTextureDescriptor`](https://developer.apple.com/documentation/metal/mtltexturedescriptor).
+Express your texture by creating a [`LowLevelTexture.Descriptor`](./lowleveltexture/descriptor-swift.struct.md) that describes how the data is laid out, along with the size of the texture.  This descriptor is similar to [`MTLTextureDescriptor`](../Metal/mtltexturedescriptor.md).
 
 To use `LowLevelTexture`, first configure the descriptor with the desired characteristics of your texture.
 
@@ -54,7 +55,7 @@ var textureDescriptor: LowLevelTexture.Descriptor {
 }
 ```
 
-Then, you can initialize the `LowLevelTexture` from its descriptor and provide it to a [`TextureResource`](textureresource.md).
+Then, you can initialize the `LowLevelTexture` from its descriptor and provide it to a [`TextureResource`](./textureresource.md).
 
 ```swift
 let texture = try LowLevelTexture(descriptor: textureDescriptor)
@@ -134,7 +135,7 @@ func populate(texture: LowLevelTexture, device: MTLDevice) {
 }
 ```
 
-To finish, add your [`TextureResource`](textureresource.md) to a [`Material`](material.md) and display it on an [`Entity`](entity.md).
+To finish, add your [`TextureResource`](./textureresource.md) to a [`Material`](./material.md) and display it on an [`Entity`](./entity.md).
 
 ```swift
 func textureEntity(device: MTLDevice) throws -> Entity {
@@ -154,52 +155,53 @@ func textureEntity(device: MTLDevice) throws -> Entity {
 }
 ```
 
-![A screenshot of a circle.  The color of the circle is a linear gradient; the top is light blue and the bottom is close to white.](/images/com.apple.RealityKit/lowleveltexture-circle-unlit.png)
+![A screenshot of a circle.  The color of the circle is a linear gradient; the top is light blue and the bottom is close to white.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/lowleveltexture-circle-unlit.png)
 
-The [`TextureResource`](textureresource.md) retains a reference to the `LowLevelTexture`, and presents changes made to the `LowLevelTexture` when the renderer updates.
+The [`TextureResource`](./textureresource.md) retains a reference to the `LowLevelTexture`, and presents changes made to the `LowLevelTexture` when the renderer updates.
 
 ## Topics
 
 ### Creating a texture
-- [convenience init(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?) throws](lowleveltexture/init(deviceresource:using:).md)
-  Creates a low-level texture from an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
+- [convenience init(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?) throws](./lowleveltexture/init%28deviceresource,using%29.md)
+  Creates a low-level texture from an existing [`LowLevelDeviceResource`](./lowleveldeviceresource.md) created and managed by the application.
 ### Replacing texture contents
-- [func replace(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?)](lowleveltexture/replace(deviceresource:using:).md)
-  Replaces this object’s underlying texture with an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
+- [func replace(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?)](./lowleveltexture/replace%28deviceresource,using%29.md)
+  Replaces this object’s underlying texture with an existing [`LowLevelDeviceResource`](./lowleveldeviceresource.md) created and managed by the application.
 ### Structures
-- [LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.struct.md)
+- [LowLevelTexture.Descriptor](./lowleveltexture/descriptor-swift.struct.md)
   An object that you use to configure new `LowLevelTexture` objects.
 ### Initializers
-- [init(descriptor: LowLevelTexture.Descriptor) throws](lowleveltexture/init(descriptor:).md)
+- [init(descriptor: LowLevelTexture.Descriptor) throws](./lowleveltexture/init%28descriptor%29.md)
   Creates a low-level texture from a descriptor.
 ### Instance Properties
-- [let descriptor: LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.property.md)
+- [let descriptor: LowLevelTexture.Descriptor](./lowleveltexture/descriptor-swift.property.md)
   The descriptor that you use to initialize the `LowLevelTexture`.
 ### Instance Methods
-- [func read() -> any MTLTexture](lowleveltexture/read.md)
+- [func read() -> any MTLTexture](./lowleveltexture/read%28%29.md)
   Retrieves the current texture for GPU reading.
-- [func replace(using: any MTLCommandBuffer) -> any MTLTexture](lowleveltexture/replace(using:).md)
+- [func replace(using: any MTLCommandBuffer) -> any MTLTexture](./lowleveltexture/replace%28using%29.md)
   Retrieves a Metal texture that your app’s shaders can write to when they run on a GPU.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
+### Texture drawing
+- [Rendering a windowed game in stereo](./rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [Creating a dynamic height and normal map with low-level texture](creating-a-dynamic-height-map-with-low-level-texture.md)
+- [Creating a dynamic height and normal map with low-level texture](./creating-a-dynamic-height-map-with-low-level-texture.md)
   Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
-- [LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.struct.md)
+- [LowLevelTexture.Descriptor](./lowleveltexture/descriptor-swift.struct.md)
   An object that you use to configure new `LowLevelTexture` objects.
-- [TextureResource.Drawable](textureresource/drawable.md)
+- [TextureResource.Drawable](./textureresource/drawable.md)
   A drawable associated with a drawable queue
-- [TextureResource.DrawableQueue](textureresource/drawablequeue-swift.class.md)
+- [TextureResource.DrawableQueue](./textureresource/drawablequeue-swift.class.md)
   A drawable queue that may be used to update a texture resource dynamically
-- [TextureResource.DrawableQueue.Descriptor](textureresource/drawablequeue-swift.class/descriptor.md)
+- [TextureResource.DrawableQueue.Descriptor](./textureresource/drawablequeue-swift.class/descriptor.md)
   Describes the texture managed by the drawable queue
 
 

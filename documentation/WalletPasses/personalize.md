@@ -1,7 +1,8 @@
 # Personalize
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains the personalization information for a rewards pass.
 
@@ -12,7 +13,7 @@ An object that contains the personalization information for a rewards pass.
 
 ## Declaration
 
-```swift
+```
 object Personalize
 ```
 
@@ -20,7 +21,11 @@ object Personalize
 
 - `description` (string) *(required)*: A brief description of the program for a pass that appears on the signup sheet, under the personalization logo.
 - `requiredPersonalizationFields` ([string]) *(required)*: An array that identifies the signup data required from the user the system shows on the generated signup form.
-- `termsAndConditions` (string): A description of the program’s terms and conditions. This string can contain HTML link tags to external content. If present, this information appears after the user enters their personal information and taps the Next button. The user then has the option to agree to the terms, or to cancel the sign-up process.
+
+  **Allowed Values**: `PKPassPersonalizationFieldName`, `PKPassPersonalizationFieldPostalCode`, `PKPassPersonalizationFieldEmailAddress`, `PKPassPersonalizationFieldPhoneNumber`
+- `termsAndConditions` (string): A description of the program’s terms and conditions. This string can contain HTML link tags to external content.
+
+  If present, this information appears after the user enters their personal information and taps the Next button. The user then has the option to agree to the terms, or to cancel the sign-up process.
 
 
 ---

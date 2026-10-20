@@ -1,7 +1,8 @@
 # OSSystemExtensionError.Code.duplicateExtensionIdentifer
 
 **Framework**: System Extensions  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the extension identifier duplicates an existing identifier.
 
@@ -17,31 +18,36 @@ An error code that indicates the extension identifier duplicates an existing ide
 case duplicateExtensionIdentifer
 ```
 
+```c
+OSSystemExtensionErrorDuplicateExtensionIdentifer
+```
+
 ## See Also
 
-- [OSSystemExtensionError.Code.unknown](ossystemextensionerror/code/unknown.md)
+### Error Codes
+- [OSSystemExtensionError.Code.unknown](./unknown.md)
   An error code that indicates an unknown error occurred.
-- [OSSystemExtensionError.Code.missingEntitlement](ossystemextensionerror/code/missingentitlement.md)
+- [OSSystemExtensionError.Code.missingEntitlement](./missingentitlement.md)
   An error code that indicates the system extension lacks a required entitlement.
-- [OSSystemExtensionError.Code.unsupportedParentBundleLocation](ossystemextensionerror/code/unsupportedparentbundlelocation.md)
+- [OSSystemExtensionError.Code.unsupportedParentBundleLocation](./unsupportedparentbundlelocation.md)
   An error code that indicates the extension’s parent app isn’t in a valid location for activation.
-- [OSSystemExtensionError.Code.extensionNotFound](ossystemextensionerror/code/extensionnotfound.md)
+- [OSSystemExtensionError.Code.extensionNotFound](./extensionnotfound.md)
   An error code that indicates the manager can’t find the system extension.
-- [OSSystemExtensionError.Code.extensionMissingIdentifier](ossystemextensionerror/code/extensionmissingidentifier.md)
+- [OSSystemExtensionError.Code.extensionMissingIdentifier](./extensionmissingidentifier.md)
   An error code that indicates the extension identifier is missing.
-- [OSSystemExtensionError.Code.unknownExtensionCategory](ossystemextensionerror/code/unknownextensioncategory.md)
+- [OSSystemExtensionError.Code.unknownExtensionCategory](./unknownextensioncategory.md)
   An error code that indicates the extension manager can’t recognize the extension’s category identifier.
-- [OSSystemExtensionError.Code.codeSignatureInvalid](ossystemextensionerror/code/codesignatureinvalid.md)
+- [OSSystemExtensionError.Code.codeSignatureInvalid](./codesignatureinvalid.md)
   An error code that indicates the extension’s signature is invalid.
-- [OSSystemExtensionError.Code.validationFailed](ossystemextensionerror/code/validationfailed.md)
+- [OSSystemExtensionError.Code.validationFailed](./validationfailed.md)
   An error code that indicates the manager can’t validate the extension.
-- [OSSystemExtensionError.Code.forbiddenBySystemPolicy](ossystemextensionerror/code/forbiddenbysystempolicy.md)
+- [OSSystemExtensionError.Code.forbiddenBySystemPolicy](./forbiddenbysystempolicy.md)
   An error code that indicates the system policy prohibits activating the system extension.
-- [OSSystemExtensionError.Code.requestCanceled](ossystemextensionerror/code/requestcanceled.md)
+- [OSSystemExtensionError.Code.requestCanceled](./requestcanceled.md)
   An error code that indicates the system extension manager request was canceled.
-- [OSSystemExtensionError.Code.requestSuperseded](ossystemextensionerror/code/requestsuperseded.md)
+- [OSSystemExtensionError.Code.requestSuperseded](./requestsuperseded.md)
   An error code that indicates the system extension request failed because the system already has a pending request for the same identifier.
-- [OSSystemExtensionError.Code.authorizationRequired](ossystemextensionerror/code/authorizationrequired.md)
+- [OSSystemExtensionError.Code.authorizationRequired](./authorizationrequired.md)
   An error code that indicates the system was unable to obtain the proper authorization.
 
 

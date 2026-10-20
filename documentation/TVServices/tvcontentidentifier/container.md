@@ -1,18 +1,25 @@
 # container
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container that this content item is contained in.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentIdentifier has been replaced by TVTopShelfContentProvider
 
 ## Declaration
 
 ```swift
 @NSCopying
 var container: TVContentIdentifier? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) TVContentIdentifier * container;
 ```
 
 #### Discussion
@@ -23,7 +30,8 @@ The container value may be `nil`, in which case this item represents a top-level
 
 ## See Also
 
-- [var identifier: String](tvcontentidentifier/identifier.md)
+### Inspecting an Identifier’s Contents
+- [var identifier: String](./identifier.md)
   The string that identifies this content item.
 
 

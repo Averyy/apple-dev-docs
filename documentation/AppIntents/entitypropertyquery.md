@@ -1,7 +1,8 @@
 # EntityPropertyQuery
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for locating entities by matching values against one or more of their properties.
 
@@ -11,7 +12,7 @@ An interface for locating entities by matching values against one or more of the
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,15 +23,15 @@ protocol EntityPropertyQuery : EntityQuery
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
-`EntityPropertyQuery` provides an [`EntityQuery`](entityquery.md) with the ability to query instances according to its traits as they are modeled through query properties and their corresponding comparators.
+`EntityPropertyQuery` provides an [`EntityQuery`](./entityquery.md) with the ability to query instances according to its traits as they are modeled through query properties and their corresponding comparators.
 
-At runtime, [`entities(matching:mode:sortedBy:limit:)`](entitypropertyquery/entities(matching:mode:sortedby:limit:).md) receives an array of `ComparatorMappingType` instances - a type of your choice that represents the different comparator mappings given by the user - and is responsible for fetching entities matching those comparators.
+At runtime, [`entities(matching:mode:sortedBy:limit:)`](./entitypropertyquery/entities%28matching,mode,sortedby,limit%29.md) receives an array of `ComparatorMappingType` instances - a type of your choice that represents the different comparator mappings given by the user - and is responsible for fetching entities matching those comparators.
 
-The `properties` property on a `EntityPropertyQuery` contains the set of [`EntityQueryProperty`](entityqueryproperty.md)s the query accepts. When declaring each property’s set of supported [`EntityQueryComparator`](entityquerycomparator.md)s, you will supply a closure that will transform a runtime user-supplied value into an instance of `ComparatorMappingType`.
+The `properties` property on a `EntityPropertyQuery` contains the set of [`EntityQueryProperty`](./entityqueryproperty.md)s the query accepts. When declaring each property’s set of supported [`EntityQueryComparator`](./entityquerycomparator.md)s, you will supply a closure that will transform a runtime user-supplied value into an instance of `ComparatorMappingType`.
 
 The AppIntents runtime will invoke query comparator mapping closures for each comparator included in the user request, gather their output `ComparatorMappingType` values, and then invoke the `entities` function. It is then up to you to retrieve entities matching those comparators, using whichever backend (in-memory lookup, CoreData, remote network call, …) suits your application. For example, consider the following simplified `AppEntity` for a photo:
 
@@ -50,7 +51,7 @@ The following example shows how you would build a `EntityPropertyQuery` that all
 - After a certain date
 - Containing a given tag
 
-In `entities` you want to retrieve photos through a network request, so you supply mapping closures returning `URLQueryItem` instances for each [`EntityQueryComparator`](entityquerycomparator.md). Then you can use those `URLQueryItem` in `entities` to construct the correct `URL` to fetch entities.
+In `entities` you want to retrieve photos through a network request, so you supply mapping closures returning `URLQueryItem` instances for each [`EntityQueryComparator`](./entityquerycomparator.md). Then you can use those `URLQueryItem` in `entities` to construct the correct `URL` to fetch entities.
 
 ```swift
 struct MyPhotoQuery: EntityPropertyQuery {
@@ -82,44 +83,45 @@ struct MyPhotoQuery: EntityPropertyQuery {
 ## Topics
 
 ### Specifying the queryable properties
-- [static var properties: Self.QueryProperties](entitypropertyquery/properties.md)
+- [static var properties: Self.QueryProperties](./entitypropertyquery/properties.md)
   The set of query properties supported by this query.
-- [EntityPropertyQuery.QueryProperties](entitypropertyquery/queryproperties.md)
-- [EntityPropertyQuery.Property](entitypropertyquery/property.md)
-- [associatedtype ComparatorMappingType](entitypropertyquery/comparatormappingtype.md)
+- [EntityPropertyQuery.QueryProperties](./entitypropertyquery/queryproperties.md)
+- [EntityPropertyQuery.Property](./entitypropertyquery/property.md)
+- [associatedtype ComparatorMappingType](./entitypropertyquery/comparatormappingtype.md)
   Type produced by `EntityQueryComparator` mapping closures and supplied as input to `results`.
 ### Sorting the results
-- [static var sortingOptions: Self.SortingOptions](entitypropertyquery/sortingoptions-swift.type.property.md)
+- [static var sortingOptions: Self.SortingOptions](./entitypropertyquery/sortingoptions-swift.type.property.md)
   The set of sorting orders supported by this query.
-- [EntityPropertyQuery.SortingOptions](entitypropertyquery/sortingoptions-swift.typealias.md)
-- [EntityPropertyQuery.SortableBy](entitypropertyquery/sortableby.md)
+- [EntityPropertyQuery.SortingOptions](./entitypropertyquery/sortingoptions-swift.typealias.md)
+- [EntityPropertyQuery.SortableBy](./entitypropertyquery/sortableby.md)
 ### Searching for entities
-- [func entities(matching: [Self.ComparatorMappingType], mode: Self.ComparatorMode, sortedBy: [EntityQuerySort<Self.Entity>], limit: Int?) async throws -> Self.Result](entitypropertyquery/entities(matching:mode:sortedby:limit:).md)
+- [func entities(matching: [Self.ComparatorMappingType], mode: Self.ComparatorMode, sortedBy: [EntityQuerySort<Self.Entity>], limit: Int?) async throws -> Self.Result](./entitypropertyquery/entities%28matching,mode,sortedby,limit%29.md)
   Retrieves instances matching the supplied comparators.
-- [EntityPropertyQuery.Sort](entitypropertyquery/sort.md)
-- [EntityPropertyQuery.ComparatorMode](entitypropertyquery/comparatormode.md)
-- [enum EntityQueryComparatorMode](entityquerycomparatormode.md)
+- [EntityPropertyQuery.Sort](./entitypropertyquery/sort.md)
+- [EntityPropertyQuery.ComparatorMode](./entitypropertyquery/comparatormode.md)
+- [enum EntityQueryComparatorMode](./entityquerycomparatormode.md)
   Modes that determine how to apply a query’s comparators.
 ### Type Properties
-- [static var findIntentDescription: IntentDescription?](entitypropertyquery/findintentdescription.md)
+- [static var findIntentDescription: IntentDescription?](./entitypropertyquery/findintentdescription.md)
   Defines how the generated ‘Find’ Shortcuts action of this query type is displayed to the user.
 
 ## Relationships
 
 ### Inherits From
-- [DynamicOptionsProvider](dynamicoptionsprovider.md)
-- [EntityQuery](entityquery.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicOptionsProvider](./dynamicoptionsprovider.md)
+- [EntityQuery](./entityquery.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EntityQueryProperties](entityqueryproperties.md)
+### Property-matched queries
+- [struct EntityQueryProperties](./entityqueryproperties.md)
   A type that provides the properties to include in a property-matched query.
-- [class EntityQueryProperty](entityqueryproperty.md)
+- [class EntityQueryProperty](./entityqueryproperty.md)
   An object that provides the supported comparators you use to describe the different ways users can query against a property of an app entity.
-- [Property comparators](property-comparators.md)
+- [Property comparators](./property-comparators.md)
   Specify the type of comparison to perform during a property-matched query.
 
 

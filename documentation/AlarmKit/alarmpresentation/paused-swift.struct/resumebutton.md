@@ -1,7 +1,8 @@
 # resumeButton
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the resume button.
 
@@ -18,9 +19,10 @@ var resumeButton: AlarmButton
 
 ## See Also
 
-- [init(title: LocalizedStringResource, resumeButton: AlarmButton)](alarmpresentation/paused-swift.struct/init(title:resumebutton:).md)
+### Creating a resume button
+- [init(title: LocalizedStringResource, resumeButton: AlarmButton)](./init%28title,resumebutton%29.md)
   Creates a pause presentation with a resume button.
-- [var title: LocalizedStringResource](alarmpresentation/paused-swift.struct/title.md)
+- [var title: LocalizedStringResource](./title.md)
   The title of the paused UI.
 
 

@@ -1,7 +1,8 @@
 # broadcast(_:shape:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a broadcast operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a broadcast operation and returns the result tensor.
 
 ```swift
 func broadcast(_ tensor: MPSGraphTensor, shape: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) broadcastTensor:(MPSGraphTensor *) tensor toShape:(MPSShape *) shape name:(NSString *) name;
 ```
 
 #### Return Value

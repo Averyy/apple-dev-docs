@@ -1,7 +1,8 @@
 # collectionView(_:didHighlightItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the item at the specified index path was highlighted.
 
@@ -18,6 +19,10 @@ Tells the delegate that the item at the specified index path was highlighted.
 optional func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath)
 ```
 
+```objc
+- (void) collectionView:(UICollectionView *) collectionView didHighlightItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Discussion
 
 The collection view calls this method only in response to user interactions and does not call it if you programmatically set the highlighting on a cell.
@@ -29,9 +34,10 @@ The collection view calls this method only in response to user interactions and 
 
 ## See Also
 
-- [func collectionView(UICollectionView, shouldHighlightItemAt: IndexPath) -> Bool](uicollectionviewdelegate/collectionview(_:shouldhighlightitemat:).md)
+### Managing cell highlighting
+- [func collectionView(UICollectionView, shouldHighlightItemAt: IndexPath) -> Bool](./collectionview%28_,shouldhighlightitemat%29.md)
   Asks the delegate if the item should be highlighted during tracking.
-- [func collectionView(UICollectionView, didUnhighlightItemAt: IndexPath)](uicollectionviewdelegate/collectionview(_:didunhighlightitemat:).md)
+- [func collectionView(UICollectionView, didUnhighlightItemAt: IndexPath)](./collectionview%28_,didunhighlightitemat%29.md)
   Tells the delegate that the highlight was removed from the item at the specified index path.
 
 

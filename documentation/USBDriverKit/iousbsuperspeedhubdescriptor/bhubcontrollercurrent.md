@@ -1,27 +1,29 @@
 # bHubControllerCurrent
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bHubControllerCurrent;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedhubdescriptor/blength.md)
-- [bDescriptorType](iousbsuperspeedhubdescriptor/bdescriptortype.md)
-- [bNumberPorts](iousbsuperspeedhubdescriptor/bnumberports.md)
-- [wHubCharacteristics](iousbsuperspeedhubdescriptor/whubcharacteristics.md)
-- [bPowerOnToPowerGood](iousbsuperspeedhubdescriptor/bpowerontopowergood.md)
-- [bHubDecodeLatency](iousbsuperspeedhubdescriptor/bhubdecodelatency.md)
-- [wHubDelay](iousbsuperspeedhubdescriptor/whubdelay.md)
-- [deviceRemovable](iousbsuperspeedhubdescriptor/deviceremovable.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bNumberPorts](./bnumberports.md)
+- [wHubCharacteristics](./whubcharacteristics.md)
+- [bPowerOnToPowerGood](./bpowerontopowergood.md)
+- [bHubDecodeLatency](./bhubdecodelatency.md)
+- [wHubDelay](./whubdelay.md)
+- [deviceRemovable](./deviceremovable.md)
 
 
 ---

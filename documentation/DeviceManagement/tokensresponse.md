@@ -1,20 +1,21 @@
 # TokensResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object that contains the device token.
 
 ## Declaration
 
-```swift
+```
 object TokensResponse
 ```
 
 ## Topics
 
 ### Supporting Objects
-- [object SynchronizationTokens](synchronizationtokens.md)
+- [object SynchronizationTokens](./synchronizationtokens.md)
   The server’s synchronization token.
 
 ## Properties

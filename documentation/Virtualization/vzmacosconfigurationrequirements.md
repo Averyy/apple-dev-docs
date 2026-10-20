@@ -1,7 +1,8 @@
 # VZMacOSConfigurationRequirements
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the parameter constraints required by a specific configuration of macOS.
 
@@ -14,35 +15,41 @@ An object that describes the parameter constraints required by a specific config
 class VZMacOSConfigurationRequirements
 ```
 
+```objc
+@interface VZMacOSConfigurationRequirements : NSObject
+```
+
 ## Topics
 
 ### Configuration Requirements
-- [var hardwareModel: VZMacHardwareModel](vzmacosconfigurationrequirements/hardwaremodel.md)
+- [var hardwareModel: VZMacHardwareModel](./vzmacosconfigurationrequirements/hardwaremodel.md)
   The hardware model for this configuration.
-- [var minimumSupportedCPUCount: Int](vzmacosconfigurationrequirements/minimumsupportedcpucount.md)
+- [var minimumSupportedCPUCount: Int](./vzmacosconfigurationrequirements/minimumsupportedcpucount.md)
   The minimum supported number of CPUs for this configuration.
-- [var minimumSupportedMemorySize: UInt64](vzmacosconfigurationrequirements/minimumsupportedmemorysize.md)
+- [var minimumSupportedMemorySize: UInt64](./vzmacosconfigurationrequirements/minimumsupportedmemorysize.md)
   The minimum supported memory size for this configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMacHardwareModel](vzmachardwaremodel.md)
+### Related Documentation
+- [class VZMacHardwareModel](./vzmachardwaremodel.md)
   A specification for the hardware elements and configurations present in a particular Mac hardware model.
-- [class VZMacOSInstaller](vzmacosinstaller.md)
+### Installers
+- [class VZMacOSInstaller](./vzmacosinstaller.md)
   An object you use to install macOS on the specified virtual machine.
-- [class VZMacOSRestoreImage](vzmacosrestoreimage.md)
+- [class VZMacOSRestoreImage](./vzmacosrestoreimage.md)
   An object that describes a version of macOS to install on to a virtual machine.
 
 

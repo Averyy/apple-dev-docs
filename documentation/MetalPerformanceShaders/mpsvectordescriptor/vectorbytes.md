@@ -1,7 +1,8 @@
 # vectorBytes
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 var vectorBytes: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger vectorBytes;
+```
+
 ## See Also
 
-- [var dataType: MPSDataType](mpsvectordescriptor/datatype.md)
-- [var length: Int](mpsvectordescriptor/length.md)
-- [var vectors: Int](mpsvectordescriptor/vectors.md)
+### Instance Properties
+- [var dataType: MPSDataType](./datatype.md)
+- [var length: Int](./length.md)
+- [var vectors: Int](./vectors.md)
 
 
 ---

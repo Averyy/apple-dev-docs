@@ -1,7 +1,8 @@
 # DailyForecast.DailyForecastData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The daily forecast information.
 
@@ -10,7 +11,7 @@ The daily forecast information.
 
 ## Declaration
 
-```swift
+```
 object DailyForecast.DailyForecastData
 ```
 
@@ -22,7 +23,7 @@ object DailyForecast.DailyForecastData
 ## Relationships
 
 ### Inherited By
-- [DailyForecast](dailyforecast.md)
+- [DailyForecast](../dailyforecast.md)
 
 
 ---

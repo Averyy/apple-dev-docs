@@ -1,7 +1,8 @@
 # init(source:lossDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(source: MPSNNImageNode, lossDescriptor descriptor: MPSCNNLossDescriptor)
+```
+
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) source lossDescriptor:(MPSCNNLossDescriptor *) descriptor;
 ```
 
 

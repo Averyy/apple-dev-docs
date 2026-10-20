@@ -1,7 +1,8 @@
 # SizeCalculationMethod.logical
 
 **Framework**: Background Assets  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A calculation method that counts the number of bytes in a file.
 
@@ -17,6 +18,10 @@ A calculation method that counts the number of bytes in a file.
 
 ```swift
 case logical
+```
+
+```c
+BASizeCalculationMethodLogical
 ```
 
 #### Discussion

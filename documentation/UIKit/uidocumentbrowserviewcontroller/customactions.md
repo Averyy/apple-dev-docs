@@ -1,7 +1,8 @@
 # customActions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom document browser actions.
 
@@ -17,13 +18,17 @@ Custom document browser actions.
 var customActions: [UIDocumentBrowserAction] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<UIDocumentBrowserAction *> * customActions;
+```
+
 ## Mentions
 
-- [Adding custom actions and activities](adding-custom-actions-and-activities.md)
+- [Adding custom actions and activities](../adding-custom-actions-and-activities.md)
 
 #### Discussion
 
-By default, this property contains an empty array. Assign an array of [`UIDocumentBrowserAction`](uidocumentbrowseraction.md) objects to add custom document browser actions.
+By default, this property contains an empty array. Assign an array of [`UIDocumentBrowserAction`](../uidocumentbrowseraction.md) objects to add custom document browser actions.
 
 Document browser actions can be accessed in two ways:
 
@@ -34,7 +39,8 @@ When triggered, these actions are passed the URLs of the currently selected item
 
 ## See Also
 
-- [class UIDocumentBrowserAction](uidocumentbrowseraction.md)
+### Adding custom actions
+- [class UIDocumentBrowserAction](../uidocumentbrowseraction.md)
   A custom action that you can create and add to a document browser’s Edit menu or navigation bar.
 
 

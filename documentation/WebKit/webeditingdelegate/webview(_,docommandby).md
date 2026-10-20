@@ -1,12 +1,13 @@
 # webView(_:doCommandBy:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the receiver performs a command instead of the web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns whether the receiver performs a command instead of the web view.
 optional func webView(_ webView: WebView!, doCommandBy selector: Selector!) -> Bool
 ```
 
+```objc
+- (BOOL) webView:(WebView *) webView doCommandBySelector:(SEL) selector;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver will perform `command`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver will perform `command`; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 

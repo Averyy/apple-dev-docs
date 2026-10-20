@@ -1,7 +1,8 @@
 # completeChangePasswordRequest(updatedCredential:userInfo:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Completes a request to update an account’s authentication credentials from using a weak password to using a strong password.
 
@@ -17,13 +18,17 @@ Completes a request to update an account’s authentication credentials from usi
 func completeChangePasswordRequest(updatedCredential: ASPasswordCredential, userInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (void) completeChangePasswordRequestWithUpdatedCredential:(ASPasswordCredential *) updatedCredential userInfo:(NSDictionary *) userInfo;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 #### Discussion
 
-To receive the `userInfo` dictionary in your app, set a delegate on the [`ASAccountAuthenticationModificationController`](asaccountauthenticationmodificationcontroller.md) when initiating the request. The delegate receives the `userInfo` dictionary as a parameter to [`accountAuthenticationModificationController(_:didSuccessfullyComplete:userInfo:)`](asaccountauthenticationmodificationcontrollerdelegate/accountauthenticationmodificationcontroller(_:didsuccessfullycomplete:userinfo:).md).
+To receive the `userInfo` dictionary in your app, set a delegate on the [`ASAccountAuthenticationModificationController`](../asaccountauthenticationmodificationcontroller.md) when initiating the request. The delegate receives the `userInfo` dictionary as a parameter to [`accountAuthenticationModificationController(_:didSuccessfullyComplete:userInfo:)`](../asaccountauthenticationmodificationcontrollerdelegate/accountauthenticationmodificationcontroller%28_,didsuccessfullycomplete,userinfo%29.md).
 
 ## Parameters
 
@@ -32,13 +37,14 @@ To receive the `userInfo` dictionary in your app, set a delegate on the [`ASAcco
 
 ## See Also
 
-- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](asaccountauthenticationmodificationextensioncontext/completeupgradetosigninwithapple(userinfo:).md)
+### Handling Requests
+- [func completeUpgradeToSignInWithApple(userInfo: [AnyHashable : Any]?)](./completeupgradetosigninwithapple%28userinfo%29.md)
   Completes the process of upgrading an account’s authentication credentials from using passwords to using Sign in with Apple.
-- [func getSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?, completionHandler: (ASAuthorizationAppleIDCredential?, (any Error)?) -> Void)](asaccountauthenticationmodificationextensioncontext/getsigninwithappleupgradeauthorization(state:nonce:completionhandler:).md)
+- [func getSignInWithAppleUpgradeAuthorization(state: String?, nonce: String?, completionHandler: (ASAuthorizationAppleIDCredential?, (any Error)?) -> Void)](./getsigninwithappleupgradeauthorization%28state,nonce,completionhandler%29.md)
   Retrieves the user’s current Sign in with Apple authorization credentials.
-- [func cancelRequest(withError: any Error)](asaccountauthenticationmodificationextensioncontext/cancelrequest(witherror:).md)
+- [func cancelRequest(withError: any Error)](./cancelrequest%28witherror%29.md)
   Cancels a request with an error.
-- [let ASExtensionLocalizedFailureReasonErrorKey: String](asextensionlocalizedfailurereasonerrorkey.md)
+- [let ASExtensionLocalizedFailureReasonErrorKey: String](../asextensionlocalizedfailurereasonerrorkey.md)
   A key that specifies a string value to show to the user when a request fails.
 
 

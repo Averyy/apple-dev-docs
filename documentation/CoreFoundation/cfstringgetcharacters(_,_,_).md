@@ -1,18 +1,19 @@
 # CFStringGetCharacters(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies a range of the Unicode characters from a string to a user-provided buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Copies a range of the Unicode characters from a string to a user-provided buffer
 func CFStringGetCharacters(_ theString: CFString!, _ range: CFRange, _ buffer: UnsafeMutablePointer<UniChar>!)
 ```
 
+```c
+extern void CFStringGetCharacters(CFStringRef theString, CFRange range, UniChar *buffer);
+```
+
 #### Discussion
 
-Use this function to obtain some or all of the Unicode characters represented by a CFString object. If this operation involves a large number of characters, the function call can be expensive in terms of memory. Instead you might want to consider using the in-line buffer functions [`CFStringInitInlineBuffer(_:_:_:)`](cfstringinitinlinebuffer(_:_:_:).md) and [`CFStringGetCharacterFromInlineBuffer(_:_:)`](cfstringgetcharacterfrominlinebuffer(_:_:).md) to extract the characters incrementally.
+Use this function to obtain some or all of the Unicode characters represented by a CFString object. If this operation involves a large number of characters, the function call can be expensive in terms of memory. Instead you might want to consider using the in-line buffer functions [`CFStringInitInlineBuffer(_:_:_:)`](./cfstringinitinlinebuffer%28_,_,_%29.md) and [`CFStringGetCharacterFromInlineBuffer(_:_:)`](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md) to extract the characters incrementally.
 
 ## Parameters
 
@@ -32,29 +37,30 @@ Use this function to obtain some or all of the Unicode characters represented by
 
 ## See Also
 
-- [func CFStringCreateExternalRepresentation(CFAllocator!, CFString!, CFStringEncoding, UInt8) -> CFData!](cfstringcreateexternalrepresentation(_:_:_:_:).md)
+### Accessing Characters
+- [func CFStringCreateExternalRepresentation(CFAllocator!, CFString!, CFStringEncoding, UInt8) -> CFData!](./cfstringcreateexternalrepresentation%28_,_,_,_%29.md)
   Creates an “external representation” of a CFString object, that is, a CFData object.
-- [func CFStringGetBytes(CFString!, CFRange, CFStringEncoding, UInt8, Bool, UnsafeMutablePointer<UInt8>!, CFIndex, UnsafeMutablePointer<CFIndex>!) -> CFIndex](cfstringgetbytes(_:_:_:_:_:_:_:_:).md)
+- [func CFStringGetBytes(CFString!, CFRange, CFStringEncoding, UInt8, Bool, UnsafeMutablePointer<UInt8>!, CFIndex, UnsafeMutablePointer<CFIndex>!) -> CFIndex](./cfstringgetbytes%28_,_,_,_,_,_,_,_%29.md)
   Fetches a range of the characters from a string into a byte buffer after converting the characters to a specified encoding.
-- [func CFStringGetCharacterAtIndex(CFString!, CFIndex) -> UniChar](cfstringgetcharacteratindex(_:_:).md)
+- [func CFStringGetCharacterAtIndex(CFString!, CFIndex) -> UniChar](./cfstringgetcharacteratindex%28_,_%29.md)
   Returns the Unicode character at a specified location in a string.
-- [func CFStringGetCharactersPtr(CFString!) -> UnsafePointer<UniChar>!](cfstringgetcharactersptr(_:).md)
+- [func CFStringGetCharactersPtr(CFString!) -> UnsafePointer<UniChar>!](./cfstringgetcharactersptr%28_%29.md)
   Quickly obtains a pointer to the contents of a string as a buffer of Unicode characters.
-- [func CFStringGetCharacterFromInlineBuffer(UnsafeMutablePointer<CFStringInlineBuffer>!, CFIndex) -> UniChar](cfstringgetcharacterfrominlinebuffer(_:_:).md)
+- [func CFStringGetCharacterFromInlineBuffer(UnsafeMutablePointer<CFStringInlineBuffer>!, CFIndex) -> UniChar](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md)
   Returns the Unicode character at a specific location in an in-line buffer.
-- [func CFStringGetCString(CFString!, UnsafeMutablePointer<CChar>!, CFIndex, CFStringEncoding) -> Bool](cfstringgetcstring(_:_:_:_:).md)
+- [func CFStringGetCString(CFString!, UnsafeMutablePointer<CChar>!, CFIndex, CFStringEncoding) -> Bool](./cfstringgetcstring%28_,_,_,_%29.md)
   Copies the character contents of a string to a local C string buffer after converting the characters to a given encoding.
-- [func CFStringGetCStringPtr(CFString!, CFStringEncoding) -> UnsafePointer<CChar>!](cfstringgetcstringptr(_:_:).md)
+- [func CFStringGetCStringPtr(CFString!, CFStringEncoding) -> UnsafePointer<CChar>!](./cfstringgetcstringptr%28_,_%29.md)
   Quickly obtains a pointer to a C-string buffer containing the characters of a string in a given encoding.
-- [func CFStringGetLength(CFString!) -> CFIndex](cfstringgetlength(_:).md)
+- [func CFStringGetLength(CFString!) -> CFIndex](./cfstringgetlength%28_%29.md)
   Returns the number (in terms of UTF-16 code pairs) of Unicode characters in a string.
-- [func CFStringGetPascalString(CFString!, StringPtr!, CFIndex, CFStringEncoding) -> Bool](cfstringgetpascalstring(_:_:_:_:).md)
+- [func CFStringGetPascalString(CFString!, StringPtr!, CFIndex, CFStringEncoding) -> Bool](./cfstringgetpascalstring%28_,_,_,_%29.md)
   Copies the character contents of a CFString object to a local Pascal string buffer after converting the characters to a requested encoding.
-- [func CFStringGetPascalStringPtr(CFString!, CFStringEncoding) -> ConstStringPtr!](cfstringgetpascalstringptr(_:_:).md)
+- [func CFStringGetPascalStringPtr(CFString!, CFStringEncoding) -> ConstStringPtr!](./cfstringgetpascalstringptr%28_,_%29.md)
   Quickly obtains a pointer to a Pascal buffer containing the characters of a string in a given encoding.
-- [func CFStringGetRangeOfComposedCharactersAtIndex(CFString!, CFIndex) -> CFRange](cfstringgetrangeofcomposedcharactersatindex(_:_:).md)
+- [func CFStringGetRangeOfComposedCharactersAtIndex(CFString!, CFIndex) -> CFRange](./cfstringgetrangeofcomposedcharactersatindex%28_,_%29.md)
   Returns the range of the composed character sequence at a specified index.
-- [func CFStringInitInlineBuffer(CFString!, UnsafeMutablePointer<CFStringInlineBuffer>!, CFRange)](cfstringinitinlinebuffer(_:_:_:).md)
+- [func CFStringInitInlineBuffer(CFString!, UnsafeMutablePointer<CFStringInlineBuffer>!, CFRange)](./cfstringinitinlinebuffer%28_,_,_%29.md)
   Initializes an in-line buffer to use for efficient access of a CFString object’s characters.
 
 

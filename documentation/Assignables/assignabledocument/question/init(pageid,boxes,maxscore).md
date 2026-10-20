@@ -1,15 +1,18 @@
 # init(pageID:boxes:maxScore:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of this object with the given values.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
-- visionOS ?+
+- iOS 17.4+ - Deprecated in 26.0
+- iPadOS 17.4+ - Deprecated in 26.0
+- Mac Catalyst 17.4+ - Deprecated in 26.0
+- visionOS
+
+> **Deprecated**: Use init(boxes:maxScore:) instead
 
 ## Declaration
 

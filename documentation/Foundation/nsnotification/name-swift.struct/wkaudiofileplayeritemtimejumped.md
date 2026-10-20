@@ -1,12 +1,15 @@
 # WKAudioFilePlayerItemTimeJumped
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the item’s current time has changed discontinuously.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use the [AVFoundation](../../../AVFoundation/AVFoundation.md) framework’s [`AVPlayer`](../../../AVFoundation/avplayer.md) and [`AVQueuePlayer`](../../../AVFoundation/avqueueplayer.md) classes instead.
 
 ## Declaration
 
@@ -20,11 +23,12 @@ The notification’s object is the player item. There is no `userInfo` dictionar
 
 ## See Also
 
-- [static let WKAccessibilityReduceMotionStatusDidChange: NSNotification.Name](nsnotification/name-swift.struct/wkaccessibilityreducemotionstatusdidchange.md)
+### WatchKit
+- [static let WKAccessibilityReduceMotionStatusDidChange: NSNotification.Name](./wkaccessibilityreducemotionstatusdidchange.md)
   Tells the interface controller that the reduce motion status has changed.
-- [static let WKAudioFilePlayerItemDidPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/wkaudiofileplayeritemdidplaytoendtime.md)
+- [static let WKAudioFilePlayerItemDidPlayToEndTime: NSNotification.Name](./wkaudiofileplayeritemdidplaytoendtime.md)
   A notification that the item has played successfully to its end.
-- [static let WKAudioFilePlayerItemFailedToPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/wkaudiofileplayeritemfailedtoplaytoendtime.md)
+- [static let WKAudioFilePlayerItemFailedToPlayToEndTime: NSNotification.Name](./wkaudiofileplayeritemfailedtoplaytoendtime.md)
   A notification that the item failed to play to its end.
 
 

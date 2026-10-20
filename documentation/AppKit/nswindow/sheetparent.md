@@ -1,7 +1,8 @@
 # sheetParent
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window to which the sheet is attached.
 
@@ -14,27 +15,32 @@ The window to which the sheet is attached.
 var sheetParent: NSWindow? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSWindow * sheetParent;
+```
+
 #### Discussion
 
 The value of this property is `nil` if the receiver is not a sheet or has no sheet parent.
 
-The window object in this property refers to the window to which the sheet is logically attached, regardless of appearance. The parent window–sheet relationship begins with the beginning of the sheet (for example, through [`beginSheet(_:completionHandler:)`](nswindow/beginsheet(_:completionhandler:).md)) and ends with the sheet’s dismissal (for example, through [`endSheet(_:)`](nswindow/endsheet(_:)-4dmmq.md)).
+The window object in this property refers to the window to which the sheet is logically attached, regardless of appearance. The parent window–sheet relationship begins with the beginning of the sheet (for example, through [`beginSheet(_:completionHandler:)`](./beginsheet%28_,completionhandler%29.md)) and ends with the sheet’s dismissal (for example, through [`endSheet(_:)`](./endsheet%28_%29-4dmmq.md)).
 
 ## See Also
 
-- [var attachedSheet: NSWindow?](nswindow/attachedsheet.md)
+### Managing Sheets
+- [var attachedSheet: NSWindow?](./attachedsheet.md)
   The sheet attached to the window.
-- [var isSheet: Bool](nswindow/issheet.md)
+- [var isSheet: Bool](./issheet.md)
   A Boolean value that indicates whether the window has ever run as a modal sheet.
-- [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/beginsheet(_:completionhandler:).md)
+- [func beginSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./beginsheet%28_,completionhandler%29.md)
   Starts a document-modal session and presents—or queues for presentation—a sheet.
-- [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](nswindow/begincriticalsheet(_:completionhandler:).md)
+- [func beginCriticalSheet(NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./begincriticalsheet%28_,completionhandler%29.md)
   Starts a document-modal session and presents the specified critical sheet.
-- [func endSheet(NSWindow)](nswindow/endsheet(_:)-4dmmq.md)
+- [func endSheet(NSWindow)](./endsheet%28_%29-4dmmq.md)
   Ends a document-modal session and dismisses the specified sheet.
-- [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](nswindow/endsheet(_:returncode:).md)
+- [func endSheet(NSWindow, returnCode: NSApplication.ModalResponse)](./endsheet%28_,returncode%29.md)
   Ends a document-modal session and dismisses the specified sheet.
-- [var sheets: [NSWindow]](nswindow/sheets.md)
+- [var sheets: [NSWindow]](./sheets.md)
   An array of the sheets currently attached to the window.
 
 

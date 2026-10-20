@@ -1,6 +1,7 @@
 # Preconfigured Activation Layers
 
-**Framework**: ML Compute
+**Framework**: ML Compute  
+**Role**: API Collection
 
 Obtain a preconfigured activation layer with common behavior.
 
@@ -11,69 +12,70 @@ Use a factory to receive a preconfigured activation layer for various activation
 ## Topics
 
 ### Factory Methods
-- [class func celu(a: Float) -> Self](mlcactivationlayer/celu(a:).md)
+- [class func celu(a: Float) -> Self](./mlcactivationlayer/celu%28a%29.md)
   Creates an instance of a CELU activation layer using the alpha value you specify for the CELU formation.
-- [class func clamp(min: Float, max: Float) -> Self](mlcactivationlayer/clamp(min:max:).md)
+- [class func clamp(min: Float, max: Float) -> Self](./mlcactivationlayer/clamp%28min,max%29.md)
   Creates an instance of a clamp activation layer using the minimum and maximum values you specify for the clamp formation.
-- [class func elu(a: Float) -> Self](mlcactivationlayer/elu(a:).md)
+- [class func elu(a: Float) -> Self](./mlcactivationlayer/elu%28a%29.md)
   Creates an instance of an ELU activation layer using the alpha value you specify for the ELU formation.
-- [class func hardShrink(a: Float) -> Self](mlcactivationlayer/hardshrink(a:).md)
+- [class func hardShrink(a: Float) -> Self](./mlcactivationlayer/hardshrink%28a%29.md)
   Creates an instance of a hard shrink activation layer using the lambda value you specify for the hard shrink formation.
-- [class func leakyReLU(negativeSlope: Float) -> Self](mlcactivationlayer/leakyrelu(negativeslope:).md)
+- [class func leakyReLU(negativeSlope: Float) -> Self](./mlcactivationlayer/leakyrelu%28negativeslope%29.md)
   Creates an instance of a leaky ReLU activation layer using the angle of the negative slope you specify.
-- [class func linear(scale: Float, bias: Float) -> Self](mlcactivationlayer/linear(scale:bias:).md)
+- [class func linear(scale: Float, bias: Float) -> Self](./mlcactivationlayer/linear%28scale,bias%29.md)
   Creates an instance of a linear activation layer using the scale factor and bias value you specify.
-- [class func relun(a: Float, b: Float) -> Self](mlcactivationlayer/relun(a:b:).md)
+- [class func relun(a: Float, b: Float) -> Self](./mlcactivationlayer/relun%28a,b%29.md)
   Creates an instance of a ReLUN activation layer using the alpha and beta values you specify.
-- [class func softPlus(beta: Float) -> Self](mlcactivationlayer/softplus(beta:).md)
+- [class func softPlus(beta: Float) -> Self](./mlcactivationlayer/softplus%28beta%29.md)
   Creates an instance of a soft plus activation layer using the beta value you specify for the soft plus formation.
-- [class func softShrink(a: Float) -> Self](mlcactivationlayer/softshrink(a:).md)
+- [class func softShrink(a: Float) -> Self](./mlcactivationlayer/softshrink%28a%29.md)
   Creates an instance of a soft shrink activation layer using the lambda value you specify for the soft shrink formation.
-- [class func threshold(Float, replacement: Float) -> Self](mlcactivationlayer/threshold(_:replacement:).md)
+- [class func threshold(Float, replacement: Float) -> Self](./mlcactivationlayer/threshold%28_,replacement%29.md)
   Creates an instance of a threshold activation layer using the threshold and replacement values you specify.
 ### Factory Properties
-- [class var absolute: MLCActivationLayer](mlcactivationlayer/absolute.md)
+- [class var absolute: MLCActivationLayer](./mlcactivationlayer/absolute.md)
   Creates an instance of an absolute activation layer.
-- [class var celu: MLCActivationLayer](mlcactivationlayer/celu.md)
+- [class var celu: MLCActivationLayer](./mlcactivationlayer/celu.md)
   Creates an instance of a CELU activation layer.
-- [class var elu: MLCActivationLayer](mlcactivationlayer/elu.md)
+- [class var elu: MLCActivationLayer](./mlcactivationlayer/elu.md)
   Creates an instance of a parametric ELU activation layer.
-- [class var gelu: MLCActivationLayer](mlcactivationlayer/gelu.md)
+- [class var gelu: MLCActivationLayer](./mlcactivationlayer/gelu.md)
   Creates an instance of a GELU activation layer.
-- [class var hardShrink: MLCActivationLayer](mlcactivationlayer/hardshrink.md)
+- [class var hardShrink: MLCActivationLayer](./mlcactivationlayer/hardshrink.md)
   Creates an instance of a hard shrink activation layer.
-- [class var hardSigmoid: MLCActivationLayer](mlcactivationlayer/hardsigmoid.md)
+- [class var hardSigmoid: MLCActivationLayer](./mlcactivationlayer/hardsigmoid.md)
   Creates an instance of a hard sigmoid activation layer.
-- [class var hardSwish: MLCActivationLayer](mlcactivationlayer/hardswish.md)
+- [class var hardSwish: MLCActivationLayer](./mlcactivationlayer/hardswish.md)
   Creates an instance of a hard swish activation layer.
-- [class var leakyReLU: MLCActivationLayer](mlcactivationlayer/leakyrelu.md)
+- [class var leakyReLU: MLCActivationLayer](./mlcactivationlayer/leakyrelu.md)
   Creates an instance of a leaky ReLU activation layer.
-- [class var logSigmoid: MLCActivationLayer](mlcactivationlayer/logsigmoid.md)
+- [class var logSigmoid: MLCActivationLayer](./mlcactivationlayer/logsigmoid.md)
   Creates an instance of a log sigmoid activation layer.
-- [class var relu: MLCActivationLayer](mlcactivationlayer/relu.md)
+- [class var relu: MLCActivationLayer](./mlcactivationlayer/relu.md)
   Creates an instance of a ReLU activation layer.
-- [class var relu6: MLCActivationLayer](mlcactivationlayer/relu6.md)
+- [class var relu6: MLCActivationLayer](./mlcactivationlayer/relu6.md)
   Creates an instance of a ReLU6 activation layer.
-- [class var selu: MLCActivationLayer](mlcactivationlayer/selu.md)
+- [class var selu: MLCActivationLayer](./mlcactivationlayer/selu.md)
   Creates an instance of a SELU activation layer.
-- [class var sigmoid: MLCActivationLayer](mlcactivationlayer/sigmoid.md)
+- [class var sigmoid: MLCActivationLayer](./mlcactivationlayer/sigmoid.md)
   Creates an instance of a sigmoid activation layer.
-- [class var softPlus: MLCActivationLayer](mlcactivationlayer/softplus.md)
+- [class var softPlus: MLCActivationLayer](./mlcactivationlayer/softplus.md)
   Creates an instance of a parametric soft plus activation layer.
-- [class var softShrink: MLCActivationLayer](mlcactivationlayer/softshrink.md)
+- [class var softShrink: MLCActivationLayer](./mlcactivationlayer/softshrink.md)
   Creates an instance of a soft shrink activation layer.
-- [class var softSign: MLCActivationLayer](mlcactivationlayer/softsign.md)
+- [class var softSign: MLCActivationLayer](./mlcactivationlayer/softsign.md)
   Creates an instance of a parametric soft sign activation layer.
-- [class var tanh: MLCActivationLayer](mlcactivationlayer/tanh.md)
+- [class var tanh: MLCActivationLayer](./mlcactivationlayer/tanh.md)
   Creates an instance of a hyperbolic tangent activation layer.
-- [class var tanhShrink: MLCActivationLayer](mlcactivationlayer/tanhshrink.md)
+- [class var tanhShrink: MLCActivationLayer](./mlcactivationlayer/tanhshrink.md)
   Creates an instance of a tanh shrink activation layer.
 
 ## See Also
 
-- [convenience init(descriptor: MLCActivationDescriptor)](mlcactivationlayer/init(descriptor:).md)
+### Creating Activation Layers
+- [convenience init(descriptor: MLCActivationDescriptor)](./mlcactivationlayer/init%28descriptor%29.md)
   Creates an activation layer with the descriptor you specify.
-- [class MLCActivationDescriptor](mlcactivationdescriptor.md)
+- [class MLCActivationDescriptor](./mlcactivationdescriptor.md)
   A configuration object you use to create an activation layer.
 
 

@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent of this path, or `nil` if this path is the absolute root or the empty path.
 

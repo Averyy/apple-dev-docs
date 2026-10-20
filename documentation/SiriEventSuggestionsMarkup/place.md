@@ -1,7 +1,8 @@
 # Place
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A business, transportation hub, or event venue.
 
@@ -10,28 +11,29 @@ A business, transportation hub, or event venue.
 
 ## Declaration
 
-```swift
+```
 object Place
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Place`
 - `address` (PostalAddress) *(required)*: The starting or ending location of a transportation reservation, or the location of a single-location reservation.
 - `name` (string) *(required)*: The name of the location.
 - `telephone` (telephone): A phone number for the location.
 
 ## See Also
 
-- [object Person](person.md)
+### Common Reservation Data
+- [object Person](./person.md)
   A passenger, diner, lodging guest, or event attendee.
-- [object Ticket](ticket.md)
+- [object Ticket](./ticket.md)
   Details about a ticket for transportation or an event.
-- [object Seat](seat.md)
+- [object Seat](./seat.md)
   The specific location reserved for the passenger.
-- [object Organization](organization.md)
+- [object Organization](./organization.md)
   A business, transportation provider, or event organizer.
-- [object PostalAddress](postaladdress.md)
+- [object PostalAddress](./postaladdress.md)
   A specific geographic location.
 
 

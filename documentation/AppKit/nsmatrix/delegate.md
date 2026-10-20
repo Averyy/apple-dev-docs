@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for messages from the field editor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The delegate for messages from the field editor.
 weak var delegate: (any NSMatrixDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSMatrixDelegate> delegate;
+```
+
 ## See Also
 
-- [func textShouldEndEditing(NSText) -> Bool](nsmatrix/textshouldendediting(_:).md)
+### Related Documentation
+- [func textShouldEndEditing(NSText) -> Bool](./textshouldendediting%28_%29.md)
   Requests permission to end editing.
-- [func textShouldBeginEditing(NSText) -> Bool](nsmatrix/textshouldbeginediting(_:).md)
+- [func textShouldBeginEditing(NSText) -> Bool](./textshouldbeginediting%28_%29.md)
   Requests permission to begin editing text.
-- [protocol NSMatrixDelegate](nsmatrixdelegate.md)
+### Managing the Delegate
+- [protocol NSMatrixDelegate](../nsmatrixdelegate.md)
   The `NSMatrixDelegate` protocol defines the optional methods implemented by delegates of `NSMatrix` objects.
 
 

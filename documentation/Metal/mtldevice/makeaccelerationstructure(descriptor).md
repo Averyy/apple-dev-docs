@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new ray-tracing acceleration structure from a descriptor.
@@ -20,21 +21,26 @@ Creates a new ray-tracing acceleration structure from a descriptor.
 func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?
 ```
 
+```objc
+- (id<MTLAccelerationStructure>) newAccelerationStructureWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A new [`MTLAccelerationStructure`](mtlaccelerationstructure.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLAccelerationStructure`](../mtlaccelerationstructure.md) instance if the method completed successfully; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](../mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 
-- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](mtldevice/makeaccelerationstructure(size:).md)
+### Creating acceleration structures for ray tracing
+- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28size%29.md)
   Creates a new acceleration structure with a specific size.
-- [func accelerationStructureSizes(descriptor: MTLAccelerationStructureDescriptor) -> MTLAccelerationStructureSizes](mtldevice/accelerationstructuresizes(descriptor:).md)
+- [func accelerationStructureSizes(descriptor: MTLAccelerationStructureDescriptor) -> MTLAccelerationStructureSizes](./accelerationstructuresizes%28descriptor%29.md)
   Returns the buffer sizes the GPU device needs to build, refit, and store an acceleration structure.
-- [struct MTLAccelerationStructureSizes](mtlaccelerationstructuresizes.md)
+- [struct MTLAccelerationStructureSizes](../mtlaccelerationstructuresizes.md)
   The expected sizes for a ray-tracing acceleration structure.
 
 

@@ -1,7 +1,8 @@
 # CGImageSourceCopyPropertiesAtIndex(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the properties of the image at a specified location in an image source.
 
@@ -20,6 +21,10 @@ Returns the properties of the image at a specified location in an image source.
 func CGImageSourceCopyPropertiesAtIndex(_ isrc: CGImageSource, _ index: Int, _ options: CFDictionary?) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCGImageSourceCopyPropertiesAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options);
+```
+
 #### Return Value
 
 A dictionary that contains the properties associated with the image. See `CGImageProperties` for a list of properties that allowed in the dictionary.
@@ -28,21 +33,22 @@ A dictionary that contains the properties associated with the image. See `CGImag
 
 - `isrc`: The image source that contains the image data.
 - `index`: The zero-based index into the images of the image source. If the index is invalid, this method returns `NULL`.
-- `options`: A dictionary you can use to request additional options. For a list of possible values, see [`Specifying the Read Options`](cgimagesource#Specifying-the-Read-Options.md).
+- `options`: A dictionary you can use to request additional options. For a list of possible values, see [Specifying the Read Options](./cgimagesource.md#Specifying-the-Read-Options).
 
 ## See Also
 
-- [func CGImageSourceGetTypeID() -> CFTypeID](cgimagesourcegettypeid().md)
+### Getting Information From an Image Source
+- [func CGImageSourceGetTypeID() -> CFTypeID](./cgimagesourcegettypeid%28%29.md)
   Returns the unique type identifier of an image source opaque type.
-- [func CGImageSourceGetType(CGImageSource) -> CFString?](cgimagesourcegettype(_:).md)
+- [func CGImageSourceGetType(CGImageSource) -> CFString?](./cgimagesourcegettype%28_%29.md)
   Returns the uniform type identifier of the source container.
-- [func CGImageSourceCopyTypeIdentifiers() -> CFArray](cgimagesourcecopytypeidentifiers().md)
+- [func CGImageSourceCopyTypeIdentifiers() -> CFArray](./cgimagesourcecopytypeidentifiers%28%29.md)
   Returns an array of uniform type identifiers that are supported for image sources.
-- [func CGImageSourceGetCount(CGImageSource) -> Int](cgimagesourcegetcount(_:).md)
+- [func CGImageSourceGetCount(CGImageSource) -> Int](./cgimagesourcegetcount%28_%29.md)
   Returns the number of images (not including thumbnails) in the image source.
-- [func CGImageSourceCopyProperties(CGImageSource, CFDictionary?) -> CFDictionary?](cgimagesourcecopyproperties(_:_:).md)
+- [func CGImageSourceCopyProperties(CGImageSource, CFDictionary?) -> CFDictionary?](./cgimagesourcecopyproperties%28_,_%29.md)
   Returns the properties of the image source.
-- [func CGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSource, Int, CFString) -> CFDictionary?](cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:).md)
+- [func CGImageSourceCopyAuxiliaryDataInfoAtIndex(CGImageSource, Int, CFString) -> CFDictionary?](./cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md)
   Returns auxiliary data, such as mattes and depth information, that accompany the image.
 
 

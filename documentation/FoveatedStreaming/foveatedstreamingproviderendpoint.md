@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderEndpoint
 
 **Framework**: Foveated Streaming  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The streaming endpoint provided to a `FoveatedStreamingProvider` extension.
 
@@ -17,30 +18,31 @@ enum FoveatedStreamingProviderEndpoint
 ## Topics
 
 ### Structures
-- [FoveatedStreamingProviderEndpoint.Local](foveatedstreamingproviderendpoint/local.md)
+- [FoveatedStreamingProviderEndpoint.Local](./foveatedstreamingproviderendpoint/local.md)
   Information needed to connect to a local streaming endpoint.
-- [FoveatedStreamingProviderEndpoint.LocalPairingInformation](foveatedstreamingproviderendpoint/localpairinginformation.md)
+- [FoveatedStreamingProviderEndpoint.LocalPairingInformation](./foveatedstreamingproviderendpoint/localpairinginformation.md)
   Information obtained during QR code pairing for a local connection.
-- [FoveatedStreamingProviderEndpoint.Remote](foveatedstreamingproviderendpoint/remote.md)
+- [FoveatedStreamingProviderEndpoint.Remote](./foveatedstreamingproviderendpoint/remote.md)
   Information needed to connect to a remote (cloud) streaming endpoint.
 ### Enumeration Cases
-- [case local(FoveatedStreamingProviderEndpoint.Local)](foveatedstreamingproviderendpoint/local(_:).md)
+- [case local(FoveatedStreamingProviderEndpoint.Local)](./foveatedstreamingproviderendpoint/local%28_%29.md)
   A local streaming endpoint on the same network.
-- [case remote(FoveatedStreamingProviderEndpoint.Remote)](foveatedstreamingproviderendpoint/remote(_:).md)
+- [case remote(FoveatedStreamingProviderEndpoint.Remote)](./foveatedstreamingproviderendpoint/remote%28_%29.md)
   A remote (cloud) streaming endpoint.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class FoveatedStreamingProviderContext](foveatedstreamingprovidercontext.md)
+### Streaming provider extensions
+- [class FoveatedStreamingProviderContext](./foveatedstreamingprovidercontext.md)
   Context object provided to a streaming provider when it connects.
 
 

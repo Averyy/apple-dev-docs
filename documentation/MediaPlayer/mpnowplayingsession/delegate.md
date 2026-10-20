@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Now Playing session’s delegate object.
 
@@ -18,9 +19,14 @@ The Now Playing session’s delegate object.
 weak var delegate: (any MPNowPlayingSessionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MPNowPlayingSessionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol MPNowPlayingSessionDelegate](mpnowplayingsessiondelegate.md)
+### Accessing the delegate object
+- [protocol MPNowPlayingSessionDelegate](../mpnowplayingsessiondelegate.md)
   A protocol that defines the delegate interface for a Now Playing session.
 
 

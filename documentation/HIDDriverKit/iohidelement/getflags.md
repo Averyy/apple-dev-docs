@@ -1,26 +1,28 @@
 # getFlags
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getFlags();
 ```
 
 #### Return Value
 
-Returns the element’s flags. Flags are defined in the IOHIDElementFlags enumerator in - [`IOHIDElementFlags`](iohidelementflags.md).
+Returns the element’s flags. Flags are defined in the IOHIDElementFlags enumerator in - [`IOHIDElementFlags`](../iohidelementflags.md).
 
 ## See Also
 
-- [IOHIDElementFlags](iohidelementflags.md)
-- [HID Element Flags](hid-element-flags-enum.md)
+### Getting the Element Flags
+- [IOHIDElementFlags](../iohidelementflags.md)
+- [HID Element Flags](../hid-element-flags-enum.md)
 
 
 ---

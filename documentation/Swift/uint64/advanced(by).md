@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that is offset the specified distance from this value.
 

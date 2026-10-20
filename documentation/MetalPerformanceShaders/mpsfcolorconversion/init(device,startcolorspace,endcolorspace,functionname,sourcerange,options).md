@@ -1,7 +1,8 @@
 # init(device:startColorSpace:endColorSpace:functionName:sourceRange:options:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

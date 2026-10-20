@@ -1,7 +1,8 @@
 # ARSession.CollaborationData
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that holds information that a user has collected about the physical environment.
 
@@ -15,39 +16,44 @@ An object that holds information that a user has collected about the physical en
 class CollaborationData
 ```
 
+```objc
+@interface ARCollaborationData : NSObject
+```
+
 #### Overview
 
-To create a multiuser AR experience, you enable collaboration on a world tracking session. ARKit regularly outputs [`ARSession.CollaborationData`](arsession/collaborationdata.md) that users share with each other, which enables everyone to view the same virtual content from their own perspective. For more information, see [`isCollaborationEnabled`](arworldtrackingconfiguration/iscollaborationenabled.md).
+To create a multiuser AR experience, you enable collaboration on a world tracking session. ARKit regularly outputs [`ARSession.CollaborationData`](./collaborationdata.md) that users share with each other, which enables everyone to view the same virtual content from their own perspective. For more information, see [`isCollaborationEnabled`](../arworldtrackingconfiguration/iscollaborationenabled.md).
 
 ## Topics
 
 ### Observing Priority
-- [var priority: ARSession.CollaborationData.Priority](arsession/collaborationdata/priority-swift.property.md)
+- [var priority: ARSession.CollaborationData.Priority](./collaborationdata/priority-swift.property.md)
   A property that gives you a hint about how to send a given data instance over the network.
-- [ARSession.CollaborationData.Priority](arsession/collaborationdata/priority-swift.enum.md)
+- [ARSession.CollaborationData.Priority](./collaborationdata/priority-swift.enum.md)
   Options that help you choose the appropriate network protocol or settings for a given data instance.
 ### Initializers
-- [init?(coder: NSCoder)](arsession/collaborationdata/init(coder:).md)
+- [init?(coder: NSCoder)](./collaborationdata/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func update(with: ARSession.CollaborationData)](arsession/update(with:).md)
+### Managing collaboration
+- [func update(with: ARSession.CollaborationData)](./update%28with%29.md)
   Updates your session with information about the physical environment that is collected by another user.
 
 

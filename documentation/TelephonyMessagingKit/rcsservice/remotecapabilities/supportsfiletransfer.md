@@ -1,7 +1,8 @@
 # supportsFileTransfer
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether remote end supports file transfer.
 
@@ -16,9 +17,10 @@ let supportsFileTransfer: Bool
 
 ## See Also
 
-- [let supportsChat: Bool](rcsservice/remotecapabilities/supportschat.md)
+### Accessing feature support
+- [let supportsChat: Bool](./supportschat.md)
   Whether remote end supports chat.
-- [let supportsGeolocation: Bool](rcsservice/remotecapabilities/supportsgeolocation.md)
+- [let supportsGeolocation: Bool](./supportsgeolocation.md)
   Whether remote end supports geolocation.
 
 

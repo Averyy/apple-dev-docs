@@ -1,7 +1,8 @@
 # isInvertible
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var isInvertible: Bool { get }
+```
+
+```c
+static bool SPProjectiveTransform3DFloatIsInvertible(SPProjectiveTransform3DFloat transform);
 ```
 
 #### Discussion

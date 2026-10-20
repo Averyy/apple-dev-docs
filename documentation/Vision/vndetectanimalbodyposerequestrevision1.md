@@ -1,7 +1,8 @@
 # VNDetectAnimalBodyPoseRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates the first revision for an animal body-pose request.
 
@@ -19,37 +20,42 @@ A value that indicates the first revision for an animal body-pose request.
 var VNDetectAnimalBodyPoseRequestRevision1: Int { get }
 ```
 
+```c
+static const NSUInteger VNDetectAnimalBodyPoseRequestRevision1;
+```
+
 ## See Also
 
-- [var VNVisionVersionNumber: Double](vnvisionversionnumber.md)
+### Version and revision numbers
+- [var VNVisionVersionNumber: Double](./vnvisionversionnumber.md)
   The current version number of the Vision framework.
-- [var VNDetectHumanBodyPose3DRequestRevision1: Int](vndetecthumanbodypose3drequestrevision1.md)
+- [var VNDetectHumanBodyPose3DRequestRevision1: Int](./vndetecthumanbodypose3drequestrevision1.md)
   A value that indicates the first revision for a human 3D body pose request.
-- [var VNTrackHomographicImageRegistrationRequestRevision1: Int](vntrackhomographicimageregistrationrequestrevision1.md)
+- [var VNTrackHomographicImageRegistrationRequestRevision1: Int](./vntrackhomographicimageregistrationrequestrevision1.md)
   A value that indicates the first revision for a homographic image-registration request.
-- [var VNTrackTranslationalImageRegistrationRequestRevision1: Int](vntracktranslationalimageregistrationrequestrevision1.md)
+- [var VNTrackTranslationalImageRegistrationRequestRevision1: Int](./vntracktranslationalimageregistrationrequestrevision1.md)
   A value that indicates the first revision for a translational image-registration request.
-- [var VNTrackOpticalFlowRequestRevision1: Int](vntrackopticalflowrequestrevision1.md)
+- [var VNTrackOpticalFlowRequestRevision1: Int](./vntrackopticalflowrequestrevision1.md)
   A value that indicates the first revision for an optial-flow request.
-- [var VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
+- [var VNClassifyImageRequestRevision1: Int](./vnclassifyimagerequestrevision1.md)
   A constant for specifying the first revision of the image-classification request.
-- [var VNClassifyImageRequestRevision2: Int](vnclassifyimagerequestrevision2.md)
+- [var VNClassifyImageRequestRevision2: Int](./vnclassifyimagerequestrevision2.md)
   A value that indicates the second revision for an image-classification request.
-- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision2: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision2.md)
+- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision2: Int](./vngenerateobjectnessbasedsaliencyimagerequestrevision2.md)
   A value that indicates the second revision for an image-classification request.
-- [var VNGenerateAttentionBasedSaliencyImageRequestRevision2: Int](vngenerateattentionbasedsaliencyimagerequestrevision2.md)
+- [var VNGenerateAttentionBasedSaliencyImageRequestRevision2: Int](./vngenerateattentionbasedsaliencyimagerequestrevision2.md)
   A value that indicates the second revision for an attention-saliency image request.
-- [var VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
+- [var VNGenerateImageFeaturePrintRequestRevision1: Int](./vngenerateimagefeatureprintrequestrevision1.md)
   A constant for specifying the first revision of the feature-print request.
-- [var VNGenerateImageFeaturePrintRequestRevision2: Int](vngenerateimagefeatureprintrequestrevision2.md)
+- [var VNGenerateImageFeaturePrintRequestRevision2: Int](./vngenerateimagefeatureprintrequestrevision2.md)
   A value that indicates the second revision for a feature-print request.
-- [var VNDetectFaceCaptureQualityRequestRevision3: Int](vndetectfacecapturequalityrequestrevision3.md)
+- [var VNDetectFaceCaptureQualityRequestRevision3: Int](./vndetectfacecapturequalityrequestrevision3.md)
   A value that indicates the third revision for a face capture-quality request.
-- [var VNDetectBarcodesRequestRevision4: Int](vndetectbarcodesrequestrevision4.md)
+- [var VNDetectBarcodesRequestRevision4: Int](./vndetectbarcodesrequestrevision4.md)
   A value that indicates the fourth revision for a barcode request.
-- [var VNCalculateImageAestheticsScoresRequestRevision1: Int](vncalculateimageaestheticsscoresrequestrevision1.md)
+- [var VNCalculateImageAestheticsScoresRequestRevision1: Int](./vncalculateimageaestheticsscoresrequestrevision1.md)
   A value that indicates the first revision for an aesthetics scores request.
-- [var VNRequestRevisionUnspecified: Int](vnrequestrevisionunspecified.md)
+- [var VNRequestRevisionUnspecified: Int](./vnrequestrevisionunspecified.md)
   A constant for specifying an unspecified request revision.
 
 

@@ -1,17 +1,22 @@
 # setToolTip(_:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tooltip for the cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setToolTip(_ toolTipString: String?, for cell: NSCell)
+```
+
+```objc
+- (void) setToolTip:(NSString *) toolTipString forCell:(NSCell *) cell;
 ```
 
 ## Parameters
@@ -21,9 +26,10 @@ func setToolTip(_ toolTipString: String?, for cell: NSCell)
 
 ## See Also
 
-- [func setState(Int, atRow: Int, column: Int)](nsmatrix/setstate(_:atrow:column:).md)
+### Managing Attributes of Individual Cells
+- [func setState(Int, atRow: Int, column: Int)](./setstate%28_,atrow,column%29.md)
   Sets the state of the cell at specified location.
-- [func toolTip(for: NSCell) -> String?](nsmatrix/tooltip(for:).md)
+- [func toolTip(for: NSCell) -> String?](./tooltip%28for%29.md)
   Returns the tooltip for the specified cell.
 
 

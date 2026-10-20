@@ -1,7 +1,8 @@
 # PagingInformation.Paging
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Paging details such as the total number of resources and the per-page limit.
 
@@ -10,7 +11,7 @@ Paging details such as the total number of resources and the per-page limit.
 
 ## Declaration
 
-```swift
+```
 object PagingInformation.Paging
 ```
 

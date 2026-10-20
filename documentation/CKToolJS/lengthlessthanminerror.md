@@ -1,7 +1,8 @@
 # LengthLessThanMinError
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An error a validator emits when the length property of the value given is less than the allowed minimum.
 
@@ -10,7 +11,7 @@ An error a validator emits when the length property of the value given is less t
 
 ## Declaration
 
-```swift
+```
 interface LengthLessThanMinError
 ```
 
@@ -21,21 +22,22 @@ Extends `LengthError`.
 ## Topics
 
 ### Instance Properties
-- [minimum](lengthlessthanminerror/minimum.md)
+- [minimum](./lengthlessthanminerror/minimum.md)
   The minimum value (inclusive) for the tested length property.
 
 ## Relationships
 
 ### Inherited By
-- [LengthError](lengtherror.md)
+- [LengthError](./lengtherror.md)
 
 ## See Also
 
-- [LengthError](lengtherror.md)
+### Length Errors
+- [LengthError](./lengtherror.md)
   The base class of length-related validation errors.
-- [LengthGreaterThanMaxError](lengthgreaterthanmaxerror.md)
+- [LengthGreaterThanMaxError](./lengthgreaterthanmaxerror.md)
   An error a validator emits when the length property of the value given is greater than the allowed maximum.
-- [LengthNotNumericError](lengthnotnumericerror.md)
+- [LengthNotNumericError](./lengthnotnumericerror.md)
   An error a validator emits when the length property of a value isn’t numeric.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothL2CAPPSMTCS_BIN_Cordless
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPPSMTCS_BIN_Cordless = 0x0007
 ```
 

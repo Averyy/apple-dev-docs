@@ -1,12 +1,13 @@
 # arrange(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a given array, appropriately sorted and filtered.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a given array, appropriately sorted and filtered.
 func arrange(_ objects: [Any]) -> [Any]
 ```
 
+```objc
+- (NSArray *) arrangeObjects:(NSArray *) objects;
+```
+
 #### Return Value
 
-An array containing `objects` filtered using the receiver’s filter predicate (see [`filterPredicate`](nsarraycontroller/filterpredicate.md)) and sorted according to the receiver’s [`sortDescriptors`](nsarraycontroller/sortdescriptors.md).
+An array containing `objects` filtered using the receiver’s filter predicate (see [`filterPredicate`](./filterpredicate.md)) and sorted according to the receiver’s [`sortDescriptors`](./sortdescriptors.md).
 
 #### Discussion
 
@@ -24,9 +29,10 @@ Subclasses should override this method to use a different sort mechanism, provid
 
 ## See Also
 
-- [var arrangedObjects: Any](nsarraycontroller/arrangedobjects.md)
-  An array containing the receiver’s content objects arranged using [`arrange(_:)`](nsarraycontroller/arrange(_:).md).
-- [func rearrangeObjects()](nsarraycontroller/rearrangeobjects.md)
+### Arranging Objects
+- [var arrangedObjects: Any](./arrangedobjects.md)
+  An array containing the receiver’s content objects arranged using [`arrange(_:)`](./arrange%28_%29.md).
+- [func rearrangeObjects()](./rearrangeobjects%28%29.md)
   Triggers filtering of the receiver’s content.
 
 

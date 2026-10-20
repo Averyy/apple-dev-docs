@@ -1,7 +1,8 @@
 # isIDSBinaryOperator
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is an ideographic description character that determines how the two ideographic characters or ideographic description sequences that follow it are to be combined to form a single character.
 
@@ -24,7 +25,7 @@ var isIDSBinaryOperator: Bool { get }
 
 Ideographic description characters are technically printable characters, but advanced rendering engines may use them to approximate ideographs that are otherwise unrepresentable.
 
-This property corresponds to the “IDS_Binary_Operator” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “IDS_Binary_Operator” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

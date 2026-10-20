@@ -1,7 +1,8 @@
 # isExecuting
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver is executing.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the receiver is executing.
 var isExecuting: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isExecuting) BOOL executing;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is executing, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver is executing, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isFinished: Bool](thread/isfinished.md)
+### Determining the Thread’s Execution State
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether the receiver has finished execution.
-- [var isCancelled: Bool](thread/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the receiver is cancelled.
 
 

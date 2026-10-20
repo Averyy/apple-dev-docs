@@ -1,17 +1,18 @@
 # PHASEErrorDomain
 
 **Framework**: PHASE  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A unique error domain for the framework.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A unique error domain for the framework.
 let PHASEErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const PHASEErrorDomain;
+```
+
 #### Discussion
 
-For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
+For more information on Core Foundation error domains, see [Error domains](../CoreFoundation/error-domains.md).
 
 ## See Also
 
-- [struct PHASEError](phaseerror-swift.struct.md)
+### Framework Errors
+- [struct PHASEError](./phaseerror-swift.struct.md)
   An error that PHASE reports.
-- [PHASEError.Code](phaseerror-swift.struct/code.md)
+- [PHASEError.Code](./phaseerror-swift.struct/code.md)
   Codes that identify errors in PHASE.
 
 

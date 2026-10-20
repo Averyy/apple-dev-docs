@@ -1,15 +1,20 @@
 # rfcommChannelData(_:data:length:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func rfcommChannelData(_ rfcommChannel: IOBluetoothRFCOMMChannel!, data dataPointer: UnsafeMutableRawPointer!, length dataLength: Int)
+```
+
+```objc
+- (void) rfcommChannelData:(IOBluetoothRFCOMMChannel *) rfcommChannel data:(void *) dataPointer length:(size_t) dataLength;
 ```
 
 

@@ -1,7 +1,8 @@
 # applyAngularImpulse(_:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies an angular (torque) impulse to the physics body at its center of mass.
 
@@ -11,7 +12,7 @@ Applies an angular (torque) impulse to the physics body at its center of mass.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Applies an angular (torque) impulse to the physics body at its center of mass.
 
 ## See Also
 
-- [func applyLinearImpulse(SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/applylinearimpulse(_:relativeto:).md)
+### Applying impulses
+- [func applyLinearImpulse(SIMD3<Float>, relativeTo: Entity?)](./applylinearimpulse%28_,relativeto%29.md)
   Applies an impulse to the physics body at its center of mass.
-- [func applyImpulse(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](hasphysicsbody/applyimpulse(_:at:relativeto:).md)
+- [func applyImpulse(SIMD3<Float>, at: SIMD3<Float>, relativeTo: Entity?)](./applyimpulse%28_,at,relativeto%29.md)
   Applies an impulse to the physics body at the specified position.
 
 

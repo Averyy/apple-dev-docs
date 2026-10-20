@@ -1,7 +1,8 @@
 # highlightDuration
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time it takes for a highlight to fade away, in seconds.
 
@@ -16,11 +17,16 @@ The time it takes for a highlight to fade away, in seconds.
 var highlightDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval highlightDuration;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tctouchpad/contents.md)
+### Inspecting at touchpad
+- [var contents: TCControlContents?](./contents.md)
   The contents for the touchpad. May be `nil`.
-- [var reportsRelativeValues: Bool](tctouchpad/reportsrelativevalues.md)
+- [var reportsRelativeValues: Bool](./reportsrelativevalues.md)
   A Boolean value that represents the touchpad reports deltas.
 
 

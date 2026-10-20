@@ -1,7 +1,8 @@
 # vehicleClass
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The driving privilege vehicle class.
 

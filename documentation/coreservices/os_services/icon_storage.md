@@ -1,12 +1,13 @@
 # Icon Storage
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias IconRef](iconref.md)
-- [typealias IconServicesUsageFlags](iconservicesusageflags.md)
+- [typealias IconRef](../iconref.md)
+- [typealias IconServicesUsageFlags](../iconservicesusageflags.md)
 
 
 ---

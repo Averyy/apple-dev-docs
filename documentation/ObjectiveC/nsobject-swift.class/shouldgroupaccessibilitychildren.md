@@ -1,13 +1,14 @@
 # shouldGroupAccessibilityChildren
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var shouldGroupAccessibilityChildren: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL shouldGroupAccessibilityChildren;
 ```
 
 

@@ -1,7 +1,8 @@
 # SecProtocolType.AFP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates AFP over TCP.
 
@@ -13,6 +14,10 @@ Indicates AFP over TCP.
 
 ```swift
 case AFP
+```
+
+```c
+kSecProtocolTypeAFP
 ```
 
 

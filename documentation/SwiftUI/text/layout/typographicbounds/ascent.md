@@ -1,7 +1,8 @@
 # ascent
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ascent of the element.
 

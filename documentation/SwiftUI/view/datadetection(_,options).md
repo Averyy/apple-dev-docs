@@ -1,7 +1,8 @@
 # dataDetection(_:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously detects data in the view’s content and styles them to indicate they are clickable.
 

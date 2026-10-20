@@ -1,22 +1,27 @@
 # count()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring counts.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func count() -> Self
+```
+
+```objc
++ (instancetype) countUnit;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ Count units are used to represent raw scalar values. They are often used to repr
 
 ## See Also
 
-- [class func percent() -> Self](hkunit/percent.md)
+### Constructing scalar units
+- [class func percent() -> Self](./percent%28%29.md)
   Returns a HealthKit unit for measuring percentages.
 
 

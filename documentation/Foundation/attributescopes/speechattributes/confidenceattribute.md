@@ -1,7 +1,8 @@
 # AttributeScopes.SpeechAttributes.ConfidenceAttribute
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A confidence level (0–1) of the associated transcription text.
 
@@ -21,10 +22,10 @@ struct ConfidenceAttribute
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

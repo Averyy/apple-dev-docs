@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object representing the progress of the intent’s action.
 
@@ -11,7 +12,7 @@ An object representing the progress of the intent’s action.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ var progress: Progress { get }
 
 You can update  the progress as your action moves forward. Note that the system receives an update of the progress.
 
-> ⚠️ **Warning**: This progress is available only in the app intent’s [`perform()`](appintent/perform().md) method. Trying to access the progress object outside of the `perform()` method results in a crash.
+> ⚠️ **Warning**: This progress is available only in the app intent’s [`perform()`](../appintent/perform%28%29.md) method. Trying to access the progress object outside of the `perform()` method results in a crash.
 
 
 ---

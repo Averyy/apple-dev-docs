@@ -1,24 +1,26 @@
 # crc32
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t crc32(uint32_t crc, const void *buf, size_t size);
 ```
 
 ## See Also
 
-- [OSObjectLog](osobjectlog.md)
-- [IOLogBuffer](iologbuffer.md)
+### Log Support
+- [OSObjectLog](./osobjectlog.md)
+- [IOLogBuffer](./iologbuffer.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # scalingFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scale factor percentage before pagination.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Scale factor percentage before pagination.
 static let scalingFactor: NSPrintInfo.AttributeKey
 ```
 
+```c
+extern NSPrintInfoAttributeKey const NSPrintScalingFactor;
+```
+
 ## See Also
 
-- [static let paperName: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/papername.md)
+### Page Setup Attributes
+- [static let paperName: NSPrintInfo.AttributeKey](./papername.md)
   An `NSString` object containing the paper name.
-- [static let paperSize: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/papersize.md)
+- [static let paperSize: NSPrintInfo.AttributeKey](./papersize.md)
   An `NSSize` value specifying the height and width of paper in points.
-- [static let orientation: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/orientation.md)
+- [static let orientation: NSPrintInfo.AttributeKey](./orientation.md)
   An `NSNumber` object containing an `NSPrintingOrientation`.
 
 

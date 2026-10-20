@@ -1,7 +1,8 @@
 # init(configuration:assetDownloadDelegate:delegateQueue:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL session to download assets.
 
@@ -19,6 +20,10 @@ Creates a URL session to download assets.
 init(configuration: URLSessionConfiguration, assetDownloadDelegate delegate: (any AVAssetDownloadDelegate)?, delegateQueue: OperationQueue?)
 ```
 
+```objc
++ (AVAssetDownloadURLSession *) sessionWithConfiguration:(NSURLSessionConfiguration *) configuration assetDownloadDelegate:(id<AVAssetDownloadDelegate>) delegate delegateQueue:(NSOperationQueue *) delegateQueue;
+```
+
 #### Return Value
 
 A new download session.
@@ -31,7 +36,8 @@ A new download session.
 
 ## See Also
 
-- [protocol AVAssetDownloadDelegate](avassetdownloaddelegate.md)
+### Creating a download session
+- [protocol AVAssetDownloadDelegate](../avassetdownloaddelegate.md)
   A protocol that defines the methods to implement to respond to asset-download events.
 
 

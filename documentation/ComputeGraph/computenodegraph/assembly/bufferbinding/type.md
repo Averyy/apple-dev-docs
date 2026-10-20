@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element type stored in the buffer, or `nil` if untyped.
 
@@ -12,7 +13,7 @@ The element type stored in the buffer, or `nil` if untyped.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

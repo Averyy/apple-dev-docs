@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerUserOutputCapabilityNoOutput
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothLESecurityManagerUserOutputCapabilityNoOutput: BluetoothLESecurityManagerUserOutputCapability { get }
 ```
 
+```c
+kBluetoothLESecurityManagerUserOutputCapabilityNoOutput
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerUserOutputCapabilityNumericOutput: BluetoothLESecurityManagerUserOutputCapability](kbluetoothlesecuritymanageruseroutputcapabilitynumericoutput.md)
+### Constants
+- [var kBluetoothLESecurityManagerUserOutputCapabilityNumericOutput: BluetoothLESecurityManagerUserOutputCapability](./kbluetoothlesecuritymanageruseroutputcapabilitynumericoutput.md)
 
 
 ---

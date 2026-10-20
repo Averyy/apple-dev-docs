@@ -1,11 +1,14 @@
 # requestAppUpdate(for:account:installVerificationToken:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
+- iOS 17.4+ - Deprecated in 18.0
+- iPadOS 17.4+ - Deprecated in 18.0
+
+> **Deprecated**: Please use requestAppUpdate(_ request: InstallationRequest)
 
 ## Declaration
 
@@ -16,7 +19,8 @@ final func requestAppUpdate(for url: URL, account: String, installVerificationTo
 
 ## See Also
 
-- [func requestAppInstallation(for: URL, account: String, installVerificationToken: String) async throws](applibrary/requestappinstallation(for:account:installverificationtoken:).md)
+### Deprecated
+- [func requestAppInstallation(for: URL, account: String, installVerificationToken: String) async throws](./requestappinstallation%28for,account,installverificationtoken%29.md)
 
 
 ---

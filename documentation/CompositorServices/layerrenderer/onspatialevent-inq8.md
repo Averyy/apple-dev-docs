@@ -1,7 +1,8 @@
 # onSpatialEvent
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that receives the spatial events updates from the LayerRenderer
 

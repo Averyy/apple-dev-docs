@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the descriptor in bytes.
 
@@ -10,21 +11,22 @@ The length of the descriptor in bytes.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbendpointdescriptor/bdescriptortype.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bEndpointAddress](iousbendpointdescriptor/bendpointaddress.md)
+- [bEndpointAddress](./bendpointaddress.md)
   The address of the endpoint.
-- [bmAttributes](iousbendpointdescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes of the endpoint.
-- [wMaxPacketSize](iousbendpointdescriptor/wmaxpacketsize.md)
+- [wMaxPacketSize](./wmaxpacketsize.md)
   The maximum packet size that the endpoint supports.
-- [bInterval](iousbendpointdescriptor/binterval.md)
+- [bInterval](./binterval.md)
   The interval to use when polling the endpoint for data transfers, specified in frames or microframes depending on the device’s speed.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly initialized domain identifier.
 
@@ -19,7 +20,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsfileproviderdomainidentifier/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Returns a newly initialized domain identifier.
 
 

@@ -1,7 +1,8 @@
 # MapKit
 
 **Framework**: MapKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Display map or satellite imagery within your app, call out points of interest, and determine placemark information for map coordinates.
 
@@ -27,26 +28,27 @@ Use MapKit to give your app a sense of place with maps and location information.
 ## Topics
 
 ### The MapKit APIs
-- [MapKit for AppKit and UIKit](mapkit-for-appkit-and-uikit.md)
-- [MapKit for SwiftUI](mapkit-for-swiftui.md)
+- [MapKit for AppKit and UIKit](./mapkit-for-appkit-and-uikit.md)
+- [MapKit for SwiftUI](./mapkit-for-swiftui.md)
   MapKit for SwiftUI allows you to build map-centric views and apps across Apple platforms. You can design expressive and highly interactive Maps with minimal code by composing views, using ViewBuilders and view modifiers.
-- [Adopting unified Maps URLs](unified-map-urls.md)
+- [Adopting unified Maps URLs](./unified-map-urls.md)
   Access Maps URLs and options for displaying Maps information across Apple platforms.
 ### Articles
-- [Deprecated Symbols](mapkit_for_appkit_and_uikit-deprecated-symbols.md)
+- [Deprecated Symbols](./mapkit_for_appkit_and_uikit-deprecated-symbols.md)
   MapKit classes, protocols, and entitlements that are no longer supported.
-- [Preparing your app to be the default navigation app](preparing-your-app-to-be-the-default-navigation-app.md)
+- [Preparing your app to be the default navigation app](./preparing-your-app-to-be-the-default-navigation-app.md)
   Configure your navigation app so people can set it as the default on their devices.
 ### Structures
-- [struct AnyMapContent](anymapcontent.md)
+- [struct AnyMapContent](./anymapcontent.md)
   A type-erased map content.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [MapKit JS](../mapkitjs/mapkitjs.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+- [MapKit JS](../MapKitJS/MapKitJS.md)
   Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches.
-- [Apple Maps Server API](../applemapsserverapi/applemapsserverapi.md)
+- [Apple Maps Server API](../AppleMapsServerAPI/AppleMapsServerAPI.md)
   Reduce API calls and conserve device power by streamlining your app’s georelated searches.
 
 

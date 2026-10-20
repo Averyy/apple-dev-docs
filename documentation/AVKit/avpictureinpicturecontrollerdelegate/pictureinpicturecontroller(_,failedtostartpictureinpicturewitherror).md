@@ -1,7 +1,8 @@
 # pictureInPictureController(_:failedToStartPictureInPictureWithError:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that Picture in Picture failed to start.
 
@@ -19,6 +20,10 @@ Tells the delegate that Picture in Picture failed to start.
 optional func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController, failedToStartPictureInPictureWithError error: any Error)
 ```
 
+```objc
+- (void) pictureInPictureController:(AVPictureInPictureController *) pictureInPictureController failedToStartPictureInPictureWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `pictureInPictureController`: The delegating controller.
@@ -26,13 +31,14 @@ optional func pictureInPictureController(_ pictureInPictureController: AVPicture
 
 ## See Also
 
-- [func pictureInPictureControllerWillStartPictureInPicture(AVPictureInPictureController)](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstartpictureinpicture(_:).md)
+### Responding to Picture in Picture life cycle events
+- [func pictureInPictureControllerWillStartPictureInPicture(AVPictureInPictureController)](./pictureinpicturecontrollerwillstartpictureinpicture%28_%29.md)
   Tells the delegate that Picture in Picture is about to start.
-- [func pictureInPictureControllerDidStartPictureInPicture(AVPictureInPictureController)](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstartpictureinpicture(_:).md)
+- [func pictureInPictureControllerDidStartPictureInPicture(AVPictureInPictureController)](./pictureinpicturecontrollerdidstartpictureinpicture%28_%29.md)
   Tells the delegate that Picture in Picture started.
-- [func pictureInPictureControllerWillStopPictureInPicture(AVPictureInPictureController)](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstoppictureinpicture(_:).md)
+- [func pictureInPictureControllerWillStopPictureInPicture(AVPictureInPictureController)](./pictureinpicturecontrollerwillstoppictureinpicture%28_%29.md)
   Tells the delegate that Picture in Picture is about to stop.
-- [func pictureInPictureControllerDidStopPictureInPicture(AVPictureInPictureController)](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstoppictureinpicture(_:).md)
+- [func pictureInPictureControllerDidStopPictureInPicture(AVPictureInPictureController)](./pictureinpicturecontrollerdidstoppictureinpicture%28_%29.md)
   Tells the delegate that Picture in Picture stopped.
 
 

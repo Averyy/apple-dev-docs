@@ -1,7 +1,8 @@
 # reportToPersistenceDelayTime
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If any of these properties are set to be out of the documented limits, these default values will be used to replace all of them:
 
@@ -18,6 +19,10 @@ If any of these properties are set to be out of the documented limits, these def
 
 ```swift
 var reportToPersistenceDelayTime: TimeInterval { get set }
+```
+
+```objc
+@property (nonatomic, assign) NSTimeInterval reportToPersistenceDelayTime;
 ```
 
 #### Discussion

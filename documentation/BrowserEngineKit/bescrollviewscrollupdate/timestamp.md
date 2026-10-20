@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which a scroll update occurs.
 
@@ -17,11 +18,16 @@ The time at which a scroll update occurs.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 ## See Also
 
-- [var phase: BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.property.md)
+### Retrieving scroll state information
+- [var phase: BEScrollViewScrollUpdate.Phase](./phase-swift.property.md)
   A value that indicates the scroll update’s position in the scrolling life cycle.
-- [BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.enum.md)
+- [BEScrollViewScrollUpdate.Phase](./phase-swift.enum.md)
   Phases in the scroll gesture life cycle.
 
 

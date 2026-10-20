@@ -1,7 +1,8 @@
 # sourceDescription
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string describing the source tapped to launch the external link.
 
@@ -17,6 +18,10 @@ A string describing the source tapped to launch the external link.
 var sourceDescription: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * sourceDescription;
+```
+
 #### Discussion
 
 This property contains a description of the attribution source. For example, for an ad, `sourceDescription` describes the content of the advertisement that the user tapped.
@@ -25,13 +30,14 @@ The system may truncate this field if it’s longer than 100 characters.
 
 ## See Also
 
-- [var destinationURL: URL](uieventattribution/destinationurl.md)
+### Setting attribution details
+- [var destinationURL: URL](./destinationurl.md)
   The destination URL to attribute.
-- [var purchaser: String](uieventattribution/purchaser.md)
+- [var purchaser: String](./purchaser.md)
   The entity that purchased the ad or content.
-- [var reportEndpoint: URL?](uieventattribution/reportendpoint.md)
+- [var reportEndpoint: URL?](./reportendpoint.md)
   The URL that receives attribution data.
-- [var sourceIdentifier: UInt8](uieventattribution/sourceidentifier.md)
+- [var sourceIdentifier: UInt8](./sourceidentifier.md)
   A number that identifies the source of the attribution.
 
 

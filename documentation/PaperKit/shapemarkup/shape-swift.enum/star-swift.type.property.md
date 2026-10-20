@@ -1,7 +1,8 @@
 # star
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A default 5-pointed star shape.
 

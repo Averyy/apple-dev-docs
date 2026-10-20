@@ -1,7 +1,8 @@
 # VNAnimalBodyPoseObservation
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observation that provides the animal body points the analysis recognizes.
 
@@ -19,43 +20,48 @@ An observation that provides the animal body points the analysis recognizes.
 class VNAnimalBodyPoseObservation
 ```
 
+```objc
+@interface VNAnimalBodyPoseObservation : VNRecognizedPointsObservation
+```
+
 ## Topics
 
 ### Accessing Points
-- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](vnanimalbodyposeobservation/availablejointnames.md)
+- [var availableJointNames: [VNAnimalBodyPoseObservation.JointName]](./vnanimalbodyposeobservation/availablejointnames.md)
   The names of the available joints in the observation.
-- [VNAnimalBodyPoseObservation.JointName](vnanimalbodyposeobservation/jointname.md)
+- [VNAnimalBodyPoseObservation.JointName](./vnanimalbodyposeobservation/jointname.md)
   The joint names for an animal body pose.
-- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](vnanimalbodyposeobservation/availablejointgroupnames.md)
+- [var availableJointGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./vnanimalbodyposeobservation/availablejointgroupnames.md)
   The available joint group names in the observation.
-- [VNAnimalBodyPoseObservation.JointsGroupName](vnanimalbodyposeobservation/jointsgroupname.md)
+- [VNAnimalBodyPoseObservation.JointsGroupName](./vnanimalbodyposeobservation/jointsgroupname.md)
   The joint group names for an animal body pose.
-- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](vnanimalbodyposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNAnimalBodyPoseObservation.JointName) throws -> VNRecognizedPoint](./vnanimalbodyposeobservation/recognizedpoint%28_%29.md)
   Returns the point for a joint name the observation recognizes.
-- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](vnanimalbodyposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNAnimalBodyPoseObservation.JointsGroupName) throws -> [VNAnimalBodyPoseObservation.JointName : VNRecognizedPoint]](./vnanimalbodyposeobservation/recognizedpoints%28_%29.md)
   Returns the points for a joint group name the observation recognizes.
 
 ## Relationships
 
 ### Inherits From
-- [VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [Detecting animal body poses with Vision](detecting-animal-body-poses-with-vision.md)
+### Animal body pose detection
+- [Detecting animal body poses with Vision](./detecting-animal-body-poses-with-vision.md)
   Draw the skeleton of an animal by using Vision’s capability to detect animal body poses.
-- [class VNDetectAnimalBodyPoseRequest](vndetectanimalbodyposerequest.md)
+- [class VNDetectAnimalBodyPoseRequest](./vndetectanimalbodyposerequest.md)
   A request that detects an animal body pose.
 
 

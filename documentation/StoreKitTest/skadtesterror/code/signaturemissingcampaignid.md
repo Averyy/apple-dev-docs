@@ -1,7 +1,8 @@
 # SKAdTestError.Code.signatureMissingCampaignId
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The signature is missing the campaign identifier, in the testing environment.
 
@@ -16,19 +17,24 @@ The signature is missing the campaign identifier, in the testing environment.
 case signatureMissingCampaignId
 ```
 
+```c
+SKAdTestErrorCodeSignatureMissingCampaignId
+```
+
 #### Discussion
 
 Be sure to include the campaign identifier when you create and validate an ad impression in the testing environment.
 
 ## See Also
 
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+### Older Errors
+- [SKAdTestError.Code.invalidCampaignId](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./conflictingsource.md)
   This error code is unused.
-- [SKAdTestError.Code.invalidCampaignId](skadtesterror/code/invalidcampaignid.md)
+- [SKAdTestError.Code.invalidCampaignId](./invalidcampaignid.md)
   The campaign ID isn’t an integer between one and one hundred.
-- [SKAdTestError.Code.conflictingSource](skadtesterror/code/conflictingsource.md)
+- [SKAdTestError.Code.conflictingSource](./conflictingsource.md)
   This error code is unused.
 
 

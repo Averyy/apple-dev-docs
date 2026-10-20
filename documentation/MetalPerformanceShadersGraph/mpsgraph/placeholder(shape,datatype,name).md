@@ -1,7 +1,8 @@
 # placeholder(shape:dataType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a placeholder operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a placeholder operation and returns the result tensor.
 
 ```swift
 func placeholder(shape: [NSNumber]?, dataType: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) placeholderWithShape:(MPSShape *) shape dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
 #### Return Value

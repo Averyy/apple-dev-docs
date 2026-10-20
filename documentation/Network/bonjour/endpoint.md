@@ -1,7 +1,8 @@
 # Bonjour.Endpoint
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An endpoint for a discovered Bonjour service.
 
@@ -23,35 +24,35 @@ struct Endpoint
 ## Topics
 
 ### Operators
-- [static func == (Bonjour.Endpoint, Bonjour.Endpoint) -> Bool](bonjour/endpoint/==(_:_:).md)
+- [static func == (Bonjour.Endpoint, Bonjour.Endpoint) -> Bool](./endpoint/eqeq%28_,_%29.md)
   Compare two endpoints for equality.
 ### Instance Properties
-- [var description: String](bonjour/endpoint/description.md)
+- [var description: String](./endpoint/description.md)
   A description of this endpoint to be used for logging and debugging purposes.
-- [let domain: String](bonjour/endpoint/domain.md)
+- [let domain: String](./endpoint/domain.md)
   The Bonjour domain of the endpoint.
-- [var id: String](bonjour/endpoint/id.md)
+- [var id: String](./endpoint/id.md)
   A unique identifer for the endpoint.
-- [let name: String](bonjour/endpoint/name.md)
+- [let name: String](./endpoint/name.md)
   The Bonjour name of the endpoint.
-- [var nwEndpoint: NWEndpoint](bonjour/endpoint/nwendpoint.md)
+- [var nwEndpoint: NWEndpoint](./endpoint/nwendpoint.md)
   The NWEndpoint to use when connecting to this result.
-- [let result: NWBrowser.Result](bonjour/endpoint/result.md)
+- [let result: NWBrowser.Result](./endpoint/result.md)
   A snapshot of the endpoint at some point in time on the network.
-- [let txtRecord: NWTXTRecord](bonjour/endpoint/txtrecord.md)
+- [let txtRecord: NWTXTRecord](./endpoint/txtrecord.md)
   TXT records provide additional information about an endpoint during advertisement or discovery.
-- [let type: String](bonjour/endpoint/type.md)
+- [let type: String](./endpoint/type.md)
   The Bonjour type of the endpoint.
 
 ## Relationships
 
 ### Conforms To
-- [Connectable](connectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Connectable](../connectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

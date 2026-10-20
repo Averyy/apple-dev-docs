@@ -1,7 +1,8 @@
 # withMutablePixelBufferIfAvailable(_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes to the underlying pixel buffer.
 
@@ -37,7 +38,8 @@ array.withMutablePixelBuffer { backingPixelBuffer in
 
 ## See Also
 
-- [func withPixelBufferIfAvailable<R>((CVPixelBuffer) throws -> R) rethrows -> R?](mlshapedarray/withpixelbufferifavailable(_:).md)
+### Reading and writing the pixel buffer
+- [func withPixelBufferIfAvailable<R>((CVPixelBuffer) throws -> R) rethrows -> R?](./withpixelbufferifavailable%28_%29.md)
   Reads the underlying pixel buffer.
 
 

@@ -1,7 +1,8 @@
 # isSubtype(of:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a type is higher in a hierarchy than the type.
 
@@ -20,21 +21,26 @@ Returns a Boolean value that indicates whether a type is higher in a hierarchy t
 func isSubtype(of type: UTType) -> Bool
 ```
 
+```objc
+- (BOOL) isSubtypeOfType:(UTType *) type;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the type directly or indirectly conforms to `type`, but returns [`false`](https://developer.apple.com/documentation/swift/false) if it’s equal to `type`.
+[`true`](../../Swift/true.md) if the type directly or indirectly conforms to `type`, but returns [`false`](../../Swift/false.md) if it’s equal to `type`.
 
 ## Parameters
 
-- `type`: A [`UTType`](uttype-swift.struct.md) instance.
+- `type`: A [`UTType`](../uttype-swift.struct.md) instance.
 
 ## See Also
 
-- [var supertypes: Set<UTType>](uttype-swift.struct/supertypes.md)
+### Checking a type’s relationship to another type
+- [var supertypes: Set<UTType>](../uttype-swift.struct/supertypes.md)
   The set of types the type directly or indirectly conforms to.
-- [func conforms(to: UTType) -> Bool](uttypereference/conforms(to:).md)
+- [func conforms(to: UTType) -> Bool](./conforms%28to%29.md)
   Returns a Boolean value that indicates whether a type conforms to the type.
-- [func isSupertype(of: UTType) -> Bool](uttypereference/issupertype(of:).md)
+- [func isSupertype(of: UTType) -> Bool](./issupertype%28of%29.md)
   Returns a Boolean value that indicates whether a type is lower in a hierarchy than the type.
 
 

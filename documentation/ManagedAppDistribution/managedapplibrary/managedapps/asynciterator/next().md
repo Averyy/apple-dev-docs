@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
@@ -20,7 +21,8 @@ mutating func next() async throws -> ManagedAppLibrary.ManagedApps.AsyncIterator
 
 ## See Also
 
-- [ManagedAppLibrary.ManagedApps.AsyncIterator.Element](managedapplibrary/managedapps/asynciterator/element.md)
+### Iterating
+- [ManagedAppLibrary.ManagedApps.AsyncIterator.Element](./element.md)
   The type of element this asynchronous sequence produces.
 
 

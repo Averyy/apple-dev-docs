@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The master point segments, in path order. Each segment is in the order: Curve: parallel factor, zero, off X, off Y Not curve: on X, on Y, off X, off Y

@@ -1,7 +1,8 @@
 # maximumNumberOfTouches
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of touches allowed to recognize this gesture
 
@@ -14,15 +15,20 @@ The maximum number of touches allowed to recognize this gesture
 var maximumNumberOfTouches: Int { get set }
 ```
 
+```objc
+@property NSInteger maximumNumberOfTouches;
+```
+
 #### Discussion
 
 Set this property to 0 to require exactly `minimumNumberOfTouches` touches to recognize the gesture. Defaults to `NSIntegerMax`.
 
 ## See Also
 
-- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+### Setting the number of touches
+- [var minimumNumberOfTouches: Int](./minimumnumberoftouches.md)
   The minimum number of touches needed to recognize this gesture
-- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
+- [var numberOfTouchesRequired: Int](./numberoftouchesrequired.md)
   The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 

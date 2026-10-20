@@ -1,7 +1,8 @@
 # NLTagger.Options
 
 **Framework**: Natural Language  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for linguistic tagger enumeration specifying which tokens to omit and whether to join names.
 
@@ -20,42 +21,47 @@ Constants for linguistic tagger enumeration specifying which tokens to omit and 
 struct Options
 ```
 
+```c
+enum NLTaggerOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var omitWords: NLTagger.Options](nltagger/options/omitwords.md)
-  Omit tokens of type [`word`](nltag/word.md) (items considered to be words).
-- [static var omitPunctuation: NLTagger.Options](nltagger/options/omitpunctuation.md)
-  Omit tokens of type [`punctuation`](nltag/punctuation.md) (all punctuation).
-- [static var omitWhitespace: NLTagger.Options](nltagger/options/omitwhitespace.md)
-  Omit tokens of type [`whitespace`](nltag/whitespace.md) (whitespace of all sorts).
-- [static var omitOther: NLTagger.Options](nltagger/options/omitother.md)
-  Omit tokens of type [`other`](nltag/other.md) (non-linguistic items, such as symbols).
-- [static var joinNames: NLTagger.Options](nltagger/options/joinnames.md)
+- [static var omitWords: NLTagger.Options](./options/omitwords.md)
+  Omit tokens of type [`word`](../nltag/word.md) (items considered to be words).
+- [static var omitPunctuation: NLTagger.Options](./options/omitpunctuation.md)
+  Omit tokens of type [`punctuation`](../nltag/punctuation.md) (all punctuation).
+- [static var omitWhitespace: NLTagger.Options](./options/omitwhitespace.md)
+  Omit tokens of type [`whitespace`](../nltag/whitespace.md) (whitespace of all sorts).
+- [static var omitOther: NLTagger.Options](./options/omitother.md)
+  Omit tokens of type [`other`](../nltag/other.md) (non-linguistic items, such as symbols).
+- [static var joinNames: NLTagger.Options](./options/joinnames.md)
   Typically, multiple-word names will be returned as multiple tokens, following the standard tokenization practice of the tagger.
-- [static var joinContractions: NLTagger.Options](nltagger/options/joincontractions.md)
+- [static var joinContractions: NLTagger.Options](./options/joincontractions.md)
   Contractions will be returned as one token.
 ### Initializers
-- [init(rawValue: UInt)](nltagger/options/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options/init%28rawvalue%29.md)
   Creates the option with a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func enumerateTags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options, using: (NLTag?, Range<String.Index>) -> Bool)](nltagger/enumeratetags(in:unit:scheme:options:using:).md)
+### Enumerating linguistic tags
+- [func enumerateTags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options, using: (NLTag?, Range<String.Index>) -> Bool)](./enumeratetags%28in,unit,scheme,options,using%29.md)
   Enumerates a block over the tagger’s string, given a range, token unit, and tag scheme.
-- [struct NLTag](nltag.md)
+- [struct NLTag](../nltag.md)
   A token type, lexical class, name, lemma, language, or script returned by a linguistic tagger for natural language text.
 
 

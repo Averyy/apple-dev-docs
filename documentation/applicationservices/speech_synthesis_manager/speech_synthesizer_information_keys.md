@@ -1,18 +1,19 @@
 # Speech Synthesizer Information Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Keys used with the `kSpeechSynthesizerInfoProperty` property to get information about the synthesizer.
 
 ## Topics
 
 ### Constants
-- [let kSpeechSynthesizerInfoIdentifier: CFString](kspeechsynthesizerinfoidentifier.md)
+- [let kSpeechSynthesizerInfoIdentifier: CFString](../kspeechsynthesizerinfoidentifier.md)
   The identifier of the speech synthesizer.
-- [let kSpeechSynthesizerInfoVersion: CFString](kspeechsynthesizerinfoversion.md)
+- [let kSpeechSynthesizerInfoVersion: CFString](../kspeechsynthesizerinfoversion.md)
   The version of the speech synthesizer.
-- [let kSpeechSynthesizerInfoManufacturer: CFString](kspeechsynthesizerinfomanufacturer.md)
-  The identification of a synthesizer engine (see the `synthManufacturer` field in [`SpeechVersionInfo`](speechversioninfo.md)).
+- [let kSpeechSynthesizerInfoManufacturer: CFString](../kspeechsynthesizerinfomanufacturer.md)
+  The identification of a synthesizer engine (see the `synthManufacturer` field in [`SpeechVersionInfo`](../speechversioninfo.md)).
 
 
 ---

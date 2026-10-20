@@ -1,7 +1,8 @@
 # HKSampleSortIdentifierStartDate
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for sorting samples based on their start date.
 
@@ -19,9 +20,14 @@ A constant for sorting samples based on their start date.
 let HKSampleSortIdentifierStartDate: String
 ```
 
+```c
+extern NSString * const HKSampleSortIdentifierStartDate;
+```
+
 ## See Also
 
-- [let HKSampleSortIdentifierEndDate: String](hksamplesortidentifierenddate.md)
+### Specifying Sort Identifiers
+- [let HKSampleSortIdentifierEndDate: String](./hksamplesortidentifierenddate.md)
   A constant for sorting samples based on their end date.
 
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized title for a reading list item.
 
@@ -15,11 +16,16 @@ A localized title for a reading list item.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var dateOfLastVisit: Date?](bebrowserdatareadinglistitem/dateoflastvisit.md)
+### Accessing item properties
+- [var dateOfLastVisit: Date?](./dateoflastvisit.md)
   The date of the person’s last visit.
-- [var url: URL](bebrowserdatareadinglistitem/url.md)
+- [var url: URL](./url.md)
   A URL for the reading list item.
 
 

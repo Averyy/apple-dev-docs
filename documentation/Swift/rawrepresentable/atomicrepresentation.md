@@ -1,7 +1,8 @@
 # RawRepresentable.AtomicRepresentation
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 
@@ -19,6 +20,8 @@ The storage representation type that `Self` encodes to and decodes from which is
 ```swift
 typealias AtomicRepresentation = Self.RawValue.AtomicRepresentation
 ```
+
+Available when `Self` conforms to `AtomicRepresentable` and `RawValue` conforms to `AtomicRepresentable`.
 
 
 ---

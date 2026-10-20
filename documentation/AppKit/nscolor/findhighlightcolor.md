@@ -1,7 +1,8 @@
 # findHighlightColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The highlight color to use for the bubble that shows inline search result values.
 
@@ -14,11 +15,16 @@ The highlight color to use for the bubble that shows inline search result values
 class var findHighlightColor: NSColor { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSColor * findHighlightColor;
+```
+
 ## See Also
 
-- [class var highlightColor: NSColor](nscolor/highlightcolor.md)
+### Highlights and shadows
+- [class var highlightColor: NSColor](./highlightcolor.md)
   The color to use as a virtual light source on the screen.
-- [class var shadowColor: NSColor](nscolor/shadowcolor.md)
+- [class var shadowColor: NSColor](./shadowcolor.md)
   The color to use for virtual shadows cast by raised objects on the screen.
 
 

@@ -1,18 +1,19 @@
 # edgeCreasesSource
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geometry source specifying the smoothness or sharpness of edges after surface subdivision.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The geometry source specifying the smoothness or sharpness of edges after surfac
 var edgeCreasesSource: SCNGeometrySource? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SCNGeometrySource * edgeCreasesSource;
+```
+
 #### Discussion
 
-This geometry source’s [`semantic`](scngeometrysource/semantic-swift.property.md) value must be [`edgeCrease`](scngeometrysource/semantic-swift.struct/edgecrease.md). Its data is an array of scalar values (that is, the source’s [`componentsPerVector`](scngeometrysource/componentspervector.md) value is `1`). The value at an index in the geometry source determines the smoothness or sharpness of the edge identified by the primitive at the corresponding index in the [`edgeCreasesElement`](scngeometry/edgecreaseselement.md) geometry element: a value of `0.0` specifies a completely smoothed edge, and a value of `10.0` or greater specifies an infinitely sharp edge.
+This geometry source’s [`semantic`](../scngeometrysource/semantic-swift.property.md) value must be [`edgeCrease`](../scngeometrysource/semantic-swift.struct/edgecrease.md). Its data is an array of scalar values (that is, the source’s [`componentsPerVector`](../scngeometrysource/componentspervector.md) value is `1`). The value at an index in the geometry source determines the smoothness or sharpness of the edge identified by the primitive at the corresponding index in the [`edgeCreasesElement`](./edgecreaseselement.md) geometry element: a value of `0.0` specifies a completely smoothed edge, and a value of `10.0` or greater specifies an infinitely sharp edge.
 
 ## See Also
 
-- [var subdivisionLevel: Int](scngeometry/subdivisionlevel.md)
+### Smoothing and Subdividing Geometry
+- [var subdivisionLevel: Int](./subdivisionlevel.md)
   The number of subdivisions SceneKit uses to smooth the geometry’s surface at render time.
-- [var edgeCreasesElement: SCNGeometryElement?](scngeometry/edgecreaseselement.md)
+- [var edgeCreasesElement: SCNGeometryElement?](./edgecreaseselement.md)
   The geometry element identifying which edges of the geometry’s surface should remain sharp after subdivision.
-- [var wantsAdaptiveSubdivision: Bool](scngeometry/wantsadaptivesubdivision.md)
+- [var wantsAdaptiveSubdivision: Bool](./wantsadaptivesubdivision.md)
 
 
 ---

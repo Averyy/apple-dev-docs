@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an absorption data set from a sequence of pairs of center frequency and Sabine absorption coefficient.
 
@@ -25,7 +26,7 @@ The Sabine absorption coefficient is a value between zero and one that describes
 
 The values will be interpolated and/or extrapolated to cover the audible frequency range.
 
-```None
+```
 let data: Audio.Absorption = [500: 0.3, 1000: 0.4, 4000: 0.5]
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The completion percentage of the animation.
@@ -19,6 +20,10 @@ The completion percentage of the animation.
 var fractionComplete: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat fractionComplete;
+```
+
 #### Discussion
 
 The value of this property is `0.0` at the beginning of the animation and `1.0` at the end of the animation. Intermediate values represent progress in the execution of the animation. For example, the value `0.5` indicates that the animation is exactly half way complete.
@@ -29,11 +34,12 @@ When defining a custom animator, you may allow values greater than `1.0` or less
 
 ## See Also
 
-- [var isReversed: Bool](uiviewanimating/isreversed.md)
+### Getting the animator’s state
+- [var isReversed: Bool](./isreversed.md)
   A Boolean value indicating whether the animation is running in the reverse direction.
-- [var state: UIViewAnimatingState](uiviewanimating/state.md)
+- [var state: UIViewAnimatingState](./state.md)
   The current state of the animation.
-- [var isRunning: Bool](uiviewanimating/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   A Boolean value indicating whether the animation is currently running.
 
 

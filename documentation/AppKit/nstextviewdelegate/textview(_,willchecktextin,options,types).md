@@ -1,7 +1,8 @@
 # textView(_:willCheckTextIn:options:types:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to allow the delegate to modify the text checking process before it occurs.
 
@@ -15,26 +16,33 @@ Invoked to allow the delegate to modify the text checking process before it occu
 optional func textView(_ view: NSTextView, willCheckTextIn range: NSRange, options: [NSSpellChecker.OptionKey : Any] = [:], types checkingTypes: UnsafeMutablePointer<NSTextCheckingTypes>) -> [NSSpellChecker.OptionKey : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) textView:(NSTextView *) view willCheckTextInRange:(NSRange) range options:(NSDictionary<NSString *,id> *) options types:(NSTextCheckingTypes *) checkingTypes;
+```
+
 #### Return Value
 
 A dictionary containing an alternative to the options `dictionary`.
 
 #### Discussion
 
-Invoked by [`checkText(in:types:options:)`](nstextview/checktext(in:types:options:).md), this method allows control over text checking `options`s (via the return value) or types (by modifying the flags pointed to by the inout parameter `checkingTypes`)
+Invoked by [`checkText(in:types:options:)`](../nstextview/checktext%28in,types,options%29.md), this method allows control over text checking `options`s (via the return value) or types (by modifying the flags pointed to by the inout parameter `checkingTypes`)
 
 ## Parameters
 
 - `view`: The text view sending the message.
 - `range`: The range to be checked.
 - `options`: A dictionary of values used during the checking process to perform. See Spell Checking Option Dictionary Keys for the supported values.
-- `checkingTypes`: The type of checking to be performed, passed by-reference. The possible constants are listed in [`NSTextCheckingTypes`](https://developer.apple.com/documentation/foundation/nstextcheckingtypes) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time. You can change this parameter to alter the types of checking to be performed.
+- `checkingTypes`: The type of checking to be performed, passed by-reference. The possible constants are listed in [`NSTextCheckingTypes`](../../Foundation/nstextcheckingtypes.md) and can be combined using the C bit-wise `OR` operator to perform multiple checks at the same time.
+
+  You can change this parameter to alter the types of checking to be performed.
 
 ## See Also
 
-- [func textView(NSTextView, shouldSetSpellingState: Int, range: NSRange) -> Int](nstextviewdelegate/textview(_:shouldsetspellingstate:range:).md)
+### Working With the Spelling Checker
+- [func textView(NSTextView, shouldSetSpellingState: Int, range: NSRange) -> Int](./textview%28_,shouldsetspellingstate,range%29.md)
   Sent when the spelling state is changed.
-- [func textView(NSTextView, didCheckTextIn: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any], results: [NSTextCheckingResult], orthography: NSOrthography, wordCount: Int) -> [NSTextCheckingResult]](nstextviewdelegate/textview(_:didchecktextin:types:options:results:orthography:wordcount:).md)
+- [func textView(NSTextView, didCheckTextIn: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any], results: [NSTextCheckingResult], orthography: NSOrthography, wordCount: Int) -> [NSTextCheckingResult]](./textview%28_,didchecktextin,types,options,results,orthography,wordcount%29.md)
   Invoked to allow the delegate to modify the text checking results after checking has occurred.
 
 

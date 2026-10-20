@@ -1,7 +1,8 @@
 # isVideoMirroringSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the connection supports video mirroring.
 
@@ -19,11 +20,16 @@ A Boolean value that indicates whether the connection supports video mirroring.
 var isVideoMirroringSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVideoMirroringSupported) BOOL supportsVideoMirroring;
+```
+
 ## See Also
 
-- [var isVideoMirrored: Bool](avcaptureconnection/isvideomirrored.md)
+### Mirroring a video
+- [var isVideoMirrored: Bool](./isvideomirrored.md)
   A Boolean value that indicates whether the connection horizontally flips the video flowing through it.
-- [var automaticallyAdjustsVideoMirroring: Bool](avcaptureconnection/automaticallyadjustsvideomirroring.md)
+- [var automaticallyAdjustsVideoMirroring: Bool](./automaticallyadjustsvideomirroring.md)
   A Boolean value that indicates whether you can enable mirroring based on a session’s configuration.
 
 

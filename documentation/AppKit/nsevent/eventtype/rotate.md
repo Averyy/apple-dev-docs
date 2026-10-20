@@ -1,7 +1,8 @@
 # NSEvent.EventType.rotate
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user performed a rotate gesture.
 
@@ -14,23 +15,28 @@ The user performed a rotate gesture.
 case rotate
 ```
 
+```c
+NSEventTypeRotate
+```
+
 ## See Also
 
-- [NSEvent.EventType.magnify](nsevent/eventtype/magnify.md)
+### Getting Touch-Based Events
+- [NSEvent.EventType.magnify](./magnify.md)
   The user performed a pinch-open or pinch-close gesture.
-- [NSEvent.EventType.smartMagnify](nsevent/eventtype/smartmagnify.md)
+- [NSEvent.EventType.smartMagnify](./smartmagnify.md)
   The user performed a smart-zoom gesture.
-- [NSEvent.EventType.swipe](nsevent/eventtype/swipe.md)
+- [NSEvent.EventType.swipe](./swipe.md)
   The user performed a swipe gesture.
-- [NSEvent.EventType.gesture](nsevent/eventtype/gesture.md)
+- [NSEvent.EventType.gesture](./gesture.md)
   The user performed a nonspecific type of gesture.
-- [NSEvent.EventType.directTouch](nsevent/eventtype/directtouch.md)
+- [NSEvent.EventType.directTouch](./directtouch.md)
   The user touched a portion of the touch bar.
-- [NSEvent.EventType.tabletPoint](nsevent/eventtype/tabletpoint.md)
+- [NSEvent.EventType.tabletPoint](./tabletpoint.md)
   The user touched a point on a tablet.
-- [NSEvent.EventType.tabletProximity](nsevent/eventtype/tabletproximity.md)
+- [NSEvent.EventType.tabletProximity](./tabletproximity.md)
   A pointing device is near, but not touching, the associated tablet.
-- [NSEvent.EventType.pressure](nsevent/eventtype/pressure.md)
+- [NSEvent.EventType.pressure](./pressure.md)
   An event that reports a change in pressure on a pressure-sensitive device.
 
 

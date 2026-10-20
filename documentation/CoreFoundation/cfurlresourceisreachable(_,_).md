@@ -1,7 +1,8 @@
 # CFURLResourceIsReachable(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether the resource pointed to by a file URL can be reached.
 
@@ -18,6 +19,10 @@ Returns whether the resource pointed to by a file URL can be reached.
 
 ```swift
 func CFURLResourceIsReachable(_ url: CFURL!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+```
+
+```c
+extern Boolean CFURLResourceIsReachable(CFURLRef url, CFErrorRef*error);
 ```
 
 #### Return Value
@@ -41,13 +46,14 @@ If this function returns `false`, the object pointer referenced by `error` is po
 
 ## See Also
 
-- [func CFURLGetBaseURL(CFURL!) -> CFURL!](cfurlgetbaseurl(_:).md)
+### Getting URL Properties
+- [func CFURLGetBaseURL(CFURL!) -> CFURL!](./cfurlgetbaseurl%28_%29.md)
   Returns the base URL of a given URL if it exists.
-- [func CFURLGetBytes(CFURL!, UnsafeMutablePointer<UInt8>!, CFIndex) -> CFIndex](cfurlgetbytes(_:_:_:).md)
+- [func CFURLGetBytes(CFURL!, UnsafeMutablePointer<UInt8>!, CFIndex) -> CFIndex](./cfurlgetbytes%28_,_,_%29.md)
   Returns by reference the byte representation of a URL object.
-- [func CFURLGetByteRangeForComponent(CFURL!, CFURLComponentType, UnsafeMutablePointer<CFRange>!) -> CFRange](cfurlgetbyterangeforcomponent(_:_:_:).md)
+- [func CFURLGetByteRangeForComponent(CFURL!, CFURLComponentType, UnsafeMutablePointer<CFRange>!) -> CFRange](./cfurlgetbyterangeforcomponent%28_,_,_%29.md)
   Returns the range of the specified component in the bytes of a URL.
-- [func CFURLGetTypeID() -> CFTypeID](cfurlgettypeid().md)
+- [func CFURLGetTypeID() -> CFTypeID](./cfurlgettypeid%28%29.md)
   Returns the type identifier for the `CFURL` opaque type.
 
 

@@ -1,7 +1,8 @@
 # SRElectrocardiogramSession.SessionGuidance.guided
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system coaches the user to guide the ECG readings.
 
@@ -16,13 +17,18 @@ The system coaches the user to guide the ECG readings.
 case guided
 ```
 
+```c
+SRElectrocardiogramSessionGuidanceGuided
+```
+
 #### Discussion
 
 The duration of this type of session is usually fixed.
 
 ## See Also
 
-- [SRElectrocardiogramSession.SessionGuidance.unguided](srelectrocardiogramsession/sessionguidance-swift.enum/unguided.md)
+### Types
+- [SRElectrocardiogramSession.SessionGuidance.unguided](./unguided.md)
   The system doesn’t coach the user to guide the ECG readings.
 
 

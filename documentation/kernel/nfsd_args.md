@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nfsd_args {
     ...
 };
@@ -17,9 +17,9 @@ struct nfsd_args {
 ## Topics
 
 ### Instance Properties
-- [name](nfsd_args/3944885-name.md)
-- [namelen](nfsd_args/3944886-namelen.md)
-- [sock](nfsd_args/3944887-sock.md)
+- [name](./nfsd_args/api-3944885-name.md)
+- [namelen](./nfsd_args/api-3944886-namelen.md)
+- [sock](./nfsd_args/api-3944887-sock.md)
 
 
 ---

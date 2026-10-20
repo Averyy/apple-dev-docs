@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.mono(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lens calibration for a single camera
 

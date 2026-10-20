@@ -1,6 +1,8 @@
 # WWDC21 Challenge: Speech Synthesizer Simulator
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: Sample Code  
+**Download**: [WWDC21ChallengeSpeechSynthesizerSimulator.zip](https://docs-assets.developer.apple.com/published/440080dfff4e/WWDC21ChallengeSpeechSynthesizerSimulator.zip)
 
 Simulate a conversation using speech synthesis.
 
@@ -12,15 +14,16 @@ Simulate a conversation using speech synthesis.
 
 #### Overview
 
-> **Note**: This is a companion project for WWDC21 Challenge [`Speech Synthesizer Simulator`](https://developer.apple.comhttps://developer.apple.com/news/?id=ux4fipi2).
+> **Note**: This is a companion project for WWDC21 Challenge [Speech Synthesizer Simulator](https://developer.apple.com/news/?id=ux4fipi2).
 
 ## See Also
 
-- [WWDC22 Challenge: Learn Switch Control through gaming](wwdc22_challenge_learn_switch_control_through_gaming.md)
+### WWDC Challenges
+- [WWDC22 Challenge: Learn Switch Control through gaming](./wwdc22_challenge_learn_switch_control_through_gaming.md)
   Play a card-matching game using Switch Control.
-- [WWDC21 Challenge: Large Text Challenge](wwdc21_challenge_large_text_challenge.md)
+- [WWDC21 Challenge: Large Text Challenge](./wwdc21_challenge_large_text_challenge.md)
   Design for large text sizes by modifying the user interface.
-- [WWDC21 Challenge: VoiceOver Maze](wwdc21_challenge_voiceover_maze.md)
+- [WWDC21 Challenge: VoiceOver Maze](./wwdc21_challenge_voiceover_maze.md)
   Navigate to the end of a dark maze using VoiceOver as your guide.
 
 

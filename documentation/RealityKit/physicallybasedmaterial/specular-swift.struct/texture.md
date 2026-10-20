@@ -1,7 +1,8 @@
 # texture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of specular as a UV-mapped image texture.
 
@@ -11,7 +12,7 @@ The amount of specular as a UV-mapped image texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var texture: PhysicallyBasedMaterial.Texture?
 
 ## See Also
 
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/specular-swift.struct/texturesemantic.md)
+### Accessing specular values
+- [static let textureSemantic: TextureResource.Semantic](./texturesemantic.md)
   The intended use of the object’s texture property.
-- [var scale: Float](physicallybasedmaterial/specular-swift.struct/scale.md)
+- [var scale: Float](./scale.md)
   The amount of specular for the entire entity.
 
 

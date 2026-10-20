@@ -1,7 +1,8 @@
 # MTRCommissioningDelegate
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.2+
@@ -18,32 +19,36 @@
 protocol MTRCommissioningDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRCommissioningDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func commissioning(MTRCommissioningOperation, completedDeviceAttestation: MTRDeviceAttestationDeviceInfo, error: (any Error)?, completion: () -> Void)](mtrcommissioningdelegate/commissioning(_:completeddeviceattestation:error:completion:).md)
+- [func commissioning(MTRCommissioningOperation, completedDeviceAttestation: MTRDeviceAttestationDeviceInfo, error: (any Error)?, completion: () -> Void)](./mtrcommissioningdelegate/commissioning%28_,completeddeviceattestation,error,completion%29.md)
   Notification that device attestation has completed.
-- [func commissioning(MTRCommissioningOperation, failedWithError: any Error, metrics: MTRMetrics)](mtrcommissioningdelegate/commissioning(_:failedwitherror:metrics:).md)
+- [func commissioning(MTRCommissioningOperation, failedWithError: any Error, metrics: MTRMetrics)](./mtrcommissioningdelegate/commissioning%28_,failedwitherror,metrics%29.md)
   Notification that commissioning has failed.
-- [func commissioning(MTRCommissioningOperation, needsThreadCredentialsWithScanResults: [MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct]?, error: (any Error)?, completion: (Data) -> Void)](mtrcommissioningdelegate/commissioning(_:needsthreadcredentialswithscanresults:error:completion:).md)
+- [func commissioning(MTRCommissioningOperation, needsThreadCredentialsWithScanResults: [MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct]?, error: (any Error)?, completion: (Data) -> Void)](./mtrcommissioningdelegate/commissioning%28_,needsthreadcredentialswithscanresults,error,completion%29.md)
   Callback that gets called for a commissionee that supports Thread if Thread network commissioning is required and an operational dataset was not provided in MTRCommissioningParameters.
-- [func commissioning(MTRCommissioningOperation, needsWiFiCredentialsWithScanResults: [MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct]?, error: (any Error)?, completion: (Data, Data?) -> Void)](mtrcommissioningdelegate/commissioning(_:needswificredentialswithscanresults:error:completion:).md)
+- [func commissioning(MTRCommissioningOperation, needsWiFiCredentialsWithScanResults: [MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct]?, error: (any Error)?, completion: (Data, Data?) -> Void)](./mtrcommissioningdelegate/commissioning%28_,needswificredentialswithscanresults,error,completion%29.md)
   Callback that gets called for a commissionee that supports Wi-Fi if Wi-Fi network commissioning is required and Wi-Fi credentials were not provided in MTRCommissioningParameters.
-- [func commissioning(MTRCommissioningOperation, read: MTRCommissioneeInfo)](mtrcommissioningdelegate/commissioning(_:read:).md)
+- [func commissioning(MTRCommissioningOperation, read: MTRCommissioneeInfo)](./mtrcommissioningdelegate/commissioning%28_,read%29.md)
   Callback that gets called after various information (product identity, optionally endpoint structure information, optionally other attributes that were requested) has been read from the commissionee.
-- [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics)](mtrcommissioningdelegate/commissioning(_:succeededfornodeid:metrics:).md)
+- [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics)](./mtrcommissioningdelegate/commissioning%28_,succeededfornodeid,metrics%29.md)
   Notification that commissioning has succeeded.
-- [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics, context: [String : Any])](mtrcommissioningdelegate/commissioning(_:succeededfornodeid:metrics:context:).md)
+- [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics, context: [String : Any])](./mtrcommissioningdelegate/commissioning%28_,succeededfornodeid,metrics,context%29.md)
   Notification that commissioning has succeeded.
-- [func commissioningProvisionedNetworkCredentials(MTRCommissioningOperation)](mtrcommissioningdelegate/commissioningprovisionednetworkcredentials(_:).md)
+- [func commissioningProvisionedNetworkCredentials(MTRCommissioningOperation)](./mtrcommissioningdelegate/commissioningprovisionednetworkcredentials%28_%29.md)
   Notification that network credentials have been successfully communicated to the commissionee and it’s going to try to join that network.  Note that for commissionees that are already on-network this notification will not happen.
-- [func commissioningStartingNetworkScan(MTRCommissioningOperation)](mtrcommissioningdelegate/commissioningstartingnetworkscan(_:).md)
+- [func commissioningStartingNetworkScan(MTRCommissioningOperation)](./mtrcommissioningdelegate/commissioningstartingnetworkscan%28_%29.md)
   Notification that a network scan is starting.  This will only happen if a network scan is performed during commissioning.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

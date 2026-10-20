@@ -1,7 +1,8 @@
 # kAXValueIncrementAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The amount an accessibility object’s value changes as the result of a single action (for example, how far a scroller travels with one mouse click). This attribute is used only in conjunction with the `AXValue` attribute.
 
@@ -12,6 +13,10 @@ The amount an accessibility object’s value changes as the result of a single a
 
 ```swift
 var kAXValueIncrementAttribute: String { get }
+```
+
+```c
+#define kAXValueIncrementAttribute
 ```
 
 

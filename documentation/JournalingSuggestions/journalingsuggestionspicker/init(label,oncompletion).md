@@ -1,7 +1,8 @@
 # init(label:onCompletion:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a suggestions picker within the given view.
 
@@ -22,9 +23,10 @@ Creates a suggestions picker within the given view.
 
 ## See Also
 
-- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-7uxov.md)
+### Creating a suggestions picker
+- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](./init%28_,oncompletion%29-7uxov.md)
   Creates a suggestions picker with button text defined by the given localized string key.
-- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-4e82p.md)
+- [init<S>(S, onCompletion: (JournalingSuggestion) async -> Void)](./init%28_,oncompletion%29-4e82p.md)
   Creates a suggestions picker with button text defined by the given string.
 
 

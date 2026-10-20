@@ -1,7 +1,8 @@
 # customLabel
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized label to use instead of the default item label to describe the item result.
 
@@ -14,13 +15,18 @@ A localized label to use instead of the default item label to describe the item 
 var customLabel: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * customLabel;
+```
+
 ## See Also
 
-- [var targetElement: (any NSAccessibilityElementProtocol)?](nsaccessibilitycustomrotor/itemresult/targetelement.md)
+### Identifying an Item Result
+- [var targetElement: (any NSAccessibilityElementProtocol)?](./targetelement.md)
   A target element that references an element to message for accessibility properties.
-- [var itemLoadingToken: NSAccessibilityLoadingToken?](nsaccessibilitycustomrotor/itemresult/itemloadingtoken.md)
+- [var itemLoadingToken: NSAccessibilityLoadingToken?](./itemloadingtoken.md)
   A token to determine which item to return.
-- [var targetRange: NSRange](nsaccessibilitycustomrotor/itemresult/targetrange.md)
+- [var targetRange: NSRange](./targetrange.md)
   A range that specifies the area of interest for text-based elements.
 
 

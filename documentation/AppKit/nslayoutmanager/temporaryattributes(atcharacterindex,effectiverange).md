@@ -1,7 +1,8 @@
 # temporaryAttributes(atCharacterIndex:effectiveRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the dictionary of temporary attributes for the specified character range.
 
@@ -14,6 +15,10 @@ Returns the dictionary of temporary attributes for the specified character range
 func temporaryAttributes(atCharacterIndex charIndex: Int, effectiveRange effectiveCharRange: NSRangePointer?) -> [NSAttributedString.Key : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) temporaryAttributesAtCharacterIndex:(NSUInteger) charIndex effectiveRange:(NSRangePointer) effectiveCharRange;
+```
+
 #### Return Value
 
 The dictionary of temporary attributes for the character range specified in `effectiveCharRange` at character index `charIndex`.
@@ -24,19 +29,20 @@ Temporary attributes are used only for onscreen drawing and are not persistent i
 
 ## See Also
 
-- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](nslayoutmanager/addtemporaryattributes(_:forcharacterrange:).md)
+### Managing temporary attribute support
+- [func addTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](./addtemporaryattributes%28_,forcharacterrange%29.md)
   Appends one or more temporary attributes to the attributes dictionary of the specified character range.
-- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](nslayoutmanager/addtemporaryattribute(_:value:forcharacterrange:).md)
+- [func addTemporaryAttribute(NSAttributedString.Key, value: Any, forCharacterRange: NSRange)](./addtemporaryattribute%28_,value,forcharacterrange%29.md)
   Adds a temporary attribute to the characters in the specified range.
-- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](nslayoutmanager/settemporaryattributes(_:forcharacterrange:).md)
+- [func setTemporaryAttributes([NSAttributedString.Key : Any], forCharacterRange: NSRange)](./settemporaryattributes%28_,forcharacterrange%29.md)
   Sets one or more temporary attributes for the specified character range.
-- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](nslayoutmanager/removetemporaryattribute(_:forcharacterrange:).md)
+- [func removeTemporaryAttribute(NSAttributedString.Key, forCharacterRange: NSRange)](./removetemporaryattribute%28_,forcharacterrange%29.md)
   Removes a temporary attribute from the list of attributes for the specified character range.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](nslayoutmanager/temporaryattribute(_:atcharacterindex:effectiverange:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, effectiveRange: NSRangePointer?) -> Any?](./temporaryattribute%28_,atcharacterindex,effectiverange%29.md)
   Returns the value for the temporary attribute of a character, and the range it applies to.
-- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](nslayoutmanager/temporaryattribute(_:atcharacterindex:longesteffectiverange:in:).md)
+- [func temporaryAttribute(NSAttributedString.Key, atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> Any?](./temporaryattribute%28_,atcharacterindex,longesteffectiverange,in%29.md)
   Returns the value for the temporary attribute of a character, and the maximum range it applies to.
-- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](nslayoutmanager/temporaryattributes(atcharacterindex:longesteffectiverange:in:).md)
+- [func temporaryAttributes(atCharacterIndex: Int, longestEffectiveRange: NSRangePointer?, in: NSRange) -> [NSAttributedString.Key : Any]](./temporaryattributes%28atcharacterindex,longesteffectiverange,in%29.md)
   Returns the temporary attributes for a character, and the maximum range they apply to.
 
 

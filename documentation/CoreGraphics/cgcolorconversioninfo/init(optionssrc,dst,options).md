@@ -1,7 +1,8 @@
 # init(optionsSrc:dst:options:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,16 @@
 init?(optionsSrc src: CGColorSpace, dst: CGColorSpace, options: CFDictionary?)
 ```
 
+```c
+extern CGColorConversionInfoRefCGColorConversionInfoCreateWithOptions(CGColorSpaceRef src, CGColorSpaceRef dst, CFDictionaryRef options);
+```
+
 ## See Also
 
-- [init?(src: CGColorSpace, dst: CGColorSpace)](cgcolorconversioninfo/init(src:dst:).md)
+### Creating a Color Conversion
+- [init?(src: CGColorSpace, dst: CGColorSpace)](./init%28src,dst%29.md)
   Creates a conversion between two specified color spaces.
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+- [enum CGColorConversionInfoTransformType](../cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
 
 

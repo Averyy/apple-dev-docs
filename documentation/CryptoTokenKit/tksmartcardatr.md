@@ -1,7 +1,8 @@
 # TKSmartCardATR
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A parsed ATR (Answer To Reset) message from a Smart Card.
 
@@ -20,51 +21,56 @@ A parsed ATR (Answer To Reset) message from a Smart Card.
 class TKSmartCardATR
 ```
 
+```objc
+@interface TKSmartCardATR : NSObject
+```
+
 #### Overview
 
 This class declares a programmatic interface to parsing an ATR from data or a byte stream, and accessing the individual parts.
 
-> **Note**:  The [`TKSmartCardATR`](tksmartcardatr.md) class parses ATR messages according to the ISO/IEC 7816-3 specification.
+> **Note**:  The [`TKSmartCardATR`](./tksmartcardatr.md) class parses ATR messages according to the ISO/IEC 7816-3 specification.
 
 ## Topics
 
 ### Creating a Smart Card ATR
-- [init?(bytes: Data)](tksmartcardatr/init(bytes:).md)
+- [init?(bytes: Data)](./tksmartcardatr/init%28bytes%29.md)
   Initializes a `TKSmartCardATR` object from a provided data object.
-- [init?(source: () -> Int32)](tksmartcardatr/init(source:).md)
+- [init?(source: () -> Int32)](./tksmartcardatr/init%28source%29.md)
   Initializes a `TKSmartCardATR` object from a provided data source.
 ### Accessing ATR Attributes
-- [var protocols: [NSNumber]](tksmartcardatr/protocols.md)
+- [var protocols: [NSNumber]](./tksmartcardatr/protocols.md)
   An array of protocols indicated in the ATR
-- [var bytes: Data](tksmartcardatr/bytes.md)
+- [var bytes: Data](./tksmartcardatr/bytes.md)
   The ATR message data.
-- [var historicalBytes: Data](tksmartcardatr/historicalbytes.md)
+- [var historicalBytes: Data](./tksmartcardatr/historicalbytes.md)
   The ATR historical bytes, not including interface bytes or the TCK (check byte).
-- [var historicalRecords: [TKCompactTLVRecord]?](tksmartcardatr/historicalrecords.md)
+- [var historicalRecords: [TKCompactTLVRecord]?](./tksmartcardatr/historicalrecords.md)
   A list of compact TLV records parsed from historical bytes.
 ### Retrieving Interface Groups
-- [func interfaceGroup(at: Int) -> TKSmartCardATR.InterfaceGroup?](tksmartcardatr/interfacegroup(at:).md)
+- [func interfaceGroup(at: Int) -> TKSmartCardATR.InterfaceGroup?](./tksmartcardatr/interfacegroup%28at%29.md)
   Returns the interface group at the specified index.
-- [func interfaceGroup(for: TKSmartCardProtocol) -> TKSmartCardATR.InterfaceGroup?](tksmartcardatr/interfacegroup(for:).md)
+- [func interfaceGroup(for: TKSmartCardProtocol) -> TKSmartCardATR.InterfaceGroup?](./tksmartcardatr/interfacegroup%28for%29.md)
   Returns the interface group with the specified protocol.
-- [TKSmartCardATR.InterfaceGroup](tksmartcardatr/interfacegroup.md)
+- [TKSmartCardATR.InterfaceGroup](./tksmartcardatr/interfacegroup.md)
   A single interface-bytes group for a Smart Card ATR (Answer to Reset).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var atr: TKSmartCardATR?](tksmartcardslot/atr.md)
+### Reading the Answer to Reset
+- [var atr: TKSmartCardATR?](./tksmartcardslot/atr.md)
   The ATR (Answer to Reset) of the inserted Smart Card, or `nil` if no Smart Card is inserted or the inserted Smart Card is mute.
 
 

@@ -1,7 +1,8 @@
 # xpc_listener_set_peer_code_signing_requirement(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func xpc_listener_set_peer_code_signing_requirement(_ listener: xpc_listener_t, _ requirement: UnsafePointer<CChar>) -> Int32
+```
+
+```c
+extern int xpc_listener_set_peer_code_signing_requirement(xpc_listener_t listener, const char *requirement);
 ```
 
 

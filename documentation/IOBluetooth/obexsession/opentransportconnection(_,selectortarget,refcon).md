@@ -1,17 +1,22 @@
 # openTransportConnection(_:selectorTarget:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a transport connection to a device. A Bluetooth connection is one example of a transport.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openTransportConnection(_ inSelector: Selector!, selectorTarget inTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!) -> OBEXError
+```
+
+```objc
+- (OBEXError) openTransportConnection:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
 #### Discussion

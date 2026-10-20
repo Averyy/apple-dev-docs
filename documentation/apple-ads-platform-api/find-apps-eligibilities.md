@@ -1,7 +1,8 @@
 # Check App Eligibility
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Check whether an app is eligible to run on certain Apple Ads placements and in specific countries or regions.
 
@@ -16,7 +17,7 @@ To confirm that your app can be promoted in the target markets, use this endpoin
 
 Ineligibility reasons can include: the app is not available in that market, regional distribution restrictions set in App Store Connect, or Apple Ads policy violations.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -28,7 +29,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `countryOrRegion` | string | `EQUALS`, `IN` | Yes | The country or region evaluated |
 | `deviceClass` | string | `EQUALS`, `IN` | Yes | The device class evaluated |
 
-See [`EligibilityQueryRequest`](eligibilityqueryrequest.md) for the full field list. The request body is a [`QueryRequest`](queryrequest.md)-shaped object composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+See [`EligibilityQueryRequest`](./eligibilityqueryrequest.md) for the full field list. The request body is a [`QueryRequest`](./queryrequest.md)-shaped object composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Request Body
 
@@ -124,17 +125,32 @@ POST /v1/eligibilities/apps/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
 
 ## Request Body
 
-See [`EligibilityQueryRequest`](eligibilityqueryrequest.md).
+**Content-Type**: `application/json`  
+**Type**: `EligibilityQueryRequest`
+
+See [`EligibilityQueryRequest`](./eligibilityqueryrequest.md).
+
+## Responses
+
+- `200` OK (`EligibilityQueryResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Rejection Reasons](find-rejection-reasons.md)
+- [Query Rejection Reasons](./find-rejection-reasons.md)
   Query ad creative rejection reasons for apps and return why each ad creative failed approval.
-- [Get Rejection Reasons](gets-rejection-reasons-by-id.md)
+- [Get Rejection Reasons](./gets-rejection-reasons-by-id.md)
   Retrieve the details of an ad creative rejection reason by ID.
 
 

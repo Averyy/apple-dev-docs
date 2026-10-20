@@ -1,7 +1,8 @@
 # indexType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the values stored in the index buffer.
 

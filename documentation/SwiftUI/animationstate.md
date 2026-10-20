@@ -1,7 +1,8 @@
 # AnimationState
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that stores the state for a custom animation.
 
@@ -22,7 +23,7 @@ struct AnimationState<Value> where Value : VectorArithmetic
 
 #### Overview
 
-An [`AnimationContext`](animationcontext.md) uses this type to store state for a [`CustomAnimation`](customanimation.md). To retrieve the stored state of a context, you can use the [`state`](animationcontext/state.md) property. However, a more convenient way to access the animation state is to define an [`AnimationStateKey`](animationstatekey.md) and extend [`AnimationContext`](animationcontext.md) with a computed property that gets and sets the animation state, as shown in the following code:
+An [`AnimationContext`](./animationcontext.md) uses this type to store state for a [`CustomAnimation`](./customanimation.md). To retrieve the stored state of a context, you can use the [`state`](./animationcontext/state.md) property. However, a more convenient way to access the animation state is to define an [`AnimationStateKey`](./animationstatekey.md) and extend [`AnimationContext`](./animationcontext.md) with a computed property that gets and sets the animation state, as shown in the following code:
 
 ```swift
 private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
@@ -37,7 +38,7 @@ extension AnimationContext {
 }
 ```
 
-When creating an [`AnimationStateKey`](animationstatekey.md), it’s convenient to define the state values that your custom animation needs. For example, the following code adds the properties `paused` and `pauseTime` to the `PausableState` animation state key:
+When creating an [`AnimationStateKey`](./animationstatekey.md), it’s convenient to define the state values that your custom animation needs. For example, the following code adds the properties `paused` and `pauseTime` to the `PausableState` animation state key:
 
 ```swift
 private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
@@ -48,7 +49,7 @@ private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
 }
 ```
 
-To access the pausable state in a `PausableAnimation`, the follow code calls `pausableState` instead of using the context’s [`state`](animationcontext/state.md) property. And because the animation state key `PausableState` defines properties for state values, the custom animation can read and write those values.
+To access the pausable state in a `PausableAnimation`, the follow code calls `pausableState` instead of using the context’s [`state`](./animationcontext/state.md) property. And because the animation state key `PausableState` defines properties for state values, the custom animation can read and write those values.
 
 ```swift
 struct PausableAnimation: CustomAnimation {
@@ -71,9 +72,9 @@ struct PausableAnimation: CustomAnimation {
 }
 ```
 
-##### Storing State for Secondary Animations
+##### Storing state for secondary animations
 
-A custom animation can also use `AnimationState` to store the state of a secondary animation. For example, the following code creates an [`AnimationStateKey`](animationstatekey.md) that includes the property `secondaryState`, which a custom animation can use to store other state:
+A custom animation can also use `AnimationState` to store the state of a secondary animation. For example, the following code creates an [`AnimationStateKey`](./animationstatekey.md) that includes the property `secondaryState`, which a custom animation can use to store other state:
 
 ```swift
 private struct TargetState<Value: VectorArithmetic>: AnimationStateKey {
@@ -148,23 +149,24 @@ struct TargetAnimation: CustomAnimation {
 ## Topics
 
 ### Creating animation state
-- [init()](animationstate/init.md)
+- [init()](./animationstate/init%28%29.md)
   Create an empty state container.
 ### Accessing custom keys
-- [subscript<K>(K.Type) -> K.Value](animationstate/subscript(_:).md)
+- [subscript<K>(K.Type) -> K.Value](./animationstate/subscript%28_%29.md)
   Accesses the state for a custom key.
 
 ## See Also
 
-- [protocol CustomAnimation](customanimation.md)
+### Creating custom animations
+- [protocol CustomAnimation](./customanimation.md)
   A type that defines how an animatable value changes over time.
-- [struct AnimationContext](animationcontext.md)
+- [struct AnimationContext](./animationcontext.md)
   Contextual values that a custom animation can use to manage state and access a view’s environment.
-- [protocol AnimationStateKey](animationstatekey.md)
+- [protocol AnimationStateKey](./animationstatekey.md)
   A key for accessing animation state values.
-- [struct UnitCurve](unitcurve.md)
+- [struct UnitCurve](./unitcurve.md)
   A  function defined by a two-dimensional curve that maps an input progress in the range [0,1] to an output progress that is also in the range [0,1]. By changing the shape of the curve, the effective speed of an animation or other interpolation can be changed.
-- [struct Spring](spring.md)
+- [struct Spring](./spring.md)
   A representation of a spring’s motion.
 
 

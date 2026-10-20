@@ -1,7 +1,8 @@
 # RosterCourseResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response that contains a list of courses.
 
@@ -10,7 +11,7 @@ The response that contains a list of courses.
 
 ## Declaration
 
-```swift
+```
 object RosterCourseResponse
 ```
 

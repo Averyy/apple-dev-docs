@@ -1,7 +1,8 @@
 # FileManager.SearchPathDomainMask
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Domain constants specifying base locations to use when you search for significant directories.
 
@@ -20,52 +21,57 @@ Domain constants specifying base locations to use when you search for significan
 struct SearchPathDomainMask
 ```
 
+```c
+enum NSSearchPathDomainMask : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by the [`urls(for:in:)`](filemanager/urls(for:in:).md) and [`url(for:in:appropriateFor:create:)`](filemanager/url(for:in:appropriatefor:create:).md) methods of FileManager.
+These constants are used by the [`urls(for:in:)`](./urls%28for,in%29.md) and [`url(for:in:appropriateFor:create:)`](./url%28for,in,appropriatefor,create%29.md) methods of FileManager.
 
 ## Topics
 
 ### Creating a Search Path Domain Mask
-- [init(rawValue: UInt)](filemanager/searchpathdomainmask/init(rawvalue:).md)
+- [init(rawValue: UInt)](./searchpathdomainmask/init%28rawvalue%29.md)
   Creates a search path domain mask.
 ### Specifying Search Path Domains
-- [static var userDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/userdomainmask.md)
+- [static var userDomainMask: FileManager.SearchPathDomainMask](./searchpathdomainmask/userdomainmask.md)
   The user’s home directory—the place to install user’s personal items (`~`).
-- [static var localDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/localdomainmask.md)
+- [static var localDomainMask: FileManager.SearchPathDomainMask](./searchpathdomainmask/localdomainmask.md)
   The place to install items available to everyone on this machine.
-- [static var networkDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/networkdomainmask.md)
+- [static var networkDomainMask: FileManager.SearchPathDomainMask](./searchpathdomainmask/networkdomainmask.md)
   The place to install items available on the network (`/Network`).
-- [static var systemDomainMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/systemdomainmask.md)
+- [static var systemDomainMask: FileManager.SearchPathDomainMask](./searchpathdomainmask/systemdomainmask.md)
   A directory for system files provided by Apple (`/System`) .
-- [static var allDomainsMask: FileManager.SearchPathDomainMask](filemanager/searchpathdomainmask/alldomainsmask.md)
+- [static var allDomainsMask: FileManager.SearchPathDomainMask](./searchpathdomainmask/alldomainsmask.md)
   All domains.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions.md)
+### Supporting Types
+- [FileManager.DirectoryEnumerationOptions](./directoryenumerationoptions.md)
   Options for enumerating the contents of directories.
-- [FileManager.SearchPathDirectory](filemanager/searchpathdirectory.md)
+- [FileManager.SearchPathDirectory](./searchpathdirectory.md)
   The location of significant directories.
-- [struct FileAttributeKey](fileattributekey.md)
+- [struct FileAttributeKey](../fileattributekey.md)
   Keys in dictionaries used to get and set file attributes.
-- [struct FileAttributeType](fileattributetype.md)
+- [struct FileAttributeType](../fileattributetype.md)
   Values representing a file’s type attribute.
-- [struct FileProtectionType](fileprotectiontype.md)
+- [struct FileProtectionType](../fileprotectiontype.md)
   Protection level values that can be associated with a file attribute key.
-- [struct URLFileProtection](urlfileprotection.md)
+- [struct URLFileProtection](../urlfileprotection.md)
   Protection-level values for a URL resource key.
 
 

@@ -1,7 +1,8 @@
 # GamepadEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface GamepadEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [gamepad](gamepadevent/1629271-gamepad.md)
+- [gamepad](./gamepadevent/api-1629271-gamepad.md)
 
 ## Relationships
 

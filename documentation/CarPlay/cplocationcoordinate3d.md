@@ -1,7 +1,8 @@
 # CPLocationCoordinate3D
 
 **Framework**: CarPlay  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 
@@ -16,24 +17,28 @@ CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, 
 struct CPLocationCoordinate3D
 ```
 
+```c
+typedef struct { ... } CPLocationCoordinate3D;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cplocationcoordinate3d/init.md)
-- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance)](cplocationcoordinate3d/init(latitude:longitude:altitude:).md)
+- [init()](./cplocationcoordinate3d/init%28%29.md)
+- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees, altitude: CLLocationDistance)](./cplocationcoordinate3d/init%28latitude,longitude,altitude%29.md)
 ### Instance Properties
-- [var altitude: CLLocationDistance](cplocationcoordinate3d/altitude.md)
+- [var altitude: CLLocationDistance](./cplocationcoordinate3d/altitude.md)
   altitude is the coordinate’s elevation above sea level in meters. If no altitude is available, use CLLocationDistanceMax.
-- [var latitude: CLLocationDegrees](cplocationcoordinate3d/latitude.md)
+- [var latitude: CLLocationDegrees](./cplocationcoordinate3d/latitude.md)
   latitude is the coordinate’s latitude value in degrees.
-- [var longitude: CLLocationDegrees](cplocationcoordinate3d/longitude.md)
+- [var longitude: CLLocationDegrees](./cplocationcoordinate3d/longitude.md)
   longitude is the coordinate’s longitude value in degrees.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

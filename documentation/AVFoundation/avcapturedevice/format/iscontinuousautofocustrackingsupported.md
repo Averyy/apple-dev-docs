@@ -1,7 +1,8 @@
 # isContinuousAutoFocusTrackingSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the device format supports continuous autofocus tracking.
 
@@ -18,9 +19,13 @@ Indicates whether the device format supports continuous autofocus tracking.
 var isContinuousAutoFocusTrackingSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isContinuousAutoFocusTrackingSupported) BOOL continuousAutoFocusTrackingSupported;
+```
+
 #### Discussion
 
-Continuous autofocus tracking allows the device to keep a subject in focus by monitoring it as it moves throughout the scene. The device’s [`isContinuousAutoFocusTrackingEnabled`](avcapturedevice/iscontinuousautofocustrackingenabled.md) property can only be set if this property returns `true`.
+Continuous autofocus tracking allows the device to keep a subject in focus by monitoring it as it moves throughout the scene. The device’s [`isContinuousAutoFocusTrackingEnabled`](../iscontinuousautofocustrackingenabled.md) property can only be set if this property returns `true`.
 
 
 ---

@@ -1,7 +1,8 @@
 # UIWindowSceneDestructionRequestOptions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information to use when removing a window scene from your app.
 
@@ -19,41 +20,46 @@ An object that contains information to use when removing a window scene from you
 class UIWindowSceneDestructionRequestOptions
 ```
 
+```objc
+@interface UIWindowSceneDestructionRequestOptions : UISceneDestructionRequestOptions
+```
+
 #### Overview
 
-Create a [`UIWindowSceneDestructionRequestOptions`](uiwindowscenedestructionrequestoptions.md) object before you close one of your app’s scenes using the [`requestSceneSessionDestruction(_:options:errorHandler:)`](uiapplication/requestscenesessiondestruction(_:options:errorhandler:).md) method of [`UIApplication`](uiapplication.md). Use this object to specify the dismissal animations to apply to the scene’s UI, if that UI is onscreen.
+Create a [`UIWindowSceneDestructionRequestOptions`](./uiwindowscenedestructionrequestoptions.md) object before you close one of your app’s scenes using the [`requestSceneSessionDestruction(_:options:errorHandler:)`](./uiapplication/requestscenesessiondestruction%28_,options,errorhandler%29.md) method of [`UIApplication`](./uiapplication.md). Use this object to specify the dismissal animations to apply to the scene’s UI, if that UI is onscreen.
 
 ## Topics
 
 ### Configuring the dismissal animation
-- [var windowDismissalAnimation: UIWindowScene.DismissalAnimation](uiwindowscenedestructionrequestoptions/windowdismissalanimation.md)
+- [var windowDismissalAnimation: UIWindowScene.DismissalAnimation](./uiwindowscenedestructionrequestoptions/windowdismissalanimation.md)
   The animations to use when dismissing the scene’s windows.
-- [UIWindowScene.DismissalAnimation](uiwindowscene/dismissalanimation.md)
+- [UIWindowScene.DismissalAnimation](./uiwindowscene/dismissalanimation.md)
   Constants that indicate the types of animations available for dismissing a scene’s windows.
 
 ## Relationships
 
 ### Inherits From
-- [UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+- [UISceneDestructionRequestOptions](./uiscenedestructionrequestoptions.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UISceneActivationConditions](uisceneactivationconditions.md)
+### Activation and destruction
+- [class UISceneActivationConditions](./uisceneactivationconditions.md)
   The set of conditions that define when UIKit activates the current scene.
-- [UIScene.ActivationRequestOptions](uiscene/activationrequestoptions.md)
+- [UIScene.ActivationRequestOptions](./uiscene/activationrequestoptions.md)
   An object that contains information you want the system to use when activating the session associated with a scene.
-- [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+- [class UISceneDestructionRequestOptions](./uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
-- [class UISceneClosureConfirmation](uisceneclosureconfirmation.md)
+- [class UISceneClosureConfirmation](./uisceneclosureconfirmation.md)
   A configuration specifying a confirmation dialog that will be shown before a user action will result in destruction of the scene session and the disconnection of the scene.
 
 

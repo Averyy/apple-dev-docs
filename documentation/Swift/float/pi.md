@@ -1,7 +1,8 @@
 # pi
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mathematical constant pi (π), approximately equal to 3.14159.
 
@@ -33,21 +34,22 @@ print(Double.pi)
 
 ## See Also
 
-- [static var infinity: Float](float/infinity.md)
+### Accessing Numeric Constants
+- [static var infinity: Float](./infinity.md)
   Positive infinity.
-- [static var greatestFiniteMagnitude: Float](float/greatestfinitemagnitude.md)
+- [static var greatestFiniteMagnitude: Float](./greatestfinitemagnitude.md)
   The greatest finite number representable by this type.
-- [static var nan: Float](float/nan.md)
+- [static var nan: Float](./nan.md)
   A quiet NaN (“not a number”).
-- [static var signalingNaN: Float](float/signalingnan.md)
+- [static var signalingNaN: Float](./signalingnan.md)
   A signaling NaN (“not a number”).
-- [static var ulpOfOne: Float](float/ulpofone.md)
+- [static var ulpOfOne: Float](./ulpofone.md)
   The unit in the last place of 1.0.
-- [static var leastNormalMagnitude: Float](float/leastnormalmagnitude.md)
+- [static var leastNormalMagnitude: Float](./leastnormalmagnitude.md)
   The least positive normal number.
-- [static var leastNonzeroMagnitude: Float](float/leastnonzeromagnitude.md)
+- [static var leastNonzeroMagnitude: Float](./leastnonzeromagnitude.md)
   The least positive number.
-- [static var zero: Self](float/zero.md)
+- [static var zero: Self](./zero.md)
   The zero value.
 
 

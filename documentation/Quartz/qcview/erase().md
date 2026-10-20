@@ -1,12 +1,15 @@
 # erase()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the view using the current erase color.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,11 +17,16 @@ Clears the view using the current erase color.
 func erase()
 ```
 
+```objc
+- (void) erase;
+```
+
 ## See Also
 
-- [func eraseColor() -> NSColor!](qcview/erasecolor.md)
+### Managing the Erase Color
+- [func eraseColor() -> NSColor!](./erasecolor%28%29.md)
   Retrieves the current color used to erase the view.
-- [func setEraseColor(NSColor!)](qcview/seterasecolor(_:).md)
+- [func setEraseColor(NSColor!)](./seterasecolor%28_%29.md)
   Sets the color used to erase the view.
 
 

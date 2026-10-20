@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption region that has an identifier.
 
@@ -17,13 +18,18 @@ Creates a caption region that has an identifier.
 init(identifier: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `identifier`: The identifier of the caption region.
 
 ## See Also
 
-- [init()](avmutablecaptionregion/init.md)
+### Creating a caption region
+- [init()](./init%28%29.md)
   Creates a caption region.
 
 

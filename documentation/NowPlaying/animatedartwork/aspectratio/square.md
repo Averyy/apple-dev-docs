@@ -1,7 +1,8 @@
 # AnimatedArtwork.AspectRatio.square
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The 1:1 (square) aspect ratio.
 

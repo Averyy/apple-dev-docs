@@ -1,7 +1,8 @@
 # CSSM_ATTRIBUTE_ALERT_TITLE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ATTRIBUTE_ALERT_TITLE: Int { get }
+```
+
+```c
+CSSM_ATTRIBUTE_ALERT_TITLE
 ```
 
 

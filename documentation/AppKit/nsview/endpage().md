@@ -1,12 +1,13 @@
 # endPage()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the end of a conforming page.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Writes the end of a conforming page.
 func endPage()
 ```
 
+```objc
+- (void) endPage;
+```
+
 #### Discussion
 
-This method is invoked after each page is printed. It invokes [`unlockFocus()`](nsview/unlockfocus().md). This method also generates comments for the bounding box and page fonts, if they were specified as being at the end of the page.
+This method is invoked after each page is printed. It invokes [`unlockFocus()`](./unlockfocus%28%29.md). This method also generates comments for the bounding box and page fonts, if they were specified as being at the end of the page.
 
 ## See Also
 
-- [func beginDocument()](nsview/begindocument.md)
+### Writing Conforming Rendering Instructions
+- [func beginDocument()](./begindocument%28%29.md)
   Invoked at the beginning of the printing session, this method sets up the current graphics context.
-- [func endDocument()](nsview/enddocument.md)
+- [func endDocument()](./enddocument%28%29.md)
   This method is invoked at the end of the printing session.
 
 

@@ -1,7 +1,8 @@
 # players
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The players that join the match.
 
@@ -19,9 +20,13 @@ The players that join the match.
 var players: [GKPlayer] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<GKPlayer *> * players;
+```
+
 ## Mentions
 
-- [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
+- [Assigning players to teams using rules](../assigning-players-to-teams-using-rules.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ This property includes all players except the local player.
 
 ## See Also
 
-- [var expectedPlayerCount: Int](gkmatch/expectedplayercount.md)
+### Working with other players
+- [var expectedPlayerCount: Int](./expectedplayercount.md)
   The remaining number of players invited but not yet connected to the match.
 
 

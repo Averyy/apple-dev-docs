@@ -1,7 +1,8 @@
 # NSAttributeType.transformableAttributeType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attribute that uses a value transformer to derive its value.
 
@@ -10,7 +11,7 @@ An attribute that uses a value transformer to derive its value.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,37 +21,42 @@ An attribute that uses a value transformer to derive its value.
 case transformableAttributeType
 ```
 
+```c
+NSTransformableAttributeType
+```
+
 ## See Also
 
-- [NSAttributeType.binaryDataAttributeType](nsattributetype/binarydataattributetype.md)
+### Attribute types
+- [NSAttributeType.binaryDataAttributeType](./binarydataattributetype.md)
   An attribute that stores binary data.
-- [NSAttributeType.booleanAttributeType](nsattributetype/booleanattributetype.md)
+- [NSAttributeType.booleanAttributeType](./booleanattributetype.md)
   An attribute that stores a Boolean value.
-- [NSAttributeType.compositeAttributeType](nsattributetype/compositeattributetype.md)
+- [NSAttributeType.compositeAttributeType](./compositeattributetype.md)
   An attribute that derives its value by composing other attributes.
-- [NSAttributeType.dateAttributeType](nsattributetype/dateattributetype.md)
+- [NSAttributeType.dateAttributeType](./dateattributetype.md)
   An attribute that stores a date.
-- [NSAttributeType.decimalAttributeType](nsattributetype/decimalattributetype.md)
+- [NSAttributeType.decimalAttributeType](./decimalattributetype.md)
   An attribute that stores a decimal value.
-- [NSAttributeType.doubleAttributeType](nsattributetype/doubleattributetype.md)
+- [NSAttributeType.doubleAttributeType](./doubleattributetype.md)
   An attribute that stores a double value.
-- [NSAttributeType.floatAttributeType](nsattributetype/floatattributetype.md)
+- [NSAttributeType.floatAttributeType](./floatattributetype.md)
   An attribute that stores a float value.
-- [NSAttributeType.integer16AttributeType](nsattributetype/integer16attributetype.md)
+- [NSAttributeType.integer16AttributeType](./integer16attributetype.md)
   An attribute that stores a 16-bit signed integer value.
-- [NSAttributeType.integer32AttributeType](nsattributetype/integer32attributetype.md)
+- [NSAttributeType.integer32AttributeType](./integer32attributetype.md)
   An attribute that stores a 32-bit signed integer value.
-- [NSAttributeType.integer64AttributeType](nsattributetype/integer64attributetype.md)
+- [NSAttributeType.integer64AttributeType](./integer64attributetype.md)
   An attribute that stores a 64-bit signed integer value.
-- [NSAttributeType.objectIDAttributeType](nsattributetype/objectidattributetype.md)
+- [NSAttributeType.objectIDAttributeType](./objectidattributetype.md)
   An attribute that stores a managed object’s ID.
-- [NSAttributeType.stringAttributeType](nsattributetype/stringattributetype.md)
+- [NSAttributeType.stringAttributeType](./stringattributetype.md)
   An attribute that stores a string.
-- [NSAttributeType.undefinedAttributeType](nsattributetype/undefinedattributetype.md)
+- [NSAttributeType.undefinedAttributeType](./undefinedattributetype.md)
   An attribute that doesn’t have an explicit type.
-- [NSAttributeType.URIAttributeType](nsattributetype/uriattributetype.md)
+- [NSAttributeType.URIAttributeType](./uriattributetype.md)
   An attribute that stores a uniform resource identifier.
-- [NSAttributeType.UUIDAttributeType](nsattributetype/uuidattributetype.md)
+- [NSAttributeType.UUIDAttributeType](./uuidattributetype.md)
   An attribute that stores a universally unique identifier.
 
 

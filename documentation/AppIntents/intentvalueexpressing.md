@@ -1,7 +1,8 @@
 # IntentValueExpressing
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for types that can create intent value expressions.
 
@@ -29,31 +30,32 @@ This protocol forms the foundation of the lazy evaluation mechanism in the inten
 ## Topics
 
 ### Instance Methods
-- [func makeExpression() -> IntentValueExpression](intentvalueexpressing/makeexpression.md)
+- [func makeExpression() -> IntentValueExpression](./intentvalueexpressing/makeexpression%28%29.md)
   Creates an intent value expression that represents this value.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [IntentValueConvertible](intentvalueconvertible.md)
-- [IntentValueConvertibleWrapper](intentvalueconvertiblewrapper.md)
+- [IntentValueConvertible](./intentvalueconvertible.md)
+- [IntentValueConvertibleWrapper](./intentvalueconvertiblewrapper.md)
 ### Conforming Types
-- [IntentCurrencyAmount](intentcurrencyamount.md)
-- [IntentFile](intentfile.md)
-- [IntentPaymentMethod](intentpaymentmethod.md)
-- [IntentPerson](intentperson.md)
-- [IntentValueContainer](intentvaluecontainer.md)
-- [StringSearchCriteria](stringsearchcriteria.md)
-- [SystemShortcut](systemshortcut.md)
+- [IntentCurrencyAmount](./intentcurrencyamount.md)
+- [IntentFile](./intentfile.md)
+- [IntentPaymentMethod](./intentpaymentmethod.md)
+- [IntentPerson](./intentperson.md)
+- [IntentValueContainer](./intentvaluecontainer.md)
+- [StringSearchCriteria](./stringsearchcriteria.md)
+- [SystemShortcut](./systemshortcut.md)
 
 ## See Also
 
-- [protocol IntentValueConvertible](intentvalueconvertible.md)
+### Type conversions
+- [protocol IntentValueConvertible](./intentvalueconvertible.md)
   A protocol that allows the system to use types to as app intent parameters or properties.
-- [protocol IntentValueConvertibleWrapper](intentvalueconvertiblewrapper.md)
+- [protocol IntentValueConvertibleWrapper](./intentvalueconvertiblewrapper.md)
   A protocol for types that wrap another intent value that supports conversion.
 
 

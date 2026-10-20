@@ -1,7 +1,8 @@
 # readAttributeNumberOfYearDaySchedulesSupportedPerUser(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNumberOfYearDaySchedulesSupportedPerUser(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNumberOfYearDaySchedulesSupportedPerUser() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNumberOfYearDaySchedulesSupportedPerUserWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

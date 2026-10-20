@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.AdaptiveImageGlyphAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for an adaptive image glyph inside a run of attributed text.
 
@@ -25,7 +26,7 @@ enum AdaptiveImageGlyphAttribute
 
 An adaptive image glyph is an inline image that flows with text and scales with the surrounding font, such as a Genmoji or a sticker that someone inserts from the keyboard. A text view draws these glyphs in place, so a string that people edit keeps them where they put them:
 
-```None
+```
 TextField("Message", text: $message)
 
 Text(message)
@@ -36,13 +37,13 @@ SwiftUI sets this key as people insert glyphs, so you rarely set it yourself. Re
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

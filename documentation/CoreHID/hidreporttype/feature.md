@@ -1,7 +1,8 @@
 # HIDReportType.feature
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature report is bidirectional configuration data, typically used to alter device or software functionality.
 

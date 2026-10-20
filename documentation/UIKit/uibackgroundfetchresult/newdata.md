@@ -1,7 +1,8 @@
 # UIBackgroundFetchResult.newData
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 New data was successfully downloaded.
 
@@ -9,7 +10,7 @@ New data was successfully downloaded.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ New data was successfully downloaded.
 case newData
 ```
 
+```c
+UIBackgroundFetchResultNewData
+```
+
 ## See Also
 
-- [UIBackgroundFetchResult.noData](uibackgroundfetchresult/nodata.md)
+### Constants
+- [UIBackgroundFetchResult.noData](./nodata.md)
   There was no new data to download.
-- [UIBackgroundFetchResult.failed](uibackgroundfetchresult/failed.md)
+- [UIBackgroundFetchResult.failed](./failed.md)
   An attempt to download data was made but that attempt failed.
 
 

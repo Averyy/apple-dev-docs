@@ -1,7 +1,8 @@
 # videoRenderer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material’s video renderer.
 

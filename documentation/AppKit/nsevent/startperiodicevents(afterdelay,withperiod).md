@@ -1,17 +1,22 @@
 # startPeriodicEvents(afterDelay:withPeriod:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Begins generating periodic events for the current thread.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func startPeriodicEvents(afterDelay delay: TimeInterval, withPeriod period: TimeInterval)
+```
+
+```objc
++ (void) startPeriodicEventsAfterDelay:(NSTimeInterval) delay withPeriod:(NSTimeInterval) period;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ Raises an `NSInternalInconsistencyException` if periodic events are already bein
 
 ## See Also
 
-- [class func stopPeriodicEvents()](nsevent/stopperiodicevents.md)
+### Requesting and stopping periodic events
+- [class func stopPeriodicEvents()](./stopperiodicevents%28%29.md)
   Stops generating periodic events for the current thread and discards any periodic events remaining in the queue.
 
 

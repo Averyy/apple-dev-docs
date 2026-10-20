@@ -1,7 +1,8 @@
 # kMIDIPropertyUniqueID
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unique identifier of a device, entity, or, endpoint.
 
@@ -18,6 +19,10 @@ The unique identifier of a device, entity, or, endpoint.
 let kMIDIPropertyUniqueID: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyUniqueID;
+```
+
 #### Discussion
 
 The system assigns unique IDs to all objects. You may set this property on virtual endpoints; however, doing so may fail if the ID isn’t unique.
@@ -26,13 +31,14 @@ This property value is an integer.
 
 ## See Also
 
-- [let kMIDIPropertyName: CFString](kmidipropertyname.md)
+### Identification
+- [let kMIDIPropertyName: CFString](./kmidipropertyname.md)
   A name for a device, entity, or endpoint.
-- [let kMIDIPropertyModel: CFString](kmidipropertymodel.md)
+- [let kMIDIPropertyModel: CFString](./kmidipropertymodel.md)
   The model name of a device or endpoint.
-- [let kMIDIPropertyManufacturer: CFString](kmidipropertymanufacturer.md)
+- [let kMIDIPropertyManufacturer: CFString](./kmidipropertymanufacturer.md)
   The manufacturer name of a device or endpoint.
-- [let kMIDIPropertyDeviceID: CFString](kmidipropertydeviceid.md)
+- [let kMIDIPropertyDeviceID: CFString](./kmidipropertydeviceid.md)
   The user-visible System Exclusive (SysEx) identifier of a device or entity.
 
 

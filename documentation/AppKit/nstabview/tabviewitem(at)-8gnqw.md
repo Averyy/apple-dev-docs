@@ -1,17 +1,22 @@
 # tabViewItem(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the tab view item at the specified point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func tabViewItem(at point: NSPoint) -> NSTabViewItem?
+```
+
+```objc
+- (NSTabViewItem *) tabViewItemAtPoint:(NSPoint) point;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # CSSM_CRL_PARSE_FORMAT_LAST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CRL_PARSE_FORMAT_LAST: Int { get }
+```
+
+```c
+CSSM_CRL_PARSE_FORMAT_LAST
 ```
 
 

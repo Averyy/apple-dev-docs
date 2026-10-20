@@ -1,7 +1,8 @@
 # newState
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The new state of the equipment.
 

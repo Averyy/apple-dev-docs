@@ -1,17 +1,22 @@
 # imageVersion()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the version of the item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func imageVersion() -> Int
+```
+
+```objc
+- (NSUInteger) imageVersion;
 ```
 
 #### Return Value

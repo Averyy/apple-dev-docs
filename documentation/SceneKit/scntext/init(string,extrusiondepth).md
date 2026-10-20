@@ -1,23 +1,28 @@
 # init(string:extrusionDepth:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text geometry from a specified string, extruded with a specified depth.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(string: Any?, extrusionDepth: CGFloat)
+```
+
+```objc
++ (instancetype) textWithString:(id) string extrusionDepth:(CGFloat) extrusionDepth;
 ```
 
 #### Return Value
@@ -26,11 +31,11 @@ A new text geometry.
 
 #### Discussion
 
-In the local coordinate system of the text geometry, the origin corresponds to the lower left corner of the text’s layout rectangle, with the text extending in the x- and y-axis dimensions. (SceneKit computes a layout rectangle automatically, or you can specify one using the [`containerFrame`](scntext/containerframe.md) property.) The geometry is centered along its z-axis. For example, if its [`extrusionDepth`](scntext/extrusiondepth.md) property is `1.0`, the geometry extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape—the geometry is confined to the plane whose z-coordinate is `0.0`, and viewable only from its front unless its material’s [`isDoubleSided`](scnmaterial/isdoublesided.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+In the local coordinate system of the text geometry, the origin corresponds to the lower left corner of the text’s layout rectangle, with the text extending in the x- and y-axis dimensions. (SceneKit computes a layout rectangle automatically, or you can specify one using the [`containerFrame`](./containerframe.md) property.) The geometry is centered along its z-axis. For example, if its [`extrusionDepth`](./extrusiondepth.md) property is `1.0`, the geometry extends from `-0.5` to `0.5` along the z-axis. An extrusion depth of zero creates a flat, one-sided shape—the geometry is confined to the plane whose z-coordinate is `0.0`, and viewable only from its front unless its material’s [`isDoubleSided`](../scnmaterial/isdoublesided.md) property is [`true`](../../Swift/true.md).
 
 ## Parameters
 
-- `string`: An [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) or [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) object containing text from which to create the geometry.
+- `string`: An [`NSString`](../../Foundation/nsstring.md) or [`NSAttributedString`](../../Foundation/nsattributedstring.md) object containing text from which to create the geometry.
 - `extrusionDepth`: The extent of the text geometry in the Z dimension of its local coordinate space. Specify a depth of `0.0` to create 2D text confined to a plane.
 
 

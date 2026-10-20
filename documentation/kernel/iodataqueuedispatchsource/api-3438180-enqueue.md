@@ -1,7 +1,8 @@
 # Enqueue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Adds a single entry to the shared data queue.
 
@@ -11,13 +12,13 @@ Adds a single entry to the shared data queue.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, [`kIOReturnOverrun`](https://developer.apple.com/documentation/driverkit/kioreturnoverrun) if the queue was full, or [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) if the queue is corrupt. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, [`kIOReturnOverrun`](../../DriverKit/kioreturnoverrun.md) if the queue was full, or [`kIOReturnError`](../../DriverKit/kioreturnerror.md) if the queue is corrupt. See [Error Codes](../../DriverKit/error-codes.md). 
 
 ## Parameters
 
@@ -26,15 +27,16 @@ kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock call
 
 ## See Also
 
-- [- SetDataServicedHandler](../driverkit/iodataqueuedispatchsource/setdataservicedhandler.md)
+### Adding Work to the Queue
+- [- SetDataServicedHandler](../../DriverKit/iodataqueuedispatchsource/setdataservicedhandler.md)
   Installs the handler block to execute when data is removed from the queue.
-- [- DataServiced](../driverkit/iodataqueuedispatchsource/dataserviced.md)
+- [- DataServiced](../../DriverKit/iodataqueuedispatchsource/dataserviced.md)
   Responds to the removal of data from the queue.  
-- [- EnqueueWithCoalesce](iodataqueuedispatchsource/3438181-enqueuewithcoalesce.md)
+- [- EnqueueWithCoalesce](./api-3438181-enqueuewithcoalesce.md)
   Adds an entry to the queue, but doesn't automatically send a data-available notification.
-- [- SendDataAvailable](iodataqueuedispatchsource/3438184-senddataavailable.md)
+- [- SendDataAvailable](./api-3438184-senddataavailable.md)
   Sends a notification to observers that indicates more data is available for processing.
-- [IODataQueueClientEnqueueEntryBlock](../driverkit/iodataqueueclientenqueueentryblock.md)
+- [IODataQueueClientEnqueueEntryBlock](../../DriverKit/iodataqueueclientenqueueentryblock.md)
   The handler block you use to add data to a queue. 
 
 

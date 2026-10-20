@@ -1,12 +1,15 @@
 # init(validationData:algorithm:language:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates model parameters.
 
 **Availability**:
-- macOS 10.14+
+- macOS 10.14+ - Deprecated in 10.15
+
+> **Deprecated**: Use the validation property instead.
 
 ## Declaration
 
@@ -22,13 +25,14 @@ init(validationData: [(tokens: [MLWordTagger.Token], labels: [String])], algorit
 
 ## See Also
 
-- [init(validationData: MLDataTable?, algorithm: MLWordTagger.ModelAlgorithmType, language: NLLanguage?, tokenColumnValidationData: String?, labelColumnValidationData: String?)](mlwordtagger/modelparameters-swift.struct/init(validationdata:algorithm:language:tokencolumnvalidationdata:labelcolumnvalidationdata:).md)
+### Deprecated
+- [init(validationData: MLDataTable?, algorithm: MLWordTagger.ModelAlgorithmType, language: NLLanguage?, tokenColumnValidationData: String?, labelColumnValidationData: String?)](./init%28validationdata,algorithm,language,tokencolumnvalidationdata,labelcolumnvalidationdata%29.md)
   Creates model parameters.
-- [var validationData: MLDataTable?](mlwordtagger/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var validationData: MLDataTable?](./validationdata-swift.property.md)
   The word tagger’s validation dataset as a data table.
-- [var tokenColumnValidationData: String?](mlwordtagger/modelparameters-swift.struct/tokencolumnvalidationdata.md)
+- [var tokenColumnValidationData: String?](./tokencolumnvalidationdata.md)
   The name of the column containing the tokens in the validation data table.
-- [var labelColumnValidationData: String?](mlwordtagger/modelparameters-swift.struct/labelcolumnvalidationdata.md)
+- [var labelColumnValidationData: String?](./labelcolumnvalidationdata.md)
   The name of the column containing the token labels in the validation data table.
 
 

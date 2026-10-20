@@ -1,7 +1,8 @@
 # EPERM
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation not permitted.
 

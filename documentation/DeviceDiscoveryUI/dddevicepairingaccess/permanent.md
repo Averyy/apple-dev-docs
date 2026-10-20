@@ -1,7 +1,8 @@
 # permanent
 
 **Framework**: DeviceDiscoveryUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Grant the app permanent access to the device selected by the user for future use.
 

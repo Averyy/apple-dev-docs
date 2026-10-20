@@ -1,7 +1,8 @@
 # thresholdAmount
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The balance an account reaches before you apply the automatic reload amount.
 
@@ -18,11 +19,15 @@ The balance an account reaches before you apply the automatic reload amount.
 var thresholdAmount: NSDecimalNumber { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSDecimalNumber * thresholdAmount;
+```
+
 #### Discussion
 
 You automatically apply the reload amount to the account when the account balance drops below the threshold amount.
 
-Use the [`amount`](pkpaymentsummaryitem/amount.md) property to specify the reload amount.
+Use the [`amount`](../pkpaymentsummaryitem/amount.md) property to specify the reload amount.
 
 
 ---

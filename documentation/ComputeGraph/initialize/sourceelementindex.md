@@ -1,13 +1,14 @@
 # initialize::sourceElementIndex
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 When initializing a new particle from an event triggered from another particle, this returns the source particle’s index with its system.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ uint initialize::sourceElementIndex()
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/initialize__sourceElementIndex.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/initialize__sourceElementIndex.svg)
 
 
 ---

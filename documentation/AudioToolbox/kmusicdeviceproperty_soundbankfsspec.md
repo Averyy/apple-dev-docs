@@ -1,10 +1,11 @@
 # kMusicDeviceProperty_SoundBankFSSpec
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kMusicDeviceProperty_SoundBankFSSpec: AudioUnitPropertyID { get }
 ```
 
+```c
+kMusicDeviceProperty_SoundBankFSSpec
+```
+
 ## See Also
 
-- [var kAudioUnitProperty_PannerMode: AudioUnitPropertyID](kaudiounitproperty_pannermode.md)
-- [var kMusicDeviceProperty_GroupOutputBus: AudioUnitPropertyID](kmusicdeviceproperty_groupoutputbus.md)
+### Constants
+- [var kAudioUnitProperty_PannerMode: AudioUnitPropertyID](./kaudiounitproperty_pannermode.md)
+- [var kMusicDeviceProperty_GroupOutputBus: AudioUnitPropertyID](./kmusicdeviceproperty_groupoutputbus.md)
 
 
 ---

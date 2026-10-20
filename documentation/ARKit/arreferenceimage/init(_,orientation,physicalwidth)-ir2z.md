@@ -1,7 +1,8 @@
 # init(_:orientation:physicalWidth:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new reference image from a Core Video pixel buffer.
 
@@ -15,11 +16,15 @@ Creates a new reference image from a Core Video pixel buffer.
 init(_ pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithPixelBuffer:(CVPixelBufferRef) pixelBuffer orientation:(CGImagePropertyOrientation) orientation physicalWidth:(CGFloat) physicalWidth;
+```
+
 #### Discussion
 
-To accurately recognize the position and orientation of an image in the AR environment, ARKit must know the image’s physical size. When you call this initializer, ARKit uses the `physicalWidth` measurement and `orientation` you provide together with the aspect ratio of the image itself to calculate the physical height. Use the [`physicalSize`](arreferenceimage/physicalsize.md) property of the created [`ARReferenceImage`](arreferenceimage.md) object to retrieve these values.
+To accurately recognize the position and orientation of an image in the AR environment, ARKit must know the image’s physical size. When you call this initializer, ARKit uses the `physicalWidth` measurement and `orientation` you provide together with the aspect ratio of the image itself to calculate the physical height. Use the [`physicalSize`](./physicalsize.md) property of the created [`ARReferenceImage`](../arreferenceimage.md) object to retrieve these values.
 
-> ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR reference image assets in your Xcode asset catalog, and use the [`referenceImages(inGroupNamed:bundle:)`](arreferenceimage/referenceimages(ingroupnamed:bundle:).md) method to load them.
+> ❗ **Important**: ARKit preprocesses reference images before using them for image detection. To provide reference images bundled with your app, create AR reference image assets in your Xcode asset catalog, and use the [`referenceImages(inGroupNamed:bundle:)`](./referenceimages%28ingroupnamed,bundle%29.md) method to load them.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ To accurately recognize the position and orientation of an image in the AR envir
 
 ## See Also
 
-- [init(CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(_:orientation:physicalwidth:)-8b3bs.md)
+### Creating Reference Images
+- [init(CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](./init%28_,orientation,physicalwidth%29-8b3bs.md)
   Creates a new reference image from a Core Graphics image object.
 
 

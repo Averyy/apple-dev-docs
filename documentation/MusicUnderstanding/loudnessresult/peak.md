@@ -1,7 +1,8 @@
 # peak
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The peak amplitude of the song in decibels (dB).
 
@@ -22,11 +23,12 @@ let peak: MusicUnderstandingSession.TimedValue<Float>
 
 ## See Also
 
-- [let integrated: MusicUnderstandingSession.TimedValue<Float>](loudnessresult/integrated.md)
+### Getting loudness results
+- [let integrated: MusicUnderstandingSession.TimedValue<Float>](./integrated.md)
   The integrated loudness of the song, measured in LUFS over its full duration.
-- [let momentary: [MusicUnderstandingSession.TimedValue<Float>]](loudnessresult/momentary.md)
+- [let momentary: [MusicUnderstandingSession.TimedValue<Float>]](./momentary.md)
   An array of momentary loudness measurements sampled across the song in LUFS.
-- [let shortTerm: [MusicUnderstandingSession.TimedValue<Float>]](loudnessresult/shortterm.md)
+- [let shortTerm: [MusicUnderstandingSession.TimedValue<Float>]](./shortterm.md)
   An array of short-term loudness measurements sampled across the song in LUFS.
 
 

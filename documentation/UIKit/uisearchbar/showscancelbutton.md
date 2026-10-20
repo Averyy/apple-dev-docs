@@ -1,7 +1,8 @@
 # showsCancelButton
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cancel button is displayed.
 
@@ -17,19 +18,24 @@ A Boolean value indicating whether the cancel button is displayed.
 var showsCancelButton: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsCancelButton;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cancel button is displayed if the app is running on iPhone. The value of this property is ignored, and no cancel button is displayed, for apps running on iPad. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When the value of this property is [`true`](../../Swift/true.md), the cancel button is displayed if the app is running on iPhone. The value of this property is ignored, and no cancel button is displayed, for apps running on iPad. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var showsBookmarkButton: Bool](uisearchbar/showsbookmarkbutton.md)
+### Configuring the search interface
+- [var showsBookmarkButton: Bool](./showsbookmarkbutton.md)
   A Boolean value indicating whether the bookmark button is displayed.
-- [func setShowsCancelButton(Bool, animated: Bool)](uisearchbar/setshowscancelbutton(_:animated:).md)
+- [func setShowsCancelButton(Bool, animated: Bool)](./setshowscancelbutton%28_,animated%29.md)
   Sets the display state of the cancel button optionally with animation.
-- [var showsSearchResultsButton: Bool](uisearchbar/showssearchresultsbutton.md)
+- [var showsSearchResultsButton: Bool](./showssearchresultsbutton.md)
   A Boolean value indicating whether the search results button is displayed.
-- [var isSearchResultsButtonSelected: Bool](uisearchbar/issearchresultsbuttonselected.md)
+- [var isSearchResultsButtonSelected: Bool](./issearchresultsbuttonselected.md)
   A Boolean value indicating whether the search results button is selected.
 
 

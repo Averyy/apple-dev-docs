@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view representing the body of a progress view.
@@ -32,9 +33,10 @@ The view hierarchy calls this method for each progress view where this style is 
 
 ## See Also
 
-- [ProgressViewStyle.Configuration](progressviewstyle/configuration.md)
+### Creating custom progress view styles
+- [ProgressViewStyle.Configuration](./configuration.md)
   A type alias for the properties of a progress view instance.
-- [associatedtype Body : View](progressviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a progress view.
 
 

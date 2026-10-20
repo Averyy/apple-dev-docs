@@ -1,7 +1,8 @@
 # vImageRotate90_ARGB8888(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Rotates an 8-bit-per-channel, 4-channel interleaved image by a multiple of 90°.
 
@@ -20,9 +21,13 @@ Rotates an 8-bit-per-channel, 4-channel interleaved image by a multiple of 90°.
 func vImageRotate90_ARGB8888(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ rotationConstant: UInt8, _ backColor: UnsafePointer<UInt8>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageRotate90_ARGB8888(const vImage_Buffer *src, const vImage_Buffer *dest, uint8_t rotationConstant, const Pixel_8888 backColor, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes from [`Error codes`](1578972-error-codes.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes from [Error codes](./api-1578972-error-codes.md).
 
 #### Discussion
 
@@ -40,21 +45,23 @@ The 0° and 180° rotations don’t rotate around the true center of the image i
 - The parities of the source height and the destination height don’t match. For example, the source height is odd and the destination height is even.
 - The parities of the source width and the destination width don’t match. For example, the source width is odd and the destination width is even.
 
-To overcome this limitation, use the high-level rotation functions — for example, [`vImageRotate90_ARGB16U(_:_:_:_:_:)`](vimagerotate90_argb16u(_:_:_:_:_:).md).
+To overcome this limitation, use the high-level rotation functions — for example, [`vImageRotate90_ARGB16U(_:_:_:_:_:)`](./vimagerotate90_argb16u%28_,_,_,_,_%29.md).
 
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `rotationConstant`: A constant that specifies the rotation angle as a multiple of 90°. See [`Rotation constants`](1509228-rotation-constants.md) for the full list of supported rotation constants.
+- `rotationConstant`: A constant that specifies the rotation angle as a multiple of 90°. See [Rotation constants](./api-1509228-rotation-constants.md) for the full list of supported rotation constants.
 - `backColor`: A background color. If you set the `kvImageBackgroundColorFill` flag, pass a pixel value.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+### Related Documentation
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [func vImageRotate90_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UInt8, Pixel_8, vImage_Flags) -> vImage_Error](vimagerotate90_planar8(_:_:_:_:_:).md)
+### Rotating 8-bit-per-channel buffers by multiples of 90°
+- [func vImageRotate90_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UInt8, Pixel_8, vImage_Flags) -> vImage_Error](./vimagerotate90_planar8%28_,_,_,_,_%29.md)
   Rotates an 8-bit planar image by a multiple of 90°.
 
 

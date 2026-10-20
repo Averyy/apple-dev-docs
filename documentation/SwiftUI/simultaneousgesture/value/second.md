@@ -1,7 +1,8 @@
 # second
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the second gesture.
 
@@ -22,7 +23,8 @@ var second: Second.Value?
 
 ## See Also
 
-- [var first: First.Value?](simultaneousgesture/value/first.md)
+### Getting gesture values
+- [var first: First.Value?](./first.md)
   The value of the first gesture.
 
 

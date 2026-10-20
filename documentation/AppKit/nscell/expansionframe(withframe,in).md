@@ -1,7 +1,8 @@
 # expansionFrame(withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the expansion cell frame for the receiver.
 
@@ -14,9 +15,13 @@ Returns the expansion cell frame for the receiver.
 func expansionFrame(withFrame cellFrame: NSRect, in view: NSView) -> NSRect
 ```
 
+```objc
+- (NSRect) expansionFrameWithFrame:(NSRect) cellFrame inView:(NSView *) view;
+```
+
 #### Return Value
 
-The expansion cell frame for the receiver. If the frame is not too small, return an empty rect ([`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect)), and no expansion tool tip view will be shown.
+The expansion cell frame for the receiver. If the frame is not too small, return an empty rect ([`NSZeroRect`](../../Foundation/nszerorect.md)), and no expansion tool tip view will be shown.
 
 #### Discussion
 
@@ -29,7 +34,8 @@ This method allows the cell to return an expansion cell frame if `cellFrame` is 
 
 ## See Also
 
-- [func draw(withExpansionFrame: NSRect, in: NSView)](nscell/draw(withexpansionframe:in:).md)
+### Managing Expansion Frames
+- [func draw(withExpansionFrame: NSRect, in: NSView)](./draw%28withexpansionframe,in%29.md)
   Instructs the receiver to draw in an expansion frame.
 
 

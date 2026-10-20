@@ -1,7 +1,8 @@
 # documentName
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the document name.
 
@@ -14,13 +15,18 @@ Returns the document name.
 var documentName: String! { get set }
 ```
 
+```objc
+@property (copy) NSString * documentName;
+```
+
 ## See Also
 
-- [var displaysDownloadsDirectoryControl: Bool](ikscannerdeviceview/displaysdownloadsdirectorycontrol.md)
+### Configuring Downloading
+- [var displaysDownloadsDirectoryControl: Bool](./displaysdownloadsdirectorycontrol.md)
   Determines whether the downloads directory control is displayed.
-- [var downloadsDirectory: URL!](ikscannerdeviceview/downloadsdirectory.md)
+- [var downloadsDirectory: URL!](./downloadsdirectory.md)
   The directory where scans are saved.
-- [var transferMode: IKScannerDeviceViewTransferMode](ikscannerdeviceview/transfermode.md)
+- [var transferMode: IKScannerDeviceViewTransferMode](./transfermode.md)
   Determines how the scanned content is provided to the delegate.
 
 

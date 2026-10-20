@@ -1,7 +1,8 @@
 # recurrentGateRecurrentWeights
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,17 +18,22 @@
 var recurrentGateRecurrentWeights: (any MPSCNNConvolutionDataSource)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MPSCNNConvolutionDataSource> recurrentGateRecurrentWeights;
+```
+
 ## See Also
 
-- [var flipOutputGates: Bool](mpsgrudescriptor/flipoutputgates.md)
-- [var gatePnormValue: Float](mpsgrudescriptor/gatepnormvalue.md)
-- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/inputgateinputweights.md)
-- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/inputgaterecurrentweights.md)
-- [var outputGateInputGateWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgateinputgateweights.md)
-- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgateinputweights.md)
-- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/outputgaterecurrentweights.md)
-- [var recurrentGateInputWeights: (any MPSCNNConvolutionDataSource)?](mpsgrudescriptor/recurrentgateinputweights.md)
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+### Instance Properties
+- [var flipOutputGates: Bool](./flipoutputgates.md)
+- [var gatePnormValue: Float](./gatepnormvalue.md)
+- [var inputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./inputgateinputweights.md)
+- [var inputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./inputgaterecurrentweights.md)
+- [var outputGateInputGateWeights: (any MPSCNNConvolutionDataSource)?](./outputgateinputgateweights.md)
+- [var outputGateInputWeights: (any MPSCNNConvolutionDataSource)?](./outputgateinputweights.md)
+- [var outputGateRecurrentWeights: (any MPSCNNConvolutionDataSource)?](./outputgaterecurrentweights.md)
+- [var recurrentGateInputWeights: (any MPSCNNConvolutionDataSource)?](./recurrentgateinputweights.md)
+- [protocol MPSCNNConvolutionDataSource](../mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 
 

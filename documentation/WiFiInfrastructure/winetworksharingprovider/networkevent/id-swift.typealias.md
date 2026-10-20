@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.NetworkEvent.ID
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of value that uniquely identifies this event.
 
@@ -18,7 +19,8 @@ typealias ID = UInt64
 
 ## See Also
 
-- [var id: WINetworkSharingProvider.NetworkEvent.ID](winetworksharingprovider/networkevent/id-swift.property.md)
+### Identifying an event
+- [var id: WINetworkSharingProvider.NetworkEvent.ID](./id-swift.property.md)
   A stable identifier that uniquely identifies this event.
 
 

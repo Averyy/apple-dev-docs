@@ -1,7 +1,8 @@
 # AVAudioSession.DeactivationResult.appDeactivated
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Session was successfully deactivated by the app.
 
@@ -21,7 +22,8 @@ case appDeactivated
 
 ## See Also
 
-- [case systemInterruption(AVAudioSession.InterruptionContext)](avaudiosession/deactivationresult/systeminterruption(_:).md)
+### Getting the deactivation result
+- [case systemInterruption(AVAudioSession.InterruptionContext)](./systeminterruption%28_%29.md)
   Session was deactivated due to a system interruption.
 
 

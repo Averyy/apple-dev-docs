@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.Details
 
 **Framework**: StoreKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+

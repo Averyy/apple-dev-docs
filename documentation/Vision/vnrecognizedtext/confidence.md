@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A normalized confidence score for the text recognition result.
 
@@ -19,13 +20,18 @@ A normalized confidence score for the text recognition result.
 var confidence: VNConfidence { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) VNConfidence confidence;
+```
+
 #### Discussion
 
 The confidence level is a normalized value between `0.0` and `1.0`, where `1.0` represents the highest confidence.
 
 ## See Also
 
-- [var string: String](vnrecognizedtext/string.md)
+### Determining Recognized Text
+- [var string: String](./string.md)
   The top candidate for recognized text.
 
 

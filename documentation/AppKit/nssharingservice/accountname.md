@@ -1,7 +1,8 @@
 # accountName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The account name used for posting on Twitter or Sina Weibo.
 
@@ -14,13 +15,18 @@ The account name used for posting on Twitter or Sina Weibo.
 var accountName: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * accountName;
+```
+
 ## See Also
 
-- [var alternateImage: NSImage?](nssharingservice/alternateimage.md)
+### Getting the Service’s Details
+- [var alternateImage: NSImage?](./alternateimage.md)
   The alternate image representing the sharing service.
-- [var image: NSImage](nssharingservice/image.md)
+- [var image: NSImage](./image.md)
   The primary image representing the sharing service.
-- [var title: String](nssharingservice/title.md)
+- [var title: String](./title.md)
   The title of the sharing service.
 
 

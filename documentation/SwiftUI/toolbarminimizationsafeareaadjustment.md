@@ -1,7 +1,8 @@
 # ToolbarMinimizationSafeAreaAdjustment
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The safe area adjustment during toolbar minimization.
 
@@ -22,7 +23,7 @@ struct ToolbarMinimizationSafeAreaAdjustment
 
 #### Overview
 
-Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](view/toolbarminimizationsafeareaadjustment(_:for:).md) modifier to control whether the safe area updates as bars minimize. By default the safe area adjusts interactively, but you can disable this to keep content in place – for example, when displaying full-bleed media beneath a minimizing bar.
+Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md) modifier to control whether the safe area updates as bars minimize. By default the safe area adjusts interactively, but you can disable this to keep content in place – for example, when displaying full-bleed media beneath a minimizing bar.
 
 ```swift
 .toolbarMinimizationBehavior(
@@ -34,32 +35,33 @@ Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](view/to
 ## Topics
 
 ### Minimization adjustment options
-- [static let automatic: ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment/automatic.md)
+- [static let automatic: ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment/automatic.md)
   The system determines the safe area adjustment.
-- [static let disabled: ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment/disabled.md)
+- [static let disabled: ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment/disabled.md)
   The safe area remains unchanged as bars minimize.
-- [static let enabled: ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment/enabled.md)
+- [static let enabled: ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment/enabled.md)
   The safe area adjusts interactively as bars minimize.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+### Minimizing a toolbar
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationbehavior%28_,for%29.md)
   Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+- [struct ToolbarMinimizationBehavior](./toolbarminimizationbehavior.md)
   The minimization behavior of a toolbar.
-- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationrestoration%28_,for%29.md)
   Sets the restoration behavior for the specified bars during minimization.
-- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+- [struct ToolbarMinimizationRestoration](./toolbarminimizationrestoration.md)
   The restoration behavior during toolbar minimization.
-- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md)
   Sets the safe area adjustment for the specified bars during minimization.
 
 

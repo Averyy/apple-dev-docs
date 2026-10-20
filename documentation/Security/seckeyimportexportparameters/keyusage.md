@@ -1,7 +1,8 @@
 # keyUsage
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A word of bits constituting the low-level use flags for imported keys.
 
@@ -12,6 +13,10 @@ A word of bits constituting the low-level use flags for imported keys.
 
 ```swift
 var keyUsage: CSSM_KEYUSE
+```
+
+```c
+CSSM_KEYUSE keyUsage;
 ```
 
 #### Discussion

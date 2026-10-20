@@ -1,7 +1,8 @@
 # depthTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input depth texture for the frame interpolator you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input depth texture for the frame interpolator you creat
 
 ```swift
 var depthTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat depthTextureFormat;
 ```
 
 

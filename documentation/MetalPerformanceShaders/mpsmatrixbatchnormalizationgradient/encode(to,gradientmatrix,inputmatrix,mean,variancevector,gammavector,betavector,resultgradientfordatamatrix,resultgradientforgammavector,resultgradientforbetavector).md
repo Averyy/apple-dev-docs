@@ -1,7 +1,8 @@
 # encode(to:gradientMatrix:inputMatrix:mean:varianceVector:gammaVector:betaVector:resultGradientForDataMatrix:resultGradientForGammaVector:resultGradientForBetaVector:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encode(to commandBuffer: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, mean meanVector: MPSVector, varianceVector: MPSVector, gammaVector: MPSVector?, betaVector: MPSVector?, resultGradientForDataMatrix: MPSMatrix, resultGradientForGammaVector: MPSVector?, resultGradientForBetaVector: MPSVector?)
+```
+
+```objc
+- (void) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer gradientMatrix:(MPSMatrix *) gradientMatrix inputMatrix:(MPSMatrix *) inputMatrix meanVector:(MPSVector *) meanVector varianceVector:(MPSVector *) varianceVector gammaVector:(MPSVector *) gammaVector betaVector:(MPSVector *) betaVector resultGradientForDataMatrix:(MPSMatrix *) resultGradientForDataMatrix resultGradientForGammaVector:(MPSVector *) resultGradientForGammaVector resultGradientForBetaVector:(MPSVector *) resultGradientForBetaVector;
 ```
 
 

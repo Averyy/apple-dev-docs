@@ -1,7 +1,8 @@
 # init(unsafeSampleDataReferenceBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a ready sample buffer with data reference content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Create a ready sample buffer with data reference content from an existing sample
 ```swift
 init(unsafeSampleDataReferenceBuffer unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `CMSampleDataReference`.
 
 
 ---

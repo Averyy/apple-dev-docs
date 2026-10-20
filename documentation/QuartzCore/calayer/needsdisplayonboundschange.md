@@ -1,7 +1,8 @@
 # needsDisplayOnBoundsChange
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the layer contents must be updated when its bounds rectangle changes.
 
@@ -19,21 +20,26 @@ A Boolean indicating whether the layer contents must be updated when its bounds 
 var needsDisplayOnBoundsChange: Bool { get set }
 ```
 
+```objc
+@property BOOL needsDisplayOnBoundsChange;
+```
+
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the layer automatically calls its [`setNeedsDisplay()`](calayer/setneedsdisplay().md) method whenever its [`bounds`](calayer/bounds.md) property changes. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property is set to [`true`](../../Swift/true.md), the layer automatically calls its [`setNeedsDisplay()`](./setneedsdisplay%28%29.md) method whenever its [`bounds`](./bounds.md) property changes. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func setNeedsDisplay()](calayer/setneedsdisplay.md)
+### Updating layer display
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Marks the layer’s contents as needing to be updated.
-- [func setNeedsDisplay(CGRect)](calayer/setneedsdisplay(_:).md)
+- [func setNeedsDisplay(CGRect)](./setneedsdisplay%28_%29.md)
   Marks the region within the specified rectangle as needing to be updated.
-- [func displayIfNeeded()](calayer/displayifneeded.md)
+- [func displayIfNeeded()](./displayifneeded%28%29.md)
   Initiates the update process for a layer if it is currently marked as needing an update.
-- [func needsDisplay() -> Bool](calayer/needsdisplay.md)
+- [func needsDisplay() -> Bool](./needsdisplay%28%29.md)
   Returns a Boolean indicating whether the layer has been marked as needing an update.
-- [class func needsDisplay(forKey: String) -> Bool](calayer/needsdisplay(forkey:).md)
+- [class func needsDisplay(forKey: String) -> Bool](./needsdisplay%28forkey%29.md)
   Returns a Boolean indicating whether changes to the specified key require the layer to be redisplayed.
 
 

@@ -1,21 +1,23 @@
 # Current Framework Version Number
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Current version number of the Core Foundation framework.
 
 ## Topics
 
 ### Constants
-- [let kCFCoreFoundationVersionNumber: Double](kcfcorefoundationversionnumber.md)
+- [let kCFCoreFoundationVersionNumber: Double](./kcfcorefoundationversionnumber.md)
 
 ## See Also
 
-- [enum CFComparisonResult](cfcomparisonresult.md)
+### Constants
+- [enum CFComparisonResult](./cfcomparisonresult.md)
   Constants returned by comparison functions, indicating whether a value is equal to, less than, or greater than another value.
-- [Value Not Found](value-not-found.md)
+- [Value Not Found](./value-not-found.md)
   Special value returned when a Core Foundation function cannot locate a requested value.
-- [Framework Version Numbers](framework-version-numbers.md)
+- [Framework Version Numbers](./framework-version-numbers.md)
   Version numbers of the Core Foundation framework.
 
 

@@ -1,7 +1,8 @@
 # isInfinite(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the input tensor elements are infinite or not.
 
@@ -17,6 +18,10 @@ Checks if the input tensor elements are infinite or not.
 
 ```swift
 func isInfinite(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) isInfiniteWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

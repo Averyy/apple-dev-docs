@@ -1,7 +1,8 @@
 # firstBaselineOffsetFromTop
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance (in points) between the top of the view’s alignment rectangle and its topmost baseline.
 
@@ -14,21 +15,26 @@ The distance (in points) between the top of the view’s alignment rectangle and
 var firstBaselineOffsetFromTop: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat firstBaselineOffsetFromTop;
+```
+
 #### Discussion
 
 The default value of this property is `0`. For views that contain text or other content whose layout benefits from having a custom baseline, you can override this property and provide the correct distance between the top of the view’s alignment rectangle and the baseline of the top row of text.
 
 ## See Also
 
-- [func alignmentRect(forFrame: NSRect) -> NSRect](nsview/alignmentrect(forframe:).md)
+### Aligning Views with Auto Layout
+- [func alignmentRect(forFrame: NSRect) -> NSRect](./alignmentrect%28forframe%29.md)
   Returns the view’s alignment rectangle for a given frame.
-- [func frame(forAlignmentRect: NSRect) -> NSRect](nsview/frame(foralignmentrect:).md)
+- [func frame(forAlignmentRect: NSRect) -> NSRect](./frame%28foralignmentrect%29.md)
   Returns the view’s frame for a given alignment rectangle.
-- [var alignmentRectInsets: NSEdgeInsets](nsview/alignmentrectinsets.md)
+- [var alignmentRectInsets: NSEdgeInsets](./alignmentrectinsets.md)
   The insets (in points) from the view’s frame that define its content rectangle.
-- [var baselineOffsetFromBottom: CGFloat](nsview/baselineoffsetfrombottom.md)
+- [var baselineOffsetFromBottom: CGFloat](./baselineoffsetfrombottom.md)
   The distance (in points) between the bottom of the view’s alignment rectangle and its baseline.
-- [var lastBaselineOffsetFromBottom: CGFloat](nsview/lastbaselineoffsetfrombottom.md)
+- [var lastBaselineOffsetFromBottom: CGFloat](./lastbaselineoffsetfrombottom.md)
   The distance (in points) between the bottom of the view’s alignment rectangle and its bottommost baseline.
 
 

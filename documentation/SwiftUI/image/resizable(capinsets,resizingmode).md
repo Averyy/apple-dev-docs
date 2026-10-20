@@ -1,7 +1,8 @@
 # resizable(capInsets:resizingMode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the mode by which SwiftUI resizes an image to fit its space.
 
@@ -22,7 +23,7 @@ func resizable(capInsets: EdgeInsets = EdgeInsets(), resizingMode: Image.Resizin
 
 ## Mentions
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+- [Fitting images into available space](../fitting-images-into-available-space.md)
 
 #### Return Value
 

@@ -1,7 +1,8 @@
 # MTRAccessGrant
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,33 +19,37 @@
 class MTRAccessGrant
 ```
 
+```objc
+@interface MTRAccessGrant : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(forAllNodesWith: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forallnodeswith:).md)
-- [init?(forCASEAuthenticatedTag: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forcaseauthenticatedtag:privilege:).md)
-- [init?(forGroupID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forgroupid:privilege:).md)
-- [init?(forNodeID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(fornodeid:privilege:).md)
-- [init(forAllNodesWithPrivilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forallnodeswithprivilege:).md)
+- [init(forAllNodesWith: MTRAccessControlEntryPrivilege)](./mtraccessgrant/init%28forallnodeswith%29.md)
+- [init?(forCASEAuthenticatedTag: NSNumber, privilege: MTRAccessControlEntryPrivilege)](./mtraccessgrant/init%28forcaseauthenticatedtag,privilege%29.md)
+- [init?(forGroupID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](./mtraccessgrant/init%28forgroupid,privilege%29.md)
+- [init?(forNodeID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](./mtraccessgrant/init%28fornodeid,privilege%29.md)
+- [init(forAllNodesWithPrivilege: MTRAccessControlEntryPrivilege)](./mtraccessgrant/init%28forallnodeswithprivilege%29.md)
 ### Instance Properties
-- [var authenticationMode: MTRAccessControlEntryAuthMode](mtraccessgrant/authenticationmode.md)
-- [var grantedPrivilege: MTRAccessControlEntryPrivilege](mtraccessgrant/grantedprivilege.md)
-- [var subjectID: NSNumber?](mtraccessgrant/subjectid.md)
+- [var authenticationMode: MTRAccessControlEntryAuthMode](./mtraccessgrant/authenticationmode.md)
+- [var grantedPrivilege: MTRAccessControlEntryPrivilege](./mtraccessgrant/grantedprivilege.md)
+- [var subjectID: NSNumber?](./mtraccessgrant/subjectid.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

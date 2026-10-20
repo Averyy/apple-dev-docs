@@ -1,19 +1,20 @@
 # Quartz Constants
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var globalUpdateOK: DarwinBoolean](globalupdateok.md)
-- [let kQuartzFilterApplicationDomain: String](kquartzfilterapplicationdomain.md)
-- [let kQuartzFilterPDFWorkflowDomain: String](kquartzfilterpdfworkflowdomain.md)
-- [let kQuartzFilterPrintingDomain: String](kquartzfilterprintingdomain.md)
+- [var globalUpdateOK: DarwinBoolean](./globalupdateok.md)
+- [let kQuartzFilterApplicationDomain: String](./kquartzfilterapplicationdomain.md)
+- [let kQuartzFilterPDFWorkflowDomain: String](./kquartzfilterpdfworkflowdomain.md)
+- [let kQuartzFilterPrintingDomain: String](./kquartzfilterprintingdomain.md)
 ### Deprecated constants
-- [let QCCompositionAttributeIsTimeDependentKey: String](qccompositionattributeistimedependentkey.md)
-- [let QCPlugInAttributeCategoriesKey: String](qcpluginattributecategorieskey.md)
-- [let QCPlugInAttributeCopyrightKey: String](qcpluginattributecopyrightkey.md)
-- [let QCPlugInAttributeExamplesKey: String](qcpluginattributeexampleskey.md)
+- [let QCCompositionAttributeIsTimeDependentKey: String](./qccompositionattributeistimedependentkey.md)
+- [let QCPlugInAttributeCategoriesKey: String](./qcpluginattributecategorieskey.md)
+- [let QCPlugInAttributeCopyrightKey: String](./qcpluginattributecopyrightkey.md)
+- [let QCPlugInAttributeExamplesKey: String](./qcpluginattributeexampleskey.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandLEReadLocalP256PublicKey
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandLEReadLocalP256PublicKey = 0x0025
 ```
 

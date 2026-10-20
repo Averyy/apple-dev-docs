@@ -1,7 +1,8 @@
 # NetworkVPNAlwaysOnApplicationExceptionElementObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array that contains an arbitrary number of apps whose connections occur outside the VPN.
 
@@ -13,7 +14,7 @@ An array that contains an arbitrary number of apps whose connections occur outsi
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNAlwaysOnApplicationExceptionElementObject
 ```
 
@@ -22,13 +23,16 @@ object NetworkVPNAlwaysOnApplicationExceptionElementObject
 - `BundleIdentifier` (string) *(required)*: The app’s bundle identifier.
 - `LimitToProtocols` ([string]): Limit the exception to only the specified list of protocols, with support for `UDP` only.
 
+  **Allowed Values**: `UDP`
+
 ## See Also
 
-- [object NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject](networkvpnalwaysonallowedcaptivenetworkpluginelementobject.md)
+### Objects
+- [object NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject](./networkvpnalwaysonallowedcaptivenetworkpluginelementobject.md)
   The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
-- [object NetworkVPNAlwaysOnServiceExceptionElementObject](networkvpnalwaysonserviceexceptionelementobject.md)
+- [object NetworkVPNAlwaysOnServiceExceptionElementObject](./networkvpnalwaysonserviceexceptionelementobject.md)
   An array that contains an arbitrary number of service exceptions.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElementObject](networkvpnalwaysontunnelconfigurationelementobject.md)
+- [object NetworkVPNAlwaysOnTunnelConfigurationElementObject](./networkvpnalwaysontunnelconfigurationelementobject.md)
   An array that contains an arbitrary number of tunnel configurations.
 
 

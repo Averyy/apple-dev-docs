@@ -1,7 +1,8 @@
 # passActivationState
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The activation state of the pass.
 
@@ -19,15 +20,20 @@ The activation state of the pass.
 var passActivationState: PKSecureElementPass.PassActivationState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PKSecureElementPassActivationState passActivationState;
+```
+
 #### Discussion
 
 You must activate a secure pass before it can be used.
 
-For possible values and their meanings, see [`PKSecureElementPass.PassActivationState`](pksecureelementpass/passactivationstate-swift.enum.md).
+For possible values and their meanings, see [`PKSecureElementPass.PassActivationState`](./passactivationstate-swift.enum.md).
 
 ## See Also
 
-- [PKSecureElementPass.PassActivationState](pksecureelementpass/passactivationstate-swift.enum.md)
+### Getting the activation state
+- [PKSecureElementPass.PassActivationState](./passactivationstate-swift.enum.md)
   The activation states of a Secure Element pass.
 
 

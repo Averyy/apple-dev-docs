@@ -2,6 +2,7 @@
 
 **Framework**: CarPlay  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item’s primary text.
@@ -17,9 +18,14 @@ The item’s primary text.
 var text: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * text;
+```
+
 ## See Also
 
-- [var userInfo: Any?](cplisttemplateitem/userinfo.md)
+### Managing Content
+- [var userInfo: Any?](./userinfo.md)
   An opaque value for the list item.
 
 

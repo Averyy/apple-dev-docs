@@ -1,7 +1,8 @@
 # yearForWeekOfYear
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The year corresponding to a week-counting week.
 
@@ -22,11 +23,11 @@ var yearForWeekOfYear: Int? { get set }
 
 #### Discussion
 
-The Gregorian calendar defines a week to have 7 days, and a year to have 365 days, or 366 in a leap year. However, neither 365 or 366 divide evenly into a 7-day week, so it is often the case that the last week of a year ends on a day in the next year, and the first week of a year begins in the preceding year. To reconcile this, ISO 8601 defines a week-numbering year, consisting of either 52 or 53 full weeks (364 or 371 days), such that the first week of a year is designated to be the week containing the first Thursday of the year. For a given date, the [`weekOfYear`](datecomponents/weekofyear.md) property indicates which week the date falls in, and [`yearForWeekOfYear`](datecomponents/yearforweekofyear.md) provides the corresponding week-numbering year.
+The Gregorian calendar defines a week to have 7 days, and a year to have 365 days, or 366 in a leap year. However, neither 365 or 366 divide evenly into a 7-day week, so it is often the case that the last week of a year ends on a day in the next year, and the first week of a year begins in the preceding year. To reconcile this, ISO 8601 defines a week-numbering year, consisting of either 52 or 53 full weeks (364 or 371 days), such that the first week of a year is designated to be the week containing the first Thursday of the year. For a given date, the [`weekOfYear`](./weekofyear.md) property indicates which week the date falls in, and [`yearForWeekOfYear`](./yearforweekofyear.md) provides the corresponding week-numbering year.
 
-> ❗ **Important**:  The values of [`weekOfYear`](datecomponents/weekofyear.md) and [`yearForWeekOfYear`](datecomponents/yearforweekofyear.md) depend on the calendar they are used with. For example, the ISO 8601 calendar starts a week on Monday, and uses the first Thursday to determine the first week of the year. However, the Gregorian calendar as used in North America starts the week on Sunday, and uses the year’s first Saturday to determine the first week.
+> ❗ **Important**:  The values of [`weekOfYear`](./weekofyear.md) and [`yearForWeekOfYear`](./yearforweekofyear.md) depend on the calendar they are used with. For example, the ISO 8601 calendar starts a week on Monday, and uses the first Thursday to determine the first week of the year. However, the Gregorian calendar as used in North America starts the week on Sunday, and uses the year’s first Saturday to determine the first week.
 
-You can use the week-numbering year when specifying a date with [`DateComponents`](datecomponents.md), usually in combination with the [`weekOfYear`](datecomponents/weekofyear.md). The code listing below shows this approach. It creates a [`DateComponents`](datecomponents.md) instance specifying the first Friday (weekday 6) of the first week of 2016, which started on a Friday. Therefore, this date is January 1, 2016 in the Gregorian calendar. However, on the ISO 8601 calendar, the first week of 2016 begins on the following Monday. This means the first Friday in the first week of 2016 is January 8, 2016 on the ISO 8601 calendar.
+You can use the week-numbering year when specifying a date with [`DateComponents`](../datecomponents.md), usually in combination with the [`weekOfYear`](./weekofyear.md). The code listing below shows this approach. It creates a [`DateComponents`](../datecomponents.md) instance specifying the first Friday (weekday 6) of the first week of 2016, which started on a Friday. Therefore, this date is January 1, 2016 in the Gregorian calendar. However, on the ISO 8601 calendar, the first week of 2016 begins on the following Monday. This means the first Friday in the first week of 2016 is January 8, 2016 on the ISO 8601 calendar.
 
 ```swift
 let comps = DateComponents(weekday: 6, weekOfYear: 1, yearForWeekOfYear: 2016)
@@ -47,15 +48,16 @@ print ("\(formatter.string(from: iso8601Date))") // "Friday, January 8, 2016"
 
 ## See Also
 
-- [var era: Int?](datecomponents/era.md)
+### Accessing Months and Years
+- [var era: Int?](./era.md)
   An era or count of eras.
-- [var year: Int?](datecomponents/year.md)
+- [var year: Int?](./year.md)
   A year or count of years.
-- [var quarter: Int?](datecomponents/quarter.md)
+- [var quarter: Int?](./quarter.md)
   A quarter or count of quarters.
-- [var month: Int?](datecomponents/month.md)
+- [var month: Int?](./month.md)
   A month or count of months.
-- [var isLeapMonth: Bool?](datecomponents/isleapmonth.md)
+- [var isLeapMonth: Bool?](./isleapmonth.md)
   Set to true if these components represent a leap month.
 
 

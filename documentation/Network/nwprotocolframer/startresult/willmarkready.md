@@ -1,9 +1,10 @@
 # NWProtocolFramer.StartResult.willMarkReady
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](nwprotocolframer/instance/markready().md) is called.
+The protocol will perform a handshake, preventing the overall connection from becoming ready until [`markReady()`](../instance/markready%28%29.md) is called.
 
 **Availability**:
 - iOS 13.0+
@@ -22,9 +23,11 @@ case willMarkReady
 
 ## See Also
 
-- [func markReady()](nwprotocolframer/instance/markready.md)
+### Related Documentation
+- [func markReady()](../instance/markready%28%29.md)
   Indicates to a connection that your protocol’s handshake is complete.
-- [NWProtocolFramer.StartResult.ready](nwprotocolframer/startresult/ready.md)
+### Start Results
+- [NWProtocolFramer.StartResult.ready](./ready.md)
   The protocol is immediately ready to send and receive data.
 
 

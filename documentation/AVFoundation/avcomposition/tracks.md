@@ -1,7 +1,8 @@
 # tracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks that a composition contains.
 
@@ -20,15 +21,20 @@ The tracks that a composition contains.
 var tracks: [AVCompositionTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCompositionTrack *> * tracks;
+```
+
 ## See Also
 
-- [func track(withTrackID: CMPersistentTrackID) -> AVCompositionTrack?](avcomposition/track(withtrackid:).md)
+### Accessing tracks
+- [func track(withTrackID: CMPersistentTrackID) -> AVCompositionTrack?](./track%28withtrackid%29.md)
   Returns a track that contains the specified identifier.
-- [func tracks(withMediaType: AVMediaType) -> [AVCompositionTrack]](avcomposition/tracks(withmediatype:).md)
+- [func tracks(withMediaType: AVMediaType) -> [AVCompositionTrack]](./tracks%28withmediatype%29.md)
   Returns tracks that contain media of a specified type.
-- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVCompositionTrack]](avcomposition/tracks(withmediacharacteristic:).md)
+- [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVCompositionTrack]](./tracks%28withmediacharacteristic%29.md)
   Returns tracks that contain media of a specified characteristic.
-- [func unusedTrackID() -> CMPersistentTrackID](avcomposition/unusedtrackid.md)
+- [func unusedTrackID() -> CMPersistentTrackID](./unusedtrackid%28%29.md)
   Returns an identifier that no other tracks in the asset use.
 
 

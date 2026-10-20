@@ -1,7 +1,8 @@
 # init(inputPort:videoPreviewLayer:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capture connection that represents a connection between an input port and a video preview layer.
 
@@ -18,24 +19,29 @@ Creates a capture connection that represents a connection between an input port 
 init(inputPort port: AVCaptureInput.Port, videoPreviewLayer layer: AVCaptureVideoPreviewLayer)
 ```
 
+```objc
+- (instancetype) initWithInputPort:(AVCaptureInputPort *) port videoPreviewLayer:(AVCaptureVideoPreviewLayer *) layer;
+```
+
 #### Return Value
 
 A capture connection that represents a connection between `port` and `layer`.
 
 #### Discussion
 
-You can add the connection this method returns to an [`AVCaptureSession`](avcapturesession.md) instance with the [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method.
+You can add the connection this method returns to an [`AVCaptureSession`](../avcapturesession.md) instance with the [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 
-The [`addInput(_:)`](avcapturesession/addinput(_:).md): or [`addOutput(_:)`](avcapturesession/addoutput(_:).md) methods automatically form connections between all compatible inputs and outputs. You don’t need to manually create and add connections to the session unless you use the primitive [`addInputWithNoConnections(_:)`](avcapturesession/addinputwithnoconnections(_:).md) and [`addOutputWithNoConnections(_:)`](avcapturesession/addoutputwithnoconnections(_:).md) methods.
+The [`addInput(_:)`](../avcapturesession/addinput%28_%29.md): or [`addOutput(_:)`](../avcapturesession/addoutput%28_%29.md) methods automatically form connections between all compatible inputs and outputs. You don’t need to manually create and add connections to the session unless you use the primitive [`addInputWithNoConnections(_:)`](../avcapturesession/addinputwithnoconnections%28_%29.md) and [`addOutputWithNoConnections(_:)`](../avcapturesession/addoutputwithnoconnections%28_%29.md) methods.
 
 ## Parameters
 
-- `port`: An [`AVCaptureInput.Port`](avcaptureinput/port.md) instance that relates to an [`AVCaptureInput`](avcaptureinput.md) instance.
-- `layer`: An [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) instance.
+- `port`: An [`AVCaptureInput.Port`](../avcaptureinput/port.md) instance that relates to an [`AVCaptureInput`](../avcaptureinput.md) instance.
+- `layer`: An [`AVCaptureVideoPreviewLayer`](../avcapturevideopreviewlayer.md) instance.
 
 ## See Also
 
-- [init(inputPorts: [AVCaptureInput.Port], output: AVCaptureOutput)](avcaptureconnection/init(inputports:output:).md)
+### Creating a connection
+- [init(inputPorts: [AVCaptureInput.Port], output: AVCaptureOutput)](./init%28inputports,output%29.md)
   Creates a capture connection that represents a connection between multiple input ports and an output.
 
 

@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.View
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides information on how to render content into the frame’s textures.
 
@@ -22,27 +23,28 @@ Compositor Services provides a view for each distinct render viewpoint. For exam
 ## Topics
 
 ### Getting the view’s texture map
-- [var textureMap: LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.property.md)
+- [var textureMap: LayerRenderer.Drawable.View.TextureMap](./view/texturemap-swift.property.md)
   The texture map for a view.
-- [LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.struct.md)
+- [LayerRenderer.Drawable.View.TextureMap](./view/texturemap-swift.struct.md)
   A type that provides details about the textures associated with a view.
 ### Getting the transformations
-- [var transform: simd_float4x4](layerrenderer/drawable/view/transform.md)
+- [var transform: simd_float4x4](./view/transform.md)
   The transformation matrix that converts between the device’s coordinate space to the position of the view in that space.
-- [var tangents: simd_float4](layerrenderer/drawable/view/tangents.md)
+- [var tangents: simd_float4](./view/tangents.md)
   The tangent values for the angles you use to determine the planes of the viewing frustum.
 ### Creating a view
-- [init()](layerrenderer/drawable/view/init.md)
+- [init()](./view/init%28%29.md)
   Creates a view type.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [LayerRenderer.Drawable](layerrenderer/drawable.md)
+### Drawing environment
+- [LayerRenderer.Drawable](../drawable.md)
   A type that provides the textures and information you need to draw a frame of content.
 
 

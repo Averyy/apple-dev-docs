@@ -1,7 +1,8 @@
 # CMMutableDataBlockBuffer
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A block buffer that provides read-write access to a range of bytes.
 
@@ -22,112 +23,113 @@ struct CMMutableDataBlockBuffer
 
 #### Overview
 
-Mutable block buffer provides a contiguous range of data offsets (from 0 to [`count`](cmmutabledatablockbuffer/count.md)) a possibly non-contiguous range of bytes. The bytes referenced by this buffer are mutable.
+Mutable block buffer provides a contiguous range of data offsets (from 0 to [`count`](./cmmutabledatablockbuffer/count.md)) a possibly non-contiguous range of bytes. The bytes referenced by this buffer are mutable.
 
 ## Topics
 
 ### Classes
-- [CMMutableDataBlockBuffer.MemoryPool](cmmutabledatablockbuffer/memorypool.md)
+- [CMMutableDataBlockBuffer.MemoryPool](./cmmutabledatablockbuffer/memorypool.md)
   Optimize memory allocations when working with large block buffers.
 ### Structures
-- [CMMutableDataBlockBuffer.BlockRegion](cmmutabledatablockbuffer/blockregion.md)
+- [CMMutableDataBlockBuffer.BlockRegion](./cmmutabledatablockbuffer/blockregion.md)
   A contiguous region of mutable memory within a block buffer.
-- [CMMutableDataBlockBuffer.BlockSource](cmmutabledatablockbuffer/blocksource.md)
+- [CMMutableDataBlockBuffer.BlockSource](./cmmutabledatablockbuffer/blocksource.md)
   Provides ability to allocate memory for blocks using custom allocator
 ### Operators
-- [static func += (inout CMMutableDataBlockBuffer, consuming CMMutableDataBlockBuffer)](cmmutabledatablockbuffer/+=(_:_:).md)
+- [static func += (inout CMMutableDataBlockBuffer, consuming CMMutableDataBlockBuffer)](./cmmutabledatablockbuffer/pluseq%28_,_%29.md)
   Appends the bytes of another block buffer without copying.
 ### Initializers
-- [init(copying: UnsafePointer<AudioBufferList>, blockSource: CMMutableDataBlockBuffer.BlockSource?)](cmmutabledatablockbuffer/init(copying:blocksource:).md)
+- [init(copying: UnsafePointer<AudioBufferList>, blockSource: CMMutableDataBlockBuffer.BlockSource?)](./cmmutabledatablockbuffer/init%28copying,blocksource%29.md)
   Creates a block buffer by copying the given audio buffer list.
-- [init(count: Int, blockSource: CMMutableDataBlockBuffer.BlockSource?)](cmmutabledatablockbuffer/init(count:blocksource:).md)
+- [init(count: Int, blockSource: CMMutableDataBlockBuffer.BlockSource?)](./cmmutabledatablockbuffer/init%28count,blocksource%29.md)
   Creates a block buffer with `count` number of bytes.
-- [init(subBlockCapacity: Int, blockSource: CMMutableDataBlockBuffer.BlockSource?)](cmmutabledatablockbuffer/init(subblockcapacity:blocksource:).md)
+- [init(subBlockCapacity: Int, blockSource: CMMutableDataBlockBuffer.BlockSource?)](./cmmutabledatablockbuffer/init%28subblockcapacity,blocksource%29.md)
   Creates a block buffer with at least `subBlockCapacity` number of sub blocks.
-- [init(unsafeBlockBuffer: sending CMBlockBuffer)](cmmutabledatablockbuffer/init(unsafeblockbuffer:).md)
+- [init(unsafeBlockBuffer: sending CMBlockBuffer)](./cmmutabledatablockbuffer/init%28unsafeblockbuffer%29.md)
   Creates a mutable block buffer from an existing block buffer.
 ### Instance Properties
-- [var attachments: CMMutableDataBlockBuffer.Attachments](cmmutabledatablockbuffer/attachments-swift.property.md)
-- [var count: Int](cmmutabledatablockbuffer/count.md)
+- [var attachments: CMMutableDataBlockBuffer.Attachments](./cmmutabledatablockbuffer/attachments-swift.property.md)
+- [var count: Int](./cmmutabledatablockbuffer/count.md)
   The number of bytes in the block buffer.
-- [var endIndex: Int](cmmutabledatablockbuffer/endindex.md)
+- [var endIndex: Int](./cmmutabledatablockbuffer/endindex.md)
   The position one greater than the last valid subscript argument.
-- [var indices: CMMutableDataBlockBuffer.Indices](cmmutabledatablockbuffer/indices-swift.property.md)
+- [var indices: CMMutableDataBlockBuffer.Indices](./cmmutabledatablockbuffer/indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var isContiguous: Bool](cmmutabledatablockbuffer/iscontiguous.md)
+- [var isContiguous: Bool](./cmmutabledatablockbuffer/iscontiguous.md)
   Determine whether the block buffer is contiguous.
-- [var isEmpty: Bool](cmmutabledatablockbuffer/isempty.md)
+- [var isEmpty: Bool](./cmmutabledatablockbuffer/isempty.md)
   Indicates whether the block buffer is empty.
-- [var startIndex: Int](cmmutabledatablockbuffer/startindex.md)
+- [var startIndex: Int](./cmmutabledatablockbuffer/startindex.md)
   The position of the first element.
 ### Instance Methods
-- [func append(referenceOf: consuming CMMutableDataBlockBuffer, range: Range<Int>?, optimizeDepth: Bool)](cmmutabledatablockbuffer/append(referenceof:range:optimizedepth:).md)
+- [func append(referenceOf: consuming CMMutableDataBlockBuffer, range: Range<Int>?, optimizeDepth: Bool)](./cmmutabledatablockbuffer/append%28referenceof,range,optimizedepth%29.md)
   Append a reference to a range of another block buffer.
-- [func copyBytes(to: UnsafeMutableRawBufferPointer)](cmmutabledatablockbuffer/copybytes(to:).md)
+- [func copyBytes(to: UnsafeMutableRawBufferPointer)](./cmmutabledatablockbuffer/copybytes%28to%29.md)
   Copy all bytes to the destination buffer.
-- [func copyBytes<R>(to: UnsafeMutableRawBufferPointer, from: R)](cmmutabledatablockbuffer/copybytes(to:from:).md)
+- [func copyBytes<R>(to: UnsafeMutableRawBufferPointer, from: R)](./cmmutabledatablockbuffer/copybytes%28to,from%29.md)
   Copy the bytes from the given range to the destination buffer.
-- [func extend(by: Int)](cmmutabledatablockbuffer/extend(by:).md)
+- [func extend(by: Int)](./cmmutabledatablockbuffer/extend%28by%29.md)
   Extend block buffer by appending a memory block of count bytes.
-- [func isRangeContiguous(Range<Int>) -> Bool](cmmutabledatablockbuffer/israngecontiguous(_:).md)
+- [func isRangeContiguous(Range<Int>) -> Bool](./cmmutabledatablockbuffer/israngecontiguous%28_%29.md)
   Returns true if the given range refers to a contiguous block of memory.
-- [func replaceAll(repeating: UInt8)](cmmutabledatablockbuffer/replaceall(repeating:).md)
+- [func replaceAll(repeating: UInt8)](./cmmutabledatablockbuffer/replaceall%28repeating%29.md)
   Replace all bytes in the buffer with the given byte.
-- [func replaceAll(with: UnsafeRawBufferPointer)](cmmutabledatablockbuffer/replaceall(with:)-4sg07.md)
+- [func replaceAll(with: UnsafeRawBufferPointer)](./cmmutabledatablockbuffer/replaceall%28with%29-4sg07.md)
   Replace all data in the buffer with new bytes.
-- [func replaceAll(with: some DataProtocol)](cmmutabledatablockbuffer/replaceall(with:)-6jidg.md)
+- [func replaceAll(with: some DataProtocol)](./cmmutabledatablockbuffer/replaceall%28with%29-6jidg.md)
   Replace all data in the buffer with new bytes.
-- [func replaceSubrange(Range<Int>, repeating: UInt8)](cmmutabledatablockbuffer/replacesubrange(_:repeating:).md)
+- [func replaceSubrange(Range<Int>, repeating: UInt8)](./cmmutabledatablockbuffer/replacesubrange%28_,repeating%29.md)
   Fill a range in the buffer with given byte.
-- [func replaceSubrange(Range<Int>, with: some DataProtocol)](cmmutabledatablockbuffer/replacesubrange(_:with:)-5w62q.md)
+- [func replaceSubrange(Range<Int>, with: some DataProtocol)](./cmmutabledatablockbuffer/replacesubrange%28_,with%29-5w62q.md)
   Replace a range of bytes in the block buffer.
-- [func replaceSubrange(Range<Int>, with: UnsafeRawBufferPointer)](cmmutabledatablockbuffer/replacesubrange(_:with:)-7rqdy.md)
+- [func replaceSubrange(Range<Int>, with: UnsafeRawBufferPointer)](./cmmutabledatablockbuffer/replacesubrange%28_,with%29-7rqdy.md)
   Replace a range of bytes in the block buffer.
-- [func withContiguousMutableStorageIfAvailable<R>(in: Range<Int>?, (UnsafeMutableRawBufferPointer) throws -> sending R) rethrows -> sending R?](cmmutabledatablockbuffer/withcontiguousmutablestorageifavailable(in:_:).md)
+- [func withContiguousMutableStorageIfAvailable<R>(in: Range<Int>?, (UnsafeMutableRawBufferPointer) throws -> sending R) rethrows -> sending R?](./cmmutabledatablockbuffer/withcontiguousmutablestorageifavailable%28in,_%29.md)
   Access contents of the buffer if available as contiguous memory block.
-- [func withContiguousStorageIfAvailable<R>(in: Range<Int>?, (UnsafeRawBufferPointer) throws -> sending R) rethrows -> sending R?](cmmutabledatablockbuffer/withcontiguousstorageifavailable(in:_:).md)
+- [func withContiguousStorageIfAvailable<R>(in: Range<Int>?, (UnsafeRawBufferPointer) throws -> sending R) rethrows -> sending R?](./cmmutabledatablockbuffer/withcontiguousstorageifavailable%28in,_%29.md)
   Access contents of the buffer if available as contiguous memory block.
-- [func withUnsafeBlockBuffer<R>((CMBlockBuffer) throws -> sending R) rethrows -> sending R](cmmutabledatablockbuffer/withunsafeblockbuffer(_:).md)
+- [func withUnsafeBlockBuffer<R>((CMBlockBuffer) throws -> sending R) rethrows -> sending R](./cmmutabledatablockbuffer/withunsafeblockbuffer%28_%29.md)
   Access the underlying CMBlockBuffer instance.
-- [func withUnsafeBlockRegions<R>(([CMReadOnlyDataBlockBuffer.BlockRegion]) throws -> sending R) rethrows -> sending R](cmmutabledatablockbuffer/withunsafeblockregions(_:).md)
+- [func withUnsafeBlockRegions<R>(([CMReadOnlyDataBlockBuffer.BlockRegion]) throws -> sending R) rethrows -> sending R](./cmmutabledatablockbuffer/withunsafeblockregions%28_%29.md)
   Access the potentially non-contiguous memory region referenced by this block buffer.
-- [func withUnsafeMutableBlockRegions<R>(([CMMutableDataBlockBuffer.BlockRegion]) throws -> sending R) rethrows -> sending R](cmmutabledatablockbuffer/withunsafemutableblockregions(_:).md)
+- [func withUnsafeMutableBlockRegions<R>(([CMMutableDataBlockBuffer.BlockRegion]) throws -> sending R) rethrows -> sending R](./cmmutabledatablockbuffer/withunsafemutableblockregions%28_%29.md)
   Access the potentially non-contiguous memory region referenced by this block buffer.
 ### Subscripts
-- [subscript(Int) -> UInt8](cmmutabledatablockbuffer/subscript(_:).md)
+- [subscript(Int) -> UInt8](./cmmutabledatablockbuffer/subscript%28_%29.md)
   Accesses the data byte at the specified position.
 ### Type Aliases
-- [CMMutableDataBlockBuffer.Attachments](cmmutabledatablockbuffer/attachments-swift.typealias.md)
-- [CMMutableDataBlockBuffer.Index](cmmutabledatablockbuffer/index.md)
-- [CMMutableDataBlockBuffer.Indices](cmmutabledatablockbuffer/indices-swift.typealias.md)
+- [CMMutableDataBlockBuffer.Attachments](./cmmutabledatablockbuffer/attachments-swift.typealias.md)
+- [CMMutableDataBlockBuffer.Index](./cmmutabledatablockbuffer/index.md)
+- [CMMutableDataBlockBuffer.Indices](./cmmutabledatablockbuffer/indices-swift.typealias.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMSampleBuffer](cmsamplebuffer-api.md)
+### Sample Processing
+- [CMSampleBuffer](./cmsamplebuffer-api.md)
   An object that contains zero or more media samples of a uniform media type.
-- [CMBlockBuffer](cmblockbuffer-api.md)
+- [CMBlockBuffer](./cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
-- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+- [CMTaggedBufferGroup](./cmtaggedbuffergroup.md)
   Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMFormatDescription](cmformatdescription-api.md)
+- [CMFormatDescription](./cmformatdescription-api.md)
   A media format descriptor that describes the samples in a sample buffer.
-- [CMAttachment](cmattachment-api.md)
+- [CMAttachment](./cmattachment-api.md)
   Add supporting metadata to sample buffers.
-- [struct CMTaggedBuffer](cmtaggedbuffer.md)
+- [struct CMTaggedBuffer](./cmtaggedbuffer.md)
   An instance of a media buffer containing metadata tags.
-- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+- [struct CMReadOnlyDataBlockBuffer](./cmreadonlydatablockbuffer.md)
   A block buffer that provides read-only access to the a range of bytes.
-- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+- [struct CMReadySampleBuffer](./cmreadysamplebuffer.md)
   Buffer carrying readily available samples of media data.
-- [struct CMSampleDataReference](cmsampledatareference.md)
+- [struct CMSampleDataReference](./cmsampledatareference.md)
   References sample data in at a URL.
-- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+- [struct CMTaggedDynamicBuffer](./cmtaggeddynamicbuffer.md)
   Contains a collection of tags associated with a read-only media buffer.
 
 

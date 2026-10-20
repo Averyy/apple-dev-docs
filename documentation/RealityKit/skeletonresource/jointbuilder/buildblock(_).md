@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Combines all joints declared in the closure body into the parent’s `children`.
 

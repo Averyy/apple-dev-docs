@@ -1,7 +1,8 @@
 # AccessoryMessage.Error
 
 **Framework**: Accessory Transport Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of errors that can occur during message transmission.
 
@@ -17,23 +18,24 @@ enum Error
 ## Topics
 
 ### Identifying error types
-- [AccessoryMessage.Error.transportFailed](accessorymessage/error/transportfailed.md)
+- [AccessoryMessage.Error.transportFailed](./error/transportfailed.md)
   An error indicating the transport failed but may recover.
-- [AccessoryMessage.Error.transportUnavailable](accessorymessage/error/transportunavailable.md)
+- [AccessoryMessage.Error.transportUnavailable](./error/transportunavailable.md)
   An error indicating the transport is unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AccessoryMessage.Result](accessorymessage/result.md)
+### Assessing outcomes
+- [AccessoryMessage.Result](./result.md)
   An enumeration of results for message transmission.
 
 

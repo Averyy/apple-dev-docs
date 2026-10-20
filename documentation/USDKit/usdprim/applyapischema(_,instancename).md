@@ -1,7 +1,8 @@
 # applyAPISchema(_:instanceName:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a multi-apply API schema to this prim with the given instance name.
 
@@ -21,7 +22,7 @@ func applyAPISchema(_ schemaIdentifier: USDToken, instanceName: USDToken) throws
 
 #### Discussion
 
-> **Note**: An error if the schema cannot be applied.
+> **Throws**: An error if the schema cannot be applied.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ func applyAPISchema(_ schemaIdentifier: USDToken, instanceName: USDToken) throws
 
 ## See Also
 
-- [func applyAPISchema(USDToken) throws](usdprim/applyapischema(_:).md)
+### Applying schemas and transforms
+- [func applyAPISchema(USDToken) throws](./applyapischema%28_%29.md)
   Applies a single-apply API schema to this prim.
-- [func addTransformOperation(type: USDTransformOperation.Kind)](usdprim/addtransformoperation(type:).md)
+- [func addTransformOperation(type: USDTransformOperation.Kind)](./addtransformoperation%28type%29.md)
   Adds a transform operation of the given kind to this prim’s transform stack.
 
 

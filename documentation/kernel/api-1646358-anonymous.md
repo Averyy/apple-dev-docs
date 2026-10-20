@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBDefaultControlCompletionTimeoutMS](1646358-anonymous/kusbdefaultcontrolcompletiontimeoutms.md)
-- [kUSBDefaultControlNoDataTimeoutMS](1646358-anonymous/kusbdefaultcontrolnodatatimeoutms.md)
+- [kUSBDefaultControlCompletionTimeoutMS](./api-1646358-anonymous/kusbdefaultcontrolcompletiontimeoutms.md)
+- [kUSBDefaultControlNoDataTimeoutMS](./api-1646358-anonymous/kusbdefaultcontrolnodatatimeoutms.md)
 
 
 ---

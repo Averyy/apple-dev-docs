@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets a vertex descriptor to its default state.
 
@@ -19,9 +20,13 @@ Resets a vertex descriptor to its default state.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 #### Discussion
 
-Calling this method returns the descriptor to its original state, as is produced when initializing a vertex descriptor with the inherited [`init()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/init()) method. After calling this method, the descriptor contains a single empty [`MDLVertexAttribute`](mdlvertexattribute.md) object and a single empty [`MDLVertexBufferLayout`](mdlvertexbufferlayout.md) object.
+Calling this method returns the descriptor to its original state, as is produced when initializing a vertex descriptor with the inherited [`init()`](../../ObjectiveC/nsobject-swift.class/init%28%29.md) method. After calling this method, the descriptor contains a single empty [`MDLVertexAttribute`](../mdlvertexattribute.md) object and a single empty [`MDLVertexBufferLayout`](../mdlvertexbufferlayout.md) object.
 
 
 ---

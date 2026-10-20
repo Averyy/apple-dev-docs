@@ -1,7 +1,8 @@
 # pad(_:padding:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a padding operation to the graph
 
@@ -19,6 +20,8 @@ Adds a padding operation to the graph
 ```swift
 func pad(_ type: BNNSGraph.Builder.Padding, padding: [Int]) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

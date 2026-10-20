@@ -1,7 +1,8 @@
 # GCKeyF20
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard code for the F20 key.
 
@@ -19,37 +20,42 @@ The keyboard code for the F20 key.
 let GCKeyF20: String
 ```
 
+```c
+extern NSString * const GCKeyF20;
+```
+
 ## See Also
 
-- [let GCKeyF1: String](gckeyf1.md)
+### Function Keys
+- [let GCKeyF1: String](./gckeyf1.md)
   The keyboard code for the F1 key.
-- [let GCKeyF2: String](gckeyf2.md)
+- [let GCKeyF2: String](./gckeyf2.md)
   The keyboard code for the F2 key.
-- [let GCKeyF3: String](gckeyf3.md)
+- [let GCKeyF3: String](./gckeyf3.md)
   The keyboard code for the F3 key.
-- [let GCKeyF4: String](gckeyf4.md)
+- [let GCKeyF4: String](./gckeyf4.md)
   The keyboard code for the F4 key.
-- [let GCKeyF5: String](gckeyf5.md)
+- [let GCKeyF5: String](./gckeyf5.md)
   The keyboard code for the F5 key.
-- [let GCKeyF6: String](gckeyf6.md)
+- [let GCKeyF6: String](./gckeyf6.md)
   The keyboard code for the F6 key.
-- [let GCKeyF7: String](gckeyf7.md)
+- [let GCKeyF7: String](./gckeyf7.md)
   The keyboard code for the F7 key.
-- [let GCKeyF8: String](gckeyf8.md)
+- [let GCKeyF8: String](./gckeyf8.md)
   The keyboard code for the F8 key.
-- [let GCKeyF9: String](gckeyf9.md)
+- [let GCKeyF9: String](./gckeyf9.md)
   The keyboard code for the F9 key.
-- [let GCKeyF10: String](gckeyf10.md)
+- [let GCKeyF10: String](./gckeyf10.md)
   The keyboard code for the F10 key.
-- [let GCKeyF11: String](gckeyf11.md)
+- [let GCKeyF11: String](./gckeyf11.md)
   The keyboard code for the F11 key.
-- [let GCKeyF12: String](gckeyf12.md)
+- [let GCKeyF12: String](./gckeyf12.md)
   The keyboard code for the F12 key.
-- [let GCKeyF13: String](gckeyf13.md)
+- [let GCKeyF13: String](./gckeyf13.md)
   The keyboard code for the F13 key.
-- [let GCKeyF14: String](gckeyf14.md)
+- [let GCKeyF14: String](./gckeyf14.md)
   The keyboard code for the F14 key.
-- [let GCKeyF15: String](gckeyf15.md)
+- [let GCKeyF15: String](./gckeyf15.md)
   The keyboard code for the F15 key.
 
 

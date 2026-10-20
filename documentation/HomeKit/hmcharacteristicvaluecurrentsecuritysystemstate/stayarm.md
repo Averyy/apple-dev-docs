@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentSecuritySystemState.stayArm
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The home is occupied and residents are active.
 
@@ -19,15 +20,20 @@ The home is occupied and residents are active.
 case stayArm
 ```
 
+```c
+HMCharacteristicValueCurrentSecuritySystemStateStayArm
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentSecuritySystemState.awayArm](hmcharacteristicvaluecurrentsecuritysystemstate/awayarm.md)
+### Security System States
+- [HMCharacteristicValueCurrentSecuritySystemState.awayArm](./awayarm.md)
   The home is unoccupied.
-- [HMCharacteristicValueCurrentSecuritySystemState.nightArm](hmcharacteristicvaluecurrentsecuritysystemstate/nightarm.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.nightArm](./nightarm.md)
   The home is occupied and residents are sleeping.
-- [HMCharacteristicValueCurrentSecuritySystemState.disarmed](hmcharacteristicvaluecurrentsecuritysystemstate/disarmed.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.disarmed](./disarmed.md)
   The security system is disarmed.
-- [HMCharacteristicValueCurrentSecuritySystemState.triggered](hmcharacteristicvaluecurrentsecuritysystemstate/triggered.md)
+- [HMCharacteristicValueCurrentSecuritySystemState.triggered](./triggered.md)
   the security system is triggered.
 
 

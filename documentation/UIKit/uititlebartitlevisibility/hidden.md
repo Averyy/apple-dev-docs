@@ -1,7 +1,8 @@
 # UITitlebarTitleVisibility.hidden
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state indicating that the title isn’t visible in the title bar.
 
@@ -14,13 +15,18 @@ A state indicating that the title isn’t visible in the title bar.
 case hidden
 ```
 
+```c
+UITitlebarTitleVisibilityHidden
+```
+
 ## Mentions
 
-- [Removing the title bar in your Mac app built with Mac Catalyst](removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
+- [Removing the title bar in your Mac app built with Mac Catalyst](../removing-the-title-bar-in-your-mac-app-built-with-mac-catalyst.md)
 
 ## See Also
 
-- [UITitlebarTitleVisibility.visible](uititlebartitlevisibility/visible.md)
+### Visibility states
+- [UITitlebarTitleVisibility.visible](./visible.md)
   A state indicating that the title is visible in the title bar.
 
 

@@ -1,7 +1,8 @@
 # tan()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element-wise tan operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise tan operation to the current graph.
 ```swift
 func tan() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

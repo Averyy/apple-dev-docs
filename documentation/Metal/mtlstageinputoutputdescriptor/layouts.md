@@ -1,7 +1,8 @@
 # layouts
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that describes how the function fetches data.
 
@@ -19,9 +20,14 @@ An array that describes how the function fetches data.
 var layouts: MTLBufferLayoutDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLBufferLayoutDescriptorArray * layouts;
+```
+
 ## See Also
 
-- [var attributes: MTLAttributeDescriptorArray](mtlstageinputoutputdescriptor/attributes.md)
+### Describing argument layouts
+- [var attributes: MTLAttributeDescriptorArray](./attributes.md)
   An array that describes where and how to fetch data for the function.
 
 

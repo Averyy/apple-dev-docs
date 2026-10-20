@@ -1,7 +1,8 @@
 # CSSM_KEYATTR_PUBLIC_KEY_ENCRYPT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_KEYATTR_PUBLIC_KEY_ENCRYPT: Int { get }
+```
+
+```c
+CSSM_KEYATTR_PUBLIC_KEY_ENCRYPT
 ```
 
 

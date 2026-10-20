@@ -1,14 +1,17 @@
 # MPMovieRepeatMode
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants describing how the movie player repeats content at the end of playback.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -16,48 +19,53 @@ Constants describing how the movie player repeats content at the end of playback
 enum MPMovieRepeatMode
 ```
 
+```c
+enum MPMovieRepeatMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MPMovieRepeatMode.none](mpmovierepeatmode/none.md)
-- [MPMovieRepeatMode.one](mpmovierepeatmode/one.md)
+- [MPMovieRepeatMode.none](./mpmovierepeatmode/none.md)
+- [MPMovieRepeatMode.one](./mpmovierepeatmode/one.md)
 ### Initializers
-- [init?(rawValue: Int)](mpmovierepeatmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpmovierepeatmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MPMovieLoadState](mpmovieloadstate.md)
+### Constants
+- [struct MPMovieLoadState](./mpmovieloadstate.md)
   Constants describing the network load state of the movie player.
-- [enum MPMovieControlStyle](mpmoviecontrolstyle.md)
+- [enum MPMovieControlStyle](./mpmoviecontrolstyle.md)
   Constants describing the style of the playback controls.
-- [enum MPMovieFinishReason](mpmoviefinishreason.md)
+- [enum MPMovieFinishReason](./mpmoviefinishreason.md)
   Constants describing the reason that playback ended.
-- [enum MPMoviePlaybackState](mpmovieplaybackstate.md)
+- [enum MPMoviePlaybackState](./mpmovieplaybackstate.md)
   Constants describing the current playback state of the movie player.
-- [enum MPMovieScalingMode](mpmoviescalingmode.md)
+- [enum MPMovieScalingMode](./mpmoviescalingmode.md)
   Constants describing how the movie content is scaled to fit the frame of its view.
-- [enum MPMovieTimeOption](mpmovietimeoption.md)
+- [enum MPMovieTimeOption](./mpmovietimeoption.md)
   Constants describing which frame to use when generating thumbnail images.
-- [struct MPMovieMediaTypeMask](mpmoviemediatypemask.md)
+- [struct MPMovieMediaTypeMask](./mpmoviemediatypemask.md)
   The types of content available in the movie file.
-- [enum MPMovieSourceType](mpmoviesourcetype.md)
+- [enum MPMovieSourceType](./mpmoviesourcetype.md)
   Specifies the type of the movie file.
-- [Thumbnail notification user info keys](thumbnail-notification-user-info-keys.md)
-  The following keys may be found in the `userInfo` dictionary of a [`MPMoviePlayerThumbnailImageRequestDidFinishNotification`](mpmovieplayerthumbnailimagerequestdidfinishnotification.md) notification.
-- [Fullscreen notification keys](fullscreen-notification-keys.md)
+- [Thumbnail notification user info keys](./thumbnail-notification-user-info-keys.md)
+  The following keys may be found in the `userInfo` dictionary of a [`MPMoviePlayerThumbnailImageRequestDidFinishNotification`](./mpmovieplayerthumbnailimagerequestdidfinishnotification.md) notification.
+- [Fullscreen notification keys](./fullscreen-notification-keys.md)
   The following keys may be found in the `userInfo` dictionary of notifications for transitioning in or out of full-screen mode.
-- [Playback finished notification key](playback-finished-notification-key.md)
-  The following key may be found in the userInfo dictionary of a [`MPMoviePlayerPlaybackDidFinishNotification`](mpmovieplayerplaybackdidfinishnotification.md) notification.
+- [Playback finished notification key](./playback-finished-notification-key.md)
+  The following key may be found in the userInfo dictionary of a [`MPMoviePlayerPlaybackDidFinishNotification`](./mpmovieplayerplaybackdidfinishnotification.md) notification.
 
 
 ---

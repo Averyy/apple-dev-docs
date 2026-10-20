@@ -1,7 +1,8 @@
 # groupDisplayName
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized display name of the subscription group that the subscription store view merchandises.
 
@@ -22,13 +23,14 @@ var groupDisplayName: String { get }
 
 #### Discussion
 
-This property is the same as accessing [`groupDisplayName`](product/subscriptioninfo/groupdisplayname.md) on a [`Product.SubscriptionInfo`](product/subscriptioninfo.md) value. Because all options within a subscription store view belong to the same subscription group, using the [`groupDisplayName`](subscriptionstorecontrolstyleconfiguration/groupdisplayname.md) property is more convenient than getting the group display name from an arbitrary subscription option.
+This property is the same as accessing [`groupDisplayName`](../product/subscriptioninfo/groupdisplayname.md) on a [`Product.SubscriptionInfo`](../product/subscriptioninfo.md) value. Because all options within a subscription store view belong to the same subscription group, using the [`groupDisplayName`](./groupdisplayname.md) property is more convenient than getting the group display name from an arbitrary subscription option.
 
 ## See Also
 
-- [var autoRenewPreference: Product?](subscriptionstorecontrolstyleconfiguration/autorenewpreference.md)
+### Getting subscription group properties
+- [var autoRenewPreference: Product?](./autorenewpreference.md)
   The auto-renewable subscripton product that renews at the next billing cycle.
-- [var allOptions: [Product]](subscriptionstorecontrolstyleconfiguration/alloptions.md)
+- [var allOptions: [Product]](./alloptions.md)
   All subscription options in the subscription group.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dynamic property ID from its raw string value.
 
@@ -9,7 +10,7 @@ Creates a dynamic property ID from its raw string value.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 

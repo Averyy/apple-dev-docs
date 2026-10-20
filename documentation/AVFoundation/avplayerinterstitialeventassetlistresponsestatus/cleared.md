@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventAssetListResponseStatus.cleared
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system cleared the asset list response.
 
@@ -20,15 +21,20 @@ Indicates that the system cleared the asset list response.
 case cleared
 ```
 
+```c
+AVPlayerInterstitialEventAssetListResponseStatusCleared
+```
+
 #### Discussion
 
-This status indicates that the interstital event’s [`assetListResponse`](avplayerinterstitialevent/assetlistresponse.md) property is `nil`.
+This status indicates that the interstital event’s [`assetListResponse`](../avplayerinterstitialevent/assetlistresponse.md) property is `nil`.
 
 ## See Also
 
-- [AVPlayerInterstitialEventAssetListResponseStatus.available](avplayerinterstitialeventassetlistresponsestatus/available.md)
+### Status values
+- [AVPlayerInterstitialEventAssetListResponseStatus.available](./available.md)
   Indicates that a valid asset list response is available.
-- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](avplayerinterstitialeventassetlistresponsestatus/unavailable.md)
+- [AVPlayerInterstitialEventAssetListResponseStatus.unavailable](./unavailable.md)
   Indicates that the asset list response is unavailable.
 
 

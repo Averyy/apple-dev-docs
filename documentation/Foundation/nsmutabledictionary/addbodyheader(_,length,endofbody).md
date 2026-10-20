@@ -1,7 +1,8 @@
 # addBodyHeader(_:length:endOfBody:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func addBodyHeader(_ inHeaderData: UnsafeRawPointer!, length inHeaderDataLength: UInt32, endOfBody isEndOfBody: Bool) -> OBEXError
+```
+
+```objc
+- (OBEXError) addBodyHeader:(const void *) inHeaderData length:(uint32_t) inHeaderDataLength endOfBody:(BOOL) isEndOfBody;
 ```
 
 

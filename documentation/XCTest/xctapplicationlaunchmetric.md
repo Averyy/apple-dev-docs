@@ -1,7 +1,8 @@
 # XCTApplicationLaunchMetric
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A metric to record the application launch duration for a performance test.
 
@@ -19,43 +20,48 @@ A metric to record the application launch duration for a performance test.
 class XCTApplicationLaunchMetric
 ```
 
+```objc
+@interface XCTApplicationLaunchMetric : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init()](xctapplicationlaunchmetric/init.md)
+- [init()](./xctapplicationlaunchmetric/init%28%29.md)
   Initializes a metric that records the time for an app to display its first frame to screen and complete all extended launch tasks.
-- [init(waitUntilResponsive: Bool)](xctapplicationlaunchmetric/init(waituntilresponsive:).md)
+- [init(waitUntilResponsive: Bool)](./xctapplicationlaunchmetric/init%28waituntilresponsive%29.md)
   Initializes a metric that records the time for an app to display its first frame to screen and complete all extended launch tasks, or to display its first frame and wait until the app is responsive.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [XCTMetric](xctmetric.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [XCTMetric](./xctmetric.md)
 
 ## See Also
 
-- [protocol XCTMetric](xctmetric.md)
+### Measurement Metrics
+- [protocol XCTMetric](./xctmetric.md)
   A protocol that defines the methods that objects must provide when gathering metrics during performance tests.
-- [class XCTCPUMetric](xctcpumetric.md)
+- [class XCTCPUMetric](./xctcpumetric.md)
   A metric to record information about CPU activity during a performance test.
-- [class XCTClockMetric](xctclockmetric.md)
+- [class XCTClockMetric](./xctclockmetric.md)
   A metric to record the time that elapses during a performance test.
-- [class XCTHitchMetric](xcthitchmetric.md)
+- [class XCTHitchMetric](./xcthitchmetric.md)
   A metric to measure the number of hitches your UI encounters in a performance test.
-- [class XCTMemoryMetric](xctmemorymetric.md)
+- [class XCTMemoryMetric](./xctmemorymetric.md)
   A metric to record the physical memory that a performance test uses.
-- [class XCTOSSignpostMetric](xctossignpostmetric.md)
+- [class XCTOSSignpostMetric](./xctossignpostmetric.md)
   A metric to record the time that a performance test spends executing a signposted region of code.
-- [class XCTStorageMetric](xctstoragemetric.md)
+- [class XCTStorageMetric](./xctstoragemetric.md)
   A metric to record the amount of data that a performance test logically writes to storage.
 
 

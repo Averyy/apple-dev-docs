@@ -1,7 +1,8 @@
 # showsCloudItems
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value specifying whether to display iCloud Media Library items for a media picker.
 
@@ -16,19 +17,24 @@ A Boolean value specifying whether to display iCloud Media Library items for a m
 var showsCloudItems: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsCloudItems;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the picker shows available iCloud Music Library items, including purchased items, imported content, and Apple Music subscription content. When set to [`false`](https://developer.apple.com/documentation/swift/false), the picker only shows content downloaded to the device. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When set to [`true`](../../Swift/true.md), the picker shows available iCloud Music Library items, including purchased items, imported content, and Apple Music subscription content. When set to [`false`](../../Swift/false.md), the picker only shows content downloaded to the device. The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsPickingMultipleItems: Bool](mpmediapickercontroller/allowspickingmultipleitems.md)
+### Using a media item picker
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value specifying the default selection behavior for a media item picker.
-- [var mediaTypes: MPMediaType](mpmediapickercontroller/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The media types that media item picker presents.
-- [var prompt: String?](mpmediapickercontroller/prompt.md)
+- [var prompt: String?](./prompt.md)
   A prompt, for the user, that appears above the navigation bar buttons.
-- [var showsItemsWithProtectedAssets: Bool](mpmediapickercontroller/showsitemswithprotectedassets.md)
+- [var showsItemsWithProtectedAssets: Bool](./showsitemswithprotectedassets.md)
   A Boolean value that specifies whether the media item picker displays protected assets.
 
 

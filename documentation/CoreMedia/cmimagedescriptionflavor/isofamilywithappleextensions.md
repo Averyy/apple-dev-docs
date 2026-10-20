@@ -1,7 +1,8 @@
 # isoFamilyWithAppleExtensions
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let isoFamilyWithAppleExtensions: CMImageDescriptionFlavor
+```
+
+```c
+extern CMImageDescriptionFlavor const kCMImageDescriptionFlavor_ISOFamilyWithAppleExtensions;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Watch Connectivity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+

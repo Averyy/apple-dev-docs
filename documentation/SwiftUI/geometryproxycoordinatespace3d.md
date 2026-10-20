@@ -1,7 +1,8 @@
 # GeometryProxyCoordinateSpace3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
@@ -17,29 +18,30 @@ struct GeometryProxyCoordinateSpace3D
 ## Topics
 
 ### Instance Methods
-- [func anchored(in: UnitPoint3D) -> some CoordinateSpace3D](geometryproxycoordinatespace3d/anchored(in:).md)
+- [func anchored(in: UnitPoint3D) -> some CoordinateSpace3D](./geometryproxycoordinatespace3d/anchored%28in%29.md)
   Returns a modified `CoordinateSpace3D` offset to match the provided `anchorPoint` in the original coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [CoordinateSpace3D](../spatial/coordinatespace3d.md)
+- [CoordinateSpace3D](../Spatial/coordinatespace3d.md)
 
 ## See Also
 
-- [enum Axis](axis.md)
+### Accessing geometric constructs
+- [enum Axis](./axis.md)
   The horizontal or vertical dimension in a 2D coordinate system.
-- [struct Angle](angle.md)
+- [struct Angle](./angle.md)
   A geometric angle whose value you access in either radians or degrees.
-- [struct UnitPoint](unitpoint.md)
+- [struct UnitPoint](./unitpoint.md)
   A normalized 2D point in a view’s coordinate space.
-- [struct UnitPoint3D](unitpoint3d.md)
+- [struct UnitPoint3D](./unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   An opaque value derived from an anchor source and a particular view.
-- [protocol DepthAlignmentID](depthalignmentid.md)
+- [protocol DepthAlignmentID](./depthalignmentid.md)
   A type that defines a custom depth alignment guide.
-- [struct Alignment3D](alignment3d.md)
+- [struct Alignment3D](./alignment3d.md)
   An alignment in all three axes.
 
 

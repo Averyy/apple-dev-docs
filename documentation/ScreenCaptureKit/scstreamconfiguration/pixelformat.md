@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pixel format for sample buffers that a stream outputs.
 
@@ -15,6 +16,10 @@ A pixel format for sample buffers that a stream outputs.
 var pixelFormat: OSType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) OSType pixelFormat;
+```
+
 #### Discussion
 
 A stream supports the following pixel formats:
@@ -26,11 +31,12 @@ A stream supports the following pixel formats:
 
 ## See Also
 
-- [var colorMatrix: CFString](scstreamconfiguration/colormatrix.md)
+### Configuring colors
+- [var colorMatrix: CFString](./colormatrix.md)
   A color matrix to apply to the output surface.
-- [var colorSpaceName: CFString](scstreamconfiguration/colorspacename.md)
+- [var colorSpaceName: CFString](./colorspacename.md)
   A color space to use for the output buffer.
-- [var backgroundColor: CGColor](scstreamconfiguration/backgroundcolor.md)
+- [var backgroundColor: CGColor](./backgroundcolor.md)
   A background color for the output.
 
 

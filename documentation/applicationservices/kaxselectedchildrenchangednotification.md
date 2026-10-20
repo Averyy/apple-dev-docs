@@ -1,7 +1,8 @@
 # kAXSelectedChildrenChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A different subset of this accessibility object’s children were selected.
 
@@ -12,6 +13,10 @@ A different subset of this accessibility object’s children were selected.
 
 ```swift
 var kAXSelectedChildrenChangedNotification: String { get }
+```
+
+```c
+#define kAXSelectedChildrenChangedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # simulation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying compute graph simulation driving this entity.
 

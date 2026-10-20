@@ -1,7 +1,8 @@
 # kSecAttrAccount
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating the item’s account name.
 
@@ -20,14 +21,18 @@ A key whose value is a string indicating the item’s account name.
 let kSecAttrAccount: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrAccount;
+```
+
 ## Mentions
 
-- [Searching for keychain items](searching-for-keychain-items.md)
-- [Updating and deleting keychain items](updating-and-deleting-keychain-items.md)
+- [Searching for keychain items](./searching-for-keychain-items.md)
+- [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and contains an account name. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) and [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and contains an account name. Items of class [`kSecClassGenericPassword`](./ksecclassgenericpassword.md) and [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 
 
 ---

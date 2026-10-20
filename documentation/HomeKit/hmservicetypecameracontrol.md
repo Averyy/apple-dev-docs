@@ -1,7 +1,8 @@
 # HMServiceTypeCameraControl
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A camera control service.
 
@@ -19,17 +20,22 @@ A camera control service.
 let HMServiceTypeCameraControl: String
 ```
 
+```c
+extern NSString * const HMServiceTypeCameraControl;
+```
+
 ## See Also
 
-- [let HMServiceTypeCameraRTPStreamManagement: String](hmservicetypecamerartpstreammanagement.md)
+### Video and Audio
+- [let HMServiceTypeCameraRTPStreamManagement: String](./hmservicetypecamerartpstreammanagement.md)
   A stream management service.
-- [let HMServiceTypeMicrophone: String](hmservicetypemicrophone.md)
+- [let HMServiceTypeMicrophone: String](./hmservicetypemicrophone.md)
   A microphone service.
-- [let HMServiceTypeSpeaker: String](hmservicetypespeaker.md)
+- [let HMServiceTypeSpeaker: String](./hmservicetypespeaker.md)
   An audio speaker service.
-- [let HMServiceTypeInputSource: String](hmservicetypeinputsource.md)
+- [let HMServiceTypeInputSource: String](./hmservicetypeinputsource.md)
   An accessory input source service.
-- [let HMServiceTypeTelevision: String](hmservicetypetelevision.md)
+- [let HMServiceTypeTelevision: String](./hmservicetypetelevision.md)
   A television service.
 
 

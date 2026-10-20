@@ -1,7 +1,8 @@
 # umpEndpoint
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 weak var umpEndpoint: MIDIUMPEndpoint? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) MIDIUMPEndpoint * UMPEndpoint;
 ```
 
 

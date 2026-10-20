@@ -2,6 +2,7 @@
 
 **Framework**: Playground Support  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allows the handler to receive a live view message from a remote object.
@@ -32,6 +33,12 @@ func receive(_ message: PlaygroundValue) {
 ## Parameters
 
 - `message`: A message sent to a live view from a remote object.
+
+## Default Implementations
+
+### PlaygroundLiveViewMessageHandler Implementations
+- [func receive(PlaygroundValue)](./api-3029541-receive.md)
+  Allows the handler to receive a live view message from a remote object.
 
 
 ---

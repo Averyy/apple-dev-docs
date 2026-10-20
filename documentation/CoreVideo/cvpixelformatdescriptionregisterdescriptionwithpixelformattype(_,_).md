@@ -1,7 +1,8 @@
 # CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a pixel format description with Core Video.
 
@@ -20,19 +21,25 @@ Registers a pixel format description with Core Video.
 func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(_ description: CFDictionary, _ pixelFormat: OSType)
 ```
 
+```c
+extern void CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionaryRef description, OSType pixelFormat);
+```
+
 #### Discussion
 
-If you are using a custom pixel format, you must register the format with Core Video using this function. See [`Technical Q&A 1401: Registering Custom Pixel Formats with QuickTime and Core Video`](https://developer.apple.comhttp://developer.apple.com/qa/qa2005/qa1401.html) for more details.
+If you are using a custom pixel format, you must register the format with Core Video using this function. See [Technical Q&A 1401: Registering Custom Pixel Formats with QuickTime and Core Video](http://developer.apple.com/qa/qa2005/qa1401.html) for more details.
 
 ## Parameters
 
-- `description`: A Core Foundation dictionary containing the pixel format description. See [`Pixel Format Description Keys`](pixel-format-description-keys.md) for a list of required and optional keys.
+- `description`: A Core Foundation dictionary containing the pixel format description. See [Pixel Format Description Keys](./pixel-format-description-keys.md) for a list of required and optional keys.
 - `pixelFormat`: The four-character code (type `OSType`) identifier for this pixel format.
 
 ## See Also
 
-- [Core Video Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
-- [func CVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocator?, OSType) -> CFDictionary?](cvpixelformatdescriptioncreatewithpixelformattype(_:_:).md)
+### Related Documentation
+- [Core Video Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreVideo/CVProg_Intro/CVProg_Intro.html#//apple_ref/doc/uid/TP40001536)
+### Creating Format Descriptions
+- [func CVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocator?, OSType) -> CFDictionary?](./cvpixelformatdescriptioncreatewithpixelformattype%28_,_%29.md)
   Creates a pixel format description from a given `OSType` identifier.
 
 

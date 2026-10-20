@@ -1,7 +1,8 @@
 # AppUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,21 +11,21 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppUpdateRequest.Data.Attributes](appupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes whose values you’re changing as part of the update request.
 
 ## Properties
 
 - `attributes` (AppUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `apps`
 
 
 ---

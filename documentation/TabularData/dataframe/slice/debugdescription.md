@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the data frame slice suitable for debugging.
 
@@ -22,9 +23,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](dataframe/slice/description.md)
+### Describing a Slice
+- [var description: String](./description.md)
   A text representation of the data frame slice.
-- [var customMirror: Mirror](dataframe/slice/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the data frame slice.
 
 

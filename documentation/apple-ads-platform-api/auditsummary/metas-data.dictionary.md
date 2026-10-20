@@ -1,7 +1,8 @@
 # AuditSummary.Metas
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array of per-entity metadata entries, populated when the request includes metadata options.
 
@@ -10,7 +11,7 @@ An array of per-entity metadata entries, populated when the request includes met
 
 ## Declaration
 
-```swift
+```
 object AuditSummary.Metas
 ```
 
@@ -30,9 +31,9 @@ Each entry in `metas` corresponds to one changed entity within the transaction a
 - The request populates it only when you set `options.metadata` to `latest` or `snapshot`, with one entry per changed entity.
 - `latest` fills `meta` with the entity’s current state from the live data store.
 - `snapshot` fills `meta` with the entity’s state at the time of the event.
-- You can use each entry’s `detailId` directly with `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](get-change-details-by-detailid.md)) without constructing it manually.
+- You can use each entry’s `detailId` directly with `GET /v1/change-history/{detailId}` ([`Get Change History Detail`](../get-change-details-by-detailid.md)) without constructing it manually.
 
-Populating `metas` matters because an [`AuditSummary`](auditsummary.md) row doesn’t include `entityId` on its own, so you can’t construct a `detailId` from the row alone. Setting `options.metadata` (see [`AuditQuery.Options`](auditquery/options-data.dictionary.md)) to `latest` or `snapshot` gives you a ready-to-use `detailId` in each `metas` entry instead, so you don’t need a separate lookup.
+Populating `metas` matters because an [`AuditSummary`](../auditsummary.md) row doesn’t include `entityId` on its own, so you can’t construct a `detailId` from the row alone. Setting `options.metadata` (see [`AuditQuery.Options`](../auditquery/options-data.dictionary.md)) to `latest` or `snapshot` gives you a ready-to-use `detailId` in each `metas` entry instead, so you don’t need a separate lookup.
 
 
 ---

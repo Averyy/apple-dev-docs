@@ -1,7 +1,8 @@
 # code
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error code for this instance.
 
@@ -11,19 +12,20 @@ The error code for this instance.
 
 ## Declaration
 
-```swift
+```
 attribute ApplePayErrorCode code;
 ```
 
 #### Discussion
 
-For the possible values, see [`ApplePayErrorCode`](applepayerrorcode.md).
+For the possible values, see [`ApplePayErrorCode`](../applepayerrorcode.md).
 
 ## See Also
 
-- [contactField](applepayerror/contactfield.md)
+### Error Properties
+- [contactField](./contactfield.md)
   The field name that contains the error on the payment sheet.
-- [message](applepayerror/message.md)
+- [message](./message.md)
   A localized, user-facing string that describes the error.
 
 

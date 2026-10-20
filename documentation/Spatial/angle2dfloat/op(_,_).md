@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns `true` if `lhs.radians` is less than `rhs.radians`.
 

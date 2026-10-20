@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of errors that have occurred in processing the current text buffer since the last call to the `GetSpeechInfo` function with the `soErrors` selector. Of these errors, you can find information about only the first and last error that occurred.
 
@@ -12,6 +13,10 @@ The number of errors that have occurred in processing the current text buffer si
 
 ```swift
 var count: Int16
+```
+
+```c
+SInt16 count;
 ```
 
 

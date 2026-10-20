@@ -1,17 +1,22 @@
 # dockMenu()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the user causes the application’s dock menu to be shown.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func dockMenu() -> NSMenu?
+```
+
+```objc
+- (NSMenu *) dockMenu;
 ```
 
 #### Return Value

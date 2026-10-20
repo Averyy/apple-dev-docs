@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The kinds of authorization you need to use a particular data provider type.
@@ -18,7 +19,8 @@ static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 
 ## See Also
 
-- [static var isSupported: Bool](dataprovider/issupported.md)
+### Inspecting a data provider type
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports a particular provider type.
 
 

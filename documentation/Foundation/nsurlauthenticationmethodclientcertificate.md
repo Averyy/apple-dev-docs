@@ -1,7 +1,8 @@
 # NSURLAuthenticationMethodClientCertificate
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use client certificate authentication for this protection space.
 
@@ -20,17 +21,22 @@ Use client certificate authentication for this protection space.
 let NSURLAuthenticationMethodClientCertificate: String
 ```
 
+```c
+extern NSString * const NSURLAuthenticationMethodClientCertificate;
+```
+
 #### Discussion
 
 This authentication method can apply to any protocol.
 
 ## See Also
 
-- [let NSURLAuthenticationMethodNegotiate: String](nsurlauthenticationmethodnegotiate.md)
+### Session-wide authentication challenges
+- [let NSURLAuthenticationMethodNegotiate: String](./nsurlauthenticationmethodnegotiate.md)
   Negotiate whether to use Kerberos or NTLM authentication for this protection space.
-- [let NSURLAuthenticationMethodNTLM: String](nsurlauthenticationmethodntlm.md)
+- [let NSURLAuthenticationMethodNTLM: String](./nsurlauthenticationmethodntlm.md)
   Use NTLM authentication for this protection space.
-- [let NSURLAuthenticationMethodServerTrust: String](nsurlauthenticationmethodservertrust.md)
+- [let NSURLAuthenticationMethodServerTrust: String](./nsurlauthenticationmethodservertrust.md)
   Perform server trust authentication (certificate validation) for this protection space.
 
 

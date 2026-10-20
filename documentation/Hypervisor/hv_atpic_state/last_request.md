@@ -1,15 +1,20 @@
 # last_request
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var last_request: UInt8
+```
+
+```c
+uint8_t last_request;
 ```
 
 

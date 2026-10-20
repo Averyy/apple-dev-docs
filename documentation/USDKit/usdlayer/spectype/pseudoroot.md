@@ -1,7 +1,8 @@
 # USDLayer.SpecType.pseudoRoot
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The implicit pseudo-root spec at `/`.
 

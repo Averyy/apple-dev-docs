@@ -1,7 +1,8 @@
 # CLKWatchFaceLibrary.ErrorCode.noURL
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case noURL
+```
+
+```c
+CLKWatchFaceLibraryErrorCodeNoURL
 ```
 
 

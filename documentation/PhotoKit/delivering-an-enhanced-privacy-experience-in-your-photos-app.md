@@ -1,6 +1,7 @@
 # Delivering an Enhanced Privacy Experience in Your Photos App
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Article
 
 Adopt the latest privacy enhancements to deliver advanced user-privacy controls.
 
@@ -10,21 +11,21 @@ A user’s photos and videos are some of the most personal and private data they
 
 > ❗ **Important**:  The limited Photos library affects all apps that use PhotoKit in iOS 14, including those already published to the App Store. Evaluate your app’s behavior to ensure it performs as expected when running in limited library mode.
 
-##### Determine Your Apps Access Needs
+##### Determine Your App’s Access Needs
 
 With the many privacy enhancements added in iOS 14, it’s a good time to evaluate how and why your app uses PhotoKit to access the user’s library. Many apps may only need read-only access to retrieve images to share on the internet or embed in a document or email. For these purposes, the simplest way to provide an enhanced user experience is to use [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) to access the Photos library.
 
-[`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) is a new picker that replaces [`UIImagePickerController`](https://developer.apple.com/documentation/uikit/uiimagepickercontroller). Its user interface matches that of the Photos app, supports search and multiple selection of photos and videos, and provides fluid zooming of content. Because the system manages its life cycle in a separate process, it’s private by default. The user doesn’t need to explicitly authorize your app to select photos, which results in a simpler and more streamlined user experience.
+[`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) is a new picker that replaces [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md). Its user interface matches that of the Photos app, supports search and multiple selection of photos and videos, and provides fluid zooming of content. Because the system manages its life cycle in a separate process, it’s private by default. The user doesn’t need to explicitly authorize your app to select photos, which results in a simpler and more streamlined user experience.
 
-> **Note**:  Session 10652: [`Meet the New Photos Picker`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10652/)
+> **Note**:  Session 10652: [Meet the New Photos Picker](https://developer.apple.com/videos/play/wwdc2020/10652/)
 
-##### Describe Your App%ca%bcs Photo Library Use
+##### Describe Your Appʼs Photo Library Use
 
 If your app requires PhotoKit’s advanced features, like retrieving assets and collections, or updating the library, the user must explicitly authorize it to access those features. Provide a localizable message that describes how your app interacts with the Photos library. The system presents this message to the user when it prompts them to authorize your app for access. Attempting to access the Photos library without a valid usage description causes your app to crash.
 
-Add an entry to your `Info.plist` file with the appropriate key. If your app only adds to the library, use the [`NSPhotoLibraryAddUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryaddusagedescription) key. For all other cases, use [`NSPhotoLibraryUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsphotolibraryusagedescription). The following shows an example `Info.plist` entry for an app that requires read/write access.
+Add an entry to your `Info.plist` file with the appropriate key. If your app only adds to the library, use the [`NSPhotoLibraryAddUsageDescription`](../BundleResources/information-property-list/nsphotolibraryaddusagedescription.md) key. For all other cases, use [`NSPhotoLibraryUsageDescription`](../BundleResources/information-property-list/nsphotolibraryusagedescription.md). The following shows an example `Info.plist` entry for an app that requires read/write access.
 
-![A screenshot of the an app’s Info.plist that shows the Privacy -  Photo Library Usage Description entry with a red box highlighting it.](/images/com.apple.photokit/media-3695626@2x.png)
+![A screenshot of the an app’s Info.plist that shows the Privacy -  Photo Library Usage Description entry with a red box highlighting it.](https://developer.apple.com/tutorials/images/com.apple.photokit/media-3695626@2x.png)
 
 ##### Determine and Request Authorization
 
@@ -69,7 +70,7 @@ After the user sets the app’s authorization status, the system remembers their
 
 In previous iOS releases, users either allowed or disallowed full access to their library. Most users don’t want to give apps full access to their private data, and starting in iOS 14, they can share a limited subset of their photos and videos. When the app requests authorization, the system prompts the user with a dialog like the one shown below.
 
-![A screenshot of a Photos authorization dialog, with a callout highlighting the Select Photos… button. ](/images/com.apple.photokit/media-3699643@2x.png)
+![A screenshot of a Photos authorization dialog, with a callout highlighting the Select Photos… button. ](https://developer.apple.com/tutorials/images/com.apple.photokit/media-3699643@2x.png)
 
 In addition to the buttons to allow or disallow all access, there’s a new Select Photos option the user can tap to open the limited-library management interface. This interface lets the user select the assets to share with your app. The selected items represent the user’s limited library selection, your app can only access these assets.
 
@@ -78,13 +79,13 @@ The PhotoKit APIs largely function the same regardless of whether your app inter
 - The system automatically adds assets that your app creates with a [`PHAssetCreationRequest`](https://developer.apple.com/documentation/photos/phassetcreationrequest) to the user’s limited library selection.
 - You can’t create or fetch user albums. If your app requires this functionality, you’ll need to update its behavior and user interface appropriately when your app’s authorization status is [`PHAuthorizationStatus.limited`](https://developer.apple.com/documentation/photos/phauthorizationstatus/limited).
 
-##### Present the Limited Library Selection Interface
+##### Present the Limited-Library Selection Interface
 
 By default, the system automatically prompts the user to update their limited-library selection once per app life cycle. This automatic presentation isn’t the preferred user experience for most apps. Instead, apps need to suppress the automatic prompt and present it programmatically.
 
 To suppress the prompt, add the following key and value to your app’s `Info.plist` file.
 
-![A screenshot of the an app’s Info.plist that shows the Prevent limited photos access alert entry with a red box highlighting it.](/images/com.apple.photokit/media-3695628@2x.png)
+![A screenshot of the an app’s Info.plist that shows the Prevent limited photos access alert entry with a red box highlighting it.](https://developer.apple.com/tutorials/images/com.apple.photokit/media-3695628@2x.png)
 
 To present the limited-library picker programmatically, add an affordance in your user interface so the user can update their limited-library selection. When the user taps this interface, present the limited-library picker as shown in the following code.
 
@@ -106,17 +107,18 @@ PHPhotoLibrary.shared().presentLimitedLibraryPicker(from: viewController) { iden
 }
 ```
 
-To monitor changes to the user’s limited-library selection, use the standard change observer API as described in [`Observing Changes in the Photo Library`](observing-changes-in-the-photo-library.md). Register your app to receive notifications and update your user interface as the system notifies it of state changes.
+To monitor changes to the user’s limited-library selection, use the standard change observer API as described in [Observing Changes in the Photo Library](./observing-changes-in-the-photo-library.md). Register your app to receive notifications and update your user interface as the system notifies it of state changes.
 
 ## See Also
 
-- [Fetching Objects and Requesting Changes](fetching-objects-and-requesting-changes.md)
+### Articles
+- [Fetching Objects and Requesting Changes](./fetching-objects-and-requesting-changes.md)
   Get assets, asset collections, and collection lists matching a specified query.
-- [Loading and Caching Assets and Thumbnails](loading-and-caching-assets-and-thumbnails.md)
+- [Loading and Caching Assets and Thumbnails](./loading-and-caching-assets-and-thumbnails.md)
   Request image, video, or Live Photos content, and cache for quick reuse.
-- [Displaying Live Photos](displaying-live-photos.md)
+- [Displaying Live Photos](./displaying-live-photos.md)
   Provide the same interactive playback of Live Photos as in the iOS Photos app.
-- [Creating Photo Editing Extensions](creating-photo-editing-extensions.md)
+- [Creating Photo Editing Extensions](./creating-photo-editing-extensions.md)
   Provide custom functionality in the Photos app by bundling an app extension.
 
 

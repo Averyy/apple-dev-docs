@@ -1,7 +1,8 @@
 # permissionStatus(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks the specified URL against the currently denied, granted, and requested permission match patterns.
 
@@ -18,6 +19,10 @@ Checks the specified URL against the currently denied, granted, and requested pe
 func permissionStatus(for url: URL) -> WKWebExtensionContext.PermissionStatus
 ```
 
+```objc
+- (WKWebExtensionContextPermissionStatus) permissionStatusForURL:(NSURL *) url;
+```
+
 #### Discussion
 
 URLs and match patterns can be granted on a per-tab basis. When the tab is known, access checks should always use the method that checks in a tab.
@@ -28,9 +33,10 @@ URLs and match patterns can be granted on a per-tab basis. When the tab is known
 
 ## See Also
 
-- [func permissionStatus(for: URL, in: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus](wkwebextensioncontext/permissionstatus(for:in:)-96xaf.md)
+### Related Documentation
+- [func permissionStatus(for: URL, in: (any WKWebExtensionTab)?) -> WKWebExtensionContext.PermissionStatus](./permissionstatus%28for,in%29-96xaf.md)
   Checks the specified URL against the currently denied, granted, and requested permission match patterns.
-- [func hasAccess(to: URL) -> Bool](wkwebextensioncontext/hasaccess(to:).md)
+- [func hasAccess(to: URL) -> Bool](./hasaccess%28to%29.md)
   Checks the specified URL against the currently granted permission match patterns.
 
 

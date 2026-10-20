@@ -1,7 +1,8 @@
 # MenuBarExtra
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that renders itself as a persistent control in the system menu bar.
 
@@ -53,9 +54,9 @@ struct UtilityApp: App {
 
 An app that only shows in the menu bar will be automatically terminated if the user removes the extra from the menu bar.
 
-For apps that only show in the menu bar, a common behavior is for the app to not display its icon in either the Dock or the application switcher. To enable this behavior, set the [`LSUIElement`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsuielement) flag in your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file to `true`.
+For apps that only show in the menu bar, a common behavior is for the app to not display its icon in either the Dock or the application switcher. To enable this behavior, set the [`LSUIElement`](../BundleResources/information-property-list/lsuielement.md) flag in your app’s [`Information Property List`](../BundleResources/information-property-list.md) file to `true`.
 
-For more complex or data rich menu bar extras, you can use the [`window`](menubarextrastyle/window.md) style, which displays a popover-like window from the menu bar icon that contains standard controls. You define the layout and contents of those controls with the content that you provide:
+For more complex or data rich menu bar extras, you can use the [`window`](./menubarextrastyle/window.md) style, which displays a popover-like window from the menu bar icon that contains standard controls. You define the layout and contents of those controls with the content that you provide:
 
 ```swift
 MenuBarExtra("Utility App", systemImage: "hammer") {
@@ -69,34 +70,35 @@ MenuBarExtra("Utility App", systemImage: "hammer") {
 ## Topics
 
 ### Creating a menu bar extra
-- [init(_:content:)](menubarextra/init(_:content:).md)
+- [init(_:content:)](./menubarextra/init%28_,content%29.md)
   Creates a menu bar extra with a localized resource for a localized string to use as the label. The extra defines the primary scene of an `App`.
-- [init(content: () -> Content, label: () -> Label)](menubarextra/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./menubarextra/init%28content,label%29.md)
   Creates a menu bar extra that will be displayed in the system menu bar, and defines the primary scene of an `App`.
-- [init(_:isInserted:content:)](menubarextra/init(_:isinserted:content:).md)
+- [init(_:isInserted:content:)](./menubarextra/init%28_,isinserted,content%29.md)
   Creates a menu bar extra with a localized resource for a localized string to use as the label. The item will be displayed in the system menu bar when the specified binding is set to `true`. If the user removes the item from the menu bar, the binding will be set to `false`.
-- [init(isInserted: Binding<Bool>, content: () -> Content, label: () -> Label)](menubarextra/init(isinserted:content:label:).md)
+- [init(isInserted: Binding<Bool>, content: () -> Content, label: () -> Label)](./menubarextra/init%28isinserted,content,label%29.md)
   Creates a menu bar extra. The item will be displayed in the system menu bar when the specified binding is set to `true`. If the user removes the item from the menu bar, the binding will be set to `false`.
 ### Creating a menu bar extra with an image
-- [init(_:image:content:)](menubarextra/init(_:image:content:).md)
+- [init(_:image:content:)](./menubarextra/init%28_,image,content%29.md)
   Creates a menu bar extra with an image to use as the items label. The provided title will be used by the accessibility system.
-- [init(_:image:isInserted:content:)](menubarextra/init(_:image:isinserted:content:).md)
+- [init(_:image:isInserted:content:)](./menubarextra/init%28_,image,isinserted,content%29.md)
   Creates a menu bar extra with an image to use as the items label. The provided title will be used by the accessibility system.
-- [init(_:systemImage:content:)](menubarextra/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./menubarextra/init%28_,systemimage,content%29.md)
   Creates a menu bar extra with a system image to use as the items label. The provided title will be used by the accessibility system.
-- [init(_:systemImage:isInserted:content:)](menubarextra/init(_:systemimage:isinserted:content:).md)
+- [init(_:systemImage:isInserted:content:)](./menubarextra/init%28_,systemimage,isinserted,content%29.md)
   Creates a menu bar extra with a system image to use as the items label. The provided title will be used by the accessibility system.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [func menuBarExtraStyle<S>(S) -> some Scene](scene/menubarextrastyle(_:).md)
+### Creating a menu bar extra
+- [func menuBarExtraStyle<S>(S) -> some Scene](./scene/menubarextrastyle%28_%29.md)
   Sets the style for menu bar extra created by this scene.
-- [protocol MenuBarExtraStyle](menubarextrastyle.md)
+- [protocol MenuBarExtraStyle](./menubarextrastyle.md)
   A specification for the appearance and behavior of a menu bar extra scene.
 
 

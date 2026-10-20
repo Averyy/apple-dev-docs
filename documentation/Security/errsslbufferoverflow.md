@@ -1,7 +1,8 @@
 # errSSLBufferOverflow
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An insufficient buffer was provided.
 
@@ -18,6 +19,10 @@ An insufficient buffer was provided.
 
 ```swift
 var errSSLBufferOverflow: OSStatus { get }
+```
+
+```c
+errSSLBufferOverflow
 ```
 
 

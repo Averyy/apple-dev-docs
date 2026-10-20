@@ -1,7 +1,8 @@
 # init(inputSequence:modules:options:analysisContext:volatileRangeChangedHandler:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an analyzer and begins analysis.
 
@@ -25,17 +26,20 @@ convenience init<InputSequence>(inputSequence: InputSequence, modules: [any Spee
 - `modules`: An initial list of modules that will analyze the audio.
 - `options`: A structure specifying analysis options.
 - `analysisContext`: An object containing contextual information to improve or inform the analysis.
-- `volatileRangeChangedHandler`: A closure called to report the analysis’ progress. The closure takes the following parameters: - **range**: The current volatile range.
-- **changedStart**: If `true`, the volatile range contains an updated start time. This indicates that prior results have been finalized.
-- **changedEnd**: If `true`, the volatile range contains an update end time. This indicates that analysis of that time has started.
+- `volatileRangeChangedHandler`: A closure called to report the analysis’ progress. The closure takes the following parameters:
+
+  - **range**: The current volatile range.
+  - **changedStart**: If `true`, the volatile range contains an updated start time. This indicates that prior results have been finalized.
+  - **changedEnd**: If `true`, the volatile range contains an update end time. This indicates that analysis of that time has started.
 
 ## See Also
 
-- [convenience init(modules: [any SpeechModule], options: SpeechAnalyzer.Options?)](speechanalyzer/init(modules:options:).md)
+### Creating an analyzer
+- [convenience init(modules: [any SpeechModule], options: SpeechAnalyzer.Options?)](./init%28modules,options%29.md)
   Creates an analyzer.
-- [convenience init(inputAudioFile: AVAudioFile, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, finishAfterFile: Bool, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?) async throws](speechanalyzer/init(inputaudiofile:modules:options:analysiscontext:finishafterfile:volatilerangechangedhandler:).md)
+- [convenience init(inputAudioFile: AVAudioFile, modules: [any SpeechModule], options: SpeechAnalyzer.Options?, analysisContext: AnalysisContext, finishAfterFile: Bool, volatileRangeChangedHandler: sending ((CMTimeRange, Bool, Bool) -> Void)?) async throws](./init%28inputaudiofile,modules,options,analysiscontext,finishafterfile,volatilerangechangedhandler%29.md)
   Creates an analyzer and begins analysis on an audio file.
-- [SpeechAnalyzer.Options](speechanalyzer/options.md)
+- [SpeechAnalyzer.Options](./options.md)
   Analysis processing options.
 
 

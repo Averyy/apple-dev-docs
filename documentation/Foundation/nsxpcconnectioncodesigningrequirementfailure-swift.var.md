@@ -1,7 +1,8 @@
 # NSXPCConnectionCodeSigningRequirementFailure
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A code-signing requirement check failed.
 
@@ -22,19 +23,20 @@ var NSXPCConnectionCodeSigningRequirementFailure: Int { get }
 
 #### Discussion
 
-This error represents a failure to meet the requirement set by a call to [`NSXPCConnection`](nsxpcconnection.md)‘s [`setCodeSigningRequirement(_:)`](nsxpcconnection/setcodesigningrequirement(_:).md) method, or NSXPCConnectionListener’s [`setConnectionCodeSigningRequirement(_:)`](nsxpclistener/setconnectioncodesigningrequirement(_:).md) method.
+This error represents a failure to meet the requirement set by a call to [`NSXPCConnection`](./nsxpcconnection.md)‘s [`setCodeSigningRequirement(_:)`](./nsxpcconnection/setcodesigningrequirement%28_%29.md) method, or NSXPCConnectionListener’s [`setConnectionCodeSigningRequirement(_:)`](./nsxpclistener/setconnectioncodesigningrequirement%28_%29.md) method.
 
 ## See Also
 
-- [var NSXPCConnectionInterrupted: Int](nsxpcconnectioninterrupted-swift.var.md)
+### Error codes
+- [var NSXPCConnectionInterrupted: Int](./nsxpcconnectioninterrupted-swift.var.md)
   The XPC connection was interrupted.
-- [var NSXPCConnectionInvalid: Int](nsxpcconnectioninvalid-swift.var.md)
+- [var NSXPCConnectionInvalid: Int](./nsxpcconnectioninvalid-swift.var.md)
   The XPC connection was invalid.
-- [var NSXPCConnectionReplyInvalid: Int](nsxpcconnectionreplyinvalid-swift.var.md)
+- [var NSXPCConnectionReplyInvalid: Int](./nsxpcconnectionreplyinvalid-swift.var.md)
   The XPC connection reply was invalid.
-- [var NSXPCConnectionErrorMinimum: Int](nsxpcconnectionerrorminimum-swift.var.md)
+- [var NSXPCConnectionErrorMinimum: Int](./nsxpcconnectionerrorminimum-swift.var.md)
   The lower bounds of XPC connection error code values.
-- [var NSXPCConnectionErrorMaximum: Int](nsxpcconnectionerrormaximum-swift.var.md)
+- [var NSXPCConnectionErrorMaximum: Int](./nsxpcconnectionerrormaximum-swift.var.md)
   The upper bounds of XPC connection error code values.
 
 

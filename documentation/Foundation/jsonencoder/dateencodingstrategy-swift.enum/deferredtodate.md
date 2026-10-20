@@ -1,7 +1,8 @@
 # JSONEncoder.DateEncodingStrategy.deferredToDate
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that uses formatting from the Date structure.
 

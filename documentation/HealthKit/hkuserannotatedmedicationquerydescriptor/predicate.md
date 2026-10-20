@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate that matches the desired HKUserAnnotatedMedication objects.
 

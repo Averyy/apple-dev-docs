@@ -1,7 +1,8 @@
 # setVoxelsFor(_:divisions:patchRadius:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setVoxelsFor(_ mesh: MDLMesh, divisions: Int32, patchRadius: Float)
+```
+
+```objc
+- (void) setVoxelsForMesh:(MDLMesh *) mesh divisions:(int) divisions patchRadius:(float) patchRadius;
 ```
 
 

@@ -1,7 +1,8 @@
 # MediaIntelligenceError.workingDirectory
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework can’t access the working directory.
 
@@ -21,15 +22,16 @@ case workingDirectory
 
 #### Discussion
 
-This error occurs when the working directory you provide to [`init(workingDirectory:)`](facegroupanalyzer/init(workingdirectory:).md) or [`purge(workingDirectory:)`](facegroupanalyzer/purge(workingdirectory:).md) doesn’t exist or isn’t accessible. Verify that the URL points to a valid, writable directory before creating an analyzer.
+This error occurs when the working directory you provide to [`init(workingDirectory:)`](../facegroupanalyzer/init%28workingdirectory%29.md) or [`purge(workingDirectory:)`](../facegroupanalyzer/purge%28workingdirectory%29.md) doesn’t exist or isn’t accessible. Verify that the URL points to a valid, writable directory before creating an analyzer.
 
 ## See Also
 
-- [MediaIntelligenceError.faceGroupProcessing](mediaintelligenceerror/facegroupprocessing.md)
+### Errors
+- [MediaIntelligenceError.faceGroupProcessing](./facegroupprocessing.md)
   The framework can’t complete a face grouping operation.
-- [MediaIntelligenceError.mediaProcessing](mediaintelligenceerror/mediaprocessing.md)
+- [MediaIntelligenceError.mediaProcessing](./mediaprocessing.md)
   The framework can’t process a media asset.
-- [MediaIntelligenceError.resultFetching](mediaintelligenceerror/resultfetching.md)
+- [MediaIntelligenceError.resultFetching](./resultfetching.md)
   The framework can’t retrieve analysis results.
 
 

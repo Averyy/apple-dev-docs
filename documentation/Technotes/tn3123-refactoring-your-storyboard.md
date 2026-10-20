@@ -1,6 +1,7 @@
 # TN3123: Refactoring your storyboard
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Learn strategies and techniques for refactoring a single storyboard into multiple storyboards.
 
@@ -10,7 +11,7 @@ A storyboard is used to graphically lay out your app’s user interface. You use
 
 Over time, as your application’s UI evolves into a larger set of view controller scenes, it may become a challenge to manage and maintain that storyboard. This can be a further challenge when you need to design it with multiple team members. Two team members modifying the same storyboard could potentially cause source control problems. Improve the storyboard management process by separating your single storyboard file into individual storyboards. Storyboards are connected together using storyboard references.
 
-#### Benefits of Using Multiple Storyboards
+#### Benefits of using multiple storyboards
 
 When a storyboard is refactored, you gain three benefits:
 
@@ -18,7 +19,7 @@ When a storyboard is refactored, you gain three benefits:
 2. Reuse - A separate storyboard containing a view controller scene can be referenced and re-used in multiple parts of the app.
 3. Easier to manage - A large team may work more efficiently when each member manages their own UI. Dividing your storyboard can help avoid merge conflicts when you use a source code version control system like Git.
 
-#### Connect Two Storyboards Using a Storyboard Reference
+#### Connect two storyboards using a storyboard reference
 
 A view controller is connected to another by using a segue and a storyboard reference. This involves three stages.
 
@@ -26,11 +27,11 @@ A view controller is connected to another by using a segue and a storyboard refe
 2. Back in the app’s Main storyboard, create a storyboard reference and set its storyboard and identifier created in step 1.
 3. Create a segue from the source view controller and connect it to the storyboard reference.
 
-#### Automatically Refactor a Storyboard Using Xcode
+#### Automatically refactor a storyboard using Xcode
 
 For some UI elements Xcode helps refactor a single storyboard into multiple storyboards automatically.
 
-To separate out a [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) in iOS:
+To separate out a [`UITabBarController`](../UIKit/uitabbarcontroller.md) in iOS:
 
 1. Open the storyboard.
 2. Select the `UITabBarController` scene.
@@ -39,7 +40,7 @@ To separate out a [`UITabBarController`](https://developer.apple.com/documentati
 
 The new storyboard file will contain the `UITabBarController`. The child view controllers are separated and linked through storyboard references using unique identifiers. Storyboard references link one storyboard to another.
 
-To separate out a [`NSTabViewController`](https://developer.apple.com/documentation/appkit/nstabviewcontroller) in macOS:
+To separate out a [`NSTabViewController`](../AppKit/nstabviewcontroller.md) in macOS:
 
 1. Open the storyboard.
 2. Select the `NSTabViewController` scene.
@@ -48,9 +49,9 @@ To separate out a [`NSTabViewController`](https://developer.apple.com/documentat
 
 The new storyboard file will contain the `NSTabViewController`. The child view controllers are separated and linked through storyboard references using unique identifiers.
 
-#### Manually Refactor a Storyboard
+#### Manually refactor a storyboard
 
-If you choose to refactor your storyboard yourself, for example if one [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) (VC1) presents another (VC2), do the following:
+If you choose to refactor your storyboard yourself, for example if one [`UIViewController`](../UIKit/uiviewcontroller.md) (VC1) presents another (VC2), do the following:
 
 1. Open the app’s Main storyboard file.
 2. Select the view controller scene you want to present, and copy it.
@@ -67,15 +68,15 @@ If you choose to refactor your storyboard yourself, for example if one [`UIViewC
 13. Set the Referenced ID “VC2_identifier”.
 14. Connect this Storyboard Reference via segue from VC1.
 
-![The storyboard reference attributes inspector.](/images/com.apple.technotes/tn3123-storyboardref@2x.png) ![The storyboard segue.](/images/com.apple.technotes/tn3123-segue@2x.png)
+![The storyboard reference attributes inspector.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3123-storyboardref@2x.png) ![The storyboard segue.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3123-segue@2x.png)
 
-#### Load Storyboards Programmatically
+#### Load storyboards programmatically
 
-Segues connecting two view controller scenes within the same storyboard load the view controller automatically. When a single storyboard is refactored into separate storyboards, storyboard references load them automatically as well. You can, however, load view controller scenes manually using code. You use *storyboard instances* to do that. Storyboard instances come in two flavors: [`NSStoryboard`](https://developer.apple.com/documentation/appkit/nsstoryboard) for macOS, and [`UIStoryboard`](https://developer.apple.com/documentation/uikit/uistoryboard) for iOS. These APIs on both platforms are similar.
+Segues connecting two view controller scenes within the same storyboard load the view controller automatically. When a single storyboard is refactored into separate storyboards, storyboard references load them automatically as well. You can, however, load view controller scenes manually using code. You use *storyboard instances* to do that. Storyboard instances come in two flavors: [`NSStoryboard`](../AppKit/nsstoryboard.md) for macOS, and [`UIStoryboard`](../UIKit/uistoryboard.md) for iOS. These APIs on both platforms are similar.
 
-#### Load and Open an Nswindowcontroller Programmatically with Macos
+#### Load and open an NSWindowController programmatically with macOS
 
-In macOS, an [`NSViewController`](https://developer.apple.com/documentation/appkit/nsviewcontroller) is loaded separately, or through its [`NSWindowController`](https://developer.apple.com/documentation/appkit/nswindowcontroller).
+In macOS, an [`NSViewController`](../AppKit/nsviewcontroller.md) is loaded separately, or through its [`NSWindowController`](../AppKit/nswindowcontroller.md).
 
 ```swift
 let storyboard = NSStoryboard(name: "InspectorWindow", bundle: Bundle.main)
@@ -86,9 +87,9 @@ if let windController = storyboard.instantiateInitialController() as? NSWindowCo
 
 The window controller inside the “InspectorWindow” storyboard is to be set at the initial controller via “Is Initial Controller”.
 
-![The window as the initial controller.](/images/com.apple.technotes/tn3123-initialController@2x.png)
+![The window as the initial controller.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3123-initialController@2x.png)
 
-#### Load and Present a Uiviewcontroller Programmatically with Ios
+#### Load and present a UIViewController programmatically with iOS
 
 Load by identifier:
 
@@ -109,7 +110,7 @@ if let viewController = mainStoryboard.instantiateInitialViewController() {
 
 The view controller inside the “DetailViewController” storyboard is to be set at the initial controller via “Is Initial Controller”.
 
-#### Load and Present a Uiviewcontroller Programmatically with Swiftui
+#### Load and present a UIViewController programmatically with SwiftUI
 
 If you are developing a SwiftUI app, and you want to integrate an existing `UIViewController` subclass and its storyboard:
 

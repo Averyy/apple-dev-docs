@@ -1,7 +1,8 @@
 # CLSContextTopic
 
 **Framework**: ClassKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The areas of study to which contexts may relate.
 
@@ -18,51 +19,56 @@ The areas of study to which contexts may relate.
 struct CLSContextTopic
 ```
 
+```c
+typedef NSString * CLSContextTopic;
+```
+
 ## Mentions
 
-- [Building missing contexts](building-missing-contexts.md)
+- [Building missing contexts](./building-missing-contexts.md)
 
 #### Discussion
 
-After initializing a context, you can assign it a topic by setting its [`topic`](clscontext/topic.md) property. Doing so helps teachers browsing your app’s content to understand what your app offers.
+After initializing a context, you can assign it a topic by setting its [`topic`](./clscontext/topic.md) property. Doing so helps teachers browsing your app’s content to understand what your app offers.
 
 ## Topics
 
 ### Context Topics
-- [static let artsAndMusic: CLSContextTopic](clscontexttopic/artsandmusic.md)
+- [static let artsAndMusic: CLSContextTopic](./clscontexttopic/artsandmusic.md)
   Arts and music.
-- [static let computerScienceAndEngineering: CLSContextTopic](clscontexttopic/computerscienceandengineering.md)
+- [static let computerScienceAndEngineering: CLSContextTopic](./clscontexttopic/computerscienceandengineering.md)
   Computer science and engineering.
-- [static let healthAndFitness: CLSContextTopic](clscontexttopic/healthandfitness.md)
+- [static let healthAndFitness: CLSContextTopic](./clscontexttopic/healthandfitness.md)
   Health and fitness.
-- [static let literacyAndWriting: CLSContextTopic](clscontexttopic/literacyandwriting.md)
+- [static let literacyAndWriting: CLSContextTopic](./clscontexttopic/literacyandwriting.md)
   Literacy and writing.
-- [static let math: CLSContextTopic](clscontexttopic/math.md)
+- [static let math: CLSContextTopic](./clscontexttopic/math.md)
   Mathematics.
-- [static let science: CLSContextTopic](clscontexttopic/science.md)
+- [static let science: CLSContextTopic](./clscontexttopic/science.md)
   Science.
-- [static let socialScience: CLSContextTopic](clscontexttopic/socialscience.md)
+- [static let socialScience: CLSContextTopic](./clscontexttopic/socialscience.md)
   Social science.
-- [static let worldLanguage: CLSContextTopic](clscontexttopic/worldlanguage.md)
+- [static let worldLanguage: CLSContextTopic](./clscontexttopic/worldlanguage.md)
   Language acquisition.
 ### Initializing a Topic
-- [init(rawValue: String)](clscontexttopic/init(rawvalue:).md)
+- [init(rawValue: String)](./clscontexttopic/init%28rawvalue%29.md)
   Initializes a context topic.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var displayOrder: Int](clscontext/displayorder.md)
+### Managing context presentation
+- [var displayOrder: Int](./clscontext/displayorder.md)
   The position of a context relative to its siblings.
-- [var topic: CLSContextTopic?](clscontext/topic.md)
+- [var topic: CLSContextTopic?](./clscontext/topic.md)
   The area of study to which a context relates.
 
 

@@ -1,7 +1,8 @@
 # attachableValue
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of this attachment.
 
@@ -15,9 +16,11 @@ The value of this attachment.
 var attachableValue: AttachableValue.Wrapped { get }
 ```
 
+Available when `AttachableValue` conforms to `AttachableWrapper`.
+
 #### Discussion
 
-When the attachable value’s type conforms to [`AttachableWrapper`](attachablewrapper.md), the value of this property equals the wrapper’s underlying attachable value. To access the attachable value as an instance of `T` (where `T` conforms to [`AttachableWrapper`](attachablewrapper.md)), specify the type explicitly:
+When the attachable value’s type conforms to [`AttachableWrapper`](../attachablewrapper.md), the value of this property equals the wrapper’s underlying attachable value. To access the attachable value as an instance of `T` (where `T` conforms to [`AttachableWrapper`](../attachablewrapper.md)), specify the type explicitly:
 
 ```swift
 let attachableValue = attachment.attachableValue as T

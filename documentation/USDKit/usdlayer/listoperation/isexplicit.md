@@ -1,7 +1,8 @@
 # isExplicit
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the operation is in explicit mode — i.e., its items replace the entire list during composition.
 

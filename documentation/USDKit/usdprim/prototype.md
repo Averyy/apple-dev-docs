@@ -1,7 +1,8 @@
 # prototype
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prototype that this instance shares, or an invalid prim if this prim is not an instance.
 

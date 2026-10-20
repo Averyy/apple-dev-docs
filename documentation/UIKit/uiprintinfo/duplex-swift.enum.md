@@ -1,7 +1,8 @@
 # UIPrintInfo.Duplex
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the duplex mode of a selected printer.
 
@@ -17,47 +18,52 @@ Constants that describe the duplex mode of a selected printer.
 enum Duplex
 ```
 
+```c
+enum UIPrintInfoDuplex : NSInteger;
+```
+
 #### Overview
 
-You use these constants when setting the value of the [`duplex`](uiprintinfo/duplex-swift.property.md) property of a `UIPrintInfo` object.
+You use these constants when setting the value of the [`duplex`](./duplex-swift.property.md) property of a `UIPrintInfo` object.
 
 ## Topics
 
 ### Constants
-- [UIPrintInfo.Duplex.none](uiprintinfo/duplex-swift.enum/none.md)
+- [UIPrintInfo.Duplex.none](./duplex-swift.enum/none.md)
   No double-sided (duplex) printing; single-sided printing only.
-- [UIPrintInfo.Duplex.longEdge](uiprintinfo/duplex-swift.enum/longedge.md)
+- [UIPrintInfo.Duplex.longEdge](./duplex-swift.enum/longedge.md)
   Duplex printing that flips the back page along the long edge of the paper.
-- [UIPrintInfo.Duplex.shortEdge](uiprintinfo/duplex-swift.enum/shortedge.md)
+- [UIPrintInfo.Duplex.shortEdge](./duplex-swift.enum/shortedge.md)
   Duplex print that flips the back page along the short edge of the paper.
 ### Initializers
-- [init?(rawValue: Int)](uiprintinfo/duplex-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./duplex-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var duplex: UIPrintInfo.Duplex](uiprintinfo/duplex-swift.property.md)
+### Managing print-job attributes
+- [var duplex: UIPrintInfo.Duplex](./duplex-swift.property.md)
   The duplex mode to use for the print job.
-- [var jobName: String](uiprintinfo/jobname.md)
+- [var jobName: String](./jobname.md)
   The name of the print job.
-- [var orientation: UIPrintInfo.Orientation](uiprintinfo/orientation-swift.property.md)
+- [var orientation: UIPrintInfo.Orientation](./orientation-swift.property.md)
   The orientation of the printed content, portrait or landscape.
-- [UIPrintInfo.Orientation](uiprintinfo/orientation-swift.enum.md)
+- [UIPrintInfo.Orientation](./orientation-swift.enum.md)
   Constants that describe the orientation of printing on a page.
-- [var outputType: UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.property.md)
+- [var outputType: UIPrintInfo.OutputType](./outputtype-swift.property.md)
   The kind of printable content.
-- [UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.enum.md)
+- [UIPrintInfo.OutputType](./outputtype-swift.enum.md)
   Constants that describe the output type, which is an indication of the type of content the app is drawing or providing.
-- [var printerID: String?](uiprintinfo/printerid.md)
+- [var printerID: String?](./printerid.md)
   An identifier of the printer to use for the print job.
 
 

@@ -1,7 +1,8 @@
 # MeshInstancesComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that performs GPU instancing on the model of the same entity.
 
@@ -21,11 +22,11 @@ struct MeshInstancesComponent
 
 #### Overview
 
-RealityKit applies the transform hierarchy of this component’s entity to the individual transforms specified by [`LowLevelInstanceData`](lowlevelinstancedata.md). You can think of these instances as sub-entities of the entity you apply this component to, meaning [`LowLevelInstanceData`](lowlevelinstancedata.md) is in the local space of that same entity.
+RealityKit applies the transform hierarchy of this component’s entity to the individual transforms specified by [`LowLevelInstanceData`](./lowlevelinstancedata.md). You can think of these instances as sub-entities of the entity you apply this component to, meaning [`LowLevelInstanceData`](./lowlevelinstancedata.md) is in the local space of that same entity.
 
-Due to this transform hierarchy, use the entity’s [`scale`](hastransform/scale.md), [`position`](hastransform/position.md), and [`orientation`](hastransform/orientation.md) to transform the overall group of instances. Use the transforms within [`LowLevelInstanceData`](lowlevelinstancedata.md) to transform the individual instances.
+Due to this transform hierarchy, use the entity’s [`scale`](./hastransform/scale.md), [`position`](./hastransform/position.md), and [`orientation`](./hastransform/orientation.md) to transform the overall group of instances. Use the transforms within [`LowLevelInstanceData`](./lowlevelinstancedata.md) to transform the individual instances.
 
-To use this component, create a [`LowLevelInstanceData`](lowlevelinstancedata.md) instance and use the convenience initializer, [`init(mesh:modelID:instances:bounds:)`](meshinstancescomponent/init(mesh:modelid:instances:bounds:).md) to create the `MeshInstancesComponent` directly from a [`MeshResource`](meshresource.md).
+To use this component, create a [`LowLevelInstanceData`](./lowlevelinstancedata.md) instance and use the convenience initializer, [`init(mesh:modelID:instances:bounds:)`](./meshinstancescomponent/init%28mesh,modelid,instances,bounds%29.md) to create the `MeshInstancesComponent` directly from a [`MeshResource`](./meshresource.md).
 
 ```swift
 let entity = try await ModelEntity(named: "robot")
@@ -66,37 +67,38 @@ entity.components.set(instancesComponent)
 entity.position = [0, 0, -1]
 ```
 
-![A screenshot of ten robots placed around a circle.](/images/com.apple.RealityKit/robot-instancing.jpg)
+![A screenshot of ten robots placed around a circle.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/robot-instancing.jpg)
 
 ## Topics
 
 ### Structures
-- [MeshInstancesComponent.Part](meshinstancescomponent/part.md)
+- [MeshInstancesComponent.Part](./meshinstancescomponent/part.md)
   A group of instances to render.
 ### Initializers
-- [init()](meshinstancescomponent/init.md)
+- [init()](./meshinstancescomponent/init%28%29.md)
   Creates an empty mesh instances component.
-- [init(mesh: MeshResource, modelID: String?, instances: LowLevelInstanceData, bounds: BoundingBox?) throws](meshinstancescomponent/init(mesh:modelid:instances:bounds:).md)
+- [init(mesh: MeshResource, modelID: String?, instances: LowLevelInstanceData, bounds: BoundingBox?) throws](./meshinstancescomponent/init%28mesh,modelid,instances,bounds%29.md)
   Creates a mesh instances component with a mesh resource, optional model ID, instance data, and optional bounding box.
 ### Subscripts
-- [subscript(partIndex _: Int) -> MeshInstancesComponent.Part?](meshinstancescomponent/subscript(partindex:).md)
+- [subscript(partIndex _: Int) -> MeshInstancesComponent.Part?](./meshinstancescomponent/subscript%28partindex%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct ModelSortGroupComponent](modelsortgroupcomponent.md)
+### Render configuration
+- [struct ModelSortGroupComponent](./modelsortgroupcomponent.md)
   A component that configures the rendering order for an entity’s model.
-- [struct ModelSortGroup](modelsortgroup.md)
+- [struct ModelSortGroup](./modelsortgroup.md)
   A group that you assign to multiple entities to tell the renderer what order and how to render the entities in the group.
-- [struct OpacityComponent](opacitycomponent.md)
+- [struct OpacityComponent](./opacitycomponent.md)
   A component that controls the opacity of an entity and its descendants.
-- [struct AdaptiveResolutionComponent](adaptiveresolutioncomponent.md)
+- [struct AdaptiveResolutionComponent](./adaptiveresolutioncomponent.md)
   A component that provides the suggested pixels per meter necessary to render an object.
-- [struct ModelDebugOptionsComponent](modeldebugoptionscomponent.md)
+- [struct ModelDebugOptionsComponent](./modeldebugoptionscomponent.md)
   A component that changes how RealityKit renders its entity to help with debugging.
 
 

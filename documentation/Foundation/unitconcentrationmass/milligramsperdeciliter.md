@@ -1,7 +1,8 @@
 # milligramsPerDeciliter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The milligrams per deciliter unit of concentration.
 
@@ -21,11 +22,16 @@ The milligrams per deciliter unit of concentration.
 class var milligramsPerDeciliter: UnitConcentrationMass { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitConcentrationMass * milligramsPerDeciliter;
+```
+
 ## See Also
 
-- [class var gramsPerLiter: UnitConcentrationMass](unitconcentrationmass/gramsperliter.md)
+### Accessing Predefined Units
+- [class var gramsPerLiter: UnitConcentrationMass](./gramsperliter.md)
   The grams per liter unit of concentration.
-- [class func millimolesPerLiter(withGramsPerMole: Double) -> UnitConcentrationMass](unitconcentrationmass/millimolesperliter(withgramspermole:).md)
+- [class func millimolesPerLiter(withGramsPerMole: Double) -> UnitConcentrationMass](./millimolesperliter%28withgramspermole%29.md)
   Returns the millimoles per liter unit with the specified number of grams per mole.
 
 

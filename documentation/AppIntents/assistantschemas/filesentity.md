@@ -1,7 +1,8 @@
 # AssistantSchemas.FilesEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe files.
 
@@ -23,16 +24,16 @@ protocol FilesEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var file: some AssistantSchemas.Entity](assistantschemas/filesentity/file.md)
+- [var file: some AssistantSchemas.Entity](./filesentity/file.md)
   The app entity describes a file.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

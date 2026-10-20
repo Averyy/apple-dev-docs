@@ -1,7 +1,8 @@
 # HasSynchronization
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that enables an entity to be synchronized between processes and networked applications.
 
@@ -11,7 +12,7 @@ An interface that enables an entity to be synchronized between processes and net
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,53 +23,54 @@ An interface that enables an entity to be synchronized between processes and net
 
 #### Overview
 
-All entities automatically adopt this protocol because the [`Entity`](entity.md) base class does. This adoption gives all entities a [`SynchronizationComponent`](synchronizationcomponent.md) instance, and a collection of methods for manipulating the component, that you use to manage ownership of the entity.
+All entities automatically adopt this protocol because the [`Entity`](./entity.md) base class does. This adoption gives all entities a [`SynchronizationComponent`](./synchronizationcomponent.md) instance, and a collection of methods for manipulating the component, that you use to manage ownership of the entity.
 
 ## Topics
 
 ### Accessing the component
-- [var synchronization: SynchronizationComponent?](hassynchronization/synchronization.md)
+- [var synchronization: SynchronizationComponent?](./hassynchronization/synchronization.md)
   The entity’s synchronization component.
 ### Managing ownership
-- [var isOwner: Bool](hassynchronization/isowner.md)
+- [var isOwner: Bool](./hassynchronization/isowner.md)
   A Boolean that indicates whether the calling process owns the entity.
-- [func requestOwnership(timeout: TimeInterval, (SynchronizationComponent.OwnershipTransferCompletionResult) -> Void)](hassynchronization/requestownership(timeout:_:).md)
+- [func requestOwnership(timeout: TimeInterval, (SynchronizationComponent.OwnershipTransferCompletionResult) -> Void)](./hassynchronization/requestownership%28timeout,_%29.md)
   Requests ownership of the entity.
 ### Making local changes
-- [func withUnsynchronized(() -> Void)](hassynchronization/withunsynchronized(_:).md)
+- [func withUnsynchronized(() -> Void)](./hassynchronization/withunsynchronized%28_%29.md)
   Calls the given closure in a way such that component changes that the closure makes don’t trigger synchronization.
 
 ## Relationships
 
 ### Inherits From
-- [Entity](entity.md)
+- [Entity](./entity.md)
 ### Conforming Types
-- [AnchorEntity](anchorentity.md)
-- [BodyTrackedEntity](bodytrackedentity.md)
-- [DirectionalLight](directionallight.md)
-- [Entity](entity.md)
-- [ModelEntity](modelentity.md)
-- [PerspectiveCamera](perspectivecamera.md)
-- [PointLight](pointlight.md)
-- [SpotLight](spotlight.md)
-- [TriggerVolume](triggervolume.md)
-- [ViewAttachmentEntity](viewattachmententity.md)
+- [AnchorEntity](./anchorentity.md)
+- [BodyTrackedEntity](./bodytrackedentity.md)
+- [DirectionalLight](./directionallight.md)
+- [Entity](./entity.md)
+- [ModelEntity](./modelentity.md)
+- [PerspectiveCamera](./perspectivecamera.md)
+- [PointLight](./pointlight.md)
+- [SpotLight](./spotlight.md)
+- [TriggerVolume](./triggervolume.md)
+- [ViewAttachmentEntity](./viewattachmententity.md)
 
 ## See Also
 
-- [protocol SynchronizationService](synchronizationservice.md)
+### Entity ownership synchronization
+- [protocol SynchronizationService](./synchronizationservice.md)
   An interface that enables entity synchronization among a group of local peers.
-- [SynchronizationService.Identifier](synchronizationservice/identifier.md)
+- [SynchronizationService.Identifier](./synchronizationservice/identifier.md)
   A type that represents a synchronization service identifier.
-- [protocol SynchronizationPeerID](synchronizationpeerid.md)
+- [protocol SynchronizationPeerID](./synchronizationpeerid.md)
   A type that represents a peer among a group of networked devices.
-- [struct SynchronizationComponent](synchronizationcomponent.md)
+- [struct SynchronizationComponent](./synchronizationcomponent.md)
   A component that synchronizes an entity between processes and networked applications.
-- [SynchronizationComponent.OwnershipTransferMode](synchronizationcomponent/ownershiptransfermode-swift.enum.md)
+- [SynchronizationComponent.OwnershipTransferMode](./synchronizationcomponent/ownershiptransfermode-swift.enum.md)
   Modes of ownership transfer.
-- [SynchronizationComponent.OwnershipTransferCompletionResult](synchronizationcomponent/ownershiptransfercompletionresult.md)
+- [SynchronizationComponent.OwnershipTransferCompletionResult](./synchronizationcomponent/ownershiptransfercompletionresult.md)
   The result of an ownership transfer request.
-- [enum SynchronizationEvents](synchronizationevents.md)
+- [enum SynchronizationEvents](./synchronizationevents.md)
   Events associated with network synchronization of scene information.
 
 

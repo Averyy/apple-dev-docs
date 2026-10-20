@@ -1,7 +1,8 @@
 # IORPCMessageFromMach(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func IORPCMessageFromMach(_ msg: UnsafeMutablePointer<IORPCMessageMach>!, _ reply: Bool) -> UnsafeMutablePointer<IORPCMessage>!
+```
+
+```c
+IORPCMessage * IORPCMessageFromMach(IORPCMessageMach *msg, bool reply);
 ```
 
 

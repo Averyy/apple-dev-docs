@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDMSModeFree](1644542-anonymous/kdmsmodefree.md)
-- [kDMSModeNotReady](1644542-anonymous/kdmsmodenotready.md)
-- [kDMSModeReady](1644542-anonymous/kdmsmodeready.md)
+- [kDMSModeFree](./api-1644542-anonymous/kdmsmodefree.md)
+- [kDMSModeNotReady](./api-1644542-anonymous/kdmsmodenotready.md)
+- [kDMSModeReady](./api-1644542-anonymous/kdmsmodeready.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.SecurityRestrictionMode.none
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No additional security restrictions beyond WebKit defaults.
 

@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds two angles and produces their sum.
 

@@ -1,18 +1,19 @@
 # CFCharacterSetCreateWithCharactersInString(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new character set with the values in the given string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a new character set with the values in the given string.
 func CFCharacterSetCreateWithCharactersInString(_ alloc: CFAllocator!, _ theString: CFString!) -> CFCharacterSet!
 ```
 
+```c
+extern CFCharacterSetRefCFCharacterSetCreateWithCharactersInString(CFAllocatorRef alloc, CFStringRef theString);
+```
+
 #### Return Value
 
-A new character set containing the characters from `theString`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new character set containing the characters from `theString`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,13 +36,14 @@ A new character set containing the characters from `theString`. Ownership follow
 
 ## See Also
 
-- [func CFCharacterSetCreateCopy(CFAllocator!, CFCharacterSet!) -> CFCharacterSet!](cfcharactersetcreatecopy(_:_:).md)
+### Creating Character Sets
+- [func CFCharacterSetCreateCopy(CFAllocator!, CFCharacterSet!) -> CFCharacterSet!](./cfcharactersetcreatecopy%28_,_%29.md)
   Creates a new character set with the values from a given character set.
-- [func CFCharacterSetCreateInvertedSet(CFAllocator!, CFCharacterSet!) -> CFCharacterSet!](cfcharactersetcreateinvertedset(_:_:).md)
+- [func CFCharacterSetCreateInvertedSet(CFAllocator!, CFCharacterSet!) -> CFCharacterSet!](./cfcharactersetcreateinvertedset%28_,_%29.md)
   Creates a new immutable character set that is the invert of the specified character set.
-- [func CFCharacterSetCreateWithCharactersInRange(CFAllocator!, CFRange) -> CFCharacterSet!](cfcharactersetcreatewithcharactersinrange(_:_:).md)
+- [func CFCharacterSetCreateWithCharactersInRange(CFAllocator!, CFRange) -> CFCharacterSet!](./cfcharactersetcreatewithcharactersinrange%28_,_%29.md)
   Creates a new character set with the values from the given range of Unicode characters.
-- [func CFCharacterSetCreateWithBitmapRepresentation(CFAllocator!, CFData!) -> CFCharacterSet!](cfcharactersetcreatewithbitmaprepresentation(_:_:).md)
+- [func CFCharacterSetCreateWithBitmapRepresentation(CFAllocator!, CFData!) -> CFCharacterSet!](./cfcharactersetcreatewithbitmaprepresentation%28_,_%29.md)
   Creates a new immutable character set with the bitmap representation specified by given data.
 
 

@@ -1,7 +1,8 @@
 # removeColumn(named:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the column with the specified name.
 

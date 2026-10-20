@@ -1,7 +1,8 @@
 # requestSignup(for:fields:message:emailConsent:smsConsent:termsAndConditions:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a form so that the customer can share the contact information for the purpose of sign-up activity.
 
@@ -18,11 +19,11 @@ final func requestSignup(for purpose: CustomerEngagementSession.Purpose = .membe
 
 #### Return Value
 
-[`CustomerEngagement.SignUp`](customerengagement/signup.md) contact information shared by the customer.
+[`CustomerEngagement.SignUp`](../customerengagement/signup.md) contact information shared by the customer.
 
 #### Discussion
 
-> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the request fails.
+> **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 
 ## Parameters
 
@@ -35,17 +36,18 @@ final func requestSignup(for purpose: CustomerEngagementSession.Purpose = .membe
 
 ## See Also
 
-- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](customerengagementsession/requestcustomerinfo(for:fields:message:).md)
+### Requesting and getting customer information
+- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](./requestcustomerinfo%28for,fields,message%29.md)
   Opens a form so that the customer can share the contact information.
-- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](customerengagementsession/requestaddress(for:fields:message:).md)
+- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](./requestaddress%28for,fields,message%29.md)
   Opens a form so that the customer can share the postal address and additionally collect email address and phone number.
-- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](customerengagementsession/requestpayment(for:using:delegate:).md)
+- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](./requestpayment%28for,using,delegate%29.md)
   Opens a form so a customer can select a payment option.
-- [CustomerEngagementSession.Purpose](customerengagementsession/purpose.md)
+- [CustomerEngagementSession.Purpose](./purpose.md)
   The purpose of a customer information request.
-- [CustomerEngagementSession.Field](customerengagementsession/field.md)
+- [CustomerEngagementSession.Field](./field.md)
   The contact information field in a customer request form.
-- [CustomerEngagementSession.ConsentOption](customerengagementsession/consentoption.md)
+- [CustomerEngagementSession.ConsentOption](./consentoption.md)
   An option on the sign-up form to receive promotional emails and text messages.
 
 

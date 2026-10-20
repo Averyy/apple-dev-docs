@@ -1,7 +1,8 @@
 # kMDItemCFBundleIdentifier
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If this item is a bundle, then this is the CFBundleIdentifier. A CFString.
 
@@ -12,6 +13,10 @@ If this item is a bundle, then this is the CFBundleIdentifier. A CFString.
 
 ```swift
 let kMDItemCFBundleIdentifier: CFString!
+```
+
+```c
+const CFStringRef kMDItemCFBundleIdentifier;
 ```
 
 

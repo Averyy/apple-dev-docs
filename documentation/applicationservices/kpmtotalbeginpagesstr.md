@@ -1,7 +1,8 @@
 # kPMTotalBeginPagesStr
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMTotalBeginPagesStr: String { get }
+```
+
+```c
+#define kPMTotalBeginPagesStr
 ```
 
 

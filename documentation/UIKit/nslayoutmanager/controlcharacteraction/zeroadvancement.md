@@ -1,7 +1,8 @@
 # zeroAdvancement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that removes the glyph from layout.
 
@@ -9,7 +10,7 @@ An action that removes the glyph from layout.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ An action that removes the glyph from layout.
 static var zeroAdvancement: NSLayoutManager.ControlCharacterAction { get }
 ```
 
+```c
+NSControlCharacterActionZeroAdvancement
+```
+
 #### Discussion
 
-Glyphs with this action are filtered out from layout ([`notShownAttribute(forGlyphAt:)`](nslayoutmanager/notshownattribute(forglyphat:).md) `== YES` for the glyph).
+Glyphs with this action are filtered out from layout ([`notShownAttribute(forGlyphAt:)`](../notshownattribute%28forglyphat%29.md) `== YES` for the glyph).
 
 ## See Also
 
-- [static var containerBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/containerbreak.md)
+### Actions
+- [static var containerBreak: NSLayoutManager.ControlCharacterAction](./containerbreak.md)
   An action that triggers a break in layout for the current container.
-- [static var horizontalTab: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/horizontaltab.md)
+- [static var horizontalTab: NSLayoutManager.ControlCharacterAction](./horizontaltab.md)
   An action that inserts a horizontal tab.
-- [static var lineBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/linebreak.md)
+- [static var lineBreak: NSLayoutManager.ControlCharacterAction](./linebreak.md)
   An action that causes a line break.
-- [static var paragraphBreak: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/paragraphbreak.md)
+- [static var paragraphBreak: NSLayoutManager.ControlCharacterAction](./paragraphbreak.md)
   An action that causes a paragraph break.
-- [static var whitespace: NSLayoutManager.ControlCharacterAction](nslayoutmanager/controlcharacteraction/whitespace.md)
+- [static var whitespace: NSLayoutManager.ControlCharacterAction](./whitespace.md)
   An action that adds whitespace.
 
 

@@ -1,7 +1,8 @@
 # run(resultType:body:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Execute the given body closure on the main actor.
 

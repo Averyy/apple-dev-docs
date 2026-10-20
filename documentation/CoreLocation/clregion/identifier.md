@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the region object.
 
@@ -17,6 +18,10 @@ The identifier for the region object.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # pitch
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The map allows people to set the map’s pitch to view the map from different angles.
 
@@ -11,7 +12,7 @@ The map allows people to set the map’s pitch to view the map from different an
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ static let pitch: MapInteractionModes
 
 ## See Also
 
-- [static let all: MapInteractionModes](mapinteractionmodes/all.md)
+### Declared interaction modes
+- [static let all: MapInteractionModes](./all.md)
   The map allows all interaction modes.
-- [static let pan: MapInteractionModes](mapinteractionmodes/pan.md)
+- [static let pan: MapInteractionModes](./pan.md)
   The map allows a person to pan around to different areas of the map.
-- [static let zoom: MapInteractionModes](mapinteractionmodes/zoom.md)
+- [static let zoom: MapInteractionModes](./zoom.md)
   The map allows people to zoom in or out on map locations.
-- [static let rotate: MapInteractionModes](mapinteractionmodes/rotate.md)
+- [static let rotate: MapInteractionModes](./rotate.md)
   The map allows people to rotate the map.
 
 

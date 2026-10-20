@@ -1,7 +1,8 @@
 # errSecInvalidSubjectName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid certificate subject name was detected.
 
@@ -18,6 +19,10 @@ An invalid certificate subject name was detected.
 
 ```swift
 var errSecInvalidSubjectName: OSStatus { get }
+```
+
+```c
+errSecInvalidSubjectName
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init(_ models: [MeshResource.Model])
 
 ## See Also
 
-- [init()](meshmodelcollection/init.md)
+### Creating a collection
+- [init()](./init%28%29.md)
 
 
 ---

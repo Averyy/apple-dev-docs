@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.st
 
 # mlx.core.std
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.std.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.std
-
- Table of contents 
-
-## Contents
-
-# mlx.core.std
-
-**std(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**std(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, *ddof: int = 0*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Compute the standard deviation(s) over the given axes.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Optional axis or
 axes to reduce over. If unspecified this defaults
 to reducing over the entire array.
@@ -51,6 +24,4 @@ Returns:
 The output array of standard deviations.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

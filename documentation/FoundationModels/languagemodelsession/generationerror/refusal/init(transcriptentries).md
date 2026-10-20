@@ -1,7 +1,8 @@
 # init(transcriptEntries:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a refusal for the transcript entries the model declined to respond to.
 

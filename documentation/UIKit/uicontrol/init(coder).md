@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a control from data in an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a control from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init(frame: CGRect, primaryAction: UIAction?)](uicontrol/init(frame:primaryaction:).md)
+### Creating a control
+- [convenience init(frame: CGRect, primaryAction: UIAction?)](./init%28frame,primaryaction%29.md)
   Creates a control with the specified frame and primary action.
-- [init(frame: CGRect)](uicontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a control with the specified frame.
 
 

@@ -1,7 +1,8 @@
 # Refract (RealityKit)
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Refracts a vector using a given normal and index of refraction (eta).
 
@@ -15,7 +16,17 @@ Refracts a vector using a given normal and index of refraction (eta).
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+| `Normal` | Vector3f |
+| `Eta` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter descriptions
 
 - **`In`**: The vector to refract.
 - **`Normal`**: The normal of the surface from which the `In` vector refracts.
@@ -29,21 +40,22 @@ Refracts a vector using a given normal and index of refraction (eta).
 
 ## See Also
 
-- [Position](geometric/position.md)
+### Nodes
+- [Position](./position.md)
   The coordinates of the currently-processed data in a given coordinate space.
-- [Normal](geometric/normal.md)
+- [Normal](./normal.md)
   The geometric normal of the currently-processed data in a given coordinate space.
-- [Tangent](geometric/tangent.md)
+- [Tangent](./tangent.md)
   The geometric tangent of the currently-processed data in a given coordinate space.
-- [Bitangent](geometric/bitangent.md)
+- [Bitangent](./bitangent.md)
   The geometric bitangent vector of the currently-processed data in a given coordinate space.
-- [Texture Coordinates](geometric/texture-coordinates.md)
+- [Texture Coordinates](./texture-coordinates.md)
   The 2D or 3D texture coordinates of the currently-processed data.
-- [Geometry Color](geometric/geometry-color.md)
+- [Geometry Color](./geometry-color.md)
   The color associated with the geometry at the currently-processed geometric position, typically defined by vertex color.
-- [Geometric Property](geometric/geometric-property.md)
+- [Geometric Property](./geometric-property.md)
   The value of the specified geometric property (defined using ) of the currently-bound geometry.
-- [Reflect (RealityKit)](geometric/reflect-(realitykit).md)
+- [Reflect (RealityKit)](./reflect-%28realitykit%29.md)
   Reflects a vector about another vector.
 
 

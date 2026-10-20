@@ -1,7 +1,8 @@
 # MLActivityClassifier.DataSource.dataFrame(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An activity classifier data source that uses a data frame containing sensor features and labels.
 

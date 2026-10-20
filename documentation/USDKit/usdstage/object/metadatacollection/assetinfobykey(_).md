@@ -1,7 +1,8 @@
 # assetInfoByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the asset information value at the given key path.
 

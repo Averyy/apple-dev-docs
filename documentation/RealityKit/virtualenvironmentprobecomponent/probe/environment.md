@@ -1,7 +1,8 @@
 # environment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource that stores a representation of diffuse and specular environment lighting.
 

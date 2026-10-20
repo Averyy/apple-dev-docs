@@ -1,7 +1,8 @@
 # HMError.Code.keychainSyncNotEnabled
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating Keychain syncing is not enabled for the user.
 
@@ -19,9 +20,14 @@ An error indicating Keychain syncing is not enabled for the user.
 case keychainSyncNotEnabled
 ```
 
+```c
+HMErrorCodeKeychainSyncNotEnabled
+```
+
 ## See Also
 
-- [HMError.Code.cloudDataSyncInProgress](hmerror/code/clouddatasyncinprogress.md)
+### Synchronization errors
+- [HMError.Code.cloudDataSyncInProgress](./clouddatasyncinprogress.md)
   An error indicating a data synchronization operation is in progress.
 
 

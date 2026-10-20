@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements used to request updates.
 

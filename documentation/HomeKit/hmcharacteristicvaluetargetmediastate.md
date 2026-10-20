@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetMediaState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for the state of the target media.
 
@@ -19,27 +20,31 @@ Values for the state of the target media.
 enum HMCharacteristicValueTargetMediaState
 ```
 
+```c
+enum HMCharacteristicValueTargetMediaState : NSInteger;
+```
+
 ## Topics
 
 ### Media states
-- [HMCharacteristicValueTargetMediaState.pause](hmcharacteristicvaluetargetmediastate/pause.md)
+- [HMCharacteristicValueTargetMediaState.pause](./hmcharacteristicvaluetargetmediastate/pause.md)
   The target media state is set to pause.
-- [HMCharacteristicValueTargetMediaState.play](hmcharacteristicvaluetargetmediastate/play.md)
+- [HMCharacteristicValueTargetMediaState.play](./hmcharacteristicvaluetargetmediastate/play.md)
   The target media state is set to play.
-- [HMCharacteristicValueTargetMediaState.stop](hmcharacteristicvaluetargetmediastate/stop.md)
+- [HMCharacteristicValueTargetMediaState.stop](./hmcharacteristicvaluetargetmediastate/stop.md)
   The target media state is set to stop.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetargetmediastate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetargetmediastate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # tcps_mp_num_probes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t tcps_mp_num_probes;
 ```
 

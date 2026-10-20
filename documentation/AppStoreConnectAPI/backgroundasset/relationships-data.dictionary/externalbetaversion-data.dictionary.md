@@ -1,21 +1,22 @@
 # BackgroundAsset.Relationships.ExternalBetaVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object BackgroundAsset.Relationships.ExternalBetaVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAsset.Relationships.ExternalBetaVersion.Data](backgroundasset/relationships-data.dictionary/externalbetaversion-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAsset.Relationships.ExternalBetaVersion.Data](./externalbetaversion-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

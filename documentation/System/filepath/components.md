@@ -1,7 +1,8 @@
 # components
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 View the non-root components that make up this path.
 

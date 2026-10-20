@@ -1,14 +1,15 @@
 # MODE_ASYNCHRONOUS
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute int MODE_ASYNCHRONOUS;
 ```
 

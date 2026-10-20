@@ -1,7 +1,8 @@
 # IOInterruptEventSource
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Event source for interrupt delivery to work-loop based drivers.
 
@@ -10,7 +11,7 @@ Event source for interrupt delivery to work-loop based drivers.
 
 ## Declaration
 
-```swift
+```cpp
 class IOInterruptEventSource : IOEventSource
 ```
 
@@ -31,86 +32,87 @@ Warning: All IOInterruptEventSources are created in the disabled state. If you w
 ## Topics
 
 ### Miscellaneous
-- [checkForWork](iointerrupteventsource/1812548-checkforwork.md)
+- [checkForWork](./iointerrupteventsource/api-1812548-checkforwork.md)
   Pure Virtual member function used by IOWorkLoop for issueing a client calls.
-- [disable](iointerrupteventsource/1812553-disable.md)
+- [disable](./iointerrupteventsource/api-1812553-disable.md)
   Disable event source.
-- [disableInterruptOccurred](iointerrupteventsource/1812562-disableinterruptoccurred.md)
+- [disableInterruptOccurred](./iointerrupteventsource/api-1812562-disableinterruptoccurred.md)
   Functions that get called by the interrupt controller.See $link IOService::registerInterrupt
-- [enable](iointerrupteventsource/1812570-enable.md)
+- [enable](./iointerrupteventsource/api-1812570-enable.md)
   Enable event source.
-- [free](iointerrupteventsource/1812582-free.md)
+- [free](./iointerrupteventsource/api-1812582-free.md)
   Sub-class implementation of free method, disconnects from the interrupt source.
-- [getAutoDisable](iointerrupteventsource/1812592-getautodisable.md)
+- [getAutoDisable](./iointerrupteventsource/api-1812592-getautodisable.md)
   Get'ter for $link autoDisable variable.
-- [getIntIndex](iointerrupteventsource/1812606-getintindex.md)
+- [getIntIndex](./iointerrupteventsource/api-1812606-getintindex.md)
   Get'ter for $link intIndex interrupt index variable.
-- [getProvider](iointerrupteventsource/1812623-getprovider.md)
+- [getProvider](./iointerrupteventsource/api-1812623-getprovider.md)
   Get'ter for $link provider variable.
-- [init](iointerrupteventsource/1812641-init.md)
+- [init](./iointerrupteventsource/api-1812641-init.md)
   Primary initialiser for the IOInterruptEventSource class.
-- [interruptEventSource](iointerrupteventsource/1812661-interrupteventsource.md)
+- [interruptEventSource](./iointerrupteventsource/api-1812661-interrupteventsource.md)
   Factory function for IOInterruptEventSources creation and initialisation.
-- [interruptOccurred](iointerrupteventsource/1812679-interruptoccurred.md)
+- [interruptOccurred](./iointerrupteventsource/api-1812679-interruptoccurred.md)
   Functions that get called by the interrupt controller. See $link IOService::registerInterrupt
-- [normalInterruptOccurred](iointerrupteventsource/1812702-normalinterruptoccurred.md)
+- [normalInterruptOccurred](./iointerrupteventsource/api-1812702-normalinterruptoccurred.md)
   Functions that get called by the interrupt controller.See $link IOService::registerInterrupt
-- [setWorkLoop](iointerrupteventsource/1812729-setworkloop.md)
+- [setWorkLoop](./iointerrupteventsource/api-1812729-setworkloop.md)
   Sub-class implementation of setWorkLoop method.
-- [warmCPU](iointerrupteventsource/1812762-warmcpu.md)
+- [warmCPU](./iointerrupteventsource/api-1812762-warmcpu.md)
   Tries to reduce latency for an interrupt which will be received near a specified time.
 ### Callbacks
-- [Action](ioworkloop/action.md)
+- [Action](./ioworkloop/action.md)
 ### Constants
-- [Miscellaneous Defines](iointerrupteventsource/miscellaneous_defines.md)
+- [Miscellaneous Defines](./iointerrupteventsource/miscellaneous_defines.md)
 ### DataTypes
-- [ExpansionData](ioservice/expansiondata.md)
+- [ExpansionData](./ioservice/expansiondata.md)
 ### Instance Variables
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+- [reserved](./iointerrupteventsource/reserved.md)
+- [provider](./iointerrupteventsource/provider.md)
+- [producerCount](./iointerrupteventsource/producercount.md)
+- [intIndex](./iointerrupteventsource/intindex.md)
+- [explicitDisable](./iointerrupteventsource/explicitdisable.md)
+- [consumerCount](./iointerrupteventsource/consumercount.md)
+- [autoDisable](./iointerrupteventsource/autodisable.md)
 ### Instance Methods
-- [- checkForWork](iointerrupteventsource/1577653-checkforwork.md)
-- [- disable](iointerrupteventsource/1577654-disable.md)
-- [- disableInterruptOccurred](iointerrupteventsource/1577646-disableinterruptoccurred.md)
-- [- enable](iointerrupteventsource/1577657-enable.md)
-- [- enablePrimaryInterruptTimestamp](iointerrupteventsource/3237243-enableprimaryinterrupttimestamp.md)
-- [- free](iointerrupteventsource/1577645-free.md)
-- [- getAutoDisable](iointerrupteventsource/1577655-getautodisable.md)
-- [- getIntIndex](iointerrupteventsource/1577661-getintindex.md)
-- [- getMetaClass](iointerrupteventsource/1577651-getmetaclass.md)
-- [- getPrimaryInterruptTimestamp](iointerrupteventsource/3553358-getprimaryinterrupttimestamp.md)
-- [- getProvider](iointerrupteventsource/1577650-getprovider.md)
-- [- init](iointerrupteventsource/1577649-init.md)
-- [- interruptOccurred](iointerrupteventsource/1577659-interruptoccurred.md)
-- [- normalInterruptOccurred](iointerrupteventsource/1577662-normalinterruptoccurred.md)
-- [- registerInterruptHandler](iointerrupteventsource/1577660-registerinterrupthandler.md)
-- [- setWorkLoop](iointerrupteventsource/1577647-setworkloop.md)
-- [- unregisterInterruptHandler](iointerrupteventsource/1577644-unregisterinterrupthandler.md)
-- [- warmCPU](iointerrupteventsource/1577656-warmcpu.md)
+- [- checkForWork](./iointerrupteventsource/api-1577653-checkforwork.md)
+- [- disable](./iointerrupteventsource/api-1577654-disable.md)
+- [- disableInterruptOccurred](./iointerrupteventsource/api-1577646-disableinterruptoccurred.md)
+- [- enable](./iointerrupteventsource/api-1577657-enable.md)
+- [- enablePrimaryInterruptTimestamp](./iointerrupteventsource/api-3237243-enableprimaryinterrupttimestamp.md)
+- [- free](./iointerrupteventsource/api-1577645-free.md)
+- [- getAutoDisable](./iointerrupteventsource/api-1577655-getautodisable.md)
+- [- getIntIndex](./iointerrupteventsource/api-1577661-getintindex.md)
+- [- getMetaClass](./iointerrupteventsource/api-1577651-getmetaclass.md)
+- [- getPrimaryInterruptTimestamp](./iointerrupteventsource/api-3553358-getprimaryinterrupttimestamp.md)
+- [- getProvider](./iointerrupteventsource/api-1577650-getprovider.md)
+- [- init](./iointerrupteventsource/api-1577649-init.md)
+- [- interruptOccurred](./iointerrupteventsource/api-1577659-interruptoccurred.md)
+- [- normalInterruptOccurred](./iointerrupteventsource/api-1577662-normalinterruptoccurred.md)
+- [- registerInterruptHandler](./iointerrupteventsource/api-1577660-registerinterrupthandler.md)
+- [- setWorkLoop](./iointerrupteventsource/api-1577647-setworkloop.md)
+- [- unregisterInterruptHandler](./iointerrupteventsource/api-1577644-unregisterinterrupthandler.md)
+- [- warmCPU](./iointerrupteventsource/api-1577656-warmcpu.md)
 ### Type Methods
-- [+ interruptEventSource](iointerrupteventsource/1577652-interrupteventsource.md)
-- [+ interruptEventSource](iointerrupteventsource/3516456-interrupteventsource.md)
+- [+ interruptEventSource](./iointerrupteventsource/api-1577652-interrupteventsource.md)
+- [+ interruptEventSource](./iointerrupteventsource/api-3516456-interrupteventsource.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOEventSource](ioeventsource.md)
+- [IOEventSource](./ioeventsource.md)
 
 ## See Also
 
-- [IOInterruptDispatchSource](iointerruptdispatchsource.md)
-- [IOInterruptDispatchSourceInterface](iointerruptdispatchsourceinterface.md)
-- [IOFilterInterruptEventSource](iofilterinterrupteventsource.md)
+### Interrupts
+- [IOInterruptDispatchSource](./iointerruptdispatchsource.md)
+- [IOInterruptDispatchSourceInterface](./iointerruptdispatchsourceinterface.md)
+- [IOFilterInterruptEventSource](./iofilterinterrupteventsource.md)
   Filtering varient of the $link IOInterruptEventSource.
-- [IOInterruptController](iointerruptcontroller.md)
-- [PassthruInterruptController](passthruinterruptcontroller.md)
-- [IOInterruptSource](iointerruptsource.md)
-- [IOInterruptVector](iointerruptvector.md)
+- [IOInterruptController](./iointerruptcontroller.md)
+- [PassthruInterruptController](./passthruinterruptcontroller.md)
+- [IOInterruptSource](./iointerruptsource.md)
+- [IOInterruptVector](./iointerruptvector.md)
 
 
 ---

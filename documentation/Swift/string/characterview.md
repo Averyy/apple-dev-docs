@@ -1,7 +1,8 @@
 # String.CharacterView
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A view of a string’s contents as a collection of characters.
 

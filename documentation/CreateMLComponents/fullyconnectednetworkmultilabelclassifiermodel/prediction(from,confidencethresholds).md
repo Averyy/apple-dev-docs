@@ -1,7 +1,8 @@
 # prediction(from:confidenceThresholds:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction and keeps label-confidence pairs that are greater than or equal to the provided confidence thresholds.
 
@@ -17,6 +18,12 @@ Performs a prediction and keeps label-confidence pairs that are greater than or 
 
 ```swift
 func prediction(from input: FullyConnectedNetworkMultiLabelClassifierModel<Scalar, Label>.Input, confidenceThresholds: [Label : Scalar]) throws -> ClassificationDistribution<Label>
+```
+
+**Other overloads**:
+
+```swift
+func prediction<S>(from input: S, confidenceThresholds: [Label : Scalar]) throws -> [ClassificationDistribution<Label>] where S : Sequence, S.Element == MLShapedArray<Scalar>
 ```
 
 #### Return Value

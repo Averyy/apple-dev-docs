@@ -1,7 +1,8 @@
 # selectedSpeed
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected playback speed.
 
@@ -14,17 +15,22 @@ The currently selected playback speed.
 var selectedSpeed: AVPlaybackSpeed? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVPlaybackSpeed * selectedSpeed;
+```
+
 #### Discussion
 
-This value reflects the associated player’s [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) property value. If you set the [`defaultRate`](https://developer.apple.com/documentation/avfoundation/avplayer/defaultrate) to a value that doesn’t match a speed contained in the [`speeds`](avplayerview/speeds.md) property, the system sets this value to `nil`.
+This value reflects the associated player’s [`defaultRate`](../../AVFoundation/avplayer/defaultrate.md) property value. If you set the [`defaultRate`](../../AVFoundation/avplayer/defaultrate.md) to a value that doesn’t match a speed contained in the [`speeds`](./speeds.md) property, the system sets this value to `nil`.
 
 ## See Also
 
-- [var speeds: [AVPlaybackSpeed]](avplayerview/speeds.md)
+### Configuring the playback speed
+- [var speeds: [AVPlaybackSpeed]](./speeds.md)
   A list of user-selectable playback speeds to show in the playback speed control.
-- [func selectSpeed(AVPlaybackSpeed)](avplayerview/selectspeed(_:).md)
+- [func selectSpeed(AVPlaybackSpeed)](./selectspeed%28_%29.md)
   Selects a specified playback speed.
-- [class AVPlaybackSpeed](avplaybackspeed.md)
+- [class AVPlaybackSpeed](../avplaybackspeed.md)
   An object that represents a user-selectable playback speed in a playback user interface.
 
 

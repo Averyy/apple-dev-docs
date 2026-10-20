@@ -1,7 +1,8 @@
 # MLImageClassifier.ModelParameters.ValidationData
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The source of a validation dataset for an image classifier.
 
@@ -21,26 +22,27 @@ enum ValidationData
 ## Topics
 
 ### Designating validation data
-- [MLImageClassifier.ModelParameters.ValidationData.split(strategy:)](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+- [MLImageClassifier.ModelParameters.ValidationData.split(strategy:)](./validationdata-swift.enum/split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the image classifier’s training dataset using the split strategy.
-- [MLImageClassifier.ModelParameters.ValidationData.dataSource(_:)](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/datasource(_:).md)
+- [MLImageClassifier.ModelParameters.ValidationData.dataSource(_:)](./validationdata-swift.enum/datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLImageClassifier.ModelParameters.ValidationData.dictionary(_:)](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/dictionary(_:).md)
+- [MLImageClassifier.ModelParameters.ValidationData.dictionary(_:)](./validationdata-swift.enum/dictionary%28_%29.md)
   A validation dataset represented by a dictionary.
-- [MLImageClassifier.ModelParameters.ValidationData.none](mlimageclassifier/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLImageClassifier.ModelParameters.ValidationData.none](./validationdata-swift.enum/none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLImageClassifier.FeatureExtractorType](mlimageclassifier/featureextractortype.md)
+### Supporting types
+- [MLImageClassifier.FeatureExtractorType](../featureextractortype.md)
   The underlying base model that extracts image features for image classifier training session.
-- [MLImageClassifier.ImageAugmentationOptions](mlimageclassifier/imageaugmentationoptions.md)
+- [MLImageClassifier.ImageAugmentationOptions](../imageaugmentationoptions.md)
   The variations that the training process can use to generate more training data from the training data you provide.
 
 

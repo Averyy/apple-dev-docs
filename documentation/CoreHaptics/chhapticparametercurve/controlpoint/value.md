@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameter value of the point.
 
@@ -19,6 +20,10 @@ The parameter value of the point.
 var value: Float { get set }
 ```
 
+```objc
+@property (readwrite) float value;
+```
+
 #### Discussion
 
 Think of the value as the control point’s y-coordinate.
@@ -27,7 +32,8 @@ Think of the value as the control point’s y-coordinate.
 
 ## See Also
 
-- [var relativeTime: TimeInterval](chhapticparametercurve/controlpoint/relativetime.md)
+### Specifying Control Point Coordinates
+- [var relativeTime: TimeInterval](./relativetime.md)
   The time at which the associated parameter reaches this value, relative to the start time of the parameter curve.
 
 

@@ -1,12 +1,13 @@
 # bounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding box of the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The bounding box of the path.
 var bounds: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect bounds;
+```
+
 #### Discussion
 
 This property contains the rectangle that encloses the path of the receiver. If the path contains curve segments, the bounding box encloses the curve but may not enclose the control points used to calculate the curve.
 
-If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/genericexception).
+If the path is empty, accessing this property raises [`genericException`](../../Foundation/nsexceptionname/genericexception.md).
 
 ## See Also
 
-- [var controlPointBounds: NSRect](nsbezierpath/controlpointbounds.md)
+### Querying a Path
+- [var controlPointBounds: NSRect](./controlpointbounds.md)
   The bounding box of the path, including any control points.
-- [var currentPoint: NSPoint](nsbezierpath/currentpoint.md)
+- [var currentPoint: NSPoint](./currentpoint.md)
   The current point (the trailing point or ending point in the most recently added segment).
-- [var isEmpty: Bool](nsbezierpath/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the path is empty.
 
 

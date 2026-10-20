@@ -1,7 +1,8 @@
 # perSubscriptionResultBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when a subscription becomes available.
 
@@ -11,7 +12,7 @@ The closure to execute when a subscription becomes available.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -25,9 +26,9 @@ var perSubscriptionResultBlock: ((CKSubscription.ID, Result<CKSubscription, any 
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the subscription.
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either a retrieved subscription, or an error that describes why CloudKit can’t retrieve the subscription.
+- A [`Result`](../../Swift/result.md) that contains either a retrieved subscription, or an error that describes why CloudKit can’t retrieve the subscription.
 
-The fetch operation executes this closure once for each subscription ID in the [`subscriptionIDs`](ckfetchsubscriptionsoperation/subscriptionids-17f4q.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
+The fetch operation executes this closure once for each subscription ID in the [`subscriptionIDs`](./subscriptionids-17f4q.md) property. Each time the closure executes, it executes serially with respect to the other closures of the operation.
 
 If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 

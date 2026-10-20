@@ -1,7 +1,8 @@
 # keyboardWillChangeFrame
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,13 +15,16 @@
 static var keyboardWillChangeFrame: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillChangeFrameMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillChangeFrameMessage>`.
+
 ## See Also
 
-- [static var keyboardDidChangeFrame: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidChangeFrameMessage>](notificationcenter/messageidentifier/keyboarddidchangeframe.md)
-- [static var keyboardWillHide: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillHideMessage>](notificationcenter/messageidentifier/keyboardwillhide.md)
-- [static var keyboardDidHide: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidHideMessage>](notificationcenter/messageidentifier/keyboarddidhide.md)
-- [static var keyboardWillShow: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillShowMessage>](notificationcenter/messageidentifier/keyboardwillshow.md)
-- [static var keyboardDidShow: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidShowMessage>](notificationcenter/messageidentifier/keyboarddidshow.md)
+### Identifying UIKit responder messages
+- [static var keyboardDidChangeFrame: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidChangeFrameMessage>](./keyboarddidchangeframe.md)
+- [static var keyboardWillHide: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillHideMessage>](./keyboardwillhide.md)
+- [static var keyboardDidHide: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidHideMessage>](./keyboarddidhide.md)
+- [static var keyboardWillShow: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardWillShowMessage>](./keyboardwillshow.md)
+- [static var keyboardDidShow: NotificationCenter.BaseMessageIdentifier<UIResponder.KeyboardDidShowMessage>](./keyboarddidshow.md)
 
 
 ---

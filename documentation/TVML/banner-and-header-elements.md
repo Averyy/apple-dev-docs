@@ -7,27 +7,28 @@ Provide initial descriptive information for other elements.
 ## Topics
 
 ### Banner Elements
-- [banner](banner.md)
+- [banner](./banner.md)
   Displays information along the top of a TVML page.
-- [identityBanner](identitybanner.md)
+- [identityBanner](./identitybanner.md)
   Displays information about an artist or performer.
-- [itemBanner](itembanner.md)
+- [itemBanner](./itembanner.md)
   Displays information associated with an element.
 ### Header and Footer Elements
-- [footer](footer.md)
+- [footer](./footer.md)
   Contains information displayed at the bottom of an element.
-- [header](header.md)
+- [header](./header.md)
   Contains information displayed at the bottom of an element.
 
 ## See Also
 
-- [Background Elements](background-elements.md)
+### Compound Elements
+- [Background Elements](./background-elements.md)
   Control background images and media items that play in the background.
-- [Information Elements](information-elements.md)
+- [Information Elements](./information-elements.md)
   Group and display content in the form best suited for the information.
-- [Layout Elements](layout-elements.md)
+- [Layout Elements](./layout-elements.md)
   Organize and display multiple elements in a structured layout.
-- [Lockup Elements](lockup-elements.md)
+- [Lockup Elements](./lockup-elements.md)
   Combine several elements so that they can be treated as a single element.
 
 

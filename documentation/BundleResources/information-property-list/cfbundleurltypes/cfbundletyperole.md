@@ -1,7 +1,8 @@
 # CFBundleTypeRole
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The app’s role with respect to the type.
 
@@ -13,19 +14,31 @@ The app’s role with respect to the type.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `CFBundleTypeRole` (Document Role)
+- **Type**: string
+
+## Possible Values
+
+- `Editor`
+- `Viewer`
+- `Shell`
+- `QLGenerator`
+- `None`
 
 
-**Type**: string
 
 **Default**: `None`
 
 ## See Also
 
-- [CFBundleURLIconFile](information-property-list/cfbundleurltypes/cfbundleurliconfile.md)
+### Property List Keys
+- [CFBundleURLIconFile](./cfbundleurliconfile.md)
   The name of the icon image file, without the extension, to be used for this type.
-- [CFBundleURLName](information-property-list/cfbundleurltypes/cfbundleurlname.md)
+- [CFBundleURLName](./cfbundleurlname.md)
   The abstract name for this type.
-- [CFBundleURLSchemes](information-property-list/cfbundleurltypes/cfbundleurlschemes.md)
+- [CFBundleURLSchemes](./cfbundleurlschemes.md)
   The URL schemes supported by this type.
 
 

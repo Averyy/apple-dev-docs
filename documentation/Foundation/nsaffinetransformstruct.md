@@ -1,7 +1,8 @@
 # NSAffineTransformStruct
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the three-by-three matrix that performs an affine transform between two coordinate systems.
 
@@ -15,40 +16,45 @@ A structure that defines the three-by-three matrix that performs an affine trans
 struct NSAffineTransformStruct
 ```
 
+```c
+typedef struct { ... } NSAffineTransformStruct;
+```
+
 #### Overview
 
-For more details, see [`Cocoa Drawing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290).
+For more details, see [Cocoa Drawing Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaDrawingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40003290).
 
 ## Topics
 
 ### Initializers
-- [init()](nsaffinetransformstruct/init.md)
+- [init()](./nsaffinetransformstruct/init%28%29.md)
   Initializes a zero-filled transformation matrix.
-- [init(m11: Double, m12: Double, m21: Double, m22: Double, tX: Double, tY: Double)](nsaffinetransformstruct/init(m11:m12:m21:m22:tx:ty:).md)
+- [init(m11: Double, m12: Double, m21: Double, m22: Double, tX: Double, tY: Double)](./nsaffinetransformstruct/init%28m11,m12,m21,m22,tx,ty%29.md)
 ### Instance Properties
-- [var m11: Double](nsaffinetransformstruct/m11.md)
+- [var m11: Double](./nsaffinetransformstruct/m11.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m12: Double](nsaffinetransformstruct/m12.md)
+- [var m12: Double](./nsaffinetransformstruct/m12.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m21: Double](nsaffinetransformstruct/m21.md)
+- [var m21: Double](./nsaffinetransformstruct/m21.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m22: Double](nsaffinetransformstruct/m22.md)
+- [var m22: Double](./nsaffinetransformstruct/m22.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var tX: Double](nsaffinetransformstruct/tx.md)
+- [var tX: Double](./nsaffinetransformstruct/tx.md)
   An element of the transform matrix that contributes translation.
-- [var tY: Double](nsaffinetransformstruct/ty.md)
+- [var tY: Double](./nsaffinetransformstruct/ty.md)
   An element of the transform matrix that contributes translation.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var transformStruct: NSAffineTransformStruct](nsaffinetransform/transformstruct.md)
+### Accessing the Transformation Matrix
+- [var transformStruct: NSAffineTransformStruct](./nsaffinetransform/transformstruct.md)
   The matrix coefficients stored as the transformation matrix.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source to return an app entity identifier for a cell at a particular location in the collection view.
@@ -26,12 +27,18 @@ The app entity identifier at the specified location in the collection view.
 
 #### Discussion
 
-For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](providing-contextual-cues-to-apple-intelligence-and-siri.md) and [`App Intents`](AppIntents.md).
+For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../AppIntents.md).
 
 ## Parameters
 
 - `collectionView`: The collection view asking for the app entity identifier.
 - `indexPath`: The index path that specifies the section and item number in the collection view.
+
+## Default Implementations
+
+### UICollectionViewAppIntentsDataSource Implementations
+- [func collectionView(UICollectionView, appEntityIdentifierForItemAt: IndexPath) -> EntityIdentifier?](./collectionview%28_,appentityidentifierforitemat%29-7mbns.md)
+  Asks the data source to return an app entity identifier for a cell at a particular location in the collection view.
 
 
 ---

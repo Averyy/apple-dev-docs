@@ -1,7 +1,8 @@
 # inferredMappingModel(forSourceModel:destinationModel:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a newly created mapping model that will migrate data from the source to the destination model.
 
@@ -10,7 +11,7 @@ Returns a newly created mapping model that will migrate data from the source to 
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.6+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns a newly created mapping model that will migrate data from the source to 
 class func inferredMappingModel(forSourceModel sourceModel: NSManagedObjectModel, destinationModel: NSManagedObjectModel) throws -> NSMappingModel
 ```
 
+```objc
++ (NSMappingModel *) inferredMappingModelForSourceModel:(NSManagedObjectModel *) sourceModel destinationModel:(NSManagedObjectModel *) destinationModel error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Migrating your data model automatically](migrating-your-data-model-automatically.md)
+- [Migrating your data model automatically](../migrating-your-data-model-automatically.md)
 
 #### Return Value
 
@@ -39,9 +44,10 @@ A model will be created only if all changes are simple enough to be able to reas
 
 ## See Also
 
-- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](nsmappingmodel/init(from:forsourcemodel:destinationmodel:).md)
+### Creating a Mapping
+- [init?(from: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](./init%28from,forsourcemodel,destinationmodel%29.md)
   Returns the mapping model that will translate data from the source to the destination model.
-- [init?(contentsOf: URL?)](nsmappingmodel/init(contentsof:).md)
+- [init?(contentsOf: URL?)](./init%28contentsof%29.md)
   Returns a mapping model initialized from a given URL.
 
 

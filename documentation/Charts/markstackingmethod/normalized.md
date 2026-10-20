@@ -1,7 +1,8 @@
 # normalized
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Create normalized stacked bar and area charts.
 

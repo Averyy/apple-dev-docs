@@ -1,17 +1,20 @@
 # sourcePixelBufferAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributes of the pixel buffers that the pool contains.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 27.0
+- iPadOS 4.1+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.7+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAssetWriter.inputPixelBufferReceiver(for:pixelBufferAttributes:) instead
 
 ## Declaration
 
@@ -19,9 +22,14 @@ The attributes of the pixel buffers that the pool contains.
 var sourcePixelBufferAttributes: [String : any Sendable]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * sourcePixelBufferAttributes;
+```
+
 ## See Also
 
-- [var pixelBufferPool: CVPixelBufferPool?](avassetwriterinputpixelbufferadaptor/pixelbufferpool.md)
+### Accessing the pool
+- [var pixelBufferPool: CVPixelBufferPool?](./pixelbufferpool.md)
   A pool of pixel buffers to append to the adaptor’s input.
 
 

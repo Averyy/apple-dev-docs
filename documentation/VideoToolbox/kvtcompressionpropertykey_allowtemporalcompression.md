@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_AllowTemporalCompression
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether temporal compression is enabled.
 
@@ -19,19 +20,24 @@ A Boolean value indicating whether temporal compression is enabled.
 let kVTCompressionPropertyKey_AllowTemporalCompression: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_AllowTemporalCompression;
+```
+
 #### Discussion
 
 The default value is `true`.  Set this `value` to false to require key-frame-only compression.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_AllowFrameReordering: CFString](kvtcompressionpropertykey_allowframereordering.md)
+### Frame Dependency
+- [let kVTCompressionPropertyKey_AllowFrameReordering: CFString](./kvtcompressionpropertykey_allowframereordering.md)
   A Boolean value that indicates whether frame reordering is enabled.
-- [let kVTCompressionPropertyKey_AllowOpenGOP: CFString](kvtcompressionpropertykey_allowopengop.md)
+- [let kVTCompressionPropertyKey_AllowOpenGOP: CFString](./kvtcompressionpropertykey_allowopengop.md)
   Enables Open GOP (Group Of Pictures) encoding.
-- [let kVTCompressionPropertyKey_MaxKeyFrameInterval: CFString](kvtcompressionpropertykey_maxkeyframeinterval.md)
+- [let kVTCompressionPropertyKey_MaxKeyFrameInterval: CFString](./kvtcompressionpropertykey_maxkeyframeinterval.md)
   The maximum interval between key frames, also known as the key frame rate.
-- [let kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration: CFString](kvtcompressionpropertykey_maxkeyframeintervalduration.md)
+- [let kVTCompressionPropertyKey_MaxKeyFrameIntervalDuration: CFString](./kvtcompressionpropertykey_maxkeyframeintervalduration.md)
   The maximum duration from one key frame to the next in seconds.
 
 

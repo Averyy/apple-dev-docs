@@ -1,7 +1,8 @@
 # NWProtocolFramer.Message
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A message for a custom protocol, in which you can store arbitrary key-value pairs.
 
@@ -23,27 +24,28 @@ class Message
 ## Topics
 
 ### Creating Framer Messages
-- [init(definition: NWProtocolFramer.Definition)](nwprotocolframer/message/init(definition:).md)
+- [init(definition: NWProtocolFramer.Definition)](./message/init%28definition%29.md)
   Initializes an empty message for a custom framer definition.
-- [init(instance: NWProtocolFramer.Instance)](nwprotocolframer/message/init(instance:).md)
+- [init(instance: NWProtocolFramer.Instance)](./message/init%28instance%29.md)
   Initializes an empty message from within a framer implementation.
 ### Accessing Message Metadata
-- [subscript(String) -> Any?](nwprotocolframer/message/subscript(_:).md)
+- [subscript(String) -> Any?](./message/subscript%28_%29.md)
   Get and set object values in a custom framer message.
 
 ## Relationships
 
 ### Inherits From
-- [NWProtocolMetadata](nwprotocolmetadata.md)
+- [NWProtocolMetadata](../nwprotocolmetadata.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NWProtocolFramer.Definition](nwprotocolframer/definition.md)
+### Using Framers with Connections
+- [NWProtocolFramer.Definition](./definition.md)
   A custom protocol definition you use to associate messages with protocol options.
-- [NWProtocolFramer.Options](nwprotocolframer/options.md)
+- [NWProtocolFramer.Options](./options.md)
   A container you use to add your custom protocol to a connection’s protocol stack.
 
 

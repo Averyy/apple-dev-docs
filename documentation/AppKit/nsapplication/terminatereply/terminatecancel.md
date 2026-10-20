@@ -1,12 +1,13 @@
 # NSApplication.TerminateReply.terminateCancel
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app should not be terminated.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The app should not be terminated.
 case terminateCancel
 ```
 
+```c
+NSTerminateCancel
+```
+
 ## See Also
 
-- [NSApplication.TerminateReply.terminateNow](nsapplication/terminatereply/terminatenow.md)
+### Constants
+- [NSApplication.TerminateReply.terminateNow](./terminatenow.md)
   It is OK to proceed with termination.
-- [NSApplication.TerminateReply.terminateLater](nsapplication/terminatereply/terminatelater.md)
+- [NSApplication.TerminateReply.terminateLater](./terminatelater.md)
 
 
 ---

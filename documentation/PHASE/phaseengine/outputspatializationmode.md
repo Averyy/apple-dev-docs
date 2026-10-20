@@ -1,7 +1,8 @@
 # outputSpatializationMode
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode the engine implements to create a 3D sound experience.
 
@@ -19,11 +20,16 @@ The mode the engine implements to create a 3D sound experience.
 var outputSpatializationMode: PHASESpatializationMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PHASESpatializationMode outputSpatializationMode;
+```
+
 ## See Also
 
-- [var defaultReverbPreset: PHASEReverbPreset](phaseengine/defaultreverbpreset.md)
+### Defining Environmental Effects
+- [var defaultReverbPreset: PHASEReverbPreset](./defaultreverbpreset.md)
   The environmental surroundings that determine how sound resonates.
-- [var defaultMedium: PHASEMedium](phaseengine/defaultmedium.md)
+- [var defaultMedium: PHASEMedium](./defaultmedium.md)
   The physical matter through which sound travels.
 
 

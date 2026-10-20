@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Text  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a copy options structure with the specified raw value.
 

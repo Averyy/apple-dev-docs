@@ -1,7 +1,8 @@
 # showsDialogControl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that indicates whether the Look Around view displays shows a control that allow someone to expand the Look Around view.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the Look Around view displays shows a con
 
 ## Declaration
 
-```swift
+```
 showsDialogControl?: boolean;
 ```
 

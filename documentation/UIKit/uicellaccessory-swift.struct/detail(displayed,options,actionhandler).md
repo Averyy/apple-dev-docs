@@ -1,7 +1,8 @@
 # detail(displayed:options:actionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a detail system accessory with the specified display state, configuration options, and optional action handler.
 
@@ -10,7 +11,7 @@ Creates a detail system accessory with the specified display state, configuratio
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - tvOS 15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ A configured detail cell accessory. The accessory displays as the system informa
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the detail accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
-- `options`: Configuration options for the detail accessory. See [`UICellAccessory.DetailOptions`](uicellaccessory-swift.struct/detailoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the detail accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](./displayedstate/always.md).
+- `options`: Configuration options for the detail accessory. See [`UICellAccessory.DetailOptions`](./detailoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the detail accessory.
 
 ## See Also
 
-- [UICellAccessory.DetailOptions](uicellaccessory-swift.struct/detailoptions.md)
+### Creating a detail accessory
+- [UICellAccessory.DetailOptions](./detailoptions.md)
   Configuration options for a detail accessory.
 
 

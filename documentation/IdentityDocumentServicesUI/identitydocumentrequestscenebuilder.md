@@ -1,14 +1,15 @@
 # IdentityDocumentRequestSceneBuilder
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A result builder that combines one or more `IdentityDocumentRequestScene`s into a single scene.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -20,27 +21,28 @@ A result builder that combines one or more `IdentityDocumentRequestScene`s into 
 ## Topics
 
 ### Type Methods
-- [static func buildBlock(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](identitydocumentrequestscenebuilder/buildblock(_:).md)
+- [static func buildBlock(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildblock%28_%29.md)
   A result builder that combines one or more identity document request scene`s into a single scene.
-- [static func buildBlock(some IdentityDocumentRequestScene, some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](identitydocumentrequestscenebuilder/buildblock(_:_:).md)
+- [static func buildBlock(some IdentityDocumentRequestScene, some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildblock%28_,_%29.md)
   A result builder that combines one or more identity document request scene`s into a single scene.
-- [static func buildLimitedAvailability(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](identitydocumentrequestscenebuilder/buildlimitedavailability(_:).md)
-- [static func buildOptional((some IdentityDocumentRequestScene)?) -> some IdentityDocumentRequestScene](identitydocumentrequestscenebuilder/buildoptional(_:).md)
+- [static func buildLimitedAvailability(some IdentityDocumentRequestScene) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildlimitedavailability%28_%29.md)
+- [static func buildOptional((some IdentityDocumentRequestScene)?) -> some IdentityDocumentRequestScene](./identitydocumentrequestscenebuilder/buildoptional%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol IdentityDocumentProvider](identitydocumentprovider.md)
+### Building identity document provider authorization UI
+- [protocol IdentityDocumentProvider](./identitydocumentprovider.md)
   An app extension that provides an identity document.
-- [protocol IdentityDocumentRequestScene](identitydocumentrequestscene.md)
+- [protocol IdentityDocumentRequestScene](./identitydocumentrequestscene.md)
   A scene that indicates support for a specific document request type.
-- [struct ISO18013MobileDocumentRequestScene](iso18013mobiledocumentrequestscene.md)
-- [struct ISO18013MobileDocumentRequestContext](iso18013mobiledocumentrequestcontext.md)
+- [struct ISO18013MobileDocumentRequestScene](./iso18013mobiledocumentrequestscene.md)
+- [struct ISO18013MobileDocumentRequestContext](./iso18013mobiledocumentrequestcontext.md)
   An object that contains details about the ISO 18013 mobile document request.
 
 

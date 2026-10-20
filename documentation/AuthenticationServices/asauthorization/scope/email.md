@@ -1,7 +1,8 @@
 # email
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A scope that includes the user’s email address.
 
@@ -20,9 +21,14 @@ A scope that includes the user’s email address.
 static let email: ASAuthorization.Scope
 ```
 
+```c
+extern ASAuthorizationScope const ASAuthorizationScopeEmail;
+```
+
 ## See Also
 
-- [static let fullName: ASAuthorization.Scope](asauthorization/scope/fullname.md)
+### Scopes
+- [static let fullName: ASAuthorization.Scope](./fullname.md)
   A scope that includes the user’s full name.
 
 

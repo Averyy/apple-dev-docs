@@ -1,7 +1,8 @@
 # pendingConversationActions(of:for:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries a conversation for pending actions of a specified type.
 
@@ -29,11 +30,12 @@ An array of a conversation’s pending conversation actions of the specified typ
 
 ## See Also
 
-- [func reportConversationEvent(Conversation.Event, for: Conversation)](conversationmanager/reportconversationevent(_:for:).md)
+### Observing conversations
+- [func reportConversationEvent(Conversation.Event, for: Conversation)](./reportconversationevent%28_,for%29.md)
   Informs the system that an event has occurred and that it needs to update the conversation if necessary.
-- [func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update) async throws](conversationmanager/reportnewincomingconversation(uuid:update:).md)
+- [func reportNewIncomingConversation(uuid: UUID, update: Conversation.Update) async throws](./reportnewincomingconversation%28uuid,update%29.md)
   Informs the system that there’s a new incoming conversation, and the device should begin to ring and present the incoming Conversation UI.
-- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](conversationmanager/reportnewincomingvoippushpayload(_:).md)
+- [class func reportNewIncomingVoIPPushPayload([AnyHashable : Any]) async throws](./reportnewincomingvoippushpayload%28_%29.md)
   Reports a new incoming conversation after your notification service extension decrypts a VoIP request.
 
 

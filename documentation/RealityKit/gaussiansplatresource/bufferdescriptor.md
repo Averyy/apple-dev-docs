@@ -1,7 +1,8 @@
 # GaussianSplatResource.BufferDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of where one per-splat property lives within a buffer.
 
@@ -25,16 +26,16 @@ Express the stride and offset in bytes. The framework finds the value for each s
 ## Topics
 
 ### Initializers
-- [init(buffer: LowLevelBuffer, format: MTLAttributeFormat, stride: Int, offset: Int)](gaussiansplatresource/bufferdescriptor/init(buffer:format:stride:offset:).md)
+- [init(buffer: LowLevelBuffer, format: MTLAttributeFormat, stride: Int, offset: Int)](./bufferdescriptor/init%28buffer,format,stride,offset%29.md)
   Creates a descriptor that locates a property within a buffer.
 ### Instance Properties
-- [let buffer: LowLevelBuffer](gaussiansplatresource/bufferdescriptor/buffer.md)
+- [let buffer: LowLevelBuffer](./bufferdescriptor/buffer.md)
   The buffer that stores the property’s values.
-- [let format: MTLAttributeFormat](gaussiansplatresource/bufferdescriptor/format.md)
+- [let format: MTLAttributeFormat](./bufferdescriptor/format.md)
   The element format of each value in the buffer.
-- [let offset: Int](gaussiansplatresource/bufferdescriptor/offset.md)
+- [let offset: Int](./bufferdescriptor/offset.md)
   The byte offset of the first splat’s value within the buffer.
-- [let stride: Int](gaussiansplatresource/bufferdescriptor/stride.md)
+- [let stride: Int](./bufferdescriptor/stride.md)
   The distance, in bytes, between consecutive splats’ values.
 
 

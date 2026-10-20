@@ -1,6 +1,7 @@
 # Video decoder entitlement
 
-**Framework**: MediaExtension
+**Framework**: MediaExtension  
+**Role**: Article
 
 Include an entitlement to indicate your extension is a MediaExtension video decoder.
 
@@ -17,17 +18,18 @@ The entitlement key is `com.apple.developer.mediaextension.videodecoder` and it 
 
 ## See Also
 
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+### Video decoders
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEVideoDecoder](mevideodecoder.md)
+- [protocol MEVideoDecoder](./mevideodecoder.md)
   A protocol that defines the requirements for a video decoder.
-- [protocol MEVideoDecoderExtension](mevideodecoderextension.md)
+- [protocol MEVideoDecoderExtension](./mevideodecoderextension.md)
   A protocol that defines a factory to create new video decoders for a codec type that the extension implements.
-- [class MEDecodeFrameOptions](medecodeframeoptions.md)
+- [class MEDecodeFrameOptions](./medecodeframeoptions.md)
   An object that guides the video decoder operation on a per-frame basis.
-- [class MEVideoDecoderPixelBufferManager](mevideodecoderpixelbuffermanager.md)
+- [class MEVideoDecoderPixelBufferManager](./mevideodecoderpixelbuffermanager.md)
   Describes pixel buffer requirements and creates new pixel buffers.
-- [Video decoder property list dictionary](video-decoder-property-list-dictionary.md)
+- [Video decoder property list dictionary](./video-decoder-property-list-dictionary.md)
   Include a property list dictionary to describe a video decoder.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the item for a given index
@@ -15,9 +16,13 @@ Returns the item for a given index
 func slideshowItem(at index: Int) -> Any!
 ```
 
+```objc
+- (id) slideshowItemAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-The object that corresponds to the item at the specified index. The item can be any of the following objects: [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) (to specify a path name), [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl), [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper), [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage), or [`PDFPage`](https://developer.apple.com/documentation/pdfkit/pdfpage).
+The object that corresponds to the item at the specified index. The item can be any of the following objects: [`NSImage`](../../AppKit/nsimage.md), [`NSString`](../../Foundation/nsstring.md) (to specify a path name), [`NSURL`](../../Foundation/nsurl.md), [`FileWrapper`](../../Foundation/filewrapper.md), [`CGImage`](../../CoreGraphics/cgimage.md), or [`PDFPage`](../../PDFKit/pdfpage.md).
 
 #### Discussion
 
@@ -29,11 +34,12 @@ Your data source must implement this method.
 
 ## See Also
 
-- [func numberOfSlideshowItems() -> Int](ikslideshowdatasource/numberofslideshowitems.md)
+### Providing Slideshow Information
+- [func numberOfSlideshowItems() -> Int](./numberofslideshowitems%28%29.md)
   Returns the number of items in a slideshow.
-- [func nameOfSlideshowItem(at: Int) -> String!](ikslideshowdatasource/nameofslideshowitem(at:).md)
+- [func nameOfSlideshowItem(at: Int) -> String!](./nameofslideshowitem%28at%29.md)
   Returns the display name for item at the specified index.
-- [func canExportSlideshowItem(at: Int, toApplication: String!) -> Bool](ikslideshowdatasource/canexportslideshowitem(at:toapplication:).md)
+- [func canExportSlideshowItem(at: Int, toApplication: String!) -> Bool](./canexportslideshowitem%28at,toapplication%29.md)
   Reports whether the export button should be enabled for a slideshow item.
 
 

@@ -1,7 +1,8 @@
 # endTransparencyLayer()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a transparency layer.
 
@@ -10,7 +11,7 @@ Ends a transparency layer.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ Ends a transparency layer.
 func endTransparencyLayer()
 ```
 
+```c
+extern void CGContextEndTransparencyLayer(CGContextRef c);
+```
+
 ## See Also
 
-- [func beginTransparencyLayer(in: CGRect, auxiliaryInfo: CFDictionary?)](cgcontext/begintransparencylayer(in:auxiliaryinfo:).md)
+### Working with Transparency Layers
+- [func beginTransparencyLayer(in: CGRect, auxiliaryInfo: CFDictionary?)](./begintransparencylayer%28in,auxiliaryinfo%29.md)
   Begins a transparency layer whose contents are bounded by the specified rectangle.
-- [func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)](cgcontext/begintransparencylayer(auxiliaryinfo:).md)
+- [func beginTransparencyLayer(auxiliaryInfo: CFDictionary?)](./begintransparencylayer%28auxiliaryinfo%29.md)
   Begins a transparency layer.
 
 

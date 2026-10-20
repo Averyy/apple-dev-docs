@@ -1,7 +1,8 @@
 # installed
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A state representing content that’s installed.
 
@@ -19,11 +20,12 @@ static var installed: ManagedContentOfferState { get }
 
 ## See Also
 
-- [static var notInstalled: ManagedContentOfferState](managedcontentofferstate/notinstalled.md)
+### Determining installation status
+- [static var notInstalled: ManagedContentOfferState](./notinstalled.md)
   A state for representing content that isn’t currently installed.
-- [static var neverInstalled: ManagedContentOfferState](managedcontentofferstate/neverinstalled.md)
+- [static var neverInstalled: ManagedContentOfferState](./neverinstalled.md)
   A state representing content that has never been installed.
-- [static var noninteractive: ManagedContentOfferState](managedcontentofferstate/noninteractive.md)
+- [static var noninteractive: ManagedContentOfferState](./noninteractive.md)
   A state representing content that has no actionable button.
 
 

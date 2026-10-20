@@ -1,11 +1,12 @@
 # kAudioObjectPropertyListenerAdded
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioObjectPropertyListenerAdded: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioObjectPropertyListenerAdded
+```
+
 ## See Also
 
-- [var kAudioObjectPropertyCreator: AudioObjectPropertySelector](kaudioobjectpropertycreator.md)
-- [var kAudioObjectPropertyListenerRemoved: AudioObjectPropertySelector](kaudioobjectpropertylistenerremoved.md)
+### Constants
+- [var kAudioObjectPropertyCreator: AudioObjectPropertySelector](./kaudioobjectpropertycreator.md)
+- [var kAudioObjectPropertyListenerRemoved: AudioObjectPropertySelector](./kaudioobjectpropertylistenerremoved.md)
 
 
 ---

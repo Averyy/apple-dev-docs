@@ -1,7 +1,8 @@
 # offsets
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of length four that determines from which offset to start reading the input tensor.
 
@@ -17,6 +18,10 @@ An array of length four that determines from which offset to start reading the i
 
 ```swift
 var offsets: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) MPSShape * offsets;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # chamferMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the front, back or both sides should be chamfered.
 
@@ -21,7 +22,7 @@ var chamferMode: MeshResource.ShapeExtrusionOptions.ChamferMode
 
 #### Discussion
 
-The default value is [`MeshResource.ShapeExtrusionOptions.ChamferMode.both`](meshresource/shapeextrusionoptions/chamfermode-swift.enum/both.md).
+The default value is [`MeshResource.ShapeExtrusionOptions.ChamferMode.both`](./chamfermode-swift.enum/both.md).
 
 
 ---

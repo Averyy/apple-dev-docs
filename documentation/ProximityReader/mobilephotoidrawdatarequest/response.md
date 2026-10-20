@@ -1,7 +1,8 @@
 # MobilePhotoIDRawDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful photo ID raw data request.
 
@@ -19,20 +20,20 @@ struct Response
 ## Topics
 
 ### Instance Properties
-- [let ephemeralReaderKey: Data](mobilephotoidrawdatarequest/response/ephemeralreaderkey.md)
+- [let ephemeralReaderKey: Data](./response/ephemeralreaderkey.md)
   The session’s ephemeral reader key.
-- [let responseData: Data](mobilephotoidrawdatarequest/response/responsedata.md)
+- [let responseData: Data](./response/responsedata.md)
   The data the photo ID holder returns.
-- [let sessionTranscript: Data](mobilephotoidrawdatarequest/response/sessiontranscript.md)
+- [let sessionTranscript: Data](./response/sessiontranscript.md)
   The session transcript of the document request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

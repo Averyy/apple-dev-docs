@@ -1,7 +1,8 @@
 # init(scalars:shape:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with a sequence and the shape.
 
@@ -31,9 +32,10 @@ The length of the sequence must not be less than the number of scalars in the sh
 
 ## See Also
 
-- [init(scalar: Scalar)](mlshapedarray/init(scalar:).md)
+### Creating a shaped array
+- [init(scalar: Scalar)](./init%28scalar%29.md)
   Creates a shaped array with exactly one value and zero dimensions.
-- [init(mutating: CVPixelBuffer, shape: [Int])](mlshapedarray/init(mutating:shape:).md)
+- [init(mutating: CVPixelBuffer, shape: [Int])](./init%28mutating,shape%29.md)
   Creates a new `MLShapedArray` using a pixel buffer as the backing storage.
 
 

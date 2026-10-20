@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The name of the encoder that generates the error information.
@@ -20,17 +21,22 @@ The name of the encoder that generates the error information.
 var label: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * label;
+```
+
 #### Discussion
 
-Metal assigns the value of the property to the encoder’s [`label`](mtlcommandencoder/label.md) property.
+Metal assigns the value of the property to the encoder’s [`label`](../mtlcommandencoder/label.md) property.
 
 ## See Also
 
-- [var debugSignposts: [String]](mtlcommandbufferencoderinfo/debugsignposts.md)
+### Inspecting execution information
+- [var debugSignposts: [String]](./debugsignposts.md)
   An array of debug signposts that Metal records as the GPU executes the commands of the encoder’s pass.
-- [var errorState: MTLCommandEncoderErrorState](mtlcommandbufferencoderinfo/errorstate.md)
+- [var errorState: MTLCommandEncoderErrorState](./errorstate.md)
   The execution status of the command encoder.
-- [enum MTLCommandEncoderErrorState](mtlcommandencodererrorstate.md)
+- [enum MTLCommandEncoderErrorState](../mtlcommandencodererrorstate.md)
   Possible error conditions for the command encoder’s commands.
 
 

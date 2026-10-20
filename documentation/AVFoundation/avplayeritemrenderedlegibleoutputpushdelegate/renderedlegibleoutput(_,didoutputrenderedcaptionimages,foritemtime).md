@@ -1,7 +1,8 @@
 # renderedLegibleOutput(_:didOutputRenderedCaptionImages:forItemTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that new rendered caption images are available.
 
@@ -17,10 +18,14 @@ Tells the delegate that new rendered caption images are available.
 optional func renderedLegibleOutput(_ output: AVPlayerItemRenderedLegibleOutput, didOutputRenderedCaptionImages captionImages: [AVRenderedCaptionImage], forItemTime itemTime: CMTime)
 ```
 
+```objc
+- (void) renderedLegibleOutput:(AVPlayerItemRenderedLegibleOutput *) output didOutputRenderedCaptionImages:(NSArray<AVRenderedCaptionImage *> *) captionImages forItemTime:(CMTime) itemTime;
+```
+
 ## Parameters
 
 - `output`: The rendered legible output object.
-- `captionImages`: An array of [`AVRenderedCaptionImage`](avrenderedcaptionimage.md) objects. A caption object consists of a [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) and its associated position, in pixels, relative to the video frame.
+- `captionImages`: An array of [`AVRenderedCaptionImage`](../avrenderedcaptionimage.md) objects. A caption object consists of a [CVPixelBuffer](../../CoreVideo/cvpixelbuffer-q2e.md) and its associated position, in pixels, relative to the video frame.
 - `itemTime`: The item time at which to present the caption images.
 
 

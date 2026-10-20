@@ -1,7 +1,8 @@
 # schedule(options:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the action at the next possible opportunity.
 
@@ -22,9 +23,10 @@ func schedule(options: ImmediateScheduler.SchedulerOptions?, _ action: @escaping
 
 ## See Also
 
-- [func schedule(after: ImmediateScheduler.SchedulerTimeType, interval: ImmediateScheduler.SchedulerTimeType.Stride, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void) -> any Cancellable](immediatescheduler/schedule(after:interval:tolerance:options:_:).md)
+### Scheduling actions
+- [func schedule(after: ImmediateScheduler.SchedulerTimeType, interval: ImmediateScheduler.SchedulerTimeType.Stride, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void) -> any Cancellable](./schedule%28after,interval,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, at the specified frequency, optionally taking into account tolerance if possible.
-- [func schedule(after: ImmediateScheduler.SchedulerTimeType, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void)](immediatescheduler/schedule(after:tolerance:options:_:).md)
+- [func schedule(after: ImmediateScheduler.SchedulerTimeType, tolerance: ImmediateScheduler.SchedulerTimeType.Stride, options: ImmediateScheduler.SchedulerOptions?, () -> Void)](./schedule%28after,tolerance,options,_%29.md)
   Performs the action at some time after the specified date.
 
 

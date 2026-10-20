@@ -1,7 +1,8 @@
 # InferenceValue.View
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A borrowed, read-only view of an inference value.
 
@@ -20,13 +21,14 @@ struct View
 
 #### Overview
 
-Use views to pass input values to [`InferenceFunction.Inputs`](inferencefunction/inputs.md) without transferring ownership.
+Use views to pass input values to [`InferenceFunction.Inputs`](../inferencefunction/inputs.md) without transferring ownership.
 
 ## See Also
 
-- [InferenceValue.MutableView](inferencevalue/mutableview.md)
+### Accessing views
+- [InferenceValue.MutableView](./mutableview.md)
   A borrowed, mutable view of an inference value.
-- [InferenceValue.NamedMutableViews](inferencevalue/namedmutableviews.md)
+- [InferenceValue.NamedMutableViews](./namedmutableviews.md)
   A collection of named mutable views into inference values.
 
 

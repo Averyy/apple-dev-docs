@@ -1,7 +1,8 @@
 # IOSurfaceComponentName
 
 **Framework**: IOSurface  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 11.0+
@@ -17,37 +18,42 @@
 enum IOSurfaceComponentName
 ```
 
+```c
+enum IOSurfaceComponentName : int32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [IOSurfaceComponentName.alpha](iosurfacecomponentname/alpha.md)
-- [IOSurfaceComponentName.blue](iosurfacecomponentname/blue.md)
-- [IOSurfaceComponentName.chromaBlue](iosurfacecomponentname/chromablue.md)
-- [IOSurfaceComponentName.chromaRed](iosurfacecomponentname/chromared.md)
-- [IOSurfaceComponentName.green](iosurfacecomponentname/green.md)
-- [IOSurfaceComponentName.luma](iosurfacecomponentname/luma.md)
-- [IOSurfaceComponentName.red](iosurfacecomponentname/red.md)
-- [IOSurfaceComponentName.unknown](iosurfacecomponentname/unknown.md)
+- [IOSurfaceComponentName.alpha](./iosurfacecomponentname/alpha.md)
+- [IOSurfaceComponentName.blue](./iosurfacecomponentname/blue.md)
+- [IOSurfaceComponentName.chromaBlue](./iosurfacecomponentname/chromablue.md)
+- [IOSurfaceComponentName.chromaRed](./iosurfacecomponentname/chromared.md)
+- [IOSurfaceComponentName.green](./iosurfacecomponentname/green.md)
+- [IOSurfaceComponentName.luma](./iosurfacecomponentname/luma.md)
+- [IOSurfaceComponentName.red](./iosurfacecomponentname/red.md)
+- [IOSurfaceComponentName.unknown](./iosurfacecomponentname/unknown.md)
 ### Initializers
-- [init?(rawValue: Int32)](iosurfacecomponentname/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./iosurfacecomponentname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum IOSurfaceComponentRange](iosurfacecomponentrange.md)
-- [enum IOSurfaceComponentType](iosurfacecomponenttype.md)
-- [struct IOSurfaceMemoryLedgerFlags](iosurfacememoryledgerflags.md)
-- [enum IOSurfaceMemoryLedgerTags](iosurfacememoryledgertags.md)
-- [enum IOSurfaceSubsampling](iosurfacesubsampling.md)
+### Enumerations
+- [enum IOSurfaceComponentRange](./iosurfacecomponentrange.md)
+- [enum IOSurfaceComponentType](./iosurfacecomponenttype.md)
+- [struct IOSurfaceMemoryLedgerFlags](./iosurfacememoryledgerflags.md)
+- [enum IOSurfaceMemoryLedgerTags](./iosurfacememoryledgertags.md)
+- [enum IOSurfaceSubsampling](./iosurfacesubsampling.md)
 
 
 ---

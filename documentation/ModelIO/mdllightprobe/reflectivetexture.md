@@ -1,7 +1,8 @@
 # reflectiveTexture
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A cube map texture that contains a rendering of a scene as seen from the light probe’s position.
 
@@ -19,13 +20,18 @@ A cube map texture that contains a rendering of a scene as seen from the light p
 var reflectiveTexture: MDLTexture? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) MDLTexture * reflectiveTexture;
+```
+
 #### Discussion
 
 A reflective texture is also known as an *environment map*. A renderer can use this texture to create reflections and specular highlights on surfaces with metallic materials.
 
 ## See Also
 
-- [var irradianceTexture: MDLTexture?](mdllightprobe/irradiancetexture.md)
+### Working with Textures
+- [var irradianceTexture: MDLTexture?](./irradiancetexture.md)
   A cube map texture that contains samples of the total light arriving at the light probe’s position from every direction.
 
 

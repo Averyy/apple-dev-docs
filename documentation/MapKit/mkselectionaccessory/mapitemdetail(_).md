@@ -1,7 +1,8 @@
 # mapItemDetail(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Detailed information about a place
 
@@ -18,9 +19,13 @@ Detailed information about a place
 class func mapItemDetail(_ presentationStyle: MKSelectionAccessory.MapItemDetailPresentationStyle) -> MKSelectionAccessory
 ```
 
+```objc
++ (MKSelectionAccessory *) mapItemDetailWithPresentationStyle:(MKMapItemDetailSelectionAccessoryPresentationStyle *) presentationStyle;
+```
+
 #### Discussion
 
-Supported for [`MKMapFeatureAnnotation`](mkmapfeatureannotation.md) and [`MKMapItemAnnotation`](mkmapitemannotation.md).
+Supported for [`MKMapFeatureAnnotation`](../mkmapfeatureannotation.md) and [`MKMapItemAnnotation`](../mkmapitemannotation.md).
 
 ## Parameters
 

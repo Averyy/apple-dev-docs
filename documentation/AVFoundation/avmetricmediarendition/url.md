@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,13 +19,18 @@
 var url: URL? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURL * URL;
+```
+
 #### Discussion
 
 Provides URL corresponding to the rendition’s HLS playlist. If not available, value is nil.
 
 ## See Also
 
-- [var stableID: String?](avmetricmediarendition/stableid.md)
+### Inspecting the rendition
+- [var stableID: String?](./stableid.md)
 
 
 ---

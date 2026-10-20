@@ -1,7 +1,8 @@
 # boundsDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var boundsDidChange: NotificationCenter.BaseMessageIdentifier<NSView.BoundsDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSView.BoundsDidChangeMessage>`.
 
 
 ---

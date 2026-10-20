@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error.insufficientStorage(requiredBytes:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session can’t be started since there is not enough storage space in the provided directories.
 

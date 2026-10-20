@@ -1,7 +1,8 @@
 # functions
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The functions in the model’s program.
 

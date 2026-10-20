@@ -1,7 +1,8 @@
 # restoreState(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the interface-related state of the document.
 
@@ -14,15 +15,19 @@ Restores the interface-related state of the document.
 func restoreState(with coder: NSCoder)
 ```
 
+```objc
+- (void) restoreStateWithCoder:(NSCoder *) coder;
+```
+
 #### Discussion
 
 This method is part of the window restoration system and is called at launch time to restore the window-related state of your document object. The default implementation restores some basic information about the document. If you override this method, you must call `super` at some point in your implementation.
 
-Subclasses can override this method and use it to restore the document-related information that was saved in the [`encodeRestorableState(with:)`](nsdocument/encoderestorablestate(with:).md) method. You can also use this method to reconfigure the document (or its associated window controller and window) to their previous appearance.
+Subclasses can override this method and use it to restore the document-related information that was saved in the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method. You can also use this method to reconfigure the document (or its associated window controller and window) to their previous appearance.
 
 > **Note**:  If the user’s computer is configured to close all windows when an app quits, the system automatically removes any preserved state as part of that process. As a result, the system doesn’t call `restoreState(with:)` the next time your app launches.
 
-For information about using a coder object to read data from an archive, see [`Encoding and Decoding Custom Types`](https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types).
+For information about using a coder object to read data from an archive, see [Encoding and Decoding Custom Types](../../Foundation/encoding-and-decoding-custom-types.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ For information about using a coder object to read data from an archive, see [`E
 
 ## See Also
 
-- [class func allowedClasses(forRestorableStateKeyPath: String) -> [AnyClass]](nsdocument/allowedclasses(forrestorablestatekeypath:).md)
+### Handling Window Restoration
+- [class func allowedClasses(forRestorableStateKeyPath: String) -> [AnyClass]](./allowedclasses%28forrestorablestatekeypath%29.md)
   Returns the classes that support secure coding.
-- [func encodeRestorableState(with: NSCoder)](nsdocument/encoderestorablestate(with:).md)
+- [func encodeRestorableState(with: NSCoder)](./encoderestorablestate%28with%29.md)
   Saves the interface-related state of the document.
-- [class var restorableStateKeyPaths: [String]](nsdocument/restorablestatekeypaths.md)
+- [class var restorableStateKeyPaths: [String]](./restorablestatekeypaths.md)
   Returns an array of key paths that represent the restorable attributes of the document.
-- [func invalidateRestorableState()](nsdocument/invalidaterestorablestate.md)
+- [func invalidateRestorableState()](./invalidaterestorablestate%28%29.md)
   Marks the document’s interface-related state as dirty.
-- [func restoreWindow(withIdentifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: (NSWindow?, (any Error)?) -> Void)](nsdocument/restorewindow(withidentifier:state:completionhandler:).md)
+- [func restoreWindow(withIdentifier: NSUserInterfaceItemIdentifier, state: NSCoder, completionHandler: (NSWindow?, (any Error)?) -> Void)](./restorewindow%28withidentifier,state,completionhandler%29.md)
   Restores a window that was associated with a document, after that document is reopened.
 
 

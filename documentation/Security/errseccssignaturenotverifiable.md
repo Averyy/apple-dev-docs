@@ -1,7 +1,8 @@
 # errSecCSSignatureNotVerifiable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Signature cannot be read.
 
@@ -13,6 +14,10 @@ Signature cannot be read.
 
 ```swift
 var errSecCSSignatureNotVerifiable: OSStatus { get }
+```
+
+```c
+errSecCSSignatureNotVerifiable
 ```
 
 #### Discussion

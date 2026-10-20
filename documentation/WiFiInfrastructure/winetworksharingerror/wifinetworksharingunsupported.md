@@ -1,7 +1,8 @@
 # WINetworkSharingError.wifiNetworkSharingUnsupported
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the device doesn’t support Wi-Fi network sharing.
 

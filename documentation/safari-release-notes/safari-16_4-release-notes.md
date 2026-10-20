@@ -1,6 +1,7 @@
 # Safari 16.4 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 27, 2023 — Version 16.4 (18615.1.26)
 
@@ -15,7 +16,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added dark mode support for plain text files.
 - Added fingerprinting countermeasures for querying the permission state of the Notifications API.
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -88,7 +89,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed to always use percentages for computed values of `font-stretch`, never keywords.
 - Fixed to not require whitespace between `of` and the selector list in `:nth-child` or `:nth-last-child`.
 
-##### Css Api
+##### CSS API
 
 ###### New Features
 
@@ -133,7 +134,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed preventing a disabled `<fieldset>` element from getting focus.
 - Fixed the `:out-of-range` pseudo class matching for empty `input[type=number]`.
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -158,7 +159,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed `String.prototype.includes` incorrectly returning false when the string is empty and the position is past end of the string.
 - Fixed `toLocaleLowerCase` and `toLocaleUpperCase` to throw an exception on an empty string.
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -312,7 +313,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 - Fixed `overscroll-behavior: none` to prevent overscroll when the page is too small to scroll.
 
-##### Svg
+##### SVG
 
 ###### Resolved Issues
 
@@ -349,7 +350,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed the handling of `<bdo>`.
 - Fixed the order of how `@font-palette-values` `override-colors` are applied.
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
@@ -406,7 +407,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed the timing model for updating animations and sending events.
 - Fixed updating timing to invalidate the effect.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -527,7 +528,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Added support for the Badging API.
 - Added support for third-party browsers to offer Add to Home Screen from the Share menu.
 
-##### Webgl
+##### WebGL
 
 ###### New Features
 
@@ -576,7 +577,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed URL breakpoints to also pause when HTML attributes are set that trigger loads.
 - fixed: Improved the visual hierarchy of the Layout sidebar in the Elements Tab.
 
-##### Webdriver
+##### WebDriver
 
 ###### New Features
 
@@ -594,7 +595,7 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 - Fixed HTTP GET requests with a body failing.
 - Fixed the Shift modifier key not applying to typed text.
 
-##### Wkwebview
+##### WKWebView
 
 ###### New Features
 
@@ -602,17 +603,18 @@ Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadO
 
 ## See Also
 
-- [Safari 16.6 Release Notes](safari-16_6-release-notes.md)
+### Version 16
+- [Safari 16.6 Release Notes](./safari-16_6-release-notes.md)
   Released July 24, 2023 — Version 16.6 (18615.3.12)
-- [Safari 16.5 Release Notes](safari-16_5-release-notes.md)
+- [Safari 16.5 Release Notes](./safari-16_5-release-notes.md)
   Released May 18, 2023 — Version 16.5 (18615.2.9)
-- [Safari 16.3 Release Notes](safari-16_3-release-notes.md)
+- [Safari 16.3 Release Notes](./safari-16_3-release-notes.md)
   Released January 23, 2023 — Version 16.3 (18614.4.6)
-- [Safari 16.2 Release Notes](safari-16_2-release-notes.md)
+- [Safari 16.2 Release Notes](./safari-16_2-release-notes.md)
   Released December 13, 2022 — Version 16.2 (18614.3.7)
-- [Safari 16.1 Release Notes](safari-16_1-release-notes.md)
+- [Safari 16.1 Release Notes](./safari-16_1-release-notes.md)
   Released October 24, 2022 — Version 16.1 (18614.2.9)
-- [Safari 16 Release Notes](safari-16-release-notes.md)
+- [Safari 16 Release Notes](./safari-16-release-notes.md)
   Released September 12, 2022 — Version 16 (18614.1.25)
 
 

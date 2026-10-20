@@ -1,7 +1,8 @@
 # remoteHandleUpdates
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of remote handle updates produced by this service.
 
@@ -16,11 +17,12 @@ final var remoteHandleUpdates: some AsyncSequence<RCSService.RemoteHandleUpdate,
 
 #### Discussion
 
-Use a `for`-`await`-`in` loop to receive [`RCSService.RemoteHandleUpdate`](rcsservice/remotehandleupdate.md) instances from this property.
+Use a `for`-`await`-`in` loop to receive [`RCSService.RemoteHandleUpdate`](./remotehandleupdate.md) instances from this property.
 
 ## See Also
 
-- [RCSService.RemoteHandleUpdate](rcsservice/remotehandleupdate.md)
+### Receiving handle updates
+- [RCSService.RemoteHandleUpdate](./remotehandleupdate.md)
   A structure that contains information about an update to a remote handle.
 
 

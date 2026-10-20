@@ -1,7 +1,8 @@
 # SHSession
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
 
@@ -20,9 +21,13 @@ An object that matches a specific audio recording when a segment of that recordi
 class SHSession
 ```
 
+```objc
+@interface SHSession : NSObject
+```
+
 ## Mentions
 
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](./matching-audio-using-the-built-in-microphone.md)
 
 #### Overview
 
@@ -33,12 +38,12 @@ Prepare to make matches by:
 
 Search for a match in one of two ways:
 
-- Generate a signature for the captured audio and call [`match(_:)`](shsession/match(_:).md)
-- Call [`matchStreamingBuffer(_:at:)`](shsession/matchstreamingbuffer(_:at:).md) with a streaming audio buffer, and ShazamKit generates the signature for you
+- Generate a signature for the captured audio and call [`match(_:)`](./shsession/match%28_%29.md)
+- Call [`matchStreamingBuffer(_:at:)`](./shsession/matchstreamingbuffer%28_,at%29.md) with a streaming audio buffer, and ShazamKit generates the signature for you
 
 Searching the catalog is asynchronous. The session calls your delegate methods with the result.
 
-Matching audio against the Shazam catalog requires enabling your app to access the catalog. If you are using a custom catalog, you don’t need to enable ShazamKit. For more information on enabling your app, see [`Enable ShazamKit for an App ID`](https://developer.apple.comhttps://developer.apple.com/help/account/configure-app-services/shazamkit).
+Matching audio against the Shazam catalog requires enabling your app to access the catalog. If you are using a custom catalog, you don’t need to enable ShazamKit. For more information on enabling your app, see [Enable ShazamKit for an App ID](https://developer.apple.com/help/account/configure-app-services/shazamkit).
 
 The code below shows searching for a match in the Shazam catalog using an existing audio buffer:
 
@@ -68,55 +73,56 @@ switch result {
 ## Topics
 
 ### Creating a session object
-- [init()](shsession/init.md)
+- [init()](./shsession/init%28%29.md)
   Creates a new session object for matching songs in the Shazam Music catalog.
-- [init(catalog: SHCatalog)](shsession/init(catalog:).md)
+- [init(catalog: SHCatalog)](./shsession/init%28catalog%29.md)
   Creates a new session object for matching audio in a custom catalog.
 ### Making a match
-- [func match(SHSignature)](shsession/match(_:).md)
+- [func match(SHSignature)](./shsession/match%28_%29.md)
   Searches for the query signature in the reference signatures that the session catalog contains.
-- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](shsession/matchstreamingbuffer(_:at:).md)
+- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](./shsession/matchstreamingbuffer%28_,at%29.md)
   Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.
-- [Matching audio using the built-in microphone](matching-audio-using-the-built-in-microphone.md)
+- [Matching audio using the built-in microphone](./matching-audio-using-the-built-in-microphone.md)
   Use the audio stream from the microphone as the source for a ShazamKit session.
 ### Reading the session properties
-- [var delegate: (any SHSessionDelegate)?](shsession/delegate.md)
+- [var delegate: (any SHSessionDelegate)?](./shsession/delegate.md)
   The object that the session calls with the result of a match request.
-- [var catalog: SHCatalog](shsession/catalog.md)
+- [var catalog: SHCatalog](./shsession/catalog.md)
   The catalog object containing the reference signatures and their associated metadata that the session uses to perform matches.
-- [var results: SHSession.Results](shsession/results-swift.property.md)
+- [var results: SHSession.Results](./shsession/results-swift.property.md)
   The results as an asynchronous sequence of matches.
-- [SHSession.Results](shsession/results-swift.struct.md)
+- [SHSession.Results](./shsession/results-swift.struct.md)
   An asynchronous sequence that emits updates from a session object query.
 ### Returning queries
-- [func result(from: SHSignature) async -> SHSession.Result](shsession/result(from:).md)
+- [func result(from: SHSignature) async -> SHSession.Result](./shsession/result%28from%29.md)
   Performs an asynchronous match with a signature you specify.
-- [SHSession.Result](shsession/result.md)
+- [SHSession.Result](./shsession/result.md)
   Identifies the result from an asynchronous sequence result.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SHManagedSession](shmanagedsession.md)
+### Match audio
+- [class SHManagedSession](./shmanagedsession.md)
   An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
-- [protocol SHSessionDelegate](shsessiondelegate.md)
+- [protocol SHSessionDelegate](./shsessiondelegate.md)
   Methods that the session calls with the result of a match request.
-- [class SHMatch](shmatch.md)
+- [class SHMatch](./shmatch.md)
   An object that represents the catalog media items that match a query.
-- [class SHMatchedMediaItem](shmatchedmediaitem.md)
+- [class SHMatchedMediaItem](./shmatchedmediaitem.md)
   An object that represents the metadata for a matched reference signature.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 
 

@@ -1,18 +1,19 @@
 # CFRunLoopObserverCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback invoked when a CFRunLoopObserver object is fired.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ Callback invoked when a CFRunLoopObserver object is fired.
 typealias CFRunLoopObserverCallBack = (CFRunLoopObserver?, CFRunLoopActivity, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFRunLoopObserver *, enum CFRunLoopActivity, void *) CFRunLoopObserverCallBack;
+```
+
 #### Discussion
 
-You specify this callback when you create the run loop observer with [`CFRunLoopObserverCreate(_:_:_:_:_:_:)`](cfrunloopobservercreate(_:_:_:_:_:_:).md).
+You specify this callback when you create the run loop observer with [`CFRunLoopObserverCreate(_:_:_:_:_:_:)`](./cfrunloopobservercreate%28_,_,_,_,_,_%29.md).
 
 ## Parameters
 
 - `observer`: The run loop observer that is firing.
 - `activity`: The current activity stage of the run loop.
-- `info`: The `info` member of the [`CFRunLoopObserverContext`](cfrunloopobservercontext.md) structure that was used when creating the run loop observer.
+- `info`: The `info` member of the [`CFRunLoopObserverContext`](./cfrunloopobservercontext.md) structure that was used when creating the run loop observer.
 
 
 ---

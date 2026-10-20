@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text description of the dock accessory state.
 
@@ -19,7 +20,8 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [DockAccessory.Category.trackingStand](dockaccessory/category/trackingstand.md)
+### Getting properties
+- [DockAccessory.Category.trackingStand](./trackingstand.md)
   The dock accessory is a tracking stand.
 
 

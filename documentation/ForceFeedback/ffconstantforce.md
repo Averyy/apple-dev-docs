@@ -1,7 +1,8 @@
 # FFCONSTANTFORCE
 
 **Framework**: Force Feedback  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains type-specific information for the CONSTANTFORCE effect.
 
@@ -15,6 +16,10 @@ Contains type-specific information for the CONSTANTFORCE effect.
 struct FFCONSTANTFORCE
 ```
 
+```c
+struct FFCONSTANTFORCE;
+```
+
 #### Overview
 
 A pointer to a single FFCONSTANTFORCE structure for an effect is passed in the **lpvTypeSpecificParams** member of the FFEFFECT structure.
@@ -22,35 +27,36 @@ A pointer to a single FFCONSTANTFORCE structure for an effect is passed in the *
 ## Topics
 
 ### Initializers
-- [init()](ffconstantforce/init.md)
-- [init(lMagnitude: LONG)](ffconstantforce/init(lmagnitude:).md)
+- [init()](./ffconstantforce/init%28%29.md)
+- [init(lMagnitude: LONG)](./ffconstantforce/init%28lmagnitude%29.md)
 ### Instance Properties
-- [var lMagnitude: LONG](ffconstantforce/lmagnitude.md)
+- [var lMagnitude: LONG](./ffconstantforce/lmagnitude.md)
   The magnitude of the effect, in the range from -10,000 through 10,000. If an envelope is applied to this effect, the value represents the magnitude of the sustain. If no envelope is applied, the value represents the amplitude of the entire effect.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct FFCAPABILITIES](ffcapabilities.md)
+### Data Types
+- [struct FFCAPABILITIES](./ffcapabilities.md)
   Used by the FFDeviceGetForceFeedbackCapabilities method to retrieve device force-feedback capabilities.
-- [struct FFCONDITION](ffcondition.md)
+- [struct FFCONDITION](./ffcondition.md)
   A structure containing type-specific information for certain effects.
-- [struct FFCUSTOMFORCE](ffcustomforce.md)
+- [struct FFCUSTOMFORCE](./ffcustomforce.md)
   Contains type-specific information for the CUSTOMFORCE effect.
-- [struct FFEFFECT](ffeffect.md)
+- [struct FFEFFECT](./ffeffect.md)
   UsUsed by the FFDeviceCreateEffect method to initialize a new effect object. It is also used by the FFEffectSetParameters and FFEffectGetParameters functions.
-- [struct FFEFFESCAPE](ffeffescape.md)
+- [struct FFEFFESCAPE](./ffeffescape.md)
   The FFEFFESCAPE structure passes hardware-specific data directly to the Force Feedback plugIn.
-- [struct FFENVELOPE](ffenvelope.md)
+- [struct FFENVELOPE](./ffenvelope.md)
   Used by the FFEFFECT structure to specify the optional envelope parameters for an effect.
-- [struct FFPERIODIC](ffperiodic.md)
+- [struct FFPERIODIC](./ffperiodic.md)
   A structure containing type-specific information for certain effects.
-- [struct FFRAMPFORCE](fframpforce.md)
+- [struct FFRAMPFORCE](./fframpforce.md)
   Contains type-specific information for the RAMPFORCE effect.
 
 

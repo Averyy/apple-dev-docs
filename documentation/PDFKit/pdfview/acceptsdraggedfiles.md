@@ -1,7 +1,8 @@
 # acceptsDraggedFiles
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether you can drag a file into the view.
 
@@ -14,9 +15,14 @@ A Boolean value indicating whether you can drag a file into the view.
 var acceptsDraggedFiles: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL acceptsDraggedFiles;
+```
+
 ## See Also
 
-- [var allowsDragging: Bool](pdfview/allowsdragging.md)
+### Dragging in a View
+- [var allowsDragging: Bool](./allowsdragging.md)
   A Boolean value indicating whether the view can accept new PDF documents dragged into it by the user.
 
 

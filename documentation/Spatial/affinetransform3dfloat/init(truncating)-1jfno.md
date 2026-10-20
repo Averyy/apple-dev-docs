@@ -1,7 +1,8 @@
 # init(truncating:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(truncating transform: ProjectiveTransform3DFloat)
+```
+
+```c
+static SPAffineTransform3DFloat SPAffineTransform3DFloatMakeWithTruncatedProjective(SPProjectiveTransform3DFloat transform);
 ```
 
 #### Return Value

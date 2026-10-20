@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the App Clip App Store review detail associated with a default App Clip experience.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the App Clip App Store review detail assoc
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appClipAppStoreReviewDetails`
 
 
 ---

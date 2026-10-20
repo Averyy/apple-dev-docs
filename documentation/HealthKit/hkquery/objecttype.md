@@ -1,7 +1,8 @@
 # objectType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of objects being queried.
 
@@ -19,15 +20,20 @@ The type of objects being queried.
 var objectType: HKObjectType? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) HKObjectType * objectType;
+```
+
 #### Discussion
 
 Not all queries return objects of the specified type; however, they all use the object type to filter their results. For example, source queries return a set of data sources that have saved objects with a matching type, while statistics queries return statistical information about the objects with a matching type.
 
 ## See Also
 
-- [var predicate: NSPredicate?](hkquery/predicate.md)
+### Accessing properties
+- [var predicate: NSPredicate?](./predicate.md)
   A predicate used to filter the objects returned from the HealthKit store.
-- [var sampleType: HKSampleType?](hkquery/sampletype.md)
+- [var sampleType: HKSampleType?](./sampletype.md)
   The type of objects being queried.
 
 

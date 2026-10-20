@@ -1,7 +1,8 @@
 # capsule
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A capsule shape.
 
@@ -22,9 +23,10 @@ static var capsule: TextInputBorderShape { get }
 
 ## See Also
 
-- [static var automatic: TextInputBorderShape](textinputbordershape/automatic.md)
+### Getting border shape options
+- [static var automatic: TextInputBorderShape](./automatic.md)
   A shape that defers to the system to determine an appropriate shape for the given context and platform.
-- [static var roundedRectangle: TextInputBorderShape](textinputbordershape/roundedrectangle.md)
+- [static var roundedRectangle: TextInputBorderShape](./roundedrectangle.md)
   A rounded rectangle shape.
 
 

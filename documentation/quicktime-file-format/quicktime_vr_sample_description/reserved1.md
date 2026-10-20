@@ -1,7 +1,8 @@
 # reserved1
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 Reserved.
 
@@ -11,15 +12,16 @@ This field must be `0`.
 
 ## See Also
 
-- [size](quicktime_vr_sample_description/size.md)
+### Data fields
+- [size](./size.md)
   The size, in bytes, of the sample description header structure.
-- [type](quicktime_vr_sample_description/type.md)
+- [type](./type.md)
   The sample description type.
-- [reserved2](quicktime_vr_sample_description/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
-- [dataRefIndex](quicktime_vr_sample_description/datarefindex.md)
+- [dataRefIndex](./datarefindex.md)
   Reserved.
-- [data](quicktime_vr_sample_description/data.md)
+- [data](./data.md)
   The VR world atom container.
 
 

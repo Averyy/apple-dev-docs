@@ -1,7 +1,8 @@
 # all(ports:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allow local and outgoing network connections, limited to a range of allowed ports.
 

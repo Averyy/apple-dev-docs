@@ -1,7 +1,8 @@
 # kVTScalingMode_CropSourceToCleanAperture
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The source image buffer’s clean aperture is scaled to the destination clean aperture.
 
@@ -19,17 +20,22 @@ The source image buffer’s clean aperture is scaled to the destination clean ap
 let kVTScalingMode_CropSourceToCleanAperture: CFString
 ```
 
+```c
+extern CFStringRef const kVTScalingMode_CropSourceToCleanAperture;
+```
+
 #### Discussion
 
 The destination pixel aspect ratio is set on the destination image buffer.
 
 ## See Also
 
-- [let kVTScalingMode_Normal: CFString](kvtscalingmode_normal.md)
+### Scaling Modes
+- [let kVTScalingMode_Normal: CFString](./kvtscalingmode_normal.md)
   The full width and height of the source image buffer is stretched to the full width and height of the destination image buffer.
-- [let kVTScalingMode_Letterbox: CFString](kvtscalingmode_letterbox.md)
+- [let kVTScalingMode_Letterbox: CFString](./kvtscalingmode_letterbox.md)
   The source image buffer’s clean aperture is scaled to a rectangle fitted inside the  destination clean aperture that preserves the source picture aspect ratio.
-- [let kVTScalingMode_Trim: CFString](kvtscalingmode_trim.md)
+- [let kVTScalingMode_Trim: CFString](./kvtscalingmode_trim.md)
   The source image buffer’s clean aperture is scaled to a rectangle that completely fills the destination clean aperture and preserves the source picture aspect ratio.
 
 

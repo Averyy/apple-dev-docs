@@ -1,7 +1,8 @@
 # mutationsPtr
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Arbitrary state information used to detect whether the collection has been mutated.
 
@@ -18,6 +19,10 @@ Arbitrary state information used to detect whether the collection has been mutat
 
 ```swift
 var mutationsPtr: UnsafeMutablePointer<UInt>?
+```
+
+```c
+unsigned long * mutationsPtr;
 ```
 
 

@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume of the mesh, or `nil` if the mesh is not watertight.
 
@@ -18,11 +19,12 @@ final var volume: Float? { get }
 
 #### Discussion
 
-See [`isWatertight`](clothmeshresource/iswatertight.md) for more information.
+See [`isWatertight`](./iswatertight.md) for more information.
 
 ## See Also
 
-- [var isWatertight: Bool](clothmeshresource/iswatertight.md)
+### Inspecting mesh geometry
+- [var isWatertight: Bool](./iswatertight.md)
   Indicates whether the mesh is “watertight”.
 
 

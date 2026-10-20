@@ -1,7 +1,8 @@
 # keyboardShortcut(_:modifiers:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a keyboard shortcut and assigns it to the modified control.
 
@@ -27,21 +28,22 @@ The target of a keyboard shortcut is resolved in a leading-to-trailing, depth-fi
 
 If multiple controls are associated with the same shortcut, the first one found is used.
 
-The default localization configuration is set to [`automatic`](keyboardshortcut/localization-swift.struct/automatic.md).
+The default localization configuration is set to [`automatic`](../keyboardshortcut/localization-swift.struct/automatic.md).
 
 ## See Also
 
-- [func keyboardShortcut(_:)](view/keyboardshortcut(_:).md)
+### Creating keyboard shortcuts
+- [func keyboardShortcut(_:)](./keyboardshortcut%28_%29.md)
   Assigns a keyboard shortcut to the modified control.
-- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some View](view/keyboardshortcut(_:modifiers:localization:).md)
+- [func keyboardShortcut(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization) -> some View](./keyboardshortcut%28_,modifiers,localization%29.md)
   Defines a keyboard shortcut and assigns it to the modified control.
-- [var keyboardShortcut: KeyboardShortcut?](environmentvalues/keyboardshortcut.md)
+- [var keyboardShortcut: KeyboardShortcut?](../environmentvalues/keyboardshortcut.md)
   The keyboard shortcut that buttons in this environment will be triggered with.
-- [struct KeyboardShortcut](keyboardshortcut.md)
+- [struct KeyboardShortcut](../keyboardshortcut.md)
   Keyboard shortcuts describe combinations of keys on a keyboard that the user can press in order to activate a button or toggle.
-- [struct KeyEquivalent](keyequivalent.md)
+- [struct KeyEquivalent](../keyequivalent.md)
   Key equivalents consist of a letter, punctuation, or function key that can be combined with an optional set of modifier keys to specify a keyboard shortcut.
-- [struct EventModifiers](eventmodifiers.md)
+- [struct EventModifiers](../eventmodifiers.md)
   A set of key modifiers that you can add to a gesture.
 
 

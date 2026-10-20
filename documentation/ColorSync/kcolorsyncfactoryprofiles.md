@@ -1,7 +1,8 @@
 # kColorSyncFactoryProfiles
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a `CFDictionary` describing the device’s factory profiles.
 
@@ -15,11 +16,16 @@ A key whose value is a `CFDictionary` describing the device’s factory profiles
 var kColorSyncFactoryProfiles: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncFactoryProfiles;
+```
+
 ## See Also
 
-- [var kColorSyncCustomProfiles: Unmanaged<CFString>!](kcolorsynccustomprofiles.md)
+### Accessing custom and factory profiles
+- [var kColorSyncCustomProfiles: Unmanaged<CFString>!](./kcolorsynccustomprofiles.md)
   A key whose value is a `CFDictionary` describing the device’s custom profiles.
-- [var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!](kcolorsyncdonotsubstituteprofiles.md)
+- [var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!](./kcolorsyncdonotsubstituteprofiles.md)
   An option that, when set to `kCFBooleanTrue`, skips substituting a matching system-provided profile.
 
 

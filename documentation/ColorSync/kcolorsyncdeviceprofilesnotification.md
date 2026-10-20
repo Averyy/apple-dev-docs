@@ -1,7 +1,8 @@
 # kColorSyncDeviceProfilesNotification
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A notification that ColorSync posts when a device’s profiles change.
 
@@ -15,15 +16,20 @@ A notification that ColorSync posts when a device’s profiles change.
 var kColorSyncDeviceProfilesNotification: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncDeviceProfilesNotification;
+```
+
 ## See Also
 
-- [var kColorSyncDeviceRegisteredNotification: Unmanaged<CFString>!](kcolorsyncdeviceregisterednotification.md)
+### Observing device notifications
+- [var kColorSyncDeviceRegisteredNotification: Unmanaged<CFString>!](./kcolorsyncdeviceregisterednotification.md)
   A notification that ColorSync posts when a device is registered.
-- [var kColorSyncDeviceUnregisteredNotification: Unmanaged<CFString>!](kcolorsyncdeviceunregisterednotification.md)
+- [var kColorSyncDeviceUnregisteredNotification: Unmanaged<CFString>!](./kcolorsyncdeviceunregisterednotification.md)
   A notification that ColorSync posts when a device is unregistered.
-- [var kColorSyncDisplayDeviceProfilesNotification: Unmanaged<CFString>!](kcolorsyncdisplaydeviceprofilesnotification.md)
+- [var kColorSyncDisplayDeviceProfilesNotification: Unmanaged<CFString>!](./kcolorsyncdisplaydeviceprofilesnotification.md)
   A notification that ColorSync posts when a display device’s profiles change.
-- [var kColorSyncRegistrationUpdateWindowServer: Unmanaged<CFString>!](kcolorsyncregistrationupdatewindowserver.md)
+- [var kColorSyncRegistrationUpdateWindowServer: Unmanaged<CFString>!](./kcolorsyncregistrationupdatewindowserver.md)
   A notification concerning the window server’s device registration.
 
 

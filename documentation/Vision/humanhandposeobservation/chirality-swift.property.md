@@ -1,7 +1,8 @@
 # chirality
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chirality, or handedness, of a pose.
 
@@ -21,11 +22,12 @@ let chirality: HumanHandPoseObservation.Chirality?
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [HumanHandPoseObservation.Chirality](humanhandposeobservation/chirality-swift.enum.md)
+- [HumanHandPoseObservation.Chirality](./chirality-swift.enum.md)
   The hand sidedness of a pose.
-- [var keypoints: MLMultiArray](humanhandposeobservation/keypoints.md)
+- [var keypoints: MLMultiArray](./keypoints.md)
   The keypoints for the observation.
 
 

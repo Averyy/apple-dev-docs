@@ -1,7 +1,8 @@
 # init(predicate:anchor:options:resultsHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(predicate: NSPredicate?, anchor: HKQueryAnchor?, options: HKWorkoutEffortRelationshipQueryOptions, resultsHandler: @escaping @Sendable (HKWorkoutEffortRelationshipQuery, [HKWorkoutEffortRelationship]?, HKQueryAnchor?, (any Error)?) -> Void)
+```
+
+```objc
+- (instancetype) initWithPredicate:(NSPredicate *) predicate anchor:(HKQueryAnchor *) anchor options:(HKWorkoutEffortRelationshipQueryOptions) options resultsHandler:(void (^)(HKWorkoutEffortRelationshipQuery *query, NSArray<HKWorkoutEffortRelationship *> *relationships, HKQueryAnchor *newAnchor, NSError *error)) resultsHandler;
 ```
 
 

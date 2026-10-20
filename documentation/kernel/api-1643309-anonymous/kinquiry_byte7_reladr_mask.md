@@ -1,14 +1,15 @@
 # kINQUIRY_Byte7_RELADR_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_Byte7_RELADR_Mask = (1 << kINQUIRY_Byte7_RELADR_Bit)
 ```
 

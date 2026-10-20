@@ -1,7 +1,8 @@
 # stopMagnetometerUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops magnetometer updates.
 
@@ -17,17 +18,22 @@ Stops magnetometer updates.
 func stopMagnetometerUpdates()
 ```
 
+```objc
+- (void) stopMagnetometerUpdates;
+```
+
 ## See Also
 
-- [var magnetometerUpdateInterval: TimeInterval](cmmotionmanager/magnetometerupdateinterval.md)
+### Managing Magnetometer Updates
+- [var magnetometerUpdateInterval: TimeInterval](./magnetometerupdateinterval.md)
   The interval, in seconds, at which the system delivers magnetometer data to the block handler.
-- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](cmmotionmanager/startmagnetometerupdates(to:withhandler:).md)
+- [func startMagnetometerUpdates(to: OperationQueue, withHandler: CMMagnetometerHandler)](./startmagnetometerupdates%28to,withhandler%29.md)
   Starts magnetometer updates on an operation queue and with a specified handler.
-- [func startMagnetometerUpdates()](cmmotionmanager/startmagnetometerupdates.md)
+- [func startMagnetometerUpdates()](./startmagnetometerupdates%28%29.md)
   Starts magnetometer updates without a block handler.
-- [var magnetometerData: CMMagnetometerData?](cmmotionmanager/magnetometerdata.md)
+- [var magnetometerData: CMMagnetometerData?](./magnetometerdata.md)
   The latest sample of magnetometer data.
-- [typealias CMMagnetometerHandler](cmmagnetometerhandler.md)
+- [typealias CMMagnetometerHandler](../cmmagnetometerhandler.md)
   The type of block callback for handling magnetometer data.
 
 

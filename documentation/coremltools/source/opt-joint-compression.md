@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-joint-compressio
 
 # Combining Compression Types
 
-**
-
-- [.md](../_sources/source/opt-joint-compression.md)
-- **
-
-.pdf
-
-**
-
-# Combining Compression Types
-
- Table of contents 
-
-## Contents
-
-# Combining Compression Types
-
 In previous sections on [palettization](opt-palettization.md),
 [quantization](opt-quantization.md), and [sparsity](opt-pruning.md),
 we considered how to apply the various compression
@@ -278,7 +261,7 @@ mlmodel.save("model_torch_pruned_and_quantized.mlpackage")
 Here we apply magnitude pruning to the torch model, followed by data-free palettization.
 
 Note: to apply training time pruning and
-palettization (e.g. [DKM](opt-palettization-algos.html#differentiable-k-means)), follow
+palettization (e.g. [DKM](opt-palettization-algos.md#differentiable-k-means)), follow
 the same pattern as the section above, replacing the `LinearQuantizer` with `DKMPalettizer`.
 
 ```
@@ -349,5 +332,3 @@ mlmodel = ct.convert(traced_model,
                      )
 mlmodel.save("model_torch_pruned_and_palettized.mlpackage")
 ```
-
-** Contents

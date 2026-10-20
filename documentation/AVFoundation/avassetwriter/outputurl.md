@@ -1,7 +1,8 @@
 # outputURL
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the container file that the writer outputs.
 
@@ -19,9 +20,14 @@ The location of the container file that the writer outputs.
 var outputURL: URL { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURL * outputURL;
+```
+
 ## See Also
 
-- [var outputFileType: AVFileType](avassetwriter/outputfiletype.md)
+### Accessing output settings
+- [var outputFileType: AVFileType](./outputfiletype.md)
   The type of container file that the writer outputs.
 
 

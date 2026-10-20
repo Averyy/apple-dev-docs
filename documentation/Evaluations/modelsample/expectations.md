@@ -1,7 +1,8 @@
 # expectations
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected pattern of tool calls for this sample.
 
@@ -19,6 +20,8 @@ The expected pattern of tool calls for this sample.
 ```swift
 var expectations: TrajectoryExpectation? { get }
 ```
+
+Available when `ExpectedValue` conforms to `Decodable`, `Encodable`, and `Sendable`.
 
 
 ---

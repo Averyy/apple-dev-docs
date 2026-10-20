@@ -1,7 +1,8 @@
 # faceID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique ID for this face metadata object.
 
@@ -16,6 +17,10 @@ The unique ID for this face metadata object.
 
 ```swift
 var faceID: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger faceID;
 ```
 
 #### Discussion

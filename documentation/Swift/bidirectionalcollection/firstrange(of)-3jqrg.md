@@ -1,7 +1,8 @@
 # firstRange(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of the first match for the regex within this collection, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Returns the range of the first match for the regex within this collection, where
 ```swift
 func firstRange(@RegexComponentBuilder of content: () -> some RegexComponent) -> Range<Self.Index>?
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

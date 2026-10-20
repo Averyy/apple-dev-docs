@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct xinpgen {
     ...
 };
@@ -17,10 +17,10 @@ struct xinpgen {
 ## Topics
 
 ### Instance Properties
-- [xig_count](xinpgen/3754408-xig_count.md)
-- [xig_gen](xinpgen/3754409-xig_gen.md)
-- [xig_len](xinpgen/3754410-xig_len.md)
-- [xig_sogen](xinpgen/3754411-xig_sogen.md)
+- [xig_count](./xinpgen/api-3754408-xig_count.md)
+- [xig_gen](./xinpgen/api-3754409-xig_gen.md)
+- [xig_len](./xinpgen/api-3754410-xig_len.md)
+- [xig_sogen](./xinpgen/api-3754411-xig_sogen.md)
 
 
 ---

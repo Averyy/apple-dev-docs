@@ -1,7 +1,8 @@
 # excludeDeviceCommunication
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var excludeDeviceCommunication: Bool { get set }
+```
+
+```objc
+@property BOOL excludeDeviceCommunication;
 ```
 
 

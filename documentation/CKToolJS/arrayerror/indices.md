@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of indexes of elements that failed validation in the array.
 
@@ -10,7 +11,7 @@ An array of indexes of elements that failed validation in the array.
 
 ## Declaration
 
-```swift
+```
 attribute Array indices;
 ```
 

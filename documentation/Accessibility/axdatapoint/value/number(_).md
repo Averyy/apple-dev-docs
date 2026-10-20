@@ -1,7 +1,8 @@
 # AXDataPoint.Value.number(_:)
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A numeric data value.
 
@@ -22,7 +23,8 @@ case number(Double)
 
 ## See Also
 
-- [AXDataPoint.Value.category(_:)](axdatapoint/value/category(_:).md)
+### Constants
+- [AXDataPoint.Value.category(_:)](./category%28_%29.md)
   A categorical data value.
 
 

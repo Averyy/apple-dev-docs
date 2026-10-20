@@ -1,7 +1,8 @@
 # ITLibPlaylistKind
 
 **Framework**: iTunes Library  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the possible kinds of playlists.
 
@@ -15,49 +16,54 @@ These constants specify the possible kinds of playlists.
 enum ITLibPlaylistKind
 ```
 
+```c
+enum ITLibPlaylistKind : NSUInteger;
+```
+
 ## Topics
 
 ### Playlist Kinds
-- [ITLibPlaylistKind.regular](itlibplaylistkind/regular.md)
+- [ITLibPlaylistKind.regular](./itlibplaylistkind/regular.md)
   A standard playlist that the user or iTunes creates, such as *Music*, *Movies*, *Pop Mix*, or *My Awesome Playlist*.
-- [ITLibPlaylistKind.smart](itlibplaylistkind/smart.md)
+- [ITLibPlaylistKind.smart](./itlibplaylistkind/smart.md)
   A playlist with contents that iTunes generates by evaluating a set of rules, such as *90s Music* or *Songs from 1999*.
-- [ITLibPlaylistKind.genius](itlibplaylistkind/genius.md)
+- [ITLibPlaylistKind.genius](./itlibplaylistkind/genius.md)
   A playlist iTunes creates of songs that go well with a song the user specifies.
-- [ITLibPlaylistKind.folder](itlibplaylistkind/folder.md)
+- [ITLibPlaylistKind.folder](./itlibplaylistkind/folder.md)
   A playlist folder that the user or iTunes creates, such as *My Playlist Folder* or *Genius Mixes*.
-- [ITLibPlaylistKind.geniusMix](itlibplaylistkind/geniusmix.md)
+- [ITLibPlaylistKind.geniusMix](./itlibplaylistkind/geniusmix.md)
   An ongoing playlist in a particular genre—like a commercial-free radio station playing the user’s favorite songs—that iTunes creates from music in the user’s iTunes library.
 ### Initializers
-- [init?(rawValue: UInt)](itlibplaylistkind/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./itlibplaylistkind/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var name: String](itlibplaylist/name.md)
+### Getting Playlist Info
+- [var name: String](./itlibplaylist/name.md)
   The name or title of the playlist.
-- [var items: [ITLibMediaItem]](itlibplaylist/items.md)
+- [var items: [ITLibMediaItem]](./itlibplaylist/items.md)
   The media items (tracks) in the playlist.
-- [var parentID: NSNumber?](itlibplaylist/parentid.md)
+- [var parentID: NSNumber?](./itlibplaylist/parentid.md)
   The unique persistent identifier of the playlist’s parent playlist.
-- [var isPrimary: Bool](itlibplaylist/isprimary.md)
+- [var isPrimary: Bool](./itlibplaylist/isprimary.md)
   A Boolean value that indicates whether the playlist is the primary playlist.
-- [var isVisible: Bool](itlibplaylist/isvisible.md)
+- [var isVisible: Bool](./itlibplaylist/isvisible.md)
   A Boolean value that indicates whether the playlist is visible to the user in iTunes.
-- [var distinguishedKind: ITLibDistinguishedPlaylistKind](itlibplaylist/distinguishedkind.md)
+- [var distinguishedKind: ITLibDistinguishedPlaylistKind](./itlibplaylist/distinguishedkind.md)
   An indication of whether the playlist has a special distinction.
-- [var kind: ITLibPlaylistKind](itlibplaylist/kind.md)
+- [var kind: ITLibPlaylistKind](./itlibplaylist/kind.md)
   An indication of the type of playlist.
-- [enum ITLibDistinguishedPlaylistKind](itlibdistinguishedplaylistkind.md)
+- [enum ITLibDistinguishedPlaylistKind](./itlibdistinguishedplaylistkind.md)
   These constants specify the possible kinds of distinguished playlists.
 
 

@@ -1,22 +1,23 @@
 # HTTP Live Streaming (HLS) Authoring Specification for Apple devices appendixes
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Learn additional information related to the HLS Authoring Specification for Apple Devices.
 
 #### Overview
 
-The appendixes in this article expand on information provided in the [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md). It is not intended as a standalone document.
+The appendixes in this article expand on information provided in the [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md). It is not intended as a standalone document.
 
-##### Testing Your Streams
+##### Testing your streams
 
-Apple provides several command-line tools for [`HTTP Live Streaming`](https://developer.apple.comhttps://developer.apple.com/download/all). After signing in with your Apple Developer account, search for *http live streaming tools*.
+Apple provides several command-line tools for [HTTP Live Streaming](https://developer.apple.com/download/all). After signing in with your Apple Developer account, search for *http live streaming tools*.
 
 To assist in validating your streams, use the command-line tools `mediastreamvalidator` and `hlsreport`. While these tools are unable to check everything about your streams, the checks they do are fairly comprehensive and Apple continues to improve the tools.
 
 Check the video quality of your streams by visual inspection. The `mediastreamvalidator` tool does not check video quality, so check playback of your streams under a variety of network conditions.
 
-##### Using Hlsreport
+##### Using hlsreport
 
 Use the binary `hlsreport` to generate an HTML summary report from a JSON file that `mediastreamvalidator` creates. The report includes several tables with details about variants, renditions, and I-frame variants. Each table entry has a unique stream ID number. A list of issues is included, divided into Must Fix and Should Fix categories according to this specification. The issues cross-reference individual variants and renditions using the unique stream IDs.
 
@@ -32,7 +33,7 @@ where `validation_data.json` is the JSON file that `mediastreamvalidator` genera
 
 For further information, see the `hlsreport(1)` man page.
 
-##### Declared Versus Measured Values of Bandwidths
+##### Declared versus measured values of bandwidths
 
 VOD bit rates are measured over the entirety of the content. Live (linear) bit rates are measured over ~1 hour of content.
 
@@ -42,7 +43,7 @@ VOD bit rates are measured over the entirety of the content. Live (linear) bit r
 | Measured peak bit rate versus BANDWIDTH (attribute) | within 10% of attribute value | < 125% of attribute value |
 | Measured peak bit rate versus measured average bit rate | < 200% of measured average | no rule |
 
-##### Audio Compatibility
+##### Audio compatibility
 
 Additional information about device and audio format compatibility.
 
@@ -60,15 +61,15 @@ Additional information about device and audio format compatibility.
 
 > **Note**: All of the devices in the above table support AAC (Stereo).
 
-See [`Specs`](https://developer.apple.comhttps://support.apple.com/specs/) for actual technical specifications.
+See [Specs](https://support.apple.com/specs/) for actual technical specifications.
 
 *Complete support requires iOS 9.3 or tvOS 9.2, or later. Dolby Digital Plus with Dolby Atmos requires tvOS 12.0 or later.
 
 Dolby Digital Plus with Dolby Atmos† requires tvOS 12.0 or later.
 
-APAC support depends on the capability of the actual device and OS version. See [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) specification for support information.
+APAC support depends on the capability of the actual device and OS version. See [APAC](https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf) specification for support information.
 
-##### On Bit Rates for Variants
+##### On bit rates for variants
 
 A number of factors affect the bit rate needed to encode video:
 
@@ -80,11 +81,11 @@ A number of factors affect the bit rate needed to encode video:
 - Complexity of the content
 - Desired subjective quality
 
-These factors make universal encoding recommendations for content difficult. [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md) includes initial bit rate recommendations that you can evaluate against your content, constraints and encoding workflow.
+These factors make universal encoding recommendations for content difficult. [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md) includes initial bit rate recommendations that you can evaluate against your content, constraints and encoding workflow.
 
-##### I Frame Bit Rates Versus Normal Bit Rates
+##### I-frame bit rates versus normal bit rates
 
-The formula in item 6.5 (for I-frame bit rates) in [`HTTP Live Streaming (HLS) authoring specification for Apple devices`](hls-authoring-specification-for-apple-devices.md) requires some explanation.
+The formula in item 6.5 (for I-frame bit rates) in [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md) requires some explanation.
 
 During trick play, the player tries to deliver eight frames per second. If the playback rate implies a higher frame rate, frames will be dropped to keep the frame rate at eight frames per second. If fewer frames are available, it will play at a lower frame rate.
 
@@ -92,7 +93,7 @@ The I-frame bit rate is the bit rate of the rendition if it were played at norma
 
 The I-frame rendition should have an effective bit rate similar to the normal content. So the normal bit rate divided by the multiplier should be the bit rate for the I-frame. Dividing by a fraction is the same as multiplying by its inverse, so the result is 6.5 — the bit rate of a normal playlist of the same resolution times the fps of the I-frame playlist divided by eight.
 
-##### I Frame Image Sequences
+##### I-frame image sequences
 
 I-frame image sequences using the `mjpg` codec have been added to support some third-party devices. The sequences should be low bandwidth and require minimal processing. Players should prefer video I-frame variants over image sequences.
 
@@ -104,7 +105,7 @@ The recommendations for image sequences are as folows:
 - One key-frame every 1 to 2 seconds
 - Bandwidth should be reasonable for the resolution based on the codec implementation
 
-##### Audio Rendition Groups and Variants
+##### Audio rendition groups and variants
 
 In building up a multivariant playlist, the first step is to choose your video resolutions and codecs. These are your basic variants. Each one will have a video media playlist. The playlist URI may be repeated in multiple `EXT-X-STREAM-INF` tags so that the same video can be associated with different audio content.
 
@@ -118,7 +119,7 @@ After you have your audio groups, you replicate the variant entries for each gro
 
 You may encounter a problem where the variants you want to favor aren’t being chosen. The default behavior is to choose the highest bit rate among what’s currently playable. With USAC and with Dolby Digital Plus, this can cause an inversion where the chosen variant is not what you would prefer. To remedy this, Apple added the `SCORE` attribute. The value is a floating-point number. You have to put it on all the variants. If you want to set an order, it has to be complete, otherwise you’ll have situations where you won’t be able to choose. The usual filtering occurs to get down to a set of variants, any of which could be played. At that point, the system uses `SCORE` to decide and the highest `SCORE` wins.
 
-##### Values for the Codecs Attribute
+##### Values for the CODECS attribute
 
 Use the `CODECS` attribute of the `EXT-X-STREAM-INF` tag (and `EXT-X-I-FRAME-STREAM-INF`) to specify media sample types. The value is a quoted-string containing a comma-separated list of formats, where each format specifies a media sample type that is present in a media segment of the playlist or in a media segment of some rendition that the tag references.
 
@@ -144,7 +145,7 @@ Valid format identifiers are those in the ISO Base Media File Format Name Space 
 
 > **Note**: HLS recognizes `'avc3'`, `'dvhe'`, and `'hev1'`, but Apple doesn’t recommend using them.
 
-The MP4 registration authority ([`mp4ra.org`](https://developer.apple.comhttp://mp4ra.org)) lists a value of `ec+3` for Enhanced AC-3 audio with JOC (Dolby Atmos) but it has been deprecated now. HLS uses `ec-3` and marks the presence of the additional JOC content with `JOC` in the `CHANNELS` attribute of the audio rendition. The `JOC` must be capitalized. For example, `CHANNELS="16/JOC"`. The numeric value should match the value of the `complexity_index_type_a` field in the `EC3SpecificBox` of the Dolby Digital Plus audio track.
+The MP4 registration authority ([mp4ra.org](http://mp4ra.org)) lists a value of `ec+3` for Enhanced AC-3 audio with JOC (Dolby Atmos) but it has been deprecated now. HLS uses `ec-3` and marks the presence of the additional JOC content with `JOC` in the `CHANNELS` attribute of the audio rendition. The `JOC` must be capitalized. For example, `CHANNELS="16/JOC"`. The numeric value should match the value of the `complexity_index_type_a` field in the `EC3SpecificBox` of the Dolby Digital Plus audio track.
 
 | Sample type | Description |
 | --- | --- |
@@ -170,7 +171,7 @@ The MP4 registration authority ([`mp4ra.org`](https://developer.apple.comhttp://
 | `stpp.ttml.im1t` | IMSC1 text-only subtitles |
 | `wvtt` | WebVTT subtitles |
 
-##### Allowed Cpc Values for Fairplay Streaming
+##### ALLOWED-CPC values for FairPlay Streaming
 
 The `ALLOWED-CPC` attribute restricts playback of an encrypted variant stream to devices that guarantee a certain level of content protection robustness. The attribute associates a list of Content Protection Configuration (CPC) Labels with a specific `KEYFORMAT` value.
 
@@ -185,7 +186,7 @@ The permitted CPC Labels for FairPlay Streaming are:
 
 An example of a valid attribute is: `ALLOWED-CPC="com.apple.streamingkeydelivery:AppleMain/Main"`
 
-##### The Supplemental Codecs Attribute
+##### The SUPPLEMENTAL-CODECS attribute
 
 Some codecs are backward-compatible with other codecs. These codecs work by adding metadata that are ignored when being interpreted as the compatible codec, but used by the newer codec. These codecs include Dolby Vision 8.4 and 10.4 (compatible with HLG) and Dolby Vision 8.1 and 10.1 (compatible with HDR10).
 
@@ -208,39 +209,39 @@ Note that, for Dolby Vision, the compatibility brand and the `VIDEO-RANGE` attri
 
 ##### Dim Flashing Lights
 
-Dim Flashing Lights is a setting (see [`What’s new in Accessibility`](https://developer.apple.comhttps://developer.apple.com/accessibility/#dim-flashing-lights)) that allows people to indicate that they want to avoid bright, frequent flashes of light in video. As an additional measure, content producers can add markers to their HTTP Live Streaming content that identify the regions likely to cause discomfort.
+Dim Flashing Lights is a setting (see [What’s new in Accessibility](https://developer.apple.com/accessibility/#dim-flashing-lights)) that allows people to indicate that they want to avoid bright, frequent flashes of light in video. As an additional measure, content producers can add markers to their HTTP Live Streaming content that identify the regions likely to cause discomfort.
 
 Regions can be signalled using the standard `#EXT-X-DATERANGE` tag. The `CLASS` attribute should be set to “com.apple.accessibility.video.strobing.general-flash”. Add an additional `X-RISK-LEVEL` attribute. The risk level should be a decimal floating-point value in the range 0 to 100, where 0 is minimal risk and 100 is very risky.
 
-To avoid using a large number of regions, restrict risk-level values to a small set of values. Use a risk level of zero for regions that have very low risk. Don’t mark regions with a risk level unless they have been analyzed. Raw risk values can be computed using an algorithm such as [`VideoFlashingReduction`](https://developer.apple.comhttps://github.com/apple/VideoFlashingReduction).
+To avoid using a large number of regions, restrict risk-level values to a small set of values. Use a risk level of zero for regions that have very low risk. Don’t mark regions with a risk level unless they have been analyzed. Raw risk values can be computed using an algorithm such as [VideoFlashingReduction](https://github.com/apple/VideoFlashingReduction).
 
-The [`AVPlayerItemMetadataCollector`](https://developer.apple.com/documentation/avfoundation/avplayeritemmetadatacollector) class can be used in your application to fetch the `#EXT-X-DATERANGE` tag metadata.
+The [`AVPlayerItemMetadataCollector`](../AVFoundation/avplayeritemmetadatacollector.md) class can be used in your application to fetch the `#EXT-X-DATERANGE` tag metadata.
 
-If you use the [`AVKit`](https://developer.apple.com/documentation/avkit) framework the metadata is fetched for you and the timeline is marked with a reddish color. If you display your own timeline you should do something similar.
+If you use the [AVKit](../AVKit/AVKit.md) framework the metadata is fetched for you and the timeline is marked with a reddish color. If you display your own timeline you should do something similar.
 
-##### Additional Spatial Video Specifications
+##### Additional spatial video specifications
 
-Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about spatial views. For more information, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
+Video Extended Usage atom (`'vexu'`) is a sample description extension that conveys extensible information about spatial views. For more information, see [QuickTime and ISO Base Media File Formats and Spatial and Immersive Media](https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf).
 
 Spatial video can benefit from frame based metadata. This can be provided using timed metadata tracks within ISOBMFF (ISO Base Media File Format) or QuickTime files.
 
-> **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9 *Multiplexed timed metadata tracks* of that document). The [`QuickTime File Format Specification`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format) refers to the `'mebx'` atom as a *timed metadata sample description* (see [`Timed Metadata Media`](https://developer.apple.comhttps://developer.apple.com/documentation/quicktime-file-format/timed_metadata_sample_descriptions)). The `'mebx'` atom and its contents are a generic structure.
+> **Note**: An `'mebx'` atom or box describes the samples in a timed metadata track. The international standard ISO/IEC 14496-12:2022 (“Information technology — Coding of audio-visual objects — Part 12: ISO base media file format”) refers to this box as a `BoxedMetadataSampleEntry` (for more information, see section 12.9 *Multiplexed timed metadata tracks* of that document). The [QuickTime File Format Specification](../quicktime-file-format/quicktime-file-format.md) refers to the `'mebx'` atom as a *timed metadata sample description* (see [Timed Metadata Media](../quicktime-file-format/timed_metadata_sample_descriptions.md)). The `'mebx'` atom and its contents are a generic structure.
 
-You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [`QuickTime and ISO Base Media File Formats and Spatial and Immersive Media`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [`Video Contour Map Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
+You can provide parallax metadata for subtitles or captions using a timed metadata track. This allows control over the depth at which the text is displayed relative to the image. For details, see [QuickTime and ISO Base Media File Formats and Spatial and Immersive Media](https://developer.apple.com/av-foundation/Stereo-Video-ISOBMFF-Extensions.pdf) and [Video Contour Map Payload Metadata within the QuickTime Movie File Format](https://developer.apple.com/av-foundation/Video-Contour-Map-Metadata.pdf).
 
-You can provide per frame rectangular mask metadata (PFRM, aka dynamic mask metadata) using a timed metadata track. This is used to indicate a fixed or changing rectangular area extracted from otherwise constant sized decoded video, for example letterboxing, or more complex spatial video adjustments to the displayed area. For details, see [`Rectangular Mask Payload Metadata within the QuickTime Movie File Format`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Rectangular-Dynamic-Mask-Metadata.pdf)
+You can provide per frame rectangular mask metadata (PFRM, aka dynamic mask metadata) using a timed metadata track. This is used to indicate a fixed or changing rectangular area extracted from otherwise constant sized decoded video, for example letterboxing, or more complex spatial video adjustments to the displayed area. For details, see [Rectangular Mask Payload Metadata within the QuickTime Movie File Format](https://developer.apple.com/av-foundation/Rectangular-Dynamic-Mask-Metadata.pdf)
 
-Immersive video MUST point to an Apple Immersive Media Embedded (AIME) file via EXT-X-SESSION-DATA tag. This file provides information necessary to present the video correctly. To learn more about AIME, see [`Apple Immersive Media Embedded`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/requirements-dev4579429f0/1.0/web/1.0). See [`Apple Immersive Video Utility User Guide`](https://developer.apple.comhttps://support.apple.com/guide/immersive-video-utility/welcome/web) for more information.
+Immersive video MUST point to an Apple Immersive Media Embedded (AIME) file via EXT-X-SESSION-DATA tag. This file provides information necessary to present the video correctly. To learn more about AIME, see [Apple Immersive Media Embedded](https://support.apple.com/guide/immersive-video-utility/requirements-dev4579429f0/1.0/web/1.0). See [Apple Immersive Video Utility User Guide](https://support.apple.com/guide/immersive-video-utility/welcome/web) for more information.
 
-Immersive video SHOULD use Apple Positional Audio Codec (APAC) for audio codec. APAC provides rich spatial audio experience. To learn more about APAC, see [`APAC`](https://developer.apple.comhttps://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf).
+Immersive video SHOULD use Apple Positional Audio Codec (APAC) for audio codec. APAC provides rich spatial audio experience. To learn more about APAC, see [Apple Positional Audio Codec](https://developer.apple.com/av-foundation/Apple-Positional-Audio-Codec.pdf).
 
-For more information on encoding MV-HEVC video, see [`Apple HEVC Stereo Video`](https://developer.apple.comhttps://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf).
+For more information on encoding MV-HEVC video, see [Apple HEVC Stereo Video](https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf).
 
-You can find also find these resources listed at [`AVFoundation Overview`](https://developer.apple.comhttps://developer.apple.com/av-foundation/).
+You can find also find these resources listed at [AVFoundation Overview](https://developer.apple.com/av-foundation/).
 
-##### Requirements for Downloading and Persisting Hls Streams
+##### Requirements for downloading and persisting HLS streams
 
-###### Multivariant Playlist and Its Resources Expiry Requirements
+###### Multivariant Playlist and its resources expiry requirements
 
 Content providers MUST assure that the original Multivariant Playlist URL and its resources do not expire on the CDN, as long as the downloaded asset will be needed by the application. There are 3 reasons.
 
@@ -248,27 +249,27 @@ Content providers MUST assure that the original Multivariant Playlist URL and it
 - (Supplementary downloads) If the app explicitly initiates supplementary download of variants and renditions to an existing movpkg location, the download operation will fail if the Multivariant Playlist URL or its resources have expired on the CDN.
 - (AirPlay) When AirPlay-ing a downloaded HLS content, the AirPlay receiver will attempt to load the original Multivariant Playlist URL, which should remain available for as long as the download can be persisted on the sender device.
 
-###### Content Steering Requirements
+###### Content Steering requirements
 
-- If the content supports [`Content Steering`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-content-steering), Media Playlists MUST include STABLE-RENDITION-ID & STABLE-VARIANT-ID attributes; this decouples the variant identity from its CDN location.
+- If the content supports [Content Steering](https://datatracker.ietf.org/doc/html/draft-pantos-content-steering), Media Playlists MUST include STABLE-RENDITION-ID & STABLE-VARIANT-ID attributes; this decouples the variant identity from its CDN location.
 - If one Media Playlist includes a STABLE-RENDITION-ID or STABLE-VARIANT-ID, all other Media Playlists MUST also specify a stable ID.
 - The Content Steering manifest MUST remain available for the same timespan as the Multivariant Playlist URL above for the same reasons.
 
-###### Interstitials Requirements
+###### Interstitials requirements
 
 - Your ads and other non-primary media MAY be inserted in the Media Playlists or as Interstitials.
 - To allow predictable tier selection at the time of download, interstitial assets SHOULD follow the content structure of the main content (e.g., Codecs, subtitle/audio languages, etc.,).
 
-###### Download Performance Requirements
+###### Download performance requirements
 
 - Download speed will be improved by authoring content in a way that reduces the total number of HTTP requests, and specifically the requests that have a short payload. HLS content intended for download SHOULD be encapsulated as fMP4 or elementary audio stream, and consecutive segments in Media Playlists use EXT-X-BYTERANGE attributes with contiguous ranges; this allows the number of HTTP requests to be reduced via coalescing. Content SHOULD also avoid usage of small files, where possible. For instance, subtitles can be authored as a single segment for all cues across the entire asset duration.
 - Extra-long-form content, such as audiobooks, SHOULD be split in multiple assets (e.g., per chapter). This is particularly important for playback of downloaded audio assets on watchOS, to enable performant playback start-up and reduce battery usage.
 
-##### Example Playlists
+##### Example playlists
 
-> **Note**: Please see [`Streaming Examples`](https://developer.apple.comhttps://developer.apple.com/streaming/examples/) for sample HLS streams.
+> **Note**: Please see [Streaming Examples](https://developer.apple.com/streaming/examples/) for sample HLS streams.
 
-###### Example Playlist with Stereo Video
+###### Example playlist with Stereo video.
 
 ```swift
 #EXTM3U
@@ -293,7 +294,7 @@ Content providers MUST assure that the original Multivariant Playlist URL and it
 2160p/prog_index.m3u8
 ```
 
-###### Example Playlist with Apmp Video
+###### Example playlist with APMP video.
 
 ```swift
 #EXTM3U
@@ -316,7 +317,7 @@ large/prog_index.m3u8
 #EXT-X-I-FRAME-STREAM-INF:AVERAGE-BANDWIDTH=5070173,BANDWIDTH=6906054,VIDEO-RANGE=SDR,CODECS="hvc1.2.20000000.H180.B0",RESOLUTION=7680x3840,REQ-VIDEO-LAYOUT="CH-MONO/PROJ-RECT",URI="large/iframe_var.m3u8"
 ```
 
-###### Example Playlist with Aiv Video
+###### Example playlist with AIV video.
 
 ```swift
 #EXTM3U
@@ -350,7 +351,7 @@ Video/40Mb/prog_index.m3u8
 Video/100Mb/prog_index.m3u8
 ```
 
-###### Example Playlist with Sdr Dolby Vision Hdr10 and Hlg Content at Resolutions From 720p to 4k
+###### Example playlist with SDR, Dolby Vision, HDR10, and HLG content at resolutions from 720p to 4K
 
 The SUPPLEMENTAL-CODECS attribute is used to indicate that the HDR10 content is compatible with Dolby Vison 8.1 and the HLG content is compatible with Dolby Vision 8.4.
 

@@ -1,7 +1,8 @@
 # detachNewThreadSelector(_:toTarget:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Detaches a new thread and uses the specified selector as the thread entry point.
 
@@ -20,11 +21,15 @@ Detaches a new thread and uses the specified selector as the thread entry point.
 class func detachNewThreadSelector(_ selector: Selector, toTarget target: Any, with argument: Any?)
 ```
 
+```objc
++ (void) detachNewThreadSelector:(SEL) selector toTarget:(id) target withObject:(id) argument;
+```
+
 #### Discussion
 
-The objects `aTarget` and `anArgument` are retained during the execution of the detached thread, then released. The detached thread is exited (using the [`exit()`](thread/exit().md) class method) as soon as `aTarget` has completed executing the `aSelector` method.
+The objects `aTarget` and `anArgument` are retained during the execution of the detached thread, then released. The detached thread is exited (using the [`exit()`](./exit%28%29.md) class method) as soon as `aTarget` has completed executing the `aSelector` method.
 
-If this thread is the first thread detached in the application, this method posts the [`NSWillBecomeMultiThreaded`](nsnotification/name-swift.struct/nswillbecomemultithreaded.md) with object `nil` to the default notification center.
+If this thread is the first thread detached in the application, this method posts the [`NSWillBecomeMultiThreaded`](../nsnotification/name-swift.struct/nswillbecomemultithreaded.md) with object `nil` to the default notification center.
 
 ## Parameters
 
@@ -34,13 +39,15 @@ If this thread is the first thread detached in the application, this method post
 
 ## See Also
 
-- [class func isMultiThreaded() -> Bool](thread/ismultithreaded.md)
+### Related Documentation
+- [class func isMultiThreaded() -> Bool](./ismultithreaded%28%29.md)
   Returns whether the application is multithreaded.
-- [class var current: Thread](thread/current.md)
+- [class var current: Thread](./current.md)
   Returns the thread object representing the current thread of execution.
-- [func start()](thread/start.md)
+### Starting a Thread
+- [func start()](./start%28%29.md)
   Starts the receiver.
-- [func main()](thread/main.md)
+- [func main()](./main%28%29.md)
   The main entry point routine for the thread.
 
 

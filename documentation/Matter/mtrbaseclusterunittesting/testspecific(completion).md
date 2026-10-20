@@ -1,7 +1,8 @@
 # testSpecific(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testSpecific(completion: @escaping @Sendable (MTRUnitTestingClusterTestSpecificResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testSpecific() async throws -> MTRUnitTestingClusterTestSpecificResponseParams
+```
+
+```objc
+- (void) testSpecificWithCompletion:(void (^)(MTRUnitTestingClusterTestSpecificResponseParams *data, NSError *error)) completion;
 ```
 
 

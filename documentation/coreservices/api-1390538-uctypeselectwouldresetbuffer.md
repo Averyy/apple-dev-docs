@@ -1,7 +1,8 @@
 # UCTypeSelectWouldResetBuffer(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func UCTypeSelectWouldResetBuffer(_ inRef: UCTypeSelectRef!, _ inText: CFString!, _ inEventTime: Double) -> Bool
+```
+
+```c
+Boolean UCTypeSelectWouldResetBuffer(UCTypeSelectRef inRef, CFStringRef inText, double inEventTime);
 ```
 
 

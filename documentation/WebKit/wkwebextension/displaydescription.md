@@ -1,7 +1,8 @@
 # displayDescription
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized extension description.
 
@@ -16,6 +17,10 @@ The localized extension description.
 
 ```swift
 var displayDescription: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * displayDescription;
 ```
 
 #### Discussion

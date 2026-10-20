@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the annotation is in an enabled state.
 
@@ -19,23 +20,28 @@ A Boolean value that indicates whether the annotation is in an enabled state.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). If the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), the annotation view ignores touch events and isn’t selectable. Subclasses may also display the annotation contents differently depending on the value of this property.
+The default value of this property is [`true`](../../Swift/true.md). If the value of this property is [`false`](../../Swift/false.md), the annotation view ignores touch events and isn’t selectable. Subclasses may also display the annotation contents differently depending on the value of this property.
 
 ## See Also
 
-- [var image: UIImage?](mkannotationview/image.md)
+### Getting and setting attributes
+- [var image: UIImage?](./image.md)
   The image the annotation view displays.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var annotation: (any MKAnnotation)?](mkannotationview/annotation.md)
+- [var annotation: (any MKAnnotation)?](./annotation.md)
   The annotation object associated with the view.
-- [var centerOffset: CGPoint](mkannotationview/centeroffset.md)
+- [var centerOffset: CGPoint](./centeroffset.md)
   The offset (in points) at which to display the view.
-- [var calloutOffset: CGPoint](mkannotationview/calloutoffset.md)
+- [var calloutOffset: CGPoint](./calloutoffset.md)
   The offset (in points) at which to place the callout.
-- [var reuseIdentifier: String?](mkannotationview/reuseidentifier.md)
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   The string that identifies that the annotation view is reusable.
 
 

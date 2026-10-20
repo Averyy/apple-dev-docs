@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given animation to this view when this view changes.
 
@@ -21,6 +22,15 @@ nonisolated
 func animation(_ animation: Animation?) -> some View
 ```
 
+Available when `Self` conforms to `Equatable`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func animation(_ animation: Animation?) -> some View
+```
+
 #### Return Value
 
 A view that applies `animation` to this view whenever it changes.
@@ -31,9 +41,10 @@ A view that applies `animation` to this view whenever it changes.
 
 ## See Also
 
-- [func animation<V>(Animation?, value: V) -> some View](view/animation(_:value:).md)
+### Adding state-based animation to a view
+- [func animation<V>(Animation?, value: V) -> some View](./animation%28_,value%29.md)
   Applies the given animation to this view when the specified value changes.
-- [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
+- [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](./animation%28_,body%29.md)
   Applies the given animation to all animatable values within the `body` closure.
 
 

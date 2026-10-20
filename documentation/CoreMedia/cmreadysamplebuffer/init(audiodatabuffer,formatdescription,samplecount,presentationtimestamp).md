@@ -1,7 +1,8 @@
 # init(audioDataBuffer:formatDescription:sampleCount:presentationTimeStamp:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer carrying audio media data.
 
@@ -19,6 +20,8 @@ Creates a sample buffer carrying audio media data.
 ```swift
 init(audioDataBuffer content: Content, formatDescription: CMAudioFormatDescription, sampleCount: Int, presentationTimeStamp: CMTime)
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 #### Discussion
 

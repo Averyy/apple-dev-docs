@@ -9,11 +9,11 @@ Used when a scale_factor parameter is required to define a unit of time.
 ## Topics
 
 ### Constants
-- [var kNanosecondScale: Int](knanosecondscale.md)
-- [var kMicrosecondScale: Int](kmicrosecondscale.md)
-- [var kMillisecondScale: Int](kmillisecondscale.md)
-- [var kTickScale: Int](ktickscale.md)
-- [var kSecondScale: Int](ksecondscale.md)
+- [var kNanosecondScale: Int](../knanosecondscale.md)
+- [var kMicrosecondScale: Int](../kmicrosecondscale.md)
+- [var kMillisecondScale: Int](../kmillisecondscale.md)
+- [var kTickScale: Int](../ktickscale.md)
+- [var kSecondScale: Int](../ksecondscale.md)
 
 
 ---

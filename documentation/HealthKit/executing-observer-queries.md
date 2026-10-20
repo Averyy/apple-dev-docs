@@ -1,6 +1,7 @@
 # Executing Observer Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create and run observer queries.
 
@@ -10,7 +11,7 @@ Observer queries are long-running queries that monitor the HealthKit store on a 
 
 ##### Create Observer Queries
 
-To create an observer query, call the [`init(sampleType:predicate:updateHandler:)`](hkobserverquery/init(sampletype:predicate:updatehandler:).md) initializer. Start by creating a type object for the samples you want to observe. The following example creates a type object for step counts.
+To create an observer query, call the [`init(sampleType:predicate:updateHandler:)`](./hkobserverquery/init%28sampletype,predicate,updatehandler%29.md) initializer. Start by creating a type object for the samples you want to observe. The following example creates a type object for step counts.
 
 ```swift
 guard let stepCountType = HKObjectType.quantityType(forIdentifier: .stepCount) else {
@@ -37,7 +38,7 @@ let query = HKObserverQuery(sampleType: stepCountType, predicate: nil) { (query,
 }
 ```
 
-After the query is instantiated, call the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method.
+After the query is instantiated, call the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 
 ```swift
 store.execute(query)
@@ -45,29 +46,30 @@ store.execute(query)
 
 This runs the query on an anonymous background queue. Whenever a matching sample is added to or deleted from the HealthKit store, the system calls the query’s update handler on the same background queue (but not necessarily the same thread).
 
-> **Note**:  The observer query’s update handler does not receive any information about the change—just that a change occurred. You must execute another query, for example an [`HKSampleQuery`](hksamplequery.md) or [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), to access the changes.
+> **Note**:  The observer query’s update handler does not receive any information about the change—just that a change occurred. You must execute another query, for example an [`HKSampleQuery`](./hksamplequery.md) or [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md), to access the changes.
 
-To stop the query, call the HealthKit store’s [`stop(_:)`](hkhealthstore/stop(_:).md) method.
+To stop the query, call the HealthKit store’s [`stop(_:)`](./hkhealthstore/stop%28_%29.md) method.
 
 ##### Receive Background Deliveries
 
-Apps can also register to receive updates while in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md) method. This method registers your app for background notifications. HealthKit wakes your app when the store receives new samples of the specified type. HealthKit notifies your app at most once per time period defined by the frequency you specified when registering.
+Apps can also register to receive updates while in the background by calling the HealthKit store’s [`enableBackgroundDelivery(for:frequency:withCompletion:)`](./hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md) method. This method registers your app for background notifications. HealthKit wakes your app when the store receives new samples of the specified type. HealthKit notifies your app at most once per time period defined by the frequency you specified when registering.
 
-As soon as your app launches, HealthKit calls the update handler for any observer queries that match the newly saved data. If you plan on supporting background delivery, set up all your observer queries in your app delegate’s [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)) method. By setting up the queries in [`application(_:didFinishLaunchingWithOptions:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:)), you ensure that the queries are instantiated and ready to use before HealthKit delivers the updates.
+As soon as your app launches, HealthKit calls the update handler for any observer queries that match the newly saved data. If you plan on supporting background delivery, set up all your observer queries in your app delegate’s [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method. By setting up the queries in [`application(_:didFinishLaunchingWithOptions:)`](../UIKit/uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md), you ensure that the queries are instantiated and ready to use before HealthKit delivers the updates.
 
 After your observer queries have finished processing the new data, you must call the update’s completion handler to notify HealthKit that you have successfully received the background delivery.
 
 > ❗ **Important**:  Background server queries aren’t supported on the Simulator. Be sure to test your background queries on a device.
 
-For more information on managing background deliveries, see Managing Background Deliveries in [`HKHealthStore`](hkhealthstore.md). For more information on the background delivery completion handler, see [`HKObserverQueryCompletionHandler`](hkobserverquerycompletionhandler.md).
+For more information on managing background deliveries, see Managing Background Deliveries in [`HKHealthStore`](./hkhealthstore.md). For more information on the background delivery completion handler, see [`HKObserverQueryCompletionHandler`](./hkobserverquerycompletionhandler.md).
 
 ## See Also
 
-- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(sampletype:predicate:updatehandler:).md)
+### Creating Observer Queries
+- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28sampletype,predicate,updatehandler%29.md)
   Instantiates and returns a query that monitors the HealthKit store and responds to changes.
-- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(querydescriptors:updatehandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28querydescriptors,updatehandler%29.md)
   Creates a query that monitors the HealthKit store and responds to any changes matching any of the query descriptors you provided.
-- [typealias HKObserverQueryCompletionHandler](hkobserverquerycompletionhandler.md)
+- [typealias HKObserverQueryCompletionHandler](./hkobserverquerycompletionhandler.md)
   The completion handler for background deliveries.
 
 

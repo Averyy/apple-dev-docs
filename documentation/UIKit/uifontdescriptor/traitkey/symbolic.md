@@ -1,7 +1,8 @@
 # symbolic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The symbolic font traits.
 
@@ -9,7 +10,7 @@ The symbolic font traits.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,17 +20,22 @@ The symbolic font traits.
 static let symbolic: UIFontDescriptor.TraitKey
 ```
 
+```c
+extern UIFontDescriptorTraitKey const UIFontSymbolicTrait;
+```
+
 #### Discussion
 
-Use this key with a trait dictionary to get the symbolic traits value as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
+Use this key with a trait dictionary to get the symbolic traits value as an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 
 ## See Also
 
-- [static let slant: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/slant.md)
+### Font traits
+- [static let slant: UIFontDescriptor.TraitKey](./slant.md)
   The relative slant angle of the font.
-- [static let weight: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/weight.md)
+- [static let weight: UIFontDescriptor.TraitKey](./weight.md)
   The numerical value that corresponds to a font face.
-- [static let width: UIFontDescriptor.TraitKey](uifontdescriptor/traitkey/width.md)
+- [static let width: UIFontDescriptor.TraitKey](./width.md)
   The inter-glyph spacing of the font.
 
 

@@ -1,16 +1,21 @@
 # setAttribute(_:forStandardAttribute:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 func setAttribute(_ attributeMap: ODAttributeMap!, forStandardAttribute standardAttribute: String!)
+```
+
+```objc
+- (void) setAttributeMap:(ODAttributeMap *) attributeMap forStandardAttribute:(NSString *) standardAttribute;
 ```
 
 

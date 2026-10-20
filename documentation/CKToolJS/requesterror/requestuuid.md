@@ -1,7 +1,8 @@
 # requestUuid
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this error.
 
@@ -10,7 +11,7 @@ A unique identifier for this error.
 
 ## Declaration
 
-```swift
+```
 attribute string? requestUuid;
 ```
 

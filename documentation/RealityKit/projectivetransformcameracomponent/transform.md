@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom projection RealityKit applies to objects in the scene.
 

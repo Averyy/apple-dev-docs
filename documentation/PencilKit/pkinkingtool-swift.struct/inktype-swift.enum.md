@@ -1,7 +1,8 @@
 # PKInkingTool.InkType
 
 **Framework**: PencilKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type that defines the shape of stroked lines.
 
@@ -21,43 +22,44 @@ enum InkType
 ## Topics
 
 ### Choosing ink types
-- [PKInkingTool.InkType.marker](pkinkingtool-swift.struct/inktype-swift.enum/marker.md)
+- [PKInkingTool.InkType.marker](./inktype-swift.enum/marker.md)
   An inking tool that creates the appearance of a felt-tip marker.
-- [PKInkingTool.InkType.pen](pkinkingtool-swift.struct/inktype-swift.enum/pen.md)
+- [PKInkingTool.InkType.pen](./inktype-swift.enum/pen.md)
   An inking tool that creates the appearance of a pen-based drawing.
-- [PKInkingTool.InkType.pencil](pkinkingtool-swift.struct/inktype-swift.enum/pencil.md)
+- [PKInkingTool.InkType.pencil](./inktype-swift.enum/pencil.md)
   An inking tool that creates the appearance of a narrow line from a pencil.
-- [PKInkingTool.InkType.monoline](pkinkingtool-swift.struct/inktype-swift.enum/monoline.md)
+- [PKInkingTool.InkType.monoline](./inktype-swift.enum/monoline.md)
   An inking tool that creates the appearance of a monoline pen.
-- [PKInkingTool.InkType.fountainPen](pkinkingtool-swift.struct/inktype-swift.enum/fountainpen.md)
+- [PKInkingTool.InkType.fountainPen](./inktype-swift.enum/fountainpen.md)
   An inking tool that creates the appearance of a calligraphy pen.
-- [PKInkingTool.InkType.watercolor](pkinkingtool-swift.struct/inktype-swift.enum/watercolor.md)
+- [PKInkingTool.InkType.watercolor](./inktype-swift.enum/watercolor.md)
   An inking tool that creates the appearance of a watercolor brush.
-- [PKInkingTool.InkType.crayon](pkinkingtool-swift.struct/inktype-swift.enum/crayon.md)
+- [PKInkingTool.InkType.crayon](./inktype-swift.enum/crayon.md)
   An inking tool that creates the appearance of a crayon.
 ### Getting the width information
-- [var defaultWidth: CGFloat](pkinkingtool-swift.struct/inktype-swift.enum/defaultwidth.md)
+- [var defaultWidth: CGFloat](./inktype-swift.enum/defaultwidth.md)
   The default line width for the specified tool type.
-- [var validWidthRange: ClosedRange<CGFloat>](pkinkingtool-swift.struct/inktype-swift.enum/validwidthrange.md)
+- [var validWidthRange: ClosedRange<CGFloat>](./inktype-swift.enum/validwidthrange.md)
   The range of widths allowed for an ink of this type.
 ### Supporting backward compatibility
-- [var requiredContentVersion: PKContentVersion](pkinkingtool-swift.struct/inktype-swift.enum/requiredcontentversion.md)
+- [var requiredContentVersion: PKContentVersion](./inktype-swift.enum/requiredcontentversion.md)
   The version of PencilKit necessary to use the ink type.
 ### Enumeration Cases
-- [PKInkingTool.InkType.reed](pkinkingtool-swift.struct/inktype-swift.enum/reed.md)
+- [PKInkingTool.InkType.reed](./inktype-swift.enum/reed.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [var inkType: PKInkingTool.InkType](pkinkingtool-swift.struct/inktype-swift.property.md)
+### Getting the tool type
+- [var inkType: PKInkingTool.InkType](./inktype-swift.property.md)
   The tool type that determines the shape of the rendered content.
 
 

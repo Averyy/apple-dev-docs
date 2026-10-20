@@ -1,6 +1,8 @@
 # Structuring recognized text on a document
 
-**Framework**: VisionKit
+**Framework**: VisionKit  
+**Role**: Sample Code  
+**Download**: [StructuringRecognizedTextOnADocument.zip](https://docs-assets.developer.apple.com/published/c5c850bf6ab8/StructuringRecognizedTextOnADocument.zip)
 
 Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 
@@ -12,15 +14,16 @@ Detect, recognize, and structure text on a business card or receipt using Vision
 
 #### Overview
 
-> **Note**: For more information about this sample code project, see [`WWDC 2019 Session 234: Text Recognition in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/234/).
+> **Note**: For more information about this sample code project, see [WWDC 2019 Session 234: Text Recognition in Vision Framework](https://developer.apple.com/videos/play/wwdc19/234/).
 
 ## See Also
 
-- [class VNDocumentCameraViewController](vndocumentcameraviewcontroller.md)
+### Document scanning through the camera
+- [class VNDocumentCameraViewController](./vndocumentcameraviewcontroller.md)
   An object that presents UI for a camera pass-through that helps people scan physical documents.
-- [protocol VNDocumentCameraViewControllerDelegate](vndocumentcameraviewcontrollerdelegate.md)
+- [protocol VNDocumentCameraViewControllerDelegate](./vndocumentcameraviewcontrollerdelegate.md)
   A delegate protocol through which the document camera returns its scanned results.
-- [class VNDocumentCameraScan](vndocumentcamerascan.md)
+- [class VNDocumentCameraScan](./vndocumentcamerascan.md)
   A single document scanned in the document camera.
 
 

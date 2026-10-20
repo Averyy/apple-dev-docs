@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the URL to the specified pasteboard.
 
@@ -14,6 +15,10 @@ Writes the URL to the specified pasteboard.
 func write(to pasteBoard: NSPasteboard)
 ```
 
+```objc
+- (void) writeToPasteboard:(NSPasteboard *) pasteBoard;
+```
+
 #### Discussion
 
 You must declare an `NSURLPboardType` data type for the pasteboard before invoking this method. Otherwise, the method returns without doing anything.
@@ -24,9 +29,11 @@ You must declare an `NSURLPboardType` data type for the pasteboard before invoki
 
 ## See Also
 
-- [func declareTypes([NSPasteboard.PasteboardType], owner: Any?) -> Int](../appkit/nspasteboard/declaretypes(_:owner:).md)
+### Related Documentation
+- [func declareTypes([NSPasteboard.PasteboardType], owner: Any?) -> Int](../../AppKit/nspasteboard/declaretypes%28_,owner%29.md)
   Prepares the receiver for a change in its contents by declaring the new types of data it will contain and a new owner.
-- [init?(fromPasteboard: NSPasteboard)](nsurl/init(frompasteboard:).md)
+### Working with Pasteboards
+- [init?(fromPasteboard: NSPasteboard)](./init%28frompasteboard%29.md)
   Reads an NSURL object off of the specified pasteboard.
 
 

@@ -1,6 +1,7 @@
 # Adding Placeholders for Your Complication
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: Article
 
 Provide the placeholders that users see when adding your complication to a watch face.
 
@@ -8,7 +9,7 @@ Provide the placeholders that users see when adding your complication to a watch
 
 Create placeholders for all of the complication families that your app supports. Ideally, these placeholders should indicate the type of data that your complication usually shows. The system uses these placeholders to represent your complication when the user configures a watch face on Apple Watch.
 
-![A screenshot showing the placeholder for the Moon complication.](/images/com.apple.clockkit/media-3136367@2x.png)
+![A screenshot showing the placeholder for the Moon complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3136367@2x.png)
 
 You can provide placeholders in two ways: you can use static images for your placeholder, or dynamically create localized versions of the placeholders using complication templates. Ideally, your app provides both.
 
@@ -20,15 +21,15 @@ If you don’t provide any placeholders, the system generates a placeholder base
 
 By default, when you create a new watchOS project, or add a watchOS target to an existing project, Xcode adds a Complication group to your WatchKit extension’s asset catalog.
 
-![A screenshot showing the WatchKit Extension’s complication group in the Assets catalog. This group includes placeholders for all the Apple Watch sizes supported by each complication family.](/images/com.apple.clockkit/media-3161750@2x.png)
+![A screenshot showing the WatchKit Extension’s complication group in the Assets catalog. This group includes placeholders for all the Apple Watch sizes supported by each complication family.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3161750@2x.png)
 
-Create PNG files to represent a complication for each family your app supports. Avoid using interlaced PNGs. Many complications use only the alpha channel of the image; however, graphic complications use full color images. For more information, see the [`Complications`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/overview/complications/) section of the Human Interface Guidelines.
+Create PNG files to represent a complication for each family your app supports. Avoid using interlaced PNGs. Many complications use only the alpha channel of the image; however, graphic complications use full color images. For more information, see the [Complications](https://developer.apple.com/design/human-interface-guidelines/watchos/overview/complications/) section of the Human Interface Guidelines.
 
 Drag these files into the asset catalog, and drop them into the desired position. You can provide separate images for each screen size. If you don’t provide an image for a particular screen size, watchOS resizes the closest available image in that family.
 
 ##### Create Localized Placeholders
 
-To dynamically create a localized placeholder, implement your data source’s [`getLocalizableSampleTemplate(for:withHandler:)`](clkcomplicationdatasource/getlocalizablesampletemplate(for:withhandler:).md) method. In your implementation, check the complication’s family, and create a template for that family. Populate the template with mock data that reflects what your complication would normally look like.
+To dynamically create a localized placeholder, implement your data source’s [`getLocalizableSampleTemplate(for:withHandler:)`](./clkcomplicationdatasource/getlocalizablesampletemplate%28for,withhandler%29.md) method. In your implementation, check the complication’s family, and create a template for that family. Populate the template with mock data that reflects what your complication would normally look like.
 
 To localize the strings in your placeholder, use a simple text provider.
 
@@ -36,19 +37,21 @@ To localize the strings in your placeholder, use a simple text provider.
 CLKSimpleTextProvider.localizableTextProvider(withStringsFileTextKey: "AKey")
 ```
 
-The key must appear in a localized strings file named `ckcomplication.strings`. Save a copy of this strings file in your complication bundle and your WatchKit extension bundle. For more information, see [`Internationalization`](https://developer.apple.comhttps://developer.apple.com/internationalization/).
+The key must appear in a localized strings file named `ckcomplication.strings`. Save a copy of this strings file in your complication bundle and your WatchKit extension bundle. For more information, see [Internationalization](https://developer.apple.com/internationalization/).
 
 ## See Also
 
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
+### Related Documentation
+- [Declaring complications for your app](./declaring-complications-for-your-app.md)
   Define the complications that your app supports.
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
   Package your app-specific data into a template and create a timeline entry for that template.
-- [Loading future timeline events](loading-future-timeline-events.md)
+- [Loading future timeline events](./loading-future-timeline-events.md)
   Preserve battery life and improve performance on the watch by providing a timeline with expected data and updates.
-- [Keeping your complications up to date](keeping-your-complications-up-to-date.md)
+- [Keeping your complications up to date](./keeping-your-complications-up-to-date.md)
   Replace or extend the data in your complication’s timeline.
-- [Enabling Complications for Your watchOS App](enabling-complications-for-your-watchos-app.md)
+### Configure Complications
+- [Enabling Complications for Your watchOS App](./enabling-complications-for-your-watchos-app.md)
   Set up your watchOS app’s complications.
 
 

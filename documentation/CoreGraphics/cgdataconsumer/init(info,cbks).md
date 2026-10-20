@@ -1,7 +1,8 @@
 # init(info:cbks:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data consumer that uses callback functions to write data.
 
@@ -10,7 +11,7 @@ Creates a data consumer that uses callback functions to write data.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,26 +21,31 @@ Creates a data consumer that uses callback functions to write data.
 init?(info: UnsafeMutableRawPointer?, cbks: UnsafePointer<CGDataConsumerCallbacks>)
 ```
 
+```c
+extern CGDataConsumerRefCGDataConsumerCreate(void *info, const CGDataConsumerCallbacks *cbks);
+```
+
 #### Return Value
 
-A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](cgdataconsumerrelease.md).
+A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](../cgdataconsumerrelease.md).
 
 ## Parameters
 
 - `info`: A pointer to data of any type or `NULL`. When the callback is called, Core Graphics passes this pointer as the `info` parameter.
-- `cbks`: A pointer to a structure that specifies the callback functions you implement to copy data sent to the consumer and to handle the consumer’s basic memory management. For a complete description, see [`CGDataConsumerCallbacks`](cgdataconsumercallbacks.md).
+- `cbks`: A pointer to a structure that specifies the callback functions you implement to copy data sent to the consumer and to handle the consumer’s basic memory management. For a complete description, see [`CGDataConsumerCallbacks`](../cgdataconsumercallbacks.md).
 
 ## See Also
 
-- [init?(url: CFURL)](cgdataconsumer/init(url:).md)
+### Creating Data Consumers
+- [init?(url: CFURL)](./init%28url%29.md)
   Creates a data consumer that writes data to a location specified by a URL.
-- [init?(data: CFMutableData)](cgdataconsumer/init(data:).md)
+- [init?(data: CFMutableData)](./init%28data%29.md)
   Creates a data consumer that writes to a CFData object.
-- [struct CGDataConsumerCallbacks](cgdataconsumercallbacks.md)
+- [struct CGDataConsumerCallbacks](../cgdataconsumercallbacks.md)
   A structure that contains pointers to callback functions that manage the copying of data for a data consumer.
-- [typealias CGDataConsumerPutBytesCallback](cgdataconsumerputbytescallback.md)
+- [typealias CGDataConsumerPutBytesCallback](../cgdataconsumerputbytescallback.md)
   Copies data from a Core Graphics-supplied buffer into a data consumer.
-- [typealias CGDataConsumerReleaseInfoCallback](cgdataconsumerreleaseinfocallback.md)
+- [typealias CGDataConsumerReleaseInfoCallback](../cgdataconsumerreleaseinfocallback.md)
   Releases any private data or resources associated with the data consumer.
 
 

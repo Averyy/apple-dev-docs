@@ -1,7 +1,8 @@
 # CPSearchTemplate
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template that provides the ability to search for a destination and see a list of search results.
 
@@ -17,53 +18,58 @@ A template that provides the ability to search for a destination and see a list 
 class CPSearchTemplate
 ```
 
+```objc
+@interface CPSearchTemplate : CPTemplate
+```
+
 #### Overview
 
 Use this template to provide the ability to search for a destination. When CarPlay displays the template, the user sees a search field, a Cancel button, and a localized keyboard. The template also shows the list of search results after your app completes the search request.
 
-> **Note**:  Some vehicles may limit the display of the keyboard. Check the [`limitedUserInterfaces`](cpsessionconfiguration/limiteduserinterfaces.md) property to determine whether there are limits.
+> **Note**:  Some vehicles may limit the display of the keyboard. Check the [`limitedUserInterfaces`](./cpsessionconfiguration/limiteduserinterfaces.md) property to determine whether there are limits.
 
-To use a search template, create an instance of [`CPSearchTemplate`](cpsearchtemplate.md) and set its [`delegate`](cpsearchtemplate/delegate.md) to an object that conforms to the [`CPSearchTemplateDelegate`](cpsearchtemplatedelegate.md) protocol. Push the template onto the navigation hierarchy by calling [`pushTemplate(_:animated:completion:)`](cpinterfacecontroller/pushtemplate(_:animated:completion:).md) on the interface controller. This presents the search template to the user.
+To use a search template, create an instance of [`CPSearchTemplate`](./cpsearchtemplate.md) and set its [`delegate`](./cpsearchtemplate/delegate.md) to an object that conforms to the [`CPSearchTemplateDelegate`](./cpsearchtemplatedelegate.md) protocol. Push the template onto the navigation hierarchy by calling [`pushTemplate(_:animated:completion:)`](./cpinterfacecontroller/pushtemplate%28_,animated,completion%29.md) on the interface controller. This presents the search template to the user.
 
-As the user enters text into the search field, the system calls the delegate method [`searchTemplate(_:updatedSearchText:completionHandler:)`](cpsearchtemplatedelegate/searchtemplate(_:updatedsearchtext:completionhandler:).md), indicating that your app should retrieve the search result. After retrieving the results, call `completionHandler` to return an array of [`CPListItem`](cplistitem.md) objects—one list item for each search result item.
+As the user enters text into the search field, the system calls the delegate method [`searchTemplate(_:updatedSearchText:completionHandler:)`](./cpsearchtemplatedelegate/searchtemplate%28_,updatedsearchtext,completionhandler%29.md), indicating that your app should retrieve the search result. After retrieving the results, call `completionHandler` to return an array of [`CPListItem`](./cplistitem.md) objects—one list item for each search result item.
 
-When the user selects an item from the search result, the system calls the [`searchTemplate(_:selectedResult:completionHandler:)`](cpsearchtemplatedelegate/searchtemplate(_:selectedresult:completionhandler:).md) method on the delegate object. The delegate performs any necessary operations to process the selected item, then calls the completion handler to let the system know it can continue.
+When the user selects an item from the search result, the system calls the [`searchTemplate(_:selectedResult:completionHandler:)`](./cpsearchtemplatedelegate/searchtemplate%28_,selectedresult,completionhandler%29.md) method on the delegate object. The delegate performs any necessary operations to process the selected item, then calls the completion handler to let the system know it can continue.
 
 ## Topics
 
 ### Providing a Search Template Delegate
-- [var delegate: (any CPSearchTemplateDelegate)?](cpsearchtemplate/delegate.md)
+- [var delegate: (any CPSearchTemplateDelegate)?](./cpsearchtemplate/delegate.md)
   The object that serves as the search template’s delegate.
-- [protocol CPSearchTemplateDelegate](cpsearchtemplatedelegate.md)
+- [protocol CPSearchTemplateDelegate](./cpsearchtemplatedelegate.md)
   The interface for an object that serves as the search template’s delegate.
 
 ## Relationships
 
 ### Inherits From
-- [CPTemplate](cptemplate.md)
+- [CPTemplate](./cptemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Integrating CarPlay with Your Navigation App](integrating-carplay-with-your-navigation-app.md)
+### Navigation
+- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
   Configure your navigation app to work with CarPlay by displaying your custom map and directions.
-- [class CPTemplateApplicationDashboardScene](cptemplateapplicationdashboardscene.md)
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
   A CarPlay scene that controls your app’s dashboard navigation window.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](cptemplateapplicationdashboardscenedelegate.md)
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](cpmaptemplate.md)
+- [class CPMapTemplate](./cpmaptemplate.md)
   A template that displays a navigation overlay that your app draws on the map.
-- [class CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
   A template that displays a voice control indicator during audio input.
 
 

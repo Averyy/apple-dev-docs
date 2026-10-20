@@ -1,7 +1,8 @@
 # init(target:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a push placement.
 

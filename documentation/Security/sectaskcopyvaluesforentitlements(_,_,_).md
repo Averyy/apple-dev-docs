@@ -1,7 +1,8 @@
 # SecTaskCopyValuesForEntitlements(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the values of multiple entitlements for the represented task.
 
@@ -15,9 +16,13 @@ Returns the values of multiple entitlements for the represented task.
 func SecTaskCopyValuesForEntitlements(_ task: SecTask, _ entitlements: CFArray, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFDictionary?
 ```
 
+```c
+CFDictionaryRefSecTaskCopyValuesForEntitlements(SecTaskRef task, CFArrayRef entitlements, CFErrorRef*error);
+```
+
 #### Return Value
 
-A dictionary containing the entitlement names as keys with the corresponding entitlements as the dictionary values, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this dictionary’s memory when you are done with it.
+A dictionary containing the entitlement names as keys with the corresponding entitlements as the dictionary values, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this dictionary’s memory when you are done with it.
 
 ## Parameters
 

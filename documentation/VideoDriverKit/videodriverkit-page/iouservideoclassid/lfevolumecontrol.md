@@ -1,7 +1,8 @@
 # LFEVolumeControl
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A subclass of the `IOUserVideoLevelControl` class for an LFE channel that results from bass management.
 
@@ -10,23 +11,24 @@ A subclass of the `IOUserVideoLevelControl` class for an LFE channel that result
 
 ## Declaration
 
-```swift
+```c
 LFEVolumeControl
 ```
 
 #### Discussion
 
-If a driver represents LFE channels as normal audio channels, it must use [`VolumeControl`](videodriverkit/iouservideoclassid/volumecontrol.md) to manipulate the level.
+If a driver represents LFE channels as normal audio channels, it must use [`VolumeControl`](./volumecontrol.md) to manipulate the level.
 
 ## See Also
 
-- [VolumeControl](videodriverkit/iouservideoclassid/volumecontrol.md)
+### Identifying volume control types
+- [VolumeControl](./volumecontrol.md)
   The class identifier for the `IOUserVideoVolumeControl` class.
-- [MuteControl](videodriverkit/iouservideoclassid/mutecontrol.md)
+- [MuteControl](./mutecontrol.md)
   The class identifier for the `IOUserVideoMuteControl` class.
-- [LFEMuteControl](videodriverkit/iouservideoclassid/lfemutecontrol.md)
+- [LFEMuteControl](./lfemutecontrol.md)
   A Boolean control where true means that mute is enabled, making that LFE element inaudible.
-- [LineLevelControl](videodriverkit/iouservideoclassid/linelevelcontrol.md)
+- [LineLevelControl](./linelevelcontrol.md)
   A video selector control that identifies the nominal line level for the element.
 
 

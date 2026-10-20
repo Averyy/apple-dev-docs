@@ -1,12 +1,15 @@
 # ACAccountTypeIdentifierLinkedIn
 
 **Framework**: Accounts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Identifier for the LinkedIn account type.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.13
+
+> **Deprecated**: Use LinkedIn SDK instead
 
 ## Declaration
 
@@ -14,15 +17,20 @@ Identifier for the LinkedIn account type.
 let ACAccountTypeIdentifierLinkedIn: String
 ```
 
+```c
+extern NSString * const ACAccountTypeIdentifierLinkedIn;
+```
+
 ## See Also
 
-- [let ACAccountTypeIdentifierFacebook: String](acaccounttypeidentifierfacebook.md)
+### Account Type Strings
+- [let ACAccountTypeIdentifierFacebook: String](./acaccounttypeidentifierfacebook.md)
   Identifier for the Facebook account type.
-- [let ACAccountTypeIdentifierSinaWeibo: String](acaccounttypeidentifiersinaweibo.md)
+- [let ACAccountTypeIdentifierSinaWeibo: String](./acaccounttypeidentifiersinaweibo.md)
   Identifier for the Sina Weibo account type.
-- [let ACAccountTypeIdentifierTencentWeibo: String](acaccounttypeidentifiertencentweibo.md)
+- [let ACAccountTypeIdentifierTencentWeibo: String](./acaccounttypeidentifiertencentweibo.md)
   Identifier for the Tencent Weibo account type.
-- [let ACAccountTypeIdentifierTwitter: String](acaccounttypeidentifiertwitter.md)
+- [let ACAccountTypeIdentifierTwitter: String](./acaccounttypeidentifiertwitter.md)
   Identifier for the Twitter account type.
 
 

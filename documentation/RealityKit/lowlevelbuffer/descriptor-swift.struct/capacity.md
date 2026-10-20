@@ -1,7 +1,8 @@
 # capacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Length of the buffer in bytes.
 

@@ -1,7 +1,8 @@
 # AVRoutePickerView
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that presents a list of nearby media receivers.
 
@@ -18,19 +19,31 @@ A view that presents a list of nearby media receivers.
 class AVRoutePickerView
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface AVRoutePickerView : UIView
+```
+
+*macOS*
+
+```objc
+@interface AVRoutePickerView : NSView
+```
+
 #### Overview
 
 This view represents a button that users tap to stream audio/video content to a media receiver, such as a Mac or Apple TV.
 
-![A screenshot of an AV route picker view that composes a button with text that says Choose output device on the left, and an icon of a computer screen next to a set-top box remote on the right.](/images/com.apple.avkit/media-4084059@2x.png)
+![A screenshot of an AV route picker view that composes a button with text that says Choose output device on the left, and an icon of a computer screen next to a set-top box remote on the right.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-4084059@2x.png)
 
 When the user taps the button, the system presents a popover that displays all of the nearby AirPlay devices that can receive and play back media. If your app prefers video content, the system displays video-capable devices higher in the list.
 
-![A screenshot of a popover with a list of items. The top item is an iPad icon with a check mark to the right. Below that is the title Speakers and TVs with a list of six subitems. The first subitem says Third-party device, followed by AirPlay and Third-party protocol. The remaining subitems are Sunset Beach with an Apple TV icon on the left, Link with TV code with a globe icon on the left, and Show more.](/images/com.apple.avkit/media-4084052@2x.png)
+![A screenshot of a popover with a list of items. The top item is an iPad icon with a check mark to the right. Below that is the title Speakers and TVs with a list of six subitems. The first subitem says Third-party device, followed by AirPlay and Third-party protocol. The remaining subitems are Sunset Beach with an Apple TV icon on the left, Link with TV code with a globe icon on the left, and Show more.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-4084052@2x.png)
 
-In iOS 16 and later, you can add devices to the list that implement custom protocols. For more information about displaying third-party routes, see [`AVRouting`](https://developer.apple.com/documentation/avrouting).
+In iOS 16 and later, you can add devices to the list that implement custom protocols. For more information about displaying third-party routes, see [AVRouting](../AVRouting/AVRouting.md).
 
-##### Configure the Buttons Text Color and Media Preference
+##### Configure the button’s text, color, and media preference
 
 The following code example creates the view alongside custom text:
 
@@ -71,83 +84,84 @@ struct DevicePickerView: UIViewRepresentable {
 ## Topics
 
 ### Configuring the delegate
-- [var delegate: (any AVRoutePickerViewDelegate)?](avroutepickerview/delegate.md)
+- [var delegate: (any AVRoutePickerViewDelegate)?](./avroutepickerview/delegate.md)
   The delegate object for the route picker.
-- [protocol AVRoutePickerViewDelegate](avroutepickerviewdelegate.md)
+- [protocol AVRoutePickerViewDelegate](./avroutepickerviewdelegate.md)
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
 ### Configuring the route picker view
-- [var activeTintColor: UIColor!](avroutepickerview/activetintcolor.md)
+- [var activeTintColor: UIColor!](./avroutepickerview/activetintcolor.md)
   The view’s tint color when AirPlay is active.
-- [var isRoutePickerButtonBordered: Bool](avroutepickerview/isroutepickerbuttonbordered.md)
+- [var isRoutePickerButtonBordered: Bool](./avroutepickerview/isroutepickerbuttonbordered.md)
   A Boolean value that indicates whether the route picker button has a border.
-- [var prioritizesVideoDevices: Bool](avroutepickerview/prioritizesvideodevices.md)
+- [var prioritizesVideoDevices: Bool](./avroutepickerview/prioritizesvideodevices.md)
   A Boolean value that indicates whether the route picker sorts video output devices to the top of the list.
-- [var routePickerButtonStyle: AVRoutePickerViewButtonStyle](avroutepickerview/routepickerbuttonstyle.md)
+- [var routePickerButtonStyle: AVRoutePickerViewButtonStyle](./avroutepickerview/routepickerbuttonstyle.md)
   The button style for the route picker.
-- [enum AVRoutePickerViewButtonStyle](avroutepickerviewbuttonstyle.md)
+- [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
-- [func routePickerButtonColor(for: AVRoutePickerView.ButtonState) -> NSColor](avroutepickerview/routepickerbuttoncolor(for:).md)
+- [func routePickerButtonColor(for: AVRoutePickerView.ButtonState) -> NSColor](./avroutepickerview/routepickerbuttoncolor%28for%29.md)
   Returns the color of the picker button for the specified state.
-- [func setRoutePickerButtonColor(NSColor?, for: AVRoutePickerView.ButtonState)](avroutepickerview/setroutepickerbuttoncolor(_:for:).md)
+- [func setRoutePickerButtonColor(NSColor?, for: AVRoutePickerView.ButtonState)](./avroutepickerview/setroutepickerbuttoncolor%28_,for%29.md)
   Sets the route picker button color for the specified state.
-- [AVRoutePickerView.ButtonState](avroutepickerview/buttonstate.md)
+- [AVRoutePickerView.ButtonState](./avroutepickerview/buttonstate.md)
   Constants that describe the available button states.
 ### Accessing the player
-- [var player: AVPlayer?](avroutepickerview/player.md)
+- [var player: AVPlayer?](./avroutepickerview/player.md)
   The player object to perform routing operations for.
 ### Setting a custom routing controller
-- [var customRoutingController: AVCustomRoutingController?](avroutepickerview/customroutingcontroller.md)
+- [var customRoutingController: AVCustomRoutingController?](./avroutepickerview/customroutingcontroller.md)
   A routing controller that enables connections to non-AirPlay devices.
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
-- [UIView](../uikit/uiview.md)
+- [NSView](../AppKit/nsview.md)
+- [UIView](../UIKit/uiview.md)
 ### Conforms To
-- [CALayerDelegate](../quartzcore/calayerdelegate.md)
-- [CLBodyIdentifiable](../corelocation/clbodyidentifiable.md)
-- [CMBodyIdentifiable](../coremotion/cmbodyidentifiable.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIAccessibilityIdentification](../uikit/uiaccessibilityidentification.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearance](../uikit/uiappearance.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIDynamicItem](../uikit/uidynamicitem.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UILargeContentViewerItem](../uikit/uilargecontentvieweritem.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIPopoverPresentationControllerSourceItem](../uikit/uipopoverpresentationcontrollersourceitem.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CALayerDelegate](../QuartzCore/calayerdelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/clbodyidentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/cmbodyidentifiable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIAccessibilityIdentification](../UIKit/uiaccessibilityidentification.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearance](../UIKit/uiappearance.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIDynamicItem](../UIKit/uidynamicitem.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UILargeContentViewerItem](../UIKit/uilargecontentvieweritem.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIPopoverPresentationControllerSourceItem](../UIKit/uipopoverpresentationcontrollersourceitem.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [protocol AVRoutePickerViewDelegate](avroutepickerviewdelegate.md)
+### Route selection
+- [protocol AVRoutePickerViewDelegate](./avroutepickerviewdelegate.md)
   A protocol that defines the methods to adopt to respond to route picker view presentation events.
-- [enum AVRoutePickerViewButtonStyle](avroutepickerviewbuttonstyle.md)
+- [enum AVRoutePickerViewButtonStyle](./avroutepickerviewbuttonstyle.md)
   Constants that define the button styles a route picker view supports.
 
 

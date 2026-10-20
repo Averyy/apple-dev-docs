@@ -1,7 +1,8 @@
 # AVAudioVoiceProcessingOtherAudioDuckingConfiguration
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration of ducking non-voice audio.
 
@@ -18,34 +19,39 @@ The configuration of ducking non-voice audio.
 struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration
 ```
 
+```c
+typedef struct AVAudioVoiceProcessingOtherAudioDuckingConfiguration { ... } AVAudioVoiceProcessingOtherAudioDuckingConfiguration;
+```
+
 ## Topics
 
 ### Creating a ducking configuration
-- [init()](avaudiovoiceprocessingotheraudioduckingconfiguration/init.md)
-- [init(enableAdvancedDucking: ObjCBool, duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level)](avaudiovoiceprocessingotheraudioduckingconfiguration/init(enableadvancedducking:duckinglevel:).md)
+- [init()](./avaudiovoiceprocessingotheraudioduckingconfiguration/init%28%29.md)
+- [init(enableAdvancedDucking: ObjCBool, duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level)](./avaudiovoiceprocessingotheraudioduckingconfiguration/init%28enableadvancedducking,duckinglevel%29.md)
 ### Configuring ducking
-- [var enableAdvancedDucking: ObjCBool](avaudiovoiceprocessingotheraudioduckingconfiguration/enableadvancedducking.md)
+- [var enableAdvancedDucking: ObjCBool](./avaudiovoiceprocessingotheraudioduckingconfiguration/enableadvancedducking.md)
   Enables advanced ducking which ducks other audio based on the presence of voice activity from local and remote chat participants.
-- [var duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](avaudiovoiceprocessingotheraudioduckingconfiguration/duckinglevel.md)
+- [var duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](./avaudiovoiceprocessingotheraudioduckingconfiguration/duckinglevel.md)
   The ducking level of other audio.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](avaudiovoiceprocessingotheraudioduckingconfiguration/level.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](./avaudiovoiceprocessingotheraudioduckingconfiguration/level.md)
   Constants that define the supported ducking levels.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var isVoiceProcessingInputMuted: Bool](avaudioinputnode/isvoiceprocessinginputmuted.md)
+### Configuring voice processing
+- [var isVoiceProcessingInputMuted: Bool](./avaudioinputnode/isvoiceprocessinginputmuted.md)
   A Boolean that indicates whether the input of the voice processing unit is in a muted state.
-- [var isVoiceProcessingBypassed: Bool](avaudioinputnode/isvoiceprocessingbypassed.md)
+- [var isVoiceProcessingBypassed: Bool](./avaudioinputnode/isvoiceprocessingbypassed.md)
   A Boolean that indicates whether the node bypasses all microphone uplink processing of the voice-processing unit.
-- [var isVoiceProcessingAGCEnabled: Bool](avaudioinputnode/isvoiceprocessingagcenabled.md)
+- [var isVoiceProcessingAGCEnabled: Bool](./avaudioinputnode/isvoiceprocessingagcenabled.md)
   A Boolean that indicates whether automatic gain control on the processed microphone uplink signal is active.
-- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](avaudioinputnode/voiceprocessingotheraudioduckingconfiguration.md)
+- [var voiceProcessingOtherAudioDuckingConfiguration: AVAudioVoiceProcessingOtherAudioDuckingConfiguration](./avaudioinputnode/voiceprocessingotheraudioduckingconfiguration.md)
   The ducking configuration of nonvoice audio.
 
 

@@ -1,6 +1,7 @@
 # Localizing Code Comments and String Literals
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 In Swift Playgrounds 3.0 and later, mark up code zones to replace them with code that’s localized for the current user.
 
@@ -56,13 +57,14 @@ let message = "Guten Tag!"
 
 ## See Also
 
-- [Writing Prose for a Playground Page](writing-prose-for-a-playground-page.md)
+### Annotations
+- [Writing Prose for a Playground Page](./writing-prose-for-a-playground-page.md)
   Add comment markers in your Swift code to mark text as prose.
-- [Specifying Editable Regions in a Playground Page](specifying-editable-regions-in-a-playground-page.md)
+- [Specifying Editable Regions in a Playground Page](./specifying-editable-regions-in-a-playground-page.md)
   Guide learning by marking code that learners can change or copy forward.
-- [Hiding Code from a Playground Page](hiding-code-from-a-playground-page.md)
+- [Hiding Code from a Playground Page](./hiding-code-from-a-playground-page.md)
   Use special Swift comments to hide code from display but continue to run it.
-- [Customizing the Completions in the Shortcut Bar](customizing-the-completions-in-the-shortcut-bar.md)
+- [Customizing the Completions in the Shortcut Bar](./customizing-the-completions-in-the-shortcut-bar.md)
   Guide learners toward a solution by hiding some symbols and showing others.
 
 

@@ -1,7 +1,8 @@
 # update(parameters:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the radial forces with constant magnitude for rigid bodies from the force effect.
 

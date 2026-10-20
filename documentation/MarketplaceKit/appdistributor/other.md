@@ -1,7 +1,8 @@
 # AppDistributor.other
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,7 @@ case other
 
 ## Mentions
 
-- [Distributing your app on an alternative app marketplace](distributing-your-app-on-an-alternative-marketplace.md)
+- [Distributing your app on an alternative app marketplace](../distributing-your-app-on-an-alternative-marketplace.md)
 
 
 ---

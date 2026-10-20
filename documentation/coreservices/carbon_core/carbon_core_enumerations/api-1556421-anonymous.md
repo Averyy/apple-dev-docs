@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kAlertCautionBadgeIcon: Int](kalertcautionbadgeicon.md)
-- [var kAliasBadgeIcon: Int](kaliasbadgeicon.md)
-- [var kAppleScriptBadgeIcon: Int](kapplescriptbadgeicon.md)
-- [var kLockedBadgeIcon: Int](klockedbadgeicon.md)
-- [var kMountedBadgeIcon: Int](kmountedbadgeicon.md)
-- [var kSharedBadgeIcon: Int](ksharedbadgeicon.md)
+- [var kAlertCautionBadgeIcon: Int](../../kalertcautionbadgeicon.md)
+- [var kAliasBadgeIcon: Int](../../kaliasbadgeicon.md)
+- [var kAppleScriptBadgeIcon: Int](../../kapplescriptbadgeicon.md)
+- [var kLockedBadgeIcon: Int](../../klockedbadgeicon.md)
+- [var kMountedBadgeIcon: Int](../../kmountedbadgeicon.md)
+- [var kSharedBadgeIcon: Int](../../ksharedbadgeicon.md)
 
 
 ---

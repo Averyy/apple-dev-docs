@@ -1,7 +1,8 @@
 # sourceView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that the sheet centers itself over.
 
@@ -17,11 +18,15 @@ The view that the sheet centers itself over.
 var sourceView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * sourceView;
+```
+
 #### Discussion
 
 The default value is `nil`, which means the system centers edge-attached sheets on the edge they attach to, and centers floating sheets vertically and horizontally in the window.
 
-To customize the sheet’s position, set a view within the view hierarchy of the presenting view controller as the [`sourceView`](uisheetpresentationcontroller/sourceview.md) of the sheet. The sheet attempts to visually center itself over this view. The system only positions the sheet within system-defined margins.
+To customize the sheet’s position, set a view within the view hierarchy of the presenting view controller as the [`sourceView`](./sourceview.md) of the sheet. The sheet attempts to visually center itself over this view. The system only positions the sheet within system-defined margins.
 
 
 ---

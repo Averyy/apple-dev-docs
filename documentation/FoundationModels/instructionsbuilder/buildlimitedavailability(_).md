@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a builder with limited availability instructions.
 
@@ -22,17 +23,18 @@ static func buildLimitedAvailability(_ instructions: some InstructionsRepresenta
 
 ## See Also
 
-- [static func buildArray([some InstructionsRepresentable]) -> Instructions](instructionsbuilder/buildarray(_:).md)
+### Building instructions
+- [static func buildArray([some InstructionsRepresentable]) -> Instructions](./buildarray%28_%29.md)
   Creates a builder with an array of instructions.
-- [static func buildBlock<each I>(repeat each I) -> Instructions](instructionsbuilder/buildblock(_:).md)
+- [static func buildBlock<each I>(repeat each I) -> Instructions](./buildblock%28_%29.md)
   Creates a builder with a block.
-- [static func buildEither(first: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(first:).md)
+- [static func buildEither(first: some InstructionsRepresentable) -> Instructions](./buildeither%28first%29.md)
   Creates a builder with the first component.
-- [static func buildEither(second: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(second:).md)
+- [static func buildEither(second: some InstructionsRepresentable) -> Instructions](./buildeither%28second%29.md)
   Creates a builder with the second component.
-- [static buildExpression(_:)](instructionsbuilder/buildexpression(_:).md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Creates a builder with an instructions expression.
-- [static func buildOptional(Instructions?) -> Instructions](instructionsbuilder/buildoptional(_:).md)
+- [static func buildOptional(Instructions?) -> Instructions](./buildoptional%28_%29.md)
   Creates a builder with an optional component.
 
 

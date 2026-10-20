@@ -1,7 +1,8 @@
 # ICCameraItemThumbnailOption
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option for the item’s thumbnail.
 
@@ -18,31 +19,36 @@ An option for the item’s thumbnail.
 struct ICCameraItemThumbnailOption
 ```
 
+```c
+typedef NSString * ICCameraItemThumbnailOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](iccameraitemthumbnailoption/init(rawvalue:).md)
+- [init(rawValue: String)](./iccameraitemthumbnailoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestThumbnail()](iccameraitem/requestthumbnail.md)
+### Requesting Thumbnails
+- [func requestThumbnail()](./iccameraitem/requestthumbnail%28%29.md)
   Requests a thumbnail for the item.
-- [var thumbnail: CGImage?](iccameraitem/thumbnail.md)
+- [var thumbnail: CGImage?](./iccameraitem/thumbnail.md)
   The item’s thumbnail.
-- [var thumbnailIfAvailable: CGImage?](iccameraitem/thumbnailifavailable.md)
+- [var thumbnailIfAvailable: CGImage?](./iccameraitem/thumbnailifavailable.md)
   The item’s thumbnail if it is readily available.
-- [var largeThumbnailIfAvailable: CGImage?](iccameraitem/largethumbnailifavailable.md)
+- [var largeThumbnailIfAvailable: CGImage?](./iccameraitem/largethumbnailifavailable.md)
   A large thumbnail for the item if one is readily available.
-- [func flushThumbnailCache()](iccameraitem/flushthumbnailcache.md)
+- [func flushThumbnailCache()](./iccameraitem/flushthumbnailcache%28%29.md)
   Deletes the item’s cached thumbnail.
 
 

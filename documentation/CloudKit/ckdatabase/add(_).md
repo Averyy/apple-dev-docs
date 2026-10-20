@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified operation in the current database.
 
@@ -10,7 +11,7 @@ Executes the specified operation in the current database.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,9 +21,13 @@ Executes the specified operation in the current database.
 func add(_ operation: CKDatabaseOperation)
 ```
 
+```objc
+- (void) addOperation:(CKDatabaseOperation *) operation;
+```
+
 #### Discussion
 
-Configure the operation fully before you call this method. Prior to the operation executing, CloudKit sets its [`database`](ckdatabaseoperation/database.md) property to the current database. The operation executes at the priority and quality of service (QoS) that you specify using the [`queuePriority`](https://developer.apple.com/documentation/foundation/operation/queuepriority-swift.property) and [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/qualityofservice) properties.
+Configure the operation fully before you call this method. Prior to the operation executing, CloudKit sets its [`database`](../ckdatabaseoperation/database.md) property to the current database. The operation executes at the priority and quality of service (QoS) that you specify using the [`queuePriority`](../../Foundation/operation/queuepriority-swift.property.md) and [`qualityOfService`](../../Foundation/operation/qualityofservice.md) properties.
 
 ## Parameters
 

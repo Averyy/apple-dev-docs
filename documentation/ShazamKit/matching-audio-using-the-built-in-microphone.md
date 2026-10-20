@@ -1,6 +1,7 @@
 # Matching audio using the built-in microphone
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: Article
 
 Use the audio stream from the microphone as the source for a ShazamKit session.
 
@@ -8,13 +9,13 @@ Use the audio stream from the microphone as the source for a ShazamKit session.
 
 Use an audio engine with a mixer node to connect to the microphone and convert the audio format into one that’s compatible with ShazamKit. You’ll also need to add a description of the intended use of the microphone.
 
-##### Add a Microphone Use Description
+##### Add a microphone use description
 
-The microphone is a protected resource and requires permission from the user. Your app must provide a description of the intended use by adding a `Privacy - Microphone Usage Description` key to App Info. For more information on accessing protected resources, see [`Requesting access to protected resources`](https://developer.apple.com/documentation/uikit/requesting-access-to-protected-resources).
+The microphone is a protected resource and requires permission from the user. Your app must provide a description of the intended use by adding a `Privacy - Microphone Usage Description` key to App Info. For more information on accessing protected resources, see [Requesting access to protected resources](../UIKit/requesting-access-to-protected-resources.md).
 
-##### Configure an Audio Mixer and Install a Tap
+##### Configure an audio mixer and install a tap
 
-Access the microphone using [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) and an [`AVAudioMixerNode`](https://developer.apple.com/documentation/avfaudio/avaudiomixernode) to convert the sound into one that’s compatible with ShazamKit.
+Access the microphone using [`AVAudioEngine`](../AVFAudio/avaudioengine.md) and an [`AVAudioMixerNode`](../AVFAudio/avaudiomixernode.md) to convert the sound into one that’s compatible with ShazamKit.
 
 Start by adding properties to your matcher class for the audio engine and mixer node. Then add a property for the active ShazamKit session.
 
@@ -64,7 +65,7 @@ func configureAudioEngine() {
 
 > **Note**:  The output from the built-in microphone on devices running iOS 14 and earlier is already in a format that’s compatible with ShazamKit. Other microphones or input sources may not be compatible.
 
-##### Start and Stop the Audio Engine
+##### Start and stop the audio engine
 
 Add a function to start listening to the microphone using the tap on the mixer node. You must request access to the microphone.
 
@@ -83,9 +84,9 @@ func startListening() throws {
 }
 ```
 
-The category uses [`AVAudioRoutingArbiter.Category.playAndRecord`](https://developer.apple.com/documentation/avfaudio/avaudioroutingarbiter/category/playandrecord) because the input of the mixer records the mic and the output plays the result. The tap captures the audio buffers from the output of the mixer.
+The category uses [`AVAudioRoutingArbiter.Category.playAndRecord`](../AVFAudio/avaudioroutingarbiter/category/playandrecord.md) because the input of the mixer records the mic and the output plays the result. The tap captures the audio buffers from the output of the mixer.
 
-Add another function to stop listening to the microphone. Call this function when you no longer need information about the matched item, such as the [`predictedCurrentMatchOffset`](shmatchedmediaitem/predictedcurrentmatchoffset.md). Also call this function when there’s a value for error in [`session(_:didNotFindMatchFor:error:)`](shsessiondelegate/session(_:didnotfindmatchfor:error:).md).
+Add another function to stop listening to the microphone. Call this function when you no longer need information about the matched item, such as the [`predictedCurrentMatchOffset`](./shmatchedmediaitem/predictedcurrentmatchoffset.md). Also call this function when there’s a value for error in [`session(_:didNotFindMatchFor:error:)`](./shsessiondelegate/session%28_,didnotfindmatchfor,error%29.md).
 
 ```swift
 func stopListening() {
@@ -97,11 +98,11 @@ func stopListening() {
 
 ```
 
-You can also [`pause()`](https://developer.apple.com/documentation/avfoundation/avplayer/pause()) the engine instead of stopping it.
+You can also [`pause()`](../AVFoundation/avplayer/pause%28%29.md) the engine instead of stopping it.
 
-##### Check for a Match in a Catalog
+##### Check for a match in a catalog
 
-Check for a match by creating an [`SHSession`](shsession.md) object for a catalog and starting the audio engine. The following function demonstrates this:
+Check for a match by creating an [`SHSession`](./shsession.md) object for a catalog and starting the audio engine. The following function demonstrates this:
 
 ```swift
 func match(_ catalog: SHCustomCatalog) throws {
@@ -134,9 +135,10 @@ func match(_ catalog: SHCustomCatalog) throws {
 
 ## See Also
 
-- [func match(SHSignature)](shsession/match(_:).md)
+### Making a match
+- [func match(SHSignature)](./shsession/match%28_%29.md)
   Searches for the query signature in the reference signatures that the session catalog contains.
-- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](shsession/matchstreamingbuffer(_:at:).md)
+- [func matchStreamingBuffer(AVAudioPCMBuffer, at: AVAudioTime?)](./shsession/matchstreamingbuffer%28_,at%29.md)
   Converts the audio in the buffer to a signature, and searches the reference signatures in the session catalog.
 
 

@@ -1,15 +1,20 @@
 # extendedInquiryResponse
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var extendedInquiryResponse: BluetoothHCIExtendedInquiryResponse
+```
+
+```c
+BluetoothHCIExtendedInquiryResponse extendedInquiryResponse;
 ```
 
 

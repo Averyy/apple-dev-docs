@@ -2,6 +2,7 @@
 
 **Framework**: Evaluations  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The evaluators to apply to each sample and its corresponding subject.
@@ -24,13 +25,14 @@ The evaluators to apply to each sample and its corresponding subject.
 
 ## See Also
 
-- [Evaluation.Evaluators](evaluation/evaluators-swift.typealias.md)
+### Scoring results
+- [Evaluation.Evaluators](./evaluators-swift.typealias.md)
   The evaluator array type for this conformance.
-- [protocol EvaluatorProtocol](evaluatorprotocol.md)
+- [protocol EvaluatorProtocol](../evaluatorprotocol.md)
   A type that evaluates subjects and produces metrics.
-- [struct EvaluatorsBuilder](evaluatorsbuilder.md)
+- [struct EvaluatorsBuilder](../evaluatorsbuilder.md)
   A result builder that enables declarative evaluator lists.
-- [func aggregateMetrics(using: inout MetricsAggregator)](evaluation/aggregatemetrics(using:).md)
+- [func aggregateMetrics(using: inout MetricsAggregator)](./aggregatemetrics%28using%29.md)
   Aggregates the collected metric results.
 
 

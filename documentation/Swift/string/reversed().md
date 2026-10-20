@@ -1,7 +1,8 @@
 # reversed()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a view presenting the elements of the collection in reverse order.
 
@@ -40,17 +41,18 @@ print(reversedWord)
 // Prints "sdrawkcaB"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## See Also
 
-- [func sorted() -> [Self.Element]](string/sorted.md)
+### Reordering a String’s Characters
+- [func sorted() -> [Self.Element]](./sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](string/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func shuffled() -> [Self.Element]](string/shuffled.md)
+- [func shuffled() -> [Self.Element]](./shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](string/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
 
 

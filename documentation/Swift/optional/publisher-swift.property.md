@@ -1,7 +1,8 @@
 # publisher
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Combine publisher that publishes this instance’s value to each subscriber exactly once, if it has any value at all.
 
@@ -36,7 +37,7 @@ let optional1: Int? = 1
 // optional1 completed.
 ```
 
-In contrast with the [`Just`](https://developer.apple.com/documentation/combine/just) publisher, which always publishes a single value, this publisher might not send any values and instead finish normally if the optional’s `output` is `nil`. In the next example, an `Int?` optional that’s `nil` immediately sends the [`Subscribers.Completion.finished`](https://developer.apple.com/documentation/combine/subscribers/completion/finished) completion, without producing any values.
+In contrast with the [`Just`](../../Combine/just.md) publisher, which always publishes a single value, this publisher might not send any values and instead finish normally if the optional’s `output` is `nil`. In the next example, an `Int?` optional that’s `nil` immediately sends the [`Subscribers.Completion.finished`](../../Combine/subscribers/completion/finished.md) completion, without producing any values.
 
 ```swift
 let optional2: Int? = nil
@@ -51,7 +52,8 @@ optional2.publisher
 
 ## See Also
 
-- [Optional.Publisher](optional/publisher-swift.struct.md)
+### Publishing an Optional
+- [Optional.Publisher](./publisher-swift.struct.md)
   The type of a Combine publisher that publishes the value of a Swift optional instance to each subscriber exactly once, if the instance has any value at all.
 
 

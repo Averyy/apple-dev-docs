@@ -1,7 +1,8 @@
 # ShadowStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A style to use when rendering shadows.
 
@@ -23,43 +24,44 @@ struct ShadowStyle
 ## Topics
 
 ### Getting shadow styles
-- [static func drop(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](shadowstyle/drop(color:radius:x:y:).md)
+- [static func drop(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](./shadowstyle/drop%28color,radius,x,y%29.md)
   Creates a custom drop shadow style.
-- [static func inner(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](shadowstyle/inner(color:radius:x:y:).md)
+- [static func inner(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> ShadowStyle](./shadowstyle/inner%28color,radius,x,y%29.md)
   Creates a custom inner shadow style.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](./view/border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./view/foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./view/foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./view/foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](./view/backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](./environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](./shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](./anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](./gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](./meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](./anygradient.md)
   A color gradient.
-- [struct Glass](glass.md)
+- [struct Glass](./glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

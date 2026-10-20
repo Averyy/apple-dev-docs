@@ -1,6 +1,7 @@
 # Understanding build product layout changes in Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 #### Overview
 
@@ -8,11 +9,11 @@ The layout of unoptimized builds for app and app extension targets have changed 
 
 If you need an advanced workflow that depends on the specific layout of executables in unoptimized builds, you can opt out of the default behavior if necessary.
 
-##### Inspect Your App Bundle
+##### Inspect your app bundle
 
 If you open your app bundle, you see two dynamic library files (`.dylib`) in the executable directory. For example, this is part of the layout of an iOS app bundle:
 
-```None
+```
 MyApp.app
     - MyApp
     - MyApp.debug.dylib
@@ -24,7 +25,7 @@ The file with the `.debug.dylib` suffix contains all of your code that’s linke
 
 The symbols and Mach-O sections of an unoptimized build link into this separate `.dylib` file, unlike release builds that link into the main binary.
 
-##### Opt Out of the Debug Dylib
+##### Opt out of the debug dylib
 
 If you expect to scan for custom linker sections you inject, use `OTHER_LDFLAGS` for specific control of your output binary. Or if you have tooling that scans binaries for specific symbols for verification, then you may need to adapt to this default unoptimized build layout. If you can’t change your tooling to scan the debug `.dylib`, then you can opt out of this layout completely.
 
@@ -38,17 +39,18 @@ You can override this by adding `ENABLE_DEBUG_DYLIB=NO` to that specific target.
 
 Opting out makes the target ineligible to use Previews. Previews continue to work for frameworks and packages separate from the executable target. You should continue using Previews for dependent targets if you need to opt out of this for your main executable target.
 
-If this article doesn’t address your build issues, file feedback using the [`Feedback Assistant`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/).
+If this article doesn’t address your build issues, file feedback using the [Feedback Assistant](https://developer.apple.com/bug-reporting/).
 
 ## See Also
 
-- [Configuring the build settings of a target](configuring-the-build-settings-of-a-target.md)
+### Build settings
+- [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md)
   Specify the options you use to compile, link, and produce a product from a target, and identify settings inherited from your project or the system.
-- [Adding a build configuration file to your project](adding-a-build-configuration-file-to-your-project.md)
+- [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md)
   Specify your project’s build settings in plain-text files, and supply different settings for debug and release builds.
-- [Build settings reference](build-settings-reference.md)
+- [Build settings reference](./build-settings-reference.md)
   A detailed list of individual Xcode build settings that control or change the way a target is built.
-- [Identifying and addressing framework module issues](identifying-and-addressing-framework-module-issues.md)
+- [Identifying and addressing framework module issues](./identifying-and-addressing-framework-module-issues.md)
   Detect and fix common problems found in framework modules with the module verifier.
 
 

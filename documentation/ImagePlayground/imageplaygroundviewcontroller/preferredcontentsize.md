@@ -1,7 +1,8 @@
 # preferredContentSize
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred size for the view controller’s view.
 

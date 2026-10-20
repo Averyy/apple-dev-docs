@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sections that match the filters on the originating library request.
 

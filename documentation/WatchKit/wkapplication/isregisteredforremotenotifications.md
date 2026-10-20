@@ -1,7 +1,8 @@
 # isRegisteredForRemoteNotifications
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the app has successfully registered for remote notifications.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates if the app has successfully registered for remote
 var isRegisteredForRemoteNotifications: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRegisteredForRemoteNotifications) BOOL registeredForRemoteNotifications;
+```
+
 #### Discussion
 
-This method indicates whether your app successfully registered for remote notifications using the [`registerForRemoteNotifications()`](wkapplication/registerforremotenotifications().md) method. It also takes into account the notification permissions set by the user. It doesn’t give any indication about whether remote notifications are available.
+This method indicates whether your app successfully registered for remote notifications using the [`registerForRemoteNotifications()`](./registerforremotenotifications%28%29.md) method. It also takes into account the notification permissions set by the user. It doesn’t give any indication about whether remote notifications are available.
 
 ## See Also
 
-- [func registerForRemoteNotifications()](wkapplication/registerforremotenotifications.md)
+### Registering for remote notifications
+- [func registerForRemoteNotifications()](./registerforremotenotifications%28%29.md)
   Register to receive remote notifications from the Apple Push Notification service (APNs).
-- [func unregisterForRemoteNotifications()](wkapplication/unregisterforremotenotifications.md)
+- [func unregisterForRemoteNotifications()](./unregisterforremotenotifications%28%29.md)
   Unregister for all remote notifications received from Apple Push Notification service (APNs).
 
 

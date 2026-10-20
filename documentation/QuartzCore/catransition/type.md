@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the predefined transition type.
 
@@ -19,13 +20,18 @@ Specifies the predefined transition type.
 var type: CATransitionType { get set }
 ```
 
+```objc
+@property (copy) CATransitionType type;
+```
+
 #### Discussion
 
-The possible values are shown in [`Common Transition Types`](common-transition-types.md). This property is ignored if a custom transition is specified in the [`filter`](catransition/filter.md) property. The default is [`fade`](catransitiontype/fade.md).
+The possible values are shown in [Common Transition Types](../common-transition-types.md). This property is ignored if a custom transition is specified in the [`filter`](./filter.md) property. The default is [`fade`](../catransitiontype/fade.md).
 
 ## See Also
 
-- [var subtype: CATransitionSubtype?](catransition/subtype.md)
+### Transition Properties
+- [var subtype: CATransitionSubtype?](./subtype.md)
   Specifies an optional subtype that indicates the direction for the predefined motion-based transitions.
 
 

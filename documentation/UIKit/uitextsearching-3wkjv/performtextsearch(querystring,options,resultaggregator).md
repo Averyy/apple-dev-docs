@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Searches for ranges of text matching the string across all searchable documents and collects results in the aggregator.
@@ -10,7 +11,7 @@ Searches for ranges of text matching the string across all searchable documents 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ func performTextSearch(queryString: String, options: UITextSearchOptions, result
 
 #### Discussion
 
-The system calls this method during a find session to perform the search. Your implenentation should search for matching text ranges in your app’s documents and call [`foundRange(_:searchString:document:)`](uitextsearchaggregator-swift.struct/foundrange(_:searchstring:document:).md) on the aggregator object to add them to the set of matching ranges.
+The system calls this method during a find session to perform the search. Your implenentation should search for matching text ranges in your app’s documents and call [`foundRange(_:searchString:document:)`](../uitextsearchaggregator-swift.struct/foundrange%28_,searchstring,document%29.md) on the aggregator object to add them to the set of matching ranges.
 
 ## Parameters
 
@@ -30,13 +31,14 @@ The system calls this method during a find session to perform the search. Your i
 
 ## See Also
 
-- [struct UITextSearchAggregator](uitextsearchaggregator-swift.struct.md)
+### Handling searches
+- [struct UITextSearchAggregator](../uitextsearchaggregator-swift.struct.md)
   The methods you use on a find session’s aggregator to collect matching text ranges for a search.
-- [func compare(UITextRange, toRange: UITextRange, document: Self.DocumentIdentifier?) -> ComparisonResult](uitextsearching-3wkjv/compare(_:torange:document:).md)
+- [func compare(UITextRange, toRange: UITextRange, document: Self.DocumentIdentifier?) -> ComparisonResult](./compare%28_,torange,document%29.md)
   Compares ranges from the set of matches the aggregator provides to determine navigation order.
-- [func compare(document: Self.DocumentIdentifier, toDocument: Self.DocumentIdentifier) -> ComparisonResult](uitextsearching-3wkjv/compare(document:todocument:).md)
+- [func compare(document: Self.DocumentIdentifier, toDocument: Self.DocumentIdentifier) -> ComparisonResult](./compare%28document,todocument%29.md)
   Compares documents containing matching ranges from the set the aggregator provides to determine navigation order.
-- [associatedtype DocumentIdentifier : Hashable = AnyHashable?](uitextsearching-3wkjv/documentidentifier.md)
+- [associatedtype DocumentIdentifier : Hashable = AnyHashable?](./documentidentifier.md)
   An object that uniquely identifies a specific document when searching for matching text across multiple documents.
 
 

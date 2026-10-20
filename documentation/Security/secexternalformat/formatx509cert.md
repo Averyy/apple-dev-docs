@@ -1,7 +1,8 @@
 # SecExternalFormat.formatX509Cert
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for certificates. DER (distinguished encoding rules) encoded. X.509 is a standard for digital certificates from the International Telecommunication Union (ITU). This is the default for certificates.
 
@@ -12,6 +13,10 @@ Format for certificates. DER (distinguished encoding rules) encoded. X.509 is a 
 
 ```swift
 case formatX509Cert
+```
+
+```c
+kSecFormatX509Cert
 ```
 
 

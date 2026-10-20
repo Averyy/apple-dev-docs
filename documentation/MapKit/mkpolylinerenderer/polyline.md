@@ -1,7 +1,8 @@
 # polyline
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The polyline overlay object that contains the information for drawing the overlay.
 
@@ -17,6 +18,10 @@ The polyline overlay object that contains the information for drawing the overla
 
 ```swift
 var polyline: MKPolyline { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKPolyline * polyline;
 ```
 
 

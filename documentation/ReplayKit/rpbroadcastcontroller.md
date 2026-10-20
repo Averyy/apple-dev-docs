@@ -1,17 +1,20 @@
 # RPBroadcastController
 
 **Framework**: ReplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object containing methods for starting and controlling a broadcast.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 11.0+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,53 +22,58 @@ An object containing methods for starting and controlling a broadcast.
 class RPBroadcastController
 ```
 
+```objc
+@interface RPBroadcastController : NSObject
+```
+
 ## Topics
 
 ### Controlling the Broadcast
-- [var broadcastURL: URL](rpbroadcastcontroller/broadcasturl.md)
+- [var broadcastURL: URL](./rpbroadcastcontroller/broadcasturl.md)
   A URL that redirects users to an ongoing or completed broadcast.
-- [func startBroadcast(handler: ((any Error)?) -> Void)](rpbroadcastcontroller/startbroadcast(handler:).md)
+- [func startBroadcast(handler: ((any Error)?) -> Void)](./rpbroadcastcontroller/startbroadcast%28handler%29.md)
   Starts a broadcast.
-- [func pauseBroadcast()](rpbroadcastcontroller/pausebroadcast.md)
+- [func pauseBroadcast()](./rpbroadcastcontroller/pausebroadcast%28%29.md)
   Pauses the current broadcast.
-- [func resumeBroadcast()](rpbroadcastcontroller/resumebroadcast.md)
+- [func resumeBroadcast()](./rpbroadcastcontroller/resumebroadcast%28%29.md)
   Resumes a paused broadcast.
-- [func finishBroadcast(handler: ((any Error)?) -> Void)](rpbroadcastcontroller/finishbroadcast(handler:).md)
+- [func finishBroadcast(handler: ((any Error)?) -> Void)](./rpbroadcastcontroller/finishbroadcast%28handler%29.md)
   Stops the current broadcast.
-- [var serviceInfo: [String : any NSCoding & NSObjectProtocol]?](rpbroadcastcontroller/serviceinfo.md)
+- [var serviceInfo: [String : any NSCoding & NSObjectProtocol]?](./rpbroadcastcontroller/serviceinfo.md)
   Information updated by the service during a broadcast.
 ### Retrieving Information About the Broadcast
-- [var broadcastExtensionBundleID: String?](rpbroadcastcontroller/broadcastextensionbundleid.md)
+- [var broadcastExtensionBundleID: String?](./rpbroadcastcontroller/broadcastextensionbundleid.md)
   The bundle ID for the selected broadcast service.
-- [var isBroadcasting: Bool](rpbroadcastcontroller/isbroadcasting.md)
+- [var isBroadcasting: Bool](./rpbroadcastcontroller/isbroadcasting.md)
   A Boolean value indicating whether the controller is broadcasting.
-- [var isPaused: Bool](rpbroadcastcontroller/ispaused.md)
+- [var isPaused: Bool](./rpbroadcastcontroller/ispaused.md)
   A Boolean value indicating whether the broadcast is paused.
 ### Getting the Delegate
-- [var delegate: (any RPBroadcastControllerDelegate)?](rpbroadcastcontroller/delegate.md)
+- [var delegate: (any RPBroadcastControllerDelegate)?](./rpbroadcastcontroller/delegate.md)
   The delegate for the broadcast controller.
-- [protocol RPBroadcastControllerDelegate](rpbroadcastcontrollerdelegate.md)
+- [protocol RPBroadcastControllerDelegate](./rpbroadcastcontrollerdelegate.md)
   The protocol you implement to respond to changes in a live broadcast.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class RPBroadcastHandler](rpbroadcasthandler.md)
+### Media Clip Processing
+- [class RPBroadcastHandler](./rpbroadcasthandler.md)
   An object that sends messages to the broadcasting app.
-- [class RPBroadcastSampleHandler](rpbroadcastsamplehandler.md)
+- [class RPBroadcastSampleHandler](./rpbroadcastsamplehandler.md)
   An object that processes buffer objects as received from ReplayKit.
-- [class RPBroadcastMP4ClipHandler](rpbroadcastmp4cliphandler.md)
+- [class RPBroadcastMP4ClipHandler](./rpbroadcastmp4cliphandler.md)
   An object that processes MP4 movie clips from ReplayKit.
 
 

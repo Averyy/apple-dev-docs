@@ -1,7 +1,8 @@
 # CKNotification.NotificationType.readNotification
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that your app marks as read.
 
@@ -10,7 +11,7 @@ A notification that your app marks as read.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,13 +21,18 @@ A notification that your app marks as read.
 case readNotification
 ```
 
+```c
+CKNotificationTypeReadNotification
+```
+
 ## See Also
 
-- [CKNotification.NotificationType.query](cknotification/notificationtype-swift.enum/query.md)
+### Notification Types
+- [CKNotification.NotificationType.query](./query.md)
   A notification that CloudKit generates from a query subscription’s predicate.
-- [CKNotification.NotificationType.database](cknotification/notificationtype-swift.enum/database.md)
+- [CKNotification.NotificationType.database](./database.md)
   A notification that CloudKit generates when the contents of a database change.
-- [CKNotification.NotificationType.recordZone](cknotification/notificationtype-swift.enum/recordzone.md)
+- [CKNotification.NotificationType.recordZone](./recordzone.md)
   A notification that CloudKit generates when the contents of a record zone change.
 
 

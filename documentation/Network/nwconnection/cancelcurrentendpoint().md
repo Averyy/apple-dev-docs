@@ -1,7 +1,8 @@
 # cancelCurrentEndpoint()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the current endpoint to be rejected, allowing the connection to try another resolved address.
 
@@ -26,9 +27,10 @@ Protocols that do not have handshakes, such as UDP, do not allow connections to 
 
 ## See Also
 
-- [func cancel()](nwconnection/cancel.md)
+### Canceling Connections
+- [func cancel()](./cancel%28%29.md)
   Cancels the connection and gracefully disconnects any established network protocols.
-- [func forceCancel()](nwconnection/forcecancel.md)
+- [func forceCancel()](./forcecancel%28%29.md)
   Cancels the connection and immediately disconnects any established network protocols.
 
 

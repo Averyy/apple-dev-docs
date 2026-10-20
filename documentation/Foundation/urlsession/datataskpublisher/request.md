@@ -1,7 +1,8 @@
 # request
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL request performed by the data task associated with this publisher.
 
@@ -22,7 +23,8 @@ let request: URLRequest
 
 ## See Also
 
-- [let session: URLSession](urlsession/datataskpublisher/session.md)
+### Inspecting data task properties
+- [let session: URLSession](./session.md)
   The URL session that performs the data task associated with this publisher.
 
 

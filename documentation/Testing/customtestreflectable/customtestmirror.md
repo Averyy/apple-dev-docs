@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The custom mirror for this instance.
@@ -18,7 +19,7 @@ var customTestMirror: Mirror { get }
 
 ## Mentions
 
-- [Describing and reflecting values](describing-values.md)
+- [Describing and reflecting values](../describing-values.md)
 
 #### Discussion
 

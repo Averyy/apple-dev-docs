@@ -1,7 +1,8 @@
 # columnTypes
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the data in each column.
 
@@ -25,9 +26,10 @@ The keys in the dictionary provided by this column correspond to the names of th
 
 ## See Also
 
-- [var columnNames: MLDataTable.ColumnNames](mldatatable/columnnames-swift.property.md)
+### Getting information about a data table’s columns
+- [var columnNames: MLDataTable.ColumnNames](./columnnames-swift.property.md)
   The names of the columns in the data table.
-- [MLDataTable.ColumnNames](mldatatable/columnnames-swift.struct.md)
+- [MLDataTable.ColumnNames](./columnnames-swift.struct.md)
   A collection of the names of the columns in a data table.
 
 

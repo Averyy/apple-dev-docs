@@ -1,7 +1,8 @@
 # bentNormal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bent normal map for the entity.
 
@@ -34,9 +35,10 @@ if let bentNormalResource = try? TextureResource.load(named:"entity_bentNormalMa
 
 ## See Also
 
-- [PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.struct.md)
+### Configuring occlusion shading
+- [PhysicallyBasedMaterial.BentNormal](./bentnormal-swift.struct.md)
   The bent normal map for the entity.
-- [var enableSpecularOcclusion: Bool](physicallybasedmaterial/enablespecularocclusion.md)
+- [var enableSpecularOcclusion: Bool](./enablespecularocclusion.md)
   Enables specular occlusion computations.
 
 

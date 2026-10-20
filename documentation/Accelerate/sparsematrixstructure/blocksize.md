@@ -1,18 +1,19 @@
 # blockSize
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block size of the matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The block size of the matrix.
 var blockSize: UInt8
 ```
 
+```c
+uint8_t blockSize;
+```
+
 ## Mentions
 
-- [Creating sparse matrices](creating-sparse-matrices.md)
+- [Creating sparse matrices](../creating-sparse-matrices.md)
 
 ## See Also
 
-- [var attributes: SparseAttributes_t](sparsematrixstructure/attributes.md)
+### Inspecting the properties of a sparse matrix description
+- [var attributes: SparseAttributes_t](./attributes.md)
   The attributes of the matrix, such as whether it’s symmetrical or triangular.
-- [var columnCount: Int32](sparsematrixstructure/columncount.md)
+- [var columnCount: Int32](./columncount.md)
   The number of columns in the matrix.
-- [var columnStarts: UnsafeMutablePointer<Int>](sparsematrixstructure/columnstarts.md)
+- [var columnStarts: UnsafeMutablePointer<Int>](./columnstarts.md)
   The starting index for each column in the row indices array.
-- [var rowCount: Int32](sparsematrixstructure/rowcount.md)
+- [var rowCount: Int32](./rowcount.md)
   The number of rows in the matrix.
-- [var rowIndices: UnsafeMutablePointer<Int32>](sparsematrixstructure/rowindices.md)
+- [var rowIndices: UnsafeMutablePointer<Int32>](./rowindices.md)
   The row indices of the matrix.
 
 

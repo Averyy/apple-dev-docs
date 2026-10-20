@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The errors encountered during the render, or an empty array if it succeeded.
 

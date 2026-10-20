@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether the action reverses prior operations when playback is reverses.
@@ -23,6 +24,12 @@ var isReversible: Bool { get }
 #### Discussion
 
 The default value is `true`.
+
+## Default Implementations
+
+### EntityAction Implementations
+- [var isReversible: Bool](./isreversible-7w6p0.md)
+  A Boolean value that determines whether the action reverses prior operations when playback is reverses.
 
 
 ---

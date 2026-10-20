@@ -1,7 +1,8 @@
 # /=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 16.0+
@@ -20,10 +21,11 @@ static func /= <T>(lhs: inout Duration, rhs: T) where T : BinaryInteger
 
 ## See Also
 
-- [static func * (Duration, Double) -> Duration](duration/*(_:_:)-3d469.md)
-- [static func *= <T>(inout Duration, T)](duration/*=(_:_:).md)
-- [static func / (Duration, Double) -> Duration](duration/_(_:_:)-7fkmh.md)
-- [static func /= (inout Duration, Double)](duration/_=(_:_:)-10rgx.md)
+### Performing calculations on durations
+- [static func * (Duration, Double) -> Duration](./star%28_,_%29-3d469.md)
+- [static func *= <T>(inout Duration, T)](./stareq%28_,_%29.md)
+- [static func / (Duration, Double) -> Duration](./op%28_,_%29-7fkmh.md)
+- [static func /= (inout Duration, Double)](./opeq%28_,_%29-10rgx.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AVDepthData.Accuracy.relative
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Values within the depth data map are usable for foreground/background separation, but are not absolutely accurate in the physical world.
 
@@ -19,9 +20,13 @@ Values within the depth data map are usable for foreground/background separation
 case relative
 ```
 
+```c
+AVDepthDataAccuracyRelative
+```
+
 ## Mentions
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+- [Capturing photos with depth](../../capturing-photos-with-depth.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ This level of accuracy indicates that values within a depth map are usable relat
 
 ## See Also
 
-- [AVDepthData.Accuracy.absolute](avdepthdata/accuracy/absolute.md)
+### Accuracy values
+- [AVDepthData.Accuracy.absolute](./absolute.md)
   Values within the depth map are absolutely accurate within the physical world.
 
 

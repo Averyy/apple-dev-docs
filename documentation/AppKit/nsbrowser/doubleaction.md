@@ -1,12 +1,13 @@
 # doubleAction
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The browser’s double-click action method.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The browser’s double-click action method.
 var doubleAction: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL doubleAction;
+```
+
 ## See Also
 
-- [func doDoubleClick(Any?)](nsbrowser/dodoubleclick(_:).md)
+### Related Documentation
+- [func doDoubleClick(Any?)](./dodoubleclick%28_%29.md)
   Responds to double clicks in a column of the browser.
-- [var sendsActionOnArrowKeys: Bool](nsbrowser/sendsactiononarrowkeys.md)
+### Managing Actions
+- [var sendsActionOnArrowKeys: Bool](./sendsactiononarrowkeys.md)
   A Boolean that indicates whether pressing an arrow key causes an action message to be sent.
-- [func sendAction() -> Bool](nsbrowser/sendaction.md)
+- [func sendAction() -> Bool](./sendaction%28%29.md)
   Sends the action message to the target.
 
 

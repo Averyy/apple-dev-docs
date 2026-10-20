@@ -1,7 +1,8 @@
 # MDLabelDomain
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,26 @@
 struct MDLabelDomain
 ```
 
+```c
+typedef enum MDLabelDomain : unsigned int {
+    ...
+} MDLabelDomain;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](mdlabeldomain/1444429-init.md)
-- [init(rawValue: UInt32)](mdlabeldomain/1445483-init.md)
+- [init(UInt32)](./mdlabeldomain/api-1444429-init.md)
+- [init(rawValue: UInt32)](./mdlabeldomain/api-1445483-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](mdlabeldomain/1447882-rawvalue.md)
+- [var rawValue: UInt32](./mdlabeldomain/api-1447882-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

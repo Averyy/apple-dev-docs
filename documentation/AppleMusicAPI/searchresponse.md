@@ -1,7 +1,8 @@
 # SearchResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a search request.
 
@@ -10,14 +11,14 @@ The response to a search request.
 
 ## Declaration
 
-```swift
+```
 object SearchResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object SearchResponse.Results](searchresponse/results-data.dictionary.md)
+- [object SearchResponse.Results](./searchresponse/results-data.dictionary.md)
   An object that represents the results of a catalog search query.
 
 ## Properties
@@ -26,11 +27,12 @@ object SearchResponse
 
 ## See Also
 
-- [object SearchHintsResponse](searchhintsresponse.md)
+### Handling the Response
+- [object SearchHintsResponse](./searchhintsresponse.md)
   The response to a request for search hints.
-- [object LibrarySearchResponse](librarysearchresponse.md)
+- [object LibrarySearchResponse](./librarysearchresponse.md)
   The response to a request for a library search.
-- [object SearchSuggestionsResponse](searchsuggestionsresponse.md)
+- [object SearchSuggestionsResponse](./searchsuggestionsresponse.md)
   The response to a request for search suggestions.
 
 

@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a call observer delegate, specifying an optional queue on which to execute delegate methods.
 
@@ -18,10 +19,18 @@ Sets a call observer delegate, specifying an optional queue on which to execute 
 func setDelegate(_ delegate: (any CXCallObserverDelegate)?, queue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<CXCallObserverDelegate>) delegate queue:(dispatch_queue_t) queue;
+```
+
 ## Parameters
 
 - `delegate`: An object conforming to the `CXCallObserverDelegate` protocol.
-- `queue`: The queue on which to execute delegate methods. If `nil`, delegate methods are performed on the main queue. > ❗ **Important**:  Any queue specified is stored as a weak reference.
+- `queue`: The queue on which to execute delegate methods.
+
+  If `nil`, delegate methods are performed on the main queue.
+
+  > ❗ **Important**:  Any queue specified is stored as a weak reference.
 
 
 ---

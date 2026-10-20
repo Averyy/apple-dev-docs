@@ -1,7 +1,8 @@
 # MTLSamplerReductionMode.weightedAverage
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reduction mode that adds together the product of each contributing sample value by its weight.
 
@@ -17,6 +18,10 @@ A reduction mode that adds together the product of each contributing sample valu
 
 ```swift
 case weightedAverage
+```
+
+```c
+MTLSamplerReductionModeWeightedAverage
 ```
 
 

@@ -1,12 +1,15 @@
 # SecKeychainItemCopyFromPersistentReference(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Provides a keychain item reference, given a persistent reference.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Provides a keychain item reference, given a persistent reference.
 func SecKeychainItemCopyFromPersistentReference(_ persistentItemRef: CFData, _ itemRef: UnsafeMutablePointer<SecKeychainItem?>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainItemCopyFromPersistentReference(CFDataRef persistentItemRef, SecKeychainItemRef*itemRef);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-A persistent reference may be stored on disk or passed between processes. You use the [`SecKeychainItemCreatePersistentReference(_:_:)`](seckeychainitemcreatepersistentreference(_:_:).md) function to create a persistent reference.
+A persistent reference may be stored on disk or passed between processes. You use the [`SecKeychainItemCreatePersistentReference(_:_:)`](./seckeychainitemcreatepersistentreference%28_,_%29.md) function to create a persistent reference.
 
 ## Parameters
 

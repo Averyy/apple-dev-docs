@@ -1,7 +1,8 @@
 # itemNames
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description of the card’s contents.
 
@@ -18,19 +19,24 @@ A human-readable description of the card’s contents.
 var itemNames: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * itemNames;
+```
+
 ## See Also
 
-- [var issuedDate: Date](hkverifiableclinicalrecord/issueddate.md)
+### Reading Metadata
+- [var issuedDate: Date](./issueddate.md)
   The date when the issuer created the card.
-- [var relevantDate: Date](hkverifiableclinicalrecord/relevantdate.md)
+- [var relevantDate: Date](./relevantdate.md)
   A date relevant to this record, such as when the issuer administered a vaccine or performed a test.
-- [var expirationDate: Date?](hkverifiableclinicalrecord/expirationdate.md)
+- [var expirationDate: Date?](./expirationdate.md)
   The date when the card expires.
-- [var recordTypes: [String]](hkverifiableclinicalrecord/recordtypes.md)
+- [var recordTypes: [String]](./recordtypes.md)
   An array of strings representing the types of records contained in the card.
-- [var sourceType: HKVerifiableClinicalRecordSourceType?](hkverifiableclinicalrecord/sourcetype.md)
+- [var sourceType: HKVerifiableClinicalRecordSourceType?](./sourcetype.md)
   The source for the verifiable clinical record
-- [struct HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype.md)
+- [struct HKVerifiableClinicalRecordSourceType](../hkverifiableclinicalrecordsourcetype.md)
   The source type for the verifiable clinical record.
 
 

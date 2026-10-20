@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_FieldCount
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The field count indicating whether the frames should be encoded progressive (1) or interlaced (2).
 
@@ -19,21 +20,26 @@ The field count indicating whether the frames should be encoded progressive (1) 
 let kVTCompressionPropertyKey_FieldCount: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_FieldCount;
+```
+
 #### Discussion
 
 The field count is set on the format description for output samples, and may affect source frame scaling. `NULL` is a valid value for this property.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_AspectRatio16x9: CFString](kvtcompressionpropertykey_aspectratio16x9.md)
+### Clean Aperture and Pixel Aspect Ratio
+- [let kVTCompressionPropertyKey_AspectRatio16x9: CFString](./kvtcompressionpropertykey_aspectratio16x9.md)
   A Boolean value indicating whether the DV video stream should have the 16x9 flag set.
-- [let kVTCompressionPropertyKey_CleanAperture: CFString](kvtcompressionpropertykey_cleanaperture.md)
+- [let kVTCompressionPropertyKey_CleanAperture: CFString](./kvtcompressionpropertykey_cleanaperture.md)
   The clean aperture for encoded frames.
-- [let kVTCompressionPropertyKey_FieldDetail: CFString](kvtcompressionpropertykey_fielddetail.md)
+- [let kVTCompressionPropertyKey_FieldDetail: CFString](./kvtcompressionpropertykey_fielddetail.md)
   Field ordering for encoded interlaced frames.
-- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](kvtcompressionpropertykey_pixelaspectratio.md)
+- [let kVTCompressionPropertyKey_PixelAspectRatio: CFString](./kvtcompressionpropertykey_pixelaspectratio.md)
   The pixel aspect ratio for encoded frames.
-- [let kVTCompressionPropertyKey_ProgressiveScan: CFString](kvtcompressionpropertykey_progressivescan.md)
+- [let kVTCompressionPropertyKey_ProgressiveScan: CFString](./kvtcompressionpropertykey_progressivescan.md)
   A Boolean value indicating whether the DV video stream should have the progressive flag set.
 
 

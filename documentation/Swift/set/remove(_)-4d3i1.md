@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -19,17 +20,20 @@
 mutating func remove<ConcreteElement>(_ member: ConcreteElement) -> ConcreteElement? where ConcreteElement : Hashable
 ```
 
+Available when `Element` is `AnyHashable`.
+
 ## See Also
 
-- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
+### Removing Elements
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](./filter%28_%29.md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
-- [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
+- [func remove(Element) -> Element?](./remove%28_%29-8p2tv.md)
   Removes the specified element from the set.
-- [func removeFirst() -> Element](set/removefirst.md)
+- [func removeFirst() -> Element](./removefirst%28%29.md)
   Removes the first element of the set.
-- [func remove(at: Set<Element>.Index) -> Element](set/remove(at:).md)
+- [func remove(at: Set<Element>.Index) -> Element](./remove%28at%29.md)
   Removes the element at the given index of the set.
-- [func removeAll(keepingCapacity: Bool)](set/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29.md)
   Removes all members from the set.
 
 

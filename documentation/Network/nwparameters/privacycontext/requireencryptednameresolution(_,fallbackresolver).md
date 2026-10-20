@@ -1,7 +1,8 @@
 # requireEncryptedNameResolution(_:fallbackResolver:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requires that any DNS name resolution for connections associated with this context use encrypted transports, such as TLS or HTTPS.
 
@@ -31,7 +32,8 @@ Connections that use iCloud Private Relay automatically use encrypted name resol
 
 ## See Also
 
-- [NWParameters.PrivacyContext.ResolverConfiguration](nwparameters/privacycontext/resolverconfiguration.md)
+### Requiring Encrypted DNS
+- [NWParameters.PrivacyContext.ResolverConfiguration](./resolverconfiguration.md)
   A DNS server configuration that uses TLS or HTTPS.
 
 

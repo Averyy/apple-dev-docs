@@ -1,7 +1,8 @@
 # UIWindowScenePlacement
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The placement of a window scene in the workspace.
 
@@ -10,7 +11,7 @@ The placement of a window scene in the workspace.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,36 +22,37 @@ protocol UIWindowScenePlacement : Hashable
 ## Topics
 
 ### Positioning windows
-- [static func prominent() -> Self](uiwindowsceneplacement-swift.protocol/prominent.md)
+- [static func prominent() -> Self](./uiwindowsceneplacement-swift.protocol/prominent%28%29.md)
   Creates a placement that indicates the system should present the window more prominently than others in the space.
-- [static func standard() -> Self](uiwindowsceneplacement-swift.protocol/standard.md)
+- [static func standard() -> Self](./uiwindowsceneplacement-swift.protocol/standard%28%29.md)
   Creates a placement that indicates the system should present the window using the default style of the system in the space.
 ### Type Methods
-- [static func push(onto: UISceneSession) -> Self](uiwindowsceneplacement-swift.protocol/push(onto:).md)
-- [static func replacing(UISceneSession) -> Self](uiwindowsceneplacement-swift.protocol/replacing(_:).md)
+- [static func push(onto: UISceneSession) -> Self](./uiwindowsceneplacement-swift.protocol/push%28onto%29.md)
+- [static func replacing(UISceneSession) -> Self](./uiwindowsceneplacement-swift.protocol/replacing%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [UIWindowSceneProminentPlacement](uiwindowsceneprominentplacement-swift.struct.md)
-- [UIWindowScenePushPlacement](uiwindowscenepushplacement-swift.struct.md)
-- [UIWindowSceneReplacePlacement](uiwindowscenereplaceplacement-swift.struct.md)
-- [UIWindowSceneStandardPlacement](uiwindowscenestandardplacement-swift.struct.md)
+- [UIWindowSceneProminentPlacement](./uiwindowsceneprominentplacement-swift.struct.md)
+- [UIWindowScenePushPlacement](./uiwindowscenepushplacement-swift.struct.md)
+- [UIWindowSceneReplacePlacement](./uiwindowscenereplaceplacement-swift.struct.md)
+- [UIWindowSceneStandardPlacement](./uiwindowscenestandardplacement-swift.struct.md)
 
 ## See Also
 
-- [var placement: (any UIWindowScenePlacement)?](uiwindowscene/activationrequestoptions/placement.md)
+### Positioning windows
+- [var placement: (any UIWindowScenePlacement)?](./uiwindowscene/activationrequestoptions/placement.md)
   The placement you prefer when the system activates the window scene.
-- [struct UIWindowSceneProminentPlacement](uiwindowsceneprominentplacement-swift.struct.md)
+- [struct UIWindowSceneProminentPlacement](./uiwindowsceneprominentplacement-swift.struct.md)
   A placement that indicates the system should present the window more prominently than others in the space.
-- [struct UIWindowSceneStandardPlacement](uiwindowscenestandardplacement-swift.struct.md)
+- [struct UIWindowSceneStandardPlacement](./uiwindowscenestandardplacement-swift.struct.md)
   A placement that indicates the system should present the window using the default style of the system in the space.
-- [struct UIWindowScenePushPlacement](uiwindowscenepushplacement-swift.struct.md)
+- [struct UIWindowScenePushPlacement](./uiwindowscenepushplacement-swift.struct.md)
   A placement that indicates the system needs to present the window by pushing it onto another window.
-- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
+- [var preferredPresentationStyle: UIWindowScene.PresentationStyle](./uiwindowscene/activationrequestoptions/preferredpresentationstyle.md)
   The presentation style of the window scene.
 
 

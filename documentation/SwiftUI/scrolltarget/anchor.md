@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The anchor to which the rect should be aligned within the visible region of the scrollable view.
 
@@ -22,7 +23,8 @@ var anchor: UnitPoint?
 
 ## See Also
 
-- [var rect: CGRect](scrolltarget/rect.md)
+### Getting the scroll target
+- [var rect: CGRect](./rect.md)
   The rect that a scrollable view should try and have contained.
 
 

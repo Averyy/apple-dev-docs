@@ -1,14 +1,15 @@
 # JoinPMTree
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t JoinPMTree(OSDispatchMethod supermethod);
 ```
 

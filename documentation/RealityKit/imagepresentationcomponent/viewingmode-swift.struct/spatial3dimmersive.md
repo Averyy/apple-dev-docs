@@ -1,7 +1,8 @@
 # spatial3DImmersive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays the image’s spatial 3D representation (if generated) with an immersive presentation style.
 
@@ -16,7 +17,8 @@ static let spatial3DImmersive: ImagePresentationComponent.ViewingMode
 
 ## See Also
 
-- [static let spatial3D: ImagePresentationComponent.ViewingMode](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)
+### 3D presentation of generated spatial scenes
+- [static let spatial3D: ImagePresentationComponent.ViewingMode](./spatial3d.md)
   Displays the image’s spatial 3D representation (if generated) with a windowed presentation style.
 
 

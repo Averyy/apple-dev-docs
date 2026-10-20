@@ -1,7 +1,8 @@
 # VNHumanHandPoseObservation.JointName
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The supported joint names for the hand pose.
 
@@ -19,80 +20,85 @@ The supported joint names for the hand pose.
 struct JointName
 ```
 
+```c
+typedef VNRecognizedPointKey VNHumanHandPoseObservationJointName;
+```
+
 ## Topics
 
 ### Thumb
-- [static let thumbTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbtip.md)
+- [static let thumbTip: VNHumanHandPoseObservation.JointName](./jointname/thumbtip.md)
   The tip of the thumb.
-- [static let thumbIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbip.md)
+- [static let thumbIP: VNHumanHandPoseObservation.JointName](./jointname/thumbip.md)
   The thumb’s interphalangeal (IP) joint.
-- [static let thumbMP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbmp.md)
+- [static let thumbMP: VNHumanHandPoseObservation.JointName](./jointname/thumbmp.md)
   The thumb’s metacarpophalangeal (MP) joint.
-- [static let thumbCMC: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/thumbcmc.md)
+- [static let thumbCMC: VNHumanHandPoseObservation.JointName](./jointname/thumbcmc.md)
   The thumb’s carpometacarpal (CMC) joint.
 ### Index
-- [static let indexTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indextip.md)
+- [static let indexTip: VNHumanHandPoseObservation.JointName](./jointname/indextip.md)
   The tip of the index finger.
-- [static let indexDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indexdip.md)
+- [static let indexDIP: VNHumanHandPoseObservation.JointName](./jointname/indexdip.md)
   The index finger’s distal interphalangeal (DIP) joint.
-- [static let indexPIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indexpip.md)
+- [static let indexPIP: VNHumanHandPoseObservation.JointName](./jointname/indexpip.md)
   The index finger’s proximal interphalangeal (PIP) joint.
-- [static let indexMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/indexmcp.md)
+- [static let indexMCP: VNHumanHandPoseObservation.JointName](./jointname/indexmcp.md)
   The index finger’s metacarpophalangeal (MCP) joint.
 ### Middle
-- [static let middleTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middletip.md)
+- [static let middleTip: VNHumanHandPoseObservation.JointName](./jointname/middletip.md)
   The tip of the middle finger.
-- [static let middleDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middledip.md)
+- [static let middleDIP: VNHumanHandPoseObservation.JointName](./jointname/middledip.md)
   The middle finger’s distal interphalangeal (DIP) joint.
-- [static let middlePIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middlepip.md)
+- [static let middlePIP: VNHumanHandPoseObservation.JointName](./jointname/middlepip.md)
   The middle finger’s proximal interphalangeal (PIP) joint.
-- [static let middleMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/middlemcp.md)
+- [static let middleMCP: VNHumanHandPoseObservation.JointName](./jointname/middlemcp.md)
   The middle finger’s metacarpophalangeal (MCP) joint.
 ### Ring
-- [static let ringTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringtip.md)
+- [static let ringTip: VNHumanHandPoseObservation.JointName](./jointname/ringtip.md)
   The tip of the ring finger.
-- [static let ringDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringdip.md)
+- [static let ringDIP: VNHumanHandPoseObservation.JointName](./jointname/ringdip.md)
   The ring finger’s distal interphalangeal (DIP) joint.
-- [static let ringPIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringpip.md)
+- [static let ringPIP: VNHumanHandPoseObservation.JointName](./jointname/ringpip.md)
   The ring finger’s proximal interphalangeal (PIP) joint.
-- [static let ringMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/ringmcp.md)
+- [static let ringMCP: VNHumanHandPoseObservation.JointName](./jointname/ringmcp.md)
   The ring finger’s metacarpophalangeal (MCP) joint.
 ### Little
-- [static let littleTip: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littletip.md)
+- [static let littleTip: VNHumanHandPoseObservation.JointName](./jointname/littletip.md)
   The tip of the little finger.
-- [static let littleDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littledip.md)
+- [static let littleDIP: VNHumanHandPoseObservation.JointName](./jointname/littledip.md)
   The little finger’s distal interphalangeal (DIP) joint.
-- [static let littlePIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littlepip.md)
+- [static let littlePIP: VNHumanHandPoseObservation.JointName](./jointname/littlepip.md)
   The little finger’s proximal interphalangeal (PIP) joint.
-- [static let littleMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littlemcp.md)
+- [static let littleMCP: VNHumanHandPoseObservation.JointName](./jointname/littlemcp.md)
   The little finger’s metacarpophalangeal (MCP) joint.
 ### Wrist
-- [static let wrist: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/wrist.md)
+- [static let wrist: VNHumanHandPoseObservation.JointName](./jointname/wrist.md)
   The wrist.
 ### Initializers
-- [init(rawValue: VNRecognizedPointKey)](vnhumanhandposeobservation/jointname/init(rawvalue:).md)
+- [init(rawValue: VNRecognizedPointKey)](./jointname/init%28rawvalue%29.md)
   Creates a joint name with a recognized point key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](vnhumanhandposeobservation/availablejointnames.md)
+### Retrieving Points
+- [var availableJointNames: [VNHumanHandPoseObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](vnhumanhandposeobservation/availablejointsgroupnames.md)
+- [var availableJointsGroupNames: [VNHumanHandPoseObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The joint group names available in the observation.
-- [VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname.md)
+- [VNHumanHandPoseObservation.JointsGroupName](./jointsgroupname.md)
   The supported joint group names for the hand pose.
-- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](vnhumanhandposeobservation/recognizedpoint(_:).md)
+- [func recognizedPoint(VNHumanHandPoseObservation.JointName) throws -> VNRecognizedPoint](./recognizedpoint%28_%29.md)
   Retrieves the recognized point for a joint name.
-- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](vnhumanhandposeobservation/recognizedpoints(_:).md)
+- [func recognizedPoints(VNHumanHandPoseObservation.JointsGroupName) throws -> [VNHumanHandPoseObservation.JointName : VNRecognizedPoint]](./recognizedpoints%28_%29.md)
   Retrieves the recognized points associated with the joint group name.
 
 

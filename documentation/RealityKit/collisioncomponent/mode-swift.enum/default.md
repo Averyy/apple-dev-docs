@@ -1,7 +1,8 @@
 # CollisionComponent.Mode.default
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A default collision object.
 
@@ -11,7 +12,7 @@ A default collision object.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,11 +24,12 @@ case `default`
 
 When two objects of this type collide, RealityKit computes the full contact details (contact points, normal vectors, penetration depths, and so on) and stores them in the contact set.
 
-> **Note**: Collisions will fall through and do not collide by default, to enable colliding see the [`CollisionComponent.Mode.colliding`](collisioncomponent/mode-swift.enum/colliding.md) mode.
+> **Note**: Collisions will fall through and do not collide by default, to enable colliding see the [`CollisionComponent.Mode.colliding`](./colliding.md) mode.
 
 ## See Also
 
-- [CollisionComponent.Mode.trigger](collisioncomponent/mode-swift.enum/trigger.md)
+### Collision modes
+- [CollisionComponent.Mode.trigger](./trigger.md)
   A trigger collision object.
 
 

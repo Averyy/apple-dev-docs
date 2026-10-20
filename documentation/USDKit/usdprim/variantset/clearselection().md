@@ -1,7 +1,8 @@
 # clearSelection()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the variant selection.
 
@@ -21,7 +22,7 @@ func clearSelection() throws
 
 #### Discussion
 
-> **Note**: An error if the selection cannot be cleared.
+> **Throws**: An error if the selection cannot be cleared.
 
 
 ---

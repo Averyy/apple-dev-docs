@@ -1,7 +1,8 @@
 # vDSP_biquad2_CopyState
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the filter state from one biquadratic filter object to another.
 
@@ -10,7 +11,7 @@ Copies the filter state from one biquadratic filter object to another.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquad2_CopyState(vDSP_biquad_Setup, vDSP_biquad_Setup);
 ```
 
@@ -21,15 +22,16 @@ void vDSP_biquad2_CopyState(vDSP_biquad_Setup, vDSP_biquad_Setup);
 
 ## See Also
 
-- [vDSP_biquad2](1532195-vdsp_biquad2.md)
+### Biquadratic Infinite Impulse Response (IIR) Filters
+- [vDSP_biquad2](./api-1532195-vdsp_biquad2.md)
   Applies a single-precision stereo biquadratic IIR filter.
-- [vDSP_biquad2_CreateSetup](1532224-vdsp_biquad2_createsetup.md)
+- [vDSP_biquad2_CreateSetup](./api-1532224-vdsp_biquad2_createsetup.md)
   Builds a data structure that contains precalculated single-precision data for stereo biquadratic filter functions to use.
-- [IIRChannel](iirchannel.md)
+- [IIRChannel](./iirchannel.md)
   Constants that specify which channels a stereo biquadratic filter operates.
-- [vDSP_biquad2_ResetState](1532215-vdsp_biquad2_resetstate.md)
+- [vDSP_biquad2_ResetState](./api-1532215-vdsp_biquad2_resetstate.md)
   Resets the filter state of a single-precision stereo biquadratic filter object.
-- [vDSP_biquad2_DestroySetup](1532201-vdsp_biquad2_destroysetup.md)
+- [vDSP_biquad2_DestroySetup](./api-1532201-vdsp_biquad2_destroysetup.md)
   Destroys a single-precision stereo biquadratic IIR setup object.
 
 

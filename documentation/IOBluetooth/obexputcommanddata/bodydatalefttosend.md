@@ -1,15 +1,20 @@
 # bodyDataLeftToSend
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var bodyDataLeftToSend: Int
+```
+
+```c
+size_t bodyDataLeftToSend;
 ```
 
 

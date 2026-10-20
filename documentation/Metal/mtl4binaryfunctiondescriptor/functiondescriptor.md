@@ -1,7 +1,8 @@
 # functionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the function descriptor corresponding to the function to compile into a binary function.
 
@@ -18,6 +19,10 @@ Provides the function descriptor corresponding to the function to compile into a
 ```swift
 @NSCopying
 var functionDescriptor: MTL4FunctionDescriptor { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) MTL4FunctionDescriptor * functionDescriptor;
 ```
 
 

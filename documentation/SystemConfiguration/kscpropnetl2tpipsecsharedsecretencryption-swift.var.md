@@ -1,7 +1,8 @@
 # kSCPropNetL2TPIPSecSharedSecretEncryption
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The L2TP key `IPSecSharedSecretEncryption`, whose value is of type `CFString`.
 
@@ -14,6 +15,10 @@ The L2TP key `IPSecSharedSecretEncryption`, whose value is of type `CFString`.
 let kSCPropNetL2TPIPSecSharedSecretEncryption: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetL2TPIPSecSharedSecretEncryption;
+```
+
 #### Discussion
 
 This key can be passed the following constant:
@@ -22,9 +27,10 @@ This key can be passed the following constant:
 
 ## See Also
 
-- [let kSCPropNetL2TPIPSecSharedSecret: CFString](kscpropnetl2tpipsecsharedsecret-swift.var.md)
+### Constants
+- [let kSCPropNetL2TPIPSecSharedSecret: CFString](./kscpropnetl2tpipsecsharedsecret-swift.var.md)
   The L2TP key `IPSecSharedSecret`, whose value is of type `CFString`.
-- [let kSCPropNetL2TPTransport: CFString](kscpropnetl2tptransport-swift.var.md)
+- [let kSCPropNetL2TPTransport: CFString](./kscpropnetl2tptransport-swift.var.md)
   The L2TP key `Transport`, whose value is of type `CFString`.
 
 

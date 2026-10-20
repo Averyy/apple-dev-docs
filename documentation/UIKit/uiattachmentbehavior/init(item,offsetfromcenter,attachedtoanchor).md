@@ -1,7 +1,8 @@
 # init(item:offsetFromCenter:attachedToAnchor:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a behavior where the specified point in a dynamic item is attached to an anchor point.
 
@@ -9,13 +10,17 @@ Initializes a behavior where the specified point in a dynamic item is attached t
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(item: any UIDynamicItem, offsetFromCenter offset: UIOffset, attachedToAnchor point: CGPoint)
+```
+
+```objc
+- (instancetype) initWithItem:(id<UIDynamicItem>) item offsetFromCenter:(UIOffset) offset attachedToAnchor:(CGPoint) point;
 ```
 
 #### Return Value
@@ -26,31 +31,32 @@ The initialized attachment behavior, or `nil` if there was a problem initializin
 
 The behavior created by this method acts like a solid rod connecting the item to the specified anchor point. The item is free to rotate around the anchor point, but its distance to the anchor point remains fixed. If you specify a nonzero offset value, the item is connected at the specified point instead of the center of the item.
 
-The attachment object returned by this method is of type [`UIAttachmentBehavior.AttachmentType.anchor`](uiattachmentbehavior/attachmenttype/anchor.md).
+The attachment object returned by this method is of type [`UIAttachmentBehavior.AttachmentType.anchor`](./attachmenttype/anchor.md).
 
 ## Parameters
 
 - `item`: The dynamic item to attach to the specified `point`.
-- `offset`: The offset from the center of `item` at which to create the attachment. Specifying [`zero`](uioffset/zero.md) creates the attachment at the center of `item`.
-- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](uidynamicanimator.md).
+- `offset`: The offset from the center of `item` at which to create the attachment. Specifying [`zero`](../uioffset/zero.md) creates the attachment at the center of `item`.
+- `point`: The anchor point for the item. Specify this point in the coordinate system of the dynamic animator’s reference view. For more information about coordinate systems, see [`UIDynamicAnimator`](../uidynamicanimator.md).
 
 ## See Also
 
-- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachmentanchor:axisoftranslation:).md)
+### Creating and initializing attachment behavior objects
+- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where one item slides along the specified axis.
-- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachedto:attachmentanchor:axisoftranslation:).md)
+- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachedto,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where two items are fixed to points that slide along the specified axis.
-- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/fixedattachment(with:attachedto:attachmentanchor:).md)
+- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./fixedattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are fixed together through the specified anchor point.
-- [class func limitAttachment(with: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset) -> Self](uiattachmentbehavior/limitattachment(with:offsetfromcenter:attachedto:offsetfromcenter:).md)
+- [class func limitAttachment(with: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset) -> Self](./limitattachment%28with,offsetfromcenter,attachedto,offsetfromcenter%29.md)
   Creates and returns an attachment behavior object where two items are constrained by a maximum distance from one another.
-- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/pinattachment(with:attachedto:attachmentanchor:).md)
+- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./pinattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are pinned to, and move around, an anchor point
-- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](uiattachmentbehavior/init(item:attachedtoanchor:).md)
+- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](./init%28item,attachedtoanchor%29.md)
   Initializes a behavior where the center of a dynamic item is attached to the specified anchor point.
-- [convenience init(item: any UIDynamicItem, attachedTo: any UIDynamicItem)](uiattachmentbehavior/init(item:attachedto:).md)
+- [convenience init(item: any UIDynamicItem, attachedTo: any UIDynamicItem)](./init%28item,attachedto%29.md)
   Initializes a behavior where the centers of two dynamic items are attached to each other.
-- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](uiattachmentbehavior/init(item:offsetfromcenter:attachedto:offsetfromcenter:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](./init%28item,offsetfromcenter,attachedto,offsetfromcenter%29.md)
   Initializes an attachment behavior that connects a specified point in one dynamic item to a specified point in another dynamic item.
 
 

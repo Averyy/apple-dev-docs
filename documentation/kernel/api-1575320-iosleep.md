@@ -1,7 +1,8 @@
 # IOSleep
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sleep the calling thread for a number of milliseconds.
 
@@ -10,7 +11,7 @@ Sleep the calling thread for a number of milliseconds.
 
 ## Declaration
 
-```swift
+```c
 void IOSleep(unsigned int milliseconds);
 ```
 
@@ -24,11 +25,12 @@ This function blocks the calling thread for at least the number of specified mil
 
 ## See Also
 
-- [IODelay](1575328-iodelay.md)
+### Sleep
+- [IODelay](./api-1575328-iodelay.md)
   Spin delay for a number of microseconds.
-- [IOPause](1575333-iopause.md)
+- [IOPause](./api-1575333-iopause.md)
   Spin delay for a number of nanoseconds.
-- [IOSleepWithLeeway](1575303-iosleepwithleeway.md)
+- [IOSleepWithLeeway](./api-1575303-iosleepwithleeway.md)
 
 
 ---

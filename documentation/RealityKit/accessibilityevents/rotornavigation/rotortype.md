@@ -1,7 +1,8 @@
 # rotorType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the rotor associated with the event.
 
@@ -10,7 +11,7 @@ The type of the rotor associated with the event.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

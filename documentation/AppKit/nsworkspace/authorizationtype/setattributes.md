@@ -1,7 +1,8 @@
 # NSWorkspace.AuthorizationType.setAttributes
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization for the app to change specific file attributes.
 
@@ -14,21 +15,26 @@ Authorization for the app to change specific file attributes.
 case setAttributes
 ```
 
+```c
+NSWorkspaceAuthorizationTypeSetAttributes
+```
+
 #### Discussion
 
-Signifies that the user has granted authorization for [`setAttributes(_:ofItemAtPath:)`](https://developer.apple.com/documentation/foundation/filemanager/setattributes(_:ofitematpath:)).
+Signifies that the user has granted authorization for [`setAttributes(_:ofItemAtPath:)`](../../../Foundation/filemanager/setattributes%28_,ofitematpath%29.md).
 
 Only these attributes can be modified:
 
-- [`ownerAccountID`](https://developer.apple.com/documentation/foundation/fileattributekey/owneraccountid)
-- [`groupOwnerAccountID`](https://developer.apple.com/documentation/foundation/fileattributekey/groupowneraccountid)
-- [`posixPermissions`](https://developer.apple.com/documentation/foundation/fileattributekey/posixpermissions)
+- [`ownerAccountID`](../../../Foundation/fileattributekey/owneraccountid.md)
+- [`groupOwnerAccountID`](../../../Foundation/fileattributekey/groupowneraccountid.md)
+- [`posixPermissions`](../../../Foundation/fileattributekey/posixpermissions.md)
 
 ## See Also
 
-- [NSWorkspace.AuthorizationType.createSymbolicLink](nsworkspace/authorizationtype/createsymboliclink.md)
+### Types of Authorization
+- [NSWorkspace.AuthorizationType.createSymbolicLink](./createsymboliclink.md)
   Authorization for the app to create a symbolic link.
-- [NSWorkspace.AuthorizationType.replaceFile](nsworkspace/authorizationtype/replacefile.md)
+- [NSWorkspace.AuthorizationType.replaceFile](./replacefile.md)
   Authorization for the app to perform an atomic file write without changing the target file’s permissions.
 
 

@@ -1,7 +1,8 @@
 # joined()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lazy sequence that concatenates the elements of this sequence of sequences.
 
@@ -19,6 +20,8 @@ Returns a lazy sequence that concatenates the elements of this sequence of seque
 ```swift
 func joined() -> LazySequence<FlattenSequence<Self.Elements>>
 ```
+
+Available when `Element` conforms to `Sequence`.
 
 
 ---

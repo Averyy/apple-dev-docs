@@ -1,7 +1,8 @@
 # linearLimit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A limit of the translation between the pins in the direction of the x-axis.
 

@@ -1,7 +1,8 @@
 # Publishers.FlatMap
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that transforms elements from an upstream publisher into a new publisher.
 
@@ -23,29 +24,30 @@ struct FlatMap<NewPublisher, Upstream> where NewPublisher : Publisher, Upstream 
 ## Topics
 
 ### Creating a flat map Publisher
-- [init(upstream: Upstream, maxPublishers: Subscribers.Demand, transform: (Upstream.Output) -> NewPublisher)](publishers/flatmap/init(upstream:maxpublishers:transform:).md)
+- [init(upstream: Upstream, maxPublishers: Subscribers.Demand, transform: (Upstream.Output) -> NewPublisher)](./flatmap/init%28upstream,maxpublishers,transform%29.md)
   Creates a publisher that transforms elements from an upstream publisher into a new publisher.
 ### Declaring supporting types
-- [Publishers.FlatMap.Output](publishers/flatmap/output.md)
+- [Publishers.FlatMap.Output](./flatmap/output.md)
   The kind of values published by this publisher.
-- [Publishers.FlatMap.Failure](publishers/flatmap/failure.md)
+- [Publishers.FlatMap.Failure](./flatmap/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/flatmap/upstream.md)
+- [let upstream: Upstream](./flatmap/upstream.md)
   The publisher from which this publisher receives elements.
-- [let maxPublishers: Subscribers.Demand](publishers/flatmap/maxpublishers.md)
+- [let maxPublishers: Subscribers.Demand](./flatmap/maxpublishers.md)
   The maximum number of concurrent publisher subscriptions
-- [let transform: (Upstream.Output) -> NewPublisher](publishers/flatmap/transform.md)
+- [let transform: (Upstream.Output) -> NewPublisher](./flatmap/transform.md)
   A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.SwitchToLatest](publishers/switchtolatest.md)
+### Republishing elements by subscribing to new publishers
+- [Publishers.SwitchToLatest](./switchtolatest.md)
   A publisher that flattens nested publishers.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The block that the profile calls when an element’s value changes.
@@ -20,6 +21,10 @@ The block that the profile calls when an element’s value changes.
 var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCLinearInput, Float) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^valueDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCLinearInput>input, float value);
+```
+
 #### Discussion
 
 The block’s parameters are:
@@ -30,11 +35,12 @@ The block’s parameters are:
 
 ## See Also
 
-- [var value: Float](gclinearinput/value.md)
+### Getting the value
+- [var value: Float](./value.md)
   The value in unit coordinates.
-- [var lastValueTimestamp: TimeInterval](gclinearinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gclinearinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 
 

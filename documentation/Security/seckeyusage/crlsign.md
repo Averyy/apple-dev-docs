@@ -1,7 +1,8 @@
 # crlSign
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `CRLSign` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `CRLSign` bit is set in KeyUsage extension.
 
 ```swift
 static var crlSign: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageCRLSign
 ```
 
 

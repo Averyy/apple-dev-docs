@@ -1,7 +1,8 @@
 # removeControl(_:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the control from the touch controller.
 
@@ -16,9 +17,14 @@ Removes the control from the touch controller.
 func removeControl(_ control: any TCControl)
 ```
 
+```objc
+- (void) removeControl:(id<TCControl>) control;
+```
+
 ## See Also
 
-- [func removeAllControls()](tctouchcontroller/removeallcontrols.md)
+### Removing controls
+- [func removeAllControls()](./removeallcontrols%28%29.md)
   Removes all controls from the touch controller.
 
 

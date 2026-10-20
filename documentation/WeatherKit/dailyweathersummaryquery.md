@@ -1,7 +1,8 @@
 # DailyWeatherSummaryQuery
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates a generic daily weather summary dataset request.
 
@@ -33,16 +34,16 @@ let (dailyPrecipitationSummary, dailyTemperatureSummary) = try await service.dai
 ## Topics
 
 ### Type Properties
-- [static var precipitation: DailyWeatherSummaryQuery<DayPrecipitationSummary>](dailyweathersummaryquery/precipitation.md)
+- [static var precipitation: DailyWeatherSummaryQuery<DayPrecipitationSummary>](./dailyweathersummaryquery/precipitation.md)
   The daily precipitation summary query.
-- [static var temperature: DailyWeatherSummaryQuery<DayTemperatureSummary>](dailyweathersummaryquery/temperature.md)
+- [static var temperature: DailyWeatherSummaryQuery<DayTemperatureSummary>](./dailyweathersummaryquery/temperature.md)
   The daily temperature summary query.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

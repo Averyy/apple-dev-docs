@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.Status.initialized
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The initial state of the session.
 

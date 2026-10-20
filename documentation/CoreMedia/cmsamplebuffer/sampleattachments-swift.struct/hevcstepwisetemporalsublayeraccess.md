@@ -1,7 +1,8 @@
 # hevcStepwiseTemporalSubLayerAccess
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates a step-wise temporal sublayer access (STSA) sample grouping.
 

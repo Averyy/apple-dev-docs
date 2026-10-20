@@ -1,7 +1,8 @@
 # deferredFailed
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the location manager didn’t enter deferred mode for an unknown reason.
 
@@ -26,13 +27,14 @@ This error can occur if GPS is unavailable, not active, or is temporarily interr
 
 ## See Also
 
-- [static var deferredCanceled: CLError.Code](clerror-swift.struct/deferredcanceled.md)
+### Getting deferred location update errors
+- [static var deferredCanceled: CLError.Code](./deferredcanceled.md)
   A constant that indicates your app or the location manager canceled the request for deferred updates.
-- [static var deferredAccuracyTooLow: CLError.Code](clerror-swift.struct/deferredaccuracytoolow.md)
+- [static var deferredAccuracyTooLow: CLError.Code](./deferredaccuracytoolow.md)
   A constant that indicates deferred mode isn’t supported for the requested accuracy.
-- [static var deferredDistanceFiltered: CLError.Code](clerror-swift.struct/deferreddistancefiltered.md)
+- [static var deferredDistanceFiltered: CLError.Code](./deferreddistancefiltered.md)
   A constant that indicates deferred mode doesn’t support distance filters.
-- [static var deferredNotUpdatingLocation: CLError.Code](clerror-swift.struct/deferrednotupdatinglocation.md)
+- [static var deferredNotUpdatingLocation: CLError.Code](./deferrednotupdatinglocation.md)
   A constant that indicates the location manager didn’t enter deferred mode because location updates were already disabled or paused.
 
 

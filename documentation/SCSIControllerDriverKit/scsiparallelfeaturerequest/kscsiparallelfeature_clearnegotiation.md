@@ -1,24 +1,26 @@
 # kSCSIParallelFeature_ClearNegotiation
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A selector that indicates that the controller should clear any negotiation for the feature.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelFeature_ClearNegotiation
 ```
 
 ## See Also
 
-- [kSCSIParallelFeature_NoNegotiation](scsiparallelfeaturerequest/kscsiparallelfeature_nonegotiation.md)
+### Requests
+- [kSCSIParallelFeature_NoNegotiation](./kscsiparallelfeature_nonegotiation.md)
   A selector that indicates that the controller should use the current negotiation.
-- [kSCSIParallelFeature_AttemptNegotiation](scsiparallelfeaturerequest/kscsiparallelfeature_attemptnegotiation.md)
+- [kSCSIParallelFeature_AttemptNegotiation](./kscsiparallelfeature_attemptnegotiation.md)
   A selector that indicates that the controller should attempt negotiation for the feature.
 
 

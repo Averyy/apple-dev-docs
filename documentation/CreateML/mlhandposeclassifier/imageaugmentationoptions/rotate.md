@@ -1,7 +1,8 @@
 # rotate
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Randomly rotate the pose in an image.
 
@@ -20,13 +21,14 @@ static let rotate: MLHandPoseClassifier.ImageAugmentationOptions
 
 ## See Also
 
-- [static let horizontallyFlip: MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions/horizontallyflip.md)
+### Augmentations supporting types
+- [static let horizontallyFlip: MLHandPoseClassifier.ImageAugmentationOptions](./horizontallyflip.md)
   Apply left-right flips to the pose in an image.
-- [static let scale: MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions/scale.md)
+- [static let scale: MLHandPoseClassifier.ImageAugmentationOptions](./scale.md)
   Randomly scale the pose in an image.
-- [static let translate: MLHandPoseClassifier.ImageAugmentationOptions](mlhandposeclassifier/imageaugmentationoptions/translate.md)
+- [static let translate: MLHandPoseClassifier.ImageAugmentationOptions](./translate.md)
   Randomly translate the pose in an image.
-- [Option set support](option-set-support.md)
+- [Option set support](../../option-set-support.md)
   Inspect and modify a video augmentation option set with the properties and methods it inherits from standard protocols.
 
 

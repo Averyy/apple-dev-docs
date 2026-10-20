@@ -1,7 +1,8 @@
 # withoutDeletingBackupItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The backup item remains in place after a successful replacement.
 
@@ -20,11 +21,16 @@ The backup item remains in place after a successful replacement.
 static var withoutDeletingBackupItem: FileManager.ItemReplacementOptions { get }
 ```
 
+```c
+NSFileManagerItemReplacementWithoutDeletingBackupItem
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](filemanager/itemreplacementoptions/init(rawvalue:).md)
+### Using File Replacement Options
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates a value for a file replacement operation.
-- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions/usingnewmetadataonly.md)
+- [static var usingNewMetadataOnly: FileManager.ItemReplacementOptions](./usingnewmetadataonly.md)
   Only metadata from the new item is used, and metadata from the original item isn’t preserved (default).
 
 

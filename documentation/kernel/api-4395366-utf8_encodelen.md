@@ -1,14 +1,15 @@
 # utf8_encodelen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 size_t utf8_encodelen(const u_int16_t *ucsp, size_t ucslen, u_int16_t altslash, int flags);
 ```
 

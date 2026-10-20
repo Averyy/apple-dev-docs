@@ -1,16 +1,11 @@
 ---
-layout: page
-title: Safely Mixing Swift and C/C++
-official_url: https://swift.org/documentation/cxx-interop/safe-interop/
-redirect_from:
-- /documentation/cxx-interop/safe-interop.html
+source: swiftlang/swift-org-website
+url: https://swift.org/documentation/cxx-interop/safe-interop/
 ---
 
-## Table of Contents
-{:.no_toc}
+# Safely Mixing Swift and C/C++
 
-* TOC
-{:toc}
+## Table of Contents
 
 ## Introduction
 

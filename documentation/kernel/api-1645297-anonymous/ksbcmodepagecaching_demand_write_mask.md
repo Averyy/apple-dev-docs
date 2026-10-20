@@ -1,14 +1,15 @@
 # kSBCModePageCaching_DEMAND_WRITE_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSBCModePageCaching_DEMAND_WRITE_Mask = 0x00FF
 ```
 

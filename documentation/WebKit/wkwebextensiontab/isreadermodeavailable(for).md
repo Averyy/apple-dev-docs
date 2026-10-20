@@ -1,7 +1,8 @@
 # isReaderModeAvailable(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to check if reader mode is available for the tab.
 
@@ -18,6 +19,10 @@ Called to check if reader mode is available for the tab.
 optional func isReaderModeAvailable(for context: WKWebExtensionContext) -> Bool
 ```
 
+```objc
+- (BOOL) isReaderModeAvailableForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
 Defaults to `NO` if not implemented.
@@ -28,7 +33,8 @@ Defaults to `NO` if not implemented.
 
 ## See Also
 
-- [func isReaderModeActive(for: WKWebExtensionContext) -> Bool](wkwebextensiontab/isreadermodeactive(for:).md)
+### Related Documentation
+- [func isReaderModeActive(for: WKWebExtensionContext) -> Bool](./isreadermodeactive%28for%29.md)
   Called to check if the tab is currently showing reader mode.
 
 

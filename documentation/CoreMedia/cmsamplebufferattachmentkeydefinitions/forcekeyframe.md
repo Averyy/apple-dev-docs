@@ -1,7 +1,8 @@
 # forceKeyFrame
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the current or next video sample buffer should be forced to be encoded as a key frame.
 

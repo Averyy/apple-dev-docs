@@ -1,7 +1,8 @@
 # containsNode
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 3.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 boolean containsNode(
     Node node, 
     optional boolean allowPartial

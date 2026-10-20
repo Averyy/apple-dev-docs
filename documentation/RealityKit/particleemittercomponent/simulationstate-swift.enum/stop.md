@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.SimulationState.stop
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simulation will stop and clear existing particles.
 

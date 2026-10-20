@@ -1,7 +1,8 @@
 # StopDevice
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the driver to stop I/O on an audio device or audio clock device.
 
@@ -10,19 +11,19 @@ Tells the driver to stop I/O on an audio device or audio clock device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StopDevice(IOUserAudioObjectID in_object_id, IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation always returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle hardware-specific stopping, then call the superclass to update the I/O state.
+The default implementation always returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle hardware-specific stopping, then call the superclass to update the I/O state.
 
-This call results in a call to [`StopIO`](iouseraudiodevice/stopio.md) on the device.
+This call results in a call to [`StopIO`](../iouseraudiodevice/stopio.md) on the device.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ This call results in a call to [`StopIO`](iouseraudiodevice/stopio.md) on the de
 
 ## See Also
 
-- [StartDevice](iouseraudiodriver/startdevice.md)
+### Starting and Stopping the Driver
+- [StartDevice](./startdevice.md)
   Tells the driver to start I/O on an audio device or audio clock device.
-- [IOUserAudioObjectID](audiodriverkit/iouseraudioobjectid.md)
+- [IOUserAudioObjectID](../audiodriverkit-page/iouseraudioobjectid.md)
   An identifier that provides a handle on a specific audio object.
-- [IOUserAudioStartStopFlags](audiodriverkit/iouseraudiostartstopflags.md)
+- [IOUserAudioStartStopFlags](../audiodriverkit-page/iouseraudiostartstopflags.md)
   Values that indicate I/O starts or stops.
 
 

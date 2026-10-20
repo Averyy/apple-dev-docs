@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the item is enabled.
 
@@ -16,9 +17,13 @@ A Boolean value that indicates if the item is enabled.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 
 ---

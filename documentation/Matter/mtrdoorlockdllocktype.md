@@ -1,7 +1,8 @@
 # MTRDoorLockDlLockType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,33 +19,37 @@
 enum MTRDoorLockDlLockType
 ```
 
+```c
+enum MTRDoorLockDlLockType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockDlLockType.cylindricalLock](mtrdoorlockdllocktype/cylindricallock.md)
-- [MTRDoorLockDlLockType.deadBolt](mtrdoorlockdllocktype/deadbolt.md)
-- [MTRDoorLockDlLockType.deadLatch](mtrdoorlockdllocktype/deadlatch.md)
-- [MTRDoorLockDlLockType.doorFurniture](mtrdoorlockdllocktype/doorfurniture.md)
-- [MTRDoorLockDlLockType.interconnectedLock](mtrdoorlockdllocktype/interconnectedlock.md)
-- [MTRDoorLockDlLockType.latchBolt](mtrdoorlockdllocktype/latchbolt.md)
-- [MTRDoorLockDlLockType.magnetic](mtrdoorlockdllocktype/magnetic.md)
-- [MTRDoorLockDlLockType.mortise](mtrdoorlockdllocktype/mortise.md)
-- [MTRDoorLockDlLockType.other](mtrdoorlockdllocktype/other.md)
-- [MTRDoorLockDlLockType.rim](mtrdoorlockdllocktype/rim.md)
-- [MTRDoorLockDlLockType.tubularLock](mtrdoorlockdllocktype/tubularlock.md)
-- [MTRDoorLockDlLockType.eurocylinder](mtrdoorlockdllocktype/eurocylinder.md)
+- [MTRDoorLockDlLockType.cylindricalLock](./mtrdoorlockdllocktype/cylindricallock.md)
+- [MTRDoorLockDlLockType.deadBolt](./mtrdoorlockdllocktype/deadbolt.md)
+- [MTRDoorLockDlLockType.deadLatch](./mtrdoorlockdllocktype/deadlatch.md)
+- [MTRDoorLockDlLockType.doorFurniture](./mtrdoorlockdllocktype/doorfurniture.md)
+- [MTRDoorLockDlLockType.interconnectedLock](./mtrdoorlockdllocktype/interconnectedlock.md)
+- [MTRDoorLockDlLockType.latchBolt](./mtrdoorlockdllocktype/latchbolt.md)
+- [MTRDoorLockDlLockType.magnetic](./mtrdoorlockdllocktype/magnetic.md)
+- [MTRDoorLockDlLockType.mortise](./mtrdoorlockdllocktype/mortise.md)
+- [MTRDoorLockDlLockType.other](./mtrdoorlockdllocktype/other.md)
+- [MTRDoorLockDlLockType.rim](./mtrdoorlockdllocktype/rim.md)
+- [MTRDoorLockDlLockType.tubularLock](./mtrdoorlockdllocktype/tubularlock.md)
+- [MTRDoorLockDlLockType.eurocylinder](./mtrdoorlockdllocktype/eurocylinder.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockdllocktype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockdllocktype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

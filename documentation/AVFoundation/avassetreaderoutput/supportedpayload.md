@@ -1,7 +1,8 @@
 # AVAssetReaderOutput.SupportedPayload
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -20,17 +21,18 @@ protocol SupportedPayload
 ## Relationships
 
 ### Conforming Types
-- [AVCaptionGroup](avcaptiongroup.md)
-- [AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
-- [AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [AVCaptionGroup](../avcaptiongroup.md)
+- [AVMutableTimedMetadataGroup](../avmutabletimedmetadatagroup.md)
+- [AVTimedMetadataGroup](../avtimedmetadatagroup.md)
 
 ## See Also
 
-- [func copyNextSampleBuffer() -> CMSampleBuffer?](avassetreaderoutput/copynextsamplebuffer.md)
+### Copying sample buffers
+- [func copyNextSampleBuffer() -> CMSampleBuffer?](./copynextsamplebuffer%28%29.md)
   Copies the next sample buffer from the output.
-- [AVAssetReaderOutput.Provider](avassetreaderoutput/provider.md)
+- [AVAssetReaderOutput.Provider](./provider.md)
   An object that reads a collection of samples of a common media type from an asset reader.
-- [AVAssetReaderOutput.RandomAccessController](avassetreaderoutput/randomaccesscontroller.md)
+- [AVAssetReaderOutput.RandomAccessController](./randomaccesscontroller.md)
   Object used to reset an output provider to read specified time ranges.
 
 

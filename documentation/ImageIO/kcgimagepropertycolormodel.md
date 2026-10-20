@@ -1,7 +1,8 @@
 # kCGImagePropertyColorModel
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The color model of the image, such as RGB, CMYK, grayscale, or Lab.
 
@@ -20,27 +21,32 @@ The color model of the image, such as RGB, CMYK, grayscale, or Lab.
 let kCGImagePropertyColorModel: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyColorModel;
+```
+
 #### Discussion
 
-The value of this key is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring). Typically, the value corresponds to the [`kCGImagePropertyColorModelRGB`](kcgimagepropertycolormodelrgb.md), [`kCGImagePropertyColorModelCMYK`](kcgimagepropertycolormodelcmyk.md), [`kCGImagePropertyColorModelGray`](kcgimagepropertycolormodelgray.md), or [`kCGImagePropertyColorModelLab`](kcgimagepropertycolormodellab.md) constant.
+The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md). Typically, the value corresponds to the [`kCGImagePropertyColorModelRGB`](./kcgimagepropertycolormodelrgb.md), [`kCGImagePropertyColorModelCMYK`](./kcgimagepropertycolormodelcmyk.md), [`kCGImagePropertyColorModelGray`](./kcgimagepropertycolormodelgray.md), or [`kCGImagePropertyColorModelLab`](./kcgimagepropertycolormodellab.md) constant.
 
 A color model describes how color values are represented mathematically. A color space is a color model combined with a definition of how to interpret values within the model.
 
 ## See Also
 
-- [let kCGImagePropertyHasAlpha: CFString](kcgimagepropertyhasalpha.md)
+### Color Information
+- [let kCGImagePropertyHasAlpha: CFString](./kcgimagepropertyhasalpha.md)
   A Boolean value that indicates whether the image has an alpha channel.
-- [let kCGImagePropertyNamedColorSpace: CFString](kcgimagepropertynamedcolorspace.md)
+- [let kCGImagePropertyNamedColorSpace: CFString](./kcgimagepropertynamedcolorspace.md)
   The name of the image’s color space.
-- [let kCGImagePropertyProfileName: CFString](kcgimagepropertyprofilename.md)
+- [let kCGImagePropertyProfileName: CFString](./kcgimagepropertyprofilename.md)
   The name of the optional International Color Consortium (ICC) profile embedded in the image, if known.
-- [let kCGImagePropertyColorModelRGB: CFString](kcgimagepropertycolormodelrgb.md)
+- [let kCGImagePropertyColorModelRGB: CFString](./kcgimagepropertycolormodelrgb.md)
   A Red Green Blue (RGB) color model.
-- [let kCGImagePropertyColorModelCMYK: CFString](kcgimagepropertycolormodelcmyk.md)
+- [let kCGImagePropertyColorModelCMYK: CFString](./kcgimagepropertycolormodelcmyk.md)
   A Cyan Magenta Yellow Black (CMYK) color model.
-- [let kCGImagePropertyColorModelGray: CFString](kcgimagepropertycolormodelgray.md)
+- [let kCGImagePropertyColorModelGray: CFString](./kcgimagepropertycolormodelgray.md)
   A grayscale color model.
-- [let kCGImagePropertyColorModelLab: CFString](kcgimagepropertycolormodellab.md)
+- [let kCGImagePropertyColorModelLab: CFString](./kcgimagepropertycolormodellab.md)
   A Lab color model, where color values contain the amount of light and the amounts of four human-perceivable colors.
 
 

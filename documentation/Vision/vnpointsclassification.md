@@ -1,7 +1,8 @@
 # VNPointsClassification
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of classifications that describe how to interpret the points the region provides.
 
@@ -20,28 +21,33 @@ The set of classifications that describe how to interpret the points the region 
 enum VNPointsClassification
 ```
 
+```c
+enum VNPointsClassification : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [VNPointsClassification.closedPath](vnpointsclassification/closedpath.md)
-- [VNPointsClassification.disconnected](vnpointsclassification/disconnected.md)
-- [VNPointsClassification.openPath](vnpointsclassification/openpath.md)
+- [VNPointsClassification.closedPath](./vnpointsclassification/closedpath.md)
+- [VNPointsClassification.disconnected](./vnpointsclassification/disconnected.md)
+- [VNPointsClassification.openPath](./vnpointsclassification/openpath.md)
 ### Creating a Classification
-- [init?(rawValue: Int)](vnpointsclassification/init(rawvalue:).md)
+- [init?(rawValue: Int)](./vnpointsclassification/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var pointsClassification: VNPointsClassification](vnfacelandmarkregion2d/pointsclassification.md)
+### Describing Region Points
+- [var pointsClassification: VNPointsClassification](./vnfacelandmarkregion2d/pointsclassification.md)
   An enumeration that describes how to interpret the points the region provides.
 
 

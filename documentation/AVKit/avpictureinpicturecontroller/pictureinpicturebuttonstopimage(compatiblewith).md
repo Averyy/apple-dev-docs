@@ -1,7 +1,8 @@
 # pictureInPictureButtonStopImage(compatibleWith:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a system-default template image that’s compatible with a trait collection for the button that stops Picture in Picture in your app.
 
@@ -18,6 +19,10 @@ Returns a system-default template image that’s compatible with a trait collect
 class func pictureInPictureButtonStopImage(compatibleWith traitCollection: UITraitCollection?) -> UIImage
 ```
 
+```objc
++ (UIImage *) pictureInPictureButtonStopImageCompatibleWithTraitCollection:(UITraitCollection *) traitCollection;
+```
+
 #### Return Value
 
 A system-default template image.
@@ -28,11 +33,12 @@ A system-default template image.
 
 ## See Also
 
-- [class var pictureInPictureButtonStartImage: UIImage](avpictureinpicturecontroller/pictureinpicturebuttonstartimage.md)
+### Retrieving Picture in Picture template images
+- [class var pictureInPictureButtonStartImage: UIImage](./pictureinpicturebuttonstartimage.md)
   A system-default template image for the button that starts Picture in Picture in your app.
-- [class var pictureInPictureButtonStopImage: UIImage](avpictureinpicturecontroller/pictureinpicturebuttonstopimage.md)
+- [class var pictureInPictureButtonStopImage: UIImage](./pictureinpicturebuttonstopimage.md)
   A system-default template image for the button that stops Picture in Picture in your app.
-- [class func pictureInPictureButtonStartImage(compatibleWith: UITraitCollection?) -> UIImage](avpictureinpicturecontroller/pictureinpicturebuttonstartimage(compatiblewith:).md)
+- [class func pictureInPictureButtonStartImage(compatibleWith: UITraitCollection?) -> UIImage](./pictureinpicturebuttonstartimage%28compatiblewith%29.md)
   Returns a system-default template image that’s compatible with a trait collection for the button that starts Picture in Picture in your app.
 
 

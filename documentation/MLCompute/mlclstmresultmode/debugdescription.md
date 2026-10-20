@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the LSTM result mode you use for debugging.
 
@@ -18,11 +19,16 @@ A textual description of the LSTM result mode you use for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCLSTMResultModeDebugDescription(MLCLSTMResultMode mode);
+```
+
 ## See Also
 
-- [MLCLSTMResultMode.output](mlclstmresultmode/output.md)
+### Enumeration Cases
+- [MLCLSTMResultMode.output](./output.md)
   A result mode that indicates the layer produces a single result tensor that represents the final output of the LSTM.
-- [MLCLSTMResultMode.outputAndStates](mlclstmresultmode/outputandstates.md)
+- [MLCLSTMResultMode.outputAndStates](./outputandstates.md)
   A result mode that indicates the layer produces three result tensors that represent the final output of the LSTM, the last hidden state, and the cell state.
 
 

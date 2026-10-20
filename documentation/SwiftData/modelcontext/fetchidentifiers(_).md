@@ -1,7 +1,8 @@
 # fetchIdentifiers(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of persistent identifiers, where each identifier represents a single model that satisfies the criteria of the specified fetch descriptor.
 
@@ -31,7 +32,8 @@ The array of persistent identifiers. If no models match the descriptor’s crite
 
 ## See Also
 
-- [func fetchIdentifiers<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<PersistentIdentifier>](modelcontext/fetchidentifiers(_:batchsize:).md)
+### Fetching only persistent identifiers
+- [func fetchIdentifiers<T>(FetchDescriptor<T>, batchSize: Int) throws -> FetchResultsCollection<PersistentIdentifier>](./fetchidentifiers%28_,batchsize%29.md)
   Returns a collection of persistent identifiers, in batches, where each identifier represents a single model that satisfies the criteria of the specified fetch descriptor.
 
 

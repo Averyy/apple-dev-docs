@@ -1,14 +1,15 @@
 # eph_bootsessionuuid_string
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uuid_string_t eph_bootsessionuuid_string;
 ```
 

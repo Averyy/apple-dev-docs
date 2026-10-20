@@ -1,7 +1,8 @@
 # makePixel(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a 16-bit floating-point pixel value from a 32-bit floating-point pixel value.
 
@@ -11,7 +12,7 @@ Returns a 16-bit floating-point pixel value from a 32-bit floating-point pixel v
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

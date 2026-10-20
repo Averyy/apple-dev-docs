@@ -1,7 +1,8 @@
 # nationalIDCardRawData(region:retaining:notRetaining:issuerIdentifiers:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request which retrieves mobile national ID card elements from the holder and returns the raw response data for processing.
 
@@ -15,6 +16,8 @@ A request which retrieves mobile national ID card elements from the holder and r
 ```swift
 static func nationalIDCardRawData(region: Locale.Region, retaining retainedElements: [MobileNationalIDCardRawDataRequest.Element] = [], notRetaining nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element] = [], issuerIdentifiers: [Data] = []) -> Self
 ```
+
+Available when `Self` is `MobileNationalIDCardRawDataRequest`.
 
 
 ---

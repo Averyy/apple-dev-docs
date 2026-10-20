@@ -1,7 +1,8 @@
 # setPropertyState(_:forProperty:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a state value for the specified property.
 
@@ -15,6 +16,10 @@ Sets a state value for the specified property.
 func setPropertyState(_ propertyState: CMIOExtensionPropertyState<AnyObject>?, forProperty property: CMIOExtensionProperty)
 ```
 
+```objc
+- (void) setPropertyState:(CMIOExtensionPropertyState *) propertyState forProperty:(CMIOExtensionProperty) property;
+```
+
 #### Discussion
 
 Setting a `nil` property state value doesn’t remove the property.
@@ -26,11 +31,12 @@ Setting a `nil` property state value doesn’t remove the property.
 
 ## See Also
 
-- [var name: String?](cmioextensionproviderproperties/name.md)
+### Managing Properties
+- [var name: String?](./name.md)
   The provider name.
-- [var manufacturer: String?](cmioextensionproviderproperties/manufacturer.md)
+- [var manufacturer: String?](./manufacturer.md)
   The provider manufacturer.
-- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](cmioextensionproviderproperties/propertiesdictionary.md)
+- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./propertiesdictionary.md)
   A dictionary of properties for a provider.
 
 

@@ -1,7 +1,8 @@
 # kSecTransformPreviousErrorKey
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key in an error’s `userInfo` dictionary whose value specifies the previous error when multiple errors occur during transform evaluation.
 
@@ -15,9 +16,13 @@ The key in an error’s `userInfo` dictionary whose value specifies the previous
 let kSecTransformPreviousErrorKey: CFString
 ```
 
+```c
+extern CFStringRef const kSecTransformPreviousErrorKey;
+```
+
 #### Discussion
 
-Use the value associated with this key to trace through a chain of [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) objects when more than one error occurs during transform evaluation.
+Use the value associated with this key to trace through a chain of [`CFError`](../CoreFoundation/cferror.md) objects when more than one error occurs during transform evaluation.
 
 
 ---

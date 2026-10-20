@@ -1,7 +1,8 @@
 # NSFaceIDUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting the ability to authenticate with Face ID.
 
@@ -9,17 +10,19 @@ A message that tells people why the app is requesting the ability to authenticat
 - iOS 11.0+
 - iPadOS 11.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSFaceIDUsageDescription` (Privacy - Face ID Usage Description)
+- **Type**: string
 
 #### Discussion
 
-> ❗ **Important**:  This key is required if your app uses APIs that access Face ID. Also note that App Clips can’t use Face ID. For more information about functionality that’s unavailable to App Clips, see [`Choosing the right functionality for your App Clip`](https://developer.apple.com/documentation/appclip/choosing-the-right-functionality-for-your-app-clip).
+> ❗ **Important**:  This key is required if your app uses APIs that access Face ID. Also note that App Clips can’t use Face ID. For more information about functionality that’s unavailable to App Clips, see [Choosing the right functionality for your App Clip](../../AppClip/choosing-the-right-functionality-for-your-app-clip.md).
 
 ## See Also
 
-- [Logging a User into Your App with Face ID or Touch ID](../localauthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.md)
+### Face ID
+- [Logging a User into Your App with Face ID or Touch ID](../../LocalAuthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.md)
   Supplement your own authentication scheme with biometric authentication, making it easy for users to access sensitive parts of your app.
 
 

@@ -1,7 +1,8 @@
 # attach(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches an audio node to the audio engine.
 
@@ -20,9 +21,13 @@ Attaches an audio node to the audio engine.
 func attach(_ node: AVAudioNode)
 ```
 
+```objc
+- (void) attachNode:(AVAudioNode *) node;
+```
+
 #### Discussion
 
-An instance of [`AVAudioNode`](avaudionode.md) isn’t usable until you attach it to the audio engine using this method.
+An instance of [`AVAudioNode`](../avaudionode.md) isn’t usable until you attach it to the audio engine using this method.
 
 ```swift
 // Create a player node that's used for audio playback.
@@ -38,9 +43,10 @@ engine.attach(playerNode)
 
 ## See Also
 
-- [func detach(AVAudioNode)](avaudioengine/detach(_:).md)
+### Attaching and detaching audio nodes
+- [func detach(AVAudioNode)](./detach%28_%29.md)
   Detaches an audio node from the audio engine.
-- [var attachedNodes: Set<AVAudioNode>](avaudioengine/attachednodes.md)
+- [var attachedNodes: Set<AVAudioNode>](./attachednodes.md)
   A read-only set that contains the nodes you attach to the audio engine.
 
 

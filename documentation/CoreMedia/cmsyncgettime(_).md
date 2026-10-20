@@ -1,7 +1,8 @@
 # CMSyncGetTime(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the time from a clock or timebase.
 
@@ -20,17 +21,22 @@ Returns the time from a clock or timebase.
 func CMSyncGetTime(_ clockOrTimebase: CMClockOrTimebase) -> CMTime
 ```
 
+```c
+extern CMTime CMSyncGetTime(CMClockOrTimebaseRef clockOrTimebase);
+```
+
 #### Discussion
 
-`CMSyncGetTime` calls either [`CMClockGetTime(_:)`](cmclockgettime(_:).md) or [`CMTimebaseGetTime(_:)`](cmtimebasegettime(_:).md), as appropriate.
+`CMSyncGetTime` calls either [`CMClockGetTime(_:)`](./cmclockgettime%28_%29.md) or [`CMTimebaseGetTime(_:)`](./cmtimebasegettime%28_%29.md), as appropriate.
 
 ## See Also
 
-- [func CMSyncGetRelativeRate(CMClockOrTimebase, relativeTo: CMClockOrTimebase) -> Float64](cmsyncgetrelativerate(_:relativeto:).md)
+### Getting and Syncing Time
+- [func CMSyncGetRelativeRate(CMClockOrTimebase, relativeTo: CMClockOrTimebase) -> Float64](./cmsyncgetrelativerate%28_,relativeto%29.md)
   Returns the relative rate of one timebase or clock relative to another timebase or clock.
-- [func CMSyncGetRelativeRateAndAnchorTime(CMClockOrTimebase, relativeTo: CMClockOrTimebase, relativeRateOut: UnsafeMutablePointer<Float64>?, anchorTimeOut: UnsafeMutablePointer<CMTime>?, relativeToAnchorTimeOut: UnsafeMutablePointer<CMTime>?) -> OSStatus](cmsyncgetrelativerateandanchortime(_:relativeto:relativerateout:anchortimeout:relativetoanchortimeout:).md)
+- [func CMSyncGetRelativeRateAndAnchorTime(CMClockOrTimebase, relativeTo: CMClockOrTimebase, relativeRateOut: UnsafeMutablePointer<Float64>?, anchorTimeOut: UnsafeMutablePointer<CMTime>?, relativeToAnchorTimeOut: UnsafeMutablePointer<CMTime>?) -> OSStatus](./cmsyncgetrelativerateandanchortime%28_,relativeto,relativerateout,anchortimeout,relativetoanchortimeout%29.md)
   Returns the relative rate of one timebase or clock relative to another timebase or clock and the times of each timebase or clock at which the relative rate went into effect.
-- [func CMSyncConvertTime(CMTime, from: CMClockOrTimebase, to: CMClockOrTimebase) -> CMTime](cmsyncconverttime(_:from:to:).md)
+- [func CMSyncConvertTime(CMTime, from: CMClockOrTimebase, to: CMClockOrTimebase) -> CMTime](./cmsyncconverttime%28_,from,to%29.md)
   Converts a time from one timebase or clock to another timebase or clock.
 
 

@@ -1,7 +1,8 @@
 # viewCount
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of views that you must fill with content.
 

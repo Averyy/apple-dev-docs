@@ -1,7 +1,8 @@
 # recordedDate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the date of the recording.
 
@@ -17,6 +18,10 @@ A key that represents the date of the recording.
 
 ```swift
 static let recordedDate: AVAudioSequencer.InfoDictionaryKey
+```
+
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeyRecordedDate;
 ```
 
 

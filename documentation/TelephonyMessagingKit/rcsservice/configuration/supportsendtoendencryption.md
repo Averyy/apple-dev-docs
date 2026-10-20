@@ -1,7 +1,8 @@
 # supportsEndToEndEncryption
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the RCS service supports end-to-end encryption.
 

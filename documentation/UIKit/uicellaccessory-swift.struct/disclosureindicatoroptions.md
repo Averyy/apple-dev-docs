@@ -1,7 +1,8 @@
 # UICellAccessory.DisclosureIndicatorOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a disclosure indicator.
 
@@ -10,7 +11,7 @@ Configuration options for a disclosure indicator.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,19 +22,20 @@ struct DisclosureIndicatorOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](uicellaccessory-swift.struct/disclosureindicatoroptions/init(ishidden:reservedlayoutwidth:tintcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?)](./disclosureindicatoroptions/init%28ishidden,reservedlayoutwidth,tintcolor%29.md)
   Creates a disclosure indicator options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/disclosureindicatoroptions/ishidden.md)
+- [var isHidden: Bool](./disclosureindicatoroptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/disclosureindicatoroptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./disclosureindicatoroptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/disclosureindicatoroptions/tintcolor.md)
+- [var tintColor: UIColor?](./disclosureindicatoroptions/tintcolor.md)
   The tint color to apply to the accessory.
 
 ## See Also
 
-- [static func disclosureIndicator(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DisclosureIndicatorOptions) -> UICellAccessory](uicellaccessory-swift.struct/disclosureindicator(displayed:options:).md)
+### Creating a disclosure indicator
+- [static func disclosureIndicator(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DisclosureIndicatorOptions) -> UICellAccessory](./disclosureindicator%28displayed,options%29.md)
   Creates a disclosure indicator system accessory with the specified display state and configuration options.
 
 

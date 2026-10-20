@@ -1,7 +1,8 @@
 # predicateFormat
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate’s format string.
 
@@ -20,11 +21,15 @@ The predicate’s format string.
 var predicateFormat: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * predicateFormat;
+```
+
 #### Discussion
 
-The return value of this property is not guaranteed to be the same as the string used to create the predicate using [`predicateWithFormat:`](nspredicate/predicatewithformat:.md) or similar methods.
+The return value of this property is not guaranteed to be the same as the string used to create the predicate using [`predicateWithFormat:`](./predicatewithformat_.md) or similar methods.
 
-You cannot use this method to create a persistent representation of a predicate suitable for recreating the original predicate. If you need a persistent representation of a predicate, create an archive instead, as described in [`Object archiving`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Archiving.html#//apple_ref/doc/uid/TP40008195-CH1) ([`NSPredicate`](nspredicate.md) adopts the [`NSCoding`](nscoding.md) protocol).
+You cannot use this method to create a persistent representation of a predicate suitable for recreating the original predicate. If you need a persistent representation of a predicate, create an archive instead, as described in [Object archiving](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Archiving.html#//apple_ref/doc/uid/TP40008195-CH1) ([`NSPredicate`](../nspredicate.md) adopts the [`NSCoding`](../nscoding.md) protocol).
 
 
 ---

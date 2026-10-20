@@ -1,17 +1,22 @@
 # register(forConnectNotifications:selector:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allows a client to register for device connect notifications for any connection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func register(forConnectNotifications observer: Any!, selector inSelector: Selector!) -> IOBluetoothUserNotification!
+```
+
+```objc
++ (IOBluetoothUserNotification *) registerForConnectNotifications:(id) observer selector:(SEL) inSelector;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # DynamicPropertyPathCollection
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Indexed result items from an intent value query.
 
@@ -34,31 +35,32 @@ XCTAssertEqual(try result.items[0].name, "Botanical Garden")
 ## Topics
 
 ### Instance Properties
-- [var count: Int](dynamicpropertypathcollection/count.md)
+- [var count: Int](./dynamicpropertypathcollection/count.md)
   The number of items in the collection.
-- [var isEmpty: Bool](dynamicpropertypathcollection/isempty.md)
+- [var isEmpty: Bool](./dynamicpropertypathcollection/isempty.md)
   A Boolean value that indicates whether the collection is empty.
 ### Subscripts
-- [subscript<T>(Int) -> T](dynamicpropertypathcollection/subscript(_:)-6t8mq.md)
+- [subscript<T>(Int) -> T](./dynamicpropertypathcollection/subscript%28_%29-6t8mq.md)
   Accesses typed properties from the intent value at the given index.
-- [subscript(Int) -> DynamicPropertyPath](dynamicpropertypathcollection/subscript(_:)-700kp.md)
+- [subscript(Int) -> DynamicPropertyPath](./dynamicpropertypathcollection/subscript%28_%29-700kp.md)
   Creates a dynamic path for navigating into the item’s properties.
-- [subscript(Int) -> (any IntentValueExpressing)?](dynamicpropertypathcollection/subscript(_:)-8h9mv.md)
+- [subscript(Int) -> (any IntentValueExpressing)?](./dynamicpropertypathcollection/subscript%28_%29-8h9mv.md)
   Accesses an item for nil checking and assigning to intent parameters without casting.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol AppIntentTypeDefinition](appintenttypedefinition.md)
+### Supporting types
+- [protocol AppIntentTypeDefinition](./appintenttypedefinition.md)
   A protocol that associates a definition type with its corresponding instance type.
-- [struct DynamicPropertyPath](dynamicpropertypath.md)
+- [struct DynamicPropertyPath](./dynamicpropertypath.md)
   A type-safe, dynamic path to access nested intent values.
-- [struct IntentValuePropertiesCallable](intentvaluepropertiescallable.md)
+- [struct IntentValuePropertiesCallable](./intentvaluepropertiescallable.md)
   A callable wrapper that creates app intent instances from keyword arguments.
 
 

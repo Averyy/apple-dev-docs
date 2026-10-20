@@ -1,17 +1,18 @@
 # HKObserverQueryCompletionHandler
 
 **Framework**: HealthKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The completion handler for background deliveries.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ The completion handler for background deliveries.
 typealias HKObserverQueryCompletionHandler = () -> Void
 ```
 
+```c
+typedef void (^)(void) HKObserverQueryCompletionHandler;
+```
+
 ## Mentions
 
-- [Executing Observer Queries](executing-observer-queries.md)
+- [Executing Observer Queries](./executing-observer-queries.md)
 
 #### Discussion
 
@@ -31,13 +36,15 @@ When HealthKit wakes your app, it calls the update handler on any observer queri
 
 ## See Also
 
-- [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/enablebackgrounddelivery(for:frequency:withcompletion:).md)
+### Related Documentation
+- [func enableBackgroundDelivery(for: HKObjectType, frequency: HKUpdateFrequency, withCompletion: (Bool, (any Error)?) -> Void)](./hkhealthstore/enablebackgrounddelivery%28for,frequency,withcompletion%29.md)
   Enables the delivery of updates to an app running in the background.
-- [Executing Observer Queries](executing-observer-queries.md)
+### Creating Observer Queries
+- [Executing Observer Queries](./executing-observer-queries.md)
   Create and run observer queries.
-- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(sampletype:predicate:updatehandler:).md)
+- [init(sampleType: HKSampleType, predicate: NSPredicate?, updateHandler: (HKObserverQuery, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28sampletype,predicate,updatehandler%29.md)
   Instantiates and returns a query that monitors the HealthKit store and responds to changes.
-- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](hkobserverquery/init(querydescriptors:updatehandler:).md)
+- [init(queryDescriptors: [HKQueryDescriptor], updateHandler: (HKObserverQuery, Set<HKSampleType>?, HKObserverQueryCompletionHandler, (any Error)?) -> Void)](./hkobserverquery/init%28querydescriptors,updatehandler%29.md)
   Creates a query that monitors the HealthKit store and responds to any changes matching any of the query descriptors you provided.
 
 

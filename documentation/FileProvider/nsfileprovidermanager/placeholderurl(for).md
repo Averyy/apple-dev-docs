@@ -1,7 +1,8 @@
 # placeholderURL(for:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a placeholder URL for a given document URL.
 
@@ -17,15 +18,19 @@ Returns a placeholder URL for a given document URL.
 class func placeholderURL(for url: URL) -> URL
 ```
 
+```objc
++ (NSURL *) placeholderURLForURL:(NSURL *) url;
+```
+
 #### Return Value
 
 A placeholder URL for the given document.
 
 #### Discussion
 
-This method maps file URLs into their corresponding placeholder URLs. You typically call this method to generate the placeholder URL before calling [`writePlaceholder(at:withMetadata:)`](nsfileproviderextension/writeplaceholder(at:withmetadata:).md).
+This method maps file URLs into their corresponding placeholder URLs. You typically call this method to generate the placeholder URL before calling [`writePlaceholder(at:withMetadata:)`](../nsfileproviderextension/writeplaceholder%28at,withmetadata%29.md).
 
-> **Note**:  While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](nsfileproviderreplicatedextension.md) protocol.
+> **Note**:  While this method is available on macOS 11+, you don’t need to use it when creating a file provider extension that adopts the [`NSFileProviderReplicatedExtension`](../nsfileproviderreplicatedextension.md) protocol.
 
 ## Parameters
 
@@ -33,15 +38,16 @@ This method maps file URLs into their corresponding placeholder URLs. You typica
 
 ## See Also
 
-- [class func writePlaceholder(at: URL, withMetadata: NSFileProviderItem) throws](nsfileprovidermanager/writeplaceholder(at:withmetadata:).md)
+### Performing actions
+- [class func writePlaceholder(at: URL, withMetadata: NSFileProviderItem) throws](./writeplaceholder%28at,withmetadata%29.md)
   Writes a document placeholder with the provided metadata.
-- [func register(URLSessionTask, forItemWithIdentifier: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/register(_:foritemwithidentifier:completionhandler:).md)
+- [func register(URLSessionTask, forItemWithIdentifier: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](./register%28_,foritemwithidentifier,completionhandler%29.md)
   Registers the URL session task responsible for the specified item.
-- [func signalEnumerator(for: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/signalenumerator(for:completionhandler:).md)
+- [func signalEnumerator(for: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](./signalenumerator%28for,completionhandler%29.md)
   Alerts the system to changes in the specified folder’s content.
-- [func waitForChanges(below: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/waitforchanges(below:completionhandler:).md)
+- [func waitForChanges(below: NSFileProviderItemIdentifier, completionHandler: ((any Error)?) -> Void)](./waitforchanges%28below,completionhandler%29.md)
   Requests a notification after the system completes all the specified changes.
-- [func globalProgress(for: Progress.FileOperationKind) -> Progress](nsfileprovidermanager/globalprogress(for:).md)
+- [func globalProgress(for: Progress.FileOperationKind) -> Progress](./globalprogress%28for%29.md)
   Returns a progress object that tracks either the uploading or downloading of items from the File Provider extension’s remote storage.
 
 

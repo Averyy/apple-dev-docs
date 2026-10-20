@@ -1,15 +1,16 @@
 # kExtAudioFilePacketTableInfoOverride_UseFileValueIfValid
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kExtAudioFilePacketTableInfoOverride_UseFileValueIfValid: ExtAudioFilePacketTableInfoOverride { get }
 ```
 
+```c
+kExtAudioFilePacketTableInfoOverride_UseFileValueIfValid
+```
+
 ## See Also
 
-- [var kExtAudioFilePacketTableInfoOverride_UseFileValue: ExtAudioFilePacketTableInfoOverride](kextaudiofilepackettableinfooverride_usefilevalue.md)
+### Constants
+- [var kExtAudioFilePacketTableInfoOverride_UseFileValue: ExtAudioFilePacketTableInfoOverride](./kextaudiofilepackettableinfooverride_usefilevalue.md)
 
 
 ---

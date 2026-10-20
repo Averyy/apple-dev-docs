@@ -1,7 +1,8 @@
 # categoryType
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category to which this accessory belongs.
 
@@ -19,13 +20,18 @@ The category to which this accessory belongs.
 var categoryType: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * categoryType;
+```
+
 #### Discussion
 
-See [`Accessory Category Types`](accessory-category-types.md) for possible values.
+See [Accessory Category Types](../accessory-category-types.md) for possible values.
 
 ## See Also
 
-- [Accessory Category Types](accessory-category-types.md)
+### Reading the category type
+- [Accessory Category Types](../accessory-category-types.md)
   The accessory category types supported by HomeKit.
 
 

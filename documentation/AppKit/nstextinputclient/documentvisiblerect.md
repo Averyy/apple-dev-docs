@@ -1,7 +1,8 @@
 # documentVisibleRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
@@ -12,15 +13,20 @@
 optional var documentVisibleRect: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect documentVisibleRect;
+```
+
 ## Mentions
 
-- [Adopting the system text cursor in custom text views](adopting-the-system-text-cursor-in-custom-text-views.md)
+- [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
 ## See Also
 
-- [var unionRectInVisibleSelectedRange: NSRect](nstextinputclient/unionrectinvisibleselectedrange.md)
-- [func preferredTextAccessoryPlacement() -> NSTextCursorAccessoryPlacement](nstextinputclient/preferredtextaccessoryplacement.md)
-- [func windowLevel() -> Int](nstextinputclient/windowlevel.md)
+### Placing content
+- [var unionRectInVisibleSelectedRange: NSRect](./unionrectinvisibleselectedrange.md)
+- [func preferredTextAccessoryPlacement() -> NSTextCursorAccessoryPlacement](./preferredtextaccessoryplacement%28%29.md)
+- [func windowLevel() -> Int](./windowlevel%28%29.md)
   Returns the window level of the receiver.
 
 

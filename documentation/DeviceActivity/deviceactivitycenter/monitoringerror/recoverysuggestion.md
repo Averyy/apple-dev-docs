@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes how to recover from the failure.
 
@@ -18,7 +19,8 @@ var recoverySuggestion: String? { get }
 
 ## See Also
 
-- [var errorDescription: String?](deviceactivitycenter/monitoringerror/errordescription.md)
+### Getting the Localized Message
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes what error occurred.
 
 

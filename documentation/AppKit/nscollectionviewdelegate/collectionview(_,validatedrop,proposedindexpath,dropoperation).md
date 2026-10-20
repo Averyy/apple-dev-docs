@@ -1,7 +1,8 @@
 # collectionView(_:validateDrop:proposedIndexPath:dropOperation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates whether a drop operation is possible at the specified location.
 
@@ -15,17 +16,21 @@ Validates whether a drop operation is possible at the specified location.
 optional func collectionView(_ collectionView: NSCollectionView, validateDrop draggingInfo: any NSDraggingInfo, proposedIndexPath proposedDropIndexPath: AutoreleasingUnsafeMutablePointer<NSIndexPath>, dropOperation proposedDropOperation: UnsafeMutablePointer<NSCollectionView.DropOperation>) -> NSDragOperation
 ```
 
+```objc
+- (NSDragOperation) collectionView:(NSCollectionView *) collectionView validateDrop:(id<NSDraggingInfo>) draggingInfo proposedIndexPath:(NSIndexPath **) proposedDropIndexPath dropOperation:(NSCollectionViewDropOperation *) proposedDropOperation;
+```
+
 #### Return Value
 
-A value that indicates which dragging operation to perform. Return [`NSDragOperationNone`](nsdragoperation/nsdragoperationnone.md) to disallow a drop at the proposed location.
+A value that indicates which dragging operation to perform. Return [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md) to disallow a drop at the proposed location.
 
 #### Discussion
 
-Although implementation of this method is optional, you must implement it to support drops onto the associated collection view. You must also call the collection view’s [`registerForDraggedTypes(_:)`](nsview/registerfordraggedtypes(_:).md) method to register the types of drops it supports. If you do not perform both of these actions, the collection view does not accept drops.
+Although implementation of this method is optional, you must implement it to support drops onto the associated collection view. You must also call the collection view’s [`registerForDraggedTypes(_:)`](../nsview/registerfordraggedtypes%28_%29.md) method to register the types of drops it supports. If you do not perform both of these actions, the collection view does not accept drops.
 
 When an interactive drag operation occurs, the collection view calls this method to determine whether the current mouse location is a valid place to drop the content. This method may be called many times during the course of the drag operation. Your implementation should look at the proposed location and return a constant that reflects how the drop would be handled.
 
-While validating the drop location, you can suggest a better drop location by updating the values in the `proposedDropIndexPath` and `proposedDropOperation` parameters. For example, you might suggest dropping the content before the specified item instead of on it. The collection view sets the `proposedDropOperation` parameter to [`NSCollectionView.DropOperation.on`](nscollectionview/dropoperation/on.md) when the mouse is closer to the middle of an item than to its edges; otherwise, it sets the parameter to [`NSCollectionView.DropOperation.before`](nscollectionview/dropoperation/before.md).
+While validating the drop location, you can suggest a better drop location by updating the values in the `proposedDropIndexPath` and `proposedDropOperation` parameters. For example, you might suggest dropping the content before the specified item instead of on it. The collection view sets the `proposedDropOperation` parameter to [`NSCollectionView.DropOperation.on`](../nscollectionview/dropoperation/on.md) when the mouse is closer to the middle of an item than to its edges; otherwise, it sets the parameter to [`NSCollectionView.DropOperation.before`](../nscollectionview/dropoperation/before.md).
 
 ## Parameters
 
@@ -36,25 +41,26 @@ While validating the drop location, you can suggest a better drop location by up
 
 ## See Also
 
-- [Supporting Collection View Drag and Drop Through File Promises](supporting-collection-view-drag-and-drop-through-file-promises.md)
+### Drag and Drop Support
+- [Supporting Collection View Drag and Drop Through File Promises](../supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [func collectionView(NSCollectionView, canDragItemsAt: Set<IndexPath>, with: NSEvent) -> Bool](nscollectionviewdelegate/collectionview(_:candragitemsat:with:)-49wix.md)
+- [func collectionView(NSCollectionView, canDragItemsAt: Set<IndexPath>, with: NSEvent) -> Bool](./collectionview%28_,candragitemsat,with%29-49wix.md)
   Returns a Boolean indicating whether a drag operation involving the specified items can begin.
-- [func collectionView(NSCollectionView, pasteboardWriterForItemAt: IndexPath) -> (any NSPasteboardWriting)?](nscollectionviewdelegate/collectionview(_:pasteboardwriterforitemat:)-5eyyl.md)
+- [func collectionView(NSCollectionView, pasteboardWriterForItemAt: IndexPath) -> (any NSPasteboardWriting)?](./collectionview%28_,pasteboardwriterforitemat%29-5eyyl.md)
   Provides the pasteboard writer for the item at the specified index path.
-- [func collectionView(NSCollectionView, draggingImageForItemsAt: Set<IndexPath>, with: NSEvent, offset: NSPointPointer) -> NSImage](nscollectionviewdelegate/collectionview(_:draggingimageforitemsat:with:offset:)-898js.md)
+- [func collectionView(NSCollectionView, draggingImageForItemsAt: Set<IndexPath>, with: NSEvent, offset: NSPointPointer) -> NSImage](./collectionview%28_,draggingimageforitemsat,with,offset%29-898js.md)
   Creates and returns a drag image to represent the specified items during a drag.
-- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forItemsAt: Set<IndexPath>)](nscollectionviewdelegate/collectionview(_:draggingsession:willbeginat:foritemsat:)-68x2y.md)
+- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forItemsAt: Set<IndexPath>)](./collectionview%28_,draggingsession,willbeginat,foritemsat%29-68x2y.md)
   Notifies your delegate that a drag session is about to begin.
-- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, endedAt: NSPoint, dragOperation: NSDragOperation)](nscollectionviewdelegate/collectionview(_:draggingsession:endedat:dragoperation:).md)
+- [func collectionView(NSCollectionView, draggingSession: NSDraggingSession, endedAt: NSPoint, dragOperation: NSDragOperation)](./collectionview%28_,draggingsession,endedat,dragoperation%29.md)
   Notifies your delegate that a drag session ended.
-- [func collectionView(NSCollectionView, updateDraggingItemsForDrag: any NSDraggingInfo)](nscollectionviewdelegate/collectionview(_:updatedraggingitemsfordrag:).md)
+- [func collectionView(NSCollectionView, updateDraggingItemsForDrag: any NSDraggingInfo)](./collectionview%28_,updatedraggingitemsfordrag%29.md)
   Asks your delegate to update the dragging items during a drag operation.
-- [func collectionView(NSCollectionView, acceptDrop: any NSDraggingInfo, indexPath: IndexPath, dropOperation: NSCollectionView.DropOperation) -> Bool](nscollectionviewdelegate/collectionview(_:acceptdrop:indexpath:dropoperation:).md)
+- [func collectionView(NSCollectionView, acceptDrop: any NSDraggingInfo, indexPath: IndexPath, dropOperation: NSCollectionView.DropOperation) -> Bool](./collectionview%28_,acceptdrop,indexpath,dropoperation%29.md)
   Incorporates the dropped content into the collection view.
-- [func collectionView(NSCollectionView, writeItemsAt: Set<IndexPath>, to: NSPasteboard) -> Bool](nscollectionviewdelegate/collectionview(_:writeitemsat:to:)-23ozm.md)
+- [func collectionView(NSCollectionView, writeItemsAt: Set<IndexPath>, to: NSPasteboard) -> Bool](./collectionview%28_,writeitemsat,to%29-23ozm.md)
   Places the data for the drag operation on the pasteboard.
-- [func collectionView(NSCollectionView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItemsAt: Set<IndexPath>) -> [String]](nscollectionviewdelegate/collectionview(_:namesofpromisedfilesdroppedatdestination:fordraggeditemsat:)-6yag4.md)
+- [func collectionView(NSCollectionView, namesOfPromisedFilesDroppedAtDestination: URL, forDraggedItemsAt: Set<IndexPath>) -> [String]](./collectionview%28_,namesofpromisedfilesdroppedatdestination,fordraggeditemsat%29-6yag4.md)
   Returns the names of the promised files that you created for a drag operation.
 
 

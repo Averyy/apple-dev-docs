@@ -1,7 +1,8 @@
 # SR_ARKIT_SUPPORTED
 
 **Framework**: SensorKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that indicates whether the ARKit framework is available in the SDK for the SensorKit framework.
 
@@ -11,9 +12,14 @@ A flag that indicates whether the ARKit framework is available in the SDK for th
 var SR_ARKIT_SUPPORTED: Int32 { get }
 ```
 
+```c
+#define SR_ARKIT_SUPPORTED
+```
+
 ## See Also
 
-- [class SRFaceMetrics](srfacemetrics.md)
+### Analyzing faces
+- [class SRFaceMetrics](./srfacemetrics.md)
   An object that represents metrics about the user’s face.
 
 

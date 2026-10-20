@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of values, each containing a reference to a CloudKit record
 
@@ -10,7 +11,7 @@ The array of values, each containing a reference to a CloudKit record
 
 ## Declaration
 
-```swift
+```
 attribute CKDBRecordReference[]? value;
 ```
 

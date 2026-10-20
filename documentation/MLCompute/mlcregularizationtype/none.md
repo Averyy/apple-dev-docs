@@ -1,14 +1,15 @@
 # MLCRegularizationType.none
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -16,10 +17,15 @@
 case none
 ```
 
+```c
+MLCRegularizationTypeNone
+```
+
 ## See Also
 
-- [MLCRegularizationType.l1](mlcregularizationtype/l1.md)
-- [MLCRegularizationType.l2](mlcregularizationtype/l2.md)
+### Enumeration Cases
+- [MLCRegularizationType.l1](./l1.md)
+- [MLCRegularizationType.l2](./l2.md)
 
 
 ---

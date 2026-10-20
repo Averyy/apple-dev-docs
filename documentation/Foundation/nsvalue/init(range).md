@@ -1,7 +1,8 @@
 # init(range:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified Foundation range structure.
 
@@ -20,6 +21,10 @@ Creates a new value object containing the specified Foundation range structure.
 init(range: NSRange)
 ```
 
+```objc
++ (NSValue *) valueWithRange:(NSRange) range;
+```
+
 #### Return Value
 
 A new value object that contains the range information.
@@ -30,7 +35,8 @@ A new value object that contains the range information.
 
 ## See Also
 
-- [var rangeValue: NSRange](nsvalue/rangevalue.md)
+### Working with Range Values
+- [var rangeValue: NSRange](./rangevalue.md)
   The Foundation range structure representation of the value.
 
 

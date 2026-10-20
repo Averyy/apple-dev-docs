@@ -1,23 +1,28 @@
 # spec
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The specifier of the setting. See [`CTParagraphStyleSpecifier`](ctparagraphstylespecifier.md) for possible values.
+The specifier of the setting. See [`CTParagraphStyleSpecifier`](../ctparagraphstylespecifier.md) for possible values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var spec: CTParagraphStyleSpecifier
+```
+
+```c
+CTParagraphStyleSpecifier spec;
 ```
 
 

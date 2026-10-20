@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of elements in the buffer.
@@ -12,7 +13,7 @@ The number of elements in the buffer.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ var count: Int { get }
 
 ## See Also
 
-- [var baseAddress: UnsafeMutablePointer<Self.Element>?](bnnsgraph/pointerargument/baseaddress.md)
+### Querying a pointer argument’s properties
+- [var baseAddress: UnsafeMutablePointer<Self.Element>?](./baseaddress.md)
   A pointer to the first element of the buffer.
 
 

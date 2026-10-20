@@ -1,14 +1,15 @@
 # KERNEL_AUDIT_TOKEN
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 const audit_token_t KERNEL_AUDIT_TOKEN;
 ```
 

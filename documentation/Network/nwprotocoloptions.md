@@ -1,7 +1,8 @@
 # NWProtocolOptions
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract superclass for configuring the options of a network protocol.
 
@@ -23,20 +24,21 @@ class NWProtocolOptions
 ## Relationships
 
 ### Inherited By
-- [NWProtocolFramer.Options](nwprotocolframer/options.md)
-- [NWProtocolIP.Options](nwprotocolip/options.md)
-- [NWProtocolQUIC.Options](nwprotocolquic/options.md)
-- [NWProtocolTCP.Options](nwprotocoltcp/options.md)
-- [NWProtocolTLS.Options](nwprotocoltls/options.md)
-- [NWProtocolUDP.Options](nwprotocoludp/options.md)
-- [NWProtocolWebSocket.Options](nwprotocolwebsocket/options.md)
+- [NWProtocolFramer.Options](./nwprotocolframer/options.md)
+- [NWProtocolIP.Options](./nwprotocolip/options.md)
+- [NWProtocolQUIC.Options](./nwprotocolquic/options.md)
+- [NWProtocolTCP.Options](./nwprotocoltcp/options.md)
+- [NWProtocolTLS.Options](./nwprotocoltls/options.md)
+- [NWProtocolUDP.Options](./nwprotocoludp/options.md)
+- [NWProtocolWebSocket.Options](./nwprotocolwebsocket/options.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NWProtocolDefinition](nwprotocoldefinition.md)
+### Adding Protocols to Connections
+- [class NWProtocolDefinition](./nwprotocoldefinition.md)
   The abstract superclass for identifying a network protocol.
 
 

@@ -1,7 +1,8 @@
 # ImmediateScheduler.SchedulerTimeType.Stride.IntegerLiteralType
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used when evaluating integer literals.
 
@@ -22,9 +23,10 @@ typealias IntegerLiteralType = Int
 
 ## See Also
 
-- [ImmediateScheduler.SchedulerTimeType.Stride.FloatLiteralType](immediatescheduler/schedulertimetype/stride/floatliteraltype.md)
+### Declaring Timekeeping Types
+- [ImmediateScheduler.SchedulerTimeType.Stride.FloatLiteralType](./floatliteraltype.md)
   The type used when evaluating floating-point literals.
-- [ImmediateScheduler.SchedulerTimeType.Stride.Magnitude](immediatescheduler/schedulertimetype/stride/magnitude-swift.typealias.md)
+- [ImmediateScheduler.SchedulerTimeType.Stride.Magnitude](./magnitude-swift.typealias.md)
   The type used for expressing the stride’s magnitude.
 
 

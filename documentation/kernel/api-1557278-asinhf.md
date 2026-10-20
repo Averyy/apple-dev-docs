@@ -1,24 +1,26 @@
 # asinhf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float asinhf(float);
 ```
 
 ## See Also
 
-- [asin](1557225-asin.md)
-- [asinf](1557356-asinf.md)
-- [asinh](1557211-asinh.md)
-- [asinhl](1557157-asinhl.md)
-- [asinl](1557222-asinl.md)
+### Arcsine
+- [asin](./api-1557225-asin.md)
+- [asinf](./api-1557356-asinf.md)
+- [asinh](./api-1557211-asinh.md)
+- [asinhl](./api-1557157-asinhl.md)
+- [asinl](./api-1557222-asinl.md)
 
 
 ---

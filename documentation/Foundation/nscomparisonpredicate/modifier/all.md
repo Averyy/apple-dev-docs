@@ -1,7 +1,8 @@
 # NSComparisonPredicate.Modifier.all
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A predicate to compare all entries in the destination of a to-many relationship.
 
@@ -20,15 +21,20 @@ A predicate to compare all entries in the destination of a to-many relationship.
 case all
 ```
 
+```c
+NSAllPredicateModifier
+```
+
 #### Discussion
 
-The left hand side must be a collection. The corresponding predicate compares each value in the left hand side with the right hand side, and returns [`false`](https://developer.apple.com/documentation/swift/false) when it finds the first mismatch—or [`true`](https://developer.apple.com/documentation/swift/true) if all match.
+The left hand side must be a collection. The corresponding predicate compares each value in the left hand side with the right hand side, and returns [`false`](../../../Swift/false.md) when it finds the first mismatch—or [`true`](../../../Swift/true.md) if all match.
 
 ## See Also
 
-- [NSComparisonPredicate.Modifier.direct](nscomparisonpredicate/modifier/direct.md)
+### Constants
+- [NSComparisonPredicate.Modifier.direct](./direct.md)
   A predicate to compare directly the left and right hand sides.
-- [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
+- [NSComparisonPredicate.Modifier.any](./any.md)
   A predicate to match with any entry in the destination of a to-many relationship.
 
 

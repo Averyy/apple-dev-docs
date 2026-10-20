@@ -1,7 +1,8 @@
 # execute(_:with:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value as appropriate for the given request, or nil if the request cannot be completed.
 
@@ -10,7 +11,7 @@ Returns a value as appropriate for the given request, or nil if the request cann
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Returns a value as appropriate for the given request, or nil if the request cann
 func execute(_ request: NSPersistentStoreRequest, with context: NSManagedObjectContext?) throws -> Any
 ```
 
+```objc
+- (id) executeRequest:(NSPersistentStoreRequest *) request withContext:(NSManagedObjectContext *) context error:(NSError **) error;
+```
+
 #### Return Value
 
 A value as appropriate for `request`, or `nil` if the request cannot be completed
 
 #### Discussion
 
-The value to return depends on the result type (see [`resultType`](nsfetchrequest/resulttype.md)) of `request`:
+The value to return depends on the result type (see [`resultType`](../nsfetchrequest/resulttype.md)) of `request`:
 
 - If it is `NSManagedObjectResultType`, `NSManagedObjectIDResultType`, or `NSDictionaryResultType`, the method should return an array containing all objects in the store matching the request.
 - If it is `NSCountResultType`, the method should return an array containing an `NSNumber` whose value is the count of all objects in the store matching the request.
@@ -43,15 +48,16 @@ You should implement this method conservatively, and expect that unknown request
 
 ## See Also
 
-- [func newValuesForObject(with: NSManagedObjectID, with: NSManagedObjectContext) throws -> NSIncrementalStoreNode](nsincrementalstore/newvaluesforobject(with:with:).md)
+### Manipulating Managed Objects
+- [func newValuesForObject(with: NSManagedObjectID, with: NSManagedObjectContext) throws -> NSIncrementalStoreNode](./newvaluesforobject%28with,with%29.md)
   Returns an incremental store node encapsulating the persistent external values of the object with a given object ID.
-- [func newValue(forRelationship: NSRelationshipDescription, forObjectWith: NSManagedObjectID, with: NSManagedObjectContext?) throws -> Any](nsincrementalstore/newvalue(forrelationship:forobjectwith:with:).md)
+- [func newValue(forRelationship: NSRelationshipDescription, forObjectWith: NSManagedObjectID, with: NSManagedObjectContext?) throws -> Any](./newvalue%28forrelationship,forobjectwith,with%29.md)
   Returns the relationship for the given relationship of the object with a given object ID.
-- [func obtainPermanentIDs(for: [NSManagedObject]) throws -> [NSManagedObjectID]](nsincrementalstore/obtainpermanentids(for:).md)
+- [func obtainPermanentIDs(for: [NSManagedObject]) throws -> [NSManagedObjectID]](./obtainpermanentids%28for%29.md)
   Returns an array containing the object IDs for a given array of newly-inserted objects.
-- [func newObjectID(for: NSEntityDescription, referenceObject: Any) -> NSManagedObjectID](nsincrementalstore/newobjectid(for:referenceobject:).md)
+- [func newObjectID(for: NSEntityDescription, referenceObject: Any) -> NSManagedObjectID](./newobjectid%28for,referenceobject%29.md)
   Returns a new object ID that uses given data as the key.
-- [func referenceObject(for: NSManagedObjectID) -> Any](nsincrementalstore/referenceobject(for:).md)
+- [func referenceObject(for: NSManagedObjectID) -> Any](./referenceobject%28for%29.md)
   Returns the reference data used to construct a given object ID.
 
 

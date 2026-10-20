@@ -1,7 +1,8 @@
 # errSecUnsupportedFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified import or export format is not supported.
 
@@ -18,6 +19,10 @@ The specified import or export format is not supported.
 
 ```swift
 var errSecUnsupportedFormat: OSStatus { get }
+```
+
+```c
+errSecUnsupportedFormat
 ```
 
 

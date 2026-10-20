@@ -2,6 +2,7 @@
 
 **Framework**: MapKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the delegate when a person dismissed the view controller.
@@ -17,6 +18,10 @@ Informs the delegate when a person dismissed the view controller.
 
 ```swift
 func mapItemDetailViewControllerDidFinish(_ detailViewController: MKMapItemDetailViewController)
+```
+
+```objc
+- (void) mapItemDetailViewControllerDidFinish:(MKMapItemDetailViewController *) detailViewController;
 ```
 
 ## Parameters

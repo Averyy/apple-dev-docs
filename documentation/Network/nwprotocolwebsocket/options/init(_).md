@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default set of WebSocket connection options.
 
@@ -22,11 +23,12 @@ init(_ version: NWProtocolWebSocket.Version = .version13)
 
 ## See Also
 
-- [NWProtocolWebSocket.Version](nwprotocolwebsocket/version.md)
+### Configuring WebSocket Options
+- [NWProtocolWebSocket.Version](../version.md)
   Supported versions of the WebSocket protocol.
-- [var autoReplyPing: Bool](nwprotocolwebsocket/options/autoreplyping.md)
+- [var autoReplyPing: Bool](./autoreplyping.md)
   A Boolean indicating whether the connection automatically replies to Ping messages instead of delivering them to you.
-- [var maximumMessageSize: Int](nwprotocolwebsocket/options/maximummessagesize.md)
+- [var maximumMessageSize: Int](./maximummessagesize.md)
   The maximum allowed message size, in bytes, to be received by the WebSocket connection.
 
 

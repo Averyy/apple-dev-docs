@@ -1,7 +1,8 @@
 # failingEvaluatorTypes
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of evaluator type names that threw at least once.
 

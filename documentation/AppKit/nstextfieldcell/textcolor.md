@@ -1,12 +1,13 @@
 # textColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color to use to draw the cell’s text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ The color to use to draw the cell’s text.
 var textColor: NSColor? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSColor * textColor;
+```
+
 ## See Also
 
-- [var backgroundColor: NSColor?](nstextfieldcell/backgroundcolor.md)
+### Related Documentation
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The color of the cell’s background.
-- [var textColor: NSColor?](nstextfield/textcolor.md)
+- [var textColor: NSColor?](../nstextfield/textcolor.md)
   The color of the text field’s content.
 
 

@@ -1,7 +1,8 @@
 # pageControllerWillStartLiveTransition(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This message is sent when the user begins a transition.
 
@@ -15,6 +16,10 @@ This message is sent when the user begins a transition.
 optional func pageControllerWillStartLiveTransition(_ pageController: NSPageController)
 ```
 
+```objc
+- (void) pageControllerWillStartLiveTransition:(NSPageController *) pageController;
+```
+
 #### Discussion
 
 This message is sent when the user begins a transition whether via a swipe gesture of one of the page controller’s target-action navigation methods.
@@ -25,9 +30,10 @@ This message is sent when the user begins a transition whether via a swipe gestu
 
 ## See Also
 
-- [func pageControllerDidEndLiveTransition(NSPageController)](nspagecontrollerdelegate/pagecontrollerdidendlivetransition(_:).md)
+### Transition Notification
+- [func pageControllerDidEndLiveTransition(NSPageController)](./pagecontrollerdidendlivetransition%28_%29.md)
   This message is sent when a transition animation completes.
-- [func pageController(NSPageController, didTransitionTo: Any)](nspagecontrollerdelegate/pagecontroller(_:didtransitionto:).md)
+- [func pageController(NSPageController, didTransitionTo: Any)](./pagecontroller%28_,didtransitionto%29.md)
   This message is sent when any page transition is completed.
 
 

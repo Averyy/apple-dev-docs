@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.Program
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the backing shader compilation required for physically based materials.
 
@@ -42,20 +43,20 @@ let material = PhysicallyBasedMaterial(program: program)
 ## Topics
 
 ### Structures
-- [PhysicallyBasedMaterial.Program.Descriptor](physicallybasedmaterial/program-swift.class/descriptor-swift.struct.md)
+- [PhysicallyBasedMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.struct.md)
   Specifies all parameters necessary to initialize `PhysicallyBasedMaterial` programs
 ### Initializers
-- [init(descriptor: PhysicallyBasedMaterial.Program.Descriptor) async](physicallybasedmaterial/program-swift.class/init(descriptor:).md)
+- [init(descriptor: PhysicallyBasedMaterial.Program.Descriptor) async](./program-swift.class/init%28descriptor%29.md)
 ### Instance Properties
-- [let descriptor: PhysicallyBasedMaterial.Program.Descriptor](physicallybasedmaterial/program-swift.class/descriptor-swift.property.md)
+- [let descriptor: PhysicallyBasedMaterial.Program.Descriptor](./program-swift.class/descriptor-swift.property.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

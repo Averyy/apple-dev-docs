@@ -1,15 +1,16 @@
 # AudioUnitEvent
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,48 +18,53 @@
 struct AudioUnitEvent
 ```
 
+```c
+struct AudioUnitEvent;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](audiounitevent/init.md)
-- [init(mEventType: AudioUnitEventType, mArgument: AudioUnitEvent.__Unnamed_union_mArgument)](audiounitevent/init(meventtype:margument:).md)
+- [init()](./audiounitevent/init%28%29.md)
+- [init(mEventType: AudioUnitEventType, mArgument: AudioUnitEvent.__Unnamed_union_mArgument)](./audiounitevent/init%28meventtype,margument%29.md)
 ### Instance Properties
-- [var mArgument: AudioUnitEvent.__Unnamed_union_mArgument](audiounitevent/margument.md)
-- [var mEventType: AudioUnitEventType](audiounitevent/meventtype.md)
+- [var mArgument: AudioUnitEvent.__Unnamed_union_mArgument](./audiounitevent/margument.md)
+- [var mEventType: AudioUnitEventType](./audiounitevent/meventtype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioUnitConnection](audiounitconnection.md)
+### Structures
+- [struct AudioUnitConnection](./audiounitconnection.md)
   An audio unit source-to-destination connection specification.
-- [struct AudioUnitExternalBuffer](audiounitexternalbuffer.md)
+- [struct AudioUnitExternalBuffer](./audiounitexternalbuffer.md)
   Allows an audio unit host application to tell an audio unit to use a specified buffer for its input callback.
-- [struct AudioUnitFrequencyResponseBin](audiounitfrequencyresponsebin.md)
+- [struct AudioUnitFrequencyResponseBin](./audiounitfrequencyresponsebin.md)
   An audio unit’s audio level at a particular frequency.
-- [struct AudioUnitMeterClipping](audiounitmeterclipping.md)
+- [struct AudioUnitMeterClipping](./audiounitmeterclipping.md)
   Audio clipping that has occurred in a mixer unit.
-- [struct AudioUnitMIDIControlMapping](audiounitmidicontrolmapping.md)
-- [struct AudioUnitOtherPluginDesc](audiounitotherplugindesc.md)
-- [struct AudioUnitParameter](audiounitparameter.md)
+- [struct AudioUnitMIDIControlMapping](./audiounitmidicontrolmapping.md)
+- [struct AudioUnitOtherPluginDesc](./audiounitotherplugindesc.md)
+- [struct AudioUnitParameter](./audiounitparameter.md)
   An adjustable audio unit attribute such as volume, pitch, or filter cutoff frequency.
-- [struct AudioUnitParameterEvent](audiounitparameterevent.md)
+- [struct AudioUnitParameterEvent](./audiounitparameterevent.md)
   A scheduled change to an audio unit parameter’s value.
-- [struct AudioUnitParameterHistoryInfo](audiounitparameterhistoryinfo.md)
-  The suggested update rate and history duration for parameters which have the [`flag_PlotHistory`](audiounitparameteroptions/flag_plothistory.md) flag set.
-- [struct AudioUnitParameterNameInfo](audiounitparameternameinfo.md)
+- [struct AudioUnitParameterHistoryInfo](./audiounitparameterhistoryinfo.md)
+  The suggested update rate and history duration for parameters which have the [`flag_PlotHistory`](./audiounitparameteroptions/flag_plothistory.md) flag set.
+- [struct AudioUnitParameterNameInfo](./audiounitparameternameinfo.md)
   A short version of the name for an audio unit parameter.
-- [typealias AudioUnitParameterIDName](audiounitparameteridname.md)
+- [typealias AudioUnitParameterIDName](./audiounitparameteridname.md)
   A type definition for a data type that defines the short version of the name for an audio unit parameter.
-- [struct AudioUnitParameterInfo](audiounitparameterinfo.md)
-- [struct AudioUnitParameterOptions](audiounitparameteroptions.md)
+- [struct AudioUnitParameterInfo](./audiounitparameterinfo.md)
+- [struct AudioUnitParameterOptions](./audiounitparameteroptions.md)
   Value options for audio unit parameters.
-- [struct AudioUnitParameterStringFromValue](audiounitparameterstringfromvalue.md)
+- [struct AudioUnitParameterStringFromValue](./audiounitparameterstringfromvalue.md)
   A string representation of a parameter’s value.
-- [struct AudioUnitParameterValueFromString](audiounitparametervaluefromstring.md)
+- [struct AudioUnitParameterValueFromString](./audiounitparametervaluefromstring.md)
   A parameter’s value based on a string representation of the value.
 
 

@@ -1,7 +1,8 @@
 # MTLFunction
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A interface that represents a public shader function in a Metal library.
 
@@ -10,7 +11,7 @@ A interface that represents a public shader function in a Metal library.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,81 +20,86 @@ A interface that represents a public shader function in a Metal library.
 protocol MTLFunction : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol MTLFunction <NSObject>
+```
+
 #### Overview
 
-Use [`MTLFunction`](mtlfunction.md) instances to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline states, see [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](mtlcomputepipelinedescriptor.md).
+Use [`MTLFunction`](./mtlfunction.md) instances to specify which shaders a Metal pipeline calls when the GPU executes commands that specify that pipeline. For more information on creating pipeline states, see [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) and [`MTLComputePipelineDescriptor`](./mtlcomputepipelinedescriptor.md).
 
-An [`MTLFunction`](mtlfunction.md) instance is a *specialized* function if the shader contains function constants, otherwise it is a *nonspecialized* function.
+An [`MTLFunction`](./mtlfunction.md) instance is a *specialized* function if the shader contains function constants, otherwise it is a *nonspecialized* function.
 
-Don’t use standard allocation and initialization techniques to create an [`MTLFunction`](mtlfunction.md) instance. Instead, use the function creation methods provided by the [`MTLLibrary`](mtllibrary.md) protocol. To create a nonspecialized function, call the [`makeFunction(name:)`](mtllibrary/makefunction(name:).md) method.
+Don’t use standard allocation and initialization techniques to create an [`MTLFunction`](./mtlfunction.md) instance. Instead, use the function creation methods provided by the [`MTLLibrary`](./mtllibrary.md) protocol. To create a nonspecialized function, call the [`makeFunction(name:)`](./mtllibrary/makefunction%28name%29.md) method.
 
-To create a specialized function, call one of these [`MTLLibrary`](mtllibrary.md) methods:
+To create a specialized function, call one of these [`MTLLibrary`](./mtllibrary.md) methods:
 
-- [`makeFunction(name:constantValues:completionHandler:)`](mtllibrary/makefunction(name:constantvalues:completionhandler:).md)
-- [`makeFunction(name:constantValues:)`](mtllibrary/makefunction(name:constantvalues:).md)
+- [`makeFunction(name:constantValues:completionHandler:)`](./mtllibrary/makefunction%28name,constantvalues,completionhandler%29.md)
+- [`makeFunction(name:constantValues:)`](./mtllibrary/makefunction%28name,constantvalues%29.md)
 
-[`MTLFunction`](mtlfunction.md) instances can use a significant amount of memory; release any strong references to them after you finish creating pipeline instances.
+[`MTLFunction`](./mtlfunction.md) instances can use a significant amount of memory; release any strong references to them after you finish creating pipeline instances.
 
 ## Topics
 
 ### Identifying shader functions
-- [var device: any MTLDevice](mtlfunction/device.md)
+- [var device: any MTLDevice](./mtlfunction/device.md)
   The device object that created the shader function.
-- [var label: String?](mtlfunction/label.md)
+- [var label: String?](./mtlfunction/label.md)
   A string that identifies the shader function.
-- [var functionType: MTLFunctionType](mtlfunction/functiontype.md)
+- [var functionType: MTLFunctionType](./mtlfunction/functiontype.md)
   The shader function’s type.
-- [var name: String](mtlfunction/name.md)
+- [var name: String](./mtlfunction/name.md)
   The function’s name.
-- [enum MTLFunctionType](mtlfunctiontype.md)
+- [enum MTLFunctionType](./mtlfunctiontype.md)
   The type of a top-level Metal Shading Language (MSL) function.
-- [var options: MTLFunctionOptions](mtlfunction/options.md)
+- [var options: MTLFunctionOptions](./mtlfunction/options.md)
   The options that Metal used to compile this function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](./mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
 ### Identifying the tessellation patch
-- [var patchType: MTLPatchType](mtlfunction/patchtype.md)
+- [var patchType: MTLPatchType](./mtlfunction/patchtype.md)
   The tessellation patch type of a post-tessellation vertex function.
-- [var patchControlPointCount: Int](mtlfunction/patchcontrolpointcount.md)
+- [var patchControlPointCount: Int](./mtlfunction/patchcontrolpointcount.md)
   The number of patch control points in the post-tessellation vertex function.
-- [enum MTLPatchType](mtlpatchtype.md)
+- [enum MTLPatchType](./mtlpatchtype.md)
   Types of tessellation patches that can be inputs of a post-tessellation vertex function.
 ### Retrieving function attributes
-- [var vertexAttributes: [MTLVertexAttribute]?](mtlfunction/vertexattributes.md)
+- [var vertexAttributes: [MTLVertexAttribute]?](./mtlfunction/vertexattributes.md)
   An array that describes the vertex input attributes to a vertex function.
-- [var stageInputAttributes: [MTLAttribute]?](mtlfunction/stageinputattributes.md)
+- [var stageInputAttributes: [MTLAttribute]?](./mtlfunction/stageinputattributes.md)
   An array that describes the input attributes to the function.
 ### Retrieving function constants
-- [var functionConstantsDictionary: [String : MTLFunctionConstant]](mtlfunction/functionconstantsdictionary.md)
+- [var functionConstantsDictionary: [String : MTLFunctionConstant]](./mtlfunction/functionconstantsdictionary.md)
   A dictionary of function constants for a specialized function.
 ### Creating argument encoders
-- [func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:).md)
+- [func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder](./mtlfunction/makeargumentencoder%28bufferindex%29.md)
   Creates an argument encoder for an argument buffer that’s one of this function’s arguments.
-- [func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:reflection:).md)
+- [func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder](./mtlfunction/makeargumentencoder%28bufferindex,reflection%29.md)
   Creates an argument encoder and returns reflection information for an argument buffer that’s one of this function’s arguments
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
+### Shader functions
+- [class MTLFunctionDescriptor](./mtlfunctiondescriptor.md)
   A description of a function object to create.
-- [protocol MTLFunctionHandle](mtlfunctionhandle.md)
+- [protocol MTLFunctionHandle](./mtlfunctionhandle.md)
   An object representing a function that you can add to a visible function table.
-- [class MTLVisibleFunctionTableDescriptor](mtlvisiblefunctiontabledescriptor.md)
+- [class MTLVisibleFunctionTableDescriptor](./mtlvisiblefunctiontabledescriptor.md)
   A specification of how to create a visible function table.
-- [protocol MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
+- [protocol MTLVisibleFunctionTable](./mtlvisiblefunctiontable.md)
   A table of shader functions visible to your app that you can pass into compute commands to customize the behavior of a shader.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
+- [class MTLIntersectionFunctionTableDescriptor](./mtlintersectionfunctiontabledescriptor.md)
   A specification of how to create an intersection function table.
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+- [protocol MTLIntersectionFunctionTable](./mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
 
 

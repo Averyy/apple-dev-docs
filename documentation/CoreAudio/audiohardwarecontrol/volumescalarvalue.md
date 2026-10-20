@@ -1,12 +1,13 @@
 # volumeScalarValue
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Float that represents the value of the volume control. The range is between 0.0 and 1.0 (inclusive).
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

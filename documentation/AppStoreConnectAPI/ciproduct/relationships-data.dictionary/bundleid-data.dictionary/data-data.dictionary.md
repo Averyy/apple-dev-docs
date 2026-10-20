@@ -1,7 +1,8 @@
 # CiProduct.Relationships.BundleId.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Bundle IDs resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related Bundle IDs resource.
 
 ## Declaration
 
-```swift
+```
 object CiProduct.Relationships.BundleId.Data
 ```
 
@@ -18,6 +19,8 @@ object CiProduct.Relationships.BundleId.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Bundle IDs resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `bundleIds`
 
 
 ---

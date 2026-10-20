@@ -1,7 +1,8 @@
 # Wireless Insights Service Predictions
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app can use the WirelessInsights framework to obtain wireless service predictions.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates whether the app can use the WirelessInsights fram
 - iOS 26.0+
 - iPadOS 26.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.wireless-insights.service-predictions`
+- **Type**: boolean
 
 
 ---

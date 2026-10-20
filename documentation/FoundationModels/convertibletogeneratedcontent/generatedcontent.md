@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 This instance represented as generated content.
@@ -22,7 +23,7 @@ var generatedContent: GeneratedContent { get }
 
 #### Discussion
 
-Conformance to this protocol is provided by the `@Generable` macro. You can provide a manual implementation to map values onto properties using different names. Use the generated content property as shown below, to manually return a new [`GeneratedContent`](generatedcontent.md) with the properties you specify.
+Conformance to this protocol is provided by the `@Generable` macro. You can provide a manual implementation to map values onto properties using different names. Use the generated content property as shown below, to manually return a new [`GeneratedContent`](../generatedcontent.md) with the properties you specify.
 
 ```swift
 struct Person: ConvertibleToGeneratedContent {
@@ -38,7 +39,7 @@ struct Person: ConvertibleToGeneratedContent {
 }
 ```
 
-> ❗ **Important**: If your type also conforms to [`ConvertibleFromGeneratedContent`](convertiblefromgeneratedcontent.md), it is critical that this implementation be symmetrical with [`init(_:)`](convertiblefromgeneratedcontent/init(_:).md).
+> ❗ **Important**: If your type also conforms to [`ConvertibleFromGeneratedContent`](../convertiblefromgeneratedcontent.md), it is critical that this implementation be symmetrical with [`init(_:)`](../convertiblefromgeneratedcontent/init%28_%29.md).
 
 
 ---

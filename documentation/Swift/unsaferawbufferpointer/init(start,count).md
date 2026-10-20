@@ -1,7 +1,8 @@
 # init(start:count:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a buffer over the specified number of contiguous bytes starting at the given pointer.
 

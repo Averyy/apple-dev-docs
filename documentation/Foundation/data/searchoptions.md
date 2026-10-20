@@ -1,7 +1,8 @@
 # Data.SearchOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Options that control a data search operation.
 
@@ -22,9 +23,11 @@ typealias SearchOptions = NSData.SearchOptions
 
 ## See Also
 
-- [NSData.SearchOptions](nsdata/searchoptions.md)
+### Related Documentation
+- [NSData.SearchOptions](../nsdata/searchoptions.md)
   Options for method used to search data objects.
-- [func range(of: Data, options: Data.SearchOptions, in: Range<Data.Index>?) -> Range<Data.Index>?](data/range(of:options:in:).md)
+### Finding Bytes
+- [func range(of: Data, options: Data.SearchOptions, in: Range<Data.Index>?) -> Range<Data.Index>?](./range%28of,options,in%29.md)
   Finds the range of the specified data as a subsequence of this data, if it exists.
 
 

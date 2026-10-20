@@ -1,7 +1,8 @@
 # VideoReaderError.cameraAuthorizationRestricted
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the camera authorization status is restricted. The user is not allowed to access media capture devices.
 
@@ -21,15 +22,16 @@ case cameraAuthorizationRestricted
 
 ## See Also
 
-- [VideoReaderError.cameraAuthorizationDenied](videoreadererror/cameraauthorizationdenied.md)
+### Analyzing the error
+- [VideoReaderError.cameraAuthorizationDenied](./cameraauthorizationdenied.md)
   An error that indicates that the camera authorization status is denied. The user has explicitly denied permission for media capture.
-- [VideoReaderError.frameRateNotSupported(_:)](videoreadererror/frameratenotsupported(_:).md)
+- [VideoReaderError.frameRateNotSupported(_:)](./frameratenotsupported%28_%29.md)
   An error that indicates that the frame rate is not supported by the input camera.
-- [VideoReaderError.missingVideoTrack(_:)](videoreadererror/missingvideotrack(_:).md)
+- [VideoReaderError.missingVideoTrack(_:)](./missingvideotrack%28_%29.md)
   An error that indicates that the VideoReader cannot find a video track.
-- [VideoReaderError.sourceCameraNotAvailable](videoreadererror/sourcecameranotavailable.md)
+- [VideoReaderError.sourceCameraNotAvailable](./sourcecameranotavailable.md)
   An error that indicates that no cameras are available.
-- [VideoReaderError.captureSessionStopped](videoreadererror/capturesessionstopped.md)
+- [VideoReaderError.captureSessionStopped](./capturesessionstopped.md)
   An error that indicates that the capture session stopped.
 
 

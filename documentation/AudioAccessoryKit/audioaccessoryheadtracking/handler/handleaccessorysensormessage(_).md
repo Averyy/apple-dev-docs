@@ -2,6 +2,7 @@
 
 **Framework**: AudioAccessoryKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when a `TransportMessage` arrives from the accessory’s transport extension on the inbound channel.

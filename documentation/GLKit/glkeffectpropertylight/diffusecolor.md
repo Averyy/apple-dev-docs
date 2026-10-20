@@ -1,15 +1,18 @@
 # diffuseColor
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffuse portion of the light.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,11 +20,16 @@ The diffuse portion of the light.
 var diffuseColor: GLKVector4 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GLKVector4 diffuseColor;
+```
+
 ## See Also
 
-- [var ambientColor: GLKVector4](glkeffectpropertylight/ambientcolor.md)
+### Configuring Light Colors
+- [var ambientColor: GLKVector4](./ambientcolor.md)
   The ambient portion of the light.
-- [var specularColor: GLKVector4](glkeffectpropertylight/specularcolor.md)
+- [var specularColor: GLKVector4](./specularcolor.md)
   The specular portion of the light.
 
 

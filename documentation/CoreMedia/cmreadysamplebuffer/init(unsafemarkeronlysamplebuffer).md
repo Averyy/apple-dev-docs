@@ -1,7 +1,8 @@
 # init(unsafeMarkerOnlySampleBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a ready sample buffer with marker content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Create a ready sample buffer with marker content from an existing sample buffer.
 ```swift
 init(unsafeMarkerOnlySampleBuffer unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `Never`.
 
 #### Discussion
 

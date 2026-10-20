@@ -1,7 +1,8 @@
 # AttributedString.Index
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the position of a character or code unit within an attributed string.
 
@@ -23,28 +24,29 @@ struct Index
 ## Topics
 
 ### Initializers
-- [init?<S>(String.Index, within: S)](attributedstring/index/init(_:within:).md)
+- [init?<S>(String.Index, within: S)](./index/init%28_,within%29.md)
 ### Instance Methods
-- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](attributedstring/index/isvalid(within:)-6wjr6.md)
+- [func isValid(within: DiscontiguousAttributedSubstring) -> Bool](./index/isvalid%28within%29-6wjr6.md)
   Indicates whether the index is valid for use with the provided discontiguous attributed string.
-- [func isValid(within: some AttributedStringProtocol) -> Bool](attributedstring/index/isvalid(within:)-8fw50.md)
+- [func isValid(within: some AttributedStringProtocol) -> Bool](./index/isvalid%28within%29-8fw50.md)
   Indicates whether the index is valid for use with the provided attributed string.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](attributedstring/insert(_:at:).md)
+### Modifying an Attributed String
+- [func insert(some AttributedStringProtocol, at: AttributedString.Index)](./insert%28_,at%29.md)
   Inserts the specified string at a specific index in the attributed string.
-- [func removeSubrange(some RangeExpression<AttributedString.Index>)](attributedstring/removesubrange(_:).md)
+- [func removeSubrange(some RangeExpression<AttributedString.Index>)](./removesubrange%28_%29.md)
   Removes a range of characters from the attributed string.
-- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](attributedstring/replacesubrange(_:with:).md)
+- [func replaceSubrange(some RangeExpression<AttributedString.Index>, with: some AttributedStringProtocol)](./replacesubrange%28_,with%29.md)
   Replaces the contents in a range of the attributed string.
 
 

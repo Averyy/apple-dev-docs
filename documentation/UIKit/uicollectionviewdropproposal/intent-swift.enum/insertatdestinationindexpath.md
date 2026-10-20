@@ -1,7 +1,8 @@
 # UICollectionViewDropProposal.Intent.insertAtDestinationIndexPath
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert the dropped items at the specified index path.
 
@@ -15,6 +16,10 @@ Insert the dropped items at the specified index path.
 
 ```swift
 case insertAtDestinationIndexPath
+```
+
+```c
+UICollectionViewDropIntentInsertAtDestinationIndexPath
 ```
 
 

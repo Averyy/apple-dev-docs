@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,13 +23,14 @@ let upstream: Upstream
 
 ## See Also
 
-- [let interval: Context.SchedulerTimeType.Stride](publishers/timeout/interval.md)
+### Inspecting publisher properties
+- [let interval: Context.SchedulerTimeType.Stride](./interval.md)
   The maximum time interval the publisher can go without emitting an element, expressed in the time system of the scheduler.
-- [let scheduler: Context](publishers/timeout/scheduler.md)
+- [let scheduler: Context](./scheduler.md)
   The scheduler on which to deliver events.
-- [let options: Context.SchedulerOptions?](publishers/timeout/options.md)
+- [let options: Context.SchedulerOptions?](./options.md)
   Scheduler options that customize the delivery of elements.
-- [let customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?](publishers/timeout/customerror.md)
+- [let customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?](./customerror.md)
   A closure that executes if the publisher times out. The publisher sends the failure returned by this closure to the subscriber as the reason for termination.
 
 

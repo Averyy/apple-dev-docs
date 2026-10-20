@@ -1,16 +1,21 @@
 # CGWindowLevelKey.tornOffMenuWindow
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case tornOffMenuWindow
+```
+
+```c
+kCGTornOffMenuWindowLevelKey
 ```
 
 #### Discussion
@@ -19,21 +24,22 @@ The level for torn-off menus.
 
 ## See Also
 
-- [CGWindowLevelKey.baseWindow](cgwindowlevelkey/basewindow.md)
-- [CGWindowLevelKey.minimumWindow](cgwindowlevelkey/minimumwindow.md)
-- [CGWindowLevelKey.desktopWindow](cgwindowlevelkey/desktopwindow.md)
-- [CGWindowLevelKey.backstopMenu](cgwindowlevelkey/backstopmenu.md)
-- [CGWindowLevelKey.normalWindow](cgwindowlevelkey/normalwindow.md)
-- [CGWindowLevelKey.floatingWindow](cgwindowlevelkey/floatingwindow.md)
-- [CGWindowLevelKey.dockWindow](cgwindowlevelkey/dockwindow.md)
-- [CGWindowLevelKey.mainMenuWindow](cgwindowlevelkey/mainmenuwindow.md)
-- [CGWindowLevelKey.statusWindow](cgwindowlevelkey/statuswindow.md)
-- [CGWindowLevelKey.modalPanelWindow](cgwindowlevelkey/modalpanelwindow.md)
-- [CGWindowLevelKey.popUpMenuWindow](cgwindowlevelkey/popupmenuwindow.md)
-- [CGWindowLevelKey.draggingWindow](cgwindowlevelkey/draggingwindow.md)
-- [CGWindowLevelKey.screenSaverWindow](cgwindowlevelkey/screensaverwindow.md)
-- [CGWindowLevelKey.maximumWindow](cgwindowlevelkey/maximumwindow.md)
-- [CGWindowLevelKey.overlayWindow](cgwindowlevelkey/overlaywindow.md)
+### Constants
+- [CGWindowLevelKey.baseWindow](./basewindow.md)
+- [CGWindowLevelKey.minimumWindow](./minimumwindow.md)
+- [CGWindowLevelKey.desktopWindow](./desktopwindow.md)
+- [CGWindowLevelKey.backstopMenu](./backstopmenu.md)
+- [CGWindowLevelKey.normalWindow](./normalwindow.md)
+- [CGWindowLevelKey.floatingWindow](./floatingwindow.md)
+- [CGWindowLevelKey.dockWindow](./dockwindow.md)
+- [CGWindowLevelKey.mainMenuWindow](./mainmenuwindow.md)
+- [CGWindowLevelKey.statusWindow](./statuswindow.md)
+- [CGWindowLevelKey.modalPanelWindow](./modalpanelwindow.md)
+- [CGWindowLevelKey.popUpMenuWindow](./popupmenuwindow.md)
+- [CGWindowLevelKey.draggingWindow](./draggingwindow.md)
+- [CGWindowLevelKey.screenSaverWindow](./screensaverwindow.md)
+- [CGWindowLevelKey.maximumWindow](./maximumwindow.md)
+- [CGWindowLevelKey.overlayWindow](./overlaywindow.md)
 
 
 ---

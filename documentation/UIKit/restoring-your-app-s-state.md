@@ -1,6 +1,8 @@
 # Restoring your app’s state
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [RestoringYourAppsState.zip](https://docs-assets.developer.apple.com/published/a9326fb01c82/RestoringYourAppsState.zip)
 
 Provide continuity for the user by preserving current activities.
 
@@ -18,19 +20,19 @@ When using your app, the user performs actions that affect the user interface. F
 
 This sample app demonstrates the use of state preservation and restoration for scenarios where the system interrupts the app. The sample project manages a set of products. Each product has a title, an image, and other metadata you can view and edit. The project shows how to preserve and restore a product in its `DetailParentViewController`.
 
-The sample supports two state preservation approaches. In iOS 13 and later, apps save the state for each window scene using [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) objects. In iOS 12 and earlier, apps preserve the state of their user interfaces by saving and restoring the configuration of view controllers.
+The sample supports two state preservation approaches. In iOS 13 and later, apps save the state for each window scene using [`NSUserActivity`](../Foundation/nsuseractivity.md) objects. In iOS 12 and earlier, apps preserve the state of their user interfaces by saving and restoring the configuration of view controllers.
 
-For scene-based apps, UIKit asks each scene to save its state information using an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object. `NSUserActivity` is a core part of modern state restoration with [`UIScene`](uiscene.md) and [`UISceneDelegate`](uiscenedelegate.md). In your own apps, you use the activity object to store information needed to recreate your scene’s interface and restore the content of that interface. If your app doesn’t support scenes, use the view-controller-based state restoration process to preserve the state of your interface instead.
+For scene-based apps, UIKit asks each scene to save its state information using an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. `NSUserActivity` is a core part of modern state restoration with [`UIScene`](./uiscene.md) and [`UISceneDelegate`](./uiscenedelegate.md). In your own apps, you use the activity object to store information needed to recreate your scene’s interface and restore the content of that interface. If your app doesn’t support scenes, use the view-controller-based state restoration process to preserve the state of your interface instead.
 
-For additional information about state restoration, see  [`Preserving your app’s UI across launches`](preserving-your-app-s-ui-across-launches.md).
+For additional information about state restoration, see  [Preserving your app’s UI across launches](./preserving-your-app-s-ui-across-launches.md).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 In Xcode, select your development team on the iOS target’s General tab.
 
-##### Enable State Preservation and Restoration
+##### Enable state preservation and restoration
 
-To provide the necessary activity object, the sample implements the [`stateRestorationActivity(for:)`](uiscenedelegate/staterestorationactivity(for:).md) method of its scene delegate as shown in the example below. Implementing this method tells the system that the sample supports user-activity-based state restoration. The implementation of this method returns the activity object from the scene’s [`userActivity`](uiresponder/useractivity.md) property, which the sample populates when the scene becomes inactive.
+To provide the necessary activity object, the sample implements the [`stateRestorationActivity(for:)`](./uiscenedelegate/staterestorationactivity%28for%29.md) method of its scene delegate as shown in the example below. Implementing this method tells the system that the sample supports user-activity-based state restoration. The implementation of this method returns the activity object from the scene’s [`userActivity`](./uiresponder/useractivity.md) property, which the sample populates when the scene becomes inactive.
 
 ```swift
 func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? {
@@ -38,7 +40,7 @@ func stateRestorationActivity(for scene: UIScene) -> NSUserActivity? {
 }
 ```
 
-For view-controller-based state restoration, this sample opts in to state preservation and restoration using the app delegate’s [`application(_:shouldSaveApplicationState:)`](uiapplicationdelegate/application(_:shouldsaveapplicationstate:).md) and [`application(_:shouldRestoreApplicationState:)`](uiapplicationdelegate/application(_:shouldrestoreapplicationstate:).md) methods. Both methods return a `Bool` value that indicates whether the step should occur. This sample returns `true` for both functions.
+For view-controller-based state restoration, this sample opts in to state preservation and restoration using the app delegate’s [`application(_:shouldSaveApplicationState:)`](./uiapplicationdelegate/application%28_,shouldsaveapplicationstate%29.md) and [`application(_:shouldRestoreApplicationState:)`](./uiapplicationdelegate/application%28_,shouldrestoreapplicationstate%29.md) methods. Both methods return a `Bool` value that indicates whether the step should occur. This sample returns `true` for both functions.
 
 This example enables the preservation of state for the app:
 
@@ -56,19 +58,19 @@ func application(_ application: UIApplication, shouldRestoreSecureApplicationSta
 }
 ```
 
-##### Restore the App State with an Activity Object
+##### Restore the app state with an activity object
 
-Scene-based state restoration is the recommended way to restore the app’s user interface. An [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object captures the app’s state at the current moment in time. For this sample, the app preserves and restores the product information as the user displays or edits it. The sample app saves the product’s data in an `NSUserActivity` object when the user closes the app or the app enters the background. When the user launches the app again, the sample’s [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) method checks for the presence of an activity object. If one is present, the method configures the detail view controller that the activity object specifies.
+Scene-based state restoration is the recommended way to restore the app’s user interface. An [`NSUserActivity`](../Foundation/nsuseractivity.md) object captures the app’s state at the current moment in time. For this sample, the app preserves and restores the product information as the user displays or edits it. The sample app saves the product’s data in an `NSUserActivity` object when the user closes the app or the app enters the background. When the user launches the app again, the sample’s [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) method checks for the presence of an activity object. If one is present, the method configures the detail view controller that the activity object specifies.
 
-##### Restore the App State Using View Controllers
+##### Restore the app state using view controllers
 
-This sample preserves its state by saving the state of its view controller hierarchy. View controllers adopt the [`UIStateRestoring`](uistaterestoring.md) protocol, which defines methods for saving custom state information to an archive and restoring that information later.
+This sample preserves its state by saving the state of its view controller hierarchy. View controllers adopt the [`UIStateRestoring`](./uistaterestoring.md) protocol, which defines methods for saving custom state information to an archive and restoring that information later.
 
 The sample specifies which of its view controllers to save, and assigns a restoration identifier to that view controller. A restoration identifier is a string that UIKit uses to identify a view controller or other user interface element. The identifier for each view controller must be unique. The sample assigns the identifiers in Interface Builder, but this can also occur in code.
 
 The sample assigns a restoration ID for each view controller in the storyboard file. This information is available by selecting the view controller and looking at the Identity Inspector. The Storyboard ID for that view controller is usually the same as the Restoration ID.
 
-This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](https://developer.apple.com/documentation/appkit/nsresponder/encoderestorablestate(with:)) method, and it restores that state in the [`restoreState(with:)`](https://developer.apple.com/documentation/appkit/nsresponder/restorestate(with:)) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object, the implementations of these methods operate on the existing activity object. The sample then calls the required superclass methods from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
+This sample saves the state information in the detail view controller’s [`encodeRestorableState(with:)`](../AppKit/nsresponder/encoderestorablestate%28with%29.md) method, and it restores that state in the [`restoreState(with:)`](../AppKit/nsresponder/restorestate%28with%29.md) method. Because it already encapsulates the view controller’s state in an [`NSUserActivity`](../Foundation/nsuseractivity.md) object, the implementations of these methods operate on the existing activity object. The sample then calls the required superclass methods from these methods, which allows UIKit to restore the rest of the view controller’s inherited state.
 
 This example enables the state preservation of `InfoViewController`:
 
@@ -94,7 +96,7 @@ override func decodeRestorableState(with coder: NSCoder) {
 }
 ```
 
-##### Test State Restoration on a Device
+##### Test state restoration on a device
 
 This sample restores the following user interface:
 
@@ -106,15 +108,16 @@ When debugging the sample project, the system automatically deletes its preserve
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](../swiftui/restoring-your-app-s-state-with-swiftui.md)
+### Interface restoration
+- [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [Preserving your app’s UI across launches](preserving-your-app-s-ui-across-launches.md)
+- [Preserving your app’s UI across launches](./preserving-your-app-s-ui-across-launches.md)
   Return your app to its previous state after the system terminates it.
-- [protocol UIViewControllerRestoration](uiviewcontrollerrestoration.md)
+- [protocol UIViewControllerRestoration](./uiviewcontrollerrestoration.md)
   The methods that objects adopt so that they can act as a restoration class for view controllers during state restoration.
-- [protocol UIObjectRestoration](uiobjectrestoration.md)
+- [protocol UIObjectRestoration](./uiobjectrestoration.md)
   The interface that restoration classes use to restore preserved objects.
-- [protocol UIStateRestoring](uistaterestoring.md)
+- [protocol UIStateRestoring](./uistaterestoring.md)
   Methods for adding objects to your state restoration archives.
 
 

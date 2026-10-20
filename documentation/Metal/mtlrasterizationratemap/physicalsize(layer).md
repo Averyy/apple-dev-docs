@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the dimensions, in pixels, of the area in the render target affected by the rasterization rate map.
@@ -20,9 +21,13 @@ Returns the dimensions, in pixels, of the area in the render target affected by 
 func physicalSize(layer layerIndex: Int) -> MTLSize
 ```
 
+```objc
+- (MTLSize) physicalSizeForLayer:(NSUInteger) layerIndex;
+```
+
 ## Mentions
 
-- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](../rendering-with-a-rasterization-rate-map.md)
 
 #### Return Value
 
@@ -38,11 +43,12 @@ Your render targets should be at least as large as the physical size returned by
 
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemap/layercount.md)
+### Inspecting geometric and rendering properties
+- [var layerCount: Int](./layercount.md)
   The number of layers in the rate map.
-- [var screenSize: MTLSize](mtlrasterizationratemap/screensize.md)
+- [var screenSize: MTLSize](./screensize.md)
   The logical size, in pixels, of the viewport coordinate system.
-- [var physicalGranularity: MTLSize](mtlrasterizationratemap/physicalgranularity.md)
+- [var physicalGranularity: MTLSize](./physicalgranularity.md)
   The granularity, in physical pixels, at which the rasterization rate varies.
 
 

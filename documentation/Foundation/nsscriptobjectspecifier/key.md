@@ -1,7 +1,8 @@
 # key
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the key of the receiver.
 
@@ -15,13 +16,18 @@ Sets the key of the receiver.
 var key: String { get set }
 ```
 
+```objc
+@property (copy) NSString * key;
+```
+
 ## Parameters
 
 - `key`: The key for the receiver.
 
 ## See Also
 
-- [var keyClassDescription: NSScriptClassDescription?](nsscriptobjectspecifier/keyclassdescription.md)
+### Getting and setting object keys
+- [var keyClassDescription: NSScriptClassDescription?](./keyclassdescription.md)
   Returns the class description of the objects specified by the receiver.
 
 

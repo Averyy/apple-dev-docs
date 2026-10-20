@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invokes the action specified by the given selector.
@@ -15,6 +16,10 @@ Invokes the action specified by the given selector.
 func doCommand(by selector: Selector)
 ```
 
+```objc
+- (void) doCommandBySelector:(SEL) selector;
+```
+
 #### Discussion
 
 If `selector` cannot be invoked, then `doCommandBySelector:` should not pass this message up the responder chain. `NSResponder` also implements this method, and it does forward uninvokable commands up the responder chain, but a text view should not. A text view implementing the `NSTextInputClient` protocol inherits from `NSView`, which inherits from `NSResponder`, so your implementation of this method will override the one in `NSResponder`. It should not call `super`.
@@ -25,7 +30,8 @@ If `selector` cannot be invoked, then `doCommandBySelector:` should not pass thi
 
 ## See Also
 
-- [func interpretKeyEvents([NSEvent])](nsresponder/interpretkeyevents(_:).md)
+### Related Documentation
+- [func interpretKeyEvents([NSEvent])](../nsresponder/interpretkeyevents%28_%29.md)
   Handles a series of key events.
 
 

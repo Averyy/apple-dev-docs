@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.rotateZ
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rotation around the Z axis.
 

@@ -1,7 +1,8 @@
 # JournalingSuggestion.MotionActivity.MovementType
 
 **Framework**: Journaling Suggestions  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The movement activity type that the phone records when it detects motion.
 
@@ -17,26 +18,27 @@ struct MovementType
 ## Topics
 
 ### Recording movement type
-- [static let running: JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct/running.md)
+- [static let running: JournalingSuggestion.MotionActivity.MovementType](./movementtype-swift.struct/running.md)
   A running movement activity type.
-- [static let runningWalking: JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct/runningwalking.md)
+- [static let runningWalking: JournalingSuggestion.MotionActivity.MovementType](./movementtype-swift.struct/runningwalking.md)
   A mixed running and walking movement activity type.
-- [static let walking: JournalingSuggestion.MotionActivity.MovementType](journalingsuggestion/motionactivity/movementtype-swift.struct/walking.md)
+- [static let walking: JournalingSuggestion.MotionActivity.MovementType](./movementtype-swift.struct/walking.md)
   A walking movement activity type.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var steps: Int](journalingsuggestion/motionactivity/steps.md)
+### Inspecting motion details
+- [var steps: Int](./steps.md)
   The number of steps a person takes.
-- [var movementType: JournalingSuggestion.MotionActivity.MovementType?](journalingsuggestion/motionactivity/movementtype-swift.property.md)
+- [var movementType: JournalingSuggestion.MotionActivity.MovementType?](./movementtype-swift.property.md)
   The specific type of movement associated with the activity.
 
 

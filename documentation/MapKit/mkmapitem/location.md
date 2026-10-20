@@ -1,7 +1,8 @@
 # location
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location object.
 
@@ -18,6 +19,10 @@ The location object.
 
 ```swift
 var location: CLLocation { get }
+```
+
+```objc
+@property (nonatomic, readonly) CLLocation * location;
 ```
 
 

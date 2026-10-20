@@ -1,7 +1,8 @@
 # launchURL(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func launchURL(with params: MTRContentLauncherClusterLaunchURLParams, completion: @escaping @Sendable (MTRContentLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func launchURL(with params: MTRContentLauncherClusterLaunchURLParams) async throws -> MTRContentLauncherClusterLauncherResponseParams
+```
+
+```objc
+- (void) launchURLWithParams:(MTRContentLauncherClusterLaunchURLParams *) params completion:(void (^)(MTRContentLauncherClusterLauncherResponseParams *data, NSError *error)) completion;
 ```
 
 

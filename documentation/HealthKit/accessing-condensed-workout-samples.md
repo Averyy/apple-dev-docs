@@ -1,20 +1,21 @@
 # Accessing condensed workout samples
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Read series data from condensed workouts.
 
 #### Overview
 
-To reduce the size of workout data, HealthKit can condense system generated samples associated with first party workouts. HealthKit enumerates the data associated with a workout and adds that data to one or more quantity series samples. After saving all the data to series objects, HealthKit deletes the originals. In addition, it converts older [`HKQuantitySample`](hkquantitysample.md) objects to [`HKCumulativeQuantitySample`](hkcumulativequantitysample.md) or [`HKDiscreteQuantitySample`](hkdiscretequantitysample.md) objects.
+To reduce the size of workout data, HealthKit can condense system generated samples associated with first party workouts. HealthKit enumerates the data associated with a workout and adds that data to one or more quantity series samples. After saving all the data to series objects, HealthKit deletes the originals. In addition, it converts older [`HKQuantitySample`](./hkquantitysample.md) objects to [`HKCumulativeQuantitySample`](./hkcumulativequantitysample.md) or [`HKDiscreteQuantitySample`](./hkdiscretequantitysample.md) objects.
 
 HealthKit condenses high-frequency first party workout data. This includes, but it’s not limited to, the following data types:
 
-- [`distanceWalkingRunning`](hkquantitytypeidentifier/distancewalkingrunning.md)
-- [`distanceCycling`](hkquantitytypeidentifier/distancecycling.md)
-- [`basalEnergyBurned`](hkquantitytypeidentifier/basalenergyburned.md)
-- [`activeEnergyBurned`](hkquantitytypeidentifier/activeenergyburned.md)
-- [`heartRate`](hkquantitytypeidentifier/heartrate.md)
+- [`distanceWalkingRunning`](./hkquantitytypeidentifier/distancewalkingrunning.md)
+- [`distanceCycling`](./hkquantitytypeidentifier/distancecycling.md)
+- [`basalEnergyBurned`](./hkquantitytypeidentifier/basalenergyburned.md)
+- [`activeEnergyBurned`](./hkquantitytypeidentifier/activeenergyburned.md)
+- [`heartRate`](./hkquantitytypeidentifier/heartrate.md)
 
 For these data types, HealthKit condenses samples associated with a workout that’s at least a few months old and has a duration of at least a few minutes. HealthKit may condense samples for a given workout more than once. For example, if the system syncs new samples associated with the workout to the phone, or if the condenser algorithm changes, HealthKit may condense the workout again.
 
@@ -22,19 +23,19 @@ HealthKit merges quantities within each series to save space and improve query p
 
 In the example below, several energy samples are consecutive in time, and the rates (calories per time unit) of these samples are identical. Thus, instead of storing five quantities in series, HealthKit combines all these into one. Since the rate over time is the same, coalescing doesn’t alter the results of statistics.
 
-![A diagram showing how HealthKit combines five quanties of calories into one. The first four units are ninety calories, and the last unit on the right is 180. All the units combine to total 540 calories.](/images/com.apple.healthkit/healthkit-workouts-1@2x.png)
+![A diagram showing how HealthKit combines five quanties of calories into one. The first four units are ninety calories, and the last unit on the right is 180. All the units combine to total 540 calories.](https://developer.apple.com/tutorials/images/com.apple.healthkit/healthkit-workouts-1@2x.png)
 
 For heart rate samples associated with first-party workouts, HealthKit coalesces quantities that have the same value and occurred close together. When coalescing, HealthKit replaces the quantities, which are instantaneous in time, with a new quantity that’s the original value and a continuous interval that spans the combined timespan.
 
 In the example below, HealthKit merges consecutive heart rate samples that have the same value and aren’t far apart. Merging instantaneous heart rate quantities results in a continuous interval. HealthKit does this to preserve statistics.
 
-![A diagram showing HealthKit merging consecutive heart rate samples that have the same value at different segments of time. The four heart rate samples, collected every five minutes, are all 80 BPM. An arrow points downward to a heart rate sample of 80 BPM.](/images/com.apple.healthkit/healthkit-workouts-2@2x.png)
+![A diagram showing HealthKit merging consecutive heart rate samples that have the same value at different segments of time. The four heart rate samples, collected every five minutes, are all 80 BPM. An arrow points downward to a heart rate sample of 80 BPM.](https://developer.apple.com/tutorials/images/com.apple.healthkit/healthkit-workouts-2@2x.png)
 
 The condensing and coalescing processes preserve all the data from the original workout and reduce the overhead needed to save that data to disk. However, your app may need to perform additional steps to read the condensed and coalesced data.
 
-##### Query High Frequency Data From a Condensed Workout
+##### Query high-frequency data from a condensed workout
 
-Because HealthKit condenses and coalesces older workout data, any samples associated with a workout may actually represent a series of higher-frequency data. In many cases, you don’t need to operate on the [`HKSample`](hksample.md) instances or the backing quantity series data. Instead, you should use [`HKStatisticsQuery`](hkstatisticsquery.md) and [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) to transparently compute statistics for the underlying data.
+Because HealthKit condenses and coalesces older workout data, any samples associated with a workout may actually represent a series of higher-frequency data. In many cases, you don’t need to operate on the [`HKSample`](./hksample.md) instances or the backing quantity series data. Instead, you should use [`HKStatisticsQuery`](./hkstatisticsquery.md) and [`HKStatisticsCollectionQuery`](./hkstatisticscollectionquery.md) to transparently compute statistics for the underlying data.
 
 However, if your app needs to access the underlying data directly, start by querying for all the samples associated with a workout:
 
@@ -57,7 +58,7 @@ let heartRateQuery = HKSampleQuery(queryDescriptors: [heartRateDescriptor],
 myStore.execute(heartRateQuery)
 ```
 
-Then, in the query’s results handler, if a sample has a [`count`](hkquantitysample/count.md) greater than 1, it contains series data.
+Then, in the query’s results handler, if a sample has a [`count`](./hkquantitysample/count.md) greater than 1, it contains series data.
 
 ```swift
 // Create the query.
@@ -94,7 +95,7 @@ let heartRateQuery = HKSampleQuery(queryDescriptors: [heartRateDescriptor],
 
 ```
 
-Use an [`HKQuantitySeriesSampleQuery`](hkquantityseriessamplequery.md) to access the detailed data from the series.
+Use an [`HKQuantitySeriesSampleQuery`](./hkquantityseriessamplequery.md) to access the detailed data from the series.
 
 ```swift
 // Create the predicate.
@@ -119,25 +120,26 @@ myStore.execute(detailQuery)
 
 ## See Also
 
-- [Adding samples to a workout](adding-samples-to-a-workout.md)
+### Samples
+- [Adding samples to a workout](./adding-samples-to-a-workout.md)
   Create associated samples that add details to a workout.
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
   Partition multisport and interval workouts into activities that represent the different parts of the workout.
-- [class HKWorkout](hkworkout.md)
+- [class HKWorkout](./hkworkout.md)
   A workout sample that stores information about a single physical activity.
-- [class HKWorkoutActivity](hkworkoutactivity.md)
+- [class HKWorkoutActivity](./hkworkoutactivity.md)
   An object that describes an activity within a longer workout.
-- [class HKWorkoutBuilder](hkworkoutbuilder.md)
+- [class HKWorkoutBuilder](./hkworkoutbuilder.md)
   A builder object that incrementally constructs a workout.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [let HKWorkoutTypeIdentifier: String](hkworkouttypeidentifier.md)
+- [let HKWorkoutTypeIdentifier: String](./hkworkouttypeidentifier.md)
   The workout type identifier.
-- [enum HKWorkoutActivityType](hkworkoutactivitytype.md)
+- [enum HKWorkoutActivityType](./hkworkoutactivitytype.md)
   The type of activity performed during a workout.
-- [enum HKWorkoutSessionType](hkworkoutsessiontype.md)
+- [enum HKWorkoutSessionType](./hkworkoutsessiontype.md)
   The type of session.
-- [class HKWorkoutEvent](hkworkoutevent.md)
+- [class HKWorkoutEvent](./hkworkoutevent.md)
   An object representing an important event during a workout.
 
 

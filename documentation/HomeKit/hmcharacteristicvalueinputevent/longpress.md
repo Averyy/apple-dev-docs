@@ -1,7 +1,8 @@
 # HMCharacteristicValueInputEvent.longPress
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The programmable switch detected a long press event.
 
@@ -19,11 +20,16 @@ The programmable switch detected a long press event.
 case longPress
 ```
 
+```c
+HMCharacteristicValueInputEventLongPress
+```
+
 ## See Also
 
-- [HMCharacteristicValueInputEvent.singlePress](hmcharacteristicvalueinputevent/singlepress.md)
+### Input Events
+- [HMCharacteristicValueInputEvent.singlePress](./singlepress.md)
   The programmable switch detected a single press event.
-- [HMCharacteristicValueInputEvent.doublePress](hmcharacteristicvalueinputevent/doublepress.md)
+- [HMCharacteristicValueInputEvent.doublePress](./doublepress.md)
   The programmable switch detected a double press event.
 
 

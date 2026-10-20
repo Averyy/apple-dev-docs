@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rpc_signature {
     ...
 };
@@ -17,8 +17,8 @@ struct rpc_signature {
 ## Topics
 
 ### Instance Properties
-- [rad](rpc_signature/1459705-rad.md)
-- [rd](rpc_signature/1459683-rd.md)
+- [rad](./rpc_signature/api-1459705-rad.md)
+- [rd](./rpc_signature/api-1459683-rd.md)
 
 
 ---

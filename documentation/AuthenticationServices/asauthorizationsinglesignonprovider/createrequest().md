@@ -1,7 +1,8 @@
 # createRequest()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a single sign-on (SSO) authorization request.
 
@@ -18,17 +19,22 @@ Creates a single sign-on (SSO) authorization request.
 func createRequest() -> ASAuthorizationSingleSignOnRequest
 ```
 
+```objc
+- (ASAuthorizationSingleSignOnRequest *) createRequest;
+```
+
 #### Return Value
 
 A single sign-on (SSO) authorization request.
 
 ## See Also
 
-- [var canPerformAuthorization: Bool](asauthorizationsinglesignonprovider/canperformauthorization.md)
+### Creating Authorization Requests
+- [var canPerformAuthorization: Bool](./canperformauthorization.md)
   A Boolean value that indicates if the provider is capable of performing authorization within a given configuration.
-- [class ASAuthorizationSingleSignOnRequest](asauthorizationsinglesignonrequest.md)
+- [class ASAuthorizationSingleSignOnRequest](../asauthorizationsinglesignonrequest.md)
   An OpenID authorization request that provides single sign-on (SSO) functionality.
-- [class ASAuthorizationOpenIDRequest](asauthorizationopenidrequest.md)
+- [class ASAuthorizationOpenIDRequest](../asauthorizationopenidrequest.md)
   An OpenID authorization request.
 
 

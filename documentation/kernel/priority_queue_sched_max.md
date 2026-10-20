@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct priority_queue_sched_max {
     ...
 };
@@ -17,7 +17,7 @@ struct priority_queue_sched_max {
 ## Topics
 
 ### Instance Properties
-- [pq_root](priority_queue_sched_max/3553541-pq_root.md)
+- [pq_root](./priority_queue_sched_max/api-3553541-pq_root.md)
 
 
 ---

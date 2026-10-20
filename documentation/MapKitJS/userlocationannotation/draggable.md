@@ -1,7 +1,8 @@
 # draggable
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether someone can drag the the user location annotation.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether someone can drag the the user location an
 
 ## Declaration
 
-```swift
+```
 get draggable(): boolean;
 set draggable(_: boolean);
 ```

@@ -1,7 +1,8 @@
 # destinationPixelBufferAttributes
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 
@@ -19,23 +20,28 @@ Pixel buffer attributes dictionary that describes requirements for pixel buffers
 var destinationPixelBufferAttributes: [String : any Sendable] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * destinationPixelBufferAttributes;
+```
+
 #### Discussion
 
 Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary with your pixel buffer attributes dictionary.
 
 ## See Also
 
-- [var frameWidth: Int](vtlowlatencyframeinterpolationconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frames in pixels.
-- [var frameHeight: Int](vtlowlatencyframeinterpolationconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frames in pixels.
-- [var numberOfInterpolatedFrames: Int](vtlowlatencyframeinterpolationconfiguration/numberofinterpolatedframes.md)
+- [var numberOfInterpolatedFrames: Int](./numberofinterpolatedframes.md)
   Number of uniformly spaced frames for which you configured the processor.
-- [var spatialScaleFactor: Int](vtlowlatencyframeinterpolationconfiguration/spatialscalefactor.md)
+- [var spatialScaleFactor: Int](./spatialscalefactor.md)
   Configured spatial scale factor as an integer.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var supportedPixelFormats: [OSType]](vtlowlatencyframeinterpolationconfiguration/supportedpixelformats.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 
 
 ---

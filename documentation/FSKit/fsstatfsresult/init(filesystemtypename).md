@@ -1,7 +1,8 @@
 # init(fileSystemTypeName:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an statistics result instance, using the given file system type name.
 
@@ -12,6 +13,10 @@ Creates an statistics result instance, using the given file system type name.
 
 ```swift
 init(fileSystemTypeName: String)
+```
+
+```objc
+- (instancetype) initWithFileSystemTypeName:(NSString *) fileSystemTypeName;
 ```
 
 

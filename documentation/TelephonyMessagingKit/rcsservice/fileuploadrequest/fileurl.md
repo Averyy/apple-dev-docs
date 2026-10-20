@@ -1,7 +1,8 @@
 # fileURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the file to upload.
 
@@ -16,13 +17,14 @@ var fileURL: URL
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/fileuploadrequest/cellularserviceid.md)
+### Accessing upload request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   The service identifier associated with this request.
-- [var contentType: UTType?](rcsservice/fileuploadrequest/contenttype.md)
+- [var contentType: UTType?](./contenttype.md)
   The content type of the file.
-- [var thumbnailURL: URL?](rcsservice/fileuploadrequest/thumbnailurl.md)
+- [var thumbnailURL: URL?](./thumbnailurl.md)
   An optional file URL for a thumbnail image.
-- [var thumbnailContentType: UTType?](rcsservice/fileuploadrequest/thumbnailcontenttype.md)
+- [var thumbnailContentType: UTType?](./thumbnailcontenttype.md)
   The content type of the thumbnail.
 
 

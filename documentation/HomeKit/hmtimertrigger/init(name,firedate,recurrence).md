@@ -1,7 +1,8 @@
 # init(name:fireDate:recurrence:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -15,6 +16,10 @@
 
 ```swift
 init(name: String, fireDate: Date, recurrence: DateComponents?)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name fireDate:(NSDate *) fireDate recurrence:(NSDateComponents *) recurrence;
 ```
 
 

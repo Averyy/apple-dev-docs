@@ -1,12 +1,13 @@
 # validateUserInterfaceItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a given user interface item should be enabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether a given user interface item shoul
 func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `item` should be enabled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `item` should be enabled, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -25,7 +30,7 @@ Subclasses can override this method to perform additional validations. Subclasse
 
 ## Parameters
 
-- `item`: The user interface item to validate. You can send `anItem` the [`action`](nsvalidateduserinterfaceitem/action.md) and [`tag`](nsvalidateduserinterfaceitem/tag.md) messages.
+- `item`: The user interface item to validate. You can send `anItem` the [`action`](../nsvalidateduserinterfaceitem/action.md) and [`tag`](../nsvalidateduserinterfaceitem/tag.md) messages.
 
 
 ---

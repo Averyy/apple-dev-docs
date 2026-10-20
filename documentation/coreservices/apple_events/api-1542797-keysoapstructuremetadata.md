@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var keySOAPSMDNamespace: AEKeyword](keysoapsmdnamespace.md)
-- [var keySOAPSMDNamespaceURI: AEKeyword](keysoapsmdnamespaceuri.md)
-- [var keySOAPSMDType: AEKeyword](keysoapsmdtype.md)
-- [var keySOAPStructureMetaData: AEKeyword](keysoapstructuremetadata.md)
+- [var keySOAPSMDNamespace: AEKeyword](../keysoapsmdnamespace.md)
+- [var keySOAPSMDNamespaceURI: AEKeyword](../keysoapsmdnamespaceuri.md)
+- [var keySOAPSMDType: AEKeyword](../keysoapsmdtype.md)
+- [var keySOAPStructureMetaData: AEKeyword](../keysoapstructuremetadata.md)
 
 
 ---

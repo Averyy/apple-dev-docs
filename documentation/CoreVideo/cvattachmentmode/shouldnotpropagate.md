@@ -1,7 +1,8 @@
 # CVAttachmentMode.shouldNotPropagate
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates to not propagate the attachment.
 
@@ -20,9 +21,14 @@ Indicates to not propagate the attachment.
 case shouldNotPropagate
 ```
 
+```c
+kCVAttachmentMode_ShouldNotPropagate
+```
+
 ## See Also
 
-- [CVAttachmentMode.shouldPropagate](cvattachmentmode/shouldpropagate.md)
+### Constants
+- [CVAttachmentMode.shouldPropagate](./shouldpropagate.md)
   Indicates to copy the attachment.
 
 

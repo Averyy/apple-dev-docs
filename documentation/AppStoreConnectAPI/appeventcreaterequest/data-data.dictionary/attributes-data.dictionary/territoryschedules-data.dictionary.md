@@ -1,7 +1,8 @@
 # AppEventCreateRequest.Data.Attributes.TerritorySchedules
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The per-territory schedule attributes within an app event create request, specifying the start, end, publish dates, and targeted territories.
 
@@ -10,7 +11,7 @@ The per-territory schedule attributes within an app event create request, specif
 
 ## Declaration
 
-```swift
+```
 object AppEventCreateRequest.Data.Attributes.TerritorySchedules
 ```
 

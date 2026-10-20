@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct iovec {
     ...
 };
@@ -17,8 +17,8 @@ struct iovec {
 ## Topics
 
 ### Instance Properties
-- [iov_base](iovec/1569537-iov_base.md)
-- [iov_len](iovec/1569535-iov_len.md)
+- [iov_base](./iovec/api-1569537-iov_base.md)
+- [iov_len](./iovec/api-1569535-iov_len.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # kCMSimpleQueueError_RequiredParameterMissing
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 You failed to pass a required parameter to a function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ You failed to pass a required parameter to a function.
 var kCMSimpleQueueError_RequiredParameterMissing: OSStatus { get }
 ```
 
+```c
+kCMSimpleQueueError_RequiredParameterMissing
+```
+
 ## See Also
 
-- [var kCMSimpleQueueError_AllocationFailed: OSStatus](kcmsimplequeueerror_allocationfailed.md)
+### Constants
+- [var kCMSimpleQueueError_AllocationFailed: OSStatus](./kcmsimplequeueerror_allocationfailed.md)
   The system failed to allocate memory.
-- [var kCMSimpleQueueError_QueueIsFull: OSStatus](kcmsimplequeueerror_queueisfull.md)
+- [var kCMSimpleQueueError_QueueIsFull: OSStatus](./kcmsimplequeueerror_queueisfull.md)
   An operation failed because the queue is full.
-- [var kCMSimpleQueueError_ParameterOutOfRange: OSStatus](kcmsimplequeueerror_parameteroutofrange.md)
+- [var kCMSimpleQueueError_ParameterOutOfRange: OSStatus](./kcmsimplequeueerror_parameteroutofrange.md)
   You passed a parameter to a function that’s outside the range of allowed values.
 
 

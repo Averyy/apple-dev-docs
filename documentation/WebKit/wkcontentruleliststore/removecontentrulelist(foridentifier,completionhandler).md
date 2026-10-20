@@ -1,7 +1,8 @@
 # removeContentRuleList(forIdentifier:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a rule list from the current data store asynchronously.
 
@@ -15,7 +16,15 @@ Removes a rule list from the current data store asynchronously.
 ## Declaration
 
 ```swift
+func removeContentRuleList(forIdentifier identifier: String!, completionHandler: (((any Error)?) -> Void)!)
+```
+
+```swift
 func removeContentRuleList(forIdentifier identifier: String!) async throws
+```
+
+```objc
+- (void) removeContentRuleListForIdentifier:(NSString *) identifier completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -25,11 +34,14 @@ This method also removes the persistent copy of the rules stored on disk.
 ## Parameters
 
 - `identifier`: The unique identifier for the rule list.
-- `completionHandler`: A completion handler block to call after the removal of the content rule list. This block has no return value and takes the following parameter: - **error**: `nil` on success, or an error object if the store encountered an error when deleting the rule list.
+- `completionHandler`: A completion handler block to call after the removal of the content rule list. This block has no return value and takes the following parameter:
+
+  - **error**: `nil` on success, or an error object if the store encountered an error when deleting the rule list.
 
 ## See Also
 
-- [func compileContentRuleList(forIdentifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](wkcontentruleliststore/compilecontentrulelist(foridentifier:encodedcontentrulelist:completionhandler:).md)
+### Creating and Deleting Content Rule Lists
+- [func compileContentRuleList(forIdentifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](./compilecontentrulelist%28foridentifier,encodedcontentrulelist,completionhandler%29.md)
   Compiles the specified JSON content into a new rule list and adds it to the current data store.
 
 

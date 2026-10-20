@@ -1,7 +1,8 @@
 # errSecAttachHandleBusy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The CSP handle was busy.
 
@@ -18,6 +19,10 @@ The CSP handle was busy.
 
 ```swift
 var errSecAttachHandleBusy: OSStatus { get }
+```
+
+```c
+errSecAttachHandleBusy
 ```
 
 

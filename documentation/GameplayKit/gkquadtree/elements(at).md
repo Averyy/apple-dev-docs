@@ -1,7 +1,8 @@
 # elements(at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all objects whose corresponding locations overlap the specified point.
 
@@ -19,13 +20,17 @@ Returns all objects whose corresponding locations overlap the specified point.
 func elements(at point: vector_float2) -> [ElementType]
 ```
 
+```objc
+- (NSArray<NSObject *> *) elementsAtPoint:(vector_float2) point;
+```
+
 #### Return Value
 
 An array of all matching elements, or an empty array if no objects are found.
 
 #### Discussion
 
-You specify the point or region corresponding to an object when you add it to the tree with the [`add(_:at:)`](gkquadtree/add(_:at:).md) or [`add(_:in:)`](gkquadtree/add(_:in:).md) method. This method follows the same path down the tree as the two `addElement` methods, but instead of adding a new object to the tree, returns the list of all objects stored in the tree node corresponding to the specified point.
+You specify the point or region corresponding to an object when you add it to the tree with the [`add(_:at:)`](./add%28_,at%29.md) or [`add(_:in:)`](./add%28_,in%29.md) method. This method follows the same path down the tree as the two `addElement` methods, but instead of adding a new object to the tree, returns the list of all objects stored in the tree node corresponding to the specified point.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ You specify the point or region corresponding to an object when you add it to th
 
 ## See Also
 
-- [func elements(in: GKQuad) -> [ElementType]](gkquadtree/elements(in:).md)
+### Searching for Elements
+- [func elements(in: GKQuad) -> [ElementType]](./elements%28in%29.md)
   Returns all objects whose corresponding locations overlap the specified region.
 
 

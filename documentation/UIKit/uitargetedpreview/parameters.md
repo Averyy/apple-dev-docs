@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional parameters to use when configuring the animations.
 
@@ -19,13 +20,18 @@ Additional parameters to use when configuring the animations.
 var parameters: UIPreviewParameters { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UIPreviewParameters * parameters;
+```
+
 ## See Also
 
-- [var view: UIView](uitargetedpreview/view.md)
+### Getting the preview attributes
+- [var view: UIView](./view.md)
   The view that’s the target of the animation.
-- [var target: UIPreviewTarget](uitargetedpreview/target.md)
+- [var target: UIPreviewTarget](./target.md)
   The container for the target view.
-- [var size: CGSize](uitargetedpreview/size.md)
+- [var size: CGSize](./size.md)
   The size of the view.
 
 

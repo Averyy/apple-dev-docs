@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Unmarks the currently marked text.
@@ -18,13 +19,18 @@ Unmarks the currently marked text.
 func unmarkText()
 ```
 
+```objc
+- (void) unmarkText;
+```
+
 ## See Also
 
-- [var hasMarkedText: Bool](betextinput/hasmarkedtext.md)
+### Managing marked text
+- [var hasMarkedText: Bool](./hasmarkedtext.md)
   A Boolean value that indicates if marked text exists for an active input session.
-- [var markedTextRange: UITextRange?](betextinput/markedtextrange.md)
+- [var markedTextRange: UITextRange?](./markedtextrange.md)
   A range that represents the position of the marked text.
-- [func isPointNearMarkedText(CGPoint) -> Bool](betextinput/ispointnearmarkedtext(_:).md)
+- [func isPointNearMarkedText(CGPoint) -> Bool](./ispointnearmarkedtext%28_%29.md)
   Provides a Boolean value that indicates if a point is near marked text.
 
 

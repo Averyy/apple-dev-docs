@@ -1,18 +1,19 @@
 # perform(_:with:afterDelay:inModes:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes a method of the receiver on the current thread using the specified modes after a delay.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,45 +21,51 @@ Invokes a method of the receiver on the current thread using the specified modes
 func perform(_ aSelector: Selector, with anArgument: Any?, afterDelay delay: TimeInterval, inModes modes: [RunLoop.Mode])
 ```
 
+```objc
+- (void) performSelector:(SEL) aSelector withObject:(id) anArgument afterDelay:(NSTimeInterval) delay inModes:(NSArray<NSString *> *) modes;
+```
+
 #### Discussion
 
 This method sets up a timer to perform the `aSelector` message on the current thread’s run loop. The timer is configured to run in the modes specified by the `modes` parameter. When the timer fires, the thread attempts to dequeue the message from the run loop and perform the selector. It succeeds if the run loop is running and in one of the specified modes; otherwise, the timer waits until the run loop is in one of those modes.
 
-If you want the message to be dequeued when the run loop is in a mode other than the default mode, use the [`perform(_:with:afterDelay:inModes:)`](nsobject-swift.class/perform(_:with:afterdelay:inmodes:).md) method instead. If you are not sure whether the current thread is the main thread, you can use the [`performSelector(onMainThread:with:waitUntilDone:)`](nsobject-swift.class/performselector(onmainthread:with:waituntildone:).md) or [`performSelector(onMainThread:with:waitUntilDone:modes:)`](nsobject-swift.class/performselector(onmainthread:with:waituntildone:modes:).md) method to guarantee that your selector executes on the main thread. To cancel a queued message, use the [`cancelPreviousPerformRequests(withTarget:)`](nsobject-swift.class/cancelpreviousperformrequests(withtarget:).md) or [`cancelPreviousPerformRequests(withTarget:selector:object:)`](nsobject-swift.class/cancelpreviousperformrequests(withtarget:selector:object:).md) method.
+If you want the message to be dequeued when the run loop is in a mode other than the default mode, use the [`perform(_:with:afterDelay:inModes:)`](./perform%28_,with,afterdelay,inmodes%29.md) method instead. If you are not sure whether the current thread is the main thread, you can use the [`performSelector(onMainThread:with:waitUntilDone:)`](./performselector%28onmainthread,with,waituntildone%29.md) or [`performSelector(onMainThread:with:waitUntilDone:modes:)`](./performselector%28onmainthread,with,waituntildone,modes%29.md) method to guarantee that your selector executes on the main thread. To cancel a queued message, use the [`cancelPreviousPerformRequests(withTarget:)`](./cancelpreviousperformrequests%28withtarget%29.md) or [`cancelPreviousPerformRequests(withTarget:selector:object:)`](./cancelpreviousperformrequests%28withtarget,selector,object%29.md) method.
 
 ##### Special Considerations
 
-This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](https://developer.apple.com/documentation/dispatch/dispatch_after) and related methods to get the behavior you want.
+This method registers with the runloop of its current context, and depends on that runloop being run on a regular basis to perform correctly. One common context where you might call this method and end up registering with a runloop that is not automatically run on a regular basis is when being invoked by a dispatch queue. If you need this type of functionality when running on a dispatch queue, you should use [`dispatch_after`](../../Dispatch/dispatch_after.md) and related methods to get the behavior you want.
 
 ## Parameters
 
-- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
+- `aSelector`: A [Selector](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) that identifies the method to invoke. The method should not have a significant return value and should take a single argument of type id, or no arguments.
 - `anArgument`: The argument to pass to the method when it is invoked. Pass `nil` if the method does not take an argument.
 - `delay`: The minimum time before which the message is sent. Specifying a delay of 0 does not necessarily cause the selector to be performed immediately. The selector is still queued on the thread’s run loop and performed as soon as possible.
-- `modes`: An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see [`Run Loops`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16) in [`Threading Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
+- `modes`: An array of strings that identify the modes to associate with the timer that performs the selector. This array must contain at least one string. If you specify `nil` or an empty array for this parameter, this method returns without performing the specified selector. For information about run loop modes, see [Run Loops](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html#//apple_ref/doc/uid/10000057i-CH16) in [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
 
 ## See Also
 
-- [func invalidate()](../foundation/timer/invalidate.md)
+### Related Documentation
+- [func invalidate()](../../Foundation/timer/invalidate%28%29.md)
   Stops the timer from ever firing again and requests its removal from its run loop.
-- [func add(Timer, forMode: RunLoop.Mode)](../foundation/runloop/add(_:formode:)-392ag.md)
+- [func add(Timer, forMode: RunLoop.Mode)](../../Foundation/runloop/add%28_,formode%29-392ag.md)
   Registers a given timer with a given input mode.
-- [func perform(Selector, with: Any?, afterDelay: TimeInterval)](nsobject-swift.class/perform(_:with:afterdelay:).md)
+### Sending Messages
+- [func perform(Selector, with: Any?, afterDelay: TimeInterval)](./perform%28_,with,afterdelay%29.md)
   Invokes a method of the receiver on the current thread using the default mode after a delay.
-- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool)](nsobject-swift.class/performselector(onmainthread:with:waituntildone:).md)
+- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool)](./performselector%28onmainthread,with,waituntildone%29.md)
   Invokes a method of the receiver on the main thread using the default mode.
-- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool, modes: [String]?)](nsobject-swift.class/performselector(onmainthread:with:waituntildone:modes:).md)
+- [func performSelector(onMainThread: Selector, with: Any?, waitUntilDone: Bool, modes: [String]?)](./performselector%28onmainthread,with,waituntildone,modes%29.md)
   Invokes a method of the receiver on the main thread using the specified modes.
-- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool)](nsobject-swift.class/perform(_:on:with:waituntildone:).md)
+- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool)](./perform%28_,on,with,waituntildone%29.md)
   Invokes a method of the receiver on the specified thread using the default mode.
-- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool, modes: [String]?)](nsobject-swift.class/perform(_:on:with:waituntildone:modes:).md)
+- [func perform(Selector, on: Thread, with: Any?, waitUntilDone: Bool, modes: [String]?)](./perform%28_,on,with,waituntildone,modes%29.md)
   Invokes a method of the receiver on the specified thread using the specified modes.
-- [func performSelector(inBackground: Selector, with: Any?)](nsobject-swift.class/performselector(inbackground:with:).md)
+- [func performSelector(inBackground: Selector, with: Any?)](./performselector%28inbackground,with%29.md)
   Invokes a method of the receiver on a new background thread.
-- [class func cancelPreviousPerformRequests(withTarget: Any)](nsobject-swift.class/cancelpreviousperformrequests(withtarget:).md)
-  Cancels perform requests previously registered with the [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md) instance method.
-- [class func cancelPreviousPerformRequests(withTarget: Any, selector: Selector, object: Any?)](nsobject-swift.class/cancelpreviousperformrequests(withtarget:selector:object:).md)
-  Cancels perform requests previously registered with [`perform(_:with:afterDelay:)`](nsobject-swift.class/perform(_:with:afterdelay:).md).
+- [class func cancelPreviousPerformRequests(withTarget: Any)](./cancelpreviousperformrequests%28withtarget%29.md)
+  Cancels perform requests previously registered with the [`perform(_:with:afterDelay:)`](./perform%28_,with,afterdelay%29.md) instance method.
+- [class func cancelPreviousPerformRequests(withTarget: Any, selector: Selector, object: Any?)](./cancelpreviousperformrequests%28withtarget,selector,object%29.md)
+  Cancels perform requests previously registered with [`perform(_:with:afterDelay:)`](./perform%28_,with,afterdelay%29.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # assetContainsSpatialAudio(asset:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Check if asset meets all the requirements to operate with Spatial Audio and its accompanying effects
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 - tvOS 26.0+
 

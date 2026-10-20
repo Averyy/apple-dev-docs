@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the range contains no elements.
 
@@ -20,15 +21,18 @@ A Boolean value indicating whether the range contains no elements.
 var isEmpty: Bool { get }
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Discussion
 
 Because a closed range cannot represent an empty range, this property is always `false`.
 
 ## See Also
 
-- [let lowerBound: Bound](closedrange/lowerbound.md)
+### Inspecting a Range
+- [let lowerBound: Bound](./lowerbound.md)
   The range’s lower bound.
-- [let upperBound: Bound](closedrange/upperbound.md)
+- [let upperBound: Bound](./upperbound.md)
   The range’s upper bound.
 
 

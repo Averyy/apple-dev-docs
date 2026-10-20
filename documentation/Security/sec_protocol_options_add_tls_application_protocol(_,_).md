@@ -1,7 +1,8 @@
 # sec_protocol_options_add_tls_application_protocol(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_add_tls_application_protocol(_ options: sec_protocol_options_t, _ application_protocol: UnsafePointer<CChar>)
+```
+
+```c
+void sec_protocol_options_add_tls_application_protocol(sec_protocol_options_t options, const char *application_protocol);
 ```
 
 #### Discussion

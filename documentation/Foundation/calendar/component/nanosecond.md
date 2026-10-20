@@ -1,7 +1,8 @@
 # Calendar.Component.nanosecond
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the nanosecond unit.
 
@@ -22,11 +23,12 @@ case nanosecond
 
 ## See Also
 
-- [Calendar.Component.hour](calendar/component/hour.md)
+### Specifying Hours, Minutes, and Seconds
+- [Calendar.Component.hour](./hour.md)
   Identifier for the hour unit.
-- [Calendar.Component.minute](calendar/component/minute.md)
+- [Calendar.Component.minute](./minute.md)
   Identifier for the minute unit.
-- [Calendar.Component.second](calendar/component/second.md)
+- [Calendar.Component.second](./second.md)
   Identifier for the second unit.
 
 

@@ -1,7 +1,8 @@
 # audioVariant
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active variant that indicates the quality of audio for the current entry.
 

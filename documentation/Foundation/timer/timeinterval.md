@@ -1,7 +1,8 @@
 # timeInterval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timer’s time interval, in seconds.
 
@@ -20,17 +21,22 @@ The timer’s time interval, in seconds.
 var timeInterval: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval timeInterval;
+```
+
 #### Discussion
 
 If the timer is non-repeating, returns `0` even if a time interval was set.
 
 ## See Also
 
-- [var isValid: Bool](timer/isvalid.md)
+### Retrieving Timer Information
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the timer is currently valid.
-- [var fireDate: Date](timer/firedate.md)
+- [var fireDate: Date](./firedate.md)
   The date at which the timer will fire.
-- [var userInfo: Any?](timer/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   The receiver’s `userInfo` object.
 
 

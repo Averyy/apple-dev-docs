@@ -1,7 +1,8 @@
 # description
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the color.
 
@@ -22,7 +23,7 @@ var description: String { get }
 
 #### Discussion
 
-Use this method to get a string that represents the color. The [`print(_:separator:terminator:)`](https://developer.apple.com/documentation/swift/print(_:separator:terminator:)) function uses this property to get a string representing an instance:
+Use this method to get a string that represents the color. The [`print(_:separator:terminator:)`](../../Swift/print%28_,separator,terminator%29.md) function uses this property to get a string representing an instance:
 
 ```swift
 print(Color.red)

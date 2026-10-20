@@ -1,7 +1,8 @@
 # accessCredentials
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var accessCredentials: UnsafeMutablePointer<cssm_access_credentials>!
+```
+
+```c
+CSSM_ACCESS_CREDENTIALS * accessCredentials;
 ```
 
 

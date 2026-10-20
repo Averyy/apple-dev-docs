@@ -1,7 +1,8 @@
 # JSContextGetGroup(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the context group that a JavaScript execution context belongs to.
 
@@ -19,13 +20,17 @@ Gets the context group that a JavaScript execution context belongs to.
 func JSContextGetGroup(_ ctx: JSContextRef!) -> JSContextGroupRef!
 ```
 
+```c
+JSContextGroupRefJSContextGetGroup(JSContextRef ctx);
+```
+
 #### Return Value
 
 The group that `ctx` belongs to.
 
 ## Parameters
 
-- `ctx`: The [`JSContextRef`](jscontextref.md) with the group you want to get.
+- `ctx`: The [`JSContextRef`](./jscontextref.md) with the group you want to get.
 
 
 ---

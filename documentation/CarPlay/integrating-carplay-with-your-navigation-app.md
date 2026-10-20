@@ -1,6 +1,8 @@
 # Integrating CarPlay with Your Navigation App
 
-**Framework**: CarPlay
+**Framework**: CarPlay  
+**Role**: Sample Code  
+**Download**: [IntegratingCarPlayWithYourNavigationApp.zip](https://docs-assets.developer.apple.com/published/49e398fe2cd4/IntegratingCarPlayWithYourNavigationApp.zip)
 
 Configure your navigation app to work with CarPlay by displaying your custom map and directions.
 
@@ -12,9 +14,9 @@ Configure your navigation app to work with CarPlay by displaying your custom map
 
 #### Overview
 
-Coastal Roads is a sample navigation app that demonstrates how to display a custom map and navigation instructions in a CarPlay–enabled vehicle. Coastal Roads integrates with the CarPlay framework by implementing the map and additional `CPTemplate` subclasses, such as [`CPGridTemplate`](cpgridtemplate.md) and [`CPListTemplate`](cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
+Coastal Roads is a sample navigation app that demonstrates how to display a custom map and navigation instructions in a CarPlay–enabled vehicle. Coastal Roads integrates with the CarPlay framework by implementing the map and additional `CPTemplate` subclasses, such as [`CPGridTemplate`](./cpgridtemplate.md) and [`CPListTemplate`](./cplisttemplate.md). This sample’s iOS app component provides a logging interface to help you understand the life cycle of a CarPlay app.
 
-##### Handle Communication with Carplay
+##### Handle Communication with CarPlay
 
 After the app connects to CarPlay, it immediately sets a root template to display content onscreen. The sample sets the root template on the `CPInterfaceController` when the app connects to CarPlay. In all navigation apps, the root template must be an instance of `CPMapTemplate` and contain no additional graphics or UI elements.
 
@@ -54,7 +56,7 @@ func interfaceController(_ interfaceController: CPInterfaceController, didConnec
 }
 ```
 
-##### Render a Map As the Base Template
+##### Render a Map as the Base Template
 
 Coastal Roads demonstrates various templates in CarPlay. The sample includes an image to serve as the map. All overlays must be a type of template that CarPlay provides. The map must cover the entire screen, which the sample accomplishes using constraints. The `CPMapTemplate` also provides native support for zooming and panning. Additional functionality, such as customizing default button behavior, is available.
 
@@ -85,19 +87,20 @@ extension TemplateManager: CPMapTemplateDelegate {
     }
 ```
 
-See [`CPMapTemplateDelegate`](cpmaptemplatedelegate.md) for more information.
+See [`CPMapTemplateDelegate`](./cpmaptemplatedelegate.md) for more information.
 
 ## See Also
 
-- [class CPTemplateApplicationDashboardScene](cptemplateapplicationdashboardscene.md)
+### Navigation
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
   A CarPlay scene that controls your app’s dashboard navigation window.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](cptemplateapplicationdashboardscenedelegate.md)
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](cpmaptemplate.md)
+- [class CPMapTemplate](./cpmaptemplate.md)
   A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](cpsearchtemplate.md)
+- [class CPSearchTemplate](./cpsearchtemplate.md)
   A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
   A template that displays a voice control indicator during audio input.
 
 

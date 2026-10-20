@@ -1,7 +1,8 @@
 # ImmersiveCameraLensDefinition.STMapType
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents a camera lens projection type.
 
@@ -25,20 +26,21 @@ Use this value for STMap generation output when using the `ImmersiveLensDefiniti
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveCameraLensDefinition.STMapType.equidistant](immersivecameralensdefinition/stmaptype/equidistant.md)
+- [ImmersiveCameraLensDefinition.STMapType.equidistant](./stmaptype/equidistant.md)
   A value that represents an equidistant lens projection type.
-- [ImmersiveCameraLensDefinition.STMapType.equirectangular](immersivecameralensdefinition/stmaptype/equirectangular.md)
+- [ImmersiveCameraLensDefinition.STMapType.equirectangular](./stmaptype/equirectangular.md)
   A value that represents an equirectangular lens projection type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [ImmersiveCameraLensDefinition.Eye](immersivecameralensdefinition/eye.md)
+### Enumerations
+- [ImmersiveCameraLensDefinition.Eye](./eye.md)
   A value that represents a camera lens eye.
 
 

@@ -1,7 +1,8 @@
 # geodesic
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Line segments that follow the contours of the Earth to represent the shortest path between the specified points.
 
@@ -11,7 +12,7 @@ Line segments that follow the contours of the Earth to represent the shortest pa
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var geodesic: MapPolyline.ContourStyle { get }
 
 ## See Also
 
-- [static var straight: MapPolyline.ContourStyle](mappolyline/contourstyle/straight.md)
+### Styles
+- [static var straight: MapPolyline.ContourStyle](./straight.md)
   Straight-line segments between points.
 
 

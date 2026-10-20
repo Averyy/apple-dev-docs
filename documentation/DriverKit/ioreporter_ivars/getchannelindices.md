@@ -1,17 +1,18 @@
 # getChannelIndices
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getChannelIndices(uint64_t channel_id, int *channel_index, int *element_index);
 ```
 

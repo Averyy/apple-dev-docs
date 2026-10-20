@@ -1,7 +1,8 @@
 # withElements(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides read-only access to the per-vertex data within a callback.
 
@@ -30,9 +31,10 @@ The provided span is only valid for the lifetime of the callback.
 
 ## See Also
 
-- [var vertexCount: Int](perclothvertexdata/vertexcount.md)
+### Accessing vertex data
+- [var vertexCount: Int](./vertexcount.md)
   The number of vertices this structure holds data for.
-- [func withMutableElements<Result>((inout MutableSpan<ElementType>) -> Result) -> Result](perclothvertexdata/withmutableelements(_:).md)
+- [func withMutableElements<Result>((inout MutableSpan<ElementType>) -> Result) -> Result](./withmutableelements%28_%29.md)
   Provides mutable access to the per-vertex data within a callback.
 
 

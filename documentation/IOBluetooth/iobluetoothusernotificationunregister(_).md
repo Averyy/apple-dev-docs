@@ -1,17 +1,22 @@
 # IOBluetoothUserNotificationUnregister(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters the target notification.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func IOBluetoothUserNotificationUnregister(_ notificationRef: IOBluetoothUserNotificationRef!)
+```
+
+```c
+void IOBluetoothUserNotificationUnregister(IOBluetoothUserNotificationRef notificationRef);
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ This function will unregister the notification. Once the notification has been u
 
 ## See Also
 
-- [func IOBluetoothIgnoreHIDDevice(IOBluetoothDeviceRef!)](iobluetoothignorehiddevice(_:).md)
+### Miscellaneous
+- [func IOBluetoothIgnoreHIDDevice(IOBluetoothDeviceRef!)](./iobluetoothignorehiddevice%28_%29.md)
   Hints that the macOS Bluetooth software should ignore a HID device that connects up.
-- [func IOBluetoothL2CAPChannelRegisterForChannelCloseNotification(IOBluetoothL2CAPChannelRef!, IOBluetoothUserNotificationCallback!, UnsafeMutableRawPointer!) -> Unmanaged<IOBluetoothUserNotificationRef>!](iobluetoothl2capchannelregisterforchannelclosenotification(_:_:_:).md)
+- [func IOBluetoothL2CAPChannelRegisterForChannelCloseNotification(IOBluetoothL2CAPChannelRef!, IOBluetoothUserNotificationCallback!, UnsafeMutableRawPointer!) -> Unmanaged<IOBluetoothUserNotificationRef>!](./iobluetoothl2capchannelregisterforchannelclosenotification%28_,_,_%29.md)
   Allows a client to register for a channel close notification.
-- [func IOBluetoothRemoveIgnoredHIDDevice(IOBluetoothDeviceRef!)](iobluetoothremoveignoredhiddevice(_:).md)
+- [func IOBluetoothRemoveIgnoredHIDDevice(IOBluetoothDeviceRef!)](./iobluetoothremoveignoredhiddevice%28_%29.md)
   The counterpart to the above IOBluetoothIgnoreHIDDevice() API.
 
 

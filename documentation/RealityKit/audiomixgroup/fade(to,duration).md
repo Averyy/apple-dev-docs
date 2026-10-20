@@ -1,7 +1,8 @@
 # fade(to:duration:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transitions the gain to a value over a time interval using a linear curve.
 

@@ -1,7 +1,8 @@
 # nonAPFS
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 static var nonAPFS: NSFileProviderVolumeUnsupportedReason { get }
+```
+
+```c
+NSFileProviderVolumeUnsupportedReasonNonAPFS
 ```
 
 

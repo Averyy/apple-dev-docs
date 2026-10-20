@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts a tag for the input string.
 
@@ -14,6 +15,12 @@ Predicts a tag for the input string.
 func prediction(from text: String) throws -> [String]
 ```
 
+**Other overloads**:
+
+```swift
+func prediction(from tokens: [MLWordTagger.Token]) throws -> [String]
+```
+
 #### Return Value
 
 An array of tags for the tokens in the string.
@@ -24,9 +31,10 @@ An array of tags for the tokens in the string.
 
 ## See Also
 
-- [func predictions(from:)](mlwordtagger/predictions(from:).md)
+### Testing a word tagger
+- [func predictions(from:)](./predictions%28from%29.md)
   Predicts sequences of labels, token locations, and token lengths from the input strings.
-- [func predictionWithConfidence(from:)](mlwordtagger/predictionwithconfidence(from:).md)
+- [func predictionWithConfidence(from:)](./predictionwithconfidence%28from%29.md)
   Predicts tags and confidence scores for the input string. Predicts tags and confidence scores for the input string.
 
 

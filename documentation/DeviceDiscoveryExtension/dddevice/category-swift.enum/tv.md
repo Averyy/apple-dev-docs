@@ -1,16 +1,17 @@
 # DDDevice.Category.tv
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An icon that depicts a television.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ An icon that depicts a television.
 case tv
 ```
 
+```c
+DDDeviceCategoryTV
+```
+
 ## See Also
 
-- [DDDevice.Category.desktopComputer](dddevice/category-swift.enum/desktopcomputer.md)
+### Choosing an icon for the device picker
+- [DDDevice.Category.desktopComputer](./desktopcomputer.md)
   An icon that depicts a desktop computer.
-- [DDDevice.Category.hifiSpeaker](dddevice/category-swift.enum/hifispeaker.md)
+- [DDDevice.Category.hifiSpeaker](./hifispeaker.md)
   An icon that depicts a high-fidelity speaker.
-- [DDDevice.Category.hifiSpeakerMultiple](dddevice/category-swift.enum/hifispeakermultiple.md)
+- [DDDevice.Category.hifiSpeakerMultiple](./hifispeakermultiple.md)
   An icon that depicts multiple high-fidelity speakers.
-- [DDDevice.Category.laptopComputer](dddevice/category-swift.enum/laptopcomputer.md)
+- [DDDevice.Category.laptopComputer](./laptopcomputer.md)
   An icon that depicts a laptop computer.
-- [DDDevice.Category.tvWithMediaBox](dddevice/category-swift.enum/tvwithmediabox.md)
+- [DDDevice.Category.tvWithMediaBox](./tvwithmediabox.md)
   An icon that depicts a TV with a set-top box.
 
 

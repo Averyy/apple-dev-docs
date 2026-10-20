@@ -1,7 +1,8 @@
 # navigationBar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that appears in the navigation bar when the user puts the document browser in Select mode.
 
@@ -17,15 +18,20 @@ An action that appears in the navigation bar when the user puts the document bro
 static var navigationBar: UIDocumentBrowserAction.Availability { get }
 ```
 
+```c
+UIDocumentBrowserActionAvailabilityNavigationBar
+```
+
 #### Discussion
 
-The system enables this action as soon as the user makes a valid selection, as determined by the [`supportedContentTypes`](uidocumentbrowseraction/supportedcontenttypes.md) and [`supportsMultipleItems`](uidocumentbrowseraction/supportsmultipleitems.md) properties.
+The system enables this action as soon as the user makes a valid selection, as determined by the [`supportedContentTypes`](../supportedcontenttypes.md) and [`supportsMultipleItems`](../supportsmultipleitems.md) properties.
 
-> **Note**:  In Mac apps built with Mac Catalyst, the system shows [`navigationBar`](uidocumentbrowseraction/availability-swift.struct/navigationbar.md) actions as [`menu`](uidocumentbrowseraction/availability-swift.struct/menu.md) actions.
+> **Note**:  In Mac apps built with Mac Catalyst, the system shows [`navigationBar`](./navigationbar.md) actions as [`menu`](./menu.md) actions.
 
 ## See Also
 
-- [static var menu: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct/menu.md)
+### Constants
+- [static var menu: UIDocumentBrowserAction.Availability](./menu.md)
   An action that appears in the Edit Menu when the user long presses a supported document.
 
 

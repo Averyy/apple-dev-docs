@@ -1,7 +1,8 @@
 # mediaCharacteristic
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides the media characteristic that corresponds to the selectable setting.
 
@@ -20,9 +21,14 @@ Provides the media characteristic that corresponds to the selectable setting.
 var mediaCharacteristic: AVMediaCharacteristic { get }
 ```
 
+```objc
+@property (readonly) AVMediaCharacteristic mediaCharacteristic;
+```
+
 ## See Also
 
-- [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationsetting/displayname(forlocaleidentifier:).md)
+### Identifying the setting
+- [func displayName(forLocaleIdentifier: String) -> String](./displayname%28forlocaleidentifier%29.md)
   Returns the display name for the selectable setting that best matches the specified locale identifier.
 
 

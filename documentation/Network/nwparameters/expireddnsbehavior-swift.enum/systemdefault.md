@@ -1,7 +1,8 @@
 # NWParameters.ExpiredDNSBehavior.systemDefault
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Let the system determine whether or not to allow expired DNS answers.
 
@@ -22,9 +23,10 @@ case systemDefault
 
 ## See Also
 
-- [NWParameters.ExpiredDNSBehavior.allow](nwparameters/expireddnsbehavior-swift.enum/allow.md)
+### Behaviors
+- [NWParameters.ExpiredDNSBehavior.allow](./allow.md)
   Explicitly allow the use of expired DNS answers.
-- [NWParameters.ExpiredDNSBehavior.prohibit](nwparameters/expireddnsbehavior-swift.enum/prohibit.md)
+- [NWParameters.ExpiredDNSBehavior.prohibit](./prohibit.md)
   Explicitly prohibit the use of expired DNS answers.
 
 

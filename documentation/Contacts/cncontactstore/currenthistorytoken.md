@@ -1,7 +1,8 @@
 # currentHistoryToken
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current history token.
 
@@ -19,9 +20,13 @@ The current history token.
 var currentHistoryToken: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * currentHistoryToken;
+```
+
 #### Discussion
 
-When fetching contacts or change history events, use the token on [`CNFetchResult`](cnfetchresult.md) instead.
+When fetching contacts or change history events, use the token on [`CNFetchResult`](../cnfetchresult.md) instead.
 
 
 ---

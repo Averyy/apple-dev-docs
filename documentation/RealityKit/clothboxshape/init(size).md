@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a box shape with the given size.
 

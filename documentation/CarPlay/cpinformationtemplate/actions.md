@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actions that the template displays.
 
@@ -14,6 +15,10 @@ The actions that the template displays.
 
 ```swift
 var actions: [CPTextButton] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<__kindof CPTextButton *> * actions;
 ```
 
 #### Discussion

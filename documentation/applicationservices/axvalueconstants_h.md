@@ -1,11 +1,12 @@
 # AXValueConstants.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [Miscellaneous Defines](axvalueconstants_h/miscellaneous_defines.md)
+- [Miscellaneous Defines](./axvalueconstants_h/miscellaneous_defines.md)
 
 
 ---

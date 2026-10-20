@@ -1,7 +1,8 @@
 # allowedDocumentTypes
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allowed document types of the mobile document request.
 
@@ -18,7 +19,7 @@ var allowedDocumentTypes: [MobileDocumentDisplayRequest.Options.DocumentType]
 
 #### Discussion
 
-> **Note**: A request isn’t considered valid if the list of allowed document types is empty or contains duplicates. If you call [`requestDocument(_:)`](mobiledocumentreadersession/requestdocument(_:).md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](mobiledocumentreadererror/invalidrequest.md) error.
+> **Note**: A request isn’t considered valid if the list of allowed document types is empty or contains duplicates. If you call [`requestDocument(_:)`](../../mobiledocumentreadersession/requestdocument%28_%29.md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](../../mobiledocumentreadererror/invalidrequest.md) error.
 
 
 ---

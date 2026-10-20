@@ -1,7 +1,8 @@
 # documentDHSComplianceStatus
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s DHS (U.S. Department of Homeland Security) compliance status.
 

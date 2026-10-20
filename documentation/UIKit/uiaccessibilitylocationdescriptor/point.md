@@ -1,7 +1,8 @@
 # point
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the geometric point of interest for the accessibility location descriptor within its associated view and in the coordinate space of the view.
 
@@ -17,13 +18,18 @@ Returns the geometric point of interest for the accessibility location descripto
 var point: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint point;
+```
+
 ## See Also
 
-- [var name: String](uiaccessibilitylocationdescriptor/name.md)
+### Getting the descriptor information
+- [var name: String](./name.md)
   Returns the plaintext string representation of the name for the accessibility location descriptor.
-- [var attributedName: NSAttributedString](uiaccessibilitylocationdescriptor/attributedname.md)
+- [var attributedName: NSAttributedString](./attributedname.md)
   Returns the attributed string representation of the name for the accessibility location descriptor.
-- [var view: UIView?](uiaccessibilitylocationdescriptor/view.md)
+- [var view: UIView?](./view.md)
   Returns the view associated with the accessibility location descriptor.
 
 

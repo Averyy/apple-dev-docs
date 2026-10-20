@@ -1,7 +1,8 @@
 # PromotedPurchaseUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a promoted purchase update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a promoted purchase update request resource.
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchaseUpdateRequest.Data.Attributes
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to clean up any state related to the specified Writing Tools animation.
@@ -12,18 +13,26 @@ Asks the delegate to clean up any state related to the specified Writing Tools a
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, finish textAnimation: NSWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: NSWritingToolsCoordinator.Context, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsCoordinator, finish textAnimation: NSWritingToolsCoordinator.TextAnimation, for range: NSRange, in context: NSWritingToolsCoordinator.Context) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator finishTextAnimation:(NSWritingToolsCoordinatorTextAnimation) textAnimation forRange:(NSRange) range inContext:(NSWritingToolsCoordinatorContext *) context completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
+- [Adding Writing Tools support to a custom AppKit view](../../adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Discussion
 
 Use this method to clean up any data structures you created to support the specified type of Writing Tools animation. You can also use this method to restore the visibility of any text you hid previously. When you finish your cleanup work, call the completion handler to notify Writing Tools.
 
-Writing Tools calls this method only after previous calls to the [`writingToolsCoordinator(_:prepareFor:for:in:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:preparefor:for:in:completion:).md) and [`writingToolsCoordinator(_:requestsPreviewFor:of:in:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:completion:).md) methods for the same animation type. However, Writing Tools can interleave calls to this method with calls to prepare an animation of a different type. In your implementation of this method, make sure the actions you take don’t interfere with other in-flight animations.
+Writing Tools calls this method only after previous calls to the [`writingToolsCoordinator(_:prepareFor:for:in:completion:)`](./writingtoolscoordinator%28_,preparefor,for,in,completion%29.md) and [`writingToolsCoordinator(_:requestsPreviewFor:of:in:completion:)`](./writingtoolscoordinator%28_,requestspreviewfor,of,in,completion%29.md) methods for the same animation type. However, Writing Tools can interleave calls to this method with calls to prepare an animation of a different type. In your implementation of this method, make sure the actions you take don’t interfere with other in-flight animations.
 
 ## Parameters
 
@@ -35,11 +44,12 @@ Writing Tools calls this method only after previous calls to the [`writingToolsC
 
 ## See Also
 
-- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsPreviewFor: NSWritingToolsCoordinator.TextAnimation, of: NSRange, in: NSWritingToolsCoordinator.Context, completion: ([NSTextPreview]?) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:completion:).md)
+### Animating inline text changes
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsPreviewFor: NSWritingToolsCoordinator.TextAnimation, of: NSRange, in: NSWritingToolsCoordinator.Context, completion: ([NSTextPreview]?) -> Void)](./writingtoolscoordinator%28_,requestspreviewfor,of,in,completion%29.md)
   Asks the delegate for a preview image and layout information for the specified text.
-- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsPreviewFor: NSRect, in: NSWritingToolsCoordinator.Context, completion: (NSTextPreview?) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:in:completion:).md)
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsPreviewFor: NSRect, in: NSWritingToolsCoordinator.Context, completion: (NSTextPreview?) -> Void)](./writingtoolscoordinator%28_,requestspreviewfor,in,completion%29.md)
   Asks the delegate for a preview image and layout information for the specified text.
-- [func writingToolsCoordinator(NSWritingToolsCoordinator, prepareFor: NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, completion: () -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:preparefor:for:in:completion:).md)
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, prepareFor: NSWritingToolsCoordinator.TextAnimation, for: NSRange, in: NSWritingToolsCoordinator.Context, completion: () -> Void)](./writingtoolscoordinator%28_,preparefor,for,in,completion%29.md)
   Prepare for animations for the content that Writing Tools is evaluating.
 
 

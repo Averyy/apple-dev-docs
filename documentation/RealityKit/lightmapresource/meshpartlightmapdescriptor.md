@@ -1,7 +1,8 @@
 # LightmapResource.MeshPartLightmapDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies bake descriptors for each instance of the given mesh part.
 
@@ -22,13 +23,13 @@ struct MeshPartLightmapDescriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(bakeDescriptor: LightmapResource.BakeDescriptor) throws](lightmapresource/meshpartlightmapdescriptor/init(bakedescriptor:).md)
+- [init(bakeDescriptor: LightmapResource.BakeDescriptor) throws](./meshpartlightmapdescriptor/init%28bakedescriptor%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

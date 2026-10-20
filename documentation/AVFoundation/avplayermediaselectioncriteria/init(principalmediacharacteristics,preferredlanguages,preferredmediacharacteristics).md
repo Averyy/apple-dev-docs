@@ -1,7 +1,8 @@
 # init(principalMediaCharacteristics:preferredLanguages:preferredMediaCharacteristics:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates media selection criteria with the principal media characteristics, and preferred languages and media characteristics.
 
@@ -20,6 +21,10 @@ Creates media selection criteria with the principal media characteristics, and p
 init(principalMediaCharacteristics: [AVMediaCharacteristic]?, preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaCharacteristic]?)
 ```
 
+```objc
+- (instancetype) initWithPrincipalMediaCharacteristics:(NSArray<NSString *> *) principalMediaCharacteristics preferredLanguages:(NSArray<NSString *> *) preferredLanguages preferredMediaCharacteristics:(NSArray<NSString *> *) preferredMediaCharacteristics;
+```
+
 #### Discussion
 
 Principal media characteristics, when present, override language preferences when making selections within a specific media selection group. However, language preferences may still pertain to selections in other groups. For example, the system may consider language preferences when choosing whether to select nonforced subtitles for translation purposes.
@@ -32,7 +37,8 @@ Principal media characteristics, when present, override language preferences whe
 
 ## See Also
 
-- [init(preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaCharacteristic]?)](avplayermediaselectioncriteria/init(preferredlanguages:preferredmediacharacteristics:).md)
+### Creating media selection criteria
+- [init(preferredLanguages: [String]?, preferredMediaCharacteristics: [AVMediaCharacteristic]?)](./init%28preferredlanguages,preferredmediacharacteristics%29.md)
   Creates media selection criteria with the preferred languages and media characteristics.
 
 

@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts processing of incoming requests.
 
@@ -20,21 +21,26 @@ Starts processing of incoming requests.
 func resume()
 ```
 
+```objc
+- (void) resume;
+```
+
 #### Discussion
 
 All listeners start suspended and must be resumed before they begin processing incoming requests.
 
-If called on the [`service()`](nsxpclistener/service().md) object, this method never returns. Therefore, you should call it as the last step inside the XPC service’s `main` function after setting up any desired initial state and configuring the listener itself.
+If called on the [`service()`](./service%28%29.md) object, this method never returns. Therefore, you should call it as the last step inside the XPC service’s `main` function after setting up any desired initial state and configuring the listener itself.
 
-If called on any other [`NSXPCListener`](nsxpclistener.md), the connection is resumed, and the method returns immediately.
+If called on any other [`NSXPCListener`](../nsxpclistener.md), the connection is resumed, and the method returns immediately.
 
 ## See Also
 
-- [func activate()](nsxpclistener/activate.md)
+### Managing connection state
+- [func activate()](./activate%28%29.md)
   Activates the listener.
-- [func invalidate()](nsxpclistener/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates the listener.
-- [func suspend()](nsxpclistener/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the listener.
 
 

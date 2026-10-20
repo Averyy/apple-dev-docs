@@ -1,7 +1,8 @@
 # OID_ANSI_X9_62_SIG_TYPE_LEN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var OID_ANSI_X9_62_SIG_TYPE_LEN: Int32 { get }
+```
+
+```c
+#define OID_ANSI_X9_62_SIG_TYPE_LEN
 ```
 
 

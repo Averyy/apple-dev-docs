@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the item in the tool picker.
 
@@ -16,6 +17,10 @@ A string that identifies the item in the tool picker.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * identifier;
 ```
 
 

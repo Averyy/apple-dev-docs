@@ -1,30 +1,32 @@
 # HIDReportCommandType
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef enum HIDReportCommandType HIDReportCommandType;
 ```
 
 ## Topics
 
 ### Constants
-- [kIOHIDReportCommandGetReport](hidreportcommandtype/kiohidreportcommandgetreport.md)
-- [kIOHIDReportCommandSetReport](hidreportcommandtype/kiohidreportcommandsetreport.md)
+- [kIOHIDReportCommandGetReport](./hidreportcommandtype/kiohidreportcommandgetreport.md)
+- [kIOHIDReportCommandSetReport](./hidreportcommandtype/kiohidreportcommandsetreport.md)
 
 ## See Also
 
-- [IOHIDReportType](iohidreporttype.md)
+### Reports
+- [IOHIDReportType](./iohidreporttype.md)
   Describes different type of HID reports.
-- [IOHIDCompletion](iohidcompletion.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   Struct specifying action to perform when set/get report completes.
-- [IOHIDCompletionAction](iohidcompletionaction.md)
+- [IOHIDCompletionAction](./iohidcompletionaction.md)
   Function called when set/get report completes
 
 

@@ -1,7 +1,8 @@
 # DescriptiveNumberFormatConfiguration
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,8 +22,8 @@ enum DescriptiveNumberFormatConfiguration
 ## Topics
 
 ### Specifying Configuration
-- [DescriptiveNumberFormatConfiguration.CapitalizationContext](descriptivenumberformatconfiguration/capitalizationcontext.md)
-- [DescriptiveNumberFormatConfiguration.Presentation](descriptivenumberformatconfiguration/presentation.md)
+- [DescriptiveNumberFormatConfiguration.CapitalizationContext](./descriptivenumberformatconfiguration/capitalizationcontext.md)
+- [DescriptiveNumberFormatConfiguration.Presentation](./descriptivenumberformatconfiguration/presentation.md)
 
 
 ---

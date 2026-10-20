@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the conversation manager, ends all conversations, and fails all pending concersation actions.
 
@@ -20,7 +21,8 @@ final func invalidate()
 
 ## See Also
 
-- [func perform([ConversationAction]) async throws](conversationmanager/perform(_:).md)
+### Managing conversations
+- [func perform([ConversationAction]) async throws](./perform%28_%29.md)
   Tells the conversation manager to asynchronously perform actions for a conversation.
 
 

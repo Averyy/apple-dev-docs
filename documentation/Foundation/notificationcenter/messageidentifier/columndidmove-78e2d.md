@@ -1,7 +1,8 @@
 # columnDidMove
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var columnDidMove: NotificationCenter.BaseMessageIdentifier<NSOutlineView.ColumnDidMoveMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSOutlineView.ColumnDidMoveMessage>`.
 
 
 ---

@@ -1,7 +1,8 @@
 # UISheetPresentationController.Placement
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,25 +16,29 @@
 enum Placement
 ```
 
+```c
+enum UISheetPresentationControllerPlacement : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UISheetPresentationController.Placement.automatic](uisheetpresentationcontroller/placement/automatic.md)
-- [UISheetPresentationController.Placement.center](uisheetpresentationcontroller/placement/center.md)
-- [UISheetPresentationController.Placement.leading](uisheetpresentationcontroller/placement/leading.md)
-- [UISheetPresentationController.Placement.trailing](uisheetpresentationcontroller/placement/trailing.md)
+- [UISheetPresentationController.Placement.automatic](./placement/automatic.md)
+- [UISheetPresentationController.Placement.center](./placement/center.md)
+- [UISheetPresentationController.Placement.leading](./placement/leading.md)
+- [UISheetPresentationController.Placement.trailing](./placement/trailing.md)
 ### Initializers
-- [init?(rawValue: Int)](uisheetpresentationcontroller/placement/init(rawvalue:).md)
+- [init?(rawValue: Int)](./placement/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

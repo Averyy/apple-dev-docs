@@ -1,7 +1,8 @@
 # SystemPackageProvider.nugetItem(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Packages installable by the NuGet package manager.
 

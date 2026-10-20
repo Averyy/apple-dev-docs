@@ -1,17 +1,22 @@
 # clip(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Intersects the specified rectangle with the clipping path of the current graphics context and makes the resulting shape the current clipping path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func clip(_ rect: NSRect)
+```
+
+```objc
++ (void) clipRect:(NSRect) rect;
 ```
 
 ## Parameters
@@ -20,9 +25,10 @@ class func clip(_ rect: NSRect)
 
 ## See Also
 
-- [func addClip()](nsbezierpath/addclip.md)
+### Specifying a Clipping Path
+- [func addClip()](./addclip%28%29.md)
   Intersects the area enclosed by the path with the clipping path of the current graphics context and makes the resulting shape the current clipping path.
-- [func setClip()](nsbezierpath/setclip.md)
+- [func setClip()](./setclip%28%29.md)
   Replaces the clipping path of the current graphics context with the area inside the path.
 
 

@@ -1,7 +1,8 @@
 # CLKComplicationStaticWidgetMigrationConfiguration
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object that specifies a static complication in WidgetKit.
 
@@ -14,47 +15,52 @@ A configuration object that specifies a static complication in WidgetKit.
 class CLKComplicationStaticWidgetMigrationConfiguration
 ```
 
+```objc
+@interface CLKComplicationStaticWidgetMigrationConfiguration : CLKComplicationWidgetMigrationConfiguration
+```
+
 #### Overview
 
 You can use static complications if your app doesn’t dynamically customize the list of complications available in the complication picker. For example, if your complications display the current temperature and chance of precipitation at the user’s current location, you can use a set of static widgets to define these complications.
 
-For more information, see [`Migrating ClockKit complications to WidgetKit`](https://developer.apple.com/documentation/widgetkit/converting-a-clockkit-app).
+For more information, see [Migrating ClockKit complications to WidgetKit](../WidgetKit/converting-a-clockkit-app.md).
 
 ## Topics
 
 ### Creating static complication configurations
-- [init(kind: String, extensionBundleIdentifier: String)](clkcomplicationstaticwidgetmigrationconfiguration/init(kind:extensionbundleidentifier:).md)
+- [init(kind: String, extensionBundleIdentifier: String)](./clkcomplicationstaticwidgetmigrationconfiguration/init%28kind,extensionbundleidentifier%29.md)
   Creates an object that describes a static watchOS complication in your WidgetKit extension.
 ### Accessing configuration properties
-- [var kind: String](clkcomplicationstaticwidgetmigrationconfiguration/kind.md)
+- [var kind: String](./clkcomplicationstaticwidgetmigrationconfiguration/kind.md)
   A string that uniquely identifies a widget in your WidgetKit extension.
-- [var extensionBundleIdentifier: String](clkcomplicationstaticwidgetmigrationconfiguration/extensionbundleidentifier.md)
+- [var extensionBundleIdentifier: String](./clkcomplicationstaticwidgetmigrationconfiguration/extensionbundleidentifier.md)
   The bundle identifier for your WidgetKit extension.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationWidgetMigrationConfiguration](clkcomplicationwidgetmigrationconfiguration.md)
+- [CLKComplicationWidgetMigrationConfiguration](./clkcomplicationwidgetmigrationconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var widgetMigrator: any CLKComplicationWidgetMigrator](clkcomplicationdatasource/widgetmigrator.md)
+### Migrating to WidgetKit
+- [var widgetMigrator: any CLKComplicationWidgetMigrator](./clkcomplicationdatasource/widgetmigrator.md)
   A migrator that maps ClockKit complications to their WidgetKit replacements.
-- [class CLKComplicationAppIntentWidgetMigrationConfiguration](clkcomplicationappintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationAppIntentWidgetMigrationConfiguration](./clkcomplicationappintentwidgetmigrationconfiguration.md)
   A configuration object that specifies a WidgetKit complication that uses app intents.
-- [class CLKComplicationIntentWidgetMigrationConfiguration](clkcomplicationintentwidgetmigrationconfiguration.md)
+- [class CLKComplicationIntentWidgetMigrationConfiguration](./clkcomplicationintentwidgetmigrationconfiguration.md)
   A configuration object that specifies an intents-based complication in WidgetKit.
-- [protocol CLKComplicationWidgetMigrator](clkcomplicationwidgetmigrator.md)
+- [protocol CLKComplicationWidgetMigrator](./clkcomplicationwidgetmigrator.md)
   A protocol that maps ClockKit complications to their WidgetKit replacements.
-- [class CLKComplicationWidgetMigrationConfiguration](clkcomplicationwidgetmigrationconfiguration.md)
+- [class CLKComplicationWidgetMigrationConfiguration](./clkcomplicationwidgetmigrationconfiguration.md)
   An abstract class that specifies WidgetKit complications.
 
 

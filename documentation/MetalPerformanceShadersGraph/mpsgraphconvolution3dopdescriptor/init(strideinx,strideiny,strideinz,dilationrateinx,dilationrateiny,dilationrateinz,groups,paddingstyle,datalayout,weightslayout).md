@@ -1,7 +1,8 @@
 # init(strideInX:strideInY:strideInZ:dilationRateInX:dilationRateInY:dilationRateInZ:groups:paddingStyle:dataLayout:weightsLayout:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a convolution descriptor with given values for parameters.
 
@@ -19,22 +20,26 @@ Creates a convolution descriptor with given values for parameters.
 convenience init?(strideInX: Int, strideInY: Int, strideInZ: Int, dilationRateInX: Int, dilationRateInY: Int, dilationRateInZ: Int, groups: Int, paddingStyle: MPSGraphPaddingStyle, dataLayout: MPSGraphTensorNamedDataLayout, weightsLayout: MPSGraphTensorNamedDataLayout)
 ```
 
+```objc
++ (instancetype) descriptorWithStrideInX:(NSUInteger) strideInX strideInY:(NSUInteger) strideInY strideInZ:(NSUInteger) strideInZ dilationRateInX:(NSUInteger) dilationRateInX dilationRateInY:(NSUInteger) dilationRateInY dilationRateInZ:(NSUInteger) dilationRateInZ groups:(NSUInteger) groups paddingStyle:(MPSGraphPaddingStyle) paddingStyle dataLayout:(MPSGraphTensorNamedDataLayout) dataLayout weightsLayout:(MPSGraphTensorNamedDataLayout) weightsLayout;
+```
+
 #### Return Value
 
 The `MPSGraphConvolution3DOpDescriptor` on autoreleasepool.
 
 ## Parameters
 
-- `strideInX`: See [`strideInX`](mpsgraphconvolution3dopdescriptor/strideinx.md) property.
-- `strideInY`: See [`strideInY`](mpsgraphconvolution3dopdescriptor/strideiny.md) property.
-- `strideInZ`: See [`strideInZ`](mpsgraphconvolution3dopdescriptor/strideinz.md) property.
-- `dilationRateInX`: See [`dilationRateInX`](mpsgraphconvolution3dopdescriptor/dilationrateinx.md) property.
-- `dilationRateInY`: See [`dilationRateInY`](mpsgraphconvolution3dopdescriptor/dilationrateiny.md) property.
-- `dilationRateInZ`: See [`dilationRateInZ`](mpsgraphconvolution3dopdescriptor/dilationrateinz.md) property.
-- `groups`: See [`groups`](mpsgraphconvolution3dopdescriptor/groups.md) property.
-- `paddingStyle`: See [`paddingStyle`](mpsgraphconvolution3dopdescriptor/paddingstyle.md) property.
-- `dataLayout`: See [`dataLayout`](mpsgraphconvolution3dopdescriptor/datalayout.md) property.
-- `weightsLayout`: See [`weightsLayout`](mpsgraphconvolution3dopdescriptor/weightslayout.md) property.
+- `strideInX`: See [`strideInX`](./strideinx.md) property.
+- `strideInY`: See [`strideInY`](./strideiny.md) property.
+- `strideInZ`: See [`strideInZ`](./strideinz.md) property.
+- `dilationRateInX`: See [`dilationRateInX`](./dilationrateinx.md) property.
+- `dilationRateInY`: See [`dilationRateInY`](./dilationrateiny.md) property.
+- `dilationRateInZ`: See [`dilationRateInZ`](./dilationrateinz.md) property.
+- `groups`: See [`groups`](./groups.md) property.
+- `paddingStyle`: See [`paddingStyle`](./paddingstyle.md) property.
+- `dataLayout`: See [`dataLayout`](./datalayout.md) property.
+- `weightsLayout`: See [`weightsLayout`](./weightslayout.md) property.
 
 
 ---

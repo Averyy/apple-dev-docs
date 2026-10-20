@@ -1,7 +1,8 @@
 # settingAttributes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an attributed string by setting the attributed string’s attributes to those in a specified attribute container.
 
@@ -30,11 +31,12 @@ An attributed string from setting the attributed string’s attributes to those 
 
 ## See Also
 
-- [func mergingAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy) -> AttributedString](attributedstringprotocol/mergingattributes(_:mergepolicy:).md)
+### Applying Attributes
+- [func mergingAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy) -> AttributedString](./mergingattributes%28_,mergepolicy%29.md)
   Returns an attributed string by merging the attributed string’s attributes with those in a specified attribute container.
-- [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
+- [AttributedString.AttributeMergePolicy](../attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
-- [func replacingAttributes(AttributeContainer, with: AttributeContainer) -> AttributedString](attributedstringprotocol/replacingattributes(_:with:).md)
+- [func replacingAttributes(AttributeContainer, with: AttributeContainer) -> AttributedString](./replacingattributes%28_,with%29.md)
   Returns an attributed string by replacing occurrences of attributes in one attribute container with those in another attribute container.
 
 

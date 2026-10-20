@@ -1,17 +1,22 @@
 # pixelsWide
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the image, measured in pixels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var pixelsWide: Int { get set }
+```
+
+```objc
+@property NSInteger pixelsWide;
 ```
 
 #### Discussion
@@ -22,23 +27,25 @@ Subclasses can use this property when loading image data to notify the parent cl
 
 ## See Also
 
-- [var NSImageRepMatchesDevice: Int](nsimagerepmatchesdevice.md)
+### Related Documentation
+- [var NSImageRepMatchesDevice: Int](../nsimagerepmatchesdevice.md)
   A constant indicating that the value of certain attributes, such as the number of colors or bits per sample, will change to match the display device.
-- [var size: NSSize](nsimagerep/size.md)
+- [var size: NSSize](./size.md)
   The size of the image representation, measured in points in the user coordinate space.
-- [var bitsPerSample: Int](nsimagerep/bitspersample.md)
+### Specifying Information About the Representation
+- [var bitsPerSample: Int](./bitspersample.md)
   The number of bits per sample in the object (if the object is a planar image, this property contains the number of bits per sample per plane).
-- [var colorSpaceName: NSColorSpaceName](nsimagerep/colorspacename.md)
+- [var colorSpaceName: NSColorSpaceName](./colorspacename.md)
   The name of the color space used by the image data.
-- [var hasAlpha: Bool](nsimagerep/hasalpha.md)
+- [var hasAlpha: Bool](./hasalpha.md)
   A Boolean value that indicates whether the image data has an alpha channel.
-- [var isOpaque: Bool](nsimagerep/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the image is opaque.
-- [var pixelsHigh: Int](nsimagerep/pixelshigh.md)
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of the image, measured in pixels.
-- [var layoutDirection: NSImage.LayoutDirection](nsimagerep/layoutdirection.md)
+- [var layoutDirection: NSImage.LayoutDirection](./layoutdirection.md)
   The layout direction for the image.
-- [Device-Specific Value](device-specific-value.md)
+- [Device-Specific Value](../device-specific-value.md)
   A constant that is used by image representations to denote an attribute whose value changes to match the display device.
 
 

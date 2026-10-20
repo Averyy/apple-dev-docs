@@ -1,23 +1,25 @@
 # PERemoveNVRAMProperty
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 boolean_t PERemoveNVRAMProperty(const char *symbol);
 ```
 
 ## See Also
 
-- [PEReadNVRAMProperty](1451596-pereadnvramproperty.md)
-- [PEWriteNVRAMBooleanProperty](1451625-pewritenvrambooleanproperty.md)
-- [PEWriteNVRAMProperty](1451578-pewritenvramproperty.md)
-- [PEWriteNVRAMPropertyWithCopy](3151873-pewritenvrampropertywithcopy.md)
+### NVRAM
+- [PEReadNVRAMProperty](./api-1451596-pereadnvramproperty.md)
+- [PEWriteNVRAMBooleanProperty](./api-1451625-pewritenvrambooleanproperty.md)
+- [PEWriteNVRAMProperty](./api-1451578-pewritenvramproperty.md)
+- [PEWriteNVRAMPropertyWithCopy](./api-3151873-pewritenvrampropertywithcopy.md)
 
 
 ---

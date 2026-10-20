@@ -1,7 +1,8 @@
 # kAXNumberOfCharactersAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The total number of characters (not bytes) in the editable text element represented by this accessibility object. This attribute is required for all accessibility objects that represent editable text elements. 
 
@@ -12,6 +13,10 @@ The total number of characters (not bytes) in the editable text element represen
 
 ```swift
 var kAXNumberOfCharactersAttribute: String { get }
+```
+
+```c
+#define kAXNumberOfCharactersAttribute
 ```
 
 

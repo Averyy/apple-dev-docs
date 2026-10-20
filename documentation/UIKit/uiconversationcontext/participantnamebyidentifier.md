@@ -1,7 +1,8 @@
 # participantNameByIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that relates participant identifiers to participant names.
 
@@ -16,11 +17,16 @@ A dictionary that relates participant identifiers to participant names.
 var participantNameByIdentifier: [String : PersonNameComponents] { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,NSPersonNameComponents *> * participantNameByIdentifier;
+```
+
 ## See Also
 
-- [var selfIdentifiers: Set<String>](uiconversationcontext/selfidentifiers.md)
+### Getting conversation participants
+- [var selfIdentifiers: Set<String>](./selfidentifiers.md)
   A set of strings that identifies the active person in the conversation on the current device.
-- [var responsePrimaryRecipientIdentifiers: Set<String>](uiconversationcontext/responseprimaryrecipientidentifiers.md)
+- [var responsePrimaryRecipientIdentifiers: Set<String>](./responseprimaryrecipientidentifiers.md)
   A dictionary that relates participant identifiers to participant names.
 
 

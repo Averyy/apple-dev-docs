@@ -1,14 +1,15 @@
 # mach_vm_deferred_reclamation_buffer_resize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_vm_deferred_reclamation_buffer_resize(task_t target_task, uint32_t size);
 ```
 

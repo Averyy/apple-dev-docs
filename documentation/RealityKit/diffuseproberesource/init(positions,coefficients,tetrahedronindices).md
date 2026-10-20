@@ -1,7 +1,8 @@
 # init(positions:coefficients:tetrahedronIndices:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diffuse probe resource from arrays of probe data.
 
@@ -22,7 +23,7 @@ convenience init(positions: [SIMD3<Float>], coefficients: [InlineArray<3, SIMD4<
 
 #### Discussion
 
-> **Note**: An error if the data is invalid — for example, if `positions.count` and `coefficients.count` differ, if fewer than 4 probes are provided, or if any tetrahedral index is out of bounds.
+> **Throws**: An error if the data is invalid — for example, if `positions.count` and `coefficients.count` differ, if fewer than 4 probes are provided, or if any tetrahedral index is out of bounds.
 
 ## Parameters
 

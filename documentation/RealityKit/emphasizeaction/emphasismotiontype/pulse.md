@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.pulse
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scales larger and smaller like a heartbeat.
 

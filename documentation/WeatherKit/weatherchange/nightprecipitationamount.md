@@ -1,7 +1,8 @@
 # nightPrecipitationAmount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How the forecasted precipitation amount, during the night of this day, compares to that of before.
 

@@ -1,7 +1,8 @@
 # longLivedOperation(for:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the long-lived operation for the specified operation ID and returns it to an awaiting caller.
 
@@ -11,7 +12,7 @@ Fetches the long-lived operation for the specified operation ID and returns it t
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # kSecAttrIsExtractable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s extractability.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s extractability.
 let kSecAttrIsExtractable: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrIsExtractable;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and indicates whether the item can be exported from its keychain. Items of class [`kSecClassKey`](ksecclasskey.md) have this attribute.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and indicates whether the item can be exported from its keychain. Items of class [`kSecClassKey`](./ksecclasskey.md) have this attribute.
 
 
 ---

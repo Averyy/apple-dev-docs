@@ -1,7 +1,8 @@
 # CKShare.ParticipantPermission.readWrite
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant has read-and-write permissions for the share.
 
@@ -20,13 +21,18 @@ The participant has read-and-write permissions for the share.
 case readWrite
 ```
 
+```c
+CKShareParticipantPermissionReadWrite
+```
+
 ## See Also
 
-- [CKShare.ParticipantPermission.none](ckshare/participantpermission/none.md)
+### Permissions
+- [CKShare.ParticipantPermission.none](./none.md)
   The participant doesn’t have any permissions for the share.
-- [CKShare.ParticipantPermission.readOnly](ckshare/participantpermission/readonly.md)
+- [CKShare.ParticipantPermission.readOnly](./readonly.md)
   The participant has read-only permissions for the share.
-- [CKShare.ParticipantPermission.unknown](ckshare/participantpermission/unknown.md)
+- [CKShare.ParticipantPermission.unknown](./unknown.md)
   The participant’s permissions are unknown.
 
 

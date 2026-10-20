@@ -1,7 +1,8 @@
 # OSLogEntrySignpost.SignpostType.event
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The signpost marks an event.
 
@@ -20,13 +21,18 @@ The signpost marks an event.
 case event
 ```
 
+```c
+OSLogEntrySignpostTypeEvent
+```
+
 ## See Also
 
-- [OSLogEntrySignpost.SignpostType.undefined](oslogentrysignpost/signposttype-swift.enum/undefined.md)
+### Enumeration Cases
+- [OSLogEntrySignpost.SignpostType.undefined](./undefined.md)
   The signpost does not have a type.
-- [OSLogEntrySignpost.SignpostType.intervalBegin](oslogentrysignpost/signposttype-swift.enum/intervalbegin.md)
+- [OSLogEntrySignpost.SignpostType.intervalBegin](./intervalbegin.md)
   The signpost marks the start of a time interval.
-- [OSLogEntrySignpost.SignpostType.intervalEnd](oslogentrysignpost/signposttype-swift.enum/intervalend.md)
+- [OSLogEntrySignpost.SignpostType.intervalEnd](./intervalend.md)
   The signpost marks the end of a time interval.
 
 

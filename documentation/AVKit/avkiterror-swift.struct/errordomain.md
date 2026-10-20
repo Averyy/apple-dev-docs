@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -18,9 +19,10 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [AVKitError.Code](avkiterror-swift.struct/code.md)
+### Inspecting an error
+- [AVKitError.Code](./code.md)
   Constants that identify framework error codes.
-- [Error constants](error-constants.md)
+- [Error constants](../error-constants.md)
   Error code constants for framework operations.
 
 

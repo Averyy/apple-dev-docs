@@ -1,12 +1,15 @@
 # isBordered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the color well has a border.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
+
+> **Deprecated**: This property will be deprecated in a future release.
 
 ## Declaration
 
@@ -14,19 +17,24 @@ A Boolean value that determines whether the color well has a border.
 var isBordered: Bool { get set }
 ```
 
+```objc
+@property (getter=isBordered) BOOL bordered;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the color well has a border; if it’s [`false`](https://developer.apple.com/documentation/swift/false), the color well doesn’t have a border. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](../../Swift/true.md), the color well has a border; if it’s [`false`](../../Swift/false.md), the color well doesn’t have a border. The default value of this property is [`true`](../../Swift/true.md).
 
 A borderless color well doesn’t display the Colors window when someone clicks it.
 
 ## See Also
 
-- [var colorWellStyle: NSColorWell.Style](nscolorwell/colorwellstyle.md)
+### Configuring the appearance
+- [var colorWellStyle: NSColorWell.Style](./colorwellstyle.md)
   The appearance and interaction style to apply to the color well.
-- [NSColorWell.Style](nscolorwell/style.md)
+- [NSColorWell.Style](./style.md)
   Constants that specify the appearance and interaction modes for a color well.
-- [var image: NSImage?](nscolorwell/image.md)
+- [var image: NSImage?](./image.md)
   The image to display on the button portion of a color well that adopts the expanded style.
 
 

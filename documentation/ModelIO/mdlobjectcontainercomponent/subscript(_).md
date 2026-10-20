@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 subscript(index: Int) -> MDLObject { get }
+```
+
+```objc
+- (MDLObject *) objectAtIndexedSubscript:(NSUInteger) index;
 ```
 
 

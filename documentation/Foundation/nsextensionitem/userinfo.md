@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional dictionary of keys and values corresponding to the extension item’s properties.
 
@@ -20,15 +21,28 @@ An optional dictionary of keys and values corresponding to the extension item’
 var userInfo: [AnyHashable : Any]? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSDictionary * userInfo;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSDictionary * userInfo;
+```
+
 #### Discussion
 
-If applicable to a particular extension type, additional information may be available in the `userInfo` dictionary. For example, in the context of an Action extension, the `userInfo` dictionary may contain values for the keys [`NSExtensionItemAttachmentsKey`](nsextensionitemattachmentskey.md), [`NSExtensionItemAttributedContentTextKey`](nsextensionitemattributedcontenttextkey.md), and [`NSExtensionItemAttributedTitleKey`](nsextensionitemattributedtitlekey.md).
+If applicable to a particular extension type, additional information may be available in the `userInfo` dictionary. For example, in the context of an Action extension, the `userInfo` dictionary may contain values for the keys [`NSExtensionItemAttachmentsKey`](../nsextensionitemattachmentskey.md), [`NSExtensionItemAttributedContentTextKey`](../nsextensionitemattributedcontenttextkey.md), and [`NSExtensionItemAttributedTitleKey`](../nsextensionitemattributedtitlekey.md).
 
-> ❗ **Important**:  Setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md), [`attributedContentText`](nsextensionitem/attributedcontenttext.md), or [`attributedTitle`](nsextensionitem/attributedtitle.md) overrides those properties.
+> ❗ **Important**:  Setting the [`userInfo`](./userinfo.md) dictionary after setting [`attachments`](./attachments.md), [`attributedContentText`](./attributedcontenttext.md), or [`attributedTitle`](./attributedtitle.md) overrides those properties.
 
 ## See Also
 
-- [var attributedTitle: NSAttributedString?](nsextensionitem/attributedtitle.md)
+### Identifying the Item
+- [var attributedTitle: NSAttributedString?](./attributedtitle.md)
   An optional title for the item.
 
 

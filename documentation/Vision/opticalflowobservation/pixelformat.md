@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The four-character code that identifies the pixel format.
 
@@ -22,8 +23,9 @@ var pixelFormat: OSType { get }
 
 ## See Also
 
-- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
-- [var size: CGSize](opticalflowobservation/size.md)
+### Inspecting an observation
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./pixelbuffer.md)
+- [var size: CGSize](./size.md)
   The size of the observation image.
 
 

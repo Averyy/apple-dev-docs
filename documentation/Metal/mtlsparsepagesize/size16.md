@@ -1,7 +1,8 @@
 # MTLSparsePageSize.size16
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents a sparse texture’s page size of 16 kilobytes.
 
@@ -19,11 +20,16 @@ Represents a sparse texture’s page size of 16 kilobytes.
 case size16
 ```
 
+```c
+MTLSparsePageSize16
+```
+
 ## See Also
 
-- [MTLSparsePageSize.size64](mtlsparsepagesize/size64.md)
+### Sparse texture page sizes
+- [MTLSparsePageSize.size64](./size64.md)
   Represents a sparse texture’s page size of 64 kilobytes.
-- [MTLSparsePageSize.size256](mtlsparsepagesize/size256.md)
+- [MTLSparsePageSize.size256](./size256.md)
   Represents a sparse texture’s page size of 256 kilobytes.
 
 

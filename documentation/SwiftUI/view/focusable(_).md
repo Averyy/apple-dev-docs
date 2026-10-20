@@ -1,7 +1,8 @@
 # focusable(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies if the view is focusable.
 
@@ -31,9 +32,10 @@ A view that sets whether a view is focusable.
 
 ## See Also
 
-- [func focusable(Bool, interactions: FocusInteractions) -> some View](view/focusable(_:interactions:).md)
+### Indicating that a view can receive focus
+- [func focusable(Bool, interactions: FocusInteractions) -> some View](./focusable%28_,interactions%29.md)
   Specifies if the view is focusable, and if so, what focus-driven interactions it supports.
-- [struct FocusInteractions](focusinteractions.md)
+- [struct FocusInteractions](../focusinteractions.md)
   Values describe different focus interactions that a view can support.
 
 

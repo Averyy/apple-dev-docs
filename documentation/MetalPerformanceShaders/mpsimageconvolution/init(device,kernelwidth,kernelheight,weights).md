@@ -1,7 +1,8 @@
 # init(device:kernelWidth:kernelHeight:weights:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a convolution filter.
 
@@ -17,6 +18,10 @@ Initializes a convolution filter.
 
 ```swift
 init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights kernelWeights: UnsafePointer<Float>)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight weights:(const float *) kernelWeights;
 ```
 
 #### Return Value

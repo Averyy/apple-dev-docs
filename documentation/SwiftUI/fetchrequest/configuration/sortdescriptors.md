@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s sort descriptors, accessed as value types.
 
@@ -21,15 +22,18 @@ The request’s sort descriptors, accessed as value types.
 @preconcurrency var sortDescriptors: [SortDescriptor<Result>] { get set }
 ```
 
+Available when `Result` inherits `NSManagedObject`.
+
 #### Discussion
 
-Set this configuration value to cause a [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances. If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances, set [`nsSortDescriptors`](fetchrequest/configuration/nssortdescriptors.md) instead.
+Set this configuration value to cause a [`FetchRequest`](../../fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances. If you want to use [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances, set [`nsSortDescriptors`](./nssortdescriptors.md) instead.
 
-Access this value of a [`FetchRequest.Configuration`](fetchrequest/configuration.md) structure for a given request by using the [`sortDescriptors`](fetchedresults/sortdescriptors.md) property on the associated [`FetchedResults`](fetchedresults.md) instance, either directly or through a [`Binding`](binding.md).
+Access this value of a [`FetchRequest.Configuration`](../configuration.md) structure for a given request by using the [`sortDescriptors`](../../fetchedresults/sortdescriptors.md) property on the associated [`FetchedResults`](../../fetchedresults.md) instance, either directly or through a [`Binding`](../../binding.md).
 
 ## See Also
 
-- [var nsSortDescriptors: [NSSortDescriptor]](fetchrequest/configuration/nssortdescriptors.md)
+### Setting sort descriptors
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
 
 

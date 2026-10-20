@@ -1,7 +1,8 @@
 # init(options:mask:intersectionFunctionTableOffset:accelerationStructureIndex:userID:motionTransformsStartIndex:motionTransformsCount:motionStartBorderMode:motionEndBorderMode:motionStartTime:motionEndTime:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an acceleration-structure motion instance with the property values you provide.
 
@@ -21,7 +22,7 @@ init(options: MTLAccelerationStructureInstanceOptions, mask: UInt32, intersectio
 
 #### Discussion
 
-The initializer sets the descriptor instance’s properties to the values you pass to the initializer’s parameters. However, you can change the descriptor’s property values at any time, such as between creating separate acceleration-structure motion instances. For example, apps typically assign a unique value to [`userID`](mtlaccelerationstructuremotioninstancedescriptor/userid.md) before they create each motion instance with the same descriptor.
+The initializer sets the descriptor instance’s properties to the values you pass to the initializer’s parameters. However, you can change the descriptor’s property values at any time, such as between creating separate acceleration-structure motion instances. For example, apps typically assign a unique value to [`userID`](./userid.md) before they create each motion instance with the same descriptor.
 
 ## Parameters
 
@@ -31,15 +32,16 @@ The initializer sets the descriptor instance’s properties to the values you pa
 - `accelerationStructureIndex`: The index of an acceleration structure that applies to new acceleration-structure motion-instances.
 - `userID`: An unique identifier for an acceleration-structure motion-instance.
 - `motionTransformsStartIndex`: An index of the motion data that represents the first key-frame’s motion data.
-- `motionTransformsCount`: The number of motion data key-frames that begin at [`motionTransformsStartIndex`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md).
-- `motionStartBorderMode`: A behavior that configures how an acceleration-structure motion-instance handles timestamps before [`motionStartTime`](mtlaccelerationstructuremotioninstancedescriptor/motionstarttime.md).
-- `motionEndBorderMode`: A behavior that configures how an acceleration-structure motion-instance handles timestamps after [`motionEndTime`](mtlaccelerationstructuremotioninstancedescriptor/motionendtime.md).
-- `motionStartTime`: A starting time for the range of motion that the key-frame data (see [`motionTransformsStartIndex`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md) and [`motionTransformsCount`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformscount.md)) represent.
-- `motionEndTime`: An ending time for the range of motion that the key-frame data (see [`motionTransformsStartIndex`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md) and [`motionTransformsCount`](mtlaccelerationstructuremotioninstancedescriptor/motiontransformscount.md)) represent.
+- `motionTransformsCount`: The number of motion data key-frames that begin at [`motionTransformsStartIndex`](./motiontransformsstartindex.md).
+- `motionStartBorderMode`: A behavior that configures how an acceleration-structure motion-instance handles timestamps before [`motionStartTime`](./motionstarttime.md).
+- `motionEndBorderMode`: A behavior that configures how an acceleration-structure motion-instance handles timestamps after [`motionEndTime`](./motionendtime.md).
+- `motionStartTime`: A starting time for the range of motion that the key-frame data (see [`motionTransformsStartIndex`](./motiontransformsstartindex.md) and [`motionTransformsCount`](./motiontransformscount.md)) represent.
+- `motionEndTime`: An ending time for the range of motion that the key-frame data (see [`motionTransformsStartIndex`](./motiontransformsstartindex.md) and [`motionTransformsCount`](./motiontransformscount.md)) represent.
 
 ## See Also
 
-- [init()](mtlaccelerationstructuremotioninstancedescriptor/init.md)
+### Creating an instance descriptor
+- [init()](./init%28%29.md)
   Creates an acceleration-structure motion instance with default property values.
 
 

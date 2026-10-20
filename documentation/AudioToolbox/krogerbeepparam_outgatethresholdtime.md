@@ -1,10 +1,11 @@
 # kRogerBeepParam_OutGateThresholdTime
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kRogerBeepParam_OutGateThresholdTime: AudioUnitParameterID { get }
 ```
 
+```c
+kRogerBeepParam_OutGateThresholdTime
+```
+
 ## See Also
 
-- [var kRogerBeepParam_InGateThreshold: AudioUnitParameterID](krogerbeepparam_ingatethreshold.md)
-- [var kRogerBeepParam_InGateThresholdTime: AudioUnitParameterID](krogerbeepparam_ingatethresholdtime.md)
-- [var kRogerBeepParam_OutGateThreshold: AudioUnitParameterID](krogerbeepparam_outgatethreshold.md)
-- [var kRogerBeepParam_RogerGain: AudioUnitParameterID](krogerbeepparam_rogergain.md)
-- [var kRogerBeepParam_RogerType: AudioUnitParameterID](krogerbeepparam_rogertype.md)
-- [var kRogerBeepParam_Sensitivity: AudioUnitParameterID](krogerbeepparam_sensitivity.md)
+### Constants
+- [var kRogerBeepParam_InGateThreshold: AudioUnitParameterID](./krogerbeepparam_ingatethreshold.md)
+- [var kRogerBeepParam_InGateThresholdTime: AudioUnitParameterID](./krogerbeepparam_ingatethresholdtime.md)
+- [var kRogerBeepParam_OutGateThreshold: AudioUnitParameterID](./krogerbeepparam_outgatethreshold.md)
+- [var kRogerBeepParam_RogerGain: AudioUnitParameterID](./krogerbeepparam_rogergain.md)
+- [var kRogerBeepParam_RogerType: AudioUnitParameterID](./krogerbeepparam_rogertype.md)
+- [var kRogerBeepParam_Sensitivity: AudioUnitParameterID](./krogerbeepparam_sensitivity.md)
 
 
 ---

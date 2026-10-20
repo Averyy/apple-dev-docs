@@ -1,7 +1,8 @@
 # withDesign(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new font descriptor based on the current object, but with the specified design style.
 
@@ -14,6 +15,10 @@ Returns a new font descriptor based on the current object, but with the specifie
 func withDesign(_ design: NSFontDescriptor.SystemDesign) -> Self?
 ```
 
+```objc
+- (instancetype) fontDescriptorWithDesign:(NSFontDescriptorSystemDesign) design;
+```
+
 #### Return Value
 
 The new font descriptor.
@@ -24,19 +29,20 @@ The new font descriptor.
 
 ## See Also
 
-- [func addingAttributes([NSFontDescriptor.AttributeName : Any]) -> NSFontDescriptor](nsfontdescriptor/addingattributes(_:).md)
+### Modifying an Existing Font Descriptor
+- [func addingAttributes([NSFontDescriptor.AttributeName : Any]) -> NSFontDescriptor](./addingattributes%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified attributes taking precedence over the existing ones.
-- [func withFace(String) -> NSFontDescriptor](nsfontdescriptor/withface(_:).md)
+- [func withFace(String) -> NSFontDescriptor](./withface%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified face.
-- [func withFamily(String) -> NSFontDescriptor](nsfontdescriptor/withfamily(_:).md)
+- [func withFamily(String) -> NSFontDescriptor](./withfamily%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified font family.
-- [func withMatrix(AffineTransform) -> NSFontDescriptor](nsfontdescriptor/withmatrix(_:).md)
+- [func withMatrix(AffineTransform) -> NSFontDescriptor](./withmatrix%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified font matrix.
-- [func withSize(CGFloat) -> NSFontDescriptor](nsfontdescriptor/withsize(_:).md)
+- [func withSize(CGFloat) -> NSFontDescriptor](./withsize%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified point size.
-- [func withSymbolicTraits(NSFontDescriptor.SymbolicTraits) -> NSFontDescriptor](nsfontdescriptor/withsymbolictraits(_:).md)
+- [func withSymbolicTraits(NSFontDescriptor.SymbolicTraits) -> NSFontDescriptor](./withsymbolictraits%28_%29.md)
   Returns a new font descriptor based on the current object, but with the specified symbolic traits taking precedence over the existing ones.
-- [NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign.md)
+- [NSFontDescriptor.SystemDesign](./systemdesign.md)
   Constants for font designs, such as monospace, rounded, and serif.
 
 

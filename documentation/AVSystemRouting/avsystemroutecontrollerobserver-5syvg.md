@@ -1,7 +1,8 @@
 # AVSystemRouteControllerObserver
 
 **Framework**: AVSystemRouting  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for observers of a system routing controller.
 
@@ -18,22 +19,23 @@ protocol AVSystemRouteControllerObserver : AnyObject
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
 ## Topics
 
 ### Instance Methods
-- [func systemRouteController(AVSystemRouteController, handle: AVSystemRouteEvent) async -> Bool](avsystemroutecontrollerobserver-5syvg/systemroutecontroller(_:handle:).md)
+- [func systemRouteController(AVSystemRouteController, handle: AVSystemRouteEvent) async -> Bool](./avsystemroutecontrollerobserver-5syvg/systemroutecontroller%28_,handle%29.md)
   Connects to, or disconnects from, a device when a user requests it in the picker.
 
 ## See Also
 
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+### Essentials
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
   Respond to routing events and control playback on a TV, speaker, or other media device.
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
   Send media from an app to nearby remote playback devices.
-- [class AVSystemRouteController](avsystemroutecontroller-18ns8.md)
+- [class AVSystemRouteController](./avsystemroutecontroller-18ns8.md)
   An object that manages interaction with system routes.
 
 

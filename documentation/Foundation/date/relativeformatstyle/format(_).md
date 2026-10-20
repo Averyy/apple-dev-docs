@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware string representation from a relative date value.
 
@@ -26,7 +27,7 @@ A string representation of the relative date.
 
 #### Discussion
 
-The [`format(_:)`](date/relativeformatstyle/format(_:).md) instance method generates a string from the provided relative date. Once you create a style, you can use it to format dates multiple times.
+The [`format(_:)`](./format%28_%29.md) instance method generates a string from the provided relative date. Once you create a style, you can use it to format dates multiple times.
 
 The following example applies a format style repeatedly to produce string representations of relative dates:
 

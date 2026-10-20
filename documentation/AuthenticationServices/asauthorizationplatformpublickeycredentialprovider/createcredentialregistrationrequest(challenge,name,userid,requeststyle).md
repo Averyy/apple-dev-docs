@@ -1,7 +1,8 @@
 # createCredentialRegistrationRequest(challenge:name:userID:requestStyle:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data, requestStyle: ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest.RequestStyle) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest
+```
+
+```objc
+- (ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest *) createCredentialRegistrationRequestWithChallenge:(NSData *) challenge name:(NSString *) name userID:(NSData *) userID requestStyle:(ASAuthorizationPlatformPublicKeyCredentialRegistrationRequestStyle) requestStyle;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ Create a request to register a new platform credential.
 
 ## See Also
 
-- [var relyingPartyIdentifier: String](asauthorizationplatformpublickeycredentialprovider/relyingpartyidentifier.md)
+### Creating the request
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The domain name of the service to register or authorize against.
-- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialassertionrequest(challenge:).md)
+- [func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./createcredentialassertionrequest%28challenge%29.md)
   Creates an assertion request with a challenge.
-- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](asauthorizationplatformpublickeycredentialprovider/createcredentialregistrationrequest(challenge:name:userid:).md)
+- [func createCredentialRegistrationRequest(challenge: Data, name: String, userID: Data) -> ASAuthorizationPlatformPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28challenge,name,userid%29.md)
   Creates a registration request with a challenge, name, and user ID.
 
 

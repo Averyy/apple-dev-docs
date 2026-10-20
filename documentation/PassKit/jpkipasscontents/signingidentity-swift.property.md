@@ -1,7 +1,8 @@
 # signingIdentity
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Allows access to the signing identity, if present in the JPKI applet.
 
@@ -17,9 +18,10 @@ let signingIdentity: JPKIPassContents.SigningIdentity?
 
 ## See Also
 
-- [func changePassword(from: String, to: String) async throws](jpkipasscontents/signingidentity-swift.struct/changepassword(from:to:).md)
+### Signing identity authentication
+- [func changePassword(from: String, to: String) async throws](./signingidentity-swift.struct/changepassword%28from,to%29.md)
   A function that allows you to change the password associated with the signing identity.
-- [JPKIPassContents.SigningIdentity.AuthenticationType](jpkipasscontents/signingidentity-swift.struct/authenticationtype.md)
+- [JPKIPassContents.SigningIdentity.AuthenticationType](./signingidentity-swift.struct/authenticationtype.md)
   Defines the valid user authentication request options for the signing identity.
 
 

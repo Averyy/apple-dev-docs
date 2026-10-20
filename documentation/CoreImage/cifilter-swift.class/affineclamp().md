@@ -1,7 +1,8 @@
 # affineClamp()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Performs a transform on the image and extends the image edges to infinity.
 
@@ -19,6 +20,10 @@ Performs a transform on the image and extends the image edges to infinity.
 class func affineClamp() -> any CIFilter & CIAffineClamp
 ```
 
+```objc
++ (CIFilter<CIAffineClamp> *) affineClampFilter;
+```
+
 #### Return Value
 
 The tiled image.
@@ -29,8 +34,8 @@ This method applies the affine clamp filter to an image. This effect performs si
 
 The affine clamp filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`transform`**: A [`CGAffineTransform`](https://developer.apple.com/documentation/corefoundation/cgaffinetransform) to constrain to the image.
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`transform`**: A [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md) to constrain to the image.
 
 The following code creates a filter that produces a cropped image with colored edges to fill the rest of the image:
 
@@ -43,39 +48,40 @@ func affineClamp(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, an affine clamp filter is applied, resulting in the edges of the image colors stretching to the edge of the photo.](/images/com.apple.coreimage/media-3624745@2x.png)
+![Two photographs of a bouquet of multiple colorful flowers. The photo on the left is up close with good lighting and focus. In the photo on the right, an affine clamp filter is applied, resulting in the edges of the image colors stretching to the edge of the photo.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3624745@2x.png)
 
 ## See Also
 
-- [class func affineTile() -> any CIFilter & CIAffineTile](cifilter-swift.class/affinetile.md)
+### Filters
+- [class func affineTile() -> any CIFilter & CIAffineTile](./affinetile%28%29.md)
   Performs a transform on the image and tiles the result.
-- [class func eightfoldReflectedTile() -> any CIFilter & CIEightfoldReflectedTile](cifilter-swift.class/eightfoldreflectedtile.md)
+- [class func eightfoldReflectedTile() -> any CIFilter & CIEightfoldReflectedTile](./eightfoldreflectedtile%28%29.md)
   Creates an eight-way reflected pattern.
-- [class func fourfoldReflectedTile() -> any CIFilter & CIFourfoldReflectedTile](cifilter-swift.class/fourfoldreflectedtile.md)
+- [class func fourfoldReflectedTile() -> any CIFilter & CIFourfoldReflectedTile](./fourfoldreflectedtile%28%29.md)
   Creates a four-way reflected pattern.
-- [class func fourfoldRotatedTile() -> any CIFilter & CIFourfoldRotatedTile](cifilter-swift.class/fourfoldrotatedtile.md)
+- [class func fourfoldRotatedTile() -> any CIFilter & CIFourfoldRotatedTile](./fourfoldrotatedtile%28%29.md)
   Creates a tiled image by rotating a tile in increments of 90 degrees.
-- [class func fourfoldTranslatedTile() -> any CIFilter & CIFourfoldTranslatedTile](cifilter-swift.class/fourfoldtranslatedtile.md)
+- [class func fourfoldTranslatedTile() -> any CIFilter & CIFourfoldTranslatedTile](./fourfoldtranslatedtile%28%29.md)
   Creates a tiled image by applying four translation operations.
-- [class func glideReflectedTile() -> any CIFilter & CIGlideReflectedTile](cifilter-swift.class/glidereflectedtile.md)
+- [class func glideReflectedTile() -> any CIFilter & CIGlideReflectedTile](./glidereflectedtile%28%29.md)
   Tiles an image by rotating and reflecting a tile from the image.
-- [class func kaleidoscope() -> any CIFilter & CIKaleidoscope](cifilter-swift.class/kaleidoscope.md)
+- [class func kaleidoscope() -> any CIFilter & CIKaleidoscope](./kaleidoscope%28%29.md)
   Creates a 12-way kaleidoscopic image from an image.
-- [class func opTile() -> any CIFilter & CIOpTile](cifilter-swift.class/optile.md)
+- [class func opTile() -> any CIFilter & CIOpTile](./optile%28%29.md)
   Produces an effect that mimics a style of visual art that uses optical illusions.
-- [class func parallelogramTile() -> any CIFilter & CIParallelogramTile](cifilter-swift.class/parallelogramtile.md)
+- [class func parallelogramTile() -> any CIFilter & CIParallelogramTile](./parallelogramtile%28%29.md)
   Warps the image to create a parallelogram and tiles the result.
-- [class func perspectiveTile() -> any CIFilter & CIPerspectiveTile](cifilter-swift.class/perspectivetile.md)
+- [class func perspectiveTile() -> any CIFilter & CIPerspectiveTile](./perspectivetile%28%29.md)
   Tiles an image by adjusting the perspective of the image.
-- [class func sixfoldReflectedTile() -> any CIFilter & CISixfoldReflectedTile](cifilter-swift.class/sixfoldreflectedtile.md)
+- [class func sixfoldReflectedTile() -> any CIFilter & CISixfoldReflectedTile](./sixfoldreflectedtile%28%29.md)
   Produces a tiled image from a source image by applying a six-way reflected symmetry.
-- [class func sixfoldRotatedTile() -> any CIFilter & CISixfoldRotatedTile](cifilter-swift.class/sixfoldrotatedtile.md)
+- [class func sixfoldRotatedTile() -> any CIFilter & CISixfoldRotatedTile](./sixfoldrotatedtile%28%29.md)
   Creates a tiled image by rotating in increments of 60 degrees.
-- [class func triangleKaleidoscope() -> any CIFilter & CITriangleKaleidoscope](cifilter-swift.class/trianglekaleidoscope.md)
+- [class func triangleKaleidoscope() -> any CIFilter & CITriangleKaleidoscope](./trianglekaleidoscope%28%29.md)
   Create a triangular kaleidoscope effect and then tiles the result.
-- [class func triangleTile() -> any CIFilter & CITriangleTile](cifilter-swift.class/triangletile.md)
+- [class func triangleTile() -> any CIFilter & CITriangleTile](./triangletile%28%29.md)
   Tiles a triangular area of an image.
-- [class func twelvefoldReflectedTile() -> any CIFilter & CITwelvefoldReflectedTile](cifilter-swift.class/twelvefoldreflectedtile.md)
+- [class func twelvefoldReflectedTile() -> any CIFilter & CITwelvefoldReflectedTile](./twelvefoldreflectedtile%28%29.md)
   Creates a tiled image by rotating in increments of 30 degrees.
 
 

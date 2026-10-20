@@ -6,31 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/dev/mlx_in_cpp.html
 
 # Using MLX in C++
 
-**
-
-- [.rst](../_sources/dev/mlx_in_cpp.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Using MLX in C++
-
- Table of contents 
-
-# Using MLX in C++
-
 You can use MLX in a C++ project with CMake.
 
 Note
@@ -44,7 +19,7 @@ pip install -U mlx
 ```
 
 You can also install the MLX Python package from source or just the C++
-library. For more information see the [documentation on installing MLX](../install.html#build-and-install).
+library. For more information see the [documentation on installing MLX](../install.md#build-and-install).
 
 Next make an example program in `example.cpp`:
 
@@ -128,9 +103,9 @@ Note `find_package(MLX CONFIG REQUIRED)` sets the following variables:
 
 | Variable | Description |
 | --- | --- |
-| MLX_FOUND | Trueif MLX is found |
+| MLX_FOUND | `True` if MLX is found |
 | MLX_INCLUDE_DIRS | Include directory |
 | MLX_LIBRARIES | Libraries to link against |
 | MLX_CXX_FLAGS | Additional compiler flags |
-| MLX_BUILD_ACCELERATE | Trueif MLX was built with Accelerate |
-| MLX_BUILD_METAL | Trueif MLX was built with Metal |
+| MLX_BUILD_ACCELERATE | `True` if MLX was built with Accelerate |
+| MLX_BUILD_METAL | `True` if MLX was built with Metal |

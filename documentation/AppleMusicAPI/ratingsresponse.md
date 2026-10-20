@@ -1,7 +1,8 @@
 # RatingsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a request for a rating.
 
@@ -10,19 +11,20 @@ The response to a request for a rating.
 
 ## Declaration
 
-```swift
+```
 object RatingsResponse
 ```
 
 ## Properties
 
-- `data` ([Ratings]) *(required)*: The [`Ratings`](ratings.md) included in the response for the request.
+- `data` ([Ratings]) *(required)*: The [`Ratings`](./ratings.md) included in the response for the request.
 
 ## See Also
 
-- [object Ratings](ratings.md)
+### Handling the Response
+- [object Ratings](./ratings.md)
   An object that represents a rating for a resource.
-- [object RatingRequest](ratingrequest.md)
+- [object RatingRequest](./ratingrequest.md)
   A request containing the data for a rating.
 
 

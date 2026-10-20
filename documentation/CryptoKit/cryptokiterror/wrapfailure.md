@@ -1,7 +1,8 @@
 # CryptoKitError.wrapFailure
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework can’t wrap the specified key.
 
@@ -22,17 +23,18 @@ case wrapFailure
 
 ## See Also
 
-- [CryptoKitError.incorrectKeySize](cryptokiterror/incorrectkeysize.md)
+### Reporting errors
+- [CryptoKitError.incorrectKeySize](./incorrectkeysize.md)
   The key size is incorrect.
-- [CryptoKitError.invalidParameter](cryptokiterror/invalidparameter.md)
+- [CryptoKitError.invalidParameter](./invalidparameter.md)
   The parameter is invalid.
-- [CryptoKitError.incorrectParameterSize](cryptokiterror/incorrectparametersize.md)
+- [CryptoKitError.incorrectParameterSize](./incorrectparametersize.md)
   The parameter size is incorrect.
-- [CryptoKitError.underlyingCoreCryptoError(error:)](cryptokiterror/underlyingcorecryptoerror(error:).md)
+- [CryptoKitError.underlyingCoreCryptoError(error:)](./underlyingcorecryptoerror%28error%29.md)
   The underlying corecrypto library is unable to complete the requested action.
-- [CryptoKitError.authenticationFailure](cryptokiterror/authenticationfailure.md)
+- [CryptoKitError.authenticationFailure](./authenticationfailure.md)
   The authentication tag or signature is incorrect.
-- [CryptoKitError.unwrapFailure](cryptokiterror/unwrapfailure.md)
+- [CryptoKitError.unwrapFailure](./unwrapfailure.md)
   The framework can’t unwrap the specified key.
 
 

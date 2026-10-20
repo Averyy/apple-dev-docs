@@ -1,7 +1,8 @@
 # AAAttributionError.Code.internalError
 
 **Framework**: AdServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The server is unable to provide a token because of an internal error.
 
@@ -18,11 +19,16 @@ The server is unable to provide a token because of an internal error.
 case internalError
 ```
 
+```c
+AAAttributionErrorCodeInternalError
+```
+
 ## See Also
 
-- [AAAttributionError.Code.networkError](aaattributionerror/code/networkerror.md)
+### Determining the cause of an error
+- [AAAttributionError.Code.networkError](./networkerror.md)
   The server is unable to provide a token because the internet isn’t available.
-- [AAAttributionError.Code.platformNotSupported](aaattributionerror/code/platformnotsupported.md)
+- [AAAttributionError.Code.platformNotSupported](./platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
 
 

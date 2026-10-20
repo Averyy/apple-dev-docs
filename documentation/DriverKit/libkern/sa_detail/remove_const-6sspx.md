@@ -1,24 +1,25 @@
 # remove_const
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T> struct remove_const;
 ```
 
 ## Topics
 
 ### Type Aliases
-- [type](libkern/sa_detail/remove_const-6sspx/type.md)
+- [type](./remove_const-6sspx/type.md)
 
 
 ---

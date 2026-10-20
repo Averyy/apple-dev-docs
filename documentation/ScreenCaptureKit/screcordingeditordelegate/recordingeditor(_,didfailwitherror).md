@@ -1,7 +1,8 @@
 # recordingEditor(_:didFailWithError:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func recordingEditor(_ editor: SCRecordingEditor, didFailWithError error: any Error)
+```
+
+```objc
+- (void) recordingEditor:(SCRecordingEditor *) editor didFailWithError:(NSError *) error;
 ```
 
 #### Discussion

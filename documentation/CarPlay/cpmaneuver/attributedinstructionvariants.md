@@ -1,7 +1,8 @@
 # attributedInstructionVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of attributed instruction variants for the maneuver.
 
@@ -16,13 +17,17 @@ An array of attributed instruction variants for the maneuver.
 var attributedInstructionVariants: [NSAttributedString] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSAttributedString *> * attributedInstructionVariants;
+```
+
 #### Discussion
 
 Localize each variant for display to the user, and make sure the array has at least one variant. The system displays the first variant that fits into the available screen space, so arrange the variants in order from most- to least-preferred.
 
-> **Note**:  If you provide both [`instructionVariants`](cpmaneuver/instructionvariants.md) and [`attributedInstructionVariants`](cpmaneuver/attributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array.
+> **Note**:  If you provide both [`instructionVariants`](./instructionvariants.md) and [`attributedInstructionVariants`](./attributedinstructionvariants.md), the system displays instructions from the attributed instruction variants array.
 
-The attributed strings in the array can have only a single attribute—an [`NSTextAttachment`](https://developer.apple.com/documentation/uikit/nstextattachment). CarPlay removes all other attributes.
+The attributed strings in the array can have only a single attribute—an [`NSTextAttachment`](../../UIKit/nstextattachment.md). CarPlay removes all other attributes.
 
 Using a text attachment attribute, you can add an image to a maneuver instruction as the example below shows. The maximum text attachment image size is 64 x 16 points.
 
@@ -57,9 +62,10 @@ NSAttributedString *container = [NSAttributedString attributedStringWithAttachme
 
 ## See Also
 
-- [var dashboardAttributedInstructionVariants: [NSAttributedString]](cpmaneuver/dashboardattributedinstructionvariants.md)
+### Providing attributed instructions
+- [var dashboardAttributedInstructionVariants: [NSAttributedString]](./dashboardattributedinstructionvariants.md)
   An array of attributed instruction variants for the CarPlay dashboard.
-- [var notificationAttributedInstructionVariants: [NSAttributedString]](cpmaneuver/notificationattributedinstructionvariants.md)
+- [var notificationAttributedInstructionVariants: [NSAttributedString]](./notificationattributedinstructionvariants.md)
   An array of attributed instruction variants for notification banners.
 
 

@@ -1,14 +1,15 @@
 # reserved_out
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 uint64_t reserved_out[16];
 ```
 

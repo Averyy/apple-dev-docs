@@ -1,10 +1,11 @@
 # DOM_DOM_DELTA_PAGE
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var DOM_DOM_DELTA_PAGE: Int { get }
 ```
 
+```c
+DOM_DOM_DELTA_PAGE
+```
+
 ## See Also
 
-- [var DOM_DOM_DELTA_LINE: Int](dom_dom_delta_line.md)
-- [var DOM_DOM_DELTA_PIXEL: Int](dom_dom_delta_pixel.md)
+### Constants
+- [var DOM_DOM_DELTA_LINE: Int](./dom_dom_delta_line.md)
+- [var DOM_DOM_DELTA_PIXEL: Int](./dom_dom_delta_pixel.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # interactionEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual effect for the spring-loaded interaction.
 
@@ -17,9 +18,14 @@ The visual effect for the spring-loaded interaction.
 var interactionEffect: any UISpringLoadedInteractionEffect { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<UISpringLoadedInteractionEffect> interactionEffect;
+```
+
 ## See Also
 
-- [var interactionBehavior: any UISpringLoadedInteractionBehavior](uispringloadedinteraction/interactionbehavior.md)
+### Getting information about the spring-loaded interaction
+- [var interactionBehavior: any UISpringLoadedInteractionBehavior](./interactionbehavior.md)
   The behavior for the spring-loaded interaction.
 
 

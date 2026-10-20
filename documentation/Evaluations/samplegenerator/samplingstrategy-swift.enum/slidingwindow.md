@@ -1,7 +1,8 @@
 # SampleGenerator.SamplingStrategy.slidingWindow
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A strategy that slides a window through the examples, advancing it each batch.
 
@@ -22,7 +23,7 @@ case slidingWindow
 
 ## Mentions
 
-- [Generating synthetic datasets](generating-synthetic-evaluation-datasets.md)
+- [Generating synthetic datasets](../../generating-synthetic-evaluation-datasets.md)
 
 #### Discussion
 
@@ -30,7 +31,8 @@ When the model repeats an inference, this strategy continues retrying as long as
 
 ## See Also
 
-- [SampleGenerator.SamplingStrategy.random(retries:)](samplegenerator/samplingstrategy-swift.enum/random(retries:).md)
+### Strategies
+- [SampleGenerator.SamplingStrategy.random(retries:)](./random%28retries%29.md)
   A strategy that randomly picks a subset of samples each time a model repeats inference.
 
 

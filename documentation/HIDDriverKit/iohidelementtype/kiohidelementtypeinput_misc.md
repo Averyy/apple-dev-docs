@@ -1,35 +1,37 @@
 # kIOHIDElementTypeInput_Misc
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The element contains an input data field of varying size.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDElementTypeInput_Misc
 ```
 
 ## See Also
 
-- [kIOHIDElementTypeInput_Button](iohidelementtype/kiohidelementtypeinput_button.md)
+### Getting the Element Types
+- [kIOHIDElementTypeInput_Button](./kiohidelementtypeinput_button.md)
   The element contains a one-bit input data field.
-- [kIOHIDElementTypeInput_Axis](iohidelementtype/kiohidelementtypeinput_axis.md)
+- [kIOHIDElementTypeInput_Axis](./kiohidelementtypeinput_axis.md)
   The element contains an axis of movement.
-- [kIOHIDElementTypeInput_ScanCodes](iohidelementtype/kiohidelementtypeinput_scancodes.md)
+- [kIOHIDElementTypeInput_ScanCodes](./kiohidelementtypeinput_scancodes.md)
   The element contains an input field with a scan code or usage selector.
-- [kIOHIDElementTypeInput_NULL](iohidelementtype/kiohidelementtypeinput_null.md)
+- [kIOHIDElementTypeInput_NULL](./kiohidelementtypeinput_null.md)
   The element signals the end of an input data field in an input report.
-- [kIOHIDElementTypeOutput](iohidelementtype/kiohidelementtypeoutput.md)
+- [kIOHIDElementTypeOutput](./kiohidelementtypeoutput.md)
   The element contains a data field in an output report.
-- [kIOHIDElementTypeFeature](iohidelementtype/kiohidelementtypefeature.md)
+- [kIOHIDElementTypeFeature](./kiohidelementtypefeature.md)
   The element contains input and output data not intended for consumption by the end user.
-- [kIOHIDElementTypeCollection](iohidelementtype/kiohidelementtypecollection.md)
+- [kIOHIDElementTypeCollection](./kiohidelementtypecollection.md)
   The element acts as a parent container for two or more related elements.
 
 

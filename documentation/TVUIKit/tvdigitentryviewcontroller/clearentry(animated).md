@@ -1,7 +1,8 @@
 # clearEntry(animated:)
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all digits from the digit entry view.
 
@@ -14,6 +15,10 @@ Removes all digits from the digit entry view.
 func clearEntry(animated: Bool)
 ```
 
+```objc
+- (void) clearEntryAnimated:(BOOL) animated;
+```
+
 #### Discussion
 
 The digit entry view animates the digit removal when the `animated` parameter is `YES`.
@@ -24,7 +29,8 @@ The digit entry view animates the digit removal when the `animated` parameter is
 
 ## See Also
 
-- [var entryCompletionHandler: (String) -> Void](tvdigitentryviewcontroller/entrycompletionhandler.md)
+### Entering Information
+- [var entryCompletionHandler: (String) -> Void](./entrycompletionhandler.md)
   A completion handler that cues the app that the user has entered the required number of digits for the digit entry view.
 
 

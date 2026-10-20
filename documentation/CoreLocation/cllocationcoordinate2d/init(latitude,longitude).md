@@ -1,7 +1,8 @@
 # init(latitude:longitude:)
 
 **Framework**: Core Location  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a location coordination object with the specified latitude and longitude values.
 
@@ -27,9 +28,10 @@ init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
 
 ## See Also
 
-- [init()](cllocationcoordinate2d/init.md)
+### Creating a location coordinate
+- [init()](./init%28%29.md)
   Creates a location coordinate object.
-- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](cllocationcoordinate2dmake(_:_:).md)
+- [func CLLocationCoordinate2DMake(CLLocationDegrees, CLLocationDegrees) -> CLLocationCoordinate2D](../cllocationcoordinate2dmake%28_,_%29.md)
   Formats a latitude and longitude value into a coordinate data structure format.
 
 

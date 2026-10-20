@@ -1,7 +1,8 @@
 # ProfileListResponse.ProfileListItem.PayloadContentItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes a profile payload content item.
 
@@ -16,7 +17,7 @@ A dictionary that describes a profile payload content item.
 
 ## Declaration
 
-```swift
+```
 object ProfileListResponse.ProfileListItem.PayloadContentItem
 ```
 
@@ -27,8 +28,12 @@ object ProfileListResponse.ProfileListItem.PayloadContentItem
 - `PayloadIdentifier` (string) *(required)*: The reverse-DNS-style identifier of the payload, such as `com.example.mypayload`.
 - `PayloadOrganization` (string): The human-readable name of the organization that provided the payload.
 - `PayloadType` (string) *(required)*: The type of payload, such as `com.apple.wifi.managed`.
-- `PayloadUUID` (string) *(required)*: The unique identifier of the payload. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
+- `PayloadUUID` (string) *(required)*: The unique identifier of the payload.
+
+  Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 - `PayloadVersion` (integer) *(required)*: The version of the payload. The value is `1`.
+
+  **Allowed Values**: `1`
 
 
 ---

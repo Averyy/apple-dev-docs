@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the array and its elements, suitable for debugging.
 
@@ -22,11 +23,12 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](array/description.md)
+### Describing an Array
+- [var description: String](./description.md)
   A textual representation of the array and its elements.
-- [var customMirror: Mirror](array/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the array.
-- [func hash(into: inout Hasher)](array/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

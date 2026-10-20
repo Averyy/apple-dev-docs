@@ -1,7 +1,8 @@
 # JSBigIntCreateWithString(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSBigIntCreateWithString(_ ctx: JSContextRef, _ string: JSStringRef, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSValueRef
+```
+
+```c
+JSValueRefJSBigIntCreateWithString(JSContextRef ctx, JSStringRef string, JSValueRef*exception);
 ```
 
 #### Return Value

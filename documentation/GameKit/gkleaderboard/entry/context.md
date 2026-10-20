@@ -1,7 +1,8 @@
 # context
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that your game uses.
 
@@ -20,17 +21,22 @@ An integer value that your game uses.
 var context: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSUInteger context;
+```
+
 ## See Also
 
-- [var date: Date](gkleaderboard/entry/date.md)
+### Accessing Properties
+- [var date: Date](./date.md)
   The date and time when the player earns the score.
-- [var formattedScore: String](gkleaderboard/entry/formattedscore.md)
+- [var formattedScore: String](./formattedscore.md)
   The player’s score as a localized string.
-- [var player: GKPlayer](gkleaderboard/entry/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earns the score.
-- [var rank: Int](gkleaderboard/entry/rank.md)
+- [var rank: Int](./rank.md)
   The position of the score in the results of a leaderboard search.
-- [var score: Int](gkleaderboard/entry/score.md)
+- [var score: Int](./score.md)
   The score that the player earns.
 
 

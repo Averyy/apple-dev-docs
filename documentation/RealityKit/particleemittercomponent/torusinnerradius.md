@@ -1,7 +1,8 @@
 # torusInnerRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Radius of the torus’ emitter shape tube. Defaults to 0.25.
 

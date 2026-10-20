@@ -1,17 +1,22 @@
 # attributeName
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the attribute.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var attributeName: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef attributeName;
 ```
 
 

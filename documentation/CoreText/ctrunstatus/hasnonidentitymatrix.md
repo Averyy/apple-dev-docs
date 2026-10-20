@@ -1,18 +1,19 @@
 # hasNonIdentityMatrix
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The run requires a specific text matrix to be set in the current Core Graphics context for proper drawing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The run requires a specific text matrix to be set in the current Core Graphics c
 static var hasNonIdentityMatrix: CTRunStatus { get }
 ```
 
+```c
+kCTRunStatusHasNonIdentityMatrix
+```
+
 ## See Also
 
-- [static var rightToLeft: CTRunStatus](ctrunstatus/righttoleft.md)
+### Constants
+- [static var rightToLeft: CTRunStatus](./righttoleft.md)
   The run proceeds from right to left.
-- [static var nonMonotonic: CTRunStatus](ctrunstatus/nonmonotonic.md)
+- [static var nonMonotonic: CTRunStatus](./nonmonotonic.md)
   The run isn’t in strictly increasing or decreasing order.
 
 

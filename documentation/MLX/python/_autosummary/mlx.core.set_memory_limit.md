@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.se
 
 # mlx.core.set_memory_limit
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.set_memory_limit.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.set_memory_limit
-
- Table of contents 
-
-## Contents
-
-# mlx.core.set_memory_limit
-
 **set_memory_limit(*limit: int*) → [int](https://docs.python.org/3/builtins/functions.html#int)**
 : Set the memory limit.
 The memory limit is a guideline for the maximum amount of memory to use
@@ -50,5 +23,3 @@ The previous memory limit in bytes.
 
 Return type:
 [int](https://docs.python.org/3/builtins/functions.html#int)
-
-** Contents

@@ -1,7 +1,8 @@
 # MTRDeviceControllerClientProtocol
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -18,15 +19,19 @@
 protocol MTRDeviceControllerClientProtocol : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRDeviceControllerClientProtocol <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func handleReport(withController: Any?, nodeId: UInt64, values: Any?, error: (any Error)?)](mtrdevicecontrollerclientprotocol/handlereport(withcontroller:nodeid:values:error:).md)
+- [func handleReport(withController: Any?, nodeId: UInt64, values: Any?, error: (any Error)?)](./mtrdevicecontrollerclientprotocol/handlereport%28withcontroller,nodeid,values,error%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

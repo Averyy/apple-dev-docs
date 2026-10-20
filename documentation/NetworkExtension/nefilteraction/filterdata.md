@@ -1,7 +1,8 @@
 # NEFilterAction.filterData
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Filter data on the flow.
 
@@ -18,15 +19,20 @@ Filter data on the flow.
 case filterData
 ```
 
+```c
+NEFilterActionFilterData
+```
+
 ## See Also
 
-- [NEFilterAction.invalid](nefilteraction/invalid.md)
+### Enumeration Cases
+- [NEFilterAction.invalid](./invalid.md)
   Invalid action used to represent an error.
-- [NEFilterAction.allow](nefilteraction/allow.md)
+- [NEFilterAction.allow](./allow.md)
   Allow the flow.
-- [NEFilterAction.drop](nefilteraction/drop.md)
+- [NEFilterAction.drop](./drop.md)
   Drop the flow.
-- [NEFilterAction.remediate](nefilteraction/remediate.md)
+- [NEFilterAction.remediate](./remediate.md)
   Remediate the flow.
 
 

@@ -1,7 +1,8 @@
 # errAuthorizationInvalidFlags
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The flags parameter is invalid.
 
@@ -13,6 +14,10 @@ The flags parameter is invalid.
 
 ```swift
 var errAuthorizationInvalidFlags: OSStatus { get }
+```
+
+```c
+errAuthorizationInvalidFlags
 ```
 
 

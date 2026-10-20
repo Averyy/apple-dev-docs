@@ -1,7 +1,8 @@
 # VNDetectHumanRectanglesRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the human rectangles detection request.
 
@@ -19,9 +20,14 @@ A constant for specifying revision 1 of the human rectangles detection request.
 var VNDetectHumanRectanglesRequestRevision1: Int { get }
 ```
 
+```c
+static const NSUInteger VNDetectHumanRectanglesRequestRevision1;
+```
+
 ## See Also
 
-- [var VNDetectHumanRectanglesRequestRevision2: Int](vndetecthumanrectanglesrequestrevision2.md)
+### Identifying Request Revisions
+- [var VNDetectHumanRectanglesRequestRevision2: Int](./vndetecthumanrectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the human rectangles detection request.
 
 

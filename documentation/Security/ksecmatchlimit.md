@@ -1,7 +1,8 @@
 # kSecMatchLimit
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the match limit.
 
@@ -20,14 +21,18 @@ A key whose value indicates the match limit.
 let kSecMatchLimit: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchLimit;
+```
+
 ## Mentions
 
-- [Searching for keychain items](searching-for-keychain-items.md)
-- [Storing Keys in the Keychain](storing-keys-in-the-keychain.md)
+- [Searching for keychain items](./searching-for-keychain-items.md)
+- [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). If provided, this value specifies the maximum number of results to return or otherwise act upon. For a single item, specify [`kSecMatchLimitOne`](ksecmatchlimitone.md). To specify all matching items, specify [`kSecMatchLimitAll`](ksecmatchlimitall.md). The default behavior is function-dependent.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md). If provided, this value specifies the maximum number of results to return or otherwise act upon. For a single item, specify [`kSecMatchLimitOne`](./ksecmatchlimitone.md). To specify all matching items, specify [`kSecMatchLimitAll`](./ksecmatchlimitall.md). The default behavior is function-dependent.
 
 
 ---

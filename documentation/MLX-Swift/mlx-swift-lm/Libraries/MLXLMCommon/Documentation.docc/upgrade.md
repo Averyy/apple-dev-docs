@@ -15,23 +15,23 @@ mlx-swift-lm 3.x has breaking API changes from 2.x:
 - Download and Tokenizers are protocols and require concrete implementations
 - MLXEmbedders now uses the same download/load infrastructure as MLXLMCommon
 
-See <doc:using> for more information.
+See [Using mlx-swift-lm](using.md) for more information.
 
 This was done for several reasons:
 
 - break the hard dependency on the HuggingFace Hub and Tokenizer implementations
     - this allows other implementations with other design constraints, such as performance optimizations
-    - see <doc:using#Integration-Packages>
+    - see [Integration Packages](using.md#Integration-Packages)
 - provide a mechanism to separate the download of weights and the load of weights
 
 ## Selecting a Downloader and Tokenizer
 
-See <doc:using> for details on selecting a Downloader and a Tokenizer and
+See [Using mlx-swift-lm](using.md) for details on selecting a Downloader and a Tokenizer and
 how to hook these up.
 
 ### Using MLXHuggingFace Macros
 
-If using the <doc:using#MLXHuggingFace-Macros>, if you had code like this:
+If using the [MLXHuggingFace Macros](using.md#MLXHuggingFace-Macros), if you had code like this:
 
 ```swift
 import MLXLLM
@@ -86,7 +86,7 @@ let model = try await loadModelContainer(
 
 ### Using Integration Packages
 
-If you are using an <doc:using#Integration-Packages> you would do something similar:
+If you are using an [Integration Packages](using.md#Integration-Packages) you would do something similar:
 
 ```swift
 import MLXLLM
@@ -120,7 +120,7 @@ let model = try await loadModelContainer(
 
 ## MLXEmbedders
 
-MLXEmbedders requires the same <doc:#Selecting-a-Downloader-and-Tokenizer>.  Additionally,
+MLXEmbedders requires the same [Selecting a Downloader and Tokenizer](#Selecting-a-Downloader-and-Tokenizer).  Additionally,
 there are some changes to type names and methods -- these now use the same structure
 and mechanism as MLXLMCommon / MLXLLM.
 
@@ -138,8 +138,8 @@ let container = try await MLXEmbedders.loadModelContainer(
 // use it ...
 ```
 
-now, using the <doc:#Using-MLXHuggingFace-Macros> (see 
-<doc:#Using-Integration-Packages> for the pattern using other tokenizer
+now, using the [Using MLXHuggingFace Macros](#Using-MLXHuggingFace-Macros) (see 
+[Using Integration Packages](#Using-Integration-Packages) for the pattern using other tokenizer
 packages):
 
 ```swift

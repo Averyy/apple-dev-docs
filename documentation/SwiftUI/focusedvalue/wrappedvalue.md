@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value for the focus key given the current scope and state of the focused view hierarchy.
 

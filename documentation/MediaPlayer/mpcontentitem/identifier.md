@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the media item.
 
@@ -19,29 +20,35 @@ The unique identifier for the media item.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 #### Discussion
 
 All media items must have a unique identifier. Identifiers must be unique so that Media Player can properly update existing media items or add new media items. Media items won’t update properly if multiple media items have the same identifier.
 
 ## See Also
 
-- [init(identifier: String)](mpcontentitem/init(identifier:).md)
+### Related Documentation
+- [init(identifier: String)](./init%28identifier%29.md)
   Sets the identifier for a media item.
-- [var artwork: MPMediaItemArtwork?](mpcontentitem/artwork.md)
+### Retrieving information about a media item
+- [var artwork: MPMediaItemArtwork?](./artwork.md)
   A single image that’s associated with the media item.
-- [var isContainer: Bool](mpcontentitem/iscontainer.md)
+- [var isContainer: Bool](./iscontainer.md)
   A Boolean value that indicates whether a media item is container of other items.
-- [var isExplicitContent: Bool](mpcontentitem/isexplicitcontent.md)
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
   A Boolean value that indicates whether the media item contains explicit content.
-- [var isPlayable: Bool](mpcontentitem/isplayable.md)
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether a media item is able to be played.
-- [var isStreamingContent: Bool](mpcontentitem/isstreamingcontent.md)
+- [var isStreamingContent: Bool](./isstreamingcontent.md)
   A Boolean value that indicates whether the content item is streaming content.
-- [var playbackProgress: Float](mpcontentitem/playbackprogress.md)
+- [var playbackProgress: Float](./playbackprogress.md)
   The amount of content played for the media item.
-- [var subtitle: String?](mpcontentitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   A secondary designator for the media item.
-- [var title: String?](mpcontentitem/title.md)
+- [var title: String?](./title.md)
   The public name of the media item.
 
 

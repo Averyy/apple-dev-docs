@@ -1,7 +1,8 @@
 # errSecCSSignatureUnsupported
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsupported type or version of signature.
 
@@ -13,6 +14,10 @@ Unsupported type or version of signature.
 
 ```swift
 var errSecCSSignatureUnsupported: OSStatus { get }
+```
+
+```c
+errSecCSSignatureUnsupported
 ```
 
 

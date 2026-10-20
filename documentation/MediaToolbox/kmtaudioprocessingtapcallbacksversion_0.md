@@ -1,7 +1,8 @@
 # kMTAudioProcessingTapCallbacksVersion_0
 
 **Framework**: Media Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An identifier for version 0 of the callbacks structure.
 
@@ -17,6 +18,10 @@ An identifier for version 0 of the callbacks structure.
 
 ```swift
 var kMTAudioProcessingTapCallbacksVersion_0: Int32 { get }
+```
+
+```c
+kMTAudioProcessingTapCallbacksVersion_0
 ```
 
 

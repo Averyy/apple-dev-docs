@@ -1,7 +1,8 @@
 # AnimatableValues
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -22,34 +23,35 @@ struct AnimatableValues<each Value> where repeat each Value : VectorArithmetic
 ## Topics
 
 ### Initializers
-- [init(repeat each Value)](animatablevalues/init(_:).md)
+- [init(repeat each Value)](./animatablevalues/init%28_%29.md)
   Creates a tuple of animatable values.
 ### Instance Properties
-- [var magnitudeSquared: Double](animatablevalues/magnitudesquared.md)
+- [var magnitudeSquared: Double](./animatablevalues/magnitudesquared.md)
   The dot-product of the tuple of animatable values with itself.
-- [var value: (repeat each Value)](animatablevalues/value.md)
+- [var value: (repeat each Value)](./animatablevalues/value.md)
   The tuple of values.
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VectorArithmetic](vectorarithmetic.md)
+- [AdditiveArithmetic](../Swift/additivearithmetic.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VectorArithmetic](./vectorarithmetic.md)
 
 ## See Also
 
-- [protocol Animatable](animatable.md)
+### Making data animatable
+- [protocol Animatable](./animatable.md)
   A type that describes how to animate a property of a view.
-- [struct AnimatablePair](animatablepair.md)
+- [struct AnimatablePair](./animatablepair.md)
   A pair of animatable values, which is itself animatable.
-- [protocol VectorArithmetic](vectorarithmetic.md)
+- [protocol VectorArithmetic](./vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
-- [struct EmptyAnimatableData](emptyanimatabledata.md)
+- [struct EmptyAnimatableData](./emptyanimatabledata.md)
   An empty type for animatable data.
-- [protocol AnimatableModifier](animatablemodifier.md)
+- [protocol AnimatableModifier](./animatablemodifier.md)
   A modifier that can create another modifier with animation.
 
 

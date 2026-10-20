@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that the button displays.
 
@@ -14,19 +15,24 @@ The image that the button displays.
 var image: NSImage? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSImage * image;
+```
+
 #### Discussion
 
-The combo button scales the image to fit within its bounds. Use the [`imageScaling`](nscombobutton/imagescaling.md) property to specify the scaling behavior to use with your image.
+The combo button scales the image to fit within its bounds. Use the [`imageScaling`](./imagescaling.md) property to specify the scaling behavior to use with your image.
 
 ## See Also
 
-- [var style: NSComboButton.Style](nscombobutton/style-swift.property.md)
+### Configuring the Button Appearance
+- [var style: NSComboButton.Style](./style-swift.property.md)
   The appearance setting that determines how the button presents its menu .
-- [NSComboButton.Style](nscombobutton/style-swift.enum.md)
+- [NSComboButton.Style](./style-swift.enum.md)
   Constants that indicate how a combo button presents its menu.
-- [var title: String](nscombobutton/title.md)
+- [var title: String](./title.md)
   The localized string that the button displays.
-- [var imageScaling: NSImageScaling](nscombobutton/imagescaling.md)
+- [var imageScaling: NSImageScaling](./imagescaling.md)
   The scaling behavior to apply to the button’s image.
 
 

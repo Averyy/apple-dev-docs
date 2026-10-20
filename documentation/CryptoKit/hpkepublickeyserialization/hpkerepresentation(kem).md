@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an encoded representation of the public key.

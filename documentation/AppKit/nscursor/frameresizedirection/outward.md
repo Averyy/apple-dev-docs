@@ -1,7 +1,8 @@
 # NSCursor.FrameResizeDirection.outward
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the rectangular frame can be resized outwards to be larger.
 

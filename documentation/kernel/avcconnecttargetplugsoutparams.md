@@ -1,14 +1,15 @@
 # AVCConnectTargetPlugsOutParams
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _AVCConnectTargetPlugsOutParams {
     ...
 } AVCConnectTargetPlugsOutParams;
@@ -17,24 +18,25 @@ typedef struct _AVCConnectTargetPlugsOutParams {
 ## Topics
 
 ### Instance Properties
-- [destPlugNum](avcconnecttargetplugsoutparams/1440947-destplugnum.md)
-- [sourcePlugNum](avcconnecttargetplugsoutparams/1440923-sourceplugnum.md)
+- [destPlugNum](./avcconnecttargetplugsoutparams/api-1440947-destplugnum.md)
+- [sourcePlugNum](./avcconnecttargetplugsoutparams/api-1440923-sourceplugnum.md)
 
 ## See Also
 
-- [IOFireWireAVCAsynchronousCommand](iofirewireavcasynchronouscommand.md)
-- [IOFireWireAVCTargetSpace](iofirewireavctargetspace.md)
+### AVC Support
+- [IOFireWireAVCAsynchronousCommand](./iofirewireavcasynchronouscommand.md)
+- [IOFireWireAVCTargetSpace](./iofirewireavctargetspace.md)
   object to centralize the AVC Target mode support
-- [IOFireWireAVCCommand](iofirewireavccommand.md)
-- [AVCCommandHandlerInfo](avccommandhandlerinfo.md)
-- [AVCConnectionRecord](avcconnectionrecord.md)
-- [AVCSubunitInfo](avcsubunitinfo.md)
-- [AVCConnectTargetPlugsInParams](avcconnecttargetplugsinparams.md)
-- [AVCGetTargetPlugConnectionInParams](avcgettargetplugconnectioninparams.md)
-- [AVCGetTargetPlugConnectionOutParams](avcgettargetplugconnectionoutparams.md)
-- [AVCSubunitPlugRecord](avcsubunitplugrecord.md)
-- [AVCUnitPlugRecord](avcunitplugrecord.md)
-- [AVCUnitPlugs](avcunitplugs.md)
+- [IOFireWireAVCCommand](./iofirewireavccommand.md)
+- [AVCCommandHandlerInfo](./avccommandhandlerinfo.md)
+- [AVCConnectionRecord](./avcconnectionrecord.md)
+- [AVCSubunitInfo](./avcsubunitinfo.md)
+- [AVCConnectTargetPlugsInParams](./avcconnecttargetplugsinparams.md)
+- [AVCGetTargetPlugConnectionInParams](./avcgettargetplugconnectioninparams.md)
+- [AVCGetTargetPlugConnectionOutParams](./avcgettargetplugconnectionoutparams.md)
+- [AVCSubunitPlugRecord](./avcsubunitplugrecord.md)
+- [AVCUnitPlugRecord](./avcunitplugrecord.md)
+- [AVCUnitPlugs](./avcunitplugs.md)
 
 
 ---

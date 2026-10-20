@@ -1,7 +1,8 @@
 # InvalidNotificationTypeError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates the notification type or subtype is invalid.
 
@@ -10,46 +11,49 @@ An error that indicates the notification type or subtype is invalid.
 
 ## Declaration
 
-```swift
+```
 object InvalidNotificationTypeError
 ```
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string): For a list of valid notification types and subtypes, see [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype) and [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype). If you provide both a notification type and subtype, ensure the two are a valid combination, as documented on [`subtype`](https://developer.apple.com/documentation/appstoreservernotifications/subtype).
+- `errorCode` (int64): **Allowed Values**: `4000018`
+- `errorMessage` (string): For a list of valid notification types and subtypes, see [`notificationType`](../AppStoreServerNotifications/notificationtype.md) and [`subtype`](../AppStoreServerNotifications/subtype.md). If you provide both a notification type and subtype, ensure the two are a valid combination, as documented on [`subtype`](../AppStoreServerNotifications/subtype.md).
+
+  **Allowed Values**: `Invalid request. The notification type or subtype is invalid.`
 
 ## See Also
 
-- [object InvalidEndDateError](invalidenddateerror.md)
+### Notification test and history errors
+- [object InvalidEndDateError](./invalidenddateerror.md)
   An error that indicates the end date is invalid.
-- [object InvalidPaginationTokenError](invalidpaginationtokenerror.md)
+- [object InvalidPaginationTokenError](./invalidpaginationtokenerror.md)
   An error that indicates the pagination token is invalid.
-- [object InvalidStartDateError](invalidstartdateerror.md)
+- [object InvalidStartDateError](./invalidstartdateerror.md)
   An error that indicates the start date is invalid.
-- [object InvalidTestNotificationTokenError](invalidtestnotificationtokenerror.md)
+- [object InvalidTestNotificationTokenError](./invalidtestnotificationtokenerror.md)
   An error that indicates the test notification token is invalid.
-- [object InvalidInAppOwnershipTypeError](invalidinappownershiptypeerror.md)
+- [object InvalidInAppOwnershipTypeError](./invalidinappownershiptypeerror.md)
   An error that indicates an invalid in-app ownership type parameter.
-- [object InvalidProductIdError](invalidproductiderror.md)
+- [object InvalidProductIdError](./invalidproductiderror.md)
   An error that indicates the product ID parameter is invalid.
-- [object InvalidProductTypeError](invalidproducttypeerror.md)
+- [object InvalidProductTypeError](./invalidproducttypeerror.md)
   An error that indicates the product type parameter is invalid.
-- [object InvalidSortError](invalidsorterror.md)
+- [object InvalidSortError](./invalidsorterror.md)
   An error that indicates the sort parameter is invalid.
-- [object InvalidSubscriptionGroupIdentifierError](invalidsubscriptiongroupidentifiererror.md)
+- [object InvalidSubscriptionGroupIdentifierError](./invalidsubscriptiongroupidentifiererror.md)
   An error that indicates the subscription group identifier is invalid.
-- [object MultipleFiltersSuppliedError](multiplefilterssuppliederror.md)
+- [object MultipleFiltersSuppliedError](./multiplefilterssuppliederror.md)
   An error that indicates the request is invalid because it has too many applied constraints.
-- [object PaginationTokenExpiredError](paginationtokenexpirederror.md)
+- [object PaginationTokenExpiredError](./paginationtokenexpirederror.md)
   An error that indicates the pagination token expired.
-- [object ServerNotificationURLNotFoundError](servernotificationurlnotfounderror.md)
+- [object ServerNotificationURLNotFoundError](./servernotificationurlnotfounderror.md)
   An error that indicates the App Store server couldn’t find a notifications URL for your app in the environment.
-- [object StartDateAfterEndDateError](startdateafterenddateerror.md)
+- [object StartDateAfterEndDateError](./startdateafterenddateerror.md)
   An error that indicates the end date precedes the start date, or the two dates are equal.
-- [object StartDateTooFarInPastError](startdatetoofarinpasterror.md)
+- [object StartDateTooFarInPastError](./startdatetoofarinpasterror.md)
   An error that indicates the start date is earlier than the earliest allowed date.
-- [object TestNotificationNotFoundError](testnotificationnotfounderror.md)
+- [object TestNotificationNotFoundError](./testnotificationnotfounderror.md)
   An error that indicates the test notification token is expired or the test notification status isn’t available.
 
 

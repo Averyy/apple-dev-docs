@@ -1,10 +1,11 @@
 # NSApplication.PrintReply.printingReplyLater
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,17 +13,22 @@
 case printingReplyLater
 ```
 
+```c
+NSPrintingReplyLater
+```
+
 #### Discussion
 
-The result of printing cannot be returned immediately, for example, if printing will cause the presentation of a sheet. If your method returns `NSPrintingReplyLater` it must always invoke [`reply(toOpenOrPrint:)`](nsapplication/reply(toopenorprint:).md) when the entire print operation has been completed, successfully or not.
+The result of printing cannot be returned immediately, for example, if printing will cause the presentation of a sheet. If your method returns `NSPrintingReplyLater` it must always invoke [`reply(toOpenOrPrint:)`](../reply%28toopenorprint%29.md) when the entire print operation has been completed, successfully or not.
 
 ## See Also
 
-- [NSApplication.PrintReply.printingCancelled](nsapplication/printreply/printingcancelled.md)
+### Constants
+- [NSApplication.PrintReply.printingCancelled](./printingcancelled.md)
   Printing was cancelled.
-- [NSApplication.PrintReply.printingSuccess](nsapplication/printreply/printingsuccess.md)
+- [NSApplication.PrintReply.printingSuccess](./printingsuccess.md)
   Printing was successful.
-- [NSApplication.PrintReply.printingFailure](nsapplication/printreply/printingfailure.md)
+- [NSApplication.PrintReply.printingFailure](./printingfailure.md)
   Printing failed.
 
 

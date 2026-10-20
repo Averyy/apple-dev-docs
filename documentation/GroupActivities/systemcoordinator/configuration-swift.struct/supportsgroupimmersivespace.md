@@ -1,7 +1,8 @@
 # supportsGroupImmersiveSpace
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether your app supports a shared context when an immersive space is open.
 
@@ -20,9 +21,9 @@ If your app presents an immersive space, set this property to `true` if you want
 
 An immersive space places a person in their own private experience. To prevent the disruption of that experience, the system disables spatial Personas by default when any immersive space is open. Setting this property to `true` tells the system that it can once again display spatial Personas when an immersive space is open.
 
-When displaying spatial Personas in an immersive space, the system establishes a shared coordinate space among the participants. Specifically, the system moves the origin of the coordinate space to a shared location, which it derives from the template in the [`spatialTemplatePreference`](systemcoordinator/configuration-swift.struct/spatialtemplatepreference.md) property. Any content you place in the immersive space subsequently appears in the correct relative location from each participant’s perspective.
+When displaying spatial Personas in an immersive space, the system establishes a shared coordinate space among the participants. Specifically, the system moves the origin of the coordinate space to a shared location, which it derives from the template in the [`spatialTemplatePreference`](./spatialtemplatepreference.md) property. Any content you place in the immersive space subsequently appears in the correct relative location from each participant’s perspective.
 
-To place content in front of a specific participant, observe updates to [`remoteParticipantStates`](systemcoordinator/remoteparticipantstates.md) to retrieve a mapping between each remote participant and their current state. Access the seat and pose properties of `SystemCoordinator.ParticipantState` to determine where remote participants are positioned in the shared space and place content in front of them.
+To place content in front of a specific participant, observe updates to [`remoteParticipantStates`](../remoteparticipantstates.md) to retrieve a mapping between each remote participant and their current state. Access the seat and pose properties of `SystemCoordinator.ParticipantState` to determine where remote participants are positioned in the shared space and place content in front of them.
 
 ```swift
 Task {
@@ -38,7 +39,7 @@ Task {
 }
 ```
 
-For more information and examples, see [`Building a guessing game for visionOS`](building-a-guessing-game-for-visionos.md).
+For more information and examples, see [Building a guessing game for visionOS](../../building-a-guessing-game-for-visionos.md).
 
 
 ---

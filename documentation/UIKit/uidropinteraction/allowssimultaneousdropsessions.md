@@ -1,7 +1,8 @@
 # allowsSimultaneousDropSessions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the drop interaction handles more than one simultaneous drop session.
 
@@ -15,6 +16,10 @@ A Boolean value that specifies whether the drop interaction handles more than on
 
 ```swift
 var allowsSimultaneousDropSessions: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsSimultaneousDropSessions;
 ```
 
 

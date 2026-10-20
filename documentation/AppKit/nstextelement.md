@@ -1,7 +1,8 @@
 # NSTextElement
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class that represents the smallest units of text layout such as paragraphs or attachments.
 
@@ -14,48 +15,53 @@ An abstract base class that represents the smallest units of text layout such as
 class NSTextElement
 ```
 
+```objc
+@interface NSTextElement : NSObject
+```
+
 ## Topics
 
 ### Creating a text element
-- [init(textContentManager: NSTextContentManager?)](nstextelement/init(textcontentmanager:).md)
+- [init(textContentManager: NSTextContentManager?)](./nstextelement/init%28textcontentmanager%29.md)
   Creates a new text element with the content manager you provide.
 ### Accessing the content manager
-- [var textContentManager: NSTextContentManager?](nstextelement/textcontentmanager.md)
+- [var textContentManager: NSTextContentManager?](./nstextelement/textcontentmanager.md)
   The value that represents the current content manager.
 ### Accessing the text element range
-- [var elementRange: NSTextRange?](nstextelement/elementrange.md)
+- [var elementRange: NSTextRange?](./nstextelement/elementrange.md)
   A range value that represents the range of the element inside the document.
 ### Accessing text elements
-- [var isRepresentedElement: Bool](nstextelement/isrepresentedelement.md)
+- [var isRepresentedElement: Bool](./nstextelement/isrepresentedelement.md)
   A Boolean value that indicates whether this element is in the text layout.
-- [var parent: NSTextElement?](nstextelement/parent.md)
+- [var parent: NSTextElement?](./nstextelement/parent.md)
   A value that represents the parent element if this text element is a child of an enclosing element.
-- [var childElements: [NSTextElement]](nstextelement/childelements.md)
+- [var childElements: [NSTextElement]](./nstextelement/childelements.md)
   An array of zero or more child text elements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSTextParagraph](nstextparagraph.md)
+- [NSTextParagraph](./nstextparagraph.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Enriching your text in text views](../uikit/enriching-your-text-in-text-views.md)
+### Content elements
+- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
-- [class NSTextParagraph](nstextparagraph.md)
+- [class NSTextParagraph](./nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
-- [class NSTextListElement](nstextlistelement.md)
+- [class NSTextListElement](./nstextlistelement.md)
   A class that represents a text list node.
-- [protocol NSTextElementProvider](nstextelementprovider.md)
+- [protocol NSTextElementProvider](./nstextelementprovider.md)
   A protocol the text content manager and its concrete subclasses conform to, which defines the interface for interacting with custom content types of a text document.
 
 

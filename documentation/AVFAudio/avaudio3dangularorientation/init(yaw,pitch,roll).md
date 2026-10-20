@@ -1,18 +1,19 @@
 # init(yaw:pitch:roll:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D angular orientation using the yaw, pitch, and roll values you specify.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,9 +29,10 @@ init(yaw: Float, pitch: Float, roll: Float)
 
 ## See Also
 
-- [init()](avaudio3dangularorientation/init.md)
+### Creating an angular orientation
+- [init()](./init%28%29.md)
   Creates an angular orientation.
-- [func AVAudioMake3DAngularOrientation(Float, Float, Float) -> AVAudio3DAngularOrientation](avaudiomake3dangularorientation(_:_:_:).md)
+- [func AVAudioMake3DAngularOrientation(Float, Float, Float) -> AVAudio3DAngularOrientation](../avaudiomake3dangularorientation%28_,_,_%29.md)
   Creates a 3D angular orientation using the yaw, pitch, and roll values you specify.
 
 

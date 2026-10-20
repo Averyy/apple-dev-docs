@@ -1,7 +1,8 @@
 # DOMMimeTypeArray
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMMimeTypeArray
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](dommimetypearray/1632908-length.md)
+- [length](./dommimetypearray/api-1632908-length.md)
 ### Instance Methods
-- [item](dommimetypearray/1631661-item.md)
-- [namedItem](dommimetypearray/1629152-nameditem.md)
+- [item](./dommimetypearray/api-1631661-item.md)
+- [namedItem](./dommimetypearray/api-1629152-nameditem.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the sidebar is currently hidden.
 
@@ -17,16 +18,21 @@ Determines if the sidebar is currently hidden.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isHidden) BOOL hidden;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 ## See Also
 
-- [var preferredLayout: UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/preferredlayout.md)
+### Managing customization
+- [var preferredLayout: UITabBarController.Sidebar.Layout](./preferredlayout.md)
   The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
-- [UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/layout.md)
-- [func reconfigureItem(for: UITab)](uitabbarcontroller/sidebar-swift.class/reconfigureitem(for:).md)
+- [UITabBarController.Sidebar.Layout](./layout.md)
+- [func reconfigureItem(for: UITab)](./reconfigureitem%28for%29.md)
   Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
 
 

@@ -1,7 +1,8 @@
 # CNContactFormatterStyle.fullName
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Combines the contact name components into a full name.
 
@@ -19,9 +20,14 @@ Combines the contact name components into a full name.
 case fullName
 ```
 
+```c
+CNContactFormatterStyleFullName
+```
+
 ## See Also
 
-- [CNContactFormatterStyle.phoneticFullName](cncontactformatterstyle/phoneticfullname.md)
+### Constants
+- [CNContactFormatterStyle.phoneticFullName](./phoneticfullname.md)
   Combines the contact phonetic name components into a phonetic full name.
 
 

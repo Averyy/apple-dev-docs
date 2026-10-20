@@ -1,7 +1,8 @@
 # destinationBufferCount
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of destination buffers written to by the converter.
 
@@ -11,7 +12,7 @@ The number of destination buffers written to by the converter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,13 +23,15 @@ var destinationBufferCount: Int { get }
 
 ## Mentions
 
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
+- [Converting chroma-subsampled images](../converting-chroma-subsampled-images.md)
 
 ## See Also
 
-- [func vImageConverter_GetNumberOfDestinationBuffers(vImageConverter) -> UInt](vimageconverter_getnumberofdestinationbuffers(_:).md)
+### Related Documentation
+- [func vImageConverter_GetNumberOfDestinationBuffers(vImageConverter) -> UInt](../vimageconverter_getnumberofdestinationbuffers%28_%29.md)
   Returns the number of destination buffers written to by the converter.
-- [var sourceBufferCount: Int](vimageconverter/sourcebuffercount.md)
+### Instance Properties
+- [var sourceBufferCount: Int](./sourcebuffercount.md)
   The number of source buffers written to by the converter.
 
 

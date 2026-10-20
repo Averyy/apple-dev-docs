@@ -1,7 +1,8 @@
 # metricsNotFound
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metric names referenced by `MetricsAggregator` that no evaluator produced.
 

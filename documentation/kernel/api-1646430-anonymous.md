@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,19 +18,19 @@ enum : int {
 ## Topics
 
 ### Constants
-- [kIOAudioControlChannelIDAll](1646430-anonymous/kioaudiocontrolchannelidall.md)
-- [kIOAudioControlChannelIDDefaultCenter](1646430-anonymous/kioaudiocontrolchanneliddefaultcenter.md)
-- [kIOAudioControlChannelIDDefaultFrontLeftCenter](1646430-anonymous/kioaudiocontrolchanneliddefaultfrontleftcenter.md)
-- [kIOAudioControlChannelIDDefaultFrontRightCenter](1646430-anonymous/kioaudiocontrolchanneliddefaultfrontrightcenter.md)
-- [kIOAudioControlChannelIDDefaultLeft](1646430-anonymous/kioaudiocontrolchanneliddefaultleft.md)
-- [kIOAudioControlChannelIDDefaultLeftRear](1646430-anonymous/kioaudiocontrolchanneliddefaultleftrear.md)
-- [kIOAudioControlChannelIDDefaultRearCenter](1646430-anonymous/kioaudiocontrolchanneliddefaultrearcenter.md)
-- [kIOAudioControlChannelIDDefaultRight](1646430-anonymous/kioaudiocontrolchanneliddefaultright.md)
-- [kIOAudioControlChannelIDDefaultRightRear](1646430-anonymous/kioaudiocontrolchanneliddefaultrightrear.md)
-- [kIOAudioControlChannelIDDefaultSub](1646430-anonymous/kioaudiocontrolchanneliddefaultsub.md)
-- [kIOAudioControlChannelIDDefaultSurroundLeft](1646430-anonymous/kioaudiocontrolchanneliddefaultsurroundleft.md)
-- [kIOAudioControlChannelIDDefaultSurroundRight](1646430-anonymous/kioaudiocontrolchanneliddefaultsurroundright.md)
-- [kIOAudioControlChannelNumberInactive](1646430-anonymous/kioaudiocontrolchannelnumberinactive.md)
+- [kIOAudioControlChannelIDAll](./api-1646430-anonymous/kioaudiocontrolchannelidall.md)
+- [kIOAudioControlChannelIDDefaultCenter](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultcenter.md)
+- [kIOAudioControlChannelIDDefaultFrontLeftCenter](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultfrontleftcenter.md)
+- [kIOAudioControlChannelIDDefaultFrontRightCenter](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultfrontrightcenter.md)
+- [kIOAudioControlChannelIDDefaultLeft](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultleft.md)
+- [kIOAudioControlChannelIDDefaultLeftRear](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultleftrear.md)
+- [kIOAudioControlChannelIDDefaultRearCenter](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultrearcenter.md)
+- [kIOAudioControlChannelIDDefaultRight](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultright.md)
+- [kIOAudioControlChannelIDDefaultRightRear](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultrightrear.md)
+- [kIOAudioControlChannelIDDefaultSub](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultsub.md)
+- [kIOAudioControlChannelIDDefaultSurroundLeft](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultsurroundleft.md)
+- [kIOAudioControlChannelIDDefaultSurroundRight](./api-1646430-anonymous/kioaudiocontrolchanneliddefaultsurroundright.md)
+- [kIOAudioControlChannelNumberInactive](./api-1646430-anonymous/kioaudiocontrolchannelnumberinactive.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode of the musical key.
 

@@ -1,7 +1,8 @@
 # EnvironmentBlendingComponent.EnvironmentType.surroundings
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The real-world surroundings of the user.
 

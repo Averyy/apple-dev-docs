@@ -1,7 +1,8 @@
 # doNotDisplay
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the sample should be decoded but not displayed.
 

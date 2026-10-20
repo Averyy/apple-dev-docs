@@ -1,7 +1,8 @@
 # liveActivities
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active Live Activities that the accessory is authorized to receive.
 
@@ -17,7 +18,7 @@ final var liveActivities: [AccessoryLiveActivity] { get async throws }
 
 ## Mentions
 
-- [Receiving Live Activity updates and alerts on an accessory](receiving-live-activities-on-an-accessory.md)
+- [Receiving Live Activity updates and alerts on an accessory](../../receiving-live-activities-on-an-accessory.md)
 
 
 ---

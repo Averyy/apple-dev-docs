@@ -1,7 +1,8 @@
 # init(_:samples:targetCount:sessionProvider:samplingStrategy:validator:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a generator for sample values with a generable-expected value type.
 
@@ -31,7 +32,8 @@ init<T>(_ prompt: Prompt, samples: [SampleType], targetCount: Int, sessionProvid
 
 ## See Also
 
-- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-2804x.md)
+### Creating a generator
+- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](./init%28_,samples,targetcount,sessionprovider,samplingstrategy,validator%29-2804x.md)
   Creates a generator for custom, generable evaluation samples.
 
 

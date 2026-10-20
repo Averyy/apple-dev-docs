@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
@@ -28,6 +29,12 @@ The number of items that were skipped. If the returned count is less than `maxOf
 ## Parameters
 
 - `maxOffset`: The maximum number of elements to offset the position of this iterator. `maxOffset` must be nonnegative.
+
+## Default Implementations
+
+### BorrowingIteratorProtocol Implementations
+- [func skip(by: Int) throws(Self.Failure) -> Int](./skip%28by%29-2c2z4.md)
+  Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
 
 
 ---

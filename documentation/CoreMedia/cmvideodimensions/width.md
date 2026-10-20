@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the video.
 
@@ -20,9 +21,14 @@ The width of the video.
 var width: Int32
 ```
 
+```c
+int32_t width;
+```
+
 ## See Also
 
-- [var height: Int32](cmvideodimensions/height.md)
+### Inspecting Video Dimensions
+- [var height: Int32](./height.md)
   The height of the video.
 
 

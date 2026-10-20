@@ -1,7 +1,8 @@
 # touchSurface
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element that represents the state of the user’s touch on the surface of the touchpad.
 
@@ -19,13 +20,18 @@ The element that represents the state of the user’s touch on the surface of th
 var touchSurface: GCControllerDirectionPad { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerDirectionPad * touchSurface;
+```
+
 #### Discussion
 
-This element provides the recent or last touch positions on the two axes. Use the [`touchState`](gccontrollertouchpad/touchstate-swift.property.md) property to determine whether the user is currently touching the surface.
+This element provides the recent or last touch positions on the two axes. Use the [`touchState`](./touchstate-swift.property.md) property to determine whether the user is currently touching the surface.
 
 ## See Also
 
-- [var button: GCControllerButtonInput](gccontrollertouchpad/button.md)
+### Getting the subelements
+- [var button: GCControllerButtonInput](./button.md)
   The element that represents the button component on the touchpad.
 
 

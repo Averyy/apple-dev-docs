@@ -1,7 +1,8 @@
 # instanceDescriptorBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains descriptions of each instance in the acceleration structure.
 
@@ -19,17 +20,22 @@ A buffer that contains descriptions of each instance in the acceleration structu
 var instanceDescriptorBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> instanceDescriptorBuffer;
+```
+
 #### Discussion
 
-You need to set a buffer before creating the instanced acceleration structure. The buffer needs to contain a list of instance data structures, each defining the characteristics of an instance. The descriptor’s [`instanceDescriptorType`](mtlinstanceaccelerationstructuredescriptor/instancedescriptortype.md) property determines which memory layout to use for the instance data; see [`MTLAccelerationStructureInstanceDescriptorType`](mtlaccelerationstructureinstancedescriptortype.md) for more information.
+You need to set a buffer before creating the instanced acceleration structure. The buffer needs to contain a list of instance data structures, each defining the characteristics of an instance. The descriptor’s [`instanceDescriptorType`](./instancedescriptortype.md) property determines which memory layout to use for the instance data; see [`MTLAccelerationStructureInstanceDescriptorType`](../mtlaccelerationstructureinstancedescriptortype.md) for more information.
 
 ## See Also
 
-- [var instanceCount: Int](mtlinstanceaccelerationstructuredescriptor/instancecount.md)
+### Specifying the list of instances
+- [var instanceCount: Int](./instancecount.md)
   The number of instances in the instance descriptor buffer.
-- [var instanceDescriptorBufferOffset: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbufferoffset.md)
+- [var instanceDescriptorBufferOffset: Int](./instancedescriptorbufferoffset.md)
   The offset, in bytes, to the descripton of the first instance.
-- [var instanceDescriptorStride: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
+- [var instanceDescriptorStride: Int](./instancedescriptorstride.md)
   The stride, in bytes, between instance descriptions.
 
 

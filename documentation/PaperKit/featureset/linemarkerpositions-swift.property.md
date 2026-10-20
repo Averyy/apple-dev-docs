@@ -1,7 +1,8 @@
 # lineMarkerPositions
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The allowed ends of line for arrows.
 
@@ -24,15 +25,16 @@ Default is `.all`.
 
 ## See Also
 
-- [var features: Set<FeatureSet.Feature>](featureset/features.md)
+### Configuring features
+- [var features: Set<FeatureSet.Feature>](./features.md)
   The supported features.
-- [var shapes: Set<ShapeConfiguration.Shape>](featureset/shapes.md)
+- [var shapes: Set<ShapeConfiguration.Shape>](./shapes.md)
   The supported shape types.
-- [var inks: Set<PKInkingTool.InkType>](featureset/inks.md)
+- [var inks: Set<PKInkingTool.InkType>](./inks.md)
   The supported ink types.
-- [var contentVersion: FeatureSet.ContentVersion](featureset/contentversion-swift.property.md)
+- [var contentVersion: FeatureSet.ContentVersion](./contentversion-swift.property.md)
   The PaperKit version the feature set supports.
-- [var colorMaximumLinearExposure: CGFloat](featureset/colormaximumlinearexposure.md)
+- [var colorMaximumLinearExposure: CGFloat](./colormaximumlinearexposure.md)
   The maximum exposure to allow for choosing colors.
 
 

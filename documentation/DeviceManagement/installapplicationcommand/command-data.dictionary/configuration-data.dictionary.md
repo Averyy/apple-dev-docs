@@ -1,7 +1,8 @@
 # InstallApplicationCommand.Command.Configuration
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains the configuration to install an enterprise app.
 
@@ -16,7 +17,7 @@ A dictionary that contains the configuration to install an enterprise app.
 
 ## Declaration
 
-```swift
+```
 object InstallApplicationCommand.Command.Configuration
 ```
 
@@ -26,9 +27,10 @@ object InstallApplicationCommand.Command.Configuration
 
 ## See Also
 
-- [object InstallApplicationCommand.Command.Attributes](installapplicationcommand/command-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object InstallApplicationCommand.Command.Attributes](./attributes-data.dictionary.md)
   A dictionary that contains the initial attributes of the app.
-- [object InstallApplicationCommand.Command.Options](installapplicationcommand/command-data.dictionary/options-data.dictionary.md)
+- [object InstallApplicationCommand.Command.Options](./options-data.dictionary.md)
   A dictionary that contains the app installation options.
 
 

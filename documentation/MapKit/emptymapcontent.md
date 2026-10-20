@@ -1,7 +1,8 @@
 # EmptyMapContent
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A map content element that doesn’t contain any content.
 
@@ -11,7 +12,7 @@ A map content element that doesn’t contain any content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,33 +25,34 @@ A map content element that doesn’t contain any content.
 ## Topics
 
 ### Creating an empty map content structure
-- [init()](emptymapcontent/init.md)
+- [init()](./emptymapcontent/init%28%29.md)
   Creates an empty map content element.
 ### Setting the tag
-- [func tag<V>(V) -> some MapContent](mapcontent/tag(_:).md)
+- [func tag<V>(V) -> some MapContent](./mapcontent/tag%28_%29.md)
   Sets the unique tag value of this piece of map content.
 ### Type aliases
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 
 ## Relationships
 
 ### Conforms To
-- [MapContent](mapcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MapContent](./mapcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DefaultUserAnnotationContent](defaultuserannotationcontent.md)
+### Structures
+- [struct DefaultUserAnnotationContent](./defaultuserannotationcontent.md)
   A structure that represents the view to show at the user’s location on the map.
-- [struct MapProxy](mapproxy.md)
+- [struct MapProxy](./mapproxy.md)
   A proxy for accessing sizing information about a given map view.
-- [struct MapReader](mapreader.md)
+- [struct MapReader](./mapreader.md)
   A container view that defines its contents as a function of information about the first contained map.
-- [struct TupleMapContent](tuplemapcontent.md)
+- [struct TupleMapContent](./tuplemapcontent.md)
   A view created from a Swift tuple of map content values.
-- [struct MapSelectableContentView](mapselectablecontentview.md)
+- [struct MapSelectableContentView](./mapselectablecontentview.md)
 
 
 ---

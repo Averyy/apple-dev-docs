@@ -1,7 +1,8 @@
 # SecCertificateCopySerialNumberData(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the certificate’s serial number.
 
@@ -20,18 +21,22 @@ Returns the certificate’s serial number.
 func SecCertificateCopySerialNumberData(_ certificate: SecCertificate, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> CFData?
 ```
 
+```c
+CFDataRefSecCertificateCopySerialNumberData(SecCertificateRef certificate, CFErrorRef*error);
+```
+
 #### Return Value
 
 The content of a DER-encoded integer (without the tag and length fields) for this certificate’s serial number.
 
 #### Discussion
 
-In Objective-C, if the function returns an error free it with a call to [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) when you are done with it. If it returns data, you must free that as well.
+In Objective-C, if the function returns an error free it with a call to [`CFRelease`](../CoreFoundation/cfrelease.md) when you are done with it. If it returns data, you must free that as well.
 
 ## Parameters
 
 - `certificate`: The certificate from which to copy the serial number.
-- `error`: A [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) pointer the function uses to return an error instance on failure. Set to `nil` to ignore any error.
+- `error`: A [`CFError`](../CoreFoundation/cferror.md) pointer the function uses to return an error instance on failure. Set to `nil` to ignore any error.
 
 
 ---

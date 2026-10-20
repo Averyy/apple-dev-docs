@@ -1,12 +1,14 @@
 # Quadratic interpolation functions
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Compute the quadratic interpolation between the neighboring elements in a vector.
 
 ## See Also
 
-- [Linear interpolation functions](linear-interpolation-functions.md)
+### Vector interpolation
+- [Linear interpolation functions](./linear-interpolation-functions.md)
   Compute the linear average between two vectors or between the neighboring elements in one vector.
 
 

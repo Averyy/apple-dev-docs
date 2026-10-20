@@ -1,20 +1,25 @@
 # MPSFloatDataTypeBit.mantissaBit
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case mantissaBit
+```
+
+```c
+MPSFloatDataTypeMantissaBit
 ```
 
 

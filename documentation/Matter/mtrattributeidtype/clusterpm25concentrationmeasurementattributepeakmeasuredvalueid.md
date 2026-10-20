@@ -1,7 +1,8 @@
 # clusterPM25ConcentrationMeasurementAttributePeakMeasuredValueID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterPM25ConcentrationMeasurementAttributePeakMeasuredValueID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterPM25ConcentrationMeasurementAttributePeakMeasuredValueID
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vector from the specified Spatial spherical coordinates structure.
 
@@ -11,7 +12,7 @@ Creates a vector from the specified Spatial spherical coordinates structure.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,23 +23,24 @@ init(_ coords: SphericalCoordinates3D)
 
 ## See Also
 
-- [init()](vector3d/init.md)
+### Creating a vector
+- [init()](./init%28%29.md)
   Creates a vector.
-- [init(x: Double, y: Double, z: Double)](vector3d/init(x:y:z:)-2ejxw.md)
+- [init(x: Double, y: Double, z: Double)](./init%28x,y,z%29-2ejxw.md)
   Creates a vector from the specified double-precision values.
-- [init<T>(x: T, y: T, z: T)](vector3d/init(x:y:z:)-29hwg.md)
+- [init<T>(x: T, y: T, z: T)](./init%28x,y,z%29-29hwg.md)
   Creates a vector from the specified floating-point values.
-- [init(simd_float3)](vector3d/init(_:)-73gdm.md)
+- [init(simd_float3)](./init%28_%29-73gdm.md)
   Creates a ray from the specified single-precision vector.
-- [init(simd_double3)](vector3d/init(_:)-1a9i3.md)
+- [init(simd_double3)](./init%28_%29-1a9i3.md)
   Creates a vector from the specified double-precision vector.
-- [init(vector: simd_double3)](vector3d/init(vector:).md)
+- [init(vector: simd_double3)](./init%28vector%29.md)
   Creates a vector from the specified double-precision vector.
-- [init(RotationAxis3D)](vector3d/init(_:)-3br9h.md)
+- [init(RotationAxis3D)](./init%28_%29-3br9h.md)
   Creates a vector from the specified Spatial rotation axis.
-- [init(Point3D)](vector3d/init(_:)-8vcph.md)
+- [init(Point3D)](./init%28_%29-8vcph.md)
   Creates a vector from the specified Spatial point structure.
-- [init(Size3D)](vector3d/init(_:)-8egfs.md)
+- [init(Size3D)](./init%28_%29-8egfs.md)
   Creates a vector from the specified Spatial size structure.
 
 

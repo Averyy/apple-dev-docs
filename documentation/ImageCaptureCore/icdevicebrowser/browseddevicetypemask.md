@@ -1,7 +1,8 @@
 # browsedDeviceTypeMask
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask whose set bits indicate the type of devices being browsed after the delegate receives the start message.
 
@@ -18,21 +19,26 @@ A mask whose set bits indicate the type of devices being browsed after the deleg
 var browsedDeviceTypeMask: ICDeviceTypeMask { get set }
 ```
 
+```objc
+@property (readwrite) ICDeviceTypeMask browsedDeviceTypeMask;
+```
+
 #### Discussion
 
-Construct this property by performing bitwise OR on values of [`ICDeviceTypeMask`](icdevicetypemask.md) with values of [`ICDeviceLocationTypeMask`](icdevicelocationtypemask.md). You can change this property while the browser is looking for devices.
+Construct this property by performing bitwise OR on values of [`ICDeviceTypeMask`](../icdevicetypemask.md) with values of [`ICDeviceLocationTypeMask`](../icdevicelocationtypemask.md). You can change this property while the browser is looking for devices.
 
 ## See Also
 
-- [var isBrowsing: Bool](icdevicebrowser/isbrowsing.md)
+### Browsing Devices
+- [var isBrowsing: Bool](./isbrowsing.md)
   A Boolean value indicating whether the device browser is browsing for devices.
-- [var devices: [ICDevice]?](icdevicebrowser/devices.md)
+- [var devices: [ICDevice]?](./devices.md)
   All devices found by the browser.
-- [class ICDevice](icdevice.md)
+- [class ICDevice](../icdevice.md)
   An abstract object that represents a device.
-- [func start()](icdevicebrowser/start.md)
+- [func start()](./start%28%29.md)
   Tells the delegate to start looking for devices.
-- [func stop()](icdevicebrowser/stop.md)
+- [func stop()](./stop%28%29.md)
   Tells the delegate to stop looking for devices.
 
 

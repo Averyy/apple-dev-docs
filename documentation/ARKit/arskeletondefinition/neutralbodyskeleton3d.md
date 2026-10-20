@@ -1,7 +1,8 @@
 # neutralBodySkeleton3D
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 3D skeleton in neutral pose.
 
@@ -15,13 +16,18 @@ The 3D skeleton in neutral pose.
 var neutralBodySkeleton3D: ARSkeleton3D? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) ARSkeleton3D * neutralBodySkeleton3D;
+```
+
 #### Discussion
 
 The neutral skeleton height is 1.66 meters and is posed in the shape of a T. This skeleton is provided to you for reference to all other possible skeleton poses.
 
 ## See Also
 
-- [class var defaultBody3D: ARSkeletonDefinition](arskeletondefinition/defaultbody3d.md)
+### Locating in the Physical Environment
+- [class var defaultBody3D: ARSkeletonDefinition](./defaultbody3d.md)
   The default skeleton definition for bodies defined in 3D.
 
 

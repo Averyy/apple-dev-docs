@@ -1,18 +1,23 @@
 # remove(from:forMode:)
 
 **Framework**: Open Directory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the query from a specified run loop.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
 
 ```swift
 func remove(from inRunLoop: RunLoop!, forMode inMode: String!)
+```
+
+```objc
+- (void) removeFromRunLoop:(NSRunLoop *) inRunLoop forMode:(NSString *) inMode;
 ```
 
 ## Parameters
@@ -22,13 +27,14 @@ func remove(from inRunLoop: RunLoop!, forMode inMode: String!)
 
 ## See Also
 
-- [var delegate: (any ODQueryDelegate)!](odquery/delegate.md)
+### Managing Asynchronous Queries
+- [var delegate: (any ODQueryDelegate)!](./delegate.md)
   The query’s delegate.
-- [var operationQueue: OperationQueue!](odquery/operationqueue.md)
+- [var operationQueue: OperationQueue!](./operationqueue.md)
   The queue on which asynchronous results are delivered to the delegate.
-- [func schedule(in: RunLoop!, forMode: String!)](odquery/schedule(in:formode:).md)
+- [func schedule(in: RunLoop!, forMode: String!)](./schedule%28in,formode%29.md)
   Retrieves results from a query asynchronously by scheduling the query in a run loop.
-- [func synchronize()](odquery/synchronize.md)
+- [func synchronize()](./synchronize%28%29.md)
   Restarts a query, disposing of any results it has obtained.
 
 

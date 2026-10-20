@@ -1,7 +1,8 @@
 # firstMipmapInTail
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first mipmap in the tail.
 
@@ -15,8 +16,20 @@ The index of the first mipmap in the tail.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var firstMipmapInTail: Int { get }
+```
+
+*Mac Catalyst, macOS*
+
 ```swift
 optional var firstMipmapInTail: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger firstMipmapInTail;
 ```
 
 #### Discussion
@@ -25,9 +38,10 @@ In a sparse texture, the *tail* is a collection of mipmaps at higher index value
 
 ## See Also
 
-- [var isSparse: Bool](mtltexture/issparse.md)
+### Querying sparse properties
+- [var isSparse: Bool](./issparse.md)
   A Boolean value that indicates whether this is a sparse texture.
-- [var tailSizeInBytes: Int](mtltexture/tailsizeinbytes.md)
+- [var tailSizeInBytes: Int](./tailsizeinbytes.md)
   The size of the sparse texture tail, in bytes.
 
 

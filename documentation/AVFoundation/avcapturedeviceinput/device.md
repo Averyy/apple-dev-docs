@@ -1,7 +1,8 @@
 # device
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capture device associated with this input.
 
@@ -19,9 +20,14 @@ A capture device associated with this input.
 var device: AVCaptureDevice { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureDevice * device;
+```
+
 ## See Also
 
-- [func ports(for: AVMediaType?, sourceDeviceType: AVCaptureDevice.DeviceType?, sourceDevicePosition: AVCaptureDevice.Position) -> [AVCaptureInput.Port]](avcapturedeviceinput/ports(for:sourcedevicetype:sourcedeviceposition:).md)
+### Accessing the device
+- [func ports(for: AVMediaType?, sourceDeviceType: AVCaptureDevice.DeviceType?, sourceDevicePosition: AVCaptureDevice.Position) -> [AVCaptureInput.Port]](./ports%28for,sourcedevicetype,sourcedeviceposition%29.md)
   Retrieves a virtual device’s constituent device ports for use in a multi-camera session.
 
 

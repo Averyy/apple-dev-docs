@@ -40,5 +40,5 @@ Xcode or `xcodebuild`.
 
 ## Command Line Tools
 
-See <doc:troubleshooting> (Running From Command Line) for information about running command line tools from the shell.
+See [Troubleshooting](troubleshooting.md) (Running From Command Line) for information about running command line tools from the shell.
 

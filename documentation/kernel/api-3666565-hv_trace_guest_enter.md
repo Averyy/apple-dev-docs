@@ -1,14 +1,15 @@
 # hv_trace_guest_enter
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void hv_trace_guest_enter(uint32_t vcpu_id, uint64_t *vcpu_regs);
 ```
 

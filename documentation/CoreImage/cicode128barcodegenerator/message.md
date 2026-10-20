@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The message to encode in the Code 128 barcode.
@@ -20,11 +21,16 @@ The message to encode in the Code 128 barcode.
 var message: Data { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSData * message;
+```
+
 ## See Also
 
-- [var barcodeHeight: Float](cicode128barcodegenerator/barcodeheight.md)
+### Instance Properties
+- [var barcodeHeight: Float](./barcodeheight.md)
   The height, in pixels, of the generated barcode.
-- [var quietSpace: Float](cicode128barcodegenerator/quietspace.md)
+- [var quietSpace: Float](./quietspace.md)
   The number of empty white pixels that should surround the barcode.
 
 

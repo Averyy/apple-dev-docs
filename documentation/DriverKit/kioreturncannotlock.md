@@ -1,37 +1,39 @@
 # kIOReturnCannotLock
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOReturnCannotLock
 ```
 
 ## See Also
 
-- [kIOReturnAborted](kioreturnaborted.md)
-- [kIOReturnBadArgument](kioreturnbadargument.md)
-- [kIOReturnBadMedia](kioreturnbadmedia.md)
-- [kIOReturnBadMessageID](kioreturnbadmessageid.md)
-- [kIOReturnBusy](kioreturnbusy.md)
-- [kIOReturnCannotWire](kioreturncannotwire.md)
-- [kIOReturnDeviceError](kioreturndeviceerror.md)
-- [kIOReturnDMAError](kioreturndmaerror.md)
-- [kIOReturnError](kioreturnerror.md)
-- [kIOReturnExclusiveAccess](kioreturnexclusiveaccess.md)
-- [kIOReturnInternalError](kioreturninternalerror.md)
-- [kIOReturnInvalid](kioreturninvalid.md)
-- [kIOReturnIOError](kioreturnioerror.md)
-- [kIOReturnIPCError](kioreturnipcerror.md)
-- [kIOReturnIsoTooNew](kioreturnisotoonew.md)
+### Errors
+- [kIOReturnAborted](./kioreturnaborted.md)
+- [kIOReturnBadArgument](./kioreturnbadargument.md)
+- [kIOReturnBadMedia](./kioreturnbadmedia.md)
+- [kIOReturnBadMessageID](./kioreturnbadmessageid.md)
+- [kIOReturnBusy](./kioreturnbusy.md)
+- [kIOReturnCannotWire](./kioreturncannotwire.md)
+- [kIOReturnDeviceError](./kioreturndeviceerror.md)
+- [kIOReturnDMAError](./kioreturndmaerror.md)
+- [kIOReturnError](./kioreturnerror.md)
+- [kIOReturnExclusiveAccess](./kioreturnexclusiveaccess.md)
+- [kIOReturnInternalError](./kioreturninternalerror.md)
+- [kIOReturnInvalid](./kioreturninvalid.md)
+- [kIOReturnIOError](./kioreturnioerror.md)
+- [kIOReturnIPCError](./kioreturnipcerror.md)
+- [kIOReturnIsoTooNew](./kioreturnisotoonew.md)
 
 
 ---

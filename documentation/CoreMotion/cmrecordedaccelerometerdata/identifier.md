@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the accelerometer data.
 
@@ -18,13 +19,18 @@ The unique identifier for the accelerometer data.
 var identifier: UInt64 { get }
 ```
 
+```objc
+@property (readonly) uint64_t identifier;
+```
+
 #### Discussion
 
 Accelerometer data is recorded in batches, which are assigned a unique identifier. This property contains the identifier of the batch in which this particular sample was recorded.
 
 ## See Also
 
-- [var startDate: Date](cmrecordedaccelerometerdata/startdate.md)
+### Getting the Accelerometer Data
+- [var startDate: Date](./startdate.md)
   The wall clock time when the sensor sample was recorded.
 
 

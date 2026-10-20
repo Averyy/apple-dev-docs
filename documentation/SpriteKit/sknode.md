@@ -1,280 +1,309 @@
 # SKNode
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class of all SpriteKit nodes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, macOS, tvOS, visionOS*
+
+```swift
+@MainActor
+class SKNode
+```
+
+*watchOS*
 
 ```swift
 class SKNode
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface SKNode : UIResponder
+```
+
+*macOS*
+
+```objc
+@interface SKNode : NSResponder
+```
+
+*watchOS*
+
+```objc
+@interface SKNode : NSObject
+```
+
 ## Mentions
 
-- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Detecting Changes at Each Step of an Animation](detecting-changes-at-each-step-of-an-animation.md)
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [Searching the Node Tree](searching-the-node-tree.md)
-- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
+- [Customizing the Behavior of a Node](./customizing-the-behavior-of-a-node.md)
+- [Accessing and Modifying the Node Tree](./accessing-and-modifying-the-node-tree.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
+- [Connecting Bodies with Joints](./connecting-bodies-with-joints.md)
+- [Controlling User Interaction on Nodes](./controlling-user-interaction-on-nodes.md)
+- [Detecting Changes at Each Step of an Animation](./detecting-changes-at-each-step-of-an-animation.md)
+- [Resizing a Sprite in Nine Parts](./resizing-a-sprite-in-nine-parts.md)
+- [Searching the Node Tree](./searching-the-node-tree.md)
+- [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
 
 #### Overview
 
-`SKNode` provides base properties for its subclasses and it can be used as a container or layout tool for other nodes. For example, you might add a collection of nodes as children to an `SKNode` that all move together within the scene; because nodes inherit the properties of their parent, changing the parent node’s [`position`](sknode/position.md) propagates the change to its children as well.
+`SKNode` provides base properties for its subclasses and it can be used as a container or layout tool for other nodes. For example, you might add a collection of nodes as children to an `SKNode` that all move together within the scene; because nodes inherit the properties of their parent, changing the parent node’s [`position`](./sknode/position.md) propagates the change to its children as well.
 
-`SKNode` does not draw any content itself. Its visual counterparts are listed in Nodes that Draw in [`Nodes for Scene Building`](nodes-for-scene-building.md).
+`SKNode` does not draw any content itself. Its visual counterparts are listed in Nodes that Draw in [Nodes for Scene Building](./nodes-for-scene-building.md).
 
 ## Topics
 
 ### First Steps
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Getting Started with Nodes](./getting-started-with-nodes.md)
   Learn about the fundamental properties that provide a foundation for all other nodes.
-- [init()](sknode/init.md)
+- [init()](./sknode/init%28%29.md)
   Initializes a blank node.
-- [convenience init?(fileNamed: String)](sknode/init(filenamed:).md)
+- [convenience init?(fileNamed: String)](./sknode/init%28filenamed%29.md)
   Creates a new node by loading an archive file from the game’s main bundle.
-- [init?(coder: NSCoder)](sknode/init(coder:).md)
+- [init?(coder: NSCoder)](./sknode/init%28coder%29.md)
   Called when a node is initialized from an .sks file.
-- [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](sknode/init(filenamed:securelywithclasses:).md)
+- [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](./sknode/init%28filenamed,securelywithclasses%29.md)
 ### Positioning Content in a Scene
-- [var position: CGPoint](sknode/position.md)
+- [var position: CGPoint](./sknode/position.md)
   The position of the node in its parent’s coordinate system.
 ### Querying the Content Size
-- [var frame: CGRect](sknode/frame.md)
+- [var frame: CGRect](./sknode/frame.md)
   A rectangle in the parent’s coordinate system that contains the node’s content, ignoring the node’s children.
-- [func calculateAccumulatedFrame() -> CGRect](sknode/calculateaccumulatedframe.md)
+- [func calculateAccumulatedFrame() -> CGRect](./sknode/calculateaccumulatedframe%28%29.md)
   Returns a rectangle in the parent’s coordinate system that contains the position and size of itself and all child nodes.
 ### Configuring Draw Order
-- [About Node Drawing Order](about-node-drawing-order.md)
+- [About Node Drawing Order](./about-node-drawing-order.md)
   Understand how SpriteKit layers your scene’s nodes from top to bottom.
-- [var zPosition: CGFloat](sknode/zposition.md)
+- [var zPosition: CGFloat](./sknode/zposition.md)
   The height of the node relative to its parent.
 ### Scaling and Rotating
-- [var zRotation: CGFloat](sknode/zrotation.md)
+- [var zRotation: CGFloat](./sknode/zrotation.md)
   The Euler rotation about the z axis (in radians).
-- [func setScale(CGFloat)](sknode/setscale(_:).md)
-  Sets the [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) properties of the node.
-- [var xScale: CGFloat](sknode/xscale.md)
+- [func setScale(CGFloat)](./sknode/setscale%28_%29.md)
+  Sets the [`xScale`](./sknode/xscale.md) and [`yScale`](./sknode/yscale.md) properties of the node.
+- [var xScale: CGFloat](./sknode/xscale.md)
   A scaling factor that multiplies the width of a node and its children.
-- [var yScale: CGFloat](sknode/yscale.md)
+- [var yScale: CGFloat](./sknode/yscale.md)
   A scaling factor that multiplies the height of a node and its children.
 ### Accessing Related Nodes
-- [About SpriteKit Coordinate Systems](about-spritekit-coordinate-systems.md)
+- [About SpriteKit Coordinate Systems](./about-spritekit-coordinate-systems.md)
   Learn how a node conforms to its coordinate systems.
-- [var scene: SKScene?](sknode/scene.md)
+- [var scene: SKScene?](./sknode/scene.md)
   The scene node that contains this node.
-- [var parent: SKNode?](sknode/parent.md)
+- [var parent: SKNode?](./sknode/parent.md)
   The node’s parent node.
-- [var children: [SKNode]](sknode/children.md)
+- [var children: [SKNode]](./sknode/children.md)
   The node’s children.
 ### Modifying the Node Tree
-- [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
+- [Accessing and Modifying the Node Tree](./accessing-and-modifying-the-node-tree.md)
   See the objects and functions you use to control the node tree’s composition.
-- [func addChild(SKNode)](sknode/addchild(_:).md)
+- [func addChild(SKNode)](./sknode/addchild%28_%29.md)
   Adds a node to the end of the receiver’s list of child nodes.
-- [func insertChild(SKNode, at: Int)](sknode/insertchild(_:at:).md)
+- [func insertChild(SKNode, at: Int)](./sknode/insertchild%28_,at%29.md)
   Inserts a node into a specific position in the receiver’s list of child nodes.
-- [func isEqual(to: SKNode) -> Bool](sknode/isequal(to:).md)
+- [func isEqual(to: SKNode) -> Bool](./sknode/isequal%28to%29.md)
   Compares the parameter node to the receiving node.
-- [func move(toParent: SKNode)](sknode/move(toparent:).md)
+- [func move(toParent: SKNode)](./sknode/move%28toparent%29.md)
   Moves the node to a new parent node in the scene.
-- [func removeFromParent()](sknode/removefromparent.md)
+- [func removeFromParent()](./sknode/removefromparent%28%29.md)
   Removes the receiving node from its parent.
-- [func removeAllChildren()](sknode/removeallchildren.md)
+- [func removeAllChildren()](./sknode/removeallchildren%28%29.md)
   Removes all of the node’s children.
-- [func removeChildren(in: [SKNode])](sknode/removechildren(in:).md)
+- [func removeChildren(in: [SKNode])](./sknode/removechildren%28in%29.md)
   Removes a list of children from the receiving node.
-- [func inParentHierarchy(SKNode) -> Bool](sknode/inparenthierarchy(_:).md)
+- [func inParentHierarchy(SKNode) -> Bool](./sknode/inparenthierarchy%28_%29.md)
   Returns a Boolean value that indicates whether the node is a descendant of the target node.
 ### Customizing Nodes
-- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
+- [Customizing the Behavior of a Node](./customizing-the-behavior-of-a-node.md)
   Organize your app’s logic and display code with nodes.
 ### Propagating Properties to Children
-- [About Node Property Propagation](about-node-property-propagation.md)
+- [About Node Property Propagation](./about-node-property-propagation.md)
   Learn which properties of a node affect its child nodes.
 ### Accessing Nodes by Name
-- [Searching the Node Tree](searching-the-node-tree.md)
+- [Searching the Node Tree](./searching-the-node-tree.md)
   Access nodes by name to avoid needing an instance variable.
-- [var name: String?](sknode/name.md)
+- [var name: String?](./sknode/name.md)
   The node’s assignable name.
-- [func childNode(withName: String) -> SKNode?](sknode/childnode(withname:).md)
+- [func childNode(withName: String) -> SKNode?](./sknode/childnode%28withname%29.md)
   Searches the children of the receiving node for a node with a specific name.
-- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](sknode/enumeratechildnodes(withname:using:).md)
+- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](./sknode/enumeratechildnodes%28withname,using%29.md)
   Searches the children of the receiving node to perform processing for nodes that share a name.
-- [subscript(String) -> [SKNode]](sknode/subscript(_:).md)
+- [subscript(String) -> [SKNode]](./sknode/subscript%28_%29.md)
   Returns an array of nodes that match the name parameter.
 ### Altering Node Visibility
-- [var alpha: CGFloat](sknode/alpha.md)
+- [var alpha: CGFloat](./sknode/alpha.md)
   The transparency value applied to the node’s contents.
-- [var isHidden: Bool](sknode/ishidden.md)
+- [var isHidden: Bool](./sknode/ishidden.md)
   A Boolean value that determines whether a node and its descendants are rendered.
 ### Running Actions
-- [Getting Started with Actions](getting-started-with-actions.md)
+- [Getting Started with Actions](./getting-started-with-actions.md)
   Create, configure, and run actions in SpriteKit.
-- [func run(SKAction)](sknode/run(_:).md)
+- [func run(SKAction)](./sknode/run%28_%29.md)
   Adds an action to the list of actions executed by the node.
-- [func run(SKAction, completion: () -> Void)](sknode/run(_:completion:).md)
+- [func run(SKAction, completion: () -> Void)](./sknode/run%28_,completion%29.md)
   Adds an action to the list of actions executed by the node and schedules the argument block to be run upon completion of the action.
-- [func run(SKAction, withKey: String)](sknode/run(_:withkey:).md)
+- [func run(SKAction, withKey: String)](./sknode/run%28_,withkey%29.md)
   Adds an identifiable action to the list of actions executed by the node.
-- [var speed: CGFloat](sknode/speed.md)
+- [var speed: CGFloat](./sknode/speed.md)
   A speed modifier applied to all actions executed by a node and its descendants.
-- [var isPaused: Bool](sknode/ispaused.md)
+- [var isPaused: Bool](./sknode/ispaused.md)
   A Boolean value that determines whether actions on the node and its descendants are processed.
-- [func action(forKey: String) -> SKAction?](sknode/action(forkey:).md)
+- [func action(forKey: String) -> SKAction?](./sknode/action%28forkey%29.md)
   Returns an action associated with a specific key.
-- [func hasActions() -> Bool](sknode/hasactions.md)
+- [func hasActions() -> Bool](./sknode/hasactions%28%29.md)
   Returns a Boolean value that indicates whether the node is executing actions.
-- [func removeAllActions()](sknode/removeallactions.md)
+- [func removeAllActions()](./sknode/removeallactions%28%29.md)
   Ends and removes all actions from the node.
-- [func removeAction(forKey: String)](sknode/removeaction(forkey:).md)
+- [func removeAction(forKey: String)](./sknode/removeaction%28forkey%29.md)
   Removes an action associated with a specific key.
 ### Adding Physics Behaviors
-- [Getting Started with Physics Bodies](getting-started-with-physics-bodies.md)
+- [Getting Started with Physics Bodies](./getting-started-with-physics-bodies.md)
   Create and assign a physics body to enable physics.
-- [var physicsBody: SKPhysicsBody?](sknode/physicsbody.md)
+- [var physicsBody: SKPhysicsBody?](./sknode/physicsbody.md)
   The physics body associated with the node.
 ### Constraining Node Position or Rotation
-- [var constraints: [SKConstraint]?](sknode/constraints.md)
+- [var constraints: [SKConstraint]?](./sknode/constraints.md)
   A list of constraints to apply to the node.
-- [var reachConstraints: SKReachConstraints?](sknode/reachconstraints.md)
+- [var reachConstraints: SKReachConstraints?](./sknode/reachconstraints.md)
   The reach constraints to apply to the node when executing a reach action.
 ### Detecting Collisions Manually
-- [func intersects(SKNode) -> Bool](sknode/intersects(_:).md)
+- [func intersects(SKNode) -> Bool](./sknode/intersects%28_%29.md)
   Returns a Boolean value that indicates whether this node intersects the specified node.
 ### Adding GameplayKit Behaviors
-- [var entity: GKEntity?](sknode/entity.md)
+- [var entity: GKEntity?](./sknode/entity.md)
   The GameplayKit entity this node represents.
-- [class func obstacles(fromNodeBounds: [SKNode]) -> [GKPolygonObstacle]](sknode/obstacles(fromnodebounds:).md)
+- [class func obstacles(fromNodeBounds: [SKNode]) -> [GKPolygonObstacle]](./sknode/obstacles%28fromnodebounds%29.md)
   Converts each node into an obstacle by transforming its bounds into the scene’s coordinate system.
-- [class func obstacles(fromNodePhysicsBodies: [SKNode]) -> [GKPolygonObstacle]](sknode/obstacles(fromnodephysicsbodies:).md)
+- [class func obstacles(fromNodePhysicsBodies: [SKNode]) -> [GKPolygonObstacle]](./sknode/obstacles%28fromnodephysicsbodies%29.md)
   Converts each node into an obstacle by transforming the node’s physics body shape into the scene’s coordinate system.
-- [class func obstacles(fromSpriteTextures: [SKNode], accuracy: Float) -> [GKPolygonObstacle]](sknode/obstacles(fromspritetextures:accuracy:).md)
+- [class func obstacles(fromSpriteTextures: [SKNode], accuracy: Float) -> [GKPolygonObstacle]](./sknode/obstacles%28fromspritetextures,accuracy%29.md)
   Turns each node into an obstacle by changing the node’s texture into a physics shape and converting it into the scene’s coordinate system.
 ### Handling User Input
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
+- [Controlling User Interaction on Nodes](./controlling-user-interaction-on-nodes.md)
   Enable your node to respond to user input, like touches or mouse clicks.
-- [var isUserInteractionEnabled: Bool](sknode/isuserinteractionenabled.md)
+- [var isUserInteractionEnabled: Bool](./sknode/isuserinteractionenabled.md)
   A Boolean value that indicates whether the node receives touch events.
-- [var focusBehavior: SKNodeFocusBehavior](sknode/focusbehavior.md)
+- [var focusBehavior: SKNodeFocusBehavior](./sknode/focusbehavior.md)
   The focus behavior for a node.
 ### Hit Testing
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+- [Understanding Hit-Testing](./understanding-hit-testing.md)
   Learn how find child nodes at a given point by using hit-testing.
-- [func contains(CGPoint) -> Bool](sknode/contains(_:).md)
+- [func contains(CGPoint) -> Bool](./sknode/contains%28_%29.md)
   Returns a Boolean value that indicates whether a point lies inside the parent’s coordinate system.
-- [func atPoint(CGPoint) -> SKNode](sknode/atpoint(_:).md)
+- [func atPoint(CGPoint) -> SKNode](./sknode/atpoint%28_%29.md)
   Returns the deepest visible descendant that intersects a point.
-- [func nodes(at: CGPoint) -> [SKNode]](sknode/nodes(at:).md)
+- [func nodes(at: CGPoint) -> [SKNode]](./sknode/nodes%28at%29.md)
   Returns an array of all visible descendants that intersect a point.
 ### Converting Between Coordinate Systems of Different Nodes
-- [Converting Coordinate Spaces](converting-coordinate-spaces.md)
+- [Converting Coordinate Spaces](./converting-coordinate-spaces.md)
   Convert positions across the various coordinate spaces in a scene.
-- [func convert(CGPoint, from: SKNode) -> CGPoint](sknode/convert(_:from:).md)
+- [func convert(CGPoint, from: SKNode) -> CGPoint](./sknode/convert%28_,from%29.md)
   Converts a point from the coordinate system of another node in the node tree to the coordinate system of this node.
-- [func convert(CGPoint, to: SKNode) -> CGPoint](sknode/convert(_:to:).md)
+- [func convert(CGPoint, to: SKNode) -> CGPoint](./sknode/convert%28_,to%29.md)
   Converts a point in this node’s coordinate system to the coordinate system of another node in the node tree.
 ### Adding Custom Data Without Subclassing
-- [var userData: NSMutableDictionary?](sknode/userdata.md)
+- [var userData: NSMutableDictionary?](./sknode/userdata.md)
   A dictionary containing arbitrary data.
 ### Providing Accessibility
-- [var accessibilityChildren: [Any]?](sknode/accessibilitychildren.md)
+- [var accessibilityChildren: [Any]?](./sknode/accessibilitychildren.md)
   An array of user interface elements that represent children of this element.
-- [var accessibilityFrame: CGRect](sknode/accessibilityframe.md)
+- [var accessibilityFrame: CGRect](./sknode/accessibilityframe.md)
   The size of this user interface element, in screen points.
-- [var accessibilityHelp: String?](sknode/accessibilityhelp.md)
+- [var accessibilityHelp: String?](./sknode/accessibilityhelp.md)
   The help description of this user interface element; for example, the text shown in a tooltip.
-- [var accessibilityLabel: String?](sknode/accessibilitylabel.md)
+- [var accessibilityLabel: String?](./sknode/accessibilitylabel.md)
   A short description of this user interface element.
-- [var accessibilityParent: AnyObject?](sknode/accessibilityparent.md)
+- [var accessibilityParent: AnyObject?](./sknode/accessibilityparent.md)
   The user interface element that contains this element.
-- [var accessibilityRole: String?](sknode/accessibilityrole.md)
+- [var accessibilityRole: String?](./sknode/accessibilityrole.md)
   A string value describing the user interface element type; for example, a button.
-- [var accessibilityRoleDescription: String?](sknode/accessibilityroledescription.md)
+- [var accessibilityRoleDescription: String?](./sknode/accessibilityroledescription.md)
   A string value describing the user interface element name and type; for example, the Buy button.
-- [var accessibilitySubrole: String?](sknode/accessibilitysubrole.md)
+- [var accessibilitySubrole: String?](./sknode/accessibilitysubrole.md)
   A string that defines this user interface element’s subrole; for example, a full-screen button.
-- [var isAccessibilityElement: Bool](sknode/isaccessibilityelement.md)
+- [var isAccessibilityElement: Bool](./sknode/isaccessibilityelement.md)
   A toggle you implement to indicate to the system whether this user interface element should be exposed to the user.
-- [var isAccessibilityEnabled: Bool](sknode/isaccessibilityenabled.md)
+- [var isAccessibilityEnabled: Bool](./sknode/isaccessibilityenabled.md)
   A toggle you implement to indicate to the system whether this user interface element should respond to user input.
-- [func accessibilityHitTest(CGPoint) -> Any?](sknode/accessibilityhittest(_:).md)
+- [func accessibilityHitTest(CGPoint) -> Any?](./sknode/accessibilityhittest%28_%29.md)
   Returns the frontmost user interface element in the element hierarchy.
 ### Setting a Node’s Unique Attributes for a Shader
-- [var attributeValues: [String : SKAttributeValue]](sknode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./sknode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](sknode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./sknode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](sknode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./sknode/value%28forattributenamed%29.md)
   The value of a shader attribute.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
-- [NSResponder](../appkit/nsresponder.md)
-- [UIResponder](../uikit/uiresponder.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
+- [NSResponder](../AppKit/nsresponder.md)
+- [UIResponder](../UIKit/uiresponder.md)
 ### Inherited By
-- [SK3DNode](sk3dnode.md)
-- [SKAudioNode](skaudionode.md)
-- [SKCameraNode](skcameranode.md)
-- [SKCropNode](skcropnode.md)
-- [SKEffectNode](skeffectnode.md)
-- [SKEmitterNode](skemitternode.md)
-- [SKFieldNode](skfieldnode.md)
-- [SKLabelNode](sklabelnode.md)
-- [SKLightNode](sklightnode.md)
-- [SKReferenceNode](skreferencenode.md)
-- [SKShapeNode](skshapenode.md)
-- [SKSpriteNode](skspritenode.md)
-- [SKTileMapNode](sktilemapnode.md)
-- [SKTransformNode](sktransformnode.md)
-- [SKVideoNode](skvideonode.md)
+- [SK3DNode](./sk3dnode.md)
+- [SKAudioNode](./skaudionode.md)
+- [SKCameraNode](./skcameranode.md)
+- [SKCropNode](./skcropnode.md)
+- [SKEffectNode](./skeffectnode.md)
+- [SKEmitterNode](./skemitternode.md)
+- [SKFieldNode](./skfieldnode.md)
+- [SKLabelNode](./sklabelnode.md)
+- [SKLightNode](./sklightnode.md)
+- [SKReferenceNode](./skreferencenode.md)
+- [SKShapeNode](./skshapenode.md)
+- [SKSpriteNode](./skspritenode.md)
+- [SKTileMapNode](./sktilemapnode.md)
+- [SKTransformNode](./sktransformnode.md)
+- [SKVideoNode](./skvideonode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
+### Base Nodes
+- [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
   Use nonvisual nodes to define the layout of a scene.
-- [class SKCameraNode](skcameranode.md)
+- [class SKCameraNode](./skcameranode.md)
   A node that determines which parts of the scene are visible within a view.
-- [class SKReferenceNode](skreferencenode.md)
+- [class SKReferenceNode](./skreferencenode.md)
   A node that’s defined in an archived `.sks` file.
 
 

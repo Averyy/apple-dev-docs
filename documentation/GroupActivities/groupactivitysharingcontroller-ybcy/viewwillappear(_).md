@@ -1,7 +1,8 @@
 # viewWillAppear(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that the system is going to add a view to a view hierarchy.
 
@@ -20,7 +21,8 @@ override dynamic func viewWillAppear(_ animated: Bool)
 
 ## See Also
 
-- [func viewDidLoad()](groupactivitysharingcontroller-ybcy/viewdidload.md)
+### Responding to view-related events
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Notifies the view controller that the system added a view to a view hierarchy.
 
 

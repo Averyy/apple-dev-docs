@@ -1,7 +1,8 @@
 # DepthAlignmentID
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines a custom depth alignment guide.
 
@@ -16,9 +17,9 @@ protocol DepthAlignmentID
 
 #### Overview
 
-SwiftUI provides guides for the front, center, and back of a view. Conform to this protocol when you need to align views on some other plane along the depth axis, the way [`AlignmentID`](alignmentid.md) lets you add guides across width and height.
+SwiftUI provides guides for the front, center, and back of a view. Conform to this protocol when you need to align views on some other plane along the depth axis, the way [`AlignmentID`](./alignmentid.md) lets you add guides across width and height.
 
-Implement [`defaultValue(in:)`](depthalignmentid/defaultvalue(in:).md) to say where the guide falls in a view that does not set it, then wrap the type in a [`DepthAlignment`](depthalignment.md) so containers can align to it:
+Implement [`defaultValue(in:)`](./depthalignmentid/defaultvalue%28in%29.md) to say where the guide falls in a view that does not set it, then wrap the type in a [`DepthAlignment`](./depthalignment.md) so containers can align to it:
 
 ```swift
 private enum FrontThird: DepthAlignmentID {
@@ -32,7 +33,7 @@ extension DepthAlignment {
 }
 ```
 
-A layout then aligns its subviews on the new guide, and any subview can override the default with [`alignmentGuide(_:computeValue:)`](view/alignmentguide(_:computevalue:).md):
+A layout then aligns its subviews on the new guide, and any subview can override the default with [`alignmentGuide(_:computeValue:)`](./view/alignmentguide%28_,computevalue%29.md):
 
 ```swift
 let shelf = HStackLayout().depthAlignment(.frontThird)
@@ -48,24 +49,25 @@ shelf {
 ## Topics
 
 ### Type Methods
-- [static func defaultValue(in: ViewDimensions3D) -> CGFloat](depthalignmentid/defaultvalue(in:).md)
+- [static func defaultValue(in: ViewDimensions3D) -> CGFloat](./depthalignmentid/defaultvalue%28in%29.md)
   Calculates a default value for the corresponding guide in the specified context.
 
 ## See Also
 
-- [enum Axis](axis.md)
+### Accessing geometric constructs
+- [enum Axis](./axis.md)
   The horizontal or vertical dimension in a 2D coordinate system.
-- [struct Angle](angle.md)
+- [struct Angle](./angle.md)
   A geometric angle whose value you access in either radians or degrees.
-- [struct UnitPoint](unitpoint.md)
+- [struct UnitPoint](./unitpoint.md)
   A normalized 2D point in a view’s coordinate space.
-- [struct UnitPoint3D](unitpoint3d.md)
+- [struct UnitPoint3D](./unitpoint3d.md)
   A normalized 3D point in a view’s coordinate space.
-- [struct Anchor](anchor.md)
+- [struct Anchor](./anchor.md)
   An opaque value derived from an anchor source and a particular view.
-- [struct Alignment3D](alignment3d.md)
+- [struct Alignment3D](./alignment3d.md)
   An alignment in all three axes.
-- [struct GeometryProxyCoordinateSpace3D](geometryproxycoordinatespace3d.md)
+- [struct GeometryProxyCoordinateSpace3D](./geometryproxycoordinatespace3d.md)
   A representation of a `GeometryProxy3D` which can be used for `CoordinateSpace3D` based conversions.
 
 

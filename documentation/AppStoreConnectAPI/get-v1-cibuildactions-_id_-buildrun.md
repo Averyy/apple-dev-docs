@@ -1,7 +1,8 @@
 # Read the xcode cloud build information for a build action
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get Xcode Cloud build information for a given build action.
 
@@ -16,7 +17,7 @@ The example request below retrieves detailed information for a specific action X
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/6034552c-6cc0-4ac3-ad18-c3d24970882d/buildRun
 ```
 
@@ -95,29 +96,53 @@ GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/6034552c-6cc0-4ac3-a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Build Actions resource.
+
+### Query Parameters
+
 - `fields[builds]` ([string]): Additional fields to include for each Build Runs resource returned by the response.
+
+  **Allowed Values**: `version`, `uploadedDate`, `expirationDate`, `expired`, `minOsVersion`, `lsMinimumSystemVersion`, `computedMinMacOsVersion`, `computedMinVisionOsVersion`, `iconAssetToken`, `processingState`, `buildAudienceType`, `usesNonExemptEncryption`, `preReleaseVersion`, `individualTesters`, `betaGroups`, `betaBuildLocalizations`, `appEncryptionDeclaration`, `betaAppReviewSubmission`, `app`, `buildBetaDetail`, `appStoreVersion`, `icons`, `buildBundles`, `buildUpload`, `perfPowerMetrics`, `diagnosticSignatures`
 - `fields[ciBuildRuns]` ([string]): Additional fields to include for each Build Runs resource returned by the response.
+
+  **Allowed Values**: `number`, `createdDate`, `startedDate`, `finishedDate`, `sourceCommit`, `destinationCommit`, `isPullRequestBuild`, `issueCounts`, `executionProgress`, `completionStatus`, `startReason`, `cancelReason`, `builds`, `workflow`, `product`, `sourceBranchOrTag`, `destinationBranch`, `actions`, `pullRequest`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `builds`, `workflow`, `product`, `sourceBranchOrTag`, `destinationBranch`, `pullRequest`
 - `limit[builds]` (integer): The number of included Build Runs resources to return if the builds relationship is included.
-- `fields[scmGitReferences]` ([string])
-- `fields[ciWorkflows]` ([string])
-- `fields[scmPullRequests]` ([string])
-- `fields[ciProducts]` ([string])
+
+  **Maximum**: `50`
+- `fields[scmGitReferences]` ([string]): **Allowed Values**: `name`, `canonicalName`, `isDeleted`, `kind`, `repository`
+- `fields[ciWorkflows]` ([string]): **Allowed Values**: `name`, `description`, `branchStartCondition`, `tagStartCondition`, `pullRequestStartCondition`, `scheduledStartCondition`, `manualBranchStartCondition`, `manualTagStartCondition`, `manualPullRequestStartCondition`, `actions`, `isEnabled`, `isLockedForEditing`, `clean`, `containerFilePath`, `lastModifiedDate`, `product`, `repository`, `xcodeVersion`, `macOsVersion`, `buildRuns`
+- `fields[scmPullRequests]` ([string]): **Allowed Values**: `title`, `number`, `webUrl`, `sourceRepositoryOwner`, `sourceRepositoryName`, `sourceBranchName`, `destinationRepositoryOwner`, `destinationRepositoryName`, `destinationBranchName`, `isClosed`, `isCrossRepository`, `repository`
+- `fields[ciProducts]` ([string]): **Allowed Values**: `name`, `createdDate`, `productType`, `app`, `bundleId`, `workflows`, `primaryRepositories`, `additionalRepositories`, `buildRuns`
+
+## Responses
+
+- `200` OK (`CiBuildRunResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read build action information](get-v1-cibuildactions-_id_.md)
+### Getting Build Actions
+- [Read build action information](./get-v1-cibuildactions-_id_.md)
   Get information about a specific action Xcode Cloud performed as part of a build.
-- [List all artifacts for a build action](get-v1-cibuildactions-_id_-artifacts.md)
+- [List all artifacts for a build action](./get-v1-cibuildactions-_id_-artifacts.md)
   List all artifacts Xcode Cloud created when it performed an action.
-- [List all issues for a build action](get-v1-cibuildactions-_id_-issues.md)
+- [List all issues for a build action](./get-v1-cibuildactions-_id_-issues.md)
   List all issues that occurred for a specific action that Xcode Cloud performed as part of a build.
-- [List all test results for an xcode cloud test action](get-v1-cibuildactions-_id_-testresults.md)
+- [List all test results for an xcode cloud test action](./get-v1-cibuildactions-_id_-testresults.md)
   List all test results for a specific test action Xcode Cloud performed as part of a build.
-- [List artifact IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-artifacts.md)
-- [Get the build run ID for a CI build action](get-v1-cibuildactions-_id_-relationships-buildrun.md)
-- [List issue IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-issues.md)
-- [List test result IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-testresults.md)
+- [List artifact IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-artifacts.md)
+- [Get the build run ID for a CI build action](./get-v1-cibuildactions-_id_-relationships-buildrun.md)
+- [List issue IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-issues.md)
+- [List test result IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-testresults.md)
 
 
 ---

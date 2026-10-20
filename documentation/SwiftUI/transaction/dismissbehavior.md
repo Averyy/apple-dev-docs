@@ -1,9 +1,10 @@
 # dismissBehavior
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The behavior for how windows will dismiss programmatically when used in conjunction with [`DismissWindowAction`](dismisswindowaction.md).
+The behavior for how windows will dismiss programmatically when used in conjunction with [`DismissWindowAction`](../dismisswindowaction.md).
 
 **Availability**:
 - iOS 17.0+

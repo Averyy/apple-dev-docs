@@ -1,7 +1,8 @@
 # SubmitTriggers
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines various triggers that result in the firing of a submission action.
 
@@ -22,35 +23,36 @@ struct SubmitTriggers
 
 #### Overview
 
-These triggers may be provided to the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to alter which types of user behaviors trigger a provided submission action.
+These triggers may be provided to the [`onSubmit(of:_:)`](./view/onsubmit%28of,_%29.md) modifier to alter which types of user behaviors trigger a provided submission action.
 
 ## Topics
 
 ### Getting submit triggers
-- [static let search: SubmitTriggers](submittriggers/search.md)
+- [static let search: SubmitTriggers](./submittriggers/search.md)
   Defines triggers originating from search fields constructed from searchable modifiers.
-- [static let text: SubmitTriggers](submittriggers/text.md)
+- [static let text: SubmitTriggers](./submittriggers/text.md)
   Defines triggers originating from text input controls like `TextField` and `SecureField`.
 ### Creating a set of options
-- [init(rawValue: SubmitTriggers.RawValue)](submittriggers/init(rawvalue:).md)
+- [init(rawValue: SubmitTriggers.RawValue)](./submittriggers/init%28rawvalue%29.md)
   Creates a set of submit triggers.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](view/onsubmit(of:_:).md)
+### Responding to submission events
+- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](./view/onsubmit%28of,_%29.md)
   Adds an action to perform when the user submits a value to this view.
-- [func submitScope(Bool) -> some View](view/submitscope(_:).md)
+- [func submitScope(Bool) -> some View](./view/submitscope%28_%29.md)
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 
 

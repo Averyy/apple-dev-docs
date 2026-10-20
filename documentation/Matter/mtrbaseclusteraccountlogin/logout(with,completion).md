@@ -1,7 +1,8 @@
 # logout(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func logout(with params: MTRAccountLoginClusterLogoutParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func logout(with params: MTRAccountLoginClusterLogoutParams?) async throws
+```
+
+```objc
+- (void) logoutWithParams:(MTRAccountLoginClusterLogoutParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # preferredVideoHeight
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred video height to be used when sending and previewing frames. This is optional; a value of `-1` enables the system to decide the best resolution.
 

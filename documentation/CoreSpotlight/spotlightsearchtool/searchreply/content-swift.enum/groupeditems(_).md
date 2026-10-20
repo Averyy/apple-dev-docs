@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.groupedItems(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items partitioned by an attribute value (e.g. content type).
 

@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expiration date for an asset.
 
@@ -18,9 +19,14 @@ The expiration date for an asset.
 var expirationDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * expirationDate;
+```
+
 ## See Also
 
-- [var priority: AVAssetDownloadedAssetEvictionPriority](avassetdownloadstoragemanagementpolicy/priority.md)
+### Inspecting a policy
+- [var priority: AVAssetDownloadedAssetEvictionPriority](./priority.md)
   The eviction priority for an asset.
 
 

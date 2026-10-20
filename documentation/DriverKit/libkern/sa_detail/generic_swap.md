@@ -1,17 +1,18 @@
 # generic_swap
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T> void generic_swap(T & & a, T & & b);
 ```
 

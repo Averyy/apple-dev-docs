@@ -1,7 +1,8 @@
 # SecTrustResultType.recoverableTrustFailure
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Trust is denied, but recovery may be possible.
 
@@ -20,9 +21,13 @@ Trust is denied, but recovery may be possible.
 case recoverableTrustFailure
 ```
 
+```c
+kSecTrustResultRecoverableTrustFailure
+```
+
 ## Mentions
 
-- [Discovering Why a Trust Evaluation Failed](discovering-why-a-trust-evaluation-failed.md)
+- [Discovering Why a Trust Evaluation Failed](../discovering-why-a-trust-evaluation-failed.md)
 
 #### Discussion
 
@@ -30,11 +35,11 @@ This value indicates that you should not trust the chain as is, but that the cha
 
 The way you handle this depends on the situation. For example, if you are performing signature validation and you know when the message was originally received, you should check again using that date to see if the message was valid when you originally received it.
 
-You can also call the [`SecTrustCopyResult(_:)`](sectrustcopyresult(_:).md) method to get more information about the results of the trust evaluation. If applicable, you can call one or more of the methods that start with `SecTrustSet` to correct or bypass the problem. Alternatively, in macOS, you can inform the user of the problem and call the [`SFCertificateTrustPanel`](https://developer.apple.com/documentation/securityinterface/sfcertificatetrustpanel) class to let the user change the trust setting for the certificate.
+You can also call the [`SecTrustCopyResult(_:)`](../sectrustcopyresult%28_%29.md) method to get more information about the results of the trust evaluation. If applicable, you can call one or more of the methods that start with `SecTrustSet` to correct or bypass the problem. Alternatively, in macOS, you can inform the user of the problem and call the [`SFCertificateTrustPanel`](../../SecurityInterface/sfcertificatetrustpanel.md) class to let the user change the trust setting for the certificate.
 
-After correcting the problem, reevaluate the trust. Each time you call [`SecTrustEvaluateWithError(_:_:)`](sectrustevaluatewitherror(_:_:).md) or [`SecTrustEvaluateAsyncWithError(_:_:_:)`](sectrustevaluateasyncwitherror(_:_:_:).md), the method discards the results of any previous evaluation and replaces them with the new results.
+After correcting the problem, reevaluate the trust. Each time you call [`SecTrustEvaluateWithError(_:_:)`](../sectrustevaluatewitherror%28_,_%29.md) or [`SecTrustEvaluateAsyncWithError(_:_:_:)`](../sectrustevaluateasyncwitherror%28_,_,_%29.md), the method discards the results of any previous evaluation and replaces them with the new results.
 
-You might receive the [`SecTrustResultType.recoverableTrustFailure`](sectrustresulttype/recoverabletrustfailure.md) value after an evaluation, but you can’t store the value as part of the user trust settings with a call to the [`SecTrustSettingsSetTrustSettings(_:_:_:)`](sectrustsettingssettrustsettings(_:_:_:).md) method.
+You might receive the [`SecTrustResultType.recoverableTrustFailure`](./recoverabletrustfailure.md) value after an evaluation, but you can’t store the value as part of the user trust settings with a call to the [`SecTrustSettingsSetTrustSettings(_:_:_:)`](../sectrustsettingssettrustsettings%28_,_,_%29.md) method.
 
 
 ---

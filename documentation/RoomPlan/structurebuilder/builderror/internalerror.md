@@ -1,7 +1,8 @@
 # StructureBuilder.BuildError.internalError
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates when the framework encounters an unexpected error case.
 

@@ -1,14 +1,15 @@
 # configRead32
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 UInt32 configRead32(IOByteCount offset);
 ```
 

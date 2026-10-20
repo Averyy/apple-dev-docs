@@ -1,7 +1,8 @@
 # isPlayable
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether an asset contains playable content.
 
@@ -20,23 +21,26 @@ A Boolean value that indicates whether an asset contains playable content.
 static var isPlayable: AVAsyncProperty<Root, Bool> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-> **Note**:  You can attempt playback when value is [`false`](https://developer.apple.com/documentation/swift/false), but this may result in a substandard playback experience.
+> **Note**:  You can attempt playback when value is [`false`](../../Swift/false.md), but this may result in a substandard playback experience.
 
 ## See Also
 
-- [static var isExportable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isexportable.md)
+### Loading suitability
+- [static var isExportable: AVAsyncProperty<Root, Bool>](./isexportable.md)
   A Boolean value that indicates whether you can export an asset using an export session.
-- [static var isReadable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/isreadable.md)
+- [static var isReadable: AVAsyncProperty<Root, Bool>](./isreadable.md)
   A Boolean value that indicates whether you can extract the asset’s media data using an asset reader.
-- [static var isComposable: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/iscomposable.md)
+- [static var isComposable: AVAsyncProperty<Root, Bool>](./iscomposable.md)
   A Boolean value that indicates whether you can use the asset in a media composition.
-- [static var isCompatibleWithAirPlayVideo: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/iscompatiblewithairplayvideo.md)
+- [static var isCompatibleWithAirPlayVideo: AVAsyncProperty<Root, Bool>](./iscompatiblewithairplayvideo.md)
   A Boolean value that indicates whether the asset is compatible with AirPlay Video.
-- [static var isCompatibleWithSavedPhotosAlbum: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/iscompatiblewithsavedphotosalbum.md)
+- [static var isCompatibleWithSavedPhotosAlbum: AVAsyncProperty<Root, Bool>](./iscompatiblewithsavedphotosalbum.md)
   A Boolean value that indicates whether you can write the asset to the Saved Photos album.
 
 

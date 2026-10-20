@@ -1,7 +1,8 @@
 # visibleItemsInvalidationHandler
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure called before each layout cycle to allow modification of the items in the section immediately before they’re displayed.
 
@@ -12,6 +13,10 @@ A closure called before each layout cycle to allow modification of the items in 
 
 ```swift
 var visibleItemsInvalidationHandler: NSCollectionLayoutSectionVisibleItemsInvalidationHandler? { get set }
+```
+
+```objc
+@property (copy, nullable) NSCollectionLayoutSectionVisibleItemsInvalidationHandler visibleItemsInvalidationHandler;
 ```
 
 

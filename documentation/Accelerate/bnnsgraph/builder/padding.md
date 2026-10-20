@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Padding
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The padding that you use for pad operations.
 
@@ -23,17 +24,17 @@ enum Padding
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.Padding.constant(value:)](bnnsgraph/builder/padding/constant(value:).md)
-- [BNNSGraph.Builder.Padding.reflection](bnnsgraph/builder/padding/reflection.md)
-- [BNNSGraph.Builder.Padding.replication](bnnsgraph/builder/padding/replication.md)
+- [BNNSGraph.Builder.Padding.constant(value:)](./padding/constant%28value%29.md)
+- [BNNSGraph.Builder.Padding.reflection](./padding/reflection.md)
+- [BNNSGraph.Builder.Padding.replication](./padding/replication.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

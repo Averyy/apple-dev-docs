@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that the interaction notifies when the system changes the text selection.
 
@@ -17,15 +18,20 @@ A delegate object that the interaction notifies when the system changes the text
 weak var delegate: (any BETextInteractionDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<BETextInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol BETextInteractionDelegate](betextinteractiondelegate.md)
+### Text selection
+- [protocol BETextInteractionDelegate](../betextinteractiondelegate.md)
   A set of methods that informs you about selection changes in text views.
-- [var textSelectionDisplayInteraction: UITextSelectionDisplayInteraction](betextinteraction/textselectiondisplayinteraction.md)
+- [var textSelectionDisplayInteraction: UITextSelectionDisplayInteraction](./textselectiondisplayinteraction.md)
   An interaction that manages the system’s text-selection UI.
-- [func selectionBoundaryAdjusted(to: CGPoint, touchPhase: BESelectionTouchPhase, flags: BESelectionFlags)](betextinteraction/selectionboundaryadjusted(to:touchphase:flags:).md)
+- [func selectionBoundaryAdjusted(to: CGPoint, touchPhase: BESelectionTouchPhase, flags: BESelectionFlags)](./selectionboundaryadjusted%28to,touchphase,flags%29.md)
   Notifies the system after the text view adjusts its selection.
-- [func selectionChangedWithGesture(at: CGPoint, gesture: BEGestureType, state: UIGestureRecognizer.State, flags: BESelectionFlags)](betextinteraction/selectionchangedwithgesture(at:gesture:state:flags:).md)
+- [func selectionChangedWithGesture(at: CGPoint, gesture: BEGestureType, state: UIGestureRecognizer.State, flags: BESelectionFlags)](./selectionchangedwithgesture%28at,gesture,state,flags%29.md)
   Notifies the system that the text view changed its selection.
 
 

@@ -1,7 +1,8 @@
 # sheet
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var sheet: DOMStyleSheet! { get }
+```
+
+```objc
+@property (strong, readonly) DOMStyleSheet * sheet;
 ```
 
 

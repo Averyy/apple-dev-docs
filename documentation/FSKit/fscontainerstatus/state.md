@@ -1,7 +1,8 @@
 # state
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the container state, such as ready, active, or blocked.
 
@@ -14,11 +15,16 @@ A value that represents the container state, such as ready, active, or blocked.
 var state: FSContainerState { get }
 ```
 
+```objc
+@property (readonly) FSContainerState state;
+```
+
 ## See Also
 
-- [enum FSContainerState](fscontainerstate.md)
+### Inspecting status properties
+- [enum FSContainerState](../fscontainerstate.md)
   An enumeration of container state values.
-- [var status: (any Error)?](fscontainerstatus/status.md)
+- [var status: (any Error)?](./status.md)
   An optional error that provides further information about the state.
 
 

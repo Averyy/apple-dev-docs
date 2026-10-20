@@ -1,7 +1,8 @@
 # AudioFeaturePrint
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A stream transformer that extracts audio features from audio buffers.
 
@@ -22,34 +23,35 @@ struct AudioFeaturePrint
 ## Topics
 
 ### Creating a transformer
-- [init(windowDuration: TimeInterval, overlapFactor: Double)](audiofeatureprint/init(windowduration:overlapfactor:).md)
+- [init(windowDuration: TimeInterval, overlapFactor: Double)](./audiofeatureprint/init%28windowduration,overlapfactor%29.md)
   Creates an audio feature print feature extractor.
 ### Getting the properties
-- [let overlapFactor: Double](audiofeatureprint/overlapfactor.md)
+- [let overlapFactor: Double](./audiofeatureprint/overlapfactor.md)
   The overlap factor of the extractor.
-- [let windowDuration: TimeInterval](audiofeatureprint/windowduration.md)
+- [let windowDuration: TimeInterval](./audiofeatureprint/windowduration.md)
   The window duration of the extractor.
 ### Performing the transformation
-- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> AudioFeaturePrint.FeatureSequence](audiofeatureprint/applied(to:eventhandler:).md)
+- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> AudioFeaturePrint.FeatureSequence](./audiofeatureprint/applied%28to,eventhandler%29.md)
   Extracts audio features from an a sequence of audio buffers
-- [AudioFeaturePrint.FeatureSequence](audiofeatureprint/featuresequence.md)
+- [AudioFeaturePrint.FeatureSequence](./audiofeatureprint/featuresequence.md)
   An async sequence of audio buffers.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TemporalTransformer](temporaltransformer.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TemporalTransformer](./temporaltransformer.md)
 
 ## See Also
 
-- [struct AudioReader](audioreader.md)
+### Audio components
+- [struct AudioReader](./audioreader.md)
   An audio file reader.
-- [struct AudioConvertingTransformer](audioconvertingtransformer.md)
+- [struct AudioConvertingTransformer](./audioconvertingtransformer.md)
   A transformer for audio conversion.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value containing a double-precision floating-point value.
 
@@ -20,9 +21,60 @@ Creates a feature value containing a double-precision floating-point value.
 init(_ value: Double)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ value: Float)
+```
+
+```swift
+init(_ value: Float16)
+```
+
+```swift
+init(_ value: Int)
+```
+
+```swift
+init(_ value: Int32)
+```
+
+```swift
+init(_ value: String)
+```
+
+```swift
+init(_ value: [Int : Double])
+```
+
+```swift
+init(_ value: [Int : Int])
+```
+
+```swift
+init(_ value: [String : Double])
+```
+
+```swift
+init(_ value: [String : Int])
+```
+
+```swift
+init(_ value: [String])
+```
+
+```swift
+init<Scalar>(_ value: MLShapedArray<Scalar>) where Scalar : MLShapedArrayScalar
+```
+
+```swift
+init?(_ value: MLFeatureValue)
+```
+
 ## See Also
 
-- [init(undefined: MLFeatureType)](mlsendablefeaturevalue/init(undefined:).md)
+### Creating a sendable feature value
+- [init(undefined: MLFeatureType)](./init%28undefined%29.md)
   Creates an undefined feature value of a specific type.
 
 

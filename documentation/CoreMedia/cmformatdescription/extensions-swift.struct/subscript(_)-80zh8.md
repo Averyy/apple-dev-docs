@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Core Media  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ subscript(key: CMFormatDescription.Extensions.Key) -> CMFormatDescription.Extens
 
 ## See Also
 
-- [subscript(CFString) -> CFPropertyList?](cmformatdescription/extensions-swift.struct/subscript(_:)-1c6vg.md)
+### Finding Extension Elements
+- [subscript(CFString) -> CFPropertyList?](./subscript%28_%29-1c6vg.md)
 
 
 ---

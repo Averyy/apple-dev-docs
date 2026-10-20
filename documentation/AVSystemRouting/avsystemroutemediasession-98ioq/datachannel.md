@@ -1,7 +1,8 @@
 # dataChannel
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data channel for sending and receiving data with the remote app.
 
@@ -18,12 +19,12 @@ final var dataChannel: AVSystemRoute.DataChannel? { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](../routing-media-to-third-party-devices.md)
 
 #### Discussion
 
-This property is always non-nil when obtained from a successful call to [`start()`](avsystemroutesession-gp78/start().md).
+This property is always non-nil when obtained from a successful call to [`start()`](../avsystemroutesession-gp78/start%28%29.md).
 
 
 ---

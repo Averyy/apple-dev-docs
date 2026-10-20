@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to update your view’s current text selection.
@@ -15,12 +16,20 @@ Asks the delegate to update your view’s current text selection.
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, select ranges: [NSValue], in context: UIWritingToolsCoordinator.Context, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, select ranges: [NSValue], in context: UIWritingToolsCoordinator.Context) async
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator selectRanges:(NSArray<NSValue *> *) ranges inContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
@@ -35,7 +44,8 @@ As Writing Tools suggests changes to your view’s text, it calls this method to
 
 ## See Also
 
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, replace: NSRange, in: UIWritingToolsCoordinator.Context, proposedText: NSAttributedString, reason: UIWritingToolsCoordinator.TextReplacementReason, animationParameters: UIWritingToolsCoordinator.AnimationParameters?, completion: (NSAttributedString?) -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:replace:in:proposedtext:reason:animationparameters:completion:).md)
+### Incorporating Writing Tools suggestions
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, replace: NSRange, in: UIWritingToolsCoordinator.Context, proposedText: NSAttributedString, reason: UIWritingToolsCoordinator.TextReplacementReason, animationParameters: UIWritingToolsCoordinator.AnimationParameters?, completion: (NSAttributedString?) -> Void)](./writingtoolscoordinator%28_,replace,in,proposedtext,reason,animationparameters,completion%29.md)
   Tells the delegate that there are text changes to incorporate into the view.
 
 

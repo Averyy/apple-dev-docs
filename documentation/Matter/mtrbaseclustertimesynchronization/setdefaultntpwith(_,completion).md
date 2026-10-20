@@ -1,7 +1,8 @@
 # setDefaultNTPWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetDefaultNTP
 
@@ -17,7 +18,15 @@ Command SetDefaultNTP
 ## Declaration
 
 ```swift
+func setDefaultNTPWith(_ params: MTRTimeSynchronizationClusterSetDefaultNTPParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setDefaultNTPWith(_ params: MTRTimeSynchronizationClusterSetDefaultNTPParams) async throws
+```
+
+```objc
+- (void) setDefaultNTPWithParams:(MTRTimeSynchronizationClusterSetDefaultNTPParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

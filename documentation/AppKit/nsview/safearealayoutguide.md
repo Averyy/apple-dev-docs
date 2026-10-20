@@ -1,7 +1,8 @@
 # safeAreaLayoutGuide
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout guide you use to position content inside your view’s safe area.
 
@@ -14,17 +15,22 @@ The layout guide you use to position content inside your view’s safe area.
 var safeAreaLayoutGuide: NSLayoutGuide { get }
 ```
 
+```objc
+@property (strong, readonly) NSLayoutGuide * safeAreaLayoutGuide;
+```
+
 #### Discussion
 
 The layout guide in this property reflects the view’s frame minus its safe area insets. Use this guide to configure layout rules relative to this safe area.
 
 ## See Also
 
-- [var safeAreaRect: NSRect](nsview/safearearect.md)
+### Respecting the View’s Safe Area
+- [var safeAreaRect: NSRect](./safearearect.md)
   A rectangle in the view’s coordinate system that contains the unobscured portion of the view.
-- [var safeAreaInsets: NSEdgeInsets](nsview/safeareainsets.md)
+- [var safeAreaInsets: NSEdgeInsets](./safeareainsets.md)
   The distances from the edges of your view that define the safe area.
-- [var additionalSafeAreaInsets: NSEdgeInsets](nsview/additionalsafeareainsets.md)
+- [var additionalSafeAreaInsets: NSEdgeInsets](./additionalsafeareainsets.md)
   Custom insets that you specify to modify your view’s safe area
 
 

@@ -1,7 +1,8 @@
 # vDSP_sve
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the sum of values in a single-precision vector.
 
@@ -10,7 +11,7 @@ Calculates the sum of values in a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_sve(const float *__A, vDSP_Stride __I, float *__C, vDSP_Length __N);
 ```
 
@@ -26,7 +27,7 @@ The operation is:
 C[0] = sum(A[n], 0 <= n < N);
 ```
 
-The following code shows an example of using [`vDSP_sve`](https://developer.apple.com/documentation/accelerate/vdsp_sve):
+The following code shows an example of using [`vDSP_sve`](../Accelerate/vdsp_sve.md):
 
 ```swift
 let stride = vDSP_Stride(1)

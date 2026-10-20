@@ -1,7 +1,8 @@
 # CarPlay
 
 **Framework**: CarPlay  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Integrate CarPlay in apps related to audio, communication, navigation, parking, EV charging, food ordering, and more.
 
@@ -16,180 +17,180 @@ Use the CarPlay framework to create an in-car experience for your app. The frame
 
 CarPlay features run when the current device supports CarPlay and when that device is connected to an appropriately equipped vehicle. CarPlay handles variations in vehicle systems, letting you focus on your content. When a person runs your app from their vehicle, the system generates and hosts your app’s interface for you. If the device doesn’t support CarPlay, the system doesn’t try to access your app’s CarPlay features.
 
-You can use other technologies to drive portions of your app’s CarPlay interface. Messaging apps can include [`SiriKit`](https://developer.apple.com/documentation/sirikit) support to allow someone to read or send messages. VoIP apps can use [`CallKit`](https://developer.apple.com/documentation/callkit) to manage incoming and outgoing calls, often in combination with SiriKit call support. Navigation apps can include [`MapKit`](https://developer.apple.com/documentation/mapkit) support.
+You can use other technologies to drive portions of your app’s CarPlay interface. Messaging apps can include [SiriKit](../SiriKit/SiriKit.md) support to allow someone to read or send messages. VoIP apps can use [CallKit](../CallKit/CallKit.md) to manage incoming and outgoing calls, often in combination with SiriKit call support. Navigation apps can include [MapKit](../MapKit/MapKit.md) support.
 
-> **Note**:  Session 10635: [`Accelerate Your App with CarPlay`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10635/)
+> **Related Sessions from WWDC20**:  Session 10635: [Accelerate Your App with CarPlay](https://developer.apple.com/videos/play/wwdc2020/10635/)
 
 ## Topics
 
 ### CarPlay Integration
-- [Requesting CarPlay Entitlements](requesting-carplay-entitlements.md)
+- [Requesting CarPlay Entitlements](./requesting-carplay-entitlements.md)
   Configure your CarPlay-enabled app with the entitlements it requires.
-- [Displaying Content in CarPlay](displaying-content-in-carplay.md)
+- [Displaying Content in CarPlay](./displaying-content-in-carplay.md)
   Use scenes to present your app’s content on the vehicle’s built-in screen.
-- [Supporting Previous Versions of iOS](supporting-previous-versions-of-ios.md)
+- [Supporting Previous Versions of iOS](./supporting-previous-versions-of-ios.md)
   Make your CarPlay-enabled apps compatible with older system versions, such as iOS 13 and earlier.
-- [Using the CarPlay Simulator](using-the-carplay-simulator.md)
+- [Using the CarPlay Simulator](./using-the-carplay-simulator.md)
   Configure Simulator to run and debug your CarPlay-enabled app.
-- [class CPTemplateApplicationScene](cptemplateapplicationscene.md)
+- [class CPTemplateApplicationScene](./cptemplateapplicationscene.md)
   A CarPlay scene that controls your app’s user interface.
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+- [protocol CPTemplateApplicationSceneDelegate](./cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
-- [class CPSessionConfiguration](cpsessionconfiguration.md)
+- [class CPSessionConfiguration](./cpsessionconfiguration.md)
   An object that provides vehicle properties and configuration for the CarPlay environment.
 ### General Purpose Templates
-- [class CPListTemplate](cplisttemplate.md)
+- [class CPListTemplate](./cplisttemplate.md)
   A template that displays and manages a list of items.
-- [class CPGridTemplate](cpgridtemplate.md)
+- [class CPGridTemplate](./cpgridtemplate.md)
   A template that displays and manages a grid of items.
-- [class CPTabBarTemplate](cptabbartemplate.md)
+- [class CPTabBarTemplate](./cptabbartemplate.md)
   A container template that displays and manages other templates, presenting them as tabs.
-- [class CPTemplate](cptemplate.md)
+- [class CPTemplate](./cptemplate.md)
   An abstract base class for interface templates.
-- [protocol CPBarButtonProviding](cpbarbuttonproviding.md)
+- [protocol CPBarButtonProviding](./cpbarbuttonproviding.md)
   The methods that templates use to provide buttons for the navigation bar.
 ### Audio
-- [Integrating CarPlay with Your Music App](integrating-carplay-with-your-music-app.md)
+- [Integrating CarPlay with Your Music App](./integrating-carplay-with-your-music-app.md)
   Configure your music app to work with CarPlay by displaying a custom UI.
-- [class CPNowPlayingTemplate](cpnowplayingtemplate.md)
+- [class CPNowPlayingTemplate](./cpnowplayingtemplate.md)
   A shared system template that displays Now Playing information.
 ### Instrument cluster
-- [class CPInstrumentClusterController](cpinstrumentclustercontroller.md)
-- [protocol CPInstrumentClusterControllerDelegate](cpinstrumentclustercontrollerdelegate.md)
-- [class CPTemplateApplicationInstrumentClusterScene](cptemplateapplicationinstrumentclusterscene.md)
-- [protocol CPTemplateApplicationInstrumentClusterSceneDelegate](cptemplateapplicationinstrumentclusterscenedelegate.md)
+- [class CPInstrumentClusterController](./cpinstrumentclustercontroller.md)
+- [protocol CPInstrumentClusterControllerDelegate](./cpinstrumentclustercontrollerdelegate.md)
+- [class CPTemplateApplicationInstrumentClusterScene](./cptemplateapplicationinstrumentclusterscene.md)
+- [protocol CPTemplateApplicationInstrumentClusterSceneDelegate](./cptemplateapplicationinstrumentclusterscenedelegate.md)
 ### Navigation
-- [Integrating CarPlay with Your Navigation App](integrating-carplay-with-your-navigation-app.md)
+- [Integrating CarPlay with Your Navigation App](./integrating-carplay-with-your-navigation-app.md)
   Configure your navigation app to work with CarPlay by displaying your custom map and directions.
-- [class CPTemplateApplicationDashboardScene](cptemplateapplicationdashboardscene.md)
+- [class CPTemplateApplicationDashboardScene](./cptemplateapplicationdashboardscene.md)
   A CarPlay scene that controls your app’s dashboard navigation window.
-- [protocol CPTemplateApplicationDashboardSceneDelegate](cptemplateapplicationdashboardscenedelegate.md)
+- [protocol CPTemplateApplicationDashboardSceneDelegate](./cptemplateapplicationdashboardscenedelegate.md)
   The methods for responding to the life-cycle events of your navigation app’s dashboard scene.
-- [class CPMapTemplate](cpmaptemplate.md)
+- [class CPMapTemplate](./cpmaptemplate.md)
   A template that displays a navigation overlay that your app draws on the map.
-- [class CPSearchTemplate](cpsearchtemplate.md)
+- [class CPSearchTemplate](./cpsearchtemplate.md)
   A template that provides the ability to search for a destination and see a list of search results.
-- [class CPVoiceControlTemplate](cpvoicecontroltemplate.md)
+- [class CPVoiceControlTemplate](./cpvoicecontroltemplate.md)
   A template that displays a voice control indicator during audio input.
 ### Location and Information
-- [class CPPointOfInterestTemplate](cppointofinteresttemplate.md)
+- [class CPPointOfInterestTemplate](./cppointofinteresttemplate.md)
   A template that displays a map with selectable points of interest.
-- [class CPInformationTemplate](cpinformationtemplate.md)
+- [class CPInformationTemplate](./cpinformationtemplate.md)
   A template that provides information for a point of interest, food order, parking location, or charging location.
-- [class CPTextButton](cptextbutton.md)
+- [class CPTextButton](./cptextbutton.md)
   A button that displays a stylized title.
-- [Integrating CarPlay with your quick-ordering app](integrating-carplay-with-your-quick-ordering-app.md)
+- [Integrating CarPlay with your quick-ordering app](./integrating-carplay-with-your-quick-ordering-app.md)
   Configure your food-ordering app to work with CarPlay.
 ### Maneuvers
-- [class CPManeuver](cpmaneuver.md)
+- [class CPManeuver](./cpmaneuver.md)
   An object that describes a single navigation instruction.
-- [enum CPManeuverState](cpmaneuverstate.md)
+- [enum CPManeuverState](./cpmaneuverstate.md)
   Values that describe the state of a maneuver.
-- [enum CPManeuverType](cpmaneuvertype.md)
+- [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
 ### Routes, lanes and junctions
-- [class CPRouteInformation](cprouteinformation.md)
+- [class CPRouteInformation](./cprouteinformation.md)
   A class that describes the characteristic elements of a route.
-- [class CPLane](cplane.md)
+- [class CPLane](./cplane.md)
   A class that describes characteristics of a lane on a roadway.
-- [class CPLaneGuidance](cplaneguidance.md)
+- [class CPLaneGuidance](./cplaneguidance.md)
   A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
-- [enum CPLaneStatus](cplanestatus.md)
+- [enum CPLaneStatus](./cplanestatus.md)
   Values that describe the status or preferability of a lane.
-- [enum CPJunctionType](cpjunctiontype.md)
+- [enum CPJunctionType](./cpjunctiontype.md)
   Values that represent types of roadway junctions.
 ### Communication
-- [class CPContactTemplate](cpcontacttemplate.md)
+- [class CPContactTemplate](./cpcontacttemplate.md)
   A template that displays information about a person or a business.
 ### Actions and Alerts
-- [class CPActionSheetTemplate](cpactionsheettemplate.md)
+- [class CPActionSheetTemplate](./cpactionsheettemplate.md)
   A template that displays a modal action sheet.
-- [class CPAlertTemplate](cpalerttemplate.md)
+- [class CPAlertTemplate](./cpalerttemplate.md)
   A template that displays a modal alert.
-- [class CPAlertAction](cpalertaction.md)
+- [class CPAlertAction](./cpalertaction.md)
   An object that encapsulates an action the user can perform on an action sheet or alert.
 ### Related Types
-- [class CPButton](cpbutton.md)
+- [class CPButton](./cpbutton.md)
   A button that displays an image and invokes a handler when the user taps it.
-- [class CPImageSet](cpimageset.md)
+- [class CPImageSet](./cpimageset.md)
   Light and dark representations of an image.
-- [let CarPlayErrorDomain: String](carplayerrordomain.md)
+- [let CarPlayErrorDomain: String](./carplayerrordomain.md)
   The domain that CarPlay uses for any errors it provides.
 ### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
+- [Deprecated Symbols](./deprecated-symbols.md)
   Symbols that the CarPlay framework no longer supports.
 ### Reference
-- [CarPlay Enumerations](carplay-enumerations.md)
-- [CarPlay Constants](carplay-constants.md)
+- [CarPlay Enumerations](./carplay-enumerations.md)
+- [CarPlay Constants](./carplay-constants.md)
 ### Classes
-- [class CPChargingStationConnection](cpchargingstationconnection.md)
-- [class CPImageOverlay](cpimageoverlay.md)
+- [class CPChargingStationConnection](./cpchargingstationconnection.md)
+- [class CPImageOverlay](./cpimageoverlay.md)
   An overlay that displays information over an image.
-- [class CPListImageRowItemCardElement](cplistimagerowitemcardelement.md)
-- [class CPListImageRowItemCondensedElement](cplistimagerowitemcondensedelement.md)
-- [class CPListImageRowItemElement](cplistimagerowitemelement.md)
+- [class CPListImageRowItemCardElement](./cplistimagerowitemcardelement.md)
+- [class CPListImageRowItemCondensedElement](./cplistimagerowitemcondensedelement.md)
+- [class CPListImageRowItemElement](./cplistimagerowitemelement.md)
   Abstract superclass for a a row item element object.
-- [class CPListImageRowItemGridElement](cplistimagerowitemgridelement.md)
-- [class CPListImageRowItemImageGridElement](cplistimagerowitemimagegridelement.md)
-- [class CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
-- [class CPListTemplateDetailsHeader](cplisttemplatedetailsheader.md)
+- [class CPListImageRowItemGridElement](./cplistimagerowitemgridelement.md)
+- [class CPListImageRowItemImageGridElement](./cplistimagerowitemimagegridelement.md)
+- [class CPListImageRowItemRowElement](./cplistimagerowitemrowelement.md)
+- [class CPListTemplateDetailsHeader](./cplisttemplatedetailsheader.md)
   A header for list templates that displays rich media content with action buttons.
-- [class CPMapPanel](cpmappanel.md)
+- [class CPMapPanel](./cpmappanel.md)
   An overlay for a custom map interface that shows navigation-related instructions or information over a portion of the map.
-- [class CPMapPanelButtonConfiguration](cpmappanelbuttonconfiguration.md)
+- [class CPMapPanelButtonConfiguration](./cpmappanelbuttonconfiguration.md)
   A type that manages the action buttons and travel estimates in a map panel.
-- [class CPMapPanelItem](cpmappanelitem.md)
+- [class CPMapPanelItem](./cpmappanelitem.md)
   A type that manages the waypoint, route, trip, and other information you display in a map panel.
-- [class CPMapPanelSection](cpmappanelsection.md)
+- [class CPMapPanelSection](./cpmappanelsection.md)
   A single section of a map panel that you fill with a title and one or more items.
-- [class CPMapTemplateWaypoint](cpmaptemplatewaypoint.md)
+- [class CPMapTemplateWaypoint](./cpmaptemplatewaypoint.md)
   CPMapTemplateWaypoint represents a waypoint with associated travel estimates
-- [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
-- [class CPMultiStopCardConfiguration](cpmultistopcardconfiguration.md)
-- [class CPNavigationWaypoint](cpnavigationwaypoint.md)
+- [class CPMessageGridItemConfiguration](./cpmessagegriditemconfiguration.md)
+- [class CPMultiStopCardConfiguration](./cpmultistopcardconfiguration.md)
+- [class CPNavigationWaypoint](./cpnavigationwaypoint.md)
   CPNavigationWaypoint represents a point of interest along a route that provides location-based information and guidance.
-- [class CPNowPlayingMode](cpnowplayingmode.md)
-- [class CPNowPlayingModeSports](cpnowplayingmodesports.md)
+- [class CPNowPlayingMode](./cpnowplayingmode.md)
+- [class CPNowPlayingModeSports](./cpnowplayingmodesports.md)
   The sports mode represents a layout for now playing suited to live-streaming or recorded playback of a sporting event that features exactly two teams.
-- [class CPNowPlayingSportsClock](cpnowplayingsportsclock.md)
+- [class CPNowPlayingSportsClock](./cpnowplayingsportsclock.md)
   A representation of the amount of time elapsed so far in this event, for events where the clock counts UP.
-- [class CPNowPlayingSportsEventStatus](cpnowplayingsportseventstatus.md)
+- [class CPNowPlayingSportsEventStatus](./cpnowplayingsportseventstatus.md)
   A representation of the status of a sporting event.
-- [class CPNowPlayingSportsTeam](cpnowplayingsportsteam.md)
+- [class CPNowPlayingSportsTeam](./cpnowplayingsportsteam.md)
   A representation of a sports team for the now playing screen, in sports that have exactly two teams.
-- [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
+- [class CPNowPlayingSportsTeamLogo](./cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
-- [class CPPanel](cppanel.md)
+- [class CPPanel](./cppanel.md)
   A type that provides the common behaviors for panels you display on top of your app’s content.
-- [class CPPanelButtonConfiguration](cppanelbuttonconfiguration.md)
+- [class CPPanelButtonConfiguration](./cppanelbuttonconfiguration.md)
   A type that provides the common behaviors for a button layout in a panel.
-- [class CPPanelItem](cppanelitem.md)
+- [class CPPanelItem](./cppanelitem.md)
   A type that provides the common behaviors for items you display in a section of a panel.
-- [class CPPlaybackConfiguration](cpplaybackconfiguration.md)
-- [class CPRouteDetail](cproutedetail.md)
-- [class CPRouteSegment](cproutesegment.md)
+- [class CPPlaybackConfiguration](./cpplaybackconfiguration.md)
+- [class CPRouteDetail](./cproutedetail.md)
+- [class CPRouteSegment](./cproutesegment.md)
   CPRouteSegment describes information pertaining to a segment of a route.
-- [class CPSportsOverlay](cpsportsoverlay.md)
+- [class CPSportsOverlay](./cpsportsoverlay.md)
   A sports overlay that displays left and right team information.
-- [class CPThumbnailImage](cpthumbnailimage.md)
+- [class CPThumbnailImage](./cpthumbnailimage.md)
 ### Protocols
-- [protocol CPPlayableItem](cpplayableitem.md)
+- [protocol CPPlayableItem](./cpplayableitem.md)
 ### Structures
-- [struct CPLocationCoordinate3D](cplocationcoordinate3d.md)
+- [struct CPLocationCoordinate3D](./cplocationcoordinate3d.md)
   CPLocationCoordinate3D represents a three-dimensional coordinate with latitude, longitude, and altitude components.
 ### Variables
-- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](cpmaximummessageitemleadingdetailtextimagesize.md)
+- [let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize](./cpmaximummessageitemleadingdetailtextimagesize.md)
   Maximum size of an image for the detailed text leading image.
 ### Functions
-- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](nsstringfromcpjunctiontype(_:).md)
-- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](nsstringfromcplanestatus(_:).md)
-- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](nsstringfromcpmaneuvertype(_:).md)
-- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](nsstringfromcpreroutereason(_:).md)
-- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](nsstringfromcptrafficside(_:).md)
+- [func NSStringFromCPJunctionType(CPJunctionType) -> String!](./nsstringfromcpjunctiontype%28_%29.md)
+- [func NSStringFromCPLaneStatus(CPLaneStatus) -> String!](./nsstringfromcplanestatus%28_%29.md)
+- [func NSStringFromCPManeuverType(CPManeuverType) -> String!](./nsstringfromcpmaneuvertype%28_%29.md)
+- [func NSStringFromCPRerouteReason(CPRerouteReason) -> String!](./nsstringfromcpreroutereason%28_%29.md)
+- [func NSStringFromCPTrafficSide(CPTrafficSide) -> String!](./nsstringfromcptrafficside%28_%29.md)
 ### Enumerations
-- [enum CPRerouteReason](cpreroutereason.md)
+- [enum CPRerouteReason](./cpreroutereason.md)
   Values that represent reasons for navigation rerouting.
-- [enum CPRouteSource](cproutesource.md)
+- [enum CPRouteSource](./cproutesource.md)
 
 
 ---

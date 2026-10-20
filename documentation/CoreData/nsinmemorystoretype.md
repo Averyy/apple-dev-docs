@@ -1,7 +1,8 @@
 # NSInMemoryStoreType
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The in-memory store type.
 
@@ -10,7 +11,7 @@ The in-memory store type.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The in-memory store type.
 let NSInMemoryStoreType: String
 ```
 
+```c
+extern NSString * const NSInMemoryStoreType;
+```
+
 ## See Also
 
-- [let NSSQLiteStoreType: String](nssqlitestoretype.md)
+### Constants
+- [let NSSQLiteStoreType: String](./nssqlitestoretype.md)
   The SQLite database store type.
-- [let NSXMLStoreType: String](nsxmlstoretype.md)
+- [let NSXMLStoreType: String](./nsxmlstoretype.md)
   The XML store type.
-- [let NSBinaryStoreType: String](nsbinarystoretype.md)
+- [let NSBinaryStoreType: String](./nsbinarystoretype.md)
   The binary store type.
 
 

@@ -1,7 +1,8 @@
 # isRealWorldProxy
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that you use to control whether the directional light operates as a proxy for a real-world light.
 
@@ -24,7 +25,8 @@ Set the value to `true` when you want the light to cast shadows on virtual conte
 
 ## See Also
 
-- [var intensity: Float](directionallightcomponent/intensity.md)
+### Setting intensity and shadows
+- [var intensity: Float](./intensity.md)
   The intensity of the directional light, measured in lumen per square meter.
 
 

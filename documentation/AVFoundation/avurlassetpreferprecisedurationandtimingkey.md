@@ -1,7 +1,8 @@
 # AVURLAssetPreferPreciseDurationAndTimingKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the asset should provide accurate duration and precise random access by time.
 
@@ -20,35 +21,40 @@ A Boolean value that indicates whether the asset should provide accurate duratio
 let AVURLAssetPreferPreciseDurationAndTimingKey: String
 ```
 
+```c
+extern NSString * const AVURLAssetPreferPreciseDurationAndTimingKey;
+```
+
 #### Discussion
 
-Setting a value of [`true`](https://developer.apple.com/documentation/swift/true) indicates longer loading times are acceptable in cases where you require precise timing. Container formats like QuickTime and MPEG-4 provide sufficient timing information and don’t require additional parsing to retrieve it. Other formats don’t provide sufficient summary information, and the system can’t accurately calculate the resource’s duration and timing without examining the media content.
+Setting a value of [`true`](../Swift/true.md) indicates longer loading times are acceptable in cases where you require precise timing. Container formats like QuickTime and MPEG-4 provide sufficient timing information and don’t require additional parsing to retrieve it. Other formats don’t provide sufficient summary information, and the system can’t accurately calculate the resource’s duration and timing without examining the media content.
 
-If you only intend to play the asset, the default value of [`false`](https://developer.apple.com/documentation/swift/false) is sufficient because [`AVPlayer`](avplayer.md) supports approximate random access by time when full precision isn’t available. If you intend to insert the asset into [`AVMutableComposition`](avmutablecomposition.md) or [`AVMutableMovie`](avmutablemovie.md), precise random access is typically desirable, and you should set this option to [`true`](https://developer.apple.com/documentation/swift/true).
+If you only intend to play the asset, the default value of [`false`](../Swift/false.md) is sufficient because [`AVPlayer`](./avplayer.md) supports approximate random access by time when full precision isn’t available. If you intend to insert the asset into [`AVMutableComposition`](./avmutablecomposition.md) or [`AVMutableMovie`](./avmutablemovie.md), precise random access is typically desirable, and you should set this option to [`true`](../Swift/true.md).
 
 ## See Also
 
-- [let AVURLAssetAllowsCellularAccessKey: String](avurlassetallowscellularaccesskey.md)
+### Options
+- [let AVURLAssetAllowsCellularAccessKey: String](./avurlassetallowscellularaccesskey.md)
   A Boolean value that indicates whether the system can make network requests on behalf of the asset when connected to a cellular network.
-- [let AVURLAssetAllowsConstrainedNetworkAccessKey: String](avurlassetallowsconstrainednetworkaccesskey.md)
+- [let AVURLAssetAllowsConstrainedNetworkAccessKey: String](./avurlassetallowsconstrainednetworkaccesskey.md)
   A Boolean value that indicates whether the system allows network requests on behalf of this asset to use the constrained interface.
-- [let AVURLAssetAllowsExpensiveNetworkAccessKey: String](avurlassetallowsexpensivenetworkaccesskey.md)
+- [let AVURLAssetAllowsExpensiveNetworkAccessKey: String](./avurlassetallowsexpensivenetworkaccesskey.md)
   A Boolean value that indicates whether the system allows network requests on behalf of this asset to use the expensive interface.
-- [let AVURLAssetHTTPCookiesKey: String](avurlassethttpcookieskey.md)
+- [let AVURLAssetHTTPCookiesKey: String](./avurlassethttpcookieskey.md)
   The HTTP cookies that a URL asset may send with HTTP requests.
-- [let AVURLAssetHTTPUserAgentKey: String](avurlassethttpuseragentkey.md)
+- [let AVURLAssetHTTPUserAgentKey: String](./avurlassethttpuseragentkey.md)
   A key that specifies the user agent of requests that an asset makes.
-- [let AVURLAssetOverrideMIMETypeKey: String](avurlassetoverridemimetypekey.md)
+- [let AVURLAssetOverrideMIMETypeKey: String](./avurlassetoverridemimetypekey.md)
   A key that specifies the MIME type to use to identify the format of a media resource.
-- [let AVURLAssetPrimarySessionIdentifierKey: String](avurlassetprimarysessionidentifierkey.md)
+- [let AVURLAssetPrimarySessionIdentifierKey: String](./avurlassetprimarysessionidentifierkey.md)
   Specifies a UUID to set as the session identifier for HTTP requests that the asset makes.
-- [let AVURLAssetReferenceRestrictionsKey: String](avurlassetreferencerestrictionskey.md)
+- [let AVURLAssetReferenceRestrictionsKey: String](./avurlassetreferencerestrictionskey.md)
   A value that represents the restrictions used by the asset when resolving references to external media data.
-- [let AVURLAssetShouldSupportAliasDataReferencesKey: String](avurlassetshouldsupportaliasdatareferenceskey.md)
+- [let AVURLAssetShouldSupportAliasDataReferencesKey: String](./avurlassetshouldsupportaliasdatareferenceskey.md)
   A Boolean value that indicates whether the system parses and resolves alias data references in the asset.
-- [let AVURLAssetURLRequestAttributionKey: String](avurlasseturlrequestattributionkey.md)
+- [let AVURLAssetURLRequestAttributionKey: String](./avurlasseturlrequestattributionkey.md)
   A value that specifies the attribution of the URLs that this asset requests.
-- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](avurlassetshouldparseexternalsphericaltagskey.md)
+- [let AVURLAssetShouldParseExternalSphericalTagsKey: String](./avurlassetshouldparseexternalsphericaltagskey.md)
   Indicates whether additional projected media signaling in the asset should be parsed and resolved as format description extensions.
 
 

@@ -1,7 +1,8 @@
 # MusicRecentlyPlayedContainerResponse
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An object that contains albums, playlists or stations that the user has recently played.
 

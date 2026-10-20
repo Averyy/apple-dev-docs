@@ -1,7 +1,8 @@
 # AVAudioEnvironmentDistanceAttenuationParameters
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies the amount of attenuation distance, the gradual loss in audio intensity, and other characteristics.
 
@@ -20,46 +21,51 @@ An object that specifies the amount of attenuation distance, the gradual loss in
 class AVAudioEnvironmentDistanceAttenuationParameters
 ```
 
+```objc
+@interface AVAudioEnvironmentDistanceAttenuationParameters : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  A source object (for example, [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md)) provides an instance to this object. You can’t create standalone instances.
+> ❗ **Important**:  A source object (for example, [`AVAudioEnvironmentNode`](./avaudioenvironmentnode.md)) provides an instance to this object. You can’t create standalone instances.
 
 ## Topics
 
 ### Choosing an attenuation model
-- [var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel](avaudioenvironmentdistanceattenuationparameters/distanceattenuationmodel.md)
+- [var distanceAttenuationModel: AVAudioEnvironmentDistanceAttenuationModel](./avaudioenvironmentdistanceattenuationparameters/distanceattenuationmodel.md)
   The distance attenuation model that describes the drop-off in gain as the source moves away from the listener.
-- [enum AVAudioEnvironmentDistanceAttenuationModel](avaudioenvironmentdistanceattenuationmodel.md)
+- [enum AVAudioEnvironmentDistanceAttenuationModel](./avaudioenvironmentdistanceattenuationmodel.md)
   Types of distance attenuation models.
 ### Configuring distance attenuation
-- [var maximumDistance: Float](avaudioenvironmentdistanceattenuationparameters/maximumdistance.md)
+- [var maximumDistance: Float](./avaudioenvironmentdistanceattenuationparameters/maximumdistance.md)
   The distance beyond which the node applies no further attenuation, in meters.
-- [var referenceDistance: Float](avaudioenvironmentdistanceattenuationparameters/referencedistance.md)
+- [var referenceDistance: Float](./avaudioenvironmentdistanceattenuationparameters/referencedistance.md)
   The minimum distance at which the node applies attenuation, in meters.
-- [var rolloffFactor: Float](avaudioenvironmentdistanceattenuationparameters/rollofffactor.md)
+- [var rolloffFactor: Float](./avaudioenvironmentdistanceattenuationparameters/rollofffactor.md)
   A factor that determines the attenuation curve.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioEnvironmentNode](avaudioenvironmentnode.md)
+### Spatial audio
+- [class AVAudioEnvironmentNode](./avaudioenvironmentnode.md)
   An object that simulates a 3D audio environment.
-- [class AVAudioEnvironmentReverbParameters](avaudioenvironmentreverbparameters.md)
+- [class AVAudioEnvironmentReverbParameters](./avaudioenvironmentreverbparameters.md)
   A class that encapsulates the parameters that you use to control the reverb of the environment node class.
-- [protocol AVAudio3DMixing](avaudio3dmixing.md)
+- [protocol AVAudio3DMixing](./avaudio3dmixing.md)
   A collection of properties that define 3D mixing properties.
 
 

@@ -1,7 +1,8 @@
 # instantiateInitialViewController()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the initial view controller and initializes it with the data from the storyboard.
 
@@ -9,13 +10,19 @@ Creates the initial view controller and initializes it with the data from the st
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 func instantiateInitialViewController() -> UIViewController?
+```
+
+```objc
+- (UIViewController *) instantiateInitialViewController;
 ```
 
 #### Return Value
@@ -24,13 +31,14 @@ The initial view controller in the storyboard.
 
 #### Discussion
 
-Every storyboard file has an initial view controller that represents the default view controller to create. Typically, you use the initial view controller as the root view controller for a window. However, you can also instantiate the initial view controller when transitioning to content in a new storyboard file. This method creates a new instance of the initial view controller using its [`init(coder:)`](uiviewcontroller/init(coder:).md) method.
+Every storyboard file has an initial view controller that represents the default view controller to create. Typically, you use the initial view controller as the root view controller for a window. However, you can also instantiate the initial view controller when transitioning to content in a new storyboard file. This method creates a new instance of the initial view controller using its [`init(coder:)`](../uiviewcontroller/init%28coder%29.md) method.
 
-When you specify a storyboard in the [`UISceneStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile) or [`UIMainStoryboardFile`](https://developer.apple.com/documentation/bundleresources/information-property-list/uimainstoryboardfile) key of your app’s `Info.plist` file, UIKit loads the initial view controller from that storyboard.
+When you specify a storyboard in the [`UISceneStoryboardFile`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenestoryboardfile.md) or [`UIMainStoryboardFile`](../../BundleResources/information-property-list/uimainstoryboardfile.md) key of your app’s `Info.plist` file, UIKit loads the initial view controller from that storyboard.
 
 ## See Also
 
-- [func instantiateInitialViewController<ViewController>(creator: ((NSCoder) -> ViewController?)?) -> ViewController?](uistoryboard/instantiateinitialviewcontroller(creator:).md)
+### Loading the Initial View Controller
+- [func instantiateInitialViewController<ViewController>(creator: ((NSCoder) -> ViewController?)?) -> ViewController?](./instantiateinitialviewcontroller%28creator%29.md)
   Creates the initial view controller from the storyboard and initializes it using your custom initialization code.
 
 

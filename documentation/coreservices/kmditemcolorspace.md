@@ -1,7 +1,8 @@
 # kMDItemColorSpace
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color space model used by the document contents. For example, “RGB”, “CMYK”, “YUV”, or “YCbCr”. A CFString.
 
@@ -12,6 +13,10 @@ The color space model used by the document contents. For example, “RGB”, “
 
 ```swift
 let kMDItemColorSpace: CFString!
+```
+
+```c
+const CFStringRef kMDItemColorSpace;
 ```
 
 

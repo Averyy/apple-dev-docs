@@ -1,12 +1,15 @@
 # url
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL path to the media item.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,21 +17,26 @@ The URL path to the media item.
 var url: URL? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSURL * url;
+```
+
 ## See Also
 
-- [var artworkImageURL: URL?](tvmediaitem/artworkimageurl.md)
+### Identifying Media Items
+- [var artworkImageURL: URL?](./artworkimageurl.md)
   The URL path to the artwork that accompanies the media item.
-- [var itemDescription: String?](tvmediaitem/itemdescription.md)
+- [var itemDescription: String?](./itemdescription.md)
   The description for a media item.
-- [var subtitle: String?](tvmediaitem/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle for a media item.
-- [var title: String?](tvmediaitem/title.md)
+- [var title: String?](./title.md)
   The title for a media item.
-- [var type: TVMediaItem.MediaType?](tvmediaitem/type.md)
+- [var type: TVMediaItem.MediaType?](./type.md)
   The type of media item.
-- [TVMediaItem.MediaType](tvmediaitem/mediatype.md)
+- [TVMediaItem.MediaType](./mediatype.md)
   A value indicating whether the media is audio or video.
-- [var userInfo: [String : Any]](tvmediaitem/userinfo.md)
+- [var userInfo: [String : Any]](./userinfo.md)
   User-defined metadata, like a developer-specific identifier, for a media item.
 
 

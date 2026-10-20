@@ -1,16 +1,17 @@
 # UserAbortTaskRequest
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Aborts a single task.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserAbortTaskRequest(uint64_t theT, uint64_t theL, uint64_t theQ, uint32_t *response);
 ```
 
@@ -27,15 +28,16 @@ This method doesn’t clear previously established conditions, such as `MODE SEL
 
 ## See Also
 
-- [UserAbortTaskSetRequest](iouserscsiparallelinterfacecontroller/useraborttasksetrequest.md)
+### Performing SCSI standard task management
+- [UserAbortTaskSetRequest](./useraborttasksetrequest.md)
   Aborts all tasks in a logical unit.
-- [UserClearACARequest](iouserscsiparallelinterfacecontroller/userclearacarequest.md)
+- [UserClearACARequest](./userclearacarequest.md)
   Removes an autocontingent allegiance (ACA) attribute from a logical unit’s task set.
-- [UserClearTaskSetRequest](iouserscsiparallelinterfacecontroller/usercleartasksetrequest.md)
+- [UserClearTaskSetRequest](./usercleartasksetrequest.md)
   Aborts all tasks in a logical unit and clears their data.
-- [UserLogicalUnitResetRequest](iouserscsiparallelinterfacecontroller/userlogicalunitresetrequest.md)
+- [UserLogicalUnitResetRequest](./userlogicalunitresetrequest.md)
   Resets a logical unit.
-- [UserTargetResetRequest](iouserscsiparallelinterfacecontroller/usertargetresetrequest.md)
+- [UserTargetResetRequest](./usertargetresetrequest.md)
   Resets a target.
 
 

@@ -1,7 +1,8 @@
 # TextBreakLocatorRef
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Refers to an opaque object that encapsulates locale and text-break information for the purpose of finding boundaries in Unicode text.
 
@@ -15,9 +16,13 @@ Refers to an opaque object that encapsulates locale and text-break information f
 typealias TextBreakLocatorRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueTextBreakLocatorRef *TextBreakLocatorRef;
+```
+
 #### Discussion
 
-You can obtain a `TextBreakLocatorRef` value from the function  [`UCCreateTextBreakLocator`](1390362-uccreatetextbreaklocator.md). 
+You can obtain a `TextBreakLocatorRef` value from the function  [`UCCreateTextBreakLocator`](./api-1390362-uccreatetextbreaklocator.md). 
 
 
 ---

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives updates about submersion data and events.
 
@@ -16,6 +17,10 @@ The object that receives updates about submersion data and events.
 
 ```swift
 weak var delegate: (any CMWaterSubmersionManagerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<CMWaterSubmersionManagerDelegate> delegate;
 ```
 
 

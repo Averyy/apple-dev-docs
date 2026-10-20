@@ -1,7 +1,8 @@
 # peripheralManagerDidStartAdvertising(_:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the peripheral manager started advertising the local peripheral device’s data.
 
@@ -20,9 +21,13 @@ Tells the delegate the peripheral manager started advertising the local peripher
 optional func peripheralManagerDidStartAdvertising(_ peripheral: CBPeripheralManager, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheralManagerDidStartAdvertising:(CBPeripheralManager *) peripheral error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth calls this method when your app calls the [`startAdvertising(_:)`](cbperipheralmanager/startadvertising(_:).md) method to advertise the local peripheral device’s data. If successful, the `error` parameter is `nil`. If a problem prevents advertising the data, the `error` parameter returns the cause of the failure.
+Core Bluetooth calls this method when your app calls the [`startAdvertising(_:)`](../cbperipheralmanager/startadvertising%28_%29.md) method to advertise the local peripheral device’s data. If successful, the `error` parameter is `nil`. If a problem prevents advertising the data, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # GameCenterGroupGameCenterDetailsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying a game detail record associated with a Game Center group.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying a game detail record associated with a Gam
 
 ## Declaration
 
-```swift
+```
 object GameCenterGroupGameCenterDetailsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterDetails`
 
 
 ---

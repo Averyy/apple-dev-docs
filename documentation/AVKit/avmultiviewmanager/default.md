@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default multiview manager.
 

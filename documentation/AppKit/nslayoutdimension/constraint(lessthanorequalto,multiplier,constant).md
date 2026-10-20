@@ -1,7 +1,8 @@
 # constraint(lessThanOrEqualTo:multiplier:constant:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a constraint that defines the anchor’s size attribute as greater than or equal to the specified anchor multiplied by the constant plus an offset.
 
@@ -14,9 +15,13 @@ Returns a constraint that defines the anchor’s size attribute as greater than 
 func constraint(lessThanOrEqualTo anchor: NSLayoutDimension, multiplier m: CGFloat, constant c: CGFloat) -> NSLayoutConstraint
 ```
 
+```objc
+- (NSLayoutConstraint *) constraintLessThanOrEqualToAnchor:(NSLayoutDimension *) anchor multiplier:(CGFloat) m constant:(CGFloat) c;
+```
+
 #### Return Value
 
-An [`NSLayoutConstraint`](nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as less than or equal to the attribute represented by the `anchor` parameter multiplied by the `m` constant plus the constant `c`.
+An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as less than or equal to the attribute represented by the `anchor` parameter multiplied by the `m` constant plus the constant `c`.
 
 #### Discussion
 
@@ -59,27 +64,28 @@ button.widthAnchor.constraintLessThanOrEqualToAnchor(button.heightAnchor, multip
 
 ## Parameters
 
-- `anchor`: A dimension anchor from an [`NSView`](nsview.md) or [`NSLayoutGuide`](nslayoutguide.md) object.
+- `anchor`: A dimension anchor from an [`NSView`](../nsview.md) or [`NSLayoutGuide`](../nslayoutguide.md) object.
 - `m`: The multiplier constant for the constraint.
 - `c`: The constant offset for this relationship.
 
 ## See Also
 
-- [func constraint(equalTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(equalto:multiplier:).md)
+### Building constraints
+- [func constraint(equalTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28equalto,multiplier%29.md)
   Returns a constraint that defines the anchor’s size attribute as equal to the specified anchor multiplied by the constant.
-- [func constraint(equalTo: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(equalto:multiplier:constant:).md)
+- [func constraint(equalTo: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat) -> NSLayoutConstraint](./constraint%28equalto,multiplier,constant%29.md)
   Returns a constraint that defines the anchor’s size attribute as equal to the specified size attribute multiplied by a constant plus an offset.
-- [func constraint(equalToConstant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(equaltoconstant:).md)
+- [func constraint(equalToConstant: CGFloat) -> NSLayoutConstraint](./constraint%28equaltoconstant%29.md)
   Returns a constraint that defines a constant size for the anchor’s size attribute.
-- [func constraint(greaterThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(greaterthanorequalto:multiplier:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequalto,multiplier%29.md)
   Returns a constraint that defines the anchor’s size attribute as greater than or equal to the specified anchor multiplied by the constant.
-- [func constraint(greaterThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(greaterthanorequalto:multiplier:constant:).md)
+- [func constraint(greaterThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequalto,multiplier,constant%29.md)
   Returns a constraint that defines the anchor’s size attribute as greater than or equal to the specified anchor multiplied by the constant plus an offset.
-- [func constraint(greaterThanOrEqualToConstant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(greaterthanorequaltoconstant:).md)
+- [func constraint(greaterThanOrEqualToConstant: CGFloat) -> NSLayoutConstraint](./constraint%28greaterthanorequaltoconstant%29.md)
   Returns a constraint that defines the minimum size for the anchor’s size attribute.
-- [func constraint(lessThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(lessthanorequalto:multiplier:).md)
+- [func constraint(lessThanOrEqualTo: NSLayoutDimension, multiplier: CGFloat) -> NSLayoutConstraint](./constraint%28lessthanorequalto,multiplier%29.md)
   Returns a constraint that defines the anchor’s size attribute as less than or equal to the specified anchor multiplied by the constant.
-- [func constraint(lessThanOrEqualToConstant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(lessthanorequaltoconstant:).md)
+- [func constraint(lessThanOrEqualToConstant: CGFloat) -> NSLayoutConstraint](./constraint%28lessthanorequaltoconstant%29.md)
   Returns a constraint that defines the maximum size for the anchor’s size attribute.
 
 

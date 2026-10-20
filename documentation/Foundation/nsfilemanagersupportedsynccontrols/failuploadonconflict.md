@@ -1,7 +1,8 @@
 # failUploadOnConflict
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file provider supports failing an upload if the local and server versions conflict.
 
@@ -20,9 +21,14 @@ The file provider supports failing an upload if the local and server versions co
 static var failUploadOnConflict: NSFileManagerSupportedSyncControls { get }
 ```
 
+```c
+NSFileManagerSupportedSyncControlsFailUploadOnConflict
+```
+
 ## See Also
 
-- [static var pauseSync: NSFileManagerSupportedSyncControls](nsfilemanagersupportedsynccontrols/pausesync.md)
+### Inspecting supported sync controls
+- [static var pauseSync: NSFileManagerSupportedSyncControls](./pausesync.md)
   The file provider supports pausing the sync on the item.
 
 

@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content builder that creates the reader’s content.
 

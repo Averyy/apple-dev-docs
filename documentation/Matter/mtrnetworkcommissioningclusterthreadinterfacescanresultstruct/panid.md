@@ -1,7 +1,8 @@
 # panId
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var panId: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * panId;
 ```
 
 

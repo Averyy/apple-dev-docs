@@ -1,7 +1,8 @@
 # narrow
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shortest representation of a standalone weekday.
 
@@ -26,13 +27,14 @@ This custom format style conveys the shortest representation of a standalone wee
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/abbreviated.md)
+### Modifying a Standalone Weekday
+- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneWeekday](./abbreviated.md)
   The abbreviated representation of a standalone weekday.
-- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneWeekday](./onedigit.md)
   The one-digit representation of a standalone weekday.
-- [static var short: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/short.md)
+- [static var short: Date.FormatStyle.Symbol.StandaloneWeekday](./short.md)
   The short representation of a standalone weekday.
-- [static var wide: Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.StandaloneWeekday](./wide.md)
   The full representation of a standalone weekday.
 
 

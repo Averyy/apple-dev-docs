@@ -1,7 +1,8 @@
 # FilterOperation.compress
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that compresses data.
 
@@ -11,7 +12,7 @@ An operation that compresses data.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

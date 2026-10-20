@@ -1,15 +1,20 @@
 # init(byFilteringTypesIn:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(byFilteringTypesIn pboard: NSPasteboard)
+```
+
+```objc
++ (NSPasteboard *) pasteboardByFilteringTypesInPasteboard:(NSPasteboard *) pboard;
 ```
 
 

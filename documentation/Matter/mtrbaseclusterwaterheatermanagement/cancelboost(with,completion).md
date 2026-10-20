@@ -1,7 +1,8 @@
 # cancelBoost(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command CancelBoost
 
@@ -17,7 +18,15 @@ Command CancelBoost
 ## Declaration
 
 ```swift
+func cancelBoost(with params: MTRWaterHeaterManagementClusterCancelBoostParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func cancelBoost(with params: MTRWaterHeaterManagementClusterCancelBoostParams?) async throws
+```
+
+```objc
+- (void) cancelBoostWithParams:(MTRWaterHeaterManagementClusterCancelBoostParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

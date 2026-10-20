@@ -1,7 +1,8 @@
 # MerchantTokenUsageMetadata
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Metadata about where and how to retrieve the latest usage information.
 
@@ -10,7 +11,7 @@ Metadata about where and how to retrieve the latest usage information.
 
 ## Declaration
 
-```swift
+```
 object MerchantTokenUsageMetadata
 ```
 
@@ -21,11 +22,23 @@ The `merchantPublicKey` includes encrypted metadata. When decrypted, you get a `
 ## Properties
 
 - `ciphersuite` (string) *(required)*: The cipher suite used for HPKE in authorization mode. Use the value sent as `supportedCiphersuite` in the `Retrieve MerchantToken PublicKey API` response.
+
+  **Maximum Length**: `64`
 - `data` (string) *(required)*: Metadata encyrpted using the merchant token public key.
+
+  **Maximum Length**: `4000`
 - `ephemeralPublicKey` (string) *(required)*: The ephemeral public key in X9.63 representation, Base64-encoded.
+
+  **Maximum Length**: `256`
 - `infoHash` (string) *(required)*: A SHA-256 digest of the `info`, hex-encoded.
+
+  **Maximum Length**: `256`
 - `merchantPublicKey` (string) *(required)*: The `merchantPublicKey` in X9.63 representation, Base64-encoded.
+
+  **Maximum Length**: `256`
 - `merchantTokenPublicKeyHash` (string) *(required)*: An SHA-256 digest of the `merchantTokenPublicKey`, hex-encoded.
+
+  **Maximum Length**: `256`
 
 
 ---

@@ -1,7 +1,8 @@
 # bottomTrailing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bottom trailing corner.
 

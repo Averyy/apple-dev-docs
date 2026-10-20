@@ -1,7 +1,8 @@
 # minimumScaleFactor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum scale factor for the text.
 
@@ -10,7 +11,7 @@ The minimum scale factor for the text.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var minimumScaleFactor: CGFloat { get set }
 
 #### Discussion
 
-If you set [`adjustsFontSizeToFitWidth`](uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/adjustsfontsizetofitwidth.md) to `true`, this property defines the smallest multiplier the view uses to fit the text.
+If you set [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) to `true`, this property defines the smallest multiplier the view uses to fit the text.
 
 
 ---

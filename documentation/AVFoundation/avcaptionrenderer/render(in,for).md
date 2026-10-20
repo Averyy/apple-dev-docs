@@ -1,7 +1,8 @@
 # render(in:for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draw the captions for the time you specify.
 
@@ -15,6 +16,10 @@ Draw the captions for the time you specify.
 
 ```swift
 func render(in ctx: CGContext, for time: CMTime)
+```
+
+```objc
+- (void) renderInContext:(CGContextRef) ctx forTime:(CMTime) time;
 ```
 
 ## Parameters

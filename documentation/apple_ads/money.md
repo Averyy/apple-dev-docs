@@ -1,45 +1,51 @@
 # Money
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to requests for budget amounts in campaigns.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object Money
 ```
 
 ## Properties
 
 - `amount` (string): The monetary value in the specified currency. The API uses `amount` whenever a currency value is necessary. The string can contain up to two decimal digits.
-- `currency` (string): The organization’s default currency that is set up in [`Apple Ads`](https://developer.apple.comhttps://ads.apple.com/).
+- `currency` (string): The organization’s default currency that is set up in [Apple Ads](https://ads.apple.com/).
+
+  **Allowed Values**: `AUD`, `CAD`, `EUR`, `GBP`, `JPY`, `MXN`, `NZD`, `USD`, `RUB`
 
 ## Relationships
 
 ### Inherited By
-- [ReportingAdGroup.CpaGoal](reportingadgroup/cpagoal-data.dictionary.md)
-- [ReportingCampaign.TargetCpa](reportingcampaign/targetcpa-data.dictionary.md)
+- [ReportingAdGroup.CpaGoal](./reportingadgroup/cpagoal-data.dictionary.md)
+- [ReportingCampaign.TargetCpa](./reportingcampaign/targetcpa-data.dictionary.md)
 
 ## See Also
 
-- [object BudgetOrder](budgetorder.md)
+### Budget Order Request and Response Objects
+- [object BudgetOrder](./budgetorder.md)
   The response to requests for budget order details.
-- [object BudgetOrderInfo](budgetorderinfo.md)
+- [object BudgetOrderInfo](./budgetorderinfo.md)
   The parent object response to a request for budget order details.
-- [object BudgetOrderCreate](budgetordercreate.md)
+- [object BudgetOrderCreate](./budgetordercreate.md)
   The parent object response to a request to create a budget order.
-- [object BudgetOrderUpdate](budgetorderupdate.md)
+- [object BudgetOrderUpdate](./budgetorderupdate.md)
   The parent object response to a request to update a budget order.
-- [object BudgetOrderInfoResponse](budgetorderinforesponse.md)
+- [object BudgetOrderInfoResponse](./budgetorderinforesponse.md)
   A container for the budget order response body.
-- [object BudgetOrderInfoListResponse](budgetorderinfolistresponse.md)
+- [object BudgetOrderInfoListResponse](./budgetorderinfolistresponse.md)
   The response details to budget order requests.
-- [object LOCInvoiceDetails](locinvoicedetails.md)
+- [object LOCInvoiceDetails](./locinvoicedetails.md)
   The response to a request to fetch details for `LOC` invoicing details.
 
 

@@ -1,7 +1,8 @@
 # WKFrameInfo
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about a frame on a webpage.
 
@@ -19,6 +20,10 @@ An object that contains information about a frame on a webpage.
 class WKFrameInfo
 ```
 
+```objc
+@interface WKFrameInfo : NSObject
+```
+
 #### Overview
 
 An instance of this class is a transient, data-only object; it does not uniquely identify a frame across multiple delegate method calls.
@@ -26,43 +31,44 @@ An instance of this class is a transient, data-only object; it does not uniquely
 ## Topics
 
 ### Inspecting frame information
-- [var isMainFrame: Bool](wkframeinfo/ismainframe.md)
+- [var isMainFrame: Bool](./wkframeinfo/ismainframe.md)
   A Boolean value indicating whether the frame is the web site’s main frame or a subframe.
-- [var request: URLRequest](wkframeinfo/request.md)
+- [var request: URLRequest](./wkframeinfo/request.md)
   The frame’s current request.
-- [var securityOrigin: WKSecurityOrigin](wkframeinfo/securityorigin.md)
+- [var securityOrigin: WKSecurityOrigin](./wkframeinfo/securityorigin.md)
   The frame’s security origin.
-- [var webView: WKWebView?](wkframeinfo/webview.md)
+- [var webView: WKWebView?](./wkframeinfo/webview.md)
   The web view that contains this frame and the containing webpage.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKUserContentController](wkusercontentcontroller.md)
+### Page content
+- [class WKUserContentController](./wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
-- [class WKContentRuleListStore](wkcontentruleliststore.md)
+- [class WKContentRuleListStore](./wkcontentruleliststore.md)
   An object that contains the rules for how to load and filter content in the web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](./wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKSecurityOrigin](wksecurityorigin.md)
+- [class WKSecurityOrigin](./wksecurityorigin.md)
   An object that identifies the origin of a particular resource.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](./wkuserscript.md)
   A script that the web view injects into a webpage.
-- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
-- [class WKJSHandle](wkjshandle.md)
+- [WKContentWorld.Configuration](./wkcontentworld/configuration.md)
+- [class WKJSHandle](./wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
 
 

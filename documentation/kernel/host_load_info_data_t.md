@@ -1,14 +1,15 @@
 # host_load_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct host_load_info {
     ...
 } host_load_info_data_t;
@@ -17,8 +18,8 @@ typedef struct host_load_info {
 ## Topics
 
 ### Instance Properties
-- [avenrun](host_load_info_data_t/1586737-avenrun.md)
-- [mach_factor](host_load_info_data_t/1586782-mach_factor.md)
+- [avenrun](./host_load_info_data_t/api-1586737-avenrun.md)
+- [mach_factor](./host_load_info_data_t/api-1586782-mach_factor.md)
 
 
 ---

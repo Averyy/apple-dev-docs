@@ -1,7 +1,8 @@
 # image
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The image for the annotation.
 
@@ -10,7 +11,7 @@ The image for the annotation.
 
 ## Declaration
 
-```swift
+```
 image?:
     | ImageDelegate
     | ImageHashObject
@@ -20,11 +21,12 @@ image?:
 
 #### Discussion
 
-Set this property to an [`ImageHashObject`](imagehashobject.md), an [`ImageDelegate`](imagedelegate.md), an [`ImageSource`](imagesource.md), or a `Promise` that resolves to an [`ImageSource`](imagesource.md). For more information, see the [`ImageAnnotation`](imageannotation.md) [`image`](imageannotation/image.md) property.
+Set this property to an [`ImageHashObject`](../imagehashobject.md), an [`ImageDelegate`](../imagedelegate.md), an [`ImageSource`](../imagesource.md), or a `Promise` that resolves to an [`ImageSource`](../imagesource.md). For more information, see the [`ImageAnnotation`](../imageannotation.md) [`image`](../imageannotation/image.md) property.
 
 ## See Also
 
-- [url](imageannotationconstructoroptions/url.md)
+### Initializing the image
+- [url](./url.md)
   An object that contains URLs for the image assets in multiple resolutions.
 
 

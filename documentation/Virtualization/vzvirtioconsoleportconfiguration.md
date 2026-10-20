@@ -1,7 +1,8 @@
 # VZVirtioConsolePortConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents the configuration options you can set on a Virtio console port.
 
@@ -14,45 +15,51 @@ A class that represents the configuration options you can set on a Virtio consol
 class VZVirtioConsolePortConfiguration
 ```
 
+```objc
+@interface VZVirtioConsolePortConfiguration : VZConsolePortConfiguration
+```
+
 #### Overview
 
-A console port is a two-way communication channel between a host [`VZSerialPortAttachment`](vzserialportattachment.md) and a VM console port. A Virtio device can have one or more attached console devices. Optionally, you can set a name for a console port and also configure a console port that the guest can use as the system console.
+A console port is a two-way communication channel between a host [`VZSerialPortAttachment`](./vzserialportattachment.md) and a VM console port. A Virtio device can have one or more attached console devices. Optionally, you can set a name for a console port and also configure a console port that the guest can use as the system console.
 
 ## Topics
 
 ### Creating a port configuration
-- [init()](vzvirtioconsoleportconfiguration/init.md)
+- [init()](./vzvirtioconsoleportconfiguration/init%28%29.md)
   Creates a new Virtio console port configuration.
 ### Configuring the port
-- [var isConsole: Bool](vzvirtioconsoleportconfiguration/isconsole.md)
+- [var isConsole: Bool](./vzvirtioconsoleportconfiguration/isconsole.md)
   A Boolean value that indicates whether this port is a console.
-- [var name: String?](vzvirtioconsoleportconfiguration/name.md)
+- [var name: String?](./vzvirtioconsoleportconfiguration/name.md)
   The name of the port.
 
 ## Relationships
 
 ### Inherits From
-- [VZConsolePortConfiguration](vzconsoleportconfiguration.md)
+- [VZConsolePortConfiguration](./vzconsoleportconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var consoleDevices: [VZConsoleDeviceConfiguration]](vzvirtualmachineconfiguration/consoledevices.md)
+### Related Documentation
+- [var consoleDevices: [VZConsoleDeviceConfiguration]](./vzvirtualmachineconfiguration/consoledevices.md)
   The array of console devices that you expose to the guest operating system.
-- [class VZConsoleDeviceConfiguration](vzconsoledeviceconfiguration.md)
+### Configurations
+- [class VZConsoleDeviceConfiguration](./vzconsoledeviceconfiguration.md)
   The base class for a console device configuration.
-- [class VZConsolePortConfiguration](vzconsoleportconfiguration.md)
+- [class VZConsolePortConfiguration](./vzconsoleportconfiguration.md)
   The base class for a console port configuration.
-- [class VZVirtioConsoleDeviceConfiguration](vzvirtioconsoledeviceconfiguration.md)
+- [class VZVirtioConsoleDeviceConfiguration](./vzvirtioconsoledeviceconfiguration.md)
   A console device that enables communication between the host and the guest using console ports through a Virtio interface.
-- [class VZVirtioConsolePortConfigurationArray](vzvirtioconsoleportconfigurationarray.md)
+- [class VZVirtioConsolePortConfigurationArray](./vzvirtioconsoleportconfigurationarray.md)
   A class that represents a collection of Virtio console port configurations.
 
 

@@ -1,7 +1,8 @@
 # fullName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s full name from their Apple ID or a user-submitted value provided from the Sign in with Apple UI.
 
@@ -20,17 +21,22 @@ The user’s full name from their Apple ID or a user-submitted value provided fr
 var fullName: PersonNameComponents? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSPersonNameComponents * fullName;
+```
+
 #### Discussion
 
-Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. For more information, visit [`Authenticating users with Sign in with Apple`](https://developer.apple.com/documentation/signinwithapple/authenticating-users-with-sign-in-with-apple).
+Apple doesn’t receive the user’s full name shared with the system UI. The raw data is passed directly to your app from the browser and is not included in the user’s identity token. For more information, visit [Authenticating users with Sign in with Apple](../../SigninwithApple/authenticating-users-with-sign-in-with-apple.md).
 
 > 💡 **Tip**:  To help prevent cross-site scripting attacks, validate and sanitize the user-submitted first and last name values before storing on your app servers.
 
 ## See Also
 
-- [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationappleidcredential/authorizedscopes.md)
+### Getting Contact Information
+- [var authorizedScopes: [ASAuthorization.Scope]](./authorizedscopes.md)
   The contact information the user authorized your app to access.
-- [var email: String?](asauthorizationappleidcredential/email.md)
+- [var email: String?](./email.md)
   The user’s email address.
 
 

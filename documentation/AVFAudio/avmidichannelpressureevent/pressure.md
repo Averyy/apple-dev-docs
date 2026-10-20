@@ -1,7 +1,8 @@
 # pressure
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI channel pressure.
 
@@ -17,6 +18,10 @@ The MIDI channel pressure.
 
 ```swift
 var pressure: UInt32 { get set }
+```
+
+```objc
+@property (readwrite) UInt32 pressure;
 ```
 
 

@@ -1,7 +1,8 @@
 # MPSImageScale
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A filter that resizes and changes the aspect ratio of an image.
 
@@ -19,41 +20,46 @@ A filter that resizes and changes the aspect ratio of an image.
 class MPSImageScale
 ```
 
+```objc
+@interface MPSImageScale : MPSUnaryImageKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsimagescale/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsimagescale/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsimagescale/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsimagescale/init%28device%29.md)
 ### Instance Properties
-- [var scaleTransform: UnsafePointer<MPSScaleTransform>?](mpsimagescale/scaletransform.md)
+- [var scaleTransform: UnsafePointer<MPSScaleTransform>?](./mpsimagescale/scaletransform.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSUnaryImageKernel](mpsunaryimagekernel.md)
+- [MPSUnaryImageKernel](./mpsunaryimagekernel.md)
 ### Inherited By
-- [MPSImageBilinearScale](mpsimagebilinearscale.md)
-- [MPSImageLanczosScale](mpsimagelanczosscale.md)
+- [MPSImageBilinearScale](./mpsimagebilinearscale.md)
+- [MPSImageLanczosScale](./mpsimagelanczosscale.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSImageConversion](mpsimageconversion.md)
+### Image Manipulation Filters
+- [class MPSImageConversion](./mpsimageconversion.md)
   A filter that performs a conversion of color space, alpha, or pixel format.
-- [class MPSImageLanczosScale](mpsimagelanczosscale.md)
+- [class MPSImageLanczosScale](./mpsimagelanczosscale.md)
   A filter that resizes and changes the aspect ratio of an image using Lanczos resampling.
-- [class MPSImageBilinearScale](mpsimagebilinearscale.md)
+- [class MPSImageBilinearScale](./mpsimagebilinearscale.md)
   A filter that resizes and changes the aspect ratio of an image using Bilinear resampling.
-- [class MPSImageTranspose](mpsimagetranspose.md)
+- [class MPSImageTranspose](./mpsimagetranspose.md)
   A filter that transposes an image.
 
 

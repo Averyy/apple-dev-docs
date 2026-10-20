@@ -1,7 +1,8 @@
 # trigger
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The conditions that trigger the delivery of the notification.
 
@@ -21,15 +22,28 @@ The conditions that trigger the delivery of the notification.
 var trigger: UNNotificationTrigger? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UNNotificationTrigger * trigger;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) UNNotificationTrigger * trigger;
+```
+
 #### Discussion
 
-For notifications that the system has delivered, use this property to determine what caused the delivery to occur. For remote notifications, this property contains a [`UNPushNotificationTrigger`](unpushnotificationtrigger.md) object. For other notifications, the system sets this type using the trigger condition specified in the original request.
+For notifications that the system has delivered, use this property to determine what caused the delivery to occur. For remote notifications, this property contains a [`UNPushNotificationTrigger`](../unpushnotificationtrigger.md) object. For other notifications, the system sets this type using the trigger condition specified in the original request.
 
 ## See Also
 
-- [var identifier: String](unnotificationrequest/identifier.md)
+### Getting the Request Details
+- [var identifier: String](./identifier.md)
   The unique identifier for this notification request.
-- [var content: UNNotificationContent](unnotificationrequest/content.md)
+- [var content: UNNotificationContent](./content.md)
   The content associated with the notification.
 
 

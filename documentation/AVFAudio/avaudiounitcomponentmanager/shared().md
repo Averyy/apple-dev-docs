@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets the shared component manager instance.
 
@@ -17,6 +18,10 @@ Gets the shared component manager instance.
 
 ```swift
 class func shared() -> Self
+```
+
+```objc
++ (instancetype) sharedAudioUnitComponentManager;
 ```
 
 #### Return Value

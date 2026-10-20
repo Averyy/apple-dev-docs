@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration details for the search tool.
 
@@ -20,21 +21,22 @@ let configuration: SpotlightSearchTool.Configuration
 
 #### Discussion
 
-Use this property to specify the configuration data you want to use with the tool. You use this property to configure the data sources for the tool to search, guidance on how to perform searches, and any custom processing steps your app provides. For more information on how to configure and use [`SpotlightSearchTool`](spotlightsearchtool.md), see [`Making your indexed content available to Foundation Models`](making-your-indexed-content-available-to-foundation-models.md).
+Use this property to specify the configuration data you want to use with the tool. You use this property to configure the data sources for the tool to search, guidance on how to perform searches, and any custom processing steps your app provides. For more information on how to configure and use [`SpotlightSearchTool`](../spotlightsearchtool.md), see [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md).
 
 ## See Also
 
-- [SpotlightSearchTool.Configuration](spotlightsearchtool/configuration-swift.struct.md)
+### Configuring the tool behavior
+- [SpotlightSearchTool.Configuration](./configuration-swift.struct.md)
   The configuration data to use when creating a Spotlight search tool.
-- [SpotlightSearchTool.Guide](spotlightsearchtool/guide.md)
+- [SpotlightSearchTool.Guide](./guide.md)
   A type you use to offer guidance about what search capabillities to employ during a session.
-- [SpotlightSearchTool.GuidanceProfile](spotlightsearchtool/guidanceprofile.md)
+- [SpotlightSearchTool.GuidanceProfile](./guidanceprofile.md)
   Options for which techniques to use to determine a match.
-- [SpotlightSearchTool.GuidanceLevel](spotlightsearchtool/guidancelevel.md)
+- [SpotlightSearchTool.GuidanceLevel](./guidancelevel.md)
   Options for how to search your app’s content.
-- [SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain.md)
+- [SpotlightSearchTool.ContentDomain](./contentdomain.md)
   A content domain that defines which fields and attribute mappings are presented to the model during a focused search session.
-- [SpotlightSearchTool.FormatLevel](spotlightsearchtool/formatlevel.md)
+- [SpotlightSearchTool.FormatLevel](./formatlevel.md)
   Controls how tool responses are serialized for the model’s context window.
 
 

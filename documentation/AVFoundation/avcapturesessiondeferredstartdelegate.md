@@ -1,7 +1,8 @@
 # AVCaptureSessionDeferredStartDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the interface to respond to events about a capture session’s deferred start.
 
@@ -18,32 +19,37 @@ A protocol that defines the interface to respond to events about a capture sessi
 protocol AVCaptureSessionDeferredStartDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVCaptureSessionDeferredStartDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to deferred start events
-- [func sessionDidRunDeferredStart(AVCaptureSession)](avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart(_:).md)
+- [func sessionDidRunDeferredStart(AVCaptureSession)](./avcapturesessiondeferredstartdelegate/sessiondidrundeferredstart%28_%29.md)
   This method gets called by the session when deferred start has finished running.
-- [func sessionWillRunDeferredStart(AVCaptureSession)](avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart(_:).md)
+- [func sessionWillRunDeferredStart(AVCaptureSession)](./avcapturesessiondeferredstartdelegate/sessionwillrundeferredstart%28_%29.md)
   This method gets called by the session when deferred start is about to run.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var isManualDeferredStartSupported: Bool](avcapturesession/ismanualdeferredstartsupported.md)
+### Configuring deferred start
+- [var isManualDeferredStartSupported: Bool](./avcapturesession/ismanualdeferredstartsupported.md)
   A `BOOL` value that indicates whether the session supports manually running deferred start.
-- [var automaticallyRunsDeferredStart: Bool](avcapturesession/automaticallyrunsdeferredstart.md)
+- [var automaticallyRunsDeferredStart: Bool](./avcapturesession/automaticallyrunsdeferredstart.md)
   A Boolean value that indicates whether deferred start runs automatically.
-- [func runDeferredStartWhenNeeded()](avcapturesession/rundeferredstartwhenneeded.md)
+- [func runDeferredStartWhenNeeded()](./avcapturesession/rundeferredstartwhenneeded%28%29.md)
   Tells the session to run deferred start when appropriate.
-- [var deferredStartDelegate: (any AVCaptureSessionDeferredStartDelegate)?](avcapturesession/deferredstartdelegate.md)
+- [var deferredStartDelegate: (any AVCaptureSessionDeferredStartDelegate)?](./avcapturesession/deferredstartdelegate.md)
   A delegate object that observes events about deferred start.
-- [var deferredStartDelegateCallbackQueue: dispatch_queue_t?](avcapturesession/deferredstartdelegatecallbackqueue.md)
+- [var deferredStartDelegateCallbackQueue: dispatch_queue_t?](./avcapturesession/deferredstartdelegatecallbackqueue.md)
   The dispatch queue on which the session calls deferred start delegate methods.
-- [func setDeferredStartDelegate((any AVCaptureSessionDeferredStartDelegate)?, deferredStartDelegateCallbackQueue: dispatch_queue_t?)](avcapturesession/setdeferredstartdelegate(_:deferredstartdelegatecallbackqueue:).md)
+- [func setDeferredStartDelegate((any AVCaptureSessionDeferredStartDelegate)?, deferredStartDelegateCallbackQueue: dispatch_queue_t?)](./avcapturesession/setdeferredstartdelegate%28_,deferredstartdelegatecallbackqueue%29.md)
   Sets a delegate object for the session to call when performing deferred start.
 
 

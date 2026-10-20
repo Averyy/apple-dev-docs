@@ -1,7 +1,8 @@
 # textProperties
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties for configuring the primary text.
 
@@ -16,9 +17,10 @@ var textProperties: TVMonogramContentConfiguration.TextProperties { get set }
 
 ## See Also
 
-- [var secondaryTextProperties: TVMonogramContentConfiguration.TextProperties](tvmonogramcontentconfiguration-swift.struct/secondarytextproperties.md)
+### Customizing Appearance
+- [var secondaryTextProperties: TVMonogramContentConfiguration.TextProperties](./secondarytextproperties.md)
   Properties for configuring the secondary text.
-- [TVMonogramContentConfiguration.TextProperties](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct.md)
+- [TVMonogramContentConfiguration.TextProperties](./textproperties-swift.struct.md)
   Properties that affect the monogram content configuration’s text.
 
 

@@ -1,12 +1,13 @@
 # drawsBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cell draws its background.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean value indicating whether the cell draws its background.
 var drawsBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsBackground;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the cell draws its background.
+When the value of this property is [`true`](../../Swift/true.md), the cell draws its background.
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsdatepickercell/backgroundcolor.md)
+### Configuring Appearance
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The cell’s background color.
-- [var textColor: NSColor](nsdatepickercell/textcolor.md)
+- [var textColor: NSColor](./textcolor.md)
   The cell’s text color.
-- [var datePickerStyle: NSDatePicker.Style](nsdatepickercell/datepickerstyle.md)
+- [var datePickerStyle: NSDatePicker.Style](./datepickerstyle.md)
   The date picker style to use.
-- [var datePickerElements: NSDatePicker.ElementFlags](nsdatepickercell/datepickerelements.md)
+- [var datePickerElements: NSDatePicker.ElementFlags](./datepickerelements.md)
   A bitmask that indicates which visual elements are shown by the date picker.
 
 

@@ -1,7 +1,8 @@
 # lineLayoutDirection
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Ordering of lines within a page. For example, top-to-bottom for English; right-to-left for Mongolian in the Mongolian Script
 

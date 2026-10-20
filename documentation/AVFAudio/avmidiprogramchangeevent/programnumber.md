@@ -1,7 +1,8 @@
 # programNumber
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI program number.
 
@@ -17,6 +18,10 @@ The MIDI program number.
 
 ```swift
 var programNumber: UInt32 { get set }
+```
+
+```objc
+@property (readwrite) UInt32 programNumber;
 ```
 
 

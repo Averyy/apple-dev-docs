@@ -1,7 +1,8 @@
 # gpu
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,21 +18,22 @@ static let gpu: MetricGroup
 
 ## See Also
 
-- [static let cpu: MetricGroup](metricgroup/cpu.md)
-- [static let memory: MetricGroup](metricgroup/memory.md)
-- [static let diskIO: MetricGroup](metricgroup/diskio.md)
-- [static let networkTransfer: MetricGroup](metricgroup/networktransfer.md)
-- [static let display: MetricGroup](metricgroup/display.md)
-- [static let animation: MetricGroup](metricgroup/animation.md)
-- [static let applicationResponsiveness: MetricGroup](metricgroup/applicationresponsiveness.md)
-- [static let cellularCondition: MetricGroup](metricgroup/cellularcondition.md)
-- [static let locationActivity: MetricGroup](metricgroup/locationactivity.md)
-- [static let signpost: MetricGroup](metricgroup/signpost.md)
-- [static let appLaunch: MetricGroup](metricgroup/applaunch.md)
-- [static let appRuntime: MetricGroup](metricgroup/appruntime.md)
-- [static let appTermination: MetricGroup](metricgroup/apptermination.md)
-- [static let diskSpaceUsage: MetricGroup](metricgroup/diskspaceusage.md)
-- [static let frameStatistics: MetricGroup](metricgroup/framestatistics.md)
+### Metric Groups
+- [static let cpu: MetricGroup](./cpu.md)
+- [static let memory: MetricGroup](./memory.md)
+- [static let diskIO: MetricGroup](./diskio.md)
+- [static let networkTransfer: MetricGroup](./networktransfer.md)
+- [static let display: MetricGroup](./display.md)
+- [static let animation: MetricGroup](./animation.md)
+- [static let applicationResponsiveness: MetricGroup](./applicationresponsiveness.md)
+- [static let cellularCondition: MetricGroup](./cellularcondition.md)
+- [static let locationActivity: MetricGroup](./locationactivity.md)
+- [static let signpost: MetricGroup](./signpost.md)
+- [static let appLaunch: MetricGroup](./applaunch.md)
+- [static let appRuntime: MetricGroup](./appruntime.md)
+- [static let appTermination: MetricGroup](./apptermination.md)
+- [static let diskSpaceUsage: MetricGroup](./diskspaceusage.md)
+- [static let frameStatistics: MetricGroup](./framestatistics.md)
 
 
 ---

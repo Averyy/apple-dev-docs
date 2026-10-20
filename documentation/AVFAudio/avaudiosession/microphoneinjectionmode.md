@@ -1,22 +1,27 @@
 # AVAudioSession.MicrophoneInjectionMode
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The modes of injecting audio into another app’s input stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 enum MicrophoneInjectionMode
+```
+
+```c
+enum AVAudioSessionMicrophoneInjectionMode : NSInteger;
 ```
 
 #### Overview
@@ -28,32 +33,33 @@ Apps can state their intent to mix synthesized speech into another app’s input
 ## Topics
 
 ### Creating an injection mode
-- [init?(rawValue: Int)](avaudiosession/microphoneinjectionmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./microphoneinjectionmode/init%28rawvalue%29.md)
 ### Choosing an injection mode
-- [AVAudioSession.MicrophoneInjectionMode.none](avaudiosession/microphoneinjectionmode/none.md)
+- [AVAudioSession.MicrophoneInjectionMode.none](./microphoneinjectionmode/none.md)
   A mode that indicates not to use spoken audio injection.
-- [AVAudioSession.MicrophoneInjectionMode.spokenAudio](avaudiosession/microphoneinjectionmode/spokenaudio.md)
+- [AVAudioSession.MicrophoneInjectionMode.spokenAudio](./microphoneinjectionmode/spokenaudio.md)
   A mode that indicates to inject spoken audio, like synthesized speech, along with microphone audio.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isMicrophoneInjectionAvailable: Bool](avaudiosession/ismicrophoneinjectionavailable.md)
+### Enabling adding audio to calls
+- [var isMicrophoneInjectionAvailable: Bool](./ismicrophoneinjectionavailable.md)
   A Boolean value that indicates whether microphone injection is available.
-- [var preferredMicrophoneInjectionMode: AVAudioSession.MicrophoneInjectionMode](avaudiosession/preferredmicrophoneinjectionmode.md)
+- [var preferredMicrophoneInjectionMode: AVAudioSession.MicrophoneInjectionMode](./preferredmicrophoneinjectionmode.md)
   The preferred mode of injecting audio into another app’s input stream.
-- [func setPreferredMicrophoneInjectionMode(AVAudioSession.MicrophoneInjectionMode) throws](avaudiosession/setpreferredmicrophoneinjectionmode(_:).md)
+- [func setPreferredMicrophoneInjectionMode(AVAudioSession.MicrophoneInjectionMode) throws](./setpreferredmicrophoneinjectionmode%28_%29.md)
   Sets the preferred mode of injecting audio into another app’s input stream.
-- [class let microphoneInjectionCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/microphoneinjectioncapabilitieschangenotification.md)
+- [class let microphoneInjectionCapabilitiesChangeNotification: NSNotification.Name](./microphoneinjectioncapabilitieschangenotification.md)
   A notification the system posts when its capability to inject audio into an input stream changes.
 
 

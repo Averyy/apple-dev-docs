@@ -1,14 +1,15 @@
 # kSerialQueueLogSizeMax
 
 **Framework**: SerialDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 static const uint8_t kSerialQueueLogSizeMax;
 ```
 

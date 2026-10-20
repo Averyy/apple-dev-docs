@@ -1,7 +1,8 @@
 # startWatchApp(with:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches or wakes the companion watchOS app to create a new workout session.
 
@@ -15,7 +16,15 @@ Launches or wakes the companion watchOS app to create a new workout session.
 ## Declaration
 
 ```swift
+func startWatchApp(with workoutConfiguration: HKWorkoutConfiguration, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func startWatchApp(toHandle workoutConfiguration: HKWorkoutConfiguration) async throws
+```
+
+```objc
+- (void) startWatchAppWithWorkoutConfiguration:(HKWorkoutConfiguration *) workoutConfiguration completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
@@ -40,7 +49,7 @@ catch {
 logger.debug("*** Workout Session Started ***")
 ```
 
-Next, set up the mirrored workout in the [`WKApplicationDelegate`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate) object’s [`handle(_:)`](https://developer.apple.com/documentation/watchkit/wkapplicationdelegate/handle(_:)-1pfoc) method.
+Next, set up the mirrored workout in the [`WKApplicationDelegate`](../../WatchKit/wkapplicationdelegate.md) object’s [`handle(_:)`](../../WatchKit/wkapplicationdelegate/handle%28_%29-1pfoc.md) method.
 
 ```swift
 class AppDelegate: NSObject, WKApplicationDelegate {
@@ -111,16 +120,19 @@ extension WorkoutManager {
 ## Parameters
 
 - `workoutConfiguration`: The configuration data for a new workout session on the watch.
-- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters: - **success**: A Boolean value. This parameter contains [`true`](https://developer.apple.com/documentation/swift/true) if the watch app launched successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
-- **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
+- `completion`: A block that this method calls after launching the Watch app. The system calls this block, passing the following parameters:
+
+  - **success**: A Boolean value. This parameter contains [`true`](../../Swift/true.md) if the watch app launched successfully; otherwise, [`false`](../../Swift/false.md).
+  - **error**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also
 
-- [var workoutSessionMirroringStartHandler: ((HKWorkoutSession) -> Void)?](hkhealthstore/workoutsessionmirroringstarthandler.md)
+### Managing workout sessions
+- [var workoutSessionMirroringStartHandler: ((HKWorkoutSession) -> Void)?](./workoutsessionmirroringstarthandler.md)
   A block that the system calls when it starts a mirrored workout session.
-- [func pause(HKWorkoutSession)](hkhealthstore/pause(_:).md)
+- [func pause(HKWorkoutSession)](./pause%28_%29.md)
   Pauses the provided workout session.
-- [func resumeWorkoutSession(HKWorkoutSession)](hkhealthstore/resumeworkoutsession(_:).md)
+- [func resumeWorkoutSession(HKWorkoutSession)](./resumeworkoutsession%28_%29.md)
   Resumes the provided workout session.
 
 

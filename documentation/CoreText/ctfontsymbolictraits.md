@@ -1,23 +1,28 @@
 # CTFontSymbolicTraits
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The symbolic representation of stylistic font attributes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct CTFontSymbolicTraits
+```
+
+```c
+enum CTFontSymbolicTraits : uint32_t;
 ```
 
 #### Overview
@@ -27,70 +32,71 @@ struct CTFontSymbolicTraits
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](ctfontsymbolictraits/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./ctfontsymbolictraits/init%28rawvalue%29.md)
   Creates a symbolic traits structure with the specified raw value.
 ### Symbolic Traits
-- [static var traitItalic: CTFontSymbolicTraits](ctfontsymbolictraits/traititalic.md)
+- [static var traitItalic: CTFontSymbolicTraits](./ctfontsymbolictraits/traititalic.md)
   The font typestyle is italic.
-- [static var traitBold: CTFontSymbolicTraits](ctfontsymbolictraits/traitbold.md)
+- [static var traitBold: CTFontSymbolicTraits](./ctfontsymbolictraits/traitbold.md)
   The font typestyle is boldface.
-- [static var traitExpanded: CTFontSymbolicTraits](ctfontsymbolictraits/traitexpanded.md)
+- [static var traitExpanded: CTFontSymbolicTraits](./ctfontsymbolictraits/traitexpanded.md)
   The font typestyle is expanded.
-- [static var traitCondensed: CTFontSymbolicTraits](ctfontsymbolictraits/traitcondensed.md)
+- [static var traitCondensed: CTFontSymbolicTraits](./ctfontsymbolictraits/traitcondensed.md)
   The font typestyle is condensed.
-- [static var traitMonoSpace: CTFontSymbolicTraits](ctfontsymbolictraits/traitmonospace.md)
+- [static var traitMonoSpace: CTFontSymbolicTraits](./ctfontsymbolictraits/traitmonospace.md)
   The font uses fixed-pitch glyphs if available.
-- [static var traitVertical: CTFontSymbolicTraits](ctfontsymbolictraits/traitvertical.md)
+- [static var traitVertical: CTFontSymbolicTraits](./ctfontsymbolictraits/traitvertical.md)
   The font uses vertical glyph variants and metrics.
-- [static var traitUIOptimized: CTFontSymbolicTraits](ctfontsymbolictraits/traituioptimized.md)
+- [static var traitUIOptimized: CTFontSymbolicTraits](./ctfontsymbolictraits/traituioptimized.md)
   The font synthesizes appropriate attributes for user interface rendering, such as control titles, if necessary.
-- [static var traitColorGlyphs: CTFontSymbolicTraits](ctfontsymbolictraits/traitcolorglyphs.md)
+- [static var traitColorGlyphs: CTFontSymbolicTraits](./ctfontsymbolictraits/traitcolorglyphs.md)
   The font contains color glyphs.
-- [static var traitComposite: CTFontSymbolicTraits](ctfontsymbolictraits/traitcomposite.md)
+- [static var traitComposite: CTFontSymbolicTraits](./ctfontsymbolictraits/traitcomposite.md)
   The font is in Composite Font Reference format.
-- [static var traitClassMask: CTFontSymbolicTraits](ctfontsymbolictraits/traitclassmask.md)
+- [static var traitClassMask: CTFontSymbolicTraits](./ctfontsymbolictraits/traitclassmask.md)
   Mask for the font class.
 ### Deprecated Constants
-- [static var italicTrait: CTFontSymbolicTraits](ctfontsymbolictraits/italictrait.md)
+- [static var italicTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/italictrait.md)
   The font typestyle is italic.
-- [static var boldTrait: CTFontSymbolicTraits](ctfontsymbolictraits/boldtrait.md)
+- [static var boldTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/boldtrait.md)
   The font typestyle is boldface.
-- [static var expandedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/expandedtrait.md)
+- [static var expandedTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/expandedtrait.md)
   The font typestyle is expanded.
-- [static var condensedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/condensedtrait.md)
+- [static var condensedTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/condensedtrait.md)
   The font typestyle is condensed.
-- [static var monoSpaceTrait: CTFontSymbolicTraits](ctfontsymbolictraits/monospacetrait.md)
+- [static var monoSpaceTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/monospacetrait.md)
   The font uses fixed-pitch glyphs if available.
-- [static var verticalTrait: CTFontSymbolicTraits](ctfontsymbolictraits/verticaltrait.md)
+- [static var verticalTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/verticaltrait.md)
   The font uses vertical glyph variants and metrics.
-- [static var uiOptimizedTrait: CTFontSymbolicTraits](ctfontsymbolictraits/uioptimizedtrait.md)
+- [static var uiOptimizedTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/uioptimizedtrait.md)
   The font synthesizes appropriate attributes for user interface rendering, such as control titles, if necessary.
-- [static var colorGlyphsTrait: CTFontSymbolicTraits](ctfontsymbolictraits/colorglyphstrait.md)
+- [static var colorGlyphsTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/colorglyphstrait.md)
   The font contains color glyphs.
-- [static var compositeTrait: CTFontSymbolicTraits](ctfontsymbolictraits/compositetrait.md)
+- [static var compositeTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/compositetrait.md)
   The font is in Composite Font Reference format.
-- [static var classMaskTrait: CTFontSymbolicTraits](ctfontsymbolictraits/classmasktrait.md)
+- [static var classMaskTrait: CTFontSymbolicTraits](./ctfontsymbolictraits/classmasktrait.md)
   Mask for the font class.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Font Traits](font-traits.md)
+### Accessing Font Traits
+- [Font Traits](./font-traits.md)
   The keys for accessing font traits from a font descriptor.
-- [Font Class Mask Shift Constants](font-class-mask-shift-constants.md)
+- [Font Class Mask Shift Constants](./font-class-mask-shift-constants.md)
   These constants represent the font class mask shift.
-- [struct CTFontStylisticClass](ctfontstylisticclass.md)
+- [struct CTFontStylisticClass](./ctfontstylisticclass.md)
   The stylistic class values of the font.
 
 

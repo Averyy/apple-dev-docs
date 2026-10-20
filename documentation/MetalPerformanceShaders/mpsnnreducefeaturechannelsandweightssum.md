@@ -1,7 +1,8 @@
 # MPSNNReduceFeatureChannelsAndWeightsSum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reduction filter that returns the weighted sum of all values for each feature channel in an image.
 
@@ -19,61 +20,66 @@ A reduction filter that returns the weighted sum of all values for each feature 
 class MPSNNReduceFeatureChannelsAndWeightsSum
 ```
 
+```objc
+@interface MPSNNReduceFeatureChannelsAndWeightsSum : MPSNNReduceBinary
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsnnreducefeaturechannelsandweightssum/init(device:).md)
-- [init(device: any MTLDevice, doWeightedSumByNonZeroWeights: Bool)](mpsnnreducefeaturechannelsandweightssum/init(device:doweightedsumbynonzeroweights:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnreducefeaturechannelsandweightssum/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsnnreducefeaturechannelsandweightssum/init%28device%29.md)
+- [init(device: any MTLDevice, doWeightedSumByNonZeroWeights: Bool)](./mpsnnreducefeaturechannelsandweightssum/init%28device,doweightedsumbynonzeroweights%29.md)
 ### Instance Properties
-- [var doWeightedSumByNonZeroWeights: Bool](mpsnnreducefeaturechannelsandweightssum/doweightedsumbynonzeroweights.md)
+- [var doWeightedSumByNonZeroWeights: Bool](./mpsnnreducefeaturechannelsandweightssum/doweightedsumbynonzeroweights.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNReduceBinary](mpsnnreducebinary.md)
+- [MPSNNReduceBinary](./mpsnnreducebinary.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSNNReduceRowMax](mpsnnreducerowmax.md)
+### Reduction Layers
+- [class MPSNNReduceRowMax](./mpsnnreducerowmax.md)
   A reduction filter that returns the maximum value for each row in an image.
-- [class MPSNNReduceRowMin](mpsnnreducerowmin.md)
+- [class MPSNNReduceRowMin](./mpsnnreducerowmin.md)
   A reduction filter that returns the minimum value for each row in an image.
-- [class MPSNNReduceRowSum](mpsnnreducerowsum.md)
+- [class MPSNNReduceRowSum](./mpsnnreducerowsum.md)
   A reduction filter that returns the sum of all values for each row in an image.
-- [class MPSNNReduceRowMean](mpsnnreducerowmean.md)
+- [class MPSNNReduceRowMean](./mpsnnreducerowmean.md)
   A reduction filter that returns the mean value for each row in an image.
-- [class MPSNNReduceColumnMax](mpsnnreducecolumnmax.md)
+- [class MPSNNReduceColumnMax](./mpsnnreducecolumnmax.md)
   A reduction filter that returns the maximum value for each column in an image.
-- [class MPSNNReduceColumnMin](mpsnnreducecolumnmin.md)
+- [class MPSNNReduceColumnMin](./mpsnnreducecolumnmin.md)
   A reduction filter that returns the minimum value for each column in an image.
-- [class MPSNNReduceColumnSum](mpsnnreducecolumnsum.md)
+- [class MPSNNReduceColumnSum](./mpsnnreducecolumnsum.md)
   A reduction filter that returns the sum of all values for each column in an image.
-- [class MPSNNReduceColumnMean](mpsnnreducecolumnmean.md)
+- [class MPSNNReduceColumnMean](./mpsnnreducecolumnmean.md)
   A reduction filter that returns the mean value for each column in an image.
-- [class MPSNNReduceFeatureChannelsMax](mpsnnreducefeaturechannelsmax.md)
+- [class MPSNNReduceFeatureChannelsMax](./mpsnnreducefeaturechannelsmax.md)
   A reduction filter that returns the maximum value for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsMin](mpsnnreducefeaturechannelsmin.md)
+- [class MPSNNReduceFeatureChannelsMin](./mpsnnreducefeaturechannelsmin.md)
   A reduction filter that returns the minimum value for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsSum](mpsnnreducefeaturechannelssum.md)
+- [class MPSNNReduceFeatureChannelsSum](./mpsnnreducefeaturechannelssum.md)
   A reduction filter that returns the sum of all values for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsMean](mpsnnreducefeaturechannelsmean.md)
+- [class MPSNNReduceFeatureChannelsMean](./mpsnnreducefeaturechannelsmean.md)
   A reduction filter that returns the mean value for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsArgumentMax](mpsnnreducefeaturechannelsargumentmax.md)
+- [class MPSNNReduceFeatureChannelsArgumentMax](./mpsnnreducefeaturechannelsargumentmax.md)
   A reduction filter that returns the index of the location of the maximum value for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsArgumentMin](mpsnnreducefeaturechannelsargumentmin.md)
+- [class MPSNNReduceFeatureChannelsArgumentMin](./mpsnnreducefeaturechannelsargumentmin.md)
   A reduction filter that returns the index of the location of the minimum value for each feature channel in an image.
-- [class MPSNNReduceFeatureChannelsAndWeightsMean](mpsnnreducefeaturechannelsandweightsmean.md)
+- [class MPSNNReduceFeatureChannelsAndWeightsMean](./mpsnnreducefeaturechannelsandweightsmean.md)
   A reduction filter that returns the weighted sum for each feature channel in an image.
 
 

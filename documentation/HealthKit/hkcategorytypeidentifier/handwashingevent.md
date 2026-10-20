@@ -1,7 +1,8 @@
 # handwashingEvent
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category sample type for handwashing events.
 
@@ -19,15 +20,20 @@ A category sample type for handwashing events.
 static let handwashingEvent: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHandwashingEvent;
+```
+
 #### Discussion
 
-Use this type to read or share handwashing events. When creating a handwashing event sample, set the value to [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md), and set the duration by specifying different start and end dates. The Health app uses the sample’s duration to determine if the handwashing event completed.
+Use this type to read or share handwashing events. When creating a handwashing event sample, set the value to [`HKCategoryValue.notApplicable`](../hkcategoryvalue/notapplicable.md), and set the duration by specifying different start and end dates. The Health app uses the sample’s duration to determine if the handwashing event completed.
 
 Apple Watch automatically detects and records handwashing events on Apple Watch Series 4 and later.
 
 ## See Also
 
-- [static let toothbrushingEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/toothbrushingevent.md)
+### Self care
+- [static let toothbrushingEvent: HKCategoryTypeIdentifier](./toothbrushingevent.md)
   A category sample type for toothbrushing events.
 
 

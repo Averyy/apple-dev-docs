@@ -1,7 +1,8 @@
 # ClosedRange.Index
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents a position in the collection.
 
@@ -21,6 +22,8 @@ A type that represents a position in the collection.
 enum Index
 ```
 
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
+
 #### Overview
 
 Valid indices consist of the position of every element and a “past the end” position that’s not valid for use as a subscript argument.
@@ -28,21 +31,21 @@ Valid indices consist of the position of every element and a “past the end” 
 ## Topics
 
 ### Enumeration Cases
-- [ClosedRange.Index.inRange(_:)](closedrange/index/inrange(_:).md)
-- [ClosedRange.Index.pastEnd](closedrange/index/pastend.md)
+- [ClosedRange.Index.inRange(_:)](./index/inrange%28_%29.md)
+- [ClosedRange.Index.pastEnd](./index/pastend.md)
 ### Default Implementations
-- [Comparable Implementations](closedrange/index/comparable-implementations.md)
-- [Equatable Implementations](closedrange/index/equatable-implementations.md)
-- [Hashable Implementations](closedrange/index/hashable-implementations.md)
+- [Comparable Implementations](./index/comparable-implementations.md)
+- [Equatable Implementations](./index/equatable-implementations.md)
+- [Hashable Implementations](./index/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

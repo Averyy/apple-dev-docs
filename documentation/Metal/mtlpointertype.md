@@ -1,7 +1,8 @@
 # MTLPointerType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a pointer.
 
@@ -19,50 +20,55 @@ A description of a pointer.
 class MTLPointerType
 ```
 
+```objc
+@interface MTLPointerType : MTLType
+```
+
 ## Topics
 
 ### Describing the pointer elements
-- [var alignment: Int](mtlpointertype/alignment.md)
+- [var alignment: Int](./mtlpointertype/alignment.md)
   The required byte alignment in memory for the element data.
-- [var dataSize: Int](mtlpointertype/datasize.md)
+- [var dataSize: Int](./mtlpointertype/datasize.md)
   The size, in bytes, of the element data.
-- [var elementType: MTLDataType](mtlpointertype/elementtype.md)
+- [var elementType: MTLDataType](./mtlpointertype/elementtype.md)
   The data type of the element data.
-- [var access: MTLBindingAccess](mtlpointertype/access.md)
+- [var access: MTLBindingAccess](./mtlpointertype/access.md)
   The function’s read/write access to the element data.
-- [var elementIsArgumentBuffer: Bool](mtlpointertype/elementisargumentbuffer.md)
+- [var elementIsArgumentBuffer: Bool](./mtlpointertype/elementisargumentbuffer.md)
   A Boolean value that indicates whether the element is an argument buffer.
 ### Obtaining details for complex pointer elements
-- [func elementArrayType() -> MTLArrayType?](mtlpointertype/elementarraytype.md)
+- [func elementArrayType() -> MTLArrayType?](./mtlpointertype/elementarraytype%28%29.md)
   Provides a description of the underlying array when the pointer points to an array.
-- [func elementStructType() -> MTLStructType?](mtlpointertype/elementstructtype.md)
+- [func elementStructType() -> MTLStructType?](./mtlpointertype/elementstructtype%28%29.md)
   Provides a description of the underlying struct when the pointer points to a struct.
 
 ## Relationships
 
 ### Inherits From
-- [MTLType](mtltype.md)
+- [MTLType](./mtltype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLType](mtltype.md)
+### Shader types
+- [class MTLType](./mtltype.md)
   A description of a data type.
-- [enum MTLDataType](mtldatatype.md)
+- [enum MTLDataType](./mtldatatype.md)
   The parameter type options for GPU functions, such as shaders and compute kernels.
-- [class MTLArrayType](mtlarraytype.md)
+- [class MTLArrayType](./mtlarraytype.md)
   A description of an array.
-- [class MTLStructType](mtlstructtype.md)
+- [class MTLStructType](./mtlstructtype.md)
   A description of a structure.
-- [class MTLStructMember](mtlstructmember.md)
+- [class MTLStructMember](./mtlstructmember.md)
   An instance that provides information about a field in a structure.
-- [class MTLTextureReferenceType](mtltexturereferencetype.md)
+- [class MTLTextureReferenceType](./mtltexturereferencetype.md)
   A description of a texture.
 
 

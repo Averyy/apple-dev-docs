@@ -1,7 +1,8 @@
 # cfurlBookmarkResolutionWithoutImplicitStartAccessing
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.2+
@@ -16,6 +17,10 @@
 
 ```swift
 static var cfurlBookmarkResolutionWithoutImplicitStartAccessing: CFURLBookmarkResolutionOptions { get }
+```
+
+```c
+kCFURLBookmarkResolutionWithoutImplicitStartAccessing
 ```
 
 

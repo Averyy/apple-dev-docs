@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Specify a specific port to use as the local endpoint, letting the system select the address.
@@ -28,6 +29,12 @@ For connections, this will be used to initiate traffic; for listeners, this will
 ## Parameters
 
 - `port`: The local port to require. Force a specific local port to be used.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func localPort(NWEndpoint.Port) -> Self](./localport%28_%29-9twr6.md)
+  Specify a specific port to use as the local endpoint, letting the system select the address.
 
 
 ---

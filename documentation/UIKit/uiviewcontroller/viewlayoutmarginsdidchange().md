@@ -1,7 +1,8 @@
 # viewLayoutMarginsDidChange()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to notify the view controller that the layout margins of its root view changed.
 
@@ -18,9 +19,13 @@ Called to notify the view controller that the layout margins of its root view ch
 func viewLayoutMarginsDidChange()
 ```
 
+```objc
+- (void) viewLayoutMarginsDidChange;
+```
+
 ## Mentions
 
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
 #### Discussion
 
@@ -28,11 +33,12 @@ Use this method to update the position of content based on the new margin values
 
 ## See Also
 
-- [Positioning content within layout margins](positioning-content-within-layout-margins.md)
+### Managing the view’s margins
+- [Positioning content within layout margins](../positioning-content-within-layout-margins.md)
   Position views so that they aren’t crowded by other content.
-- [var viewRespectsSystemMinimumLayoutMargins: Bool](uiviewcontroller/viewrespectssystemminimumlayoutmargins.md)
+- [var viewRespectsSystemMinimumLayoutMargins: Bool](./viewrespectssystemminimumlayoutmargins.md)
   A Boolean value indicating whether the view controller’s view uses the system-defined minimum layout margins.
-- [var systemMinimumLayoutMargins: NSDirectionalEdgeInsets](uiviewcontroller/systemminimumlayoutmargins.md)
+- [var systemMinimumLayoutMargins: NSDirectionalEdgeInsets](./systemminimumlayoutmargins.md)
   The minimum layout margins for the view controller’s root view.
 
 

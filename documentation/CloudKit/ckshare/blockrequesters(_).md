@@ -1,7 +1,8 @@
 # blockRequesters(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Blocks specified users from requesting access to this share.
 
@@ -20,9 +21,13 @@ Blocks specified users from requesting access to this share.
 func blockRequesters(_ requesters: [CKShare.AccessRequester])
 ```
 
+```objc
+- (void) blockRequesters:(NSArray<CKShareAccessRequester *> *) requesters;
+```
+
 #### Discussion
 
-Blocking prevents users from submitting future access requests and removes existing participants from the share. Blocked requesters appear in the [`blockedIdentities`](ckshare/blockedidentities.md) array.
+Blocking prevents users from submitting future access requests and removes existing participants from the share. Blocked requesters appear in the [`blockedIdentities`](./blockedidentities.md) array.
 
 To persist this change, save the share to the server after calling this method.
 
@@ -30,7 +35,7 @@ Only the share owner or an administrator can invoke this method. Attempts by oth
 
 ## Parameters
 
-- `requesters`: An array of [`CKShare.AccessRequester`](ckshare/accessrequester.md) objects to block.
+- `requesters`: An array of [`CKShare.AccessRequester`](./accessrequester.md) objects to block.
 
 
 ---

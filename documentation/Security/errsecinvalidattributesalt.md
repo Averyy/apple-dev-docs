@@ -1,7 +1,8 @@
 # errSecInvalidAttributeSalt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A salt attribute is not valid.
 
@@ -18,6 +19,10 @@ A salt attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeSalt: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeSalt
 ```
 
 

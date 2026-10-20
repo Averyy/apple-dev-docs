@@ -1,7 +1,8 @@
 # sendEvent(options:timeout:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an Apple event.
 
@@ -12,6 +13,10 @@ Sends an Apple event.
 
 ```swift
 func sendEvent(options sendOptions: NSAppleEventDescriptor.SendOptions = [], timeout timeoutInSeconds: TimeInterval) throws -> NSAppleEventDescriptor
+```
+
+```objc
+- (NSAppleEventDescriptor *) sendEventWithOptions:(NSAppleEventSendOptions) sendOptions timeout:(NSTimeInterval) timeoutInSeconds error:(NSError **) error;
 ```
 
 

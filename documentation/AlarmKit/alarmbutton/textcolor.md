@@ -1,7 +1,8 @@
 # textColor
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color for the text on the button.
 
@@ -18,11 +19,12 @@ var textColor: Color
 
 ## See Also
 
-- [init(text: LocalizedStringResource, textColor: Color, systemImageName: String)](alarmbutton/init(text:textcolor:systemimagename:).md)
+### Creating a button
+- [init(text: LocalizedStringResource, textColor: Color, systemImageName: String)](./init%28text,textcolor,systemimagename%29.md)
   Creates an alarm button.
-- [var systemImageName: String](alarmbutton/systemimagename.md)
+- [var systemImageName: String](./systemimagename.md)
   The name of the icon you use on the button.
-- [var text: LocalizedStringResource](alarmbutton/text.md)
+- [var text: LocalizedStringResource](./text.md)
   Text to show in a label on the button.
 
 

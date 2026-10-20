@@ -1,7 +1,8 @@
 # CKFetchShareParticipantsOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that converts user identities into share participants.
 
@@ -20,15 +21,19 @@ An operation that converts user identities into share participants.
 class CKFetchShareParticipantsOperation
 ```
 
+```objc
+@interface CKFetchShareParticipantsOperation : CKOperation
+```
+
 #### Overview
 
 Participants are a fundamental part of sharing in CloudKit. A participant provides information about a user and their participation in a share, which includes their identity, acceptance status, role, and permissions. The acceptance status manages the user’s visibility of the shared records. The role and permissions control what actions the user can perform on those records.
 
-You don’t create participants. Instead, create an instance of [`CKUserIdentity.LookupInfo`](ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and then use this operation to convert them into participants that you can add to a share. CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account.
+You don’t create participants. Instead, create an instance of [`CKUserIdentity.LookupInfo`](./ckuseridentity/lookupinfo-swift.class.md) for each user. Provide the user’s email address or phone number, and then use this operation to convert them into participants that you can add to a share. CloudKit limits the number of participants in a share to 100, and each participant must have an active iCloud account.
 
-> **Note**: [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
+> **Note**: [`UICloudSharingController`](../UIKit/uicloudsharingcontroller.md) provides a consistent and familiar experience for managing a share’s participants and their permissions. Only use this operation when you want to provide an app-specific approach.
 
-CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](ckuseridentity/hasicloudaccount.md) property to [`false`](https://developer.apple.com/documentation/swift/false). CloudKit associates a participant with their iCloud account when they accept the share.
+CloudKit queries iCloud for corresponding accounts as part of the operation. If it doesn’t find an account, the server updates the participant’s [`userIdentity`](./ckshare/participant/useridentity.md) to reflect that by setting the [`hasiCloudAccount`](./ckuseridentity/hasicloudaccount.md) property to [`false`](../Swift/false.md). CloudKit associates a participant with their iCloud account when they accept the share.
 
 Anyone with the URL of a public share can become a participant in that share. For a private share, the owner manages its participants. A participant can’t accept a private share unless the owner adds them first.
 
@@ -69,46 +74,47 @@ func fetchParticipants(for lookupInfos: [CKUserIdentity.LookupInfo],
 }
 ```
 
-The operation calls [`shareParticipantFetchedBlock`](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a participant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary. Use the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key to extract them.
+The operation calls [`shareParticipantFetchedBlock`](./ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md) once for each item you provide, and CloudKit returns the participant, or an error if it can’t generate a participant. CloudKit also batches per-participant errors. If the operation completes with errors, it returns a [`partialFailure`](./ckerror/partialfailure.md) error. The error stores the individual errors in its [`userInfo`](../Foundation/nserror/userinfo.md) dictionary. Use the [`CKPartialErrorsByItemIDKey`](./ckpartialerrorsbyitemidkey.md) key to extract them.
 
 ## Topics
 
 ### Creating an Operation
-- [init()](ckfetchshareparticipantsoperation/init.md)
+- [init()](./ckfetchshareparticipantsoperation/init%28%29.md)
   Creates an empty operation.
-- [convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])](ckfetchshareparticipantsoperation/init(useridentitylookupinfos:).md)
+- [convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])](./ckfetchshareparticipantsoperation/init%28useridentitylookupinfos%29.md)
   Creates an operation for generating share participants from the specified user data.
 ### Configuring the Operation
-- [var userIdentityLookupInfos: [CKUserIdentity.LookupInfo]?](ckfetchshareparticipantsoperation/useridentitylookupinfos.md)
+- [var userIdentityLookupInfos: [CKUserIdentity.LookupInfo]?](./ckfetchshareparticipantsoperation/useridentitylookupinfos.md)
   The user data for the participants.
 ### Processing the Operation’s Results
-- [var shareParticipantFetchedBlock: ((CKShare.Participant) -> Void)?](ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md)
+- [var shareParticipantFetchedBlock: ((CKShare.Participant) -> Void)?](./ckfetchshareparticipantsoperation/shareparticipantfetchedblock.md)
   The closure to execute as the operation generates individual participants.
-- [var fetchShareParticipantsCompletionBlock: (((any Error)?) -> Void)?](ckfetchshareparticipantsoperation/fetchshareparticipantscompletionblock.md)
+- [var fetchShareParticipantsCompletionBlock: (((any Error)?) -> Void)?](./ckfetchshareparticipantsoperation/fetchshareparticipantscompletionblock.md)
   The closure to execute when the operation finishes.
 ### Instance Properties
-- [var fetchShareParticipantsResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchshareparticipantsoperation/fetchshareparticipantsresultblock.md)
+- [var fetchShareParticipantsResultBlock: ((Result<Void, any Error>) -> Void)?](./ckfetchshareparticipantsoperation/fetchshareparticipantsresultblock.md)
   The closure to execute when the operation finishes.
-- [var perShareParticipantResultBlock: ((CKUserIdentity.LookupInfo, Result<CKShare.Participant, any Error>) -> Void)?](ckfetchshareparticipantsoperation/pershareparticipantresultblock.md)
+- [var perShareParticipantResultBlock: ((CKUserIdentity.LookupInfo, Result<CKShare.Participant, any Error>) -> Void)?](./ckfetchshareparticipantsoperation/pershareparticipantresultblock.md)
   The closure to execute as the operation generates individual participants.
 
 ## Relationships
 
 ### Inherits From
-- [CKOperation](ckoperation.md)
+- [CKOperation](./ckoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CKShare.Participant](ckshare/participant.md)
+### Participants
+- [CKShare.Participant](./ckshare/participant.md)
   An object that describes a user’s participation in a share.
 
 

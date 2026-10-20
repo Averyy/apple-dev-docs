@@ -1,7 +1,8 @@
 # LibraryPlaylistsTracksRelationshipResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a library playlists tracks relationship request.
 
@@ -10,35 +11,38 @@ The response to a library playlists tracks relationship request.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistsTracksRelationshipResponse
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryPlaylistsTracksRelationshipResponse.Meta](libraryplayliststracksrelationshipresponse/meta-data.dictionary.md)
+- [object LibraryPlaylistsTracksRelationshipResponse.Meta](./libraryplayliststracksrelationshipresponse/meta-data.dictionary.md)
   An object that represents the meta information for response to a library playlists tracks relationship request.
 
 ## Properties
 
-- `data` ([*]) *(required)*: The [`Songs`](songs.md) or [`MusicVideos`](musicvideos.md) included in the response for the request.
+- `data` ([*]) *(required)*: The [`Songs`](./songs.md) or [`MusicVideos`](./musicvideos.md) included in the response for the request.
+
+  **Allowed Types**: `LibraryMusicVideos`, `LibrarySongs`
 - `meta` (LibraryPlaylistsTracksRelationshipResponse.Meta): Meta data for this object.
 - `next` (string): The relative location to request the next page of resources in the collection, if additional resources are available for fetching.
 
 ## See Also
 
-- [object Playlists](playlists.md)
+### Handling the Response
+- [object Playlists](./playlists.md)
   A resource object that represents a playlist.
-- [object PlaylistsResponse](playlistsresponse.md)
+- [object PlaylistsResponse](./playlistsresponse.md)
   The response to a playlists request.
-- [object LibraryPlaylists](libraryplaylists.md)
+- [object LibraryPlaylists](./libraryplaylists.md)
   A resource object that represents a library playlist.
-- [object LibraryPlaylistsResponse](libraryplaylistsresponse.md)
+- [object LibraryPlaylistsResponse](./libraryplaylistsresponse.md)
   The response to a library playlists request.
-- [object LibraryPlaylistFolders](libraryplaylistfolders.md)
+- [object LibraryPlaylistFolders](./libraryplaylistfolders.md)
   A resource object that represents a library playlist folder.
-- [object LibraryPlaylistFoldersResponse](libraryplaylistfoldersresponse.md)
+- [object LibraryPlaylistFoldersResponse](./libraryplaylistfoldersresponse.md)
   The response to a library playlist folders request.
 
 

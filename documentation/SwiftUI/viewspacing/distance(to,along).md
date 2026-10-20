@@ -1,7 +1,8 @@
 # distance(to:along:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the preferred spacing distance along the specified axis to the view that returns a specified spacing preference.
 
@@ -26,7 +27,7 @@ A floating point value that represents the smallest distance in points between t
 
 #### Discussion
 
-Call this method from your implementation of [`Layout`](layout.md) protocol methods if you need to measure the default spacing between two views in a custom layout. Call the method on the first view’s preferences instance, and provide the second view’s preferences instance as input.
+Call this method from your implementation of [`Layout`](../layout.md) protocol methods if you need to measure the default spacing between two views in a custom layout. Call the method on the first view’s preferences instance, and provide the second view’s preferences instance as input.
 
 For example, consider two views that appear in a custom horizontal stack. The following distance call gets the preferred spacing between these views, where `spacing1` contains the preferences of a first view, and `spacing2` contains the preferences of a second view:
 

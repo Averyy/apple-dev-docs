@@ -1,7 +1,8 @@
 # init(fileURL:filename:type:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ init(fileURL: URL, filename: String? = nil, type: UTType? = nil)
 
 ## See Also
 
-- [init(data: Data, filename: String, type: UTType?)](intentfile/init(data:filename:type:).md)
+### Creating a file
+- [init(data: Data, filename: String, type: UTType?)](./init%28data,filename,type%29.md)
 
 
 ---

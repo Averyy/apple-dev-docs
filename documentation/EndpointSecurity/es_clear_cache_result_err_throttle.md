@@ -1,13 +1,14 @@
 # ES_CLEAR_CACHE_RESULT_ERR_THROTTLE
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Clearing the cache failed because the rate of calls was too high.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Clearing the cache failed because the rate of calls was too high.
 var ES_CLEAR_CACHE_RESULT_ERR_THROTTLE: es_clear_cache_result_t { get }
 ```
 
+```c
+ES_CLEAR_CACHE_RESULT_ERR_THROTTLE
+```
+
 #### Discussion
 
-If you receive this response, slow down the rate at which you make calls to [`es_clear_cache(_:)`](es_clear_cache(_:).md).
+If you receive this response, slow down the rate at which you make calls to [`es_clear_cache(_:)`](./es_clear_cache%28_%29.md).
 
 ## See Also
 
-- [var ES_CLEAR_CACHE_RESULT_ERR_INTERNAL: es_clear_cache_result_t](es_clear_cache_result_err_internal.md)
+### Errors
+- [var ES_CLEAR_CACHE_RESULT_ERR_INTERNAL: es_clear_cache_result_t](./es_clear_cache_result_err_internal.md)
   Communication with the Endpoint Security system failed.
 
 

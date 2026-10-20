@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of storage elements that use this type.
 
@@ -20,7 +21,8 @@ var count: Int { get }
 
 ## See Also
 
-- [var typeName: String](aimodelasset/summary/storagetype/typename.md)
+### Inspecting type details
+- [var typeName: String](./typename.md)
   The name of the scalar type.
 
 

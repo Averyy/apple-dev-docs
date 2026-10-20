@@ -1,7 +1,8 @@
 # CSSM_ACL_SUBJECT_TYPE_PREAUTH
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ACL_SUBJECT_TYPE_PREAUTH: Int { get }
+```
+
+```c
+CSSM_ACL_SUBJECT_TYPE_PREAUTH
 ```
 
 

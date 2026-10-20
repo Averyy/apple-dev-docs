@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeamUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify a team.
 
@@ -10,14 +11,14 @@ The request body you use to modify a team.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeamUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingTeamUpdateRequest.Data](gamecentermatchmakingteamupdaterequest/data-data.dictionary.md)
+- [object GameCenterMatchmakingTeamUpdateRequest.Data](./gamecentermatchmakingteamupdaterequest/data-data.dictionary.md)
   The data structure of the request body you use to modify a team.
 
 ## Properties
@@ -26,13 +27,14 @@ object GameCenterMatchmakingTeamUpdateRequest
 
 ## See Also
 
-- [object GameCenterMatchmakingTeamCreateRequest](gamecentermatchmakingteamcreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingTeamCreateRequest](./gamecentermatchmakingteamcreaterequest.md)
   The request body you use to create a team.
-- [object GameCenterMatchmakingTeamResponse](gamecentermatchmakingteamresponse.md)
+- [object GameCenterMatchmakingTeamResponse](./gamecentermatchmakingteamresponse.md)
   The response body for endpoints that create or modify a team.
-- [object GameCenterMatchmakingTeamsResponse](gamecentermatchmakingteamsresponse.md)
+- [object GameCenterMatchmakingTeamsResponse](./gamecentermatchmakingteamsresponse.md)
   The response body for endpoints that get multiple teams.
-- [object GameCenterMatchmakingTeam](gamecentermatchmakingteam.md)
+- [object GameCenterMatchmakingTeam](./gamecentermatchmakingteam.md)
   A team configuration within a Game Center matchmaking rule set, defining team size and composition rules.
 
 

@@ -1,7 +1,8 @@
 # init(positionIterations:velocityIterations:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a solver iterations configuration.
 

@@ -1,7 +1,8 @@
 # capabilities
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capabilities that the zone supports.
 
@@ -10,7 +11,7 @@ The capabilities that the zone supports.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,17 +21,22 @@ The capabilities that the zone supports.
 var capabilities: CKRecordZone.Capabilities { get }
 ```
 
+```objc
+@property (assign, readonly) CKRecordZoneCapabilities capabilities;
+```
+
 #### Discussion
 
 The server determines the capabilities of the zone and sets the value of this property when you save the record zone. Always check this property before performing tasks that require a specific capability.
 
-Default zones don’t support any special capabilities. Custom zones in a private database support the options that [`CKRecordZone.Capabilities`](ckrecordzone/capabilities-swift.struct.md) provides.
+Default zones don’t support any special capabilities. Custom zones in a private database support the options that [`CKRecordZone.Capabilities`](./capabilities-swift.struct.md) provides.
 
 ## See Also
 
-- [var zoneID: CKRecordZone.ID](ckrecordzone/zoneid.md)
+### Getting the Zone Attributes
+- [var zoneID: CKRecordZone.ID](./zoneid.md)
   The unique ID of the zone.
-- [CKRecordZone.Capabilities](ckrecordzone/capabilities-swift.struct.md)
+- [CKRecordZone.Capabilities](./capabilities-swift.struct.md)
   The capabilities that a record zone supports.
 
 

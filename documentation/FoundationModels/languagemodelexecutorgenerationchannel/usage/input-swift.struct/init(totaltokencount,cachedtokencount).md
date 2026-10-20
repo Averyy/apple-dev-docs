@@ -1,7 +1,8 @@
 # init(totalTokenCount:cachedTokenCount:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates input token counts for the transcript submitted to the model.
 

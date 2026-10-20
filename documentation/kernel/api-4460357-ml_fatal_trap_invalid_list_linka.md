@@ -1,14 +1,15 @@
 # ml_fatal_trap_invalid_list_linkage
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_fatal_trap_invalid_list_linkage(unsigned long e);
 ```
 

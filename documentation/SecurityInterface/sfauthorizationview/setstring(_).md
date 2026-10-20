@@ -1,7 +1,8 @@
 # setString(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the requested-right string to use with the default authorization rights set.
 
@@ -14,9 +15,13 @@ Sets the requested-right string to use with the default authorization rights set
 func setString(_ authorizationString: AuthorizationString!)
 ```
 
+```objc
+- (void) setString:(AuthorizationString) authorizationString;
+```
+
 #### Discussion
 
-This is a convenience method that creates an authorization rights set when you specify only the name of the requested right. The requested-right string is displayed in the Details pane of the user authentication dialog box. Either this method or the [`setAuthorizationRights(_:)`](sfauthorizationview/setauthorizationrights(_:).md) method must be called before the view displays correctly.
+This is a convenience method that creates an authorization rights set when you specify only the name of the requested right. The requested-right string is displayed in the Details pane of the user authentication dialog box. Either this method or the [`setAuthorizationRights(_:)`](./setauthorizationrights%28_%29.md) method must be called before the view displays correctly.
 
 ## Parameters
 
@@ -24,18 +29,20 @@ This is a convenience method that creates an authorization rights set when you s
 
 ## See Also
 
-- [Authorization Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995)
-- [func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!](sfauthorizationview/authorizationrights.md)
+### Related Documentation
+- [Authorization Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995)
+- [func authorizationRights() -> UnsafeMutablePointer<AuthorizationRights>!](./authorizationrights%28%29.md)
   Returns the authorization rights for this view.
-- [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](sfauthorizationview/setauthorizationrights(_:).md)
+### Setting up the authorization view
+- [func setAuthorizationRights(UnsafePointer<AuthorizationRights>!)](./setauthorizationrights%28_%29.md)
   Sets the authorization rights for this view.
-- [func setAutoupdate(Bool)](sfauthorizationview/setautoupdate(_:).md)
+- [func setAutoupdate(Bool)](./setautoupdate%28_%29.md)
   Sets the authorization view to update itself automatically.
-- [func setAutoupdate(Bool, interval: TimeInterval)](sfauthorizationview/setautoupdate(_:interval:).md)
+- [func setAutoupdate(Bool, interval: TimeInterval)](./setautoupdate%28_,interval%29.md)
   Sets the authorization view to update itself at a specific interval.
-- [func setFlags(AuthorizationFlags)](sfauthorizationview/setflags(_:).md)
+- [func setFlags(AuthorizationFlags)](./setflags%28_%29.md)
   Sets the current authorization flags for the view.
-- [func setEnabled(Bool)](sfauthorizationview/setenabled(_:).md)
+- [func setEnabled(Bool)](./setenabled%28_%29.md)
   Sets the current state of the authorization view.
 
 

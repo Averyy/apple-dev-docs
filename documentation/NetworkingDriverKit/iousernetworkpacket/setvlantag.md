@@ -1,14 +1,15 @@
 # setVlanTag
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 void setVlanTag(uint16_t vlanTag);
 ```
 

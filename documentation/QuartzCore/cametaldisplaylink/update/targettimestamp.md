@@ -1,7 +1,8 @@
 # targetTimestamp
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A deadline that indicates when your app needs to finish rendering to the drawable.
 
@@ -19,13 +20,18 @@ A deadline that indicates when your app needs to finish rendering to the drawabl
 var targetTimestamp: CFTimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CFTimeInterval targetTimestamp;
+```
+
 #### Discussion
 
-Your app needs to call the [`drawable`](cametaldisplaylink/update/drawable.md) instance’s [`present()`](https://developer.apple.com/documentation/metal/mtldrawable/present()) method before the deadline. GPU rendering can continue after this time, based on [`preferredFrameLatency`](cametaldisplaylink/preferredframelatency.md). For more information on timing your app’s rendering, see [`metalDisplayLink(_:needsUpdate:)`](cametaldisplaylinkdelegate/metaldisplaylink(_:needsupdate:).md).
+Your app needs to call the [`drawable`](./drawable.md) instance’s [`present()`](../../../Metal/mtldrawable/present%28%29.md) method before the deadline. GPU rendering can continue after this time, based on [`preferredFrameLatency`](../preferredframelatency.md). For more information on timing your app’s rendering, see [`metalDisplayLink(_:needsUpdate:)`](../../cametaldisplaylinkdelegate/metaldisplaylink%28_,needsupdate%29.md).
 
 ## See Also
 
-- [var drawable: any CAMetalDrawable](cametaldisplaylink/update/drawable.md)
+### Drawing the Next Frame
+- [var drawable: any CAMetalDrawable](./drawable.md)
   The Metal drawable your app uses to render the next frame.
 
 

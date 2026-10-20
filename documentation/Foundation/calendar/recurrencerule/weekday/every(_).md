@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Weekday.every(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Repeat on every weekday
 

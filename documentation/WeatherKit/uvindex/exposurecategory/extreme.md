@@ -1,7 +1,8 @@
 # UVIndex.ExposureCategory.extreme
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The UV index is extreme.
 

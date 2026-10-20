@@ -1,7 +1,8 @@
 # cameraBoundary
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The boundary of the area within which the map view’s center needs to remain.
 
@@ -20,17 +21,22 @@ The boundary of the area within which the map view’s center needs to remain.
 var cameraBoundary: MKMapView.CameraBoundary? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKMapCameraBoundary * cameraBoundary;
+```
+
 ## See Also
 
-- [func setCameraBoundary(MKMapView.CameraBoundary?, animated: Bool)](mkmapview/setcameraboundary(_:animated:).md)
+### Constraining the map view
+- [func setCameraBoundary(MKMapView.CameraBoundary?, animated: Bool)](./setcameraboundary%28_,animated%29.md)
   Sets the camera boundary for the map view, specifying whether to use animation.
-- [func setCameraZoomRange(MKMapView.CameraZoomRange?, animated: Bool)](mkmapview/setcamerazoomrange(_:animated:).md)
+- [func setCameraZoomRange(MKMapView.CameraZoomRange?, animated: Bool)](./setcamerazoomrange%28_,animated%29.md)
   Sets the camera zoom range for the map view, specifying whether to use animation.
-- [var cameraZoomRange: MKMapView.CameraZoomRange!](mkmapview/camerazoomrange-swift.property.md)
+- [var cameraZoomRange: MKMapView.CameraZoomRange!](./camerazoomrange-swift.property.md)
   The zoom range to apply to the map view.
-- [MKMapView.CameraBoundary](mkmapview/cameraboundary-swift.class.md)
+- [MKMapView.CameraBoundary](./cameraboundary-swift.class.md)
   A boundary of an area within which the map’s center needs to remain.
-- [MKMapView.CameraZoomRange](mkmapview/camerazoomrange-swift.class.md)
+- [MKMapView.CameraZoomRange](./camerazoomrange-swift.class.md)
   A camera zoom range that limits the distances to which the user can zoom.
 
 

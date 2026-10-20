@@ -1,7 +1,8 @@
 # makeDecoder()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Make a PropertyListDecoder that can be used to decode into a Decodable type.
 

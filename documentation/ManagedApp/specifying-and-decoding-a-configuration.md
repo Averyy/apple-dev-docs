@@ -1,6 +1,7 @@
 # Specifying and decoding a configuration
 
-**Framework**: ManagedApp
+**Framework**: ManagedApp  
+**Role**: Article
 
 Publish a configuration specification and implement a decoder that parses and validates configuration provided by an MDM admin.
 
@@ -19,19 +20,19 @@ Your app can allow device management administrators (MDM admins) to configure pr
 
 You define the configurable options that your app offers. For example, your app can specify that the following data is configurable: a server URL that has a customizable region, a timeout, and a role property that selectively enables user interface based on a person’s job function. The following image illustrates such a configuration:
 
-![An entity-relationship diagram that contains a box titled Configuration. Inside the box resides three other boxes flowing downward that each contain a key/value pair. The upper key reads server with a value of https>//example.com/path/region. The middle key reads timeout with a value of 60. The lower key reads role with a value of Sales.](/images/com.apple.managedapp/specifying-and-decoding-a-configuration-2@2x.png)
+![An entity-relationship diagram that contains a box titled Configuration. Inside the box resides three other boxes flowing downward that each contain a key/value pair. The upper key reads server with a value of https>//example.com/path/region. The middle key reads timeout with a value of 60. The lower key reads role with a value of Sales.](https://developer.apple.com/tutorials/images/com.apple.managedapp/specifying-and-decoding-a-configuration-2@2x.png)
 
 You design the features that an MDM admin can customize for their deployment. Implement a decoder that parses a configuration based on your specification. To communicate the format to the admin, publish the specification in a place that they can access. The MDM admin configures their unique setup on their MDM server, which delivers the configuration to managed devices.
 
-The device receives a configuration from the server through [`Device Management`](https://developer.apple.com/documentation/devicemanagement). The MDM admin sets the configuration as needed and triggers the server to send it in the `AppConfig` key (or `ExtensionConfigs`, for app extensions) of an [`AppManaged`](https://developer.apple.com/documentation/devicemanagement/appmanaged) declaration. [`ManagedApp`](ManagedApp.md) ingests the configuration and passes it to your app after you call [`configurations(_:)`](managedappconfigurationprovider/configurations(_:).md) to provide the framework with your decoder.
+The device receives a configuration from the server through [Device Management](../DeviceManagement/DeviceManagement.md). The MDM admin sets the configuration as needed and triggers the server to send it in the `AppConfig` key (or `ExtensionConfigs`, for app extensions) of an [`AppManaged`](../DeviceManagement/appmanaged.md) declaration. [ManagedApp](./ManagedApp.md) ingests the configuration and passes it to your app after you call [`configurations(_:)`](./managedappconfigurationprovider/configurations%28_%29.md) to provide the framework with your decoder.
 
-![A flow chart with three actors and boxes containing text that represent actions and objects. The actors are, from left to right, App developer, iOS device, and MDM admin. The iOS device actor is split into two inner actors, with the actor at left labeled App and the actor at right labeled ManagedApp framework. Flow begins with three sequential boxes of the App developer actor, which read from top to bottom, Designs configuration specification, Implements decoder class, and Publishes specification. Flow continues to the right to two sequential boxes of the MDM admin actor, which read from top to bottom Reads specification, and Creates or updates configuration. Flow continues to the left to the iOS device actor on the ManagedApp framework side to a box labeled Ingests configuration. To the immediate left in the App column of the iOS device actor resides a box that reads Calls configuration(](/images/com.apple.managedapp/specifying-and-decoding-a-configuration-1@2x.png)
+![A flow chart with three actors and boxes containing text that represent actions and objects. The actors are, from left to right, App developer, iOS device, and MDM admin. The iOS device actor is split into two inner actors, with the actor at left labeled App and the actor at right labeled ManagedApp framework. Flow begins with three sequential boxes of the App developer actor, which read from top to bottom, Designs configuration specification, Implements decoder class, and Publishes specification. Flow continues to the right to two sequential boxes of the MDM admin actor, which read from top to bottom Reads specification, and Creates or updates configuration. Flow continues to the left to the iOS device actor on the ManagedApp framework side to a box labeled Ingests configuration. To the immediate left in the App column of the iOS device actor resides a box that reads Calls configuration(](https://developer.apple.com/tutorials/images/com.apple.managedapp/specifying-and-decoding-a-configuration-1@2x.png)
 
 The ingestion of a configuration, its decoding, and yielding of a decoded configuration object repeats as the MDM admin provides or updates the configuration at runtime.
 
-> **Note**: Create a configuration decoder to enable the customization of arbitrary properties.  For information about handling secure credentials such as passwords, certificates, and identities, see [`Accessing provisioned secrets with identifiers`](accessing-provisioned-secrets-with-identifiers.md).
+> **Note**: Create a configuration decoder to enable the customization of arbitrary properties.  For information about handling secure credentials such as passwords, certificates, and identities, see [Accessing provisioned secrets with identifiers](./accessing-provisioned-secrets-with-identifiers.md).
 
-#### Design a Configuration Specification
+#### Design a configuration specification
 
 Create a formal specification document for your app’s configuration. You can create a table or use the `appconfig.org` schema. A specification typically includes the following information for every property: key name, value type, whether the property is required, a default value, allowed values, and descriptive text. For example:
 
@@ -43,11 +44,11 @@ Create a formal specification document for your app’s configuration. You can c
 
 > ❗ **Important**: When designing your specification, keep the configuration small to facilitate fast transmission. For example, recommend that the MDM admin store any large files that your app needs on an asset server rather than as serialized data in the configuration and include any credentials needed to authenticate their download using a separate network request.
 
-#### Implement a Configuration Decoder
+#### Implement a configuration decoder
 
-When the device receives your configuration from the server, the framework hands the configuration to your app in the form of a [`Decoder`](https://developer.apple.com/documentation/swift/decoder). You author a [`Decodable`](https://developer.apple.com/documentation/swift/decodable) type that receives the decoder and parses out the properties according to your specification.
+When the device receives your configuration from the server, the framework hands the configuration to your app in the form of a [`Decoder`](../Swift/decoder.md). You author a [`Decodable`](../Swift/decodable.md) type that receives the decoder and parses out the properties according to your specification.
 
-Implement a [`Decodable`](https://developer.apple.com/documentation/swift/decodable) that defines your configuration layout. The following example type holds three custom properties, `server`, `timeout`, and `role`:
+Implement a [`Decodable`](../Swift/decodable.md) that defines your configuration layout. The following example type holds three custom properties, `server`, `timeout`, and `role`:
 
 ```swift
 struct MyAppConfiguration: Decodable {
@@ -92,13 +93,13 @@ extension MyAppConfiguration {
 }
 ```
 
-Only decode the incoming configuration in `init(from:)`. The framework enforces a timeout on decoding the configuration by throwing a [`ManagedAppConfigurationDecodingError`](managedappconfigurationdecodingerror.md) with the `timeout` code if your initializer takes too long to complete.
+Only decode the incoming configuration in `init(from:)`. The framework enforces a timeout on decoding the configuration by throwing a [`ManagedAppConfigurationDecodingError`](./managedappconfigurationdecodingerror.md) with the `timeout` code if your initializer takes too long to complete.
 
-#### Publish Your Configuration Specification
+#### Publish your configuration specification
 
 Provide your app’s specification document to MDM admins by storing it in a place they can access, such as by hosting it on your app website. Additionally, you can provide an example configuration that conforms to your specification. The following example property list has the configurable properties, `server`, `timeout`, and `role`:
 
-```None
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
     "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -117,9 +118,9 @@ Provide your app’s specification document to MDM admins by storing it in a pla
 </plist>
 ```
 
-The MDM admin sets the values as needed and stores the configuration on the MDM server for communication to managed devices using [`Device Management`](https://developer.apple.com/documentation/devicemanagement). The MDM server sends the configuration through the `AppConfig` key (or `ExtensionConfigs`, for app extensions) of an [`AppManaged`](https://developer.apple.com/documentation/devicemanagement/appmanaged) declaration. From the perspective of your app, the device and the [`ManagedApp`](ManagedApp.md) framework obtain your app’s configuration automatically.
+The MDM admin sets the values as needed and stores the configuration on the MDM server for communication to managed devices using [Device Management](../DeviceManagement/DeviceManagement.md). The MDM server sends the configuration through the `AppConfig` key (or `ExtensionConfigs`, for app extensions) of an [`AppManaged`](../DeviceManagement/appmanaged.md) declaration. From the perspective of your app, the device and the [ManagedApp](./ManagedApp.md) framework obtain your app’s configuration automatically.
 
-#### Access a Configuration Provider and Set Defaults
+#### Access a configuration provider and set defaults
 
 To supply your app access to the current configuration, implement a class that contains the framework’s configuration provider. For example:
 
@@ -178,7 +179,7 @@ class MyAppConfigurationProvider {
 }
 ```
 
-#### Validate Decoded Values and Throw Decoding Errors
+#### Validate decoded values and throw decoding errors
 
 Your configuration type needs to validate the values the admin supplies. Define valid ranges for properties as static additions to your custom type, for example, a lower bound on timeout:
 
@@ -197,7 +198,7 @@ Let the MDM admin know which values are valid by including allowable ranges in y
 | --- | --- | --- | --- | --- | --- |
 | timeout | integer | false | 60 | 5 | A timeout, in seconds, for the server. |
 
-If `timeout` isn’t in the allowable range, the following `guard` block throws a `MyAppConfigurationDecoderError`, with a specific [`ManagedAppConfigurationDecodingErrorCode`](managedappconfigurationdecodingerrorcode.md).
+If `timeout` isn’t in the allowable range, the following `guard` block throws a `MyAppConfigurationDecoderError`, with a specific [`ManagedAppConfigurationDecodingErrorCode`](./managedappconfigurationdecodingerrorcode.md).
 
 ```swift
 guard timeout >= MyAppConfiguration.minimumTimeout else {
@@ -217,7 +218,7 @@ extension MyAppConfiguration {
     static let timeoutTooLowErrorCode = ManagedAppConfigurationDecodingErrorCode(rawValue: 100)!
 ```
 
-#### Document Custom Errors for a Decoding Feedback Loop
+#### Document custom errors for a decoding feedback loop
 
 Include the errors in your specification so the MDM admin can understand custom error codes. For example, document a code for setting a timeout that’s too low:
 
@@ -225,15 +226,15 @@ Include the errors in your specification so the MDM admin can understand custom 
 | --- | --- | --- |
 | timeOutTooLowError | 100 | Server timeout is below the minimum allowed. |
 
-When the decoder finishes, the device reports the decoding results to the MDM server using Device Management [`Status items`](https://developer.apple.com/documentation/devicemanagement/status-items). On success, the device reports a valid state to the server. If the decoder throws an error and it conforms to [`ManagedAppConfigurationDecodingError`](managedappconfigurationdecodingerror.md), the device provides a status report with an invalid state to the server and logs the error in the device’s event log. The log includes the [`code`](managedappconfigurationdecodingerror/code.md) and [`message`](managedappconfigurationdecodingerror/message.md) properties. If the server receives an invalid state, the MDM admin can request device logs to understand the cause.
+When the decoder finishes, the device reports the decoding results to the MDM server using Device Management [Status items](../DeviceManagement/status-items.md). On success, the device reports a valid state to the server. If the decoder throws an error and it conforms to [`ManagedAppConfigurationDecodingError`](./managedappconfigurationdecodingerror.md), the device provides a status report with an invalid state to the server and logs the error in the device’s event log. The log includes the [`code`](./managedappconfigurationdecodingerror/code.md) and [`message`](./managedappconfigurationdecodingerror/message.md) properties. If the server receives an invalid state, the MDM admin can request device logs to understand the cause.
 
-If the error doesn’t conform to [`ManagedAppConfigurationDecodingError`](managedappconfigurationdecodingerror.md) or if the error code is reserved, the device reports a generic error.
+If the error doesn’t conform to [`ManagedAppConfigurationDecodingError`](./managedappconfigurationdecodingerror.md) or if the error code is reserved, the device reports a generic error.
 
-For more information on status reporting, see [`Leveraging the declarative management data model to scale devices`](https://developer.apple.com/documentation/devicemanagement/leveraging-the-declarative-management-data-model-to-scale-devices).
+For more information on status reporting, see [Leveraging the declarative management data model to scale devices](../DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices.md).
 
 > ❗ **Important**: Because the framework logs errors, don’t include sensitive information in error messages.
 
-#### Receive the Configuration and Any Updates
+#### Receive the configuration and any updates
 
 Inside your custom provider’s singleton initializer, receive a configuration:
 
@@ -251,15 +252,16 @@ For the lifetime of the task, the `for await` waits for an updated configuration
 
 > ❗ **Important**: Because the configuration can contain sensitive information, don’t log or displaying decoded portions of the configuration.
 
-#### Apply Configured Values
+#### Apply configured values
 
 After your app receives the configuration, it can adjust to the new information. For example if it receives a server URL, your app can request the URL and access the configurable asset or page it refers to. As another example, your app might reveal a Sales tab after learning that the person is a member of the sales team.
 
-![None](/images/com.apple.managedapp/specifying-and-decoding-a-configuration-3@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.managedapp/specifying-and-decoding-a-configuration-3@2x.png)
 
 ## See Also
 
-- [class ManagedAppConfigurationProvider](managedappconfigurationprovider.md)
+### Configuration
+- [class ManagedAppConfigurationProvider](./managedappconfigurationprovider.md)
   A class that provides configurations that an MDM admin provisions for a managed app or extension.
 
 

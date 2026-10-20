@@ -1,12 +1,15 @@
 # CLKComplicationTimelineEntry
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for the complication template object to display and the time to display it.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,48 +17,53 @@ A container for the complication template object to display and the time to disp
 class CLKComplicationTimelineEntry
 ```
 
+```objc
+@interface CLKComplicationTimelineEntry : NSObject
+```
+
 ## Mentions
 
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
 Each entry object represents a single data point along your complication’s timeline. You create and return timeline entries when asked to do so by ClockKit. When the date associated with a particular timeline entry occurs, ClockKit updates your complication’s interface with the data in the accompanying template object.
 
-You can assign a group identifier to timeline entries to control the behavior of transition animations during Time Travel. When two timeline entries have different values in their [`timelineAnimationGroup`](clkcomplicationtimelineentry/timelineanimationgroup.md) property, or when the values are `nil`, ClockKit animates the transition between those entries during Time Travel. When two entries have the same group value, no animation is created.
+You can assign a group identifier to timeline entries to control the behavior of transition animations during Time Travel. When two timeline entries have different values in their [`timelineAnimationGroup`](./clkcomplicationtimelineentry/timelineanimationgroup.md) property, or when the values are `nil`, ClockKit animates the transition between those entries during Time Travel. When two entries have the same group value, no animation is created.
 
 ## Topics
 
 ### Creating a Timeline Entry
-- [convenience init(date: Date, complicationTemplate: CLKComplicationTemplate)](clkcomplicationtimelineentry/init(date:complicationtemplate:).md)
+- [convenience init(date: Date, complicationTemplate: CLKComplicationTemplate)](./clkcomplicationtimelineentry/init%28date,complicationtemplate%29.md)
   Creates and returns a timeline entry with the specified date and complication data.
-- [convenience init(date: Date, complicationTemplate: CLKComplicationTemplate, timelineAnimationGroup: String?)](clkcomplicationtimelineentry/init(date:complicationtemplate:timelineanimationgroup:).md)
+- [convenience init(date: Date, complicationTemplate: CLKComplicationTemplate, timelineAnimationGroup: String?)](./clkcomplicationtimelineentry/init%28date,complicationtemplate,timelineanimationgroup%29.md)
   Creates and returns a timeline entry with the specified information.
 ### Setting the Entry Values
-- [var date: Date](clkcomplicationtimelineentry/date.md)
+- [var date: Date](./clkcomplicationtimelineentry/date.md)
   The time at which to display the entry.
-- [var complicationTemplate: CLKComplicationTemplate](clkcomplicationtimelineentry/complicationtemplate.md)
+- [var complicationTemplate: CLKComplicationTemplate](./clkcomplicationtimelineentry/complicationtemplate.md)
   The template containing the data to display in your complication.
-- [var timelineAnimationGroup: String?](clkcomplicationtimelineentry/timelineanimationgroup.md)
+- [var timelineAnimationGroup: String?](./clkcomplicationtimelineentry/timelineanimationgroup.md)
   The animation group to which the entry belongs.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationServer](clkcomplicationserver.md)
+### Other Symbols
+- [class CLKComplicationServer](./clkcomplicationserver.md)
   An object that manages the active complications for an app.
-- [class CLKComplication](clkcomplication.md)
+- [class CLKComplication](./clkcomplication.md)
   Metadata about a custom complication.
 
 

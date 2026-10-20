@@ -8,7 +8,7 @@ url: https://github.com/ml-explore/mlx-swift/blob/main/Source/MLX/Documentation.
 
 Array subscripts.
 
-``MLXArray`` supports all the same indexing (see <doc:indexing>) as 
+``MLXArray`` supports all the same indexing (see [Indexing](indexing.md)) as 
 the python `mx.array`, though in some cases they are written differently.
 In all cases both `MLXArray` and `mx.array` indexing strive to match
 [numpy indexing](https://numpy.org/doc/stable/user/basics.indexing.html).
@@ -66,7 +66,7 @@ let a2 = array[5]
 array[5] = MLXArray(100)
 ```
 
-The assignment is performed using <doc:broadcasting>:
+The assignment is performed using [Numpy Style Broadcasting](../Articles/broadcasting.md):
 
 ```swift
 var a = MLXArray(0 ..< 512, [8, 8, 8])
@@ -78,7 +78,7 @@ a[1] = MLXArray(7)
 ### Advanced Indexing
 
 [Numpy advanced indexing](https://numpy.org/doc/stable/user/basics.indexing.html#integer-array-indexing)
-is also usable.  The simplest form allows using an `MLXArray` as indices (see <doc:indexes>):
+is also usable.  The simplest form allows using an `MLXArray` as indices (see [Indexes](indexes.md)):
 
 ```swift
 // array with values in random order
@@ -96,7 +96,7 @@ More complex forms are also available if multiple arrays are passed.
 
 ### Negative Indexes
 
-There are a number of idiomatic indexing expressions from python and numpy that are supported.  <doc:converting-python>
+There are a number of idiomatic indexing expressions from python and numpy that are supported.  [Converting From Python](../Articles/converting-python.md)
 gives a table of common expressions.  This document seeks to explain some of them.
 
 In python a negative index is used to mean "from end of array".  Thus `array[-1]` reads the last element of the array.
@@ -243,4 +243,4 @@ array[.ellipsis, .newAxis]
 
 - ``MLXArray/take(_:axis:stream:)``
 - ``takeAlong(_:_:axis:stream:)``
-- <doc:converting-python>
+- [Converting From Python](../Articles/converting-python.md)

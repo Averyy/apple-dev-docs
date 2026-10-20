@@ -1,7 +1,8 @@
 # providesPreciseDurationAndTiming
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the asset provides precise duration and timing.
 
@@ -21,13 +22,14 @@ var providesPreciseDurationAndTiming: Bool { get }
 
 #### Discussion
 
-This property value is [`true`](https://developer.apple.com/documentation/swift/true) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](https://developer.apple.com/documentation/swift/false).
+This property value is [`true`](../../Swift/true.md) if you initialized the asset with the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, otherwise it’s [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var duration: CMTime](avmutablemovie/duration.md)
+### Accessing duration and timing
+- [var duration: CMTime](./duration.md)
   A time value that indicates the asset’s duration.
-- [var minimumTimeOffsetFromLive: CMTime](avmutablemovie/minimumtimeoffsetfromlive.md)
+- [var minimumTimeOffsetFromLive: CMTime](./minimumtimeoffsetfromlive.md)
   A time value that indicates how closely playback follows the latest live stream content.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map item detail view controller’s delegate.
 
@@ -16,6 +17,10 @@ The map item detail view controller’s delegate.
 
 ```swift
 weak var delegate: (any MKMapItemDetailViewControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<MKMapItemDetailViewControllerDelegate> delegate;
 ```
 
 

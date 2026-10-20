@@ -1,7 +1,8 @@
 # rangeInElement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range inside the text element relative to the document origin.
 
@@ -14,13 +15,18 @@ The range inside the text element relative to the document origin.
 var rangeInElement: NSTextRange { get }
 ```
 
+```objc
+@property (strong, readonly) NSTextRange * rangeInElement;
+```
+
 ## See Also
 
-- [var state: NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.property.md)
+### Getting element information
+- [var state: NSTextLayoutFragment.State](./state-swift.property.md)
   The layout information state.
-- [NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.enum.md)
+- [NSTextLayoutFragment.State](./state-swift.enum.md)
   Values that describe the possible layout states.
-- [var textElement: NSTextElement?](nstextlayoutfragment/textelement.md)
+- [var textElement: NSTextElement?](./textelement.md)
   The parent text element.
 
 

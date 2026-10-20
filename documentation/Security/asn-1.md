@@ -1,6 +1,7 @@
 # ASN.1
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Encode and decode Distinguished Encoding Rules (DER) and Basic Encoding Rules (BER) data streams.
 
@@ -25,25 +26,25 @@ import Security.SecAsn1Templates
 ## Topics
 
 ### Encoding
-- [typealias SecAsn1Item](secasn1item.md)
+- [typealias SecAsn1Item](./secasn1item.md)
   A structure holding DER encoded data.
-- [struct SecAsn1Template_struct](secasn1template_struct.md)
+- [struct SecAsn1Template_struct](./secasn1template_struct.md)
   A structure that defines one element of a BER or DER encoding.
-- [struct SecAsn1Template_struct](secasn1template_struct.md)
+- [struct SecAsn1Template_struct](./secasn1template_struct.md)
   A structure that defines one element of a BER or DER encoding.
-- [typealias SecAsn1TemplateChooser](secasn1templatechooser.md)
+- [typealias SecAsn1TemplateChooser](./secasn1templatechooser.md)
   Dynamically provides the sub-template to use during encode or decode.
-- [typealias SecAsn1TemplateChooserPtr](secasn1templatechooserptr.md)
+- [typealias SecAsn1TemplateChooserPtr](./secasn1templatechooserptr.md)
   A pointer to the template chooser function.
-- [Type Tags](type-tags.md)
+- [Type Tags](./type-tags.md)
   Recognize BER and DER values for ASN.1 identifier octets.
 ### OID Comparison
-- [typealias SecAsn1Oid](secasn1oid.md)
+- [typealias SecAsn1Oid](./secasn1oid.md)
   An object identifier.
 ### Public Key Info
-- [struct SecAsn1AlgId](secasn1algid.md)
+- [struct SecAsn1AlgId](./secasn1algid.md)
   A structure identifying an ASN.1 algorithm by its OID, and its corresponding parameters.
-- [struct SecAsn1PubKeyInfo](secasn1pubkeyinfo.md)
+- [struct SecAsn1PubKeyInfo](./secasn1pubkeyinfo.md)
   A structure containing a public key and its associated algorithm.
 
 

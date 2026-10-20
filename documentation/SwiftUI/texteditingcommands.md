@@ -1,7 +1,8 @@
 # TextEditingCommands
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A built-in group of commands for searching, editing, and transforming selections of text.
 
@@ -26,27 +27,28 @@ These commands are optional and can be explicitly requested by passing a value o
 ## Topics
 
 ### Creating the command group
-- [init()](texteditingcommands/init.md)
+- [init()](./texteditingcommands/init%28%29.md)
   A new value describing the built-in text-editing commands.
 
 ## Relationships
 
 ### Conforms To
-- [Commands](commands.md)
+- [Commands](./commands.md)
 
 ## See Also
 
-- [struct SidebarCommands](sidebarcommands.md)
+### Getting built-in command groups
+- [struct SidebarCommands](./sidebarcommands.md)
   A built-in set of commands for manipulating window sidebars.
-- [struct TextFormattingCommands](textformattingcommands.md)
+- [struct TextFormattingCommands](./textformattingcommands.md)
   A built-in set of commands for transforming the styles applied to selections of text.
-- [struct ToolbarCommands](toolbarcommands.md)
+- [struct ToolbarCommands](./toolbarcommands.md)
   A built-in set of commands for manipulating window toolbars.
-- [struct ImportFromDevicesCommands](importfromdevicescommands.md)
+- [struct ImportFromDevicesCommands](./importfromdevicescommands.md)
   A built-in set of commands that enables importing content from nearby devices.
-- [struct InspectorCommands](inspectorcommands.md)
+- [struct InspectorCommands](./inspectorcommands.md)
   A built-in set of commands for manipulating inspectors.
-- [struct EmptyCommands](emptycommands.md)
+- [struct EmptyCommands](./emptycommands.md)
   An empty group of commands.
 
 

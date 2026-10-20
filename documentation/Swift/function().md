@@ -1,7 +1,8 @@
 # function()
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Produces the name of the declaration in which it appears.
 
@@ -38,15 +39,16 @@ func myFunction() {
 
 ## See Also
 
-- [macro file<T>() -> T](file().md)
+### Getting Source Location Information
+- [macro file<T>() -> T](./file%28%29.md)
   Produces the path to the file in which it appears.
-- [macro fileID<T>() -> T](fileid().md)
+- [macro fileID<T>() -> T](./fileid%28%29.md)
   Produces a unique identifier for the source file in which the macro appears.
-- [macro filePath<T>() -> T](filepath().md)
+- [macro filePath<T>() -> T](./filepath%28%29.md)
   Produces the complete path to the file in which the macro appears.
-- [macro line<T>() -> T](line().md)
+- [macro line<T>() -> T](./line%28%29.md)
   Produces the line number on which it appears.
-- [macro column<T>() -> T](column().md)
+- [macro column<T>() -> T](./column%28%29.md)
   Produces the column number in which the macro begins.
 
 

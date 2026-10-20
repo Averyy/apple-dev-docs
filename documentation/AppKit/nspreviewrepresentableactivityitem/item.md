@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The app-specific item you want to share.
@@ -15,9 +16,13 @@ The app-specific item you want to share.
 var item: Any { get }
 ```
 
+```objc
+@property (strong, readonly) id item;
+```
+
 #### Discussion
 
-Use this property to provide the data you want to pass to the sharing service. The item must conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) or [`NSDocument`](nsdocument.md) object.
+Use this property to provide the data you want to pass to the sharing service. The item must conform to the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](../../Foundation/nsitemprovider.md) or [`NSDocument`](../nsdocument.md) object.
 
 
 ---

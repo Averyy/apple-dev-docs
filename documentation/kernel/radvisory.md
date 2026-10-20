@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct radvisory {
     ...
 };
@@ -17,8 +17,8 @@ struct radvisory {
 ## Topics
 
 ### Instance Properties
-- [ra_count](radvisory/1572511-ra_count.md)
-- [ra_offset](radvisory/1572587-ra_offset.md)
+- [ra_count](./radvisory/api-1572511-ra_count.md)
+- [ra_offset](./radvisory/api-1572587-ra_offset.md)
 
 
 ---

@@ -1,12 +1,15 @@
 # new()
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an empty full color image provider.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use factory methods that take parameters.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ Creates an empty full color image provider.
 class func new() -> Self
 ```
 
+```objc
++ (instancetype) new;
+```
+
 ## See Also
 
-- [init()](clkfullcolorimageprovider/init.md)
+### Creating Empty Image Providers
+- [init()](./init%28%29.md)
   Creates an empty full color image provider.
 
 

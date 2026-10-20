@@ -1,14 +1,15 @@
 # TestNamedConstructor
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 interface TestNamedConstructor
 ```
 

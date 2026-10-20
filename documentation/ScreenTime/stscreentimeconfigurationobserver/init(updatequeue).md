@@ -1,7 +1,8 @@
 # init(updateQueue:)
 
 **Framework**: Screen Time  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration observer that reports updates on the queue you specify.
 
@@ -15,6 +16,10 @@ Creates a configuration observer that reports updates on the queue you specify.
 
 ```swift
 init(updateQueue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithUpdateQueue:(dispatch_queue_t) updateQueue;
 ```
 
 ## Parameters

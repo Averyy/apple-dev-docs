@@ -1,7 +1,8 @@
 # es_new_descendants_client(_:_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Create a new ES client scoped to descendant processes only.
 
@@ -12,6 +13,10 @@ Create a new ES client scoped to descendant processes only.
 
 ```swift
 func es_new_descendants_client(_ client: UnsafeMutablePointer<OpaquePointer?>, _ handler: @escaping es_handler_block_t) -> es_new_client_result_t
+```
+
+```c
+extern es_new_client_result_t es_new_descendants_client(es_client_t **client, es_handler_block_t handler);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # DockAccessory.Identifier
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information that uniquely identifies the dock accessory.
 
@@ -20,39 +21,40 @@ struct Identifier
 ## Topics
 
 ### Getting properties
-- [let name: String](dockaccessory/identifier-swift.struct/name.md)
+- [let name: String](./identifier-swift.struct/name.md)
   The dock accessory’s name.
-- [let category: DockAccessory.Category](dockaccessory/identifier-swift.struct/category.md)
+- [let category: DockAccessory.Category](./identifier-swift.struct/category.md)
   The dock accessory’s category.
-- [let uuid: UUID](dockaccessory/identifier-swift.struct/uuid.md)
+- [let uuid: UUID](./identifier-swift.struct/uuid.md)
   The dock accessory’s unique identifier.
-- [var debugDescription: String](dockaccessory/identifier-swift.struct/debugdescription.md)
+- [var debugDescription: String](./identifier-swift.struct/debugdescription.md)
   The text description of the dock accessory state.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var firmwareVersion: String?](dockaccessory/firmwareversion.md)
+### Getting accessory information
+- [var firmwareVersion: String?](./firmwareversion.md)
   The firmware version of the dock accessory.
-- [var hardwareModel: String?](dockaccessory/hardwaremodel.md)
+- [var hardwareModel: String?](./hardwaremodel.md)
   The model of the dock accessory.
-- [let identifier: DockAccessory.Identifier](dockaccessory/identifier-swift.property.md)
+- [let identifier: DockAccessory.Identifier](./identifier-swift.property.md)
   The name and unique identifer of the dock accessory.
-- [DockAccessory.Category](dockaccessory/category.md)
+- [DockAccessory.Category](./category.md)
   Types of supported dock accesories.
-- [DockAccessory.State](dockaccessory/state.md)
+- [DockAccessory.State](./state.md)
   The state of a dock accessory.
-- [DockAccessory.StateChange](dockaccessory/statechange.md)
+- [DockAccessory.StateChange](./statechange.md)
   An event that indicates a change in the state of a dock accessory.
-- [DockAccessory.StateChanges](dockaccessory/statechanges.md)
+- [DockAccessory.StateChanges](./statechanges.md)
   An asynchronous sequence of dock accessory state changes.
 
 

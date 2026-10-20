@@ -1,17 +1,22 @@
 # textTab(forGlyphLocation:writingDirection:maxLocation:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text tab next closest to a given glyph location within the given parameters.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func textTab(forGlyphLocation glyphLocation: CGFloat, writingDirection direction: NSWritingDirection, maxLocation: CGFloat) -> NSTextTab?
+```
+
+```objc
+- (NSTextTab *) textTabForGlyphLocation:(CGFloat) glyphLocation writingDirection:(NSWritingDirection) direction maxLocation:(CGFloat) maxLocation;
 ```
 
 #### Return Value
@@ -20,7 +25,7 @@ The text tab next closest to `glyphLocation`, indexing in `direction` but not be
 
 #### Discussion
 
-The typesetter calls this method whenever it finds a tab character. To determine the width to advance the next glyph, the typesetter examines the [`NSParagraphStyle`](nsparagraphstyle.md) object’s tab array and the default tab interval.
+The typesetter calls this method whenever it finds a tab character. To determine the width to advance the next glyph, the typesetter examines the [`NSParagraphStyle`](../nsparagraphstyle.md) object’s tab array and the default tab interval.
 
 ## Parameters
 

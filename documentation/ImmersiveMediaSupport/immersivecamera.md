@@ -1,7 +1,8 @@
 # ImmersiveCamera
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds the required information for an immersive media camera to process and render video frames.
 
@@ -25,47 +26,48 @@ This type holds information including the camera identifier, type, default prese
 ## Topics
 
 ### Initializers
-- [init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType, presentationFrameRate: Int, pose: Pose3DFloat)](immersivecamera/init(id:calibration:type:presentationframerate:pose:).md)
+- [init(id: String, calibration: ImmersiveCameraCalibration, type: ImmersiveCamera.CameraType, presentationFrameRate: Int, pose: Pose3DFloat)](./immersivecamera/init%28id,calibration,type,presentationframerate,pose%29.md)
 ### Instance Properties
-- [var calibration: ImmersiveCameraCalibration](immersivecamera/calibration.md)
+- [var calibration: ImmersiveCameraCalibration](./immersivecamera/calibration.md)
   Calibration details for this camera.
-- [var id: String](immersivecamera/id.md)
+- [var id: String](./immersivecamera/id.md)
   A unique and non empty identifier string for this immersive camera.
-- [var pose: Pose3DFloat](immersivecamera/pose.md)
+- [var pose: Pose3DFloat](./immersivecamera/pose.md)
   The pose of this immersive camera.
-- [var presentationFrameRate: Int](immersivecamera/presentationframerate.md)
+- [var presentationFrameRate: Int](./immersivecamera/presentationframerate.md)
   Presentation frame rate suited for this immersive camera.
-- [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
+- [var type: ImmersiveCamera.CameraType](./immersivecamera/type.md)
   Represents the type of the camera.
 ### Type Properties
-- [static let defaultPresentationFrameRate: Int](immersivecamera/defaultpresentationframerate.md)
+- [static let defaultPresentationFrameRate: Int](./immersivecamera/defaultpresentationframerate.md)
   Default presentation frame rate for any immersive camera.
 ### Enumerations
-- [ImmersiveCamera.CameraType](immersivecamera/cameratype.md)
+- [ImmersiveCamera.CameraType](./immersivecamera/cameratype.md)
   A value that represents the type of immersive camera.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [actor VenueDescriptor](venuedescriptor.md)
+### Camera metadata
+- [actor VenueDescriptor](./venuedescriptor.md)
   The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+- [struct ImmersiveCameraLensDefinition](./immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
-- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+- [struct ImmersiveCameraCalibration](./immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [enum ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](./immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
-- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+- [struct ImmersiveDynamicMask](./immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [class ImmersiveImageMask](immersiveimagemask.md)
+- [class ImmersiveImageMask](./immersiveimagemask.md)
   An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 

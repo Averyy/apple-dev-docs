@@ -1,7 +1,8 @@
 # init(localized:defaultValue:options:table:bundle:locale:comment:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope, using a default value if necessary.
 
@@ -22,7 +23,7 @@ init<S>(localized key: StaticString, defaultValue: String.LocalizationValue, opt
 
 #### Discussion
 
-Use this initializer instead of [`init(localized:options:table:bundle:locale:comment:including:)`](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8uknv.md) if you prefer to use a symbolic string key, rather than use the development language’s string as the key.
+Use this initializer instead of [`init(localized:options:table:bundle:locale:comment:including:)`](./init%28localized,options,table,bundle,locale,comment,including%29-8uknv.md) if you prefer to use a symbolic string key, rather than use the development language’s string as the key.
 
 ## Parameters
 
@@ -37,9 +38,10 @@ Use this initializer instead of [`init(localized:options:table:bundle:locale:com
 
 ## See Also
 
-- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:)-4n8e2.md)
+### Creating a Localized Attributed String with a Default Value
+- [init(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./init%28localized,defaultvalue,options,table,bundle,locale,comment%29-4n8e2.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, using a default value if necessary.
-- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:defaultvalue:options:table:bundle:locale:comment:including:)-9gjtg.md)
+- [init<S>(localized: StaticString, defaultValue: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./init%28localized,defaultvalue,options,table,bundle,locale,comment,including%29-9gjtg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies, using a default value if necessary.
 
 

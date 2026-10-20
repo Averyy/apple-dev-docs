@@ -1,7 +1,8 @@
 # highlightDuration
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time it takes for a highlight to fade away, in seconds.
 
@@ -16,17 +17,22 @@ The time it takes for a highlight to fade away, in seconds.
 var highlightDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval highlightDuration;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tcbuttondescriptor/contents.md)
+### Inspecting the descriptor
+- [var contents: TCControlContents?](./contents.md)
   The contents for the button in its normal state.
-- [var zIndex: Int](tcbuttondescriptor/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the button. A lower z-index is drawn first.
-- [var label: TCControlLabel](tcbuttondescriptor/label.md)
+- [var label: TCControlLabel](./label.md)
   The label you associate with the button.
-- [var offset: CGPoint](tcbuttondescriptor/offset.md)
+- [var offset: CGPoint](./offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcbuttondescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size (width, height) of the button in points.
 
 

@@ -1,24 +1,26 @@
 # Profile.Relationships.Devices.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object Profile.Relationships.Devices.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `devices`
 
 ## See Also
 
-- [object RelationshipLinks](relationshiplinks.md)
+### Objects
+- [object RelationshipLinks](../../../relationshiplinks.md)
   The links to the related data and the relationship’s self-link.
 
 

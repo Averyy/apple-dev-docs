@@ -1,19 +1,21 @@
 # Base media information header atom
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An atom that indicates that this media information atom pertains to a base media.
 
 #### Overview
 
-See [`Base media information header atom`](base_media_information_header_atom.md).
+See [`Base media information header atom`](../base_media_information_header_atom.md).
 
 ## See Also
 
-- [Size](base_media_information_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this base media information atom.
-- [Type](base_media_information_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

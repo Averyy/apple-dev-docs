@@ -1,7 +1,8 @@
 # triangleHit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information the system provides when a ray touches or intersects a triangle mesh.
 

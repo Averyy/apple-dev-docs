@@ -1,7 +1,8 @@
 # MPSGraphReductionMode.max
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Max
 
@@ -17,6 +18,10 @@ Max
 
 ```swift
 case max
+```
+
+```c
+MPSGraphReductionModeMax
 ```
 
 

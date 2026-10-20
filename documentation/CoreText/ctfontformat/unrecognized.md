@@ -1,18 +1,19 @@
 # CTFontFormat.unrecognized
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The font is not a recognized format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The font is not a recognized format.
 case unrecognized
 ```
 
+```c
+kCTFontFormatUnrecognized
+```
+
 ## See Also
 
-- [CTFontFormat.openTypePostScript](ctfontformat/opentypepostscript.md)
+### Font Formats
+- [CTFontFormat.openTypePostScript](./opentypepostscript.md)
   The font is an OpenType format containing PostScript data.
-- [CTFontFormat.openTypeTrueType](ctfontformat/opentypetruetype.md)
+- [CTFontFormat.openTypeTrueType](./opentypetruetype.md)
   The font is an OpenType format containing TrueType data.
-- [CTFontFormat.trueType](ctfontformat/truetype.md)
+- [CTFontFormat.trueType](./truetype.md)
   The font is a recognized TrueType format.
-- [CTFontFormat.postScript](ctfontformat/postscript.md)
+- [CTFontFormat.postScript](./postscript.md)
   The font is a recognized PostScript format.
-- [CTFontFormat.bitmap](ctfontformat/bitmap.md)
+- [CTFontFormat.bitmap](./bitmap.md)
   The font is a bitmap-only format.
 
 

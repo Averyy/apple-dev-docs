@@ -1,7 +1,8 @@
 # starts(with:by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
 
@@ -32,7 +33,7 @@ The predicate must be an *equivalence relation* over the elements. That is, for 
 - `areEquivalent(a, b)` implies `areEquivalent(b, a)`. (Symmetry)
 - If `areEquivalent(a, b)` and `areEquivalent(b, c)` are both `true`, then `areEquivalent(a, c)` is also `true`. (Transitivity)
 
-> **Note**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
+> **Complexity**: O(*m*), where *m* is the lesser of the length of the sequence and the length of `possiblePrefix`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # UICellConfigurationState.DropState
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the cell’s drop state.
 
@@ -10,7 +11,7 @@ Constants that describe the cell’s drop state.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,34 +22,35 @@ enum DropState
 ## Topics
 
 ### Drop states
-- [UICellConfigurationState.DropState.none](uicellconfigurationstate-swift.struct/dropstate/none.md)
+- [UICellConfigurationState.DropState.none](./dropstate/none.md)
   The system hasn’t associated the cell with a drag session.
-- [UICellConfigurationState.DropState.notTargeted](uicellconfigurationstate-swift.struct/dropstate/nottargeted.md)
+- [UICellConfigurationState.DropState.notTargeted](./dropstate/nottargeted.md)
   A drag session is active and can perform a drop in the cell’s container, but the cell itself isn’t the drop target.
-- [UICellConfigurationState.DropState.targeted](uicellconfigurationstate-swift.struct/dropstate/targeted.md)
+- [UICellConfigurationState.DropState.targeted](./dropstate/targeted.md)
   The cell is the drop target for a drag session.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var isEditing: Bool](uicellconfigurationstate-swift.struct/isediting.md)
+### Managing cell configuration states
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the cell is in editing mode.
-- [var isSwiped: Bool](uicellconfigurationstate-swift.struct/isswiped.md)
+- [var isSwiped: Bool](./isswiped.md)
   A Boolean value that indicates whether the cell is in a swiped state.
-- [var isExpanded: Bool](uicellconfigurationstate-swift.struct/isexpanded.md)
+- [var isExpanded: Bool](./isexpanded.md)
   A Boolean value that indicates whether the cell is in an expanded state, such as in an outline.
-- [var isReordering: Bool](uicellconfigurationstate-swift.struct/isreordering.md)
+- [var isReordering: Bool](./isreordering.md)
   A Boolean value that indicates whether the cell is reordering.
-- [var cellDragState: UICellConfigurationState.DragState](uicellconfigurationstate-swift.struct/celldragstate.md)
+- [var cellDragState: UICellConfigurationState.DragState](./celldragstate.md)
   The cell’s drag state.
-- [var cellDropState: UICellConfigurationState.DropState](uicellconfigurationstate-swift.struct/celldropstate.md)
+- [var cellDropState: UICellConfigurationState.DropState](./celldropstate.md)
   The cell’s drop state.
-- [UICellConfigurationState.DragState](uicellconfigurationstate-swift.struct/dragstate.md)
+- [UICellConfigurationState.DragState](./dragstate.md)
   Constants that describe the cell’s drag state.
 
 

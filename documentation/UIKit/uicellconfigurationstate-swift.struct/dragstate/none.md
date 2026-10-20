@@ -1,7 +1,8 @@
 # UICellConfigurationState.DragState.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system hasn’t associated the cell with a drag session.
 
@@ -10,7 +11,7 @@ The system hasn’t associated the cell with a drag session.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ case none
 
 ## See Also
 
-- [UICellConfigurationState.DragState.lifting](uicellconfigurationstate-swift.struct/dragstate/lifting.md)
+### Drag states
+- [UICellConfigurationState.DragState.lifting](./lifting.md)
   A user interaction is lifting the cell, but it isn’t yet part of an active drag session.
-- [UICellConfigurationState.DragState.dragging](uicellconfigurationstate-swift.struct/dragstate/dragging.md)
+- [UICellConfigurationState.DragState.dragging](./dragging.md)
   The cell is part of an active drag session.
 
 

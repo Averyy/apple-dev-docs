@@ -1,7 +1,8 @@
 # InferenceValue.ViewRepresentable
 
 **Framework**: Core AI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can provide a read-only view of itself as an inference value.
 
@@ -21,16 +22,17 @@ protocol ViewRepresentable : ~Copyable
 ## Topics
 
 ### Creating a view
-- [func view() -> InferenceValue.View](inferencevalue/viewrepresentable/view.md)
+- [func view() -> InferenceValue.View](./viewrepresentable/view%28%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [NDArray](ndarray.md)
+- [NDArray](../ndarray.md)
 
 ## See Also
 
-- [InferenceValue.MutableViewRepresentable](inferencevalue/mutableviewrepresentable.md)
+### Adopting representable protocols
+- [InferenceValue.MutableViewRepresentable](./mutableviewrepresentable.md)
   A type that can provide a mutable view of itself as an inference value.
 
 

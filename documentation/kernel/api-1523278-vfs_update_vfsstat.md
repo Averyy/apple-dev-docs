@@ -1,7 +1,8 @@
 # vfs_update_vfsstat
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Update cached filesystem status information in the VFS mount structure.
 
@@ -10,11 +11,11 @@ Update cached filesystem status information in the VFS mount structure.
 
 ## Declaration
 
-```swift
+```c
 int vfs_update_vfsstat(mount_t mp, vfs_context_t ctx, int eventtype);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, or an error code for authentication failure or problem with call to filesystem to request information.
 

@@ -1,7 +1,8 @@
 # kSecCodeInfoCertificates
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is an array of certificates representing the certificate chain of the signing certificate as seen by the system.
 
@@ -15,11 +16,15 @@ A key whose value is an array of certificates representing the certificate chain
 let kSecCodeInfoCertificates: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoCertificates;
+```
+
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) array of [`SecCertificate`](seccertificate.md) objects that the system uses to process the signature. Absent for ad-hoc signed code. May be partial or absent in the case of error.
+The value is a [`CFArray`](../CoreFoundation/cfarray.md) array of [`SecCertificate`](./seccertificate.md) objects that the system uses to process the signature. Absent for ad-hoc signed code. May be partial or absent in the case of error.
 
-Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSSigningInformation`](./kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

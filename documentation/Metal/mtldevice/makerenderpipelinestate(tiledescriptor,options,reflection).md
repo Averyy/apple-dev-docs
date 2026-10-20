@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Synchronously creates a tile shader’s render pipeline state and reflection information.
@@ -20,21 +21,28 @@ Synchronously creates a tile shader’s render pipeline state and reflection inf
 func makeRenderPipelineState(tileDescriptor descriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedRenderPipelineReflection?>?) throws -> any MTLRenderPipelineState
 ```
 
+```objc
+- (id<MTLRenderPipelineState>) newRenderPipelineStateWithTileDescriptor:(MTLTileRenderPipelineDescriptor *) descriptor options:(MTLPipelineOption) options reflection:(MTLAutoreleasedRenderPipelineReflection*) reflection error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLRenderPipelineState`](mtlrenderpipelinestate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLRenderPipelineState`](../mtlrenderpipelinestate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md) instance.
-- `options`: An [`MTLPipelineOption`](mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
-- `reflection`: In Swift, an optional pointer to an [`MTLAutoreleasedRenderPipelineReflection`](mtlautoreleasedrenderpipelinereflection.md) optional. In Objective-C, a pointer to an [`MTLAutoreleasedRenderPipelineReflection`](mtlautoreleasedrenderpipelinereflection.md) instance. Pass `nil` in either language when you don’t need reflection data. Otherwise on return, if the method completes successfully, it assigns an [`MTLRenderPipelineReflection`](mtlrenderpipelinereflection.md) instance to the pointee, which contains the details about the function arguments.
+- `descriptor`: An [`MTLTileRenderPipelineDescriptor`](../mtltilerenderpipelinedescriptor.md) instance.
+- `options`: An [`MTLPipelineOption`](../mtlpipelineoption.md) instance that represents the reflection information you want the method to generate.
+- `reflection`: In Swift, an optional pointer to an [`MTLAutoreleasedRenderPipelineReflection`](../mtlautoreleasedrenderpipelinereflection.md) optional. In Objective-C, a pointer to an [`MTLAutoreleasedRenderPipelineReflection`](../mtlautoreleasedrenderpipelinereflection.md) instance.
+
+  Pass `nil` in either language when you don’t need reflection data. Otherwise on return, if the method completes successfully, it assigns an [`MTLRenderPipelineReflection`](../mtlrenderpipelinereflection.md) instance to the pointee, which contains the details about the function arguments.
 
 ## See Also
 
-- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](mtldevice/makerenderpipelinestate(tiledescriptor:options:).md)
+### Creating tile render pipeline states
+- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption) throws -> (any MTLRenderPipelineState, MTLRenderPipelineReflection?)](./makerenderpipelinestate%28tiledescriptor,options%29.md)
   Synchronously creates a tile shader’s render pipeline state and reflection information in a tuple.
-- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLRenderPipelineState)?, MTLRenderPipelineReflection?, (any Error)?) -> Void)](mtldevice/makerenderpipelinestate(tiledescriptor:options:completionhandler:).md)
+- [func makeRenderPipelineState(tileDescriptor: MTLTileRenderPipelineDescriptor, options: MTLPipelineOption, completionHandler: ((any MTLRenderPipelineState)?, MTLRenderPipelineReflection?, (any Error)?) -> Void)](./makerenderpipelinestate%28tiledescriptor,options,completionhandler%29.md)
   Asynchronously creates a tile shader’s render pipeline state and reflection information.
 
 

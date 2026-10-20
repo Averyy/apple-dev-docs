@@ -1,14 +1,15 @@
 # IOUSBHostCIDoorbell
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUSBHostCIDoorbell;
 ```
 

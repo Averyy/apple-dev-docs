@@ -1,7 +1,8 @@
 # UIImage.DynamicRange.standard
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Restrict the image content dynamic range to the standard range.
 
@@ -16,6 +17,10 @@ Restrict the image content dynamic range to the standard range.
 
 ```swift
 case standard
+```
+
+```c
+UIImageDynamicRangeStandard
 ```
 
 

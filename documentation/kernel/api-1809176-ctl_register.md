@@ -1,18 +1,19 @@
 # ctl_register
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 errno_t ctl_register(struct kern_ctl_reg *userkctl, kern_ctl_ref *kctlref);
 ```
 
-#### Return_value
+#### Return Value
 
 0 - Kernel control was registered. EINVAL - The registration structure was not valid. ENOMEM - There was insufficient memory. EEXIST - A controller with that id/unit is already registered.
 
@@ -27,11 +28,12 @@ Register a kernel control. This will enable clients to connect to the kernel con
 
 ## See Also
 
-- [ctl_deregister](1809161-ctl_deregister.md)
-- [ctl_enqueuedata](1809168-ctl_enqueuedata.md)
-- [ctl_enqueuembuf](1809171-ctl_enqueuembuf.md)
-- [ctl_getenqueuereadable](2919907-ctl_getenqueuereadable.md)
-- [ctl_getenqueuespace](1809173-ctl_getenqueuespace.md)
+### control
+- [ctl_deregister](./api-1809161-ctl_deregister.md)
+- [ctl_enqueuedata](./api-1809168-ctl_enqueuedata.md)
+- [ctl_enqueuembuf](./api-1809171-ctl_enqueuembuf.md)
+- [ctl_getenqueuereadable](./api-2919907-ctl_getenqueuereadable.md)
+- [ctl_getenqueuespace](./api-1809173-ctl_getenqueuespace.md)
 
 
 ---

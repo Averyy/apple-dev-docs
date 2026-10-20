@@ -1,7 +1,8 @@
 # SettingsCommand.Command.Settings.HostName
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that contains hostname settings.
 
@@ -10,7 +11,7 @@ A dictionary that contains hostname settings.
 
 ## Declaration
 
-```swift
+```
 object SettingsCommand.Command.Settings.HostName
 ```
 
@@ -19,37 +20,40 @@ object SettingsCommand.Command.Settings.HostName
 - `HostName` (string) *(required)*: The hostname for the device.
 - `Item` (string) *(required)*: The string that defines this setting type.
 
+  **Allowed Values**: `HostName`
+
 ## See Also
 
-- [object SettingsCommand.Command.Settings.AccessibilitySettings](settingscommand/command-data.dictionary/settings-data.dictionary/accessibilitysettings-data.dictionary.md)
+### Objects
+- [object SettingsCommand.Command.Settings.AccessibilitySettings](./accessibilitysettings-data.dictionary.md)
   A dictionary that contains settings for accessibility.
-- [object SettingsCommand.Command.Settings.AppAnalytics](settingscommand/command-data.dictionary/settings-data.dictionary/appanalytics-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.AppAnalytics](./appanalytics-data.dictionary.md)
   A dictionary that contains settings for sharing app analytics.
-- [object SettingsCommand.Command.Settings.ApplicationAttributes](settingscommand/command-data.dictionary/settings-data.dictionary/applicationattributes-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.ApplicationAttributes](./applicationattributes-data.dictionary.md)
   A dictionary that contains the attributes to apply to the app.
-- [object SettingsCommand.Command.Settings.ApplicationConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/applicationconfiguration-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.ApplicationConfiguration](./applicationconfiguration-data.dictionary.md)
   A dictionary that contains the configurations to apply to the app.
-- [object SettingsCommand.Command.Settings.Bluetooth](settingscommand/command-data.dictionary/settings-data.dictionary/bluetooth-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.Bluetooth](./bluetooth-data.dictionary.md)
   A dictionary that contains Bluetooth settings.
-- [object SettingsCommand.Command.Settings.DataRoaming](settingscommand/command-data.dictionary/settings-data.dictionary/dataroaming-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.DataRoaming](./dataroaming-data.dictionary.md)
   A dictionary that contains data roaming settings.
-- [object SettingsCommand.Command.Settings.DefaultApplications](settingscommand/command-data.dictionary/settings-data.dictionary/defaultapplications-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.DefaultApplications](./defaultapplications-data.dictionary.md)
   A dictionary that contains default application bundle identifiers for each default application type that can be set.
-- [object SettingsCommand.Command.Settings.DeviceName](settingscommand/command-data.dictionary/settings-data.dictionary/devicename-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.DeviceName](./devicename-data.dictionary.md)
   A dictionary that contains device name settings.
-- [object SettingsCommand.Command.Settings.DiagnosticSubmission](settingscommand/command-data.dictionary/settings-data.dictionary/diagnosticsubmission-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.DiagnosticSubmission](./diagnosticsubmission-data.dictionary.md)
   A dictionary that contains diagnostic submission settings.
-- [object SettingsCommand.Command.Settings.MDMOptions](settingscommand/command-data.dictionary/settings-data.dictionary/mdmoptions-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.MDMOptions](./mdmoptions-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
-- [object SettingsCommand.Command.Settings.MaximumResidentUsers](settingscommand/command-data.dictionary/settings-data.dictionary/maximumresidentusers-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.MaximumResidentUsers](./maximumresidentusers-data.dictionary.md)
   A dictionary that contains settings for maximum resident users.
-- [object SettingsCommand.Command.Settings.OrganizationInfo](settingscommand/command-data.dictionary/settings-data.dictionary/organizationinfo-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.OrganizationInfo](./organizationinfo-data.dictionary.md)
   A dictionary that contains settings about the organization operating the MDM server.
-- [object SettingsCommand.Command.Settings.PasscodeLockGracePeriod](settingscommand/command-data.dictionary/settings-data.dictionary/passcodelockgraceperiod-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.PasscodeLockGracePeriod](./passcodelockgraceperiod-data.dictionary.md)
   A dictionary that contains settings for the password lock grace period.
-- [object SettingsCommand.Command.Settings.PersonalHotspot](settingscommand/command-data.dictionary/settings-data.dictionary/personalhotspot-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.PersonalHotspot](./personalhotspot-data.dictionary.md)
   A dictionary that contains Personal Hotspot settings.
-- [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](settingscommand/command-data.dictionary/settings-data.dictionary/shareddeviceconfiguration-data.dictionary.md)
+- [object SettingsCommand.Command.Settings.SharedDeviceConfiguration](./shareddeviceconfiguration-data.dictionary.md)
   A dictionary that contains shared device configuration settings.
 
 

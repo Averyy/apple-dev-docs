@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassPhonebookAccess_PCE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassPhonebookAccess_PCE = 0x112E
 ```
 

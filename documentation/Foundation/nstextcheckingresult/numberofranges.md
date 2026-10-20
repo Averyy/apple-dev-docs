@@ -1,7 +1,8 @@
 # numberOfRanges
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of ranges.
 
@@ -20,19 +21,24 @@ Returns the number of ranges.
 var numberOfRanges: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger numberOfRanges;
+```
+
 #### Discussion
 
 A result must have at least one range, but may optionally have more (for example, to represent regular expression capture groups).
 
-Passing [`range(at:)`](nstextcheckingresult/range(at:).md) the value `0` always returns the value of the the [`range`](nstextcheckingresult/range.md) property.  Additional ranges, if any, will have indexes from `1` to `numberOfRanges``-1`.
+Passing [`range(at:)`](./range%28at%29.md) the value `0` always returns the value of the the [`range`](./range.md) property.  Additional ranges, if any, will have indexes from `1` to `numberOfRanges``-1`.
 
 ## See Also
 
-- [var range: NSRange](nstextcheckingresult/range.md)
+### Text Checking Type Range and Type
+- [var range: NSRange](./range.md)
   Returns the range of the result that the receiver represents.
-- [var resultType: NSTextCheckingResult.CheckingType](nstextcheckingresult/resulttype.md)
+- [var resultType: NSTextCheckingResult.CheckingType](./resulttype.md)
   Returns the text checking result type that the receiver represents.
-- [func range(at: Int) -> NSRange](nstextcheckingresult/range(at:).md)
+- [func range(at: Int) -> NSRange](./range%28at%29.md)
   Returns the result type that the range represents.
 
 

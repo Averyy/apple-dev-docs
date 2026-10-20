@@ -1,7 +1,8 @@
 # CompatibilityError.unsupportedRevision(_:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the revision is not supported.
 

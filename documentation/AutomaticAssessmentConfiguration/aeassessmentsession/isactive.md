@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether an assessment session is running.
 
@@ -17,11 +18,16 @@ A Boolean that indicates whether an assessment session is running.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isActive) BOOL active;
+```
+
 ## See Also
 
-- [func begin()](aeassessmentsession/begin.md)
+### Starting and stopping a session
+- [func begin()](./begin%28%29.md)
   Starts an assessment session.
-- [func end()](aeassessmentsession/end.md)
+- [func end()](./end%28%29.md)
   Ends an assessment session.
 
 

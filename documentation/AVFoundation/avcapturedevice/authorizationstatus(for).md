@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an authorization status that indicates whether the user grants the app permission to capture media of a particular type.
 
@@ -19,9 +20,13 @@ Returns an authorization status that indicates whether the user grants the app p
 class func authorizationStatus(for mediaType: AVMediaType) -> AVAuthorizationStatus
 ```
 
+```objc
++ (AVAuthorizationStatus) authorizationStatusForMediaType:(AVMediaType) mediaType;
+```
+
 ## Mentions
 
-- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
+- [Requesting authorization to capture and save media](../requesting-authorization-to-capture-and-save-media.md)
 
 #### Return Value
 
@@ -29,7 +34,7 @@ An authorization status value.
 
 #### Discussion
 
-A user must explicitly grant your app access to record audio or video. Call this method to determine your app’s current authorization status. If it returns a value of [`AVAuthorizationStatus.notDetermined`](avauthorizationstatus/notdetermined.md), call [`requestAccess(for:completionHandler:)`](avcapturedevice/requestaccess(for:completionhandler:).md) to prompt the user for capture permission.
+A user must explicitly grant your app access to record audio or video. Call this method to determine your app’s current authorization status. If it returns a value of [`AVAuthorizationStatus.notDetermined`](../avauthorizationstatus/notdetermined.md), call [`requestAccess(for:completionHandler:)`](./requestaccess%28for,completionhandler%29.md) to prompt the user for capture permission.
 
 After the user grants permission, the system remembers their choice and doesn’t prompt them again. However, a user can change their choice at any time in the Settings app.
 
@@ -37,13 +42,14 @@ After the user grants permission, the system remembers their choice and doesn’
 
 ## Parameters
 
-- `mediaType`: A media type for which to check the authorization status. The supported media types are [`video`](avmediatype/video.md) and [`audio`](avmediatype/audio.md).
+- `mediaType`: A media type for which to check the authorization status. The supported media types are [`video`](../avmediatype/video.md) and [`audio`](../avmediatype/audio.md).
 
 ## See Also
 
-- [class func requestAccess(for: AVMediaType, completionHandler: (Bool) -> Void)](avcapturedevice/requestaccess(for:completionhandler:).md)
+### Authorizing device access
+- [class func requestAccess(for: AVMediaType, completionHandler: (Bool) -> Void)](./requestaccess%28for,completionhandler%29.md)
   Requests the user’s permission to allow the app to capture media of a particular type.
-- [enum AVAuthorizationStatus](avauthorizationstatus.md)
+- [enum AVAuthorizationStatus](../avauthorizationstatus.md)
   Constants that indicate the status of an app’s authorization to capture media.
 
 

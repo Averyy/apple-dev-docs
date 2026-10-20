@@ -1,7 +1,8 @@
 # MTLForwardProgressUsage
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -17,24 +18,28 @@
 enum MTLForwardProgressUsage
 ```
 
+```c
+enum MTLForwardProgressUsage : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLForwardProgressUsage.automatic](mtlforwardprogressusage/automatic.md)
-- [MTLForwardProgressUsage.simdGroupParallel](mtlforwardprogressusage/simdgroupparallel.md)
-- [MTLForwardProgressUsage.weak](mtlforwardprogressusage/weak.md)
+- [MTLForwardProgressUsage.automatic](./mtlforwardprogressusage/automatic.md)
+- [MTLForwardProgressUsage.simdGroupParallel](./mtlforwardprogressusage/simdgroupparallel.md)
+- [MTLForwardProgressUsage.weak](./mtlforwardprogressusage/weak.md)
 ### Initializers
-- [init?(rawValue: Int)](mtlforwardprogressusage/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlforwardprogressusage/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

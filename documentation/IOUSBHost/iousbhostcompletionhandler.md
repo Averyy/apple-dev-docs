@@ -1,7 +1,8 @@
 # IOUSBHostCompletionHandler
 
 **Framework**: IOUSBHost  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The completion handler for asynchronous control, bulk, and interrupt transfers.
 
@@ -13,6 +14,10 @@ The completion handler for asynchronous control, bulk, and interrupt transfers.
 
 ```swift
 typealias IOUSBHostCompletionHandler = (IOReturn, Int) -> Void
+```
+
+```c
+typedef void (^)(int, unsigned long) IOUSBHostCompletionHandler;
 ```
 
 ## Parameters

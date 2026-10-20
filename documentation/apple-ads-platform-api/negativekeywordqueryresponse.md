@@ -1,7 +1,8 @@
 # NegativeKeywordQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response object for a negative keyword query, containing matched results and pagination metadata.
 
@@ -10,7 +11,7 @@ The response object for a negative keyword query, containing matched results and
 
 ## Declaration
 
-```swift
+```
 object NegativeKeywordQueryResponse
 ```
 
@@ -59,18 +60,18 @@ To scope results to a specific campaign or ad group, filter by status, or retrie
 ## Properties
 
 - `result` ([NegativeKeyword]): Array of matching `NegativeKeyword` objects. Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the query result, supporting offset-based navigation through large result sets. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error details if the request failed. See [`Error`](error.md). Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the query result, supporting offset-based navigation through large result sets. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error details if the request failed. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object NegativeKeyword](negativekeyword.md)
+- [object NegativeKeyword](./negativekeyword.md)
   A keyword exclusion that prevents ads from showing when a search query matches the excluded term.
-- [object NegativeKeywordCreate](negativekeywordcreate.md)
+- [object NegativeKeywordCreate](./negativekeywordcreate.md)
   The request body for creating a new negative keyword.
-- [object NegativeKeywordUpdate](negativekeywordupdate.md)
+- [object NegativeKeywordUpdate](./negativekeywordupdate.md)
   The request body for updating an existing negative keyword.
-- [object NegativeKeywordResponse](negativekeywordresponse.md)
+- [object NegativeKeywordResponse](./negativekeywordresponse.md)
   The response object for a negative keyword operation.
 
 

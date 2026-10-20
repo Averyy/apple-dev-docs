@@ -1,18 +1,19 @@
 # CFArrayCreateCopy(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new immutable array with the values from another array.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates a new immutable array with the values from another array.
 func CFArrayCreateCopy(_ allocator: CFAllocator!, _ theArray: CFArray!) -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFArrayCreateCopy(CFAllocatorRef allocator, CFArrayRef theArray);
+```
+
 #### Return Value
 
-A new CFArray object that contains the same values as `theArray`. Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new CFArray object that contains the same values as `theArray`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -30,12 +35,13 @@ The pointer values from `theArray` are copied into the new array; the values are
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new array and its storage for values. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `theArray`: The array to copy.
 
 ## See Also
 
-- [func CFArrayCreate(CFAllocator!, UnsafeMutablePointer<UnsafeRawPointer?>!, CFIndex, UnsafePointer<CFArrayCallBacks>!) -> CFArray!](cfarraycreate(_:_:_:_:).md)
+### Creating an Array
+- [func CFArrayCreate(CFAllocator!, UnsafeMutablePointer<UnsafeRawPointer?>!, CFIndex, UnsafePointer<CFArrayCallBacks>!) -> CFArray!](./cfarraycreate%28_,_,_,_%29.md)
   Creates a new immutable array with the given values.
 
 

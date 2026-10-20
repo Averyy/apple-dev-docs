@@ -1,7 +1,8 @@
 # BackgroundAsset.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a background asset resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a background asset resource.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAsset.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+- [App Store Connect API 4.3 release notes](../app-store-connect-api-4-3-release-notes.md)
 
 ## Properties
 
@@ -24,6 +25,8 @@ object BackgroundAsset.Attributes
 - `assetPackIdentifier` (string)
 - `createdDate` (date-time)
 - `usedBytes` (int64): The bytes that an asset pack occupies.
+
+  **Minimum**: `0`; **Maximum**: `9007199254740991`
 
 
 ---

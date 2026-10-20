@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant that represents the share’s owner.
 
@@ -21,13 +22,18 @@ The participant that represents the share’s owner.
 var owner: CKShare.Participant { get }
 ```
 
+```objc
+@property (copy, readonly) CKShareParticipant * owner;
+```
+
 ## See Also
 
-- [var currentUserParticipant: CKShare.Participant?](ckshare/currentuserparticipant.md)
+### Accessing the Share’s Attributes
+- [var currentUserParticipant: CKShare.Participant?](./currentuserparticipant.md)
   The participant that represents the current user.
-- [var participants: [CKShare.Participant]](ckshare/participants.md)
+- [var participants: [CKShare.Participant]](./participants.md)
   An array that contains the share’s participants.
-- [var url: URL?](ckshare/url.md)
+- [var url: URL?](./url.md)
   The Uniform Resource Locator (URL) for inviting participants to the share.
 
 

@@ -1,7 +1,8 @@
 # setAttributedTitle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the button title to the specified attributed string.
 
@@ -12,6 +13,10 @@ Sets the button title to the specified attributed string.
 
 ```swift
 func setAttributedTitle(_ attributedTitle: NSAttributedString?)
+```
+
+```objc
+- (void) setAttributedTitle:(NSAttributedString *) attributedTitle;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ If you use styled text in your buttons, you must provide localized versions of t
 
 ## See Also
 
-- [func setTitle(String?)](wkinterfacebutton/settitle(_:).md)
+### Setting the Button Title
+- [func setTitle(String?)](./settitle%28_%29.md)
   Sets the button title to the specified string.
 
 

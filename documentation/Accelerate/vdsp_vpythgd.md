@@ -1,7 +1,8 @@
 # vDSP_vpythgD
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the double-precision hypotenuses of right triangles with legs that are the differences of corresponding elements of two pairs of vectors.
 
@@ -10,13 +11,13 @@ Calculates the double-precision hypotenuses of right triangles with legs that ar
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
 ## Declaration
 
-```swift
+```c
 extern void vDSP_vpythgD(const double *__A, vDSP_Stride __IA, const double *__B, vDSP_Stride __IB, const double *__C, vDSP_Stride __IC, const double *__D, vDSP_Stride __ID, double *__E, vDSP_Stride __IE, vDSP_Length __N);
 ```
 
@@ -100,7 +101,8 @@ printf("[%g, %g, %g, %g]\n", hypotenuses[0], hypotenuses[1], hypotenuses[2], hyp
 
 ## See Also
 
-- [vDSP_vpythg](vdsp_vpythg.md)
+### Vector Pythagorean computation
+- [vDSP_vpythg](./vdsp_vpythg.md)
   Calculates the single-precision hypotenuses of right triangles with legs that are the differences of corresponding elements of two pairs of vectors.
 
 

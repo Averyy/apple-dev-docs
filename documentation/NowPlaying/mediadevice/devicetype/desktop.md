@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.desktop
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A desktop computer.
 

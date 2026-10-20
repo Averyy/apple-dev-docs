@@ -1,16 +1,17 @@
 # DDDeviceEvent.EventType.deviceFound
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates when the extension finds the device of interest.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ A status that indicates when the extension finds the device of interest.
 case deviceFound
 ```
 
+```c
+DDEventTypeDeviceFound
+```
+
 ## See Also
 
-- [DDDeviceEvent.EventType.unknown](dddeviceevent/eventtype-swift.enum/unknown.md)
+### Distinguishing event types
+- [DDDeviceEvent.EventType.unknown](./unknown.md)
   A value for uninitialized event types.
-- [DDDeviceEvent.EventType.deviceLost](dddeviceevent/eventtype-swift.enum/devicelost.md)
+- [DDDeviceEvent.EventType.deviceLost](./devicelost.md)
   A status that indicates when the extension loses a connection to the device of interest.
-- [DDDeviceEvent.EventType.deviceChanged](dddeviceevent/eventtype-swift.enum/devicechanged.md)
+- [DDDeviceEvent.EventType.deviceChanged](./devicechanged.md)
   A status that indicates when the device of interest changes configuration.
 
 

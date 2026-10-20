@@ -1,16 +1,17 @@
 # enumerateBytes(_:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 4.2+
 
 ## Declaration
@@ -21,7 +22,8 @@ func enumerateBytes(_ block: (UnsafeBufferPointer<UInt8>, Int, inout Bool) -> Vo
 
 ## See Also
 
-- [func makeIterator() -> DispatchData.Iterator](dispatchdata/makeiterator.md)
+### Iterating Over the Buffer Contents
+- [func makeIterator() -> DispatchData.Iterator](./makeiterator%28%29.md)
 
 
 ---

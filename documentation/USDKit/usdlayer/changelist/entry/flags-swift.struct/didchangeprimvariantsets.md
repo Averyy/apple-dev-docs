@@ -1,7 +1,8 @@
 # didChangePrimVariantSets
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a prim’s variant sets list changed.
 

@@ -1,7 +1,8 @@
 # GCDeviceBattery.State
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A state that indicates whether a device’s battery has power and is charging.
 
@@ -19,35 +20,40 @@ A state that indicates whether a device’s battery has power and is charging.
 enum State
 ```
 
+```c
+enum GCDeviceBatteryState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [GCDeviceBattery.State.unknown](gcdevicebattery/state/unknown.md)
+- [GCDeviceBattery.State.unknown](./state/unknown.md)
   The state of the device’s battery is unknown.
-- [GCDeviceBattery.State.discharging](gcdevicebattery/state/discharging.md)
+- [GCDeviceBattery.State.discharging](./state/discharging.md)
   The device’s battery is discharging.
-- [GCDeviceBattery.State.charging](gcdevicebattery/state/charging.md)
+- [GCDeviceBattery.State.charging](./state/charging.md)
   The device’s battery has power and is charging, but isn’t fully charged.
-- [GCDeviceBattery.State.full](gcdevicebattery/state/full.md)
+- [GCDeviceBattery.State.full](./state/full.md)
   The device’s battery has power and is fully charged.
 ### Initializers
-- [init?(rawValue: Int)](gcdevicebattery/state/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var batteryLevel: Float](gcdevicebattery/batterylevel.md)
+### Getting the battery level and state
+- [var batteryLevel: Float](./batterylevel.md)
   The charge level of a device’s battery.
-- [var batteryState: GCDeviceBattery.State](gcdevicebattery/batterystate.md)
+- [var batteryState: GCDeviceBattery.State](./batterystate.md)
   The state of a device’s battery.
 
 

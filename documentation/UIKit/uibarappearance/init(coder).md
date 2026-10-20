@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object from data in an unarchiver.
 
@@ -18,13 +19,18 @@ Creates an appearance object from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(idiom: UIUserInterfaceIdiom)](uibarappearance/init(idiom:).md)
+### Creating a custom bar appearance object
+- [init(idiom: UIUserInterfaceIdiom)](./init%28idiom%29.md)
   Creates a new bar appearance object that targets the specified idiom.
-- [init(barAppearance: UIBarAppearance)](uibarappearance/init(barappearance:).md)
+- [init(barAppearance: UIBarAppearance)](./init%28barappearance%29.md)
   Creates a new bar appearance object by copying relevant data from the specified appearance object.
-- [convenience init()](uibarappearance/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a new bar appearance object containing default values.
 
 

@@ -1,14 +1,15 @@
 # Modifying RealityKit rendering using custom materials
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Write Metal shader functions to implement custom rendering effects.
 
 #### Overview
 
-RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging RealityKit’s built-in shader pipeline.
+RealityKit provides several types of materials that render entities using different techniques. Two examples are [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md), which renders entities in highly realistic fashion, and [`UnlitMaterial`](./unlitmaterial.md), which renders without any shadow or lighting effects. On iOS 15 and later, [`CustomMaterial`](./custommaterial.md) allows you to write shader functions in Metal to modify how RealityKit renders an entity, while still leveraging RealityKit’s built-in shader pipeline.
 
-> **Note**: For the Metal API documentation for custom material shader functions, see [`the Metal RealityKit APIs PDF.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
+> **Note**: For the Metal API documentation for custom material shader functions, see [the Metal RealityKit APIs PDF.](https://developer.apple.com/metal/Metal-RealityKit-APIs.pdf)
 
 Custom materials support two types of custom Metal shader functions: *surface shaders* and *geometry modifiers*. Surface shaders are responsible for specifying the final attributes of each pixel that RealityKit draws to render the entity. They also support an optional geometry modifier, which you can use to manipulate the location of the model’s vertices, allowing you to dynamically change the size or shape of the entity.
 
@@ -16,9 +17,9 @@ In shader programming, the term *fragment* refers to a one-pixel portion of an e
 
 The other type of Metal shader that RealityKit uses is the *vertex shader*. Vertex shaders fire once for every vertex in the entity. If you supply a geometry modifier when creating a custom material, RealityKit’s vertex shader calls it. Geometry modifiers fire once for every vertex in the entity.
 
-For more information on writing Metal shaders, see [`Debugging the shaders within a draw command or compute dispatch`](https://developer.apple.com/documentation/xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch).
+For more information on writing Metal shaders, see [Debugging the shaders within a draw command or compute dispatch](../Xcode/debugging-the-shaders-within-a-draw-command-or-compute-dispatch.md).
 
-##### Write a Surface Shader
+##### Write a surface shader
 
 To use a custom material, first write a surface shader in Metal. Start by adding a new file to your Xcode project using the Metal File template. You can use any function name you want for your surface shader, but you must prefix your function with the `[[visible]]` keyword. Your function must have no return value and take a single parameter of type `realitykit::surface_parameters`.
 
@@ -39,18 +40,18 @@ void myEmptyShader(realitykit::surface_parameters params)
 
 The one parameter that RealityKit passes to your surface shader provides access to all input from the entity’s material, as well as interpolated versions of all of the entity’s per-vertex values, such as UV coordinates and vertex colors. When accessed from a surface shader, Metal returns an interpolated version of per-vertex data, based on the fragment’s position relative to the three vertices that make up its triangle. The following illustration demonstrates how that interpolation works for vertex colors.
 
-![An illustration showing a triangle with three labeled vertices. The top vertex is blue, the lower left vertex is green, and the lower right vertex is red, The interior color of the triangle is a gradient blend between these three colors. An arrow points out a specific fragment that’s closer to the blue and red vertices and is shown to have a purplish color.](/images/com.apple.RealityKit/modifying-realitykit-rendering-using-custom-materials-1@2x.png)
+![An illustration showing a triangle with three labeled vertices. The top vertex is blue, the lower left vertex is green, and the lower right vertex is red, The interior color of the triangle is a gradient blend between these three colors. An arrow points out a specific fragment that’s closer to the blue and red vertices and is shown to have a purplish color.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/modifying-realitykit-rendering-using-custom-materials-1@2x.png)
 
-Specify output using the various `set_` functions on the parameter’s `surface()` property. For example, to set the base color value for the current fragment, call `params.surface().set_base_color()`. The custom material’s lighting model determines which `set_` functions it supports. Your surface shader must call at least one supported `set_` function or nothing renders. For a list of which `set_` functions each lighting model supports, see [`lightingModel`](custommaterial/lightingmodel-swift.property.md).
+Specify output using the various `set_` functions on the parameter’s `surface()` property. For example, to set the base color value for the current fragment, call `params.surface().set_base_color()`. The custom material’s lighting model determines which `set_` functions it supports. Your surface shader must call at least one supported `set_` function or nothing renders. For a list of which `set_` functions each lighting model supports, see [`lightingModel`](./custommaterial/lightingmodel-swift.property.md).
 
 Here are the accessor methods on `realitykit::surface_parameters`, along with what you use them for:
 
-- **`uniforms()`**: Contains all constant properties, including the current elapsed time and any custom value specified on the [`CustomMaterial`](custommaterial.md). It also contains matrices for converting values between different coordinate systems, like converting from world space to model space.
+- **`uniforms()`**: Contains all constant properties, including the current elapsed time and any custom value specified on the [`CustomMaterial`](./custommaterial.md). It also contains matrices for converting values between different coordinate systems, like converting from world space to model space.
 - **`geometry()`**: Contains properties specified on a per-vertex basis, such as a vertex’s position, color, and normal vector. Metal interpolates per-vertex values based on the current fragment’s position relative to the three vertices that make up its triangle.
 - **`textures()`**: Provides access to all of the custom material’s UV-mapped image textures.
 - **`surface()`**: Contains functions to specify and read the fragment’s output values.
 
-The following surface shader calculates and sets the fragment’s base color based on the `tint` and `color` values from the material’s [`CustomMaterial.BaseColor`](custommaterial/basecolor-swift.struct.md) property.
+The following surface shader calculates and sets the fragment’s base color based on the `tint` and `color` values from the material’s [`CustomMaterial.BaseColor`](./custommaterial/basecolor-swift.struct.md) property.
 
 ```cpp
 #include <metal_stdlib>
@@ -85,7 +86,7 @@ void mySurfaceShader(realitykit::surface_parameters params)
 }
 ```
 
-##### Write a Geometry Modifier
+##### Write a geometry modifier
 
 If you need to modify the vertex positions or other vertex values for your entity, write a geometry modifier function. Otherwise, you can create your custom material with only a surface shader. To write a geometry modifier, create a new Metal file in your Xcode project, or add a new function to the same file that contains your surface shader.
 
@@ -121,9 +122,9 @@ void simpleGeometryModifier(realitykit::geometry_parameters params)
 }
 ```
 
-> ❗ **Important**: If your geometry modifier moves any vertices outside of the entity’s bounding box, assign a value to [`boundsMargin`](modelcomponent/boundsmargin.md) to enlarge the bounding box and prevent RealityKit from incorrectly culling the entity.
+> ❗ **Important**: If your geometry modifier moves any vertices outside of the entity’s bounding box, assign a value to [`boundsMargin`](./modelcomponent/boundsmargin.md) to enlarge the bounding box and prevent RealityKit from incorrectly culling the entity.
 
-##### Load the Custom Shaders
+##### Load the custom shaders
 
 To create a custom material for an entity, first load the Metal library that contains your shader functions, then load the functions by name, as the following sample code demonstrates:
 
@@ -145,7 +146,7 @@ let surfaceShader = CustomMaterial.SurfaceShader(named: "mySurfaceShader",
                                                  in: library)
 ```
 
-##### Choose a Lighting Model
+##### Choose a lighting model
 
 Every custom material needs a *lighting model*, which determines the basic approach RealityKit uses to render an entity with a custom material. The lighting model affects how the entity looks and which output functions your surface shader can use. There are three options:
 
@@ -153,11 +154,11 @@ Every custom material needs a *lighting model*, which determines the basic appro
 | --- | --- | --- |
 | `.lit` | Uses physically based rendering (PBR) techniques, but excludes clearcoat rendering. | All except `set_clearcoat()` and `set_clearcoat_roughness()` |
 | `.clearcoat` | Uses PBR techniques, including clearcoat. | All |
-| `.unlit` | Renders without any shading or lighting calculations. The result is similar to using an [`UnlitMaterial`](unlitmaterial.md). | Uses `set_emissive_color()` only |
+| `.unlit` | Renders without any shading or lighting calculations. The result is similar to using an [`UnlitMaterial`](./unlitmaterial.md). | Uses `set_emissive_color()` only |
 
-##### Create and Use the Custom Material
+##### Create and use the custom material
 
-In your Swift code, create a custom material using your loaded shader functions and selected lighting model. To create a custom material from scratch, use [`init(surfaceShader:geometryModifier:lightingModel:)`](custommaterial/init(surfaceshader:geometrymodifier:lightingmodel:).md), as the following code demonstrates:
+In your Swift code, create a custom material using your loaded shader functions and selected lighting model. To create a custom material from scratch, use [`init(surfaceShader:geometryModifier:lightingModel:)`](./custommaterial/init%28surfaceshader,geometrymodifier,lightingmodel%29.md), as the following code demonstrates:
 
 ```swift
 let customMaterial: CustomMaterial
@@ -196,33 +197,34 @@ modelComponent.materials = customMaterials
 robot.components[ModelComponent.self] = modelComponent
 ```
 
-You can download RealityKit’s custom shader Metal API documentation from [`the Metal RealityKit APIs PDF.`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
+You can download RealityKit’s custom shader Metal API documentation from [Custom Shader API](https://developer.apple.com/metal/Metal-RealityKit-APIs.pdf).
 
 ## See Also
 
-- [Implementing adjustable material](../visionos/implementing-adjustable-material-in-visionos.md)
+### Shaders
+- [Implementing adjustable material](../visionOS/implementing-adjustable-material-in-visionos.md)
   Update the adjustable parameters of a 3D model in visionOS.
-- [Displaying a stereoscopic image](../visionos/displaying-a-stereoscopic-image-in-visionos.md)
+- [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
-- [struct ShaderGraphMaterial](shadergraphmaterial.md)
+- [struct ShaderGraphMaterial](./shadergraphmaterial.md)
   A material that comes from a shader graph in a Reality Composer Pro project, or a MaterialX shader.
-- [ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.typealias.md)
+- [ShaderGraphMaterial.FaceCulling](./shadergraphmaterial/faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [ShaderGraphMaterial.TriangleFillMode](shadergraphmaterial/trianglefillmode-swift.typealias.md)
+- [ShaderGraphMaterial.TriangleFillMode](./shadergraphmaterial/trianglefillmode-swift.typealias.md)
   An alias for the triangle fill mode object that’s appropriate for this material class.
-- [struct CustomMaterial](custommaterial.md)
+- [struct CustomMaterial](./custommaterial.md)
   A material that works with custom Metal shader functions.
-- [CustomMaterial.SurfaceShader](custommaterial/surfaceshader.md)
+- [CustomMaterial.SurfaceShader](./custommaterial/surfaceshader.md)
   The custom material’s surface shader function.
-- [CustomMaterial.GeometryModifier](custommaterial/geometrymodifier.md)
+- [CustomMaterial.GeometryModifier](./custommaterial/geometrymodifier.md)
   The custom material’s optional shader function that can manipulate an entity’s vertex data.
-- [protocol MaterialFunction](materialfunction.md)
+- [protocol MaterialFunction](./materialfunction.md)
   The abstract superclass for objects representing compute functions for RealityKit custom materials .
-- [CustomMaterial.Program](custommaterial/program-swift.class.md)
+- [CustomMaterial.Program](./custommaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.
-- [CustomMaterial.Program.Descriptor](custommaterial/program-swift.class/descriptor-swift.struct.md)
+- [CustomMaterial.Program.Descriptor](./custommaterial/program-swift.class/descriptor-swift.struct.md)
   An object that specifies all parameters necessary to initialize `CustomMaterial` programs
-- [enum CustomShaderStage](customshaderstage.md)
+- [enum CustomShaderStage](./customshaderstage.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NDArray.ScalarType.float8e5m2
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit floating-point type with 5 exponent bits and 2 mantissa bits.
 
@@ -24,7 +25,8 @@ FP8 E5M2 format emphasizes dynamic range over precision with its larger exponent
 
 ## See Also
 
-- [NDArray.ScalarType.float8e4m3fn](ndarray/scalartype-swift.enum/float8e4m3fn.md)
+### Defining 8-bit floating-point types
+- [NDArray.ScalarType.float8e4m3fn](./float8e4m3fn.md)
   An 8-bit floating-point type with 4 exponent bits and 3 mantissa bits, without a sign bit.
 
 

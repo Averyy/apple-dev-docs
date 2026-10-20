@@ -1,7 +1,8 @@
 # AppStoreReviewDetail
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represent an App Store Review Details  resource.
 
@@ -10,16 +11,16 @@ The data structure that represent an App Store Review Details  resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewDetail
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewDetail.Attributes](appstorereviewdetail/attributes-data.dictionary.md)
+- [object AppStoreReviewDetail.Attributes](./appstorereviewdetail/attributes-data.dictionary.md)
   Attributes that describe an App Store Review Details resource.
-- [object AppStoreReviewDetail.Relationships](appstorereviewdetail/relationships-data.dictionary.md)
+- [object AppStoreReviewDetail.Relationships](./appstorereviewdetail/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,17 +29,18 @@ object AppStoreReviewDetail
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppStoreReviewDetail.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreReviewDetails`
 
 ## See Also
 
-- [object AppStoreReviewDetailCreateRequest](appstorereviewdetailcreaterequest.md)
+### Objects
+- [object AppStoreReviewDetailCreateRequest](./appstorereviewdetailcreaterequest.md)
   The request body you use to create an App Store Review Detail.
-- [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
+- [object AppStoreReviewDetailUpdateRequest](./appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
-- [object AppStoreReviewDetailResponse](appstorereviewdetailresponse.md)
+- [object AppStoreReviewDetailResponse](./appstorereviewdetailresponse.md)
   The response body for endpoints that read or modify App Store review details for a version.
-- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
+- [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](./appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 
 ---

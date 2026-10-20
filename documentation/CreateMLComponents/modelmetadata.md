@@ -1,7 +1,8 @@
 # ModelMetadata
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 User info keys that specify useful information about a model.
 
@@ -23,35 +24,36 @@ struct ModelMetadata
 ## Topics
 
 ### Creating a model
-- [init(description: String, version: String, author: String, license: String, creatorDefined: [String : String])](modelmetadata/init(description:version:author:license:creatordefined:).md)
+- [init(description: String, version: String, author: String, license: String, creatorDefined: [String : String])](./modelmetadata/init%28description,version,author,license,creatordefined%29.md)
   Creates model metadata.
 ### Getting the properties
-- [var author: String](modelmetadata/author.md)
+- [var author: String](./modelmetadata/author.md)
   The author of this model.
-- [var creatorDefined: [String : String]](modelmetadata/creatordefined.md)
+- [var creatorDefined: [String : String]](./modelmetadata/creatordefined.md)
   Creator-defined custom metadata.
-- [var description: String](modelmetadata/description.md)
+- [var description: String](./modelmetadata/description.md)
   A short description of what the model does and/or its purpose.
-- [var license: String](modelmetadata/license.md)
+- [var license: String](./modelmetadata/license.md)
   License information for the model.
-- [var version: String](modelmetadata/version.md)
+- [var version: String](./modelmetadata/version.md)
   A version number encoded as a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLModelTransformerAdaptor](mlmodeltransformeradaptor.md)
+### Core ML adaptors
+- [struct MLModelTransformerAdaptor](./mlmodeltransformeradaptor.md)
   A transformer that uses a Core ML model.
-- [struct MLModelClassifierAdaptor](mlmodelclassifieradaptor.md)
+- [struct MLModelClassifierAdaptor](./mlmodelclassifieradaptor.md)
   A transformer that uses a Core ML model as a classifier.
-- [struct MLModelRegressorAdaptor](mlmodelregressoradaptor.md)
+- [struct MLModelRegressorAdaptor](./mlmodelregressoradaptor.md)
   A transformer that uses a Core ML model as a regressor.
 
 

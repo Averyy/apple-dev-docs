@@ -1,7 +1,8 @@
 # genres
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the genres for the album.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the genres for the albu
 ```swift
 static let genres: MusicRelationshipProperty<Album, Genre>
 ```
+
+Available when `Root` is `Album`.
 
 
 ---

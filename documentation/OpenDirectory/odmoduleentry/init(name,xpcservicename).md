@@ -1,16 +1,21 @@
 # init(name:xpcServiceName:)
 
 **Framework**: Open Directory  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.9+
 
 ## Declaration
 
 ```swift
 convenience init!(name: String!, xpcServiceName: String!)
+```
+
+```objc
++ (instancetype) moduleEntryWithName:(NSString *) name xpcServiceName:(NSString *) xpcServiceName;
 ```
 
 

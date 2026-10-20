@@ -1,14 +1,15 @@
 # FWMultiIsochReceiveListenerParams
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct FWMultiIsochReceiveListenerParamsStruct {
     ...
 } FWMultiIsochReceiveListenerParams;
@@ -17,9 +18,9 @@ typedef struct FWMultiIsochReceiveListenerParamsStruct {
 ## Topics
 
 ### Instance Properties
-- [clientPacketReturnLatencyInFireWireCycles](fwmultiisochreceivelistenerparams/1551251-clientpacketreturnlatencyinfirew.md)
-- [expectedStreamBitRate](fwmultiisochreceivelistenerparams/1551260-expectedstreambitrate.md)
-- [maxLatencyInFireWireCycles](fwmultiisochreceivelistenerparams/1551248-maxlatencyinfirewirecycles.md)
+- [clientPacketReturnLatencyInFireWireCycles](./fwmultiisochreceivelistenerparams/api-1551251-clientpacketreturnlatencyinfirew.md)
+- [expectedStreamBitRate](./fwmultiisochreceivelistenerparams/api-1551260-expectedstreambitrate.md)
+- [maxLatencyInFireWireCycles](./fwmultiisochreceivelistenerparams/api-1551248-maxlatencyinfirewirecycles.md)
 
 
 ---

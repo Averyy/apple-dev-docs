@@ -1,7 +1,8 @@
 # control()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a character set containing the characters in Unicode General Category Cc and Cf.
 
@@ -20,35 +21,40 @@ Returns a character set containing the characters in Unicode General Category Cc
 class func control() -> NSMutableCharacterSet
 ```
 
+```objc
++ (NSMutableCharacterSet *) controlCharacterSet;
+```
+
 ## See Also
 
-- [class func alphanumeric() -> NSMutableCharacterSet](nsmutablecharacterset/alphanumeric.md)
+### Getting Standard Character Sets
+- [class func alphanumeric() -> NSMutableCharacterSet](./alphanumeric%28%29.md)
   Returns a character set containing the characters in Unicode General Categories L*, M*, and N*.
-- [class func capitalizedLetter() -> NSMutableCharacterSet](nsmutablecharacterset/capitalizedletter.md)
+- [class func capitalizedLetter() -> NSMutableCharacterSet](./capitalizedletter%28%29.md)
   Returns a character set containing the characters in Unicode General Category Lt.
-- [class func decimalDigit() -> NSMutableCharacterSet](nsmutablecharacterset/decimaldigit.md)
+- [class func decimalDigit() -> NSMutableCharacterSet](./decimaldigit%28%29.md)
   Returns a character set containing the characters in the category of decimal numbers.
-- [class func decomposable() -> NSMutableCharacterSet](nsmutablecharacterset/decomposable.md)
+- [class func decomposable() -> NSMutableCharacterSet](./decomposable%28%29.md)
   Returns a character set containing individual Unicode characters that can also be represented as composed character sequences (such as for letters with accents), by the definition of “standard decomposition” in version 3.2 of the Unicode character encoding standard.
-- [class func illegal() -> NSMutableCharacterSet](nsmutablecharacterset/illegal.md)
+- [class func illegal() -> NSMutableCharacterSet](./illegal%28%29.md)
   Returns a character set containing values in the category of Non-Characters or that have not yet been defined in version 3.2 of the Unicode standard.
-- [class func letter() -> NSMutableCharacterSet](nsmutablecharacterset/letter.md)
+- [class func letter() -> NSMutableCharacterSet](./letter%28%29.md)
   Returns a character set containing the characters in Unicode General Category L* & M*.
-- [class func lowercaseLetter() -> NSMutableCharacterSet](nsmutablecharacterset/lowercaseletter.md)
+- [class func lowercaseLetter() -> NSMutableCharacterSet](./lowercaseletter%28%29.md)
   Returns a character set containing the characters in Unicode General Category Ll.
-- [class func newline() -> NSMutableCharacterSet](nsmutablecharacterset/newline.md)
+- [class func newline() -> NSMutableCharacterSet](./newline%28%29.md)
   Returns a character set containing the newline characters (`U+000A` ~ `U+000D`, `U+0085`, `U+2028`, and `U+2029`).
-- [class func nonBase() -> NSMutableCharacterSet](nsmutablecharacterset/nonbase.md)
+- [class func nonBase() -> NSMutableCharacterSet](./nonbase%28%29.md)
   Returns a character set containing the characters in Unicode General Category M*.
-- [class func punctuation() -> NSMutableCharacterSet](nsmutablecharacterset/punctuation.md)
+- [class func punctuation() -> NSMutableCharacterSet](./punctuation%28%29.md)
   Returns a character set containing the characters in Unicode General Category P*.
-- [class func symbol() -> NSMutableCharacterSet](nsmutablecharacterset/symbol.md)
+- [class func symbol() -> NSMutableCharacterSet](./symbol%28%29.md)
   Returns a character set containing the characters in Unicode General Category S*.
-- [class func uppercaseLetter() -> NSMutableCharacterSet](nsmutablecharacterset/uppercaseletter.md)
+- [class func uppercaseLetter() -> NSMutableCharacterSet](./uppercaseletter%28%29.md)
   Returns a character set containing the characters in Unicode General Category Lu and Lt.
-- [class func whitespaceAndNewline() -> NSMutableCharacterSet](nsmutablecharacterset/whitespaceandnewline.md)
+- [class func whitespaceAndNewline() -> NSMutableCharacterSet](./whitespaceandnewline%28%29.md)
   Returns a character set containing characters in Unicode General Category Z*, `U+000A` ~ `U+000D`, and `U+0085`.
-- [class func whitespace() -> NSMutableCharacterSet](nsmutablecharacterset/whitespace.md)
+- [class func whitespace() -> NSMutableCharacterSet](./whitespace%28%29.md)
   Returns a character set containing the characters in Unicode General Category Zs and `CHARACTER TABULATION` (`U+0009`).
 
 

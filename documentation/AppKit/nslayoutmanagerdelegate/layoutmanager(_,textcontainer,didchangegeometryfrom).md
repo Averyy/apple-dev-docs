@@ -1,7 +1,8 @@
 # layoutManager(_:textContainer:didChangeGeometryFrom:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the layout manager invalidates layout due to a change in the geometry of the specified text container.
 
@@ -12,6 +13,10 @@ Informs the delegate when the layout manager invalidates layout due to a change 
 
 ```swift
 optional func layoutManager(_ layoutManager: NSLayoutManager, textContainer: NSTextContainer, didChangeGeometryFrom oldSize: NSSize)
+```
+
+```objc
+- (void) layoutManager:(NSLayoutManager *) layoutManager textContainer:(NSTextContainer *) textContainer didChangeGeometryFromSize:(NSSize) oldSize;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The delegate can react to the geometry change and perform adjustments such as re
 
 ## See Also
 
-- [func layoutManager(NSLayoutManager, didCompleteLayoutFor: NSTextContainer?, atEnd: Bool)](nslayoutmanagerdelegate/layoutmanager(_:didcompletelayoutfor:atend:).md)
+### Responding to text container layout
+- [func layoutManager(NSLayoutManager, didCompleteLayoutFor: NSTextContainer?, atEnd: Bool)](./layoutmanager%28_,didcompletelayoutfor,atend%29.md)
   Informs the delegate when the layout manager finishes laying out text in the specified text container.
 
 

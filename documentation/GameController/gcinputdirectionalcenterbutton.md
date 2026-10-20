@@ -1,7 +1,8 @@
 # GCInputDirectionalCenterButton
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the controller’s optional button on the directional gamepad.
 
@@ -19,13 +20,18 @@ The name of the controller’s optional button on the directional gamepad.
 let GCInputDirectionalCenterButton: String
 ```
 
+```c
+extern NSString * const GCInputDirectionalCenterButton;
+```
+
 #### Discussion
 
 This input element represents the center button on the cardinal directional pad. For the second-generation Siri Remote and later, this represents the inner ring of the touch surface.
 
 ## See Also
 
-- [let GCInputDirectionalTouchSurfaceButton: String](gcinputdirectionaltouchsurfacebutton.md)
+### Directional Pad Button Names
+- [let GCInputDirectionalTouchSurfaceButton: String](./gcinputdirectionaltouchsurfacebutton.md)
   The name of the controller’s touch surface button.
 
 

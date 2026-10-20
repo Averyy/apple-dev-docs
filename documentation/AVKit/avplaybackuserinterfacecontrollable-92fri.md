@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceControllable
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A comprehensive protocol that provides complete media control and information for playback, timeline navigation, audio/subtitle selection, volume control, and metadata access.
 
@@ -24,12 +25,12 @@ This protocol consolidates all media source capabilities into a single interface
 ## Relationships
 
 ### Inherits From
-- [AVPlaybackUserInterfaceMediaSelectionControllable](avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
-- [AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
-- [AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
-- [AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
-- [AVPlaybackUserInterfaceVolumeControllable](avplaybackuserinterfacevolumecontrollable-4vgi1.md)
-- [Observable](../observation/observable.md)
+- [AVPlaybackUserInterfaceMediaSelectionControllable](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
+- [AVPlaybackUserInterfaceMetadataProviding](./avplaybackuserinterfacemetadataproviding-814y4.md)
+- [AVPlaybackUserInterfacePlaybackControllable](./avplaybackuserinterfaceplaybackcontrollable-9he54.md)
+- [AVPlaybackUserInterfaceTimeControllable](./avplaybackuserinterfacetimecontrollable-50vcy.md)
+- [AVPlaybackUserInterfaceVolumeControllable](./avplaybackuserinterfacevolumecontrollable-4vgi1.md)
+- [Observable](../Observation/observable.md)
 
 
 ---

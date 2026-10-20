@@ -1,7 +1,8 @@
 # readAttributeSpinSpeedCurrent(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSpinSpeedCurrent(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSpinSpeedCurrent() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSpinSpeedCurrentWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

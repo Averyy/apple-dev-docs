@@ -1,17 +1,18 @@
 # kAFInfoDictionary_Artist
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An artist.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,37 +20,42 @@ An artist.
 var kAFInfoDictionary_Artist: String { get }
 ```
 
+```c
+#define kAFInfoDictionary_Artist
+```
+
 ## See Also
 
-- [var kAFInfoDictionary_Album: String](kafinfodictionary_album.md)
+### Constants
+- [var kAFInfoDictionary_Album: String](./kafinfodictionary_album.md)
   An album.
-- [var kAFInfoDictionary_Tempo: String](kafinfodictionary_tempo.md)
+- [var kAFInfoDictionary_Tempo: String](./kafinfodictionary_tempo.md)
   A tempo.
-- [var kAFInfoDictionary_KeySignature: String](kafinfodictionary_keysignature.md)
+- [var kAFInfoDictionary_KeySignature: String](./kafinfodictionary_keysignature.md)
   A key signature.
-- [var kAFInfoDictionary_TimeSignature: String](kafinfodictionary_timesignature.md)
+- [var kAFInfoDictionary_TimeSignature: String](./kafinfodictionary_timesignature.md)
   A time signature.
-- [var kAFInfoDictionary_TrackNumber: String](kafinfodictionary_tracknumber.md)
+- [var kAFInfoDictionary_TrackNumber: String](./kafinfodictionary_tracknumber.md)
   A track number.
-- [var kAFInfoDictionary_Year: String](kafinfodictionary_year.md)
+- [var kAFInfoDictionary_Year: String](./kafinfodictionary_year.md)
   A year.
-- [var kAFInfoDictionary_Composer: String](kafinfodictionary_composer.md)
+- [var kAFInfoDictionary_Composer: String](./kafinfodictionary_composer.md)
   A composer.
-- [var kAFInfoDictionary_Lyricist: String](kafinfodictionary_lyricist.md)
+- [var kAFInfoDictionary_Lyricist: String](./kafinfodictionary_lyricist.md)
   A lyricist.
-- [var kAFInfoDictionary_Genre: String](kafinfodictionary_genre.md)
+- [var kAFInfoDictionary_Genre: String](./kafinfodictionary_genre.md)
   A genre.
-- [var kAFInfoDictionary_Title: String](kafinfodictionary_title.md)
+- [var kAFInfoDictionary_Title: String](./kafinfodictionary_title.md)
   A title.
-- [var kAFInfoDictionary_RecordedDate: String](kafinfodictionary_recordeddate.md)
+- [var kAFInfoDictionary_RecordedDate: String](./kafinfodictionary_recordeddate.md)
   A recorded date.
-- [var kAFInfoDictionary_Comments: String](kafinfodictionary_comments.md)
+- [var kAFInfoDictionary_Comments: String](./kafinfodictionary_comments.md)
   Comments.
-- [var kAFInfoDictionary_Copyright: String](kafinfodictionary_copyright.md)
+- [var kAFInfoDictionary_Copyright: String](./kafinfodictionary_copyright.md)
   Copyright.
-- [var kAFInfoDictionary_SourceEncoder: String](kafinfodictionary_sourceencoder.md)
+- [var kAFInfoDictionary_SourceEncoder: String](./kafinfodictionary_sourceencoder.md)
   A source encoder.
-- [var kAFInfoDictionary_EncodingApplication: String](kafinfodictionary_encodingapplication.md)
+- [var kAFInfoDictionary_EncodingApplication: String](./kafinfodictionary_encodingapplication.md)
   An encoding application.
 
 

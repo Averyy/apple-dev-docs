@@ -1,7 +1,8 @@
 # validate()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates the provisioning options.
 
@@ -14,13 +15,18 @@ Validates the provisioning options.
 func validate() throws
 ```
 
+```objc
+- (BOOL) validateWithError:(NSError **) error;
+```
+
 #### Discussion
 
-If validation fails, the error parameter contains a [`VZError`](vzerror.md) with a guest provisioning error code.
+If validation fails, the error parameter contains a [`VZError`](../vzerror.md) with a guest provisioning error code.
 
 ## See Also
 
-- [VZError.Code](vzerror/code.md)
+### Related Documentation
+- [VZError.Code](../vzerror/code.md)
   Errors you might encounter when configuring or using a virtual machine.
 
 

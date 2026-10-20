@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the minimum alignment the GPU device requires to create a linear texture from a buffer.
@@ -20,29 +21,34 @@ Returns the minimum alignment the GPU device requires to create a linear texture
 func minimumLinearTextureAlignment(for format: MTLPixelFormat) -> Int
 ```
 
+```objc
+- (NSUInteger) minimumLinearTextureAlignmentForPixelFormat:(MTLPixelFormat) format;
+```
+
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+- [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 
 #### Discussion
 
-Metal aligns linear textures to their minimum alignment value, which directly affects the [`makeTexture(descriptor:offset:bytesPerRow:)`](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md) method’s `offset` and `bytesPerRow` parameters.
+Metal aligns linear textures to their minimum alignment value, which directly affects the [`makeTexture(descriptor:offset:bytesPerRow:)`](../mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md) method’s `offset` and `bytesPerRow` parameters.
 
 ## Parameters
 
-- `format`: An [`MTLPixelFormat`](mtlpixelformat.md) instance that can’t be any of the depth, stencil, or compressed pixel formats.
+- `format`: An [`MTLPixelFormat`](../mtlpixelformat.md) instance that can’t be any of the depth, stencil, or compressed pixel formats.
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/maketexture(descriptor:).md)
+### Creating textures
+- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./maketexture%28descriptor%29.md)
   Creates a new texture instance.
-- [func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) -> (any MTLTexture)?](mtldevice/maketexture(descriptor:iosurface:plane:).md)
+- [func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) -> (any MTLTexture)?](./maketexture%28descriptor,iosurface,plane%29.md)
   Creates a texture instance that uses I/O surface to store its underlying data.
-- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/makesharedtexture(descriptor:).md)
+- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./makesharedtexture%28descriptor%29.md)
   Creates a texture that you can share across process boundaries.
-- [func makeSharedTexture(handle: MTLSharedTextureHandle) -> (any MTLTexture)?](mtldevice/makesharedtexture(handle:).md)
+- [func makeSharedTexture(handle: MTLSharedTextureHandle) -> (any MTLTexture)?](./makesharedtexture%28handle%29.md)
   Creates a texture that references a shared texture.
-- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](mtldevice/minimumtexturebufferalignment(for:).md)
+- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](./minimumtexturebufferalignment%28for%29.md)
   Returns the minimum alignment the GPU device requires to create a texture buffer from a buffer.
 
 

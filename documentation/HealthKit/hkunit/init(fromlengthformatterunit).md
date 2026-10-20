@@ -1,7 +1,8 @@
 # init(fromLengthFormatterUnit:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+

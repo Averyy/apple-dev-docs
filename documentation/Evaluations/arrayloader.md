@@ -1,7 +1,8 @@
 # ArrayLoader
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A loader backed by an in-memory array.
 
@@ -41,27 +42,28 @@ let loader: ArrayLoader = [
 ## Topics
 
 ### Initializers
-- [init(arrayLiteral: Sample...)](arrayloader/init(arrayliteral:).md)
+- [init(arrayLiteral: Sample...)](./arrayloader/init%28arrayliteral%29.md)
   Creates a loader from an array literal of samples.
-- [init(samples: [Sample])](arrayloader/init(samples:).md)
+- [init(samples: [Sample])](./arrayloader/init%28samples%29.md)
   Creates a loader backed by the given array of samples.
 ### Instance Properties
-- [var stream: any AsyncSequence<Sample, any Error>](arrayloader/stream.md)
+- [var stream: any AsyncSequence<Sample, any Error>](./arrayloader/stream.md)
   The async sequence that yields each sample in the array during an evaluation run.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Loader](loader.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Loader](./loader.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct JSONLoader](jsonloader.md)
+### Loaders
+- [struct JSONLoader](./jsonloader.md)
   A loader backed by a JSON or JSONL file.
-- [struct StreamLoader](streamloader.md)
+- [struct StreamLoader](./streamloader.md)
   A loader backed by a custom async sequence.
 
 

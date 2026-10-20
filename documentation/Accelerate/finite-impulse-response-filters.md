@@ -1,32 +1,34 @@
 # Finite impulse response filters
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform finite impulse response filtering with decimation and antialiasing on vectors of real or complex values.
 
 ## Topics
 
 ### Real Vectors
-- [Resampling a signal with decimation](resampling-a-signal-with-decimation.md)
+- [Resampling a signal with decimation](./resampling-a-signal-with-decimation.md)
   Reduce the sample rate of a signal by specifying a decimation factor and applying a custom antialiasing filter.
-- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Double]](vdsp/downsample(_:decimationfactor:filter:)-1o8it.md)
+- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Double]](./vdsp/downsample%28_,decimationfactor,filter%29-1o8it.md)
   Returns the downsampled double-precision vector.
-- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Float]](vdsp/downsample(_:decimationfactor:filter:)-40d8o.md)
+- [static func downsample<T, U>(U, decimationFactor: Int, filter: T) -> [Float]](./vdsp/downsample%28_,decimationfactor,filter%29-40d8o.md)
   Returns the downsampled single-precision vector.
-- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](vdsp/downsample(_:decimationfactor:filter:result:)-2y1iv.md)
+- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](./vdsp/downsample%28_,decimationfactor,filter,result%29-2y1iv.md)
   Calculates the downsampled double-precision vector.
-- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](vdsp/downsample(_:decimationfactor:filter:result:)-1g4a.md)
+- [static func downsample<T, U, V>(U, decimationFactor: Int, filter: T, result: inout V)](./vdsp/downsample%28_,decimationfactor,filter,result%29-1g4a.md)
   Calculates the downsampled single-precision vector.
 
 ## See Also
 
-- [Biquadratic IIR filters](biquadratic-iir-filters.md)
+### Vector filtering
+- [Biquadratic IIR filters](./biquadratic-iir-filters.md)
   Apply biquadratic filters to single-channel and multichannel data.
-- [Single-channel biquadratic filters](single-channel-biquadratic-filters.md)
+- [Single-channel biquadratic filters](./single-channel-biquadratic-filters.md)
   Filter a single-channel signal with a cascade of biquadratic sections.
-- [Multichannel biquadratic filters](multichannel-biquadratic-filters.md)
+- [Multichannel biquadratic filters](./multichannel-biquadratic-filters.md)
   Filter a multichannel signal with a cascade of biquadratic sections.
-- [Recursive filters](recursive-filters.md)
+- [Recursive filters](./recursive-filters.md)
   Perform two-pole two-zero recursive filtering on a vector.
 
 

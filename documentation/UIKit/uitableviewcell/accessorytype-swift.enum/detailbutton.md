@@ -1,7 +1,8 @@
 # UITableViewCell.AccessoryType.detailButton
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An information button.
 
@@ -17,19 +18,24 @@ An information button.
 case detailButton
 ```
 
+```c
+UITableViewCellAccessoryDetailButton
+```
+
 #### Discussion
 
-Choose this option to display a button that, when tapped, displays information about the row. Use your delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](uitableviewdelegate/tableview(_:accessorybuttontappedforrowwith:).md) method to respond to taps in the button.
+Choose this option to display a button that, when tapped, displays information about the row. Use your delegate’s [`tableView(_:accessoryButtonTappedForRowWith:)`](../../uitableviewdelegate/tableview%28_,accessorybuttontappedforrowwith%29.md) method to respond to taps in the button.
 
 ## See Also
 
-- [UITableViewCell.AccessoryType.none](uitableviewcell/accessorytype-swift.enum/none.md)
+### Accessory views
+- [UITableViewCell.AccessoryType.none](./none.md)
   No accessory view.
-- [UITableViewCell.AccessoryType.disclosureIndicator](uitableviewcell/accessorytype-swift.enum/disclosureindicator.md)
+- [UITableViewCell.AccessoryType.disclosureIndicator](./disclosureindicator.md)
   A chevron-shaped control for presenting new content.
-- [UITableViewCell.AccessoryType.detailDisclosureButton](uitableviewcell/accessorytype-swift.enum/detaildisclosurebutton.md)
+- [UITableViewCell.AccessoryType.detailDisclosureButton](./detaildisclosurebutton.md)
   An information button and a disclosure (chevron) control.
-- [UITableViewCell.AccessoryType.checkmark](uitableviewcell/accessorytype-swift.enum/checkmark.md)
+- [UITableViewCell.AccessoryType.checkmark](./checkmark.md)
   A checkmark image.
 
 

@@ -1,7 +1,8 @@
 # date
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp’s representation as a date.
 
@@ -9,6 +10,10 @@ The timestamp’s representation as a date.
 
 ```swift
 var date: Date { get }
+```
+
+```objc
+@property (copy, readonly) NSDate * date;
 ```
 
 

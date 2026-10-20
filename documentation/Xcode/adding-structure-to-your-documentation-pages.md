@@ -1,6 +1,7 @@
 # Adding structure to your documentation pages
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Make symbols easier to find by arranging them into groups and collections.
 
@@ -14,15 +15,15 @@ For a more tailored learning experience, use one or more of the following approa
 - Add symbol-specific extension files that organize nested symbols, such as methods and properties.
 - Use collections to group multiple symbols and introduce hierarchy to the navigation of your documentation pages.
 
-For more information about how to use DocC for adding structure to the documentation, see [`Adding Structure to Your Documentation Pages at Swift.org`](https://developer.apple.comhttps://www.swift.org/documentation/docc/adding-structure-to-your-documentation-pages).
+For more information about how to use DocC for adding structure to the documentation, see [Adding Structure to Your Documentation Pages at Swift.org](https://www.swift.org/documentation/docc/adding-structure-to-your-documentation-pages).
 
-##### Customize Your Documentations Landing Page
+##### Customize your documentation’s landing page
 
 A *landing page* provides an overview of your technology, introduces important terms, and organizes the resources within your *documentation catalog* — the files that enrich your source documentation comments. The landing page is an opportunity for you to ease the reader’s learning path, discuss key features of your technology, and offer motivation for the reader to return to when they need it.
 
-![Two side-by-side images of a framework’s top-level page. The image on the left shows the basic empty page that DocC generates by default. The image on the right shows a customized landing page that includes additional content and a color graphic.](/images/com.apple.Xcode/landing-page@2x.png)
+![Two side-by-side images of a framework’s top-level page. The image on the left shows the basic empty page that DocC generates by default. The image on the right shows a customized landing page that includes additional content and a color graphic.](https://developer.apple.com/tutorials/images/com.apple.Xcode/landing-page@2x.png)
 
-When you add a documentation catalog to your project, Xcode automatically includes an empty landing page. For more information, see [`Documenting apps, frameworks, and packages`](documenting-apps-frameworks-and-packages.md).
+When you add a documentation catalog to your project, Xcode automatically includes an empty landing page. For more information, see [Documenting apps, frameworks, and packages](./documenting-apps-frameworks-and-packages.md).
 
 If you need to manually add a landing page to your documentation catalog, follow these steps:
 
@@ -31,19 +32,19 @@ If you need to manually add a landing page to your documentation catalog, follow
 3. Select the Empty template in the Documentation section and click Next.
 4. Enter a filename and click Create. Xcode creates a Markdown file that contains only a placeholder for the page title.
 
-![A screenshot of Xcode’s file template chooser with the Empty template in a selected state in the Documentation section.](/images/com.apple.Xcode/empty-markdown-file@2x.png)
+![A screenshot of Xcode’s file template chooser with the Empty template in a selected state in the Documentation section.](https://developer.apple.com/tutorials/images/com.apple.Xcode/empty-markdown-file@2x.png)
 
 Use a filename that matches the target’s product module name. For example, for the `SlothCreator` framework, the filename is `SlothCreator.md`.
 
 > **Note**: For targets with spaces in the product name, Xcode replaces the spaces with underscores in the product module name. To find the product module name in an Xcode project, select the target in the project editor, click the Build Settings tab, and enter Product Module Name in the search field.
 
-##### Arrange Top Level Symbols Using Topic Groups
+##### Arrange top-level symbols using topic groups
 
 By default, DocC arranges the symbols in your project according to their kind. For example, the compiler generates topic groups for classes, structures, protocols, and so forth. You then add information to explain the relationships between those symbols.
 
 To help readers more easily navigate your framework, arrange symbols into groups with meaningful names. Place important symbols higher on the page, and nest supporting symbols inside other symbols. Use group names that are unique, mutually exclusive, and clear. Experiment with different arrangements to find what works best for you.
 
-![Two side-by-side images that show different arrangements of a framework’s top-level symbols. The image on the left shows the basic arrangement that DocC generates by default. The image on the right shows a custom arrangement that includes more descriptive headers and content.](/images/com.apple.Xcode/top-level-curation@2x.png)
+![Two side-by-side images that show different arrangements of a framework’s top-level symbols. The image on the left shows the basic arrangement that DocC generates by default. The image on the right shows a custom arrangement that includes more descriptive headers and content.](https://developer.apple.com/tutorials/images/com.apple.Xcode/top-level-curation@2x.png)
 
 To override the default organization and manually arrange the top-level symbols in your technology, add a Topics section to your technology’s landing page. Below any content already in the Markdown file, add a double hash (`##`), a space, and the `Topics` keyword.
 
@@ -70,17 +71,17 @@ After the Topics header, create a named section for each group using a triple ha
 - ``Sloth/Food``
 ```
 
-DocC uses the double backtick format to create symbol links, and to add the symbol’s type information and summary. For more information, see [`Formatting Your Documentation Content Swift.org`](https://developer.apple.comhttps://www.swift.org/documentation/docc/formatting-your-documentation-content).
+DocC uses the double backtick format to create symbol links, and to add the symbol’s type information and summary. For more information, see [Formatting Your Documentation Content Swift.org](https://www.swift.org/documentation/docc/formatting-your-documentation-content).
 
 When you rebuild your documentation, the documentation viewer reflects these organizational changes in the navigation pane and on the landing page, as the image above shows.
 
-##### Arrange Nested Symbols in Extension Files
+##### Arrange nested symbols in extension files
 
 Not all symbols appear on the top-level landing page. For example, classes and structures define methods and properties, and in some cases, nested classes or structures introduce additional levels of hierarchy.
 
 As with the top-level landing page, DocC generates default topic groups for nested symbols according to their type. Use extension files to override this default organization and provide a more appropriate structure for your symbols.
 
-![Two side-by-side images that show different arrangements of a symbol’s methods and properties. The image on the left shows the basic arrangement that DocC generates by default. The image on the right shows a custom arrangement that includes more descriptive headers and content.](/images/com.apple.Xcode/child-curation@2x.png)
+![Two side-by-side images that show different arrangements of a symbol’s methods and properties. The image on the left shows the basic arrangement that DocC generates by default. The image on the right shows a custom arrangement that includes more descriptive headers and content.](https://developer.apple.com/tutorials/images/com.apple.Xcode/child-curation@2x.png)
 
 To add an extension file to your documentation catalog for a specific symbol, do the following:
 
@@ -89,7 +90,7 @@ To add an extension file to your documentation catalog for a specific symbol, do
 3. Select the Extension File template in the Documentation section and click Next.
 4. Enter the symbol name as the filename and click Create.
 
-![A screenshot of Xcode’s file template chooser with the Extension File template in a selected state in the Documentation section.](/images/com.apple.Xcode/template-chooser@2x.png)
+![A screenshot of Xcode’s file template chooser with the Extension File template in a selected state in the Documentation section.](https://developer.apple.com/tutorials/images/com.apple.Xcode/template-chooser@2x.png)
 
 In the extension file, replace the `Symbol` placeholder with the absolute path to the symbol. The absolute path is the target’s product module name followed by the symbol name.
 

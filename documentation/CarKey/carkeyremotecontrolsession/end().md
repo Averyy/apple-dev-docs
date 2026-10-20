@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the session and stops the delivery of notifications for all vehicles in the session.
 

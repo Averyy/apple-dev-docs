@@ -1,7 +1,8 @@
 # eventAttribution
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object you use to send tap event attribution data to the browser for Private Click Measurement.
 
@@ -18,15 +19,20 @@ An object you use to send tap event attribution data to the browser for Private 
 var eventAttribution: UIEventAttribution? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIEventAttribution * eventAttribution;
+```
+
 #### Discussion
 
-For more information about preparing event attribution data, see [`UIEventAttribution`](https://developer.apple.com/documentation/uikit/uieventattribution).
+For more information about preparing event attribution data, see [`UIEventAttribution`](../../../UIKit/uieventattribution.md).
 
 ## See Also
 
-- [var entersReaderIfAvailable: Bool](sfsafariviewcontroller/configuration-swift.class/entersreaderifavailable.md)
+### Configuring a Safari View Controller
+- [var entersReaderIfAvailable: Bool](./entersreaderifavailable.md)
   A value that specifies whether Safari should enter Reader mode, if it is available.
-- [var barCollapsingEnabled: Bool](sfsafariviewcontroller/configuration-swift.class/barcollapsingenabled.md)
+- [var barCollapsingEnabled: Bool](./barcollapsingenabled.md)
 
 
 ---

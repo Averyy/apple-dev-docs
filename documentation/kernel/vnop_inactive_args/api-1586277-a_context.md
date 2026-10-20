@@ -1,14 +1,15 @@
 # a_context
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 vfs_context_t a_context;
 ```
 

@@ -1,7 +1,8 @@
 # space
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The space in which the position constraints are defined.
 
@@ -18,7 +19,8 @@ var space: ClothCoordinateSpace
 
 ## See Also
 
-- [var weight: Float](clothbodycomponent/targetshape/weight.md)
+### Configuring the target shape
+- [var weight: Float](./weight.md)
   The weight by which the body will be pulled towards this target shape.
 
 

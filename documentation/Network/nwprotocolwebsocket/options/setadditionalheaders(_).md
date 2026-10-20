@@ -1,7 +1,8 @@
 # setAdditionalHeaders(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets additional HTTP header fields to be sent by the client during the WebSocket handshake.
 
@@ -22,9 +23,10 @@ func setAdditionalHeaders(_ headers: [(name: String, value: String)])
 
 ## See Also
 
-- [func setSubprotocols([String])](nwprotocolwebsocket/options/setsubprotocols(_:).md)
+### Configuring Client Handshakes
+- [func setSubprotocols([String])](./setsubprotocols%28_%29.md)
   Adds to the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
-- [var skipHandshake: Bool](nwprotocolwebsocket/options/skiphandshake.md)
+- [var skipHandshake: Bool](./skiphandshake.md)
   A Boolean indicating whether the WebSocket protocol skips its handshake and begins framing data once the underlying connection is established.
 
 

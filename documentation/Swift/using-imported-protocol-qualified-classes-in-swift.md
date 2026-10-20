@@ -1,6 +1,7 @@
 # Using Imported Protocol-Qualified Classes in Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Learn how imported Objective-C protocol-qualified classes and metaclasses are represented.
 
@@ -32,7 +33,8 @@ func doSomething(for codingClass: NSCoding.Type)
 
 ## See Also
 
-- [Using Imported Lightweight Generics in Swift](using-imported-lightweight-generics-in-swift.md)
+### Objective-C APIs
+- [Using Imported Lightweight Generics in Swift](./using-imported-lightweight-generics-in-swift.md)
   Understand the constraints of imported Obj-C lightweight generic type declarations.
 
 

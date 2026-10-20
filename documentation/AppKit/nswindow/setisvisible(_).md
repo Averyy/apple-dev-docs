@@ -1,12 +1,13 @@
 # setIsVisible(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the window’s visible state to the value you specify.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Sets the window’s visible state to the value you specify.
 func setIsVisible(_ flag: Bool)
 ```
 
+```objc
+- (void) setIsVisible:(BOOL) flag;
+```
+
 ## See Also
 
-- [func setIsMiniaturized(Bool)](nswindow/setisminiaturized(_:).md)
+### Setting Scripting Attributes
+- [func setIsMiniaturized(Bool)](./setisminiaturized%28_%29.md)
   Sets the window’s miniaturized state to the value you specify.
-- [func setIsZoomed(Bool)](nswindow/setiszoomed(_:).md)
+- [func setIsZoomed(Bool)](./setiszoomed%28_%29.md)
   Sets the window’s zoomed state to the value you specify.
 
 

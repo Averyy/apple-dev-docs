@@ -1,7 +1,8 @@
 # maxOSLogArgumentCount
 
 **Framework**: os  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of interpolated expressions that a log message may contain.
 
@@ -11,7 +12,7 @@ The maximum number of interpolated expressions that a log message may contain.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -31,9 +32,10 @@ let message = "Created a file with ID \(fileID)"
 
 ## See Also
 
-- [var bufferSize: Int](oslogmessage/buffersize.md)
+### Getting the Message Details
+- [var bufferSize: Int](./oslogmessage/buffersize.md)
   The byte size of the buffer that the logging system receives.
-- [let interpolation: OSLogInterpolation](oslogmessage/interpolation.md)
+- [let interpolation: OSLogInterpolation](./oslogmessage/interpolation.md)
   The log message’s string interpolation.
 
 

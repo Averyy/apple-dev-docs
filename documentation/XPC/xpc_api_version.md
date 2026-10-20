@@ -1,18 +1,19 @@
 # XPC_API_VERSION
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the XPC API.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The version of the XPC API.
 var XPC_API_VERSION: Int32 { get }
 ```
 
+```c
+#define XPC_API_VERSION
+```
+
 ## See Also
 
-- [var IPHONE_SIMULATOR_HOST_MIN_VERSION_REQUIRED: Int32](iphone_simulator_host_min_version_required.md)
+### Version Details
+- [var IPHONE_SIMULATOR_HOST_MIN_VERSION_REQUIRED: Int32](./iphone_simulator_host_min_version_required.md)
   The minimum required Simulator host version.
 
 

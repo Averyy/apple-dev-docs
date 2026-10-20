@@ -1,7 +1,8 @@
 # host
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The security origin’s host.
 
@@ -18,9 +19,14 @@ The security origin’s host.
 var host: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * host;
+```
+
 ## See Also
 
-- [var port: Int](wksecurityorigin/port.md)
+### Getting the Host Information
+- [var port: Int](./port.md)
   The security origin’s port.
 
 

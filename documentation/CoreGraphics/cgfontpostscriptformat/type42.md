@@ -1,18 +1,19 @@
 # CGFontPostScriptFormat.type42
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant representing a Type 42 font format.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A constant representing a Type 42 font format.
 case type42
 ```
 
+```c
+kCGFontPostScriptFormatType42
+```
+
 #### Description
 
-This is documented in *Adobe Technical Note 5012, The Type 42 Font Format Specification*, which is available from [`http://partners.adobe.com/`](https://developer.apple.comhttp://partners.adobe.com/).
+This is documented in *Adobe Technical Note 5012, The Type 42 Font Format Specification*, which is available from [http://partners.adobe.com/](http://partners.adobe.com/).
 
 ## See Also
 
-- [CGFontPostScriptFormat.type1](cgfontpostscriptformat/type1.md)
+### Constants
+- [CGFontPostScriptFormat.type1](./type1.md)
   A Type 1 font format.
-- [CGFontPostScriptFormat.type3](cgfontpostscriptformat/type3.md)
+- [CGFontPostScriptFormat.type3](./type3.md)
   A Type 3 PostScript format.
 
 

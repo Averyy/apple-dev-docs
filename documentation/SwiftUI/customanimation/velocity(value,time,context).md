@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calculates the velocity of the animation at a specified time.
@@ -32,13 +33,19 @@ Implement this method to provide the velocity of the animation at a given time. 
 
 The default implementation of this method returns `nil`.
 
-> **Note**: State and environment data is available to this method via the `context` parameter, but `context` is read-only. This behavior is different than with [`animate(value:time:context:)`](customanimation/animate(value:time:context:).md) and [`shouldMerge(previous:value:time:context:)`](customanimation/shouldmerge(previous:value:time:context:).md) where `context` is an `inout` parameter, letting you change the context including state data of the animation. For more information about managing state data in a custom animation, see [`AnimationContext`](animationcontext.md).
+> **Note**: State and environment data is available to this method via the `context` parameter, but `context` is read-only. This behavior is different than with [`animate(value:time:context:)`](./animate%28value,time,context%29.md) and [`shouldMerge(previous:value:time:context:)`](./shouldmerge%28previous,value,time,context%29.md) where `context` is an `inout` parameter, letting you change the context including state data of the animation. For more information about managing state data in a custom animation, see [`AnimationContext`](../animationcontext.md).
 
 ## Parameters
 
 - `value`: The vector to animate towards.
 - `time`: The amount of time since the start of the animation.
-- `context`: An instance of [`AnimationContext`](animationcontext.md) that provides access to state and the animation environment.
+- `context`: An instance of [`AnimationContext`](../animationcontext.md) that provides access to state and the animation environment.
+
+## Default Implementations
+
+### CustomAnimation Implementations
+- [func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V?](./velocity%28value,time,context%29-78qjv.md)
+  Calculates the velocity of the animation at a specified time.
 
 
 ---

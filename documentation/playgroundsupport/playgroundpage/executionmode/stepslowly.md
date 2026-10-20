@@ -1,7 +1,8 @@
 # PlaygroundPage.ExecutionMode.stepSlowly
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 An execution mode that executes code statement by statement with extra pauses between each.
 
@@ -17,7 +18,8 @@ case stepSlowly
 
 ## See Also
 
-- [PlaygroundPage.ExecutionMode.step](playgroundpage/executionmode/step.md)
+### Stepping Through Code
+- [PlaygroundPage.ExecutionMode.step](./step.md)
   An execution mode that executes code statement by statement.
 
 

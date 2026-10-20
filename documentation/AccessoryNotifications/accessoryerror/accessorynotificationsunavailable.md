@@ -1,7 +1,8 @@
 # AccessoryError.accessoryNotificationsUnavailable
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates accessory notifications aren’t available in the current configuration.
 
@@ -16,9 +17,10 @@ case accessoryNotificationsUnavailable
 
 ## See Also
 
-- [AccessoryError.unsupportedAccessory](accessoryerror/unsupportedaccessory.md)
+### Platform and accessory errors
+- [AccessoryError.unsupportedAccessory](./unsupportedaccessory.md)
   An error that indicates the system doesn’t support notification forwarding for the provided accessory.
-- [AccessoryError.unsupportedPlatform](accessoryerror/unsupportedplatform.md)
+- [AccessoryError.unsupportedPlatform](./unsupportedplatform.md)
   An error that indicates the current platform doesn’t support notification forwarding.
 
 

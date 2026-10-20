@@ -1,7 +1,8 @@
 # fileHandleForReading
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s read file handle.
 
@@ -20,17 +21,22 @@ The receiver’s read file handle.
 var fileHandleForReading: FileHandle { get }
 ```
 
+```objc
+@property (retain, readonly) NSFileHandle * fileHandleForReading;
+```
+
 #### Discussion
 
 The descriptor represented by this object is deleted, and the object itself is automatically deallocated when the receiver is deallocated.
 
-You use the returned file handle to read from the pipe using `NSFileHandle`’s read methods—[`availableData`](filehandle/availabledata.md), [`readDataToEndOfFile()`](filehandle/readdatatoendoffile().md), and [`readData(ofLength:)`](filehandle/readdata(oflength:).md).
+You use the returned file handle to read from the pipe using `NSFileHandle`’s read methods—[`availableData`](../filehandle/availabledata.md), [`readDataToEndOfFile()`](../filehandle/readdatatoendoffile%28%29.md), and [`readData(ofLength:)`](../filehandle/readdata%28oflength%29.md).
 
-You don’t need to send [`closeFile()`](filehandle/closefile().md) to this object or explicitly release the object after you have finished using it.
+You don’t need to send [`closeFile()`](../filehandle/closefile%28%29.md) to this object or explicitly release the object after you have finished using it.
 
 ## See Also
 
-- [var fileHandleForWriting: FileHandle](pipe/filehandleforwriting.md)
+### Getting the File Handles for a Pipe
+- [var fileHandleForWriting: FileHandle](./filehandleforwriting.md)
   The receiver’s write file handle.
 
 

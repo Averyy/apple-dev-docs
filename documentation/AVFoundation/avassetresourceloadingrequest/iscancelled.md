@@ -1,7 +1,8 @@
 # isCancelled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request has been cancelled.
 
@@ -19,21 +20,26 @@ A Boolean value that indicates whether the request has been cancelled.
 var isCancelled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the resource loader cancels the loading of a request, just prior to sending the message [`resourceLoader(_:didCancel:)`](avassetresourceloaderdelegate/resourceloader(_:didcancel:)-3nl51.md) to the delegate.
+[`true`](../../Swift/true.md) when the resource loader cancels the loading of a request, just prior to sending the message [`resourceLoader(_:didCancel:)`](../avassetresourceloaderdelegate/resourceloader%28_,didcancel%29-3nl51.md) to the delegate.
 
 ## See Also
 
-- [var response: URLResponse?](avassetresourceloadingrequest/response.md)
+### Reporting the result of the request
+- [var response: URLResponse?](./response.md)
   The URL response for the loading request.
-- [func finishLoading()](avassetresourceloadingrequest/finishloading.md)
+- [func finishLoading()](./finishloading%28%29.md)
   Causes the receiver to treat the processing of the request as complete.
-- [func finishLoading(with: (any Error)?)](avassetresourceloadingrequest/finishloading(with:).md)
+- [func finishLoading(with: (any Error)?)](./finishloading%28with%29.md)
   Causes the receiver to handle the failure to load a resource for which a resource loader’s delegate took responsibility.
-- [var isFinished: Bool](avassetresourceloadingrequest/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value that indicates whether loading of the resource has finished.
-- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](avassetresourceloadingrequest/finishloading(with:data:redirect:).md)
+- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](./finishloading%28with,data,redirect%29.md)
   Causes the receiver to finish loading a resource for which a resource loader’s delegate took responsibility .
 
 

@@ -1,7 +1,8 @@
 # Date.RelativeFormatStyle.Presentation
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”.
 
@@ -27,27 +28,28 @@ Cases include `named` and `numeric`.
 ## Topics
 
 ### Modifying Relative Date Style Presentations
-- [static var named: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.struct/named.md)
+- [static var named: Date.RelativeFormatStyle.Presentation](./presentation-swift.struct/named.md)
   A style that uses named styles to describe relative dates, such as “yesterday”, “last week”, or “next week”.
-- [static var numeric: Date.RelativeFormatStyle.Presentation](date/relativeformatstyle/presentation-swift.struct/numeric.md)
+- [static var numeric: Date.RelativeFormatStyle.Presentation](./presentation-swift.struct/numeric.md)
   A style that uses a numeric style to describe relative dates, such as “1 day ago” or “in 3 weeks”.
 ### Comparing Relative Date Style Presentations
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.RelativeFormatStyle.UnitsStyle](date/relativeformatstyle/unitsstyle-swift.struct.md)
+### Supporting Types
+- [Date.RelativeFormatStyle.UnitsStyle](./unitsstyle-swift.struct.md)
   A type that represents the style to use when formatting the units of relative dates.
 
 

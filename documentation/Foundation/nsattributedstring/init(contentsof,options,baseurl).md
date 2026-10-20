@@ -1,7 +1,8 @@
 # init(contentsOf:options:baseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from the contents of a specified URL that contains Markdown-formatted data using the provided options.
 
@@ -28,9 +29,10 @@ convenience init(contentsOf url: URL, options: AttributedString.MarkdownParsingO
 
 ## See Also
 
-- [convenience init(markdown: String, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](nsattributedstring/init(markdown:options:baseurl:)-m9n.md)
+### Creating from markdown
+- [convenience init(markdown: String, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,options,baseurl%29-m9n.md)
   Creates an attributed string from a Markdown-formatted string using the provided options.
-- [convenience init(markdown: Data, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](nsattributedstring/init(markdown:options:baseurl:)-5nru2.md)
+- [convenience init(markdown: Data, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28markdown,options,baseurl%29-5nru2.md)
   Creates an attributed string from Markdown-formatted data using the provided options.
 
 

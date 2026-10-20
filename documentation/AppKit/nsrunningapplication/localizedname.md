@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the localized name of the application.
 
@@ -14,29 +15,34 @@ Indicates the localized name of the application.
 var localizedName: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * localizedName;
+```
+
 #### Discussion
 
 The value of this property is dependent on the current localization of the application and is suitable for presentation to the user.
 
 ## See Also
 
-- [var icon: NSImage?](nsrunningapplication/icon.md)
+### Application information
+- [var icon: NSImage?](./icon.md)
   Returns the icon for the receiver’s application.
-- [var bundleIdentifier: String?](nsrunningapplication/bundleidentifier.md)
+- [var bundleIdentifier: String?](./bundleidentifier.md)
   Indicates the `CFBundleIdentifier` of the application.
-- [var bundleURL: URL?](nsrunningapplication/bundleurl.md)
+- [var bundleURL: URL?](./bundleurl.md)
   Indicates the URL to the application’s bundle.
-- [var executableArchitecture: Int](nsrunningapplication/executablearchitecture.md)
+- [var executableArchitecture: Int](./executablearchitecture.md)
   Indicates the executing processor architecture for the application.
-- [var executableURL: URL?](nsrunningapplication/executableurl.md)
+- [var executableURL: URL?](./executableurl.md)
   Indicates the URL to the application’s executable.
-- [var launchDate: Date?](nsrunningapplication/launchdate.md)
+- [var launchDate: Date?](./launchdate.md)
   Indicates the date when the application was launched.
-- [var isFinishedLaunching: Bool](nsrunningapplication/isfinishedlaunching.md)
+- [var isFinishedLaunching: Bool](./isfinishedlaunching.md)
   A Boolean value that determines whether the receiver’s process has finished launching.
-- [var processIdentifier: pid_t](nsrunningapplication/processidentifier.md)
+- [var processIdentifier: pid_t](./processidentifier.md)
   Indicates the process identifier (pid) of the application.
-- [var ownsMenuBar: Bool](nsrunningapplication/ownsmenubar.md)
+- [var ownsMenuBar: Bool](./ownsmenubar.md)
   Returns whether the application owns the current menu bar.
 
 

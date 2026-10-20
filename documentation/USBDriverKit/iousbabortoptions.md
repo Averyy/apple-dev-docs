@@ -1,7 +1,8 @@
 # IOUSBAbortOptions
 
 **Framework**: USBDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options to use when aborting an I/O request.
 
@@ -10,21 +11,22 @@ Options to use when aborting an I/O request.
 
 ## Declaration
 
-```swift
+```c
 enum IOUSBAbortOptions : unsigned int;
 ```
 
 ## Topics
 
 ### Getting the Options
-- [kIOUSBAbortAsynchronous](iousbabortoptions/kiousbabortasynchronous.md)
+- [kIOUSBAbortAsynchronous](./iousbabortoptions/kiousbabortasynchronous.md)
   Enqueue the abort request and return immediately.
-- [kIOUSBAbortSynchronous](iousbabortoptions/kiousbabortsynchronous.md)
+- [kIOUSBAbortSynchronous](./iousbabortoptions/kiousbabortsynchronous.md)
   Enqueue the abort request and wait for it to finish.
 
 ## See Also
 
-- [Abort](iousbhostpipe/abort.md)
+### Aborting I/O Requests
+- [Abort](./iousbhostpipe/abort.md)
   Aborts all of the pipe’s pending I/O requests.
 
 

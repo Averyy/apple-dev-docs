@@ -1,7 +1,8 @@
 # GameCenterAchievementV2UpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center achievement update request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center achievement update request reso
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementV2UpdateRequest.Data
 ```
 
@@ -23,14 +24,14 @@ object GameCenterAchievementV2UpdateRequest.Data
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementV2UpdateRequest.Data.Attributes](gamecenterachievementv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterAchievementV2UpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a Game Center achievement update request.
 
 ## Properties
 
 - `attributes` (GameCenterAchievementV2UpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievements`
 
 
 ---

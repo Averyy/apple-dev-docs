@@ -1,7 +1,8 @@
 # Calendar.Component.weekday
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the weekday unit.
 
@@ -26,13 +27,14 @@ The weekday units are the numbers `1` through `N` (where for the Gregorian calen
 
 ## See Also
 
-- [Calendar.Component.weekOfYear](calendar/component/weekofyear.md)
+### Specifying Weeks and Days
+- [Calendar.Component.weekOfYear](./weekofyear.md)
   Identifier for the week of the year unit.
-- [Calendar.Component.weekOfMonth](calendar/component/weekofmonth.md)
+- [Calendar.Component.weekOfMonth](./weekofmonth.md)
   Identifier for the week of the month calendar unit.
-- [Calendar.Component.weekdayOrdinal](calendar/component/weekdayordinal.md)
+- [Calendar.Component.weekdayOrdinal](./weekdayordinal.md)
   Identifier for the weekday ordinal unit.
-- [Calendar.Component.day](calendar/component/day.md)
+- [Calendar.Component.day](./day.md)
   Identifier for the day unit.
 
 

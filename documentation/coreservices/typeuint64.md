@@ -1,7 +1,8 @@
 # typeUInt64
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 64-bit unsigned integer.
 

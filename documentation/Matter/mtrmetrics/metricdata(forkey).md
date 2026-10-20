@@ -1,7 +1,8 @@
 # metricData(forKey:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func metricData(forKey key: String) -> MTRMetricData?
+```
+
+```objc
+- (MTRMetricData *) metricDataForKey:(NSString *) key;
 ```
 
 

@@ -1,7 +1,8 @@
 # ASWebAuthenticationSessionErrorDomain
 
 **Framework**: Authentication Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for a web authentication session.
 
@@ -20,11 +21,16 @@ The error domain for a web authentication session.
 let ASWebAuthenticationSessionErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const ASWebAuthenticationSessionErrorDomain;
+```
+
 ## See Also
 
-- [struct ASWebAuthenticationSessionError](aswebauthenticationsessionerror.md)
+### Recognizing Errors
+- [struct ASWebAuthenticationSessionError](./aswebauthenticationsessionerror.md)
   Errors that a web authentication session can generate.
-- [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
+- [ASWebAuthenticationSessionError.Code](./aswebauthenticationsessionerror/code.md)
   The error code for a web authentication session error.
 
 

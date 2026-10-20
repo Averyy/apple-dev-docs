@@ -1,7 +1,8 @@
 # GCRacingWheel
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a physical racing wheel controller connected to a device.
 
@@ -15,70 +16,75 @@ An object that represents a physical racing wheel controller connected to a devi
 class GCRacingWheel
 ```
 
+```objc
+@interface GCRacingWheel : NSObject
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](./handling-input-events.md)
 
 ## Topics
 
 ### Discovering racing wheels
-- [class var connectedRacingWheels: Set<GCRacingWheel>](gcracingwheel/connectedracingwheels.md)
+- [class var connectedRacingWheels: Set<GCRacingWheel>](./gcracingwheel/connectedracingwheels.md)
   The racing wheels connected to the device.
-- [static let GCRacingWheelDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
+- [static let GCRacingWheelDidConnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcracingwheeldidconnect.md)
   A notification that posts after a racing wheel controller connects to the device.
-- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
+- [static let GCRacingWheelDidDisconnect: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/gcracingwheeldiddisconnect.md)
   A notification that posts after a racing wheel controller disconnects from the device.
 ### Getting events
-- [func acquireDevice() throws](gcracingwheel/acquiredevice.md)
+- [func acquireDevice() throws](./gcracingwheel/acquiredevice%28%29.md)
   Starts receiving events from the racing wheel.
-- [func relinquishDevice()](gcracingwheel/relinquishdevice.md)
+- [func relinquishDevice()](./gcracingwheel/relinquishdevice%28%29.md)
   Stops receiving events from the racing wheel.
-- [var isAcquired: Bool](gcracingwheel/isacquired.md)
+- [var isAcquired: Bool](./gcracingwheel/isacquired.md)
   A Boolean value that indicates whether the racing wheel sends events to the app.
 ### Accessing the controller profile
-- [var wheelInput: GCRacingWheelInput](gcracingwheel/wheelinput.md)
+- [var wheelInput: GCRacingWheelInput](./gcracingwheel/wheelinput.md)
   The physical input profile for the racing wheel.
 ### Creating snapshots
-- [func capture() -> GCRacingWheel](gcracingwheel/capture.md)
+- [func capture() -> GCRacingWheel](./gcracingwheel/capture%28%29.md)
   Returns a snapshot of the racing wheel with its current element values.
-- [var isSnapshot: Bool](gcracingwheel/issnapshot.md)
+- [var isSnapshot: Bool](./gcracingwheel/issnapshot.md)
   A Boolean value that indicates whether the object is a snapshot of a racing wheel.
 ### Structures
-- [GCRacingWheel.DidConnectMessage](gcracingwheel/didconnectmessage.md)
+- [GCRacingWheel.DidConnectMessage](./gcracingwheel/didconnectmessage.md)
   A message that posts after a racing wheel accessory connects to the device.
-- [GCRacingWheel.DidDisconnectMessage](gcracingwheel/diddisconnectmessage.md)
+- [GCRacingWheel.DidDisconnectMessage](./gcracingwheel/diddisconnectmessage.md)
   A message that posts after a racing wheel accessory disconnects from the device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCDevice](gcdevice.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCDevice](./gcdevice.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Game Controllers](supporting-game-controllers.md)
+### Game controllers
+- [Supporting Game Controllers](./supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
-- [Letting players use their second-generation Siri Remote as a game controller](letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
+- [Letting players use their second-generation Siri Remote as a game controller](./letting-players-use-their-second-generation-siri-remote-as-a-game-controller.md)
   Support the second-generation Siri Remote as a game controller in your Apple TV game.
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](./discovering-and-tracking-spatial-game-controllers-and-styli.md)
   Receive controller and stylus input to interact with content in your augmented reality app.
-- [protocol GCDevice](gcdevice.md)
+- [protocol GCDevice](./gcdevice.md)
   A protocol that defines a common interface for game input devices.
-- [class GCController](gccontroller.md)
+- [class GCController](./gccontroller.md)
   A representation of a real game controller, a virtual controller, or a snapshot of a controller.
-- [class GCKeyboard](gckeyboard.md)
+- [class GCKeyboard](./gckeyboard.md)
   An object that represents a physical keyboard connected to a device.
-- [class GCMouse](gcmouse.md)
+- [class GCMouse](./gcmouse.md)
   An object that represents a physical mouse connected to a device.
-- [class GCStylus](gcstylus.md)
+- [class GCStylus](./gcstylus.md)
   An object that represents a physical stylus connected to the device.
 
 

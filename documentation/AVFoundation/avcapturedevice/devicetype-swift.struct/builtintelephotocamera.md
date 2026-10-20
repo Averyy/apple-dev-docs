@@ -1,7 +1,8 @@
 # builtInTelephotoCamera
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A built-in camera device type with a longer focal length than a wide-angle camera.
 
@@ -17,25 +18,30 @@ A built-in camera device type with a longer focal length than a wide-angle camer
 static let builtInTelephotoCamera: AVCaptureDevice.DeviceType
 ```
 
+```c
+extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInTelephotoCamera;
+```
+
 #### Discussion
 
-You can only discover this device type using an [`AVCaptureDevice.DiscoverySession`](avcapturedevice/discoverysession.md).
+You can only discover this device type using an [`AVCaptureDevice.DiscoverySession`](../discoverysession.md).
 
 ## See Also
 
-- [static let builtInWideAngleCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md)
+### Cameras
+- [static let builtInWideAngleCamera: AVCaptureDevice.DeviceType](./builtinwideanglecamera.md)
   A built-in wide-angle camera device type.
-- [static let builtInUltraWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinultrawidecamera.md)
+- [static let builtInUltraWideCamera: AVCaptureDevice.DeviceType](./builtinultrawidecamera.md)
   A built-in camera device type with a shorter focal length than a wide-angle camera.
-- [static let builtInDualCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtindualcamera.md)
+- [static let builtInDualCamera: AVCaptureDevice.DeviceType](./builtindualcamera.md)
   A built-in camera device type that consists of a wide-angle and telephoto camera.
-- [static let builtInDualWideCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtindualwidecamera.md)
+- [static let builtInDualWideCamera: AVCaptureDevice.DeviceType](./builtindualwidecamera.md)
   A built-in camera device type that consists of two cameras of fixed focal length, one ultrawide angle and one wide angle.
-- [static let builtInTripleCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtintriplecamera.md)
+- [static let builtInTripleCamera: AVCaptureDevice.DeviceType](./builtintriplecamera.md)
   A built-in camera device type that consists of three cameras of fixed focal length, one ultrawide angle, one wide angle, and one telephoto.
-- [static let continuityCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/continuitycamera.md)
+- [static let continuityCamera: AVCaptureDevice.DeviceType](./continuitycamera.md)
   A Continuity Camera device type.
-- [static let builtInDuoCamera: AVCaptureDevice.DeviceType](avcapturedevice/devicetype-swift.struct/builtinduocamera.md)
+- [static let builtInDuoCamera: AVCaptureDevice.DeviceType](./builtinduocamera.md)
   A built-in dual camera device type.
 
 

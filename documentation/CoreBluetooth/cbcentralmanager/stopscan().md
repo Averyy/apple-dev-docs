@@ -1,7 +1,8 @@
 # stopScan()
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the central manager to stop scanning for peripherals.
 
@@ -20,13 +21,18 @@ Asks the central manager to stop scanning for peripherals.
 func stopScan()
 ```
 
+```objc
+- (void) stopScan;
+```
+
 ## See Also
 
-- [func scanForPeripherals(withServices: [CBUUID]?, options: [String : Any]?)](cbcentralmanager/scanforperipherals(withservices:options:).md)
+### Scanning or Stopping Scans of Peripherals
+- [func scanForPeripherals(withServices: [CBUUID]?, options: [String : Any]?)](./scanforperipherals%28withservices,options%29.md)
   Scans for peripherals that are advertising services.
-- [Peripheral Scanning Options](peripheral-scanning-options.md)
+- [Peripheral Scanning Options](../peripheral-scanning-options.md)
   Keys used to pass options when scanning for peripherals.
-- [var isScanning: Bool](cbcentralmanager/isscanning.md)
+- [var isScanning: Bool](./isscanning.md)
   A Boolean value that indicates whether the central is currently scanning.
 
 

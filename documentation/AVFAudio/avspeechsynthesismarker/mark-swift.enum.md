@@ -1,7 +1,8 @@
 # AVSpeechSynthesisMarker.Mark
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the type of text.
 
@@ -20,43 +21,48 @@ Constants that describe the type of text.
 enum Mark
 ```
 
+```c
+enum AVSpeechSynthesisMarkerMark : NSInteger;
+```
+
 ## Topics
 
 ### Creating a mark
-- [init?(rawValue: Int)](avspeechsynthesismarker/mark-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mark-swift.enum/init%28rawvalue%29.md)
 ### Identifying marker types
-- [AVSpeechSynthesisMarker.Mark.word](avspeechsynthesismarker/mark-swift.enum/word.md)
+- [AVSpeechSynthesisMarker.Mark.word](./mark-swift.enum/word.md)
   A type of text that represents a word.
-- [AVSpeechSynthesisMarker.Mark.sentence](avspeechsynthesismarker/mark-swift.enum/sentence.md)
+- [AVSpeechSynthesisMarker.Mark.sentence](./mark-swift.enum/sentence.md)
   A type of text that represents a sentence.
-- [AVSpeechSynthesisMarker.Mark.paragraph](avspeechsynthesismarker/mark-swift.enum/paragraph.md)
+- [AVSpeechSynthesisMarker.Mark.paragraph](./mark-swift.enum/paragraph.md)
   A type of text that represents a paragraph.
-- [AVSpeechSynthesisMarker.Mark.phoneme](avspeechsynthesismarker/mark-swift.enum/phoneme.md)
+- [AVSpeechSynthesisMarker.Mark.phoneme](./mark-swift.enum/phoneme.md)
   A type of text that represents a phoneme.
-- [AVSpeechSynthesisMarker.Mark.bookmark](avspeechsynthesismarker/mark-swift.enum/bookmark.md)
+- [AVSpeechSynthesisMarker.Mark.bookmark](./mark-swift.enum/bookmark.md)
   A Speech Synthesis Markup Language (SSML) mark tag.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var mark: AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.property.md)
+### Inspecting a marker
+- [var mark: AVSpeechSynthesisMarker.Mark](./mark-swift.property.md)
   The type that describes the text.
-- [var bookmarkName: String](avspeechsynthesismarker/bookmarkname.md)
+- [var bookmarkName: String](./bookmarkname.md)
   A string that represents the name of a bookmark.
-- [var phoneme: String](avspeechsynthesismarker/phoneme.md)
+- [var phoneme: String](./phoneme.md)
   A string that represents a distinct sound.
-- [var textRange: NSRange](avspeechsynthesismarker/textrange.md)
+- [var textRange: NSRange](./textrange.md)
   The location and length of the request’s text.
-- [var byteSampleOffset: Int](avspeechsynthesismarker/bytesampleoffset.md)
+- [var byteSampleOffset: Int](./bytesampleoffset.md)
   The byte offset into the audio buffer.
 
 

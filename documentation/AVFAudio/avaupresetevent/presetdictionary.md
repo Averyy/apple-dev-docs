@@ -1,7 +1,8 @@
 # presetDictionary
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary that contains the preset.
 
@@ -19,11 +20,16 @@ The dictionary that contains the preset.
 var presetDictionary: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary * presetDictionary;
+```
+
 ## See Also
 
-- [var scope: UInt32](avaupresetevent/scope.md)
+### Configuring a preset event
+- [var scope: UInt32](./scope.md)
   The audio unit scope.
-- [var element: UInt32](avaupresetevent/element.md)
+- [var element: UInt32](./element.md)
   The element index in the scope.
 
 

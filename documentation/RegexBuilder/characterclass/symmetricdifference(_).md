@@ -1,7 +1,8 @@
 # symmetricDifference(_:)
 
 **Framework**: RegexBuilder  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a character class matching elements in one or the other, but not both, of this class and the given class.
 
@@ -11,7 +12,7 @@ Returns a character class matching elements in one or the other, but not both, o
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # IOUserAudioObjectPropertyScope
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A four character code which, along with the selector and element, identify a specific piece of information about an audio object.
 
@@ -10,7 +11,7 @@ A four character code which, along with the selector and element, identify a spe
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioObjectPropertyScope : uint32_t;
 ```
 
@@ -21,22 +22,23 @@ The scope specifies the section of the object in which to look for the property,
 ## Topics
 
 ### Property Scopes
-- [Global](audiodriverkit/iouseraudioobjectpropertyscope/global.md)
+- [Global](./iouseraudioobjectpropertyscope/global.md)
   The scope for properties that apply to the object as a whole.
-- [Input](audiodriverkit/iouseraudioobjectpropertyscope/input.md)
+- [Input](./iouseraudioobjectpropertyscope/input.md)
   The scope for properties that apply to the input side of an object.
-- [Output](audiodriverkit/iouseraudioobjectpropertyscope/output.md)
+- [Output](./iouseraudioobjectpropertyscope/output.md)
   The scope for properties that apply to the output side of an object.
-- [PlayThrough](audiodriverkit/iouseraudioobjectpropertyscope/playthrough.md)
+- [PlayThrough](./iouseraudioobjectpropertyscope/playthrough.md)
   The scope for properties that apply to the play-through side of an object.
 
 ## See Also
 
-- [Create](iouseraudiobooleancontrol/create.md)
+### Creating a Boolean Control
+- [Create](../iouseraudiobooleancontrol/create.md)
   Allocates and initializes an instance of the Boolean control class.
-- [init](iouseraudiobooleancontrol/init.md)
+- [init](../iouseraudiobooleancontrol/init.md)
   Initializes an instance of a Boolean control.
-- [IOUserAudioObjectPropertyElement](audiodriverkit/iouseraudioobjectpropertyelement.md)
+- [IOUserAudioObjectPropertyElement](./iouseraudioobjectpropertyelement.md)
   A four character code which, along with the selector and scope, identify a specific piece of information about an audio object.
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -18,9 +19,10 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [convenience init?(keyName: String)](cscustomattributekey/init(keyname:).md)
+### Creating a custom attribute
+- [convenience init?(keyName: String)](./init%28keyname%29.md)
   Returns a new custom attribute key with the specified name.
-- [init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool, multiValued: Bool)](cscustomattributekey/init(keyname:searchable:searchablebydefault:unique:multivalued:).md)
+- [init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool, multiValued: Bool)](./init%28keyname,searchable,searchablebydefault,unique,multivalued%29.md)
   Returns a new custom attribute key with the specified name and properties.
 
 

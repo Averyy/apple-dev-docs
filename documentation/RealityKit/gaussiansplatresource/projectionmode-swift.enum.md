@@ -1,7 +1,8 @@
 # GaussianSplatResource.ProjectionMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The technique the framework uses to project a 3D splat onto the 2D screen.
 
@@ -21,16 +22,16 @@ enum ProjectionMode
 ## Topics
 
 ### Enumeration Cases
-- [GaussianSplatResource.ProjectionMode.perspective](gaussiansplatresource/projectionmode-swift.enum/perspective.md)
+- [GaussianSplatResource.ProjectionMode.perspective](./projectionmode-swift.enum/perspective.md)
   Projects splats using a standard perspective projection.
-- [GaussianSplatResource.ProjectionMode.tangential](gaussiansplatresource/projectionmode-swift.enum/tangential.md)
+- [GaussianSplatResource.ProjectionMode.tangential](./projectionmode-swift.enum/tangential.md)
   Projects splats using a tangential approximation, which can reduce artifacts.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

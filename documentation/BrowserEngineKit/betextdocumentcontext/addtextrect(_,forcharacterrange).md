@@ -1,7 +1,8 @@
 # addTextRect(_:forCharacterRange:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a rectangle that corresponds to the specified character range in the document.
 
@@ -17,9 +18,13 @@ Adds a rectangle that corresponds to the specified character range in the docume
 func addTextRect(_ rect: CGRect, forCharacterRange range: NSRange)
 ```
 
+```objc
+- (void) addTextRect:(CGRect) rect forCharacterRange:(NSRange) range;
+```
+
 #### Discussion
 
-Specify the rectangle in the view coordinates of [`textInputView`](betextinput/textinputview.md).
+Specify the rectangle in the view coordinates of [`textInputView`](../betextinput/textinputview.md).
 
 
 ---

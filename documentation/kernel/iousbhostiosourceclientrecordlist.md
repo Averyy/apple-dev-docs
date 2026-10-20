@@ -1,7 +1,8 @@
 # IOUSBHostIOSourceClientRecordList
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a list of USB host input/output source client records.
 
@@ -10,7 +11,7 @@ A structure that represents a list of USB host input/output source client record
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBHostIOSourceClientRecordList {
     ...
 } IOUSBHostIOSourceClientRecordList;
@@ -19,13 +20,14 @@ typedef struct IOUSBHostIOSourceClientRecordList {
 ## Topics
 
 ### Instance Properties
-- [lh_first](iousbhostiosourceclientrecordlist/2882022-lh_first.md)
+- [lh_first](./iousbhostiosourceclientrecordlist/api-2882022-lh_first.md)
 
 ## See Also
 
-- [Building a Simple USB Driver](hardware_families/usb/building_a_simple_usb_driver.md)
+### Device Communication
+- [Building a Simple USB Driver](./hardware_families/usb/building_a_simple_usb_driver.md)
   Set up and load a driver that logs output to the Console app.
-- [IOUSBHostIOSourceClientRecordLink](iousbhostiosourceclientrecordlink.md)
+- [IOUSBHostIOSourceClientRecordLink](./iousbhostiosourceclientrecordlink.md)
   A structure that represents a USB host input/output source client record entry.
 
 

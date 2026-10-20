@@ -1,7 +1,8 @@
 # segmentType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type content this segment represents.
 
@@ -20,9 +21,14 @@ The type content this segment represents.
 var segmentType: AVPlayerItemSegment.SegmentType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVPlayerItemSegmentType segmentType;
+```
+
 ## See Also
 
-- [AVPlayerItemSegment.SegmentType](avplayeritemsegment/segmenttype-swift.enum.md)
+### Identifying the type
+- [AVPlayerItemSegment.SegmentType](./segmenttype-swift.enum.md)
   Constants that specify the type of segment.
 
 

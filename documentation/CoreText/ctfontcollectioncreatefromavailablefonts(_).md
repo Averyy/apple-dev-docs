@@ -1,7 +1,8 @@
 # CTFontCollectionCreateFromAvailableFonts(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new font collection containing all available fonts.
 
@@ -20,6 +21,10 @@ Returns a new font collection containing all available fonts.
 func CTFontCollectionCreateFromAvailableFonts(_ options: CFDictionary?) -> CTFontCollection
 ```
 
+```c
+extern CTFontCollectionRefCTFontCollectionCreateFromAvailableFonts(CFDictionaryRef options);
+```
+
 #### Return Value
 
 A new collection containing all fonts available to the current application.
@@ -30,11 +35,12 @@ A new collection containing all fonts available to the current application.
 
 ## See Also
 
-- [func CTFontCollectionCreateWithFontDescriptors(CFArray?, CFDictionary?) -> CTFontCollection](ctfontcollectioncreatewithfontdescriptors(_:_:).md)
+### Creating Font Collections
+- [func CTFontCollectionCreateWithFontDescriptors(CFArray?, CFDictionary?) -> CTFontCollection](./ctfontcollectioncreatewithfontdescriptors%28_,_%29.md)
   Returns a new font collection based on the given array of font descriptors.
-- [func CTFontCollectionCreateCopyWithFontDescriptors(CTFontCollection, CFArray?, CFDictionary?) -> CTFontCollection](ctfontcollectioncreatecopywithfontdescriptors(_:_:_:).md)
+- [func CTFontCollectionCreateCopyWithFontDescriptors(CTFontCollection, CFArray?, CFDictionary?) -> CTFontCollection](./ctfontcollectioncreatecopywithfontdescriptors%28_,_,_%29.md)
   Returns a copy of the original collection augmented with the given new font descriptors.
-- [func CTFontCollectionCreateMutableCopy(CTFontCollection) -> CTMutableFontCollection](ctfontcollectioncreatemutablecopy(_:).md)
+- [func CTFontCollectionCreateMutableCopy(CTFontCollection) -> CTMutableFontCollection](./ctfontcollectioncreatemutablecopy%28_%29.md)
   Creates a mutable copy of the original collection.
 
 

@@ -1,6 +1,8 @@
 # Selecting Photos and Videos in iOS
 
-**Framework**: PhotoKit
+**Framework**: PhotoKit  
+**Role**: Sample Code  
+**Download**: [SelectingPhotosAndVideosInIOS.zip](https://docs-assets.developer.apple.com/published/97b1531925cf/SelectingPhotosAndVideosInIOS.zip)
 
 Improve the user experience of finding and selecting assets by using the Photos picker.
 
@@ -12,13 +14,13 @@ Improve the user experience of finding and selecting assets by using the Photos 
 
 #### Overview
 
-This sample shows how to use the [`PhotoKit`](PhotoKit.md) Photos picker, and illustrates how to filter assets according to the user’s selection. After you have a selection, you use an item provider to load the asset to display in the app. The sample also explores the new configuration options in iOS 15.
+This sample shows how to use the [PhotoKit](./PhotoKit.md) Photos picker, and illustrates how to filter assets according to the user’s selection. After you have a selection, you use an item provider to load the asset to display in the app. The sample also explores the new configuration options in iOS 15.
 
-> **Note**: This sample code project is associated with WWDC21 session [`10046: Improve access to Photos in your app`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10046/).
+> **Note**: This sample code project is associated with WWDC21 session [10046: Improve access to Photos in your app](https://developer.apple.com/videos/play/wwdc2021/10046/).
 
 ##### Understand the Photos Picker Benefits
 
-Both [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) and [`UIImagePickerController`](https://developer.apple.com/documentation/uikit/uiimagepickercontroller) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
+Both [`PHPickerViewController`](https://developer.apple.com/documentation/photosui/phpickerviewcontroller) and [`UIImagePickerController`](../UIKit/uiimagepickercontroller.md) use the out-of-process Photos picker user interface. The `PHPickerViewController` contains a powerful set of APIs that make it a great alternative to `UIImagePickerController`. `PHPickerViewController` improves stability and reliability, and includes several benefits to developers and users, such as the following:
 
 - Deferred image loading and recovery UI
 - Reliable handling of large and complex assets, like RAW and panoramic images
@@ -27,7 +29,7 @@ Both [`PHPickerViewController`](https://developer.apple.com/documentation/photos
 - Availability of [`PHLivePhoto`](https://developer.apple.com/documentation/photos/phlivephoto) objects without library access
 - Stricter validations against invalid inputs
 
-Apps don’t need to request photo library permission when using either class, so the sample app avoids requesting permission until it’s necessary. A camera app, photo editing app, or library browsing app needs to use much more of [`PhotoKit`](PhotoKit.md)‘s functionality, but an app that’s only setting a basic profile photo doesn’t need photo library permission. An app that only saves photos to the photo library can use the Add Photos Only permission level when requesting authorization.
+Apps don’t need to request photo library permission when using either class, so the sample app avoids requesting permission until it’s necessary. A camera app, photo editing app, or library browsing app needs to use much more of [PhotoKit](./PhotoKit.md)‘s functionality, but an app that’s only setting a basic profile photo doesn’t need photo library permission. An app that only saves photos to the photo library can use the Add Photos Only permission level when requesting authorization.
 
 ##### Configure the Photos Picker
 
@@ -74,7 +76,7 @@ present(picker, animated: true)
 
 Apps are responsible for presenting and dismissing the photo library. The sample adopts to the photo library delegate that notifies the app when the user cancels the flow.
 
-See [`Delivering an Enhanced Privacy Experience in Your Photos App`](delivering-an-enhanced-privacy-experience-in-your-photos-app.md) to learn more about requesting authorization and limited library capabilities.
+See [Delivering an Enhanced Privacy Experience in Your Photos App](./delivering-an-enhanced-privacy-experience-in-your-photos-app.md) to learn more about requesting authorization and limited library capabilities.
 
 ##### Retrieve the Selected Results
 
@@ -106,7 +108,7 @@ if selection.isEmpty {
 
 An item provider gives an app the ability to load assets asynchronously and on demand. Before loading an object, the sample verifies that the object is available.
 
-An item provider also allows for progress reporting. An asset may not be available on-device if iCloud Photos and Optimize Storage aren’t active. In this case, it can take some time to download a large asset. An item provider returns a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object that conveys ongoing progress to an app.
+An item provider also allows for progress reporting. An asset may not be available on-device if iCloud Photos and Optimize Storage aren’t active. In this case, it can take some time to download a large asset. An item provider returns a [`Progress`](../Foundation/progress.md) object that conveys ongoing progress to an app.
 
 ```swift
 guard let assetIdentifier = selectedAssetIdentifierIterator?.next() else { return }
@@ -142,13 +144,14 @@ if itemProvider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
 
 ## See Also
 
-- [Browsing and Modifying Photo Albums](browsing-and-modifying-photo-albums.md)
+### Sample code
+- [Browsing and Modifying Photo Albums](./browsing-and-modifying-photo-albums.md)
   Help people organize their photos into albums and browse photo collections in a grid-based layout using PhotoKit.
-- [Bringing Photos picker to your SwiftUI app](bringing-photos-picker-to-your-swiftui-app.md)
+- [Bringing Photos picker to your SwiftUI app](./bringing-photos-picker-to-your-swiftui-app.md)
   Select media assets by using a Photos picker view that SwiftUI provides.
-- [Implementing an inline Photos picker](implementing-an-inline-photos-picker.md)
+- [Implementing an inline Photos picker](./implementing-an-inline-photos-picker.md)
   Embed a system-provided, half-height Photos picker into your app’s view.
-- [Creating a Slideshow Project Extension for Photos](creating-a-slideshow-project-extension-for-photos.md)
+- [Creating a Slideshow Project Extension for Photos](./creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
 
 

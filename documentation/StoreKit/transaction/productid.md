@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product identifier of the Apple In-App Purchase.
 
@@ -26,11 +27,12 @@ You create product identifiers for Apple In-App Purchases in App Store Connect.
 
 ## See Also
 
-- [let appBundleID: String](transaction/appbundleid.md)
+### Identifying the app and product
+- [let appBundleID: String](./appbundleid.md)
   The bundle identifier for the app.
-- [let productType: Product.ProductType](transaction/producttype.md)
+- [let productType: Product.ProductType](./producttype.md)
   The type of the Apple In-App Purchase.
-- [let subscriptionGroupID: String?](transaction/subscriptiongroupid.md)
+- [let subscriptionGroupID: String?](./subscriptiongroupid.md)
   The identifier of the subscription group that the subscription belongs to.
 
 

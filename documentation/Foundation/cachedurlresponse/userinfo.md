@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cached response’s user info dictionary.
 
@@ -20,9 +21,13 @@ The cached response’s user info dictionary.
 var userInfo: [AnyHashable : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary * userInfo;
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../accessing-cached-data.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ This value is `nil` if there is no user info dictionary.
 
 ## See Also
 
-- [var data: Data](cachedurlresponse/data.md)
+### Getting cached URL response properties
+- [var data: Data](./data.md)
   The cached response’s data.
-- [var response: URLResponse](cachedurlresponse/response.md)
+- [var response: URLResponse](./response.md)
   The URL response object associated with the instance.
-- [var storagePolicy: URLCache.StoragePolicy](cachedurlresponse/storagepolicy.md)
+- [var storagePolicy: URLCache.StoragePolicy](./storagepolicy.md)
   The cached response’s storage policy.
 
 

@@ -1,7 +1,8 @@
 # replacements
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of replacement options.
 
@@ -24,11 +25,11 @@ var replacements: [any CVarArg]?
 
 Use this proprty when providing replacement values to localizable strings that use the `\(placeholder: )` syntax. You can then initialize localized strings with the following `String` initializers:
 
-- With a [`String.LocalizationValue`](string/localizationvalue.md): [`init(localized:options:table:bundle:locale:comment:)`](string/init(localized:options:table:bundle:locale:comment:).md)
-- With a Foundation `LocalizedStringResource`: [`init(localized:options:)`](string/init(localized:options:).md)
-- With a [`StaticString`](staticstring.md) that serves as an arbitary localization key: [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](string/init(localized:defaultvalue:options:table:bundle:locale:comment:).md)
+- With a [`String.LocalizationValue`](../localizationvalue.md): [`init(localized:options:table:bundle:locale:comment:)`](../init%28localized,options,table,bundle,locale,comment%29.md)
+- With a Foundation `LocalizedStringResource`: [`init(localized:options:)`](../init%28localized,options%29.md)
+- With a [`StaticString`](../../staticstring.md) that serves as an arbitary localization key: [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](../init%28localized,defaultvalue,options,table,bundle,locale,comment%29.md)
 
-The string interpolation that inserts the placeholder value takes an argument that represents the type of the replacement value. The following example inserts an [`Int`](int.md) value into the placeholder position.
+The string interpolation that inserts the placeholder value takes an argument that represents the type of the replacement value. The following example inserts an [`Int`](../../int.md) value into the placeholder position.
 
 ```swift
 // Assume the strings file or catalog contains "Position in queue: %lld."
@@ -40,7 +41,7 @@ let queueMessage = String (localized: "Position in queue: \(placeholder: .int)."
 // queueMessage == "Position in queue: 12." in en locale, "Position dans la file d’attente: 12." in fr locale.
 ```
 
-Foundation looks up the localized string from the app’s strings file or string catalog. For multiple replacements, provide the replacement values in the order of their placeholders in the development language. Localizers can change the word order as needed for the desired language. The following example shows this syntax with a [`String.LocalizationValue`](string/localizationvalue.md).
+Foundation looks up the localized string from the app’s strings file or string catalog. For multiple replacements, provide the replacement values in the order of their placeholders in the development language. Localizers can change the word order as needed for the desired language. The following example shows this syntax with a [`String.LocalizationValue`](../localizationvalue.md).
 
 ```swift
 // Assuming strings file or catalog contains the following entries for "%@’s %@":
@@ -56,7 +57,7 @@ let localized =  String(localized: replaceable,
 // In French locale: localized ==  "iPad de Anne"
 ```
 
-Use this same `\(placeholder:)` syntax for reordered replacements when your localization string is a `LocalizedStringResource` or a [`StaticString`](staticstring.md) that represents an arbitary localization key.
+Use this same `\(placeholder:)` syntax for reordered replacements when your localization string is a `LocalizedStringResource` or a [`StaticString`](../../staticstring.md) that represents an arbitary localization key.
 
 Populate this array with the same number of values that the format string requires, matching the type of each replacement. If this array contains too few replacements or if the types of the replacements do not match the placeholders, Foundation substitutes reasonable default values. These replacements include `0` for integers and `"(null)"` for objects.
 

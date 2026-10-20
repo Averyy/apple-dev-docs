@@ -1,7 +1,8 @@
 # SVGPathSegArcRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegArcRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [angle](svgpathsegarcrel/1632881-angle.md)
-- [largeArcFlag](svgpathsegarcrel/1631626-largearcflag.md)
-- [r1](svgpathsegarcrel/1630099-r1.md)
-- [r2](svgpathsegarcrel/1631723-r2.md)
-- [sweepFlag](svgpathsegarcrel/1629572-sweepflag.md)
-- [x](svgpathsegarcrel/1628821-x.md)
-- [y](svgpathsegarcrel/1629404-y.md)
+- [angle](./svgpathsegarcrel/api-1632881-angle.md)
+- [largeArcFlag](./svgpathsegarcrel/api-1631626-largearcflag.md)
+- [r1](./svgpathsegarcrel/api-1630099-r1.md)
+- [r2](./svgpathsegarcrel/api-1631723-r2.md)
+- [sweepFlag](./svgpathsegarcrel/api-1629572-sweepflag.md)
+- [x](./svgpathsegarcrel/api-1628821-x.md)
+- [y](./svgpathsegarcrel/api-1629404-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ymm_reg {
     ...
 };
@@ -17,7 +17,7 @@ struct ymm_reg {
 ## Topics
 
 ### Instance Properties
-- [ymm_reg](ymm_reg/2870484-ymm_reg.md)
+- [ymm_reg](./ymm_reg/api-2870484-ymm_reg.md)
 
 
 ---

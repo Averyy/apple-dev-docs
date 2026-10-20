@@ -1,7 +1,8 @@
 # canLoadInProcess
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -17,12 +18,17 @@
 static var canLoadInProcess: AudioComponentFlags { get }
 ```
 
+```c
+kAudioComponentFlag_CanLoadInProcess
+```
+
 ## See Also
 
-- [static var unsearchable: AudioComponentFlags](audiocomponentflags/unsearchable.md)
-- [static var sandboxSafe: AudioComponentFlags](audiocomponentflags/sandboxsafe.md)
-- [static var isV3AudioUnit: AudioComponentFlags](audiocomponentflags/isv3audiounit.md)
-- [static var requiresAsyncInstantiation: AudioComponentFlags](audiocomponentflags/requiresasyncinstantiation.md)
+### Flags
+- [static var unsearchable: AudioComponentFlags](./unsearchable.md)
+- [static var sandboxSafe: AudioComponentFlags](./sandboxsafe.md)
+- [static var isV3AudioUnit: AudioComponentFlags](./isv3audiounit.md)
+- [static var requiresAsyncInstantiation: AudioComponentFlags](./requiresasyncinstantiation.md)
 
 
 ---

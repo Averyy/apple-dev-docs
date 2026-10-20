@@ -1,7 +1,8 @@
 # falloff
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The falloff function used for the feathered edge computation.
 
@@ -21,7 +22,8 @@ var falloff: ClippingComponent.FeatheredEdge.Falloff
 
 ## See Also
 
-- [ClippingComponent.FeatheredEdge.Falloff](clippingcomponent/featherededge-swift.struct/falloff-swift.enum.md)
+### Controlling the falloff
+- [ClippingComponent.FeatheredEdge.Falloff](./falloff-swift.enum.md)
 
 
 ---

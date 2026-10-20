@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the CPU memory that your Core Image Processor Kernel can read pixels from.
@@ -20,11 +21,16 @@ The pixel format of the CPU memory that your Core Image Processor Kernel can rea
 var format: CIFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CIFormat format;
+```
+
 ## See Also
 
-- [var region: CGRect](ciimageprocessorinput/region.md)
+### Getting Supplemental Information for Image Processing
+- [var region: CGRect](./region.md)
   The rectangular region of the input image that your Core Image Processor Kernel can use to provide the output.
-- [var bytesPerRow: Int](ciimageprocessorinput/bytesperrow.md)
+- [var bytesPerRow: Int](./bytesperrow.md)
   The bytes per row of the CPU memory that your Core Image Processor Kernel can read pixelsfrom.
 
 

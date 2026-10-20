@@ -1,7 +1,8 @@
 # acceptShares
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts a share—that is represented by a `shortGUID`—on behalf of the current user.
 
@@ -10,7 +11,7 @@ Accepts a share—that is represented by a `shortGUID`—on behalf of the curren
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordInfosResponse, CKError> acceptShares(
 	String[] shortGUIDs
 );
@@ -18,7 +19,7 @@ Promise<CloudKit.RecordInfosResponse, CKError> acceptShares(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](../cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](cloudkit.
 
 ## See Also
 
-- [fetchRecordInfos](cloudkit.container/fetchrecordinfos.md)
+### Accepting Shared Records
+- [fetchRecordInfos](./fetchrecordinfos.md)
   Returns information about a record for which you have a `shortGUID` property.
 
 

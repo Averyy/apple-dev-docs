@@ -1,7 +1,8 @@
 # Delete a product
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete an Xcode Cloud product and all of its associated workflows, builds, and artifacts.
 
@@ -18,7 +19,7 @@ https://api.appstoreconnect.apple.com/v1/ciProducts/9ad354b0-f380-40d3-b94f-dd52
 
 App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No Content` HTTP status code.
 
-> ❗ **Important**:  Deleting an Xcode Cloud product permanently deletes all workflows, including their build history and artifacts. Only delete an Xcode Cloud product when you’re confident that you don’t need its workflows, build history, or artifacts anymore. Instead of deleting a product, deactivate its workflows to preserve the product and its build history and artifacts. For more information about deactivating a workflow, see [`Developing a workflow strategy for Xcode Cloud`](https://developer.apple.com/documentation/xcode/developing-a-workflow-strategy-for-xcode-cloud).
+> ❗ **Important**:  Deleting an Xcode Cloud product permanently deletes all workflows, including their build history and artifacts. Only delete an Xcode Cloud product when you’re confident that you don’t need its workflows, build history, or artifacts anymore. Instead of deleting a product, deactivate its workflows to preserve the product and its build history and artifacts. For more information about deactivating a workflow, see [Developing a workflow strategy for Xcode Cloud](../Xcode/developing-a-workflow-strategy-for-xcode-cloud.md).
 
 ## Endpoint
 
@@ -26,7 +27,18 @@ App Store Connect confirms the deletion by responding with the `HTTP/1.1 204 No 
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Products resource.
+
+## Responses
+
+- `204` No Content: The request completed successfully and the specific Products resource was deleted.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
@@ -29,6 +30,17 @@ This function is the only requirement of the `Comparable` protocol. The remainde
 
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
+
+## Default Implementations
+
+### Comparable Implementations
+- [static func < (Self, Self) -> Bool](./op%28_,_%29-2qz41.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+- [static func < (Self, Self) -> Bool](./op%28_,_%29-8kchc.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+- [static func < <RHS>(Self, RHS) -> Bool](./op%28_,_%29-8ogs5.md)
+- [static func < <Other>(Self, Other) -> Bool](./op%28_,_%29-z2os.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 
 
 ---

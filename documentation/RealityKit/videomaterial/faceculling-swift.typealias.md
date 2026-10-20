@@ -1,7 +1,8 @@
 # VideoMaterial.FaceCulling
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the cull mode object that’s appropriate for this material class.
 
@@ -21,9 +22,10 @@ typealias FaceCulling = MaterialParameterTypes.FaceCulling
 
 ## See Also
 
-- [struct VideoMaterial](videomaterial.md)
+### Video materials
+- [struct VideoMaterial](../videomaterial.md)
   A material that supports animated textures.
-- [VideoMaterial.TriangleFillMode](videomaterial/trianglefillmode-swift.typealias.md)
+- [VideoMaterial.TriangleFillMode](./trianglefillmode-swift.typealias.md)
 
 
 ---

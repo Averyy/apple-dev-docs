@@ -1,7 +1,8 @@
 # BlurReplaceTransition
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transition that animates the insertion or removal of a view by combining blurring and scaling effects.
 
@@ -24,33 +25,34 @@ A transition that animates the insertion or removal of a view by combining blurr
 ## Topics
 
 ### Creating the transition
-- [init(configuration: BlurReplaceTransition.Configuration)](blurreplacetransition/init(configuration:).md)
+- [init(configuration: BlurReplaceTransition.Configuration)](./blurreplacetransition/init%28configuration%29.md)
   Creates a new transition.
-- [var configuration: BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.property.md)
+- [var configuration: BlurReplaceTransition.Configuration](./blurreplacetransition/configuration-swift.property.md)
   The transition configuration.
-- [BlurReplaceTransition.Configuration](blurreplacetransition/configuration-swift.struct.md)
+- [BlurReplaceTransition.Configuration](./blurreplacetransition/configuration-swift.struct.md)
   Configuration properties for a transition.
 
 ## Relationships
 
 ### Conforms To
-- [Transition](transition.md)
+- [Transition](./transition.md)
 
 ## See Also
 
-- [struct IdentityTransition](identitytransition.md)
+### Supporting types
+- [struct IdentityTransition](./identitytransition.md)
   A transition that returns the input view, unmodified, as the output view.
-- [struct MoveTransition](movetransition.md)
+- [struct MoveTransition](./movetransition.md)
   Returns a transition that moves the view away, towards the specified edge of the view.
-- [struct OffsetTransition](offsettransition.md)
+- [struct OffsetTransition](./offsettransition.md)
   Returns a transition that offset the view by the specified amount.
-- [struct OpacityTransition](opacitytransition.md)
+- [struct OpacityTransition](./opacitytransition.md)
   A transition from transparent to opaque on insertion, and from opaque to transparent on removal.
-- [struct PushTransition](pushtransition.md)
+- [struct PushTransition](./pushtransition.md)
   A transition that when added to a view will animate the view’s insertion by moving it in from the specified edge while fading it in, and animate its removal by moving it out towards the opposite edge and fading it out.
-- [struct ScaleTransition](scaletransition.md)
+- [struct ScaleTransition](./scaletransition.md)
   Returns a transition that scales the view.
-- [struct SlideTransition](slidetransition.md)
+- [struct SlideTransition](./slidetransition.md)
   A transition that inserts by moving in from the leading edge, and removes by moving out towards the trailing edge.
 
 

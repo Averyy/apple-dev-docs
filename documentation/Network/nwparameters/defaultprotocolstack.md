@@ -1,7 +1,8 @@
 # defaultProtocolStack
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protocol stack used by connections and listeners.
 
@@ -22,9 +23,10 @@ final var defaultProtocolStack: NWParameters.ProtocolStack { get }
 
 ## See Also
 
-- [NWParameters.ProtocolStack](nwparameters/protocolstack.md)
+### Modifying Protocol Stacks
+- [NWParameters.ProtocolStack](./protocolstack.md)
   An ordered set of protocol options that define the protocols that connections and listeners use.
-- [class NWProtocol](nwprotocol.md)
+- [class NWProtocol](../nwprotocol.md)
   The abstract superclass used by Network framework protocols and by custom network protocols that you define.
 
 

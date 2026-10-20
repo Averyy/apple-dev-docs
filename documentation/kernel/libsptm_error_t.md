@@ -1,14 +1,15 @@
 # libsptm_error_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum libsptm_error_t : uint8_t {
     ...
 } libsptm_error_t;
@@ -17,11 +18,11 @@ typedef enum libsptm_error_t : uint8_t {
 ## Topics
 
 ### Constants
-- [LIBSPTM_FAILURE](libsptm_error_t/libsptm_failure.md)
-- [LIBSPTM_INVALID_ARG](libsptm_error_t/libsptm_invalid_arg.md)
-- [LIBSPTM_NOT_INITTED](libsptm_error_t/libsptm_not_initted.md)
-- [LIBSPTM_SUCCESS](libsptm_error_t/libsptm_success.md)
-- [LIBSPTM_TYPE_MISMATCH](libsptm_error_t/libsptm_type_mismatch.md)
+- [LIBSPTM_FAILURE](./libsptm_error_t/libsptm_failure.md)
+- [LIBSPTM_INVALID_ARG](./libsptm_error_t/libsptm_invalid_arg.md)
+- [LIBSPTM_NOT_INITTED](./libsptm_error_t/libsptm_not_initted.md)
+- [LIBSPTM_SUCCESS](./libsptm_error_t/libsptm_success.md)
+- [LIBSPTM_TYPE_MISMATCH](./libsptm_error_t/libsptm_type_mismatch.md)
 
 
 ---

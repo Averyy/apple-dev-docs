@@ -1,13 +1,16 @@
 # activate()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates the media environment.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
+- iOS 17.4+ - Deprecated in 27.0
+- iPadOS 17.4+ - Deprecated in 27.0
+
+> **Deprecated**: Use ProcessCapability.activate() instead
 
 ## Declaration
 
@@ -17,9 +20,10 @@ func activate() throws
 
 ## See Also
 
-- [func makeCaptureSession() throws -> AVCaptureSession](mediaenvironment/makecapturesession.md)
+### Capturing media streams
+- [func makeCaptureSession() throws -> AVCaptureSession](./makecapturesession%28%29.md)
   Creates a new capture session in this media environment  or throws an error if it can not be created.
-- [func suspend() throws](mediaenvironment/suspend.md)
+- [func suspend() throws](./suspend%28%29.md)
   Suspends the media environment.
 
 

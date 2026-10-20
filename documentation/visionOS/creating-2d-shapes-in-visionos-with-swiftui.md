@@ -1,6 +1,8 @@
 # Creating 2D shapes with SwiftUI
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [Creating2DShapesInVisionOSWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/5d97d949da4b/Creating2DShapesInVisionOSWithSwiftUI.zip)
 
 Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with your custom shapes.
 
@@ -10,7 +12,7 @@ Draw two-dimensional shapes in your visionOS app with SwiftUI shapes or with you
 
 #### Overview
 
-This sample code project demonstrates how to create and display 2D shapes in your visionOS app, using SwiftUI views that adopt the [`Shape`](https://developer.apple.com/documentation/swiftui/shape) protocol, including your custom types.
+This sample code project demonstrates how to create and display 2D shapes in your visionOS app, using SwiftUI views that adopt the [`Shape`](../SwiftUI/shape.md) protocol, including your custom types.
 
 The following image shows the main view of the app, which draws four shapes:
 
@@ -19,13 +21,13 @@ The following image shows the main view of the app, which draws four shapes:
 - A triangle
 - A dashed line
 
-![](/images/com.apple.visionOS/sample-2d-shapes-1-main-view.png)
+![](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-2d-shapes-1-main-view.png)
 
 SwiftUI defines the `Circle` and `Rectangle` types, and the sample defines the custom types `Triangle` and `Line`.
 
-##### Add Existing Shapes From Swiftui to a View
+##### Add existing shapes from SwiftUI to a view
 
-The app’s main view draws the outline of a circle and a rectangle by adding an instance of [`Circle`](https://developer.apple.com/documentation/swiftui/circle) and [`Rectangle`](https://developer.apple.com/documentation/swiftui/rectangle), respectively.
+The app’s main view draws the outline of a circle and a rectangle by adding an instance of [`Circle`](../SwiftUI/circle.md) and [`Rectangle`](../SwiftUI/rectangle.md), respectively.
 
 ```swift
 struct ShapesView: View {
@@ -55,11 +57,11 @@ struct ShapesView: View {
 }
 ```
 
-The [`stroke(_:lineWidth:)`](https://developer.apple.com/documentation/swiftui/shape/stroke(_:linewidth:)) method sets the thickness of the line that the shape uses to draw itself, and the [`frame(width:height:alignment:)`](https://developer.apple.com/documentation/swiftui/view/frame(width:height:alignment:)) method puts the shape inside an invisible view.
+The [`stroke(_:lineWidth:)`](../SwiftUI/shape/stroke%28_,linewidth%29.md) method sets the thickness of the line that the shape uses to draw itself, and the [`frame(width:height:alignment:)`](../SwiftUI/view/frame%28width,height,alignment%29.md) method puts the shape inside an invisible view.
 
-##### Create Custom Shape Types
+##### Create custom shape types
 
-This sample defines custom shape types for lines and triangles that draw themselves by adopting the [`Shape`](https://developer.apple.com/documentation/swiftui/shape) protocol and implementing a custom [`Path`](https://developer.apple.com/documentation/swiftui/path) method.
+This sample defines custom shape types for lines and triangles that draw themselves by adopting the [`Shape`](../SwiftUI/shape.md) protocol and implementing a custom [`Path`](../SwiftUI/path.md) method.
 
 The `Line` type stores two endpoints and draws a line between them in its `path(in:)` method.
 
@@ -116,7 +118,7 @@ struct Triangle: Shape {
 }
 ```
 
-The shapes view adds a triangle by creating three [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) instances and passing them to the `Triangle` initializer.
+The shapes view adds a triangle by creating three [`CGPoint`](../CoreFoundation/cgpoint.md) instances and passing them to the `Triangle` initializer.
 
 ```swift
 struct ShapesView: View {
@@ -156,7 +158,7 @@ struct ShapesView: View {
 
 Each vertex uses SwiftUI coordinates. The origin of this coordinate system is in the upper-left corner, and the y-axis increases in a downward direction.
 
-##### Add Customizations to Shape Types
+##### Add customizations to shape types
 
 To draw a line with dashes, add a `dashed(_:)` method to the `Line` type, which the sample puts in an extension.
 
@@ -204,7 +206,12 @@ The shapes view calls this method to create a dashed line based on the stroke wi
 
 In this sample, the view draws each line segment one-and-a-half times longer than the gaps between adjacent line segments.
 
-###### Related Samples
+#### See Also
+
+###### Related samples
+
+- [Creating 3D entities with RealityKit](./creating-3d-entities-with-realitykit.md)
+  Display a horizontal row of three-dimensional shapes in your visionOS app, using predefined mesh and white material.
 
 
 ---

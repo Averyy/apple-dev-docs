@@ -1,7 +1,8 @@
 # kMDQueryScopeNetworkIndexed
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the search should include indexed user mounted remote volumes.
 
@@ -12,6 +13,10 @@ Specifies that the search should include indexed user mounted remote volumes.
 
 ```swift
 let kMDQueryScopeNetworkIndexed: CFString!
+```
+
+```c
+const CFStringRef kMDQueryScopeNetworkIndexed;
 ```
 
 

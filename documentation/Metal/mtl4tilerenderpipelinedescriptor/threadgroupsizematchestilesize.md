@@ -1,7 +1,8 @@
 # threadgroupSizeMatchesTileSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicating whether the size of the threadgroup matches the size of a tile in the render pipeline.
 
@@ -17,6 +18,10 @@ Indicating whether the size of the threadgroup matches the size of a tile in the
 
 ```swift
 var threadgroupSizeMatchesTileSize: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL threadgroupSizeMatchesTileSize;
 ```
 
 

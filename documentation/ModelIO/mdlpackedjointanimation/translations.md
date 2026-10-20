@@ -1,7 +1,8 @@
 # translations
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var translations: MDLAnimatedVector3Array { get }
+```
+
+```objc
+@property (nonatomic, readonly) MDLAnimatedVector3Array * translations;
 ```
 
 

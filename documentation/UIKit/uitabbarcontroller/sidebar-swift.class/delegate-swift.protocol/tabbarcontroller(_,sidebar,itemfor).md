@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:itemFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return a `UITabSidebarItem` for the specified item request. When created, the item will be preconfigured to the appropriate defaults for its given content. If this method is not implemented, a default sidebar item will be provided for the request.
 
@@ -15,6 +16,10 @@ Return a `UITabSidebarItem` for the specified item request. When created, the it
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, itemFor request: UITabSidebarItem.Request) -> UITabSidebarItem
+```
+
+```objc
+- (UITabSidebarItem *) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar itemForRequest:(UITabSidebarItemRequest *) request;
 ```
 
 

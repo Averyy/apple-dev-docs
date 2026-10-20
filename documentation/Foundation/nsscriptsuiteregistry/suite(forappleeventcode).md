@@ -1,7 +1,8 @@
 # suite(forAppleEventCode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the name of the suite definition associated with the given four-character Apple event code, `code`.
 
@@ -15,9 +16,14 @@ Returns the name of the suite definition associated with the given four-characte
 func suite(forAppleEventCode appleEventCode: FourCharCode) -> String?
 ```
 
+```objc
+- (NSString *) suiteForAppleEventCode:(FourCharCode) appleEventCode;
+```
+
 ## See Also
 
-- [var suiteNames: [String]](nsscriptsuiteregistry/suitenames.md)
+### Getting Suite Information
+- [var suiteNames: [String]](./suitenames.md)
   Returns the names of the suite definitions currently loaded by the application.
 
 

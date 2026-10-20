@@ -1,7 +1,8 @@
 # NSTableView.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Contains the possible style values for a table view.
 
@@ -14,55 +15,60 @@ Contains the possible style values for a table view.
 enum Style
 ```
 
+```c
+enum NSTableViewStyle : NSInteger;
+```
+
 ## Topics
 
 ### Table Styles
-- [NSTableView.Style.automatic](nstableview/style-swift.enum/automatic.md)
+- [NSTableView.Style.automatic](./style-swift.enum/automatic.md)
   The system resolves the table view style based on the table view hierarchy.
-- [NSTableView.Style.fullWidth](nstableview/style-swift.enum/fullwidth.md)
+- [NSTableView.Style.fullWidth](./style-swift.enum/fullwidth.md)
   The table view style resolves to a full-width style.
-- [NSTableView.Style.inset](nstableview/style-swift.enum/inset.md)
+- [NSTableView.Style.inset](./style-swift.enum/inset.md)
   The table view style resolves to an inset style.
-- [NSTableView.Style.sourceList](nstableview/style-swift.enum/sourcelist.md)
+- [NSTableView.Style.sourceList](./style-swift.enum/sourcelist.md)
   The table view style resolves to a source-list style.
-- [NSTableView.Style.plain](nstableview/style-swift.enum/plain.md)
+- [NSTableView.Style.plain](./style-swift.enum/plain.md)
   The table view style resolves to a plain style.
 ### Initializers
-- [init?(rawValue: Int)](nstableview/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var intercellSpacing: NSSize](nstableview/intercellspacing.md)
+### Setting Display Attributes
+- [var intercellSpacing: NSSize](./intercellspacing.md)
   The horizontal and vertical spacing between cells.
-- [var rowHeight: CGFloat](nstableview/rowheight.md)
+- [var rowHeight: CGFloat](./rowheight.md)
   The height of each row in the table.
-- [var backgroundColor: NSColor](nstableview/backgroundcolor.md)
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The color used to draw the background of the table.
-- [var usesAlternatingRowBackgroundColors: Bool](nstableview/usesalternatingrowbackgroundcolors.md)
+- [var usesAlternatingRowBackgroundColors: Bool](./usesalternatingrowbackgroundcolors.md)
   A Boolean value indicating whether the table view uses alternating row colors for its background.
-- [var style: NSTableView.Style](nstableview/style-swift.property.md)
+- [var style: NSTableView.Style](./style-swift.property.md)
   The style that the table view uses.
-- [var effectiveStyle: NSTableView.Style](nstableview/effectivestyle.md)
+- [var effectiveStyle: NSTableView.Style](./effectivestyle.md)
   The effective style that the table uses.
-- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](nstableview/selectionhighlightstyle-swift.property.md)
+- [var selectionHighlightStyle: NSTableView.SelectionHighlightStyle](./selectionhighlightstyle-swift.property.md)
   The selection highlight style used by the table view to indicate row and column selection.
-- [var gridColor: NSColor](nstableview/gridcolor.md)
+- [var gridColor: NSColor](./gridcolor.md)
   The color used to draw grid lines.
-- [var gridStyleMask: NSTableView.GridLineStyle](nstableview/gridstylemask.md)
+- [var gridStyleMask: NSTableView.GridLineStyle](./gridstylemask.md)
   The grid lines drawn by the table view.
-- [func indicatorImage(in: NSTableColumn) -> NSImage?](nstableview/indicatorimage(in:).md)
+- [func indicatorImage(in: NSTableColumn) -> NSImage?](./indicatorimage%28in%29.md)
   Returns the indicator image of the specified table column.
-- [func setIndicatorImage(NSImage?, in: NSTableColumn)](nstableview/setindicatorimage(_:in:).md)
+- [func setIndicatorImage(NSImage?, in: NSTableColumn)](./setindicatorimage%28_,in%29.md)
   Sets the indicator image of the specified column.
 
 

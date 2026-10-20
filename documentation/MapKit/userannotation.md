@@ -1,7 +1,8 @@
 # UserAnnotation
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Displays the person’s current location on the map.
 
@@ -11,7 +12,7 @@ Displays the person’s current location on the map.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -28,50 +29,51 @@ Displays the person’s current location using the system styled user location i
 ## Topics
 
 ### Creating a user annotation
-- [init()](userannotation/init.md)
+- [init()](./userannotation/init%28%29.md)
   Creates an annotation that displays the person’s current location.
-- [init(anchor: UnitPoint)](userannotation/init(anchor:).md)
+- [init(anchor: UnitPoint)](./userannotation/init%28anchor%29.md)
   Creates an annotation that displays the person’s current location using the system styled user location indicator with the specified anchor point.
-- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](userannotation/init(anchor:content:)-8u3r4.md)
+- [init(anchor: UnitPoint, content: (UserLocation) -> Content)](./userannotation/init%28anchor,content%29-8u3r4.md)
   Creates an annotation that displays a person’s current location using the system styled user location indicator with the specified anchor point using a custom view.
-- [init(anchor: UnitPoint, content: () -> Content)](userannotation/init(anchor:content:)-3e78j.md)
+- [init(anchor: UnitPoint, content: () -> Content)](./userannotation/init%28anchor,content%29-3e78j.md)
   Create an annotation that displays the person’s current location of the user using a custom view.
 ### Setting the visibility of the title and subtitle
-- [func annotationTitles(Visibility) -> some MapContent](mapcontent/annotationtitles(_:).md)
+- [func annotationTitles(Visibility) -> some MapContent](./mapcontent/annotationtitles%28_%29.md)
   Sets the visibility of titles for markers and annotations.
-- [func annotationSubtitles(Visibility) -> some MapContent](mapcontent/annotationsubtitles(_:).md)
+- [func annotationSubtitles(Visibility) -> some MapContent](./mapcontent/annotationsubtitles%28_%29.md)
   Sets the visibility of subtitles for markers and annotations.
 ### Information about a person’s location
-- [struct UserLocation](userlocation.md)
+- [struct UserLocation](./userlocation.md)
   A structure that contains Information about the person’s current location.
 ### Setting the overlay level
-- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](mapcontent/mapoverlaylevel(level:).md)
+- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](./mapcontent/mapoverlaylevel%28level%29.md)
   Specifies the position of overlays relative to other map content.
 ### Setting the tag
-- [func tag<V>(V) -> some MapContent](mapcontent/tag(_:).md)
+- [func tag<V>(V) -> some MapContent](./mapcontent/tag%28_%29.md)
   Sets the unique tag value of this piece of map content.
 ### Type aliases
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 
 ## Relationships
 
 ### Conforms To
-- [MapContent](mapcontent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MapContent](./mapcontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Annotation](annotation.md)
+### Annotations and overlays
+- [struct Annotation](./annotation.md)
   A customizable annotation used to indicate a location on a map.
-- [struct MapCircle](mapcircle.md)
+- [struct MapCircle](./mapcircle.md)
   A circular overlay with a configurable radius that you center on a geographic coordinate.
-- [struct MapPolygon](mappolygon.md)
+- [struct MapPolygon](./mappolygon.md)
   A closed polygon overlay.
-- [struct MapPolyline](mappolyline.md)
+- [struct MapPolyline](./mappolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [struct Marker](marker.md)
+- [struct Marker](./marker.md)
   A balloon-shaped annotation that marks a map location.
 
 

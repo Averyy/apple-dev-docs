@@ -1,7 +1,8 @@
 # mean
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var mean: any MTLBuffer { get }
+```
+
+```objc
+@property (nonatomic, readonly) id<MTLBuffer> mean;
 ```
 
 

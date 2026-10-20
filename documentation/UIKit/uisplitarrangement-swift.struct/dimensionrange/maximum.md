@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum dimension for the view.
 
@@ -20,9 +21,10 @@ var maximum: UISplitArrangement.Dimension
 
 ## See Also
 
-- [var minimum: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimensionrange/minimum.md)
+### Getting the dimensions
+- [var minimum: UISplitArrangement.Dimension](./minimum.md)
   The minimum dimension for the view.
-- [var preferred: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimensionrange/preferred.md)
+- [var preferred: UISplitArrangement.Dimension](./preferred.md)
   The preferred dimension for the view.
 
 

@@ -1,7 +1,8 @@
 # paymentMethod
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about the card used in the transaction.
 
@@ -11,19 +12,20 @@ Information about the card used in the transaction.
 
 ## Declaration
 
-```swift
+```
 required ApplePayPaymentMethod paymentMethod;
 ```
 
 #### Discussion
 
-See [`ApplePayPaymentMethod`](applepaypaymentmethod.md).
+See [`ApplePayPaymentMethod`](../applepaypaymentmethod.md).
 
 ## See Also
 
-- [paymentData](applepaypaymenttoken/paymentdata.md)
+### Payment Token Properties
+- [paymentData](./paymentdata.md)
   An object containing the encrypted payment data.
-- [transactionIdentifier](applepaypaymenttoken/transactionidentifier.md)
+- [transactionIdentifier](./transactionidentifier.md)
   A unique identifier for this payment.
 
 

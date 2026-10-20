@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CFNetwork  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a flag value with the specified bitfield.
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_dl_rrc_state {
     ...
 };
@@ -17,8 +17,8 @@ struct kev_dl_rrc_state {
 ## Topics
 
 ### Instance Properties
-- [link_data](kev_dl_rrc_state/3943830-link_data.md)
-- [rrc_state](kev_dl_rrc_state/3943831-rrc_state.md)
+- [link_data](./kev_dl_rrc_state/api-3943830-link_data.md)
+- [rrc_state](./kev_dl_rrc_state/api-3943831-rrc_state.md)
 
 
 ---

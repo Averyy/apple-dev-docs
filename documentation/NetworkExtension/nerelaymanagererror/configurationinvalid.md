@@ -1,7 +1,8 @@
 # NERelayManagerError.configurationInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the relay manager is invalid.
 
@@ -19,13 +20,18 @@ An error code that indicates the relay manager is invalid.
 case configurationInvalid
 ```
 
+```c
+NERelayManagerErrorConfigurationInvalid
+```
+
 ## See Also
 
-- [NERelayManagerError.configurationDisabled](nerelaymanagererror/configurationdisabled.md)
+### Error codes
+- [NERelayManagerError.configurationDisabled](./configurationdisabled.md)
   An error code that indicates the relay manager isn’t enabled.
-- [NERelayManagerError.configurationStale](nerelaymanagererror/configurationstale.md)
+- [NERelayManagerError.configurationStale](./configurationstale.md)
   An error code that indicates the relay manager isn’t loaded.
-- [NERelayManagerError.configurationCannotBeRemoved](nerelaymanagererror/configurationcannotberemoved.md)
+- [NERelayManagerError.configurationCannotBeRemoved](./configurationcannotberemoved.md)
   An error code that indicates removing the relay manager failed.
 
 

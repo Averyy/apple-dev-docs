@@ -1,16 +1,17 @@
 # keyboardType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keyboard type for the text object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,29 +19,34 @@ The keyboard type for the text object.
 optional var keyboardType: UIKeyboardType { get set }
 ```
 
+```objc
+@property (nonatomic) UIKeyboardType keyboardType;
+```
+
 ## Mentions
 
-- [Configuring a custom keyboard interface](configuring-a-custom-keyboard-interface.md)
+- [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
 #### Discussion
 
-Text objects can be targeted for specific types of input, such as plain text, email, numeric entry, and so on. The keyboard style identifies what keys are available on the keyboard and which ones appear by default. The default value for this property is [`UIKeyboardType.default`](uikeyboardtype/default.md).
+Text objects can be targeted for specific types of input, such as plain text, email, numeric entry, and so on. The keyboard style identifies what keys are available on the keyboard and which ones appear by default. The default value for this property is [`UIKeyboardType.default`](../uikeyboardtype/default.md).
 
 ## See Also
 
-- [enum UIKeyboardType](uikeyboardtype.md)
+### Configuring the keyboard appearance
+- [enum UIKeyboardType](../uikeyboardtype.md)
   Constants that specify the type of keyboard to display for a text-based view.
-- [var keyboardAppearance: UIKeyboardAppearance](uitextinputtraits/keyboardappearance.md)
+- [var keyboardAppearance: UIKeyboardAppearance](./keyboardappearance.md)
   The appearance style of the keyboard for the text object.
-- [enum UIKeyboardAppearance](uikeyboardappearance.md)
+- [enum UIKeyboardAppearance](../uikeyboardappearance.md)
   Constants that specify the appearance of the keyboard for a text-based view.
-- [var returnKeyType: UIReturnKeyType](uitextinputtraits/returnkeytype.md)
+- [var returnKeyType: UIReturnKeyType](./returnkeytype.md)
   The visible indication of what the Return key does.
-- [enum UIReturnKeyType](uireturnkeytype.md)
+- [enum UIReturnKeyType](../uireturnkeytype.md)
   Constants that specify the type of Return key the keyboard displays.
-- [var textContentType: UITextContentType!](uitextinputtraits/textcontenttype.md)
+- [var textContentType: UITextContentType!](./textcontenttype.md)
   The semantic meaning for a text input area.
-- [struct UITextContentType](uitextcontenttype.md)
+- [struct UITextContentType](../uitextcontenttype.md)
   Constants that identify the semantic meaning for a text-entry area.
 
 

@@ -1,7 +1,8 @@
 # TimelineSchedule
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that provides a sequence of dates for use as a schedule.
 
@@ -22,7 +23,7 @@ protocol TimelineSchedule
 
 #### Overview
 
-Types that conform to this protocol implement a particular kind of schedule by defining an [`entries(from:mode:)`](timelineschedule/entries(from:mode:).md) method that returns a sequence of dates. Use a timeline schedule type when you initialize a [`TimelineView`](timelineview.md). For example, you can create a timeline view that updates every second, starting from some `startDate`, using a periodic schedule returned by [`periodic(from:by:)`](timelineschedule/periodic(from:by:).md):
+Types that conform to this protocol implement a particular kind of schedule by defining an [`entries(from:mode:)`](./timelineschedule/entries%28from,mode%29.md) method that returns a sequence of dates. Use a timeline schedule type when you initialize a [`TimelineView`](./timelineview.md). For example, you can create a timeline view that updates every second, starting from some `startDate`, using a periodic schedule returned by [`periodic(from:by:)`](./timelineschedule/periodic%28from,by%29.md):
 
 ```swift
 TimelineView(.periodic(from: startDate, by: 1.0)) { context in
@@ -35,51 +36,52 @@ You can also create custom timeline schedules. The timeline view updates its con
 ## Topics
 
 ### Getting built-in schedules
-- [static var animation: AnimationTimelineSchedule](timelineschedule/animation.md)
+- [static var animation: AnimationTimelineSchedule](./timelineschedule/animation.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [static func animation(minimumInterval: Double?, paused: Bool) -> AnimationTimelineSchedule](timelineschedule/animation(minimuminterval:paused:).md)
+- [static func animation(minimumInterval: Double?, paused: Bool) -> AnimationTimelineSchedule](./timelineschedule/animation%28minimuminterval,paused%29.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [static var everyMinute: EveryMinuteTimelineSchedule](timelineschedule/everyminute.md)
+- [static var everyMinute: EveryMinuteTimelineSchedule](./timelineschedule/everyminute.md)
   A schedule for updating a timeline view at the start of every minute.
-- [static func explicit<S>(S) -> ExplicitTimelineSchedule<S>](timelineschedule/explicit(_:).md)
+- [static func explicit<S>(S) -> ExplicitTimelineSchedule<S>](./timelineschedule/explicit%28_%29.md)
   A schedule for updating a timeline view at explicit points in time.
-- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](timelineschedule/periodic(from:by:).md)
+- [static func periodic(from: Date, by: TimeInterval) -> PeriodicTimelineSchedule](./timelineschedule/periodic%28from,by%29.md)
   A schedule for updating a timeline view at regular intervals.
 ### Getting a sequence of dates
-- [func entries(from: Date, mode: Self.Mode) -> Self.Entries](timelineschedule/entries(from:mode:).md)
+- [func entries(from: Date, mode: Self.Mode) -> Self.Entries](./timelineschedule/entries%28from,mode%29.md)
   Provides a sequence of dates starting around a given date.
-- [associatedtype Entries : Sequence](timelineschedule/entries.md)
+- [associatedtype Entries : Sequence](./timelineschedule/entries.md)
   The sequence of dates within a schedule.
 ### Specifying a mode
-- [TimelineSchedule.Mode](timelineschedule/mode.md)
+- [TimelineSchedule.Mode](./timelineschedule/mode.md)
   An alias for the timeline schedule update mode.
-- [enum TimelineScheduleMode](timelineschedulemode.md)
+- [enum TimelineScheduleMode](./timelineschedulemode.md)
   A mode of operation for timeline schedule updates.
 ### Supporting types
-- [struct AnimationTimelineSchedule](animationtimelineschedule.md)
+- [struct AnimationTimelineSchedule](./animationtimelineschedule.md)
   A pausable schedule of dates updating at a frequency no more quickly than the provided interval.
-- [struct EveryMinuteTimelineSchedule](everyminutetimelineschedule.md)
+- [struct EveryMinuteTimelineSchedule](./everyminutetimelineschedule.md)
   A schedule for updating a timeline view at the start of every minute.
-- [struct ExplicitTimelineSchedule](explicittimelineschedule.md)
+- [struct ExplicitTimelineSchedule](./explicittimelineschedule.md)
   A schedule for updating a timeline view at explicit points in time.
-- [struct PeriodicTimelineSchedule](periodictimelineschedule.md)
+- [struct PeriodicTimelineSchedule](./periodictimelineschedule.md)
   A schedule for updating a timeline view at regular intervals.
 
 ## Relationships
 
 ### Conforming Types
-- [AnimationTimelineSchedule](animationtimelineschedule.md)
-- [EveryMinuteTimelineSchedule](everyminutetimelineschedule.md)
-- [ExplicitTimelineSchedule](explicittimelineschedule.md)
-- [PeriodicTimelineSchedule](periodictimelineschedule.md)
+- [AnimationTimelineSchedule](./animationtimelineschedule.md)
+- [EveryMinuteTimelineSchedule](./everyminutetimelineschedule.md)
+- [ExplicitTimelineSchedule](./explicittimelineschedule.md)
+- [PeriodicTimelineSchedule](./periodictimelineschedule.md)
 
 ## See Also
 
-- [Updating watchOS apps with timelines](../watchos-apps/updating-watchos-apps-with-timelines.md)
+### Updating a view on a schedule
+- [Updating watchOS apps with timelines](../watchOS-Apps/updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
-- [struct TimelineView](timelineview.md)
+- [struct TimelineView](./timelineview.md)
   A view that updates according to a schedule that you provide.
-- [typealias TimelineViewDefaultContext](timelineviewdefaultcontext.md)
+- [typealias TimelineViewDefaultContext](./timelineviewdefaultcontext.md)
   Information passed to a timeline view’s content callback.
 
 

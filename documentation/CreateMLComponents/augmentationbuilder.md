@@ -1,7 +1,8 @@
 # AugmentationBuilder
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A series of augmentations.
 
@@ -24,38 +25,39 @@ struct AugmentationBuilder<Element>
 ## Topics
 
 ### Building augmentations
-- [static buildPartialBlock(accumulated:next:)](augmentationbuilder/buildpartialblock(accumulated:next:).md)
+- [static buildPartialBlock(accumulated:next:)](./augmentationbuilder/buildpartialblock%28accumulated,next%29.md)
   Builds a partial result by combining an accumulated random transformer and a new random transformer.
-- [static buildPartialBlock(first:)](augmentationbuilder/buildpartialblock(first:).md)
+- [static buildPartialBlock(first:)](./augmentationbuilder/buildpartialblock%28first%29.md)
   Builds a partial result random transformer from the first random transformer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ApplyEachRandomly](applyeachrandomly.md)
+### Augmentations
+- [struct ApplyEachRandomly](./applyeachrandomly.md)
   Applies each transformer randomly given a probability.
-- [struct ApplyRandomly](applyrandomly.md)
+- [struct ApplyRandomly](./applyrandomly.md)
   Randomly applies the transformer with the given probability.
-- [struct AugmentationSequence](augmentationsequence.md)
+- [struct AugmentationSequence](./augmentationsequence.md)
   An async sequence of augmented elements.
-- [struct Augmenter](augmenter.md)
+- [struct Augmenter](./augmenter.md)
   An augmenter.
-- [struct ChooseRandomly](chooserandomly.md)
+- [struct ChooseRandomly](./chooserandomly.md)
   Apply single transformation randomly chosen from a list of transformers.
-- [struct RandomImageCropper](randomimagecropper.md)
+- [struct RandomImageCropper](./randomimagecropper.md)
   Crops an image at a random location.
-- [struct ShuffleRandomly](shufflerandomly.md)
+- [struct ShuffleRandomly](./shufflerandomly.md)
   Apply transformations in a random order.
-- [struct UniformRandomFloatingPointParameter](uniformrandomfloatingpointparameter.md)
+- [struct UniformRandomFloatingPointParameter](./uniformrandomfloatingpointparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [class UniformRandomIntegerParameter](uniformrandomintegerparameter.md)
+- [class UniformRandomIntegerParameter](./uniformrandomintegerparameter.md)
   Applies the transformer with a randomly generated input parameter.
-- [struct UpsampledAugmentationSequence](upsampledaugmentationsequence.md)
+- [struct UpsampledAugmentationSequence](./upsampledaugmentationsequence.md)
   An async sequence of augmented elements.
 
 

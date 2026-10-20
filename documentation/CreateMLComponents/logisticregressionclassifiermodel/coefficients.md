@@ -1,7 +1,8 @@
 # coefficients
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear coefficients.
 
@@ -22,7 +23,8 @@ var coefficients: [Scalar] { get }
 
 ## See Also
 
-- [var featureCount: Int](logisticregressionclassifiermodel/featurecount.md)
+### Getting the properties
+- [var featureCount: Int](./featurecount.md)
   The number of features expected in the input.
 
 

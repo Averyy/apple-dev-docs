@@ -1,7 +1,8 @@
 # scientific
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notation constant that formats values with scientific notation.
 
@@ -32,9 +33,10 @@ let scientific = 12345.formatted(.number
 
 ## See Also
 
-- [static var automatic: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/automatic.md)
+### Notations
+- [static var automatic: NumberFormatStyleConfiguration.Notation](./automatic.md)
   A notation that automatically provides locale-appropriate behavior.
-- [static var compactName: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/compactname.md)
+- [static var compactName: NumberFormatStyleConfiguration.Notation](./compactname.md)
   A locale-appropriate compact name notation.
 
 

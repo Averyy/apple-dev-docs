@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time that the key event occurs.
 
@@ -17,13 +18,18 @@ The time that the key event occurs.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 ## See Also
 
-- [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
+### Getting information about the keypress
+- [var state: BEKeyEntry.KeyPressState](./state.md)
   A value that indicates if the key is pressed.
-- [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
+- [BEKeyEntry.KeyPressState](./keypressstate.md)
   Key-press states for a keyboard event.
-- [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
+- [var isKeyRepeating: Bool](./iskeyrepeating.md)
   A Boolean value that indicates whether the person holds a key down to repeat its key event.
 
 

@@ -1,17 +1,22 @@
 # makePreviousSegmentKey()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects the previous segment.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func makePreviousSegmentKey()
+```
+
+```objc
+- (void) makePreviousSegmentKey;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ The previous segment is the one to the left of the currently selected segment. F
 
 ## See Also
 
-- [func setSelected(Bool, forSegment: Int)](nssegmentedcell/setselected(_:forsegment:).md)
+### Specifying the Selected Segment
+- [func setSelected(Bool, forSegment: Int)](./setselected%28_,forsegment%29.md)
   Sets the selection state of the specified segment.
-- [func selectSegment(withTag: Int) -> Bool](nssegmentedcell/selectsegment(withtag:).md)
+- [func selectSegment(withTag: Int) -> Bool](./selectsegment%28withtag%29.md)
   Selects the segment with the specified tag.
-- [func makeNextSegmentKey()](nssegmentedcell/makenextsegmentkey.md)
+- [func makeNextSegmentKey()](./makenextsegmentkey%28%29.md)
   Selects the next segment.
-- [var selectedSegment: Int](nssegmentedcell/selectedsegment.md)
+- [var selectedSegment: Int](./selectedsegment.md)
   The index of the selected segment of the control, or `-1` if no segment is selected.
-- [func isSelected(forSegment: Int) -> Bool](nssegmentedcell/isselected(forsegment:).md)
+- [func isSelected(forSegment: Int) -> Bool](./isselected%28forsegment%29.md)
   Returns a Boolean value indicating whether the specified segment is selected,
 
 

@@ -1,7 +1,8 @@
 # rotate(byRadians:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Mutates an affine transformation matrix to apply a rotation.
 
@@ -30,21 +31,22 @@ The matrix takes the following form:
 
 ## See Also
 
-- [func rotate(byDegrees: CGFloat)](affinetransform/rotate(bydegrees:).md)
+### Accumulating Tranformations
+- [func rotate(byDegrees: CGFloat)](./rotate%28bydegrees%29.md)
   Mutates an affine transformation matrix to apply a rotation.
-- [func scale(CGFloat)](affinetransform/scale(_:).md)
+- [func scale(CGFloat)](./scale%28_%29.md)
   Mutates an affine transformation matrix to apply scaling in both x and y dimensions.
-- [func scale(x: CGFloat, y: CGFloat)](affinetransform/scale(x:y:).md)
+- [func scale(x: CGFloat, y: CGFloat)](./scale%28x,y%29.md)
   Mutates an affine transformation matrix to apply scaling in each of the x and y dimensions.
-- [func translate(x: CGFloat, y: CGFloat)](affinetransform/translate(x:y:).md)
+- [func translate(x: CGFloat, y: CGFloat)](./translate%28x,y%29.md)
   Mutates an affine transformation matrix to perform the specified translation.
-- [func append(AffineTransform)](affinetransform/append(_:).md)
+- [func append(AffineTransform)](./append%28_%29.md)
   Mutates an affine transformation by appending another affine transform.
-- [func prepend(AffineTransform)](affinetransform/prepend(_:).md)
+- [func prepend(AffineTransform)](./prepend%28_%29.md)
   Mutates an affine transformation by prepending another affine transform.
-- [func invert()](affinetransform/invert.md)
+- [func invert()](./invert%28%29.md)
   Inverts the transformation matrix, if possible.
-- [func inverted() -> AffineTransform?](affinetransform/inverted.md)
+- [func inverted() -> AffineTransform?](./inverted%28%29.md)
   Returns an inverted version of the matrix, if possible, or nil if not.
 
 

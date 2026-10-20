@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs actions on the current object using index paths that are relative to the presentation layer of that object.
@@ -17,6 +18,10 @@ Performs actions on the current object using index paths that are relative to th
 
 ```swift
 func performUsingPresentationValues(_ actionsToTranslate: () -> Void)
+```
+
+```objc
+- (void) performUsingPresentationValues:(void (^)()) actionsToTranslate;
 ```
 
 #### Discussion

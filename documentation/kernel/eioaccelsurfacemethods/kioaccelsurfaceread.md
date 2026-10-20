@@ -1,14 +1,15 @@
 # kIOAccelSurfaceRead
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kIOAccelSurfaceRead
 ```
 

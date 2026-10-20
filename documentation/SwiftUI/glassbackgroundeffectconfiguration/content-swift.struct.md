@@ -1,7 +1,8 @@
 # GlassBackgroundEffectConfiguration.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased content of a glass background.
 
@@ -18,9 +19,9 @@ A type-erased content of a glass background.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../view.md)
 
 
 ---

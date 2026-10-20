@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator for the contained entities.
 
@@ -11,7 +12,7 @@ Returns an iterator for the contained entities.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ The iterator.
 
 ## See Also
 
-- [QueryResult.Iterator](queryresult/iterator.md)
+### Creating an iterator
+- [QueryResult.Iterator](./iterator.md)
   The type of iterator used for entity query results.
 
 

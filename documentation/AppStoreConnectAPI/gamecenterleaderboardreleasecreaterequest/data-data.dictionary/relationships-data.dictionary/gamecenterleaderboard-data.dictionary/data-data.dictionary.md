@@ -1,7 +1,8 @@
 # GameCenterLeaderboardReleaseCreateRequest.Data.Relationships.GameCenterLeaderboard.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center leaderboard release.
 
@@ -10,14 +11,14 @@ The request body you use to create a Game Center leaderboard release.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardReleaseCreateRequest.Data.Relationships.GameCenterLeaderboard.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

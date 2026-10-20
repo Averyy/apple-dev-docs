@@ -1,7 +1,8 @@
 # additionalHeaderFields
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Any additional header fields to set when loading the initial URL.
 
@@ -18,6 +19,10 @@ Any additional header fields to set when loading the initial URL.
 
 ```swift
 var additionalHeaderFields: [String : String]? { get set }
+```
+
+```objc
+@property (nonatomic, nullable) NSDictionary<NSString *,NSString *> * additionalHeaderFields;
 ```
 
 

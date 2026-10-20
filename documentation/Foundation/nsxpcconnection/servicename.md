@@ -1,7 +1,8 @@
 # serviceName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the XPC service that this connection was configured to connect to.
 
@@ -20,17 +21,22 @@ The name of the XPC service that this connection was configured to connect to.
 var serviceName: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * serviceName;
+```
+
 ## See Also
 
-- [var endpoint: NSXPCListenerEndpoint](nsxpcconnection/endpoint.md)
-  If the connection was created with an [`NSXPCListenerEndpoint`](nsxpclistenerendpoint.md) object, returns the endpoint object used.
-- [var exportedInterface: NSXPCInterface?](nsxpcconnection/exportedinterface.md)
-  The [`NSXPCInterface`](nsxpcinterface.md) object that describes the protocol for the exported object on this connection.
-- [var exportedObject: Any?](nsxpcconnection/exportedobject.md)
+### Managing the connection interface
+- [var endpoint: NSXPCListenerEndpoint](./endpoint.md)
+  If the connection was created with an [`NSXPCListenerEndpoint`](../nsxpclistenerendpoint.md) object, returns the endpoint object used.
+- [var exportedInterface: NSXPCInterface?](./exportedinterface.md)
+  The [`NSXPCInterface`](../nsxpcinterface.md) object that describes the protocol for the exported object on this connection.
+- [var exportedObject: Any?](./exportedobject.md)
   An exported object for the connection.
-- [var remoteObjectInterface: NSXPCInterface?](nsxpcconnection/remoteobjectinterface.md)
-  Defines the [`NSXPCInterface`](nsxpcinterface.md) object that describes the protocol for the object represented by the `remoteObjectProxy`.
-- [var remoteObjectProxy: Any](nsxpcconnection/remoteobjectproxy.md)
+- [var remoteObjectInterface: NSXPCInterface?](./remoteobjectinterface.md)
+  Defines the [`NSXPCInterface`](../nsxpcinterface.md) object that describes the protocol for the object represented by the `remoteObjectProxy`.
+- [var remoteObjectProxy: Any](./remoteobjectproxy.md)
   Returns a proxy for the remote object (that is, the `exportedObject` from the other side of this connection).
 
 

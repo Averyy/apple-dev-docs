@@ -1,7 +1,8 @@
 # pdfViewWillClick(onLink:with:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle clicks on URL links in a view.
 
@@ -17,6 +18,10 @@ Handle clicks on URL links in a view.
 
 ```swift
 optional func pdfViewWillClick(onLink sender: PDFView, with url: URL)
+```
+
+```objc
+- (void) PDFViewWillClickOnLink:(PDFView *) sender withURL:(NSURL *) url;
 ```
 
 

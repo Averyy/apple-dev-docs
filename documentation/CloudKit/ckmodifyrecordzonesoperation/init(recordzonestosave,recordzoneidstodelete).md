@@ -1,7 +1,8 @@
 # init(recordZonesToSave:recordZoneIDsToDelete:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for modifying the specified record zones.
 
@@ -11,7 +12,7 @@ Creates an operation for modifying the specified record zones.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -32,7 +33,8 @@ The record zones you intend to save or delete must all reside in the same databa
 
 ## See Also
 
-- [init()](ckmodifyrecordzonesoperation/init.md)
+### Creating a Modify Zones Operation
+- [init()](./init%28%29.md)
   Creates an empty modify record zones operation.
 
 

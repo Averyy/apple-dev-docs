@@ -1,7 +1,8 @@
 # qualityLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates how the request balances accuracy and performance.
 
@@ -19,11 +20,16 @@ A value that indicates how the request balances accuracy and performance.
 var qualityLevel: VNGeneratePersonSegmentationRequest.QualityLevel { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNGeneratePersonSegmentationRequestQualityLevel qualityLevel;
+```
+
 ## See Also
 
-- [var outputPixelFormat: OSType](vngeneratepersonsegmentationrequest/outputpixelformat.md)
+### Configuring the Request
+- [var outputPixelFormat: OSType](./outputpixelformat.md)
   The pixel format of the output image.
-- [VNGeneratePersonSegmentationRequest.QualityLevel](vngeneratepersonsegmentationrequest/qualitylevel-swift.enum.md)
+- [VNGeneratePersonSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person segmentation request.
 
 

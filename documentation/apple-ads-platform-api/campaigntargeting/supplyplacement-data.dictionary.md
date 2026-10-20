@@ -1,7 +1,8 @@
 # CampaignTargeting.SupplyPlacement
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The specific placement within a supply source where a campaign’s ads are eligible to appear.
 
@@ -10,13 +11,13 @@ The specific placement within a supply source where a campaign’s ads are eligi
 
 ## Declaration
 
-```swift
+```
 object CampaignTargeting.SupplyPlacement
 ```
 
 #### Discussion
 
-The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Each placement belongs to exactly one [`CampaignTargeting.SupplySource`](campaigntargeting/supplysource-data.dictionary.md):
+The `supplyPlacement` field is **include-only**; setting `exclude` has no effect. Each placement belongs to exactly one [`CampaignTargeting.SupplySource`](./supplysource-data.dictionary.md):
 
 | Value | Supply source | Placement |
 | --- | --- | --- |
@@ -27,7 +28,7 @@ The `supplyPlacement` field is **include-only**; setting `exclude` has no effect
 | `MAPS_SEARCH_RESULTS` | `MAPS` | Apple Maps Search results |
 | `MAPS_SEARCH_HOME` | `MAPS` | Apple Maps Search home |
 
-Uses the [`TargetingData`](targetingdata.md) `include`/`exclude` shape.
+Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 
 ## Properties
 

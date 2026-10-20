@@ -1,7 +1,8 @@
 # rootType
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The root type for this key path.
 

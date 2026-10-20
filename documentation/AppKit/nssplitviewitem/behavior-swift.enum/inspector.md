@@ -1,7 +1,8 @@
 # NSSplitViewItem.Behavior.inspector
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The inspector behavior.
 
@@ -14,17 +15,22 @@ The inspector behavior.
 case inspector
 ```
 
+```c
+NSSplitViewItemBehaviorInspector
+```
+
 #### Discussion
 
-This behavior corresponds to split view items that you create using  [`init(inspectorWithViewController:)`](nssplitviewitem/init(inspectorwithviewcontroller:).md).
+This behavior corresponds to split view items that you create using  [`init(inspectorWithViewController:)`](../init%28inspectorwithviewcontroller%29.md).
 
 ## See Also
 
-- [NSSplitViewItem.Behavior.default](nssplitviewitem/behavior-swift.enum/default.md)
+### Item Behaviors
+- [NSSplitViewItem.Behavior.default](./default.md)
   The default split view item behavior.
-- [NSSplitViewItem.Behavior.sidebar](nssplitviewitem/behavior-swift.enum/sidebar.md)
+- [NSSplitViewItem.Behavior.sidebar](./sidebar.md)
   The sidebar behavior.
-- [NSSplitViewItem.Behavior.contentList](nssplitviewitem/behavior-swift.enum/contentlist.md)
+- [NSSplitViewItem.Behavior.contentList](./contentlist.md)
   The content list behavior.
 
 

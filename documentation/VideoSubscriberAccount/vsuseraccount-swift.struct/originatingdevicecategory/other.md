@@ -1,7 +1,8 @@
 # VSUserAccount.OriginatingDeviceCategory.other
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the original registering device is not mobile.
 
@@ -10,7 +11,7 @@ A constant that indicates the original registering device is not mobile.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ Non-mobile devices include desktop computers and set-top TV devices.
 
 ## See Also
 
-- [VSUserAccount.OriginatingDeviceCategory.mobile](vsuseraccount-swift.struct/originatingdevicecategory/mobile.md)
+### Originating device categories
+- [VSUserAccount.OriginatingDeviceCategory.mobile](./mobile.md)
   A constant that indicates the original registering device is mobile.
 
 

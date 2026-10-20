@@ -1,14 +1,15 @@
 # task_create_identity_token
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t task_create_identity_token(task_t task, task_id_token_t *token);
 ```
 

@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.random.key
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.random.key.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.random.key
-
- Table of contents 
-
-## Contents
-
-# mlx.core.random.key
-
-**key(*seed: int*) → [array](mlx.core.array.html#mlx.core.array)**
+**key(*seed: int*) → [array](mlx.core.array.md#mlx.core.array)**
 : Get a PRNG key from a seed.
 
 Parameters:
@@ -43,6 +16,4 @@ Returns:
 The PRNG key array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

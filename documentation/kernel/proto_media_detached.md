@@ -1,18 +1,19 @@
 # proto_media_detached
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*proto_media_detached)(ifnet_t ifp, protocol_family_t protocol);
 ```
 
-#### Return_value
+#### Return Value
 
 See the discussion.
 

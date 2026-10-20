@@ -1,7 +1,8 @@
 # QDBitsProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDBitsProcPtr = (UnsafePointer<BitMap>?, UnsafePointer<Rect>?, UnsafePointer<Rect>?, Int16, RgnHandle?) -> Void
+```
+
+```c
+typedef void (*QDBitsProcPtr)(const BitMap *srcBits, const Rect *srcRect, const Rect *dstRect, short mode, RgnHandle maskRgn);
 ```
 
 

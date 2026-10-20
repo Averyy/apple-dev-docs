@@ -1,7 +1,8 @@
 # Driver
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio driver class.
 
@@ -10,13 +11,14 @@ The identifier for the audio driver class.
 
 ## Declaration
 
-```swift
+```c
 Driver
 ```
 
 ## See Also
 
-- [Device](audiodriverkit/iouseraudioclassid/device.md)
+### Device and Driver Objects
+- [Device](./device.md)
   The identifier for the audio device class.
 
 

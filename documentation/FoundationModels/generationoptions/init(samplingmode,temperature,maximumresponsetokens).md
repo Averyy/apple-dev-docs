@@ -1,7 +1,8 @@
 # init(samplingMode:temperature:maximumResponseTokens:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates generation options that control token sampling behavior.
 
@@ -28,9 +29,10 @@ init(samplingMode: GenerationOptions.SamplingMode? = nil, temperature: Double? =
 
 ## See Also
 
-- [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?, toolCallingMode: GenerationOptions.ToolCallingMode?)](generationoptions/init(samplingmode:temperature:maximumresponsetokens:toolcallingmode:).md)
+### Creating options
+- [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?, toolCallingMode: GenerationOptions.ToolCallingMode?)](./init%28samplingmode,temperature,maximumresponsetokens,toolcallingmode%29.md)
   Creates generation options that control token sampling behavior.
-- [init(sampling: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(sampling:temperature:maximumresponsetokens:).md)
+- [init(sampling: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](./init%28sampling,temperature,maximumresponsetokens%29.md)
   Creates generation options that control token sampling behavior.
 
 

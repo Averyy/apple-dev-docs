@@ -1,7 +1,8 @@
 # init(algorithm:validation:maxIterations:textelDensity:styleStrength:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of training parameters for a style transfer model.
 

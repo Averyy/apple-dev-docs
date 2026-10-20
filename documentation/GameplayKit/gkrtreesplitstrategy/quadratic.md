@@ -1,7 +1,8 @@
 # GKRTreeSplitStrategy.quadratic
 
 **Framework**: GameplayKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to split groups of elements by finding the subgroups that occupy the least area.
 
@@ -19,13 +20,18 @@ An option to split groups of elements by finding the subgroups that occupy the l
 case quadratic
 ```
 
+```c
+GKRTreeSplitStrategyQuadratic
+```
+
 ## See Also
 
-- [GKRTreeSplitStrategy.halve](gkrtreesplitstrategy/halve.md)
+### Constants
+- [GKRTreeSplitStrategy.halve](./halve.md)
   An option to split groups of elements in half based on the order they were added to the tree in.
-- [GKRTreeSplitStrategy.linear](gkrtreesplitstrategy/linear.md)
+- [GKRTreeSplitStrategy.linear](./linear.md)
   An option to split groups of elements by finding a line that divides space so that half of the elements are on either side.
-- [GKRTreeSplitStrategy.reduceOverlap](gkrtreesplitstrategy/reduceoverlap.md)
+- [GKRTreeSplitStrategy.reduceOverlap](./reduceoverlap.md)
   An option to split groups of elements by finding the subgroups whose areas overlap the least.
 
 

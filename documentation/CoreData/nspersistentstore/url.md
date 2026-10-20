@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL for the persistent store.
 
@@ -10,7 +11,7 @@ The URL for the persistent store.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The URL for the persistent store.
 var url: URL? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSURL * URL;
+```
+
 #### Discussion
 
-To alter the location of a store, send the persistent store coordinator a [`setURL(_:for:)`](nspersistentstorecoordinator/seturl(_:for:).md) message.
+To alter the location of a store, send the persistent store coordinator a [`setURL(_:for:)`](../nspersistentstorecoordinator/seturl%28_,for%29.md) message.
 
 ## See Also
 
-- [var identifier: String!](nspersistentstore/identifier.md)
+### Managing Store Attributes
+- [var identifier: String!](./identifier.md)
   The unique identifier for the persistent store.
-- [var isReadOnly: Bool](nspersistentstore/isreadonly.md)
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether the persistent store is read-only.
 
 

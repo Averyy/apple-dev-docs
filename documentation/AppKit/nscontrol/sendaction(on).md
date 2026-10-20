@@ -1,17 +1,22 @@
 # sendAction(on:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the conditions on which the receiver sends action messages to its target.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendAction(on mask: NSEvent.EventTypeMask) -> Int
+```
+
+```objc
+- (NSInteger) sendActionOn:(NSEventMask) mask;
 ```
 
 #### Return Value
@@ -20,9 +25,9 @@ A bit mask containing the previous settings. This bit mask uses the same values 
 
 #### Discussion
 
-You use this method during mouse tracking when the mouse button changes state, the mouse moves, or if the cell is marked to send its action continuously while tracking. Because of this, the only bits checked in `mask` are `NSLeftMouseDownMask`, `NSLeftMouseUpMask`, `NSLeftMouseDraggedMask`, and `NSPeriodicMask`, which are declared in the [`NSEvent`](nsevent.md) class reference.
+You use this method during mouse tracking when the mouse button changes state, the mouse moves, or if the cell is marked to send its action continuously while tracking. Because of this, the only bits checked in `mask` are `NSLeftMouseDownMask`, `NSLeftMouseUpMask`, `NSLeftMouseDraggedMask`, and `NSPeriodicMask`, which are declared in the [`NSEvent`](../nsevent.md) class reference.
 
-The default implementation of this method simply invokes the [`sendAction(on:)`](nscell/sendaction(on:).md) method of its associated cell.
+The default implementation of this method simply invokes the [`sendAction(on:)`](../nscell/sendaction%28on%29.md) method of its associated cell.
 
 ## Parameters
 
@@ -30,15 +35,17 @@ The default implementation of this method simply invokes the [`sendAction(on:)`]
 
 ## See Also
 
-- [func sendAction(on: NSEvent.EventTypeMask) -> Int](nscell/sendaction(on:).md)
+### Related Documentation
+- [func sendAction(on: NSEvent.EventTypeMask) -> Int](../nscell/sendaction%28on%29.md)
   Sets the conditions on which the receiver sends action messages to its target.
-- [var action: Selector?](nscontrol/action.md)
+### Implementing the Target-Action Mechanism
+- [var action: Selector?](./action.md)
   The default action-message selector associated with the control.
-- [var target: AnyObject?](nscontrol/target.md)
+- [var target: AnyObject?](./target.md)
   The target object that receives action messages from the cell.
-- [var isContinuous: Bool](nscontrol/iscontinuous.md)
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the receiver’s cell sends its action message continuously to its target during mouse tracking.
-- [func sendAction(Selector?, to: Any?) -> Bool](nscontrol/sendaction(_:to:).md)
+- [func sendAction(Selector?, to: Any?) -> Bool](./sendaction%28_,to%29.md)
   Causes the specified action to be sent to the target.
 
 

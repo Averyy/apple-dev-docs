@@ -1,7 +1,8 @@
 # sel_getUid(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers a method name with the Objective-C runtime system.
 
@@ -20,15 +21,19 @@ Registers a method name with the Objective-C runtime system.
 func sel_getUid(_ str: UnsafePointer<CChar>) -> Selector
 ```
 
+```c
+extern SELsel_getUid(const char *str);
+```
+
 #### Return Value
 
-A pointer of type [`SEL`](sel.md) specifying the selector for the named method.
+A pointer of type [`SEL`](./sel.md) specifying the selector for the named method.
 
 #### Discussion
 
-The implementation of this method is identical to the implementation of [`sel_registerName(_:)`](sel_registername(_:).md).
+The implementation of this method is identical to the implementation of [`sel_registerName(_:)`](./sel_registername%28_%29.md).
 
-##### Version Notes
+##### Version-Notes
 
 Prior to OS X version 10.0, this method tried to find the selector mapped to the given name and returned `NULL` if the selector was not found. This was changed for safety, because it was observed that many of the callers of this function did not check the return value for `NULL`.
 
@@ -38,11 +43,12 @@ Prior to OS X version 10.0, this method tried to find the selector mapped to the
 
 ## See Also
 
-- [func sel_getName(Selector) -> UnsafePointer<CChar>](sel_getname(_:).md)
+### Working with Selectors
+- [func sel_getName(Selector) -> UnsafePointer<CChar>](./sel_getname%28_%29.md)
   Returns the name of the method specified by a given selector.
-- [func sel_registerName(UnsafePointer<CChar>) -> Selector](sel_registername(_:).md)
+- [func sel_registerName(UnsafePointer<CChar>) -> Selector](./sel_registername%28_%29.md)
   Registers a method with the Objective-C runtime system, maps the method name to a selector, and returns the selector value.
-- [func sel_isEqual(Selector, Selector) -> Bool](sel_isequal(_:_:).md)
+- [func sel_isEqual(Selector, Selector) -> Bool](./sel_isequal%28_,_%29.md)
   Returns a Boolean value that indicates whether two selectors are equal.
 
 

@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionKeyType
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The key types for platform single sign-on.
 
@@ -14,49 +15,54 @@ The key types for platform single sign-on.
 enum ASAuthorizationProviderExtensionKeyType
 ```
 
+```c
+enum ASAuthorizationProviderExtensionKeyType : NSInteger;
+```
+
 ## Topics
 
 ### Identifying the key types
-- [ASAuthorizationProviderExtensionKeyType.userDeviceEncryption](asauthorizationproviderextensionkeytype/userdeviceencryption.md)
+- [ASAuthorizationProviderExtensionKeyType.userDeviceEncryption](./asauthorizationproviderextensionkeytype/userdeviceencryption.md)
   The user device encryption key.
-- [ASAuthorizationProviderExtensionKeyType.userDeviceSigning](asauthorizationproviderextensionkeytype/userdevicesigning.md)
+- [ASAuthorizationProviderExtensionKeyType.userDeviceSigning](./asauthorizationproviderextensionkeytype/userdevicesigning.md)
   The user device signing key.
-- [ASAuthorizationProviderExtensionKeyType.userSecureEnclaveKey](asauthorizationproviderextensionkeytype/usersecureenclavekey.md)
+- [ASAuthorizationProviderExtensionKeyType.userSecureEnclaveKey](./asauthorizationproviderextensionkeytype/usersecureenclavekey.md)
   The user Secure Enclave key.
 ### Enumeration Cases
-- [ASAuthorizationProviderExtensionKeyType.currentDeviceEncryption](asauthorizationproviderextensionkeytype/currentdeviceencryption.md)
-- [ASAuthorizationProviderExtensionKeyType.currentDeviceSigning](asauthorizationproviderextensionkeytype/currentdevicesigning.md)
-- [ASAuthorizationProviderExtensionKeyType.sharedDeviceEncryption](asauthorizationproviderextensionkeytype/shareddeviceencryption.md)
-- [ASAuthorizationProviderExtensionKeyType.sharedDeviceSigning](asauthorizationproviderextensionkeytype/shareddevicesigning.md)
-- [ASAuthorizationProviderExtensionKeyType.userSmartCard](asauthorizationproviderextensionkeytype/usersmartcard.md)
+- [ASAuthorizationProviderExtensionKeyType.currentDeviceEncryption](./asauthorizationproviderextensionkeytype/currentdeviceencryption.md)
+- [ASAuthorizationProviderExtensionKeyType.currentDeviceSigning](./asauthorizationproviderextensionkeytype/currentdevicesigning.md)
+- [ASAuthorizationProviderExtensionKeyType.sharedDeviceEncryption](./asauthorizationproviderextensionkeytype/shareddeviceencryption.md)
+- [ASAuthorizationProviderExtensionKeyType.sharedDeviceSigning](./asauthorizationproviderextensionkeytype/shareddevicesigning.md)
+- [ASAuthorizationProviderExtensionKeyType.userSmartCard](./asauthorizationproviderextensionkeytype/usersmartcard.md)
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationproviderextensionkeytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./asauthorizationproviderextensionkeytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isDeviceRegistered: Bool](asauthorizationproviderextensionloginmanager/isdeviceregistered.md)
+### Performing authentication
+- [var isDeviceRegistered: Bool](./asauthorizationproviderextensionloginmanager/isdeviceregistered.md)
   A Boolean value that indicates whether the device completes registration.
-- [var isUserRegistered: Bool](asauthorizationproviderextensionloginmanager/isuserregistered.md)
+- [var isUserRegistered: Bool](./asauthorizationproviderextensionloginmanager/isuserregistered.md)
   A Boolean value that indicates whether the user completes registration.
-- [var loginConfiguration: ASAuthorizationProviderExtensionLoginConfiguration?](asauthorizationproviderextensionloginmanager/loginconfiguration.md)
+- [var loginConfiguration: ASAuthorizationProviderExtensionLoginConfiguration?](./asauthorizationproviderextensionloginmanager/loginconfiguration.md)
   The current login configuration for the extension.
-- [var ssoTokens: [AnyHashable : Any]?](asauthorizationproviderextensionloginmanager/ssotokens.md)
+- [var ssoTokens: [AnyHashable : Any]?](./asauthorizationproviderextensionloginmanager/ssotokens.md)
   The single sign-on response tokens for the current user and extension.
-- [func identity(for: ASAuthorizationProviderExtensionKeyType) -> SecIdentity?](asauthorizationproviderextensionloginmanager/identity(for:).md)
+- [func identity(for: ASAuthorizationProviderExtensionKeyType) -> SecIdentity?](./asauthorizationproviderextensionloginmanager/identity%28for%29.md)
   Retrieves the identity for the specified platform single sign-on key type.
-- [func key(for: ASAuthorizationProviderExtensionKeyType) -> SecKey?](asauthorizationproviderextensionloginmanager/key(for:).md)
+- [func key(for: ASAuthorizationProviderExtensionKeyType) -> SecKey?](./asauthorizationproviderextensionloginmanager/key%28for%29.md)
   Retrieves the key for the specified platform single sign-on key type.
-- [func userNeedsReauthentication(completion: ((any Error)?) -> Void)](asauthorizationproviderextensionloginmanager/userneedsreauthentication(completion:).md)
+- [func userNeedsReauthentication(completion: ((any Error)?) -> Void)](./asauthorizationproviderextensionloginmanager/userneedsreauthentication%28completion%29.md)
   Requests platform single sign-on to reauthenticate the current user.
 
 

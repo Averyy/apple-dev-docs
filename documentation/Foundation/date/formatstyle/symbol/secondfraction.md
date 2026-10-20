@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.SecondFraction
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the format for the second fraction in a date format style.
 
@@ -22,14 +23,14 @@ struct SecondFraction
 
 #### Overview
 
-The type [`Date.FormatStyle.Symbol.SecondFraction`](date/formatstyle/symbol/secondfraction.md) includes static factory methods that create custom [`Date.FormatStyle.Symbol.SecondFraction`](date/formatstyle/symbol/secondfraction.md) objects:
+The type [`Date.FormatStyle.Symbol.SecondFraction`](./secondfraction.md) includes static factory methods that create custom [`Date.FormatStyle.Symbol.SecondFraction`](./secondfraction.md) objects:
 
 | Factory variable | Description |
 | --- | --- |
-| [`fractional(_:)`](date/formatstyle/symbol/secondfraction/fractional(_:).md) | Returns the numerical representation of the fractional component of the second. For example, `8`, `827`. |
-| [`milliseconds(_:)`](date/formatstyle/symbol/secondfraction/milliseconds(_:).md) | Returns the number of milliseconds elapsed in the day. For example, `11122827`. |
+| [`fractional(_:)`](./secondfraction/fractional%28_%29.md) | Returns the numerical representation of the fractional component of the second. For example, `8`, `827`. |
+| [`milliseconds(_:)`](./secondfraction/milliseconds%28_%29.md) | Returns the number of milliseconds elapsed in the day. For example, `11122827`. |
 
-To customize the second format in a string representation of a `Date`, use [`secondFraction(_:)`](date/formatstyle/secondfraction(_:).md). The following example shows a variety of [`Date.FormatStyle.Symbol.SecondFraction`](date/formatstyle/symbol/secondfraction.md) format styles applied to a date.
+To customize the second format in a string representation of a `Date`, use [`secondFraction(_:)`](../secondfraction%28_%29.md). The following example shows a variety of [`Date.FormatStyle.Symbol.SecondFraction`](./secondfraction.md) format styles applied to a date.
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 3:05:41 PM
@@ -38,61 +39,62 @@ meetingDate.formatted(Date.FormatStyle().secondFraction(.fractional(1))) // 8
 meetingDate.formatted(Date.FormatStyle().secondFraction(.milliseconds(4))) // 11122827
 ```
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](../../formatstyle.md).
 
 ## Topics
 
 ### Modifying a Second Fraction
-- [static func fractional(Int) -> Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction/fractional(_:).md)
+- [static func fractional(Int) -> Date.FormatStyle.Symbol.SecondFraction](./secondfraction/fractional%28_%29.md)
   Creates a custom format style representing the fractional seconds component of a date.
-- [static func milliseconds(Int) -> Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction/milliseconds(_:).md)
+- [static func milliseconds(Int) -> Date.FormatStyle.Symbol.SecondFraction](./secondfraction/milliseconds%28_%29.md)
   Creates a custom format style representing the milliseconds elapsed in a day.
 ### Comparing Second Fractions
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
-- [static let omitted: Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction/omitted.md)
+- [static let omitted: Date.FormatStyle.Symbol.SecondFraction](./secondfraction/omitted.md)
   The option for not including the symbol in the formatted output.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear.md)
+### Modifying Date Style Format Symbols
+- [Date.FormatStyle.Symbol.CyclicYear](./cyclicyear.md)
   A type that specifies a format for a cyclic year in a date format style.
-- [Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day.md)
+- [Date.FormatStyle.Symbol.Day](./day.md)
   A type that specifies the format for a day in a date format style.
-- [Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear.md)
+- [Date.FormatStyle.Symbol.DayOfYear](./dayofyear.md)
   A type that specifies the format for the day of the year in a date format style.
-- [Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod.md)
+- [Date.FormatStyle.Symbol.DayPeriod](./dayperiod.md)
   A type that specifies a format for the time period in a date format style.
-- [Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era.md)
+- [Date.FormatStyle.Symbol.Era](./era.md)
   A type that specifies a format for the era in a date format style.
-- [Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour.md)
+- [Date.FormatStyle.Symbol.Hour](./hour.md)
   A type that specifies a format for the hour in a date format style.
-- [Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute.md)
+- [Date.FormatStyle.Symbol.Minute](./minute.md)
   A type that specifies the format for the minutes in a date format style.
-- [Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month.md)
+- [Date.FormatStyle.Symbol.Month](./month.md)
   A type that specifies a format for the month in a date format style.
-- [Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter.md)
+- [Date.FormatStyle.Symbol.Quarter](./quarter.md)
   A type that specifies the format for the quarter in a date format style.
-- [Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second.md)
+- [Date.FormatStyle.Symbol.Second](./second.md)
   A type that specifies the format for the seconds in a date format style.
-- [Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth.md)
+- [Date.FormatStyle.Symbol.StandaloneMonth](./standalonemonth.md)
   A type that specifies the format for a standalone month.
-- [Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter.md)
+- [Date.FormatStyle.Symbol.StandaloneQuarter](./standalonequarter.md)
   A type that specifies the format for a standalone quarter.
-- [Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday.md)
+- [Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday.md)
   A type that specifies the format for a standalone weekday.
-- [Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone.md)
+- [Date.FormatStyle.Symbol.TimeZone](./timezone.md)
   A type that specifies a format for the time zone in a date format style.
-- [Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour.md)
+- [Date.FormatStyle.Symbol.VerbatimHour](./verbatimhour.md)
   A type that specifies a format for the hour in a date format style.
 
 

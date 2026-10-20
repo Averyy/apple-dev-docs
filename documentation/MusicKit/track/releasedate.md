@@ -1,7 +1,8 @@
 # releaseDate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The release date (or expected for pre-release) of the track.
 

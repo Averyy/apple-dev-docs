@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requested operation can’t complete due to an unknown error.
 
@@ -22,19 +23,20 @@ static var unknown: MPError.Code { get }
 
 ## See Also
 
-- [static var cancelled: MPError.Code](mperror/cancelled.md)
+### Error code constants
+- [static var cancelled: MPError.Code](./cancelled.md)
   The system cancels the requested operation before it completes.
-- [static var cloudServiceCapabilityMissing: MPError.Code](mperror/cloudservicecapabilitymissing.md)
+- [static var cloudServiceCapabilityMissing: MPError.Code](./cloudservicecapabilitymissing.md)
   The operation can’t complete because iCloud services aren’t in an enabled state.
-- [static var networkConnectionFailed: MPError.Code](mperror/networkconnectionfailed.md)
+- [static var networkConnectionFailed: MPError.Code](./networkconnectionfailed.md)
   The operation fails because the device can’t connect to the network.
-- [static var notFound: MPError.Code](mperror/notfound.md)
+- [static var notFound: MPError.Code](./notfound.md)
   The operation fails because the system can’t find the requested identifier in the current storefront.
-- [static var notSupported: MPError.Code](mperror/notsupported.md)
+- [static var notSupported: MPError.Code](./notsupported.md)
   The requested operation fails because the system doesn’t support it.
-- [static var permissionDenied: MPError.Code](mperror/permissiondenied.md)
+- [static var permissionDenied: MPError.Code](./permissiondenied.md)
   The operation can’t complete because the user doesn’t have permission for the request.
-- [static var requestTimedOut: MPError.Code](mperror/requesttimedout.md)
+- [static var requestTimedOut: MPError.Code](./requesttimedout.md)
   The requested operation times out.
 
 

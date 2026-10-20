@@ -1,7 +1,8 @@
 # AVAssetExportPresetHEVCHighestQualityWithAlpha
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export the highest available video quality and HEVC video compression with alpha.
 
@@ -19,19 +20,24 @@ A preset to export the highest available video quality and HEVC video compressio
 let AVAssetExportPresetHEVCHighestQualityWithAlpha: String
 ```
 
+```c
+extern NSString * const AVAssetExportPresetHEVCHighestQualityWithAlpha;
+```
+
 #### Discussion
 
 This preset compresses video in HEVC format and audio in AAC format.
 
 ## See Also
 
-- [let AVAssetExportPresetLowQuality: String](avassetexportpresetlowquality.md)
+### Quality presets
+- [let AVAssetExportPresetLowQuality: String](./avassetexportpresetlowquality.md)
   A preset to export a low-quality movie file.
-- [let AVAssetExportPresetMediumQuality: String](avassetexportpresetmediumquality.md)
+- [let AVAssetExportPresetMediumQuality: String](./avassetexportpresetmediumquality.md)
   A preset to export a medium-quality movie file.
-- [let AVAssetExportPresetHighestQuality: String](avassetexportpresethighestquality.md)
+- [let AVAssetExportPresetHighestQuality: String](./avassetexportpresethighestquality.md)
   A preset to export a high-quality movie file.
-- [let AVAssetExportPresetHEVCHighestQuality: String](avassetexportpresethevchighestquality.md)
+- [let AVAssetExportPresetHEVCHighestQuality: String](./avassetexportpresethevchighestquality.md)
   A preset to export the highest available video quality and HEVC video compression.
 
 

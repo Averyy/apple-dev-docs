@@ -1,7 +1,8 @@
 # AppShortcutParameterPresentation
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the presentation of an App Shortcut  for the provided parameter.
 
@@ -11,7 +12,7 @@ Describes the presentation of an App Shortcut  for the provided parameter.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,17 +24,18 @@ struct AppShortcutParameterPresentation<Intent, Value, Parameter, ParameterKeyPa
 ## Topics
 
 ### Initializers
-- [init(for: ParameterKeyPath, summary: AppShortcutParameterPresentationSummary<Intent, Value, Parameter, ParameterKeyPath>, optionsCollections: () -> some AppShortcutOptionsCollectionSpecification<Value.UnwrappedType>)](appshortcutparameterpresentation/init(for:summary:optionscollections:).md)
+- [init(for: ParameterKeyPath, summary: AppShortcutParameterPresentationSummary<Intent, Value, Parameter, ParameterKeyPath>, optionsCollections: () -> some AppShortcutOptionsCollectionSpecification<Value.UnwrappedType>)](./appshortcutparameterpresentation/init%28for,summary,optionscollections%29.md)
   Creates an object that represents the App Shortcut with the specified parameters.
 
 ## See Also
 
-- [struct AppShortcutParameterPresentationSummary](appshortcutparameterpresentationsummary.md)
+### App Shortcut parameter presentation
+- [struct AppShortcutParameterPresentationSummary](./appshortcutparameterpresentationsummary.md)
   The summary of the presentation of an App Shortcut parameter.
-- [struct AppShortcutParameterPresentationSummaryString](appshortcutparameterpresentationsummarystring.md)
-- [struct AppShortcutParameterPresentationTitle](appshortcutparameterpresentationtitle.md)
+- [struct AppShortcutParameterPresentationSummaryString](./appshortcutparameterpresentationsummarystring.md)
+- [struct AppShortcutParameterPresentationTitle](./appshortcutparameterpresentationtitle.md)
   A struct that represents the title of the presentation of an App Shortcut.
-- [struct AppShortcutParameterPresentationTitleString](appshortcutparameterpresentationtitlestring.md)
+- [struct AppShortcutParameterPresentationTitleString](./appshortcutparameterpresentationtitlestring.md)
 
 
 ---

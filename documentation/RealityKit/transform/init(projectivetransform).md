@@ -1,7 +1,8 @@
 # init(projectiveTransform:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 A convenience initializer for the Transform Component that takes a `ProjectiveTransform3D`
 
@@ -17,6 +18,12 @@ A convenience initializer for the Transform Component that takes a `ProjectiveTr
 
 ```swift
 init(projectiveTransform: ProjectiveTransform3D)
+```
+
+**Other overloads**:
+
+```swift
+init(projectiveTransform: ProjectiveTransform3DFloat)
 ```
 
 

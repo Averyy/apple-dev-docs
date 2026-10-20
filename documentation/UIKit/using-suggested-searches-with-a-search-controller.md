@@ -1,6 +1,8 @@
 # Using suggested searches with a search controller
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [UsingSuggestedSearchesWithASearchController.zip](https://docs-assets.developer.apple.com/published/eef0fcbecc3e/UsingSuggestedSearchesWithASearchController.zip)
 
 Create a search interface with a table view of suggested searches.
 
@@ -12,15 +14,15 @@ Create a search interface with a table view of suggested searches.
 
 #### Overview
 
-This sample project demonstrates how to implement a [`UISearchController`](uisearchcontroller.md) in your application. `UISearchController` is a view controller that manages the display of search results based on interactions with a search bar.
+This sample project demonstrates how to implement a [`UISearchController`](./uisearchcontroller.md) in your application. `UISearchController` is a view controller that manages the display of search results based on interactions with a search bar.
 
 The sample lists flower products. Users can search for them by title, price, year, and color. As soon as the user taps the search bar, the search controller displays the list of suggested searches. A suggested search represents a particular color: red, blue, or green. The search controller filters the list of flower products by color when a suggested color is selected. This behavior matches that of the Mail app.
 
-This sample also demonstrates a scene-based architecture using [`UISceneDelegate`](uiscenedelegate.md). It includes the recommended [`UIUserActivityRestoring`](uiuseractivityrestoring.md) protocol to save and restore the search results. Adopt this protocol to save the search bar’s active state, first responder status, search bar text and token, and restore them when the app is relaunched.
+This sample also demonstrates a scene-based architecture using [`UISceneDelegate`](./uiscenedelegate.md). It includes the recommended [`UIUserActivityRestoring`](./uiuseractivityrestoring.md) protocol to save and restore the search results. Adopt this protocol to save the search bar’s active state, first responder status, search bar text and token, and restore them when the app is relaunched.
 
-##### Create a Search Controller
+##### Create a search controller
 
-The `MainTableViewController`, a subclass of [`UITableViewController`](uitableviewcontroller.md), creates the search controller. The search controller’s search bar helps filter a set of `Product` objects and displays the results in the table view. The sample places the search controller in the `MainTableViewController's` navigation bar:
+The `MainTableViewController`, a subclass of [`UITableViewController`](./uitableviewcontroller.md), creates the search controller. The search controller’s search bar helps filter a set of `Product` objects and displays the results in the table view. The sample places the search controller in the `MainTableViewController's` navigation bar:
 
 ```swift
 searchController = UISearchController(searchResultsController: resultsTableController)
@@ -44,7 +46,7 @@ searchController.searchBar.delegate = self
 
 The `ResultsTableController` displays both the list of filtered flower products and the list of suggested search colors. As the user types text in the search field, the list of flower products matches what is typed. If the user doesn’t enter any text, the search controller displays a list of suggested search colors. A suggested search represents a single query to search for a specific color of a product.
 
-##### Create Suggested Searches
+##### Create suggested searches
 
 The list of suggested searches is displayed by the results controller once the search bar is tapped:
 
@@ -55,7 +57,7 @@ The list of suggested searches is displayed by the results controller once the s
 }
 ```
 
-When the user first taps the search bar, the search results controller displays the suggested searches. The user chooses a suggested search, and then types additional search criteria in the search bar. Each suggested search represents a [`UISearchToken`](uisearchtoken.md), a visual representation of a search query. Tapping a suggested search creates a search token for a particular color and the search controller places it in the search bar’s text field. This text field is represented by [`UISearchTextField`](uisearchtextfield.md) which supports cut, copy, paste, and drag and drop of search tokens. Tokens always precede the text and can be selected and deleted by the user.
+When the user first taps the search bar, the search results controller displays the suggested searches. The user chooses a suggested search, and then types additional search criteria in the search bar. Each suggested search represents a [`UISearchToken`](./uisearchtoken.md), a visual representation of a search query. Tapping a suggested search creates a search token for a particular color and the search controller places it in the search bar’s text field. This text field is represented by [`UISearchTextField`](./uisearchtextfield.md) which supports cut, copy, paste, and drag and drop of search tokens. Tokens always precede the text and can be selected and deleted by the user.
 
 The sample creates a `UISearchToken` as follows:
 
@@ -90,15 +92,16 @@ if let searchField = navigationItem.searchController?.searchBar.searchTextField 
 
 ## See Also
 
-- [class UISearchContainerViewController](uisearchcontainerviewcontroller.md)
+### Search interface
+- [class UISearchContainerViewController](./uisearchcontainerviewcontroller.md)
   A view controller that manages the presentation of search results in your interface.
-- [class UISearchController](uisearchcontroller.md)
+- [class UISearchController](./uisearchcontroller.md)
   A view controller that manages the display of search results based on interactions with a search bar.
-- [class UISearchBar](uisearchbar.md)
+- [class UISearchBar](./uisearchbar.md)
   A specialized view for receiving search-related information from the user.
-- [protocol UISearchResultsUpdating](uisearchresultsupdating.md)
+- [protocol UISearchResultsUpdating](./uisearchresultsupdating.md)
   A set of methods that let you update search results based on information the user enters into the search bar.
-- [Displaying searchable content by using a search controller](displaying-searchable-content-by-using-a-search-controller.md)
+- [Displaying searchable content by using a search controller](./displaying-searchable-content-by-using-a-search-controller.md)
   Create a user interface with searchable content in a table view.
 
 

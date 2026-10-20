@@ -1,7 +1,8 @@
 # FinanceStore.SaveOrderResult.newerExisting
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There’s a newer, existing order already in the finance store.
 
@@ -18,9 +19,10 @@ case newerExisting
 
 ## See Also
 
-- [FinanceStore.SaveOrderResult.added](financestore/saveorderresult/added.md)
+### Enumeration Cases
+- [FinanceStore.SaveOrderResult.added](./added.md)
   The framework added the order to the finance store.
-- [FinanceStore.SaveOrderResult.cancelled](financestore/saveorderresult/cancelled.md)
+- [FinanceStore.SaveOrderResult.cancelled](./cancelled.md)
   The individual canceled the order.
 
 

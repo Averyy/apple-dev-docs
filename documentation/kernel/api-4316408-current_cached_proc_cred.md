@@ -1,14 +1,15 @@
 # current_cached_proc_cred
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kauth_cred_t current_cached_proc_cred(proc_t);
 ```
 

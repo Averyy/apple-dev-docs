@@ -1,11 +1,12 @@
 # HKAsyncSequenceQuery Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func results(for: HKHealthStore) -> HKActivitySummaryQueryDescriptor.Results](hkactivitysummaryquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKActivitySummaryQueryDescriptor.Results](./results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
 
 

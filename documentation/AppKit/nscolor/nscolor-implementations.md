@@ -1,11 +1,12 @@
 # NSColor Implementations
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(CIColor: CIColor)](nscolor/init(cicolor:)-3rxsk.md)
+- [init(CIColor: CIColor)](./init%28cicolor%29-3rxsk.md)
   Creates a color object from the specified Core Image color.
 
 

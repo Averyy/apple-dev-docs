@@ -1,7 +1,8 @@
 # NLDistanceType
 
 **Framework**: Natural Language  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The means of calculating a distance between two locations in a text embedding.
 
@@ -20,27 +21,31 @@ The means of calculating a distance between two locations in a text embedding.
 enum NLDistanceType
 ```
 
+```c
+enum NLDistanceType : NSInteger;
+```
+
 #### Overview
 
-The meaning of an [`NLDistance`](nldistance.md) is directly related to the [`NLDistanceType`](nldistancetype.md) you use when you call a method that uses it. For example, if you use the [`neighborsForString:maximumCount:distanceType:`](nlembedding/neighborsforstring:maximumcount:distancetype:.md) method and use [`NLDistanceType.cosine`](nldistancetype/cosine.md) for the `distanceType` parameter, the method calculates the cosine distance and returns it as an [`NLDistance`](nldistance.md).
+The meaning of an [`NLDistance`](./nldistance.md) is directly related to the [`NLDistanceType`](./nldistancetype.md) you use when you call a method that uses it. For example, if you use the [`neighborsForString:maximumCount:distanceType:`](./nlembedding/neighborsforstring_maximumcount_distancetype_.md) method and use [`NLDistanceType.cosine`](./nldistancetype/cosine.md) for the `distanceType` parameter, the method calculates the cosine distance and returns it as an [`NLDistance`](./nldistance.md).
 
 ## Topics
 
 ### Distance Types
-- [NLDistanceType.cosine](nldistancetype/cosine.md)
+- [NLDistanceType.cosine](./nldistancetype/cosine.md)
   A method of calculating distance by using cosine similarity.
 ### Initializers
-- [init?(rawValue: Int)](nldistancetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nldistancetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

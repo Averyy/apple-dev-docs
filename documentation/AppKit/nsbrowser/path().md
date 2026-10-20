@@ -1,12 +1,13 @@
 # path()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representing the browser’s current path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Returns a string representing the browser’s current path.
 func path() -> String
 ```
 
+```objc
+- (NSString *) path;
+```
+
 #### Return Value
 
-The path representing the current selection. The components of this path are separated with the string returned by [`pathSeparator`](nsbrowser/pathseparator.md).
+The path representing the current selection. The components of this path are separated with the string returned by [`pathSeparator`](./pathseparator.md).
 
 #### Discussion
 
-Invoking this method is equivalent to invoking [`path(toColumn:)`](nsbrowser/path(tocolumn:).md) for all columns.
+Invoking this method is equivalent to invoking [`path(toColumn:)`](./path%28tocolumn%29.md) for all columns.
 
 ## See Also
 
-- [func setPath(String) -> Bool](nsbrowser/setpath(_:).md)
+### Managing the Path
+- [func setPath(String) -> Bool](./setpath%28_%29.md)
   Sets the path to be displayed by the browser.
-- [func path(toColumn: Int) -> String](nsbrowser/path(tocolumn:).md)
+- [func path(toColumn: Int) -> String](./path%28tocolumn%29.md)
   Returns a string representing the path from the first column up to, but not including, the column at the given index.
-- [var pathSeparator: String](nsbrowser/pathseparator.md)
+- [var pathSeparator: String](./pathseparator.md)
   The path separator.
 
 

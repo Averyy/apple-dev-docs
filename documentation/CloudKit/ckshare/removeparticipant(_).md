@@ -1,7 +1,8 @@
 # removeParticipant(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a participant from the share.
 
@@ -20,9 +21,13 @@ Removes a participant from the share.
 func removeParticipant(_ participant: CKShare.Participant)
 ```
 
+```objc
+- (void) removeParticipant:(CKShareParticipant *) participant;
+```
+
 #### Discussion
 
-To modify the list of participants, a share’s [`publicPermission`](ckshare/publicpermission.md) must be [`CKShare.ParticipantPermission.none`](ckshare/participantpermission/none.md). You can’t mix and match public and private users in the same share. You can only add certain participant types with this API. See [`CKShare.Participant`](ckshare/participant.md) for more information.
+To modify the list of participants, a share’s [`publicPermission`](./publicpermission.md) must be [`CKShare.ParticipantPermission.none`](./participantpermission/none.md). You can’t mix and match public and private users in the same share. You can only add certain participant types with this API. See [`CKShare.Participant`](./participant.md) for more information.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ To modify the list of participants, a share’s [`publicPermission`](ckshare/pub
 
 ## See Also
 
-- [var publicPermission: CKShare.ParticipantPermission](ckshare/publicpermission.md)
+### Configuring the Share
+- [var publicPermission: CKShare.ParticipantPermission](./publicpermission.md)
   The permission for anyone with access to the share’s URL.
-- [func addParticipant(CKShare.Participant)](ckshare/addparticipant(_:).md)
+- [func addParticipant(CKShare.Participant)](./addparticipant%28_%29.md)
   Adds a participant to the share.
-- [CKShare.Participant](ckshare/participant.md)
+- [CKShare.Participant](./participant.md)
   An object that describes a user’s participation in a share.
 
 

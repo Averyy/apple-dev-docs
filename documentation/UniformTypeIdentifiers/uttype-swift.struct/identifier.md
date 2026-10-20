@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that represents the type.
 
@@ -24,11 +25,12 @@ var identifier: String { get }
 
 The identifier uniquely identifies its type, represented by a reverse-DNS string, such as `public.jpeg` or `com.adobe.pdf`.
 
-API that doesn’t use [`UTType`](uttype-swift.struct.md) uses a `String` or [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) to refer to a type by its identifier.
+API that doesn’t use [`UTType`](../uttype-swift.struct.md) uses a `String` or [`CFString`](../../CoreFoundation/cfstring.md) to refer to a type by its identifier.
 
 ## See Also
 
-- [typealias ReferenceType](uttype-swift.struct/referencetype.md)
+### Identifying a type
+- [typealias ReferenceType](./referencetype.md)
   An alias for the associated reference type.
 
 

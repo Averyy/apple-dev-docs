@@ -1,7 +1,8 @@
 # USDLayer.SpecType.variantSet
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A variant set spec.
 

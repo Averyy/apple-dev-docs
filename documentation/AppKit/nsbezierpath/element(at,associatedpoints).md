@@ -1,12 +1,13 @@
 # element(at:associatedPoints:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the element type and (and optionally) the associated points for the path element at the specified index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Gets the element type and (and optionally) the associated points for the path el
 func element(at index: Int, associatedPoints points: NSPointArray?) -> NSBezierPath.ElementType
 ```
 
+```objc
+- (NSBezierPathElement) elementAtIndex:(NSInteger) index associatedPoints:(NSPointArray) points;
+```
+
 #### Return Value
 
-The type of the path element. For a list of constants, see [`NSBezierPath.ElementType`](nsbezierpath/elementtype.md).
+The type of the path element. For a list of constants, see [`NSBezierPath.ElementType`](./elementtype.md).
 
 #### Discussion
 
@@ -31,14 +36,15 @@ For curve operations, the order of the points is controlPoint1 (`points`[0]), co
 
 ## See Also
 
-- [var cgPath: CGPath](nsbezierpath/cgpath.md)
-- [var elementCount: Int](nsbezierpath/elementcount.md)
+### Accessing Elements of a Path
+- [var cgPath: CGPath](./cgpath.md)
+- [var elementCount: Int](./elementcount.md)
   The total number of path elements in the path.
-- [func element(at: Int) -> NSBezierPath.ElementType](nsbezierpath/element(at:).md)
+- [func element(at: Int) -> NSBezierPath.ElementType](./element%28at%29.md)
   Returns the type of path element at the specified index.
-- [func removeAllPoints()](nsbezierpath/removeallpoints.md)
+- [func removeAllPoints()](./removeallpoints%28%29.md)
   Removes all path elements from the path, effectively clearing the path.
-- [func setAssociatedPoints(NSPointArray?, at: Int)](nsbezierpath/setassociatedpoints(_:at:).md)
+- [func setAssociatedPoints(NSPointArray?, at: Int)](./setassociatedpoints%28_,at%29.md)
   Changes the points associated with the specified path element.
 
 

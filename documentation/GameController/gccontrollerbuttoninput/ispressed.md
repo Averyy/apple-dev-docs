@@ -1,7 +1,8 @@
 # isPressed
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user is pressing the button.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the user is pressing the button.
 var isPressed: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPressed) BOOL pressed;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the user is putting pressure on the button; otherwise, the user isn’t.
+If this property is [`true`](../../Swift/true.md), the user is putting pressure on the button; otherwise, the user isn’t.
 
 For the DualSense, DualShock 4, and Siri Remote controllers, the framework simulates whether the user presses the button and the level of pressure for its touch surfaces.
 
 ## See Also
 
-- [var isTouched: Bool](gccontrollerbuttoninput/istouched.md)
+### Accessing input values
+- [var isTouched: Bool](./istouched.md)
   A Boolean value that indicates whether the user is touching the button.
-- [var value: Float](gccontrollerbuttoninput/value.md)
+- [var value: Float](./value.md)
   The level of pressure the user is applying to the button.
 
 

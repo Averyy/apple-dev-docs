@@ -1,16 +1,17 @@
 # any
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrow that points in any direction.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ An arrow that points in any direction.
 static var any: UIPopoverArrowDirection { get }
 ```
 
+```c
+UIPopoverArrowDirectionAny
+```
+
 ## See Also
 
-- [static var up: UIPopoverArrowDirection](uipopoverarrowdirection/up.md)
+### Constants
+- [static var up: UIPopoverArrowDirection](./up.md)
   An arrow that points upward.
-- [static var down: UIPopoverArrowDirection](uipopoverarrowdirection/down.md)
+- [static var down: UIPopoverArrowDirection](./down.md)
   An arrow that points downward.
-- [static var left: UIPopoverArrowDirection](uipopoverarrowdirection/left.md)
+- [static var left: UIPopoverArrowDirection](./left.md)
   An arrow that points toward the left.
-- [static var right: UIPopoverArrowDirection](uipopoverarrowdirection/right.md)
+- [static var right: UIPopoverArrowDirection](./right.md)
   An arrow that points toward the right.
-- [static var unknown: UIPopoverArrowDirection](uipopoverarrowdirection/unknown.md)
+- [static var unknown: UIPopoverArrowDirection](./unknown.md)
   The status of the arrow is currently unknown.
 
 

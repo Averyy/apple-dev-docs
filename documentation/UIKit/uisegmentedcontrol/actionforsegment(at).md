@@ -1,7 +1,8 @@
 # actionForSegment(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the action of the segment at the index you specify, if one exists.
 
@@ -18,9 +19,13 @@ Fetches the action of the segment at the index you specify, if one exists.
 func actionForSegment(at segment: Int) -> UIAction?
 ```
 
+```objc
+- (UIAction *) actionForSegmentAtIndex:(NSUInteger) segment;
+```
+
 #### Return Value
 
-The [`UIAction`](uiaction.md) for the segment at the index you specify, or `nil` if the segment doesn’t have an action assigned.
+The [`UIAction`](../uiaction.md) for the segment at the index you specify, or `nil` if the segment doesn’t have an action assigned.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ The [`UIAction`](uiaction.md) for the segment at the index you specify, or `nil`
 
 ## See Also
 
-- [func setAction(UIAction, forSegmentAt: Int)](uisegmentedcontrol/setaction(_:forsegmentat:).md)
+### Managing segment actions
+- [func setAction(UIAction, forSegmentAt: Int)](./setaction%28_,forsegmentat%29.md)
   Sets the action for the segment at the index you specify.
 
 

@@ -1,7 +1,8 @@
 # BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a background asset version external beta release.
 
@@ -10,14 +11,14 @@ The request body you use to update a background asset version external beta rele
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `backgroundAssetVersions`
 
 
 ---

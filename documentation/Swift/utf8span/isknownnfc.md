@@ -1,7 +1,8 @@
 # isKnownNFC
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the contents are known to be NFC. This is not always checked at initialization time and is set by `checkForNFC`.
 
@@ -22,7 +23,7 @@ var isKnownNFC: Bool { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppSchema.CameraEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies enum schemas in the camera domain.
 
@@ -21,27 +22,28 @@ protocol CameraEnum : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var captureDevice: some AppSchemaEnum](appschema/cameraenum/capturedevice.md)
+- [var captureDevice: some AppSchemaEnum](./cameraenum/capturedevice.md)
   An enum schema for a capture device parameter.
-- [var captureDuration: some AppSchemaEnum](appschema/cameraenum/captureduration.md)
+- [var captureDuration: some AppSchemaEnum](./cameraenum/captureduration.md)
   An enum schema for a capture duration parameter.
-- [var captureMode: some AppSchemaEnum](appschema/cameraenum/capturemode.md)
+- [var captureMode: some AppSchemaEnum](./cameraenum/capturemode.md)
   An enum schema for a capture mode parameter.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Enum](appschema/enum.md)
+- [AppSchema.Enum](./enum.md)
 
 ## See Also
 
-- [var captureDevice: some AppSchemaEnum](appschema/cameraenum/capturedevice.md)
+### Types for static parameters
+- [var captureDevice: some AppSchemaEnum](./cameraenum/capturedevice.md)
   An enum schema for a capture device parameter.
-- [var captureDuration: some AppSchemaEnum](appschema/cameraenum/captureduration.md)
+- [var captureDuration: some AppSchemaEnum](./cameraenum/captureduration.md)
   An enum schema for a capture duration parameter.
-- [var captureMode: some AppSchemaEnum](appschema/cameraenum/capturemode.md)
+- [var captureMode: some AppSchemaEnum](./cameraenum/capturemode.md)
   An enum schema for a capture mode parameter.
 
 

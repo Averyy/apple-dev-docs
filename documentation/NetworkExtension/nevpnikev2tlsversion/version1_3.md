@@ -1,7 +1,8 @@
 # NEVPNIKEv2TLSVersion.version1_3
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case version1_3
+```
+
+```c
+NEVPNIKEv2TLSVersion1_3
 ```
 
 

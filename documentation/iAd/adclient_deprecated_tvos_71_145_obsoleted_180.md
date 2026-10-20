@@ -1,7 +1,8 @@
 # ADCLIENT_DEPRECATED_TVOS_71_145_OBSOLETED_180
 
 **Framework**: iAd  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - iOS 4.0+
@@ -10,7 +11,7 @@
 
 ## Declaration
 
-```swift
+```c
 #define ADCLIENT_DEPRECATED_TVOS_71_145_OBSOLETED_180
 ```
 

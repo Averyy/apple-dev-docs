@@ -1,7 +1,8 @@
 # Product.ProductType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types of Apple In-App Purchases.
 
@@ -23,34 +24,35 @@ struct ProductType
 ## Topics
 
 ### Getting the Product Type
-- [static let consumable: Product.ProductType](product/producttype/consumable.md)
+- [static let consumable: Product.ProductType](./producttype/consumable.md)
   A consumable Apple In-App Purchase.
-- [static let nonConsumable: Product.ProductType](product/producttype/nonconsumable.md)
+- [static let nonConsumable: Product.ProductType](./producttype/nonconsumable.md)
   A non-consumable Apple In-App Purchase.
-- [static let nonRenewable: Product.ProductType](product/producttype/nonrenewable.md)
+- [static let nonRenewable: Product.ProductType](./producttype/nonrenewable.md)
   A non-renewing subscription.
-- [static let autoRenewable: Product.ProductType](product/producttype/autorenewable.md)
+- [static let autoRenewable: Product.ProductType](./producttype/autorenewable.md)
   An auto-renewable subscription.
 ### Getting a Localized Description
-- [var localizedDescription: String](product/producttype/localizeddescription.md)
+- [var localizedDescription: String](./producttype/localizeddescription.md)
 ### Type Properties
-- [static let subscriptionBundle: Product.ProductType](product/producttype/subscriptionbundle.md)
-- [static let subscriptionSuite: Product.ProductType](product/producttype/subscriptionsuite.md)
+- [static let subscriptionBundle: Product.ProductType](./producttype/subscriptionbundle.md)
+- [static let subscriptionSuite: Product.ProductType](./producttype/subscriptionsuite.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let id: String](product/id.md)
+### Getting product identifiers and type
+- [let id: String](./id.md)
   The unique product identifier.
-- [let type: Product.ProductType](product/type.md)
+- [let type: Product.ProductType](./type.md)
   The Apple In-App Purchase product type.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Automatically determine the prevention method based on axis type and data.
 

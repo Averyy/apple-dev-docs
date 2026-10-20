@@ -1,7 +1,8 @@
 # symbolColorRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property specifying how symbol images fill their layers, or nil to use the default fill style.
 

@@ -1,7 +1,8 @@
 # canMakePayments
 
 **Framework**: Apple Pay on the Web  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Indicates whether the device supports Apple Pay.
 
@@ -11,13 +12,13 @@ Indicates whether the device supports Apple Pay.
 
 ## Declaration
 
-```swift
+```
 static boolean canMakePayments();
 ```
 
 ## Mentions
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+- [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
 
 #### Return Value
 
@@ -31,15 +32,16 @@ This method can be called any time.
 
 ## See Also
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+### Apple Pay availability
+- [Checking for Apple Pay availability](../checking-for-apple-pay-availability.md)
   Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
-- [applePayCapabilities](applepaysession/applepaycapabilities.md)
+- [applePayCapabilities](./applepaycapabilities.md)
   Indicates whether the device supports Apple Pay and whether the person has an active card in Wallet that qualifies for web payments.
-- [canMakePaymentsWithActiveCard](applepaysession/canmakepaymentswithactivecard.md)
+- [canMakePaymentsWithActiveCard](./canmakepaymentswithactivecard.md)
   Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
-- [PaymentCredentialStatus](paymentcredentialstatus.md)
+- [PaymentCredentialStatus](../paymentcredentialstatus.md)
   Information about whether the device supports Apple Pay and the possible payment credentials the person has provisioned in Wallet.
-- [PaymentCredentialStatusResponse](paymentcredentialstatusresponse.md)
+- [PaymentCredentialStatusResponse](../paymentcredentialstatusresponse.md)
   The response for information about the device’s support for Apple Pay and the payment credential status.
 
 

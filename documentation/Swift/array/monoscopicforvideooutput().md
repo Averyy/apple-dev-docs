@@ -1,7 +1,8 @@
 # monoscopicForVideoOutput()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a collection of CMTags with the required tags to describe monoscopic video, where there is no stereo view, e.g. kCMTagStereoNone.
 
@@ -19,6 +20,8 @@ Creates a collection of CMTags with the required tags to describe monoscopic vid
 ```swift
 static func monoscopicForVideoOutput() -> [CMTag]
 ```
+
+Available when `Element` is `CMTag`.
 
 
 ---

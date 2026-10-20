@@ -1,7 +1,8 @@
 # CPPlaybackConfiguration.Presentation
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The style of media presentation shown after selecting the item.
 
@@ -16,24 +17,28 @@ The style of media presentation shown after selecting the item.
 enum Presentation
 ```
 
+```c
+enum CPPlaybackPresentation : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CPPlaybackConfiguration.Presentation.audio](cpplaybackconfiguration/presentation/audio.md)
-- [CPPlaybackConfiguration.Presentation.none](cpplaybackconfiguration/presentation/none.md)
-- [CPPlaybackConfiguration.Presentation.video](cpplaybackconfiguration/presentation/video.md)
+- [CPPlaybackConfiguration.Presentation.audio](./presentation/audio.md)
+- [CPPlaybackConfiguration.Presentation.none](./presentation/none.md)
+- [CPPlaybackConfiguration.Presentation.video](./presentation/video.md)
 ### Initializers
-- [init?(rawValue: Int)](cpplaybackconfiguration/presentation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./presentation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

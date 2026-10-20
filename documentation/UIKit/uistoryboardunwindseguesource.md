@@ -1,7 +1,8 @@
 # UIStoryboardUnwindSegueSource
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of information about an unwind segue.
 
@@ -19,6 +20,10 @@ An encapsulation of information about an unwind segue.
 class UIStoryboardUnwindSegueSource
 ```
 
+```objc
+@interface UIStoryboardUnwindSegueSource : NSObject
+```
+
 #### Overview
 
 You don’t create instances of this class yourself. UIKit creates an unwind segue source object in response to the triggering of an unwind segue. It passes the source object to other view controller methods that determine the destination of the unwind segue. The information in an unwind segue source object includes the view controller being dismissed by the segue and the action method responsible for the dismissal.
@@ -26,35 +31,36 @@ You don’t create instances of this class yourself. UIKit creates an unwind seg
 ## Topics
 
 ### Getting the unwind segue attributes
-- [var source: UIViewController](uistoryboardunwindseguesource/source.md)
+- [var source: UIViewController](./uistoryboardunwindseguesource/source.md)
   The view controller being dismissed by the unwind segue.
-- [var unwindAction: Selector](uistoryboardunwindseguesource/unwindaction.md)
+- [var unwindAction: Selector](./uistoryboardunwindseguesource/unwindaction.md)
   The action method associated with the unwind segue.
-- [var sender: Any?](uistoryboardunwindseguesource/sender.md)
+- [var sender: Any?](./uistoryboardunwindseguesource/sender.md)
   The object that performed the unwind action.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Customizing the behavior of segue-based presentations](customizing-the-behavior-of-segue-based-presentations.md)
+### Storyboards
+- [Customizing the behavior of segue-based presentations](./customizing-the-behavior-of-segue-based-presentations.md)
   Pass data between view controllers during a segue, and programmatically control when segues occur.
-- [Dismissing a view controller with an unwind segue](dismissing-a-view-controller-with-an-unwind-segue.md)
+- [Dismissing a view controller with an unwind segue](./dismissing-a-view-controller-with-an-unwind-segue.md)
   Configure an unwind segue in your storyboard file that dynamically chooses the most appropriate view controller to display next.
-- [class UIStoryboard](uistoryboard.md)
+- [class UIStoryboard](./uistoryboard.md)
   An encapsulation of the design-time view controller graph represented in an Interface Builder storyboard resource file.
-- [class UIStoryboardSegue](uistoryboardsegue.md)
+- [class UIStoryboardSegue](./uistoryboardsegue.md)
   An object that prepares for and performs the visual transition between two view controllers.
 
 

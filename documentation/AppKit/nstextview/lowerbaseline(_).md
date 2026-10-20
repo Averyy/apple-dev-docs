@@ -1,17 +1,22 @@
 # lowerBaseline(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Lowers the baseline offset of selected text by 1 point, or of all text if the receiver is a plain text view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func lowerBaseline(_ sender: Any?)
+```
+
+```objc
+- (void) lowerBaseline:(id) sender;
 ```
 
 #### Discussion
@@ -24,35 +29,37 @@ As such, this method defines a more primitive operation than subscripting.
 
 ## See Also
 
-- [func unscript(Any?)](nstext/unscript(_:).md)
+### Related Documentation
+- [func unscript(Any?)](../nstext/unscript%28_%29.md)
   This action method removes any superscripting or subscripting from selected text (or all text if the receiver is a plain text object).
-- [func `subscript`(Any?)](nstext/subscript(_:).md)
+- [func `subscript`(Any?)](../nstext/subscript%28_%29.md)
   This action method applies a subscript attribute to selected text (or all text if the receiver is a plain text object), lowering its baseline offset by a predefined amount.
-- [func alignJustified(Any?)](nstextview/alignjustified(_:).md)
+### Setting text attributes
+- [func alignJustified(Any?)](./alignjustified%28_%29.md)
   Applies full justification to selected paragraphs (or all text, if the receiver is a plain text object).
-- [func changeAttributes(Any?)](nstextview/changeattributes(_:).md)
+- [func changeAttributes(Any?)](./changeattributes%28_%29.md)
   Changes the attributes of the current selection.
-- [func changeColor(Any?)](nstextview/changecolor(_:).md)
+- [func changeColor(Any?)](./changecolor%28_%29.md)
   Sets the color of the selected text.
-- [func setAlignment(NSTextAlignment, range: NSRange)](nstextview/setalignment(_:range:).md)
+- [func setAlignment(NSTextAlignment, range: NSRange)](./setalignment%28_,range%29.md)
   Sets the alignment of the paragraphs containing characters in the specified range.
-- [var typingAttributes: [NSAttributedString.Key : Any]](nstextview/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]](./typingattributes.md)
   The receiver’s typing attributes.
-- [func useStandardKerning(Any?)](nstextview/usestandardkerning(_:).md)
+- [func useStandardKerning(Any?)](./usestandardkerning%28_%29.md)
   Set the receiver to use pair kerning data for the glyphs in its selection, or for all glyphs if the receiver is a plain text view.
-- [func raiseBaseline(Any?)](nstextview/raisebaseline(_:).md)
+- [func raiseBaseline(Any?)](./raisebaseline%28_%29.md)
   Raises the baseline offset of selected text by 1 point, or of all text if the receiver is a plain text view.
-- [func turnOffKerning(Any?)](nstextview/turnoffkerning(_:).md)
+- [func turnOffKerning(Any?)](./turnoffkerning%28_%29.md)
   Sets the receiver to use nominal glyph spacing for the glyphs in its selection, or for all glyphs if the receiver is a plain text view.
-- [func loosenKerning(Any?)](nstextview/loosenkerning(_:).md)
+- [func loosenKerning(Any?)](./loosenkerning%28_%29.md)
   Increases the space between glyphs in the receiver’s selection, or in all text if the receiver is a plain text view.
-- [func tightenKerning(Any?)](nstextview/tightenkerning(_:).md)
+- [func tightenKerning(Any?)](./tightenkerning%28_%29.md)
   Decreases the space between glyphs in the receiver’s selection, or for all glyphs if the receiver is a plain text view.
-- [func useStandardLigatures(Any?)](nstextview/usestandardligatures(_:).md)
+- [func useStandardLigatures(Any?)](./usestandardligatures%28_%29.md)
   Sets the receiver to use the standard ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
-- [func turnOffLigatures(Any?)](nstextview/turnoffligatures(_:).md)
+- [func turnOffLigatures(Any?)](./turnoffligatures%28_%29.md)
   Sets the receiver to use only required ligatures when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
-- [func useAllLigatures(Any?)](nstextview/useallligatures(_:).md)
+- [func useAllLigatures(Any?)](./useallligatures%28_%29.md)
   Sets the receiver to use all ligatures available for the fonts and languages used when setting text, for the glyphs in the selection if the receiver is a rich text view, or for all glyphs if it’s a plain text view.
 
 

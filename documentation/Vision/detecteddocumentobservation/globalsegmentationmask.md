@@ -1,7 +1,8 @@
 # globalSegmentationMask
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pixel buffer representing a segmentation mask for the detected document.
 
@@ -22,9 +23,10 @@ var globalSegmentationMask: PixelBufferObservation
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](../pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 

@@ -2,9 +2,10 @@
 
 **Framework**: Distributed  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
-Type of [`DistributedTargetInvocationDecoder`](distributedtargetinvocationdecoder.md) that should be used when decoding invocations during [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](distributedactorsystem/executedistributedtarget(on:target:invocationdecoder:handler:).md) calls.
+Type of [`DistributedTargetInvocationDecoder`](../distributedtargetinvocationdecoder.md) that should be used when decoding invocations during [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](./executedistributedtarget%28on,target,invocationdecoder,handler%29.md) calls.
 
 **Availability**:
 - iOS 16.0+
@@ -12,7 +13,7 @@ Type of [`DistributedTargetInvocationDecoder`](distributedtargetinvocationdecode
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

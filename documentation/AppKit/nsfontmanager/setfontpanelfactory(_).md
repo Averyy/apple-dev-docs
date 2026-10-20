@@ -1,12 +1,13 @@
 # setFontPanelFactory(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the class that creates the shared Font panel object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sets the class that creates the shared Font panel object.
 class func setFontPanelFactory(_ factoryId: AnyClass?)
 ```
 
+```objc
++ (void) setFontPanelFactory:(Class) factoryId;
+```
+
 #### Discussion
 
-Call this method before accessing the Font panel in any way, such as in your app delegate’s [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) method.
+Call this method before accessing the Font panel in any way, such as in your app delegate’s [`applicationWillFinishLaunching(_:)`](../nsapplicationdelegate/applicationwillfinishlaunching%28_%29.md) method.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Call this method before accessing the Font panel in any way, such as in your app
 
 ## See Also
 
-- [class func setFontManagerFactory(AnyClass?)](nsfontmanager/setfontmanagerfactory(_:).md)
+### Changing the Default Font Conversion Classes
+- [class func setFontManagerFactory(AnyClass?)](./setfontmanagerfactory%28_%29.md)
   Sets the class that creates the shared font manager object.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a locality structure with a string value.
 

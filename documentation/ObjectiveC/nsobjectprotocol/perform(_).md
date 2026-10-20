@@ -2,6 +2,7 @@
 
 **Framework**: Objective-C Runtime  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends a specified message to the receiver and returns the result of the message.
@@ -21,13 +22,17 @@ Sends a specified message to the receiver and returns the result of the message.
 func perform(_ aSelector: Selector!) -> Unmanaged<AnyObject>!
 ```
 
+```objc
+- (id) performSelector:(SEL) aSelector;
+```
+
 #### Return Value
 
 An object that is the result of the message.
 
 #### Discussion
 
-Calling the [`perform(_:)`](nsobjectprotocol/perform(_:).md) method is equivalent to sending the `aSelector` message directly to the receiver. For example, the following both do the same thing if `anObject` is an instance of `MyObject`:
+Calling the [`perform(_:)`](./perform%28_%29.md) method is equivalent to sending the `aSelector` message directly to the receiver. For example, the following both do the same thing if `anObject` is an instance of `MyObject`:
 
 **Swift**:
 
@@ -44,7 +49,7 @@ id aClone = [anObject performSelector:@selector(copy)];
 id aClone = [anObject performSelector:sel_getUid("copy")];
 ```
 
-The [`perform(_:)`](nsobjectprotocol/perform(_:).md) method allows you to send messages that aren’t determined until run-time. This means that you can pass a variable selector as the argument:
+The [`perform(_:)`](./perform%28_%29.md) method allows you to send messages that aren’t determined until run-time. This means that you can pass a variable selector as the argument:
 
 **Swift**:
 
@@ -60,29 +65,32 @@ SEL aSelector = findTheAppropriateSelectorForTheCurrentSituation();
 id returnedObject = [anObject performSelector:aSelector];
 ```
 
-Use caution when doing this. This method returns an implicitly unwrapped optional unmanaged pointer to an `AnyObject` instance ([`Unmanaged`](https://developer.apple.com/documentation/swift/unmanaged)`<`[`AnyObject`](https://developer.apple.com/documentation/swift/anyobject)`>!`).  It’s up to you to decide how to bring the instance into Swift’s memory management scheme.  Different messages require different memory management strategies for their returned objects, and it might not be obvious which to use.
+Use caution when doing this. This method returns an implicitly unwrapped optional unmanaged pointer to an `AnyObject` instance ([`Unmanaged`](../../Swift/unmanaged.md)`<`[`AnyObject`](../../Swift/anyobject.md)`>!`).  It’s up to you to decide how to bring the instance into Swift’s memory management scheme.  Different messages require different memory management strategies for their returned objects, and it might not be obvious which to use.
 
-Usually, a caller isn’t responsible for the memory of a returned instance, in which case you use [`takeUnretainedValue()`](https://developer.apple.com/documentation/swift/unmanaged/takeunretainedvalue()), as shown above. However, for any of the creation methods, such as [`copy()`](nsobject-swift.class/copy().md), the caller is responsible, and you use [`takeRetainedValue()`](https://developer.apple.com/documentation/swift/unmanaged/takeretainedvalue()) instead. See [`Memory Management Policy`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmRules.html#//apple_ref/doc/uid/20000994) in [`Advanced Memory Management Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i) for a description of ownership expectations.
+Usually, a caller isn’t responsible for the memory of a returned instance, in which case you use [`takeUnretainedValue()`](../../Swift/unmanaged/takeunretainedvalue%28%29.md), as shown above. However, for any of the creation methods, such as [`copy()`](../nsobject-swift.class/copy%28%29.md), the caller is responsible, and you use [`takeRetainedValue()`](../../Swift/unmanaged/takeretainedvalue%28%29.md) instead. See [Memory Management Policy](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmRules.html#//apple_ref/doc/uid/20000994) in [Advanced Memory Management Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i) for a description of ownership expectations.
 
 Due to this uncertainty, the compiler generates a warning if you supply a variable selector while using ARC to manage memory. Because it can’t determine ownership of the returned object at compile-time, ARC makes the assumption that the caller does *not* need to take ownership, but this may not be true. The compiler warning alerts you to the potential for a memory leak.
 
-To avoid the warning, if you know that `aSelector` has no return value, you might be able to use [`performSelector(onMainThread:with:waitUntilDone:)`](nsobject-swift.class/performselector(onmainthread:with:waituntildone:).md) or one of the related methods available in [`NSObject`](nsobject-swift.class.md).
+To avoid the warning, if you know that `aSelector` has no return value, you might be able to use [`performSelector(onMainThread:with:waitUntilDone:)`](../nsobject-swift.class/performselector%28onmainthread,with,waituntildone%29.md) or one of the related methods available in [`NSObject`](../nsobject-swift.class.md).
 
-For a more general solution, use [`NSInvocation`](https://developer.apple.com/documentation/foundation/nsinvocation) to construct a message that you can invoke with an arbitrary argument list and return value.
+For a more general solution, use [`NSInvocation`](../../Foundation/nsinvocation.md) to construct a message that you can invoke with an arbitrary argument list and return value.
 
-Alternatively, consider restructuring your code to use blocks as a means of passing chunks of functionality through an API. See [`Blocks Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40007502) for details.
+Alternatively, consider restructuring your code to use blocks as a means of passing chunks of functionality through an API. See [Blocks Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Blocks/Articles/00_Introduction.html#//apple_ref/doc/uid/TP40007502) for details.
 
-> ❗ **Important**:  Because of the inherent lack of type safety, this API isn’t recommended for use in Swift unless your code specifically relies on the dynamic method resolution provided by the Objective-C run-time. For more information about using selectors in Swift and alternatives to the [`perform(_:)`](nsobjectprotocol/perform(_:).md) function, read [`Using Objective-C Runtime Features in Swift`](https://developer.apple.com/documentation/swift/using-objective-c-runtime-features-in-swift).
+> ❗ **Important**:  Because of the inherent lack of type safety, this API isn’t recommended for use in Swift unless your code specifically relies on the dynamic method resolution provided by the Objective-C run-time.
+>
+> For more information about using selectors in Swift and alternatives to the [`perform(_:)`](./perform%28_%29.md) function, read [Using Objective-C Runtime Features in Swift](../../Swift/using-objective-c-runtime-features-in-swift.md).
 
 ## Parameters
 
-- `aSelector`: A selector identifying the message to send. The message should take no arguments. If `aSelector` is `NULL`, an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) is raised.
+- `aSelector`: A selector identifying the message to send. The message should take no arguments. If `aSelector` is `NULL`, an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) is raised.
 
 ## See Also
 
-- [func perform(Selector!, with: Any!) -> Unmanaged<AnyObject>!](nsobjectprotocol/perform(_:with:).md)
+### Sending Messages
+- [func perform(Selector!, with: Any!) -> Unmanaged<AnyObject>!](./perform%28_,with%29.md)
   Sends a message to the receiver with an object as the argument.
-- [func perform(Selector!, with: Any!, with: Any!) -> Unmanaged<AnyObject>!](nsobjectprotocol/perform(_:with:with:).md)
+- [func perform(Selector!, with: Any!, with: Any!) -> Unmanaged<AnyObject>!](./perform%28_,with,with%29.md)
   Sends a message to the receiver with two objects as arguments.
 
 

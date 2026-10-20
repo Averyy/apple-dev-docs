@@ -1,7 +1,8 @@
 # OID_CERTICOM_ELL_CURVE_LEN
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var OID_CERTICOM_ELL_CURVE_LEN: Int32 { get }
+```
+
+```c
+#define OID_CERTICOM_ELL_CURVE_LEN
 ```
 
 

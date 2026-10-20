@@ -1,22 +1,29 @@
 # predicateForCategorySamples(with:value:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that checks a category sample’s value.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 27.2
+- iPadOS 8.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`predicateForSamples(_:value:)`](../hkcategoryvaluepredicateproviding/predicateforsamples%28_,value%29.md) instead.
 
 ## Declaration
 
 ```swift
 class func predicateForCategorySamples(with operatorType: NSComparisonPredicate.Operator, value: Int) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForCategorySamplesWithOperatorType:(NSPredicateOperatorType) operatorType value:(NSInteger) value;
 ```
 
 #### Return Value
@@ -56,16 +63,18 @@ NSPredicate *explicitAsleep =
 
 ## Parameters
 
-- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see [`NSComparisonPredicate.Operator.contains`](https://developer.apple.com/documentation/foundation/nscomparisonpredicate/operator/contains).
-- `value`: The category sample’s target value. Use an enumeration value appropriate for the type of category samples you are working with. For example, a predicate for sleep analysis samples use values from the [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) enumeration.
+- `operatorType`: The type of operation to perform when matching the category sample’s value against the target value. For a list of possible operators, see [`NSComparisonPredicate.Operator.contains`](../../Foundation/nscomparisonpredicate/operator/contains.md).
+- `value`: The category sample’s target value. Use an enumeration value appropriate for the type of category samples you are working with. For example, a predicate for sleep analysis samples use values from the [`HKCategoryValueSleepAnalysis`](../hkcategoryvaluesleepanalysis.md) enumeration.
 
 ## See Also
 
-- [var value: Int](hkcategorysample/value.md)
+### Related Documentation
+- [var value: Int](../hkcategorysample/value.md)
   The category value for this sample.
-- [let HKPredicateKeyPathCategoryValue: String](hkpredicatekeypathcategoryvalue.md)
+- [let HKPredicateKeyPathCategoryValue: String](../hkpredicatekeypathcategoryvalue.md)
   The key path for accessing the category sample’s value.
-- [protocol HKCategoryValuePredicateProviding](hkcategoryvaluepredicateproviding.md)
+### Creating category sample predicates
+- [protocol HKCategoryValuePredicateProviding](../hkcategoryvaluepredicateproviding.md)
   A protocol for objects that produce predicates that match category value samples.
 
 

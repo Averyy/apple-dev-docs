@@ -1,7 +1,8 @@
 # Access Wi-Fi Information Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether your app can access information about the connected Wi-Fi network.
 
@@ -10,37 +11,39 @@ A Boolean value indicating whether your app can access information about the con
 - iPadOS 12.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.networking.wifi-info` (Access Wi-Fi Information)
+- **Type**: boolean
 
 #### Discussion
 
-This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](https://developer.apple.com/documentation/systemconfiguration/cncopycurrentnetworkinfo) function to obtain information about the current Wi-Fi network.
+This key indicates whether your app may use the [`CNCopyCurrentNetworkInfo`](../../SystemConfiguration/cncopycurrentnetworkinfo.md) function to obtain information about the current Wi-Fi network.
 
 To add this entitlement to your app, enable the Access WiFi Information capability in Xcode.
 
 ## See Also
 
-- [Wireless Accessory Configuration Entitlement](entitlements/com.apple.external-accessory.wireless-configuration.md)
+### Wireless interfaces
+- [Wireless Accessory Configuration Entitlement](./com.apple.external-accessory.wireless-configuration.md)
   A Boolean value that indicates whether your app may configure MFi Wi-Fi accessories.
-- [Multipath Entitlement](entitlements/com.apple.developer.networking.multipath.md)
+- [Multipath Entitlement](./com.apple.developer.networking.multipath.md)
   A Boolean value indicating whether your app may use Multipath protocols to seamlessly transition between Wi-Fi and cellular networks.
-- [Hotspot Configuration Entitlement](entitlements/com.apple.developer.networking.hotspotconfiguration.md)
+- [Hotspot Configuration Entitlement](./com.apple.developer.networking.hotspotconfiguration.md)
   A Boolean value indicating whether your app can use the hotspot manager to configure Wi-Fi networks.
-- [HotSpot Helper](entitlements/com.apple.developer.networking.hotspothelper.md)
+- [HotSpot Helper](./com.apple.developer.networking.hotspothelper.md)
   An entitlement that permits an app to participate in navigating Wi-Fi network hotspots.
-- [ISO18092 system codes for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.felica.systemcodes.md)
+- [ISO18092 system codes for NFC Tag Reader Session](./com.apple.developer.nfc.readersession.felica.systemcodes.md)
   A list of FeliCa system codes that the app supports.
-- [Near Field Communication Tag Reader Session Formats Entitlement](entitlements/com.apple.developer.nfc.readersession.formats.md)
+- [Near Field Communication Tag Reader Session Formats Entitlement](./com.apple.developer.nfc.readersession.formats.md)
   The Near Field Communication data formats an app can read.
-- [ISO7816 application identifiers for NFC Tag Reader Session](entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
+- [ISO7816 application identifiers for NFC Tag Reader Session](./com.apple.developer.nfc.readersession.iso7816.select-identifiers.md)
   A list of application identifiers that the app supports.
-- [com.apple.developer.nfc.hce](entitlements/com.apple.developer.nfc.hce.md)
+- [com.apple.developer.nfc.hce](./com.apple.developer.nfc.hce.md)
   A Boolean value indicating whether your app can use the card session API.
-- [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](entitlements/com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)
+- [com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes](./com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes.md)
   An array of identifier strings the app handles with the card session API.
-- [com.apple.developer.nfc.hce.default-contactless-app](entitlements/com.apple.developer.nfc.hce.default-contactless-app.md)
+- [com.apple.developer.nfc.hce.default-contactless-app](./com.apple.developer.nfc.hce.default-contactless-app.md)
   A Boolean value indicating whether your app can be a default app for contactless NFC with the card session API.
 
 

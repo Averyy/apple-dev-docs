@@ -1,7 +1,8 @@
 # flightNumber
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents a flight number.
 
@@ -20,9 +21,14 @@ A string that represents a flight number.
 var flightNumber: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * flightNumber;
+```
+
 ## See Also
 
-- [var airline: String](ddmatchflightnumber/airline.md)
+### Getting flight information
+- [var airline: String](./airline.md)
   The name of an airline.
 
 

@@ -1,7 +1,8 @@
 # init(_:timeRange:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a caption that contains text and a time range.
 
@@ -15,6 +16,10 @@ Creates a caption that contains text and a time range.
 
 ```swift
 init(_ text: String, timeRange: CMTimeRange)
+```
+
+```objc
+- (instancetype) initWithText:(NSString *) text timeRange:(CMTimeRange) timeRange;
 ```
 
 ## Parameters

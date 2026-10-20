@@ -1,7 +1,8 @@
 # GKPlayer.PhotoSize
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The size of a photo that Game Center loads.
 
@@ -19,29 +20,34 @@ The size of a photo that Game Center loads.
 enum PhotoSize
 ```
 
+```c
+enum GKPhotoSize : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [GKPlayer.PhotoSize.small](gkplayer/photosize/small.md)
+- [GKPlayer.PhotoSize.small](./photosize/small.md)
   Loads a small photo.
-- [GKPlayer.PhotoSize.normal](gkplayer/photosize/normal.md)
+- [GKPlayer.PhotoSize.normal](./photosize/normal.md)
   Loads a normal-sized photo.
 ### Initializers
-- [init?(rawValue: Int)](gkplayer/photosize/init(rawvalue:).md)
+- [init?(rawValue: Int)](./photosize/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func loadPhoto(for: GKPlayer.PhotoSize, withCompletionHandler: ((UIImage?, (any Error)?) -> Void)?)](gkplayer/loadphoto(for:withcompletionhandler:).md)
+### Loading player photos
+- [func loadPhoto(for: GKPlayer.PhotoSize, withCompletionHandler: ((UIImage?, (any Error)?) -> Void)?)](./loadphoto%28for,withcompletionhandler%29.md)
   Loads a photo of the player from Game Center.
 
 

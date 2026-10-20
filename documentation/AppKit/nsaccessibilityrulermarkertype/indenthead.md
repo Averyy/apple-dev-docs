@@ -1,7 +1,8 @@
 # NSAccessibilityRulerMarkerType.indentHead
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Head indent marker.
 
@@ -14,21 +15,26 @@ Head indent marker.
 case indentHead
 ```
 
+```c
+NSAccessibilityRulerMarkerTypeIndentHead
+```
+
 ## See Also
 
-- [NSAccessibilityRulerMarkerType.unknown](nsaccessibilityrulermarkertype/unknown.md)
+### Constants
+- [NSAccessibilityRulerMarkerType.unknown](./unknown.md)
   Unknown marker type.
-- [NSAccessibilityRulerMarkerType.tabStopLeft](nsaccessibilityrulermarkertype/tabstopleft.md)
+- [NSAccessibilityRulerMarkerType.tabStopLeft](./tabstopleft.md)
   Left tab stop.
-- [NSAccessibilityRulerMarkerType.tabStopRight](nsaccessibilityrulermarkertype/tabstopright.md)
+- [NSAccessibilityRulerMarkerType.tabStopRight](./tabstopright.md)
   Right tab stop.
-- [NSAccessibilityRulerMarkerType.tabStopCenter](nsaccessibilityrulermarkertype/tabstopcenter.md)
+- [NSAccessibilityRulerMarkerType.tabStopCenter](./tabstopcenter.md)
   Center tab stop.
-- [NSAccessibilityRulerMarkerType.tabStopDecimal](nsaccessibilityrulermarkertype/tabstopdecimal.md)
+- [NSAccessibilityRulerMarkerType.tabStopDecimal](./tabstopdecimal.md)
   Decimal tab stop.
-- [NSAccessibilityRulerMarkerType.indentTail](nsaccessibilityrulermarkertype/indenttail.md)
+- [NSAccessibilityRulerMarkerType.indentTail](./indenttail.md)
   Tail indent marker.
-- [NSAccessibilityRulerMarkerType.indentFirstLine](nsaccessibilityrulermarkertype/indentfirstline.md)
+- [NSAccessibilityRulerMarkerType.indentFirstLine](./indentfirstline.md)
   First line indent marker.
 
 

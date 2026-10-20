@@ -1,7 +1,8 @@
 # init(start:control:end:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new quadratic Bézier curve line.
 

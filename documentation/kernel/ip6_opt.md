@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_opt {
     ...
 };
@@ -17,8 +17,8 @@ struct ip6_opt {
 ## Topics
 
 ### Instance Properties
-- [ip6o_len](ip6_opt/3754505-ip6o_len.md)
-- [ip6o_type](ip6_opt/3754506-ip6o_type.md)
+- [ip6o_len](./ip6_opt/api-3754505-ip6o_len.md)
+- [ip6o_type](./ip6_opt/api-3754506-ip6o_type.md)
 
 
 ---

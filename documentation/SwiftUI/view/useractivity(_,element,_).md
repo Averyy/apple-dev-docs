@@ -1,7 +1,8 @@
 # userActivity(_:element:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advertises a user activity type.
 
@@ -33,11 +34,12 @@ The scope of the activity applies only to the scene or window the view is in.
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
+### Sending and receiving user activities
+- [Restoring your app’s state with SwiftUI](../restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [func userActivity(String, isActive: Bool, (NSUserActivity) -> ()) -> some View](view/useractivity(_:isactive:_:).md)
+- [func userActivity(String, isActive: Bool, (NSUserActivity) -> ()) -> some View](./useractivity%28_,isactive,_%29.md)
   Advertises a user activity type.
-- [func onContinueUserActivity(String, perform: (NSUserActivity) -> ()) -> some View](view/oncontinueuseractivity(_:perform:).md)
+- [func onContinueUserActivity(String, perform: (NSUserActivity) -> ()) -> some View](./oncontinueuseractivity%28_,perform%29.md)
   Registers a handler to invoke in response to a user activity that your app receives.
 
 

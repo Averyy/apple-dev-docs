@@ -1,7 +1,8 @@
 # ManagedAudioChannelLayout.ChannelDescriptions
 
 **Framework**: Core Audio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of `AudioChannelDescription`s.
 
@@ -11,7 +12,7 @@ A collection of `AudioChannelDescription`s.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -23,12 +24,12 @@ struct ChannelDescriptions
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Equatable](../../Swift/equatable.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # canInflect(language:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the rule can inflect a given language.
 
@@ -30,7 +31,8 @@ static func canInflect(language: String) -> Bool
 
 ## See Also
 
-- [static var canInflectPreferredLocalization: Bool](inflectionrule/caninflectpreferredlocalization.md)
+### Determining Availability
+- [static var canInflectPreferredLocalization: Bool](./caninflectpreferredlocalization.md)
   A Boolean value that indicates whether the rule can inflect the user’s current preferred localization.
 
 

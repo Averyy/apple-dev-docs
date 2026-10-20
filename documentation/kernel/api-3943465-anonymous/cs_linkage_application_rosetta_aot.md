@@ -1,14 +1,15 @@
 # CS_LINKAGE_APPLICATION_ROSETTA_AOT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 CS_LINKAGE_APPLICATION_ROSETTA_AOT = 0
 ```
 

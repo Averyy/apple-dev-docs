@@ -1,14 +1,15 @@
 # shared
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A single, shared insight service object.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

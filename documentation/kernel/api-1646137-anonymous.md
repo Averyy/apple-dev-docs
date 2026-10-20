@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATASupportsPowerManagementBit](1646137-anonymous/katasupportspowermanagementbit.md)
-- [kATASupportsSMARTBit](1646137-anonymous/katasupportssmartbit.md)
-- [kATASupportsWriteCacheBit](1646137-anonymous/katasupportswritecachebit.md)
+- [kATASupportsPowerManagementBit](./api-1646137-anonymous/katasupportspowermanagementbit.md)
+- [kATASupportsSMARTBit](./api-1646137-anonymous/katasupportssmartbit.md)
+- [kATASupportsWriteCacheBit](./api-1646137-anonymous/katasupportswritecachebit.md)
 
 
 ---

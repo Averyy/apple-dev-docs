@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The activation modes for RNN operations.
 
@@ -19,31 +20,35 @@ The activation modes for RNN operations.
 enum MPSGraphRNNActivation
 ```
 
+```c
+enum MPSGraphRNNActivation : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphRNNActivation.hardSigmoid](mpsgraphrnnactivation/hardsigmoid.md)
+- [MPSGraphRNNActivation.hardSigmoid](./mpsgraphrnnactivation/hardsigmoid.md)
   Defines a Hard sigmoid activation.
-- [MPSGraphRNNActivation.none](mpsgraphrnnactivation/none.md)
+- [MPSGraphRNNActivation.none](./mpsgraphrnnactivation/none.md)
   Defines a pass through activation.
-- [MPSGraphRNNActivation.relu](mpsgraphrnnactivation/relu.md)
+- [MPSGraphRNNActivation.relu](./mpsgraphrnnactivation/relu.md)
   Defines a ReLU activation.
-- [MPSGraphRNNActivation.sigmoid](mpsgraphrnnactivation/sigmoid.md)
+- [MPSGraphRNNActivation.sigmoid](./mpsgraphrnnactivation/sigmoid.md)
   Defines a Sigmoid activation.
-- [MPSGraphRNNActivation.tanh](mpsgraphrnnactivation/tanh.md)
+- [MPSGraphRNNActivation.tanh](./mpsgraphrnnactivation/tanh.md)
   Defines a Tanh activation.
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphrnnactivation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphrnnactivation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

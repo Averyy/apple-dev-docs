@@ -1,7 +1,8 @@
 # requestDownloadFile(_:options:downloadDelegate:didDownloadSelector:contextInfo:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Downloads a file from the camera.
 
@@ -18,17 +19,22 @@ Downloads a file from the camera.
 func requestDownloadFile(_ file: ICCameraFile, options: [ICDownloadOption : Any] = [:], downloadDelegate: any ICCameraDeviceDownloadDelegate, didDownloadSelector selector: Selector, contextInfo: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) requestDownloadFile:(ICCameraFile *) file options:(NSDictionary<NSString *,id> *) options downloadDelegate:(id<ICCameraDeviceDownloadDelegate>) downloadDelegate didDownloadSelector:(SEL) selector contextInfo:(void *) contextInfo;
+```
+
 #### Discussion
 
-Once this request completes, [`didDownloadFile(_:error:options:contextInfo:)`](iccameradevicedownloaddelegate/diddownloadfile(_:error:options:contextinfo:).md) is called on the `downloadDelegate`.
+Once this request completes, [`didDownloadFile(_:error:options:contextInfo:)`](../iccameradevicedownloaddelegate/diddownloadfile%28_,error,options,contextinfo%29.md) is called on the `downloadDelegate`.
 
 ## See Also
 
-- [struct ICDownloadOption](icdownloadoption.md)
+### Downloading Files
+- [struct ICDownloadOption](../icdownloadoption.md)
   An option for downloading a file from the camera.
-- [func cancelDownload()](iccameradevice/canceldownload.md)
+- [func cancelDownload()](./canceldownload%28%29.md)
   Cancels a download from the camera.
-- [protocol ICCameraDeviceDownloadDelegate](iccameradevicedownloaddelegate.md)
+- [protocol ICCameraDeviceDownloadDelegate](../iccameradevicedownloaddelegate.md)
   Methods for managing camera file downloads.
 
 

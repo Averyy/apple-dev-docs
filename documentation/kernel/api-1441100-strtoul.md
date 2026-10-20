@@ -1,22 +1,24 @@
 # strtoul
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 u_long strtoul(const char *, char **, int);
 ```
 
 ## See Also
 
-- [strtol](1441045-strtol.md)
-- [strtoq](1441090-strtoq.md)
-- [strtouq](1441084-strtouq.md)
+### Conversion
+- [strtol](./api-1441045-strtol.md)
+- [strtoq](./api-1441090-strtoq.md)
+- [strtouq](./api-1441084-strtouq.md)
 
 
 ---

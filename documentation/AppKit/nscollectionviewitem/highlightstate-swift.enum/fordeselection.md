@@ -1,9 +1,10 @@
 # NSCollectionViewItem.HighlightState.forDeselection
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The deselection highlight state. During interactive selection, this state is used to indicate that the item will become deselected when interactions end. After interactions end, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](nscollectionviewitem/highlightstate-swift.enum/none.md).
+The deselection highlight state. During interactive selection, this state is used to indicate that the item will become deselected when interactions end. After interactions end, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](./none.md).
 
 **Availability**:
 - macOS 10.11+
@@ -14,14 +15,19 @@ The deselection highlight state. During interactive selection, this state is use
 case forDeselection
 ```
 
+```c
+NSCollectionViewItemHighlightForDeselection
+```
+
 ## See Also
 
-- [NSCollectionViewItem.HighlightState.none](nscollectionviewitem/highlightstate-swift.enum/none.md)
+### Constants
+- [NSCollectionViewItem.HighlightState.none](./none.md)
   No highlight state.
-- [NSCollectionViewItem.HighlightState.forSelection](nscollectionviewitem/highlightstate-swift.enum/forselection.md)
+- [NSCollectionViewItem.HighlightState.forSelection](./forselection.md)
   The selected highlight state. This type of highlight is applied when an item is selected. During interactive highlighting, this state is also applied to indicate that the item will become highlighted.
-- [NSCollectionViewItem.HighlightState.asDropTarget](nscollectionviewitem/highlightstate-swift.enum/asdroptarget.md)
-  The drop target highlight state. This type of highlight is applied when the item is the target of a drop operation on the collection view. After the drop operation completes, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](nscollectionviewitem/highlightstate-swift.enum/none.md).
+- [NSCollectionViewItem.HighlightState.asDropTarget](./asdroptarget.md)
+  The drop target highlight state. This type of highlight is applied when the item is the target of a drop operation on the collection view. After the drop operation completes, the highlight state returns to [`NSCollectionViewItem.HighlightState.none`](./none.md).
 
 
 ---

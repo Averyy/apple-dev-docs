@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new pipeline state that’s a copy of the current pipeline state with additional shaders.
@@ -20,9 +21,13 @@ Creates a new pipeline state that’s a copy of the current pipeline state with 
 func makeRenderPipelineState(additionalBinaryFunctions: MTLRenderPipelineFunctionsDescriptor) throws -> any MTLRenderPipelineState
 ```
 
+```objc
+- (id<MTLRenderPipelineState>) newRenderPipelineStateWithAdditionalBinaryFunctions:(MTLRenderPipelineFunctionsDescriptor *) additionalBinaryFunctions error:(NSError **) error;
+```
+
 ## Parameters
 
-- `additionalBinaryFunctions`: An [`MTLRenderPipelineFunctionsDescriptor`](mtlrenderpipelinefunctionsdescriptor.md) instance, which contains [`MTLFunction`](mtlfunction.md) arrays for vertex, fragment, and tile shaders.
+- `additionalBinaryFunctions`: An [`MTLRenderPipelineFunctionsDescriptor`](../mtlrenderpipelinefunctionsdescriptor.md) instance, which contains [`MTLFunction`](../mtlfunction.md) arrays for vertex, fragment, and tile shaders.
 
 
 ---

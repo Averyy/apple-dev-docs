@@ -1,7 +1,8 @@
 # init(radians:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(radians: Float)
+```
+
+```c
+static SPAngleFloat SPAngleFloatMakeWithRadians(float radians);
 ```
 
 #### Return Value

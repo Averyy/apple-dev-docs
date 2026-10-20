@@ -1,7 +1,8 @@
 # purchased
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transaction belongs to the purchaser.
 
@@ -22,7 +23,8 @@ static let purchased: Transaction.OwnershipType
 
 ## See Also
 
-- [static let familyShared: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/familyshared.md)
+### Getting ownership types
+- [static let familyShared: Transaction.OwnershipType](./familyshared.md)
   The transaction belongs to a family member who benefits from the service.
 
 

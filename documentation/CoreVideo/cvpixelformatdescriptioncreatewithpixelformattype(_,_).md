@@ -1,7 +1,8 @@
 # CVPixelFormatDescriptionCreateWithPixelFormatType(_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a pixel format description from a given `OSType` identifier.
 
@@ -20,9 +21,13 @@ Creates a pixel format description from a given `OSType` identifier.
 func CVPixelFormatDescriptionCreateWithPixelFormatType(_ allocator: CFAllocator?, _ pixelFormat: OSType) -> CFDictionary?
 ```
 
+```c
+extern CFDictionaryRefCVPixelFormatDescriptionCreateWithPixelFormatType(CFAllocatorRef allocator, OSType pixelFormat);
+```
+
 #### Return Value
 
-A Core Foundation dictionary containing the pixel format description. See [`Pixel Format Description Keys`](pixel-format-description-keys.md) for a list of keys relevant to the format description.
+A Core Foundation dictionary containing the pixel format description. See [Pixel Format Description Keys](./pixel-format-description-keys.md) for a list of keys relevant to the format description.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ A Core Foundation dictionary containing the pixel format description. See [`Pixe
 
 ## See Also
 
-- [func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionary, OSType)](cvpixelformatdescriptionregisterdescriptionwithpixelformattype(_:_:).md)
+### Creating Format Descriptions
+- [func CVPixelFormatDescriptionRegisterDescriptionWithPixelFormatType(CFDictionary, OSType)](./cvpixelformatdescriptionregisterdescriptionwithpixelformattype%28_,_%29.md)
   Registers a pixel format description with Core Video.
 
 

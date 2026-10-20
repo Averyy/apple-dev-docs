@@ -1,7 +1,8 @@
 # pid
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process ID (PID) of the process.
 
@@ -20,7 +21,7 @@ let pid: pid_t?
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 
 ---

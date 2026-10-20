@@ -1,7 +1,8 @@
 # MTLLogStateErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let MTLLogStateErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const MTLLogStateErrorDomain;
 ```
 
 

@@ -1,7 +1,8 @@
 # dragStateDidChange(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the cell that its drag status changed.
 
@@ -17,15 +18,20 @@ Notifies the cell that its drag status changed.
 func dragStateDidChange(_ dragState: UITableViewCell.DragState)
 ```
 
+```objc
+- (void) dragStateDidChange:(UITableViewCellDragState) dragState;
+```
+
 ## Parameters
 
 - `dragState`: The new drag state for the cell.
 
 ## See Also
 
-- [var userInteractionEnabledWhileDragging: Bool](uitableviewcell/userinteractionenabledwhiledragging.md)
+### Dragging the row
+- [var userInteractionEnabledWhileDragging: Bool](./userinteractionenabledwhiledragging.md)
   A Boolean value indicating whether users can interact with a cell while it is being dragged.
-- [UITableViewCell.DragState](uitableviewcell/dragstate.md)
+- [UITableViewCell.DragState](./dragstate.md)
   Constants indicating the current state of a row involved in a drag operation.
 
 

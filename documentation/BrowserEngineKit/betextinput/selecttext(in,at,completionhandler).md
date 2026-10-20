@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Selects the text within the given granularity at the given point in the text view.
@@ -15,12 +16,20 @@ Selects the text within the given granularity at the given point in the text vie
 ## Declaration
 
 ```swift
+func selectText(in granularity: UITextGranularity, at point: CGPoint, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func selectText(in granularity: UITextGranularity, at point: CGPoint) async
+```
+
+```objc
+- (void) selectTextInGranularity:(UITextGranularity) granularity atPoint:(CGPoint) point completionHandler:(void (^)()) completionHandler;
 ```
 
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 ## Parameters
 

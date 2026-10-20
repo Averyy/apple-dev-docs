@@ -1,7 +1,8 @@
 # targetCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of blend-shape targets.
 

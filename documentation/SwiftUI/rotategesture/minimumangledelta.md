@@ -1,7 +1,8 @@
 # minimumAngleDelta
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum delta required before the gesture succeeds.
 
@@ -20,9 +21,10 @@ var minimumAngleDelta: Angle
 
 ## See Also
 
-- [init(minimumAngleDelta: Angle)](rotategesture/init(minimumangledelta:).md)
+### Creating the gesture
+- [init(minimumAngleDelta: Angle)](./init%28minimumangledelta%29.md)
   Creates a rotation gesture with a minimum delta for the gesture to start.
-- [init(minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture/init(minimumangledelta:inputkinds:).md)
+- [init(minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](./init%28minimumangledelta,inputkinds%29.md)
   Creates a rotation gesture with a minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 
 

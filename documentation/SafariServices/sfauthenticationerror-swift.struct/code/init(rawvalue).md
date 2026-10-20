@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
+- iOS 11.0+ - Deprecated in 12.0
+- iPadOS 11.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use ASWebAuthenticationSessionErrorCode instead
 
 ## Declaration
 

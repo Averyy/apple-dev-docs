@@ -1,7 +1,8 @@
 # readAttributeTemperatureSetpointHoldDuration(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTemperatureSetpointHoldDuration(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTemperatureSetpointHoldDuration() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTemperatureSetpointHoldDurationWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

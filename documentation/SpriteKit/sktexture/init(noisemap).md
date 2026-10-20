@@ -1,7 +1,8 @@
 # init(noiseMap:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture from the specified noise map.
 
@@ -19,15 +20,19 @@ Creates a texture from the specified noise map.
 convenience init(noiseMap: GKNoiseMap)
 ```
 
+```objc
++ (instancetype) textureWithNoiseMap:(GKNoiseMap *) noiseMap;
+```
+
 #### Return Value
 
 A new texture based on the contents of the noise map.
 
 #### Discussion
 
-The [`GKNoiseMap`](https://developer.apple.com/documentation/gameplaykit/gknoisemap) class encapsulates the output of procedural noise generation and processing. You use noise sources (the [`GKNoiseSource`](https://developer.apple.com/documentation/gameplaykit/gknoisesource) class cluster), noise objects (the [`GKNoise`](https://developer.apple.com/documentation/gameplaykit/gknoise) class), and noise maps to generate, process, and combine styles of noise, then use this method to create a graphical representation of the noise for use as a texture image in your game. Noise textures can be useful for imitating natural phenomena such as clouds, stone surfaces, and wood grain. You can also use noise textures as normal maps to make surfaces appear more natural under lighting.
+The [`GKNoiseMap`](../../GameplayKit/gknoisemap.md) class encapsulates the output of procedural noise generation and processing. You use noise sources (the [`GKNoiseSource`](../../GameplayKit/gknoisesource.md) class cluster), noise objects (the [`GKNoise`](../../GameplayKit/gknoise.md) class), and noise maps to generate, process, and combine styles of noise, then use this method to create a graphical representation of the noise for use as a texture image in your game. Noise textures can be useful for imitating natural phenomena such as clouds, stone surfaces, and wood grain. You can also use noise textures as normal maps to make surfaces appear more natural under lighting.
 
-This method colorizes the generated texture using the [`gradientColors`](https://developer.apple.com/documentation/gameplaykit/gknoise/gradientcolors) property of the [`GKNoise`](https://developer.apple.com/documentation/gameplaykit/gknoise) object from which the noise map was created. By default, that property specifies a simple grayscale ramp, but you can change it to create more colorful textures. When you use the [`init(componentNoises:selectionNoise:)`](https://developer.apple.com/documentation/gameplaykit/gknoise/init(componentnoises:selectionnoise:)) method to combine noise objects, each component noise object keeps its original colors, and the selection noise determines which component noise’s colors appear in which areas of a generated texture.
+This method colorizes the generated texture using the [`gradientColors`](../../GameplayKit/gknoise/gradientcolors.md) property of the [`GKNoise`](../../GameplayKit/gknoise.md) object from which the noise map was created. By default, that property specifies a simple grayscale ramp, but you can change it to create more colorful textures. When you use the [`init(componentNoises:selectionNoise:)`](../../GameplayKit/gknoise/init%28componentnoises,selectionnoise%29.md) method to combine noise objects, each component noise object keeps its original colors, and the selection noise determines which component noise’s colors appear in which areas of a generated texture.
 
 The following Swift code shows how to create a texture based on Perlin noise:
 
@@ -48,9 +53,9 @@ let noiseMap = GKNoiseMap(noise, size: double2(8,8),
 let noiseTexture = SKTexture(noiseMap: noiseMap)
 ```
 
-The following image illustrates a sprite node using this texture as both arguments for [`init(texture:normalMap:)`](skspritenode/init(texture:normalmap:).md).
+The following image illustrates a sprite node using this texture as both arguments for [`init(texture:normalMap:)`](../skspritenode/init%28texture,normalmap%29.md).
 
-![Sprite node with a GKNoiseMap based texture.](/images/com.apple.spritekit/media-2658037@2x.png)
+![Sprite node with a GKNoiseMap based texture.](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2658037@2x.png)
 
 ## Parameters
 

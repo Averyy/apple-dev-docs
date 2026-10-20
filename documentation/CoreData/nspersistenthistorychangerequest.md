@@ -1,7 +1,8 @@
 # NSPersistentHistoryChangeRequest
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to fetch or purge persistent history.
 
@@ -20,53 +21,58 @@ A request to fetch or purge persistent history.
 class NSPersistentHistoryChangeRequest
 ```
 
+```objc
+@interface NSPersistentHistoryChangeRequest : NSPersistentStoreRequest
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 ## Topics
 
 ### Configuring the Request
-- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](nspersistenthistorychangerequest/fetchrequest.md)
+- [var fetchRequest: NSFetchRequest<any NSFetchRequestResult>?](./nspersistenthistorychangerequest/fetchrequest.md)
   The specified fetch request, when retrieving history.
-- [var resultType: NSPersistentHistoryResultType](nspersistenthistorychangerequest/resulttype.md)
+- [var resultType: NSPersistentHistoryResultType](./nspersistenthistorychangerequest/resulttype.md)
   The type of result that this request returns.
 ### Getting the Token
-- [var token: NSPersistentHistoryToken?](nspersistenthistorychangerequest/token.md)
+- [var token: NSPersistentHistoryToken?](./nspersistenthistorychangerequest/token.md)
   The specified token, when retrieving history defined by a token.
 ### Fetching History
-- [class func fetchHistory(after: Date) -> Self](nspersistenthistorychangerequest/fetchhistory(after:)-qi5b.md)
+- [class func fetchHistory(after: Date) -> Self](./nspersistenthistorychangerequest/fetchhistory%28after%29-qi5b.md)
   Retrieves history since a given date.
-- [class func fetchHistory(after: NSPersistentHistoryToken?) -> Self](nspersistenthistorychangerequest/fetchhistory(after:)-3rmfm.md)
+- [class func fetchHistory(after: NSPersistentHistoryToken?) -> Self](./nspersistenthistorychangerequest/fetchhistory%28after%29-3rmfm.md)
   Retrieves the request history after a given token.
-- [class func fetchHistory(after: NSPersistentHistoryTransaction?) -> Self](nspersistenthistorychangerequest/fetchhistory(after:)-9cuj5.md)
+- [class func fetchHistory(after: NSPersistentHistoryTransaction?) -> Self](./nspersistenthistorychangerequest/fetchhistory%28after%29-9cuj5.md)
   Retrieves history since a given transaction.
-- [class func fetchHistory(withFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](nspersistenthistorychangerequest/fetchhistory(withfetch:).md)
+- [class func fetchHistory(withFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](./nspersistenthistorychangerequest/fetchhistory%28withfetch%29.md)
   Retrieves history based on a fetch request.
 ### Purging History
-- [class func deleteHistory(before: Date) -> Self](nspersistenthistorychangerequest/deletehistory(before:)-7t2th.md)
+- [class func deleteHistory(before: Date) -> Self](./nspersistenthistorychangerequest/deletehistory%28before%29-7t2th.md)
   Purges history older than a given date.
-- [class func deleteHistory(before: NSPersistentHistoryToken?) -> Self](nspersistenthistorychangerequest/deletehistory(before:)-5kghb.md)
+- [class func deleteHistory(before: NSPersistentHistoryToken?) -> Self](./nspersistenthistorychangerequest/deletehistory%28before%29-5kghb.md)
   Purges history older than that defined by a given token.
-- [class func deleteHistory(before: NSPersistentHistoryTransaction?) -> Self](nspersistenthistorychangerequest/deletehistory(before:)-9l06p.md)
+- [class func deleteHistory(before: NSPersistentHistoryTransaction?) -> Self](./nspersistenthistorychangerequest/deletehistory%28before%29-9l06p.md)
   Purges history older than a given transaction.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [NSPersistentStoreRequest](./nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPersistentHistoryResult](nspersistenthistoryresult.md)
+### Requesting History
+- [class NSPersistentHistoryResult](./nspersistenthistoryresult.md)
   The result of a request to fetch persistent history.
 
 

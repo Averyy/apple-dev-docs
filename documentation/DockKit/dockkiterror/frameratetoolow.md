@@ -1,7 +1,8 @@
 # DockKitError.frameRateTooLow
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The frame rate is too low to track an object.
 

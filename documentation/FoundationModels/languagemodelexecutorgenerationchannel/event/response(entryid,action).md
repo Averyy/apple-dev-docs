@@ -1,7 +1,8 @@
 # response(entryID:action:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A response event addressed to a transcript entry.
 
@@ -26,9 +27,10 @@ static func response(entryID: String? = nil, action: LanguageModelExecutorGenera
 
 ## See Also
 
-- [static func toolCalls(entryID: String?, action: LanguageModelExecutorGenerationChannel.ToolCalls.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/toolcalls(entryid:action:).md)
+### Handling the channel events
+- [static func toolCalls(entryID: String?, action: LanguageModelExecutorGenerationChannel.ToolCalls.Action) -> LanguageModelExecutorGenerationChannel.Event](./toolcalls%28entryid,action%29.md)
   A tool-calls event addressed to a transcript entry.
-- [static func reasoning(entryID: String?, action: LanguageModelExecutorGenerationChannel.Reasoning.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/reasoning(entryid:action:).md)
+- [static func reasoning(entryID: String?, action: LanguageModelExecutorGenerationChannel.Reasoning.Action) -> LanguageModelExecutorGenerationChannel.Event](./reasoning%28entryid,action%29.md)
   A reasoning event addressed to a transcript entry.
 
 

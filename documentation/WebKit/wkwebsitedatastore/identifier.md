@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that uniquely identifies a data store.
 
@@ -18,9 +19,14 @@ An identifier that uniquely identifies a data store.
 var identifier: UUID? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSUUID * identifier;
+```
+
 ## See Also
 
-- [var isPersistent: Bool](wkwebsitedatastore/ispersistent.md)
+### Inspecting data store properties
+- [var isPersistent: Bool](./ispersistent.md)
   A Boolean value that indicates whether this object stores data to disk.
 
 

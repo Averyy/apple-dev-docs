@@ -1,7 +1,8 @@
 # readAttributeOperationalDatasetComponents(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOperationalDatasetComponents(completion: @escaping @Sendable (MTRThreadNetworkDiagnosticsClusterOperationalDatasetComponents?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOperationalDatasetComponents() async throws -> MTRThreadNetworkDiagnosticsClusterOperationalDatasetComponents
+```
+
+```objc
+- (void) readAttributeOperationalDatasetComponentsWithCompletion:(void (^)(MTRThreadNetworkDiagnosticsClusterOperationalDatasetComponents *value, NSError *error)) completion;
 ```
 
 

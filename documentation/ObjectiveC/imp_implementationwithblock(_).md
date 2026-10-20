@@ -1,7 +1,8 @@
 # imp_implementationWithBlock(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a pointer to a function that calls the specified block when the method is called.
 
@@ -20,9 +21,13 @@ Creates a pointer to a function that calls the specified block when the method i
 func imp_implementationWithBlock(_ block: Any) -> IMP
 ```
 
+```c
+extern IMPimp_implementationWithBlock(id block);
+```
+
 #### Return Value
 
-The [`IMP`](imp.md) that calls `block`. You must dispose of the returned [`IMP`](imp.md) using the function.
+The [`IMP`](./imp.md) that calls `block`. You must dispose of the returned [`IMP`](./imp.md) using the function.
 
 ## Parameters
 
@@ -30,17 +35,18 @@ The [`IMP`](imp.md) that calls `block`. You must dispose of the returned [`IMP`]
 
 ## See Also
 
-- [func objc_enumerationMutation(Any)](objc_enumerationmutation(_:).md)
+### Using Objective-C Language Features
+- [func objc_enumerationMutation(Any)](./objc_enumerationmutation%28_%29.md)
   Inserted by the compiler when a mutation is detected during a foreach iteration.
-- [func objc_setEnumerationMutationHandler(((Any) -> Void)?)](objc_setenumerationmutationhandler(_:).md)
+- [func objc_setEnumerationMutationHandler(((Any) -> Void)?)](./objc_setenumerationmutationhandler%28_%29.md)
   Sets the current mutation handler.
-- [func imp_getBlock(IMP) -> Any?](imp_getblock(_:).md)
-  Returns the block associated with an `IMP` that was created using [`imp_implementationWithBlock(_:)`](imp_implementationwithblock(_:).md).
-- [func imp_removeBlock(IMP) -> Bool](imp_removeblock(_:).md)
-  Disassociates a block from an `IMP` that was created using [`imp_implementationWithBlock(_:)`](imp_implementationwithblock(_:).md), and releases the copy of the block that was created.
-- [func objc_loadWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>) -> Any?](objc_loadweak(_:).md)
+- [func imp_getBlock(IMP) -> Any?](./imp_getblock%28_%29.md)
+  Returns the block associated with an `IMP` that was created using [`imp_implementationWithBlock(_:)`](./imp_implementationwithblock%28_%29.md).
+- [func imp_removeBlock(IMP) -> Bool](./imp_removeblock%28_%29.md)
+  Disassociates a block from an `IMP` that was created using [`imp_implementationWithBlock(_:)`](./imp_implementationwithblock%28_%29.md), and releases the copy of the block that was created.
+- [func objc_loadWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>) -> Any?](./objc_loadweak%28_%29.md)
   Loads the object referenced by a weak pointer and returns it.
-- [func objc_storeWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>, Any?) -> Any?](objc_storeweak(_:_:).md)
+- [func objc_storeWeak(AutoreleasingUnsafeMutablePointer<AnyObject?>, Any?) -> Any?](./objc_storeweak%28_,_%29.md)
   Stores a new value in a `__weak` variable.
 
 

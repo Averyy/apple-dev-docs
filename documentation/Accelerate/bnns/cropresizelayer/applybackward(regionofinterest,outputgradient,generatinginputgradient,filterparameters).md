@@ -1,7 +1,8 @@
 # applyBackward(regionOfInterest:outputGradient:generatingInputGradient:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a crop-resize filter backward to generate an input gradient.
 
@@ -11,8 +12,10 @@ Applies a crop-resize filter backward to generate an input gradient.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,8 @@ func applyBackward(regionOfInterest: BNNSNDArrayDescriptor, outputGradient: BNNS
 
 ## See Also
 
-- [func apply(input: BNNSNDArrayDescriptor, regionOfInterest: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](bnns/cropresizelayer/apply(input:regionofinterest:output:filterparameters:).md)
+### Applying a Crop-Resize Layer
+- [func apply(input: BNNSNDArrayDescriptor, regionOfInterest: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](./apply%28input,regionofinterest,output,filterparameters%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
 
 

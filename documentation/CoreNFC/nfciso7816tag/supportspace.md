@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -13,6 +14,10 @@
 
 ```swift
 var supportsPACE: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL supportsPACE;
 ```
 
 

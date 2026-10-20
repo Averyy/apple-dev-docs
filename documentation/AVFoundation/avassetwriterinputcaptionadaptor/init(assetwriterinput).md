@@ -1,20 +1,27 @@
 # init(assetWriterInput:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new caption adaptor that writes to the specified asset writer input.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
+- iOS 18.0+ - Deprecated in 27.0
+- iPadOS 18.0+ - Deprecated in 27.0
+- Mac Catalyst 15.0+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVAssetWriter.inputCaptionReceiver(for:) instead
 
 ## Declaration
 
 ```swift
 init(assetWriterInput input: AVAssetWriterInput)
+```
+
+```objc
+- (instancetype) initWithAssetWriterInput:(AVAssetWriterInput *) input;
 ```
 
 ## Parameters

@@ -1,18 +1,28 @@
 # onPasteCommand(of:validator:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform in response to the system’s Paste command with items that you validate.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`onPasteCommand(of:validator:perform:)`](./onpastecommand%28of,validator,perform%29-4r73j.md) instead.
 
 ## Declaration
 
 ```swift
 nonisolated
 func onPasteCommand<Payload>(of supportedTypes: [String], validator: @escaping ([NSItemProvider]) -> Payload?, perform payloadAction: @escaping (Payload) -> Void) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func onPasteCommand<Payload>(of supportedContentTypes: [UTType], validator: @escaping ([NSItemProvider]) -> Payload?, perform payloadAction: @escaping (Payload) -> Void) -> some View
 ```
 
 #### Return Value

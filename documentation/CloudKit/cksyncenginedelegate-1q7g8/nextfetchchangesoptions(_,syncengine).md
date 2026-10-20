@@ -2,9 +2,10 @@
 
 **Framework**: CloudKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Returns a custom set of options for [`CKSyncEngine`](cksyncengine-5sie5.md) to use while fetching changes.
+Returns a custom set of options for [`CKSyncEngine`](../cksyncengine-5sie5.md) to use while fetching changes.
 
 **Availability**:
 - iOS 17.0+
@@ -12,7 +13,7 @@ Returns a custom set of options for [`CKSyncEngine`](cksyncengine-5sie5.md) to u
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,11 +28,11 @@ Customized fetch options for the current fetch operation, or `context.options` t
 
 #### Discussion
 
-While [`CKSyncEngine`](cksyncengine-5sie5.md) fetches changes from the server, it calls this function to determine priority and other options for fetching changes.
+While [`CKSyncEngine`](../cksyncengine-5sie5.md) fetches changes from the server, it calls this function to determine priority and other options for fetching changes.
 
 For example, you can use this to prioritize fetching the object currently showing in the UI. You can also use this to prioritize specific zones during initial sync.
 
-By default, [`CKSyncEngine`](cksyncengine-5sie5.md) uses whatever options are in the context. You can return `context.options` if you don’t want to perform any customization.
+By default, [`CKSyncEngine`](../cksyncengine-5sie5.md) uses whatever options are in the context. You can return `context.options` if you don’t want to perform any customization.
 
 This callback is called in between each server request while fetching changes. This allows the fetching mechanism to react dynamically while your app state changes.
 
@@ -85,6 +86,12 @@ func nextFetchChangesOptions(_ context: CKSyncEngine.FetchChangesContext, syncEn
 
 - `context`: The context of the fetch operation, including the current options and reason for fetching.
 - `syncEngine`: The sync engine requesting the options.
+
+## Default Implementations
+
+### CKSyncEngineDelegate Implementations
+- [func nextFetchChangesOptions(CKSyncEngine.FetchChangesContext, syncEngine: CKSyncEngine) async -> CKSyncEngine.FetchChangesOptions](./nextfetchchangesoptions%28_,syncengine%29-3eeax.md)
+  Default implementation returns the options from the context.
 
 
 ---

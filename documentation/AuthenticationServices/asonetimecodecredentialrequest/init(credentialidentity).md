@@ -1,7 +1,8 @@
 # init(credentialIdentity:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(credentialIdentity: ASOneTimeCodeCredentialIdentity)
+```
+
+```objc
+- (instancetype) initWithCredentialIdentity:(ASOneTimeCodeCredentialIdentity *) credentialIdentity;
 ```
 
 #### Discussion

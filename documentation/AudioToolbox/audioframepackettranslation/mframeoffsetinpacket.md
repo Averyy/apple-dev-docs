@@ -1,22 +1,27 @@
 # mFrameOffsetInPacket
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A frame offset in a packet.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var mFrameOffsetInPacket: UInt32
+```
+
+```c
+UInt32 mFrameOffsetInPacket;
 ```
 
 

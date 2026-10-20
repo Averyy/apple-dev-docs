@@ -1,7 +1,8 @@
 # historyTransform(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a transformation to the history prior to invoking the model.
 
@@ -21,8 +22,8 @@ func historyTransform(_ transform: @escaping ([Transcript.Entry]) -> [Transcript
 
 ## Mentions
 
-- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Composing dynamic sessions with instructions and profiles](../../composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Optimizing key-value caching in language model sessions](../../optimizing-key-value-caching-in-language-model-sessions.md)
 
 
 ---

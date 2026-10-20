@@ -1,7 +1,8 @@
 # VNRecognizedPoint
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a normalized point in an image, along with an identifier label and a confidence value.
 
@@ -19,54 +20,59 @@ An object that represents a normalized point in an image, along with an identifi
 class VNRecognizedPoint
 ```
 
+```objc
+@interface VNRecognizedPoint : VNDetectedPoint
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
 
 ## Topics
 
 ### Inspecting a Point
-- [var identifier: VNRecognizedPointKey](vnrecognizedpoint/identifier.md)
+- [var identifier: VNRecognizedPointKey](./vnrecognizedpoint/identifier.md)
   The point’s identifier label.
 
 ## Relationships
 
 ### Inherits From
-- [VNDetectedPoint](vndetectedpoint.md)
+- [VNDetectedPoint](./vndetectedpoint.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+### Body and hand pose detection
+- [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md)
   Add the capability to detect human body poses to your app using the Vision framework.
-- [Detecting Hand Poses with Vision](detecting-hand-poses-with-vision.md)
+- [Detecting Hand Poses with Vision](./detecting-hand-poses-with-vision.md)
   Create a virtual drawing app by using Vision’s capability to detect hand poses.
-- [class VNDetectHumanBodyPoseRequest](vndetecthumanbodyposerequest.md)
+- [class VNDetectHumanBodyPoseRequest](./vndetecthumanbodyposerequest.md)
   A request that detects a human body pose.
-- [class VNDetectHumanHandPoseRequest](vndetecthumanhandposerequest.md)
+- [class VNDetectHumanHandPoseRequest](./vndetecthumanhandposerequest.md)
   A request that detects a human hand pose.
-- [class VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
+- [class VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
   An observation that provides the points the analysis recognized.
-- [class VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
+- [class VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
   An observation that provides the body points the analysis recognized.
-- [class VNHumanHandPoseObservation](vnhumanhandposeobservation.md)
+- [class VNHumanHandPoseObservation](./vnhumanhandposeobservation.md)
   An observation that provides the hand points the analysis recognized.
-- [class VNPoint](vnpoint.md)
+- [class VNPoint](./vnpoint.md)
   An immutable object that represents a single 2D point in an image.
-- [class VNDetectedPoint](vndetectedpoint.md)
+- [class VNDetectedPoint](./vndetectedpoint.md)
   An object that represents a normalized point in an image, along with a confidence value.
-- [struct VNRecognizedPointKey](vnrecognizedpointkey.md)
+- [struct VNRecognizedPointKey](./vnrecognizedpointkey.md)
   The data type for all recognized point keys.
-- [struct VNRecognizedPointGroupKey](vnrecognizedpointgroupkey.md)
+- [struct VNRecognizedPointGroupKey](./vnrecognizedpointgroupkey.md)
   The data type for all recognized-point group keys.
 
 

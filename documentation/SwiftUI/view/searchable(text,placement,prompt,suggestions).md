@@ -1,18 +1,21 @@
 # searchable(text:placement:prompt:suggestions:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks this view as searchable, which configures the display of a search field.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 15.0+ - Deprecated in 27.2
+- iPadOS 15.0+ - Deprecated in 27.2
+- Mac Catalyst 15.0+ - Deprecated in 27.2
+- macOS 12.0+ - Deprecated in 27.2
+- tvOS 15.0+ - Deprecated in 27.2
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 8.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use the searchable modifier with the searchSuggestions modifier
 
 ## Declaration
 
@@ -21,9 +24,21 @@ nonisolated
 func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey, @ContentBuilder suggestions: () -> S) -> some View where S : View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: Text? = nil, @ContentBuilder suggestions: () -> S) -> some View where S : View
+```
+
+```swift
+nonisolated
+func searchable<V, S>(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: S, @ContentBuilder suggestions: () -> V) -> some View where V : View, S : StringProtocol
+```
+
 #### Discussion
 
-For more information about using searchable modifiers, see [`Adding a search interface to your app`](adding-a-search-interface-to-your-app.md).
+For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 
 ## Parameters
 

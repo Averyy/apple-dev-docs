@@ -1,7 +1,8 @@
 # multisampleColorAttachmentTextureUsage
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture usage characteristics that the view uses when creating multisample textures.
 
@@ -19,14 +20,19 @@ The texture usage characteristics that the view uses when creating multisample t
 var multisampleColorAttachmentTextureUsage: MTLTextureUsage { get set }
 ```
 
+```objc
+@property (nonatomic) MTLTextureUsage multisampleColorAttachmentTextureUsage;
+```
+
 #### Discussion
 
-The default value is [`renderTarget`](https://developer.apple.com/documentation/metal/mtltextureusage/rendertarget).
+The default value is [`renderTarget`](../../Metal/mtltextureusage/rendertarget.md).
 
 ## See Also
 
-- [var sampleCount: Int](mtkview/samplecount.md)
-  The sample count used to generate the [`multisampleColorTexture`](mtkview/multisamplecolortexture.md) object.
+### Configuring Multisampling
+- [var sampleCount: Int](./samplecount.md)
+  The sample count used to generate the [`multisampleColorTexture`](./multisamplecolortexture.md) object.
 
 
 ---

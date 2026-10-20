@@ -1,7 +1,8 @@
 # SecItemClass.symmetricKeyItemClass
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the item is a private key used for symmetric-key encryption.
 
@@ -13,6 +14,10 @@ Indicates that the item is a private key used for symmetric-key encryption.
 
 ```swift
 case symmetricKeyItemClass
+```
+
+```c
+kSecSymmetricKeyItemClass
 ```
 
 

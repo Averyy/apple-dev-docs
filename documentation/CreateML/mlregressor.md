@@ -1,7 +1,8 @@
 # MLRegressor
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A model you train to estimate continuous values.
 
@@ -16,95 +17,96 @@ enum MLRegressor
 
 ## Mentions
 
-- [Improving Your Model’s Accuracy](improving-your-model-s-accuracy.md)
+- [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
 #### Overview
 
-Use an [`MLRegressor`](mlregressor.md) to estimate continuous values like price, time, or temperature.
+Use an [`MLRegressor`](./mlregressor.md) to estimate continuous values like price, time, or temperature.
 
 A regressor differs from a classifier because it can predict output values not seen during the training process. By contrast, a classifier can only classify input into the categories you provide in the training data.
 
-For example, when estimating housing prices on Mars, a regressor can interpolate between the examples to estimate prices not seen during training. The figure below shows a linear regressor for Mars real-estate prices similar to the [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app) sample.
+For example, when estimating housing prices on Mars, a regressor can interpolate between the examples to estimate prices not seen during training. The figure below shows a linear regressor for Mars real-estate prices similar to the [Integrating a Core ML Model into Your App](../CoreML/integrating-a-core-ml-model-into-your-app.md) sample.
 
-![A graph showing housing prices for mars with a linear regressor used to create a continuous estimation between](/images/com.apple.createml/MLRegressor-1@2x.png)
+![A graph showing housing prices for mars with a linear regressor used to create a continuous estimation between](https://developer.apple.com/tutorials/images/com.apple.createml/MLRegressor-1@2x.png)
 
 In this case, there are no data points with three solar panels, but the regressor can make an informed prediction about the housing price.
 
-When you create an [`MLRegressor`](mlregressor.md), Create ML inspects your data and automatically chooses a specific regressor (see *Supporting Regressor Types*).
+When you create an [`MLRegressor`](./mlregressor.md), Create ML inspects your data and automatically chooses a specific regressor (see *Supporting Regressor Types*).
 
 ## Topics
 
 ### Creating and training a regressor
-- [init(trainingData:targetColumn:featureColumns:)](mlregressor/init(trainingdata:targetcolumn:featurecolumns:).md)
+- [init(trainingData:targetColumn:featureColumns:)](./mlregressor/init%28trainingdata,targetcolumn,featurecolumns%29.md)
   Creates a regressor.
-- [var targetColumn: String](mlregressor/targetcolumn.md)
+- [var targetColumn: String](./mlregressor/targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
-- [var featureColumns: [String]](mlregressor/featurecolumns.md)
+- [var featureColumns: [String]](./mlregressor/featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 ### Evaluating a regressor
-- [func evaluation(on:)](mlregressor/evaluation(on:).md)
+- [func evaluation(on:)](./mlregressor/evaluation%28on%29.md)
   Evaluates the classifier on the provided labeled data.
-- [var trainingMetrics: MLRegressorMetrics](mlregressor/trainingmetrics.md)
+- [var trainingMetrics: MLRegressorMetrics](./mlregressor/trainingmetrics.md)
   Measurements of the regressor’s performance on the training data set.
-- [var validationMetrics: MLRegressorMetrics](mlregressor/validationmetrics.md)
+- [var validationMetrics: MLRegressorMetrics](./mlregressor/validationmetrics.md)
   Measurements of the regressor’s performance on the validation data set.
 ### Testing a regressor
-- [func predictions(from:)](mlregressor/predictions(from:).md)
+- [func predictions(from:)](./mlregressor/predictions%28from%29.md)
 ### Saving a regressor
-- [func write(to: URL, metadata: MLModelMetadata?) throws](mlregressor/write(to:metadata:).md)
+- [func write(to: URL, metadata: MLModelMetadata?) throws](./mlregressor/write%28to,metadata%29.md)
   Exports a Core ML model file for use in your app.
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlregressor/write(tofile:metadata:).md)
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./mlregressor/write%28tofile,metadata%29.md)
   Exports a Core ML model file for use in your app.
 ### Describing a regressor
-- [var model: MLModel](mlregressor/model.md)
+- [var model: MLModel](./mlregressor/model.md)
   The underlying Core ML model stored in memory.
-- [var description: String](mlregressor/description.md)
+- [var description: String](./mlregressor/description.md)
   A text representation of the regressor.
-- [var debugDescription: String](mlregressor/debugdescription.md)
+- [var debugDescription: String](./mlregressor/debugdescription.md)
   A text representation of the regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlregressor/playgrounddescription.md)
+- [var playgroundDescription: Any](./mlregressor/playgrounddescription.md)
   A description of the regressor shown in a playground.
 ### Regressor cases
-- [case linear(MLLinearRegressor)](mlregressor/linear(_:).md)
+- [case linear(MLLinearRegressor)](./mlregressor/linear%28_%29.md)
   A regressor that estimates the target as a linear function of the features.
-- [case decisionTree(MLDecisionTreeRegressor)](mlregressor/decisiontree(_:).md)
+- [case decisionTree(MLDecisionTreeRegressor)](./mlregressor/decisiontree%28_%29.md)
   A regressor that estimates the target by learning rules to split the data.
-- [case boostedTree(MLBoostedTreeRegressor)](mlregressor/boostedtree(_:).md)
+- [case boostedTree(MLBoostedTreeRegressor)](./mlregressor/boostedtree%28_%29.md)
   A regressor based on a collection of decision trees combined with gradient boosting.
-- [case randomForest(MLRandomForestRegressor)](mlregressor/randomforest(_:).md)
+- [case randomForest(MLRandomForestRegressor)](./mlregressor/randomforest%28_%29.md)
   A regressor based on a collection of decision trees trained on subsets of the data.
 ### Supporting regressor types
-- [struct MLLinearRegressor](mllinearregressor.md)
+- [struct MLLinearRegressor](./mllinearregressor.md)
   A regressor that estimates the target as a linear function of the features.
-- [struct MLDecisionTreeRegressor](mldecisiontreeregressor.md)
+- [struct MLDecisionTreeRegressor](./mldecisiontreeregressor.md)
   A regressor that estimates the target by learning rules to split the data.
-- [struct MLRandomForestRegressor](mlrandomforestregressor.md)
+- [struct MLRandomForestRegressor](./mlrandomforestregressor.md)
   A regressor based on a collection of decision trees trained on subsets of the data.
-- [struct MLBoostedTreeRegressor](mlboostedtreeregressor.md)
+- [struct MLBoostedTreeRegressor](./mlboostedtreeregressor.md)
   A regressor based on a collection of decision trees combined with gradient boosting.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlregressor/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlregressor/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlregressor/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./mlregressor/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./mlregressor/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./mlregressor/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+### Tabular models
+- [Creating a model from tabular data](./creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [enum MLClassifier](mlclassifier.md)
+- [enum MLClassifier](./mlclassifier.md)
   A model you train to classify data into discrete categories.
-- [struct MLRecommender](mlrecommender.md)
+- [struct MLRecommender](./mlrecommender.md)
   A model you train to make recommendations based on item similarity, grouping, and, optionally, item ratings.
 
 

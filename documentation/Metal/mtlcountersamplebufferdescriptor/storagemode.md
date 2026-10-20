@@ -1,7 +1,8 @@
 # storageMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The memory storage mode for the counter sample buffers you create with the descriptor.
 
@@ -19,22 +20,27 @@ The memory storage mode for the counter sample buffers you create with the descr
 var storageMode: MTLStorageMode { get set }
 ```
 
+```objc
+@property (readwrite) MTLStorageMode storageMode;
+```
+
 ## Mentions
 
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
-- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
 #### Discussion
 
-To access a counter sample buffer with the CPU, set this property to [`MTLStorageMode.shared`](mtlstoragemode/shared.md), otherwise [`MTLStorageMode.private`](mtlstoragemode/private.md).
+To access a counter sample buffer with the CPU, set this property to [`MTLStorageMode.shared`](../mtlstoragemode/shared.md), otherwise [`MTLStorageMode.private`](../mtlstoragemode/private.md).
 
 ## See Also
 
-- [var counterSet: (any MTLCounterSet)?](mtlcountersamplebufferdescriptor/counterset.md)
+### Configuring a descriptor for a counter sample buffer
+- [var counterSet: (any MTLCounterSet)?](./counterset.md)
   A GPU device’s counter set instance that you want to sample.
-- [var label: String](mtlcountersamplebufferdescriptor/label.md)
+- [var label: String](./label.md)
   The name for the counter sample buffer you create with the descriptor.
-- [var sampleCount: Int](mtlcountersamplebufferdescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of instances of a counter set’s data that a counter sample buffer can store.
 
 

@@ -1,7 +1,8 @@
 # init(width:height:motionVectorSize:useMultiPassSearch:label:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

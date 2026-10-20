@@ -1,7 +1,8 @@
 # cornerConfiguration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the corner styles (e.g., square, capsule, concentric, etc) for the viewâ€™s corners.
 
@@ -15,13 +16,18 @@ Defines the corner styles (e.g., square, capsule, concentric, etc) for the viewâ
 var cornerConfiguration: NSViewCornerConfiguration? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSViewCornerConfiguration * cornerConfiguration;
+```
+
 ## See Also
 
-- [var effectiveCornerRadii: NSViewCornerRadii?](nsview/effectivecornerradii.md)
+### Configuring corners
+- [var effectiveCornerRadii: NSViewCornerRadii?](./effectivecornerradii.md)
   The effective radius of each corner in the view, calculated based on the corner configuration (`cornerConfiguration`). This value is `nil` when the corner configuration is `nil`.
-- [func invalidateCornerConfiguration()](nsview/invalidatecornerconfiguration.md)
+- [func invalidateCornerConfiguration()](./invalidatecornerconfiguration%28%29.md)
   Invalidates the corner configuration, causing both the configuration and its dependencies to be recomputed.
-- [func viewDidChangeEffectiveCornerRadii()](nsview/viewdidchangeeffectivecornerradii.md)
+- [func viewDidChangeEffectiveCornerRadii()](./viewdidchangeeffectivecornerradii%28%29.md)
   Informs the view that its effective corner radii changed. This method should be overridden to apply the corner radii to the view as required.
 
 

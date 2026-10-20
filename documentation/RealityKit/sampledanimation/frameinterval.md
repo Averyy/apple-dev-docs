@@ -1,7 +1,8 @@
 # frameInterval
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration within the animation timeline for each frame in the frames array.
 
@@ -11,7 +12,7 @@ The duration within the animation timeline for each frame in the frames array.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,23 +22,24 @@ var frameInterval: Float { get set }
 
 ## See Also
 
-- [var start: TimeInterval](sampledanimation/start.md)
+### Timing the animation
+- [var start: TimeInterval](./start.md)
   An integer multiple of the frame interval at which the animation plays.
-- [var end: TimeInterval](sampledanimation/end.md)
+- [var end: TimeInterval](./end.md)
   An integer multiple of the frame interval at which the animation stops.
-- [var speed: Float](sampledanimation/speed.md)
+- [var speed: Float](./speed.md)
   A factor that changes the animation’s rate of playback.
-- [var delay: TimeInterval](sampledanimation/delay.md)
+- [var delay: TimeInterval](./delay.md)
   An amount of time that elapses before the animation plays.
-- [var duration: TimeInterval](sampledanimation/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](sampledanimation/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animation begins within the duration.
-- [var trimDuration: TimeInterval?](sampledanimation/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimStart: TimeInterval?](sampledanimation/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The optional time, in seconds, at which the animation plays.
-- [var trimEnd: TimeInterval?](sampledanimation/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The optional time, in seconds, at which the animation stops.
 
 

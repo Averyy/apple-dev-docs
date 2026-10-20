@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an Array with the elements of a DataColumn.
 
@@ -19,9 +20,12 @@ Constructs an Array with the elements of a DataColumn.
 init(_ column: MLDataColumn<Element>)
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
 ## See Also
 
-- [init(MLUntypedColumn)](array/init(_:)-86ka8.md)
+### Converting Between Arrays and Create ML Types
+- [init(MLUntypedColumn)](./init%28_%29-86ka8.md)
   Constructs an Array with the elements of an MLUntypedColumn.
 
 

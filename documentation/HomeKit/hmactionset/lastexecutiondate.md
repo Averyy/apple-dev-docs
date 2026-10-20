@@ -1,7 +1,8 @@
 # lastExecutionDate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last execution date of the action set.
 
@@ -19,9 +20,14 @@ The last execution date of the action set.
 var lastExecutionDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * lastExecutionDate;
+```
+
 ## See Also
 
-- [var isExecuting: Bool](hmactionset/isexecuting.md)
+### Keeping track of execution
+- [var isExecuting: Bool](./isexecuting.md)
   The execution status of the action set.
 
 

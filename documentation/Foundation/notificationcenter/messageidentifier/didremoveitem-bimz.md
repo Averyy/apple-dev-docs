@@ -1,7 +1,8 @@
 # didRemoveItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didRemoveItem: NotificationCenter.BaseMessageIdentifier<NSMenu.DidRemoveItemMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMenu.DidRemoveItemMessage>`.
 
 
 ---

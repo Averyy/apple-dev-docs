@@ -1,7 +1,8 @@
 # NSColor.SystemEffect.none
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No additional effects.
 
@@ -14,15 +15,20 @@ No additional effects.
 case none
 ```
 
+```c
+NSColorSystemEffectNone
+```
+
 ## See Also
 
-- [NSColor.SystemEffect.pressed](nscolor/systemeffect/pressed.md)
+### Appearances
+- [NSColor.SystemEffect.pressed](./pressed.md)
   The color that indicates the item was pressed.
-- [NSColor.SystemEffect.deepPressed](nscolor/systemeffect/deeppressed.md)
+- [NSColor.SystemEffect.deepPressed](./deeppressed.md)
   The color that indicates the item received a deep press.
-- [NSColor.SystemEffect.disabled](nscolor/systemeffect/disabled.md)
+- [NSColor.SystemEffect.disabled](./disabled.md)
   The color that indicates the item is disabled.
-- [NSColor.SystemEffect.rollover](nscolor/systemeffect/rollover.md)
+- [NSColor.SystemEffect.rollover](./rollover.md)
   The color that indicates the mouse rolled over the item.
 
 

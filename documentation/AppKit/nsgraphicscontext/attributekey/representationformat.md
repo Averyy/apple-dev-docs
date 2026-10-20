@@ -1,12 +1,13 @@
 # representationFormat
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the destination file format.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Specifies the destination file format.
 static let representationFormat: NSGraphicsContext.AttributeKey
 ```
 
+```c
+extern NSGraphicsContextAttributeKey NSGraphicsContextRepresentationFormatAttributeName;
+```
+
 #### Discussion
 
-This value should be retrieved only and not used to create a graphics context. For a list of possible values, see [`NSGraphicsContext.RepresentationFormatName`](nsgraphicscontext/representationformatname.md).
+This value should be retrieved only and not used to create a graphics context. For a list of possible values, see [`NSGraphicsContext.RepresentationFormatName`](../representationformatname.md).
 
 ## See Also
 
-- [static let destination: NSGraphicsContext.AttributeKey](nsgraphicscontext/attributekey/destination.md)
+### Attribute Keys
+- [static let destination: NSGraphicsContext.AttributeKey](./destination.md)
   Specifies the destination.
 
 

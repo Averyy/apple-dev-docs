@@ -1,7 +1,8 @@
 # addAttachmentData(_:typeIdentifier:filename:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches arbitrary content to the message.
 
@@ -17,9 +18,13 @@ Attaches arbitrary content to the message.
 func addAttachmentData(_ attachmentData: Data, typeIdentifier uti: String, filename: String) -> Bool
 ```
 
+```objc
+- (BOOL) addAttachmentData:(NSData *) attachmentData typeIdentifier:(NSString *) uti filename:(NSString *) filename;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attachment data was successfully added to the message, or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the attachment data was successfully added to the message, or [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -27,23 +32,24 @@ This method is especially useful when the attachment you want to add to a messag
 
 ## Parameters
 
-- `attachmentData`: Content in the form of an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object to attach to the message. Must not be `nil`.
-- `uti`: A valid Uniform Type Identifier (UTI) appropriate for the attachment data. See [`Uniform Type Identifiers Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257). Must not be `nil`.
+- `attachmentData`: Content in the form of an [`NSData`](../../Foundation/nsdata.md) object to attach to the message. Must not be `nil`.
+- `uti`: A valid Uniform Type Identifier (UTI) appropriate for the attachment data. See [Uniform Type Identifiers Reference](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/UTIRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009257). Must not be `nil`.
 - `filename`: The name to present to the user, in the message UI, for the data attachment.
 
 ## See Also
 
-- [func disableUserAttachments()](mfmessagecomposeviewcontroller/disableuserattachments.md)
+### Managing attachments
+- [func disableUserAttachments()](./disableuserattachments%28%29.md)
   Disables the camera/attachment button in the message composition view.
-- [var attachments: [[AnyHashable : Any]]?](mfmessagecomposeviewcontroller/attachments.md)
+- [var attachments: [[AnyHashable : Any]]?](./attachments.md)
   Returns an array of dictionaries that describe the properties of an attachment.
-- [func addAttachmentURL(URL, withAlternateFilename: String?) -> Bool](mfmessagecomposeviewcontroller/addattachmenturl(_:withalternatefilename:).md)
+- [func addAttachmentURL(URL, withAlternateFilename: String?) -> Bool](./addattachmenturl%28_,withalternatefilename%29.md)
   Attaches a specified file to the message.
-- [let MFMessageComposeViewControllerAttachmentURL: String](mfmessagecomposeviewcontrollerattachmenturl.md)
+- [let MFMessageComposeViewControllerAttachmentURL: String](../mfmessagecomposeviewcontrollerattachmenturl.md)
   The URL for the item that is attached to the message.
-- [let MFMessageComposeViewControllerAttachmentAlternateFilename: String](mfmessagecomposeviewcontrollerattachmentalternatefilename.md)
+- [let MFMessageComposeViewControllerAttachmentAlternateFilename: String](../mfmessagecomposeviewcontrollerattachmentalternatefilename.md)
   The key for the alternate filename for the file-based item attached to the message.
-- [func insertCollaborationItemProvider(NSItemProvider) -> Bool](mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).md)
+- [func insertCollaborationItemProvider(NSItemProvider) -> Bool](./insertcollaborationitemprovider%28_%29.md)
 
 
 ---

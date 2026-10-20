@@ -1,7 +1,8 @@
 # geometry
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape or shapes associated with the GeoJSON feature.
 
@@ -20,11 +21,16 @@ The shape or shapes associated with the GeoJSON feature.
 var geometry: [any MKShape & MKGeoJSONObject] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<__kindof MKShape<MKGeoJSONObject> *> * geometry;
+```
+
 ## See Also
 
-- [var identifier: String?](mkgeojsonfeature/identifier.md)
+### Feature properties
+- [var identifier: String?](./identifier.md)
   An optional identifier the class returns as a string.
-- [var properties: Data?](mkgeojsonfeature/properties.md)
+- [var properties: Data?](./properties.md)
   Optional serialized JSON data that corresponds to the properties key.
 
 

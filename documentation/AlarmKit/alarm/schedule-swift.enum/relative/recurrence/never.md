@@ -1,7 +1,8 @@
 # Alarm.Schedule.Relative.Recurrence.never
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An alarm that never repeats.
 
@@ -18,7 +19,8 @@ case never
 
 ## See Also
 
-- [Alarm.Schedule.Relative.Recurrence.weekly(_:)](alarm/schedule-swift.enum/relative/recurrence/weekly(_:).md)
+### Recurring alarms
+- [Alarm.Schedule.Relative.Recurrence.weekly(_:)](./weekly%28_%29.md)
   An alarm that repeats weekly, on the specified day.
 
 

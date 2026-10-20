@@ -1,7 +1,8 @@
 # fidelityDataUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async sequence of visual fidelity data updates.
 

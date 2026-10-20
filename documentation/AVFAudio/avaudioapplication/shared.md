@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Accesses the shared audio application instance.
 
@@ -18,6 +19,10 @@ Accesses the shared audio application instance.
 
 ```swift
 class var shared: AVAudioApplication { get }
+```
+
+```objc
+@property (class, readonly) AVAudioApplication * sharedInstance;
 ```
 
 

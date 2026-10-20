@@ -1,7 +1,8 @@
 # multiple
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `mul` code: represents the language of some content when there are more than one languages
 

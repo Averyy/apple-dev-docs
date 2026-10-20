@@ -1,7 +1,8 @@
 # timebase
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The synchronizer’s rendering timebase which determines how it interprets timestamps.
 
@@ -20,23 +21,28 @@ The synchronizer’s rendering timebase which determines how it interprets times
 var timebase: CMTimebase { get }
 ```
 
+```objc
+@property (retain, readonly) CMTimebaseRef timebase;
+```
+
 #### Discussion
 
-The default for this property is the clock for an added [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md) object. If you haven’t added a renderer, the timebase is the system host clock.
+The default for this property is the clock for an added [`AVSampleBufferAudioRenderer`](../avsamplebufferaudiorenderer.md) object. If you haven’t added a renderer, the timebase is the system host clock.
 
 ## See Also
 
-- [func currentTime() -> CMTime](avsamplebufferrendersynchronizer/currenttime.md)
+### Accessing time information
+- [func currentTime() -> CMTime](./currenttime%28%29.md)
   Returns the current time of the synchronizer.
-- [var rate: Float](avsamplebufferrendersynchronizer/rate.md)
+- [var rate: Float](./rate.md)
   The current playback rate.
-- [func setRate(Float, time: CMTime)](avsamplebufferrendersynchronizer/setrate(_:time:).md)
+- [func setRate(Float, time: CMTime)](./setrate%28_,time%29.md)
   Sets the renderer’s time and rate.
-- [func setRate(Float, time: CMTime, atHostTime: CMTime)](avsamplebufferrendersynchronizer/setrate(_:time:athosttime:).md)
+- [func setRate(Float, time: CMTime, atHostTime: CMTime)](./setrate%28_,time,athosttime%29.md)
   Sets the playback rate and the relationship between the current time and host time.
-- [class let rateDidChangeNotification: NSNotification.Name](avsamplebufferrendersynchronizer/ratedidchangenotification.md)
+- [class let rateDidChangeNotification: NSNotification.Name](./ratedidchangenotification.md)
   The synchronizer’s rendering rate changed.
-- [var delaysRateChangeUntilHasSufficientMediaData: Bool](avsamplebufferrendersynchronizer/delaysratechangeuntilhassufficientmediadata.md)
+- [var delaysRateChangeUntilHasSufficientMediaData: Bool](./delaysratechangeuntilhassufficientmediadata.md)
   A Boolean value that Indicates whether the playback should start immediately on rate change requests.
 
 

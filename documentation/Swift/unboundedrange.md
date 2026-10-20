@@ -1,7 +1,8 @@
 # UnboundedRange
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of an unbounded range operator.
 
@@ -22,7 +23,8 @@ typealias UnboundedRange = (UnboundedRange_) -> ()
 
 ## See Also
 
-- [static func ... (UnboundedRange_)](unboundedrange_/'...(_:).md)
+### Creating an Unbounded Range
+- [static func ... (UnboundedRange_)](./unboundedrange_/dotdotdot%28_%29.md)
   Creates an unbounded range expression.
 
 

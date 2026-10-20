@@ -1,6 +1,7 @@
 # App extension
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 Deliver app intents in an app extension or other package that lives outside your app’s code.
 
@@ -11,21 +12,22 @@ Create an app extension to run your custom app intents when your app isn’t run
 ## Topics
 
 ### App extensions
-- [protocol AppIntentsExtension](appintentsextension.md)
+- [protocol AppIntentsExtension](./appintentsextension.md)
   An interface for managing an extension’s configuration.
 ### App intents in packages
-- [protocol AppIntentsPackage](appintentspackage.md)
+- [protocol AppIntentsPackage](./appintentspackage.md)
   A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
 
 ## See Also
 
-- [App intents](app-intents.md)
+### App-specific content
+- [App intents](./app-intents.md)
   Make your app’s custom actions available to the system by using app intent types.
-- [App entities](app-entities.md)
+- [App entities](./app-entities.md)
   Make your app’s core types and data concepts available to the system using app entity types.
-- [App enums](app-enums.md)
+- [App enums](./app-enums.md)
   Make your app’s enumerations and predefined values available to the system by using app enum types.
-- [Common data types](common-data-types.md)
+- [Common data types](./common-data-types.md)
   Use framework-defined types for common parameter and result data types such as contacts, files, currencies, and more.
 
 

@@ -1,7 +1,8 @@
 # JSONEncoder.DataEncodingStrategy.base64
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that encodes data using Base 64 encoding.
 

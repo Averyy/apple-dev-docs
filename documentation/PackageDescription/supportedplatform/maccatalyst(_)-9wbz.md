@@ -1,7 +1,8 @@
 # macCatalyst(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configures the minimum deployment target version for the Mac Catalyst platform using a version string.
 
@@ -22,7 +23,7 @@ A `SupportedPlatform` instance.
 
 The version string must be a series of two or three dot-separated integers, such as `13.0` or `13.0.1`.
 
-> **Note**: First available in PackageDescription 5.5
+> **Since**: First available in PackageDescription 5.5
 
 ## Parameters
 
@@ -30,11 +31,12 @@ The version string must be a series of two or three dot-separated integers, such
 
 ## See Also
 
-- [static func macCatalyst(SupportedPlatform.MacCatalystVersion) -> SupportedPlatform](supportedplatform/maccatalyst(_:)-6bh40.md)
+### Supporting MacCatalyst
+- [static func macCatalyst(SupportedPlatform.MacCatalystVersion) -> SupportedPlatform](./maccatalyst%28_%29-6bh40.md)
   Configures the minimum deployment target version for the Mac Catalyst platform.
-- [static let macCatalyst: Platform](platform/maccatalyst.md)
+- [static let macCatalyst: Platform](../platform/maccatalyst.md)
   The Mac Catalyst platform.
-- [SupportedPlatform.MacCatalystVersion](supportedplatform/maccatalystversion.md)
+- [SupportedPlatform.MacCatalystVersion](./maccatalystversion.md)
   The supported Mac Catalyst version.
 
 

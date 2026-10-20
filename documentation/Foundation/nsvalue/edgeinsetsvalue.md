@@ -1,7 +1,8 @@
 # edgeInsetsValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge insets structure representation of the value.
 
@@ -15,6 +16,10 @@ The edge insets structure representation of the value.
 
 ```swift
 var edgeInsetsValue: NSEdgeInsets { get }
+```
+
+```objc
+@property (readonly) NSEdgeInsets edgeInsetsValue;
 ```
 
 

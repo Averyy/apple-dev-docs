@@ -1,7 +1,8 @@
 # Publishers.PrefetchStrategy
 
 **Framework**: Combine  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A strategy for filling a buffer.
 
@@ -23,22 +24,23 @@ enum PrefetchStrategy
 ## Topics
 
 ### Prefetching strategies
-- [Publishers.PrefetchStrategy.byRequest](publishers/prefetchstrategy/byrequest.md)
+- [Publishers.PrefetchStrategy.byRequest](./prefetchstrategy/byrequest.md)
   A strategy that avoids prefetching and instead performs requests on demand.
-- [Publishers.PrefetchStrategy.keepFull](publishers/prefetchstrategy/keepfull.md)
+- [Publishers.PrefetchStrategy.keepFull](./prefetchstrategy/keepfull.md)
   A strategy to fill the buffer at subscription time, and keep it full thereafter.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Self.Failure>) -> Publishers.Buffer<Self>](publisher/buffer(size:prefetch:whenfull:).md)
+### Buffering elements
+- [func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Self.Failure>) -> Publishers.Buffer<Self>](../publisher/buffer%28size,prefetch,whenfull%29.md)
   Buffers elements received from an upstream publisher.
-- [Publishers.BufferingStrategy](publishers/bufferingstrategy.md)
+- [Publishers.BufferingStrategy](./bufferingstrategy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
 
 

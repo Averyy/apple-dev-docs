@@ -1,12 +1,13 @@
 # NSUpArrowFunctionKey
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The up arrow key.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ The up arrow key.
 var NSUpArrowFunctionKey: Int { get }
 ```
 
+```c
+NSUpArrowFunctionKey
+```
+
 ## See Also
 
-- [var NSDownArrowFunctionKey: Int](nsdownarrowfunctionkey.md)
+### Getting the Navigation-Related Keys
+- [var NSDownArrowFunctionKey: Int](./nsdownarrowfunctionkey.md)
   The down arrow key.
-- [var NSLeftArrowFunctionKey: Int](nsleftarrowfunctionkey.md)
+- [var NSLeftArrowFunctionKey: Int](./nsleftarrowfunctionkey.md)
   The left arrow key.
-- [var NSRightArrowFunctionKey: Int](nsrightarrowfunctionkey.md)
+- [var NSRightArrowFunctionKey: Int](./nsrightarrowfunctionkey.md)
   The right arrow key.
-- [var NSPageUpFunctionKey: Int](nspageupfunctionkey.md)
+- [var NSPageUpFunctionKey: Int](./nspageupfunctionkey.md)
   The page up key.
-- [var NSPageDownFunctionKey: Int](nspagedownfunctionkey.md)
+- [var NSPageDownFunctionKey: Int](./nspagedownfunctionkey.md)
   The page down key.
-- [var NSHomeFunctionKey: Int](nshomefunctionkey.md)
+- [var NSHomeFunctionKey: Int](./nshomefunctionkey.md)
   The home key.
-- [var NSEndFunctionKey: Int](nsendfunctionkey.md)
+- [var NSEndFunctionKey: Int](./nsendfunctionkey.md)
   The end key.
-- [var NSPrevFunctionKey: Int](nsprevfunctionkey.md)
+- [var NSPrevFunctionKey: Int](./nsprevfunctionkey.md)
   Previous key.
-- [var NSNextFunctionKey: Int](nsnextfunctionkey.md)
+- [var NSNextFunctionKey: Int](./nsnextfunctionkey.md)
   The next key.
 
 

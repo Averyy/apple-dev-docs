@@ -1,7 +1,8 @@
 # BackgroundAssetVersion.Relationships.ManifestFile
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the manifest File related to a asset.
 
@@ -10,14 +11,14 @@ The data that describes the manifest File related to a asset.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersion.Relationships.ManifestFile
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersion.Relationships.ManifestFile.Data](backgroundassetversion/relationships-data.dictionary/manifestfile-data.dictionary/data-data.dictionary.md)
+- [object BackgroundAssetVersion.Relationships.ManifestFile.Data](./manifestfile-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

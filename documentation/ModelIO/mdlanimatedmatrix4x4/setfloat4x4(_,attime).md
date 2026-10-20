@@ -1,7 +1,8 @@
 # setFloat4x4(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setFloat4x4(_ value: matrix_float4x4, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setFloat4x4:(matrix_float4x4) value atTime:(NSTimeInterval) time;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecSigningTimeMissing
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A signing time is missing.
 
@@ -18,6 +19,10 @@ A signing time is missing.
 
 ```swift
 var errSecSigningTimeMissing: OSStatus { get }
+```
+
+```c
+errSecSigningTimeMissing
 ```
 
 

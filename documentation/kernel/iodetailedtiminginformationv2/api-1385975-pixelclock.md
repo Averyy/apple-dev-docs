@@ -1,7 +1,8 @@
 # pixelClock
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Pixel clock frequency in Hz.
 
@@ -10,7 +11,7 @@ Pixel clock frequency in Hz.
 
 ## Declaration
 
-```swift
+```c
 UInt64 pixelClock;
 ```
 

@@ -1,7 +1,8 @@
 # init(shear:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new shear transform
 

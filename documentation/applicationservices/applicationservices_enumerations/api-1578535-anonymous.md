@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kICEditPreferenceEvent: Int](kiceditpreferenceevent.md)
-- [var kICEditPreferenceEventClass: Int](kiceditpreferenceeventclass.md)
-- [var keyICEditPreferenceDestination: Int](keyiceditpreferencedestination.md)
+- [var kICEditPreferenceEvent: Int](../kiceditpreferenceevent.md)
+- [var kICEditPreferenceEventClass: Int](../kiceditpreferenceeventclass.md)
+- [var keyICEditPreferenceDestination: Int](../keyiceditpreferencedestination.md)
 
 
 ---

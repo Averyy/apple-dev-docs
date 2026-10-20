@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDOpenedByEventSystem](2852889-anonymous/kiohidopenedbyeventsystem.md)
-- [kIOHIDOpenedByFastPathClient](2852889-anonymous/kiohidopenedbyfastpathclient.md)
+- [kIOHIDOpenedByEventSystem](./api-2852889-anonymous/kiohidopenedbyeventsystem.md)
+- [kIOHIDOpenedByFastPathClient](./api-2852889-anonymous/kiohidopenedbyfastpathclient.md)
 
 
 ---

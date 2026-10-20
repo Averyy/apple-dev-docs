@@ -1,7 +1,8 @@
 # bytesPerPlane
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Not used.
 
@@ -10,7 +11,7 @@ Not used.
 
 ## Declaration
 
-```swift
+```c
 UInt32 bytesPerPlane;
 ```
 

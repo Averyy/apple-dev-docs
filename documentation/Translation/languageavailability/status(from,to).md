@@ -1,7 +1,8 @@
 # status(from:to:)
 
 **Framework**: Translation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks for the installation of a specific language pairing and whether it’s ready for translation.
 
@@ -34,9 +35,10 @@ Use this function to check whether the system has installed the required languag
 
 ## See Also
 
-- [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](languageavailability/status(for:to:).md)
+### Checking language availability
+- [func status(for: String, to: Locale.Language?) async throws -> LanguageAvailability.Status](./status%28for,to%29.md)
   Checks to see if the framework supports the language pairing based off a string of sample text.
-- [LanguageAvailability.Status](languageavailability/status.md)
+- [LanguageAvailability.Status](./status.md)
   The availability status for a language or language pairing.
 
 

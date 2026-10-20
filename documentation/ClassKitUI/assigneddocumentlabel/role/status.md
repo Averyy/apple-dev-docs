@@ -1,7 +1,8 @@
 # status
 
 **Framework**: ClassKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displays assigned document’s submission status text.
 

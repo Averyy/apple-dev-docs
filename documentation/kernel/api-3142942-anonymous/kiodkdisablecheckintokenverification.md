@@ -1,14 +1,15 @@
 # kIODKDisableCheckInTokenVerification
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kIODKDisableCheckInTokenVerification = 0x00010000ULL
 ```
 

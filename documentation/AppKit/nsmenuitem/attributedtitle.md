@@ -1,12 +1,13 @@
 # attributedTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom string for a menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ A custom string for a menu item.
 var attributedTitle: NSAttributedString? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString * attributedTitle;
+```
+
 #### Discussion
 
 The attributed string is not archived in the old nib format.
 
 ## See Also
 
-- [var title: String](nsmenuitem/title.md)
+### Managing the title
+- [var title: String](./title.md)
   The menu item’s title.
 
 

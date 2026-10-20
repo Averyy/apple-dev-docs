@@ -1,17 +1,22 @@
 # getLastServicesUpdate()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get the date/time of the last SDP query.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getLastServicesUpdate() -> Date!
+```
+
+```objc
+- (NSDate *) getLastServicesUpdate;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time mappings from the track’s media samples to its timeline.
 
@@ -20,9 +21,14 @@ The time mappings from the track’s media samples to its timeline.
 var segments: [AVCompositionTrackSegment] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<AVCompositionTrackSegment *> * segments;
+```
+
 ## See Also
 
-- [func segment(forTrackTime: CMTime) -> AVCompositionTrackSegment?](avcompositiontrack/segment(fortracktime:).md)
+### Accessing track segments
+- [func segment(forTrackTime: CMTime) -> AVCompositionTrackSegment?](./segment%28fortracktime%29.md)
   Returns a segment whose target time range contains, or is closest to, the specified track time.
 
 

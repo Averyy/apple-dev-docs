@@ -1,7 +1,8 @@
 # endpointObject
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,10 +17,15 @@
 static let endpointObject: MIDIUMPEndpointManager.DictionaryKey
 ```
 
+```c
+extern MIDIUMPEndpointManagerDictionaryKey MIDIUMPEndpointObjectKey;
+```
+
 ## See Also
 
-- [static var badRequestID: MIDICIPropertyExchangeRequestID](midicipropertyexchangerequestid/badrequestid.md)
-- [static let functionBlockObject: MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey/functionblockobject.md)
+### Macros
+- [static var badRequestID: MIDICIPropertyExchangeRequestID](../../midicipropertyexchangerequestid/badrequestid.md)
+- [static let functionBlockObject: MIDIUMPEndpointManager.DictionaryKey](./functionblockobject.md)
 
 
 ---

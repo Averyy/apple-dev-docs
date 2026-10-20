@@ -1,7 +1,8 @@
 # VNClassifyImageRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to classify an image.
 
@@ -19,57 +20,62 @@ A request to classify an image.
 class VNClassifyImageRequest
 ```
 
+```objc
+@interface VNClassifyImageRequest : VNImageBasedRequest
+```
+
 #### Overview
 
-This type of request produces a collection of [`VNClassificationObservation`](vnclassificationobservation.md) objects that describe an image. Access the classifications through [`knownClassifications(forRevision:)`](vnclassifyimagerequest/knownclassifications(forrevision:).md).
+This type of request produces a collection of [`VNClassificationObservation`](./vnclassificationobservation.md) objects that describe an image. Access the classifications through [`knownClassifications(forRevision:)`](./vnclassifyimagerequest/knownclassifications%28forrevision%29.md).
 
 ## Topics
 
 ### Accessing Results
-- [func supportedIdentifiers() throws -> [String]](vnclassifyimagerequest/supportedidentifiers.md)
+- [func supportedIdentifiers() throws -> [String]](./vnclassifyimagerequest/supportedidentifiers%28%29.md)
   Returns the classification identifiers that the request supports in its current configuration.
-- [var results: [VNClassificationObservation]?](vnclassifyimagerequest/results.md)
+- [var results: [VNClassificationObservation]?](./vnclassifyimagerequest/results.md)
   The results of the image classification request.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](./vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](vnclassifyimagerequest/knownclassifications(forrevision:).md)
+- [class func knownClassifications(forRevision: Int) throws -> [VNClassificationObservation]](./vnclassifyimagerequest/knownclassifications%28forrevision%29.md)
   Requests the collection of classifications that the Vision framework recognizes.
 ### Specifying Algorithm Revision
-- [var VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
+- [var VNClassifyImageRequestRevision1: Int](./vnclassifyimagerequestrevision1.md)
   A constant for specifying the first revision of the image-classification request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Detecting Objects in Still Images](detecting-objects-in-still-images.md)
+### Still-image analysis
+- [Detecting Objects in Still Images](./detecting-objects-in-still-images.md)
   Locate and demarcate rectangles, faces, barcodes, and text in images using the Vision framework.
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
+- [Classifying images for categorization and search](./classifying-images-for-categorization-and-search.md)
   Analyze and label images using a Vision classification request.
-- [Analyzing Image Similarity with Feature Print](analyzing-image-similarity-with-feature-print.md)
+- [Analyzing Image Similarity with Feature Print](./analyzing-image-similarity-with-feature-print.md)
   Generate a feature print to compute distance between images.
-- [class VNRequest](vnrequest.md)
+- [class VNRequest](./vnrequest.md)
   The abstract superclass for analysis requests.
-- [class VNImageBasedRequest](vnimagebasedrequest.md)
+- [class VNImageBasedRequest](./vnimagebasedrequest.md)
   The abstract superclass for image-analysis requests that focus on a specific part of an image.
-- [class VNGenerateImageFeaturePrintRequest](vngenerateimagefeatureprintrequest.md)
+- [class VNGenerateImageFeaturePrintRequest](./vngenerateimagefeatureprintrequest.md)
   An image-based request to generate feature prints from an image.
-- [class VNFeaturePrintObservation](vnfeatureprintobservation.md)
+- [class VNFeaturePrintObservation](./vnfeatureprintobservation.md)
   An observation that provides the recognized feature print.
-- [class VNImageRequestHandler](vnimagerequesthandler.md)
+- [class VNImageRequestHandler](./vnimagerequesthandler.md)
   An object that processes one or more image-analysis request pertaining to a single image.
-- [class VNObservation](vnobservation.md)
+- [class VNObservation](./vnobservation.md)
   The abstract superclass for analysis results.
 
 

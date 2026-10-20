@@ -1,7 +1,8 @@
 # UnitsSystem
 
 **Framework**: WeatherKit REST API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The system of units that the weather data is reported in.
 
@@ -10,9 +11,13 @@ The system of units that the weather data is reported in.
 
 ## Declaration
 
-```swift
+```
 string UnitsSystem
 ```
+
+## Possible Values
+
+- `m`
 
 #### Possible Values
 
@@ -20,11 +25,12 @@ string UnitsSystem
 
 ## See Also
 
-- [type MoonPhase](moonphase.md)
+### Identifying weather events
+- [type MoonPhase](./moonphase.md)
   The shape of the moon as seen by an observer on the ground at a given time.
-- [type PrecipitationType](precipitationtype.md)
+- [type PrecipitationType](./precipitationtype.md)
   The type of precipitation forecasted to occur during the day.
-- [type PressureTrend](pressuretrend.md)
+- [type PressureTrend](./pressuretrend.md)
   The direction of change of the sea level air pressure.
 
 

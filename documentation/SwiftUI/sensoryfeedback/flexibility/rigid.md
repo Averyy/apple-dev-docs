@@ -1,7 +1,8 @@
 # rigid
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a collision between hard or inflexible UI objects.
 
@@ -22,9 +23,10 @@ static let rigid: SensoryFeedback.Flexibility
 
 ## See Also
 
-- [static let soft: SensoryFeedback.Flexibility](sensoryfeedback/flexibility/soft.md)
+### Getting flexibility values
+- [static let soft: SensoryFeedback.Flexibility](./soft.md)
   Indicates a collision between soft or flexible UI objects.
-- [static let solid: SensoryFeedback.Flexibility](sensoryfeedback/flexibility/solid.md)
+- [static let solid: SensoryFeedback.Flexibility](./solid.md)
   Indicates a collision between solid UI objects of medium flexibility.
 
 

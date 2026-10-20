@@ -1,7 +1,8 @@
 # nsPredicate
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s predicate.
 
@@ -23,13 +24,14 @@ The request’s predicate.
 
 #### Discussion
 
-Set this value to cause the associated [`FetchRequest`](fetchrequest.md) to execute a fetch with a new predicate, producing an updated collection of results.
+Set this value to cause the associated [`FetchRequest`](../fetchrequest.md) to execute a fetch with a new predicate, producing an updated collection of results.
 
 ## See Also
 
-- [var sortDescriptors: [SortDescriptor<Result>]](fetchedresults/sortdescriptors.md)
+### Configuring the associated fetch request
+- [var sortDescriptors: [SortDescriptor<Result>]](./sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
-- [var nsSortDescriptors: [NSSortDescriptor]](fetchedresults/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
 
 

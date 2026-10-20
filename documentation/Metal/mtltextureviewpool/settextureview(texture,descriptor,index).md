@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new lightweight texture view.
@@ -20,9 +21,13 @@ Creates a new lightweight texture view.
 func setTextureView(texture: any MTLTexture, descriptor: MTLTextureViewDescriptor, index: Int) -> MTLResourceID
 ```
 
+```objc
+- (MTLResourceID) setTextureView:(id<MTLTexture>) texture descriptor:(MTLTextureViewDescriptor *) descriptor atIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-The [`MTLResourceID`](mtlresourceid.md) of a newly created texture view in this pool.
+The [`MTLResourceID`](../mtlresourceid.md) of a newly created texture view in this pool.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ This method creates a lightweight texture view over a texture according to a des
 
 ## Parameters
 
-- `texture`: An [`MTLTexture`](mtltexture.md) instance for which to create a new lightweight texture view.
+- `texture`: An [`MTLTexture`](../mtltexture.md) instance for which to create a new lightweight texture view.
 - `descriptor`: A descriptor specifying properties of the texture view to create.
 - `index`: An index of a slot in the texture pool into which this method writes the new texture view.
 

@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrapped value of this property wrapper.
 

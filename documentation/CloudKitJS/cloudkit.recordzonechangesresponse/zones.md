@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The records that changed in each zone.
 
@@ -10,7 +11,7 @@ The records that changed in each zone.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.RecordZoneChanges[] zones;
 ```
 

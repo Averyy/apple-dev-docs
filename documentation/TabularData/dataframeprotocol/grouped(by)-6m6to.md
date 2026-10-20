@@ -1,7 +1,8 @@
 # grouped(by:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a grouping from multiple columns that you select by column identifier.
 
@@ -26,11 +27,12 @@ func grouped<T>(by columnIDs: ColumnID<T>...) -> some RowGroupingProtocol where 
 
 ## See Also
 
-- [func grouped(by: String...) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:)-4wcw6.md)
+### Creating a Row Grouping by Multiple Columns
+- [func grouped(by: String...) -> some RowGroupingProtocol](./grouped%28by%29-4wcw6.md)
   Creates a grouping from multiple columns you select by name.
-- [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:_:).md)
+- [func grouped<T0, T1>(by: ColumnID<T0>, ColumnID<T1>) -> some RowGroupingProtocol](./grouped%28by,_%29.md)
   Creates a grouping from two columns of different types.
-- [func grouped<T0, T1, T2>(by: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>) -> some RowGroupingProtocol](dataframeprotocol/grouped(by:_:_:).md)
+- [func grouped<T0, T1, T2>(by: ColumnID<T0>, ColumnID<T1>, ColumnID<T2>) -> some RowGroupingProtocol](./grouped%28by,_,_%29.md)
   Creates a grouping from three columns of different types.
 
 

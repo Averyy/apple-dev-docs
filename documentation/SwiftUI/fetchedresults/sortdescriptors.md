@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s sort descriptors, accessed as value types.
 
@@ -21,17 +22,20 @@ The request’s sort descriptors, accessed as value types.
 @preconcurrency var sortDescriptors: [SortDescriptor<Result>] { get nonmutating set }
 ```
 
+Available when `Result` inherits `NSManagedObject`.
+
 #### Discussion
 
-Set this value to cause the associated [`FetchRequest`](fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](https://developer.apple.com/documentation/foundation/sortdescriptor) instances. The order of entities stored in the results collection may change as a result.
+Set this value to cause the associated [`FetchRequest`](../fetchrequest.md) to execute a fetch with a new collection of [`SortDescriptor`](../../Foundation/sortdescriptor.md) instances. The order of entities stored in the results collection may change as a result.
 
-If you want to use [`NSSortDescriptor`](https://developer.apple.com/documentation/foundation/nssortdescriptor) instances, set [`nsSortDescriptors`](fetchedresults/nssortdescriptors.md) instead.
+If you want to use [`NSSortDescriptor`](../../Foundation/nssortdescriptor.md) instances, set [`nsSortDescriptors`](./nssortdescriptors.md) instead.
 
 ## See Also
 
-- [var nsPredicate: NSPredicate?](fetchedresults/nspredicate.md)
+### Configuring the associated fetch request
+- [var nsPredicate: NSPredicate?](./nspredicate.md)
   The request’s predicate.
-- [var nsSortDescriptors: [NSSortDescriptor]](fetchedresults/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
 
 

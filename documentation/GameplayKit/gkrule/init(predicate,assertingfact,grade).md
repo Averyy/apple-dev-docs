@@ -1,7 +1,8 @@
 # init(predicate:assertingFact:grade:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data-driven rule with the specified predicate, whose action asserts a fact in the rule system evaluating the rule.
 
@@ -19,15 +20,19 @@ Creates a data-driven rule with the specified predicate, whose action asserts a 
 convenience init(predicate: NSPredicate, assertingFact fact: any NSObjectProtocol, grade: Float)
 ```
 
+```objc
++ (instancetype) ruleWithPredicate:(NSPredicate *) predicate assertingFact:(id<NSObject>) fact grade:(float) grade;
+```
+
 #### Return Value
 
 A new rule object.
 
 #### Discussion
 
-Rules created using this method encode their predicate and action when archived with the [`NSKeyedArchiver`](https://developer.apple.com/documentation/foundation/nskeyedarchiver) class. You can use this feature to support saving and loading rules, editing rules in-game, or building tools that separate your gameplay design and game programming tasks.
+Rules created using this method encode their predicate and action when archived with the [`NSKeyedArchiver`](../../Foundation/nskeyedarchiver.md) class. You can use this feature to support saving and loading rules, editing rules in-game, or building tools that separate your gameplay design and game programming tasks.
 
-Rules based on [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) objects typically test information in the [`state`](gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively. (This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`.)
+Rules based on [`NSPredicate`](../../Foundation/nspredicate.md) objects typically test information in the [`state`](../gkrulesystem/state.md) dictionary of the rule system evaluating the rule. For example, the following code creates a rule you might use to determine whether an enemy character in a game behaves aggressively. (This example presumes the rule system’s state dictionary contains an object for the key `player`, which in turn exposes a numeric value for the key `health`.)
 
 **Swift**:
 
@@ -45,12 +50,13 @@ GKRule *rule = [GKRule ruleWithPredicate:healthTest assertingFact:@"player_weak"
 
 ## Parameters
 
-- `fact`: An object representing a fact to assert when the rule’s predicate is satisfied. (For details on facts in rule systems, see the [`facts`](gkrulesystem/facts.md) property in [`GKRuleSystem`](gkrulesystem.md).)
+- `fact`: An object representing a fact to assert when the rule’s predicate is satisfied. (For details on facts in rule systems, see the [`facts`](../gkrulesystem/facts.md) property in [`GKRuleSystem`](../gkrulesystem.md).)
 - `grade`: An amount by which to increase the fact’s membership grade if the rule’s predicate is satisfied.
 
 ## See Also
 
-- [convenience init(predicate: NSPredicate, retractingFact: any NSObjectProtocol, grade: Float)](gkrule/init(predicate:retractingfact:grade:).md)
+### Creating Data-Driven Rules
+- [convenience init(predicate: NSPredicate, retractingFact: any NSObjectProtocol, grade: Float)](./init%28predicate,retractingfact,grade%29.md)
   Creates a data-driven rule with the specified predicate, whose action retracts a fact in the rule system evaluating the rule.
 
 

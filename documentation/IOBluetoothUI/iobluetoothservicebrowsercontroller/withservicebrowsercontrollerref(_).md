@@ -1,7 +1,8 @@
 # withServiceBrowserControllerRef(_:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Method call to convert an IOBluetoothServiceBrowserControllerRef into an IOBluetoothServiceBrowserController *.
 
@@ -12,6 +13,10 @@ Method call to convert an IOBluetoothServiceBrowserControllerRef into an IOBluet
 
 ```swift
 class func withServiceBrowserControllerRef(_ serviceBrowserControllerRef: IOBluetoothServiceBrowserControllerRef!) -> IOBluetoothServiceBrowserController!
+```
+
+```objc
++ (IOBluetoothServiceBrowserController *) withServiceBrowserControllerRef:(IOBluetoothServiceBrowserControllerRef) serviceBrowserControllerRef;
 ```
 
 #### Return Value

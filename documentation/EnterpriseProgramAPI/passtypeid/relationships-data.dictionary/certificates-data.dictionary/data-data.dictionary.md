@@ -1,20 +1,21 @@
 # PassTypeId.Relationships.Certificates.Data
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents the certificates for a pass type ID resource.
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Relationships.Certificates.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `certificates`
 
 
 ---

@@ -1,12 +1,15 @@
 # SecKeychainFindInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the first Internet password based on the attributes passed.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Finds the first Internet password based on the attributes passed.
 func SecKeychainFindInternetPassword(_ keychainOrArray: CFTypeRef?, _ serverNameLength: UInt32, _ serverName: UnsafePointer<CChar>?, _ securityDomainLength: UInt32, _ securityDomain: UnsafePointer<CChar>?, _ accountNameLength: UInt32, _ accountName: UnsafePointer<CChar>?, _ pathLength: UInt32, _ path: UnsafePointer<CChar>?, _ port: UInt16, _ protocol: SecProtocolType, _ authenticationType: SecAuthenticationType, _ passwordLength: UnsafeMutablePointer<UInt32>?, _ passwordData: UnsafeMutablePointer<UnsafeMutableRawPointer?>?, _ itemRef: UnsafeMutablePointer<SecKeychainItem?>?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainFindInternetPassword(CFTypeRef keychainOrArray, UInt32 serverNameLength, const char *serverName, UInt32 securityDomainLength, const char *securityDomain, UInt32 accountNameLength, const char *accountName, UInt32 pathLength, const char *path, UInt16 port, SecProtocolType protocol, SecAuthenticationType authenticationType, UInt32 *passwordLength, void **passwordData, SecKeychainItemRef*itemRef);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -24,7 +31,7 @@ This function finds the first Internet password item that matches the attributes
 
 This function decrypts the password before returning it to you. If the calling application is not in the list of trusted applications, the user is prompted before access is allowed. If the access controls for this item do not allow decryption, the function returns the `errSecAuthFailed` result code.
 
-This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](seckeychainunlock(_:_:_:_:).md) to display the Unlock Keychain dialog box if the keychain is currently locked.
+This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](./seckeychainunlock%28_,_,_,_%29.md) to display the Unlock Keychain dialog box if the keychain is currently locked.
 
 ## Parameters
 
@@ -38,10 +45,10 @@ This function automatically calls the function [`SecKeychainUnlock(_:_:_:_:)`](s
 - `pathLength`: The length of the `path` character string.
 - `path`: A UTF-8 encoded character string representing the path.
 - `port`: The TCP/IP port number. Pass `0` to ignore the port number.
-- `protocol`: The protocol associated with this password. See [`SecProtocolType`](secprotocoltype.md) for a description of possible values.
-- `authenticationType`: The authentication scheme used. See [`SecAuthenticationType`](secauthenticationtype.md) for a description of possible values. Pass the constant `kSecAuthenticationTypeDefault`, to specify the default authentication scheme.
+- `protocol`: The protocol associated with this password. See [`SecProtocolType`](./secprotocoltype.md) for a description of possible values.
+- `authenticationType`: The authentication scheme used. See [`SecAuthenticationType`](./secauthenticationtype.md) for a description of possible values. Pass the constant `kSecAuthenticationTypeDefault`, to specify the default authentication scheme.
 - `passwordLength`: On return, the length of the buffer pointed to by `passwordData`.
-- `passwordData`: On return, a pointer to a buffer containing the password data. Pass `NULL` if you want to obtain the item object but not the password data. In this case, you must also pass `NULL` in the `passwordLength` parameter. You should use the [`SecKeychainItemFreeContent(_:_:)`](seckeychainitemfreecontent(_:_:).md) function to free the memory pointed to by this parameter.
+- `passwordData`: On return, a pointer to a buffer containing the password data. Pass `NULL` if you want to obtain the item object but not the password data. In this case, you must also pass `NULL` in the `passwordLength` parameter. You should use the [`SecKeychainItemFreeContent(_:_:)`](./seckeychainitemfreecontent%28_,_%29.md) function to free the memory pointed to by this parameter.
 - `itemRef`: On return, a pointer to the item object of the Internet password. You are responsible for releasing your reference to this object. Pass `NULL` if you don’t want to obtain this object.
 
 

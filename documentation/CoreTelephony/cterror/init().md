@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Telephony  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Telephony error instance.
 

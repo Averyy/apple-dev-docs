@@ -1,7 +1,8 @@
 # rememberJoinedNetworks
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 AirPort client will remember all joined networks.
 
@@ -14,15 +15,20 @@ AirPort client will remember all joined networks.
 var rememberJoinedNetworks: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL rememberJoinedNetworks;
+```
+
 ## See Also
 
-- [var networkProfiles: NSOrderedSet](cwconfiguration/networkprofiles.md)
+### Instance Properties
+- [var networkProfiles: NSOrderedSet](./networkprofiles.md)
   An array of remembered CWNetworkProfile objects.
-- [var requireAdministratorForAssociation: Bool](cwconfiguration/requireadministratorforassociation.md)
+- [var requireAdministratorForAssociation: Bool](./requireadministratorforassociation.md)
   Require an administrator password to change networks.
-- [var requireAdministratorForIBSSMode: Bool](cwconfiguration/requireadministratorforibssmode.md)
+- [var requireAdministratorForIBSSMode: Bool](./requireadministratorforibssmode.md)
   Require an administrator password to create a computer-to-computer network.
-- [var requireAdministratorForPower: Bool](cwconfiguration/requireadministratorforpower.md)
+- [var requireAdministratorForPower: Bool](./requireadministratorforpower.md)
   Require an administrator password to change the interface power state.
 
 

@@ -1,7 +1,8 @@
 # GCTouchedStateInput
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common properties for an element that has touch state input.
 
@@ -19,29 +20,34 @@ The common properties for an element that has touch state input.
 protocol GCTouchedStateInput : NSObjectProtocol
 ```
 
+```objc
+@protocol GCTouchedStateInput <NSObject>
+```
+
 ## Topics
 
 ### Getting change information
-- [var isTouched: Bool](gctouchedstateinput/istouched.md)
+- [var isTouched: Bool](./gctouchedstateinput/istouched.md)
   A Boolean value that indicates whether the user touches the button.
-- [var lastTouchedStateTimestamp: TimeInterval](gctouchedstateinput/lasttouchedstatetimestamp.md)
+- [var lastTouchedStateTimestamp: TimeInterval](./gctouchedstateinput/lasttouchedstatetimestamp.md)
   The time of the most recent touch state change.
-- [var lastTouchedStateLatency: TimeInterval](gctouchedstateinput/lasttouchedstatelatency.md)
+- [var lastTouchedStateLatency: TimeInterval](./gctouchedstateinput/lasttouchedstatelatency.md)
   The time in seconds between the last touch state change and the current time.
-- [var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInput, Bool) -> Void)?](gctouchedstateinput/toucheddidchangehandler.md)
+- [var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInput, Bool) -> Void)?](./gctouchedstateinput/toucheddidchangehandler.md)
   A block that the element calls when its touch value changes.
 ### Getting user actions
-- [var sources: Set<AnyHashable>](gctouchedstateinput/sources.md)
+- [var sources: Set<AnyHashable>](./gctouchedstateinput/sources.md)
   One or more physical actions the user performs to manipulate the input.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol GCPressedStateInput](gcpressedstateinput.md)
+### Button elements and names
+- [protocol GCPressedStateInput](./gcpressedstateinput.md)
   The common properties for an element that has press state input, such as input from a button.
 
 

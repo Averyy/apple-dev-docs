@@ -1,7 +1,8 @@
 # CloudKitWebAuthTokenAuth
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Your CloudKit Web Authentication token.
 
@@ -10,7 +11,7 @@ Your CloudKit Web Authentication token.
 
 ## Declaration
 
-```swift
+```
 attribute string? CloudKitWebAuthTokenAuth;
 ```
 

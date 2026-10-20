@@ -1,7 +1,8 @@
 # splitAxis
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The axis of the current split for the view within the arrangement if it exists.
 
@@ -20,9 +21,10 @@ var splitAxis: UIAxis { get }
 
 ## See Also
 
-- [var isHidden: Bool](uiarrangementviewcontroller/viewstate/ishidden.md)
+### Getting the state
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that indicates whether the view is hidden in the current arrangement.
-- [var zIndex: Int](uiarrangementviewcontroller/viewstate/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the view within the arrangement.
 
 

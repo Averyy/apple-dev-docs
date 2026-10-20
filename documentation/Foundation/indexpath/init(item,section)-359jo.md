@@ -1,7 +1,8 @@
 # init(item:section:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an index path that references an item in a particular section.
 

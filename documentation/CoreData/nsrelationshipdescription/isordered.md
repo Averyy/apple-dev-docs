@@ -1,7 +1,8 @@
 # isOrdered
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the relationship preserves the order of the referenced managed objects.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the relationship preserves the order of 
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ A Boolean value that determines whether the relationship preserves the order of 
 var isOrdered: Bool { get set }
 ```
 
+```objc
+@property (getter=isOrdered) BOOL ordered;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var inverseRelationship: NSRelationshipDescription?](nsrelationshipdescription/inverserelationship.md)
+### Configuring the Destination
+- [var inverseRelationship: NSRelationshipDescription?](./inverserelationship.md)
   The relationship that represents the inverse of the current relationship.
-- [var destinationEntity: NSEntityDescription?](nsrelationshipdescription/destinationentity.md)
+- [var destinationEntity: NSEntityDescription?](./destinationentity.md)
   The type of object the relationship contains.
 
 

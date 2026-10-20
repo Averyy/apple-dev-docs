@@ -1,7 +1,8 @@
 # AVAudioSessionPortDescription
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the capabilities of the port and the hardware channels it supports.
 
@@ -19,69 +20,74 @@ Information about the capabilities of the port and the hardware channels it supp
 class AVAudioSessionPortDescription
 ```
 
+```objc
+@interface AVAudioSessionPortDescription : NSObject
+```
+
 #### Overview
 
 A port description object describes a single input or output port associated with an audio route. Examples of audio ports include a device’s built-in speaker, a microphone on a wired headset, and a Bluetooth device supporting the Advanced Audio Distribution Profile (A2DP).
 
-You can query the audio session’s [`currentRoute`](avaudiosession/currentroute.md) property to get information about the active set of input and output ports. To change the current audio routing, call the [`setPreferredInput(_:)`](avaudiosession/setpreferredinput(_:).md) method. For example, on a device with a wired headset attached, the audio session’s [`availableInputs`](avaudiosession/availableinputs.md) array may contain two port descriptions: one for the headset microphone and one for the device’s built-in microphone. You can use the audio session’s [`setPreferredInput(_:)`](avaudiosession/setpreferredinput(_:).md) method to select the headset or built-in microphone for audio input.
+You can query the audio session’s [`currentRoute`](./avaudiosession/currentroute.md) property to get information about the active set of input and output ports. To change the current audio routing, call the [`setPreferredInput(_:)`](./avaudiosession/setpreferredinput%28_%29.md) method. For example, on a device with a wired headset attached, the audio session’s [`availableInputs`](./avaudiosession/availableinputs.md) array may contain two port descriptions: one for the headset microphone and one for the device’s built-in microphone. You can use the audio session’s [`setPreferredInput(_:)`](./avaudiosession/setpreferredinput%28_%29.md) method to select the headset or built-in microphone for audio input.
 
 ## Topics
 
 ### Getting the port attributes
-- [var portName: String](avaudiosessionportdescription/portname.md)
+- [var portName: String](./avaudiosessionportdescription/portname.md)
   A descriptive name for the port.
-- [var portType: AVAudioSession.Port](avaudiosessionportdescription/porttype.md)
+- [var portType: AVAudioSession.Port](./avaudiosessionportdescription/porttype.md)
   The type of the port.
-- [AVAudioSession.Port](avaudiosession/port.md)
+- [AVAudioSession.Port](./avaudiosession/port.md)
   A structure that defines the available input and output port types.
-- [var channels: [AVAudioSessionChannelDescription]?](avaudiosessionportdescription/channels.md)
+- [var channels: [AVAudioSessionChannelDescription]?](./avaudiosessionportdescription/channels.md)
   An array of channel objects that describe the port’s input or output channels.
-- [class AVAudioSessionChannelDescription](avaudiosessionchanneldescription.md)
+- [class AVAudioSessionChannelDescription](./avaudiosessionchanneldescription.md)
   A class that describes a hardware channel on the current device.
-- [var uid: String](avaudiosessionportdescription/uid.md)
+- [var uid: String](./avaudiosessionportdescription/uid.md)
   A system-assigned unique identifier (UID) for the port.
-- [var hasHardwareVoiceCallProcessing: Bool](avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
+- [var hasHardwareVoiceCallProcessing: Bool](./avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
   A Boolean value that indicates whether the associated hardware port has built-in processing for two-way voice communication.
-- [var isSpatialAudioEnabled: Bool](avaudiosessionportdescription/isspatialaudioenabled.md)
+- [var isSpatialAudioEnabled: Bool](./avaudiosessionportdescription/isspatialaudioenabled.md)
   A Boolean value that indicates whether the port supports spatial audio playback.
 ### Managing a port’s data sources
-- [var dataSources: [AVAudioSessionDataSourceDescription]?](avaudiosessionportdescription/datasources.md)
+- [var dataSources: [AVAudioSessionDataSourceDescription]?](./avaudiosessionportdescription/datasources.md)
   The available data sources for the port.
-- [var selectedDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/selecteddatasource.md)
+- [var selectedDataSource: AVAudioSessionDataSourceDescription?](./avaudiosessionportdescription/selecteddatasource.md)
   The currently selected audio data source for the port.
-- [var preferredDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/preferreddatasource.md)
+- [var preferredDataSource: AVAudioSessionDataSourceDescription?](./avaudiosessionportdescription/preferreddatasource.md)
   The preferred audio data source for the port.
-- [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosessionportdescription/setpreferreddatasource(_:).md)
+- [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](./avaudiosessionportdescription/setpreferreddatasource%28_%29.md)
   Sets the preferred audio data source for the port.
 ### Accessing the port extension
-- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](avaudiosessionportdescription/bluetoothmicrophoneextension.md)
+- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](./avaudiosessionportdescription/bluetoothmicrophoneextension.md)
   An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
-- [class AVAudioSessionPortExtensionBluetoothMicrophone](avaudiosessionportextensionbluetoothmicrophone.md)
+- [class AVAudioSessionPortExtensionBluetoothMicrophone](./avaudiosessionportextensionbluetoothmicrophone.md)
   An object that describes capabilities of Bluetooth microphone ports.
-- [class AVAudioSessionCapability](avaudiosessioncapability.md)
+- [class AVAudioSessionCapability](./avaudiosessioncapability.md)
   Describes whether a specific capability is supported and if that capability is currently enabled
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var currentRoute: AVAudioSessionRouteDescription](avaudiosession/currentroute.md)
+### Inspecting the current route
+- [var currentRoute: AVAudioSessionRouteDescription](./avaudiosession/currentroute.md)
   A description of the current audio route’s input and output ports.
-- [class AVAudioSessionRouteDescription](avaudiosessionroutedescription.md)
+- [class AVAudioSessionRouteDescription](./avaudiosessionroutedescription.md)
   An object that describes the input and output ports associated with a session’s audio route.
-- [class let routeChangeNotification: NSNotification.Name](avaudiosession/routechangenotification.md)
+- [class let routeChangeNotification: NSNotification.Name](./avaudiosession/routechangenotification.md)
   A notification the system posts when its audio route changes.
 
 

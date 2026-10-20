@@ -1,7 +1,8 @@
 # UITraitOverrides
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mutable container of traits you use to set trait changes for an object and its descendants.
 
@@ -10,7 +11,7 @@ A mutable container of traits you use to set trait changes for an object and its
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,26 +22,27 @@ struct UITraitOverrides
 ## Topics
 
 ### Inspecting overrides
-- [func contains(UITrait) -> Bool](uitraitoverrides-swift.struct/contains(_:).md)
+- [func contains(UITrait) -> Bool](./uitraitoverrides-swift.struct/contains%28_%29.md)
   Returns a Boolean value that indicates whether the trait overrides contain a change for the trait you provide.
 ### Removing overrides
-- [func remove(UITrait)](uitraitoverrides-swift.struct/remove(_:).md)
+- [func remove(UITrait)](./uitraitoverrides-swift.struct/remove%28_%29.md)
   Removes the change for the trait you provide.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [UIMutableTraits](uimutabletraits-13ja5.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [UIMutableTraits](./uimutabletraits-13ja5.md)
 
 ## See Also
 
-- [var traitOverrides: UITraitOverrides](uipresentationcontroller/traitoverrides-629ka.md)
-- [var overrideTraitCollection: UITraitCollection?](uipresentationcontroller/overridetraitcollection.md)
+### Overriding trait values
+- [var traitOverrides: UITraitOverrides](./uipresentationcontroller/traitoverrides-629ka.md)
+- [var overrideTraitCollection: UITraitCollection?](./uipresentationcontroller/overridetraitcollection.md)
   Interface traits for the presented view controller, to use in place of traits from the iOS environment.
 
 

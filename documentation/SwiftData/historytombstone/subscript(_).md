@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 18.0+

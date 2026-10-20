@@ -1,38 +1,40 @@
 # IOATAReg16
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOATAReg16 : OSObject
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](ioatareg16/1526675-getmetaclass.md)
-- [- operator=](ioatareg16/1526685-operator.md)
+- [- getMetaClass](./ioatareg16/api-1526675-getmetaclass.md)
+- [- operator=](./ioatareg16/api-1526685-operator.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOATAReg32](ioatareg32.md)
-- [IOATAReg8](ioatareg8.md)
-- [IOATAIOReg32](ioataioreg32.md)
-- [IOATAIOReg16](ioataioreg16.md)
-- [IOATAIOReg8](ioataioreg8.md)
-- [IOATARegPtr32](ioataregptr32.md)
-- [IOATARegPtr16](ioataregptr16.md)
-- [IOATARegPtr8](ioataregptr8.md)
+### Registers
+- [IOATAReg32](./ioatareg32.md)
+- [IOATAReg8](./ioatareg8.md)
+- [IOATAIOReg32](./ioataioreg32.md)
+- [IOATAIOReg16](./ioataioreg16.md)
+- [IOATAIOReg8](./ioataioreg8.md)
+- [IOATARegPtr32](./ioataregptr32.md)
+- [IOATARegPtr16](./ioataregptr16.md)
+- [IOATARegPtr8](./ioataregptr8.md)
 
 
 ---

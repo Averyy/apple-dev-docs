@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyleConfiguration.Option
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties of an auto-renewable subscription option to merchandise.
 
@@ -23,14 +24,14 @@ struct Option
 
 #### Overview
 
-You use `SubscriptionStoreControlStyleConfiguration.Option` very similarly to [`Product`](product.md) values, with some important differences:
+You use `SubscriptionStoreControlStyleConfiguration.Option` very similarly to [`Product`](../product.md) values, with some important differences:
 
-- The `offer` property indicates the offer that applies to the purchase. Display the terms of the `offer`, and ignore offer properties on [`Product.SubscriptionInfo`](product/subscriptioninfo.md), such as [`introductoryOffer`](product/subscriptioninfo/introductoryoffer.md).
+- The `offer` property indicates the offer that applies to the purchase. Display the terms of the `offer`, and ignore offer properties on [`Product.SubscriptionInfo`](../product/subscriptioninfo.md), such as [`introductoryOffer`](../product/subscriptioninfo/introductoryoffer.md).
 - If the `offer` is `nil`, no offer applies to the purchase.
-- Call the [`subscribe()`](subscriptionstorecontrolstyleconfiguration/option/subscribe().md) method when a customer activates a control to subscribe to a subscription option, instead of methods on [`Product`](product.md), such as [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md).
-- Access the decorative icon using the [`icon`](subscriptionstorecontrolstyleconfiguration/option/icon.md) property.
+- Call the [`subscribe()`](./option/subscribe%28%29.md) method when a customer activates a control to subscribe to a subscription option, instead of methods on [`Product`](../product.md), such as [`purchase(confirmIn:options:)`](../product/purchase%28confirmin,options%29-6dj6y.md).
+- Access the decorative icon using the [`icon`](./option/icon.md) property.
 
-`SubscriptionStoreControlStyleConfiguration.Option` is a dynamic member lookup type, so you don’t need to use [`subscription`](subscriptionstorecontrolstyleconfiguration/option/subscription.md) directly to access the properties of the `Product` value. Instead, access the properties of `Product` or [`Product.SubscriptionInfo`](product/subscriptioninfo.md) directly on the `Option` value. In the example below, the [`displayName`](product/displayname.md) property is available on `Option` to use as the button label:
+`SubscriptionStoreControlStyleConfiguration.Option` is a dynamic member lookup type, so you don’t need to use [`subscription`](./option/subscription.md) directly to access the properties of the `Product` value. Instead, access the properties of `Product` or [`Product.SubscriptionInfo`](../product/subscriptioninfo.md) directly on the `Option` value. In the example below, the [`displayName`](../product/displayname.md) property is available on `Option` to use as the button label:
 
 ```swift
 struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
@@ -46,48 +47,49 @@ struct DisplayNameButtonsControlStyle: SubscriptionStoreControlStyle {
 ## Topics
 
 ### Getting the subscription product and offer
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/option/subscription.md)
+- [var subscription: Product](./option/subscription.md)
   The auto-renewable subscription to merchandise.
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/option/id.md)
+- [var id: Product.ID](./option/id.md)
   The product ID of the auto-renewable subscription.
-- [var activeOffer: Product.SubscriptionOffer?](subscriptionstorecontrolstyleconfiguration/option/activeoffer.md)
+- [var activeOffer: Product.SubscriptionOffer?](./option/activeoffer.md)
   The subscription offer the customer is eligible for, and that applies to the subscription option.
 ### Getting the icon
-- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](subscriptionstorecontrolstyleconfiguration/option/icon.md)
+- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./option/icon.md)
   The subscription option’s icon.
 ### Purchasing a subscription option
-- [func subscribe()](subscriptionstorecontrolstyleconfiguration/option/subscribe.md)
+- [func subscribe()](./option/subscribe%28%29.md)
   Initiates a purchase when a customer activates a control to subscribe to the option.
 ### Looking up dynamic members
-- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T?>) -> T?](subscriptionstorecontrolstyleconfiguration/option/subscript(dynamicmember:)-8sl2m.md)
+- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T?>) -> T?](./option/subscript%28dynamicmember%29-8sl2m.md)
   Facilitates accessing optional subscription properties on an option value.
-- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](subscriptionstorecontrolstyleconfiguration/option/subscript(dynamicmember:)-wjww.md)
+- [subscript<T>(dynamicMember _: KeyPath<Product.SubscriptionInfo, T>) -> T?](./option/subscript%28dynamicmember%29-wjww.md)
   Facilitates accessing subscription properties on an option value.
-- [subscript<T>(dynamicMember _: KeyPath<Product, T>) -> T](subscriptionstorecontrolstyleconfiguration/option/subscript(dynamicmember:)-9g2sm.md)
+- [subscript<T>(dynamicMember _: KeyPath<Product, T>) -> T](./option/subscript%28dynamicmember%29-9g2sm.md)
   Facilitates accessing product properties on an option value.
 ### Default Implementations
-- [Identifiable Implementations](subscriptionstorecontrolstyleconfiguration/option/identifiable-implementations.md)
+- [Identifiable Implementations](./option/identifiable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](subscriptionstorecontrolstyleconfiguration/options.md)
+### Getting subscription options to merchandise
+- [var options: [SubscriptionStoreControlStyleConfiguration.Option]](./options.md)
   An array of subscription options for the subscription store view to merchandise.
-- [var sections: [SubscriptionStoreControlStyleConfiguration.Section]](subscriptionstorecontrolstyleconfiguration/sections.md)
+- [var sections: [SubscriptionStoreControlStyleConfiguration.Section]](./sections.md)
   The subscription options to merchandise by sections.
-- [SubscriptionStoreControlStyleConfiguration.PickerOption](subscriptionstorecontrolstyleconfiguration/pickeroption.md)
+- [SubscriptionStoreControlStyleConfiguration.PickerOption](./pickeroption.md)
   The properties of a picker option to use for selecting a subscription.
-- [SubscriptionStoreControlStyleConfiguration.Section](subscriptionstorecontrolstyleconfiguration/section.md)
+- [SubscriptionStoreControlStyleConfiguration.Section](./section.md)
   The properties of a section of subscription options within a subscription store control.
-- [SubscriptionStoreControlStyleConfiguration.Icon](subscriptionstorecontrolstyleconfiguration/icon.md)
+- [SubscriptionStoreControlStyleConfiguration.Icon](./icon.md)
   A type-erased icon of a subscription option.
 
 

@@ -1,7 +1,8 @@
 # TCColliderShape.rightSide
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A collider representing the right side of the view the touch controller is embedded in. Useful for thumbsticks and delta controls, so the user can easily hit the control without looking closely.
 
@@ -16,13 +17,18 @@ A collider representing the right side of the view the touch controller is embed
 case rightSide
 ```
 
+```c
+TCColliderShapeRightSide
+```
+
 ## See Also
 
-- [TCColliderShape.circle](tccollidershape/circle.md)
+### Shapes
+- [TCColliderShape.circle](./circle.md)
   A circular collider.
-- [TCColliderShape.leftSide](tccollidershape/leftside.md)
+- [TCColliderShape.leftSide](./leftside.md)
   A collider representing the left side of the view the touch controller is embedded in. Useful for thumbsticks and delta controls, so the user can easily hit the control without looking closely.
-- [TCColliderShape.rect](tccollidershape/rect.md)
+- [TCColliderShape.rect](./rect.md)
   A rectangular collider.
 
 

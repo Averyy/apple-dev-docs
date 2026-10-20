@@ -1,14 +1,15 @@
 # handleNetworkInputEvent
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 static void handleNetworkInputEvent(thread_call_param_t param0, thread_call_param_t param1);
 ```
 

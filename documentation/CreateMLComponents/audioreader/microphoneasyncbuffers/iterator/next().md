@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances to the next element and returns it, or nil if no next element exists.
 

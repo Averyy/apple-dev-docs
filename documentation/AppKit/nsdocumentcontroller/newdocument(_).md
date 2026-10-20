@@ -1,12 +1,13 @@
 # newDocument(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method called by the New menu command, this method creates a new `NSDocument` object and adds it to the list of such objects managed by the document controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ An action method called by the New menu command, this method creates a new `NSDo
 func newDocument(_ sender: Any?)
 ```
 
+```objc
+- (void) newDocument:(id) sender;
+```
+
 #### Discussion
 
-This method calls [`openUntitledDocumentAndDisplay(_:)`](nsdocumentcontroller/openuntitleddocumentanddisplay(_:).md).
+This method calls [`openUntitledDocumentAndDisplay(_:)`](./openuntitleddocumentanddisplay%28_%29.md).
 
 ## See Also
 
-- [func openDocument(Any?)](nsdocumentcontroller/opendocument(_:).md)
+### Responding to Action Messages
+- [func openDocument(Any?)](./opendocument%28_%29.md)
   An action method called by the Open menu command, it runs the modal Open panel and, based on the selected filenames, creates one or more `NSDocument` objects from the contents of the files.
-- [func saveAllDocuments(Any?)](nsdocumentcontroller/savealldocuments(_:).md)
+- [func saveAllDocuments(Any?)](./savealldocuments%28_%29.md)
   As the action method called by the Save All command, saves all open documents of the application that need to be saved.
 
 

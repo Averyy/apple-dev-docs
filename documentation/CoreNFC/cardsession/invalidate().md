@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the current card emulation session.
 
@@ -20,7 +21,7 @@ func invalidate()
 
 This call stops any currently-running card emulation.
 
-To restart, create a new [`CardSession`](cardsession.md) instance with `startSession()`.
+To restart, create a new [`CardSession`](../cardsession.md) instance with `startSession()`.
 
 
 ---

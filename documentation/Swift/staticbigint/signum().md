@@ -1,7 +1,8 @@
 # signum()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the value’s sign.
 

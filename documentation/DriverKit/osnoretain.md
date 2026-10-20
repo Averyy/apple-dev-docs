@@ -1,26 +1,28 @@
 # OSNoRetain
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 constexpr static const auto OSNoRetain;
 ```
 
 ## See Also
 
-- [OSAdoptMemory](osadoptmemory.md)
-- [OSAllocateMemory](osallocatememory.md)
-- [OSAllocateMemoryZero](osallocatememoryzero.md)
-- [OSRetain](osretain.md)
+### Constants
+- [OSAdoptMemory](./osadoptmemory.md)
+- [OSAllocateMemory](./osallocatememory.md)
+- [OSAllocateMemoryZero](./osallocatememoryzero.md)
+- [OSRetain](./osretain.md)
 
 
 ---

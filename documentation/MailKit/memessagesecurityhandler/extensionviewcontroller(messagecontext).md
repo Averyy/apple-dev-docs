@@ -2,6 +2,7 @@
 
 **Framework**: MailKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,9 +14,14 @@
 func extensionViewController(messageContext context: Data) -> MEExtensionViewController?
 ```
 
+```objc
+- (MEExtensionViewController *) extensionViewControllerForMessageContext:(NSData *) context;
+```
+
 ## See Also
 
-- [func primaryActionClicked(forMessageContext: Data, completionHandler: (MEExtensionViewController?) -> Void)](memessagesecurityhandler/primaryactionclicked(formessagecontext:completionhandler:).md)
+### Instance Methods
+- [func primaryActionClicked(forMessageContext: Data, completionHandler: (MEExtensionViewController?) -> Void)](./primaryactionclicked%28formessagecontext,completionhandler%29.md)
 
 
 ---

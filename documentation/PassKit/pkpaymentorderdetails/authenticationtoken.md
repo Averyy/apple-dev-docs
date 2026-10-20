@@ -1,7 +1,8 @@
 # authenticationToken
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authentification token supplied to your web service.
 
@@ -18,13 +19,18 @@ The authentification token supplied to your web service.
 var authenticationToken: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * authenticationToken;
+```
+
 ## See Also
 
-- [var orderIdentifier: String](pkpaymentorderdetails/orderidentifier.md)
+### Identifying and authenticating the order
+- [var orderIdentifier: String](./orderidentifier.md)
   A unique order identifier scoped to your order type identifier.
-- [var orderTypeIdentifier: String](pkpaymentorderdetails/ordertypeidentifier.md)
+- [var orderTypeIdentifier: String](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
-- [var webServiceURL: URL](pkpaymentorderdetails/webserviceurl.md)
+- [var webServiceURL: URL](./webserviceurl.md)
   The URL for your web service.
 
 

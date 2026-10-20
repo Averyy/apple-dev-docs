@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solves the system *AX = B* using the supplied double-precision factorization of *A*, without any internal memory allocations.
 
@@ -20,13 +21,17 @@ Solves the system *AX = B* using the supplied double-precision factorization of 
 func SparseSolve(_ Factored: SparseOpaqueFactorization_Double, _ B: DenseMatrix_Double, _ X: DenseMatrix_Double, _ workspace: UnsafeMutableRawPointer)
 ```
 
+```c
+static void SparseSolve(SparseOpaqueFactorization_Double Factored, DenseMatrix_Double X, DenseMatrix_Double B, void *workspace);
+```
+
 #### Discussion
 
 Use this function to solve a system of linear equations using a factored coefficient matrix. In cases where your code calls the function frequently, create and manage the workspace that the Sparse Solvers library uses and reuse it across function calls. Reusing a workspace prevents the Sparse Solvers library from allocating the temporary storage with each call.
 
 The following figure shows two systems of equations where the coefficient matrix is sparse:
 
-![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-by-two matrix that equals a three-by-two matrix.](/images/com.apple.accelerate/media-3703883@2x.png)
+![A mathematical equation that has two stacked sets of three simultaneous equations on the left. Each equation has three unknowns. The same sets of simultaneous equations appear on the right as a single matrix equation, A x equals B. The single matrix equation consists of a three-by-three matrix multiplied by a three-by-two matrix that equals a three-by-two matrix.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3703883@2x.png)
 
 The following code solves this system with a QR factorization of the coefficient matrix:
 
@@ -155,18 +160,19 @@ If the factorization is *A = QR*, the function returns the solution of minimum n
 
 If the factorization is *A = QR*, the function returns the least squares solution *minₓ ‖ AX - B ‖₂* for overdetermined systems.
 
-If the factorization is [`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
+If the factorization is [`SparseFactorizationCholeskyAtA`](./sparsefactorizationcholeskyata.md), the factorization is of *AᵀA*, and the solution that returns is for the system *AᵀAX = B*.
 
 ## Parameters
 
 - `Factored`: The factorization of *A*.
 - `B`: The right-hand-side, B.
 - `X`: The matrix for returning solutions.
-- `workspace`: The scratch space of size [`solveWorkspaceRequiredStatic`](sparseopaquefactorization_double/solveworkspacerequiredstatic.md) `+` `nrhs` `*` [`solveWorkspaceRequiredPerRHS`](sparseopaquefactorization_double/solveworkspacerequiredperrhs.md), where `nrhs` is the number of right-hand-sides to find solutions for.
+- `workspace`: The scratch space of size [`solveWorkspaceRequiredStatic`](./sparseopaquefactorization_double/solveworkspacerequiredstatic.md) `+` `nrhs` `*` [`solveWorkspaceRequiredPerRHS`](./sparseopaquefactorization_double/solveworkspacerequiredperrhs.md), where `nrhs` is the number of right-hand-sides to find solutions for.
 
 ## See Also
 
-- [func SparseSolve(SparseOpaqueFactorization_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-8xma8.md)
+### Out-of-place direct solving functions with user-defined workspace
+- [func SparseSolve(SparseOpaqueFactorization_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_,_%29-8xma8.md)
   Solves the system *AX = B* using the supplied single-precision factorization of *A*, without any internal memory allocations.
 
 

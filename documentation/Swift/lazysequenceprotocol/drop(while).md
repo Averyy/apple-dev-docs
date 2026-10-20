@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lazy sequence that skips any initial elements that satisfy `predicate`.
 

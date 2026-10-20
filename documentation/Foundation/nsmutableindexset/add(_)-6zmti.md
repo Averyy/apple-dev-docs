@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the indexes in an index set to the receiver.
 
@@ -20,15 +21,20 @@ Adds the indexes in an index set to the receiver.
 func add(_ indexSet: IndexSet)
 ```
 
+```objc
+- (void) addIndexes:(NSIndexSet *) indexSet;
+```
+
 ## Parameters
 
 - `indexSet`: Index set to add.
 
 ## See Also
 
-- [func add(Int)](nsmutableindexset/add(_:)-6dtkj.md)
+### Adding Indexes
+- [func add(Int)](./add%28_%29-6dtkj.md)
   Adds an index  to the receiver.
-- [func add(in: NSRange)](nsmutableindexset/add(in:).md)
+- [func add(in: NSRange)](./add%28in%29.md)
   Adds the indexes in an index range to the receiver.
 
 

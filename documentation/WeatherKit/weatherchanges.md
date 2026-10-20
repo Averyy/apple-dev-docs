@@ -1,7 +1,8 @@
 # WeatherChanges
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the Weather Change forecast. It provides a qualitative assessment of whether upcoming weather is significantly different from prior conditions.
 
@@ -23,32 +24,32 @@ struct WeatherChanges
 ## Topics
 
 ### Instance Properties
-- [var changes: [WeatherChange]](weatherchanges/changes.md)
+- [var changes: [WeatherChange]](./weatherchanges/changes.md)
   A list of forecasted weather changes, in chronological order.
-- [var endIndex: WeatherChanges.Index](weatherchanges/endindex.md)
+- [var endIndex: WeatherChanges.Index](./weatherchanges/endindex.md)
   The end index for the weather changes.
-- [var metadata: WeatherMetadata](weatherchanges/metadata.md)
+- [var metadata: WeatherMetadata](./weatherchanges/metadata.md)
   Descriptive information about the weather change data.
-- [var startIndex: WeatherChanges.Index](weatherchanges/startindex.md)
+- [var startIndex: WeatherChanges.Index](./weatherchanges/startindex.md)
   The start index for the weather changes.
 ### Subscripts
-- [subscript(WeatherChanges.Index) -> WeatherChanges.Element](weatherchanges/subscript(_:).md)
+- [subscript(WeatherChanges.Index) -> WeatherChanges.Element](./weatherchanges/subscript%28_%29.md)
   The weather change at the provided index.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

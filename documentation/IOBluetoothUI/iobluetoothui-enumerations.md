@@ -1,19 +1,21 @@
 # IOBluetoothUI Enumerations
 
-**Framework**: IOBluetooth UI
+**Framework**: IOBluetooth UI  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [Anonymous](1411883-anonymous.md)
-- [Anonymous](1411865-anonymous.md)
-- [struct BluetoothKeyboardReturnType](bluetoothkeyboardreturntype.md)
+- [Anonymous](./api-1411883-anonymous.md)
+- [Anonymous](./api-1411865-anonymous.md)
+- [struct BluetoothKeyboardReturnType](./bluetoothkeyboardreturntype.md)
 
 ## See Also
 
-- [IOBluetoothUIUserLib.h](iobluetoothuiuserlib-h.md)
-- [IOBluetoothUI Constants](iobluetoothui-constants.md)
-- [IOBluetoothUI Functions](iobluetoothui-functions.md)
+### Reference
+- [IOBluetoothUIUserLib.h](./iobluetoothuiuserlib-h.md)
+- [IOBluetoothUI Constants](./iobluetoothui-constants.md)
+- [IOBluetoothUI Functions](./iobluetoothui-functions.md)
 
 
 ---

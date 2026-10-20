@@ -1,7 +1,8 @@
 # contentIndependentMetadataOnly
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Select this option when writing to change the file’s metadata only and not its contents.
 
@@ -20,16 +21,21 @@ Select this option when writing to change the file’s metadata only and not its
 static var contentIndependentMetadataOnly: NSFileCoordinator.WritingOptions { get }
 ```
 
+```c
+NSFileCoordinatorWritingContentIndependentMetadataOnly
+```
+
 #### Discussion
 
-Any changes written to the item’s contents during this coordinated write may not be preserved or may fail. Changing metadata that is related to the item’s content is also not supported, and those changes may not be preserved. For example, changing the value of [`tagNamesKey`](urlresourcekey/tagnameskey.md) is supported, but changing the value of [`contentModificationDateKey`](urlresourcekey/contentmodificationdatekey.md) is not.
+Any changes written to the item’s contents during this coordinated write may not be preserved or may fail. Changing metadata that is related to the item’s content is also not supported, and those changes may not be preserved. For example, changing the value of [`tagNamesKey`](../../urlresourcekey/tagnameskey.md) is supported, but changing the value of [`contentModificationDateKey`](../../urlresourcekey/contentmodificationdatekey.md) is not.
 
 ## See Also
 
-- [static var forDeleting: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/fordeleting.md)
-- [static var forMoving: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formoving.md)
-- [static var forMerging: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/formerging.md)
-- [static var forReplacing: NSFileCoordinator.WritingOptions](nsfilecoordinator/writingoptions/forreplacing.md)
+### Constants
+- [static var forDeleting: NSFileCoordinator.WritingOptions](./fordeleting.md)
+- [static var forMoving: NSFileCoordinator.WritingOptions](./formoving.md)
+- [static var forMerging: NSFileCoordinator.WritingOptions](./formerging.md)
+- [static var forReplacing: NSFileCoordinator.WritingOptions](./forreplacing.md)
 
 
 ---

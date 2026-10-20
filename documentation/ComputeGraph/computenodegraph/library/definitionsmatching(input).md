@@ -1,7 +1,8 @@
 # definitionsMatching(input:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all definitions that have at least one input matching the given value type.
 
@@ -12,7 +13,7 @@ Returns all definitions that have at least one input matching the given value ty
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

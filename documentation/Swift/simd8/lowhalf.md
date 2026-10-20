@@ -1,7 +1,8 @@
 # lowHalf
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A half-length vector made up of the low elements of the vector.
 

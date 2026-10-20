@@ -1,7 +1,8 @@
 # CGPDFStreamGetDictionary(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the dictionary associated with a PDF stream.
 
@@ -10,7 +11,7 @@ Returns the dictionary associated with a PDF stream.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the dictionary associated with a PDF stream.
 
 ```swift
 func CGPDFStreamGetDictionary(_ stream: CGPDFStreamRef) -> CGPDFDictionaryRef?
+```
+
+```c
+extern CGPDFDictionaryRefCGPDFStreamGetDictionary(CGPDFStreamRef stream);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The PDF dictionary for the specified stream.
 
 ## See Also
 
-- [func CGPDFStreamCopyData(CGPDFStreamRef, UnsafeMutablePointer<CGPDFDataFormat>) -> CFData?](cgpdfstreamcopydata(_:_:).md)
+### Getting Data from a PDF Stream
+- [func CGPDFStreamCopyData(CGPDFStreamRef, UnsafeMutablePointer<CGPDFDataFormat>) -> CFData?](./cgpdfstreamcopydata%28_,_%29.md)
   Returns the data associated with a PDF stream.
 
 

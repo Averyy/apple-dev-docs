@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,8 @@
 ```swift
 init<S>(_ elements: S) where MusicItemType == S.Element, S : Sequence
 ```
+
+Available when `MusicItemType` conforms to `MusicItem`.
 
 
 ---

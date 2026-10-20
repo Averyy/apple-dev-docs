@@ -1,7 +1,8 @@
 # writingDirectionBased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The alignment following the writing direction of the same paragraph.
 
@@ -22,7 +23,7 @@ static let writingDirectionBased: Text.AlignmentStrategy
 
 #### Discussion
 
-When [`multilineTextAlignment`](environmentvalues/multilinetextalignment.md) is [`TextAlignment.leading`](textalignment/leading.md), alignment follows the writing direction. If the value is [`TextAlignment.trailing`](textalignment/trailing.md) alignment is the opposite of the writing direction and finally, a [`TextAlignment.center`](textalignment/center.md) value always results in centered alignment.
+When [`multilineTextAlignment`](../../environmentvalues/multilinetextalignment.md) is [`TextAlignment.leading`](../../textalignment/leading.md), alignment follows the writing direction. If the value is [`TextAlignment.trailing`](../../textalignment/trailing.md) alignment is the opposite of the writing direction and finally, a [`TextAlignment.center`](../../textalignment/center.md) value always results in centered alignment.
 
 
 ---

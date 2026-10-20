@@ -1,7 +1,8 @@
 # NSScrollView.FindBarPosition
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants define the position of the find bar in relation to the scroll view.
 
@@ -14,31 +15,36 @@ These constants define the position of the find bar in relation to the scroll vi
 enum FindBarPosition
 ```
 
+```c
+enum NSScrollViewFindBarPosition : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSScrollView.FindBarPosition.aboveHorizontalRuler](nsscrollview/findbarposition-swift.enum/abovehorizontalruler.md)
+- [NSScrollView.FindBarPosition.aboveHorizontalRuler](./findbarposition-swift.enum/abovehorizontalruler.md)
   The find bar is displayed above the horizontal ruler, if visible.
-- [NSScrollView.FindBarPosition.aboveContent](nsscrollview/findbarposition-swift.enum/abovecontent.md)
+- [NSScrollView.FindBarPosition.aboveContent](./findbarposition-swift.enum/abovecontent.md)
   The find bar is displayed above the scroll view content.
-- [NSScrollView.FindBarPosition.belowContent](nsscrollview/findbarposition-swift.enum/belowcontent.md)
+- [NSScrollView.FindBarPosition.belowContent](./findbarposition-swift.enum/belowcontent.md)
   The find bar is displayed below the scroll view content.
 ### Initializers
-- [init?(rawValue: Int)](nsscrollview/findbarposition-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./findbarposition-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSScrollView.Elasticity](nsscrollview/elasticity.md)
+### Constants
+- [NSScrollView.Elasticity](./elasticity.md)
   These constants determine the elasticity behavior for an axis of the scrollview.
 
 

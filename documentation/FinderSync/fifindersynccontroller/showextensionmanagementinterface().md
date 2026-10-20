@@ -1,7 +1,8 @@
 # showExtensionManagementInterface()
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.14+
@@ -10,6 +11,10 @@
 
 ```swift
 class func showExtensionManagementInterface()
+```
+
+```objc
++ (void) showExtensionManagementInterface;
 ```
 
 

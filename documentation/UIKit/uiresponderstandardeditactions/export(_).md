@@ -1,7 +1,8 @@
 # export(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports data in different file formats or to other apps.
 
@@ -18,13 +19,18 @@ Exports data in different file formats or to other apps.
 optional func export(_ sender: Any?)
 ```
 
+```objc
+- (void) export:(id) sender;
+```
+
 ## See Also
 
-- [func duplicate(Any?)](uiresponderstandardeditactions/duplicate(_:).md)
+### Handling data commands
+- [func duplicate(Any?)](./duplicate%28_%29.md)
   Duplicates data.
-- [func move(Any?)](uiresponderstandardeditactions/move(_:).md)
+- [func move(Any?)](./move%28_%29.md)
   Prompts a person to specify a new location and moves data to that location.
-- [func rename(Any?)](uiresponderstandardeditactions/rename(_:).md)
+- [func rename(Any?)](./rename%28_%29.md)
   Changes a title.
 
 

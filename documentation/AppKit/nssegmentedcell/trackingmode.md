@@ -1,12 +1,13 @@
 # trackingMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracking mode used for the segments of the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The tracking mode used for the segments of the control.
 var trackingMode: NSSegmentedControl.SwitchTracking { get set }
 ```
 
+```objc
+@property NSSegmentSwitchTracking trackingMode;
+```
+
 #### Discussion
 
-Possible values for `trackingMode` are described in [`NSSegmentedControl.SwitchTracking`](nssegmentedcontrol/switchtracking.md). The default value is [`NSSegmentedControl.SwitchTracking.selectOne`](nssegmentedcontrol/switchtracking/selectone.md).
+Possible values for `trackingMode` are described in [`NSSegmentedControl.SwitchTracking`](../nssegmentedcontrol/switchtracking.md). The default value is [`NSSegmentedControl.SwitchTracking.selectOne`](../nssegmentedcontrol/switchtracking/selectone.md).
 
 
 ---

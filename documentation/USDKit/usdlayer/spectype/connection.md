@@ -1,7 +1,8 @@
 # USDLayer.SpecType.connection
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attribute connection spec.
 

@@ -1,7 +1,8 @@
 # init(priority:modelRetention:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure containing analysis processing options.
 
@@ -26,9 +27,10 @@ init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetenti
 
 ## See Also
 
-- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)](speechanalyzer/options/init(priority:modelretention:ignoresresourcelimits:).md)
+### Creating an options object
+- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)](./init%28priority,modelretention,ignoresresourcelimits%29.md)
   Creates a structure containing analysis processing options.
-- [SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.enum.md)
+- [SpeechAnalyzer.Options.ModelRetention](./modelretention-swift.enum.md)
   A model caching strategy.
 
 

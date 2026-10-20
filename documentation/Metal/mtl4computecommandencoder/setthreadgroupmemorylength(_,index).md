@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the size of a threadgroup memory buffer for a threadgroup argument in the compute shader function.
@@ -20,6 +21,10 @@ Configures the size of a threadgroup memory buffer for a threadgroup argument in
 func setThreadgroupMemoryLength(_ length: Int, index: Int)
 ```
 
+```objc
+- (void) setThreadgroupMemoryLength:(NSUInteger) length atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `length`: The size of the threadgroup memory, in bytes. Use a multiple of `16` bytes.
@@ -27,11 +32,12 @@ func setThreadgroupMemoryLength(_ length: Int, index: Int)
 
 ## See Also
 
-- [func setComputePipelineState(any MTLComputePipelineState)](mtl4computecommandencoder/setcomputepipelinestate(_:).md)
+### Configuring the pass
+- [func setComputePipelineState(any MTLComputePipelineState)](./setcomputepipelinestate%28_%29.md)
   Configures this encoder with a compute pipeline state that applies to your subsequent dispatch commands.
-- [func setArgumentTable((any MTL4ArgumentTable)?)](mtl4computecommandencoder/setargumenttable(_:).md)
+- [func setArgumentTable((any MTL4ArgumentTable)?)](./setargumenttable%28_%29.md)
   Sets an argument table for the compute shader stage of this pipeline.
-- [func setImageblockSize(width: Int, height: Int)](mtl4computecommandencoder/setimageblocksize(width:height:).md)
+- [func setImageblockSize(width: Int, height: Int)](./setimageblocksize%28width,height%29.md)
   Specifies the size, in pixels, of imageblock data in tile memory.
 
 

@@ -1,14 +1,15 @@
 # policy_timeshare_base_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct policy_timeshare_base {
     ...
 } policy_timeshare_base_data_t;
@@ -17,7 +18,7 @@ typedef struct policy_timeshare_base {
 ## Topics
 
 ### Instance Properties
-- [base_priority](policy_timeshare_base_data_t/1396936-base_priority.md)
+- [base_priority](./policy_timeshare_base_data_t/api-1396936-base_priority.md)
 
 
 ---

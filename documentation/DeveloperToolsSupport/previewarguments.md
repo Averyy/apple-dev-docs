@@ -1,7 +1,8 @@
 # PreviewArguments
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+

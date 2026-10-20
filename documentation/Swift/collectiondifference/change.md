@@ -1,7 +1,8 @@
 # CollectionDifference.Change
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A single change to a collection.
 
@@ -24,27 +25,27 @@ enum Change
 ## Topics
 
 ### Enumeration Cases
-- [case insert(offset: Int, element: ChangeElement, associatedWith: Int?)](collectiondifference/change/insert(offset:element:associatedwith:).md)
+- [case insert(offset: Int, element: ChangeElement, associatedWith: Int?)](./change/insert%28offset,element,associatedwith%29.md)
   An insertion.
-- [case remove(offset: Int, element: ChangeElement, associatedWith: Int?)](collectiondifference/change/remove(offset:element:associatedwith:).md)
+- [case remove(offset: Int, element: ChangeElement, associatedWith: Int?)](./change/remove%28offset,element,associatedwith%29.md)
   A removal.
 ### Default Implementations
-- [Decodable Implementations](collectiondifference/change/decodable-implementations.md)
-- [Encodable Implementations](collectiondifference/change/encodable-implementations.md)
-- [Equatable Implementations](collectiondifference/change/equatable-implementations.md)
-- [Hashable Implementations](collectiondifference/change/hashable-implementations.md)
+- [Decodable Implementations](./change/decodable-implementations.md)
+- [Encodable Implementations](./change/encodable-implementations.md)
+- [Equatable Implementations](./change/equatable-implementations.md)
+- [Hashable Implementations](./change/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../copyable.md)
+- [Decodable](../decodable.md)
+- [Encodable](../encodable.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

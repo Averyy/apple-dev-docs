@@ -1,40 +1,41 @@
 # IOExtensiblePaniclog
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOExtensiblePaniclog;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [AppendData](ioextensiblepaniclog/appenddata.md)
-- [ClaimBuffer](ioextensiblepaniclog/claimbuffer.md)
-- [CopyMemoryDescriptor](ioextensiblepaniclog/copymemorydescriptor.md)
-- [InsertData](ioextensiblepaniclog/insertdata.md)
-- [SetActive](ioextensiblepaniclog/setactive.md)
-- [SetInactive](ioextensiblepaniclog/setinactive.md)
-- [SetUsedLen](ioextensiblepaniclog/setusedlen.md)
-- [YieldBuffer](ioextensiblepaniclog/yieldbuffer.md)
-- [free](ioextensiblepaniclog/free.md)
-- [init](ioextensiblepaniclog/init.md)
+- [AppendData](./ioextensiblepaniclog/appenddata.md)
+- [ClaimBuffer](./ioextensiblepaniclog/claimbuffer.md)
+- [CopyMemoryDescriptor](./ioextensiblepaniclog/copymemorydescriptor.md)
+- [InsertData](./ioextensiblepaniclog/insertdata.md)
+- [SetActive](./ioextensiblepaniclog/setactive.md)
+- [SetInactive](./ioextensiblepaniclog/setinactive.md)
+- [SetUsedLen](./ioextensiblepaniclog/setusedlen.md)
+- [YieldBuffer](./ioextensiblepaniclog/yieldbuffer.md)
+- [free](./ioextensiblepaniclog/free.md)
+- [init](./ioextensiblepaniclog/init.md)
 ### Type Methods
-- [Create](ioextensiblepaniclog/create.md)
+- [Create](./ioextensiblepaniclog/create.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 
 ---

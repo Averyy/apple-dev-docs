@@ -1,7 +1,8 @@
 # authorizedScopes
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact information the user authorized your app to access.
 
@@ -20,11 +21,16 @@ The contact information the user authorized your app to access.
 var authorizedScopes: [ASAuthorization.Scope] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSString *> * authorizedScopes;
+```
+
 ## See Also
 
-- [var fullName: PersonNameComponents?](asauthorizationappleidcredential/fullname.md)
+### Getting Contact Information
+- [var fullName: PersonNameComponents?](./fullname.md)
   The user’s full name from their Apple ID or a user-submitted value provided from the Sign in with Apple UI.
-- [var email: String?](asauthorizationappleidcredential/email.md)
+- [var email: String?](./email.md)
   The user’s email address.
 
 

@@ -1,7 +1,8 @@
 # MessageProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to MessageProtocol send and receive messages. The conforming type is responsible for specifying its message-specific metadata.
 
@@ -23,24 +24,24 @@ protocol MessageProtocol : OneToOneProtocol
 ## Topics
 
 ### Associated Types
-- [associatedtype ContentType](messageprotocol/contenttype.md)
-- [associatedtype LegacyMessage](messageprotocol/legacymessage.md)
+- [associatedtype ContentType](./messageprotocol/contenttype.md)
+- [associatedtype LegacyMessage](./messageprotocol/legacymessage.md)
 
 ## Relationships
 
 ### Inherits From
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 ### Inherited By
-- [DatagramProtocol](datagramprotocol.md)
+- [DatagramProtocol](./datagramprotocol.md)
 ### Conforming Types
-- [Coder](coder.md)
-- [DTLS](dtls.md)
-- [Framer](framer.md)
-- [QUICDatagram](quicdatagram.md)
-- [TLV](tlv.md)
-- [UDP](udp.md)
-- [WebSocket](websocket.md)
+- [Coder](./coder.md)
+- [DTLS](./dtls.md)
+- [Framer](./framer.md)
+- [QUICDatagram](./quicdatagram.md)
+- [TLV](./tlv.md)
+- [UDP](./udp.md)
+- [WebSocket](./websocket.md)
 
 
 ---

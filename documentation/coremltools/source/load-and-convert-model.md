@@ -6,49 +6,42 @@ url: https://apple.github.io/coremltools/docs-guides/source/load-and-convert-mod
 
 # Load and Convert Model Workflow
 
-**
-
-- [.md](../_sources/source/load-and-convert-model.md)
-- **
-
-.pdf
-
-**
-
-# Load and Convert Model Workflow
-
- Table of contents 
-
-## Contents
-
-# Load and Convert Model Workflow
-
 The typical conversion process with the [Unified Conversion API](convert-learning-models.md) is to load the model to infer its type, and then use the [convert()](https://apple.github.io/coremltools/source/coremltools.converters.convert.html#module-coremltools.converters._converters_entry) method to convert it to the Core ML format. Follow these steps:
 
 1. Import `coremltools` (as `ct` for the following code snippets), and load a TensorFlow or PyTorch model.
-import coremltools as ct
 
-# Load TensorFlow model
-import tensorflow as tf # Tf 2.2.0
+   ```
+   import coremltools as ct
 
-tf_model = tf.keras.applications.MobileNet()
+   # Load TensorFlow model
+   import tensorflow as tf # Tf 2.2.0
 
-import coremltools as ct
+   tf_model = tf.keras.applications.MobileNet()
+   ```
 
-# Load PyTorch model (and perform tracing)
-torch_model = torchvision.models.mobilenet_v2()
-torch_model.eval() 
+   ```
+   import coremltools as ct
 
-example_input = torch.rand(1, 3, 256, 256)
-traced_model = torch.jit.trace(torch_model, example_input)
+   # Load PyTorch model (and perform tracing)
+   torch_model = torchvision.models.mobilenet_v2()
+   torch_model.eval() 
+
+   example_input = torch.rand(1, 3, 256, 256)
+   traced_model = torch.jit.trace(torch_model, example_input)
+   ```
 2. Convert the TensorFlow or PyTorch model using `convert()`:
-# Convert using the same API
-model_from_tf = ct.convert(tf_model)
 
-# Convert using the same API. Note that we need to provide "inputs" for pytorch conversion.
-model_from_torch = ct.convert(traced_model,
-							  inputs=[ct.TensorType(name="input", 
-													shape=example_input.shape)])
+   ```
+   # Convert using the same API
+   model_from_tf = ct.convert(tf_model)
+   ```
+
+   ```
+   # Convert using the same API. Note that we need to provide "inputs" for pytorch conversion.
+   model_from_torch = ct.convert(traced_model,
+   							  inputs=[ct.TensorType(name="input", 
+   													shape=example_input.shape)])
+   ```
 
 The conversion produces an `MLModel` object which you can use to make predictions, change metadata, or save to the Core ML format for use in Xcode.
 
@@ -126,7 +119,7 @@ mlmodel = ct.convert("mobilenet_v2_1.0_224_frozen.pb",
 
 ## Convert from PyTorch
 
-You can convert PyTorch models that are either traced or in already the TorchScript format. For example, you can convert a model obtained using [PyTorch’s save and load APIs](https://pytorch.org/tutorials/beginner/saving_loading_models.md) to Core ML using the same Unified Conversion API as the previous example:
+You can convert PyTorch models that are either traced or in already the TorchScript format. For example, you can convert a model obtained using [PyTorch’s save and load APIs](https://pytorch.org/tutorials/beginner/saving_loading_models.html) to Core ML using the same Unified Conversion API as the previous example:
 
 ```
 import coremltools as ct
@@ -166,6 +159,4 @@ For example, the following converts the model and sets the `compute_units` to CP
 model = ct.convert(tf_model, compute_units=ct.ComputeUnit.CPU_ONLY)
 ```
 
-For details on how to use this parameter with neural networks, see [Neural Network Untyped Tensors](typed-execution.html#neural-network-untyped-tensors). For details on using it with ML programs, see [ML Program Typed Tensors](typed-execution.html#ml-program-typed-tensors).
-
-** Contents
+For details on how to use this parameter with neural networks, see [Neural Network Untyped Tensors](typed-execution.md#neural-network-untyped-tensors). For details on using it with ML programs, see [ML Program Typed Tensors](typed-execution.md#ml-program-typed-tensors).

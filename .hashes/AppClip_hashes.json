@@ -131,9 +131,8 @@
       "hash": "33ac88610821befb31798d11285186f7a2415a90751a1caca9b95a78eca7a319"
     },
     "https://developer.apple.com/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui": {
-      "etag": "W/\"676410f76179ea24db64eb0f5e5212e3\"",
       "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
-      "hash": "656d26247c19d138484709a540566f8f3dab6700d4bf9f3eb2626a49a2e7de78"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/appclip/interacting-with-app-clip-codes-in-ar": {
       "etag": "\"d76f-65d55e6c60a5f-df\"",
@@ -311,9 +310,8 @@
       "hash": "33ac88610821befb31798d11285186f7a2415a90751a1caca9b95a78eca7a319"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/fruta_building_a_feature-rich_app_with_swiftui.json": {
-      "etag": "W/\"676410f76179ea24db64eb0f5e5212e3\"",
       "file_path": "documentation/AppClip/fruta_building_a_feature-rich_app_with_swiftui.md",
-      "hash": "656d26247c19d138484709a540566f8f3dab6700d4bf9f3eb2626a49a2e7de78"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/interacting-with-app-clip-codes-in-ar.json": {
       "etag": "\"d76f-65d55e6c60a5f-df\"",
@@ -362,6 +360,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 72
   }
 }

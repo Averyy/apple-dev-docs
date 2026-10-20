@@ -1,7 +1,8 @@
 # alternateText
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description for the image.
 

@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a tile set from a URL to an archived .sks file.
 
@@ -20,6 +21,10 @@ Initializes a tile set from a URL to an archived .sks file.
 convenience init?(from url: URL)
 ```
 
+```objc
++ (instancetype) tileSetFromURL:(NSURL *) url;
+```
+
 #### Return Value
 
 A new tile set or `nil` if the URL doesn’t point to a valid tile set file.
@@ -30,7 +35,8 @@ A new tile set or `nil` if the URL doesn’t point to a valid tile set file.
 
 ## See Also
 
-- [convenience init?(named: String)](sktileset/init(named:).md)
+### Creating a Tile Set from a File
+- [convenience init?(named: String)](./init%28named%29.md)
   Initializes a tile set by searching the app bundle for an archived `.sks` file by name.
 
 

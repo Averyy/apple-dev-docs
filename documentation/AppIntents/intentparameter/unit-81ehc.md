@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.ElectricCharge? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitElectricCharge>`.
+
 ## See Also
 
-- [IntentParameter.ElectricCharge](intentparameter/electriccharge.md)
-- [var defaultUnit: IntentParameter<Value>.ElectricCharge?](intentparameter/defaultunit-1cdc2.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-2g1sv.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-3wgie.md)
+### Accessing unit details
+- [IntentParameter.ElectricCharge](./electriccharge.md)
+- [var defaultUnit: IntentParameter<Value>.ElectricCharge?](./defaultunit-1cdc2.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-2g1sv.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-3wgie.md)
 
 
 ---

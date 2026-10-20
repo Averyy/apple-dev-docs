@@ -1,12 +1,13 @@
 # usesVariableBufferFrameSizes
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Bool where true indicates that the sizes of the buffers passed to an IOProc will vary by a small amount.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

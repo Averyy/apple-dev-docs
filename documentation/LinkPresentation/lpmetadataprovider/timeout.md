@@ -1,7 +1,8 @@
 # timeout
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval after which the request automatically fails if it hasn’t already completed.
 
@@ -20,17 +21,22 @@ The time interval after which the request automatically fails if it hasn’t alr
 var timeout: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval timeout;
+```
+
 #### Discussion
 
-The default timeout interval is 30 seconds. If a metadata fetch takes longer than the timeout interval, the completion handler is called with the error code [`LPError.Code.metadataFetchTimedOut`](lperror/code/metadatafetchtimedout.md).
+The default timeout interval is 30 seconds. If a metadata fetch takes longer than the timeout interval, the completion handler is called with the error code [`LPError.Code.metadataFetchTimedOut`](../lperror/code/metadatafetchtimedout.md).
 
 ## See Also
 
-- [func startFetchingMetadata(for: URL, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](lpmetadataprovider/startfetchingmetadata(for:completionhandler:)-54z5i.md)
+### Fetching metadata
+- [func startFetchingMetadata(for: URL, completionHandler: (LPLinkMetadata?, (any Error)?) -> Void)](./startfetchingmetadata%28for,completionhandler%29-54z5i.md)
   Fetches metadata for the given URL.
-- [func cancel()](lpmetadataprovider/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels a metadata request.
-- [var shouldFetchSubresources: Bool](lpmetadataprovider/shouldfetchsubresources.md)
+- [var shouldFetchSubresources: Bool](./shouldfetchsubresources.md)
   A Boolean value indicating whether to download subresources specified by the metadata.
 
 

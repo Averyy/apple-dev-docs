@@ -1,7 +1,8 @@
 # value
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category value for this sample.
 
@@ -19,13 +20,18 @@ The category value for this sample.
 var value: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger value;
+```
+
 #### Discussion
 
-This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in [`HealthKit Constants`](healthkit-constants.md).
+This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in [HealthKit Constants](../healthkit-constants.md).
 
 ## See Also
 
-- [var categoryType: HKCategoryType](hkcategorysample/categorytype.md)
+### Getting Property Data
+- [var categoryType: HKCategoryType](./categorytype.md)
   The category type for this sample.
 
 

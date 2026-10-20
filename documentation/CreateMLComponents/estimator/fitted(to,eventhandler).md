@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fits a transformer to a sequence of examples.
@@ -32,11 +33,12 @@ The fitted transformer.
 
 ## See Also
 
-- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> EstimatorToSupervisedAdaptor<Self, Annotation>](estimator/adaptedassupervised(annotationtype:).md)
+### Fitting and adapting
+- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> EstimatorToSupervisedAdaptor<Self, Annotation>](./adaptedassupervised%28annotationtype%29.md)
   Exposes this estimator as a supervised estimator.
-- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](estimator/adaptedastemporal.md)
+- [func adaptedAsTemporal() -> EstimatorToTemporalAdaptor<Self>](./adaptedastemporal%28%29.md)
   Exposes this estimator as a temporal estimator.
-- [func fitted<S>(to: S) async throws -> Self.Transformer](estimator/fitted(to:).md)
+- [func fitted<S>(to: S) async throws -> Self.Transformer](./fitted%28to%29.md)
 
 
 ---

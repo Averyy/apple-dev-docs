@@ -1,7 +1,8 @@
 # PMPrinterCreateFromPrinterID(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a printer object from a print queue identifier.
 
@@ -14,9 +15,13 @@ Creates a printer object from a print queue identifier.
 func PMPrinterCreateFromPrinterID(_ printerID: CFString) -> PMPrinter?
 ```
 
-#### Return_value
+```c
+PMPrinter PMPrinterCreateFromPrinterID(CFStringRef printerID);
+```
 
-A new printer object, or `NULL` if no print queue is available with the specified identifier. You are responsible for releasing the printer object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
+#### Return Value
+
+A new printer object, or `NULL` if no print queue is available with the specified identifier. You are responsible for releasing the printer object with the function [`PMRelease(_:)`](./api-1461402-pmrelease.md).
 
 #### Discussion
 
@@ -28,15 +33,17 @@ This function is typically used to re-create a printer object using the print qu
 
 ## See Also
 
-- [func PMServerLaunchPrinterBrowser(PMServer?, CFDictionary?) -> OSStatus](1460175-pmserverlaunchprinterbrowser.md)
+### Creating Printer Objects
+- [func PMServerLaunchPrinterBrowser(PMServer?, CFDictionary?) -> OSStatus](./api-1460175-pmserverlaunchprinterbrowser.md)
   Launches the printer browser to browse the printers available for a print server.
-- [func PMServerCreatePrinterList(PMServer?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](1459953-pmservercreateprinterlist.md)
+- [func PMServerCreatePrinterList(PMServer?, UnsafeMutablePointer<Unmanaged<CFArray>?>) -> OSStatus](./api-1459953-pmservercreateprinterlist.md)
   Creates a list of printers available to a print server.
-- [func PMSessionCreatePrinterList(PMPrintSession, UnsafeMutablePointer<Unmanaged<CFArray>?>, UnsafeMutablePointer<CFIndex>?, UnsafeMutablePointer<PMPrinter?>?) -> OSStatus](1460119-pmsessioncreateprinterlist.md)
+- [func PMSessionCreatePrinterList(PMPrintSession, UnsafeMutablePointer<Unmanaged<CFArray>?>, UnsafeMutablePointer<CFIndex>?, UnsafeMutablePointer<PMPrinter?>?) -> OSStatus](./api-1460119-pmsessioncreateprinterlist.md)
   Creates a list of printers available in the specified printing session.
-- [func PMCreateGenericPrinter(UnsafeMutablePointer<PMPrinter?>) -> OSStatus](1461960-pmcreategenericprinter.md)
+- [func PMCreateGenericPrinter(UnsafeMutablePointer<PMPrinter?>) -> OSStatus](./api-1461960-pmcreategenericprinter.md)
   Creates a generic printer object.
-- [func PMPrinterGetID(PMPrinter) -> Unmanaged<CFString>?](1459606-pmprintergetid.md)
+### Related Documentation
+- [func PMPrinterGetID(PMPrinter) -> Unmanaged<CFString>?](./api-1459606-pmprintergetid.md)
   Returns the unique identifier of a printer.
 
 

@@ -1,18 +1,19 @@
 # MIDIThruConnectionRef
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque reference to a play-through connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ An opaque reference to a play-through connection.
 typealias MIDIThruConnectionRef = MIDIObjectRef
 ```
 
+```c
+typedef MIDIObjectRef MIDIThruConnectionRef;
+```
+
 ## See Also
 
-- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](midithruconnectioncreate(_:_:_:).md)
+### Managing Connections
+- [func MIDIThruConnectionCreate(CFString?, CFData, UnsafeMutablePointer<MIDIThruConnectionRef>) -> OSStatus](./midithruconnectioncreate%28_,_,_%29.md)
   Creates a MIDI thru connection.
-- [func MIDIThruConnectionDispose(MIDIThruConnectionRef) -> OSStatus](midithruconnectiondispose(_:).md)
+- [func MIDIThruConnectionDispose(MIDIThruConnectionRef) -> OSStatus](./midithruconnectiondispose%28_%29.md)
   Disposes a MIDI thru connection.
-- [struct MIDIThruConnectionEndpoint](midithruconnectionendpoint.md)
+- [struct MIDIThruConnectionEndpoint](./midithruconnectionendpoint.md)
   A source or destination in a MIDI thru connection.
-- [Endpoint Configuration](endpoint-configuration.md)
+- [Endpoint Configuration](./endpoint-configuration.md)
   Values that define the supported endpoint configurations.
 
 

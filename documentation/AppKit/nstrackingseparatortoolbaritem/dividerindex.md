@@ -1,7 +1,8 @@
 # dividerIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the split view divider to align with the tracking separator.
 
@@ -14,9 +15,14 @@ The index of the split view divider to align with the tracking separator.
 var dividerIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger dividerIndex;
+```
+
 ## See Also
 
-- [var splitView: NSSplitView](nstrackingseparatortoolbaritem/splitview.md)
+### configuring a tracking separator
+- [var splitView: NSSplitView](./splitview.md)
   The vertical split view to align with the toolbar separator.
 
 

@@ -1,17 +1,22 @@
 # updateChangeCount(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the receiver’s change count according to the given change type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func updateChangeCount(_ change: NSDocument.ChangeType)
+```
+
+```objc
+- (void) updateChangeCount:(NSDocumentChangeType) change;
 ```
 
 #### Discussion
@@ -22,15 +27,16 @@ Note that if you are using the `NSDocument` default undo/redo features, setting 
 
 ## Parameters
 
-- `change`: The type of change made to the document. For a list of values, see [`NSDocument.ChangeType`](nsdocument/changetype.md).
+- `change`: The type of change made to the document. For a list of values, see [`NSDocument.ChangeType`](./changetype.md).
 
 ## See Also
 
-- [func updateChangeCount(withToken: Any, for: NSDocument.SaveOperationType)](nsdocument/updatechangecount(withtoken:for:).md)
+### Updating the Document Change Count
+- [func updateChangeCount(withToken: Any, for: NSDocument.SaveOperationType)](./updatechangecount%28withtoken,for%29.md)
   Updates the document’s change count settings after a successful save operation.
-- [NSDocument.ChangeType](nsdocument/changetype.md)
+- [NSDocument.ChangeType](./changetype.md)
   Values that indicate a document’s edit status.
-- [func changeCountToken(for: NSDocument.SaveOperationType) -> Any](nsdocument/changecounttoken(for:).md)
+- [func changeCountToken(for: NSDocument.SaveOperationType) -> Any](./changecounttoken%28for%29.md)
   Returns an object that encapsulates the current record of document changes at the beginning of a save operation.
 
 

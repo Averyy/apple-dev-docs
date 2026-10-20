@@ -1,7 +1,8 @@
 # valueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the directional pad calls when the user changes its values.
 
@@ -19,13 +20,18 @@ The block that the directional pad calls when the user changes its values.
 var valueChangedHandler: GCControllerDirectionPadValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCControllerDirectionPadValueChangedHandler valueChangedHandler;
+```
+
 #### Discussion
 
 Set this handler to receive notifications when the user changes a direction value.
 
 ## See Also
 
-- [typealias GCControllerDirectionPadValueChangedHandler](gccontrollerdirectionpadvaluechangedhandler.md)
+### Getting change information
+- [typealias GCControllerDirectionPadValueChangedHandler](../gccontrollerdirectionpadvaluechangedhandler.md)
   The signature for the block that executes when either axis changes values.
 
 

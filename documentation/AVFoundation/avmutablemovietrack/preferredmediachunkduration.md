@@ -1,7 +1,8 @@
 # preferredMediaChunkDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum duration to use for each chunk of sample data written to the file for file types that support media chunk duration.
 
@@ -19,15 +20,20 @@ The maximum duration to use for each chunk of sample data written to the file fo
 var preferredMediaChunkDuration: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime preferredMediaChunkDuration;
+```
+
 #### Discussion
 
 The total duration of the samples in a chunk can be no greater than the preferred chunk duration, or the duration of a single sample if the single sample’s duration is greater than the preferred chunk duration. The default media chunk duration is `1.0` second. Setting a negative or non-numeric value for the chunk duration will cause an error.
 
 ## See Also
 
-- [var preferredMediaChunkAlignment: Int](avmutablemovietrack/preferredmediachunkalignment.md)
+### Accessing media chunks
+- [var preferredMediaChunkAlignment: Int](./preferredmediachunkalignment.md)
   The boundary for media chunk alignment for file types that support media chunk alignment.
-- [var preferredMediaChunkSize: Int](avmutablemovietrack/preferredmediachunksize.md)
+- [var preferredMediaChunkSize: Int](./preferredmediachunksize.md)
   The maximum size to use for each chunk of sample data written to the file for file types that support media chunk duration.
 
 

@@ -1,7 +1,8 @@
 # browseVersions(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the Versions browser in the document’s main window.
 
@@ -15,6 +16,10 @@ Opens the Versions browser in the document’s main window.
 func browseVersions(_ sender: Any?)
 ```
 
+```objc
+- (void) browseDocumentVersions:(id) sender;
+```
+
 #### Discussion
 
 This is the action of the Browse Saved Versions menu item in a document-based app.
@@ -25,9 +30,10 @@ This is the action of the Browse Saved Versions menu item in a document-based ap
 
 ## See Also
 
-- [var isBrowsingVersions: Bool](nsdocument/isbrowsingversions.md)
+### Browsing Document Versions
+- [var isBrowsingVersions: Bool](./isbrowsingversions.md)
   A Boolean value that indicates whether the document is currently displaying the Versions browser.
-- [func stopBrowsingVersions(completionHandler: (() -> Void)?)](nsdocument/stopbrowsingversions(completionhandler:).md)
+- [func stopBrowsingVersions(completionHandler: (() -> Void)?)](./stopbrowsingversions%28completionhandler%29.md)
   Dismiss the Versions browser for the current document.
 
 

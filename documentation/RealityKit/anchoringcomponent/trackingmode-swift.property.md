@@ -1,7 +1,8 @@
 # trackingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines how the `Entity` tracks its target anchor.
 
@@ -21,9 +22,10 @@ var trackingMode: AnchoringComponent.TrackingMode { get set }
 
 ## See Also
 
-- [let target: AnchoringComponent.Target](anchoringcomponent/target-swift.property.md)
+### Configuring the anchor
+- [let target: AnchoringComponent.Target](./target-swift.property.md)
   The real world anchor target to attach the entity to.
-- [var physicsSimulation: AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.property.md)
+- [var physicsSimulation: AnchoringComponent.PhysicsSimulation](./physicssimulation-swift.property.md)
   Specifies the physics simulation spece that the entity and its descendants are in.
 
 

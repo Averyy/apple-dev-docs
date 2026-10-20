@@ -1,7 +1,8 @@
 # CSSM_CERT_BUNDLE_PKCS7_SIGNED_ENVELOPED_DATA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CERT_BUNDLE_PKCS7_SIGNED_ENVELOPED_DATA: Int { get }
+```
+
+```c
+CSSM_CERT_BUNDLE_PKCS7_SIGNED_ENVELOPED_DATA
 ```
 
 

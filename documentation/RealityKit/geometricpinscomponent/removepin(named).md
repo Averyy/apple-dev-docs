@@ -1,7 +1,8 @@
 # removePin(named:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the pin associated with the name.
 

@@ -1,7 +1,8 @@
 # ActionResult.failure
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The action has failed.
 
@@ -21,9 +22,10 @@ case failure
 
 ## See Also
 
-- [ActionResult.success](actionresult/success.md)
+### Getting the action result
+- [ActionResult.success](./success.md)
   The action completed successfully.
-- [ActionResult.running](actionresult/running.md)
+- [ActionResult.running](./running.md)
   The action is currently running.
 
 

@@ -1,7 +1,8 @@
 # GameCenterAchievementImageV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center achievement image v2 resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center achievement image v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageV2
 ```
 
@@ -25,9 +26,9 @@ object GameCenterAchievementImageV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementImageV2.Attributes](gamecenterachievementimagev2/attributes-data.dictionary.md)
+- [object GameCenterAchievementImageV2.Attributes](./gamecenterachievementimagev2/attributes-data.dictionary.md)
   Attributes that describe a Game Center achievement image v2 resource.
-- [object GameCenterAchievementImageV2.Relationships](gamecenterachievementimagev2/relationships-data.dictionary.md)
+- [object GameCenterAchievementImageV2.Relationships](./gamecenterachievementimagev2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
@@ -36,23 +37,24 @@ object GameCenterAchievementImageV2
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterAchievementImageV2.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterAchievementImages`
 
 ## See Also
 
-- [object GameCenterAchievementImageV2CreateRequest](gamecenterachievementimagev2createrequest.md)
+### Objects
+- [object GameCenterAchievementImageV2CreateRequest](./gamecenterachievementimagev2createrequest.md)
   The request body you use to create a Game Center achievement image v2.
-- [object GameCenterAchievementImageV2Response](gamecenterachievementimagev2response.md)
+- [object GameCenterAchievementImageV2Response](./gamecenterachievementimagev2response.md)
   A response that contains a single Game Center achievement image v2 resource.
-- [object GameCenterAchievementImageV2UpdateRequest](gamecenterachievementimagev2updaterequest.md)
+- [object GameCenterAchievementImageV2UpdateRequest](./gamecenterachievementimagev2updaterequest.md)
   The request body you use to update a Game Center achievement image v2.
-- [object GameCenterAchievementImage](gamecenterachievementimage.md)
+- [object GameCenterAchievementImage](./gamecenterachievementimage.md)
   The data structure that represent an achievements image resource.
-- [object GameCenterAchievementImageCreateRequest](gamecenterachievementimagecreaterequest.md)
+- [object GameCenterAchievementImageCreateRequest](./gamecenterachievementimagecreaterequest.md)
   The request body you use to create an achievement image.
-- [object GameCenterAchievementImageResponse](gamecenterachievementimageresponse.md)
+- [object GameCenterAchievementImageResponse](./gamecenterachievementimageresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center achievement image.
-- [object GameCenterAchievementImageUpdateRequest](gamecenterachievementimageupdaterequest.md)
+- [object GameCenterAchievementImageUpdateRequest](./gamecenterachievementimageupdaterequest.md)
   The request body you use to update an achievement image.
 
 

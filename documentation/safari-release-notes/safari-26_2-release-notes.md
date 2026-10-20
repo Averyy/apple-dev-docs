@@ -1,6 +1,7 @@
 # Safari 26.2 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released December 12, 2025 — 26.2 (20623.1.14)
 
@@ -42,7 +43,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 - Fixed: Safari now reports a frozen OS version in its user agent string on iOS 26 and iPadOS 26, showing the last version released before iOS 26.  (156170132)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -116,7 +117,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 - Removed non-standard legacy `drawImageFromRect`. (141681635)
 
-##### Dom
+##### DOM
 
 ###### Resolved Issues
 
@@ -151,7 +152,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed painting for `<input type="range">` sliders in right-to-left vertical block writing modes. (158567821)
 - Fixed an issue where tainted scripts were blocked from reading values of form fields they created, now allowing access if the field was not modified by user input. (163299988)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -176,7 +177,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 - Fixed HDR images in CSS backgrounds, CSS borders and inside SVG images so they are now properly decoded and rendered in HDR mode. (158076668)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -199,7 +200,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed `TypeError` messages to be clearer in `for-of` loops. (159814766)
 - Fixed `TypeError` messages when calling class or function constructors without `new` to include the constructor name. (161152354)
 
-##### Mathml
+##### MathML
 
 ###### Resolved Issues
 
@@ -224,13 +225,13 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where `rel=preload` link headers with a nonce could trigger erroneous `Content-Security-Policy-Report-Only` violations due to the nonce not being copied into the fetch options. (75060055)
 - Fixed an issue where apps that are mistakenly calling the WKWebView API `loadRequest` from a background thread may end up crashing.  (162070925)
 
-##### Pdf
+##### PDF
 
 ###### Resolved Issues
 
 - Fixed an issue where the active PDF annotation hover effect would remain visible after moving the pointer away. (162951528)
 
-##### Performance Api
+##### Performance API
 
 ###### New Features
 
@@ -274,7 +275,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 - Removed UA styles for `h1` in `article`, `aside`, `nav`, and `section`. (151455566)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -336,7 +337,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 - Fixed collapsed table rows retaining nonzero height. (158276634)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -405,7 +406,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed an issue where the Sources tab won’t show contents of a script that contains a `for` statement with optional chaining in the test condition. (160617913)
 - Fixed an issue where adding DOM attributes or node siblings did not work correctly when using the actions from the context menu. (161577627)
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
@@ -413,7 +414,7 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Added support for Wasm Memory buffer APIs. (159305098)
 - Added support for Wasm JS String Builtins. (159679027)
 
-##### Webdriver
+##### WebDriver
 
 ###### New Features
 
@@ -425,19 +426,19 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed the `navigate` endpoint in WebDriver to properly validate URLs against the current browsing context and set the default readiness state to `Interactive` to align with the specification. (157031091)
 - Fixed an issue where element references nested inside `Array` or `Object` arguments were not properly extracted when executing scripts. (162571946)
 
-##### Webgpu
+##### WebGPU
 
 ###### New Features
 
 - Added support for using `GPUTexture` objects as depth-stencil and resolve attachments in WebGPU render passes to match the specification. (159952306)
 
-##### Webkit Api
+##### WebKit API
 
 ###### New Features
 
 - Added support for exporting `WebPage` content as `.png`, `.flatRTFD`, `.rtf`, and `.utf8PlainText` using SwiftUI `Transferable` APIs. (156225187)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -449,17 +450,18 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 ## See Also
 
-- [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
+### Version 26
+- [Safari 26.6 Release Notes](./safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)
-- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+- [Safari 26.5 Release Notes](./safari-26_5-release-notes.md)
   Released May 11, 2026 — 26.5 (20624.2.5)
-- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+- [Safari 26.4 Release Notes](./safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+- [Safari 26.1 Release Notes](./safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
-- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+- [Safari 26.0 Release Notes](./safari-26-release-notes.md)
   Released September 15, 2025 — 26 (20622.1.22)
 
 

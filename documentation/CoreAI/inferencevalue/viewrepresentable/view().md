@@ -2,6 +2,7 @@
 
 **Framework**: Core AI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

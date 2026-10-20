@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.Target.capture
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A drawable that will be used for capture purposes, this could be used for video or AirPlay streaming and will be visible to users outside of the device.
 
@@ -13,6 +14,10 @@ A drawable that will be used for capture purposes, this could be used for video 
 
 ```swift
 case capture
+```
+
+```c
+cp_drawable_target_capture
 ```
 
 

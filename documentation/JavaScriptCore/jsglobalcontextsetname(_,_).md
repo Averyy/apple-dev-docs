@@ -1,7 +1,8 @@
 # JSGlobalContextSetName(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the remote debugging name for a context.
 
@@ -19,14 +20,19 @@ Sets the remote debugging name for a context.
 func JSGlobalContextSetName(_ ctx: JSGlobalContextRef!, _ name: JSStringRef!)
 ```
 
+```c
+void JSGlobalContextSetName(JSGlobalContextRef ctx, JSStringRef name);
+```
+
 ## Parameters
 
-- `ctx`: The [`JSGlobalContextRef`](jsglobalcontextref.md) that you want to name.
+- `ctx`: The [`JSGlobalContextRef`](./jsglobalcontextref.md) that you want to name.
 - `name`: The remote debugging name to set on `ctx`.
 
 ## See Also
 
-- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](jsglobalcontextcopyname(_:).md)
+### Managing the context’s name
+- [func JSGlobalContextCopyName(JSGlobalContextRef!) -> JSStringRef!](./jsglobalcontextcopyname%28_%29.md)
   Gets a copy of the name of a context.
 
 

@@ -1,7 +1,8 @@
 # callAsFunction(_:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the transformation on a single input.
 
@@ -20,6 +21,12 @@ Performs the transformation on a single input.
 func callAsFunction(_ input: Self.Input, eventHandler: EventHandler? = nil) async throws -> Self.Output
 ```
 
+**Other overloads**:
+
+```swift
+func callAsFunction<S>(_ input: S, eventHandler: EventHandler? = nil) async throws -> [Self.Output] where S : Sequence, Self.Input == S.Element
+```
+
 #### Return Value
 
 An output produced by applying the transformer to the input.
@@ -31,9 +38,10 @@ An output produced by applying the transformer to the input.
 
 ## See Also
 
-- [func prediction(from:)](transformer/prediction(from:).md)
+### Transforming and predicting
+- [func prediction(from:)](./prediction%28from%29.md)
   Performs a prediction from a single input.
-- [func prediction<S, Annotation>(from: S, eventHandler: EventHandler?) async throws -> [AnnotatedPrediction<Self.Output, Annotation>]](transformer/prediction(from:eventhandler:).md)
+- [func prediction<S, Annotation>(from: S, eventHandler: EventHandler?) async throws -> [AnnotatedPrediction<Self.Output, Annotation>]](./prediction%28from,eventhandler%29.md)
   Performs a prediction on a sequence of annotated inputs.
 
 

@@ -1,7 +1,8 @@
 # RCSMessage.Reaction.Operation
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,19 +16,19 @@ enum Operation
 ## Topics
 
 ### Enumeration Cases
-- [RCSMessage.Reaction.Operation.addEmoji(_:)](rcsmessage/reaction/operation-swift.enum/addemoji(_:).md)
+- [RCSMessage.Reaction.Operation.addEmoji(_:)](./operation-swift.enum/addemoji%28_%29.md)
   An operation type for adding one or more emoji reactions.
-- [RCSMessage.Reaction.Operation.removeEmoji(_:)](rcsmessage/reaction/operation-swift.enum/removeemoji(_:).md)
+- [RCSMessage.Reaction.Operation.removeEmoji(_:)](./operation-swift.enum/removeemoji%28_%29.md)
   An operation type for removing one or more emoji reactions.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

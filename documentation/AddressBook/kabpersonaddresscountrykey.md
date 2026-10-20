@@ -1,14 +1,17 @@
 # kABPersonAddressCountryKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Country or region.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: use CNPostalAddress.country
 
 ## Declaration
 
@@ -16,37 +19,42 @@ Country or region.
 let kABPersonAddressCountryKey: CFString!
 ```
 
+```c
+extern CFStringRef const kABPersonAddressCountryKey;
+```
+
 ## See Also
 
-- [let kABPersonAddressCityKey: CFString!](kabpersonaddresscitykey.md)
+### Deprecated
+- [let kABPersonAddressCityKey: CFString!](./kabpersonaddresscitykey.md)
   City.
-- [let kABPersonAddressCountryCodeKey: CFString!](kabpersonaddresscountrycodekey.md)
+- [let kABPersonAddressCountryCodeKey: CFString!](./kabpersonaddresscountrycodekey.md)
   Country code. The value is an ISO country code.
-- [let kABPersonAddressProperty: ABPropertyID](kabpersonaddressproperty.md)
+- [let kABPersonAddressProperty: ABPropertyID](./kabpersonaddressproperty.md)
   Identifier for the address multivalue property.
-- [let kABPersonAddressStateKey: CFString!](kabpersonaddressstatekey.md)
+- [let kABPersonAddressStateKey: CFString!](./kabpersonaddressstatekey.md)
   State.
-- [let kABPersonAddressStreetKey: CFString!](kabpersonaddressstreetkey.md)
+- [let kABPersonAddressStreetKey: CFString!](./kabpersonaddressstreetkey.md)
   Street.
-- [let kABPersonAddressZIPKey: CFString!](kabpersonaddresszipkey.md)
+- [let kABPersonAddressZIPKey: CFString!](./kabpersonaddresszipkey.md)
   Zip code.
-- [let kABPersonAlternateBirthdayCalendarIdentifierKey: CFString!](kabpersonalternatebirthdaycalendaridentifierkey.md)
-  The associated value is a string representing the calendar identifier for a [`CFCalendar`](https://developer.apple.com/documentation/corefoundation/cfcalendar).
-- [let kABPersonAlternateBirthdayDayKey: CFString!](kabpersonalternatebirthdaydaykey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the day for the birthday.
-- [let kABPersonAlternateBirthdayEraKey: CFString!](kabpersonalternatebirthdayerakey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the era for the birthday.
-- [let kABPersonAlternateBirthdayIsLeapMonthKey: CFString!](kabpersonalternatebirthdayisleapmonthkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.charType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/chartype).
-- [let kABPersonAlternateBirthdayMonthKey: CFString!](kabpersonalternatebirthdaymonthkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the month for the birthday.
-- [let kABPersonAlternateBirthdayProperty: ABPropertyID](kabpersonalternatebirthdayproperty.md)
-  The associated value is a [`kABDictionaryPropertyType`](kabdictionarypropertytype.md) with keys specified by the other constants listed here.
-- [let kABPersonAlternateBirthdayYearKey: CFString!](kabpersonalternatebirthdayyearkey.md)
-  The associated value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of type [`CFNumberType.nsIntegerType`](https://developer.apple.com/documentation/corefoundation/cfnumbertype/nsintegertype) whose value is the year for the birthday.
-- [let kABPersonAnniversaryLabel: CFString!](kabpersonanniversarylabel.md)
+- [let kABPersonAlternateBirthdayCalendarIdentifierKey: CFString!](./kabpersonalternatebirthdaycalendaridentifierkey.md)
+  The associated value is a string representing the calendar identifier for a [`CFCalendar`](../CoreFoundation/cfcalendar.md).
+- [let kABPersonAlternateBirthdayDayKey: CFString!](./kabpersonalternatebirthdaydaykey.md)
+  The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of type [`CFNumberType.nsIntegerType`](../CoreFoundation/cfnumbertype/nsintegertype.md) whose value is the day for the birthday.
+- [let kABPersonAlternateBirthdayEraKey: CFString!](./kabpersonalternatebirthdayerakey.md)
+  The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of type [`CFNumberType.nsIntegerType`](../CoreFoundation/cfnumbertype/nsintegertype.md) whose value is the era for the birthday.
+- [let kABPersonAlternateBirthdayIsLeapMonthKey: CFString!](./kabpersonalternatebirthdayisleapmonthkey.md)
+  The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of type [`CFNumberType.charType`](../CoreFoundation/cfnumbertype/chartype.md).
+- [let kABPersonAlternateBirthdayMonthKey: CFString!](./kabpersonalternatebirthdaymonthkey.md)
+  The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of type [`CFNumberType.nsIntegerType`](../CoreFoundation/cfnumbertype/nsintegertype.md) whose value is the month for the birthday.
+- [let kABPersonAlternateBirthdayProperty: ABPropertyID](./kabpersonalternatebirthdayproperty.md)
+  The associated value is a [`kABDictionaryPropertyType`](./kabdictionarypropertytype.md) with keys specified by the other constants listed here.
+- [let kABPersonAlternateBirthdayYearKey: CFString!](./kabpersonalternatebirthdayyearkey.md)
+  The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of type [`CFNumberType.nsIntegerType`](../CoreFoundation/cfnumbertype/nsintegertype.md) whose value is the year for the birthday.
+- [let kABPersonAnniversaryLabel: CFString!](./kabpersonanniversarylabel.md)
   Birthdate.
-- [let kABPersonAssistantLabel: CFString!](kabpersonassistantlabel.md)
+- [let kABPersonAssistantLabel: CFString!](./kabpersonassistantlabel.md)
   Assistant.
 
 

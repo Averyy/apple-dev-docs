@@ -1,7 +1,8 @@
 # kMDItemHeadline
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A publishable entry providing a synopsis of the contents of the file. For example, "Apple Introduces the iPod Photo". A CFString.
 
@@ -12,6 +13,10 @@ A publishable entry providing a synopsis of the contents of the file. For exampl
 
 ```swift
 let kMDItemHeadline: CFString!
+```
+
+```c
+const CFStringRef kMDItemHeadline;
 ```
 
 

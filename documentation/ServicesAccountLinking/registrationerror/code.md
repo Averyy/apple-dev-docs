@@ -1,7 +1,8 @@
 # RegistrationError.Code
 
 **Framework**: ServicesAccountLinking  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Registration error codes.
 
@@ -16,27 +17,31 @@ Registration error codes.
 enum Code
 ```
 
+```c
+enum SALRegistrationError : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [RegistrationError.Code.failed](registrationerror/code/failed.md)
+- [RegistrationError.Code.failed](./code/failed.md)
   Registration failed.
-- [RegistrationError.Code.notEligible](registrationerror/code/noteligible.md)
+- [RegistrationError.Code.notEligible](./code/noteligible.md)
   The application is not registered as an authorized partner.
-- [RegistrationError.Code.rateLimited](registrationerror/code/ratelimited.md)
+- [RegistrationError.Code.rateLimited](./code/ratelimited.md)
   The server rate-limited the request.
 ### Initializers
-- [init?(rawValue: Int)](registrationerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

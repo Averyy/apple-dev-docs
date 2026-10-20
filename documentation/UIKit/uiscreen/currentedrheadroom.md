@@ -1,7 +1,8 @@
 # currentEDRHeadroom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The screen’s current headroom when displaying extended dynamic range content.
 
@@ -17,19 +18,24 @@ The screen’s current headroom when displaying extended dynamic range content.
 var currentEDRHeadroom: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat currentEDRHeadroom;
+```
+
 #### Discussion
 
 *Headroom* is the ratio of the luminance of the screen’s brightest white to the luminance of standard dynamic range (SDR) white, in the screen’s native color space. The screen’s current headroom limits all rendered content, and can change depending on its configuration and whether it’s displaying extended dynamic range (EDR) content.
 
-To display EDR content in a [`CAMetalLayer`](https://developer.apple.com/documentation/quartzcore/cametallayer), set the layer’s [`wantsExtendedDynamicRangeContent`](https://developer.apple.com/documentation/quartzcore/cametallayer/wantsextendeddynamicrangecontent) property to [`true`](https://developer.apple.com/documentation/swift/true).
+To display EDR content in a [`CAMetalLayer`](../../QuartzCore/cametallayer.md), set the layer’s [`wantsExtendedDynamicRangeContent`](../../QuartzCore/cametallayer/wantsextendeddynamicrangecontent.md) property to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.property.md)
+### Getting the reference display mode status
+- [var referenceDisplayModeStatus: UIScreen.ReferenceDisplayModeStatus](./referencedisplaymodestatus-swift.property.md)
   The status of the screen’s reference display mode.
-- [UIScreen.ReferenceDisplayModeStatus](uiscreen/referencedisplaymodestatus-swift.enum.md)
+- [UIScreen.ReferenceDisplayModeStatus](./referencedisplaymodestatus-swift.enum.md)
   Describes a screen’s reference display mode status.
-- [var potentialEDRHeadroom: CGFloat](uiscreen/potentialedrheadroom.md)
+- [var potentialEDRHeadroom: CGFloat](./potentialedrheadroom.md)
   The screen’s maximum headroom when displaying extended dynamic range content.
 
 

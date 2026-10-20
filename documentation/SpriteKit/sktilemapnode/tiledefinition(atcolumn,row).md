@@ -1,7 +1,8 @@
 # tileDefinition(atColumn:row:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -18,6 +19,10 @@
 func tileDefinition(atColumn column: Int, row: Int) -> SKTileDefinition?
 ```
 
+```objc
+- (SKTileDefinition *) tileDefinitionAtColumn:(NSUInteger) column row:(NSUInteger) row;
+```
+
 #### Return Value
 
 The tile definition for the tile at the specified column and row.
@@ -29,12 +34,13 @@ The tile definition for the tile at the specified column and row.
 
 ## See Also
 
-- [func centerOfTile(atColumn: Int, row: Int) -> CGPoint](sktilemapnode/centeroftile(atcolumn:row:).md)
-- [func tileColumnIndex(fromPosition: CGPoint) -> Int](sktilemapnode/tilecolumnindex(fromposition:).md)
-- [func tileGroup(atColumn: Int, row: Int) -> SKTileGroup?](sktilemapnode/tilegroup(atcolumn:row:).md)
-- [func tileRowIndex(fromPosition: CGPoint) -> Int](sktilemapnode/tilerowindex(fromposition:).md)
+### Querying the Tile Map’s Properties
+- [func centerOfTile(atColumn: Int, row: Int) -> CGPoint](./centeroftile%28atcolumn,row%29.md)
+- [func tileColumnIndex(fromPosition: CGPoint) -> Int](./tilecolumnindex%28fromposition%29.md)
+- [func tileGroup(atColumn: Int, row: Int) -> SKTileGroup?](./tilegroup%28atcolumn,row%29.md)
+- [func tileRowIndex(fromPosition: CGPoint) -> Int](./tilerowindex%28fromposition%29.md)
   Returns the tile map node object’s tile row index for the specified position in points.
-- [var mapSize: CGSize](sktilemapnode/mapsize.md)
+- [var mapSize: CGSize](./mapsize.md)
   The overall size of the tile map.
 
 

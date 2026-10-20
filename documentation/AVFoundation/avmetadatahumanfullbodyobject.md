@@ -1,7 +1,8 @@
 # AVMetadataHumanFullBodyObject
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a detected human full body in a picture.
 
@@ -18,32 +19,37 @@ An object that represents a detected human full body in a picture.
 class AVMetadataHumanFullBodyObject
 ```
 
+```objc
+@interface AVMetadataHumanFullBodyObject : AVMetadataBodyObject
+```
+
 #### Overview
 
-On supported platforms, [`AVCaptureMetadataOutput`](avcapturemetadataoutput.md) outputs arrays of detected human full body objects.
+On supported platforms, [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md) outputs arrays of detected human full body objects.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataBodyObject](avmetadatabodyobject.md)
+- [AVMetadataBodyObject](./avmetadatabodyobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMetadataBodyObject](avmetadatabodyobject.md)
+### Bodies
+- [class AVMetadataBodyObject](./avmetadatabodyobject.md)
   An abstract class that defines the interface for a metadata body object.
-- [class AVMetadataCatBodyObject](avmetadatacatbodyobject.md)
+- [class AVMetadataCatBodyObject](./avmetadatacatbodyobject.md)
   An object representing a single detected cat body in a picture.
-- [class AVMetadataDogBodyObject](avmetadatadogbodyobject.md)
+- [class AVMetadataDogBodyObject](./avmetadatadogbodyobject.md)
   An object representing a single detected dog body in a picture.
-- [class AVMetadataHumanBodyObject](avmetadatahumanbodyobject.md)
+- [class AVMetadataHumanBodyObject](./avmetadatahumanbodyobject.md)
   An object representing a single detected human body in a picture.
 
 

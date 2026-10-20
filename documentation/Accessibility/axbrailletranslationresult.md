@@ -1,7 +1,8 @@
 # AXBrailleTranslationResult
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of translation or back-translation.
 
@@ -20,38 +21,43 @@ The result of translation or back-translation.
 class AXBrailleTranslationResult
 ```
 
+```objc
+@interface AXBrailleTranslationResult : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](axbrailletranslationresult/init(coder:).md)
+- [init?(coder: NSCoder)](./axbrailletranslationresult/init%28coder%29.md)
 ### Instance Properties
-- [var resultString: String](axbrailletranslationresult/resultstring.md)
+- [var resultString: String](./axbrailletranslationresult/resultstring.md)
   The resulting string after translation or back-translation.
 ### Instance Methods
-- [func inputIndex(forResultIndex: String.Index) -> String.Index?](axbrailletranslationresult/inputindex(forresultindex:).md)
+- [func inputIndex(forResultIndex: String.Index) -> String.Index?](./axbrailletranslationresult/inputindex%28forresultindex%29.md)
   Maps a location in the resultString to where it came from in the input string.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Braille displays](braille-displays.md)
+### Braille
+- [Braille displays](./braille-displays.md)
   Display a graphical representation of images, icons, data, and more on a two-dimensional braille display.
-- [class AXBrailleTable](axbrailletable.md)
+- [class AXBrailleTable](./axbrailletable.md)
   A rule for translating print text to Braille, and back-translating Braille to print text.
-- [class AXBrailleTranslator](axbrailletranslator.md)
+- [class AXBrailleTranslator](./axbrailletranslator.md)
   Translates print text to Braille and Braille to print text according to the given Braille table.
 
 

@@ -1,7 +1,8 @@
 # CWKeychainDomain.system
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system keychain domain.
 
@@ -14,11 +15,16 @@ The system keychain domain.
 case system
 ```
 
+```c
+kCWKeychainDomainSystem
+```
+
 ## See Also
 
-- [CWKeychainDomain.none](cwkeychaindomain/none.md)
+### Constants
+- [CWKeychainDomain.none](./none.md)
   No keychain domain specified.
-- [CWKeychainDomain.user](cwkeychaindomain/user.md)
+- [CWKeychainDomain.user](./user.md)
   The user keychain domain.
 
 

@@ -1,7 +1,8 @@
 # useConfigurationAttributeInternalIPSubnet
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether or not the IKEv2 client should use the INTERNAL_IP4_SUBNET and/or INTERNAL_IP6_SUBNET attributes sent by the IKEv2 server.
 
@@ -19,29 +20,34 @@ A Boolean indicating whether or not the IKEv2 client should use the INTERNAL_IP4
 var useConfigurationAttributeInternalIPSubnet: Bool { get set }
 ```
 
+```objc
+@property BOOL useConfigurationAttributeInternalIPSubnet;
+```
+
 #### Discussion
 
-If this property is [`false`](https://developer.apple.com/documentation/swift/false), split tunnel configurations may still be communicated via Traffic Selectors during IKE negotiation.
+If this property is [`false`](../../Swift/false.md), split tunnel configurations may still be communicated via Traffic Selectors during IKE negotiation.
 
-Some IKEv2 servers use the INTERNAL_IP4_SUBNET and INTERNAL_IP6_SUBNET protocol message attributes to communicate split tunnel routes to IKEv2 clients. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Some IKEv2 servers use the INTERNAL_IP4_SUBNET and INTERNAL_IP6_SUBNET protocol message attributes to communicate split tunnel routes to IKEv2 clients. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](nevpnprotocolikev2/deadpeerdetectionrate.md)
+### Accessing other IKEv2 properties
+- [var deadPeerDetectionRate: NEVPNIKEv2DeadPeerDetectionRate](./deadpeerdetectionrate.md)
   The frequency at which the IKEv2 client will run the dead peer detection algorithm.
-- [enum NEVPNIKEv2DeadPeerDetectionRate](nevpnikev2deadpeerdetectionrate.md)
+- [enum NEVPNIKEv2DeadPeerDetectionRate](../nevpnikev2deadpeerdetectionrate.md)
   An enumeration of values for the frequency at which the IKEv2 client runs the dead peer detection algorithm.
-- [var disableMOBIKE: Bool](nevpnprotocolikev2/disablemobike.md)
+- [var disableMOBIKE: Bool](./disablemobike.md)
   A Boolean indicating whether or not MOBIKE should be disabled for the IKEv2 sessions.
-- [var disableRedirect: Bool](nevpnprotocolikev2/disableredirect.md)
+- [var disableRedirect: Bool](./disableredirect.md)
   A Boolean indicating whether or not IKEv2 server redirects are disabled.
-- [var enablePFS: Bool](nevpnprotocolikev2/enablepfs.md)
+- [var enablePFS: Bool](./enablepfs.md)
   A Boolean indicating whether or not Perfect Forward Secrecy is enabled.
-- [var enableRevocationCheck: Bool](nevpnprotocolikev2/enablerevocationcheck.md)
+- [var enableRevocationCheck: Bool](./enablerevocationcheck.md)
   Enable revocation checking of the IKEv2 server certificate.
-- [var strictRevocationCheck: Bool](nevpnprotocolikev2/strictrevocationcheck.md)
+- [var strictRevocationCheck: Bool](./strictrevocationcheck.md)
   Require a “not revoked” result when checking if the certificate identifying the server is revoked.
-- [var mtu: Int](nevpnprotocolikev2/mtu.md)
+- [var mtu: Int](./mtu.md)
   The Maximum Transmission Unit (MTU) size in bytes to assign to the tunnel interface.
 
 

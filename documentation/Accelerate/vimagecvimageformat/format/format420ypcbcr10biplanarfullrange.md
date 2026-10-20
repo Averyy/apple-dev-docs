@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format420YpCbCr10BiPlanarFullRange
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A full-range, two-plane YpCbCr 4:2:0 pixel format with 10 bits per channel.
 
@@ -11,7 +12,7 @@ A full-range, two-plane YpCbCr 4:2:0 pixel format with 10 bits per channel.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,15 +27,16 @@ This format defines luminance data in the range `0...1023`, and stores 10 bits i
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format420YpCbCr8Planar](vimagecvimageformat/format/format420ypcbcr8planar.md)
+### 4:2:0 YpCbCr format constants
+- [vImageCVImageFormat.Format.format420YpCbCr8Planar](./format420ypcbcr8planar.md)
   A planar YpCbCr 4:2:0 pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format420YpCbCr8BiPlanarFullRange](vimagecvimageformat/format/format420ypcbcr8biplanarfullrange.md)
+- [vImageCVImageFormat.Format.format420YpCbCr8BiPlanarFullRange](./format420ypcbcr8biplanarfullrange.md)
   A full-range, two-plane YpCbCr 4:2:0 pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format420YpCbCr8BiPlanarVideoRange](vimagecvimageformat/format/format420ypcbcr8biplanarvideorange.md)
+- [vImageCVImageFormat.Format.format420YpCbCr8BiPlanarVideoRange](./format420ypcbcr8biplanarvideorange.md)
   A video-range, two-plane YpCbCr 4:2:0 pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format420YpCbCr8PlanarFullRange](vimagecvimageformat/format/format420ypcbcr8planarfullrange.md)
+- [vImageCVImageFormat.Format.format420YpCbCr8PlanarFullRange](./format420ypcbcr8planarfullrange.md)
   A full-range, planar YpCbCr 4:2:0 pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format420YpCbCr10BiPlanarVideoRange](vimagecvimageformat/format/format420ypcbcr10biplanarvideorange.md)
+- [vImageCVImageFormat.Format.format420YpCbCr10BiPlanarVideoRange](./format420ypcbcr10biplanarvideorange.md)
   A video-range, two-plane YpCbCr 4:2:0 pixel format with 10 bits per channel.
 
 

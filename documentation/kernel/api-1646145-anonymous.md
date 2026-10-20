@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kATAMultipleLogicalSectorsBit](1646145-anonymous/katamultiplelogicalsectorsbit.md)
-- [kATAPhysicalLogicalEnabledBit0](1646145-anonymous/kataphysicallogicalenabledbit0.md)
-- [kATAPhysicalLogicalEnabledBit1](1646145-anonymous/kataphysicallogicalenabledbit1.md)
-- [kATAValidLogicalSectorSizeBit](1646145-anonymous/katavalidlogicalsectorsizebit.md)
+- [kATAMultipleLogicalSectorsBit](./api-1646145-anonymous/katamultiplelogicalsectorsbit.md)
+- [kATAPhysicalLogicalEnabledBit0](./api-1646145-anonymous/kataphysicallogicalenabledbit0.md)
+- [kATAPhysicalLogicalEnabledBit1](./api-1646145-anonymous/kataphysicallogicalenabledbit1.md)
+- [kATAValidLogicalSectorSizeBit](./api-1646145-anonymous/katavalidlogicalsectorsizebit.md)
 
 
 ---

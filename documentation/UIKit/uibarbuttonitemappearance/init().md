@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object with default values that are appropriate for a plain button.
 
@@ -18,15 +19,20 @@ Creates an appearance object with default values that are appropriate for a plai
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new bar button item appearance object containing the default appearances for a plain button.
 
 ## See Also
 
-- [init(style: UIBarButtonItem.Style)](uibarbuttonitemappearance/init(style:).md)
+### Creating a bar button item appearance object
+- [init(style: UIBarButtonItem.Style)](./init%28style%29.md)
   Creates an appearance with default values that are appropriate for the specified button style.
-- [init(coder: NSCoder)](uibarbuttonitemappearance/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates an appearance object from data in an unarchiver.
 
 

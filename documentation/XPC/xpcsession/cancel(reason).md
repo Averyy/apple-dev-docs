@@ -1,7 +1,8 @@
 # cancel(reason:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a session, discarding any unsent messages.
 
@@ -11,7 +12,7 @@ Cancels a session, discarding any unsent messages.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func cancel(reason: String)
 
 #### Discussion
 
-When you cancel a session, it discards any unsent messages and invalidates its connection. If there are messages awaiting replies, the session calls the reply handlers with an appropriate [`XPCRichError`](xpcricherror.md).
+When you cancel a session, it discards any unsent messages and invalidates its connection. If there are messages awaiting replies, the session calls the reply handlers with an appropriate [`XPCRichError`](../xpcricherror.md).
 
 ## Parameters
 
@@ -30,15 +31,16 @@ When you cancel a session, it discards any unsent messages and invalidates its c
 
 ## See Also
 
-- [func activate() throws](xpcsession/activate.md)
+### Managing the life cycle
+- [func activate() throws](./activate%28%29.md)
   Activates a session so you can send messages.
-- [func setIncomingMessageHandler<Message>((Message) -> (any Encodable)?)](xpcsession/setincomingmessagehandler(_:)-2ukdh.md)
+- [func setIncomingMessageHandler<Message>((Message) -> (any Encodable)?)](./setincomingmessagehandler%28_%29-2ukdh.md)
   Sets a closure to receive incoming decodable messages for a session.
-- [func setIncomingMessageHandler((XPCReceivedMessage) -> (any Encodable)?)](xpcsession/setincomingmessagehandler(_:)-5lu26.md)
+- [func setIncomingMessageHandler((XPCReceivedMessage) -> (any Encodable)?)](./setincomingmessagehandler%28_%29-5lu26.md)
   Sets a closure to receive incoming received messages for a session.
-- [func setIncomingMessageHandler((XPCDictionary) -> XPCDictionary?)](xpcsession/setincomingmessagehandler(_:)-75ou9.md)
+- [func setIncomingMessageHandler((XPCDictionary) -> XPCDictionary?)](./setincomingmessagehandler%28_%29-75ou9.md)
   Sets a closure to receive incoming dictionary messages for a session.
-- [func setCancellationHandler((XPCRichError) -> Void)](xpcsession/setcancellationhandler(_:).md)
+- [func setCancellationHandler((XPCRichError) -> Void)](./setcancellationhandler%28_%29.md)
   Sets a closure the session calls when it’s canceled.
 
 

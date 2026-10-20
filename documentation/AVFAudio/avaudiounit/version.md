@@ -1,7 +1,8 @@
 # version
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version number of the audio unit.
 
@@ -19,13 +20,18 @@ The version number of the audio unit.
 var version: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger version;
+```
+
 ## See Also
 
-- [var audioComponentDescription: AudioComponentDescription](avaudiounit/audiocomponentdescription.md)
+### Getting Audio Unit values
+- [var audioComponentDescription: AudioComponentDescription](./audiocomponentdescription.md)
   The audio component description that represents the underlying Core Audio audio unit.
-- [var manufacturerName: String](avaudiounit/manufacturername.md)
+- [var manufacturerName: String](./manufacturername.md)
   The name of the manufacturer of the audio unit.
-- [var name: String](avaudiounit/name.md)
+- [var name: String](./name.md)
   The name of the audio unit.
 
 

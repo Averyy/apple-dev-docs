@@ -1,7 +1,8 @@
 # SCStreamError.Code.failedNoMatchingApplicationContext
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error message that indicates there isn’t a matching app context for streaming.
 
@@ -19,17 +20,22 @@ An error message that indicates there isn’t a matching app context for streami
 case failedNoMatchingApplicationContext
 ```
 
+```c
+SCStreamErrorFailedNoMatchingApplicationContext
+```
+
 ## See Also
 
-- [SCStreamError.Code.noCaptureSource](scstreamerror/code/nocapturesource.md)
+### Shareable content
+- [SCStreamError.Code.noCaptureSource](./nocapturesource.md)
   An error message that indicates a stream doesn’t have a source to capture.
-- [SCStreamError.Code.noDisplayList](scstreamerror/code/nodisplaylist.md)
+- [SCStreamError.Code.noDisplayList](./nodisplaylist.md)
   An error message that indicates a stream doesn’t have displays available.
-- [SCStreamError.Code.noWindowList](scstreamerror/code/nowindowlist.md)
+- [SCStreamError.Code.noWindowList](./nowindowlist.md)
   An error message that indicates a stream doesn’t have windows available.
-- [SCStreamError.Code.failedApplicationConnectionInvalid](scstreamerror/code/failedapplicationconnectioninvalid.md)
+- [SCStreamError.Code.failedApplicationConnectionInvalid](./failedapplicationconnectioninvalid.md)
   An error message that indicates the stream lost its connection to an app.
-- [SCStreamError.Code.failedApplicationConnectionInterrupted](scstreamerror/code/failedapplicationconnectioninterrupted.md)
+- [SCStreamError.Code.failedApplicationConnectionInterrupted](./failedapplicationconnectioninterrupted.md)
   An error message that indicates there was an interruption in a connection to an app.
 
 

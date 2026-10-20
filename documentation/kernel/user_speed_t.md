@@ -1,14 +1,15 @@
 # user_speed_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef __uint64_t user_speed_t;
 ```
 

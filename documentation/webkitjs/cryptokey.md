@@ -1,7 +1,8 @@
 # CryptoKey
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface CryptoKey
 ```
 
 ## Topics
 
 ### Instance Properties
-- [algorithm](cryptokey/1631010-algorithm.md)
-- [extractable](cryptokey/1632097-extractable.md)
-- [type](cryptokey/1633518-type.md)
-- [usages](cryptokey/1630980-usages.md)
+- [algorithm](./cryptokey/api-1631010-algorithm.md)
+- [extractable](./cryptokey/api-1632097-extractable.md)
+- [type](./cryptokey/api-1633518-type.md)
+- [usages](./cryptokey/api-1630980-usages.md)
 
 
 ---

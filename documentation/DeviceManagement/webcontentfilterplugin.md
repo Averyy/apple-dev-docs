@@ -1,7 +1,8 @@
 # WebContentFilterPlugin
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a WebContent Filter that uses a plugin.
 
@@ -14,7 +15,7 @@ The declaration to configure a WebContent Filter that uses a plugin.
 
 ## Declaration
 
-```swift
+```
 object WebContentFilterPlugin
 ```
 
@@ -22,7 +23,7 @@ object WebContentFilterPlugin
 
 Specify `com.apple.configuration.webcontent-filter.plugin` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.webcontent-filter.plugin` as the declaration ty
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration sets up a web content filter using a Network Extension plugin bundle.
 
@@ -55,17 +56,19 @@ This configuration sets up a web content filter using a Network Extension plugin
 ## Topics
 
 ### Objects
-- [object WebContentFilterPluginAuthenticationObject](webcontentfilterpluginauthenticationobject.md)
+- [object WebContentFilterPluginAuthenticationObject](./webcontentfilterpluginauthenticationobject.md)
   Settings that control authentication.
-- [object WebContentFilterPluginFilterObject](webcontentfilterpluginfilterobject.md)
+- [object WebContentFilterPluginFilterObject](./webcontentfilterpluginfilterobject.md)
   Settings that control authentication.
-- [object WebContentFilterPluginVendorConfigObject](webcontentfilterpluginvendorconfigobject.md)
+- [object WebContentFilterPluginVendorConfigObject](./webcontentfilterpluginvendorconfigobject.md)
   The custom dictionary that the filtering service plug-in needs.
 
 ## Properties
 
 - `Authentication` (WebContentFilterPluginAuthenticationObject): Settings that control authentication.
-- `ContentFilterUUID` (string): A globally unique identifier for this content filter configuration. The content filter processes network traffic for managed apps with the same `ContentFilterUUID` in their app attributes. This key must be present for unsupervised devices and user enrollment. Available: iOS 27+ | iPadOS 27+ | visionOS 27+
+- `ContentFilterUUID` (string): A globally unique identifier for this content filter configuration. The content filter processes network traffic for managed apps with the same `ContentFilterUUID` in their app attributes. This key must be present for unsupervised devices and user enrollment.
+
+  Available: iOS 27+ | iPadOS 27+ | visionOS 27+
 - `Filter` (WebContentFilterPluginFilterObject): Settings that control authentication.
 - `Organization` (string): The organization string to pass to the third-party plug-in.
 - `PluginBundleID` (string) *(required)*: The bundle ID of the plug-in that provides filtering service. Consult your filtering solution vendor to determine what to specify for this value.
@@ -75,35 +78,36 @@ This configuration sets up a web content filter using a Network Extension plugin
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

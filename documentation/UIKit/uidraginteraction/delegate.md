@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that configures and controls a drag interaction.
 
@@ -17,11 +18,16 @@ An object that configures and controls a drag interaction.
 weak var delegate: (any UIDragInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIDragInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [var allowsSimultaneousRecognitionDuringLift: Bool](uidraginteraction/allowssimultaneousrecognitionduringlift.md)
+### Managing drag interactions
+- [var allowsSimultaneousRecognitionDuringLift: Bool](./allowssimultaneousrecognitionduringlift.md)
   A Boolean value that determines whether the interaction allows recognition of other gestures during the lift activity.
-- [protocol UIDragInteractionDelegate](uidraginteractiondelegate.md)
+- [protocol UIDragInteractionDelegate](../uidraginteractiondelegate.md)
   The interface for configuring and controlling a drag interaction.
 
 

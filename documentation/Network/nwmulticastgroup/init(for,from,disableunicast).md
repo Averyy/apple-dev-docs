@@ -1,7 +1,8 @@
 # init(for:from:disableUnicast:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a multicast group with a set of multicast addresses.
 

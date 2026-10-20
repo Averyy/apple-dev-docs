@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relevant attributes from your content that you want to search.
 

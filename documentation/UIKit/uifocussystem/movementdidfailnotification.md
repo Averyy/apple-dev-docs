@@ -1,7 +1,8 @@
 # movementDidFailNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The focus failed to move to another item.
 
@@ -19,17 +20,22 @@ nonisolated
 class let movementDidFailNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIFocusMovementDidFailNotification;
+```
+
 ## Mentions
 
-- [About focus interactions for Apple TV](about-focus-interactions-for-apple-tv.md)
+- [About focus interactions for Apple TV](../about-focus-interactions-for-apple-tv.md)
 
 ## See Also
 
-- [class let animationCoordinatorUserInfoKey: String](uifocussystem/animationcoordinatoruserinfokey.md)
+### Responding to focus-related keys and notifications
+- [class let animationCoordinatorUserInfoKey: String](./animationcoordinatoruserinfokey.md)
   Updates the animation coordinator.
-- [class let didUpdateNotification: NSNotification.Name](uifocussystem/didupdatenotification.md)
+- [class let didUpdateNotification: NSNotification.Name](./didupdatenotification.md)
   The focus for the UI has been updated.
-- [class let focusUpdateContextUserInfoKey: String](uifocussystem/focusupdatecontextuserinfokey.md)
+- [class let focusUpdateContextUserInfoKey: String](./focusupdatecontextuserinfokey.md)
   Updates the context key.
 
 

@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Adagrad
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Adagrad.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Adagrad
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Adagrad
-
 **class Adagrad(*learning_rate: float | Callable[[array], array]*, *eps: float = 1e-08*)**
 : The Adagrad optimizer [1].
 Our Adagrad implementation follows the original paper. In detail,
@@ -57,5 +30,3 @@ Performs the Adagrad parameter update and stores \(v\) in the optimizer state.
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

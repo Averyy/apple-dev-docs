@@ -1,13 +1,14 @@
 # group::elementIndexInGroup
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the current element within its group.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The zero-based index of the current element within its group
 
 Use this function to identify which particle within the group is being processed, allowing you to create unique behaviors for different particles in the same group.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/group__elementIndexInGroup.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/group__elementIndexInGroup.svg)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(mass:inertia:centerOfMass:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mass properties instance with the given settings.
 
@@ -11,7 +12,7 @@ Creates a mass properties instance with the given settings.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,22 @@ init(mass: Float, inertia: SIMD3<Float> = SIMD3<Float>(x: 0.1, y: 0.1, z: 0.1), 
 
 ## Parameters
 
-- `mass`: The mass in kilograms. If you use a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
+- `mass`: The mass in kilograms. If you use a mass of `0` or infinity, the simulation treats the object as [`PhysicsBodyMode.kinematic`](../physicsbodymode/kinematic.md). That is, the object doesn’t respond to forces.
 - `inertia`: The inertia in kilograms per square meter. The vector contains the diagonal elements of the diagonalized inertia matrix.
-- `centerOfMass`: The center of mass and the orientation of the principal axes, defined in the local space of the rigid body. The `position` defines the center of mass with a default value of `(0, 0, 0)`, which means that the local origin of the model is the center of mass. The `orientation` defines the principal axes, such the inertia matrix is a diagonal.
+- `centerOfMass`: The center of mass and the orientation of the principal axes, defined in the local space of the rigid body.
+
+  The `position` defines the center of mass with a default value of `(0, 0, 0)`, which means that the local origin of the model is the center of mass.
+
+  The `orientation` defines the principal axes, such the inertia matrix is a diagonal.
 
 ## See Also
 
-- [init()](physicsmassproperties/init.md)
+### Creating custom mass properties
+- [init()](./init%28%29.md)
   Creates a mass properties instance with default settings.
-- [init(shape: ShapeResource, density: Float)](physicsmassproperties/init(shape:density:).md)
+- [init(shape: ShapeResource, density: Float)](./init%28shape,density%29.md)
   Creates the mass properties for a solid shape with the specified density.
-- [init(shape: ShapeResource, mass: Float)](physicsmassproperties/init(shape:mass:).md)
+- [init(shape: ShapeResource, mass: Float)](./init%28shape,mass%29.md)
   Creates the mass properties for a solid shape with the specified mass.
 
 

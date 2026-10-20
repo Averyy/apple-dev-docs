@@ -1,7 +1,8 @@
 # layerType
 
 **Framework**: DiskImageKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer type of the disk image.
 
@@ -16,7 +17,7 @@ var layerType: DiskImage.LayerType? { get }
 
 #### Discussion
 
-Returns [`cache`](diskimage/layertype-swift.struct/cache.md) for cache layers and [`overlay`](diskimage/layertype-swift.struct/overlay.md) for overlay layers that are part of a stacked disk image. Returns `nil` for standalone images, for the base layer of a stack and for the stacked image itself.
+Returns [`cache`](./layertype-swift.struct/cache.md) for cache layers and [`overlay`](./layertype-swift.struct/overlay.md) for overlay layers that are part of a stacked disk image. Returns `nil` for standalone images, for the base layer of a stack and for the stacked image itself.
 
 
 ---

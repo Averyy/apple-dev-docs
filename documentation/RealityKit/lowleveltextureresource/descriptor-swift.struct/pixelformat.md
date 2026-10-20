@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and bit layout of all pixels in the texture.
 

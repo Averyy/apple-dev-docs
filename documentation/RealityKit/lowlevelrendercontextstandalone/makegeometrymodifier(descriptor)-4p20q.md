@@ -1,7 +1,8 @@
 # makeGeometryModifier(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously creates a geometry modifier from a user-authored Metal function described by the given descriptor.
 
@@ -18,13 +19,19 @@ nonisolated
 (nonsending) final func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) async throws -> sending LowLevelMaterialResource.GeometryModifier
 ```
 
+**Other overloads**:
+
+```swift
+final func makeGeometryModifier(descriptor: LowLevelMaterialResource.GeometryModifier.Descriptor) throws -> sending LowLevelMaterialResource.GeometryModifier
+```
+
 #### Return Value
 
-A compiled [`LowLevelMaterialResource.GeometryModifier`](lowlevelmaterialresource/geometrymodifier.md).
+A compiled [`LowLevelMaterialResource.GeometryModifier`](../lowlevelmaterialresource/geometrymodifier.md).
 
 #### Discussion
 
-> **Note**: An error if the specified Metal function cannot be found or compiled.
+> **Throws**: An error if the specified Metal function cannot be found or compiled.
 
 ## Parameters
 

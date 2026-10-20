@@ -1,7 +1,8 @@
 # ShutDownDeviceCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remotely and immediately shut down a device.
 
@@ -13,18 +14,18 @@ The command to remotely and immediately shut down a device.
 
 ## Declaration
 
-```swift
+```
 object ShutDownDeviceCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ShutDownDeviceCommand.Command](shutdowndevicecommand/command-data.dictionary.md)
+- [object ShutDownDeviceCommand.Command](./shutdowndevicecommand/command-data.dictionary.md)
   The command to remotely and immediately shut down a device.
 
 ## Properties
@@ -34,7 +35,8 @@ object ShutDownDeviceCommand
 
 ## See Also
 
-- [object ShutDownDeviceResponse](shutdowndeviceresponse.md)
+### Commands and responses
+- [object ShutDownDeviceResponse](./shutdowndeviceresponse.md)
   A response from the device after it processes the command to remotely and immediately shut down a device.
 
 

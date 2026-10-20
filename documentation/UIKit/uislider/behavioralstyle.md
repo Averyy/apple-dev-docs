@@ -1,7 +1,8 @@
 # behavioralStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style that determines how the slider behaves.
 
@@ -17,17 +18,22 @@ The style that determines how the slider behaves.
 var behavioralStyle: UIBehavioralStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIBehavioralStyle behavioralStyle;
+```
+
 #### Discussion
 
-Use this property to determine the actual behavior style when the [`preferredBehavioralStyle`](uibutton/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](uibehavioralstyle/automatic.md).
+Use this property to determine the actual behavior style when the [`preferredBehavioralStyle`](../uibutton/preferredbehavioralstyle.md) is [`UIBehavioralStyle.automatic`](../uibehavioralstyle/automatic.md).
 
 ## See Also
 
-- [var isContinuous: Bool](uislider/iscontinuous.md)
+### Modifying the slider’s behavior
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether changes in the slider’s value generate continuous update events.
-- [var preferredBehavioralStyle: UIBehavioralStyle](uislider/preferredbehavioralstyle.md)
+- [var preferredBehavioralStyle: UIBehavioralStyle](./preferredbehavioralstyle.md)
   The preferred behavioral style.
-- [enum UIBehavioralStyle](uibehavioralstyle.md)
+- [enum UIBehavioralStyle](../uibehavioralstyle.md)
   Constants that indicate how a control behaves in apps built with Mac Catalyst.
 
 

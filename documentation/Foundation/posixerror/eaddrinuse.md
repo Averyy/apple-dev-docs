@@ -1,7 +1,8 @@
 # EADDRINUSE
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Address already in use.
 

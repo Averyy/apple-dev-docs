@@ -1,7 +1,8 @@
 # kIOUSBHostConnectionSpeedFull
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The full speed value.
 
@@ -10,7 +11,7 @@ The full speed value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostConnectionSpeedFull = 1
 ```
 

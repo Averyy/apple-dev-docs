@@ -1,16 +1,17 @@
 # UITextField.ViewMode.always
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The overlay view is always displayed if the text field contains text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ The overlay view is always displayed if the text field contains text.
 case always
 ```
 
+```c
+UITextFieldViewModeAlways
+```
+
 ## See Also
 
-- [UITextField.ViewMode.never](uitextfield/viewmode/never.md)
+### Constants
+- [UITextField.ViewMode.never](./never.md)
   The overlay view never appears.
-- [UITextField.ViewMode.whileEditing](uitextfield/viewmode/whileediting.md)
+- [UITextField.ViewMode.whileEditing](./whileediting.md)
   The overlay view is displayed only while text is being edited in the text field.
-- [UITextField.ViewMode.unlessEditing](uitextfield/viewmode/unlessediting.md)
+- [UITextField.ViewMode.unlessEditing](./unlessediting.md)
   The overlay view is displayed only when text is not being edited.
 
 

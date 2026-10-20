@@ -1,7 +1,8 @@
 # CTCellularDataRestrictedState.restrictedStateUnknown
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state whose access to cellular data is unknown.
 
@@ -17,11 +18,16 @@ A state whose access to cellular data is unknown.
 case restrictedStateUnknown
 ```
 
+```c
+kCTCellularDataRestrictedStateUnknown
+```
+
 ## See Also
 
-- [CTCellularDataRestrictedState.notRestricted](ctcellulardatarestrictedstate/notrestricted.md)
+### Constants
+- [CTCellularDataRestrictedState.notRestricted](./notrestricted.md)
   A state that allows access to cellular data.
-- [CTCellularDataRestrictedState.restricted](ctcellulardatarestrictedstate/restricted.md)
+- [CTCellularDataRestrictedState.restricted](./restricted.md)
   A state that denies access to cellular data.
 
 

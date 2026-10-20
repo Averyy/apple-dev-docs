@@ -1,7 +1,8 @@
 # zoneGroupsByType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains a dictionary that maps quantity types to their zone groups for this workout.
 
@@ -21,15 +22,16 @@ var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]? { get }
 
 ## Mentions
 
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Accessing workout zone data](../accessing-workout-zone-data.md)
 
 #### Discussion
 
-This property provides zone data for the workout’s primary activity, covering the full workout duration. Access zone groups for individual activities using [`zoneGroupsByType`](hkworkoutactivity/zonegroupsbytype.md).
+This property provides zone data for the workout’s primary activity, covering the full workout duration. Access zone groups for individual activities using [`zoneGroupsByType`](../hkworkoutactivity/zonegroupsbytype.md).
 
 ## See Also
 
-- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkout/zonegroup(for:).md)
+### Accessing zone data
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](./zonegroup%28for%29.md)
   Returns the current zone group for the specified quantity type.
 
 

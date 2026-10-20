@@ -1,7 +1,8 @@
 # NSAppleMusicUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to their media library.
 
@@ -11,9 +12,10 @@ A message that tells people why the app is requesting access to their media libr
 - macOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSAppleMusicUsageDescription` (Privacy - Media Library Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -23,7 +25,8 @@ Set the value of this key to a user-readable description of how your app intends
 
 ## See Also
 
-- [Requesting Access to Apple Music Library](../storekit/requesting-access-to-apple-music-library.md)
+### MediaPlayer
+- [Requesting Access to Apple Music Library](../../StoreKit/requesting-access-to-apple-music-library.md)
   Prompt the customer to authorize access to Apple Music library.
 
 

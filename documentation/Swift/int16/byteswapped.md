@@ -1,7 +1,8 @@
 # byteSwapped
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of this integer with the byte order swapped.
 

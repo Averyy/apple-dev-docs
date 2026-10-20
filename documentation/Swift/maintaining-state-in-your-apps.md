@@ -1,6 +1,7 @@
 # Maintaining State in Your Apps
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use enumerations to capture and track the state of your app.
 
@@ -30,9 +31,9 @@ class App {
 
 In this model, each state is represented by a case with a matching name. The `loggedIn` and `sessionExpired` cases include the user as an associated value, while the `unregistered` case doesn’t include an associated value. When you update your app’s state, there’s a single variable, `state`, to modify, no matter what the transition.
 
-![A diagram showing the states of the app: unregistered, logged in, and session expired.](/images/com.apple.Swift/maintaining-state-in-your-apps-1@2x.png)
+![A diagram showing the states of the app: unregistered, logged in, and session expired.](https://developer.apple.com/tutorials/images/com.apple.Swift/maintaining-state-in-your-apps-1@2x.png)
 
-##### Dont Spread State Across Multiple Variables
+##### Don’t Spread State Across Multiple Variables
 
 It’s also possible to model an app’s state by using individual variables in combination to hold the state and the required data, which is not recommended.
 
@@ -46,7 +47,8 @@ Using this approach is prone to mistakes for a few reasons, in ways that can lea
 
 ## See Also
 
-- [Preventing Timing Problems When Using Closures](preventing-timing-problems-when-using-closures.md)
+### Data Flow and Control Flow
+- [Preventing Timing Problems When Using Closures](./preventing-timing-problems-when-using-closures.md)
   Understand how different API calls to your closures can affect your app.
 
 

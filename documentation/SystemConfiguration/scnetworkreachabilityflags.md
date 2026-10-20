@@ -1,17 +1,18 @@
 # SCNetworkReachabilityFlags
 
 **Framework**: System Configuration  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Flags that indicate the reachability of a network node name or address, including whether a connection is required, and whether some user intervention might be required when establishing a connection.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,44 +20,48 @@ Flags that indicate the reachability of a network node name or address, includin
 struct SCNetworkReachabilityFlags
 ```
 
+```c
+enum SCNetworkReachabilityFlags : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var transientConnection: SCNetworkReachabilityFlags](scnetworkreachabilityflags/transientconnection.md)
+- [static var transientConnection: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/transientconnection.md)
   The specified node name or address can be reached via a transient connection, such as PPP.
-- [static var reachable: SCNetworkReachabilityFlags](scnetworkreachabilityflags/reachable.md)
+- [static var reachable: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/reachable.md)
   The specified node name or address can be reached using the current network configuration.
-- [static var connectionRequired: SCNetworkReachabilityFlags](scnetworkreachabilityflags/connectionrequired.md)
+- [static var connectionRequired: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/connectionrequired.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established. If this flag is set, the `kSCNetworkReachabilityFlagsConnectionOnTraffic` flag, `kSCNetworkReachabilityFlagsConnectionOnDemand` flag, or `kSCNetworkReachabilityFlagsIsWWAN` flag is also typically set to indicate the type of connection required. If the user must manually make the connection, the `kSCNetworkReachabilityFlagsInterventionRequired` flag is also set.
-- [static var connectionOnTraffic: SCNetworkReachabilityFlags](scnetworkreachabilityflags/connectionontraffic.md)
+- [static var connectionOnTraffic: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/connectionontraffic.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established. Any traffic directed to the specified name or address will initiate the connection.
-- [static var interventionRequired: SCNetworkReachabilityFlags](scnetworkreachabilityflags/interventionrequired.md)
+- [static var interventionRequired: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/interventionrequired.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established.
-- [static var connectionOnDemand: SCNetworkReachabilityFlags](scnetworkreachabilityflags/connectionondemand.md)
+- [static var connectionOnDemand: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/connectionondemand.md)
   The specified node name or address can be reached using the current network configuration, but a connection must first be established.
-- [static var isLocalAddress: SCNetworkReachabilityFlags](scnetworkreachabilityflags/islocaladdress.md)
+- [static var isLocalAddress: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/islocaladdress.md)
   The specified node name or address is one that is associated with a network interface on the current system.
-- [static var isDirect: SCNetworkReachabilityFlags](scnetworkreachabilityflags/isdirect.md)
+- [static var isDirect: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/isdirect.md)
   Network traffic to the specified node name or address will not go through a gateway, but is routed directly to one of the interfaces in the system.
-- [static var isWWAN: SCNetworkReachabilityFlags](scnetworkreachabilityflags/iswwan.md)
+- [static var isWWAN: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/iswwan.md)
   The specified node name or address can be reached via a cellular connection, such as EDGE or GPRS.
-- [static var connectionAutomatic: SCNetworkReachabilityFlags](scnetworkreachabilityflags/connectionautomatic.md)
-  The specified node name or address can be reached using the current network configuration, but a connection must first be established. Any traffic directed to the specified name or address will initiate the connection. This flag is a synonym for [`connectionOnTraffic`](scnetworkreachabilityflags/connectionontraffic.md).
+- [static var connectionAutomatic: SCNetworkReachabilityFlags](./scnetworkreachabilityflags/connectionautomatic.md)
+  The specified node name or address can be reached using the current network configuration, but a connection must first be established. Any traffic directed to the specified name or address will initiate the connection. This flag is a synonym for [`connectionOnTraffic`](./scnetworkreachabilityflags/connectionontraffic.md).
 ### Initializers
-- [init(rawValue: UInt32)](scnetworkreachabilityflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./scnetworkreachabilityflags/init%28rawvalue%29.md)
   Creates a network reachability flags structure with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

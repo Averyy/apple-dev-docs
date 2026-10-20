@@ -1,7 +1,8 @@
 # expansionText
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expansion of an abbreviation or acronym.
 

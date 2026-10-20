@@ -1,7 +1,8 @@
 # becomeCurrent(withPendingUnitCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
 
@@ -20,21 +21,28 @@ Sets the progress object as the current object of the current thread, and assign
 func becomeCurrent(withPendingUnitCount unitCount: Int64)
 ```
 
+```objc
+- (void) becomeCurrentWithPendingUnitCount:(int64_t) unitCount;
+```
+
 #### Discussion
 
-Use this method to build a tree of progress objects, as [`Reporting Progress for Multiple Operations`](progress#Reporting-Progress-for-Multiple-Operations.md) describes.
+Use this method to build a tree of progress objects, as [Reporting Progress for Multiple Operations](../progress.md#Reporting-Progress-for-Multiple-Operations) describes.
 
 ## Parameters
 
-- `unitCount`: The number of units of work for the next progress object that initializes when you invoke [`init(parent:userInfo:)`](progress/init(parent:userinfo:).md) in the current thread with this progress object as the containing progress object. The number represents the portion of work to perform in relation to the total number of units of work, which is the value of the progress object’s [`totalUnitCount`](progress/totalunitcount.md) property. The units of work for this parameter must be the same units of work in the progress object’s [`totalUnitCount`](progress/totalunitcount.md) property.
+- `unitCount`: The number of units of work for the next progress object that initializes when you invoke [`init(parent:userInfo:)`](./init%28parent,userinfo%29.md) in the current thread with this progress object as the containing progress object.
+
+  The number represents the portion of work to perform in relation to the total number of units of work, which is the value of the progress object’s [`totalUnitCount`](./totalunitcount.md) property. The units of work for this parameter must be the same units of work in the progress object’s [`totalUnitCount`](./totalunitcount.md) property.
 
 ## See Also
 
-- [class func current() -> Progress?](progress/current.md)
+### Accessing the Current Progress Object
+- [class func current() -> Progress?](./current%28%29.md)
   Returns the progress instance, if any.
-- [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](progress/performascurrent(withpendingunitcount:using:).md)
+- [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](./performascurrent%28withpendingunitcount,using%29.md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
-- [func resignCurrent()](progress/resigncurrent.md)
+- [func resignCurrent()](./resigncurrent%28%29.md)
   Restores the previous progress object to become the current progress object on the thread.
 
 

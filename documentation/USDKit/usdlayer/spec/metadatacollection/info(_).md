@@ -1,7 +1,8 @@
 # info(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of `key`, or `nil` if the key is unauthored.
 

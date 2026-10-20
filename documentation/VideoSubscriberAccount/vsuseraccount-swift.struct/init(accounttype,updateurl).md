@@ -1,7 +1,8 @@
 # init(accountType:updateURL:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user account object with a URL for account update requests.
 
@@ -10,7 +11,7 @@ Creates a user account object with a URL for account update requests.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(accountType: VSUserAccount.AccountType = .free, updateURL: URL?)
 
 ## See Also
 
-- [VSUserAccount.AccountType](vsuseraccount-swift.struct/accounttype-swift.enum.md)
+### Creating user accounts
+- [VSUserAccount.AccountType](./accounttype-swift.enum.md)
   Constants that represent whether a user has access to paid content.
 
 

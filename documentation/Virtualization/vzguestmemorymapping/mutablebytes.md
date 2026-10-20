@@ -1,7 +1,8 @@
 # mutableBytes
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the data this guest memory mapping object contains.
 
@@ -12,6 +13,10 @@ A pointer to the data this guest memory mapping object contains.
 
 ```swift
 var mutableBytes: UnsafeMutableRawPointer { get }
+```
+
+```objc
+@property (readonly) void * mutableBytes;
 ```
 
 

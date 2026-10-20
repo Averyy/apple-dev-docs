@@ -1,7 +1,8 @@
 # lowLatency
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A translation strategy that provides fast translations using traditional models.
 
@@ -19,13 +20,14 @@ static let lowLatency: TranslationSession.Strategy
 
 #### Discussion
 
-Use this strategy for scenarios that require low latency, such as translating audio in real time. This strategy requires downloading languages before use, but after they are downloaded they are available to all apps on the device. To download languages ahead of time, call [`prepareTranslation()`](translationsession/preparetranslation().md) before performing translations.
+Use this strategy for scenarios that require low latency, such as translating audio in real time. This strategy requires downloading languages before use, but after they are downloaded they are available to all apps on the device. To download languages ahead of time, call [`prepareTranslation()`](../preparetranslation%28%29.md) before performing translations.
 
-Compared to [`highFidelity`](translationsession/strategy/highfidelity.md), this strategy is faster and uses less power, though translations are not as fluent. This is the default strategy for devices without Apple Intelligence and apps built with SDKs before iOS 26.4 and macOS 26.4.
+Compared to [`highFidelity`](./highfidelity.md), this strategy is faster and uses less power, though translations are not as fluent. This is the default strategy for devices without Apple Intelligence and apps built with SDKs before iOS 26.4 and macOS 26.4.
 
 ## See Also
 
-- [static let highFidelity: TranslationSession.Strategy](translationsession/strategy/highfidelity.md)
+### Choosing a translation strategy
+- [static let highFidelity: TranslationSession.Strategy](./highfidelity.md)
   A translation strategy that provides more fluent translations using Apple Intelligence.
 
 

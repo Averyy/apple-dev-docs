@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the segmentation request.
 
@@ -19,9 +20,14 @@ The results of the segmentation request.
 var results: [VNPixelBufferObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNPixelBufferObservation *> * results;
+```
+
 ## See Also
 
-- [class VNPixelBufferObservation](vnpixelbufferobservation.md)
+### Accessing the Results
+- [class VNPixelBufferObservation](../vnpixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 

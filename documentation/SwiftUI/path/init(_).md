@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty path, then executes a closure to add its initial elements.
 
@@ -20,21 +21,40 @@ Creates an empty path, then executes a closure to add its initial elements.
 init(_ callback: (inout Path) -> ())
 ```
 
+**Other overloads**:
+
+```swift
+init(_ path: CGMutablePath)
+```
+
+```swift
+init(_ path: CGPath)
+```
+
+```swift
+init(_ rect: CGRect)
+```
+
+```swift
+init?(_ string: String)
+```
+
 ## Parameters
 
 - `callback`: The Swift function that will be called to initialize the new path.
 
 ## See Also
 
-- [init()](path/init.md)
+### Creating a path
+- [init()](./init%28%29.md)
   Creates an empty path.
-- [init(ellipseIn: CGRect)](path/init(ellipsein:).md)
+- [init(ellipseIn: CGRect)](./init%28ellipsein%29.md)
   Creates a path as an ellipse within the given rectangle.
-- [init(roundedRect: CGRect, cornerRadius: CGFloat, style: RoundedCornerStyle)](path/init(roundedrect:cornerradius:style:).md)
+- [init(roundedRect: CGRect, cornerRadius: CGFloat, style: RoundedCornerStyle)](./init%28roundedrect,cornerradius,style%29.md)
   Creates a path containing a rounded rectangle.
-- [init(roundedRect: CGRect, cornerSize: CGSize, style: RoundedCornerStyle)](path/init(roundedrect:cornersize:style:).md)
+- [init(roundedRect: CGRect, cornerSize: CGSize, style: RoundedCornerStyle)](./init%28roundedrect,cornersize,style%29.md)
   Creates a path containing a rounded rectangle.
-- [init(roundedRect: CGRect, cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle)](path/init(roundedrect:cornerradii:style:).md)
+- [init(roundedRect: CGRect, cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle)](./init%28roundedrect,cornerradii,style%29.md)
   Creates a path as the given rounded rectangle, which may have uneven corner radii.
 
 

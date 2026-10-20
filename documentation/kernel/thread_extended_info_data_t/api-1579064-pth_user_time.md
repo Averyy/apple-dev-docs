@@ -1,14 +1,15 @@
 # pth_user_time
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 uint64_t pth_user_time;
 ```
 

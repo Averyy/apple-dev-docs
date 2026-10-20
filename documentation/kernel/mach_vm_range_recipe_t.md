@@ -1,14 +1,15 @@
 # mach_vm_range_recipe_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef mach_vm_range_recipe_v1_t mach_vm_range_recipe_t;
 ```
 

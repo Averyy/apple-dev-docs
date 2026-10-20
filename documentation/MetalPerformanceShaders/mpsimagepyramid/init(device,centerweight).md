@@ -1,7 +1,8 @@
 # init(device:centerWeight:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a downwards 5-tap image pyramid with a central weight parameter and device.
 
@@ -19,9 +20,13 @@ Initialize a downwards 5-tap image pyramid with a central weight parameter and d
 convenience init(device: any MTLDevice, centerWeight: Float)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device centerWeight:(float) centerWeight;
+```
+
 #### Return Value
 
-A valid [`MPSImagePyramid`](mpsimagepyramid.md) object or `nil`, if failure.
+A valid [`MPSImagePyramid`](../mpsimagepyramid.md) object or `nil`, if failure.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ A valid [`MPSImagePyramid`](mpsimagepyramid.md) object or `nil`, if failure.
 
 ## See Also
 
-- [convenience init(device: any MTLDevice)](mpsimagepyramid/init(device:).md)
+### Methods
+- [convenience init(device: any MTLDevice)](./init%28device%29.md)
   Initializes a downwards 5-tap image pyramid with the default filter kernel and device.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights: UnsafePointer<Float>)](mpsimagepyramid/init(device:kernelwidth:kernelheight:weights:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, weights: UnsafePointer<Float>)](./init%28device,kernelwidth,kernelheight,weights%29.md)
   Initialize a downwards n-tap image pyramid with a custom filter kernel and device.
 
 

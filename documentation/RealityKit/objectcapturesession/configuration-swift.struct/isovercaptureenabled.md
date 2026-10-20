@@ -1,7 +1,8 @@
 # isOverCaptureEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables the session to continue capturing even after the number of captured images exceeds `maximumNumberOfInputImages`.  This setting is meant for use when the images are intended to be transferred to macOS for model reconstruction.
 

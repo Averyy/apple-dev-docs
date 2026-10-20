@@ -1,7 +1,8 @@
 # UIAccessibilityContainerType.semanticGroup
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A semantic group of data.
 
@@ -19,19 +20,24 @@ A semantic group of data.
 case semanticGroup
 ```
 
+```c
+UIAccessibilityContainerTypeSemanticGroup
+```
+
 #### Discussion
 
 Assistive technologies might query the accessibility properties set on the container, such as the `accessibilityLabel`, in order to output appropriate information about the semantic group to the user.
 
 ## See Also
 
-- [UIAccessibilityContainerType.none](uiaccessibilitycontainertype/none.md)
+### Constants
+- [UIAccessibilityContainerType.none](./none.md)
   No additional data.
-- [UIAccessibilityContainerType.dataTable](uiaccessibilitycontainertype/datatable.md)
+- [UIAccessibilityContainerType.dataTable](./datatable.md)
   A table that contains structured data.
-- [UIAccessibilityContainerType.list](uiaccessibilitycontainertype/list.md)
+- [UIAccessibilityContainerType.list](./list.md)
   A list of data.
-- [UIAccessibilityContainerType.landmark](uiaccessibilitycontainertype/landmark.md)
+- [UIAccessibilityContainerType.landmark](./landmark.md)
   Landmark data.
 
 

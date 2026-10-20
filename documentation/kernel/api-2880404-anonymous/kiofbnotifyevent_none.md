@@ -1,14 +1,15 @@
 # kIOFBNotifyEvent_None
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNotifyEvent_None = (0ULL << 0)
 ```
 

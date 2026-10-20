@@ -1,7 +1,8 @@
 # init(_:id:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates table columns across updates based on the provided key path to the underlying data’s identifier.
 
@@ -21,13 +22,14 @@ init(_ data: Data, id: KeyPath<Data.Element, ID>, @TableColumnBuilder<TableColum
 
 ## Parameters
 
-- `data`: The data that the [`TableColumnForEach`](tablecolumnforeach.md) instance uses to create table columns dynamically.
+- `data`: The data that the [`TableColumnForEach`](../tablecolumnforeach.md) instance uses to create table columns dynamically.
 - `id`: The key path to the provided data’s identifier.
 - `content`: The table column builder that creates columns dynamically for each element.
 
 ## See Also
 
-- [init(_:content:)](tablecolumnforeach/init(_:content:).md)
+### Creating the collection
+- [init(_:content:)](./init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates table columns across updates based on the identity of the underlying data.
 
 

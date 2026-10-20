@@ -1,7 +1,8 @@
 # convolution2DWeightsGradient(_:source:outputShapeTensor:forwardConvolutionDescriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D convolution gradient operation with respect to weights tensor of forward convolution.
 
@@ -17,6 +18,10 @@ Creates a 2D convolution gradient operation with respect to weights tensor of fo
 
 ```swift
 func convolution2DWeightsGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor, outputShapeTensor: MPSGraphTensor, forwardConvolutionDescriptor: MPSGraphConvolution2DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) convolution2DWeightsGradientWithIncomingGradientTensor:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source outputShapeTensor:(MPSGraphTensor *) outputShapeTensor forwardConvolutionDescriptor:(MPSGraphConvolution2DOpDescriptor *) forwardConvolutionDescriptor name:(NSString *) name;
 ```
 
 #### Return Value

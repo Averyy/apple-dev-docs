@@ -1,7 +1,8 @@
 # ColorScheme
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible color schemes, corresponding to the light and dark appearances.
 
@@ -22,7 +23,7 @@ enum ColorScheme
 
 #### Overview
 
-You receive a color scheme value when you read the [`colorScheme`](environmentvalues/colorscheme.md) environment value. The value tells you if a light or dark appearance currently applies to the view. SwiftUI updates the value whenever the appearance changes, and redraws views that depend on the value. For example, the following [`Text`](text.md) view automatically updates when the user enables Dark Mode:
+You receive a color scheme value when you read the [`colorScheme`](./environmentvalues/colorscheme.md) environment value. The value tells you if a light or dark appearance currently applies to the view. SwiftUI updates the value whenever the appearance changes, and redraws views that depend on the value. For example, the following [`Text`](./text.md) view automatically updates when the user enables Dark Mode:
 
 ```swift
 @Environment(\.colorScheme) private var colorScheme
@@ -32,36 +33,37 @@ var body: some View {
 }
 ```
 
-Set a preferred appearance for a particular view hierarchy to override the user’s Dark Mode setting using the [`preferredColorScheme(_:)`](view/preferredcolorscheme(_:).md) view modifier.
+Set a preferred appearance for a particular view hierarchy to override the user’s Dark Mode setting using the [`preferredColorScheme(_:)`](./view/preferredcolorscheme%28_%29.md) view modifier.
 
 ## Topics
 
 ### Getting color schemes
-- [ColorScheme.light](colorscheme/light.md)
+- [ColorScheme.light](./colorscheme/light.md)
   The color scheme that corresponds to a light appearance.
-- [ColorScheme.dark](colorscheme/dark.md)
+- [ColorScheme.dark](./colorscheme/dark.md)
   The color scheme that corresponds to a dark appearance.
 ### Creating a color scheme
-- [init?(UIUserInterfaceStyle)](colorscheme/init(_:).md)
+- [init?(UIUserInterfaceStyle)](./colorscheme/init%28_%29.md)
   Creates a color scheme from its user interface style equivalent.
 ### Supporting types
-- [struct PreferredColorSchemeKey](preferredcolorschemekey.md)
+- [struct PreferredColorSchemeKey](./preferredcolorschemekey.md)
   A key for specifying the preferred color scheme.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func preferredColorScheme(ColorScheme?) -> some View](view/preferredcolorscheme(_:).md)
+### Detecting and requesting the light or dark appearance
+- [func preferredColorScheme(ColorScheme?) -> some View](./view/preferredcolorscheme%28_%29.md)
   Sets the preferred color scheme for this presentation.
-- [var colorScheme: ColorScheme](environmentvalues/colorscheme.md)
+- [var colorScheme: ColorScheme](./environmentvalues/colorscheme.md)
   The color scheme of this environment.
 
 

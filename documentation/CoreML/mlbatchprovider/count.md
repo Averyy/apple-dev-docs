@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of feature providers in this batch.
@@ -21,9 +22,14 @@ The number of feature providers in this batch.
 var count: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger count;
+```
+
 ## See Also
 
-- [func features(at: Int) -> any MLFeatureProvider](mlbatchprovider/features(at:).md)
+### Accessing values
+- [func features(at: Int) -> any MLFeatureProvider](./features%28at%29.md)
   Returns the feature provider at the given index.
 
 

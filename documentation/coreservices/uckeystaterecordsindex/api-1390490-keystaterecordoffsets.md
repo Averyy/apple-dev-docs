@@ -1,7 +1,8 @@
 # keyStateRecordOffsets
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An array of offsets from the beginning of the resource to each of the `UCKeyStateRecord` values that follow this structure in the `'uchr'` resource.
 
@@ -13,6 +14,10 @@ An array of offsets from the beginning of the resource to each of the `UCKeyStat
 
 ```swift
 var keyStateRecordOffsets: UInt32
+```
+
+```c
+UInt32 keyStateRecordOffsets[1];
 ```
 
 

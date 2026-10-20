@@ -1,7 +1,8 @@
 # ATTrackingManager.AuthorizationStatus
 
 **Framework**: App Tracking Transparency  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the tracking-authorization status of an app.
 
@@ -19,38 +20,43 @@ A type that represents the tracking-authorization status of an app.
 enum AuthorizationStatus
 ```
 
+```c
+enum ATTrackingManagerAuthorizationStatus : NSUInteger;
+```
+
 #### Overview
 
-[`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) returns this type, and [`requestTrackingAuthorization(completionHandler:)`](attrackingmanager/requesttrackingauthorization(completionhandler:).md) passes an instance of this type to your completion handler when a person answers the system alert.
+[`trackingAuthorizationStatus`](./trackingauthorizationstatus.md) returns this type, and [`requestTrackingAuthorization(completionHandler:)`](./requesttrackingauthorization%28completionhandler%29.md) passes an instance of this type to your completion handler when a person answers the system alert.
 
 ## Topics
 
 ### Determining the status
-- [ATTrackingManager.AuthorizationStatus.authorized](attrackingmanager/authorizationstatus/authorized.md)
+- [ATTrackingManager.AuthorizationStatus.authorized](./authorizationstatus/authorized.md)
   A value that indicates someone grants your app permission to access data your app can use to track a person or device.
-- [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
+- [ATTrackingManager.AuthorizationStatus.denied](./authorizationstatus/denied.md)
   A value that indicates someone denies your app permission to access data your app can use to track a person or device.
-- [ATTrackingManager.AuthorizationStatus.notDetermined](attrackingmanager/authorizationstatus/notdetermined.md)
+- [ATTrackingManager.AuthorizationStatus.notDetermined](./authorizationstatus/notdetermined.md)
   A value that indicates the person hasn’t responded to a tracking authorization request.
-- [ATTrackingManager.AuthorizationStatus.restricted](attrackingmanager/authorizationstatus/restricted.md)
+- [ATTrackingManager.AuthorizationStatus.restricted](./authorizationstatus/restricted.md)
   A value that indicates the system restricts tracking authorization.
 ### Creating a status
-- [init?(rawValue: UInt)](attrackingmanager/authorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./authorizationstatus/init%28rawvalue%29.md)
   Initializes an authorization status.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](attrackingmanager/trackingauthorizationstatus.md)
+### Authorization status and results
+- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](./trackingauthorizationstatus.md)
   A value that indicates the status of the app’s tracking authorization.
 
 

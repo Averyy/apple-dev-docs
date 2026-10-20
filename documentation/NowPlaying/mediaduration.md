@@ -1,7 +1,8 @@
 # MediaDuration
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The duration of media content.
 
@@ -27,16 +28,17 @@ Use this enumeration to specify whether content has a finite duration or is a li
 ## Topics
 
 ### Enumeration Cases
-- [MediaDuration.continuous](mediaduration/continuous.md)
+- [MediaDuration.continuous](./mediaduration/continuous.md)
   Content with no defined duration that isn’t a live broadcast.
-- [case finite(TimeInterval)](mediaduration/finite(_:).md)
+- [case finite(TimeInterval)](./mediaduration/finite%28_%29.md)
   Content with a known duration.
-- [MediaDuration.live](mediaduration/live.md)
+- [MediaDuration.live](./mediaduration/live.md)
   Live or streaming content without a defined duration.
 
 ## See Also
 
-- [enum MediaType](mediatype.md)
+### Specifying type and duration
+- [enum MediaType](./mediatype.md)
   The type of media being played.
 
 

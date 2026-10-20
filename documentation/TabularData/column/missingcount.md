@@ -1,7 +1,8 @@
 # missingCount
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of missing elements in the column.
 
@@ -22,13 +23,14 @@ var missingCount: Int { get }
 
 ## See Also
 
-- [var name: String](column/name.md)
+### Inspecting a Column
+- [var name: String](./name.md)
   The name of the column.
-- [var count: Int](column/count.md)
+- [var count: Int](./count.md)
   The number of elements in the column.
-- [typealias Element](column/element.md)
+- [typealias Element](./element.md)
   The type of the column’s elements, which is an optional type of the column’s type.
-- [var wrappedElementType: any Any.Type](column/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
 
 

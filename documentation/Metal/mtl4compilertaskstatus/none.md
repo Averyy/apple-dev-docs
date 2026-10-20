@@ -1,7 +1,8 @@
 # MTL4CompilerTaskStatus.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No status.
 
@@ -17,6 +18,10 @@ No status.
 
 ```swift
 case none
+```
+
+```c
+MTL4CompilerTaskStatusNone
 ```
 
 

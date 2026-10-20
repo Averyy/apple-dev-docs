@@ -1,7 +1,8 @@
 # OSNotificationHeader64
 
 **Framework**: IOKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -16,14 +17,20 @@
 struct OSNotificationHeader64
 ```
 
+```c
+struct OSNotificationHeader64 {
+    ...
+};
+```
+
 ## Topics
 
 ### Instance Properties
-- [var reference: OSAsyncReference64](osnotificationheader64/1455547-reference.md)
-- [var size: mach_msg_size_t](osnotificationheader64/1455592-size.md)
-- [var type: natural_t](osnotificationheader64/1455613-type.md)
+- [var reference: OSAsyncReference64](./osnotificationheader64/api-1455547-reference.md)
+- [var size: mach_msg_size_t](./osnotificationheader64/api-1455592-size.md)
+- [var type: natural_t](./osnotificationheader64/api-1455613-type.md)
 ### Initializers
-- [init()](osnotificationheader64/1514395-init.md)
+- [init()](./osnotificationheader64/api-1514395-init.md)
 
 
 ---

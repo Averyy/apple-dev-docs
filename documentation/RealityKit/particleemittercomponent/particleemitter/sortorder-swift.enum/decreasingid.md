@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.SortOrder.decreasingID
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles with higher IDs are rendered first
 

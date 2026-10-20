@@ -1,23 +1,28 @@
 # structure
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type representing the sparsity structure of a sparse complex matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var structure: SparseMatrixStructureComplex
+```
+
+```c
+SparseMatrixStructureComplex structure;
 ```
 
 #### Discussion

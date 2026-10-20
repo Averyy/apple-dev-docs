@@ -1,7 +1,8 @@
 # init(transferToken:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that contains the token you need to transfer a temporary home to a person’s home hub.
 
@@ -25,7 +26,8 @@ The structure that contains the token you need to transfer a temporary home to a
 
 ## See Also
 
-- [var transferToken: Data](hmhome/provisionalhomeconnectiondetails/transfertoken.md)
+### Creating connection details
+- [var transferToken: Data](./transfertoken.md)
   An opaque token you need to transfer a temporary home to a person’s home hub.
 
 

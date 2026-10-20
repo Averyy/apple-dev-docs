@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory whose network-sharing features your container app controls.
 

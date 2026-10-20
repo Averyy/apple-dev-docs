@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.Reason.initializing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracking is still initializing, usually at the start of a new session.
 

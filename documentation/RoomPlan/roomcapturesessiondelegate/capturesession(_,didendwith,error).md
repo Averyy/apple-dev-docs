@@ -2,6 +2,7 @@
 
 **Framework**: RoomPlan  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the delegate of completion with either scan results or an error.
@@ -19,13 +20,19 @@ func captureSession(_ session: RoomCaptureSession, didEndWith data: CapturedRoom
 
 ## Mentions
 
-- [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+- [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
 ## Parameters
 
 - `session`: An object that manages the room-scanning process.
 - `data`: A data object that contains the raw scan results.
 - `error`: An object that describes the problem when an error occurs; otherwise, `nil`.
+
+## Default Implementations
+
+### RoomCaptureSessionDelegate Implementations
+- [func captureSession(RoomCaptureSession, didEndWith: CapturedRoomData, error: (any Error)?)](./capturesession%28_,didendwith,error%29-5f0mc.md)
+  Provides a default, blank implementation for when the capture session provides raw scan results.
 
 
 ---

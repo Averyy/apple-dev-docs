@@ -1,7 +1,8 @@
 # AnimatedArtwork.AspectRatio
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The aspect ratio of the animated artwork.
 
@@ -23,18 +24,18 @@ enum AspectRatio
 ## Topics
 
 ### Enumeration Cases
-- [AnimatedArtwork.AspectRatio.square](animatedartwork/aspectratio/square.md)
+- [AnimatedArtwork.AspectRatio.square](./aspectratio/square.md)
   The 1:1 (square) aspect ratio.
-- [AnimatedArtwork.AspectRatio.tall](animatedartwork/aspectratio/tall.md)
+- [AnimatedArtwork.AspectRatio.tall](./aspectratio/tall.md)
   The 3:4 (tall) aspect ratio.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

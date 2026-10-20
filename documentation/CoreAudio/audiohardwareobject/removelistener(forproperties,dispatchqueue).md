@@ -1,12 +1,13 @@
 # removeListener(forProperties:dispatchQueue:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters for receiving notifications when the given properties change.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

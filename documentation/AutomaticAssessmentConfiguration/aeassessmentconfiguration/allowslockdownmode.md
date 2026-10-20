@@ -1,7 +1,8 @@
 # allowsLockdownMode
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the assessment allows Lockdown Mode to be active.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether the assessment allows Lockdown Mode to be
 
 ```swift
 var allowsLockdownMode: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsLockdownMode;
 ```
 
 #### Discussion

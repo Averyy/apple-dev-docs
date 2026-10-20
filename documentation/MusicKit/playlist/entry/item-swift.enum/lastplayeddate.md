@@ -1,7 +1,8 @@
 # lastPlayedDate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the user last played the playlist entry’s item on this device.
 

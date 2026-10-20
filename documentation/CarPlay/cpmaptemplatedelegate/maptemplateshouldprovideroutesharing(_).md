@@ -1,7 +1,8 @@
 # mapTemplateShouldProvideRouteSharing(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if the template should provide route sharing information to the vehicle. Apps that participate in route sharing will donate navigation information to the vehicle including the current route, a list of waypoints, and other metadata that allows the vehicle to track the user’s preferred route to their destination.
 
@@ -14,6 +15,10 @@ Determines if the template should provide route sharing information to the vehic
 
 ```swift
 optional func mapTemplateShouldProvideRouteSharing(_ mapTemplate: CPMapTemplate) -> Bool
+```
+
+```objc
+- (BOOL) mapTemplateShouldProvideRouteSharing:(CPMapTemplate *) mapTemplate;
 ```
 
 #### Return Value

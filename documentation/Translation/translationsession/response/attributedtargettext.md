@@ -1,7 +1,8 @@
 # attributedTargetText
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translated formatted text.
 
@@ -25,15 +26,16 @@ The framework makes a best effort to preserve attributes like accessibility inst
 
 > **Note**: The framework preserves but doesn’t modify attributes. To use the correct language after translation, update any attributes that need to reflect the target language, such as the language modifier for VoiceOver.
 
-For examples of translating attributed source text, see [`attributedSourceText`](translationsession/request/attributedsourcetext.md).
+For examples of translating attributed source text, see [`attributedSourceText`](../request/attributedsourcetext.md).
 
 ## See Also
 
-- [let sourceText: String](translationsession/response/sourcetext.md)
+### Getting translation results
+- [let sourceText: String](./sourcetext.md)
   The original text to translate from.
-- [let targetText: String](translationsession/response/targettext.md)
+- [let targetText: String](./targettext.md)
   The translated text.
-- [let attributedSourceText: AttributedString?](translationsession/response/attributedsourcetext.md)
+- [let attributedSourceText: AttributedString?](./attributedsourcetext.md)
   The original translated text, including style formatting and links.
 
 

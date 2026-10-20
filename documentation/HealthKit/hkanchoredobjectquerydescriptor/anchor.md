@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An anchor that a previous anchored object query returned.
 
@@ -10,7 +11,7 @@ An anchor that a previous anchored object query returned.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ The anchor object corresponds to the last object that the previous query returne
 
 ## See Also
 
-- [var predicates: [HKSamplePredicate<Sample>]](hkanchoredobjectquerydescriptor/predicates.md)
+### Accessing Query Properties
+- [var predicates: [HKSamplePredicate<Sample>]](./predicates.md)
   A predicate that limits the results that the query returns.
-- [var limit: Int?](hkanchoredobjectquerydescriptor/limit.md)
+- [var limit: Int?](./limit.md)
   The maximum number of samples that the query returns.
 
 

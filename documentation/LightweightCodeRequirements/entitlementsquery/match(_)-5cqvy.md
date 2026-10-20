@@ -1,7 +1,8 @@
 # match(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified string value against a string or an array of strings.
 

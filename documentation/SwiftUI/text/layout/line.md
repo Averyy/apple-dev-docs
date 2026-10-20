@@ -1,7 +1,8 @@
 # Text.Layout.Line
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single line in a text layout: a collection of runs of placed glyphs.
 
@@ -23,19 +24,19 @@ struct Line
 ## Topics
 
 ### Instance Properties
-- [var origin: CGPoint](text/layout/line/origin.md)
+- [var origin: CGPoint](./line/origin.md)
   The origin of the line.
-- [var typographicBounds: Text.Layout.TypographicBounds](text/layout/line/typographicbounds.md)
+- [var typographicBounds: Text.Layout.TypographicBounds](./line/typographicbounds.md)
   The typographic bounds of the line.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../../Swift/bidirectionalcollection.md)
+- [Collection](../../../Swift/collection.md)
+- [Equatable](../../../Swift/equatable.md)
+- [RandomAccessCollection](../../../Swift/randomaccesscollection.md)
+- [Sequence](../../../Swift/sequence.md)
 
 
 ---

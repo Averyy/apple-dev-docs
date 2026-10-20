@@ -1,18 +1,19 @@
 # kCFStringTransformLatinThai
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identifier of a reversible transform to transliterate text to Thai from Latin.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ The identifier of a reversible transform to transliterate text to Thai from Lati
 let kCFStringTransformLatinThai: CFString!
 ```
 
+```c
+extern CFStringRef const kCFStringTransformLatinThai;
+```
+
 ## See Also
 
-- [let kCFStringTransformStripCombiningMarks: CFString!](kcfstringtransformstripcombiningmarks.md)
+### Constants
+- [let kCFStringTransformStripCombiningMarks: CFString!](./kcfstringtransformstripcombiningmarks.md)
   The identifier of a transform to strip combining marks (accents or diacritics).
-- [let kCFStringTransformToLatin: CFString!](kcfstringtransformtolatin.md)
+- [let kCFStringTransformToLatin: CFString!](./kcfstringtransformtolatin.md)
   The identifier of a transform to transliterate all text possible to Latin script. Ideographs are transliterated as Mandarin Chinese.
-- [let kCFStringTransformFullwidthHalfwidth: CFString!](kcfstringtransformfullwidthhalfwidth.md)
+- [let kCFStringTransformFullwidthHalfwidth: CFString!](./kcfstringtransformfullwidthhalfwidth.md)
   The identifier of a reversible transform to convert full-width characters to their half-width equivalents.
-- [let kCFStringTransformLatinKatakana: CFString!](kcfstringtransformlatinkatakana.md)
+- [let kCFStringTransformLatinKatakana: CFString!](./kcfstringtransformlatinkatakana.md)
   The identifier of a reversible transform to transliterate text to Katakana from Latin.
-- [let kCFStringTransformLatinHiragana: CFString!](kcfstringtransformlatinhiragana.md)
+- [let kCFStringTransformLatinHiragana: CFString!](./kcfstringtransformlatinhiragana.md)
   The identifier of a reversible transform to transliterate text to Hiragana from Latin.
-- [let kCFStringTransformHiraganaKatakana: CFString!](kcfstringtransformhiraganakatakana.md)
+- [let kCFStringTransformHiraganaKatakana: CFString!](./kcfstringtransformhiraganakatakana.md)
   The identifier of a reversible transform to transliterate text to Katakana from Hiragana.
-- [let kCFStringTransformMandarinLatin: CFString!](kcfstringtransformmandarinlatin.md)
+- [let kCFStringTransformMandarinLatin: CFString!](./kcfstringtransformmandarinlatin.md)
   The identifier of a transform to transliterate text to Latin from ideographs interpreted as Mandarin Chinese. This transform is not reversible.
-- [let kCFStringTransformLatinHangul: CFString!](kcfstringtransformlatinhangul.md)
+- [let kCFStringTransformLatinHangul: CFString!](./kcfstringtransformlatinhangul.md)
   The identifier of a reversible transform to transliterate text to Hangul from Latin.
-- [let kCFStringTransformLatinArabic: CFString!](kcfstringtransformlatinarabic.md)
+- [let kCFStringTransformLatinArabic: CFString!](./kcfstringtransformlatinarabic.md)
   The identifier of a reversible transform to transliterate text to Arabic from Latin.
-- [let kCFStringTransformLatinHebrew: CFString!](kcfstringtransformlatinhebrew.md)
+- [let kCFStringTransformLatinHebrew: CFString!](./kcfstringtransformlatinhebrew.md)
   The identifier of a reversible transform to transliterate text to Hebrew from Latin.
-- [let kCFStringTransformLatinCyrillic: CFString!](kcfstringtransformlatincyrillic.md)
+- [let kCFStringTransformLatinCyrillic: CFString!](./kcfstringtransformlatincyrillic.md)
   The identifier of a reversible transform to transliterate text to Cyrillic from Latin.
-- [let kCFStringTransformLatinGreek: CFString!](kcfstringtransformlatingreek.md)
+- [let kCFStringTransformLatinGreek: CFString!](./kcfstringtransformlatingreek.md)
   The identifier of a reversible transform to transliterate text to Greek from Latin.
-- [let kCFStringTransformToXMLHex: CFString!](kcfstringtransformtoxmlhex.md)
+- [let kCFStringTransformToXMLHex: CFString!](./kcfstringtransformtoxmlhex.md)
   The identifier of a reversible transform to transliterate characters other than printable ASCII to XML/HTML numeric entities.
-- [let kCFStringTransformToUnicodeName: CFString!](kcfstringtransformtounicodename.md)
+- [let kCFStringTransformToUnicodeName: CFString!](./kcfstringtransformtounicodename.md)
   The identifier of a reversible transform to transliterate characters other than printable ASCII to their Unicode character name in braces.
-- [let kCFStringTransformStripDiacritics: CFString!](kcfstringtransformstripdiacritics.md)
+- [let kCFStringTransformStripDiacritics: CFString!](./kcfstringtransformstripdiacritics.md)
   The identifier of a transform to remove diacritic markings.
 
 

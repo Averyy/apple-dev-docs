@@ -1,7 +1,8 @@
 # fileAnimationImageKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key with a corresponding value that is an image, typically an icon to represent the file.
 
@@ -14,23 +15,28 @@ A key with a corresponding value that is an image, typically an icon to represen
 static let fileAnimationImageKey: ProgressUserInfoKey
 ```
 
+```c
+extern NSProgressUserInfoKey const NSProgressFileAnimationImageKey;
+```
+
 #### Discussion
 
-This entry is optional, but if present, along with a value for [`fileAnimationImageOriginalRectKey`](progressuserinfokey/fileanimationimageoriginalrectkey.md), the Dock may show an animation. When the Dock has an item for the folder that contains the relevant file (such as the Downloads folder), the Dock uses this key to show an animation of the file flying into the Dock.
+This entry is optional, but if present, along with a value for [`fileAnimationImageOriginalRectKey`](./fileanimationimageoriginalrectkey.md), the Dock may show an animation. When the Dock has an item for the folder that contains the relevant file (such as the Downloads folder), the Dock uses this key to show an animation of the file flying into the Dock.
 
 ## See Also
 
-- [static let fileAnimationImageOriginalRectKey: ProgressUserInfoKey](progressuserinfokey/fileanimationimageoriginalrectkey.md)
+### Using File Operation Keys
+- [static let fileAnimationImageOriginalRectKey: ProgressUserInfoKey](./fileanimationimageoriginalrectkey.md)
   A key with a corresponding value that indicates the starting location of the image onscreen.
-- [static let fileCompletedCountKey: ProgressUserInfoKey](progressuserinfokey/filecompletedcountkey.md)
+- [static let fileCompletedCountKey: ProgressUserInfoKey](./filecompletedcountkey.md)
   A key with a corresponding value that represents the number of completed files.
-- [static let fileIconKey: ProgressUserInfoKey](progressuserinfokey/fileiconkey.md)
+- [static let fileIconKey: ProgressUserInfoKey](./fileiconkey.md)
   A key with a corresponding value that must be an image, typically an icon to represent the file.
-- [static let fileOperationKindKey: ProgressUserInfoKey](progressuserinfokey/fileoperationkindkey.md)
+- [static let fileOperationKindKey: ProgressUserInfoKey](./fileoperationkindkey.md)
   A key with a corresponding value that indicates the kind of file operation a progress object represents.
-- [static let fileTotalCountKey: ProgressUserInfoKey](progressuserinfokey/filetotalcountkey.md)
+- [static let fileTotalCountKey: ProgressUserInfoKey](./filetotalcountkey.md)
   A key with a corresponding value that represents the total number of files within a file operation.
-- [static let fileURLKey: ProgressUserInfoKey](progressuserinfokey/fileurlkey.md)
+- [static let fileURLKey: ProgressUserInfoKey](./fileurlkey.md)
   A key with a corresponding value that represents the file URL of a file operation for the progress object.
 
 

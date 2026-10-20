@@ -1,7 +1,8 @@
 # errSecCSNotAHost
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This code is not a code signing host.
 
@@ -13,6 +14,10 @@ This code is not a code signing host.
 
 ```swift
 var errSecCSNotAHost: OSStatus { get }
+```
+
+```c
+errSecCSNotAHost
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The shader function’s type.
@@ -20,15 +21,20 @@ The shader function’s type.
 var functionType: MTLFunctionType { get }
 ```
 
+```objc
+@property (readonly) MTLFunctionType functionType;
+```
+
 #### Discussion
 
 A function’s type determines what kind of pipeline state objects you can create from it.
 
 ## See Also
 
-- [var device: any MTLDevice](mtlfunctionhandle/device.md)
+### Querying handle properties
+- [var device: any MTLDevice](./device.md)
   The device object that created the shader function.
-- [var name: String](mtlfunctionhandle/name.md)
+- [var name: String](./name.md)
   The function’s name.
 
 

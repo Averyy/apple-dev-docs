@@ -1,7 +1,8 @@
 # maps
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the maps domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the maps domain.
 ```swift
 static var maps: some AppSchema.MapsEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

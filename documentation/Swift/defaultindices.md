@@ -1,7 +1,8 @@
 # DefaultIndices
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of indices for an arbitrary collection
 
@@ -24,21 +25,21 @@ struct DefaultIndices<Elements> where Elements : Collection
 ## Topics
 
 ### Default Implementations
-- [BidirectionalCollection Implementations](defaultindices/bidirectionalcollection-implementations.md)
-- [Collection Implementations](defaultindices/collection-implementations.md)
-- [Sequence Implementations](defaultindices/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./defaultindices/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./defaultindices/collection-implementations.md)
+- [Sequence Implementations](./defaultindices/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 
 ---

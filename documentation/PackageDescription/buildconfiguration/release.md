@@ -1,7 +1,8 @@
 # release
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The release build configuration.
 
@@ -13,7 +14,8 @@ static let release: BuildConfiguration
 
 ## See Also
 
-- [static let debug: BuildConfiguration](buildconfiguration/debug.md)
+### Describing Build Configurations
+- [static let debug: BuildConfiguration](./debug.md)
   The debug build configuration.
 
 

@@ -1,7 +1,8 @@
 # makeTransformer()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a default-initialized transformer suitable for incremental fitting.
 
@@ -19,6 +20,8 @@ Creates a default-initialized transformer suitable for incremental fitting.
 ```swift
 func makeTransformer() -> ColumnSelectorTransformer<Estimator.Transformer, UnwrappedInput>
 ```
+
+Available when `Estimator` conforms to `UpdatableEstimator` and `Estimator.Transformer.Input` is `UnwrappedInput?`.
 
 
 ---

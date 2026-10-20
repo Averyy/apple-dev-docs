@@ -1,7 +1,8 @@
 # NetworkJSONCoder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,17 +22,17 @@ struct NetworkJSONCoder
 ## Topics
 
 ### Instance Methods
-- [func makeDecoder() -> JSONDecoder](networkjsoncoder/makedecoder.md)
+- [func makeDecoder() -> JSONDecoder](./networkjsoncoder/makedecoder%28%29.md)
   Make a JSONDecoder that can be used to decode into a Decodable type.
-- [func makeEncoder() -> JSONEncoder](networkjsoncoder/makeencoder.md)
+- [func makeEncoder() -> JSONEncoder](./networkjsoncoder/makeencoder%28%29.md)
   Make a JSONEncoder that can be used to encode an Encodable type.
 
 ## Relationships
 
 ### Conforms To
-- [NetworkCoder](networkcoder.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NetworkCoder](./networkcoder.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

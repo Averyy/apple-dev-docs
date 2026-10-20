@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The most recent mouse that the user connects.
 
@@ -19,11 +20,16 @@ The most recent mouse that the user connects.
 class var current: GCMouse? { get }
 ```
 
+```objc
+@property (class, atomic, strong, readonly, nullable) GCMouse * current;
+```
+
 ## See Also
 
-- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)
+### Handling multiple mouse devices
+- [static let GCMouseDidBecomeCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcmousedidbecomecurrent.md)
   A notification that posts when a mouse becomes the most recent mouse that the user connects.
-- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
+- [static let GCMouseDidStopBeingCurrent: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gcmousedidstopbeingcurrent.md)
   A notification that posts when a mouse stops being the most recent mouse that the user connects.
 
 

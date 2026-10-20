@@ -1,7 +1,8 @@
 # kinematic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Kinematic particles are moved with the entity transform, and cannot be moved in any way by the simulation.
 

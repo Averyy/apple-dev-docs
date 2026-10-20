@@ -1,7 +1,8 @@
 # horizontalFieldOfView
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Horizontal field of view in thousandths of a degree (i.e., 123456 is 123.456 degrees).
 

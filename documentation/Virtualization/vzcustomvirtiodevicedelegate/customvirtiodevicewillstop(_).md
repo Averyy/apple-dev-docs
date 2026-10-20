@@ -1,7 +1,8 @@
 # customVirtioDeviceWillStop(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when a device will be stopped.
 
@@ -14,9 +15,13 @@ The method the framework calls when a device will be stopped.
 optional func customVirtioDeviceWillStop(_ device: VZCustomVirtioDevice)
 ```
 
+```objc
+- (void) customVirtioDeviceWillStop:(VZCustomVirtioDevice *) device;
+```
+
 #### Discussion
 
-A device is in a stopped state when its corresponding [`VZVirtualMachine`](vzvirtualmachine.md) has stopped. This can happen when the guest performs a shutdown operation itself,  or when you call [`requestStop()`](vzvirtualmachine/requeststop().md).
+A device is in a stopped state when its corresponding [`VZVirtualMachine`](../vzvirtualmachine.md) has stopped. This can happen when the guest performs a shutdown operation itself,  or when you call [`requestStop()`](../vzvirtualmachine/requeststop%28%29.md).
 
 ## Parameters
 

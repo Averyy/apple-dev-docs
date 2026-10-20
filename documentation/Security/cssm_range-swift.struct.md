@@ -1,7 +1,8 @@
 # cssm_range
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,20 +14,24 @@
 struct cssm_range
 ```
 
+```c
+struct cssm_range;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_range-swift.struct/init.md)
-- [init(Min: uint32, Max: uint32)](cssm_range-swift.struct/init(min:max:).md)
+- [init()](./cssm_range-swift.struct/init%28%29.md)
+- [init(Min: uint32, Max: uint32)](./cssm_range-swift.struct/init%28min,max%29.md)
 ### Instance Properties
-- [var Max: uint32](cssm_range-swift.struct/max.md)
-- [var Min: uint32](cssm_range-swift.struct/min.md)
+- [var Max: uint32](./cssm_range-swift.struct/max.md)
+- [var Min: uint32](./cssm_range-swift.struct/min.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

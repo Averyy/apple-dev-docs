@@ -1,7 +1,8 @@
 # MapScaleView
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Displays a legend with distance information for the associated map.
 
@@ -11,7 +12,7 @@ Displays a legend with distance information for the associated map.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Displays a legend with distance information for the associated map.
 
 #### Overview
 
-You can use this with [`Map`](map.md) as a standalone view, for example:
+You can use this with [`Map`](./map.md) as a standalone view, for example:
 
 ```swift
     struct ScaleTestView: View {
@@ -48,7 +49,7 @@ The scale indicator grows and shrinks (although visually, its frame is static) b
     .mapScope(mapScope)
 ```
 
-You can also use `MapScaleView` with the [`mapControls(_:)`](https://developer.apple.com/documentation/swiftui/view/mapcontrols(_:)) modifier, as shown in this example:
+You can also use `MapScaleView` with the [`mapControls(_:)`](../SwiftUI/view/mapcontrols%28_%29.md) modifier, as shown in this example:
 
 ```swift
     Map()
@@ -60,44 +61,45 @@ You can also use `MapScaleView` with the [`mapControls(_:)`](https://developer.a
 ## Topics
 
 ### Creating a map scale view
-- [init(anchorEdge: HorizontalEdge, scope: Namespace.ID?)](mapscaleview/init(anchoredge:scope:).md)
+- [init(anchorEdge: HorizontalEdge, scope: Namespace.ID?)](./mapscaleview/init%28anchoredge,scope%29.md)
   Creates a map scale view.
-- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](mapscaleview/init(alignment:scope:).md)
+- [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](./mapscaleview/init%28alignment,scope%29.md)
   Creates a scale view with the provided alignment and scope.
 ### Managing map control sizing and visibility
 - [func mapControlVisibility(Visibility) -> some View
-](../swiftui/view/mapcontrolvisibility(_:).md)
+](../SwiftUI/view/mapcontrolvisibility%28_%29.md)
   Configures all Map controls in the environment to have the specified visibility
 - [func mapControls(() -> some View) -> some View
-](../swiftui/view/mapcontrols(_:).md)
+](../SwiftUI/view/mapcontrols%28_%29.md)
   Configures all `Map` views in the associated environment to have standard size and position controls
-- [func controlSize(_:)](../swiftui/view/controlsize(_:).md)
+- [func controlSize(_:)](../SwiftUI/view/controlsize%28_%29.md)
   Sets the size for controls within this view.
 ### Setting the namespace Identifier
 - [func mapScope(Namespace.ID) -> some View
-](../swiftui/view/mapscope(_:).md)
+](../SwiftUI/view/mapscope%28_%29.md)
   Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct MapCompass](mapcompass.md)
+### Map controls
+- [struct MapCompass](./mapcompass.md)
   A view that reflects the current orientation of the associated map.
-- [struct MapLocationCompass](maplocationcompass.md)
+- [struct MapLocationCompass](./maplocationcompass.md)
   A view that displays a combined user location button and map compass.
-- [struct MapPitchSlider](mappitchslider.md)
+- [struct MapPitchSlider](./mappitchslider.md)
   A slider control that allows a person to change the pitch of the map.
-- [struct MapPitchToggle](mappitchtoggle.md)
+- [struct MapPitchToggle](./mappitchtoggle.md)
   A button that sets the pitch of the associated map.
-- [struct MapUserLocationButton](mapuserlocationbutton.md)
+- [struct MapUserLocationButton](./mapuserlocationbutton.md)
   A button that sets the framing of the associated map to the user location.
-- [struct MapZoomStepper](mapzoomstepper.md)
+- [struct MapZoomStepper](./mapzoomstepper.md)
   Buttons a person uses to adjust the zoom level of the map.
 
 

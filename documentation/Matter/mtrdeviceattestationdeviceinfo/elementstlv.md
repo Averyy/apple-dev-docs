@@ -1,7 +1,8 @@
 # elementsTLV
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The TLV-encoded attestation_elements_message that was used to find the certificationDeclaration (possibly unsuccessfully).
 
@@ -18,6 +19,10 @@ The TLV-encoded attestation_elements_message that was used to find the certifica
 
 ```swift
 var elementsTLV: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) MTRTLVBytes elementsTLV;
 ```
 
 

@@ -1,7 +1,8 @@
 # verbose
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var verbose: MPSKernelOptions { get }
+```
+
+```c
+MPSKernelOptionsVerbose
 ```
 
 

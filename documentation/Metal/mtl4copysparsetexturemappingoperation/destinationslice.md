@@ -1,7 +1,8 @@
 # destinationSlice
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the array slice in the destination texture to copy into.
 
@@ -17,6 +18,10 @@ The index of the array slice in the destination texture to copy into.
 
 ```swift
 var destinationSlice: Int
+```
+
+```c
+NSUInteger destinationSlice;
 ```
 
 #### Discussion

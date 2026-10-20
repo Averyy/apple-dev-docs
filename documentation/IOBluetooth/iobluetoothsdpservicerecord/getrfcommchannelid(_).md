@@ -1,17 +1,22 @@
 # getRFCOMMChannelID(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the discovery of the RFCOMM channel ID assigned to the service.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getRFCOMMChannelID(_ rfcommChannelID: UnsafeMutablePointer<BluetoothRFCOMMChannelID>!) -> IOReturn
+```
+
+```objc
+- (IOReturn) getRFCOMMChannelID:(BluetoothRFCOMMChannelID *) rfcommChannelID;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # >=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 

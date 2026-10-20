@@ -1,7 +1,8 @@
 # phase(_:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the double-precision element-wise phase values, in radians, of the supplied complex vector.
 
@@ -11,7 +12,7 @@ Calculates the double-precision element-wise phase values, in radians, of the su
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static func phase<V>(_ splitComplex: DSPDoubleSplitComplex, result: inout V) whe
 
 ## See Also
 
-- [static func phase<V>(DSPSplitComplex, result: inout V)](vdsp/phase(_:result:)-1ve4y.md)
+### Single-Vector Phase Computation
+- [static func phase<V>(DSPSplitComplex, result: inout V)](./phase%28_,result%29-1ve4y.md)
   Calculates the single-precision element-wise phase values, in radians, of the supplied complex vector.
 
 

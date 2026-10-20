@@ -1,7 +1,8 @@
 # TableColumnCustomizationBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of customization behaviors of a column that a table can offer to a user.
 
@@ -20,39 +21,40 @@ struct TableColumnCustomizationBehavior
 
 #### Overview
 
-This is used as a value provided to [`disabledCustomizationBehavior(_:)`](tablecolumncontent/disabledcustomizationbehavior(_:).md).
+This is used as a value provided to [`disabledCustomizationBehavior(_:)`](./tablecolumncontent/disabledcustomizationbehavior%28_%29.md).
 
 Setting any of these values as the `disabledCustomizationBehavior(_:)` doesn’t have any effect on iOS.
 
 ## Topics
 
 ### Getting the customization behavior
-- [static var all: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/all.md)
+- [static var all: TableColumnCustomizationBehavior](./tablecolumncustomizationbehavior/all.md)
   All customization behaviors.
-- [static let reorder: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/reorder.md)
+- [static let reorder: TableColumnCustomizationBehavior](./tablecolumncustomizationbehavior/reorder.md)
   A behavior that allows the column to be reordered by the user.
-- [static let resize: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/resize.md)
+- [static let resize: TableColumnCustomizationBehavior](./tablecolumncustomizationbehavior/resize.md)
   A behavior that allows the column to be resized by the user.
-- [static let visibility: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/visibility.md)
+- [static let visibility: TableColumnCustomizationBehavior](./tablecolumncustomizationbehavior/visibility.md)
   A behavior that allows the column to be hidden or revealed by the user.
 ### Creating a behavior
-- [init()](tablecolumncustomizationbehavior/init.md)
+- [init()](./tablecolumncustomizationbehavior/init%28%29.md)
   Creates an empty customization behavior, representing no customization
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func tableColumnHeaders(Visibility) -> some View](view/tablecolumnheaders(_:).md)
+### Customizing columns
+- [func tableColumnHeaders(Visibility) -> some View](./view/tablecolumnheaders%28_%29.md)
   Controls the visibility of a `Table`’s column header views.
-- [struct TableColumnCustomization](tablecolumncustomization.md)
+- [struct TableColumnCustomization](./tablecolumncustomization.md)
   A representation of the state of the columns in a table.
 
 

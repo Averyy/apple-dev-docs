@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The output type.
@@ -23,9 +24,10 @@ associatedtype Output
 
 ## See Also
 
-- [func applied(to: Self.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Self.Output](randomtransformer/applied(to:generator:eventhandler:).md)
+### Performing the transformation
+- [func applied(to: Self.Input, generator: inout some RandomNumberGenerator, eventHandler: EventHandler?) async throws -> Self.Output](./applied%28to,generator,eventhandler%29.md)
   Performs the random transformation on a single input.
-- [associatedtype Input](randomtransformer/input.md)
+- [associatedtype Input](./input.md)
   The input type.
 
 

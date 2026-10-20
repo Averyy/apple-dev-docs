@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension
 
 **Framework**: Foveated Streaming  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A foveated streaming provider extension.
 
@@ -17,7 +18,7 @@ protocol FoveatedStreamingExtension : AnyObject, AppExtension
 
 #### Overview
 
-Foveated streaming providers are a system extension that allows developers to use your custom protocol with a [`FoveatedStreamingSession`](foveatedstreamingsession.md).
+Foveated streaming providers are a system extension that allows developers to use your custom protocol with a [`FoveatedStreamingSession`](./foveatedstreamingsession.md).
 
 Foveated streaming providers require the `com.apple.developer.foveated-streaming-provider` entitlement.
 
@@ -34,34 +35,34 @@ final class MyStreamingProvider: FoveatedStreamingExtension {
 ## Topics
 
 ### Associated Types
-- [associatedtype Content : View](foveatedstreamingextension/content.md)
+- [associatedtype Content : View](./foveatedstreamingextension/content.md)
   The type of the view that renders the streamed content.
 ### Instance Properties
-- [var immersiveScene: Self.Content](foveatedstreamingextension/immersivescene.md)
+- [var immersiveScene: Self.Content](./foveatedstreamingextension/immersivescene.md)
   The SwiftUI view that renders the streamed content.
 ### Instance Methods
-- [func connect(context: Self.Context) async throws](foveatedstreamingextension/connect(context:).md)
+- [func connect(context: Self.Context) async throws](./foveatedstreamingextension/connect%28context%29.md)
   Connect to the provided endpoint.
-- [func disconnect() async throws](foveatedstreamingextension/disconnect.md)
+- [func disconnect() async throws](./foveatedstreamingextension/disconnect%28%29.md)
   Disconnect from the streaming endpoint.
-- [func openMessageChannel(Self.MessageChannel) throws](foveatedstreamingextension/openmessagechannel(_:).md)
+- [func openMessageChannel(Self.MessageChannel) throws](./foveatedstreamingextension/openmessagechannel%28_%29.md)
   Handles a message channel opened by the host app.
 ### Type Aliases
-- [FoveatedStreamingExtension.Context](foveatedstreamingextension/context.md)
+- [FoveatedStreamingExtension.Context](./foveatedstreamingextension/context.md)
   The context object provided to the extension when it connects.
-- [FoveatedStreamingExtension.Endpoint](foveatedstreamingextension/endpoint.md)
+- [FoveatedStreamingExtension.Endpoint](./foveatedstreamingextension/endpoint.md)
   The streaming endpoint the extension connects to.
-- [FoveatedStreamingExtension.FocusRegion](foveatedstreamingextension/focusregion.md)
+- [FoveatedStreamingExtension.FocusRegion](./foveatedstreamingextension/focusregion.md)
   The approximate region where the person is looking.
-- [FoveatedStreamingExtension.MessageChannel](foveatedstreamingextension/messagechannel.md)
+- [FoveatedStreamingExtension.MessageChannel](./foveatedstreamingextension/messagechannel.md)
   A message channel between the host app and the extension.
-- [FoveatedStreamingExtension.Status](foveatedstreamingextension/status.md)
+- [FoveatedStreamingExtension.Status](./foveatedstreamingextension/status.md)
   The lifecycle state of the extension.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 
 ---

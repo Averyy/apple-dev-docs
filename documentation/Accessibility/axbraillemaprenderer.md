@@ -1,7 +1,8 @@
 # AXBrailleMapRenderer
 
 **Framework**: Accessibility  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for providing data for a braille map.
 
@@ -20,30 +21,35 @@ The interface for providing data for a braille map.
 protocol AXBrailleMapRenderer : NSObjectProtocol
 ```
 
+```objc
+@protocol AXBrailleMapRenderer <NSObject>
+```
+
 #### Overview
 
 You update the braille display in one of these ways:
 
-- Implement [`accessibilityBrailleMapRenderRegion`](axbraillemaprenderer/accessibilitybraillemaprenderregion.md) to specify an area of the UI to render to the braille display. With this approach, VoiceOver handles the process of converting the data to a braille map by rendering the image of the screen in that region and updating the braille display automatically.
-- Implement [`accessibilityBrailleMapRenderer`](axbraillemaprenderer/accessibilitybraillemaprenderer.md) to update the braille map manually. With this approach, you get more detailed control over what to display, but you must modify the braille map yourself.
+- Implement [`accessibilityBrailleMapRenderRegion`](./axbraillemaprenderer/accessibilitybraillemaprenderregion.md) to specify an area of the UI to render to the braille display. With this approach, VoiceOver handles the process of converting the data to a braille map by rendering the image of the screen in that region and updating the braille display automatically.
+- Implement [`accessibilityBrailleMapRenderer`](./axbraillemaprenderer/accessibilitybraillemaprenderer.md) to update the braille map manually. With this approach, you get more detailed control over what to display, but you must modify the braille map yourself.
 
 ## Topics
 
 ### Rendering a specific region
-- [var accessibilityBrailleMapRenderRegion: CGRect](axbraillemaprenderer/accessibilitybraillemaprenderregion.md)
+- [var accessibilityBrailleMapRenderRegion: CGRect](./axbraillemaprenderer/accessibilitybraillemaprenderregion.md)
   A region of the UI that the system converts into a braille map and displays on the braille display.
 ### Updating the braille map manually
-- [var accessibilityBrailleMapRenderer: (AXBrailleMap) -> Void](axbraillemaprenderer/accessibilitybraillemaprenderer.md)
+- [var accessibilityBrailleMapRenderer: (AXBrailleMap) -> Void](./axbraillemaprenderer/accessibilitybraillemaprenderer.md)
   A handler that the system calls to let you update the Braille map.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AXBrailleMap](axbraillemap.md)
+### Braille maps
+- [class AXBrailleMap](./axbraillemap.md)
   A representation of a two-dimensional braille display.
 
 

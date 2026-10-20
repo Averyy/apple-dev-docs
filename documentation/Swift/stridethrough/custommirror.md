@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom mirror for this instance.
 
@@ -19,6 +20,8 @@ The custom mirror for this instance.
 ```swift
 var customMirror: Mirror { get }
 ```
+
+Available when `Element` conforms to `Strideable`.
 
 #### Discussion
 

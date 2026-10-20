@@ -1,7 +1,8 @@
 # NumberFormatStyleConfiguration.Precision
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that an integer format style uses to configure precision.
 
@@ -23,44 +24,45 @@ struct Precision
 ## Topics
 
 ### Precision configurations
-- [static func significantDigits<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/significantdigits(_:)-2rp7g.md)
+- [static func significantDigits<R>(R) -> NumberFormatStyleConfiguration.Precision](./precision/significantdigits%28_%29-2rp7g.md)
   Returns a precision that constrains formatted values to a range of significant digits.
-- [static func significantDigits(Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/significantdigits(_:)-9dvpr.md)
+- [static func significantDigits(Int) -> NumberFormatStyleConfiguration.Precision](./precision/significantdigits%28_%29-9dvpr.md)
   Returns a precision that constrains formatted values to a given number of significant digits.
-- [static func integerAndFractionLength<R1, R2>(integerLimits: R1, fractionLimits: R2) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerandfractionlength(integerlimits:fractionlimits:).md)
+- [static func integerAndFractionLength<R1, R2>(integerLimits: R1, fractionLimits: R2) -> NumberFormatStyleConfiguration.Precision](./precision/integerandfractionlength%28integerlimits,fractionlimits%29.md)
   Returns a precision that constrains formatted values to ranges of allowed digits in the integer and fraction parts.
-- [static func integerAndFractionLength(integer: Int, fraction: Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerandfractionlength(integer:fraction:).md)
+- [static func integerAndFractionLength(integer: Int, fraction: Int) -> NumberFormatStyleConfiguration.Precision](./precision/integerandfractionlength%28integer,fraction%29.md)
   Returns a precision that constrains formatted values a given number of allowed digits in the integer and fraction parts.
-- [static func integerLength<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerlength(_:)-u8ua.md)
+- [static func integerLength<R>(R) -> NumberFormatStyleConfiguration.Precision](./precision/integerlength%28_%29-u8ua.md)
   Returns a precision that constrains formatted values to a range of allowed digits in the integer part.
-- [static func integerLength(Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerlength(_:)-1njyz.md)
+- [static func integerLength(Int) -> NumberFormatStyleConfiguration.Precision](./precision/integerlength%28_%29-1njyz.md)
   Returns a precision that constrains formatted values to a given number of allowed digits in the integer part.
-- [static func fractionLength<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/fractionlength(_:)-w6fk.md)
+- [static func fractionLength<R>(R) -> NumberFormatStyleConfiguration.Precision](./precision/fractionlength%28_%29-w6fk.md)
   Returns a precision that constrains formatted values to a range of allowed digits in the fraction part.
-- [static func fractionLength(Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/fractionlength(_:)-3wkd9.md)
+- [static func fractionLength(Int) -> NumberFormatStyleConfiguration.Precision](./precision/fractionlength%28_%29-3wkd9.md)
   Returns a precision that constrains formatted values to a given number of allowed digits in the fraction part.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](numberformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+### Specifying Configuration
+- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./decimalseparatordisplaystrategy.md)
   A structure that an integer format style uses to configure a decimal separator display strategy.
-- [NumberFormatStyleConfiguration.Grouping](numberformatstyleconfiguration/grouping.md)
+- [NumberFormatStyleConfiguration.Grouping](./grouping.md)
   A structure that an integer format style uses to configure grouping.
-- [NumberFormatStyleConfiguration.RoundingRule](numberformatstyleconfiguration/roundingrule.md)
+- [NumberFormatStyleConfiguration.RoundingRule](./roundingrule.md)
   The type used for rounding rule values.
-- [NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy.md)
+- [NumberFormatStyleConfiguration.SignDisplayStrategy](./signdisplaystrategy.md)
   A structure that an integer format style uses to configure a sign display strategy.
-- [NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation.md)
+- [NumberFormatStyleConfiguration.Notation](./notation.md)
   A structure that an integer format style uses to configure notation.
 
 

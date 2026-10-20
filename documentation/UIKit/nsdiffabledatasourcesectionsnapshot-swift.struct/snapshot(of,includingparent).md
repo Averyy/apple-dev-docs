@@ -1,7 +1,8 @@
 # snapshot(of:includingParent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a section snapshot that contains the child items of the specified parent item, optionally including the parent item.
 
@@ -10,7 +11,7 @@ Creates a section snapshot that contains the child items of the specified parent
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ func snapshot(of parent: ItemIdentifierType, includingParent: Bool = false) -> N
 
 ## See Also
 
-- [init()](nsdiffabledatasourcesectionsnapshot-swift.struct/init.md)
+### Creating a section snapshot
+- [init()](./init%28%29.md)
   Creates an empty section snapshot.
-- [init(NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)](nsdiffabledatasourcesectionsnapshot-swift.struct/init(_:).md)
+- [init(NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)](./init%28_%29.md)
   Creates a copy of the provided section snapshot.
-- [func append([ItemIdentifierType], to: ItemIdentifierType?)](nsdiffabledatasourcesectionsnapshot-swift.struct/append(_:to:).md)
+- [func append([ItemIdentifierType], to: ItemIdentifierType?)](./append%28_,to%29.md)
   Adds the specified items as child items of the specified parent item in the section snapshot.
 
 

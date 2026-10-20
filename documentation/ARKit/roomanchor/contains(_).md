@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a room contains the provided point.
 
@@ -24,9 +25,10 @@ Returns `true` if the room contains the point, otherwise `false`.
 
 ## See Also
 
-- [func geometries(of: MeshAnchor.MeshClassification) -> [MeshAnchor.Geometry]](roomanchor/geometries(of:).md)
+### Inspecting a room anchor
+- [func geometries(of: MeshAnchor.MeshClassification) -> [MeshAnchor.Geometry]](./geometries%28of%29.md)
   Returns the disjoint mesh geometries of a given classification.
-- [var description: String](roomanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backing storage for action event types.
 
@@ -21,7 +22,8 @@ let rawValue: UInt
 
 ## See Also
 
-- [init(rawValue: UInt)](actioneventtype/init(rawvalue:).md)
+### Protocol support
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates an action event type from a raw value.
 
 

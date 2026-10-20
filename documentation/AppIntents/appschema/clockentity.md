@@ -1,7 +1,8 @@
 # AppSchema.ClockEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the clock domain.
 
@@ -21,25 +22,26 @@ protocol ClockEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var alarm: some AppSchemaEntity](appschema/clockentity/alarm.md)
+- [var alarm: some AppSchemaEntity](./clockentity/alarm.md)
   An entity schema for an alarm.
-- [var stopwatch: some AppSchemaEntity](appschema/clockentity/stopwatch.md)
+- [var stopwatch: some AppSchemaEntity](./clockentity/stopwatch.md)
   An entity schema for a stopwatch.
-- [var timer: some AppSchemaEntity](appschema/clockentity/timer.md)
+- [var timer: some AppSchemaEntity](./clockentity/timer.md)
   An entity schema for a timer.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var alarm: some AppSchemaEntity](appschema/clockentity/alarm.md)
+### Content and parameter types
+- [var alarm: some AppSchemaEntity](./clockentity/alarm.md)
   An entity schema for an alarm.
-- [var timer: some AppSchemaEntity](appschema/clockentity/timer.md)
+- [var timer: some AppSchemaEntity](./clockentity/timer.md)
   An entity schema for a timer.
 
 

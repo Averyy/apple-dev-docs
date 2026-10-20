@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tab bar controller’s delegate object.
 
@@ -9,7 +10,7 @@ The tab bar controller’s delegate object.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The tab bar controller’s delegate object.
 weak var delegate: (any UITabBarControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UITabBarControllerDelegate> delegate;
+```
+
 #### Discussion
 
-You can use the delegate object to track changes to the items in the tab bar and to monitor the selection of tabs. The delegate object you provide should conform to the [`UITabBarControllerDelegate`](uitabbarcontrollerdelegate.md) protocol. The default value for this property is `nil`.
+You can use the delegate object to track changes to the items in the tab bar and to monitor the selection of tabs. The delegate object you provide should conform to the [`UITabBarControllerDelegate`](../uitabbarcontrollerdelegate.md) protocol. The default value for this property is `nil`.
 
 ## See Also
 
-- [protocol UITabBarControllerDelegate](uitabbarcontrollerdelegate.md)
+### Customizing the tab bar behavior
+- [protocol UITabBarControllerDelegate](../uitabbarcontrollerdelegate.md)
   A set of methods you implement to customize the behavior of a tab bar.
-- [var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior](uitabbarcontroller/tabbarminimizebehavior.md)
+- [var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior](./tabbarminimizebehavior.md)
   Defines the minimize behavior for the tab bar, if it is supported.
-- [UITabBarController.MinimizeBehavior](uitabbarcontroller/minimizebehavior.md)
+- [UITabBarController.MinimizeBehavior](./minimizebehavior.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: TVUIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a monogram content view with the configuration you specify.
 
@@ -21,7 +22,8 @@ Creates a monogram content view with the configuration you specify.
 
 ## See Also
 
-- [struct TVMonogramContentConfiguration](tvmonogramcontentconfiguration-swift.struct.md)
+### Creating a Monogram Content View
+- [struct TVMonogramContentConfiguration](../tvmonogramcontentconfiguration-swift.struct.md)
   A content configuration for a monogram view.
 
 

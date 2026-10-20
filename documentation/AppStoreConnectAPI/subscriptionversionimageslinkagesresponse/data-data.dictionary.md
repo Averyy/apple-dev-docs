@@ -1,7 +1,8 @@
 # SubscriptionVersionImagesLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource linkage data identifying the related resource.
 
@@ -10,14 +11,14 @@ The resource linkage data identifying the related resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionVersionImagesLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionImages`
 
 
 ---

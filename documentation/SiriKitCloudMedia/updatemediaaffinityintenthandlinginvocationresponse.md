@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The service’s response to a request to process an update media affinity intent.
 
@@ -10,19 +11,24 @@ The service’s response to a request to process an update media affinity intent
 
 ## Declaration
 
-```swift
+```
 * UpdateMediaAffinityIntentHandlingInvocationResponse
 ```
 
+
+
+**Allowed Types**: `UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse`, `UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse`, `UpdateMediaAffinityIntentHandlingHandleInvocationResponse`, `ProtocolExceptionInvocationResponse`
+
 #### Discussion
 
-Allowed types: [`UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse`](updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse`](updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingHandleInvocationResponse`](updatemediaaffinityintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](protocolexceptioninvocationresponse.md)
+Allowed types: [`UpdateMediaAffinityIntentHandlingResolveMediaItemsInvocationResponse`](./updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse`](./updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md), [`UpdateMediaAffinityIntentHandlingHandleInvocationResponse`](./updatemediaaffinityintenthandlinghandleinvocationresponse.md), [`ProtocolExceptionInvocationResponse`](./protocolexceptioninvocationresponse.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityIntent](updatemediaaffinityintent.md)
+### Processing an Update Media Affinity Intent
+- [object UpdateMediaAffinityIntent](./updatemediaaffinityintent.md)
   An object that describes a user’s stated preference regarding media items.
-- [object UpdateMediaAffinityIntentHandlingInvocation](updatemediaaffinityintenthandlinginvocation.md)
+- [object UpdateMediaAffinityIntentHandlingInvocation](./updatemediaaffinityintenthandlinginvocation.md)
   A request to process an update media affinity intent.
 
 

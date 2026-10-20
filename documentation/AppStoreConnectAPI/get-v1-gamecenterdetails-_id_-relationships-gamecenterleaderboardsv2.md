@@ -1,7 +1,8 @@
 # Get All Leaderboard IDs for a Game Center Detail
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of leaderboard resource IDs for a specific Game Center detail.
 
@@ -25,18 +26,34 @@ Get a list of leaderboard resource IDs for a specific Game Center detail.
 
 ## Parameters
 
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`GameCenterDetailGameCenterLeaderboardsV2LinkagesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List All Game Center Leaderboards for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterleaderboardsv2.md)
+### Reading and editing Game Center detail leaderboards
+- [List All Game Center Leaderboards for a Game Center Detail](./get-v1-gamecenterdetails-_id_-gamecenterleaderboardsv2.md)
   Get a list of leaderboards for a specific Game Center detail.
-- [Read Leaderboard Releases](get-v1-gamecenterdetails-_id_-leaderboardreleases.md)
+- [Read Leaderboard Releases](./get-v1-gamecenterdetails-_id_-leaderboardreleases.md)
   List all leaderboard releases for a Game Center detail.
-- [List leaderboard release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-leaderboardreleases.md)
-- [Get leaderboards information](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md)
+- [List leaderboard release IDs for a Game Center detail](./get-v1-gamecenterdetails-_id_-relationships-leaderboardreleases.md)
+- [Get leaderboards information](./get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md)
   Get all leaderboards and related information for a Game Center detail.
-- [List Leaderboards](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
+- [List Leaderboards](./get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   ​List all leaderboards for a Game Center detail.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Touch Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

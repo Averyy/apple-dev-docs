@@ -1,7 +1,8 @@
 # init(engine:sourceGroups:targetGroups:gain:attackTime:releaseTime:attackCurve:releaseCurve:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that manages competing sounds.
 
@@ -17,6 +18,10 @@ Creates an object that manages competing sounds.
 
 ```swift
 init(engine: PHASEEngine, sourceGroups: Set<PHASEGroup>, targetGroups: Set<PHASEGroup>, gain: Double, attackTime: Double, releaseTime: Double, attackCurve: PHASECurveType, releaseCurve: PHASECurveType)
+```
+
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine sourceGroups:(NSSet<PHASEGroup *> *) sourceGroups targetGroups:(NSSet<PHASEGroup *> *) targetGroups gain:(double) gain attackTime:(double) attackTime releaseTime:(double) releaseTime attackCurve:(PHASECurveType) attackCurve releaseCurve:(PHASECurveType) releaseCurve;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # SecPolicySearch
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information about a policy search.
 
@@ -15,11 +16,15 @@ An object that contains information about a policy search.
 class SecPolicySearch
 ```
 
+```c
+typedef struct OpaquePolicySearchRef * SecPolicySearchRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

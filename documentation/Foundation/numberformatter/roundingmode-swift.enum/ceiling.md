@@ -1,7 +1,8 @@
 # NumberFormatter.RoundingMode.ceiling
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round towards positive infinity.
 
@@ -20,19 +21,24 @@ Round towards positive infinity.
 case ceiling
 ```
 
+```c
+NSNumberFormatterRoundCeiling
+```
+
 ## See Also
 
-- [NumberFormatter.RoundingMode.floor](numberformatter/roundingmode-swift.enum/floor.md)
+### Constants
+- [NumberFormatter.RoundingMode.floor](./floor.md)
   Round towards negative infinity.
-- [NumberFormatter.RoundingMode.down](numberformatter/roundingmode-swift.enum/down.md)
+- [NumberFormatter.RoundingMode.down](./down.md)
   Round towards zero.
-- [NumberFormatter.RoundingMode.up](numberformatter/roundingmode-swift.enum/up.md)
+- [NumberFormatter.RoundingMode.up](./up.md)
   Round away from zero.
-- [NumberFormatter.RoundingMode.halfEven](numberformatter/roundingmode-swift.enum/halfeven.md)
+- [NumberFormatter.RoundingMode.halfEven](./halfeven.md)
   Round towards the nearest integer, or towards an even number if equidistant.
-- [NumberFormatter.RoundingMode.halfDown](numberformatter/roundingmode-swift.enum/halfdown.md)
+- [NumberFormatter.RoundingMode.halfDown](./halfdown.md)
   Round towards the nearest integer, or towards zero if equidistant.
-- [NumberFormatter.RoundingMode.halfUp](numberformatter/roundingmode-swift.enum/halfup.md)
+- [NumberFormatter.RoundingMode.halfUp](./halfup.md)
   Round towards the nearest integer, or away from zero if equidistant.
 
 

@@ -1,7 +1,8 @@
 # LowLevelMeshResource.Attribute
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that determines how to store vertex attribute data in memory and map it to RealityKit custom shader attributes.
 
@@ -20,36 +21,37 @@ struct Attribute
 ## Topics
 
 ### Initializers
-- [init()](lowlevelmeshresource/attribute/init.md)
+- [init()](./attribute/init%28%29.md)
   Creates an attribute with all fields set to their zero/default values.
-- [init(semantic: LowLevelMeshResource.VertexSemantic, format: MTLVertexFormat, layoutIndex: Int, offset: Int)](lowlevelmeshresource/attribute/init(semantic:format:layoutindex:offset:).md)
+- [init(semantic: LowLevelMeshResource.VertexSemantic, format: MTLVertexFormat, layoutIndex: Int, offset: Int)](./attribute/init%28semantic,format,layoutindex,offset%29.md)
   Creates an attribute with the given semantic, format, layout index, and byte offset.
 ### Instance Properties
-- [var format: MTLVertexFormat](lowlevelmeshresource/attribute/format.md)
+- [var format: MTLVertexFormat](./attribute/format.md)
   The format of the vertex attribute.
-- [var layoutIndex: Int](lowlevelmeshresource/attribute/layoutindex.md)
+- [var layoutIndex: Int](./attribute/layoutindex.md)
   The index of the layout that contains this attribute.
-- [var offset: Int](lowlevelmeshresource/attribute/offset.md)
+- [var offset: Int](./attribute/offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
-- [var semantic: LowLevelMeshResource.VertexSemantic](lowlevelmeshresource/attribute/semantic.md)
+- [var semantic: LowLevelMeshResource.VertexSemantic](./attribute/semantic.md)
   The semantic of the vertex attribute, which describes how you want the renderer to interpret the attribute.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var descriptor: LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.property.md)
+### Describing the mesh layout
+- [var descriptor: LowLevelMeshResource.Descriptor](./descriptor-swift.property.md)
   The descriptor used to create this mesh resource.
-- [LowLevelMeshResource.Descriptor](lowlevelmeshresource/descriptor-swift.struct.md)
+- [LowLevelMeshResource.Descriptor](./descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMeshResource.Layout](lowlevelmeshresource/layout.md)
+- [LowLevelMeshResource.Layout](./layout.md)
   An object that describes a set of attributes that share a buffer index, offset, and stride.
-- [LowLevelMeshResource.VertexSemantic](lowlevelmeshresource/vertexsemantic.md)
+- [LowLevelMeshResource.VertexSemantic](./vertexsemantic.md)
   The intended usage of a vertex attribute.
 
 

@@ -1,7 +1,8 @@
 # init(receiveCompletion:receiveValue:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a sink with the provided closures.
 

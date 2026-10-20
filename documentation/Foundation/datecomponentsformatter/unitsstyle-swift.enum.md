@@ -1,7 +1,8 @@
 # DateComponentsFormatter.UnitsStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for specifying how to represent quantities of time.
 
@@ -20,6 +21,10 @@ Constants for specifying how to represent quantities of time.
 enum UnitsStyle
 ```
 
+```c
+enum NSDateComponentsFormatterUnitsStyle : NSInteger;
+```
+
 #### Overview
 
 All date and time values are localized and formatted according to the current user’s language preferences.
@@ -28,44 +33,45 @@ The following table shows how the quantity of 9 hours, 41 minutes, and 30 second
 
 | Style | Displayed result |
 | --- | --- |
-| [`DateComponentsFormatter.UnitsStyle.spellOut`](datecomponentsformatter/unitsstyle-swift.enum/spellout.md) | “nine hours, forty-one minutes, thirty seconds” |
-| [`DateComponentsFormatter.UnitsStyle.full`](datecomponentsformatter/unitsstyle-swift.enum/full.md) | “9 hours, 41 minutes, 30 seconds” |
-| [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md) | “9 hr, 41 min, 30 sec” |
-| [`DateComponentsFormatter.UnitsStyle.brief`](datecomponentsformatter/unitsstyle-swift.enum/brief.md) | “9hr 41min 30sec” |
-| [`DateComponentsFormatter.UnitsStyle.abbreviated`](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md) | “9h 41m 30s” |
-| [`DateComponentsFormatter.UnitsStyle.positional`](datecomponentsformatter/unitsstyle-swift.enum/positional.md) | “9:31:30” |
+| [`DateComponentsFormatter.UnitsStyle.spellOut`](./unitsstyle-swift.enum/spellout.md) | “nine hours, forty-one minutes, thirty seconds” |
+| [`DateComponentsFormatter.UnitsStyle.full`](./unitsstyle-swift.enum/full.md) | “9 hours, 41 minutes, 30 seconds” |
+| [`DateComponentsFormatter.UnitsStyle.short`](./unitsstyle-swift.enum/short.md) | “9 hr, 41 min, 30 sec” |
+| [`DateComponentsFormatter.UnitsStyle.brief`](./unitsstyle-swift.enum/brief.md) | “9hr 41min 30sec” |
+| [`DateComponentsFormatter.UnitsStyle.abbreviated`](./unitsstyle-swift.enum/abbreviated.md) | “9h 41m 30s” |
+| [`DateComponentsFormatter.UnitsStyle.positional`](./unitsstyle-swift.enum/positional.md) | “9:31:30” |
 
 ## Topics
 
 ### Styles
-- [DateComponentsFormatter.UnitsStyle.spellOut](datecomponentsformatter/unitsstyle-swift.enum/spellout.md)
+- [DateComponentsFormatter.UnitsStyle.spellOut](./unitsstyle-swift.enum/spellout.md)
   A style that spells out the units and quantities of time.
-- [DateComponentsFormatter.UnitsStyle.full](datecomponentsformatter/unitsstyle-swift.enum/full.md)
+- [DateComponentsFormatter.UnitsStyle.full](./unitsstyle-swift.enum/full.md)
   A style that spells out the units of time, but not the quantities.
-- [DateComponentsFormatter.UnitsStyle.short](datecomponentsformatter/unitsstyle-swift.enum/short.md)
+- [DateComponentsFormatter.UnitsStyle.short](./unitsstyle-swift.enum/short.md)
   A style that uses a shortened spelling for units.
-- [DateComponentsFormatter.UnitsStyle.brief](datecomponentsformatter/unitsstyle-swift.enum/brief.md)
-  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md).
-- [DateComponentsFormatter.UnitsStyle.abbreviated](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md)
+- [DateComponentsFormatter.UnitsStyle.brief](./unitsstyle-swift.enum/brief.md)
+  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](./unitsstyle-swift.enum/short.md).
+- [DateComponentsFormatter.UnitsStyle.abbreviated](./unitsstyle-swift.enum/abbreviated.md)
   A style that uses the most abbreviated spelling for units of time.
-- [DateComponentsFormatter.UnitsStyle.positional](datecomponentsformatter/unitsstyle-swift.enum/positional.md)
+- [DateComponentsFormatter.UnitsStyle.positional](./unitsstyle-swift.enum/positional.md)
   A style that uses the position of a unit of time to identify its value.
 ### Initializers
-- [init?(rawValue: Int)](datecomponentsformatter/unitsstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unitsstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [DateComponentsFormatter.ZeroFormattingBehavior](datecomponentsformatter/zeroformattingbehavior-swift.struct.md)
+### Constants
+- [DateComponentsFormatter.ZeroFormattingBehavior](./zeroformattingbehavior-swift.struct.md)
   Formatting constants for when values contain zeroes.
 
 

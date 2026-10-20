@@ -1,7 +1,8 @@
 # extensionNotFound
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,7 +16,8 @@ static var extensionNotFound: ASError.Code { get }
 
 ## See Also
 
-- [static var invalidRequest: ASError.Code](aserror/invalidrequest.md)
+### Configuration errors
+- [static var invalidRequest: ASError.Code](./invalidrequest.md)
 
 
 ---

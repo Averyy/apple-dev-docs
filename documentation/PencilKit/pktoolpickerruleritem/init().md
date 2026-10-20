@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new ruler item.
 
@@ -14,6 +15,10 @@ Creates a new ruler item.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

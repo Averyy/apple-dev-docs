@@ -1,7 +1,8 @@
 # label
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Label to use for location.
 
@@ -16,11 +17,12 @@ let label: String?
 
 ## See Also
 
-- [let method: RCSService.Business.ShowLocationAction.Method](rcsservice/business/showlocationaction/method-swift.property.md)
+### Accessing action properties
+- [let method: RCSService.Business.ShowLocationAction.Method](./method-swift.property.md)
   The method to use.
-- [RCSService.Business.ShowLocationAction.Method](rcsservice/business/showlocationaction/method-swift.enum.md)
+- [RCSService.Business.ShowLocationAction.Method](./method-swift.enum.md)
   Enumeration indicating method to use when searching for location.
-- [let fallbackURL: URL?](rcsservice/business/showlocationaction/fallbackurl.md)
+- [let fallbackURL: URL?](./fallbackurl.md)
   Fallback URL to use when unable to perform operation.
 
 

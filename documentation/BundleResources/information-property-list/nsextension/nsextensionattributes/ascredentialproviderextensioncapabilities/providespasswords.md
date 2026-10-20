@@ -1,7 +1,8 @@
 # ProvidesPasswords
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your credential provider extension provides passwords.
 
@@ -10,19 +11,23 @@ A Boolean value that indicates whether your credential provider extension provid
 - iPadOS 17.0+
 - macOS 14.0+
 
+## Details
+
+- **Name**: `ProvidesPasswords`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 ## See Also
 
-- [ProvidesPasskeys](information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities/providespasskeys.md)
+### Providing credentials
+- [ProvidesPasskeys](./providespasskeys.md)
   A Boolean value that indicates whether your credential provider extension provides passkeys.
-- [SupportsConditionalPasskeyRegistration](information-property-list/supportsconditionalpasskeyregistration.md)
+- [SupportsConditionalPasskeyRegistration](../../../supportsconditionalpasskeyregistration.md)
   Indicates that the credential provider supports automatic passkey upgrades.
-- [ProvidesOneTimeCodes](information-property-list/providesonetimecodes.md)
+- [ProvidesOneTimeCodes](../../../providesonetimecodes.md)
   Allows this credential provider to show up in one-time-code text fields, to allowing filling time-based verification codes.
 
 

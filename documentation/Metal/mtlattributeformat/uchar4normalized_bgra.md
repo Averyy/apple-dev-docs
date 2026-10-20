@@ -1,7 +1,8 @@
 # MTLAttributeFormat.uchar4Normalized_bgra
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Four unsigned normalized 8-bit values, arranged as blue, green, red, and alpha components.
 
@@ -19,15 +20,20 @@ Four unsigned normalized 8-bit values, arranged as blue, green, red, and alpha c
 case uchar4Normalized_bgra
 ```
 
+```c
+MTLAttributeFormatUChar4Normalized_BGRA
+```
+
 #### Discussion
 
 Use this representation when manipulating normalized 32-bit integer BGRA pixel formats.
 
 ## See Also
 
-- [MTLAttributeFormat.int1010102Normalized](mtlattributeformat/int1010102normalized.md)
+### 32-bit normalized integer formats
+- [MTLAttributeFormat.int1010102Normalized](./int1010102normalized.md)
   One packed 32-bit value with four normalized signed two’s complement integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
-- [MTLAttributeFormat.uint1010102Normalized](mtlattributeformat/uint1010102normalized.md)
+- [MTLAttributeFormat.uint1010102Normalized](./uint1010102normalized.md)
   One packed 32-bit value with four normalized unsigned integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
 
 

@@ -1,7 +1,8 @@
 # kMDItemExposureTimeSeconds
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The exposure time, in seconds, used to acquire the document contents. A CFNumber.
 
@@ -12,6 +13,10 @@ The exposure time, in seconds, used to acquire the document contents. A CFNumber
 
 ```swift
 let kMDItemExposureTimeSeconds: CFString!
+```
+
+```c
+const CFStringRef kMDItemExposureTimeSeconds;
 ```
 
 

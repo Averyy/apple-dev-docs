@@ -1,7 +1,8 @@
 # transcode(_:from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a scalar from another encoding’s representation, returning `nil` if the scalar can’t be represented in this encoding.
 

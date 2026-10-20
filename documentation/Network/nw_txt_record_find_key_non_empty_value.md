@@ -1,7 +1,8 @@
 # nw_txt_record_find_key_non_empty_value
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key has an associated value.
 
@@ -20,15 +21,20 @@ The key has an associated value.
 var nw_txt_record_find_key_non_empty_value: nw_txt_record_find_key_t { get }
 ```
 
+```c
+nw_txt_record_find_key_non_empty_value
+```
+
 ## See Also
 
-- [var nw_txt_record_find_key_invalid: nw_txt_record_find_key_t](nw_txt_record_find_key_invalid.md)
+### Key Value Status
+- [var nw_txt_record_find_key_invalid: nw_txt_record_find_key_t](./nw_txt_record_find_key_invalid.md)
   The key is not valid.
-- [var nw_txt_record_find_key_not_present: nw_txt_record_find_key_t](nw_txt_record_find_key_not_present.md)
+- [var nw_txt_record_find_key_not_present: nw_txt_record_find_key_t](./nw_txt_record_find_key_not_present.md)
   The key is not present in the dictionary.
-- [var nw_txt_record_find_key_no_value: nw_txt_record_find_key_t](nw_txt_record_find_key_no_value.md)
+- [var nw_txt_record_find_key_no_value: nw_txt_record_find_key_t](./nw_txt_record_find_key_no_value.md)
   The key is present but has no associated value.
-- [var nw_txt_record_find_key_empty_value: nw_txt_record_find_key_t](nw_txt_record_find_key_empty_value.md)
+- [var nw_txt_record_find_key_empty_value: nw_txt_record_find_key_t](./nw_txt_record_find_key_empty_value.md)
   The key is present and has an empty associated value.
 
 

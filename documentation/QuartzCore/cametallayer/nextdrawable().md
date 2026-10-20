@@ -1,7 +1,8 @@
 # nextDrawable()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits until a Metal drawable is available, and then returns it.
 
@@ -19,21 +20,26 @@ Waits until a Metal drawable is available, and then returns it.
 func nextDrawable() -> (any CAMetalDrawable)?
 ```
 
+```objc
+- (id<CAMetalDrawable>) nextDrawable;
+```
+
 #### Return Value
 
-A Metal drawable. Use the drawable’s [`texture`](cametaldrawable/texture.md) property to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](https://developer.apple.com/documentation/metal/mtlrenderpipelinecolorattachmentdescriptor) object for rendering to the layer.
+A Metal drawable. Use the drawable’s [`texture`](../cametaldrawable/texture.md) property to configure a [`MTLRenderPipelineColorAttachmentDescriptor`](../../Metal/mtlrenderpipelinecolorattachmentdescriptor.md) object for rendering to the layer.
 
 #### Discussion
 
-A [`CAMetalLayer`](cametallayer.md) object maintains an internal pool of textures for displaying layer content, each wrapped in a [`CAMetalDrawable`](cametaldrawable.md) object. Use this method to retrieve the next available drawable from the pool. If all drawables are in use, the layer waits up to one second for one to become available, after which it returns `nil`. The [`allowsNextDrawableTimeout`](cametallayer/allowsnextdrawabletimeout.md) property affects this behavior.
+A [`CAMetalLayer`](../cametallayer.md) object maintains an internal pool of textures for displaying layer content, each wrapped in a [`CAMetalDrawable`](../cametaldrawable.md) object. Use this method to retrieve the next available drawable from the pool. If all drawables are in use, the layer waits up to one second for one to become available, after which it returns `nil`. The [`allowsNextDrawableTimeout`](./allowsnextdrawabletimeout.md) property affects this behavior.
 
-This method returns `nil` if the layer’s [`pixelFormat`](cametallayer/pixelformat.md) or other properties are invalid.
+This method returns `nil` if the layer’s [`pixelFormat`](./pixelformat.md) or other properties are invalid.
 
 ## See Also
 
-- [var maximumDrawableCount: Int](cametallayer/maximumdrawablecount.md)
+### Obtaining a Metal Drawable
+- [var maximumDrawableCount: Int](./maximumdrawablecount.md)
   The number of Metal drawables in the resource pool managed by Core Animation.
-- [var allowsNextDrawableTimeout: Bool](cametallayer/allowsnextdrawabletimeout.md)
+- [var allowsNextDrawableTimeout: Bool](./allowsnextdrawabletimeout.md)
   A Boolean value that determines whether requests for a new buffer expire if the system can’t satisfy them.
 
 

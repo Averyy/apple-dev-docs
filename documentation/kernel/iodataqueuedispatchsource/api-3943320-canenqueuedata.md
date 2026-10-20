@@ -1,7 +1,8 @@
 # CanEnqueueData
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CanEnqueueData(uint32_t dataSize);
 ```
 

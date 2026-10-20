@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The particular configuration of joints that define a body’s current state.
 
@@ -15,11 +16,16 @@ The particular configuration of joints that define a body’s current state.
 var definition: ARSkeletonDefinition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ARSkeletonDefinition * definition;
+```
+
 ## See Also
 
-- [func isJointTracked(Int) -> Bool](arskeleton/isjointtracked(_:).md)
+### Getting Joint Information
+- [func isJointTracked(Int) -> Bool](./isjointtracked%28_%29.md)
   Tells you whether ARKit tracks a joint at a particular index.
-- [ARSkeleton.JointName](arskeleton/jointname.md)
+- [ARSkeleton.JointName](./jointname.md)
   A name identifier for a joint.
 
 

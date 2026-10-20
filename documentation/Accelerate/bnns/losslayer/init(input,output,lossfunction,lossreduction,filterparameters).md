@@ -1,7 +1,8 @@
 # init(input:output:lossFunction:lossReduction:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new loss layer.
 
@@ -11,8 +12,10 @@ Returns a new loss layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, l
 
 #### Discussion
 
-> ❗ **Important**:  The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](bnns/lossreduction/none.md).
+> ❗ **Important**:  The input data type and output data type must be `float`. The output size must be `1`, unless the reduction is [`BNNS.LossReduction.none`](../lossreduction/none.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # NSView.LayoutRegion.AdaptivityAxis
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 26.0+
@@ -15,14 +16,14 @@ enum AdaptivityAxis
 ## Topics
 
 ### Enumeration Cases
-- [NSView.LayoutRegion.AdaptivityAxis.horizontal](nsview/layoutregion/adaptivityaxis/horizontal.md)
-- [NSView.LayoutRegion.AdaptivityAxis.vertical](nsview/layoutregion/adaptivityaxis/vertical.md)
+- [NSView.LayoutRegion.AdaptivityAxis.horizontal](./adaptivityaxis/horizontal.md)
+- [NSView.LayoutRegion.AdaptivityAxis.vertical](./adaptivityaxis/vertical.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

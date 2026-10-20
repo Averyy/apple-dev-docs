@@ -1,30 +1,33 @@
 # AdditionalHeaderFieldsAreSupported
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean that indicates whether the app supports additional header fields in requests.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `AdditionalHeaderFieldsAreSupported`
+- **Type**: boolean
 
 #### Discussion
 
-Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionrequest/additionalheaderfields) property of an [`ASWebAuthenticationSessionRequest`](https://developer.apple.com/documentation/authenticationservices/aswebauthenticationsessionrequest).
+Set the corresponding value to `YES` to indicate that your browser uses the [`additionalHeaderFields`](../../../AuthenticationServices/aswebauthenticationsessionrequest/additionalheaderfields.md) property of an [`ASWebAuthenticationSessionRequest`](../../../AuthenticationServices/aswebauthenticationsessionrequest.md).
 
 > ❗ **Important**: If the system doesn’t find this key in the default browser app’s `Info.plist`, it sends the request to Safari instead.
 
 ## See Also
 
-- [IsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/issupported.md)
+### Capabilities
+- [IsSupported](./issupported.md)
   A Boolean that indicates whether the app acts as a browser that supports authentication sessions.
-- [EphemeralBrowserSessionIsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/ephemeralbrowsersessionissupported.md)
+- [EphemeralBrowserSessionIsSupported](./ephemeralbrowsersessionissupported.md)
   A Boolean that indicates whether the app supports ephemeral browsing when conducting authentication sessions.
-- [CallbackURLMatchingIsSupported](information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/callbackurlmatchingissupported.md)
+- [CallbackURLMatchingIsSupported](./callbackurlmatchingissupported.md)
   A Boolean that indicates whether the app can handle callbacks to match authentication URLs.
 
 

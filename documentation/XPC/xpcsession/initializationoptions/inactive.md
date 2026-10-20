@@ -1,7 +1,8 @@
 # inactive
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the session isn’t activated during its creation.
 
@@ -11,7 +12,7 @@ Indicates that the session isn’t activated during its creation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ static let inactive: XPCSession.InitializationOptions
 
 #### Discussion
 
-> ❗ **Important**:  If you create a session with this option, you must manually activate it by calling [`activate()`](xpcsession/activate().md).
+> ❗ **Important**:  If you create a session with this option, you must manually activate it by calling [`activate()`](../activate%28%29.md).
 
 ## See Also
 
-- [static let privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+### Session creation options
+- [static let privileged: XPCSession.InitializationOptions](./privileged.md)
   Indicates that the Mach service is in the priviledged Mach bootstrap.
-- [static let none: XPCSession.InitializationOptions](xpcsession/initializationoptions/none.md)
+- [static let none: XPCSession.InitializationOptions](./none.md)
   Indicates that the listener uses a default configuration during creation.
 
 

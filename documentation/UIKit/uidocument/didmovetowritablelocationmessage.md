@@ -1,7 +1,8 @@
 # UIDocument.DidMoveToWritableLocationMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,17 +19,17 @@ struct DidMoveToWritableLocationMessage
 ## Topics
 
 ### Initializers
-- [init(document: UIDocument, oldURL: URL)](uidocument/didmovetowritablelocationmessage/init(document:oldurl:).md)
+- [init(document: UIDocument, oldURL: URL)](./didmovetowritablelocationmessage/init%28document,oldurl%29.md)
 ### Instance Properties
-- [var document: UIDocument](uidocument/didmovetowritablelocationmessage/document.md)
-- [var oldURL: URL](uidocument/didmovetowritablelocationmessage/oldurl.md)
+- [var document: UIDocument](./didmovetowritablelocationmessage/document.md)
+- [var oldURL: URL](./didmovetowritablelocationmessage/oldurl.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

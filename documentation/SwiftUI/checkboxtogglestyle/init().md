@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a checkbox toggle style.
 
@@ -17,7 +18,7 @@ init()
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, use the [`checkbox`](togglestyle/checkbox.md) static variable to create this style:
+Don’t call this initializer directly. Instead, use the [`checkbox`](../togglestyle/checkbox.md) static variable to create this style:
 
 ```swift
 Toggle("Close windows when quitting an app", isOn: $doesClose)

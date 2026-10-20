@@ -1,7 +1,8 @@
 # fit(to:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Fits the annotation to the given boundary, adjusting its position to ensure it doesn’t overflow.
 

@@ -1,7 +1,8 @@
 # MaterialParameterTypes.FaceCulling
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that defines how the system removes polygons before rendering a scene.
 
@@ -11,7 +12,7 @@ An object that defines how the system removes polygons before rendering a scene.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,18 +27,18 @@ To improve performance, RealityKit culls polygons, or faces, that it determines 
 ## Topics
 
 ### Face culling
-- [MaterialParameterTypes.FaceCulling.front](materialparametertypes/faceculling/front.md)
+- [MaterialParameterTypes.FaceCulling.front](./faceculling/front.md)
   The system culls front-facing polygons.
-- [MaterialParameterTypes.FaceCulling.back](materialparametertypes/faceculling/back.md)
+- [MaterialParameterTypes.FaceCulling.back](./faceculling/back.md)
   The system culls back-facing polygons.
-- [MaterialParameterTypes.FaceCulling.none](materialparametertypes/faceculling/none.md)
+- [MaterialParameterTypes.FaceCulling.none](./faceculling/none.md)
   The system doesn’t cull polygons.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

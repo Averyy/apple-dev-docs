@@ -1,17 +1,24 @@
 # playthroughOK
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 static var playthroughOK: MPMovieLoadState { get }
+```
+
+```c
+MPMovieLoadStatePlaythroughOK
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ Enough data has been buffered for playback to continue uninterrupted.
 
 ## See Also
 
-- [static var playable: MPMovieLoadState](mpmovieloadstate/playable.md)
-- [static var stalled: MPMovieLoadState](mpmovieloadstate/stalled.md)
+### Constants
+- [static var playable: MPMovieLoadState](./playable.md)
+- [static var stalled: MPMovieLoadState](./stalled.md)
 
 
 ---

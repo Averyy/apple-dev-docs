@@ -1,7 +1,8 @@
 # Precipitation.rain
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rain.
 
@@ -22,15 +23,16 @@ case rain
 
 ## See Also
 
-- [Precipitation.hail](precipitation/hail.md)
+### Specifying precipitation types
+- [Precipitation.hail](./hail.md)
   A form of precipitation consisting of solid ice.
-- [Precipitation.mixed](precipitation/mixed.md)
+- [Precipitation.mixed](./mixed.md)
   Wintry Mix.
-- [Precipitation.sleet](precipitation/sleet.md)
+- [Precipitation.sleet](./sleet.md)
   A form of precipitation consisting of ice pellets.
-- [Precipitation.snow](precipitation/snow.md)
+- [Precipitation.snow](./snow.md)
   Snow.
-- [Precipitation.none](precipitation/none.md)
+- [Precipitation.none](./none.md)
   No precipitation.
 
 

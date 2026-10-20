@@ -1,7 +1,8 @@
 # CLGeocodeCompletionHandler
 
 **Framework**: Core Location  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block to be called when a geocoding request is complete.
 
@@ -20,21 +21,26 @@ A block to be called when a geocoding request is complete.
 typealias CLGeocodeCompletionHandler = ([CLPlacemark]?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSArray<CLPlacemark *> *, NSError *) CLGeocodeCompletionHandler;
+```
+
 #### Discussion
 
 Upon completion of a geocoding request, a block of this form is called to give you a chance to process the results. The parameters of this block are as follows:
 
-- **`placemark`**: Contains an array of [`CLPlacemark`](clplacemark.md) objects. For most geocoding requests, this array should contain only one entry. However, forward-geocoding requests may return multiple placemark objects in situations where the specified address could not be resolved to a single location.
+- **`placemark`**: Contains an array of [`CLPlacemark`](./clplacemark.md) objects. For most geocoding requests, this array should contain only one entry. However, forward-geocoding requests may return multiple placemark objects in situations where the specified address could not be resolved to a single location.
 
 If the request was canceled or there was an error in obtaining the placemark information, this parameter is `nil`.
 
-- **`error`**: Contains `nil` or an error object indicating why the placemark data was not returned. For a list of possible error codes, see [`CLError.Code`](clerror-swift.struct/code.md).
+- **`error`**: Contains `nil` or an error object indicating why the placemark data was not returned. For a list of possible error codes, see [`CLError.Code`](./clerror-swift.struct/code.md).
 
 ## See Also
 
-- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
+### Reverse geocoding a location
+- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/reversegeocodelocation%28_,preferredlocale,completionhandler%29.md)
   Submits a reverse-geocoding request for the specified location and locale.
-- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/reversegeocodelocation%28_,completionhandler%29.md)
   Submits a reverse-geocoding request for the specified location.
 
 

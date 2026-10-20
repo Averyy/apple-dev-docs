@@ -1,7 +1,8 @@
 # referenceImage
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected image referenced by the image anchor.
 
@@ -15,9 +16,13 @@ The detected image referenced by the image anchor.
 var referenceImage: ARReferenceImage { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) ARReferenceImage * referenceImage;
+```
+
 #### Discussion
 
-This object is always one of the [`ARReferenceImage`](arreferenceimage.md) objects you provided in the [`detectionImages`](arworldtrackingconfiguration/detectionimages.md) array when configuring the session.
+This object is always one of the [`ARReferenceImage`](../arreferenceimage.md) objects you provided in the [`detectionImages`](../arworldtrackingconfiguration/detectionimages.md) array when configuring the session.
 
 
 ---

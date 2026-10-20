@@ -1,7 +1,8 @@
 # init(systemName:variableValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a system symbol image with a variable value.
 
@@ -22,7 +23,7 @@ init(systemName: String, variableValue: Double?)
 
 #### Discussion
 
-This initializer creates an image using a system-provided symbol. The rendered symbol may alter its appearance to represent the value provided in `variableValue`. Use [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/resources/#sf-symbols) (version 4.0 or later) to find system symbols that support variable values and their corresponding names.
+This initializer creates an image using a system-provided symbol. The rendered symbol may alter its appearance to represent the value provided in `variableValue`. Use [SF Symbols](https://developer.apple.com/design/resources/#sf-symbols) (version 4.0 or later) to find system symbols that support variable values and their corresponding names.
 
 The following example shows the effect of creating the `"chart.bar.fill"` symbol with different values.
 
@@ -35,9 +36,9 @@ HStack{
 .font(.system(.largeTitle))
 ```
 
-![Three instances of the bar chart symbol, arranged horizontally.](/images/com.apple.SwiftUI/Image-3@2x.png)
+![Three instances of the bar chart symbol, arranged horizontally.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Image-3@2x.png)
 
-To create a custom symbol image from your app’s asset catalog, use [`init(_:variableValue:bundle:)`](image/init(_:variablevalue:bundle:).md) instead.
+To create a custom symbol image from your app’s asset catalog, use [`init(_:variableValue:bundle:)`](./init%28_,variablevalue,bundle%29.md) instead.
 
 ## Parameters
 
@@ -46,7 +47,8 @@ To create a custom symbol image from your app’s asset catalog, use [`init(_:va
 
 ## See Also
 
-- [init(systemName: String)](image/init(systemname:).md)
+### Creating a system symbol image
+- [init(systemName: String)](./init%28systemname%29.md)
   Creates a system symbol image.
 
 

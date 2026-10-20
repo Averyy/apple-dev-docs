@@ -1,27 +1,32 @@
 # Setting up access to ARKit data
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Check whether your app can use ARKit and respect people’s privacy.
 
 #### Overview
 
-##### Add Usage Descriptions for Arkit Data Access
+In visionOS, ARKit can enable new kinds of experiences that leverage data such as hand tracking and world sensing. The system gates access to this kind of sensitive information. Because people can decline your app’s request to use ARKit data or revoke access later, you need to provide alternative ways to use your app and to handle cases where your app loses access to data.
+
+![A screenshot that shows the system permission alert for hand tracking. The options are Don't Allow and OK. The app-specific usage description is Track your hands to detect a heart gesture.](https://developer.apple.com/tutorials/images/com.apple.visionOS/request-data@2x.png)
+
+##### Add usage descriptions for ARKit data access
 
 People need to know why your app wants to access data from ARKit. Add the following keys to your app’s information property list to provide a user-facing usage description that explains how your app uses the data:
 
-- **[`NSHandsTrackingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshandstrackingusagedescription)**: Use this key if your app uses hand tracking.
-- **[`NSWorldSensingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsworldsensingusagedescription)**: Use this key if your app uses image tracking, plane detection, or scene reconstruction.
+- **[`NSHandsTrackingUsageDescription`](../BundleResources/information-property-list/nshandstrackingusagedescription.md)**: Use this key if your app uses hand tracking.
+- **[`NSWorldSensingUsageDescription`](../BundleResources/information-property-list/nsworldsensingusagedescription.md)**: Use this key if your app uses image tracking, plane detection, or scene reconstruction.
 
-> **Note**: World *tracking* — unlike world *sensing* — doesn’t require authorization. For more information, see [`Tracking specific points in world space`](tracking-points-in-world-space.md).
+> **Note**: World *tracking* — unlike world *sensing* — doesn’t require authorization. For more information, see [Tracking specific points in world space](./tracking-points-in-world-space.md).
 
-##### Choose Between Up Front or As Needed Authorization
+##### Choose between up-front or as-needed authorization
 
-You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](https://developer.apple.com/documentation/arkit/arkitsession/requestauthorization(for:)) method on [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](https://developer.apple.com/documentation/arkit/arkitsession/run(_:)) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
+You can choose when someone sees an authorization request to use ARKit data. If you need precise control over when the request appears, call the [`requestAuthorization(for:)`](../ARKit/arkitsession/requestauthorization%28for%29.md) method on [`ARKitSession`](../ARKit/arkitsession.md) to explicitly authorize access at the time you call it. Otherwise, people see an authorization request when you call the [`run(_:)`](../ARKit/arkitsession/run%28_%29.md) method. This is an implicit authorization because the timing of the request depends entirely on when you start the session.
 
-##### Open a Space and Run a Session
+##### Open a space and run a session
 
-To help protect people’s privacy, ARKit data is available only when your app presents a Full Space and other apps are hidden. Present one of these space styles before calling the [`run(_:)`](https://developer.apple.com/documentation/arkit/arkitsession/run(_:)) method.
+To help protect people’s privacy, ARKit data is available only when your app presents a Full Space and other apps are hidden. Present one of these space styles before calling the [`run(_:)`](../ARKit/arkitsession/run%28_%29.md) method.
 
 The following shows an app structure that’s set up to use a space with ARKit:
 
@@ -56,7 +61,7 @@ struct MyApp: App {
 }
 ```
 
-Call [`openImmersiveSpace`](https://developer.apple.com/documentation/swiftui/environmentvalues/openimmersivespace) from your app’s user interface to create a space, start running an ARKit session, and kick off an immersive experience. The following shows a simple view with a button that opens the space:
+Call [`openImmersiveSpace`](../SwiftUI/environmentvalues/openimmersivespace.md) from your app’s user interface to create a space, start running an ARKit session, and kick off an immersive experience. The following shows a simple view with a button that opens the space:
 
 ```swift
 struct ContentView: View {
@@ -72,7 +77,7 @@ struct ContentView: View {
 }
 ```
 
-##### Provide Alternatives for Declined and Revoked Authorizations
+##### Provide alternatives for declined and revoked authorizations
 
 Someone might not want to give your app access to data from ARKit, or they might choose to revoke that access later in Settings. Handle these situations gracefully, and remove or transition content that depends on ARKit data. For example, you might fade out content that you need to remove, or recenter content to an appropriate starting position. If your app uses ARKit data to place content in a person’s surroundings, consider letting people place content using the system-provided interface.
 
@@ -80,29 +85,30 @@ Providing alternatives is especially important if you’re using ARKit for user 
 
 ## See Also
 
-- [Happy Beam](happybeam.md)
+### ARKit
+- [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Incorporating real-world surroundings in an immersive experience](incorporating-real-world-surroundings-in-an-immersive-experience.md)
+- [Incorporating real-world surroundings in an immersive experience](./incorporating-real-world-surroundings-in-an-immersive-experience.md)
   Create an immersive experience by making your app’s content respond to the local shape of the world.
-- [Placing content on detected planes](placing-content-on-detected-planes.md)
+- [Placing content on detected planes](./placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [Tracking specific points in world space](tracking-points-in-world-space.md)
+- [Tracking specific points in world space](./tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Tracking preregistered images in 3D space](tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](./tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](./exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
+- [Object tracking with Reality Composer Pro experiences](./object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](./building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](./placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+- [Drawing in the air and on surfaces with a spatial stylus](./drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](./working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 

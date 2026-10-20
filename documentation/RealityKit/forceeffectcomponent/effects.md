@@ -1,7 +1,8 @@
 # effects
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 One or more effects used to simulate forces.
 

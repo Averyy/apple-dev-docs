@@ -1,12 +1,13 @@
 # revision(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a requirement for a source control revision such as the hash of a commit.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # tcpi_last_outif
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 int32_t tcpi_last_outif;
 ```
 

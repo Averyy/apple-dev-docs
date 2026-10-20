@@ -1,7 +1,8 @@
 # kCGImagePropertyWidth
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The width of the image, in the image’s coordinate space.
 
@@ -20,15 +21,20 @@ The width of the image, in the image’s coordinate space.
 let kCGImagePropertyWidth: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyWidth;
+```
+
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kCGImagePropertyHeight: CFString](kcgimagepropertyheight.md)
+### Image Size
+- [let kCGImagePropertyHeight: CFString](./kcgimagepropertyheight.md)
   The height of the image, in the image’s coordinate space.
-- [let kCGImagePropertyBytesPerRow: CFString](kcgimagepropertybytesperrow.md)
+- [let kCGImagePropertyBytesPerRow: CFString](./kcgimagepropertybytesperrow.md)
   The total number of bytes in each row of the image.
 
 

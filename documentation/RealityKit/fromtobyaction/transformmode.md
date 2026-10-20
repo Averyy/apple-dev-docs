@@ -1,7 +1,8 @@
 # FromToByAction.TransformMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options available to determine the space the bound entity should be relative to.
 
@@ -21,29 +22,29 @@ enum TransformMode
 
 #### Overview
 
-The [`FromToByAction`](fromtobyaction.md) structure accepts this enumeration as an initializer argument when the [`FromToByAction`](fromtobyaction.md) value is a [`Transform`](transform.md) type.
+The [`FromToByAction`](../fromtobyaction.md) structure accepts this enumeration as an initializer argument when the [`FromToByAction`](../fromtobyaction.md) value is a [`Transform`](../transform.md) type.
 
 ## Topics
 
 ### Enumeration Cases
-- [FromToByAction.TransformMode.local](fromtobyaction/transformmode/local.md)
+- [FromToByAction.TransformMode.local](./transformmode/local.md)
   The provided transforms are relative to the transform of the bound entity.
-- [FromToByAction.TransformMode.parent](fromtobyaction/transformmode/parent.md)
+- [FromToByAction.TransformMode.parent](./transformmode/parent.md)
   The provided transforms are relative to the bound entities parent transform.
-- [FromToByAction.TransformMode.relative(to:)](fromtobyaction/transformmode/relative(to:).md)
+- [FromToByAction.TransformMode.relative(to:)](./transformmode/relative%28to%29.md)
   The provided transforms are relative to the resolved entities transform.
-- [FromToByAction.TransformMode.scene](fromtobyaction/transformmode/scene.md)
+- [FromToByAction.TransformMode.scene](./transformmode/scene.md)
   The provided transform is relative to the scene, in world space.
 ### Type Properties
-- [static var `default`: FromToByAction<Value>.TransformMode](fromtobyaction/transformmode/default.md)
+- [static var `default`: FromToByAction<Value>.TransformMode](./transformmode/default.md)
   Default transform mode used by the specializations which use transform mode.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

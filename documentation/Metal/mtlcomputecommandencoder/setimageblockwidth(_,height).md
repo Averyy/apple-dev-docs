@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the size, in pixels, of imageblock data in tile memory.
@@ -20,13 +21,17 @@ Sets the size, in pixels, of imageblock data in tile memory.
 func setImageblockWidth(_ width: Int, height: Int)
 ```
 
+```objc
+- (void) setImageblockWidth:(NSUInteger) width height:(NSUInteger) height;
+```
+
 #### Discussion
 
-> ❗ **Important**:  The sum of all threadgroup memory allocations (whether made using this method or directly in the shader) can’t exceed the device limits for threadgroup memory. Check threadgroup memory limits with the [`staticThreadgroupMemoryLength`](mtlcomputepipelinestate/staticthreadgroupmemorylength.md) property.
+> ❗ **Important**:  The sum of all threadgroup memory allocations (whether made using this method or directly in the shader) can’t exceed the device limits for threadgroup memory. Check threadgroup memory limits with the [`staticThreadgroupMemoryLength`](../mtlcomputepipelinestate/staticthreadgroupmemorylength.md) property.
 
-Both imageblocks and threadgroup memory share the available space you can reserve in tile memory, so the sum of these allocations can’t exceed the maximum total tile memory limit. To find the amount of memory used by an imageblock, call [`imageblockMemoryLength(forDimensions:)`](mtlcomputepipelinestate/imageblockmemorylength(fordimensions:).md). Kernels accessing an imageblock argument from threadgroup memory have the `[[threadgroup_imageblock]]` attribute.
+Both imageblocks and threadgroup memory share the available space you can reserve in tile memory, so the sum of these allocations can’t exceed the maximum total tile memory limit. To find the amount of memory used by an imageblock, call [`imageblockMemoryLength(forDimensions:)`](../mtlcomputepipelinestate/imageblockmemorylength%28fordimensions%29.md). Kernels accessing an imageblock argument from threadgroup memory have the `[[threadgroup_imageblock]]` attribute.
 
-To learn more about using imageblocks, see the following sections in the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/metal-shading-language-specification.pdf#//apple_ref/doc/uid/TP40014364-CH4-SW5):
+To learn more about using imageblocks, see the following sections in the [Metal Shading Language Specification](https://developer.apple.com/metal/metal-shading-language-specification.pdf#//apple_ref/doc/uid/TP40014364-CH4-SW5):
 
 - For information on the `threadgroup_imageblock` address space, see Section 4.5.
 - For information on the `imageblock` type, see Section 2.11.
@@ -38,7 +43,8 @@ To learn more about using imageblocks, see the following sections in the [`Metal
 
 ## See Also
 
-- [func setThreadgroupMemoryLength(Int, index: Int)](mtlcomputecommandencoder/setthreadgroupmemorylength(_:index:).md)
+### Configuring tile memory
+- [func setThreadgroupMemoryLength(Int, index: Int)](./setthreadgroupmemorylength%28_,index%29.md)
   Configures the size of a block of threadgroup memory.
 
 

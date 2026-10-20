@@ -1,7 +1,8 @@
 # mail
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of enum schemas in the mail domain.
 
@@ -17,6 +18,8 @@ The collection of enum schemas in the mail domain.
 ```swift
 static var mail: some AppSchema.MailEnum { get }
 ```
+
+Available when `Self` is `AppSchema.Enum`.
 
 
 ---

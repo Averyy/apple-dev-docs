@@ -1,14 +1,15 @@
 # IOUSBHostCICapabilitiesMessageData0CommandTimeoutThresholdPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCICapabilitiesMessageData0CommandTimeoutThresholdPhase = IOUSBBitRangePhase(0, 1)
 ```
 

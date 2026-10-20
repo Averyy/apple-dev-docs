@@ -1,7 +1,8 @@
 # scope
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scope of where bloom will be computed
 
@@ -27,7 +28,8 @@ If set to hierarchical, bloom will only be computed in regions near the entity h
 
 ## See Also
 
-- [BloomComponent.BloomScope](bloomcomponent/bloomscope.md)
+### Configuring the bloom scope
+- [BloomComponent.BloomScope](./bloomscope.md)
 
 
 ---

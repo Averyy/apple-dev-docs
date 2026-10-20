@@ -1,7 +1,8 @@
 # AccessorySecuritySession.Request
 
 **Framework**: Accessory Transport Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A structure that represents an incoming security session request.
 
@@ -16,19 +17,19 @@ final class Request
 
 #### Overview
 
-The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol’s [`accept(sessionRequest:)`](accessorytransportsecurity/accept(sessionrequest:).md) method receives requests of this type.
+The [`AccessoryTransportSecurity`](../accessorytransportsecurity.md) protocol’s [`accept(sessionRequest:)`](../accessorytransportsecurity/accept%28sessionrequest%29.md) method receives requests of this type.
 
 ## Topics
 
 ### Responding to the request
-- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/accept(_:).md)
+- [func accept<Handler>(() -> Handler) -> AccessorySecuritySession.Request.Decision](./request/accept%28_%29.md)
   Accepts the session request with an event handler.
-- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/reject(error:).md)
+- [func reject(error: AccessorySecuritySession.Error?) -> AccessorySecuritySession.Request.Decision](./request/reject%28error%29.md)
   Rejects the session request with an optional error.
-- [AccessorySecuritySession.Request.Decision](accessorysecuritysession/request/decision.md)
+- [AccessorySecuritySession.Request.Decision](./request/decision.md)
   A structure that represents the decision to accept or reject a session request.
 ### Accessing the session
-- [let session: AccessorySecuritySession](accessorysecuritysession/request/session.md)
+- [let session: AccessorySecuritySession](./request/session.md)
   A security session object for the request.
 
 

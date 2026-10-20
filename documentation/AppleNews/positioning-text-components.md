@@ -1,12 +1,13 @@
 # Positioning Text Components
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Adjust the positions of the text components in your article—for example, place the article body off-center.
 
 #### Overview
 
-In [`Creating Your First Article`](creating-your-first-article.md), you added some text components and component text styles to your article.
+In [Creating Your First Article](./creating-your-first-article.md), you added some text components and component text styles to your article.
 
 **On this page, you’ll learn how to control:**
 
@@ -14,17 +15,17 @@ In [`Creating Your First Article`](creating-your-first-article.md), you added so
 - How wide the text components are
 - The vertical spacing between the text components
 
-##### Define Basic Componentlayout Objects
+##### Define Basic ComponentLayout Objects
 
 `ComponentLayout` objects determine the placement of components in your article.
 
-1. Copy the example code [`Basic ComponentLayout Objects: Copy This Code`](positioning-text-components#Basic-ComponentLayout-Objects-Copy-This-Code.md).
+1. Copy the example code [Basic ComponentLayout Objects: Copy This Code](./positioning-text-components.md#Basic-ComponentLayout-Objects-Copy-This-Code).
 2. In your `article.json` file, select this line: `"componentLayouts": {},`
 3. Paste the copied code into `article.json`, replacing the line that you selected in the previous step.
 
 > **Note**:  The names of these `ComponentLayout` objects were created for this tutorial; when you create your own articles, you can create your own `ComponentLayout` object names. For the purposes of this tutorial, a “full” margin was considered to be a 24-point space above a or below a component, a “half” margin to be a 12-point space, and a “quarter” margin to be a 6-point space.
 
-###### Basic Componentlayout Objects Copy This Code
+###### Basic ComponentLayout Objects: Copy This Code
 
 ```json
   "componentLayouts": {
@@ -65,15 +66,15 @@ In [`Creating Your First Article`](creating-your-first-article.md), you added so
   },
 ```
 
-##### Use Componentlayout Objects in Text Components
+##### Use ComponentLayout Objects in Text Components
 
 Now that you have defined some `ComponentLayout` objects, you can use them in one or more components.
 
-Add references to `ComponentLayout` objects inside components as shown in the example code [`Positioning Text Components: Result`](positioning-text-components#Positioning-Text-Components-Result.md). In each object, use `"layout"` as the property name and the name of the `ComponentLayout` object as the property value.
+Add references to `ComponentLayout` objects inside components as shown in the example code [Positioning Text Components: Result](./positioning-text-components.md#Positioning-Text-Components-Result). In each object, use `"layout"` as the property name and the name of the `ComponentLayout` object as the property value.
 
 After you make this change in your code, you can preview your working `article.json` file in News Preview to see changes in the positioning of your components. For example, your article now has a wide right margin when viewed on an iPad.
 
-###### Positioning Text Components Result
+###### Positioning Text Components: Result
 
 Ellipses (`...`) indicate lines of code that have been omitted from this example.
 
@@ -170,39 +171,41 @@ Ellipses (`...`) indicate lines of code that have been omitted from this example
 
 ##### Previous
 
-[`Creating Your First Article`](creating-your-first-article.md)
+[Creating Your First Article](./creating-your-first-article.md)
 
 ##### Next
 
-[`Adding a Divider`](adding-a-divider.md)
+[Adding a Divider](./adding-a-divider.md)
 
 ## See Also
 
-- [Positioning the Content in Your Article](positioning-the-content-in-your-article.md)
+### Related Documentation
+- [Positioning the Content in Your Article](./positioning-the-content-in-your-article.md)
   Align article components with columns in your layout.
-- [object ComponentLayout](../applenewsformat/componentlayout.md)
+- [object ComponentLayout](https://developer.apple.com/documentation/applenewsformat/componentlayout)
   The object for defining the positioning for a specific component within the article’s column system.
-- [Planning the Layout for Your Article](planning-the-layout-for-your-article.md)
+- [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md)
   Define a layout that supports the look you want for your article.
-- [Setting Up the Introductory Tutorial](setting-up-the-introductory-tutorial.md)
+### Introductory Design Tutorial
+- [Setting Up the Introductory Tutorial](./setting-up-the-introductory-tutorial.md)
   Download the tutorial files, and learn about what you’ll create in the introductory tutorial.
-- [Creating Your First Article](creating-your-first-article.md)
+- [Creating Your First Article](./creating-your-first-article.md)
   Create an article with text components and component text styles.
-- [Adding a Divider](adding-a-divider.md)
+- [Adding a Divider](./adding-a-divider.md)
   Create a horizontal, styled divider that extends to the right edge of the display.
-- [Adding an Image and Captions](adding-an-image-and-captions.md)
+- [Adding an Image and Captions](./adding-an-image-and-captions.md)
   Create a photo that extends to both edges of the display, with captions that appear in the article layout and in full-screen view.
-- [Adding a Pull Quote](adding-a-pull-quote.md)
+- [Adding a Pull Quote](./adding-a-pull-quote.md)
   Break an existing body component into two components, and then insert a pull quote between them.
-- [Adding a Gallery of Images](adding-a-gallery-of-images.md)
+- [Adding a Gallery of Images](./adding-a-gallery-of-images.md)
   Display three images as a sequential gallery.
-- [Adding a Mosaic of Images](adding-a-mosaic-of-images.md)
+- [Adding a Mosaic of Images](./adding-a-mosaic-of-images.md)
   Display five images as mosaic tiles.
-- [Adding a Tweet](adding-a-tweet.md)
+- [Adding a Tweet](./adding-a-tweet.md)
   Include a tweet in an article.
-- [Adding a Podcast](adding-a-podcast.md)
+- [Adding a Podcast](./adding-a-podcast.md)
   Add a link to a podcast that displays the podcast artwork and the podcast show or episode information.
-- [Viewing the Finished Article for the Introductory Design Tutorial](viewing-the-finished-article-for-the-introductory-design-tutorial.md)
+- [Viewing the Finished Article for the Introductory Design Tutorial](./viewing-the-finished-article-for-the-introductory-design-tutorial.md)
   See the full JSON code from this tutorial.
 
 

@@ -1,7 +1,8 @@
 # dateLastModified
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date on which the object was last modified.
 
@@ -18,9 +19,14 @@ The date on which the object was last modified.
 var dateLastModified: Date { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSDate * dateLastModified;
+```
+
 ## See Also
 
-- [var dateCreated: Date](clsobject/datecreated.md)
+### Accessing Object Information
+- [var dateCreated: Date](./datecreated.md)
   The date on which the object was created.
 
 

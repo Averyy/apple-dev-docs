@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The monochrome color to apply to the image.
@@ -11,7 +12,7 @@ The monochrome color to apply to the image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The monochrome color to apply to the image.
 var color: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](cicolormonochrome/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var intensity: Float](cicolormonochrome/intensity.md)
+- [var intensity: Float](./intensity.md)
   The intensity of the monochrome effect.
 
 

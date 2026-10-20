@@ -1,7 +1,8 @@
 # legibilityWeight
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font weight to apply to text.
 
@@ -26,11 +27,12 @@ This value reflects the value of the Bold Text display setting found in the Acce
 
 ## See Also
 
-- [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)
+### Improving legibility
+- [var accessibilityReduceTransparency: Bool](./accessibilityreducetransparency.md)
   Whether the system preference for Reduce Transparency is enabled.
-- [enum LegibilityWeight](legibilityweight.md)
+- [enum LegibilityWeight](../legibilityweight.md)
   The Accessibility Bold Text user setting options.
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+- [var accessibilityShowButtonShapes: Bool](./accessibilityshowbuttonshapes.md)
   Whether the system preference for Show Button Shapes is enabled.
 
 

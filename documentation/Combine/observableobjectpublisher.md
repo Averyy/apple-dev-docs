@@ -1,7 +1,8 @@
 # ObservableObjectPublisher
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A publisher that publishes changes from observable objects.
 
@@ -23,20 +24,21 @@ final class ObservableObjectPublisher
 ## Topics
 
 ### Creating an observable object publisher
-- [init()](observableobjectpublisher/init.md)
+- [init()](./observableobjectpublisher/init%28%29.md)
   Creates an observable object publisher instance.
 ### Delivering elements to subscribers
-- [func send()](observableobjectpublisher/send.md)
+- [func send()](./observableobjectpublisher/send%28%29.md)
   Sends the changed value to the downstream subscriber.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [protocol ObservableObject](observableobject.md)
+### Observable Objects
+- [protocol ObservableObject](./observableobject.md)
   A type of object with a publisher that emits before the object has changed.
 
 

@@ -1,7 +1,8 @@
 # errorStateLabel
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var errorStateLabel: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * errorStateLabel;
 ```
 
 

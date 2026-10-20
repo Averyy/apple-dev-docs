@@ -1,7 +1,8 @@
 # paymentMode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payment mode for a subscription offer on an auto-renewable subscription that applies to the transaction.
 
@@ -22,19 +23,20 @@ let paymentMode: Transaction.Offer.PaymentMode?
 
 #### Discussion
 
-You set up subscription offers and determine the payment mode when you configure subscriptions in App Store Connect. For more information about the Free Trial ([`freeTrial`](transaction/offer-swift.struct/paymentmode-swift.struct/freetrial.md)), Pay As You Go ([`payAsYouGo`](transaction/offer-swift.struct/paymentmode-swift.struct/payasyougo.md)), and Pay Up Front ([`payUpFront`](transaction/offer-swift.struct/paymentmode-swift.struct/payupfront.md)) payment modes, see [`Pricing and availability`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/pricing-and-availability).
+You set up subscription offers and determine the payment mode when you configure subscriptions in App Store Connect. For more information about the Free Trial ([`freeTrial`](./paymentmode-swift.struct/freetrial.md)), Pay As You Go ([`payAsYouGo`](./paymentmode-swift.struct/payasyougo.md)), and Pay Up Front ([`payUpFront`](./paymentmode-swift.struct/payupfront.md)) payment modes, see [Pricing and availability](https://developer.apple.com/help/app-store-connect/reference/pricing-and-availability).
 
 ## See Also
 
-- [let id: String?](transaction/offer-swift.struct/id.md)
+### Getting offer details
+- [let id: String?](./id.md)
   A string that identifies an offer that applies to the transaction.
-- [let type: Transaction.OfferType](transaction/offer-swift.struct/type.md)
+- [let type: Transaction.OfferType](./type.md)
   The type of offer that applies to the transaction.
-- [Transaction.OfferType](transaction/offertype-swift.struct.md)
+- [Transaction.OfferType](../offertype-swift.struct.md)
   The types of offers that apply to a transaction.
-- [Transaction.Offer.PaymentMode](transaction/offer-swift.struct/paymentmode-swift.struct.md)
+- [Transaction.Offer.PaymentMode](./paymentmode-swift.struct.md)
   The payment modes for offers that apply to a transaction.
-- [let period: Product.SubscriptionPeriod?](transaction/offer-swift.struct/period.md)
+- [let period: Product.SubscriptionPeriod?](./period.md)
   The duration of the offer applied to a transaction.
 
 

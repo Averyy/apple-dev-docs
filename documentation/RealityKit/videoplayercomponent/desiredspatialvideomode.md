@@ -1,7 +1,8 @@
 # desiredSpatialVideoMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The viewer’s selected spatial video rendering mode.
 

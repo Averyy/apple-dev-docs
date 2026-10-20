@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,14 +19,19 @@
 var perceptual: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) bool perceptual;
+```
+
 ## See Also
 
-- [var gaussianSigma: Float](cicannyedgedetector/gaussiansigma.md)
-- [var hysteresisPasses: Int](cicannyedgedetector/hysteresispasses.md)
-- [var inputImage: CIImage?](cicannyedgedetector/inputimage.md)
+### Instance Properties
+- [var gaussianSigma: Float](./gaussiansigma.md)
+- [var hysteresisPasses: Int](./hysteresispasses.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var thresholdHigh: Float](cicannyedgedetector/thresholdhigh.md)
-- [var thresholdLow: Float](cicannyedgedetector/thresholdlow.md)
+- [var thresholdHigh: Float](./thresholdhigh.md)
+- [var thresholdLow: Float](./thresholdlow.md)
 
 
 ---

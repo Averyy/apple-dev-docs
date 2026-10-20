@@ -1,7 +1,8 @@
 # init(input:configuration:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a session from a specified directory of images.
 
@@ -17,15 +18,21 @@ Creates a session from a specified directory of images.
 convenience init(input: URL, configuration: PhotogrammetrySession.Configuration = Configuration()) throws
 ```
 
+**Other overloads**:
+
+```swift
+convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration = Configuration()) throws where S : Sequence, S.Element == PhotogrammetrySample
+```
+
 #### Discussion
 
-Creates a new session instance using all images in the specified [`URL`](https://developer.apple.com/documentation/foundation/url) input directory [`URL`](https://developer.apple.com/documentation/foundation/url) as samples for reconstruction.
+Creates a new session instance using all images in the specified [`URL`](../../Foundation/url.md) input directory [`URL`](../../Foundation/url.md) as samples for reconstruction.
 
-> **Note**: If `input` is not a file [`URL`](https://developer.apple.com/documentation/foundation/url).
+> **Throws**: If `input` is not a file [`URL`](../../Foundation/url.md).
 
 ## Parameters
 
-- `input`: The directory [`URL`](https://developer.apple.com/documentation/foundation/url) containing a folder of images to use as reconstruction inputs.
+- `input`: The directory [`URL`](../../Foundation/url.md) containing a folder of images to use as reconstruction inputs.
 - `configuration`: The configuration to use for this session.
 
 

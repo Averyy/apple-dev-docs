@@ -1,7 +1,8 @@
 # names
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of all variant sets on this prim.
 

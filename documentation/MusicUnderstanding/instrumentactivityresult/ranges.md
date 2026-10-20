@@ -1,7 +1,8 @@
 # ranges
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time ranges during which the framework detects each instrument.
 

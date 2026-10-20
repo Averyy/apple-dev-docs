@@ -1,7 +1,8 @@
 # exportedContentTypes(_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Content types supported by a given value’s `Transferable` conformance for export (like drag or copy).
 
@@ -22,7 +23,7 @@ func exportedContentTypes(_ visibility: TransferRepresentationVisibility = .all)
 
 #### Discussion
 
-Returns a list of all content types available for export in the type’s [`Transferable`](transferable.md) conformance, except for those that are not supported by this specific value. For example, if an `exportingCondition` for some representation evaluates to `false`, this representation isn’t included.
+Returns a list of all content types available for export in the type’s [`Transferable`](../transferable.md) conformance, except for those that are not supported by this specific value. For example, if an `exportingCondition` for some representation evaluates to `false`, this representation isn’t included.
 
 The default implementation of this function is available to all types that conform to `Transferable` protocol.
 

@@ -1,14 +1,15 @@
 # CoreAnalyticsSendEvent_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CoreAnalyticsSendEvent_Invoke(const IORPC rpc, OSMetaClassBase *target, CoreAnalyticsSendEvent_Handler func);
 ```
 

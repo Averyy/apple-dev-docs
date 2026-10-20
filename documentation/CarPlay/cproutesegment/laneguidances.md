@@ -1,7 +1,8 @@
 # laneGuidances
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 laneGuidances is an array of CPLaneGuidance objects, each describes a single lane guidance.
 
@@ -14,6 +15,10 @@ laneGuidances is an array of CPLaneGuidance objects, each describes a single lan
 
 ```swift
 var laneGuidances: [CPLaneGuidance] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPLaneGuidance *> * laneGuidances;
 ```
 
 

@@ -1,7 +1,8 @@
 # defaultForArchive
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that contains the default key set for an archive.
 
@@ -11,7 +12,7 @@ A constant that contains the default key set for an archive.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var defaultForArchive: ArchiveHeader.FieldKeySet { get }
 
 ## See Also
 
-- [static var defaultForManifest: ArchiveHeader.FieldKeySet](archiveheader/fieldkeyset/defaultformanifest.md)
+### Specifying Default Field Key Sets
+- [static var defaultForManifest: ArchiveHeader.FieldKeySet](./defaultformanifest.md)
   A constant that contains the default key set for a manifest.
 
 

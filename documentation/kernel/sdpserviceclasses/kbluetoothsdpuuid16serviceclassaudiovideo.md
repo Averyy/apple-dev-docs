@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassAudioVideo
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassAudioVideo = 0x112C
 ```
 

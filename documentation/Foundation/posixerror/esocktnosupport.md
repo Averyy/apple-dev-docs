@@ -1,7 +1,8 @@
 # ESOCKTNOSUPPORT
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Socket type not supported.
 

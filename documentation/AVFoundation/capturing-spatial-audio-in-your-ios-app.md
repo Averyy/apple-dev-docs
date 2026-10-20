@@ -1,6 +1,8 @@
 # Capturing Spatial Audio in your iOS app
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [CapturingSpatialAudioInYourIOSApp.zip](https://docs-assets.developer.apple.com/published/884affb07a9b/CapturingSpatialAudioInYourIOSApp.zip)
 
 Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 
@@ -12,19 +14,20 @@ Enhance your app’s audio recording capabilities by supporting Spatial Audio ca
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 251: [`Enhance your app’s audio recording capabilities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/251).
+> **Note**: This sample code project is associated with WWDC25 session 251: [Enhance your app’s audio recording capabilities](https://developer.apple.com/videos/play/wwdc2025/251).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Run this sample code on a device that supports Spatial Audio capture, like an iPhone 16 Pro or later.
 
 ## See Also
 
-- [class AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
+### Stream capture
+- [class AVCaptureVideoDataOutput](./avcapturevideodataoutput.md)
   A capture output that records video and provides access to video frames for processing.
-- [class AVCaptureAudioDataOutput](avcaptureaudiodataoutput.md)
+- [class AVCaptureAudioDataOutput](./avcaptureaudiodataoutput.md)
   A capture output that records audio and provides access to audio sample buffers as they are recorded.
-- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](./avcapturespatialaudiometadatasamplegenerator.md)
   An interface for generating a spatial audio timed metadata sample.
 
 

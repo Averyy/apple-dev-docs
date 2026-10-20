@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the user’s device supports the framework.
 

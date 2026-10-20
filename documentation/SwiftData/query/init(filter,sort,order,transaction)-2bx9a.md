@@ -1,7 +1,8 @@
 # init(filter:sort:order:transaction:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a query with a predicate, a key path to a property for sorting, and the order to sort by.
 
@@ -46,19 +47,20 @@ struct RecipeList: View {
 
 ## See Also
 
-- [init(FetchDescriptor<Element>, animation: Animation)](query/init(_:animation:).md)
+### Creating a query
+- [init(FetchDescriptor<Element>, animation: Animation)](./init%28_,animation%29.md)
   Create a query with a SwiftData fetch descriptor.
-- [init(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], animation: Animation)](query/init(filter:sort:animation:).md)
+- [init(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], animation: Animation)](./init%28filter,sort,animation%29.md)
   Create a query with a predicate, and a list of sort descriptors.
-- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, animation: Animation)](query/init(filter:sort:order:animation:)-1qfoj.md)
+- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, animation: Animation)](./init%28filter,sort,order,animation%29-1qfoj.md)
   Creates a query with a predicate, a key path to a property for sorting, and the order to sort by.
-- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, animation: Animation)](query/init(filter:sort:order:animation:)-3qovd.md)
+- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, animation: Animation)](./init%28filter,sort,order,animation%29-3qovd.md)
   Creates a query with a predicate, a key path to a property for sorting, and the order to sort by.
-- [init(FetchDescriptor<Element>, transaction: Transaction?)](query/init(_:transaction:).md)
+- [init(FetchDescriptor<Element>, transaction: Transaction?)](./init%28_,transaction%29.md)
   Create a query with a SwiftData fetch descriptor.
-- [init(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], transaction: Transaction?)](query/init(filter:sort:transaction:).md)
+- [init(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], transaction: Transaction?)](./init%28filter,sort,transaction%29.md)
   Create a query with a predicate, and a list of sort descriptors.
-- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, transaction: Transaction?)](query/init(filter:sort:order:transaction:)-8q7vs.md)
+- [init<Value>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, transaction: Transaction?)](./init%28filter,sort,order,transaction%29-8q7vs.md)
   Create a query with a predicate, a key path to a property for sorting, and the order to sort by.
 
 

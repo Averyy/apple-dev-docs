@@ -1,9 +1,10 @@
 # MDLMeshBufferType.vertex
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The buffer contains per-vertex data for one or more vertex attributes of a [`MDLMesh`](mdlmesh.md) object.
+The buffer contains per-vertex data for one or more vertex attributes of a [`MDLMesh`](../mdlmesh.md) object.
 
 **Availability**:
 - iOS 9.0+
@@ -19,10 +20,15 @@ The buffer contains per-vertex data for one or more vertex attributes of a [`MDL
 case vertex
 ```
 
+```c
+MDLMeshBufferTypeVertex
+```
+
 ## See Also
 
-- [MDLMeshBufferType.index](mdlmeshbuffertype/index.md)
-  The buffer contains index data for a [`MDLSubmesh`](mdlsubmesh.md) object.
+### Constants
+- [MDLMeshBufferType.index](./index.md)
+  The buffer contains index data for a [`MDLSubmesh`](../mdlsubmesh.md) object.
 
 
 ---

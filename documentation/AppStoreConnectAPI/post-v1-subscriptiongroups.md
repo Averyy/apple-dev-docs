@@ -1,7 +1,8 @@
 # Create a subscription group
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a subscription group for an app.
 
@@ -10,7 +11,7 @@ Create a subscription group for an app.
 
 ## Mentions
 
-- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
+- [Creating auto-renewable subscription groups](./creating-auto-renewable-subscription-groups.md)
 
 #### Discussion
 
@@ -20,23 +21,39 @@ Create a subscription group for an app.
 
 `POST https://api.appstoreconnect.apple.com/v1/subscriptionGroups`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionGroupCreateRequest`
+
+## Responses
+
+- `201` Created (`SubscriptionGroupResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [List all subscription groups for an app](get-v1-apps-_id_-subscriptiongroups.md)
+### Endpoints
+- [List all subscription groups for an app](./get-v1-apps-_id_-subscriptiongroups.md)
   Get a list of subscription groups for a specific app.
-- [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
-- [Read subscription group information](get-v1-subscriptiongroups-_id_.md)
+- [List subscription group IDs for an app](./get-v1-apps-_id_-relationships-subscriptiongroups.md)
+- [Read subscription group information](./get-v1-subscriptiongroups-_id_.md)
   Get the details of a specific subscription group.
-- [Modify a subscription group](patch-v1-subscriptiongroups-_id_.md)
+- [Modify a subscription group](./patch-v1-subscriptiongroups-_id_.md)
   Update the reference name for a specific subscription group.
-- [Delete a subscription group](delete-v1-subscriptiongroups-_id_.md)
+- [Delete a subscription group](./delete-v1-subscriptiongroups-_id_.md)
   Delete a specific empty subscription group.
-- [List all subscription group localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
+- [List all subscription group localizations](./get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
   Get a list of all localized metadata for a specific subscription group.
-- [List localization IDs for a subscription group](get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
-- [List all subscriptions for a subscription group](get-v1-subscriptiongroups-_id_-subscriptions.md)
+- [List localization IDs for a subscription group](./get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
+- [List all subscriptions for a subscription group](./get-v1-subscriptiongroups-_id_-subscriptions.md)
   Get a list of all auto-renewable subscriptions in a subscription group.
-- [List subscription IDs for a subscription group](get-v1-subscriptiongroups-_id_-relationships-subscriptions.md)
+- [List subscription IDs for a subscription group](./get-v1-subscriptiongroups-_id_-relationships-subscriptions.md)
 
 
 ---

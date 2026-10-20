@@ -1,7 +1,8 @@
 # resolveClassMethod(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Dynamically provides an implementation for a given selector for a class method.
 
@@ -20,13 +21,17 @@ Dynamically provides an implementation for a given selector for a class method.
 class func resolveClassMethod(_ sel: Selector!) -> Bool
 ```
 
+```objc
++ (BOOL) resolveClassMethod:(SEL) sel;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the method was found and added to the receiver, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the method was found and added to the receiver, otherwise [`NO`](../no.md).
 
 #### Discussion
 
-This method allows you to dynamically provide an implementation for a given selector. See [`resolveInstanceMethod(_:)`](nsobject-swift.class/resolveinstancemethod(_:).md) for further discussion.
+This method allows you to dynamically provide an implementation for a given selector. See [`resolveInstanceMethod(_:)`](./resolveinstancemethod%28_%29.md) for further discussion.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This method allows you to dynamically provide an implementation for a given sele
 
 ## See Also
 
-- [class func resolveInstanceMethod(Selector!) -> Bool](nsobject-swift.class/resolveinstancemethod(_:).md)
+### Dynamically Resolving Methods
+- [class func resolveInstanceMethod(Selector!) -> Bool](./resolveinstancemethod%28_%29.md)
   Dynamically provides an implementation for a given selector for an instance method.
 
 

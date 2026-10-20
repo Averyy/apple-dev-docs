@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The horizontal component of the subpixel sampling coordinate you use to generate the color texture input.
@@ -17,6 +18,10 @@ The horizontal component of the subpixel sampling coordinate you use to generate
 
 ```swift
 var jitterOffsetX: Float { get set }
+```
+
+```objc
+@property (nonatomic) float jitterOffsetX;
 ```
 
 #### Discussion

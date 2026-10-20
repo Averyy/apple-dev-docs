@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The barcode descriptor to generate an image for.
@@ -20,15 +21,20 @@ The barcode descriptor to generate an image for.
 var barcodeDescriptor: CIBarcodeDescriptor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIBarcodeDescriptor * barcodeDescriptor;
+```
+
 ## See Also
 
-- [class CIQRCodeDescriptor](ciqrcodedescriptor.md)
+### Related Documentation
+- [class CIQRCodeDescriptor](../ciqrcodedescriptor.md)
   A concrete subclass of the Core Image Barcode Descriptor that represents a square QR code symbol.
-- [class CIAztecCodeDescriptor](ciazteccodedescriptor.md)
+- [class CIAztecCodeDescriptor](../ciazteccodedescriptor.md)
   A concrete subclass the Core Image Barcode Descriptor that represents an Aztec code symbol.
-- [class CIPDF417CodeDescriptor](cipdf417codedescriptor.md)
+- [class CIPDF417CodeDescriptor](../cipdf417codedescriptor.md)
   A concrete subclass of Core Image Barcode Descriptor that represents a PDF417 symbol.
-- [class CIDataMatrixCodeDescriptor](cidatamatrixcodedescriptor.md)
+- [class CIDataMatrixCodeDescriptor](../cidatamatrixcodedescriptor.md)
   A concrete subclass the Core Image Barcode Descriptor that represents an Data Matrix code symbol.
 
 

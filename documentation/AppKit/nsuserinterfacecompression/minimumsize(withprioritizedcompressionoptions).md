@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the minimum size a view can achieve by applying the supplied compression options.
@@ -13,6 +14,10 @@ Returns the minimum size a view can achieve by applying the supplied compression
 
 ```swift
 func minimumSize(withPrioritizedCompressionOptions prioritizedOptions: [NSUserInterfaceCompressionOptions]) -> NSSize
+```
+
+```objc
+- (NSSize) minimumSizeWithPrioritizedCompressionOptions:(NSArray<NSUserInterfaceCompressionOptions *> *) prioritizedOptions;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ Compression options that are handled by the system are not included in the suppl
 
 ## See Also
 
-- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](nsuserinterfacecompression/activecompressionoptions.md)
+### Querying Compression Status
+- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](./activecompressionoptions.md)
   The compression options that are currently applied to the view.
 
 

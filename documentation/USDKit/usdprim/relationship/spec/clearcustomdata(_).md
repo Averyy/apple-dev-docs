@@ -1,7 +1,8 @@
 # clearCustomData(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes `key` from the custom data dictionary.
 

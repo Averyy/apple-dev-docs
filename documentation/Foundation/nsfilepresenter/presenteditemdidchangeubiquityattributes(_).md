@@ -1,7 +1,8 @@
 # presentedItemDidChangeUbiquityAttributes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your object that the file or file package’s ubiquity attributes have changed.
 
@@ -18,21 +19,27 @@ Tells your object that the file or file package’s ubiquity attributes have cha
 optional func presentedItemDidChangeUbiquityAttributes(_ attributes: Set<URLResourceKey>)
 ```
 
+```objc
+- (void) presentedItemDidChangeUbiquityAttributes:(NSSet<NSString *> *) attributes;
+```
+
 #### Discussion
 
-To specify the ubiquity attributes that trigger notifications, implement your file provider’s [`observedPresentedItemUbiquityAttributes`](nsfilepresenter/observedpresenteditemubiquityattributes.md) property. If you do not implement this property, the system sends notifications when any ubiquity attribute changes.
+To specify the ubiquity attributes that trigger notifications, implement your file provider’s [`observedPresentedItemUbiquityAttributes`](./observedpresenteditemubiquityattributes.md) property. If you do not implement this property, the system sends notifications when any ubiquity attribute changes.
 
-> **Note**:  Changes to the ubiquity attributes don’t typically align with [`presentedItemDidChange()`](nsfilepresenter/presenteditemdidchange().md) notifications.
+> **Note**:  Changes to the ubiquity attributes don’t typically align with [`presentedItemDidChange()`](./presenteditemdidchange%28%29.md) notifications.
 
 ## Parameters
 
-- `attributes`: The set of ubiquity attributes that have changed. For information about valid ubiquity attributes, see the [`observedPresentedItemUbiquityAttributes`](nsfilepresenter/observedpresenteditemubiquityattributes.md) property.
+- `attributes`: The set of ubiquity attributes that have changed. For information about valid ubiquity attributes, see the [`observedPresentedItemUbiquityAttributes`](./observedpresenteditemubiquityattributes.md) property.
 
 ## See Also
 
-- [func item(at: URL, didChangeUbiquityAttributes: Set<URLResourceKey>)](nsfilecoordinator/item(at:didchangeubiquityattributes:).md)
+### Related Documentation
+- [func item(at: URL, didChangeUbiquityAttributes: Set<URLResourceKey>)](../nsfilecoordinator/item%28at,didchangeubiquityattributes%29.md)
   Tells observing file providers that the item’s ubiquity attributes have changed.
-- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](nsfilepresenter/observedpresenteditemubiquityattributes.md)
+### Ubiquity Change Notifications
+- [var observedPresentedItemUbiquityAttributes: Set<URLResourceKey>](./observedpresenteditemubiquityattributes.md)
   A list of ubiquity attributes used to generate and send notifications whenever an attribute in the list changes.
 
 

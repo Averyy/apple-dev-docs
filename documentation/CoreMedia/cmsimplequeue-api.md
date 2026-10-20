@@ -1,6 +1,7 @@
 # CMSimpleQueue
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 A simple, lockless FIFO queue of elements.
 
@@ -17,37 +18,38 @@ You can reset a simple queue, which returns it to its newly created state, with 
 ## Topics
 
 ### Creating a Queue
-- [func CMSimpleQueueCreate(allocator: CFAllocator?, capacity: Int32, queueOut: UnsafeMutablePointer<CMSimpleQueue?>) -> OSStatus](cmsimplequeuecreate(allocator:capacity:queueout:).md)
+- [func CMSimpleQueueCreate(allocator: CFAllocator?, capacity: Int32, queueOut: UnsafeMutablePointer<CMSimpleQueue?>) -> OSStatus](./cmsimplequeuecreate%28allocator,capacity,queueout%29.md)
   Creates a queue that has the specified capacity.
 ### Managing Queues
-- [func CMSimpleQueueEnqueue(CMSimpleQueue, element: UnsafeRawPointer) -> OSStatus](cmsimplequeueenqueue(_:element:).md)
+- [func CMSimpleQueueEnqueue(CMSimpleQueue, element: UnsafeRawPointer) -> OSStatus](./cmsimplequeueenqueue%28_,element%29.md)
   Enqueues an element in the queue.
-- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](cmsimplequeuedequeue(_:).md)
+- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](./cmsimplequeuedequeue%28_%29.md)
   Dequeues an element from the queue.
-- [func CMSimpleQueueReset(CMSimpleQueue) -> OSStatus](cmsimplequeuereset(_:).md)
+- [func CMSimpleQueueReset(CMSimpleQueue) -> OSStatus](./cmsimplequeuereset%28_%29.md)
   Resets the queue.
 ### Inspecting Queues
-- [func CMSimpleQueueGetHead(CMSimpleQueue) -> UnsafeRawPointer?](cmsimplequeuegethead(_:).md)
+- [func CMSimpleQueueGetHead(CMSimpleQueue) -> UnsafeRawPointer?](./cmsimplequeuegethead%28_%29.md)
   Returns the element at the head of the queue.
-- [func CMSimpleQueueGetCapacity(CMSimpleQueue) -> Int32](cmsimplequeuegetcapacity(_:).md)
+- [func CMSimpleQueueGetCapacity(CMSimpleQueue) -> Int32](./cmsimplequeuegetcapacity%28_%29.md)
   Returns the number of elements that the queue can hold.
-- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](cmsimplequeuegetcount(_:).md)
+- [func CMSimpleQueueGetCount(CMSimpleQueue) -> Int32](./cmsimplequeuegetcount%28_%29.md)
   Returns the number of elements currently in the queue.
 ### Accessing the Type Identifier
-- [func CMSimpleQueueGetTypeID() -> CFTypeID](cmsimplequeuegettypeid().md)
+- [func CMSimpleQueueGetTypeID() -> CFTypeID](./cmsimplequeuegettypeid%28%29.md)
   Returns the type identifier of sample buffer objects.
 ### Data Types
-- [class CMSimpleQueue](cmsimplequeue.md)
+- [class CMSimpleQueue](./cmsimplequeue.md)
   A reference to an instance that provides a simple lockless queue of elements.
 ### Errors
-- [Simple Queue Error Codes](simple-queue-errors.md)
+- [Simple Queue Error Codes](./simple-queue-errors.md)
   Error codes that simple queue operations generate.
 
 ## See Also
 
-- [CMBufferQueue](cmbufferqueue-api.md)
+### Queues
+- [CMBufferQueue](./cmbufferqueue-api.md)
   A queue of timed buffers.
-- [CMMemoryPool](cmmemorypool-api.md)
+- [CMMemoryPool](./cmmemorypool-api.md)
   An object that optimizes memory allocation when working with large blocks of memory.
 
 

@@ -6,31 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/dev/metal_logging.html
 
 # Metal Logging
 
-**
-
-- [.rst](../_sources/dev/metal_logging.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Metal Logging
-
- Table of contents 
-
-# Metal Logging
-
 In debug builds, MLX compiles Metal kernels with `os_log` enabled so shader
 warnings and debug messages are visible during development.
 

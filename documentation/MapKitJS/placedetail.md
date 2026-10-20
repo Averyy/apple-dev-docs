@@ -1,7 +1,8 @@
 # PlaceDetail
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interactive view that displays information about a place.
 
@@ -10,55 +11,56 @@ An interactive view that displays information about a place.
 
 ## Declaration
 
-```swift
+```
 class PlaceDetail
 ```
 
 ## Mentions
 
-- [Displaying place information using the Maps Embed API](displaying-place-information-using-the-maps-embed-api.md)
-- [MapKit JS 5](mapkit-js-5.md)
+- [Displaying place information using the Maps Embed API](./displaying-place-information-using-the-maps-embed-api.md)
+- [MapKit JS 5](./mapkit-js-5.md)
 
 #### Overview
 
-![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](/images/com.apple.mapkitjs/PlaceDetail-cl-01@2x.png)
+![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](https://developer.apple.com/tutorials/images/com.apple.mapkitjs/PlaceDetail-cl-01@2x.png)
 
-For more information on places, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
+For more information on places, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md).
 
 ## Topics
 
 ### Creating and terminating a place detail
-- [new PlaceDetail(parent, place, options)](placedetail/placedetailconstructor.md)
+- [new PlaceDetail(parent, place, options)](./placedetail/placedetailconstructor.md)
   A representation of a place detail.
-- [interface PlaceDetailOptions](placedetailoptions.md)
+- [interface PlaceDetailOptions](./placedetailoptions.md)
   Options that you may provide when constructing place detail views.
-- [destroy()](placedetail/destroy.md)
+- [destroy()](./placedetail/destroy.md)
   Terminates a place detail.
 ### Working with place detail settings
-- [colorScheme](placedetail/colorscheme.md)
+- [colorScheme](./placedetail/colorscheme.md)
   The color scheme when displaying a place detail.
-- [displaysMap](placedetail/displaysmap.md)
+- [displaysMap](./placedetail/displaysmap.md)
   A Boolean value that indicates whether to display the map in the place detail.
-- [element](placedetail/element.md)
+- [element](./placedetail/element.md)
   The place detail’s DOM element.
-- [place](placedetail/place.md)
+- [place](./placedetail/place.md)
   The place that the place detail displays.
-- [ColorSchemes](placedetail/colorschemes.md)
+- [ColorSchemes](./placedetail/colorschemes.md)
   A static property that allows you to access the Look Around color scheme enumeration.
 
 ## See Also
 
-- [class Place](place.md)
+### Places
+- [class Place](./place.md)
   A place object that returns from a geocoder lookup, a reverse lookup, or a fetch request for points of interest.
-- [class PlaceLookup](placelookup.md)
+- [class PlaceLookup](./placelookup.md)
   An object that provides the ability to look up place information for a specified Place ID.
-- [placeDetails](mapkit/placedetails.md)
+- [placeDetails](./mapkit/placedetails.md)
   A list of all place detail objects that are currently active on a page.
-- [interface PlaceSelectionAccessoryOptions](placeselectionaccessoryoptions.md)
+- [interface PlaceSelectionAccessoryOptions](./placeselectionaccessoryoptions.md)
   The options for selection accessories.
-- [class PlaceAnnotation](placeannotation.md)
+- [class PlaceAnnotation](./placeannotation.md)
   An annotation for a place.
-- [class PlaceSelectionAccessory](placeselectionaccessory.md)
+- [class PlaceSelectionAccessory](./placeselectionaccessory.md)
   The accessory that conveys information about a place associated with an annotation.
 
 

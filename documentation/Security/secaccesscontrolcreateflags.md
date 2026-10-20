@@ -1,7 +1,8 @@
 # SecAccessControlCreateFlags
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Access control constants that dictate how a keychain item may be used.
 
@@ -20,60 +21,64 @@ Access control constants that dictate how a keychain item may be used.
 struct SecAccessControlCreateFlags
 ```
 
+```c
+enum SecAccessControlCreateFlags : CFOptionFlags;
+```
+
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
-- [Restricting keychain item accessibility](restricting-keychain-item-accessibility.md)
+- [Protecting keys with the Secure Enclave](./protecting-keys-with-the-secure-enclave.md)
+- [Restricting keychain item accessibility](./restricting-keychain-item-accessibility.md)
 
 #### Overview
 
-Use these flags with the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](secaccesscontrolcreatewithflags(_:_:_:_:).md) function, or as the value associated with the [`kSecAttrAccessControl`](ksecattraccesscontrol.md) key in a keychain item’s attribute dictionary, to control keychain item accessibility.
+Use these flags with the [`SecAccessControlCreateWithFlags(_:_:_:_:)`](./secaccesscontrolcreatewithflags%28_,_,_,_%29.md) function, or as the value associated with the [`kSecAttrAccessControl`](./ksecattraccesscontrol.md) key in a keychain item’s attribute dictionary, to control keychain item accessibility.
 
 ## Topics
 
 ### Constraints
-- [static var devicePasscode: SecAccessControlCreateFlags](secaccesscontrolcreateflags/devicepasscode.md)
+- [static var devicePasscode: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/devicepasscode.md)
   Constraint to access an item with a passcode.
-- [static var biometryAny: SecAccessControlCreateFlags](secaccesscontrolcreateflags/biometryany.md)
+- [static var biometryAny: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/biometryany.md)
   Constraint to access an item with Touch ID for any enrolled fingers, or Face ID.
-- [static var biometryCurrentSet: SecAccessControlCreateFlags](secaccesscontrolcreateflags/biometrycurrentset.md)
+- [static var biometryCurrentSet: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/biometrycurrentset.md)
   Constraint to access an item with Touch ID for currently enrolled fingers, or from Face ID with the currently enrolled user.
-- [static var userPresence: SecAccessControlCreateFlags](secaccesscontrolcreateflags/userpresence.md)
+- [static var userPresence: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/userpresence.md)
   Constraint to access an item with either biometry or passcode.
-- [static var watch: SecAccessControlCreateFlags](secaccesscontrolcreateflags/watch.md)
+- [static var watch: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/watch.md)
   Constraint to access an item with a watch.
 ### Conjunctions
-- [static var and: SecAccessControlCreateFlags](secaccesscontrolcreateflags/and.md)
+- [static var and: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/and.md)
   Indicates that all constraints must be satisfied.
-- [static var or: SecAccessControlCreateFlags](secaccesscontrolcreateflags/or.md)
+- [static var or: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/or.md)
   Indicates that at least one constraint must be satisfied.
 ### Additional Options
-- [static var applicationPassword: SecAccessControlCreateFlags](secaccesscontrolcreateflags/applicationpassword.md)
+- [static var applicationPassword: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/applicationpassword.md)
   Option to use an application-provided password for data encryption key generation.
-- [static var privateKeyUsage: SecAccessControlCreateFlags](secaccesscontrolcreateflags/privatekeyusage.md)
+- [static var privateKeyUsage: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/privatekeyusage.md)
   Enable a private key to be used in signing a block of data or verifying a signed block.
 ### Initializers
-- [init(rawValue: CFOptionFlags)](secaccesscontrolcreateflags/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./secaccesscontrolcreateflags/init%28rawvalue%29.md)
   Initialize an access control creation flags object.
 ### Legacy Constraints
-- [static var touchIDAny: SecAccessControlCreateFlags](secaccesscontrolcreateflags/touchidany.md)
+- [static var touchIDAny: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/touchidany.md)
   Constraint to access an item with Touch ID for any enrolled fingers.
-- [static var touchIDCurrentSet: SecAccessControlCreateFlags](secaccesscontrolcreateflags/touchidcurrentset.md)
+- [static var touchIDCurrentSet: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/touchidcurrentset.md)
   Constraint to access an item with Touch ID for currently enrolled fingers.
 ### Type Properties
-- [static var companion: SecAccessControlCreateFlags](secaccesscontrolcreateflags/companion.md)
+- [static var companion: SecAccessControlCreateFlags](./secaccesscontrolcreateflags/companion.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

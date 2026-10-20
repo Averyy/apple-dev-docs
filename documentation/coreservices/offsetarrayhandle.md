@@ -1,7 +1,8 @@
 # OffsetArrayHandle
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type that points to an `OffsetArray`. Not typically used by developers.
 
@@ -13,6 +14,10 @@ Defines a data type that points to an `OffsetArray`. Not typically used by devel
 
 ```swift
 typealias OffsetArrayHandle = UnsafeMutablePointer<OffsetArrayPtr?>
+```
+
+```c
+typedef OffsetArrayPtr *OffsetArrayHandle;
 ```
 
 

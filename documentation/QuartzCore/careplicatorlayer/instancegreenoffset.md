@@ -1,7 +1,8 @@
 # instanceGreenOffset
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the offset added to the green component of the color for each replicated instance. Animatable.
 
@@ -19,6 +20,10 @@ Defines the offset added to the green component of the color for each replicated
 var instanceGreenOffset: Float { get set }
 ```
 
+```objc
+@property float instanceGreenOffset;
+```
+
 #### Discussion
 
 The `instanceGreenOffset` is added to the green color component of instance `k-1` to produce the modulation color of instance k.
@@ -27,13 +32,14 @@ Default is `0.0`.
 
 ## See Also
 
-- [var instanceColor: CGColor?](careplicatorlayer/instancecolor.md)
+### Accessing Instance Color Values
+- [var instanceColor: CGColor?](./instancecolor.md)
   Defines the color used to multiply the source object. Animatable.
-- [var instanceRedOffset: Float](careplicatorlayer/instanceredoffset.md)
+- [var instanceRedOffset: Float](./instanceredoffset.md)
   Defines the offset added to the red component of the color for each replicated instance. Animatable.
-- [var instanceBlueOffset: Float](careplicatorlayer/instanceblueoffset.md)
+- [var instanceBlueOffset: Float](./instanceblueoffset.md)
   Defines the offset added to the blue component of the color for each replicated instance. Animatable.
-- [var instanceAlphaOffset: Float](careplicatorlayer/instancealphaoffset.md)
+- [var instanceAlphaOffset: Float](./instancealphaoffset.md)
   Defines the offset added to the alpha component of the color for each replicated instance. Animatable.
 
 

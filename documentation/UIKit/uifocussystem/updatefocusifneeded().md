@@ -1,7 +1,8 @@
 # updateFocusIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces the system to act on a pending focus update for the current environment.
 
@@ -18,15 +19,20 @@ Forces the system to act on a pending focus update for the current environment.
 func updateFocusIfNeeded()
 ```
 
+```objc
+- (void) updateFocusIfNeeded;
+```
+
 #### Discussion
 
 If the current environment has a pending focus update, calling this method forces the system to update the focus information immediately instead of waiting for the next run loop cycle. If no focus update is pending, this method does nothing.
 
-You create a pending focus update using the [`requestFocusUpdate(to:)`](uifocussystem/requestfocusupdate(to:).md) method. The system may also schedule focus updates in response to interface-related events.
+You create a pending focus update using the [`requestFocusUpdate(to:)`](./requestfocusupdate%28to%29.md) method. The system may also schedule focus updates in response to interface-related events.
 
 ## See Also
 
-- [func requestFocusUpdate(to: any UIFocusEnvironment)](uifocussystem/requestfocusupdate(to:).md)
+### Managing focus updates
+- [func requestFocusUpdate(to: any UIFocusEnvironment)](./requestfocusupdate%28to%29.md)
   Submits a request to update the focus state of the specified object.
 
 

@@ -1,17 +1,18 @@
 # init(rawValue:)
 
 **Framework**: System Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a network reachability flags structure with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

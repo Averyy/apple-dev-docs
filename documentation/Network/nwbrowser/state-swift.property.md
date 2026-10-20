@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the browser.
 
@@ -22,11 +23,12 @@ final var state: NWBrowser.State { get }
 
 ## See Also
 
-- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](nwbrowser/stateupdatehandler.md)
+### Managing Browsers
+- [var stateUpdateHandler: ((NWBrowser.State) -> Void)?](./stateupdatehandler.md)
   A handler that receives browser state updates.
-- [NWBrowser.State](nwbrowser/state-swift.enum.md)
+- [NWBrowser.State](./state-swift.enum.md)
   States indicating whether a browser is able to discover services.
-- [func cancel()](nwbrowser/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Stops browsing for services.
 
 

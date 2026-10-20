@@ -1,7 +1,8 @@
 # hasUncommittedUpdates
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the collection view contains drop placeholders or is reordering its items as part of handling a drop.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the collection view contains drop placeho
 var hasUncommittedUpdates: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasUncommittedUpdates;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), avoid making any significant changes to the collection view. Specifically, don’t reload the collection view’s data, as doing so deletes all placeholders and recreates items from the data source.
+When the value of this property is [`true`](../../Swift/true.md), avoid making any significant changes to the collection view. Specifically, don’t reload the collection view’s data, as doing so deletes all placeholders and recreates items from the data source.
 
 ## See Also
 
-- [func reconfigureItems(at: [IndexPath])](uicollectionview/reconfigureitems(at:).md)
+### Reloading content
+- [func reconfigureItems(at: [IndexPath])](./reconfigureitems%28at%29.md)
   Updates the data for the items at the index paths you specify, preserving the existing cells for the items.
-- [func reloadData()](uicollectionview/reloaddata.md)
+- [func reloadData()](./reloaddata%28%29.md)
   Reloads all of the data for the collection view.
-- [func reloadSections(IndexSet)](uicollectionview/reloadsections(_:).md)
+- [func reloadSections(IndexSet)](./reloadsections%28_%29.md)
   Reloads the data in the specified sections of the collection view.
-- [func reloadItems(at: [IndexPath])](uicollectionview/reloaditems(at:).md)
+- [func reloadItems(at: [IndexPath])](./reloaditems%28at%29.md)
   Reloads just the items at the specified index paths.
 
 

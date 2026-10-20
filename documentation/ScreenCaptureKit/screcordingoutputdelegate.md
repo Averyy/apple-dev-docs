@@ -1,7 +1,8 @@
 # SCRecordingOutputDelegate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 27.0+
@@ -17,22 +18,27 @@
 protocol SCRecordingOutputDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SCRecordingOutputDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func recordingOutput(SCRecordingOutput, didFailWithError: any Error)](screcordingoutputdelegate/recordingoutput(_:didfailwitherror:).md)
-- [func recordingOutputDidFinishRecording(SCRecordingOutput)](screcordingoutputdelegate/recordingoutputdidfinishrecording(_:).md)
-- [func recordingOutputDidStartRecording(SCRecordingOutput)](screcordingoutputdelegate/recordingoutputdidstartrecording(_:).md)
+- [func recordingOutput(SCRecordingOutput, didFailWithError: any Error)](./screcordingoutputdelegate/recordingoutput%28_,didfailwitherror%29.md)
+- [func recordingOutputDidFinishRecording(SCRecordingOutput)](./screcordingoutputdelegate/recordingoutputdidfinishrecording%28_%29.md)
+- [func recordingOutputDidStartRecording(SCRecordingOutput)](./screcordingoutputdelegate/recordingoutputdidstartrecording%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](screcordingoutput/init(configuration:delegate:).md)
-- [class SCRecordingOutputConfiguration](screcordingoutputconfiguration.md)
+### Creating a recording output
+- [init(configuration: SCRecordingOutputConfiguration, delegate: any SCRecordingOutputDelegate)](./screcordingoutput/init%28configuration,delegate%29.md)
+- [class SCRecordingOutputConfiguration](./screcordingoutputconfiguration.md)
 
 
 ---

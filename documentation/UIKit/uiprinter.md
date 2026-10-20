@@ -1,7 +1,8 @@
 # UIPrinter
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A printer on the network.
 
@@ -18,62 +19,67 @@ A printer on the network.
 class UIPrinter
 ```
 
+```objc
+@interface UIPrinter : NSObject
+```
+
 #### Overview
 
 You use a printer object to obtain information about a printer so that you can display that information in your app’s interface. You do not use printer objects to communicate with the printer directly.
 
-Most of the time, you use a [`UIPrinterPickerController`](uiprinterpickercontroller.md) object to retrieve a printer object representing the printer selected by the user. If you already have a URL containing the address of a printer—perhaps one that was previously selected by the user—you can use that URL to create a printer object directly. When creating your own printer objects, you must connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method before retrieving any of the printer’s attributes.
+Most of the time, you use a [`UIPrinterPickerController`](./uiprinterpickercontroller.md) object to retrieve a printer object representing the printer selected by the user. If you already have a URL containing the address of a printer—perhaps one that was previously selected by the user—you can use that URL to create a printer object directly. When creating your own printer objects, you must connect to the printer using the [`contactPrinter(_:)`](./uiprinter/contactprinter%28_%29.md) method before retrieving any of the printer’s attributes.
 
 ## Topics
 
 ### Creating a printer object
-- [init(url: URL)](uiprinter/init(url:)-1mibn.md)
+- [init(url: URL)](./uiprinter/init%28url%29-1mibn.md)
   Creates and returns a printer with the specified location.
 ### Getting the printer’s address
-- [var url: URL](uiprinter/url.md)
+- [var url: URL](./uiprinter/url.md)
   The full address of the printer.
 ### Getting the printer information
-- [var displayName: String](uiprinter/displayname.md)
+- [var displayName: String](./uiprinter/displayname.md)
   The human-readable printer name.
-- [var displayLocation: String?](uiprinter/displaylocation.md)
+- [var displayLocation: String?](./uiprinter/displaylocation.md)
   The human-readable text that describes the location of the printer.
-- [var makeAndModel: String?](uiprinter/makeandmodel.md)
+- [var makeAndModel: String?](./uiprinter/makeandmodel.md)
   A string that contains the manufacturer’s name and the model name of the printer.
-- [var supportedJobTypes: UIPrinter.JobTypes](uiprinter/supportedjobtypes.md)
+- [var supportedJobTypes: UIPrinter.JobTypes](./uiprinter/supportedjobtypes.md)
   The capabilities of the printer.
-- [UIPrinter.JobTypes](uiprinter/jobtypes.md)
+- [UIPrinter.JobTypes](./uiprinter/jobtypes.md)
   Constants that indicate the types of jobs that the printer supports.
-- [var supportsColor: Bool](uiprinter/supportscolor.md)
+- [var supportsColor: Bool](./uiprinter/supportscolor.md)
   A Boolean value that indicates whether the printer supports color printing.
-- [var supportsDuplex: Bool](uiprinter/supportsduplex.md)
+- [var supportsDuplex: Bool](./uiprinter/supportsduplex.md)
   A Boolean value that indicates whether the printer supports printing on both sides of a sheet of paper.
 ### Connecting to the printer
-- [func contactPrinter(((Bool) -> Void)?)](uiprinter/contactprinter(_:).md)
+- [func contactPrinter(((Bool) -> Void)?)](./uiprinter/contactprinter%28_%29.md)
   Connects to the printer and gathers information about its capabilities.
 ### Constants
-- [UIPrinter.CutterBehavior](uiprinter/cutterbehavior.md)
+- [UIPrinter.CutterBehavior](./uiprinter/cutterbehavior.md)
   Constants that specify the cutter behavior of a roll-fed printer.
 ### Initializers
-- [init(URL: URL)](uiprinter/init(url:)-80zxj.md)
+- [init(URL: URL)](./uiprinter/init%28url%29-80zxj.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPrintInfo](uiprintinfo.md)
+### Job info
+- [class UIPrintInfo](./uiprintinfo.md)
   Information about a print job that the system uses when it prints.
-- [class UIPrintPaper](uiprintpaper.md)
+- [class UIPrintPaper](./uiprintpaper.md)
   The size of paper for a print job and the rectangular area that the content prints within.
 
 

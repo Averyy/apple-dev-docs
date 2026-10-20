@@ -1,7 +1,8 @@
 # renewalPrice
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The renewal price of the auto-renewable subscription that renews at the next billing period.
 
@@ -23,15 +24,16 @@ var renewalPrice: Decimal? { get }
 
 #### Discussion
 
-This value represents the renewal price of the auto-renewable subscription, in units of the [`currency`](product/subscriptioninfo/renewalinfo/currency.md).
+This value represents the renewal price of the auto-renewable subscription, in units of the [`currency`](./currency.md).
 
-If the next billing period includes an offer specified by the [`offer`](product/subscriptioninfo/renewalinfo/offer.md) property, the renewal price value reflects the discount.
+If the next billing period includes an offer specified by the [`offer`](./offer.md) property, the renewal price value reflects the discount.
 
-> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
 ## See Also
 
-- [var currency: Locale.Currency?](product/subscriptioninfo/renewalinfo/currency.md)
+### Getting the renewal price and currency
+- [var currency: Locale.Currency?](./currency.md)
   The currency of the subscription’s renewal price.
 
 

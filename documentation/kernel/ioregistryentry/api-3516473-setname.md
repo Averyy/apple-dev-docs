@@ -1,14 +1,15 @@
 # setName
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setName(const char *name, const IORegistryPlane *plane);
 ```
 

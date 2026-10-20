@@ -1,7 +1,8 @@
 # kSCPropNetEthernetMediaOptions
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Ethernet key `MediaOptions`, whose value is of type `CFArray`, containing elements of type `CFString`.
 
@@ -14,11 +15,16 @@ The Ethernet key `MediaOptions`, whose value is of type `CFArray`, containing el
 let kSCPropNetEthernetMediaOptions: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetEthernetMediaOptions;
+```
+
 ## See Also
 
-- [let kSCPropNetEthernetMediaSubType: CFString](kscpropnetethernetmediasubtype-swift.var.md)
+### Constants
+- [let kSCPropNetEthernetMediaSubType: CFString](./kscpropnetethernetmediasubtype-swift.var.md)
   The Ethernet key `MediaSubType`, whose value is of type `CFString`.
-- [let kSCPropNetEthernetMTU: CFString](kscpropnetethernetmtu-swift.var.md)
+- [let kSCPropNetEthernetMTU: CFString](./kscpropnetethernetmtu-swift.var.md)
   The Ethernet key `MTU`, whose value is of type `CFNumber`.
 
 

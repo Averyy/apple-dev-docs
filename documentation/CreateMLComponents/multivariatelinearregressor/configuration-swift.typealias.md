@@ -1,7 +1,8 @@
 # MultivariateLinearRegressor.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -18,15 +19,18 @@
 typealias Configuration = MultivariateLinearRegressorConfiguration
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 ## See Also
 
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+### Supporting types
+- [MultivariateLinearRegressor.Model](./model.md)
   A trained multivariate linear regressor model.
-- [MultivariateLinearRegressor.Annotation](multivariatelinearregressor/annotation.md)
+- [MultivariateLinearRegressor.Annotation](./annotation.md)
   The annotation type.
-- [MultivariateLinearRegressor.Feature](multivariatelinearregressor/feature.md)
+- [MultivariateLinearRegressor.Feature](./feature.md)
   The feature type.
-- [MultivariateLinearRegressor.Transformer](multivariatelinearregressor/transformer.md)
+- [MultivariateLinearRegressor.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

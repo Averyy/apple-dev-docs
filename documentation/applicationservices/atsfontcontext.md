@@ -1,7 +1,8 @@
 # ATSFontContext
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias ATSFontContext = UInt32
+```
+
+```c
+typedef UInt32 ATSFontContext;
 ```
 
 

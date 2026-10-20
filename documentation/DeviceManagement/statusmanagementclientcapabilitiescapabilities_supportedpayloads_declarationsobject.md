@@ -1,7 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A set of declarations that the client supports.
 
@@ -16,7 +17,7 @@ A set of declarations that the client supports.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject
 ```
 

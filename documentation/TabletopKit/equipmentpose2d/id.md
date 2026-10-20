@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the equipment.
 
@@ -16,7 +17,8 @@ var id: EquipmentIdentifier
 
 ## See Also
 
-- [var pose: TableVisualState.Pose2D](equipmentpose2d/pose.md)
+### Getting equipment pose properties
+- [var pose: TableVisualState.Pose2D](./pose.md)
   The 2D position and rotation of equipment on the table.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16L2CAP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16L2CAP = 0x0100
 ```
 

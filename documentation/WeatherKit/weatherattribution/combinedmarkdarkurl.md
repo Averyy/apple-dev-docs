@@ -1,7 +1,8 @@
 # combinedMarkDarkURL
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL for the combined “ Apple Weather” mark, in dark variant.
 
@@ -22,13 +23,14 @@ var combinedMarkDarkURL: URL { get set }
 
 ## See Also
 
-- [var combinedMarkLightURL: URL](weatherattribution/combinedmarklighturl.md)
+### Getting the properties
+- [var combinedMarkLightURL: URL](./combinedmarklighturl.md)
   A URL for the combined “ Apple Weather” mark, in light variant.
-- [var legalPageURL: URL](weatherattribution/legalpageurl.md)
+- [var legalPageURL: URL](./legalpageurl.md)
   A link to the legal attribution page that contains copyright information about the weather data sources.
-- [var serviceName: String](weatherattribution/servicename.md)
+- [var serviceName: String](./servicename.md)
   The weather data provider name.
-- [var squareMarkURL: URL](weatherattribution/squaremarkurl.md)
+- [var squareMarkURL: URL](./squaremarkurl.md)
   A URL for the square Apple Weather mark.
 
 

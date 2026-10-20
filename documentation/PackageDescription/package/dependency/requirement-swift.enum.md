@@ -1,12 +1,13 @@
 # Package.Dependency.Requirement
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum that represents the requirement for a package dependency.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
 
 ## Declaration
 
@@ -20,7 +21,7 @@ The dependency requirement can be defined as one of three different version requ
 
 - **A version-based requirement**: Decide whether your project accepts updates to a package dependency up to the next major version or up to the next minor version. To be more restrictive, select a specific version range or an exact version. Major versions tend to have more significant changes than minor versions, and may require you to modify your code when they update.
 
-The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, visit the [`Semantic Versioning 2.0.0`](https://developer.apple.comhttps://semver.org) website.
+The version rule requires Swift packages to conform to semantic versioning. To learn more about the semantic versioning standard, visit the [Semantic Versioning 2.0.0](https://semver.org) website.
 
 Selecting the version requirement is the recommended way to add a package dependency. It allows you to create a balance between restricting changes and obtaining improvements and features. - term A branch-based requirement: Select the name of the branch for your package dependency to follow. Use branch-based dependencies when you’re developing multiple packages in tandem or when you don’t want to publish versions of your package dependencies.
 
@@ -33,34 +34,35 @@ Note that packages which use commit-based dependency requirements can’t be add
 ## Topics
 
 ### Enumeration Cases
-- [Package.Dependency.Requirement.branchItem(_:)](package/dependency/requirement-swift.enum/branchitem(_:).md)
-- [Package.Dependency.Requirement.exactItem(_:)](package/dependency/requirement-swift.enum/exactitem(_:).md)
-- [Package.Dependency.Requirement.localPackageItem](package/dependency/requirement-swift.enum/localpackageitem.md)
-- [Package.Dependency.Requirement.rangeItem(_:)](package/dependency/requirement-swift.enum/rangeitem(_:).md)
-- [Package.Dependency.Requirement.revisionItem(_:)](package/dependency/requirement-swift.enum/revisionitem(_:).md)
+- [Package.Dependency.Requirement.branchItem(_:)](./requirement-swift.enum/branchitem%28_%29.md)
+- [Package.Dependency.Requirement.exactItem(_:)](./requirement-swift.enum/exactitem%28_%29.md)
+- [Package.Dependency.Requirement.localPackageItem](./requirement-swift.enum/localpackageitem.md)
+- [Package.Dependency.Requirement.rangeItem(_:)](./requirement-swift.enum/rangeitem%28_%29.md)
+- [Package.Dependency.Requirement.revisionItem(_:)](./requirement-swift.enum/revisionitem%28_%29.md)
 ### Type Methods
-- [static func branch(String) -> Package.Dependency.Requirement](package/dependency/requirement-swift.enum/branch(_:).md)
+- [static func branch(String) -> Package.Dependency.Requirement](./requirement-swift.enum/branch%28_%29.md)
   Returns a requirement for a source control branch.
-- [static func exact(Version) -> Package.Dependency.Requirement](package/dependency/requirement-swift.enum/exact(_:).md)
+- [static func exact(Version) -> Package.Dependency.Requirement](./requirement-swift.enum/exact%28_%29.md)
   Returns a requirement for the given exact version.
-- [static func revision(String) -> Package.Dependency.Requirement](package/dependency/requirement-swift.enum/revision(_:).md)
+- [static func revision(String) -> Package.Dependency.Requirement](./requirement-swift.enum/revision%28_%29.md)
   Returns a requirement for a source control revision such as the hash of a commit.
-- [static func upToNextMajor(from: Version) -> Package.Dependency.Requirement](package/dependency/requirement-swift.enum/uptonextmajor(from:).md)
+- [static func upToNextMajor(from: Version) -> Package.Dependency.Requirement](./requirement-swift.enum/uptonextmajor%28from%29.md)
   A source control requirement bounded to the given version’s major version number.
-- [static func upToNextMinor(from: Version) -> Package.Dependency.Requirement](package/dependency/requirement-swift.enum/uptonextminor(from:).md)
+- [static func upToNextMinor(from: Version) -> Package.Dependency.Requirement](./requirement-swift.enum/uptonextminor%28from%29.md)
   A source control requirement bounded to the given version’s minor version number.
 
 ## See Also
 
-- [let traits: Set<Package.Dependency.Trait>](package/dependency/traits.md)
+### Declaring Requirements
+- [let traits: Set<Package.Dependency.Trait>](./traits.md)
   The dependencies traits configuration.
-- [Package.Dependency.Trait](package/dependency/trait.md)
+- [Package.Dependency.Trait](./trait.md)
   An enabled trait of a dependency.
-- [Package.Dependency.RegistryRequirement](package/dependency/registryrequirement.md)
+- [Package.Dependency.RegistryRequirement](./registryrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [Package.Dependency.SourceControlRequirement](package/dependency/sourcecontrolrequirement.md)
+- [Package.Dependency.SourceControlRequirement](./sourcecontrolrequirement.md)
   An enum that represents the requirement for a package dependency.
-- [var requirement: Package.Dependency.Requirement](package/dependency/requirement-swift.property.md)
+- [var requirement: Package.Dependency.Requirement](./requirement-swift.property.md)
   The dependency requirement of the package dependency.
 
 

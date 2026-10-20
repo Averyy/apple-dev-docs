@@ -1,7 +1,8 @@
 # TextureResource.Dimensions2DArray
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The dimensions of the 2D array texture.
 
@@ -26,16 +27,16 @@ This specifies the width, height, and length of the 2D array texture.
 ## Topics
 
 ### Creating the 2D array dimensions
-- [static func dimensions(width: Int, height: Int, length: Int) -> TextureResource.Dimensions2DArray](textureresource/dimensions2darray/dimensions(width:height:length:).md)
+- [static func dimensions(width: Int, height: Int, length: Int) -> TextureResource.Dimensions2DArray](./dimensions2darray/dimensions%28width,height,length%29.md)
   Specifies the dimensions of the 2D array texture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setBadgeCount(_:withCompletionHandler:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the badge count for your app’s icon.
 
@@ -16,14 +17,26 @@ Updates the badge count for your app’s icon.
 ## Declaration
 
 ```swift
+func setBadgeCount(_ newBadgeCount: Int, withCompletionHandler completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func setBadgeCount(_ newBadgeCount: Int) async throws
+```
+
+```objc
+- (void) setBadgeCount:(NSInteger) newBadgeCount withCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func setBadgeCount(_ newBadgeCount: Int) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func setBadgeCount(_ newBadgeCount: Int) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Here’s an example that sets the badge count to a specific number.
 
@@ -44,9 +57,10 @@ do {
 
 ## See Also
 
-- [class func current() -> UNUserNotificationCenter](unusernotificationcenter/current.md)
+### Managing the notification center
+- [class func current() -> UNUserNotificationCenter](./current%28%29.md)
   Returns your app’s notification center.
-- [func getNotificationSettings(completionHandler: (UNNotificationSettings) -> Void)](unusernotificationcenter/getnotificationsettings(completionhandler:).md)
+- [func getNotificationSettings(completionHandler: (UNNotificationSettings) -> Void)](./getnotificationsettings%28completionhandler%29.md)
   Retrieves the authorization and feature-related settings for your app.
 
 

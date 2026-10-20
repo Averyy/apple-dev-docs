@@ -1,7 +1,8 @@
 # SFSafariViewController.Configuration
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object that defines how a Safari view controller should be initialized.
 
@@ -17,41 +18,46 @@ A configuration object that defines how a Safari view controller should be initi
 class Configuration
 ```
 
+```objc
+@interface SFSafariViewControllerConfiguration : NSObject
+```
+
 #### Overview
 
-Use a configuration object with the [`init(url:configuration:)`](sfsafariviewcontroller/init(url:configuration:)-305vl.md) method to initialize your view controller.
+Use a configuration object with the [`init(url:configuration:)`](./init%28url,configuration%29-305vl.md) method to initialize your view controller.
 
 ## Topics
 
 ### Configuring a Safari View Controller
-- [var entersReaderIfAvailable: Bool](sfsafariviewcontroller/configuration-swift.class/entersreaderifavailable.md)
+- [var entersReaderIfAvailable: Bool](./configuration-swift.class/entersreaderifavailable.md)
   A value that specifies whether Safari should enter Reader mode, if it is available.
-- [var barCollapsingEnabled: Bool](sfsafariviewcontroller/configuration-swift.class/barcollapsingenabled.md)
-- [var eventAttribution: UIEventAttribution?](sfsafariviewcontroller/configuration-swift.class/eventattribution.md)
+- [var barCollapsingEnabled: Bool](./configuration-swift.class/barcollapsingenabled.md)
+- [var eventAttribution: UIEventAttribution?](./configuration-swift.class/eventattribution.md)
   An object you use to send tap event attribution data to the browser for Private Click Measurement.
 ### Instance Properties
-- [var activityButton: SFSafariViewController.ActivityButton?](sfsafariviewcontroller/configuration-swift.class/activitybutton.md)
+- [var activityButton: SFSafariViewController.ActivityButton?](./configuration-swift.class/activitybutton.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:)-305vl.md)
+### Creating a View Controller
+- [init(url: URL, configuration: SFSafariViewController.Configuration)](./init%28url,configuration%29-305vl.md)
   Initializes and configures a Safari view controller that loads the specified URL.
-- [convenience init(url: URL)](sfsafariviewcontroller/init(url:)-5kpkn.md)
+- [convenience init(url: URL)](./init%28url%29-5kpkn.md)
   Initializes a Safari view controller that loads the specified URL.
-- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:)-3aatz.md)
+- [init(url: URL, entersReaderIfAvailable: Bool)](./init%28url,entersreaderifavailable%29-3aatz.md)
   Initializes a Safari view controller that will load the specified URL, entering Reader mode if Reader mode is requested and available.
 
 

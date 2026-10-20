@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scheduler options that customize the delivery of elements.
 
@@ -22,9 +23,10 @@ let options: Context.SchedulerOptions?
 
 ## See Also
 
-- [let upstream: Upstream](publishers/subscribeon/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let scheduler: Context](publishers/subscribeon/scheduler.md)
+- [let scheduler: Context](./scheduler.md)
   The scheduler the publisher should use to receive elements.
 
 

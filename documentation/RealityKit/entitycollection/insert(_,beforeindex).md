@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds the specified entity to this collection directly before the entity at the given index. If the entity is already located before the index, the collection will not change.
@@ -28,6 +29,12 @@ mutating func insert(_ entity: Entity, beforeIndex index: Int)
 
 - `entity`: The entity to add to the collection.
 - `index`: The index of an entity to insert in front of. If `endIndex` is provided, the entity will be appended.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func insert(Entity, beforeIndex: Int)](./insert%28_,beforeindex%29-1cpdw.md)
+  Adds the specified entity to this collection directly before the entity at the given index. If the entity is already located before the index, the collection will not change.
 
 
 ---

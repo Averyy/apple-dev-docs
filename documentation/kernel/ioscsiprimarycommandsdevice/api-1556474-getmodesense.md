@@ -1,14 +1,15 @@
 # GetModeSense
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn GetModeSense(IOMemoryDescriptor *dataBuffer, SCSICmdField6Bit PAGE_CODE, SCSICmdField2Byte ALLOCATION_LENGTH, bool *use10ByteModeSense);
 ```
 

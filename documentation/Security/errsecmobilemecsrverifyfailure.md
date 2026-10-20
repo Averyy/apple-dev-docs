@@ -1,7 +1,8 @@
 # errSecMobileMeCSRVerifyFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A MobileMe certificate signing request verification failure occurred.
 
@@ -18,6 +19,10 @@ A MobileMe certificate signing request verification failure occurred.
 
 ```swift
 var errSecMobileMeCSRVerifyFailure: OSStatus { get }
+```
+
+```c
+errSecMobileMeCSRVerifyFailure
 ```
 
 

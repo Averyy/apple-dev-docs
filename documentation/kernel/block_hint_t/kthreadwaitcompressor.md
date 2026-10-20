@@ -1,14 +1,15 @@
 # kThreadWaitCompressor
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitCompressor = 0x14
 ```
 

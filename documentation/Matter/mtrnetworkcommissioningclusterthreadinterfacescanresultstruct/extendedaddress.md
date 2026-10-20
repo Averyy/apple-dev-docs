@@ -1,7 +1,8 @@
 # extendedAddress
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var extendedAddress: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSData * extendedAddress;
 ```
 
 

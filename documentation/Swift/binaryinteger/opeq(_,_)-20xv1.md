@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Divides the first value by the second and stores the quotient in the left-hand-side variable.
@@ -38,11 +39,12 @@ x /= 5
 
 ## See Also
 
-- [static func += (inout Self, Self)](binaryinteger/+=(_:_:).md)
+### Arithmetic with Assignment
+- [static func += (inout Self, Self)](./pluseq%28_,_%29.md)
   Adds two values and stores the result in the left-hand-side variable.
-- [static func -= (inout Self, Self)](binaryinteger/-=(_:_:).md)
+- [static func -= (inout Self, Self)](./minuseq%28_,_%29.md)
   Subtracts the second value from the first and stores the difference in the left-hand-side variable.
-- [static func *= (inout Self, Self)](binaryinteger/*=(_:_:).md)
+- [static func *= (inout Self, Self)](./stareq%28_,_%29.md)
   Multiplies two values and stores the result in the left-hand-side variable.
 
 

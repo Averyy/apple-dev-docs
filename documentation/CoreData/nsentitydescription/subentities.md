@@ -1,7 +1,8 @@
 # subentities
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the sub-entities of the receiver.
 
@@ -10,7 +11,7 @@ An array containing the sub-entities of the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ An array containing the sub-entities of the receiver.
 
 ```swift
 var subentities: [NSEntityDescription] { get set }
+```
+
+```objc
+@property (strong) NSArray<NSEntityDescription *> * subentities;
 ```
 
 #### Discussion
@@ -30,11 +35,12 @@ Setting the sub-entities raises an exception if the receiver’s model has been 
 
 ## See Also
 
-- [var subentitiesByName: [String : NSEntityDescription]](nsentitydescription/subentitiesbyname.md)
+### Managing inheritance
+- [var subentitiesByName: [String : NSEntityDescription]](./subentitiesbyname.md)
   A dictionary containing the receiver’s sub-entities.
-- [var superentity: NSEntityDescription?](nsentitydescription/superentity.md)
+- [var superentity: NSEntityDescription?](./superentity.md)
   The super-entity of the receiver.
-- [func isKindOf(entity: NSEntityDescription) -> Bool](nsentitydescription/iskindof(entity:).md)
+- [func isKindOf(entity: NSEntityDescription) -> Bool](./iskindof%28entity%29.md)
   Returns a Boolean value that indicates whether the receiver is a sub-entity of another given entity.
 
 

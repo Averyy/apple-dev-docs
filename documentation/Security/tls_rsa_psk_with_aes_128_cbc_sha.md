@@ -1,7 +1,8 @@
 # TLS_RSA_PSK_WITH_AES_128_CBC_SHA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_RSA_PSK_WITH_AES_128_CBC_SHA: SSLCipherSuite { get }
+```
+
+```c
+TLS_RSA_PSK_WITH_AES_128_CBC_SHA
 ```
 
 

@@ -1,7 +1,8 @@
 # AVAudioStereoMixing
 
 **Framework**: AVFAudio  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines stereo mixing properties a mixer uses.
 
@@ -20,34 +21,38 @@ A protocol that defines stereo mixing properties a mixer uses.
 protocol AVAudioStereoMixing : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AVAudioStereoMixing <NSObject>
+```
+
 #### Overview
 
-> ❗ **Important**:  The [`AVAudioMixing`](avaudiomixing.md) protocol adopts this protocol. As a result, many classes also inherit this protocol by adopting `AVAudioMixing`.
+> ❗ **Important**:  The [`AVAudioMixing`](./avaudiomixing.md) protocol adopts this protocol. As a result, many classes also inherit this protocol by adopting `AVAudioMixing`.
 
 ## Topics
 
 ### Adjusting the stereo pan
-- [var pan: Float](avaudiostereomixing/pan.md)
+- [var pan: Float](./avaudiostereomixing/pan.md)
   The bus’s stereo pan.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [AVAudioMixing](avaudiomixing.md)
+- [AVAudioMixing](./avaudiomixing.md)
 ### Conforming Types
-- [AVAudioEnvironmentNode](avaudioenvironmentnode.md)
-- [AVAudioInputNode](avaudioinputnode.md)
-- [AVAudioMixerNode](avaudiomixernode.md)
-- [AVAudioMixingDestination](avaudiomixingdestination.md)
-- [AVAudioPlayerNode](avaudioplayernode.md)
-- [AVAudioSourceNode](avaudiosourcenode.md)
-- [AVAudioUnitGenerator](avaudiounitgenerator.md)
-- [AVAudioUnitMIDIInstrument](avaudiounitmidiinstrument.md)
-- [AVAudioUnitSampler](avaudiounitsampler.md)
+- [AVAudioEnvironmentNode](./avaudioenvironmentnode.md)
+- [AVAudioInputNode](./avaudioinputnode.md)
+- [AVAudioMixerNode](./avaudiomixernode.md)
+- [AVAudioMixingDestination](./avaudiomixingdestination.md)
+- [AVAudioPlayerNode](./avaudioplayernode.md)
+- [AVAudioSourceNode](./avaudiosourcenode.md)
+- [AVAudioUnitGenerator](./avaudiounitgenerator.md)
+- [AVAudioUnitMIDIInstrument](./avaudiounitmidiinstrument.md)
+- [AVAudioUnitSampler](./avaudiounitsampler.md)
 
 
 ---

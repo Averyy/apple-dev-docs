@@ -1,7 +1,8 @@
 # highTemperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The daytime high temperature.
 
@@ -22,7 +23,8 @@ var highTemperature: Measurement<UnitTemperature>
 
 ## See Also
 
-- [var lowTemperature: Measurement<UnitTemperature>](dayweather/lowtemperature.md)
+### Getting temperature
+- [var lowTemperature: Measurement<UnitTemperature>](./lowtemperature.md)
   The overnight low temperature.
 
 

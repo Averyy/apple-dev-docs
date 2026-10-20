@@ -1,7 +1,8 @@
 # ENOSPC
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No space left on device.
 

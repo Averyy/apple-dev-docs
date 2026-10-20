@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Resolve to a concrete modifier in the given `environment`.
@@ -24,7 +25,8 @@ func resolve(in environment: EnvironmentValues) -> Self.ResolvedModifier
 
 ## See Also
 
-- [associatedtype ResolvedModifier : ViewModifier](environmentalmodifier/resolvedmodifier.md)
+### Resolving a modifier
+- [associatedtype ResolvedModifier : ViewModifier](./resolvedmodifier.md)
   The type of modifier to use after being resolved.
 
 

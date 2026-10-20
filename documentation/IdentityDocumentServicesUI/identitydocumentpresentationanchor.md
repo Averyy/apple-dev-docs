@@ -1,17 +1,26 @@
 # IdentityDocumentPresentationAnchor
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The presentation anchor the system uses to present your app UI.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+typealias IdentityDocumentPresentationAnchor = UIWindow
+```
+
+*macOS*
 
 ```swift
 typealias IdentityDocumentPresentationAnchor = NSWindow
@@ -19,15 +28,16 @@ typealias IdentityDocumentPresentationAnchor = NSWindow
 
 ## See Also
 
-- [Implementing as an identity document provider](../identitydocumentservices/implenting-as-an-identity-document-provider.md)
+### Implementing the web presentment flow into your browser
+- [Implementing as an identity document provider](../IdentityDocumentServices/implenting-as-an-identity-document-provider.md)
   Add your app as an option for mobile document web presentment.
-- [class IdentityDocumentWebPresentmentController](identitydocumentwebpresentmentcontroller.md)
+- [class IdentityDocumentWebPresentmentController](./identitydocumentwebpresentmentcontroller.md)
   A controller that performs identity document requests originating from the web.
-- [protocol IdentityDocumentWebPresentmentControllerDelegate](identitydocumentwebpresentmentcontrollerdelegate.md)
+- [protocol IdentityDocumentWebPresentmentControllerDelegate](./identitydocumentwebpresentmentcontrollerdelegate.md)
   Defines a delegate that the system uses in conjunction with a web presentment controller.
-- [protocol IdentityDocumentPresentmentControllerPresentationContextProviding](identitydocumentpresentmentcontrollerpresentationcontextproviding.md)
+- [protocol IdentityDocumentPresentmentControllerPresentationContextProviding](./identitydocumentpresentmentcontrollerpresentationcontextproviding.md)
   An interface the controller uses to receive a presentation context.
-- [protocol IdentityDocumentPresentmentControlling](identitydocumentpresentmentcontrolling.md)
+- [protocol IdentityDocumentPresentmentControlling](./identitydocumentpresentmentcontrolling.md)
   A closed protocol that indicates this object is a controller that the system uses for identity document presentment.
 
 

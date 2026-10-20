@@ -1,7 +1,8 @@
 # resume(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Resumes a training session from the last checkpoint if available.
 
@@ -33,11 +34,12 @@ If there are no resumable checkpoints training starts over from the beginning.
 
 ## See Also
 
-- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllinearregressor/train(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+### Creating a linear regressor asynchronously
+- [static train(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./train%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Trains a linear regressor.
-- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](mllinearregressor/maketrainingsession(trainingdata:targetcolumn:featurecolumns:parameters:sessionparameters:).md)
+- [static makeTrainingSession(trainingData:targetColumn:featureColumns:parameters:sessionParameters:)](./maketrainingsession%28trainingdata,targetcolumn,featurecolumns,parameters,sessionparameters%29.md)
   Creates or restores a training session.
-- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLinearRegressor>](mllinearregressor/restoretrainingsession(sessionparameters:).md)
+- [static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLLinearRegressor>](./restoretrainingsession%28sessionparameters%29.md)
   Restores an existing training session.
 
 

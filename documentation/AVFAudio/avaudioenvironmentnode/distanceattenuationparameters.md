@@ -1,7 +1,8 @@
 # distanceAttenuationParameters
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance attenuation parameters for the environment.
 
@@ -19,9 +20,14 @@ The distance attenuation parameters for the environment.
 var distanceAttenuationParameters: AVAudioEnvironmentDistanceAttenuationParameters { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioEnvironmentDistanceAttenuationParameters * distanceAttenuationParameters;
+```
+
 ## See Also
 
-- [var reverbParameters: AVAudioEnvironmentReverbParameters](avaudioenvironmentnode/reverbparameters.md)
+### Configuring attenuation and reverb
+- [var reverbParameters: AVAudioEnvironmentReverbParameters](./reverbparameters.md)
   The reverb parameters for the environment.
 
 

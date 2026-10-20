@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new menu with a localized name for a collection of app- specific commands, inserted in the standard location for app menus (after the View menu, in order with other menus declared without an explicit location).
 
@@ -17,6 +18,23 @@ Creates a new menu with a localized name for a collection of app- specific comma
 ```swift
 @export(implementation)
 nonisolated init(_ name: LocalizedStringResource, @ContentBuilder content: () -> Content)
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ name: Text, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init(_ nameKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ name: S, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
 

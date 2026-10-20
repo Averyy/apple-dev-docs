@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends a subscription to the subscriber.
@@ -23,7 +24,7 @@ func send(subscription: any Subscription)
 
 #### Discussion
 
-This call provides the [`Subject`](subject.md) an opportunity to establish demand for any new upstream subscriptions.
+This call provides the [`Subject`](../subject.md) an opportunity to establish demand for any new upstream subscriptions.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ This call provides the [`Subject`](subject.md) an opportunity to establish deman
 
 ## See Also
 
-- [func send(completion: Subscribers.Completion<Self.Failure>)](subject/send(completion:).md)
+### Delivering life cycle events to subscribers
+- [func send(completion: Subscribers.Completion<Self.Failure>)](./send%28completion%29.md)
   Sends a completion signal to the subscriber.
 
 

@@ -1,7 +1,8 @@
 # MTLCommonCounterSet
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The name of a specific counter set that a GPU device can support.
 
@@ -19,9 +20,13 @@ The name of a specific counter set that a GPU device can support.
 struct MTLCommonCounterSet
 ```
 
+```c
+typedef NSString * const MTLCommonCounterSet;
+```
+
 ## Mentions
 
-- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+- [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md)
 
 #### Overview
 
@@ -29,39 +34,40 @@ This type defines the constants that let a GPU device declare which counter sets
 
 > ❗ **Important**:  Some GPUs may only support some of the counters within a counter set.
 
-For more information, see [`Confirming which counters and counter sets a GPU supports`](confirming-which-counters-and-counter-sets-a-gpu-supports.md).
+For more information, see [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md).
 
 ## Topics
 
 ### Common counter set names
-- [static let timestamp: MTLCommonCounterSet](mtlcommoncounterset/timestamp.md)
+- [static let timestamp: MTLCommonCounterSet](./mtlcommoncounterset/timestamp.md)
   The common name for the counter set that contains the timestamp counter.
-- [static let stageUtilization: MTLCommonCounterSet](mtlcommoncounterset/stageutilization.md)
+- [static let stageUtilization: MTLCommonCounterSet](./mtlcommoncounterset/stageutilization.md)
   The common name for the counter set that contains hardware utilization measurements from various render stages.
-- [static let statistic: MTLCommonCounterSet](mtlcommoncounterset/statistic.md)
+- [static let statistic: MTLCommonCounterSet](./mtlcommoncounterset/statistic.md)
   The common name for the counter set that contains GPU workload statistics.
 ### Swift support
-- [init(rawValue: String)](mtlcommoncounterset/init(rawvalue:).md)
+- [init(rawValue: String)](./mtlcommoncounterset/init%28rawvalue%29.md)
   Creates a common counter set name from a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Confirming which counters and counter sets a GPU supports](confirming-which-counters-and-counter-sets-a-gpu-supports.md)
+### Counters and counter sets
+- [Confirming which counters and counter sets a GPU supports](./confirming-which-counters-and-counter-sets-a-gpu-supports.md)
   Check whether a GPU produces the runtime performance data you want to sample.
-- [protocol MTLCounterSet](mtlcounterset.md)
+- [protocol MTLCounterSet](./mtlcounterset.md)
   A collection of individual counters a GPU device supports for a counter set.
-- [protocol MTLCounter](mtlcounter.md)
+- [protocol MTLCounter](./mtlcounter.md)
   An individual counter a GPU device lists within one of its counter sets.
-- [struct MTLCommonCounter](mtlcommoncounter.md)
+- [struct MTLCommonCounter](./mtlcommoncounter.md)
   The name of a specific counter that can appear in a GPU device’s counter sets.
 
 

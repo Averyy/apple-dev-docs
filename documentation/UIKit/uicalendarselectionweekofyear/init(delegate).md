@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that tracks a week a person selects from a calendar view, with an optional delegate to manage selectable weeks and selection changes.
 
@@ -15,6 +16,10 @@ Creates an object that tracks a week a person selects from a calendar view, with
 
 ```swift
 init(delegate: (any UICalendarSelectionWeekOfYearDelegate)?)
+```
+
+```objc
+- (instancetype) initWithDelegate:(id<UICalendarSelectionWeekOfYearDelegate>) delegate;
 ```
 
 

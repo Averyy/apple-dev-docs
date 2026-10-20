@@ -1,7 +1,8 @@
 # tabStops
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text tab objects that represent the paragraph’s tab stops.
 
@@ -14,17 +15,22 @@ The text tab objects that represent the paragraph’s tab stops.
 var tabStops: [NSTextTab]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSTextTab *> * tabStops;
+```
+
 #### Discussion
 
-The [`NSTextTab`](nstexttab.md) objects, sorted by location, define the tab stops for the paragraph style. The default value is an array of 12 left-aligned tabs at 28-point intervals.
+The [`NSTextTab`](../nstexttab.md) objects, sorted by location, define the tab stops for the paragraph style. The default value is an array of 12 left-aligned tabs at 28-point intervals.
 
 ## See Also
 
-- [func addTabStop(NSTextTab)](nsmutableparagraphstyle/addtabstop(_:).md)
+### Specifying tab information
+- [func addTabStop(NSTextTab)](./addtabstop%28_%29.md)
   Adds the specified tab stop to the paragraph.
-- [func removeTabStop(NSTextTab)](nsmutableparagraphstyle/removetabstop(_:).md)
+- [func removeTabStop(NSTextTab)](./removetabstop%28_%29.md)
   Removes the first text tab with a location and type equal to the specified tab stop.
-- [var defaultTabInterval: CGFloat](nsmutableparagraphstyle/defaulttabinterval.md)
+- [var defaultTabInterval: CGFloat](./defaulttabinterval.md)
   A number used as the document’s default tab spacing.
 
 

@@ -1,7 +1,8 @@
 # onImmersionChange(initial:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an action when the immersion state of your app changes.
 
@@ -41,12 +42,15 @@ struct ImmersiveView: View {
 ## Parameters
 
 - `initial`: Whether the action should be run when this view initially appears.
-- `action`: A closure to run when the immersion changes. - **oldValue**: The value representing the old state of immersion.
-- **newValue**: The value representing the current state of immersion.
+- `action`: A closure to run when the immersion changes.
+
+  - **oldValue**: The value representing the old state of immersion.
+  - **newValue**: The value representing the current state of immersion.
 
 ## See Also
 
-- [struct ImmersionChangeContext](immersionchangecontext.md)
+### Responding to immersion changes
+- [struct ImmersionChangeContext](../immersionchangecontext.md)
   A structure that represents a state of immersion of your app.
 
 

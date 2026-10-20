@@ -1,7 +1,8 @@
 # stopAction
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 static var stopAction: MTRActionsCommandBits { get }
+```
+
+```c
+MTRActionsCommandBitsStopAction
 ```
 
 

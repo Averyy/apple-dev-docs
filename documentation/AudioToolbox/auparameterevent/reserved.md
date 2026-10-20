@@ -1,22 +1,27 @@
 # reserved
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Reserved field. Must be `0`.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var reserved: (UInt8, UInt8, UInt8)
+```
+
+```c
+uint8_t reserved[3];
 ```
 
 

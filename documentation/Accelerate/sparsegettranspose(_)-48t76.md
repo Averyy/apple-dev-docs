@@ -1,7 +1,8 @@
 # SparseGetTranspose(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transposed copy of the specified single-precision factorization.
 
@@ -20,9 +21,13 @@ Returns a transposed copy of the specified single-precision factorization.
 func SparseGetTranspose(_ Factor: SparseOpaqueFactorization_Float) -> SparseOpaqueFactorization_Float
 ```
 
+```c
+static SparseOpaqueFactorization_Float SparseGetTranspose(SparseOpaqueFactorization_Float Factor);
+```
+
 #### Return Value
 
-A matrix factorization of *A__ᵀ*, where the original was of *A*. Because this is a reference-counted factorization, you must free it through a call to [`SparseCleanup(_:)`](sparsecleanup(_:)-4kus5.md) when you no longer need it.
+A matrix factorization of *A__ᵀ*, where the original was of *A*. Because this is a reference-counted factorization, you must free it through a call to [`SparseCleanup(_:)`](./sparsecleanup%28_%29-4kus5.md) when you no longer need it.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A matrix factorization of *A__ᵀ*, where the original was of *A*. Because this 
 
 ## See Also
 
-- [func SparseGetTranspose(SparseOpaqueFactorization_Double) -> SparseOpaqueFactorization_Double](sparsegettranspose(_:)-90lxy.md)
+### Factorization transpose functions
+- [func SparseGetTranspose(SparseOpaqueFactorization_Double) -> SparseOpaqueFactorization_Double](./sparsegettranspose%28_%29-90lxy.md)
   Returns a transposed copy of the specified double-precision factorization.
 
 

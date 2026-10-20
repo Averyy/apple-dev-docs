@@ -1,7 +1,8 @@
 # beginSheet(for:modalDelegate:didEnd:contextInfo:settings:keychain:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a sheet that allows users to change keychain settings.
 
@@ -12,6 +13,10 @@ Displays a sheet that allows users to change keychain settings.
 
 ```swift
 func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd didEndSelector: Selector!, contextInfo: UnsafeMutableRawPointer!, settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!)
+```
+
+```objc
+- (void) beginSheetForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo settings:(SecKeychainSettings *) settings keychain:(SecKeychainRef) keychain;
 ```
 
 #### Discussion
@@ -27,7 +32,7 @@ The delegate method has the following signature:
 The parameters for the delegate method are:
 
 - **`sheet`**: The window to which the sheet was attached.
-- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelokbutton) or [`NSFileHandlingPanelCancelButton`](https://developer.apple.com/documentation/appkit/nsfilehandlingpanelcancelbutton).
+- **`returnCode`**: The result code indicating which button the user clicked: either [`NSFileHandlingPanelOKButton`](../../AppKit/nsfilehandlingpanelokbutton.md) or [`NSFileHandlingPanelCancelButton`](../../AppKit/nsfilehandlingpanelcancelbutton.md).
 - **`contextInfo`**: Client-defined contextual data that is passed in the `contextInfo` parameter of the `beginSheetForDirectory:...` method.
 
 The delegate method may dismiss the keychain settings sheet itself; if it does not, the sheet is dismissed on return from the `beginSheetForDirectory:...` method.
@@ -43,7 +48,8 @@ The delegate method may dismiss the keychain settings sheet itself; if it does n
 
 ## See Also
 
-- [func runModal(for: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!) -> Int](sfkeychainsettingspanel/runmodal(for:keychain:).md)
+### Displaying a sheet or panel
+- [func runModal(for: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!) -> Int](./runmodal%28for,keychain%29.md)
   Displays a panel that allows users to change keychain settings.
 
 

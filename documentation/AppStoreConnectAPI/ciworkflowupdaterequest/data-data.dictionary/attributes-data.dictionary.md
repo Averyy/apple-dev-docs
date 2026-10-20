@@ -1,7 +1,8 @@
 # CiWorkflowUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of the Workflows resource you’re changing with the update request.
 
@@ -10,7 +11,7 @@ The attributes of the Workflows resource you’re changing with the update reque
 
 ## Declaration
 
-```swift
+```
 object CiWorkflowUpdateRequest.Data.Attributes
 ```
 
@@ -33,7 +34,8 @@ object CiWorkflowUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [object CiWorkflowUpdateRequest.Data.Relationships](ciworkflowupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object CiWorkflowUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

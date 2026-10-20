@@ -1,7 +1,8 @@
 # utf16
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UTF-16 encoding of `self`.
 

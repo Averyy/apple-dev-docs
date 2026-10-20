@@ -1,22 +1,27 @@
 # kAudioEncoderComponentType
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A codec that translates linear PCM data into some other format
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioEncoderComponentType: UInt32 { get }
+```
+
+```c
+kAudioEncoderComponentType
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ The component subtype specifies the output format.
 
 ## See Also
 
-- [var kAudioDecoderComponentType: UInt32](kaudiodecodercomponenttype.md)
+### Constants
+- [var kAudioDecoderComponentType: UInt32](./kaudiodecodercomponenttype.md)
   A codec that translates data in some other format into linear PCM.
-- [var kAudioUnityCodecComponentType: UInt32](kaudiounitycodeccomponenttype.md)
+- [var kAudioUnityCodecComponentType: UInt32](./kaudiounitycodeccomponenttype.md)
 
 
 ---

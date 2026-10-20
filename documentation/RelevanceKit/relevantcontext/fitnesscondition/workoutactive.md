@@ -1,7 +1,8 @@
 # workoutActive
 
 **Framework**: RelevanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person is actively working out.
 
@@ -22,7 +23,8 @@ static var workoutActive: RelevantContext.FitnessCondition { get }
 
 ## See Also
 
-- [static var activityRingsIncomplete: RelevantContext.FitnessCondition](relevantcontext/fitnesscondition/activityringsincomplete.md)
+### Conditions
+- [static var activityRingsIncomplete: RelevantContext.FitnessCondition](./activityringsincomplete.md)
   A person needs to complete their activity rings.
 
 

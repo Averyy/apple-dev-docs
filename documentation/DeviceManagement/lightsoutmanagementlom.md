@@ -1,7 +1,8 @@
 # LightsOutManagementLOM
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures lights-out management (LOM) settings.
 
@@ -10,7 +11,7 @@ The payload that configures lights-out management (LOM) settings.
 
 ## Declaration
 
-```swift
+```
 object LightsOutManagementLOM
 ```
 
@@ -20,7 +21,7 @@ Specify `com.apple.lom` as the payload type.
 
 You can configure a compatible macOS device to be both a controller and a device. Include the UUID of the certificate in both `DeviceCertificateUUID` and `ControllerCertificateUUID` properties.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ You can configure a compatible macOS device to be both a controller and a device
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -305,20 +306,23 @@ You can configure a compatible macOS device to be both a controller and a device
 
 ## Properties
 
-- `ControllerCACertificateUUIDs` ([string]): An array of payload UUIDs containing CA certificates that devices use to evaluate trust of controller certificates. This key configures the device to accept the [`LOMDeviceRequestCommand`](lomdevicerequestcommand.md) from MDM and then send it to the target device. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
-- `ControllerCertificateUUID` (string): The UUID certificate for the LOM controller. This key configures the device to accept the [`LOMDeviceRequestCommand`](lomdevicerequestcommand.md) from MDM and then send it to the target device.
+- `ControllerCACertificateUUIDs` ([string]): An array of payload UUIDs containing CA certificates that devices use to evaluate trust of controller certificates.
+
+  This key configures the device to accept the [`LOMDeviceRequestCommand`](./lomdevicerequestcommand.md) from MDM and then send it to the target device. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
+- `ControllerCertificateUUID` (string): The UUID certificate for the LOM controller. This key configures the device to accept the [`LOMDeviceRequestCommand`](./lomdevicerequestcommand.md) from MDM and then send it to the target device.
 - `DeviceCACertificateUUIDs` ([string]): An array of payload UUIDs containing CA certificates that controllers use to evaluate trust of device certificates.
 - `DeviceCertificateUUID` (string): The UUID certificate for the device. This key indicates the device can receive `PowerON`, `PowerOFF`, and `Reset` requests from a LOM controller. This certificate must contain the Key Usage attributes of Digital Signature, Key Encipherment and Data Encipherment. As well as the Extended Key Usage attributes of Server Authentication and Client Authentication.
 
 ## See Also
 
-- [object EducationConfiguration](educationconfiguration.md)
+### Managed devices
+- [object EducationConfiguration](./educationconfiguration.md)
   The payload that configures the users, groups, and departments within an educational organization.
-- [object ManagedPreferences](managedpreferences.md)
+- [object ManagedPreferences](./managedpreferences.md)
   The payload that configures managed preferences.
-- [object MDM](mdm.md)
+- [object MDM](./mdm.md)
   The payload that configures mobile device management (MDM) settings.
-- [object ProfileRemovalPassword](profileremovalpassword.md)
+- [object ProfileRemovalPassword](./profileremovalpassword.md)
   The payload that configures profile removal.
 
 

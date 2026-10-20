@@ -46,7 +46,8 @@ The keys below are constants defined in the `IOHIDDeviceKeys.h` header file of H
 
 ## See Also
 
-- [HID Usage Tables](hid-usage-tables.md)
+### HID Usage Tables
+- [HID Usage Tables](./hid-usage-tables.md)
   Identify the types of data that HID devices can report to your driver.
 
 

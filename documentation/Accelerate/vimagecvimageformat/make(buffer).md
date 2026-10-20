@@ -1,7 +1,8 @@
 # make(buffer:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the description of the image encoding in an existing Core Video pixel buffer.
 
@@ -11,7 +12,7 @@ Creates the description of the image encoding in an existing Core Video pixel bu
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,11 +23,11 @@ static func make(buffer: CVPixelBuffer) -> vImageCVImageFormat?
 
 ## Mentions
 
-- [Converting chroma-subsampled images](converting-chroma-subsampled-images.md)
+- [Converting chroma-subsampled images](../converting-chroma-subsampled-images.md)
 
 #### Return Value
 
-A [`vImageCVImageFormat`](vimagecvimageformat.md) instance that describes the specified pixel buffer’s pixel format.
+A [`vImageCVImageFormat`](../vimagecvimageformat.md) instance that describes the specified pixel buffer’s pixel format.
 
 ## Parameters
 
@@ -34,11 +35,13 @@ A [`vImageCVImageFormat`](vimagecvimageformat.md) instance that describes the sp
 
 ## See Also
 
-- [func vImageCVImageFormat_CreateWithCVPixelBuffer(CVPixelBuffer!) -> Unmanaged<vImageCVImageFormat>!](vimagecvimageformat_createwithcvpixelbuffer(_:).md)
+### Related Documentation
+- [func vImageCVImageFormat_CreateWithCVPixelBuffer(CVPixelBuffer!) -> Unmanaged<vImageCVImageFormat>!](../vimagecvimageformat_createwithcvpixelbuffer%28_%29.md)
   Creates the description of the image encoding in an existing Core Video pixel buffer.
-- [static func make(format: vImageCVImageFormat.Format, matrix: vImage_ARGBToYpCbCrMatrix, chromaSiting: vImageCVImageFormat.ChromaSiting, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](vimagecvimageformat/make(format:matrix:chromasiting:colorspace:alphaisopaquehint:).md)
+### Creating a Core Video image format
+- [static func make(format: vImageCVImageFormat.Format, matrix: vImage_ARGBToYpCbCrMatrix, chromaSiting: vImageCVImageFormat.ChromaSiting, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](./make%28format,matrix,chromasiting,colorspace,alphaisopaquehint%29.md)
   Creates the description of image encoding in a Core Video pixel buffer from the specified properties.
-- [static func make(format: vImageCVImageFormat.Format, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](vimagecvimageformat/make(format:colorspace:alphaisopaquehint:).md)
+- [static func make(format: vImageCVImageFormat.Format, colorSpace: CGColorSpace, alphaIsOpaqueHint: Bool) -> vImageCVImageFormat?](./make%28format,colorspace,alphaisopaquehint%29.md)
   Creates the description of an RGB image encoding in a Core Video pixel buffer from the specified properties.
 
 

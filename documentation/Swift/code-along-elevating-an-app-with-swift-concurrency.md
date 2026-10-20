@@ -1,6 +1,8 @@
 # Code-along: Elevating an app with Swift concurrency
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Sample Code  
+**Download**: [CodeAlongElevatingAnAppWithSwiftConcurrency.zip](https://docs-assets.developer.apple.com/published/cf757bad3ba6/CodeAlongElevatingAnAppWithSwiftConcurrency.zip)
 
 Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
 
@@ -12,17 +14,18 @@ Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurren
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 270: [`Code-along: Elevate an app with Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/270/).
+> **Note**: This sample code project is associated with WWDC25 session 270: [Code-along: Elevate an app with Swift concurrency](https://developer.apple.com/videos/play/wwdc2025/270/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app, you need a physical iOS or iPadOS device.
 
 ## See Also
 
-- [Updating an app to use strict concurrency](updating-an-app-to-use-strict-concurrency.md)
+### Essentials
+- [Updating an app to use strict concurrency](./updating-an-app-to-use-strict-concurrency.md)
   Use this code to follow along with a guide to migrating your code to take advantage of the full concurrency protection that the Swift 6 language mode provides.
-- [Updating an app to use Swift concurrency](updating-an-app-to-use-swift-concurrency.md)
+- [Updating an app to use Swift concurrency](./updating-an-app-to-use-swift-concurrency.md)
   Improve your app’s performance by refactoring your code to take advantage of asynchronous functions in Swift.
 
 

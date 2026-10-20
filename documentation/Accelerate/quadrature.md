@@ -1,7 +1,8 @@
 # Quadrature
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that approximates the definite integral of a function over a finite interval.
 
@@ -11,7 +12,7 @@ A structure that approximates the definite integral of a function over a finite 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -61,36 +62,37 @@ let vRresult = quadrature.integrate(over: 0.0 ... diameter,
 ## Topics
 
 ### Initializers
-- [init(integrator: Quadrature.Integrator, absoluteTolerance: Double, relativeTolerance: Double)](quadrature/init(integrator:absolutetolerance:relativetolerance:).md)
+- [init(integrator: Quadrature.Integrator, absoluteTolerance: Double, relativeTolerance: Double)](./quadrature/init%28integrator,absolutetolerance,relativetolerance%29.md)
   Initializes and returns a quadrature instance.
 ### Instance Properties
-- [var absoluteTolerance: Double](quadrature/absolutetolerance.md)
+- [var absoluteTolerance: Double](./quadrature/absolutetolerance.md)
   The requested absolute tolerance on the result.
-- [var relativeTolerance: Double](quadrature/relativetolerance.md)
+- [var relativeTolerance: Double](./quadrature/relativetolerance.md)
   The requested relative tolerance on the result.
 ### Instance Methods
-- [func integrate(over: ClosedRange<Double>, integrand: (Double) -> Double) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](quadrature/integrate(over:integrand:)-2d2y2.md)
+- [func integrate(over: ClosedRange<Double>, integrand: (Double) -> Double) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](./quadrature/integrate%28over,integrand%29-2d2y2.md)
   Performs the integration over the supplied scalar function.
-- [func integrate(over: ClosedRange<Double>, integrand: (UnsafeBufferPointer<Double>, UnsafeMutableBufferPointer<Double>) -> ()) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](quadrature/integrate(over:integrand:)-56h8b.md)
+- [func integrate(over: ClosedRange<Double>, integrand: (UnsafeBufferPointer<Double>, UnsafeMutableBufferPointer<Double>) -> ()) -> Result<(integralResult: Double, estimatedAbsoluteError: Double), Quadrature.Error>](./quadrature/integrate%28over,integrand%29-56h8b.md)
   Performs the integration over the supplied vector function.
 ### Structures
-- [Quadrature.QAGPointsPerInterval](quadrature/qagpointsperinterval.md)
+- [Quadrature.QAGPointsPerInterval](./quadrature/qagpointsperinterval.md)
   Constants that specify the number of points per interval for the globally adaptive integrator.
 ### Enumerations
-- [Quadrature.Error](quadrature/error.md)
+- [Quadrature.Error](./quadrature/error.md)
   Errors thrown by the Quadrature structure.
-- [Quadrature.Integrator](quadrature/integrator.md)
+- [Quadrature.Integrator](./quadrature/integrator.md)
   Constants that define different integrators.
 ### Type Aliases
-- [typealias quadrature_function_array](quadrature_function_array.md)
-- [struct quadrature_integrate_function](quadrature_integrate_function.md)
-- [struct quadrature_integrate_options](quadrature_integrate_options.md)
+- [typealias quadrature_function_array](./quadrature_function_array.md)
+- [struct quadrature_integrate_function](./quadrature_integrate_function.md)
+- [struct quadrature_integrate_options](./quadrature_integrate_options.md)
 
 ## See Also
 
-- [struct quadrature_integrator](quadrature_integrator.md)
+### Quadrature
+- [struct quadrature_integrator](./quadrature_integrator.md)
   Constants that specify integration algorithms.
-- [struct quadrature_status](quadrature_status.md)
+- [struct quadrature_status](./quadrature_status.md)
   Constants that indicate the status of a quadrature operation.
 
 

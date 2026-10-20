@@ -1,7 +1,8 @@
 # LegibilityWeight.regular
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use regular font weight (no Accessibility Bold).
 
@@ -22,7 +23,8 @@ case regular
 
 ## See Also
 
-- [LegibilityWeight.bold](legibilityweight/bold.md)
+### Getting weights
+- [LegibilityWeight.bold](./bold.md)
   Use heavier font weight (force Accessibility Bold).
 
 

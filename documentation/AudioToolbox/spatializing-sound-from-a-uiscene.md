@@ -1,18 +1,19 @@
 # Anchoring sound to a window or volume
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 Provide unique app experiences by attaching sounds to windows and volumes in 3D space.
 
 #### Overview
 
-Many audio playback APIs have a property to configure their 3D spatial rendering using the [`SpatialAudioExperience`](spatialaudioexperience.md) type [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md). This article shows how to take advantage of [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) to place each sound at the center of its intended [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) in your multiwindow or multivolume application.
+Many audio playback APIs have a property to configure their 3D spatial rendering using the [`SpatialAudioExperience`](./spatialaudioexperience.md) type [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md). This article shows how to take advantage of [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md) to place each sound at the center of its intended [`UIScene`](../UIKit/uiscene.md) in your multiwindow or multivolume application.
 
-![An illustration of sound spatializing from two windows.](/images/com.apple.audiotoolbox/spatializing-sound-from-a-uiscene-01@2x.png)
+![An illustration of sound spatializing from two windows.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/spatializing-sound-from-a-uiscene-01@2x.png)
 
-#### Get the Scenes Identifier
+#### Get the scene’s identifier
 
-Placing a sound on a specific [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) requires knowledge of the target scene’s [`persistentIdentifier`](https://developer.apple.com/documentation/uikit/uiscenesession/persistentidentifier). In a SwiftUI application, that means adding both a [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) and [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) to your SwiftUI App:
+Placing a sound on a specific [`UIScene`](../UIKit/uiscene.md) requires knowledge of the target scene’s [`persistentIdentifier`](../UIKit/uiscenesession/persistentidentifier.md). In a SwiftUI application, that means adding both a [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) and [`UISceneDelegate`](../UIKit/uiscenedelegate.md) to your SwiftUI App:
 
 ```swift
 import SwiftUI 
@@ -47,7 +48,7 @@ class MySceneDelegate: NSObject, UISceneDelegate, ObservableObject {
 }
 ```
 
-The following code makes the identifier for each [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) accessible from any SwiftUI [`View`](https://developer.apple.com/documentation/swiftui/view) using your [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) as an [`EnvironmentObject`](https://developer.apple.com/documentation/swiftui/environmentobject):
+The following code makes the identifier for each [`UIScene`](../UIKit/uiscene.md) accessible from any SwiftUI [`View`](../SwiftUI/view.md) using your [`UISceneDelegate`](../UIKit/uiscenedelegate.md) as an [`EnvironmentObject`](../SwiftUI/environmentobject.md):
 
 ```swift
 import SwiftUI
@@ -61,9 +62,9 @@ struct ContentView: View {
 }
 ```
 
-#### Anchor the Sound to the Scene
+#### Anchor the sound to the scene
 
-With a [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) identifier in-hand, configure each sound using a [`HeadTrackedSpatialAudio`](headtrackedspatialaudio.md) structure.
+With a [`UIScene`](../UIKit/uiscene.md) identifier in-hand, configure each sound using a [`HeadTrackedSpatialAudio`](./headtrackedspatialaudio.md) structure.
 
 ```swift
 import SwiftUI
@@ -93,38 +94,39 @@ struct ContentView: View {
 }
 ```
 
-Besides just [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer), you can also use [`SpatialAudioExperience`](spatialaudioexperience.md) types with the other playback APIs listed below.
+Besides just [`AVAudioPlayer`](../AVFAudio/avaudioplayer.md), you can also use [`SpatialAudioExperience`](./spatialaudioexperience.md) types with the other playback APIs listed below.
 
-#### Spatialize System and Alert Sounds
+#### Spatialize system and alert sounds
 
 Configure the spatial audio experience of your system and alert sounds using:
 
-- [`AudioServicesPlaySystemSound(_:spatialExperience:)`](audioservicesplaysystemsound(_:spatialexperience:).md)
-- [`AudioServicesPlayAlertSound(_:spatialExperience:)`](audioservicesplayalertsound(_:spatialexperience:).md)
+- [`AudioServicesPlaySystemSound(_:spatialExperience:)`](./audioservicesplaysystemsound%28_,spatialexperience%29.md)
+- [`AudioServicesPlayAlertSound(_:spatialExperience:)`](./audioservicesplayalertsound%28_,spatialexperience%29.md)
 
-#### Spatialize Audio Only Playback Apis
+#### Spatialize audio-only playback APIs
 
-Configure the spatial audio experience of audio-only playback APIs using the [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudioplayer/intendedspatialexperience-27klj) property on:
+Configure the spatial audio experience of audio-only playback APIs using the [`intendedSpatialExperience`](../AVFAudio/avaudioplayer/intendedspatialexperience-27klj.md) property on:
 
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudioplayer/intendedspatialexperience-27klj)
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/avfaudio/avaudiooutputnode/intendedspatialexperience-3ts59)
-- [`intendedSpatialExperience`](auaudiounit/intendedspatialexperience-7uqrm.md)
-- [`intendedSpatialExperience`](https://developer.apple.com/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0)
+- [AVAudioPlayer](../AVFAudio/avaudioplayer/intendedspatialexperience-27klj.md)
+- [AVAudioOutputNode](../AVFAudio/avaudiooutputnode/intendedspatialexperience-3ts59.md)
+- [AUAudioUnit](./auaudiounit/intendedspatialexperience-7uqrm.md)
+- [CHHapticEngine](../CoreHaptics/chhapticengine/intendedspatialexperience-55ca0.md)
 
-#### Spatialize Audio Playback Apis That Also Have Video
+#### Spatialize audio playback APIs that also have video
 
-Setting a scene identifier on playback APIs that have video content isn’t always necessary as their sound automatically anchors to its visual counterpart. However, if there is no video or if you prefer something besides the automatic behavior, configure the spatial audio experience of these playback APIs using the [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avplayer/intendedspatialaudioexperience-1bd87) property on:
+Setting a scene identifier on playback APIs that have video content isn’t always necessary as their sound automatically anchors to its visual counterpart. However, if there is no video or if you prefer something besides the automatic behavior, configure the spatial audio experience of these playback APIs using the [`intendedSpatialAudioExperience`](../AVFoundation/avplayer/intendedspatialaudioexperience-1bd87.md) property on:
 
-- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avplayer/intendedspatialaudioexperience-1bd87)
-- [`intendedSpatialAudioExperience`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3)
+- [AVPlayer](../AVFoundation/avplayer/intendedspatialaudioexperience-1bd87.md)
+- [AVSampleBufferRenderSynchronizer](../AVFoundation/avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3.md)
 
 ## See Also
 
-- [Audio Queue Services](audio-queue-services.md)
+### Playback and Recording
+- [Audio Queue Services](./audio-queue-services.md)
   Connect to audio hardware and manage the recording or playback process.
-- [Audio Services](audio-services.md)
+- [Audio Services](./audio-services.md)
   Play short sounds or trigger a vibration effect on iOS devices with the appropriate hardware.
-- [Music Player](music-player.md)
+- [Music Player](./music-player.md)
   Create and play a sequence of tracks, and manage aspects of playback in response to standard events.
 
 

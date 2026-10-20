@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,14 +19,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](1643287-anonymous/kinquiry_peripheral_qualifier_connected.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](1643287-anonymous/kinquiry_peripheral_qualifier_mask.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](1643287-anonymous/kinquiry_peripheral_qualifier_notsupported.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](1643287-anonymous/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](../driverkit/kinquiry_peripheral_qualifier_connected.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](../driverkit/kinquiry_peripheral_qualifier_mask.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](../driverkit/kinquiry_peripheral_qualifier_notsupported.md)
-- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](../driverkit/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](./api-1643287-anonymous/kinquiry_peripheral_qualifier_connected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](./api-1643287-anonymous/kinquiry_peripheral_qualifier_mask.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](./api-1643287-anonymous/kinquiry_peripheral_qualifier_notsupported.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](./api-1643287-anonymous/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Connected](../DriverKit/kinquiry_peripheral_qualifier_connected.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_Mask](../DriverKit/kinquiry_peripheral_qualifier_mask.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_NotSupported](../DriverKit/kinquiry_peripheral_qualifier_notsupported.md)
+- [kINQUIRY_PERIPHERAL_QUALIFIER_SupportedButNotConnected](../DriverKit/kinquiry_peripheral_qualifier_supportedbutnotconnected.md)
 
 
 ---

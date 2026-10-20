@@ -1,6 +1,7 @@
 # Using content protection systems with HLS
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Adding encryption keys to media playlists
 
@@ -14,15 +15,15 @@ This document provides general guidance on using such `EXT-X-KEY` tags.
 
 For convenience sake, this document refers to some details of the Google Widevine and Microsoft PlayReady protection systems. The documentation for those systems should be used to ensure accurate implementation.
 
-#### Set the Playlist Key Tag
+#### Set the playlist key tag
 
 The `EXT-X-KEY` tag has three attributes that principally control its behavior. These are `METHOD`, `KEYFORMAT`, and `URI`.
 
 - **`METHOD`**: Apple’s HLS encryption uses the AES block cipher algorithm and Cipher Block Chaining (CBC) mode. To guarantee compatibility with FairPlay, you must use the `METHOD=SAMPLE-AES`. In terms of the Common Encryption standard (ISO/IEC 23001-7), this is the `cbcs` protection scheme. If FairPlay isn’t involved you may use another `METHOD`.
-- **`KEYFORMAT`**: Use this attribute to convey how to obtain the key. For more information, see [`Choose a key format`](using-content-protection-systems-with-hls#Choose-a-key-format.md) for more detail. This can be modified by the attribute `KEYFORMATVERSIONS`. However, in most cases, this additional attribute should be either left oﬀ or set to the string value `"1"`.
+- **`KEYFORMAT`**: Use this attribute to convey how to obtain the key. For more information, see [Choose a key format](./using-content-protection-systems-with-hls.md#Choose-a-key-format) for more detail. This can be modified by the attribute `KEYFORMATVERSIONS`. However, in most cases, this additional attribute should be either left oﬀ or set to the string value `"1"`.
 - **`URI`**: This contains the information needed to identify the specific key. The format of the `URI` is determined by the `KEYFORMAT` value.
 
-#### Choose a Key Format
+#### Choose a key format
 
 There are four supported key formats:
 
@@ -41,45 +42,45 @@ The `URI` attribute is the URI of the key file.
 
 Because there is no key server involved, this protection system aﬀords only a minimal level of protection. For that reason you shouldn’t use identity keys in conjunction with any other protection system.
 
-This format is described in [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://tools.ietf.org/html/draft-pantos-hls-rfc8216bis)
+This format is described in [HTTP Live Streaming 2nd Edition](https://tools.ietf.org/html/draft-pantos-hls-rfc8216bis)
 
-##### Fairplay Streaming
+##### FairPlay Streaming
 
 This format is identified by a `KEYFORMAT` attribute with the value `com.apple.streamingkeydelivery`.
 
 The `URI` attribute typically has the form `skd://<key-identifier>`. (In theory this can use any custom URL scheme, but `skd` is almost always used.) The key-identifier is an arbitrary string that is interpreted by the FairPlay Key Server. FairPlay does impose limits on the overall length of the key-identifier string.
 
-Further details about FairPlay Streaming are available at [`FairPlay Streaming`](https://developer.apple.comhttps://developer.apple.com/streaming/fps/).
+Further details about FairPlay Streaming are available at [FairPlay Streaming](https://developer.apple.com/streaming/fps/).
 
 ##### Widevine
 
 The Widevine format has more than one version. However, the versions use diﬀerent key format values; from the HLS point of view, they are completely distinct. You should use what the Widevine documentation refers to as v2.
 
-This key format is identified by a `KEYFORMAT` attribute with the value `urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed`. (The UUID in this URN is the Widevine System ID. See [`Widevine PSSH data`](using-content-protection-systems-with-hls#Widevine-PSSH-data.md).)
+This key format is identified by a `KEYFORMAT` attribute with the value `urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed`. (The UUID in this URN is the Widevine System ID. See [Widevine PSSH data](./using-content-protection-systems-with-hls.md#Widevine-PSSH-data).)
 
-The `URI` attribute has the form `data:text/plain;base64,<base64 encoded PSSH box>`. See [`Create a PSSH box`](using-content-protection-systems-with-hls#Create-a-PSSH-box.md).
+The `URI` attribute has the form `data:text/plain;base64,<base64 encoded PSSH box>`. See [Create a PSSH box](./using-content-protection-systems-with-hls.md#Create-a-PSSH-box).
 
-For more information about Widevine refer to [`Widevine Technologies`](https://developer.apple.comhttps://www.widevine.com).
+For more information about Widevine refer to [Widevine Technologies](https://www.widevine.com).
 
-##### Playready
+##### PlayReady
 
 The PlayReady format is defined by Microsoft.
 
 This key format is identified by a `KEYFORMAT` attribute with the value `com.microsoft.playready`.
 
-The `URI` has the form `data:text/plain;charset=UTF-16;base64,<base64 encoded PlayReady Object>`. See [`PlayReady PSSH data`](using-content-protection-systems-with-hls#PlayReady-PSSH-data.md) for a discussion of the PlayReady Object.
+The `URI` has the form `data:text/plain;charset=UTF-16;base64,<base64 encoded PlayReady Object>`. See [PlayReady PSSH data](./using-content-protection-systems-with-hls.md#PlayReady-PSSH-data) for a discussion of the PlayReady Object.
 
-For more information refer to the [`PlayReady documentation`](https://developer.apple.comhttps://learn.microsoft.com/en-us/playready/).
+For more information refer to the [PlayReady documentation](https://learn.microsoft.com/en-us/playready/).
 
-#### Select Key Identifiers
+#### Select key identifiers
 
 All three of the key formats that use a key server - FairPlay Streaming, Widevine, PlayReady - contain something called a key identifier. The key identifier is the data sent to the server so it can return the correct key.
 
 The FairPlay Streaming key identifier has no relationship to that used by the other formats.
 
-The Widevine and PlayReady key identifiers may be identical. Their value should be a UUID. Note that PlayReady does not store the UUID as a simple 16-byte array. (See the [`Example`](using-content-protection-systems-with-hls#Example.md) below for more detail.)
+The Widevine and PlayReady key identifiers may be identical. Their value should be a UUID. Note that PlayReady does not store the UUID as a simple 16-byte array. (See the [Example](./using-content-protection-systems-with-hls.md#Example) below for more detail.)
 
-#### Create a Pssh Box
+#### Create a PSSH box
 
 The Protection System Specific Header (‘pssh’) box is defined in ISO/IEC 23001-7.
 
@@ -100,17 +101,17 @@ PSSH box {
 
 The `SystemID` is a UUID that indicates how to parse the `Data` portion of the PSSH.
 
-##### Widevine Pssh Data
+##### Widevine PSSH data
 
 The Widevine `SystemID` is `edef8ba9-79d6-4ace-a3c8-27dcd51d21ed`.
 
-The `Data` field contains a protocol buﬀer (that is, a mechanism for serializing structured data; see [`Protocol Buffers`](https://developer.apple.comhttps://protobuf.dev)).
+The `Data` field contains a protocol buﬀer (that is, a mechanism for serializing structured data; see [Protocol Buffers](https://protobuf.dev)).
 
 The Widevine documentation details the specific messages that are possible.
 
 The data will contain the key identifier and the protection scheme.
 
-##### Playready Pssh Data
+##### PlayReady PSSH data
 
 The PlayReady `SystemID` is `9a04f079-9840-4286-ab92-e65be0885f95`.
 
@@ -130,7 +131,7 @@ Here is an example of FairPlay Streaming, Widevine, and PlayReady keys.
 #EXT-X-KEY:METHOD=SAMPLE-AES,URI="data:text/plain;charset=UTF-16;base64,vgEAAAEAAQC0ATwAVwBSAE0ASABFAEEARABFAFIAIAB4AG0AbABuAHMAPQAiAGgAdAB0AHAAOgAvAC8AcwBjAGgAZQBtAGEAcwAuAG0AaQBjAHIAbwBzAG8AZgB0AC4AYwBvAG0ALwBEAFIATQAvADIAMAAwADcALwAwADMALwBQAGwAYQB5AFIAZQBhAGQAeQBIAGUAYQBkAGUAcgAiACAAdgBlAHIAcwBpAG8AbgA9ACIANAAuADMALgAwAC4AMAAiAD4APABEAEEAVABBAD4APABQAFIATwBUAEUAQwBUAEkATgBGAE8APgA8AEsASQBEAFMAPgA8AEsASQBEACAAQQBMAEcASQBEAD0AIgBBAEUAUwBDAEIAQwAiACAAVgBBAEwAVQBFAD0AIgBOAEMAUQBVAEIARgBSAEUAZABHAFMARQBsAEsAUwAwAHgATgBUAGsAOQBBAD0APQAiAD4APAAvAEsASQBEAD4APAAvAEsASQBEAFMAPgA8AC8AUABSAE8AVABFAEMAVABJAE4ARgBPAD4APAAvAEQAQQBUAEEAPgA8AC8AVwBSAE0ASABFAEEARABFAFIAPgA=",KEYFORMAT="com.microsoft.playready",KEYFORMATVERSIONS="1"
 ```
 
-##### Fairplay
+##### FairPlay
 
 The FairPlay Streaming URI value, except for the URL scheme prefix, is the key identifier.
 
@@ -138,7 +139,7 @@ The FairPlay Streaming URI value, except for the URL scheme prefix, is the key i
 
 Here is the unpacked form of the Widevine base64 string (a PSSH box).
 
-```None
+```
 00000000 00 00 00 38 70 73 73 68 00 00 00 00 ed ef 8b a9 |...8pssh........|
 00000010 79 d6 4a ce a3 c8 27 dc d5 1d 21 ed 00 00 00 18 |y.J...'...!.....|
 00000020 12 10 04 14 24 34 44 54 64 74 84 94 a4 b4 c4 d4 |....$4DTdt......|
@@ -148,11 +149,11 @@ Here is the unpacked form of the Widevine base64 string (a PSSH box).
 
 The protocol buﬀer is the last 24 bytes. This buﬀer decodes into two fields: a `key_id` (16 byte value `(04 14 24 34 44 54 64 74 84 94 a4 b4 c4 d4 e4 f4)`, and a `protection_scheme` (a `var-int` that decodes to `63 62 63 73` or `‘cbcs’`). While this example contains only two fields, additional optional fields could be present.
 
-##### Playready
+##### PlayReady
 
 Here is unpacked form of the PlayReady base64 string (a PlayReady Object).
 
-```None
+```
 00000000 be 01 00 00 01 00 01 00 b4 01 3c 00 57 00 52 00 |..........<.W.R.|
 00000010 4d 00 48 00 45 00 41 00 44 00 45 00 52 00 20 00 |M.H.E.A.D.E.R. .|
 00000020 78 00 6d 00 6c 00 6e 00 73 00 3d 00 22 00 68 00 |x.m.l.n.s.=.".h.|
@@ -203,7 +204,7 @@ The `ALGID` attribute indicates the protection scheme is ‘cbcs’.
 
 Here is the unpacked form of the `KID` element’s `VALUE` attribute, which is a base64 encoded string.
 
-```None
+```
 00000000 34 24 14 04 54 44 74 64 84 94 a4 b4 c4 d4 e4 f4 |4$..TDtd........|
 00000010
 ```
@@ -212,23 +213,24 @@ This is a UUID in Microsoft’s GUID form. That is, three little-endian numbers 
 
 ## See Also
 
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](hls-authoring-specification-for-apple-devices.md)
+### Specifications and other documents
+- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
   Learn the requirements for live and on-demand audio and video content delivery using HLS.
-- [HLS for Apple Podcasts](hls-for-podcasts.md)
+- [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
-- [About the Common Media Application Format with HTTP Live Streaming (HLS)](about-the-common-media-application-format-with-http-live-streaming-hls.md)
+- [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)
   Learn the Common Media Application Format as it applies to HLS.
-- [Enabling Low-Latency HTTP Live Streaming (HLS)](enabling-low-latency-http-live-streaming-hls.md)
+- [Enabling Low-Latency HTTP Live Streaming (HLS)](./enabling-low-latency-http-live-streaming-hls.md)
   Add Low-Latency HLS to your content streams to maintain scalability.
-- [Links to additional specifications and videos](links-to-additional-specifications-and-videos.md)
+- [Links to additional specifications and videos](./links-to-additional-specifications-and-videos.md)
   Review additional specifications and documents.
-- [Videos about HLS](videos-about-hls.md)
+- [Videos about HLS](./videos-about-hls.md)
   Review informational videos about HTTP Live Streaming.
-- [Providing metadata for xHE-AAC video soundtracks](providing-metadata-for-xhe-aac-video-soundtracks.md)
+- [Providing metadata for xHE-AAC video soundtracks](./providing-metadata-for-xhe-aac-video-soundtracks.md)
   Ensure volume normalization by including metadata for loudness and dynamic range control.
-- [Adjusting anchor loudness](adjusting-anchor-loudness.md)
+- [Adjusting anchor loudness](./adjusting-anchor-loudness.md)
   Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
-- [Providing JavaScript Object Notation (JSON) chapters](providing-javascript-object-notation-json-chapters.md)
+- [Providing JavaScript Object Notation (JSON) chapters](./providing-javascript-object-notation-json-chapters.md)
   Prepare JSON chapters for HTTP Live Streaming.
 
 

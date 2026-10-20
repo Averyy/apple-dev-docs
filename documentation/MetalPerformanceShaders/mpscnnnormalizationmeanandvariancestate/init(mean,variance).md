@@ -1,7 +1,8 @@
 # init(mean:variance:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(mean: any MTLBuffer, variance: any MTLBuffer)
+```
+
+```objc
+- (instancetype) initWithMean:(id<MTLBuffer>) mean variance:(id<MTLBuffer>) variance;
 ```
 
 

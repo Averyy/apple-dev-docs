@@ -1,7 +1,8 @@
 # NSTextCheckingController
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
@@ -12,48 +13,53 @@
 class NSTextCheckingController
 ```
 
+```objc
+@interface NSTextCheckingController : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(client: any NSTextCheckingClient)](nstextcheckingcontroller/init(client:).md)
+- [init(client: any NSTextCheckingClient)](./nstextcheckingcontroller/init%28client%29.md)
 ### Instance Properties
-- [var client: any NSTextCheckingClient](nstextcheckingcontroller/client.md)
-- [var spellCheckerDocumentTag: Int](nstextcheckingcontroller/spellcheckerdocumenttag.md)
+- [var client: any NSTextCheckingClient](./nstextcheckingcontroller/client.md)
+- [var spellCheckerDocumentTag: Int](./nstextcheckingcontroller/spellcheckerdocumenttag.md)
 ### Instance Methods
-- [func changeSpelling(Any?)](nstextcheckingcontroller/changespelling(_:).md)
-- [func checkSpelling(Any?)](nstextcheckingcontroller/checkspelling(_:).md)
-- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](nstextcheckingcontroller/checktext(in:types:options:).md)
-- [func checkTextInDocument(Any?)](nstextcheckingcontroller/checktextindocument(_:).md)
-- [func checkTextInSelection(Any?)](nstextcheckingcontroller/checktextinselection(_:).md)
-- [func considerTextChecking(for: NSRange)](nstextcheckingcontroller/considertextchecking(for:).md)
-- [func didChangeSelectedRange()](nstextcheckingcontroller/didchangeselectedrange.md)
-- [func didChangeText(in: NSRange)](nstextcheckingcontroller/didchangetext(in:).md)
-- [func ignoreSpelling(Any?)](nstextcheckingcontroller/ignorespelling(_:).md)
-- [func insertedText(in: NSRange)](nstextcheckingcontroller/insertedtext(in:).md)
-- [func invalidate()](nstextcheckingcontroller/invalidate.md)
-- [func menu(at: Int, clickedOnSelection: Bool, effectiveRange: NSRangePointer) -> NSMenu?](nstextcheckingcontroller/menu(at:clickedonselection:effectiverange:).md)
-- [func orderFrontSubstitutionsPanel(Any?)](nstextcheckingcontroller/orderfrontsubstitutionspanel(_:).md)
-- [func showGuessPanel(Any?)](nstextcheckingcontroller/showguesspanel(_:).md)
-- [func updateCandidates()](nstextcheckingcontroller/updatecandidates.md)
-- [func validAnnotations() -> [NSAttributedString.Key]](nstextcheckingcontroller/validannotations.md)
+- [func changeSpelling(Any?)](./nstextcheckingcontroller/changespelling%28_%29.md)
+- [func checkSpelling(Any?)](./nstextcheckingcontroller/checkspelling%28_%29.md)
+- [func checkText(in: NSRange, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any])](./nstextcheckingcontroller/checktext%28in,types,options%29.md)
+- [func checkTextInDocument(Any?)](./nstextcheckingcontroller/checktextindocument%28_%29.md)
+- [func checkTextInSelection(Any?)](./nstextcheckingcontroller/checktextinselection%28_%29.md)
+- [func considerTextChecking(for: NSRange)](./nstextcheckingcontroller/considertextchecking%28for%29.md)
+- [func didChangeSelectedRange()](./nstextcheckingcontroller/didchangeselectedrange%28%29.md)
+- [func didChangeText(in: NSRange)](./nstextcheckingcontroller/didchangetext%28in%29.md)
+- [func ignoreSpelling(Any?)](./nstextcheckingcontroller/ignorespelling%28_%29.md)
+- [func insertedText(in: NSRange)](./nstextcheckingcontroller/insertedtext%28in%29.md)
+- [func invalidate()](./nstextcheckingcontroller/invalidate%28%29.md)
+- [func menu(at: Int, clickedOnSelection: Bool, effectiveRange: NSRangePointer) -> NSMenu?](./nstextcheckingcontroller/menu%28at,clickedonselection,effectiverange%29.md)
+- [func orderFrontSubstitutionsPanel(Any?)](./nstextcheckingcontroller/orderfrontsubstitutionspanel%28_%29.md)
+- [func showGuessPanel(Any?)](./nstextcheckingcontroller/showguesspanel%28_%29.md)
+- [func updateCandidates()](./nstextcheckingcontroller/updatecandidates%28%29.md)
+- [func validAnnotations() -> [NSAttributedString.Key]](./nstextcheckingcontroller/validannotations%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSTextCheckingClient](nstextcheckingclient.md)
-- [protocol NSTextInputTraits](nstextinputtraits.md)
-- [enum NSTextInputTraitType](nstextinputtraittype.md)
+### Text-checking
+- [protocol NSTextCheckingClient](./nstextcheckingclient.md)
+- [protocol NSTextInputTraits](./nstextinputtraits.md)
+- [enum NSTextInputTraitType](./nstextinputtraittype.md)
 
 
 ---

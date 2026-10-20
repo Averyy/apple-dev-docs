@@ -1,7 +1,8 @@
 # readOutputs(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns all output buffers for the given output node.
 

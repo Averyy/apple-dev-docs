@@ -1,14 +1,15 @@
 # sock_release
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15
 
 ## Declaration
 
-```swift
+```c
 void sock_release(socket_t so);
 ```
 

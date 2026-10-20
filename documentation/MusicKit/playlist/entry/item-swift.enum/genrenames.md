@@ -1,7 +1,8 @@
 # genreNames
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the playlist entry’s item associated genres.
 

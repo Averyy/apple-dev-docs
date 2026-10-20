@@ -1,7 +1,8 @@
 # init(text:detailText:image:accessoryImage:accessoryType:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list item that displays an accessory beside its content.
 
@@ -16,11 +17,15 @@ Creates a list item that displays an accessory beside its content.
 init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImage?, accessoryType: CPListItemAccessoryType)
 ```
 
+```objc
+- (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText image:(UIImage *) image accessoryImage:(UIImage *) accessoryImage accessoryType:(CPListItemAccessoryType) accessoryType;
+```
+
 #### Discussion
 
-If you specify an image, CarPlay sets `accessoryType` to [`CPListItemAccessoryType.none`](cplistitemaccessorytype/none.md).
+If you specify an image, CarPlay sets `accessoryType` to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md).
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](cplistitem/maximumimagesize.md) to determine the maximum size for a list item’s image and accessory image.
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size for a list item’s image and accessory image.
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 
@@ -34,9 +39,10 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-- [init(text: String?, detailText: String?)](cplistitem/init(text:detailtext:).md)
+### Creating a List Item
+- [init(text: String?, detailText: String?)](./init%28text,detailtext%29.md)
   Creates a list item with primary and secondary text.
-- [init(text: String?, detailText: String?, image: UIImage?)](cplistitem/init(text:detailtext:image:).md)
+- [init(text: String?, detailText: String?, image: UIImage?)](./init%28text,detailtext,image%29.md)
   Creates a list item with primary text, secondary text, and an image.
 
 

@@ -1,12 +1,13 @@
 # pdfRepresentation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PDF representation of the representation’s image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The PDF representation of the representation’s image.
 var pdfRepresentation: Data { get }
 ```
 
+```objc
+@property (strong, readonly) NSData * PDFRepresentation;
+```
+
 ## See Also
 
-- [var bounds: NSRect](nspdfimagerep/bounds.md)
+### Getting Data
+- [var bounds: NSRect](./bounds.md)
   The image representation’s bounding rectangle.
-- [var currentPage: Int](nspdfimagerep/currentpage.md)
+- [var currentPage: Int](./currentpage.md)
   The page currently displayed by the image representation.
-- [var pageCount: Int](nspdfimagerep/pagecount.md)
+- [var pageCount: Int](./pagecount.md)
   The number of pages in the image representation.
 
 

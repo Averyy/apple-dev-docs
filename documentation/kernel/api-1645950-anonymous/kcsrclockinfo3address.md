@@ -1,14 +1,15 @@
 # kCSRClockInfo3Address
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kCSRClockInfo3Address = kCSRCoreRegistersBaseAddress + 0x007C
 ```
 

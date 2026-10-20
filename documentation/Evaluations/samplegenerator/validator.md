@@ -1,7 +1,8 @@
 # validator
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional closure that decides whether a generated sample is valid.
 
@@ -22,13 +23,14 @@ var validator: (nonisolated(nonsending) @Sendable (SampleType) async throws -> B
 
 #### Discussion
 
-When provided, the generator collects rejected samples in [`invalidSamples`](samplegenerator/invalidsamples.md).
+When provided, the generator collects rejected samples in [`invalidSamples`](./invalidsamples.md).
 
 ## See Also
 
-- [var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?](samplegenerator/samplingstrategy-swift.property.md)
+### Configuring generation
+- [var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?](./samplingstrategy-swift.property.md)
   The strategy for selecting existing samples as examples in the prompt.
-- [SampleGenerator.SamplingStrategy](samplegenerator/samplingstrategy-swift.enum.md)
+- [SampleGenerator.SamplingStrategy](./samplingstrategy-swift.enum.md)
   The values that define how the generator selects existing samples as examples in the generation prompt.
 
 

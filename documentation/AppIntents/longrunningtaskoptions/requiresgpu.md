@@ -1,7 +1,8 @@
 # requiresGPU
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the task requires GPU resources.
 

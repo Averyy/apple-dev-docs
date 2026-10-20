@@ -1,7 +1,8 @@
 # isCameraSensorOrientationCompensationEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +15,10 @@
 var isCameraSensorOrientationCompensationEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isCameraSensorOrientationCompensationEnabled) BOOL cameraSensorOrientationCompensationEnabled;
+```
+
 #### Discussion
 
 A BOOL value indicating that still image buffers will be rotated to match the sensor orientation of earlier generation hardware.
@@ -22,7 +27,8 @@ Default is YES when cameraSensorOrientationCompensationSupported is YES. Set to 
 
 ## See Also
 
-- [var isCameraSensorOrientationCompensationSupported: Bool](avcapturephotooutput/iscamerasensororientationcompensationsupported.md)
+### Configuring orientation compensation
+- [var isCameraSensorOrientationCompensationSupported: Bool](./iscamerasensororientationcompensationsupported.md)
 
 
 ---

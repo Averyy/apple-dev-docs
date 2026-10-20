@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the user or system’s input suggestion into the document.
 
@@ -16,9 +17,13 @@ Inserts the user or system’s input suggestion into the document.
 optional func insert(_ inputSuggestion: UIInputSuggestion)
 ```
 
+```objc
+- (void) insertInputSuggestion:(UIInputSuggestion *) inputSuggestion;
+```
+
 ## Mentions
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+- [Adopting Smart Reply in your messaging or email app](../adopting-smart-reply-in-your-messaging-or-email-app.md)
 
 
 ---

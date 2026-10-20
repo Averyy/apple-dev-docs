@@ -1,7 +1,8 @@
 # services
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Encapsulates information about services, described in the Discussion section.
 
@@ -10,7 +11,7 @@ Encapsulates information about services, described in the Discussion section.
 
 ## Declaration
 
-```swift
+```
 attribute Object services;
 ```
 

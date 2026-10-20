@@ -1,7 +1,8 @@
 # LowLevelRenderer.Configuration.Output
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The pixel format configuration for a renderer’s output attachments.
 
@@ -20,26 +21,27 @@ struct Output
 ## Topics
 
 ### Creating an output configuration
-- [init(colorPixelFormat: MTLPixelFormat?, depthPixelFormat: MTLPixelFormat?)](lowlevelrenderer/configuration/output-swift.struct/init(colorpixelformat:depthpixelformat:).md)
+- [init(colorPixelFormat: MTLPixelFormat?, depthPixelFormat: MTLPixelFormat?)](./output-swift.struct/init%28colorpixelformat,depthpixelformat%29.md)
   Creates an output configuration with the given color and depth pixel formats.
 ### Specifying pixel formats
-- [var colorPixelFormat: MTLPixelFormat?](lowlevelrenderer/configuration/output-swift.struct/colorpixelformat.md)
+- [var colorPixelFormat: MTLPixelFormat?](./output-swift.struct/colorpixelformat.md)
   The pixel format of the color attachment, or `nil` for depth-only passes.
-- [var depthPixelFormat: MTLPixelFormat?](lowlevelrenderer/configuration/output-swift.struct/depthpixelformat.md)
+- [var depthPixelFormat: MTLPixelFormat?](./output-swift.struct/depthpixelformat.md)
   The pixel format of the depth attachment, or `nil` to omit depth.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var output: LowLevelRenderer.Configuration.Output](lowlevelrenderer/configuration/output-swift.property.md)
+### Specifying the output
+- [var output: LowLevelRenderer.Configuration.Output](./output-swift.property.md)
   The pixel format configuration for this renderer’s output attachments.
-- [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](lowlevelrenderer/configuration/rendertargetdescriptor.md)
-  The render target descriptor derived from this configuration’s [`output`](lowlevelrenderer/configuration/output-swift.property.md).
+- [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](./rendertargetdescriptor.md)
+  The render target descriptor derived from this configuration’s [`output`](./output-swift.property.md).
 
 
 ---

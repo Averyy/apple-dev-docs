@@ -1,7 +1,8 @@
 # ManifestURL.ItemsItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An array of dictionaries representing what the manifest installs.
 
@@ -16,16 +17,16 @@ An array of dictionaries representing what the manifest installs.
 
 ## Declaration
 
-```swift
+```
 object ManifestURL.ItemsItem
 ```
 
 ## Topics
 
 ### Objects
-- [object ManifestURL.ItemsItem.AssetsItem](manifesturl/itemsitem/assetsitem.md)
+- [object ManifestURL.ItemsItem.AssetsItem](./itemsitem/assetsitem.md)
   An array of dictionaries that describe an item to install.
-- [object ManifestURL.ItemsItem.Metadata](manifesturl/itemsitem/metadata-data.dictionary.md)
+- [object ManifestURL.ItemsItem.Metadata](./itemsitem/metadata-data.dictionary.md)
   The metadata for an application or package manifest item.
 
 ## Properties

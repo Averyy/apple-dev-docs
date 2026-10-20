@@ -1,14 +1,15 @@
 # rawBufferControlRequestCompletion
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static void rawBufferControlRequestCompletion(void *target, void *parameter, IOReturn status, uint32_t bytesTransferred);
 ```
 

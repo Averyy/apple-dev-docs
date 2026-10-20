@@ -1,9 +1,10 @@
 # NSUserAppleScriptTask.CompletionHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Implement this block to retrieve the result of the AppleScript executed by [`execute(withAppleEvent:completionHandler:)`](nsuserapplescripttask/execute(withappleevent:completionhandler:).md).
+Implement this block to retrieve the result of the AppleScript executed by [`execute(withAppleEvent:completionHandler:)`](./execute%28withappleevent,completionhandler%29.md).
 
 **Availability**:
 - macOS 10.0+
@@ -12,6 +13,10 @@ Implement this block to retrieve the result of the AppleScript executed by [`exe
 
 ```swift
 typealias CompletionHandler = @Sendable (NSAppleEventDescriptor?, (any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSAppleEventDescriptor *, NSError *) NSUserAppleScriptTaskCompletionHandler;
 ```
 
 

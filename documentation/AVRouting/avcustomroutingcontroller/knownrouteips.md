@@ -1,7 +1,8 @@
 # knownRouteIPs
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of route addresses known to be on the local network.
 
@@ -17,9 +18,14 @@ An array of route addresses known to be on the local network.
 var knownRouteIPs: [AVCustomRoutingPartialIP] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<AVCustomRoutingPartialIP *> * knownRouteIPs;
+```
+
 ## See Also
 
-- [class AVCustomRoutingPartialIP](avcustomroutingpartialip.md)
+### Configuring route addresses
+- [class AVCustomRoutingPartialIP](../avcustomroutingpartialip.md)
   An object that represents a full or partial IP address.
 
 

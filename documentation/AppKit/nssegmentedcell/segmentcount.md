@@ -1,17 +1,22 @@
 # segmentCount
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of segments in the segmented control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var segmentCount: Int { get set }
+```
+
+```objc
+@property NSInteger segmentCount;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This property contains the number of segments the segmented control should have.
 
 ## See Also
 
-- [Segmented Control Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SegmentedControl/SegmentedControl.html#//apple_ref/doc/uid/10000182i)
+### Related Documentation
+- [Segmented Control Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SegmentedControl/SegmentedControl.html#//apple_ref/doc/uid/10000182i)
 
 
 ---

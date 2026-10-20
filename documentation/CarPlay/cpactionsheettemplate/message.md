@@ -1,7 +1,8 @@
 # message
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptive message providing details about the reason for displaying the action sheet.
 
@@ -16,11 +17,16 @@ The descriptive message providing details about the reason for displaying the ac
 var message: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * message;
+```
+
 ## See Also
 
-- [var title: String?](cpactionsheettemplate/title.md)
+### Getting Action Sheet Template Information
+- [var title: String?](./title.md)
   The title of the action sheet.
-- [var actions: [CPAlertAction]](cpactionsheettemplate/actions.md)
+- [var actions: [CPAlertAction]](./actions.md)
   The list of actions available on the action sheet.
 
 

@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asset that a session exports.
 
@@ -17,6 +18,10 @@ An asset that a session exports.
 
 ```swift
 var asset: AVAsset { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) AVAsset * asset;
 ```
 
 

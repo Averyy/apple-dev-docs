@@ -1,12 +1,15 @@
 # displayURL
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that causes the app which created this content item to display a description screen for the item.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentItem has been replaced by TVTopShelfItem
 
 ## Declaration
 
@@ -14,13 +17,18 @@ A URL that causes the app which created this content item to display a descripti
 var displayURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * displayURL;
+```
+
 #### Discussion
 
-When the user selects the item, your application is launched if it wasn’t already running and then your [`UIApplication`](https://developer.apple.com/documentation/uikit/uiapplication) delegate is called. If at all possible, your application should immediately display the description of the item without any prompting for other information or displaying any other UI.
+When the user selects the item, your application is launched if it wasn’t already running and then your [`UIApplication`](../../UIKit/uiapplication.md) delegate is called. If at all possible, your application should immediately display the description of the item without any prompting for other information or displaying any other UI.
 
 ## See Also
 
-- [var playURL: URL?](tvcontentitem/playurl.md)
+### Inspecting the Application Launch Properties
+- [var playURL: URL?](./playurl.md)
   A URL that causes the app which created this content item to begin playing the item at the user’s current position.
 
 

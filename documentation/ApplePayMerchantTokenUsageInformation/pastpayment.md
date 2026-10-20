@@ -1,22 +1,23 @@
 # PastPayment
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A past payment.
 
 ## Declaration
 
-```swift
+```
 object PastPayment
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PastPayment.LineItems](pastpayment/lineitems-data.dictionary.md)
+- [object PastPayment.LineItems](./pastpayment/lineitems-data.dictionary.md)
   The goods or services paid for.
-- [object PastPayment.SummaryItems](pastpayment/summaryitems-data.dictionary.md)
+- [object PastPayment.SummaryItems](./pastpayment/summaryitems-data.dictionary.md)
   Items that summarize the total amount, such as taxes or shipping cost.
 
 ## Properties
@@ -29,15 +30,16 @@ object PastPayment
 
 ## See Also
 
-- [object AutomaticReloadPaymentDetails](automaticreloadpaymentdetails.md)
+### Getting payment details
+- [object AutomaticReloadPaymentDetails](./automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object DeferredPaymentDetails](deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](./deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PaymentIssueDetails](paymentissuedetails.md)
+- [object PaymentIssueDetails](./paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](./recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](upcomingpayment.md)
+- [object UpcomingPayment](./upcomingpayment.md)
   An upcoming payment.
 
 

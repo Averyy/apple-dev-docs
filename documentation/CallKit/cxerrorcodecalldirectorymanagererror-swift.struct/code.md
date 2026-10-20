@@ -1,7 +1,8 @@
 # CXErrorCodeCallDirectoryManagerError.Code
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes the CallKit framework returns.
 
@@ -18,47 +19,52 @@ Error codes the CallKit framework returns.
 enum Code
 ```
 
+```c
+enum CXErrorCodeCallDirectoryManagerError : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CXErrorCodeCallDirectoryManagerError.Code.unknown](cxerrorcodecalldirectorymanagererror-swift.struct/code/unknown.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.unknown](./code/unknown.md)
   An unknown error occurred.
-- [CXErrorCodeCallDirectoryManagerError.Code.noExtensionFound](cxerrorcodecalldirectorymanagererror-swift.struct/code/noextensionfound.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.noExtensionFound](./code/noextensionfound.md)
   The call directory manager could not find a corresponding app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.currentlyLoading](cxerrorcodecalldirectorymanagererror-swift.struct/code/currentlyloading.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.currentlyLoading](./code/currentlyloading.md)
   The call directory manager is loading the app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.loadingInterrupted](cxerrorcodecalldirectorymanagererror-swift.struct/code/loadinginterrupted.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.loadingInterrupted](./code/loadinginterrupted.md)
   The call directory manager was interrupted while loading the app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.entriesOutOfOrder](cxerrorcodecalldirectorymanagererror-swift.struct/code/entriesoutoforder.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.entriesOutOfOrder](./code/entriesoutoforder.md)
   The entries in the call directory are out of order.
-- [CXErrorCodeCallDirectoryManagerError.Code.duplicateEntries](cxerrorcodecalldirectorymanagererror-swift.struct/code/duplicateentries.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.duplicateEntries](./code/duplicateentries.md)
   There are duplicate entries in the call directory.
-- [CXErrorCodeCallDirectoryManagerError.Code.maximumEntriesExceeded](cxerrorcodecalldirectorymanagererror-swift.struct/code/maximumentriesexceeded.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.maximumEntriesExceeded](./code/maximumentriesexceeded.md)
   There are too many entries in the call directory.
-- [CXErrorCodeCallDirectoryManagerError.Code.extensionDisabled](cxerrorcodecalldirectorymanagererror-swift.struct/code/extensiondisabled.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.extensionDisabled](./code/extensiondisabled.md)
   The call directory extension isn’t enabled by the system.
-- [CXErrorCodeCallDirectoryManagerError.Code.unexpectedIncrementalRemoval](cxerrorcodecalldirectorymanagererror-swift.struct/code/unexpectedincrementalremoval.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.unexpectedIncrementalRemoval](./code/unexpectedincrementalremoval.md)
   A request occurred before confirming incremental loading.
 ### Initializers
-- [init?(rawValue: Int)](cxerrorcodecalldirectorymanagererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CXCallDirectoryManager.EnabledStatus](cxcalldirectorymanager/enabledstatus.md)
-  The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:).md) method.
-- [struct CXErrorCodeCallDirectoryManagerError](cxerrorcodecalldirectorymanagererror-swift.struct.md)
+### Errors
+- [CXCallDirectoryManager.EnabledStatus](../cxcalldirectorymanager/enabledstatus.md)
+  The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](../cxcalldirectorymanager/getenabledstatusforextension%28withidentifier,completionhandler%29.md) method.
+- [struct CXErrorCodeCallDirectoryManagerError](../cxerrorcodecalldirectorymanagererror-swift.struct.md)
   Errors when interacting with a call directory manager.
-- [let CXErrorDomainCallDirectoryManager: String](cxerrordomaincalldirectorymanager.md)
+- [let CXErrorDomainCallDirectoryManager: String](../cxerrordomaincalldirectorymanager.md)
   Domain for errors when interacting with a call directory manager.
 
 

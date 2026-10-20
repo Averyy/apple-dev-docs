@@ -1,12 +1,15 @@
 # SMJobBless(_:_:_:_:)
 
 **Framework**: Service Management  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Submits the executable for the given label as a job to `launchd`.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 13.0
+
+> **Deprecated**: Please use SMAppService instead
 
 ## Declaration
 
@@ -14,39 +17,44 @@ Submits the executable for the given label as a job to `launchd`.
 func SMJobBless(_ domain: CFString!, _ executableLabel: CFString, _ auth: AuthorizationRef!, _ outError: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
+```c
+extern Boolean SMJobBless(CFStringRef domain, CFStringRef executableLabel, AuthorizationRef auth, CFErrorRef*outError);
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the job was successfully submitted; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../Swift/true.md) if the job was successfully submitted; otherwise [`false`](../Swift/false.md).
 
 #### Discussion
 
-`SMJobBless` submits the executable for the given label as a `launchd` job. This function removes the need for a `setuid(_:)` helper invoked through [`AuthorizationExecuteWithPrivileges`](https://developer.apple.com/documentation/security/authorizationexecutewithprivileges) in order to install a `launchd` property list. If the job is already installed, this methods returns [`true`](https://developer.apple.com/documentation/swift/true).
+`SMJobBless` submits the executable for the given label as a `launchd` job. This function removes the need for a `setuid(_:)` helper invoked through [`AuthorizationExecuteWithPrivileges`](../Security/authorizationexecutewithprivileges.md) in order to install a `launchd` property list. If the job is already installed, this methods returns [`true`](../Swift/true.md).
 
 In order to use this function, the app must meet the following requirements:
 
 1. Xcode must sign both the calling app and target executable tool.
-2. The calling app’s `Info.plist` must include an [`SMPrivilegedExecutables`](https://developer.apple.com/documentation/bundleresources/information-property-list/smprivilegedexecutables) dictionary of strings. Each string is a textual representation of a code signing requirement the system uses to determine whether the app owns the privileged tool once installed (for example, in order for subsequent versions to update the installed version).
+2. The calling app’s `Info.plist` must include an [`SMPrivilegedExecutables`](../BundleResources/information-property-list/smprivilegedexecutables.md) dictionary of strings. Each string is a textual representation of a code signing requirement the system uses to determine whether the app owns the privileged tool once installed (for example, in order for subsequent versions to update the installed version).
 
 Each key of `SMPrivilegedExecutables` is a reverse-DNS label for the helper tool that must be globally unique.
 
-1. The helper tool must have an embedded `Info.plist` containing an [`SMAuthorizedClients`](https://developer.apple.com/documentation/bundleresources/information-property-list/smauthorizedclients) array of strings. Each string is a textual representation of a code signing requirement describing a client allowed to add and remove the tool.
+1. The helper tool must have an embedded `Info.plist` containing an [`SMAuthorizedClients`](../BundleResources/information-property-list/smauthorizedclients.md) array of strings. Each string is a textual representation of a code signing requirement describing a client allowed to add and remove the tool.
 2. The helper tool must have an embedded launchd property list. The only required key in this property list is the `Label` key. When the Service Management framework extracts the `launchd` property list and writes it to disk, it sets the key for `ProgramArguments` to an array of 1 element that points to a standard location. You can’t specify your own program arguments, so don’t rely on the system passing custom command line arguments to your tool. Pass any parameters through an inter-process communication (IPC) channel.
 3. The helper tool must reside in the Contents/Library/LaunchServices directory inside the application bundle, and its name must be its launchd job label. So if your launchd job label is `com.apple.Mail.helper`, this must be the name of the tool in your application bundle.
 
 ## Parameters
 
-- `domain`: The job’s domain. The Service Management framework only supports the [`kSMDomainSystemLaunchd`](ksmdomainsystemlaunchd.md) domain.
-- `executableLabel`: The label of the privileged executable to install. This label must be one of the keys found in the [`SMPrivilegedExecutables`](https://developer.apple.com/documentation/bundleresources/information-property-list/smprivilegedexecutables) dictionary in the application’s `Info.plist`.
-- `auth`: An authorization reference containing the [`kSMRightBlessPrivilegedHelper`](ksmrightblessprivilegedhelper.md) right.
-- `outError`: An output reference to a [`CFError`](https://developer.apple.com/documentation/corefoundation/cferror) describing the specific error encountered while submitting the executable tool; or, `NULL` if successful. It’s the responsibility of the application to release the error reference. This argument may be `NULL`.
+- `domain`: The job’s domain. The Service Management framework only supports the [`kSMDomainSystemLaunchd`](./ksmdomainsystemlaunchd.md) domain.
+- `executableLabel`: The label of the privileged executable to install. This label must be one of the keys found in the [`SMPrivilegedExecutables`](../BundleResources/information-property-list/smprivilegedexecutables.md) dictionary in the application’s `Info.plist`.
+- `auth`: An authorization reference containing the [`kSMRightBlessPrivilegedHelper`](./ksmrightblessprivilegedhelper.md) right.
+- `outError`: An output reference to a [`CFError`](../CoreFoundation/cferror.md) describing the specific error encountered while submitting the executable tool; or, `NULL` if successful. It’s the responsibility of the application to release the error reference. This argument may be `NULL`.
 
 ## See Also
 
-- [class SMAppService](smappservice.md)
+### Management
+- [class SMAppService](./smappservice.md)
   An object the framework uses to control helper executables that live inside an app’s main bundle.
-- [Authorization Constants](authorization-constants.md)
+- [Authorization Constants](./authorization-constants.md)
   Constants that describe the ability to authorize helper executables or modify daemon applications.
-- [Property List Keys](property-list-keys.md)
+- [Property List Keys](./property-list-keys.md)
   Property list keys that describe the kinds of applications, daemons, and helper executables the framework manages.
 
 

@@ -1,7 +1,8 @@
 # collectionView(_:shouldSpringLoadItemAt:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the spring-loading interaction effect is displayed for the specified item.
 
@@ -17,13 +18,17 @@ Determines whether the spring-loading interaction effect is displayed for the sp
 optional func collectionView(_ collectionView: UICollectionView, shouldSpringLoadItemAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView shouldSpringLoadItemAtIndexPath:(NSIndexPath *) indexPath withContext:(id<UISpringLoadedInteractionContext>) context;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to apply the spring-loading behavior for the item or [`false`](https://developer.apple.com/documentation/swift/false) to suppress the behavior altogether.
+[`true`](../../Swift/true.md) to apply the spring-loading behavior for the item or [`false`](../../Swift/false.md) to suppress the behavior altogether.
 
 #### Discussion
 
-If you do not implement this method, the collection view assumes a return value of [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the collection view assumes a return value of [`true`](../../Swift/true.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # XCTPerformanceMeasurement
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A measurement from a single iteration of a performance test.
 
@@ -11,49 +12,54 @@ A measurement from a single iteration of a performance test.
 class XCTPerformanceMeasurement
 ```
 
+```objc
+@interface XCTPerformanceMeasurement : NSObject
+```
+
 ## Topics
 
 ### Initializing a Measurement
-- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](xctperformancemeasurement/init(identifier:displayname:doublevalue:unitsymbol:).md)
+- [init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String)](./xctperformancemeasurement/init%28identifier,displayname,doublevalue,unitsymbol%29.md)
   Initializes a performance measurement for a single iteration with the value and unit of measurement.
-- [convenience init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String, polarity: XCTPerformanceMeasurement.Polarity)](xctperformancemeasurement/init(identifier:displayname:doublevalue:unitsymbol:polarity:).md)
+- [convenience init(identifier: String, displayName: String, doubleValue: Double, unitSymbol: String, polarity: XCTPerformanceMeasurement.Polarity)](./xctperformancemeasurement/init%28identifier,displayname,doublevalue,unitsymbol,polarity%29.md)
   Initializes a performance measurement for a single iteration with the value, unit of measurement, and polarity.
-- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](xctperformancemeasurement/init(identifier:displayname:value:).md)
+- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>)](./xctperformancemeasurement/init%28identifier,displayname,value%29.md)
   Initializes a performance measurement for a single iteration with the value.
-- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>, polarity: XCTPerformanceMeasurement.Polarity)](xctperformancemeasurement/init(identifier:displayname:value:polarity:).md)
+- [convenience init(identifier: String, displayName: String, value: Measurement<Unit>, polarity: XCTPerformanceMeasurement.Polarity)](./xctperformancemeasurement/init%28identifier,displayname,value,polarity%29.md)
   Initializes a performance measurement for a single iteration with the value and polarity.
 ### Identifying Measurements
-- [var displayName: String](xctperformancemeasurement/displayname.md)
+- [var displayName: String](./xctperformancemeasurement/displayname.md)
   A human-readable name for a measurement.
-- [var identifier: String](xctperformancemeasurement/identifier.md)
+- [var identifier: String](./xctperformancemeasurement/identifier.md)
   A unique identifier for a measurement.
 ### Accessing Measured Values
-- [var doubleValue: Double](xctperformancemeasurement/doublevalue.md)
+- [var doubleValue: Double](./xctperformancemeasurement/doublevalue.md)
   The measured value.
-- [var unitSymbol: String](xctperformancemeasurement/unitsymbol.md)
+- [var unitSymbol: String](./xctperformancemeasurement/unitsymbol.md)
   A string that represents the unit of measurement.
-- [var value: Measurement<Unit>](xctperformancemeasurement/value.md)
+- [var value: Measurement<Unit>](./xctperformancemeasurement/value.md)
   The measured value, including the unit of measure.
-- [var polarity: XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.property.md)
+- [var polarity: XCTPerformanceMeasurement.Polarity](./xctperformancemeasurement/polarity-swift.property.md)
   A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.
-- [XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.enum.md)
+- [XCTPerformanceMeasurement.Polarity](./xctperformancemeasurement/polarity-swift.enum.md)
   Constants that state whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class XCTPerformanceMeasurementTimestamp](xctperformancemeasurementtimestamp.md)
+### Measurements
+- [class XCTPerformanceMeasurementTimestamp](./xctperformancemeasurementtimestamp.md)
   A point in time that captures the start or finish of a performance test iteration.
 
 

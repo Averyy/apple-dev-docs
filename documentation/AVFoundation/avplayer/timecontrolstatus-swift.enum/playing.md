@@ -1,7 +1,8 @@
 # AVPlayer.TimeControlStatus.playing
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates that the player is currently playing media.
 
@@ -20,11 +21,16 @@ A state that indicates that the player is currently playing media.
 case playing
 ```
 
+```c
+AVPlayerTimeControlStatusPlaying
+```
+
 ## See Also
 
-- [AVPlayer.TimeControlStatus.paused](avplayer/timecontrolstatus-swift.enum/paused.md)
+### Status values
+- [AVPlayer.TimeControlStatus.paused](./paused.md)
   A state that indicates the player paused playback indefinitely.
-- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](avplayer/timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md)
+- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](./waitingtoplayatspecifiedrate.md)
   A state that indicates that the player is waiting for network conditions to improve before it can start or resume playback.
 
 

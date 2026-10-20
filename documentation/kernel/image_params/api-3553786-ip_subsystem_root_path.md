@@ -1,14 +1,15 @@
 # ip_subsystem_root_path
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 char *ip_subsystem_root_path;
 ```
 

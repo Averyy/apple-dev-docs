@@ -1,7 +1,8 @@
 # resumeFlow(_:with:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes a previously-paused flow.
 
@@ -12,6 +13,10 @@ Resumes a previously-paused flow.
 
 ```swift
 func resumeFlow(_ flow: NEFilterFlow, with verdict: NEFilterVerdict)
+```
+
+```objc
+- (void) resumeFlow:(NEFilterFlow *) flow withVerdict:(NEFilterVerdict *) verdict;
 ```
 
 #### Discussion

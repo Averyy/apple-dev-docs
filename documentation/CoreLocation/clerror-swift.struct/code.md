@@ -1,7 +1,8 @@
 # CLError.Code
 
 **Framework**: Core Location  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes returned by the location manager object.
 
@@ -20,84 +21,89 @@ Error codes returned by the location manager object.
 enum Code
 ```
 
+```c
+enum CLError : NSInteger;
+```
+
 #### Overview
 
-Instances of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object delivered to the delegate use these error codes for the [`code`](https://developer.apple.com/documentation/foundation/nserror/code) property of the error object.
+Instances of [`NSError`](../../Foundation/nserror.md) object delivered to the delegate use these error codes for the [`code`](../../Foundation/nserror/code.md) property of the error object.
 
 ## Topics
 
 ### Getting general errors
-- [CLError.Code.locationUnknown](clerror-swift.struct/code/locationunknown.md)
+- [CLError.Code.locationUnknown](./code/locationunknown.md)
   A constant that indicates the location manager was unable to obtain a location value right now.
-- [CLError.Code.denied](clerror-swift.struct/code/denied.md)
+- [CLError.Code.denied](./code/denied.md)
   A constant that indicates the user denied access to the location service.
-- [CLError.Code.promptDeclined](clerror-swift.struct/code/promptdeclined.md)
+- [CLError.Code.promptDeclined](./code/promptdeclined.md)
   A constant that indicates the user didn’t grant the requested temporary authorization.
-- [CLError.Code.network](clerror-swift.struct/code/network.md)
+- [CLError.Code.network](./code/network.md)
   A constant that indicates the network was unavailable or a network error occurred.
-- [CLError.Code.headingFailure](clerror-swift.struct/code/headingfailure.md)
+- [CLError.Code.headingFailure](./code/headingfailure.md)
   A constant that indicates the location manager can’t determine the heading.
-- [CLError.Code.rangingUnavailable](clerror-swift.struct/code/rangingunavailable.md)
+- [CLError.Code.rangingUnavailable](./code/rangingunavailable.md)
   A constant that indicates ranging is disabled.
-- [CLError.Code.rangingFailure](clerror-swift.struct/code/rangingfailure.md)
+- [CLError.Code.rangingFailure](./code/rangingfailure.md)
   A constant that indicates a general ranging error occurred.
 ### Getting region monitoring errors
-- [CLError.Code.regionMonitoringDenied](clerror-swift.struct/code/regionmonitoringdenied.md)
+- [CLError.Code.regionMonitoringDenied](./code/regionmonitoringdenied.md)
   A constant that indicates the user denied access to the region monitoring service.
-- [CLError.Code.regionMonitoringFailure](clerror-swift.struct/code/regionmonitoringfailure.md)
+- [CLError.Code.regionMonitoringFailure](./code/regionmonitoringfailure.md)
   A constant that indicates the location manager failed to monitor a registered region.
-- [CLError.Code.regionMonitoringSetupDelayed](clerror-swift.struct/code/regionmonitoringsetupdelayed.md)
+- [CLError.Code.regionMonitoringSetupDelayed](./code/regionmonitoringsetupdelayed.md)
   A constant that indicates Core Location failed to initialize the region monitoring feature.
-- [CLError.Code.regionMonitoringResponseDelayed](clerror-swift.struct/code/regionmonitoringresponsedelayed.md)
+- [CLError.Code.regionMonitoringResponseDelayed](./code/regionmonitoringresponsedelayed.md)
   A constant that indicates Core Location will deliver events but they may be delayed.
 ### Getting geocoding errors
-- [CLError.Code.geocodeCanceled](clerror-swift.struct/code/geocodecanceled.md)
+- [CLError.Code.geocodeCanceled](./code/geocodecanceled.md)
   A constant that indicates the geocode request was canceled.
-- [CLError.Code.geocodeFoundNoResult](clerror-swift.struct/code/geocodefoundnoresult.md)
+- [CLError.Code.geocodeFoundNoResult](./code/geocodefoundnoresult.md)
   A constant that indicates the geocode request yielded no result.
-- [CLError.Code.geocodeFoundPartialResult](clerror-swift.struct/code/geocodefoundpartialresult.md)
+- [CLError.Code.geocodeFoundPartialResult](./code/geocodefoundpartialresult.md)
   A constant that indicates the geocode request yielded a partial result.
 ### Getting deferred location update errors
-- [CLError.Code.deferredFailed](clerror-swift.struct/code/deferredfailed.md)
+- [CLError.Code.deferredFailed](./code/deferredfailed.md)
   A constant that indicates the location manager didn’t enter deferred mode for an unknown reason.
-- [CLError.Code.deferredCanceled](clerror-swift.struct/code/deferredcanceled.md)
+- [CLError.Code.deferredCanceled](./code/deferredcanceled.md)
   A constant that indicates your app or the location manager canceled the request for deferred updates.
-- [CLError.Code.deferredAccuracyTooLow](clerror-swift.struct/code/deferredaccuracytoolow.md)
+- [CLError.Code.deferredAccuracyTooLow](./code/deferredaccuracytoolow.md)
   A constant that indicates deferred mode isn’t supported for the requested accuracy.
-- [CLError.Code.deferredDistanceFiltered](clerror-swift.struct/code/deferreddistancefiltered.md)
+- [CLError.Code.deferredDistanceFiltered](./code/deferreddistancefiltered.md)
   A constant that indicates deferred mode doesn’t support distance filters.
-- [CLError.Code.deferredNotUpdatingLocation](clerror-swift.struct/code/deferrednotupdatinglocation.md)
+- [CLError.Code.deferredNotUpdatingLocation](./code/deferrednotupdatinglocation.md)
   A constant that indicates the location manager didn’t enter deferred mode because location updates were already disabled or paused.
 ### Enumeration cases
-- [CLError.Code.historicalLocationError](clerror-swift.struct/code/historicallocationerror.md)
+- [CLError.Code.historicalLocationError](./code/historicallocationerror.md)
 ### Initializers
-- [init?(rawValue: Int)](clerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var locationUnknown: CLError.Code](clerror-swift.struct/locationunknown.md)
+### Getting general errors
+- [static var locationUnknown: CLError.Code](./locationunknown.md)
   A constant that indicates the location manager was unable to obtain a location value right now.
-- [static var denied: CLError.Code](clerror-swift.struct/denied.md)
+- [static var denied: CLError.Code](./denied.md)
   A constant that indicates the user denied access to the location service.
-- [static var promptDeclined: CLError.Code](clerror-swift.struct/promptdeclined.md)
+- [static var promptDeclined: CLError.Code](./promptdeclined.md)
   A constant that indicates the user didn’t grant the requested temporary authorization.
-- [static var network: CLError.Code](clerror-swift.struct/network.md)
+- [static var network: CLError.Code](./network.md)
   A constant that indicates the network was unavailable or a network error occurred.
-- [static var headingFailure: CLError.Code](clerror-swift.struct/headingfailure.md)
+- [static var headingFailure: CLError.Code](./headingfailure.md)
   A constant that indicates the location manager can’t determine the heading.
-- [static var rangingUnavailable: CLError.Code](clerror-swift.struct/rangingunavailable.md)
+- [static var rangingUnavailable: CLError.Code](./rangingunavailable.md)
   A constant that indicates ranging is disabled.
-- [static var rangingFailure: CLError.Code](clerror-swift.struct/rangingfailure.md)
+- [static var rangingFailure: CLError.Code](./rangingfailure.md)
   A constant that indicates a general ranging error occurred.
 
 

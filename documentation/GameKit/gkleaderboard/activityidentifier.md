@@ -1,7 +1,8 @@
 # activityIdentifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the game activity associated with this leaderboard, as configured by the developer in App Store Connect.
 
@@ -18,6 +19,10 @@ The identifier of the game activity associated with this leaderboard, as configu
 
 ```swift
 var activityIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * activityIdentifier;
 ```
 
 

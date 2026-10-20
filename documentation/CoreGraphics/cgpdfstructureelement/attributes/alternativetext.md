@@ -1,7 +1,8 @@
 # alternativeText
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An alternate description of the element and its children, typically used for graphical content such as an image.
 

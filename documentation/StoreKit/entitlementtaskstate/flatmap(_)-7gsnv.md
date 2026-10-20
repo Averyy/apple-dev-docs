@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new state, mapping the entitlement value if successful.
 
@@ -26,11 +27,12 @@ func flatMap<NewValue>(_ transform: (Value) throws -> EntitlementTaskState<NewVa
 
 ## See Also
 
-- [func flatMap<NewValue>((Value) async throws -> EntitlementTaskState<NewValue>) async rethrows -> EntitlementTaskState<NewValue>](entitlementtaskstate/flatmap(_:)-66eb8.md)
+### Helper methods
+- [func flatMap<NewValue>((Value) async throws -> EntitlementTaskState<NewValue>) async rethrows -> EntitlementTaskState<NewValue>](./flatmap%28_%29-66eb8.md)
   Returns a new state, mapping the entitlement value if successful.
-- [func map<NewValue>((Value) throws -> NewValue) rethrows -> EntitlementTaskState<NewValue>](entitlementtaskstate/map(_:)-8ly3v.md)
+- [func map<NewValue>((Value) throws -> NewValue) rethrows -> EntitlementTaskState<NewValue>](./map%28_%29-8ly3v.md)
   Returns a new state, mapping the entitlement value if successful.
-- [func map<NewValue>((Value) async throws -> NewValue) async rethrows -> EntitlementTaskState<NewValue>](entitlementtaskstate/map(_:)-250dk.md)
+- [func map<NewValue>((Value) async throws -> NewValue) async rethrows -> EntitlementTaskState<NewValue>](./map%28_%29-250dk.md)
   Returns a new state, mapping the entitlement value if successful.
 
 

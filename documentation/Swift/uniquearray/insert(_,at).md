@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a new element into the array at the specified position.
 
@@ -28,7 +29,7 @@ The new element is inserted before the element currently at the specified index.
 
 All existing elements at or following the specified position are moved to make room for the new item.
 
-> **Note**: O(`self.count`)
+> **Complexity**: O(`self.count`)
 
 ## Parameters
 

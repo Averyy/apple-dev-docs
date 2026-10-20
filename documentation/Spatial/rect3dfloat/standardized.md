@@ -1,7 +1,8 @@
 # standardized
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a rectangle with a positive width and height.
 
@@ -18,6 +19,10 @@ Returns a rectangle with a positive width and height.
 
 ```swift
 var standardized: Rect3DFloat { get }
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatStandardize(SPRect3DFloat rect);
 ```
 
 

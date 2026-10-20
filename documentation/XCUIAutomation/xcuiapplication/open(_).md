@@ -1,7 +1,8 @@
 # open(_:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches the application by URL.
 
@@ -21,17 +22,22 @@ Launches the application by URL.
 func open(_ url: URL)
 ```
 
+```objc
+- (void) openURL:(NSURL *) url;
+```
+
 ## Parameters
 
 - `url`: The URL of the item to open the application to.
 
 ## See Also
 
-- [func launch()](xcuiapplication/launch.md)
+### Launching the application
+- [func launch()](./launch%28%29.md)
   Launches the application.
-- [var launchArguments: [String]](xcuiapplication/launcharguments.md)
+- [var launchArguments: [String]](./launcharguments.md)
   The arguments that pass to the application on launch.
-- [var launchEnvironment: [String : String]](xcuiapplication/launchenvironment.md)
+- [var launchEnvironment: [String : String]](./launchenvironment.md)
   The environment variables that pass to the application on launch.
 
 

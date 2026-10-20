@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement the system positions automatically.
 
@@ -32,9 +33,10 @@ In iOS, iPadOS, and macOS, the system uses the space available to the toolbar wh
 
 ## See Also
 
-- [static let principal: ToolbarItemPlacement](toolbaritemplacement/principal.md)
+### Getting semantic placement
+- [static let principal: ToolbarItemPlacement](./principal.md)
   A placement for the principal item section.
-- [static let status: ToolbarItemPlacement](toolbaritemplacement/status.md)
+- [static let status: ToolbarItemPlacement](./status.md)
   A placement for items that represents a change in status.
 
 

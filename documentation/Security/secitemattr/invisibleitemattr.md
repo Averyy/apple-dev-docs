@@ -1,7 +1,8 @@
 # SecItemAttr.invisibleItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the invisible attribute.
 
@@ -13,6 +14,10 @@ Identifies the invisible attribute.
 
 ```swift
 case invisibleItemAttr
+```
+
+```c
+kSecInvisibleItemAttr
 ```
 
 #### Discussion

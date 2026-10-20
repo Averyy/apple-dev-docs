@@ -1,7 +1,8 @@
 # ToolbarCommands
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A built-in set of commands for manipulating window toolbars.
 
@@ -21,32 +22,33 @@ struct ToolbarCommands
 
 #### Overview
 
-These commands are optional and can be explicitly requested by passing a value of this type to the [`commands(content:)`](scene/commands(content:).md) modifier.
+These commands are optional and can be explicitly requested by passing a value of this type to the [`commands(content:)`](./scene/commands%28content%29.md) modifier.
 
 ## Topics
 
 ### Creating the command group
-- [init()](toolbarcommands/init.md)
+- [init()](./toolbarcommands/init%28%29.md)
   A new value describing the built-in toolbar-related commands.
 
 ## Relationships
 
 ### Conforms To
-- [Commands](commands.md)
+- [Commands](./commands.md)
 
 ## See Also
 
-- [struct SidebarCommands](sidebarcommands.md)
+### Getting built-in command groups
+- [struct SidebarCommands](./sidebarcommands.md)
   A built-in set of commands for manipulating window sidebars.
-- [struct TextEditingCommands](texteditingcommands.md)
+- [struct TextEditingCommands](./texteditingcommands.md)
   A built-in group of commands for searching, editing, and transforming selections of text.
-- [struct TextFormattingCommands](textformattingcommands.md)
+- [struct TextFormattingCommands](./textformattingcommands.md)
   A built-in set of commands for transforming the styles applied to selections of text.
-- [struct ImportFromDevicesCommands](importfromdevicescommands.md)
+- [struct ImportFromDevicesCommands](./importfromdevicescommands.md)
   A built-in set of commands that enables importing content from nearby devices.
-- [struct InspectorCommands](inspectorcommands.md)
+- [struct InspectorCommands](./inspectorcommands.md)
   A built-in set of commands for manipulating inspectors.
-- [struct EmptyCommands](emptycommands.md)
+- [struct EmptyCommands](./emptycommands.md)
   An empty group of commands.
 
 

@@ -1,7 +1,8 @@
 # vImage.BufferType.rgbGreen
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The buffer contains the green channel.
 
@@ -11,7 +12,7 @@ The buffer contains the green channel.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,35 +23,36 @@ case rgbGreen
 
 ## See Also
 
-- [vImage.BufferType.Cb](vimage/buffertype/cb.md)
+### Enumeration Cases
+- [vImage.BufferType.Cb](./cb.md)
   The buffer contains the blue chrominance channel.
-- [vImage.BufferType.Cr](vimage/buffertype/cr.md)
+- [vImage.BufferType.Cr](./cr.md)
   The buffer contains the red chrominance channel.
-- [vImage.BufferType.YCbCr](vimage/buffertype/ycbcr.md)
+- [vImage.BufferType.YCbCr](./ycbcr.md)
   The buffer contains interleaved luminance and both chroma channels.
-- [vImage.BufferType.alpha](vimage/buffertype/alpha.md)
+- [vImage.BufferType.alpha](./alpha.md)
   The buffer contains the alpha channel or coverage component.
-- [vImage.BufferType.chroma](vimage/buffertype/chroma.md)
+- [vImage.BufferType.chroma](./chroma.md)
   The buffer contains the interleaved chrominance channels.
-- [vImage.BufferType.chunky](vimage/buffertype/chunky.md)
+- [vImage.BufferType.chunky](./chunky.md)
   The buffer contains chunky data.
-- [vImage.BufferType.cmykBlack](vimage/buffertype/cmykblack.md)
+- [vImage.BufferType.cmykBlack](./cmykblack.md)
   The buffer contains the black channel.
-- [vImage.BufferType.cmykCyan](vimage/buffertype/cmykcyan.md)
+- [vImage.BufferType.cmykCyan](./cmykcyan.md)
   The buffer contains the cyan channel.
-- [vImage.BufferType.cmykMagenta](vimage/buffertype/cmykmagenta.md)
+- [vImage.BufferType.cmykMagenta](./cmykmagenta.md)
   The buffer contains the magenta channel.
-- [vImage.BufferType.cmykYellow](vimage/buffertype/cmykyellow.md)
+- [vImage.BufferType.cmykYellow](./cmykyellow.md)
   The buffer contains the yellow channel.
-- [vImage.BufferType.coreGraphics](vimage/buffertype/coregraphics.md)
+- [vImage.BufferType.coreGraphics](./coregraphics.md)
   The buffer contains a Core Graphics image.
-- [vImage.BufferType.indexed](vimage/buffertype/indexed.md)
+- [vImage.BufferType.indexed](./indexed.md)
   The buffer contains data in an indexed colorspace.
-- [vImage.BufferType.labA](vimage/buffertype/laba.md)
+- [vImage.BufferType.labA](./laba.md)
   The buffer contains the `a*` channel.
-- [vImage.BufferType.labB](vimage/buffertype/labb.md)
+- [vImage.BufferType.labB](./labb.md)
   The buffer contains the `b*` channel.
-- [vImage.BufferType.labL](vimage/buffertype/labl.md)
+- [vImage.BufferType.labL](./labl.md)
   The buffer contains the `L*` channel.
 
 

@@ -1,7 +1,8 @@
 # contextMenuKeyDown(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func contextMenuKeyDown(_ event: NSEvent)
+```
+
+```objc
+- (void) contextMenuKeyDown:(NSEvent *) event;
 ```
 
 #### Discussion

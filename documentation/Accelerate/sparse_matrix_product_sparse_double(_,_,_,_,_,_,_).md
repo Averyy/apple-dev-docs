@@ -1,7 +1,8 @@
 # sparse_matrix_product_sparse_double(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with double-precision values.
 
@@ -20,9 +21,13 @@ Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to
 func sparse_matrix_product_sparse_double(_ order: CBLAS_ORDER, _ transa: CBLAS_TRANSPOSE, _ alpha: Double, _ A: sparse_matrix_double!, _ B: sparse_matrix_double!, _ C: UnsafeMutablePointer<Double>!, _ ldc: sparse_dimension) -> sparse_status
 ```
 
+```c
+sparse_status sparse_matrix_product_sparse_double(enum CBLAS_ORDER order, enum CBLAS_TRANSPOSE transa, double alpha, sparse_matrix_double A, sparse_matrix_double B, double * restrictC, sparse_dimension ldc);
+```
+
 #### Return Value
 
-On success, [`SPARSE_SUCCESS`](sparse_success.md) is returned and `C` has been updated with result of the operation.  Will return [`SPARSE_ILLEGAL_PARAMETER`](sparse_illegal_parameter.md) if order or `transa` is not valid or the leading dimension parameters do not meet their dimension requirements. On error, `C` is unchanged.
+On success, [`SPARSE_SUCCESS`](./sparse_success.md) is returned and `C` has been updated with result of the operation.  Will return [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) if order or `transa` is not valid or the leading dimension parameters do not meet their dimension requirements. On error, `C` is unchanged.
 
 #### Discussion
 
@@ -42,15 +47,16 @@ Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to
 
 ## See Also
 
-- [func sparse_matrix_product_dense_double(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Double, sparse_matrix_double!, UnsafePointer<Double>!, sparse_dimension, UnsafeMutablePointer<Double>!, sparse_dimension) -> sparse_status](sparse_matrix_product_dense_double(_:_:_:_:_:_:_:_:_:).md)
+### Matrix-Matrix Operations
+- [func sparse_matrix_product_dense_double(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Double, sparse_matrix_double!, UnsafePointer<Double>!, sparse_dimension, UnsafeMutablePointer<Double>!, sparse_dimension) -> sparse_status](./sparse_matrix_product_dense_double%28_,_,_,_,_,_,_,_,_%29.md)
   Multiplies the dense matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with double-precision values.
-- [func sparse_matrix_product_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_dimension, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](sparse_matrix_product_dense_float(_:_:_:_:_:_:_:_:_:).md)
+- [func sparse_matrix_product_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_dimension, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_product_dense_float%28_,_,_,_,_,_,_,_,_%29.md)
   Multiplies the dense matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with single-precision values.
-- [func sparse_matrix_product_sparse_float(CBLAS_ORDER, CBLAS_TRANSPOSE, Float, sparse_matrix_float!, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](sparse_matrix_product_sparse_float(_:_:_:_:_:_:_:).md)
+- [func sparse_matrix_product_sparse_float(CBLAS_ORDER, CBLAS_TRANSPOSE, Float, sparse_matrix_float!, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_product_sparse_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the sparse matrix *B* by the sparse matrix *A* and adds the result to the dense matrix *C*, all with single-precision values.
-- [func sparse_matrix_triangular_solve_dense_double(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_dimension) -> sparse_status](sparse_matrix_triangular_solve_dense_double(_:_:_:_:_:_:_:).md)
+- [func sparse_matrix_triangular_solve_dense_double(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_dimension) -> sparse_status](./sparse_matrix_triangular_solve_dense_double%28_,_,_,_,_,_,_%29.md)
   Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
-- [func sparse_matrix_triangular_solve_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](sparse_matrix_triangular_solve_dense_float(_:_:_:_:_:_:_:).md)
+- [func sparse_matrix_triangular_solve_dense_float(CBLAS_ORDER, CBLAS_TRANSPOSE, sparse_dimension, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_dimension) -> sparse_status](./sparse_matrix_triangular_solve_dense_float%28_,_,_,_,_,_,_%29.md)
   Solves the system of equations *B = alpha * T⁻¹  * B* for *B* where *B* is a dense matrix and *T* is a triangular sparse matrix, both with double-precision values.
 
 

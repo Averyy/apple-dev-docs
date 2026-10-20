@@ -1,7 +1,8 @@
 # AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app store version experiment treatment create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app store version experiment treatment create reques
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppStoreVersionExperimentTreatmentCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

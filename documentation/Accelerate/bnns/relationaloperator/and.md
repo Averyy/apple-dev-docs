@@ -1,7 +1,8 @@
 # and
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The operator that indicates the logical AND relationship.
 
@@ -11,8 +12,10 @@ The operator that indicates the logical AND relationship.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,15 +25,16 @@ static var and: BNNS.RelationalOperator { get }
 
 ## See Also
 
-- [static var nand: BNNS.RelationalOperator](bnns/relationaloperator/nand.md)
+### Logical Operators
+- [static var nand: BNNS.RelationalOperator](./nand.md)
   The operator that indicates the logical NAND relationship.
-- [static var nor: BNNS.RelationalOperator](bnns/relationaloperator/nor.md)
+- [static var nor: BNNS.RelationalOperator](./nor.md)
   The operator that indicates the logical NOR relationship.
-- [static var not: BNNS.RelationalOperator](bnns/relationaloperator/not.md)
+- [static var not: BNNS.RelationalOperator](./not.md)
   The operator that indicates the logical NOT relationship.
-- [static var or: BNNS.RelationalOperator](bnns/relationaloperator/or.md)
+- [static var or: BNNS.RelationalOperator](./or.md)
   The operator that indicates the logical OR relationship.
-- [static var xor: BNNS.RelationalOperator](bnns/relationaloperator/xor.md)
+- [static var xor: BNNS.RelationalOperator](./xor.md)
   The operator that indicates the logical XOR relationship.
 
 

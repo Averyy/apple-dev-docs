@@ -1,7 +1,8 @@
 # isRulerActive
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a ruler view is visible on the canvas.
 
@@ -20,9 +21,10 @@ A Boolean value that indicates whether a ruler view is visible on the canvas.
 
 ## See Also
 
-- [var isEditable: Bool](papermarkupviewcontroller/iseditable.md)
+### Editing markup
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that indicates whether a person can edit the canvas contents.
-- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
+- [var drawingTool: any PKTool](./drawingtool.md)
   The tool for drawing on the canvas.
 
 

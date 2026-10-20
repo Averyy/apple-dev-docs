@@ -1,6 +1,7 @@
 # Accessing data when the store changes
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Article
 
 Guarantee that a context won’t see store changes until you tell it to look.
 
@@ -10,9 +11,9 @@ Query generations give your UI a stable view of data in the database, regardless
 
 Use query generations when you want to isolate your view context from any changes made in the store by background threads in your app, app extensions, CloudKit, or other sources.
 
-##### Ensure the Correct Type and Mode for the Persistent Store
+##### Ensure the correct type and mode for the persistent store
 
-To use query generations, the persistent store must be an [`NSSQLiteStoreType`](nssqlitestoretype.md) in write-ahead logging (WAL) journal mode. Core Data creates SQLite stores with WAL mode enabled by default.
+To use query generations, the persistent store must be an [`NSSQLiteStoreType`](./nssqlitestoretype.md) in write-ahead logging (WAL) journal mode. Core Data creates SQLite stores with WAL mode enabled by default.
 
 Query generations leverage WAL mode to let you query against the historical state of the database. Core Data appends transactions to a `.sqlite-wal` file, or journal, in the same directory as the main store file. When your context reads from the journal, it starts at the transaction associated with a specific generation, instead of at the most recent transaction.
 
@@ -28,15 +29,15 @@ Run your app, and look for the following output in the console:
 CoreData: sql: pragma journal_mode=wal
 ```
 
-If you try to use query generations with a store that’s not an [`NSSQLiteStoreType`](nssqlitestoretype.md) in WAL journal mode, your contexts gracefully revert to unpinned behavior.
+If you try to use query generations with a store that’s not an [`NSSQLiteStoreType`](./nssqlitestoretype.md) in WAL journal mode, your contexts gracefully revert to unpinned behavior.
 
-##### Pin the Context to a Store Generation
+##### Pin the context to a store generation
 
 By default, contexts are unpinned, and read from the store at the generation of the most recent transaction. Pinned contexts read from the store at the generation of a specific transaction.
 
-To pin a context, call [`setQueryGenerationFrom(_:)`](nsmanagedobjectcontext/setquerygenerationfrom(_:).md) and pass an opaque [`NSQueryGenerationToken`](nsquerygenerationtoken.md). The context updates to the specified generation lazily on the next read (fetching or faulting) operation.
+To pin a context, call [`setQueryGenerationFrom(_:)`](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md) and pass an opaque [`NSQueryGenerationToken`](./nsquerygenerationtoken.md). The context updates to the specified generation lazily on the next read (fetching or faulting) operation.
 
-Use the [`current`](nsquerygenerationtoken/current.md) generation token to pin the context to the generation corresponding to the most recent store transaction. For example, pass the [`current`](nsquerygenerationtoken/current.md) generation token when setting up your stack to pin the view context to the first generation that it fetches.
+Use the [`current`](./nsquerygenerationtoken/current.md) generation token to pin the context to the generation corresponding to the most recent store transaction. For example, pass the [`current`](./nsquerygenerationtoken/current.md) generation token when setting up your stack to pin the view context to the first generation that it fetches.
 
 ```swift
 // Pin the context to the generation that corresponds with the most recent
@@ -49,9 +50,9 @@ do {
 }
 ```
 
-Alternatively, use the [`queryGenerationToken`](nsmanagedobjectcontext/querygenerationtoken.md) from another pinned context to align both contexts to the same generation.
+Alternatively, use the [`queryGenerationToken`](./nsmanagedobjectcontext/querygenerationtoken.md) from another pinned context to align both contexts to the same generation.
 
-To unpin a context, call [`setQueryGenerationFrom(_:)`](nsmanagedobjectcontext/setquerygenerationfrom(_:).md), passing `nil`.
+To unpin a context, call [`setQueryGenerationFrom(_:)`](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md), passing `nil`.
 
 ```swift
 // Unpin the context.
@@ -67,9 +68,9 @@ Nested contexts inherit their parent’s generation. They’re implicitly unpinn
 
 A generation doesn’t include stores added to the store coordinator after the generation’s creation. Additionally, if you remove a store from the coordinator, don’t try to load data from the deleted store into a context.
 
-##### Update the View Context to the Current Store Generation
+##### Update the view context to the current store generation
 
-Advance a context to the generation of the most recent transaction, and pin it there, by calling [`setQueryGenerationFrom(_:)`](nsmanagedobjectcontext/setquerygenerationfrom(_:).md) and passing the [`current`](nsquerygenerationtoken/current.md) token. The context updates to the specified generation lazily on the next read (fetching or faulting) operation.
+Advance a context to the generation of the most recent transaction, and pin it there, by calling [`setQueryGenerationFrom(_:)`](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md) and passing the [`current`](./nsquerygenerationtoken/current.md) token. The context updates to the specified generation lazily on the next read (fetching or faulting) operation.
 
 ```swift
 // Advance the context to the generation of the most recent store transaction.
@@ -83,26 +84,26 @@ do {
 
 Alternatively, update a context’s generation by calling any of the following.
 
-- [`setQueryGenerationFrom(_:)`](nsmanagedobjectcontext/setquerygenerationfrom(_:).md)
-- [`save()`](nsmanagedobjectcontext/save().md)
-- [`mergeChanges(fromContextDidSave:)`](nsmanagedobjectcontext/mergechanges(fromcontextdidsave:).md)
-- [`mergeChanges(fromRemoteContextSave:into:)`](nsmanagedobjectcontext/mergechanges(fromremotecontextsave:into:).md)
-- [`reset()`](nsmanagedobjectcontext/reset().md)
+- [`setQueryGenerationFrom(_:)`](./nsmanagedobjectcontext/setquerygenerationfrom%28_%29.md)
+- [`save()`](./nsmanagedobjectcontext/save%28%29.md)
+- [`mergeChanges(fromContextDidSave:)`](./nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md)
+- [`mergeChanges(fromRemoteContextSave:into:)`](./nsmanagedobjectcontext/mergechanges%28fromremotecontextsave,into%29.md)
+- [`reset()`](./nsmanagedobjectcontext/reset%28%29.md)
 
-Update contexts to the [`current`](nsquerygenerationtoken/current.md) generation as soon as a specific generation is no longer needed. Query generations hold a file lock open to maintain the integrity of the journal for the duration of a query generation. Once no contexts refer to a query generation, it expires, and the system can reclaim the journal disk space.
+Update contexts to the [`current`](./nsquerygenerationtoken/current.md) generation as soon as a specific generation is no longer needed. Query generations hold a file lock open to maintain the integrity of the journal for the duration of a query generation. Once no contexts refer to a query generation, it expires, and the system can reclaim the journal disk space.
 
-##### Refresh Objects
+##### Refresh objects
 
 Refresh any managed objects registered to the context after you change the context’s query generation or unpin the context. Managed objects don’t automatically refresh, as this behavior may not be desirable and is difficult to revert.
 
-Call [`refreshAllObjects()`](nsmanagedobjectcontext/refreshallobjects().md) on the context to refresh its existing managed objects.
+Call [`refreshAllObjects()`](./nsmanagedobjectcontext/refreshallobjects%28%29.md) on the context to refresh its existing managed objects.
 
 ```swift
 // Refresh existing managed objects.
 persistentContainer.viewContext.refreshAllObjects()
 ```
 
-You can also refresh your objects by fetching them again. Call [`fetch(_:)`](nsmanagedobjectcontext/fetch(_:)-4xeoz.md) on the context to retrieve a fresh set of managed objects matching your request criteria.
+You can also refresh your objects by fetching them again. Call [`fetch(_:)`](./nsmanagedobjectcontext/fetch%28_%29-4xeoz.md) on the context to retrieve a fresh set of managed objects matching your request criteria.
 
 ```swift
 // Alternatively, refresh objects by fetching them again.
@@ -125,9 +126,10 @@ The fetch reads the journal from the context’s query generation if pinned, or 
 
 ## See Also
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+### Change processing
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
   Filter store transactions for changes relevant to the current view.
-- [Persistent history](persistent-history.md)
+- [Persistent history](./persistent-history.md)
   Use persistent history tracking to determine what changes have occurred in the store since the enabling of persistent history tracking.
 
 

@@ -1,17 +1,22 @@
 # init(headerTextProvider:body1TextProvider:body2TextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has a row of header text and two rows of body text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)
+```
+
+```objc
+- (instancetype) initWithHeaderTextProvider:(CLKTextProvider *) headerTextProvider body1TextProvider:(CLKTextProvider *) body1TextProvider body2TextProvider:(CLKTextProvider *) body2TextProvider;
 ```
 
 ## Parameters
@@ -22,11 +27,12 @@ init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, bo
 
 ## See Also
 
-- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](clkcomplicationtemplategraphicrectangularstandardbody/init(headertextprovider:body1textprovider:).md)
+### Creating the Template
+- [init(headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](./init%28headertextprovider,body1textprovider%29.md)
   Creates a new template that has a row of header text and a row of body text.
-- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](clkcomplicationtemplategraphicrectangularstandardbody/init(headerimageprovider:headertextprovider:body1textprovider:).md)
+- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider)](./init%28headerimageprovider,headertextprovider,body1textprovider%29.md)
   Creates a new template that has a header row with an image and text, and a row of body text.
-- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](clkcomplicationtemplategraphicrectangularstandardbody/init(headerimageprovider:headertextprovider:body1textprovider:body2textprovider:).md)
+- [init(headerImageProvider: CLKFullColorImageProvider?, headerTextProvider: CLKTextProvider, body1TextProvider: CLKTextProvider, body2TextProvider: CLKTextProvider?)](./init%28headerimageprovider,headertextprovider,body1textprovider,body2textprovider%29.md)
   Creates a new template that has a header row with an image and text, and two rows of body text.
 
 

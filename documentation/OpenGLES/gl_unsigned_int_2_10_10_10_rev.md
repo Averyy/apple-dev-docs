@@ -1,7 +1,8 @@
 # GL_UNSIGNED_INT_2_10_10_10_REV
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_UNSIGNED_INT_2_10_10_10_REV: Int32 { get }
+```
+
+```c
+#define GL_UNSIGNED_INT_2_10_10_10_REV
 ```
 
 

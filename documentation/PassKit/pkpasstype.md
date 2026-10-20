@@ -1,7 +1,8 @@
 # PKPassType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of passes.
 
@@ -19,49 +20,54 @@ Types of passes.
 enum PKPassType
 ```
 
+```c
+enum PKPassType : NSUInteger;
+```
+
 ## Topics
 
 ### Pass types
-- [PKPassType.any](pkpasstype/any.md)
+- [PKPassType.any](./pkpasstype/any.md)
   A nonspecific pass type.
-- [PKPassType.barcode](pkpasstype/barcode.md)
+- [PKPassType.barcode](./pkpasstype/barcode.md)
   A pass that represents a barcode.
-- [PKPassType.secureElement](pkpasstype/secureelement.md)
+- [PKPassType.secureElement](./pkpasstype/secureelement.md)
   A pass that represents a credential that the device stores in the Secure Element.
-- [static var payment: PKPassType](pkpasstype/payment.md)
+- [static var payment: PKPassType](./pkpasstype/payment.md)
   A pass that represents a credit or debit card
 ### Initializers
-- [init?(rawValue: UInt)](pkpasstype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./pkpasstype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var passType: PKPassType](pkpass/passtype.md)
+### Identifying a pass
+- [var passType: PKPassType](./pkpass/passtype.md)
   The pass’s type.
-- [var secureElementPass: PKSecureElementPass?](pkpass/secureelementpass.md)
+- [var secureElementPass: PKSecureElementPass?](./pkpass/secureelementpass.md)
   The pass that contains an accompanying credential that the device stores in the Secure Element.
-- [var serialNumber: String](pkpass/serialnumber.md)
+- [var serialNumber: String](./pkpass/serialnumber.md)
   A value that uniquely identifies the pass.
-- [var passTypeIdentifier: String](pkpass/passtypeidentifier.md)
+- [var passTypeIdentifier: String](./pkpass/passtypeidentifier.md)
   The pass’s pass type identifier.
-- [var deviceName: String](pkpass/devicename.md)
+- [var deviceName: String](./pkpass/devicename.md)
   The name of the device that hosts the pass.
-- [var localizedName: String](pkpass/localizedname.md)
+- [var localizedName: String](./pkpass/localizedname.md)
   The localized name for the pass’s template.
-- [var localizedDescription: String](pkpass/localizeddescription.md)
+- [var localizedDescription: String](./pkpass/localizeddescription.md)
   The pass’s localized description.
-- [var isRemotePass: Bool](pkpass/isremotepass.md)
+- [var isRemotePass: Bool](./pkpass/isremotepass.md)
   A Boolean value that indicates whether the pass is on a paired device, such as an Apple Watch.
-- [var paymentPass: PKPaymentPass?](pkpass/paymentpass.md)
+- [var paymentPass: PKPaymentPass?](./pkpass/paymentpass.md)
   The underlying payment pass.
 
 

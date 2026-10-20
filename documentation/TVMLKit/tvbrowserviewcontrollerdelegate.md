@@ -1,7 +1,8 @@
 # TVBrowserViewControllerDelegate
 
 **Framework**: TVMLKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for detecting events and performing actions on the browser view.
 
@@ -14,22 +15,27 @@ Methods for detecting events and performing actions on the browser view.
 protocol TVBrowserViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol TVBrowserViewControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Managing Focus
-- [func browserViewController(TVBrowserViewController, didCenterOn: TVViewElement)](tvbrowserviewcontrollerdelegate/browserviewcontroller(_:didcenteron:).md)
+- [func browserViewController(TVBrowserViewController, didCenterOn: TVViewElement)](./tvbrowserviewcontrollerdelegate/browserviewcontroller%28_,didcenteron%29.md)
   Tells the delegate how to respond when the specified view element completes the transition to becoming centered upon.
-- [func browserViewController(TVBrowserViewController, willCenterOn: TVViewElement)](tvbrowserviewcontrollerdelegate/browserviewcontroller(_:willcenteron:).md)
+- [func browserViewController(TVBrowserViewController, willCenterOn: TVViewElement)](./tvbrowserviewcontrollerdelegate/browserviewcontroller%28_,willcenteron%29.md)
   Tells the delegate when the specified view element is to be centered on the page.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any TVBrowserViewControllerDelegate)?](tvbrowserviewcontroller/delegate.md)
+### Managing Interactions with the Browser
+- [var delegate: (any TVBrowserViewControllerDelegate)?](./tvbrowserviewcontroller/delegate.md)
   The object that acts as the delegate and handles callbacks for the browser view.
 
 

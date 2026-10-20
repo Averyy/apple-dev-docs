@@ -1,19 +1,24 @@
 # init(titleVariants:subtitleVariants:imageSet:primaryAction:secondaryAction:duration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation alert.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
+- iOS 12.0+ - Deprecated in 13.0
+- iPadOS 12.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
 ```swift
 init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants imageSet:(CPImageSet *) imageSet primaryAction:(CPAlertAction *) primaryAction secondaryAction:(CPAlertAction *) secondaryAction duration:(NSTimeInterval) duration;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ A newly initialized navigation alert.
 
 ## See Also
 
-- [init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](cpnavigationalert/init(titlevariants:subtitlevariants:image:primaryaction:secondaryaction:duration:).md)
+### Creating a Navigation Alert
+- [init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./init%28titlevariants,subtitlevariants,image,primaryaction,secondaryaction,duration%29.md)
   Creates a navigation alert.
 
 

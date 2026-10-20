@@ -1,7 +1,8 @@
 # SRSensorUsagePhoneUsage
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A collection of properties that explain your app’s need to observe the user’s phone activity.
 
@@ -9,25 +10,27 @@ A collection of properties that explain your app’s need to observe the user’
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `SRSensorUsagePhoneUsage`
+- **Type**: dictionary
 
 #### Discussion
 
-This key is a possible member of the [`NSSensorKitUsageDetail`](information-property-list/nssensorkitusagedetail.md) dictionary.
+This key is a possible member of the [`NSSensorKitUsageDetail`](../nssensorkitusagedetail.md) dictionary.
 
 ## Topics
 
 ### Sensor usage keys
-- [Description](information-property-list/nssensorkitusagedetail/srsensorusagephoneusage/description.md)
+- [Description](./srsensorusagephoneusage/description.md)
   An explanatory string that details the manner in which your study uses the sensor’s data.
-- [Required](information-property-list/nssensorkitusagedetail/srsensorusagephoneusage/required.md)
+- [Required](./srsensorusagephoneusage/required.md)
   A Boolean value that indicates whether your app’s study relies on this sensor.
 
 ## See Also
 
-- [SRSensorUsageMessageUsage](information-property-list/nssensorkitusagedetail/srsensorusagemessageusage.md)
+### App Activity
+- [SRSensorUsageMessageUsage](./srsensorusagemessageusage.md)
   A collection of properties that explain your app’s need to observe the user’s activity in Messages.
 
 

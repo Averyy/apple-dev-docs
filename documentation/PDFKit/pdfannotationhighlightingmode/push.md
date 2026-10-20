@@ -1,7 +1,8 @@
 # push
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A highlight mode that renders a pressed appearance for the annotation.
 
@@ -19,13 +20,18 @@ A highlight mode that renders a pressed appearance for the annotation.
 static let push: PDFAnnotationHighlightingMode
 ```
 
+```c
+extern PDFAnnotationHighlightingMode PDFAnnotationHighlightingModePush;
+```
+
 ## See Also
 
-- [static let invert: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/invert.md)
+### Choosing a Highlight Mode
+- [static let invert: PDFAnnotationHighlightingMode](./invert.md)
   A highlight mode that inverts the content of the annotation.
-- [static let none: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/none.md)
+- [static let none: PDFAnnotationHighlightingMode](./none.md)
   A highlight mode that doesn’t change the appearance of the annotation.
-- [static let outline: PDFAnnotationHighlightingMode](pdfannotationhighlightingmode/outline.md)
+- [static let outline: PDFAnnotationHighlightingMode](./outline.md)
   A highlight mode that inverts the annotation’s border.
 
 

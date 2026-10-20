@@ -1,7 +1,8 @@
 # format(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a locale-aware string representation from a duration value.
 

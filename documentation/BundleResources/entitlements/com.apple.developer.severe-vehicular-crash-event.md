@@ -1,7 +1,8 @@
 # com.apple.developer.severe-vehicular-crash-event
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The entitlement for accessing Crash Detection events.
 
@@ -10,15 +11,18 @@ The entitlement for accessing Crash Detection events.
 - iPadOS 16.0+
 - watchOS 10.1+
 
+## Details
+
+- **Name**: `com.apple.developer.severe-vehicular-crash-event`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
 #### Discussion
 
-To apply for this entitlement, [`see this page`](https://developer.apple.comhttps://developer.apple.com/contact/request/vehicular-crash-events/).
+To apply for this entitlement, [see this page](https://developer.apple.com/contact/request/vehicular-crash-events/).
 
 
 ---

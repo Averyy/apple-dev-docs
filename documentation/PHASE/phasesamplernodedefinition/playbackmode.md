@@ -1,7 +1,8 @@
 # playbackMode
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An option that determines whether the node’s audio plays in a loop.
 
@@ -17,6 +18,10 @@ An option that determines whether the node’s audio plays in a loop.
 
 ```swift
 var playbackMode: PHASEPlaybackMode { get set }
+```
+
+```objc
+@property (nonatomic) PHASEPlaybackMode playbackMode;
 ```
 
 

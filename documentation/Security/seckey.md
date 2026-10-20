@@ -1,7 +1,8 @@
 # SecKey
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a cryptographic key.
 
@@ -20,19 +21,23 @@ An object that represents a cryptographic key.
 class SecKey
 ```
 
+```c
+typedef struct __SecKey * SecKeyRef;
+```
+
 ## Mentions
 
-- [Getting an Existing Key](getting-an-existing-key.md)
+- [Getting an Existing Key](./getting-an-existing-key.md)
 
 #### Overview
 
-A [`SecKey`](seckey.md) instance that represents a key that is stored in a keychain can be safely cast to a [`SecKeychainItem`](seckeychainitem.md) for manipulation as a keychain item. On the other hand, if the key is not stored in a keychain, casting the object to a [`SecKeychainItem`](seckeychainitem.md) and passing it to Keychain Services functions returns errors.
+A [`SecKey`](./seckey.md) instance that represents a key that is stored in a keychain can be safely cast to a [`SecKeychainItem`](./seckeychainitem.md) for manipulation as a keychain item. On the other hand, if the key is not stored in a keychain, casting the object to a [`SecKeychainItem`](./seckeychainitem.md) and passing it to Keychain Services functions returns errors.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # getCoordinates(_:range:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves one or more points associated with the shape and converts them to coordinate values.
 
@@ -20,9 +21,13 @@ Retrieves one or more points associated with the shape and converts them to coor
 func getCoordinates(_ coords: UnsafeMutablePointer<CLLocationCoordinate2D>, range: NSRange)
 ```
 
+```objc
+- (void) getCoordinates:(CLLocationCoordinate2D *) coords range:(NSRange) range;
+```
+
 #### Discussion
 
-This method converts the map points into coordinates before returning them to you. If you want to specify the value of each point as a map point, you can access the values directly using the [`points()`](mkmultipoint/points().md) method.
+This method converts the map points into coordinates before returning them to you. If you want to specify the value of each point as a map point, you can access the values directly using the [`points()`](./points%28%29.md) method.
 
 ## Parameters
 

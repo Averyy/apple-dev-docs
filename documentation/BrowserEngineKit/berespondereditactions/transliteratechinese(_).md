@@ -1,7 +1,8 @@
 # transliterateChinese(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the selected text between traditional and simplified Chinese.
 
@@ -17,15 +18,20 @@ Converts the selected text between traditional and simplified Chinese.
 optional func transliterateChinese(_ sender: Any?)
 ```
 
+```objc
+- (void) transliterateChinese:(id) sender;
+```
+
 #### Discussion
 
-To invoke the standard system behavior for transliterating Chinese text, call [`transliterateChinese(forText:)`](betextinteraction/transliteratechinese(fortext:).md) in your implementation of this method.
+To invoke the standard system behavior for transliterating Chinese text, call [`transliterateChinese(forText:)`](../betextinteraction/transliteratechinese%28fortext%29.md) in your implementation of this method.
 
-When you change the selected text in your implementation of this method, notify the system by calling [`selectionWillChange(for:)`](betextinputdelegate/selectionwillchange(for:).md) and [`selectionDidChange(for:)`](betextinputdelegate/selectiondidchange(for:).md).
+When you change the selected text in your implementation of this method, notify the system by calling [`selectionWillChange(for:)`](../betextinputdelegate/selectionwillchange%28for%29.md) and [`selectionDidChange(for:)`](../betextinputdelegate/selectiondidchange%28for%29.md).
 
 ## See Also
 
-- [func translate(Any?)](berespondereditactions/translate(_:).md)
+### Translating and transliterating text
+- [func translate(Any?)](./translate%28_%29.md)
   Presents a translation of the selected text.
 
 

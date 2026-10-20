@@ -1,7 +1,8 @@
 # tangents
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tangents buffer, if the custom deformer author specified it.
 
@@ -21,11 +22,12 @@ let tangents: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffe
 
 ## See Also
 
-- [let positions: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/positions.md)
+### Accessing geometry buffers
+- [let positions: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./positions.md)
   The positions buffer, if the custom deformer author specified it.
-- [let normals: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/normals.md)
+- [let normals: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./normals.md)
   The normals buffer, if the custom deformer author specified it.
-- [let bitangents: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](meshdeformparameter/vertexbuffers/bitangents.md)
+- [let bitangents: MeshDeformParameter<InputBuffer, OutputBuffer>.VertexBuffers<Buffer>.Data?](./bitangents.md)
   The bitangents buffer, if the custom deformer author specified it.
 
 

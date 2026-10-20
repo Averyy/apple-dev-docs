@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct twolevel_hints_command {
     ...
 };
@@ -17,11 +17,11 @@ struct twolevel_hints_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](twolevel_hints_command/1525392-cmd.md)
+- [cmd](./twolevel_hints_command/api-1525392-cmd.md)
   Common to all load command structures. Set to `LC_TWOLEVEL_HINTS` for this structure.
-- [cmdsize](twolevel_hints_command/1525715-cmdsize.md)
-- [nhints](twolevel_hints_command/1525819-nhints.md)
-- [offset](twolevel_hints_command/1525680-offset.md)
+- [cmdsize](./twolevel_hints_command/api-1525715-cmdsize.md)
+- [nhints](./twolevel_hints_command/api-1525819-nhints.md)
+- [offset](./twolevel_hints_command/api-1525680-offset.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numerical value that appears on the top face of the die.
 

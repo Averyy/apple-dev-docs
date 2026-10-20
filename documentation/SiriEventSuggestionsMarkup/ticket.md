@@ -1,7 +1,8 @@
 # Ticket
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Details about a ticket for transportation or an event.
 
@@ -10,27 +11,28 @@ Details about a ticket for transportation or an event.
 
 ## Declaration
 
-```swift
+```
 object Ticket
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Ticket`
 - `ticketedSeat` (Seat): The seat reserved for the passenger or attendee.
 - `ticketNumber` (string): An identifier for the ticket.
 
 ## See Also
 
-- [object Person](person.md)
+### Common Reservation Data
+- [object Person](./person.md)
   A passenger, diner, lodging guest, or event attendee.
-- [object Seat](seat.md)
+- [object Seat](./seat.md)
   The specific location reserved for the passenger.
-- [object Organization](organization.md)
+- [object Organization](./organization.md)
   A business, transportation provider, or event organizer.
-- [object Place](place.md)
+- [object Place](./place.md)
   A business, transportation hub, or event venue.
-- [object PostalAddress](postaladdress.md)
+- [object PostalAddress](./postaladdress.md)
   A specific geographic location.
 
 

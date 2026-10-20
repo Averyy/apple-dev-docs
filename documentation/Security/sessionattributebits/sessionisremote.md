@@ -1,7 +1,8 @@
 # sessionIsRemote
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bit that indicates the session was initiated over the network.
 
@@ -13,6 +14,10 @@ A bit that indicates the session was initiated over the network.
 
 ```swift
 static var sessionIsRemote: SessionAttributeBits { get }
+```
+
+```c
+sessionIsRemote
 ```
 
 

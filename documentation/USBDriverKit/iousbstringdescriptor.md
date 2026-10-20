@@ -1,7 +1,8 @@
 # IOUSBStringDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The structure for storing a string descriptor.
 
@@ -10,20 +11,20 @@ The structure for storing a string descriptor.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBStringDescriptor;
 ```
 
 #### Overview
 
-For more information about this descriptor type, see section 9.6.7 of the USB 2.0 specification at [`http://www.usb.org`](https://developer.apple.comhttp://www.usb.org).
+For more information about this descriptor type, see section 9.6.7 of the USB 2.0 specification at [http://www.usb.org](http://www.usb.org).
 
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [bLength](iousbstringdescriptor/blength.md)
-- [bDescriptorType](iousbstringdescriptor/bdescriptortype.md)
-- [bString](iousbstringdescriptor/bstring.md)
+- [bLength](./iousbstringdescriptor/blength.md)
+- [bDescriptorType](./iousbstringdescriptor/bdescriptortype.md)
+- [bString](./iousbstringdescriptor/bstring.md)
 
 
 ---

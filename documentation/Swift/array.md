@@ -1,7 +1,8 @@
 # Array
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An ordered, random-access collection.
 
@@ -208,7 +209,7 @@ numbers[2] = 300
 // 'firstCopy' and 'secondCopy' are [1, 2, 3, 4, 5]
 ```
 
-### Bridging Between Array and Nsarray
+### Bridging Between Array and NSArray
 
 When you need to access APIs that require data in an `NSArray` instance instead of `Array`, use the type-cast operator (`as`) to bridge your instance. For bridging to be possible, the `Element` type of your array must be a class, an `@objc` protocol (a protocol imported from Objective-C or marked with the `@objc` attribute), or a type that bridges to a Foundation type.
 
@@ -237,431 +238,432 @@ When the destination array’s element type is a nonclass type that bridges to a
 ## Topics
 
 ### Creating an Array
-- [init()](array/init.md)
+- [init()](./array/init%28%29.md)
   Creates a new, empty array.
-- [init<S>(S)](array/init(_:)-1ip9h.md)
+- [init<S>(S)](./array/init%28_%29-1ip9h.md)
   Creates a new instance of a collection containing the elements of a sequence.
-- [init<S>(S)](array/init(_:)-236cl.md)
+- [init<S>(S)](./array/init%28_%29-236cl.md)
   Creates an array containing the elements of a sequence.
-- [init(repeating: Element, count: Int)](array/init(repeating:count:).md)
+- [init(repeating: Element, count: Int)](./array/init%28repeating,count%29.md)
   Creates a new array containing the specified number of a single, repeated value.
-- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](array/init(unsafeuninitializedcapacity:initializingwith:).md)
+- [init<E>(unsafeUninitializedCapacity: Int, initializingWith: (inout UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> Void) throws(E)](./array/init%28unsafeuninitializedcapacity,initializingwith%29.md)
   Creates an array with the specified capacity, and then calls the given closure with a buffer covering the array’s uninitialized memory.
 ### Inspecting an Array
-- [var isEmpty: Bool](array/isempty.md)
+- [var isEmpty: Bool](./array/isempty.md)
   A Boolean value indicating whether the collection is empty.
-- [var count: Int](array/count.md)
+- [var count: Int](./array/count.md)
   The number of elements in the array.
-- [var capacity: Int](array/capacity.md)
+- [var capacity: Int](./array/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 ### Accessing Elements
-- [subscript(Int) -> Element](array/subscript(_:)-25iat.md)
+- [subscript(Int) -> Element](./array/subscript%28_%29-25iat.md)
   Accesses the element at the specified position.
-- [var first: Self.Element?](array/first.md)
+- [var first: Self.Element?](./array/first.md)
   The first element of the collection.
-- [var last: Self.Element?](array/last.md)
+- [var last: Self.Element?](./array/last.md)
   The last element of the collection.
-- [subscript(Range<Int>) -> ArraySlice<Element>](array/subscript(_:)-53fvb.md)
+- [subscript(Range<Int>) -> ArraySlice<Element>](./array/subscript%28_%29-53fvb.md)
   Accesses a contiguous subrange of the array’s elements.
-- [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
-- [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-4h7rl.md)
+- [subscript<R>(R) -> Self.SubSequence](./array/subscript%28_%29-3kwny.md)
+- [subscript<R>(R) -> Self.SubSequence](./array/subscript%28_%29-4h7rl.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
-- [func randomElement() -> Self.Element?](array/randomelement.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](./array/subscript%28_%29-3pmfg.md)
+- [func randomElement() -> Self.Element?](./array/randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./array/randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 ### Adding Elements
-- [func append(Element)](array/append(_:).md)
+- [func append(Element)](./array/append%28_%29.md)
   Adds a new element at the end of the array.
-- [func insert(Element, at: Int)](array/insert(_:at:).md)
+- [func insert(Element, at: Int)](./array/insert%28_,at%29.md)
   Inserts a new element at the specified position.
-- [func insert<C>(contentsOf: C, at: Self.Index)](array/insert(contentsof:at:).md)
+- [func insert<C>(contentsOf: C, at: Self.Index)](./array/insert%28contentsof,at%29.md)
   Inserts the elements of a sequence into the collection at the specified position.
-- [func replaceSubrange<C>(Range<Int>, with: C)](array/replacesubrange(_:with:).md)
+- [func replaceSubrange<C>(Range<Int>, with: C)](./array/replacesubrange%28_,with%29.md)
   Replaces a range of elements with the elements in the specified collection.
-- [func replaceSubrange<C, R>(R, with: C)](array/replacesubrange(_:with:)-7293p.md)
+- [func replaceSubrange<C, R>(R, with: C)](./array/replacesubrange%28_,with%29-7293p.md)
   Replaces the specified subrange of elements with the given collection.
-- [func reserveCapacity(Int)](array/reservecapacity(_:).md)
+- [func reserveCapacity(Int)](./array/reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
 ### Combining Arrays
-- [func append<S>(contentsOf: S)](array/append(contentsof:).md)
+- [func append<S>(contentsOf: S)](./array/append%28contentsof%29.md)
   Adds the elements of a sequence to the end of the array.
-- [func append<S>(contentsOf: S)](array/append(contentsof:)-9foli.md)
+- [func append<S>(contentsOf: S)](./array/append%28contentsof%29-9foli.md)
   Adds the elements of a sequence or collection to the end of this collection.
-- [static func + <Other>(Other, Self) -> Self](array/+(_:_:)-6h58k.md)
+- [static func + <Other>(Other, Self) -> Self](./array/plus%28_,_%29-6h58k.md)
   Creates a new collection by concatenating the elements of a sequence and a collection.
-- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-n33n.md)
+- [static func + <Other>(Self, Other) -> Self](./array/plus%28_,_%29-n33n.md)
   Creates a new collection by concatenating the elements of a collection and a sequence.
-- [static func + (Array<Element>, Array<Element>) -> Array<Element>](array/+(_:_:).md)
-- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-9fm5l.md)
+- [static func + (Array<Element>, Array<Element>) -> Array<Element>](./array/plus%28_,_%29.md)
+- [static func + <Other>(Self, Other) -> Self](./array/plus%28_,_%29-9fm5l.md)
   Creates a new collection by concatenating the elements of two collections.
-- [static func += <Other>(inout Self, Other)](array/+=(_:_:)-676ib.md)
+- [static func += <Other>(inout Self, Other)](./array/pluseq%28_,_%29-676ib.md)
   Appends the elements of a sequence to a range-replaceable collection.
-- [static func += (inout Array<Element>, Array<Element>)](array/+=(_:_:).md)
+- [static func += (inout Array<Element>, Array<Element>)](./array/pluseq%28_,_%29.md)
 ### Removing Elements
-- [func remove(at: Int) -> Element](array/remove(at:).md)
+- [func remove(at: Int) -> Element](./array/remove%28at%29.md)
   Removes and returns the element at the specified position.
-- [func removeFirst() -> Self.Element](array/removefirst.md)
+- [func removeFirst() -> Self.Element](./array/removefirst%28%29.md)
   Removes and returns the first element of the collection.
-- [func removeFirst(Int)](array/removefirst(_:).md)
+- [func removeFirst(Int)](./array/removefirst%28_%29.md)
   Removes the specified number of elements from the beginning of the collection.
-- [func removeLast() -> Self.Element](array/removelast.md)
+- [func removeLast() -> Self.Element](./array/removelast%28%29.md)
   Removes and returns the last element of the collection.
-- [func removeLast(Int)](array/removelast(_:).md)
+- [func removeLast(Int)](./array/removelast%28_%29.md)
   Removes the specified number of elements from the end of the collection.
-- [func removeSubrange(Range<Self.Index>)](array/removesubrange(_:)-8may1.md)
+- [func removeSubrange(Range<Self.Index>)](./array/removesubrange%28_%29-8may1.md)
   Removes the elements in the specified subrange from the collection.
-- [func removeSubrange<R>(R)](array/removesubrange(_:)-9twou.md)
+- [func removeSubrange<R>(R)](./array/removesubrange%28_%29-9twou.md)
   Removes the elements in the specified subrange from the collection.
-- [func removeAll(where: (Self.Element) throws -> Bool) rethrows](array/removeall(where:)-5k61r.md)
+- [func removeAll(where: (Self.Element) throws -> Bool) rethrows](./array/removeall%28where%29-5k61r.md)
   Removes all the elements that satisfy the given predicate.
-- [func removeAll(keepingCapacity: Bool)](array/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./array/removeall%28keepingcapacity%29.md)
   Removes all elements from the array.
-- [func popLast() -> Self.Element?](array/poplast.md)
+- [func popLast() -> Self.Element?](./array/poplast%28%29.md)
   Removes and returns the last element of the collection.
 ### Finding Elements
-- [func contains(Self.Element) -> Bool](array/contains(_:).md)
+- [func contains(Self.Element) -> Bool](./array/contains%28_%29.md)
   Returns a Boolean value indicating whether the sequence contains the given element.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](array/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./array/contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](array/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./array/allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](array/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./array/first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func firstIndex(of: Self.Element) -> Self.Index?](array/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./array/firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func index(of: Self.Element) -> Self.Index?](array/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./array/index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](array/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./array/firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](array/last(where:).md)
+- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./array/last%28where%29.md)
   Returns the last element of the sequence that satisfies the given predicate.
-- [func lastIndex(of: Self.Element) -> Self.Index?](array/lastindex(of:).md)
+- [func lastIndex(of: Self.Element) -> Self.Index?](./array/lastindex%28of%29.md)
   Returns the last index where the specified value appears in the collection.
-- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](array/lastindex(where:).md)
+- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./array/lastindex%28where%29.md)
   Returns the index of the last element in the collection that matches the given predicate.
-- [func min() -> Self.Element?](array/min.md)
+- [func min() -> Self.Element?](./array/min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](array/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./array/min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max() -> Self.Element?](array/max.md)
+- [func max() -> Self.Element?](./array/max%28%29.md)
   Returns the maximum element in the sequence.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](array/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./array/max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 ### Selecting Elements
-- [func prefix(Int) -> Self.SubSequence](array/prefix(_:).md)
+- [func prefix(Int) -> Self.SubSequence](./array/prefix%28_%29.md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
-- [func prefix(through: Self.Index) -> Self.SubSequence](array/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./array/prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(upTo: Self.Index) -> Self.SubSequence](array/prefix(upto:).md)
+- [func prefix(upTo: Self.Index) -> Self.SubSequence](./array/prefix%28upto%29.md)
   Returns a subsequence from the start of the collection up to, but not including, the specified position.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](array/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./array/prefix%28while%29.md)
   Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
-- [func suffix(Int) -> Self.SubSequence](array/suffix(_:).md)
+- [func suffix(Int) -> Self.SubSequence](./array/suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
-- [func suffix(from: Self.Index) -> Self.SubSequence](array/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./array/suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Excluding Elements
-- [func dropFirst(Int) -> Self.SubSequence](array/dropfirst(_:).md)
+- [func dropFirst(Int) -> Self.SubSequence](./array/dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> Self.SubSequence](array/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./array/droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](array/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./array/drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 ### Transforming an Array
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](array/flatmap(_:)-i3mr.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./array/flatmap%28_%29-i3mr.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](array/flatmap(_:)-6chu8.md)
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](array/compactmap(_:).md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./array/flatmap%28_%29-6chu8.md)
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./array/compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](array/reduce(_:_:).md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./array/reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](array/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./array/reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [var lazy: LazySequence<Self>](array/lazy.md)
+- [var lazy: LazySequence<Self>](./array/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 ### Iterating Over an Array’s Elements
-- [func forEach((Self.Element) throws -> Void) rethrows](array/foreach(_:).md)
+- [func forEach((Self.Element) throws -> Void) rethrows](./array/foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func enumerated() -> EnumeratedSequence<Self>](array/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./array/enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [func makeIterator() -> IndexingIterator<Self>](array/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<Self>](./array/makeiterator%28%29.md)
   Returns an iterator over the elements of the collection.
-- [var underestimatedCount: Int](array/underestimatedcount.md)
+- [var underestimatedCount: Int](./array/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Reordering an Array’s Elements
-- [func sort()](array/sort.md)
+- [func sort()](./array/sort%28%29.md)
   Sorts the collection in place.
-- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](array/sort(by:).md)
+- [func sort(by: (Self.Element, Self.Element) throws -> Bool) rethrows](./array/sort%28by%29.md)
   Sorts the collection in place, using the given predicate as the comparison between elements.
-- [func sorted() -> [Self.Element]](array/sorted.md)
+- [func sorted() -> [Self.Element]](./array/sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](array/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./array/sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func reverse()](array/reverse.md)
+- [func reverse()](./array/reverse%28%29.md)
   Reverses the elements of the collection in place.
-- [func reversed() -> ReversedCollection<Self>](array/reversed.md)
+- [func reversed() -> ReversedCollection<Self>](./array/reversed%28%29.md)
   Returns a view presenting the elements of the collection in reverse order.
-- [func shuffle()](array/shuffle.md)
+- [func shuffle()](./array/shuffle%28%29.md)
   Shuffles the collection in place.
-- [func shuffle<T>(using: inout T)](array/shuffle(using:).md)
+- [func shuffle<T>(using: inout T)](./array/shuffle%28using%29.md)
   Shuffles the collection in place, using the given generator as a source for randomness.
-- [func shuffled() -> [Self.Element]](array/shuffled.md)
+- [func shuffled() -> [Self.Element]](./array/shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](array/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./array/shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
-- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](array/partition(by:)-90po8.md)
+- [func partition(by: (Self.Element) throws -> Bool) rethrows -> Self.Index](./array/partition%28by%29-90po8.md)
   Reorders the elements of the collection such that all the elements that match the given predicate are after all the elements that don’t match.
-- [func swapAt(Self.Index, Self.Index)](array/swapat(_:_:).md)
+- [func swapAt(Self.Index, Self.Index)](./array/swapat%28_,_%29.md)
   Exchanges the values at the specified indices of the collection.
 ### Splitting and Joining Elements
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](array/split(separator:maxsplits:omittingemptysubsequences:)-3dgmv.md)
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./array/split%28separator,maxsplits,omittingemptysubsequences%29-3dgmv.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](array/split(maxsplits:omittingemptysubsequences:whereseparator:).md)
+- [func split(maxSplits: Int, omittingEmptySubsequences: Bool, whereSeparator: (Self.Element) throws -> Bool) rethrows -> [Self.SubSequence]](./array/split%28maxsplits,omittingemptysubsequences,whereseparator%29.md)
   Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
-- [func joined() -> FlattenSequence<Self>](array/joined.md)
+- [func joined() -> FlattenSequence<Self>](./array/joined%28%29.md)
   Returns the elements of this sequence of sequences, concatenated.
-- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](array/joined(separator:)-7uber.md)
+- [func joined<Separator>(separator: Separator) -> JoinedSequence<Self>](./array/joined%28separator%29-7uber.md)
   Returns the concatenated elements of this sequence of sequences, inserting the given separator between each element.
-- [func joined(separator: String) -> String](array/joined(separator:)-5do1g.md)
+- [func joined(separator: String) -> String](./array/joined%28separator%29-5do1g.md)
   Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
-- [func joined(separator: String) -> String](array/joined(separator:)-1ckod.md)
+- [func joined(separator: String) -> String](./array/joined%28separator%29-1ckod.md)
   Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
 ### Creating and Applying Differences
-- [func applying(CollectionDifference<Self.Element>) -> Self?](array/applying(_:).md)
+- [func applying(CollectionDifference<Self.Element>) -> Self?](./array/applying%28_%29.md)
   Applies the given difference to this collection.
-- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](array/difference(from:).md)
+- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](./array/difference%28from%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection.
-- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](array/difference(from:by:).md)
+- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](./array/difference%28from,by%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection, using the given predicate as an equivalence test.
 ### Comparing Arrays
-- [static func == (Array<Element>, Array<Element>) -> Bool](array/==(_:_:).md)
+- [static func == (Array<Element>, Array<Element>) -> Bool](./array/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
-- [static func != (borrowing Self, borrowing Self) -> Bool](array/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./array/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](array/elementsequal(_:).md)
+- [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](./array/elementsequal%28_%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
-- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](array/elementsequal(_:by:).md)
+- [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](./array/elementsequal%28_,by%29.md)
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
-- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](array/starts(with:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix) -> Bool](./array/starts%28with%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
-- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](array/starts(with:by:).md)
+- [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](./array/starts%28with,by%29.md)
   Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](array/lexicographicallyprecedes(_:).md)
+- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence) -> Bool](./array/lexicographicallyprecedes%28_%29.md)
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the less-than operator (`<`) to compare elements.
-- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool](array/lexicographicallyprecedes(_:by:).md)
+- [func lexicographicallyPrecedes<OtherSequence>(OtherSequence, by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Bool](./array/lexicographicallyprecedes%28_,by%29.md)
   Returns a Boolean value indicating whether the sequence precedes another sequence in a lexicographical (dictionary) ordering, using the given predicate to compare elements.
 ### Manipulating Indices
-- [var startIndex: Int](array/startindex.md)
+- [var startIndex: Int](./array/startindex.md)
   The position of the first element in a nonempty array.
-- [var endIndex: Int](array/endindex.md)
+- [var endIndex: Int](./array/endindex.md)
   The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [func index(after: Int) -> Int](array/index(after:).md)
+- [func index(after: Int) -> Int](./array/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func formIndex(after: inout Int)](array/formindex(after:).md)
+- [func formIndex(after: inout Int)](./array/formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func index(before: Int) -> Int](array/index(before:).md)
+- [func index(before: Int) -> Int](./array/index%28before%29.md)
   Returns the position immediately before the given index.
-- [func formIndex(before: inout Int)](array/formindex(before:).md)
+- [func formIndex(before: inout Int)](./array/formindex%28before%29.md)
   Replaces the given index with its predecessor.
-- [func index(Int, offsetBy: Int) -> Int](array/index(_:offsetby:).md)
+- [func index(Int, offsetBy: Int) -> Int](./array/index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func formIndex(inout Self.Index, offsetBy: Int)](array/formindex(_:offsetby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int)](./array/formindex%28_,offsetby%29.md)
   Offsets the given index by the specified distance.
-- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](array/index(_:offsetby:limitedby:).md)
+- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](./array/index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](array/formindex(_:offsetby:limitedby:).md)
+- [func formIndex(inout Self.Index, offsetBy: Int, limitedBy: Self.Index) -> Bool](./array/formindex%28_,offsetby,limitedby%29.md)
   Offsets the given index by the specified distance, or so that it equals the given limiting index.
-- [func distance(from: Int, to: Int) -> Int](array/distance(from:to:).md)
+- [func distance(from: Int, to: Int) -> Int](./array/distance%28from,to%29.md)
   Returns the distance between two indices.
 ### Accessing Underlying Storage
-- [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](array/withunsafebufferpointer(_:).md)
+- [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](./array/withunsafebufferpointer%28_%29.md)
   Calls a closure with a pointer to the array’s contiguous storage.
-- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](array/withunsafemutablebufferpointer(_:).md)
+- [func withUnsafeMutableBufferPointer<R, E>((inout UnsafeMutableBufferPointer<Element>) throws(E) -> R) throws(E) -> R](./array/withunsafemutablebufferpointer%28_%29.md)
   Calls the given closure with a pointer to the array’s mutable contiguous storage.
-- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](array/withunsafebytes(_:).md)
+- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](./array/withunsafebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s contiguous storage.
-- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](array/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R](./array/withunsafemutablebytes%28_%29.md)
   Calls the given closure with a pointer to the underlying bytes of the array’s mutable contiguous storage.
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?](array/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Element>) throws -> R) rethrows -> R?](./array/withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
-- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](array/withcontiguousmutablestorageifavailable(_:).md)
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?](./array/withcontiguousmutablestorageifavailable%28_%29.md)
   Executes a closure on the collection’s contiguous storage.
 ### Encoding and Decoding
-- [func encode(to: any Encoder) throws](array/encode(to:).md)
+- [func encode(to: any Encoder) throws](./array/encode%28to%29.md)
   Encodes the elements of this array into the given encoder in an unkeyed container.
-- [init(from: any Decoder) throws](array/init(from:).md)
+- [init(from: any Decoder) throws](./array/init%28from%29.md)
   Creates a new array by decoding from the given decoder.
 ### Describing an Array
-- [var description: String](array/description.md)
+- [var description: String](./array/description.md)
   A textual representation of the array and its elements.
-- [var debugDescription: String](array/debugdescription.md)
+- [var debugDescription: String](./array/debugdescription.md)
   A textual representation of the array and its elements, suitable for debugging.
-- [var customMirror: Mirror](array/custommirror.md)
+- [var customMirror: Mirror](./array/custommirror.md)
   A mirror that reflects the array.
-- [func hash(into: inout Hasher)](array/hash(into:).md)
+- [func hash(into: inout Hasher)](./array/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Converting Between Arrays and Create ML Types
-- [init(MLDataColumn<Element>)](array/init(_:)-2ln1a.md)
+- [init(MLDataColumn<Element>)](./array/init%28_%29-2ln1a.md)
   Constructs an Array with the elements of a DataColumn.
-- [init(MLUntypedColumn)](array/init(_:)-86ka8.md)
+- [init(MLUntypedColumn)](./array/init%28_%29-86ka8.md)
   Constructs an Array with the elements of an MLUntypedColumn.
 ### Related Array Types
-- [struct ContiguousArray](contiguousarray.md)
+- [struct ContiguousArray](./contiguousarray.md)
   A contiguously stored array.
-- [struct ArraySlice](arrayslice.md)
+- [struct ArraySlice](./arrayslice.md)
   A slice of an `Array`, `ContiguousArray`, or `ArraySlice` instance.
 ### Reference Types
-- [class NSArray](../foundation/nsarray.md)
+- [class NSArray](../Foundation/nsarray.md)
   A static ordered collection of objects.
-- [class NSMutableArray](../foundation/nsmutablearray.md)
+- [class NSMutableArray](../Foundation/nsmutablearray.md)
   A dynamic ordered collection of objects.
 ### Supporting Types
-- [typealias Index](array/index.md)
+- [typealias Index](./array/index.md)
   The index type for arrays, `Int`.
-- [typealias Indices](array/indices.md)
+- [typealias Indices](./array/indices.md)
   The type that represents the indices that are valid for subscripting an array, in ascending order.
-- [typealias Iterator](array/iterator.md)
+- [typealias Iterator](./array/iterator.md)
   The type that allows iteration over an array’s elements.
-- [typealias ArrayLiteralElement](array/arrayliteralelement.md)
+- [typealias ArrayLiteralElement](./array/arrayliteralelement.md)
   The type of the elements of an array literal.
-- [typealias SubSequence](array/subsequence.md)
+- [typealias SubSequence](./array/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Infrequently Used Functionality
-- [init(arrayLiteral: Element...)](array/init(arrayliteral:).md)
+- [init(arrayLiteral: Element...)](./array/init%28arrayliteral%29.md)
   Creates an array from the given array literal.
-- [var hashValue: Int](array/hashvalue.md)
+- [var hashValue: Int](./array/hashvalue.md)
   The hash value.
 ### Initializers
-- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/init(capacity:initializingwith:).md)
+- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](./array/init%28capacity,initializingwith%29.md)
   Creates an array with the specified capacity, and then calls the given closure with an output span covering the array’s uninitialized memory.
-- [init(fromSplitComplex: DSPSplitComplex, scale: Float, count: Int)](array/init(fromsplitcomplex:scale:count:)-5eirc.md)
+- [init(fromSplitComplex: DSPSplitComplex, scale: Float, count: Int)](./array/init%28fromsplitcomplex,scale,count%29-5eirc.md)
   Creates a new array of single-precision values from a `DSPSplitComplex` structure.
-- [init(fromSplitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)](array/init(fromsplitcomplex:scale:count:)-5kgr3.md)
+- [init(fromSplitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)](./array/init%28fromsplitcomplex,scale,count%29-5kgr3.md)
   Creates a new array of single-precision values from a `DSPDoubleSplitComplex` structure.
 ### Instance Properties
-- [var byStateReportingDomain: [StateReportingDomain : [MetricManager.ReportedState]]](array/bystatereportingdomain-7plu4.md)
+- [var byStateReportingDomain: [StateReportingDomain : [MetricManager.ReportedState]]](./array/bystatereportingdomain-7plu4.md)
   All states from all interval entries grouped by their StateReporting domain.
-- [var byStateReportingDomain: [StateReportingDomain : [MetricReport.StateEntry]]](array/bystatereportingdomain-8k1ux.md)
+- [var byStateReportingDomain: [StateReportingDomain : [MetricReport.StateEntry]]](./array/bystatereportingdomain-8k1ux.md)
   State entries grouped by their StateReporting domain.
-- [var fullDayEntry: MetricReport.IntervalEntry](array/fulldayentry.md)
+- [var fullDayEntry: MetricReport.IntervalEntry](./array/fulldayentry.md)
   The full day interval entry spanning the entire report collection period.
-- [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
+- [var mutableSpan: MutableSpan<Element>](./array/mutablespan.md)
   A mutable span over the elements of this array.
-- [var span: Span<Element>](array/span.md)
+- [var span: Span<Element>](./array/span.md)
   A span over the elements of this array.
 ### Instance Methods
-- [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
+- [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](./array/append%28addingcapacity,initializingwith%29.md)
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
-- [func isTriviallyIdentical(to: Array<Element>) -> Bool](array/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Array<Element>) -> Bool](./array/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this array is identical to `other`.
 - [func makeSamples<T>(Prompt, targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, validator: ((ModelSample<T>) async throws -> Bool)?) -> some AsyncSequence<ModelSample<T>, any Error>
-](array/makesamples(_:targetcount:sessionprovider:validator:)-5j7t0.md)
+](./array/makesamples%28_,targetcount,sessionprovider,validator%29-5j7t0.md)
   Generates synthetic data based on this dataset and returns a stream of new samples.
 - [func makeSamples(Prompt, targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, validator: ((Element) async throws -> Bool)?) -> some AsyncSequence<Element, any Error>
-](array/makesamples(_:targetcount:sessionprovider:validator:)-5s9y1.md)
+](./array/makesamples%28_,targetcount,sessionprovider,validator%29-5s9y1.md)
   Generates synthetic data based on this dataset and returns a stream of new samples.
-- [func toDictionary<Key>(with: (Element) -> Key) -> [Key : Element]](array/todictionary(with:).md)
-- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
+- [func toDictionary<Key>(with: (Element) -> Key) -> [Key : Element]](./array/todictionary%28with%29.md)
+- [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](./array/withunsafetaggedbuffers%28_%29.md)
   Access the underlying CMTaggedBuffers.
 ### Subscripts
-- [subscript(Metric) -> Metric?](array/subscript(_:)-dplx.md)
+- [subscript(Metric) -> Metric?](./array/subscript%28_%29-dplx.md)
   Returns the first metric with a metric name that equals the given metric’s name.
 ### Type Aliases
-- [typealias Specification](array/specification.md)
-- [typealias UnderlyingSequence](array/underlyingsequence.md)
-- [typealias UnwrappedType](array/unwrappedtype.md)
-- [typealias ValueType](array/valuetype.md)
+- [typealias Specification](./array/specification.md)
+- [typealias UnderlyingSequence](./array/underlyingsequence.md)
+- [typealias UnwrappedType](./array/unwrappedtype.md)
+- [typealias ValueType](./array/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<Array<Element>>](array/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<Array<Element>>](./array/defaultresolverspecification.md)
 ### Type Methods
-- [static func monoscopicForVideoOutput() -> [CMTag]](array/monoscopicforvideooutput.md)
+- [static func monoscopicForVideoOutput() -> [CMTag]](./array/monoscopicforvideooutput%28%29.md)
   Creates a collection of CMTags with the required tags to describe monoscopic video, where there is no stereo view, e.g. kCMTagStereoNone.
-- [static func stereoscopicForVideoOutput() -> [CMTag]](array/stereoscopicforvideooutput.md)
+- [static func stereoscopicForVideoOutput() -> [CMTag]](./array/stereoscopicforvideooutput%28%29.md)
   Creates a collection of CMTags with the required tags to describe basic stereoscopic video, where both left and right stereo eyes are present, e.g. kCMTagStereoLeftAndRight.
 ### Default Implementations
-- [Attachable Implementations](array/attachable-implementations.md)
-- [BidirectionalCollection Implementations](array/bidirectionalcollection-implementations.md)
-- [Collection Implementations](array/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](array/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](array/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](array/customstringconvertible-implementations.md)
-- [Decodable Implementations](array/decodable-implementations.md)
-- [Encodable Implementations](array/encodable-implementations.md)
-- [Equatable Implementations](array/equatable-implementations.md)
-- [ExpressibleByArrayLiteral Implementations](array/expressiblebyarrayliteral-implementations.md)
-- [Generable Implementations](array/generable-implementations.md)
-- [Hashable Implementations](array/hashable-implementations.md)
-- [IntentValueConvertible Implementations](array/intentvalueconvertible-implementations.md)
-- [IntentValueExpressing Implementations](array/intentvalueexpressing-implementations.md)
-- [MutableCollection Implementations](array/mutablecollection-implementations.md)
-- [OperationParameter Implementations](array/operationparameter-implementations.md)
-- [RandomAccessCollection Implementations](array/randomaccesscollection-implementations.md)
-- [RangeReplaceableCollection Implementations](array/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](array/sequence-implementations.md)
+- [Attachable Implementations](./array/attachable-implementations.md)
+- [BidirectionalCollection Implementations](./array/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./array/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./array/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./array/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./array/customstringconvertible-implementations.md)
+- [Decodable Implementations](./array/decodable-implementations.md)
+- [Encodable Implementations](./array/encodable-implementations.md)
+- [Equatable Implementations](./array/equatable-implementations.md)
+- [ExpressibleByArrayLiteral Implementations](./array/expressiblebyarrayliteral-implementations.md)
+- [Generable Implementations](./array/generable-implementations.md)
+- [Hashable Implementations](./array/hashable-implementations.md)
+- [IntentValueConvertible Implementations](./array/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](./array/intentvalueexpressing-implementations.md)
+- [MutableCollection Implementations](./array/mutablecollection-implementations.md)
+- [OperationParameter Implementations](./array/operationparameter-implementations.md)
+- [RandomAccessCollection Implementations](./array/randomaccesscollection-implementations.md)
+- [RangeReplaceableCollection Implementations](./array/rangereplaceablecollection-implementations.md)
+- [Sequence Implementations](./array/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AccelerateBuffer](../accelerate/acceleratebuffer.md)
-- [AccelerateMutableBuffer](../accelerate/acceleratemutablebuffer.md)
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
-- [Attachable](../testing/attachable.md)
-- [BNNSGraph.Builder.OperationParameter](../accelerate/bnnsgraph/builder/operationparameter.md)
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
-- [CMSampleBuffer.Content](../coremedia/cmsamplebuffer/content.md)
-- [CMSampleBuffer.ContentWithFormatDescription](../coremedia/cmsamplebuffer/contentwithformatdescription.md)
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [CVarArg](cvararg.md)
-- [Collection](collection.md)
-- [ContiguousBytes](../foundation/contiguousbytes.md)
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [DataProtocol](../foundation/dataprotocol.md)
-- [Decodable](decodable.md)
-- [DecodableWithConfiguration](../foundation/decodablewithconfiguration.md)
-- [Encodable](encodable.md)
-- [EncodableWithConfiguration](../foundation/encodablewithconfiguration.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
-- [Generable](../foundationmodels/generable.md)
-- [Hashable](hashable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [MLDataValueConvertible](../createml/mldatavalueconvertible.md)
-- [MutableCollection](mutablecollection.md)
-- [MutableDataProtocol](../foundation/mutabledataprotocol.md)
-- [PositionScaleRange](../charts/positionscalerange.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [RelationshipCollection](../swiftdata/relationshipcollection.md)
-- [ResultsCollection](../appintents/resultscollection.md)
-- [ScaleDomain](../charts/scaledomain.md)
-- [ScaleRange](../charts/scalerange.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [AccelerateBuffer](../Accelerate/acceleratebuffer.md)
+- [AccelerateMutableBuffer](../Accelerate/acceleratemutablebuffer.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
+- [Attachable](../Testing/attachable.md)
+- [BNNSGraph.Builder.OperationParameter](../Accelerate/bnnsgraph/builder/operationparameter.md)
+- [BidirectionalCollection](./bidirectionalcollection.md)
+- [CKRecordValueProtocol](../CloudKit/ckrecordvalueprotocol.md)
+- [CMSampleBuffer.Content](../CoreMedia/cmsamplebuffer/content.md)
+- [CMSampleBuffer.ContentWithFormatDescription](../CoreMedia/cmsamplebuffer/contentwithformatdescription.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [CVarArg](./cvararg.md)
+- [Collection](./collection.md)
+- [ContiguousBytes](../Foundation/contiguousbytes.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [DataProtocol](../Foundation/dataprotocol.md)
+- [Decodable](./decodable.md)
+- [DecodableWithConfiguration](../Foundation/decodablewithconfiguration.md)
+- [Encodable](./encodable.md)
+- [EncodableWithConfiguration](../Foundation/encodablewithconfiguration.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
+- [Generable](../FoundationModels/generable.md)
+- [Hashable](./hashable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [MLDataValueConvertible](../CreateML/mldatavalueconvertible.md)
+- [MutableCollection](./mutablecollection.md)
+- [MutableDataProtocol](../Foundation/mutabledataprotocol.md)
+- [PositionScaleRange](../Charts/positionscalerange.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [RandomAccessCollection](./randomaccesscollection.md)
+- [RangeReplaceableCollection](./rangereplaceablecollection.md)
+- [RelationshipCollection](../SwiftData/relationshipcollection.md)
+- [ResultsCollection](../AppIntents/resultscollection.md)
+- [ScaleDomain](../Charts/scaledomain.md)
+- [ScaleRange](../Charts/scalerange.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct Int](int.md)
+### Standard Library
+- [struct Int](./int.md)
   A signed integer value type.
-- [struct Double](double.md)
+- [struct Double](./double.md)
   A double-precision (64-bit), floating-point value type.
-- [struct String](string.md)
+- [struct String](./string.md)
   A Unicode string value that is a collection of characters.
-- [struct Dictionary](dictionary.md)
+- [struct Dictionary](./dictionary.md)
   A collection whose elements are key-value pairs.
-- [Swift Standard Library](swift-standard-library.md)
+- [Swift Standard Library](./swift-standard-library.md)
   Solve complex problems and write high-performance, readable code.
 
 

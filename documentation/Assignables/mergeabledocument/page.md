@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The page type this document contains.
@@ -10,7 +11,7 @@ The page type this document contains.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ associatedtype Page : MergeableDocumentPage
 
 ## See Also
 
-- [var pages: [Self.Page]](mergeabledocument/pages.md)
+### Getting the pages
+- [var pages: [Self.Page]](./pages.md)
   The collection of pages in this document.
 
 

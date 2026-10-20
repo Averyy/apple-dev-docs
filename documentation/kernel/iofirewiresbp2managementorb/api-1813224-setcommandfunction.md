@@ -7,12 +7,12 @@ Sets the function of the management ORB.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setCommandFunction(
  UInt32function );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if function was a legal function.
 
@@ -26,21 +26,22 @@ Sets the the function of the management ORB. Legal values are kFWSBP2QueryLogins
 
 ## See Also
 
-- [getCommandFunction()](iofirewiresbp2managementorb/1813171-getcommandfunction.md)
+### Miscellaneous
+- [getCommandFunction()](./api-1813171-getcommandfunction.md)
   Returns the current function of the management ORB.
-- [getCommandFunction()](iofirewiresbp2managementorb/1813185-getcommandfunction.md)
+- [getCommandFunction()](./api-1813185-getcommandfunction.md)
   Returns the current managee command of the management ORB.
-- [getManageeCommand](iofirewiresbp2managementorb/1813195-getmanageecommand.md)
+- [getManageeCommand](./api-1813195-getmanageecommand.md)
   Returns the current managee command of the management ORB.
-- [getResponseBuffer](iofirewiresbp2managementorb/1813205-getresponsebuffer.md)
+- [getResponseBuffer](./api-1813205-getresponsebuffer.md)
   Returns the response buffer for the management ORB.
-- [release](iofirewiresbp2managementorb/1813216-release.md)
+- [release](./api-1813216-release.md)
   Primary implementation of the release mechanism.
-- [setManageeCommand](iofirewiresbp2managementorb/1813235-setmanageecommand.md)
+- [setManageeCommand](./api-1813235-setmanageecommand.md)
   Sets the command to be managed by the management ORB.
-- [setResponseBuffer(IOMemoryDescriptor *)](iofirewiresbp2managementorb/1813243-setresponsebuffer.md)
+- [setResponseBuffer(IOMemoryDescriptor *)](./api-1813243-setresponsebuffer.md)
   Sets the response buffer for the management ORB.
-- [setResponseBuffer(void *, UInt32)](iofirewiresbp2managementorb/1813252-setresponsebuffer.md)
+- [setResponseBuffer(void *, UInt32)](./api-1813252-setresponsebuffer.md)
   Sets the response buffer for the management ORB.
 
 

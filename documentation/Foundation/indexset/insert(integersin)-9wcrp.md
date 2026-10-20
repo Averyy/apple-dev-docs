@@ -1,7 +1,8 @@
 # insert(integersIn:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insert a range of integers into the `IndexSet`.
 

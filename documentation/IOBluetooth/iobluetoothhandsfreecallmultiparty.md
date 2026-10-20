@@ -1,17 +1,22 @@
 # IOBluetoothHandsFreeCallMultiparty
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates whether the call is multiple-party.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 let IOBluetoothHandsFreeCallMultiparty: String
+```
+
+```c
+extern NSString * const IOBluetoothHandsFreeCallMultiparty;
 ```
 
 #### Discussion
@@ -23,13 +28,14 @@ The string contains a single digit with one of the following values:
 
 ## See Also
 
-- [let IOBluetoothHandsFreeCallDirection: String](iobluetoothhandsfreecalldirection.md)
+### Call Information
+- [let IOBluetoothHandsFreeCallDirection: String](./iobluetoothhandsfreecalldirection.md)
   A value that indicates whether a call is incoming or outgoing.
-- [let IOBluetoothHandsFreeCallIndex: String](iobluetoothhandsfreecallindex.md)
+- [let IOBluetoothHandsFreeCallIndex: String](./iobluetoothhandsfreecallindex.md)
   The index of the call, starting with `1`.
-- [let IOBluetoothHandsFreeCallMode: String](iobluetoothhandsfreecallmode.md)
+- [let IOBluetoothHandsFreeCallMode: String](./iobluetoothhandsfreecallmode.md)
   The type of call data.
-- [let IOBluetoothHandsFreeCallStatus: String](iobluetoothhandsfreecallstatus.md)
+- [let IOBluetoothHandsFreeCallStatus: String](./iobluetoothhandsfreecallstatus.md)
   The current state of the call.
 
 

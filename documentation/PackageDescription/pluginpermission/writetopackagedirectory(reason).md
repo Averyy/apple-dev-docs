@@ -1,7 +1,8 @@
 # PluginPermission.writeToPackageDirectory(reason:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Create a permission to modify files in the package’s directory.
 
@@ -24,7 +25,8 @@ The command plug-in requires permission to modify the files under the package di
 
 ## See Also
 
-- [case allowNetworkConnections(scope: PluginNetworkPermissionScope, reason: String)](pluginpermission/allownetworkconnections(scope:reason:).md)
+### Create a permission
+- [case allowNetworkConnections(scope: PluginNetworkPermissionScope, reason: String)](./allownetworkconnections%28scope,reason%29.md)
   Create a permission to make network connections.
 
 

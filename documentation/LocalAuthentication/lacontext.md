@@ -1,7 +1,8 @@
 # LAContext
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mechanism for evaluating authentication policies and access controls.
 
@@ -19,84 +20,89 @@ A mechanism for evaluating authentication policies and access controls.
 class LAContext
 ```
 
+```objc
+@interface LAContext : NSObject
+```
+
 #### Overview
 
 You use an authentication context to evaluate the user’s identity, either with biometrics like Touch ID or Face ID, or by supplying the device passcode. The context handles user interaction, and also interfaces to the Secure Enclave, the underlying hardware element that manages biometric data. You create and configure the context, and ask it to carry out the authentication. You then receive an asynchronous callback, which provides an indication of authentication success or failure, and an error instance that explains the reason for a failure, if any.
 
-> ❗ **Important**:  Include the [`NSFaceIDUsageDescription`](https://developer.apple.comhttps://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) key in your app’s `Info.plist` file if your app allows biometric authentication. Otherwise, authorization requests may fail.
+> ❗ **Important**:  Include the [NSFaceIDUsageDescription](https://developer.apple.com/library/content/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) key in your app’s `Info.plist` file if your app allows biometric authentication. Otherwise, authorization requests may fail.
 
 ## Topics
 
 ### Checking availability
-- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](lacontext/canevaluatepolicy(_:error:).md)
+- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](./lacontext/canevaluatepolicy%28_,error%29.md)
   Assesses whether authentication can proceed for a given policy.
-- [enum LAPolicy](lapolicy.md)
+- [enum LAPolicy](./lapolicy.md)
   The set of available local authentication policies.
-- [var biometryType: LABiometryType](lacontext/biometrytype.md)
+- [var biometryType: LABiometryType](./lacontext/biometrytype.md)
   The type of biometric authentication supported by the device.
-- [enum LABiometryType](labiometrytype.md)
+- [enum LABiometryType](./labiometrytype.md)
   The set of available biometric authentication types.
 ### Evaluating authentication policies
-- [func evaluatePolicy(LAPolicy, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](lacontext/evaluatepolicy(_:localizedreason:reply:).md)
+- [func evaluatePolicy(LAPolicy, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](./lacontext/evaluatepolicy%28_,localizedreason,reply%29.md)
   Evaluates the specified policy.
-- [var evaluatedPolicyDomainState: Data?](lacontext/evaluatedpolicydomainstate.md)
+- [var evaluatedPolicyDomainState: Data?](./lacontext/evaluatedpolicydomainstate.md)
   The current state of the evaluated policy domain.
-- [var maxBiometryFailures: NSNumber?](lacontext/maxbiometryfailures.md)
+- [var maxBiometryFailures: NSNumber?](./lacontext/maxbiometryfailures.md)
   The number of biometric authentication failures after which the context falls back to another mechanism.
 ### Evaluating access controls
-- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](lacontext/evaluateaccesscontrol(_:operation:localizedreason:reply:).md)
+- [func evaluateAccessControl(SecAccessControl, operation: LAAccessControlOperation, localizedReason: String, reply: (Bool, (any Error)?) -> Void)](./lacontext/evaluateaccesscontrol%28_,operation,localizedreason,reply%29.md)
   Evaluates an access control for a given operation.
-- [enum LAAccessControlOperation](laaccesscontroloperation.md)
+- [enum LAAccessControlOperation](./laaccesscontroloperation.md)
   Operations to be evaluated for access control.
-- [var interactionNotAllowed: Bool](lacontext/interactionnotallowed.md)
+- [var interactionNotAllowed: Bool](./lacontext/interactionnotallowed.md)
   A Boolean value indicating whether authentication can be interactive.
 ### Customizing authentication prompts
-- [var localizedReason: String](lacontext/localizedreason.md)
+- [var localizedReason: String](./lacontext/localizedreason.md)
   The localized explanation for authentication shown in the dialog presented to the user.
-- [var localizedFallbackTitle: String?](lacontext/localizedfallbacktitle.md)
+- [var localizedFallbackTitle: String?](./lacontext/localizedfallbacktitle.md)
   The localized title for the fallback button in the dialog presented to the user during authentication.
-- [var localizedCancelTitle: String?](lacontext/localizedcanceltitle.md)
+- [var localizedCancelTitle: String?](./lacontext/localizedcanceltitle.md)
   The localized title for the cancel button in the dialog presented to the user during authentication.
 ### Reusing device unlock state
-- [var touchIDAuthenticationAllowableReuseDuration: TimeInterval](lacontext/touchidauthenticationallowablereuseduration.md)
+- [var touchIDAuthenticationAllowableReuseDuration: TimeInterval](./lacontext/touchidauthenticationallowablereuseduration.md)
   The duration for which Touch ID authentication reuse is allowable.
-- [let LATouchIDAuthenticationMaximumAllowableReuseDuration: TimeInterval](latouchidauthenticationmaximumallowablereuseduration.md)
+- [let LATouchIDAuthenticationMaximumAllowableReuseDuration: TimeInterval](./latouchidauthenticationmaximumallowablereuseduration.md)
   The maximum allowable reuse duration.
 ### Managing credentials
-- [func setCredential(Data?, type: LACredentialType) -> Bool](lacontext/setcredential(_:type:).md)
+- [func setCredential(Data?, type: LACredentialType) -> Bool](./lacontext/setcredential%28_,type%29.md)
   Sets an application-provided credential to be used when evaluating authentication.
-- [func isCredentialSet(LACredentialType) -> Bool](lacontext/iscredentialset(_:).md)
+- [func isCredentialSet(LACredentialType) -> Bool](./lacontext/iscredentialset%28_%29.md)
   Returns a Boolean value indicating whether the specified credential type is set.
-- [enum LACredentialType](lacredentialtype.md)
+- [enum LACredentialType](./lacredentialtype.md)
   The types of credentials to be used for authentication.
 ### Invalidating the authentication context
-- [func invalidate()](lacontext/invalidate.md)
+- [func invalidate()](./lacontext/invalidate%28%29.md)
   Invalidates the authentication context.
 ### Instance Properties
-- [var domainState: LADomainState](lacontext/domainstate.md)
+- [var domainState: LADomainState](./lacontext/domainstate.md)
   Contains authentication domain state.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Observable](../observation/observable.md)
-- [ObservableObject](../combine/observableobject.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Observable](../Observation/observable.md)
+- [ObservableObject](../Combine/observableobject.md)
 
 ## See Also
 
-- [class LARight](laright.md)
+### Authentication and access
+- [class LARight](./laright.md)
   A grouped set of requirements that gate access to a resource or operation.
-- [LARight.State](laright/state-swift.enum.md)
+- [LARight.State](./laright/state-swift.enum.md)
   The possible states for a right during authorization.
 
 

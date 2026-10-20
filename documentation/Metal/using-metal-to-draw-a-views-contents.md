@@ -1,6 +1,8 @@
 # Using Metal to draw a view’s contents
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [UsingMetalToDrawAViewsContents.zip](https://docs-assets.developer.apple.com/published/107fc85eb937/UsingMetalToDrawAViewsContents.zip)
 
 Create a MetalKit view and a render pass to draw the view’s contents.
 
@@ -16,19 +18,19 @@ Create a MetalKit view and a render pass to draw the view’s contents.
 
 In this sample, you’ll learn the basics of rendering graphics content with Metal. You’ll use the MetalKit framework to create a view that uses Metal to draw the contents of the view.  Then, you’ll encode commands for a render pass that erases the view to a background color.
 
-> **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [`MetalKit`](https://developer.apple.com/documentation/metalkit) for more information.
+> **Note**: MetalKit automates windowing system tasks, loads textures, and handles 3D model data. See [MetalKit](../MetalKit/MetalKit.md) for more information.
 
-##### Prepare a Metalkit View to Draw
+##### Prepare a MetalKit view to draw
 
-MetalKit provides a class called [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview), which is a subclass of [`NSView`](https://developer.apple.com/documentation/appkit/nsview) (in macOS) or [`UIView`](https://developer.apple.com/documentation/uikit/uiview) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.
+MetalKit provides a class called [`MTKView`](../MetalKit/mtkview.md), which is a subclass of [`NSView`](../AppKit/nsview.md) (in macOS) or [`UIView`](../UIKit/uiview.md) (in iOS and tvOS). `MTKView` handles many of the details related to getting the content you draw with Metal onto the screen.
 
-An `MTKView` needs a reference to a Metal device object in order to create resources internally, so your first step is to set the view’s [`device`](https://developer.apple.com/documentation/metalkit/mtkview/device) property to an existing [`MTLDevice`](mtldevice.md).
+An `MTKView` needs a reference to a Metal device object in order to create resources internally, so your first step is to set the view’s [`device`](../MetalKit/mtkview/device.md) property to an existing [`MTLDevice`](./mtldevice.md).
 
 ```objective-c
 _view.device = MTLCreateSystemDefaultDevice();
 ```
 
-Other properties on `MTKView` allow you to control its behavior. To erase the contents of the view to a solid background color, you set its [`clearColor`](https://developer.apple.com/documentation/metalkit/mtkview/clearcolor) property. You create the color using the [`MTLClearColorMake(_:_:_:_:)`](mtlclearcolormake(_:_:_:_:).md) function, specifying the red, green, blue, and alpha values.
+Other properties on `MTKView` allow you to control its behavior. To erase the contents of the view to a solid background color, you set its [`clearColor`](../MetalKit/mtkview/clearcolor.md) property. You create the color using the [`MTLClearColorMake(_:_:_:_:)`](./mtlclearcolormake%28_,_,_,_%29.md) function, specifying the red, green, blue, and alpha values.
 
 ```objective-c
 _view.clearColor = MTLClearColorMake(0.0, 0.5, 1.0, 1.0);
@@ -40,9 +42,9 @@ Because you won’t be drawing animated content in this sample, configure the vi
 _view.enableSetNeedsDisplay = YES;
 ```
 
-##### Delegate Drawing Responsibilities
+##### Delegate drawing responsibilities
 
-`MTKView` relies on your app to issue commands to Metal to produce visual content. `MTKView` uses the delegate pattern to inform your app when it should draw. To receive delegate callbacks, set the view’s `delegate` property to an object that conforms to the [`MTKViewDelegate`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate) protocol.
+`MTKView` relies on your app to issue commands to Metal to produce visual content. `MTKView` uses the delegate pattern to inform your app when it should draw. To receive delegate callbacks, set the view’s `delegate` property to an object that conforms to the [`MTKViewDelegate`](../MetalKit/mtkviewdelegate.md) protocol.
 
 ```objective-c
 _view.delegate = _renderer;
@@ -50,16 +52,16 @@ _view.delegate = _renderer;
 
 The delegate implements two methods:
 
-- The view calls the [`mtkView(_:drawableSizeWillChange:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/mtkview(_:drawablesizewillchange:)) method whenever the size of the contents changes. This happens when the window containing the view is resized, or when the device orientation changes (on iOS). This allows your app to adapt the resolution at which it renders to the size of the view.
-- The view calls the [`draw(in:)`](https://developer.apple.com/documentation/metalkit/mtkviewdelegate/draw(in:)) method whenever it’s time to update the view’s contents. In this method, you create a command buffer, encode commands that tell the GPU what to draw and when to display it onscreen, and enqueue that command buffer to be executed by the GPU. This is sometimes referred to as drawing a frame. You can think of a frame as all of the work that goes into producing a single image that gets displayed on the screen. In an interactive app, like a game, you might draw many frames per second.
+- The view calls the [`mtkView(_:drawableSizeWillChange:)`](../MetalKit/mtkviewdelegate/mtkview%28_,drawablesizewillchange%29.md) method whenever the size of the contents changes. This happens when the window containing the view is resized, or when the device orientation changes (on iOS). This allows your app to adapt the resolution at which it renders to the size of the view.
+- The view calls the [`draw(in:)`](../MetalKit/mtkviewdelegate/draw%28in%29.md) method whenever it’s time to update the view’s contents. In this method, you create a command buffer, encode commands that tell the GPU what to draw and when to display it onscreen, and enqueue that command buffer to be executed by the GPU. This is sometimes referred to as drawing a frame. You can think of a frame as all of the work that goes into producing a single image that gets displayed on the screen. In an interactive app, like a game, you might draw many frames per second.
 
 In this sample, a class called `AAPLRenderer` implements the delegate methods and takes on the responsibility of drawing. The view controller creates an instance of this class and sets it as the view’s delegate.
 
-##### Create a Render Pass Descriptor
+##### Create a render pass descriptor
 
 When you draw, the GPU stores the results into *textures*, which are blocks of memory that contain image data and are accessible to the GPU. In this sample, the `MTKView` creates all of the textures you need to draw into the view. It creates multiple textures so that it can display the contents of one texture while you render into another.
 
-To draw, you create a *render pass*, which is a sequence of rendering commands that draw into a set of textures. When used in a render pass, textures are also called *render targets*. To create a render pass, you need a render pass descriptor, an instance of [`MTLRenderPassDescriptor`](mtlrenderpassdescriptor.md). In this sample, rather than configuring your own render pass descriptor, ask the MetalKit view to create one for you.
+To draw, you create a *render pass*, which is a sequence of rendering commands that draw into a set of textures. When used in a render pass, textures are also called *render targets*. To create a render pass, you need a render pass descriptor, an instance of [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md). In this sample, rather than configuring your own render pass descriptor, ask the MetalKit view to create one for you.
 
 ```objective-c
 MTLRenderPassDescriptor *renderPassDescriptor = view.currentRenderPassDescriptor;
@@ -73,9 +75,9 @@ A render pass descriptor describes the set of render targets, and how they shoul
 
 Because a view’s render pass descriptor might be `nil`, you should test to make sure the render pass descriptor object is non-`nil` before creating the render pass.
 
-##### Create a Render Pass
+##### Create a render pass
 
-You create the render pass by encoding it into the command buffer using a  [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) object. Call the command buffer’s [`makeRenderCommandEncoder(descriptor:)`](mtlcommandbuffer/makerendercommandencoder(descriptor:).md) method and pass in the render pass descriptor.
+You create the render pass by encoding it into the command buffer using a  [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) object. Call the command buffer’s [`makeRenderCommandEncoder(descriptor:)`](./mtlcommandbuffer/makerendercommandencoder%28descriptor%29.md) method and pass in the render pass descriptor.
 
 ```objective-c
 id<MTLRenderCommandEncoder> commandEncoder = [commandBuffer renderCommandEncoderWithDescriptor:renderPassDescriptor];
@@ -87,17 +89,17 @@ In this sample, you don’t encode any drawing commands, so the only thing the r
 [commandEncoder endEncoding];
 ```
 
-##### Present a Drawable to the Screen
+##### Present a drawable to the screen
 
 Drawing to a texture doesn’t automatically display the new contents onscreen. In fact, only some textures can be presented onscreen. In Metal, textures that can be displayed onscreen are managed by *drawable objects*, and to display the content, you present the drawable.
 
-`MTKView` automatically creates drawable objects to manage its textures. Read the [`currentDrawable`](https://developer.apple.com/documentation/metalkit/mtkview/currentdrawable) property to get the drawable that owns the texture that is the render pass’s target. The view returns a [`CAMetalDrawable`](https://developer.apple.com/documentation/quartzcore/cametaldrawable) object, an object connected to Core Animation.
+`MTKView` automatically creates drawable objects to manage its textures. Read the [`currentDrawable`](../MetalKit/mtkview/currentdrawable.md) property to get the drawable that owns the texture that is the render pass’s target. The view returns a [`CAMetalDrawable`](../QuartzCore/cametaldrawable.md) object, an object connected to Core Animation.
 
 ```objective-c
 id<MTLDrawable> drawable = view.currentDrawable;
 ```
 
-Call the [`present(_:)`](mtlcommandbuffer/present(_:).md) method on the command buffer, passing in the drawable.
+Call the [`present(_:)`](./mtlcommandbuffer/present%28_%29.md) method on the command buffer, passing in the drawable.
 
 ```objective-c
 [commandBuffer presentDrawable:drawable];
@@ -105,7 +107,7 @@ Call the [`present(_:)`](mtlcommandbuffer/present(_:).md) method on the command 
 
 This method tells Metal that when the command buffer is scheduled for execution, Metal should coordinate with Core Animation to display the texture after rendering completes. When Core Animation presents the texture, it becomes the view’s new contents. In this sample, this means that the erased texture becomes the new background for the view. The change happens alongside any other visual updates that Core Animation makes for onscreen user interface elements.
 
-##### Commit the Command Buffer
+##### Commit the command buffer
 
 Now that you’ve issued all the commands for the frame, commit the command buffer.
 
@@ -115,11 +117,12 @@ Now that you’ve issued all the commands for the frame, commit the command buff
 
 ## See Also
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+### Essentials
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
   Discover the features and functionality in the Metal 4 foundational APIs.
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Performing calculations on a GPU](performing-calculations-on-a-gpu.md)
+- [Performing calculations on a GPU](./performing-calculations-on-a-gpu.md)
   Use Metal to find GPUs and perform calculations on them.
 
 

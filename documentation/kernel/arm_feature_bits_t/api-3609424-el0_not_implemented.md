@@ -1,14 +1,15 @@
 # el0_not_implemented
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t el0_not_implemented:1;
 ```
 

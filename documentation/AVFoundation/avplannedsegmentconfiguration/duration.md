@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of this planned segment.
 
@@ -17,6 +18,10 @@ The duration of this planned segment.
 
 ```swift
 var duration: CMTime { get }
+```
+
+```objc
+@property (readonly) CMTime duration;
 ```
 
 

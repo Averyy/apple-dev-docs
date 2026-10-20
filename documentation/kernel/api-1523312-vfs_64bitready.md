@@ -1,7 +1,8 @@
 # vfs_64bitready
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Check if the filesystem associated with a mountpoint is marked ready for interaction with 64-bit user processes.
 
@@ -10,11 +11,11 @@ Check if the filesystem associated with a mountpoint is marked ready for interac
 
 ## Declaration
 
-```swift
+```c
 int vfs_64bitready(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if filesystem is ready for 64-bit; 0 otherwise.
 

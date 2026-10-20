@@ -1,18 +1,19 @@
 # ioffset
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Offset for integer functions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ Offset for integer functions.
 var ioffset: Int32
 ```
 
+```c
+int32_t ioffset;
+```
+
 ## See Also
 
-- [var function: BNNSActivationFunction](bnnsactivation/function.md)
+### Instance Properties
+- [var function: BNNSActivationFunction](./function.md)
   The activation function that the layer applies to its output.
-- [var alpha: Float](bnnsactivation/alpha.md)
+- [var alpha: Float](./alpha.md)
   The parameter for the alpha of the activation function.
-- [var beta: Float](bnnsactivation/beta.md)
+- [var beta: Float](./beta.md)
   The parameter for the beta of the activation function.
-- [var iscale: Int32](bnnsactivation/iscale.md)
+- [var iscale: Int32](./iscale.md)
   Scale for integer functions.
-- [var ishift: Int32](bnnsactivation/ishift.md)
+- [var ishift: Int32](./ishift.md)
   Shift for integer functions.
-- [var iscale_per_channel: UnsafePointer<Int32>?](bnnsactivation/iscale_per_channel.md)
+- [var iscale_per_channel: UnsafePointer<Int32>?](./iscale_per_channel.md)
   Scale per channel for integer functions.
-- [var ioffset_per_channel: UnsafePointer<Int32>?](bnnsactivation/ioffset_per_channel.md)
+- [var ioffset_per_channel: UnsafePointer<Int32>?](./ioffset_per_channel.md)
   Offset per channel for integer functions.
-- [var ishift_per_channel: UnsafePointer<Int32>?](bnnsactivation/ishift_per_channel.md)
+- [var ishift_per_channel: UnsafePointer<Int32>?](./ishift_per_channel.md)
   Shift per channel for integer functions.
 
 

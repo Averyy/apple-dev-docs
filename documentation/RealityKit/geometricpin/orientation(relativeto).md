@@ -1,7 +1,8 @@
 # orientation(relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates and returns the current orientation of the pin relative to a reference entity, adjusted by the optional offset position.
 

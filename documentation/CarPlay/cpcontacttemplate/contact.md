@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact that the template displays.
 
@@ -16,13 +17,18 @@ The contact that the template displays.
 var contact: CPContact { get set }
 ```
 
+```objc
+@property (nonatomic, strong) CPContact * contact;
+```
+
 #### Discussion
 
-Assigning a new instance of [`CPContact`](cpcontact.md) updates the template.
+Assigning a new instance of [`CPContact`](../cpcontact.md) updates the template.
 
 ## See Also
 
-- [class CPContact](cpcontact.md)
+### Configuring the Contact
+- [class CPContact](../cpcontact.md)
   A data object that contains information about a contact.
 
 

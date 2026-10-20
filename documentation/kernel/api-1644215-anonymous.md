@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBMainCursorIndex](1644215-anonymous/kiofbmaincursorindex.md)
-- [kIOFBMaxCursorDepth](1644215-anonymous/kiofbmaxcursordepth.md)
-- [kIOFBNumCursorIndex](1644215-anonymous/kiofbnumcursorindex.md)
-- [kIOFBWaitCursorIndex](1644215-anonymous/kiofbwaitcursorindex.md)
-- [kIOFBMaxCursorFrames](1644215-anonymous/kiofbmaxcursorframes.md)
-- [kIOFBMaxCursorWidth](1644215-anonymous/kiofbmaxcursorwidth.md)
+- [kIOFBMainCursorIndex](./api-1644215-anonymous/kiofbmaincursorindex.md)
+- [kIOFBMaxCursorDepth](./api-1644215-anonymous/kiofbmaxcursordepth.md)
+- [kIOFBNumCursorIndex](./api-1644215-anonymous/kiofbnumcursorindex.md)
+- [kIOFBWaitCursorIndex](./api-1644215-anonymous/kiofbwaitcursorindex.md)
+- [kIOFBMaxCursorFrames](./api-1644215-anonymous/kiofbmaxcursorframes.md)
+- [kIOFBMaxCursorWidth](./api-1644215-anonymous/kiofbmaxcursorwidth.md)
 
 
 ---

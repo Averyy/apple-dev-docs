@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The priority of analysis processing work.
 
@@ -25,9 +26,10 @@ This property determines the priority of most, but not all, processing work. You
 
 ## See Also
 
-- [let ignoresResourceLimits: Bool](speechanalyzer/options/ignoresresourcelimits.md)
+### Inspecting options
+- [let ignoresResourceLimits: Bool](./ignoresresourcelimits.md)
   A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
-- [let modelRetention: SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.property.md)
+- [let modelRetention: SpeechAnalyzer.Options.ModelRetention](./modelretention-swift.property.md)
   The analyzer’s model caching strategy.
 
 

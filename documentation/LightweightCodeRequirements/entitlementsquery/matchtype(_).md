@@ -1,7 +1,8 @@
 # matchType(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Matches the specified type against the current element.
 

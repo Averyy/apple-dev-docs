@@ -1,12 +1,13 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,17 @@ The receiver’s name.
 var name: NSPasteboard.Name { get }
 ```
 
+```objc
+@property (copy, readonly) NSPasteboardName name;
+```
+
 ## See Also
 
-- [init(name: NSPasteboard.Name)](nspasteboard/init(name:).md)
+### Related Documentation
+- [init(name: NSPasteboard.Name)](./init%28name%29.md)
   Returns the pasteboard with the specified name.
-- [var changeCount: Int](nspasteboard/changecount.md)
+### Getting information about a pasteboard
+- [var changeCount: Int](./changecount.md)
   The receiver’s change count.
 
 

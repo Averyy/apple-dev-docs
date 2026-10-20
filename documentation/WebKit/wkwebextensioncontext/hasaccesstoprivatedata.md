@@ -1,7 +1,8 @@
 # hasAccessToPrivateData
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if the extension has access to private data.
 
@@ -18,11 +19,15 @@ A Boolean value indicating if the extension has access to private data.
 var hasAccessToPrivateData: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL hasAccessToPrivateData;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the extension is granted permission to interact with private windows, tabs, and cookies. Access to private data should be explicitly allowed by the user before setting this property. This value should be saved and restored as needed by the app.
+If this property is [`true`](../../Swift/true.md), the extension is granted permission to interact with private windows, tabs, and cookies. Access to private data should be explicitly allowed by the user before setting this property. This value should be saved and restored as needed by the app.
 
-> **Note**: To ensure proper isolation between private and non-private data, web views associated with private data must use a different [`WKUserContentController`](wkusercontentcontroller.md). Likewise, to be identified as a private web view and to ensure that cookies and other website data is not shared, private web views must be configured to use a non-persistent [`WKWebsiteDataStore`](wkwebsitedatastore.md).
+> **Note**: To ensure proper isolation between private and non-private data, web views associated with private data must use a different [`WKUserContentController`](../wkusercontentcontroller.md). Likewise, to be identified as a private web view and to ensure that cookies and other website data is not shared, private web views must be configured to use a non-persistent [`WKWebsiteDataStore`](../wkwebsitedatastore.md).
 
 
 ---

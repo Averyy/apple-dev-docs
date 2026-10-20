@@ -1,14 +1,15 @@
 # au_tid_addr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct au_tid_addr {
     ...
 } au_tid_addr_t;
@@ -17,9 +18,9 @@ typedef struct au_tid_addr {
 ## Topics
 
 ### Instance Properties
-- [at_addr](au_tid_addr_t/1520372-at_addr.md)
-- [at_port](au_tid_addr_t/1520247-at_port.md)
-- [at_type](au_tid_addr_t/1520268-at_type.md)
+- [at_addr](./au_tid_addr_t/api-1520372-at_addr.md)
+- [at_port](./au_tid_addr_t/api-1520247-at_port.md)
+- [at_type](./au_tid_addr_t/api-1520268-at_type.md)
 
 
 ---

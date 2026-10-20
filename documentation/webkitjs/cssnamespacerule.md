@@ -1,7 +1,8 @@
 # CSSNamespaceRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSNamespaceRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [namespaceURI](cssnamespacerule/2871336-namespaceuri.md)
-- [prefix](cssnamespacerule/2871112-prefix.md)
+- [namespaceURI](./cssnamespacerule/api-2871336-namespaceuri.md)
+- [prefix](./cssnamespacerule/api-2871112-prefix.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

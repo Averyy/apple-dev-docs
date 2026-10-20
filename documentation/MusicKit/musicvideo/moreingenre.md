@@ -1,7 +1,8 @@
 # moreInGenre
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of music videos in the same genre as this music video.
 

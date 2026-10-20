@@ -1,7 +1,8 @@
 # kDNSServiceClass_IN
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceClass_IN: Int { get }
+```
+
+```c
+kDNSServiceClass_IN
 ```
 
 #### Discussion

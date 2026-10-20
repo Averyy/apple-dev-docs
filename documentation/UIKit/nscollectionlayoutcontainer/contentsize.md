@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the container before content insets are applied.
@@ -19,9 +20,14 @@ The size of the container before content insets are applied.
 var contentSize: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize contentSize;
+```
+
 ## See Also
 
-- [var effectiveContentSize: CGSize](nscollectionlayoutcontainer/effectivecontentsize.md)
+### Getting content size
+- [var effectiveContentSize: CGSize](./effectivecontentsize.md)
   The size of the container after content insets are applied.
 
 

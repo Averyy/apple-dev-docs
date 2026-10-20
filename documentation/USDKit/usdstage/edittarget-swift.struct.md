@@ -1,7 +1,8 @@
 # USDStage.EditTarget
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A destination for authoring operations on a stage.
 
@@ -22,22 +23,23 @@ struct EditTarget
 ## Topics
 
 ### Instance Properties
-- [var layer: USDLayer?](usdstage/edittarget-swift.struct/layer.md)
+- [var layer: USDLayer?](./edittarget-swift.struct/layer.md)
   The layer that authoring operations are directed to.
 ### Default Implementations
-- [CustomStringConvertible Implementations](usdstage/edittarget-swift.struct/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./edittarget-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [var editTarget: USDStage.EditTarget](usdstage/edittarget-swift.property.md)
+### Setting the edit target
+- [var editTarget: USDStage.EditTarget](./edittarget-swift.property.md)
   The destination for authoring operations on this stage.
 
 

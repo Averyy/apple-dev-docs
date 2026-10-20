@@ -1,7 +1,8 @@
 # ArchiveError.invalidValue
 
 **Framework**: Apple Archive  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid value passed to an operation.
 
@@ -11,7 +12,7 @@ An invalid value passed to an operation.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ case invalidValue
 
 ## See Also
 
-- [ArchiveError.ioError](archiveerror/ioerror.md)
+### AppleArchive Errors
+- [ArchiveError.ioError](./ioerror.md)
   An input-output error.
 
 

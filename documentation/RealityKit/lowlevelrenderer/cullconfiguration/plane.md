@@ -1,7 +1,8 @@
 # LowLevelRenderer.CullConfiguration.Plane
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An infinite directed plane used to cull mesh instances.
 
@@ -25,18 +26,18 @@ Each plane has an outward normal that points away from the visible region. An in
 ## Topics
 
 ### Creating a plane
-- [init(position: SIMD3<Float>, direction: SIMD3<Float>)](lowlevelrenderer/cullconfiguration/plane/init(position:direction:).md)
+- [init(position: SIMD3<Float>, direction: SIMD3<Float>)](./plane/init%28position,direction%29.md)
   Creates a plane from a point on the plane and an outward normal direction.
-- [init(position0: SIMD3<Float>, position1: SIMD3<Float>, position2: SIMD3<Float>)](lowlevelrenderer/cullconfiguration/plane/init(position0:position1:position2:).md)
+- [init(position0: SIMD3<Float>, position1: SIMD3<Float>, position2: SIMD3<Float>)](./plane/init%28position0,position1,position2%29.md)
   Creates a plane from three positions.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound object for a capture event.
 
@@ -14,6 +15,10 @@ Creates a sound object for a capture event.
 
 ```swift
 init(url: URL) throws
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
 ## Parameters

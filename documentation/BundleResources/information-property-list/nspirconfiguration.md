@@ -1,7 +1,8 @@
 # NSPIRConfiguration
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The URLs used for a PIR server to support a URL filter or Live Caller ID lookup app.
 
@@ -10,9 +11,10 @@ The URLs used for a PIR server to support a URL filter or Live Caller ID lookup 
 - iPadOS 27.2+
 - macOS 27.2+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSPIRConfiguration`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -21,7 +23,7 @@ Use this key to declare how your extension uses a Private Information Retrieval 
 - For Live Caller ID Lookup, add this key to the app extension’s information property list.
 - For a URL Filter, add this key to app’s information property list, rather than the URL Filter app extension.
 
-See the [`PIRService documentation`](https://developer.apple.comhttps://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice) for more information on configuring your PIR server to work with URL filters and Live Caller ID lookup.
+See the [PIRService documentation](https://swiftpackageindex.com/apple/pir-service-example/main/documentation/pirservice) for more information on configuring your PIR server to work with URL filters and Live Caller ID lookup.
 
 An `NSPIRConfiguration` dictionary may look like this example:
 
@@ -38,14 +40,15 @@ An `NSPIRConfiguration` dictionary may look like this example:
 ## Topics
 
 ### Configuring URLs
-- [PIRServerURL](information-property-list/nspirconfiguration/pirserverurl.md)
+- [PIRServerURL](./nspirconfiguration/pirserverurl.md)
   The URL of the PIR server.
-- [PrivacyPassIssuerURL](information-property-list/nspirconfiguration/privacypassissuerurl.md)
+- [PrivacyPassIssuerURL](./nspirconfiguration/privacypassissuerurl.md)
   The URL of the Privacy Pass issuer.
 
 ## See Also
 
-- [NSApplicationServices](information-property-list/nsapplicationservices.md)
+### Network
+- [NSApplicationServices](./nsapplicationservices.md)
   A list of service providers and the devices that they support.
 
 

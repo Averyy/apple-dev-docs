@@ -1,7 +1,8 @@
 # JSClassCreate(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript class.
 
@@ -19,25 +20,30 @@ Creates a JavaScript class.
 func JSClassCreate(_ definition: UnsafePointer<JSClassDefinition>!) -> JSClassRef!
 ```
 
+```c
+JSClassRefJSClassCreate(const JSClassDefinition *definition);
+```
+
 #### Return Value
 
-A [`JSClassRef`](jsclassref.md) with the specified definition suitable for use with [`JSObjectMake(_:_:_:)`](jsobjectmake(_:_:_:).md). Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A [`JSClassRef`](./jsclassref.md) with the specified definition suitable for use with [`JSObjectMake(_:_:_:)`](./jsobjectmake%28_,_,_%29.md). Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `definition`: A [`JSClassDefinition`](jsclassdefinition.md) that defines the class.
+- `definition`: A [`JSClassDefinition`](./jsclassdefinition.md) that defines the class.
 
 ## See Also
 
-- [func JSClassRelease(JSClassRef!)](jsclassrelease(_:).md)
+### Working with Classes
+- [func JSClassRelease(JSClassRef!)](./jsclassrelease%28_%29.md)
   Releases a JavaScript class.
-- [func JSClassRetain(JSClassRef!) -> JSClassRef!](jsclassretain(_:).md)
+- [func JSClassRetain(JSClassRef!) -> JSClassRef!](./jsclassretain%28_%29.md)
   Retains a JavaScript class.
-- [let kJSClassDefinitionEmpty: JSClassDefinition](kjsclassdefinitionempty.md)
+- [let kJSClassDefinitionEmpty: JSClassDefinition](./kjsclassdefinitionempty.md)
   A class definition structure of the current version that contains null pointers and has no attributes.
-- [struct JSClassDefinition](jsclassdefinition.md)
+- [struct JSClassDefinition](./jsclassdefinition.md)
   A structure that contains properties and callbacks that define a type of object.
-- [JSClassAttribute](jsclassattribute.md)
+- [JSClassAttribute](./jsclassattribute.md)
   A JavaScript class attribute.
 
 

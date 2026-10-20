@@ -1,14 +1,15 @@
 # secure
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.1+
 
 ## Declaration
 
-```swift
+```c
 bool secure;
 ```
 

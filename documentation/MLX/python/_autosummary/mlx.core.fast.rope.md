@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.rope
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.fast.rope.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.fast.rope
-
- Table of contents 
-
-## Contents
-
-# mlx.core.fast.rope
-
-**rope(*a: array*, *dims: int*, ***, *traditional: bool*, *base: float | None*, *scale: float*, *offset: int | array*, *freqs: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**rope(*a: array*, *dims: int*, ***, *traditional: bool*, *base: float | None*, *scale: float*, *offset: int | array*, *freqs: array | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Apply rotary positional encoding to the input.
 
 The input is expected to be at least 3D with shape `(B, *, T, D)` where:
@@ -43,7 +16,7 @@ The input is expected to be at least 3D with shape `(B, *, T, D)` where:
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – The input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – The input array.
 **dims** ([int](https://docs.python.org/3/builtins/functions.html#int)) – The feature dimensions to be rotated. If the input feature
 is larger than dims then the rest is left unchanged.
 **traditional** ([bool](https://docs.python.org/3/builtins/functions.html#bool)) – If set to `True` choose the traditional
@@ -52,16 +25,14 @@ implementation which rotates consecutive dimensions.
 each dimension in the positional encodings. Exactly one of `base` and
 `freqs` must be `None`.
 **scale** ([float](https://docs.python.org/3/builtins/functions.html#float)) – The scale used to scale the positions.
-**offset** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.html#mlx.core.array)) – The position offset to start at. If an
+**offset** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[array](mlx.core.array.md#mlx.core.array)) – The position offset to start at. If an
 [array](https://docs.python.org/3/library/array.html#module-array) is given it can be a scalar or vector of `B`
 offsets for each example in the batch.
-**freqs** ([array](mlx.core.array.html#mlx.core.array)*, **optional*) – Optional frequencies to use with RoPE.
+**freqs** ([array](mlx.core.array.md#mlx.core.array)*, **optional*) – Optional frequencies to use with RoPE.
 If set, the `base` parameter must be `None`. Default: `None`.
 
 Returns:
 The output array.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

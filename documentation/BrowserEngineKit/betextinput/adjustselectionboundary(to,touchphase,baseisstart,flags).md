@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adjusts the start or end boundary of the current selection to the given point.
@@ -18,13 +19,17 @@ Adjusts the start or end boundary of the current selection to the given point.
 func adjustSelectionBoundary(to point: CGPoint, touchPhase touch: BESelectionTouchPhase, baseIsStart boundaryIsStart: Bool, flags: BESelectionFlags)
 ```
 
+```objc
+- (void) adjustSelectionBoundaryToPoint:(CGPoint) point touchPhase:(BESelectionTouchPhase) touch baseIsStart:(BOOL) boundaryIsStart flags:(BESelectionFlags) flags;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 
-When you receive this method, call [`selectionBoundaryAdjusted(to:touchPhase:flags:)`](betextinteraction/selectionboundaryadjusted(to:touchphase:flags:).md) to notify the system that your text view handled the update.
+When you receive this method, call [`selectionBoundaryAdjusted(to:touchPhase:flags:)`](../betextinteraction/selectionboundaryadjusted%28to,touchphase,flags%29.md) to notify the system that your text view handled the update.
 
 ## Parameters
 

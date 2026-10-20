@@ -1,7 +1,8 @@
 # FSLookupItemKOIOResult
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result of a kernel-offloaded lookup-item call.
 
@@ -14,37 +15,42 @@ The result of a kernel-offloaded lookup-item call.
 class FSLookupItemKOIOResult
 ```
 
+```objc
+@interface FSLookupItemKOIOResult : FSLookupItemResult
+```
+
 #### Overview
 
-Use this type in your implementation of [`lookupItem(named:in:packer:context:replyHandler:)`](fsvolume/kerneloffloadediohandler/lookupitem(named:in:packer:context:replyhandler:).md).
+Use this type in your implementation of [`lookupItem(named:in:packer:context:replyHandler:)`](./fsvolume/kerneloffloadediohandler/lookupitem%28named,in,packer,context,replyhandler%29.md).
 
 ## Relationships
 
 ### Inherits From
-- [FSLookupItemResult](fslookupitemresult.md)
+- [FSLookupItemResult](./fslookupitemresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func createFile(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, context: FSContext, replyHandler: (FSCreateFileKOIOResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/createfile(named:in:attributes:packer:context:replyhandler:).md)
+### Working with items
+- [func createFile(named: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, context: FSContext, replyHandler: (FSCreateFileKOIOResult?, (any Error)?) -> Void)](./fsvolume/kerneloffloadediohandler/createfile%28named,in,attributes,packer,context,replyhandler%29.md)
   Creates a new file item and map its disk space.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](./fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSCreateFileKOIOResult](fscreatefilekoioresult.md)
+- [class FSCreateFileKOIOResult](./fscreatefilekoioresult.md)
   The result of a kernel-offloaded create-file call.
-- [func lookupItem(named: FSFileName, in: FSItem, packer: FSExtentPacker, context: FSContext, replyHandler: (FSLookupItemKOIOResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/lookupitem(named:in:packer:context:replyhandler:).md)
+- [func lookupItem(named: FSFileName, in: FSItem, packer: FSExtentPacker, context: FSContext, replyHandler: (FSLookupItemKOIOResult?, (any Error)?) -> Void)](./fsvolume/kerneloffloadediohandler/lookupitem%28named,in,packer,context,replyhandler%29.md)
   Looks up an item within a directory and maps its disk space.
-- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, context: FSContext, replyHandler: (FSPreallocateKOIOResult?, (any Error)?) -> Void)](fsvolume/kerneloffloadediohandler/preallocatespace(for:at:length:flags:packer:context:replyhandler:).md)
+- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, context: FSContext, replyHandler: (FSPreallocateKOIOResult?, (any Error)?) -> Void)](./fsvolume/kerneloffloadediohandler/preallocatespace%28for,at,length,flags,packer,context,replyhandler%29.md)
   Preallocates and maps disk space for the given file.
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
+- [FSVolume.PreallocateFlags](./fsvolume/preallocateflags.md)
   Behavior flags for preallocation operations.
-- [class FSPreallocateKOIOResult](fspreallocatekoioresult.md)
+- [class FSPreallocateKOIOResult](./fspreallocatekoioresult.md)
   The result of a kernel-offloaded preallocate call.
 
 

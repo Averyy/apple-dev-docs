@@ -1,7 +1,8 @@
 # root
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the point between the left hip and right hip.
 
@@ -17,6 +18,10 @@ A joint name that represents the point between the left hip and right hip.
 
 ```swift
 static let root: VNHumanBodyPose3DObservation.JointName
+```
+
+```c
+extern VNHumanBodyPose3DObservationJointName const VNHumanBodyPose3DObservationJointNameRoot;
 ```
 
 

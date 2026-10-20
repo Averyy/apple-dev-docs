@@ -1,7 +1,8 @@
 # ApplePayPaymentPass
 
 **Framework**: Apple Pay on the Web  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A provisioned payment card for Apple Pay payments.
 
@@ -11,7 +12,7 @@ A provisioned payment card for Apple Pay payments.
 
 ## Declaration
 
-```swift
+```
 dictionary ApplePayPaymentPass {
 	required DOMString primaryAccountIdentifier;
 	required DOMString primaryAccountNumberSuffix;
@@ -28,29 +29,30 @@ Payment pass information is populated only for cobranded or private label cards,
 ## Topics
 
 ### Account Identity
-- [primaryAccountIdentifier](applepaypaymentpass/primaryaccountidentifier.md)
+- [primaryAccountIdentifier](./applepaypaymentpass/primaryaccountidentifier.md)
   The unique identifier for the primary account number for the payment card.
-- [primaryAccountNumberSuffix](applepaypaymentpass/primaryaccountnumbersuffix.md)
+- [primaryAccountNumberSuffix](./applepaypaymentpass/primaryaccountnumbersuffix.md)
   A version of the primary account number suitable for display in your UI.
-- [deviceAccountIdentifier](applepaypaymentpass/deviceaccountidentifier.md)
+- [deviceAccountIdentifier](./applepaypaymentpass/deviceaccountidentifier.md)
   The unique identifier for the device-specific account number.
-- [deviceAccountNumberSuffix](applepaypaymentpass/deviceaccountnumbersuffix.md)
+- [deviceAccountNumberSuffix](./applepaypaymentpass/deviceaccountnumbersuffix.md)
   A version of the device account number suitable for display in your UI.
 ### Activation State
-- [activationState](applepaypaymentpass/activationstate.md)
+- [activationState](./applepaypaymentpass/activationstate.md)
   The activation state of the pass.
-- [ApplePayPaymentPassActivationState](applepaypaymentpassactivationstate.md)
+- [ApplePayPaymentPassActivationState](./applepaypaymentpassactivationstate.md)
   Payment pass activation states.
 
 ## See Also
 
-- [token](applepaypayment/token.md)
+### Payment token
+- [token](./applepaypayment/token.md)
   The encrypted information for an authorized payment.
-- [ApplePayPaymentToken](applepaypaymenttoken.md)
+- [ApplePayPaymentToken](./applepaypaymenttoken.md)
   An object that contains the user’s payment credentials.
-- [ApplePayPaymentMethod](applepaypaymentmethod.md)
+- [ApplePayPaymentMethod](./applepaypaymentmethod.md)
   A dictionary that describes an Apple Pay payment method.
-- [ApplePayPaymentMethodType](applepaypaymentmethodtype.md)
+- [ApplePayPaymentMethodType](./applepaypaymentmethodtype.md)
   A string that represents the type of the payment method.
 
 

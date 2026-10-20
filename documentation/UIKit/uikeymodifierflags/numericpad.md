@@ -1,7 +1,8 @@
 # numericPad
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A modifier flag that indicates the user pressed a key located on the numeric keypad.
 
@@ -9,7 +10,7 @@ A modifier flag that indicates the user pressed a key located on the numeric key
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ A modifier flag that indicates the user pressed a key located on the numeric key
 static var numericPad: UIKeyModifierFlags { get }
 ```
 
+```c
+UIKeyModifierNumericPad
+```
+
 ## See Also
 
-- [static var alphaShift: UIKeyModifierFlags](uikeymodifierflags/alphashift.md)
+### Modifier flags
+- [static var alphaShift: UIKeyModifierFlags](./alphashift.md)
   A modifier flag that indicates the user pressed the Caps Lock key.
-- [static var shift: UIKeyModifierFlags](uikeymodifierflags/shift.md)
+- [static var shift: UIKeyModifierFlags](./shift.md)
   A modifier flag that indicates the user pressed the Shift key.
-- [static var control: UIKeyModifierFlags](uikeymodifierflags/control.md)
+- [static var control: UIKeyModifierFlags](./control.md)
   A modifier flag that indicates the user pressed the Control key.
-- [static var alternate: UIKeyModifierFlags](uikeymodifierflags/alternate.md)
+- [static var alternate: UIKeyModifierFlags](./alternate.md)
   A modifier flag that indicates the user pressed the Option key.
-- [static var command: UIKeyModifierFlags](uikeymodifierflags/command.md)
+- [static var command: UIKeyModifierFlags](./command.md)
   A modifier flag that indicates the user pressed the Command key.
 
 

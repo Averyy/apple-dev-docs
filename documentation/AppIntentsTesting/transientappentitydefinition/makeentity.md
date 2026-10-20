@@ -1,7 +1,8 @@
 # makeEntity
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Creates a populated instance of this transient entity.
 

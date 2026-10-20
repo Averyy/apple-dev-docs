@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two rotations are equal.
 

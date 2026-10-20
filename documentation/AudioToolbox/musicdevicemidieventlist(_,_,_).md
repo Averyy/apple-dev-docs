@@ -1,7 +1,8 @@
 # MusicDeviceMIDIEventList(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 15.0+
@@ -17,19 +18,24 @@
 func MusicDeviceMIDIEventList(_ inUnit: MusicDeviceComponent, _ inOffsetSampleFrame: UInt32, _ evtList: UnsafePointer<MIDIEventList>) -> OSStatus
 ```
 
+```c
+extern OSStatus MusicDeviceMIDIEventList(MusicDeviceComponent inUnit, UInt32 inOffsetSampleFrame, const struct MIDIEventList *evtList);
+```
+
 ## See Also
 
-- [func MusicDeviceMIDIEvent(MusicDeviceComponent, UInt32, UInt32, UInt32, UInt32) -> OSStatus](musicdevicemidievent(_:_:_:_:_:).md)
-- [func MusicDeviceStartNote(MusicDeviceComponent, MusicDeviceInstrumentID, MusicDeviceGroupID, UnsafeMutablePointer<NoteInstanceID>, UInt32, UnsafePointer<MusicDeviceNoteParams>) -> OSStatus](musicdevicestartnote(_:_:_:_:_:_:).md)
-- [func MusicDeviceStopNote(MusicDeviceComponent, MusicDeviceGroupID, NoteInstanceID, UInt32) -> OSStatus](musicdevicestopnote(_:_:_:_:).md)
-- [func MusicDeviceSysEx(MusicDeviceComponent, UnsafePointer<UInt8>, UInt32) -> OSStatus](musicdevicesysex(_:_:_:).md)
-- [typealias MusicDeviceComponent](musicdevicecomponent.md)
-- [typealias MusicDeviceGroupID](musicdevicegroupid.md)
-- [typealias MusicDeviceInstrumentID](musicdeviceinstrumentid.md)
-- [typealias MusicDeviceMIDIEventProc](musicdevicemidieventproc.md)
-- [typealias MusicDeviceStartNoteProc](musicdevicestartnoteproc.md)
-- [typealias MusicDeviceStopNoteProc](musicdevicestopnoteproc.md)
-- [typealias MusicDeviceSysExProc](musicdevicesysexproc.md)
+### Interacting with Music Devices
+- [func MusicDeviceMIDIEvent(MusicDeviceComponent, UInt32, UInt32, UInt32, UInt32) -> OSStatus](./musicdevicemidievent%28_,_,_,_,_%29.md)
+- [func MusicDeviceStartNote(MusicDeviceComponent, MusicDeviceInstrumentID, MusicDeviceGroupID, UnsafeMutablePointer<NoteInstanceID>, UInt32, UnsafePointer<MusicDeviceNoteParams>) -> OSStatus](./musicdevicestartnote%28_,_,_,_,_,_%29.md)
+- [func MusicDeviceStopNote(MusicDeviceComponent, MusicDeviceGroupID, NoteInstanceID, UInt32) -> OSStatus](./musicdevicestopnote%28_,_,_,_%29.md)
+- [func MusicDeviceSysEx(MusicDeviceComponent, UnsafePointer<UInt8>, UInt32) -> OSStatus](./musicdevicesysex%28_,_,_%29.md)
+- [typealias MusicDeviceComponent](./musicdevicecomponent.md)
+- [typealias MusicDeviceGroupID](./musicdevicegroupid.md)
+- [typealias MusicDeviceInstrumentID](./musicdeviceinstrumentid.md)
+- [typealias MusicDeviceMIDIEventProc](./musicdevicemidieventproc.md)
+- [typealias MusicDeviceStartNoteProc](./musicdevicestartnoteproc.md)
+- [typealias MusicDeviceStopNoteProc](./musicdevicestopnoteproc.md)
+- [typealias MusicDeviceSysExProc](./musicdevicesysexproc.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # connection(_:didWriteData:totalBytesWritten:expectedTotalBytes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to deliver progress information for a download of a URL asset to a destination file.
 
@@ -20,6 +21,10 @@ Sent to the delegate to deliver progress information for a download of a URL ass
 optional func connection(_ connection: NSURLConnection, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, expectedTotalBytes: Int64)
 ```
 
+```objc
+- (void) connection:(NSURLConnection *) connection didWriteData:(long long) bytesWritten totalBytesWritten:(long long) totalBytesWritten expectedTotalBytes:(long long) expectedTotalBytes;
+```
+
 #### Discussion
 
 This method is invoked repeatedly during the download of a URL asset to the destination file. The delegate typically uses the values of the three “bytes” parameters to update a progress indicator in the application’s user interface.
@@ -33,9 +38,10 @@ This method is invoked repeatedly during the download of a URL asset to the dest
 
 ## See Also
 
-- [func connectionDidResumeDownloading(NSURLConnection, totalBytesWritten: Int64, expectedTotalBytes: Int64)](nsurlconnectiondownloaddelegate/connectiondidresumedownloading(_:totalbyteswritten:expectedtotalbytes:).md)
+### Managing Downloads of URL Assets
+- [func connectionDidResumeDownloading(NSURLConnection, totalBytesWritten: Int64, expectedTotalBytes: Int64)](./connectiondidresumedownloading%28_,totalbyteswritten,expectedtotalbytes%29.md)
   Sent to the delegate when an URL connection resumes downloading a URL asset that was earlier suspended.
-- [func connectionDidFinishDownloading(NSURLConnection, destinationURL: URL)](nsurlconnectiondownloaddelegate/connectiondidfinishdownloading(_:destinationurl:).md)
+- [func connectionDidFinishDownloading(NSURLConnection, destinationURL: URL)](./connectiondidfinishdownloading%28_,destinationurl%29.md)
   Sent to the delegate when the URL connection has successfully downloaded the URL asset to a destination file.
 
 

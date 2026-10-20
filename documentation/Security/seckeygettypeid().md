@@ -1,7 +1,8 @@
 # SecKeyGetTypeID()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique identifier of the opaque type to which a key object belongs.
 
@@ -20,13 +21,17 @@ Returns the unique identifier of the opaque type to which a key object belongs.
 func SecKeyGetTypeID() -> CFTypeID
 ```
 
+```c
+CFTypeID SecKeyGetTypeID();
+```
+
 #### Return Value
 
-A value that identifies the opaque type of a [`SecKey`](seckey.md) object.
+A value that identifies the opaque type of a [`SecKey`](./seckey.md) object.
 
 #### Discussion
 
-This function returns a value that uniquely identifies the opaque type of a [`SecKey`](seckey.md) object. You can compare this value to the [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) identifier obtained by calling the [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/corefoundation/cfgettypeid(_:)) function on a specific object. These values might change from release to release or platform to platform.
+This function returns a value that uniquely identifies the opaque type of a [`SecKey`](./seckey.md) object. You can compare this value to the [`CFTypeID`](../CoreFoundation/cftypeid.md) identifier obtained by calling the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function on a specific object. These values might change from release to release or platform to platform.
 
 
 ---

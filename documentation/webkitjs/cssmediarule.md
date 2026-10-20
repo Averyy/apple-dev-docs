@@ -1,7 +1,8 @@
 # CSSMediaRule
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,23 +10,23 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSMediaRule
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cssRules](cssmediarule/1629995-cssrules.md)
-- [media](cssmediarule/1630402-media.md)
+- [cssRules](./cssmediarule/api-1629995-cssrules.md)
+- [media](./cssmediarule/api-1630402-media.md)
 ### Instance Methods
-- [deleteRule](cssmediarule/1630888-deleterule.md)
-- [insertRule](cssmediarule/1631694-insertrule.md)
+- [deleteRule](./cssmediarule/api-1630888-deleterule.md)
+- [insertRule](./cssmediarule/api-1631694-insertrule.md)
 
 ## Relationships
 
 ### Inherits From
-- [CSSRule](cssrule.md)
+- [CSSRule](./cssrule.md)
 
 
 ---

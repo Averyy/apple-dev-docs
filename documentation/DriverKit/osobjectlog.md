@@ -1,24 +1,26 @@
 # OSObjectLog
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void OSObjectLog(OSObjectPtr obj);
 ```
 
 ## See Also
 
-- [IOLogBuffer](iologbuffer.md)
-- [crc32](crc32.md)
+### Log Support
+- [IOLogBuffer](./iologbuffer.md)
+- [crc32](./crc32.md)
 
 
 ---

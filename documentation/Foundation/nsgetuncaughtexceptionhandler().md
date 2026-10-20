@@ -1,7 +1,8 @@
 # NSGetUncaughtExceptionHandler()
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the top-level error handler.
 
@@ -20,15 +21,21 @@ Returns the top-level error handler.
 func NSGetUncaughtExceptionHandler() -> ((NSException) -> Void)?
 ```
 
+```c
+extern void (*)(NSException *)NSGetUncaughtExceptionHandler();
+```
+
 #### Return Value
 
 A pointer to the top-level error-handling function where you can perform last-minute logging before the program terminates.
 
 ## See Also
 
-- [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](nssetuncaughtexceptionhandler(_:).md)
+### Related Documentation
+- [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](./nssetuncaughtexceptionhandler%28_%29.md)
   Changes the top-level error handler.
-- [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](nssetuncaughtexceptionhandler(_:).md)
+### Functions
+- [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](./nssetuncaughtexceptionhandler%28_%29.md)
   Changes the top-level error handler.
 
 

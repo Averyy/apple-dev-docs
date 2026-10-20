@@ -1,7 +1,8 @@
 # UIPrintInfo
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about a print job that the system uses when it prints.
 
@@ -18,63 +19,68 @@ Information about a print job that the system uses when it prints.
 class UIPrintInfo
 ```
 
+```objc
+@interface UIPrintInfo : NSObject
+```
+
 #### Overview
 
-A [`UIPrintInfo`](uiprintinfo.md) object encapsulates information about a print job, including printer identifier, job name, output type (photo, normal, grayscale), orientation (portrait or landscape), and any selected duplex mode.
+A [`UIPrintInfo`](./uiprintinfo.md) object encapsulates information about a print job, including printer identifier, job name, output type (photo, normal, grayscale), orientation (portrait or landscape), and any selected duplex mode.
 
-Typically, you create a [`UIPrintInfo`](uiprintinfo.md) object and assign it to the [`printInfo`](uiprintinteractioncontroller/printinfo.md) property of the shared [`UIPrintInteractionController`](uiprintinteractioncontroller.md) instance. However, it isn’t necessary to create a [`UIPrintInfo`](uiprintinfo.md) object for a print job; UIKit assumes certain defaults. In the printing-options user interface, users can select the printer, single-sided or double-sided printing for duplex printers, and (if the app allows it) a range of pages to print.
+Typically, you create a [`UIPrintInfo`](./uiprintinfo.md) object and assign it to the [`printInfo`](./uiprintinteractioncontroller/printinfo.md) property of the shared [`UIPrintInteractionController`](./uiprintinteractioncontroller.md) instance. However, it isn’t necessary to create a [`UIPrintInfo`](./uiprintinfo.md) object for a print job; UIKit assumes certain defaults. In the printing-options user interface, users can select the printer, single-sided or double-sided printing for duplex printers, and (if the app allows it) a range of pages to print.
 
 ## Topics
 
 ### Creating a print info object
-- [class func printInfo() -> UIPrintInfo](uiprintinfo/printinfo.md)
+- [class func printInfo() -> UIPrintInfo](./uiprintinfo/printinfo%28%29.md)
   Returns a print-information object initialized with default values.
-- [init(dictionary: [AnyHashable : Any]?)](uiprintinfo/init(dictionary:).md)
+- [init(dictionary: [AnyHashable : Any]?)](./uiprintinfo/init%28dictionary%29.md)
   Returns a print-information object that is initialized with the data in the passed-in dictionary.
-- [var dictionaryRepresentation: [AnyHashable : Any]](uiprintinfo/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [AnyHashable : Any]](./uiprintinfo/dictionaryrepresentation.md)
   A dictionary representation of a print-information object.
-- [init?(coder: NSCoder)](uiprintinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./uiprintinfo/init%28coder%29.md)
   Creates a print info object from data in an unarchiver.
 ### Managing print-job attributes
-- [var duplex: UIPrintInfo.Duplex](uiprintinfo/duplex-swift.property.md)
+- [var duplex: UIPrintInfo.Duplex](./uiprintinfo/duplex-swift.property.md)
   The duplex mode to use for the print job.
-- [UIPrintInfo.Duplex](uiprintinfo/duplex-swift.enum.md)
+- [UIPrintInfo.Duplex](./uiprintinfo/duplex-swift.enum.md)
   Constants that describe the duplex mode of a selected printer.
-- [var jobName: String](uiprintinfo/jobname.md)
+- [var jobName: String](./uiprintinfo/jobname.md)
   The name of the print job.
-- [var orientation: UIPrintInfo.Orientation](uiprintinfo/orientation-swift.property.md)
+- [var orientation: UIPrintInfo.Orientation](./uiprintinfo/orientation-swift.property.md)
   The orientation of the printed content, portrait or landscape.
-- [UIPrintInfo.Orientation](uiprintinfo/orientation-swift.enum.md)
+- [UIPrintInfo.Orientation](./uiprintinfo/orientation-swift.enum.md)
   Constants that describe the orientation of printing on a page.
-- [var outputType: UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.property.md)
+- [var outputType: UIPrintInfo.OutputType](./uiprintinfo/outputtype-swift.property.md)
   The kind of printable content.
-- [UIPrintInfo.OutputType](uiprintinfo/outputtype-swift.enum.md)
+- [UIPrintInfo.OutputType](./uiprintinfo/outputtype-swift.enum.md)
   Constants that describe the output type, which is an indication of the type of content the app is drawing or providing.
-- [var printerID: String?](uiprintinfo/printerid.md)
+- [var printerID: String?](./uiprintinfo/printerid.md)
   An identifier of the printer to use for the print job.
 ### Initializers
-- [init()](uiprintinfo/init.md)
+- [init()](./uiprintinfo/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPrinter](uiprinter.md)
+### Job info
+- [class UIPrinter](./uiprinter.md)
   A printer on the network.
-- [class UIPrintPaper](uiprintpaper.md)
+- [class UIPrintPaper](./uiprintpaper.md)
   The size of paper for a print job and the rectangular area that the content prints within.
 
 

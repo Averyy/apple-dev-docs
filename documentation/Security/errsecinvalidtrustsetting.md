@@ -1,7 +1,8 @@
 # errSecInvalidTrustSetting
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust setting is invalid.
 
@@ -18,6 +19,10 @@ The trust setting is invalid.
 
 ```swift
 var errSecInvalidTrustSetting: OSStatus { get }
+```
+
+```c
+errSecInvalidTrustSetting
 ```
 
 

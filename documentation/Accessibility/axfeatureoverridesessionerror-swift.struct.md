@@ -1,7 +1,8 @@
 # AXFeatureOverrideSessionError
 
 **Framework**: Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.2+
@@ -16,33 +17,34 @@ struct AXFeatureOverrideSessionError
 ## Topics
 
 ### Type Properties
-- [static var appNotEntitled: AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/appnotentitled.md)
-- [static var errorDomain: String](axfeatureoverridesessionerror-swift.struct/errordomain.md)
-- [static var overrideIsAlreadyActive: AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/overrideisalreadyactive.md)
-- [static var overrideNotFoundForUUID: AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/overridenotfoundforuuid.md)
-- [static var undefined: AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/undefined.md)
+- [static var appNotEntitled: AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/appnotentitled.md)
+- [static var errorDomain: String](./axfeatureoverridesessionerror-swift.struct/errordomain.md)
+- [static var overrideIsAlreadyActive: AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/overrideisalreadyactive.md)
+- [static var overrideNotFoundForUUID: AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/overridenotfoundforuuid.md)
+- [static var undefined: AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/undefined.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AXFeatureOverrideSession](axfeatureoverridesession.md)
+### Override sessions
+- [class AXFeatureOverrideSession](./axfeatureoverridesession.md)
   A token object that represents an override session held by your app.
-- [class AXFeatureOverrideSessionManager](axfeatureoverridesessionmanager.md)
+- [class AXFeatureOverrideSessionManager](./axfeatureoverridesessionmanager.md)
   A manager class to begin and end accessibility feature override sessions. Multiple override sessions are reconciled by combining the requests, preferring feature enablement. Ending all sessions restores the prior state of Accessibility feature enablement. Your app must be entitled with com.apple.developer.accessibility.merchant-api-control.
-- [AXFeatureOverrideSession.Options](axfeatureoverridesession/options.md)
+- [AXFeatureOverrideSession.Options](./axfeatureoverridesession/options.md)
   Options indicating which Accessibility features will be turned on or off when an override session is held by your app.
-- [let AXFeatureOverrideSessionErrorDomain: String](axfeatureoverridesessionerrordomain.md)
-- [AXFeatureOverrideSessionError.Code](axfeatureoverridesessionerror-swift.struct/code.md)
-- [com.apple.developer.accessibility.merchant-api-control](../bundleresources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+- [let AXFeatureOverrideSessionErrorDomain: String](./axfeatureoverridesessionerrordomain.md)
+- [AXFeatureOverrideSessionError.Code](./axfeatureoverridesessionerror-swift.struct/code.md)
+- [com.apple.developer.accessibility.merchant-api-control](../BundleResources/entitlements/com.apple.developer.accessibility.merchant-api-control.md)
 
 
 ---

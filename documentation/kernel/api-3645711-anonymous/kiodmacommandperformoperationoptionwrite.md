@@ -1,7 +1,8 @@
 # kIODMACommandPerformOperationOptionWrite
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 20.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kIODMACommandPerformOperationOptionWrite = 0x00000002
 ```
 

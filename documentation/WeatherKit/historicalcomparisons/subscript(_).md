@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: WeatherKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 The historical comparison at the provided index.
 

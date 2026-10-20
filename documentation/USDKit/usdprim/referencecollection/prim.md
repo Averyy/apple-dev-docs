@@ -1,7 +1,8 @@
 # prim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prim that owns these reference arcs.
 

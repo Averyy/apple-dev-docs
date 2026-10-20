@@ -1,16 +1,21 @@
 # service
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var service: es_string_token_t
+```
+
+```c
+es_string_token_t service;
 ```
 
 #### Discussion

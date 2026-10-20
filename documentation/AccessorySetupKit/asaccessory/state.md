@@ -1,7 +1,8 @@
 # state
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current authorization state of the accessory.
 
@@ -15,9 +16,14 @@ The current authorization state of the accessory.
 var state: ASAccessory.AccessoryState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) ASAccessoryState state;
+```
+
 ## See Also
 
-- [ASAccessory.AccessoryState](asaccessory/accessorystate.md)
+### Inspecting accessory state
+- [ASAccessory.AccessoryState](./accessorystate.md)
   An enumeration of possible authorization states of an accessory.
 
 

@@ -1,17 +1,22 @@
 # sendRemoteLineStatus(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an error to the remote side.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sendRemoteLineStatus(_ lineStatus: BluetoothRFCOMMLineStatus) -> IOReturn
+```
+
+```objc
+- (IOReturn) sendRemoteLineStatus:(BluetoothRFCOMMLineStatus) lineStatus;
 ```
 
 #### Return Value

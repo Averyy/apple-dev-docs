@@ -1,7 +1,8 @@
 # JWSTransactionDecodedPayload
 
 **Framework**: App Store Server Notifications  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A decoded payload that contains transaction information.
 
@@ -10,27 +11,27 @@ A decoded payload that contains transaction information.
 
 ## Declaration
 
-```swift
+```
 object JWSTransactionDecodedPayload
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 #### Discussion
 
-> ❗ **Important**:  Don’t use the `price` or `currency` values for any revenue reconciliation or recognition. App Store Connect reporting is your source of record for financial and accounting purposes. For more information, see [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  Don’t use the `price` or `currency` values for any revenue reconciliation or recognition. App Store Connect reporting is your source of record for financial and accounting purposes. For more information, see [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
 ## Topics
 
 ### Data types
-- [Transaction data types](transaction-data-types.md)
+- [Transaction data types](./transaction-data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)).
+- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `bundleId` (bundleId): The bundle identifier of the app.
 - `billingPlanType` (billingPlanType)
@@ -47,12 +48,14 @@ object JWSTransactionDecodedPayload
 - `originalPurchaseDate` (originalPurchaseDate): The UNIX time, in milliseconds, that represents the purchase date of the original transaction identifier.
 - `originalTransactionId` (originalTransactionId): The transaction identifier of the original purchase.
 - `previousOriginalTransactionId` (previousOriginalTransactionId): The subscription’s original transaction identifier, before you migrated the subscription.
-- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](jwstransactiondecodedpayload/price.md). The `currency` parameter indicates the currency of this price.
+- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](./jwstransactiondecodedpayload/price.md). The `currency` parameter indicates the currency of this price.
 - `productId` (productId): The product identifier of the in-app purchase.
 - `purchaseDate` (purchaseDate): The UNIX time, in milliseconds, that the App Store charged the user’s account for a purchase, restored product, subscription, or subscription renewal after a lapse.
 - `quantity` (quantity): The number of products or seats the customer purchased.
 - `revocationDate` (revocationDate): The UNIX time, in milliseconds, that the App Store refunded the transaction or revoked it from Family Sharing.
 - `revocationPercentage` (revocationPercentage): The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
+
+  **Minimum**: `0`; **Maximum**: `100000`
 - `revocationReason` (revocationReason): The reason that the App Store refunded the transaction or revoked it from Family Sharing.
 - `revocationType` (revocationType): The type of the refund or revocation that applies to the transaction.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
@@ -67,11 +70,12 @@ object JWSTransactionDecodedPayload
 
 ## See Also
 
-- [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
+### JWS header and payload data types
+- [object JWSRenewalInfoDecodedPayload](./jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature header containing transaction or renewal information.
-- [Transaction data types](transaction-data-types.md)
+- [Transaction data types](./transaction-data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 

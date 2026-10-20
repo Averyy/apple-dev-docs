@@ -1,15 +1,20 @@
 # intr_raised
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var intr_raised: Bool
+```
+
+```c
+bool intr_raised;
 ```
 
 

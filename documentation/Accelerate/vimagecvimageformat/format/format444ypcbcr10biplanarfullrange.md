@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format444YpCbCr10BiPlanarFullRange
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A full-range, two-plane YpCbCr 4:4:4 pixel format with 10 bits per channel.
 
@@ -11,7 +12,7 @@ A full-range, two-plane YpCbCr 4:4:4 pixel format with 10 bits per channel.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ This format defines luminance data in the range `0...1023`, and stores 10 bits i
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format444YpCbCr8](vimagecvimageformat/format/format444ypcbcr8.md)
+### 4:4:4 YpCbCr format constants
+- [vImageCVImageFormat.Format.format444YpCbCr8](./format444ypcbcr8.md)
   A video-range, component YpCbCr 4:4:4 pixel format with 8 bits per channel and ordered CrYpCb.
-- [vImageCVImageFormat.Format.format444YpCbCr10](vimagecvimageformat/format/format444ypcbcr10.md)
+- [vImageCVImageFormat.Format.format444YpCbCr10](./format444ypcbcr10.md)
   A component YpCbCr 4:4:4 pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format444YpCbCr10BiPlanarVideoRange](vimagecvimageformat/format/format444ypcbcr10biplanarvideorange.md)
+- [vImageCVImageFormat.Format.format444YpCbCr10BiPlanarVideoRange](./format444ypcbcr10biplanarvideorange.md)
   A video-range, two-plane YpCbCr 4:4:4 pixel format with 10 bits per channel.
 
 

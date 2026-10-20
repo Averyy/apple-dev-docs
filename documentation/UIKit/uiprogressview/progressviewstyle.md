@@ -1,7 +1,8 @@
 # progressViewStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current graphical style of the progress view.
 
@@ -9,7 +10,7 @@ The current graphical style of the progress view.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The current graphical style of the progress view.
 var progressViewStyle: UIProgressView.Style { get set }
 ```
 
+```objc
+@property (nonatomic) UIProgressViewStyle progressViewStyle;
+```
+
 #### Discussion
 
-The value of this property is a constant that specifies the style of the progress view. The default style is [`UIProgressView.Style.default`](uiprogressview/style/default.md). For more on these constants, see [`UIProgressView.Style`](uiprogressview/style.md).
+The value of this property is a constant that specifies the style of the progress view. The default style is [`UIProgressView.Style.default`](./style/default.md). For more on these constants, see [`UIProgressView.Style`](./style.md).
 
 ## See Also
 
-- [var progressTintColor: UIColor?](uiprogressview/progresstintcolor.md)
+### Configuring the progress bar
+- [var progressTintColor: UIColor?](./progresstintcolor.md)
   The color shown for the portion of the progress bar that’s filled.
-- [var progressImage: UIImage?](uiprogressview/progressimage.md)
+- [var progressImage: UIImage?](./progressimage.md)
   An image to use for the portion of the progress bar that’s filled.
-- [var trackTintColor: UIColor?](uiprogressview/tracktintcolor.md)
+- [var trackTintColor: UIColor?](./tracktintcolor.md)
   The color shown for the portion of the progress bar that isn’t filled.
-- [var trackImage: UIImage?](uiprogressview/trackimage.md)
+- [var trackImage: UIImage?](./trackimage.md)
   An image to use for the portion of the track that isn’t filled.
 
 

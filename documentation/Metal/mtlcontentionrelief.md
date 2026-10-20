@@ -1,7 +1,8 @@
 # MTLContentionRelief
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -17,23 +18,27 @@
 enum MTLContentionRelief
 ```
 
+```c
+enum MTLContentionRelief : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLContentionRelief.automatic](mtlcontentionrelief/automatic.md)
-- [MTLContentionRelief.none](mtlcontentionrelief/none.md)
+- [MTLContentionRelief.automatic](./mtlcontentionrelief/automatic.md)
+- [MTLContentionRelief.none](./mtlcontentionrelief/none.md)
 ### Initializers
-- [init?(rawValue: Int)](mtlcontentionrelief/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlcontentionrelief/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

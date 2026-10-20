@@ -1,7 +1,8 @@
 # CSSearchQueryErrorDomain
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for search queries.
 
@@ -18,9 +19,14 @@ The error domain for search queries.
 let CSSearchQueryErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const CSSearchQueryErrorDomain;
+```
+
 ## See Also
 
-- [CSSearchQueryError.Code](cssearchqueryerror/code.md)
+### Query Errors
+- [CSSearchQueryError.Code](./cssearchqueryerror/code.md)
   Error codes that describe reasons a query might fail.
 
 

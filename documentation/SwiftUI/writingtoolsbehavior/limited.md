@@ -1,7 +1,8 @@
 # limited
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The limited, overlay-panel experience is provided if possible.
 

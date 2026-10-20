@@ -1,7 +1,8 @@
 # showsUserLocation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that determines whether to show the user’s location on the map.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether to show the user’s location on the map
 
 ## Declaration
 
-```swift
+```
 showsUserLocation?: boolean;
 ```
 
@@ -20,9 +21,10 @@ The default value is `false`.
 
 ## See Also
 
-- [tracksUserLocation](mapconstructoroptions/tracksuserlocation.md)
+### Enabling user location
+- [tracksUserLocation](./tracksuserlocation.md)
   A Boolean value that determines whether to center the map on the user’s location.
-- [showsUserLocationControl](mapconstructoroptions/showsuserlocationcontrol.md)
+- [showsUserLocationControl](./showsuserlocationcontrol.md)
   A Boolean value that determines whether the user location control is visible.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var acuteAngle: Float](ciparallelogramtile/acuteangle.md)
+### Instance Properties
+- [var acuteAngle: Float](./acuteangle.md)
   The primary angle for the repeating parallelogram tile.
-- [var angle: Float](ciparallelogramtile/angle.md)
+- [var angle: Float](./angle.md)
   The angle, in radians, of the tiled pattern.
-- [var center: CGPoint](ciparallelogramtile/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the effect.
-- [var width: Float](ciparallelogramtile/width.md)
+- [var width: Float](./width.md)
   The width of a tile.
 
 

@@ -1,7 +1,8 @@
 # NSBatchUpdateResult
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The result returned when executing a batch update request.
 
@@ -10,7 +11,7 @@ The result returned when executing a batch update request.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,31 +21,36 @@ The result returned when executing a batch update request.
 class NSBatchUpdateResult
 ```
 
+```objc
+@interface NSBatchUpdateResult : NSPersistentStoreResult
+```
+
 ## Topics
 
 ### Accessing Results
-- [var result: Any?](nsbatchupdateresult/result.md)
+- [var result: Any?](./nsbatchupdateresult/result.md)
   The result of a batch-update request, either the number of updated objects, the identifiers of the updated objects, or a status value.
-- [var resultType: NSBatchUpdateRequestResultType](nsbatchupdateresult/resulttype.md)
+- [var resultType: NSBatchUpdateRequestResultType](./nsbatchupdateresult/resulttype.md)
   The type of result that Core Data returns from the request.
-- [enum NSBatchUpdateRequestResultType](nsbatchupdaterequestresulttype.md)
+- [enum NSBatchUpdateRequestResultType](./nsbatchupdaterequestresulttype.md)
   Result types for a batch-update request.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreResult](nspersistentstoreresult.md)
+- [NSPersistentStoreResult](./nspersistentstoreresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSBatchUpdateRequest](nsbatchupdaterequest.md)
+### Data Updates
+- [class NSBatchUpdateRequest](./nsbatchupdaterequest.md)
   A request to Core Data to do a batch update of data in a persistent store without loading any data into memory.
 
 

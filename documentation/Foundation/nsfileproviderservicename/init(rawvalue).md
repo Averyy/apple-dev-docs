@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a new service name from the provided string.
 
@@ -22,7 +23,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsfileproviderservicename/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Instantiates a new service name from the provided string.
 
 

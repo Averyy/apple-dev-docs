@@ -1,14 +1,15 @@
 # CPUSTATE_PANIC_SPIN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 CPUSTATE_PANIC_SPIN
 ```
 

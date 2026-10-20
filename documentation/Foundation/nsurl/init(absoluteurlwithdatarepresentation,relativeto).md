@@ -1,7 +1,8 @@
 # init(absoluteURLWithDataRepresentation:relativeTo:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly created absolute NSURL using the contents of the given data, relative to a base URL.
 
@@ -20,41 +21,46 @@ Initializes a newly created absolute NSURL using the contents of the given data,
 init(absoluteURLWithDataRepresentation data: Data, relativeTo baseURL: URL?)
 ```
 
+```objc
+- (instancetype) initAbsoluteURLWithDataRepresentation:(NSData *) data relativeToURL:(NSURL *) baseURL;
+```
+
 #### Discussion
 
 If the data representation is not a legal URL string as ASCII bytes, the URL object may not behave as expected.
 
 ## See Also
 
-- [convenience init?(string: String)](nsurl/init(string:).md)
+### Creating a URL object
+- [convenience init?(string: String)](./init%28string%29.md)
   Initializes an NSURL object with a provided URL string.
-- [convenience init?(string: String, encodingInvalidCharacters: Bool)](nsurl/init(string:encodinginvalidcharacters:).md)
+- [convenience init?(string: String, encodingInvalidCharacters: Bool)](./init%28string,encodinginvalidcharacters%29.md)
   Creates an instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(string: String, relativeTo: URL?)](nsurl/init(string:relativeto:).md)
+- [init?(string: String, relativeTo: URL?)](./init%28string,relativeto%29.md)
   Initializes an NSURL object with a base URL and a relative string.
-- [class func fileURL(withPath: String, isDirectory: Bool) -> URL](nsurl/fileurl(withpath:isdirectory:).md)
+- [class func fileURL(withPath: String, isDirectory: Bool) -> URL](./fileurl%28withpath,isdirectory%29.md)
   Initializes and returns a newly created NSURL object as a file URL with a specified path.
-- [init(fileURLWithPath: String, isDirectory: Bool)](nsurl/init(fileurlwithpath:isdirectory:).md)
+- [init(fileURLWithPath: String, isDirectory: Bool)](./init%28fileurlwithpath,isdirectory%29.md)
   Initializes a newly created NSURL referencing the local file or directory at `path`.
-- [class func fileURL(withPath: String, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:relativeto:).md)
+- [class func fileURL(withPath: String, relativeTo: URL?) -> URL](./fileurl%28withpath,relativeto%29.md)
   Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
-- [init(fileURLWithPath: String, relativeTo: URL?)](nsurl/init(fileurlwithpath:relativeto:).md)
+- [init(fileURLWithPath: String, relativeTo: URL?)](./init%28fileurlwithpath,relativeto%29.md)
   Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
-- [class func fileURL(withPath: String, isDirectory: Bool, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:isdirectory:relativeto:).md)
+- [class func fileURL(withPath: String, isDirectory: Bool, relativeTo: URL?) -> URL](./fileurl%28withpath,isdirectory,relativeto%29.md)
   Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
-- [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativeto:).md)
+- [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](./init%28fileurlwithpath,isdirectory,relativeto%29.md)
   Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
-- [class func fileURL(withPath: String) -> URL](nsurl/fileurl(withpath:).md)
+- [class func fileURL(withPath: String) -> URL](./fileurl%28withpath%29.md)
   Initializes and returns a newly created NSURL object as a file URL with a specified path.
-- [init(fileURLWithPath: String)](nsurl/init(fileurlwithpath:).md)
+- [init(fileURLWithPath: String)](./init%28fileurlwithpath%29.md)
   Initializes a newly created NSURL referencing the local file or directory at `path`.
-- [class func fileURL(withPathComponents: [String]) -> URL?](nsurl/fileurl(withpathcomponents:).md)
+- [class func fileURL(withPathComponents: [String]) -> URL?](./fileurl%28withpathcomponents%29.md)
   Initializes and returns a newly created NSURL object as a file URL with specified path components.
-- [convenience init(resolvingAliasFileAt: URL, options: NSURL.BookmarkResolutionOptions) throws](nsurl/init(resolvingaliasfileat:options:).md)
+- [convenience init(resolvingAliasFileAt: URL, options: NSURL.BookmarkResolutionOptions) throws](./init%28resolvingaliasfileat,options%29.md)
   Returns a new URL made by resolving the alias file at `url`.
-- [convenience init(resolvingBookmarkData: Data, options: NSURL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: UnsafeMutablePointer<ObjCBool>?) throws](nsurl/init(resolvingbookmarkdata:options:relativeto:bookmarkdataisstale:).md)
+- [convenience init(resolvingBookmarkData: Data, options: NSURL.BookmarkResolutionOptions, relativeTo: URL?, bookmarkDataIsStale: UnsafeMutablePointer<ObjCBool>?) throws](./init%28resolvingbookmarkdata,options,relativeto,bookmarkdataisstale%29.md)
   Initializes a newly created NSURL that points to a location specified by resolving bookmark data.
-- [class func fileURL(withFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeTo: URL?) -> URL](nsurl/fileurl(withfilesystemrepresentation:isdirectory:relativeto:).md)
+- [class func fileURL(withFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeTo: URL?) -> URL](./fileurl%28withfilesystemrepresentation,isdirectory,relativeto%29.md)
   Returns a new URL object initialized with a C string representing a local file system path.
 
 

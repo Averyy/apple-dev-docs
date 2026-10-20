@@ -1,14 +1,17 @@
 # UIUserNotificationActionBehavior.textInput
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text input behavior.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
+- iOS 9.0+ - Deprecated in 10.0
+- iPadOS 9.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationAction`](../uiusernotificationaction.md).
 
 ## Declaration
 
@@ -16,13 +19,18 @@ The text input behavior.
 case textInput
 ```
 
+```c
+UIUserNotificationActionBehaviorTextInput
+```
+
 #### Discussion
 
-When specified, the system provides a way for the user to enter a text response to be included with the notification. The text response is assigned to the [`UIUserNotificationActionResponseTypedTextKey`](uiusernotificationactionresponsetypedtextkey.md) of the response information dictionary when the notification is delivered to your app.
+When specified, the system provides a way for the user to enter a text response to be included with the notification. The text response is assigned to the [`UIUserNotificationActionResponseTypedTextKey`](../uiusernotificationactionresponsetypedtextkey.md) of the response information dictionary when the notification is delivered to your app.
 
 ## See Also
 
-- [UIUserNotificationActionBehavior.default](uiusernotificationactionbehavior/default.md)
+### Constants
+- [UIUserNotificationActionBehavior.default](./default.md)
   The default action behavior. When specified, the action supports no additional behaviors.
 
 

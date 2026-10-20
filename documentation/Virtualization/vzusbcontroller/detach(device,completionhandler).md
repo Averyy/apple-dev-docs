@@ -1,7 +1,8 @@
 # detach(device:completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Detaches a USB device from the controller.
 
@@ -11,14 +12,22 @@ Detaches a USB device from the controller.
 ## Declaration
 
 ```swift
+func detach(device: any VZUSBDevice, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func detach(device: any VZUSBDevice) async throws
+```
+
+```objc
+- (void) detachDevice:(id<VZUSBDevice>) device completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
 #### Discussion
 
-If the device successfully detaches from the controller, it disappears from the [`usbDevices`](vzusbcontroller/usbdevices.md) property, the framework sets its [`usbController`](vzusbdevice/usbcontroller.md) property to `nil,` and the completion handler returns `nil`.
+If the device successfully detaches from the controller, it disappears from the [`usbDevices`](./usbdevices.md) property, the framework sets its [`usbController`](../vzusbdevice/usbcontroller.md) property to `nil,` and the completion handler returns `nil`.
 
-If the device doesn’t have an attachment to the controller at the time of calling the detach method, the process fails with [`VZError.Code.deviceNotFound`](vzerror/code/devicenotfound.md).
+If the device doesn’t have an attachment to the controller at the time of calling the detach method, the process fails with [`VZError.Code.deviceNotFound`](../vzerror/code/devicenotfound.md).
 
 You need to call this method on the virtual machine’s queue.
 
@@ -29,9 +38,11 @@ You need to call this method on the virtual machine’s queue.
 
 ## See Also
 
-- [protocol VZUSBDevice](vzusbdevice.md)
+### Related Documentation
+- [protocol VZUSBDevice](../vzusbdevice.md)
   A protocol that represents a USB device in a VM.
-- [func attach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](vzusbcontroller/attach(device:completionhandler:).md)
+### Attaching and detaching devices
+- [func attach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](./attach%28device,completionhandler%29.md)
   Attaches a USB device to the controller.
 
 

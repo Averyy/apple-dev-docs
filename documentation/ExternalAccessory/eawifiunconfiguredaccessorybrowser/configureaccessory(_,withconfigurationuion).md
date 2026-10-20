@@ -1,7 +1,8 @@
 # configureAccessory(_:withConfigurationUIOn:)
 
 **Framework**: External Accessory  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the configuration process for the specified accessory.
 
@@ -17,6 +18,10 @@ Begins the configuration process for the specified accessory.
 func configureAccessory(_ accessory: EAWiFiUnconfiguredAccessory, withConfigurationUIOn viewController: UIViewController)
 ```
 
+```objc
+- (void) configureAccessory:(EAWiFiUnconfiguredAccessory *) accessory withConfigurationUIOnViewController:(UIViewController *) viewController;
+```
+
 #### Discussion
 
 This method stops the search for unconfigured accessories and begins the configuration process of the specified accessory. To guide the user through the configuration process (which can take up to a few minutes to complete), the system displays a modal setup UI on top of the specified view controller. Upon completion of the process, the host app’s delegate receives the accessoryBrowser:didFinishConfiguringAccessory:withError: callback with a status value that it can check. For example, an app might want to tell the user if the configuration failed.
@@ -28,11 +33,12 @@ This method stops the search for unconfigured accessories and begins the configu
 
 ## See Also
 
-- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](eawifiunconfiguredaccessorybrowser/startsearchingforunconfiguredaccessories(matching:).md)
+### Finding and Configuring Accessories
+- [func startSearchingForUnconfiguredAccessories(matching: NSPredicate?)](./startsearchingforunconfiguredaccessories%28matching%29.md)
   Starts the search for unconfigured accessories that match the specified predicate.
-- [func stopSearchingForUnconfiguredAccessories()](eawifiunconfiguredaccessorybrowser/stopsearchingforunconfiguredaccessories.md)
+- [func stopSearchingForUnconfiguredAccessories()](./stopsearchingforunconfiguredaccessories%28%29.md)
   Stops the search for unconfigured accessories.
-- [var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>](eawifiunconfiguredaccessorybrowser/unconfiguredaccessories.md)
+- [var unconfiguredAccessories: Set<EAWiFiUnconfiguredAccessory>](./unconfiguredaccessories.md)
   The set of unconfigured accessories that have been discovered.
 
 

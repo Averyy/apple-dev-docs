@@ -1,7 +1,8 @@
 # environmentalAudioExposure
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures audio exposure to sounds in the environment.
 
@@ -19,19 +20,24 @@ A quantity sample type that measures audio exposure to sounds in the environment
 static let environmentalAudioExposure: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierEnvironmentalAudioExposure;
+```
+
 #### Discussion
 
-These samples use sound pressure units (described in [`HKUnit`](hkunit.md)). You create these units using the [`decibelAWeightedSoundPressureLevel()`](hkunit/decibelaweightedsoundpressurelevel().md) method. They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Samples can be automatically collected by an Apple Watch.
+These samples use sound pressure units (described in [`HKUnit`](../hkunit.md)). You create these units using the [`decibelAWeightedSoundPressureLevel()`](../hkunit/decibelaweightedsoundpressurelevel%28%29.md) method. They measure discrete values of the equivalent continuous sound pressure level, described in [`HKQuantityAggregationStyle.discreteEquivalentContinuousLevel`](../hkquantityaggregationstyle/discreteequivalentcontinuouslevel.md). Samples can be automatically collected by an Apple Watch.
 
 ## See Also
 
-- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/headphoneaudioexposure.md)
+### Hearing
+- [static let headphoneAudioExposure: HKQuantityTypeIdentifier](./headphoneaudioexposure.md)
   A quantity sample type that measures audio exposure from headphones.
-- [static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/environmentalaudioexposureevent.md)
+- [static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/environmentalaudioexposureevent.md)
   A category sample type that records exposure to potentially damaging sounds from the environment.
-- [static let headphoneAudioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/headphoneaudioexposureevent.md)
+- [static let headphoneAudioExposureEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/headphoneaudioexposureevent.md)
   A category sample type that records exposure to potentially damaging sounds from headphones.
-- [static let audioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/audioexposureevent.md)
+- [static let audioExposureEvent: HKCategoryTypeIdentifier](../hkcategorytypeidentifier/audioexposureevent.md)
   A category sample type for audio exposure events.
 
 

@@ -1,7 +1,8 @@
 # CredentialSession.Event
 
 **Framework**: SecureElementCredential  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events produced by a credential session, such as connectivity events and errors.
 
@@ -18,40 +19,41 @@ enum Event
 ## Topics
 
 ### Credential events
-- [case credentialFinishedInstalling(credential: CredentialSession.Credential)](credentialsession/event/credentialfinishedinstalling(credential:).md)
+- [case credentialFinishedInstalling(credential: CredentialSession.Credential)](./event/credentialfinishedinstalling%28credential%29.md)
   The session finished installing a credential.
-- [CredentialSession.Credential](credentialsession/credential.md)
+- [CredentialSession.Credential](./credential.md)
   Information about a credential that a credential session retrieves from the Secure Element.
 ### Card emulation events
-- [case connectivityEvent(CredentialSession.ConnectivityEvent)](credentialsession/event/connectivityevent(_:).md)
+- [case connectivityEvent(CredentialSession.ConnectivityEvent)](./event/connectivityevent%28_%29.md)
   A credential received a connectivity event during card emulation.
-- [CredentialSession.ConnectivityEvent](credentialsession/connectivityevent.md)
+- [CredentialSession.ConnectivityEvent](./connectivityevent.md)
   An event that a credential receives during card emulation.
 ### NFC field events
-- [case fieldStateChanged(info: CredentialSession.NFCFieldInformation)](credentialsession/event/fieldstatechanged(info:).md)
+- [case fieldStateChanged(info: CredentialSession.NFCFieldInformation)](./event/fieldstatechanged%28info%29.md)
   The state of the NFC RF field changed during card emulation.
-- [CredentialSession.NFCFieldInformation](credentialsession/nfcfieldinformation.md)
+- [CredentialSession.NFCFieldInformation](./nfcfieldinformation.md)
   The state of an NFC RF field.
 ### Invalidation events
-- [case sessionInvalidated(reason: CredentialSession.ErrorCode)](credentialsession/event/sessioninvalidated(reason:).md)
+- [case sessionInvalidated(reason: CredentialSession.ErrorCode)](./event/sessioninvalidated%28reason%29.md)
   The session became invalidated.
-- [CredentialSession.ErrorCode](credentialsession/errorcode.md)
+- [CredentialSession.ErrorCode](./errorcode.md)
   An error encountered by a credential session.
 ### Timeout events
-- [CredentialSession.Event.cardEmulationTimeout](credentialsession/event/cardemulationtimeout.md)
+- [CredentialSession.Event.cardEmulationTimeout](./event/cardemulationtimeout.md)
   The session’s card emulation timer expired.
-- [CredentialSession.Event.presentmentIntentAssertionTimeout](credentialsession/event/presentmentintentassertiontimeout.md)
+- [CredentialSession.Event.presentmentIntentAssertionTimeout](./event/presentmentintentassertiontimeout.md)
   The session’s presentment intent assertion timed out.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var eventStream: AsyncStream<CredentialSession.Event>](credentialsession/eventstream.md)
+### Handling session events
+- [var eventStream: AsyncStream<CredentialSession.Event>](./eventstream.md)
   An asynchronous stream of session events.
 
 

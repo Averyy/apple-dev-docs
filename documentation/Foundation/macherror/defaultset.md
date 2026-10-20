@@ -1,7 +1,8 @@
 # defaultSet
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt was made to destroy the default processor set.
 

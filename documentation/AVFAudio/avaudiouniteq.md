@@ -1,7 +1,8 @@
 # AVAudioUnitEQ
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that implements a multiband equalizer.
 
@@ -19,46 +20,51 @@ An object that implements a multiband equalizer.
 class AVAudioUnitEQ
 ```
 
+```objc
+@interface AVAudioUnitEQ : AVAudioUnitEffect
+```
+
 #### Overview
 
-The [`AVAudioUnitEQFilterParameters`](avaudiouniteqfilterparameters.md) class encapsulates the filter parameters that the [`bands`](avaudiouniteq/bands.md) property array returns.
+The [`AVAudioUnitEQFilterParameters`](./avaudiouniteqfilterparameters.md) class encapsulates the filter parameters that the [`bands`](./avaudiouniteq/bands.md) property array returns.
 
 ## Topics
 
 ### Creating an equalizer
-- [init(numberOfBands: Int)](avaudiouniteq/init(numberofbands:).md)
+- [init(numberOfBands: Int)](./avaudiouniteq/init%28numberofbands%29.md)
   Creates an audio unit equalizer object with the specified number of bands.
 ### Configuring equalizer bands
-- [class AVAudioUnitEQFilterParameters](avaudiouniteqfilterparameters.md)
+- [class AVAudioUnitEQFilterParameters](./avaudiouniteqfilterparameters.md)
   An object that encapsulates the parameters that the equalizer uses.
-- [var bands: [AVAudioUnitEQFilterParameters]](avaudiouniteq/bands.md)
+- [var bands: [AVAudioUnitEQFilterParameters]](./avaudiouniteq/bands.md)
   An array of equalizer filter parameters.
-- [var globalGain: Float](avaudiouniteq/globalgain.md)
+- [var globalGain: Float](./avaudiouniteq/globalgain.md)
   The overall gain adjustment that the audio unit applies to the signal, in decibels.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioUnitEffect](avaudiouniteffect.md)
+- [AVAudioUnitEffect](./avaudiouniteffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioUnitDistortion](avaudiounitdistortion.md)
+### Audio effects
+- [class AVAudioUnitDistortion](./avaudiounitdistortion.md)
   An object that implements a multistage distortion effect.
-- [class AVAudioUnitDelay](avaudiounitdelay.md)
+- [class AVAudioUnitDelay](./avaudiounitdelay.md)
   An object that implements a delay effect.
-- [class AVAudioUnitReverb](avaudiounitreverb.md)
+- [class AVAudioUnitReverb](./avaudiounitreverb.md)
   An object that implements a reverb effect.
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
+- [class AVAudioUnitEffect](./avaudiouniteffect.md)
   An object that processes audio in real time.
 
 

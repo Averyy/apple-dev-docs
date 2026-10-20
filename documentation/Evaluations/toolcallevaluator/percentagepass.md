@@ -1,7 +1,8 @@
 # percentagePass
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metric for the partial score result.
 

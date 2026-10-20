@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns the interface controller using the specified remote notification data.
 
@@ -12,6 +13,10 @@ Initializes and returns the interface controller using the specified remote noti
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ At some point after initialization, WatchKit calls the `didReceiveRemoteNotifica
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 
 
 ---

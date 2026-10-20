@@ -1,7 +1,8 @@
 # HKHeartRateRecoveryTestType.predictionNonExercise
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A test that estimates a person’s heart-rate recovery without using exercise.
 
@@ -19,11 +20,16 @@ A test that estimates a person’s heart-rate recovery without using exercise.
 case predictionNonExercise
 ```
 
+```c
+HKHeartRateRecoveryTestTypePredictionNonExercise
+```
+
 ## See Also
 
-- [HKHeartRateRecoveryTestType.maxExercise](hkheartraterecoverytesttype/maxexercise.md)
+### Heart-rate recovery tests
+- [HKHeartRateRecoveryTestType.maxExercise](./maxexercise.md)
   Measures a person’s actual heart-rate recovery.
-- [HKHeartRateRecoveryTestType.predictionSubMaxExercise](hkheartraterecoverytesttype/predictionsubmaxexercise.md)
+- [HKHeartRateRecoveryTestType.predictionSubMaxExercise](./predictionsubmaxexercise.md)
   A test that estimates a person’s heart-rate recovery using lower-intensity exercise.
 
 

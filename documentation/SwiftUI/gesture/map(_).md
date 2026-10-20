@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a gesture that uses the given closure to map over this gesture’s value.
 

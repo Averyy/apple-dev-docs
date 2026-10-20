@@ -1,7 +1,8 @@
 # NSISO2022JPStringEncoding
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 ISO 2022 Japanese encoding for email.
 
@@ -20,11 +21,16 @@ ISO 2022 Japanese encoding for email.
 var NSISO2022JPStringEncoding: UInt { get }
 ```
 
+```c
+NSISO2022JPStringEncoding
+```
+
 ## See Also
 
-- [var NSJapaneseEUCStringEncoding: UInt](nsjapaneseeucstringencoding.md)
+### 7- and 8-bit Japanese Encodings
+- [var NSJapaneseEUCStringEncoding: UInt](./nsjapaneseeucstringencoding.md)
   8-bit EUC encoding for Japanese text.
-- [var NSShiftJISStringEncoding: UInt](nsshiftjisstringencoding.md)
+- [var NSShiftJISStringEncoding: UInt](./nsshiftjisstringencoding.md)
   8-bit Shift-JIS encoding for Japanese text.
 
 

@@ -1,7 +1,8 @@
 # cadence
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the update frequence for the defomer type.
 
@@ -21,7 +22,8 @@ let cadence: MeshDeformerOptions.Cadence
 
 ## See Also
 
-- [MeshDeformerOptions.Cadence](meshdeformeroptions/cadence-swift.enum.md)
+### Configuring the cadence
+- [MeshDeformerOptions.Cadence](./cadence-swift.enum.md)
   Specifies when RealityKit applies the custom deformer functions.
 
 

@@ -1,7 +1,8 @@
 # translation(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Interprets the pan gesture in the coordinate system of the specified view.
 
@@ -9,7 +10,7 @@ Interprets the pan gesture in the coordinate system of the specified view.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Interprets the pan gesture in the coordinate system of the specified view.
 func translation(in view: UIView?) -> CGPoint
 ```
 
+```objc
+- (CGPoint) translationInView:(UIView *) view;
+```
+
 ## Mentions
 
-- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pan gestures](../handling-pan-gestures.md)
 
 #### Return Value
 
@@ -36,9 +41,10 @@ The x and y values report the total translation over time. They aren’t delta v
 
 ## See Also
 
-- [func setTranslation(CGPoint, in: UIView?)](uipangesturerecognizer/settranslation(_:in:).md)
+### Tracking the location and velocity of the gesture
+- [func setTranslation(CGPoint, in: UIView?)](./settranslation%28_,in%29.md)
   Sets the translation value in the coordinate system of the specified view.
-- [func velocity(in: UIView?) -> CGPoint](uipangesturerecognizer/velocity(in:).md)
+- [func velocity(in: UIView?) -> CGPoint](./velocity%28in%29.md)
   Interprets the velocity of the pan gesture in the coordinate system of the specified view.
 
 

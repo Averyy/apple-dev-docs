@@ -1,7 +1,8 @@
 # advancedCommerceInfo
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata for transactions that use the Advanced Commerce API.
 
@@ -22,7 +23,8 @@ let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?
 
 ## See Also
 
-- [Transaction.AdvancedCommerceInfo](transaction/advancedcommerceinfo-swift.struct.md)
+### Advanced Commerce transaction data
+- [Transaction.AdvancedCommerceInfo](./advancedcommerceinfo-swift.struct.md)
   Metadata for transactions that use the Advanced Commerce API.
 
 

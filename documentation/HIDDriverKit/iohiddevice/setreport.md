@@ -1,23 +1,24 @@
 # setReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a report to the HID device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t setReport(IOMemoryDescriptor *report, IOHIDReportType reportType, IOOptionBits options, uint32_t completionTimeout, OSAction *action);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -29,17 +30,18 @@ The default implementation of this method does nothing. Subclasses must override
 - `reportType`: The report type.
 - `options`: The lower 8 bits of the report ID. The other 24 bits are options to specify the request.
 - `completionTimeout`: The amount of time, in milliseconds, after which to abort the command if the entire command hasn’t finished.
-- `action`: The [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object to execute when the request completes. Specify `NULL` to execute the request synchronously, which blocks the current thread until the request completes.
+- `action`: The [`OSAction`](../../DriverKit/osaction.md) object to execute when the request completes. Specify `NULL` to execute the request synchronously, which blocks the current thread until the request completes.
 
 ## See Also
 
-- [handleReport](iohiddevice/handlereport.md)
+### Processing Device Reports
+- [handleReport](./handlereport.md)
   Handles an asynchronous report received from the HID device.
-- [getReport](iohiddevice/getreport.md)
+- [getReport](./getreport.md)
   Gets a report from the HID device.
-- [CompleteReport](iohiddevice/completereport.md)
+- [CompleteReport](./completereport.md)
   Completes all async requests made when getting or setting a report.
-- [Report Options](report-options-enum.md)
+- [Report Options](../report-options-enum.md)
   The enumerated report options.
 
 

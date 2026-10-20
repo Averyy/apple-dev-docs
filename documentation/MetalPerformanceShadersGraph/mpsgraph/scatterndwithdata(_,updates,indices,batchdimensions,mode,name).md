@@ -1,7 +1,8 @@
 # scatterNDWithData(_:updates:indices:batchDimensions:mode:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a ScatterND operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a ScatterND operation and returns the result tensor.
 
 ```swift
 func scatterNDWithData(_ dataTensor: MPSGraphTensor, updates updatesTensor: MPSGraphTensor, indices indicesTensor: MPSGraphTensor, batchDimensions: Int, mode: MPSGraphScatterMode, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) scatterNDWithDataTensor:(MPSGraphTensor *) dataTensor updatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor batchDimensions:(NSUInteger) batchDimensions mode:(MPSGraphScatterMode) mode name:(NSString *) name;
 ```
 
 #### Return Value

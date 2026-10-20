@@ -1,7 +1,8 @@
 # TKTokenDelegate
 
 **Framework**: CryptoTokenKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface that a token delegate implements to respond to session creation events.
 
@@ -20,22 +21,27 @@ The interface that a token delegate implements to respond to session creation ev
 protocol TKTokenDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol TKTokenDelegate <NSObject>
+```
+
 ## Topics
 
 ### Delegate Methods
-- [func createSession(TKToken) throws -> TKTokenSession](tktokendelegate/createsession(_:).md)
+- [func createSession(TKToken) throws -> TKTokenSession](./tktokendelegate/createsession%28_%29.md)
   Tells the delegate to create a session for the specified token.
-- [func token(TKToken, terminateSession: TKTokenSession)](tktokendelegate/token(_:terminatesession:).md)
+- [func token(TKToken, terminateSession: TKTokenSession)](./tktokendelegate/token%28_,terminatesession%29.md)
   Tells the delegate to terminate the specified token session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any TKTokenDelegate)?](tktoken/delegate.md)
+### Responding to Session Creation
+- [var delegate: (any TKTokenDelegate)?](./tktoken/delegate.md)
   The token delegate.
 
 

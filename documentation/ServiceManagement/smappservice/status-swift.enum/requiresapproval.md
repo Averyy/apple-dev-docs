@@ -1,7 +1,8 @@
 # SMAppService.Status.requiresApproval
 
 **Framework**: Service Management  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service has been successfully registered, but the user needs to take action in System Preferences.
 
@@ -15,17 +16,22 @@ The service has been successfully registered, but the user needs to take action 
 case requiresApproval
 ```
 
+```c
+SMAppServiceStatusRequiresApproval
+```
+
 #### Discussion
 
 The Service Management framework successfully registered this service, but the user needs to take action in System Settings before the service is eligible to run. The framework also returns this status if the user revokes consent for the service to run in System Settings.
 
 ## See Also
 
-- [SMAppService.Status.notRegistered](smappservice/status-swift.enum/notregistered.md)
+### Constants
+- [SMAppService.Status.notRegistered](./notregistered.md)
   The service hasn’t registered with the Service Management framework, or the service attempted to reregister after it was already registered.
-- [SMAppService.Status.enabled](smappservice/status-swift.enum/enabled.md)
+- [SMAppService.Status.enabled](./enabled.md)
   The service has been successfully registered and is eligible to run.
-- [SMAppService.Status.notFound](smappservice/status-swift.enum/notfound.md)
+- [SMAppService.Status.notFound](./notfound.md)
   An error occurred and the framework couldn’t find this service.
 
 

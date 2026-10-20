@@ -1,7 +1,8 @@
 # CMSCertificateChainMode.chainWithRootOrFail
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case chainWithRootOrFail
+```
+
+```c
+kCMSCertificateChainWithRootOrFail
 ```
 
 

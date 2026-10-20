@@ -1,7 +1,8 @@
 # decodeTimeStamp
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The decode timestamp of the sample at the current position of the cursor.
 
@@ -20,9 +21,14 @@ The decode timestamp of the sample at the current position of the cursor.
 var decodeTimeStamp: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime decodeTimeStamp;
+```
+
 ## See Also
 
-- [var presentationTimeStamp: CMTime](avsamplecursor/presentationtimestamp.md)
+### Getting timestamps
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The presentation timestamp of the sample at the current position of the cursor.
 
 

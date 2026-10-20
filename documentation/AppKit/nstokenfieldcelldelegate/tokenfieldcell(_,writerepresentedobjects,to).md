@@ -1,12 +1,13 @@
 # tokenFieldCell(_:writeRepresentedObjects:to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate the opportunity to write custom pasteboard types to the pasteboard for the represented objects in `objects`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Allows the delegate the opportunity to write custom pasteboard types to the past
 optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, writeRepresentedObjects objects: [Any], to pboard: NSPasteboard) -> Bool
 ```
 
+```objc
+- (BOOL) tokenFieldCell:(NSTokenFieldCell *) tokenFieldCell writeRepresentedObjects:(NSArray *) objects toPasteboard:(NSPasteboard *) pboard;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the delegate writes the represented objects to the pasteboard, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. If [`false`](https://developer.apple.com/documentation/swift/false), the token field writes the display strings to the [`NSStringPboardType`](nsstringpboardtype.md) pasteboard.
+[`true`](../../Swift/true.md) if the delegate writes the represented objects to the pasteboard, [`false`](../../Swift/false.md) otherwise. If [`false`](../../Swift/false.md), the token field writes the display strings to the [`NSStringPboardType`](../nsstringpboardtype.md) pasteboard.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ optional func tokenFieldCell(_ tokenFieldCell: NSTokenFieldCell, writeRepresente
 
 ## See Also
 
-- [func tokenFieldCell(NSTokenFieldCell, readFrom: NSPasteboard) -> [Any]?](nstokenfieldcelldelegate/tokenfieldcell(_:readfrom:).md)
+### Reading To and Writing From the Pasteboard
+- [func tokenFieldCell(NSTokenFieldCell, readFrom: NSPasteboard) -> [Any]?](./tokenfieldcell%28_,readfrom%29.md)
   Allows the delegate to return an array of objects representing the data read from `pboard`.
 
 

@@ -1,7 +1,8 @@
 # isMagnetometerAvailable
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a magnetometer is available on the device.
 
@@ -17,15 +18,21 @@ A Boolean value that indicates whether a magnetometer is available on the device
 var isMagnetometerAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isMagnetometerAvailable) BOOL magnetometerAvailable;
+```
+
 ## See Also
 
-- [var isMagnetometerActive: Bool](cmmotionmanager/ismagnetometeractive.md)
+### Related Documentation
+- [var isMagnetometerActive: Bool](./ismagnetometeractive.md)
   A Boolean value that determines whether magnetometer updates are currently happening.
-- [var isDeviceMotionAvailable: Bool](cmmotionmanager/isdevicemotionavailable.md)
+### Determining the Availability of Services
+- [var isDeviceMotionAvailable: Bool](./isdevicemotionavailable.md)
   A Boolean value that indicates whether the device-motion service is available on the device.
-- [var isAccelerometerAvailable: Bool](cmmotionmanager/isaccelerometeravailable.md)
+- [var isAccelerometerAvailable: Bool](./isaccelerometeravailable.md)
   A Boolean value that indicates whether an accelerometer is available on the device.
-- [var isGyroAvailable: Bool](cmmotionmanager/isgyroavailable.md)
+- [var isGyroAvailable: Bool](./isgyroavailable.md)
   A Boolean value that indicates whether a gyroscope is available on the device.
 
 

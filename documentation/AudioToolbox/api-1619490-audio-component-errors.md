@@ -1,27 +1,29 @@
 # Audio Component Errors
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kAudioComponentErr_DuplicateDescription: OSStatus](kaudiocomponenterr_duplicatedescription.md)
-- [var kAudioComponentErr_InitializationTimedOut: OSStatus](kaudiocomponenterr_initializationtimedout.md)
-- [var kAudioComponentErr_InvalidFormat: OSStatus](kaudiocomponenterr_invalidformat.md)
-- [var kAudioComponentErr_NotPermitted: OSStatus](kaudiocomponenterr_notpermitted.md)
-- [var kAudioComponentErr_TooManyInstances: OSStatus](kaudiocomponenterr_toomanyinstances.md)
-- [var kAudioComponentErr_UnsupportedType: OSStatus](kaudiocomponenterr_unsupportedtype.md)
+- [var kAudioComponentErr_DuplicateDescription: OSStatus](./kaudiocomponenterr_duplicatedescription.md)
+- [var kAudioComponentErr_InitializationTimedOut: OSStatus](./kaudiocomponenterr_initializationtimedout.md)
+- [var kAudioComponentErr_InvalidFormat: OSStatus](./kaudiocomponenterr_invalidformat.md)
+- [var kAudioComponentErr_NotPermitted: OSStatus](./kaudiocomponenterr_notpermitted.md)
+- [var kAudioComponentErr_TooManyInstances: OSStatus](./kaudiocomponenterr_toomanyinstances.md)
+- [var kAudioComponentErr_UnsupportedType: OSStatus](./kaudiocomponenterr_unsupportedtype.md)
 
 ## See Also
 
-- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](audiocomponentinstancenew(_:_:).md)
+### Creating an Audio Component Instance
+- [func AudioComponentInstanceNew(AudioComponent, UnsafeMutablePointer<AudioComponentInstance?>) -> OSStatus](./audiocomponentinstancenew%28_,_%29.md)
   Creates a new instance of an audio component.
-- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](audiocomponentinstantiate(_:_:_:).md)
-- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](audiocomponentinstancedispose(_:).md)
+- [func AudioComponentInstantiate(AudioComponent, AudioComponentInstantiationOptions, (AudioComponentInstance?, OSStatus) -> Void)](./audiocomponentinstantiate%28_,_,_%29.md)
+- [func AudioComponentInstanceDispose(AudioComponentInstance) -> OSStatus](./audiocomponentinstancedispose%28_%29.md)
   Disposes of an audio component instance.
-- [typealias AudioComponent](audiocomponent.md)
+- [typealias AudioComponent](./audiocomponent.md)
   An audio component.
-- [struct AudioComponentInstantiationOptions](audiocomponentinstantiationoptions.md)
+- [struct AudioComponentInstantiationOptions](./audiocomponentinstantiationoptions.md)
 
 
 ---

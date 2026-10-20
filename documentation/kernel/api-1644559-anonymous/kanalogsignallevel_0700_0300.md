@@ -1,14 +1,15 @@
 # kAnalogSignalLevel_0700_0300
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kAnalogSignalLevel_0700_0300 = 0
 ```
 

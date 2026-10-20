@@ -1,7 +1,8 @@
 # init(generationMarker:offset:)
 
 **Framework**: ContactProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sync anchor with the given generation marker and offset.
 

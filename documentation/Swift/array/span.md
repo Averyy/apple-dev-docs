@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the elements of this array.
 
@@ -28,7 +29,7 @@ A `Span` over the elements of this array.
 
 > **Note**: On Apple platforms, this property copies bridged `NSArray` instances into contiguous storage on first access and caches the result. Subsequent calls can reuse the cached copy.
 
-> **Note**: O(1) for native arrays, amortized O(1) for bridged arrays.
+> **Complexity**: O(1) for native arrays, amortized O(1) for bridged arrays.
 
 
 ---

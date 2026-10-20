@@ -1,7 +1,8 @@
 # totalAdjustedPrice
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A total adjusted price associated with the line item, typically used to indicate a price change.
 
@@ -18,7 +19,7 @@ var totalAdjustedPrice: Decimal?
 
 #### Discussion
 
-When the adjusted price is not `nil`, [`totalPrice`](customerengagement/shoppingcart/item/totalprice.md) has an overstrike appearance.
+When the adjusted price is not `nil`, [`totalPrice`](./totalprice.md) has an overstrike appearance.
 
 
 ---

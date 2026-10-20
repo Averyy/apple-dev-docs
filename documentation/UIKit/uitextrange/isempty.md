@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the range of text represented by the receiver is zero-length.
 
@@ -9,7 +10,7 @@ A Boolean value that indicates whether the range of text represented by the rece
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the range of text represented by the rece
 var isEmpty: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEmpty) BOOL empty;
+```
+
 ## See Also
 
-- [var start: UITextPosition](uitextrange/start.md)
+### Defining Ranges of Text
+- [var start: UITextPosition](./start.md)
   The start of a range of text.
-- [var end: UITextPosition](uitextrange/end.md)
+- [var end: UITextPosition](./end.md)
   The end of the range of text.
 
 

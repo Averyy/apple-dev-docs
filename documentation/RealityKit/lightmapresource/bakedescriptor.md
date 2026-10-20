@@ -1,7 +1,8 @@
 # LightmapResource.BakeDescriptor
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies parameters necessary to fetch a particular type of light map data for a given instance of a given mesh part.
 
@@ -22,16 +23,16 @@ enum BakeDescriptor
 ## Topics
 
 ### Specifying the bake type
-- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](lightmapresource/bakedescriptor/finalshadedcolor(_:).md)
-- [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseirradiance(_:).md)
-- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](lightmapresource/bakedescriptor/ambientocclusion(_:).md)
-- [var bakeType: LightmapResource.BakeType](lightmapresource/bakedescriptor/baketype.md)
+- [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](./bakedescriptor/finalshadedcolor%28_%29.md)
+- [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](./bakedescriptor/indirectdiffuseirradiance%28_%29.md)
+- [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](./bakedescriptor/ambientocclusion%28_%29.md)
+- [var bakeType: LightmapResource.BakeType](./bakedescriptor/baketype.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

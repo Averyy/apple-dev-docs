@@ -1,7 +1,8 @@
 # init(serviceIdentifier:credential:title:sessionID:event:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.2+
@@ -13,6 +14,10 @@
 
 ```swift
 init(serviceIdentifier: ASCredentialServiceIdentifier, credential: ASPasswordCredential, title: String?, sessionID: String, event: ASSavePasswordRequest.Event)
+```
+
+```objc
+- (instancetype) initWithServiceIdentifier:(ASCredentialServiceIdentifier *) serviceIdentifier credential:(ASPasswordCredential *) credential title:(NSString *) title sessionID:(NSString *) sessionID event:(ASSavePasswordRequestEvent) event;
 ```
 
 

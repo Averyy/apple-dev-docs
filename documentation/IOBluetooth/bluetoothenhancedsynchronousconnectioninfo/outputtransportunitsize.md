@@ -1,15 +1,20 @@
 # outputTransportUnitSize
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var outputTransportUnitSize: BluetoothHCIOutputTransportUnitSize
+```
+
+```c
+BluetoothHCIOutputTransportUnitSize outputTransportUnitSize;
 ```
 
 

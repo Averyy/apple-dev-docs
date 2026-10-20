@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes an unneeded placeholder cell from the table view.
@@ -18,9 +19,13 @@ Removes an unneeded placeholder cell from the table view.
 func deletePlaceholder() -> Bool
 ```
 
+```objc
+- (BOOL) deletePlaceholder;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the placeholder cell was removed, or [`false`](https://developer.apple.com/documentation/swift/false) if the cell was no longer in the table view.
+[`true`](../../Swift/true.md) if the placeholder cell was removed, or [`false`](../../Swift/false.md) if the cell was no longer in the table view.
 
 #### Discussion
 

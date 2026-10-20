@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a sharing-picker mode.
 

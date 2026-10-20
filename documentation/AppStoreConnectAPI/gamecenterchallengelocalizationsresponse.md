@@ -1,7 +1,8 @@
 # GameCenterChallengeLocalizationsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of localizations for a Game Center challenge.
 
@@ -10,29 +11,30 @@ A response containing a list of localizations for a Game Center challenge.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeLocalizationsResponse
 ```
 
 ## Properties
 
 - `data` ([GameCenterChallengeLocalization]) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `GameCenterChallengeImage`, `GameCenterChallengeVersion`
 - `links` (PagedDocumentLinks) *(required)*
 - `meta` (PagingInformation)
 
 ## See Also
 
-- [object GameCenterChallengeLocalization](gamecenterchallengelocalization.md)
+### Objects
+- [object GameCenterChallengeLocalization](./gamecenterchallengelocalization.md)
   The data structure that represent a challenge localization.
-- [object GameCenterChallengeLocalizationCreateRequest](gamecenterchallengelocalizationcreaterequest.md)
+- [object GameCenterChallengeLocalizationCreateRequest](./gamecenterchallengelocalizationcreaterequest.md)
   The request body for creating a localization for a Game Center challenge.
-- [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
-- [object GameCenterChallengeLocalizationResponse](gamecenterchallengelocalizationresponse.md)
+- [object GameCenterChallengeLocalizationImageLinkageResponse](./gamecenterchallengelocalizationimagelinkageresponse.md)
+- [object GameCenterChallengeLocalizationResponse](./gamecenterchallengelocalizationresponse.md)
   A response containing a single localization for a Game Center challenge.
-- [object GameCenterChallengeLocalizationUpdateRequest](gamecenterchallengelocalizationupdaterequest.md)
+- [object GameCenterChallengeLocalizationUpdateRequest](./gamecenterchallengelocalizationupdaterequest.md)
   The request body you use to update a challenge.
-- [object GameCenterChallengeVersionLocalizationsLinkagesResponse](gamecenterchallengeversionlocalizationslinkagesresponse.md)
+- [object GameCenterChallengeVersionLocalizationsLinkagesResponse](./gamecenterchallengeversionlocalizationslinkagesresponse.md)
 
 
 ---

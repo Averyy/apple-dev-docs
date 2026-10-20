@@ -1,7 +1,8 @@
 # GetClockAlgorithm
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the clock algorithm of the clock device.
 
@@ -10,7 +11,7 @@ Gets the clock algorithm of the clock device.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioClockAlgorithm GetClockAlgorithm();
 ```
 
@@ -24,13 +25,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetClockAlgorithm](iouseraudioclockdevice/setclockalgorithm.md)
+### Working with Clock Device Behavior
+- [SetClockAlgorithm](./setclockalgorithm.md)
   Sets the clock algorithm of the clock device.
-- [IOUserAudioClockAlgorithm](audiodriverkit/iouseraudioclockalgorithm.md)
+- [IOUserAudioClockAlgorithm](../audiodriverkit-page/iouseraudioclockalgorithm.md)
   Values that describe clock-smoothing algorithms.
-- [SetClockIsStable](iouseraudioclockdevice/setclockisstable.md)
+- [SetClockIsStable](./setclockisstable.md)
   Sets a Boolean value to represent the clock’s stability.
-- [GetClockIsStable](iouseraudioclockdevice/getclockisstable.md)
+- [GetClockIsStable](./getclockisstable.md)
   Gets a Boolean value that represents the clock’s stability.
 
 

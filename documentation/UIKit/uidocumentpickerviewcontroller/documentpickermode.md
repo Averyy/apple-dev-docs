@@ -1,15 +1,18 @@
 # documentPickerMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of file transfer operation that the document picker uses.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 14.0
+- iPadOS 8.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIDocumentPickerMode`](../uidocumentpickermode.md).
 
 ## Declaration
 
@@ -17,9 +20,13 @@ The type of file transfer operation that the document picker uses.
 var documentPickerMode: UIDocumentPickerMode { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UIDocumentPickerMode documentPickerMode;
+```
+
 #### Discussion
 
-For a list of available modes, see [`UIDocumentPickerMode`](uidocumentpickermode.md).
+For a list of available modes, see [`UIDocumentPickerMode`](../uidocumentpickermode.md).
 
 
 ---

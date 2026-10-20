@@ -1,7 +1,8 @@
 # bias
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value added to a convolved pixel before it is converted back to its intended storage format.
 
@@ -17,6 +18,10 @@ The value added to a convolved pixel before it is converted back to its intended
 
 ```swift
 var bias: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float bias;
 ```
 
 #### Discussion

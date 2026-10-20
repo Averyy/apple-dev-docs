@@ -1,20 +1,25 @@
 # kAudioQueueProperty_ChannelAssignments
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var kAudioQueueProperty_ChannelAssignments: AudioQueuePropertyID { get }
+```
+
+```c
+kAudioQueueProperty_ChannelAssignments
 ```
 
 

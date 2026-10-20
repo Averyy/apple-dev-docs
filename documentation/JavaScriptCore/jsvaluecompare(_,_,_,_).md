@@ -1,7 +1,8 @@
 # JSValueCompare(_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueCompare(_ ctx: JSContextRef, _ left: JSValueRef, _ right: JSValueRef, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition
+```
+
+```c
+JSRelationCondition JSValueCompare(JSContextRef ctx, JSValueRef left, JSValueRef right, JSValueRef*exception);
 ```
 
 #### Return Value

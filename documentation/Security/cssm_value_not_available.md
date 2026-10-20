@@ -1,7 +1,8 @@
 # CSSM_VALUE_NOT_AVAILABLE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_VALUE_NOT_AVAILABLE: Int { get }
+```
+
+```c
+CSSM_VALUE_NOT_AVAILABLE
 ```
 
 

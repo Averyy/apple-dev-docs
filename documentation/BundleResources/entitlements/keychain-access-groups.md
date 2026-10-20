@@ -1,7 +1,8 @@
 # Keychain Access Groups Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The identifiers for the keychain groups that the app may share items with.
 
@@ -13,9 +14,10 @@ The identifiers for the keychain groups that the app may share items with.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `keychain-access-groups` (Keychain Access Groups)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -23,7 +25,8 @@ To add this entitlement to your app, enable the Keychain Sharing capability in X
 
 ## See Also
 
-- [App Groups Entitlement](entitlements/com.apple.security.application-groups.md)
+### Application groups
+- [App Groups Entitlement](./com.apple.security.application-groups.md)
   A list of identifiers specifying the groups your app belongs to.
 
 

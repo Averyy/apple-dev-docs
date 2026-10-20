@@ -1,7 +1,8 @@
 # metadataObject
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The media contains metadata objects.
 
@@ -18,28 +19,33 @@ The media contains metadata objects.
 static let metadataObject: AVMediaType
 ```
 
+```c
+extern AVMediaType const AVMediaTypeMetadataObject;
+```
+
 ## See Also
 
-- [static let audio: AVMediaType](avmediatype/audio.md)
+### Media types
+- [static let audio: AVMediaType](./audio.md)
   The media contains audio media.
-- [static let auxiliaryPicture: AVMediaType](avmediatype/auxiliarypicture.md)
-- [static let closedCaption: AVMediaType](avmediatype/closedcaption.md)
+- [static let auxiliaryPicture: AVMediaType](./auxiliarypicture.md)
+- [static let closedCaption: AVMediaType](./closedcaption.md)
   The media contains closed-caption content.
-- [static let depthData: AVMediaType](avmediatype/depthdata.md)
+- [static let depthData: AVMediaType](./depthdata.md)
   The media contains depth data.
-- [static let haptic: AVMediaType](avmediatype/haptic.md)
+- [static let haptic: AVMediaType](./haptic.md)
   The media contains haptic content.
-- [static let metadata: AVMediaType](avmediatype/metadata.md)
+- [static let metadata: AVMediaType](./metadata.md)
   The media contains metadata.
-- [static let muxed: AVMediaType](avmediatype/muxed.md)
+- [static let muxed: AVMediaType](./muxed.md)
   The media contains muxed media.
-- [static let subtitle: AVMediaType](avmediatype/subtitle.md)
+- [static let subtitle: AVMediaType](./subtitle.md)
   The media contains subtitles.
-- [static let text: AVMediaType](avmediatype/text.md)
+- [static let text: AVMediaType](./text.md)
   The media contains text.
-- [static let timecode: AVMediaType](avmediatype/timecode.md)
+- [static let timecode: AVMediaType](./timecode.md)
   The media contains a time code.
-- [static let video: AVMediaType](avmediatype/video.md)
+- [static let video: AVMediaType](./video.md)
   The media contains video.
 
 

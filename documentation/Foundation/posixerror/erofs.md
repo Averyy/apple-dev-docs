@@ -1,7 +1,8 @@
 # EROFS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Read-only file system.
 

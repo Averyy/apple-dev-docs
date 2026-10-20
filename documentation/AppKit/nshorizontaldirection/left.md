@@ -1,7 +1,8 @@
 # NSHorizontalDirection.left
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The left direction.
 

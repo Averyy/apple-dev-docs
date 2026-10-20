@@ -1,7 +1,8 @@
 # MPSMatrixMultiplication
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A matrix multiplication kernel.
 
@@ -19,57 +20,62 @@ A matrix multiplication kernel.
 class MPSMatrixMultiplication
 ```
 
+```objc
+@interface MPSMatrixMultiplication : MPSKernel
+```
+
 #### Overview
 
-An [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) object computes the following operation:
+An [`MPSMatrixMultiplication`](./mpsmatrixmultiplication.md) object computes the following operation:
 
 *C = alpha * op(A) * op(B) + beta * C*
 
-Where *A*, *B*_,_ and *C* are matrices represented by [`MPSMatrix`](mpsmatrix.md) objects, and *alpha* and *beta* are scalar values of the same data type as the values of *C*. *A* and *B* may each have an optional transposition operation applied.
+Where *A*, *B*_,_ and *C* are matrices represented by [`MPSMatrix`](./mpsmatrix.md) objects, and *alpha* and *beta* are scalar values of the same data type as the values of *C*. *A* and *B* may each have an optional transposition operation applied.
 
 Matrices *A*, *B*, and *C* are also referred to as the left input matrix, the right input matrix, and the result matrix respectively.
 
 ## Topics
 
 ### Methods
-- [init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRows: Int, resultColumns: Int, interiorColumns: Int, alpha: Double, beta: Double)](mpsmatrixmultiplication/init(device:transposeleft:transposeright:resultrows:resultcolumns:interiorcolumns:alpha:beta:).md)
+- [init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRows: Int, resultColumns: Int, interiorColumns: Int, alpha: Double, beta: Double)](./mpsmatrixmultiplication/init%28device,transposeleft,transposeright,resultrows,resultcolumns,interiorcolumns,alpha,beta%29.md)
   Initializes a matrix multiplication kernel.
-- [func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMatrix: MPSMatrix, resultMatrix: MPSMatrix)](mpsmatrixmultiplication/encode(commandbuffer:leftmatrix:rightmatrix:resultmatrix:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMatrix: MPSMatrix, resultMatrix: MPSMatrix)](./mpsmatrixmultiplication/encode%28commandbuffer,leftmatrix,rightmatrix,resultmatrix%29.md)
   Encodes a matrix multiplication kernel to a command buffer.
 ### Properties
-- [var leftMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/leftmatrixorigin.md)
+- [var leftMatrixOrigin: MTLOrigin](./mpsmatrixmultiplication/leftmatrixorigin.md)
   The origin of the left input matrix.
-- [var rightMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/rightmatrixorigin.md)
+- [var rightMatrixOrigin: MTLOrigin](./mpsmatrixmultiplication/rightmatrixorigin.md)
   The origin of the right input matrix.
-- [var resultMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/resultmatrixorigin.md)
+- [var resultMatrixOrigin: MTLOrigin](./mpsmatrixmultiplication/resultmatrixorigin.md)
   The origin of the result matrix.
-- [var batchSize: Int](mpsmatrixmultiplication/batchsize.md)
-- [var batchStart: Int](mpsmatrixmultiplication/batchstart.md)
+- [var batchSize: Int](./mpsmatrixmultiplication/batchsize.md)
+- [var batchStart: Int](./mpsmatrixmultiplication/batchstart.md)
 ### Initializers
-- [init(device: any MTLDevice, resultRows: Int, resultColumns: Int, interiorColumns: Int)](mpsmatrixmultiplication/init(device:resultrows:resultcolumns:interiorcolumns:).md)
+- [init(device: any MTLDevice, resultRows: Int, resultColumns: Int, interiorColumns: Int)](./mpsmatrixmultiplication/init%28device,resultrows,resultcolumns,interiorcolumns%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixSum](mpsmatrixsum.md)
+### Matrix Arithmetic Operations
+- [class MPSMatrixSum](./mpsmatrixsum.md)
   A kernel for performing a pointwise summation of a matrix.
-- [class MPSMatrixVectorMultiplication](mpsmatrixvectormultiplication.md)
+- [class MPSMatrixVectorMultiplication](./mpsmatrixvectormultiplication.md)
   A matrix-vector multiplication kernel
-- [class MPSMatrixFindTopK](mpsmatrixfindtopk.md)
+- [class MPSMatrixFindTopK](./mpsmatrixfindtopk.md)
   A kernel for computing the top-K values and their corresponding indices in a matrix.
 
 

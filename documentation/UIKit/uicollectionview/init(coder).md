@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection view object from data in a given unarchiver.
 
@@ -9,7 +10,7 @@ Creates a collection view object from data in a given unarchiver.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ Creates a collection view object from data in a given unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(frame: CGRect, collectionViewLayout: UICollectionViewLayout)](uicollectionview/init(frame:collectionviewlayout:).md)
+### Creating a collection view
+- [init(frame: CGRect, collectionViewLayout: UICollectionViewLayout)](./init%28frame,collectionviewlayout%29.md)
   Creates a collection view object with the specified frame and layout.
 
 

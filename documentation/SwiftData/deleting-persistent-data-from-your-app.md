@@ -1,6 +1,8 @@
 # Deleting persistent data from your app
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: Sample Code  
+**Download**: [SwiftDataAnimals.zip](https://docs-assets.developer.apple.com/published/f84bac78ac34/SwiftDataAnimals.zip)
 
 Explore different ways to use SwiftData to delete persistent data.
 
@@ -20,11 +22,11 @@ Data-driven apps typically provide a way for a person to delete data, and this s
 - Deleting with confirmation
 - Deleting all
 
-> **Note**: If you want to learn how to add and edit data using SwiftData, see [`Adding and editing persistent data in your app`](adding-and-editing-persistent-data-in-your-app.md).
+> **Note**: If you want to learn how to add and edit data using SwiftData, see [Adding and editing persistent data in your app](./adding-and-editing-persistent-data-in-your-app.md).
 
-#### Swipe to Delete
+#### Swipe to delete
 
-The sample app shows a list of animals. A person using the app can delete an animal using a swipe gesture. For example, the following code adds the swipe-to-delete option to the `AnimalList` view by applying the [`onDelete(perform:)`](https://developer.apple.com/documentation/swiftui/dynamicviewcontent/ondelete(perform:)) modifier to [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach):
+The sample app shows a list of animals. A person using the app can delete an animal using a swipe gesture. For example, the following code adds the swipe-to-delete option to the `AnimalList` view by applying the [`onDelete(perform:)`](../SwiftUI/dynamicviewcontent/ondelete%28perform%29.md) modifier to [`ForEach`](../SwiftUI/foreach.md):
 
 ```swift
 private struct AnimalList: View {
@@ -44,7 +46,7 @@ private struct AnimalList: View {
 }
 ```
 
-The [`onDelete(perform:)`](https://developer.apple.com/documentation/swiftui/dynamicviewcontent/ondelete(perform:)) modifier in the previous code calls the custom method `removeAnimals` to remove one or more animals from the list. This method receives an [`IndexSet`](https://developer.apple.com/documentation/foundation/indexset) which identifies the animals to delete. The method then iterates through the index set, deleting each animal using the [`ModelContext`](modelcontext.md) method [`delete(_:)`](modelcontext/delete(_:).md).
+The [`onDelete(perform:)`](../SwiftUI/dynamicviewcontent/ondelete%28perform%29.md) modifier in the previous code calls the custom method `removeAnimals` to remove one or more animals from the list. This method receives an [`IndexSet`](../Foundation/indexset.md) which identifies the animals to delete. The method then iterates through the index set, deleting each animal using the [`ModelContext`](./modelcontext.md) method [`delete(_:)`](./modelcontext/delete%28_%29.md).
 
 ```swift
 private func removeAnimals(at indexSet: IndexSet) {
@@ -54,7 +56,7 @@ private func removeAnimals(at indexSet: IndexSet) {
 }
 ```
 
-However, it’s possible for a person using this sample to delete the selected animal, so the `removeAnimals` method needs to unselect the animal before deleting it. The updated version of `removeAnimals` uses the [`persistentModelID`](persistentmodel/persistentmodelid.md) to determine whether the animal to delete is also the selected animal. If it is, the method sets the selected animal to `nil`.
+However, it’s possible for a person using this sample to delete the selected animal, so the `removeAnimals` method needs to unselect the animal before deleting it. The updated version of `removeAnimals` uses the [`persistentModelID`](./persistentmodel/persistentmodelid.md) to determine whether the animal to delete is also the selected animal. If it is, the method sets the selected animal to `nil`.
 
 ```swift
 private func removeAnimals(at indexSet: IndexSet) {
@@ -68,7 +70,7 @@ private func removeAnimals(at indexSet: IndexSet) {
 }
 ```
 
-The sample uses the SwiftData autosave feature, which is enabled by default when creating a [`ModelContainer`](modelcontainer.md) using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-18hhy) modifier. If this feature is disabled, the `removeAnimals` method needs to explicitly save the change by calling the [`ModelContext`](modelcontext.md) method [`save()`](modelcontext/save().md); for example:
+The sample uses the SwiftData autosave feature, which is enabled by default when creating a [`ModelContainer`](./modelcontainer.md) using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-18hhy.md) modifier. If this feature is disabled, the `removeAnimals` method needs to explicitly save the change by calling the [`ModelContext`](./modelcontext.md) method [`save()`](./modelcontext/save%28%29.md); for example:
 
 ```swift
 private func removeAnimals(at indexSet: IndexSet) {
@@ -87,9 +89,9 @@ private func removeAnimals(at indexSet: IndexSet) {
 }
 ```
 
-> **Note**: To disable the autosave feature, set the `isAutoSaveEnabled` parameter to `false` when creating the model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](https://developer.apple.com/documentation/swiftui/view/modelcontainer(for:inmemory:isautosaveenabled:isundoenabled:onsetup:)-18hhy) modifier. You can also disable autosave by setting set the model context property [`autosaveEnabled`](modelcontext/autosaveenabled.md) to `false`.
+> **Note**: To disable the autosave feature, set the `isAutoSaveEnabled` parameter to `false` when creating the model container using the [`modelContainer(for:inMemory:isAutosaveEnabled:isUndoEnabled:onSetup:)`](../SwiftUI/view/modelcontainer%28for,inmemory,isautosaveenabled,isundoenabled,onsetup%29-18hhy.md) modifier. You can also disable autosave by setting set the model context property [`autosaveEnabled`](./modelcontext/autosaveenabled.md) to `false`.
 
-#### Delete with Confirmation
+#### Delete with confirmation
 
 The sample app also lets a person delete the selected animal by clicking the Trash button that `AnimalDetailView` displays in its toolbar.
 
@@ -127,7 +129,7 @@ The action for the button set the state variable `isDeleting` to `true`, which d
 }
 ```
 
-After confirming the delete request, the action for the confirmation button calls the custom `delete` method. This method sets the selected animal to `nil`, then deletes the animal from the model context by calling the [`delete(_:)`](modelcontext/delete(_:).md) method.
+After confirming the delete request, the action for the confirmation button calls the custom `delete` method. This method sets the selected animal to `nil`, then deletes the animal from the model context by calling the [`delete(_:)`](./modelcontext/delete%28_%29.md) method.
 
 ```swift
 private func delete(_ animal: Animal) {
@@ -136,7 +138,7 @@ private func delete(_ animal: Animal) {
 }
 ```
 
-If the SwiftData autosave feature was disabled, the `delete` method would need to explicitly save the change by calling the `ModelContext` method [`save()`](modelcontext/save().md); for example:
+If the SwiftData autosave feature was disabled, the `delete` method would need to explicitly save the change by calling the `ModelContext` method [`save()`](./modelcontext/save%28%29.md); for example:
 
 ```swift
 private func delete(_ animal: Animal) {
@@ -150,11 +152,11 @@ private func delete(_ animal: Animal) {
 }
 ```
 
-#### Delete All
+#### Delete all
 
 Deleting all items of a particular model type is less common in data driven apps, but there may be times when having this option is helpful. For example, the sample apps lets a person reload sample data that comes with the app. Reloading the sample data deletes all animal categories and animals from persistent storage.
 
-To delete all items of a particular model type, use the [`ModelContext`](modelcontext.md) method [`delete(model:where:includeSubclasses:)`](modelcontext/delete(model:where:includesubclasses:).md). For example, the following code deletes all animal categories before reloading the sample data:
+To delete all items of a particular model type, use the [`ModelContext`](./modelcontext.md) method [`delete(model:where:includeSubclasses:)`](./modelcontext/delete%28model,where,includesubclasses%29.md). For example, the following code deletes all animal categories before reloading the sample data:
 
 ```swift
 static func reloadSampleData(modelContext: ModelContext) {
@@ -167,7 +169,7 @@ static func reloadSampleData(modelContext: ModelContext) {
 }
 ```
 
-When deleting all animal categories, SwiftData also deletes all animals within those categories. SwiftData knows to perform this cascading delete because the relationship between `AnimalCategory` and `Animal` uses the [`Schema.Relationship.DeleteRule.cascade`](schema/relationship/deleterule-swift.enum/cascade.md) delete rule. (For a complete list of delete rules, see [`Schema.Relationship.DeleteRule`](schema/relationship/deleterule-swift.enum.md).)
+When deleting all animal categories, SwiftData also deletes all animals within those categories. SwiftData knows to perform this cascading delete because the relationship between `AnimalCategory` and `Animal` uses the [`Schema.Relationship.DeleteRule.cascade`](./schema/relationship/deleterule-swift.enum/cascade.md) delete rule. (For a complete list of delete rules, see [`Schema.Relationship.DeleteRule`](./schema/relationship/deleterule-swift.enum.md).)
 
 ```swift
 import SwiftData
@@ -186,23 +188,24 @@ final class AnimalCategory {
 }
 ```
 
-To delete all persistent data from your app and not just data of a certain model type, use the [`ModelContainer`](modelcontainer.md) method [`deleteAllData()`](modelcontainer/deletealldata().md).
+To delete all persistent data from your app and not just data of a certain model type, use the [`ModelContainer`](./modelcontainer.md) method [`deleteAllData()`](./modelcontainer/deletealldata%28%29.md).
 
 ## See Also
 
-- [class ModelContainer](modelcontainer.md)
+### Model life cycle
+- [class ModelContainer](./modelcontainer.md)
   An object that manages an app’s schema and model storage configuration.
-- [class ModelContext](modelcontext.md)
+- [class ModelContext](./modelcontext.md)
   An object that enables you to fetch, insert, and delete models, and save any changes to disk.
-- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
+- [Fetching and filtering time-based model changes](./fetching-and-filtering-time-based-model-changes.md)
   Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
-- [struct HistoryDescriptor](historydescriptor.md)
+- [struct HistoryDescriptor](./historydescriptor.md)
   A type that describes the criteria, and, optionally, sort order, to use when fetching history data
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+- [Reverting data changes using the undo manager](./reverting-data-changes-using-the-undo-manager.md)
   Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+- [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md)
   Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
-- [Concurrency support](concurrencysupport.md)
+- [Concurrency support](./concurrencysupport.md)
   Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 

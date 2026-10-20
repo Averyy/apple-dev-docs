@@ -1,7 +1,8 @@
 # init(interleavedBuffer:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 4-channel, 32-bit-per-channel multiple-plane buffer from a 4-channel, 32-bit-per-channel interleaved buffer.
 
@@ -11,7 +12,7 @@ Creates a 4-channel, 32-bit-per-channel multiple-plane buffer from a 4-channel, 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,11 +21,13 @@ Creates a 4-channel, 32-bit-per-channel multiple-plane buffer from a 4-channel, 
 init(interleavedBuffer: vImage.PixelBuffer<vImage.InterleavedFx4>)
 ```
 
+Available when `Format` is `vImage.PlanarFx4`.
+
 #### Discussion
 
 Use this function to deinterleave a pixel buffer and store the result as homogeneous planes that are represented by multiple underlying vImage buffers.
 
-For example, the following code creates a new [`vImage.PlanarFx4`](vimage/planarfx4.md) pixel buffer from a [`vImage.InterleavedFx4`](vimage/interleavedfx4.md) pixel buffer:
+For example, the following code creates a new [`vImage.PlanarFx4`](../planarfx4.md) pixel buffer from a [`vImage.InterleavedFx4`](../interleavedfx4.md) pixel buffer:
 
 ```swift
 let src = vImage.PixelBuffer<vImage.InterleavedFx4>(
@@ -47,11 +50,12 @@ dest.withUnsafePixelBuffers { pixelBuffers in
 
 ## See Also
 
-- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x3>)](vimage/pixelbuffer/init(interleavedbuffer:)-9xct6.md)
+### Creating a multiple-plane buffer from an interleaved buffer
+- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x3>)](./init%28interleavedbuffer%29-9xct6.md)
   Creates a 3-channel, 8-bit-per-channel multiple-plane buffer from a 3-channel, 8-bit-per-channel interleaved buffer.
-- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/init(interleavedbuffer:)-8f6xn.md)
+- [init(interleavedBuffer: vImage.PixelBuffer<vImage.Interleaved8x4>)](./init%28interleavedbuffer%29-8f6xn.md)
   Creates a 4-channel, 8-bit-per-channel mutiple-plane buffer from a 4-channel, 8-bit-per-channel interleaved buffer.
-- [init(interleavedBuffer: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/init(interleavedbuffer:)-77n3i.md)
+- [init(interleavedBuffer: vImage.PixelBuffer<vImage.InterleavedFx3>)](./init%28interleavedbuffer%29-77n3i.md)
   Creates a 3-channel, 32-bit-per-channel multiple-plane buffer from a 3-channel, 32-bit-per-channel interleaved buffer.
 
 

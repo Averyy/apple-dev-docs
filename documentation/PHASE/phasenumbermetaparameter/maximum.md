@@ -1,7 +1,8 @@
 # maximum
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest possible number for the value.
 
@@ -19,13 +20,18 @@ The highest possible number for the value.
 var maximum: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double maximum;
+```
+
 #### Discussion
 
-The framework sets the value to the metaparameter definition’s [`maximum`](phasenumbermetaparameterdefinition/maximum.md) property.
+The framework sets the value to the metaparameter definition’s [`maximum`](../phasenumbermetaparameterdefinition/maximum.md) property.
 
 ## See Also
 
-- [var minimum: Double](phasenumbermetaparameter/minimum.md)
+### Inspecting Extremes
+- [var minimum: Double](./minimum.md)
   The lowest possible number for the value.
 
 

@@ -1,7 +1,8 @@
 # accessories
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of accessories in the room.
 
@@ -19,9 +20,13 @@ The collection of accessories in the room.
 var accessories: [HMAccessory] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMAccessory *> * accessories;
+```
+
 #### Discussion
 
-You assign accessories to a room using the [`assignAccessory(_:to:completionHandler:)`](hmhome/assignaccessory(_:to:completionhandler:).md) method of [`HMHome`](hmhome.md).
+You assign accessories to a room using the [`assignAccessory(_:to:completionHandler:)`](../hmhome/assignaccessory%28_,to,completionhandler%29.md) method of [`HMHome`](../hmhome.md).
 
 
 ---

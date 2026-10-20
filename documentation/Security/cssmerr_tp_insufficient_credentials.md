@@ -1,7 +1,8 @@
 # CSSMERR_TP_INSUFFICIENT_CREDENTIALS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_TP_INSUFFICIENT_CREDENTIALS: Int { get }
+```
+
+```c
+CSSMERR_TP_INSUFFICIENT_CREDENTIALS
 ```
 
 

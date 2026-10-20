@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new compiler from a compiler descriptor.
@@ -20,13 +21,17 @@ Creates a new compiler from a compiler descriptor.
 func makeCompiler(descriptor: MTL4CompilerDescriptor) throws -> any MTL4Compiler
 ```
 
+```objc
+- (id<MTL4Compiler>) newCompilerWithDescriptor:(MTL4CompilerDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTL4Compiler`](mtl4compiler.md) instance, or `nil` if the function failed.
+A [`MTL4Compiler`](../mtl4compiler.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTL4CompilerDescriptor`](mtl4compilerdescriptor.md) instance that configures the [`MTL4Compiler`](mtl4compiler.md) instance.
+- `descriptor`: A [`MTL4CompilerDescriptor`](../mtl4compilerdescriptor.md) instance that configures the [`MTL4Compiler`](../mtl4compiler.md) instance.
 
 
 ---

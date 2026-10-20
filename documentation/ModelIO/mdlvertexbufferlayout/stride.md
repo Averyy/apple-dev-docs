@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between data for separate vertices in a vertex buffer.
 
@@ -17,6 +18,10 @@ The stride, in bytes, between data for separate vertices in a vertex buffer.
 
 ```swift
 var stride: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger stride;
 ```
 
 #### Discussion

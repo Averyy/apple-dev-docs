@@ -1,7 +1,8 @@
 # kAXElementBusyChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXElementBusyChangedNotification: String { get }
+```
+
+```c
+#define kAXElementBusyChangedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # displayID
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics display identifier.
 
@@ -13,6 +14,10 @@ The Core Graphics display identifier.
 
 ```swift
 var displayID: CGDirectDisplayID { get }
+```
+
+```objc
+@property (readonly) CGDirectDisplayID displayID;
 ```
 
 

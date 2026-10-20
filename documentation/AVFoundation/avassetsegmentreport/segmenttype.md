@@ -1,7 +1,8 @@
 # segmentType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of segment data.
 
@@ -19,13 +20,18 @@ The type of segment data.
 var segmentType: AVAssetSegmentType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAssetSegmentType segmentType;
+```
+
 ## See Also
 
-- [enum AVAssetSegmentType](avassetsegmenttype.md)
+### Inspecting a report
+- [enum AVAssetSegmentType](../avassetsegmenttype.md)
   Constants that define the type of a segment.
-- [var trackReports: [AVAssetSegmentTrackReport]](avassetsegmentreport/trackreports.md)
+- [var trackReports: [AVAssetSegmentTrackReport]](./trackreports.md)
   The reports for the segment’s track data.
-- [class AVAssetSegmentTrackReport](avassetsegmenttrackreport.md)
+- [class AVAssetSegmentTrackReport](../avassetsegmenttrackreport.md)
   An object that provides information on a track in segment data.
 
 

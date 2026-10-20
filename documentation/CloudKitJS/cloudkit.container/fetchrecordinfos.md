@@ -1,7 +1,8 @@
 # fetchRecordInfos
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns information about a record for which you have a `shortGUID` property.
 
@@ -10,7 +11,7 @@ Returns information about a record for which you have a `shortGUID` property.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordInfosResponse, CKError> fetchRecordInfos(
 	String[] shortGUIDs
 );
@@ -18,7 +19,7 @@ Promise<CloudKit.RecordInfosResponse, CKError> fetchRecordInfos(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordInfosResponse`](../cloudkit.recordinfosresponse.md) object, or rejects to a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
@@ -30,7 +31,8 @@ Use this method to show details about a record to a user before asking them to a
 
 ## See Also
 
-- [acceptShares](cloudkit.container/acceptshares.md)
+### Accepting Shared Records
+- [acceptShares](./acceptshares.md)
   Accepts a share—that is represented by a `shortGUID`—on behalf of the current user.
 
 

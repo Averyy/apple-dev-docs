@@ -1,7 +1,8 @@
 # SubscriptionPriceInlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceInlineCreate.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPriceInlineCreate.Relationships.Subscription](subscriptionpriceinlinecreate/relationships-data.dictionary/subscription-data.dictionary.md)
-- [object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint](subscriptionpriceinlinecreate/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
-- [object SubscriptionPriceInlineCreate.Relationships.Territory](subscriptionpriceinlinecreate/relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
+- [object SubscriptionPriceInlineCreate.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object SubscriptionPriceInlineCreate.Relationships
 
 ## See Also
 
-- [object SubscriptionPriceInlineCreate.Attributes](subscriptionpriceinlinecreate/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionPriceInlineCreate.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription price inline create resource.
 
 

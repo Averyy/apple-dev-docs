@@ -1,7 +1,8 @@
 # replaceSubrange(_:addingCount:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the specified range of elements by a given count of new items, using a callback to directly initialize array storage by populating an output span.
 
@@ -42,7 +43,7 @@ If the callback fails to fully populate its output span or if it throws an error
 
 Partial insertions create a gap in array storage that needs to be closed by moving newly inserted items to their correct positions given the adjusted count. This adds some overhead compared to adding exactly as many items as promised.
 
-> **Note**: O(`self.count` + `newItemCount`) in addition to the complexity of the callback invocations.
+> **Complexity**: O(`self.count` + `newItemCount`) in addition to the complexity of the callback invocations.
 
 ## Parameters
 

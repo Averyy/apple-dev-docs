@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.exact(argumentName:value:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated exact-match argument matcher.
 

@@ -1,7 +1,8 @@
 # hash
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function that must produce hash code for elements of the hash table. If `NULL`, the pointer value is used as the hash code. Second parameter is the element for which hash code should be produced.
 
@@ -18,6 +19,10 @@ Points to the function that must produce hash code for elements of the hash tabl
 
 ```swift
 var hash: ((NSHashTable<AnyObject>, UnsafeRawPointer) -> Int)?
+```
+
+```c
+unsigned long (*)(NSHashTable *, const void *) hash;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(semantic:format:stride:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vertex attribute.
 

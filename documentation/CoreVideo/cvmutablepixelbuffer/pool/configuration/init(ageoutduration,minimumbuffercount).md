@@ -1,7 +1,8 @@
 # init(ageOutDuration:minimumBufferCount:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create new configuration instance
 

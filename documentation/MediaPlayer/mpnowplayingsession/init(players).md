@@ -1,7 +1,8 @@
 # init(players:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Now Playing session object.
 
@@ -16,6 +17,10 @@ Creates a Now Playing session object.
 
 ```swift
 init(players: [AVPlayer])
+```
+
+```objc
+- (instancetype) initWithPlayers:(NSArray<AVPlayer *> *) players;
 ```
 
 ## Parameters

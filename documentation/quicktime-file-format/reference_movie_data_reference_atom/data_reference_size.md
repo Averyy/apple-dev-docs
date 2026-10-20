@@ -1,21 +1,23 @@
 # Data reference size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The size of the data reference in bytes, expressed as a 32-bit integer.
 
 ## See Also
 
-- [Size](reference_movie_data_reference_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this data reference atom.
-- [Type](reference_movie_data_reference_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
-- [Flags](reference_movie_data_reference_atom/flags.md)
+- [Flags](./flags.md)
   A 32-bit integer containing flags.
-- [Data reference type](reference_movie_data_reference_atom/data_reference_type.md)
+- [Data reference type](./data_reference_type.md)
   The data reference type.
-- [Data reference](reference_movie_data_reference_atom/data_reference.md)
+- [Data reference](./data_reference.md)
   A data reference to a QuickTime movie, or to a stream or file that QuickTime can play.
 
 

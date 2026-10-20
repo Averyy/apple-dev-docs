@@ -1,6 +1,7 @@
 # Fetching and filtering time-based model changes
 
-**Framework**: SwiftData
+**Framework**: SwiftData  
+**Role**: Article
 
 Track all inserts, updates, and deletes that occur in a data store and process them as a series of chronological transactions.
 
@@ -12,13 +13,13 @@ SwiftData History enables your app to track changes in its data store over time.
 
 To use SwiftData History in your app, create a history descriptor and use a model context to fetch the corresponding chronological transactions. After the fetch completes, determine which of those fetched transactions relate to the current view or task and process them accordingly. After you finish processing them, delete the transactions from the store to reclaim the disk space.
 
-> **Note**: SwiftData History is available in data stores that adopt the [`HistoryProviding`](historyproviding.md) protocol such as [`DefaultStore`](defaultstore.md) . All examples in this article assume the use of `DefaultStore` and its related types.
+> **Note**: SwiftData History is available in data stores that adopt the [`HistoryProviding`](./historyproviding.md) protocol such as [`DefaultStore`](./defaultstore.md) . All examples in this article assume the use of `DefaultStore` and its related types.
 
-#### Fetch a Stores Change Transactions
+#### Fetch a store’s change transactions
 
 Transactions group together one or more changes that occur on a specific boundary — such as when a model context writes pending changes to the store — and are identifiable by their associated history token. SwiftData stores transactions in the order they occur, and a model context fetches them in that same order. The group of changes that a transaction contains (inserts, updates, deletes) are also ordered chronologically.
 
-Using a model context, you can fetch all transactions from the persistent store, or just a subset by specifying a history token, an author, or both. Tokens are opaque objects that conform to the [`Comparable`](https://developer.apple.com/documentation/swift/comparable) and [`Codable`](https://developer.apple.com/documentation/swift/codable) protocols, enabling you to store the most recent token on-disk and use it in the next fetch to receive only newer changes. An author is a short string that your app uses to identify the origin of a transaction, which you specify on the model context that writes those changes to the store.
+Using a model context, you can fetch all transactions from the persistent store, or just a subset by specifying a history token, an author, or both. Tokens are opaque objects that conform to the [`Comparable`](../Swift/comparable.md) and [`Codable`](../Swift/codable.md) protocols, enabling you to store the most recent token on-disk and use it in the next fetch to receive only newer changes. An author is a short string that your app uses to identify the origin of a transaction, which you specify on the model context that writes those changes to the store.
 
 For example, you may want to fetch all new transactions that originate from your app’s widget.
 
@@ -44,7 +45,7 @@ func fetchWidgetTransactions(after tokenData: Data) -> Result<[DefaultHistoryTra
 
 After processing the fetched transactions, make sure that you write the most recent transaction’s token to disk so you can use it in the next fetch.
 
-#### Identify Relevant Model Changes
+#### Identify relevant model changes
 
 As transactions represent points in time, they’re heterogenous — a single transaction can (and often will) contain changes for several different model types. Because of this, transactions aren’t bound to a specific model type. When you fetch them from a data store, the results will likely contain transactions, and changes within those transactions, that are unrelated to the current view or task. Filter each transaction’s changes and identify only those that are relevant.
 
@@ -74,11 +75,11 @@ for txn in transactions {
 }
 ```
 
-#### Preserve Important Attributes of Deleted Models
+#### Preserve important attributes of deleted models
 
-After deleting a model from the data store, its values are gone with no way to recover them. In most situations, this is the preferred behavior. However, there may be occasions where your app needs to retain one or more attribute values from a deleted model. For example, using a model’s [`persistentModelID`](persistentmodel/persistentmodelid.md) as a means of identifying that model is only relevant within the scope of the local data store, and a different attribute may provide a stable identity across different devices and services. By retaining that attribute’s value, you’re able to reliably identify the deleted model after it’s gone.
+After deleting a model from the data store, its values are gone with no way to recover them. In most situations, this is the preferred behavior. However, there may be occasions where your app needs to retain one or more attribute values from a deleted model. For example, using a model’s [`persistentModelID`](./persistentmodel/persistentmodelid.md) as a means of identifying that model is only relevant within the scope of the local data store, and a different attribute may provide a stable identity across different devices and services. By retaining that attribute’s value, you’re able to reliably identify the deleted model after it’s gone.
 
-To retain a value, use the [`Attribute(_:originalName:hashModifier:)`](attribute(_:originalname:hashmodifier:).md) macro and specify the [`preserveValueOnDeletion`](schema/attribute/option/preservevalueondeletion.md) option:
+To retain a value, use the [`Attribute(_:originalName:hashModifier:)`](./attribute%28_,originalname,hashmodifier%29.md) macro and specify the [`preserveValueOnDeletion`](./schema/attribute/option/preservevalueondeletion.md) option:
 
 ```swift
 @Model
@@ -97,11 +98,11 @@ if let deletion = change as? History.DefaultDeleteChange<Trip> {
 }
 ```
 
-#### Delete Stale Change Transactions
+#### Delete stale change transactions
 
 SwiftData writes transactions to the data store alongside the model data, and as such, transactions require additional disk space. To make sure the store doesn’t consume more space than necessary, determine a suitable clean-up strategy to remove stale transactions when your app no longer needs them.
 
-> ❗ **Important**: If you attempt to fetch deleted transactions, SwiftData throws a [`historyTokenExpired`](swiftdataerror/historytokenexpired.md) error.
+> ❗ **Important**: If you attempt to fetch deleted transactions, SwiftData throws a [`historyTokenExpired`](./swiftdataerror/historytokenexpired.md) error.
 
 Similar to fetching, use a model context to delete transactions and provide a predicate to narrow the scope. For example, you may want to delete all transactions that occur before a given token:
 
@@ -125,19 +126,20 @@ func deleteTransactions(before token: History.DefaultToken) -> Result<Void, Erro
 
 ## See Also
 
-- [class ModelContainer](modelcontainer.md)
+### Model life cycle
+- [class ModelContainer](./modelcontainer.md)
   An object that manages an app’s schema and model storage configuration.
-- [class ModelContext](modelcontext.md)
+- [class ModelContext](./modelcontext.md)
   An object that enables you to fetch, insert, and delete models, and save any changes to disk.
-- [struct HistoryDescriptor](historydescriptor.md)
+- [struct HistoryDescriptor](./historydescriptor.md)
   A type that describes the criteria, and, optionally, sort order, to use when fetching history data
-- [Deleting persistent data from your app](deleting-persistent-data-from-your-app.md)
+- [Deleting persistent data from your app](./deleting-persistent-data-from-your-app.md)
   Explore different ways to use SwiftData to delete persistent data.
-- [Reverting data changes using the undo manager](reverting-data-changes-using-the-undo-manager.md)
+- [Reverting data changes using the undo manager](./reverting-data-changes-using-the-undo-manager.md)
   Automatically record data change operations that people perform in your SwiftUI app, and let them undo and redo those changes.
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+- [Syncing model data across a person’s devices](./syncing-model-data-across-a-persons-devices.md)
   Add the required capabilities and define a compatible schema to enable SwiftData to automatically sync your app’s model data using iCloud.
-- [Concurrency support](concurrencysupport.md)
+- [Concurrency support](./concurrencysupport.md)
   Types you use to access model attributes and perform storage-related tasks in a safe and isolated way.
 
 

@@ -1,7 +1,8 @@
 # wideCell()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration for a wide media item cell.
 
@@ -16,7 +17,7 @@ static func wideCell() -> TVMediaItemContentConfiguration
 
 #### Return Value
 
-A new [`TVMediaItemContentConfiguration`](tvmediaitemcontentconfiguration-swift.struct.md) instance for a wide cell with a 16:9 aspect ratio.
+A new [`TVMediaItemContentConfiguration`](../tvmediaitemcontentconfiguration-swift.struct.md) instance for a wide cell with a 16:9 aspect ratio.
 
 
 ---

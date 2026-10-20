@@ -1,7 +1,8 @@
 # DockingRegionComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that docks a scene within a region of an immersive space.
 
@@ -16,7 +17,7 @@ struct DockingRegionComponent
 
 #### Overview
 
-A docking-region component establishes a fixed area within an immersive environment that an [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) window scene anchors to, which prevents a person from moving the window with a pinch-and-drag gesture.
+A docking-region component establishes a fixed area within an immersive environment that an [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) window scene anchors to, which prevents a person from moving the window with a pinch-and-drag gesture.
 
 To anchor dockable scenes, attach a `DockingRegionComponent` to an entity. The entity’s position represents the docking position. Specify the width to set the docking boundary; the docking region maintains a cinematic `2.4:1` width/height ratio, ideal for wide display formats.
 
@@ -41,19 +42,21 @@ entity.components.set(dockingRegionComponent)
 
 In the example below, the video player docks in a built-in sky dome scene from Reality Composer Pro:
 
+[Video: A screen recording of a video player docking in a built-in sky dome scene from Reality Composer Pro](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/dockingregioncomponent-docking.mp4)
+
 ## Topics
 
 ### Creating a docking region component
-- [init()](dockingregioncomponent/init.md)
+- [init()](./dockingregioncomponent/init%28%29.md)
   Creates a docking-region component.
 ### Sizing a docking region
-- [var width: Float](dockingregioncomponent/width.md)
+- [var width: Float](./dockingregioncomponent/width.md)
   The width of the docking region, in meters.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 
 ---

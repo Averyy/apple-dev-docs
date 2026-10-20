@@ -1,7 +1,8 @@
 # parameter
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Opaque client-supplied pointer.
 
@@ -10,15 +11,16 @@ Opaque client-supplied pointer.
 
 ## Declaration
 
-```swift
+```c
 void *parameter;
 ```
 
 ## See Also
 
-- [target](iostoragecompletion/1574989-target.md)
+### Fields
+- [target](./api-1574989-target.md)
   Opaque client-supplied pointer (or an instance pointer for a C++ callback).
-- [action](iostoragecompletion/1575006-action.md)
+- [action](./api-1575006-action.md)
   Completion routine to call on completion of the data transfer.
 
 

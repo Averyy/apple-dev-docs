@@ -1,7 +1,8 @@
 # VTMotionEstimationSession.Motion
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,17 +21,18 @@ struct Motion
 ## Topics
 
 ### Instance Properties
-- [var motionVector: CVReadOnlyPixelBuffer](vtmotionestimationsession/motion/motionvector.md)
+- [var motionVector: CVReadOnlyPixelBuffer](./motion/motionvector.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [VTMotionEstimationSession.BlockSize](vtmotionestimationsession/blocksize.md)
+### Inspecting the motion result
+- [VTMotionEstimationSession.BlockSize](./blocksize.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Generating a List of Ride Options
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Generate ride options for Maps to display to the user.
 
@@ -16,11 +17,11 @@ For each ride option, include as much information as possible about the ride, in
 - **Configure the party size options when party size determines pricing.** If the number of people receiving a ride determines the price, configure the [`availablePartySizeOptions`](https://developer.apple.com/documentation/intents/inrideoption/availablepartysizeoptions) and [`availablePartySizeOptionsSelectionPrompt`](https://developer.apple.com/documentation/intents/inrideoption/availablepartysizeoptionsselectionprompt) properties appropriately. Use your [`INRidePartySizeOption`](https://developer.apple.com/documentation/intents/inridepartysizeoption) objects to specify the pricing information for parties of different sizes.
 - **Use fare line items to enumerate individual costs.** When the cost of a ride isn’t a single fixed value, provide fare line items so that the user understands how the app computed the fare. Line items can include base charges, per-mile charges, additional fees or tolls, and discounts.
 - **Include an expiration date.** Expiration dates prevent your ride options from becoming stale or outdated. When a ride option expires, SiriKit sends another [`INListRideOptionsIntent`](https://developer.apple.com/documentation/intents/inlistrideoptionsintent) object to your Intents extension.
-- **If your app must complete the booking, provide an appropriate user activity object.** You might complete the booking in your app when special circumstances apply, such as when you need to change the precise pickup or drop-off location. Assigning an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object to the [`userActivityForBookingInApplication`](https://developer.apple.com/documentation/intents/inrideoption/useractivityforbookinginapplication) property of the [`INRideOption`](https://developer.apple.com/documentation/intents/inrideoption) tells Maps that it must launch your app to complete the booking.
+- **If your app must complete the booking, provide an appropriate user activity object.** You might complete the booking in your app when special circumstances apply, such as when you need to change the precise pickup or drop-off location. Assigning an [`NSUserActivity`](../Foundation/nsuseractivity.md) object to the [`userActivityForBookingInApplication`](https://developer.apple.com/documentation/intents/inrideoption/useractivityforbookinginapplication) property of the [`INRideOption`](https://developer.apple.com/documentation/intents/inrideoption) tells Maps that it must launch your app to complete the booking.
 
 The following figure shows how Maps reveals the party size details to the user. When selecting a vehicle, Maps displays the base price range initially. When the user actually requests the vehicle, Maps prompts the user to select the number of passengers. Base the information for each price tier on the information you supply in the [`INRidePartySizeOption`](https://developer.apple.com/documentation/intents/inridepartysizeoption) objects.
 
-![A screenshot that shows a list of ride options with the title “Choose a party size”. The list offers ride options for 1 person, 2-3 people, and 4+ people, with prices. Behind the list is a dimmed view that includes the ride’s destination, type of vehicle, and other information.](/images/com.apple.sirikit/media-3866871@2x.png)
+![A screenshot that shows a list of ride options with the title “Choose a party size”. The list offers ride options for 1 person, 2-3 people, and 4+ people, with prices. Behind the list is a dimmed view that includes the ride’s destination, type of vehicle, and other information.](https://developer.apple.com/tutorials/images/com.apple.sirikit/media-3866871@2x.png)
 
 ##### Create Ride Options
 
@@ -93,35 +94,36 @@ func createSUVRideOption(pickup : CLPlacemark,
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 

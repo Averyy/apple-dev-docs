@@ -1,7 +1,8 @@
 # AVCaptureMultichannelAudioMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the modes of multichannel audio.
 
@@ -18,36 +19,41 @@ Constants that indicate the modes of multichannel audio.
 enum AVCaptureMultichannelAudioMode
 ```
 
+```c
+enum AVCaptureMultichannelAudioMode : NSInteger;
+```
+
 ## Topics
 
 ### Modes
-- [AVCaptureMultichannelAudioMode.none](avcapturemultichannelaudiomode/none.md)
+- [AVCaptureMultichannelAudioMode.none](./avcapturemultichannelaudiomode/none.md)
   A mode that indicates there’s no multichannel audio.
-- [AVCaptureMultichannelAudioMode.stereo](avcapturemultichannelaudiomode/stereo.md)
+- [AVCaptureMultichannelAudioMode.stereo](./avcapturemultichannelaudiomode/stereo.md)
   A mode that indicates the recording uses stereo audio.
-- [AVCaptureMultichannelAudioMode.firstOrderAmbisonics](avcapturemultichannelaudiomode/firstorderambisonics.md)
+- [AVCaptureMultichannelAudioMode.firstOrderAmbisonics](./avcapturemultichannelaudiomode/firstorderambisonics.md)
   An audio mode that indicates the recording uses first-order ambisonics.
 ### Initializers
-- [init?(rawValue: Int)](avcapturemultichannelaudiomode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcapturemultichannelaudiomode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](avcapturedeviceinput/ismultichannelaudiomodesupported(_:).md)
+### Configuring audio properties
+- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](./avcapturedeviceinput/ismultichannelaudiomodesupported%28_%29.md)
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
-- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](avcapturedeviceinput/multichannelaudiomode.md)
+- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](./avcapturedeviceinput/multichannelaudiomode.md)
   The multichannel audio mode to apply when recording audio.
-- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
-- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
+- [var isWindNoiseRemovalSupported: Bool](./avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](./avcapturedeviceinput/iswindnoiseremovalenabled.md)
 
 
 ---

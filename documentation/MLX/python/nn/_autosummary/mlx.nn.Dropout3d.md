@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 
 # mlx.nn.Dropout3d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Dropout3d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Dropout3d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Dropout3d
-
 **class Dropout3d(*p: float = 0.5*)**
 : Apply 3D channel-wise dropout during training.
 Randomly zero out entire channels independently with probability \(p\).
@@ -51,5 +24,3 @@ Parameters:
 Default: `0.5`.
 
 Methods
-
-** Contents

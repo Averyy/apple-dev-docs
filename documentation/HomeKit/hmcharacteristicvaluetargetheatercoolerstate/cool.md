@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetHeaterCoolerState.cool
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory should operate as a cooler.
 
@@ -19,11 +20,16 @@ The accessory should operate as a cooler.
 case cool
 ```
 
+```c
+HMCharacteristicValueTargetHeaterCoolerStateCool
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetHeaterCoolerState.automatic](hmcharacteristicvaluetargetheatercoolerstate/automatic.md)
+### Target State
+- [HMCharacteristicValueTargetHeaterCoolerState.automatic](./automatic.md)
   The accessory should choose whether to heat or cool.
-- [HMCharacteristicValueTargetHeaterCoolerState.heat](hmcharacteristicvaluetargetheatercoolerstate/heat.md)
+- [HMCharacteristicValueTargetHeaterCoolerState.heat](./heat.md)
   The accessory should operate as a heater.
 
 

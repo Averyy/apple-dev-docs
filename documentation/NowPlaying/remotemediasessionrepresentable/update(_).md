@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the session state from new attributes.
@@ -21,7 +22,7 @@ func update(_ attributes: Self.Attributes)
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 ## Parameters
 

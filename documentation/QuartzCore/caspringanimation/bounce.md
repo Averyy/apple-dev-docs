@@ -1,7 +1,8 @@
 # bounce
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -17,10 +18,15 @@
 var bounce: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat bounce;
+```
+
 ## See Also
 
-- [var allowsOverdamping: Bool](caspringanimation/allowsoverdamping.md)
-- [var perceptualDuration: CFTimeInterval](caspringanimation/perceptualduration.md)
+### Instance Properties
+- [var allowsOverdamping: Bool](./allowsoverdamping.md)
+- [var perceptualDuration: CFTimeInterval](./perceptualduration.md)
 
 
 ---

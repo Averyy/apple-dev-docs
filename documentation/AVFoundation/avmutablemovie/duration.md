@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time value that indicates the asset’s duration.
 
@@ -21,13 +22,14 @@ var duration: CMTime { get }
 
 #### Discussion
 
-If you initialized the composition’s assets by passing the [`AVURLAssetPreferPreciseDurationAndTimingKey`](avurlassetpreferprecisedurationandtimingkey.md) initialization option, this property value provides precise duration; otherwise, it provides a best-available estimate. You can determine the value’s accuracy by querying the asset’s [`providesPreciseDurationAndTiming`](avasset/providesprecisedurationandtiming.md) property.
+If you initialized the composition’s assets by passing the [`AVURLAssetPreferPreciseDurationAndTimingKey`](../avurlassetpreferprecisedurationandtimingkey.md) initialization option, this property value provides precise duration; otherwise, it provides a best-available estimate. You can determine the value’s accuracy by querying the asset’s [`providesPreciseDurationAndTiming`](../avasset/providesprecisedurationandtiming.md) property.
 
 ## See Also
 
-- [var providesPreciseDurationAndTiming: Bool](avmutablemovie/providesprecisedurationandtiming.md)
+### Accessing duration and timing
+- [var providesPreciseDurationAndTiming: Bool](./providesprecisedurationandtiming.md)
   A Boolean value that indicates whether the asset provides precise duration and timing.
-- [var minimumTimeOffsetFromLive: CMTime](avmutablemovie/minimumtimeoffsetfromlive.md)
+- [var minimumTimeOffsetFromLive: CMTime](./minimumtimeoffsetfromlive.md)
   A time value that indicates how closely playback follows the latest live stream content.
 
 

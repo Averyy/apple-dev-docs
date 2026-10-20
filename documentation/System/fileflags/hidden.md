@@ -1,7 +1,8 @@
 # hidden
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File should not be displayed in a GUI.
 

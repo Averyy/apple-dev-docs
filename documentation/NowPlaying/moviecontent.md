@@ -1,7 +1,8 @@
 # MovieContent
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Content representing a movie.
 
@@ -22,7 +23,7 @@ struct MovieContent
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -31,45 +32,46 @@ Use this type for movie playback, including films and documentaries.
 ## Topics
 
 ### Initializers
-- [init(id: String, title: String, duration: MediaDuration?, artwork: Artwork?)](moviecontent/init(id:title:duration:artwork:).md)
+- [init(id: String, title: String, duration: MediaDuration?, artwork: Artwork?)](./moviecontent/init%28id,title,duration,artwork%29.md)
   Creates movie content.
-- [init(id: String, title: String, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](moviecontent/init(id:title:duration:artwork:animatedartwork:).md)
+- [init(id: String, title: String, duration: MediaDuration?, artwork: Artwork, animatedArtwork: AnimatedArtwork?)](./moviecontent/init%28id,title,duration,artwork,animatedartwork%29.md)
   Creates movie content with static and animated artwork.
 ### Instance Properties
-- [let animatedArtwork: AnimatedArtwork?](moviecontent/animatedartwork.md)
+- [let animatedArtwork: AnimatedArtwork?](./moviecontent/animatedartwork.md)
   Animated artwork for this content.
-- [let artwork: Artwork?](moviecontent/artwork.md)
+- [let artwork: Artwork?](./moviecontent/artwork.md)
   Artwork for this content.
-- [let duration: MediaDuration?](moviecontent/duration.md)
+- [let duration: MediaDuration?](./moviecontent/duration.md)
   The duration of this content.
-- [let title: String](moviecontent/title.md)
+- [let title: String](./moviecontent/title.md)
   The title of the movie.
-- [var type: MediaType](moviecontent/type.md)
+- [var type: MediaType](./moviecontent/type.md)
   The media type (always video for movies).
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [MediaContentRepresentable](mediacontentrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MediaContentRepresentable](./mediacontentrepresentable.md)
 
 ## See Also
 
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+### Presenting content
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 
 

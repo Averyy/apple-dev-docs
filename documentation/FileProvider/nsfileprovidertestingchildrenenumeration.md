@@ -1,7 +1,8 @@
 # NSFileProviderTestingChildrenEnumeration
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An operation that lists a directory’s content.
 
@@ -18,45 +19,50 @@ An operation that lists a directory’s content.
 protocol NSFileProviderTestingChildrenEnumeration : NSFileProviderTestingOperation
 ```
 
+```objc
+@protocol NSFileProviderTestingChildrenEnumeration <NSFileProviderTestingOperation>
+```
+
 ## Topics
 
 ### Accessing The Operation’s Data
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingchildrenenumeration/itemidentifier.md)
+- [var itemIdentifier: NSFileProviderItemIdentifier](./nsfileprovidertestingchildrenenumeration/itemidentifier.md)
   The containing identifier’s unique identifier.
-- [var side: NSFileProviderTestingOperationSide](nsfileprovidertestingchildrenenumeration/side.md)
+- [var side: NSFileProviderTestingOperationSide](./nsfileprovidertestingchildrenenumeration/side.md)
   The item’s location.
 
 ## Relationships
 
 ### Inherits From
-- [NSFileProviderTestingOperation](nsfileprovidertestingoperation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSFileProviderTestingOperation](./nsfileprovidertestingoperation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSFileProviderTestingCollisionResolution](nsfileprovidertestingcollisionresolution.md)
+### Testing protocols
+- [protocol NSFileProviderTestingCollisionResolution](./nsfileprovidertestingcollisionresolution.md)
   An operation that resolves a collision by renaming the new item.
-- [protocol NSFileProviderTestingContentFetch](nsfileprovidertestingcontentfetch.md)
+- [protocol NSFileProviderTestingContentFetch](./nsfileprovidertestingcontentfetch.md)
   An operation that fetches an item’s content.
-- [protocol NSFileProviderTestingCreation](nsfileprovidertestingcreation.md)
+- [protocol NSFileProviderTestingCreation](./nsfileprovidertestingcreation.md)
   An operation that syncs the creation of the source item to the target location.
-- [protocol NSFileProviderTestingDeletion](nsfileprovidertestingdeletion.md)
+- [protocol NSFileProviderTestingDeletion](./nsfileprovidertestingdeletion.md)
   An operation that syncs the deletion of the source item to the target location.
-- [protocol NSFileProviderTestingIngestion](nsfileprovidertestingingestion.md)
+- [protocol NSFileProviderTestingIngestion](./nsfileprovidertestingingestion.md)
   An operation that alerts the system to either local or remote storage changes.
-- [protocol NSFileProviderTestingLookup](nsfileprovidertestinglookup.md)
+- [protocol NSFileProviderTestingLookup](./nsfileprovidertestinglookup.md)
   An operation that looks up an item.
-- [protocol NSFileProviderTestingModification](nsfileprovidertestingmodification.md)
+- [protocol NSFileProviderTestingModification](./nsfileprovidertestingmodification.md)
   An operation that syncs the modification of the source item to the target location.
-- [protocol NSFileProviderTestingOperation](nsfileprovidertestingoperation.md)
+- [protocol NSFileProviderTestingOperation](./nsfileprovidertestingoperation.md)
   An operation that the system can schedule.
-- [protocol NSFileProviderUserInteractionSuppressing](nsfileprovideruserinteractionsuppressing.md)
+- [protocol NSFileProviderUserInteractionSuppressing](./nsfileprovideruserinteractionsuppressing.md)
   Support for suppressing user-interaction alerts.
-- [enum NSFileProviderTestingOperationSide](nsfileprovidertestingoperationside.md)
+- [enum NSFileProviderTestingOperationSide](./nsfileprovidertestingoperationside.md)
   The location where the operation takes place.
-- [enum NSFileProviderTestingOperationType](nsfileprovidertestingoperationtype.md)
+- [enum NSFileProviderTestingOperationType](./nsfileprovidertestingoperationtype.md)
   The action that an operation performs.
-- [com.apple.developer.fileprovider.testing-mode](../bundleresources/entitlements/com.apple.developer.fileprovider.testing-mode.md)
+- [com.apple.developer.fileprovider.testing-mode](../BundleResources/entitlements/com.apple.developer.fileprovider.testing-mode.md)
   A Boolean value that indicates whether you can place domains in testing mode.
 
 

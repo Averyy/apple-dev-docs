@@ -1,7 +1,8 @@
 # SetEntityEnabledAction
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An action that enables or disables the targeted entity and its descendants when played as an animation.
 
@@ -21,7 +22,7 @@ struct SetEntityEnabledAction
 
 #### Overview
 
-This action toggles the [`targetEntity`](setentityenabledaction/targetentity.md) [`isEnabled`](entity/isenabled.md) flag. Use the animation generated from this action within an animation group to determine when the entity should be enabled, and visible in the scene.
+This action toggles the [`targetEntity`](./setentityenabledaction/targetentity.md) [`isEnabled`](./entity/isenabled.md) flag. Use the animation generated from this action within an animation group to determine when the entity should be enabled, and visible in the scene.
 
 The example below creates an animation which disables the entity after five seconds. In this example, the target entity starts enabled.
 
@@ -48,49 +49,52 @@ let disableEntityAnimation = try AnimationResource
 rootEntity.playAnimation(disableEntityAnimation)
 ```
 
+[Video: A screen recording of a red cube in a living room scene. At the start, the cube is visibly enabled in the scene. After some time, the cube is disabled; it's no longer visible in the scene.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/setentityenabled-action.mp4)
+
 > **Note**: Animations do not play on entities that are disabled. In order to disable, and enable the target entity, play this action on another entity, such as a root entity, or its parent.
 
-> ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](bindtarget/transform.md).
+> ❗ **Important**: This action does not animate a bound property, such as [`BindTarget.transform`](./bindtarget/transform.md).
 
 > 💡 **Tip**: This action performs instantaneously, consider supplying a small positive duration value when creating the animation.
 
 ## Topics
 
 ### Initializers
-- [init(targetEntity: ActionEntityResolution, isEnabled: Bool)](setentityenabledaction/init(targetentity:isenabled:).md)
+- [init(targetEntity: ActionEntityResolution, isEnabled: Bool)](./setentityenabledaction/init%28targetentity,isenabled%29.md)
   Creates a new set entity enabled action.
 ### Instance Properties
-- [var animatedValueType: (any AnimatableData.Type)?](setentityenabledaction/animatedvaluetype.md)
+- [var animatedValueType: (any AnimatableData.Type)?](./setentityenabledaction/animatedvaluetype.md)
   The type for the value that the action modifies over time.
-- [var isEnabled: Bool](setentityenabledaction/isenabled.md)
+- [var isEnabled: Bool](./setentityenabledaction/isenabled.md)
   A Boolean that you set to enable or disable the entity and its descendants.
-- [var targetEntity: ActionEntityResolution](setentityenabledaction/targetentity.md)
+- [var targetEntity: ActionEntityResolution](./setentityenabledaction/targetentity.md)
   The entity to disable or enable.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [EntityAction](entityaction.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [EntityAction](./entityaction.md)
 
 ## See Also
 
-- [struct BillboardAction](billboardaction.md)
+### Built-in actions
+- [struct BillboardAction](./billboardaction.md)
   An action that animates the blend factor of an entity’s billboard component.
-- [struct EmphasizeAction](emphasizeaction.md)
+- [struct EmphasizeAction](./emphasizeaction.md)
   An action that performs an animation to call attention to an entity.
-- [struct FromToByAction](fromtobyaction.md)
+- [struct FromToByAction](./fromtobyaction.md)
   An action that starts, stops, or increments by a specific value.
-- [struct ImpulseAction](impulseaction.md)
+- [struct ImpulseAction](./impulseaction.md)
   An action that applies an impulse to the physics body at its center of mass when played as an animation.
-- [struct OrbitEntityAction](orbitentityaction.md)
+- [struct OrbitEntityAction](./orbitentityaction.md)
   An action which animates the transform of an entity to revolve around a specified pivot entity.
-- [struct PlayAnimationAction](playanimationaction.md)
+- [struct PlayAnimationAction](./playanimationaction.md)
   An action that plays an animation on the given target entity with a range of playback options.
-- [struct PlayAudioAction](playaudioaction.md)
+- [struct PlayAudioAction](./playaudioaction.md)
   An action which plays an audio resource on the given target entity.
-- [struct SpinAction](spinaction.md)
+- [struct SpinAction](./spinaction.md)
   An action which animates the transform of an entity to rotate around a specified local axis.
 
 

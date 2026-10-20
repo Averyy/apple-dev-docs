@@ -1,7 +1,8 @@
 # AsyncPrefixWhileSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the prefix-while sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the prefix-while sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> Base.Element?](asyncprefixwhilesequence/iterator/next.md)
+- [func next() async rethrows -> Base.Element?](./iterator/next%28%29.md)
   Produces the next element in the prefix-while sequence.
-- [func next(isolation: isolated (any Actor)?) async throws(AsyncPrefixWhileSequence<Base>.Failure) -> Base.Element?](asyncprefixwhilesequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(AsyncPrefixWhileSequence<Base>.Failure) -> Base.Element?](./iterator/next%28isolation%29.md)
   Produces the next element in the prefix-while sequence.
 ### Type Aliases
-- [AsyncPrefixWhileSequence.Iterator.Element](asyncprefixwhilesequence/iterator/element.md)
+- [AsyncPrefixWhileSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncprefixwhilesequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

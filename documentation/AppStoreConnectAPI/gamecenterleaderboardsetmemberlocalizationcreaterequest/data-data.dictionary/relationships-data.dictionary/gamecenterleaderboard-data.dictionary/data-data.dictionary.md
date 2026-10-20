@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboard.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center leaderboard set member localization.
 
@@ -10,14 +11,14 @@ The request body you use to create a Game Center leaderboard set member localiza
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboard.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboards`
 
 
 ---

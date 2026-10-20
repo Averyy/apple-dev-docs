@@ -1,7 +1,8 @@
 # mapTemplate(_:rotationDidEndWithVelocity:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a person stopped rotating the map.
 
@@ -16,9 +17,13 @@ Tells the delegate that a person stopped rotating the map.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, rotationDidEndWithVelocity velocity: CGFloat)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate rotationDidEndWithVelocity:(CGFloat) velocity;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `velocity`: The velocity of the rotation gesture in radians per second.
 
 

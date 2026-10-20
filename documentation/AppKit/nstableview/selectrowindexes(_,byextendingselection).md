@@ -1,12 +1,13 @@
 # selectRowIndexes(_:byExtendingSelection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the row selection using `indexes` extending the selection if specified.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ Sets the row selection using `indexes` extending the selection if specified.
 func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool)
 ```
 
+```objc
+- (void) selectRowIndexes:(NSIndexSet *) indexes byExtendingSelection:(BOOL) extend;
+```
+
 #### Discussion
 
-Replaces the deprecated [`selectRow:byExtendingSelection:`](nstableview/selectrow:byextendingselection:.md) method.
+Replaces the deprecated [`selectRow:byExtendingSelection:`](./selectrow_byextendingselection_.md) method.
 
 ## Parameters
 
 - `indexes`: The indexes to select.
-- `extend`: [`true`](https://developer.apple.com/documentation/swift/true) if the selection should be extended, [`false`](https://developer.apple.com/documentation/swift/false) if the current selection should be changed.
+- `extend`: [`true`](../../Swift/true.md) if the selection should be extended, [`false`](../../Swift/false.md) if the current selection should be changed.
 
 ## See Also
 
-- [func selectColumnIndexes(IndexSet, byExtendingSelection: Bool)](nstableview/selectcolumnindexes(_:byextendingselection:).md)
+### Selecting Columns and Rows
+- [func selectColumnIndexes(IndexSet, byExtendingSelection: Bool)](./selectcolumnindexes%28_,byextendingselection%29.md)
   Sets the column selection using `indexes` possibly extending the selection.
-- [var selectedColumn: Int](nstableview/selectedcolumn.md)
+- [var selectedColumn: Int](./selectedcolumn.md)
   The index of the last selected column (or the last column added to the selection).
-- [var selectedColumnIndexes: IndexSet](nstableview/selectedcolumnindexes.md)
+- [var selectedColumnIndexes: IndexSet](./selectedcolumnindexes.md)
   An index set containing the indexes of the selected columns.
-- [func deselectColumn(Int)](nstableview/deselectcolumn(_:).md)
+- [func deselectColumn(Int)](./deselectcolumn%28_%29.md)
   Deselects the column at the specified index if it’s selected.
-- [var numberOfSelectedColumns: Int](nstableview/numberofselectedcolumns.md)
+- [var numberOfSelectedColumns: Int](./numberofselectedcolumns.md)
   The number of selected columns.
-- [func isColumnSelected(Int) -> Bool](nstableview/iscolumnselected(_:).md)
+- [func isColumnSelected(Int) -> Bool](./iscolumnselected%28_%29.md)
   Returns a Boolean value that indicates whether the column at the specified index is selected.
-- [var selectedRow: Int](nstableview/selectedrow.md)
+- [var selectedRow: Int](./selectedrow.md)
   The index of the last selected row (or the last row added to the selection).
-- [var selectedRowIndexes: IndexSet](nstableview/selectedrowindexes.md)
+- [var selectedRowIndexes: IndexSet](./selectedrowindexes.md)
   An index set containing the indexes of the selected rows.
-- [func deselectRow(Int)](nstableview/deselectrow(_:).md)
+- [func deselectRow(Int)](./deselectrow%28_%29.md)
   Deselects the row at the specified index if it’s selected.
-- [var numberOfSelectedRows: Int](nstableview/numberofselectedrows.md)
+- [var numberOfSelectedRows: Int](./numberofselectedrows.md)
   The number of selected rows.
-- [func isRowSelected(Int) -> Bool](nstableview/isrowselected(_:).md)
+- [func isRowSelected(Int) -> Bool](./isrowselected%28_%29.md)
   Returns a Boolean value that indicates whether the row at the specified index is selected.
-- [func selectAll(Any?)](nstableview/selectall(_:).md)
+- [func selectAll(Any?)](./selectall%28_%29.md)
   Selects all rows or all columns, according to whether rows or columns were most recently selected.
-- [func deselectAll(Any?)](nstableview/deselectall(_:).md)
+- [func deselectAll(Any?)](./deselectall%28_%29.md)
   Deselects all selected rows or columns if empty selection is allowed; otherwise does nothing.
 
 

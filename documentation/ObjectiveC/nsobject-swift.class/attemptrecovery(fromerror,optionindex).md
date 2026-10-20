@@ -1,18 +1,19 @@
 # attemptRecovery(fromError:optionIndex:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implemented to attempt a recovery from an error noted in an application-modal dialog.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Implemented to attempt a recovery from an error noted in an application-modal di
 func attemptRecovery(fromError error: any Error, optionIndex recoveryOptionIndex: Int) -> Bool
 ```
 
+```objc
+- (BOOL) attemptRecoveryFromError:(NSError *) error optionIndex:(NSUInteger) recoveryOptionIndex;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the error recovery was completed successfully, [`NO`](no.md) otherwise.
+[`YES`](../yes.md) if the error recovery was completed successfully, [`NO`](../no.md) otherwise.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Invoked when an error alert is been presented to the user in an application-moda
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the error, including error recovery options.
+- `error`: An [`NSError`](../../Foundation/nserror.md) object that describes the error, including error recovery options.
 - `recoveryOptionIndex`: The index of the user selected recovery option in `error`’s localized recovery array.
 
 

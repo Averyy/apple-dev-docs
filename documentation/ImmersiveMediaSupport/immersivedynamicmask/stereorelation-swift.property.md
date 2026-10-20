@@ -1,7 +1,8 @@
 # stereoRelation
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents how the left eye mask relates to the right eye mask.
 

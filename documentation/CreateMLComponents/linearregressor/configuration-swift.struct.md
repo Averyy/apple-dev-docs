@@ -1,7 +1,8 @@
 # LinearRegressor.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A linear regressor configuration.
 
@@ -20,42 +21,45 @@ A linear regressor configuration.
 struct Configuration
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
+
 ## Topics
 
 ### Creating a configuration
-- [init()](linearregressor/configuration-swift.struct/init.md)
+- [init()](./configuration-swift.struct/init%28%29.md)
   Creates a default linear regressor configuration.
 ### Getting the properties
-- [var convergenceThreshold: Double](linearregressor/configuration-swift.struct/convergencethreshold.md)
+- [var convergenceThreshold: Double](./configuration-swift.struct/convergencethreshold.md)
   The convergence threshold.
-- [var earlyStopIterationCount: Int](linearregressor/configuration-swift.struct/earlystopiterationcount.md)
+- [var earlyStopIterationCount: Int](./configuration-swift.struct/earlystopiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var l1Penalty: Double](linearregressor/configuration-swift.struct/l1penalty.md)
+- [var l1Penalty: Double](./configuration-swift.struct/l1penalty.md)
   Weight of the L1 regularization term.
-- [var l2Penalty: Double](linearregressor/configuration-swift.struct/l2penalty.md)
+- [var l2Penalty: Double](./configuration-swift.struct/l2penalty.md)
   Weight of the L2 regularization term.
-- [var maximumIterations: Int](linearregressor/configuration-swift.struct/maximumiterations.md)
+- [var maximumIterations: Int](./configuration-swift.struct/maximumiterations.md)
   The maximum number of allowed passes through the data.
-- [var optimizationStrategy: OptimizationStrategy](linearregressor/configuration-swift.struct/optimizationstrategy.md)
+- [var optimizationStrategy: OptimizationStrategy](./configuration-swift.struct/optimizationstrategy.md)
   The optimization strategy.
-- [var scaleFeatures: Bool](linearregressor/configuration-swift.struct/scalefeatures.md)
+- [var scaleFeatures: Bool](./configuration-swift.struct/scalefeatures.md)
   A Boolean value indicating whether to scale the input features.
-- [var stepSize: Double](linearregressor/configuration-swift.struct/stepsize.md)
+- [var stepSize: Double](./configuration-swift.struct/stepsize.md)
   The starting step size to use for the solver.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(configuration: LinearRegressor<Scalar>.Configuration)](linearregressor/init(configuration:).md)
+### Creating a regressor
+- [init(configuration: LinearRegressor<Scalar>.Configuration)](./init%28configuration%29.md)
   Creates a linear regressor.
 
 

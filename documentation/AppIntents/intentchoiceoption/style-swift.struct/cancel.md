@@ -1,7 +1,8 @@
 # cancel
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Apply a style that indicates the option cancels the operation and leaves things unchanged.
 

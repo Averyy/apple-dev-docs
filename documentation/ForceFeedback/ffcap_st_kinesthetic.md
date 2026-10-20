@@ -1,7 +1,8 @@
 # FFCAP_ST_KINESTHETIC
 
 **Framework**: Force Feedback  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var FFCAP_ST_KINESTHETIC: Int { get }
 ```
 
+```c
+FFCAP_ST_KINESTHETIC
+```
+
 ## See Also
 
-- [var FFCAP_ST_VIBRATION: Int](ffcap_st_vibration.md)
+### Constants
+- [var FFCAP_ST_VIBRATION: Int](./ffcap_st_vibration.md)
 
 
 ---

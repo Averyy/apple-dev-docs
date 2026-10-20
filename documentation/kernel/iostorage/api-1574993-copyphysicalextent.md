@@ -1,14 +1,15 @@
 # copyPhysicalExtent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOStorage * copyPhysicalExtent(IOService *client, UInt64 *byteStart, UInt64 *byteCount);
 ```
 

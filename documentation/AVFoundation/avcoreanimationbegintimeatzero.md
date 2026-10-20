@@ -1,7 +1,8 @@
 # AVCoreAnimationBeginTimeAtZero
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that sets an animation begin time to `0`.
 
@@ -19,9 +20,13 @@ A value that sets an animation begin time to `0`.
 let AVCoreAnimationBeginTimeAtZero: CFTimeInterval
 ```
 
+```c
+extern const CFTimeInterval AVCoreAnimationBeginTimeAtZero;
+```
+
 #### Discussion
 
-The constant is a small, non-zero, positive value which prevents CoreAnimation from replacing `0.0` with [`CACurrentMediaTime()`](https://developer.apple.com/documentation/quartzcore/cacurrentmediatime()).
+The constant is a small, non-zero, positive value which prevents CoreAnimation from replacing `0.0` with [`CACurrentMediaTime()`](../QuartzCore/cacurrentmediatime%28%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # playoutLimit
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time offset at which playback of the interstitial ends.
 
@@ -20,23 +21,28 @@ The time offset at which playback of the interstitial ends.
 var playoutLimit: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime playoutLimit;
+```
+
 #### Discussion
 
-This value can be any positive numeric value, or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) (the default) which indicates no limit.
+This value can be any positive numeric value, or [`invalid`](../../CoreMedia/cmtime/invalid.md) (the default) which indicates no limit.
 
 ## See Also
 
-- [var time: CMTime](avplayerinterstitialevent/time.md)
+### Inspecting timing
+- [var time: CMTime](./time.md)
   A time within the timeline of the primary content that playback of interstitial content begins.
-- [var date: Date?](avplayerinterstitialevent/date.md)
+- [var date: Date?](./date.md)
   A date within the date range of the primary content that playback of interstitial content begins.
-- [var willPlayOnce: Bool](avplayerinterstitialevent/willplayonce.md)
+- [var willPlayOnce: Bool](./willplayonce.md)
   A Boolean value that indicates whether to schedule this event one time only and suppress subsequent replay.
-- [var resumptionOffset: CMTime](avplayerinterstitialevent/resumptionoffset.md)
+- [var resumptionOffset: CMTime](./resumptionoffset.md)
   A time offset at which playback of primary content resumes after interstitial content finishes.
-- [var alignsStartWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsstartwithprimarysegmentboundary.md)
+- [var alignsStartWithPrimarySegmentBoundary: Bool](./alignsstartwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the start time of interstitial playback should snap to a segment boundary of the primary asset.
-- [var alignsResumptionWithPrimarySegmentBoundary: Bool](avplayerinterstitialevent/alignsresumptionwithprimarysegmentboundary.md)
+- [var alignsResumptionWithPrimarySegmentBoundary: Bool](./alignsresumptionwithprimarysegmentboundary.md)
   A Boolean value that indicates whether the resumption time of primary playback should snap to a segment boundary of the primary asset.
 
 

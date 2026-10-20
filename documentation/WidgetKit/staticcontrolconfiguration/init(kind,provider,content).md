@@ -1,7 +1,8 @@
 # init(kind:provider:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a control, with no user-configurable options.
 
@@ -18,6 +19,8 @@ Creates a configuration for a control, with no user-configurable options.
 @MainActor
 @preconcurrency init<Provider>(kind: String, provider: Provider, @ControlWidgetTemplateBuilder content: @escaping (Provider.Value) -> Content) where Provider : ControlValueProvider
 ```
+
+Available when `Content` conforms to `ControlWidgetTemplate`.
 
 ## Parameters
 

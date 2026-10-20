@@ -1,23 +1,28 @@
 # CFCalendarSetTimeZone(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the time zone for a calendar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCalendarSetTimeZone(_ calendar: CFCalendar!, _ tz: CFTimeZone!)
+```
+
+```c
+extern void CFCalendarSetTimeZone(CFCalendarRef calendar, CFTimeZoneRef tz);
 ```
 
 ## Parameters
@@ -27,7 +32,8 @@ func CFCalendarSetTimeZone(_ calendar: CFCalendar!, _ tz: CFTimeZone!)
 
 ## See Also
 
-- [func CFCalendarCopyTimeZone(CFCalendar!) -> CFTimeZone!](cfcalendarcopytimezone(_:).md)
+### Getting and Setting the Time Zone
+- [func CFCalendarCopyTimeZone(CFCalendar!) -> CFTimeZone!](./cfcalendarcopytimezone%28_%29.md)
   Returns a time zone object for a specified calendar.
 
 

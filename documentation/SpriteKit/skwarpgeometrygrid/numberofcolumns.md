@@ -1,7 +1,8 @@
 # numberOfColumns
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object’s number of columns.
 
@@ -20,11 +21,16 @@ The object’s number of columns.
 var numberOfColumns: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfColumns;
+```
+
 ## See Also
 
-- [var numberOfRows: Int](skwarpgeometrygrid/numberofrows.md)
+### Accessing or Setting Warp Geometry Grid Size
+- [var numberOfRows: Int](./numberofrows.md)
   The object’s number of rows.
-- [var vertexCount: Int](skwarpgeometrygrid/vertexcount.md)
+- [var vertexCount: Int](./vertexcount.md)
   The object’s total number of vertices.
 
 

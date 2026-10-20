@@ -1,7 +1,8 @@
 # CMMotionActivityConfidence.low
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Confidence is low.
 
@@ -19,11 +20,16 @@ Confidence is low.
 case low
 ```
 
+```c
+CMMotionActivityConfidenceLow
+```
+
 ## See Also
 
-- [CMMotionActivityConfidence.medium](cmmotionactivityconfidence/medium.md)
+### Constants
+- [CMMotionActivityConfidence.medium](./medium.md)
   Confidence is good.
-- [CMMotionActivityConfidence.high](cmmotionactivityconfidence/high.md)
+- [CMMotionActivityConfidence.high](./high.md)
   Confidence is high.
 
 

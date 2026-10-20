@@ -1,7 +1,8 @@
 # contentInset
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance that the content is inset from the edge of the browser view.
 
@@ -16,17 +17,22 @@ The distance that the content is inset from the edge of the browser view.
 var contentInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIEdgeInsets contentInset;
+```
+
 #### Discussion
 
-Use this property to add to the scrollable area around the content. The insets are measured in points. The default value is [`zero`](https://developer.apple.com/documentation/uikit/uiedgeinsets/zero).
+Use this property to add to the scrollable area around the content. The insets are measured in points. The default value is [`zero`](../../UIKit/uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var contentOffset: CGPoint](msstickerbrowserview/contentoffset.md)
+### Managing the Browser’s Appearance
+- [var contentOffset: CGPoint](./contentoffset.md)
   The distance that the content is offset from the browser’s origin.
-- [func setContentOffset(CGPoint, animated: Bool)](msstickerbrowserview/setcontentoffset(_:animated:).md)
+- [func setContentOffset(CGPoint, animated: Bool)](./setcontentoffset%28_,animated%29.md)
   Sets the offset distance between the content and the browser’s origin.
-- [var stickerSize: MSStickerSize](msstickerbrowserview/stickersize.md)
+- [var stickerSize: MSStickerSize](./stickersize.md)
   The size of the stickers in the browser.
 
 

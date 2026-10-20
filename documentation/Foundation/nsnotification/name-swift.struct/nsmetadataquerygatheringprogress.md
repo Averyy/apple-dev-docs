@@ -1,7 +1,8 @@
 # NSMetadataQueryGatheringProgress
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted as the receiver is collecting results during the initial result-gathering phase of the query.
 
@@ -20,13 +21,18 @@ Posted as the receiver is collecting results during the initial result-gathering
 static let NSMetadataQueryGatheringProgress: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSMetadataQueryGatheringProgressNotification;
+```
+
 ## See Also
 
-- [static let NSMetadataQueryDidFinishGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering.md)
+### Working with notifications
+- [static let NSMetadataQueryDidFinishGathering: NSNotification.Name](./nsmetadataquerydidfinishgathering.md)
   Posted when the receiver has finished with the initial result-gathering phase of the query.
-- [static let NSMetadataQueryDidStartGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidstartgathering.md)
+- [static let NSMetadataQueryDidStartGathering: NSNotification.Name](./nsmetadataquerydidstartgathering.md)
   Posted when the receiver begins with the initial result-gathering phase of the query.
-- [static let NSMetadataQueryDidUpdate: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidupdate.md)
+- [static let NSMetadataQueryDidUpdate: NSNotification.Name](./nsmetadataquerydidupdate.md)
   Posted when the receiver’s results have changed during the live-update phase of the query.
 
 

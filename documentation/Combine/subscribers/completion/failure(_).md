@@ -1,7 +1,8 @@
 # Subscribers.Completion.failure(_:)
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The publisher stopped publishing due to the indicated error.
 
@@ -22,7 +23,8 @@ case failure(Failure)
 
 ## See Also
 
-- [Subscribers.Completion.finished](subscribers/completion/finished.md)
+### Completion states
+- [Subscribers.Completion.finished](./finished.md)
   The publisher finished normally.
 
 

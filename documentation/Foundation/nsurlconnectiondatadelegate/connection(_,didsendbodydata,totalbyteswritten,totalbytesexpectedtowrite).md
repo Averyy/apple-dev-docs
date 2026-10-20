@@ -1,7 +1,8 @@
 # connection(_:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent as the body (message data) of a request is transmitted (such as in an HTTP POST request).
 
@@ -20,6 +21,10 @@ Sent as the body (message data) of a request is transmitted (such as in an HTTP 
 optional func connection(_ connection: NSURLConnection, didSendBodyData bytesWritten: Int, totalBytesWritten: Int, totalBytesExpectedToWrite: Int)
 ```
 
+```objc
+- (void) connection:(NSURLConnection *) connection didSendBodyData:(NSInteger) bytesWritten totalBytesWritten:(NSInteger) totalBytesWritten totalBytesExpectedToWrite:(NSInteger) totalBytesExpectedToWrite;
+```
+
 #### Discussion
 
 This method provides an estimate of the progress of a URL upload.
@@ -35,7 +40,8 @@ The value of `totalBytesExpectedToWrite` may change during the upload if the req
 
 ## See Also
 
-- [func connectionDidFinishLoading(NSURLConnection)](nsurlconnectiondatadelegate/connectiondidfinishloading(_:).md)
+### Receiving Connection Progress
+- [func connectionDidFinishLoading(NSURLConnection)](./connectiondidfinishloading%28_%29.md)
   Sent when a connection has finished loading successfully.
 
 

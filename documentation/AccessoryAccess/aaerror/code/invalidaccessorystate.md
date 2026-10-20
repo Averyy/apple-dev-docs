@@ -1,7 +1,8 @@
 # AAError.Code.invalidAccessoryState
 
 **Framework**: Accessory Access  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error value that indicates the accessory isn’t in the correct state for the current operation.
 
@@ -14,13 +15,18 @@ An error value that indicates the accessory isn’t in the correct state for the
 case invalidAccessoryState
 ```
 
+```c
+AAErrorCodeInvalidAccessoryState
+```
+
 ## See Also
 
-- [AAError.Code.accessoryListenerAlreadyRegistered](aaerror/code/accessorylisteneralreadyregistered.md)
+### Error codes
+- [AAError.Code.accessoryListenerAlreadyRegistered](./accessorylisteneralreadyregistered.md)
   An error code that indicates there’s already an accessory listener for the USB accessory.
-- [AAError.Code.accessoryNotAccessible](aaerror/code/accessorynotaccessible.md)
+- [AAError.Code.accessoryNotAccessible](./accessorynotaccessible.md)
   An error code that indicates the USB accessory isn’t accessible since it may already be in use.
-- [AAError.Code.internalError](aaerror/code/internalerror.md)
+- [AAError.Code.internalError](./internalerror.md)
   An error value that represents an internal error.
 
 

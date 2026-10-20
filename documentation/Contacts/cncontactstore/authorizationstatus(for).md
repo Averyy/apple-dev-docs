@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the current authorization status to access the contact data.
 
@@ -19,9 +20,13 @@ Returns the current authorization status to access the contact data.
 class func authorizationStatus(for entityType: CNEntityType) -> CNAuthorizationStatus
 ```
 
+```objc
++ (CNAuthorizationStatus) authorizationStatusForEntityType:(CNEntityType) entityType;
+```
+
 ## Mentions
 
-- [Accessing the contact store](accessing-the-contact-store.md)
+- [Accessing the contact store](../accessing-the-contact-store.md)
 
 #### Return Value
 
@@ -33,15 +38,16 @@ Based on the authorization status, your application might display or hide its UI
 
 ## Parameters
 
-- `entityType`: Set to [`CNEntityType`](cnentitytype.md).
+- `entityType`: Set to [`CNEntityType`](../cnentitytype.md).
 
 ## See Also
 
-- [func requestAccess(for: CNEntityType, completionHandler: (Bool, (any Error)?) -> Void)](cncontactstore/requestaccess(for:completionhandler:).md)
+### Requesting access to the user’s contacts
+- [func requestAccess(for: CNEntityType, completionHandler: (Bool, (any Error)?) -> Void)](./requestaccess%28for,completionhandler%29.md)
   Requests access to the user’s contacts.
-- [enum CNAuthorizationStatus](cnauthorizationstatus.md)
+- [enum CNAuthorizationStatus](../cnauthorizationstatus.md)
   An authorization status the user can grant for an app to access the specified entity type.
-- [enum CNEntityType](cnentitytype.md)
+- [enum CNEntityType](../cnentitytype.md)
   The entities the user can grant access to.
 
 

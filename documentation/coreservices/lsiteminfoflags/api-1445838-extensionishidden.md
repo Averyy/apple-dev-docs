@@ -1,7 +1,8 @@
 # extensionIsHidden
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item has a hidden filename extension.
 

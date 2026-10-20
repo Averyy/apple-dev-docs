@@ -1,18 +1,19 @@
 # mbuf_is_traffic_class_privileged
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 int mbuf_is_traffic_class_privileged(mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 Non-zero if privileged, 0 otherwise.
 

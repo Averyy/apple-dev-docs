@@ -1,7 +1,8 @@
 # MPSCNNFullyConnectedNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a fully connected convolution layer, also known as an inner product layer.
 
@@ -19,27 +20,32 @@ A representation of a fully connected convolution layer, also known as an inner 
 class MPSCNNFullyConnectedNode
 ```
 
+```objc
+@interface MPSCNNFullyConnectedNode : MPSCNNConvolutionNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](mpscnnfullyconnectednode/init(source:weights:).md)
+- [init(source: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)](./mpscnnfullyconnectednode/init%28source,weights%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNConvolutionNode](mpscnnconvolutionnode.md)
+- [MPSCNNConvolutionNode](./mpscnnconvolutionnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MPSNNTrainableNode](mpsnntrainablenode.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MPSNNTrainableNode](./mpsnntrainablenode.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNBinaryFullyConnectedNode](mpscnnbinaryfullyconnectednode.md)
+### Fully Connected Layer Nodes
+- [class MPSCNNBinaryFullyConnectedNode](./mpscnnbinaryfullyconnectednode.md)
   A representation of a fully connected convolution layer with binary weights and optionally binarized input image.
 
 

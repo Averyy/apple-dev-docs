@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked when the distributed target execution of a `Void` returning function has completed successfully.
@@ -12,7 +13,7 @@ Invoked when the distributed target execution of a `Void` returning function has
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

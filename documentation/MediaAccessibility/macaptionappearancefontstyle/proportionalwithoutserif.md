@@ -1,7 +1,8 @@
 # MACaptionAppearanceFontStyle.proportionalWithoutSerif
 
 **Framework**: Media Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The font style preferred for the proportional sans serif font style.
 
@@ -19,21 +20,26 @@ The font style preferred for the proportional sans serif font style.
 case proportionalWithoutSerif
 ```
 
+```c
+kMACaptionAppearanceFontStyleProportionalWithoutSerif
+```
+
 ## See Also
 
-- [MACaptionAppearanceFontStyle.default](macaptionappearancefontstyle/default.md)
+### Constants
+- [MACaptionAppearanceFontStyle.default](./default.md)
   The default font style for all caption text.
-- [MACaptionAppearanceFontStyle.monospacedWithSerif](macaptionappearancefontstyle/monospacedwithserif.md)
+- [MACaptionAppearanceFontStyle.monospacedWithSerif](./monospacedwithserif.md)
   The font style preferred for the monospaced serif font style.
-- [MACaptionAppearanceFontStyle.proportionalWithSerif](macaptionappearancefontstyle/proportionalwithserif.md)
+- [MACaptionAppearanceFontStyle.proportionalWithSerif](./proportionalwithserif.md)
   The font style preferred for the proportional serif font style.
-- [MACaptionAppearanceFontStyle.monospacedWithoutSerif](macaptionappearancefontstyle/monospacedwithoutserif.md)
+- [MACaptionAppearanceFontStyle.monospacedWithoutSerif](./monospacedwithoutserif.md)
   The font style preferred for the monospaced sans serif font style.
-- [MACaptionAppearanceFontStyle.casual](macaptionappearancefontstyle/casual.md)
+- [MACaptionAppearanceFontStyle.casual](./casual.md)
   The font style preferred for the casual font style.
-- [MACaptionAppearanceFontStyle.cursive](macaptionappearancefontstyle/cursive.md)
+- [MACaptionAppearanceFontStyle.cursive](./cursive.md)
   The font style preferred for the cursive font style.
-- [MACaptionAppearanceFontStyle.smallCapital](macaptionappearancefontstyle/smallcapital.md)
+- [MACaptionAppearanceFontStyle.smallCapital](./smallcapital.md)
   The font style preferred for the small capital font style.
 
 

@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired range of transformed values.
 

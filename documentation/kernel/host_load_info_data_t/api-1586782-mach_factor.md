@@ -1,14 +1,15 @@
 # mach_factor
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 integer_t mach_factor[3];
 ```
 

@@ -1,17 +1,18 @@
 # Pixel Rotation Properties
 
-**Framework**: Video Toolbox
+**Framework**: Video Toolbox  
+**Role**: API Collection
 
 Properties used to configure a VideoToolbox pixel rotation session.
 
 ## Topics
 
 ### Configuration
-- [let kVTPixelRotationPropertyKey_Rotation: CFString](kvtpixelrotationpropertykey_rotation.md)
+- [let kVTPixelRotationPropertyKey_Rotation: CFString](./kvtpixelrotationpropertykey_rotation.md)
   A key that specifies the amount of rotation in degrees.
-- [let kVTPixelRotationPropertyKey_FlipVerticalOrientation: CFString](kvtpixelrotationpropertykey_flipverticalorientation.md)
+- [let kVTPixelRotationPropertyKey_FlipVerticalOrientation: CFString](./kvtpixelrotationpropertykey_flipverticalorientation.md)
   A key that specifies a vertical flip.
-- [let kVTPixelRotationPropertyKey_FlipHorizontalOrientation: CFString](kvtpixelrotationpropertykey_fliphorizontalorientation.md)
+- [let kVTPixelRotationPropertyKey_FlipHorizontalOrientation: CFString](./kvtpixelrotationpropertykey_fliphorizontalorientation.md)
   A key that specifies a horizontal flip.
 
 

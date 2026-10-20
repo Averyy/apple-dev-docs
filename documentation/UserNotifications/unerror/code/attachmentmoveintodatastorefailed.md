@@ -1,7 +1,8 @@
 # UNError.Code.attachmentMoveIntoDataStoreFailed
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred when trying to move an attachment to the system data store.
 
@@ -20,26 +21,31 @@ An error occurred when trying to move an attachment to the system data store.
 case attachmentMoveIntoDataStoreFailed
 ```
 
+```c
+UNErrorCodeAttachmentMoveIntoDataStoreFailed
+```
+
 ## See Also
 
-- [UNError.Code.notificationsNotAllowed](unerror/code/notificationsnotallowed.md)
+### Constants
+- [UNError.Code.notificationsNotAllowed](./notificationsnotallowed.md)
   Notifications aren’t allowed.
-- [UNError.Code.attachmentInvalidURL](unerror/code/attachmentinvalidurl.md)
+- [UNError.Code.attachmentInvalidURL](./attachmentinvalidurl.md)
   The URL for an attachment was invalid.
-- [UNError.Code.attachmentUnrecognizedType](unerror/code/attachmentunrecognizedtype.md)
+- [UNError.Code.attachmentUnrecognizedType](./attachmentunrecognizedtype.md)
   The file type of an attachment isn’t supported.
-- [UNError.Code.attachmentInvalidFileSize](unerror/code/attachmentinvalidfilesize.md)
+- [UNError.Code.attachmentInvalidFileSize](./attachmentinvalidfilesize.md)
   An attachment is too large.
-- [UNError.Code.attachmentNotInDataStore](unerror/code/attachmentnotindatastore.md)
+- [UNError.Code.attachmentNotInDataStore](./attachmentnotindatastore.md)
   The specified attachment isn’t in the system data store.
-- [UNError.Code.attachmentCorrupt](unerror/code/attachmentcorrupt.md)
+- [UNError.Code.attachmentCorrupt](./attachmentcorrupt.md)
   The file for an attachment is corrupt.
-- [UNError.Code.notificationInvalidNoDate](unerror/code/notificationinvalidnodate.md)
+- [UNError.Code.notificationInvalidNoDate](./notificationinvalidnodate.md)
   The notification doesn’t have an associated date, but should.
-- [UNError.Code.notificationInvalidNoContent](unerror/code/notificationinvalidnocontent.md)
+- [UNError.Code.notificationInvalidNoContent](./notificationinvalidnocontent.md)
   The notification has no user-facing content, but should.
-- [UNError.Code.contentProvidingInvalid](unerror/code/contentprovidinginvalid.md)
-- [UNError.Code.contentProvidingObjectNotAllowed](unerror/code/contentprovidingobjectnotallowed.md)
+- [UNError.Code.contentProvidingInvalid](./contentprovidinginvalid.md)
+- [UNError.Code.contentProvidingObjectNotAllowed](./contentprovidingobjectnotallowed.md)
 
 
 ---

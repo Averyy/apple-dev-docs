@@ -1,7 +1,8 @@
 # replacementCheckingResult(range:replacementString:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified replacement string.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified replacement string
 class func replacementCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) replacementCheckingResultWithRange:(NSRange) range replacementString:(NSString *) replacementString;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`replacement`](nstextcheckingresult/checkingtype/replacement.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`replacement`](./checkingtype/replacement.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var replacementString: String?](nstextcheckingresult/replacementstring.md)
+### Text Checking Results for Text Replacement
+- [var replacementString: String?](./replacementstring.md)
   A replacement string from one of a number of replacement checking results.
 
 

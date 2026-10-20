@@ -1,7 +1,8 @@
 # completionHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that graph calls at the completion of the execution.
 
@@ -17,6 +18,10 @@ The handler that graph calls at the completion of the execution.
 
 ```swift
 var completionHandler: MPSGraphCompletionHandler { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphCompletionHandler completionHandler;
 ```
 
 #### Discussion

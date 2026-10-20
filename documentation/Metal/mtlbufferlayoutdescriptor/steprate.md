@@ -1,7 +1,8 @@
 # stepRate
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How frequently the step function should load data.
 
@@ -19,17 +20,22 @@ How frequently the step function should load data.
 var stepRate: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger stepRate;
+```
+
 #### Discussion
 
 The interpretation of this value depends on the setting of `stepFunction`.
 
 ## See Also
 
-- [var stride: Int](mtlbufferlayoutdescriptor/stride.md)
+### Describing fetch behavior
+- [var stride: Int](./stride.md)
   The number of bytes from one buffer entry to the next.
-- [var stepFunction: MTLStepFunction](mtlbufferlayoutdescriptor/stepfunction.md)
+- [var stepFunction: MTLStepFunction](./stepfunction.md)
   Determines how and when compute functions fetch data.
-- [enum MTLStepFunction](mtlstepfunction.md)
+- [enum MTLStepFunction](../mtlstepfunction.md)
   The frequency and locations at which a function fetches attribute data.
 
 

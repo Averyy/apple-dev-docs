@@ -1,7 +1,8 @@
 # rightShoulder
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with right shoulder joint in a body pose.
 
@@ -21,9 +22,10 @@ static let rightShoulder: JointKey
 
 ## See Also
 
-- [static let neck: JointKey](jointkey/neck.md)
+### Getting neck and shoulder properties
+- [static let neck: JointKey](./neck.md)
   A key associated with neck joint in a body pose.
-- [static let leftShoulder: JointKey](jointkey/leftshoulder.md)
+- [static let leftShoulder: JointKey](./leftshoulder.md)
   A key associated with left shoulder joint in a body pose.
 
 

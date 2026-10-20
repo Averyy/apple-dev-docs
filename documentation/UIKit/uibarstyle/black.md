@@ -1,15 +1,16 @@
 # UIBarStyle.black
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A black background with light content.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ A black background with light content.
 case black
 ```
 
+```c
+UIBarStyleBlack
+```
+
 ## See Also
 
-- [UIBarStyle.default](uibarstyle/default.md)
+### Bar styles
+- [UIBarStyle.default](./default.md)
   The default style normally associated with the given view.
-- [static var blackOpaque: UIBarStyle](uibarstyle/blackopaque.md)
+- [static var blackOpaque: UIBarStyle](./blackopaque.md)
   A deprecated opaque style.
-- [UIBarStyle.blackTranslucent](uibarstyle/blacktranslucent.md)
+- [UIBarStyle.blackTranslucent](./blacktranslucent.md)
   A deprecated translucent style.
 
 

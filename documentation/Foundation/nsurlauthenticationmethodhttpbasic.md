@@ -1,7 +1,8 @@
 # NSURLAuthenticationMethodHTTPBasic
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use HTTP basic authentication for this protection space.
 
@@ -20,13 +21,18 @@ Use HTTP basic authentication for this protection space.
 let NSURLAuthenticationMethodHTTPBasic: String
 ```
 
+```c
+extern NSString * const NSURLAuthenticationMethodHTTPBasic;
+```
+
 ## See Also
 
-- [let NSURLAuthenticationMethodDefault: String](nsurlauthenticationmethoddefault.md)
+### Task-specific authentication challenges
+- [let NSURLAuthenticationMethodDefault: String](./nsurlauthenticationmethoddefault.md)
   Use the default authentication method for a protocol.
-- [let NSURLAuthenticationMethodHTMLForm: String](nsurlauthenticationmethodhtmlform.md)
+- [let NSURLAuthenticationMethodHTMLForm: String](./nsurlauthenticationmethodhtmlform.md)
   Use HTML form authentication for this protection space.
-- [let NSURLAuthenticationMethodHTTPDigest: String](nsurlauthenticationmethodhttpdigest.md)
+- [let NSURLAuthenticationMethodHTTPDigest: String](./nsurlauthenticationmethodhttpdigest.md)
   Use HTTP digest authentication for this protection space.
 
 

@@ -1,7 +1,8 @@
 # formSymmetricDifference(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the contents of this range set that are also in the given set and adds the contents of the given set that are not already in this range set.
 
@@ -19,6 +20,8 @@ Removes the contents of this range set that are also in the given set and adds t
 ```swift
 mutating func formSymmetricDifference(_ other: RangeSet<Bound>)
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 ## Parameters
 

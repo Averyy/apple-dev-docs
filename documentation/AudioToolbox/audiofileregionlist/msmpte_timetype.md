@@ -1,22 +1,27 @@
 # mSMPTE_TimeType
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SMPTE timing scheme used in the file. See Core Audio’s `CAFFile.h` header file for the values used here. For more information, see *Core Audio Overview*.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var mSMPTE_TimeType: UInt32
+```
+
+```c
+UInt32 mSMPTE_TimeType;
 ```
 
 

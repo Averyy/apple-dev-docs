@@ -1,7 +1,8 @@
 # CSSM_PROC_ADDR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_PROC_ADDR = () -> Void
+```
+
+```c
+typedef void (*)(void) CSSM_PROC_ADDR;
 ```
 
 

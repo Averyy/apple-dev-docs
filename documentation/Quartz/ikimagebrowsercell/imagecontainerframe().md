@@ -1,7 +1,8 @@
 # imageContainerFrame()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the receiver’s image container frame rectangle, which defines the position of the container of the thumbnail.
 
@@ -12,6 +13,10 @@ Returns the receiver’s image container frame rectangle, which defines the posi
 
 ```swift
 func imageContainerFrame() -> NSRect
+```
+
+```objc
+- (NSRect) imageContainerFrame;
 ```
 
 #### Return Value
@@ -26,13 +31,14 @@ Subclasses can override this method to customize the position of the thumbnail c
 
 ## See Also
 
-- [func frame() -> NSRect](ikimagebrowsercell/frame.md)
-  Returns the receiver’s frame rectangle, which defines its position in its [`IKImageBrowserView`](ikimagebrowserview.md).
-- [func imageFrame() -> NSRect](ikimagebrowsercell/imageframe.md)
-  Returns the receiver’s image frame rectangle, which defines the position of the thumbnail in its [`IKImageBrowserView`](ikimagebrowserview.md).
-- [func subtitleFrame() -> NSRect](ikimagebrowsercell/subtitleframe.md)
+### Cell Component Frames
+- [func frame() -> NSRect](./frame%28%29.md)
+  Returns the receiver’s frame rectangle, which defines its position in its [`IKImageBrowserView`](../ikimagebrowserview.md).
+- [func imageFrame() -> NSRect](./imageframe%28%29.md)
+  Returns the receiver’s image frame rectangle, which defines the position of the thumbnail in its [`IKImageBrowserView`](../ikimagebrowserview.md).
+- [func subtitleFrame() -> NSRect](./subtitleframe%28%29.md)
   Returns the receiver’s subtitle frame rectangle.
-- [func titleFrame() -> NSRect](ikimagebrowsercell/titleframe.md)
+- [func titleFrame() -> NSRect](./titleframe%28%29.md)
   Returns the receiver’s title frame rectangle.
 
 

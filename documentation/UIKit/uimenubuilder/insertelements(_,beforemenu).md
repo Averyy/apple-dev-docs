@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements before an identified menu.
@@ -17,6 +18,10 @@ Insert elements before an identified menu.
 
 ```swift
 func insertElements(_ insertedElements: [UIMenuElement], beforeMenu siblingIdentifier: UIMenu.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) insertedElements beforeMenuForIdentifier:(UIMenuIdentifier) siblingIdentifier;
 ```
 
 ## Parameters

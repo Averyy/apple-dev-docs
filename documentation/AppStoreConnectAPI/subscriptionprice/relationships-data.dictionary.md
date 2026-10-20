@@ -1,7 +1,8 @@
 # SubscriptionPrice.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPrice.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionPrice.Relationships.SubscriptionPricePoint](subscriptionprice/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
-- [object SubscriptionPrice.Relationships.Territory](subscriptionprice/relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionPrice.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
+- [object SubscriptionPrice.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object SubscriptionPrice.Relationships
 
 ## See Also
 
-- [object SubscriptionPrice.Attributes](subscriptionprice/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionPrice.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription price resource.
 
 

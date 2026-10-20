@@ -1,7 +1,8 @@
 # init(expected:arguments:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trajectory expectation for a single expected tool call.
 
@@ -27,7 +28,8 @@ init(expected toolName: String, arguments: [ArgumentMatcher] = [])
 
 ## See Also
 
-- [struct ToolExpectation](toolexpectation.md)
+### Creating a single-tool expectation
+- [struct ToolExpectation](../toolexpectation.md)
   A specification for an expected tool call, or a group of expectations that can be satisfied in any order.
 
 

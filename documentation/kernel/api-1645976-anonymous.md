@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,11 +19,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOReportFormatHistogram](1645976-anonymous/kioreportformathistogram.md)
-- [kIOReportFormatSimple](1645976-anonymous/kioreportformatsimple.md)
-- [kIOReportFormatSimpleArray](1645976-anonymous/kioreportformatsimplearray.md)
-- [kIOReportFormatState](1645976-anonymous/kioreportformatstate.md)
-- [kIOReportInvalidFormat](1645976-anonymous/kioreportinvalidformat.md)
+- [kIOReportFormatHistogram](./api-1645976-anonymous/kioreportformathistogram.md)
+- [kIOReportFormatSimple](./api-1645976-anonymous/kioreportformatsimple.md)
+- [kIOReportFormatSimpleArray](./api-1645976-anonymous/kioreportformatsimplearray.md)
+- [kIOReportFormatState](./api-1645976-anonymous/kioreportformatstate.md)
+- [kIOReportInvalidFormat](./api-1645976-anonymous/kioreportinvalidformat.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # errorNotPermissibleForGuestUserMode
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app attempted to write HealthKit data while in a Guest User session in visionOS.
 

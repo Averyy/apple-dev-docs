@@ -1,14 +1,15 @@
 # bitsPerColorComponent
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 UInt16 bitsPerColorComponent;
 ```
 

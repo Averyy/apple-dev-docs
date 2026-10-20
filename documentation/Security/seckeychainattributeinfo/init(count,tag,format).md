@@ -1,7 +1,8 @@
 # init(count:tag:format:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new attribute information structure.
 

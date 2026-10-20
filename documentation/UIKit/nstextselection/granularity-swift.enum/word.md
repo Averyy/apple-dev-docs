@@ -1,7 +1,8 @@
 # NSTextSelection.Granularity.word
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents selection by word.
 
@@ -18,15 +19,20 @@ A value that represents selection by word.
 case word
 ```
 
+```c
+NSTextSelectionGranularityWord
+```
+
 ## See Also
 
-- [NSTextSelection.Granularity.character](nstextselection/granularity-swift.enum/character.md)
+### Degrees of granularity
+- [NSTextSelection.Granularity.character](./character.md)
   A value that represents selection by character.
-- [NSTextSelection.Granularity.paragraph](nstextselection/granularity-swift.enum/paragraph.md)
+- [NSTextSelection.Granularity.paragraph](./paragraph.md)
   A value that represents selection by paragraph.
-- [NSTextSelection.Granularity.line](nstextselection/granularity-swift.enum/line.md)
+- [NSTextSelection.Granularity.line](./line.md)
   A value that represents selection by line.
-- [NSTextSelection.Granularity.sentence](nstextselection/granularity-swift.enum/sentence.md)
+- [NSTextSelection.Granularity.sentence](./sentence.md)
   A value that represents selection by sentence.
 
 

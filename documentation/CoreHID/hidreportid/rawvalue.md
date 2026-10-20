@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the report ID.
 

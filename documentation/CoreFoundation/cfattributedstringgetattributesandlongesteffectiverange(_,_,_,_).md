@@ -1,18 +1,19 @@
 # CFAttributedStringGetAttributesAndLongestEffectiveRange(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the attributes of an attributed string at a specified location.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the attributes of an attributed string at a specified location.
 func CFAttributedStringGetAttributesAndLongestEffectiveRange(_ aStr: CFAttributedString!, _ loc: CFIndex, _ inRange: CFRange, _ longestEffectiveRange: UnsafeMutablePointer<CFRange>!) -> CFDictionary!
 ```
 
+```c
+extern CFDictionaryRefCFAttributedStringGetAttributesAndLongestEffectiveRange(CFAttributedStringRef aStr, CFIndex loc, CFRange inRange, CFRange *longestEffectiveRange);
+```
+
 #### Return Value
 
-A dictionary that contains the attributes of `str` at the specified location. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+A dictionary that contains the attributes of `str` at the specified location. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ A dictionary that contains the attributes of `str` at the specified location. Ow
 
 ## See Also
 
-- [func CFAttributedStringGetAttribute(CFAttributedString!, CFIndex, CFString!, UnsafeMutablePointer<CFRange>!) -> CFTypeRef!](cfattributedstringgetattribute(_:_:_:_:).md)
+### Accessing Attributes
+- [func CFAttributedStringGetAttribute(CFAttributedString!, CFIndex, CFString!, UnsafeMutablePointer<CFRange>!) -> CFTypeRef!](./cfattributedstringgetattribute%28_,_,_,_%29.md)
   Returns the value of a given attribute of an attributed string at a specified location.
-- [func CFAttributedStringGetAttributes(CFAttributedString!, CFIndex, UnsafeMutablePointer<CFRange>!) -> CFDictionary!](cfattributedstringgetattributes(_:_:_:).md)
+- [func CFAttributedStringGetAttributes(CFAttributedString!, CFIndex, UnsafeMutablePointer<CFRange>!) -> CFDictionary!](./cfattributedstringgetattributes%28_,_,_%29.md)
   Returns the attributes of an attributed string at a specified location.
-- [func CFAttributedStringGetAttributeAndLongestEffectiveRange(CFAttributedString!, CFIndex, CFString!, CFRange, UnsafeMutablePointer<CFRange>!) -> CFTypeRef!](cfattributedstringgetattributeandlongesteffectiverange(_:_:_:_:_:).md)
+- [func CFAttributedStringGetAttributeAndLongestEffectiveRange(CFAttributedString!, CFIndex, CFString!, CFRange, UnsafeMutablePointer<CFRange>!) -> CFTypeRef!](./cfattributedstringgetattributeandlongesteffectiverange%28_,_,_,_,_%29.md)
   Returns the value of a given attribute of an attributed string at a specified location.
 
 

@@ -1,29 +1,31 @@
 # IOServiceName
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A string type for setting the name of the service in the system’s registry.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef char[128] IOServiceName;
 ```
 
 ## See Also
 
-- [RegisterService](ioservice/registerservice.md)
+### Registering the Service with IOKit
+- [RegisterService](./ioservice/registerservice.md)
   Starts the registration process for the service and performs any additional matching.
-- [SetName](ioservice/setname.md)
+- [SetName](./ioservice/setname.md)
   Sets the name of the service in the system’s registry.
-- [GetRegistryEntryID](ioservice/getregistryentryid.md)
+- [GetRegistryEntryID](./ioservice/getregistryentryid.md)
   Returns the registry ID for the current service.
 
 

@@ -1,7 +1,8 @@
 # sourceInstances(forEntityMappingName:destinationInstances:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the managed object instances in the source store used to create the given destination instances for the passed in property mapping.
 
@@ -10,7 +11,7 @@ Returns the managed object instances in the source store used to create the give
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the managed object instances in the source store used to create the give
 
 ```swift
 func sourceInstances(forEntityMappingName mappingName: String, destinationInstances: [NSManagedObject]?) -> [NSManagedObject]
+```
+
+```objc
+- (NSArray<__kindof NSManagedObject *> *) sourceInstancesForEntityMappingNamed:(NSString *) mappingName destinationInstances:(NSArray<__kindof NSManagedObject *> *) destinationInstances;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ This method throws an `NSInvalidArgumentException` exception if `mappingName` is
 
 ## See Also
 
-- [func associate(sourceInstance: NSManagedObject, withDestinationInstance: NSManagedObject, for: NSEntityMapping)](nsmigrationmanager/associate(sourceinstance:withdestinationinstance:for:).md)
+### Managing Sources and Destinations
+- [func associate(sourceInstance: NSManagedObject, withDestinationInstance: NSManagedObject, for: NSEntityMapping)](./associate%28sourceinstance,withdestinationinstance,for%29.md)
   Associates a given source managed object instance with an array of destination instances for a given property mapping.
-- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](nsmigrationmanager/destinationinstances(forentitymappingname:sourceinstances:).md)
+- [func destinationInstances(forEntityMappingName: String, sourceInstances: [NSManagedObject]?) -> [NSManagedObject]](./destinationinstances%28forentitymappingname,sourceinstances%29.md)
   Returns the managed object instances created in the destination store for the named entity mapping for the given array of source instances.
 
 

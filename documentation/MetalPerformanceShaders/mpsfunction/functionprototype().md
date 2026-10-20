@@ -1,7 +1,8 @@
 # functionPrototype()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,13 +18,17 @@
 func functionPrototype() -> String
 ```
 
+```objc
+- (NSString *) functionPrototype;
+```
+
 #### Discussion
 
 Get a source level representation of the function prototype
 
 If your application is building its shaders from source at run time, this string will declare the appropriate function prototypes for the conversion routine appropriate to the version of MetalHDR you are currently running.
 
-```None
+```
          Note: It is expected that most applications will not use this interface because they
          are building kernels offline from a .metallib. Such applications should simply:
 

@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this vertex attribute is active.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether this vertex attribute is active.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A Boolean value that indicates whether this vertex attribute is active.
 var isActive: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isActive) BOOL active;
+```
+
 #### Discussion
 
-If [`false`](https://developer.apple.com/documentation/swift/false), this attribute is inactive and can be ignored.
+If [`false`](../../Swift/false.md), this attribute is inactive and can be ignored.
 
 ## See Also
 
-- [var name: String](mtlvertexattribute/name.md)
+### Describing the attribute
+- [var name: String](./name.md)
   The name of the attribute.
-- [var attributeIndex: Int](mtlvertexattribute/attributeindex.md)
+- [var attributeIndex: Int](./attributeindex.md)
   The index of the attribute, as declared in Metal shader source code.
-- [var attributeType: MTLDataType](mtlvertexattribute/attributetype.md)
+- [var attributeType: MTLDataType](./attributetype.md)
   The data type for the attribute, as declared in Metal shader source code.
-- [var isPatchControlPointData: Bool](mtlvertexattribute/ispatchcontrolpointdata.md)
+- [var isPatchControlPointData: Bool](./ispatchcontrolpointdata.md)
   A Boolean value that indicates whether this vertex attribute represents control point data.
-- [var isPatchData: Bool](mtlvertexattribute/ispatchdata.md)
+- [var isPatchData: Bool](./ispatchdata.md)
   A Boolean value that indicates whether this vertex attribute represents patch data.
 
 

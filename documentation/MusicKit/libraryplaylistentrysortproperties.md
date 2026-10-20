@@ -1,7 +1,8 @@
 # LibraryPlaylistEntrySortProperties
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Playlist entry properties your app uses to sort results for a library request.
 

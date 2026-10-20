@@ -1,7 +1,8 @@
 # Default Navigation
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether an app can be the default navigation app on someone’s device.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether an app can be the default navigation app 
 - iOS 18.4+
 - iPadOS 18.4+
 
+## Details
+
+- **Name**: `com.apple.developer.navigation-app`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

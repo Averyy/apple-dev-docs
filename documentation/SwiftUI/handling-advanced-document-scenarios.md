@@ -1,18 +1,19 @@
 # Handling advanced document scenarios
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Extend your document-based app to support custom file formats, on-demand file access, and progress reporting.
 
 #### Overview
 
-After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [`UTType`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
+After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [UTType](../UniformTypeIdentifiers/uttype.md). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](./urldocumentconfiguration/makefilecoordinator%28%29.md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
 
-> **Note**: If you’re new to document-based apps in SwiftUI, start with [`Creating a document-based app`](creating-a-document-based-app.md).
+> **Note**: If you’re new to document-based apps in SwiftUI, start with [Creating a document-based app](./creating-a-document-based-app.md).
 
-#### Declare a Custom File Format
+#### Declare a custom file format
 
-The system knows about popular built-in formats and their identifiers, like [`utf8PlainText`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/utf8plaintext), [`jpeg`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/jpeg), and [`markdown`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/markdown). For your own file formats, declare a custom [`UTType`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype) so the Finder, the document browser, and Spotlight understand them.
+The system knows about popular built-in formats and their identifiers, like [utf8PlainText](../UniformTypeIdentifiers/uttype-swift.struct/utf8plaintext.md), [jpeg](../UniformTypeIdentifiers/uttype-swift.struct/jpeg.md), and [markdown](../UniformTypeIdentifiers/uttype-swift.struct/markdown.md). For your own file formats, declare a custom [`UTType`](../UniformTypeIdentifiers/uttype.md) so the Finder, the document browser, and Spotlight understand them.
 
 Every custom type needs a base type that tells the system what kind of file it is. Use `public.data` or conforming types as a base type for single-file documents, or `com.apple.package` for documents the system stores as a directory but presents as a single file.
 
@@ -47,18 +48,18 @@ extension UTType {
 }
 ```
 
-Then reference your type from the document’s [`readableContentTypes`](readabledocument/readablecontenttypes.md) and [`writableContentTypes`](writabledocument/writablecontenttypes.md), like this:
+Then reference your type from the document’s [`readableContentTypes`](./readabledocument/readablecontenttypes.md) and [`writableContentTypes`](./writabledocument/writablecontenttypes.md), like this:
 
 ```swift
 static let readableContentTypes: [UTType] = [.notebook]
 static let writableContentTypes: [UTType] = [.notebook, .utf8PlainText]
 ```
 
-For more about declaring uniform type identifiers for proprietary formats, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app).
+For more about declaring uniform type identifiers for proprietary formats, see [Defining file and data types for your app](../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md).
 
 > **Note**: Every Mac registers the standard content types that the system provides, but the set of less common types each computer recognizes depends on the software installed on it. A computer might not recognize certain media types, for example, if no installed app declares them. Similarly, a computer that doesn’t have Xcode installed doesn’t recognize `com.apple.xcode.resultbundle`, the type identifier for Xcode result bundles.
 
-#### Access Files Outside Read and Write
+#### Access files outside read and write
 
 SwiftUI coordinates file access for `read` and `write` calls automatically. To access the file URL at other times — for example, when reading a specific subfile in a package — use the configuration’s file coordinator, as shown here:
 
@@ -77,15 +78,15 @@ coordinator.coordinate(
 }
 ```
 
-> ❗ **Important**: Always use [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md) for disk access outside of `read` and `write`. Accessing the file URL directly risks corruption because other processes, including iCloud, can change it any time.
+> ❗ **Important**: Always use [`makeFileCoordinator()`](./urldocumentconfiguration/makefilecoordinator%28%29.md) for disk access outside of `read` and `write`. Accessing the file URL directly risks corruption because other processes, including iCloud, can change it any time.
 
-#### Report Progress
+#### Report progress
 
 Packages let you read and write incrementally; instead of loading or saving the whole document on every change, you can read only the files you need and write only the ones that changed. For notebook documents that consist of multiple files, custom image formats that store data in separate files, or projects with embedded media, this can mean the difference between a fast autosave and a slow one.
 
-Both [`DocumentReader`](documentreader.md) and [`DocumentWriter`](documentwriter.md) receive a [`Subprogress`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/subprogress) parameter via their `read` and `write` methods, respectively. Report progress through the parameter so SwiftUI can display the appropriate UI during long operations.
+Both [`DocumentReader`](./documentreader.md) and [`DocumentWriter`](./documentwriter.md) receive a [Subprogress](../Foundation/subprogress.md) parameter via their `read` and `write` methods, respectively. Report progress through the parameter so SwiftUI can display the appropriate UI during long operations.
 
-Create a [`ProgressReporter`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter) from the [`Subprogress`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/subprogress) by specifying a total unit count. Then call [`complete(count:)`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter/complete(count:)) as the work finishes, like this:
+Create a [ProgressReporter](../Foundation/progressreporter.md) from the [`Subprogress`](../Foundation/subprogress.md) by specifying a total unit count. Then call [complete(count:)](../Foundation/progressreporter/complete%28count%29.md) as the work finishes, like this:
 
 ```swift
 @concurrent 
@@ -141,7 +142,7 @@ func write(
 }
 ```
 
-If you use [`FileHandle`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/filehandle) or [`OutputStream`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/outputstream) to write files in chunks — for example, a large media file — report progress after each chunk rather than only once at the end. Each call to [`complete(count:)`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter/complete(count:)) moves the progress bar forward, so spread the calls throughout the write.
+If you use [FileHandle](../Foundation/filehandle.md) or [OutputStream](../Foundation/outputstream.md) to write files in chunks — for example, a large media file — report progress after each chunk rather than only once at the end. Each call to [`complete(count:)`](../Foundation/progressreporter/complete%28count%29.md) moves the progress bar forward, so spread the calls throughout the write.
 
 The example below writes a large media file to disk in chunks. Set the total unit count to the file size in bytes, and call the reporter after each chunk so the progress bar updates smoothly.
 
@@ -181,21 +182,22 @@ func write(
 }
 ```
 
-The chunk size adapts to the file size, so large files don’t generate unnecessary system overhead. If you stream to an [`OutputStream`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/outputstream) instead, the same pattern applies: Open the stream, write chunks of the computed size, call [`complete(count:)`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/progressreporter/complete(count:)) with the bytes written, and call `ProgresManager.complete(count:)` when finished.
+The chunk size adapts to the file size, so large files don’t generate unnecessary system overhead. If you stream to an [`OutputStream`](../Foundation/outputstream.md) instead, the same pattern applies: Open the stream, write chunks of the computed size, call [`complete(count:)`](../Foundation/progressreporter/complete%28count%29.md) with the bytes written, and call `ProgresManager.complete(count:)` when finished.
 
 > **Note**: Even when you report progress, SwiftUI decides whether to show a progress view.
 
 ## See Also
 
-- [Creating a document-based app](creating-a-document-based-app.md)
+### Creating a document
+- [Creating a document-based app](./creating-a-document-based-app.md)
   Build apps that people can use to open, edit, and save files using coordinated file access.
-- [Updating your document-based app](updating-your-document-based-app.md)
+- [Updating your document-based app](./updating-your-document-based-app.md)
   Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
-- [Building a document-based app with SwiftUI](building-a-document-based-app-with-swiftui.md)
+- [Building a document-based app with SwiftUI](./building-a-document-based-app-with-swiftui.md)
   Create, save, and open documents in a multiplatform app.
-- [Building a document-based app using SwiftData](building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](./building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
-- [struct DocumentGroup](documentgroup.md)
+- [struct DocumentGroup](./documentgroup.md)
   A scene that enables support for opening, creating, and saving documents.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the file provider to create or import an item based on a template.
@@ -19,9 +20,13 @@ Tells the file provider to create or import an item based on a template.
 func createItem(basedOn itemTemplate: NSFileProviderItem, fields: NSFileProviderItemFields, contents url: URL?, options: NSFileProviderCreateItemOptions = [], request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress
 ```
 
+```objc
+- (NSProgress *) createItemBasedOnTemplate:(NSFileProviderItem) itemTemplate fields:(NSFileProviderItemFields) fields contents:(NSURL *) url options:(NSFileProviderCreateItemOptions) options request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSFileProviderItem createdItem, NSFileProviderItemFields stillPendingFields, BOOL shouldFetchContent, NSError *error)) completionHandler;
+```
+
 #### Return Value
 
-A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel())  on the progress object when an error occurs.
+A progress that tracks creating the item in your remote storage and uploading its content. The system automatically calls [`cancel()`](../../Foundation/progress/cancel%28%29.md)  on the progress object when an error occurs.
 
 #### Discussion
 
@@ -31,43 +36,46 @@ Implement this method to create an item in your remote storage that matches the 
 
 The `itemTemplate` parameter describes the item’s intended state, including:
 
-- **[`filename`](nsfileprovideritemprotocol/filename.md)**: The item’s name.
-- **[`contentType`](nsfileprovideritemprotocol/contenttype.md)**: The item’s type. The item can be a file, directory, symlink, or alias. [`UTTypeFolder`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypefolder), [`UTTypeSymbolicLink`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypesymboliclink), and [`UTTypeAliasFile`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttypealiasfile) types typically need special handling.
-- **[`parentItemIdentifier`](nsfileprovideritemprotocol/parentitemidentifier.md)**: The item’s location.
+- **[`filename`](../nsfileprovideritemprotocol/filename.md)**: The item’s name.
+- **[`contentType`](../nsfileprovideritemprotocol/contenttype.md)**: The item’s type. The item can be a file, directory, symlink, or alias. [`UTTypeFolder`](../../UniformTypeIdentifiers/uttypefolder.md), [`UTTypeSymbolicLink`](../../UniformTypeIdentifiers/uttypesymboliclink.md), and [`UTTypeAliasFile`](../../UniformTypeIdentifiers/uttypealiasfile.md) types typically need special handling.
+- **[`parentItemIdentifier`](../nsfileprovideritemprotocol/parentitemidentifier.md)**: The item’s location.
 
-The system sets the template’s [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md) to a unique value and guarantees that it remains the same for the specified item. For example, the system can reuse the identifier to replay this method after a crash.
+The system sets the template’s [`itemIdentifier`](../nsfileprovideritemprotocol/itemidentifier.md) to a unique value and guarantees that it remains the same for the specified item. For example, the system can reuse the identifier to replay this method after a crash.
 
-In general, set the properties in your `createdItem` to match the `itemTemplate`. One exception is the [`itemIdentifier`](nsfileprovideritemprotocol/itemidentifier.md) property; always provide your own identifier for the item. If you reuse an existing identifier, the system replaces the local copy of the old item with the new one.
+In general, set the properties in your `createdItem` to match the `itemTemplate`. One exception is the [`itemIdentifier`](../nsfileprovideritemprotocol/itemidentifier.md) property; always provide your own identifier for the item. If you reuse an existing identifier, the system replaces the local copy of the old item with the new one.
 
-If the item is a document, fetch its contents from the `url` parameter. Otherwise, the `url` is `nil`. For symlinks, you can access the content using the template’s [`symlinkTargetPath`](nsfileprovideritemprotocol/symlinktargetpath.md) parameter. For both symlinks and aliases, make sure to return the correct UTI for the item,  because the UTI can’t be inferred from the item’s filename.
+If the item is a document, fetch its contents from the `url` parameter. Otherwise, the `url` is `nil`. For symlinks, you can access the content using the template’s [`symlinkTargetPath`](../nsfileprovideritemprotocol/symlinktargetpath.md) parameter. For both symlinks and aliases, make sure to return the correct UTI for the item,  because the UTI can’t be inferred from the item’s filename.
 
-If you are reimporting an item and the system finds a local copy without any content, it sets the [`mayAlreadyExist`](nsfileprovidercreateitemoptions/mayalreadyexist.md) option, and sets the `url` to nil. In this case, if you can’t match the item with an existing item from remote storage, pass `nil` as the completion handler’s `createdItem` parameter. The system then deletes the local copy of the item.
+If you are reimporting an item and the system finds a local copy without any content, it sets the [`mayAlreadyExist`](../nsfileprovidercreateitemoptions/mayalreadyexist.md) option, and sets the `url` to nil. In this case, if you can’t match the item with an existing item from remote storage, pass `nil` as the completion handler’s `createdItem` parameter. The system then deletes the local copy of the item.
 
-If the attempt to create an item fails because the parent directory doesn’t exist, pass [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) to the handler. The system attempts to create the parent directory, and then tries to create the item again.
+If the attempt to create an item fails because the parent directory doesn’t exist, pass [`NSFileProviderError.Code.noSuchItem`](../nsfileprovidererror/code/nosuchitem.md) to the handler. The system attempts to create the parent directory, and then tries to create the item again.
 
 ## Parameters
 
 - `itemTemplate`: An object that defines the state of the new or imported item.
 - `fields`: The fields that you should apply to the new or imported item.
-- `url`: If the item is a file with the [`contents`](nsfileprovideritemfields/contents.md) field set, this is the URL to the item’s content. Otherwise, it’s `nil`.
+- `url`: If the item is a file with the [`contents`](../nsfileprovideritemfields/contents.md) field set, this is the URL to the item’s content. Otherwise, it’s `nil`.
 - `options`: The item creation options.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after uploading the item to your remote storage. You pass the following parameters: - **`createdItem`**: The newly created item.
-- **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
-- **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
-- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that you call after uploading the item to your remote storage. You pass the following parameters:
+
+  - **`createdItem`**: The newly created item.
+  - **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
+  - **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
+  - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [struct NSFileProviderCreateItemOptions](nsfileprovidercreateitemoptions.md)
+### Managing Items
+- [struct NSFileProviderCreateItemOptions](../nsfileprovidercreateitemoptions.md)
   Options for creating items.
-- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/modifyitem(_:baseversion:changedfields:contents:options:request:completionhandler:).md)
+- [func modifyItem(NSFileProviderItem, baseVersion: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderModifyItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./modifyitem%28_,baseversion,changedfields,contents,options,request,completionhandler%29.md)
   Tells the file provider that an item’s content or metadata changed.
-- [struct NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions.md)
+- [struct NSFileProviderModifyItemOptions](../nsfileprovidermodifyitemoptions.md)
   Options for modifying items.
-- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).md)
+- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](./deleteitem%28identifier,baseversion,options,request,completionhandler%29.md)
   Tells the file provider to delete an item forever.
-- [struct NSFileProviderDeleteItemOptions](nsfileproviderdeleteitemoptions.md)
+- [struct NSFileProviderDeleteItemOptions](../nsfileproviderdeleteitemoptions.md)
   Options for deleting items.
 
 

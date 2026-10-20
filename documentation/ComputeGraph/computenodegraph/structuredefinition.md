@@ -1,7 +1,8 @@
 # ComputeNodeGraph.StructureDefinition
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named structure type, pairing a type name with its in-memory layout.
 
@@ -12,7 +13,7 @@ A named structure type, pairing a type name with its in-memory layout.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,26 +23,26 @@ struct StructureDefinition
 
 #### Overview
 
-A structure definition describes a composite value that can flow through a compute graph. It associates a Swift- or Metal-visible type name with a [`ComputeNodeGraph.StructureLayout`](computenodegraph/structurelayout.md) that lays out the structure’s members, their offsets, and its overall size and stride.
+A structure definition describes a composite value that can flow through a compute graph. It associates a Swift- or Metal-visible type name with a [`ComputeNodeGraph.StructureLayout`](./structurelayout.md) that lays out the structure’s members, their offsets, and its overall size and stride.
 
-Use a structure definition to refer to user-defined aggregate types from other graph types, such as [`ComputeNodeGraph.ValueType.structure(definition:)`](computenodegraph/valuetype/structure(definition:).md) or `ComputeNodeGraph/StateType/structure(typeName:layout:)`.
+Use a structure definition to refer to user-defined aggregate types from other graph types, such as [`ComputeNodeGraph.ValueType.structure(definition:)`](./valuetype/structure%28definition%29.md) or `ComputeNodeGraph/StateType/structure(typeName:layout:)`.
 
 ## Topics
 
 ### Initializers
-- [init(typeName: String, layout: ComputeNodeGraph.StructureLayout)](computenodegraph/structuredefinition/init(typename:layout:).md)
+- [init(typeName: String, layout: ComputeNodeGraph.StructureLayout)](./structuredefinition/init%28typename,layout%29.md)
 ### Instance Properties
-- [var layout: ComputeNodeGraph.StructureLayout](computenodegraph/structuredefinition/layout.md)
+- [var layout: ComputeNodeGraph.StructureLayout](./structuredefinition/layout.md)
   The in-memory layout of the structure’s members.
-- [var typeName: String](computenodegraph/structuredefinition/typename.md)
+- [var typeName: String](./structuredefinition/typename.md)
   The name used to refer to the structure type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

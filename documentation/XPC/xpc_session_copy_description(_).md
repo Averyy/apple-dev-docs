@@ -1,11 +1,12 @@
 # xpc_session_copy_description(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- Mac Catalyst 16.0+
-- macOS 13.0+
+- Mac Catalyst 16.0+ - Deprecated in 17.0 (renamed: debugDescription)
+- macOS 13.0+ - Deprecated in 14.0 (renamed: debugDescription)
 
 ## Declaration
 
@@ -15,11 +16,12 @@ func xpc_session_copy_description(_ session: any OS_xpc_object) -> UnsafeMutable
 
 ## See Also
 
-- [typealias xpc_session_t](xpc_session_t-49tiv.md)
-- [func xpc_session_create_mach_service(UnsafePointer<CChar>, dispatch_queue_t?, xpc_session_create_flags_t, AutoreleasingUnsafeMutablePointer<xpc_rich_error_t?>?) -> (any OS_xpc_object)?](xpc_session_create_mach_service(_:_:_:_:).md)
-- [func xpc_session_create_xpc_service(UnsafePointer<CChar>, dispatch_queue_t?, xpc_session_create_flags_t, AutoreleasingUnsafeMutablePointer<xpc_rich_error_t?>?) -> (any OS_xpc_object)?](xpc_session_create_xpc_service(_:_:_:_:).md)
-- [struct xpc_session_create_flags_t](xpc_session_create_flags_t-swift.struct.md)
-- [func xpc_session_set_target_queue(any OS_xpc_object, dispatch_queue_t?)](xpc_session_set_target_queue(_:_:).md)
+### Creating a session
+- [typealias xpc_session_t](./xpc_session_t-49tiv.md)
+- [func xpc_session_create_mach_service(UnsafePointer<CChar>, dispatch_queue_t?, xpc_session_create_flags_t, AutoreleasingUnsafeMutablePointer<xpc_rich_error_t?>?) -> (any OS_xpc_object)?](./xpc_session_create_mach_service%28_,_,_,_%29.md)
+- [func xpc_session_create_xpc_service(UnsafePointer<CChar>, dispatch_queue_t?, xpc_session_create_flags_t, AutoreleasingUnsafeMutablePointer<xpc_rich_error_t?>?) -> (any OS_xpc_object)?](./xpc_session_create_xpc_service%28_,_,_,_%29.md)
+- [struct xpc_session_create_flags_t](./xpc_session_create_flags_t-swift.struct.md)
+- [func xpc_session_set_target_queue(any OS_xpc_object, dispatch_queue_t?)](./xpc_session_set_target_queue%28_,_%29.md)
 
 
 ---

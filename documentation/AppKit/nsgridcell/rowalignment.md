@@ -1,7 +1,8 @@
 # rowAlignment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,12 +13,17 @@
 var rowAlignment: NSGridRow.Alignment { get set }
 ```
 
+```objc
+@property NSGridRowAlignment rowAlignment;
+```
+
 ## See Also
 
-- [var customPlacementConstraints: [NSLayoutConstraint]](nsgridcell/customplacementconstraints.md)
-- [var xPlacement: NSGridCell.Placement](nsgridcell/xplacement.md)
-- [var yPlacement: NSGridCell.Placement](nsgridcell/yplacement.md)
-- [NSGridCell.Placement](nsgridcell/placement.md)
+### Formatting the Cell
+- [var customPlacementConstraints: [NSLayoutConstraint]](./customplacementconstraints.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
+- [NSGridCell.Placement](./placement.md)
 
 
 ---

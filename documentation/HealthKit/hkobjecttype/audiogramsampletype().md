@@ -1,7 +1,8 @@
 # audiogramSampleType()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an audiogram sample type.
 
@@ -19,13 +20,17 @@ Returns an audiogram sample type.
 class func audiogramSampleType() -> HKAudiogramSampleType
 ```
 
+```objc
++ (HKAudiogramSampleType *) audiogramSampleType;
+```
+
 #### Return Value
 
-The shared [`HKAudiogramSampleType`](hkaudiogramsampletype.md) instance.
+The shared [`HKAudiogramSampleType`](../hkaudiogramsampletype.md) instance.
 
 #### Discussion
 
-This method returns an instance of the [`HKAudiogramSampleType`](hkaudiogramsampletype.md) concrete subclass. HealthKit uses this type to store and read audiogram data from the HealthKit store.
+This method returns an instance of the [`HKAudiogramSampleType`](../hkaudiogramsampletype.md) concrete subclass. HealthKit uses this type to store and read audiogram data from the HealthKit store.
 
 
 ---

@@ -1,16 +1,19 @@
 # shape
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the size of each dimension.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.0
+- iPadOS 14.5+ - Deprecated in 17.0
+- Mac Catalyst 14.5+ - Deprecated in 17.0
+- macOS 11.3+ - Deprecated in 14.0
+- tvOS 14.5+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 

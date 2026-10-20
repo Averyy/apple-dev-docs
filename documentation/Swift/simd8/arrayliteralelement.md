@@ -1,7 +1,8 @@
 # SIMD8.ArrayLiteralElement
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the elements of an array literal.
 

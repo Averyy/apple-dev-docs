@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the type of the action.
 
@@ -17,6 +18,10 @@ Returns the type of the action.
 
 ```swift
 var type: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * type;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # centerShoulder
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A joint name that represents the point between the shoulders.
 
@@ -19,19 +20,24 @@ A joint name that represents the point between the shoulders.
 static let centerShoulder: VNHumanBodyPose3DObservation.JointName
 ```
 
+```c
+extern VNHumanBodyPose3DObservationJointName const VNHumanBodyPose3DObservationJointNameCenterShoulder;
+```
+
 ## See Also
 
-- [static let leftShoulder: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftshoulder.md)
+### Getting the Arm Joint Names
+- [static let leftShoulder: VNHumanBodyPose3DObservation.JointName](./leftshoulder.md)
   A joint name that represents the left shoulder.
-- [static let rightShoulder: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightshoulder.md)
+- [static let rightShoulder: VNHumanBodyPose3DObservation.JointName](./rightshoulder.md)
   A joint name that represents the right shoulder.
-- [static let leftElbow: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftelbow.md)
+- [static let leftElbow: VNHumanBodyPose3DObservation.JointName](./leftelbow.md)
   A joint name that represents the left elbow.
-- [static let rightElbow: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightelbow.md)
+- [static let rightElbow: VNHumanBodyPose3DObservation.JointName](./rightelbow.md)
   A joint name that represents the right elbow.
-- [static let leftWrist: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/leftwrist.md)
+- [static let leftWrist: VNHumanBodyPose3DObservation.JointName](./leftwrist.md)
   A joint name that represents the left wrist.
-- [static let rightWrist: VNHumanBodyPose3DObservation.JointName](vnhumanbodypose3dobservation/jointname/rightwrist.md)
+- [static let rightWrist: VNHumanBodyPose3DObservation.JointName](./rightwrist.md)
   A joint name that represents the right wrist.
 
 

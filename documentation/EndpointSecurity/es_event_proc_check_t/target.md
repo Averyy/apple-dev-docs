@@ -1,13 +1,14 @@
 # target
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process targeted by this event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The process targeted by this event.
 var target: UnsafeMutablePointer<es_process_t>?
 ```
 
+```c
+es_process_t * target;
+```
+
 ## See Also
 
-- [var flavor: Int32](es_event_proc_check_t/flavor.md)
-  A representation of the information sought by a process based on the type member of [`es_event_proc_check_t`](es_event_proc_check_t.md).
-- [var type: es_proc_check_type_t](es_event_proc_check_t/type.md)
+### Inspecting Event Properties
+- [var flavor: Int32](./flavor.md)
+  A representation of the information sought by a process based on the type member of [`es_event_proc_check_t`](../es_event_proc_check_t.md).
+- [var type: es_proc_check_type_t](./type.md)
   The type of call number used to check the access on the target process.
-- [struct es_proc_check_type_t](es_proc_check_type_t.md)
+- [struct es_proc_check_type_t](../es_proc_check_type_t.md)
   The type of call used when a process checks on the access of the target process.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_proc_check_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./reserved.md)
   An unused field reserved for future use.
 
 

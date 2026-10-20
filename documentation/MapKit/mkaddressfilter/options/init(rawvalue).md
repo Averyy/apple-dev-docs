@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a filter options object.
 

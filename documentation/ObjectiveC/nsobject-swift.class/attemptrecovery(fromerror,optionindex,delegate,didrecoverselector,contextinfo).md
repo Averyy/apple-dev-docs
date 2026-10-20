@@ -1,23 +1,28 @@
 # attemptRecovery(fromError:optionIndex:delegate:didRecoverSelector:contextInfo:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implemented to attempt a recovery from an error noted in a document-modal sheet.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func attemptRecovery(fromError error: any Error, optionIndex recoveryOptionIndex: Int, delegate: Any?, didRecoverSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) attemptRecoveryFromError:(NSError *) error optionIndex:(NSUInteger) recoveryOptionIndex delegate:(id) delegate didRecoverSelector:(SEL) didRecoverSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -30,11 +35,11 @@ The `didRecoverSelector` should have the following signature:
 - (void)didPresentErrorWithRecovery:(BOOL)didRecover contextInfo:(void *)contextInfo;
 ```
 
-where `didRecover` is [`YES`](yes.md) if the error recovery attempt was successful; otherwise it is [`NO`](no.md).
+where `didRecover` is [`YES`](../yes.md) if the error recovery attempt was successful; otherwise it is [`NO`](../no.md).
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object that describes the error, including error recovery options.
+- `error`: An [`NSError`](../../Foundation/nserror.md) object that describes the error, including error recovery options.
 - `recoveryOptionIndex`: The index of the user selected recovery option in `error`’s localized recovery array.
 - `delegate`: An object that is the modal delegate.
 - `didRecoverSelector`: A selector identifying the method implemented by the modal delegate.

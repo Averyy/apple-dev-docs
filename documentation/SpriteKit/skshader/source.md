@@ -1,7 +1,8 @@
 # source
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source code for the shader.
 
@@ -10,7 +11,7 @@ The source code for the shader.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The source code for the shader.
 
 ```swift
 var source: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * source;
 ```
 
 #### Discussion

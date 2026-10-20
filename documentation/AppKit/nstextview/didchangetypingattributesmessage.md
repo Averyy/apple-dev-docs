@@ -1,7 +1,8 @@
 # NSTextView.DidChangeTypingAttributesMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct DidChangeTypingAttributesMessage
 ## Topics
 
 ### Initializers
-- [init(textView: NSTextView)](nstextview/didchangetypingattributesmessage/init(textview:).md)
+- [init(textView: NSTextView)](./didchangetypingattributesmessage/init%28textview%29.md)
 ### Instance Properties
-- [var textView: NSTextView](nstextview/didchangetypingattributesmessage/textview.md)
+- [var textView: NSTextView](./didchangetypingattributesmessage/textview.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,6 +1,8 @@
 # Processing Apple Immersive Video with foveation
 
-**Framework**: Immersive Media Support
+**Framework**: Immersive Media Support  
+**Role**: Sample Code  
+**Download**: [ProcessingAppleImmersiveVideoWithFoveation.zip](https://docs-assets.developer.apple.com/published/605d0f1360ab/ProcessingAppleImmersiveVideoWithFoveation.zip)
 
 Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
 
@@ -14,11 +16,11 @@ Apple Immersive Video (AIV) uses very high resolution cameras capable of capturi
 
 Because it’s impractical to stream that many pixels over even the fastest available networks, AIV can optionally use static foveation to reduce the overall resolution to a streamable 4K, while maintaining most of the perceptual resolution at the original 90 fps.
 
-> **Note**: This sample code project is associated with WWDC26 session 287: [`Build next generation experiences with visionOS 27`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/287).
+> **Note**: This sample code project is associated with WWDC26 session 287: [Build next generation experiences with visionOS 27](https://developer.apple.com/videos/play/wwdc2026/287).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
-To run this sample app, you need to [`download`](https://developer.apple.comhttps://devstreaming-cdn.apple.com/videos/streaming/examples/immersive-media/AIV/Apple_Immersive_Video_Dual_Track_Foveation.zip) and expand a zip file that contains an example QuickTime movie and supporting content.
+To run this sample app, you need to [download](https://devstreaming-cdn.apple.com/videos/streaming/examples/immersive-media/AIV/Apple_Immersive_Video_Dual_Track_Foveation.zip) and expand a zip file that contains an example QuickTime movie and supporting content.
 
 To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the command-line arguments to reference the downloaded files:
 
@@ -28,7 +30,8 @@ To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the c
 
 ## See Also
 
-- [Authoring Apple Immersive Video](authoring-apple-immersive-video.md)
+### Essentials
+- [Authoring Apple Immersive Video](./authoring-apple-immersive-video.md)
   Prepare and package immersive video content for delivery.
 
 

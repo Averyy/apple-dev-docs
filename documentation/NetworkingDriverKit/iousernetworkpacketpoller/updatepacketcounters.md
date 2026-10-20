@@ -1,14 +1,15 @@
 # updatePacketCounters
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 IOReturn updatePacketCounters(uint32_t packetCount, uint32_t byteCount);
 ```
 

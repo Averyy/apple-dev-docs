@@ -1,7 +1,8 @@
 # InvalidRequestError
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -21,15 +22,15 @@ struct InvalidRequestError
 ## Topics
 
 ### Instance Properties
-- [let code: Int64](invalidrequesterror/code.md)
-- [let message: String](invalidrequesterror/message.md)
+- [let code: Int64](./invalidrequesterror/code.md)
+- [let message: String](./invalidrequesterror/message.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

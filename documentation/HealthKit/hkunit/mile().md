@@ -1,22 +1,27 @@
 # mile()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring length in miles.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func mile() -> Self
+```
+
+```objc
++ (instancetype) mileUnit;
 ```
 
 #### Return Value
@@ -25,15 +30,16 @@ A HealthKit unit for measuring length in miles.
 
 ## See Also
 
-- [class func meter() -> Self](hkunit/meter.md)
+### Constructing length units
+- [class func meter() -> Self](./meter%28%29.md)
   Returns a HealthKit unit for measuring length in meters.
-- [class func meterUnit(with: HKMetricPrefix) -> Self](hkunit/meterunit(with:).md)
+- [class func meterUnit(with: HKMetricPrefix) -> Self](./meterunit%28with%29.md)
   Returns a HealthKit unit for measuring length, using meter units with the provided prefix.
-- [class func inch() -> Self](hkunit/inch.md)
+- [class func inch() -> Self](./inch%28%29.md)
   Returns a HealthKit unit for measuring length in inches.
-- [class func foot() -> Self](hkunit/foot.md)
+- [class func foot() -> Self](./foot%28%29.md)
   Returns a HealthKit unit for measuring length in feet.
-- [class func yard() -> Self](hkunit/yard.md)
+- [class func yard() -> Self](./yard%28%29.md)
   Returns a HealthKit unit for measuring length in yards.
 
 

@@ -1,7 +1,8 @@
 # nominal
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A level that indicates the system pressure is normal and not under pressure.
 
@@ -18,15 +19,20 @@ A level that indicates the system pressure is normal and not under pressure.
 static let nominal: AVCaptureDevice.SystemPressureState.Level
 ```
 
+```c
+extern AVCaptureSystemPressureLevel const AVCaptureSystemPressureLevelNominal;
+```
+
 ## See Also
 
-- [static let fair: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/fair.md)
+### System pressure levels
+- [static let fair: AVCaptureDevice.SystemPressureState.Level](./fair.md)
   A level that indicates that system pressure is slightly elevated.
-- [static let serious: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/serious.md)
+- [static let serious: AVCaptureDevice.SystemPressureState.Level](./serious.md)
   A level that indicates that system pressure is highly elevated.
-- [static let critical: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/critical.md)
+- [static let critical: AVCaptureDevice.SystemPressureState.Level](./critical.md)
   System pressure is critically elevated.
-- [static let shutdown: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/shutdown.md)
+- [static let shutdown: AVCaptureDevice.SystemPressureState.Level](./shutdown.md)
   System pressure is beyond critical, so the capture system has shut down.
 
 

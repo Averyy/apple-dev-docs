@@ -1,7 +1,8 @@
 # teleportCharacter(to:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the character instantly to a new position.
 
@@ -11,7 +12,7 @@ Moves the character instantly to a new position.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,11 +32,12 @@ This method moves the character to a location specified relative to another enti
 
 ## See Also
 
-- [var characterController: CharacterControllerComponent?](entity/charactercontroller.md)
+### Animating and controlling characters
+- [var characterController: CharacterControllerComponent?](./charactercontroller.md)
   The character controller component for the entity.
-- [var characterControllerState: CharacterControllerStateComponent?](entity/charactercontrollerstate.md)
+- [var characterControllerState: CharacterControllerStateComponent?](./charactercontrollerstate.md)
   The character controller state for  the entity.
-- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md)
+- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](./movecharacter%28by,deltatime,relativeto,collisionhandler%29.md)
   Moves the character along a specified vector over a period of time.
 
 

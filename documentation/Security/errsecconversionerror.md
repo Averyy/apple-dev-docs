@@ -1,7 +1,8 @@
 # errSecConversionError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A conversion error has occurred.
 
@@ -18,6 +19,10 @@ A conversion error has occurred.
 
 ```swift
 var errSecConversionError: OSStatus { get }
+```
+
+```c
+errSecConversionError
 ```
 
 

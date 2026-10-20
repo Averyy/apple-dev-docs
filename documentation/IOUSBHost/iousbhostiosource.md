@@ -1,7 +1,8 @@
 # IOUSBHostIOSource
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 This class provides basic functionality for deriving pipe and stream classes.
 
@@ -15,43 +16,48 @@ This class provides basic functionality for deriving pipe and stream classes.
 class IOUSBHostIOSource
 ```
 
+```objc
+@interface IOUSBHostIOSource : NSObject
+```
+
 #### Overview
 
-Don’t create objects of this class or use this class as a subclass. Instead, use [`copyPipe(withAddress:)`](iousbhostinterface/copypipe(withaddress:).md) and [`copyStream(withStreamID:)`](iousbhostpipe/copystream(withstreamid:).md) when creating an [`IOUSBHostIOSource`](iousbhostiosource.md).
+Don’t create objects of this class or use this class as a subclass. Instead, use [`copyPipe(withAddress:)`](./iousbhostinterface/copypipe%28withaddress%29.md) and [`copyStream(withStreamID:)`](./iousbhostpipe/copystream%28withstreamid%29.md) when creating an [`IOUSBHostIOSource`](./iousbhostiosource.md).
 
 ## Topics
 
 ### Obtaining Device Information
-- [var deviceAddress: Int](iousbhostiosource/deviceaddress.md)
+- [var deviceAddress: Int](./iousbhostiosource/deviceaddress.md)
   The device’s bus address.
-- [var endpointAddress: Int](iousbhostiosource/endpointaddress.md)
+- [var endpointAddress: Int](./iousbhostiosource/endpointaddress.md)
   The pipe or stream’s endpoint address.
-- [var hostInterface: IOUSBHostInterface](iousbhostiosource/hostinterface.md)
+- [var hostInterface: IOUSBHostInterface](./iousbhostiosource/hostinterface.md)
   The interface for the input/output source.
 ### Related Documentation
-- [class IOUSBHostPipe](iousbhostpipe.md)
+- [class IOUSBHostPipe](./iousbhostpipe.md)
   The class that sends control, bulk, interrupt, and isochronous input/output requests for function drivers, and manages stream capabilities.
-- [class IOUSBHostStream](iousbhoststream.md)
+- [class IOUSBHostStream](./iousbhoststream.md)
   The class responsible for sending stream data for function drivers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [IOUSBHostPipe](iousbhostpipe.md)
-- [IOUSBHostStream](iousbhoststream.md)
+- [IOUSBHostPipe](./iousbhostpipe.md)
+- [IOUSBHostStream](./iousbhoststream.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostObject](iousbhostobject.md)
+### Base Classes
+- [class IOUSBHostObject](./iousbhostobject.md)
   This class provides basic functionality for sending device requests and retrieving descriptors.
 
 

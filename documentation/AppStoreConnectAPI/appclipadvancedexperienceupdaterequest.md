@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an advanced App Clip experience.
 
@@ -10,14 +11,14 @@ The request body you use to update an advanced App Clip experience.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceUpdateRequest.Data](appclipadvancedexperienceupdaterequest/data-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data](./appclipadvancedexperienceupdaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -27,15 +28,16 @@ object AppClipAdvancedExperienceUpdateRequest
 
 ## See Also
 
-- [object AppClipAdvancedExperience](appclipadvancedexperience.md)
+### Objects and types
+- [object AppClipAdvancedExperience](./appclipadvancedexperience.md)
   A configured trigger for an App Clip experience, associated with a physical location, NFC tag, QR code, or App Store link.
-- [object AppClipAdvancedExperienceResponse](appclipadvancedexperienceresponse.md)
+- [object AppClipAdvancedExperienceResponse](./appclipadvancedexperienceresponse.md)
   A response containing a single App Clip advanced experience configuration.
-- [object AppClipAdvancedExperienceLocalization](appclipadvancedexperiencelocalization.md)
+- [object AppClipAdvancedExperienceLocalization](./appclipadvancedexperiencelocalization.md)
   The localized text and action button label for an App Clip advanced experience in a specific language.
-- [object AppClipAdvancedExperienceCreateRequest](appclipadvancedexperiencecreaterequest.md)
+- [object AppClipAdvancedExperienceCreateRequest](./appclipadvancedexperiencecreaterequest.md)
   The request body you use to create an advanced App Clip experience.
-- [type AppClipAdvancedExperienceLanguage](appclipadvancedexperiencelanguage.md)
+- [type AppClipAdvancedExperienceLanguage](./appclipadvancedexperiencelanguage.md)
   A string value identifying the language for an App Clip advanced experience localization.
 
 

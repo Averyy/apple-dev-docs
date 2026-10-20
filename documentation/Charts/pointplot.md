@@ -1,7 +1,8 @@
 # PointPlot
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Chart content that represents a collection of data using points.
 
@@ -22,7 +23,7 @@ struct PointPlot<Content>
 
 #### Overview
 
-Use `PointPlot` when you want to visualize data in the same way as with [`PointMark`](pointmark.md), but you want to visualize an entire data collection with a single plot.
+Use `PointPlot` when you want to visualize data in the same way as with [`PointMark`](./pointmark.md), but you want to visualize an entire data collection with a single plot.
 
 You can initialize and style the plot with simple values or key paths. Add modifiers with `KeyPath` before adding modifiers with simple values.
 
@@ -43,42 +44,43 @@ Chart {
 ## Topics
 
 ### Plotting points from a collection
-- [init<Data>(Data, x: KeyPath<Data.Element, CGFloat>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-1a9af.md)
-- [init<Data>(Data, x: CGFloat?, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-1p6px.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: CGFloat?)](pointplot/init(_:x:y:)-72pm2.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](pointplot/init(_:x:y:)-7frpp.md)
-- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: KeyPath<PointPlot<Content>.DataElement, CGFloat>)](pointplot/init(_:x:y:)-9p3yg.md)
+- [init<Data>(Data, x: KeyPath<Data.Element, CGFloat>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](./pointplot/init%28_,x,y%29-1a9af.md)
+- [init<Data>(Data, x: CGFloat?, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](./pointplot/init%28_,x,y%29-1p6px.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: CGFloat?)](./pointplot/init%28_,x,y%29-72pm2.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>)](./pointplot/init%28_,x,y%29-7frpp.md)
+- [init<Data>(Data, x: PlottableProjection<PointPlot<Content>.DataElement, some Plottable>, y: KeyPath<PointPlot<Content>.DataElement, CGFloat>)](./pointplot/init%28_,x,y%29-9p3yg.md)
 ### Supporting types
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct VectorizedPointPlotContent](vectorizedpointplotcontent.md)
+- [struct VectorizedPointPlotContent](./vectorizedpointplotcontent.md)
   An opaque vectorized chart content type.
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 
 ## See Also
 
-- [Creating a data visualization dashboard with Swift Charts](creating-a-data-visualization-dashboard-with-swift-charts.md)
+### Vectorized plots
+- [Creating a data visualization dashboard with Swift Charts](./creating-a-data-visualization-dashboard-with-swift-charts.md)
   Visualize an entire data collection efficiently by instantiating a single vectorized plot in Swift Charts.
-- [struct AreaPlot](areaplot.md)
+- [struct AreaPlot](./areaplot.md)
   Chart content that represents a function or a collection of data using the area of one or more regions.
-- [struct LinePlot](lineplot.md)
+- [struct LinePlot](./lineplot.md)
   Chart content that represents a function or a collection of data using a sequence of connected line segments.
-- [struct RectanglePlot](rectangleplot.md)
+- [struct RectanglePlot](./rectangleplot.md)
   Chart content that represents a collection of data using rectangles.
-- [struct RulePlot](ruleplot.md)
+- [struct RulePlot](./ruleplot.md)
   Chart content that represents a collection of data using a single horizontal or vertical rule.
-- [struct BarPlot](barplot.md)
+- [struct BarPlot](./barplot.md)
   Chart content that represents a collection of data using bars.
-- [struct SectorPlot](sectorplot.md)
+- [struct SectorPlot](./sectorplot.md)
   Chart content that represents a collection of data using a sector of a pie or donut chart, which shows how individual categories make up a meaningful total.
-- [protocol VectorizedChartContent](vectorizedchartcontent.md)
+- [protocol VectorizedChartContent](./vectorizedchartcontent.md)
   A generic type that represents content conveyed via a chart.
 
 

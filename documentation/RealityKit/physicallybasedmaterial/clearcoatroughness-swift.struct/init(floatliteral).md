@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clearcoat roughness object using a single value.
 
@@ -11,7 +12,7 @@ Creates a clearcoat roughness object using a single value.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,9 +32,10 @@ This initializer creates an object that specifies the clearcoat roughness for a 
 
 ## See Also
 
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/clearcoatroughness-swift.struct/init(scale:texture:).md)
+### Creating a clearcoat roughness object
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a clearcoat roughness object using a single value or a texture.
-- [init(CustomMaterial.ClearcoatRoughness)](physicallybasedmaterial/clearcoatroughness-swift.struct/init(_:).md)
+- [init(CustomMaterial.ClearcoatRoughness)](./init%28_%29.md)
   Creates a clearcoat roughness object from a custom material’s clearcoat roughness property.
 
 

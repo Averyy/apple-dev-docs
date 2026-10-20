@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the container where the user added the group.
 
@@ -19,9 +20,14 @@ A string that uniquely identifies the container where the user added the group.
 var containerIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * containerIdentifier;
+```
+
 ## See Also
 
-- [var group: CNGroup](cnchangehistoryaddgroupevent/group.md)
+### Getting event details
+- [var group: CNGroup](./group.md)
   The group the user added.
 
 

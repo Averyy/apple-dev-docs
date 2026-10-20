@@ -1,7 +1,8 @@
 # rank
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rank of the tensor.
 

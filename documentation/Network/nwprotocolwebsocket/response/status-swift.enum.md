@@ -1,7 +1,8 @@
 # NWProtocolWebSocket.Response.Status
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status values that are sent with a WebSocket server response.
 
@@ -23,28 +24,29 @@ enum Status
 ## Topics
 
 ### Handshake Status Values
-- [NWProtocolWebSocket.Response.Status.accept](nwprotocolwebsocket/response/status-swift.enum/accept.md)
+- [NWProtocolWebSocket.Response.Status.accept](./status-swift.enum/accept.md)
   The client request is being accepted.
-- [NWProtocolWebSocket.Response.Status.reject](nwprotocolwebsocket/response/status-swift.enum/reject.md)
+- [NWProtocolWebSocket.Response.Status.reject](./status-swift.enum/reject.md)
   The client request is being rejected.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](nwprotocolwebsocket/response/init(status:subprotocol:additionalheaders:).md)
+### Sending Handshake Responses
+- [init(status: NWProtocolWebSocket.Response.Status, subprotocol: String?, additionalHeaders: [(name: String, value: String)]?)](./init%28status,subprotocol,additionalheaders%29.md)
   Initializes a WebSocket server response with a status, selected subprotocol, and additional HTTP headers.
-- [let status: NWProtocolWebSocket.Response.Status](nwprotocolwebsocket/response/status-swift.property.md)
+- [let status: NWProtocolWebSocket.Response.Status](./status-swift.property.md)
   The status of a WebSocket server response.
-- [let subprotocol: String?](nwprotocolwebsocket/response/subprotocol.md)
+- [let subprotocol: String?](./subprotocol.md)
   The selected subprotocol in a WebSocket server response.
-- [let additionalHeaders: [(name: String, value: String)]?](nwprotocolwebsocket/response/additionalheaders.md)
+- [let additionalHeaders: [(name: String, value: String)]?](./additionalheaders.md)
   Any additional HTTP headers in a WebSocket server response.
 
 

@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying text inside an open gauge, with additional text at the bottom of the gauge.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,51 +17,56 @@ A template for displaying text inside an open gauge, with additional text at the
 class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText
 ```
 
+```objc
+@interface CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeSimpleText : CLKComplicationTemplateGraphicExtraLargeCircular
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](clkcomplicationfamily/graphicextralarge.md) family. [`Figure 1`](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext#3667232.md) shows the layout of the complication and where it appears on the clock face.
+This template belongs to the [`CLKComplicationFamily.graphicExtraLarge`](./clkcomplicationfamily/graphicextralarge.md) family. [Figure 1](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext.md#3667232) shows the layout of the complication and where it appears on the clock face.
 
-![A diagram showing the layout of the complication that calls out the content produced by the gauge, center text, and bottom text providers.](/images/com.apple.clockkit/media-3667232@2x.png)
+![A diagram showing the layout of the complication that calls out the content produced by the gauge, center text, and bottom text providers.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3667232@2x.png)
 
 ## Topics
 
 ### Creating the Template
-- [init(gaugeProvider: CLKGaugeProvider, bottomTextProvider: CLKTextProvider, centerTextProvider: CLKTextProvider)](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/init(gaugeprovider:bottomtextprovider:centertextprovider:).md)
+- [init(gaugeProvider: CLKGaugeProvider, bottomTextProvider: CLKTextProvider, centerTextProvider: CLKTextProvider)](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/init%28gaugeprovider,bottomtextprovider,centertextprovider%29.md)
   Creates a new template with an open circular gauge, a small text element at the bottom, and a larger text element in the center.
 ### Setting the Complication Data
-- [var bottomTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/bottomtextprovider.md)
+- [var bottomTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/bottomtextprovider.md)
   The text to display at the bottom of the gauge.
-- [var centerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/centertextprovider.md)
+- [var centerTextProvider: CLKTextProvider](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/centertextprovider.md)
   The text to display in the center of the gauge.
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/gaugeprovider.md)
+- [var gaugeProvider: CLKGaugeProvider](./clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/gaugeprovider.md)
   The gauge to display in the complication.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplateGraphicExtraLargeCircular](clkcomplicationtemplategraphicextralargecircular.md)
+- [CLKComplicationTemplateGraphicExtraLargeCircular](./clkcomplicationtemplategraphicextralargecircular.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeImage](clkcomplicationtemplategraphicextralargecircularopengaugeimage.md)
+### Open and closed gauges
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeImage](./clkcomplicationtemplategraphicextralargecircularopengaugeimage.md)
   A template for displaying an extra-large, full-color circular image, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeView](./clkcomplicationtemplategraphicextralargecircularopengaugeview.md)
   A template for displaying a SwiftUI view, an open gauge, and text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeRangeText](clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularOpenGaugeRangeText](./clkcomplicationtemplategraphicextralargecircularopengaugerangetext.md)
   A template for displaying text inside an open gauge, with additional leading and trailing text.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeImage](clkcomplicationtemplategraphicextralargecircularclosedgaugeimage.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeImage](./clkcomplicationtemplategraphicextralargecircularclosedgaugeimage.md)
   A template for displaying an extra-large, full-color circular image inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeView](./clkcomplicationtemplategraphicextralargecircularclosedgaugeview.md)
   A template for displaying an extra-large SwiftUI view inside a closed circular gauge.
-- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeText](clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md)
+- [class CLKComplicationTemplateGraphicExtraLargeCircularClosedGaugeText](./clkcomplicationtemplategraphicextralargecircularclosedgaugetext.md)
   A template for displaying text inside an extra-large closed circular gauge.
 
 

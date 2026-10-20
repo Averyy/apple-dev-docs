@@ -1,7 +1,8 @@
 # PortalComponent.CrossingMode.volume(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows contents within the portal to cross a box-shaped boundary.
 
@@ -21,13 +22,13 @@ case volume(PortalComponent.Volume)
 
 #### Discussion
 
-Entities inside the portal world that have a [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the faces of the box. Parts of a crossing entity inside the volume render as portal content, parts outside render in the host scene.
+Entities inside the portal world that have a [`PortalCrossingComponent`](../../portalcrossingcomponent.md) cross the faces of the box. Parts of a crossing entity inside the volume render as portal content, parts outside render in the host scene.
 
-Use this case for room-sized portals and other bounded portal spaces. For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](portalcomponent/boundarystyle/enclosingbox(depth:).md) is a convenient way to configure this case alongside the matching [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md).
+Use this case for room-sized portals and other bounded portal spaces. For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](../boundarystyle/enclosingbox%28depth%29.md) is a convenient way to configure this case alongside the matching [`PortalComponent.ClippingMode.volume(_:)`](../clippingmode-swift.enum/volume%28_%29.md).
 
 ## Parameters
 
-- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box’s center and extents in portal-local space.
+- `volume`: A [`PortalComponent.Volume`](../volume.md) describing the box’s center and extents in portal-local space.
 
 
 ---

@@ -1,7 +1,8 @@
 # AsyncThrowingStream.Continuation.YieldResult.terminated
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The stream didn’t enqueue the element because the stream was in a terminal state.
 
@@ -26,9 +27,10 @@ This indicates the stream terminated prior to calling `yield`, either because th
 
 ## See Also
 
-- [AsyncThrowingStream.Continuation.YieldResult.enqueued(remaining:)](asyncthrowingstream/continuation/yieldresult/enqueued(remaining:).md)
+### Yield Results
+- [AsyncThrowingStream.Continuation.YieldResult.enqueued(remaining:)](./enqueued%28remaining%29.md)
   The stream successfully enqueued the element.
-- [AsyncThrowingStream.Continuation.YieldResult.dropped(_:)](asyncthrowingstream/continuation/yieldresult/dropped(_:).md)
+- [AsyncThrowingStream.Continuation.YieldResult.dropped(_:)](./dropped%28_%29.md)
   The stream didn’t enqueue the element because the buffer was full.
 
 

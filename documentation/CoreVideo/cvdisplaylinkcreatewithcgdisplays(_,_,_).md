@@ -1,13 +1,16 @@
 # CVDisplayLinkCreateWithCGDisplays(_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a display link for an array of displays.
 
 **Availability**:
-- Mac Catalyst 13.1+
-- macOS 10.4+
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.4+ - Deprecated in 15.0
+
+> **Deprecated**: use NSView.displayLink(target:selector:), NSWindow.displayLink(target:selector:), or NSScreen.displayLink(target:selector:) 
 
 ## Declaration
 
@@ -15,13 +18,17 @@ Creates a display link for an array of displays.
 func CVDisplayLinkCreateWithCGDisplays(_ displayArray: UnsafeMutablePointer<CGDirectDisplayID>, _ count: CFIndex, _ displayLinkOut: UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVDisplayLinkCreateWithCGDisplays(CGDirectDisplayID *displayArray, CFIndex count, CVDisplayLinkRef*displayLinkOut);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Core Video Constants`](core-video-constants.md) for possible values.
+A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
 #### Discussion
 
-Use this call to create a display link for a set of displays identified by the Core Graphics display IDs. For more information on the display identifier type, see [`CGDirectDisplayID`](https://developer.apple.com/documentation/coregraphics/cgdirectdisplayid).
+Use this call to create a display link for a set of displays identified by the Core Graphics display IDs. For more information on the display identifier type, see [`CGDirectDisplayID`](../CoreGraphics/cgdirectdisplayid.md).
 
 ## Parameters
 
@@ -31,11 +38,12 @@ Use this call to create a display link for a set of displays identified by the C
 
 ## See Also
 
-- [func CVDisplayLinkCreateWithCGDisplay(CGDirectDisplayID, UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](cvdisplaylinkcreatewithcgdisplay(_:_:).md)
+### Creating Display Links
+- [func CVDisplayLinkCreateWithCGDisplay(CGDirectDisplayID, UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](./cvdisplaylinkcreatewithcgdisplay%28_,_%29.md)
   Creates a display link for a single display.
-- [func CVDisplayLinkCreateWithActiveCGDisplays(UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](cvdisplaylinkcreatewithactivecgdisplays(_:).md)
+- [func CVDisplayLinkCreateWithActiveCGDisplays(UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](./cvdisplaylinkcreatewithactivecgdisplays%28_%29.md)
   Creates a display link capable of being used with all active displays.
-- [func CVDisplayLinkCreateWithOpenGLDisplayMask(CGOpenGLDisplayMask, UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](cvdisplaylinkcreatewithopengldisplaymask(_:_:).md)
+- [func CVDisplayLinkCreateWithOpenGLDisplayMask(CGOpenGLDisplayMask, UnsafeMutablePointer<CVDisplayLink?>) -> CVReturn](./cvdisplaylinkcreatewithopengldisplaymask%28_,_%29.md)
   Creates a display link from an OpenGL display mask.
 
 

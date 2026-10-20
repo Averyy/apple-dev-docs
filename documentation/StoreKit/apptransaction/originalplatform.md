@@ -1,7 +1,8 @@
 # originalPlatform
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The platform on which the customer originally purchased the app.
 
@@ -22,7 +23,8 @@ let originalPlatform: AppStore.Platform
 
 ## See Also
 
-- [AppStore.Platform](appstore/platform.md)
+### Getting the original platform
+- [AppStore.Platform](../appstore/platform.md)
   Values that represent Apple platforms.
 
 

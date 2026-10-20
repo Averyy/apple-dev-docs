@@ -1,7 +1,8 @@
 # UITouch.TouchType.indirectPointer
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A touch resulting from a button-based, indirect input device that describes the input sequence from button press to button release.
 
@@ -18,13 +19,18 @@ A touch resulting from a button-based, indirect input device that describes the 
 case indirectPointer
 ```
 
+```c
+UITouchTypeIndirectPointer
+```
+
 ## See Also
 
-- [UITouch.TouchType.direct](uitouch/touchtype/direct.md)
+### Touch types
+- [UITouch.TouchType.direct](./direct.md)
   A touch resulting from direct contact with the screen.
-- [UITouch.TouchType.indirect](uitouch/touchtype/indirect.md)
+- [UITouch.TouchType.indirect](./indirect.md)
   A touch that doesn’t result from contact with the screen.
-- [UITouch.TouchType.pencil](uitouch/touchtype/pencil.md)
+- [UITouch.TouchType.pencil](./pencil.md)
   A touch from Apple Pencil.
 
 

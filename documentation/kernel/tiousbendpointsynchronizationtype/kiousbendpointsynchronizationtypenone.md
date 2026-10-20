@@ -1,7 +1,8 @@
 # kIOUSBEndpointSynchronizationTypeNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 No synchronization type.
 
@@ -10,7 +11,7 @@ No synchronization type.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointSynchronizationTypeNone = (kIOUSBEndpointDescriptorSynchronizationTypeNone >> kIOUSBEndpointDescriptorSynchronizationTypePhase)
 ```
 

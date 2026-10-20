@@ -2,6 +2,7 @@
 
 **Framework**: Swift Charts  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,12 @@
 ```swift
 func updateTarget(_ target: inout ScrollTarget, context: ChartScrollTargetBehaviorContext)
 ```
+
+## Default Implementations
+
+### ChartScrollTargetBehavior Implementations
+- [func updateTarget(inout ScrollTarget, context: ScrollTargetBehaviorContext)](./updatetarget%28_,context%29-8j5z4.md)
+  Updates the proposed target that a scrollable view should scroll to.
 
 
 ---

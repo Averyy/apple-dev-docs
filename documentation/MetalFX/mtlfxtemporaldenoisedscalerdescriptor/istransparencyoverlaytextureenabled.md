@@ -1,7 +1,8 @@
 # isTransparencyOverlayTextureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scaler evaluates a transparency overlay texture as part of its operation.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the scaler evaluates a transparency overlay t
 
 ```swift
 var isTransparencyOverlayTextureEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isTransparencyOverlayTextureEnabled) BOOL transparencyOverlayTextureEnabled;
 ```
 
 

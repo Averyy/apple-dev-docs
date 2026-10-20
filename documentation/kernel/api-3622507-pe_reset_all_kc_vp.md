@@ -1,14 +1,15 @@
 # PE_reset_all_kc_vp
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void PE_reset_all_kc_vp(void);
 ```
 

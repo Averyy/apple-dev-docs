@@ -1,19 +1,20 @@
 # ensureCapacity
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allocates capacity for members in array.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t ensureCapacity(uint32_t newCapacity);
 ```
 
@@ -27,11 +28,12 @@ New count of capacity for members in array, may return prior capacity on failure
 
 ## See Also
 
-- [getCount](osarray/getcount.md)
+### Inspecting an Array
+- [getCount](./getcount.md)
   Returns count of members in array.
-- [getCapacity](osarray/getcapacity.md)
+- [getCapacity](./getcapacity.md)
   Returns count of currently allocated capacity for members in array.
-- [OSArrayGetCount](osarraygetcount.md)
+- [OSArrayGetCount](../osarraygetcount.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # seat
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The seat assigned to this participant.
 

@@ -1,7 +1,8 @@
 # policyLimit
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The specified scheduling attributes exceed the thread’s limits.
 

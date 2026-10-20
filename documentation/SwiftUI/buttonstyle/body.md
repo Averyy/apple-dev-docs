@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a button.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](buttonstyle/makebody(configuration:).md)
+### Custom button styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a button.
-- [ButtonStyle.Configuration](buttonstyle/configuration.md)
+- [ButtonStyle.Configuration](./configuration.md)
   The properties of a button.
 
 

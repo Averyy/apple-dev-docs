@@ -1,7 +1,8 @@
 # init(debugDescription:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates information describing a request timeout.
 

@@ -1,7 +1,8 @@
 # motionStartBorderMode
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The motion border mode describing what happens if Metal samples the acceleration structure before the motion start time.
 
@@ -19,17 +20,22 @@ The motion border mode describing what happens if Metal samples the acceleration
 var motionStartBorderMode: MTLMotionBorderMode
 ```
 
+```c
+MTLMotionBorderMode motionStartBorderMode;
+```
+
 ## See Also
 
-- [var motionStartTime: Float](mtlindirectaccelerationstructuremotioninstancedescriptor/motionstarttime.md)
+### Specifying motion data
+- [var motionStartTime: Float](./motionstarttime.md)
   The start time of the motion instance.
-- [var motionEndTime: Float](mtlindirectaccelerationstructuremotioninstancedescriptor/motionendtime.md)
+- [var motionEndTime: Float](./motionendtime.md)
   The end time of the motion instance.
-- [var motionEndBorderMode: MTLMotionBorderMode](mtlindirectaccelerationstructuremotioninstancedescriptor/motionendbordermode.md)
+- [var motionEndBorderMode: MTLMotionBorderMode](./motionendbordermode.md)
   The motion border mode describing what happens if Metal samples the acceleration structure after the motion end time.
-- [var motionTransformsCount: UInt32](mtlindirectaccelerationstructuremotioninstancedescriptor/motiontransformscount.md)
+- [var motionTransformsCount: UInt32](./motiontransformscount.md)
   The number of motion transforms belonging to the motion instance.
-- [var motionTransformsStartIndex: UInt32](mtlindirectaccelerationstructuremotioninstancedescriptor/motiontransformsstartindex.md)
+- [var motionTransformsStartIndex: UInt32](./motiontransformsstartindex.md)
   The index of the first set of transforms describing one keyframe of the animation.
 
 

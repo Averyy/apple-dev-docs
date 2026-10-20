@@ -1,7 +1,8 @@
 # init(referenceImages:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image-tracking provider that tracks the reference images you supply.
 
@@ -20,9 +21,10 @@ init(referenceImages: [ReferenceImage])
 
 ## See Also
 
-- [static var isSupported: Bool](imagetrackingprovider/issupported.md)
+### Creating an image-tracking provider
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports image-tracking providers.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](imagetrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking images.
 
 

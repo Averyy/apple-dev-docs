@@ -1,7 +1,8 @@
 # inflectionAlternative
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The alternative translation for a string when no suitable inflection exists.
 
@@ -20,27 +21,32 @@ The alternative translation for a string when no suitable inflection exists.
 static let inflectionAlternative: NSAttributedString.Key
 ```
 
+```c
+extern NSAttributedStringKey const NSInflectionAlternativeAttributeName;
+```
+
 #### Discussion
 
 In languages that change the form of words to match someone’s gender, the system can automatically change (or inflect) the gender to match someone’s personal preferences. If a suitable inflection doesn’t exist, the system uses the value of this attribute instead. Add this attribute to specify a suitable translation that applies to anyone. For example, if a language has only masculine and feminine genders, specify an appropriately neutral translation of the text.
 
-The value of this key is an [`NSString`](nsstring.md) with the replacement phrase to use.
+The value of this key is an [`NSString`](../../nsstring.md) with the replacement phrase to use.
 
 ## See Also
 
-- [static let languageIdentifier: NSAttributedString.Key](nsattributedstring/key/languageidentifier.md)
+### Getting translation-related attribute keys
+- [static let languageIdentifier: NSAttributedString.Key](./languageidentifier.md)
   The language identifier associated with the range of text.
-- [static let morphology: NSAttributedString.Key](nsattributedstring/key/morphology.md)
+- [static let morphology: NSAttributedString.Key](./morphology.md)
   An attribute that contains grammatical properties to apply to the text.
-- [static let inflectionRule: NSAttributedString.Key](nsattributedstring/key/inflectionrule.md)
+- [static let inflectionRule: NSAttributedString.Key](./inflectionrule.md)
   An attribute that tells the system how to apply grammar rules and other modifiers to the range of text.
-- [static let agreeWithArgument: NSAttributedString.Key](nsattributedstring/key/agreewithargument.md)
+- [static let agreeWithArgument: NSAttributedString.Key](./agreewithargument.md)
   An attribute key whose value indicates inflection agreement with a specific argument.
-- [static let agreeWithConcept: NSAttributedString.Key](nsattributedstring/key/agreewithconcept.md)
+- [static let agreeWithConcept: NSAttributedString.Key](./agreewithconcept.md)
   An attribute key whose value indicates inflection agreement with a specific concept.
-- [static let referentConcept: NSAttributedString.Key](nsattributedstring/key/referentconcept.md)
+- [static let referentConcept: NSAttributedString.Key](./referentconcept.md)
   An attribute key whose value indicates the referent concept for inflection.
-- [static let localizedNumberFormat: NSAttributedString.Key](nsattributedstring/key/localizednumberformat.md)
+- [static let localizedNumberFormat: NSAttributedString.Key](./localizednumberformat.md)
   An attribute key whose value specifies a localized number format.
 
 

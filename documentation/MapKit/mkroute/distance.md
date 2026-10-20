@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The route distance, in meters.
 
@@ -20,23 +21,28 @@ The route distance, in meters.
 var distance: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance distance;
+```
+
 #### Discussion
 
 This property reflects the distance that the user covers while traversing the path of the route. It’s not a linear distance between the start and end points of the route.
 
 ## See Also
 
-- [var name: String](mkroute/name.md)
+### Getting additional route details
+- [var name: String](./name.md)
   The assigned name for the route.
-- [var hasHighways: Bool](mkroute/hashighways.md)
+- [var hasHighways: Bool](./hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var transportType: MKDirectionsTransportType](mkroute/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The overall route transport type.
 
 

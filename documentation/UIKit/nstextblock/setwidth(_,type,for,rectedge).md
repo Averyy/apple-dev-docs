@@ -1,7 +1,8 @@
 # setWidth(_:type:for:rectEdge:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,15 +18,20 @@
 func setWidth(_ width: CGFloat, type: NSTextBlock.ValueType, for layer: NSTextBlock.Layer, rectEdge: CGRectEdge)
 ```
 
+```objc
+- (void) setWidth:(CGFloat) width type:(NSTextBlockValueType) type forLayer:(NSTextBlockLayer) layer rectEdge:(CGRectEdge) rectEdge;
+```
+
 ## Mentions
 
-- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+- [Adding tables to attributed strings in UIKit](../adding-tables-to-attributed-strings.md)
 
 ## See Also
 
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
-- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](nstextblock/width(for:rectedge:).md)
-- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
+### Setting layer widths
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](./setwidth%28_,type,for%29.md)
+- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](./width%28for,rectedge%29.md)
+- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,rectedge%29.md)
 
 
 ---

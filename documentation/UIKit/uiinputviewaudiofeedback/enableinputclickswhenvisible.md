@@ -1,15 +1,16 @@
 # enableInputClicksWhenVisible
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies whether or not an input view enables input clicks.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
 
 ## Declaration
 
@@ -17,9 +18,13 @@ Specifies whether or not an input view enables input clicks.
 optional var enableInputClicksWhenVisible: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL enableInputClicksWhenVisible;
+```
+
 #### Discussion
 
-In your custom subclass of [`UIView`](uiview.md), implement this property as a getter method. Return [`true`](https://developer.apple.com/documentation/swift/true) to enable input clicks in your custom input or keyboard accessory view, as follows:
+In your custom subclass of [`UIView`](../uiview.md), implement this property as a getter method. Return [`true`](../../Swift/true.md) to enable input clicks in your custom input or keyboard accessory view, as follows:
 
 **Swift**:
 
@@ -41,7 +46,7 @@ Input clicks will be produced only if the user has also enabled keyboard clicks 
 
 ## Parameters
 
-- `enableInputClicksWhenVisible`: Return [`true`](https://developer.apple.com/documentation/swift/true) to enable input clicks by way of the [`playInputClick()`](uidevice/playinputclick().md) method, or [`false`](https://developer.apple.com/documentation/swift/false) to disable input clicks. The value is [`false`](https://developer.apple.com/documentation/swift/false) by default.
+- `enableInputClicksWhenVisible`: Return [`true`](../../Swift/true.md) to enable input clicks by way of the [`playInputClick()`](../uidevice/playinputclick%28%29.md) method, or [`false`](../../Swift/false.md) to disable input clicks. The value is [`false`](../../Swift/false.md) by default.
 
 
 ---

@@ -1,12 +1,13 @@
 # NSDocument.ChangeType.changeAutosaved
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The document’s contents have been autosaved.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The document’s contents have been autosaved.
 case changeAutosaved
 ```
 
+```c
+NSChangeAutosaved
+```
+
 #### Discussion
 
-For example, [`saveToURL:ofType:forSaveOperation:error:`](nsdocument/savetourl:oftype:forsaveoperation:error:.md) passes this value for a successful [`NSAutosaveOperation`](nssaveoperationtype/nsautosaveoperation.md).
+For example, [`saveToURL:ofType:forSaveOperation:error:`](../savetourl_oftype_forsaveoperation_error_.md) passes this value for a successful [`NSAutosaveOperation`](../../nssaveoperationtype/nsautosaveoperation.md).
 
 ## See Also
 
-- [NSDocument.ChangeType.changeDone](nsdocument/changetype/changedone.md)
+### Constants
+- [NSDocument.ChangeType.changeDone](./changedone.md)
   Increment change count.
-- [NSDocument.ChangeType.changeUndone](nsdocument/changetype/changeundone.md)
+- [NSDocument.ChangeType.changeUndone](./changeundone.md)
   Decrement change count.
-- [NSDocument.ChangeType.changeCleared](nsdocument/changetype/changecleared.md)
+- [NSDocument.ChangeType.changeCleared](./changecleared.md)
   Set change count to 0.
-- [NSDocument.ChangeType.changeReadOtherContents](nsdocument/changetype/changereadothercontents.md)
+- [NSDocument.ChangeType.changeReadOtherContents](./changereadothercontents.md)
   The document has been initialized with the contents of a file or file package other than the one whose location is in the `fileURL` property, and therefore can’t possibly be synchronized with its persistent representation.
-- [NSDocument.ChangeType.changeRedone](nsdocument/changetype/changeredone.md)
+- [NSDocument.ChangeType.changeRedone](./changeredone.md)
   A single change has been redone.
-- [NSDocument.ChangeType.changeDiscardable](nsdocument/changetype/changediscardable.md)
+- [NSDocument.ChangeType.changeDiscardable](./changediscardable.md)
   A discardable change has been done.
 
 

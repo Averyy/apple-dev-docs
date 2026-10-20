@@ -1,7 +1,8 @@
 # AVCaptureDevice.FlashMode
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the flash modes of a capture device.
 
@@ -18,39 +19,44 @@ Constants that specify the flash modes of a capture device.
 enum FlashMode
 ```
 
+```c
+enum AVCaptureFlashMode : NSInteger;
+```
+
 ## Topics
 
 ### Flash modes
-- [AVCaptureDevice.FlashMode.off](avcapturedevice/flashmode-swift.enum/off.md)
+- [AVCaptureDevice.FlashMode.off](./flashmode-swift.enum/off.md)
   A mode that indicates the flash is off.
-- [AVCaptureDevice.FlashMode.on](avcapturedevice/flashmode-swift.enum/on.md)
+- [AVCaptureDevice.FlashMode.on](./flashmode-swift.enum/on.md)
   A mode that indicates the flash is on.
-- [AVCaptureDevice.FlashMode.auto](avcapturedevice/flashmode-swift.enum/auto.md)
+- [AVCaptureDevice.FlashMode.auto](./flashmode-swift.enum/auto.md)
   A mode that indicates the device continuously monitors light levels and uses the flash when necessary.
 ### Initializers
-- [init?(rawValue: Int)](avcapturedevice/flashmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./flashmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var hasFlash: Bool](avcapturedevice/hasflash.md)
+### Configuring flash settings
+- [var hasFlash: Bool](./hasflash.md)
   A Boolean value that indicates whether the capture device has a flash.
-- [var isFlashAvailable: Bool](avcapturedevice/isflashavailable.md)
+- [var isFlashAvailable: Bool](./isflashavailable.md)
   A Boolean value that indicates whether the flash is currently available for use.
-- [var isFlashActive: Bool](avcapturedevice/isflashactive.md)
+- [var isFlashActive: Bool](./isflashactive.md)
   A Boolean value that indicates whether the flash is currently active.
-- [var flashMode: AVCaptureDevice.FlashMode](avcapturedevice/flashmode-swift.property.md)
+- [var flashMode: AVCaptureDevice.FlashMode](./flashmode-swift.property.md)
   The device’s current flash mode.
-- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](avcapturedevice/isflashmodesupported(_:).md)
+- [func isFlashModeSupported(AVCaptureDevice.FlashMode) -> Bool](./isflashmodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the given flash mode.
 
 

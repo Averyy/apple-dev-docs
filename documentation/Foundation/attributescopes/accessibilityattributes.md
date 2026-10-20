@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,46 +22,46 @@ struct AccessibilityAttributes
 ## Topics
 
 ### Instance Properties
-- [let accessibilityHeadingLevel: AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](attributescopes/accessibilityattributes/accessibilityheadinglevel.md)
-- [let accessibilitySpeechAdjustedPitch: AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/accessibilityspeechadjustedpitch.md)
-- [let accessibilitySpeechAnnouncementPriority: AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/accessibilityspeechannouncementpriority.md)
-- [let accessibilitySpeechAnnouncementsQueued: AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](attributescopes/accessibilityattributes/accessibilityspeechannouncementsqueued.md)
-- [let accessibilitySpeechIncludesPunctuation: AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](attributescopes/accessibilityattributes/accessibilityspeechincludespunctuation.md)
-- [let accessibilitySpeechPhoneticNotation: AttributeScopes.AccessibilityAttributes.IPANotationAttribute](attributescopes/accessibilityattributes/accessibilityspeechphoneticnotation.md)
-- [let accessibilitySpeechSSML: AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](attributescopes/accessibilityattributes/accessibilityspeechssml.md)
+- [let accessibilityHeadingLevel: AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](./accessibilityattributes/accessibilityheadinglevel.md)
+- [let accessibilitySpeechAdjustedPitch: AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](./accessibilityattributes/accessibilityspeechadjustedpitch.md)
+- [let accessibilitySpeechAnnouncementPriority: AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](./accessibilityattributes/accessibilityspeechannouncementpriority.md)
+- [let accessibilitySpeechAnnouncementsQueued: AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](./accessibilityattributes/accessibilityspeechannouncementsqueued.md)
+- [let accessibilitySpeechIncludesPunctuation: AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](./accessibilityattributes/accessibilityspeechincludespunctuation.md)
+- [let accessibilitySpeechPhoneticNotation: AttributeScopes.AccessibilityAttributes.IPANotationAttribute](./accessibilityattributes/accessibilityspeechphoneticnotation.md)
+- [let accessibilitySpeechSSML: AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](./accessibilityattributes/accessibilityspeechssml.md)
   An SSML fragment describing how the annotated range should be spoken.
-- [let accessibilitySpeechSpellsOutCharacters: AttributeScopes.AccessibilityAttributes.SpellOutAttribute](attributescopes/accessibilityattributes/accessibilityspeechspellsoutcharacters.md)
-- [let accessibilityTextCustom: AttributeScopes.AccessibilityAttributes.TextCustomAttribute](attributescopes/accessibilityattributes/accessibilitytextcustom.md)
-- [let accessibilityTextualContext: AttributeScopes.AccessibilityAttributes.TextualContextAttribute](attributescopes/accessibilityattributes/accessibilitytextualcontext.md)
+- [let accessibilitySpeechSpellsOutCharacters: AttributeScopes.AccessibilityAttributes.SpellOutAttribute](./accessibilityattributes/accessibilityspeechspellsoutcharacters.md)
+- [let accessibilityTextCustom: AttributeScopes.AccessibilityAttributes.TextCustomAttribute](./accessibilityattributes/accessibilitytextcustom.md)
+- [let accessibilityTextualContext: AttributeScopes.AccessibilityAttributes.TextualContextAttribute](./accessibilityattributes/accessibilitytextualcontext.md)
 ### Enumerations
-- [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](attributescopes/accessibilityattributes/adjustedpitchattribute.md)
+- [AttributeScopes.AccessibilityAttributes.AdjustedPitchAttribute](./accessibilityattributes/adjustedpitchattribute.md)
   An attribute to adjust the pitch the spoken speech.
-- [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](attributescopes/accessibilityattributes/announcementpriorityattribute.md)
+- [AttributeScopes.AccessibilityAttributes.AnnouncementPriorityAttribute](./accessibilityattributes/announcementpriorityattribute.md)
   An attribute to define the urgency of the announcement.
-- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](attributescopes/accessibilityattributes/headinglevelattribute.md)
+- [AttributeScopes.AccessibilityAttributes.HeadingLevelAttribute](./accessibilityattributes/headinglevelattribute.md)
   An attribute for the level of this heading.
-- [AttributeScopes.AccessibilityAttributes.IPANotationAttribute](attributescopes/accessibilityattributes/ipanotationattribute.md)
+- [AttributeScopes.AccessibilityAttributes.IPANotationAttribute](./accessibilityattributes/ipanotationattribute.md)
   An attribute to define the International Phonetic Alphabet representation for speech.
-- [AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](attributescopes/accessibilityattributes/includespunctuationattribute.md)
+- [AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](./accessibilityattributes/includespunctuationattribute.md)
   An attribute to define how punctuation should be spoken.
-- [AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](attributescopes/accessibilityattributes/queueannouncementattribute.md)
+- [AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](./accessibilityattributes/queueannouncementattribute.md)
   An attribute to define if speech announcements spoken by VoiceOver should be queued behind existing speech rather than interrupting speech in progress.
-- [AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](attributescopes/accessibilityattributes/speechssmlattribute.md)
+- [AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](./accessibilityattributes/speechssmlattribute.md)
   An attribute for an SSML fragment describing how the annotated range should be spoken.
-- [AttributeScopes.AccessibilityAttributes.SpellOutAttribute](attributescopes/accessibilityattributes/spelloutattribute.md)
+- [AttributeScopes.AccessibilityAttributes.SpellOutAttribute](./accessibilityattributes/spelloutattribute.md)
   An attribute to define if each character should be spoken separately.
-- [AttributeScopes.AccessibilityAttributes.TextCustomAttribute](attributescopes/accessibilityattributes/textcustomattribute.md)
+- [AttributeScopes.AccessibilityAttributes.TextCustomAttribute](./accessibilityattributes/textcustomattribute.md)
   An attribute for custom, localized text attributes.
-- [AttributeScopes.AccessibilityAttributes.TextualContextAttribute](attributescopes/accessibilityattributes/textualcontextattribute.md)
+- [AttributeScopes.AccessibilityAttributes.TextualContextAttribute](./accessibilityattributes/textualcontextattribute.md)
   An attribute for the textual context.
 
 ## Relationships
 
 ### Conforms To
-- [AttributeScope](attributescope.md)
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributeScope](../attributescope.md)
+- [DecodingConfigurationProviding](../decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](../encodingconfigurationproviding.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,30 +1,32 @@
 # getType
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOHIDElementType getType();
 ```
 
 #### Return Value
 
-Returns the element type. Types are defined by the IOHIDElementType enumerator in [`IOHIDElementType`](iohidelementtype.md).
+Returns the element type. Types are defined by the IOHIDElementType enumerator in [`IOHIDElementType`](../iohidelementtype.md).
 
 ## See Also
 
-- [getCollectionType](iohidelement/getcollectiontype.md)
-- [getChildElements](iohidelement/getchildelements.md)
-- [getParentElement](iohidelement/getparentelement.md)
-- [IOHIDElementType](iohidelementtype.md)
+### Managing the Element Hierarchy
+- [getCollectionType](./getcollectiontype.md)
+- [getChildElements](./getchildelements.md)
+- [getParentElement](./getparentelement.md)
+- [IOHIDElementType](../iohidelementtype.md)
   The types of HID elements that you can examine.
-- [IOHIDElementCollectionType](iohidelementcollectiontype.md)
+- [IOHIDElementCollectionType](../iohidelementcollectiontype.md)
   Constants that indicate the types of relationships that exist between two or more elements.
 
 

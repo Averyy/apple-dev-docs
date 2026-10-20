@@ -1,7 +1,8 @@
 # catlas_zaxpby(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Computes the sum of two vectors, scaling each one separately (double-precision complex).
 
@@ -18,6 +19,10 @@ Computes the sum of two vectors, scaling each one separately (double-precision c
 
 ```swift
 func catlas_zaxpby(_ N: __LAPACK_int, _ ALPHA: OpaquePointer, _ X: OpaquePointer?, _ INCX: __LAPACK_int, _ BETA: OpaquePointer, _ Y: OpaquePointer?, _ INCY: __LAPACK_int)
+```
+
+```c
+void catlas_zaxpby(const __LAPACK_int N, const __LAPACK_double_complex *ALPHA, const __LAPACK_double_complex *X, const __LAPACK_int INCX, const __LAPACK_double_complex *BETA, __LAPACK_double_complex *Y, const __LAPACK_int INCY);
 ```
 
 #### Discussion
@@ -38,35 +43,36 @@ On return, the contents of vector `Y` are replaced with the result.
 
 ## See Also
 
-- [func catlas_caxpby(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](catlas_caxpby(_:_:_:_:_:_:_:).md)
+### CATLAS and CBLAS vector functions
+- [func catlas_caxpby(__LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int, OpaquePointer, OpaquePointer?, __LAPACK_int)](./catlas_caxpby%28_,_,_,_,_,_,_%29.md)
   Computes the product of two vectors, scaling each one separately (single-precision complex).
-- [func catlas_cset(__LAPACK_int, OpaquePointer, OpaquePointer, __LAPACK_int)](catlas_cset(_:_:_:_:).md)
+- [func catlas_cset(__LAPACK_int, OpaquePointer, OpaquePointer, __LAPACK_int)](./catlas_cset%28_,_,_,_%29.md)
   Modifies a vector (single-precision complex) in place, setting each element to a given value.
-- [func catlas_daxpby(__LAPACK_int, Double, UnsafePointer<Double>?, __LAPACK_int, Double, UnsafeMutablePointer<Double>?, __LAPACK_int)](catlas_daxpby(_:_:_:_:_:_:_:).md)
+- [func catlas_daxpby(__LAPACK_int, Double, UnsafePointer<Double>?, __LAPACK_int, Double, UnsafeMutablePointer<Double>?, __LAPACK_int)](./catlas_daxpby%28_,_,_,_,_,_,_%29.md)
   Computes the sum of two vectors, scaling each one separately (double-precision).
-- [func catlas_dset(__LAPACK_int, Double, UnsafeMutablePointer<Double>, __LAPACK_int)](catlas_dset(_:_:_:_:).md)
+- [func catlas_dset(__LAPACK_int, Double, UnsafeMutablePointer<Double>, __LAPACK_int)](./catlas_dset%28_,_,_,_%29.md)
   Modifies a vector (double-precision) in place, setting each element to a given value.
-- [func catlas_saxpby(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](catlas_saxpby(_:_:_:_:_:_:_:).md)
+- [func catlas_saxpby(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, Float, UnsafeMutablePointer<Float>?, __LAPACK_int)](./catlas_saxpby%28_,_,_,_,_,_,_%29.md)
   Computes the sum of two vectors, scaling each one separately (single-precision).
-- [func catlas_sset(__LAPACK_int, Float, UnsafeMutablePointer<Float>, __LAPACK_int)](catlas_sset(_:_:_:_:).md)
+- [func catlas_sset(__LAPACK_int, Float, UnsafeMutablePointer<Float>, __LAPACK_int)](./catlas_sset%28_,_,_,_%29.md)
   Modifies a vector (single-precision) in place, setting each element to a given value.
-- [func catlas_zset(__LAPACK_int, OpaquePointer, OpaquePointer, __LAPACK_int)](catlas_zset(_:_:_:_:).md)
+- [func catlas_zset(__LAPACK_int, OpaquePointer, OpaquePointer, __LAPACK_int)](./catlas_zset%28_,_,_,_%29.md)
   Modifies a vector (double-precision complex) in place, setting each element to a given value.
-- [func cblas_sdot(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](cblas_sdot(_:_:_:_:_:).md)
+- [func cblas_sdot(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](./cblas_sdot%28_,_,_,_,_%29.md)
   Computes the dot product of two vectors (single-precision).
-- [func cblas_sdsdot(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](cblas_sdsdot(_:_:_:_:_:_:).md)
+- [func cblas_sdsdot(__LAPACK_int, Float, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Float](./cblas_sdsdot%28_,_,_,_,_,_%29.md)
   Computes the dot product of two single-precision vectors plus an initial single-precision value.
-- [func cblas_cdotc_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](cblas_cdotc_sub(_:_:_:_:_:_:).md)
+- [func cblas_cdotc_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](./cblas_cdotc_sub%28_,_,_,_,_,_%29.md)
   Calculates the dot product of the complex conjugate of a single-precision complex vector with a second single-precision complex vector.
-- [func cblas_cdotu_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](cblas_cdotu_sub(_:_:_:_:_:_:).md)
+- [func cblas_cdotu_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](./cblas_cdotu_sub%28_,_,_,_,_,_%29.md)
   Computes the dot product of two single-precision complex vectors.
-- [func cblas_ddot(__LAPACK_int, UnsafePointer<Double>?, __LAPACK_int, UnsafePointer<Double>?, __LAPACK_int) -> Double](cblas_ddot(_:_:_:_:_:).md)
+- [func cblas_ddot(__LAPACK_int, UnsafePointer<Double>?, __LAPACK_int, UnsafePointer<Double>?, __LAPACK_int) -> Double](./cblas_ddot%28_,_,_,_,_%29.md)
   Computes the dot product of two vectors (double-precision).
-- [func cblas_dsdot(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Double](cblas_dsdot(_:_:_:_:_:).md)
+- [func cblas_dsdot(__LAPACK_int, UnsafePointer<Float>?, __LAPACK_int, UnsafePointer<Float>?, __LAPACK_int) -> Double](./cblas_dsdot%28_,_,_,_,_%29.md)
   Computes the double-precision dot product of a pair of single-precision vectors.
-- [func cblas_zdotc_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](cblas_zdotc_sub(_:_:_:_:_:_:).md)
+- [func cblas_zdotc_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](./cblas_zdotc_sub%28_,_,_,_,_,_%29.md)
   Calculates the dot product of the complex conjugate of a double-precision complex vector with a second double-precision complex vector.
-- [func cblas_zdotu_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](cblas_zdotu_sub(_:_:_:_:_:_:).md)
+- [func cblas_zdotu_sub(__LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer?, __LAPACK_int, OpaquePointer)](./cblas_zdotu_sub%28_,_,_,_,_,_%29.md)
   Computes the dot product of two double-precision complex vectors.
 
 

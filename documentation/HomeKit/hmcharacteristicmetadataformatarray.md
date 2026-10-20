@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatArray
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has array values.
 
@@ -19,9 +20,14 @@ Indicates that the characteristic has array values.
 let HMCharacteristicMetadataFormatArray: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataFormatArray;
+```
+
 ## See Also
 
-- [let HMCharacteristicMetadataFormatDictionary: String](hmcharacteristicmetadataformatdictionary.md)
+### Collections
+- [let HMCharacteristicMetadataFormatDictionary: String](./hmcharacteristicmetadataformatdictionary.md)
   Indicates that the characteristic has dictionary values.
 
 

@@ -1,7 +1,8 @@
 # instanceIdentifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that uniquely identifies this specific entity instance.
 

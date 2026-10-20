@@ -1,7 +1,8 @@
 # readAttributeActiveMessageIDs(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveMessageIDs(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveMessageIDs() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveMessageIDsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

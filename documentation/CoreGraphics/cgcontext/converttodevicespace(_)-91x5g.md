@@ -1,7 +1,8 @@
 # convertToDeviceSpace(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rectangle that is transformed from user space coordinate to device space coordinates.
 
@@ -10,7 +11,7 @@ Returns a rectangle that is transformed from user space coordinate to device spa
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a rectangle that is transformed from user space coordinate to device spa
 
 ```swift
 func convertToDeviceSpace(_ rect: CGRect) -> CGRect
+```
+
+```c
+extern CGRect CGContextConvertRectToDeviceSpace(CGContextRef c, CGRect rect);
 ```
 
 #### Return Value
@@ -34,17 +39,18 @@ In general affine transforms do not preserve rectangles. As a result, this funct
 
 ## See Also
 
-- [var userSpaceToDeviceSpaceTransform: CGAffineTransform](cgcontext/userspacetodevicespacetransform.md)
+### Converting Between Coordinate Spaces
+- [var userSpaceToDeviceSpaceTransform: CGAffineTransform](./userspacetodevicespacetransform.md)
   Returns an affine transform that maps user space coordinates to device space coordinates.
-- [func convertToDeviceSpace(CGPoint) -> CGPoint](cgcontext/converttodevicespace(_:)-53m7u.md)
+- [func convertToDeviceSpace(CGPoint) -> CGPoint](./converttodevicespace%28_%29-53m7u.md)
   Returns a point that is transformed from user space coordinates to device space coordinates.
-- [func convertToUserSpace(CGPoint) -> CGPoint](cgcontext/converttouserspace(_:)-3mtg3.md)
+- [func convertToUserSpace(CGPoint) -> CGPoint](./converttouserspace%28_%29-3mtg3.md)
   Returns a point that is transformed from device space coordinates to user space coordinates.
-- [func convertToUserSpace(CGRect) -> CGRect](cgcontext/converttouserspace(_:)-1hk5r.md)
+- [func convertToUserSpace(CGRect) -> CGRect](./converttouserspace%28_%29-1hk5r.md)
   Returns a rectangle that is transformed from device space coordinate to user space coordinates.
-- [func convertToDeviceSpace(CGSize) -> CGSize](cgcontext/converttodevicespace(_:)-224h2.md)
+- [func convertToDeviceSpace(CGSize) -> CGSize](./converttodevicespace%28_%29-224h2.md)
   Returns a size that is transformed from user space coordinates to device space coordinates.
-- [func convertToUserSpace(CGSize) -> CGSize](cgcontext/converttouserspace(_:)-693ur.md)
+- [func convertToUserSpace(CGSize) -> CGSize](./converttouserspace%28_%29-693ur.md)
   Returns a size that is transformed from device space coordinates to user space coordinates.
 
 

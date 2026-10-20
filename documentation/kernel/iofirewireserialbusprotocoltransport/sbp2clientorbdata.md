@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef struct {
       IOFireWireSBP2ORB *orb;
       SCSITaskIdentifier scsiTask;

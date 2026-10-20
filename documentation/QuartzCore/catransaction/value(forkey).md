@@ -1,7 +1,8 @@
 # value(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the arbitrary keyed-data specified by the given key.
 
@@ -19,6 +20,10 @@ Returns the arbitrary keyed-data specified by the given key.
 class func value(forKey key: String) -> Any?
 ```
 
+```objc
++ (id) valueForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The value for the data specified by the key.
@@ -33,7 +38,8 @@ Nested transactions have nested data scope. Requesting a value for a key first s
 
 ## See Also
 
-- [class func setValue(Any?, forKey: String)](catransaction/setvalue(_:forkey:).md)
+### Getting and Setting Transaction Properties
+- [class func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Sets the arbitrary keyed-data for the specified key.
 
 

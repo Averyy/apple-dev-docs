@@ -1,7 +1,8 @@
 # maximumSupportedContentVersion
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum version of PencilKit to support.
 
@@ -17,17 +18,21 @@ The maximum version of PencilKit to support.
 var maximumSupportedContentVersion: PKContentVersion { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKContentVersion maximumSupportedContentVersion;
+```
+
 ## Mentions
 
-- [Supporting backward compatibility for ink types](supporting-backward-compatibility-for-ink-types.md)
+- [Supporting backward compatibility for ink types](../supporting-backward-compatibility-for-ink-types.md)
 
 #### Discussion
 
-The default value is [`latest`](pkcontentversion/latest.md).
+The default value is [`latest`](../pkcontentversion/latest.md).
 
-If you set this property to a value less than [`latest`](pkcontentversion/latest.md), the tool picker limits the tools that are available so they’re compatible with the version of PencilKit you specify.
+If you set this property to a value less than [`latest`](../pkcontentversion/latest.md), the tool picker limits the tools that are available so they’re compatible with the version of PencilKit you specify.
 
-If you set this property, also set [`maximumSupportedContentVersion`](pkcanvasview/maximumsupportedcontentversion.md) on the [`PKCanvasView`](pkcanvasview.md) you use.
+If you set this property, also set [`maximumSupportedContentVersion`](../pkcanvasview/maximumsupportedcontentversion.md) on the [`PKCanvasView`](../pkcanvasview.md) you use.
 
 
 ---

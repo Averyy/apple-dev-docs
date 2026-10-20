@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset from which to read media data.
 
@@ -17,6 +18,10 @@ The asset from which to read media data.
 
 ```swift
 var asset: AVAsset { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) AVAsset * asset;
 ```
 
 

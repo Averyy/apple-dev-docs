@@ -2,6 +2,7 @@
 
 **Framework**: LiveCommunicationKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that your app has started a conversation manager.
@@ -25,7 +26,8 @@ func conversationManagerDidBegin(_ manager: ConversationManager)
 
 ## See Also
 
-- [func conversationManagerDidReset(ConversationManager)](conversationmanagerdelegate/conversationmanagerdidreset(_:).md)
+### Observing the conversation manager
+- [func conversationManagerDidReset(ConversationManager)](./conversationmanagerdidreset%28_%29.md)
   Tells the delegate that the app has reset the conversation manager.
 
 

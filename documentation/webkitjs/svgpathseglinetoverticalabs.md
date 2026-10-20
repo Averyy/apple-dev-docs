@@ -1,7 +1,8 @@
 # SVGPathSegLinetoVerticalAbs
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegLinetoVerticalAbs
 ```
 
 ## Topics
 
 ### Instance Properties
-- [y](svgpathseglinetoverticalabs/1629240-y.md)
+- [y](./svgpathseglinetoverticalabs/api-1629240-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecIdentityDomainKerberosKDC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Kerberos Key Distribution Center (KDC) identity.
 
@@ -12,6 +13,10 @@ Kerberos Key Distribution Center (KDC) identity.
 
 ```swift
 let kSecIdentityDomainKerberosKDC: CFString
+```
+
+```c
+extern CFStringRef const kSecIdentityDomainKerberosKDC;
 ```
 
 

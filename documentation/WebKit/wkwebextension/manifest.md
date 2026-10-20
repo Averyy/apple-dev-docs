@@ -1,7 +1,8 @@
 # manifest
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parsed manifest as a dictionary.
 
@@ -16,6 +17,10 @@ The parsed manifest as a dictionary.
 
 ```swift
 var manifest: [String : Any] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * manifest;
 ```
 
 

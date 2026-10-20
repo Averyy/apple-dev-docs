@@ -1,7 +1,8 @@
 # apply(batchSize:input:output:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer to a set of input objects, writing the result to a set of output objects.
 
@@ -11,8 +12,10 @@ Applies the layer to a set of input objects, writing the result to a set of outp
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -28,7 +31,8 @@ func apply(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDesc
 
 ## See Also
 
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor) throws](bnns/embeddinglayer/applybackward(batchsize:input:output:outputgradient:generatingweightsgradient:).md)
+### Applying an Embedding Layer
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor) throws](./applybackward%28batchsize,input,output,outputgradient,generatingweightsgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 

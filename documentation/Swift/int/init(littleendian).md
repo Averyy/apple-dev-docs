@@ -1,7 +1,8 @@
 # init(littleEndian:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer from its little-endian representation, changing the byte order if necessary.
 
@@ -26,13 +27,14 @@ init(littleEndian value: Self)
 
 ## See Also
 
-- [var byteSwapped: Int](int/byteswapped.md)
+### Working with Byte Order
+- [var byteSwapped: Int](./byteswapped.md)
   A representation of this integer with the byte order swapped.
-- [var littleEndian: Self](int/littleendian.md)
+- [var littleEndian: Self](./littleendian.md)
   The little-endian representation of this integer.
-- [var bigEndian: Self](int/bigendian.md)
+- [var bigEndian: Self](./bigendian.md)
   The big-endian representation of this integer.
-- [init(bigEndian: Self)](int/init(bigendian:).md)
+- [init(bigEndian: Self)](./init%28bigendian%29.md)
   Creates an integer from its big-endian representation, changing the byte order if necessary.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: IOBluetooth UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Allocator work Bluetooth Service Browser window controller.
 
@@ -12,6 +13,10 @@ Allocator work Bluetooth Service Browser window controller.
 
 ```swift
 init!(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
+```
+
+```objc
++ (IOBluetoothServiceBrowserController *) serviceBrowserController:(IOBluetoothServiceBrowserControllerOptions) inOptions;
 ```
 
 #### Return Value

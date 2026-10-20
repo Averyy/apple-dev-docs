@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the device.
 
@@ -14,13 +15,18 @@ A string that identifies the device.
 var tag: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * tag;
+```
+
 #### Discussion
 
 The system presents the `tag` as a label in the guest VM that identifies this device that’s available for mounting.
 
 ## See Also
 
-- [var share: VZDirectoryShare?](vzvirtiofilesystemdevice/share.md)
+### Accessing directory properties
+- [var share: VZDirectoryShare?](./share.md)
   A value that defines the directory share the host exposes to the guest VM.
 
 

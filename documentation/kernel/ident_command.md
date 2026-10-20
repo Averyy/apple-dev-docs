@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ident_command {
     ...
 };
@@ -17,8 +17,8 @@ struct ident_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](ident_command/1525286-cmd.md)
-- [cmdsize](ident_command/1525233-cmdsize.md)
+- [cmd](./ident_command/api-1525286-cmd.md)
+- [cmdsize](./ident_command/api-1525233-cmdsize.md)
 
 
 ---

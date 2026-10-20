@@ -1,18 +1,19 @@
 # ignoreRowsAndColumns
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains row and column indices to ignore.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ An array that contains row and column indices to ignore.
 var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?
 ```
 
+```c
+int * ignoreRowsAndColumns;
+```
+
 #### Discussion
 
-If this array isn’t `nil`, [`ignoreRowsAndColumns`](sparsesymbolicfactoroptions/ignorerowsandcolumns.md) provides a list of rows and columns to ignore. Terminate [`ignoreRowsAndColumns`](sparsesymbolicfactoroptions/ignorerowsandcolumns.md) with a negative index.
+If this array isn’t `nil`, [`ignoreRowsAndColumns`](./ignorerowsandcolumns.md) provides a list of rows and columns to ignore. Terminate [`ignoreRowsAndColumns`](./ignorerowsandcolumns.md) with a negative index.
 
 The row and column indices are for the actual matrix, not its block structure, so `0` indicates the first row, not the first `blockSize` rows.
 
@@ -37,21 +42,22 @@ In this case, an index less than `m` indicates that the system needs to ignore r
 
 ## See Also
 
-- [var control: SparseControl_t](sparsesymbolicfactoroptions/control.md)
+### Inspecting Symbolic Factor Options
+- [var control: SparseControl_t](./control.md)
   The flags that control the computation.
-- [struct SparseControl_t](sparsecontrol_t.md)
+- [struct SparseControl_t](../sparsecontrol_t.md)
   Options that control the computation.
-- [var orderMethod: SparseOrder_t](sparsesymbolicfactoroptions/ordermethod.md)
+- [var orderMethod: SparseOrder_t](./ordermethod.md)
   The ordering algorithm.
-- [var order: UnsafeMutablePointer<Int32>?](sparsesymbolicfactoroptions/order.md)
+- [var order: UnsafeMutablePointer<Int32>?](./order.md)
   The user-supplied array for ordering.
-- [struct SparseOrder_t](sparseorder_t.md)
+- [struct SparseOrder_t](../sparseorder_t.md)
   Options that define which ordering algorithm to use.
-- [var malloc: (Int) -> UnsafeMutableRawPointer?](sparsesymbolicfactoroptions/malloc.md)
+- [var malloc: (Int) -> UnsafeMutableRawPointer?](./malloc.md)
   The function for allocating any necessary storage.
-- [var free: (UnsafeMutableRawPointer?) -> Void](sparsesymbolicfactoroptions/free.md)
+- [var free: (UnsafeMutableRawPointer?) -> Void](./free.md)
   The function for freeing allocated storage.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparsesymbolicfactoroptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./reporterror.md)
   The function for reporting parameter errors.
 
 

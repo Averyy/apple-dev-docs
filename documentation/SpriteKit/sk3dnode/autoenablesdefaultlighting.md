@@ -1,7 +1,8 @@
 # autoenablesDefaultLighting
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether Scene Kit automatically adds lights to a scene.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether Scene Kit automatically adds lights to a
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ A Boolean value that determines whether Scene Kit automatically adds lights to a
 var autoenablesDefaultLighting: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL autoenablesDefaultLighting;
+```
+
 ## Mentions
 
-- [Displaying 3D Content in a SpriteKit Scene](displaying-3d-content-in-a-spritekit-scene.md)
+- [Displaying 3D Content in a SpriteKit Scene](../displaying-3d-content-in-a-spritekit-scene.md)
 
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. If you change the value to false, the only light sources SceneKit uses for rendering a scene are those contained in the scene graph.
+If this property’s value is [`true`](../../Swift/true.md) (the default), SceneKit automatically adds and places an omnidirectional light source when rendering scenes that contain no lights or only contain ambient lights. If you change the value to false, the only light sources SceneKit uses for rendering a scene are those contained in the scene graph.
 
 ## See Also
 
-- [var viewportSize: CGSize](sk3dnode/viewportsize.md)
+### Configuring a 3D Node
+- [var viewportSize: CGSize](./viewportsize.md)
   The size of the image rendered by the node.
-- [var scnScene: SCNScene?](sk3dnode/scnscene.md)
+- [var scnScene: SCNScene?](./scnscene.md)
   The SceneKit scene to render.
-- [var pointOfView: SCNNode?](sk3dnode/pointofview.md)
+- [var pointOfView: SCNNode?](./pointofview.md)
   The Scene Kit node from which the scene’s contents are viewed when rendered.
 
 

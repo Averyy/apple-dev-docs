@@ -1,7 +1,8 @@
 # displayLines
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Lines of text to display to the user in an autocomplete menu.
 
@@ -10,13 +11,14 @@ Lines of text to display to the user in an autocomplete menu.
 
 ## Declaration
 
-```swift
+```
 displayLines: string[];
 ```
 
 ## See Also
 
-- [coordinate](searchautocompleteresult/coordinate.md)
+### Autocomplete results
+- [coordinate](./coordinate.md)
   The coordinate of the result when it corresponds to a single place.
 
 

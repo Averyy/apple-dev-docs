@@ -1,7 +1,8 @@
 # ACCEPTED
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The participant accepted the invitation.
 
@@ -10,15 +11,16 @@ The participant accepted the invitation.
 
 ## Declaration
 
-```swift
+```
 const String ACCEPTED;
 ```
 
 ## See Also
 
-- [PENDING](cloudkit.shareparticipantacceptancestatus/pending.md)
+### Enumeration Cases
+- [PENDING](./pending.md)
   The participant was invited but hasn’t accepted.
-- [UNKNOWN](cloudkit.shareparticipantacceptancestatus/unknown.md)
+- [UNKNOWN](./unknown.md)
   The status is unknown.
 
 

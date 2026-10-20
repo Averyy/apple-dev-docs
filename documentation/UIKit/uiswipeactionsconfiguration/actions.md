@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The swipe actions.
 
@@ -17,13 +18,18 @@ The swipe actions.
 var actions: [UIContextualAction] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<UIContextualAction *> * actions;
+```
+
 #### Discussion
 
 The first object in this array corresponds to the default action, which is the action that’s performed in response to a full swipe.
 
 ## See Also
 
-- [var performsFirstActionWithFullSwipe: Bool](uiswipeactionsconfiguration/performsfirstactionwithfullswipe.md)
+### Getting the swipe action information
+- [var performsFirstActionWithFullSwipe: Bool](./performsfirstactionwithfullswipe.md)
   A Boolean value indicating whether a full swipe automatically performs the first action.
 
 

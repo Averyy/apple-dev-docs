@@ -1,7 +1,8 @@
 # applicationProtectedDataWillBecomeUnavailable(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that protected data is about to become unavailable.
 
@@ -15,15 +16,20 @@ Tells the delegate that protected data is about to become unavailable.
 optional func applicationProtectedDataWillBecomeUnavailable(_ notification: Notification)
 ```
 
+```objc
+- (void) applicationProtectedDataWillBecomeUnavailable:(NSNotification *) notification;
+```
+
 ## See Also
 
-- [func applicationSupportsSecureRestorableState(NSApplication) -> Bool](nsapplicationdelegate/applicationsupportssecurerestorablestate(_:).md)
+### Restoring Application State
+- [func applicationSupportsSecureRestorableState(NSApplication) -> Bool](./applicationsupportssecurerestorablestate%28_%29.md)
   Returns a Boolean value that indicates if the app supports secure state restoration.
-- [func applicationProtectedDataDidBecomeAvailable(Notification)](nsapplicationdelegate/applicationprotecteddatadidbecomeavailable(_:).md)
+- [func applicationProtectedDataDidBecomeAvailable(Notification)](./applicationprotecteddatadidbecomeavailable%28_%29.md)
   Tells the delegate that protected data is now available.
-- [func application(NSApplication, willEncodeRestorableState: NSCoder)](nsapplicationdelegate/application(_:willencoderestorablestate:).md)
+- [func application(NSApplication, willEncodeRestorableState: NSCoder)](./application%28_,willencoderestorablestate%29.md)
   Tells the delegate that the app is about to encode its restorable state.
-- [func application(NSApplication, didDecodeRestorableState: NSCoder)](nsapplicationdelegate/application(_:diddecoderestorablestate:).md)
+- [func application(NSApplication, didDecodeRestorableState: NSCoder)](./application%28_,diddecoderestorablestate%29.md)
   Tells the delegate when the app finished decoding its restorable state.
 
 

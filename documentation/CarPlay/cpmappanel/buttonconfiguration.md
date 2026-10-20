@@ -1,7 +1,8 @@
 # buttonConfiguration
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The button information and travel estimates to display in the panel.
 
@@ -14,6 +15,10 @@ The button information and travel estimates to display in the panel.
 
 ```swift
 var buttonConfiguration: CPMapPanelButtonConfiguration? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) CPMapPanelButtonConfiguration * buttonConfiguration;
 ```
 
 #### Discussion

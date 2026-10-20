@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrapped object.
 
@@ -22,9 +23,10 @@ var wrappedValue: Value
 
 ## See Also
 
-- [var projectedValue: Bindable<Value>](bindable/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Bindable<Value>](./projectedvalue.md)
   The bindable wrapper for the object that creates bindings to its properties using dynamic member lookup.
-- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<Value, Subject>) -> Binding<Subject>](bindable/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<Value, Subject>) -> Binding<Subject>](./subscript%28dynamicmember%29.md)
   Returns a binding to the value of a given key path.
 
 

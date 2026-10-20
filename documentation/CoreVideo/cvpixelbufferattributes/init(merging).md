@@ -1,7 +1,8 @@
 # init(merging:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Resolve multiple attribute specifications into a single instance.
 

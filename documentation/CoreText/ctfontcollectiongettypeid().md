@@ -1,7 +1,8 @@
 # CTFontCollectionGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for Core Text font collection references.
 
@@ -18,6 +19,10 @@ Returns the type identifier for Core Text font collection references.
 
 ```swift
 func CTFontCollectionGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTFontCollectionGetTypeID();
 ```
 
 #### Return Value

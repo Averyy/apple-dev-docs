@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group where the user removed a contact.
 
@@ -19,9 +20,14 @@ The group where the user removed a contact.
 var group: CNGroup { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNGroup * group;
+```
+
 ## See Also
 
-- [var member: CNContact](cnchangehistoryremovememberfromgroupevent/member.md)
+### Getting event details
+- [var member: CNContact](./member.md)
   The contact that the user removed from the group.
 
 

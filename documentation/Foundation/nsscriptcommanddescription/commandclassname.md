@@ -1,7 +1,8 @@
 # commandClassName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the class that will be instantiated to handle the command.
 
@@ -15,19 +16,24 @@ Returns the name of the class that will be instantiated to handle the command.
 var commandClassName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * commandClassName;
+```
+
 #### Return Value
 
-The Objective-C class name (for example, `"NSGetCommand"`). This is always [`NSScriptCommand`](nsscriptcommand.md) or a subclass.
+The Objective-C class name (for example, `"NSGetCommand"`). This is always [`NSScriptCommand`](../nsscriptcommand.md) or a subclass.
 
 ## See Also
 
-- [var appleEventClassCode: FourCharCode](nsscriptcommanddescription/appleeventclasscode.md)
+### Getting Basic Information About the Command
+- [var appleEventClassCode: FourCharCode](./appleeventclasscode.md)
   Returns the four-character code for the Apple event class of the receiver’s command.
-- [var appleEventCode: FourCharCode](nsscriptcommanddescription/appleeventcode.md)
+- [var appleEventCode: FourCharCode](./appleeventcode.md)
   Returns the four-character code for the Apple event ID of the receiver’s command.
-- [var commandName: String](nsscriptcommanddescription/commandname.md)
+- [var commandName: String](./commandname.md)
   Returns the name of the command.
-- [var suiteName: String](nsscriptcommanddescription/suitename.md)
+- [var suiteName: String](./suitename.md)
   Returns the name of the suite that contains the command described by the receiver.
 
 

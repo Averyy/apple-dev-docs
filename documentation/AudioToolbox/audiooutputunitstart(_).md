@@ -1,7 +1,8 @@
 # AudioOutputUnitStart(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Starts an I/O audio unit, which in turn starts the audio unit processing graph that it is connected to.
 
@@ -19,6 +20,10 @@ Starts an I/O audio unit, which in turn starts the audio unit processing graph t
 func AudioOutputUnitStart(_ ci: AudioUnit) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioOutputUnitStart(AudioUnit ci);
+```
+
 #### Return Value
 
 A result code.
@@ -29,10 +34,11 @@ A result code.
 
 ## See Also
 
-- [func AudioOutputUnitStop(AudioUnit) -> OSStatus](audiooutputunitstop(_:).md)
+### Starting and Stopping Output
+- [func AudioOutputUnitStop(AudioUnit) -> OSStatus](./audiooutputunitstop%28_%29.md)
   Stops an I/O audio unit, which in turn stops the audio unit processing graph that it is connected to.
-- [typealias AudioOutputUnitStartProc](audiooutputunitstartproc.md)
-- [typealias AudioOutputUnitStopProc](audiooutputunitstopproc.md)
+- [typealias AudioOutputUnitStartProc](./audiooutputunitstartproc.md)
+- [typealias AudioOutputUnitStopProc](./audiooutputunitstopproc.md)
 
 
 ---

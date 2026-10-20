@@ -1,7 +1,8 @@
 # customVideoCompositor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom video compositor to use when extracting images from assets with multiple video tracks.
 
@@ -19,9 +20,14 @@ A custom video compositor to use when extracting images from assets with multipl
 var customVideoCompositor: (any AVVideoCompositing)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVVideoCompositing> customVideoCompositor;
+```
+
 ## See Also
 
-- [var videoComposition: AVVideoComposition?](avassetimagegenerator/videocomposition.md)
+### Configuring compositing
+- [var videoComposition: AVVideoComposition?](./videocomposition.md)
   A video composition to use when extracting images from assets with multiple video tracks.
 
 

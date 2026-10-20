@@ -1,7 +1,8 @@
 # notConnected
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The flow is not fully opened.
 
@@ -22,23 +23,24 @@ static var notConnected: NEAppProxyFlowError.Code { get }
 
 ## See Also
 
-- [static var peerReset: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/peerreset.md)
+### Error codes
+- [static var peerReset: NEAppProxyFlowError.Code](./peerreset.md)
   The remote peer closed the flow.
-- [static var hostUnreachable: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/hostunreachable.md)
+- [static var hostUnreachable: NEAppProxyFlowError.Code](./hostunreachable.md)
   An attempt to reach the remote endpoint of the flow failed.
-- [static var invalidArgument: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/invalidargument.md)
+- [static var invalidArgument: NEAppProxyFlowError.Code](./invalidargument.md)
   A proxy flow method received an invalid argument.
-- [static var aborted: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/aborted.md)
+- [static var aborted: NEAppProxyFlowError.Code](./aborted.md)
   The flow was aborted.
-- [static var refused: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/refused.md)
+- [static var refused: NEAppProxyFlowError.Code](./refused.md)
   Connecting the flow to its remote endpoint failed.
-- [static var timedOut: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/timedout.md)
+- [static var timedOut: NEAppProxyFlowError.Code](./timedout.md)
   The flow timed out.
-- [static var `internal`: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/internal.md)
+- [static var `internal`: NEAppProxyFlowError.Code](./internal.md)
   An internal error occurred while handling the flow.
-- [static var datagramTooLarge: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/datagramtoolarge.md)
+- [static var datagramTooLarge: NEAppProxyFlowError.Code](./datagramtoolarge.md)
   A caller attempted to write a datagram that was larger than the socket’s receive window.
-- [static var readAlreadyPending: NEAppProxyFlowError.Code](neappproxyflowerror-swift.struct/readalreadypending.md)
+- [static var readAlreadyPending: NEAppProxyFlowError.Code](./readalreadypending.md)
   A read operation on the flow is already pending.
 
 

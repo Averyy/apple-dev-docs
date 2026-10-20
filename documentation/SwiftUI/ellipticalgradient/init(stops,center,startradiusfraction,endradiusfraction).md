@@ -1,7 +1,8 @@
 # init(stops:center:startRadiusFraction:endRadiusFraction:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an elliptical gradient from a collection of color stops.
 
@@ -44,9 +45,10 @@ EllipticalGradient(
 
 ## See Also
 
-- [init(gradient: Gradient, center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat)](ellipticalgradient/init(gradient:center:startradiusfraction:endradiusfraction:).md)
+### Creating an elliptical gradient
+- [init(gradient: Gradient, center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat)](./init%28gradient,center,startradiusfraction,endradiusfraction%29.md)
   Creates an elliptical gradient.
-- [init(colors: [Color], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat)](ellipticalgradient/init(colors:center:startradiusfraction:endradiusfraction:).md)
+- [init(colors: [Color], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat)](./init%28colors,center,startradiusfraction,endradiusfraction%29.md)
   Creates an elliptical gradient from a collection of colors.
 
 

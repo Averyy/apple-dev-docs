@@ -1,7 +1,8 @@
 # textAlternatives
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a text alternatives attribute.
 
@@ -16,9 +17,10 @@ let textAlternatives: AttributeScopes.AppKitAttributes.TextAlternativesAttribute
 
 ## See Also
 
-- [let cursor: AttributeScopes.AppKitAttributes.CursorAttribute](attributescopes/appkitattributes/cursor.md)
+### Using User Interface Attributes
+- [let cursor: AttributeScopes.AppKitAttributes.CursorAttribute](./cursor.md)
   A property for accessing a cursor attribute.
-- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](attributescopes/appkitattributes/tooltip.md)
+- [let toolTip: AttributeScopes.AppKitAttributes.ToolTipAttribute](./tooltip.md)
   A property for accessing a tool tip attribute.
 
 

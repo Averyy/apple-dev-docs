@@ -1,7 +1,8 @@
 # IntentPerson.Handle.Value.applicationDefined(_:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An application-defined point of contact, such as a username of an a social networking service
 
@@ -11,7 +12,7 @@ An application-defined point of contact, such as a username of an a social netwo
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

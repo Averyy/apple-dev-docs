@@ -1,7 +1,8 @@
 # size
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rendered size, in units of the scene’s world coordinate space, of the particle image. Value is the half-extent of the particle’s quad. Defaults to 0.02.
 

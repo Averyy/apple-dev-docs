@@ -1,7 +1,8 @@
 # AssetInstallationRequest
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes, downloads, and installs a selection of assets.
 
@@ -22,34 +23,35 @@ final class AssetInstallationRequest
 
 #### Overview
 
-You do not create instances of this type directly; obtain them from [`assetInstallationRequest(supporting:)`](assetinventory/assetinstallationrequest(supporting:).md).
+You do not create instances of this type directly; obtain them from [`assetInstallationRequest(supporting:)`](./assetinventory/assetinstallationrequest%28supporting%29.md).
 
-The system consolidates download and installation requests; you may obtain several of these instances and call [`downloadAndInstall()`](assetinstallationrequest/downloadandinstall().md) several times without causing redundant downloads.
+The system consolidates download and installation requests; you may obtain several of these instances and call [`downloadAndInstall()`](./assetinstallationrequest/downloadandinstall%28%29.md) several times without causing redundant downloads.
 
 ## Topics
 
 ### Performing an installation request
-- [func downloadAndInstall() async throws](assetinstallationrequest/downloadandinstall.md)
+- [func downloadAndInstall() async throws](./assetinstallationrequest/downloadandinstall%28%29.md)
   Downloads and installs assets not already on the device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [ProgressReporting](../foundation/progressreporting.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [ProgressReporting](../Foundation/progressreporting.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum SpeechModels](speechmodels.md)
+### Asset and resource management
+- [enum SpeechModels](./speechmodels.md)
   Namespace for methods related to model management.
 
 

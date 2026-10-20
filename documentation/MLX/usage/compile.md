@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/usage/compile.html
 
 # Compilation
 
-**
-
-- [.rst](../_sources/usage/compile.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Compilation
-
- Table of contents 
-
-## Contents
-
-# Compilation
-
-MLX has a [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) function transformation which compiles computation
+MLX has a [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) function transformation which compiles computation
 graphs. Function compilation results in smaller graphs by merging common work
 and fusing certain operations. In many cases this can lead to big improvements
 in run-time and memory use.
 
-Getting started with [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) is simple, but there are some edge cases
+Getting started with [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) is simple, but there are some edge cases
 that are good to be aware of for more complex graphs and advanced usage.
 
 ## Basics of Compile
@@ -116,7 +89,7 @@ for _ in range(5):
 
 ## Example Speedup
 
-The [mlx.nn.gelu()](../python/nn/_autosummary_functions/mlx.nn.gelu.html#mlx.nn.gelu) is a nonlinear activation function commonly used with
+The [mlx.nn.gelu()](../python/nn/_autosummary_functions/mlx.nn.gelu.md#mlx.nn.gelu) is a nonlinear activation function commonly used with
 Transformer-based models. The implementation involves several unary and binary
 element-wise operations:
 
@@ -128,7 +101,7 @@ def gelu(x):
 If you use this function with small arrays, it will be overhead bound. If you
 use it with large arrays it will be memory bandwidth bound.  However, all of
 the operations in the `gelu` are fusible into a single kernel with
-[compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile). This can speedup both cases considerably.
+[compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile). This can speedup both cases considerably.
 
 Let’s compare the runtime of the regular function versus the compiled
 function. We’ll use the following timing helper which does a warm up and
@@ -178,8 +151,8 @@ fun(mx.array(5.0))
 ```
 
 For debugging, inspecting arrays can be helpful. One way to do that is to
-globally disable compilation using the [disable_compile()](../python/_autosummary/mlx.core.disable_compile.html#mlx.core.disable_compile) function or
-[MLX_DISABLE_COMPILE](environment_variables.html#envvar-MLX_DISABLE_COMPILE) flag. For example the following is okay even though
+globally disable compilation using the [disable_compile()](../python/_autosummary/mlx.core.disable_compile.md#mlx.core.disable_compile) function or
+[MLX_DISABLE_COMPILE](environment_variables.md#envvar-MLX_DISABLE_COMPILE) flag. For example the following is okay even though
 `fun` is compiled:
 
 ```
@@ -234,7 +207,7 @@ print(state)
 ```
 
 In some cases returning updated state can be pretty inconvenient. Hence,
-[compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) has a parameter to capture implicit outputs:
+[compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) has a parameter to capture implicit outputs:
 
 ```
 from functools import partial
@@ -255,7 +228,7 @@ print(state)
 
 This is particularly useful for compiling a function which includes an update
 to a container of arrays, as is commonly done when training the parameters of a
-[mlx.nn.Module](../python/nn/module.html#mlx.nn.Module).
+[mlx.nn.Module](../python/nn/module.md#mlx.nn.Module).
 
 Compiled functions will also treat any inputs not in the parameter list as
 constants. For example:
@@ -299,7 +272,7 @@ print(fun(mx.array(1.0), state))
 ```
 
 In some cases this can be pretty inconvenient. Hence,
-[compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) also has a parameter to capture implicit inputs:
+[compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) also has a parameter to capture implicit inputs:
 
 ```
 from functools import partial
@@ -322,10 +295,10 @@ print(fun(mx.array(1.0)))
 
 ## Compiling Training Graphs
 
-This section will step through how to use [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile) with a simple example
-of a common setup: training a model with [mlx.nn.Module](../python/nn/module.html#mlx.nn.Module) using an
-[mlx.optimizers.Optimizer](../python/optimizers/optimizer.html#mlx.optimizers.Optimizer) with state. We will show how to compile the
-full forward, backward, and update with [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile).
+This section will step through how to use [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile) with a simple example
+of a common setup: training a model with [mlx.nn.Module](../python/nn/module.md#mlx.nn.Module) using an
+[mlx.optimizers.Optimizer](../python/optimizers/optimizer.md#mlx.optimizers.Optimizer) with state. We will show how to compile the
+full forward, backward, and update with [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile).
 
 To start, here is the simple example without any compilation:
 
@@ -405,8 +378,8 @@ for it in range(10):
 Note
 
 If you are using a module which performs random sampling such as
-[mlx.nn.Dropout()](../python/nn/_autosummary/mlx.nn.Dropout.html#mlx.nn.Dropout), make sure you also include `mx.random.state` in the
-`state` captured by [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile), i.e. `state = [model.state,
+[mlx.nn.Dropout()](../python/nn/_autosummary/mlx.nn.Dropout.md#mlx.nn.Dropout), make sure you also include `mx.random.state` in the
+`state` captured by [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile), i.e. `state = [model.state,
 optimizer.state, mx.random.state]`.
 
 Note
@@ -418,7 +391,7 @@ Examples](https://github.com/ml-explore/mlx-examples) GitHub repo.
 
 In MLX function transformations are composable. You can apply any function
 transformation to the output of any other function transformation. For more on
-this, see the documentation on [function transforms](function_transforms.html#function-transforms).
+this, see the documentation on [function transforms](function_transforms.md#function-transforms).
 
 Compiling transformed functions works just as expected:
 
@@ -438,10 +411,10 @@ Note
 
 In order to compile as much as possible, a transformation of a compiled
 function will not by default be compiled. To compile the transformed
-function simply pass it through [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile).
+function simply pass it through [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile).
 
 You can also compile functions which themselves call compiled functions. A
-good practice is to compile the outer most function to give [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile)
+good practice is to compile the outer most function to give [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile)
 the most opportunity to optimize the computation graph:
 
 ```
@@ -461,7 +434,7 @@ fun = mx.compile(outer)
 
 When the shape of an input to a compiled function changes, the function is
 recompiled. You can compile a function once and run it on inputs with
-variable shapes by specifying `shapeless=True` to [compile()](../python/_autosummary/mlx.core.compile.html#mlx.core.compile). In this
+variable shapes by specifying `shapeless=True` to [compile()](../python/_autosummary/mlx.core.compile.md#mlx.core.compile). In this
 case changes to the shapes of the inputs do not cause the function to be
 recompiled.
 
@@ -506,8 +479,8 @@ out = compiled_fun(x)
 ```
 
 The second call to the `compiled_fun` fails because of the call to
-[reshape()](../python/_autosummary/mlx.core.reshape.html#mlx.core.reshape) which uses the static shape of `x` in the first call. We can
-fix this by using [flatten()](../python/_autosummary/mlx.core.flatten.html#mlx.core.flatten) to avoid hardcoding the shape of `x`:
+[reshape()](../python/_autosummary/mlx.core.reshape.md#mlx.core.reshape) which uses the static shape of `x` in the first call. We can
+fix this by using [flatten()](../python/_autosummary/mlx.core.flatten.md#mlx.core.flatten) to avoid hardcoding the shape of `x`:
 
 ```
 def fun(x):
@@ -524,5 +497,3 @@ x = mx.random.uniform(shape=(5, 5, 3))
 # Ok
 out = compiled_fun(x)
 ```
-
-** Contents

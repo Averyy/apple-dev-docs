@@ -1,14 +1,15 @@
 # SetLegend_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn SetLegend_Impl(OSArray *legend, bool is_public);
 ```
 

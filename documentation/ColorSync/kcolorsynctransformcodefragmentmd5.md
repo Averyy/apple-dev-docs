@@ -1,7 +1,8 @@
 # kColorSyncTransformCodeFragmentMD5
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key for the MD5 checksum of the code fragment.
 
@@ -20,11 +21,16 @@ A key for the MD5 checksum of the code fragment.
 var kColorSyncTransformCodeFragmentMD5: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncTransformCodeFragmentMD5;
+```
+
 ## See Also
 
-- [func ColorSyncCreateCodeFragment(CFArray!, CFDictionary!) -> Unmanaged<CFTypeRef>!](colorsynccreatecodefragment(_:_:).md)
+### Extracting a conversion for vImage
+- [func ColorSyncCreateCodeFragment(CFArray!, CFDictionary!) -> Unmanaged<CFTypeRef>!](./colorsynccreatecodefragment%28_,_%29.md)
   Creates a code fragment from a sequence of profiles.
-- [var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!](kcolorsynctransformcodefragmenttype.md)
+- [var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!](./kcolorsynctransformcodefragmenttype.md)
   A key for the type of code fragment to create, or that the framework created.
 
 

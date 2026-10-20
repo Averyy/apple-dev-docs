@@ -1,7 +1,8 @@
 # vImageClipToAlpha_RGBAFFFF(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Clamps the values of a 32-bit-per-channel, 4-channel RGBA buffer to the corresponding alpha values.
 
@@ -20,9 +21,13 @@ Clamps the values of a 32-bit-per-channel, 4-channel RGBA buffer to the correspo
 func vImageClipToAlpha_RGBAFFFF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageClipToAlpha_RGBAFFFF(const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -36,20 +41,21 @@ color_result = MIN( color, alpha )
 ## Parameters
 
 - `src`: The source vImage buffer.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageClipToAlpha_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_planar8(_:_:_:_:).md)
+### Clipping color values to alpha
+- [func vImageClipToAlpha_Planar8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagecliptoalpha_planar8%28_,_,_,_%29.md)
   Clamps the values of an 8-bit planar buffer to the corresponding alpha values.
-- [func vImageClipToAlpha_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_planarf(_:_:_:_:).md)
+- [func vImageClipToAlpha_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagecliptoalpha_planarf%28_,_,_,_%29.md)
   Clamps the values of a 32-bit planar buffer to the corresponding alpha values.
-- [func vImageClipToAlpha_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_argb8888(_:_:_:).md)
+- [func vImageClipToAlpha_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagecliptoalpha_argb8888%28_,_,_%29.md)
   Clamps the values of an 8-bit-per-channel, 4-channel ARGB buffer to the corresponding alpha values.
-- [func vImageClipToAlpha_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_rgba8888(_:_:_:).md)
+- [func vImageClipToAlpha_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagecliptoalpha_rgba8888%28_,_,_%29.md)
   Clamps the values of an 8-bit-per-channel, 4-channel RGBA buffer to the corresponding alpha values.
-- [func vImageClipToAlpha_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](vimagecliptoalpha_argbffff(_:_:_:).md)
+- [func vImageClipToAlpha_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, vImage_Flags) -> vImage_Error](./vimagecliptoalpha_argbffff%28_,_,_%29.md)
   Clamps the values of a 32-bit-per-channel, 4-channel ARGB buffer to the corresponding alpha values.
 
 

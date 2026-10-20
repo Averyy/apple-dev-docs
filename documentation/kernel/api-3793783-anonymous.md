@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB::kDeviceStatusLTMEnable](3793783-anonymous/standardusb_kdevicestatusltmenable.md)
-- [StandardUSB::kDeviceStatusRemoteWakeEnable](3793783-anonymous/standardusb_kdevicestatusremotewakeenable.md)
-- [StandardUSB::kDeviceStatusSelfPowered](3793783-anonymous/standardusb_kdevicestatusselfpowered.md)
-- [StandardUSB::kDeviceStatusU1Enable](3793783-anonymous/standardusb_kdevicestatusu1enable.md)
-- [StandardUSB::kDeviceStatusU2Enable](3793783-anonymous/standardusb_kdevicestatusu2enable.md)
-- [StandardUSB::kEndpointStatusHalt](3793783-anonymous/standardusb_kendpointstatushalt.md)
-- [StandardUSB::kInterfaceStatusRemoteWakeCapable](3793783-anonymous/standardusb_kinterfacestatusremotewakecapable.md)
-- [StandardUSB::kInterfaceStatusRemoteWakeEnable](3793783-anonymous/standardusb_kinterfacestatusremotewakeenable.md)
+- [StandardUSB::kDeviceStatusLTMEnable](./api-3793783-anonymous/standardusb_kdevicestatusltmenable.md)
+- [StandardUSB::kDeviceStatusRemoteWakeEnable](./api-3793783-anonymous/standardusb_kdevicestatusremotewakeenable.md)
+- [StandardUSB::kDeviceStatusSelfPowered](./api-3793783-anonymous/standardusb_kdevicestatusselfpowered.md)
+- [StandardUSB::kDeviceStatusU1Enable](./api-3793783-anonymous/standardusb_kdevicestatusu1enable.md)
+- [StandardUSB::kDeviceStatusU2Enable](./api-3793783-anonymous/standardusb_kdevicestatusu2enable.md)
+- [StandardUSB::kEndpointStatusHalt](./api-3793783-anonymous/standardusb_kendpointstatushalt.md)
+- [StandardUSB::kInterfaceStatusRemoteWakeCapable](./api-3793783-anonymous/standardusb_kinterfacestatusremotewakecapable.md)
+- [StandardUSB::kInterfaceStatusRemoteWakeEnable](./api-3793783-anonymous/standardusb_kinterfacestatusremotewakeenable.md)
 
 
 ---

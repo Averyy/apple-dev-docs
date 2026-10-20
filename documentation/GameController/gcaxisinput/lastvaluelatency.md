@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time in seconds between the last value change and the current time.
@@ -20,17 +21,22 @@ The time in seconds between the last value change and the current time.
 var lastValueLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastValueLatency;
+```
+
 #### Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event.
 
 ## See Also
 
-- [var value: Float](gcaxisinput/value.md)
+### Getting the value
+- [var value: Float](./value.md)
   The value along the axis, in unit coordinates.
-- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](gcaxisinput/valuedidchangehandler.md)
+- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](./valuedidchangehandler.md)
   The block that the input object calls when the value changes.
-- [var lastValueTimestamp: TimeInterval](gcaxisinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./lastvaluetimestamp.md)
   The time of the most recent value change.
 
 

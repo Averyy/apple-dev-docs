@@ -1,7 +1,8 @@
 # minimumImmersionAmount
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum amount of immersion used for this instance of the style.
 

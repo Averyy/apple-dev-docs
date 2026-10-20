@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates an inactive listener.
 
@@ -17,13 +18,14 @@ func activate() throws
 
 #### Discussion
 
-If you create an inactive listener using the [`inactive`](xpclistener/initializationoptions/inactive.md) flag, be sure to activate it before releasing the last reference to the listener. Releasing the last reference to an inactive listener crashes.
+If you create an inactive listener using the [`inactive`](./initializationoptions/inactive.md) flag, be sure to activate it before releasing the last reference to the listener. Releasing the last reference to an inactive listener crashes.
 
 If activation fails, the system automatically cancels the listener.
 
 ## See Also
 
-- [func cancel()](xpclistener/cancel.md)
+### Managing the life cycle
+- [func cancel()](./cancel%28%29.md)
   Cancels a listener.
 
 

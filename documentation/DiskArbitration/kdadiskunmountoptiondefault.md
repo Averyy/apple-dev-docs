@@ -1,7 +1,8 @@
 # kDADiskUnmountOptionDefault
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,11 +14,16 @@
 var kDADiskUnmountOptionDefault: Int { get }
 ```
 
+```c
+kDADiskUnmountOptionDefault
+```
+
 ## See Also
 
-- [var kDADiskUnmountOptionForce: Int](kdadiskunmountoptionforce.md)
+### Constants
+- [var kDADiskUnmountOptionForce: Int](./kdadiskunmountoptionforce.md)
   Unmount the volume even if files are still active.
-- [var kDADiskUnmountOptionWhole: Int](kdadiskunmountoptionwhole.md)
+- [var kDADiskUnmountOptionWhole: Int](./kdadiskunmountoptionwhole.md)
   Unmount the volumes tied to the whole disk object.
 
 

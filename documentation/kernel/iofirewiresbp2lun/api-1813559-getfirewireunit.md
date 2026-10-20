@@ -7,12 +7,12 @@ Returns an IOFireWireUnit object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFireWireUnit * getFireWireUnit(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns a pointer to an IOFireWireUnit.
 
@@ -22,21 +22,22 @@ An IOFireWireUnit is the provider of an IOFireWireSBP2Target. In order to use th
 
 ## See Also
 
-- [attach](iofirewiresbp2lun/1813520-attach.md)
+### Miscellaneous
+- [attach](./api-1813520-attach.md)
   Attaches an IOService client to a provider in the registry.
-- [createLogin](iofirewiresbp2lun/1813525-createlogin.md)
+- [createLogin](./api-1813525-createlogin.md)
   Creates a new IOFireWireSBP2Login object.
-- [createManagementORB](iofirewiresbp2lun/1813535-createmanagementorb.md)
+- [createManagementORB](./api-1813535-createmanagementorb.md)
   Creates a new IOFireWireSBP2ManagementORB object.
-- [getDiagnostics](iofirewiresbp2lun/1813549-getdiagnostics.md)
+- [getDiagnostics](./api-1813549-getdiagnostics.md)
   Debug-only method.
-- [getLUNumber](iofirewiresbp2lun/1813568-getlunumber.md)
+- [getLUNumber](./api-1813568-getlunumber.md)
   Returns the LUNs number.
-- [handleClose](iofirewiresbp2lun/1813576-handleclose.md)
+- [handleClose](./api-1813576-handleclose.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewiresbp2lun/1813589-handleopen.md)
+- [handleOpen](./api-1813589-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [matchPropertyTable](iofirewiresbp2lun/1813597-matchpropertytable.md)
+- [matchPropertyTable](./api-1813597-matchpropertytable.md)
   Implements SBP2 specific matching.
 
 

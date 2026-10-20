@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionAuthorizationResult.canceled
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the user canceled authorization or wasn’t authorized to add the payment card.
 
@@ -17,9 +18,14 @@ A result that indicates the user canceled authorization or wasn’t authorized t
 case canceled
 ```
 
+```c
+PKIssuerProvisioningExtensionAuthorizationResultCanceled
+```
+
 ## See Also
 
-- [PKIssuerProvisioningExtensionAuthorizationResult.authorized](pkissuerprovisioningextensionauthorizationresult/authorized.md)
+### Authorization results
+- [PKIssuerProvisioningExtensionAuthorizationResult.authorized](./authorized.md)
   A result that indicates the user successfully authorized adding the payment pass.
 
 

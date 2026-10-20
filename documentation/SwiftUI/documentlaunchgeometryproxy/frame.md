@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Frame of the document launch interface.
 
@@ -19,7 +20,8 @@ var frame: CGRect
 
 ## See Also
 
-- [var titleViewFrame: CGRect](documentlaunchgeometryproxy/titleviewframe.md)
+### Getting the geometry
+- [var titleViewFrame: CGRect](./titleviewframe.md)
   Frame of the title view within the interface.
 
 

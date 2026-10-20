@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if the set contains a pose with the given name.
 

@@ -1,7 +1,8 @@
 # AppEvent.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe an In-App event.
 
@@ -10,38 +11,39 @@ The attributes that describe an In-App event.
 
 ## Declaration
 
-```swift
+```
 object AppEvent.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 3.6 release notes](app-store-connect-api-3-6-release-notes.md)
+- [App Store Connect API 3.6 release notes](../app-store-connect-api-3-6-release-notes.md)
 
 ## Topics
 
 ### Objects
-- [object AppEvent.Attributes.ArchivedTerritorySchedules](appevent/attributes-data.dictionary/archivedterritoryschedules-data.dictionary.md)
+- [object AppEvent.Attributes.ArchivedTerritorySchedules](./attributes-data.dictionary/archivedterritoryschedules-data.dictionary.md)
   The archived per-territory schedule attributes within an app event, representing previously active territory schedules.
-- [object AppEvent.Attributes.TerritorySchedules](appevent/attributes-data.dictionary/territoryschedules-data.dictionary.md)
+- [object AppEvent.Attributes.TerritorySchedules](./attributes-data.dictionary/territoryschedules-data.dictionary.md)
   The per-territory schedule attributes within an app event, defining the start, end, publish dates, and targeted territories.
 
 ## Properties
 
 - `archivedTerritorySchedules` ([AppEvent.Attributes.ArchivedTerritorySchedules])
-- `badge` (string)
+- `badge` (string): **Allowed Values**: `LIVE_EVENT`, `PREMIERE`, `CHALLENGE`, `COMPETITION`, `NEW_SEASON`, `MAJOR_UPDATE`, `SPECIAL_EVENT`
 - `deepLink` (uri)
-- `eventState` (string)
+- `eventState` (string): **Allowed Values**: `DRAFT`, `READY_FOR_REVIEW`, `WAITING_FOR_REVIEW`, `IN_REVIEW`, `REJECTED`, `ACCEPTED`, `APPROVED`, `PUBLISHED`, `PAST`, `ARCHIVED`
 - `primaryLocale` (string)
-- `priority` (string)
+- `priority` (string): **Allowed Values**: `HIGH`, `NORMAL`
 - `purchaseRequirement` (string): Possible values: `NO_COST_ASSOCIATED`, `IN_APP_PURCHASE`
-- `purpose` (string)
+- `purpose` (string): **Allowed Values**: `APPROPRIATE_FOR_ALL_USERS`, `ATTRACT_NEW_USERS`, `KEEP_ACTIVE_USERS_INFORMED`, `BRING_BACK_LAPSED_USERS`
 - `referenceName` (string)
 - `territorySchedules` ([AppEvent.Attributes.TerritorySchedules])
 
 ## See Also
 
-- [object AppEvent.Relationships](appevent/relationships-data.dictionary.md)
+### Objects
+- [object AppEvent.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

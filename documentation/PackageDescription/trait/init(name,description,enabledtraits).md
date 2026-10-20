@@ -1,7 +1,8 @@
 # init(name:description:enabledTraits:)
 
 **Framework**: PackageDescription  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trait with a name, a description, and set of additional traits it enables.
 

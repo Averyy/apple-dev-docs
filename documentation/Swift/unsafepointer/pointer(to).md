@@ -1,7 +1,8 @@
 # pointer(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtain a pointer to the stored property referred to by a key path.
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOCommandGate *controlG;
 ```
 
@@ -15,13 +15,14 @@ Internal control gate to maintain event system.
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [reserved](ioworkloop/reserved.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [reserved](./reserved.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
 
 
 ---

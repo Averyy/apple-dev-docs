@@ -1,7 +1,8 @@
 # BonjourListenerProvider
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Advertise a Bonjour service.
 
@@ -23,16 +24,16 @@ struct BonjourListenerProvider
 ## Topics
 
 ### Initializers
-- [init(name: String?, type: String, domain: String?, txtRecord: NWTXTRecord?)](bonjourlistenerprovider/init(name:type:domain:txtrecord:).md)
+- [init(name: String?, type: String, domain: String?, txtRecord: NWTXTRecord?)](./bonjourlistenerprovider/init%28name,type,domain,txtrecord%29.md)
   Create a Bonjour service to advertise.
 ### Instance Properties
-- [var service: NWListener.Service](bonjourlistenerprovider/service.md)
+- [var service: NWListener.Service](./bonjourlistenerprovider/service.md)
   The service advertised by the listener.
 
 ## Relationships
 
 ### Conforms To
-- [ListenerProvider](listenerprovider.md)
+- [ListenerProvider](./listenerprovider.md)
 
 
 ---

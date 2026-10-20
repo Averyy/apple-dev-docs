@@ -1,7 +1,8 @@
 # StartIO
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the device to start IO.
 
@@ -10,7 +11,7 @@ Tells the device to start IO.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StartIO(IOUserVideoStartStopFlags in_flags);
 ```
 
@@ -28,15 +29,16 @@ The default implementation always returns `kIOReturnSuccess`. Subclass and overr
 
 ## See Also
 
-- [StopIO](iouservideodevice/stopio.md)
+### Performing I/O
+- [StopIO](./stopio.md)
   Tells the device to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
-- [GetCurrentClientIOTime](iouservideodevice/getcurrentclientiotime.md)
+- [GetCurrentClientIOTime](./getcurrentclientiotime.md)
   Gets the current sample/host time pair in the ring buffer written to or read from by the client
-- [SetIOOperationHandler](iouservideodevice/setiooperationhandler.md)
+- [SetIOOperationHandler](./setiooperationhandler.md)
   Sets the IOOperationHandler block on the device.
-- [IOOperationHandler](videodriverkit/iooperationhandler.md)
+- [IOOperationHandler](../videodriverkit-page/iooperationhandler.md)
   A block that tells the device to perform a video IO operation.
 
 

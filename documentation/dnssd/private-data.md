@@ -1,6 +1,7 @@
 # Private Data
 
-**Framework**: dnssd
+**Framework**: dnssd  
+**Role**: Article
 
 **Availability**:
 - iOS 9.3+
@@ -19,7 +20,8 @@ char PrivateData[16];
 
 ## See Also
 
-- [Force Natural Alignment](force-natural-alignment.md)
+### Miscellaneous
+- [Force Natural Alignment](./force-natural-alignment.md)
 
 
 ---

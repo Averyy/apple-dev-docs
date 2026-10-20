@@ -1,7 +1,8 @@
 # preview
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A preview object containing the necessary information to represent the pass during provisioning.
 
@@ -9,13 +10,17 @@ A preview object containing the necessary information to represent the pass duri
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var preview: PKAddPassMetadataPreview { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nonnull) PKAddPassMetadataPreview * preview;
 ```
 
 

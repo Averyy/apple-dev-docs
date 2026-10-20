@@ -1,7 +1,8 @@
 # Delete a subscription group localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete a localized custom name for a subscription group configured with the v2 API.
 
@@ -10,7 +11,7 @@ Delete a localized custom name for a subscription group configured with the v2 A
 
 ## Mentions
 
-- [App Store Connect API 4.4.1 release notes](app-store-connect-api-4-4-1-release-notes.md)
+- [App Store Connect API 4.4.1 release notes](./app-store-connect-api-4-4-1-release-notes.md)
 
 ## Endpoint
 
@@ -18,15 +19,27 @@ Delete a localized custom name for a subscription group configured with the v2 A
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `204` No Content
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a subscription group localization](post-v2-subscriptiongrouplocalizations.md)
+### Endpoints
+- [Create a subscription group localization](./post-v2-subscriptiongrouplocalizations.md)
   Create a localized custom name for a subscription group configured with the v2 API.
-- [Read subscription group localization information](get-v2-subscriptiongrouplocalizations-_id_.md)
+- [Read subscription group localization information](./get-v2-subscriptiongrouplocalizations-_id_.md)
   Get the custom name for a specific locale of a subscription group configured with the v2 API.
-- [Modify a subscription group localization](patch-v2-subscriptiongrouplocalizations-_id_.md)
+- [Modify a subscription group localization](./patch-v2-subscriptiongrouplocalizations-_id_.md)
   Update the custom name for a specific locale of a subscription group configured with the v2 API.
 
 

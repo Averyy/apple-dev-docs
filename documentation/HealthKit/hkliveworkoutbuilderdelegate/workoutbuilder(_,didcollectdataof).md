@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that new data has been added to the builder.
@@ -19,13 +20,18 @@ Tells the delegate that new data has been added to the builder.
 func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>)
 ```
 
+```objc
+- (void) workoutBuilder:(HKLiveWorkoutBuilder *) workoutBuilder didCollectDataOfTypes:(NSSet<HKSampleType *> *) collectedTypes;
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 ## See Also
 
-- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
+### Receiving data updates
+- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](./workoutbuilderdidcollectevent%28_%29.md)
   Tells the delegate that a new event has been added to the builder.
 
 

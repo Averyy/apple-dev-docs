@@ -1,7 +1,8 @@
 # PGDeviceDescriptor
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of the paravirtualized graphics device to create.
 
@@ -15,40 +16,45 @@ A description of the paravirtualized graphics device to create.
 class PGDeviceDescriptor
 ```
 
+```objc
+@interface PGDeviceDescriptor : NSObject
+```
+
 ## Topics
 
 ### Specifying the GPU
-- [var device: (any MTLDevice)?](pgdevicedescriptor/device.md)
+- [var device: (any MTLDevice)?](./pgdevicedescriptor/device.md)
   The Metal device object to use to back the virtual graphics device.
 ### Managing Memory Operations
-- [struct PGPhysicalMemoryRange_s](pgphysicalmemoryrange_s.md)
+- [struct PGPhysicalMemoryRange_s](./pgphysicalmemoryrange_s.md)
   A range in the guest virtual machine’s physical memory address space.
 ### Handling Interrupts
-- [var raiseInterrupt: PGRaiseInterrupt?](pgdevicedescriptor/raiseinterrupt.md)
+- [var raiseInterrupt: PGRaiseInterrupt?](./pgdevicedescriptor/raiseinterrupt.md)
   A handler that the system calls to raise an interrupt in the guest environment.
-- [typealias PGRaiseInterrupt](pgraiseinterrupt.md)
+- [typealias PGRaiseInterrupt](./pgraiseinterrupt.md)
   The block signature for a routine that raises interrupts in the guest environment.
 ### Specifying Virtual Device Properties
-- [var mmioLength: Int](pgdevicedescriptor/mmiolength.md)
+- [var mmioLength: Int](./pgdevicedescriptor/mmiolength.md)
   The length in bytes of the memory-mapped IO section.
 ### Instance Properties
-- [var displayPortCount: UInt32](pgdevicedescriptor/displayportcount.md)
+- [var displayPortCount: UInt32](./pgdevicedescriptor/displayportcount.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol PGDevice](pgdevice.md)
+### Devices
+- [protocol PGDevice](./pgdevice.md)
   A paravirtualized GPU device object.
 
 

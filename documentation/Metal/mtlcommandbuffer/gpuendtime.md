@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The host time, in seconds, when the GPU finishes execution of the command buffer.
@@ -20,15 +21,20 @@ The host time, in seconds, when the GPU finishes execution of the command buffer
 var gpuEndTime: CFTimeInterval { get }
 ```
 
+```objc
+@property (readonly) CFTimeInterval GPUEndTime;
+```
+
 #### Discussion
 
-You can calculate how much time the GPU spends running a command buffer by subtracting [`gpuStartTime`](mtlcommandbuffer/gpustarttime.md) from this value. Both values are relative to system mach time.
+You can calculate how much time the GPU spends running a command buffer by subtracting [`gpuStartTime`](./gpustarttime.md) from this value. Both values are relative to system mach time.
 
-The GPU start and end times remain `0.0` until the GPU finishes running the command buffer. Check this value after the [`waitUntilCompleted()`](mtlcommandbuffer/waituntilcompleted().md) method returns, or within a completion handler passed to the [`addCompletedHandler(_:)`](mtlcommandbuffer/addcompletedhandler(_:).md) method.
+The GPU start and end times remain `0.0` until the GPU finishes running the command buffer. Check this value after the [`waitUntilCompleted()`](./waituntilcompleted%28%29.md) method returns, or within a completion handler passed to the [`addCompletedHandler(_:)`](./addcompletedhandler%28_%29.md) method.
 
 ## See Also
 
-- [var gpuStartTime: CFTimeInterval](mtlcommandbuffer/gpustarttime.md)
+### Checking execution times on the GPU
+- [var gpuStartTime: CFTimeInterval](./gpustarttime.md)
   The host time, in seconds, when the GPU starts command buffer execution.
 
 

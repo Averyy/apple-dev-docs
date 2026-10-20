@@ -1,19 +1,26 @@
 # setActive(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays or hides the search interface, optionally with animation.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
+- iOS 3.0+ - Deprecated in 8.0
+- iPadOS 3.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: UISearchDisplayController has been replaced with UISearchController
 
 ## Declaration
 
 ```swift
 func setActive(_ visible: Bool, animated: Bool)
+```
+
+```objc
+- (void) setActive:(BOOL) visible animated:(BOOL) animated;
 ```
 
 #### Discussion
@@ -22,12 +29,13 @@ When the user focus in the search field of a managed search bar, the search disp
 
 ## Parameters
 
-- `visible`: [`true`](https://developer.apple.com/documentation/swift/true) to display the search interface if it is not already displayed; [`false`](https://developer.apple.com/documentation/swift/false) to hide the search interface if it is currently displayed.
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to use animation for a change in visible state, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+- `visible`: [`true`](../../Swift/true.md) to display the search interface if it is not already displayed; [`false`](../../Swift/false.md) to hide the search interface if it is currently displayed.
+- `animated`: [`true`](../../Swift/true.md) to use animation for a change in visible state, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isActive: Bool](uisearchdisplaycontroller/isactive.md)
+### Displaying the search Interface
+- [var isActive: Bool](./isactive.md)
   The visibility state of the search interface.
 
 

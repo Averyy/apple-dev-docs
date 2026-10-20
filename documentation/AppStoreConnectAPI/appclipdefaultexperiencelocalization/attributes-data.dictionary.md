@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceLocalization.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Default App Clip Experience Localizations resource.
 
@@ -10,18 +11,19 @@ The attributes that describe a Default App Clip Experience Localizations resourc
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceLocalization.Attributes
 ```
 
 ## Properties
 
-- `locale` (string): The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string): The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `subtitle` (string): The subtitle that appears on the App Clip card for the default App Clip experience.
 
 ## See Also
 
-- [object AppClipDefaultExperienceLocalization.Relationships](appclipdefaultexperiencelocalization/relationships-data.dictionary.md)
+### Objects
+- [object AppClipDefaultExperienceLocalization.Relationships](./relationships-data.dictionary.md)
   The relationships of the Default App Clip Experience Localizations resource you included in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # PasscodeSettingsCustomRegexObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies a regular expression, and its description, to enforce password compliance. Use the simpler passcode settings whenever possible, and rely on regular expression matching only when necessary. Mistakes in regular expressions can lead to frustrating user experiences, such as unsatisfiable passcode policies, or policy descriptions that don’t match the enforced policy.
 
@@ -10,14 +11,14 @@ Specifies a regular expression, and its description, to enforce password complia
 
 ## Declaration
 
-```swift
+```
 object PasscodeSettingsCustomRegexObject
 ```
 
 ## Topics
 
 ### Objects
-- [object PasscodeSettingsCustomRegex_DescriptionObject](passcodesettingscustomregex_descriptionobject.md)
+- [object PasscodeSettingsCustomRegex_DescriptionObject](./passcodesettingscustomregex_descriptionobject.md)
   A dictionary with supported OS language IDs for the keys (such as `en-US`), and values that represent a localized description of the policy that the regular expression enforces. Use the special `default` key for languages that the dictionary doesn’t contain.
 
 ## Properties

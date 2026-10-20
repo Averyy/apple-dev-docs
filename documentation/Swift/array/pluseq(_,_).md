@@ -1,7 +1,8 @@
 # +=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 8.0+
@@ -20,18 +21,19 @@ static func += (lhs: inout Array<Element>, rhs: Array<Element>)
 
 ## See Also
 
-- [func append<S>(contentsOf: S)](array/append(contentsof:).md)
+### Combining Arrays
+- [func append<S>(contentsOf: S)](./append%28contentsof%29.md)
   Adds the elements of a sequence to the end of the array.
-- [func append<S>(contentsOf: S)](array/append(contentsof:)-9foli.md)
+- [func append<S>(contentsOf: S)](./append%28contentsof%29-9foli.md)
   Adds the elements of a sequence or collection to the end of this collection.
-- [static func + <Other>(Other, Self) -> Self](array/+(_:_:)-6h58k.md)
+- [static func + <Other>(Other, Self) -> Self](./plus%28_,_%29-6h58k.md)
   Creates a new collection by concatenating the elements of a sequence and a collection.
-- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-n33n.md)
+- [static func + <Other>(Self, Other) -> Self](./plus%28_,_%29-n33n.md)
   Creates a new collection by concatenating the elements of a collection and a sequence.
-- [static func + (Array<Element>, Array<Element>) -> Array<Element>](array/+(_:_:).md)
-- [static func + <Other>(Self, Other) -> Self](array/+(_:_:)-9fm5l.md)
+- [static func + (Array<Element>, Array<Element>) -> Array<Element>](./plus%28_,_%29.md)
+- [static func + <Other>(Self, Other) -> Self](./plus%28_,_%29-9fm5l.md)
   Creates a new collection by concatenating the elements of two collections.
-- [static func += <Other>(inout Self, Other)](array/+=(_:_:)-676ib.md)
+- [static func += <Other>(inout Self, Other)](./pluseq%28_,_%29-676ib.md)
   Appends the elements of a sequence to a range-replaceable collection.
 
 

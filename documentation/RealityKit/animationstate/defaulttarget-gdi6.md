@@ -1,9 +1,10 @@
 # defaultTarget
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-See: [`defaultTarget`](animationstateprotocol/defaulttarget.md)
+See: [`defaultTarget`](../animationstateprotocol/defaulttarget.md)
 
 **Availability**:
 - iOS 18.0+

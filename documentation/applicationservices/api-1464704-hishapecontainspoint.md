@@ -1,7 +1,8 @@
 # HIShapeContainsPoint(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeContainsPoint(_ inShape: HIShape!, _ inPoint: UnsafePointer<CGPoint>!) -> Bool
+```
+
+```c
+Boolean HIShapeContainsPoint(HIShapeRef inShape, const CGPoint *inPoint);
 ```
 
 

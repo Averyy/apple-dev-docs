@@ -1,7 +1,8 @@
 # image(_:sourceRect:scale:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A shape style that fills a shape by repeating a region of an image.
 
@@ -21,9 +22,11 @@ A shape style that fills a shape by repeating a region of an image.
 static func image(_ image: Image, sourceRect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CGFloat = 1) -> ImagePaint
 ```
 
+Available when `Self` is `ImagePaint`.
+
 #### Discussion
 
-For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md).
+For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 
 ## Parameters
 

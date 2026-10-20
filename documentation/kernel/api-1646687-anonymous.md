@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONetworkInterfaceDisabledState](1646687-anonymous/kionetworkinterfacedisabledstate.md)
-- [kIONetworkInterfaceOpenedState](1646687-anonymous/kionetworkinterfaceopenedstate.md)
-- [kIONetworkInterfaceRegisteredState](1646687-anonymous/kionetworkinterfaceregisteredstate.md)
+- [kIONetworkInterfaceDisabledState](./api-1646687-anonymous/kionetworkinterfacedisabledstate.md)
+- [kIONetworkInterfaceOpenedState](./api-1646687-anonymous/kionetworkinterfaceopenedstate.md)
+- [kIONetworkInterfaceRegisteredState](./api-1646687-anonymous/kionetworkinterfaceregisteredstate.md)
 
 
 ---

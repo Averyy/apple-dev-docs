@@ -1,37 +1,41 @@
 # AppPreviewSetsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list app preview sets for an App Store version localization.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementsResponse`](./appassetlibraryplacementsresponse.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSetsResponse
 ```
 
 ## Properties
 
 - `data` ([AppPreviewSet]) *(required)*
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `AppCustomProductPageLocalization`, `AppPreview`, `AppStoreVersionExperimentTreatmentLocalization`, `AppStoreVersionLocalization`
 - `links` (PagedDocumentLinks) *(required)*
 - `meta` (PagingInformation)
 
 ## See Also
 
-- [object AppPreviewSet](apppreviewset.md)
+### Objects
+- [object AppPreviewSet](./apppreviewset.md)
   The data structure that represent an App Preview Sets resource.
-- [object AppPreviewSetCreateRequest](apppreviewsetcreaterequest.md)
+- [object AppPreviewSetCreateRequest](./apppreviewsetcreaterequest.md)
   The request body you use to create an App Preview Set.
-- [object AppPreviewSetResponse](apppreviewsetresponse.md)
+- [object AppPreviewSetResponse](./apppreviewsetresponse.md)
   The response body for endpoints that create or read a set of app preview videos for a display size.
-- [object AppPreviewSetAppPreviewsLinkagesRequest](apppreviewsetapppreviewslinkagesrequest.md)
+- [object AppPreviewSetAppPreviewsLinkagesRequest](./apppreviewsetapppreviewslinkagesrequest.md)
   A request body you use to reorder the app previews in a preview set.
-- [object AppPreviewSetAppPreviewsLinkagesResponse](apppreviewsetapppreviewslinkagesresponse.md)
+- [object AppPreviewSetAppPreviewsLinkagesResponse](./apppreviewsetapppreviewslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 
 

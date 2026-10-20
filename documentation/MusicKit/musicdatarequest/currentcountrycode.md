@@ -1,7 +1,8 @@
 # currentCountryCode
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Fetches the current country code for the user’s Apple Music account.
 
@@ -22,7 +23,7 @@ static var currentCountryCode: String { get async throws }
 
 #### Discussion
 
-The current country code may be useful to construct the URL for a [`MusicDataRequest`](musicdatarequest.md) because a typical catalog endpoint for Apple Music API requires the inclusion of a country code in the path of the corresponding URL.
+The current country code may be useful to construct the URL for a [`MusicDataRequest`](../musicdatarequest.md) because a typical catalog endpoint for Apple Music API requires the inclusion of a country code in the path of the corresponding URL.
 
 
 ---

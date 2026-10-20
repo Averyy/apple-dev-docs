@@ -1,7 +1,8 @@
 # Light
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A constant indicating a light color scheme.
 
@@ -10,19 +11,20 @@ A constant indicating a light color scheme.
 
 ## Declaration
 
-```swift
+```
 readonly Light: "light";
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 ## See Also
 
-- [Adaptive](colorscheme/adaptive.md)
+### Color scheme values
+- [Adaptive](./adaptive.md)
   A constant indicating a color scheme that follows the current system setting.
-- [Dark](colorscheme/dark.md)
+- [Dark](./dark.md)
   A constant indicating a dark color scheme.
 
 

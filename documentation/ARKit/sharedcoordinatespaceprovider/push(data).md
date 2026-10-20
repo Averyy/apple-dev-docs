@@ -1,7 +1,8 @@
 # push(data:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Push data to the shared coordinate space provider.
 

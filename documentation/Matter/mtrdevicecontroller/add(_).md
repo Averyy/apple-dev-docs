@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func add(_ endpoint: MTRServerEndpoint) -> Bool
+```
+
+```objc
+- (BOOL) addServerEndpoint:(MTRServerEndpoint *) endpoint;
 ```
 
 

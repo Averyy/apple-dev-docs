@@ -1,7 +1,8 @@
 # wifiAwareServiceRole
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Device’s Wi-Fi Aware’s service. Default is `DDDeviceWiFiAwareServiceRoleSubscriber`
 
@@ -9,13 +10,17 @@ Device’s Wi-Fi Aware’s service. Default is `DDDeviceWiFiAwareServiceRoleSubs
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var wifiAwareServiceRole: DDDevice.WiFiAwareServiceRole { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) DDDeviceWiFiAwareServiceRole wifiAwareServiceRole;
 ```
 
 

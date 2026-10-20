@@ -1,7 +1,8 @@
 # intensityExponent
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity value of the light, defined on a logarithmic scale.
 

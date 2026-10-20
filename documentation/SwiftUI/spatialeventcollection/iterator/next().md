@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The next `Event` in the sequence, if one exists.
 

@@ -1,21 +1,26 @@
 # CFMutableAttributedString
 
 **Framework**: Core Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class CFMutableAttributedString
+```
+
+```c
+typedef struct __CFAttributedString * CFMutableAttributedStringRef;
 ```
 
 #### Overview
@@ -28,65 +33,67 @@ Attributes are identified by key/value pairs stored in CFDictionary objects. Key
 
 > ❗ **Important**:  Attribute dictionaries set for an attributed string must always be created with kCFCopyStringDictionaryKeyCallbacks for their dictionary key callbacks and kCFTypeDictionaryValueCallBacks for their value callbacks; otherwise it’s an error.
 
-When you modify the contents of a mutable attributed string, it may have to do a lot of work to ensure it is internally consistent, and to coalesce runs of identical attributes. You can call [`CFAttributedStringBeginEditing(_:)`](cfattributedstringbeginediting(_:).md) and [`CFAttributedStringEndEditing(_:)`](cfattributedstringendediting(_:).md) around a set of related mutation calls that don’t require the string to be in consistent state in between, and thereby reduce the amount of work necessary. These calls can be nested.
+When you modify the contents of a mutable attributed string, it may have to do a lot of work to ensure it is internally consistent, and to coalesce runs of identical attributes. You can call [`CFAttributedStringBeginEditing(_:)`](./cfattributedstringbeginediting%28_%29.md) and [`CFAttributedStringEndEditing(_:)`](./cfattributedstringendediting%28_%29.md) around a set of related mutation calls that don’t require the string to be in consistent state in between, and thereby reduce the amount of work necessary. These calls can be nested.
 
-CFMutableAttributedString is “toll-free bridged” with its Foundation counterpart, NSMutableAttributedString. This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableAttributedString *` parameter, you can pass in an object of type `CFMutableAttributedStringRef`, and in a function where you see a `CFMutableAttributedStringRef` parameter, you can pass in an `NSMutableAttributedString` instance. See [`Toll-Free Bridged Types`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
+CFMutableAttributedString is “toll-free bridged” with its Foundation counterpart, NSMutableAttributedString. This means that the Core Foundation type is interchangeable in function or method calls with the bridged Foundation object. Therefore, in a method where you see an `NSMutableAttributedString *` parameter, you can pass in an object of type `CFMutableAttributedStringRef`, and in a function where you see a `CFMutableAttributedStringRef` parameter, you can pass in an `NSMutableAttributedString` instance. See [Toll-Free Bridged Types](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDesignConcepts/Articles/tollFreeBridgedTypes.html#//apple_ref/doc/uid/TP40010677) for more information on toll-free bridging.
 
-There is not always a 1:1 mapping between `NSMutableAttributedString`‘s methods and CFMutableAttributedString’s functions. For example, to perform an operation equivalent to `NSMutableAttributedString`’s [`append(_:)`](https://developer.apple.com/documentation/foundation/nsmutableattributedstring/append(_:)) method on a CFMutableAttributedString object, you can use [`CFAttributedStringReplaceAttributedString(_:_:_:)`](cfattributedstringreplaceattributedstring(_:_:_:).md) and specify `CFRangeMake(CFAttributedStringGetLength(attrStr), 0)` as the range. Alternatively you can cast the CFMutableAttributedString object to an `NSMutableAttributedString` object and send the `appendAttributedString:` message.
+There is not always a 1:1 mapping between `NSMutableAttributedString`‘s methods and CFMutableAttributedString’s functions. For example, to perform an operation equivalent to `NSMutableAttributedString`’s [`append(_:)`](../Foundation/nsmutableattributedstring/append%28_%29.md) method on a CFMutableAttributedString object, you can use [`CFAttributedStringReplaceAttributedString(_:_:_:)`](./cfattributedstringreplaceattributedstring%28_,_,_%29.md) and specify `CFRangeMake(CFAttributedStringGetLength(attrStr), 0)` as the range. Alternatively you can cast the CFMutableAttributedString object to an `NSMutableAttributedString` object and send the `appendAttributedString:` message.
 
 ## Topics
 
 ### Creating a CFMutableAttributedString
-- [func CFAttributedStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableAttributedString!](cfattributedstringcreatemutable(_:_:).md)
+- [func CFAttributedStringCreateMutable(CFAllocator!, CFIndex) -> CFMutableAttributedString!](./cfattributedstringcreatemutable%28_,_%29.md)
   Creates a mutable attributed string.
-- [func CFAttributedStringCreateMutableCopy(CFAllocator!, CFIndex, CFAttributedString!) -> CFMutableAttributedString!](cfattributedstringcreatemutablecopy(_:_:_:).md)
+- [func CFAttributedStringCreateMutableCopy(CFAllocator!, CFIndex, CFAttributedString!) -> CFMutableAttributedString!](./cfattributedstringcreatemutablecopy%28_,_,_%29.md)
   Creates a mutable copy of an attributed string.
 ### Modifying a CFMutableAttributedString
-- [func CFAttributedStringBeginEditing(CFMutableAttributedString!)](cfattributedstringbeginediting(_:).md)
+- [func CFAttributedStringBeginEditing(CFMutableAttributedString!)](./cfattributedstringbeginediting%28_%29.md)
   Defers internal consistency-checking and coalescing for a mutable attributed string.
-- [func CFAttributedStringEndEditing(CFMutableAttributedString!)](cfattributedstringendediting(_:).md)
+- [func CFAttributedStringEndEditing(CFMutableAttributedString!)](./cfattributedstringendediting%28_%29.md)
   Re-enables internal consistency-checking and coalescing for a mutable attributed string.
-- [func CFAttributedStringGetMutableString(CFMutableAttributedString!) -> CFMutableString!](cfattributedstringgetmutablestring(_:).md)
+- [func CFAttributedStringGetMutableString(CFMutableAttributedString!) -> CFMutableString!](./cfattributedstringgetmutablestring%28_%29.md)
   Gets as a mutable string the string for an attributed string.
-- [func CFAttributedStringRemoveAttribute(CFMutableAttributedString!, CFRange, CFString!)](cfattributedstringremoveattribute(_:_:_:).md)
+- [func CFAttributedStringRemoveAttribute(CFMutableAttributedString!, CFRange, CFString!)](./cfattributedstringremoveattribute%28_,_,_%29.md)
   Removes the value of a single attribute over a specified range.
-- [func CFAttributedStringReplaceString(CFMutableAttributedString!, CFRange, CFString!)](cfattributedstringreplacestring(_:_:_:).md)
+- [func CFAttributedStringReplaceString(CFMutableAttributedString!, CFRange, CFString!)](./cfattributedstringreplacestring%28_,_,_%29.md)
   Modifies the string of an attributed string.
-- [func CFAttributedStringReplaceAttributedString(CFMutableAttributedString!, CFRange, CFAttributedString!)](cfattributedstringreplaceattributedstring(_:_:_:).md)
+- [func CFAttributedStringReplaceAttributedString(CFMutableAttributedString!, CFRange, CFAttributedString!)](./cfattributedstringreplaceattributedstring%28_,_,_%29.md)
   Replaces the attributed substring over a range with another attributed string.
-- [func CFAttributedStringSetAttribute(CFMutableAttributedString!, CFRange, CFString!, CFTypeRef!)](cfattributedstringsetattribute(_:_:_:_:).md)
+- [func CFAttributedStringSetAttribute(CFMutableAttributedString!, CFRange, CFString!, CFTypeRef!)](./cfattributedstringsetattribute%28_,_,_,_%29.md)
   Sets the value of a single attribute over the specified range.
-- [func CFAttributedStringSetAttributes(CFMutableAttributedString!, CFRange, CFDictionary!, Bool)](cfattributedstringsetattributes(_:_:_:_:).md)
+- [func CFAttributedStringSetAttributes(CFMutableAttributedString!, CFRange, CFDictionary!, Bool)](./cfattributedstringsetattributes%28_,_,_,_%29.md)
   Sets the value of attributes of a mutable attributed string over a specified range.
 
 ## Relationships
 
 ### Inherits From
-- [CFAttributedString](cfattributedstring.md)
+- [CFAttributedString](./cfattributedstring.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Property List Programming Topics for Core Foundation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFPropertyLists/CFPropertyLists.html#//apple_ref/doc/uid/10000130i)
-- [String Programming Guide for Core Foundation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/introCFStrings.html#//apple_ref/doc/uid/10000131i)
-- [Data Formatting Guide for Core Foundation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/CFDataFormatting.html#//apple_ref/doc/uid/10000176i)
-- [class CFAllocator](cfallocator.md)
-- [class CFArray](cfarray.md)
-- [class CFAttributedString](cfattributedstring.md)
-- [class CFBag](cfbag.md)
-- [class CFBinaryHeap](cfbinaryheap.md)
-- [class CFBitVector](cfbitvector.md)
-- [class CFBoolean](cfboolean.md)
-- [class CFBundle](cfbundle.md)
-- [class CFCalendar](cfcalendar.md)
-- [class CFCharacterSet](cfcharacterset.md)
-- [class CFData](cfdata.md)
-- [class CFDate](cfdate.md)
-- [class CFDateFormatter](cfdateformatter.md)
-- [class CFDictionary](cfdictionary.md)
-- [class CFError](cferror.md)
+### Related Documentation
+- [Property List Programming Topics for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFPropertyLists/CFPropertyLists.html#//apple_ref/doc/uid/10000130i)
+- [String Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/introCFStrings.html#//apple_ref/doc/uid/10000131i)
+- [Data Formatting Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFDataFormatting/Articles/CFDataFormatting.html#//apple_ref/doc/uid/10000176i)
+### Opaque Types
+- [class CFAllocator](./cfallocator.md)
+- [class CFArray](./cfarray.md)
+- [class CFAttributedString](./cfattributedstring.md)
+- [class CFBag](./cfbag.md)
+- [class CFBinaryHeap](./cfbinaryheap.md)
+- [class CFBitVector](./cfbitvector.md)
+- [class CFBoolean](./cfboolean.md)
+- [class CFBundle](./cfbundle.md)
+- [class CFCalendar](./cfcalendar.md)
+- [class CFCharacterSet](./cfcharacterset.md)
+- [class CFData](./cfdata.md)
+- [class CFDate](./cfdate.md)
+- [class CFDateFormatter](./cfdateformatter.md)
+- [class CFDictionary](./cfdictionary.md)
+- [class CFError](./cferror.md)
 
 
 ---

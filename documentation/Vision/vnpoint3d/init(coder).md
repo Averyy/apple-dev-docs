@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -19,7 +20,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init?(position: simd_float4x4)](vnpoint3d/init(position:).md)
+### Creating a Point
+- [init?(position: simd_float4x4)](./init%28position%29.md)
   Creates a point object with the position you specify.
 
 

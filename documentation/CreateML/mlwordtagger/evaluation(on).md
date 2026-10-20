@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes evaluation metrics.
 
@@ -24,13 +25,14 @@ Word tagger metrics.
 
 ## See Also
 
-- [func evaluation(on:tokenColumn:labelColumn:)](mlwordtagger/evaluation(on:tokencolumn:labelcolumn:).md)
+### Evaluating a word tagger
+- [func evaluation(on:tokenColumn:labelColumn:)](./evaluation%28on,tokencolumn,labelcolumn%29.md)
   Computes evaluation metrics.
-- [let trainingMetrics: MLWordTaggerMetrics](mlwordtagger/trainingmetrics.md)
+- [let trainingMetrics: MLWordTaggerMetrics](./trainingmetrics.md)
   Measurements of the tagger’s performance on the training data set.
-- [let validationMetrics: MLWordTaggerMetrics](mlwordtagger/validationmetrics.md)
+- [let validationMetrics: MLWordTaggerMetrics](./validationmetrics.md)
   Measurements of the tagger’s performance on the validation data set.
-- [struct MLWordTaggerMetrics](mlwordtaggermetrics.md)
+- [struct MLWordTaggerMetrics](../mlwordtaggermetrics.md)
   Metrics you use to evaluate a word tagger’s performance.
 
 

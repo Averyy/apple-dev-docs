@@ -1,7 +1,8 @@
 # abbreviationDictionary
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the mapping of abbreviations to time zone identifiers.
 
@@ -22,9 +23,10 @@ static var abbreviationDictionary: [String : String] { get set }
 
 ## See Also
 
-- [init?(secondsFromGMT: Int)](timezone/init(secondsfromgmt:).md)
+### Creating a Time Zone
+- [init?(secondsFromGMT: Int)](./init%28secondsfromgmt%29.md)
   Returns a time zone initialized with a specific number of seconds from GMT.
-- [static var knownTimeZoneIdentifiers: [String]](timezone/knowntimezoneidentifiers.md)
+- [static var knownTimeZoneIdentifiers: [String]](./knowntimezoneidentifiers.md)
   Returns an array of strings listing the identifier of all the time zones known to the system.
 
 

@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app delegate object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: (any NSApplicationDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSApplicationDelegate> delegate;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The app object and app delegate work in tandem to manage the app’s overall beh
 
 ## See Also
 
-- [protocol NSApplicationDelegate](nsapplicationdelegate.md)
+### Managing the app’s behavior
+- [protocol NSApplicationDelegate](../nsapplicationdelegate.md)
   A set of methods that manage your app’s life cycle and its interaction with common system services.
 
 

@@ -1,7 +1,8 @@
 # convolution3D(_:weights:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 3D forward convolution operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 3D forward convolution operation and returns the result tensor.
 
 ```swift
 func convolution3D(_ source: MPSGraphTensor, weights: MPSGraphTensor, descriptor: MPSGraphConvolution3DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) convolution3DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphConvolution3DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # CameraFrameProvider.CameraFrameUpdates.Element
 
 **Framework**: ARKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence of camera frame structures.
 

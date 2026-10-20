@@ -1,14 +1,15 @@
 # vnode_willberecycled
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 int vnode_willberecycled(vnode_t vp);
 ```
 

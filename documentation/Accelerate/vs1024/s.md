@@ -1,7 +1,8 @@
 # s
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -12,11 +13,16 @@
 var s: vS1024.__Unnamed_struct_s { get set }
 ```
 
+```c
+struct { ... } s;
+```
+
 ## See Also
 
-- [var vs: vS1024.__Unnamed_struct_vs](vs1024/vs.md)
-- [var v: (vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32)](vs1024/v.md)
-- [var vs: vS1024.__Unnamed_struct_vs](vs1024/vs.md)
+### Instance Properties
+- [var vs: vS1024.__Unnamed_struct_vs](./vs.md)
+- [var v: (vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32, vUInt32)](./v.md)
+- [var vs: vS1024.__Unnamed_struct_vs](./vs.md)
 
 
 ---

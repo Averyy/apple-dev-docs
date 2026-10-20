@@ -1,7 +1,8 @@
 # sizeLimitExceeded
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a user defaults database exceeding its maximum size.
 
@@ -20,13 +21,16 @@ An identifier for a message about a user defaults database exceeding its maximum
 static var sizeLimitExceeded: NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UserDefaults.SizeLimitExceededMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.SizeLimitExceededMessage`](userdefaults/sizelimitexceededmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`UserDefaults.SizeLimitExceededMessage`](../../userdefaults/sizelimitexceededmessage.md).
 
 ## See Also
 
-- [static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>](notificationcenter/messageidentifier/didchange-187tw.md)
+### Identifying defaults messages
+- [static var didChange: NotificationCenter.BaseMessageIdentifier<UserDefaults.DidChangeMessage>](./didchange-187tw.md)
   An identifier for a message about a change in a user defaults setting.
 
 

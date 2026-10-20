@@ -1,7 +1,8 @@
 # nw_path_status_unsatisfied
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The path is not available for use.
 
@@ -20,13 +21,18 @@ The path is not available for use.
 var nw_path_status_unsatisfied: nw_path_status_t { get }
 ```
 
+```c
+nw_path_status_unsatisfied
+```
+
 ## See Also
 
-- [var nw_path_status_invalid: nw_path_status_t](nw_path_status_invalid.md)
+### Status Values
+- [var nw_path_status_invalid: nw_path_status_t](./nw_path_status_invalid.md)
   The path is not valid.
-- [var nw_path_status_satisfied: nw_path_status_t](nw_path_status_satisfied.md)
+- [var nw_path_status_satisfied: nw_path_status_t](./nw_path_status_satisfied.md)
   The path is available to establish connections and send data.
-- [var nw_path_status_satisfiable: nw_path_status_t](nw_path_status_satisfiable.md)
+- [var nw_path_status_satisfiable: nw_path_status_t](./nw_path_status_satisfiable.md)
   The path is not currently available, but establishing a new connection may activate the path.
 
 

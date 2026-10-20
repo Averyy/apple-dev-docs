@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency code this format style uses.
 
@@ -22,7 +23,8 @@ var currencyCode: String
 
 ## See Also
 
-- [var locale: Locale](decimal/formatstyle/currency/locale.md)
+### Accessing style properties
+- [var locale: Locale](./locale.md)
   The locale of the format style.
 
 

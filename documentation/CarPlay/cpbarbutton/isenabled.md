@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that enables and disables the bar button.
 
@@ -16,15 +17,20 @@ A Boolean value that enables and disables the bar button.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var image: UIImage?](cpbarbutton/image.md)
+### Configuring the Button
+- [var image: UIImage?](./image.md)
   The image displayed on the bar button.
-- [var title: String?](cpbarbutton/title.md)
+- [var title: String?](./title.md)
   The title displayed on the bar button.
 
 

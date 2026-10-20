@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_inifscope {
     ...
 };
@@ -17,11 +17,11 @@ struct sockaddr_inifscope {
 ## Topics
 
 ### Instance Properties
-- [sin_addr](sockaddr_inifscope/3944351-sin_addr.md)
-- [sin_family](sockaddr_inifscope/3944352-sin_family.md)
-- [sin_len](sockaddr_inifscope/3944353-sin_len.md)
-- [sin_port](sockaddr_inifscope/3944354-sin_port.md)
-- [un](sockaddr_inifscope/3944355-un.md)
+- [sin_addr](./sockaddr_inifscope/api-3944351-sin_addr.md)
+- [sin_family](./sockaddr_inifscope/api-3944352-sin_family.md)
+- [sin_len](./sockaddr_inifscope/api-3944353-sin_len.md)
+- [sin_port](./sockaddr_inifscope/api-3944354-sin_port.md)
+- [un](./sockaddr_inifscope/api-3944355-un.md)
 
 
 ---

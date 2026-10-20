@@ -1,15 +1,20 @@
 # init(vCardRepresentation:)
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(vCardRepresentation vCardData: Data!)
+```
+
+```objc
+- (id) initWithVCardRepresentation:(NSData *) vCardData;
 ```
 
 

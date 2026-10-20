@@ -1,7 +1,8 @@
 # init(signedArchive:onCompletion:)
 
 **Framework**: FinanceKitUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized Add to Order Button.
 

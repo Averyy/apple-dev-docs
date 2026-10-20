@@ -1,7 +1,8 @@
 # SetSpeechProperty(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the value of the specified speech-channel property.
 
@@ -14,15 +15,19 @@ Sets the value of the specified speech-channel property.
 func SetSpeechProperty(_ chan: SpeechChannel, _ property: CFString, _ object: CFTypeRef?) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr SetSpeechProperty(SpeechChannel chan, CFStringRef property, CFTypeRef object);
+```
 
-A result code. See [`Result Codes`](speech_synthesis_manager#1659745.md).
+#### Return Value
+
+A result code. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
 #### Discussion
 
-The `SetSpeechProperty` function is the Core Foundation-based equivalent of the [`SetSpeechInfo`](1552223-setspeechinfo.md) function.
+The `SetSpeechProperty` function is the Core Foundation-based equivalent of the [`SetSpeechInfo`](./api-1552223-setspeechinfo.md) function.
 
-See [`Speech-Channel Properties`](speech_synthesis_manager/speech-channel_properties.md) for information on the properties you can specify.
+See [Speech-Channel Properties](./speech_synthesis_manager/speech-channel_properties.md) for information on the properties you can specify.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ See [`Speech-Channel Properties`](speech_synthesis_manager/speech-channel_proper
 
 ## See Also
 
-- [func SetSpeechPitch(SpeechChannel, Fixed) -> OSErr](1462674-setspeechpitch.md)
+### Changing Speech Attributes
+- [func SetSpeechPitch(SpeechChannel, Fixed) -> OSErr](./api-1462674-setspeechpitch.md)
   Sets the speech pitch on a designated speech channel.
-- [func SetSpeechRate(SpeechChannel, Fixed) -> OSErr](1459896-setspeechrate.md)
+- [func SetSpeechRate(SpeechChannel, Fixed) -> OSErr](./api-1459896-setspeechrate.md)
   Sets the speech rate of a designated speech channel.
 
 

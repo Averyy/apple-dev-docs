@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new set of marker positions from the given raw value.
 

@@ -1,7 +1,8 @@
 # applyBackward(batchSize:inputA:inputB:output:outputGradient:generatingInputAGradient:generatingInputBGradient:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the layer backward to generate input gradients.
 
@@ -11,8 +12,10 @@ Applies the layer backward to generate input gradients.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -32,7 +35,8 @@ func applyBackward(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSND
 
 ## See Also
 
-- [func apply(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](bnns/binaryarithmeticlayer/apply(batchsize:inputa:inputb:output:).md)
+### Applying a Binary Arithmetic Layer
+- [func apply(batchSize: Int, inputA: BNNSNDArrayDescriptor, inputB: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor) throws](./apply%28batchsize,inputa,inputb,output%29.md)
   Applies the layer to a set of input array descriptors, writing the result to a set of output array descriptors.
 
 

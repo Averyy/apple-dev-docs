@@ -1,7 +1,8 @@
 # NWEndpoint.Host
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A name or address that identifies a network endpoint.
 
@@ -23,34 +24,35 @@ enum Host
 ## Topics
 
 ### Creating Hosts
-- [init(String)](nwendpoint/host/init(_:).md)
+- [init(String)](./host/init%28_%29.md)
   Initializes a host with a string.
 ### Accessing Host Types
-- [case name(String, NWInterface?)](nwendpoint/host/name(_:_:).md)
+- [case name(String, NWInterface?)](./host/name%28_,_%29.md)
   A host represented as a name.
-- [NWEndpoint.Host.ipv4(_:)](nwendpoint/host/ipv4(_:).md)
+- [NWEndpoint.Host.ipv4(_:)](./host/ipv4%28_%29.md)
   A host represented as an IPv4 address.
-- [NWEndpoint.Host.ipv6(_:)](nwendpoint/host/ipv6(_:).md)
+- [NWEndpoint.Host.ipv6(_:)](./host/ipv6%28_%29.md)
   A host represented as an IPv6 address.
 ### Requiring Interfaces
-- [var interface: NWInterface?](nwendpoint/host/interface.md)
+- [var interface: NWInterface?](./host/interface.md)
   The interface associated with this host, such as the interface scope stored in an IPv6 address.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NWEndpoint.Port](nwendpoint/port.md)
+### Host and Ports
+- [NWEndpoint.Port](./port.md)
   A port number you use along with a host to identify a network endpoint.
 
 

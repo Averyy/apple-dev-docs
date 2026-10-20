@@ -1,12 +1,13 @@
 # NSEvent.PointingDeviceType.unknown
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents an unknown type of pointing device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Represents an unknown type of pointing device.
 case unknown
 ```
 
+```c
+NSPointingDeviceTypeUnknown
+```
+
 ## See Also
 
-- [NSEvent.PointingDeviceType.cursor](nsevent/pointingdevicetype-swift.enum/cursor.md)
+### Enumeration Cases
+- [NSEvent.PointingDeviceType.cursor](./cursor.md)
   Represents a cursor pointing device.
-- [NSEvent.PointingDeviceType.eraser](nsevent/pointingdevicetype-swift.enum/eraser.md)
+- [NSEvent.PointingDeviceType.eraser](./eraser.md)
   Represents the eraser end of a stylus-like pointing device.
-- [NSEvent.PointingDeviceType.pen](nsevent/pointingdevicetype-swift.enum/pen.md)
+- [NSEvent.PointingDeviceType.pen](./pen.md)
   Represents the tip end of a stylus-like pointing device.
 
 

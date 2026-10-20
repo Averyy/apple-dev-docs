@@ -1,7 +1,8 @@
 # Attribute(_:originalName:hashModifier:)
 
 **Framework**: SwiftData  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Specifies the custom behavior that SwiftData applies to the annotated property when managing the owning class.
 
@@ -24,8 +25,8 @@ Specifies the custom behavior that SwiftData applies to the annotated property w
 
 ## Mentions
 
-- [Fetching and filtering time-based model changes](fetching-and-filtering-time-based-model-changes.md)
-- [Preserving your app’s model data across launches](preserving-your-apps-model-data-across-launches.md)
+- [Fetching and filtering time-based model changes](./fetching-and-filtering-time-based-model-changes.md)
+- [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
 #### Overview
 
@@ -46,25 +47,26 @@ class RemoteImage {
 
 ## Parameters
 
-- `options`: A list of options to apply to the attached property to customize its behavior. For possible values, see [`Schema.Attribute.Option`](schema/attribute/option.md).
+- `options`: A list of options to apply to the attached property to customize its behavior. For possible values, see [`Schema.Attribute.Option`](./schema/attribute/option.md).
 - `originalName`: The previous name of the attribute, if it’s different to the one in the current schema version. The default value is `nil`.
 - `hashModifier`: A unique hash value that represents the most recent version of the attached property. The default value is `nil`.
 
 ## See Also
 
-- [macro Model()](model().md)
+### Model definition
+- [macro Model()](./model%28%29.md)
   Converts a Swift class into a stored model that’s managed by SwiftData.
-- [macro Unique<T>([PartialKeyPath<T>]...)](unique(_:).md)
+- [macro Unique<T>([PartialKeyPath<T>]...)](./unique%28_%29.md)
   Specifies the key-paths that SwiftData uses to enforce the uniqueness of model instances.
-- [macro Index<T>([PartialKeyPath<T>]...)](index(_:)-74ia2.md)
+- [macro Index<T>([PartialKeyPath<T>]...)](./index%28_%29-74ia2.md)
   Specifies the key-paths that SwiftData uses to create one or more binary indices for the associated model.
-- [macro Index<T>(Schema.Index<T>.Types<T>...)](index(_:)-7d4z0.md)
+- [macro Index<T>(Schema.Index<T>.Types<T>...)](./index%28_%29-7d4z0.md)
   Specifies the key-paths that SwiftData uses to create one or more indicies for the associated model, where each index is either binary or R-tree.
-- [Defining data relationships with enumerations and model classes](defining-data-relationships-with-enumerations-and-model-classes.md)
+- [Defining data relationships with enumerations and model classes](./defining-data-relationships-with-enumerations-and-model-classes.md)
   Create relationships for static and dynamic data stored in your app.
-- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](relationship(_:deleterule:minimummodelcount:maximummodelcount:originalname:inverse:hashmodifier:).md)
+- [macro Relationship(Schema.Relationship.Option..., deleteRule: Schema.Relationship.DeleteRule, minimumModelCount: Int?, maximumModelCount: Int?, originalName: String?, inverse: AnyKeyPath?, hashModifier: String?)](./relationship%28_,deleterule,minimummodelcount,maximummodelcount,originalname,inverse,hashmodifier%29.md)
   Specifies the options that SwiftData needs to manage the annotated property as a relationship between two models.
-- [macro Transient()](transient().md)
+- [macro Transient()](./transient%28%29.md)
   Tells SwiftData not to persist the annotated property when managing the owning class.
 
 

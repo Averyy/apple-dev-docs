@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The indices that are valid for subscripting the collection, in ascending order.
 
@@ -19,6 +20,8 @@ The indices that are valid for subscripting the collection, in ascending order.
 ```swift
 var indices: Range<Self.Index> { get }
 ```
+
+Available when `Index` conforms to `Strideable`, `Indices` is `Range<Self.Index>`, and `Index.Stride` is `Int`.
 
 
 ---

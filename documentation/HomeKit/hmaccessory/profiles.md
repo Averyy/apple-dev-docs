@@ -1,7 +1,8 @@
 # profiles
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of profiles implemented by the accessory.
 
@@ -19,13 +20,18 @@ An array of profiles implemented by the accessory.
 var profiles: [HMAccessoryProfile] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<HMAccessoryProfile *> * profiles;
+```
+
 ## See Also
 
-- [class HMAccessoryProfile](hmaccessoryprofile.md)
+### Managing accessory profiles
+- [class HMAccessoryProfile](../hmaccessoryprofile.md)
   A profile that certain accessories implement.
-- [class HMNetworkConfigurationProfile](hmnetworkconfigurationprofile.md)
+- [class HMNetworkConfigurationProfile](../hmnetworkconfigurationprofile.md)
   A profile that provides information about network protection for an accessory.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](../hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
 
 

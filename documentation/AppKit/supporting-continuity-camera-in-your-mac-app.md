@@ -1,6 +1,7 @@
 # Supporting Continuity Camera in Your Mac App
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Article
 
 Incorporate scanned documents and pictures from a user’s iPhone, iPad, or iPod touch into your Mac app using Continuity Camera.
 
@@ -12,7 +13,7 @@ If your app works with images, this feature can be a convenient way to get image
 
 Apps using `NSTextView` get Continuity Camera support automatically. When the user Control-clicks in an app’s text view, a Continuity Camera menu item appears. The user can then capture a photo or scan a document on their iPhone or iPad, and it automatically appears in the text view. The image is then accessible as an attachment in the `NSTextView` text storage object.
 
-![A screenshot showing a text view where the user Control-clicks to display the Continuity Camera dialog for taking a photo with an iOS device. The dialog shows the name of the iOS device and a Cancel button to allow the user to dismiss the dialog without taking a photo.](/images/com.apple.appkit/media-3993602@2x.png)
+![A screenshot showing a text view where the user Control-clicks to display the Continuity Camera dialog for taking a photo with an iOS device. The dialog shows the name of the iOS device and a Cancel button to allow the user to dismiss the dialog without taking a photo.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3993602@2x.png)
 
 If you’re not using `NSTextView`, you need to add support to your macOS interface to enable Continuity Camera, and to merge photos taken from the user’s iOS device.
 
@@ -20,7 +21,7 @@ If you’re not using `NSTextView`, you need to add support to your macOS interf
 
 You must tell AppKit that your app can take advantage of any image data originating from Continuity Camera. You do this in responder objects, such as a view controller.
 
-When the Continuity Camera menu item appears, AppKit calls the [`validRequestor(forSendType:returnType:)`](nsresponder/validrequestor(forsendtype:returntype:).md) method of your responder objects in the current responder chain to find an object that can handle image data from Continuity Camera. Override this method to let AppKit know that your responder object supports image data that Continuity Camera generates. When the user captures a photo or scans a document using Continuity Camera, AppKit places the image data on the pasteboard and calls the designated responder object to handle the data.
+When the Continuity Camera menu item appears, AppKit calls the [`validRequestor(forSendType:returnType:)`](./nsresponder/validrequestor%28forsendtype,returntype%29.md) method of your responder objects in the current responder chain to find an object that can handle image data from Continuity Camera. Override this method to let AppKit know that your responder object supports image data that Continuity Camera generates. When the user captures a photo or scans a document using Continuity Camera, AppKit places the image data on the pasteboard and calls the designated responder object to handle the data.
 
 Your responder’s `validRequestor(forSendType:returnType:)` implementation must verify that it can receive pasteboard image data of the specified type, then return the object to receive the image data when AppKit places it on the pasteboard. Your `validRequestor(forSendType:returnType:)` method can designate the same receiver object to handle the image data.
 
@@ -69,7 +70,7 @@ To add a Continuity Camera menu item to one of your app’s menu bar menus, loca
 
 Here’s how it looks:
 
-![A screenshot of a storyboard for an app’s menus, showing the settings that the preceding steps describe.](/images/com.apple.appkit/media-3150811@2x.png)
+![A screenshot of a storyboard for an app’s menus, showing the settings that the preceding steps describe.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3150811@2x.png)
 
 If your app doesn’t use a storyboard, you can programmatically add the menu item by following these steps:
 
@@ -80,7 +81,7 @@ If your app doesn’t use a storyboard, you can programmatically add the menu it
 5. Set the Identifier property for the Camera menu item to `NSMenuItem.importFromDeviceIdentifier`.
 6. Add the Camera menu item to the submenu.
 
-A good place to do this is in your app delegate’s [`applicationWillFinishLaunching(_:)`](nsapplicationdelegate/applicationwillfinishlaunching(_:).md) method as the following example shows:
+A good place to do this is in your app delegate’s [`applicationWillFinishLaunching(_:)`](./nsapplicationdelegate/applicationwillfinishlaunching%28_%29.md) method as the following example shows:
 
 ```swift
     func applicationWillFinishLaunching(_ aNotification: Notification) {        
@@ -101,7 +102,7 @@ A good place to do this is in your app delegate’s [`applicationWillFinishLaunc
 
 You don’t add a Continuity Camera menu item directly to your app’s contextual menus. Instead, you enable the appropriate support in your app’s responder objects as the previous section describes, and AppKit adds the menu item for you.
 
-For example, the following code demonstrates how to display a contextual menu in response to a mouse-down event, and have AppKit insert the menu item. This code overrides the [`mouseDown(with:)`](nsresponder/mousedown(with:).md) method and creates a menu. It then invokes the `NSMenu` class method [`popUpContextMenu(_:with:for:)`](nsmenu/popupcontextmenu(_:with:for:).md), passing the event object related to the mouse-down event and the view that owns the contextual menu. AppKit automatically inserts the Continuity Camera menu item in the contextual menu for you.
+For example, the following code demonstrates how to display a contextual menu in response to a mouse-down event, and have AppKit insert the menu item. This code overrides the [`mouseDown(with:)`](./nsresponder/mousedown%28with%29.md) method and creates a menu. It then invokes the `NSMenu` class method [`popUpContextMenu(_:with:for:)`](./nsmenu/popupcontextmenu%28_,with,for%29.md), passing the event object related to the mouse-down event and the view that owns the contextual menu. AppKit automatically inserts the Continuity Camera menu item in the contextual menu for you.
 
 ```swift
 override func mouseDown(with event: NSEvent) {    
@@ -116,9 +117,9 @@ override func mouseDown(with event: NSEvent) {
 
 When the user selects the Continuity Camera menu item, the system automatically launches the Continuity Camera interface on the user’s device. After the user captures an image, AppKit places that image on the app’s pasteboard.
 
-##### Incorporate the Image Data From the Pasteboard
+##### Incorporate the Image Data from the Pasteboard
 
-You need to incorporate the captured images into your app after AppKit places them on the pasteboard. AppKit then calls the active responder object’s [`readSelection(from:)`](nsservicesmenurequestor/readselection(from:).md) method to read the image data. The `readSelection(from:)` method supports Continuity Camera image data and other types of data in your app. Use that method to determine whether the image is in a format your app supports, and incorporate that image data into your app.
+You need to incorporate the captured images into your app after AppKit places them on the pasteboard. AppKit then calls the active responder object’s [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md) method to read the image data. The `readSelection(from:)` method supports Continuity Camera image data and other types of data in your app. Use that method to determine whether the image is in a format your app supports, and incorporate that image data into your app.
 
 Here’s an example implementation of the `readSelection(from:)` method:
 
@@ -141,19 +142,20 @@ func readSelection(from pasteboard: NSPasteboard) -> Bool {
 
 ## See Also
 
-- [Views and Controls](views-and-controls.md)
+### User Interface
+- [Views and Controls](./views-and-controls.md)
   Present your content onscreen and handle user input and events.
-- [View Management](view-management.md)
+- [View Management](./view-management.md)
   Manage your user interface, including the size and position of views in a window.
-- [View Layout](view-layout.md)
+- [View Layout](./view-layout.md)
   Position and size views using a stack view or Auto Layout constraints.
-- [Appearance Customization](appearance-customization.md)
+- [Appearance Customization](./appearance-customization.md)
   Add Dark Mode support to your app, and use appearance proxies to modify your UI.
-- [Animation](animation.md)
+- [Animation](./animation.md)
   Animate your views and other content to create a more engaging experience for users.
-- [Windows, Panels, and Screens](windows-panels-and-screens.md)
+- [Windows, Panels, and Screens](./windows-panels-and-screens.md)
   Organize your view hierarchies and facilitate their display onscreen.
-- [Sound, Speech, and Haptics](sound-speech-and-haptics.md)
+- [Sound, Speech, and Haptics](./sound-speech-and-haptics.md)
   Play sounds and haptic feedback, and incorporate speech recognition and synthesis into your interface.
 
 

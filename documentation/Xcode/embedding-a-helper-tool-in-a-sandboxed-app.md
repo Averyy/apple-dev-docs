@@ -1,6 +1,7 @@
 # Embedding a command-line tool in a sandboxed app
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
 
@@ -15,7 +16,7 @@ Embedding a command-line tool in a sandbox app does present some unique challeng
 
 > **Note**: These steps assume that you’re building an app for the App Store because that’s the most common destination for sandboxed apps. However, the same basic process works for apps distributed independently using Developer ID signing; you just need to choose a different distribution path in the Xcode organizer.
 
-##### Create the App Project
+##### Create the app project
 
 To get started, create a new project from the macOS > App template. Name it `AppWithTool`, resulting in a bundle ID like `com.example.apple-samplecode.AppWithTool`.
 
@@ -31,7 +32,7 @@ Choose Product > Archive, which builds the app into an Xcode archive and reveals
 
 In the organizer, delete the new archive, just to reset to the original state.
 
-##### Create the Helper Tool Target
+##### Create the helper tool target
 
 With the app target in the project building correctly, it’s time to create a helper tool target so you can embed its product into the app. To start, create a new target from the macOS > Command Line Tool template. Name this `ToolX`, where the *X* stands for *built with Xcode*.
 
@@ -51,23 +52,23 @@ Also, disable the Code Signing Inject Base Entitlements (`CODE_SIGN_INJECT_BASE_
 
 Set the Other Code Signing Flags (`OTHER_CODE_SIGN_FLAGS`) build setting to `$(inherited) -i $(PRODUCT_BUNDLE_IDENTIFIER)`, which ensures that the tool’s code signing identifier matches its bundle ID.
 
-Select `ToolX.entitlements` in the Project navigator and add `com.apple.security.inherit` to it, with a Boolean value of `true`. For more information about this entitlement, see [`Enabling App Sandbox Inheritance`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW15).
+Select `ToolX.entitlements` in the Project navigator and add `com.apple.security.inherit` to it, with a Boolean value of `true`. For more information about this entitlement, see [Enabling App Sandbox Inheritance](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW15).
 
 Select the ToolX scheme and chose Product > Build, just to make sure that the tool builds correctly.
 
 Now switch back to the app (`AppWithTool`) scheme.
 
-##### Embed the Helper Tool
+##### Embed the helper tool
 
 In the Build Phases tab of the app target editor, add the ToolX target to the Dependencies build phase. This ensures that Xcode builds the tool target before building the app target.
 
-Add a new Copy Files build phase. Double-click the build phase name and change it to `Embed Helper Tools` (the exact name doesn’t matter, but it’s best to pick a descriptive one). Set the Destination popup to Executables.  This places the helper tool in your app’s `Contents/MacOS` directory, one of the locations recommended by [`Placing content in a bundle`](https://developer.apple.com/documentation/bundleresources/placing-content-in-a-bundle).
+Add a new Copy Files build phase. Double-click the build phase name and change it to `Embed Helper Tools` (the exact name doesn’t matter, but it’s best to pick a descriptive one). Set the Destination popup to Executables.  This places the helper tool in your app’s `Contents/MacOS` directory, one of the locations recommended by [Placing Content in a Bundle](../BundleResources/placing-content-in-a-bundle.md).
 
 Add the `ToolX` executable to that build phase, making sure Code Sign On Copy is checked.
 
-For more information about build phases, see [`What are build phases?`](https://developer.apple.comhttps://help.apple.com/xcode/mac/11.4/index.html#/dev50bab713d)
+For more information about build phases, see [What are build phases?](https://help.apple.com/xcode/mac/11.4/index.html#/dev50bab713d)
 
-##### Build and Validate
+##### Build and validate
 
 With the project set up, it’s time to test that everything builds correctly. To start, choose Product > Archive, which builds the tool target and then the app target, embedding the result of the former within the latter.
 
@@ -83,7 +84,7 @@ Go through the rest of the export workflow. The end result is a directory with a
 
 Run the following commands to confirm that Xcode constructed everything correctly:
 
-```None
+```
 % codesign -d -vvv --entitlements :- AppWithTool.app 
 …
 Identifier=com.example.apple-samplecode.AppWithTool
@@ -132,15 +133,15 @@ Check the following:
 
 > ❗ **Important**: Adding other entitlements to the tool can cause problems. If the tool immediately crashes with a code signing error when your app runs the tool, check that the tool is signed with just these two entitlements: `com.apple.security.app-sandbox` and `com.apple.security.inherit`.
 
-##### Embed an Externally Built Tool
+##### Embed an externally built tool
 
 With the app and Xcode-built helper tool working correctly, it’s time to repeat the process for a tool built using an external build system. The following example creates an example helper tool from the command line and then embeds the tool in the AppWithTool app. In a real project, you’d use the command-line tool’s external build system (for example, `make`) to build the tool that you want to embed.
 
-##### Build the Tool
+##### Build the tool
 
 Create a new directory and change into it:
 
-```None
+```
 % mkdir ToolC
 % cd ToolC
 ```
@@ -149,7 +150,7 @@ Here *C* stands for *built with Clang*.
 
 Create a source file in the directory that looks like this:
 
-```None
+```
 % cat main.c 
 #include <stdio.h>
 
@@ -161,7 +162,7 @@ int main(int argc, char ** argv) {
 
 Build that source file with `clang` twice, once for each architecture, and then `lipo` them together:
 
-```None
+```
 % clang -o ToolC-x86_64 -mmacosx-version-min=10.15 -arch x86_64 main.c
 % clang -o ToolC-arm64 -mmacosx-version-min=11.0 -arch arm64 main.c
 % lipo ToolC-x86_64 ToolC-arm64 -create -output ToolC 
@@ -171,7 +172,7 @@ The `-mmacosx-version-min` option sets the deployment target to match the AppWit
 
 Create an entitlements file for the tool:
 
-```None
+```
 % /usr/libexec/PlistBuddy -c "Add :com.apple.security.app-sandbox bool true" "ToolC.entitlements"
 File Doesn't Exist, Will Create: ToolC.entitlements
 % /usr/libexec/PlistBuddy -c "Add :com.apple.security.inherit bool true" ToolC.entitlements
@@ -188,7 +189,7 @@ File Doesn't Exist, Will Create: ToolC.entitlements
 
 Sign the tool as shown below:
 
-```None
+```
 % codesign -s - -i com.example.apple-samplecode.AppWithTool.ToolC -o runtime --entitlements ToolC.entitlements -f ToolC
 ```
 
@@ -208,21 +209,22 @@ Add the `ToolC` executable to your Xcode project. When you do this:
 
 In the Build Phases tab of the app target editor, add `ToolC` to the Embed Helper Tools build phase, making sure that Code Sign On Copy is checked.
 
-##### Build and Validate Again
+##### Build and validate again
 
-To validate your work, follow the process described in [`Build and validate`](embedding-a-helper-tool-in-a-sandboxed-app#Build-and-validate.md), substituting `ToolC` for `ToolX` everywhere.
+To validate your work, follow the process described in [Build and Validate](./embedding-a-helper-tool-in-a-sandboxed-app.md#Build-and-validate), substituting `ToolC` for `ToolX` everywhere.
 
 ## See Also
 
-- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+### Project configuration
+- [Updating your Xcode project configuration file format](./updating-your-xcode-project-configuration-file-format.md)
   Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
-- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
-- [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
+- [Adding package dependencies to your app](./adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
-- [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)
+- [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
 
 

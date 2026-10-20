@@ -1,7 +1,8 @@
 # WeatherCondition.heavySnow
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Heavy snow.
 
@@ -22,13 +23,14 @@ case heavySnow
 
 ## See Also
 
-- [WeatherCondition.blizzard](weathercondition/blizzard.md)
+### Getting hazardous winter properties
+- [WeatherCondition.blizzard](./blizzard.md)
   Blizzard.
-- [WeatherCondition.blowingSnow](weathercondition/blowingsnow.md)
+- [WeatherCondition.blowingSnow](./blowingsnow.md)
   Blowing or drifting snow.
-- [WeatherCondition.freezingDrizzle](weathercondition/freezingdrizzle.md)
+- [WeatherCondition.freezingDrizzle](./freezingdrizzle.md)
   Freezing drizzle or light rain.
-- [WeatherCondition.freezingRain](weathercondition/freezingrain.md)
+- [WeatherCondition.freezingRain](./freezingrain.md)
   Freezing rain.
 
 

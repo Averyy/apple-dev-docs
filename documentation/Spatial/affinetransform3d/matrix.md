@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The affine transform’s underlying matrix.
 
@@ -20,17 +21,22 @@ The affine transform’s underlying matrix.
 var matrix: simd_double4x3
 ```
 
+```c
+simd_double4x3 matrix;
+```
+
 ## See Also
 
-- [struct Dimension3DSet](dimension3dset.md)
+### Checking characteristics
+- [struct Dimension3DSet](../dimension3dset.md)
   A set of dimensions.
-- [var isInvertible: Bool](affinetransform3d/isinvertible.md)
+- [var isInvertible: Bool](./isinvertible.md)
   Returns a Boolean value that indicates whether the transform is invertible.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](affinetransform3d/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./isuniform%28overdimensions%29.md)
   Returns a Boolean value that indicates whether the transform scales equally over the specified dimensions.
-- [var matrix3x3: simd_double3x3](affinetransform3d/matrix3x3.md)
+- [var matrix3x3: simd_double3x3](./matrix3x3.md)
   The first three columns of an affine transform’s underlying matrix.
-- [var matrix4x4: simd_double4x4](affinetransform3d/matrix4x4.md)
+- [var matrix4x4: simd_double4x4](./matrix4x4.md)
   A 4 x 4 matrix that results from constructing the affine transform’s underlying matrix.
 
 

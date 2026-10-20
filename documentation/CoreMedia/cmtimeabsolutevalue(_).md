@@ -1,7 +1,8 @@
 # CMTimeAbsoluteValue(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the absolute value of a time.
 
@@ -20,6 +21,10 @@ Returns the absolute value of a time.
 func CMTimeAbsoluteValue(_ time: CMTime) -> CMTime
 ```
 
+```c
+extern CMTime CMTimeAbsoluteValue(CMTime time);
+```
+
 #### Return Value
 
 The time value, but with its sign inverted, if necessary.
@@ -30,21 +35,22 @@ The time value, but with its sign inverted, if necessary.
 
 ## See Also
 
-- [func CMTimeGetSeconds(CMTime) -> Float64](cmtimegetseconds(_:).md)
+### Inspecting a Time
+- [func CMTimeGetSeconds(CMTime) -> Float64](./cmtimegetseconds%28_%29.md)
   Returns a representation of the time in seconds.
-- [func CMTIME_IS_VALID(CMTime) -> Bool](cmtime_is_valid(_:).md)
+- [func CMTIME_IS_VALID(CMTime) -> Bool](./cmtime_is_valid%28_%29.md)
   Returns a Boolean value that indicates whether a given time is valid.
-- [func CMTIME_IS_INVALID(CMTime) -> Bool](cmtime_is_invalid(_:).md)
+- [func CMTIME_IS_INVALID(CMTime) -> Bool](./cmtime_is_invalid%28_%29.md)
   Returns a Boolean value that indicates whether a given time is invalid.
-- [func CMTIME_IS_POSITIVEINFINITY(CMTime) -> Bool](cmtime_is_positiveinfinity(_:).md)
+- [func CMTIME_IS_POSITIVEINFINITY(CMTime) -> Bool](./cmtime_is_positiveinfinity%28_%29.md)
   Returns a Boolean value that indicates whether a given time is positive infinity.
-- [func CMTIME_IS_NEGATIVEINFINITY(CMTime) -> Bool](cmtime_is_negativeinfinity(_:).md)
+- [func CMTIME_IS_NEGATIVEINFINITY(CMTime) -> Bool](./cmtime_is_negativeinfinity%28_%29.md)
   Returns a Boolean value that indicates whether a given time is negative infinity.
-- [func CMTIME_IS_INDEFINITE(CMTime) -> Bool](cmtime_is_indefinite(_:).md)
+- [func CMTIME_IS_INDEFINITE(CMTime) -> Bool](./cmtime_is_indefinite%28_%29.md)
   Returns a Boolean value that indicates whether a given time is indefinite.
-- [func CMTIME_IS_NUMERIC(CMTime) -> Bool](cmtime_is_numeric(_:).md)
+- [func CMTIME_IS_NUMERIC(CMTime) -> Bool](./cmtime_is_numeric%28_%29.md)
   Returns a Boolean value that indicates whether a given time is numeric.
-- [func CMTIME_HAS_BEEN_ROUNDED(CMTime) -> Bool](cmtime_has_been_rounded(_:).md)
+- [func CMTIME_HAS_BEEN_ROUNDED(CMTime) -> Bool](./cmtime_has_been_rounded%28_%29.md)
   Returns a Boolean value that indicates whether the system rounded the time value.
 
 

@@ -1,7 +1,8 @@
 # SVGFitToViewBox
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFitToViewBox
 ```
 
 ## Topics
 
 ### Instance Properties
-- [preserveAspectRatio](svgfittoviewbox/1629247-preserveaspectratio.md)
-- [viewBox](svgfittoviewbox/1632528-viewbox.md)
+- [preserveAspectRatio](./svgfittoviewbox/api-1629247-preserveaspectratio.md)
+- [viewBox](./svgfittoviewbox/api-1632528-viewbox.md)
 
 
 ---

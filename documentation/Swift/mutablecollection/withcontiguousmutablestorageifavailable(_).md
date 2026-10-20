@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Executes a closure on the collection’s contiguous storage.
@@ -42,6 +43,12 @@ A `Collection` that provides its own implementation of this method must provide 
 ## Parameters
 
 - `body`: A closure that receives an in-out `UnsafeMutableBufferPointer` to the collection’s contiguous storage.
+
+## Default Implementations
+
+### MutableCollection Implementations
+- [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./withcontiguousmutablestorageifavailable%28_%29-83khw.md)
+  Executes a closure on the collection’s contiguous storage.
 
 
 ---

@@ -1,14 +1,15 @@
 # rr_hdr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct icmp6_hdr rr_hdr;
 ```
 

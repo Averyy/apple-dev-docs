@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.DateFieldAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using a date field as an attribute.
 
@@ -28,21 +29,22 @@ A date field indicates a portion of a formatted date, such as its year, month, d
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field](attributescopes/foundationattributes/datefieldattribute/field.md)
+- [AttributeScopes.FoundationAttributes.DateFieldAttribute.Field](./datefieldattribute/field.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let dateField: AttributeScopes.FoundationAttributes.DateFieldAttribute](attributescopes/foundationattributes/datefield.md)
+### Using date attributes
+- [let dateField: AttributeScopes.FoundationAttributes.DateFieldAttribute](./datefield.md)
   A property for accessing a date field attribute.
 
 

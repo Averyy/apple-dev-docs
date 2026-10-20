@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type this format style produces as output.
@@ -23,11 +24,12 @@ associatedtype FormatOutput
 
 #### Discussion
 
-Conforming types in Foundation define this type as either [`String`](https://developer.apple.com/documentation/swift/string) or [`AttributedString`](attributedstring.md).
+Conforming types in Foundation define this type as either [`String`](../../Swift/string.md) or [`AttributedString`](../attributedstring.md).
 
 ## See Also
 
-- [associatedtype FormatInput](formatstyle/formatinput.md)
+### Declaring input and output types
+- [associatedtype FormatInput](./formatinput.md)
   The type this format style accepts as input.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Determines the size and alignment required to hold the data plane of a tensor you create with a descriptor in a buffer.
@@ -18,6 +19,10 @@ Determines the size and alignment required to hold the data plane of a tensor yo
 
 ```swift
 func tensorSizeAndAlign(descriptor: MTLTensorDescriptor) -> MTLSizeAndAlign
+```
+
+```objc
+- (MTLSizeAndAlign) tensorSizeAndAlignWithDescriptor:(MTLTensorDescriptor *) descriptor;
 ```
 
 #### Return Value

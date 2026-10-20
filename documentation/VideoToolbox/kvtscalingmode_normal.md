@@ -1,7 +1,8 @@
 # kVTScalingMode_Normal
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The full width and height of the source image buffer is stretched to the full width and height of the destination image buffer.
 
@@ -19,17 +20,22 @@ The full width and height of the source image buffer is stretched to the full wi
 let kVTScalingMode_Normal: CFString
 ```
 
+```c
+extern CFStringRef const kVTScalingMode_Normal;
+```
+
 #### Discussion
 
 The source image buffer’s clean aperture and pixel aspect ratio attachments are stretched the same way as the image with the image, and attached to the destination image buffer.This is the default scaling mode.
 
 ## See Also
 
-- [let kVTScalingMode_CropSourceToCleanAperture: CFString](kvtscalingmode_cropsourcetocleanaperture.md)
+### Scaling Modes
+- [let kVTScalingMode_CropSourceToCleanAperture: CFString](./kvtscalingmode_cropsourcetocleanaperture.md)
   The source image buffer’s clean aperture is scaled to the destination clean aperture.
-- [let kVTScalingMode_Letterbox: CFString](kvtscalingmode_letterbox.md)
+- [let kVTScalingMode_Letterbox: CFString](./kvtscalingmode_letterbox.md)
   The source image buffer’s clean aperture is scaled to a rectangle fitted inside the  destination clean aperture that preserves the source picture aspect ratio.
-- [let kVTScalingMode_Trim: CFString](kvtscalingmode_trim.md)
+- [let kVTScalingMode_Trim: CFString](./kvtscalingmode_trim.md)
   The source image buffer’s clean aperture is scaled to a rectangle that completely fills the destination clean aperture and preserves the source picture aspect ratio.
 
 

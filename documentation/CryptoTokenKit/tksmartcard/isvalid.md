@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the Smart Card is valid and accessible from its slot.
 
@@ -20,17 +21,22 @@ Whether the Smart Card is valid and accessible from its slot.
 var isValid: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL valid;
+```
+
 #### Discussion
 
-Use Key-Value-Observing to be notified for changes to accessibility, such as when a Smart Card is physically removed from its slot. For more information, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+Use Key-Value-Observing to be notified for changes to accessibility, such as when a Smart Card is physically removed from its slot. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 ## See Also
 
-- [var slot: TKSmartCardSlot](tksmartcard/slot.md)
+### Configuring the Smart Card
+- [var slot: TKSmartCardSlot](./slot.md)
   The slot in which the Smart Card is inserted.
-- [var isSensitive: Bool](tksmartcard/issensitive.md)
-  Whether sessions established for the Smart Card should be considered sensitive. [`false`](https://developer.apple.com/documentation/swift/false) by default.
-- [var context: Any?](tksmartcard/context.md)
+- [var isSensitive: Bool](./issensitive.md)
+  Whether sessions established for the Smart Card should be considered sensitive. [`false`](../../Swift/false.md) by default.
+- [var context: Any?](./context.md)
   User-specified information. This property is automatically set to `nil` if the Smart Card is removed or another `TKSmartCard` object begins a session.
 
 

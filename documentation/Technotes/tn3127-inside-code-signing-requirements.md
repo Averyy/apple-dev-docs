@@ -1,6 +1,7 @@
 # TN3127: Inside Code Signing: Requirements
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Explore how macOS uses code signing requirements to reason about code identity.
 
@@ -10,17 +11,17 @@ Code signing requirements are an obscure and dusty corner of the code signing ca
 
 However, in some cases requirements are important, especially on macOS.  For example:
 
-- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](https://developer.apple.com/documentation/foundation/nsxpcconnection/setcodesigningrequirement(_:)).  But what requirement to use?
+- If you’re building an XPC service, you might want to restrict it to specific clients.  The best way to do this is by setting a code signing requirement on the connection with [`setCodeSigningRequirement(_:)`](../Foundation/nsxpcconnection/setcodesigningrequirement%28_%29.md).  But what requirement to use?
 - When working with privacy-protected resources on macOS, like the microphone, you might find that the system fails to remember your choices during development.
 - You might find that the keychain presents unexpected authorization alerts when you deploy your app through a new channel, like TestFlight.
 
-> **Note**: macOS 14 added a new way to express limits on code.  For the details, see [`Applying launch environment and library constraints`](https://developer.apple.com/documentation/security/applying-launch-environment-and-library-constraints).
+> **Note**: macOS 14 added a new way to express limits on code.  For the details, see [Applying launch environment and library constraints](../Security/applying-launch-environment-and-library-constraints.md).
 
-##### About This Technote Series
+##### About this technote series
 
-Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [`TN3125: Inside Code Signing: Provisioning Profiles`](tn3125-inside-code-signing-provisioning-profiles.md).
+Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technotes peek behind the code signing curtain, to give you a better understanding of how it works.  For a list of all the technotes in this series, see the introduction in [TN3125: Inside Code Signing: Provisioning Profiles](./tn3125-inside-code-signing-provisioning-profiles.md).
 
-> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [`Code Signing Services`](https://developer.apple.com/documentation/security/code-signing-services) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
+> ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [Code Signing Services](../Security/code-signing-services.md) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
 #### Basics
 
@@ -45,7 +46,7 @@ Use `codesign` to evaluate a requirement:
 test-requirement: code failed to satisfy specified code requirement(s)
 ```
 
-So TextEdit satisfies this requirement but Calculator does not.  You can also check requirements programmatically.  The following example calls [`SecStaticCodeCheckValidityWithErrors(_:_:_:_:)`](https://developer.apple.com/documentation/security/secstaticcodecheckvaliditywitherrors(_:_:_:_:)) to check whether the given file satisfies the `anchor apple and identifier = "com.apple.TextEdit"` requirement:
+So TextEdit satisfies this requirement but Calculator does not.  You can also check requirements programmatically.  The following example calls [`SecStaticCodeCheckValidityWithErrors(_:_:_:_:)`](../Security/secstaticcodecheckvaliditywitherrors%28_,_,_,_%29.md) to check whether the given file satisfies the `anchor apple and identifier = "com.apple.TextEdit"` requirement:
 
 ```swift
 func isTextEdit(_ url: URL) throws -> Bool {
@@ -65,15 +66,15 @@ func isTextEdit(_ url: URL) throws -> Bool {
 }
 ```
 
-> **Note**: This code uses the `secCall(_:)` helper from [`Signing a daemon with a restricted entitlement`](https://developer.apple.com/documentation/xcode/signing-a-daemon-with-a-restricted-entitlement).
+> **Note**: This code uses the `secCall(_:)` helper from [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md).
 
 Compiling requirements is relatively expensive so, if you do this a lot, cache the requirement object you get back from `SecRequirementCreateWithString`.  Alternatively, use the `csreq` command-line tool to compile the requirement in advance, embed that data within your program, and then create a requirement by passing that data to `SecRequirementCreateWithData`.
 
 The code signing requirement language is very flexible.  It can express a very specific requirement or a very general one.  For example, the requirement `cdhash H"ff19a91b272a49d1a0f16ee54c672da60f0e116f"` is satisfied only by code with a specific cdhash value.  On the other hand, the requirement `anchor apple generic` is satisfied by any code signed with any code signing identity issued by Apple.  When you craft a custom requirement, think carefully about how specific you want it to be.
 
-For a detailed explanation of the code signing requirement language, see [`Code Signing Requirement Language`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5-SW1).  For more on cdhash values, see [`TN3126: Inside Code Signing: Hashes`](tn3126-inside-code-signing-hashes.md).  For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .  Specifically, the `codesign` man page is the key reference if you’re working at this level.
+For a detailed explanation of the code signing requirement language, see [Code Signing Requirement Language](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5-SW1).  For more on cdhash values, see [TN3126: Inside Code Signing: Hashes](./tn3126-inside-code-signing-hashes.md).  For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .  Specifically, the `codesign` man page is the key reference if you’re working at this level.
 
-#### Designated Requirement
+#### Designated requirement
 
 Most code has a *designated requirement* (DR) which is how the code identifies itself: It’s the code’s way of saying “If you see me again, here’s how you tell it’s really me.”  The DR is critical on macOS, an open platform where code impersonation is a cause for concern.
 
@@ -111,19 +112,23 @@ designated => anchor apple generic and identifier "com.example.apple-samplecode.
 designated => anchor apple generic and identifier "com.example.apple-samplecode.AppWithTool.ToolX" and …details omitted… SKMME9E2Y8
 ```
 
-> **Note**: To build the AppWithTool app used in this example, follow the instructions in [`Embedding a command-line tool in a sandboxed app`](https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app).
+> **Note**: To build the AppWithTool app used in this example, follow the instructions in [Embedding a command-line tool in a sandboxed app](../Xcode/embedding-a-helper-tool-in-a-sandboxed-app.md).
 
 The DRs in this example are heavily abbreviated lest you get lost in the details.  The critical things to note here are:
 
-- The `anchor apple generic` term, which requires that the code be signed by a code signing identity issued by Apple. Contrast this to the `anchor apple` term used in TextEdit’s DR.  The latter requires that the code be signed by Apple as Apple code, whereas the former only requires that the code signing identity was issued by Apple.
-- The check for Team ID `SKMME9E2Y8`, most of which has been omitted in this example.
-- The `identifier` term, which requires that the app has a code signing identifier of `com.example.apple-samplecode.AppWithTool` and the tool has a code signing identifier of `com.example.apple-samplecode.AppWithTool.ToolX`. Note that the code signing identifier is different for the app and its embedded command-line tool.  This is best practice, as it allows the system to identify the app and the tool as separate items of code.
+- The `anchor apple generic` term, which requires that the code be signed by a code signing identity issued by Apple.
 
-The example above omits a large fraction of the DRs, with those omitted parts checking who signed the code.  The mechanics of this vary based on the code signing identity.  For a full explanation of these omitted terms, see [`Default and Xcode designated requirements`](tn3127-inside-code-signing-requirements#Default-and-Xcode-designated-requirements.md).
+  Contrast this to the `anchor apple` term used in TextEdit’s DR.  The latter requires that the code be signed by Apple as Apple code, whereas the former only requires that the code signing identity was issued by Apple.
+- The check for Team ID `SKMME9E2Y8`, most of which has been omitted in this example.
+- The `identifier` term, which requires that the app has a code signing identifier of `com.example.apple-samplecode.AppWithTool` and the tool has a code signing identifier of `com.example.apple-samplecode.AppWithTool.ToolX`.
+
+  Note that the code signing identifier is different for the app and its embedded command-line tool.  This is best practice, as it allows the system to identify the app and the tool as separate items of code.
+
+The example above omits a large fraction of the DRs, with those omitted parts checking who signed the code.  The mechanics of this vary based on the code signing identity.  For a full explanation of these omitted terms, see [Default and Xcode designated requirements](./tn3127-inside-code-signing-requirements.md#Default-and-Xcode-designated-requirements).
 
 The DR is part of the code signature, making it an *internal requirement*.  A signature can have other internal requirements but that feature isn’t used in practice.
 
-#### Mutually Compatible Designated Requirements
+#### Mutually compatible designated requirements
 
 Two apps, A and B, have *mutually compatible designated requirements* if app A satisfies app B’s DR and app B satisfies app A’s DR.
 
@@ -160,7 +165,7 @@ Finally, repeat this process in reverse:
 
 There’s no requirement for different variants of your app to have mutually compatible DRs.  You might, for example, want each variant to have its own independent access to privacy-protected resources.  However, it’s very common for Mac App Store and Developer ID apps to have mutually compatible DRs.
 
-#### Default and Xcode Designated Requirements
+#### Default and Xcode designated requirements
 
 When you sign code with `codesign`, it applies a *default designated requirement* based on the code signing identity you supply.  For example, if you sign a development build with your Apple Development code signing identity it gets a different DR than a distribution build signed with your Developer ID code signing identity.
 
@@ -171,7 +176,7 @@ These default DRs strike a balance between generality and specificity.  They ens
 
 These default DRs have one important limitation: Mac App Store and Developer ID variants of your app aren’t mutually compatible.
 
-Xcode avoids this limitation by signing code with custom DRs that support mutual compatibility.  If you want mutual compatibility but don’t use Xcode to sign your code, supply a custom DR just like Xcode does.  For information on how to sign with a custom DR, see [`Creating distribution-signed code for macOS`](https://developer.apple.com/documentation/xcode/creating-distribution-signed-code-for-the-mac).
+Xcode avoids this limitation by signing code with custom DRs that support mutual compatibility.  If you want mutual compatibility but don’t use Xcode to sign your code, supply a custom DR just like Xcode does.  For information on how to sign with a custom DR, see [Creating distribution-signed code for macOS](../Xcode/creating-distribution-signed-code-for-the-mac.md).
 
 As code signing requirements have a textual representation, you might be tempted to write your custom DR by hand.  Don’t do that.  Code signing requirements are tricky to get right.  Rather, use Xcode to sign some code for the intended distribution channel, dump the DR of that signed code to a file, and then edit the file to change the code signing identifier and Team ID embedded in the DR.  For example, if `TestApp-MAS.app` is an app signed by Xcode for Mac App Store distribution, use this command to dump its DR:
 
@@ -183,7 +188,7 @@ designated => (anchor apple generic …details ommitted… "SKMME9E2Y8") and ide
 
 The following sections explain the Xcode DRs for the three common types of macOS code signing identity.
 
-##### Xcode Designated Requirement for Developer Id Code
+##### Xcode designated requirement for Developer ID code
 
 If you use Xcode to sign the AppWithTool app with a Developer ID code signing identity, the DR looks like this:
 
@@ -233,9 +238,9 @@ Or, in English, the requirement states that the code must be signed:
 - Either by the Mac App Store
 - Or using a Developer ID Application code signing identity for Team ID SKMME9E2Y8
 
-For more information about the Apple-specific OIDs referenced in this technote, see the documents published on the [`Apple PKI`](https://developer.apple.comhttps://www.apple.com/certificateauthority/) page.
+For more information about the Apple-specific OIDs referenced in this technote, see the documents published on the [Apple PKI](https://www.apple.com/certificateauthority/) page.
 
-##### Xcode Designated Requirement for Mac App Store Code
+##### Xcode designated requirement for Mac App Store code
 
 AppWithTool isn’t on the Mac App Store, so you can’t look at its Xcode DR.  You can, however, look at the DR for Numbers, which is typical of a Mac App Store app:
 
@@ -285,7 +290,7 @@ This is exactly the same as the Developer ID DR, except for the Team ID and code
 
 The upshot of this is that a Mac App Store app and its Developer ID variant have mutually compatible DRs.  If, to continue the microphone example from earlier, you access the microphone from the Mac App Store variant of your app and then, later on, try to access it from the Developer ID variant, the system allows that access without an additional prompt.
 
-##### Xcode Designated Requirement for Apple Development Code
+##### Xcode designated requirement for Apple Development code
 
 Here’s the DR of the AppWithTool app signed by Xcode with an Apple Development code signing identity:
 
@@ -299,7 +304,7 @@ and certificate leaf[subject.CN] = "Apple Development: …"
 and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */
 ```
 
-This is much easier to read.  The `anchor apple generic` and `identifier "com.example.apple-samplecode.AppWithTool"` terms were discussed in [`Designated requirement`](tn3127-inside-code-signing-requirements#Designated-requirement.md).
+This is much easier to read.  The `anchor apple generic` and `identifier "com.example.apple-samplecode.AppWithTool"` terms were discussed in [Designated requirement](./tn3127-inside-code-signing-requirements.md#Designated-requirement).
 
 The `certificate leaf[subject.CN] = "Apple Development: …"` requires that the Common Name field of the leaf certificate be `Apple Development: …`.
 
@@ -309,18 +314,19 @@ This Apple Development DR is very different from the DR used by Developer ID and
 
 #### Revision History
 
-- **2024-04-02** Added the [`Mutually compatible designated requirements`](tn3127-inside-code-signing-requirements#Mutually-compatible-designated-requirements.md) section.  Updated the [`Default and Xcode designated requirements`](tn3127-inside-code-signing-requirements#Default-and-Xcode-designated-requirements.md) to account for the differences between `codesign` and Xcode (r. 124692958).  Made other editorial changes.
+- **2024-04-02** Added the [Mutually compatible designated requirements](./tn3127-inside-code-signing-requirements.md#Mutually-compatible-designated-requirements) section.  Updated the [discussion of default designated requirements](./tn3127-inside-code-signing-requirements.md#Default-and-Xcode-designated-requirements) to account for the differences between `codesign` and Xcode (r. 124692958).  Made other editorial changes.
 - **2024-02-06** Made minor editorial changes.
 - **2022-05-24** Made minor editorial changes.
 - **2022-05-03** First published.
 
 ## See Also
 
-- [TN3125: Inside Code Signing: Provisioning Profiles](tn3125-inside-code-signing-provisioning-profiles.md)
+### Related Documentation
+- [TN3125: Inside Code Signing: Provisioning Profiles](./tn3125-inside-code-signing-provisioning-profiles.md)
   Learn how provisioning profiles enable third-party code to run on Apple platforms.
-- [TN3126: Inside Code Signing: Hashes](tn3126-inside-code-signing-hashes.md)
+- [TN3126: Inside Code Signing: Hashes](./tn3126-inside-code-signing-hashes.md)
   Look inside a code signature to see how it uses hashes to protect the code’s executable pages, resources, and metadata from tampering.
-- [TN3161: Inside Code Signing: Certificates](tn3161-inside-code-signing-certificates.md)
+- [TN3161: Inside Code Signing: Certificates](./tn3161-inside-code-signing-certificates.md)
   Learn how code signing uses certificates to identify code authors.
 
 

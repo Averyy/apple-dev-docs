@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stable identity of the preview item.
 

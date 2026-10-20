@@ -1,7 +1,8 @@
 # GetBaseClassID
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the audio class identifier of the base class object.
 
@@ -10,7 +11,7 @@ Gets the audio class identifier of the base class object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUserAudioClassID GetBaseClassID();
 ```
 
@@ -20,13 +21,14 @@ The audio class identifier of the base class object.
 
 #### Discussion
 
-This method overrides the base class [`IOUserAudioObject`](iouseraudioobject.md).
+This method overrides the base class [`IOUserAudioObject`](../iouseraudioobject.md).
 
 ## See Also
 
-- [GetClassID](iouseraudiocontrol/getclassid.md)
+### Getting Information About the Class
+- [GetClassID](./getclassid.md)
   Gets the audio class identifier of the object.
-- [IOUserAudioClassID](audiodriverkit/iouseraudioclassid.md)
+- [IOUserAudioClassID](../audiodriverkit-page/iouseraudioclassid.md)
   An identifier for the type of audio object.
 
 

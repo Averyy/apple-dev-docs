@@ -2211,9 +2211,8 @@
       "hash": "e31e0e62ecba900d6cd2240bbb4e3cd056c051fc115191eb71eda09b1014d343"
     },
     "https://developer.apple.com/documentation/packagedescription/version/!=(_:_:)": {
-      "etag": "W/\"8585ea6e5f57c6ae84e53a2857b557bc\"",
       "file_path": "documentation/PackageDescription/version/noteq(_,_).md",
-      "hash": "63e41af2f0b270fc9ed84a270f31b690a1a7201c476d266869f2543f7349fbcf"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/packagedescription/version/==(_:_:)": {
       "etag": "\"1ac7-659029b458116-df\"",
@@ -4541,9 +4540,8 @@
       "hash": "e31e0e62ecba900d6cd2240bbb4e3cd056c051fc115191eb71eda09b1014d343"
     },
     "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/!=(_:_:).json": {
-      "etag": "W/\"8585ea6e5f57c6ae84e53a2857b557bc\"",
       "file_path": "documentation/PackageDescription/version/noteq(_,_).md",
-      "hash": "63e41af2f0b270fc9ed84a270f31b690a1a7201c476d266869f2543f7349fbcf"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/packagedescription/version/...(_:)-69iyk.json": {
       "error": "HTTP 403",
@@ -4682,6 +4680,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 937
   }
 }

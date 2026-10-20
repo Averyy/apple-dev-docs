@@ -1,7 +1,8 @@
 # roundedBorder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text editor style with a system-defined rounded border.
 
@@ -15,11 +16,14 @@ A text editor style with a system-defined rounded border.
 @export(implementation) @preconcurrency static var roundedBorder: RoundedBorderTextEditorStyle { get }
 ```
 
+Available when `Self` is `RoundedBorderTextEditorStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticTextEditorStyle](texteditorstyle/automatic.md)
+### Getting built-in styles
+- [static var automatic: AutomaticTextEditorStyle](./automatic.md)
   The default text editor style, based on the text editor’s context.
-- [static var plain: PlainTextEditorStyle](texteditorstyle/plain.md)
+- [static var plain: PlainTextEditorStyle](./plain.md)
   A text editor style with no decoration.
 
 

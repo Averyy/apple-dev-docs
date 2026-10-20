@@ -1,18 +1,19 @@
 # alternate
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Option key in a combination keystroke.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,13 +22,18 @@ The Option key in a combination keystroke.
 static var alternate: XCUIElement.KeyModifierFlags { get }
 ```
 
+```c
+XCUIKeyModifierAlternate
+```
+
 #### Discussion
 
-> ❗ **Important**:  Use [`option`](xcuielement/keymodifierflags/option.md) instead.
+> ❗ **Important**:  Use [`option`](./option.md) instead.
 
 ## See Also
 
-- [static var alphaShift: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/alphashift.md)
+### Legacy flags for combination keys
+- [static var alphaShift: XCUIElement.KeyModifierFlags](./alphashift.md)
   The Caps Lock key in a combination keystroke.
 
 

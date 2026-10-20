@@ -1,7 +1,8 @@
 # PreviewUnavailable
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that the system throws when a preview is unavailable at runtime.
 
@@ -27,14 +28,14 @@ This type supports the expansion of preview macros. You don’t use it directly.
 ## Topics
 
 ### Creating an instance
-- [init()](previewunavailable/init.md)
+- [init()](./previewunavailable/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../Swift/error.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

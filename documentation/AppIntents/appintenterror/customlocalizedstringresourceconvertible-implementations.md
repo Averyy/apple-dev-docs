@@ -1,11 +1,12 @@
 # CustomLocalizedStringResourceConvertible Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var localizedStringResource: LocalizedStringResource](appintenterror/localizedstringresource.md)
+- [var localizedStringResource: LocalizedStringResource](./localizedstringresource.md)
   A localizable string that describes the error.
 
 

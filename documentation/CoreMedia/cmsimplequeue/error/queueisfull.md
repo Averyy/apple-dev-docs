@@ -1,7 +1,8 @@
 # queueIsFull
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An operation failed because the queue is full.
 
@@ -22,11 +23,12 @@ static let queueIsFull: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmsimplequeue/error/allocationfailed.md)
+### Errors
+- [static let allocationFailed: NSError](./allocationfailed.md)
   The system failed to allocate memory.
-- [static let parameterOutOfRange: NSError](cmsimplequeue/error/parameteroutofrange.md)
+- [static let parameterOutOfRange: NSError](./parameteroutofrange.md)
   You passed a parameter to a function that’s outside the range of allowed values.
-- [static let requiredParameterMissing: NSError](cmsimplequeue/error/requiredparametermissing.md)
+- [static let requiredParameterMissing: NSError](./requiredparametermissing.md)
   You failed to pass a required parameter to a function.
 
 

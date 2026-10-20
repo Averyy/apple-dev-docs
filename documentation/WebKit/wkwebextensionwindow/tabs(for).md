@@ -1,7 +1,8 @@
 # tabs(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the tabs are needed for the window.
 
@@ -16,6 +17,10 @@ Called when the tabs are needed for the window.
 
 ```swift
 optional func tabs(for context: WKWebExtensionContext) -> [any WKWebExtensionTab]
+```
+
+```objc
+- (NSArray<id<WKWebExtensionTab>> *) tabsForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

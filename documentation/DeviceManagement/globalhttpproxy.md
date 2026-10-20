@@ -1,7 +1,8 @@
 # GlobalHTTPProxy
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a global HTTP proxy.
 
@@ -15,7 +16,7 @@ The payload that configures a global HTTP proxy.
 
 ## Declaration
 
-```swift
+```
 object GlobalHTTPProxy
 ```
 
@@ -25,7 +26,7 @@ Specify `com.apple.proxy.http.global` as the payload type.
 
 There can only be one payload of this type on the device at any time.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ There can only be one payload of this type on the device at any time.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,20 +86,31 @@ There can only be one payload of this type on the device at any time.
 
 ## Properties
 
-- `ProxyCaptiveLoginAllowed` (boolean): If `true`, allows the device to bypass the proxy server to display the login page for captive networks. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
-- `ProxyPACFallbackAllowed` (boolean): If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
+- `ProxyCaptiveLoginAllowed` (boolean): If `true`, allows the device to bypass the proxy server to display the login page for captive networks.
+
+  Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
+
+  **Default**: `false`
+- `ProxyPACFallbackAllowed` (boolean): If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable.
+
+  Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
+
+  **Default**: `false`
 - `ProxyPACURL` (string): The URL of the PAC file that defines the proxy configuration. Starting in iOS 13 and macOS 10.15, only URLs that begin with `http://` or `https://` are allowed. This is only used if `ProxyType` is set to `Automatic`, and is ignored if `ProxyType` is set to `Manual`.
 - `ProxyPassword` (string): The password used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
 - `ProxyServer` (string): The proxy server’s network address. The device requires this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
 - `ProxyServerPort` (integer): The proxy server’s port number. The device requires this if `ProxyType` is set to `Manual`, and ignores this if `ProxyType` is set to `Automatic`.
 - `ProxyType` (string): The proxy type. For a manual proxy type, the profile contains the proxy server address, including its port, and optionally a user name and password. For an auto proxy type, you can enter a PAC URL.
+
+  **Default**: `Manual`; **Allowed Values**: `Manual`, `Auto`
 - `ProxyUsername` (string): The user name used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
 
 ## See Also
 
-- [object DNSProxy](dnsproxy.md)
+### Proxies
+- [object DNSProxy](./dnsproxy.md)
   The payload that configures DNS proxies.
-- [object NetworkProxyConfiguration](networkproxyconfiguration.md)
+- [object NetworkProxyConfiguration](./networkproxyconfiguration.md)
   The payload that configures network proxies for a device.
 
 

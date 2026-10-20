@@ -1,7 +1,8 @@
 # readAttributeExpressedState(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeExpressedState(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeExpressedState() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeExpressedStateWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

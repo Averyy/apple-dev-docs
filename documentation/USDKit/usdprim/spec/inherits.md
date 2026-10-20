@@ -1,7 +1,8 @@
 # inherits
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored inherit paths, or `nil` if none authored.
 

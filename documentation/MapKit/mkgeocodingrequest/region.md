@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geographic region for the framework to use as the bounds for the request; defaults to a region that covers the whole world.
 
@@ -20,13 +21,18 @@ The geographic region for the framework to use as the bounds for the request; de
 var region: MKCoordinateRegion { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKCoordinateRegion region;
+```
+
 ## See Also
 
-- [var addressString: String](mkgeocodingrequest/addressstring.md)
+### Getting information about the geocoder
+- [var addressString: String](./addressstring.md)
   The string used to initialize the geocoder.
-- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](mkgeocodingrequest/getmapitems(completionhandler:).md)
+- [func getMapItems(completionHandler: ([MKMapItem]?, (any Error)?) -> Void)](./getmapitems%28completionhandler%29.md)
   Returns the map items relevant to the geocoded location.
-- [var preferredLocale: Locale?](mkgeocodingrequest/preferredlocale.md)
+- [var preferredLocale: Locale?](./preferredlocale.md)
   A value that indicates the default locale the geocoder should use when processing requests.
 
 

@@ -1,7 +1,8 @@
 # PlayMediaIntentHandlingInvocation.Params
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The parameters of a play media intent request.
 
@@ -10,7 +11,7 @@ The parameters of a play media intent request.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaIntentHandlingInvocation.Params
 ```
 

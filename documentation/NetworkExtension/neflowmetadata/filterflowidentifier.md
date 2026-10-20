@@ -1,7 +1,8 @@
 # filterFlowIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the content filter flow corresponding to this flow.
 
@@ -12,6 +13,10 @@ The identifier of the content filter flow corresponding to this flow.
 
 ```swift
 var filterFlowIdentifier: UUID? { get }
+```
+
+```objc
+@property (readonly, nullable) NSUUID * filterFlowIdentifier;
 ```
 
 

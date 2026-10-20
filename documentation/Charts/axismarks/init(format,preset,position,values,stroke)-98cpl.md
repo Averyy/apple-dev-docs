@@ -1,7 +1,8 @@
 # init(format:preset:position:values:stroke:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates axis markers with the given properties, will override default markers. Default content will be used for the axis markers.
 

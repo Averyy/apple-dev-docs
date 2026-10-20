@@ -1,7 +1,8 @@
 # NSScriptExecutionContext
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The context in which the current script command is executed.
 
@@ -15,50 +16,55 @@ The context in which the current script command is executed.
 class NSScriptExecutionContext
 ```
 
+```objc
+@interface NSScriptExecutionContext : NSObject
+```
+
 #### Overview
 
-An `NSScriptExecutionContext` object is a shared instance (there is only one instance of the class) that represents the context in which the current script command is executed. `NSScriptExecutionContext` tracks global state relating to the command being executed, especially the top-level container object (that is, the container implied by a specifier object that specifies no container) used in an evaluation of an [`NSScriptObjectSpecifier`](nsscriptobjectspecifier.md) object.
+An `NSScriptExecutionContext` object is a shared instance (there is only one instance of the class) that represents the context in which the current script command is executed. `NSScriptExecutionContext` tracks global state relating to the command being executed, especially the top-level container object (that is, the container implied by a specifier object that specifies no container) used in an evaluation of an [`NSScriptObjectSpecifier`](./nsscriptobjectspecifier.md) object.
 
-In most cases, the top-level container for a complete series of nested object specifiers is automatically set to the application object (`NSApp`), and you can get this object with the [`topLevelObject`](nsscriptexecutioncontext/toplevelobject.md) method. But you can also set this top-level container to something else (using [`topLevelObject`](nsscriptexecutioncontext/toplevelobject.md)) if the situation warrants it.
+In most cases, the top-level container for a complete series of nested object specifiers is automatically set to the application object (`NSApp`), and you can get this object with the [`topLevelObject`](./nsscriptexecutioncontext/toplevelobject.md) method. But you can also set this top-level container to something else (using [`topLevelObject`](./nsscriptexecutioncontext/toplevelobject.md)) if the situation warrants it.
 
 It is unlikely that you will need to subclass `NSScriptExecutionContext`.
 
 ## Topics
 
 ### Getting the current context
-- [class func shared() -> NSScriptExecutionContext](nsscriptexecutioncontext/shared.md)
+- [class func shared() -> NSScriptExecutionContext](./nsscriptexecutioncontext/shared%28%29.md)
   Returns the shared `NSScriptExecutionContext` instance.
 ### Getting and setting the container object
-- [var topLevelObject: Any?](nsscriptexecutioncontext/toplevelobject.md)
+- [var topLevelObject: Any?](./nsscriptexecutioncontext/toplevelobject.md)
   Sets the top-level object for an object-specifier evaluation.
-- [var objectBeingTested: Any?](nsscriptexecutioncontext/objectbeingtested.md)
+- [var objectBeingTested: Any?](./nsscriptexecutioncontext/objectbeingtested.md)
   Sets the top-level container object currently being tested in a “whose” qualifier to a given object.
-- [var rangeContainerObject: Any?](nsscriptexecutioncontext/rangecontainerobject.md)
+- [var rangeContainerObject: Any?](./nsscriptexecutioncontext/rangecontainerobject.md)
   Sets the top-level container object for a range-specifier evaluation to a give object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [NSComparisonMethods](nscomparisonmethods.md)
+### NSObject Script Support
+- [NSComparisonMethods](./nscomparisonmethods.md)
   A collection of default comparison methods useful for performing specifier tests.
-- [NSScriptingComparisonMethods](../objectivec/nsscriptingcomparisonmethods.md)
+- [NSScriptingComparisonMethods](../ObjectiveC/nsscriptingcomparisonmethods.md)
   A collection of methods useful for comparing script objects.
-- [NSScriptKeyValueCoding](../objectivec/nsscriptkeyvaluecoding.md)
+- [NSScriptKeyValueCoding](../ObjectiveC/nsscriptkeyvaluecoding.md)
   A collection of methods that provide additional capabilities for working with key-value coding.
-- [NSScriptObjectSpecifiers](nsscriptobjectspecifiers.md)
+- [NSScriptObjectSpecifiers](./nsscriptobjectspecifiers.md)
   A collection of methods providing additional object specifier functionality.
-- [class NSScriptCoercionHandler](nsscriptcoercionhandler.md)
+- [class NSScriptCoercionHandler](./nsscriptcoercionhandler.md)
   A mechanism for converting one kind of scripting data to another.
 
 

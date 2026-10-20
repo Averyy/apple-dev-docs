@@ -1,7 +1,8 @@
 # commentURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s comment URL.
 
@@ -20,13 +21,18 @@ The cookie’s comment URL.
 var commentURL: URL? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURL * commentURL;
+```
+
 #### Discussion
 
 This value is `nil` if the cookie has no comment URL. This value specifies a URL that can be presented to the user as a link for further information about this cookie.
 
 ## See Also
 
-- [var comment: String?](httpcookie/comment.md)
+### Getting user-readable cookie metadata
+- [var comment: String?](./comment.md)
   The cookie’s comment string.
 
 

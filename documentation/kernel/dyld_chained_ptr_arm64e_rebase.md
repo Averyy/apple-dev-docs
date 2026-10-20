@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_ptr_arm64e_rebase {
     ...
 };
@@ -17,11 +17,11 @@ struct dyld_chained_ptr_arm64e_rebase {
 ## Topics
 
 ### Instance Properties
-- [auth](dyld_chained_ptr_arm64e_rebase/3553663-auth.md)
-- [bind](dyld_chained_ptr_arm64e_rebase/3553664-bind.md)
-- [high8](dyld_chained_ptr_arm64e_rebase/3553665-high8.md)
-- [next](dyld_chained_ptr_arm64e_rebase/3553666-next.md)
-- [target](dyld_chained_ptr_arm64e_rebase/3553667-target.md)
+- [auth](./dyld_chained_ptr_arm64e_rebase/api-3553663-auth.md)
+- [bind](./dyld_chained_ptr_arm64e_rebase/api-3553664-bind.md)
+- [high8](./dyld_chained_ptr_arm64e_rebase/api-3553665-high8.md)
+- [next](./dyld_chained_ptr_arm64e_rebase/api-3553666-next.md)
+- [target](./dyld_chained_ptr_arm64e_rebase/api-3553667-target.md)
 
 
 ---

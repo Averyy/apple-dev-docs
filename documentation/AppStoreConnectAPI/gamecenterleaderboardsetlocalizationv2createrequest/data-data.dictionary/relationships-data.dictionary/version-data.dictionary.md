@@ -1,7 +1,8 @@
 # GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships.Version
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the version of the Game Center leaderboard set localization.
 
@@ -10,7 +11,7 @@ The data that describes the version of the Game Center leaderboard set localizat
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships.Version
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships.Ve
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships.Version.Data](gamecenterleaderboardsetlocalizationv2createrequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest.Data.Relationships.Version.Data](./version-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

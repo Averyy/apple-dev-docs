@@ -1,14 +1,15 @@
 # PushToTalkTransmissionIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An intent that begins or ends an audio transmission with the Push to Talk framework.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,22 +19,23 @@ protocol PushToTalkTransmissionIntent : SystemIntent
 
 #### Overview
 
-Create an app intent that confirms to this protocol to manually start or end an audio transmission that uses the Push to Talk framework. For additional information about transmitting audio with the Push to Talk framework, see [`Push to Talk`](https://developer.apple.com/documentation/pushtotalk).
+Create an app intent that confirms to this protocol to manually start or end an audio transmission that uses the Push to Talk framework. For additional information about transmitting audio with the Push to Talk framework, see [Push to Talk](../PushToTalk/PushToTalk.md).
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SystemIntent](systemintent.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SystemIntent](./systemintent.md)
 
 ## See Also
 
-- [protocol ProgressReportingIntent](progressreportingintent.md)
+### Communication actions
+- [protocol ProgressReportingIntent](./progressreportingintent.md)
   An intent that reports progress to the system during its execution
-- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+- [protocol ShowInAppSearchResultsIntent](./showinappsearchresultsintent.md)
   An app intent that displays a set of search results in the app’s interface.
 
 

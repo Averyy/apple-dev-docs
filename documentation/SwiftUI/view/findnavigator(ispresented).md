@@ -1,7 +1,8 @@
 # findNavigator(isPresented:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Programmatically presents the find and replace interface for text editor views.
 
@@ -25,7 +26,7 @@ A view that presents the find and replace interface when `isPresented` is `true`
 
 #### Discussion
 
-Add this modifier to a [`TextEditor`](texteditor.md), or to a view hierarchy that contains at least one text editor, to control the presentation of the find and replace interface. When you set the `isPresented` binding to `true`, the system shows the interface, and when you set it to `false`, the system hides the interface. The following example shows and hides the interface based on the state of a toolbar button:
+Add this modifier to a [`TextEditor`](../texteditor.md), or to a view hierarchy that contains at least one text editor, to control the presentation of the find and replace interface. When you set the `isPresented` binding to `true`, the system shows the interface, and when you set it to `false`, the system hides the interface. The following example shows and hides the interface based on the state of a toolbar button:
 
 ```swift
 TextEditor(text: $text)
@@ -41,7 +42,7 @@ The find and replace interface allows people to search for instances of a specif
 
 If the text editor view isn’t currently in focus, the system still presents the find and replace interface when you set `isPresented` to `true`. If the view hierarchy contains multiple editors, the one that shows the find and replace interface is nondeterministic.
 
-You can disable the find and replace interface for a text editor by applying the [`findDisabled(_:)`](view/finddisabled(_:).md) modifier to the editor. If you do that, setting this modifier’s `isPresented` binding to `true` has no effect, but only if the disabling modifier appears closer to the text editor, like this:
+You can disable the find and replace interface for a text editor by applying the [`findDisabled(_:)`](./finddisabled%28_%29.md) modifier to the editor. If you do that, setting this modifier’s `isPresented` binding to `true` has no effect, but only if the disabling modifier appears closer to the text editor, like this:
 
 ```swift
 TextEditor(text: $text)
@@ -55,11 +56,12 @@ TextEditor(text: $text)
 
 ## See Also
 
-- [func findDisabled(Bool) -> some View](view/finddisabled(_:).md)
+### Searching for text in a view
+- [func findDisabled(Bool) -> some View](./finddisabled%28_%29.md)
   Prevents find and replace operations in a text editor.
-- [func replaceDisabled(Bool) -> some View](view/replacedisabled(_:).md)
+- [func replaceDisabled(Bool) -> some View](./replacedisabled%28_%29.md)
   Prevents replace operations in a text editor.
-- [struct FindContext](findcontext.md)
+- [struct FindContext](../findcontext.md)
   The status of the find navigator for views which support text editing.
 
 

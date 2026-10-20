@@ -1,14 +1,15 @@
 # i386_ioport_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned short i386_ioport_t;
 ```
 

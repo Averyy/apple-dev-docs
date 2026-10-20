@@ -1,7 +1,8 @@
 # urlTemplate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The template for generating tile image URLs.
 
@@ -19,19 +20,25 @@ The template for generating tile image URLs.
 var urlTemplate: String? { get }
 ```
 
+```objc
+@property (atomic, readonly, nullable) NSString * URLTemplate;
+```
+
 #### Discussion
 
 You specify this string at initialization time.
 
 ## See Also
 
-- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:)-9s8h7.md)
+### Related Documentation
+- [init(urlTemplate: String?)](./init%28urltemplate%29-9s8h7.md)
   Creates and returns a tile overlay object using the specified tile-access template.
-- [func url(forTilePath: MKTileOverlayPath) -> URL](mktileoverlay/url(fortilepath:).md)
+### Customizing the loading of tiles
+- [func url(forTilePath: MKTileOverlayPath) -> URL](./url%28fortilepath%29.md)
   Returns the URL to use to access the specified tile.
-- [func loadTile(at: MKTileOverlayPath, result: (Data?, (any Error)?) -> Void)](mktileoverlay/loadtile(at:result:).md)
+- [func loadTile(at: MKTileOverlayPath, result: (Data?, (any Error)?) -> Void)](./loadtile%28at,result%29.md)
   Loads the specified tile asynchronously.
-- [struct MKTileOverlayPath](mktileoverlaypath.md)
+- [struct MKTileOverlayPath](../mktileoverlaypath.md)
   Values that specify the path indexes for a single overlay tile.
 
 

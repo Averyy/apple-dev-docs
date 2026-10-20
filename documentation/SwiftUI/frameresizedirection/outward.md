@@ -1,7 +1,8 @@
 # FrameResizeDirection.outward
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the frame can be resized outwards to be larger.
 

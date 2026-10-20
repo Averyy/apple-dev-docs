@@ -1,8 +1,9 @@
 # Cache Attributes
 
-**Framework**: Core Video
+**Framework**: Core Video  
+**Role**: API Collection
 
-Dictionary keys and values for use with the cacheAttributes parameter of [`CVOpenGLTextureCacheCreate(_:_:_:_:_:_:)`](cvopengltexturecachecreate(_:_:_:_:_:_:).md)
+Dictionary keys and values for use with the cacheAttributes parameter of [`CVOpenGLTextureCacheCreate(_:_:_:_:_:_:)`](./cvopengltexturecachecreate%28_,_,_,_,_,_%29.md)
 
 #### Overview
 
@@ -13,14 +14,14 @@ In some cases, a texture cache can do higher quality chroma upsampling on GPUs t
 ## Topics
 
 ### Key
-- [let kCVOpenGLTextureCacheChromaSamplingModeKey: CFString](kcvopengltexturecachechromasamplingmodekey.md)
+- [let kCVOpenGLTextureCacheChromaSamplingModeKey: CFString](./kcvopengltexturecachechromasamplingmodekey.md)
   The key used to define the cache’s requested chroma sampling mode.
 ### Values
-- [let kCVOpenGLTextureCacheChromaSamplingModeAutomatic: CFString](kcvopengltexturecachechromasamplingmodeautomatic.md)
+- [let kCVOpenGLTextureCacheChromaSamplingModeAutomatic: CFString](./kcvopengltexturecachechromasamplingmodeautomatic.md)
   The default mode if not otherwise specified.
-- [let kCVOpenGLTextureCacheChromaSamplingModeHighestQuality: CFString](kcvopengltexturecachechromasamplingmodehighestquality.md)
+- [let kCVOpenGLTextureCacheChromaSamplingModeHighestQuality: CFString](./kcvopengltexturecachechromasamplingmodehighestquality.md)
   Forces the highest quality regardless of performance impact.
-- [let kCVOpenGLTextureCacheChromaSamplingModeBestPerformance: CFString](kcvopengltexturecachechromasamplingmodebestperformance.md)
+- [let kCVOpenGLTextureCacheChromaSamplingModeBestPerformance: CFString](./kcvopengltexturecachechromasamplingmodebestperformance.md)
   Set the chroma sample mode to use the most performant way possible.
 
 

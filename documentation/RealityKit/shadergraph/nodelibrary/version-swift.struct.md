@@ -1,7 +1,8 @@
 # ShaderGraph.NodeLibrary.Version
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,17 +19,17 @@ struct Version
 ## Topics
 
 ### Type Properties
-- [static let `default`: ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.struct/default.md)
-- [static let materialX138: ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.struct/materialx138.md)
-- [static let materialX139: ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.struct/materialx139.md)
+- [static let `default`: ShaderGraph.NodeLibrary.Version](./version-swift.struct/default.md)
+- [static let materialX138: ShaderGraph.NodeLibrary.Version](./version-swift.struct/materialx138.md)
+- [static let materialX139: ShaderGraph.NodeLibrary.Version](./version-swift.struct/materialx139.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

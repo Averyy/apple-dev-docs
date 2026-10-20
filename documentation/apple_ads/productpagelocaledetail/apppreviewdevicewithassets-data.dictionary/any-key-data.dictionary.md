@@ -1,7 +1,8 @@
 # ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The app preview device assets.
 
@@ -10,13 +11,13 @@ The app preview device assets.
 
 ## Declaration
 
-```swift
+```
 object ProductPageLocaleDetail.AppPreviewDeviceWithAssets.Any Key
 ```
 
 ## Properties
 
-- `appPreviewDevice` (string): The device that’s available for the asset, corresponding to the display size. See [`Get App Preview Device Sizes`](get-app-preview-device-sizes.md) for device mapping in the API.
+- `appPreviewDevice` (string): The device that’s available for the asset, corresponding to the display size. See [`Get App Preview Device Sizes`](../../get-app-preview-device-sizes.md) for device mapping in the API.
 - `mediaAppPreviewOrScreenshotsDetail` (MediaAppAssetsDetail): The asset details of the app preview or app screenshots.
 
 

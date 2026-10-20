@@ -1,7 +1,8 @@
 # ClothVolumeShape.roundedBox(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rounded box volume shape.
 
@@ -18,13 +19,14 @@ case roundedBox(ClothRoundedBoxShape)
 
 ## See Also
 
-- [ClothVolumeShape.box(_:)](clothvolumeshape/box(_:).md)
+### Specifying the volume shape
+- [ClothVolumeShape.box(_:)](./box%28_%29.md)
   A box volume shape.
-- [case sphere(ClothSphereShape)](clothvolumeshape/sphere(_:).md)
+- [case sphere(ClothSphereShape)](./sphere%28_%29.md)
   A sphere volume shape.
-- [case capsule(ClothCapsuleShape)](clothvolumeshape/capsule(_:).md)
+- [case capsule(ClothCapsuleShape)](./capsule%28_%29.md)
   A capsule volume shape.
-- [case plane(ClothPlaneShape)](clothvolumeshape/plane(_:).md)
+- [case plane(ClothPlaneShape)](./plane%28_%29.md)
   A plane volume shape.
 
 

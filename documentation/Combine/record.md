@@ -1,7 +1,8 @@
 # Record
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
 
@@ -23,38 +24,39 @@ struct Record<Output, Failure> where Failure : Error
 ## Topics
 
 ### Creating a record publisher
-- [init(output: [Output], completion: Subscribers.Completion<Failure>)](record/init(output:completion:).md)
+- [init(output: [Output], completion: Subscribers.Completion<Failure>)](./record/init%28output,completion%29.md)
   Creates a record publisher to publish the provided elements, followed by the provided completion value.
-- [init(record: (inout Record<Output, Failure>.Recording) -> Void)](record/init(record:).md)
+- [init(record: (inout Record<Output, Failure>.Recording) -> Void)](./record/init%28record%29.md)
   Creates a publisher to interactively record a series of outputs and a completion.
-- [init(recording: Record<Output, Failure>.Recording)](record/init(recording:).md)
+- [init(recording: Record<Output, Failure>.Recording)](./record/init%28recording%29.md)
   Creates a record publisher from an existing recording.
 ### Inspecting publisher properties
-- [let recording: Record<Output, Failure>.Recording](record/recording-swift.property.md)
+- [let recording: Record<Output, Failure>.Recording](./record/recording-swift.property.md)
   The recorded output and completion.
-- [Record.Recording](record/recording-swift.struct.md)
+- [Record.Recording](./record/recording-swift.struct.md)
   A recorded sequence of outputs, followed by a completion value.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [Publisher](publisher.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Escapable](../Swift/escapable.md)
+- [Publisher](./publisher.md)
 
 ## See Also
 
-- [class Future](future.md)
+### Convenience Publishers
+- [class Future](./future.md)
   A publisher that eventually produces a single value and then finishes or fails.
-- [struct Just](just.md)
+- [struct Just](./just.md)
   A publisher that emits an output to each subscriber just once, and then finishes.
-- [struct Deferred](deferred.md)
+- [struct Deferred](./deferred.md)
   A publisher that awaits subscription before running the supplied closure to create a publisher for the new subscriber.
-- [struct Empty](empty.md)
+- [struct Empty](./empty.md)
   A publisher that never publishes any values, and optionally finishes immediately.
-- [struct Fail](fail.md)
+- [struct Fail](./fail.md)
   A publisher that immediately terminates with the specified error.
 
 

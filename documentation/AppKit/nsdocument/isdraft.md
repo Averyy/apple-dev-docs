@@ -1,7 +1,8 @@
 # isDraft
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the document is a draft that the user has not yet saved.
 
@@ -15,25 +16,30 @@ nonisolated
 var isDraft: Bool { get set }
 ```
 
+```objc
+@property (getter=isDraft) BOOL draft;
+```
+
 #### Discussion
 
-The system presents a Save dialog when the user closes a draft document. Only documents with non-`nil` values for the [`fileURL`](nsdocument/fileurl.md) property should be considered drafts.
+The system presents a Save dialog when the user closes a draft document. Only documents with non-`nil` values for the [`fileURL`](./fileurl.md) property should be considered drafts.
 
 ## See Also
 
-- [var fileURL: URL?](nsdocument/fileurl.md)
+### Getting Document Metadata
+- [var fileURL: URL?](./fileurl.md)
   The location of the document’s on-disk representation.
-- [var isEntireFileLoaded: Bool](nsdocument/isentirefileloaded.md)
+- [var isEntireFileLoaded: Bool](./isentirefileloaded.md)
   A Boolean value that indicates whether the document’s file is completely loaded into memory.
-- [var fileModificationDate: Date?](nsdocument/filemodificationdate.md)
+- [var fileModificationDate: Date?](./filemodificationdate.md)
   The last-known modification date of the document’s on-disk representation.
-- [var keepBackupFile: Bool](nsdocument/keepbackupfile.md)
+- [var keepBackupFile: Bool](./keepbackupfile.md)
   A Boolean value that indicates whether the document archives previously saved versions of the document.
-- [var fileType: String?](nsdocument/filetype.md)
+- [var fileType: String?](./filetype.md)
   The name of the document type, as specified in the app’s information property-list file.
-- [var isDocumentEdited: Bool](nsdocument/isdocumentedited.md)
+- [var isDocumentEdited: Bool](./isdocumentedited.md)
   A Boolean value that indicates whether the document has unsaved changes.
-- [var isInViewingMode: Bool](nsdocument/isinviewingmode.md)
+- [var isInViewingMode: Bool](./isinviewingmode.md)
   A Boolean value that indicates whether the document is in read-only mode.
 
 

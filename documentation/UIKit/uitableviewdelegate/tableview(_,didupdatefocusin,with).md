@@ -1,7 +1,8 @@
 # tableView(_:didUpdateFocusIn:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a focus update specified by the context has just occurred.
 
@@ -18,25 +19,30 @@ Tells the delegate that a focus update specified by the context has just occurre
 optional func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITableViewFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView didUpdateFocusInContext:(UITableViewFocusUpdateContext *) context withAnimationCoordinator:(UIFocusAnimationCoordinator *) coordinator;
+```
+
 #### Discussion
 
-This functionality of this delegate method is equivalent to overriding [`UITableView`](uitableview.md) class’s  implementation of [`tableView(_:didUpdateFocusIn:with:)`](uitableviewdelegate/tableview(_:didupdatefocusin:with:).md). This delegate method provides additional UITableView-related information in its context parameter, such as the index paths for the previously and next focused views. Note that, these index paths are available only if their views are contained within the table view. To learn more about the information provided by the context, see see [`UITableViewFocusUpdateContext`](uitableviewfocusupdatecontext.md).
+This functionality of this delegate method is equivalent to overriding [`UITableView`](../uitableview.md) class’s  implementation of [`tableView(_:didUpdateFocusIn:with:)`](./tableview%28_,didupdatefocusin,with%29.md). This delegate method provides additional UITableView-related information in its context parameter, such as the index paths for the previously and next focused views. Note that, these index paths are available only if their views are contained within the table view. To learn more about the information provided by the context, see see [`UITableViewFocusUpdateContext`](../uitableviewfocusupdatecontext.md).
 
 ## Parameters
 
 - `tableView`: A table view informing the delegate about the new focus.
-- `context`: An instance of the [`UIFocusUpdateContext`](uifocusupdatecontext.md) class, containing metadata for the focus related update.
-- `coordinator`: An instance of the [`UIFocusUpdateContext`](uifocusupdatecontext.md) class, containing metadata for the focus related update.
+- `context`: An instance of the [`UIFocusUpdateContext`](../uifocusupdatecontext.md) class, containing metadata for the focus related update.
+- `coordinator`: An instance of the [`UIFocusUpdateContext`](../uifocusupdatecontext.md) class, containing metadata for the focus related update.
 
 ## See Also
 
-- [func tableView(UITableView, canFocusRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:canfocusrowat:).md)
+### Managing table view focus
+- [func tableView(UITableView, canFocusRowAt: IndexPath) -> Bool](./tableview%28_,canfocusrowat%29.md)
   Asks the delegate whether the cell at the specified index path is itself focusable.
-- [func tableView(UITableView, shouldUpdateFocusIn: UITableViewFocusUpdateContext) -> Bool](uitableviewdelegate/tableview(_:shouldupdatefocusin:).md)
+- [func tableView(UITableView, shouldUpdateFocusIn: UITableViewFocusUpdateContext) -> Bool](./tableview%28_,shouldupdatefocusin%29.md)
   Asks the delegate whether the focus update specified by the context is allowed to occur.
-- [func indexPathForPreferredFocusedView(in: UITableView) -> IndexPath?](uitableviewdelegate/indexpathforpreferredfocusedview(in:).md)
+- [func indexPathForPreferredFocusedView(in: UITableView) -> IndexPath?](./indexpathforpreferredfocusedview%28in%29.md)
   Asks the delegate for the table view’s index path for the preferred focused view.
-- [func tableView(UITableView, selectionFollowsFocusForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:selectionfollowsfocusforrowat:).md)
+- [func tableView(UITableView, selectionFollowsFocusForRowAt: IndexPath) -> Bool](./tableview%28_,selectionfollowsfocusforrowat%29.md)
   Asks the delegate whether to relate selection and focus behavior for the row at the corresponding index path.
 
 

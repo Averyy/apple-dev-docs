@@ -1,17 +1,18 @@
 # operator+
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 bounded_ptr<T, TrappingPolicy> operator+(ptrdiff_t n, bounded_ptr<T, TrappingPolicy> p);
 ```
 

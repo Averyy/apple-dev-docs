@@ -1,7 +1,8 @@
 # kSpeechPhonemeInfoExample
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An example word that illustrates the use of the phoneme.
 
@@ -12,6 +13,10 @@ An example word that illustrates the use of the phoneme.
 
 ```swift
 let kSpeechPhonemeInfoExample: CFString
+```
+
+```c
+const CFStringRef kSpeechPhonemeInfoExample;
 ```
 
 

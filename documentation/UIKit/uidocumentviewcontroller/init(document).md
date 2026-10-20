@@ -1,7 +1,8 @@
 # init(document:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document view controller with a document.
 
@@ -17,9 +18,13 @@ Creates a document view controller with a document.
 init(document: UIDocument?)
 ```
 
+```objc
+- (instancetype) initWithDocument:(UIDocument *) document;
+```
+
 #### Return Value
 
-A newly initialized [`UIDocumentViewController`](uidocumentviewcontroller.md) object.
+A newly initialized [`UIDocumentViewController`](../uidocumentviewcontroller.md) object.
 
 #### Discussion
 

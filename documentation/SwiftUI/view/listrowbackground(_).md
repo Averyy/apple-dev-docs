@@ -1,7 +1,8 @@
 # listRowBackground(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Places a custom background view behind a list row item.
 
@@ -29,7 +30,7 @@ A list row view with `view` as its background view.
 
 Use `listRowBackground(_:)` to place a custom background view behind a list row item.
 
-In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI [`ForEach`](foreach.md) structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowBackground(_:)` modifier then places the view you supply behind each of the list row items:
+In the example below, the `Flavor` enumeration provides content for list items. The SwiftUI [`ForEach`](../foreach.md) structure computes views for each element of the `Flavor` enumeration and extracts the raw value of each of its elements using the resulting text to create each list row item. The `listRowBackground(_:)` modifier then places the view you supply behind each of the list row items:
 
 ```swift
 struct ContentView: View {
@@ -53,21 +54,22 @@ struct ContentView: View {
 }
 ```
 
-![A screenshot showing the placement of an image as the background to](/images/com.apple.SwiftUI/SwiftUI-View-listRowBackground@2x.png)
+![A screenshot showing the placement of an image as the background to](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-listRowBackground@2x.png)
 
 ## Parameters
 
-- `view`: The [`View`](view.md) to use as the background behind the list row view.
+- `view`: The [`View`](../view.md) to use as the background behind the list row view.
 
 ## See Also
 
-- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](view/alternatingrowbackgrounds(_:).md)
+### Configuring backgrounds
+- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](./alternatingrowbackgrounds%28_%29.md)
   Overrides whether lists and tables in this view have alternating row backgrounds.
-- [struct AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior.md)
+- [struct AlternatingRowBackgroundBehavior](../alternatingrowbackgroundbehavior.md)
   The styling of views with respect to alternating row backgrounds.
-- [var backgroundProminence: BackgroundProminence](environmentvalues/backgroundprominence.md)
+- [var backgroundProminence: BackgroundProminence](../environmentvalues/backgroundprominence.md)
   The prominence of the background underneath views associated with this environment.
-- [struct BackgroundProminence](backgroundprominence.md)
+- [struct BackgroundProminence](../backgroundprominence.md)
   The prominence of backgrounds underneath other views.
 
 

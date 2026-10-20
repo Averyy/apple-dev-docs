@@ -1,7 +1,8 @@
 # blurredRectangleGenerator()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a blurred rectangle.
 
@@ -19,18 +20,22 @@ Generates a blurred rectangle.
 class func blurredRectangleGenerator() -> any CIFilter & CIBlurredRectangleGenerator
 ```
 
+```objc
++ (CIFilter<CIBlurredRectangleGenerator> *) blurredRectangleGeneratorFilter;
+```
+
 #### Return Value
 
-A [`CIImage`](ciimage.md) containing a blurred rectangle.
+A [`CIImage`](../ciimage.md) containing a blurred rectangle.
 
 #### Discussion
 
-Creates a [`CIImage`](ciimage.md) containing a blurred rectangle. The resulting image size is the extent of the rectangle plus any additional space required for the blur effect.
+Creates a [`CIImage`](../ciimage.md) containing a blurred rectangle. The resulting image size is the extent of the rectangle plus any additional space required for the blur effect.
 
 The blurred rectangle filter uses the following properties:
 
-- **`extent`**: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that defines the extent of the effect.
-- **`color`**: A [`CIColor`](cicolor.md) specifying the color of the rectangle.
+- **`extent`**: A [`CGRect`](../../CoreFoundation/cgrect.md) that defines the extent of the effect.
+- **`color`**: A [`CIColor`](../cicolor.md) specifying the color of the rectangle.
 - **`sigma`**: A `float` specifying the sigma for the Gaussian blur.
 
 The following code creates a filter that generates a blurred red rectangle with a width of 200 x 100 pixels.
@@ -45,39 +50,40 @@ func blurredRectangle() -> CIImage {
 }
 ```
 
-![An image of a blurred rectangle with an aspect ratio of 2 to 1.](/images/com.apple.coreimage/media-4407302@2x.png)
+![An image of a blurred rectangle with an aspect ratio of 2 to 1.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4407302@2x.png)
 
 ## See Also
 
-- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](cifilter-swift.class/attributedtextimagegenerator.md)
+### Filters
+- [class func attributedTextImageGenerator() -> any CIFilter & CIAttributedTextImageGenerator](./attributedtextimagegenerator%28%29.md)
   Generates an attributed-text image.
-- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](cifilter-swift.class/azteccodegenerator.md)
+- [class func aztecCodeGenerator() -> any CIFilter & CIAztecCodeGenerator](./azteccodegenerator%28%29.md)
   Generates a low-density barcode.
-- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](cifilter-swift.class/barcodegenerator.md)
+- [class func barcodeGenerator() -> any CIFilter & CIBarcodeGenerator](./barcodegenerator%28%29.md)
   Generates a barcode as an image from the descriptor.
-- [class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator](cifilter-swift.class/checkerboardgenerator.md)
+- [class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator](./checkerboardgenerator%28%29.md)
   Generates a checkerboard image.
-- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](cifilter-swift.class/code128barcodegenerator.md)
+- [class func code128BarcodeGenerator() -> any CIFilter & CICode128BarcodeGenerator](./code128barcodegenerator%28%29.md)
   Generates a high-density, linear barcode.
-- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](cifilter-swift.class/lenticularhalogenerator.md)
+- [class func lenticularHaloGenerator() -> any CIFilter & CILenticularHaloGenerator](./lenticularhalogenerator%28%29.md)
   Generates a lenticular halo image.
-- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](cifilter-swift.class/meshgenerator.md)
+- [class func meshGenerator() -> any CIFilter & CIMeshGenerator](./meshgenerator%28%29.md)
   Generates a pattern made from an array of line segments.
-- [class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator](cifilter-swift.class/pdf417barcodegenerator.md)
+- [class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator](./pdf417barcodegenerator%28%29.md)
   Generates a high-density linear barcode.
-- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](cifilter-swift.class/qrcodegenerator.md)
+- [class func qrCodeGenerator() -> any CIFilter & CIQRCodeGenerator](./qrcodegenerator%28%29.md)
   Generates a quick response (QR) code image.
-- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](cifilter-swift.class/randomgenerator.md)
+- [class func randomGenerator() -> any CIFilter & CIRandomGenerator](./randomgenerator%28%29.md)
   Generates a random filter image.
-- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](cifilter-swift.class/roundedrectanglegenerator.md)
+- [class func roundedRectangleGenerator() -> any CIFilter & CIRoundedRectangleGenerator](./roundedrectanglegenerator%28%29.md)
   Generates a rounded rectangle image.
-- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](cifilter-swift.class/roundedrectanglestrokegenerator.md)
+- [class func roundedRectangleStrokeGenerator() -> any CIFilter & CIRoundedRectangleStrokeGenerator](./roundedrectanglestrokegenerator%28%29.md)
   Creates an image containing the outline of a rounded rectangle.
-- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](cifilter-swift.class/starshinegenerator.md)
+- [class func starShineGenerator() -> any CIFilter & CIStarShineGenerator](./starshinegenerator%28%29.md)
   Generates a star-shine image.
-- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](cifilter-swift.class/stripesgenerator.md)
+- [class func stripesGenerator() -> any CIFilter & CIStripesGenerator](./stripesgenerator%28%29.md)
   Generates a line of stripes as an image
-- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](cifilter-swift.class/sunbeamsgenerator.md)
+- [class func sunbeamsGenerator() -> any CIFilter & CISunbeamsGenerator](./sunbeamsgenerator%28%29.md)
   Generates an image resembling the sun.
 
 

@@ -1,7 +1,8 @@
 # init(credentialIdentity:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a password credential request object.
 
@@ -16,6 +17,10 @@ Initializes a password credential request object.
 
 ```swift
 init(credentialIdentity: ASPasswordCredentialIdentity)
+```
+
+```objc
+- (instancetype) initWithCredentialIdentity:(ASPasswordCredentialIdentity *) credentialIdentity;
 ```
 
 ## Parameters

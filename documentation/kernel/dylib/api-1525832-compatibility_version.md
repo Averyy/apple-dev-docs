@@ -1,7 +1,8 @@
 # compatibility_version
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The compatibility version of the shared library.
 
@@ -10,7 +11,7 @@ The compatibility version of the shared library.
 
 ## Declaration
 
-```swift
+```c
 uint32_t compatibility_version;
 ```
 

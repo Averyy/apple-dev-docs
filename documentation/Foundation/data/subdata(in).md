@@ -1,7 +1,8 @@
 # subdata(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new copy of the data in a specified range.
 

@@ -1,14 +1,15 @@
 # kSMCCmd_READ_ELEMENT_STATUS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSMCCmd_READ_ELEMENT_STATUS = 0xB8
 ```
 

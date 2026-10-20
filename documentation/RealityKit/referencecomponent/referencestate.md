@@ -1,7 +1,8 @@
 # ReferenceComponent.ReferenceState
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the current loading state of the referenced entity.
 
@@ -22,18 +23,18 @@ enum ReferenceState
 ## Topics
 
 ### Enumeration Cases
-- [ReferenceComponent.ReferenceState.loaded](referencecomponent/referencestate/loaded.md)
+- [ReferenceComponent.ReferenceState.loaded](./referencestate/loaded.md)
   The reference is loaded.
-- [ReferenceComponent.ReferenceState.loading](referencecomponent/referencestate/loading.md)
+- [ReferenceComponent.ReferenceState.loading](./referencestate/loading.md)
   The reference is loading.
-- [ReferenceComponent.ReferenceState.notLoaded](referencecomponent/referencestate/notloaded.md)
+- [ReferenceComponent.ReferenceState.notLoaded](./referencestate/notloaded.md)
   The reference isn’t loaded.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

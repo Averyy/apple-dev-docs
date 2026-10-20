@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the default set of options for writing a CSV file.
 

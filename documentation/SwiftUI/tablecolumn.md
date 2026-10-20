@@ -1,7 +1,8 @@
 # TableColumn
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A column that displays a view for each row in a table.
 
@@ -31,7 +32,7 @@ TableColumn("Given name", value: \.givenName) { person in
 }
 ```
 
-For the common case of `String` properties, you can use the convenience initializer that doesn’t require an explicit content closure and displays that string verbatim as a [`Text`](text.md) view. This means you can write the previous example as:
+For the common case of `String` properties, you can use the convenience initializer that doesn’t require an explicit content closure and displays that string verbatim as a [`Text`](./text.md) view. This means you can write the previous example as:
 
 ```swift
 TableColumn("Given name", value: \.givenName)
@@ -40,41 +41,42 @@ TableColumn("Given name", value: \.givenName)
 ## Topics
 
 ### Creating an unsortable column
-- [init(_:value:)](tablecolumn/init(_:value:).md)
+- [init(_:value:)](./tablecolumn/init%28_,value%29.md)
   Creates an unsortable column that displays a string property that generates its label from a localized string resource.
-- [init(_:content:)](tablecolumn/init(_:content:).md)
+- [init(_:content:)](./tablecolumn/init%28_,content%29.md)
   Creates an unsortable column that generates its label from a localized string resource.
 ### Creating a sortable column
-- [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
+- [init(_:value:content:)](./tablecolumn/init%28_,value,content%29.md)
   Creates a sortable column for Boolean values that generates its label from a localized string resource.
-- [init(_:value:comparator:)](tablecolumn/init(_:value:comparator:).md)
+- [init(_:value:comparator:)](./tablecolumn/init%28_,value,comparator%29.md)
   Creates a sortable column that displays a string property, and generates its label from a localized string resource.
-- [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
+- [init(_:value:comparator:content:)](./tablecolumn/init%28_,value,comparator,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
-- [init(_:sortUsing:content:)](tablecolumn/init(_:sortusing:content:).md)
+- [init(_:sortUsing:content:)](./tablecolumn/init%28_,sortusing,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
 ### Setting the column width
-- [func width(CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width(_:).md)
+- [func width(CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](./tablecolumn/width%28_%29.md)
   Creates a fixed width table column that isn’t user resizable.
-- [func width(min: CGFloat?, ideal: CGFloat?, max: CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width(min:ideal:max:).md)
+- [func width(min: CGFloat?, ideal: CGFloat?, max: CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](./tablecolumn/width%28min,ideal,max%29.md)
   Creates a resizable table column with the provided constraints.
-- [func width() -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width.md)
+- [func width() -> TableColumn<RowValue, Sort, Content, Label>](./tablecolumn/width%28%29.md)
   Sets the column’s width.
 
 ## Relationships
 
 ### Conforms To
-- [TableColumnContent](tablecolumncontent.md)
+- [TableColumnContent](./tablecolumncontent.md)
 
 ## See Also
 
-- [protocol TableColumnContent](tablecolumncontent.md)
+### Creating columns
+- [protocol TableColumnContent](./tablecolumncontent.md)
   A type used to represent columns within a table.
-- [struct TableColumnAlignment](tablecolumnalignment.md)
+- [struct TableColumnAlignment](./tablecolumnalignment.md)
   Describes the alignment of the content of a table column.
-- [struct TableColumnBuilder](tablecolumnbuilder.md)
+- [struct TableColumnBuilder](./tablecolumnbuilder.md)
   A result builder that creates table column content from closures.
-- [struct TableColumnForEach](tablecolumnforeach.md)
+- [struct TableColumnForEach](./tablecolumnforeach.md)
   A structure that computes columns on demand from an underlying collection of identified data.
 
 

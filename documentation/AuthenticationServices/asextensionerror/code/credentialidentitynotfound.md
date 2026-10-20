@@ -1,7 +1,8 @@
 # ASExtensionError.Code.credentialIdentityNotFound
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential identity was not found.
 
@@ -18,13 +19,18 @@ The credential identity was not found.
 case credentialIdentityNotFound
 ```
 
+```c
+ASExtensionErrorCodeCredentialIdentityNotFound
+```
+
 ## See Also
 
-- [ASExtensionError.Code.failed](asextensionerror/code/failed.md)
+### Codes
+- [ASExtensionError.Code.failed](./failed.md)
   The operation failed.
-- [ASExtensionError.Code.userCanceled](asextensionerror/code/usercanceled.md)
+- [ASExtensionError.Code.userCanceled](./usercanceled.md)
   The user canceled the operation.
-- [ASExtensionError.Code.userInteractionRequired](asextensionerror/code/userinteractionrequired.md)
+- [ASExtensionError.Code.userInteractionRequired](./userinteractionrequired.md)
   User interaction is required.
 
 

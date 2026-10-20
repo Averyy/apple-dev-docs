@@ -1,7 +1,8 @@
 # steps
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of steps that create the overall route.
 
@@ -20,15 +21,20 @@ The array of steps that create the overall route.
 var steps: [MKRoute.Step] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MKRouteStep *> * steps;
+```
+
 #### Discussion
 
-The array contains one or more [`MKRoute.Step`](mkroute/step.md) objects representing distinct portions of the route. Each step corresponds to a single direction that must be followed along the route.
+The array contains one or more [`MKRoute.Step`](./step.md) objects representing distinct portions of the route. Each step corresponds to a single direction that must be followed along the route.
 
 ## See Also
 
-- [var polyline: MKPolyline](mkroute/polyline.md)
+### Getting the route geometry
+- [var polyline: MKPolyline](./polyline.md)
   The detailed route geometry.
-- [MKRoute.Step](mkroute/step.md)
+- [MKRoute.Step](./step.md)
   One portion of an overall route.
 
 

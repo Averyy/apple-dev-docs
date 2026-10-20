@@ -1,7 +1,8 @@
 # SecTrustCopyAnchorCertificates(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the anchor (root) certificates stored by macOS.
 
@@ -14,23 +15,28 @@ Retrieves the anchor (root) certificates stored by macOS.
 func SecTrustCopyAnchorCertificates(_ anchors: UnsafeMutablePointer<CFArray?>) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustCopyAnchorCertificates(CFArrayRef*anchors);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-This function retrieves the certificates in the system’s store of anchor certificates (see [`SecTrustSetAnchorCertificates(_:_:)`](sectrustsetanchorcertificates(_:_:).md)). You can use the [`SecCertificate`](seccertificate.md) objects retrieved by this function as input to other functions of this API, such as [`SecTrustCreateWithCertificates(_:_:_:)`](sectrustcreatewithcertificates(_:_:_:).md).
+This function retrieves the certificates in the system’s store of anchor certificates (see [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md)). You can use the [`SecCertificate`](./seccertificate.md) objects retrieved by this function as input to other functions of this API, such as [`SecTrustCreateWithCertificates(_:_:_:)`](./sectrustcreatewithcertificates%28_,_,_%29.md).
 
-It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetAnchorCertificates(_:_:)`](sectrustsetanchorcertificates(_:_:).md) function for the same trust management object on another thread.
+It is safe to call this function concurrently on two or more threads as long as it is not used to get values from a trust management object that is simultaneously being changed by another function. For example, you can call this function on two threads at the same time, but not if you are simultaneously calling the [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md) function for the same trust management object on another thread.
 
 ## Parameters
 
-- `anchors`: On return, points to an array of certificate objects for trusted anchor (root) certificates, which is the default set of anchors for the caller. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release the [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) object when you are finished with it.
+- `anchors`: On return, points to an array of certificate objects for trusted anchor (root) certificates, which is the default set of anchors for the caller. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release the [`CFArray`](../CoreFoundation/cfarray.md) object when you are finished with it.
 
 ## See Also
 
-- [func SecTrustSetAnchorCertificates(SecTrust, CFArray?) -> OSStatus](sectrustsetanchorcertificates(_:_:).md)
+### Related Documentation
+- [func SecTrustSetAnchorCertificates(SecTrust, CFArray?) -> OSStatus](./sectrustsetanchorcertificates%28_,_%29.md)
   Sets the anchor certificates used when evaluating a trust management object.
 
 

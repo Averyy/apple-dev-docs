@@ -1,7 +1,8 @@
 # continent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The continent that contains this region, if any.
 
@@ -26,13 +27,14 @@ This value can be `nil` when the system can’t determine the appropriate contin
 
 ## See Also
 
-- [var identifier: String](locale/region-swift.struct/identifier.md)
+### Examining region properties
+- [var identifier: String](./identifier.md)
   The BCP 47 identifier of the region.
-- [var containingRegion: Locale.Region?](locale/region-swift.struct/containingregion.md)
+- [var containingRegion: Locale.Region?](./containingregion.md)
   The region that contains this region, if any.
-- [var isISORegion: Bool](locale/region-swift.struct/isisoregion.md)
+- [var isISORegion: Bool](./isisoregion.md)
   A Boolean value that indicates whether the region is an ISO-defined region.
-- [var subRegions: [Locale.Region]](locale/region-swift.struct/subregions.md)
+- [var subRegions: [Locale.Region]](./subregions.md)
   An array of all the sub-regions of the region.
 
 

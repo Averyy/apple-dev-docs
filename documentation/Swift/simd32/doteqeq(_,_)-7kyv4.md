@@ -1,7 +1,8 @@
 # .==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Pointwise compare equal to.
 
@@ -19,6 +20,8 @@ Pointwise compare equal to.
 ```swift
 static func .== (a: SIMD32<Scalar>, b: Scalar) -> SIMDMask<SIMD32<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `Float`.
 
 #### Discussion
 

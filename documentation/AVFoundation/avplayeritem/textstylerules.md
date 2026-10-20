@@ -1,7 +1,8 @@
 # textStyleRules
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of text style rules that specify the formatting and presentation of Web Video Text Tracks (WebVTT) subtitles.
 
@@ -20,13 +21,18 @@ nonisolated
 var textStyleRules: [AVTextStyleRule]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<AVTextStyleRule *> * textStyleRules;
+```
+
 #### Discussion
 
 Text style rules apply only to WebVTT subtitles. They don’t apply to other subtitle formats and legible text.
 
 ## See Also
 
-- [class AVTextStyleRule](avtextstylerule.md)
+### Accessing text style rules
+- [class AVTextStyleRule](../avtextstylerule.md)
   An object that represents the text styling rules to apply to a media item’s textual content.
 
 

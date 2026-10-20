@@ -1,16 +1,21 @@
 # excludeDesktopElements
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 static var excludeDesktopElements: CGWindowListOption { get }
+```
+
+```c
+kCGWindowListExcludeDesktopElements
 ```
 
 #### Discussion
@@ -19,11 +24,12 @@ Exclude any windows from the list that are elements of the desktop, including th
 
 ## See Also
 
-- [static var optionAll: CGWindowListOption](cgwindowlistoption/optionall.md)
-- [static var optionIncludingWindow: CGWindowListOption](cgwindowlistoption/optionincludingwindow.md)
-- [static var optionOnScreenAboveWindow: CGWindowListOption](cgwindowlistoption/optiononscreenabovewindow.md)
-- [static var optionOnScreenBelowWindow: CGWindowListOption](cgwindowlistoption/optiononscreenbelowwindow.md)
-- [static var optionOnScreenOnly: CGWindowListOption](cgwindowlistoption/optiononscreenonly.md)
+### Type Properties
+- [static var optionAll: CGWindowListOption](./optionall.md)
+- [static var optionIncludingWindow: CGWindowListOption](./optionincludingwindow.md)
+- [static var optionOnScreenAboveWindow: CGWindowListOption](./optiononscreenabovewindow.md)
+- [static var optionOnScreenBelowWindow: CGWindowListOption](./optiononscreenbelowwindow.md)
+- [static var optionOnScreenOnly: CGWindowListOption](./optiononscreenonly.md)
 
 
 ---

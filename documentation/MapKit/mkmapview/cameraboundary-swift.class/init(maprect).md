@@ -1,7 +1,8 @@
 # init(mapRect:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera boundary using the provided map rectangle.
 
@@ -19,15 +20,20 @@ Creates a camera boundary using the provided map rectangle.
 init?(mapRect: MKMapRect)
 ```
 
+```objc
+- (instancetype) initWithMapRect:(MKMapRect) mapRect;
+```
+
 ## Parameters
 
-- `mapRect`: The [`MKMapRect`](mkmaprect.md) that describes the camera boundary.
+- `mapRect`: The [`MKMapRect`](../../mkmaprect.md) that describes the camera boundary.
 
 ## See Also
 
-- [init?(coder: NSCoder)](mkmapview/cameraboundary-swift.class/init(coder:).md)
+### Creating a camera boundary
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a camera boundary using the provided coder.
-- [init?(coordinateRegion: MKCoordinateRegion)](mkmapview/cameraboundary-swift.class/init(coordinateregion:).md)
+- [init?(coordinateRegion: MKCoordinateRegion)](./init%28coordinateregion%29.md)
   Creates a camera boundary using the provided coordinate region.
 
 

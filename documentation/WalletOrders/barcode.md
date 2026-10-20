@@ -1,7 +1,8 @@
 # Barcode
 
 **Framework**: Wallet Orders  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The details of a barcode for an order.
 
@@ -12,7 +13,7 @@ The details of a barcode for an order.
 
 ## Declaration
 
-```swift
+```
 object Barcode
 ```
 
@@ -20,40 +21,43 @@ object Barcode
 
 - `altText` (string): The localized text displayed by the barcode. For example, a human-readable version of the barcode data in case of a scanning failure.
 - `format` (string) *(required)*: The format of the barcode.
+
+  **Allowed Values**: `qr`, `pdf417`, `aztec`, `code128`
 - `message` (string) *(required)*: The contents of the barcode.
 - `messageEncoding` (string) *(required)*: The text encoding of the barcode message. Typically this is `iso-8859-1`, but you may specify an alternative encoding if required.
 
 ## See Also
 
-- [object Customer](customer.md)
+### Supporting objects
+- [object Customer](./customer.md)
   The details of the order’s customer.
-- [object Merchant](merchant.md)
+- [object Merchant](./merchant.md)
   The merchant associated with the order.
-- [object Address](address.md)
+- [object Address](./address.md)
   The physical address for an order.
-- [object Application](application.md)
+- [object Application](./application.md)
   The details of an app in the App Store.
-- [object CurrencyAmount](currencyamount.md)
+- [object CurrencyAmount](./currencyamount.md)
   An amount of money.
-- [object LineItem](lineitem.md)
+- [object LineItem](./lineitem.md)
   An item associated with the order.
-- [object Location](location.md)
+- [object Location](./location.md)
   A geographic location.
-- [object OrderIdentifiers](orderidentifiers.md)
+- [object OrderIdentifiers](./orderidentifiers.md)
   The unique identifiers associated with orders.
-- [object OrderProvider](orderprovider.md)
+- [object OrderProvider](./orderprovider.md)
   Information about the platform providing the order data.
-- [object Payment](payment.md)
+- [object Payment](./payment.md)
   The payment information associated with the order.
-- [object Payment.SummaryItems](payment/summaryitems-data.dictionary.md)
+- [object Payment.SummaryItems](./payment/summaryitems-data.dictionary.md)
   A breakdown of the total payment.
-- [object PaymentMethod](paymentmethod.md)
+- [object PaymentMethod](./paymentmethod.md)
   The payment method for the transaction.
-- [object PaymentTransaction](paymenttransaction.md)
+- [object PaymentTransaction](./paymenttransaction.md)
   The details about a payment transaction.
-- [object PickupFulfillment](pickupfulfillment.md)
+- [object PickupFulfillment](./pickupfulfillment.md)
   The details of a pickup order.
-- [object Return](return.md)
+- [object Return](./return.md)
   The details of a return order.
 
 

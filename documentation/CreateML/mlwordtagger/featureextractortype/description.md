@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of a feature extractor type.
 
@@ -16,9 +17,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlwordtagger/featureextractortype/debugdescription.md)
+### Describing a feature extractor type
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the feature extractor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlwordtagger/featureextractortype/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the feature extractor in a playground.
 
 

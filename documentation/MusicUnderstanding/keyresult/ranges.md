@@ -1,7 +1,8 @@
 # ranges
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected key for each time range.
 

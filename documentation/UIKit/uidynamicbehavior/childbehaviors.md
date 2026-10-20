@@ -1,7 +1,8 @@
 # childBehaviors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the array of dynamic behaviors that are children of a custom dynamic behavior.
 
@@ -9,7 +10,7 @@ Returns the array of dynamic behaviors that are children of a custom dynamic beh
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Returns the array of dynamic behaviors that are children of a custom dynamic beh
 var childBehaviors: [UIDynamicBehavior] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<__kindof UIDynamicBehavior *> * childBehaviors;
+```
+
 #### Discussion
 
 Only custom subclasses of the class can have child behaviors.
 
 ## See Also
 
-- [var action: (() -> Void)?](uidynamicbehavior/action.md)
+### Configuring a dynamic behavior
+- [var action: (() -> Void)?](./action.md)
   The block you want to execute during dynamic animation.
-- [func addChildBehavior(UIDynamicBehavior)](uidynamicbehavior/addchildbehavior(_:).md)
+- [func addChildBehavior(UIDynamicBehavior)](./addchildbehavior%28_%29.md)
   Adds a dynamic behavior, as a child, to a custom dynamic behavior.
-- [func removeChildBehavior(UIDynamicBehavior)](uidynamicbehavior/removechildbehavior(_:).md)
+- [func removeChildBehavior(UIDynamicBehavior)](./removechildbehavior%28_%29.md)
   Removes a child dynamic behavior from a custom dynamic behavior.
 
 

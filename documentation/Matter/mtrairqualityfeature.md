@@ -1,7 +1,8 @@
 # MTRAirQualityFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,27 +19,31 @@
 struct MTRAirQualityFeature
 ```
 
+```c
+enum MTRAirQualityFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrairqualityfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrairqualityfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var extremelyPoor: MTRAirQualityFeature](mtrairqualityfeature/extremelypoor.md)
-- [static var fair: MTRAirQualityFeature](mtrairqualityfeature/fair.md)
-- [static var moderate: MTRAirQualityFeature](mtrairqualityfeature/moderate.md)
-- [static var veryPoor: MTRAirQualityFeature](mtrairqualityfeature/verypoor.md)
+- [static var extremelyPoor: MTRAirQualityFeature](./mtrairqualityfeature/extremelypoor.md)
+- [static var fair: MTRAirQualityFeature](./mtrairqualityfeature/fair.md)
+- [static var moderate: MTRAirQualityFeature](./mtrairqualityfeature/moderate.md)
+- [static var veryPoor: MTRAirQualityFeature](./mtrairqualityfeature/verypoor.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

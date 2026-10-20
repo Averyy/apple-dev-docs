@@ -1,7 +1,8 @@
 # newShippingMethods
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An updated list of new shipping methods.
 
@@ -11,15 +12,16 @@ An updated list of new shipping methods.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayShippingMethod> newShippingMethods;
 ```
 
 ## See Also
 
-- [newLineItems](applepayshippingmethodupdate/newlineitems.md)
+### Updating shipping method properties
+- [newLineItems](./newlineitems.md)
   An optional list of updated line items.
-- [newTotal](applepayshippingmethodupdate/newtotal.md)
+- [newTotal](./newtotal.md)
   The new total that results from a change in the shipping method.
 
 

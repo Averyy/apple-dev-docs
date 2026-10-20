@@ -1,14 +1,15 @@
 # vfs_getvfs_with_vfsops
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 mount_t vfs_getvfs_with_vfsops(fsid_t *fsid, const struct vfsops *ops);
 ```
 

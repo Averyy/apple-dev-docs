@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately after the given index. (See `Collection.index`.)
 
@@ -11,7 +12,7 @@ Returns the position immediately after the given index. (See `Collection.index`.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ Returns the position immediately after the given index. (See `Collection.index`.
 
 ## See Also
 
-- [var startIndex: Int](entity/childcollection/startindex.md)
+### Manipulating indices
+- [var startIndex: Int](./startindex.md)
   The position of the first element in a nonempty collection. (See `Collection.startIndex`.)
-- [var endIndex: Int](entity/childcollection/endindex.md)
+- [var endIndex: Int](./endindex.md)
   TThe collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
 
 

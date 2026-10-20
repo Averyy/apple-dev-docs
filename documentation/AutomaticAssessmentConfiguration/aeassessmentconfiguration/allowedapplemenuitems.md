@@ -1,7 +1,8 @@
 # allowedAppleMenuItems
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of allowed Apple menu items during an assessment.
 
@@ -15,11 +16,15 @@ The set of allowed Apple menu items during an assessment.
 var allowedAppleMenuItems: Set<AEAppleMenuItem>? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSSet<NSString *> * allowedAppleMenuItems;
+```
+
 #### Discussion
 
 Defaults to `nil`, which leaves every Apple menu item available. Setting a non-`nil` set restricts the menu to the items it names; pass an empty set to restrict all of them. Some constants cover more than one menu item.
 
-> **Note**: [`aboutThisMac`](aeapplemenuitem/aboutthismac.md) is always visible during assessment sessions regardless of configuration.
+> **Note**: [`aboutThisMac`](../aeapplemenuitem/aboutthismac.md) is always visible during assessment sessions regardless of configuration.
 
 
 ---

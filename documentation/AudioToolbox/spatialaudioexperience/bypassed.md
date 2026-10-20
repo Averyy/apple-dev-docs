@@ -1,7 +1,8 @@
 # bypassed
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A bypassed spatial audio experience.
 
@@ -13,6 +14,8 @@ A bypassed spatial audio experience.
 ```swift
 static var bypassed: BypassedSpatialAudio { get }
 ```
+
+Available when `Self` is `BypassedSpatialAudio`.
 
 
 ---

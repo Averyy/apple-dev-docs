@@ -1,7 +1,8 @@
 # criteria
 
 **Framework**: Media Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The search criteria for the audio request.
 
@@ -22,11 +23,12 @@ var criteria: AudioSearch.Criteria
 
 ## Mentions
 
-- [Responding to audio search and playback requests](responding-to-audio-search-and-playback-requests.md)
+- [Responding to audio search and playback requests](../responding-to-audio-search-and-playback-requests.md)
 
 ## See Also
 
-- [AudioSearch.Criteria](audiosearch/criteria-swift.enum.md)
+### Describing result criteria
+- [AudioSearch.Criteria](./criteria-swift.enum.md)
   The metadata and classification of a person’s audio search that the system provides.
 
 

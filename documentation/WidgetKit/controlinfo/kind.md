@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string specified during creation of the control’s configuration.
 

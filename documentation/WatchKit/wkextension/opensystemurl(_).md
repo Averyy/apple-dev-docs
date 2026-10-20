@@ -1,17 +1,22 @@
 # openSystemURL(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the specified system URL.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 9.2 (renamed: WKApplication)
 
 ## Declaration
 
 ```swift
 func openSystemURL(_ url: URL)
+```
+
+```objc
+- (void) openSystemURL:(NSURL *) url;
 ```
 
 #### Discussion
@@ -20,7 +25,7 @@ Use this method to initiate phone calls or send messages. The URL you open is se
 
 ## Parameters
 
-- `url`: A URL that supports the `tel:` or `sms:` scheme. For information about the format of these URL schemes, see [`Apple URL Scheme Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
+- `url`: A URL that supports the `tel:` or `sms:` scheme. For information about the format of these URL schemes, see [Apple URL Scheme Reference](https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007899).
 
 
 ---

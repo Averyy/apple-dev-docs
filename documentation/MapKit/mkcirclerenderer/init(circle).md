@@ -1,7 +1,8 @@
 # init(circle:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new overlay view using the specified circle overlay object.
 
@@ -17,6 +18,10 @@ Creates a new overlay view using the specified circle overlay object.
 
 ```swift
 init(circle: MKCircle)
+```
+
+```objc
+- (instancetype) initWithCircle:(MKCircle *) circle;
 ```
 
 #### Return Value

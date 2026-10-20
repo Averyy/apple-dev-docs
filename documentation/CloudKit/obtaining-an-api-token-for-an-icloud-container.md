@@ -1,25 +1,26 @@
 # Obtaining an API Token for an iCloud Container
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: Article
 
 Generate an API token to access CloudKit web services or use CloudKit JS.
 
 #### Overview
 
-With CloudKit, you can store data in iCloud and sync it across Apple devices. To access iCloud data from the web or other platforms, you can use [`CloudKit JS`](https://developer.apple.com/documentation/cloudkitjs) or [`CloudKit Web Services`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/) after obtaining a token.
+With CloudKit, you can store data in iCloud and sync it across Apple devices. To access iCloud data from the web or other platforms, you can use [CloudKit JS](../CloudKitJS/CloudKitJS.md) or [CloudKit Web Services](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/) after obtaining a token.
 
-##### Select Api Access for Your Container
+##### Select API access for your container
 
 Use your web browser to access the CloudKit Database app:
 
-1. Sign in to the CloudKit Console at [`https://icloud.developer.apple.com/`](https://developer.apple.comhttps://icloud.developer.apple.com/).
+1. Sign in to the CloudKit Console at [https://icloud.developer.apple.com/](https://icloud.developer.apple.com/).
 2. Select the CloudKit Database app.
 3. In the top section, choose your app’s container from the list.
 4. In the Settings section on the left, select Tokens & Keys.
 
-![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Tokens & Keys menu item in the Settings section on the left.](/images/com.apple.cloudkit/media-3699104@2x.png)
+![A screenshot showing a selected container in the CloudKit Database app. The screenshot highlights the Tokens & Keys menu item in the Settings section on the left.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699104@2x.png)
 
-##### Create the Api Token
+##### Create the API token
 
 To obtain your container’s API token:
 
@@ -30,15 +31,16 @@ To obtain your container’s API token:
 5. To add a description, type it in the Notes field.
 6. Click the Save Changes button.
 
-![A screenshot showing the CloudKit Database app API access management page the for selected container.](/images/com.apple.cloudkit/media-3699263@2x.png)
+![A screenshot showing the CloudKit Database app API access management page the for selected container.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699263@2x.png)
 
 ## See Also
 
-- [Inspecting and Editing an iCloud Container’s Schema](inspecting-and-editing-an-icloud-container-s-schema.md)
+### Container Management
+- [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md)
   Review and edit the schema for your app’s container using the CloudKit Database app.
-- [Handling an iCloud Container’s Data](handling-an-icloud-container-s-data.md)
+- [Handling an iCloud Container’s Data](./handling-an-icloud-container-s-data.md)
   Inspect and manage your app’s iCloud container data using the CloudKit Database app.
-- [Deploying an iCloud Container’s Schema](deploying-an-icloud-container-s-schema.md)
+- [Deploying an iCloud Container’s Schema](./deploying-an-icloud-container-s-schema.md)
   Reset your container’s state during development and deploy your container’s schema to production.
 
 

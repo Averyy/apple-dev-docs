@@ -1,14 +1,15 @@
 # StandardUSB::PlatformCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::PlatformCapabilityDescriptor {
     ...
 } StandardUSB::PlatformCapabilityDescriptor;
@@ -17,8 +18,8 @@ typedef struct StandardUSB::PlatformCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bReserved](standardusb_platformcapabilitydescriptor/3794120-breserved.md)
-- [uuidPlatformCapability](standardusb_platformcapabilitydescriptor/3794121-uuidplatformcapability.md)
+- [bReserved](./standardusb_platformcapabilitydescriptor/api-3794120-breserved.md)
+- [uuidPlatformCapability](./standardusb_platformcapabilitydescriptor/api-3794121-uuidplatformcapability.md)
 
 
 ---

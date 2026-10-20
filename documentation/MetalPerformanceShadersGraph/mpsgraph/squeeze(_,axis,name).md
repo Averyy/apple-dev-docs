@@ -1,7 +1,8 @@
 # squeeze(_:axis:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a squeeze operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a squeeze operation and returns the result tensor.
 
 ```swift
 func squeeze(_ tensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) squeezeTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # HMAccessory.ManufacturerFeature.Kind.primitiveSetting
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

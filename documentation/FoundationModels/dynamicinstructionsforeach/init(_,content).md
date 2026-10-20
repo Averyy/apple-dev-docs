@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates dynamic instructions that produce content for each element of an identifiable collection.
 
@@ -19,9 +20,11 @@ Creates dynamic instructions that produce content for each element of an identif
 init(_ data: Data, @DynamicInstructionsBuilder content: @escaping (Data.Element) -> Content)
 ```
 
+Available when `Data` conforms to `RandomAccessCollection`, `ID` is `Data.Element.ID`, `Content` conforms to `DynamicInstructions`, and `Data.Element` conforms to `Identifiable`.
+
 #### Discussion
 
-Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](dynamicinstructions.md).
+Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](../dynamicinstructions/foreach.md) within the `body` of your [`DynamicInstructions`](../dynamicinstructions.md).
 
 ## Parameters
 
@@ -30,7 +33,8 @@ Don’t create this type directly. Instead, use [`DynamicInstructions.ForEach`](
 
 ## See Also
 
-- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](dynamicinstructionsforeach/init(_:id:content:).md)
+### Creating an instance
+- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](./init%28_,id,content%29.md)
   Creates dynamic instructions that produce content for each element of a collection.
 
 

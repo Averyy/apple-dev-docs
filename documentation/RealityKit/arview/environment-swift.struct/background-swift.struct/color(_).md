@@ -1,7 +1,8 @@
 # color(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use a solid color as a background.
 
@@ -9,6 +10,12 @@ Use a solid color as a background.
 - macOS 10.15+
 
 ## Declaration
+
+```swift
+static func color(_ color: ARView.Environment.Color) -> ARView.Environment.Background
+```
+
+**Other overloads**:
 
 ```swift
 static func color(_ color: ARView.Environment.Color) -> ARView.Environment.Background

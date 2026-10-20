@@ -1,6 +1,7 @@
 # Debugging with interactive command-line tools
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Investigate rendering issues in GPU traces without leaving the Terminal.
 
@@ -10,7 +11,7 @@ When a draw call produces incorrect output, like a missing shadow, a black surfa
 
 This article walks through a complete debugging session, from opening a trace to identifying the source of a visual artifact. For the full command reference, run `man gpudebug`.
 
-#### Open the Trace
+#### Open the trace
 
 Start `gpudebug` with the path to the trace file. You get a session number and an interactive prompt:
 
@@ -25,9 +26,9 @@ Replayer ready.
 gpudebug> 
 ```
 
-The `REPL` is ready immediately, but the replayer loads in the background. You can use the `list` and `go` commands to navigate the trace structure while it connects; commands that need the live replay, such as `info pipeline` and `fetch`, block until the replayer is ready. For more information about the replayer, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
+The `REPL` is ready immediately, but the replayer loads in the background. You can use the `list` and `go` commands to navigate the trace structure while it connects; commands that need the live replay, such as `info pipeline` and `fetch`, block until the replayer is ready. For more information about the replayer, see [Replaying a GPU trace file](./replaying-a-gpu-trace-file.md).
 
-#### Find the Problematic Pass
+#### Find the problematic pass
 
 Navigate the tree directly. The root has four children: `commands`, `performance`, `api_calls`, and `resources`. Start with the command buffers:
 
@@ -63,7 +64,7 @@ Links:
   :a   /api_calls/api45
 ```
 
-#### Inspect the Pipeline
+#### Inspect the pipeline
 
 When a draw produces incorrect output, start by inspecting its pipeline state. Run the `info` command on the pipeline node to print the entry points, color attachment formats, and vertex layout:
 
@@ -109,7 +110,7 @@ Stencil back ref      128
 Depth stencil state   @dss0 "G-buffer Creation (2)"
 ```
 
-#### Fetch Attachments to See the Output
+#### Fetch attachments to see the output
 
 To see what a draw actually rendered, fetch its color attachment as a PNG file:
 
@@ -125,7 +126,7 @@ gpudebug commands/cb1/re0/grp0/draw6> prev
 gpudebug commands/cb1/re0/grp0/draw5> fetch color0
 ```
 
-#### Examine Shader Bindings
+#### Examine shader bindings
 
 If the pipeline state and attachment look correct, the next suspect is the data the shaders received. Navigate into the `vertex` or `fragment` node to list the bound buffers and textures:
 
@@ -139,7 +140,7 @@ buf[2]  "LightPositions (2)"  @buf2 640 bytes  info, fetch
 (3 items)
 ```
 
-#### Browse Api Calls
+#### Browse API calls
 
 The `api_calls` subtree provides a flat, chronological list of every Metal API call with inline argument values:
 
@@ -158,7 +159,7 @@ api5           [MTLRenderCommandEncoder setRenderPipelineState:@rps4]           
 
 Draw, dispatch, and blit calls have bidirectional links. Use `go :d` from an API call to jump to its draw node, or `go :a` from a draw to find its API call.
 
-#### Device Selection and Sessions
+#### Device selection and sessions
 
 By default `gpudebug` replays on the local GPU. To target a remote device:
 
@@ -178,17 +179,18 @@ Sessions persist after you disconnect. Use the `exit` command to detach and `gpu
 
 ## See Also
 
-- [Capturing a Metal workload in Xcode](capturing-a-metal-workload-in-xcode.md)
+### Essentials
+- [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)
   Analyze your app’s performance by configuring your project to use the Metal debugger.
-- [Capturing a Metal workload programmatically](capturing-a-metal-workload-programmatically.md)
+- [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md)
   Analyze your app’s performance by invoking Metal’s frame capture.
-- [Replaying a GPU trace file](replaying-a-gpu-trace-file.md)
+- [Replaying a GPU trace file](./replaying-a-gpu-trace-file.md)
   Debug and profile your app’s performance using a GPU trace file in the Metal debugger.
-- [Investigating visual artifacts](investigating-visual-artifacts.md)
+- [Investigating visual artifacts](./investigating-visual-artifacts.md)
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
-- [Optimizing GPU performance](optimizing-gpu-performance.md)
+- [Optimizing GPU performance](./optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
-- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+- [Investigating GPU issues with AI agents](./investigating-gpu-issues-with-ai-agents.md)
   Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
 

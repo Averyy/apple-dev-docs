@@ -1,7 +1,8 @@
 # focusedFrameGuide
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout guide to use when the image view is focused.
 
@@ -14,17 +15,22 @@ The layout guide to use when the image view is focused.
 var focusedFrameGuide: UILayoutGuide { get }
 ```
 
+```objc
+@property (strong, readonly) UILayoutGuide * focusedFrameGuide;
+```
+
 #### Discussion
 
 The layout guide in this property represents the display frame of the image view when it’s focused. You can use this property to align other elements of your interface to the image view or to adjust the constraints of your interface.
 
-When the [`adjustsImageWhenAncestorFocused`](uiimageview/adjustsimagewhenancestorfocused.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), the image view automatically applies this layout guide when the image view becomes focused.
+When the [`adjustsImageWhenAncestorFocused`](./adjustsimagewhenancestorfocused.md) property is set to [`true`](../../Swift/true.md), the image view automatically applies this layout guide when the image view becomes focused.
 
 ## See Also
 
-- [var adjustsImageWhenAncestorFocused: Bool](uiimageview/adjustsimagewhenancestorfocused.md)
+### Managing focus-related behaviors
+- [var adjustsImageWhenAncestorFocused: Bool](./adjustsimagewhenancestorfocused.md)
   A Boolean value that determines whether the image view responds when an ancestor gains focus.
-- [var masksFocusEffectToContents: Bool](uiimageview/masksfocuseffecttocontents.md)
+- [var masksFocusEffectToContents: Bool](./masksfocuseffecttocontents.md)
   A Boolean value indicating whether the floating focused appearance uses the image’s alpha channel.
 
 

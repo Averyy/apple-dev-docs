@@ -1,7 +1,8 @@
 # tokenEndpointURL
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token endpoint URL for login requests.
 
@@ -14,19 +15,24 @@ The token endpoint URL for login requests.
 var tokenEndpointURL: URL { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSURL * tokenEndpointURL;
+```
+
 ## Mentions
 
-- [Interpreting Platform Single Sign-on authorization scopes](interpreting-platform-single-sign-on-authorization-scopes.md)
+- [Interpreting Platform Single Sign-on authorization scopes](../interpreting-platform-single-sign-on-authorization-scopes.md)
 
 ## See Also
 
-- [var audience: String](asauthorizationproviderextensionloginconfiguration/audience.md)
+### Obtaining the required configuration
+- [var audience: String](./audience.md)
   The audience for validation and requests.
-- [var clientID: String](asauthorizationproviderextensionloginconfiguration/clientid.md)
+- [var clientID: String](./clientid.md)
   The identifier for the client at the identity provider.
-- [var jwksEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md)
+- [var jwksEndpointURL: URL](./jwksendpointurl.md)
   The JSON Web Key Set endpoint URL for keys.
-- [var issuer: String](asauthorizationproviderextensionloginconfiguration/issuer.md)
+- [var issuer: String](./issuer.md)
   The issuer of the identity token that the identity provider returns.
 
 

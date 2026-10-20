@@ -6,30 +6,13 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-pytorch-work
 
 # PyTorch Conversion Workflow
 
-**
-
-- [.md](../_sources/source/convert-pytorch-workflow.md)
-- **
-
-.pdf
-
-**
-
-# PyTorch Conversion Workflow
-
- Table of contents 
-
-## Contents
-
-# PyTorch Conversion Workflow
-
 Minimum Deployment Target
 
 The Core ML Tools [Unified Conversion API](unified-conversion-api.md) produces Core ML models for iOS 13, macOS 10.15, watchOS 6, tvOS 13 or newer deployment targets. If your primary deployment target is iOS 12 or earlier, you can find limited conversion support for PyTorch models via the [onnx-coreml](https://github.com/onnx/onnx) package.
 
 To export a model from PyTorch to Core ML, there are 2 steps:
 
-1. Capture the PyTorch model graph from the original torch.nn.Module, via [torch.jit.trace](https://pytorch.org/docs/stable/generated/torch.jit.trace.md) or [torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export).
+1. Capture the PyTorch model graph from the original torch.nn.Module, via [torch.jit.trace](https://pytorch.org/docs/stable/generated/torch.jit.trace.html) or [torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export).
 2. Convert the PyTorch model graph to Core ML, via the Core ML Tools [Unified Conversion API](unified-conversion-api.md).
 
 The conversion from a graph captured via `torch.jit.trace` has been supported for many versions of Core ML Tools, hence it is the stable and the more performant path. For now, this is the recommended way for converting PyTorch models to Core ML.
@@ -62,7 +45,7 @@ To ensure that training time operations such as dropout, batch norm with moving 
 
 ### TorchScript
 
-[TorchScript](https://pytorch.org/docs/stable/jit.md) is an intermediate representation of a PyTorch model. To generate a TorchScript representation from PyTorch code, use PyTorch’s JIT tracer ([torch.jit.trace](https://pytorch.org/docs/stable/generated/torch.jit.trace.md)) to *trace* the model, as shown in the following example:
+[TorchScript](https://pytorch.org/docs/stable/jit.html) is an intermediate representation of a PyTorch model. To generate a TorchScript representation from PyTorch code, use PyTorch’s JIT tracer ([torch.jit.trace](https://pytorch.org/docs/stable/generated/torch.jit.trace.html)) to *trace* the model, as shown in the following example:
 
 ```
 # Trace the model with random data.
@@ -72,11 +55,11 @@ traced_model = torch.jit.trace(torch_model, example_input)
 
 The process of tracing takes an example input and traces its flow through the model. You can trace the model by creating an example image input, as shown in the above code using random data. To understand the reasons for tracing and how to trace a PyTorch model, see [Model Tracing](model-tracing.md).
 
-If your model uses a data-dependent control flow, such as a loop or conditional, the traced model won’t generalize to other inputs. In such cases you can use JIT script ([torch.jit.script](https://pytorch.org/docs/stable/generated/torch.jit.script.md)) to capture the graph accurately. Core ML Tools offers limited support for models that are obtained from `torch.jit.script` API, so it may or may not work for your model. See [Model Scripting](model-scripting.md) to learn more.
+If your model uses a data-dependent control flow, such as a loop or conditional, the traced model won’t generalize to other inputs. In such cases you can use JIT script ([torch.jit.script](https://pytorch.org/docs/stable/generated/torch.jit.script.html)) to capture the graph accurately. Core ML Tools offers limited support for models that are obtained from `torch.jit.script` API, so it may or may not work for your model. See [Model Scripting](model-scripting.md) to learn more.
 
 ### ExportedProgram
 
-[ExportedProgram](https://pytorch.org/docs/stable/export.md) is a new intermediate representation of a PyTorch model introduced in PyTorch 2. To generate an ExportedProgram representation from PyTorch code, use PyTorch’s exporter ([torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export)) to *export* the model, as shown in the following example:
+[ExportedProgram](https://pytorch.org/docs/stable/export.html) is a new intermediate representation of a PyTorch model introduced in PyTorch 2. To generate an ExportedProgram representation from PyTorch code, use PyTorch’s exporter ([torch.export.export](https://pytorch.org/docs/stable/export.html#torch.export.export)) to *export* the model, as shown in the following example:
 
 ```
 # Export the model with random data.
@@ -103,7 +86,7 @@ model_from_trace = ct.convert(
 model_from_export = ct.convert(exported_program)
 ```
 
-With the converted ML model in memory, you can save it as a [Core ML model package](convert-to-ml-program.html#save-ml-programs-as-model-packages):
+With the converted ML model in memory, you can save it as a [Core ML model package](convert-to-ml-program.md#save-ml-programs-as-model-packages):
 
 ```
 # Save the converted model.
@@ -113,15 +96,13 @@ model_from_export.save("newmodel_from_export.mlpackage")
 
 For More Information
 
-- To learn how TorchScript works, see the [Introduction to TorchScript](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.md).
-- To learn how ExportedProgram works, see the [torch.export tutorial](https://pytorch.org/tutorials/intermediate/torch_export_tutorial.md)
+- To learn how TorchScript works, see the [Introduction to TorchScript](https://pytorch.org/tutorials/beginner/Intro_to_TorchScript_tutorial.html).
+- To learn how ExportedProgram works, see the [torch.export tutorial](https://pytorch.org/tutorials/intermediate/torch_export_tutorial.html)
 - To learn how to get better performance and more convenience when using images, see [Image Input and Output](image-inputs.md).
-- For the details of how to preprocess image input for models in PyTorch’s  [torchvision](https://pytorch.org/vision/stable/index.md) library, see [Preprocessing for Torch](image-inputs.html#preprocessing-for-torch).
+- For the details of how to preprocess image input for models in PyTorch’s  [torchvision](https://pytorch.org/vision/stable/index.html) library, see [Preprocessing for Torch](image-inputs.md#preprocessing-for-torch).
 - For examples of converting PyTorch models, see the following:
 
 [Converting a torchvision Model from PyTorch](convert-a-torchvision-model-from-pytorch.md)
 [Converting a PyTorch Segmentation Model](convert-a-pytorch-segmentation-model.md)
 [Converting an Open Efficient Language Model](convert-openelm.md)
 - To learn how to debug and resolve numerical issues (such as NaNs, infinities, or inconsistent results) and performance problems, see [Debugging And Performance Utilities](mlmodel-debugging-perf-utilities.md).
-
-** Contents

@@ -1,7 +1,8 @@
 # addImageHandleHeader(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func addImageHandleHeader(_ type: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) addImageHandleHeader:(NSString *) type;
 ```
 
 

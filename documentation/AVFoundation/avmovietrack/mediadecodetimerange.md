@@ -1,7 +1,8 @@
 # mediaDecodeTimeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range of decode times for the track’s media.
 
@@ -19,13 +20,18 @@ A range of decode times for the track’s media.
 var mediaDecodeTimeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeRange mediaDecodeTimeRange;
+```
+
 ## See Also
 
-- [var alternateGroupID: Int](avmovietrack/alternategroupid.md)
+### Retrieving track information
+- [var alternateGroupID: Int](./alternategroupid.md)
   A value that identifies the track as a member of a particular alternate group.
-- [var mediaDataStorage: AVMediaDataStorage?](avmovietrack/mediadatastorage.md)
+- [var mediaDataStorage: AVMediaDataStorage?](./mediadatastorage.md)
   The storage container for media data added to a track.
-- [var mediaPresentationTimeRange: CMTimeRange](avmovietrack/mediapresentationtimerange.md)
+- [var mediaPresentationTimeRange: CMTimeRange](./mediapresentationtimerange.md)
   A range of presentation times for the track’s media.
 
 

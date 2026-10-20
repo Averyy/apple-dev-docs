@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this capture event interaction is in an enabled state.
 
@@ -16,13 +17,18 @@ A Boolean value that indicates whether this capture event interaction is in an e
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 Set this value to `false` when your app can’t or won’t respond to the action callbacks to avoid non-interactive buttons or UI elements.
 
 ## See Also
 
-- [class var defaultCaptureSoundDisabled: Bool](avcaptureeventinteraction/defaultcapturesounddisabled.md)
+### Inspecting the interaction
+- [class var defaultCaptureSoundDisabled: Bool](./defaultcapturesounddisabled.md)
   A Boolean value that indicates whether the default sound is in a disabled state.
 
 

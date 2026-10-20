@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOAudioStreamNumericRepresentationIEEE754Float](1646402-anonymous/kioaudiostreamnumericrepresentationieee754float.md)
-- [kIOAudioStreamNumericRepresentationSignedInt](1646402-anonymous/kioaudiostreamnumericrepresentationsignedint.md)
-- [kIOAudioStreamNumericRepresentationUnsignedInt](1646402-anonymous/kioaudiostreamnumericrepresentationunsignedint.md)
+- [kIOAudioStreamNumericRepresentationIEEE754Float](./api-1646402-anonymous/kioaudiostreamnumericrepresentationieee754float.md)
+- [kIOAudioStreamNumericRepresentationSignedInt](./api-1646402-anonymous/kioaudiostreamnumericrepresentationsignedint.md)
+- [kIOAudioStreamNumericRepresentationUnsignedInt](./api-1646402-anonymous/kioaudiostreamnumericrepresentationunsignedint.md)
 
 
 ---

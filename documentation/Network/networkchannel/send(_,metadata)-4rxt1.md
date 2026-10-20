@@ -1,7 +1,8 @@
 # send(_:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data on a connection.
 
@@ -19,6 +20,8 @@ Send data on a connection.
 ```swift
 func send<Sending, Receiving, CoderType>(_ content: Sending, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws where ApplicationProtocol == Coder<Sending, Receiving, CoderType>, Sending : Encodable, Receiving : Decodable, CoderType : NetworkCoder
 ```
+
+Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
 #### Discussion
 

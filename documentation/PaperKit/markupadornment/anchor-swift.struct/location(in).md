@@ -1,7 +1,8 @@
 # location(in:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position of this anchor within the specified markup’s coordinate system.
 

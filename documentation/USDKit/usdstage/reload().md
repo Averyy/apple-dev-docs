@@ -1,7 +1,8 @@
 # reload()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the stage’s layers from their sources, discarding any unsaved changes.
 
@@ -21,9 +22,10 @@ func reload() throws
 
 ## See Also
 
-- [func save() throws](usdstage/save.md)
+### Saving and reloading
+- [func save() throws](./save%28%29.md)
   Saves the stage’s changed layers to their sources.
-- [func saveSessionLayers() throws](usdstage/savesessionlayers.md)
+- [func saveSessionLayers() throws](./savesessionlayers%28%29.md)
   Saves the stage’s changed session layers to their sources.
 
 

@@ -1,17 +1,24 @@
 # resourceURL(name:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL for the given resource.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 optional func resourceURL(name resourceName: String) -> URL?
+```
+
+```objc
+- (NSURL *) URLForResource:(NSString *) resourceName;
 ```
 
 #### Return Value
@@ -28,7 +35,8 @@ The `resourceName` parameter comes from a resource URL specified in certain elem
 
 ## See Also
 
-- [func resourceImage(name: String) -> UIImage?](tvinterfacecreating/resourceimage(name:).md)
+### Retrieving Resource Information
+- [func resourceImage(name: String) -> UIImage?](./resourceimage%28name%29.md)
   Returns the image for the given resource
 
 

@@ -1,7 +1,8 @@
 # AppInfo.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,33 +11,33 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppInfo.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppInfo.Relationships.App](appinfo/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppInfo.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.AppInfoLocalizations](appinfo/relationships-data.dictionary/appinfolocalizations-data.dictionary.md)
+- [object AppInfo.Relationships.AppInfoLocalizations](./relationships-data.dictionary/appinfolocalizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.PrimaryCategory](appinfo/relationships-data.dictionary/primarycategory-data.dictionary.md)
+- [object AppInfo.Relationships.PrimaryCategory](./relationships-data.dictionary/primarycategory-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.PrimarySubcategoryOne](appinfo/relationships-data.dictionary/primarysubcategoryone-data.dictionary.md)
+- [object AppInfo.Relationships.PrimarySubcategoryOne](./relationships-data.dictionary/primarysubcategoryone-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.PrimarySubcategoryTwo](appinfo/relationships-data.dictionary/primarysubcategorytwo-data.dictionary.md)
+- [object AppInfo.Relationships.PrimarySubcategoryTwo](./relationships-data.dictionary/primarysubcategorytwo-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.SecondaryCategory](appinfo/relationships-data.dictionary/secondarycategory-data.dictionary.md)
+- [object AppInfo.Relationships.SecondaryCategory](./relationships-data.dictionary/secondarycategory-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.SecondarySubcategoryOne](appinfo/relationships-data.dictionary/secondarysubcategoryone-data.dictionary.md)
+- [object AppInfo.Relationships.SecondarySubcategoryOne](./relationships-data.dictionary/secondarysubcategoryone-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.SecondarySubcategoryTwo](appinfo/relationships-data.dictionary/secondarysubcategorytwo-data.dictionary.md)
+- [object AppInfo.Relationships.SecondarySubcategoryTwo](./relationships-data.dictionary/secondarysubcategorytwo-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppInfo.Relationships.AgeRatingDeclaration](appinfo/relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)
+- [object AppInfo.Relationships.AgeRatingDeclaration](./relationships-data.dictionary/ageratingdeclaration-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
-- [object AppInfo.Relationships.TerritoryAgeRatings](appinfo/relationships-data.dictionary/territoryageratings-data.dictionary.md)
+- [object AppInfo.Relationships.TerritoryAgeRatings](./relationships-data.dictionary/territoryageratings-data.dictionary.md)
   The territory-specific age rating relationships for an app info record, linking to age ratings in individual App Store regions.
 
 ## Properties
@@ -54,9 +55,11 @@ object AppInfo.Relationships
 
 ## See Also
 
-- [object AppInfo.Attributes](appinfo/attributes-data.dictionary.md)
+### Related Documentation
+- [object AppInfo.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Infos resource.
-- [object AppInfo.Attributes](appinfo/attributes-data.dictionary.md)
+### Objects
+- [object AppInfo.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Infos resource.
 
 

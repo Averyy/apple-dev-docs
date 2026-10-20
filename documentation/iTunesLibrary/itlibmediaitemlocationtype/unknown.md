@@ -1,7 +1,8 @@
 # ITLibMediaItemLocationType.unknown
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media item location type is unknown.
 
@@ -15,13 +16,18 @@ The media item location type is unknown.
 case unknown
 ```
 
+```c
+ITLibMediaItemLocationTypeUnknown
+```
+
 ## See Also
 
-- [ITLibMediaItemLocationType.file](itlibmediaitemlocationtype/file.md)
+### Media Item Location Types
+- [ITLibMediaItemLocationType.file](./file.md)
   The media item location refers to a local file.
-- [ITLibMediaItemLocationType.URL](itlibmediaitemlocationtype/url.md)
+- [ITLibMediaItemLocationType.URL](./url.md)
   The media item location refers to a URL, such as a podcast.
-- [ITLibMediaItemLocationType.remote](itlibmediaitemlocationtype/remote.md)
+- [ITLibMediaItemLocationType.remote](./remote.md)
   The media item location refers to a remote file.
 
 

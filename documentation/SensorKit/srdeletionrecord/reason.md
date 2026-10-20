@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason the framework deletes samples.
 
@@ -16,9 +17,14 @@ The reason the framework deletes samples.
 var reason: SRDeletionReason { get }
 ```
 
+```objc
+@property (readonly) SRDeletionReason reason;
+```
+
 ## See Also
 
-- [enum SRDeletionReason](srdeletionreason.md)
+### Accessing the Deletion Reason
+- [enum SRDeletionReason](../srdeletionreason.md)
   Reasons that the framework deletes samples.
 
 

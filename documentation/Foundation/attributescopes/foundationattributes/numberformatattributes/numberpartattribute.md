@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -22,17 +23,17 @@ enum NumberPartAttribute
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute.NumberPart](attributescopes/foundationattributes/numberformatattributes/numberpartattribute/numberpart.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.NumberPartAttribute.NumberPart](./numberpartattribute/numberpart.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../../attributedstringkey.md)
+- [BitwiseCopyable](../../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

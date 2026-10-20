@@ -1,12 +1,13 @@
 # thickness
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thickness of the status bar, in pixels.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The thickness of the status bar, in pixels.
 var thickness: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat thickness;
+```
+
 #### Discussion
 
-The default value of this property is `20.0`. The status bar returned by the [`system`](nsstatusbar/system.md) has a thickness of 22 pixels, which corresponds to the thickness of the menu bar.
+The default value of this property is `20.0`. The status bar returned by the [`system`](./system.md) has a thickness of 22 pixels, which corresponds to the thickness of the menu bar.
 
 ## See Also
 
-- [var isVertical: Bool](nsstatusbar/isvertical.md)
+### Getting Status-Bar Attributes
+- [var isVertical: Bool](./isvertical.md)
   A Boolean value indicating whether the status bar has a vertical orientation.
 
 

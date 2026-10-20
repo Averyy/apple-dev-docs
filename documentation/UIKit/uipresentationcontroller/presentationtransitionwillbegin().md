@@ -1,7 +1,8 @@
 # presentationTransitionWillBegin()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the presentation controller that the presentation animations are about to start.
 
@@ -9,7 +10,7 @@ Notifies the presentation controller that the presentation animations are about 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ Notifies the presentation controller that the presentation animations are about 
 func presentationTransitionWillBegin()
 ```
 
+```objc
+- (void) presentationTransitionWillBegin;
+```
+
 #### Discussion
 
-The default implementation of this method does nothing. Subclasses can override it and use it to add custom views to the view hierarchy and to create any animations associated with those views. To perform your animations, get the transition coordinator of the presented view controller and call its [`animate(alongsideTransition:completion:)`](uiviewcontrollertransitioncoordinator/animate(alongsidetransition:completion:).md) or [`animateAlongsideTransition(in:animation:completion:)`](uiviewcontrollertransitioncoordinator/animatealongsidetransition(in:animation:completion:).md) method. Calling those methods ensures that your animations are executed at the same time as any other transition animations.
+The default implementation of this method does nothing. Subclasses can override it and use it to add custom views to the view hierarchy and to create any animations associated with those views. To perform your animations, get the transition coordinator of the presented view controller and call its [`animate(alongsideTransition:completion:)`](../uiviewcontrollertransitioncoordinator/animate%28alongsidetransition,completion%29.md) or [`animateAlongsideTransition(in:animation:completion:)`](../uiviewcontrollertransitioncoordinator/animatealongsidetransition%28in,animation,completion%29.md) method. Calling those methods ensures that your animations are executed at the same time as any other transition animations.
 
-For an example of how to implement this method, see [`Add custom views to a presentation`](uipresentationcontroller#Add-custom-views-to-a-presentation.md).
+For an example of how to implement this method, see [Add custom views to a presentation](../uipresentationcontroller.md#Add-custom-views-to-a-presentation).
 
 ## See Also
 
-- [func presentationTransitionDidEnd(Bool)](uipresentationcontroller/presentationtransitiondidend(_:).md)
+### Tracking the transition’s start and end
+- [func presentationTransitionDidEnd(Bool)](./presentationtransitiondidend%28_%29.md)
   Notifies the presentation controller that the presentation animations finished.
-- [func dismissalTransitionWillBegin()](uipresentationcontroller/dismissaltransitionwillbegin.md)
+- [func dismissalTransitionWillBegin()](./dismissaltransitionwillbegin%28%29.md)
   Notifies the presentation controller that the dismissal animations are about to start.
-- [func dismissalTransitionDidEnd(Bool)](uipresentationcontroller/dismissaltransitiondidend(_:).md)
+- [func dismissalTransitionDidEnd(Bool)](./dismissaltransitiondidend%28_%29.md)
   Notifies the presentation controller that the dismissal animations finished.
 
 

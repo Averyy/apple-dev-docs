@@ -1,7 +1,8 @@
 # MKAnnotationCalloutInfoDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property to observe to determine when the title or subtitle information of an annotation object changes.
 
@@ -12,6 +13,8 @@ A property to observe to determine when the title or subtitle information of an 
 - macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
+
+> **Deprecated**: Use KVO notifications instead.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.invalidBackgroundPersistence
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the extension specified background persistence that was not compatible with the platform or features requested.
 
@@ -16,6 +17,10 @@ Indicates that the extension specified background persistence that was not compa
 
 ```swift
 case invalidBackgroundPersistence
+```
+
+```c
+WKWebExtensionErrorInvalidBackgroundPersistence
 ```
 
 

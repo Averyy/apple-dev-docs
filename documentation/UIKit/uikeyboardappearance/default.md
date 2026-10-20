@@ -1,16 +1,17 @@
 # UIKeyboardAppearance.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the default keyboard appearance for the current input method.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ Specifies the default keyboard appearance for the current input method.
 case `default`
 ```
 
+```c
+UIKeyboardAppearanceDefault
+```
+
 #### Discussion
 
-This constant corresponds to the [`UIKeyboardAppearance.light`](uikeyboardappearance/light.md) value.
+This constant corresponds to the [`UIKeyboardAppearance.light`](./light.md) value.
 
 ## See Also
 
-- [UIKeyboardAppearance.dark](uikeyboardappearance/dark.md)
+### Constants
+- [UIKeyboardAppearance.dark](./dark.md)
   Specifies a keyboard appearance suitable for a dark UI look.
-- [UIKeyboardAppearance.light](uikeyboardappearance/light.md)
+- [UIKeyboardAppearance.light](./light.md)
   Specifies a keyboard appearance suitable for a light UI look.
-- [static var alert: UIKeyboardAppearance](uikeyboardappearance/alert.md)
+- [static var alert: UIKeyboardAppearance](./alert.md)
   Specifies a keyboard appearance suitable for an alert panel.
 
 

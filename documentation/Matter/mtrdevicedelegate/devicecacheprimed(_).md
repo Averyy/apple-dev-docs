@@ -1,7 +1,8 @@
 # deviceCachePrimed(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func deviceCachePrimed(_ device: MTRDevice)
+```
+
+```objc
+- (void) deviceCachePrimed:(MTRDevice *) device;
 ```
 
 

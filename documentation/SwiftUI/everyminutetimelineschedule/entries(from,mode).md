@@ -1,7 +1,8 @@
 # entries(from:mode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a sequence of per-minute dates starting from a given date.
 
@@ -26,7 +27,7 @@ A sequence of per-minute dates in ascending order.
 
 #### Discussion
 
-A [`TimelineView`](timelineview.md) that you create with an every minute schedule calls this method to ask the schedule when to update its content. The method returns a sequence of per-minute dates in increasing order, from earliest to latest, that represents when the timeline view updates.
+A [`TimelineView`](../timelineview.md) that you create with an every minute schedule calls this method to ask the schedule when to update its content. The method returns a sequence of per-minute dates in increasing order, from earliest to latest, that represents when the timeline view updates.
 
 For a `startDate` that’s exactly minute-aligned, the schedule’s sequence of dates starts at that time. Otherwise, it starts at the beginning of the specified minute. For example, for start dates of both `10:09:32` and `10:09:00`, the first entry in the sequence is `10:09:00`.
 
@@ -37,7 +38,8 @@ For a `startDate` that’s exactly minute-aligned, the schedule’s sequence of 
 
 ## See Also
 
-- [EveryMinuteTimelineSchedule.Entries](everyminutetimelineschedule/entries.md)
+### Getting the sequence of dates
+- [EveryMinuteTimelineSchedule.Entries](./entries.md)
   The sequence of dates in an every minute schedule.
 
 

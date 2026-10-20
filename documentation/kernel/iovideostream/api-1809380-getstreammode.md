@@ -7,27 +7,28 @@ Returns the mode of the stream, either input or output.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOStreamMode getStreamMode(
  void);
 ```
 
-#### Return_value
+#### Return Value
 
 The mode of the stream, either kIOStreamModeInput (from user space to kernel space) or the default kIOStreamModeOutput (from kernel space to user space).
 
 ## See Also
 
-- [initWithBuffers](iovideostream/1809391-initwithbuffers.md)
-- [setStreamMode](iovideostream/1809395-setstreammode.md)
+### Miscellaneous
+- [initWithBuffers](./api-1809391-initwithbuffers.md)
+- [setStreamMode](./api-1809395-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [startStream](iovideostream/1809402-startstream.md)
+- [startStream](./api-1809402-startstream.md)
   Start sending data on a stream.
-- [stopStream](iovideostream/1809407-stopstream.md)
+- [stopStream](./api-1809407-stopstream.md)
   Stop sending data on a stream.
-- [suspendStream](iovideostream/1809411-suspendstream.md)
+- [suspendStream](./api-1809411-suspendstream.md)
   Temporarily suspend data flow on the stream.
-- [withBuffers](iovideostream/1809420-withbuffers.md)
+- [withBuffers](./api-1809420-withbuffers.md)
 
 
 ---

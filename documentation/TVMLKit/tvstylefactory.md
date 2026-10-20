@@ -1,12 +1,15 @@
 # TVStyleFactory
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object used to register custom style properties.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,31 +17,36 @@ An object used to register custom style properties.
 class TVStyleFactory
 ```
 
+```objc
+@interface TVStyleFactory : NSObject
+```
+
 ## Topics
 
 ### Creating New Style Properties
-- [class func registerStyleName(String, type: TVViewElementStyleType, inherited: Bool)](tvstylefactory/registerstylename(_:type:inherited:).md)
+- [class func registerStyleName(String, type: TVViewElementStyleType, inherited: Bool)](./tvstylefactory/registerstylename%28_,type,inherited%29.md)
   Creates a new style property of the indicated type.
-- [enum TVViewElementStyleType](tvviewelementstyletype.md)
+- [enum TVViewElementStyleType](./tvviewelementstyletype.md)
   Describes the different style types for an element.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TVViewElementStyle](tvviewelementstyle.md)
+### Custom Styles
+- [class TVViewElementStyle](./tvviewelementstyle.md)
   A style applied to a view element.
-- [class TVColor](tvcolor.md)
+- [class TVColor](./tvcolor.md)
   The color data used by styles.
 
 

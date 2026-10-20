@@ -1,6 +1,7 @@
 # Grouping Related Objective-C Constants
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Add macros to your Objective-C types to group their values in Swift.
 
@@ -46,7 +47,7 @@ The `NS_ENUM` macro is the only enumeration macro that results in an actual enum
 
 ##### Declare Closed Enumerations
 
-Use the `NS_CLOSED_ENUM` macro for a simple group of constants that you can never add new cases to. Closed enumerations are useful for representing a finite set of states that you expect people to switch over using a switch statement. The three cases of [`ComparisonResult`](https://developer.apple.com/documentation/foundation/comparisonresult)—[`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending), [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedsame), and [`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending)—are an example of a finite set. They’re the only logical cases for performing an ordered comparison during tasks like sorting.
+Use the `NS_CLOSED_ENUM` macro for a simple group of constants that you can never add new cases to. Closed enumerations are useful for representing a finite set of states that you expect people to switch over using a switch statement. The three cases of [`ComparisonResult`](../Foundation/comparisonresult.md)—[`ComparisonResult.orderedAscending`](../Foundation/comparisonresult/orderedascending.md), [`ComparisonResult.orderedSame`](../Foundation/comparisonresult/orderedsame.md), and [`ComparisonResult.orderedDescending`](../Foundation/comparisonresult/ordereddescending.md)—are an example of a finite set. They’re the only logical cases for performing an ordered comparison during tasks like sorting.
 
 Don’t use the `NS_CLOSED_ENUM` macro if:
 
@@ -58,7 +59,7 @@ In these scenarios, use the `NS_ENUM` macro instead.
 
 ##### Declare Option Sets
 
-You use the `NS_OPTIONS` macro when two or more constants in a grouping of constants can be combined. For example, the output formatting for a [`JSONEncoder`](https://developer.apple.com/documentation/foundation/jsonencoder) instance can be sorted and can use ample white space at the same time, so it’s valid to specify both options in an option set: `[.sorted, .prettyPrinted]`.
+You use the `NS_OPTIONS` macro when two or more constants in a grouping of constants can be combined. For example, the output formatting for a [`JSONEncoder`](../Foundation/jsonencoder.md) instance can be sorted and can use ample white space at the same time, so it’s valid to specify both options in an option set: `[.sorted, .prettyPrinted]`.
 
 The example below shows how to apply the `NS_OPTIONS` macro and assign raw values that are mutually exclusive:
 
@@ -164,15 +165,16 @@ extension FavoriteColor {
 
 ## See Also
 
-- [Designating Nullability in Objective-C APIs](designating-nullability-in-objective-c-apis.md)
+### Customizing Objective-C APIs
+- [Designating Nullability in Objective-C APIs](./designating-nullability-in-objective-c-apis.md)
   Use nullability annotations or mark regions as annotated to control how Objective-C declarations are imported into Swift.
-- [Renaming Objective-C APIs for Swift](renaming-objective-c-apis-for-swift.md)
+- [Renaming Objective-C APIs for Swift](./renaming-objective-c-apis-for-swift.md)
   Use the `NS_SWIFT_NAME` macro to customize API names for Swift.
-- [Improving Objective-C API Declarations for Swift](improving-objective-c-api-declarations-for-swift.md)
+- [Improving Objective-C API Declarations for Swift](./improving-objective-c-api-declarations-for-swift.md)
   Use the `NS_REFINED_FOR_SWIFT` macro to change how an API is imported into Swift.
-- [Marking API Availability in Objective-C](marking-api-availability-in-objective-c.md)
+- [Marking API Availability in Objective-C](./marking-api-availability-in-objective-c.md)
   Use a macro to denote the availability of an Objective-C API.
-- [Making Objective-C APIs Unavailable in Swift](making-objective-c-apis-unavailable-in-swift.md)
+- [Making Objective-C APIs Unavailable in Swift](./making-objective-c-apis-unavailable-in-swift.md)
   Use the `NS_SWIFT_UNAVAILABLE` macro to prevent an API from being used in Swift.
 
 

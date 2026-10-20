@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct load_command {
     ...
 };
@@ -17,8 +17,8 @@ struct load_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](load_command/1525916-cmd.md)
-- [cmdsize](load_command/1525566-cmdsize.md)
+- [cmd](./load_command/api-1525916-cmd.md)
+- [cmdsize](./load_command/api-1525566-cmdsize.md)
 
 
 ---

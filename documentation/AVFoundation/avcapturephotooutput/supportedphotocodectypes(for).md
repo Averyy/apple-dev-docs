@@ -1,7 +1,8 @@
 # supportedPhotoCodecTypes(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the list of photo codecs (such as JPEG or HEVC) supported for photo data in the specified file type.
 
@@ -18,6 +19,10 @@ Returns the list of photo codecs (such as JPEG or HEVC) supported for photo data
 func supportedPhotoCodecTypes(for fileType: AVFileType) -> [AVVideoCodecType]
 ```
 
+```objc
+- (NSArray<NSString *> *) supportedPhotoCodecTypesForFileType:(AVFileType) fileType;
+```
+
 #### Return Value
 
 An array of video codec types supported for encoding in the specified file type.
@@ -26,7 +31,7 @@ An array of video codec types supported for encoding in the specified file type.
 
 When you issue a photo capture request, you can separately specify the format for capturing or encoding image data and the container format for producing output files containing that data. However, each file type supports only a specific set of image data types.
 
-After choosing a file type from the [`availablePhotoFileTypes`](avcapturephotooutput/availablephotofiletypes.md) array, use this method to find a compatible image data codec before creating a photo settings object.
+After choosing a file type from the [`availablePhotoFileTypes`](./availablephotofiletypes.md) array, use this method to find a compatible image data codec before creating a photo settings object.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ After choosing a file type from the [`availablePhotoFileTypes`](avcapturephotoou
 
 ## See Also
 
-- [var availablePhotoCodecTypes: [AVVideoCodecType]](avcapturephotooutput/availablephotocodectypes.md)
+### Determining supported codec types
+- [var availablePhotoCodecTypes: [AVVideoCodecType]](./availablephotocodectypes.md)
   The compression codecs this capture output currently supports for photo capture.
 
 

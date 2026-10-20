@@ -1,6 +1,7 @@
 # animation
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A prim that contains a transform animation.
 
@@ -16,9 +17,10 @@ rel xformTarget
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
 
 

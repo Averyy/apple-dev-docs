@@ -1,7 +1,8 @@
 # CNEntityType.contacts
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user’s contacts.
 
@@ -19,9 +20,13 @@ The user’s contacts.
 case contacts
 ```
 
+```c
+CNEntityTypeContacts
+```
+
 ## Mentions
 
-- [Accessing the contact store](accessing-the-contact-store.md)
+- [Accessing the contact store](../accessing-the-contact-store.md)
 
 
 ---

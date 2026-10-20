@@ -1,7 +1,8 @@
 # functionNotFound
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Metal couldn’t find the specified Metal function.
 
@@ -21,15 +22,16 @@ static var functionNotFound: MTLLibraryError.Code { get }
 
 ## See Also
 
-- [static var unsupported: MTLLibraryError.Code](mtllibraryerror-swift.struct/unsupported.md)
+### Errors
+- [static var unsupported: MTLLibraryError.Code](./unsupported.md)
   Metal couldn’t support the requested action.
-- [static var `internal`: MTLLibraryError.Code](mtllibraryerror-swift.struct/internal.md)
+- [static var `internal`: MTLLibraryError.Code](./internal.md)
   The action caused an internal error.
-- [static var compileFailure: MTLLibraryError.Code](mtllibraryerror-swift.struct/compilefailure.md)
+- [static var compileFailure: MTLLibraryError.Code](./compilefailure.md)
   The library or function failed to compile.
-- [static var compileWarning: MTLLibraryError.Code](mtllibraryerror-swift.struct/compilewarning.md)
+- [static var compileWarning: MTLLibraryError.Code](./compilewarning.md)
   The library or function compiled successfully but generated warnings.
-- [static var fileNotFound: MTLLibraryError.Code](mtllibraryerror-swift.struct/filenotfound.md)
+- [static var fileNotFound: MTLLibraryError.Code](./filenotfound.md)
   Metal couldn’t find the Metal source file.
 
 

@@ -1,7 +1,8 @@
 # UIProposedSceneSizeNoPreference
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Used as the value for a dimension of a size related preference when wanting to leave it unchanged.
 
@@ -14,21 +15,26 @@ Used as the value for a dimension of a size related preference when wanting to l
 let UIProposedSceneSizeNoPreference: CGFloat
 ```
 
+```c
+extern const CGFloat UIProposedSceneSizeNoPreference;
+```
+
 ## See Also
 
-- [var effectiveGeometry: UIWindowScene.Geometry](uiwindowscene/effectivegeometry.md)
+### Working with window geometry
+- [var effectiveGeometry: UIWindowScene.Geometry](./uiwindowscene/effectivegeometry.md)
   The current values for the window scene’s geometry in system space.
-- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](uiwindowscene/requestgeometryupdate(_:errorhandler:).md)
+- [func requestGeometryUpdate(UIWindowScene.GeometryPreferences, errorHandler: ((any Error) -> Void)?)](./uiwindowscene/requestgeometryupdate%28_,errorhandler%29.md)
   Requests an update to the window scene’s geometry using the specified geometry preferences object.
-- [UIWindowScene.Geometry](uiwindowscene/geometry.md)
+- [UIWindowScene.Geometry](./uiwindowscene/geometry.md)
   An object that provides geometry information about the window scene.
-- [UIWindowScene.GeometryPreferences](uiwindowscene/geometrypreferences.md)
+- [UIWindowScene.GeometryPreferences](./uiwindowscene/geometrypreferences.md)
   An abstract superclass for representing window scene geometry preferences.
-- [UIWindowScene.GeometryPreferences.iOS](uiwindowscene/geometrypreferences/ios.md)
+- [UIWindowScene.GeometryPreferences.iOS](./uiwindowscene/geometrypreferences/ios.md)
   An object that represents the geometry preferences for a window scene in an iOS app.
-- [UIWindowScene.GeometryPreferences.Mac](uiwindowscene/geometrypreferences/mac.md)
+- [UIWindowScene.GeometryPreferences.Mac](./uiwindowscene/geometrypreferences/mac.md)
   An object that represents the geometry preferences for a window scene in an app built with Mac Catalyst.
-- [UIWindowScene.GeometryPreferences.Vision](uiwindowscene/geometrypreferences/vision.md)
+- [UIWindowScene.GeometryPreferences.Vision](./uiwindowscene/geometrypreferences/vision.md)
 
 
 ---

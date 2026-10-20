@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOPhysicalLength maxSegmentSize;
 ```
 
@@ -15,9 +15,10 @@ Maximum size of one segment in a scatter/gather list
 
 ## See Also
 
-- [outSeg](iomemorycursor/outseg.md)
-- [maxTransferSize](iomemorycursor/maxtransfersize.md)
-- [alignMask](iomemorycursor/alignmask.md)
+### Instance Variables
+- [outSeg](./outseg.md)
+- [maxTransferSize](./maxtransfersize.md)
+- [alignMask](./alignmask.md)
 
 
 ---

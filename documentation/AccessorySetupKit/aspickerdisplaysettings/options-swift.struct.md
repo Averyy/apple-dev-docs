@@ -1,7 +1,8 @@
 # ASPickerDisplaySettings.Options
 
 **Framework**: AccessorySetupKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options offered by the accessory picker.
 
@@ -15,29 +16,34 @@ Options offered by the accessory picker.
 struct Options
 ```
 
+```c
+enum ASPickerDisplaySettingsOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Working with filter options
-- [static var filterDiscoveryResults: ASPickerDisplaySettings.Options](aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md)
+- [static var filterDiscoveryResults: ASPickerDisplaySettings.Options](./options-swift.struct/filterdiscoveryresults.md)
   An option to pass discovered accessories to the app for more custom filtering, before they’re displayed in the picker for selection.
 ### Initializers
-- [init(rawValue: UInt)](aspickerdisplaysettings/options-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var options: ASPickerDisplaySettings.Options](aspickerdisplaysettings/options-swift.property.md)
+### Customizing picker options
+- [var options: ASPickerDisplaySettings.Options](./options-swift.property.md)
   Custom options for the picker.
 
 

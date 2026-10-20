@@ -1,12 +1,13 @@
 # NSPrintOperation
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls operations that generate Encapsulated PostScript (EPS) code, Portable Document Format (PDF) code, or print jobs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,113 +16,118 @@ An object that controls operations that generate Encapsulated PostScript (EPS) c
 class NSPrintOperation
 ```
 
+```objc
+@interface NSPrintOperation : NSObject
+```
+
 #### Overview
 
-An [`NSPrintOperation`](nsprintoperation.md) object works in conjunction with two other objects: an [`NSPrintInfo`](nsprintinfo.md) object, which specifies how the code should be generated, and an [`NSView`](nsview.md) object, which generates the actual code.
+An [`NSPrintOperation`](./nsprintoperation.md) object works in conjunction with two other objects: an [`NSPrintInfo`](./nsprintinfo.md) object, which specifies how the code should be generated, and an [`NSView`](./nsview.md) object, which generates the actual code.
 
-It is important to note that the majority of methods in [`NSPrintOperation`](nsprintoperation.md) copy the instance of [`NSPrintInfo`](nsprintinfo.md) passed into them. Future changes to that print info are not reflected in the print info retained by the current [`NSPrintOperation`](nsprintoperation.md) object. All changes should be made to the print info before passing to the methods of this class. The only method in [`NSPrintOperation`](nsprintoperation.md) which does not copy the [`NSPrintInfo`](nsprintinfo.md) instance is [`printInfo`](nsprintoperation/printinfo.md).
+It is important to note that the majority of methods in [`NSPrintOperation`](./nsprintoperation.md) copy the instance of [`NSPrintInfo`](./nsprintinfo.md) passed into them. Future changes to that print info are not reflected in the print info retained by the current [`NSPrintOperation`](./nsprintoperation.md) object. All changes should be made to the print info before passing to the methods of this class. The only method in [`NSPrintOperation`](./nsprintoperation.md) which does not copy the [`NSPrintInfo`](./nsprintinfo.md) instance is [`printInfo`](./nsprintoperation/printinfo.md).
 
-> **Note**:  You should not subclass [`NSPrintOperation`](nsprintoperation.md). Methods that return a print operation object return an instance of a concrete subclass whose implementation is private.
+> **Note**:  You should not subclass [`NSPrintOperation`](./nsprintoperation.md). Methods that return a print operation object return an instance of a concrete subclass whose implementation is private.
 
 ## Topics
 
 ### Creating the Printing Operation Object
-- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData?) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData?) -> NSPrintOperation](./nsprintoperation/epsoperation%28with,inside,to%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view.
-- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:printinfo:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./nsprintoperation/epsoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view using the specified print settings.
-- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:topath:printinfo:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./nsprintoperation/epsoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view and write the resulting data to the specified file.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](./nsprintoperation/pdfoperation%28with,inside,to%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./nsprintoperation/pdfoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view using the specified print settings.
-- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:topath:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./nsprintoperation/pdfoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view and write the resulting data to the specified file.
-- [init(view: NSView)](nsprintoperation/init(view:).md)
+- [init(view: NSView)](./nsprintoperation/init%28view%29.md)
   Creates and returns an print operation object ready to control the printing of the specified view.
-- [init(view: NSView, printInfo: NSPrintInfo)](nsprintoperation/init(view:printinfo:).md)
+- [init(view: NSView, printInfo: NSPrintInfo)](./nsprintoperation/init%28view,printinfo%29.md)
   Creates and returns an print operation object ready to control the printing of the specified view using custom print settings.
 ### Setting the Current Print Operation for This Thread
-- [class var current: NSPrintOperation?](nsprintoperation/current.md)
+- [class var current: NSPrintOperation?](./nsprintoperation/current.md)
   The current print operation for this thread.
 ### Determining the Type of Operation
-- [var isCopyingOperation: Bool](nsprintoperation/iscopyingoperation.md)
+- [var isCopyingOperation: Bool](./nsprintoperation/iscopyingoperation.md)
   A Boolean value that indicates whether the print operation is an EPS or PDF copy operation.
 ### Modifying the Printing Information
-- [var printInfo: NSPrintInfo](nsprintoperation/printinfo.md)
+- [var printInfo: NSPrintInfo](./nsprintoperation/printinfo.md)
   The printing information associated with the print operation.
-- [class NSPrintInfo](nsprintinfo.md)
+- [class NSPrintInfo](./nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 ### Getting the View
-- [var view: NSView?](nsprintoperation/view.md)
+- [var view: NSView?](./nsprintoperation/view.md)
   The view object that generates the actual data for the print operation.
 ### Getting the Printing Quality
-- [var preferredRenderingQuality: NSPrintOperation.RenderingQuality](nsprintoperation/preferredrenderingquality.md)
+- [var preferredRenderingQuality: NSPrintOperation.RenderingQuality](./nsprintoperation/preferredrenderingquality.md)
   The printing quality.
-- [NSPrintOperation.RenderingQuality](nsprintoperation/renderingquality.md)
+- [NSPrintOperation.RenderingQuality](./nsprintoperation/renderingquality.md)
   Constants that specify the print quality in use.
 ### Running the Print Operation
-- [func run() -> Bool](nsprintoperation/run.md)
+- [func run() -> Bool](./nsprintoperation/run%28%29.md)
   Runs the print operation on the current thread.
-- [func runModal(for: NSWindow, delegate: Any?, didRun: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsprintoperation/runmodal(for:delegate:didrun:contextinfo:).md)
+- [func runModal(for: NSWindow, delegate: Any?, didRun: Selector?, contextInfo: UnsafeMutableRawPointer?)](./nsprintoperation/runmodal%28for,delegate,didrun,contextinfo%29.md)
   Runs the print operation, calling your custom delegate method upon completion.
-- [func cleanUp()](nsprintoperation/cleanup.md)
+- [func cleanUp()](./nsprintoperation/cleanup%28%29.md)
   Called at the end of a print operation to remove the print operation as the current operation.
-- [func deliverResult() -> Bool](nsprintoperation/deliverresult.md)
+- [func deliverResult() -> Bool](./nsprintoperation/deliverresult%28%29.md)
   Delivers the results of the print operation to the intended destination.
 ### Modifying the User Interface
-- [var showsPrintPanel: Bool](nsprintoperation/showsprintpanel.md)
+- [var showsPrintPanel: Bool](./nsprintoperation/showsprintpanel.md)
   A Boolean value that determines whether the print operation displays a print panel.
-- [var showsProgressPanel: Bool](nsprintoperation/showsprogresspanel.md)
+- [var showsProgressPanel: Bool](./nsprintoperation/showsprogresspanel.md)
   A Boolean value that determines whether the print operation displays a progress panel.
-- [var jobTitle: String?](nsprintoperation/jobtitle.md)
+- [var jobTitle: String?](./nsprintoperation/jobtitle.md)
   The custom title of the print job.
-- [var printPanel: NSPrintPanel](nsprintoperation/printpanel.md)
+- [var printPanel: NSPrintPanel](./nsprintoperation/printpanel.md)
   The print panel object to use during the operation.
-- [var pdfPanel: NSPDFPanel](nsprintoperation/pdfpanel.md)
+- [var pdfPanel: NSPDFPanel](./nsprintoperation/pdfpanel.md)
   The PDF panel object to use during the operation.
 ### Managing the Drawing Context
-- [var context: NSGraphicsContext?](nsprintoperation/context.md)
+- [var context: NSGraphicsContext?](./nsprintoperation/context.md)
   The graphics context object used for generating output.
-- [func createContext() -> NSGraphicsContext?](nsprintoperation/createcontext.md)
+- [func createContext() -> NSGraphicsContext?](./nsprintoperation/createcontext%28%29.md)
   Creates the graphics context object used for drawing during the operation.
-- [func destroyContext()](nsprintoperation/destroycontext.md)
+- [func destroyContext()](./nsprintoperation/destroycontext%28%29.md)
   Destroys the print operation’s graphics context.
 ### Managing Page Information
-- [var currentPage: Int](nsprintoperation/currentpage.md)
+- [var currentPage: Int](./nsprintoperation/currentpage.md)
   The current page number being printed.
-- [var pageRange: NSRange](nsprintoperation/pagerange.md)
+- [var pageRange: NSRange](./nsprintoperation/pagerange.md)
   The range of pages associated with the print operation.
-- [var pageOrder: NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.property.md)
+- [var pageOrder: NSPrintOperation.PageOrder](./nsprintoperation/pageorder-swift.property.md)
   The print order for the pages of the operation.
-- [NSPrintOperation.PageOrder](nsprintoperation/pageorder-swift.enum.md)
+- [NSPrintOperation.PageOrder](./nsprintoperation/pageorder-swift.enum.md)
   Constants that specify the page order.
 ### Managing Printing Threads
-- [var canSpawnSeparateThread: Bool](nsprintoperation/canspawnseparatethread.md)
+- [var canSpawnSeparateThread: Bool](./nsprintoperation/canspawnseparatethread.md)
   A Boolean value that determines whether the print operation is allowed to spawn a separate printing thread.
 ### Deprecated
-- [Deprecated symbols](nsprintoperation-deprecated-symbols.md)
+- [Deprecated symbols](./nsprintoperation-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class NSPrinter](nsprinter.md)
+### Print Information
+- [class NSPrinter](./nsprinter.md)
   An object that describes a printer’s capabilities.
-- [class NSPrintInfo](nsprintinfo.md)
+- [class NSPrintInfo](./nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 
 

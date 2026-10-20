@@ -1,7 +1,8 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an array of hand pose predictions for each image in a URL array.
 
@@ -32,7 +33,8 @@ Each prediction consists of an array of tuples that pair a classification label 
 
 ## See Also
 
-- [func prediction(from: URL) throws -> [(label: String, confidence: Double)]](mlhandposeclassifier/prediction(from:).md)
+### Testing a hand pose classifier
+- [func prediction(from: URL) throws -> [(label: String, confidence: Double)]](./prediction%28from%29.md)
   Generates a hand pose prediction for an image.
 
 

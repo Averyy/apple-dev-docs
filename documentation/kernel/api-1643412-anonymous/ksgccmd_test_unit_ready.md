@@ -1,7 +1,8 @@
 # kSGCCmd_TEST_UNIT_READY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSGCCmd_TEST_UNIT_READY = 0x00
 ```
 

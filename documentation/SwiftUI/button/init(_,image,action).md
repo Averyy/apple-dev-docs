@@ -1,7 +1,8 @@
 # init(_:image:action:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that generates its label from a localized string resource and image resource.
 
@@ -21,9 +22,23 @@ Creates a button that generates its label from a localized string resource and i
 @export(implementation) nonisolated init(_ titleResource: LocalizedStringResource, image: ImageResource, action: @escaping @MainActor () -> Void)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+@preconcurrency
+nonisolated init(_ titleKey: LocalizedStringKey, image: ImageResource, action: @escaping @MainActor () -> Void)
+```
+
+```swift
+@preconcurrency
+nonisolated init<S>(_ title: S, image: ImageResource, action: @escaping @MainActor () -> Void) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Label`](label.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Label`](../label.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -33,11 +48,12 @@ This initializer creates a [`Label`](label.md) view on your behalf. See [`Text`]
 
 ## See Also
 
-- [init(action: () -> Void, label: () -> Label)](button/init(action:label:).md)
+### Creating a button
+- [init(action: () -> Void, label: () -> Label)](./init%28action,label%29.md)
   Creates a button that displays a custom label.
-- [init(_:action:)](button/init(_:action:).md)
+- [init(_:action:)](./init%28_,action%29.md)
   Creates a button that generates its label from a localized string resource.
-- [init(_:systemImage:action:)](button/init(_:systemimage:action:).md)
+- [init(_:systemImage:action:)](./init%28_,systemimage,action%29.md)
   Creates a button that generates its label from a localized string key and system image name.
 
 

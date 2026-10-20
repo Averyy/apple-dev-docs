@@ -1,7 +1,8 @@
 # regionCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the region code of the locale. If the `rg` subtag is present, the value of the subtag will be used. For example,  returns “GB” for “en_US@rg=gbzzzz” locale. If the `localeIdentifier` doesn’t contain a region, returns `nil`.
 
@@ -18,6 +19,10 @@ Returns the region code of the locale. If the `rg` subtag is present, the value 
 
 ```swift
 var regionCode: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * regionCode;
 ```
 
 

@@ -1,7 +1,8 @@
 # remoteControlReceived(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the object when a remote-control event is received.
 
@@ -9,7 +10,7 @@ Tells the object when a remote-control event is received.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ Tells the object when a remote-control event is received.
 func remoteControlReceived(with event: UIEvent?)
 ```
 
+```objc
+- (void) remoteControlReceivedWithEvent:(UIEvent *) event;
+```
+
 #### Discussion
 
-Remote-control events originate as commands from external accessories, including headsets. An app responds to these commands by controlling audio or video media presented to the user. The receiving responder object should examine the [`subtype`](uievent/subtype.md) of `event` to determine the intended command — for example, *play* ([`UIEvent.EventSubtype.remoteControlPlay`](uievent/eventsubtype/remotecontrolplay.md)) — and then proceed accordingly.
+Remote-control events originate as commands from external accessories, including headsets. An app responds to these commands by controlling audio or video media presented to the user. The receiving responder object should examine the [`subtype`](../uievent/subtype.md) of `event` to determine the intended command — for example, *play* ([`UIEvent.EventSubtype.remoteControlPlay`](../uievent/eventsubtype/remotecontrolplay.md)) — and then proceed accordingly.
 
-To allow delivery of remote-control events, you must call the [`beginReceivingRemoteControlEvents()`](uiapplication/beginreceivingremotecontrolevents().md) method of [`UIApplication`](uiapplication.md). To turn off delivery of remote-control events, call the [`endReceivingRemoteControlEvents()`](uiapplication/endreceivingremotecontrolevents().md) method.
+To allow delivery of remote-control events, you must call the [`beginReceivingRemoteControlEvents()`](../uiapplication/beginreceivingremotecontrolevents%28%29.md) method of [`UIApplication`](../uiapplication.md). To turn off delivery of remote-control events, call the [`endReceivingRemoteControlEvents()`](../uiapplication/endreceivingremotecontrolevents%28%29.md) method.
 
 ## Parameters
 
-- `event`: An event object encapsulating a remote-control command. Remote-control events have a type of [`UIEvent.EventType.remoteControl`](uievent/eventtype/remotecontrol.md).
+- `event`: An event object encapsulating a remote-control command. Remote-control events have a type of [`UIEvent.EventType.remoteControl`](../uievent/eventtype/remotecontrol.md).
 
 
 ---

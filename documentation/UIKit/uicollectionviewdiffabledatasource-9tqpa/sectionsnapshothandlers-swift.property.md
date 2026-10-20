@@ -1,7 +1,8 @@
 # sectionSnapshotHandlers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffable data source’s handlers for expanding and collapsing items.
 
@@ -10,7 +11,7 @@ The diffable data source’s handlers for expanding and collapsing items.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,13 @@ The diffable data source’s handlers for expanding and collapsing items.
 @preconcurrency var sectionSnapshotHandlers: UICollectionViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.SectionSnapshotHandlers<ItemIdentifierType> { get set }
 ```
 
+Available when `SectionIdentifierType` conforms to `Hashable`, `SectionIdentifierType` conforms to `Sendable`, `ItemIdentifierType` conforms to `Hashable`, and `ItemIdentifierType` conforms to `Sendable`.
+
 #### Discussion
 
 Provide section snapshot handlers to support the expanding or collapsing of items in your collection view.
 
-Use the [`snapshotForExpandingParent`](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct/snapshotforexpandingparent.md) handler to customize the snapshot that returns when a particular parent item is expanded.
+Use the [`snapshotForExpandingParent`](./sectionsnapshothandlers-swift.struct/snapshotforexpandingparent.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 
 ```swift
 // Allow every item to be collapsed
@@ -38,7 +41,8 @@ dataSource.sectionSnapshotHandlers.snapshotForExpandingParent = {
 
 ## See Also
 
-- [UICollectionViewDiffableDataSource.SectionSnapshotHandlers](uicollectionviewdiffabledatasource-9tqpa/sectionsnapshothandlers-swift.struct.md)
+### Supporting expanding and collapsing
+- [UICollectionViewDiffableDataSource.SectionSnapshotHandlers](./sectionsnapshothandlers-swift.struct.md)
   Handlers for expanding and collapsing items.
 
 

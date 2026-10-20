@@ -7,7 +7,7 @@ Sets max payload size for the ORB.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setMaxPayloadSize(
  UInt32maxPayloadSize );
 ```
@@ -22,55 +22,56 @@ This sets the maximum payload size for this ORB only. This size is clipped by th
 
 ## See Also
 
-- [allocatePageTable](iofirewiresbp2orb/1812982-allocatepagetable.md)
+### Miscellaneous
+- [allocatePageTable](./api-1812982-allocatepagetable.md)
   Allocates memory for the page table.
-- [deallocatePageTable](iofirewiresbp2orb/1812989-deallocatepagetable.md)
+- [deallocatePageTable](./api-1812989-deallocatepagetable.md)
   Frees up memory allocated for the page table.
-- [getCommandBufferDescriptor](iofirewiresbp2orb/1812997-getcommandbufferdescriptor.md)
+- [getCommandBufferDescriptor](./api-1812997-getcommandbufferdescriptor.md)
   Returns the memory descriptor representing the command buffer.
-- [getCommandFlags](iofirewiresbp2orb/1813002-getcommandflags.md)
+- [getCommandFlags](./api-1813002-getcommandflags.md)
   Sets configuration flags for the ORB.
-- [getCommandGeneration](iofirewiresbp2orb/1813010-getcommandgeneration.md)
+- [getCommandGeneration](./api-1813010-getcommandgeneration.md)
   Gets the command generation.
-- [getCommandTimeout](iofirewiresbp2orb/1813017-getcommandtimeout.md)
+- [getCommandTimeout](./api-1813017-getcommandtimeout.md)
   Gets the timeout of the ORB.
-- [getLogin](iofirewiresbp2orb/1813023-getlogin.md)
+- [getLogin](./api-1813023-getlogin.md)
   Gets the login associated with this ORB.
-- [getMaxPayloadSize](iofirewiresbp2orb/1813031-getmaxpayloadsize.md)
+- [getMaxPayloadSize](./api-1813031-getmaxpayloadsize.md)
   Gets max payload size for the ORB.
-- [getORBAddress](iofirewiresbp2orb/1813039-getorbaddress.md)
+- [getORBAddress](./api-1813039-getorbaddress.md)
   Returns the FireWire address of this ORB.
-- [getRefCon](iofirewiresbp2orb/1813049-getrefcon.md)
+- [getRefCon](./api-1813049-getrefcon.md)
   Returns the refCon set with setRefCon.
-- [getRefCon64](iofirewiresbp2orb/1813059-getrefcon64.md)
+- [getRefCon64](./api-1813059-getrefcon64.md)
   Returns the 64 bit refCon set with setRefCon64.
-- [release](iofirewiresbp2orb/1813072-release.md)
+- [release](./api-1813072-release.md)
   Primary implementation of the release mechanism.
-- [releaseCommandBuffers](iofirewiresbp2orb/1813085-releasecommandbuffers.md)
+- [releaseCommandBuffers](./api-1813085-releasecommandbuffers.md)
   Releases SBP2's reference to the command buffers.
-- [setBufferConstraints](iofirewiresbp2orb/1813096-setbufferconstraints.md)
+- [setBufferConstraints](./api-1813096-setbufferconstraints.md)
   Configures page table generation parameters
-- [setCommandBlock(IOMemoryDescriptor *)](iofirewiresbp2orb/1813109-setcommandblock.md)
+- [setCommandBlock(IOMemoryDescriptor *)](./api-1813109-setcommandblock.md)
   Sets the command block portion of the ORB.
-- [setCommandBlock(void *, UInt32)](iofirewiresbp2orb/1813121-setcommandblock.md)
+- [setCommandBlock(void *, UInt32)](./api-1813121-setcommandblock.md)
   Sets the command block portion of the ORB.
-- [setCommandBuffers](iofirewiresbp2orb/1813129-setcommandbuffers.md)
+- [setCommandBuffers](./api-1813129-setcommandbuffers.md)
   Creates a page table from a list of ranges.
-- [setCommandBuffersAsRanges(IOMemoryDescriptor *, UInt32, UInt32)](iofirewiresbp2orb/1813141-setcommandbuffersasranges.md)
+- [setCommandBuffersAsRanges(IOMemoryDescriptor *, UInt32, UInt32)](./api-1813141-setcommandbuffersasranges.md)
   Creates a page table from a list of ranges.
-- [setCommandBuffersAsRanges(IOVirtualRange *, UInt32, IODirection, task_t, UInt32, UInt32)](iofirewiresbp2orb/1813149-setcommandbuffersasranges.md)
+- [setCommandBuffersAsRanges(IOVirtualRange *, UInt32, IODirection, task_t, UInt32, UInt32)](./api-1813149-setcommandbuffersasranges.md)
   Creates a page table from a list of ranges.
-- [setCommandBuffersAsRanges64](iofirewiresbp2orb/1813162-setcommandbuffersasranges64.md)
+- [setCommandBuffersAsRanges64](./api-1813162-setcommandbuffersasranges64.md)
   Creates a page table from a list of 64 bit ranges.
-- [setCommandFlags](iofirewiresbp2orb/1813178-setcommandflags.md)
+- [setCommandFlags](./api-1813178-setcommandflags.md)
   Sets configuration flags for the ORB.
-- [setCommandGeneration](iofirewiresbp2orb/1813197-setcommandgeneration.md)
+- [setCommandGeneration](./api-1813197-setcommandgeneration.md)
   Sets the command generation.
-- [setCommandTimeout](iofirewiresbp2orb/1813211-setcommandtimeout.md)
+- [setCommandTimeout](./api-1813211-setcommandtimeout.md)
   Sets the timeout of the ORB.
-- [setRefCon](iofirewiresbp2orb/1813244-setrefcon.md)
+- [setRefCon](./api-1813244-setrefcon.md)
   Sets the ORB refCon.
-- [setRefCon64](iofirewiresbp2orb/1813262-setrefcon64.md)
+- [setRefCon64](./api-1813262-setrefcon64.md)
   Sets the ORB refCon as a 64 bit value.
 
 

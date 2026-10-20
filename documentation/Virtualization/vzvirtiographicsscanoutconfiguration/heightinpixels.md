@@ -1,7 +1,8 @@
 # heightInPixels
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that describes the height of the graphics device in pixels.
 
@@ -14,9 +15,14 @@ An integer value that describes the height of the graphics device in pixels.
 var heightInPixels: Int { get set }
 ```
 
+```objc
+@property NSInteger heightInPixels;
+```
+
 ## See Also
 
-- [var widthInPixels: Int](vzvirtiographicsscanoutconfiguration/widthinpixels.md)
+### Instance properties
+- [var widthInPixels: Int](./widthinpixels.md)
   An integer value that describes the width of the graphics device in pixels.
 
 

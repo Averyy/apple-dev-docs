@@ -1,7 +1,8 @@
 # init(description:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error with a localized description.
 

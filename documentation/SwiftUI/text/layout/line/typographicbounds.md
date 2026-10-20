@@ -1,7 +1,8 @@
 # typographicBounds
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The typographic bounds of the line.
 

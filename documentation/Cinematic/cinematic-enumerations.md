@@ -1,18 +1,20 @@
 # Cinematic Enumerations
 
-**Framework**: Cinematic
+**Framework**: Cinematic  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumerations
-- [enum CNRenderingQuality](cnrenderingquality.md)
+- [enum CNRenderingQuality](./cnrenderingquality.md)
   The rendering quality, such as thumbnail, preview, export and so on.
-- [CNCinematicError.Code](cncinematicerror/code.md)
+- [CNCinematicError.Code](./cncinematicerror/code.md)
 
 ## See Also
 
-- [Cinematic Constants](cinematic-constants.md)
-- [Cinematic Data Types](cinematic-data-types.md)
+### Reference
+- [Cinematic Constants](./cinematic-constants.md)
+- [Cinematic Data Types](./cinematic-data-types.md)
 
 
 ---

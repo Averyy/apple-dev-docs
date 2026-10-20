@@ -1,9 +1,10 @@
 # scheduleWakeup(wakeupTime:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Requests that [`wakeup(framer:)`](nwprotocolframerimplementation/wakeup(framer:).md) be called on your protocol at a specific time in the future.
+Requests that [`wakeup(framer:)`](../../nwprotocolframerimplementation/wakeup%28framer%29.md) be called on your protocol at a specific time in the future.
 
 **Availability**:
 - iOS 13.0+
@@ -22,9 +23,10 @@ final func scheduleWakeup(wakeupTime: NWProtocolFramer.Instance.WakeupTime)
 
 ## See Also
 
-- [func async(execute: () -> Void)](nwprotocolframer/instance/async(execute:).md)
+### Handling Asynchronous Events
+- [func async(execute: () -> Void)](./async%28execute%29.md)
   Requests that a block be executed on the connection’s internal scheduling context.
-- [NWProtocolFramer.Instance.WakeupTime](nwprotocolframer/instance/wakeuptime.md)
+- [NWProtocolFramer.Instance.WakeupTime](./wakeuptime.md)
   Times at which to schedule a protocol wakeup.
 
 

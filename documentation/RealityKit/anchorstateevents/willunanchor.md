@@ -1,7 +1,8 @@
 # AnchorStateEvents.WillUnanchor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event that triggers on an entity before the entity is unanchored with certain reasons.
 
@@ -22,17 +23,17 @@ struct WillUnanchor
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](anchorstateevents/willunanchor/entity.md)
-- [let reason: AnchorStateEvents.WillUnanchor.Reason](anchorstateevents/willunanchor/reason-swift.property.md)
+- [let entity: Entity](./willunanchor/entity.md)
+- [let reason: AnchorStateEvents.WillUnanchor.Reason](./willunanchor/reason-swift.property.md)
 ### Enumerations
-- [AnchorStateEvents.WillUnanchor.Reason](anchorstateevents/willunanchor/reason-swift.enum.md)
+- [AnchorStateEvents.WillUnanchor.Reason](./willunanchor/reason-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

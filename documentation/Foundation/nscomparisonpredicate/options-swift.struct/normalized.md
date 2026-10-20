@@ -1,7 +1,8 @@
 # normalized
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A predicate that indicates you’ve preprocessed the strings to compare.
 
@@ -20,6 +21,10 @@ A predicate that indicates you’ve preprocessed the strings to compare.
 static var normalized: NSComparisonPredicate.Options { get }
 ```
 
+```c
+NSNormalizedPredicateOption
+```
+
 #### Discussion
 
 This option supersedes `NSCaseInsensitivePredicateOption` and `NSDiacriticInsensitivePredicateOption`, and is a performance optimization option.
@@ -28,9 +33,10 @@ You represent this option in a predicate format string using a `[n]` following a
 
 ## See Also
 
-- [static var caseInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/caseinsensitive.md)
+### Constants
+- [static var caseInsensitive: NSComparisonPredicate.Options](./caseinsensitive.md)
   A case-insensitive predicate.
-- [static var diacriticInsensitive: NSComparisonPredicate.Options](nscomparisonpredicate/options-swift.struct/diacriticinsensitive.md)
+- [static var diacriticInsensitive: NSComparisonPredicate.Options](./diacriticinsensitive.md)
   A diacritic-insensitive predicate.
 
 

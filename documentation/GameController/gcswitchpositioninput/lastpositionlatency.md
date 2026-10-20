@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The time in seconds between the current and previous positions.
@@ -20,17 +21,22 @@ The time in seconds between the current and previous positions.
 var lastPositionLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval lastPositionLatency;
+```
+
 #### Discussion
 
 Use this property as a minimum latency value that may not include latency that accrues on the device or when it transmits the event.
 
 ## See Also
 
-- [var position: Int](gcswitchpositioninput/position.md)
+### Getting the position
+- [var position: Int](./position.md)
   The position of the switch.
-- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](gcswitchpositioninput/positiondidchangehandler.md)
+- [var positionDidChangeHandler: ((any GCPhysicalInputElement, any GCSwitchPositionInput, Int) -> Void)?](./positiondidchangehandler.md)
   The block that the profile calls when the value of the switch changes.
-- [var lastPositionTimestamp: TimeInterval](gcswitchpositioninput/lastpositiontimestamp.md)
+- [var lastPositionTimestamp: TimeInterval](./lastpositiontimestamp.md)
   A timestamp for when the profile reports the last position.
 
 

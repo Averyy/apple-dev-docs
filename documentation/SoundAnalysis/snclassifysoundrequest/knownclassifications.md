@@ -1,7 +1,8 @@
 # knownClassifications
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string array that contains every prediction label in the request’s underlying sound classifier model.
 
@@ -20,9 +21,14 @@ A string array that contains every prediction label in the request’s underlyin
 var knownClassifications: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * knownClassifications;
+```
+
 ## See Also
 
-- [enum SNTimeDurationConstraint](sntimedurationconstraint-swift.enum.md)
+### Inspecting a Request
+- [enum SNTimeDurationConstraint](../sntimedurationconstraint-swift.enum.md)
   Defines the time duration windows the request’s underlying sound classifier accepts with a range, or an array, of durations.
 
 

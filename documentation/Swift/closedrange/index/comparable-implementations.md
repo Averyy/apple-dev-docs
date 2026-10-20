@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeThrough<Self>](closedrange/index/'...(_:)-5e4wo.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-5e4wo.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self) -> PartialRangeFrom<Self>](closedrange/index/'...(_:)-63ber.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-63ber.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](closedrange/index/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](closedrange/index/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](closedrange/index/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (ClosedRange<Bound>.Index, ClosedRange<Bound>.Index) -> Bool](closedrange/index/_(_:_:).md)
+- [static func < (ClosedRange<Bound>.Index, ClosedRange<Bound>.Index) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](closedrange/index/_(_:_:)-5l76x.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-5l76x.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](closedrange/index/_=(_:_:)-5g4su.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-5g4su.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](closedrange/index/_=(_:_:)-7dezg.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-7dezg.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

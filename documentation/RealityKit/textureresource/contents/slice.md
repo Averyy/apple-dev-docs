@@ -1,7 +1,8 @@
 # TextureResource.Contents.Slice
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that references the pixel data for a single slice of a mipmap.
 
@@ -26,20 +27,21 @@ struct Slice
 ## Topics
 
 ### Creating a texture slice
-- [static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slice](textureresource/contents/slice/slice(data:bytesperrow:).md)
+- [static func slice(data: Data, bytesPerRow: Int) -> TextureResource.Contents.Slice](./slice/slice%28data,bytesperrow%29.md)
   Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a byte buffer.
-- [static func slice(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.Slice](textureresource/contents/slice/slice(unsafebuffer:offset:size:bytesperrow:).md)
+- [static func slice(unsafeBuffer: any MTLBuffer, offset: Int, size: Int, bytesPerRow: Int) -> TextureResource.Contents.Slice](./slice/slice%28unsafebuffer,offset,size,bytesperrow%29.md)
   Specifies a single mipmap level slice of a texture resource with pixel data that RealityKit copies from a Metal buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TextureResource.Contents.MipmapLevel](textureresource/contents/mipmaplevel.md)
+### Defining the content
+- [TextureResource.Contents.MipmapLevel](./mipmaplevel.md)
   An object that references the pixel data for a single mipmap of a texture.
 
 

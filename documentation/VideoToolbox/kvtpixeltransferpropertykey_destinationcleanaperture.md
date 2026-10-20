@@ -1,7 +1,8 @@
 # kVTPixelTransferPropertyKey_DestinationCleanAperture
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The clean aperture for destination image buffers.
 
@@ -19,33 +20,38 @@ The clean aperture for destination image buffers.
 let kVTPixelTransferPropertyKey_DestinationCleanAperture: CFString
 ```
 
+```c
+extern CFStringRef const kVTPixelTransferPropertyKey_DestinationCleanAperture;
+```
+
 #### Discussion
 
-The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) object with same keys as used in the [`kCVImageBufferCleanApertureKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercleanaperturekey) dictionary.
+The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with same keys as used in the [`kCVImageBufferCleanApertureKey`](../CoreVideo/kcvimagebuffercleanaperturekey.md) dictionary.
 
-This property is ignored in [`kVTScalingMode_Normal`](kvtscalingmode_normal.md).  This property defaults to `NULL`, meaning the clean aperture is the full width and height.
+This property is ignored in [`kVTScalingMode_Normal`](./kvtscalingmode_normal.md).  This property defaults to `NULL`, meaning the clean aperture is the full width and height.
 
 ## See Also
 
-- [let kVTPixelTransferPropertyKey_ScalingMode: CFString](kvtpixeltransferpropertykey_scalingmode.md)
+### Configuration
+- [let kVTPixelTransferPropertyKey_ScalingMode: CFString](./kvtpixeltransferpropertykey_scalingmode.md)
   Scaling mode for images during transfer between source and destination buffers.
-- [Scaling Mode Constants](scaling-mode-constants.md)
-  Supported constant values for the [`kVTPixelTransferPropertyKey_ScalingMode`](kvtpixeltransferpropertykey_scalingmode.md) key.
-- [let kVTPixelTransferPropertyKey_DestinationPixelAspectRatio: CFString](kvtpixeltransferpropertykey_destinationpixelaspectratio.md)
+- [Scaling Mode Constants](./scaling-mode-constants.md)
+  Supported constant values for the [`kVTPixelTransferPropertyKey_ScalingMode`](./kvtpixeltransferpropertykey_scalingmode.md) key.
+- [let kVTPixelTransferPropertyKey_DestinationPixelAspectRatio: CFString](./kvtpixeltransferpropertykey_destinationpixelaspectratio.md)
   The pixel aspect ratio for destination image buffers.
-- [let kVTPixelTransferPropertyKey_DownsamplingMode: CFString](kvtpixeltransferpropertykey_downsamplingmode.md)
+- [let kVTPixelTransferPropertyKey_DownsamplingMode: CFString](./kvtpixeltransferpropertykey_downsamplingmode.md)
   The specific chroma downsampling technique to be used.
-- [Downsampling Mode Constants](downsampling-mode-constants.md)
-  Supported constant values for the [`kVTPixelTransferPropertyKey_DownsamplingMode`](kvtpixeltransferpropertykey_downsamplingmode.md) key.
-- [let kVTPixelTransferPropertyKey_DestinationColorPrimaries: CFString](kvtpixeltransferpropertykey_destinationcolorprimaries.md)
+- [Downsampling Mode Constants](./downsampling-mode-constants.md)
+  Supported constant values for the [`kVTPixelTransferPropertyKey_DownsamplingMode`](./kvtpixeltransferpropertykey_downsamplingmode.md) key.
+- [let kVTPixelTransferPropertyKey_DestinationColorPrimaries: CFString](./kvtpixeltransferpropertykey_destinationcolorprimaries.md)
   The color primaries to be used for destination image buffers.
-- [let kVTPixelTransferPropertyKey_DestinationTransferFunction: CFString](kvtpixeltransferpropertykey_destinationtransferfunction.md)
+- [let kVTPixelTransferPropertyKey_DestinationTransferFunction: CFString](./kvtpixeltransferpropertykey_destinationtransferfunction.md)
   The color transfer function to be used for destination image buffers.
-- [let kVTPixelTransferPropertyKey_DestinationICCProfile: CFString](kvtpixeltransferpropertykey_destinationiccprofile.md)
+- [let kVTPixelTransferPropertyKey_DestinationICCProfile: CFString](./kvtpixeltransferpropertykey_destinationiccprofile.md)
   The International Color Consortium (ICC) profile for destination image buffers.
-- [let kVTPixelTransferPropertyKey_DestinationYCbCrMatrix: CFString](kvtpixeltransferpropertykey_destinationycbcrmatrix.md)
+- [let kVTPixelTransferPropertyKey_DestinationYCbCrMatrix: CFString](./kvtpixeltransferpropertykey_destinationycbcrmatrix.md)
   The color matrix to be used for YCbCr to RGB conversions involving the destination image buffers.
-- [let kVTPixelTransferPropertyKey_RealTime: CFString](kvtpixeltransferpropertykey_realtime.md)
+- [let kVTPixelTransferPropertyKey_RealTime: CFString](./kvtpixeltransferpropertykey_realtime.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Apple Silicon CPU Optimization Guide
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Identify performance optimization strategies for Apple silicon M-series and A-series chips.
 
@@ -16,11 +17,12 @@ The Apple Silicon CPU Optimization Guide provides an overview of the architectur
 - A discussion of recommended instruction sequences for various actions and algorithms
 - Lists of performance-monitoring events and metrics to measure key CPU performance behavior
 
-Access to the guide requires a registered developer account and you must opt-in to an additional agreement. To get the latest version of the guide, log in to your developer account and see [`Apple Silicon CPU Optimization Guide`](https://developer.apple.comhttps://developer.apple.com/download/apple-silicon-cpu-optimization-guide/).
+Access to the guide requires a registered developer account and you must opt-in to an additional agreement. To get the latest version of the guide, log in to your developer account and see [Apple Silicon CPU Optimization Guide](https://developer.apple.com/download/apple-silicon-cpu-optimization-guide/).
 
 ## See Also
 
-- [Tuning your code’s performance for Apple silicon](tuning-your-code-s-performance-for-apple-silicon.md)
+### Performance
+- [Tuning your code’s performance for Apple silicon](./tuning-your-code-s-performance-for-apple-silicon.md)
   Improve your code to get the best performance from both Apple silicon and Intel-based Mac computers.
 
 

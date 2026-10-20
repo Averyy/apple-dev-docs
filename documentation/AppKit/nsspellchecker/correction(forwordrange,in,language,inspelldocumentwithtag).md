@@ -1,7 +1,8 @@
 # correction(forWordRange:in:language:inSpellDocumentWithTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a single proposed correction if a word is mis-spelled.
 
@@ -12,6 +13,10 @@ Returns a single proposed correction if a word is mis-spelled.
 
 ```swift
 func correction(forWordRange range: NSRange, in string: String, language: String, inSpellDocumentWithTag tag: Int) -> String?
+```
+
+```objc
+- (NSString *) correctionForWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
 #### Return Value
@@ -31,16 +36,17 @@ While correction functionality is available starting in OS X v10.6 as part of un
 
 ## See Also
 
-- [func showCorrectionIndicator(of: NSSpellChecker.CorrectionIndicatorType, primaryString: String, alternativeStrings: [String], forStringIn: NSRect, view: NSView, completionHandler: ((String?) -> Void)?)](nsspellchecker/showcorrectionindicator(of:primarystring:alternativestrings:forstringin:view:completionhandler:).md)
+### Automatic Spelling Correction
+- [func showCorrectionIndicator(of: NSSpellChecker.CorrectionIndicatorType, primaryString: String, alternativeStrings: [String], forStringIn: NSRect, view: NSView, completionHandler: ((String?) -> Void)?)](./showcorrectionindicator%28of,primarystring,alternativestrings,forstringin,view,completionhandler%29.md)
   Display a suitable user interface to indicate a correction may need to be made.
-- [func record(NSSpellChecker.CorrectionResponse, toCorrection: String, forWord: String, language: String?, inSpellDocumentWithTag: Int)](nsspellchecker/record(_:tocorrection:forword:language:inspelldocumentwithtag:).md)
+- [func record(NSSpellChecker.CorrectionResponse, toCorrection: String, forWord: String, language: String?, inSpellDocumentWithTag: Int)](./record%28_,tocorrection,forword,language,inspelldocumentwithtag%29.md)
   Records the user response to the correction indicator being displayed.
-- [func dismissCorrectionIndicator(for: NSView)](nsspellchecker/dismisscorrectionindicator(for:).md)
+- [func dismissCorrectionIndicator(for: NSView)](./dismisscorrectionindicator%28for%29.md)
   Dismisses the correction indicator for the specified view.
-- [NSSpellChecker.CorrectionIndicatorType](nsspellchecker/correctionindicatortype.md)
+- [NSSpellChecker.CorrectionIndicatorType](./correctionindicatortype.md)
   Constants that allow an app to specify the correction indicator type displayed.
-- [NSSpellChecker.CorrectionResponse](nsspellchecker/correctionresponse.md)
-  The correction response passed to the[`record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)`](nsspellchecker/record(_:tocorrection:forword:language:inspelldocumentwithtag:).md) method.
+- [NSSpellChecker.CorrectionResponse](./correctionresponse.md)
+  The correction response passed to the[`record(_:toCorrection:forWord:language:inSpellDocumentWithTag:)`](./record%28_,tocorrection,forword,language,inspelldocumentwithtag%29.md) method.
 
 
 ---

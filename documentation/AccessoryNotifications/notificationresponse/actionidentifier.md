@@ -1,7 +1,8 @@
 # actionIdentifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the action the person took with the notification.
 
@@ -16,7 +17,7 @@ var actionIdentifier: String
 
 #### Discussion
 
-This value matches one of the action identifiers in the notification’s [`actions`](accessorynotification/actions.md) array.
+This value matches one of the action identifiers in the notification’s [`actions`](../accessorynotification/actions.md) array.
 
 
 ---

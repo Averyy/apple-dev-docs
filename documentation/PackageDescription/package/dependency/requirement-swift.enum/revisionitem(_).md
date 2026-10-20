@@ -1,10 +1,11 @@
 # Package.Dependency.Requirement.revisionItem(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
 
 ## Declaration
 

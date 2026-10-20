@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style that determines the number of columns that the split view interface displays.
 
@@ -18,9 +19,14 @@ The style that determines the number of columns that the split view interface di
 var style: UISplitViewController.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISplitViewControllerStyle style;
+```
+
 ## See Also
 
-- [UISplitViewController.Style](uisplitviewcontroller/style-swift.enum.md)
+### Getting the split view style
+- [UISplitViewController.Style](./style-swift.enum.md)
   Constants that describe the number of columns the split view interface displays.
 
 

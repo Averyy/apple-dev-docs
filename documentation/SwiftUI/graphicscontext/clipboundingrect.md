@@ -1,7 +1,8 @@
 # clipBoundingRect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding rectangle of the intersection of all current clip shapes in the current user space.
 
@@ -22,11 +23,12 @@ var clipBoundingRect: CGRect { get }
 
 ## See Also
 
-- [func clip(to: Path, style: FillStyle, options: GraphicsContext.ClipOptions)](graphicscontext/clip(to:style:options:).md)
+### Masking
+- [func clip(to: Path, style: FillStyle, options: GraphicsContext.ClipOptions)](./clip%28to,style,options%29.md)
   Adds a path to the context’s array of clip shapes.
-- [func clipToLayer(opacity: Double, options: GraphicsContext.ClipOptions, content: (inout GraphicsContext) throws -> Void) rethrows](graphicscontext/cliptolayer(opacity:options:content:).md)
+- [func clipToLayer(opacity: Double, options: GraphicsContext.ClipOptions, content: (inout GraphicsContext) throws -> Void) rethrows](./cliptolayer%28opacity,options,content%29.md)
   Adds a clip shape that you define in a new layer to the context’s array of clip shapes.
-- [GraphicsContext.ClipOptions](graphicscontext/clipoptions.md)
+- [GraphicsContext.ClipOptions](./clipoptions.md)
   Options that affect the use of clip shapes.
 
 

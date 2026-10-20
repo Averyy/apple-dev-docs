@@ -1,7 +1,8 @@
 # isDespeckleSupported
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isDespeckleSupported: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isDespeckleSupported) BOOL despeckleSupported;
 ```
 
 

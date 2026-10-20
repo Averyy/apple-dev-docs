@@ -1,12 +1,13 @@
 # visionOS 1.3 Release Notes
 
-**Framework**: visionOS Release Notes
+**Framework**: visionOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 1.3 RC SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.3. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [`Xcode 15.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15_4-release-notes).
+The visionOS 1.3 RC SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.3. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [Xcode 15.4 Release Notes](../Xcode-Release-Notes/xcode-15_4-release-notes.md).
 
 ##### General
 
@@ -14,11 +15,12 @@ There are no new release notes for this software update.
 
 ## See Also
 
-- [visionOS 1.2 Release Notes](visionos-1_2-release-notes.md)
+### visionOS
+- [visionOS 1.2 Release Notes](./visionos-1_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS 1.1 Release Notes](visionos-1_1-release-notes.md)
+- [visionOS 1.1 Release Notes](./visionos-1_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [visionOS Release Notes](visionos-release-notes.md)
+- [visionOS Release Notes](./visionos-release-notes-page.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # subscribed
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The customer is currently subscribed.
 
@@ -26,13 +27,14 @@ An auto-renewable subscription in this state is entitled to service.
 
 ## See Also
 
-- [static let expired: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/expired.md)
+### Getting the renewal state
+- [static let expired: Product.SubscriptionInfo.RenewalState](./expired.md)
   The subscription expired.
-- [static let inBillingRetryPeriod: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/inbillingretryperiod.md)
+- [static let inBillingRetryPeriod: Product.SubscriptionInfo.RenewalState](./inbillingretryperiod.md)
   The subscription is in a billing retry period.
-- [static let inGracePeriod: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/ingraceperiod.md)
+- [static let inGracePeriod: Product.SubscriptionInfo.RenewalState](./ingraceperiod.md)
   The subscription is in a billing grace period state.
-- [static let revoked: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate/revoked.md)
+- [static let revoked: Product.SubscriptionInfo.RenewalState](./revoked.md)
   The App Store has revoked the customer’s access to the subscription group.
 
 

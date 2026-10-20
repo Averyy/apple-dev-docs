@@ -1,18 +1,19 @@
 # columnCount
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of columns.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ The number of columns.
 var columnCount: Int32
 ```
 
+```c
+int columnCount;
+```
+
 ## See Also
 
-- [var attributes: SparseAttributes_t](sparseopaquesymbolicfactorization/attributes.md)
+### Inspecting a Factorization’s Structure
+- [var attributes: SparseAttributes_t](./attributes.md)
   The attributes of the factorization.
-- [struct SparseAttributes_t](sparseattributes_t.md)
+- [struct SparseAttributes_t](../sparseattributes_t.md)
   A structure that represents the attributes of a matrix.
-- [var blockSize: UInt8](sparseopaquesymbolicfactorization/blocksize.md)
+- [var blockSize: UInt8](./blocksize.md)
   The block size.
-- [var rowCount: Int32](sparseopaquesymbolicfactorization/rowcount.md)
+- [var rowCount: Int32](./rowcount.md)
   The number of rows.
-- [var workspaceSize_Double: Int](sparseopaquesymbolicfactorization/workspacesize_double.md)
+- [var workspaceSize_Double: Int](./workspacesize_double.md)
   Size, in bytes, of workspace required to perform numerical factorization in doubles.
-- [var workspaceSize_Float: Int](sparseopaquesymbolicfactorization/workspacesize_float.md)
+- [var workspaceSize_Float: Int](./workspacesize_float.md)
   Size, in bytes, of workspace required to perform numerical factorization in floats.
-- [var factorSize_Double: Int](sparseopaquesymbolicfactorization/factorsize_double.md)
+- [var factorSize_Double: Int](./factorsize_double.md)
   Minimum size, in bytes, required to store numerical factors in doubles.
-- [var factorSize_Float: Int](sparseopaquesymbolicfactorization/factorsize_float.md)
+- [var factorSize_Float: Int](./factorsize_float.md)
   Minimum size, in bytes, required to store numerical factors in float.
 
 

@@ -1,7 +1,8 @@
 # lockOwnedSelf
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The lock is already owned by the calling thread.
 

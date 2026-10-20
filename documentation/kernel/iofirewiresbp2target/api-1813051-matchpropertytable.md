@@ -7,12 +7,12 @@ Implements SBP2 specific matching.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool matchPropertyTable(
  OSDictionary *table );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns false if the family considers the matching dictionary does not match in properties it understands, true otherwise.
 
@@ -26,17 +26,18 @@ See IOService for discussion.
 
 ## See Also
 
-- [getFireWireUnit](iofirewiresbp2target/1812999-getfirewireunit.md)
+### Miscellaneous
+- [getFireWireUnit](./api-1812999-getfirewireunit.md)
   Returns an IOFireWireUnit object.
-- [handleClose](iofirewiresbp2target/1813009-handleclose.md)
+- [handleClose](./api-1813009-handleclose.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleIsOpen](iofirewiresbp2target/1813021-handleisopen.md)
+- [handleIsOpen](./api-1813021-handleisopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [handleOpen](iofirewiresbp2target/1813037-handleopen.md)
+- [handleOpen](./api-1813037-handleopen.md)
   Overrideable method to control the open / close behaviour of an IOService.
-- [start](iofirewiresbp2target/1813074-start.md)
+- [start](./api-1813074-start.md)
   During an IOService instantiation, the start method is called when the IOService has been selected to run on the provider.
-- [stop](iofirewiresbp2target/1813099-stop.md)
+- [stop](./api-1813099-stop.md)
   During an IOService termination, the stop method is called in its clients before they are detached & it is destroyed.
 
 

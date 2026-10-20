@@ -1,7 +1,8 @@
 # FilterError.invalidData
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates invalid data passed to the encoder-decoder.
 
@@ -11,7 +12,7 @@ An error that indicates invalid data passed to the encoder-decoder.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

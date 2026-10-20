@@ -1,15 +1,16 @@
 # UITableViewCell.SeparatorStyle.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The separator cell has no distinct style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@ The separator cell has no distinct style.
 case none
 ```
 
+```c
+UITableViewCellSeparatorStyleNone
+```
+
 ## See Also
 
-- [UITableViewCell.SeparatorStyle.singleLine](uitableviewcell/separatorstyle/singleline.md)
+### Constants
+- [UITableViewCell.SeparatorStyle.singleLine](./singleline.md)
   The separator cell has a single line running across its width.
-- [UITableViewCell.SeparatorStyle.singleLineEtched](uitableviewcell/separatorstyle/singlelineetched.md)
+- [UITableViewCell.SeparatorStyle.singleLineEtched](./singlelineetched.md)
   The separator cell has double lines running across its width, giving it an etched look.
 
 

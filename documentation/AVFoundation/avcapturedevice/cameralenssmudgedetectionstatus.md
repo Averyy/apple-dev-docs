@@ -1,7 +1,8 @@
 # cameraLensSmudgeDetectionStatus
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value specifying the status of camera lens smudge detection.
 
@@ -18,19 +19,24 @@ A value specifying the status of camera lens smudge detection.
 var cameraLensSmudgeDetectionStatus: AVCaptureCameraLensSmudgeDetectionStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureCameraLensSmudgeDetectionStatus cameraLensSmudgeDetectionStatus;
+```
+
 #### Discussion
 
-During initial detection execution, [`cameraLensSmudgeDetectionStatus`](avcapturedevice/cameralenssmudgedetectionstatus.md) returns `AVCaptureCameraLensSmudgeDetectionStatusUnknown` until the detection result settles. Once a detection result is produced, [`cameraLensSmudgeDetectionStatus`](avcapturedevice/cameralenssmudgedetectionstatus.md) returns the most recent detection result. This property can be key-value observed.
+During initial detection execution, [`cameraLensSmudgeDetectionStatus`](./cameralenssmudgedetectionstatus.md) returns `AVCaptureCameraLensSmudgeDetectionStatusUnknown` until the detection result settles. Once a detection result is produced, [`cameraLensSmudgeDetectionStatus`](./cameralenssmudgedetectionstatus.md) returns the most recent detection result. This property can be key-value observed.
 
 ## See Also
 
-- [var isCameraLensSmudgeDetectionEnabled: Bool](avcapturedevice/iscameralenssmudgedetectionenabled.md)
+### Configuring lens smudge detection
+- [var isCameraLensSmudgeDetectionEnabled: Bool](./iscameralenssmudgedetectionenabled.md)
   Whether camera lens smudge detection is enabled.
-- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](avcapturedevice/setcameralenssmudgedetectionenabled(_:detectioninterval:).md)
+- [func setCameraLensSmudgeDetectionEnabled(Bool, detectionInterval: CMTime)](./setcameralenssmudgedetectionenabled%28_,detectioninterval%29.md)
   Specify whether to enable camera lens smudge detection, and the interval time between each run of detections.
-- [var cameraLensSmudgeDetectionInterval: CMTime](avcapturedevice/cameralenssmudgedetectioninterval.md)
+- [var cameraLensSmudgeDetectionInterval: CMTime](./cameralenssmudgedetectioninterval.md)
   The camera lens smudge detection interval.
-- [enum AVCaptureCameraLensSmudgeDetectionStatus](avcapturecameralenssmudgedetectionstatus.md)
+- [enum AVCaptureCameraLensSmudgeDetectionStatus](../avcapturecameralenssmudgedetectionstatus.md)
   Constants indicating the current camera lens smudge detection status.
 
 

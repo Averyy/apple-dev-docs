@@ -1,7 +1,8 @@
 # SpringLoadingBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options for controlling the spring loading behavior of views.
 
@@ -22,31 +23,32 @@ struct SpringLoadingBehavior
 
 #### Overview
 
-Use values of this type with the [`springLoadingBehavior(_:)`](view/springloadingbehavior(_:).md) modifier.
+Use values of this type with the [`springLoadingBehavior(_:)`](./view/springloadingbehavior%28_%29.md) modifier.
 
 ## Topics
 
 ### Getting the behaviors
-- [static let automatic: SpringLoadingBehavior](springloadingbehavior/automatic.md)
+- [static let automatic: SpringLoadingBehavior](./springloadingbehavior/automatic.md)
   The automatic spring loading behavior.
-- [static let enabled: SpringLoadingBehavior](springloadingbehavior/enabled.md)
+- [static let enabled: SpringLoadingBehavior](./springloadingbehavior/enabled.md)
   Spring loaded interactions will be enabled for applicable views.
-- [static let disabled: SpringLoadingBehavior](springloadingbehavior/disabled.md)
+- [static let disabled: SpringLoadingBehavior](./springloadingbehavior/disabled.md)
   Spring loaded interactions will be disabled for applicable views.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func springLoadingBehavior(SpringLoadingBehavior) -> some View](view/springloadingbehavior(_:).md)
+### Configuring spring loading
+- [func springLoadingBehavior(SpringLoadingBehavior) -> some View](./view/springloadingbehavior%28_%29.md)
   Sets the spring loading behavior this view.
-- [var springLoadingBehavior: SpringLoadingBehavior](environmentvalues/springloadingbehavior.md)
+- [var springLoadingBehavior: SpringLoadingBehavior](./environmentvalues/springloadingbehavior.md)
   The behavior of spring loaded interactions for the views associated with this environment.
 
 

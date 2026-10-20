@@ -1,7 +1,8 @@
 # defaultCaptureSoundDisabled
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the default sound is in a disabled state.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the default sound is in a disabled state.
 class var defaultCaptureSoundDisabled: Bool { get set }
 ```
 
+```objc
+@property (class, nonatomic, readwrite) BOOL defaultCaptureSoundDisabled;
+```
+
 #### Discussion
 
-If `true`, you must handle sound playback for capture events manually using the [`play(_:)`](avcaptureevent/play(_:).md) method.
+If `true`, you must handle sound playback for capture events manually using the [`play(_:)`](../avcaptureevent/play%28_%29.md) method.
 
 > ❗ **Important**: To use AirPods Camera Control, it must be available in your country or region. AirPods Camera Control is not currently available in the European Union.
 
 ## See Also
 
-- [var isEnabled: Bool](avcaptureeventinteraction/isenabled.md)
+### Inspecting the interaction
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether this capture event interaction is in an enabled state.
 
 

@@ -1,7 +1,8 @@
 # runAsync(feeds:targetTensors:targetOperations:executionDescriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed.
 
@@ -17,6 +18,10 @@ Runs the graph for the given feeds and returns the target tensor values, ensurin
 
 ```swift
 func runAsync(feeds: [MPSGraphTensor : MPSGraphTensorData], targetTensors: [MPSGraphTensor], targetOperations: [MPSGraphOperation]?, executionDescriptor: MPSGraphExecutionDescriptor?) -> [MPSGraphTensor : MPSGraphTensorData]
+```
+
+```objc
+- (MPSGraphTensorDataDictionary *) runAsyncWithFeeds:(MPSGraphTensorDataDictionary *) feeds targetTensors:(NSArray<MPSGraphTensor *> *) targetTensors targetOperations:(NSArray<MPSGraphOperation *> *) targetOperations executionDescriptor:(MPSGraphExecutionDescriptor *) executionDescriptor;
 ```
 
 #### Return Value

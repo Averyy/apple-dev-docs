@@ -1,7 +1,8 @@
 # USDPlayer.MeshData.Update
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Delta update carrying only the mesh fields that changed since the last frame.
 
@@ -22,26 +23,26 @@ struct Update
 ## Topics
 
 ### Instance Properties
-- [let assignedMaterials: [USDPlayer.MaterialID]?](usdplayer/meshdata/update/assignedmaterials.md)
+- [let assignedMaterials: [USDPlayer.MaterialID]?](./update/assignedmaterials.md)
   Updated material bindings.
-- [let id: USDPlayer.MeshID](usdplayer/meshdata/update/id.md)
+- [let id: USDPlayer.MeshID](./update/id.md)
   Unique identifier for the mesh being updated.
-- [let indexData: Data?](usdplayer/meshdata/update/indexdata.md)
+- [let indexData: Data?](./update/indexdata.md)
   Updated index buffer data.
-- [let instanceTransforms: [float4x4]?](usdplayer/meshdata/update/instancetransforms.md)
+- [let instanceTransforms: [float4x4]?](./update/instancetransforms.md)
   Updated world-space instance transforms.
-- [let meshType: USDPlayer.MeshData.MeshType?](usdplayer/meshdata/update/meshtype.md)
+- [let meshType: USDPlayer.MeshData.MeshType?](./update/meshtype.md)
   Updated mesh type.
-- [let parts: [LowLevelMesh.Part]?](usdplayer/meshdata/update/parts.md)
+- [let parts: [LowLevelMesh.Part]?](./update/parts.md)
   Updated mesh parts.
-- [let vertexData: [Data]?](usdplayer/meshdata/update/vertexdata.md)
+- [let vertexData: [Data]?](./update/vertexdata.md)
   Updated vertex buffer data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HKMetadataKeyDevicePlacementSide
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for metadata indicating the placement of the device that measured a sample.
 
@@ -19,29 +20,34 @@ The key for metadata indicating the placement of the device that measured a samp
 let HKMetadataKeyDevicePlacementSide: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyDevicePlacementSide;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) that contains a value from [`HKDevicePlacementSide`](hkdeviceplacementside.md).
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) that contains a value from [`HKDevicePlacementSide`](./hkdeviceplacementside.md).
 
-For mobility samples, like [`walkingSpeed`](hkquantitytypeidentifier/walkingspeed.md) or [`walkingDoubleSupportPercentage`](hkquantitytypeidentifier/walkingdoublesupportpercentage.md), this metadata key records the placement of the device as determined by the system.
+For mobility samples, like [`walkingSpeed`](./hkquantitytypeidentifier/walkingspeed.md) or [`walkingDoubleSupportPercentage`](./hkquantitytypeidentifier/walkingdoublesupportpercentage.md), this metadata key records the placement of the device as determined by the system.
 
 ## See Also
 
-- [let HKMetadataKeyDeviceSerialNumber: String](hkmetadatakeydeviceserialnumber.md)
+### Device Information Keys
+- [let HKMetadataKeyDeviceSerialNumber: String](./hkmetadatakeydeviceserialnumber.md)
   The key for the serial number of the device that generated the data.
-- [let HKMetadataKeyUDIDeviceIdentifier: String](hkmetadatakeyudideviceidentifier.md)
+- [let HKMetadataKeyUDIDeviceIdentifier: String](./hkmetadatakeyudideviceidentifier.md)
   The device identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyUDIProductionIdentifier: String](hkmetadatakeyudiproductionidentifier.md)
+- [let HKMetadataKeyUDIProductionIdentifier: String](./hkmetadatakeyudiproductionidentifier.md)
   The production identifier portion of a device’s UDI (unique device identifier).
-- [let HKMetadataKeyDigitalSignature: String](hkmetadatakeydigitalsignature.md)
+- [let HKMetadataKeyDigitalSignature: String](./hkmetadatakeydigitalsignature.md)
   A digital signature that can be used to validate the origin of the HealthKit object.
-- [let HKMetadataKeyDeviceName: String](hkmetadatakeydevicename.md)
+- [let HKMetadataKeyDeviceName: String](./hkmetadatakeydevicename.md)
   The name of the device that took this reading.
-- [let HKMetadataKeyDeviceManufacturerName: String](hkmetadatakeydevicemanufacturername.md)
+- [let HKMetadataKeyDeviceManufacturerName: String](./hkmetadatakeydevicemanufacturername.md)
   The name of the manufacturer of the device that took this reading.
-- [enum HKDevicePlacementSide](hkdeviceplacementside.md)
+- [enum HKDevicePlacementSide](./hkdeviceplacementside.md)
   Values that indicate the placement of the device that measured a sample.
-- [let HKMetadataKeyAppleDeviceCalibrated: String](hkmetadatakeyappledevicecalibrated.md)
+- [let HKMetadataKeyAppleDeviceCalibrated: String](./hkmetadatakeyappledevicecalibrated.md)
   The key for metadata indicating whether the system had data from a sufficient amount of calibrated sensors when recording the sample.
 
 

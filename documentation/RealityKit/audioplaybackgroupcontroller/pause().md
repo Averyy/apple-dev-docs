@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses playback of the audio resource while maintaining the position in the audio stream.
 
@@ -22,7 +23,7 @@ Pauses playback of the audio resource while maintaining the position in the audi
 
 #### Discussion
 
-Resume playback of a paused audio resource by calling the [`play()`](audioplaybackgroupcontroller/play().md) method.
+Resume playback of a paused audio resource by calling the [`play()`](./play%28%29.md) method.
 
 
 ---

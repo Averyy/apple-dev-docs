@@ -1,12 +1,15 @@
 # Retire a User
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retire a user account.
 
 **Availability**:
 - VPP License Management 1.0+
+
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
 #### Discussion
 
@@ -14,13 +17,13 @@ This service disassociates a VPP user from its iTunes account and releases the r
 
 Currently, ebook licenses are irrevocable.
 
-A retired VPP user can be reregistered, in the same organization, using the [`Register a User`](register-a-user.md) endpoint.
+A retired VPP user can be reregistered, in the same organization, using the [`Register a User`](./register-a-user.md) endpoint.
 
 ##### Example Request and Response
 
 **Request**:
 
-```None
+```
 {
   "userId": 1,
   "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ="
@@ -61,9 +64,9 @@ A retired VPP user can be reregistered, in the same organization, using the [`Re
 ## Topics
 
 ### Request and Response
-- [object RetireVppUserRequest](retirevppuserrequest.md)
+- [object RetireVppUserRequest](./retirevppuserrequest.md)
   The request to retire a user.
-- [object RetireVppUserResponse](retirevppuserresponse.md)
+- [object RetireVppUserResponse](./retirevppuserresponse.md)
   The response from retiring a user.
 
 ## Endpoint
@@ -72,17 +75,25 @@ A retired VPP user can be reregistered, in the same organization, using the [`Re
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `RetireVppUserRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`RetireVppUserResponse`, `application/json`)
 
 ## See Also
 
-- [Get a User](get-a-user.md)
+### User management
+- [Get a User](./get-a-user.md)
   Get information about a particular user.
-- [Get Users](get-users-5boi1.md)
+- [Get Users](./get-users-5boi1.md)
   Get information about a set of users.
-- [Register a User](register-a-user.md)
+- [Register a User](./register-a-user.md)
   Register a user with the volume-purchase program.
-- [Edit a User](edit-a-user.md)
+- [Edit a User](./edit-a-user.md)
   Modify details about a user.
 
 

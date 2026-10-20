@@ -1,12 +1,15 @@
 # openGLPixelFormat(forDisplayMask:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the OpenGL pixel format suitable for the specified displays.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
+
+> **Deprecated**: Please use CAMetalLayer instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns the OpenGL pixel format suitable for the specified displays.
 func openGLPixelFormat(forDisplayMask mask: UInt32) -> NSOpenGLPixelFormat
 ```
 
+```objc
+- (NSOpenGLPixelFormat *) openGLPixelFormatForDisplayMask:(uint32_t) mask;
+```
+
 #### Return Value
 
-An autoreleased [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object suitable for the displays.
+An autoreleased [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object suitable for the displays.
 
 #### Discussion
 
@@ -24,11 +31,12 @@ You must include an NSOpenGLPFAScreenMask specification in the pixel format attr
 
 ## Parameters
 
-- `mask`: A mask specifying the displays the returned [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) must be suitable for.
+- `mask`: A mask specifying the displays the returned [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) must be suitable for.
 
 ## See Also
 
-- [var openGLPixelFormat: NSOpenGLPixelFormat?](nsopengllayer/openglpixelformat.md)
+### Managing the Pixel Format
+- [var openGLPixelFormat: NSOpenGLPixelFormat?](./openglpixelformat.md)
   Provides access to the layer’s associated OpenGL pixel format.
 
 

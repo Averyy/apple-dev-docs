@@ -1,7 +1,8 @@
 # getNotificationCategories(completionHandler:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches your app’s registered notification categories.
 
@@ -16,14 +17,26 @@ Fetches your app’s registered notification categories.
 ## Declaration
 
 ```swift
+func getNotificationCategories(completionHandler: @escaping @Sendable (Set<UNNotificationCategory>) -> Void)
+```
+
+```swift
 func notificationCategories() async -> Set<UNNotificationCategory>
+```
+
+```objc
+- (void) getNotificationCategoriesWithCompletionHandler:(void (^)(NSSet<UNNotificationCategory *> *categories)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func notificationCategories() async -> Set<UNNotificationCategory>
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func notificationCategories() async -> Set<UNNotificationCategory>
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 Use this method to retrieve your app’s currently registered notification types. You might use this method when you want to augment the current set of categories with new categories later on. Simply merge the returned set with any new category objects and register the updated set.
 
@@ -34,11 +47,14 @@ let categories = await center.notificationCategories()
 
 ## Parameters
 
-- `completionHandler`: The block to execute asynchronously with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter: - **categories**: The set of [`UNNotificationCategory`](unnotificationcategory.md) objects containing your registered notification types. If your app has not yet registered any categories, this parameter is an empty set.
+- `completionHandler`: The block to execute asynchronously with the results. This block may be executed on a background thread. The block has no return value and takes the following parameter:
+
+  - **categories**: The set of [`UNNotificationCategory`](../unnotificationcategory.md) objects containing your registered notification types. If your app has not yet registered any categories, this parameter is an empty set.
 
 ## See Also
 
-- [func setNotificationCategories(Set<UNNotificationCategory>)](unusernotificationcenter/setnotificationcategories(_:).md)
+### Managing notification categories
+- [func setNotificationCategories(Set<UNNotificationCategory>)](./setnotificationcategories%28_%29.md)
   Registers the notification categories that your app supports.
 
 

@@ -1,7 +1,8 @@
 # stopMoveStep(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopMoveStep(with params: MTRColorControlClusterStopMoveStepParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stopMoveStep(with params: MTRColorControlClusterStopMoveStepParams) async throws
+```
+
+```objc
+- (void) stopMoveStepWithParams:(MTRColorControlClusterStopMoveStepParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

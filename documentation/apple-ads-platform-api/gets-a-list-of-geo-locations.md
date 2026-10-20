@@ -1,7 +1,8 @@
 # Query Geo Locations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Search for geographic locations by entity type and ID for use in ad group geo targeting.
 
@@ -12,7 +13,7 @@ Search for geographic locations by entity type and ID for use in ad group geo ta
 
 This endpoint returns a list of geographic locations matching the specified entity criteria. To look up valid geo IDs and names before assigning geo targets to an ad group, use this endpoint.
 
-The API sorts results alphabetically by `displayName` and paginates them using [`GeoSearchPagination`](geosearchpagination.md). Each result is a [`SearchEntity`](searchentity.md) and includes a hierarchy identifier in `legacyId`, which is a pipe-delimited string that encodes the full geographic hierarchy, such as `US|CA|San Francisco`. See [`GeoEntityType`](geoentitytype.md) for the full list of entity granularities.
+The API sorts results alphabetically by `displayName` and paginates them using [`GeoSearchPagination`](./geosearchpagination.md). Each result is a [`SearchEntity`](./searchentity.md) and includes a hierarchy identifier in `legacyId`, which is a pipe-delimited string that encodes the full geographic hierarchy, such as `US|CA|San Francisco`. See [`GeoEntityType`](./geoentitytype.md) for the full list of entity granularities.
 
 The `supplySource` field controls which entity types appear in the response. Use `APPSTORE` for App Store campaigns and `MAPS` for Apple Maps campaigns. Unlike the GET endpoint, the POST endpoint doesn’t filter by eligibility. The API always returns soft-blocked geos with their eligibility data included.
 
@@ -170,11 +171,28 @@ Batch-resolve multiple geo locations (a state and a postal code) in a single req
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GeoSearchPostRequest`
+
+## Responses
+
+- `200` OK (`GeoSearchResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Search Geo Locations](searches-for-a-list-of-geo-locations.md)
+- [Search Geo Locations](./searches-for-a-list-of-geo-locations.md)
   Search for geographic locations for use in ad group geo targeting.
 
 

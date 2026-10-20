@@ -1,7 +1,8 @@
 # DockKitError.notSupportedByDevice
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device doesn’t support the requested operation.
 
@@ -19,11 +20,12 @@ case notSupportedByDevice
 
 ## See Also
 
-- [DockKitError.invalidParameter](dockkiterror/invalidparameter.md)
+### Getting errors
+- [DockKitError.invalidParameter](./invalidparameter.md)
   The supplied parameter is invalid.
-- [DockKitError.notConnected](dockkiterror/notconnected.md)
+- [DockKitError.notConnected](./notconnected.md)
   The dock accessory isn’t connected to a device.
-- [DockKitError.notSupported](dockkiterror/notsupported.md)
+- [DockKitError.notSupported](./notsupported.md)
   The method isn’t supported on a specific platform.
 
 

@@ -1,7 +1,8 @@
 # ReviewSubmissionItemsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the response body.
 
@@ -10,14 +11,14 @@ The data element of the response body.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `reviewSubmissionItems`
 
 
 ---

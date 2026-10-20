@@ -1,7 +1,8 @@
 # kAXMarkedMisspelledTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFBooleanRef` value that indicates whether the text is visibly shown as misspelled (for example, with a squiggle underneath the text).
 
@@ -12,6 +13,10 @@ A `CFBooleanRef` value that indicates whether the text is visibly shown as missp
 
 ```swift
 var kAXMarkedMisspelledTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXMarkedMisspelledTextAttribute;
 ```
 
 #### Discussion

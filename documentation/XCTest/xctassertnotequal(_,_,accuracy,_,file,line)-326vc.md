@@ -1,7 +1,8 @@
 # XCTAssertNotEqual(_:_:accuracy:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that two numeric values aren’t equal within a specified accuracy.
 
@@ -13,24 +14,25 @@ func XCTAssertNotEqual<T>(_ expression1: @autoclosure () throws -> T, _ expressi
 
 #### Discussion
 
-`expression1`, `expression2`, and `accuracy` must all be of the same type `T`, and type T must conform to [`Numeric`](https://developer.apple.com/documentation/swift/numeric).
+`expression1`, `expression2`, and `accuracy` must all be of the same type `T`, and type T must conform to [`Numeric`](../Swift/numeric.md).
 
 ## Parameters
 
-- `expression1`: An expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/swift/numeric).
-- `expression2`: A second expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/swift/numeric).
-- `accuracy`: An expression of type `T`, where `T` conforms to [`Numeric`](https://developer.apple.com/documentation/swift/numeric). This parameter describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
+- `expression1`: An expression of type `T`, where `T` conforms to [`Numeric`](../Swift/numeric.md).
+- `expression2`: A second expression of type `T`, where `T` conforms to [`Numeric`](../Swift/numeric.md).
+- `accuracy`: An expression of type `T`, where `T` conforms to [`Numeric`](../Swift/numeric.md). This parameter describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
 - `message`: An optional description of a failure.
 - `file`: The file where the failure occurs. The default is the filename of the test case where you call this function.
 - `line`: The line number where the failure occurs. The default is the line number where you call this function.
 
 ## See Also
 
-- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertequal(_:_:accuracy:_:file:line:)-6frfw.md)
+### Tests for Equality Within a Specified Accuracy
+- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertequal%28_,_,accuracy,_,file,line%29-6frfw.md)
   Asserts that two floating-point values are equal within a specified accuracy.
-- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertequal(_:_:accuracy:_:file:line:)-4epu5.md)
+- [func XCTAssertEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertequal%28_,_,accuracy,_,file,line%29-4epu5.md)
   Asserts that two numeric values are equal within a specified accuracy.
-- [func XCTAssertNotEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertnotequal(_:_:accuracy:_:file:line:)-7jcd6.md)
+- [func XCTAssertNotEqual<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnotequal%28_,_,accuracy,_,file,line%29-7jcd6.md)
   Asserts that two floating-point values aren’t equal within a specified accuracy.
 
 

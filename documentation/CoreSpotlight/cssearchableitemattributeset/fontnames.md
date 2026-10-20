@@ -1,7 +1,8 @@
 # fontNames
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of font names the document uses.
 
@@ -18,33 +19,38 @@ An array of font names the document uses.
 var fontNames: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * fontNames;
+```
+
 ## See Also
 
-- [var audiences: [String]?](cssearchableitemattributeset/audiences.md)
+### Describing document content
+- [var audiences: [String]?](./audiences.md)
   A class of entity for which the item is intended or useful.
-- [var contentDescription: String?](cssearchableitemattributeset/contentdescription.md)
+- [var contentDescription: String?](./contentdescription.md)
   A description of the item’s content.
-- [var creator: String?](cssearchableitemattributeset/creator.md)
+- [var creator: String?](./creator.md)
   The name of the app that created the content.
-- [var encodingApplications: [String]?](cssearchableitemattributeset/encodingapplications.md)
+- [var encodingApplications: [String]?](./encodingapplications.md)
   The name of the apps that converted the original content into a PDF stream.
-- [var fileSize: NSNumber?](cssearchableitemattributeset/filesize.md)
+- [var fileSize: NSNumber?](./filesize.md)
   The size of the document file.
-- [var identifier: String?](cssearchableitemattributeset/identifier.md)
+- [var identifier: String?](./identifier.md)
   A formal identifier that references the document the item represents.
-- [var kind: String?](cssearchableitemattributeset/kind.md)
+- [var kind: String?](./kind.md)
   A description of the kind of document the item represents.
-- [var pageCount: NSNumber?](cssearchableitemattributeset/pagecount.md)
+- [var pageCount: NSNumber?](./pagecount.md)
   The number of pages in the document.
-- [var pageHeight: NSNumber?](cssearchableitemattributeset/pageheight.md)
+- [var pageHeight: NSNumber?](./pageheight.md)
   The height of the document page, in points (72 points per inch).
-- [var pageWidth: NSNumber?](cssearchableitemattributeset/pagewidth.md)
+- [var pageWidth: NSNumber?](./pagewidth.md)
   The width of the document page, in points (72 points per inch).
-- [var securityMethod: String?](cssearchableitemattributeset/securitymethod.md)
+- [var securityMethod: String?](./securitymethod.md)
   The security method (a type of encryption) that protects the document file.
-- [var subject: String?](cssearchableitemattributeset/subject.md)
+- [var subject: String?](./subject.md)
   The subject of the document.
-- [var theme: String?](cssearchableitemattributeset/theme.md)
+- [var theme: String?](./theme.md)
   The theme of the document.
 
 

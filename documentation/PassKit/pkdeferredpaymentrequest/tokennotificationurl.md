@@ -1,7 +1,8 @@
 # tokenNotificationURL
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to receive life-cycle notifications for the merchant-specific payment token the system issues for the request, if applicable.
 
@@ -18,13 +19,18 @@ A URL to receive life-cycle notifications for the merchant-specific payment toke
 var tokenNotificationURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSURL * tokenNotificationURL;
+```
+
 #### Discussion
 
 If you don’t set this property, the framework doesn’t send notifications when life-cycle changes occur for the token, for example when the framework deletes the token.
 
 ## See Also
 
-- [var managementURL: URL](pkdeferredpaymentrequest/managementurl.md)
+### Managing payment tokens
+- [var managementURL: URL](./managementurl.md)
   A URL that links to a page on your web site where the user can manage the payment method for the deferred payment, including deleting it.
 
 

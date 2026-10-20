@@ -1,7 +1,8 @@
 # readAttributePacketTxCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePacketTxCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePacketTxCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePacketTxCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

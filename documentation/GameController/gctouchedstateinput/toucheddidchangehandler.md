@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A block that the element calls when its touch value changes.
@@ -20,6 +21,10 @@ A block that the element calls when its touch value changes.
 var touchedDidChangeHandler: ((any GCPhysicalInputElement, any GCTouchedStateInput, Bool) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^touchedDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCTouchedStateInput>input, BOOL touched);
+```
+
 #### Discussion
 
 Use this property to get the latest state of the touch input. The block’s parameters are:
@@ -30,11 +35,12 @@ Use this property to get the latest state of the touch input. The block’s para
 
 ## See Also
 
-- [var isTouched: Bool](gctouchedstateinput/istouched.md)
+### Getting change information
+- [var isTouched: Bool](./istouched.md)
   A Boolean value that indicates whether the user touches the button.
-- [var lastTouchedStateTimestamp: TimeInterval](gctouchedstateinput/lasttouchedstatetimestamp.md)
+- [var lastTouchedStateTimestamp: TimeInterval](./lasttouchedstatetimestamp.md)
   The time of the most recent touch state change.
-- [var lastTouchedStateLatency: TimeInterval](gctouchedstateinput/lasttouchedstatelatency.md)
+- [var lastTouchedStateLatency: TimeInterval](./lasttouchedstatelatency.md)
   The time in seconds between the last touch state change and the current time.
 
 

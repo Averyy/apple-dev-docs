@@ -1,7 +1,8 @@
 # WAError.error(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A general error.
 
@@ -18,7 +19,8 @@ case error(WAError.ErrorDetails)
 
 ## See Also
 
-- [WAError.ErrorDetails](waerror/errordetails.md)
+### Checking for general errors
+- [WAError.ErrorDetails](./errordetails.md)
   The optional details describing the error.
 
 

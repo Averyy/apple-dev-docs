@@ -1,7 +1,8 @@
 # MLOptimizationHints.ReshapeFrequency
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The anticipated frequency of changing input shapes.
 
@@ -23,25 +24,26 @@ enum ReshapeFrequency
 ## Topics
 
 ### Enumeration Cases
-- [MLOptimizationHints.ReshapeFrequency.frequent](mloptimizationhints-swift.struct/reshapefrequency-swift.enum/frequent.md)
+- [MLOptimizationHints.ReshapeFrequency.frequent](./reshapefrequency-swift.enum/frequent.md)
   The input shape is expected to change frequently on each prediction sent to this loaded model instance. Core ML will try to minimize the latency associated with shape changes and avoid expensive shape-specific optimizations prior to prediction computation. While prediction computation may be slower for each specific shape, switching between shapes should be faster.  This is the default.
-- [MLOptimizationHints.ReshapeFrequency.infrequent](mloptimizationhints-swift.struct/reshapefrequency-swift.enum/infrequent.md)
+- [MLOptimizationHints.ReshapeFrequency.infrequent](./reshapefrequency-swift.enum/infrequent.md)
   The input shape is expected to be stable and many/all predictions sent to this loaded model instance would use the same input shapes repeatedly. On the shape change, Core ML re-optimizes the internal engine for the new shape if possible. The re-optimization takes some time, but the subsequent predictions for the shape should run faster.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var reshapeFrequency: MLOptimizationHints.ReshapeFrequency](mloptimizationhints-swift.struct/reshapefrequency-swift.property.md)
+### Getting the reshape frequency
+- [var reshapeFrequency: MLOptimizationHints.ReshapeFrequency](./reshapefrequency-swift.property.md)
   The anticipated reshape frequency
 
 

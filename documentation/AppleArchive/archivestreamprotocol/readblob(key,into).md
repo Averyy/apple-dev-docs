@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads the current entry blob data.
@@ -12,7 +13,7 @@ Reads the current entry blob data.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ func readBlob(key: ArchiveHeader.FieldKey, into buffer: UnsafeMutableRawBufferPo
 
 ## See Also
 
-- [func writeBlob(key: ArchiveHeader.FieldKey, from: UnsafeRawBufferPointer) throws](archivestreamprotocol/writeblob(key:from:).md)
+### Reading and Writing Blobs
+- [func writeBlob(key: ArchiveHeader.FieldKey, from: UnsafeRawBufferPointer) throws](./writeblob%28key,from%29.md)
   Writes an entry blob data.
 
 

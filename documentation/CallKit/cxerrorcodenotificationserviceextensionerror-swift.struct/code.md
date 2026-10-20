@@ -1,7 +1,8 @@
 # CXErrorCodeNotificationServiceExtensionError.Code
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for errors returned when reporting new, incoming VoIP calls.
 
@@ -18,27 +19,31 @@ Constants for errors returned when reporting new, incoming VoIP calls.
 enum Code
 ```
 
+```c
+enum CXErrorCodeNotificationServiceExtensionError : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [CXErrorCodeNotificationServiceExtensionError.Code.invalidClientProcess](cxerrorcodenotificationserviceextensionerror-swift.struct/code/invalidclientprocess.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code.invalidClientProcess](./code/invalidclientprocess.md)
   An error indicating that an invalid client process reported the incoming call.
-- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](cxerrorcodenotificationserviceextensionerror-swift.struct/code/missingnotificationfilteringentitlement.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code.missingNotificationFilteringEntitlement](./code/missingnotificationfilteringentitlement.md)
   An error indicating that the notification service extension is missing the required filtering entitlement.
-- [CXErrorCodeNotificationServiceExtensionError.Code.unknown](cxerrorcodenotificationserviceextensionerror-swift.struct/code/unknown.md)
+- [CXErrorCodeNotificationServiceExtensionError.Code.unknown](./code/unknown.md)
   An error that occurs when there is an unknown problem.
 ### Initializers
-- [init?(rawValue: Int)](cxerrorcodenotificationserviceextensionerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

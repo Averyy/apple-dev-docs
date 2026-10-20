@@ -1,7 +1,8 @@
 # GenerationOptions.SamplingMode
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines how values are sampled from a probability distribution.
 
@@ -26,38 +27,39 @@ A model builds its response to a prompt in a loop. At each iteration in the loop
 ## Topics
 
 ### Sampling modes
-- [static var greedy: GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct/greedy.md)
+- [static var greedy: GenerationOptions.SamplingMode](./samplingmode-swift.struct/greedy.md)
   A sampling mode that always chooses the most likely token.
-- [static func random(probabilityThreshold: Double, seed: UInt64?) -> GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct/random(probabilitythreshold:seed:).md)
+- [static func random(probabilityThreshold: Double, seed: UInt64?) -> GenerationOptions.SamplingMode](./samplingmode-swift.struct/random%28probabilitythreshold,seed%29.md)
   A mode that considers a variable number of high-probability tokens based on the specified threshold.
-- [static func random(top: Int, seed: UInt64?) -> GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct/random(top:seed:).md)
+- [static func random(top: Int, seed: UInt64?) -> GenerationOptions.SamplingMode](./samplingmode-swift.struct/random%28top,seed%29.md)
   A sampling mode that considers a fixed number of high-probability tokens.
 ### Getting the kind of sampling
-- [let kind: GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.property.md)
+- [let kind: GenerationOptions.SamplingMode.Kind](./samplingmode-swift.struct/kind-swift.property.md)
   The strategy this sampling mode uses to choose the next token.
-- [GenerationOptions.SamplingMode.Kind](generationoptions/samplingmode-swift.struct/kind-swift.enum.md)
+- [GenerationOptions.SamplingMode.Kind](./samplingmode-swift.struct/kind-swift.enum.md)
   A representation of the different strategies for choosing the next token.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var temperature: Double?](generationoptions/temperature.md)
+### Configuring options
+- [var temperature: Double?](./temperature.md)
   A value that influences the confidence of the model’s response.
-- [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
+- [var sampling: GenerationOptions.SamplingMode?](./sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
+- [var samplingMode: GenerationOptions.SamplingMode?](./samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
-- [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
+- [var toolCallingMode: GenerationOptions.ToolCallingMode?](./toolcallingmode-swift.property.md)
   The tool calling requirements.
-- [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
+- [GenerationOptions.ToolCallingMode](./toolcallingmode-swift.struct.md)
   A value that describes how the model uses tools.
-- [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
+- [var maximumResponseTokens: Int?](./maximumresponsetokens.md)
   The maximum number of tokens the model is allowed to produce in its response.
 
 

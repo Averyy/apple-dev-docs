@@ -1,7 +1,8 @@
 # monospaced
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The monospace variant of the default typeface.
 
@@ -19,17 +20,22 @@ The monospace variant of the default typeface.
 static let monospaced: UIFontDescriptor.SystemDesign
 ```
 
+```c
+extern UIFontDescriptorSystemDesign const UIFontDescriptorSystemDesignMonospaced;
+```
+
 #### Discussion
 
-Using this constant with [`withDesign(_:)`](uifontdescriptor/withdesign(_:).md) returns SF Mono.
+Using this constant with [`withDesign(_:)`](../withdesign%28_%29.md) returns SF Mono.
 
 ## See Also
 
-- [static let `default`: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/default.md)
+### Typeface designs
+- [static let `default`: UIFontDescriptor.SystemDesign](./default.md)
   The default typeface for an app’s user interface.
-- [static let rounded: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/rounded.md)
+- [static let rounded: UIFontDescriptor.SystemDesign](./rounded.md)
   The rounded variant of the default typeface.
-- [static let serif: UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign/serif.md)
+- [static let serif: UIFontDescriptor.SystemDesign](./serif.md)
   The serif variant of the default typeface.
 
 

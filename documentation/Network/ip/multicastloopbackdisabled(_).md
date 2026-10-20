@@ -1,7 +1,8 @@
 # multicastLoopbackDisabled(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specify if multicast packets should be looped back for local delivery.
 

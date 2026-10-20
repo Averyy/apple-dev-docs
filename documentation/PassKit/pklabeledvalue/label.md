@@ -1,7 +1,8 @@
 # label
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the label for the value.
 
@@ -9,7 +10,7 @@ A string that contains the label for the value.
 - iOS 10.1+
 - iPadOS 10.1+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 3.1+
 
@@ -19,9 +20,14 @@ A string that contains the label for the value.
 var label: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * label;
+```
+
 ## See Also
 
-- [var value: String](pklabeledvalue/value.md)
+### Labeled value properties
+- [var value: String](./value.md)
   A string that contains the value associated with a label.
 
 

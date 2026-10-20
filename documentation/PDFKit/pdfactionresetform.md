@@ -1,7 +1,8 @@
 # PDFActionResetForm
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 `PDFActionResetForm`, a subclass of `PDFAction`, defines methods for getting and clearing fields in a PDF form.
 
@@ -19,6 +20,10 @@
 class PDFActionResetForm
 ```
 
+```objc
+@interface PDFActionResetForm : PDFAction
+```
+
 #### Overview
 
 A `PDFActionResetForm` object represents an action associated with a PDF form.
@@ -26,39 +31,40 @@ A `PDFActionResetForm` object represents an action associated with a PDF form.
 ## Topics
 
 ### Initializing a Reset Form Action
-- [init()](pdfactionresetform/init.md)
+- [init()](./pdfactionresetform/init%28%29.md)
   Initializes a reset form action.
 ### Accessing and Changing Fields
-- [var fields: [String]?](pdfactionresetform/fields.md)
+- [var fields: [String]?](./pdfactionresetform/fields.md)
   Returns an array of fields associated with the reset action.
 ### Determining Whether Fields are Cleared When the Action is Performed
-- [var fieldsIncludedAreCleared: Bool](pdfactionresetform/fieldsincludedarecleared.md)
+- [var fieldsIncludedAreCleared: Bool](./pdfactionresetform/fieldsincludedarecleared.md)
   Sets whether the fields associated with the reset action are cleared when the action is performed.
 
 ## Relationships
 
 ### Inherits From
-- [PDFAction](pdfaction.md)
+- [PDFAction](./pdfaction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFActionGoTo](pdfactiongoto.md)
+### Action Types
+- [class PDFActionGoTo](./pdfactiongoto.md)
   `PDFActionGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action.
-- [class PDFActionNamed](pdfactionnamed.md)
+- [class PDFActionNamed](./pdfactionnamed.md)
   `PDFActionNamed` defines methods used to work with actions in PDF documents, some of which are named in the Adobe PDF Specification.
-- [class PDFActionRemoteGoTo](pdfactionremotegoto.md)
+- [class PDFActionRemoteGoTo](./pdfactionremotegoto.md)
   `PDFActionRemoteGoTo`, a subclass of `PDFAction`, defines methods for getting and setting the destination of a go-to action that targets another document.
-- [class PDFActionURL](pdfactionurl.md)
+- [class PDFActionURL](./pdfactionurl.md)
   `PDFActionURL`, a subclass of `PDFAction`, defines methods for getting and setting the URL associated with a URL action.
-- [enum PDFActionNamedName](pdfactionnamedname.md)
+- [enum PDFActionNamedName](./pdfactionnamedname.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SetTerminalType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the terminal type of the stream.
 
@@ -10,7 +11,7 @@ Sets the terminal type of the stream.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetTerminalType(IOUserVideoStreamTerminalType in_terminal_type);
 ```
 
@@ -24,9 +25,10 @@ You can change the terminal type dynamically. On success, the system sends a not
 
 ## See Also
 
-- [GetTerminalType](iouservideostream/getterminaltype.md)
+### Working with stream terminals
+- [GetTerminalType](./getterminaltype.md)
   Gets the terminal type of the stream.
-- [IOUserVideoStreamTerminalType](videodriverkit/iouservideostreamterminaltype.md)
+- [IOUserVideoStreamTerminalType](../videodriverkit-page/iouservideostreamterminaltype.md)
   The terminal type of video stream.
 
 

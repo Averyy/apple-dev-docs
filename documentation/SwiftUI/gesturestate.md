@@ -1,7 +1,8 @@
 # GestureState
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that updates a property while the user performs a gesture and resets the property back to its initial state when the gesture ends.
 
@@ -23,13 +24,13 @@ A property wrapper type that updates a property while the user performs a gestur
 
 ## Mentions
 
-- [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
+- [Adding interactivity with gestures](./adding-interactivity-with-gestures.md)
 
 #### Overview
 
-Declare a property as `@GestureState`, pass as a binding to it as a parameter to a gesture’s [`updating(_:body:)`](gesture/updating(_:body:).md) callback, and receive updates to it. A property that’s declared as `@GestureState` implicitly resets when the gesture becomes inactive, making it suitable for tracking transient state.
+Declare a property as `@GestureState`, pass as a binding to it as a parameter to a gesture’s [`updating(_:body:)`](./gesture/updating%28_,body%29.md) callback, and receive updates to it. A property that’s declared as `@GestureState` implicitly resets when the gesture becomes inactive, making it suitable for tracking transient state.
 
-Add a long-press gesture to a [`Circle`](circle.md), and update the interface during the gesture by declaring a property as `@GestureState`:
+Add a long-press gesture to a [`Circle`](./circle.md), and update the interface during the gesture by declaring a property as `@GestureState`:
 
 ```swift
 struct SimpleLongPressGestureView: View {
@@ -54,38 +55,39 @@ struct SimpleLongPressGestureView: View {
 ## Topics
 
 ### Creating a gesture state
-- [init(initialValue: Value)](gesturestate/init(initialvalue:).md)
+- [init(initialValue: Value)](./gesturestate/init%28initialvalue%29.md)
   Creates a view state that’s derived from a gesture with an initial value.
-- [init(initialValue: Value, reset: (Value, inout Transaction) -> Void)](gesturestate/init(initialvalue:reset:).md)
+- [init(initialValue: Value, reset: (Value, inout Transaction) -> Void)](./gesturestate/init%28initialvalue,reset%29.md)
   Creates a view state that’s derived from a gesture with an initial state value and a closure that provides a transaction to reset it.
-- [init(initialValue: Value, resetTransaction: Transaction)](gesturestate/init(initialvalue:resettransaction:).md)
+- [init(initialValue: Value, resetTransaction: Transaction)](./gesturestate/init%28initialvalue,resettransaction%29.md)
   Creates a view state that’s derived from a gesture with an initial state value and a transaction to reset it.
-- [init(reset: (Value, inout Transaction) -> Void)](gesturestate/init(reset:).md)
+- [init(reset: (Value, inout Transaction) -> Void)](./gesturestate/init%28reset%29.md)
   Creates a view state that’s derived from a gesture with a closure that provides a transaction to reset it.
-- [init(resetTransaction: Transaction)](gesturestate/init(resettransaction:).md)
+- [init(resetTransaction: Transaction)](./gesturestate/init%28resettransaction%29.md)
   Creates a view state that’s derived from a gesture with a transaction to reset it.
-- [init(wrappedValue: Value)](gesturestate/init(wrappedvalue:).md)
+- [init(wrappedValue: Value)](./gesturestate/init%28wrappedvalue%29.md)
   Creates a view state that’s derived from a gesture.
-- [init(wrappedValue: Value, reset: (Value, inout Transaction) -> Void)](gesturestate/init(wrappedvalue:reset:).md)
+- [init(wrappedValue: Value, reset: (Value, inout Transaction) -> Void)](./gesturestate/init%28wrappedvalue,reset%29.md)
   Creates a view state that’s derived from a gesture with a wrapped state value and a closure that provides a transaction to reset it.
-- [init(wrappedValue: Value, resetTransaction: Transaction)](gesturestate/init(wrappedvalue:resettransaction:).md)
+- [init(wrappedValue: Value, resetTransaction: Transaction)](./gesturestate/init%28wrappedvalue,resettransaction%29.md)
   Creates a view state that’s derived from a gesture with a wrapped state value and a transaction to reset it.
 ### Getting the state
-- [var wrappedValue: Value](gesturestate/wrappedvalue.md)
+- [var wrappedValue: Value](./gesturestate/wrappedvalue.md)
   The wrapped value referenced by the gesture state property.
-- [var projectedValue: GestureState<Value>](gesturestate/projectedvalue.md)
+- [var projectedValue: GestureState<Value>](./gesturestate/projectedvalue.md)
   A binding to the gesture state property.
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GestureStateGesture](gesturestategesture.md)
+### Managing gesture state
+- [struct GestureStateGesture](./gesturestategesture.md)
   A gesture that updates the state provided by a gesture’s updating callback.
 
 

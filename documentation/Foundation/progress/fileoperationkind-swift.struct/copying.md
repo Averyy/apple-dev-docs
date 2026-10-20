@@ -1,7 +1,8 @@
 # copying
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The progress is tracking the copying of a file from source to destination.
 
@@ -20,15 +21,20 @@ The progress is tracking the copying of a file from source to destination.
 static let copying: Progress.FileOperationKind
 ```
 
+```c
+extern NSProgressFileOperationKind const NSProgressFileOperationKindCopying;
+```
+
 ## See Also
 
-- [static let decompressingAfterDownloading: Progress.FileOperationKind](progress/fileoperationkind-swift.struct/decompressingafterdownloading.md)
+### Recognizing Kinds of File Operations
+- [static let decompressingAfterDownloading: Progress.FileOperationKind](./decompressingafterdownloading.md)
   The progress is tracking file decompression after a download.
-- [static let downloading: Progress.FileOperationKind](progress/fileoperationkind-swift.struct/downloading.md)
+- [static let downloading: Progress.FileOperationKind](./downloading.md)
   The progress is tracking a file download operation.
-- [static let uploading: Progress.FileOperationKind](progress/fileoperationkind-swift.struct/uploading.md)
+- [static let uploading: Progress.FileOperationKind](./uploading.md)
   The progress is tracking a file upload operation.
-- [static let receiving: Progress.FileOperationKind](progress/fileoperationkind-swift.struct/receiving.md)
+- [static let receiving: Progress.FileOperationKind](./receiving.md)
   The progress is tracking the receipt of a file from another source.
 
 

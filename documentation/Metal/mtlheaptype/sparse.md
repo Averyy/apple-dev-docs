@@ -1,7 +1,8 @@
 # MTLHeapType.sparse
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The heap contains sparse texture tiles.
 
@@ -19,15 +20,20 @@ The heap contains sparse texture tiles.
 case sparse
 ```
 
+```c
+MTLHeapTypeSparse
+```
+
 ## Mentions
 
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](../creating-sparse-heaps-and-sparse-textures.md)
 
 ## See Also
 
-- [MTLHeapType.automatic](mtlheaptype/automatic.md)
+### Specifying the heap type
+- [MTLHeapType.automatic](./automatic.md)
   A heap that automatically places new resource allocations.
-- [MTLHeapType.placement](mtlheaptype/placement.md)
+- [MTLHeapType.placement](./placement.md)
   The app controls placement of resources on the heap.
 
 

@@ -89,7 +89,7 @@ you can read any information from the budget
 and get a correct answer,
 as shown in the figure below.
 
-![](memory_shopping)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/memory_shopping@2x.png)
 
 While you're adding items to the budget,
 it's in a temporary, invalid state
@@ -281,7 +281,7 @@ The read and write accesses
 refer to the same memory and they overlap,
 producing a conflict.
 
-![](memory_increment)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/memory_increment@2x.png)
 
 One way to solve this conflict
 is to make an explicit copy of `stepSize`:
@@ -499,7 +499,7 @@ they access different locations in memory.
 Even though the two write accesses overlap in time,
 they don't conflict.
 
-![](memory_share_health_maria)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/memory_share_health_maria@2x.png)
 
 However,
 if you pass `oscar` as the argument to `shareHealth(with:)`,
@@ -543,7 +543,7 @@ The two write accesses
 refer to the same memory and they overlap,
 producing a conflict.
 
-![](memory_share_health_oscar)
+![](https://raw.githubusercontent.com/swiftlang/swift-book/main/TSPL.docc/Assets/memory_share_health_oscar@2x.png)
 
 ## Conflicting Access to Properties
 

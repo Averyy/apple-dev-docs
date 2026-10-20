@@ -1,14 +1,15 @@
 # msgh_trailer_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_trailer_size_t msgh_trailer_size;
 ```
 

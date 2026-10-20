@@ -1,7 +1,8 @@
 # NSAttributedString.DocumentReadingOptionKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for constructing an attributed string from data you read from disk.
 
@@ -22,66 +23,67 @@ struct DocumentReadingOptionKey
 
 #### Overview
 
-The [`NSAttributedString.DocumentReadingOptionKey`](nsattributedstring/documentreadingoptionkey.md) type defines attributes to use when creating an attributed string from data in a file. Use these strings with methods such as [`init(data:options:documentAttributes:)`](nsattributedstring/init(data:options:documentattributes:).md), [`init(HTML:options:documentAttributes:)`](nsattributedstring/init(html:options:documentattributes:).md), [`init(URL:options:documentAttributes:)`](nsattributedstring/init(url:options:documentattributes:).md), [`read(from:options:documentAttributes:)`](nsmutableattributedstring/read(from:options:documentattributes:)-5mbcx.md), and [`read(from:options:documentAttributes:)`](nsmutableattributedstring/read(from:options:documentattributes:)-54wth.md) to specify expected details. For example, specify the [`documentType`](nsattributedstring/documentreadingoptionkey/documenttype.md) attribute to interpret the file data as a specific file format.
+The [`NSAttributedString.DocumentReadingOptionKey`](./documentreadingoptionkey.md) type defines attributes to use when creating an attributed string from data in a file. Use these strings with methods such as [`init(data:options:documentAttributes:)`](./init%28data,options,documentattributes%29.md), [`init(HTML:options:documentAttributes:)`](./init%28html,options,documentattributes%29.md), [`init(URL:options:documentAttributes:)`](./init%28url,options,documentattributes%29.md), [`read(from:options:documentAttributes:)`](../nsmutableattributedstring/read%28from,options,documentattributes%29-5mbcx.md), and [`read(from:options:documentAttributes:)`](../nsmutableattributedstring/read%28from,options,documentattributes%29-54wth.md) to specify expected details. For example, specify the [`documentType`](./documentreadingoptionkey/documenttype.md) attribute to interpret the file data as a specific file format.
 
 ## Topics
 
 ### Getting the document options
-- [static let baseURL: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/baseurl.md)
+- [static let baseURL: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/baseurl.md)
   The base URL for HTML documents.
-- [static let characterEncoding: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/characterencoding.md)
+- [static let characterEncoding: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/characterencoding.md)
   The string encoding.
-- [static let defaultAttributes: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/defaultattributes.md)
+- [static let defaultAttributes: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/defaultattributes.md)
   The default attributes to apply to plain files.
-- [static let documentType: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/documenttype.md)
+- [static let documentType: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/documenttype.md)
   The document type.
-- [static let fileType: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/filetype.md)
+- [static let fileType: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/filetype.md)
   The file type.
-- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/readaccessurl.md)
+- [static let readAccessURL: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/readaccessurl.md)
   The local files WebKit can access when loading content.
-- [static let textEncodingName: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/textencodingname.md)
+- [static let textEncodingName: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/textencodingname.md)
   The text encoding to use.
-- [static let textSizeMultiplier: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/textsizemultiplier.md)
+- [static let textSizeMultiplier: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/textsizemultiplier.md)
   The scale factor for font sizes.
-- [static let timeout: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/timeout.md)
+- [static let timeout: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/timeout.md)
   The time, in seconds, to wait for a document to finish loading.
-- [static let webPreferences: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/webpreferences.md)
+- [static let webPreferences: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/webpreferences.md)
   A WebPreferences object.
-- [static let webResourceLoadDelegate: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/webresourceloaddelegate.md)
+- [static let webResourceLoadDelegate: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/webresourceloaddelegate.md)
   An object to serve as the web resource loading delegate.
 ### Getting the font-scaling options
-- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/sourcetextscaling.md)
+- [static let sourceTextScaling: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/sourcetextscaling.md)
   The text-scaling mode to associate with the document’s content.
-- [static let targetTextScaling: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/targettextscaling.md)
+- [static let targetTextScaling: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/targettextscaling.md)
   The text scaling mode to use after reading the text from disk.
 ### Initializers
-- [init(String)](nsattributedstring/documentreadingoptionkey/init(_:).md)
+- [init(String)](./documentreadingoptionkey/init%28_%29.md)
   Creates a document reading option key with the specified raw value.
-- [init(rawValue: String)](nsattributedstring/documentreadingoptionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./documentreadingoptionkey/init%28rawvalue%29.md)
   Creates a document reading option key with the specified raw value.
 ### Type Properties
-- [static let textKit1ListMarkerFormatDocumentOption: NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey/textkit1listmarkerformatdocumentoption.md)
+- [static let textKit1ListMarkerFormatDocumentOption: NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey/textkit1listmarkerformatdocumentoption.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey.md)
+### Getting document-wide attributes
+- [NSAttributedString.DocumentAttributeKey](./documentattributekey.md)
   The attributes you apply to an entire document.
-- [HTML attributes](html-attributes.md)
+- [HTML attributes](../html-attributes.md)
   Documentwide attributes that provide control over the form of generated HTML.
-- [NSAttributedString.DocumentType](nsattributedstring/documenttype.md)
+- [NSAttributedString.DocumentType](./documenttype.md)
   Constants for the document type document attribute key.
-- [NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey.md)
+- [NSAttributedString.TextLayoutSectionKey](./textlayoutsectionkey.md)
   Constants for the text layout sections document attribute key.
-- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
+- [enum NSTextScalingType](../../UIKit/nstextscalingtype.md)
   Constants that specify the text scaling.
 
 

@@ -1,7 +1,8 @@
 # roundedRectangle(cornerRadius:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A rectangle with rounded corners.
 

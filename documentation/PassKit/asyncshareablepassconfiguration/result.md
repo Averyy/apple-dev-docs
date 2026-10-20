@@ -1,13 +1,14 @@
 # AsyncShareablePassConfiguration.Result
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,20 @@ enum Result
 ## Topics
 
 ### Enumeration Cases
-- [AsyncShareablePassConfiguration.Result.failure(_:)](asyncshareablepassconfiguration/result/failure(_:).md)
-- [AsyncShareablePassConfiguration.Result.loading](asyncshareablepassconfiguration/result/loading.md)
-- [AsyncShareablePassConfiguration.Result.success(_:)](asyncshareablepassconfiguration/result/success(_:).md)
+- [AsyncShareablePassConfiguration.Result.failure(_:)](./result/failure%28_%29.md)
+- [AsyncShareablePassConfiguration.Result.loading](./result/loading.md)
+- [AsyncShareablePassConfiguration.Result.success(_:)](./result/success%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(metadata: [PKShareablePassMetadata], action: PKAddShareablePassConfigurationPrimaryAction, content: (AsyncShareablePassConfiguration<Content>.Result) -> Content)](asyncshareablepassconfiguration/init(metadata:action:content:).md)
+### Creating the configuration
+- [init(metadata: [PKShareablePassMetadata], action: PKAddShareablePassConfigurationPrimaryAction, content: (AsyncShareablePassConfiguration<Content>.Result) -> Content)](./init%28metadata,action,content%29.md)
 
 
 ---

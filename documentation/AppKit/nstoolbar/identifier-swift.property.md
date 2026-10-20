@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value you use to identify the toolbar in your app.
 
@@ -9,12 +10,16 @@ The value you use to identify the toolbar in your app.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var identifier: NSToolbar.Identifier { get }
+```
+
+```objc
+@property (copy, readonly) NSToolbarIdentifier identifier;
 ```
 
 #### Discussion
@@ -25,9 +30,11 @@ If the toolbar autosaves its contents, the system associates the configuration d
 
 ## See Also
 
-- [var autosavesConfiguration: Bool](nstoolbar/autosavesconfiguration.md)
+### Related Documentation
+- [var autosavesConfiguration: Bool](./autosavesconfiguration.md)
   A Boolean value that indicates whether the toolbar autosaves its configuration.
-- [NSToolbar.Identifier](nstoolbar/identifier-swift.typealias.md)
+### Getting the toolbar’s identity
+- [NSToolbar.Identifier](./identifier-swift.typealias.md)
   A string value that you use to differentiate your app’s toolbars.
 
 

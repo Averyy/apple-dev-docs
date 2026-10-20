@@ -1,7 +1,8 @@
 # setBackgroundColor(_:)
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 class func setBackgroundColor(_ color: MEMessageAction.MessageColor) -> Self
 ```
 
+```objc
++ (instancetype) setBackgroundColorActionWithColor:(MEMessageActionMessageColor) color;
+```
+
 ## See Also
 
-- [class func flag(MEMessageAction.Flag) -> Self](memessageaction/flag(_:).md)
+### Type Methods
+- [class func flag(MEMessageAction.Flag) -> Self](./flag%28_%29.md)
 
 
 ---

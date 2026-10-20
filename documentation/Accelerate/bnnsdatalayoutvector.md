@@ -1,7 +1,8 @@
 # BNNSDataLayoutVector
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 1D vector.
 
@@ -20,11 +21,16 @@ A constant that represents a 1D vector.
 var BNNSDataLayoutVector: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayoutVector
+```
+
 ## See Also
 
-- [var BNNSDataLayout1DFirstMajor: BNNSDataLayout](bnnsdatalayout1dfirstmajor.md)
+### 1D Data Layouts
+- [var BNNSDataLayout1DFirstMajor: BNNSDataLayout](./bnnsdatalayout1dfirstmajor.md)
   A constant that represents a 1D first-major vector.
-- [var BNNSDataLayout1DLastMajor: BNNSDataLayout](bnnsdatalayout1dlastmajor.md)
+- [var BNNSDataLayout1DLastMajor: BNNSDataLayout](./bnnsdatalayout1dlastmajor.md)
   A constant that represents a 1D last-major vector.
 
 

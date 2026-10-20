@@ -1,7 +1,8 @@
 # littleTip
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tip of the little finger.
 
@@ -19,13 +20,18 @@ The tip of the little finger.
 static let littleTip: VNHumanHandPoseObservation.JointName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointName const VNHumanHandPoseObservationJointNameLittleTip;
+```
+
 ## See Also
 
-- [static let littleDIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littledip.md)
+### Little
+- [static let littleDIP: VNHumanHandPoseObservation.JointName](./littledip.md)
   The little finger’s distal interphalangeal (DIP) joint.
-- [static let littlePIP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littlepip.md)
+- [static let littlePIP: VNHumanHandPoseObservation.JointName](./littlepip.md)
   The little finger’s proximal interphalangeal (PIP) joint.
-- [static let littleMCP: VNHumanHandPoseObservation.JointName](vnhumanhandposeobservation/jointname/littlemcp.md)
+- [static let littleMCP: VNHumanHandPoseObservation.JointName](./littlemcp.md)
   The little finger’s metacarpophalangeal (MCP) joint.
 
 

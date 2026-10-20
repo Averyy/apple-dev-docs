@@ -1,7 +1,8 @@
 # topLeading(relativeTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The top leading corner of the frame, in the given user interface layout direction.
 

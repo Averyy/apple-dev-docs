@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty shape structure.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(rank: Int, shape: UnsafeMutablePointer<UInt64>?)](bnns_graph_shape_t/init(rank:shape:).md)
+### Initializing a graph shape
+- [init(rank: Int, shape: UnsafeMutablePointer<UInt64>?)](./init%28rank,shape%29.md)
   Creates a shape structure with the specified rank and dimensions.
 
 

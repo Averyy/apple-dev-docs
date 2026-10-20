@@ -1,7 +1,8 @@
 # init(descriptor:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new object specifier for an Apple event descriptor.
 
@@ -12,6 +13,10 @@ Returns a new object specifier for an Apple event descriptor.
 
 ```swift
 init?(descriptor: NSAppleEventDescriptor)
+```
+
+```objc
++ (NSScriptObjectSpecifier *) objectSpecifierWithDescriptor:(NSAppleEventDescriptor *) descriptor;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ If `objectSpecifierWithDescriptor:` is invoked and fails during the execution of
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

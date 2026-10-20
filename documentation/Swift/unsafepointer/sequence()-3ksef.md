@@ -1,7 +1,8 @@
 # sequence()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,8 @@
 ```swift
 func sequence() -> MIDIEventPacket.WordSequence
 ```
+
+Available when `Pointee` is `MIDIEventPacket`.
 
 
 ---

@@ -1,6 +1,7 @@
 # Content types and metadata
 
-**Framework**: Now Playing
+**Framework**: Now Playing  
+**Role**: API Collection
 
 Describe the media your app is playing.
 
@@ -8,7 +9,7 @@ Describe the media your app is playing.
 
 Use content types to tell the system what kind of media your app is playing. Each content type provides metadata fields appropriate for its media category, such as the song title and artist for music, or the show name and season for TV episodes.
 
-Return a content type from your [`content`](mediasessionrepresentable/content.md) or [`content`](remotemediasessionrepresentable/content.md) property. The framework uses this information to populate the Lock Screen, Control Center, and connected accessories.
+Return a content type from your [`content`](./mediasessionrepresentable/content.md) or [`content`](./remotemediasessionrepresentable/content.md) property. The framework uses this information to populate the Lock Screen, Control Center, and connected accessories.
 
 Each content type has a small set of initializer parameters for its core metadata, plus mutable properties for additional fields like `isExplicit`, `genre`, `collectionID`, and `serviceID`. Set those properties on the content value before returning it:
 
@@ -36,42 +37,43 @@ var content: (any MediaContentRepresentable)? {
 ## Topics
 
 ### Presenting content
-- [protocol MediaContentRepresentable](mediacontentrepresentable.md)
+- [protocol MediaContentRepresentable](./mediacontentrepresentable.md)
   A protocol that describes media content being played.
-- [struct MusicContent](musiccontent.md)
+- [struct MusicContent](./musiccontent.md)
   Content representing a music track or song.
-- [struct PodcastContent](podcastcontent.md)
+- [struct PodcastContent](./podcastcontent.md)
   Content representing a podcast episode.
-- [struct MovieContent](moviecontent.md)
+- [struct MovieContent](./moviecontent.md)
   Content representing a movie.
-- [struct TVShowContent](tvshowcontent.md)
+- [struct TVShowContent](./tvshowcontent.md)
   Content representing a TV show episode.
-- [struct BookContent](bookcontent.md)
+- [struct BookContent](./bookcontent.md)
   Content representing an audiobook or book being read aloud.
-- [struct RadioContent](radiocontent.md)
+- [struct RadioContent](./radiocontent.md)
   Content representing a radio station or live audio stream.
-- [struct HomeMediaContent](homemediacontent.md)
+- [struct HomeMediaContent](./homemediacontent.md)
   Content representing home media or ambient content.
-- [struct GenericContent](genericcontent.md)
+- [struct GenericContent](./genericcontent.md)
   Content representing generic or unspecified media.
 ### Specifying type and duration
-- [enum MediaType](mediatype.md)
+- [enum MediaType](./mediatype.md)
   The type of media being played.
-- [enum MediaDuration](mediaduration.md)
+- [enum MediaDuration](./mediaduration.md)
   The duration of media content.
 ### Displaying artwork
-- [struct Artwork](artwork.md)
+- [struct Artwork](./artwork.md)
   Artwork for a media item that can be requested at a specified size.
-- [struct ArtworkRepresentation](artworkrepresentation.md)
+- [struct ArtworkRepresentation](./artworkrepresentation.md)
   An artwork image representation, such as music album cover art, associated with a media item.
-- [struct AnimatedArtwork](animatedartwork.md)
+- [struct AnimatedArtwork](./animatedartwork.md)
   Animated artwork for the media item with video and preview support.
 
 ## See Also
 
-- [struct MediaPlaybackSnapshot](mediaplaybacksnapshot.md)
+### Playback
+- [struct MediaPlaybackSnapshot](./mediaplaybacksnapshot.md)
   A snapshot of playback state and timing for a Now Playing session.
-- [Playback commands](playback-commands.md)
+- [Playback commands](./playback-commands.md)
   Declare the playback controls your app supports.
 
 

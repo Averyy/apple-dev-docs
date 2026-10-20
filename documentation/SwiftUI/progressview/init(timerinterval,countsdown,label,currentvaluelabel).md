@@ -1,7 +1,8 @@
 # init(timerInterval:countsDown:label:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for showing continuous progress as time passes, with descriptive and current progress labels.
 
@@ -20,6 +21,8 @@ Creates a progress view for showing continuous progress as time passes, with des
 nonisolated
 init(timerInterval: ClosedRange<Date>, countsDown: Bool = true, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> CurrentValueLabel)
 ```
+
+Available when `Label` conforms to `View` and `CurrentValueLabel` conforms to `View`.
 
 #### Discussion
 
@@ -41,7 +44,7 @@ struct ContentView: View {
 }
 ```
 
-![A horizontal bar that represents progress, partially filled in from](/images/com.apple.SwiftUI/ProgressView-6-macOS@2x.png)
+![A horizontal bar that represents progress, partially filled in from](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ProgressView-6-macOS@2x.png)
 
 By default, the progress view empties as time passes from the start of the date range to the end, but you can use the `countsDown` parameter to create a progress view that fills as time passes, as the above example demonstrates.
 
@@ -56,9 +59,10 @@ By default, the progress view empties as time passes from the start of the date 
 
 ## See Also
 
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](progressview/init(timerinterval:countsdown:).md)
+### Create a progress view spanning a date range
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool)](./init%28timerinterval,countsdown%29.md)
   Creates a progress view for showing continuous progress as time passes.
-- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label)](progressview/init(timerinterval:countsdown:label:).md)
+- [init(timerInterval: ClosedRange<Date>, countsDown: Bool, label: () -> Label)](./init%28timerinterval,countsdown,label%29.md)
   Creates a progress view for showing continuous progress as time passes, with a descriptive label.
 
 

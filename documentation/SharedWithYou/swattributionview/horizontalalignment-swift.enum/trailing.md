@@ -1,7 +1,8 @@
 # SWAttributionView.HorizontalAlignment.trailing
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Aligns horizontally with the trailing edge of the view.
 
@@ -19,13 +20,18 @@ Aligns horizontally with the trailing edge of the view.
 case trailing
 ```
 
+```c
+SWAttributionViewHorizontalAlignmentTrailing
+```
+
 ## See Also
 
-- [SWAttributionView.HorizontalAlignment.default](swattributionview/horizontalalignment-swift.enum/default.md)
+### Horizontal alignments
+- [SWAttributionView.HorizontalAlignment.default](./default.md)
   Allows the system to choose the horizontal alignment.
-- [SWAttributionView.HorizontalAlignment.leading](swattributionview/horizontalalignment-swift.enum/leading.md)
+- [SWAttributionView.HorizontalAlignment.leading](./leading.md)
   Aligns horizontally with the leading edge of the view.
-- [SWAttributionView.HorizontalAlignment.center](swattributionview/horizontalalignment-swift.enum/center.md)
+- [SWAttributionView.HorizontalAlignment.center](./center.md)
   Aligns horizontally with the center of the view.
 
 

@@ -1,7 +1,8 @@
 # Pass Presentation Suppression
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that prevents the system from initiating Apple Pay while the app is in the foreground.
 
@@ -10,9 +11,12 @@ An entitlement that prevents the system from initiating Apple Pay while the app 
 - iPadOS 15.0+
 - watchOS 8.0+
 
+## Details
+
+- **Name**: `com.apple.developer.passkit.pass-presentation-suppression`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `true`
 

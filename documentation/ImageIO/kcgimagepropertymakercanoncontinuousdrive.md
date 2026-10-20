@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerCanonContinuousDrive
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The presence of a continuous drive.
 
@@ -20,11 +21,16 @@ The presence of a continuous drive.
 let kCGImagePropertyMakerCanonContinuousDrive: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerCanonContinuousDrive;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerCanonFlashExposureComp: CFString](kcgimagepropertymakercanonflashexposurecomp.md)
+### Program Settings
+- [let kCGImagePropertyMakerCanonFlashExposureComp: CFString](./kcgimagepropertymakercanonflashexposurecomp.md)
   The flash exposure compensation setting.
-- [let kCGImagePropertyMakerCanonAspectRatioInfo: CFString](kcgimagepropertymakercanonaspectratioinfo.md)
+- [let kCGImagePropertyMakerCanonAspectRatioInfo: CFString](./kcgimagepropertymakercanonaspectratioinfo.md)
   The image aspect ratio.
 
 

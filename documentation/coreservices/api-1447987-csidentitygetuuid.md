@@ -1,7 +1,8 @@
 # CSIdentityGetUUID(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetUUID(_ identity: CSIdentity!) -> Unmanaged<CFUUID>!
+```
+
+```c
+CFUUIDRef CSIdentityGetUUID(CSIdentityRef identity);
 ```
 
 

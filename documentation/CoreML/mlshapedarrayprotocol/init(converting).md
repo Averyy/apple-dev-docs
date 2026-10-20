@@ -1,7 +1,8 @@
 # init(converting:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize by converting a MLMultiArray of different scalar type.
 
@@ -20,6 +21,12 @@ Initialize by converting a MLMultiArray of different scalar type.
 init(converting multiArray: MLMultiArray)
 ```
 
+**Other overloads**:
+
+```swift
+init<T>(converting source: T) where T : MLShapedArrayProtocol
+```
+
 #### Discussion
 
 Converting a floating number to an integer uses rounding-towards-zero method.
@@ -32,7 +39,8 @@ When necessary, the source values are truncated to fit the destination type, but
 
 ## See Also
 
-- [init(MLMultiArray)](mlshapedarrayprotocol/init(_:).md)
+### Creating a shaped array type from another type
+- [init(MLMultiArray)](./init%28_%29.md)
   Creates a shaped array type from a multiarray.
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the column.
 
@@ -21,7 +22,8 @@ var count: Int { get }
 
 ## See Also
 
-- [var isEmpty: Bool](mluntypedcolumn/isempty.md)
+### Getting the number of elements
+- [var isEmpty: Bool](./isempty.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # ctl_getenqueuespace
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 errno_t ctl_getenqueuespace(kern_ctl_ref kctlref, u_int32_t unit, size_t *space);
 ```
 
-#### Return_value
+#### Return Value
 
 0 - Success; the amount of space is returned to caller. EINVAL - Invalid parameters.
 
@@ -28,11 +29,12 @@ Retrieve the amount of space currently available for data to be sent from the ke
 
 ## See Also
 
-- [ctl_deregister](1809161-ctl_deregister.md)
-- [ctl_enqueuedata](1809168-ctl_enqueuedata.md)
-- [ctl_enqueuembuf](1809171-ctl_enqueuembuf.md)
-- [ctl_getenqueuereadable](2919907-ctl_getenqueuereadable.md)
-- [ctl_register](1809176-ctl_register.md)
+### control
+- [ctl_deregister](./api-1809161-ctl_deregister.md)
+- [ctl_enqueuedata](./api-1809168-ctl_enqueuedata.md)
+- [ctl_enqueuembuf](./api-1809171-ctl_enqueuembuf.md)
+- [ctl_getenqueuereadable](./api-2919907-ctl_getenqueuereadable.md)
+- [ctl_register](./api-1809176-ctl_register.md)
 
 
 ---

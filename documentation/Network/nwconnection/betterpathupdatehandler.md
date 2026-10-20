@@ -1,7 +1,8 @@
 # betterPathUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives updates when an alternative network path is preferred over the current path.
 
@@ -27,11 +28,12 @@ Better path events are an indication that a more preferable network path is avai
 
 ## See Also
 
-- [var currentPath: NWPath?](nwconnection/currentpath.md)
+### Handling Path Updates
+- [var currentPath: NWPath?](./currentpath.md)
   The network path the connection is using.
-- [var pathUpdateHandler: ((NWPath) -> Void)?](nwconnection/pathupdatehandler.md)
+- [var pathUpdateHandler: ((NWPath) -> Void)?](./pathupdatehandler.md)
   A handler that receives network path updates.
-- [var viabilityUpdateHandler: ((Bool) -> Void)?](nwconnection/viabilityupdatehandler.md)
+- [var viabilityUpdateHandler: ((Bool) -> Void)?](./viabilityupdatehandler.md)
   A handler that receives updates when data can be sent and received.
 
 

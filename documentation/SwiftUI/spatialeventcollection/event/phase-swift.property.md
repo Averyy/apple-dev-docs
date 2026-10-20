@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phase of the event.
 
@@ -21,7 +22,8 @@ var phase: SpatialEventCollection.Event.Phase
 
 ## See Also
 
-- [SpatialEventCollection.Event.Phase](spatialeventcollection/event/phase-swift.enum.md)
+### Getting the event’s current phase
+- [SpatialEventCollection.Event.Phase](./phase-swift.enum.md)
   The states that an event can have.
 
 

@@ -1,7 +1,8 @@
 # CMTaggedBuffer.Buffer.pixelBuffer(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The underlying pixel buffer for a tagged buffer.
 
@@ -22,7 +23,8 @@ case pixelBuffer(CVPixelBuffer)
 
 ## See Also
 
-- [CMTaggedBuffer.Buffer.sampleBuffer(_:)](cmtaggedbuffer/buffer-swift.enum/samplebuffer(_:).md)
+### Wrapped Buffer Types
+- [CMTaggedBuffer.Buffer.sampleBuffer(_:)](./samplebuffer%28_%29.md)
   The underlying sample buffer for a tagged buffer.
 
 

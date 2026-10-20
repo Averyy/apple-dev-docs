@@ -1,7 +1,8 @@
 # AppLaunchDiagnostic
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A diagnostic report for an app launch.
 
@@ -19,32 +20,33 @@ struct AppLaunchDiagnostic
 
 #### Discussion
 
-This captures a [`CallStackTree`](callstacktree.md) and a `launchDuration` measurement for app launches that exceed the diagnostic threshold.
+This captures a [`CallStackTree`](./callstacktree.md) and a `launchDuration` measurement for app launches that exceed the diagnostic threshold.
 
 ## Topics
 
 ### Call stack
-- [let callStackTree: CallStackTree](applaunchdiagnostic/callstacktree.md)
+- [let callStackTree: CallStackTree](./applaunchdiagnostic/callstacktree.md)
   The application call stack tree associated with the launch issue.
 ### Launch details
-- [let launchDuration: Measurement<UnitDuration>](applaunchdiagnostic/launchduration.md)
+- [let launchDuration: Measurement<UnitDuration>](./applaunchdiagnostic/launchduration.md)
   Duration of the launch that triggered this diagnostic.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CrashDiagnostic](crashdiagnostic.md)
+### Crash and hang diagnostics
+- [struct CrashDiagnostic](./crashdiagnostic.md)
   A diagnostic report that describes a crash that occurred.
-- [struct HangDiagnostic](hangdiagnostic.md)
+- [struct HangDiagnostic](./hangdiagnostic.md)
   A diagnostic for an app that was too busy to handle user input responsively.
 
 

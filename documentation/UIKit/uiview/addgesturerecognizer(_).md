@@ -1,7 +1,8 @@
 # addGestureRecognizer(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a gesture recognizer to the view.
 
@@ -9,7 +10,7 @@ Attaches a gesture recognizer to the view.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,14 +19,18 @@ Attaches a gesture recognizer to the view.
 func addGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer)
 ```
 
+```objc
+- (void) addGestureRecognizer:(UIGestureRecognizer *) gestureRecognizer;
+```
+
 ## Mentions
 
-- [Handling long-press gestures](handling-long-press-gestures.md)
-- [Handling pan gestures](handling-pan-gestures.md)
-- [Handling pinch gestures](handling-pinch-gestures.md)
-- [Handling rotation gestures](handling-rotation-gestures.md)
-- [Handling swipe gestures](handling-swipe-gestures.md)
-- [Handling tap gestures](handling-tap-gestures.md)
+- [Handling long-press gestures](../handling-long-press-gestures.md)
+- [Handling pan gestures](../handling-pan-gestures.md)
+- [Handling pinch gestures](../handling-pinch-gestures.md)
+- [Handling rotation gestures](../handling-rotation-gestures.md)
+- [Handling swipe gestures](../handling-swipe-gestures.md)
+- [Handling tap gestures](../handling-tap-gestures.md)
 
 #### Discussion
 
@@ -33,15 +38,16 @@ Attaching a gesture recognizer to a view defines the scope of the represented ge
 
 ## Parameters
 
-- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](uigesturerecognizer.md) class. This parameter must not be `nil`.
+- `gestureRecognizer`: An object whose class descends from the [`UIGestureRecognizer`](../uigesturerecognizer.md) class. This parameter must not be `nil`.
 
 ## See Also
 
-- [func removeGestureRecognizer(UIGestureRecognizer)](uiview/removegesturerecognizer(_:).md)
+### Managing gesture recognizers
+- [func removeGestureRecognizer(UIGestureRecognizer)](./removegesturerecognizer%28_%29.md)
   Detaches a gesture recognizer from the receiving view.
-- [var gestureRecognizers: [UIGestureRecognizer]?](uiview/gesturerecognizers.md)
+- [var gestureRecognizers: [UIGestureRecognizer]?](./gesturerecognizers.md)
   The gesture-recognizer objects currently attached to the view.
-- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](uiview/gesturerecognizershouldbegin(_:).md)
+- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](./gesturerecognizershouldbegin%28_%29.md)
   Asks the view if the gesture recognizer should continue tracking touch events.
 
 

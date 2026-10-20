@@ -1,7 +1,8 @@
 # rightEyeTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transform matrix indicating the position and orientation of the face’s right eye.
 
@@ -15,19 +16,24 @@ A transform matrix indicating the position and orientation of the face’s right
 var rightEyeTransform: simd_float4x4 { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) simd_float4x4 rightEyeTransform;
+```
+
 #### Discussion
 
-The translation aspect of this matrix indicates the position of the center of the eyeball, relative to the position represented by the anchor’s [`transform`](aranchor/transform.md). The positive z-axis points from the center of the eyeball in the direction of the pupil.
+The translation aspect of this matrix indicates the position of the center of the eyeball, relative to the position represented by the anchor’s [`transform`](../aranchor/transform.md). The positive z-axis points from the center of the eyeball in the direction of the pupil.
 
 Rotational aspects of the matrix indicate the orientation of the eyeball—for example, a rotation about the x-axis directs the pupil upward or downward. The eye does not rotate about the z-axis.
 
-![Diagram showing the coordinate axis origin defined by the rightEyeTransform, representing both the position and rotation of the eye relative to the face anchor.](/images/com.apple.arkit/media-3001544@2x.png)
+![Diagram showing the coordinate axis origin defined by the rightEyeTransform, representing both the position and rotation of the eye relative to the face anchor.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3001544@2x.png)
 
 ## See Also
 
-- [var leftEyeTransform: simd_float4x4](arfaceanchor/lefteyetransform.md)
+### Tracking Eye Movement
+- [var leftEyeTransform: simd_float4x4](./lefteyetransform.md)
   A transform matrix indicating the position and orientation of the face’s left eye.
-- [var lookAtPoint: simd_float3](arfaceanchor/lookatpoint.md)
+- [var lookAtPoint: simd_float3](./lookatpoint.md)
   A position in face coordinate space estimating the direction of the face’s gaze.
 
 

@@ -1,7 +1,8 @@
 # createRNNSingleGateDescriptor(withInputFeatureChannels:outputFeatureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func createRNNSingleGateDescriptor(withInputFeatureChannels inputFeatureChannels: Int, outputFeatureChannels: Int) -> Self
+```
+
+```objc
++ (instancetype) createRNNSingleGateDescriptorWithInputFeatureChannels:(NSUInteger) inputFeatureChannels outputFeatureChannels:(NSUInteger) outputFeatureChannels;
 ```
 
 

@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,10 +19,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServiceNotificationTypeLast](3538513-anonymous/kioservicenotificationtypelast.md)
-- [kIOServiceNotificationTypeMatched](3538513-anonymous/kioservicenotificationtypematched.md)
-- [kIOServiceNotificationTypeNone](3538513-anonymous/kioservicenotificationtypenone.md)
-- [kIOServiceNotificationTypeTerminated](3538513-anonymous/kioservicenotificationtypeterminated.md)
+- [kIOServiceNotificationTypeLast](./api-3538513-anonymous/kioservicenotificationtypelast.md)
+- [kIOServiceNotificationTypeMatched](./api-3538513-anonymous/kioservicenotificationtypematched.md)
+- [kIOServiceNotificationTypeNone](./api-3538513-anonymous/kioservicenotificationtypenone.md)
+- [kIOServiceNotificationTypeTerminated](./api-3538513-anonymous/kioservicenotificationtypeterminated.md)
 
 
 ---

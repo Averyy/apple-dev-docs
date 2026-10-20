@@ -1,14 +1,15 @@
 # nfs_handle
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t nfs_handle[64];
 ```
 

@@ -1,7 +1,8 @@
 # conversationIdentifier
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var conversationIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * conversationIdentifier;
 ```
 
 

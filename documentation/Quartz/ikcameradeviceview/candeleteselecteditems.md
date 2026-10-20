@@ -1,7 +1,8 @@
 # canDeleteSelectedItems
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the selected items can be deleted.
 
@@ -14,9 +15,14 @@ Returns whether the selected items can be deleted.
 var canDeleteSelectedItems: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canDeleteSelectedItems;
+```
+
 ## See Also
 
-- [func deleteSelectedItems(Any!)](ikcameradeviceview/deleteselecteditems(_:).md)
+### Deleting Selected Items
+- [func deleteSelectedItems(Any!)](./deleteselecteditems%28_%29.md)
   Deletes the currently selected items.
 
 

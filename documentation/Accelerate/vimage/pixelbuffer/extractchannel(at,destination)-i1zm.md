@@ -1,7 +1,8 @@
 # extractChannel(at:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts a single channel from an unsigned 16-bit-per-channel, 4-channel interleaved pixel buffer.
 
@@ -11,7 +12,7 @@ Extracts a single channel from an unsigned 16-bit-per-channel, 4-channel interle
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Extracts a single channel from an unsigned 16-bit-per-channel, 4-channel interle
 ```swift
 func extractChannel(at channelIndex: Int, destination: vImage.PixelBuffer<vImage.Planar16U>)
 ```
+
+Available when `Format` is `vImage.Interleaved16Ux4`.
 
 #### Discussion
 
@@ -48,9 +51,10 @@ print(dest.array)
 
 ## See Also
 
-- [func extractChannel(at: Int, destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/extractchannel(at:destination:)-ageg.md)
+### Extracting Channels
+- [func extractChannel(at: Int, destination: vImage.PixelBuffer<vImage.Planar8>)](./extractchannel%28at,destination%29-ageg.md)
   Extracts a single channel from an 8-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func extractChannel(at: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/extractchannel(at:destination:)-8xrq1.md)
+- [func extractChannel(at: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](./extractchannel%28at,destination%29-8xrq1.md)
   Extracts a single channel from an 32-bit-per-channel, 4-channel interleaved pixel buffer.
 
 

@@ -1,7 +1,8 @@
 # UpdateCurrentZeroTimestamp
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the current timestamp value.
 
@@ -10,7 +11,7 @@ Update the current timestamp value.
 
 ## Declaration
 
-```swift
+```c
 void UpdateCurrentZeroTimestamp(uint64_t in_sample_time, uint64_t in_host_time);
 ```
 
@@ -25,7 +26,8 @@ Updating the current timestamp should use the time passed in the hardware interr
 
 ## See Also
 
-- [GetCurrentZeroTimestamp](iouservideoclockdevice/getcurrentzerotimestamp.md)
+### Accessing timestamps
+- [GetCurrentZeroTimestamp](./getcurrentzerotimestamp.md)
   Gets the current zero timestamp value.
 
 

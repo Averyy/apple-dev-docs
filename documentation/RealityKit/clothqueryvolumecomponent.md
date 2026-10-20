@@ -1,7 +1,8 @@
 # ClothQueryVolumeComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines a volume for querying particles of cloth bodies.
 
@@ -19,35 +20,36 @@ struct ClothQueryVolumeComponent
 ## Topics
 
 ### Creating a query volume
-- [init(shape: ClothVolumeShape)](clothqueryvolumecomponent/init(shape:).md)
+- [init(shape: ClothVolumeShape)](./clothqueryvolumecomponent/init%28shape%29.md)
   Creates a cloth query volume component with the given shape.
 ### Configuring the volume shape
-- [var shape: ClothVolumeShape](clothqueryvolumecomponent/shape.md)
+- [var shape: ClothVolumeShape](./clothqueryvolumecomponent/shape.md)
   The shape of the volume.
 ### Accessing query results
-- [var queryEntities: [Entity]](clothqueryvolumecomponent/queryentities.md)
+- [var queryEntities: [Entity]](./clothqueryvolumecomponent/queryentities.md)
   The entities to query for intersections with the volume.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct ClothSimulationComponent](clothsimulationcomponent.md)
+### Simulation and bodies
+- [struct ClothSimulationComponent](./clothsimulationcomponent.md)
   A component that marks an entity as the simulation root of a localized cloth simulation.
-- [struct ClothBodyComponent](clothbodycomponent.md)
+- [struct ClothBodyComponent](./clothbodycomponent.md)
   A component that simulates an entity as a deformable cloth body, when part of a cloth simulation.
-- [struct ClothBodyMaterial](clothbodymaterial.md)
+- [struct ClothBodyMaterial](./clothbodymaterial.md)
   A struct that represents a cloth body’s material.
-- [struct ClothGrabComponent](clothgrabcomponent.md)
+- [struct ClothGrabComponent](./clothgrabcomponent.md)
   A component that grabs and drags particles of cloth bodies using either a ray or a volume, as determined by the `mode` property.
-- [struct ClothForceVolumeComponent](clothforcevolumecomponent.md)
+- [struct ClothForceVolumeComponent](./clothforcevolumecomponent.md)
   A component that creates a force volume applying forces to any intersecting cloth body particles.
-- [struct ClothCoordinateSpace](clothcoordinatespace.md)
+- [struct ClothCoordinateSpace](./clothcoordinatespace.md)
   Defines a reference frame within a cloth simulation.
-- [struct PerClothVertexData](perclothvertexdata.md)
+- [struct PerClothVertexData](./perclothvertexdata.md)
   A generic type that stores per-vertex data in a buffer.
 
 

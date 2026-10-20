@@ -1,7 +1,8 @@
 # PKApplePayLaterAvailability.available
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple Pay Later is available.
 
@@ -19,11 +20,16 @@ Apple Pay Later is available.
 case available
 ```
 
+```c
+PKApplePayLaterAvailable
+```
+
 ## See Also
 
-- [PKApplePayLaterAvailability.unavailableItemIneligible](pkapplepaylateravailability/unavailableitemineligible.md)
+### Availability values
+- [PKApplePayLaterAvailability.unavailableItemIneligible](./unavailableitemineligible.md)
   Apple Pay Later is unavailable because one or more ineligible or prohibited items are in the shopping cart, such as gift cards.
-- [PKApplePayLaterAvailability.unavailableRecurringTransaction](pkapplepaylateravailability/unavailablerecurringtransaction.md)
+- [PKApplePayLaterAvailability.unavailableRecurringTransaction](./unavailablerecurringtransaction.md)
   Apple Pay Later is unavailable because there’s a recurring payment or subscription in the shopping cart.
 
 

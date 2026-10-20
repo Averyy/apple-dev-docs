@@ -1,7 +1,8 @@
 # CXErrorCodeRequestTransactionError.Code.callUUIDAlreadyExists
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The requested transaction contains call actions that reference a UUID that already exists.
 
@@ -18,21 +19,26 @@ The requested transaction contains call actions that reference a UUID that alrea
 case callUUIDAlreadyExists
 ```
 
+```c
+CXErrorCodeRequestTransactionErrorCallUUIDAlreadyExists
+```
+
 ## See Also
 
-- [CXErrorCodeRequestTransactionError.Code.unknown](cxerrorcoderequesttransactionerror-swift.struct/code/unknown.md)
+### Constants
+- [CXErrorCodeRequestTransactionError.Code.unknown](./unknown.md)
   An unknown error occurred.
-- [CXErrorCodeRequestTransactionError.Code.unentitled](cxerrorcoderequesttransactionerror-swift.struct/code/unentitled.md)
+- [CXErrorCodeRequestTransactionError.Code.unentitled](./unentitled.md)
   The app isn’t entitled to perform the actions in the requested transaction.
-- [CXErrorCodeRequestTransactionError.Code.unknownCallProvider](cxerrorcoderequesttransactionerror-swift.struct/code/unknowncallprovider.md)
+- [CXErrorCodeRequestTransactionError.Code.unknownCallProvider](./unknowncallprovider.md)
   The controller couldn’t find a call provider to perform the actions in the requested transaction.
-- [CXErrorCodeRequestTransactionError.Code.emptyTransaction](cxerrorcoderequesttransactionerror-swift.struct/code/emptytransaction.md)
+- [CXErrorCodeRequestTransactionError.Code.emptyTransaction](./emptytransaction.md)
   The requested transaction contains no actions.
-- [CXErrorCodeRequestTransactionError.Code.unknownCallUUID](cxerrorcoderequesttransactionerror-swift.struct/code/unknowncalluuid.md)
+- [CXErrorCodeRequestTransactionError.Code.unknownCallUUID](./unknowncalluuid.md)
   The requested transaction contains call actions that reference an unknown UUID.
-- [CXErrorCodeRequestTransactionError.Code.invalidAction](cxerrorcoderequesttransactionerror-swift.struct/code/invalidaction.md)
+- [CXErrorCodeRequestTransactionError.Code.invalidAction](./invalidaction.md)
   The requested transaction contains an invalid action.
-- [CXErrorCodeRequestTransactionError.Code.maximumCallGroupsReached](cxerrorcoderequesttransactionerror-swift.struct/code/maximumcallgroupsreached.md)
+- [CXErrorCodeRequestTransactionError.Code.maximumCallGroupsReached](./maximumcallgroupsreached.md)
   The requested transaction contains actions that, if performed, would exceed the maximum number of call groups for the provider.
 
 

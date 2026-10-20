@@ -1,27 +1,29 @@
 # kIOServicePowerCapabilityOff
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The device is entering the sleep state.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOServicePowerCapabilityOff
 ```
 
 ## See Also
 
-- [kIOServicePowerCapabilityOn](kioservicepowercapabilityon.md)
+### Getting the Power Levels
+- [kIOServicePowerCapabilityOn](./kioservicepowercapabilityon.md)
   The device is fully powered.
-- [kIOServicePowerCapabilityLow](kioservicepowercapabilitylow.md)
+- [kIOServicePowerCapabilityLow](./kioservicepowercapabilitylow.md)
   The device is in a reduced power state, but the system is running.
 
 

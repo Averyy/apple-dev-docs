@@ -1,7 +1,8 @@
 # CPDashboardButton
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A shortcut button for placement on the CarPlay Dashboard.
 
@@ -16,38 +17,43 @@ A shortcut button for placement on the CarPlay Dashboard.
 class CPDashboardButton
 ```
 
+```objc
+@interface CPDashboardButton : NSObject
+```
+
 ## Topics
 
 ### Creating a Dashboard Button
-- [init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handler: ((CPDashboardButton) -> Void)?)](cpdashboardbutton/init(titlevariants:subtitlevariants:image:handler:).md)
+- [init(titleVariants: [String], subtitleVariants: [String], image: UIImage, handler: ((CPDashboardButton) -> Void)?)](./cpdashboardbutton/init%28titlevariants,subtitlevariants,image,handler%29.md)
   Creates a dashboard button that displays a title, an optional subtitle, and an image.
 ### Accessing the Button Configuration
-- [var titleVariants: [String]](cpdashboardbutton/titlevariants.md)
+- [var titleVariants: [String]](./cpdashboardbutton/titlevariants.md)
   The array of title variants for the button.
-- [var subtitleVariants: [String]](cpdashboardbutton/subtitlevariants.md)
+- [var subtitleVariants: [String]](./cpdashboardbutton/subtitlevariants.md)
   The array of subtitle variants for the button.
-- [var image: UIImage](cpdashboardbutton/image.md)
+- [var image: UIImage](./cpdashboardbutton/image.md)
   The image the button displays.
 ### Initializers
-- [init?(coder: NSCoder)](cpdashboardbutton/init(coder:).md)
+- [init?(coder: NSCoder)](./cpdashboardbutton/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var shortcutButtons: [CPDashboardButton]](cpdashboardcontroller/shortcutbuttons.md)
+### Providing Dashboard Buttons
+- [var shortcutButtons: [CPDashboardButton]](./cpdashboardcontroller/shortcutbuttons.md)
   An array of shortcut buttons to display on the CarPlay Dashboard.
 
 

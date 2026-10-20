@@ -1,7 +1,8 @@
 # vImageScale_ARGB16F(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Scales a floating-point 16-bit-per-channel, 4-channel interleaved image to fit a destination buffer.
 
@@ -20,9 +21,13 @@ Scales a floating-point 16-bit-per-channel, 4-channel interleaved image to fit a
 func vImageScale_ARGB16F(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageScale_ARGB16F(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
@@ -32,7 +37,7 @@ To avoid artifacts in high-frequency regions of the image, supply image data tha
 
 This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -51,27 +56,39 @@ You can use the same workspace memory for a group of images that are different s
 - `src`: A pointer to a vImage buffer structure that contains the source image.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `tempBuffer`: A pointer to workspace memory the function uses as it operates on an image. Pass `nil` to instruct the function to allocate, use, and then free its own temporary buffer.
-- `flags`: The options to use when applying the scale. To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag. If you want vImage to use a higher quality but a slower resampling filter, set the [`kvImageHighQualityResampling`](kvimagehighqualityresampling.md) flag. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md). This function ignores the [`kvImageLeaveAlphaUnchanged`](kvimageleavealphaunchanged.md) flag. If you want vImage to use faster but lower-precision internal arithmetic, set the [`kvImageUseFP16Accumulator`](kvimageusefp16accumulator.md) flag.
+- `flags`: The options to use when applying the scale.
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
+
+  If you want vImage to use a higher quality but a slower resampling filter, set the [`kvImageHighQualityResampling`](./kvimagehighqualityresampling.md) flag.
+
+  If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md).
+
+  This function ignores the [`kvImageLeaveAlphaUnchanged`](./kvimageleavealphaunchanged.md) flag.
+
+  If you want vImage to use faster but lower-precision internal arithmetic, set the [`kvImageUseFP16Accumulator`](./kvimageusefp16accumulator.md) flag.
 
 ## See Also
 
-- [Applying geometric transforms to images](applying-geometric-transforms-to-images.md)
+### Related Documentation
+- [Applying geometric transforms to images](./applying-geometric-transforms-to-images.md)
   Reflect, shear, rotate, and scale image buffers using vImage.
-- [func vImageScale_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_cbcr8(_:_:_:_:).md)
+### Interleaved Image Scaling
+- [func vImageScale_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_cbcr8%28_,_,_,_%29.md)
   Scales an 8-bit-per-channel, 2-channel interleaved image to fit a destination buffer.
-- [func vImageScale_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_cbcr16u(_:_:_:_:).md)
+- [func vImageScale_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_cbcr16u%28_,_,_,_%29.md)
   Scales an unsigned 16-bit-per-channel, 2-channel interleaved image to fit a destination buffer.
-- [func vImageScale_CbCr16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_cbcr16f(_:_:_:_:).md)
+- [func vImageScale_CbCr16F(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_cbcr16f%28_,_,_,_%29.md)
   Scales a floating-point 16-bit-per-channel, 2-channel interleaved image to fit a destination buffer.
-- [func vImageScale_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_argb8888(_:_:_:_:).md)
+- [func vImageScale_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_argb8888%28_,_,_,_%29.md)
   Scales an 8-bit-per-channel, 4-channel interleaved image to fit a destination buffer.
-- [func vImageScale_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_argb16u(_:_:_:_:).md)
+- [func vImageScale_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_argb16u%28_,_,_,_%29.md)
   Scales an unsigned 16-bit-per-channel, 4-channel interleaved image to fit a destination buffer.
-- [func vImageScale_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_argb16s(_:_:_:_:).md)
+- [func vImageScale_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_argb16s%28_,_,_,_%29.md)
   Scales a signed 16-bit-per-channel, 4-channel interleaved image to fit a destination buffer.
-- [func vImageScale_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_argbffff(_:_:_:_:).md)
+- [func vImageScale_ARGBFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_argbffff%28_,_,_,_%29.md)
   Scales a 32-bit-per-channel, 4-channel interleaved image to fit a destination buffer.
-- [func vImageScale_XRGB2101010W(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](vimagescale_xrgb2101010w(_:_:_:_:).md)
+- [func vImageScale_XRGB2101010W(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_Flags) -> vImage_Error](./vimagescale_xrgb2101010w%28_,_,_,_%29.md)
   Scales a 2-bit alpha, 10-bit RGB interleaved image to fit a destination buffer.
 
 

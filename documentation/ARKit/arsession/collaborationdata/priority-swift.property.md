@@ -1,7 +1,8 @@
 # priority
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that gives you a hint about how to send a given data instance over the network.
 
@@ -15,13 +16,18 @@ A property that gives you a hint about how to send a given data instance over th
 var priority: ARSession.CollaborationData.Priority { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ARCollaborationDataPriority priority;
+```
+
 #### Discussion
 
-If you have reliability options in the network protocol you choose to transport [`ARSession.CollaborationData`](arsession/collaborationdata.md) among peers, the [`priority`](arsession/collaborationdata/priority-swift.property.md) property gives you a hint about which reliability option to choose for a given collaboration data instance. For example, if you use MultipeerConnectivity to send collaboration data over the network, choose [`MCSessionSendDataMode.reliable`](https://developer.apple.com/documentation/multipeerconnectivity/mcsessionsenddatamode/reliable) when calling [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/multipeerconnectivity/mcsession/send(_:topeers:with:)) after ARKit gives you a collaboration data instance with priority [`ARSession.CollaborationData.Priority.critical`](arsession/collaborationdata/priority-swift.enum/critical.md).
+If you have reliability options in the network protocol you choose to transport [`ARSession.CollaborationData`](../collaborationdata.md) among peers, the [`priority`](./priority-swift.property.md) property gives you a hint about which reliability option to choose for a given collaboration data instance. For example, if you use MultipeerConnectivity to send collaboration data over the network, choose [`MCSessionSendDataMode.reliable`](../../../MultipeerConnectivity/mcsessionsenddatamode/reliable.md) when calling [`send(_:toPeers:with:)`](../../../MultipeerConnectivity/mcsession/send%28_,topeers,with%29.md) after ARKit gives you a collaboration data instance with priority [`ARSession.CollaborationData.Priority.critical`](./priority-swift.enum/critical.md).
 
 ## See Also
 
-- [ARSession.CollaborationData.Priority](arsession/collaborationdata/priority-swift.enum.md)
+### Observing Priority
+- [ARSession.CollaborationData.Priority](./priority-swift.enum.md)
   Options that help you choose the appropriate network protocol or settings for a given data instance.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,18 +18,18 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDVDBookTypeHDR](1646175-anonymous/kdvdbooktypehdr.md)
-- [kDVDBookTypeHDRAM](1646175-anonymous/kdvdbooktypehdram.md)
-- [kDVDBookTypeHDROM](1646175-anonymous/kdvdbooktypehdrom.md)
-- [kDVDBookTypeHDRW](1646175-anonymous/kdvdbooktypehdrw.md)
-- [kDVDBookTypePlusR](1646175-anonymous/kdvdbooktypeplusr.md)
-- [kDVDBookTypePlusRDoubleLayer](1646175-anonymous/kdvdbooktypeplusrdoublelayer.md)
-- [kDVDBookTypePlusRW](1646175-anonymous/kdvdbooktypeplusrw.md)
-- [kDVDBookTypePlusRWDoubleLayer](1646175-anonymous/kdvdbooktypeplusrwdoublelayer.md)
-- [kDVDBookTypeR](1646175-anonymous/kdvdbooktyper.md)
-- [kDVDBookTypeRAM](1646175-anonymous/kdvdbooktyperam.md)
-- [kDVDBookTypeROM](1646175-anonymous/kdvdbooktyperom.md)
-- [kDVDBookTypeRW](1646175-anonymous/kdvdbooktyperw.md)
+- [kDVDBookTypeHDR](./api-1646175-anonymous/kdvdbooktypehdr.md)
+- [kDVDBookTypeHDRAM](./api-1646175-anonymous/kdvdbooktypehdram.md)
+- [kDVDBookTypeHDROM](./api-1646175-anonymous/kdvdbooktypehdrom.md)
+- [kDVDBookTypeHDRW](./api-1646175-anonymous/kdvdbooktypehdrw.md)
+- [kDVDBookTypePlusR](./api-1646175-anonymous/kdvdbooktypeplusr.md)
+- [kDVDBookTypePlusRDoubleLayer](./api-1646175-anonymous/kdvdbooktypeplusrdoublelayer.md)
+- [kDVDBookTypePlusRW](./api-1646175-anonymous/kdvdbooktypeplusrw.md)
+- [kDVDBookTypePlusRWDoubleLayer](./api-1646175-anonymous/kdvdbooktypeplusrwdoublelayer.md)
+- [kDVDBookTypeR](./api-1646175-anonymous/kdvdbooktyper.md)
+- [kDVDBookTypeRAM](./api-1646175-anonymous/kdvdbooktyperam.md)
+- [kDVDBookTypeROM](./api-1646175-anonymous/kdvdbooktyperom.md)
+- [kDVDBookTypeRW](./api-1646175-anonymous/kdvdbooktyperw.md)
 
 
 ---

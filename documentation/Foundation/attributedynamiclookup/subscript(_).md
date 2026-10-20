@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns an attributed string key that corresponds to a specified type.
 

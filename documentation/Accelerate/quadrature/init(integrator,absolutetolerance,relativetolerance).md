@@ -1,7 +1,8 @@
 # init(integrator:absoluteTolerance:relativeTolerance:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a quadrature instance.
 
@@ -11,7 +12,7 @@ Initializes and returns a quadrature instance.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # center
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point in the containing view at which to place the center of the view being animated.
 
@@ -18,11 +19,16 @@ The point in the containing view at which to place the center of the view being 
 var center: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint center;
+```
+
 ## See Also
 
-- [var container: UIView](uipreviewtarget/container.md)
+### Getting the target attributes
+- [var container: UIView](./container.md)
   The container for the view being animated.
-- [var transform: CGAffineTransform](uipreviewtarget/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   An affine transform to apply to the view being animated.
 
 

@@ -1,7 +1,8 @@
 # init(capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized mutable data object capable of holding the specified number of bytes.
 
@@ -20,6 +21,10 @@ Returns an initialized mutable data object capable of holding the specified numb
 init?(capacity: Int)
 ```
 
+```objc
+- (instancetype) initWithCapacity:(NSUInteger) capacity;
+```
+
 #### Return Value
 
 An initialized `NSMutableData` object capable of holding `capacity` bytes. The returned object has the same memory alignment guarantees as `malloc(_:)`.
@@ -36,7 +41,8 @@ If the capacity specified in `capacity` is greater than four memory pages in siz
 
 ## See Also
 
-- [init?(length: Int)](nsmutabledata/init(length:).md)
+### Creating Mutable Data
+- [init?(length: Int)](./init%28length%29.md)
   Initializes and returns a mutable data object containing a given number of zeroed bytes.
 
 

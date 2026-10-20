@@ -1,7 +1,8 @@
 # UIContextualAction.Style.destructive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An action that deletes data or performs some type of destructive task.
 
@@ -17,9 +18,14 @@ An action that deletes data or performs some type of destructive task.
 case destructive
 ```
 
+```c
+UIContextualActionStyleDestructive
+```
+
 ## See Also
 
-- [UIContextualAction.Style.normal](uicontextualaction/style-swift.enum/normal.md)
+### Styles
+- [UIContextualAction.Style.normal](./normal.md)
   A normal action.
 
 

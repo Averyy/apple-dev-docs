@@ -1,7 +1,8 @@
 # stopwatch(startingAt:showsHours:maxFieldCount:maxPrecision:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func stopwatch(startingAt startDate: Date, showsHours: Bool = true, maxFieldCount: Int = 4, maxPrecision: Duration = .milliseconds(10)) -> SystemFormatStyle.Stopwatch
 ```
+
+Available when `Self` is `SystemFormatStyle.Stopwatch`.
 
 
 ---

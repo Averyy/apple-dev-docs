@@ -1,7 +1,8 @@
 # PDFWidgetCellState
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a button annotation, either on, off, or mixed.
 
@@ -10,7 +11,7 @@ The state of a button annotation, either on, off, or mixed.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,41 +20,46 @@ The state of a button annotation, either on, off, or mixed.
 enum PDFWidgetCellState
 ```
 
+```c
+enum PDFWidgetCellState : NSInteger;
+```
+
 ## Topics
 
 ### Choosing a Cell State
-- [PDFWidgetCellState.onState](pdfwidgetcellstate/onstate.md)
+- [PDFWidgetCellState.onState](./pdfwidgetcellstate/onstate.md)
   The button widget is in a selected state.
-- [PDFWidgetCellState.offState](pdfwidgetcellstate/offstate.md)
+- [PDFWidgetCellState.offState](./pdfwidgetcellstate/offstate.md)
   The button widget is in an unselected state.
-- [PDFWidgetCellState.mixedState](pdfwidgetcellstate/mixedstate.md)
+- [PDFWidgetCellState.mixedState](./pdfwidgetcellstate/mixedstate.md)
   The button widget is in a mixed state, neither on nor off.
 ### Initializers
-- [init?(rawValue: Int)](pdfwidgetcellstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfwidgetcellstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var widgetControlType: PDFWidgetControlType](pdfannotation/widgetcontroltype.md)
+### Configuring Button Widget Annotations
+- [var widgetControlType: PDFWidgetControlType](./pdfannotation/widgetcontroltype.md)
   The type of button widget control, either radio button, push button, or checkbox.
-- [var buttonWidgetState: PDFWidgetCellState](pdfannotation/buttonwidgetstate.md)
+- [var buttonWidgetState: PDFWidgetCellState](./pdfannotation/buttonwidgetstate.md)
   The current state of the button widget annotation.
-- [var buttonWidgetStateString: String](pdfannotation/buttonwidgetstatestring.md)
+- [var buttonWidgetStateString: String](./pdfannotation/buttonwidgetstatestring.md)
   A string value that differentiates button widgets in the same group, such as to identify mutually exclusive radio buttons from each other.
-- [var caption: String?](pdfannotation/caption.md)
+- [var caption: String?](./pdfannotation/caption.md)
   The title of push button widget annotations.
-- [var allowsToggleToOff: Bool](pdfannotation/allowstoggletooff.md)
+- [var allowsToggleToOff: Bool](./pdfannotation/allowstoggletooff.md)
   A Boolean value that indicates whether clicking or tapping a selected radio button toggles it to an unselected state.
-- [var radiosInUnison: Bool](pdfannotation/radiosinunison.md)
+- [var radiosInUnison: Bool](./pdfannotation/radiosinunison.md)
   A Boolean value that indicates whether radio buttons in a group turn on and off in unison.
 
 

@@ -1,7 +1,8 @@
 # layoutAttributesForItem(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the layout information for the item at the specified index path.
 
@@ -9,13 +10,17 @@ Gets the layout information for the item at the specified index path.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes?
+```
+
+```objc
+- (UICollectionViewLayoutAttributes *) layoutAttributesForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ Use this method to retrieve the layout information for a particular item. You sh
 
 ## See Also
 
-- [func layoutAttributesForSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionview/layoutattributesforsupplementaryelement(ofkind:at:).md)
+### Getting layout information
+- [func layoutAttributesForSupplementaryElement(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforsupplementaryelement%28ofkind,at%29.md)
   Gets the layout information for the specified supplementary view.
 
 

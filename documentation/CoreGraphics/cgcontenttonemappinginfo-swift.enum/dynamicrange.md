@@ -1,7 +1,8 @@
 # CGContentToneMappingInfo.DynamicRange
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -21,15 +22,15 @@ enum DynamicRange
 ## Topics
 
 ### Enumeration Cases
-- [CGContentToneMappingInfo.DynamicRange.constrained](cgcontenttonemappinginfo-swift.enum/dynamicrange/constrained.md)
-- [CGContentToneMappingInfo.DynamicRange.high](cgcontenttonemappinginfo-swift.enum/dynamicrange/high.md)
-- [CGContentToneMappingInfo.DynamicRange.standard](cgcontenttonemappinginfo-swift.enum/dynamicrange/standard.md)
+- [CGContentToneMappingInfo.DynamicRange.constrained](./dynamicrange/constrained.md)
+- [CGContentToneMappingInfo.DynamicRange.high](./dynamicrange/high.md)
+- [CGContentToneMappingInfo.DynamicRange.standard](./dynamicrange/standard.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

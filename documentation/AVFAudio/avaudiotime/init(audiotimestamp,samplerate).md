@@ -1,7 +1,8 @@
 # init(audioTimeStamp:sampleRate:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio time object with the specified timestamp and sample rate.
 
@@ -20,9 +21,13 @@ Creates an audio time object with the specified timestamp and sample rate.
 init(audioTimeStamp ts: UnsafePointer<AudioTimeStamp>, sampleRate: Double)
 ```
 
+```objc
+- (instancetype) initWithAudioTimeStamp:(const AudioTimeStamp *) ts sampleRate:(double) sampleRate;
+```
+
 #### Return Value
 
-A new [`AVAudioTime`](avaudiotime.md) instance.
+A new [`AVAudioTime`](../avaudiotime.md) instance.
 
 ## Parameters
 
@@ -31,13 +36,14 @@ A new [`AVAudioTime`](avaudiotime.md) instance.
 
 ## See Also
 
-- [init(hostTime: UInt64)](avaudiotime/init(hosttime:).md)
+### Creating an audio time instance
+- [init(hostTime: UInt64)](./init%28hosttime%29.md)
   Creates an audio time object with the specified host time.
-- [init(hostTime: UInt64, sampleTime: AVAudioFramePosition, atRate: Double)](avaudiotime/init(hosttime:sampletime:atrate:).md)
+- [init(hostTime: UInt64, sampleTime: AVAudioFramePosition, atRate: Double)](./init%28hosttime,sampletime,atrate%29.md)
   Creates an audio time object with the specified host time, sample time, and sample rate.
-- [init(sampleTime: AVAudioFramePosition, atRate: Double)](avaudiotime/init(sampletime:atrate:).md)
+- [init(sampleTime: AVAudioFramePosition, atRate: Double)](./init%28sampletime,atrate%29.md)
   Creates an audio time object with the specified timestamp and sample rate.
-- [func extrapolateTime(fromAnchor: AVAudioTime) -> AVAudioTime?](avaudiotime/extrapolatetime(fromanchor:).md)
+- [func extrapolateTime(fromAnchor: AVAudioTime) -> AVAudioTime?](./extrapolatetime%28fromanchor%29.md)
   Creates an audio time object by converting between host time and sample time.
 
 

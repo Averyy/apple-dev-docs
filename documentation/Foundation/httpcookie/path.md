@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s path.
 
@@ -20,15 +21,20 @@ The cookie’s path.
 var path: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * path;
+```
+
 #### Discussion
 
 The cookie will be sent with requests for this path in the cookie’s domain, and all paths that have this prefix. A path of `"/"` means the cookie will be sent for all URLs in the domain.
 
 ## See Also
 
-- [var domain: String](httpcookie/domain.md)
+### Getting cookie host properties
+- [var domain: String](./domain.md)
   The domain of the cookie.
-- [var portList: [NSNumber]?](httpcookie/portlist.md)
+- [var portList: [NSNumber]?](./portlist.md)
   The cookie’s port list.
 
 

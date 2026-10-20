@@ -1,7 +1,8 @@
 # SubmissionResponse.Meta
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An empty object.
 
@@ -10,7 +11,7 @@ An empty object.
 
 ## Declaration
 
-```swift
+```
 object SubmissionResponse.Meta
 ```
 
@@ -20,7 +21,8 @@ This object is reserved for future use.
 
 ## See Also
 
-- [object SubmissionResponse.Data](submissionresponse/data-data.dictionary.md)
+### Objects
+- [object SubmissionResponse.Data](./data-data.dictionary.md)
   Information that the service provides about the status of a notarization submission.
 
 

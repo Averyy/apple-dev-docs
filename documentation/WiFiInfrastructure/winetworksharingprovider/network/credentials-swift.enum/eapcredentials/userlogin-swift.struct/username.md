@@ -1,7 +1,8 @@
 # username
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Username used to login.
 
@@ -22,7 +23,8 @@ Can be between 1 - 253 characters in length, inclusive.
 
 ## See Also
 
-- [let password: String?](winetworksharingprovider/network/credentials-swift.enum/eapcredentials/userlogin-swift.struct/password.md)
+### Login credentials
+- [let password: String?](./password.md)
   The password a person uses to login.
 
 

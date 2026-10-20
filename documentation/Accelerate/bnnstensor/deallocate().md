@@ -1,7 +1,8 @@
 # deallocate()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deallocates the previously allocated memory block referenced by this pointer.
 

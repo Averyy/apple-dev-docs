@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range in seconds.
 
@@ -22,7 +23,8 @@ var range: Range<TimeInterval>
 
 ## See Also
 
-- [var url: URL](temporalfilesegment/url.md)
+### Getting the properties
+- [var url: URL](./url.md)
   The file URL.
 
 

@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The area the map is displaying.
 
@@ -10,19 +11,20 @@ The area the map is displaying.
 
 ## Declaration
 
-```swift
+```
 region?: CoordinateRegionData;
 ```
 
 ## See Also
 
-- [visibleMapRect](mapconstructoroptions/visiblemaprect.md)
+### Controlling the visible portion of the map
+- [visibleMapRect](./visiblemaprect.md)
   The visible area of the map, in map units.
-- [center](mapconstructoroptions/center.md)
+- [center](./center.md)
   The map coordinate at the center of the map view.
-- [rotation](mapconstructoroptions/rotation.md)
+- [rotation](./rotation.md)
   The map’s rotation, in degrees.
-- [tintColor](mapconstructoroptions/tintcolor.md)
+- [tintColor](./tintcolor.md)
   The CSS color that MapKit JS uses for the user interface controls on the map.
 
 

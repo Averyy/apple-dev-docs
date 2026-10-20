@@ -1,7 +1,8 @@
 # SVGFETileElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFETileElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [in1](svgfetileelement/1629210-in1.md)
+- [in1](./svgfetileelement/api-1629210-in1.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

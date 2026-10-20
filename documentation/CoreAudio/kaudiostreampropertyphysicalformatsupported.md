@@ -1,11 +1,12 @@
 # kAudioStreamPropertyPhysicalFormatSupported
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,11 +14,16 @@
 var kAudioStreamPropertyPhysicalFormatSupported: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioStreamPropertyPhysicalFormatSupported
+```
+
 ## See Also
 
-- [var kAudioStreamPropertyOwningDevice: AudioObjectPropertySelector](kaudiostreampropertyowningdevice.md)
-- [var kAudioStreamPropertyPhysicalFormatMatch: AudioObjectPropertySelector](kaudiostreampropertyphysicalformatmatch.md)
-- [var kAudioStreamPropertyPhysicalFormats: AudioObjectPropertySelector](kaudiostreampropertyphysicalformats.md)
+### Constants
+- [var kAudioStreamPropertyOwningDevice: AudioObjectPropertySelector](./kaudiostreampropertyowningdevice.md)
+- [var kAudioStreamPropertyPhysicalFormatMatch: AudioObjectPropertySelector](./kaudiostreampropertyphysicalformatmatch.md)
+- [var kAudioStreamPropertyPhysicalFormats: AudioObjectPropertySelector](./kaudiostreampropertyphysicalformats.md)
 
 
 ---

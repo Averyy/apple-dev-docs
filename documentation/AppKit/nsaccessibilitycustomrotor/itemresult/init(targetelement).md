@@ -1,7 +1,8 @@
 # init(targetElement:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an item result with the specified target element.
 
@@ -14,9 +15,14 @@ Creates an item result with the specified target element.
 init(targetElement: any NSAccessibilityElementProtocol)
 ```
 
+```objc
+- (instancetype) initWithTargetElement:(id<NSAccessibilityElement>) targetElement;
+```
+
 ## See Also
 
-- [init(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: String)](nsaccessibilitycustomrotor/itemresult/init(itemloadingtoken:customlabel:).md)
+### Creating an Item Result
+- [init(itemLoadingToken: NSAccessibilityLoadingToken, customLabel: String)](./init%28itemloadingtoken,customlabel%29.md)
   Creates an item result with the specified item load token and custom label.
 
 

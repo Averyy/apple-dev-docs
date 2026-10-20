@@ -1,7 +1,8 @@
 # alg
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 An algorithm you use to sign a JSON Web Signature (JWS).
 
@@ -10,15 +11,16 @@ An algorithm you use to sign a JSON Web Signature (JWS).
 
 ## Declaration
 
-```swift
+```
 string alg
 ```
 
 ## See Also
 
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+### Real-time request header
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header.
-- [type x5c](x5c.md)
+- [type x5c](./x5c.md)
   A JSON Web Signature (JWS) header parameter that contains the certificate chain that corresponds to the key you use to digitally sign the JWS.
 
 

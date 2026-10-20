@@ -1,7 +1,8 @@
 # metrics(subject:input:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates the input and returns an array of metrics.
 
@@ -23,7 +24,7 @@ nonisolated
 
 #### Return Value
 
-An array that contains the [`Metric`](metric.md) the evaluation closure produces.
+An array that contains the [`Metric`](../metric.md) the evaluation closure produces.
 
 ## Parameters
 

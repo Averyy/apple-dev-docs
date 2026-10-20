@@ -1,7 +1,8 @@
 # sendLevel
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of audio signal to add to the output.
 
@@ -19,11 +20,15 @@ The amount of audio signal to add to the output.
 var sendLevel: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double sendLevel;
+```
+
 #### Discussion
 
 The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` passes the audio through to the output at full volume. The default value is `1`.
 
-When an app adds the entry’s spatial pipeline (see [`entries`](phasespatialpipeline/entries.md)) to a sound event, the framework observes no further adjustments to this property. To change the send level after that, adjust the [`sendLevelMetaParameterDefinition`](phasespatialpipelineentry/sendlevelmetaparameterdefinition.md).
+When an app adds the entry’s spatial pipeline (see [`entries`](../phasespatialpipeline/entries.md)) to a sound event, the framework observes no further adjustments to this property. To change the send level after that, adjust the [`sendLevelMetaParameterDefinition`](./sendlevelmetaparameterdefinition.md).
 
 
 ---

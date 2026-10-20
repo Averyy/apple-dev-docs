@@ -1,7 +1,8 @@
 # UserInvitation.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object UserInvitation.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object UserInvitation.Relationships.VisibleApps](userinvitation/relationships-data.dictionary/visibleapps-data.dictionary.md)
+- [object UserInvitation.Relationships.VisibleApps](./relationships-data.dictionary/visibleapps-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object UserInvitation.Relationships
 
 ## See Also
 
-- [object UserInvitation.Attributes](userinvitation/attributes-data.dictionary.md)
+### Objects
+- [object UserInvitation.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a User Invitations resource.
 
 

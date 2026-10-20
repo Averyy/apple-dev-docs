@@ -1,7 +1,8 @@
 # NSRectEdge.minX
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The minimum X edge.
 
@@ -15,17 +16,22 @@ The minimum X edge.
 case minX
 ```
 
+```c
+NSRectEdgeMinX
+```
+
 #### Discussion
 
-This is equivalent to [`CGRectEdge.minXEdge`](https://developer.apple.com/documentation/corefoundation/cgrectedge/minxedge).
+This is equivalent to [`CGRectEdge.minXEdge`](../../CoreFoundation/cgrectedge/minxedge.md).
 
 ## See Also
 
-- [NSRectEdge.maxX](nsrectedge/maxx.md)
+### Minimum and maximum values
+- [NSRectEdge.maxX](./maxx.md)
   The maximum X edge.
-- [NSRectEdge.maxY](nsrectedge/maxy.md)
+- [NSRectEdge.maxY](./maxy.md)
   The maximum Y edge.
-- [NSRectEdge.minY](nsrectedge/miny.md)
+- [NSRectEdge.minY](./miny.md)
   The minimum Y edge.
 
 

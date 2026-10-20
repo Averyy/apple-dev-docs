@@ -1,7 +1,8 @@
 # titlebar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title bar displayed in a window of a Mac app.
 
@@ -14,13 +15,18 @@ The title bar displayed in a window of a Mac app.
 var titlebar: UITitlebar? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UITitlebar * titlebar;
+```
+
 #### Discussion
 
 Use this property to configure the title bar displayed across the top of a window in your Mac app built with Mac Catalyst.
 
 ## See Also
 
-- [class UITitlebar](uititlebar.md)
+### Configuring a window’s title bar
+- [class UITitlebar](../uititlebar.md)
   An object that you use to configure the title bar of a window in a Mac app built with Mac Catalyst.
 
 

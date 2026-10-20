@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attachment point that provides this buffer.
 
@@ -12,7 +13,7 @@ The attachment point that provides this buffer.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

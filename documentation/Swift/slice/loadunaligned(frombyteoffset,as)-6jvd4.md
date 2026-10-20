@@ -1,7 +1,8 @@
 # loadUnaligned(fromByteOffset:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func loadUnaligned<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
 ```
+
+Available when `Base` is `UnsafeRawBufferPointer`.
 
 
 ---

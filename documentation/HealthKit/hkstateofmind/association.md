@@ -1,7 +1,8 @@
 # HKStateOfMind.Association
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,61 +18,66 @@
 enum Association
 ```
 
+```c
+enum HKStateOfMindAssociation : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [HKStateOfMind.Association.community](hkstateofmind/association/community.md)
-- [HKStateOfMind.Association.currentEvents](hkstateofmind/association/currentevents.md)
-- [HKStateOfMind.Association.dating](hkstateofmind/association/dating.md)
-- [HKStateOfMind.Association.education](hkstateofmind/association/education.md)
-- [HKStateOfMind.Association.family](hkstateofmind/association/family.md)
-- [HKStateOfMind.Association.fitness](hkstateofmind/association/fitness.md)
-- [HKStateOfMind.Association.friends](hkstateofmind/association/friends.md)
-- [HKStateOfMind.Association.health](hkstateofmind/association/health.md)
-- [HKStateOfMind.Association.hobbies](hkstateofmind/association/hobbies.md)
-- [HKStateOfMind.Association.identity](hkstateofmind/association/identity.md)
-- [HKStateOfMind.Association.money](hkstateofmind/association/money.md)
-- [HKStateOfMind.Association.partner](hkstateofmind/association/partner.md)
-- [HKStateOfMind.Association.selfCare](hkstateofmind/association/selfcare.md)
-- [HKStateOfMind.Association.spirituality](hkstateofmind/association/spirituality.md)
-- [HKStateOfMind.Association.tasks](hkstateofmind/association/tasks.md)
-- [HKStateOfMind.Association.travel](hkstateofmind/association/travel.md)
-- [HKStateOfMind.Association.weather](hkstateofmind/association/weather.md)
-- [HKStateOfMind.Association.work](hkstateofmind/association/work.md)
+- [HKStateOfMind.Association.community](./association/community.md)
+- [HKStateOfMind.Association.currentEvents](./association/currentevents.md)
+- [HKStateOfMind.Association.dating](./association/dating.md)
+- [HKStateOfMind.Association.education](./association/education.md)
+- [HKStateOfMind.Association.family](./association/family.md)
+- [HKStateOfMind.Association.fitness](./association/fitness.md)
+- [HKStateOfMind.Association.friends](./association/friends.md)
+- [HKStateOfMind.Association.health](./association/health.md)
+- [HKStateOfMind.Association.hobbies](./association/hobbies.md)
+- [HKStateOfMind.Association.identity](./association/identity.md)
+- [HKStateOfMind.Association.money](./association/money.md)
+- [HKStateOfMind.Association.partner](./association/partner.md)
+- [HKStateOfMind.Association.selfCare](./association/selfcare.md)
+- [HKStateOfMind.Association.spirituality](./association/spirituality.md)
+- [HKStateOfMind.Association.tasks](./association/tasks.md)
+- [HKStateOfMind.Association.travel](./association/travel.md)
+- [HKStateOfMind.Association.weather](./association/weather.md)
+- [HKStateOfMind.Association.work](./association/work.md)
 ### Initializers
-- [init?(rawValue: Int)](hkstateofmind/association/init(rawvalue:).md)
+- [init?(rawValue: Int)](./association/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
-- [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
-- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+### Enumerations
+- [enum HKAudiogramConductionType](../hkaudiogramconductiontype.md)
+- [enum HKAudiogramSensitivityTestSide](../hkaudiogramsensitivitytestside.md)
+- [enum HKCategoryValueVaginalBleeding](../hkcategoryvaluevaginalbleeding.md)
   A value that indicates the intensity of vaginal bleeding.
-- [HKGAD7Assessment.Answer](hkgad7assessment/answer.md)
-- [HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.enum.md)
-- [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
-- [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)
-- [HKStateOfMind.Kind](hkstateofmind/kind-swift.enum.md)
-- [HKStateOfMind.Label](hkstateofmind/label.md)
-- [HKStateOfMind.ValenceClassification](hkstateofmind/valenceclassification-swift.enum.md)
-- [enum HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipqueryoptions.md)
-- [enum HKBiologicalSex](hkbiologicalsex.md)
+- [HKGAD7Assessment.Answer](../hkgad7assessment/answer.md)
+- [HKGAD7Assessment.Risk](../hkgad7assessment/risk-swift.enum.md)
+- [HKPHQ9Assessment.Answer](../hkphq9assessment/answer.md)
+- [HKPHQ9Assessment.Risk](../hkphq9assessment/risk-swift.enum.md)
+- [HKStateOfMind.Kind](./kind-swift.enum.md)
+- [HKStateOfMind.Label](./label.md)
+- [HKStateOfMind.ValenceClassification](./valenceclassification-swift.enum.md)
+- [enum HKWorkoutEffortRelationshipQueryOptions](../hkworkouteffortrelationshipqueryoptions.md)
+- [enum HKBiologicalSex](../hkbiologicalsex.md)
   Constants indicating the user’s sex.
-- [enum HKBloodType](hkbloodtype.md)
+- [enum HKBloodType](../hkbloodtype.md)
   Constants indicating the user’s blood type.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](../hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](../hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 

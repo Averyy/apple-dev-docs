@@ -2,6 +2,7 @@
 
 **Framework**: Image Playground  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the generated image to the delegate.
@@ -22,7 +23,7 @@ Returns the generated image to the delegate.
 
 #### Discussion
 
-Use this method to retrieve the image at the specified location. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) from your app’s interface.
+Use this method to retrieve the image at the specified location. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 
 ## Parameters
 

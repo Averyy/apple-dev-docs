@@ -1,25 +1,26 @@
 # Enqueue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a single entry to the shared data queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock callback);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, [`kIOReturnOverrun`](kioreturnoverrun.md) if the queue was full, or [`kIOReturnError`](kioreturnerror.md) if the queue is corrupt. See [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, [`kIOReturnOverrun`](../kioreturnoverrun.md) if the queue was full, or [`kIOReturnError`](../kioreturnerror.md) if the queue is corrupt. See [Error Codes](../error-codes.md).
 
 ## Parameters
 
@@ -28,15 +29,16 @@ kern_return_t Enqueue(uint32_t dataSize, IODataQueueClientEnqueueEntryBlock call
 
 ## See Also
 
-- [SetDataServicedHandler](iodataqueuedispatchsource/setdataservicedhandler.md)
+### Adding Work to the Queue
+- [SetDataServicedHandler](./setdataservicedhandler.md)
   Installs the handler block to execute when data is removed from the queue.
-- [DataServiced](iodataqueuedispatchsource/dataserviced.md)
+- [DataServiced](./dataserviced.md)
   Responds to the removal of data from the queue.
-- [EnqueueWithCoalesce](iodataqueuedispatchsource/enqueuewithcoalesce.md)
+- [EnqueueWithCoalesce](./enqueuewithcoalesce.md)
   Adds an entry to the queue, but doesn’t automatically send a data-available notification.
-- [SendDataAvailable](iodataqueuedispatchsource/senddataavailable.md)
+- [SendDataAvailable](./senddataavailable.md)
   Sends a notification to observers that indicates more data is available for processing.
-- [IODataQueueClientEnqueueEntryBlock](iodataqueueclientenqueueentryblock.md)
+- [IODataQueueClientEnqueueEntryBlock](../iodataqueueclientenqueueentryblock.md)
   The handler block you use to add data to a queue.
 
 

@@ -1,7 +1,8 @@
 # ARWorldTrackingConfiguration.EnvironmentTexturing.none
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework doesn’t generate environment textures.
 
@@ -13,6 +14,10 @@ The framework doesn’t generate environment textures.
 
 ```swift
 case none
+```
+
+```c
+AREnvironmentTexturingNone
 ```
 
 

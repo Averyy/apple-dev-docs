@@ -1,7 +1,8 @@
 # slopeLimit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slope limit expressed as a limit angle in radians.
 
@@ -11,7 +12,7 @@ The slope limit expressed as a limit angle in radians.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,15 +28,16 @@ Changing this value after the CharacterControllerComponent has been created and 
 
 ## See Also
 
-- [var height: Float](charactercontrollercomponent/height.md)
+### Configuring a character
+- [var height: Float](./height.md)
   The capsule height.
-- [var radius: Float](charactercontrollercomponent/radius.md)
+- [var radius: Float](./radius.md)
   The capsule radius.
-- [var skinWidth: Float](charactercontrollercomponent/skinwidth.md)
+- [var skinWidth: Float](./skinwidth.md)
   An added tolerance around the character capsule.
-- [var stepLimit: Float](charactercontrollercomponent/steplimit.md)
+- [var stepLimit: Float](./steplimit.md)
   The maximum obstacle height that the controller can move over.
-- [var upVector: SIMD3<Float>](charactercontrollercomponent/upvector.md)
+- [var upVector: SIMD3<Float>](./upvector.md)
   The y-axis direction relative to the physics origin.
 
 

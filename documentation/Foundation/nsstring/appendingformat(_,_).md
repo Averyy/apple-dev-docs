@@ -1,7 +1,8 @@
 # appendingFormat(_:_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -20,9 +21,10 @@ func appendingFormat(_ format: NSString, _ args: any CVarArg...) -> NSString
 
 ## See Also
 
-- [func appending(String) -> String](nsstring/appending(_:).md)
+### Combining Strings
+- [func appending(String) -> String](./appending%28_%29.md)
   Returns a new string made by appending a given string to the receiver.
-- [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](nsstring/padding(tolength:withpad:startingat:).md)
+- [func padding(toLength: Int, withPad: String, startingAt: Int) -> String](./padding%28tolength,withpad,startingat%29.md)
   Returns a new string formed from the receiver by either removing characters from the end, or by appending as many occurrences as necessary of a given pad string.
 
 

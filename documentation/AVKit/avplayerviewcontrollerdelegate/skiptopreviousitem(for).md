@@ -1,7 +1,8 @@
 # skipToPreviousItem(for:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user requests skipping to the previous item in the timeline.
 
@@ -14,9 +15,13 @@ Tells the delegate when the user requests skipping to the previous item in the t
 optional func skipToPreviousItem(for playerViewController: AVPlayerViewController)
 ```
 
+```objc
+- (void) skipToPreviousItemForPlayerViewController:(AVPlayerViewController *) playerViewController;
+```
+
 #### Discussion
 
-The framework calls this method when you set the player view controller’s skipping behavior to [`AVPlayerViewControllerSkippingBehavior.skipItem`](avplayerviewcontrollerskippingbehavior/skipitem.md) and a user performs a backward skip gesture (by pressing the left side of the Siri Remote’s Touch surface). Implement this method to update the player view controller’s [`player`](avplayerviewcontroller/player.md) to play the previous player item.
+The framework calls this method when you set the player view controller’s skipping behavior to [`AVPlayerViewControllerSkippingBehavior.skipItem`](../avplayerviewcontrollerskippingbehavior/skipitem.md) and a user performs a backward skip gesture (by pressing the left side of the Siri Remote’s Touch surface). Implement this method to update the player view controller’s [`player`](../avplayerviewcontroller/player.md) to play the previous player item.
 
 ## Parameters
 
@@ -24,11 +29,12 @@ The framework calls this method when you set the player view controller’s skip
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, timeToSeekAfterUserNavigatedFrom: CMTime, to: CMTime) -> CMTime](avplayerviewcontrollerdelegate/playerviewcontroller(_:timetoseekafterusernavigatedfrom:to:).md)
+### Responding to navigation events
+- [func playerViewController(AVPlayerViewController, timeToSeekAfterUserNavigatedFrom: CMTime, to: CMTime) -> CMTime](./playerviewcontroller%28_,timetoseekafterusernavigatedfrom,to%29.md)
   Tells the delegate when the user skips, scrubs, or otherwise navigates to a new time and wants to resume playback at the target time.
-- [func playerViewController(AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom: CMTime, to: CMTime)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willresumeplaybackafterusernavigatedfrom:to:).md)
+- [func playerViewController(AVPlayerViewController, willResumePlaybackAfterUserNavigatedFrom: CMTime, to: CMTime)](./playerviewcontroller%28_,willresumeplaybackafterusernavigatedfrom,to%29.md)
   Tells the delegate when the user navigates to a new time and playback is about to begin.
-- [func skipToNextItem(for: AVPlayerViewController)](avplayerviewcontrollerdelegate/skiptonextitem(for:).md)
+- [func skipToNextItem(for: AVPlayerViewController)](./skiptonextitem%28for%29.md)
   Tells the delegate when the user requests skipping to the next item in the timeline.
 
 

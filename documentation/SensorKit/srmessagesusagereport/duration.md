@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration that the report spans.
 
@@ -16,13 +17,18 @@ The duration that the report spans.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var totalIncomingMessages: Int](srmessagesusagereport/totalincomingmessages.md)
+### Analyzing Message Use
+- [var totalIncomingMessages: Int](./totalincomingmessages.md)
   The number of messages the user receives.
-- [var totalOutgoingMessages: Int](srmessagesusagereport/totaloutgoingmessages.md)
+- [var totalOutgoingMessages: Int](./totaloutgoingmessages.md)
   The number of messages the user sends.
-- [var totalUniqueContacts: Int](srmessagesusagereport/totaluniquecontacts.md)
+- [var totalUniqueContacts: Int](./totaluniquecontacts.md)
   The user’s number of contacts.
 
 

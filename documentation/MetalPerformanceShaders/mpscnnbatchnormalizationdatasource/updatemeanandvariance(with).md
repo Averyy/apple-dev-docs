@@ -1,7 +1,8 @@
 # updateMeanAndVariance(with:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func updateMeanAndVariance(with batchNormalizationState: MPSCNNBatchNormalizationState) -> Bool
+```
+
+```objc
+- (BOOL) updateMeanAndVarianceWithBatchNormalizationState:(MPSCNNBatchNormalizationState *) batchNormalizationState;
 ```
 
 

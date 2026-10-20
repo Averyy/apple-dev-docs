@@ -1,30 +1,32 @@
 # Audio mixing
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Define how to mix the audio levels from multiple audio tracks over an asset’s duration.
 
 ## Topics
 
 ### Mixing
-- [class AVAudioMix](avaudiomix.md)
+- [class AVAudioMix](./avaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVAudioMixInputParameters](avaudiomixinputparameters.md)
+- [class AVAudioMixInputParameters](./avaudiomixinputparameters.md)
   An object that represents the parameters that you apply when adding an audio track to a mix.
-- [enum AVAudioMixInputParametersTrackID](avaudiomixinputparameterstrackid.md)
+- [enum AVAudioMixInputParametersTrackID](./avaudiomixinputparameterstrackid.md)
   Special value for the trackID property of AVAudioMixInputParameters.
-- [class AVMutableAudioMix](avmutableaudiomix.md)
+- [class AVMutableAudioMix](./avmutableaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
-- [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
+- [class AVMutableAudioMixInputParameters](./avmutableaudiomixinputparameters.md)
   The parameters you use when adding an audio track to a mix.
 
 ## See Also
 
-- [Composite assets](composite-assets.md)
+### Editing
+- [Composite assets](./composite-assets.md)
   Combine tracks and segments of tracks from multiple assets into a composite asset that you can play or process.
-- [QuickTime movies](quicktime-movies.md)
+- [QuickTime movies](./quicktime-movies.md)
   Access the contents of a QuickTime movie file, and perform sample-level edits of its media tracks.
-- [Video effects](video-effects.md)
+- [Video effects](./video-effects.md)
   Define standard video transition effects, synchronize layer animations with media timing, and create custom video compositors.
 
 

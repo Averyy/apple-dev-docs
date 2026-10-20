@@ -1,7 +1,8 @@
 # BNNSGraph.Error.unableToMakeGraph(_:)
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the call to the underlying `BNNSGraphContextSetDynamicShapes` function failed.
 

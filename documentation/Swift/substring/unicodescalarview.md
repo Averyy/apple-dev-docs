@@ -1,7 +1,8 @@
 # Substring.UnicodeScalarView
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -22,25 +23,25 @@ struct UnicodeScalarView
 ## Topics
 
 ### Instance Methods
-- [func isTriviallyIdentical(to: Substring.UnicodeScalarView) -> Bool](substring/unicodescalarview/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Substring.UnicodeScalarView) -> Bool](./unicodescalarview/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this unicode scalar view is trivially identical to `other`.
 ### Default Implementations
-- [BidirectionalCollection Implementations](substring/unicodescalarview/bidirectionalcollection-implementations.md)
-- [Collection Implementations](substring/unicodescalarview/collection-implementations.md)
-- [RangeReplaceableCollection Implementations](substring/unicodescalarview/rangereplaceablecollection-implementations.md)
-- [Sequence Implementations](substring/unicodescalarview/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./unicodescalarview/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./unicodescalarview/collection-implementations.md)
+- [RangeReplaceableCollection Implementations](./unicodescalarview/rangereplaceablecollection-implementations.md)
+- [Sequence Implementations](./unicodescalarview/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [RangeReplaceableCollection](rangereplaceablecollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [RangeReplaceableCollection](../rangereplaceablecollection.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

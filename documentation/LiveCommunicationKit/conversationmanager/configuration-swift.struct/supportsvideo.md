@@ -1,7 +1,8 @@
 # supportsVideo
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the app supports video in addition to audio.
 
@@ -20,19 +21,20 @@ var supportsVideo: Bool
 
 ## See Also
 
-- [var iconTemplateImageData: Data?](conversationmanager/configuration-swift.struct/icontemplateimagedata.md)
+### Configuration options
+- [var iconTemplateImageData: Data?](./icontemplateimagedata.md)
   The PNG data for the icon image of the app.
-- [var includesConversationInRecents: Bool](conversationmanager/configuration-swift.struct/includesconversationinrecents.md)
+- [var includesConversationInRecents: Bool](./includesconversationinrecents.md)
   A Boolean value that indicates whether your app includes a conversation in the system’s Recents list after the conversation ends.
-- [var maximumConversationGroups: Int](conversationmanager/configuration-swift.struct/maximumconversationgroups.md)
+- [var maximumConversationGroups: Int](./maximumconversationgroups.md)
   The maximum number of conversation groups.
-- [var maximumConversationsPerConversationGroup: Int](conversationmanager/configuration-swift.struct/maximumconversationsperconversationgroup.md)
+- [var maximumConversationsPerConversationGroup: Int](./maximumconversationsperconversationgroup.md)
   The maximum number of conversations per conversation group.
-- [var ringtoneName: String?](conversationmanager/configuration-swift.struct/ringtonename.md)
+- [var ringtoneName: String?](./ringtonename.md)
   The name of the sound resource in the app bundle for the app’s ringtone.
-- [var supportedHandleTypes: Set<Handle.Kind>](conversationmanager/configuration-swift.struct/supportedhandletypes.md)
+- [var supportedHandleTypes: Set<Handle.Kind>](./supportedhandletypes.md)
   The supported handle types.
-- [var supportsAudioTranslation: Bool](conversationmanager/configuration-swift.struct/supportsaudiotranslation.md)
+- [var supportsAudioTranslation: Bool](./supportsaudiotranslation.md)
   A Boolean value that indicates whether the app supports real-time audio translation.
 
 

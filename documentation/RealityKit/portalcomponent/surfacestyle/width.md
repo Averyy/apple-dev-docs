@@ -1,7 +1,8 @@
 # width
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the portal mesh, in meters, along the entity’s local X axis.
 

@@ -1,12 +1,13 @@
 # setPropertyData(address:qualifier:data:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells an AudioObject to change the value of the given property using the  provided data.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

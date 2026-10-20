@@ -1,7 +1,8 @@
 # addSharedObserver(_:forKey:options:context:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a new observer to the collection.
 
@@ -18,6 +19,10 @@ Add a new observer to the collection.
 
 ```swift
 func addSharedObserver(_ observer: NSObject, forKey key: String, options: NSKeyValueObservingOptions = [], context: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) addSharedObserver:(NSObject *) observer forKey:(NSString *) key options:(NSKeyValueObservingOptions) options context:(void *) context;
 ```
 
 #### Discussion

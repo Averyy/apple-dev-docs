@@ -1,14 +1,15 @@
 # cpuid_model_string
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 const char *cpuid_model_string;
 ```
 

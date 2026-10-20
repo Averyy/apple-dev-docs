@@ -1,12 +1,13 @@
 # WKExtensionDelegate
 
 **Framework**: WatchKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A collection of methods that manages the app-level behavior of a WatchKit extension.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 9.2
 
 ## Declaration
 
@@ -15,97 +16,102 @@ A collection of methods that manages the app-level behavior of a WatchKit extens
 protocol WKExtensionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol WKExtensionDelegate <NSObject>
+```
+
 #### Overview
 
 Implement the delegate’s methods to respond to your app’s life-cycle events, such as the activation and deactivation of your app. You can also implement delegate methods to respond to background tasks, Siri intents, workout sessions, or Handoff activity from another devices.
 
-WatchKit creates your delegate object automatically by instantiating the class assigned to the [`WKExtensionDelegateClassName`](https://developer.apple.com/documentation/bundleresources/information-property-list/wkextensiondelegateclassname) key in your WatchKit extension’s `Info.plist` file. By default, this class is named ExtensionDelegate. The system then assigns the delegate object to the [`delegate`](wkextension/delegate.md) property of the shared [`WKExtension`](wkextension.md) object.
+WatchKit creates your delegate object automatically by instantiating the class assigned to the [`WKExtensionDelegateClassName`](../BundleResources/information-property-list/wkextensiondelegateclassname.md) key in your WatchKit extension’s `Info.plist` file. By default, this class is named ExtensionDelegate. The system then assigns the delegate object to the [`delegate`](./wkextension/delegate.md) property of the shared [`WKExtension`](./wkextension.md) object.
 
 ## Topics
 
 ### Monitoring state changes
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
+- [Working with the watchOS app life cycle](./working-with-the-watchos-app-life-cycle.md)
   Learn how the watchOS app life cycle operates and responds to life cycle notification methods.
-- [func applicationDidFinishLaunching()](wkextensiondelegate/applicationdidfinishlaunching.md)
+- [func applicationDidFinishLaunching()](./wkextensiondelegate/applicationdidfinishlaunching%28%29.md)
   Tells the delegate that the launch process is almost done and the extension is almost ready to run.
-- [func applicationDidBecomeActive()](wkextensiondelegate/applicationdidbecomeactive.md)
+- [func applicationDidBecomeActive()](./wkextensiondelegate/applicationdidbecomeactive%28%29.md)
   Tells the delegate that the watchOS app is visible and processing events.
-- [func applicationWillResignActive()](wkextensiondelegate/applicationwillresignactive.md)
+- [func applicationWillResignActive()](./wkextensiondelegate/applicationwillresignactive%28%29.md)
   Tells the delegate that the system is about to deactivate the watchOS app.
-- [func applicationWillEnterForeground()](wkextensiondelegate/applicationwillenterforeground.md)
+- [func applicationWillEnterForeground()](./wkextensiondelegate/applicationwillenterforeground%28%29.md)
   Tells the delegate that the app is about to transition from the background to the foreground.
-- [func applicationDidEnterBackground()](wkextensiondelegate/applicationdidenterbackground.md)
+- [func applicationDidEnterBackground()](./wkextensiondelegate/applicationdidenterbackground%28%29.md)
   Tells the delegate that the app has transitioned from the foreground to the background.
-- [func deviceOrientationDidChange()](wkextensiondelegate/deviceorientationdidchange.md)
+- [func deviceOrientationDidChange()](./wkextensiondelegate/deviceorientationdidchange%28%29.md)
   Tells the delegate that the device’s orientation has changed.
 ### Responding to intents
-- [func handle(INIntent, completionHandler: (INIntentResponse) -> Void)](wkextensiondelegate/handle(_:completionhandler:).md)
+- [func handle(INIntent, completionHandler: (INIntentResponse) -> Void)](./wkextensiondelegate/handle%28_,completionhandler%29.md)
   Responds to a Siri intent.
 ### Setup Now Playing interface
-- [func handleRemoteNowPlayingActivity()](wkextensiondelegate/handleremotenowplayingactivity.md)
+- [func handleRemoteNowPlayingActivity()](./wkextensiondelegate/handleremotenowplayingactivity%28%29.md)
   Tells the delegate when the user plays audio in the corresponding iOS app.
 ### Handling a workout session
-- [func handle(HKWorkoutConfiguration)](wkextensiondelegate/handle(_:)-f27i.md)
+- [func handle(HKWorkoutConfiguration)](./wkextensiondelegate/handle%28_%29-f27i.md)
   Tells the delegate that the user started a workout session on the paired iPhone.
-- [func handleActiveWorkoutRecovery()](wkextensiondelegate/handleactiveworkoutrecovery.md)
+- [func handleActiveWorkoutRecovery()](./wkextensiondelegate/handleactiveworkoutrecovery%28%29.md)
   Tells the delegate when the app relaunches after crashing during an active workout session.
 ### Handling background tasks
-- [func handle(Set<WKRefreshBackgroundTask>)](wkextensiondelegate/handle(_:)-92ulv.md)
+- [func handle(Set<WKRefreshBackgroundTask>)](./wkextensiondelegate/handle%28_%29-92ulv.md)
   Tells the delegate that the app has received one or more background tasks.
 ### Handling extended runtime sessions
-- [func handle(WKExtendedRuntimeSession)](wkextensiondelegate/handle(_:)-4qxgv.md)
+- [func handle(WKExtendedRuntimeSession)](./wkextensiondelegate/handle%28_%29-4qxgv.md)
   Tells the delegate that the system launched your app to resume an extended runtime session.
 ### Managing remote notifications
-- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](wkextensiondelegate/didregisterforremotenotifications(withdevicetoken:).md)
+- [func didRegisterForRemoteNotifications(withDeviceToken: Data)](./wkextensiondelegate/didregisterforremotenotifications%28withdevicetoken%29.md)
   Tells the delegate that the app successfully registered with Apple Push Notification service (APNs).
-- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](wkextensiondelegate/didfailtoregisterforremotenotificationswitherror(_:).md)
+- [func didFailToRegisterForRemoteNotificationsWithError(any Error)](./wkextensiondelegate/didfailtoregisterforremotenotificationswitherror%28_%29.md)
   Tells the delegate that Apple Push Notification service (APNs) cannot successfully complete the registration process.
-- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](wkextensiondelegate/didreceiveremotenotification(_:fetchcompletionhandler:).md)
+- [func didReceiveRemoteNotification([AnyHashable : Any], fetchCompletionHandler: (WKBackgroundFetchResult) -> Void)](./wkextensiondelegate/didreceiveremotenotification%28_,fetchcompletionhandler%29.md)
   Tells the delegate that a background notification has arrived.
-- [enum WKBackgroundFetchResult](wkbackgroundfetchresult.md)
+- [enum WKBackgroundFetchResult](./wkbackgroundfetchresult.md)
   The result of an attempt to download the content associated with a remote notification.
 ### Coordinating handoff activity
-- [func handleUserActivity([AnyHashable : Any]?)](wkextensiondelegate/handleuseractivity(_:).md)
+- [func handleUserActivity([AnyHashable : Any]?)](./wkextensiondelegate/handleuseractivity%28_%29.md)
   Responds to Handoff–related activity from complications and notifications.
-- [func handle(NSUserActivity)](wkextensiondelegate/handle(_:)-5pyj1.md)
+- [func handle(NSUserActivity)](./wkextensiondelegate/handle%28_%29-5pyj1.md)
   Responds to Handoff–related activity from Siri.
 ### Accepting CloudKit shares
-- [func userDidAcceptCloudKitShare(with: CKShareMetadata)](wkextensiondelegate/userdidacceptcloudkitshare(with:).md)
+- [func userDidAcceptCloudKitShare(with: CKShareMetadata)](./wkextensiondelegate/userdidacceptcloudkitshare%28with%29.md)
   Tells the delegate that the app has access to shared information in CloudKit.
 ### Deprecated Methods
-- [func didReceiveRemoteNotification([AnyHashable : Any])](wkextensiondelegate/didreceiveremotenotification(_:).md)
+- [func didReceiveRemoteNotification([AnyHashable : Any])](./wkextensiondelegate/didreceiveremotenotification%28_%29.md)
   Tells the delegate that a remote notification arrived.
-- [func didReceive(UILocalNotification)](wkextensiondelegate/didreceive(_:).md)
+- [func didReceive(UILocalNotification)](./wkextensiondelegate/didreceive%28_%29.md)
   Tells the delegate that a local notification was triggered.
-- [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any])](wkextensiondelegate/handleaction(withidentifier:forremotenotification:).md)
+- [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any])](./wkextensiondelegate/handleaction%28withidentifier,forremotenotification%29.md)
   Delivers a remote notification payload and a user-selected action to the app.
-- [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any], withResponseInfo: [AnyHashable : Any])](wkextensiondelegate/handleaction(withidentifier:forremotenotification:withresponseinfo:).md)
+- [func handleAction(withIdentifier: String?, forRemoteNotification: [AnyHashable : Any], withResponseInfo: [AnyHashable : Any])](./wkextensiondelegate/handleaction%28withidentifier,forremotenotification,withresponseinfo%29.md)
   Delivers a remote notification payload and user response information to the app.
-- [func handleAction(withIdentifier: String?, for: UILocalNotification)](wkextensiondelegate/handleaction(withidentifier:for:).md)
+- [func handleAction(withIdentifier: String?, for: UILocalNotification)](./wkextensiondelegate/handleaction%28withidentifier,for%29.md)
   Delivers a local notification payload and a user-selected action to the app.
-- [func handleAction(withIdentifier: String?, for: UILocalNotification, withResponseInfo: [AnyHashable : Any])](wkextensiondelegate/handleaction(withidentifier:for:withresponseinfo:).md)
+- [func handleAction(withIdentifier: String?, for: UILocalNotification, withResponseInfo: [AnyHashable : Any])](./wkextensiondelegate/handleaction%28withidentifier,for,withresponseinfo%29.md)
   Delivers a local notification payload and user response information to the app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
+### App structure
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [class WKApplication](wkapplication.md)
+- [class WKApplication](./wkapplication.md)
   The centralized point of control and coordination for apps with a single watchOS app target.
-- [protocol WKApplicationDelegate](wkapplicationdelegate.md)
+- [protocol WKApplicationDelegate](./wkapplicationdelegate.md)
   A collection of methods that manages the app-level behavior for a single-target watchOS app.
-- [class WKExtension](wkextension.md)
+- [class WKExtension](./wkextension.md)
   The centralized point of control and coordination for extension-based apps running in watchOS.
-- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](wkapplicationmain(_:_:_:).md)
+- [func WKApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>, String?) -> Int32](./wkapplicationmain%28_,_,_%29.md)
   Creates the application object and the application delegate, and sets up the app’s event cycle.
-- [class WKInterfaceDevice](wkinterfacedevice.md)
+- [class WKInterfaceDevice](./wkinterfacedevice.md)
   An object that provides information about the user’s Apple Watch.
-- [WKPrefersNetworkUponForeground](../bundleresources/information-property-list/wkprefersnetworkuponforeground.md)
+- [WKPrefersNetworkUponForeground](../BundleResources/information-property-list/wkprefersnetworkuponforeground.md)
   A Boolean value that indicates whether an app requires network access on launch.
 
 

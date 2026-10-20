@@ -1,23 +1,24 @@
 # Responding to forwarded notifications
 
-**Framework**: Accessory Notifications
+**Framework**: Accessory Notifications  
+**Role**: Article
 
 Enable people to interact with notifications on your accessory and convey their responses to iOS.
 
 #### Overview
 
-When someone interacts with a notification on your accessory, send the interaction to iOS as a response: your accessory acts as a relay for the person’s action. The response lets the system perform the same follow-up actions as when someone interacts with a notification on their iPhone. This process relies on the same data provider and transport extensions you implement to forward notifications to your accessory; for more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/accessorytransportextension/receiving-ios-notifications-on-an-accessory).
+When someone interacts with a notification on your accessory, send the interaction to iOS as a response: your accessory acts as a relay for the person’s action. The response lets the system perform the same follow-up actions as when someone interacts with a notification on their iPhone. This process relies on the same data provider and transport extensions you implement to forward notifications to your accessory; for more information, see [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md).
 
 A response describes the interaction a person makes with a notification, for example, dismissing it, marking an email as read, or inputting text as a quick reply to a message.
 
-Your accessory encrypts the response data for safe transmission and sends it back to iOS using the [`Accessory Notifications`](AccessoryNotifications.md) framework. The transmission method, or transport type, that the response uses might differ from that of the forwarded notification:
+Your accessory encrypts the response data for safe transmission and sends it back to iOS using the [Accessory Notifications](./AccessoryNotifications.md) framework. The transmission method, or transport type, that the response uses might differ from that of the forwarded notification:
 
-- For Bluetooth sessions, the accessory sends the encrypted data to your transport extension, which forwards it to the data provider using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/sendmessagetodataprovider(_:)).
-- For internet sessions, the accessory instead sends the encrypted data to your server, which routes the data to the device through APNs. The [`pushToken`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/pushtoken) value from the forwarded notification bypasses the transport extension while ensuring that the response routes to the correct device.
+- For Bluetooth sessions, the accessory sends the encrypted data to your transport extension, which forwards it to the data provider using [`sendMessageToDataProvider(_:)`](../AccessoryTransportExtension/accessorytransportsession/sendmessagetodataprovider%28_%29.md).
+- For internet sessions, the accessory instead sends the encrypted data to your server, which routes the data to the device through APNs. The [`pushToken`](../AccessoryTransportExtension/accessorytransportsession/pushtoken.md) value from the forwarded notification bypasses the transport extension while ensuring that the response routes to the correct device.
 
-The system decrypts the response data and delivers it to your data provider extension through the [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md) method. Your extension parses the response details, creates a [`NotificationResponse`](notificationresponse.md), and calls [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md) to deliver the response to the system.
+The system decrypts the response data and delivers it to your data provider extension through the [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md) method. Your extension parses the response details, creates a [`NotificationResponse`](./notificationresponse.md), and calls [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md) to deliver the response to the system.
 
-#### Define the Data Format of the Response
+#### Define the data format of the response
 
 First, define a binary format for response data in the data provider extension for your accessory. Choose a format that includes these fields:
 
@@ -48,11 +49,11 @@ func serializeResponse(notificationIdentifier: String,
 }
 ```
 
-#### Encrypt Response Data on Your Accessory
+#### Encrypt response data on your accessory
 
-When someone interacts with a notification on your accessory, encrypt the response data using keys your accessory establishes during the key exchange process (see [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsecurity)). The derivation differs by transport type: Bluetooth sessions export a fresh secret from the HPKE recipient for every response, while internet sessions reuse the outgoing Symmetric Key Ratchet that your accessory initializes once during key exchange.
+When someone interacts with a notification on your accessory, encrypt the response data using keys your accessory establishes during the key exchange process (see [`AccessoryTransportSecurity`](../AccessoryTransportExtension/accessorytransportsecurity.md)). The derivation differs by transport type: Bluetooth sessions export a fresh secret from the HPKE recipient for every response, while internet sessions reuse the outgoing Symmetric Key Ratchet that your accessory initializes once during key exchange.
 
-For Bluetooth sessions, include `AccessoryToHost` in the secret’s context, and export the secret from the same `HPKE.Recipient` your accessory creates during key exchange; there’s no separate HPKE sender for this direction. Derive the context from the protocol information and the transport message’s [`sessionID`](https://developer.apple.com/documentation/accessorytransportextension/transportmessage/sessionid):
+For Bluetooth sessions, include `AccessoryToHost` in the secret’s context, and export the secret from the same `HPKE.Recipient` your accessory creates during key exchange; there’s no separate HPKE sender for this direction. Derive the context from the protocol information and the transport message’s [`sessionID`](../AccessoryTransportExtension/transportmessage/sessionid.md):
 
 ```swift
 // On the accessory, encrypt the response using the recipient established  
@@ -116,7 +117,7 @@ To keep the message directions in sync, persist `outgoingChainKey` and `outgoing
 
 Include the ratchet’s `keyID` and `messageIndex` alongside `encryptedResponse` when you send the response. The system uses the ID and index to determine the ratchet instance and step to use for decryption.
 
-#### Send the Response Through Bluetooth
+#### Send the response through Bluetooth
 
 For Bluetooth sessions, send the encrypted response to your transport extension over the active connection:
 
@@ -127,9 +128,9 @@ sendViaBluetoothToTransportExtension(encryptedResponse, sessionID: sessionID)
 
 The `sendViaBluetoothToTransportExtension(_:sessionID:)` method represents the data your accessory sends; your accessory implements this function itself, since the framework doesn’t provide it.
 
-#### Receive and Decrypt Responses in Your Transport Extension
+#### Receive and decrypt responses in your transport extension
 
-For Bluetooth sessions, the response completes its transmission at your transport extension for decryption by the system. Your [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportappextension) receives the encrypted response data from your accessory via Bluetooth. Forward the encrypted data to the data provider extension:
+For Bluetooth sessions, the response completes its transmission at your transport extension for decryption by the system. Your [`AccessoryTransportAppExtension`](../AccessoryTransportExtension/accessorytransportappextension.md) receives the encrypted response data from your accessory via Bluetooth. Forward the encrypted data to the data provider extension:
 
 ```swift
 // Receive the accessory reply in your `AccessoryTransportAppExtension`.
@@ -146,16 +147,16 @@ func didReceiveDataFromAccessory(_ encryptedData: Data, sessionID: UUID) {
 
 The system decrypts the message using the `AccessoryToHost` direction keys before delivering the message to your data provider extension.
 
-#### Send the Response Through the Internet
+#### Send the response through the internet
 
-Internet sessions require you to route responses through an APNs server that you deploy. Pass the [`pushToken`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/pushtoken) value that your accessory receives alongside the notification, along with the encrypted response data, to your server to route the response through APNs:
+Internet sessions require you to route responses through an APNs server that you deploy. Pass the [`pushToken`](../AccessoryTransportExtension/accessorytransportsession/pushtoken.md) value that your accessory receives alongside the notification, along with the encrypted response data, to your server to route the response through APNs:
 
 ```swift
 // On accessory: for internet sessions, route the response through APNs instead.
 sendViaAPNs(encryptedResponse, pushToken: pushToken, sessionID: sessionID)
 ```
 
-The `sendViaAPNs(_:pushToken:sessionID:)` method represents the data that your accessory sends; your accessory implements this code. Your server pushes the data to APNs using its own APN provider credentials. The forwarded [`pushToken`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/pushtoken) ensures that the data in the response reaches the correct device. On the push request, include the `apns-push-type` header with a value of `accessory`. Set the `apns-topic` to your companion app’s bundle ID suffixed with `.push-type.accessory`, as in the following example:
+The `sendViaAPNs(_:pushToken:sessionID:)` method represents the data that your accessory sends; your accessory implements this code. Your server pushes the data to APNs using its own APN provider credentials. The forwarded [`pushToken`](../AccessoryTransportExtension/accessorytransportsession/pushtoken.md) ensures that the data in the response reaches the correct device. On the push request, include the `apns-push-type` header with a value of `accessory`. Set the `apns-topic` to your companion app’s bundle ID suffixed with `.push-type.accessory`, as in the following example:
 
 ```http
 apns-push-type: accessory
@@ -178,11 +179,11 @@ Send the encrypted response, the session identifier, and the ratchet’s `keyID`
 
 Internet sessions skip the transport extension step entirely; the system decrypts the response and delivers it to your data provider extension for processing.
 
-For more information about constructing and sending the push request, see [`Sending notification requests to APNs`](https://developer.apple.com/documentation/usernotifications/sending-notification-requests-to-apns).
+For more information about constructing and sending the push request, see [Sending notification requests to APNs](../UserNotifications/sending-notification-requests-to-apns.md).
 
-#### Process Responses in Your Data Provider Extension
+#### Process responses in your data provider extension
 
-Once the system decrypts the response, it hands the data to your data provider extension to reconstruct into a message the system can act on. Your data provider extension receives the decrypted response through the [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md) method. Parse the response data using your custom format, then create a [`NotificationResponse`](notificationresponse.md) and call [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md) to deliver it to the system:
+Once the system decrypts the response, it hands the data to your data provider extension to reconstruct into a message the system can act on. Your data provider extension receives the decrypted response through the [`messageHandler(_:)`](./notificationsforwarding/accessorynotificationshandler/messagehandler%28_%29.md) method. Parse the response data using your custom format, then create a [`NotificationResponse`](./notificationresponse.md) and call [`sendResponse(_:)`](./notificationsforwarding/accessorynotificationssession/sendresponse%28_%29.md) to deliver it to the system:
 
 ```swift
 func messageHandler(_ message: AccessoryMessage) {
@@ -217,9 +218,9 @@ func parseResponse(_ data: Data) -> ParsedResponse {
 
 Call `sendResponse(_:)` to complete the notification response. The system then processes the notification reponse in the same manner, regardless of the device that sent it.
 
-#### Handle Different Response Types
+#### Handle different response types
 
-Notification response objects represent different interactions that a person performs in response to a notification. Each interaction corresponds to an entry in the notification’s [`actions`](accessorynotification/actions.md) array. For example, when someone dismisses a notification on your accessory, find the action with the type [`AccessoryNotification.Action.ActionType.dismiss`](accessorynotification/action/actiontype/dismiss.md), then initialize a [`NotificationResponse`](notificationresponse.md) instance from its identifiers:
+Notification response objects represent different interactions that a person performs in response to a notification. Each interaction corresponds to an entry in the notification’s [`actions`](./accessorynotification/actions.md) array. For example, when someone dismisses a notification on your accessory, find the action with the type [`AccessoryNotification.Action.ActionType.dismiss`](./accessorynotification/action/actiontype/dismiss.md), then initialize a [`NotificationResponse`](./notificationresponse.md) instance from its identifiers:
 
 ```swift
 guard let dismissAction = notification.actions.first(where: { $0.type == .dismiss }) else {
@@ -245,7 +246,7 @@ let response = NotificationResponse(
 )
 ```
 
-For notifications that support [`AccessoryNotification.Action.ActionType.textInput(placeholder:)`](accessorynotification/action/actiontype/textinput(placeholder:).md), include the text that the person provides in the response:
+For notifications that support [`AccessoryNotification.Action.ActionType.textInput(placeholder:)`](./accessorynotification/action/actiontype/textinput%28placeholder%29.md), include the text that the person provides in the response:
 
 ```swift
 let response = NotificationResponse(
@@ -258,7 +259,8 @@ let response = NotificationResponse(
 
 ## See Also
 
-- [struct NotificationResponse](notificationresponse.md)
+### Interactive support
+- [struct NotificationResponse](./notificationresponse.md)
   A structure that represents a person’s response to a notification.
 
 

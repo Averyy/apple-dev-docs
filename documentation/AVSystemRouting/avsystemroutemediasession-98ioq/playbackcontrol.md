@@ -1,7 +1,8 @@
 # playbackControl
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback control interface for the remote session.
 
@@ -18,12 +19,12 @@ final var playbackControl: (any AVPlaybackUserInterfaceControllable)? { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](../routing-media-to-third-party-devices.md)
 
 #### Discussion
 
-This property is always non-nil when obtained from a successful call to [`start()`](avsystemroutesession-gp78/start().md).
+This property is always non-nil when obtained from a successful call to [`start()`](../avsystemroutesession-gp78/start%28%29.md).
 
 > ❗ **Important**: Always update media playback state information regularly in the playbackControl object to ensure the system displays accurate information about the current media play state across a person’s devices and in system UI.
 

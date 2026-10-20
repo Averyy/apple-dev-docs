@@ -1,7 +1,8 @@
 # inputColorChannels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var inputColorChannels: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger inputColorChannels;
 ```
 
 #### Discussion

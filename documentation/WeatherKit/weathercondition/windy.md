@@ -1,7 +1,8 @@
 # WeatherCondition.windy
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Windy.
 
@@ -22,7 +23,8 @@ case windy
 
 ## See Also
 
-- [WeatherCondition.breezy](weathercondition/breezy.md)
+### Getting wind properties
+- [WeatherCondition.breezy](./breezy.md)
   Breezy, light wind.
 
 

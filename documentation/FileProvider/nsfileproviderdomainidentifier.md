@@ -1,7 +1,8 @@
 # NSFileProviderDomainIdentifier
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for a file provider’s domain.
 
@@ -18,30 +19,35 @@ A unique identifier for a file provider’s domain.
 struct NSFileProviderDomainIdentifier
 ```
 
+```c
+typedef NSString * NSFileProviderDomainIdentifier;
+```
+
 ## Topics
 
 ### Initializers
-- [init(String)](nsfileproviderdomainidentifier/init(_:).md)
+- [init(String)](./nsfileproviderdomainidentifier/init%28_%29.md)
   Returns a newly initialized domain identifier.
-- [init(rawValue: String)](nsfileproviderdomainidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./nsfileproviderdomainidentifier/init%28rawvalue%29.md)
   Returns a newly initialized domain identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(identifier: NSFileProviderDomainIdentifier, displayName: String, pathRelativeToDocumentStorage: String)](nsfileproviderdomain/init(identifier:displayname:pathrelativetodocumentstorage:).md)
+### Creating domains
+- [init(identifier: NSFileProviderDomainIdentifier, displayName: String, pathRelativeToDocumentStorage: String)](./nsfileproviderdomain/init%28identifier,displayname,pathrelativetodocumentstorage%29.md)
   Returns a newly instantiated domain.
-- [init(identifier: NSFileProviderDomainIdentifier, displayName: String)](nsfileproviderdomain/init(identifier:displayname:).md)
+- [init(identifier: NSFileProviderDomainIdentifier, displayName: String)](./nsfileproviderdomain/init%28identifier,displayname%29.md)
   Creates a new file provider domain with the specified identifier and display name.
-- [init(displayName: String, userInfo: [AnyHashable : Any], volumeURL: URL?)](nsfileproviderdomain/init(displayname:userinfo:volumeurl:).md)
+- [init(displayName: String, userInfo: [AnyHashable : Any], volumeURL: URL?)](./nsfileproviderdomain/init%28displayname,userinfo,volumeurl%29.md)
   Creates a new file provider domain with the specified URL and display name.
 
 

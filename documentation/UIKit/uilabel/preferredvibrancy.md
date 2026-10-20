@@ -1,7 +1,8 @@
 # preferredVibrancy
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,9 +17,14 @@
 var preferredVibrancy: UILabelVibrancy { get set }
 ```
 
+```objc
+@property (nonatomic) UILabelVibrancy preferredVibrancy;
+```
+
 ## See Also
 
-- [enum UILabelVibrancy](uilabelvibrancy.md)
+### Managing vibrancy
+- [enum UILabelVibrancy](../uilabelvibrancy.md)
 
 
 ---

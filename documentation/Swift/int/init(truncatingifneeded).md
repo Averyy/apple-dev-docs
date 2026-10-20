@@ -1,7 +1,8 @@
 # init(truncatingIfNeeded:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the bit pattern of the given instance by sign-extending or truncating to fit this type.
 
@@ -57,15 +58,16 @@ let y = UInt16(truncatingIfNeeded: w)
 
 ## See Also
 
-- [init<T>(T)](int/init(_:)-4ekvl.md)
+### Converting Integers
+- [init<T>(T)](./init%28_%29-4ekvl.md)
   Creates a new instance from the given integer.
-- [init?<T>(exactly: T)](int/init(exactly:)-b1dy.md)
-- [init<Other>(clamping: Other)](int/init(clamping:).md)
+- [init?<T>(exactly: T)](./init%28exactly%29-b1dy.md)
+- [init<Other>(clamping: Other)](./init%28clamping%29.md)
   Creates a new instance with the representable value that’s closest to the given integer.
-- [init(bitPattern: UInt)](int/init(bitpattern:)-72037.md)
+- [init(bitPattern: UInt)](./init%28bitpattern%29-72037.md)
   Creates a new instance with the same memory representation as the given value.
-- [init?(exactly: NSNumber)](int/init(exactly:)-177ax.md)
-- [init(truncating: NSNumber)](int/init(truncating:).md)
+- [init?(exactly: NSNumber)](./init%28exactly%29-177ax.md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

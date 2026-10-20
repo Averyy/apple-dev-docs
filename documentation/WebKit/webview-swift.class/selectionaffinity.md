@@ -1,17 +1,22 @@
 # selectionAffinity
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current selection affinity.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var selectionAffinity: NSSelectionAffinity { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSSelectionAffinity selectionAffinity;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ For example, if text wraps across line boundaries, the value of this property in
 
 ## See Also
 
-- [var selectedDOMRange: DOMRange!](webview-swift.class/selecteddomrange.md)
+### Selecting Content in the Document
+- [var selectedDOMRange: DOMRange!](./selecteddomrange.md)
   The range of the current selection.
-- [func setSelectedDOMRange(DOMRange!, affinity: NSSelectionAffinity)](webview-swift.class/setselecteddomrange(_:affinity:).md)
+- [func setSelectedDOMRange(DOMRange!, affinity: NSSelectionAffinity)](./setselecteddomrange%28_,affinity%29.md)
   Selects a range of nodes.
 
 

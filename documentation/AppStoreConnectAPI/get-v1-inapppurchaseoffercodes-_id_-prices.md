@@ -1,7 +1,8 @@
 # List All Prices for an In-App Purchase Offer Code
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of prices for a specific In-App Purchase offer code.
 
@@ -14,22 +15,38 @@ Get a list of prices for a specific In-App Purchase offer code.
 
 ## Parameters
 
-- `fields[inAppPurchaseOfferPrices]` ([string])
-- `fields[inAppPurchasePricePoints]` ([string])
-- `fields[territories]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[inAppPurchaseOfferPrices]` ([string]): **Allowed Values**: `territory`, `pricePoint`
+- `fields[inAppPurchasePricePoints]` ([string]): **Allowed Values**: `customerPrice`, `proceeds`, `territory`, `equalizations`
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
 - `filter[territory]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `include` ([string]): **Allowed Values**: `territory`, `pricePoint`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`InAppPurchaseOfferPricesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an In-App Purchase Offer Code](post-v1-inapppurchaseoffercodes.md)
+### Creating and Managing In-App Purchase Offer Codes
+- [Create an In-App Purchase Offer Code](./post-v1-inapppurchaseoffercodes.md)
   Create an offer code for an In-App Purchase.
-- [Read In-App Purchase Offer Code Information](get-v1-inapppurchaseoffercodes-_id_.md)
+- [Read In-App Purchase Offer Code Information](./get-v1-inapppurchaseoffercodes-_id_.md)
   Get information about a specific In-App Purchase offer code.
-- [Modify an In-App Purchase Offer Code](patch-v1-inapppurchaseoffercodes-_id_.md)
+- [Modify an In-App Purchase Offer Code](./patch-v1-inapppurchaseoffercodes-_id_.md)
   Update a specific In-App Purchase offer code.
-- [Get All Price IDs for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-relationships-prices.md)
+- [Get All Price IDs for an In-App Purchase Offer Code](./get-v1-inapppurchaseoffercodes-_id_-relationships-prices.md)
   Get a list of price resource IDs for a specific In-App Purchase offer code.
 
 

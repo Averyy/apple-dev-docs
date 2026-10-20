@@ -1,17 +1,22 @@
 # SFContentBlockerErrorCode.loadingInterrupted
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.4+
+- iOS 9.0+ - Deprecated in 10.0 (renamed: SFError.loadingInterrupted)
+- iPadOS 9.0+ - Deprecated in 10.0 (renamed: SFError.loadingInterrupted)
+- Mac Catalyst 13.4+ - Deprecated in 13.4 (renamed: SFErrorCode.loadingInterrupted)
 
 ## Declaration
 
 ```swift
 case loadingInterrupted
+```
+
+```c
+SFContentBlockerLoadingInterrupted
 ```
 
 #### Discussion
@@ -20,8 +25,9 @@ There was an error loading the content blocker extension.
 
 ## See Also
 
-- [SFContentBlockerErrorCode.noExtensionFound](sfcontentblockererrorcode/noextensionfound.md)
-- [SFContentBlockerErrorCode.noAttachmentFound](sfcontentblockererrorcode/noattachmentfound.md)
+### Constants
+- [SFContentBlockerErrorCode.noExtensionFound](./noextensionfound.md)
+- [SFContentBlockerErrorCode.noAttachmentFound](./noattachmentfound.md)
 
 
 ---

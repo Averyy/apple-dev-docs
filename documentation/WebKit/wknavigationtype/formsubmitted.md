@@ -1,7 +1,8 @@
 # WKNavigationType.formSubmitted
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request to submit a form.
 
@@ -18,17 +19,22 @@ A request to submit a form.
 case formSubmitted
 ```
 
+```c
+WKNavigationTypeFormSubmitted
+```
+
 ## See Also
 
-- [WKNavigationType.linkActivated](wknavigationtype/linkactivated.md)
+### Getting the Navigation Types
+- [WKNavigationType.linkActivated](./linkactivated.md)
   A link activation.
-- [WKNavigationType.backForward](wknavigationtype/backforward.md)
+- [WKNavigationType.backForward](./backforward.md)
   A request for the frame’s next or previous item.
-- [WKNavigationType.reload](wknavigationtype/reload.md)
+- [WKNavigationType.reload](./reload.md)
   A request to reload the webpage.
-- [WKNavigationType.formResubmitted](wknavigationtype/formresubmitted.md)
+- [WKNavigationType.formResubmitted](./formresubmitted.md)
   A request to resubmit a form.
-- [WKNavigationType.other](wknavigationtype/other.md)
+- [WKNavigationType.other](./other.md)
   A navigation request that originates for some other reason.
 
 

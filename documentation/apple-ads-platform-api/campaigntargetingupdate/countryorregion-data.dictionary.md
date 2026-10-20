@@ -1,7 +1,8 @@
 # CampaignTargetingUpdate.CountryOrRegion
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The countries or regions where an existing campaign’s ads are eligible to serve.
 
@@ -10,15 +11,15 @@ The countries or regions where an existing campaign’s ads are eligible to serv
 
 ## Declaration
 
-```swift
+```
 object CampaignTargetingUpdate.CountryOrRegion
 ```
 
 #### Discussion
 
-The `countryOrRegion` field uses ISO 3166-1 alpha-2 country codes (for example, `US`, `CA`, `GB`). It’s include-only: the `exclude` array isn’t supported at the campaign level. Omit to leave unchanged. See [`TargetingDataUpdate`](targetingdataupdate.md) for the `include`/`exclude` shape.
+The `countryOrRegion` field uses ISO 3166-1 alpha-2 country codes (for example, `US`, `CA`, `GB`). It’s include-only: the `exclude` array isn’t supported at the campaign level. Omit to leave unchanged. See [`TargetingDataUpdate`](../targetingdataupdate.md) for the `include`/`exclude` shape.
 
-Only include markets where the promoted app or brand is available. See [`CampaignTargetingUpdate.SupplySource`](campaigntargetingupdate/supplysource-data.dictionary.md) and [`CampaignTargetingUpdate.SupplyPlacement`](campaigntargetingupdate/supplyplacement-data.dictionary.md) for the other targeting dimensions.
+Only include markets where the promoted app or brand is available. See [`CampaignTargetingUpdate.SupplySource`](./supplysource-data.dictionary.md) and [`CampaignTargetingUpdate.SupplyPlacement`](./supplyplacement-data.dictionary.md) for the other targeting dimensions.
 
 ## Properties
 

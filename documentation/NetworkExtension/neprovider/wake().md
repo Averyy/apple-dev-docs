@@ -1,7 +1,8 @@
 # wake()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a wake event.
 
@@ -19,6 +20,10 @@ Handle a wake event.
 func wake()
 ```
 
+```objc
+- (void) wake;
+```
+
 #### Discussion
 
 This method is called by the system when the device wakes up from sleep mode.
@@ -27,7 +32,8 @@ This method is called by the system when the device wakes up from sleep mode.
 
 ## See Also
 
-- [func sleep(completionHandler: () -> Void)](neprovider/sleep(completionhandler:).md)
+### Handling sleep and wake
+- [func sleep(completionHandler: () -> Void)](./sleep%28completionhandler%29.md)
   Handle a sleep event.
 
 

@@ -1,7 +1,8 @@
 # interitemSpacing
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spacing between each cell in a collection view.
 
@@ -12,6 +13,10 @@ The spacing between each cell in a collection view.
 
 ```swift
 var interitemSpacing: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGFloat interitemSpacing;
 ```
 
 #### Discussion

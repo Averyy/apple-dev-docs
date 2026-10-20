@@ -1,7 +1,8 @@
 # AudioQueueProcessingTapGetSourceAudio(_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 6.0+
@@ -17,11 +18,16 @@
 func AudioQueueProcessingTapGetSourceAudio(_ inAQTap: AudioQueueProcessingTapRef, _ inNumberFrames: UInt32, _ ioTimeStamp: UnsafeMutablePointer<AudioTimeStamp>, _ outFlags: UnsafeMutablePointer<AudioQueueProcessingTapFlags>, _ outNumberFrames: UnsafeMutablePointer<UInt32>, _ ioData: UnsafeMutablePointer<AudioBufferList>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueProcessingTapGetSourceAudio(AudioQueueProcessingTapRef inAQTap, UInt32 inNumberFrames, AudioTimeStamp *ioTimeStamp, AudioQueueProcessingTapFlags *outFlags, UInt32 *outNumberFrames, AudioBufferList *ioData);
+```
+
 ## See Also
 
-- [func AudioQueueProcessingTapNew(AudioQueueRef, AudioQueueProcessingTapCallback, UnsafeMutableRawPointer?, AudioQueueProcessingTapFlags, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamBasicDescription>, UnsafeMutablePointer<AudioQueueProcessingTapRef?>) -> OSStatus](audioqueueprocessingtapnew(_:_:_:_:_:_:_:).md)
-- [func AudioQueueProcessingTapGetQueueTime(AudioQueueProcessingTapRef, UnsafeMutablePointer<Float64>, UnsafeMutablePointer<UInt32>) -> OSStatus](audioqueueprocessingtapgetqueuetime(_:_:_:).md)
-- [func AudioQueueProcessingTapDispose(AudioQueueProcessingTapRef) -> OSStatus](audioqueueprocessingtapdispose(_:).md)
+### Tapping the Queue’s Audio
+- [func AudioQueueProcessingTapNew(AudioQueueRef, AudioQueueProcessingTapCallback, UnsafeMutableRawPointer?, AudioQueueProcessingTapFlags, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioStreamBasicDescription>, UnsafeMutablePointer<AudioQueueProcessingTapRef?>) -> OSStatus](./audioqueueprocessingtapnew%28_,_,_,_,_,_,_%29.md)
+- [func AudioQueueProcessingTapGetQueueTime(AudioQueueProcessingTapRef, UnsafeMutablePointer<Float64>, UnsafeMutablePointer<UInt32>) -> OSStatus](./audioqueueprocessingtapgetqueuetime%28_,_,_%29.md)
+- [func AudioQueueProcessingTapDispose(AudioQueueProcessingTapRef) -> OSStatus](./audioqueueprocessingtapdispose%28_%29.md)
 
 
 ---

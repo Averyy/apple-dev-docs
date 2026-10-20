@@ -1,6 +1,7 @@
 # Configuring a WatchKit Scene in a Storyboard
 
-**Framework**: WatchKit
+**Framework**: WatchKit  
+**Role**: Article
 
 Xcode lets you configure information about your SpriteKit Scene in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
@@ -8,9 +9,9 @@ Xcode lets you configure information about your SpriteKit Scene in your storyboa
 
 | Attribute | Description |
 | --- | --- |
-| Scene | The SpriteKit scene to be displayed. You can also set this value programmatically using the [`scene`](wkinterfaceskscene/scene.md) property. |
-| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`preferredFramesPerSecond`](wkinterfaceskscene/preferredframespersecond.md) property. |
-| Paused | A checkbox indicating whether the scene is paused. If checked, the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed. You can also configure this value programmatically using the [`isPaused`](wkinterfaceskscene/ispaused.md) property. |
+| Scene | The SpriteKit scene to be displayed. You can also set this value programmatically using the [`scene`](./wkinterfaceskscene/scene.md) property. |
+| Frame Rate | The desired frame rate for the scene’s animation. You can also set this value programmatically using the [`preferredFramesPerSecond`](./wkinterfaceskscene/preferredframespersecond.md) property. |
+| Paused | A checkbox indicating whether the scene is paused. If checked, the scene’s content is fixed onscreen. No actions are executed and no physics simulation is performed. You can also configure this value programmatically using the [`isPaused`](./wkinterfaceskscene/ispaused.md) property. |
 
 ##### Enabling Full Screen Mode
 
@@ -20,7 +21,7 @@ In watchOS 4 and later, SpriteKit and SceneKit scenes can fill the full screen. 
 
 To enable full screen mode, place a SpriteKit or SceneKit scene as the interface controller’s only content. Then, in the interface controller’s Attribute inspector, enable the Full Screen attribute.
 
-![A screenshot showing the Full Screen attribute. ](/images/com.apple.watchkit/media-2982918@2x.png)
+![A screenshot showing the Full Screen attribute. ](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2982918@2x.png)
 
 
 ---

@@ -1,19 +1,26 @@
 # minimumRiskScore
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that is the user’s minimum risk score.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var minimumRiskScore: ENRiskScore { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) ENRiskScore minimumRiskScore;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ var minimumRiskScore: ENRiskScore { get set }
 
 The framework excludes exposure incidents with scores lower than the value of this property. There is no default minimum value for this property.
 
-The framework doesn’t use this property when calculating [`matchedKeyCount`](enexposuredetectionsummary/matchedkeycount.md) or [`daysSinceLastExposure`](enexposuredetectionsummary/dayssincelastexposure.md).
+The framework doesn’t use this property when calculating [`matchedKeyCount`](../enexposuredetectionsummary/matchedkeycount.md) or [`daysSinceLastExposure`](../enexposuredetectionsummary/dayssincelastexposure.md).
 
 ## See Also
 
-- [var minimumRiskScoreFullRange: Double](enexposureconfiguration/minimumriskscorefullrange.md)
+### Minimum Threshold Configuration
+- [var minimumRiskScoreFullRange: Double](./minimumriskscorefullrange.md)
   The value that is the user’s full-range minimum risk score.
 
 

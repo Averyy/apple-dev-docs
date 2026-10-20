@@ -1,7 +1,8 @@
 # cameraDeviceViewSelectionDidChange(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the selection changed.
 
@@ -12,6 +13,10 @@ Invoked when the selection changed.
 
 ```swift
 optional func cameraDeviceViewSelectionDidChange(_ cameraDeviceView: IKCameraDeviceView!)
+```
+
+```objc
+- (void) cameraDeviceViewSelectionDidChange:(IKCameraDeviceView *) cameraDeviceView;
 ```
 
 ## Parameters

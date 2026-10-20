@@ -1,14 +1,15 @@
 # kDVDBookTypeHDROM
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kDVDBookTypeHDROM = 0x4
 ```
 

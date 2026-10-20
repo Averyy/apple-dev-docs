@@ -1,7 +1,8 @@
 # NEVPNIKEv2PostQuantumKeyExchangeMethod
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Quantum-secure key exchange methods you use with IKEv2 servers.
 
@@ -19,44 +20,49 @@ Quantum-secure key exchange methods you use with IKEv2 servers.
 enum NEVPNIKEv2PostQuantumKeyExchangeMethod
 ```
 
+```c
+enum NEVPNIKEv2PostQuantumKeyExchangeMethod : NSInteger;
+```
+
 ## Topics
 
 ### Key exchange methods
-- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method36](nevpnikev2postquantumkeyexchangemethod/method36.md)
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method36](./nevpnikev2postquantumkeyexchangemethod/method36.md)
   Instructs the server to use the ML-KEM-768 key exchange method.
-- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method37](nevpnikev2postquantumkeyexchangemethod/method37.md)
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.method37](./nevpnikev2postquantumkeyexchangemethod/method37.md)
   Instructs the server to use the ML-KEM-1024 key exchange method.
-- [NEVPNIKEv2PostQuantumKeyExchangeMethod.methodNone](nevpnikev2postquantumkeyexchangemethod/methodnone.md)
+- [NEVPNIKEv2PostQuantumKeyExchangeMethod.methodNone](./nevpnikev2postquantumkeyexchangemethod/methodnone.md)
   Instructs the server not to use a quantum-secure key exchange method.
 ### Initializers
-- [init?(rawValue: Int)](nevpnikev2postquantumkeyexchangemethod/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnikev2postquantumkeyexchangemethod/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](nevpnikev2securityassociationparameters/encryptionalgorithm.md)
+### IKEv2 Security Association parameters
+- [var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm](./nevpnikev2securityassociationparameters/encryptionalgorithm.md)
   The algorithm used by the Security Association to encrypt and decrypt data.
-- [enum NEVPNIKEv2EncryptionAlgorithm](nevpnikev2encryptionalgorithm.md)
+- [enum NEVPNIKEv2EncryptionAlgorithm](./nevpnikev2encryptionalgorithm.md)
   An enumeration of encryption algorithm values.
-- [var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm](nevpnikev2securityassociationparameters/integrityalgorithm.md)
+- [var integrityAlgorithm: NEVPNIKEv2IntegrityAlgorithm](./nevpnikev2securityassociationparameters/integrityalgorithm.md)
   The algorithm used by the Security Association to verify the integrity of data.
-- [enum NEVPNIKEv2IntegrityAlgorithm](nevpnikev2integrityalgorithm.md)
-- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](nevpnikev2securityassociationparameters/diffiehellmangroup.md)
+- [enum NEVPNIKEv2IntegrityAlgorithm](./nevpnikev2integrityalgorithm.md)
+- [var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup](./nevpnikev2securityassociationparameters/diffiehellmangroup.md)
   The Diffie Hellman group used by the Security Association.
-- [enum NEVPNIKEv2DiffieHellmanGroup](nevpnikev2diffiehellmangroup.md)
+- [enum NEVPNIKEv2DiffieHellmanGroup](./nevpnikev2diffiehellmangroup.md)
   An enumeration of Diffie-Hellman group values.
-- [var lifetimeMinutes: Int32](nevpnikev2securityassociationparameters/lifetimeminutes.md)
+- [var lifetimeMinutes: Int32](./nevpnikev2securityassociationparameters/lifetimeminutes.md)
   The duration of the lifetime of the Security Association, in minutes.
-- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
+- [var postQuantumKeyExchangeMethods: [NEVPNIKEv2PostQuantumKeyExchangeMethod]](./nevpnikev2securityassociationparameters/postquantumkeyexchangemethods-3173s.md)
   A list of the quantum-secure key exchange methods the Security Association uses.
 
 

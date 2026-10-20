@@ -1,7 +1,8 @@
 # AnchoringComponent.PhysicsSimulation
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the physics simulation space of the entity and its descendants.
 
@@ -26,16 +27,16 @@ This allows developers to fine-tune which entities with an `AnchoringComponent` 
 ## Topics
 
 ### Enumeration Cases
-- [AnchoringComponent.PhysicsSimulation.isolated](anchoringcomponent/physicssimulation-swift.enum/isolated.md)
+- [AnchoringComponent.PhysicsSimulation.isolated](./physicssimulation-swift.enum/isolated.md)
   Simulates the entity and its descendants in the entity’s own physics space.
-- [AnchoringComponent.PhysicsSimulation.none](anchoringcomponent/physicssimulation-swift.enum/none.md)
+- [AnchoringComponent.PhysicsSimulation.none](./physicssimulation-swift.enum/none.md)
   Opts out the entity and its descendants from having their own physics space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

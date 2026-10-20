@@ -1,7 +1,8 @@
 # UIContentInsetsReference.layoutMargins
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content insets use a reference point in relation to the layout margins.
 
@@ -18,15 +19,20 @@ Content insets use a reference point in relation to the layout margins.
 case layoutMargins
 ```
 
+```c
+UIContentInsetsReferenceLayoutMargins
+```
+
 ## See Also
 
-- [UIContentInsetsReference.automatic](uicontentinsetsreference/automatic.md)
+### Constants
+- [UIContentInsetsReference.automatic](./automatic.md)
   Content insets use the system default reference point.
-- [UIContentInsetsReference.none](uicontentinsetsreference/none.md)
+- [UIContentInsetsReference.none](./none.md)
   Content insets don’t have a reference point in relation to other insets.
-- [UIContentInsetsReference.safeArea](uicontentinsetsreference/safearea.md)
+- [UIContentInsetsReference.safeArea](./safearea.md)
   Content insets use a reference point in relation to the safe area.
-- [UIContentInsetsReference.readableContent](uicontentinsetsreference/readablecontent.md)
+- [UIContentInsetsReference.readableContent](./readablecontent.md)
   Content insets use a reference point in relation to the readable content guide.
 
 

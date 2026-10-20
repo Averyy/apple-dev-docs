@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Applies any pending additions to and removals from the residency set.
@@ -20,13 +21,17 @@ Applies any pending additions to and removals from the residency set.
 func commit()
 ```
 
+```objc
+- (void) commit;
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
 #### Discussion
 
-Call the method when have no other changes to stage, such as with [`addAllocation(_:)`](mtlresidencyset/addallocation(_:).md), [`removeAllocation(_:)`](mtlresidencyset/removeallocation(_:).md), and their sibling methods.
+Call the method when have no other changes to stage, such as with [`addAllocation(_:)`](./addallocation%28_%29.md), [`removeAllocation(_:)`](./removeallocation%28_%29.md), and their sibling methods.
 
 
 ---

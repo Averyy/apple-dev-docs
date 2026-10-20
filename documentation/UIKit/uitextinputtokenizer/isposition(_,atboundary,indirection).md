@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Return whether a text position is at a boundary of a text unit of a specified granularity in a specified direction.
@@ -10,7 +11,7 @@ Return whether a text position is at a boundary of a text unit of a specified gr
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Return whether a text position is at a boundary of a text unit of a specified gr
 func isPosition(_ position: UITextPosition, atBoundary granularity: UITextGranularity, inDirection direction: UITextDirection) -> Bool
 ```
 
+```objc
+- (BOOL) isPosition:(UITextPosition *) position atBoundary:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text position is at the given text-unit boundary in the given direction; [`false`](https://developer.apple.com/documentation/swift/false) if it is not at the boundary.
+[`true`](../../Swift/true.md) if the text position is at the given text-unit boundary in the given direction; [`false`](../../Swift/false.md) if it is not at the boundary.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ func isPosition(_ position: UITextPosition, atBoundary granularity: UITextGranul
 
 ## See Also
 
-- [func isPosition(UITextPosition, withinTextUnit: UITextGranularity, inDirection: UITextDirection) -> Bool](uitextinputtokenizer/isposition(_:withintextunit:indirection:).md)
+### Determining text positions relative to unit boundaries
+- [func isPosition(UITextPosition, withinTextUnit: UITextGranularity, inDirection: UITextDirection) -> Bool](./isposition%28_,withintextunit,indirection%29.md)
   Return whether a text position is within a text unit of a specified granularity in a specified direction.
 
 

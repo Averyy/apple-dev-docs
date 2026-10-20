@@ -1,7 +1,8 @@
 # decode(_:using:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decodes the data in each element of the column.
 
@@ -22,7 +23,7 @@ mutating func decode<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws 
 
 #### Discussion
 
-> **Note**: `ColumnDecodingError` if an element fails to decode.
+> **Throws**: `ColumnDecodingError` if an element fails to decode.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ mutating func decode<T, Decoder>(_ type: T.Type, using decoder: Decoder) throws 
 
 ## See Also
 
-- [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](anycolumn/decoded(_:using:).md)
+### Decoding a Column
+- [func decoded<T, Decoder>(T.Type, using: Decoder) throws -> AnyColumn](./decoded%28_,using%29.md)
   Decodes data for each element of the column.
 
 

@@ -1,7 +1,8 @@
 # HKCategoryValueSleepAnalysis
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Categories that represent the result of a sleep analysis.
 
@@ -19,13 +20,17 @@ Categories that represent the result of a sleep analysis.
 enum HKCategoryValueSleepAnalysis
 ```
 
+```c
+enum HKCategoryValueSleepAnalysis : NSInteger;
+```
+
 ## Mentions
 
-- [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
 #### Overview
 
-These values provide the set of valid categories for sleep tracking in HealthKit. To record a sleep sample, create an [`HKCategorySample`](hkcategorysample.md) using a [`sleepAnalysis`](hkcategorytypeidentifier/sleepanalysis.md) identifier and a [`HKCategoryValueSleepAnalysis`](hkcategoryvaluesleepanalysis.md) value.
+These values provide the set of valid categories for sleep tracking in HealthKit. To record a sleep sample, create an [`HKCategorySample`](./hkcategorysample.md) using a [`sleepAnalysis`](./hkcategorytypeidentifier/sleepanalysis.md) identifier and a [`HKCategoryValueSleepAnalysis`](./hkcategoryvaluesleepanalysis.md) value.
 
 ```swift
 let sleepSampleType = HKCategoryType(.sleepAnalysis)
@@ -38,7 +43,7 @@ let deepSleepSample  = HKCategorySample(type: sleepSampleType,
 
 Each sleep analysis sample can have only one value. To track both the amount of time a person spends in bed and the quality and quantity of their sleep, use samples with overlapping times.
 
-![An illustration showing the in-bed sample and the overlapping awake, REM, core and deep sleep samples.](/images/com.apple.healthkit/media-4110084@2x.png)
+![An illustration showing the in-bed sample and the overlapping awake, REM, core and deep sleep samples.](https://developer.apple.com/tutorials/images/com.apple.healthkit/media-4110084@2x.png)
 
 One set of samples tracks the amount of time the user spent in bed. Then, you can partition the in-bed time into a more-detailed set of samples. These detailed samples show when the user was awake, in core sleep, in deep sleep, or in rapid eye movement (REM) sleep. The detailed samples overlap the in-bed sample, but they don’t overlap each other.
 
@@ -49,72 +54,73 @@ By comparing the start and end times of these samples, apps can calculate second
 ## Topics
 
 ### Values for Tracking Time In-Bed
-- [HKCategoryValueSleepAnalysis.inBed](hkcategoryvaluesleepanalysis/inbed.md)
+- [HKCategoryValueSleepAnalysis.inBed](./hkcategoryvaluesleepanalysis/inbed.md)
   The user is in bed.
 ### Values for Tracking Sleep States
-- [HKCategoryValueSleepAnalysis.awake](hkcategoryvaluesleepanalysis/awake.md)
+- [HKCategoryValueSleepAnalysis.awake](./hkcategoryvaluesleepanalysis/awake.md)
   The user is awake.
-- [HKCategoryValueSleepAnalysis.asleepCore](hkcategoryvaluesleepanalysis/asleepcore.md)
+- [HKCategoryValueSleepAnalysis.asleepCore](./hkcategoryvaluesleepanalysis/asleepcore.md)
   The user is in light or intermediate sleep.
-- [HKCategoryValueSleepAnalysis.asleepDeep](hkcategoryvaluesleepanalysis/asleepdeep.md)
+- [HKCategoryValueSleepAnalysis.asleepDeep](./hkcategoryvaluesleepanalysis/asleepdeep.md)
   The user is in deep sleep.
-- [HKCategoryValueSleepAnalysis.asleepREM](hkcategoryvaluesleepanalysis/asleeprem.md)
+- [HKCategoryValueSleepAnalysis.asleepREM](./hkcategoryvaluesleepanalysis/asleeprem.md)
   The user is in REM sleep.
-- [HKCategoryValueSleepAnalysis.asleepUnspecified](hkcategoryvaluesleepanalysis/asleepunspecified.md)
+- [HKCategoryValueSleepAnalysis.asleepUnspecified](./hkcategoryvaluesleepanalysis/asleepunspecified.md)
   The user is asleep, but the specific stage isn’t known.
 ### Deprecated values
-- [static var asleep: HKCategoryValueSleepAnalysis](hkcategoryvaluesleepanalysis/asleep.md)
+- [static var asleep: HKCategoryValueSleepAnalysis](./hkcategoryvaluesleepanalysis/asleep.md)
   The user is sleeping.
 ### Initializers
-- [init?(rawValue: Int)](hkcategoryvaluesleepanalysis/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkcategoryvaluesleepanalysis/init%28rawvalue%29.md)
 ### Type Properties
-- [static var allAsleepValues: Set<HKCategoryValueSleepAnalysis>](hkcategoryvaluesleepanalysis/allasleepvalues.md)
+- [static var allAsleepValues: Set<HKCategoryValueSleepAnalysis>](./hkcategoryvaluesleepanalysis/allasleepvalues.md)
   A set of values that represents the possible stages of sleep.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [HKCategoryValuePredicateProviding](hkcategoryvaluepredicateproviding.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKCategoryValuePredicateProviding](./hkcategoryvaluepredicateproviding.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKCategoryValue](hkcategoryvalue.md)
+### Assigning Values
+- [enum HKCategoryValue](./hkcategoryvalue.md)
   Categories that are undefined.
-- [enum HKCategoryValueCervicalMucusQuality](hkcategoryvaluecervicalmucusquality.md)
+- [enum HKCategoryValueCervicalMucusQuality](./hkcategoryvaluecervicalmucusquality.md)
   Categories that represent the user’s cervical mucus quality.
-- [enum HKCategoryValueMenstrualFlow](hkcategoryvaluemenstrualflow.md)
+- [enum HKCategoryValueMenstrualFlow](./hkcategoryvaluemenstrualflow.md)
   Categories that indicate the amount of menstrual flow for a given sample.
-- [enum HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult.md)
+- [enum HKCategoryValueOvulationTestResult](./hkcategoryvalueovulationtestresult.md)
   Categories that represent the result of an ovulation home test.
-- [enum HKCategoryValueContraceptive](hkcategoryvaluecontraceptive.md)
+- [enum HKCategoryValueContraceptive](./hkcategoryvaluecontraceptive.md)
   The type of contraceptive.
-- [enum HKCategoryValueAppetiteChanges](hkcategoryvalueappetitechanges.md)
+- [enum HKCategoryValueAppetiteChanges](./hkcategoryvalueappetitechanges.md)
   Categories that represent change in appetite.
-- [enum HKCategoryValuePresence](hkcategoryvaluepresence.md)
+- [enum HKCategoryValuePresence](./hkcategoryvaluepresence.md)
   Categories that indicate whether a symptom is present.
-- [enum HKCategoryValueSeverity](hkcategoryvalueseverity.md)
+- [enum HKCategoryValueSeverity](./hkcategoryvalueseverity.md)
   Categories that represent the severity of a symptom.
-- [enum HKCategoryValueEnvironmentalAudioExposureEvent](hkcategoryvalueenvironmentalaudioexposureevent.md)
+- [enum HKCategoryValueEnvironmentalAudioExposureEvent](./hkcategoryvalueenvironmentalaudioexposureevent.md)
   Exposure events for environmental audio.
-- [enum HKCategoryValueHeadphoneAudioExposureEvent](hkcategoryvalueheadphoneaudioexposureevent.md)
+- [enum HKCategoryValueHeadphoneAudioExposureEvent](./hkcategoryvalueheadphoneaudioexposureevent.md)
   Exposure events for headphone audio.
-- [enum HKCategoryValueLowCardioFitnessEvent](hkcategoryvaluelowcardiofitnessevent.md)
+- [enum HKCategoryValueLowCardioFitnessEvent](./hkcategoryvaluelowcardiofitnessevent.md)
   A value that indicates a low-level cardio fitness event.
-- [enum HKAppleWalkingSteadinessClassification](hkapplewalkingsteadinessclassification.md)
+- [enum HKAppleWalkingSteadinessClassification](./hkapplewalkingsteadinessclassification.md)
   A classification of a score based on the steadiness of the user’s gait.
-- [enum HKCategoryValueAppleWalkingSteadinessEvent](hkcategoryvalueapplewalkingsteadinessevent.md)
+- [enum HKCategoryValueAppleWalkingSteadinessEvent](./hkcategoryvalueapplewalkingsteadinessevent.md)
   The value of an event triggered by a reduced score for the steadiness of the user’s gait.
-- [enum HKCategoryValuePregnancyTestResult](hkcategoryvaluepregnancytestresult.md)
+- [enum HKCategoryValuePregnancyTestResult](./hkcategoryvaluepregnancytestresult.md)
   Category values that indicate the results of a home pregnancy test.
-- [enum HKCategoryValueProgesteroneTestResult](hkcategoryvalueprogesteronetestresult.md)
+- [enum HKCategoryValueProgesteroneTestResult](./hkcategoryvalueprogesteronetestresult.md)
   A category value that indicates the result from a home progesterone test.
 
 

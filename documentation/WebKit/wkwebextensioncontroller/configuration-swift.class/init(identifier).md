@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new configuration that is persistent and unique for the specified identifier.
 
@@ -18,13 +19,18 @@ Returns a new configuration that is persistent and unique for the specified iden
 convenience init(identifier: UUID)
 ```
 
+```objc
++ (instancetype) configurationWithIdentifier:(NSUUID *) identifier;
+```
+
 #### Discussion
 
-If a [`WKWebExtensionController`](wkwebextensioncontroller.md) is associated with a unique persistent configuration, data will be written to the file system in a unique location based on the specified identifier.
+If a [`WKWebExtensionController`](../../wkwebextensioncontroller.md) is associated with a unique persistent configuration, data will be written to the file system in a unique location based on the specified identifier.
 
 ## See Also
 
-- [class func `default`() -> Self](wkwebextensioncontroller/configuration-swift.class/default.md)
+### Related Documentation
+- [class func `default`() -> Self](./default%28%29.md)
   Returns a new default configuration that is persistent and not unique.
 
 

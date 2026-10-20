@@ -1,7 +1,8 @@
 # style
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Style properties to apply to the overlay.
 
@@ -10,14 +11,14 @@ Style properties to apply to the overlay.
 
 ## Declaration
 
-```swift
+```
 get style(): Style;
 set style(style: Style);
 ```
 
 #### Discussion
 
-The following example shows a new [`style`](overlay/style.md) object replacing the current style properties for a circle overlay:
+The following example shows a new [`style`](./style.md) object replacing the current style properties for a circle overlay:
 
 ```javascript
 circleOverlay.style = new mapkit.Style({
@@ -37,15 +38,16 @@ circleOverlay.style.lineWidth = 4;
 
 ## See Also
 
-- [data](overlay/data.md)
+### Setting overlay options
+- [data](./data.md)
   Custom data to associate with the overlay.
-- [visible](overlay/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether an overlay is visible.
-- [enabled](overlay/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the overlay responds to user interaction.
-- [selected](overlay/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the user selects the overlay.
-- [map](overlay/map.md)
+- [map](./map.md)
   The map you add the overlay to.
 
 

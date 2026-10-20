@@ -1,7 +1,8 @@
 # QualityOfService.userInteractive
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -18,16 +19,21 @@
 case userInteractive
 ```
 
+```c
+NSQualityOfServiceUserInteractive
+```
+
 #### Discussion
 
 Used for work directly involved in providing an interactive UI. For example, processing control events or drawing to the screen.
 
 ## See Also
 
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.utility](qualityofservice/utility.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
+### Constants
+- [QualityOfService.userInitiated](./userinitiated.md)
+- [QualityOfService.utility](./utility.md)
+- [QualityOfService.background](./background.md)
+- [QualityOfService.default](./default.md)
 
 
 ---

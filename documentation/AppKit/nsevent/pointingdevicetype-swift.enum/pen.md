@@ -1,12 +1,13 @@
 # NSEvent.PointingDeviceType.pen
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents the tip end of a stylus-like pointing device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Represents the tip end of a stylus-like pointing device.
 case pen
 ```
 
+```c
+NSPointingDeviceTypePen
+```
+
 ## See Also
 
-- [NSEvent.PointingDeviceType.cursor](nsevent/pointingdevicetype-swift.enum/cursor.md)
+### Enumeration Cases
+- [NSEvent.PointingDeviceType.cursor](./cursor.md)
   Represents a cursor pointing device.
-- [NSEvent.PointingDeviceType.eraser](nsevent/pointingdevicetype-swift.enum/eraser.md)
+- [NSEvent.PointingDeviceType.eraser](./eraser.md)
   Represents the eraser end of a stylus-like pointing device.
-- [NSEvent.PointingDeviceType.unknown](nsevent/pointingdevicetype-swift.enum/unknown.md)
+- [NSEvent.PointingDeviceType.unknown](./unknown.md)
   Represents an unknown type of pointing device.
 
 

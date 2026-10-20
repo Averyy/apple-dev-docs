@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item’s persistent identifier.
@@ -19,20 +20,25 @@ The item’s persistent identifier.
 var itemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSFileProviderItemIdentifier itemIdentifier;
+```
+
 ## Mentions
 
-- [Synchronizing the File Provider Extension](synchronizing-the-file-provider-extension.md)
-- [Using push notifications to signal changes](using-push-notifications-to-signal-changes.md)
+- [Synchronizing the File Provider Extension](../synchronizing-the-file-provider-extension.md)
+- [Using push notifications to signal changes](../using-push-notifications-to-signal-changes.md)
 
 ## See Also
 
-- [var filename: String](nsfileprovideritemprotocol/filename.md)
+### Providing Required Properties
+- [var filename: String](./filename.md)
   The item’s filename.
-- [var typeIdentifier: String](nsfileprovideritemprotocol/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The item’s Uniform Type Identifier (UTI).
-- [var contentType: UTType](nsfileprovideritemprotocol/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The item’s Uniform Type Identifier (UTI).
-- [var capabilities: NSFileProviderItemCapabilities](nsfileprovideritemprotocol/capabilities.md)
+- [var capabilities: NSFileProviderItemCapabilities](./capabilities.md)
   The item’s capabilities.
 
 

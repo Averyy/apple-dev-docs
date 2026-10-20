@@ -1,7 +1,8 @@
 # functions
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The functions in the program.
 

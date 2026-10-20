@@ -1,7 +1,8 @@
 # isInert(ignoringChildren:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the spec contains no authored data.
 

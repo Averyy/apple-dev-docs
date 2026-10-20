@@ -1,7 +1,8 @@
 # unguardAndRelinquish()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove guard and transfer ownership of the underlying port right to the caller.
 
@@ -19,6 +20,8 @@ Remove guard and transfer ownership of the underlying port right to the caller.
 ```swift
 consuming func unguardAndRelinquish() -> mach_port_name_t
 ```
+
+Available when `RightType` is `Mach.ReceiveRight`.
 
 #### Discussion
 

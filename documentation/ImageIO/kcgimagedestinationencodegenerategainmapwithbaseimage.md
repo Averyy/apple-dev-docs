@@ -1,7 +1,8 @@
 # kCGImageDestinationEncodeGenerateGainMapWithBaseImage
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImageDestinationEncodeGenerateGainMapWithBaseImage: CFString
+```
+
+```c
+extern CFStringRef const kCGImageDestinationEncodeGenerateGainMapWithBaseImage;
 ```
 
 

@@ -1,7 +1,8 @@
 # actionSetType
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the action set, such as built-in or user-defined.
 
@@ -19,13 +20,18 @@ The type of the action set, such as built-in or user-defined.
 var actionSetType: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * actionSetType;
+```
+
 #### Discussion
 
 An action set type can be user-defined, trigger-owned, or one of the built-in types. Note that built-in action sets cannot be removed from the home, and trigger-owned action sets cannot be executed, renamed, or associated with another trigger.
 
 ## See Also
 
-- [Action Set Types](action-set-types.md)
+### Specifying a type
+- [Action Set Types](../action-set-types.md)
   The types of action sets that you can define.
 
 

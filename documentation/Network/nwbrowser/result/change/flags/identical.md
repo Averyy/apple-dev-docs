@@ -1,7 +1,8 @@
 # identical
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The results are identical.
 
@@ -22,11 +23,12 @@ static let identical: NWBrowser.Result.Change.Flags
 
 ## See Also
 
-- [static let interfaceAdded: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/interfaceadded.md)
+### Change Flags
+- [static let interfaceAdded: NWBrowser.Result.Change.Flags](./interfaceadded.md)
   The service was discovered over a new interface.
-- [static let interfaceRemoved: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/interfaceremoved.md)
+- [static let interfaceRemoved: NWBrowser.Result.Change.Flags](./interfaceremoved.md)
   The service was no longer discovered over a certain interface.
-- [static let metadataChanged: NWBrowser.Result.Change.Flags](nwbrowser/result/change/flags/metadatachanged.md)
+- [static let metadataChanged: NWBrowser.Result.Change.Flags](./metadatachanged.md)
   The service’s associated metadata changed.
 
 

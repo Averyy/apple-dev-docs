@@ -1,17 +1,22 @@
 # connectToObjectPushService()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connect to a remote device for ObjectPush operations. Most of the FTP functionality of this object will be disabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func connectToObjectPushService() -> OBEXError
+```
+
+```objc
+- (OBEXError) connectToObjectPushService;
 ```
 
 #### Return Value

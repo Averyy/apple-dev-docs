@@ -1,7 +1,8 @@
 # BETextReplacementOptions
 
 **Framework**: BrowserEngineKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that determine the way your app processes text in webpages.
 
@@ -17,44 +18,49 @@ Options that determine the way your app processes text in webpages.
 struct BETextReplacementOptions
 ```
 
+```c
+enum BETextReplacementOptions : NSUInteger;
+```
+
 #### Overview
 
-The [`BETextInput`](betextinput.md) protocol’s [`replaceText(_:withText:options:completionHandler:)`](betextinput/replacetext(_:withtext:options:completionhandler:).md) method takes in instance of this structure as an argument.
+The [`BETextInput`](./betextinput.md) protocol’s [`replaceText(_:withText:options:completionHandler:)`](./betextinput/replacetext%28_,withtext,options,completionhandler%29.md) method takes in instance of this structure as an argument.
 
 ## Topics
 
 ### Identifying text-replacement options
-- [static var addUnderline: BETextReplacementOptions](betextreplacementoptions/addunderline.md)
+- [static var addUnderline: BETextReplacementOptions](./betextreplacementoptions/addunderline.md)
   An option that processes text by adding an underline to its visual style.
 ### Creating text-replacement options
-- [init(rawValue: UInt)](betextreplacementoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./betextreplacementoptions/init%28rawvalue%29.md)
   Creates a text-replacement option with the specified underlying value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class BEAutoFillTextSuggestion](beautofilltextsuggestion.md)
+### Replacements and AutoFill
+- [class BEAutoFillTextSuggestion](./beautofilltextsuggestion.md)
   A suggestion object that provides AutoFill text content for web form fields based on a person’s usage patterns.
-- [class BETextAlternatives](betextalternatives.md)
+- [class BETextAlternatives](./betextalternatives.md)
   An object that provides alternative text suggestions for a person’s text selection.
-- [class BETextDocumentContext](betextdocumentcontext.md)
+- [class BETextDocumentContext](./betextdocumentcontext.md)
   Information about the text surrounding a selection in a document.
-- [class BETextDocumentRequest](betextdocumentrequest.md)
+- [class BETextDocumentRequest](./betextdocumentrequest.md)
   A description of the contextual information that a text document request retrieves.
-- [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+- [BETextDocumentRequest.Options](./betextdocumentrequest/options-swift.struct.md)
   Options that describe the contextual information for a text document request.
-- [class BETextSuggestion](betextsuggestion.md)
+- [class BETextSuggestion](./betextsuggestion.md)
   A text suggestion to insert into a document.
 
 

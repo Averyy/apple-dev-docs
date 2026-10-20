@@ -1,7 +1,8 @@
 # collectionView(_:layout:referenceSizeForHeaderInSection:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the size of the header view in the specified section.
 
@@ -15,9 +16,13 @@ Asks the delegate for the size of the header view in the specified section.
 optional func collectionView(_ collectionView: NSCollectionView, layout collectionViewLayout: NSCollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> NSSize
 ```
 
+```objc
+- (NSSize) collectionView:(NSCollectionView *) collectionView layout:(NSCollectionViewLayout *) collectionViewLayout referenceSizeForHeaderInSection:(NSInteger) section;
+```
+
 #### Return Value
 
-The size of the header. Return [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize) if you do not want a header added to the section.
+The size of the header. Return [`NSZeroSize`](../../Foundation/nszerosize.md) if you do not want a header added to the section.
 
 #### Discussion
 
@@ -33,9 +38,11 @@ The flow layout object uses only one of the returned size values. For a vertical
 
 ## See Also
 
-- [var headerReferenceSize: NSSize](nscollectionviewflowlayout/headerreferencesize.md)
+### Related Documentation
+- [var headerReferenceSize: NSSize](../nscollectionviewflowlayout/headerreferencesize.md)
   The default size to use for section headers.
-- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForFooterInSection: Int) -> NSSize](nscollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforfooterinsection:).md)
+### Getting the Header and Footer Sizes
+- [func collectionView(NSCollectionView, layout: NSCollectionViewLayout, referenceSizeForFooterInSection: Int) -> NSSize](./collectionview%28_,layout,referencesizeforfooterinsection%29.md)
   Asks the delegate for the size of the footer view in the specified section.
 
 

@@ -1,7 +1,8 @@
 # setCustomKeyRequestBodyClaims(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,13 +13,18 @@
 func setCustomKeyRequestBodyClaims(_ claims: [String : Any]) throws
 ```
 
+```objc
+- (BOOL) setCustomKeyRequestBodyClaims:(NSDictionary<NSString *,id> *) claims returningError:(NSError **) error;
+```
+
 ## See Also
 
-- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestbodyclaims(_:).md)
-- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyexchangerequestheaderclaims(_:).md)
-- [func setCustomKeyRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomkeyrequestheaderclaims(_:).md)
-- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestbodyclaims(_:).md)
-- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomrefreshrequestheaderclaims(_:).md)
+### Instance Methods
+- [func setCustomKeyExchangeRequestBodyClaims([String : Any]) throws](./setcustomkeyexchangerequestbodyclaims%28_%29.md)
+- [func setCustomKeyExchangeRequestHeaderClaims([String : Any]) throws](./setcustomkeyexchangerequestheaderclaims%28_%29.md)
+- [func setCustomKeyRequestHeaderClaims([String : Any]) throws](./setcustomkeyrequestheaderclaims%28_%29.md)
+- [func setCustomRefreshRequestBodyClaims([String : Any]) throws](./setcustomrefreshrequestbodyclaims%28_%29.md)
+- [func setCustomRefreshRequestHeaderClaims([String : Any]) throws](./setcustomrefreshrequestheaderclaims%28_%29.md)
 
 
 ---

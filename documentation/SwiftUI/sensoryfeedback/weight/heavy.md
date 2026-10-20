@@ -1,7 +1,8 @@
 # heavy
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates a collision between large or heavyweight UI objects.
 
@@ -22,9 +23,10 @@ static let heavy: SensoryFeedback.Weight
 
 ## See Also
 
-- [static let light: SensoryFeedback.Weight](sensoryfeedback/weight/light.md)
+### Getting flexibility values
+- [static let light: SensoryFeedback.Weight](./light.md)
   Indicates a collision between small or lightweight UI objects.
-- [static let medium: SensoryFeedback.Weight](sensoryfeedback/weight/medium.md)
+- [static let medium: SensoryFeedback.Weight](./medium.md)
   Indicates a collision between medium-sized or medium-weight UI objects.
 
 

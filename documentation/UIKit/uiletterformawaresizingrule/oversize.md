@@ -1,7 +1,8 @@
 # UILetterformAwareSizingRule.oversize
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Bounds-sizing behavior that displays oversize characters fully but may negatively impact typographic alignment.
 
@@ -18,9 +19,14 @@ Bounds-sizing behavior that displays oversize characters fully but may negativel
 case oversize
 ```
 
+```c
+UILetterformAwareSizingRuleOversize
+```
+
 ## See Also
 
-- [UILetterformAwareSizingRule.typographic](uiletterformawaresizingrule/typographic.md)
+### Setting bounds-sizing behavior
+- [UILetterformAwareSizingRule.typographic](./typographic.md)
   Standard typographic bounds-sizing behavior, which may clip oversize characters.
 
 

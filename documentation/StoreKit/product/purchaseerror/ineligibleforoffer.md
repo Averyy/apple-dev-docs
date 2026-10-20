@@ -1,7 +1,8 @@
 # Product.PurchaseError.ineligibleForOffer
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user isn’t eligible for the offer.
 
@@ -22,19 +23,20 @@ case ineligibleForOffer
 
 ## See Also
 
-- [Product.PurchaseError.invalidOfferIdentifier](product/purchaseerror/invalidofferidentifier.md)
+### Getting Purchase Error Codes
+- [Product.PurchaseError.invalidOfferIdentifier](./invalidofferidentifier.md)
   The promotional offer identifier provided in the purchase options is invalid.
-- [Product.PurchaseError.productUnavailable](product/purchaseerror/productunavailable.md)
+- [Product.PurchaseError.productUnavailable](./productunavailable.md)
   The product isn’t available.
-- [Product.PurchaseError.purchaseNotAllowed](product/purchaseerror/purchasenotallowed.md)
+- [Product.PurchaseError.purchaseNotAllowed](./purchasenotallowed.md)
   The user isn’t allowed to make purchases.
-- [Product.PurchaseError.invalidOfferPrice](product/purchaseerror/invalidofferprice.md)
+- [Product.PurchaseError.invalidOfferPrice](./invalidofferprice.md)
   The price of the offer isn’t valid.
-- [Product.PurchaseError.invalidOfferSignature](product/purchaseerror/invalidoffersignature.md)
+- [Product.PurchaseError.invalidOfferSignature](./invalidoffersignature.md)
   The offer signature isn’t valid.
-- [Product.PurchaseError.invalidQuantity](product/purchaseerror/invalidquantity.md)
+- [Product.PurchaseError.invalidQuantity](./invalidquantity.md)
   The quantity to purchase is invalid.
-- [Product.PurchaseError.missingOfferParameters](product/purchaseerror/missingofferparameters.md)
+- [Product.PurchaseError.missingOfferParameters](./missingofferparameters.md)
   The offer parameters are missing.
 
 

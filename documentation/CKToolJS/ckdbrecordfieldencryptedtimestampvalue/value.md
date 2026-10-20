@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string in date-time format.
 
@@ -10,7 +11,7 @@ A string in date-time format.
 
 ## Declaration
 
-```swift
+```
 attribute date? value;
 ```
 

@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of possible interactions that a person can have with the notification.
 
@@ -16,11 +17,12 @@ let actions: [AccessoryNotification.Action]
 
 ## Mentions
 
-- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+- [Responding to forwarded notifications](../responding-to-forwarded-notifications.md)
 
 ## See Also
 
-- [AccessoryNotification.Action](accessorynotification/action.md)
+### Handling user interactions
+- [AccessoryNotification.Action](./action.md)
   A possible user interaction with a notification.
 
 

@@ -1,7 +1,8 @@
 # init(attachment:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new storage device configuration with the specified attachment.
 
@@ -14,9 +15,13 @@ Creates a new storage device configuration with the specified attachment.
 init(attachment: VZStorageDeviceAttachment)
 ```
 
+```objc
+- (instancetype) initWithAttachment:(VZStorageDeviceAttachment *) attachment;
+```
+
 ## Parameters
 
-- `attachment`: A [`VZStorageDeviceAttachment`](vzstoragedeviceattachment.md) object.
+- `attachment`: A [`VZStorageDeviceAttachment`](../vzstoragedeviceattachment.md) object.
 
 
 ---

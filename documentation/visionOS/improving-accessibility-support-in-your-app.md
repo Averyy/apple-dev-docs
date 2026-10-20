@@ -1,6 +1,7 @@
 # Improving accessibility support in your visionOS app
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Update your code to ensure everyone can access your app’s content in visionOS.
 
@@ -8,15 +9,21 @@ Update your code to ensure everyone can access your app’s content in visionOS.
 
 visionOS is an immersive platform that supports people of all abilities. Even though experiences incorporate stunning visual content and hand- and eye-tracking technologies, people can engage with content in other ways. In fact, the platform supports people in many different situations, including those who are blind, have low vision, have limited mobility, or have limb differences. With the help of assistive technologies, people can interact with all of your app’s content.
 
+[Video: A recording of gameplay in the Happy Beam app. The audio track demonstrates the experience of using VoiceOver with the app. VoiceOver is providing important information about what’s happening in the game to create an accessible gaming experience.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/VoiceOver-demo.mp4)
+
 During development, enable VoiceOver and other assistive features and test your app’s accessibility support. Make sure people can navigate your app’s interface intuitively, and that all of the necessary elements are present. Improve the descriptive information for those elements to communicate their intended purpose. And make sure your app adapts to changing conditions, such as changes to the Dynamic Type setting while your app is running.
 
-For general information about supporting accessibility, see [`Accessibility`](https://developer.apple.com/documentation/accessibility). For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility).
+![A screenshot of the Happy Beam app running in visionOS, showing the window that lets a player choose the type of input gesture they want to use. The text that provides instructions and describes the kinds of gestures appears at the system default font size, with two of the labels taking up a single line and one label wrapping to a second line.](https://developer.apple.com/tutorials/images/com.apple.visionOS/dynamic-type-off@2x.png)
 
-##### Add Accessibility Traits to Realitykit Entities
+![A screenshot of the Happy Beam app running in visionOS, showing the window that lets a player choose the type of input gesture they want to use. The text appears at a larger font size than the previous image, with one of the labels wrapping to a third line. Even at the larger font size, the labels continue to fit well within the UI without any clipping or truncation.](https://developer.apple.com/tutorials/images/com.apple.visionOS/dynamic-type-on@2x.png)
+
+For general information about supporting accessibility, see [Accessibility](../Accessibility/Accessibility.md). For design guidance, see [Human Interface Guidelines > Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility).
+
+##### Add accessibility traits to RealityKit entities
 
 VoiceOver and other assistive technologies rely on the accessibility information that your app’s views and content provide. SwiftUI and UIKit provide default information for the standard system views, but RealityKit doesn’t provide default information for the entities in your scenes.
 
-To configure the accessibility information for a RealityKit entity, add an instance of [`AccessibilityComponent`](https://developer.apple.com/documentation/realitykit/accessibilitycomponent) to the entity. Use this component to specify the same values you specify for the rest of your app’s views. The following example shows how to create this component and add it to an entity:
+To configure the accessibility information for a RealityKit entity, add an instance of [`AccessibilityComponent`](../RealityKit/accessibilitycomponent.md) to the entity. Use this component to specify the same values you specify for the rest of your app’s views. The following example shows how to create this component and add it to an entity:
 
 ```swift
 var accessibilityComponent = AccessibilityComponent()
@@ -28,9 +35,9 @@ accessibilityComponent.systemActions = [.activate]
 myEntity.components[AccessibilityComponent.self] = accessibilityComponent
 ```
 
-People can use VoiceOver to initiate specific types of actions on your entities. Assign a value to the [`systemActions`](https://developer.apple.com/documentation/realitykit/accessibilitycomponent/systemactions) property of your component if your entity supports the incrementing or decrementing of its value, or supports activation with a gesture other than a standard tap. You don’t need to set a system action if you let people interact with the entity using a standard single-tap gesture.
+People can use VoiceOver to initiate specific types of actions on your entities. Assign a value to the [`systemActions`](../RealityKit/accessibilitycomponent/systemactions.md) property of your component if your entity supports the incrementing or decrementing of its value, or supports activation with a gesture other than a standard tap. You don’t need to set a system action if you let people interact with the entity using a standard single-tap gesture.
 
-The following example uses the content of a [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview) to determine when activation events occur on the view’s entities. After subscribing to the view’s activation events, the code sets up an asynchronous task to handle incoming events. When a new event occurs, the task executes the custom code to handle a collision.
+The following example uses the content of a [`RealityView`](../RealityKit/realityview.md) to determine when activation events occur on the view’s entities. After subscribing to the view’s activation events, the code sets up an asynchronous task to handle incoming events. When a new event occurs, the task executes the custom code to handle a collision.
 
 ```swift
 activationSubscription = content.subscribe(to: AccessibilityEvents.Activate.self, 
@@ -41,7 +48,7 @@ activationSubscription = content.subscribe(to: AccessibilityEvents.Activate.self
 }
 ```
 
-##### Add Support for Direct Gesture Mode
+##### Add support for Direct Gesture mode
 
 When VoiceOver is active in visionOS, people use hand gestures to navigate your app’s interface and inspect elements. To prevent your app’s code from interfering with VoiceOver interactions, the system doesn’t deliver hand input to your app during this time. However, a person can perform a special VoiceOver gesture to enable Direct Gesture mode, which leaves VoiceOver enabled but restores hand input to your app.
 
@@ -51,41 +58,42 @@ Add VoiceOver announcements to your code to communicate the results of meaningfu
 AccessibilityNotification.Announcement("Game piece hit").post()
 ```
 
-##### Provide Alternatives to Input That Involves Physical Movement
+##### Provide alternatives to input that involves physical movement
 
 Reduced mobility can affect a person’s ability to interact with your app’s content. When designing your app’s input model, avoid experiences that require specific body movements or positions. For example, if your app supports custom hand gestures, add menu commands for each gesture so someone can enter them using a keyboard or assistive device.
 
 Some assistive technologies let people interact with your app using only their eyes. Using these technologies they can select, scroll, long press, or drag items in your interface. Even if you support other types of interactions, give people a way to access all of your app’s behavior using only these interactions.
 
-##### Avoid Head Anchored Content
+##### Avoid head-anchored content
 
 Some assistive technologies allow people to navigate or view your app’s interface using head movements. As the person’s head moves, the assistive technology focuses on the item directly in front of them. Content that follows the movements of the person’s head interferes with the behavior of these assistive technologies.
 
 When designing your interface, place content in windows or anchor it to locations other than the virtual camera. If you do need head-anchored content, provide an alternative solution when relevant assistive technologies are in use. For example, you might move head-anchored content to an anchor point that doesn’t follow the person’s head movements.
 
-To determine when to change the anchoring approach for your content, check the [`accessibilityPrefersHeadAnchorAlternative`](https://developer.apple.com/documentation/swiftui/environmentvalues/accessibilityprefersheadanchoralternative) environment variable in SwiftUI, or get the [`prefersHeadAnchorAlternative`](https://developer.apple.com/documentation/accessibility/accessibilitysettings/prefersheadanchoralternative) property. This environment variable is `true` when an assistive technology is in use that conflicts with head-anchored content. Adapt your content to use alternate anchoring mechanisms at that time.
+To determine when to change the anchoring approach for your content, check the [`accessibilityPrefersHeadAnchorAlternative`](../SwiftUI/environmentvalues/accessibilityprefersheadanchoralternative.md) environment variable in SwiftUI, or get the [`prefersHeadAnchorAlternative`](../Accessibility/accessibilitysettings/prefersheadanchoralternative.md) property. This environment variable is `true` when an assistive technology is in use that conflicts with head-anchored content. Adapt your content to use alternate anchoring mechanisms at that time.
 
-##### Limit Motion Effects in Your Content
+##### Limit motion effects in your content
 
 Motion effects on any immersive device can be jarring, even for people who aren’t sensitive to motion. Limit the use of motion effects that incorporate rapid movement, bouncing or wave-like movement, zooming animations, multi-axis movement, spinning, or rotations. When the person wearing the device is sensitive to motion effects, eliminate the use of these effects altogether.
 
-The Reduce Motion system setting lets you know when to provide alternatives for all of your app’s motion effects. Access this setting using the [`accessibilityReduceMotion`](https://developer.apple.com/documentation/swiftui/environmentvalues/accessibilityreducemotion) environment variable in SwiftUI or with the [`isReduceMotionEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/isreducemotionenabled) property in UIKit. When the setting is `true`, provide suitable alternatives for motion effects or eliminate them altogether. For example, show a static snapshot of the ocean instead of a video.
+The Reduce Motion system setting lets you know when to provide alternatives for all of your app’s motion effects. Access this setting using the [`accessibilityReduceMotion`](../SwiftUI/environmentvalues/accessibilityreducemotion.md) environment variable in SwiftUI or with the [`isReduceMotionEnabled`](../UIKit/uiaccessibility/isreducemotionenabled.md) property in UIKit. When the setting is `true`, provide suitable alternatives for motion effects or eliminate them altogether. For example, show a static snapshot of the ocean instead of a video.
 
-For more information, see [`Motion`](https://developer.apple.com/design/human-interface-guidelines/motion).
+For more information, see [Human Interface Guidelines > Motion](https://developer.apple.com/design/human-interface-guidelines/motion).
 
-##### Include Captions for Audio Content
+##### Include captions for audio content
 
 For people who are deaf or hard of hearing, provide high-quality captions for your app’s content. Captions are a necessity to some, but are practical for everyone in certain situations. For example, captions are useful to someone watching a video in a noisy environment. Remember to include captions not just for text and dialogue, but also for music and sound effects in your content. For Spatial Audio content, include information in your captions that indicates the direction of various sounds.
 
-[`AVKit`](https://developer.apple.com/documentation/avkit) and [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) provide built-in support for displaying captioned content. These frameworks configure the font, size, color, and style of the captions automatically according to the person’s accessibility settings. For example, the frameworks adopt the current Dynamic Type setting when displaying text.
+[AVKit](../AVKit/AVKit.md) and [AVFoundation](../AVFoundation/AVFoundation.md) provide built-in support for displaying captioned content. These frameworks configure the font, size, color, and style of the captions automatically according to the person’s accessibility settings. For example, the frameworks adopt the current Dynamic Type setting when displaying text.
 
-If you have a custom video engine, check the [`isClosedCaptioningEnabled`](https://developer.apple.com/documentation/uikit/uiaccessibility/isclosedcaptioningenabled) accessibility setting to determine when to display captions. To get the correct appearance information for your captioned content, adopt [`Media Accessibility`](https://developer.apple.com/documentation/mediaaccessibility) in your project. This framework provides you with the optimal font, color, and opacity information to apply to captioned text and images.
+If you have a custom video engine, check the [`isClosedCaptioningEnabled`](../UIKit/uiaccessibility/isclosedcaptioningenabled.md) accessibility setting to determine when to display captions. To get the correct appearance information for your captioned content, adopt [Media Accessibility](../MediaAccessibility/MediaAccessibility.md) in your project. This framework provides you with the optimal font, color, and opacity information to apply to captioned text and images.
 
 ## See Also
 
+### Design
 - [Designing for visionOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos)
   When people wear Apple Vision Pro, they enter an infinite 3D space where they can engage with your app or game while staying connected to their surroundings.
-- [Adopting best practices for privacy and user preferences](adopting-best-practices-for-privacy.md)
+- [Adopting best practices for privacy and user preferences](./adopting-best-practices-for-privacy.md)
   Minimize your use of sensitive information and provide a clear statement of what information you do use and how you use it.
 
 

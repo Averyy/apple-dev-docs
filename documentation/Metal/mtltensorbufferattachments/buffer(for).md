@@ -1,7 +1,8 @@
 # buffer(for:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the buffer backing the given plane, or `nil` if none has been set.
 
@@ -17,6 +18,10 @@ Returns the buffer backing the given plane, or `nil` if none has been set.
 
 ```swift
 func buffer(for plane: MTLTensorPlaneType) -> (any MTLBuffer)?
+```
+
+```objc
+- (id<MTLBuffer>) bufferForPlane:(MTLTensorPlaneType) plane;
 ```
 
 #### Return Value

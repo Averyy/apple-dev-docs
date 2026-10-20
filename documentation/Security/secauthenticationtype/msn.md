@@ -1,7 +1,8 @@
 # SecAuthenticationType.MSN
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies Microsoft Network default authentication.
 
@@ -13,6 +14,10 @@ Specifies Microsoft Network default authentication.
 
 ```swift
 case MSN
+```
+
+```c
+kSecAuthenticationTypeMSN
 ```
 
 

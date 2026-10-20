@@ -1,7 +1,8 @@
 # BehaviorTreeAction
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an action that a behavior tree action node can use.
 
@@ -37,28 +38,29 @@ struct CustomBehaviorTreeAction: BehaviorTreeAction, Codable {
 ## Topics
 
 ### Subscribing to events
-- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> ActionResult)](behaviortreeaction/subscribe(to:_:)-9mrvx.md)
+- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> ActionResult)](./behaviortreeaction/subscribe%28to,_%29-9mrvx.md)
   Subscribes to a serializable action event and returns a `ActionResult`.
-- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](behaviortreeaction/subscribe(to:_:)-3p0pj.md)
+- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](./behaviortreeaction/subscribe%28to,_%29-3p0pj.md)
   Shadows the `EntityAction.subscribe(to:_:)` overload that takes a `-> Void` closure.
 ### Type Methods
-- [static subscribe(to:_:)](behaviortreeaction/subscribe(to:_:).md)
+- [static subscribe(to:_:)](./behaviortreeaction/subscribe%28to,_%29.md)
   Subscribes to a serializable action event and returns a `ActionResult`.
 
 ## Relationships
 
 ### Inherits From
-- [EntityAction](entityaction.md)
+- [EntityAction](./entityaction.md)
 
 ## See Also
 
-- [struct BehaviorTreeComponent](behaviortreecomponent.md)
+### Behavior trees
+- [struct BehaviorTreeComponent](./behaviortreecomponent.md)
   Manages which behavior tree is active for the component’s entity.
-- [class BehaviorTreeResource](behaviortreeresource.md)
+- [class BehaviorTreeResource](./behaviortreeresource.md)
   An immutable representation of a behavior tree.
-- [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [protocol BehaviorTreeActionHandler](./behaviortreeactionhandler.md)
   Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
-- [enum ActionResult](actionresult.md)
+- [enum ActionResult](./actionresult.md)
   Status values that an action can report back to the animation system.
 
 

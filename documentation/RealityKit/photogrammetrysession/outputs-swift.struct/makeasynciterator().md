@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an asynchronous iterator for the collection.
 
@@ -23,7 +24,7 @@ An asynchronous iterator.
 
 #### Discussion
 
-This method creates an asynchronous iterator for the collection. Typically, you won’t call this method. Instead, use a `try`-`await`-`in` loop inside of an `async` task, which creates an iterator implicitly and waits for the session to publish new [`PhotogrammetrySession.Output`](photogrammetrysession/output.md) objects, as the following example demonstrates.
+This method creates an asynchronous iterator for the collection. Typically, you won’t call this method. Instead, use a `try`-`await`-`in` loop inside of an `async` task, which creates an iterator implicitly and waits for the session to publish new [`PhotogrammetrySession.Output`](../output.md) objects, as the following example demonstrates.
 
 ```swift
 let waiter = Task {

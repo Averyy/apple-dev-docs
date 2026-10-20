@@ -1,7 +1,8 @@
 # GLKVector3Make(_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new three-component vector created from individual component values.
 
@@ -17,6 +18,10 @@ Returns a new three-component vector created from individual component values.
 func GLKVector3Make(_ x: Float, _ y: Float, _ z: Float) -> GLKVector3
 ```
 
+```c
+static GLKVector3 GLKVector3Make(float x, float y, float z);
+```
+
 #### Return Value
 
 An initialized vector.
@@ -29,7 +34,8 @@ An initialized vector.
 
 ## See Also
 
-- [func GLKVector3MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector3](glkvector3makewitharray(_:).md)
+### Creating Vectors
+- [func GLKVector3MakeWithArray(UnsafeMutablePointer<Float>!) -> GLKVector3](./glkvector3makewitharray%28_%29.md)
   Returns a new three-component vector created from an array of components.
 
 

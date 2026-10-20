@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the user has made a request to start a new recording.
@@ -15,9 +16,13 @@ Tells the delegate that the user has made a request to start a new recording.
 func captureView(_ captureView: AVCaptureView, startRecordingTo fileOutput: AVCaptureFileOutput)
 ```
 
+```objc
+- (void) captureView:(AVCaptureView *) captureView startRecordingToFileOutput:(AVCaptureFileOutput *) fileOutput;
+```
+
 #### Discussion
 
-If the capture file output is an instance of [`AVCaptureMovieFileOutput`](https://developer.apple.com/documentation/avfoundation/avcapturemoviefileoutput), you start recording by calling [`startRecording(to:recordingDelegate:)`](https://developer.apple.com/documentation/avfoundation/avcapturefileoutput/startrecording(to:recordingdelegate:)) on the capture file output.
+If the capture file output is an instance of [`AVCaptureMovieFileOutput`](../../AVFoundation/avcapturemoviefileoutput.md), you start recording by calling [`startRecording(to:recordingDelegate:)`](../../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) on the capture file output.
 
 ## Parameters
 

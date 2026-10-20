@@ -1,7 +1,8 @@
 # PKAutomaticPassPresentationSuppressionResult.alreadyPresenting
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is already presenting passes.
 
@@ -19,19 +20,24 @@ The device is already presenting passes.
 case alreadyPresenting
 ```
 
+```c
+PKAutomaticPassPresentationSuppressionResultAlreadyPresenting
+```
+
 #### Discussion
 
 The device is unable to suppress automatic presentation of passes.
 
 ## See Also
 
-- [PKAutomaticPassPresentationSuppressionResult.notSupported](pkautomaticpasspresentationsuppressionresult/notsupported.md)
+### Constants
+- [PKAutomaticPassPresentationSuppressionResult.notSupported](./notsupported.md)
   The device doesn’t support the suppression of automatic pass presentation.
-- [PKAutomaticPassPresentationSuppressionResult.denied](pkautomaticpasspresentationsuppressionresult/denied.md)
+- [PKAutomaticPassPresentationSuppressionResult.denied](./denied.md)
   The user prevented the suppression, or an internal error occurred.
-- [PKAutomaticPassPresentationSuppressionResult.cancelled](pkautomaticpasspresentationsuppressionresult/cancelled.md)
+- [PKAutomaticPassPresentationSuppressionResult.cancelled](./cancelled.md)
   The system canceled the suppression before calling the response handler.
-- [PKAutomaticPassPresentationSuppressionResult.success](pkautomaticpasspresentationsuppressionresult/success.md)
+- [PKAutomaticPassPresentationSuppressionResult.success](./success.md)
   Suppression of automatic presentation successful.
 
 

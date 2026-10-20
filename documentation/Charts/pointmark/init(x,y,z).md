@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D point mark that plots values to x, y and z.
 
@@ -43,11 +44,12 @@ Chart3D(data) {
 
 ## See Also
 
-- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](pointmark/init(x:y:)-44ke9.md)
+### Creating a point mark
+- [init<X, Y>(x: PlottableValue<X>, y: PlottableValue<Y>)](./init%28x,y%29-44ke9.md)
   Creates a point mark that plots values to x and y.
-- [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](pointmark/init(x:y:)-9dswq.md)
+- [init<Y>(x: CGFloat?, y: PlottableValue<Y>)](./init%28x,y%29-9dswq.md)
   Creates a point mark with fixed x position and plots values with y.
-- [init<X>(x: PlottableValue<X>, y: CGFloat?)](pointmark/init(x:y:)-9hppd.md)
+- [init<X>(x: PlottableValue<X>, y: CGFloat?)](./init%28x,y%29-9hppd.md)
   Creates a point mark that plots a value on x with fixed y position.
 
 

@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial orientation of the element in the shared coordinate space.
 
@@ -20,9 +21,10 @@ The direction you specify rotates the participant’s spatial Persona around the
 
 ## See Also
 
-- [let position: SpatialTemplateElementPosition](spatialtemplateseatelement/position.md)
+### Getting the element details
+- [let position: SpatialTemplateElementPosition](./position.md)
   The location of the element in the shared coordinate space.
-- [let role: (any SpatialTemplateRole)?](spatialtemplateseatelement/role.md)
+- [let role: (any SpatialTemplateRole)?](./role.md)
   An optional role you associate with this element.
 
 

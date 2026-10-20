@@ -1,7 +1,8 @@
 # HMCharacteristicValueRemoteKey.nextTrack
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents the next track key.
 
@@ -19,37 +20,42 @@ A value that represents the next track key.
 case nextTrack
 ```
 
+```c
+HMCharacteristicValueRemoteKeyNextTrack
+```
+
 ## See Also
 
-- [HMCharacteristicValueRemoteKey.arrowDown](hmcharacteristicvalueremotekey/arrowdown.md)
+### Remote states
+- [HMCharacteristicValueRemoteKey.arrowDown](./arrowdown.md)
   A value that represents the down-arrow key.
-- [HMCharacteristicValueRemoteKey.arrowLeft](hmcharacteristicvalueremotekey/arrowleft.md)
+- [HMCharacteristicValueRemoteKey.arrowLeft](./arrowleft.md)
   A value that represents the left arrow key.
-- [HMCharacteristicValueRemoteKey.arrowRight](hmcharacteristicvalueremotekey/arrowright.md)
+- [HMCharacteristicValueRemoteKey.arrowRight](./arrowright.md)
   A value that represents the right arrow key.
-- [HMCharacteristicValueRemoteKey.arrowUp](hmcharacteristicvalueremotekey/arrowup.md)
+- [HMCharacteristicValueRemoteKey.arrowUp](./arrowup.md)
   A value that represents the up-arrow key.
-- [HMCharacteristicValueRemoteKey.back](hmcharacteristicvalueremotekey/back.md)
+- [HMCharacteristicValueRemoteKey.back](./back.md)
   A value that represents the back key.
-- [HMCharacteristicValueRemoteKey.exit](hmcharacteristicvalueremotekey/exit.md)
+- [HMCharacteristicValueRemoteKey.exit](./exit.md)
   A value that represents the exit key.
-- [HMCharacteristicValueRemoteKey.fastForward](hmcharacteristicvalueremotekey/fastforward.md)
+- [HMCharacteristicValueRemoteKey.fastForward](./fastforward.md)
   A value that represents the fast forward key.
-- [HMCharacteristicValueRemoteKey.home](hmcharacteristicvalueremotekey/home.md)
+- [HMCharacteristicValueRemoteKey.home](./home.md)
   A value that represents the home key.
-- [HMCharacteristicValueRemoteKey.info](hmcharacteristicvalueremotekey/info.md)
+- [HMCharacteristicValueRemoteKey.info](./info.md)
   A value that represents the info key.
-- [HMCharacteristicValueRemoteKey.menu](hmcharacteristicvalueremotekey/menu.md)
+- [HMCharacteristicValueRemoteKey.menu](./menu.md)
   A value that represents the menu key.
-- [HMCharacteristicValueRemoteKey.pause](hmcharacteristicvalueremotekey/pause.md)
+- [HMCharacteristicValueRemoteKey.pause](./pause.md)
   A value that represents the pause key.
-- [HMCharacteristicValueRemoteKey.play](hmcharacteristicvalueremotekey/play.md)
+- [HMCharacteristicValueRemoteKey.play](./play.md)
   A value that represents the play key.
-- [HMCharacteristicValueRemoteKey.playPause](hmcharacteristicvalueremotekey/playpause.md)
+- [HMCharacteristicValueRemoteKey.playPause](./playpause.md)
   A value that represents the play pause key.
-- [HMCharacteristicValueRemoteKey.previousTrack](hmcharacteristicvalueremotekey/previoustrack.md)
+- [HMCharacteristicValueRemoteKey.previousTrack](./previoustrack.md)
   A value that represents the previous track key.
-- [HMCharacteristicValueRemoteKey.rewind](hmcharacteristicvalueremotekey/rewind.md)
+- [HMCharacteristicValueRemoteKey.rewind](./rewind.md)
   A value that represents the rewind key.
 
 

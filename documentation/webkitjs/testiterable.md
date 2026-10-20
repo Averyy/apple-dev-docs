@@ -1,21 +1,22 @@
 # TestIterable
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.0+
 
 ## Declaration
 
-```swift
+```
 interface TestIterable
 ```
 
 ## Topics
 
 ### Instance Properties
-- [>](testiterable/2528148.md)
+- [>](./testiterable/api-2528148.md)
 
 
 ---

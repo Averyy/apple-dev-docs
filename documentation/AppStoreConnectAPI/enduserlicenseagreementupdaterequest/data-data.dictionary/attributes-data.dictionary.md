@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,7 +11,7 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementUpdateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object EndUserLicenseAgreementUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [object EndUserLicenseAgreementUpdateRequest.Data.Relationships](enduserlicenseagreementupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object EndUserLicenseAgreementUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

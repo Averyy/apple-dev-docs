@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothEncryptionEnableBREDRAESCCM](1640012-anonymous/kbluetoothencryptionenablebredraesccm.md)
-- [kBluetoothEncryptionEnableBREDRE0](1640012-anonymous/kbluetoothencryptionenablebredre0.md)
-- [kBluetoothEncryptionEnableLEAESCCM](1640012-anonymous/kbluetoothencryptionenableleaesccm.md)
-- [kBluetoothEncryptionEnableOff](1640012-anonymous/kbluetoothencryptionenableoff.md)
-- [kBluetoothEncryptionEnableOn](1640012-anonymous/kbluetoothencryptionenableon.md)
+- [kBluetoothEncryptionEnableBREDRAESCCM](./api-1640012-anonymous/kbluetoothencryptionenablebredraesccm.md)
+- [kBluetoothEncryptionEnableBREDRE0](./api-1640012-anonymous/kbluetoothencryptionenablebredre0.md)
+- [kBluetoothEncryptionEnableLEAESCCM](./api-1640012-anonymous/kbluetoothencryptionenableleaesccm.md)
+- [kBluetoothEncryptionEnableOff](./api-1640012-anonymous/kbluetoothencryptionenableoff.md)
+- [kBluetoothEncryptionEnableOn](./api-1640012-anonymous/kbluetoothencryptionenableon.md)
 
 
 ---

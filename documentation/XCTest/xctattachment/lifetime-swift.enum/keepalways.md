@@ -1,7 +1,8 @@
 # XCTAttachment.Lifetime.keepAlways
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the attachment should be persisted as part of the test’s results even if the test passes.
 
@@ -11,13 +12,18 @@ Indicates that the attachment should be persisted as part of the test’s result
 case keepAlways
 ```
 
+```c
+XCTAttachmentLifetimeKeepAlways
+```
+
 ## Mentions
 
-- [Adding Attachments to Tests, Activities, and Issues](adding-attachments-to-tests-activities-and-issues.md)
+- [Adding Attachments to Tests, Activities, and Issues](../../adding-attachments-to-tests-activities-and-issues.md)
 
 ## See Also
 
-- [XCTAttachment.Lifetime.deleteOnSuccess](xctattachment/lifetime-swift.enum/deleteonsuccess.md)
+### Attachment Lifetimes
+- [XCTAttachment.Lifetime.deleteOnSuccess](./deleteonsuccess.md)
   Indicates that the attachment should be deleted if the test passes.
 
 

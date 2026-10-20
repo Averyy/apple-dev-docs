@@ -1,7 +1,8 @@
 # MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,29 +19,33 @@
 enum MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit
 ```
 
+```c
+enum MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.BQM3](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/bqm3.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.MGM3](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/mgm3.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.NGM3](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ngm3.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PM3](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/pm3.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPB](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppb.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPM](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppm.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPT](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppt.md)
-- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.UGM3](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ugm3.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.BQM3](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/bqm3.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.MGM3](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/mgm3.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.NGM3](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ngm3.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PM3](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/pm3.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPB](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppb.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPM](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppm.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.PPT](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ppt.md)
+- [MTRNitrogenDioxideConcentrationMeasurementMeasurementUnit.UGM3](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/ugm3.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrnitrogendioxideconcentrationmeasurementmeasurementunit/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrnitrogendioxideconcentrationmeasurementmeasurementunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

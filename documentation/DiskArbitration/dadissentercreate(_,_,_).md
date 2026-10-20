@@ -1,7 +1,8 @@
 # DADissenterCreate(_:_:_:)
 
 **Framework**: Disk Arbitration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a new dissenter object.
 
@@ -13,6 +14,10 @@ Creates a new dissenter object.
 
 ```swift
 func DADissenterCreate(_ allocator: CFAllocator?, _ status: DAReturn, _ string: CFString?) -> DADissenter
+```
+
+```c
+extern DADissenterRefDADissenterCreate(CFAllocatorRef allocator, DAReturn status, CFStringRef string);
 ```
 
 #### Return Value
@@ -27,9 +32,10 @@ A reference to a new DADissenter.
 
 ## See Also
 
-- [func DADissenterGetStatus(DADissenter) -> DAReturn](dadissentergetstatus(_:).md)
+### Miscellaneous
+- [func DADissenterGetStatus(DADissenter) -> DAReturn](./dadissentergetstatus%28_%29.md)
   Obtains the return code.
-- [func DADissenterGetStatusString(DADissenter) -> CFString?](dadissentergetstatusstring(_:).md)
+- [func DADissenterGetStatusString(DADissenter) -> CFString?](./dadissentergetstatusstring%28_%29.md)
   Obtains the return code string.
 
 

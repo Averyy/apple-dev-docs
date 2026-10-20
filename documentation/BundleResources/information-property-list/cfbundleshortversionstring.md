@@ -1,7 +1,8 @@
 # CFBundleShortVersionString
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The release or version number of the bundle.
 
@@ -13,9 +14,10 @@ The release or version number of the bundle.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleShortVersionString` (Bundle version string (short))
+- **Type**: string
 
 #### Discussion
 
@@ -31,11 +33,12 @@ This key is used throughout the system to identify the version of the bundle.
 
 ## See Also
 
-- [CFBundleVersion](information-property-list/cfbundleversion.md)
+### Bundle version
+- [CFBundleVersion](./cfbundleversion.md)
   The version of the build that identifies an iteration of the bundle.
-- [CFBundleInfoDictionaryVersion](information-property-list/cfbundleinfodictionaryversion.md)
+- [CFBundleInfoDictionaryVersion](./cfbundleinfodictionaryversion.md)
   The current version of the Information Property List structure.
-- [NSHumanReadableCopyright](information-property-list/nshumanreadablecopyright.md)
+- [NSHumanReadableCopyright](./nshumanreadablecopyright.md)
   A human-readable copyright notice for the bundle.
 
 

@@ -1,7 +1,8 @@
 # CSSearchableIndexDescription
 
 **Framework**: Core Spotlight  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -16,35 +17,40 @@
 class CSSearchableIndexDescription
 ```
 
+```objc
+@interface CSSearchableIndexDescription : NSObject
+```
+
 ## Topics
 
 ### Creating the index description
-- [init?(coder: NSCoder)](cssearchableindexdescription/init(coder:).md)
+- [init?(coder: NSCoder)](./cssearchableindexdescription/init%28coder%29.md)
 ### Describing the Spotlight index
-- [var protectionClass: FileProtectionType?](cssearchableindexdescription/protectionclass.md)
+- [var protectionClass: FileProtectionType?](./cssearchableindexdescription/protectionclass.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
+### Indexes
+- [Generating summary and priority data for indexed items](./generating-summary-and-priority-data-for-indexed-items.md)
   Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
-- [class CSSearchableIndex](cssearchableindex.md)
+- [class CSSearchableIndex](./cssearchableindex.md)
   An on-device index for your app’s searchable content.
-- [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)
+- [protocol CSSearchableIndexDelegate](./cssearchableindexdelegate.md)
   A protocol that defines methods a delegate object or app extension uses to handle communication from the on-device index.
 
 

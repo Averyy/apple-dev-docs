@@ -1,7 +1,8 @@
 # init(mtlCommandQueue:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -17,13 +18,18 @@
 init(mtlCommandQueue commandQueue: any MTLCommandQueue, options: [CIContextOption : Any]? = nil)
 ```
 
+```objc
++ (CIContext *) contextWithMTLCommandQueue:(id<MTLCommandQueue>) commandQueue options:(NSDictionary<NSString *,id> *) options;
+```
+
 ## See Also
 
-- [init(mtlDevice: any MTLDevice)](cicontext/init(mtldevice:)-swey.md)
+### Creating a Context for GPU-Based Rendering
+- [init(mtlDevice: any MTLDevice)](./init%28mtldevice%29-swey.md)
   Creates a Core Image context using the specified Metal device.
-- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:)-26usb.md)
+- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](./init%28mtldevice,options%29-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
-- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:)-7dtqk.md)
+- [init(mtlCommandQueue: any MTLCommandQueue)](./init%28mtlcommandqueue%29-7dtqk.md)
 
 
 ---

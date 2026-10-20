@@ -1,18 +1,19 @@
 # sf_ioctl_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_ioctl_func)(void *cookie, socket_t so, unsigned long request, const char *argp);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of this ioctl. EJUSTRETURN - The caller will return with a value of 0 (no error) from that point without further processing or propogating the ioctl. Anything Else - The caller will stop processing and return this error.
 

@@ -1,12 +1,13 @@
 # srcset
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies multiple URLs for an image.
 
 #### Overview
 
-Use the `srcset` attribute to specify different URLs for an image depending on the situation. The URL can point to an image on a server or to the resource scheme in your app. For a list of resource images provide by Apple, see the Resource Icons section of [`TVML`](TVML.md). Here’s an example that displays a different chevron image depending whether the current language is a left-to-right or right-to-left language.
+Use the `srcset` attribute to specify different URLs for an image depending on the situation. The URL can point to an image on a server or to the resource scheme in your app. For a list of resource images provide by Apple, see the Resource Icons section of [TVML](./TVML.md). Here’s an example that displays a different chevron image depending whether the current language is a left-to-right or right-to-left language.
 
 ```xml
 <img srcset="resource://chevron-right.png (layout-direction: ltr), resource://chevron-left.png (layout-direction: rtl)" />
@@ -20,21 +21,22 @@ Use the `srcset` attribute to specify different URLs for an image depending on t
 
 > **Note**: When this attribute loads an image using an HTTP URL, you must add `height` and `width` attributes to the element.
 
-##### Values for Srcset
+##### Values for srcset
 
 - **String**: The URL pointing to the location of the image file.
 
-##### Elements That Use Srcset
+##### Elements that Use srcset
 
-- [`badge`](badge.md)
-- [`decorationImage`](decorationimage.md)
-- [`fullscreenImg`](fullscreenimg.md)
-- [`heroImg`](heroimg.md)
-- [`img`](img.md)
+- [badge](./badge.md)
+- [decorationImage](./decorationimage.md)
+- [fullscreenImg](./fullscreenimg.md)
+- [heroImg](./heroimg.md)
+- [img](./img.md)
 
 ## See Also
 
-- [src](src.md)
+### Image Retrieval
+- [src](./src.md)
   Specifies the URL for an image.
 
 

@@ -1,7 +1,8 @@
 # scrollTransition(topLeading:bottomTrailing:axis:transition:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 
@@ -30,11 +31,12 @@ func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing:
 
 ## See Also
 
-- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(_:axis:transition:).md)
+### Animating scroll transitions
+- [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](./scrolltransition%28_,axis,transition%29.md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
-- [enum ScrollTransitionPhase](scrolltransitionphase.md)
+- [enum ScrollTransitionPhase](../scrolltransitionphase.md)
   The phases that a view transitions between when it scrolls among other views.
-- [struct ScrollTransitionConfiguration](scrolltransitionconfiguration.md)
+- [struct ScrollTransitionConfiguration](../scrolltransitionconfiguration.md)
   The configuration of a scroll transition that controls how a transition is applied as a view is scrolled through the visible region of a containing scroll view or other container.
 
 

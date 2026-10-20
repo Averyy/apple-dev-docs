@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that responds to pointer movements.
 
@@ -17,9 +18,14 @@ An object that responds to pointer movements.
 weak var delegate: (any UIPointerInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UIPointerInteractionDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UIPointerInteractionDelegate](uipointerinteractiondelegate.md)
+### Manage pointer interactions
+- [protocol UIPointerInteractionDelegate](../uipointerinteractiondelegate.md)
   An interface for handling pointer movements within the interaction’s view.
 
 

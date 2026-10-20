@@ -1,7 +1,8 @@
 # effectiveRange(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func effectiveRange(_ inputRange: MPSFunctions_AABB) -> MPSFunctions_AABB
+```
+
+```objc
+- (MPSFunctions_AABB) effectiveRange:(MPSFunctions_AABB) inputRange;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # setDescriptor(_:for:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the auxiliary plane descriptor for the given plane type.
 
@@ -19,11 +20,15 @@ Sets the auxiliary plane descriptor for the given plane type.
 func setDescriptor(_ descriptor: MTLTensorAuxiliaryPlaneDescriptor, for plane: MTLTensorPlaneType)
 ```
 
+```objc
+- (void) setDescriptor:(MTLTensorAuxiliaryPlaneDescriptor *) descriptor forPlane:(MTLTensorPlaneType) plane;
+```
+
 #### Discussion
 
-[`MTLTensorPlaneType.data`](mtltensorplanetype/data.md) is not a valid plane type for this method. The data plane is always present, and you configure it directly on [`MTLTensorDescriptor`](mtltensordescriptor.md).
+[`MTLTensorPlaneType.data`](../mtltensorplanetype/data.md) is not a valid plane type for this method. The data plane is always present, and you configure it directly on [`MTLTensorDescriptor`](../mtltensordescriptor.md).
 
-[`MTLTensorPlaneType.scales`](mtltensorplanetype/scales.md) auxiliary planes only support [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md) as a data type.
+[`MTLTensorPlaneType.scales`](../mtltensorplanetype/scales.md) auxiliary planes only support [`MTLTensorDataType.metalFloat8ue8m0`](../mtltensordatatype/metalfloat8ue8m0.md) as a data type.
 
 ## Parameters
 

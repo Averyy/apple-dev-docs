@@ -1,7 +1,8 @@
 # NSCursor.FrameResizePosition.bottomRight
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The bottom right corner of the frame.
 
@@ -13,6 +14,10 @@ The bottom right corner of the frame.
 
 ```swift
 case bottomRight
+```
+
+```c
+NSCursorFrameResizePositionBottomRight
 ```
 
 

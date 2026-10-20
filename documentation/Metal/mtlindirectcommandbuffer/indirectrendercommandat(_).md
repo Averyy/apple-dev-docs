@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the render command at the given index.
@@ -20,6 +21,10 @@ Gets the render command at the given index.
 func indirectRenderCommandAt(_ commandIndex: Int) -> any MTLIndirectRenderCommand
 ```
 
+```objc
+- (id<MTLIndirectRenderCommand>) indirectRenderCommandAtIndex:(NSUInteger) commandIndex;
+```
+
 #### Discussion
 
 Call this method only if the indirect command buffer contains rendering commands.
@@ -30,9 +35,10 @@ Call this method only if the indirect command buffer contains rendering commands
 
 ## See Also
 
-- [func indirectComputeCommandAt(Int) -> any MTLIndirectComputeCommand](mtlindirectcommandbuffer/indirectcomputecommandat(_:).md)
+### Retrieving commands
+- [func indirectComputeCommandAt(Int) -> any MTLIndirectComputeCommand](./indirectcomputecommandat%28_%29.md)
   Gets the compute command at the given index.
-- [func indirectComputeCommand(at: Int) -> any MTLIndirectComputeCommand](mtlindirectcommandbuffer/indirectcomputecommand(at:).md)
+- [func indirectComputeCommand(at: Int) -> any MTLIndirectComputeCommand](./indirectcomputecommand%28at%29.md)
   Gets the compute command at the given index.
 
 

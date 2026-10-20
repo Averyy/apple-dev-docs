@@ -1,7 +1,8 @@
 # MPSSVGFTextureAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 13.0+
@@ -17,18 +18,22 @@
 protocol MPSSVGFTextureAllocator : NSObjectProtocol
 ```
 
+```objc
+@protocol MPSSVGFTextureAllocator <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func `return`(any MTLTexture)](mpssvgftextureallocator/return(_:).md)
-- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](mpssvgftextureallocator/texture(with:width:height:).md)
+- [func `return`(any MTLTexture)](./mpssvgftextureallocator/return%28_%29.md)
+- [func texture(with: MTLPixelFormat, width: Int, height: Int) -> (any MTLTexture)?](./mpssvgftextureallocator/texture%28with,width,height%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [MPSSVGFDefaultTextureAllocator](mpssvgfdefaulttextureallocator.md)
+- [MPSSVGFDefaultTextureAllocator](./mpssvgfdefaulttextureallocator.md)
 
 
 ---

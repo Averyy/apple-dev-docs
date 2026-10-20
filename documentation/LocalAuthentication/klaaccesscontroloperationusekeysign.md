@@ -1,7 +1,8 @@
 # kLAAccessControlOperationUseKeySign
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var kLAAccessControlOperationUseKeySign: Int32 { get }
+```
+
+```c
+#define kLAAccessControlOperationUseKeySign
 ```
 
 

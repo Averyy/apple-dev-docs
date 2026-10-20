@@ -1,7 +1,8 @@
 # isAdjustingExposure
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is currently adjusting its exposure setting.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the device is currently adjusting its exp
 
 ```swift
 var isAdjustingExposure: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAdjustingExposure) BOOL adjustingExposure;
 ```
 
 #### Discussion

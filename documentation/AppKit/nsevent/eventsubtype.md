@@ -1,12 +1,13 @@
 # NSEvent.EventSubtype
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Subtypes for various types of events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,62 +15,67 @@ Subtypes for various types of events.
 enum EventSubtype
 ```
 
+```c
+enum NSEventSubtype : short;
+```
+
 #### Overview
 
-The event subtype contains one of these constants only when the event’s [`type`](nsevent/type.md) property contains [`NSAppKitDefined`](nsappkitdefined.md), [`NSSystemDefined`](nssystemdefined.md), or [`NSApplicationDefined`](nsapplicationdefined.md) or a mouse-related event type.
+The event subtype contains one of these constants only when the event’s [`type`](./type.md) property contains [`NSAppKitDefined`](../nsappkitdefined.md), [`NSSystemDefined`](../nssystemdefined.md), or [`NSApplicationDefined`](../nsapplicationdefined.md) or a mouse-related event type.
 
 ## Topics
 
 ### Getting AppKit Event Subtypes
-- [NSEvent.EventSubtype.applicationActivated](nsevent/eventsubtype/applicationactivated.md)
+- [NSEvent.EventSubtype.applicationActivated](./eventsubtype/applicationactivated.md)
   An app-activation event occurred.
-- [NSEvent.EventSubtype.applicationDeactivated](nsevent/eventsubtype/applicationdeactivated.md)
+- [NSEvent.EventSubtype.applicationDeactivated](./eventsubtype/applicationdeactivated.md)
   An app-deactivation event occurred.
-- [NSEvent.EventSubtype.screenChanged](nsevent/eventsubtype/screenchanged.md)
+- [NSEvent.EventSubtype.screenChanged](./eventsubtype/screenchanged.md)
   An event that indicates a window changed screens.
-- [NSEvent.EventSubtype.windowExposed](nsevent/eventsubtype/windowexposed.md)
+- [NSEvent.EventSubtype.windowExposed](./eventsubtype/windowexposed.md)
   An event that indicates a window’s contents are visible again.
-- [NSEvent.EventSubtype.windowMoved](nsevent/eventsubtype/windowmoved.md)
+- [NSEvent.EventSubtype.windowMoved](./eventsubtype/windowmoved.md)
   An event that indicates a window moved.
 ### Getting System Event Subtypes
-- [static var powerOff: NSEvent.EventSubtype](nsevent/eventsubtype/poweroff.md)
+- [static var powerOff: NSEvent.EventSubtype](./eventsubtype/poweroff.md)
   An event that indicates a system shutdown or restart operation is in progress.
-- [static var powerOff: NSEvent.EventSubtype](nsevent/eventsubtype/poweroff.md)
+- [static var powerOff: NSEvent.EventSubtype](./eventsubtype/poweroff.md)
   An event that indicates a system shutdown or restart operation is in progress.
 ### Getting Other Subtypes
-- [static var mouseEvent: NSEvent.EventSubtype](nsevent/eventsubtype/mouseevent.md)
+- [static var mouseEvent: NSEvent.EventSubtype](./eventsubtype/mouseevent.md)
   A mouse event occurred.
-- [static var tabletPoint: NSEvent.EventSubtype](nsevent/eventsubtype/tabletpoint.md)
+- [static var tabletPoint: NSEvent.EventSubtype](./eventsubtype/tabletpoint.md)
   A tablet-pointer event occurred.
-- [static var tabletProximity: NSEvent.EventSubtype](nsevent/eventsubtype/tabletproximity.md)
+- [static var tabletProximity: NSEvent.EventSubtype](./eventsubtype/tabletproximity.md)
   A tablet-proximity event occurred.
-- [NSEvent.EventSubtype.touch](nsevent/eventsubtype/touch.md)
+- [NSEvent.EventSubtype.touch](./eventsubtype/touch.md)
   A touch event occurred.
 ### Deprecated
-- [Deprecated symbols](eventsubtype-deprecated-symbols.md)
+- [Deprecated symbols](../eventsubtype-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Initializers
-- [init?(rawValue: Int16)](nsevent/eventsubtype/init(rawvalue:).md)
+- [init?(rawValue: Int16)](./eventsubtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var type: NSEvent.EventType](nsevent/type.md)
+### Getting the event type
+- [var type: NSEvent.EventType](./type.md)
   The event’s type.
-- [NSEvent.EventType](nsevent/eventtype.md)
+- [NSEvent.EventType](./eventtype.md)
   Constants for the types of events that responder objects can handle.
-- [NSEvent.EventTypeMask](nsevent/eventtypemask.md)
+- [NSEvent.EventTypeMask](./eventtypemask.md)
   Constants that you use to filter out specific event types from the stream of incoming events.
-- [var subtype: NSEvent.EventSubtype](nsevent/subtype.md)
+- [var subtype: NSEvent.EventSubtype](./subtype.md)
   The event’s subtype.
 
 

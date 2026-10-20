@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops playback of the audio resource and discards the location in the audio stream.
 
@@ -22,7 +23,7 @@ Stops playback of the audio resource and discards the location in the audio stre
 
 #### Discussion
 
-The next time you call [`play()`](audioplaybackgroupcontroller/play().md), playback starts at the beginning of the stream.
+The next time you call [`play()`](./play%28%29.md), playback starts at the beginning of the stream.
 
 
 ---

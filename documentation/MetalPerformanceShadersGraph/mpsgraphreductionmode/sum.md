@@ -1,7 +1,8 @@
 # MPSGraphReductionMode.sum
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sum
 
@@ -17,6 +18,10 @@ Sum
 
 ```swift
 case sum
+```
+
+```c
+MPSGraphReductionModeSum
 ```
 
 

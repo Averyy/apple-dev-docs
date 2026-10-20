@@ -1,7 +1,8 @@
 # VideoReader.CameraConfiguration.Position.front
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +19,8 @@ case front
 
 ## See Also
 
-- [VideoReader.CameraConfiguration.Position.back](videoreader/cameraconfiguration/position-swift.enum/back.md)
+### Camera positions
+- [VideoReader.CameraConfiguration.Position.back](./back.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # replaceImage(with:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the contents of this image markup with an image file.
 
@@ -20,7 +21,7 @@ mutating func replaceImage(with url: URL) throws
 
 #### Discussion
 
-> **Note**: An error if the image file cannot be loaded or is in an unsupported format.
+> **Throws**: An error if the image file cannot be loaded or is in an unsupported format.
 
 Image content is shown scaled to fill.
 
@@ -30,13 +31,14 @@ Image content is shown scaled to fill.
 
 ## See Also
 
-- [var image: CGImage?](imagemarkup/image.md)
+### Accessing image content
+- [var image: CGImage?](./image.md)
   The image content displayed by this markup.
-- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+- [func replaceImage(with: CGImage)](./replaceimage%28with%29-6eb53.md)
   Replaces the contents of this image markup with a `CGImage`.
-- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./orientation.md)
   The orientation of the image content.
-- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+- [var contentsBounds: CGRect](./contentsbounds.md)
   The portion of the image to display, in normalized coordinates.
 
 

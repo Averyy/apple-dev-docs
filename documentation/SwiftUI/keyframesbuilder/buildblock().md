@@ -1,7 +1,8 @@
 # buildBlock()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.0+
@@ -18,17 +19,24 @@
 static func buildBlock() -> some KeyframeTrackContent<Value> where Value : Animatable
 ```
 
+**Other overloads**:
+
+```swift
+static func buildBlock() -> some Keyframes<Value>
+```
+
 ## See Also
 
+### Building keyframes
 - [static func buildArray([some KeyframeTrackContent<Value>]) -> some KeyframeTrackContent<Value>
-](keyframesbuilder/buildarray(_:).md)
-- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframesbuilder/buildeither(first:).md)
-- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframesbuilder/buildeither(second:).md)
-- [static buildExpression(_:)](keyframesbuilder/buildexpression(_:).md)
+](./buildarray%28_%29.md)
+- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28first%29.md)
+- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28second%29.md)
+- [static buildExpression(_:)](./buildexpression%28_%29.md)
   Keyframes
-- [static buildFinalResult(_:)](keyframesbuilder/buildfinalresult(_:).md)
-- [static buildPartialBlock(accumulated:next:)](keyframesbuilder/buildpartialblock(accumulated:next:).md)
-- [static buildPartialBlock(first:)](keyframesbuilder/buildpartialblock(first:).md)
+- [static buildFinalResult(_:)](./buildfinalresult%28_%29.md)
+- [static buildPartialBlock(accumulated:next:)](./buildpartialblock%28accumulated,next%29.md)
+- [static buildPartialBlock(first:)](./buildpartialblock%28first%29.md)
 
 
 ---

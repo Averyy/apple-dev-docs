@@ -1,7 +1,8 @@
 # when(platforms:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a target dependency condition.
 
@@ -17,11 +18,12 @@ static func when(platforms: [Platform]? = nil) -> TargetDependencyCondition
 
 ## See Also
 
-- [static func when(platforms: [Platform]) -> TargetDependencyCondition?](targetdependencycondition/when(platforms:)-5bxhc.md)
+### Creating a Dependency Condition
+- [static func when(platforms: [Platform]) -> TargetDependencyCondition?](./when%28platforms%29-5bxhc.md)
   Creates a target dependency condition.
-- [static func when(traits: Set<String>) -> TargetDependencyCondition?](targetdependencycondition/when(traits:).md)
+- [static func when(traits: Set<String>) -> TargetDependencyCondition?](./when%28traits%29.md)
   Creates a target dependency condition.
-- [static func when(platforms: [Platform], traits: Set<String>) -> TargetDependencyCondition?](targetdependencycondition/when(platforms:traits:).md)
+- [static func when(platforms: [Platform], traits: Set<String>) -> TargetDependencyCondition?](./when%28platforms,traits%29.md)
   Creates a target dependency condition.
 
 

@@ -1,7 +1,8 @@
 # Scene.Publisher
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher for the given event type in the scene.
 
@@ -11,7 +12,7 @@ A publisher for the given event type in the scene.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ struct Publisher<E> where E : Event
 ## Relationships
 
 ### Conforms To
-- [Publisher](../combine/publisher.md)
+- [Publisher](../../Combine/publisher.md)
 
 ## See Also
 
-- [enum SceneEvents](sceneevents.md)
+### Event publishers and subscription
+- [enum SceneEvents](../sceneevents.md)
   Events the scene invokes.
 
 

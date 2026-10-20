@@ -1,18 +1,21 @@
 # unitsYears
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies the year field.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.4+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.4+ - Deprecated in 10.10
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use CFCalendar or NSCalendar API instead
 
 ## Declaration
 
@@ -20,19 +23,24 @@ Specifies the year field.
 static var unitsYears: CFGregorianUnitFlags { get }
 ```
 
+```c
+kCFGregorianUnitsYears
+```
+
 ## See Also
 
-- [static var unitsMonths: CFGregorianUnitFlags](cfgregorianunitflags/unitsmonths.md)
+### Constants
+- [static var unitsMonths: CFGregorianUnitFlags](./unitsmonths.md)
   Specifies the month field.
-- [static var unitsDays: CFGregorianUnitFlags](cfgregorianunitflags/unitsdays.md)
+- [static var unitsDays: CFGregorianUnitFlags](./unitsdays.md)
   Specifies the day field.
-- [static var unitsHours: CFGregorianUnitFlags](cfgregorianunitflags/unitshours.md)
+- [static var unitsHours: CFGregorianUnitFlags](./unitshours.md)
   Specifies the hours field.
-- [static var unitsMinutes: CFGregorianUnitFlags](cfgregorianunitflags/unitsminutes.md)
+- [static var unitsMinutes: CFGregorianUnitFlags](./unitsminutes.md)
   Specifies the minutes field.
-- [static var unitsSeconds: CFGregorianUnitFlags](cfgregorianunitflags/unitsseconds.md)
+- [static var unitsSeconds: CFGregorianUnitFlags](./unitsseconds.md)
   Specifies the seconds field.
-- [static var allUnits: CFGregorianUnitFlags](cfgregorianunitflags/allunits.md)
+- [static var allUnits: CFGregorianUnitFlags](./allunits.md)
   Specifies all fields.
 
 

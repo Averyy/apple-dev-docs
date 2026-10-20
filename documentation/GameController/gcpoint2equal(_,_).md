@@ -1,7 +1,8 @@
 # GCPoint2Equal(_:_:)
 
 **Framework**: Game Controller  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether two points are equal.
 
@@ -19,9 +20,13 @@ Returns whether two points are equal.
 func GCPoint2Equal(_ point1: GCPoint2, _ point2: GCPoint2) -> Bool
 ```
 
+```c
+static bool GCPoint2Equal(GCPoint2 point1, GCPoint2 point2);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the points are the same; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the points are the same; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ func GCPoint2Equal(_ point1: GCPoint2, _ point2: GCPoint2) -> Bool
 
 ## See Also
 
-- [func NSStringFromGCPoint2(GCPoint2) -> String](nsstringfromgcpoint2(_:).md)
+### Comparing and converting points
+- [func NSStringFromGCPoint2(GCPoint2) -> String](./nsstringfromgcpoint2%28_%29.md)
   Returns a string representation of a point.
 
 

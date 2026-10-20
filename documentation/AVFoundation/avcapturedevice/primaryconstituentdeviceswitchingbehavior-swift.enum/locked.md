@@ -1,7 +1,8 @@
 # AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.locked
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device locks camera switching to the active primary constituent device.
 
@@ -18,17 +19,22 @@ The device locks camera switching to the active primary constituent device.
 case locked
 ```
 
+```c
+AVCapturePrimaryConstituentDeviceSwitchingBehaviorLocked
+```
+
 #### Discussion
 
-A locked value restricts the [`minAvailableVideoZoomFactor`](avcapturedevice/minavailablevideozoomfactor.md) property value to the switch-over zoom factor of the active primary constituent device. See [`virtualDeviceSwitchOverVideoZoomFactors`](avcapturedevice/virtualdeviceswitchovervideozoomfactors.md) for more information.
+A locked value restricts the [`minAvailableVideoZoomFactor`](../minavailablevideozoomfactor.md) property value to the switch-over zoom factor of the active primary constituent device. See [`virtualDeviceSwitchOverVideoZoomFactors`](../virtualdeviceswitchovervideozoomfactors.md) for more information.
 
 ## See Also
 
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/unsupported.md)
+### Switching behaviors
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.unsupported](./unsupported.md)
   The device doesn’t support constituent device switching.
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/auto.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.auto](./auto.md)
   The device automatically selects the best camera for the current scene.
-- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted](avcapturedevice/primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md)
+- [AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted](./restricted.md)
   The device restricts fallback camera selection to certain conditions.
 
 

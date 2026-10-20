@@ -1,7 +1,8 @@
 # identityToken
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A JSON Web Token (JWT) that securely communicates information about the user to the app.
 
@@ -20,17 +21,22 @@ A JSON Web Token (JWT) that securely communicates information about the user to 
 var identityToken: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * identityToken;
+```
+
 #### Discussion
 
-The system encodes the object as a string using [`NSUTF8StringEncoding`](https://developer.apple.com/documentation/foundation/nsutf8stringencoding).
+The system encodes the object as a string using [`NSUTF8StringEncoding`](../../Foundation/nsutf8stringencoding.md).
 
 ## See Also
 
-- [var authorizationCode: Data?](asauthorizationappleidcredential/authorizationcode.md)
+### Identifying a User
+- [var authorizationCode: Data?](./authorizationcode.md)
   A token that the app uses to interact with the server.
-- [var state: String?](asauthorizationappleidcredential/state.md)
+- [var state: String?](./state.md)
   An arbitrary string that your app provides to the request that generates the credential.
-- [var user: String](asauthorizationappleidcredential/user.md)
+- [var user: String](./user.md)
   An identifier for the authenticated user.
 
 

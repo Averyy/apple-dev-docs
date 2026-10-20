@@ -1,7 +1,8 @@
 # makeContainer(context:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a container that represents the attributed string.
 

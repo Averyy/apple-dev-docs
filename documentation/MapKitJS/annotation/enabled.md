@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the annotation responds to user interaction.
 
@@ -10,14 +11,14 @@ A Boolean value that determines whether the annotation responds to user interact
 
 ## Declaration
 
-```swift
+```
 get enabled(): boolean;
 set enabled(value: boolean);
 ```
 
 ## Mentions
 
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ The default value is `true`.
 
 ## See Also
 
-- [animates](annotation/animates.md)
+### Getting and setting interaction behavior
+- [animates](./animates.md)
   A Boolean value that determines whether the framework animates the annotation.
-- [draggable](annotation/draggable.md)
+- [draggable](./draggable.md)
   A Boolean value that determines whether the user can drag the annotation.
-- [selected](annotation/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the map shows the annotation in a selected state.
 
 

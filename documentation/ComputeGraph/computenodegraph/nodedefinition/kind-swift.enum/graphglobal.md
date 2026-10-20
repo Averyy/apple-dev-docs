@@ -1,7 +1,8 @@
 # ComputeNodeGraph.NodeDefinition.Kind.graphGlobal
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A node which contains global constants affecting the graph
 
@@ -12,7 +13,7 @@ A node which contains global constants affecting the graph
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,16 +1,19 @@
 # customPlaygroundQuickLook
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+
+> **Deprecated**: SKTexture.customPlaygroundQuickLook will be removed in a future Swift version
 
 ## Declaration
 

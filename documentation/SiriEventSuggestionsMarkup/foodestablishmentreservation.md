@@ -1,7 +1,8 @@
 # FoodEstablishmentReservation
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A restaurant reservation.
 
@@ -10,20 +11,20 @@ A restaurant reservation.
 
 ## Declaration
 
-```swift
+```
 object FoodEstablishmentReservation
 ```
 
 ## Topics
 
 ### Defining a Restaurant Reservation
-- [object FoodEstablishment](foodestablishment.md)
+- [object FoodEstablishment](./foodestablishment.md)
   The restaurant or other food establishment that will host the reservation.
 
 ## Properties
 
 - `@context` (@context) *(required)*
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `FoodEstablishmentReservation`
 - `partySize` (integer): The number of people.
 - `reservationFor` (FoodEstablishment) *(required)*: The restaurant or other food establishment hosting the reservation.
 - `reservationId` (reservationId) *(required)*: A unique identifier for the reservation, consistent in all markup.
@@ -35,9 +36,10 @@ object FoodEstablishmentReservation
 
 ## See Also
 
-- [object EventReservation](eventreservation.md)
+### Food, Lodging, and Events
+- [object EventReservation](./eventreservation.md)
   A reservation for a movie, sporting event, live show, or other scheduled event.
-- [object LodgingReservation](lodgingreservation.md)
+- [object LodgingReservation](./lodgingreservation.md)
   A hotel reservation or other booking for a place to stay.
 
 

@@ -1,7 +1,8 @@
 # errSecIncompatibleVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version is incompatible.
 
@@ -18,6 +19,10 @@ The version is incompatible.
 
 ```swift
 var errSecIncompatibleVersion: OSStatus { get }
+```
+
+```c
+errSecIncompatibleVersion
 ```
 
 

@@ -1,7 +1,8 @@
 # DefaultFocusEvaluationPriority
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Prioritizations for default focus preferences when evaluating where to move focus in different circumstances.
 
@@ -23,22 +24,23 @@ struct DefaultFocusEvaluationPriority
 ## Topics
 
 ### Getting the priorities
-- [static let automatic: DefaultFocusEvaluationPriority](defaultfocusevaluationpriority/automatic.md)
+- [static let automatic: DefaultFocusEvaluationPriority](./defaultfocusevaluationpriority/automatic.md)
   Use the default focus preference when focus moves into the affected branch automatically, but ignore it when the movement is driven by a user-initiated navigation command.
-- [static let userInitiated: DefaultFocusEvaluationPriority](defaultfocusevaluationpriority/userinitiated.md)
+- [static let userInitiated: DefaultFocusEvaluationPriority](./defaultfocusevaluationpriority/userinitiated.md)
   Always use the default focus preference when focus moves into the affected branch.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prefersDefaultFocus(Bool, in: Namespace.ID) -> some View](view/prefersdefaultfocus(_:in:).md)
+### Controlling default focus
+- [func prefersDefaultFocus(Bool, in: Namespace.ID) -> some View](./view/prefersdefaultfocus%28_,in%29.md)
   Indicates that the view should receive focus by default for a given namespace.
-- [func defaultFocus<V>(FocusState<V>.Binding, V, priority: DefaultFocusEvaluationPriority) -> some View](view/defaultfocus(_:_:priority:).md)
+- [func defaultFocus<V>(FocusState<V>.Binding, V, priority: DefaultFocusEvaluationPriority) -> some View](./view/defaultfocus%28_,_,priority%29.md)
   Defines a region of the window in which default focus is evaluated by assigning a value to a given focus state binding.
 
 

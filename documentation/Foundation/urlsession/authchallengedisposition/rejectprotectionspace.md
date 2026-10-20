@@ -1,7 +1,8 @@
 # URLSession.AuthChallengeDisposition.rejectProtectionSpace
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reject this challenge, and call the authentication delegate method again with the next authentication protection space. The provided credential parameter is ignored.
 
@@ -20,19 +21,24 @@ Reject this challenge, and call the authentication delegate method again with th
 case rejectProtectionSpace
 ```
 
+```c
+NSURLSessionAuthChallengeRejectProtectionSpace
+```
+
 #### Discussion
 
-The [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](urlsession/authchallengedisposition/rejectprotectionspace.md) disposition is only appropriate in fairly unusual situations. For example, a Windows server might use both [`NSURLAuthenticationMethodNegotiate`](nsurlauthenticationmethodnegotiate.md) and [`NSURLAuthenticationMethodNTLM`](nsurlauthenticationmethodntlm.md). If your app can only handle NTLM, you would want to reject the Negotiate challenge, in order to then receive the queued NTLM challenge.
+The [`URLSession.AuthChallengeDisposition.rejectProtectionSpace`](./rejectprotectionspace.md) disposition is only appropriate in fairly unusual situations. For example, a Windows server might use both [`NSURLAuthenticationMethodNegotiate`](../../nsurlauthenticationmethodnegotiate.md) and [`NSURLAuthenticationMethodNTLM`](../../nsurlauthenticationmethodntlm.md). If your app can only handle NTLM, you would want to reject the Negotiate challenge, in order to then receive the queued NTLM challenge.
 
-However, most apps won’t face this scenario, and if you cannot provide a credential for a certain authentication method, you should usually fall back to the [`URLSession.AuthChallengeDisposition.performDefaultHandling`](urlsession/authchallengedisposition/performdefaulthandling.md) disposition instead.
+However, most apps won’t face this scenario, and if you cannot provide a credential for a certain authentication method, you should usually fall back to the [`URLSession.AuthChallengeDisposition.performDefaultHandling`](./performdefaulthandling.md) disposition instead.
 
 ## See Also
 
-- [URLSession.AuthChallengeDisposition.useCredential](urlsession/authchallengedisposition/usecredential.md)
+### Constants
+- [URLSession.AuthChallengeDisposition.useCredential](./usecredential.md)
   Use the specified credential, which may be `nil`.
-- [URLSession.AuthChallengeDisposition.performDefaultHandling](urlsession/authchallengedisposition/performdefaulthandling.md)
+- [URLSession.AuthChallengeDisposition.performDefaultHandling](./performdefaulthandling.md)
   Use the default handling for the challenge as though this delegate method were not implemented. The provided credential parameter is ignored.
-- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](urlsession/authchallengedisposition/cancelauthenticationchallenge.md)
+- [URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge](./cancelauthenticationchallenge.md)
   Cancel the entire request. The provided credential parameter is ignored.
 
 

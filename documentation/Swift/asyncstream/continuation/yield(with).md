@@ -1,7 +1,8 @@
 # yield(with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the task awaiting the next iteration point by having it return normally from its suspension point with a given result’s success value.
 
@@ -37,11 +38,12 @@ If you call this method repeatedly, each call returns immediately, without block
 
 ## See Also
 
-- [func yield(sending Element) -> AsyncStream<Element>.Continuation.YieldResult](asyncstream/continuation/yield(_:).md)
+### Producing Elements
+- [func yield(sending Element) -> AsyncStream<Element>.Continuation.YieldResult](./yield%28_%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point with a given element.
-- [func yield() -> AsyncStream<Element>.Continuation.YieldResult](asyncstream/continuation/yield.md)
+- [func yield() -> AsyncStream<Element>.Continuation.YieldResult](./yield%28%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point.
-- [AsyncStream.Continuation.YieldResult](asyncstream/continuation/yieldresult.md)
+- [AsyncStream.Continuation.YieldResult](./yieldresult.md)
   A type that indicates the result of yielding a value to a client, by way of the continuation.
 
 

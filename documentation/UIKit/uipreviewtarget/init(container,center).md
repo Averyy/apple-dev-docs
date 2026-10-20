@@ -1,7 +1,8 @@
 # init(container:center:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview target object using the specified container view and center point.
 
@@ -18,6 +19,10 @@ Creates a preview target object using the specified container view and center po
 convenience init(container: UIView, center: CGPoint)
 ```
 
+```objc
+- (instancetype) initWithContainer:(UIView *) container center:(CGPoint) center;
+```
+
 #### Return Value
 
 A new preview target object with the specified container and configuration data.
@@ -29,7 +34,8 @@ A new preview target object with the specified container and configuration data.
 
 ## See Also
 
-- [init(container: UIView, center: CGPoint, transform: CGAffineTransform)](uipreviewtarget/init(container:center:transform:).md)
+### Creating a preview target object
+- [init(container: UIView, center: CGPoint, transform: CGAffineTransform)](./init%28container,center,transform%29.md)
   Creates a preview target object using the specified container view and configuration details.
 
 

@@ -1,7 +1,8 @@
 # IONaturalMemoryCursor
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the natural byte orientation for the CPU.
 
@@ -10,7 +11,7 @@ An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the natu
 
 ## Declaration
 
-```swift
+```cpp
 class IONaturalMemoryCursor : IOMemoryCursor
 ```
 
@@ -21,36 +22,37 @@ The IONaturalMemoryCursor would be used when it is too difficult to safely descr
 ## Topics
 
 ### Miscellaneous
-- [getPhysicalSegments](ionaturalmemorycursor/1813076-getphysicalsegments.md)
+- [getPhysicalSegments](./ionaturalmemorycursor/api-1813076-getphysicalsegments.md)
   Generates a CPU natural physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](ionaturalmemorycursor/1813089-initwithspecification.md)
+- [initWithSpecification](./ionaturalmemorycursor/api-1813089-initwithspecification.md)
   Primary initializer for the IONaturalMemoryCursor class.
-- [outputSegment](ionaturalmemorycursor/1813100-outputsegment.md)
+- [outputSegment](./ionaturalmemorycursor/api-1813100-outputsegment.md)
   Outputs the given segment into the output segments array in natural byte order.
-- [withSpecification](ionaturalmemorycursor/1813112-withspecification.md)
+- [withSpecification](./ionaturalmemorycursor/api-1813112-withspecification.md)
   Creates and initializes an IONaturalMemoryCursor in one operation.
 ### Constants
-- [Miscellaneous Defines](ionaturalmemorycursor/miscellaneous_defines.md)
+- [Miscellaneous Defines](./ionaturalmemorycursor/miscellaneous_defines.md)
 ### Instance Methods
-- [- getMetaClass](ionaturalmemorycursor/1401014-getmetaclass.md)
-- [- getPhysicalSegments](ionaturalmemorycursor/1400988-getphysicalsegments.md)
-- [- initWithSpecification](ionaturalmemorycursor/1401018-initwithspecification.md)
+- [- getMetaClass](./ionaturalmemorycursor/api-1401014-getmetaclass.md)
+- [- getPhysicalSegments](./ionaturalmemorycursor/api-1400988-getphysicalsegments.md)
+- [- initWithSpecification](./ionaturalmemorycursor/api-1401018-initwithspecification.md)
 ### Type Methods
-- [+ outputSegment](ionaturalmemorycursor/1400992-outputsegment.md)
-- [+ withSpecification](ionaturalmemorycursor/1400990-withspecification.md)
+- [+ outputSegment](./ionaturalmemorycursor/api-1400992-outputsegment.md)
+- [+ withSpecification](./ionaturalmemorycursor/api-1400990-withspecification.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOMemoryCursor](iomemorycursor.md)
+- [IOMemoryCursor](./iomemorycursor.md)
 
 ## See Also
 
-- [IOBigMemoryCursor](iobigmemorycursor.md)
+### Cursors
+- [IOBigMemoryCursor](./iobigmemorycursor.md)
   An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the big endian byte order.
-- [IOLittleMemoryCursor](iolittlememorycursor.md)
+- [IOLittleMemoryCursor](./iolittlememorycursor.md)
   An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the little endian byte order.
-- [IOMemoryCursor](iomemorycursor.md)
+- [IOMemoryCursor](./iomemorycursor.md)
   A mechanism to convert memory references to physical addresses.
 
 

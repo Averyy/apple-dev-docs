@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first Unicode scalar value if the string is nonempty.
 

@@ -1,17 +1,22 @@
 # item(withTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first menu item in the menu with the specified tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func item(withTag tag: Int) -> NSMenuItem?
+```
+
+```objc
+- (NSMenuItem *) itemWithTag:(NSInteger) tag;
 ```
 
 #### Return Value
@@ -24,15 +29,17 @@ The found menu item (an object conforming to the NSMenuItem protocol) or `nil` i
 
 ## See Also
 
-- [func indexOfItem(withTag: Int) -> Int](nsmenu/indexofitem(withtag:).md)
+### Related Documentation
+- [func indexOfItem(withTag: Int) -> Int](./indexofitem%28withtag%29.md)
   Returns the index of the first menu item in the menu identified by a tag.
-- [func item(withTitle: String) -> NSMenuItem?](nsmenu/item(withtitle:).md)
+### Finding Menu Items
+- [func item(withTitle: String) -> NSMenuItem?](./item%28withtitle%29.md)
   Returns the first menu item in the menu with a specified title.
-- [func item(at: Int) -> NSMenuItem?](nsmenu/item(at:).md)
+- [func item(at: Int) -> NSMenuItem?](./item%28at%29.md)
   Returns the menu item at a specific location of the menu.
-- [var numberOfItems: Int](nsmenu/numberofitems.md)
+- [var numberOfItems: Int](./numberofitems.md)
   The number of menu items in the menu, including separator items.
-- [var items: [NSMenuItem]](nsmenu/items.md)
+- [var items: [NSMenuItem]](./items.md)
   An array containing the menu items in the menu.
 
 

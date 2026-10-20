@@ -1,7 +1,8 @@
 # init(_:selection:in:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects multiple dates on or after some start date.
 
@@ -18,6 +19,50 @@ Creates an instance that selects multiple dates on or after some start date.
 nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeUpTo<Date>)
+```
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>, in bounds: Range<Date>)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeUpTo<Date>)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>, in bounds: Range<Date>)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeUpTo<Date>) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Set<DateComponents>>, in bounds: Range<Date>) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: The localized title of `self`, describing its purpose.
@@ -26,7 +71,8 @@ nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Se
 
 ## See Also
 
-- [init(selection:in:label:)](multidatepicker/init(selection:in:label:).md)
+### Picking dates in a range
+- [init(selection:in:label:)](./init%28selection,in,label%29.md)
   Creates an instance that selects multiple dates on or after some start date.
 
 

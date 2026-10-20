@@ -1,7 +1,8 @@
 # IOFWCommand
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 Base class for FireWire commands
 
@@ -10,49 +11,49 @@ Base class for FireWire commands
 
 ## Declaration
 
-```swift
+```cpp
 class IOFWCommand : IOCommand
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [insertAfter](iofwcommand/1813158-insertafter.md)
-- [removeFromQ](iofwcommand/1813168-removefromq.md)
-- [setHead](iofwcommand/1813176-sethead.md)
+- [insertAfter](./iofwcommand/api-1813158-insertafter.md)
+- [removeFromQ](./iofwcommand/api-1813168-removefromq.md)
+- [setHead](./iofwcommand/api-1813176-sethead.md)
 ### DataTypes
-- [MemberVariables](iofwcommand/membervariables.md)
+- [MemberVariables](./iofwcommand/membervariables.md)
 ### Instance Variables
-- [fMembers](iofwcommand/fmembers.md)
+- [fMembers](./iofwcommand/fmembers.md)
 ### Instance Methods
-- [- Busy](iofwcommand/1563858-busy.md)
-- [- cancel](iofwcommand/1563884-cancel.md)
-- [- cancelOnReset](iofwcommand/1563868-cancelonreset.md)
-- [- checkProgress](iofwcommand/1563804-checkprogress.md)
-- [- complete](iofwcommand/1563833-complete.md)
-- [- execute](iofwcommand/1563759-execute.md)
-- [- free](iofwcommand/1563866-free.md)
-- [- getDeadline](iofwcommand/1563900-getdeadline.md)
-- [- getFWIMRefCon](iofwcommand/1563799-getfwimrefcon.md)
-- [- getMetaClass](iofwcommand/1563824-getmetaclass.md)
-- [- getNext](iofwcommand/1563845-getnext.md)
-- [- getPrevious](iofwcommand/1563897-getprevious.md)
-- [- getStatus](iofwcommand/1563903-getstatus.md)
-- [- initWithController](iofwcommand/1563761-initwithcontroller.md)
-- [- insertAfter](iofwcommand/1563844-insertafter.md)
-- [- removeFromQ](iofwcommand/1563778-removefromq.md)
-- [- setFWIMRefCon](iofwcommand/1563792-setfwimrefcon.md)
-- [- setFlush](iofwcommand/1563851-setflush.md)
-- [- setHead](iofwcommand/1563877-sethead.md)
-- [- setTimeout](iofwcommand/1563879-settimeout.md)
-- [- startExecution](iofwcommand/1563901-startexecution.md)
-- [- submit](iofwcommand/1563875-submit.md)
-- [- updateTimer](iofwcommand/1563764-updatetimer.md)
+- [- Busy](./iofwcommand/api-1563858-busy.md)
+- [- cancel](./iofwcommand/api-1563884-cancel.md)
+- [- cancelOnReset](./iofwcommand/api-1563868-cancelonreset.md)
+- [- checkProgress](./iofwcommand/api-1563804-checkprogress.md)
+- [- complete](./iofwcommand/api-1563833-complete.md)
+- [- execute](./iofwcommand/api-1563759-execute.md)
+- [- free](./iofwcommand/api-1563866-free.md)
+- [- getDeadline](./iofwcommand/api-1563900-getdeadline.md)
+- [- getFWIMRefCon](./iofwcommand/api-1563799-getfwimrefcon.md)
+- [- getMetaClass](./iofwcommand/api-1563824-getmetaclass.md)
+- [- getNext](./iofwcommand/api-1563845-getnext.md)
+- [- getPrevious](./iofwcommand/api-1563897-getprevious.md)
+- [- getStatus](./iofwcommand/api-1563903-getstatus.md)
+- [- initWithController](./iofwcommand/api-1563761-initwithcontroller.md)
+- [- insertAfter](./iofwcommand/api-1563844-insertafter.md)
+- [- removeFromQ](./iofwcommand/api-1563778-removefromq.md)
+- [- setFWIMRefCon](./iofwcommand/api-1563792-setfwimrefcon.md)
+- [- setFlush](./iofwcommand/api-1563851-setflush.md)
+- [- setHead](./iofwcommand/api-1563877-sethead.md)
+- [- setTimeout](./iofwcommand/api-1563879-settimeout.md)
+- [- startExecution](./iofwcommand/api-1563901-startexecution.md)
+- [- submit](./iofwcommand/api-1563875-submit.md)
+- [- updateTimer](./iofwcommand/api-1563764-updatetimer.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOCommand](iocommand.md)
+- [IOCommand](./iocommand.md)
 
 
 ---

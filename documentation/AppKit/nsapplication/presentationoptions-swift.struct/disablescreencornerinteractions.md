@@ -1,7 +1,8 @@
 # disableScreenCornerInteractions
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Disable screen corner interactions when the application is frontmost.
 
@@ -12,6 +13,10 @@ Disable screen corner interactions when the application is frontmost.
 
 ```swift
 static var disableScreenCornerInteractions: NSApplication.PresentationOptions { get }
+```
+
+```c
+NSApplicationPresentationDisableScreenCornerInteractions
 ```
 
 #### Discussion

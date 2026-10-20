@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an in-progress search operation.
 
@@ -20,13 +21,18 @@ Cancels an in-progress search operation.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
 If a search operation is in progress, this method attempts to cancel it. If cancellation is successful, the search completer doesn’t notify its delegate. If no search operation is in progress, this method does nothing.
 
 ## See Also
 
-- [var isSearching: Bool](mklocalsearchcompleter/issearching.md)
+### Canceling the query
+- [var isSearching: Bool](./issearching.md)
   A Boolean value that indicates whether a search operation is in progress.
 
 

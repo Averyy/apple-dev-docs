@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of this collection interval.
 
@@ -19,7 +20,8 @@ let duration: Measurement<UnitDuration>
 
 ## See Also
 
-- [let states: [MetricManager.ReportedState]](metricreport/intervalentry/states.md)
+### Interval details
+- [let states: [MetricManager.ReportedState]](./states.md)
   All states that were active during this collection interval.
 
 

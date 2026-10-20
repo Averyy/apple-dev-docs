@@ -1,7 +1,8 @@
 # HKMetadataKeyAverageMETs
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the average Metabolic Equivalent of Task (METs) during a workout.
 
@@ -19,15 +20,20 @@ A key that indicates the average Metabolic Equivalent of Task (METs) during a wo
 let HKMetadataKeyAverageMETs: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAverageMETs;
+```
+
 #### Discussion
 
-Set this key on a workout. Set its value to an [`HKQuantity`](hkquantity.md) object with a METs unit (for example, kcal/(kg*hr)). For more information on creating complex units, see [`HKUnit`](hkunit.md).
+Set this key on a workout. Set its value to an [`HKQuantity`](./hkquantity.md) object with a METs unit (for example, kcal/(kg*hr)). For more information on creating complex units, see [`HKUnit`](./hkunit.md).
 
 The value represents the average intensity over the entire workout’s duration.
 
 ## See Also
 
-- [let HKMetadataKeyPhysicalEffortEstimationType: String](hkmetadatakeyphysicaleffortestimationtype.md)
+### Intensity
+- [let HKMetadataKeyPhysicalEffortEstimationType: String](./hkmetadatakeyphysicaleffortestimationtype.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # CTFrameProgression.rightToLeft
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Lines stack right to left for vertical text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Lines stack right to left for vertical text.
 case rightToLeft
 ```
 
+```c
+kCTFrameProgressionRightToLeft
+```
+
 ## See Also
 
-- [CTFrameProgression.topToBottom](ctframeprogression/toptobottom.md)
+### Constants
+- [CTFrameProgression.topToBottom](./toptobottom.md)
   Lines stack top to bottom for horizontal text.
-- [CTFrameProgression.leftToRight](ctframeprogression/lefttoright.md)
+- [CTFrameProgression.leftToRight](./lefttoright.md)
   Lines stack left to right for vertical text.
 
 

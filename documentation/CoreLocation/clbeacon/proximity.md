@@ -1,7 +1,8 @@
 # proximity
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relative distance to the beacon.
 
@@ -17,17 +18,22 @@ The relative distance to the beacon.
 var proximity: CLProximity { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLProximity proximity;
+```
+
 #### Discussion
 
 The value in this property gives a general sense of the relative distance to the beacon. Use it to quickly identify beacons that are nearer to the user rather than farther away.
 
 ## See Also
 
-- [enum CLProximity](clproximity.md)
+### Determining the distance to the beacon
+- [enum CLProximity](../clproximity.md)
   Constants that reflect the relative distance to a beacon.
-- [var accuracy: CLLocationAccuracy](clbeacon/accuracy.md)
+- [var accuracy: CLLocationAccuracy](./accuracy.md)
   The accuracy of the proximity value, measured in meters from the beacon.
-- [var rssi: Int](clbeacon/rssi.md)
+- [var rssi: Int](./rssi.md)
   The received signal strength of the beacon, measured in decibels.
 
 

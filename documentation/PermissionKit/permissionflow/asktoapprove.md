@@ -1,7 +1,8 @@
 # PermissionFlow.askToApprove
 
 **Framework**: PermissionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Goes directly to the Messages compose sheet for the “Ask to Approve” flow.
 

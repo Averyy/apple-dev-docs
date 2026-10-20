@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialAssertion
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for establishing a public key-based assertion.
 
@@ -19,44 +20,49 @@ An interface for establishing a public key-based assertion.
 protocol ASAuthorizationPublicKeyCredentialAssertion : ASPublicKeyCredential
 ```
 
+```objc
+@protocol ASAuthorizationPublicKeyCredentialAssertion <ASPublicKeyCredential>
+```
+
 #### Overview
 
-Both [`ASAuthorizationSecurityKeyPublicKeyCredentialAssertion`](asauthorizationsecuritykeypublickeycredentialassertion.md) and [`ASAuthorizationPlatformPublicKeyCredentialAssertion`](asauthorizationplatformpublickeycredentialassertion.md) adhere to this interface.
+Both [`ASAuthorizationSecurityKeyPublicKeyCredentialAssertion`](./asauthorizationsecuritykeypublickeycredentialassertion.md) and [`ASAuthorizationPlatformPublicKeyCredentialAssertion`](./asauthorizationplatformpublickeycredentialassertion.md) adhere to this interface.
 
 ## Topics
 
 ### Getting the properties
-- [var signature: Data!](asauthorizationpublickeycredentialassertion/signature.md)
+- [var signature: Data!](./asauthorizationpublickeycredentialassertion/signature.md)
   The signature for the assertion.
-- [var userID: Data!](asauthorizationpublickeycredentialassertion/userid.md)
+- [var userID: Data!](./asauthorizationpublickeycredentialassertion/userid.md)
   A user identifier for the assertion.
-- [var rawAuthenticatorData: Data!](asauthorizationpublickeycredentialassertion/rawauthenticatordata.md)
+- [var rawAuthenticatorData: Data!](./asauthorizationpublickeycredentialassertion/rawauthenticatordata.md)
   A byte sequence that contains additional information about the credential.
 
 ## Relationships
 
 ### Inherits From
-- [ASAuthorizationCredential](asauthorizationcredential.md)
-- [ASPublicKeyCredential](aspublickeycredential.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [ASAuthorizationCredential](./asauthorizationcredential.md)
+- [ASPublicKeyCredential](./aspublickeycredential.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 ### Conforming Types
-- [ASAuthorizationPlatformPublicKeyCredentialAssertion](asauthorizationplatformpublickeycredentialassertion.md)
-- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](asauthorizationsecuritykeypublickeycredentialassertion.md)
+- [ASAuthorizationPlatformPublicKeyCredentialAssertion](./asauthorizationplatformpublickeycredentialassertion.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](./asauthorizationsecuritykeypublickeycredentialassertion.md)
 
 ## See Also
 
-- [class ASAuthorizationPlatformPublicKeyCredentialAssertion](asauthorizationplatformpublickeycredentialassertion.md)
+### Account authentication
+- [class ASAuthorizationPlatformPublicKeyCredentialAssertion](./asauthorizationplatformpublickeycredentialassertion.md)
   A class that represents the platform credential assertion type.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](asauthorizationsecuritykeypublickeycredentialassertion.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertion](./asauthorizationsecuritykeypublickeycredentialassertion.md)
   A class that represents the security key credential assertion type.
-- [protocol ASAuthorizationPublicKeyCredentialAssertionRequest](asauthorizationpublickeycredentialassertionrequest.md)
+- [protocol ASAuthorizationPublicKeyCredentialAssertionRequest](./asauthorizationpublickeycredentialassertionrequest.md)
   An interface for requesting a public key-based credential assertion.
-- [class ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialassertionrequest.md)
+- [class ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./asauthorizationplatformpublickeycredentialassertionrequest.md)
   The concrete assertion request type for platform credentials.
-- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
+- [class ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest](./asauthorizationsecuritykeypublickeycredentialassertionrequest.md)
   A class that defines the assertion request type for security key credentials.
 
 

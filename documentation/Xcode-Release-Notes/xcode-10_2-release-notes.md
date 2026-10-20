@@ -12,7 +12,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ###### New Features
 
-- Xcode now supports downloading using macOS content caching. For information about macOS content caching, see [`About content caching on Mac`](https://developer.apple.comhttps://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac). (12926899)
+- Xcode now supports downloading using macOS content caching. For information about macOS content caching, see [About content caching on Mac](https://support.apple.com/guide/mac-help/about-content-caching-on-mac-mchl9388ba1b/mac). (12926899)
 
 ###### Resolved Issues
 
@@ -55,17 +55,29 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ###### Known Issues
 
-- If you’re building a framework containing Swift code and using `lipo` to create a binary that supports both device and simulator platforms, you must also combine the generated `Framework-Swift.h` headers for each platform to create a header that supports both device and simulator platforms. (48635615) For example, if you’ve built: - `iOS/Framework.framework`
-- `iOS Simulator/Framework.framework` Take:
-- `iOS/Framework.framework/Headers/Framework-Swift.h`
-- `iOS Simulator/Framework.framework/Framework-Swift.h` Create a new:
-- `iOS + iOS Simulator/Framework.framework/Headers/Framework-Swift.h` The contents of the new `Framework-Swift.h` should be: ```objc
-#if TARGET_OS_SIMULATOR
-<contents of original iOS Simulator/Framework.framework/Framework-Swift.h>
-#else
-<contents of original iOS/Framework.framework/Framework-Swift.h>
-#endif
-```
+- If you’re building a framework containing Swift code and using `lipo` to create a binary that supports both device and simulator platforms, you must also combine the generated `Framework-Swift.h` headers for each platform to create a header that supports both device and simulator platforms. (48635615)
+
+  For example, if you’ve built:
+
+  - `iOS/Framework.framework`
+  - `iOS Simulator/Framework.framework`
+
+    Take:
+  - `iOS/Framework.framework/Headers/Framework-Swift.h`
+  - `iOS Simulator/Framework.framework/Framework-Swift.h`
+
+    Create a new:
+  - `iOS + iOS Simulator/Framework.framework/Headers/Framework-Swift.h`
+
+  The contents of the new `Framework-Swift.h` should be:
+
+  ```objc
+  #if TARGET_OS_SIMULATOR
+  <contents of original iOS Simulator/Framework.framework/Framework-Swift.h>
+  #else
+  <contents of original iOS/Framework.framework/Framework-Swift.h>
+  #endif
+  ```
 
 ###### Resolved Issues
 
@@ -86,7 +98,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ###### New Features
 
-- [`UIStackView`](https://developer.apple.com/documentation/uikit/uistackview) properties are now presented in the view debugger object inspector. (36351873)
+- [`UIStackView`](../UIKit/uistackview.md) properties are now presented in the view debugger object inspector. (36351873)
 - Xcode can now automatically capture a memory graph if a memory resource exception is encountered while debugging. You can enable memory graph captures in the Diagnostics tab of the scheme’s run settings. (45285932)
 - On iOS and watchOS, Xcode shows the memory limit for running apps in the Memory Report as you approach the limit. Use Instruments and Xcode Memory Debugging to optimize your app to have the smallest possible memory footprint. (40556954)
 - The view debugger presents a more compact 3D layout. (43523921)
@@ -112,7 +124,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 ###### New Features
 
 - Double-clicking in a storyboard no longer zooms. Instead, zoom using a pinch gesture on the trackpad or hold Option and scroll. (29139870)
-- Interface Builder for Apple TV supports user interface elements exposed by the [`TVUIKit`](https://developer.apple.com/documentation/tvuikit) framework. (35868606)
+- Interface Builder for Apple TV supports user interface elements exposed by the [TVUIKit](../TVUIKit/TVUIKit.md) framework. (35868606)
 
 ###### Resolved Issues
 
@@ -121,8 +133,8 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 - Actions in Swift files are now correctly parsed by Interface Builder when annotated with `@objc @IBAction`. (25465675)
 - Images with an alignment rectangle specified in the asset catalog correctly render in the Interface Builder canvas. (46595020)
 - Improved the intrinsic size of images in 2x and 3x slots in the Interface Builder canvas if the file name inside the asset catalog doesn’t end in `@2x` or `@3x`. (44759471)
-- Changes to [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview) made using the inspector are now reliably reflected in the canvas without a delay. (30196881)
-- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of [`NSCell`](https://developer.apple.com/documentation/appkit/nscell). (24421623)
+- Changes to [`NSImageView`](../AppKit/nsimageview.md) made using the inspector are now reliably reflected in the canvas without a delay. (30196881)
+- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of [`NSCell`](../AppKit/nscell.md). (24421623)
 - Resolved an issue that caused images to display as question marks in storyboards. (42475635)
 - Images rendered in the Interface Builder canvas render with the scale factor matching the chosen device. (18703159)
 - Images marked with the template rendering mode in the asset catalog correctly render in the Interface Builder canvas. (29049562)
@@ -134,7 +146,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 - Swift libraries are now found in the `dyld` cache when the main project isn’t written in Swift. (48385698)
 - Resolved an issue that caused linker errors to display in the issue navigator as “Linker command failed with exit code 1” rather than displaying the actual error message. (39141740)
 
-##### Lldb Debugger
+##### LLDB Debugger
 
 ###### New Features
 
@@ -166,7 +178,9 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ###### New Features
 
-- Playgrounds now perform memory safety checks at runtime. Code that violates exclusive access to memory traps with the diagnostic message: “Simultaneous accesses to […], but modification requires exclusive access.” ([`SR-8126`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-8126)) (33820622) For more information, see [`Memory Safety`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/MemorySafety.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book).
+- Playgrounds now perform memory safety checks at runtime. Code that violates exclusive access to memory traps with the diagnostic message: “Simultaneous accesses to […], but modification requires exclusive access.” ([SR-8126](https://bugs.swift.org/browse/SR-8126)) (33820622)
+
+  For more information, see [Memory Safety](https://docs.swift.org/swift-book/LanguageGuide/MemorySafety.html) in [The Swift Programming Language](https://docs.swift.org/swift-book).
 
 ###### Resolved Issues
 
@@ -210,11 +224,11 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 - The “Fold Methods & Functions” editor menu item folds computed properties in Swift. (43428274)
 - Code completion offers `get`, `set`, `didSet`, and `willSet` as possible completions inside computed property declarations. (20957182)
-- In the context of an optional enumeration type, code completion suggests the enumeration’s cases in addition to [`Optional.none`](https://developer.apple.com/documentation/swift/optional/none) and [`Optional.some(_:)`](https://developer.apple.com/documentation/swift/optional/some(_:)). (23549753)
+- In the context of an optional enumeration type, code completion suggests the enumeration’s cases in addition to [`Optional.none`](../Swift/optional/none.md) and [`Optional.some(_:)`](../Swift/optional/some%28_%29.md). (23549753)
 
 ###### Resolved Issues
 
-- Code completion doesn’t suggest duplicated delegate method names when overriding [`UITableViewController`](https://developer.apple.com/documentation/uikit/uitableviewcontroller) methods. (21161476)
+- Code completion doesn’t suggest duplicated delegate method names when overriding [`UITableViewController`](../UIKit/uitableviewcontroller.md) methods. (21161476)
 - Fix-its that reference different files won’t apply to the current file. (31371021)
 - Text being dragged is shown as a transparent image. (31890166)
 - The source editor now uses the system accent color for placeholders. (32307338)
@@ -238,7 +252,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 
 ##### Swift
 
-See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_2.md).
+See [Swift 5 Release Notes for Xcode 10.2](./swift-5-release-notes-for-xcode-10_2.md).
 
 ##### Testing
 
@@ -253,12 +267,14 @@ See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_
 - Swift initializers appear in the coverage report with no name. (47467864)
 - Recording doesn’t work from Clones when Parallelization is on. (43699252)
 - The wrong test host app is chosen for a test target when there are multiple test host targets with the same `PRODUCT_NAME`. (46475115)
-- Profiling tests don’t behave correctly when test parallelization is enabled. (44836817) **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme > Test > Info, selecting Options next to your test target, and disabling “Execute in parallel”.
+- Profiling tests don’t behave correctly when test parallelization is enabled. (44836817)
+
+  **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme > Test > Info, selecting Options next to your test target, and disabling “Execute in parallel”.
 
 ###### Resolved Issues
 
 - Resolved an issue that caused methods in a Swift source file to be named “Definition at **:**” in the coverage report. (46432533)
-- [`XCUIScreen`](https://developer.apple.com/documentation/xcuiautomation/xcuiscreen) now properly implements `isEqual:` and `hash`. (32179407)
+- [`XCUIScreen`](../XCUIAutomation/xcuiscreen.md) now properly implements `isEqual:` and `hash`. (32179407)
 - When clicking the source editor gem for a test method or class that’s present in more than one test target, or for a test method that’s inherited by subclasses, Xcode now shows a menu that allows choosing an individual target or class (or all) to run the selected tests in. (45975871)
 - Resolved an issue that could prevent expanding a file in the coverage report view. (44458167)
 - If a test bundle can’t be loaded during testing for some reason—such as a runtime linking failure—Xcode now reports a descriptive error message that describes the cause of the failure. This failure is present in the test activity log and appears in `stdout` if you’re using `xcodebuild`. The error is also present in the structured logs contained in the result bundle. (45242409)
@@ -269,23 +285,24 @@ See [`Swift 5 Release Notes for Xcode 10.2`](swift-5-release-notes-for-xcode-10_
 - Resolved an issue that could cause incorrect code coverage for a file included in multiple targets. (40409346)
 - Crash reports collected during testing no longer omit important fields such as the termination reason and description. (44405884)
 - Headers that aren’t explicitly included in a target’s Headers Build Phase no longer appear in the target’s entry in the coverage report. This resolves an issue where unwanted headers could appear in the coverage report for a target—such as from a linked framework or library. If you notice that a coverage report is missing headers, make sure they’re included in the corresponding target’s Headers Build Phase. (36187447)
-- Projects with multiple test targets that each contain a test class that inherits from a shared [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) subclass no longer show nonexistent runtime (“rT”) tests for test methods from other targets. (46042417)
+- Projects with multiple test targets that each contain a test class that inherits from a shared [`XCTestCase`](../XCTest/xctestcase.md) subclass no longer show nonexistent runtime (“rT”) tests for test methods from other targets. (46042417)
 
 ## Topics
 
 ### Release Notes
-- [Swift 5 Release Notes for Xcode 10.2](swift-5-release-notes-for-xcode-10_2.md)
+- [Swift 5 Release Notes for Xcode 10.2](./swift-5-release-notes-for-xcode-10_2.md)
   Update your code to use new language features and test your apps against changes.
 
 ## See Also
 
-- [Xcode 10.3 Release Notes](xcode-10_3-release-notes.md)
+### Xcode 10
+- [Xcode 10.3 Release Notes](./xcode-10_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.2.1 Release Notes](xcode-10_2_1-release-notes.md)
+- [Xcode 10.2.1 Release Notes](./xcode-10_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.1 Release Notes](xcode-10_1-release-notes.md)
+- [Xcode 10.1 Release Notes](./xcode-10_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10 Release Notes](xcode-10-release-notes.md)
+- [Xcode 10 Release Notes](./xcode-10-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

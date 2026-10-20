@@ -1,18 +1,19 @@
 # init(target_desc:weights:bias:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new multihead attention projection parameters structure from the specified parameters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,7 +29,8 @@ init(target_desc: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor, bias: B
 
 ## See Also
 
-- [init()](bnnsmhaprojectionparameters/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new multihead attention projection parameters structure.
 
 

@@ -1,7 +1,8 @@
 # download(_:didReceivePlaceholderURL:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.2+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL, completionHandler: @escaping @MainActor @Sendable () -> Void)
+```
+
+```swift
 optional func download(_ download: WKDownload, didReceivePlaceholderURL url: URL) async
+```
+
+```objc
+- (void) download:(WKDownload *) download didReceivePlaceholderURL:(NSURL *) url completionHandler:(void (^)(void)) completionHandler;
 ```
 
 

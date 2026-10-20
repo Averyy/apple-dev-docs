@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,8 +15,9 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [calloutEntry](iotimereventsource/calloutentry.md)
-- [abstime](iotimereventsource/abstime.md)
+### Instance Variables
+- [calloutEntry](./calloutentry.md)
+- [abstime](./abstime.md)
 
 
 ---

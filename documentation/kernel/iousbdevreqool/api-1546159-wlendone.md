@@ -1,7 +1,8 @@
 # wLenDone
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of data bytes that the system actually transferred.
 
@@ -10,25 +11,26 @@ The number of data bytes that the system actually transferred.
 
 ## Declaration
 
-```swift
+```c
 UInt32 wLenDone;
 ```
 
 ## See Also
 
-- [bmRequestType](iousbdevreqool/1546195-bmrequesttype.md)
+### Getting the Properties
+- [bmRequestType](./api-1546195-bmrequesttype.md)
   The type of the request.
-- [bRequest](iousbdevreqool/1546179-brequest.md)
+- [bRequest](./api-1546179-brequest.md)
   The request code.
-- [wValue](iousbdevreqool/1546508-wvalue.md)
+- [wValue](./api-1546508-wvalue.md)
   The 16-bit parameter for the request.
-- [wIndex](iousbdevreqool/1546401-windex.md)
+- [wIndex](./api-1546401-windex.md)
   The 16-bit parameter for the request.
-- [wLength](iousbdevreqool/1545970-wlength.md)
+- [wLength](./api-1545970-wlength.md)
   The length of the data part of the request.
-- [pData](iousbdevreqool/1546153-pdata.md)
+- [pData](./api-1546153-pdata.md)
   The pointer to the data for the request.
-- [pipeRef](iousbdevreqool/1546299-piperef.md)
+- [pipeRef](./api-1546299-piperef.md)
   A reference to the USB pipe.
 
 

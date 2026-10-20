@@ -1,7 +1,8 @@
 # GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the leaderboard of the Game Center leaderboard version.
 
@@ -10,7 +11,7 @@ The data that describes the leaderboard of the Game Center leaderboard version.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboar
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard.Data](gamecenterleaderboardversionv2createrequest/data-data.dictionary/relationships-data.dictionary/leaderboard-data.dictionary/data-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2CreateRequest.Data.Relationships.Leaderboard.Data](./leaderboard-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

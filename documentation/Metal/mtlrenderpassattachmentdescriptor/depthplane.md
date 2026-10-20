@@ -1,7 +1,8 @@
 # depthPlane
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth plane of the texture used for rendering to the attachment.
 
@@ -10,13 +11,17 @@ The depth plane of the texture used for rendering to the attachment.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var depthPlane: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger depthPlane;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ The default value is `0`.
 
 ## See Also
 
-- [var texture: (any MTLTexture)?](mtlrenderpassattachmentdescriptor/texture.md)
+### Specifying the texture for the attachment
+- [var texture: (any MTLTexture)?](./texture.md)
   The texture object associated with this attachment.
-- [var level: Int](mtlrenderpassattachmentdescriptor/level.md)
+- [var level: Int](./level.md)
   The mipmap level of the texture used for rendering to the attachment.
-- [var slice: Int](mtlrenderpassattachmentdescriptor/slice.md)
+- [var slice: Int](./slice.md)
   The slice of the texture used for rendering to the attachment.
 
 

@@ -1,7 +1,8 @@
 # NSColorRenderingIntent.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the default rendering intent for the graphics context.
 
@@ -14,15 +15,20 @@ Use the default rendering intent for the graphics context.
 case `default`
 ```
 
+```c
+NSColorRenderingIntentDefault
+```
+
 ## See Also
 
-- [NSColorRenderingIntent.absoluteColorimetric](nscolorrenderingintent/absolutecolorimetric.md)
+### Constants
+- [NSColorRenderingIntent.absoluteColorimetric](./absolutecolorimetric.md)
   Map colors outside of the gamut of the output device to the closest possible match inside the gamut of the output device.
-- [NSColorRenderingIntent.relativeColorimetric](nscolorrenderingintent/relativecolorimetric.md)
+- [NSColorRenderingIntent.relativeColorimetric](./relativecolorimetric.md)
   Map colors outside of the gamut of the output device to the closest possible match inside the gamut of the output device.
-- [NSColorRenderingIntent.perceptual](nscolorrenderingintent/perceptual.md)
+- [NSColorRenderingIntent.perceptual](./perceptual.md)
   Preserve the visual relationship between colors by compressing the gamut of the graphics context to fit inside the gamut of the output device.
-- [NSColorRenderingIntent.saturation](nscolorrenderingintent/saturation.md)
+- [NSColorRenderingIntent.saturation](./saturation.md)
   Preserve the relative saturation value of the colors when converting into the gamut of the output device.
 
 

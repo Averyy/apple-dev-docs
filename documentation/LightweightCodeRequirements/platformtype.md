@@ -1,7 +1,8 @@
 # PlatformType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constraint that tests whether a code file or running process targets a given platform.
 
@@ -22,62 +23,63 @@ struct PlatformType
 
 #### Overview
 
-For [`ProcessCodeRequirement`](processcoderequirement.md) and [`LaunchCodeRequirement`](launchcoderequirement.md) this constraint matches the platform type of the process  as known to the kernel. For [`OnDiskCodeRequirement`](ondiskcoderequirement.md) this constraint matches the platforms supported in Mach-O load commands. The [`OnDiskCodeRequirement`](ondiskcoderequirement.md) will be matched against a SecStaticCodeRef. For this constraint to match, the SecStaticCodeRef must reference a Mach-O. If the SecStaticCodeRef references a specific architecture of a Mach-O then this constraint will be matched against the first LC_BUILD_VERSION or LC_VERSION_MIN_*OS load command in the Mach-O. If the SecStaticCodeRef references a file, then this constraint will match against the load commands in the architecture that is most likely to run on the platform the code is running on.
+For [`ProcessCodeRequirement`](./processcoderequirement.md) and [`LaunchCodeRequirement`](./launchcoderequirement.md) this constraint matches the platform type of the process  as known to the kernel. For [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) this constraint matches the platforms supported in Mach-O load commands. The [`OnDiskCodeRequirement`](./ondiskcoderequirement.md) will be matched against a SecStaticCodeRef. For this constraint to match, the SecStaticCodeRef must reference a Mach-O. If the SecStaticCodeRef references a specific architecture of a Mach-O then this constraint will be matched against the first LC_BUILD_VERSION or LC_VERSION_MIN_*OS load command in the Mach-O. If the SecStaticCodeRef references a file, then this constraint will match against the load commands in the architecture that is most likely to run on the platform the code is running on.
 
 ## Topics
 
 ### Structures
-- [PlatformType.Value](platformtype/value.md)
+- [PlatformType.Value](./platformtype/value.md)
   Supported Platform Types for a process
 ### Initializers
-- [init(PlatformType.Value)](platformtype/init(_:).md)
+- [init(PlatformType.Value)](./platformtype/init%28_%29.md)
   Matches if the process is running as the specified platform type or if the file supports the specified platform type.
-- [init(from: any Decoder) throws](platformtype/init(from:).md)
+- [init(from: any Decoder) throws](./platformtype/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func encode(to: any Encoder) throws](platformtype/encode(to:).md)
+- [func encode(to: any Encoder) throws](./platformtype/encode%28to%29.md)
   Encodes this value into the given encoder
 ### Type Aliases
-- [PlatformType.DataType](platformtype/datatype.md)
+- [PlatformType.DataType](./platformtype/datatype.md)
   The basic input data type of this constraint: `PlatformType.Value`..
-- [PlatformType.OutType](platformtype/outtype.md)
-  The type of this constraint: [`PlatformType`](platformtype.md)
+- [PlatformType.OutType](./platformtype/outtype.md)
+  The type of this constraint: [`PlatformType`](./platformtype.md)
 ### Type Methods
-- [static func `in`(PlatformType.DataType...) -> PlatformType.OutType](platformtype/in(_:)-1ndmu.md)
+- [static func `in`(PlatformType.DataType...) -> PlatformType.OutType](./platformtype/in%28_%29-1ndmu.md)
   Matches if the process is running as any of the specified platform types or if the file supports any of the specified platform types.
-- [static func `in`([PlatformType.DataType]) -> PlatformType.OutType](platformtype/in(_:)-44pc3.md)
+- [static func `in`([PlatformType.DataType]) -> PlatformType.OutType](./platformtype/in%28_%29-44pc3.md)
   Matches if the process is running as any of the specified platform types or if the file supports any of the specified platform types.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CodeDirectoryHash](codedirectoryhash.md)
+### Testing properties of executable code
+- [struct CodeDirectoryHash](./codedirectoryhash.md)
   A constraint that matches the hash of a code directory of a code file or of a running or launching process.
-- [class EntitlementsQuery](entitlementsquery.md)
+- [class EntitlementsQuery](./entitlementsquery.md)
   A constraint that tests values in the entitlements dictionary associated with a process or code file.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct SigningIdentifier](signingidentifier.md)
+- [struct SigningIdentifier](./signingidentifier.md)
   A constraint that tests whether the provided signing identifier matches the signature attached to the code.
-- [struct TeamIdentifier](teamidentifier.md)
+- [struct TeamIdentifier](./teamidentifier.md)
   A constraint that tests whether the provided team identifier matches the team identified in the code signature.
-- [struct ValidationCategory](validationcategory.md)
+- [struct ValidationCategory](./validationcategory.md)
   A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
 

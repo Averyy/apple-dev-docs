@@ -1,7 +1,8 @@
 # init(symbolName:value:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates custom additional route information with a symbol name and value.
 
@@ -14,6 +15,10 @@ Creates custom additional route information with a symbol name and value.
 
 ```swift
 convenience init(symbolName: String, value: String)
+```
+
+```objc
++ (instancetype) routeDetailWithSymbolName:(NSString *) symbolName value:(NSString *) value;
 ```
 
 #### Return Value

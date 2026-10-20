@@ -1,7 +1,8 @@
 # synchronizeTextLayoutManagers(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronizes changes to all nonprimary text layout managers.
 
@@ -11,7 +12,15 @@ Synchronizes changes to all nonprimary text layout managers.
 ## Declaration
 
 ```swift
+func synchronizeTextLayoutManagers(_ completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func synchronizeTextLayoutManagers() async throws
+```
+
+```objc
+- (void) synchronizeTextLayoutManagers:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,15 +33,16 @@ If `completionHandler` is `nil`, this method performs the operation synchronousl
 
 ## See Also
 
-- [var primaryTextLayoutManager: NSTextLayoutManager?](nstextcontentmanager/primarytextlayoutmanager.md)
+### Working with layout managers
+- [var primaryTextLayoutManager: NSTextLayoutManager?](./primarytextlayoutmanager.md)
   The primary text layout manager for this content.
-- [var textLayoutManagers: [NSTextLayoutManager]](nstextcontentmanager/textlayoutmanagers.md)
+- [var textLayoutManagers: [NSTextLayoutManager]](./textlayoutmanagers.md)
   The array of text layout managers associated with this text content manager.
-- [var automaticallySynchronizesTextLayoutManagers: Bool](nstextcontentmanager/automaticallysynchronizestextlayoutmanagers.md)
+- [var automaticallySynchronizesTextLayoutManagers: Bool](./automaticallysynchronizestextlayoutmanagers.md)
   Determines if the framework should automatically synchronize all text layout managers when exiting an editing transaction.
-- [func addTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/addtextlayoutmanager(_:).md)
+- [func addTextLayoutManager(NSTextLayoutManager)](./addtextlayoutmanager%28_%29.md)
   Adds the layout manager you provide to the list of layout managers.
-- [func removeTextLayoutManager(NSTextLayoutManager)](nstextcontentmanager/removetextlayoutmanager(_:).md)
+- [func removeTextLayoutManager(NSTextLayoutManager)](./removetextlayoutmanager%28_%29.md)
   Removes the layout manager you specifiy from the list of layout managers.
 
 

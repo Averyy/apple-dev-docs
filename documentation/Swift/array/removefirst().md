@@ -1,0 +1,69 @@
+# removeFirst()
+
+**Framework**: Swift  
+**Kind**: method  
+**Role**: Instance Method
+
+Removes and returns the first element of the collection.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 13.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+@discardableResult
+mutating func removeFirst() -> Self.Element
+```
+
+#### Return Value
+
+The removed element.
+
+#### Discussion
+
+The collection must not be empty.
+
+```swift
+var bugs = ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig"]
+bugs.removeFirst()
+print(bugs)
+// Prints "["Bumblebee", "Cicada", "Damselfly", "Earwig"]"
+```
+
+Calling this method may invalidate any existing indices for use with this collection.
+
+> **Complexity**: O(*n*), where *n* is the length of the collection.
+
+## See Also
+
+### Removing Elements
+- [func remove(at: Int) -> Element](./remove%28at%29.md)
+  Removes and returns the element at the specified position.
+- [func removeFirst(Int)](./removefirst%28_%29.md)
+  Removes the specified number of elements from the beginning of the collection.
+- [func removeLast() -> Self.Element](./removelast%28%29.md)
+  Removes and returns the last element of the collection.
+- [func removeLast(Int)](./removelast%28_%29.md)
+  Removes the specified number of elements from the end of the collection.
+- [func removeSubrange(Range<Self.Index>)](./removesubrange%28_%29-8may1.md)
+  Removes the elements in the specified subrange from the collection.
+- [func removeSubrange<R>(R)](./removesubrange%28_%29-9twou.md)
+  Removes the elements in the specified subrange from the collection.
+- [func removeAll(where: (Self.Element) throws -> Bool) rethrows](./removeall%28where%29-5k61r.md)
+  Removes all the elements that satisfy the given predicate.
+- [func removeAll(keepingCapacity: Bool)](./removeall%28keepingcapacity%29.md)
+  Removes all elements from the array.
+- [func popLast() -> Self.Element?](./poplast%28%29.md)
+  Removes and returns the last element of the collection.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/array/removefirst())*

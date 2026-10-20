@@ -1,7 +1,8 @@
 # MeshDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines a 3D mesh’s structure and data.
 
@@ -11,7 +12,7 @@ Defines a 3D mesh’s structure and data.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,7 +24,7 @@ struct MeshDescriptor
 
 Create or modify 3D shapes in a RealityKit scene using `MeshDescriptor`, which provides properties and methods to define the vertices, normals, texture coordinates, and other attributes of the mesh.
 
-Apply the mesh to an [`Entity`](entity.md) by creating a [`MeshResource`](meshresource.md) with `MeshResource/generate(from:)-6l1q2`, and create a [`ModelComponent`](modelcomponent.md) with [`init(mesh:materials:)`](modelcomponent/init(mesh:materials:).md).
+Apply the mesh to an [`Entity`](./entity.md) by creating a [`MeshResource`](./meshresource.md) with `MeshResource/generate(from:)-6l1q2`, and create a [`ModelComponent`](./modelcomponent.md) with [`init(mesh:materials:)`](./modelcomponent/init%28mesh,materials%29.md).
 
 Start by creating a basic triangle with a `MeshDescriptor` instance.
 
@@ -38,30 +39,31 @@ descriptor.primitives = .triangles([0, 1, 2])
 ## Topics
 
 ### Initializers
-- [init(name: String)](meshdescriptor/init(name:).md)
+- [init(name: String)](./meshdescriptor/init%28name%29.md)
   Creates an empty mesh descriptor.
 ### Instance Properties
-- [var materials: MeshDescriptor.Materials](meshdescriptor/materials-swift.property.md)
+- [var materials: MeshDescriptor.Materials](./meshdescriptor/materials-swift.property.md)
   Material assignments.
-- [var name: String](meshdescriptor/name.md)
+- [var name: String](./meshdescriptor/name.md)
   The name of the mesh.
-- [var primitives: MeshDescriptor.Primitives?](meshdescriptor/primitives-swift.property.md)
+- [var primitives: MeshDescriptor.Primitives?](./meshdescriptor/primitives-swift.property.md)
   The primitives that make up the mesh.
 ### Enumerations
-- [MeshDescriptor.Materials](meshdescriptor/materials-swift.enum.md)
-- [MeshDescriptor.Primitives](meshdescriptor/primitives-swift.enum.md)
+- [MeshDescriptor.Materials](./meshdescriptor/materials-swift.enum.md)
+- [MeshDescriptor.Primitives](./meshdescriptor/primitives-swift.enum.md)
   Indicates which primitive shape type a mesh applies to its vertex indices.
 
 ## Relationships
 
 ### Conforms To
-- [MeshBufferContainer](meshbuffercontainer.md)
+- [MeshBufferContainer](./meshbuffercontainer.md)
 
 ## See Also
 
-- [MeshDescriptor.Primitives](meshdescriptor/primitives-swift.enum.md)
+### Static meshes
+- [MeshDescriptor.Primitives](./meshdescriptor/primitives-swift.enum.md)
   Indicates which primitive shape type a mesh applies to its vertex indices.
-- [MeshDescriptor.Materials](meshdescriptor/materials-swift.enum.md)
+- [MeshDescriptor.Materials](./meshdescriptor/materials-swift.enum.md)
 
 
 ---

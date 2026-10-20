@@ -1,7 +1,8 @@
 # defaultUnit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var defaultUnit: IntentParameter<Value>.Angle? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitAngle>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Angle?](intentparameter/unit-egg9.md)
-- [IntentParameter.Angle](intentparameter/angle.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-35m3l.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-9lff6.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Angle?](./unit-egg9.md)
+- [IntentParameter.Angle](./angle.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-35m3l.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-9lff6.md)
 
 
 ---

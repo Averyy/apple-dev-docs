@@ -1,7 +1,8 @@
 # Artist
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents an Artist resource.
 
@@ -10,18 +11,18 @@ The data structure that represents an Artist resource.
 
 ## Declaration
 
-```swift
+```
 object Artist
 ```
 
 ## Topics
 
 ### Related objects
-- [object Artist.Name](artist/name-data.dictionary.md)
+- [object Artist.Name](./artist/name-data.dictionary.md)
   A mapping of locale to localized names for the artist.
-- [object Artist.NamePronunciation](artist/namepronunciation-data.dictionary.md)
+- [object Artist.NamePronunciation](./artist/namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
-- [object Artist.RelevanceScore](artist/relevancescore-data.dictionary.md)
+- [object Artist.RelevanceScore](./artist/relevancescore-data.dictionary.md)
   A score representing artist relevance, used to rank artists when surfacing content.
 
 ## Properties
@@ -37,13 +38,14 @@ object Artist
 
 ## See Also
 
-- [object Album](album.md)
+### Objects
+- [object Album](./album.md)
   The data structure that represents an Album resource.
-- [object Song](song.md)
+- [object Song](./song.md)
   The data structure that represents a Song resource.
-- [object PopularityTopChartAlbums](popularitytopchartalbums.md)
+- [object PopularityTopChartAlbums](./popularitytopchartalbums.md)
   The data structure that represents an album popularity chart resource.
-- [object PopularityTopChartSongs](popularitytopchartsongs.md)
+- [object PopularityTopChartSongs](./popularitytopchartsongs.md)
   The data structure that represents a song popularity chart resource.
 
 

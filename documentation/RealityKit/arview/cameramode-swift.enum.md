@@ -1,7 +1,8 @@
 # ARView.CameraMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available camera modes.
 
@@ -19,22 +20,23 @@ enum CameraMode
 ## Topics
 
 ### Setting the camera mode
-- [ARView.CameraMode.ar](arview/cameramode-swift.enum/ar.md)
+- [ARView.CameraMode.ar](./cameramode-swift.enum/ar.md)
   A mode that uses the device’s camera to place virtual entities relative to the real world.
-- [ARView.CameraMode.nonAR](arview/cameramode-swift.enum/nonar.md)
+- [ARView.CameraMode.nonAR](./cameramode-swift.enum/nonar.md)
   A mode that creates a fully virtual environment with no relationship to the real world.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [struct RealityViewCamera](realityviewcamera.md)
+### Camera mode settings
+- [struct RealityViewCamera](../realityviewcamera.md)
   A camera for reality view scenes, that can be world tracking or virtual.
-- [struct CameraControls](cameracontrols.md)
+- [struct CameraControls](../cameracontrols.md)
 
 
 ---

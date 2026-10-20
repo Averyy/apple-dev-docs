@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Obtains this queue’s optional label for debugging purposes.
@@ -18,6 +19,10 @@ Obtains this queue’s optional label for debugging purposes.
 
 ```swift
 var label: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * label;
 ```
 
 

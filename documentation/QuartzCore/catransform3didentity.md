@@ -1,7 +1,8 @@
 # CATransform3DIdentity
 
 **Framework**: Core Animation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The identity transform: `[1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1]`.
 
@@ -17,6 +18,10 @@ The identity transform: `[1 0 0 0; 0 1 0 0; 0 0 1 0; 0 0 0 1]`.
 
 ```swift
 let CATransform3DIdentity: CATransform3D
+```
+
+```c
+extern const CATransform3D CATransform3DIdentity;
 ```
 
 

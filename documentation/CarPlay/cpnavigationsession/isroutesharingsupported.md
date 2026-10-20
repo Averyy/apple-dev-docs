@@ -1,7 +1,8 @@
 # isRouteSharingSupported
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the connected vehicle supports the route sharing feature.
 
@@ -14,6 +15,10 @@ Whether the connected vehicle supports the route sharing feature.
 
 ```swift
 var isRouteSharingSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isRouteSharingSupported) BOOL routeSharingSupported;
 ```
 
 

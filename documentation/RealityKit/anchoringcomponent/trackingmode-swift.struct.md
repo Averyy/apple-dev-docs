@@ -1,7 +1,8 @@
 # AnchoringComponent.TrackingMode
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for how an entity tracks its target anchor.
 
@@ -22,30 +23,31 @@ struct TrackingMode
 ## Topics
 
 ### Type Properties
-- [static let continuous: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct/continuous.md)
+- [static let continuous: AnchoringComponent.TrackingMode](./trackingmode-swift.struct/continuous.md)
   Continuously anchors the entity to its target based on the target’s realtime location and hides the entity when the target is no longer in frame.
-- [static let once: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct/once.md)
+- [static let once: AnchoringComponent.TrackingMode](./trackingmode-swift.struct/once.md)
   Anchors the entity to the target on the first frame the target is found.
-- [static let predicted: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.struct/predicted.md)
+- [static let predicted: AnchoringComponent.TrackingMode](./trackingmode-swift.struct/predicted.md)
   Continuously anchors the entity to its target based on the target’s predicted location and hides the entity when the target is no longer in frame.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [struct AnchoringComponent](anchoringcomponent.md)
+### Anchoring components
+- [struct AnchoringComponent](../anchoringcomponent.md)
   A component that anchors virtual content to a real world target.
-- [AnchoringComponent.Target](anchoringcomponent/target-swift.enum.md)
+- [AnchoringComponent.Target](./target-swift.enum.md)
   Defines the kinds of real world objects to which an anchor entity can be tethered.
-- [struct ARKitAnchorComponent](arkitanchorcomponent.md)
+- [struct ARKitAnchorComponent](../arkitanchorcomponent.md)
   A component that exposes the backing ARKit data of an anchored entity.
-- [class AnchorEntity](anchorentity.md)
+- [class AnchorEntity](../anchorentity.md)
   An anchor that tethers entities to a scene.
-- [protocol HasAnchoring](hasanchoring.md)
+- [protocol HasAnchoring](../hasanchoring.md)
   An interface that enables anchoring of virtual content to a real-world object in an AR scene.
 
 

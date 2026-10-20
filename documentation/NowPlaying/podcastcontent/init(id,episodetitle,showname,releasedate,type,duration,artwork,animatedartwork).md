@@ -1,7 +1,8 @@
 # init(id:episodeTitle:showName:releaseDate:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates podcast episode content with static and animated artwork.
 

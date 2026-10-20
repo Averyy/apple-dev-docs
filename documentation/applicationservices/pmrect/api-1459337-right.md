@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The horizontal coordinate for the lower-right point of the rectangle.
 
@@ -12,6 +13,10 @@ The horizontal coordinate for the lower-right point of the rectangle.
 
 ```swift
 var right: Double
+```
+
+```c
+double right;
 ```
 
 

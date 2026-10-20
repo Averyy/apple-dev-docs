@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCCountryPrimaryLocationCode
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The primary country code, a three-letter code defined by ISO 3166-1.
 
@@ -20,17 +21,22 @@ The primary country code, a three-letter code defined by ISO 3166-1.
 let kCGImagePropertyIPTCCountryPrimaryLocationCode: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCCountryPrimaryLocationCode;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCCity: CFString](kcgimagepropertyiptccity.md)
+### Location Data
+- [let kCGImagePropertyIPTCCity: CFString](./kcgimagepropertyiptccity.md)
   The city where the image was created.
-- [let kCGImagePropertyIPTCSubLocation: CFString](kcgimagepropertyiptcsublocation.md)
+- [let kCGImagePropertyIPTCSubLocation: CFString](./kcgimagepropertyiptcsublocation.md)
   The location within the city where the image was created.
-- [let kCGImagePropertyIPTCProvinceState: CFString](kcgimagepropertyiptcprovincestate.md)
+- [let kCGImagePropertyIPTCProvinceState: CFString](./kcgimagepropertyiptcprovincestate.md)
   The province or state.
-- [let kCGImagePropertyIPTCCountryPrimaryLocationName: CFString](kcgimagepropertyiptccountryprimarylocationname.md)
+- [let kCGImagePropertyIPTCCountryPrimaryLocationName: CFString](./kcgimagepropertyiptccountryprimarylocationname.md)
   The primary country name.
-- [let kCGImagePropertyIPTCOriginalTransmissionReference: CFString](kcgimagepropertyiptcoriginaltransmissionreference.md)
+- [let kCGImagePropertyIPTCOriginalTransmissionReference: CFString](./kcgimagepropertyiptcoriginaltransmissionreference.md)
   The call letter or number combination associated with the originating point of an image.
 
 

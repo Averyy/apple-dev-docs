@@ -1,7 +1,8 @@
 # HKCategoryValueLowCardioFitnessEvent.lowFitness
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that indicates a low level of cardio fitness, based on the VO2 max readings from the user’s Apple Watch.
 
@@ -17,6 +18,10 @@ An event that indicates a low level of cardio fitness, based on the VO2 max read
 
 ```swift
 case lowFitness
+```
+
+```c
+HKCategoryValueLowCardioFitnessEventLowFitness
 ```
 
 

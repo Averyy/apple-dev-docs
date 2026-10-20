@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the attachment.
 
@@ -19,11 +20,24 @@ The unique identifier for the attachment.
 var identifier: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var url: URL](unnotificationattachment/url.md)
+### Getting the Attachment Contents
+- [var url: URL](./url.md)
   The URL of the file for this attachment.
-- [var type: String](unnotificationattachment/type.md)
+- [var type: String](./type.md)
   The UTI type of the attachment.
 
 

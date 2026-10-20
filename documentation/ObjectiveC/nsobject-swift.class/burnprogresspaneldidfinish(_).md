@@ -1,17 +1,22 @@
 # burnProgressPanelDidFinish(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification sent by the panel after ordering out.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func burnProgressPanelDidFinish(_ aNotification: Notification!)
+```
+
+```objc
+- (void) burnProgressPanelDidFinish:(NSNotification *) aNotification;
 ```
 
 #### Discussion

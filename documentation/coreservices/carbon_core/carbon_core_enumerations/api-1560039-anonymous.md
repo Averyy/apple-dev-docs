@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var dsBadLibrary: Int](dsbadlibrary.md)
-- [var dsMixedModeFailure: Int](dsmixedmodefailure.md)
+- [var dsBadLibrary: Int](../../dsbadlibrary.md)
+- [var dsMixedModeFailure: Int](../../dsmixedmodefailure.md)
 
 
 ---

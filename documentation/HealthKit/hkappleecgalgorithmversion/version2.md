@@ -1,7 +1,8 @@
 # HKAppleECGAlgorithmVersion.version2
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The version 2 algorithm.
 
@@ -19,6 +20,10 @@ The version 2 algorithm.
 case version2
 ```
 
+```c
+HKAppleECGAlgorithmVersion2
+```
+
 #### Discussion
 
 Version 2 of the ECG algorithm includes the following changes:
@@ -30,7 +35,8 @@ Apple Watch reports a poor recording when circumstances cause the watch to colle
 
 ## See Also
 
-- [HKAppleECGAlgorithmVersion.version1](hkappleecgalgorithmversion/version1.md)
+### Versions
+- [HKAppleECGAlgorithmVersion.version1](./version1.md)
   The version 1 algorithm.
 
 

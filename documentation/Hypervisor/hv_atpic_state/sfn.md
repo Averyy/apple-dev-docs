@@ -1,15 +1,20 @@
 # sfn
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var sfn: Bool
+```
+
+```c
+bool sfn;
 ```
 
 

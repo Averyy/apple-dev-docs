@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A schema that specifies the parameters of the tool.
 
@@ -21,9 +22,10 @@ var parameters: GenerationSchema { get set }
 
 ## See Also
 
-- [var description: String](transcript/tooldefinition/description.md)
+### Inspecting a tool definition
+- [var description: String](./description.md)
   A description of how and when to use the tool.
-- [var name: String](transcript/tooldefinition/name.md)
+- [var name: String](./name.md)
   The tool’s name.
 
 

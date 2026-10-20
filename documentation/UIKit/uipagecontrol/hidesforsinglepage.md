@@ -1,7 +1,8 @@
 # hidesForSinglePage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the page control is hidden when there is only one page.
 
@@ -9,7 +10,7 @@ A Boolean value that controls whether the page control is hidden when there is o
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ A Boolean value that controls whether the page control is hidden when there is o
 var hidesForSinglePage: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL hidesForSinglePage;
+```
+
 #### Discussion
 
-Assign a value of [`true`](https://developer.apple.com/documentation/swift/true) to hide the page control when there is only one page; assign [`false`](https://developer.apple.com/documentation/swift/false) (the default) to show the page control if there is only one page.
+Assign a value of [`true`](../../Swift/true.md) to hide the page control when there is only one page; assign [`false`](../../Swift/false.md) (the default) to show the page control if there is only one page.
 
 ## See Also
 
-- [var currentPage: Int](uipagecontrol/currentpage.md)
+### Managing pages
+- [var currentPage: Int](./currentpage.md)
   The current page, shown by the page control as a white dot.
-- [var numberOfPages: Int](uipagecontrol/numberofpages.md)
+- [var numberOfPages: Int](./numberofpages.md)
   The number of pages the receiver shows (as dots).
-- [var defersCurrentPageDisplay: Bool](uipagecontrol/deferscurrentpagedisplay.md)
+- [var defersCurrentPageDisplay: Bool](./deferscurrentpagedisplay.md)
   A Boolean value that controls when the current page is displayed.
-- [func updateCurrentPageDisplay()](uipagecontrol/updatecurrentpagedisplay.md)
+- [func updateCurrentPageDisplay()](./updatecurrentpagedisplay%28%29.md)
   Updates the page indicator to the current page.
 
 

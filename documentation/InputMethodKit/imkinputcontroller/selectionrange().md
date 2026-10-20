@@ -1,7 +1,8 @@
 # selectionRange()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns where the range of the selection that should be placed inside marked text.
 
@@ -14,21 +15,26 @@ Returns where the range of the selection that should be placed inside marked tex
 func selectionRange() -> NSRange
 ```
 
+```objc
+- (NSRange) selectionRange;
+```
+
 #### Return Value
 
 The range of the selection.
 
 #### Discussion
 
-This method is called by [`updateComposition()`](imkinputcontroller/updatecomposition().md) to obtain the selection range for marked text. The default implementation sets the selection range at the end of the marked text. You should override this method if your input method provides font or glyph information.
+This method is called by [`updateComposition()`](./updatecomposition%28%29.md) to obtain the selection range for marked text. The default implementation sets the selection range at the end of the marked text. You should override this method if your input method provides font or glyph information.
 
 ## See Also
 
-- [func compositionAttributes(at: NSRange) -> NSMutableDictionary!](imkinputcontroller/compositionattributes(at:).md)
+### Working with Ranges
+- [func compositionAttributes(at: NSRange) -> NSMutableDictionary!](./compositionattributes%28at%29.md)
   Returns a dictionary of text attributes.
-- [func replacementRange() -> NSRange](imkinputcontroller/replacementrange.md)
+- [func replacementRange() -> NSRange](./replacementrange%28%29.md)
   Returns the range in the client document that the text should replace.
-- [func mark(forStyle: Int, at: NSRange) -> [AnyHashable : Any]!](imkinputcontroller/mark(forstyle:at:).md)
+- [func mark(forStyle: Int, at: NSRange) -> [AnyHashable : Any]!](./mark%28forstyle,at%29.md)
   Returns a dictionary of text attributes that can mark a range of an attributed string to send to a client.
 
 

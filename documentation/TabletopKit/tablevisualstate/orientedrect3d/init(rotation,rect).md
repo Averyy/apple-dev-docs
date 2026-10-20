@@ -1,7 +1,8 @@
 # init(rotation:rect:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -14,8 +15,9 @@ init(rotation: Rotation3D, rect: Rect3D)
 
 ## See Also
 
-- [init()](tablevisualstate/orientedrect3d/init.md)
-- [init(pose: Pose3D, size: Size3D)](tablevisualstate/orientedrect3d/init(pose:size:).md)
+### Creating 3D rectangle states
+- [init()](./init%28%29.md)
+- [init(pose: Pose3D, size: Size3D)](./init%28pose,size%29.md)
 
 
 ---

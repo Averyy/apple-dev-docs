@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array, name, or string that represents the destination of an action.
 
@@ -19,11 +20,16 @@ An array, name, or string that represents the destination of an action.
 static let destination: PDFAnnotationKey
 ```
 
+```c
+extern PDFAnnotationKey PDFAnnotationKeyDestination;
+```
+
 ## See Also
 
-- [static let action: PDFAnnotationKey](pdfannotationkey/action.md)
+### Configuring Actions
+- [static let action: PDFAnnotationKey](./action.md)
   A dictionary or PDF action object that represents an action to take, such as when the user clicks or taps a button.
-- [static let additionalActions: PDFAnnotationKey](pdfannotationkey/additionalactions.md)
+- [static let additionalActions: PDFAnnotationKey](./additionalactions.md)
   A dictionary or PDF action object that represents additional actions an annotation can perform, such as when it receives input focus.
 
 

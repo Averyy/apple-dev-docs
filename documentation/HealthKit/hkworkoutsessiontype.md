@@ -1,7 +1,8 @@
 # HKWorkoutSessionType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of session.
 
@@ -9,7 +10,7 @@ The type of session.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 10.0+
 
@@ -19,47 +20,52 @@ The type of session.
 enum HKWorkoutSessionType
 ```
 
+```c
+enum HKWorkoutSessionType : NSInteger;
+```
+
 ## Topics
 
 ### Types
-- [HKWorkoutSessionType.mirrored](hkworkoutsessiontype/mirrored.md)
+- [HKWorkoutSessionType.mirrored](./hkworkoutsessiontype/mirrored.md)
   A mirrored session, running on the companion iOS device.
-- [HKWorkoutSessionType.primary](hkworkoutsessiontype/primary.md)
+- [HKWorkoutSessionType.primary](./hkworkoutsessiontype/primary.md)
   A primary session running on watchOS.
 ### Initializers
-- [init?(rawValue: Int)](hkworkoutsessiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkworkoutsessiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding samples to a workout](adding-samples-to-a-workout.md)
+### Samples
+- [Adding samples to a workout](./adding-samples-to-a-workout.md)
   Create associated samples that add details to a workout.
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
   Read series data from condensed workouts.
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
   Partition multisport and interval workouts into activities that represent the different parts of the workout.
-- [class HKWorkout](hkworkout.md)
+- [class HKWorkout](./hkworkout.md)
   A workout sample that stores information about a single physical activity.
-- [class HKWorkoutActivity](hkworkoutactivity.md)
+- [class HKWorkoutActivity](./hkworkoutactivity.md)
   An object that describes an activity within a longer workout.
-- [class HKWorkoutBuilder](hkworkoutbuilder.md)
+- [class HKWorkoutBuilder](./hkworkoutbuilder.md)
   A builder object that incrementally constructs a workout.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [let HKWorkoutTypeIdentifier: String](hkworkouttypeidentifier.md)
+- [let HKWorkoutTypeIdentifier: String](./hkworkouttypeidentifier.md)
   The workout type identifier.
-- [enum HKWorkoutActivityType](hkworkoutactivitytype.md)
+- [enum HKWorkoutActivityType](./hkworkoutactivitytype.md)
   The type of activity performed during a workout.
-- [class HKWorkoutEvent](hkworkoutevent.md)
+- [class HKWorkoutEvent](./hkworkoutevent.md)
   An object representing an important event during a workout.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system will choose the best effect for the type of element and its position within the scene. This might result in no breakthrough effect.
 

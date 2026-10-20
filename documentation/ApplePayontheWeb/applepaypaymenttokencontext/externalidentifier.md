@@ -1,7 +1,8 @@
 # externalIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An external identifier for the merchant.
 
@@ -11,7 +12,7 @@ An external identifier for the merchant.
 
 ## Declaration
 
-```swift
+```
 required DOMString externalIdentifier;
 ```
 
@@ -21,11 +22,12 @@ An external identifier for the merchant that the developer provides. If you requ
 
 ## See Also
 
-- [merchantIdentifier](applepaypaymenttokencontext/merchantidentifier.md)
+### Specifying the merchant
+- [merchantIdentifier](./merchantidentifier.md)
   The Apply Pay merchant identifier.
-- [merchantName](applepaypaymenttokencontext/merchantname.md)
+- [merchantName](./merchantname.md)
   The merchant’s display name that the Apple Pay server associates with the payment token.
-- [merchantDomain](applepaypaymenttokencontext/merchantdomain.md)
+- [merchantDomain](./merchantdomain.md)
   The merchant’s top-level domain that the Apple Pay server associates with the payment token.
 
 

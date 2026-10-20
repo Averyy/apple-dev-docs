@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(boxMin: vector_float3, boxMax: vector_float3)](gkbox/init(boxmin:boxmax:).md)
+### Initializers
+- [init(boxMin: vector_float3, boxMax: vector_float3)](./init%28boxmin,boxmax%29.md)
 
 
 ---

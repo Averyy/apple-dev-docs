@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds an animation block for modifying a view animation while it’s running.
@@ -18,13 +19,18 @@ Adds an animation block for modifying a view animation while it’s running.
 func addAnimations(_ animations: @escaping () -> Void)
 ```
 
+```objc
+- (void) addAnimations:(void (^)()) animations;
+```
+
 ## Parameters
 
 - `animations`: A block that sets animatable view properties.
 
 ## See Also
 
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uidraganimating/addcompletion(_:).md)
+### Adding animations
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./addcompletion%28_%29.md)
   Adds an animation completion block to run when a view animation has ended.
 
 

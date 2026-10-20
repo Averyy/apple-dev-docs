@@ -1,7 +1,8 @@
 # authorizationStatus(for:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func authorizationStatus(for capability: PKPassLibrary.Capability) -> PKPassLibrary.AuthorizationStatus
+```
+
+```objc
+- (PKPassLibraryAuthorizationStatus) authorizationStatusForCapability:(PKPassLibraryCapability) capability;
 ```
 
 

@@ -1,7 +1,8 @@
 # constant(values:rowMajor:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rank 2 tensor from an array of arrays.
 
@@ -22,11 +23,11 @@ func constant(values: Array<Array<Float>>, rowMajor: Bool = false) -> BNNSGraph.
 
 #### Discussion
 
-> **Note**: Each sub-array must contain the same number of elements.
+> **Precondition**: Each sub-array must contain the same number of elements.
 
 The following code shows how to use this function to multiply two 2x2 matrices:
 
-```None
+```
    let xValues = [[1, 2],
                   [3, 4]] as [[Float]]
    let yValues = [[5, 6],

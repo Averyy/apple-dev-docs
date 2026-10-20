@@ -1,12 +1,15 @@
 # color
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object used to color an element.
+A [`UIColor`](../../UIKit/uicolor.md) object used to color an element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,19 +17,24 @@ A [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) object us
 var color: UIColor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIColor * color;
+```
+
 #### Discussion
 
-Only available when [`colorType`](tvcolor/colortype.md) is set to [`TVColorType.plain`](tvcolortype/plain.md).
+Only available when [`colorType`](./colortype.md) is set to [`TVColorType.plain`](../tvcolortype/plain.md).
 
 ## See Also
 
-- [var colorType: TVColorType](tvcolor/colortype.md)
+### Getting Color Properties
+- [var colorType: TVColorType](./colortype.md)
   The color type for an element.
-- [enum TVColorType](tvcolortype.md)
+- [enum TVColorType](../tvcolortype.md)
   Designates how color for an element is to be displayed.
-- [var gradientColors: [UIColor]?](tvcolor/gradientcolors.md)
+- [var gradientColors: [UIColor]?](./gradientcolors.md)
   An array of colors used to create a gradient for an element.
-- [var gradientPoints: [NSNumber]?](tvcolor/gradientpoints.md)
+- [var gradientPoints: [NSNumber]?](./gradientpoints.md)
   An array of points used to determine gradient color changes.
 
 

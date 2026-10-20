@@ -1,7 +1,8 @@
 # originWaypoint
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 var originWaypoint: CPNavigationWaypoint { get }
+```
+
+```objc
+@property (nonatomic, readonly) CPNavigationWaypoint * originWaypoint;
 ```
 
 

@@ -1,7 +1,8 @@
 # pipelineIndependent
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Compiles the function to have its function handles return a constant MTLResourceID across all pipeline states. The function needs to be linked to the pipeline that will use this function.
 
@@ -17,6 +18,10 @@ Compiles the function to have its function handles return a constant MTLResource
 
 ```swift
 static var pipelineIndependent: MTL4BinaryFunctionOptions { get }
+```
+
+```c
+MTL4BinaryFunctionOptionPipelineIndependent
 ```
 
 

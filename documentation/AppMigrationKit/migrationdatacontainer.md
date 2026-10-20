@@ -1,7 +1,8 @@
 # MigrationDataContainer
 
 **Framework**: AppMigrationKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object describing an app’s data container
 
@@ -18,25 +19,26 @@ struct MigrationDataContainer
 ## Topics
 
 ### Identifying the app
-- [let bundleIdentifier: String](migrationdatacontainer/bundleidentifier.md)
+- [let bundleIdentifier: String](./migrationdatacontainer/bundleidentifier.md)
   The app’s bundle identifier.
 ### Accessing app directories
-- [let containerRootDirectory: URL](migrationdatacontainer/containerrootdirectory.md)
+- [let containerRootDirectory: URL](./migrationdatacontainer/containerrootdirectory.md)
   The root container directory of the app.
-- [var applicationSupportDirectory: URL](migrationdatacontainer/applicationsupportdirectory.md)
+- [var applicationSupportDirectory: URL](./migrationdatacontainer/applicationsupportdirectory.md)
   The application support directory within the container.
-- [var documentsDirectory: URL](migrationdatacontainer/documentsdirectory.md)
+- [var documentsDirectory: URL](./migrationdatacontainer/documentsdirectory.md)
   The documents directory within the app container.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var appContainer: MigrationDataContainer](appmigrationextension/appcontainer.md)
+### Accessing migration data
+- [var appContainer: MigrationDataContainer](./appmigrationextension/appcontainer.md)
   The data container of the containing app.
 
 

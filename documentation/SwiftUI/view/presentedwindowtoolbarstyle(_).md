@@ -1,7 +1,8 @@
 # presentedWindowToolbarStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for the toolbar in windows created by interacting with this view.
 
@@ -17,7 +18,8 @@ func presentedWindowToolbarStyle<S>(_ style: S) -> some View where S : WindowToo
 
 ## See Also
 
-- [func presentedWindowStyle<S>(S) -> some View](view/presentedwindowstyle(_:).md)
+### Styling windows from a view inside the window
+- [func presentedWindowStyle<S>(S) -> some View](./presentedwindowstyle%28_%29.md)
   Sets the style for windows created by interacting with this view.
 
 

@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
@@ -18,30 +19,34 @@
 class MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct
 ```
 
+```objc
+@interface MTRNetworkCommissioningClusterWiFiInterfaceScanResultStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bssid: Data](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/bssid.md)
-- [var channel: NSNumber](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/channel.md)
-- [var rssi: NSNumber](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/rssi.md)
-- [var security: NSNumber](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/security.md)
-- [var ssid: Data](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/ssid.md)
-- [var wiFiBand: NSNumber](mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/wifiband.md)
+- [var bssid: Data](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/bssid.md)
+- [var channel: NSNumber](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/channel.md)
+- [var rssi: NSNumber](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/rssi.md)
+- [var security: NSNumber](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/security.md)
+- [var ssid: Data](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/ssid.md)
+- [var wiFiBand: NSNumber](./mtrnetworkcommissioningclusterwifiinterfacescanresultstruct/wifiband.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRNetworkCommissioningClusterWiFiInterfaceScanResult](mtrnetworkcommissioningclusterwifiinterfacescanresult.md)
+- [MTRNetworkCommissioningClusterWiFiInterfaceScanResult](./mtrnetworkcommissioningclusterwifiinterfacescanresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

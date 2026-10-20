@@ -1,17 +1,18 @@
 # sortDescriptors
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sort descriptors that specify the order of the results returned by this query.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ The sort descriptors that specify the order of the results returned by this quer
 var sortDescriptors: [NSSortDescriptor]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
+```
+
 ## See Also
 
-- [var limit: Int](hksamplequery/limit.md)
+### Getting Property Data
+- [var limit: Int](./limit.md)
   The maximum number of samples that this query returns.
 
 

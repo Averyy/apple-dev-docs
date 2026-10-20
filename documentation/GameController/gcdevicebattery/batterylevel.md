@@ -1,7 +1,8 @@
 # batteryLevel
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The charge level of a device’s battery.
 
@@ -19,15 +20,20 @@ The charge level of a device’s battery.
 var batteryLevel: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float batteryLevel;
+```
+
 #### Discussion
 
 The battery level is a percentage ranging from `0.0` (fully discharged) to `1.0` (100% charged). The default value for this property is `0.0`.
 
 ## See Also
 
-- [var batteryState: GCDeviceBattery.State](gcdevicebattery/batterystate.md)
+### Getting the battery level and state
+- [var batteryState: GCDeviceBattery.State](./batterystate.md)
   The state of a device’s battery.
-- [GCDeviceBattery.State](gcdevicebattery/state.md)
+- [GCDeviceBattery.State](./state.md)
   A state that indicates whether a device’s battery has power and is charging.
 
 

@@ -1,14 +1,15 @@
 # mach_continuous_speculative_time
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mach_continuous_speculative_time(void);
 ```
 

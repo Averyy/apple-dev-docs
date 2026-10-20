@@ -1,7 +1,8 @@
 # init(duration:bounce:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a spring with the specified duration and bounce.
 
@@ -27,11 +28,12 @@ init(duration: TimeInterval = 0.5, bounce: Double = 0.0)
 
 ## See Also
 
-- [init(mass: Double, stiffness: Double, damping: Double, allowOverDamping: Bool)](spring/init(mass:stiffness:damping:allowoverdamping:).md)
+### Creating a spring
+- [init(mass: Double, stiffness: Double, damping: Double, allowOverDamping: Bool)](./init%28mass,stiffness,damping,allowoverdamping%29.md)
   Creates a spring with the specified mass, stiffness, and damping.
-- [init(response: Double, dampingRatio: Double)](spring/init(response:dampingratio:).md)
+- [init(response: Double, dampingRatio: Double)](./init%28response,dampingratio%29.md)
   Creates a spring with the specified response and damping ratio.
-- [init(settlingDuration: TimeInterval, dampingRatio: Double, epsilon: Double)](spring/init(settlingduration:dampingratio:epsilon:).md)
+- [init(settlingDuration: TimeInterval, dampingRatio: Double, epsilon: Double)](./init%28settlingduration,dampingratio,epsilon%29.md)
   Creates a spring with the specified duration and damping ratio.
 
 

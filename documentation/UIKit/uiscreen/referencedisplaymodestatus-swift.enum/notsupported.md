@@ -1,7 +1,8 @@
 # UIScreen.ReferenceDisplayModeStatus.notSupported
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the screen doesn’t provide a reference display mode.
 
@@ -17,13 +18,18 @@ A status that indicates the screen doesn’t provide a reference display mode.
 case notSupported
 ```
 
+```c
+UIScreenReferenceDisplayModeStatusNotSupported
+```
+
 ## See Also
 
-- [UIScreen.ReferenceDisplayModeStatus.notEnabled](uiscreen/referencedisplaymodestatus-swift.enum/notenabled.md)
+### Statuses
+- [UIScreen.ReferenceDisplayModeStatus.notEnabled](./notenabled.md)
   A status that indicates the screen provides a reference display mode but it’s in a disabled state.
-- [UIScreen.ReferenceDisplayModeStatus.limited](uiscreen/referencedisplaymodestatus-swift.enum/limited.md)
+- [UIScreen.ReferenceDisplayModeStatus.limited](./limited.md)
   A status that indicates the screen’s in a limited reference display mode.
-- [UIScreen.ReferenceDisplayModeStatus.enabled](uiscreen/referencedisplaymodestatus-swift.enum/enabled.md)
+- [UIScreen.ReferenceDisplayModeStatus.enabled](./enabled.md)
   A status that indicates the screen’s in an accurate reference display mode.
 
 

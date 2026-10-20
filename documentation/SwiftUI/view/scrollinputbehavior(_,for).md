@@ -1,7 +1,8 @@
 # scrollInputBehavior(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables scrolling in scrollable views when using particular inputs.
 
@@ -23,7 +24,7 @@ Enables or disables scrolling in scrollable views when using particular inputs.
 
 #### Discussion
 
-In contrast to [`scrollDisabled(_:)`](view/scrolldisabled(_:).md), this modifier will enable or disable scrolling only for particular inputs. The following, for instance, disables double-tap-to-scroll on watchOS while preserving the ability to scroll via touch and the Digital Crown:
+In contrast to [`scrollDisabled(_:)`](./scrolldisabled%28_%29.md), this modifier will enable or disable scrolling only for particular inputs. The following, for instance, disables double-tap-to-scroll on watchOS while preserving the ability to scroll via touch and the Digital Crown:
 
 ```swift
 ScrollView(...)
@@ -39,9 +40,10 @@ If `scrollDisabled(true)` has been applied to this view, scrolling will be disab
 
 ## See Also
 
-- [struct ScrollInputKind](scrollinputkind.md)
+### Managing scrolling for different inputs
+- [struct ScrollInputKind](../scrollinputkind.md)
   Inputs used to scroll views.
-- [struct ScrollInputBehavior](scrollinputbehavior.md)
+- [struct ScrollInputBehavior](../scrollinputbehavior.md)
   A type that defines whether input should scroll a view.
 
 

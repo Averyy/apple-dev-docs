@@ -1,7 +1,8 @@
 # kUSBHostPortTypeExpressCard
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The express card port type.
 
@@ -10,7 +11,7 @@ The express card port type.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortTypeExpressCard = kIOUSBHostPortTypeExpressCard
 ```
 

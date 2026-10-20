@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Layout.overlap
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 When the sidebar is displayed, it will overlap the selected view controller, allowing the selected view controller to render underneath the sidebar. Anchor the view’s content to the `layoutMarginsGuide` or `safeAreaLayoutGuide` to avoid being occluded by the sidebar.
 
@@ -14,6 +15,10 @@ When the sidebar is displayed, it will overlap the selected view controller, all
 
 ```swift
 case overlap
+```
+
+```c
+UITabBarControllerSidebarLayoutOverlap
 ```
 
 

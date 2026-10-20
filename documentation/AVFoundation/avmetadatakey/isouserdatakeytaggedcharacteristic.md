@@ -1,7 +1,8 @@
 # isoUserDataKeyTaggedCharacteristic
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the tagged media characteristic used for identifying accessibility features.
 
@@ -20,13 +21,18 @@ A key that represents the tagged media characteristic used for identifying acces
 static let isoUserDataKeyTaggedCharacteristic: AVMetadataKey
 ```
 
+```c
+extern AVMetadataKey const AVMetadataISOUserDataKeyTaggedCharacteristic;
+```
+
 ## See Also
 
-- [static let isoUserDataKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/isouserdatakeyaccessibilitydescription.md)
+### ISO user metadata keys
+- [static let isoUserDataKeyAccessibilityDescription: AVMetadataKey](./isouserdatakeyaccessibilitydescription.md)
   A key that represents the accessibility description for the media content.
-- [static let isoUserDataKeyCopyright: AVMetadataKey](avmetadatakey/isouserdatakeycopyright.md)
+- [static let isoUserDataKeyCopyright: AVMetadataKey](./isouserdatakeycopyright.md)
   A key that represents the copyright statement.
-- [static let isoUserDataKeyDate: AVMetadataKey](avmetadatakey/isouserdatakeydate.md)
+- [static let isoUserDataKeyDate: AVMetadataKey](./isouserdatakeydate.md)
   A key that represents the date for the media content.
 
 

@@ -1,18 +1,19 @@
 # AVMusicEventEnumerationBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type you use to enumerate and remove music events, if necessary.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ A type you use to enumerate and remove music events, if necessary.
 typealias AVMusicEventEnumerationBlock = (AVMusicEvent, UnsafeMutablePointer<AVMusicTimeStamp>, UnsafeMutablePointer<ObjCBool>) -> Void
 ```
 
+```c
+typedef void (^)(AVMusicEvent *, double *, _Bool *) AVMusicEventEnumerationBlock;
+```
+
 #### Discussion
 
-You use this type when you use [`enumerateEvents(in:using:)`](avmusictrack/enumerateevents(in:using:).md). If you modify `event` or `timeStamp`, you change the corresponding value in the track event.
+You use this type when you use [`enumerateEvents(in:using:)`](./avmusictrack/enumerateevents%28in,using%29.md). If you modify `event` or `timeStamp`, you change the corresponding value in the track event.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ You use this type when you use [`enumerateEvents(in:using:)`](avmusictrack/enume
 
 ## See Also
 
-- [func enumerateEvents(in: AVBeatRange, using: (AVMusicEvent, UnsafeMutablePointer<AVMusicTimeStamp>, UnsafeMutablePointer<ObjCBool>) -> Void)](avmusictrack/enumerateevents(in:using:).md)
+### Iterating over events
+- [func enumerateEvents(in: AVBeatRange, using: (AVMusicEvent, UnsafeMutablePointer<AVMusicTimeStamp>, UnsafeMutablePointer<ObjCBool>) -> Void)](./avmusictrack/enumerateevents%28in,using%29.md)
   Iterates through the music events within the track.
 
 

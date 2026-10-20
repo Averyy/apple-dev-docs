@@ -1,7 +1,8 @@
 # autoExposureSettings(exposureTargetBias:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an `AVCaptureAutoExposureBracketedStillImageSettings` using the specified exposure target bias.
 
@@ -17,13 +18,17 @@ Creates an `AVCaptureAutoExposureBracketedStillImageSettings` using the specifie
 class func autoExposureSettings(exposureTargetBias: Float) -> Self
 ```
 
+```objc
++ (instancetype) autoExposureSettingsWithExposureTargetBias:(float) exposureTargetBias;
+```
+
 #### Return Value
 
 An initialized `AVCaptureAutoExposureBracketedStillImageSettings` instance.
 
 ## Parameters
 
-- `exposureTargetBias`: The exposure target bias. Pass `AVCaptureExposureTargetBiasCurrent` to leave the [`exposureTargetBias`](avcaptureautoexposurebracketedstillimagesettings/exposuretargetbias.md) unchanged for this image.
+- `exposureTargetBias`: The exposure target bias. Pass `AVCaptureExposureTargetBiasCurrent` to leave the [`exposureTargetBias`](./exposuretargetbias.md) unchanged for this image.
 
 
 ---

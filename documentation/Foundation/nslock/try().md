@@ -1,7 +1,8 @@
 # try()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire a lock and immediately returns a Boolean value that indicates whether the attempt was successful.
 
@@ -20,13 +21,18 @@ Attempts to acquire a lock and immediately returns a Boolean value that indicate
 func `try`() -> Bool
 ```
 
+```objc
+- (BOOL) tryLock;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the lock was acquired, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the lock was acquired, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func lock(before: Date) -> Bool](nslock/lock(before:).md)
+### Acquiring a Lock
+- [func lock(before: Date) -> Bool](./lock%28before%29.md)
   Attempts to acquire a lock before a given time and returns a Boolean value indicating whether the attempt was successful.
 
 

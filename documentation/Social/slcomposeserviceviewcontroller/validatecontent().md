@@ -1,7 +1,8 @@
 # validateContent()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs validation of the current content and updates the state of the Post button, if appropriate.
 
@@ -17,15 +18,20 @@ Performs validation of the current content and updates the state of the Post but
 func validateContent()
 ```
 
+```objc
+- (void) validateContent;
+```
+
 #### Discussion
 
-By default, `validateContent` calls [`isContentValid()`](slcomposeserviceviewcontroller/iscontentvalid().md), performs internal content validation, and updates the state of the Post button, if necessary. You should call this method if you change any data that your implementation of `isContentValid` uses to test for content validity.
+By default, `validateContent` calls [`isContentValid()`](./iscontentvalid%28%29.md), performs internal content validation, and updates the state of the Post button, if necessary. You should call this method if you change any data that your implementation of `isContentValid` uses to test for content validity.
 
 ## See Also
 
-- [var charactersRemaining: NSNumber!](slcomposeserviceviewcontroller/charactersremaining.md)
+### Validating Content
+- [var charactersRemaining: NSNumber!](./charactersremaining.md)
   The number of characters remaining in a custom character limit.
-- [func isContentValid() -> Bool](slcomposeserviceviewcontroller/iscontentvalid.md)
+- [func isContentValid() -> Bool](./iscontentvalid%28%29.md)
   A Boolean value that indicates whether the current content and attachments are valid.
 
 

@@ -1,7 +1,8 @@
 # MTRTimeSynchronizationClusterSetUTCTimeParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.2+
@@ -18,31 +19,35 @@
 class MTRTimeSynchronizationClusterSetUTCTimeParams
 ```
 
+```objc
+@interface MTRTimeSynchronizationClusterSetUTCTimeParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var granularity: NSNumber](mtrtimesynchronizationclustersetutctimeparams-1ru2r/granularity.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-1ru2r/serversideprocessingtimeout.md)
+- [var granularity: NSNumber](./mtrtimesynchronizationclustersetutctimeparams-1ru2r/granularity.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-1ru2r/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var timeSource: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-1ru2r/timesource.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrtimesynchronizationclustersetutctimeparams-1ru2r/timedinvoketimeoutms.md)
+- [var timeSource: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-1ru2r/timesource.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrtimesynchronizationclustersetutctimeparams-1ru2r/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
-- [var utcTime: NSNumber](mtrtimesynchronizationclustersetutctimeparams-1ru2r/utctime.md)
+- [var utcTime: NSNumber](./mtrtimesynchronizationclustersetutctimeparams-1ru2r/utctime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRTimeSynchronizationClusterSetUtcTimeParams](mtrtimesynchronizationclustersetutctimeparams-2ms2i.md)
+- [MTRTimeSynchronizationClusterSetUtcTimeParams](./mtrtimesynchronizationclustersetutctimeparams-2ms2i.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

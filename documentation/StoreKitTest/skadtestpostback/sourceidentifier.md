@@ -1,7 +1,8 @@
 # sourceIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies an ad campaign.
 
@@ -16,19 +17,24 @@ A string that identifies an ad campaign.
 var sourceIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * sourceIdentifier;
+```
+
 #### Discussion
 
-The source identifier in a winning postback may contain two, three, or all four digits of the [`sourceIdentifier`](https://developer.apple.com/documentation/storekit/skadimpression/sourceidentifier) in the corresponding ad impression. For more information about the value you may get in the postback, see [`Receiving postbacks in multiple conversion windows`](https://developer.apple.com/documentation/storekit/receiving-postbacks-in-multiple-conversion-windows).
+The source identifier in a winning postback may contain two, three, or all four digits of the [`sourceIdentifier`](../../StoreKit/skadimpression/sourceidentifier.md) in the corresponding ad impression. For more information about the value you may get in the postback, see [Receiving postbacks in multiple conversion windows](../../StoreKit/receiving-postbacks-in-multiple-conversion-windows.md).
 
 ## See Also
 
-- [var adNetworkIdentifier: String](skadtestpostback/adnetworkidentifier.md)
+### Getting advertisement information
+- [var adNetworkIdentifier: String](./adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var appStoreItemIdentifier: Int](skadtestpostback/appstoreitemidentifier.md)
+- [var appStoreItemIdentifier: Int](./appstoreitemidentifier.md)
   The item identifier of the app that this ad impression advertises.
-- [var sourceAppStoreItemIdentifier: Int](skadtestpostback/sourceappstoreitemidentifier.md)
+- [var sourceAppStoreItemIdentifier: Int](./sourceappstoreitemidentifier.md)
   The item identifier of the app that displays the ad.
-- [var sourceDomain: String?](skadtestpostback/sourcedomain.md)
+- [var sourceDomain: String?](./sourcedomain.md)
   The source of a web ad.
 
 

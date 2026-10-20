@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object for the game-specific properties for a match request.
 
@@ -10,14 +11,14 @@ A resource object for the game-specific properties for a match request.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties.Data](gamecentermatchmakingtestrequestinlinecreate/relationships-data.dictionary/matchmakingplayerproperties-data.dictionary/data-data.dictionary.md)
+- [object GameCenterMatchmakingTestRequestInlineCreate.Relationships.MatchmakingPlayerProperties.Data](./matchmakingplayerproperties-data.dictionary/data-data.dictionary.md)
   The resource object for the game-specific properties of a match request.
 
 ## Properties

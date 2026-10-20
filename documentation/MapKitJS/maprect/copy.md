@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of a map rectangle.
 
@@ -10,7 +11,7 @@ Returns a copy of a map rectangle.
 
 ## Declaration
 
-```swift
+```
 copy(): MapRect;
 ```
 
@@ -20,11 +21,12 @@ A MapRect object that is a copy of the original.
 
 ## See Also
 
-- [equals(anotherRect)](maprect/equals.md)
+### Working with map rectangles
+- [equals(anotherRect)](./equals.md)
   Compares whether two map rectangles are equal.
-- [scale(scaleFactor, scaleCenter)](maprect/scale.md)
+- [scale(scaleFactor, scaleCenter)](./scale.md)
   Returns a scaled map rectangle for a map location.
-- [toCoordinateRegion()](maprect/tocoordinateregion.md)
+- [toCoordinateRegion()](./tocoordinateregion.md)
   Returns the region that corresponds to a map rectangle.
 
 

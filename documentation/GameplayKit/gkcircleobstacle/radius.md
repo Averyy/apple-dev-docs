@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the obstacle.
 
@@ -19,13 +20,18 @@ The radius of the obstacle.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float radius;
+```
+
 #### Discussion
 
 The coordinate system for agents and obstacles is arbitrary; you may choose how to map agent and obstacle positions and sizes into your game scene.
 
 ## See Also
 
-- [var position: vector_float2](gkcircleobstacle/position.md)
+### Placing an Obstacle
+- [var position: vector_float2](./position.md)
   The position of the obstacle.
 
 

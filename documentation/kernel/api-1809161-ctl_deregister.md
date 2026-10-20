@@ -1,18 +1,19 @@
 # ctl_deregister
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 errno_t ctl_deregister(kern_ctl_ref kctlref);
 ```
 
-#### Return_value
+#### Return Value
 
 0 - Kernel control was unregistered. EINVAL - The kernel control reference was invalid. EBUSY - The kernel control has clients still attached.
 
@@ -26,11 +27,12 @@ Unregister a kernel control. A kernel extension must unregister it's kernel cont
 
 ## See Also
 
-- [ctl_enqueuedata](1809168-ctl_enqueuedata.md)
-- [ctl_enqueuembuf](1809171-ctl_enqueuembuf.md)
-- [ctl_getenqueuereadable](2919907-ctl_getenqueuereadable.md)
-- [ctl_getenqueuespace](1809173-ctl_getenqueuespace.md)
-- [ctl_register](1809176-ctl_register.md)
+### control
+- [ctl_enqueuedata](./api-1809168-ctl_enqueuedata.md)
+- [ctl_enqueuembuf](./api-1809171-ctl_enqueuembuf.md)
+- [ctl_getenqueuereadable](./api-2919907-ctl_getenqueuereadable.md)
+- [ctl_getenqueuespace](./api-1809173-ctl_getenqueuespace.md)
+- [ctl_register](./api-1809176-ctl_register.md)
 
 
 ---

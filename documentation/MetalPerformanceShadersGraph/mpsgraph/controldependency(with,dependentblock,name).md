@@ -1,7 +1,8 @@
 # controlDependency(with:dependentBlock:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed.
 
@@ -17,6 +18,10 @@ Runs the graph for the given feeds and returns the target tensor values, ensurin
 
 ```swift
 func controlDependency(with operations: [MPSGraphOperation], dependentBlock: @escaping MPSGraphControlFlowDependencyBlock, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) controlDependencyWithOperations:(NSArray<MPSGraphOperation *> *) operations dependentBlock:(MPSGraphControlFlowDependencyBlock) dependentBlock name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # locality
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The city of the place.
 
@@ -10,23 +11,24 @@ The city of the place.
 
 ## Declaration
 
-```swift
+```
 locality: string | null;
 ```
 
 #### Discussion
 
-For example, the [`locality`](place/locality.md) for Golden Gate Park in San Francisco, California, is `"San Francisco"`.
+For example, the [`locality`](./locality.md) for Golden Gate Park in San Francisco, California, is `"San Francisco"`.
 
 ## See Also
 
-- [subLocality](place/sublocality.md)
+### City and district address
+- [subLocality](./sublocality.md)
   The name of the area within the locality.
-- [dependentLocalities](place/dependentlocalities.md)
+- [dependentLocalities](./dependentlocalities.md)
   Common names for the local area or neighborhood of the place.
-- [administrativeArea](place/administrativearea.md)
+- [administrativeArea](./administrativearea.md)
   The state or province of the place.
-- [administrativeAreaCode](place/administrativeareacode.md)
+- [administrativeAreaCode](./administrativeareacode.md)
   The short code for the state or area.
 
 

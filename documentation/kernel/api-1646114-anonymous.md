@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,32 +18,32 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSAutoCandidateBit](1646114-anonymous/khfsautocandidatebit.md)
-- [kHFSAutoCandidateMask](1646114-anonymous/khfsautocandidatemask.md)
-- [kHFSDoNotFastDevPinBit](1646114-anonymous/khfsdonotfastdevpinbit.md)
-- [kHFSDoNotFastDevPinMask](1646114-anonymous/khfsdonotfastdevpinmask.md)
-- [kHFSFastDevCandidateBit](1646114-anonymous/khfsfastdevcandidatebit.md)
-- [kHFSFastDevCandidateMask](1646114-anonymous/khfsfastdevcandidatemask.md)
-- [kHFSFastDevPinnedBit](1646114-anonymous/khfsfastdevpinnedbit.md)
-- [kHFSFastDevPinnedMask](1646114-anonymous/khfsfastdevpinnedmask.md)
-- [kHFSFileLockedBit](1646114-anonymous/khfsfilelockedbit.md)
-- [kHFSFileLockedMask](1646114-anonymous/khfsfilelockedmask.md)
-- [kHFSHasAttributesBit](1646114-anonymous/khfshasattributesbit.md)
-- [kHFSHasAttributesMask](1646114-anonymous/khfshasattributesmask.md)
-- [kHFSHasChildLinkBit](1646114-anonymous/khfshaschildlinkbit.md)
-- [kHFSHasChildLinkMask](1646114-anonymous/khfshaschildlinkmask.md)
-- [kHFSHasDateAddedBit](1646114-anonymous/khfshasdateaddedbit.md)
-- [kHFSHasDateAddedMask](1646114-anonymous/khfshasdateaddedmask.md)
-- [kHFSHasFolderCountBit](1646114-anonymous/khfshasfoldercountbit.md)
-- [kHFSHasFolderCountMask](1646114-anonymous/khfshasfoldercountmask.md)
-- [kHFSHasLinkChainBit](1646114-anonymous/khfshaslinkchainbit.md)
-- [kHFSHasLinkChainMask](1646114-anonymous/khfshaslinkchainmask.md)
-- [kHFSHasSecurityBit](1646114-anonymous/khfshassecuritybit.md)
-- [kHFSHasSecurityMask](1646114-anonymous/khfshassecuritymask.md)
-- [kHFSThreadExistsBit](1646114-anonymous/khfsthreadexistsbit.md)
-- [kHFSThreadExistsMask](1646114-anonymous/khfsthreadexistsmask.md)
-- [kHFSCatExpandedTimesBit](1646114-anonymous/khfscatexpandedtimesbit.md)
-- [kHFSCatExpandedTimesMask](1646114-anonymous/khfscatexpandedtimesmask.md)
+- [kHFSAutoCandidateBit](./api-1646114-anonymous/khfsautocandidatebit.md)
+- [kHFSAutoCandidateMask](./api-1646114-anonymous/khfsautocandidatemask.md)
+- [kHFSDoNotFastDevPinBit](./api-1646114-anonymous/khfsdonotfastdevpinbit.md)
+- [kHFSDoNotFastDevPinMask](./api-1646114-anonymous/khfsdonotfastdevpinmask.md)
+- [kHFSFastDevCandidateBit](./api-1646114-anonymous/khfsfastdevcandidatebit.md)
+- [kHFSFastDevCandidateMask](./api-1646114-anonymous/khfsfastdevcandidatemask.md)
+- [kHFSFastDevPinnedBit](./api-1646114-anonymous/khfsfastdevpinnedbit.md)
+- [kHFSFastDevPinnedMask](./api-1646114-anonymous/khfsfastdevpinnedmask.md)
+- [kHFSFileLockedBit](./api-1646114-anonymous/khfsfilelockedbit.md)
+- [kHFSFileLockedMask](./api-1646114-anonymous/khfsfilelockedmask.md)
+- [kHFSHasAttributesBit](./api-1646114-anonymous/khfshasattributesbit.md)
+- [kHFSHasAttributesMask](./api-1646114-anonymous/khfshasattributesmask.md)
+- [kHFSHasChildLinkBit](./api-1646114-anonymous/khfshaschildlinkbit.md)
+- [kHFSHasChildLinkMask](./api-1646114-anonymous/khfshaschildlinkmask.md)
+- [kHFSHasDateAddedBit](./api-1646114-anonymous/khfshasdateaddedbit.md)
+- [kHFSHasDateAddedMask](./api-1646114-anonymous/khfshasdateaddedmask.md)
+- [kHFSHasFolderCountBit](./api-1646114-anonymous/khfshasfoldercountbit.md)
+- [kHFSHasFolderCountMask](./api-1646114-anonymous/khfshasfoldercountmask.md)
+- [kHFSHasLinkChainBit](./api-1646114-anonymous/khfshaslinkchainbit.md)
+- [kHFSHasLinkChainMask](./api-1646114-anonymous/khfshaslinkchainmask.md)
+- [kHFSHasSecurityBit](./api-1646114-anonymous/khfshassecuritybit.md)
+- [kHFSHasSecurityMask](./api-1646114-anonymous/khfshassecuritymask.md)
+- [kHFSThreadExistsBit](./api-1646114-anonymous/khfsthreadexistsbit.md)
+- [kHFSThreadExistsMask](./api-1646114-anonymous/khfsthreadexistsmask.md)
+- [kHFSCatExpandedTimesBit](./api-1646114-anonymous/khfscatexpandedtimesbit.md)
+- [kHFSCatExpandedTimesMask](./api-1646114-anonymous/khfscatexpandedtimesmask.md)
 
 
 ---

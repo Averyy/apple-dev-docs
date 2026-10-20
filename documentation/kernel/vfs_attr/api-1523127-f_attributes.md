@@ -1,14 +1,15 @@
 # f_attributes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 vol_attributes_attr_t f_attributes;
 ```
 

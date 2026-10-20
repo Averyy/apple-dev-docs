@@ -1,21 +1,22 @@
 # AnalyticsReport.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AnalyticsReport.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AnalyticsReport.Relationships.Instances](analyticsreport/relationships-data.dictionary/instances-data.dictionary.md)
+- [object AnalyticsReport.Relationships.Instances](./relationships-data.dictionary/instances-data.dictionary.md)
 
 ## Properties
 

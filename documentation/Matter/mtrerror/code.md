@@ -1,7 +1,8 @@
 # MTRError.Code
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,43 +19,47 @@
 enum Code
 ```
 
+```c
+enum MTRErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRError.Code.bufferTooSmall](mtrerror/code/buffertoosmall.md)
-- [MTRError.Code.cancelled](mtrerror/code/cancelled.md)
-- [MTRError.Code.dnssdUnauthorized](mtrerror/code/dnssdunauthorized.md)
-- [MTRError.Code.fabricExists](mtrerror/code/fabricexists.md)
-- [MTRError.Code.generalError](mtrerror/code/generalerror.md)
-- [MTRError.Code.integrityCheckFailed](mtrerror/code/integritycheckfailed.md)
-- [MTRError.Code.invalidArgument](mtrerror/code/invalidargument.md)
-- [MTRError.Code.invalidIntegerValue](mtrerror/code/invalidintegervalue.md)
-- [MTRError.Code.invalidMessageLength](mtrerror/code/invalidmessagelength.md)
-- [MTRError.Code.invalidState](mtrerror/code/invalidstate.md)
-- [MTRError.Code.invalidStringLength](mtrerror/code/invalidstringlength.md)
-- [MTRError.Code.schemaMismatch](mtrerror/code/schemamismatch.md)
-- [MTRError.Code.timeout](mtrerror/code/timeout.md)
-- [MTRError.Code.tlvDecodeFailed](mtrerror/code/tlvdecodefailed.md)
-- [MTRError.Code.unknownSchema](mtrerror/code/unknownschema.md)
-- [MTRError.Code.wrongAddressType](mtrerror/code/wrongaddresstype.md)
-- [MTRError.Code.accessDenied](mtrerror/code/accessdenied.md)
+- [MTRError.Code.bufferTooSmall](./code/buffertoosmall.md)
+- [MTRError.Code.cancelled](./code/cancelled.md)
+- [MTRError.Code.dnssdUnauthorized](./code/dnssdunauthorized.md)
+- [MTRError.Code.fabricExists](./code/fabricexists.md)
+- [MTRError.Code.generalError](./code/generalerror.md)
+- [MTRError.Code.integrityCheckFailed](./code/integritycheckfailed.md)
+- [MTRError.Code.invalidArgument](./code/invalidargument.md)
+- [MTRError.Code.invalidIntegerValue](./code/invalidintegervalue.md)
+- [MTRError.Code.invalidMessageLength](./code/invalidmessagelength.md)
+- [MTRError.Code.invalidState](./code/invalidstate.md)
+- [MTRError.Code.invalidStringLength](./code/invalidstringlength.md)
+- [MTRError.Code.schemaMismatch](./code/schemamismatch.md)
+- [MTRError.Code.timeout](./code/timeout.md)
+- [MTRError.Code.tlvDecodeFailed](./code/tlvdecodefailed.md)
+- [MTRError.Code.unknownSchema](./code/unknownschema.md)
+- [MTRError.Code.wrongAddressType](./code/wrongaddresstype.md)
+- [MTRError.Code.accessDenied](./code/accessdenied.md)
   Access to some resource was denied.
-- [MTRError.Code.busy](mtrerror/code/busy.md)
+- [MTRError.Code.busy](./code/busy.md)
   A request was made to some entity, and that entity cannot handle the request right now, but might be able to at a different point in time.
-- [MTRError.Code.notFound](mtrerror/code/notfound.md)
+- [MTRError.Code.notFound](./code/notfound.md)
   Something was requested that could not be located.
 ### Initializers
-- [init?(rawValue: Int)](mtrerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

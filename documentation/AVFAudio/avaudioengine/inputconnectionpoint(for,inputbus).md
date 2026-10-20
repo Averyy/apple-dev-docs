@@ -1,7 +1,8 @@
 # inputConnectionPoint(for:inputBus:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns connection information about a node’s input bus.
 
@@ -20,6 +21,10 @@ Returns connection information about a node’s input bus.
 func inputConnectionPoint(for node: AVAudioNode, inputBus bus: AVAudioNodeBus) -> AVAudioConnectionPoint?
 ```
 
+```objc
+- (AVAudioConnectionPoint *) inputConnectionPointForNode:(AVAudioNode *) node inputBus:(AVAudioNodeBus) bus;
+```
+
 #### Return Value
 
 An `AVAudioConnectionPoint` object with connection information on the node’s input bus.
@@ -35,11 +40,12 @@ Connections are always one-to-one or one-to-many. This method returns `nil` if t
 
 ## See Also
 
-- [class AVAudioConnectionPoint](avaudioconnectionpoint.md)
+### Using connection points
+- [class AVAudioConnectionPoint](../avaudioconnectionpoint.md)
   A representation of either a source or destination connection point in the audio engine.
-- [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:format:).md)
+- [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](./connect%28_,to,frombus,format%29.md)
   Establishes a connection between a source node and multiple destination nodes.
-- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](./outputconnectionpoints%28for,outputbus%29.md)
   Returns connection information about a node’s output bus.
 
 

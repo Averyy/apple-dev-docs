@@ -1,7 +1,8 @@
 # ClearRestrictionsPasswordCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to clear the Screen Time password and the restrictions on a device.
 
@@ -12,14 +13,14 @@ The command to clear the Screen Time password and the restrictions on a device.
 
 ## Declaration
 
-```swift
+```
 object ClearRestrictionsPasswordCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object ClearRestrictionsPasswordCommand.Command](clearrestrictionspasswordcommand/command-data.dictionary.md)
+- [object ClearRestrictionsPasswordCommand.Command](./clearrestrictionspasswordcommand/command-data.dictionary.md)
   The command to clear the Screen Time password and the restrictions on a device.
 
 ## Properties
@@ -29,7 +30,8 @@ object ClearRestrictionsPasswordCommand
 
 ## See Also
 
-- [object ClearRestrictionsPasswordResponse](clearrestrictionspasswordresponse.md)
+### Commands and responses
+- [object ClearRestrictionsPasswordResponse](./clearrestrictionspasswordresponse.md)
   A response from the device after it processes the command to clear the Screen Time password and the restrictions on a device.
 
 

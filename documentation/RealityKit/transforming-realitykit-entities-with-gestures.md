@@ -1,6 +1,8 @@
 # Transforming RealityKit entities using gestures
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [TransformingRealityKitEntitiesUsingGestures.zip](https://docs-assets.developer.apple.com/published/cf576a34dc2e/TransformingRealityKitEntitiesUsingGestures.zip)
 
 Build a RealityKit component to support standard visionOS gestures on any entity.
 
@@ -10,11 +12,11 @@ Build a RealityKit component to support standard visionOS gestures on any entity
 
 #### Overview
 
-Manipulating virtual objects using standard system drag, rotate, and scale gestures is a common task in visionOS apps. This sample project demonstrates how to apply SwiftUI gestures to a RealityKit [`Entity`](entity.md) by implementing the gestures with a component and an extension on [`RealityView`](realityview.md). The component marks entities as supporting transform gestures and the [`RealityView`](realityview.md) extension passes events from the SwiftUI gesture actions to the component, which also contains the logic to implement the gestures. You can add transformation gesture support to any entity in your [`RealityView`](realityview.md) just by adding the gesture component to the entity.
+Manipulating virtual objects using standard system drag, rotate, and scale gestures is a common task in visionOS apps. This sample project demonstrates how to apply SwiftUI gestures to a RealityKit [`Entity`](./entity.md) by implementing the gestures with a component and an extension on [`RealityView`](./realityview.md). The component marks entities as supporting transform gestures and the [`RealityView`](./realityview.md) extension passes events from the SwiftUI gesture actions to the component, which also contains the logic to implement the gestures. You can add transformation gesture support to any entity in your [`RealityView`](./realityview.md) just by adding the gesture component to the entity.
 
-##### Create the Main Component
+##### Create the main component
 
-To implement the gesture functionality, the sample app first creates a `struct` that conforms to [`Component`](component.md). This component marks entities that support transform gestures, and contains the logic to implement those gestures. In order to support Reality Composer Pro, the component also conforms to [`Codable`](https://developer.apple.com/documentation/swift/codable). To include the ability to turn different gestures on and off, the component contains three [`Bool`](https://developer.apple.com/documentation/swift/bool) properties, one for each of the transforms the component supports. Reality Composer Pro exposes the transforms as checkboxes, which enable or disable specific gestures for an entity.
+To implement the gesture functionality, the sample app first creates a `struct` that conforms to [`Component`](./component.md). This component marks entities that support transform gestures, and contains the logic to implement those gestures. In order to support Reality Composer Pro, the component also conforms to [`Codable`](../Swift/codable.md). To include the ability to turn different gestures on and off, the component contains three [`Bool`](../Swift/bool.md) properties, one for each of the transforms the component supports. Reality Composer Pro exposes the transforms as checkboxes, which enable or disable specific gestures for an entity.
 
 ```swift
 /// A component that handles gesture logic for an entity.
@@ -51,9 +53,9 @@ The `pivotOnDrag` properties configure whether the object moves along the X-axis
 
 Pivoting on drag is more flexible because it allows a person to change their own orientation without the  entity they’re dragging from disappearing out of view. However, in some cases, dragging without the pivot may be a better option, such as when they need to precisely line up an entity with another.
 
-##### Create a State Object
+##### Create a state object
 
-To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) action passes a delta from the start transform, *not* the delta from the previous [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
+To implement these transform gestures, the app needs to maintain some state. The [`onChanged(_:)`](../SwiftUI/gesture/onchanged%28_%29.md) action passes a delta from the start transform, *not* the delta from the previous [`onChanged(_:)`](../SwiftUI/gesture/onchanged%28_%29.md) call, so the app needs to keep track of the entity’s starting position, rotation, and scale. For example, each time SwiftUI calls the [`onChanged(_:)`](../SwiftUI/gesture/onchanged%28_%29.md) action for a drag gesture, the action provides the total distance dragged on each axis since the gesture started. The app also keeps track of whether a gesture is already in progress. Gestures don’t have an `.onStarted` action, so the app keeps track of whether the gesture has already started so it knows if it needs to store the starting position, rotation, or scale. Lastly, the sample app keeps a reference to the pivot entity. By parenting the dragged entity to the pivot entity, the system calculates the dragged entity’s rotation when the app rotates the pivot entity.
 
 This component only supports dragging a single entity at a time, so there’s no need to store state on a per-entity level. As a result, the app uses a singleton object to store the state instead of a component:
 
@@ -99,9 +101,9 @@ public class EntityGestureState {
 }
 ```
 
-##### Add Transform Logic to the Main Component
+##### Add transform logic to the main component
 
-`GestureComponent` needs to implement functions the app calls from the [`onChanged(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onchanged(_:)) and [`onEnded(_:)`](https://developer.apple.com/documentation/swiftui/gesture/onended(_:)) actions for each of the three supported types of gestures. The `onChange` functions first retrieve the gesture entity and its state component, creating a new state component if one doesn’t already exist, as shown below:
+`GestureComponent` needs to implement functions the app calls from the [`onChanged(_:)`](../SwiftUI/gesture/onchanged%28_%29.md) and [`onEnded(_:)`](../SwiftUI/gesture/onended%28_%29.md) actions for each of the three supported types of gestures. The `onChange` functions first retrieve the gesture entity and its state component, creating a new state component if one doesn’t already exist, as shown below:
 
 ```swift
 mutating func onChanged(value: EntityTargetValue<DragGesture.Value>) {
@@ -135,9 +137,9 @@ let newOrientation = state.startOrientation.rotated(by: flippedRotation)
 entity.setOrientation(.init(newOrientation), relativeTo: nil)
 ```
 
-##### Create a Realityview Extension
+##### Create a RealityView extension
 
-To connect the SwiftUI gestures to the component, this sample uses an extension on [`RealityView`](realityview.md) that contains functions that send the gesture information to the component. For example, here’s the gesture property that forwards the drag gesture events to the component:
+To connect the SwiftUI gestures to the component, this sample uses an extension on [`RealityView`](./realityview.md) that contains functions that send the gesture information to the component. For example, here’s the gesture property that forwards the drag gesture events to the component:
 
 ```swift
 /// Builds a drag gesture.
@@ -148,7 +150,7 @@ var dragGesture: some Gesture {
 }
 ```
 
-The extension also contains a function that installs all three of the gestures to a [`RealityView`](realityview.md) at once:
+The extension also contains a function that installs all three of the gestures to a [`RealityView`](./realityview.md) at once:
 
 ```swift
 /// Apply this to a `RealityView` to pass gestures on to the component code.
@@ -159,9 +161,9 @@ func installGestures() -> some View {
 }
 ```
 
-##### Install the Gestures on the Realityview
+##### Install the gestures on the RealityView
 
-To forward the gesture information to the entity components, the app calls the `installGestures()` function on the [`RealityView`](realityview.md) returned from the initializer.
+To forward the gesture information to the entity components, the app calls the `installGestures()` function on the [`RealityView`](./realityview.md) returned from the initializer.
 
 ```swift
 RealityView { content in
@@ -175,9 +177,9 @@ RealityView { content in
 .installGestures()
 ```
 
-##### Add the Gesture Component to Entities
+##### Add the gesture component to entities
 
-Once the app installs the gestures on the [`RealityView`](realityview.md), people can manipulate any entity containing a `GestureComponent`. This sample uses a Reality Composer Pro scene to add a `GestureComponent` to each of its entities. It also adds an [`InputTargetComponent`](inputtargetcomponent.md) and a [`CollisionComponent`](collisioncomponent.md) to those entities, because all three components are necessary for the entity to support gestures. Each of the four entities in the sample’s Reality Composer scene support a different combination of gestures.
+Once the app installs the gestures on the [`RealityView`](./realityview.md), people can manipulate any entity containing a `GestureComponent`. This sample uses a Reality Composer Pro scene to add a `GestureComponent` to each of its entities. It also adds an [`InputTargetComponent`](./inputtargetcomponent.md) and a [`CollisionComponent`](./collisioncomponent.md) to those entities, because all three components are necessary for the entity to support gestures. Each of the four entities in the sample’s Reality Composer scene support a different combination of gestures.
 
 Instead of adding the component in Reality Composer Pro, the app could add the components to entities in code, like this:
 
@@ -191,35 +193,36 @@ myEntity.components.set(component)
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+### Scene content
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Generating interactive geometry with RealityKit](generating-interactive-geometry-with-realitykit.md)
+- [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md)
   Create an interactive mesh with low-level mesh and low-level texture.
-- [Combining 2D and 3D views in an immersive app](combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](./combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+- [Responding to gestures on an entity](./responding-to-gestures-on-an-entity.md)
   Respond to gestures performed on RealityKit entities using input target and collision components.
-- [Models and meshes](scene-content-models-and-meshes.md)
+- [Models and meshes](./scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
-- [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
+- [Materials, textures, and shaders](./scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
-- [Anchors](scene-content-anchors.md)
+- [Anchors](./scene-content-anchors.md)
   Lock virtual content to the real world.
-- [Lights and cameras](scene-content-lights-and-cameras.md)
+- [Lights and cameras](./scene-content-lights-and-cameras.md)
   Control the lighting and point of view for a scene.
-- [Content synchronization](scene-content-content-synchronization.md)
+- [Content synchronization](./scene-content-content-synchronization.md)
   Synchronize the contents of entities locally or across the network.
-- [Audio](scene-content-audio.md)
+- [Audio](./scene-content-audio.md)
   Create personalized and realistic spatial audio experiences.
-- [Videos](scene-content-videos.md)
+- [Videos](./scene-content-videos.md)
   Present videos in your RealityKit experiences.
-- [Images](scene-content-images.md)
+- [Images](./scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
-- [Mesh deformation](scene-content-mesh-deformation.md)
+- [Mesh deformation](./scene-content-mesh-deformation.md)
   Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 

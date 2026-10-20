@@ -1,14 +1,15 @@
 # kABOperationNotPermittedByStoreError
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation is not allowed by the Address Book database, because the contactâ€™s source does not support it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ The operation is not allowed by the Address Book database, because the contactâ€
 var kABOperationNotPermittedByStoreError: Int { get }
 ```
 
+```c
+kABOperationNotPermittedByStoreError
+```
+
 ## See Also
 
-- [var kABOperationNotPermittedByUserError: Int](kaboperationnotpermittedbyusererror.md)
+### Constants
+- [var kABOperationNotPermittedByUserError: Int](./kaboperationnotpermittedbyusererror.md)
   The operation is not allowed because the user denied access to the Address Book database.
 
 

@@ -1,7 +1,8 @@
 # CVAttachmentRawValue
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A lightweight wrapper around raw attachment values.
 
@@ -27,35 +28,36 @@ This type encapsulates a raw attachment value and provides dictionary-like acces
 ## Topics
 
 ### Initializers
-- [init()](cvattachmentrawvalue/init.md)
+- [init()](./cvattachmentrawvalue/init%28%29.md)
   Creates an empty raw attachment value.
-- [init(dictionaryLiteral: (String, (any CVAttachmentValueRepresentable)?)...)](cvattachmentrawvalue/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (String, (any CVAttachmentValueRepresentable)?)...)](./cvattachmentrawvalue/init%28dictionaryliteral%29.md)
   Creates raw attachment value from dictionary literal.
 ### Subscripts
-- [subscript<Value>(String, as _: Value.Type) -> Value?](cvattachmentrawvalue/subscript(_:as:).md)
+- [subscript<Value>(String, as _: Value.Type) -> Value?](./cvattachmentrawvalue/subscript%28_,as%29.md)
   Get or set value associated with the specified key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByDictionaryLiteral](../swift/expressiblebydictionaryliteral.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByDictionaryLiteral](../Swift/expressiblebydictionaryliteral.md)
 
 ## See Also
 
-- [struct CVAttachmentAccess](cvattachmentaccess.md)
+### Attachment system (Swift)
+- [struct CVAttachmentAccess](./cvattachmentaccess.md)
   Provides access to the attachments of a buffer.
-- [struct CVAttachmentContainer](cvattachmentcontainer.md)
+- [struct CVAttachmentContainer](./cvattachmentcontainer.md)
   Provides storage for buffer attachments independent of the buffer lifetime
-- [struct CVAttachmentKeyDefinition](cvattachmentkeydefinition.md)
+- [struct CVAttachmentKeyDefinition](./cvattachmentkeydefinition.md)
   Associates a raw attachment key with a value type and preferred propagation mode.
-- [struct CVAttachmentKeyDefinitionWithDefault](cvattachmentkeydefinitionwithdefault.md)
+- [struct CVAttachmentKeyDefinitionWithDefault](./cvattachmentkeydefinitionwithdefault.md)
   Associates a raw attachment key with a default value and preferred propagation mode.
-- [struct CVAttachmentCompositeKeyDefinition](cvattachmentcompositekeydefinition.md)
+- [struct CVAttachmentCompositeKeyDefinition](./cvattachmentcompositekeydefinition.md)
   Associates a set of raw attachment keys with a value type and preferred propagation mode.
-- [enum CVAttachmentModePreferenceShouldPropagate](cvattachmentmodepreferenceshouldpropagate.md)
+- [enum CVAttachmentModePreferenceShouldPropagate](./cvattachmentmodepreferenceshouldpropagate.md)
   Sets preferred mode for attachment to should propagate
-- [enum CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
+- [enum CVAttachmentModePreferenceShouldNotPropagate](./cvattachmentmodepreferenceshouldnotpropagate.md)
   Sets preferred mode for attachment to should not propagate
 
 

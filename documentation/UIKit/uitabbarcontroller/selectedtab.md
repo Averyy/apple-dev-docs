@@ -1,7 +1,8 @@
 # selectedTab
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected tab, which can be a root tab or any of their descendants.
 
@@ -18,15 +19,20 @@ The currently selected tab, which can be a root tab or any of their descendants.
 var selectedTab: UITab? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UITab * selectedTab;
+```
+
 #### Discussion
 
 The default value for this property is `nil`.
 
 ## See Also
 
-- [var selectedViewController: UIViewController?](uitabbarcontroller/selectedviewcontroller.md)
+### Managing the selected tab
+- [var selectedViewController: UIViewController?](./selectedviewcontroller.md)
   The view controller associated with the currently selected tab item.
-- [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The index of the view controller associated with the currently selected tab item.
 
 

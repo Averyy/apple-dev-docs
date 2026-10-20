@@ -1,7 +1,8 @@
 # init(title:given:givenInformal:given2:surnamePrefix:surname:surname2:credentials:generation:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

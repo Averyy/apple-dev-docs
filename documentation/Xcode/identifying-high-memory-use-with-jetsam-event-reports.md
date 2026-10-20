@@ -1,6 +1,7 @@
 # Identifying high-memory use with jetsam event reports
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Discover why the operating system terminated your app when available memory was low.
 
@@ -10,7 +11,7 @@ iOS, iPadOS, tvOS, visionOS, and watchOS have a virtual memory system that relie
 
 Jetsam event reports differ from crash reports because they contain the overall memory use of all apps and system processes on a device, they’re in JSON format, and they don’t contain the backtraces of any threads in your app. If the system jettisons your app due to memory pressure while the app is visible, it will look like your app crashed. Use jetsam event reports to identify your app’s role in jetsam events, even if your app didn’t get jettisoned.
 
-##### Identify the Memory Page Size and Largest Process
+##### Identify the memory page size and largest process
 
 The jetsam event report records how much memory each process used before jettisoning an app. The virtual memory system allocates and manages memory in chunks, called *memory pages*, and the report lists the memory use as the number of memory pages used. To convert the number of memory pages into the bytes of memory your app used, you need to know the *page size*, which is the number of bytes in one memory page.
 
@@ -33,11 +34,11 @@ The `pageSize` field in the jetsam event report header records the number of byt
 
 While inspecting the header, examine the `largestProcess` field—this field names the process using the highest number of memory pages on the system. If other apps in addition to yours are regularly jettisoned, and your app is the largest process, you should reduce your memory use to better cooperate with other apps’ memory needs.
 
-##### Identify the Jetsam Reason
+##### Identify the jetsam reason
 
 A jetsam event report contains a `processes` array, with each item in the array describing a single process in the system. Search for the `reason` key to identify the jettisoned process and why the system jettisoned it. Only the jettisoned process has the reason key.
 
-> ❗ **Important**: If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see [`Acquiring crash reports and diagnostic logs`](acquiring-crash-reports-and-diagnostic-logs.md) to locate its crash report.
+> ❗ **Important**: If your app crashed, but the jettisoned process isn’t your app, then the crash isn’t due to memory pressure. To diagnose your app’s issue, see [Acquiring crash reports and diagnostic logs](./acquiring-crash-reports-and-diagnostic-logs.md) to locate its crash report.
 
 This example is one process entry in the `processes` array:
 
@@ -60,7 +61,7 @@ This example is one process entry in the `processes` array:
 
 If the jettisoned process is your app, the value of the `reason` key explains the conditions that led to the jetsam event:
 
-- `per-process-limit`: The process crossed the resident memory limit imposed by the system on all apps. Crossing this limit makes the process eligible for termination. If the process is an app extension from your app, note that extensions have a much lower per-process memory limit than foreground apps. Carefully consider your needs before using technologies with a high-baseline memory cost, such as [`SpriteKit`](https://developer.apple.com/documentation/spritekit) or a [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview), in an extension point. Alternate solutions may be more appropriate. For example, an image created by [`MKMapSnapshotter`](https://developer.apple.com/documentation/mapkit/mkmapsnapshotter) has lower memory use than a [`MKMapView`](https://developer.apple.com/documentation/mapkit/mkmapview), and is a better choice for many extension-point scenarios.
+- `per-process-limit`: The process crossed the resident memory limit imposed by the system on all apps. Crossing this limit makes the process eligible for termination. If the process is an app extension from your app, note that extensions have a much lower per-process memory limit than foreground apps. Carefully consider your needs before using technologies with a high-baseline memory cost, such as [SpriteKit](../SpriteKit/SpriteKit.md) or a [`MKMapView`](../MapKit/mkmapview.md), in an extension point. Alternate solutions may be more appropriate. For example, an image created by [`MKMapSnapshotter`](../MapKit/mkmapsnapshotter.md) has lower memory use than a [`MKMapView`](../MapKit/mkmapview.md), and is a better choice for many extension-point scenarios.
 - `vm-pageshortage`: The system experienced memory pressure and needed to free background process memory for the current foreground app.
 - `vnode-limit`: Too many files were open across the system. The kernel has a finite number of *vnodes*, a memory structure backing open files, and these were almost exhausted. To avoid terminating the frontmost app when vnodes are nearly exhausted, the system may terminate your app in the background to free vnodes, even if your app isn’t the source of excess vnode use.
 - `highwater`: A system daemon exceeded its highest-expected memory footprint.
@@ -71,22 +72,24 @@ To determine the amount of memory your app is using, multiply the number of memo
 
 Each item in the `processes` array also has the following keys, which provide additional information for diagnosing the issue.
 
-- `uuid`: The build UUID of the binary. This helps you identify the version of your app by comparing this value to the available dSYM files for builds distributed to customers. To learn more about the build UUID, see [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md).
+- `uuid`: The build UUID of the binary. This helps you identify the version of your app by comparing this value to the available dSYM files for builds distributed to customers. To learn more about the build UUID, see [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md).
 - `states`: Describes the app’s current memory use state, such as using memory as the `frontmost` app, or `suspended` and not actively using memory.
 - `lifetimeMax`: The highest number of memory pages allocated during the lifetime of the process.
 - `coalition`: If your app’s process is part of a coalition that involves other system processes doing work on behalf of your app, use this information to identify related processes and their memory use, as your app can influence the memory use of other coalition processes.
 - `name`: The process name. See if this name matches a binary from your app, or belongs to another app or system process.
 
-##### Make Changes to Your Apps Memory Use
+##### Make changes to your app’s memory use
 
-Once you confirm that your app is crashing due to high-memory use, by analyzing the jetsam event report, see [`Gathering information about memory use`](gathering-information-about-memory-use.md) to understand your app’s memory use patterns, and [`Making changes to reduce memory use`](making-changes-to-reduce-memory-use.md) for techniques to lower your memory use.
+Once you confirm that your app is crashing due to high-memory use, by analyzing the jetsam event report, see [Gathering information about memory use](./gathering-information-about-memory-use.md) to understand your app’s memory use patterns, and [Making changes to reduce memory use](./making-changes-to-reduce-memory-use.md) for techniques to lower your memory use.
 
-In addition to lowering your app’s memory use, ensure you are receiving the low-memory warnings sent by the system and acting on these warnings to cooperate with the needs of the operating system and lower your appʼs memory use—see [`Responding to low-memory warnings`](responding-to-low-memory-warnings.md) for the specific ways the system notifies your app.
+In addition to lowering your app’s memory use, ensure you are receiving the low-memory warnings sent by the system and acting on these warnings to cooperate with the needs of the operating system and lower your appʼs memory use—see [Responding to low-memory warnings](./responding-to-low-memory-warnings.md) for the specific ways the system notifies your app.
 
 ## See Also
 
-- [Reducing your app’s memory use](reducing-your-app-s-memory-use.md)
+### Related Documentation
+- [Reducing your app’s memory use](./reducing-your-app-s-memory-use.md)
   Improve your app’s performance by analyzing memory-use metrics and making changes to maximize memory efficiency.
+### Device logs
 - [Logging](../os/logging.md)
   Capture telemetry from your app for debugging and performance analysis using the unified logging system.
 

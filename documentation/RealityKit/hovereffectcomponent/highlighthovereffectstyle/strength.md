@@ -1,7 +1,8 @@
 # strength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A floating-point value that represents the intensity of the effect.
 

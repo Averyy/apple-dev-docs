@@ -1,7 +1,8 @@
 # init(assetPath:primPath:layerOffset:customData:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference.
 

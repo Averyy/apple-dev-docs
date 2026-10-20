@@ -1,7 +1,8 @@
 # playerViewController(_:skipToPreviousChannel:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the user wants to skip to the previous channel.
 
@@ -11,7 +12,15 @@ Tells the delegate when the user wants to skip to the previous channel.
 ## Declaration
 
 ```swift
+optional func playerViewController(_ playerViewController: AVPlayerViewController, skipToPreviousChannel completion: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func playerViewControllerSkipToPreviousChannel(_ playerViewController: AVPlayerViewController) async -> Bool
+```
+
+```objc
+- (void) playerViewController:(AVPlayerViewController *) playerViewController skipToPreviousChannel:(void (^)(BOOL success)) completion;
 ```
 
 #### Discussion
@@ -27,11 +36,12 @@ Each call to this method should advance one channel, relative to the previous re
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, skipToNextChannel: (Bool) -> Void)](avplayerviewcontrollerdelegate/playerviewcontroller(_:skiptonextchannel:).md)
+### Responding to channel changes
+- [func playerViewController(AVPlayerViewController, skipToNextChannel: (Bool) -> Void)](./playerviewcontroller%28_,skiptonextchannel%29.md)
   Tells the delegate when the user wants to skip to the next channel.
-- [func nextChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](avplayerviewcontrollerdelegate/nextchannelinterstitialviewcontroller(for:).md)
+- [func nextChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](./nextchannelinterstitialviewcontroller%28for%29.md)
   Asks the delegate for a view controller that describes the layout of the next channel’s interstitial view.
-- [func previousChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](avplayerviewcontrollerdelegate/previouschannelinterstitialviewcontroller(for:).md)
+- [func previousChannelInterstitialViewController(for: AVPlayerViewController) -> UIViewController](./previouschannelinterstitialviewcontroller%28for%29.md)
   Asks the delegate for a view controller that describes the layout of the previous channel’s interstitial view.
 
 

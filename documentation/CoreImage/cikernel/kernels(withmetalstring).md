@@ -1,7 +1,8 @@
 # kernels(withMetalString:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Load kernels from a Metal language string.
 
@@ -19,9 +20,13 @@ Load kernels from a Metal language string.
 class func kernels(withMetalString source: String) throws -> [CIKernel]
 ```
 
+```objc
++ (NSArray<CIKernel *> *) kernelsWithMetalString:(NSString *) source error:(NSError **) error;
+```
+
 #### Return Value
 
-An array of [`CIKernel`](cikernel.md) objects.
+An array of [`CIKernel`](../cikernel.md) objects.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ An array of [`CIKernel`](cikernel.md) objects.
 
 ## See Also
 
-- [convenience init(functionName: String, fromMetalLibraryData: Data) throws](cikernel/init(functionname:frommetallibrarydata:).md)
+### Creating a Kernel Using Metal Shading Language
+- [convenience init(functionName: String, fromMetalLibraryData: Data) throws](./init%28functionname,frommetallibrarydata%29.md)
   Creates a single kernel object using a Metal Shading Language (MSL) kernel function.
-- [convenience init(functionName: String, fromMetalLibraryData: Data, outputPixelFormat: CIFormat) throws](cikernel/init(functionname:frommetallibrarydata:outputpixelformat:).md)
+- [convenience init(functionName: String, fromMetalLibraryData: Data, outputPixelFormat: CIFormat) throws](./init%28functionname,frommetallibrarydata,outputpixelformat%29.md)
   Creates a single kernel object using a Metal Shading Language kernel function with optional pixel format.
-- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](cikernel/kernelnames(frommetallibrarydata:).md)
+- [class func kernelNames(fromMetalLibraryData: Data) -> [String]](./kernelnames%28frommetallibrarydata%29.md)
   Return an array of strings containing the names of all of the kernels contained in the Metal library.
 
 

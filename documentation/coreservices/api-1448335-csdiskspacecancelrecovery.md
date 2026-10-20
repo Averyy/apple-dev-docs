@@ -1,7 +1,8 @@
 # CSDiskSpaceCancelRecovery(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSDiskSpaceCancelRecovery(_ operationUUID: CFUUID!)
+```
+
+```c
+void CSDiskSpaceCancelRecovery(CFUUIDRef operationUUID);
 ```
 
 

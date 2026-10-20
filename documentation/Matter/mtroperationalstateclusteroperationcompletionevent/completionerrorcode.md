@@ -1,7 +1,8 @@
 # completionErrorCode
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var completionErrorCode: NSNumber { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * completionErrorCode;
 ```
 
 

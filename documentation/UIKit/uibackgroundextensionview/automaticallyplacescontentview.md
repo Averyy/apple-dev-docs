@@ -1,7 +1,8 @@
 # automaticallyPlacesContentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the automatic safe area placement of the `contentView` within the container.
 
@@ -16,6 +17,10 @@ Controls the automatic safe area placement of the `contentView` within the conta
 
 ```swift
 var automaticallyPlacesContentView: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL automaticallyPlacesContentView;
 ```
 
 #### Discussion

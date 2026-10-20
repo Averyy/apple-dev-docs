@@ -1,14 +1,15 @@
 # MACH_VM_RANGE_FLAVOR_V1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 MACH_VM_RANGE_FLAVOR_V1
 ```
 

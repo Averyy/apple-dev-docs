@@ -1,7 +1,8 @@
 # performsFirstActionWithFullSwipe
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether a full swipe automatically performs the first action.
 
@@ -17,13 +18,18 @@ A Boolean value indicating whether a full swipe automatically performs the first
 var performsFirstActionWithFullSwipe: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL performsFirstActionWithFullSwipe;
+```
+
 #### Discussion
 
-When this property is set to [`true`](https://developer.apple.com/documentation/swift/true), a full swipe in the row performs the first action listed in the [`actions`](uiswipeactionsconfiguration/actions.md) property. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When this property is set to [`true`](../../Swift/true.md), a full swipe in the row performs the first action listed in the [`actions`](./actions.md) property. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var actions: [UIContextualAction]](uiswipeactionsconfiguration/actions.md)
+### Getting the swipe action information
+- [var actions: [UIContextualAction]](./actions.md)
   The swipe actions.
 
 

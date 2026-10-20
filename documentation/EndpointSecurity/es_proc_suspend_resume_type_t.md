@@ -1,13 +1,14 @@
 # es_proc_suspend_resume_type_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of a process suspension or resumption event.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,37 +16,42 @@ The type of a process suspension or resumption event.
 struct es_proc_suspend_resume_type_t
 ```
 
+```c
+typedef enum { ... } es_proc_suspend_resume_type_t;
+```
+
 ## Topics
 
 ### Event Types
-- [var ES_PROC_SUSPEND_RESUME_TYPE_SUSPEND: es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_suspend.md)
+- [var ES_PROC_SUSPEND_RESUME_TYPE_SUSPEND: es_proc_suspend_resume_type_t](./es_proc_suspend_resume_type_suspend.md)
   An event type for process suspension events.
-- [var ES_PROC_SUSPEND_RESUME_TYPE_RESUME: es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_resume.md)
+- [var ES_PROC_SUSPEND_RESUME_TYPE_RESUME: es_proc_suspend_resume_type_t](./es_proc_suspend_resume_type_resume.md)
   An event type for process resumption events.
-- [var ES_PROC_SUSPEND_RESUME_TYPE_SHUTDOWN_SOCKETS: es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_shutdown_sockets.md)
+- [var ES_PROC_SUSPEND_RESUME_TYPE_SHUTDOWN_SOCKETS: es_proc_suspend_resume_type_t](./es_proc_suspend_resume_type_shutdown_sockets.md)
   An event type for process socket shutdown events.
 ### Initializers
-- [init(UInt32)](es_proc_suspend_resume_type_t/init(_:).md)
-- [init(rawValue: UInt32)](es_proc_suspend_resume_type_t/init(rawvalue:).md)
+- [init(UInt32)](./es_proc_suspend_resume_type_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./es_proc_suspend_resume_type_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](es_proc_suspend_resume_type_t/rawvalue.md)
+- [var rawValue: UInt32](./es_proc_suspend_resume_type_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var target: UnsafeMutablePointer<es_process_t>?](es_event_proc_suspend_resume_t/target.md)
+### Inspecting Event Properties
+- [var target: UnsafeMutablePointer<es_process_t>?](./es_event_proc_suspend_resume_t/target.md)
   The process targeted by this event.
-- [var type: es_proc_suspend_resume_type_t](es_event_proc_suspend_resume_t/type.md)
+- [var type: es_proc_suspend_resume_type_t](./es_event_proc_suspend_resume_t/type.md)
   The type of event: suspend, resume, or socket shutdown.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_proc_suspend_resume_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_proc_suspend_resume_t/reserved.md)
   An unused field reserved for future use.
 
 

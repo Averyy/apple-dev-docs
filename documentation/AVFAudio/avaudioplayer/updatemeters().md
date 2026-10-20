@@ -1,7 +1,8 @@
 # updateMeters()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Refreshes the average and peak power values for all channels of an audio player.
 
@@ -20,13 +21,18 @@ Refreshes the average and peak power values for all channels of an audio player.
 func updateMeters()
 ```
 
+```objc
+- (void) updateMeters;
+```
+
 ## See Also
 
-- [var isMeteringEnabled: Bool](avaudioplayer/ismeteringenabled.md)
+### Managing audio-level metering
+- [var isMeteringEnabled: Bool](./ismeteringenabled.md)
   A Boolean value that indicates whether the player is able to generate audio-level metering data.
-- [func averagePower(forChannel: Int) -> Float](avaudioplayer/averagepower(forchannel:).md)
+- [func averagePower(forChannel: Int) -> Float](./averagepower%28forchannel%29.md)
   Returns the average power, in decibels full-scale (dBFS), for an audio channel.
-- [func peakPower(forChannel: Int) -> Float](avaudioplayer/peakpower(forchannel:).md)
+- [func peakPower(forChannel: Int) -> Float](./peakpower%28forchannel%29.md)
   Returns the peak power, in decibels full-scale (dBFS), for an audio channel.
 
 

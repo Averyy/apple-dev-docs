@@ -1,7 +1,8 @@
 # AVCustomRoutingPartialIP
 
 **Framework**: AVRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a full or partial IP address.
 
@@ -17,9 +18,13 @@ An object that represents a full or partial IP address.
 class AVCustomRoutingPartialIP
 ```
 
+```objc
+@interface AVCustomRoutingPartialIP : NSObject
+```
+
 #### Overview
 
-Use this type to define the IP address and subnet mask of known routes on a local network. Create an instance of this class and add it to a custom routing controller’s [`knownRouteIPs`](avcustomroutingcontroller/knownrouteips.md) array like shown below:
+Use this type to define the IP address and subnet mask of known routes on a local network. Create an instance of this class and add it to a custom routing controller’s [`knownRouteIPs`](./avcustomroutingcontroller/knownrouteips.md) array like shown below:
 
 ```swift
 // Define the IP address.
@@ -40,31 +45,32 @@ routingController.knownRouteIPs.append(partialIP)
 ## Topics
 
 ### Creating an IP fragment
-- [init(address: Data, mask: Data)](avcustomroutingpartialip/init(address:mask:).md)
+- [init(address: Data, mask: Data)](./avcustomroutingpartialip/init%28address,mask%29.md)
   Creates an IP fragment.
 ### Inspecting the IP fragment
-- [var address: Data](avcustomroutingpartialip/address.md)
+- [var address: Data](./avcustomroutingpartialip/address.md)
   A full or partial IP address for a device known to be on the network.
-- [var mask: Data](avcustomroutingpartialip/mask.md)
+- [var mask: Data](./avcustomroutingpartialip/mask.md)
   A mask that represents how many octets of the IP address to respect.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var knownRouteIPs: [AVCustomRoutingPartialIP]](avcustomroutingcontroller/knownrouteips.md)
+### Configuring route addresses
+- [var knownRouteIPs: [AVCustomRoutingPartialIP]](./avcustomroutingcontroller/knownrouteips.md)
   An array of route addresses known to be on the local network.
 
 

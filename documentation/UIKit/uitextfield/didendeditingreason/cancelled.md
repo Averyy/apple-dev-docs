@@ -1,7 +1,8 @@
 # UITextField.DidEndEditingReason.cancelled
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The text field changes were aborted.
 
@@ -14,13 +15,18 @@ The text field changes were aborted.
 case cancelled
 ```
 
+```c
+UITextFieldDidEndEditingReasonCancelled
+```
+
 #### Discussion
 
 On tvOS, text field changes become cancelled when the user dismisses the text entry interface by pressing the Menu button.
 
 ## See Also
 
-- [UITextField.DidEndEditingReason.committed](uitextfield/didendeditingreason/committed.md)
+### Constants
+- [UITextField.DidEndEditingReason.committed](./committed.md)
   The text field changes were accepted by the user.
 
 

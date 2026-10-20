@@ -1,7 +1,8 @@
 # date
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the weather data request.
 
@@ -22,9 +23,10 @@ var date: Date
 
 ## See Also
 
-- [var expirationDate: Date](weathermetadata/expirationdate.md)
+### Getting the properties
+- [var expirationDate: Date](./expirationdate.md)
   The time the weather data expires.
-- [var location: CLLocation](weathermetadata/location.md)
+- [var location: CLLocation](./location.md)
   The location of the request.
 
 

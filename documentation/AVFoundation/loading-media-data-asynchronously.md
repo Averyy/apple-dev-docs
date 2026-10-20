@@ -1,18 +1,19 @@
 # Loading media data asynchronously
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Build responsive apps by using language-level concurrency features to efficiently load media data.
 
 #### Overview
 
-AVFoundation uses the [`AVAsset`](avasset.md) class to model timed audiovisual media. Creating an asset is a lightweight operation because it defers loading its media until it requires the data. How long it takes an asset to load its data depends on factors, including the media’s size, local device capabilities, and remote network conditions. To avoid blocking the calling thread, you must load media data asynchronously.
+AVFoundation uses the [`AVAsset`](./avasset.md) class to model timed audiovisual media. Creating an asset is a lightweight operation because it defers loading its media until it requires the data. How long it takes an asset to load its data depends on factors, including the media’s size, local device capabilities, and remote network conditions. To avoid blocking the calling thread, you must load media data asynchronously.
 
-> ❗ **Important**:  Starting in iOS 16, tvOS 16, MacCatalyst 16, and macOS 13, AVFoundation deprecates using the synchronous properties and methods of [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) for Swift clients. It also deprecates loading property values asynchronously using the [`loadValuesAsynchronously(forKeys:completionHandler:)`](avasynchronouskeyvalueloading/loadvaluesasynchronously(forkeys:completionhandler:).md) method in favor of the syntax described below.
+> ❗ **Important**:  Starting in iOS 16, tvOS 16, MacCatalyst 16, and macOS 13, AVFoundation deprecates using the synchronous properties and methods of [`AVAsset`](./avasset.md), [`AVAssetTrack`](./avassettrack.md), and [`AVMetadataItem`](./avmetadataitem.md) for Swift clients. It also deprecates loading property values asynchronously using the [`loadValuesAsynchronously(forKeys:completionHandler:)`](./avasynchronouskeyvalueloading/loadvaluesasynchronously%28forkeys,completionhandler%29.md) method in favor of the syntax described below.
 
-##### Load Properties Asynchronously
+##### Load properties asynchronously
 
-The framework builds its asynchronous property-loading capabilities around two key types: [`AVAsyncProperty`](avasyncproperty.md) and [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md). The framework uses the [`AVAsyncProperty`](avasyncproperty.md) class to define type-safe identifiers for properties with values that require asynchronous loading, and uses the [`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) protocol to define the interface for objects to load properties asynchronously. [`AVAsset`](avasset.md), [`AVAssetTrack`](avassettrack.md), and [`AVMetadataItem`](avmetadataitem.md) adopt this protocol, which provides them an asynchronous [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method with the following signature:
+The framework builds its asynchronous property-loading capabilities around two key types: [`AVAsyncProperty`](./avasyncproperty.md) and [`AVAsynchronousKeyValueLoading`](./avasynchronouskeyvalueloading.md). The framework uses the [`AVAsyncProperty`](./avasyncproperty.md) class to define type-safe identifiers for properties with values that require asynchronous loading, and uses the [`AVAsynchronousKeyValueLoading`](./avasynchronouskeyvalueloading.md) protocol to define the interface for objects to load properties asynchronously. [`AVAsset`](./avasset.md), [`AVAssetTrack`](./avassettrack.md), and [`AVMetadataItem`](./avmetadataitem.md) adopt this protocol, which provides them an asynchronous [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md) method with the following signature:
 
 ```swift
 public func load<T>(_ property: AVAsyncProperty<Self, T>) async throws -> T
@@ -27,7 +28,7 @@ let duration = try await asset.load(.duration)
 let metadata = try await asset.load(.metadata)
 ```
 
-If you know in advance that you require loading several asset properties, you can use a variation of the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method that takes multiple identifiers and returns its result in a tuple. Like loading a single property value, loading several properties at the same time is also a type-safe operation.
+If you know in advance that you require loading several asset properties, you can use a variation of the [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md) method that takes multiple identifiers and returns its result in a tuple. Like loading a single property value, loading several properties at the same time is also a type-safe operation.
 
 ```swift
 // A CMTime value and an array of AVMetadataItem.
@@ -36,9 +37,9 @@ let (duration, metadata) = try await asset.load(.duration, .metadata)
 
 > **Note**:  Loading several properties at the same time enables AVFoundation to optimize performance by batch-loading requests.
 
-##### Determine a Property Status
+##### Determine a property status
 
-[`AVAsynchronousKeyValueLoading`](avasynchronouskeyvalueloading.md) also provides a [`status(of:)`](avasynchronouskeyvalueloading/status(of:).md) method that returns the status of a property identifier. It returns an [`AVAsyncProperty.Status`](avasyncproperty/status.md) value that indicates the state of the property’s value using the cases shown in the example below:
+[`AVAsynchronousKeyValueLoading`](./avasynchronouskeyvalueloading.md) also provides a [`status(of:)`](./avasynchronouskeyvalueloading/status%28of%29.md) method that returns the status of a property identifier. It returns an [`AVAsyncProperty.Status`](./avasyncproperty/status.md) value that indicates the state of the property’s value using the cases shown in the example below:
 
 ```swift
 // Determine the loaded status of the metadata property.
@@ -64,9 +65,9 @@ if case .loaded(let metadata) = asset.status(of: .metadata) {
 }
 ```
 
-##### Filter Property Collections
+##### Filter property collections
 
-Some properties provide arrays of values, such as an asset’s [`tracks`](avpartialasyncproperty/tracks-44ptx.md) or its [`metadata`](avpartialasyncproperty/metadata-16qej.md). In many cases, you’re interested in only a subset of those values. [`AVAsset`](avasset.md) and [`AVAssetTrack`](avassettrack.md) also provide methods to filter their collections to only the values that you require. For example, the code listing below determines the audio sample rates that an asset contains. It calls the asset’s [`loadTracks(withMediaType:completionHandler:)`](avasset/loadtracks(withmediatype:completionhandler:).md) to retrieve only its audio tracks. It iterates over each track and asynchronously loads the track’s format descriptions. Finally, it retrieves the sample rates from the stream description and sorts the results.
+Some properties provide arrays of values, such as an asset’s [`tracks`](./avpartialasyncproperty/tracks-44ptx.md) or its [`metadata`](./avpartialasyncproperty/metadata-16qej.md). In many cases, you’re interested in only a subset of those values. [`AVAsset`](./avasset.md) and [`AVAssetTrack`](./avassettrack.md) also provide methods to filter their collections to only the values that you require. For example, the code listing below determines the audio sample rates that an asset contains. It calls the asset’s [`loadTracks(withMediaType:completionHandler:)`](./avasset/loadtracks%28withmediatype,completionhandler%29.md) to retrieve only its audio tracks. It iterates over each track and asynchronously loads the track’s format descriptions. Finally, it retrieves the sample rates from the stream description and sorts the results.
 
 ```swift
 // Load the asset's audio tracks asynchronously.

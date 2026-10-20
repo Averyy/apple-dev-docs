@@ -1,7 +1,8 @@
 # NSPersistentStoreRequestType.batchDeleteRequestType
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request that deletes data for multiple managed objects from a persistent store.
 
@@ -20,15 +21,20 @@ A request that deletes data for multiple managed objects from a persistent store
 case batchDeleteRequestType
 ```
 
+```c
+NSBatchDeleteRequestType
+```
+
 ## See Also
 
-- [NSPersistentStoreRequestType.fetchRequestType](nspersistentstorerequesttype/fetchrequesttype.md)
+### Constants
+- [NSPersistentStoreRequestType.fetchRequestType](./fetchrequesttype.md)
   Specifies that the request returns managed objects.
-- [NSPersistentStoreRequestType.saveRequestType](nspersistentstorerequesttype/saverequesttype.md)
+- [NSPersistentStoreRequestType.saveRequestType](./saverequesttype.md)
   Specifies that the request saves managed objects.
-- [NSPersistentStoreRequestType.batchInsertRequestType](nspersistentstorerequesttype/batchinsertrequesttype.md)
+- [NSPersistentStoreRequestType.batchInsertRequestType](./batchinsertrequesttype.md)
   A request that inserts data into a persistent store using a batch of managed objects or dictionaries.
-- [NSPersistentStoreRequestType.batchUpdateRequestType](nspersistentstorerequesttype/batchupdaterequesttype.md)
+- [NSPersistentStoreRequestType.batchUpdateRequestType](./batchupdaterequesttype.md)
   A request that updates data for multiple managed objects in a persistent store.
 
 

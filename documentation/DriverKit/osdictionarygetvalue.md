@@ -1,28 +1,30 @@
 # OSDictionaryGetValue
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 OSObjectPtrOSDictionaryGetValue(OSDictionaryPtr obj, const char *key);
 ```
 
 ## See Also
 
-- [OSDictionaryGetStringValue](osdictionarygetstringvalue.md)
-- [OSDictionaryGetUInt64Value](osdictionarygetuint64value.md)
-- [OSDictionarySetValue](osdictionarysetvalue.md)
-- [OSDictionarySetStringValue](osdictionarysetstringvalue.md)
-- [OSDictionarySetUInt64Value](osdictionarysetuint64value.md)
-- [OSDictionaryPtr](osdictionaryptr.md)
+### Getting and Setting Values
+- [OSDictionaryGetStringValue](./osdictionarygetstringvalue.md)
+- [OSDictionaryGetUInt64Value](./osdictionarygetuint64value.md)
+- [OSDictionarySetValue](./osdictionarysetvalue.md)
+- [OSDictionarySetStringValue](./osdictionarysetstringvalue.md)
+- [OSDictionarySetUInt64Value](./osdictionarysetuint64value.md)
+- [OSDictionaryPtr](./osdictionaryptr.md)
 
 
 ---

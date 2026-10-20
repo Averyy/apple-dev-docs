@@ -1,21 +1,22 @@
 # InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.0+
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships.InAppPurchaseV2.Data](./inapppurchasev2-data.dictionary/data-data.dictionary.md)
   The request body you use to create an In-App Purchase App Store review screenshot.
 
 ## Properties

@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Access the single instance of a DNS settings manager.
 
@@ -18,17 +19,22 @@ Access the single instance of a DNS settings manager.
 class func shared() -> NEDNSSettingsManager
 ```
 
+```objc
++ (NEDNSSettingsManager *) sharedManager;
+```
+
 #### Return Value
 
 The DNS settings manager instance for the calling application.
 
 ## See Also
 
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/loadfrompreferences(completionhandler:).md)
+### Managing DNS configurations
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Load your DNS settings configuration from the system networking preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./savetopreferences%28completionhandler%29.md)
   Save your DNS settings configuration to the system networking preferences.
-- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](nednssettingsmanager/removefrompreferences(completionhandler:).md)
+- [func removeFromPreferences(completionHandler: ((any Error)?) -> Void)](./removefrompreferences%28completionhandler%29.md)
   Remove your DNS settings configuration from the system networking preferences.
 
 

@@ -1,7 +1,8 @@
 # Genre.LibrarySortProperties
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the set of genre properties your app uses to sort results for a library request.
 

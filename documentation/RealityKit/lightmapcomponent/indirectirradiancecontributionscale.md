@@ -1,7 +1,8 @@
 # indirectIrradianceContributionScale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Multiplies the indirect irradiance contribution stored in the lightmap by the given value.
 

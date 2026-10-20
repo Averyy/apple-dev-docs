@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum walking steadiness percentage for the classification.
 
@@ -10,7 +11,7 @@ The maximum walking steadiness percentage for the classification.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,11 +22,12 @@ var minimum: HKQuantity { get }
 
 #### Discussion
 
-This property contains the maximum walking steadiness value for the classification. It contains an [`HKQuantity`](hkquantity.md) instance with a percentage value between `0.0` and `1.0`.
+This property contains the maximum walking steadiness value for the classification. It contains an [`HKQuantity`](../hkquantity.md) instance with a percentage value between `0.0` and `1.0`.
 
 ## See Also
 
-- [var maximum: HKQuantity](hkapplewalkingsteadinessclassification/maximum.md)
+### Accessing extremes
+- [var maximum: HKQuantity](./maximum.md)
   The minimum walking steadiness percentage for the classification.
 
 

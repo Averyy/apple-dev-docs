@@ -1,7 +1,8 @@
 # opacityThreshold
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum opacity value to treat as fully opaque.
 
@@ -22,9 +23,9 @@ var opacityThreshold: Float? { get set }
 
 In a custom material, `opacityThreshold` helps define how RealityKit renders transparency when using a texture (known as an *alpha map*) to control opacity. This property is available as an input to the material’s surface shader, but RealityKit doesn’t automatically use this value to render your entity. To render an entity transparent, call `params.surface().set_opacity()` from the surface shader.
 
-When `opacityThreshold` is set, [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) uses the opacity texture as a mask. RealityKit discards pixels with opacity values less than the `opacityThreshold`, and renders opacity values greater than or equal to `opacityThreshold` fully opaque.
+When `opacityThreshold` is set, [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md) uses the opacity texture as a mask. RealityKit discards pixels with opacity values less than the `opacityThreshold`, and renders opacity values greater than or equal to `opacityThreshold` fully opaque.
 
-The following Metal code replicates the behavior of the [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) shaders:
+The following Metal code replicates the behavior of the [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md) shaders:
 
 ```cpp
 // Retrieve the threshold from the CustomMaterial.
@@ -54,7 +55,8 @@ params.surface().set_opacity(opacity);
 
 ## See Also
 
-- [var blending: CustomMaterial.Blending](custommaterial/blending-swift.property.md)
+### Controlling opacity
+- [var blending: CustomMaterial.Blending](./blending-swift.property.md)
   The transparency of an entity.
 
 

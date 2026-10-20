@@ -1,7 +1,8 @@
 # common
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A pseudo-mode that includes one or more other run loop modes.
 
@@ -20,19 +21,24 @@ A pseudo-mode that includes one or more other run loop modes.
 static let common: RunLoop.Mode
 ```
 
+```c
+extern NSRunLoopMode const NSRunLoopCommonModes;
+```
+
 #### Discussion
 
-When you add an object to a run loop using this mode, the runloop monitors the object when running in any of the common modes. For details about adding a runloop mode to the set of common modes, see [`CFRunLoopAddCommonMode(_:_:)`](https://developer.apple.com/documentation/corefoundation/cfrunloopaddcommonmode(_:_:)).
+When you add an object to a run loop using this mode, the runloop monitors the object when running in any of the common modes. For details about adding a runloop mode to the set of common modes, see [`CFRunLoopAddCommonMode(_:_:)`](../../../CoreFoundation/cfrunloopaddcommonmode%28_,_%29.md).
 
 ## See Also
 
-- [static let `default`: RunLoop.Mode](runloop/mode/default.md)
+### System Run Loop Modes
+- [static let `default`: RunLoop.Mode](./default.md)
   The mode set to handle input sources other than connection objects.
-- [static let eventTracking: RunLoop.Mode](runloop/mode/eventtracking.md)
+- [static let eventTracking: RunLoop.Mode](./eventtracking.md)
   The mode set when tracking events modally, such as a mouse-dragging loop.
-- [static let modalPanel: RunLoop.Mode](runloop/mode/modalpanel.md)
+- [static let modalPanel: RunLoop.Mode](./modalpanel.md)
   The mode set when waiting for input from a modal panel, such as a save or open panel.
-- [static let tracking: RunLoop.Mode](runloop/mode/tracking.md)
+- [static let tracking: RunLoop.Mode](./tracking.md)
   The mode set while tracking in controls takes place.
 
 

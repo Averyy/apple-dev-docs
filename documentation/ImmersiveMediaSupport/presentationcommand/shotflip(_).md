@@ -1,7 +1,8 @@
 # PresentationCommand.shotFlip(_:)
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents a command that mirrors a whole frame vertically for the duration of the command.
 

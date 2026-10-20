@@ -1,21 +1,22 @@
 # AppEventLocalization.Relationships.AppEventScreenshots
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 1.7+
 
 ## Declaration
 
-```swift
+```
 object AppEventLocalization.Relationships.AppEventScreenshots
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventLocalization.Relationships.AppEventScreenshots.Data](appeventlocalization/relationships-data.dictionary/appeventscreenshots-data.dictionary/data-data.dictionary.md)
+- [object AppEventLocalization.Relationships.AppEventScreenshots.Data](./appeventscreenshots-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app event localization.
 
 ## Properties
@@ -26,8 +27,9 @@ object AppEventLocalization.Relationships.AppEventScreenshots
 
 ## See Also
 
-- [object AppEventLocalization.Relationships.AppEvent](appeventlocalization/relationships-data.dictionary/appevent-data.dictionary.md)
-- [object AppEventLocalization.Relationships.AppEventVideoClips](appeventlocalization/relationships-data.dictionary/appeventvideoclips-data.dictionary.md)
+### Objects
+- [object AppEventLocalization.Relationships.AppEvent](./appevent-data.dictionary.md)
+- [object AppEventLocalization.Relationships.AppEventVideoClips](./appeventvideoclips-data.dictionary.md)
 
 
 ---

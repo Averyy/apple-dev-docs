@@ -1,7 +1,8 @@
 # invalidTask
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Target task isn’t an active task.
 

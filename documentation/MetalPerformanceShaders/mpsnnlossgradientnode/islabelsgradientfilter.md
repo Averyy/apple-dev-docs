@@ -1,7 +1,8 @@
 # isLabelsGradientFilter
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isLabelsGradientFilter: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL isLabelsGradientFilter;
 ```
 
 

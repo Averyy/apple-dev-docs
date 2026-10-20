@@ -1,7 +1,8 @@
 # AssetDataReferenceObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The external reference.
 
@@ -16,7 +17,7 @@ The external reference.
 
 ## Declaration
 
-```swift
+```
 object AssetDataReferenceObject
 ```
 
@@ -29,7 +30,8 @@ object AssetDataReferenceObject
 
 ## See Also
 
-- [object AssetDataAuthenticationObject](assetdataauthenticationobject.md)
+### Objects
+- [object AssetDataAuthenticationObject](./assetdataauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
 
 

@@ -1,7 +1,8 @@
 # CSIdentityRemoveClient(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityRemoveClient(_ identity: CSIdentity!)
+```
+
+```c
+void CSIdentityRemoveClient(CSIdentityRef identity);
 ```
 
 

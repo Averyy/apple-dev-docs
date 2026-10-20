@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 This scheduler’s definition of the current moment in time.
@@ -23,7 +24,8 @@ var now: Self.SchedulerTimeType { get }
 
 ## See Also
 
-- [var minimumTolerance: Self.SchedulerTimeType.Stride](scheduler/minimumtolerance.md)
+### Accessing scheduler time properties
+- [var minimumTolerance: Self.SchedulerTimeType.Stride](./minimumtolerance.md)
   The minimum tolerance allowed by the scheduler.
 
 

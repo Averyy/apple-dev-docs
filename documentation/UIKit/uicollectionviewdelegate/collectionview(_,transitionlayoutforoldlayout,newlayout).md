@@ -1,7 +1,8 @@
 # collectionView(_:transitionLayoutForOldLayout:newLayout:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks for the custom transition layout to use when moving between the specified layouts.
 
@@ -9,7 +10,7 @@ Asks for the custom transition layout to use when moving between the specified l
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ Asks for the custom transition layout to use when moving between the specified l
 optional func collectionView(_ collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout
 ```
 
+```objc
+- (UICollectionViewTransitionLayout *) collectionView:(UICollectionView *) collectionView transitionLayoutForOldLayout:(UICollectionViewLayout *) fromLayout newLayout:(UICollectionViewLayout *) toLayout;
+```
+
 #### Return Value
 
 The collection view transition layout object to use to perform the transition.
 
 #### Discussion
 
-Implement this method if you want to return a custom [`UICollectionViewTransitionLayout`](uicollectionviewtransitionlayout.md) object for use during the transition. A transition layout object lets you customize the behavior of cells and decoration views when transitioning from one layout to the next. Normally, transitioning between layouts causes items to animate directly from their current locations to their new locations. With a transition layout object, you can have objects follow a non linear path, use a different timing algorithm, or move according to incoming touch events.
+Implement this method if you want to return a custom [`UICollectionViewTransitionLayout`](../uicollectionviewtransitionlayout.md) object for use during the transition. A transition layout object lets you customize the behavior of cells and decoration views when transitioning from one layout to the next. Normally, transitioning between layouts causes items to animate directly from their current locations to their new locations. With a transition layout object, you can have objects follow a non linear path, use a different timing algorithm, or move according to incoming touch events.
 
-If your delegate does not implement this method, the collection view creates a standard [`UICollectionViewTransitionLayout`](uicollectionviewtransitionlayout.md) object and uses that object to manage the transition.
+If your delegate does not implement this method, the collection view creates a standard [`UICollectionViewTransitionLayout`](../uicollectionviewtransitionlayout.md) object and uses that object to manage the transition.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ If your delegate does not implement this method, the collection view creates a s
 
 ## See Also
 
-- [func collectionView(UICollectionView, targetContentOffsetForProposedContentOffset: CGPoint) -> CGPoint](uicollectionviewdelegate/collectionview(_:targetcontentoffsetforproposedcontentoffset:).md)
+### Handling layout changes
+- [func collectionView(UICollectionView, targetContentOffsetForProposedContentOffset: CGPoint) -> CGPoint](./collectionview%28_,targetcontentoffsetforproposedcontentoffset%29.md)
   Gives the delegate an opportunity to customize the content offset for layout changes and animated updates.
-- [func collectionView(UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath: IndexPath, atCurrentIndexPath: IndexPath, toProposedIndexPath: IndexPath) -> IndexPath](uicollectionviewdelegate/collectionview(_:targetindexpathformoveofitemfromoriginalindexpath:atcurrentindexpath:toproposedindexpath:).md)
+- [func collectionView(UICollectionView, targetIndexPathForMoveOfItemFromOriginalIndexPath: IndexPath, atCurrentIndexPath: IndexPath, toProposedIndexPath: IndexPath) -> IndexPath](./collectionview%28_,targetindexpathformoveofitemfromoriginalindexpath,atcurrentindexpath,toproposedindexpath%29.md)
   Asks the delegate for the index path to use when moving an item.
 
 

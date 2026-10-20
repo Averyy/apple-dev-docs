@@ -1,7 +1,8 @@
 # occlusion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The capability that allows the system to use scene-understanding data for occlusion.
 
@@ -17,7 +18,7 @@ static let occlusion: SpatialTrackingSession.Configuration.SceneUnderstandingCap
 
 ## Mentions
 
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](../../../realitykit-scene-understanding.md)
 
 
 ---

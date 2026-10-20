@@ -1,7 +1,8 @@
 # tableView(_:shouldSpringLoadRowAt:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to let you fine tune the spring-loading behavior of the rows in a table.
 
@@ -17,13 +18,17 @@ Called to let you fine tune the spring-loading behavior of the rows in a table.
 optional func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPath: IndexPath, with context: any UISpringLoadedInteractionContext) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView shouldSpringLoadRowAtIndexPath:(NSIndexPath *) indexPath withContext:(id<UISpringLoadedInteractionContext>) context;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row allows spring-loaded interactions or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](../../Swift/true.md) if the row allows spring-loaded interactions or [`false`](../../Swift/false.md) if it does not.
 
 #### Discussion
 
-Override this method when you want to selectively disable spring-loaded interactions with the rows of your table. For example, you might return [`false`](https://developer.apple.com/documentation/swift/false) for rows that represent leaf content and not a folder of content. If you do not implement this method, the table view performs spring-loading animations on the row when it is not currently being dragged.By default, spring-loading animations are performed on the entire row. To modify these animations, modify the provided context object. For example, you might use the context object to apply the spring-loading animations to a single subview of the row instead of to the entire row.
+Override this method when you want to selectively disable spring-loaded interactions with the rows of your table. For example, you might return [`false`](../../Swift/false.md) for rows that represent leaf content and not a folder of content. If you do not implement this method, the table view performs spring-loading animations on the row when it is not currently being dragged.By default, spring-loading animations are performed on the entire row. To modify these animations, modify the provided context object. For example, you might use the context object to apply the spring-loading animations to a single subview of the row instead of to the entire row.
 
 ## Parameters
 
@@ -33,9 +38,10 @@ Override this method when you want to selectively disable spring-loaded interact
 
 ## See Also
 
-- [func tableView(UITableView, willDisplay: UITableViewCell, forRowAt: IndexPath)](uitableviewdelegate/tableview(_:willdisplay:forrowat:).md)
+### Configuring rows for the table view
+- [func tableView(UITableView, willDisplay: UITableViewCell, forRowAt: IndexPath)](./tableview%28_,willdisplay,forrowat%29.md)
   Tells the delegate the table view is about to draw a cell for a particular row.
-- [func tableView(UITableView, indentationLevelForRowAt: IndexPath) -> Int](uitableviewdelegate/tableview(_:indentationlevelforrowat:).md)
+- [func tableView(UITableView, indentationLevelForRowAt: IndexPath) -> Int](./tableview%28_,indentationlevelforrowat%29.md)
   Asks the delegate to return the level of indentation for a row in a given section.
 
 

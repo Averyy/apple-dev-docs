@@ -1,7 +1,8 @@
 # lazy
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 var lazy: Self.Elements { get }
 ```
+
+Available when `Elements` conforms to `LazyCollectionProtocol`.
 
 
 ---

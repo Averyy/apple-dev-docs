@@ -1,7 +1,8 @@
 # pointPixelScale
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling from points to output pixel resolution for the stream.
 
@@ -15,11 +16,16 @@ The scaling from points to output pixel resolution for the stream.
 var pointPixelScale: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float pointPixelScale;
+```
+
 ## See Also
 
-- [var contentRect: CGRect](scshareablecontentinfo/contentrect.md)
+### Shared content properties
+- [var contentRect: CGRect](./contentrect.md)
   The size and location of content for the stream.
-- [var style: SCShareableContentStyle](scshareablecontentinfo/style.md)
+- [var style: SCShareableContentStyle](./style.md)
   The current presentation style of the stream.
 
 

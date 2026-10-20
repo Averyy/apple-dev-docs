@@ -1,7 +1,8 @@
 # init(promptLabel:usesIndexedCollation:sections:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an `ItemCollection` containing one or more `Sections`.
 
@@ -11,7 +12,7 @@ Create an `ItemCollection` containing one or more `Sections`.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

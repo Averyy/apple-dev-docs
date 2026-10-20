@@ -1,7 +1,8 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer.
 
@@ -22,7 +23,8 @@ func encode(_ transformer: Estimator.Transformer, to encoder: inout any Estimato
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> Estimator.Transformer](tabularestimatortosupervisedadaptor/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> Estimator.Transformer](./decode%28from%29.md)
   Decodes a previously fitted transformer.
 
 

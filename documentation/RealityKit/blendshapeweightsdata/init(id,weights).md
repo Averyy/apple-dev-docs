@@ -1,7 +1,8 @@
 # init(id:weights:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the named weights for a single blend shape.
 

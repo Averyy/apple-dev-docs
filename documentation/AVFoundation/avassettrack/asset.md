@@ -1,7 +1,8 @@
 # asset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset object that contains this track.
 
@@ -20,11 +21,16 @@ The asset object that contains this track.
 weak var asset: AVAsset? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) AVAsset * asset;
+```
+
 ## See Also
 
-- [var trackID: CMPersistentTrackID](avassettrack/trackid.md)
+### Identifying an asset track
+- [var trackID: CMPersistentTrackID](./trackid.md)
   The persistent unique identifier for this track.
-- [var mediaType: AVMediaType](avassettrack/mediatype.md)
+- [var mediaType: AVMediaType](./mediatype.md)
   The type of media that a track presents.
 
 

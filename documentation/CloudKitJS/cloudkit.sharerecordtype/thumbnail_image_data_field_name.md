@@ -10,17 +10,18 @@ The name of the thumbnail image data field.
 
 ## Declaration
 
-```swift
+```
 const String THUMBNAIL_IMAGE_DATA_FIELD_NAME;
 ```
 
 ## See Also
 
-- [NAME](cloudkit.sharerecordtype/name.md)
+### Properties
+- [NAME](./name.md)
   The name of the share record type `CloudKit.share`.
-- [TITLE_FIELD_NAME](cloudkit.sharerecordtype/title_field_name.md)
+- [TITLE_FIELD_NAME](./title_field_name.md)
   The name of the title field.
-- [TYPE_FIELD_NAME](cloudkit.sharerecordtype/type_field_name.md)
+- [TYPE_FIELD_NAME](./type_field_name.md)
   The name of the type field.
 
 

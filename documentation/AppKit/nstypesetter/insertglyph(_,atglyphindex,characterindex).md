@@ -1,12 +1,13 @@
 # insertGlyph(_:atGlyphIndex:characterIndex:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables the typesetter to insert a new glyph into the stream.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.13
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Enables the typesetter to insert a new glyph into the stream.
 func insertGlyph(_ glyph: NSGlyph, atGlyphIndex glyphIndex: Int, characterIndex: Int)
 ```
 
+```objc
+- (void) insertGlyph:(NSGlyph) glyph atGlyphIndex:(NSUInteger) glyphIndex characterIndex:(NSUInteger) characterIndex;
+```
+
 #### Discussion
 
-The standard typesetter uses this method for inserting hyphenation glyphs. Because this method keeps the glyph caches synchronized, subclasses should always use this method to insert glyphs instead of calling [`layoutManager`](nstypesetter/layoutmanager.md) directly.
+The standard typesetter uses this method for inserting hyphenation glyphs. Because this method keeps the glyph caches synchronized, subclasses should always use this method to insert glyphs instead of calling [`layoutManager`](./layoutmanager.md) directly.
 
 A subclass can override this method to interact with custom glyph storage.
 
@@ -28,16 +33,17 @@ A subclass can override this method to interact with custom glyph storage.
 
 ## See Also
 
-- [func actionForControlCharacter(at: Int) -> NSTypesetterControlCharacterAction](nstypesetter/actionforcontrolcharacter(at:).md)
+### Deprecated
+- [func actionForControlCharacter(at: Int) -> NSTypesetterControlCharacterAction](./actionforcontrolcharacter%28at%29.md)
   Returns the action associated with a control character.
-- [func deleteGlyphs(in: NSRange)](nstypesetter/deleteglyphs(in:).md)
+- [func deleteGlyphs(in: NSRange)](./deleteglyphs%28in%29.md)
   Deletes the specified glyphs from the glyph cache maintained by the layout manager.
-- [func substituteGlyphs(in: NSRange, withGlyphs: UnsafeMutablePointer<NSGlyph>!)](nstypesetter/substituteglyphs(in:withglyphs:).md)
+- [func substituteGlyphs(in: NSRange, withGlyphs: UnsafeMutablePointer<NSGlyph>!)](./substituteglyphs%28in,withglyphs%29.md)
   Replaces the specified glyphs with specified replacement glyphs.
-- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>!, characterIndexes: UnsafeMutablePointer<Int>!, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>!, elasticBits: UnsafeMutablePointer<ObjCBool>!, bidiLevels: UnsafeMutablePointer<UInt8>!) -> Int](nstypesetter/getglyphs(in:glyphs:characterindexes:glyphinscriptions:elasticbits:bidilevels:).md)
+- [func getGlyphs(in: NSRange, glyphs: UnsafeMutablePointer<NSGlyph>!, characterIndexes: UnsafeMutablePointer<Int>!, glyphInscriptions: UnsafeMutablePointer<NSGlyphInscription>!, elasticBits: UnsafeMutablePointer<ObjCBool>!, bidiLevels: UnsafeMutablePointer<UInt8>!) -> Int](./getglyphs%28in,glyphs,characterindexes,glyphinscriptions,elasticbits,bidilevels%29.md)
   Extracts the information needed to lay out the provided glyphs from the provided range.
-- [struct NSTypesetterControlCharacterAction](nstypesettercontrolcharacteraction.md)
-  The following constants are possible values returned by the [`actionForControlCharacter(at:)`](nstypesetter/actionforcontrolcharacter(at:).md) method to determine the action associated with a control character.
+- [struct NSTypesetterControlCharacterAction](../nstypesettercontrolcharacteraction.md)
+  The following constants are possible values returned by the [`actionForControlCharacter(at:)`](./actionforcontrolcharacter%28at%29.md) method to determine the action associated with a control character.
 
 
 ---

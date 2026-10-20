@@ -1,6 +1,7 @@
 # Recommendations Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Read budget and Target CPA recommendations and their history, and build the requests that apply them.
 
@@ -9,54 +10,55 @@ Read budget and Target CPA recommendations and their history, and build the requ
 
 #### Overview
 
-These objects carry the data for [`Recommendations Endpoints`](recommendations-endpoints.md). Read [`DailyCapRecommendation`](dailycaprecommendation.md) and [`TargetCpaRecommendation`](targetcparecommendation.md) in query responses, and read their history objects after you apply or dismiss one. Send [`ApplyDailyCapRecommendation`](applydailycaprecommendation.md) or [`ApplyTargetCpaRecommendation`](applytargetcparecommendation.md) to apply or dismiss a recommendation.
+These objects carry the data for [Recommendations Endpoints](./recommendations-endpoints.md). Read [`DailyCapRecommendation`](./dailycaprecommendation.md) and [`TargetCpaRecommendation`](./targetcparecommendation.md) in query responses, and read their history objects after you apply or dismiss one. Send [`ApplyDailyCapRecommendation`](./applydailycaprecommendation.md) or [`ApplyTargetCpaRecommendation`](./applytargetcparecommendation.md) to apply or dismiss a recommendation.
 
-For the objects that build query requests, see [`Recommendations Query and Filter Objects`](recommendations-query-filter-objects.md).
+For the objects that build query requests, see [Recommendations Query and Filter Objects](./recommendations-query-filter-objects.md).
 
 ## Topics
 
-- [object TargetCpaRecommendation](targetcparecommendation.md)
+- [object TargetCpaRecommendation](./targetcparecommendation.md)
   A target CPA recommendation for a campaign using a Maximize Conversions bid strategy.
-- [object TargetCpaRecommendationHistory](targetcparecommendationhistory.md)
+- [object TargetCpaRecommendationHistory](./targetcparecommendationhistory.md)
   History record created when a target CPA recommendation is applied or dismissed.
-- [object DailyCapRecommendation](dailycaprecommendation.md)
+- [object DailyCapRecommendation](./dailycaprecommendation.md)
   A daily budget recommendation for a campaign that’s frequently hitting its spending ceiling.
-- [object DailyCapRecommendationHistory](dailycaprecommendationhistory.md)
+- [object DailyCapRecommendationHistory](./dailycaprecommendationhistory.md)
   History record created when you apply or dismiss a daily budget recommendation.
-- [object ApplyTargetCpaRecommendation](applytargetcparecommendation.md)
+- [object ApplyTargetCpaRecommendation](./applytargetcparecommendation.md)
   Request object for applying or dismissing a target CPA recommendation.
-- [object ApplyDailyCapRecommendation](applydailycaprecommendation.md)
+- [object ApplyDailyCapRecommendation](./applydailycaprecommendation.md)
   Request object for applying or dismissing a daily budget recommendation.
-- [object RecommendationResponseBody](recommendationresponsebody.md)
+- [object RecommendationResponseBody](./recommendationresponsebody.md)
   The standard response envelope for all Recommendations and Suggestions API endpoints.
-- [object RecommendationResponseError](recommendationresponseerror.md)
+- [object RecommendationResponseError](./recommendationresponseerror.md)
   Error information returned in the response body when a Recommendations or Suggestions request fails.
-- [object RecommendationResponseErrorDetail](recommendationresponseerrordetail.md)
+- [object RecommendationResponseErrorDetail](./recommendationresponseerrordetail.md)
   Granular error detail for a single field or condition within a failed Recommendations or Suggestions request.
-- [object RecommendationResponsePagination](recommendationresponsepagination.md)
+- [object RecommendationResponsePagination](./recommendationresponsepagination.md)
   Pagination metadata returned in list responses from Recommendations and Suggestions endpoints.
-- [object RecommendationMoney](recommendationmoney.md)
+- [object RecommendationMoney](./recommendationmoney.md)
   A monetary amount with currency used throughout the Recommendations and Suggestions APIs.
-- [object RecommendationApplyDailyBudgetResponse](recommendationapplydailybudgetresponse.md)
+- [object RecommendationApplyDailyBudgetResponse](./recommendationapplydailybudgetresponse.md)
   Response envelope returned when applying or dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationApplyTargetCpaResponse](recommendationapplytargetcparesponse.md)
+- [object RecommendationApplyTargetCpaResponse](./recommendationapplytargetcparesponse.md)
   Response envelope returned when applying or dismissing a target CPA recommendation, containing the resulting history record(s).
-- [object RecommendationBidStrategy](recommendationbidstrategy.md)
+- [object RecommendationBidStrategy](./recommendationbidstrategy.md)
   Bid strategy configuration (type, goal, and amount) associated with a recommendation.
-- [object RecommendationDismissDailyBudgetResponse](recommendationdismissdailybudgetresponse.md)
+- [object RecommendationDismissDailyBudgetResponse](./recommendationdismissdailybudgetresponse.md)
   Response envelope returned when dismissing a daily budget recommendation, containing the resulting history record(s).
-- [object RecommendationDismissTargetCpaResponse](recommendationdismisstargetcparesponse.md)
+- [object RecommendationDismissTargetCpaResponse](./recommendationdismisstargetcparesponse.md)
   Response envelope returned when dismissing a target CPA recommendation, containing the resulting history record(s).
-- [object RecommendationQueryDailyBudgetResponse](recommendationquerydailybudgetresponse.md)
+- [object RecommendationQueryDailyBudgetResponse](./recommendationquerydailybudgetresponse.md)
   Response envelope returned by the daily budget recommendation query endpoint, containing matched recommendations.
-- [object RecommendationQueryTargetCpaResponse](recommendationquerytargetcparesponse.md)
+- [object RecommendationQueryTargetCpaResponse](./recommendationquerytargetcparesponse.md)
   Response envelope returned by the target CPA recommendation query endpoint, containing matched recommendations.
 
 ## See Also
 
-- [Recommendations Endpoints](recommendations-endpoints.md)
+### Recommendations
+- [Recommendations Endpoints](./recommendations-endpoints.md)
   Query budget and Target CPA recommendations, then apply or dismiss them to adjust campaign spend and bids.
-- [Recommendations Query and Filter Objects](recommendations-query-filter-objects.md)
+- [Recommendations Query and Filter Objects](./recommendations-query-filter-objects.md)
   Filter, sort, and paginate recommendation queries by status, state, and category.
 
 

@@ -1,7 +1,8 @@
 # pushing(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Non-mutating version of `push()`.
 

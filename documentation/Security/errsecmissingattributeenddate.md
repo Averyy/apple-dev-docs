@@ -1,7 +1,8 @@
 # errSecMissingAttributeEndDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An end date attribute is missing.
 
@@ -18,6 +19,10 @@ An end date attribute is missing.
 
 ```swift
 var errSecMissingAttributeEndDate: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeEndDate
 ```
 
 

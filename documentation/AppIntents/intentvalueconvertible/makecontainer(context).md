@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an intent value container that represents this value.
@@ -32,6 +33,12 @@ This method converts the value to a type-erased container that App Intents can u
 ## Parameters
 
 - `context`: The context to use for the conversion.
+
+## Default Implementations
+
+### IntentValueConvertible Implementations
+- [func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer](./makecontainer%28context%29-9gcps.md)
+  Creates an intent value container that represents this wrapper.
 
 
 ---

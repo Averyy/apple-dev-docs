@@ -1,7 +1,8 @@
 # init(id:time:duration:direction:opacity:offset:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fade environment command instance.
 

@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A uniform type identifier that specifies the screenshot’s file format; HEIC, JPEG, or PNG.
 
@@ -13,6 +14,10 @@ A uniform type identifier that specifies the screenshot’s file format; HEIC, J
 
 ```swift
 unowned(unsafe) var contentType: UTTypeReference { get set }
+```
+
+```objc
+@property (nonatomic, assign) UTType * contentType;
 ```
 
 

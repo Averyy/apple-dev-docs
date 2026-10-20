@@ -1,7 +1,8 @@
 # operationGroup
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operation group to use for the underlying CloudKit operations.
 
@@ -11,7 +12,7 @@ The operation group to use for the underlying CloudKit operations.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ The default value is `nil`.
 
 ## See Also
 
-- [var description: String](cksyncengine-5sie5/sendchangesoptions/description.md)
+### Managing attributes
+- [var description: String](./description.md)
   A textual description of the options that’s suitable for logging.
 
 

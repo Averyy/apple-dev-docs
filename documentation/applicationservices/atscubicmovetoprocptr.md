@@ -1,7 +1,8 @@
 # ATSCubicMoveToProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSCubicMoveToProcPtr = (UnsafePointer<Float32Point>?, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef OSStatus (*ATSCubicMoveToProcPtr)(const Float32Point *pt, void *callBackDataPtr);
 ```
 
 

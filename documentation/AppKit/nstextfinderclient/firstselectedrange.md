@@ -1,17 +1,22 @@
 # firstSelectedRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the currently selected range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional var firstSelectedRange: NSRange { get }
+```
+
+```objc
+@property (readonly) NSRange firstSelectedRange;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This property is required for the next match, previous match, replace, replace a
 
 ## See Also
 
-- [var isSelectable: Bool](nstextfinderclient/isselectable.md)
+### Selection Information
+- [var isSelectable: Bool](./isselectable.md)
   Returns whether the text is selectable.
-- [var allowsMultipleSelection: Bool](nstextfinderclient/allowsmultipleselection.md)
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   Returns whether multiple items can be selected.
-- [var selectedRanges: [NSValue]](nstextfinderclient/selectedranges.md)
+- [var selectedRanges: [NSValue]](./selectedranges.md)
   Returns an array of selected ranges.
 
 

@@ -1,7 +1,8 @@
 # offset(to:allowedFields:maxFieldCount:sign:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 static func offset(to anchor: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field> = [.year, .month, .day, .hour, .minute, .second], maxFieldCount: Int = 2, sign: NumberFormatStyleConfiguration.SignDisplayStrategy = .automatic) -> SystemFormatStyle.DateOffset
 ```
+
+Available when `Self` is `SystemFormatStyle.DateOffset`.
 
 
 ---

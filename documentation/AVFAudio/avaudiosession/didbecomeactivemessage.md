@@ -1,7 +1,8 @@
 # AVAudioSession.DidBecomeActiveMessage
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -20,14 +21,15 @@ struct DidBecomeActiveMessage
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVAudioSession.DidBecomeInactiveMessage](avaudiosession/didbecomeinactivemessage.md)
-- [AVAudioSession.ResumptionRecommendationMessage](avaudiosession/resumptionrecommendationmessage.md)
-- [AVAudioSession.DeactivationResult](avaudiosession/deactivationresult.md)
+### Handling activation messages
+- [AVAudioSession.DidBecomeInactiveMessage](./didbecomeinactivemessage.md)
+- [AVAudioSession.ResumptionRecommendationMessage](./resumptionrecommendationmessage.md)
+- [AVAudioSession.DeactivationResult](./deactivationresult.md)
   Type-safe representation of audio session deactivation results.
 
 

@@ -1,7 +1,8 @@
 # layoutRect(for:at:effectiveRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle for the layout of the specified text block and glyph.
 
@@ -12,6 +13,10 @@ Returns the rectangle for the layout of the specified text block and glyph.
 
 ```swift
 func layoutRect(for block: NSTextBlock, at glyphIndex: Int, effectiveRange effectiveGlyphRange: NSRangePointer?) -> NSRect
+```
+
+```objc
+- (NSRect) layoutRectForTextBlock:(NSTextBlock *) block atIndex:(NSUInteger) glyphIndex effectiveRange:(NSRangePointer) effectiveGlyphRange;
 ```
 
 #### Return Value
@@ -30,15 +35,16 @@ This method causes glyph generation but not layout. Block layout rectangles and 
 
 ## See Also
 
-- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](nslayoutmanager/setlayoutrect(_:for:glyphrange:).md)
+### Handling layout for text blocks
+- [func setLayoutRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](./setlayoutrect%28_,for,glyphrange%29.md)
   Sets the layout rectangle that encloses the specified text block and glyph range.
-- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](nslayoutmanager/layoutrect(for:glyphrange:).md)
+- [func layoutRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](./layoutrect%28for,glyphrange%29.md)
   Returns the rectangle for the layout of the specified text block and glyph range.
-- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](nslayoutmanager/setboundsrect(_:for:glyphrange:).md)
+- [func setBoundsRect(NSRect, for: NSTextBlock, glyphRange: NSRange)](./setboundsrect%28_,for,glyphrange%29.md)
   Sets the bounding rectangle that encloses the specified text block and glyph range.
-- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](nslayoutmanager/boundsrect(for:glyphrange:).md)
+- [func boundsRect(for: NSTextBlock, glyphRange: NSRange) -> NSRect](./boundsrect%28for,glyphrange%29.md)
   Returns the bounding rectangle that encloses the specified text block and glyph range.
-- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](nslayoutmanager/boundsrect(for:at:effectiverange:).md)
+- [func boundsRect(for: NSTextBlock, at: Int, effectiveRange: NSRangePointer?) -> NSRect](./boundsrect%28for,at,effectiverange%29.md)
   Returns the bounding rectangle for the specified text block and glyph.
 
 

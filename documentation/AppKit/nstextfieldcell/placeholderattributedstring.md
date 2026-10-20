@@ -1,12 +1,13 @@
 # placeholderAttributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placeholder text for the cell, specified as an attributed string.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The placeholder text for the cell, specified as an attributed string.
 var placeholderAttributedString: NSAttributedString? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSAttributedString * placeholderAttributedString;
+```
+
 #### Discussion
 
-Assigning a new value to this property also clears out any value set for the [`placeholderString`](nstextfieldcell/placeholderstring.md) property.
+Assigning a new value to this property also clears out any value set for the [`placeholderString`](./placeholderstring.md) property.
 
 ## See Also
 
-- [var placeholderString: String?](nstextfieldcell/placeholderstring.md)
+### Managing Placeholder Strings
+- [var placeholderString: String?](./placeholderstring.md)
   The placeholder text for the cell, specified as a plain text string.
 
 

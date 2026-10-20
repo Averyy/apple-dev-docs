@@ -1,7 +1,8 @@
 # EKErrorDomain
 
 **Framework**: EventKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the EventKit error domain.
 
@@ -19,11 +20,16 @@ A string that identifies the EventKit error domain.
 let EKErrorDomain: String
 ```
 
+```c
+extern NSString * const EKErrorDomain;
+```
+
 ## See Also
 
-- [struct EKError](ekerror.md)
+### Errors
+- [struct EKError](./ekerror.md)
   An EventKit error.
-- [EKError.Code](ekerror/code.md)
+- [EKError.Code](./ekerror/code.md)
   Error codes for EventKit errors.
 
 

@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.storeAndForwardResultNotFound
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Decline request failed because the framework can’t find the read result.
 

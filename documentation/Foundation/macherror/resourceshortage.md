@@ -1,7 +1,8 @@
 # resourceShortage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A system resource could not be allocated to fulfill this request.  This failure may not be permanent.
 

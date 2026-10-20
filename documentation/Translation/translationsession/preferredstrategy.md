@@ -1,7 +1,8 @@
 # preferredStrategy
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred translation strategy configured for the session.
 
@@ -19,9 +20,10 @@ var preferredStrategy: TranslationSession.Strategy { get }
 
 ## See Also
 
-- [var canRequestDownloads: Bool](translationsession/canrequestdownloads.md)
+### Accessing the session properties
+- [var canRequestDownloads: Bool](./canrequestdownloads.md)
   A boolean value that indicates whether a translation session can request language downloads.
-- [var isReady: Bool](translationsession/isready.md)
+- [var isReady: Bool](./isready.md)
   A boolean value that indicates whether the system has installed the source and target languages of the session and is ready to begin translation.
 
 

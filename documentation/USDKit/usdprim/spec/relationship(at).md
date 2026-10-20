@@ -1,7 +1,8 @@
 # relationship(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the relationship spec at the given path within this prim.
 

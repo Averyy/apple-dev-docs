@@ -1,27 +1,37 @@
 # IOByteCount32
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents a number of bytes in a 32-bit address space.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+*macOS*
+
+```c
+typedef UInt32 IOByteCount32;
+```
+
+*Unsupported OS: driverkit*
+
+```c
 typedef uint32_t IOByteCount32;
 ```
 
 ## See Also
 
-- [IOByteCount](iobytecount.md)
+### Byte Counts
+- [IOByteCount](./iobytecount.md)
   A type that represents a number of bytes.
-- [IOByteCount64](iobytecount64.md)
+- [IOByteCount64](./iobytecount64.md)
   A type that represents a number of bytes in a 64-bit address space.
 
 

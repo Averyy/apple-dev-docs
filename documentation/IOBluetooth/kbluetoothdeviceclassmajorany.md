@@ -1,10 +1,11 @@
 # kBluetoothDeviceClassMajorAny
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,21 +13,26 @@
 var kBluetoothDeviceClassMajorAny: Int { get }
 ```
 
+```c
+kBluetoothDeviceClassMajorAny
+```
+
 ## See Also
 
-- [var kBluetoothDeviceClassMajorAudio: Int](kbluetoothdeviceclassmajoraudio.md)
-- [var kBluetoothDeviceClassMajorComputer: Int](kbluetoothdeviceclassmajorcomputer.md)
-- [var kBluetoothDeviceClassMajorEnd: Int](kbluetoothdeviceclassmajorend.md)
-- [var kBluetoothDeviceClassMajorHealth: Int](kbluetoothdeviceclassmajorhealth.md)
-- [var kBluetoothDeviceClassMajorImaging: Int](kbluetoothdeviceclassmajorimaging.md)
-- [var kBluetoothDeviceClassMajorLANAccessPoint: Int](kbluetoothdeviceclassmajorlanaccesspoint.md)
-- [var kBluetoothDeviceClassMajorMiscellaneous: Int](kbluetoothdeviceclassmajormiscellaneous.md)
-- [var kBluetoothDeviceClassMajorNone: Int](kbluetoothdeviceclassmajornone.md)
-- [var kBluetoothDeviceClassMajorPeripheral: Int](kbluetoothdeviceclassmajorperipheral.md)
-- [var kBluetoothDeviceClassMajorPhone: Int](kbluetoothdeviceclassmajorphone.md)
-- [var kBluetoothDeviceClassMajorToy: Int](kbluetoothdeviceclassmajortoy.md)
-- [var kBluetoothDeviceClassMajorUnclassified: Int](kbluetoothdeviceclassmajorunclassified.md)
-- [var kBluetoothDeviceClassMajorWearable: Int](kbluetoothdeviceclassmajorwearable.md)
+### Constants
+- [var kBluetoothDeviceClassMajorAudio: Int](./kbluetoothdeviceclassmajoraudio.md)
+- [var kBluetoothDeviceClassMajorComputer: Int](./kbluetoothdeviceclassmajorcomputer.md)
+- [var kBluetoothDeviceClassMajorEnd: Int](./kbluetoothdeviceclassmajorend.md)
+- [var kBluetoothDeviceClassMajorHealth: Int](./kbluetoothdeviceclassmajorhealth.md)
+- [var kBluetoothDeviceClassMajorImaging: Int](./kbluetoothdeviceclassmajorimaging.md)
+- [var kBluetoothDeviceClassMajorLANAccessPoint: Int](./kbluetoothdeviceclassmajorlanaccesspoint.md)
+- [var kBluetoothDeviceClassMajorMiscellaneous: Int](./kbluetoothdeviceclassmajormiscellaneous.md)
+- [var kBluetoothDeviceClassMajorNone: Int](./kbluetoothdeviceclassmajornone.md)
+- [var kBluetoothDeviceClassMajorPeripheral: Int](./kbluetoothdeviceclassmajorperipheral.md)
+- [var kBluetoothDeviceClassMajorPhone: Int](./kbluetoothdeviceclassmajorphone.md)
+- [var kBluetoothDeviceClassMajorToy: Int](./kbluetoothdeviceclassmajortoy.md)
+- [var kBluetoothDeviceClassMajorUnclassified: Int](./kbluetoothdeviceclassmajorunclassified.md)
+- [var kBluetoothDeviceClassMajorWearable: Int](./kbluetoothdeviceclassmajorwearable.md)
 
 
 ---

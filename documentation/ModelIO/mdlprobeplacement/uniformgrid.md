@@ -1,7 +1,8 @@
 # MDLProbePlacement.uniformGrid
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to place light probes at each unit coordinate in a three-dimensional grid that evenly divides the region being evaluated.
 
@@ -19,9 +20,14 @@ An option to place light probes at each unit coordinate in a three-dimensional g
 case uniformGrid
 ```
 
+```c
+MDLProbePlacementUniformGrid
+```
+
 ## See Also
 
-- [MDLProbePlacement.irradianceDistribution](mdlprobeplacement/irradiancedistribution.md)
+### Constants
+- [MDLProbePlacement.irradianceDistribution](./irradiancedistribution.md)
   An option to examine the lighting conditions at various positions in the scene being evaluated, then place light probes only at the locations where each contributes optimally to scene lighting.
 
 

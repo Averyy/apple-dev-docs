@@ -1,23 +1,28 @@
 # CFPlugInUnloadFunction
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function that is called, if present, just before a plug-in’s code is unloaded.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CFPlugInUnloadFunction = (CFPlugIn?) -> Void
+```
+
+```c
+typedef void (*)(struct __CFBundle *) CFPlugInUnloadFunction;
 ```
 
 ## Parameters
@@ -26,9 +31,10 @@ typealias CFPlugInUnloadFunction = (CFPlugIn?) -> Void
 
 ## See Also
 
-- [typealias CFPlugInDynamicRegisterFunction](cfplugindynamicregisterfunction.md)
+### Callbacks
+- [typealias CFPlugInDynamicRegisterFunction](./cfplugindynamicregisterfunction.md)
   A callback which provides a plug-in the opportunity to dynamically register its types with a host.
-- [typealias CFPlugInFactoryFunction](cfpluginfactoryfunction.md)
+- [typealias CFPlugInFactoryFunction](./cfpluginfactoryfunction.md)
   Callback function that a plug-in author must implement to create a plug-in instance.
 
 

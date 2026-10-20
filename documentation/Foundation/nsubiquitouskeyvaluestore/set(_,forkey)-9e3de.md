@@ -1,7 +1,8 @@
 # set(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the specified key to a property list object.
 
@@ -20,6 +21,10 @@ Sets the value of the specified key to a property list object.
 func set(_ anObject: Any?, forKey aKey: String)
 ```
 
+```objc
+- (void) setObject:(id) anObject forKey:(NSString *) aKey;
+```
+
 #### Discussion
 
 Use this method to write property list object types to the iCloud key-value store.
@@ -31,19 +36,20 @@ Use this method to write property list object types to the iCloud key-value stor
 
 ## See Also
 
-- [func set(Bool, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-8o8mq.md)
+### Setting values
+- [func set(Bool, forKey: String)](./set%28_,forkey%29-8o8mq.md)
   Sets the value of the specified key to a Boolean value.
-- [func set(Double, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-1xml0.md)
+- [func set(Double, forKey: String)](./set%28_,forkey%29-1xml0.md)
   Sets the value of the specified key to a double value.
-- [func set(Int64, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-7tt20.md)
+- [func set(Int64, forKey: String)](./set%28_,forkey%29-7tt20.md)
   Sets the value of the specified key to a 64-bit integer value.
-- [func set(String?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-2rlp.md)
+- [func set(String?, forKey: String)](./set%28_,forkey%29-2rlp.md)
   Sets the value of the specified key to a string value.
-- [func set(Data?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-3ga7z.md)
+- [func set(Data?, forKey: String)](./set%28_,forkey%29-3ga7z.md)
   Sets the value of the specified key to a data object.
-- [func set([Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-40a8f.md)
+- [func set([Any]?, forKey: String)](./set%28_,forkey%29-40a8f.md)
   Sets the value of the specified key to an array of property list objects.
-- [func set([String : Any]?, forKey: String)](nsubiquitouskeyvaluestore/set(_:forkey:)-9vmlm.md)
+- [func set([String : Any]?, forKey: String)](./set%28_,forkey%29-9vmlm.md)
   Sets the value of the specified key to a dictionary of property list objects.
 
 

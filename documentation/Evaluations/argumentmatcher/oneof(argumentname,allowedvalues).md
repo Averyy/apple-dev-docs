@@ -1,7 +1,8 @@
 # ArgumentMatcher.oneOf(argumentName:allowedValues:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the argument must be present with a value that matches one of the allowed values.
 
@@ -22,7 +23,7 @@ case oneOf(argumentName: String, allowedValues: [ArgumentValue])
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 ## Parameters
 
@@ -31,7 +32,8 @@ case oneOf(argumentName: String, allowedValues: [ArgumentValue])
 
 ## See Also
 
-- [case range(argumentName: String, minimum: Double?, maximum: Double?)](argumentmatcher/range(argumentname:minimum:maximum:).md)
+### Set and range matching
+- [case range(argumentName: String, minimum: Double?, maximum: Double?)](./range%28argumentname,minimum,maximum%29.md)
   A value that indicates that the argument must be present and its numeric value must be within the specified range.
 
 

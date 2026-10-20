@@ -1,7 +1,8 @@
 # kSecAttrService
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating the item’s service.
 
@@ -20,9 +21,13 @@ A key whose value is a string indicating the item’s service.
 let kSecAttrService: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrService;
+```
+
 #### Discussion
 
-The corresponding value is a string of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that represents the service associated with this item. Items of class [`kSecClassGenericPassword`](ksecclassgenericpassword.md) have this attribute.
+The corresponding value is a string of type [`CFString`](../CoreFoundation/cfstring.md) that represents the service associated with this item. Items of class [`kSecClassGenericPassword`](./ksecclassgenericpassword.md) have this attribute.
 
 
 ---

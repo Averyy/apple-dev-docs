@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for the target item.
@@ -19,17 +20,22 @@ The unique identifier for the target item.
 var targetItemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItemIdentifier targetItemIdentifier;
+```
+
 ## See Also
 
-- [var sourceItem: NSFileProviderItem](nsfileprovidertestingmodification/sourceitem.md)
+### Accessing the Operation’s Data
+- [var sourceItem: NSFileProviderItem](./sourceitem.md)
   A description of the source item.
-- [var changedFields: NSFileProviderItemFields](nsfileprovidertestingmodification/changedfields.md)
+- [var changedFields: NSFileProviderItemFields](./changedfields.md)
   A list of the fields that changed.
-- [var targetSide: NSFileProviderTestingOperationSide](nsfileprovidertestingmodification/targetside.md)
+- [var targetSide: NSFileProviderTestingOperationSide](./targetside.md)
   The target location for the modification operation.
-- [var targetItemBaseVersion: NSFileProviderItemVersion](nsfileprovidertestingmodification/targetitembaseversion.md)
+- [var targetItemBaseVersion: NSFileProviderItemVersion](./targetitembaseversion.md)
   The version of the changed item.
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileprovidertestingmodification/domainversion.md)
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The domain’s version when the change occurred.
 
 

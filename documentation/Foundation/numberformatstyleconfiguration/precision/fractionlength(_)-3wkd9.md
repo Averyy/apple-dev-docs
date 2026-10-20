@@ -1,7 +1,8 @@
 # fractionLength(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a precision that constrains formatted values to a given number of allowed digits in the fraction part.
 
@@ -30,19 +31,20 @@ A precision that constrains formatted values to a given number of allowed digits
 
 ## See Also
 
-- [static func significantDigits<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/significantdigits(_:)-2rp7g.md)
+### Precision configurations
+- [static func significantDigits<R>(R) -> NumberFormatStyleConfiguration.Precision](./significantdigits%28_%29-2rp7g.md)
   Returns a precision that constrains formatted values to a range of significant digits.
-- [static func significantDigits(Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/significantdigits(_:)-9dvpr.md)
+- [static func significantDigits(Int) -> NumberFormatStyleConfiguration.Precision](./significantdigits%28_%29-9dvpr.md)
   Returns a precision that constrains formatted values to a given number of significant digits.
-- [static func integerAndFractionLength<R1, R2>(integerLimits: R1, fractionLimits: R2) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerandfractionlength(integerlimits:fractionlimits:).md)
+- [static func integerAndFractionLength<R1, R2>(integerLimits: R1, fractionLimits: R2) -> NumberFormatStyleConfiguration.Precision](./integerandfractionlength%28integerlimits,fractionlimits%29.md)
   Returns a precision that constrains formatted values to ranges of allowed digits in the integer and fraction parts.
-- [static func integerAndFractionLength(integer: Int, fraction: Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerandfractionlength(integer:fraction:).md)
+- [static func integerAndFractionLength(integer: Int, fraction: Int) -> NumberFormatStyleConfiguration.Precision](./integerandfractionlength%28integer,fraction%29.md)
   Returns a precision that constrains formatted values a given number of allowed digits in the integer and fraction parts.
-- [static func integerLength<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerlength(_:)-u8ua.md)
+- [static func integerLength<R>(R) -> NumberFormatStyleConfiguration.Precision](./integerlength%28_%29-u8ua.md)
   Returns a precision that constrains formatted values to a range of allowed digits in the integer part.
-- [static func integerLength(Int) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/integerlength(_:)-1njyz.md)
+- [static func integerLength(Int) -> NumberFormatStyleConfiguration.Precision](./integerlength%28_%29-1njyz.md)
   Returns a precision that constrains formatted values to a given number of allowed digits in the integer part.
-- [static func fractionLength<R>(R) -> NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision/fractionlength(_:)-w6fk.md)
+- [static func fractionLength<R>(R) -> NumberFormatStyleConfiguration.Precision](./fractionlength%28_%29-w6fk.md)
   Returns a precision that constrains formatted values to a range of allowed digits in the fraction part.
 
 

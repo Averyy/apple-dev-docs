@@ -1,14 +1,15 @@
 # memory_error_notification_server
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 boolean_t memory_error_notification_server(mach_msg_header_t *InHeadP, mach_msg_header_t *OutHeadP);
 ```
 

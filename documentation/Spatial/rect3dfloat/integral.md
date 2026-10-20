@@ -1,7 +1,8 @@
 # integral
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var integral: Rect3DFloat { get }
+```
+
+```c
+static SPRect3DFloat SPRect3DFloatIntegral(SPRect3DFloat rect);
 ```
 
 #### Discussion

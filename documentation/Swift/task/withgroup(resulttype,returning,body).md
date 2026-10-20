@@ -1,7 +1,8 @@
 # withGroup(resultType:returning:body:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -12,29 +13,34 @@
 - visionOS 1.0+
 - watchOS 6.0+
 
+> **Deprecated**: `Task.withGroup` was replaced by `withThrowingTaskGroup` and `withTaskGroup` and will be removed shortly.
+
 ## Declaration
 
 ```swift
 static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning returnType: BodyResult.Type = BodyResult.self, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult where TaskResult : Sendable
 ```
 
+Available when `Success` is `Never` and `Failure` is `Never`.
+
 ## See Also
 
-- [typealias Group](task/group.md)
-- [typealias Handle](task/handle.md)
-- [typealias Priority](task/priority.md)
-- [static func CancellationError() -> CancellationError](task/cancellationerror.md)
-- [func getResult() async -> Result<Success, Failure>](task/getresult.md)
-- [func get() async throws -> Success](task/get-4i2gt.md)
-- [func get() async -> Success](task/get-4ohks.md)
-- [static func sleep(UInt64) async](task/sleep(_:).md)
-- [static func suspend() async](task/suspend.md)
-- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](task/rundetached(priority:operation:)-88zf5.md)
+### Deprecated
+- [typealias Group](./group.md)
+- [typealias Handle](./handle.md)
+- [typealias Priority](./priority.md)
+- [static func CancellationError() -> CancellationError](./cancellationerror%28%29.md)
+- [func getResult() async -> Result<Success, Failure>](./getresult%28%29.md)
+- [func get() async throws -> Success](./get%28%29-4i2gt.md)
+- [func get() async -> Success](./get%28%29-4ohks.md)
+- [static func sleep(UInt64) async](./sleep%28_%29.md)
+- [static func suspend() async](./suspend%28%29.md)
+- [static func runDetached(priority: TaskPriority?, operation: () async throws -> Success) -> Task<Success, any Error>](./rundetached%28priority,operation%29-88zf5.md)
   Deprecated, available only for source compatibility reasons.
-- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
+- [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](./rundetached%28priority,operation%29-8s8lh.md)
   Deprecated, available only for source compatibility reasons.
-- [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
-- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](./withcancellationhandler%28handler,operation%29.md)
+- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](../withtaskcancellationhandler%28handler,operation%29.md)
 
 
 ---

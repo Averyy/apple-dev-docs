@@ -1,7 +1,8 @@
 # contentMargins(_:_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the content margin for a provided placement.
 
@@ -21,9 +22,16 @@ nonisolated
 func contentMargins(_ edges: Edge.Set = .all, _ insets: EdgeInsets, for placement: ContentMarginPlacement = .automatic) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func contentMargins(_ edges: Edge.Set = .all, _ length: CGFloat?, for placement: ContentMarginPlacement = .automatic) -> some View
+```
+
 #### Discussion
 
-Use this modifier to customize the content margins of different kinds of views. For example, you can use this modifier to customize the margins of scrollable views like [`ScrollView`](scrollview.md). In the following example, the scroll view will automatically inset its content by the safe area plus an additional 20 points on the leading and trailing edge.
+Use this modifier to customize the content margins of different kinds of views. For example, you can use this modifier to customize the margins of scrollable views like [`ScrollView`](../scrollview.md). In the following example, the scroll view will automatically inset its content by the safe area plus an additional 20 points on the leading and trailing edge.
 
 ```swift
 ScrollView(.horizontal) {
@@ -32,7 +40,7 @@ ScrollView(.horizontal) {
 .contentMargins(.horizontal, 20.0)
 ```
 
-You can provide a [`ContentMarginPlacement`](contentmarginplacement.md) to target specific parts of a view to customize. For example, provide a [`scrollContent`](contentmarginplacement/scrollcontent.md) placement to inset the content of a [`TextEditor`](texteditor.md) without affecting the insets of its scroll indicators.
+You can provide a [`ContentMarginPlacement`](../contentmarginplacement.md) to target specific parts of a view to customize. For example, provide a [`scrollContent`](../contentmarginplacement/scrollcontent.md) placement to inset the content of a [`TextEditor`](../texteditor.md) without affecting the insets of its scroll indicators.
 
 ```swift
 TextEditor(text: $text)
@@ -59,9 +67,10 @@ When applying multiple contentMargins modifiers, modifiers with the same placeme
 
 ## See Also
 
-- [func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View](view/contentmargins(_:for:).md)
+### Setting margins
+- [func contentMargins(CGFloat, for: ContentMarginPlacement) -> some View](./contentmargins%28_,for%29.md)
   Configures the content margin for a provided placement.
-- [struct ContentMarginPlacement](contentmarginplacement.md)
+- [struct ContentMarginPlacement](../contentmarginplacement.md)
   The placement of margins.
 
 

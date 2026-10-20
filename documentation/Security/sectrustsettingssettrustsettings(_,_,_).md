@@ -1,7 +1,8 @@
 # SecTrustSettingsSetTrustSettings(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies trust settings for a certificate.
 
@@ -15,13 +16,17 @@ Specifies trust settings for a certificate.
 func SecTrustSettingsSetTrustSettings(_ certRef: SecCertificate, _ domain: SecTrustSettingsDomain, _ trustSettingsDictOrArray: CFTypeRef?) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustSettingsSetTrustSettings(SecCertificateRef certRef, SecTrustSettingsDomain domain, CFTypeRef trustSettingsDictOrArray);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-If you pass `NULL` for the `trustSettingsDictOrArray` parameter, then the trust settings for this certificate are stored as an empty trust settings array, indicating “always trust this root certificate regardless of use.” This setting is valid only for a self-signed (root) certificate. To instead remove all trust settings for the certificate (interpreted as “this certificate must be verified to a known trusted certificate”), use the [`SecTrustSettingsRemoveTrustSettings(_:_:)`](sectrustsettingsremovetrustsettings(_:_:).md) function.
+If you pass `NULL` for the `trustSettingsDictOrArray` parameter, then the trust settings for this certificate are stored as an empty trust settings array, indicating “always trust this root certificate regardless of use.” This setting is valid only for a self-signed (root) certificate. To instead remove all trust settings for the certificate (interpreted as “this certificate must be verified to a known trusted certificate”), use the [`SecTrustSettingsRemoveTrustSettings(_:_:)`](./sectrustsettingsremovetrustsettings%28_,_%29.md) function.
 
 If the specified certificate already has trust settings in the specified domain, this function replaces them.
 
@@ -31,9 +36,9 @@ When making changes to per-user trust settings, the user is prompted with an ale
 
 ## Parameters
 
-- `certRef`: The certificate for which you want to specify the trust settings. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](ksectrustsettingsdefaultrootcertsetting.md) to set the default root certificate trust settings for the domain.
-- `domain`: The trust settings domain of the trust settings that you wish to specify.  For possible values, see [`SecTrustSettingsDomain`](sectrustsettingsdomain.md).
-- `trustSettingsDictOrArray`: The trust settings you wish to specify for this certificate, in the form of a `CFDictionary` object, a `CFArray` of `CFDictionary` objects, or `NULL`. The contents of `CFDictionary` objects used to specify trust settings are detailed in the [`SecTrustSettingsCopyTrustSettings(_:_:_:)`](sectrustsettingscopytrustsettings(_:_:_:).md) function description. Pass `NULL` if you want to specify an empty trust settings array.
+- `certRef`: The certificate for which you want to specify the trust settings. Pass the value [`kSecTrustSettingsDefaultRootCertSetting`](./ksectrustsettingsdefaultrootcertsetting.md) to set the default root certificate trust settings for the domain.
+- `domain`: The trust settings domain of the trust settings that you wish to specify.  For possible values, see [`SecTrustSettingsDomain`](./sectrustsettingsdomain.md).
+- `trustSettingsDictOrArray`: The trust settings you wish to specify for this certificate, in the form of a `CFDictionary` object, a `CFArray` of `CFDictionary` objects, or `NULL`. The contents of `CFDictionary` objects used to specify trust settings are detailed in the [`SecTrustSettingsCopyTrustSettings(_:_:_:)`](./sectrustsettingscopytrustsettings%28_,_,_%29.md) function description. Pass `NULL` if you want to specify an empty trust settings array.
 
 
 ---

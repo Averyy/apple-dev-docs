@@ -1,6 +1,7 @@
 # tv-position
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets the position of an element inside of its parent element.
 
@@ -8,7 +9,7 @@ Sets the position of an element inside of its parent element.
 
 Use the `tv-position` style to specify where an element is positioned inside of its parent element.
 
-##### Values for Tv Position
+##### Values for tv-position
 
 - **`bottom`**: The element is positioned at the bottom of the containing element.
 - **`bottom-leading`**: The element is positioned in the bottom corner and leading edge of the containing element.
@@ -28,19 +29,20 @@ Use the `tv-position` style to specify where an element is positioned inside of 
 - **`top-trailing`**: The element is positioned in the top corner and trailing edge of the containing element.
 - **`trailing`**: The element is positioned along the trailing edge of the containing element.
 
-##### Elements That Use Tv Position
+##### Elements that Use tv-position
 
-- [`banner`](banner.md)
-- [`divTemplate`](divtemplate.md)
-- [`listItemLockup`](listitemlockup.md)
-- [`overlay`](overlay.md)
-- [`ratingCard`](ratingcard.md)
-- [`reviewCard`](reviewcard.md)
-- [`tumblerItem`](tumbleritem.md)
+- [banner](./banner.md)
+- [divTemplate](./divtemplate.md)
+- [listItemLockup](./listitemlockup.md)
+- [overlay](./overlay.md)
+- [ratingCard](./ratingcard.md)
+- [reviewCard](./reviewcard.md)
+- [tumblerItem](./tumbleritem.md)
 
 ## See Also
 
-- [tv-align](tv-align.md)
+### Valid TVML Styles
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
 
 

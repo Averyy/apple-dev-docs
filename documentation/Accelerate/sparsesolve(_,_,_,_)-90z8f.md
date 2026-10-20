@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solves the equation *Subfactor * X = B* for the matrix of double-precision values *X*, without any internal memory allocations.
 
@@ -20,20 +21,25 @@ Solves the equation *Subfactor * X = B* for the matrix of double-precision value
 func SparseSolve(_ Subfactor: SparseOpaqueSubfactor_Double, _ B: DenseMatrix_Double, _ X: DenseMatrix_Double, _ workspace: UnsafeMutableRawPointer)
 ```
 
+```c
+static void SparseSolve(SparseOpaqueSubfactor_Double Subfactor, DenseMatrix_Double B, DenseMatrix_Double X, void *workspace);
+```
+
 ## Parameters
 
-- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](sparsecreatesubfactor(_:_:)-49d8w.md) returns.
+- `Subfactor`: The *Subfactor* in *Subfactor* ** X = B* that [`SparseCreateSubfactor(_:_:)`](./sparsecreatesubfactor%28_,_%29-49d8w.md) returns.
 - `B`: The matrix *B*.
 - `X`: The matrix *X*.
 - `workspace`: A workspace of size `workspaceRequiredStatic` `+ nrhs *` `workspaceRequiredPerRHS` where `nrhs` is the number of right-hand-side vectors.
 
 ## See Also
 
-- [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-8k0w9.md)
+### Matrix-solving functions with user-defined workspace
+- [func SparseSolve(SparseOpaqueSubfactor_Double, DenseMatrix_Double, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-8k0w9.md)
   Solves the equation *Subfactor * X = B* in place for the matrix of double-precision values *X*, without any internal memory allocations.
-- [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:)-9kp2g.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_%29-9kp2g.md)
   Solves the equation *Subfactor * X = B* in place for the matrix of single-precision values *X*, without any internal memory allocations.
-- [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](sparsesolve(_:_:_:_:)-1hhdi.md)
+- [func SparseSolve(SparseOpaqueSubfactor_Float, DenseMatrix_Float, DenseMatrix_Float, UnsafeMutableRawPointer)](./sparsesolve%28_,_,_,_%29-1hhdi.md)
   Solves the equation *Subfactor * X = B* for the matrix of single-precision values *X*, without any internal memory allocations.
 
 

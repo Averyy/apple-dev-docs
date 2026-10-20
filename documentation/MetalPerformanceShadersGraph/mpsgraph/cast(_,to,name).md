@@ -1,7 +1,8 @@
 # cast(_:to:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a cast operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a cast operation and returns the result tensor.
 
 ```swift
 func cast(_ tensor: MPSGraphTensor, to type: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) castTensor:(MPSGraphTensor *) tensor toType:(MPSDataType) type name:(NSString *) name;
 ```
 
 #### Return Value

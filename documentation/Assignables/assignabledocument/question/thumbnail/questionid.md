@@ -1,7 +1,8 @@
 # questionID
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the question this is for.
 
@@ -9,7 +10,7 @@ The ID of the question this is for.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var questionID: AssignableDocument.Question.ID
 
 ## See Also
 
-- [AssignableDocument.Question.Thumbnail.Data](assignabledocument/question/thumbnail/data-swift.struct.md)
+### Inspecting a thumbnail
+- [AssignableDocument.Question.Thumbnail.Data](./data-swift.struct.md)
   A type that contains thumbnail properties.
-- [var data: AssignableDocument.Question.Thumbnail.Data?](assignabledocument/question/thumbnail/data-swift.property.md)
+- [var data: AssignableDocument.Question.Thumbnail.Data?](./data-swift.property.md)
   The properties of the thumbnail.
 
 

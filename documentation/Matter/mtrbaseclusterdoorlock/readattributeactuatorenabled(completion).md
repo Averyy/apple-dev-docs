@@ -1,7 +1,8 @@
 # readAttributeActuatorEnabled(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActuatorEnabled(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActuatorEnabled() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeActuatorEnabledWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

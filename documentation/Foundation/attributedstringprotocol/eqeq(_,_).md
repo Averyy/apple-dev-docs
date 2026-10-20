@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 15.0+

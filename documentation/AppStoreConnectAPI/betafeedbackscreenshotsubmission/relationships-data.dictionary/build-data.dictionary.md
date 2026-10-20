@@ -1,21 +1,22 @@
 # BetaFeedbackScreenshotSubmission.Relationships.Build
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackScreenshotSubmission.Relationships.Build
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaFeedbackScreenshotSubmission.Relationships.Build.Data](betafeedbackscreenshotsubmission/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
+- [object BetaFeedbackScreenshotSubmission.Relationships.Build.Data](./build-data.dictionary/data-data.dictionary.md)
   The request body you use to update a beta feedback screenshot submission.
 
 ## Properties

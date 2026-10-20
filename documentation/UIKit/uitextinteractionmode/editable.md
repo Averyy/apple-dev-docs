@@ -1,16 +1,17 @@
 # UITextInteractionMode.editable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode indicating that the text interaction should provide selection behaviors for editable text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A mode indicating that the text interaction should provide selection behaviors f
 case editable
 ```
 
+```c
+UITextInteractionModeEditable
+```
+
 ## See Also
 
-- [UITextInteractionMode.nonEditable](uitextinteractionmode/noneditable.md)
+### Modes
+- [UITextInteractionMode.nonEditable](./noneditable.md)
   A mode indicating that the text interaction should provide selection behaviors for non-editable, read-only text.
 
 

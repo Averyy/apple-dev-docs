@@ -1,7 +1,8 @@
 # CAClockParseMIDI(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CAClockParseMIDI(_ inCAClock: CAClockRef, _ inMIDIPacketList: UnsafePointer<MIDIPacketList>) -> OSStatus
+```
+
+```c
+extern OSStatus CAClockParseMIDI(CAClockRef inCAClock, const struct MIDIPacketList *inMIDIPacketList);
 ```
 
 

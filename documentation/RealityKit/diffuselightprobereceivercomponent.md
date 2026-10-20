@@ -1,7 +1,8 @@
 # DiffuseLightProbeReceiverComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that receives diffuse lighting from a referenced probe group.
 
@@ -33,31 +34,33 @@ character.components[DiffuseLightProbeReceiverComponent.self] =
 ## Topics
 
 ### Initializers
-- [init(probeGroup: Entity)](diffuselightprobereceivercomponent/init(probegroup:).md)
+- [init(probeGroup: Entity)](./diffuselightprobereceivercomponent/init%28probegroup%29.md)
   Creates a diffuse light probe receiver component.
 ### Instance Properties
-- [var probeGroup: Entity](diffuselightprobereceivercomponent/probegroup.md)
+- [var probeGroup: Entity](./diffuselightprobereceivercomponent/probegroup.md)
   The entity providing diffuse probe lighting to this receiver.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)
+### Related Documentation
+- [struct DiffuseLightProbeGroupComponent](./diffuselightprobegroupcomponent.md)
   A component that stores diffuse probe data for a spatial region.
-- [class DiffuseProbeResource](diffuseproberesource.md)
+- [class DiffuseProbeResource](./diffuseproberesource.md)
   A resource containing baked diffuse lighting data organized as a tetrahedral probe mesh.
-- [class LightmapResource](lightmapresource.md)
+### Lightmaps and light probes
+- [class LightmapResource](./lightmapresource.md)
   A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene.
-- [struct LightmapComponent](lightmapcomponent.md)
+- [struct LightmapComponent](./lightmapcomponent.md)
   Describes how a lightmap is applied to parts of the scene.
-- [class DiffuseProbeResource](diffuseproberesource.md)
+- [class DiffuseProbeResource](./diffuseproberesource.md)
   A resource containing baked diffuse lighting data organized as a tetrahedral probe mesh.
-- [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)
+- [struct DiffuseLightProbeGroupComponent](./diffuselightprobegroupcomponent.md)
   A component that stores diffuse probe data for a spatial region.
 
 

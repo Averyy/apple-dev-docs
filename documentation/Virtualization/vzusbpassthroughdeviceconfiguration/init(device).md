@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(device: AAUSBAccessory)
+```
+
+```objc
+- (instancetype) initWithDevice:(AAUSBAccessory *) device;
 ```
 
 #### Return Value

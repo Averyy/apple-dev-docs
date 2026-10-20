@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Widens a `USDPrim.Attribute.Spec` into an untyped [`USDLayer.Spec`](usdlayer/spec.md).
+Widens a `USDPrim.Attribute.Spec` into an untyped [`USDLayer.Spec`](../spec.md).
 
 **Availability**:
 - iOS 27.0+

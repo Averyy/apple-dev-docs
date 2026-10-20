@@ -1,7 +1,8 @@
 # display(in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the system to display the App Store message in the window scene.
 
@@ -20,19 +21,19 @@ func display(in scene: UIWindowScene) throws
 
 ## Mentions
 
-- [Testing failing subscription renewals and Apple In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
+- [Testing failing subscription renewals and Apple In-App Purchases](../testing-failing-subscription-renewals-and-in-app-purchases.md)
 
 #### Discussion
 
 The system displays the message if the message is applicable; for example, if the user has previously seen the same App Store message, the system may determine whether to display the message again.
 
-> **Note**:  If your app uses SwiftUI views, use [`DisplayMessageAction`](displaymessageaction.md) instead of [`display(in:)`](message/display(in:).md).
+> **Note**:  If your app uses SwiftUI views, use [`DisplayMessageAction`](../displaymessageaction.md) instead of [`display(in:)`](./display%28in%29.md).
 
-For more information about using [`display(in:)`](message/display(in:).md), see [`Message`](message.md).
+For more information about using [`display(in:)`](./display%28in%29.md), see [`Message`](../message.md).
 
 ## Parameters
 
-- `scene`: The [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) that StoreKit uses to display the App Store message.
+- `scene`: The [`UIWindowScene`](../../UIKit/uiwindowscene.md) that StoreKit uses to display the App Store message.
 
 
 ---

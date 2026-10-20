@@ -1,7 +1,8 @@
 # errSecCSDBAccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cannot access signature database.
 
@@ -13,6 +14,10 @@ Cannot access signature database.
 
 ```swift
 var errSecCSDBAccess: OSStatus { get }
+```
+
+```c
+errSecCSDBAccess
 ```
 
 #### Discussion

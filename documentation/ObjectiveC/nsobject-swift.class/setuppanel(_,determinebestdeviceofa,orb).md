@@ -1,17 +1,22 @@
 # setupPanel(_:determineBestDeviceOfA:orB:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to specify which device is its preferred.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setupPanel(_ aPanel: DRSetupPanel!, determineBestDeviceOfA deviceA: DRDevice!, orB device: DRDevice!) -> DRDevice!
+```
+
+```objc
+- (DRDevice *) setupPanel:(DRSetupPanel *) aPanel determineBestDeviceOfA:(DRDevice *) deviceA orB:(DRDevice *) device;
 ```
 
 #### Return Value

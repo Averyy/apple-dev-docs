@@ -1,7 +1,8 @@
 # buildArray(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enables support for `for..in` loops.
 
@@ -21,13 +22,14 @@ static func buildArray(_ components: [any DataInsertable]) -> any DataInsertable
 
 ## See Also
 
-- [static func buildBlock(any DataInsertable...) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildblock(_:).md)
+### Result builder methods
+- [static func buildBlock(any DataInsertable...) -> any DataInsertable](./buildblock%28_%29.md)
   Combines statement blocks into a single product.
-- [static func buildEither(first: any DataInsertable) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(first:).md)
+- [static func buildEither(first: any DataInsertable) -> any DataInsertable](./buildeither%28first%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildEither(second: any DataInsertable) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(second:).md)
+- [static func buildEither(second: any DataInsertable) -> any DataInsertable](./buildeither%28second%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildOptional((any DataInsertable)?) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildoptional(_:).md)
+- [static func buildOptional((any DataInsertable)?) -> any DataInsertable](./buildoptional%28_%29.md)
   Enables support for `if` statements that do not have an `else` clause.
 
 

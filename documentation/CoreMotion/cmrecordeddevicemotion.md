@@ -1,7 +1,8 @@
 # CMRecordedDeviceMotion
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,26 +18,30 @@
 class CMRecordedDeviceMotion
 ```
 
+```objc
+@interface CMRecordedDeviceMotion : CMDeviceMotion
+```
+
 ## Topics
 
 ### Instance Properties
-- [var identifier: UInt64](cmrecordeddevicemotion/identifier.md)
-- [var startDate: Date](cmrecordeddevicemotion/startdate.md)
+- [var identifier: UInt64](./cmrecordeddevicemotion/identifier.md)
+- [var startDate: Date](./cmrecordeddevicemotion/startdate.md)
 
 ## Relationships
 
 ### Inherits From
-- [CMDeviceMotion](cmdevicemotion.md)
+- [CMDeviceMotion](./cmdevicemotion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

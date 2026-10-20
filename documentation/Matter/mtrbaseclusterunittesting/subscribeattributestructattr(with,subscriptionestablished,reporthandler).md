@@ -1,7 +1,8 @@
 # subscribeAttributeStructAttr(with:subscriptionEstablished:reportHandler:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func subscribeAttributeStructAttr(with params: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: @escaping (MTRUnitTestingClusterSimpleStruct?, (any Error)?) -> Void)
+```
+
+```objc
+- (void) subscribeAttributeStructAttrWithParams:(MTRSubscribeParams *) params subscriptionEstablished:(MTRSubscriptionEstablishedHandler) subscriptionEstablished reportHandler:(void (^)(MTRUnitTestingClusterSimpleStruct *value, NSError *error)) reportHandler;
 ```
 
 

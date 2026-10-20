@@ -1,7 +1,8 @@
 # errSecInsufficientCredentials
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Insufficient credentials were detected.
 
@@ -18,6 +19,10 @@ Insufficient credentials were detected.
 
 ```swift
 var errSecInsufficientCredentials: OSStatus { get }
+```
+
+```c
+errSecInsufficientCredentials
 ```
 
 

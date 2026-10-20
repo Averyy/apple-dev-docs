@@ -1,7 +1,8 @@
 # SKAdImpression
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that defines an ad impression for a view-through ad.
 
@@ -16,11 +17,15 @@ A class that defines an ad impression for a view-through ad.
 class SKAdImpression
 ```
 
+```objc
+@interface SKAdImpression : NSObject
+```
+
 ## Mentions
 
-- [Generating the signature to validate view-through ads](generating-the-signature-to-validate-view-through-ads.md)
-- [Signing and providing ads](signing-and-providing-ads.md)
-- [SKAdNetwork 2.2 release notes](skadnetwork-2-2-release-notes.md)
+- [Generating the signature to validate view-through ads](./generating-the-signature-to-validate-view-through-ads.md)
+- [Signing and providing ads](./signing-and-providing-ads.md)
+- [SKAdNetwork 2.2 release notes](./skadnetwork-2-2-release-notes.md)
 
 #### Overview
 
@@ -30,59 +35,60 @@ Create a `SKAdImpression` instance when you’re preparing to present a view-thr
 - A value you determine – the campaign ID.
 - Values you generate, including the timestamp, a nonce (ad-impression identifier), and the cryptographic signature.
 
-For information about generating the cryptographic signature, see [`Generating the signature to validate view-through ads`](generating-the-signature-to-validate-view-through-ads.md).
+For information about generating the cryptographic signature, see [Generating the signature to validate view-through ads](./generating-the-signature-to-validate-view-through-ads.md).
 
-Use your `SKAdImpression` instance when you call [`startImpression(_:completionHandler:)`](skadnetwork/startimpression(_:completionhandler:).md) to begin presenting your view-through ad. Use the same instance when you call [`endImpression(_:completionHandler:)`](skadnetwork/endimpression(_:completionhandler:).md) to end the ad presentation.
+Use your `SKAdImpression` instance when you call [`startImpression(_:completionHandler:)`](./skadnetwork/startimpression%28_,completionhandler%29.md) to begin presenting your view-through ad. Use the same instance when you call [`endImpression(_:completionHandler:)`](./skadnetwork/endimpression%28_,completionhandler%29.md) to end the ad presentation.
 
 ## Topics
 
 ### Providing a signature
-- [var signature: String](skadimpression/signature.md)
+- [var signature: String](./skadimpression/signature.md)
   The advertising network’s cryptographic signature for the ad impression.
 ### Creating a signature
-- [init(sourceAppStoreItemIdentifier: NSNumber, advertisedAppStoreItemIdentifier: NSNumber, adNetworkIdentifier: String, adCampaignIdentifier: NSNumber, adImpressionIdentifier: String, timestamp: NSNumber, signature: String, version: String)](skadimpression/init(sourceappstoreitemidentifier:advertisedappstoreitemidentifier:adnetworkidentifier:adcampaignidentifier:adimpressionidentifier:timestamp:signature:version:).md)
+- [init(sourceAppStoreItemIdentifier: NSNumber, advertisedAppStoreItemIdentifier: NSNumber, adNetworkIdentifier: String, adCampaignIdentifier: NSNumber, adImpressionIdentifier: String, timestamp: NSNumber, signature: String, version: String)](./skadimpression/init%28sourceappstoreitemidentifier,advertisedappstoreitemidentifier,adnetworkidentifier,adcampaignidentifier,adimpressionidentifier,timestamp,signature,version%29.md)
   Creates an ad impression object using the supplied values.
-- [var version: String](skadimpression/version.md)
+- [var version: String](./skadimpression/version.md)
   The version of the SKAdNetwork API.
-- [var adNetworkIdentifier: String](skadimpression/adnetworkidentifier.md)
+- [var adNetworkIdentifier: String](./skadimpression/adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var sourceIdentifier: NSNumber](skadimpression/sourceidentifier.md)
+- [var sourceIdentifier: NSNumber](./skadimpression/sourceidentifier.md)
   A four-digit integer that ad networks define to represent the ad campaign.
-- [var adCampaignIdentifier: NSNumber](skadimpression/adcampaignidentifier.md)
+- [var adCampaignIdentifier: NSNumber](./skadimpression/adcampaignidentifier.md)
   A number that represents the advertising network’s campaign.
-- [var advertisedAppStoreItemIdentifier: NSNumber](skadimpression/advertisedappstoreitemidentifier.md)
+- [var advertisedAppStoreItemIdentifier: NSNumber](./skadimpression/advertisedappstoreitemidentifier.md)
   The App Store ID of the app that the ad impression advertises.
-- [var adImpressionIdentifier: String](skadimpression/adimpressionidentifier.md)
+- [var adImpressionIdentifier: String](./skadimpression/adimpressionidentifier.md)
   A random value to use for added security.
-- [var sourceAppStoreItemIdentifier: NSNumber](skadimpression/sourceappstoreitemidentifier.md)
+- [var sourceAppStoreItemIdentifier: NSNumber](./skadimpression/sourceappstoreitemidentifier.md)
   The App Store ID of the app that displays the ad.
-- [var timestamp: NSNumber](skadimpression/timestamp.md)
+- [var timestamp: NSNumber](./skadimpression/timestamp.md)
   A number that represents the UNIX time, in milliseconds, of the ad impression.
 ### Describing ads
-- [var adType: String?](skadimpression/adtype.md)
+- [var adType: String?](./skadimpression/adtype.md)
   The type of the ad.
-- [var adDescription: String?](skadimpression/addescription.md)
+- [var adDescription: String?](./skadimpression/addescription.md)
   A human-readable description of the ad.
-- [var adPurchaserName: String?](skadimpression/adpurchasername.md)
+- [var adPurchaserName: String?](./skadimpression/adpurchasername.md)
   The name of the entity that purchased the ad.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](../adattributionkit/adattributionkit-skadnetwork-interoperability.md)
+### Ad impressions and installation validations
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](../AdAttributionKit/adattributionkit-skadnetwork-interoperability.md)
   Learn how attribution APIs interact to deliver ad impressions.
-- [class SKAdNetwork](skadnetwork.md)
+- [class SKAdNetwork](./skadnetwork.md)
   A class that validates advertisement-driven app installations.
 
 

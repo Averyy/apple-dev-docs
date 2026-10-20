@@ -1,14 +1,15 @@
 # hv_trace_guest_error
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 void hv_trace_guest_error(uint32_t vcpu_id, uint64_t *vcpu_regs, uint32_t failure, uint32_t error);
 ```
 

@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether a device supports the object-tracking provider.
 
@@ -16,7 +17,8 @@ static var isSupported: Bool { get }
 
 ## See Also
 
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](objecttrackingprovider/requiredauthorizations.md)
+### Checking availability
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   An array of authorization types the object-tracking provider requires.
 
 

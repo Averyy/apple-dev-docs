@@ -1,7 +1,8 @@
 # Domain
 
 **Framework**: Roster API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A DNS domain name associated with an Apple School Manager organization.
 
@@ -10,13 +11,13 @@ A DNS domain name associated with an Apple School Manager organization.
 
 ## Declaration
 
-```swift
+```
 object Domain
 ```
 
 #### Discussion
 
-An organization can generate Managed Apple Accounts in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [`Verify domains in Apple Business Manager and Apple School Manager`](https://developer.apple.comhttps://support.apple.com/en-us/HT212275).
+An organization can generate Managed Apple Accounts in Apple School Manager for the verified domains named in its `Domains` objects. For more information about verifying domains, see [Verify domains in Apple Business Manager and Apple School Manager](https://support.apple.com/en-us/HT212275).
 
 ## Properties
 
@@ -25,9 +26,10 @@ An organization can generate Managed Apple Accounts in Apple School Manager for 
 
 ## See Also
 
-- [Read the organization](returns-organization-infrmation.md)
+### Information about the organization
+- [Read the organization](./returns-organization-infrmation.md)
   Returns information about the Apple School Manager organization.
-- [object Organization](organization.md)
+- [object Organization](./organization.md)
   Information about an Apple School Manager organization.
 
 

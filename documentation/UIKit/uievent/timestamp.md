@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when the event occurred.
 
@@ -9,7 +10,7 @@ The time when the event occurred.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The time when the event occurred.
 var timestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval timestamp;
+```
+
 #### Discussion
 
-This property contains the number of seconds that have elapsed since system startup. For a description of this time value, see the description of the [`systemUptime`](https://developer.apple.com/documentation/foundation/processinfo/systemuptime) method of the [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) class.
+This property contains the number of seconds that have elapsed since system startup. For a description of this time value, see the description of the [`systemUptime`](../../Foundation/processinfo/systemuptime.md) method of the [`ProcessInfo`](../../Foundation/processinfo.md) class.
 
 
 ---

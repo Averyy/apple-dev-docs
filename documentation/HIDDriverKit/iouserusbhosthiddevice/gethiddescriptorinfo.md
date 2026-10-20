@@ -1,27 +1,29 @@
 # getHIDDescriptorInfo
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t getHIDDescriptorInfo(uint8_t type, const IOUSBHostHIDDescriptorInfo **info, uint8_t *index);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 ## See Also
 
-- [initPipes](iouserusbhosthiddevice/initpipes.md)
-- [CompleteZLP](iouserusbhosthiddevice/completezlp.md)
-- [copyStringAtIndex](iouserusbhosthiddevice/copystringatindex.md)
+### Configuring Private Settings
+- [initPipes](./initpipes.md)
+- [CompleteZLP](./completezlp.md)
+- [copyStringAtIndex](./copystringatindex.md)
 
 
 ---

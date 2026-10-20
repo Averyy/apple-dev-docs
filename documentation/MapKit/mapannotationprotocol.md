@@ -1,7 +1,8 @@
 # MapAnnotationProtocol
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that represents the possible return types of annotations.
 
@@ -11,7 +12,7 @@ A protocol that represents the possible return types of annotations.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,22 +23,23 @@ protocol MapAnnotationProtocol
 
 #### Overview
 
-Don’t create types conforming to this protocol. Instead, use one of the framework-provided types [`MapAnnotation`](mapannotation.md), [`MapMarker`](mapmarker.md), and [`MapPin`](mappin.md).
+Don’t create types conforming to this protocol. Instead, use one of the framework-provided types [`MapAnnotation`](./mapannotation.md), [`MapMarker`](./mapmarker.md), and [`MapPin`](./mappin.md).
 
 ## Relationships
 
 ### Conforming Types
-- [MapAnnotation](mapannotation.md)
-- [MapMarker](mapmarker.md)
-- [MapPin](mappin.md)
+- [MapAnnotation](./mapannotation.md)
+- [MapMarker](./mapmarker.md)
+- [MapPin](./mappin.md)
 
 ## See Also
 
-- [struct MapMarker](mapmarker.md)
+### Annotations in SwiftUI
+- [struct MapMarker](./mapmarker.md)
   A balloon-shaped annotation used to indicate the location on a map.
-- [struct MapPin](mappin.md)
+- [struct MapPin](./mappin.md)
   A pin-shaped annotation used to indicate a location on a map.
-- [struct MapAnnotation](mapannotation.md)
+- [struct MapAnnotation](./mapannotation.md)
   A customizable annotation that marks a map location.
 
 

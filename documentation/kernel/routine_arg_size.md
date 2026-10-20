@@ -1,14 +1,15 @@
 # routine_arg_size
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef unsigned int routine_arg_size;
 ```
 

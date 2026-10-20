@@ -1,7 +1,8 @@
 # hapticIntensity
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The strength of a haptic event.
 
@@ -19,25 +20,30 @@ The strength of a haptic event.
 static let hapticIntensity: CHHapticEvent.ParameterID
 ```
 
+```c
+extern CHHapticEventParameterID CHHapticEventParameterIDHapticIntensity;
+```
+
 #### Discussion
 
 This parameter maps to the haptic pattern’s amplitude or strength. Its value ranges from 0.0 (weak) to 1.0 (strong). Think of intensity as the volume of a haptic pattern, indicating how impactful it feels in the user’s hand. The higher the haptic intensity, the stronger the resulting haptic.
 
-![Short blue bars show the intensity of a transient haptic event on the left, and long orange bars show a continuous haptic event on the right.](/images/com.apple.corehaptics/media-3242667@2x.png)
+![Short blue bars show the intensity of a transient haptic event on the left, and long orange bars show a continuous haptic event on the right.](https://developer.apple.com/tutorials/images/com.apple.corehaptics/media-3242667@2x.png)
 
-To change the intensity dynamically, use [`hapticIntensityControl`](chhapticdynamicparameter/id/hapticintensitycontrol.md).
+To change the intensity dynamically, use [`hapticIntensityControl`](../../chhapticdynamicparameter/id/hapticintensitycontrol.md).
 
 ## See Also
 
-- [static let hapticSharpness: CHHapticEvent.ParameterID](chhapticevent/parameterid/hapticsharpness.md)
+### Haptic Event Parameter IDs
+- [static let hapticSharpness: CHHapticEvent.ParameterID](./hapticsharpness.md)
   The feel of a haptic event.
-- [static let attackTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/attacktime.md)
+- [static let attackTime: CHHapticEvent.ParameterID](./attacktime.md)
   The time at which a haptic pattern’s intensity begins increasing.
-- [static let decayTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/decaytime.md)
+- [static let decayTime: CHHapticEvent.ParameterID](./decaytime.md)
   The time at which a haptic pattern’s intensity begins decreasing.
-- [static let releaseTime: CHHapticEvent.ParameterID](chhapticevent/parameterid/releasetime.md)
+- [static let releaseTime: CHHapticEvent.ParameterID](./releasetime.md)
   The time at which to begin fading the haptic pattern.
-- [static let sustained: CHHapticEvent.ParameterID](chhapticevent/parameterid/sustained.md)
+- [static let sustained: CHHapticEvent.ParameterID](./sustained.md)
   A Boolean value that indicates whether to sustain a haptic event for its specified duration.
 
 

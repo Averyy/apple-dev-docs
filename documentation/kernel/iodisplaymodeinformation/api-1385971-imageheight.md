@@ -1,7 +1,8 @@
 # imageHeight
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Physical height of active image if known, in millimeters, otherwise zero.
 
@@ -10,7 +11,7 @@ Physical height of active image if known, in millimeters, otherwise zero.
 
 ## Declaration
 
-```swift
+```c
 UInt16 imageHeight;
 ```
 

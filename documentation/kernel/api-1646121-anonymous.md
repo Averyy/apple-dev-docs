@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSCatalogKeyMaximumLength](1646121-anonymous/khfscatalogkeymaximumlength.md)
-- [kHFSCatalogKeyMinimumLength](1646121-anonymous/khfscatalogkeyminimumlength.md)
-- [kHFSExtentKeyMaximumLength](1646121-anonymous/khfsextentkeymaximumlength.md)
-- [kHFSPlusAttrMinNodeSize](1646121-anonymous/khfsplusattrminnodesize.md)
-- [kHFSPlusCatalogKeyMaximumLength](1646121-anonymous/khfspluscatalogkeymaximumlength.md)
-- [kHFSPlusCatalogKeyMinimumLength](1646121-anonymous/khfspluscatalogkeyminimumlength.md)
-- [kHFSPlusCatalogMinNodeSize](1646121-anonymous/khfspluscatalogminnodesize.md)
-- [kHFSPlusExtentKeyMaximumLength](1646121-anonymous/khfsplusextentkeymaximumlength.md)
-- [kHFSPlusExtentMinNodeSize](1646121-anonymous/khfsplusextentminnodesize.md)
+- [kHFSCatalogKeyMaximumLength](./api-1646121-anonymous/khfscatalogkeymaximumlength.md)
+- [kHFSCatalogKeyMinimumLength](./api-1646121-anonymous/khfscatalogkeyminimumlength.md)
+- [kHFSExtentKeyMaximumLength](./api-1646121-anonymous/khfsextentkeymaximumlength.md)
+- [kHFSPlusAttrMinNodeSize](./api-1646121-anonymous/khfsplusattrminnodesize.md)
+- [kHFSPlusCatalogKeyMaximumLength](./api-1646121-anonymous/khfspluscatalogkeymaximumlength.md)
+- [kHFSPlusCatalogKeyMinimumLength](./api-1646121-anonymous/khfspluscatalogkeyminimumlength.md)
+- [kHFSPlusCatalogMinNodeSize](./api-1646121-anonymous/khfspluscatalogminnodesize.md)
+- [kHFSPlusExtentKeyMaximumLength](./api-1646121-anonymous/khfsplusextentkeymaximumlength.md)
+- [kHFSPlusExtentMinNodeSize](./api-1646121-anonymous/khfsplusextentminnodesize.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setIndicator(_:value:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set an indicator’s value
 
@@ -12,6 +13,10 @@ Set an indicator’s value
 
 ```swift
 func setIndicator(_ indicatorName: String!, value indicatorValue: Int32)
+```
+
+```objc
+- (void) setIndicator:(NSString *) indicatorName value:(int) indicatorValue;
 ```
 
 #### Discussion

@@ -1,12 +1,13 @@
 # MeshAnchor.MeshClassification.plant
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A plant.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: SurfaceClassification)
 
 ## Declaration
 
@@ -16,7 +17,8 @@ case plant
 
 ## See Also
 
-- [MeshAnchor.MeshClassification.tv](meshanchor/meshclassification/tv.md)
+### Getting decoration classifications
+- [MeshAnchor.MeshClassification.tv](./tv.md)
   A television.
 
 

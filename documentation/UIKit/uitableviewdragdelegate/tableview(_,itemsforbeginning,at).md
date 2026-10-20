@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides the initial set of items (if any) to drag.
@@ -18,17 +19,21 @@ Provides the initial set of items (if any) to drag.
 func tableView(_ tableView: UITableView, itemsForBeginning session: any UIDragSession, at indexPath: IndexPath) -> [UIDragItem]
 ```
 
+```objc
+- (NSArray<UIDragItem *> *) tableView:(UITableView *) tableView itemsForBeginningDragSession:(id<UIDragSession>) session atIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Supporting drag and drop in table views](supporting-drag-and-drop-in-table-views.md)
+- [Supporting drag and drop in table views](../supporting-drag-and-drop-in-table-views.md)
 
 #### Return Value
 
-An array of [`UIDragItem`](uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to drag the specified row.
+An array of [`UIDragItem`](../uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to drag the specified row.
 
 #### Discussion
 
-You must implement this method to allow the dragging of rows from your table view. In your implementation, use the specified `indexPath` to identify which row is being dragged. In response, create one or more [`UIDragItem`](uidragitem.md) objects representing the content for that row. Normally, you return only one drag item, but you may return more than one item if the specified row represents a container for other content. Return an empty array to indicate that you don’t want the specified row to be dragged.
+You must implement this method to allow the dragging of rows from your table view. In your implementation, use the specified `indexPath` to identify which row is being dragged. In response, create one or more [`UIDragItem`](../uidragitem.md) objects representing the content for that row. Normally, you return only one drag item, but you may return more than one item if the specified row represents a container for other content. Return an empty array to indicate that you don’t want the specified row to be dragged.
 
 The table view calls this method one or more times when a new drag begins within its bounds. Specifically, it calls the method once for each row that’s part of the initial drag. For example, if three rows were selected when the user began the drag operation, the table view calls this method three times. If the user begins a drag operation from an unselected row, this method is called only once for that row.
 
@@ -40,7 +45,8 @@ The table view calls this method one or more times when a new drag begins within
 
 ## See Also
 
-- [func tableView(UITableView, itemsForAddingTo: any UIDragSession, at: IndexPath, point: CGPoint) -> [UIDragItem]](uitableviewdragdelegate/tableview(_:itemsforaddingto:at:point:).md)
+### Providing the items to drag
+- [func tableView(UITableView, itemsForAddingTo: any UIDragSession, at: IndexPath, point: CGPoint) -> [UIDragItem]](./tableview%28_,itemsforaddingto,at,point%29.md)
   Adds the specified items to an existing drag session.
 
 

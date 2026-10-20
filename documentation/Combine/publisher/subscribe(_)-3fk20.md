@@ -1,7 +1,8 @@
 # subscribe(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches the specified subject to this publisher.
 
@@ -22,7 +23,7 @@ func subscribe<S>(_ subject: S) -> AnyCancellable where S : Subject, Self.Failur
 
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
+- [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 
 ## Parameters
 
@@ -30,9 +31,10 @@ func subscribe<S>(_ subject: S) -> AnyCancellable where S : Subject, Self.Failur
 
 ## See Also
 
-- [func receive<S>(subscriber: S)](publisher/receive(subscriber:).md)
+### Working with subscribers
+- [func receive<S>(subscriber: S)](./receive%28subscriber%29.md)
   Attaches the specified subscriber to this publisher.
-- [func subscribe<S>(S)](publisher/subscribe(_:)-4u8kn.md)
+- [func subscribe<S>(S)](./subscribe%28_%29-4u8kn.md)
   Attaches the specified subscriber to this publisher.
 
 

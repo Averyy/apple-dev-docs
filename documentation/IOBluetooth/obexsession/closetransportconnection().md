@@ -1,17 +1,22 @@
 # closeTransportConnection()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 You must override this - it will be called when the transport connection should be shutdown.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func closeTransportConnection() -> OBEXError
+```
+
+```objc
+- (OBEXError) closeTransportConnection;
 ```
 
 #### Return Value

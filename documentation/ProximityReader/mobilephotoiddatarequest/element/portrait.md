@@ -1,7 +1,8 @@
 # portrait
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The picture of the photo ID holder on record with the issuer.
 

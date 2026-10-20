@@ -1,7 +1,8 @@
 # NFCFeliCaPollingRequestCode
 
 **Framework**: Core NFC  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 13.0+
@@ -14,40 +15,45 @@
 enum NFCFeliCaPollingRequestCode
 ```
 
+```c
+enum NFCFeliCaPollingRequestCode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NFCFeliCaPollingRequestCode.communicationPerformance](nfcfelicapollingrequestcode/communicationperformance.md)
-- [NFCFeliCaPollingRequestCode.noRequest](nfcfelicapollingrequestcode/norequest.md)
-- [NFCFeliCaPollingRequestCode.systemCode](nfcfelicapollingrequestcode/systemcode.md)
+- [NFCFeliCaPollingRequestCode.communicationPerformance](./nfcfelicapollingrequestcode/communicationperformance.md)
+- [NFCFeliCaPollingRequestCode.noRequest](./nfcfelicapollingrequestcode/norequest.md)
+- [NFCFeliCaPollingRequestCode.systemCode](./nfcfelicapollingrequestcode/systemcode.md)
 ### Initializers
-- [init?(rawValue: Int)](nfcfelicapollingrequestcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nfcfelicapollingrequestcode/init%28rawvalue%29.md)
 ### Type Properties
-- [static var PollingRequestCodeCommunicationPerformance: NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode/pollingrequestcodecommunicationperformance.md)
+- [static var PollingRequestCodeCommunicationPerformance: NFCFeliCaPollingRequestCode](./nfcfelicapollingrequestcode/pollingrequestcodecommunicationperformance.md)
   A code that indicates a communication performance request.
-- [static var PollingRequestCodeNoRequest: NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode/pollingrequestcodenorequest.md)
+- [static var PollingRequestCodeNoRequest: NFCFeliCaPollingRequestCode](./nfcfelicapollingrequestcode/pollingrequestcodenorequest.md)
   A code that indicates no request.
-- [static var PollingRequestCodeSystemCode: NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode/pollingrequestcodesystemcode.md)
+- [static var PollingRequestCodeSystemCode: NFCFeliCaPollingRequestCode](./nfcfelicapollingrequestcode/pollingrequestcodesystemcode.md)
   A code that indicates a system code request.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NFCFeliCaEncryptionId](nfcfelicaencryptionid.md)
-- [enum NFCFeliCaPollingTimeSlot](nfcfelicapollingtimeslot.md)
-- [struct NFCISO15693RequestFlag](nfciso15693requestflag.md)
-- [struct NFCISO15693ResponseFlag](nfciso15693responseflag.md)
-- [NFCVASResponse.ErrorCode](nfcvasresponse/errorcode.md)
-- [NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.enum.md)
+### Enumerations
+- [enum NFCFeliCaEncryptionId](./nfcfelicaencryptionid.md)
+- [enum NFCFeliCaPollingTimeSlot](./nfcfelicapollingtimeslot.md)
+- [struct NFCISO15693RequestFlag](./nfciso15693requestflag.md)
+- [struct NFCISO15693ResponseFlag](./nfciso15693responseflag.md)
+- [NFCVASResponse.ErrorCode](./nfcvasresponse/errorcode.md)
+- [NFCVASCommandConfiguration.Mode](./nfcvascommandconfiguration/mode-swift.enum.md)
 
 
 ---

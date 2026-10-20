@@ -1,7 +1,8 @@
 # latitude
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 latitude is the coordinate’s latitude value in degrees.
 
@@ -14,6 +15,10 @@ latitude is the coordinate’s latitude value in degrees.
 
 ```swift
 var latitude: CLLocationDegrees
+```
+
+```c
+CLLocationDegrees latitude;
 ```
 
 

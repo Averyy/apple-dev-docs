@@ -1,11 +1,12 @@
 # ParseStrategy Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func parse(String) throws -> Date](date/formatstyle/parse(_:).md)
+- [func parse(String) throws -> Date](./parse%28_%29.md)
   Parses a string into a date.
 
 

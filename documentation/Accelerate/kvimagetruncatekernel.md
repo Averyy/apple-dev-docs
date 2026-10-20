@@ -1,7 +1,8 @@
 # kvImageTruncateKernel
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that uses only the part of the kernel that overlaps the image.
 
@@ -10,7 +11,7 @@ A flag that uses only the part of the kernel that overlaps the image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ A flag that uses only the part of the kernel that overlaps the image.
 
 ```swift
 var kvImageTruncateKernel: Int { get }
+```
+
+```c
+kvImageTruncateKernel
 ```
 
 #### Discussion
@@ -32,15 +37,16 @@ real_divisor = divisor * (sum of used kernel elements) / (sum of kernel elements
 
 The morphology functions do not use this flag because they do not use pixels outside the image in any of their calculations.
 
-Kernel truncation is not robust for certain kernels. It can fail when any rectangular segment of the kernel that includes the center, and at least one of the corners, sums to zero. You typically see this with emboss or edge detection filters, or other filters that are designed to find the slope of a signal. For those kinds of filters, you should use the [`kvImageEdgeExtend`](kvimageedgeextend.md) option instead.
+Kernel truncation is not robust for certain kernels. It can fail when any rectangular segment of the kernel that includes the center, and at least one of the corners, sums to zero. You typically see this with emboss or edge detection filters, or other filters that are designed to find the slope of a signal. For those kinds of filters, you should use the [`kvImageEdgeExtend`](./kvimageedgeextend.md) option instead.
 
 ## See Also
 
-- [var kvImageCopyInPlace: Int](kvimagecopyinplace.md)
+### Edging Modes
+- [var kvImageCopyInPlace: Int](./kvimagecopyinplace.md)
   A flag that copies the value of the edge pixel in the source to the destination.
-- [var kvImageBackgroundColorFill: Int](kvimagebackgroundcolorfill.md)
+- [var kvImageBackgroundColorFill: Int](./kvimagebackgroundcolorfill.md)
   A flag that uses the background color for missing pixels.
-- [var kvImageEdgeExtend: Int](kvimageedgeextend.md)
+- [var kvImageEdgeExtend: Int](./kvimageedgeextend.md)
   A flag that extends the edges of the image infinitely.
 
 

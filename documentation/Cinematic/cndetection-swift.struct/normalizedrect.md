@@ -1,14 +1,15 @@
 # normalizedRect
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle within the image where the object occurs, normalized such that (0.0, 0.0) is the top-left and (1.0, 1.0) is the bottom-right.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

@@ -1,7 +1,8 @@
 # MTLResourceStatePassDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for a resource state pass, used to create a resource state command encoder.
 
@@ -19,50 +20,55 @@ A configuration for a resource state pass, used to create a resource state comma
 class MTLResourceStatePassDescriptor
 ```
 
+```objc
+@interface MTLResourceStatePassDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
 ## Topics
 
 ### Specifying sample buffers for GPU counters
-- [var sampleBufferAttachments: MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepassdescriptor/samplebufferattachments.md)
+- [var sampleBufferAttachments: MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepassdescriptor/samplebufferattachments.md)
   The array of sample buffers that the resource state pass can access.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Managing sparse texture memory](managing-sparse-texture-memory.md)
+### Sparse textures
+- [Managing sparse texture memory](./managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](./reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](./estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
-- [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
+- [struct MTLMapIndirectArguments](./mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 
 

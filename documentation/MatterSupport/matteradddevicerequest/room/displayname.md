@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the room that appears in the picker.
 
@@ -10,7 +11,7 @@ The name of the room that appears in the picker.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

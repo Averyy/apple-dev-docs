@@ -1,7 +1,8 @@
 # kCGImagePropertyWebPCanvasPixelHeight
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The height of the main image, in pixels.
 
@@ -20,9 +21,14 @@ The height of the main image, in pixels.
 let kCGImagePropertyWebPCanvasPixelHeight: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyWebPCanvasPixelHeight;
+```
+
 ## See Also
 
-- [let kCGImagePropertyWebPCanvasPixelWidth: CFString](kcgimagepropertywebpcanvaspixelwidth.md)
+### Image Properties
+- [let kCGImagePropertyWebPCanvasPixelWidth: CFString](./kcgimagepropertywebpcanvaspixelwidth.md)
   The width of the main image, in pixels.
 
 

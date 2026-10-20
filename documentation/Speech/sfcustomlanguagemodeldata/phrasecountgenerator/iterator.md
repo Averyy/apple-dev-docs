@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.PhraseCountGenerator.Iterator
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
@@ -20,13 +21,14 @@ class Iterator
 ## Relationships
 
 ### Inherited By
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator](sfcustomlanguagemodeldata/templatephrasecountgenerator/iterator.md)
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator](../templatephrasecountgenerator/iterator.md)
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [init()](sfcustomlanguagemodeldata/phrasecountgenerator/init.md)
+### Protocol requirements
+- [init()](./init%28%29.md)
 
 
 ---

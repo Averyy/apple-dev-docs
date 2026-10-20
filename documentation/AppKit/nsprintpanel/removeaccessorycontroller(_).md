@@ -1,7 +1,8 @@
 # removeAccessoryController(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified controller and accessory view from the Print panel.
 
@@ -14,6 +15,10 @@ Removes the specified controller and accessory view from the Print panel.
 func removeAccessoryController(_ accessoryController: any NSViewController & NSPrintPanelAccessorizing)
 ```
 
+```objc
+- (void) removeAccessoryController:(NSViewController<NSPrintPanelAccessorizing> *) accessoryController;
+```
+
 #### Discussion
 
 You use this method to remove any view controllers responsible for displaying accessory views you do not want to include in the Print panel.
@@ -24,11 +29,12 @@ You use this method to remove any view controllers responsible for displaying ac
 
 ## See Also
 
-- [func addAccessoryController(any NSViewController & NSPrintPanelAccessorizing)](nsprintpanel/addaccessorycontroller(_:).md)
+### Managing Accessory Views
+- [func addAccessoryController(any NSViewController & NSPrintPanelAccessorizing)](./addaccessorycontroller%28_%29.md)
   Adds a custom controller to the Print panel to manage an accessory view.
-- [protocol NSPrintPanelAccessorizing](nsprintpanelaccessorizing.md)
+- [protocol NSPrintPanelAccessorizing](../nsprintpanelaccessorizing.md)
   A set of methods that a Print panel object can use to get information from a printing accessory controller.
-- [var accessoryControllers: [NSViewController]](nsprintpanel/accessorycontrollers.md)
+- [var accessoryControllers: [NSViewController]](./accessorycontrollers.md)
   The array of controller objects that manage the Print panel’s accessory views.
 
 

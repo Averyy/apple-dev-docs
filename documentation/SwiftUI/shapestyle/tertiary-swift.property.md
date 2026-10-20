@@ -1,7 +1,8 @@
 # tertiary
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the third level of this shape style.
 
@@ -23,21 +24,22 @@ var tertiary: some ShapeStyle { get }
 
 ## See Also
 
-- [var secondary: some ShapeStyle](shapestyle/secondary-swift.property.md)
+### Hierarchical styles
+- [var secondary: some ShapeStyle](./secondary-swift.property.md)
   Returns the second level of this shape style.
-- [var quaternary: some ShapeStyle](shapestyle/quaternary-swift.property.md)
+- [var quaternary: some ShapeStyle](./quaternary-swift.property.md)
   Returns the fourth level of this shape style.
-- [var quinary: some ShapeStyle](shapestyle/quinary-swift.property.md)
+- [var quinary: some ShapeStyle](./quinary-swift.property.md)
   Returns the fifth level of this shape style.
-- [static var primary: HierarchicalShapeStyle](shapestyle/primary.md)
+- [static var primary: HierarchicalShapeStyle](./primary.md)
   A shape style that maps to the first level of the current content style.
-- [static var secondary: HierarchicalShapeStyle](shapestyle/secondary-swift.type.property.md)
+- [static var secondary: HierarchicalShapeStyle](./secondary-swift.type.property.md)
   A shape style that maps to the second level of the current content style.
-- [static var tertiary: HierarchicalShapeStyle](shapestyle/tertiary-swift.type.property.md)
+- [static var tertiary: HierarchicalShapeStyle](./tertiary-swift.type.property.md)
   A shape style that maps to the third level of the current content style.
-- [static var quaternary: HierarchicalShapeStyle](shapestyle/quaternary-swift.type.property.md)
+- [static var quaternary: HierarchicalShapeStyle](./quaternary-swift.type.property.md)
   A shape style that maps to the fourth level of the current content style.
-- [static var quinary: HierarchicalShapeStyle](shapestyle/quinary-swift.type.property.md)
+- [static var quinary: HierarchicalShapeStyle](./quinary-swift.type.property.md)
   A shape style that maps to the fifth level of the current content style.
 
 

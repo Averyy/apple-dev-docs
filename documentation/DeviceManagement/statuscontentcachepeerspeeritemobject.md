@@ -1,7 +1,8 @@
 # StatusContentCachePeersPeerItemObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A peer Content Cache.
 
@@ -10,13 +11,15 @@ A peer Content Cache.
 
 ## Declaration
 
-```swift
+```
 object StatusContentCachePeersPeerItemObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the system removed the peer entry and only this key and the `identifier` key are present in the status item object.
+
+  **Default**: `false`
 - `address` (string) *(required)*: The local IPv4 address of the peer Content Cache.
 - `friendly` (boolean) *(required)*: If `true`, the peer Content Cache is willing to respond to requests from this Content Cache.
 - `healthy` (boolean) *(required)*: If `true`, the peer Content Cache is able to respond to requests from this Content Cache.

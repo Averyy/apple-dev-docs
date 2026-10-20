@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a scratch memory buffer for an input/output command queue.
@@ -20,13 +21,17 @@ Creates a scratch memory buffer for an input/output command queue.
 func makeScratchBuffer(minimumSize: Int) -> (any MTLIOScratchBuffer)?
 ```
 
+```objc
+- (id<MTLIOScratchBuffer>) newScratchBufferWithMinimumSize:(NSUInteger) minimumSize;
+```
+
 #### Return Value
 
-An [`MTLIOScratchBuffer`](mtlioscratchbuffer.md) instance that your app implements or `nil`.
+An [`MTLIOScratchBuffer`](../mtlioscratchbuffer.md) instance that your app implements or `nil`.
 
 #### Discussion
 
-Your app can reduce additional callbacks from the framework by providing additional memory above `minimumSize`. If your implementation returns `nil`, the input/output command queue cancels the [`MTLIOCommandBuffer`](mtliocommandbuffer.md) instance that needs the scratch buffer memory.
+Your app can reduce additional callbacks from the framework by providing additional memory above `minimumSize`. If your implementation returns `nil`, the input/output command queue cancels the [`MTLIOCommandBuffer`](../mtliocommandbuffer.md) instance that needs the scratch buffer memory.
 
 ## Parameters
 

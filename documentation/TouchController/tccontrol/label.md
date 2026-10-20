@@ -2,6 +2,7 @@
 
 **Framework**: Touch Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The label associated with the control.
@@ -17,15 +18,20 @@ The label associated with the control.
 var label: TCControlLabel { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) TCControlLabel * label;
+```
+
 ## See Also
 
-- [var isEnabled: Bool](tccontrol/isenabled.md)
+### Inspecting a control
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the control is enabled.
-- [var highlightDuration: TimeInterval](tccontrol/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The duration of the highlight animation.
-- [class TCControlLabel](tccontrollabel.md)
+- [class TCControlLabel](../tccontrollabel.md)
   A label you associate with a touch control and provides a semantic description.
-- [var isPressed: Bool](tccontrol/ispressed.md)
+- [var isPressed: Bool](./ispressed.md)
   Indicates whether the control is currently pressed.
 
 

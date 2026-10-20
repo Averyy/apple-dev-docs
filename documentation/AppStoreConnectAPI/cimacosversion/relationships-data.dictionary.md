@@ -1,7 +1,8 @@
 # CiMacOsVersion.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships of the macOS Versions resource you included in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships of the macOS Versions resource you included in the request and
 
 ## Declaration
 
-```swift
+```
 object CiMacOsVersion.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object CiMacOsVersion.Relationships.XcodeVersions](cimacosversion/relationships-data.dictionary/xcodeversions-data.dictionary.md)
+- [object CiMacOsVersion.Relationships.XcodeVersions](./relationships-data.dictionary/xcodeversions-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the macOS Versions and Xcode Versions resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object CiMacOsVersion.Relationships
 
 ## See Also
 
-- [object CiMacOsVersion.Attributes](cimacosversion/attributes-data.dictionary.md)
+### Objects
+- [object CiMacOsVersion.Attributes](./attributes-data.dictionary.md)
   The attributes that describe a macOS Versions resource.
 
 

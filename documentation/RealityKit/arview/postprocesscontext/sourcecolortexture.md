@@ -1,7 +1,8 @@
 # sourceColorTexture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rendered frame buffer.
 
@@ -20,7 +21,7 @@ var sourceColorTexture: any MTLTexture
 
 ## Mentions
 
-- [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
+- [Implementing postprocess effects using Metal compute functions](../../implementing-postprocess-effects-using-metal-compute-functions.md)
 
 
 ---

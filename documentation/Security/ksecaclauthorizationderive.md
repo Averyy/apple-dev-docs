@@ -1,7 +1,8 @@
 # kSecACLAuthorizationDerive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Derive a new key from another key.
 
@@ -12,6 +13,10 @@ Derive a new key from another key.
 
 ```swift
 let kSecACLAuthorizationDerive: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationDerive;
 ```
 
 

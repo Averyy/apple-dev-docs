@@ -11,9 +11,10 @@ This value includes only those users with a Window Server connection, that is, t
 
 ## See Also
 
-- [sysctl](system/1812308-sysctl.md)
+### Accessing System Information
+- [sysctl](./api-1812308-sysctl.md)
   Provides the result of a `sysctlbyname()` call using the given selector.
-- [version](system/1812284-version.md)
+- [version](./api-1812284-version.md)
   A dictionary (associative array) with information about the current system version.
 
 

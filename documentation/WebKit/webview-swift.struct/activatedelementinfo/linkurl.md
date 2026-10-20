@@ -1,7 +1,8 @@
 # linkURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the link that the user clicked.
 

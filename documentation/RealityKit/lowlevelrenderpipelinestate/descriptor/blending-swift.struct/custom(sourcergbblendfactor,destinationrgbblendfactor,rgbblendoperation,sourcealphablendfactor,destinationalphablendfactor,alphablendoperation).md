@@ -1,7 +1,8 @@
 # custom(sourceRGBBlendFactor:destinationRGBBlendFactor:rgbBlendOperation:sourceAlphaBlendFactor:destinationAlphaBlendFactor:alphaBlendOperation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom blending configuration with explicit Metal blend factors and operations.
 
@@ -19,7 +20,7 @@ static func custom(sourceRGBBlendFactor: MTLBlendFactor = .one, destinationRGBBl
 
 #### Return Value
 
-A [`LowLevelRenderPipelineState.Descriptor.Blending`](lowlevelrenderpipelinestate/descriptor/blending-swift.struct.md) with the specified configuration.
+A [`LowLevelRenderPipelineState.Descriptor.Blending`](../blending-swift.struct.md) with the specified configuration.
 
 ## Parameters
 

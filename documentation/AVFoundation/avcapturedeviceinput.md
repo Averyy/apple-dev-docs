@@ -1,7 +1,8 @@
 # AVCaptureDeviceInput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides media input from a capture device to a capture session.
 
@@ -19,94 +20,99 @@ An object that provides media input from a capture device to a capture session.
 class AVCaptureDeviceInput
 ```
 
+```objc
+@interface AVCaptureDeviceInput : AVCaptureInput
+```
+
 ## Mentions
 
-- [Setting up a capture session](setting-up-a-capture-session.md)
+- [Setting up a capture session](./setting-up-a-capture-session.md)
 
 #### Overview
 
-This class is a concrete subclass of [`AVCaptureInput`](avcaptureinput.md) that you use to connect a capture device to a capture session.
+This class is a concrete subclass of [`AVCaptureInput`](./avcaptureinput.md) that you use to connect a capture device to a capture session.
 
 ## Topics
 
 ### Creating an input
-- [init(device: AVCaptureDevice) throws](avcapturedeviceinput/init(device:).md)
+- [init(device: AVCaptureDevice) throws](./avcapturedeviceinput/init%28device%29.md)
   Creates an input for the specified capture device.
 ### Configuring video properties
-- [var unifiedAutoExposureDefaultsEnabled: Bool](avcapturedeviceinput/unifiedautoexposuredefaultsenabled.md)
+- [var unifiedAutoExposureDefaultsEnabled: Bool](./avcapturedeviceinput/unifiedautoexposuredefaultsenabled.md)
   A Boolean value that indicates whether the input enables unified auto-exposure defaults.
-- [var videoMinFrameDurationOverride: CMTime](avcapturedeviceinput/videominframedurationoverride.md)
+- [var videoMinFrameDurationOverride: CMTime](./avcapturedeviceinput/videominframedurationoverride.md)
   A time value that acts as a modifier to a capture device’s active video minimum frame duration.
 ### Configuring audio properties
-- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](avcapturedeviceinput/ismultichannelaudiomodesupported(_:).md)
+- [func isMultichannelAudioModeSupported(AVCaptureMultichannelAudioMode) -> Bool](./avcapturedeviceinput/ismultichannelaudiomodesupported%28_%29.md)
   A Boolean value that indicates whether the input supports the specified multichannel audio mode.
-- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](avcapturedeviceinput/multichannelaudiomode.md)
+- [var multichannelAudioMode: AVCaptureMultichannelAudioMode](./avcapturedeviceinput/multichannelaudiomode.md)
   The multichannel audio mode to apply when recording audio.
-- [enum AVCaptureMultichannelAudioMode](avcapturemultichannelaudiomode.md)
+- [enum AVCaptureMultichannelAudioMode](./avcapturemultichannelaudiomode.md)
   Constants that indicate the modes of multichannel audio.
-- [var isWindNoiseRemovalSupported: Bool](avcapturedeviceinput/iswindnoiseremovalsupported.md)
-- [var isWindNoiseRemovalEnabled: Bool](avcapturedeviceinput/iswindnoiseremovalenabled.md)
+- [var isWindNoiseRemovalSupported: Bool](./avcapturedeviceinput/iswindnoiseremovalsupported.md)
+- [var isWindNoiseRemovalEnabled: Bool](./avcapturedeviceinput/iswindnoiseremovalenabled.md)
 ### Configuring Cinematic video capture
-- [var isCinematicVideoCaptureSupported: Bool](avcapturedeviceinput/iscinematicvideocapturesupported.md)
+- [var isCinematicVideoCaptureSupported: Bool](./avcapturedeviceinput/iscinematicvideocapturesupported.md)
   A BOOL value specifying whether Cinematic Video capture is supported.
-- [var isCinematicVideoCaptureEnabled: Bool](avcapturedeviceinput/iscinematicvideocaptureenabled.md)
+- [var isCinematicVideoCaptureEnabled: Bool](./avcapturedeviceinput/iscinematicvideocaptureenabled.md)
   A BOOL value specifying whether the Cinematic Video effect is being applied to any movie file output, video data output, metadata output, or video preview layer added to the capture session.
-- [var simulatedAperture: Float](avcapturedeviceinput/simulatedaperture.md)
+- [var simulatedAperture: Float](./avcapturedeviceinput/simulatedaperture.md)
   Shallow depth of field simulated aperture.
 ### Locking frame duration
-- [var activeLockedVideoFrameDuration: CMTime](avcapturedeviceinput/activelockedvideoframeduration.md)
+- [var activeLockedVideoFrameDuration: CMTime](./avcapturedeviceinput/activelockedvideoframeduration.md)
   The receiver’s locked frame duration (the reciprocal of its frame rate). Setting this property guarantees the intra-frame duration delivered by the device input is precisely the frame duration you request.
-- [var isLockedVideoFrameDurationSupported: Bool](avcapturedeviceinput/islockedvideoframedurationsupported.md)
+- [var isLockedVideoFrameDurationSupported: Bool](./avcapturedeviceinput/islockedvideoframedurationsupported.md)
   Indicates whether the device input supports locked frame durations.
 ### Synchronizing with external devices
-- [var isExternalSyncSupported: Bool](avcapturedeviceinput/isexternalsyncsupported.md)
+- [var isExternalSyncSupported: Bool](./avcapturedeviceinput/isexternalsyncsupported.md)
   Indicates whether the device input supports being configured to follow an external sync device.
-- [func follow(AVExternalSyncDevice, videoFrameDuration: CMTime, delegate: (any AVExternalSyncDeviceDelegate)?)](avcapturedeviceinput/follow(_:videoframeduration:delegate:).md)
+- [func follow(AVExternalSyncDevice, videoFrameDuration: CMTime, delegate: (any AVExternalSyncDeviceDelegate)?)](./avcapturedeviceinput/follow%28_,videoframeduration,delegate%29.md)
   Configures the the device input to follow an external sync device at the given frame duration.
-- [func unfollowExternalSyncDevice()](avcapturedeviceinput/unfollowexternalsyncdevice.md)
+- [func unfollowExternalSyncDevice()](./avcapturedeviceinput/unfollowexternalsyncdevice%28%29.md)
   Discontinues external sync.
-- [var activeExternalSyncVideoFrameDuration: CMTime](avcapturedeviceinput/activeexternalsyncvideoframeduration.md)
+- [var activeExternalSyncVideoFrameDuration: CMTime](./avcapturedeviceinput/activeexternalsyncvideoframeduration.md)
   The receiver’s external sync frame duration (the reciprocal of its frame rate) when being driven by an external sync device.
-- [var externalSyncDevice: AVExternalSyncDevice?](avcapturedeviceinput/externalsyncdevice.md)
+- [var externalSyncDevice: AVExternalSyncDevice?](./avcapturedeviceinput/externalsyncdevice.md)
   The external sync device currently being followed by this input.
 ### Accessing the device
-- [var device: AVCaptureDevice](avcapturedeviceinput/device.md)
+- [var device: AVCaptureDevice](./avcapturedeviceinput/device.md)
   A capture device associated with this input.
-- [func ports(for: AVMediaType?, sourceDeviceType: AVCaptureDevice.DeviceType?, sourceDevicePosition: AVCaptureDevice.Position) -> [AVCaptureInput.Port]](avcapturedeviceinput/ports(for:sourcedevicetype:sourcedeviceposition:).md)
+- [func ports(for: AVMediaType?, sourceDeviceType: AVCaptureDevice.DeviceType?, sourceDevicePosition: AVCaptureDevice.Position) -> [AVCaptureInput.Port]](./avcapturedeviceinput/ports%28for,sourcedevicetype,sourcedeviceposition%29.md)
   Retrieves a virtual device’s constituent device ports for use in a multi-camera session.
 ### Instance Properties
-- [var isAudioZoomEnabled: Bool](avcapturedeviceinput/isaudiozoomenabled.md)
+- [var isAudioZoomEnabled: Bool](./avcapturedeviceinput/isaudiozoomenabled.md)
   Whether or not audio zoom is enabled.
-- [var isAudioZoomSupported: Bool](avcapturedeviceinput/isaudiozoomsupported.md)
+- [var isAudioZoomSupported: Bool](./avcapturedeviceinput/isaudiozoomsupported.md)
   Whether or not audio zoom is supported.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureInput](avcaptureinput.md)
+- [AVCaptureInput](./avcaptureinput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+### Capture devices
+- [Choosing a capture device](./choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
-- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+- [Supporting device rotation in your camera app](./supporting-device-rotation-in-your-camera-app.md)
   Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
-- [class AVCaptureDevice](avcapturedevice.md)
+- [class AVCaptureDevice](./avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
-- [class AVContinuityDevice](avcontinuitydevice.md)
+- [class AVContinuityDevice](./avcontinuitydevice.md)
   A class that represents a physical iOS device that’s nearby and can provide access to its cameras and microphones.
-- [class AVExternalStorageDevice](avexternalstoragedevice.md)
+- [class AVExternalStorageDevice](./avexternalstoragedevice.md)
   Represents a physical external storage device that stores media assets.
-- [class AVExternalStorageDeviceDiscoverySession](avexternalstoragedevicediscoverysession.md)
+- [class AVExternalStorageDeviceDiscoverySession](./avexternalstoragedevicediscoverysession.md)
   Informs your app when the external storage devices connect to and disconnect from the system.
 
 

@@ -1,7 +1,8 @@
 # appleEventCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the Apple event code associated with the receiver’s class.
 
@@ -15,15 +16,20 @@ Returns the Apple event code associated with the receiver’s class.
 var appleEventCode: FourCharCode { get }
 ```
 
+```objc
+@property (readonly) FourCharCode appleEventCode;
+```
+
 #### Return Value
 
 The Apple event code associated with the receiver’s class. This is the primary code used to identify the class in Apple events.
 
 ## See Also
 
-- [func appleEventCode(forKey: String) -> FourCharCode](nsscriptclassdescription/appleeventcode(forkey:).md)
+### Getting and comparing Apple event codes
+- [func appleEventCode(forKey: String) -> FourCharCode](./appleeventcode%28forkey%29.md)
   Returns the Apple event code for the specified attribute or relationship in the receiver.
-- [func matchesAppleEventCode(FourCharCode) -> Bool](nsscriptclassdescription/matchesappleeventcode(_:).md)
+- [func matchesAppleEventCode(FourCharCode) -> Bool](./matchesappleeventcode%28_%29.md)
   Returns a Boolean value indicating whether a primary or secondary Apple event code in the receiver matches the passed code.
 
 

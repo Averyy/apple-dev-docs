@@ -1,7 +1,8 @@
 # fallbackURL
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Fallback URL to use when unable to perform operation.
 
@@ -16,7 +17,8 @@ let fallbackURL: URL?
 
 ## See Also
 
-- [let phoneNumber: String](rcsservice/business/dialphonenumberaction/phonenumber.md)
+### Accessing action properties
+- [let phoneNumber: String](./phonenumber.md)
   The phone number to dial.
 
 

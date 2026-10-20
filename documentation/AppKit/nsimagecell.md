@@ -1,12 +1,13 @@
 # NSImageCell
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](nsimage.md) object) in a frame. This class provides methods for choosing the frame and for aligning and scaling the image to fit the frame.
+An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](./nsimage.md) object) in a frame. This class provides methods for choosing the frame and for aligning and scaling the image to fit the frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,50 +15,54 @@ An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](
 class NSImageCell
 ```
 
+```objc
+@interface NSImageCell : NSCell
+```
+
 #### Overview
 
-The object value of an `NSImageCell` object must be an [`NSImage`](nsimage.md) object, so if you use the [`objectValue`](nscell/objectvalue.md) method of [`NSCell`](nscell.md), be sure to supply an [`NSImage`](nsimage.md) object as an argument. Because an [`NSImage`](nsimage.md) object does not need to be converted for display, do not use the [`NSCell`](nscell.md) methods relating to formatters.
+The object value of an `NSImageCell` object must be an [`NSImage`](./nsimage.md) object, so if you use the [`objectValue`](./nscell/objectvalue.md) method of [`NSCell`](./nscell.md), be sure to supply an [`NSImage`](./nsimage.md) object as an argument. Because an [`NSImage`](./nsimage.md) object does not need to be converted for display, do not use the [`NSCell`](./nscell.md) methods relating to formatters.
 
-An `NSImageCell` object is usually associated with some kind of control object. For example, an [`NSMatrix`](nsmatrix.md) or an [`NSTableView`](nstableview.md).
+An `NSImageCell` object is usually associated with some kind of control object. For example, an [`NSMatrix`](./nsmatrix.md) or an [`NSTableView`](./nstableview.md).
 
 ##### Designated Initializers
 
-When subclassing `NSImageCell` you must implement all of the designated initializers. Those methods are: init, [`init(coder:)`](nscell/init(coder:).md), [`init(textCell:)`](nscell/init(textcell:).md), and [`init(imageCell:)`](nscell/init(imagecell:).md).
+When subclassing `NSImageCell` you must implement all of the designated initializers. Those methods are: init, [`init(coder:)`](./nscell/init%28coder%29.md), [`init(textCell:)`](./nscell/init%28textcell%29.md), and [`init(imageCell:)`](./nscell/init%28imagecell%29.md).
 
 ## Topics
 
 ### Aligning and Scaling the Image
-- [var imageAlignment: NSImageAlignment](nsimagecell/imagealignment.md)
+- [var imageAlignment: NSImageAlignment](./nsimagecell/imagealignment.md)
   The alignment of the receiver’s image relative to its frame.
-- [var imageScaling: NSImageScaling](nsimagecell/imagescaling.md)
+- [var imageScaling: NSImageScaling](./nsimagecell/imagescaling.md)
   The scaling mode used to fit the receiver’s image into the frame.
 ### Choosing the Frame
-- [var imageFrameStyle: NSImageView.FrameStyle](nsimagecell/imageframestyle.md)
+- [var imageFrameStyle: NSImageView.FrameStyle](./nsimagecell/imageframestyle.md)
   The style of the frame that borders the image.
 ### Constants
-- [enum NSImageAlignment](nsimagealignment.md)
-  Constants used by [`imageAlignment`](nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
-- [NSImageView.FrameStyle](nsimageview/framestyle.md)
+- [enum NSImageAlignment](./nsimagealignment.md)
+  Constants used by [`imageAlignment`](./nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
+- [NSImageView.FrameStyle](./nsimageview/framestyle.md)
   Constants that allow you to specify the kind of frame bordering the image.
 
 ## Relationships
 
 ### Inherits From
-- [NSCell](nscell.md)
+- [NSCell](./nscell.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

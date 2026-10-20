@@ -1,14 +1,15 @@
 # type
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of electrical load device.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ let type: ElectricalLoadDevice.DeviceType
 
 ## See Also
 
-- [let id: String](electricalloaddevice/id.md)
+### Getting device information
+- [let id: String](./id.md)
   A unique, stable identifier for a device.
-- [let name: String](electricalloaddevice/name.md)
+- [let name: String](./name.md)
   A human-readable name for the device.
-- [ElectricalLoadDevice.DeviceType](electricalloaddevice/devicetype.md)
+- [ElectricalLoadDevice.DeviceType](./devicetype.md)
   The type of electrical load device.
 
 

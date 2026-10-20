@@ -1,9 +1,10 @@
 # init(indexesIn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index range.
+Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index range.
 
 **Availability**:
 - iOS 2.0+
@@ -20,17 +21,21 @@ Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index rang
 init(indexesIn range: NSRange)
 ```
 
+```objc
+- (instancetype) initWithIndexesInRange:(NSRange) range;
+```
+
 #### Return Value
 
-Initialized [`NSIndexSet`](nsindexset.md) object with `indexRange`.
+Initialized [`NSIndexSet`](../nsindexset.md) object with `indexRange`.
 
 #### Discussion
 
-This method raises an [`rangeException`](nsexceptionname/rangeexception.md) when `indexRange` would add an index that exceeds the maximum allowed value for unsigned integers.
+This method raises an [`rangeException`](../nsexceptionname/rangeexception.md) when `indexRange` would add an index that exceeds the maximum allowed value for unsigned integers.
 
-The resulting index set has a [`firstIndex`](nsindexset/firstindex.md) equal to the `location` of `indexRange`, and a [`count`](nsindexset/count.md) equal to the `length` of `indexRange`. Specifying a zero-length range results in an empty index set.
+The resulting index set has a [`firstIndex`](./firstindex.md) equal to the `location` of `indexRange`, and a [`count`](./count.md) equal to the `length` of `indexRange`. Specifying a zero-length range results in an empty index set.
 
-This method is a designated initializer for [`NSIndexSet`](nsindexset.md).
+This method is a designated initializer for [`NSIndexSet`](../nsindexset.md).
 
 ## Parameters
 
@@ -38,10 +43,11 @@ This method is a designated initializer for [`NSIndexSet`](nsindexset.md).
 
 ## See Also
 
-- [convenience init(index: Int)](nsindexset/init(index:).md)
-  Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index.
-- [init(indexSet: IndexSet)](nsindexset/init(indexset:).md)
-  Initializes an allocated [`NSIndexSet`](nsindexset.md) object with an index set.
+### Creating Index Sets
+- [convenience init(index: Int)](./init%28index%29.md)
+  Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index.
+- [init(indexSet: IndexSet)](./init%28indexset%29.md)
+  Initializes an allocated [`NSIndexSet`](../nsindexset.md) object with an index set.
 
 
 ---

@@ -1,7 +1,8 @@
 # Transcript.ResponseFormat.Kind.schema(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A format that constrains the model’s output to a generation schema.
 

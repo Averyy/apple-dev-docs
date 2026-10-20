@@ -1,7 +1,8 @@
 # setTransformMatrix(_:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transform of the entity relative to the given reference entity using a 4x4 matrix representation.
 
@@ -11,7 +12,7 @@ Sets the transform of the entity relative to the given reference entity using a 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Sets the transform of the entity relative to the given reference entity using a 
 
 #### Discussion
 
-The [`Transform`](transform.md) component can’t represent all transforms that a general 4x4 matrix can represent. Setting a [`transform`](hastransform/transform.md) using a 4x4 matrix is therefore a lossy event that might result in certain transformations, like shear, being dropped.
+The [`Transform`](../transform.md) component can’t represent all transforms that a general 4x4 matrix can represent. Setting a [`transform`](./transform.md) using a 4x4 matrix is therefore a lossy event that might result in certain transformations, like shear, being dropped.
 
 ## Parameters
 

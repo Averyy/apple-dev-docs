@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Find the next offset of hole or data region greater than or equal to the supplied offset
@@ -12,7 +13,15 @@ Find the next offset of hole or data region greater than or equal to the supplie
 ## Declaration
 
 ```swift
+func seek(within item: FSItem, from offset: off_t, region: FSVolume.SeekRegion, context: FSContext, replyHandler reply: @escaping @Sendable (FSSeekRegionResult?, (any Error)?) -> Void)
+```
+
+```swift
 func seek(within item: FSItem, from offset: off_t, region: FSVolume.SeekRegion, context: FSContext) async throws -> FSSeekRegionResult
+```
+
+```objc
+- (void) seekWithinItem:(FSItem *) item fromOffset:(off_t) offset region:(FSSeekRegion) region context:(FSContext *) context replyHandler:(void (^)(FSSeekRegionResult *result, NSError *error)) reply;
 ```
 
 ## Parameters
@@ -21,17 +30,18 @@ func seek(within item: FSItem, from offset: off_t, region: FSVolume.SeekRegion, 
 - `offset`: The offset from which to seek.
 - `region`: The region to seek.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If seek succeeds, pass an instance of [`FSSeekRegionResult`](fsseekregionresult.md) containing the offset of the requested region greater than or equal to the supplied offset, along with a `nil` error. If seek fails, pass the relevant error as the second parameter; FSKit ignores the [`FSSeekRegionResult`](fsseekregionresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If seek succeeds, pass an instance of [`FSSeekRegionResult`](../../fsseekregionresult.md) containing the offset of the requested region greater than or equal to the supplied offset, along with a `nil` error. If seek fails, pass the relevant error as the second parameter; FSKit ignores the [`FSSeekRegionResult`](../../fsseekregionresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [class FSItem](fsitem.md)
+### Performing seek
+- [class FSItem](../../fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [FSVolume.SeekRegion](fsvolume/seekregion.md)
+- [FSVolume.SeekRegion](../seekregion.md)
   Types of region for seek operations
-- [class FSContext](fscontext.md)
+- [class FSContext](../../fscontext.md)
   A context object that provides information about the initiator of a file system operation.
-- [class FSSeekRegionResult](fsseekregionresult.md)
+- [class FSSeekRegionResult](../../fsseekregionresult.md)
   A seek-region result.
 
 

@@ -1,7 +1,8 @@
 # MPSGraphSparseStorageType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The sparse storage options in the Metal Performance Shaders Graph framework.
 
@@ -19,27 +20,31 @@ The sparse storage options in the Metal Performance Shaders Graph framework.
 enum MPSGraphSparseStorageType
 ```
 
+```c
+enum MPSGraphSparseStorageType : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphSparseStorageType.COO](mpsgraphsparsestoragetype/coo.md)
+- [MPSGraphSparseStorageType.COO](./mpsgraphsparsestoragetype/coo.md)
   COO Storage
-- [MPSGraphSparseStorageType.CSC](mpsgraphsparsestoragetype/csc.md)
+- [MPSGraphSparseStorageType.CSC](./mpsgraphsparsestoragetype/csc.md)
   CSC Storage
-- [MPSGraphSparseStorageType.CSR](mpsgraphsparsestoragetype/csr.md)
+- [MPSGraphSparseStorageType.CSR](./mpsgraphsparsestoragetype/csr.md)
   CSR Storage
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphsparsestoragetype/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphsparsestoragetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

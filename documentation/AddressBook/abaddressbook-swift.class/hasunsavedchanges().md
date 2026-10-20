@@ -1,17 +1,22 @@
 # hasUnsavedChanges()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether an address book has changes that have not been saved to the Address Book database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hasUnsavedChanges() -> Bool
+```
+
+```objc
+- (BOOL) hasUnsavedChanges;
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ The unsaved changes flag is set automatically whenever changes are made.
 
 ## See Also
 
-- [func save() -> Bool](abaddressbook-swift.class/save.md)
+### Saving and Detecting Changes
+- [func save() -> Bool](./save%28%29.md)
   Saves all the changes made since the last save.
-- [func saveAndReturnError() throws](abaddressbook-swift.class/saveandreturnerror.md)
+- [func saveAndReturnError() throws](./saveandreturnerror%28%29.md)
   Saves all the changes made since the last save.
 
 

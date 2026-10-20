@@ -1,7 +1,8 @@
 # showPreviewsSetting
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The setting that indicates whether the app shows a preview of the notification’s content.
 
@@ -18,15 +19,28 @@ The setting that indicates whether the app shows a preview of the notification�
 var showPreviewsSetting: UNShowPreviewsSetting { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNShowPreviewsSetting showPreviewsSetting;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNShowPreviewsSetting showPreviewsSetting;
+```
+
 ## See Also
 
-- [var alertStyle: UNAlertStyle](unnotificationsettings/alertstyle.md)
+### Getting Interface Settings
+- [var alertStyle: UNAlertStyle](./alertstyle.md)
   The type of alert that the app may display when the device is unlocked.
-- [enum UNAlertStyle](unalertstyle.md)
+- [enum UNAlertStyle](../unalertstyle.md)
   Constants indicating the presentation styles for alerts.
-- [enum UNShowPreviewsSetting](unshowpreviewssetting.md)
+- [enum UNShowPreviewsSetting](../unshowpreviewssetting.md)
   Constants indicating the style previewing a notification’s content.
-- [var providesAppNotificationSettings: Bool](unnotificationsettings/providesappnotificationsettings.md)
+- [var providesAppNotificationSettings: Bool](./providesappnotificationsettings.md)
   A Boolean value indicating the system displays a button for in-app notification settings.
 
 

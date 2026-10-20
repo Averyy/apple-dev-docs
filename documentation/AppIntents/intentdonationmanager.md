@@ -1,7 +1,8 @@
 # IntentDonationManager
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type you use to teach the system about the actions people take using your app.
 
@@ -11,7 +12,7 @@ A type you use to teach the system about the actions people take using your app.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct IntentDonationManager
 
 ## Mentions
 
-- [Donating your app’s data and actions to the system](donating-your-apps-data-and-actions-to-the-system.md)
+- [Donating your app’s data and actions to the system](./donating-your-apps-data-and-actions-to-the-system.md)
 
 #### Overview
 
@@ -37,26 +38,27 @@ This type offers both synchronous and asynchronous methods to donate your app in
 ## Topics
 
 ### Getting the donation manager
-- [static let shared: IntentDonationManager](intentdonationmanager/shared.md)
+- [static let shared: IntentDonationManager](./intentdonationmanager/shared.md)
   The shared instance of this class.
 ### Donating intents to the system
-- [func donate(intent: some AppIntent) -> IntentDonationIdentifier](intentdonationmanager/donate(intent:)-57fg4.md)
+- [func donate(intent: some AppIntent) -> IntentDonationIdentifier](./intentdonationmanager/donate%28intent%29-57fg4.md)
   Donates the specified app intent to the system synchronously.
-- [func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier](intentdonationmanager/donate(intent:)-hly2.md)
+- [func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier](./intentdonationmanager/donate%28intent%29-hly2.md)
   Donates the specified app intent to the system asynchronously.
-- [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-1ltmi.md)
+- [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](./intentdonationmanager/donate%28intent,result%29-1ltmi.md)
   Donates the specified app intent and result to the system asynchronously.
-- [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-7ztce.md)
+- [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](./intentdonationmanager/donate%28intent,result%29-7ztce.md)
   Donates the specified app intent and result to the system synchronously.
 ### Deleting previous donations
-- [func deleteDonations(matching: IntentDonationMatchingPredicate) async throws -> [IntentDonationIdentifier]](intentdonationmanager/deletedonations(matching:).md)
+- [func deleteDonations(matching: IntentDonationMatchingPredicate) async throws -> [IntentDonationIdentifier]](./intentdonationmanager/deletedonations%28matching%29.md)
   Deletes the donations that match the criteria in the specified predicate.
 
 ## See Also
 
-- [struct IntentDonationIdentifier](intentdonationidentifier.md)
+### Donation management
+- [struct IntentDonationIdentifier](./intentdonationidentifier.md)
   An opaque type that identifies a specific donation to the system.
-- [struct IntentDonationMatchingPredicate](intentdonationmatchingpredicate.md)
+- [struct IntentDonationMatchingPredicate](./intentdonationmatchingpredicate.md)
   A type you use to specify previously donated app intents.
 
 

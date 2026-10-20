@@ -1,7 +1,8 @@
 # numberOfChannels
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of audio channels in the player’s audio.
 
@@ -20,9 +21,14 @@ The number of audio channels in the player’s audio.
 var numberOfChannels: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger numberOfChannels;
+```
+
 ## See Also
 
-- [var channelAssignments: [AVAudioSessionChannelDescription]?](avaudioplayer/channelassignments.md)
+### Managing audio channels
+- [var channelAssignments: [AVAudioSessionChannelDescription]?](./channelassignments.md)
   An array of channel descriptions for the audio player.
 
 

@@ -1,7 +1,8 @@
 # clip(to:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clips the values of a 32-bit pixel buffer to the specified bounds.
 
@@ -11,7 +12,7 @@ Clips the values of a 32-bit pixel buffer to the specified bounds.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Clips the values of a 32-bit pixel buffer to the specified bounds.
 ```swift
 func clip(to bounds: ClosedRange<Float>, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` conforms to `StaticPixelFormat` and `Format.ComponentType` is `Float`.
 
 #### Discussion
 

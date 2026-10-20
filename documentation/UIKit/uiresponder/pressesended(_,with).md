@@ -1,7 +1,8 @@
 # pressesEnded(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the object when a button is released.
 
@@ -18,9 +19,13 @@ Tells the object when a button is released.
 func pressesEnded(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 
+```objc
+- (void) pressesEnded:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
+```
+
 ## Mentions
 
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
 #### Discussion
 
@@ -28,16 +33,17 @@ UIKit calls this method when the user stops pressing one or more buttons. Use th
 
 ## Parameters
 
-- `presses`: A set of [`UIPress`](uipress.md) instances that represent the buttons that the user is no longer pressing. The phase of each press is set to [`UIPress.Phase.ended`](uipress/phase-swift.enum/ended.md).
+- `presses`: A set of [`UIPress`](../uipress.md) instances that represent the buttons that the user is no longer pressing. The phase of each press is set to [`UIPress.Phase.ended`](../uipress/phase-swift.enum/ended.md).
 - `event`: The event to which the presses belong.
 
 ## See Also
 
-- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesbegan(_:with:).md)
+### Responding to press events
+- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](./pressesbegan%28_,with%29.md)
   Tells this object when a physical button is first pressed.
-- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](uiresponder/presseschanged(_:with:).md)
+- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](./presseschanged%28_,with%29.md)
   Tells this object when a value associated with a press has changed.
-- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressescancelled(_:with:).md)
+- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](./pressescancelled%28_,with%29.md)
   Tells this object when a system event (such as a low-memory warning) cancels a press event.
 
 

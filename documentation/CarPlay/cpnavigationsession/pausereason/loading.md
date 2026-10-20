@@ -1,7 +1,8 @@
 # CPNavigationSession.PauseReason.loading
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system is loading the route.
 
@@ -16,15 +17,20 @@ The system is loading the route.
 case loading
 ```
 
+```c
+CPTripPauseReasonLoading
+```
+
 ## See Also
 
-- [CPNavigationSession.PauseReason.arrived](cpnavigationsession/pausereason/arrived.md)
+### Reasons
+- [CPNavigationSession.PauseReason.arrived](./arrived.md)
   The user arrived at the destination.
-- [CPNavigationSession.PauseReason.locating](cpnavigationsession/pausereason/locating.md)
+- [CPNavigationSession.PauseReason.locating](./locating.md)
   The system is locating the destination.
-- [CPNavigationSession.PauseReason.proceedToRoute](cpnavigationsession/pausereason/proceedtoroute.md)
+- [CPNavigationSession.PauseReason.proceedToRoute](./proceedtoroute.md)
   The system is waiting for the user to proceed to the route.
-- [CPNavigationSession.PauseReason.rerouting](cpnavigationsession/pausereason/rerouting.md)
+- [CPNavigationSession.PauseReason.rerouting](./rerouting.md)
   The system is rerouting the trip.
 
 

@@ -1,7 +1,8 @@
 # registerDataRepresentation(for:visibility:loadHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a data-backed representation for an item, specifiying item visibility and a load handler.
 
@@ -22,9 +23,10 @@ func registerDataRepresentation(for contentType: UTType, visibility: NSItemProvi
 
 ## See Also
 
-- [func registerDataRepresentation(forTypeIdentifier: String, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((Data?, (any Error)?) -> Void) -> Progress?)](nsitemprovider/registerdatarepresentation(fortypeidentifier:visibility:loadhandler:).md)
+### Registering data
+- [func registerDataRepresentation(forTypeIdentifier: String, visibility: NSItemProviderRepresentationVisibility, loadHandler: ((Data?, (any Error)?) -> Void) -> Progress?)](./registerdatarepresentation%28fortypeidentifier,visibility,loadhandler%29.md)
   Registers a data-backed representation for an item, specifiying item visibility and a load handler.
-- [func registerItem(forTypeIdentifier: String, loadHandler: NSItemProvider.LoadHandler)](nsitemprovider/registeritem(fortypeidentifier:loadhandler:).md)
+- [func registerItem(forTypeIdentifier: String, loadHandler: NSItemProvider.LoadHandler)](./registeritem%28fortypeidentifier,loadhandler%29.md)
   Lazily registers an item, according to the item provider type coercion policy.
 
 

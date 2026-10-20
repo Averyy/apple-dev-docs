@@ -1,12 +1,13 @@
 # processes
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of AudioHardwareProcesses that represent the Process objects for all client processes currently connected to the system.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

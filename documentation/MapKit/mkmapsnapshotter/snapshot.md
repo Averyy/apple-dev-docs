@@ -1,7 +1,8 @@
 # MKMapSnapshotter.Snapshot
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image that a snapshotter object generates.
 
@@ -20,41 +21,46 @@ An image that a snapshotter object generates.
 class Snapshot
 ```
 
+```objc
+@interface MKMapSnapshot : NSObject
+```
+
 #### Overview
 
-You don’t create instances of this class directly. Instead, you use an [`MKMapSnapshotter`](mkmapsnapshotter.md) object to capture the map contents asynchronously. An `MKMapSnapshotter.Snapshot` object contains the image that the snapshotter generates from the map contents.
+You don’t create instances of this class directly. Instead, you use an [`MKMapSnapshotter`](../mkmapsnapshotter.md) object to capture the map contents asynchronously. An `MKMapSnapshotter.Snapshot` object contains the image that the snapshotter generates from the map contents.
 
-Snapshot images don’t include any custom overlays or annotations that your app adds to the map view. If you want your annotations and overlays to appear on the final image, you need to draw them yourself. To position those items correctly on the image, use the [`point(for:)`](mkmapsnapshotter/snapshot/point(for:).md) method of this class to translate the overlay or annotation coordinate value to an appropriate location inside the image’s coordinate space.
+Snapshot images don’t include any custom overlays or annotations that your app adds to the map view. If you want your annotations and overlays to appear on the final image, you need to draw them yourself. To position those items correctly on the image, use the [`point(for:)`](./snapshot/point%28for%29.md) method of this class to translate the overlay or annotation coordinate value to an appropriate location inside the image’s coordinate space.
 
 ## Topics
 
 ### Getting the snapshot image
-- [var image: UIImage](mkmapsnapshotter/snapshot/image.md)
+- [var image: UIImage](./snapshot/image.md)
   The image of the map’s content.
-- [var appearance: NSAppearance](mkmapsnapshotter/snapshot/appearance.md)
+- [var appearance: NSAppearance](./snapshot/appearance.md)
   The visual style that MapKit uses when rendering the snapshot.
 ### Getting points on the image
-- [func point(for: CLLocationCoordinate2D) -> CGPoint](mkmapsnapshotter/snapshot/point(for:).md)
+- [func point(for: CLLocationCoordinate2D) -> CGPoint](./snapshot/point%28for%29.md)
   Converts the specified map coordinate to a point in the coordinate space of the image.
 ### Getting appearance traits
-- [var traitCollection: UITraitCollection](mkmapsnapshotter/snapshot/traitcollection.md)
+- [var traitCollection: UITraitCollection](./snapshot/traitcollection.md)
   Traits to use when creating the snapshot.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKMapSnapshotter](mkmapsnapshotter.md)
+### Static map snapshots
+- [class MKMapSnapshotter](../mkmapsnapshotter.md)
   A utility class for capturing a map and its content into an image.
 
 

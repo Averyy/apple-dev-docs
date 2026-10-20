@@ -1,16 +1,18 @@
 # IOPCIClassMatch
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A key to match PCI devices by class code register.
 
 **Availability**:
 - macOS 10.15.4+
 
+## Details
 
-
-**Type**: string
+- **Name**: `IOPCIClassMatch`
+- **Type**: string
 
 #### Discussion
 
@@ -18,11 +20,12 @@ This value of this key matches the class code register (`0x08`). The default mas
 
 ## See Also
 
-- [IOPCIMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopcimatch.md)
+### Identifying PCI Devices
+- [IOPCIMatch](./iopcimatch.md)
   A key to match PCI devices by vendor and device ID registers or subsystem registers.
-- [IOPCIPrimaryMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopciprimarymatch.md)
+- [IOPCIPrimaryMatch](./iopciprimarymatch.md)
   A key to match PCI devices by vendor and device ID registers.
-- [IOPCISecondaryMatch](entitlements/com.apple.developer.driverkit.transport.pci/iopcisecondarymatch.md)
+- [IOPCISecondaryMatch](./iopcisecondarymatch.md)
   A key to match PCI devices by subsystem vendor ID and device ID registers.
 
 

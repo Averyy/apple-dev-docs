@@ -1,7 +1,8 @@
 # MediaDeviceError.Code.discoveryFailed
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Discovery of media devices failed.
 

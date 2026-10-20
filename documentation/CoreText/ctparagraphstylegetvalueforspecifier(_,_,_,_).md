@@ -1,7 +1,8 @@
 # CTParagraphStyleGetValueForSpecifier(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the current value for a single setting specifier.
 
@@ -20,6 +21,10 @@ Obtains the current value for a single setting specifier.
 func CTParagraphStyleGetValueForSpecifier(_ paragraphStyle: CTParagraphStyle, _ spec: CTParagraphStyleSpecifier, _ valueBufferSize: Int, _ valueBuffer: UnsafeMutableRawPointer) -> Bool
 ```
 
+```c
+extern bool CTParagraphStyleGetValueForSpecifier(CTParagraphStyleRef paragraphStyle, CTParagraphStyleSpecifier spec, size_t valueBufferSize, void *valueBuffer);
+```
+
 #### Return Value
 
 `True` if `valueBuffer` was successfully filled; otherwise, `False`, indicating that one or more of the parameters are not valid.
@@ -32,7 +37,7 @@ This function returns the current value of the specifier whether or not the user
 
 - `paragraphStyle`: The paragraph style from which to get the value. This parameter may not be `NULL`.
 - `spec`: The setting specifier for which to get the value.
-- `valueBufferSize`: The size of the buffer pointed to by the `valueBuffer` parameter. This value must be at least as large as the size the required by the [`CTParagraphStyleSpecifier`](ctparagraphstylespecifier.md) value set in the `spec` parameter.
+- `valueBufferSize`: The size of the buffer pointed to by the `valueBuffer` parameter. This value must be at least as large as the size the required by the [`CTParagraphStyleSpecifier`](./ctparagraphstylespecifier.md) value set in the `spec` parameter.
 - `valueBuffer`: On output, the requested setting value. The buffer’s size needs to be at least as large as the value passed into `valueBufferSize`. This parameter is required and may not be `NULL`.
 
 

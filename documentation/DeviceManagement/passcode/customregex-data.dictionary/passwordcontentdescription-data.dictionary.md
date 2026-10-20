@@ -1,22 +1,25 @@
 # Passcode.CustomRegex.PasswordContentDescription
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 Descriptions of the policy, localized to supported locales.
 
 **Availability**:
-- macOS 14.0+
+- macOS 14.0+ - Deprecated in 27.0
 
 ## Declaration
 
-```swift
+```
 object Passcode.CustomRegex.PasswordContentDescription
 ```
 
 ## Properties
 
-- `ANY` (string): A localized description. Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
+- `ANY` (string) *(deprecated)*: A localized description.
+
+  Deprecated: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+ | watchOS 27+
 
 
 ---

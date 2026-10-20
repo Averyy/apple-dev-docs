@@ -1,7 +1,8 @@
 # vImageConverter_GetNumberOfSourceBuffers(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of source buffers consumed by the converter.
 
@@ -20,6 +21,10 @@ Returns the number of source buffers consumed by the converter.
 func vImageConverter_GetNumberOfSourceBuffers(_ converter: vImageConverter) -> UInt
 ```
 
+```c
+unsigned long vImageConverter_GetNumberOfSourceBuffers(vImageConverterRef const converter);
+```
+
 #### Return Value
 
 The number of source buffers.
@@ -34,13 +39,14 @@ This function is for video formats that are planar data formats with data in mor
 
 ## See Also
 
-- [func vImageConverter_MustOperateOutOfPlace(vImageConverter, UnsafePointer<vImage_Buffer>!, UnsafePointer<vImage_Buffer>!, vImage_Flags) -> vImage_Error](vimageconverter_mustoperateoutofplace(_:_:_:_:).md)
+### Querying a converter’s properties
+- [func vImageConverter_MustOperateOutOfPlace(vImageConverter, UnsafePointer<vImage_Buffer>!, UnsafePointer<vImage_Buffer>!, vImage_Flags) -> vImage_Error](./vimageconverter_mustoperateoutofplace%28_,_,_,_%29.md)
   Determines whether a converter is capable of operating in place.
-- [func vImageConverter_GetSourceBufferOrder(vImageConverter) -> UnsafePointer<vImageBufferTypeCode>!](vimageconverter_getsourcebufferorder(_:).md)
+- [func vImageConverter_GetSourceBufferOrder(vImageConverter) -> UnsafePointer<vImageBufferTypeCode>!](./vimageconverter_getsourcebufferorder%28_%29.md)
   Returns a list of vImage source buffer channel names, specifying the order of planes.
-- [func vImageConverter_GetDestinationBufferOrder(vImageConverter) -> UnsafePointer<vImageBufferTypeCode>!](vimageconverter_getdestinationbufferorder(_:).md)
+- [func vImageConverter_GetDestinationBufferOrder(vImageConverter) -> UnsafePointer<vImageBufferTypeCode>!](./vimageconverter_getdestinationbufferorder%28_%29.md)
   Returns a list of vImage destination buffer channel names, specifying the order of planes.
-- [func vImageConverter_GetNumberOfDestinationBuffers(vImageConverter) -> UInt](vimageconverter_getnumberofdestinationbuffers(_:).md)
+- [func vImageConverter_GetNumberOfDestinationBuffers(vImageConverter) -> UInt](./vimageconverter_getnumberofdestinationbuffers%28_%29.md)
   Returns the number of destination buffers written to by the converter.
 
 

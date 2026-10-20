@@ -1,7 +1,8 @@
 # instanceCapacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of instances the mesh supports when using per-instance vertex data.
 

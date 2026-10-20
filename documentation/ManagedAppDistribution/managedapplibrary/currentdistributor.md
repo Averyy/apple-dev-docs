@@ -1,7 +1,8 @@
 # currentDistributor
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The library provider for managed apps on this device.
 
@@ -24,9 +25,10 @@ This is a singleton object.
 
 ## See Also
 
-- [var availableApps: ManagedAppLibrary.ManagedApps](managedapplibrary/availableapps.md)
+### Obtaining library information
+- [var availableApps: ManagedAppLibrary.ManagedApps](./availableapps.md)
   The current managed apps available to this device.
-- [ManagedAppLibrary.ManagedApps](managedapplibrary/managedapps.md)
+- [ManagedAppLibrary.ManagedApps](./managedapps.md)
   An array of managed apps that updates as apps become available or unavailable.
 
 

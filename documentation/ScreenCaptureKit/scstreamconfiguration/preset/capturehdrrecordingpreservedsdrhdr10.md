@@ -1,7 +1,8 @@
 # SCStreamConfiguration.Preset.captureHDRRecordingPreservedSDRHDR10
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case captureHDRRecordingPreservedSDRHDR10
+```
+
+```c
+SCStreamConfigurationPresetCaptureHDRRecordingPreservedSDRHDR10
 ```
 
 

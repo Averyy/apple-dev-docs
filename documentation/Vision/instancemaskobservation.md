@@ -1,7 +1,8 @@
 # InstanceMaskObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An observation that contains an instance mask that labels instances in the mask.
 
@@ -23,41 +24,41 @@ struct InstanceMaskObservation
 ## Topics
 
 ### Creating an observation
-- [init?(VNInstanceMaskObservation)](instancemaskobservation/init(_:).md)
+- [init?(VNInstanceMaskObservation)](./instancemaskobservation/init%28_%29.md)
   Creates an instance mask observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
 ### Generating a mask
-- [func generateMask(for: IndexSet) throws -> CVPixelBuffer](instancemaskobservation/generatemask(for:).md)
+- [func generateMask(for: IndexSet) throws -> CVPixelBuffer](./instancemaskobservation/generatemask%28for%29.md)
   Creates a low-resolution mask from the instances you specify.
-- [func generateMaskedImage(for: IndexSet, imageFrom: ImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](instancemaskobservation/generatemaskedimage(for:imagefrom:croppedtoinstancesextent:).md)
+- [func generateMaskedImage(for: IndexSet, imageFrom: ImageRequestHandler, croppedToInstancesExtent: Bool) throws -> CVPixelBuffer](./instancemaskobservation/generatemaskedimage%28for,imagefrom,croppedtoinstancesextent%29.md)
   Creates a high-resolution image with everything except for the instances you specify masked out.
-- [func generateScaledMask(for: IndexSet, scaledToImageFrom: ImageRequestHandler) throws -> CVPixelBuffer](instancemaskobservation/generatescaledmask(for:scaledtoimagefrom:).md)
+- [func generateScaledMask(for: IndexSet, scaledToImageFrom: ImageRequestHandler) throws -> CVPixelBuffer](./instancemaskobservation/generatescaledmask%28for,scaledtoimagefrom%29.md)
   Creates a high-resolution mask representing a combination of the instances you specify.
 ### Getting instances
-- [func instanceAtPoint(NormalizedPoint) -> IndexSet](instancemaskobservation/instanceatpoint(_:).md)
+- [func instanceAtPoint(NormalizedPoint) -> IndexSet](./instancemaskobservation/instanceatpoint%28_%29.md)
   Returns an instance at the point you specify.
-- [let allInstances: IndexSet](instancemaskobservation/allinstances.md)
+- [let allInstances: IndexSet](./instancemaskobservation/allinstances.md)
   The collection that contains all instances, excluding the background.
-- [let allInstancesMask: PixelBufferObservation](instancemaskobservation/allinstancesmask.md)
+- [let allInstancesMask: PixelBufferObservation](./instancemaskobservation/allinstancesmask.md)
   The resulting mask that represents all instances.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](./pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

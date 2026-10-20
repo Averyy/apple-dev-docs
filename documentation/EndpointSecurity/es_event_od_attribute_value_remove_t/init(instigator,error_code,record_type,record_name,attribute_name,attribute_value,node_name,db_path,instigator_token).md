@@ -1,11 +1,12 @@
 # init(instigator:error_code:record_type:record_name:attribute_name:attribute_value:node_name:db_path:instigator_token:)
 
 **Framework**: Endpoint Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 

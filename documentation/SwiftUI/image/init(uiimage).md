@@ -1,7 +1,8 @@
 # init(uiImage:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a SwiftUI image from a UIKit image instance.
 
@@ -21,11 +22,12 @@ init(uiImage: UIImage)
 
 ## Parameters
 
-- `uiImage`: The UIKit image to wrap with a SwiftUI [`Image`](image.md) instance.
+- `uiImage`: The UIKit image to wrap with a SwiftUI [`Image`](../image.md) instance.
 
 ## See Also
 
-- [init(nsImage: NSImage)](image/init(nsimage:).md)
+### Creating an image from another image
+- [init(nsImage: NSImage)](./init%28nsimage%29.md)
   Creates a SwiftUI image from an AppKit image instance.
 
 

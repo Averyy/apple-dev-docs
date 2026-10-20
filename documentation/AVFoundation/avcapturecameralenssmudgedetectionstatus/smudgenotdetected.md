@@ -1,7 +1,8 @@
 # AVCaptureCameraLensSmudgeDetectionStatus.smudgeNotDetected
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the most recent detection found no smudge on the camera lens.
 
@@ -18,13 +19,18 @@ Indicates that the most recent detection found no smudge on the camera lens.
 case smudgeNotDetected
 ```
 
+```c
+AVCaptureCameraLensSmudgeDetectionStatusSmudgeNotDetected
+```
+
 ## See Also
 
-- [AVCaptureCameraLensSmudgeDetectionStatus.disabled](avcapturecameralenssmudgedetectionstatus/disabled.md)
+### Status values
+- [AVCaptureCameraLensSmudgeDetectionStatus.disabled](./disabled.md)
   Indicates that the detection is not enabled.
-- [AVCaptureCameraLensSmudgeDetectionStatus.smudged](avcapturecameralenssmudgedetectionstatus/smudged.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.smudged](./smudged.md)
   Indicates that the most recent detection found the camera lens to be smudged.
-- [AVCaptureCameraLensSmudgeDetectionStatus.unknown](avcapturecameralenssmudgedetectionstatus/unknown.md)
+- [AVCaptureCameraLensSmudgeDetectionStatus.unknown](./unknown.md)
   Indicates that the detection result has not settled, commonly caused by excessive camera movement or the content of the scene.
 
 

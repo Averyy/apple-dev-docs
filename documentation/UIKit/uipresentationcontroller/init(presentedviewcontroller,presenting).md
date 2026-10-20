@@ -1,7 +1,8 @@
 # init(presentedViewController:presenting:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a presentation controller for transitioning between the specified view controllers.
 
@@ -9,13 +10,17 @@ Initializes and returns a presentation controller for transitioning between the 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?)
+```
+
+```objc
+- (instancetype) initWithPresentedViewController:(UIViewController *) presentedViewController presentingViewController:(UIViewController *) presentingViewController;
 ```
 
 #### Return Value

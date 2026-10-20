@@ -1,7 +1,8 @@
 # tests
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All tests currently in the test suite.
 
@@ -11,9 +12,14 @@ All tests currently in the test suite.
 var tests: [XCTest] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<__kindof XCTest *> * tests;
+```
+
 ## See Also
 
-- [func addTest(XCTest)](xctestsuite/addtest(_:).md)
+### Managing Tests
+- [func addTest(XCTest)](./addtest%28_%29.md)
   Adds a test to the test suite.
 
 

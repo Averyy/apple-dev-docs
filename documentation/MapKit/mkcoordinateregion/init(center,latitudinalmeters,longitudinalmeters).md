@@ -1,23 +1,28 @@
 # init(center:latitudinalMeters:longitudinalMeters:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new coordinate region from the specified coordinate and distance values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 - tvOS 9.2+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init(center centerCoordinate: CLLocationCoordinate2D, latitudinalMeters: CLLocationDistance, longitudinalMeters: CLLocationDistance)
+```
+
+```c
+extern MKCoordinateRegion MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2D centerCoordinate, CLLocationDistance latitudinalMeters, CLLocationDistance longitudinalMeters);
 ```
 
 #### Return Value
@@ -32,11 +37,12 @@ A region with the specified values.
 
 ## See Also
 
-- [init()](mkcoordinateregion/init.md)
+### Creating a region
+- [init()](./init%28%29.md)
   Creates a coordinate region.
-- [init(MKMapRect)](mkcoordinateregion/init(_:).md)
+- [init(MKMapRect)](./init%28_%29.md)
   Returns the region that corresponds to the specified map rectangle.
-- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](mkcoordinateregion/init(center:span:).md)
+- [init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)](./init%28center,span%29.md)
   Creates a coordinate region with a span around the specified center coordinate.
 
 

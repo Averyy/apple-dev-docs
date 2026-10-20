@@ -1,7 +1,8 @@
 # cachePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s cache policy.
 
@@ -20,13 +21,18 @@ The request’s cache policy.
 var cachePolicy: NSURLRequest.CachePolicy { get set }
 ```
 
+```objc
+@property NSURLRequestCachePolicy cachePolicy;
+```
+
 #### Discussion
 
-This property is ignored for requests used to construct [`URLSessionUploadTask`](urlsessionuploadtask.md) and [`URLSessionDownloadTask`](urlsessiondownloadtask.md) objects, as caching is not supported by the URL Loading System for upload or download requests.
+This property is ignored for requests used to construct [`URLSessionUploadTask`](../urlsessionuploadtask.md) and [`URLSessionDownloadTask`](../urlsessiondownloadtask.md) objects, as caching is not supported by the URL Loading System for upload or download requests.
 
 ## See Also
 
-- [NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum.md)
+### Working with a cache policy
+- [NSURLRequest.CachePolicy](../nsurlrequest/cachepolicy-swift.enum.md)
   The constants used to specify interaction with the cached responses.
 
 

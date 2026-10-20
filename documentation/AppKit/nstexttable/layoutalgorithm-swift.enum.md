@@ -1,9 +1,10 @@
 # NSTextTable.LayoutAlgorithm
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-These constants, specifying the type of text table layout algorithm, are used with [`layoutAlgorithm`](nstexttable/layoutalgorithm-swift.property.md).
+These constants, specifying the type of text table layout algorithm, are used with [`layoutAlgorithm`](./layoutalgorithm-swift.property.md).
 
 **Availability**:
 - macOS 10.0+
@@ -14,28 +15,32 @@ These constants, specifying the type of text table layout algorithm, are used wi
 enum LayoutAlgorithm
 ```
 
+```c
+enum NSTextTableLayoutAlgorithm : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
+- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
   Specifies automatic layout algorithm
-- [static var fixedLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/fixedlayoutalgorithm.md)
+- [static var fixedLayoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum/fixedlayoutalgorithm.md)
   Specifies fixed layout algorithm
 ### Enumeration Cases
-- [NSTextTable.LayoutAlgorithm.automatic](nstexttable/layoutalgorithm-swift.enum/automatic.md)
-- [NSTextTable.LayoutAlgorithm.fixed](nstexttable/layoutalgorithm-swift.enum/fixed.md)
+- [NSTextTable.LayoutAlgorithm.automatic](./layoutalgorithm-swift.enum/automatic.md)
+- [NSTextTable.LayoutAlgorithm.fixed](./layoutalgorithm-swift.enum/fixed.md)
 ### Initializers
-- [init?(rawValue: Int)](nstexttable/layoutalgorithm-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./layoutalgorithm-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

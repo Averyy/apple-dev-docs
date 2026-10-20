@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a matching service for HID devices.
 

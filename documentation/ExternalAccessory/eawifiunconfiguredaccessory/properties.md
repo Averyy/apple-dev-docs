@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties the accessory supports.
 
@@ -18,19 +19,24 @@ The properties the accessory supports.
 var properties: EAWiFiUnconfiguredAccessoryProperties { get }
 ```
 
+```objc
+@property (nonatomic, readonly) EAWiFiUnconfiguredAccessoryProperties properties;
+```
+
 ## See Also
 
-- [var name: String](eawifiunconfiguredaccessory/name.md)
+### Getting Information About the Accessory
+- [var name: String](./name.md)
   The name of the accessory.
-- [var manufacturer: String](eawifiunconfiguredaccessory/manufacturer.md)
+- [var manufacturer: String](./manufacturer.md)
   The name of the accessory’s manufacturer.
-- [var model: String](eawifiunconfiguredaccessory/model.md)
+- [var model: String](./model.md)
   The model name of accessory.
-- [var ssid: String](eawifiunconfiguredaccessory/ssid.md)
+- [var ssid: String](./ssid.md)
   The Wi-Fi SSID of the accessory.
-- [var macAddress: String](eawifiunconfiguredaccessory/macaddress.md)
+- [var macAddress: String](./macaddress.md)
   The primary MAC address of the accessory.
-- [struct EAWiFiUnconfiguredAccessoryProperties](eawifiunconfiguredaccessoryproperties.md)
+- [struct EAWiFiUnconfiguredAccessoryProperties](../eawifiunconfiguredaccessoryproperties.md)
   Options that can be combined using the C bitwise `OR` operator to represent the properties of an unconfigured accessory.
 
 

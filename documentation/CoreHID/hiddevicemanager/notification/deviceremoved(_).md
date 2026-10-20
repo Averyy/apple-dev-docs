@@ -1,7 +1,8 @@
 # HIDDeviceManager.Notification.deviceRemoved(_:)
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that a previously matched device was removed from the system.
 
@@ -16,7 +17,7 @@ case deviceRemoved(HIDDeviceClient.DeviceReference)
 
 #### Discussion
 
-Any created [`HIDDeviceClient`](hiddeviceclient.md) also receives a [`HIDDeviceClient.Notification.deviceRemoved`](hiddeviceclient/notification/deviceremoved.md) notification.
+Any created [`HIDDeviceClient`](../../hiddeviceclient.md) also receives a [`HIDDeviceClient.Notification.deviceRemoved`](../../hiddeviceclient/notification/deviceremoved.md) notification.
 
 
 ---

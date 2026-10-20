@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts cumulative human body action counts from a sequence of human body pose windows.
 
@@ -30,7 +31,8 @@ An async sequence of cumulative human body action counts.
 
 ## See Also
 
-- [HumanBodyActionCounter.CumulativeSumSequence](humanbodyactioncounter/cumulativesumsequence.md)
+### Performing the transformation
+- [HumanBodyActionCounter.CumulativeSumSequence](./cumulativesumsequence.md)
   Cumulative human body action count sequence.
 
 

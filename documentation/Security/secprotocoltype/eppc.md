@@ -1,7 +1,8 @@
 # SecProtocolType.EPPC
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates Remote Apple Events.
 
@@ -13,6 +14,10 @@ Indicates Remote Apple Events.
 
 ```swift
 case EPPC
+```
+
+```c
+kSecProtocolTypeEPPC
 ```
 
 

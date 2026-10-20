@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+func webView(_ webView: WKWebView, shouldAllowImmersiveEnvironmentFromFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void)
+```
+
+```swift
 func webView(_ webView: WKWebView, shouldAllowImmersiveEnvironmentFrom frame: WKFrameInfo) async -> Bool
+```
+
+```objc
+- (void) webView:(WKWebView *) webView shouldAllowImmersiveEnvironmentFromFrame:(WKFrameInfo *) frame completionHandler:(void (^)(BOOL allow)) completionHandler;
 ```
 
 #### Discussion

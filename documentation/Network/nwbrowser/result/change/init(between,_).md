@@ -1,7 +1,8 @@
 # init(between:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a change between two results.
 

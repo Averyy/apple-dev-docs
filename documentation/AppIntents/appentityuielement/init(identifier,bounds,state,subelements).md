@@ -1,7 +1,8 @@
 # init(identifier:bounds:state:subelements:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a wrapper object that combines an app entity with additional information to make it discoverable by Apple Intelligence and Siri.
 

@@ -1,7 +1,8 @@
 # VTMotionEstimationSession.BlockSize
 
 **Framework**: Video Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -20,23 +21,24 @@ enum BlockSize
 ## Topics
 
 ### Enumeration Cases
-- [VTMotionEstimationSession.BlockSize.blockSize16x16](vtmotionestimationsession/blocksize/blocksize16x16.md)
-- [VTMotionEstimationSession.BlockSize.blockSize4x4](vtmotionestimationsession/blocksize/blocksize4x4.md)
+- [VTMotionEstimationSession.BlockSize.blockSize16x16](./blocksize/blocksize16x16.md)
+- [VTMotionEstimationSession.BlockSize.blockSize4x4](./blocksize/blocksize4x4.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [VTMotionEstimationSession.Motion](vtmotionestimationsession/motion.md)
+### Inspecting the motion result
+- [VTMotionEstimationSession.Motion](./motion.md)
 
 
 ---

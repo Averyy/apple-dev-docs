@@ -1,9 +1,10 @@
 # assignedTextures
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Map from shader parameter name to the bound [`USDPlayer.TextureID`](usdplayer/textureid.md).
+Map from shader parameter name to the bound [`USDPlayer.TextureID`](../textureid.md).
 
 **Availability**:
 - iOS 27.0+

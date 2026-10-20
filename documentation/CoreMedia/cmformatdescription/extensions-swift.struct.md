@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes format description extensions.
 
@@ -23,44 +24,45 @@ struct Extensions
 ## Topics
 
 ### Creating Extensions
-- [init()](cmformatdescription/extensions-swift.struct/init.md)
+- [init()](./extensions-swift.struct/init%28%29.md)
   Creates an empty `Extensions` structure.
-- [init(base: [CFString : CFPropertyList]?)](cmformatdescription/extensions-swift.struct/init(base:).md)
+- [init(base: [CFString : CFPropertyList]?)](./extensions-swift.struct/init%28base%29.md)
   Creates an `Extensions` structure with existing values.
 ### Finding Extension Elements
-- [subscript(CFString) -> CFPropertyList?](cmformatdescription/extensions-swift.struct/subscript(_:)-1c6vg.md)
-- [subscript(CMFormatDescription.Extensions.Key) -> CMFormatDescription.Extensions.Value?](cmformatdescription/extensions-swift.struct/subscript(_:)-80zh8.md)
+- [subscript(CFString) -> CFPropertyList?](./extensions-swift.struct/subscript%28_%29-1c6vg.md)
+- [subscript(CMFormatDescription.Extensions.Key) -> CMFormatDescription.Extensions.Value?](./extensions-swift.struct/subscript%28_%29-80zh8.md)
 ### Constants
-- [CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key.md)
-- [CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value.md)
+- [CMFormatDescription.Extensions.Key](./extensions-swift.struct/key.md)
+- [CMFormatDescription.Extensions.Value](./extensions-swift.struct/value.md)
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](cmformatdescription/extensionkeyscommonwithimagebuffers.md)
+### Constants
+- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](./extensionkeyscommonwithimagebuffers.md)
   A constant that represents keys you use with video format description extensions and image buffers.
-- [static var typeID: CFTypeID](cmformatdescription/typeid.md)
+- [static var typeID: CFTypeID](./typeid.md)
   A type identifier that corresponds to a description object.
-- [CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct.md)
+- [CMFormatDescription.MediaType](./mediatype-swift.struct.md)
   A type that describes format description media.
-- [CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct.md)
+- [CMFormatDescription.MediaSubType](./mediasubtype-swift.struct.md)
   A type that describes format description media subtypes.
-- [CMFormatDescription.TimeCode](cmformatdescription/timecode.md)
+- [CMFormatDescription.TimeCode](./timecode.md)
   A type that describes format description time codes.
-- [CMFormatDescription.EqualityMask](cmformatdescription/equalitymask.md)
+- [CMFormatDescription.EqualityMask](./equalitymask.md)
   A type that describes format description equality masks.
-- [CMFormatDescription.ParameterSetCollection](cmformatdescription/parametersetcollection.md)
+- [CMFormatDescription.ParameterSetCollection](./parametersetcollection.md)
   Collection of parameter sets in a video format description.
 
 

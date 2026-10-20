@@ -1,17 +1,22 @@
 # webArchive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A web archive of the content in the range.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var webArchive: WebArchive! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebArchive * webArchive;
 ```
 
 #### Discussion

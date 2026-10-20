@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a media type with an arbitrary value.
 

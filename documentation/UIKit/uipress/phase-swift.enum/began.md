@@ -1,7 +1,8 @@
 # UIPress.Phase.began
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A physical button was pressed.
 
@@ -18,15 +19,20 @@ A physical button was pressed.
 case began
 ```
 
+```c
+UIPressPhaseBegan
+```
+
 ## See Also
 
-- [UIPress.Phase.changed](uipress/phase-swift.enum/changed.md)
+### Constants
+- [UIPress.Phase.changed](./changed.md)
   A button moved, or the force property changed.
-- [UIPress.Phase.stationary](uipress/phase-swift.enum/stationary.md)
+- [UIPress.Phase.stationary](./stationary.md)
   A button was pressed but hasn’t moved since the previous event.
-- [UIPress.Phase.ended](uipress/phase-swift.enum/ended.md)
+- [UIPress.Phase.ended](./ended.md)
   A button was released.
-- [UIPress.Phase.cancelled](uipress/phase-swift.enum/cancelled.md)
+- [UIPress.Phase.cancelled](./cancelled.md)
   The system canceled tracking for the button.
 
 

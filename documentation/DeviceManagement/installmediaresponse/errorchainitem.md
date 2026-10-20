@@ -1,7 +1,8 @@
 # InstallMediaResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -9,11 +10,11 @@ A dictionary that describes an error chain item.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```
 object InstallMediaResponse.ErrorChainItem
 ```
 

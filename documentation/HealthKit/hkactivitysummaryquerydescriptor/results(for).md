@@ -1,7 +1,8 @@
 # results(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates a long-running query that returns its results using an asynchronous sequence.
 
@@ -10,7 +11,7 @@ Initiates a long-running query that returns its results using an asynchronous se
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ func results(for healthStore: HKHealthStore) -> HKActivitySummaryQueryDescriptor
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> [HKActivitySummary]](hkactivitysummaryquerydescriptor/result(for:).md)
+### Running queries
+- [func result(for: HKHealthStore) async throws -> [HKActivitySummary]](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
-- [HKActivitySummaryQueryDescriptor.Results](hkactivitysummaryquerydescriptor/results.md)
+- [HKActivitySummaryQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits updates from an activity summary query.
 
 

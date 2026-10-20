@@ -1,7 +1,8 @@
 # stickerSize
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the stickers in the browser.
 
@@ -16,17 +17,22 @@ The size of the stickers in the browser.
 var stickerSize: MSStickerSize { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) MSStickerSize stickerSize;
+```
+
 #### Discussion
 
-For a list of possible size values, see [`MSStickerSize`](msstickersize.md).
+For a list of possible size values, see [`MSStickerSize`](../msstickersize.md).
 
 ## See Also
 
-- [var contentInset: UIEdgeInsets](msstickerbrowserview/contentinset.md)
+### Managing the Browser’s Appearance
+- [var contentInset: UIEdgeInsets](./contentinset.md)
   The distance that the content is inset from the edge of the browser view.
-- [var contentOffset: CGPoint](msstickerbrowserview/contentoffset.md)
+- [var contentOffset: CGPoint](./contentoffset.md)
   The distance that the content is offset from the browser’s origin.
-- [func setContentOffset(CGPoint, animated: Bool)](msstickerbrowserview/setcontentoffset(_:animated:).md)
+- [func setContentOffset(CGPoint, animated: Bool)](./setcontentoffset%28_,animated%29.md)
   Sets the offset distance between the content and the browser’s origin.
 
 

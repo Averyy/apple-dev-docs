@@ -1,7 +1,8 @@
 # activeParticipantCount
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of participants in a collaboration.
 
@@ -18,27 +19,32 @@ The number of participants in a collaboration.
 var activeParticipantCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSUInteger activeParticipantCount;
+```
+
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](../adding-shared-content-collaboration-to-your-app.md)
 
 ## See Also
 
-- [var cloudSharingDelegate: (any UICloudSharingControllerDelegate)?](swcollaborationview/cloudsharingdelegate.md)
+### Accessing view attributes
+- [var cloudSharingDelegate: (any UICloudSharingControllerDelegate)?](./cloudsharingdelegate.md)
   The delegate object for the cloud-sharing controller.
-- [var delegate: (any SWCollaborationViewDelegate)?](swcollaborationview/delegate.md)
+- [var delegate: (any SWCollaborationViewDelegate)?](./delegate.md)
   The delegate object for the collaboration view.
-- [var headerImage: UIImage](swcollaborationview/headerimage.md)
+- [var headerImage: UIImage](./headerimage.md)
   The image that the system displays in the header.
-- [var headerSubtitle: String](swcollaborationview/headersubtitle.md)
+- [var headerSubtitle: String](./headersubtitle.md)
   The subtitle that the system displays in the header.
-- [var headerTitle: String](swcollaborationview/headertitle.md)
+- [var headerTitle: String](./headertitle.md)
   The title that the system displays in the header.
-- [var manageButtonTitle: String](swcollaborationview/managebuttontitle.md)
+- [var manageButtonTitle: String](./managebuttontitle.md)
   The manage button title that the system displays in the header.
-- [var menuFormRepresentation: NSMenuItem](swcollaborationview/menuformrepresentation-3sffe.md)
+- [var menuFormRepresentation: NSMenuItem](./menuformrepresentation-3sffe.md)
   Returns a menu item suitable to display the collaboration detail view from the toolbar overflow menu.
-- [var menuFormRepresentation: NSMenuItem](swcollaborationview/menuformrepresentation-55skx.md)
+- [var menuFormRepresentation: NSMenuItem](./menuformrepresentation-55skx.md)
   Returns a menu item suitable to display the collaboration detail view from the toolbar overflow menu.
 
 

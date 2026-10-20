@@ -1,7 +1,8 @@
 # MTRWiFiNetworkDiagnosticsSecurityType.WPA3
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case WPA3
+```
+
+```c
+MTRWiFiNetworkDiagnosticsSecurityTypeWPA3
 ```
 
 

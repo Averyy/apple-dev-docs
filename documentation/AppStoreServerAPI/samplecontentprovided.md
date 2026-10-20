@@ -1,7 +1,8 @@
 # sampleContentProvided
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether you provided, prior to its purchase, a fr
 
 ## Declaration
 
-```swift
+```
 boolean sampleContentProvided
 ```
 
@@ -25,13 +26,14 @@ Set this value to `false` otherwise.
 
 ## See Also
 
-- [type customerConsented](customerconsented.md)
+### Consumption data types
+- [type customerConsented](./customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type consumptionPercentage](consumptionpercentage.md)
+- [type consumptionPercentage](./consumptionpercentage.md)
   An integer that indicates the percentage, in milliunits, of the In-App Purchase the customer consumed.
-- [type deliveryStatus](deliverystatus.md)
+- [type deliveryStatus](./deliverystatus.md)
   A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
-- [type refundPreference](refundpreference.md)
+- [type refundPreference](./refundpreference.md)
   A value that indicates your preferred outcome for the refund request.
 
 

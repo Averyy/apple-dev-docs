@@ -1,17 +1,18 @@
 # EKEntityType
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of entities allowed for a source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,28 +20,32 @@ The type of entities allowed for a source.
 enum EKEntityType
 ```
 
+```c
+enum EKEntityType : NSUInteger;
+```
+
 ## Topics
 
 ### Specifying Multiple Entities
-- [struct EKEntityMask](ekentitymask.md)
+- [struct EKEntityMask](./ekentitymask.md)
   A bitmask of `EKEntityType` for specifying multiple entities at once.
 ### Constants
-- [EKEntityType.event](ekentitytype/event.md)
+- [EKEntityType.event](./ekentitytype/event.md)
   Represents an event.
-- [EKEntityType.reminder](ekentitytype/reminder.md)
+- [EKEntityType.reminder](./ekentitytype/reminder.md)
   Represents a reminder.
 ### Initializers
-- [init?(rawValue: UInt)](ekentitytype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./ekentitytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

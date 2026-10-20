@@ -1,7 +1,8 @@
 # getContainers
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches containers for a team.
 
@@ -10,7 +11,7 @@ Fetches containers for a team.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise getContainers(
 	GetContainersParams params
 );
@@ -67,15 +68,16 @@ If successful, the result contains a `ContainersResponse` object. For more infor
 
 ## See Also
 
-- [exportSchema](promisesapi/exportschema.md)
+### Database Management
+- [exportSchema](./exportschema.md)
   Downloads the container’s schema.
-- [importSchema](promisesapi/importschema.md)
+- [importSchema](./importschema.md)
   Uploads a file that defines the new schema for the container.
-- [resetConfigToProduction](promisesapi/resetconfigtoproduction.md)
+- [resetConfigToProduction](./resetconfigtoproduction.md)
   Resets the container configuration to production.
-- [resetToProduction](promisesapi/resettoproduction.md)
+- [resetToProduction](./resettoproduction.md)
   Resets the schema of the environment to production.
-- [validateSchema](promisesapi/validateschema.md)
+- [validateSchema](./validateschema.md)
   Validates the uploaded schema file for the container.
 
 

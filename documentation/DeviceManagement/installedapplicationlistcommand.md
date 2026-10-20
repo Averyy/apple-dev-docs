@@ -1,7 +1,8 @@
 # InstalledApplicationListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of the installed apps on a device.
 
@@ -16,18 +17,18 @@ The command to get a list of the installed apps on a device.
 
 ## Declaration
 
-```swift
+```
 object InstalledApplicationListCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object InstalledApplicationListCommand.Command](installedapplicationlistcommand/command-data.dictionary.md)
+- [object InstalledApplicationListCommand.Command](./installedapplicationlistcommand/command-data.dictionary.md)
   The command to get a list of the installed apps on a device.
 
 ## Properties
@@ -37,7 +38,8 @@ object InstalledApplicationListCommand
 
 ## See Also
 
-- [object InstalledApplicationListResponse](installedapplicationlistresponse.md)
+### Commands and responses
+- [object InstalledApplicationListResponse](./installedapplicationlistresponse.md)
   A response from the device after it processes the command to get a list of the installed apps on a device.
 
 

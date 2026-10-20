@@ -1,7 +1,8 @@
 # HIDDeviceError.notPrivileged
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The client doesn’t have the privileges required to make this request.
 

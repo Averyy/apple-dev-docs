@@ -1,7 +1,8 @@
 # notifyOthersOnDeactivation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notify an interrupted app that the interruption has ended and it may resume playback.
 
@@ -17,6 +18,10 @@ Notify an interrupted app that the interruption has ended and it may resume play
 
 ```swift
 static var notifyOthersOnDeactivation: AVAudioSessionDeactivationOptions { get }
+```
+
+```c
+AVAudioSessionDeactivationOptionNotifyOthersOnDeactivation
 ```
 
 

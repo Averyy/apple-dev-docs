@@ -1,21 +1,22 @@
 # AppClipAppClipAdvancedExperiencesLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppClipAppClipAdvancedExperiencesLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppClipAppClipAdvancedExperiencesLinkagesResponse.Data](appclipappclipadvancedexperienceslinkagesresponse/data-data.dictionary.md)
+- [object AppClipAppClipAdvancedExperiencesLinkagesResponse.Data](./appclipappclipadvancedexperienceslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,15 +26,16 @@ object AppClipAppClipAdvancedExperiencesLinkagesResponse
 
 ## See Also
 
-- [object AppClip](appclip.md)
+### Objects
+- [object AppClip](./appclip.md)
   A lightweight version of an app that users can launch instantly without installation, associated with a registered parent app.
-- [object AppClipResponse](appclipresponse.md)
+- [object AppClipResponse](./appclipresponse.md)
   The response body for endpoints that read an App Clip associated with an app.
-- [object AppClipDefaultExperiencesResponse](appclipdefaultexperiencesresponse.md)
+- [object AppClipDefaultExperiencesResponse](./appclipdefaultexperiencesresponse.md)
   The response body for endpoints that list default App Clip experiences.
-- [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
+- [object AppClipAdvancedExperiencesResponse](./appclipadvancedexperiencesresponse.md)
   A response containing a list of configured App Clip advanced experiences.
-- [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
+- [object AppClipAppClipDefaultExperiencesLinkagesResponse](./appclipappclipdefaultexperienceslinkagesresponse.md)
 
 
 ---

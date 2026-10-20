@@ -1,7 +1,8 @@
 # setMessageReadStatus
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An intent schema that changes the message read status to a given value.
 
@@ -20,7 +21,7 @@ var setMessageReadStatus: some AppSchemaIntent { get }
 
 #### Discussion
 
-To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `messages` domain and one of your app’s actions matches the `setMessageReadStatus` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .messages.setMessageReadStatus)` Swift macro. To make your app work with Siri, see [`Apple Intelligence and Siri AI`](apple-intelligence-and-siri-ai.md).
+To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `messages` domain and one of your app’s actions matches the `setMessageReadStatus` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .messages.setMessageReadStatus)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 
 The following example shows an intent that conforms to the `setMessageReadStatus` schema:
 
@@ -41,19 +42,20 @@ The schema supports the following system experiences:
 - Siri
 - Shortcuts
 
-For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
+For more information about the App Intents framework and the experiences it supports, see [Getting started with the App Intents framework](../../getting-started-with-the-app-intents-framework.md).
 
 ## See Also
 
-- [var draftMessage: some AppSchemaIntent](appschema/messagesintent/draftmessage.md)
+### Actions
+- [var draftMessage: some AppSchemaIntent](./draftmessage.md)
   An intent schema that opens app to start or continue composing a message via touch.
-- [var editSentMessage: some AppSchemaIntent](appschema/messagesintent/editsentmessage.md)
+- [var editSentMessage: some AppSchemaIntent](./editsentmessage.md)
   An intent schema that edits an already sent message with new content.
-- [var sendMessage: some AppSchemaIntent](appschema/messagesintent/sendmessage.md)
+- [var sendMessage: some AppSchemaIntent](./sendmessage.md)
   An intent schema that sends a message with the associated parameters.
-- [var unsendMessage: some AppSchemaIntent](appschema/messagesintent/unsendmessage.md)
+- [var unsendMessage: some AppSchemaIntent](./unsendmessage.md)
   An intent schema that unsends a sent message.
-- [AppSchema.MessagesIntent](appschema/messagesintent.md)
+- [AppSchema.MessagesIntent](../messagesintent.md)
   Identifies intent schemas in the messages domain.
 
 

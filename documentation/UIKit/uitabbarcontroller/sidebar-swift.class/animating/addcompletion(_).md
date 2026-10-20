@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 func addCompletion(_ completion: @escaping () -> Void)
+```
+
+```objc
+- (void) addCompletion:(void (^)()) completion;
 ```
 
 

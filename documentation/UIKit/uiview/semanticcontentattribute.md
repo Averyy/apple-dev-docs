@@ -1,7 +1,8 @@
 # semanticContentAttribute
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
@@ -18,23 +19,28 @@ A semantic description of the view’s contents, used to determine whether the v
 var semanticContentAttribute: UISemanticContentAttribute { get set }
 ```
 
+```objc
+@property (nonatomic) UISemanticContentAttribute semanticContentAttribute;
+```
+
 #### Discussion
 
 Some views should not flip when switching between left-to-right and right-to-left layouts. For example, the view is part of the playback controls or represents physical directions (up, down, left, right) that don’t change. Instead of thinking about whether or not a view should change its orientation, select the semantic content attribute that best describes your view.
 
-When creating a view that contains subviews, you can use the [`userInterfaceLayoutDirection(for:)`](uiview/userinterfacelayoutdirection(for:).md) class method to determine whether the subviews should be flipped, and lay out the views in the appropriate order.
+When creating a view that contains subviews, you can use the [`userInterfaceLayoutDirection(for:)`](./userinterfacelayoutdirection%28for%29.md) class method to determine whether the subviews should be flipped, and lay out the views in the appropriate order.
 
-For a list of possible values, see [`UISemanticContentAttribute`](uisemanticcontentattribute.md).
+For a list of possible values, see [`UISemanticContentAttribute`](../uisemanticcontentattribute.md).
 
 ## See Also
 
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
+### Adjusting the user interface
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
-- [var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](uiview/effectiveuserinterfacelayoutdirection.md)
+- [var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](./effectiveuserinterfacelayoutdirection.md)
   The user interface layout direction appropriate for arranging the immediate content of the view.
-- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection](uiview/userinterfacelayoutdirection(for:).md)
+- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection](./userinterfacelayoutdirection%28for%29.md)
   Returns the user interface direction for the given semantic content attribute.
-- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](uiview/userinterfacelayoutdirection(for:relativeto:).md)
+- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](./userinterfacelayoutdirection%28for,relativeto%29.md)
   Returns the layout direction implied by the specified semantic content attribute, relative to the specified layout direction.
 
 

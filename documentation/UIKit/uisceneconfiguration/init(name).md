@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scene-configuration object with the specified name.
 
@@ -18,15 +19,20 @@ Creates a scene-configuration object with the specified name.
 convenience init(name: String?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name;
+```
+
 #### Discussion
 
 Scene sessions created from this configuration will have their role automatically set by the system.
 
 ## See Also
 
-- [init(name: String?, sessionRole: UISceneSession.Role)](uisceneconfiguration/init(name:sessionrole:).md)
+### Creating a configuration object
+- [init(name: String?, sessionRole: UISceneSession.Role)](./init%28name,sessionrole%29.md)
   Creates a scene-configuration object with the specified role and app-specific name.
-- [convenience init()](uisceneconfiguration/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a scene-configuration object.
 
 

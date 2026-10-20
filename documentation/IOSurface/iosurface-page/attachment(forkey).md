@@ -1,7 +1,8 @@
 # attachment(forKey:)
 
 **Framework**: IOSurface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,23 +18,28 @@
 func attachment(forKey key: String) -> (any Sendable)?
 ```
 
+```objc
+- (id) attachmentForKey:(NSString *) key;
+```
+
 ## See Also
 
-- [func allAttachments() -> [String : any Sendable]?](iosurface/allattachments.md)
-- [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](iosurface/baseaddressofplane(at:).md)
-- [func bytesPerElementOfPlane(at: Int) -> Int](iosurface/bytesperelementofplane(at:).md)
-- [func bytesPerRowOfPlane(at: Int) -> Int](iosurface/bytesperrowofplane(at:).md)
-- [func decrementUseCount()](iosurface/decrementusecount.md)
-- [func elementHeightOfPlane(at: Int) -> Int](iosurface/elementheightofplane(at:).md)
-- [func elementWidthOfPlane(at: Int) -> Int](iosurface/elementwidthofplane(at:).md)
-- [func heightOfPlane(at: Int) -> Int](iosurface/heightofplane(at:).md)
-- [func incrementUseCount()](iosurface/incrementusecount.md)
-- [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](iosurface/lock(options:seed:).md)
-- [func removeAllAttachments()](iosurface/removeallattachments.md)
-- [func removeAttachment(forKey: String)](iosurface/removeattachment(forkey:).md)
-- [func setAllAttachments([String : any Sendable])](iosurface/setallattachments(_:).md)
-- [func setAttachment(any Sendable, forKey: String)](iosurface/setattachment(_:forkey:).md)
-- [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](iosurface/setpurgeable(_:oldstate:).md)
+### Instance Methods
+- [func allAttachments() -> [String : any Sendable]?](./allattachments%28%29.md)
+- [func baseAddressOfPlane(at: Int) -> UnsafeMutableRawPointer](./baseaddressofplane%28at%29.md)
+- [func bytesPerElementOfPlane(at: Int) -> Int](./bytesperelementofplane%28at%29.md)
+- [func bytesPerRowOfPlane(at: Int) -> Int](./bytesperrowofplane%28at%29.md)
+- [func decrementUseCount()](./decrementusecount%28%29.md)
+- [func elementHeightOfPlane(at: Int) -> Int](./elementheightofplane%28at%29.md)
+- [func elementWidthOfPlane(at: Int) -> Int](./elementwidthofplane%28at%29.md)
+- [func heightOfPlane(at: Int) -> Int](./heightofplane%28at%29.md)
+- [func incrementUseCount()](./incrementusecount%28%29.md)
+- [func lock(options: IOSurfaceLockOptions, seed: UnsafeMutablePointer<UInt32>?) -> kern_return_t](./lock%28options,seed%29.md)
+- [func removeAllAttachments()](./removeallattachments%28%29.md)
+- [func removeAttachment(forKey: String)](./removeattachment%28forkey%29.md)
+- [func setAllAttachments([String : any Sendable])](./setallattachments%28_%29.md)
+- [func setAttachment(any Sendable, forKey: String)](./setattachment%28_,forkey%29.md)
+- [func setPurgeable(IOSurfacePurgeabilityState, oldState: UnsafeMutablePointer<IOSurfacePurgeabilityState>?) -> kern_return_t](./setpurgeable%28_,oldstate%29.md)
 
 
 ---

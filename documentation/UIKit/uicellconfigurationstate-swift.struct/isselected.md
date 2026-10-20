@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cell is in a selected state.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the cell is in a selected state.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ var isSelected: Bool { get set }
 
 ## See Also
 
-- [var isHighlighted: Bool](uicellconfigurationstate-swift.struct/ishighlighted.md)
+### Managing view configuration states
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the cell is in a highlighted state.
-- [var isFocused: Bool](uicellconfigurationstate-swift.struct/isfocused.md)
+- [var isFocused: Bool](./isfocused.md)
   A Boolean value that indicates whether the cell is in a focused state.
-- [var isDisabled: Bool](uicellconfigurationstate-swift.struct/isdisabled.md)
+- [var isDisabled: Bool](./isdisabled.md)
   A Boolean value that indicates whether the cell is in a disabled state.
-- [var isPinned: Bool](uicellconfigurationstate-swift.struct/ispinned.md)
+- [var isPinned: Bool](./ispinned.md)
   A Boolean value that indicates whether the view is in a pinned state.
 
 

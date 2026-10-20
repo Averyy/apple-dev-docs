@@ -1,7 +1,8 @@
 # NSTextBlock.ValueType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 6.0+
@@ -17,29 +18,34 @@
 enum ValueType
 ```
 
+```c
+enum NSTextBlockValueType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSTextBlock.ValueType.absolute](nstextblock/valuetype/absolute.md)
-- [NSTextBlock.ValueType.percentage](nstextblock/valuetype/percentage.md)
+- [NSTextBlock.ValueType.absolute](./valuetype/absolute.md)
+- [NSTextBlock.ValueType.percentage](./valuetype/percentage.md)
 ### Initializers
-- [init?(rawValue: Int)](nstextblock/valuetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./valuetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSTextBlock.Dimension](nstextblock/dimension.md)
-- [NSTextBlock.Layer](nstextblock/layer.md)
-- [NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum.md)
+### Supporting types
+- [NSTextBlock.Dimension](./dimension.md)
+- [NSTextBlock.Layer](./layer.md)
+- [NSTextBlock.VerticalAlignment](./verticalalignment-swift.enum.md)
 
 
 ---

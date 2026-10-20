@@ -1,7 +1,8 @@
 # pressesChanged(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells this object when a value associated with a press has changed.
 
@@ -18,6 +19,10 @@ Tells this object when a value associated with a press has changed.
 func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 
+```objc
+- (void) pressesChanged:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
+```
+
 #### Discussion
 
 UIKit calls this method when an analog value associated with a button or thumbstick changes. For example, it calls this method when the analog force value of a push button changes. Use this method to take any needed actions in response to the change.
@@ -26,16 +31,17 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of [`UIPress`](uipress.md) instances containing changed values.
+- `presses`: A set of [`UIPress`](../uipress.md) instances containing changed values.
 - `event`: The event to which the presses belong.
 
 ## See Also
 
-- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesbegan(_:with:).md)
+### Responding to press events
+- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](./pressesbegan%28_,with%29.md)
   Tells this object when a physical button is first pressed.
-- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesended(_:with:).md)
+- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](./pressesended%28_,with%29.md)
   Tells the object when a button is released.
-- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressescancelled(_:with:).md)
+- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](./pressescancelled%28_,with%29.md)
   Tells this object when a system event (such as a low-memory warning) cancels a press event.
 
 

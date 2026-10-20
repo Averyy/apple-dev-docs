@@ -1,7 +1,8 @@
 # init(targetMessageID:content:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reply instance with the message identifier and content.
 

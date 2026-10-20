@@ -1,7 +1,8 @@
 # MPSGraphTensorData
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The representation of a compute data type.
 
@@ -19,6 +20,10 @@ The representation of a compute data type.
 class MPSGraphTensorData
 ```
 
+```objc
+@interface MPSGraphTensorData : MPSGraphObject
+```
+
 #### Overview
 
 Pass data to a graph using a tensor data, a reference will be taken to your data and used just in time when the graph is run.
@@ -26,89 +31,90 @@ Pass data to a graph using a tensor data, a reference will be taken to your data
 ## Topics
 
 ### Initializers
-- [init(MPSImageBatch: [MPSImage])](mpsgraphtensordata/init(mpsimagebatch:).md)
-- [init(MPSMatrix: MPSMatrix)](mpsgraphtensordata/init(mpsmatrix:).md)
-- [init(MPSMatrix: MPSMatrix, rank: Int)](mpsgraphtensordata/init(mpsmatrix:rank:).md)
-- [init(MPSNDArray: MPSNDArray)](mpsgraphtensordata/init(mpsndarray:).md)
-- [init(MPSVector: MPSVector)](mpsgraphtensordata/init(mpsvector:).md)
-- [init(MPSVector: MPSVector, rank: Int)](mpsgraphtensordata/init(mpsvector:rank:).md)
-- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType)](mpsgraphtensordata/init(mtlbuffer:shape:datatype:).md)
-- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)](mpsgraphtensordata/init(mtlbuffer:shape:datatype:rowbytes:).md)
-- [init(MTLTensor: any MTLTensor)](mpsgraphtensordata/init(mtltensor:).md)
-- [init(MPSMatrix)](mpsgraphtensordata/init(_:)-2go2.md)
+- [init(MPSImageBatch: [MPSImage])](./mpsgraphtensordata/init%28mpsimagebatch%29.md)
+- [init(MPSMatrix: MPSMatrix)](./mpsgraphtensordata/init%28mpsmatrix%29.md)
+- [init(MPSMatrix: MPSMatrix, rank: Int)](./mpsgraphtensordata/init%28mpsmatrix,rank%29.md)
+- [init(MPSNDArray: MPSNDArray)](./mpsgraphtensordata/init%28mpsndarray%29.md)
+- [init(MPSVector: MPSVector)](./mpsgraphtensordata/init%28mpsvector%29.md)
+- [init(MPSVector: MPSVector, rank: Int)](./mpsgraphtensordata/init%28mpsvector,rank%29.md)
+- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType)](./mpsgraphtensordata/init%28mtlbuffer,shape,datatype%29.md)
+- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)](./mpsgraphtensordata/init%28mtlbuffer,shape,datatype,rowbytes%29.md)
+- [init(MTLTensor: any MTLTensor)](./mpsgraphtensordata/init%28mtltensor%29.md)
+- [init(MPSMatrix)](./mpsgraphtensordata/init%28_%29-2go2.md)
   Initializes a tensor data with an MPS matrix.
-- [init(MPSNDArray)](mpsgraphtensordata/init(_:)-4bnfb.md)
+- [init(MPSNDArray)](./mpsgraphtensordata/init%28_%29-4bnfb.md)
   Initializes an MPSGraphTensorData with an MPS ndarray.
-- [init([MPSImage])](mpsgraphtensordata/init(_:)-511a.md)
+- [init([MPSImage])](./mpsgraphtensordata/init%28_%29-511a.md)
   Initializes a tensor data with an MPS image batch.
-- [init(any MTLTensor)](mpsgraphtensordata/init(_:)-60j6x.md)
+- [init(any MTLTensor)](./mpsgraphtensordata/init%28_%29-60j6x.md)
   Initializes an MPSGraphTensorData with an MTLTensor.
-- [init(MPSVector)](mpsgraphtensordata/init(_:)-9kgoe.md)
+- [init(MPSVector)](./mpsgraphtensordata/init%28_%29-9kgoe.md)
   Initializes a tensor data with an MPS vector.
-- [init(MPSVector, rank: Int)](mpsgraphtensordata/init(_:rank:)-1e4ks.md)
+- [init(MPSVector, rank: Int)](./mpsgraphtensordata/init%28_,rank%29-1e4ks.md)
   Initializes a tensor data with an MPS vector enforcing rank of the result.
-- [init(MPSMatrix, rank: Int)](mpsgraphtensordata/init(_:rank:)-1lnxg.md)
+- [init(MPSMatrix, rank: Int)](./mpsgraphtensordata/init%28_,rank%29-1lnxg.md)
   Initializes a tensor data with an MPS matrix enforcing rank of the result.
-- [init(any MTLBuffer, shape: [NSNumber], dataType: MPSDataType)](mpsgraphtensordata/init(_:shape:datatype:).md)
+- [init(any MTLBuffer, shape: [NSNumber], dataType: MPSDataType)](./mpsgraphtensordata/init%28_,shape,datatype%29.md)
   Initializes an tensor data with a metal buffer.
-- [init(any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)](mpsgraphtensordata/init(_:shape:datatype:rowbytes:).md)
+- [init(any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)](./mpsgraphtensordata/init%28_,shape,datatype,rowbytes%29.md)
   Initializes an tensor data with a metal buffer.
-- [init(device: MPSGraphDevice, data: Data, shape: [NSNumber], dataType: MPSDataType)](mpsgraphtensordata/init(device:data:shape:datatype:).md)
+- [init(device: MPSGraphDevice, data: Data, shape: [NSNumber], dataType: MPSDataType)](./mpsgraphtensordata/init%28device,data,shape,datatype%29.md)
   Initializes the tensor data with an `NSData` on a device.
 ### Instance Properties
-- [var dataType: MPSDataType](mpsgraphtensordata/datatype.md)
+- [var dataType: MPSDataType](./mpsgraphtensordata/datatype.md)
   The data type of the tensor data.
-- [var device: MPSGraphDevice](mpsgraphtensordata/device.md)
+- [var device: MPSGraphDevice](./mpsgraphtensordata/device.md)
   The device of the tensor data.
-- [var shape: [NSNumber]](mpsgraphtensordata/shape.md)
+- [var shape: [NSNumber]](./mpsgraphtensordata/shape.md)
   The shape of the tensor data.
 ### Instance Methods
-- [func mpsndarray() -> MPSNDArray](mpsgraphtensordata/mpsndarray.md)
+- [func mpsndarray() -> MPSNDArray](./mpsgraphtensordata/mpsndarray%28%29.md)
   Return an mpsndarray object will copy contents if the contents are not stored in an MPS ndarray.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphCompilationDescriptor](mpsgraphcompilationdescriptor.md)
+- [class MPSGraphCompilationDescriptor](./mpsgraphcompilationdescriptor.md)
   A class that consists of all the levers for compiling graphs.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphGRUDescriptor](mpsgraphgrudescriptor.md)
+- [class MPSGraphGRUDescriptor](./mpsgraphgrudescriptor.md)
   The class that defines the parameters for a gated recurrent unit (GRU) operation.
-- [class MPSGraphImToColOpDescriptor](mpsgraphimtocolopdescriptor.md)
+- [class MPSGraphImToColOpDescriptor](./mpsgraphimtocolopdescriptor.md)
   The class that defines the parameters for an image to column or column to image operation.
 
 

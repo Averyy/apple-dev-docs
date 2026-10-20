@@ -1,7 +1,8 @@
 # hasActiveCaptions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the scene contains one or more active captions.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the scene contains one or more active cap
 var hasActiveCaptions: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasActiveCaptions;
+```
+
 #### Discussion
 
 Knowing when the renderer has active captions can be useful to scrub to times where captions are present, or skip scenes where no captions exist.
 
-> ❗ **Important**:  Don’t use this property value to restrict drawing. Instead, draw an empty fill in [`render(in:for:)`](avcaptionrenderer/render(in:for:).md) when there aren’t active captions to render.
+> ❗ **Important**:  Don’t use this property value to restrict drawing. Instead, draw an empty fill in [`render(in:for:)`](../render%28in,for%29.md) when there aren’t active captions to render.
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avcaptionrenderer/scene/timerange.md)
+### Inspecting the scene
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range during which the system doesn’t modify the scene.
-- [var needsPeriodicRefresh: Bool](avcaptionrenderer/scene/needsperiodicrefresh.md)
+- [var needsPeriodicRefresh: Bool](./needsperiodicrefresh.md)
   A Boolean value that indicates whether the scene requires redrawing while your app progresses through the content.
 
 

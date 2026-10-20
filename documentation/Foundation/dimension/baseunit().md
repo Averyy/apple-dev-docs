@@ -1,7 +1,8 @@
 # baseUnit()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the base unit.
 
@@ -20,6 +21,10 @@ Returns the base unit.
 class func baseUnit() -> Self
 ```
 
+```objc
++ (instancetype) baseUnit;
+```
+
 #### Return Value
 
 An `NSDimension` subclass object from which all other units provided by the subclass are defined.
@@ -28,7 +33,7 @@ An `NSDimension` subclass object from which all other units provided by the subc
 
 The default implementation returns `nil` to indicate that the `NSDimension` class should not be used directly.
 
-When implementing a subclass, you should return a unit converter that returns the inputted value for both the `baseUnitValueFromValue:` and `valueFromBaseUnitValue:` methods. You can create a unit converter for a base unit using the [`UnitConverterLinear`](unitconverterlinear.md) [`init(coefficient:)`](unitconverterlinear/init(coefficient:).md) initializer, passing `1` as the coefficient.
+When implementing a subclass, you should return a unit converter that returns the inputted value for both the `baseUnitValueFromValue:` and `valueFromBaseUnitValue:` methods. You can create a unit converter for a base unit using the [`UnitConverterLinear`](../unitconverterlinear.md) [`init(coefficient:)`](../unitconverterlinear/init%28coefficient%29.md) initializer, passing `1` as the coefficient.
 
 
 ---

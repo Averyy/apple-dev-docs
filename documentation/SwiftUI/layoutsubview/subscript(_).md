@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets the value for the subview that’s associated with the specified key.
 
@@ -22,7 +23,7 @@ subscript<K>(key: K.Type) -> K.Value where K : LayoutValueKey { get }
 
 #### Overview
 
-If you define a custom layout value using [`LayoutValueKey`](layoutvaluekey.md), you can read the key’s associated value for a given subview in a layout container by indexing the container’s subviews with the key type. For example, if you define a `Flexibility` key type, you can put the associated values of all the layout’s subviews into an array:
+If you define a custom layout value using [`LayoutValueKey`](../layoutvaluekey.md), you can read the key’s associated value for a given subview in a layout container by indexing the container’s subviews with the key type. For example, if you define a `Flexibility` key type, you can put the associated values of all the layout’s subviews into an array:
 
 ```swift
 let flexibilities = subviews.map { subview in
@@ -30,7 +31,7 @@ let flexibilities = subviews.map { subview in
 }
 ```
 
-For more information about creating a custom layout, see [`Layout`](layout.md).
+For more information about creating a custom layout, see [`Layout`](../layout.md).
 
 
 ---

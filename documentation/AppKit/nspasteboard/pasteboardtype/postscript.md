@@ -1,17 +1,22 @@
 # postScript
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Encapsulated PostScript (EPS) code.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 static let postScript: NSPasteboard.PasteboardType
+```
+
+```c
+extern NSPasteboardType NSPostScriptPboardType;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ In macOS 10.6 and later, use `@"com.adobe.encapsulated-postscript"` instead.
 
 ## See Also
 
-- [static let filePromise: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/filepromise.md)
+### Deprecated constants
+- [static let filePromise: NSPasteboard.PasteboardType](./filepromise.md)
   Promised files.
-- [static let inkText: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/inktext.md)
+- [static let inkText: NSPasteboard.PasteboardType](./inktext.md)
   Ink text data.
-- [static let vCard: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/vcard.md)
+- [static let vCard: NSPasteboard.PasteboardType](./vcard.md)
   VCard data.
 
 

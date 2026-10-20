@@ -1,7 +1,8 @@
 # calendar
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar to use for formatting values that don’t have an inherent calendar of their own.
 
@@ -20,23 +21,28 @@ The calendar to use for formatting values that don’t have an inherent calendar
 var calendar: Calendar! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSCalendar * calendar;
+```
+
 #### Discussion
 
-Defaults to [`autoupdatingCurrent`](nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](nscalendar/autoupdatingcurrent.md).
+Defaults to [`autoupdatingCurrent`](../nscalendar/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using [`autoupdatingCurrent`](../nscalendar/autoupdatingcurrent.md).
 
 ## See Also
 
-- [var locale: Locale!](relativedatetimeformatter/locale.md)
+### Configuring Formatter Options
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting the date.
-- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.property.md)
+- [var dateTimeStyle: RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.property.md)
   The style to use when describing a relative date, for example “yesterday” or “1 day ago”.
-- [RelativeDateTimeFormatter.DateTimeStyle](relativedatetimeformatter/datetimestyle-swift.enum.md)
+- [RelativeDateTimeFormatter.DateTimeStyle](./datetimestyle-swift.enum.md)
   A type that represents the style to use when formatting relative dates, such as “1 week ago” or “last week”.
-- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](relativedatetimeformatter/unitsstyle-swift.property.md)
+- [var unitsStyle: RelativeDateTimeFormatter.UnitsStyle](./unitsstyle-swift.property.md)
   The style to use when formatting the quantity or the name of the unit, such as “1 day ago” or “one day ago”.
-- [RelativeDateTimeFormatter.UnitsStyle](relativedatetimeformatter/unitsstyle-swift.enum.md)
+- [RelativeDateTimeFormatter.UnitsStyle](./unitsstyle-swift.enum.md)
   A type that represents the style to use when formatting the units of relative dates.
-- [var formattingContext: Formatter.Context](relativedatetimeformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   A description of where the formatted string will appear, allowing the formatter to capitalize the output appropriately.
 
 

@@ -1,14 +1,15 @@
 # kDisplayModeNativeFlag
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kDisplayModeNativeFlag = 0x02000000
 ```
 

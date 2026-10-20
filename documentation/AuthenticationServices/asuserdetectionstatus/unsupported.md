@@ -1,7 +1,8 @@
 # ASUserDetectionStatus.unsupported
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system can’t determine this user’s status as a real person.
 
@@ -20,11 +21,16 @@ The system can’t determine this user’s status as a real person.
 case unsupported
 ```
 
+```c
+ASUserDetectionStatusUnsupported
+```
+
 ## See Also
 
-- [ASUserDetectionStatus.likelyReal](asuserdetectionstatus/likelyreal.md)
+### User Status
+- [ASUserDetectionStatus.likelyReal](./likelyreal.md)
   The user appears to be a real person.
-- [ASUserDetectionStatus.unknown](asuserdetectionstatus/unknown.md)
+- [ASUserDetectionStatus.unknown](./unknown.md)
   The system hasn’t determined whether the user might be a real person.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: CarKey  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your delegate object that the status of the specified vehicle changed.
@@ -21,7 +22,7 @@ func remoteControlSession(_ session: CarKeyRemoteControlSession, vehicleDidUpdat
 
 #### Discussion
 
-When information for a vehicle changes, the session notifies its delegate so you can make any changes. To save time, use the provided report rather than requesting the report again from the session’s [`vehicleReports`](carkeyremotecontrolsession/vehiclereports.md) property. The system executes this method on the dispatch queue you specified when you started the session.
+When information for a vehicle changes, the session notifies its delegate so you can make any changes. To save time, use the provided report rather than requesting the report again from the session’s [`vehicleReports`](../carkeyremotecontrolsession/vehiclereports.md) property. The system executes this method on the dispatch queue you specified when you started the session.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ When information for a vehicle changes, the session notifies its delegate so you
 
 ## See Also
 
-- [func remoteControlSession(CarKeyRemoteControlSession, didReceivePassthroughData: Data, fromVehicle: String)](carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didreceivepassthroughdata:fromvehicle:).md)
+### Receiving Data from the Vehicle
+- [func remoteControlSession(CarKeyRemoteControlSession, didReceivePassthroughData: Data, fromVehicle: String)](./remotecontrolsession%28_,didreceivepassthroughdata,fromvehicle%29.md)
   Notifies the delegate object that the vehicle sent passthrough data for you to handle.
 
 

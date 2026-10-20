@@ -1,7 +1,8 @@
 # device
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device that generated the data for this object.
 
@@ -19,15 +20,20 @@ The device that generated the data for this object.
 var device: HKDevice? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) HKDevice * device;
+```
+
 ## See Also
 
-- [var uuid: UUID](hkobject/uuid.md)
+### Accessing Properties
+- [var uuid: UUID](./uuid.md)
   The universally unique identifier (UUID) for this HealthKit object.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   The metadata for this HealthKit object.
-- [var sourceRevision: HKSourceRevision](hkobject/sourcerevision.md)
+- [var sourceRevision: HKSourceRevision](./sourcerevision.md)
   The app or device that created this object.
-- [var source: HKSource](hkobject/source.md)
+- [var source: HKSource](./source.md)
   A HealthKit source, representing the app or device that created this object.
 
 

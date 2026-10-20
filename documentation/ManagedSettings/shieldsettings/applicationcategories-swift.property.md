@@ -1,7 +1,8 @@
 # applicationCategories
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Categories of apps for the system to cover with a shielding view.
 
@@ -22,13 +23,14 @@ When the user launches an application in one of these categories, the system cal
 
 ## See Also
 
-- [ShieldSettings.ActivityCategoryPolicy](shieldsettings/activitycategorypolicy.md)
+### Blocking categories of apps and websites
+- [ShieldSettings.ActivityCategoryPolicy](./activitycategorypolicy.md)
   Policies available for shielding activities based on their category.
-- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](shieldsettings/applicationcategories-swift.type.property.md)
+- [static let applicationCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<Application>>](./applicationcategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of apps for the system to cover with a shielding view.
-- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](shieldsettings/webdomaincategories-swift.property.md)
+- [var webDomainCategories: ShieldSettings.ActivityCategoryPolicy<WebDomain>?](./webdomaincategories-swift.property.md)
   Categories of websites for the system to cover with a shielding view.
-- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](shieldsettings/webdomaincategories-swift.type.property.md)
+- [static let webDomainCategories: SettingMetadata<ShieldSettings.ActivityCategoryPolicy<WebDomain>>](./webdomaincategories-swift.type.property.md)
   The metadata for the configuration that specifies categories of websites for the system to shield.
 
 

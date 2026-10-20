@@ -1,7 +1,8 @@
 # previousType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 previous content type
 

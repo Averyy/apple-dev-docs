@@ -1,7 +1,8 @@
 # present(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches Desk View with no additional configuration and then performs a completion handler if you specify it.
 
@@ -12,7 +13,15 @@ Launches Desk View with no additional configuration and then performs a completi
 ## Declaration
 
 ```swift
+func present(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func present() async throws
+```
+
+```objc
+- (void) presentWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -27,9 +36,10 @@ Desk View launches in setup mode. This mode shows the full field of view of an u
 
 ## See Also
 
-- [func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration, completionHandler: (((any Error)?) -> Void)?)](avcapturedeskviewapplication/present(launchconfiguration:completionhandler:).md)
+### Presenting the Desk View app
+- [func present(launchConfiguration: AVCaptureDeskViewApplication.LaunchConfiguration, completionHandler: (((any Error)?) -> Void)?)](./present%28launchconfiguration,completionhandler%29.md)
   Launches Desk View with the configuration and completion handler that you specify.
-- [AVCaptureDeskViewApplication.LaunchConfiguration](avcapturedeskviewapplication/launchconfiguration.md)
+- [AVCaptureDeskViewApplication.LaunchConfiguration](./launchconfiguration.md)
   An object that configures how to present Desk View.
 
 

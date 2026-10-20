@@ -1,7 +1,8 @@
 # client
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.15+
@@ -12,9 +13,14 @@
 var client: any NSTextCheckingClient { get }
 ```
 
+```objc
+@property (readonly) id<NSTextCheckingClient> client;
+```
+
 ## See Also
 
-- [var spellCheckerDocumentTag: Int](nstextcheckingcontroller/spellcheckerdocumenttag.md)
+### Instance Properties
+- [var spellCheckerDocumentTag: Int](./spellcheckerdocumenttag.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cm24_8ColorPacking
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The color values for three 8-bit color channels are stored in consecutive bytes, for a total of 24 bits.
 

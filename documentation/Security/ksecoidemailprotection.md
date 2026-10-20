@@ -1,7 +1,8 @@
 # kSecOIDEmailProtection
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDEmailProtection: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDEmailProtection;
 ```
 
 

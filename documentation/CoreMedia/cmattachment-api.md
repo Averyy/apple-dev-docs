@@ -1,6 +1,7 @@
 # CMAttachment
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 Add supporting metadata to sample buffers.
 
@@ -11,68 +12,69 @@ An attachment bearer is a Core Foundation type object that supports the suite of
 ## Topics
 
 ### Processing Attachments
-- [func CMGetAttachment(CMAttachmentBearer, key: CFString, attachmentModeOut: UnsafeMutablePointer<CMAttachmentMode>?) -> CFTypeRef?](cmgetattachment(_:key:attachmentmodeout:).md)
+- [func CMGetAttachment(CMAttachmentBearer, key: CFString, attachmentModeOut: UnsafeMutablePointer<CMAttachmentMode>?) -> CFTypeRef?](./cmgetattachment%28_,key,attachmentmodeout%29.md)
   Returns an attachment from an attachment bearer object.
-- [func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> sending CFDictionary?](cmcopydictionaryofattachments(allocator:target:attachmentmode:).md)
+- [func CMCopyDictionaryOfAttachments(allocator: CFAllocator?, target: CMAttachmentBearer, attachmentMode: CMAttachmentMode) -> sending CFDictionary?](./cmcopydictionaryofattachments%28allocator,target,attachmentmode%29.md)
   Returns a dictionary of all attachments for an attachment bearer object.
-- [func CMSetAttachment(CMAttachmentBearer, key: CFString, value: CFTypeRef?, attachmentMode: CMAttachmentMode)](cmsetattachment(_:key:value:attachmentmode:).md)
+- [func CMSetAttachment(CMAttachmentBearer, key: CFString, value: CFTypeRef?, attachmentMode: CMAttachmentMode)](./cmsetattachment%28_,key,value,attachmentmode%29.md)
   Sets or adds an attachment to an attachment bearer object.
-- [func CMSetAttachments(CMAttachmentBearer, attachments: CFDictionary, attachmentMode: CMAttachmentMode)](cmsetattachments(_:attachments:attachmentmode:).md)
+- [func CMSetAttachments(CMAttachmentBearer, attachments: CFDictionary, attachmentMode: CMAttachmentMode)](./cmsetattachments%28_,attachments,attachmentmode%29.md)
   Sets a dictionary of attachments on an attachment bearer object.
-- [func CMRemoveAttachment(CMAttachmentBearer, key: CFString)](cmremoveattachment(_:key:).md)
+- [func CMRemoveAttachment(CMAttachmentBearer, key: CFString)](./cmremoveattachment%28_,key%29.md)
   Removes a specific attachment from an attachment bearer object.
-- [func CMRemoveAllAttachments(CMAttachmentBearer)](cmremoveallattachments(_:).md)
+- [func CMRemoveAllAttachments(CMAttachmentBearer)](./cmremoveallattachments%28_%29.md)
   Removes all attachments from an attachment bearer object.
-- [func CMPropagateAttachments(CMAttachmentBearer, destination: CMAttachmentBearer)](cmpropagateattachments(_:destination:).md)
+- [func CMPropagateAttachments(CMAttachmentBearer, destination: CMAttachmentBearer)](./cmpropagateattachments%28_,destination%29.md)
   Copies all propagable attachments from one attachment bearer object to another.
 ### Data Types
-- [protocol CMAttachmentBearerProtocol](cmattachmentbearerprotocol.md)
+- [protocol CMAttachmentBearerProtocol](./cmattachmentbearerprotocol.md)
   A protocol for objects that can carry attachments.
-- [typealias CMAttachmentBearer](cmattachmentbearer.md)
+- [typealias CMAttachmentBearer](./cmattachmentbearer.md)
   An object that can carry attachments.
-- [typealias CMAttachmentMode](cmattachmentmode.md)
+- [typealias CMAttachmentMode](./cmattachmentmode.md)
   The mode to use when propagating attachments.
 ### Constants
-- [var kCMAttachmentMode_ShouldNotPropagate: CMAttachmentMode](kcmattachmentmode_shouldnotpropagate.md)
+- [var kCMAttachmentMode_ShouldNotPropagate: CMAttachmentMode](./kcmattachmentmode_shouldnotpropagate.md)
   A mode that doesn’t propagate attachments to another object.
-- [var kCMAttachmentMode_ShouldPropagate: CMAttachmentMode](kcmattachmentmode_shouldpropagate.md)
+- [var kCMAttachmentMode_ShouldPropagate: CMAttachmentMode](./kcmattachmentmode_shouldpropagate.md)
   A mode that propagates attachments to another object.
-- [let kCMSampleAttachmentKey_HEVCTemporalLevelInfo: CFString](kcmsampleattachmentkey_hevctemporallevelinfo.md)
+- [let kCMSampleAttachmentKey_HEVCTemporalLevelInfo: CFString](./kcmsampleattachmentkey_hevctemporallevelinfo.md)
   An attachment that indicates a video frame’s level within a hierarchical frame dependency structure.
-- [let kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess: CFString](kcmsampleattachmentkey_hevctemporalsublayeraccess.md)
+- [let kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess: CFString](./kcmsampleattachmentkey_hevctemporalsublayeraccess.md)
   An attachment that indicates a temporal sublayer access grouping.
-- [let kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess: CFString](kcmsampleattachmentkey_hevcstepwisetemporalsublayeraccess.md)
+- [let kCMSampleAttachmentKey_HEVCStepwiseTemporalSubLayerAccess: CFString](./kcmsampleattachmentkey_hevcstepwisetemporalsublayeraccess.md)
   An attachment that indicates a step-wise temporal sublayer access (STSA) sample grouping.
-- [let kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType: CFString](kcmsampleattachmentkey_hevcsyncsamplenalunittype.md)
+- [let kCMSampleAttachmentKey_HEVCSyncSampleNALUnitType: CFString](./kcmsampleattachmentkey_hevcsyncsamplenalunittype.md)
   An attachment that indicates a sync sample NAL unit type.
-- [let kCMSampleAttachmentKey_CryptorSubsampleAuxiliaryData: CFString](kcmsampleattachmentkey_cryptorsubsampleauxiliarydata.md)
+- [let kCMSampleAttachmentKey_CryptorSubsampleAuxiliaryData: CFString](./kcmsampleattachmentkey_cryptorsubsampleauxiliarydata.md)
   An attachment that describes the ranges of protected and unprotected data within a protected sample buffer.
-- [let kCMSampleAttachmentKey_AudioIndependentSampleDecoderRefreshCount: CFString](kcmsampleattachmentkey_audioindependentsampledecoderrefreshcount.md)
+- [let kCMSampleAttachmentKey_AudioIndependentSampleDecoderRefreshCount: CFString](./kcmsampleattachmentkey_audioindependentsampledecoderrefreshcount.md)
   An attachment that’s only present if the audio sample is an independent frame or immediate playout frame.
-- [let kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix: CFString](kcmsamplebufferattachmentkey_cameraintrinsicmatrix.md)
+- [let kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix: CFString](./kcmsamplebufferattachmentkey_cameraintrinsicmatrix.md)
   An attachment that indicates a 3x3 camera intrinsic matrix to apply to the current sample buffer.
 
 ## See Also
 
-- [CMSampleBuffer](cmsamplebuffer-api.md)
+### Sample Processing
+- [CMSampleBuffer](./cmsamplebuffer-api.md)
   An object that contains zero or more media samples of a uniform media type.
-- [CMBlockBuffer](cmblockbuffer-api.md)
+- [CMBlockBuffer](./cmblockbuffer-api.md)
   An object the system uses to move blocks of memory through a processing system.
-- [CMTaggedBufferGroup](cmtaggedbuffergroup.md)
+- [CMTaggedBufferGroup](./cmtaggedbuffergroup.md)
   Objective-C types and interfaces for working with Core Media tagged buffer groups.
-- [CMFormatDescription](cmformatdescription-api.md)
+- [CMFormatDescription](./cmformatdescription-api.md)
   A media format descriptor that describes the samples in a sample buffer.
-- [struct CMTaggedBuffer](cmtaggedbuffer.md)
+- [struct CMTaggedBuffer](./cmtaggedbuffer.md)
   An instance of a media buffer containing metadata tags.
-- [struct CMMutableDataBlockBuffer](cmmutabledatablockbuffer.md)
+- [struct CMMutableDataBlockBuffer](./cmmutabledatablockbuffer.md)
   A block buffer that provides read-write access to a range of bytes.
-- [struct CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
+- [struct CMReadOnlyDataBlockBuffer](./cmreadonlydatablockbuffer.md)
   A block buffer that provides read-only access to the a range of bytes.
-- [struct CMReadySampleBuffer](cmreadysamplebuffer.md)
+- [struct CMReadySampleBuffer](./cmreadysamplebuffer.md)
   Buffer carrying readily available samples of media data.
-- [struct CMSampleDataReference](cmsampledatareference.md)
+- [struct CMSampleDataReference](./cmsampledatareference.md)
   References sample data in at a URL.
-- [struct CMTaggedDynamicBuffer](cmtaggeddynamicbuffer.md)
+- [struct CMTaggedDynamicBuffer](./cmtaggeddynamicbuffer.md)
   Contains a collection of tags associated with a read-only media buffer.
 
 

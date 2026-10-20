@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var errAEEventNotPermitted: Int](erraeeventnotpermitted.md)
-- [var errAETargetAddressNotPermitted: Int](erraetargetaddressnotpermitted.md)
+- [var errAEEventNotPermitted: Int](../../erraeeventnotpermitted.md)
+- [var errAETargetAddressNotPermitted: Int](../../erraetargetaddressnotpermitted.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UNNotificationRequest
 
 **Framework**: User Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to schedule a local notification, which includes the content of the notification and the trigger conditions for delivery.
 
@@ -20,17 +21,21 @@ A request to schedule a local notification, which includes the content of the no
 class UNNotificationRequest
 ```
 
+```objc
+@interface UNNotificationRequest : NSObject
+```
+
 #### Overview
 
-Create a [`UNNotificationRequest`](unnotificationrequest.md) object when you want to schedule the delivery of a local notification. A notification request object contains a [`UNNotificationContent`](unnotificationcontent.md) object with the payload and the [`UNNotificationTrigger`](unnotificationtrigger.md) object with the conditions that trigger the delivery of the notification. To schedule the delivery of your notification, pass your request object to the [`add(_:withCompletionHandler:)`](unusernotificationcenter/add(_:withcompletionhandler:).md) method of the shared user notification center object.
+Create a [`UNNotificationRequest`](./unnotificationrequest.md) object when you want to schedule the delivery of a local notification. A notification request object contains a [`UNNotificationContent`](./unnotificationcontent.md) object with the payload and the [`UNNotificationTrigger`](./unnotificationtrigger.md) object with the conditions that trigger the delivery of the notification. To schedule the delivery of your notification, pass your request object to the [`add(_:withCompletionHandler:)`](./unusernotificationcenter/add%28_,withcompletionhandler%29.md) method of the shared user notification center object.
 
 After scheduling a request, you interact with `UNNotificationRequest` objects in the following ways:
 
-- View your app’s pending notifications by calling the [`getPendingNotificationRequests(completionHandler:)`](unusernotificationcenter/getpendingnotificationrequests(completionhandler:).md) method of your shared user notification center object.
-- When the system delivers a notification to your app, the provided [`UNNotification`](unnotification.md) object contains a `UNNotificationRequest` object that you can inspect to get the notification details.
-- Use the request’s [`identifier`](unnotificationrequest/identifier.md) to remove delivered notifications from Notification Center.
+- View your app’s pending notifications by calling the [`getPendingNotificationRequests(completionHandler:)`](./unusernotificationcenter/getpendingnotificationrequests%28completionhandler%29.md) method of your shared user notification center object.
+- When the system delivers a notification to your app, the provided [`UNNotification`](./unnotification.md) object contains a `UNNotificationRequest` object that you can inspect to get the notification details.
+- Use the request’s [`identifier`](./unnotificationrequest/identifier.md) to remove delivered notifications from Notification Center.
 
-When receiving a local or remote notification, use the provided [`UNNotificationRequest`](unnotificationrequest.md) object to fetch details about the notification.
+When receiving a local or remote notification, use the provided [`UNNotificationRequest`](./unnotificationrequest.md) object to fetch details about the notification.
 
 ```swift
 // Create a content object with the message to convey.
@@ -46,38 +51,39 @@ let request = UNNotificationRequest(identifier: "com.example.mynotification", co
 ## Topics
 
 ### Creating a Notification Request
-- [convenience init(identifier: String, content: UNNotificationContent, trigger: UNNotificationTrigger?)](unnotificationrequest/init(identifier:content:trigger:).md)
+- [convenience init(identifier: String, content: UNNotificationContent, trigger: UNNotificationTrigger?)](./unnotificationrequest/init%28identifier,content,trigger%29.md)
   Creates a notification request object that you use to schedule a notification.
 ### Getting the Request Details
-- [var identifier: String](unnotificationrequest/identifier.md)
+- [var identifier: String](./unnotificationrequest/identifier.md)
   The unique identifier for this notification request.
-- [var content: UNNotificationContent](unnotificationrequest/content.md)
+- [var content: UNNotificationContent](./unnotificationrequest/content.md)
   The content associated with the notification.
-- [var trigger: UNNotificationTrigger?](unnotificationrequest/trigger.md)
+- [var trigger: UNNotificationTrigger?](./unnotificationrequest/trigger.md)
   The conditions that trigger the delivery of the notification.
 ### Initializers
-- [init?(coder: NSCoder)](unnotificationrequest/init(coder:).md)
+- [init?(coder: NSCoder)](./unnotificationrequest/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Scheduling a notification locally from your app](scheduling-a-notification-locally-from-your-app.md)
+### Notification requests
+- [Scheduling a notification locally from your app](./scheduling-a-notification-locally-from-your-app.md)
   Create and schedule notifications from your app when you want to get the user’s attention.
-- [class UNNotification](unnotification.md)
+- [class UNNotification](./unnotification.md)
   The data for a local or remote notification the system delivers to your app.
 
 

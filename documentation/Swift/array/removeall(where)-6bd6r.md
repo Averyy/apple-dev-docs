@@ -1,7 +1,8 @@
 # removeAll(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the elements that satisfy the given predicate.
 
@@ -20,6 +21,8 @@ Removes all the elements that satisfy the given predicate.
 mutating func removeAll(where shouldBeRemoved: (Self.Element) throws -> Bool) rethrows
 ```
 
+Available when `Self` conforms to `MutableCollection`.
+
 #### Discussion
 
 Use this method to remove every element in a collection that meets particular criteria. The order of the remaining elements is preserved. This example removes all the odd values from an array of numbers:
@@ -30,7 +33,7 @@ numbers.removeAll(where: { $0 % 2 != 0 })
 // numbers == [6, 8, 10]
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # Alarm.CountdownDuration
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that defines the durations used in an alarm that has a countdown.
 
@@ -27,31 +28,32 @@ Alarm.CountdownDuration(preAlert: 10, postAlert: 10)
 ## Topics
 
 ### Creating a countdown duration
-- [init(preAlert: TimeInterval?, postAlert: TimeInterval?)](alarm/countdownduration-swift.struct/init(prealert:postalert:).md)
+- [init(preAlert: TimeInterval?, postAlert: TimeInterval?)](./countdownduration-swift.struct/init%28prealert,postalert%29.md)
   Creates an instance of a countdown duration.
-- [var postAlert: TimeInterval?](alarm/countdownduration-swift.struct/postalert.md)
+- [var postAlert: TimeInterval?](./countdownduration-swift.struct/postalert.md)
   The duration applied after the alarm has alerted at least once and moves back to the countdown state.
-- [var preAlert: TimeInterval?](alarm/countdownduration-swift.struct/prealert.md)
+- [var preAlert: TimeInterval?](./countdownduration-swift.struct/prealert.md)
   The duration applied before the alarm fires.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var countdownDuration: Alarm.CountdownDuration?](alarm/countdownduration-swift.property.md)
+### Defining a countdown duration
+- [var countdownDuration: Alarm.CountdownDuration?](./countdownduration-swift.property.md)
   The time left before an alert, in seconds.
-- [var id: UUID](alarm/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of the alarm.
-- [Alarm.State](alarm/state-swift.enum.md)
+- [Alarm.State](./state-swift.enum.md)
   An enum that lists all possible states of an alarm.
-- [var state: Alarm.State](alarm/state-swift.property.md)
+- [var state: Alarm.State](./state-swift.property.md)
   The current state of the alarm.
 
 

@@ -1,7 +1,8 @@
 # connectToLowestCostNode(node:bidirectional:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a node to the graph, connecting it to the node already in the graph for which the connection has the lowest cost.
 
@@ -19,24 +20,29 @@ Adds a node to the graph, connecting it to the node already in the graph for whi
 func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)
 ```
 
+```objc
+- (void) connectNodeToLowestCostNode:(GKGraphNode *) node bidirectional:(BOOL) bidirectional;
+```
+
 #### Discussion
 
-This method uses the [`cost(to:)`](gkgraphnode/cost(to:).md) method of the specified node to find the node already in the graph that is most easily reached from the new node. For nodes that contain geometry information ([`GKGraphNode2D`](gkgraphnode2d.md) or [`GKGridGraphNode`](gkgridgraphnode.md) objects), cost is by default based on distance, so this method connects the new node to the geometrically closest node already in the graph. If you create a custom [`GKGraphNode`](gkgraphnode.md) subclass, this method selects the “closest” node according to whatever algorithm you implement in your [`cost(to:)`](gkgraphnode/cost(to:).md) method.
+This method uses the [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method of the specified node to find the node already in the graph that is most easily reached from the new node. For nodes that contain geometry information ([`GKGraphNode2D`](../gkgraphnode2d.md) or [`GKGridGraphNode`](../gkgridgraphnode.md) objects), cost is by default based on distance, so this method connects the new node to the geometrically closest node already in the graph. If you create a custom [`GKGraphNode`](../gkgraphnode.md) subclass, this method selects the “closest” node according to whatever algorithm you implement in your [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method.
 
-Using this method with an instance of the [`GKGraphNode`](gkgraphnode.md) base class is not recommended.
+Using this method with an instance of the [`GKGraphNode`](../gkgraphnode.md) base class is not recommended.
 
 ## Parameters
 
 - `node`: A graph node object.
-- `bidirectional`: [`true`](https://developer.apple.com/documentation/swift/true) to create connections in both directions; [`false`](https://developer.apple.com/documentation/swift/false) to create just a single connection from the nearest node to the newly added node.
+- `bidirectional`: [`true`](../../Swift/true.md) to create connections in both directions; [`false`](../../Swift/false.md) to create just a single connection from the nearest node to the newly added node.
 
 ## See Also
 
-- [func add([GKGraphNode])](gkgraph/add(_:).md)
+### Working with Nodes in a Graph
+- [func add([GKGraphNode])](./add%28_%29.md)
   Adds the specified nodes to the graph.
-- [func remove([GKGraphNode])](gkgraph/remove(_:).md)
+- [func remove([GKGraphNode])](./remove%28_%29.md)
   Removes the specified nodes from the graph.
-- [var nodes: [GKGraphNode]?](gkgraph/nodes.md)
+- [var nodes: [GKGraphNode]?](./nodes.md)
   The list of nodes in the graph.
 
 

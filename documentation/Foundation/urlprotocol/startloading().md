@@ -1,7 +1,8 @@
 # startLoading()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts protocol-specific loading of the request.
 
@@ -20,15 +21,20 @@ Starts protocol-specific loading of the request.
 func startLoading()
 ```
 
+```objc
+- (void) startLoading;
+```
+
 #### Discussion
 
-When this method is called, the subclass implementation should start loading the request, providing feedback to the URL loading system via the [`URLProtocolClient`](urlprotocolclient.md) protocol.
+When this method is called, the subclass implementation should start loading the request, providing feedback to the URL loading system via the [`URLProtocolClient`](../urlprotocolclient.md) protocol.
 
 Subclasses must implement this method.
 
 ## See Also
 
-- [func stopLoading()](urlprotocol/stoploading.md)
+### Starting and stopping downloads
+- [func stopLoading()](./stoploading%28%29.md)
   Stops protocol-specific loading of the request.
 
 

@@ -1,7 +1,8 @@
 # headerImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image that the section header displays.
 
@@ -17,19 +18,24 @@ An image that the section header displays.
 var headerImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIImage * headerImage;
+```
+
 #### Discussion
 
-The maximum size of the section header image is [`CPMaximumListSectionImageSize`](cpmaximumlistsectionimagesize.md).
+The maximum size of the section header image is [`CPMaximumListSectionImageSize`](../cpmaximumlistsectionimagesize.md).
 
-Provide a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) that is display-ready. To provide an image that includes light and dark styles, use an asset from your asset catalog that includes both styles, or use a [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) to combine two [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) instances into a single image with both styles.
+Provide a [`UIImage`](../../UIKit/uiimage.md) that is display-ready. To provide an image that includes light and dark styles, use an asset from your asset catalog that includes both styles, or use a [`UIImageAsset`](../../UIKit/uiimageasset.md) to combine two [`UIImage`](../../UIKit/uiimage.md) instances into a single image with both styles.
 
-To size your header image properly, consider the display scale of the car screen. Use [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) to combine multiple images with different trait collections into a single image. For more information about trait collections for CarPlay, see [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md).
+To size your header image properly, consider the display scale of the car screen. Use [`UIImageAsset`](../../UIKit/uiimageasset.md) to combine multiple images with different trait collections into a single image. For more information about trait collections for CarPlay, see [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md).
 
 ## See Also
 
-- [var headerButton: CPButton?](cplistsection/headerbutton.md)
+### Configuring Section Headers
+- [var headerButton: CPButton?](./headerbutton.md)
   A button that the section header displays.
-- [var headerSubtitle: String?](cplistsection/headersubtitle.md)
+- [var headerSubtitle: String?](./headersubtitle.md)
   A string that the header displays as a subtitle.
 
 

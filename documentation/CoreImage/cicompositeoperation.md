@@ -1,17 +1,18 @@
 # CICompositeOperation
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a composite operation filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,27 @@ The properties you use to configure a composite operation filter.
 protocol CICompositeOperation : CIFilterProtocol
 ```
 
+```objc
+@protocol CICompositeOperation <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var backgroundImage: CIImage?](cicompositeoperation/backgroundimage.md)
+- [var backgroundImage: CIImage?](./cicompositeoperation/backgroundimage.md)
   The image to use as a background image.
-- [var inputImage: CIImage?](cicompositeoperation/inputimage.md)
+- [var inputImage: CIImage?](./cicompositeoperation/inputimage.md)
   The image to use as a foreground image.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [Composite Operations](composite-operations.md)
+### Related Documentation
+- [Composite Operations](./composite-operations.md)
   Composite images by using a range of blend modes and compositing operators.
 
 

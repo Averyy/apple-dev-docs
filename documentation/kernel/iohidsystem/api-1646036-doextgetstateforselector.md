@@ -1,14 +1,15 @@
 # doExtGetStateForSelector
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static IOReturn doExtGetStateForSelector(IOHIDSystem *self, void *p1, void *p2);
 ```
 

@@ -1,14 +1,15 @@
 # ElectricalLoadDevice.DeviceType.hvac
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A heating, ventilation, and air conditioning system.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ case hvac
 
 ## See Also
 
-- [ElectricalLoadDevice.DeviceType.electricVehicle](electricalloaddevice/devicetype/electricvehicle.md)
+### Device types
+- [ElectricalLoadDevice.DeviceType.electricVehicle](./electricvehicle.md)
   An electric vehicle.
 
 

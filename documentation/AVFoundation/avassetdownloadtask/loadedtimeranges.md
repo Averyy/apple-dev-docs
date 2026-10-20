@@ -1,21 +1,28 @@
 # loadedTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time ranges of the downloaded media that are ready for playback.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 27.0
+- iPadOS 9.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use NSURLSessionTask.progress instead
 
 ## Declaration
 
 ```swift
 var loadedTimeRanges: [NSValue] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<NSValue *> * loadedTimeRanges;
 ```
 
 #### Discussion
@@ -24,11 +31,12 @@ The time ranges that this property provides may be discontinuous.
 
 ## See Also
 
-- [var urlAsset: AVURLAsset](avassetdownloadtask/urlasset.md)
+### Accessing task information
+- [var urlAsset: AVURLAsset](./urlasset.md)
   The asset that this task downloads.
-- [var options: [String : Any]?](avassetdownloadtask/options.md)
+- [var options: [String : Any]?](./options.md)
   The configuration options for the task.
-- [var destinationURL: URL](avassetdownloadtask/destinationurl.md)
+- [var destinationURL: URL](./destinationurl.md)
   The local file URL to where the task downloads the asset.
 
 

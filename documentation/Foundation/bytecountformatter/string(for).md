@@ -1,7 +1,8 @@
 # string(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats `obj` as a byte count (if `obj` is an `NSNumber`) or specific byte measurement (if `obj` is an `NSMeasurement`) using the receiver’s settings.
 
@@ -18,6 +19,10 @@ Formats `obj` as a byte count (if `obj` is an `NSNumber`) or specific byte measu
 
 ```swift
 func string(for obj: Any?) -> String?
+```
+
+```objc
+- (NSString *) stringForObjectValue:(id) obj;
 ```
 
 #### Discussion

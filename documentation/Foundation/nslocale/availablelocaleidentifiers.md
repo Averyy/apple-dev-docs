@@ -1,7 +1,8 @@
 # availableLocaleIdentifiers
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The list of locale identifiers available on the system.
 
@@ -20,22 +21,28 @@ The list of locale identifiers available on the system.
 class var availableLocaleIdentifiers: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * availableLocaleIdentifiers;
+```
+
 #### Discussion
 
-A locale identifier starts with a language code, often includes a region code, and occasionally includes a script designator.  See [`Locale IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW9) for more information about the structure of a locale identifier.
+A locale identifier starts with a language code, often includes a region code, and occasionally includes a script designator.  See [Locale IDs](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html#//apple_ref/doc/uid/10000171i-CH15-SW9) for more information about the structure of a locale identifier.
 
-Use [`localizedString(forLocaleIdentifier:)`](nslocale/localizedstring(forlocaleidentifier:).md) to obtain a human readable description of any of the locale identifiers in this list.
+Use [`localizedString(forLocaleIdentifier:)`](./localizedstring%28forlocaleidentifier%29.md) to obtain a human readable description of any of the locale identifiers in this list.
 
 ## See Also
 
-- [Internationalization and Localization Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)
-- [class var isoCountryCodes: [String]](nslocale/isocountrycodes.md)
+### Related Documentation
+- [Internationalization and Localization Guide](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i)
+### Getting Known Identifiers and Codes
+- [class var isoCountryCodes: [String]](./isocountrycodes.md)
   The list of known country or region codes.
-- [class var isoLanguageCodes: [String]](nslocale/isolanguagecodes.md)
+- [class var isoLanguageCodes: [String]](./isolanguagecodes.md)
   The list of known language codes.
-- [class var isoCurrencyCodes: [String]](nslocale/isocurrencycodes.md)
+- [class var isoCurrencyCodes: [String]](./isocurrencycodes.md)
   The list of known currency codes.
-- [class var commonISOCurrencyCodes: [String]](nslocale/commonisocurrencycodes.md)
+- [class var commonISOCurrencyCodes: [String]](./commonisocurrencycodes.md)
   A list of commonly encountered currency codes.
 
 

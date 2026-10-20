@@ -1,13 +1,14 @@
 # updateContents(data:)
 
 **Framework**: Spatial Preview  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the contents of the document with the provided data.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

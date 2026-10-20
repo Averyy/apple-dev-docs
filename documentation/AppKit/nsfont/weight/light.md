@@ -1,7 +1,8 @@
 # light
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The font weight for system light font.
 
@@ -14,23 +15,28 @@ The font weight for system light font.
 static let light: NSFont.Weight
 ```
 
+```c
+extern const NSFontWeight NSFontWeightLight;
+```
+
 ## See Also
 
-- [static let ultraLight: NSFont.Weight](nsfont/weight/ultralight.md)
+### Font Weights
+- [static let ultraLight: NSFont.Weight](./ultralight.md)
   The font weight for system ultra light font.
-- [static let thin: NSFont.Weight](nsfont/weight/thin.md)
+- [static let thin: NSFont.Weight](./thin.md)
   The font weight for system thin font.
-- [static let regular: NSFont.Weight](nsfont/weight/regular.md)
+- [static let regular: NSFont.Weight](./regular.md)
   The font weight for system regular font.
-- [static let medium: NSFont.Weight](nsfont/weight/medium.md)
+- [static let medium: NSFont.Weight](./medium.md)
   The font weight for system medium font.
-- [static let semibold: NSFont.Weight](nsfont/weight/semibold.md)
+- [static let semibold: NSFont.Weight](./semibold.md)
   The font weight for system semibold font.
-- [static let bold: NSFont.Weight](nsfont/weight/bold.md)
+- [static let bold: NSFont.Weight](./bold.md)
   The font weight for system bold font.
-- [static let heavy: NSFont.Weight](nsfont/weight/heavy.md)
+- [static let heavy: NSFont.Weight](./heavy.md)
   The font weight for system heavy font.
-- [static let black: NSFont.Weight](nsfont/weight/black.md)
+- [static let black: NSFont.Weight](./black.md)
   The font weight for system black font.
 
 

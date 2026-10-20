@@ -1,7 +1,8 @@
 # SVGFEFuncBElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEFuncBElement
 ```
 
 ## Relationships
 
 ### Inherits From
-- [SVGComponentTransferFunctionElement](svgcomponenttransferfunctionelement.md)
+- [SVGComponentTransferFunctionElement](./svgcomponenttransferfunctionelement.md)
 
 
 ---

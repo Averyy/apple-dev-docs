@@ -1,7 +1,8 @@
 # hours
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which hours of a 24-hour day the event should repeat.
 

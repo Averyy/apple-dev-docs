@@ -1,7 +1,8 @@
 # width(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the number of code units required to encode the given Unicode scalar.
 

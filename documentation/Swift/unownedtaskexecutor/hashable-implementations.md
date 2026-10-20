@@ -1,14 +1,15 @@
 # Hashable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var hashValue: Int](unownedtaskexecutor/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func hash(into: inout Hasher)](unownedtaskexecutor/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hash the executor identity into the given hasher.
 
 

@@ -1,7 +1,8 @@
 # setProperties(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the material property’s attributes to those of the specified material property.
 
@@ -19,9 +20,13 @@ Sets the material property’s attributes to those of the specified material pro
 func setProperties(_ property: MDLMaterialProperty)
 ```
 
+```objc
+- (void) setProperties:(MDLMaterialProperty *) property;
+```
+
 #### Discussion
 
-Use this method to copy data from one [`MDLMaterialProperty`](mdlmaterialproperty.md) instance to another—for example, to make one material property of a [`MDLScatteringFunction`](mdlscatteringfunction.md) object match the value of another.
+Use this method to copy data from one [`MDLMaterialProperty`](../mdlmaterialproperty.md) instance to another—for example, to make one material property of a [`MDLScatteringFunction`](../mdlscatteringfunction.md) object match the value of another.
 
 ## Parameters
 

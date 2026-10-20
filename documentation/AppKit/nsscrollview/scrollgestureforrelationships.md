@@ -1,7 +1,8 @@
 # scrollGestureForRelationships
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A gesture recognizer for setting up failure or exclusion relationships against scrolling gestures
 
@@ -12,6 +13,10 @@ A gesture recognizer for setting up failure or exclusion relationships against s
 
 ```swift
 var scrollGestureForRelationships: NSGestureRecognizer { get }
+```
+
+```objc
+@property (strong, readonly) NSGestureRecognizer * scrollGestureForRelationships;
 ```
 
 

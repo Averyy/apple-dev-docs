@@ -1,17 +1,22 @@
 # objectValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s value as an Objective-C object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var objectValue: Any? { get set }
+```
+
+```objc
+@property (copy, nullable) id objectValue;
 ```
 
 #### Discussion
@@ -20,17 +25,18 @@ To be valid object value, the cell must have a formatter capable of converting t
 
 ## See Also
 
-- [var hasValidObjectValue: Bool](nscell/hasvalidobjectvalue.md)
+### Managing Cell Values
+- [var hasValidObjectValue: Bool](./hasvalidobjectvalue.md)
   A Boolean value that indicates whether the cell has a valid object value.
-- [var intValue: Int32](nscell/intvalue.md)
+- [var intValue: Int32](./intvalue.md)
   The cell’s value as an integer.
-- [var integerValue: Int](nscell/integervalue.md)
+- [var integerValue: Int](./integervalue.md)
   The cell’s value as an integer value.
-- [var stringValue: String](nscell/stringvalue.md)
+- [var stringValue: String](./stringvalue.md)
   The cell’s value as a string.
-- [var doubleValue: Double](nscell/doublevalue.md)
+- [var doubleValue: Double](./doublevalue.md)
   The cell’s value as a double-precision floating-point number.
-- [var floatValue: Float](nscell/floatvalue.md)
+- [var floatValue: Float](./floatvalue.md)
   The cell’s value as a single-precision floating-point number.
 
 

@@ -1,7 +1,8 @@
 # UserTokenAuth
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Your user token.
 
@@ -10,7 +11,7 @@ Your user token.
 
 ## Declaration
 
-```swift
+```
 attribute string? UserTokenAuth;
 ```
 

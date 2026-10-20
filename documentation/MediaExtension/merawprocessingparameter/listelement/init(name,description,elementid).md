@@ -1,7 +1,8 @@
 # init(name:description:elementID:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list element parameter object with the element id value.
 
@@ -14,9 +15,13 @@ Creates a list element parameter object with the element id value.
 init(name: String, description: String, elementID: Int)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name description:(NSString *) description elementID:(NSInteger) elementID;
+```
+
 #### Return Value
 
-An instance of [`MERAWProcessingParameter.ListElement`](merawprocessingparameter/listelement.md).
+An instance of [`MERAWProcessingParameter.ListElement`](../listelement.md).
 
 ## Parameters
 

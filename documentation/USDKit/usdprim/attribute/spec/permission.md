@@ -1,7 +1,8 @@
 # permission
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attribute’s permission level (public, restricted, private).
 

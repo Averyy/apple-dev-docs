@@ -1,7 +1,8 @@
 # removeDuplicates()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func removeDuplicates() -> Optional<Wrapped>.Publisher
 ```
+
+Available when `Wrapped` conforms to `Equatable`.
 
 
 ---

@@ -1,7 +1,8 @@
 # GKPlayerConnectionState
 
 **Framework**: GameKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of a connection to a match.
 
@@ -20,31 +21,36 @@ The possible states of a connection to a match.
 enum GKPlayerConnectionState
 ```
 
+```c
+enum GKPlayerConnectionState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [GKPlayerConnectionState.unknown](gkplayerconnectionstate/unknown.md)
+- [GKPlayerConnectionState.unknown](./gkplayerconnectionstate/unknown.md)
   An undetermined state in which the player can’t receive data.
-- [GKPlayerConnectionState.connected](gkplayerconnectionstate/connected.md)
+- [GKPlayerConnectionState.connected](./gkplayerconnectionstate/connected.md)
   A state in which a player connects to the match and can receive data.
-- [GKPlayerConnectionState.disconnected](gkplayerconnectionstate/disconnected.md)
+- [GKPlayerConnectionState.disconnected](./gkplayerconnectionstate/disconnected.md)
   A state in which a player disconnects from the match and can’t receive data.
 ### Initializers
-- [init?(rawValue: Int)](gkplayerconnectionstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gkplayerconnectionstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func match(GKMatch, player: GKPlayer, didChange: GKPlayerConnectionState)](gkmatchdelegate/match(_:player:didchange:)-8ohgr.md)
+### Receiving State Notifications About Other Players
+- [func match(GKMatch, player: GKPlayer, didChange: GKPlayerConnectionState)](./gkmatchdelegate/match%28_,player,didchange%29-8ohgr.md)
   Handles when players connect or disconnect from a match.
 
 

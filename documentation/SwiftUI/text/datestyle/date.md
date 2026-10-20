@@ -1,7 +1,8 @@
 # date
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style displaying a date.
 
@@ -30,13 +31,14 @@ Example output: June 3, 2019
 
 ## See Also
 
-- [static let offset: Text.DateStyle](text/datestyle/offset.md)
+### Getting text date styles
+- [static let offset: Text.DateStyle](./offset.md)
   A style displaying a date as offset from now.
-- [static let relative: Text.DateStyle](text/datestyle/relative.md)
+- [static let relative: Text.DateStyle](./relative.md)
   A style displaying a date as relative to now.
-- [static let time: Text.DateStyle](text/datestyle/time.md)
+- [static let time: Text.DateStyle](./time.md)
   A style displaying only the time component for a date.
-- [static let timer: Text.DateStyle](text/datestyle/timer.md)
+- [static let timer: Text.DateStyle](./timer.md)
   A style displaying a date as timer counting from now.
 
 

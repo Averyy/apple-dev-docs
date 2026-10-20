@@ -1,7 +1,8 @@
 # style
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display style for the switch.
 
@@ -17,19 +18,24 @@ The display style for the switch.
 var style: UISwitch.Style { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISwitchStyle style;
+```
+
 #### Discussion
 
-This property returns the resolved style based on the user interface idiom, and never returns [`UISwitch.Style.automatic`](uiswitch/style-swift.enum/automatic.md).
+This property returns the resolved style based on the user interface idiom, and never returns [`UISwitch.Style.automatic`](./style-swift.enum/automatic.md).
 
 ## See Also
 
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+### Setting the display style
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
   Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
-- [var preferredStyle: UISwitch.Style](uiswitch/preferredstyle.md)
+- [var preferredStyle: UISwitch.Style](./preferredstyle.md)
   The preferred display style for the switch.
-- [UISwitch.Style](uiswitch/style-swift.enum.md)
+- [UISwitch.Style](./style-swift.enum.md)
   Styles that determine the appearance of the switch.
-- [var title: String?](uiswitch/title.md)
+- [var title: String?](./title.md)
   The title displayed next to a checkbox-style switch.
 
 

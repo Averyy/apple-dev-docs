@@ -1,7 +1,8 @@
 # SubscriptionGroupLocalizationV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription group localization resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription group localization resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalizationV2.Attributes
 ```
 
@@ -22,7 +23,8 @@ object SubscriptionGroupLocalizationV2.Attributes
 
 ## See Also
 
-- [object SubscriptionGroupLocalizationV2.Relationships](subscriptiongrouplocalizationv2/relationships-data.dictionary.md)
+### Objects and types
+- [object SubscriptionGroupLocalizationV2.Relationships](./relationships-data.dictionary.md)
   The relationship you include in the request and the one on which you can operate.
 
 

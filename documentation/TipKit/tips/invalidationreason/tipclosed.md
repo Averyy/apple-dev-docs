@@ -1,7 +1,8 @@
 # Tips.InvalidationReason.tipClosed
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user explicitly closed the tip view while it was displaying.
 

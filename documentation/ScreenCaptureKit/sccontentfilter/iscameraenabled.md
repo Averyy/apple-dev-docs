@@ -1,7 +1,8 @@
 # isCameraEnabled
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var isCameraEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isCameraEnabled) BOOL cameraEnabled;
 ```
 
 #### Discussion

@@ -1,15 +1,16 @@
 # scope
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 var scope: AudioUnitScope
 ```
 
+```c
+AudioUnitScope scope;
+```
+
 ## See Also
 
-- [var element: AudioUnitElement](parameterevent/element.md)
-- [var parameterID: AudioUnitParameterID](parameterevent/parameterid.md)
-- [var value: AudioUnitParameterValue](parameterevent/value.md)
+### Properties
+- [var element: AudioUnitElement](./element.md)
+- [var parameterID: AudioUnitParameterID](./parameterid.md)
+- [var value: AudioUnitParameterValue](./value.md)
 
 
 ---

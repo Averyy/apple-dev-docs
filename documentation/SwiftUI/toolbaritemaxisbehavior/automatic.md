@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic axis behavior.
 
@@ -26,9 +27,10 @@ The system infers the supported axes based on the content type of the item. Imag
 
 ## See Also
 
-- [static let horizontalOnly: ToolbarItemAxisBehavior](toolbaritemaxisbehavior/horizontalonly.md)
+### Getting behavior options
+- [static let horizontalOnly: ToolbarItemAxisBehavior](./horizontalonly.md)
   The item only supports horizontal bars. If an item only supports horizontal bars and no horizontal bars are present, the item is not shown.
-- [static let verticalPreferred: ToolbarItemAxisBehavior](toolbaritemaxisbehavior/verticalpreferred.md)
+- [static let verticalPreferred: ToolbarItemAxisBehavior](./verticalpreferred.md)
   The item supports both horizontal and vertical bars, and prefers a vertical placement when both horizontal and vertical bars are present.
 
 

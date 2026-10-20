@@ -1,7 +1,8 @@
 # physicalSize
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in meters, of a reference image in the real world.
 
@@ -16,15 +17,16 @@ var physicalSize: CGSize { get }
 
 #### Discussion
 
-For example, set the [`physicalSize`](referenceimage/physicalsize.md) of a reference image of a yard stick to `0.9144` meters.
+For example, set the [`physicalSize`](./physicalsize.md) of a reference image of a yard stick to `0.9144` meters.
 
 ## See Also
 
-- [var name: String?](referenceimage/name.md)
+### Inspecting a reference image
+- [var name: String?](./name.md)
   The name of a reference image.
-- [var resourceGroupName: String?](referenceimage/resourcegroupname.md)
+- [var resourceGroupName: String?](./resourcegroupname.md)
   A string value the represents the name of the resource group the framework loads an image from.
-- [var description: String](referenceimage/description.md)
+- [var description: String](./description.md)
   A textual representation of this reference image.
 
 

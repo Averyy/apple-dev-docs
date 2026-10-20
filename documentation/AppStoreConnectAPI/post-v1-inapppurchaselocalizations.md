@@ -1,12 +1,15 @@
 # Create an In-App Purchase localization (v1)
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a localized display name and description for an In-App Purchase.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This endpoint is deprecated. Use [`Create an In-App Purchase localization`](./post-v2-inapppurchaselocalizations.md) instead.
 
 #### Discussion
 
@@ -16,15 +19,31 @@ Create a localized display name and description for an In-App Purchase.
 
 `POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseLocalizations`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `InAppPurchaseLocalizationCreateRequest`
+
+## Responses
+
+- `201` Created (`InAppPurchaseLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [List all localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
+### Endpoints
+- [List all localizations for an In-App Purchase](./get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
   Get a list of localized display names and descriptions for a specific In-App Purchase.
-- [Read In-App Purchase localization information (v1)](get-v1-inapppurchaselocalizations-_id_.md)
+- [Read In-App Purchase localization information (v1)](./get-v1-inapppurchaselocalizations-_id_.md)
   Get the display name and description for a specific locale for an In-App Purchase.
-- [Modify an In-App Purchase localization (v1)](patch-v1-inapppurchaselocalizations-_id_.md)
+- [Modify an In-App Purchase localization (v1)](./patch-v1-inapppurchaselocalizations-_id_.md)
   Update the display name and description for a specific locale of an In-App Purchase.
-- [Delete an In-App Purchase localization (v1)](delete-v1-inapppurchaselocalizations-_id_.md)
+- [Delete an In-App Purchase localization (v1)](./delete-v1-inapppurchaselocalizations-_id_.md)
   Delete the metadata for a single In-App Purchase localization.
 
 

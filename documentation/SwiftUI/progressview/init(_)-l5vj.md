@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress view for visualizing the given progress instance.
 
@@ -21,19 +22,44 @@ nonisolated
 init(_ progress: Progress) where Label == EmptyView, CurrentValueLabel == EmptyView
 ```
 
+Available when `Label` conforms to `View` and `CurrentValueLabel` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource) where Label == Text
+```
+
+```swift
+nonisolated
+init(_ configuration: ProgressViewStyleConfiguration) where Label == ProgressViewStyleConfiguration.Label, CurrentValueLabel == ProgressViewStyleConfiguration.CurrentValueLabel
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey) where Label == Text
+```
+
+```swift
+nonisolated
+init<S>(_ title: S) where Label == Text, S : StringProtocol
+```
+
 #### Discussion
 
 The progress view synthesizes a default label using the `localizedDescription` of the given progress instance.
 
 ## See Also
 
-- [init<V>(value: V?, total: V)](progressview/init(value:total:).md)
+### Creating a determinate progress view
+- [init<V>(value: V?, total: V)](./init%28value,total%29.md)
   Creates a progress view for showing determinate progress.
-- [init(_:value:total:)](progressview/init(_:value:total:).md)
+- [init(_:value:total:)](./init%28_,value,total%29.md)
   Creates a progress view for showing determinate progress that generates its label from a localized string resource.
-- [init<V>(value: V?, total: V, label: () -> Label)](progressview/init(value:total:label:).md)
+- [init<V>(value: V?, total: V, label: () -> Label)](./init%28value,total,label%29.md)
   Creates a progress view for showing determinate progress, with a custom label.
-- [init<V>(value: V?, total: V, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](progressview/init(value:total:label:currentvaluelabel:).md)
+- [init<V>(value: V?, total: V, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](./init%28value,total,label,currentvaluelabel%29.md)
   Creates a progress view for showing determinate progress, with a custom label.
 
 

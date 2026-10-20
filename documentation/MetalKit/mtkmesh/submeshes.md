@@ -1,7 +1,8 @@
 # submeshes
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of submeshes containing index buffers referencing the mesh vertices.
 
@@ -17,6 +18,10 @@ An array of submeshes containing index buffers referencing the mesh vertices.
 
 ```swift
 var submeshes: [MTKSubmesh] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MTKSubmesh *> * submeshes;
 ```
 
 #### Discussion

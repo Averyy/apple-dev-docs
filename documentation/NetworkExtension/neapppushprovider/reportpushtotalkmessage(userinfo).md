@@ -1,7 +1,8 @@
 # reportPushToTalkMessage(userInfo:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the manager about a push-to-talk message on the connection.
 
@@ -17,13 +18,18 @@ Informs the manager about a push-to-talk message on the connection.
 func reportPushToTalkMessage(userInfo: [AnyHashable : Any] = [:])
 ```
 
+```objc
+- (void) reportPushToTalkMessageWithUserInfo:(NSDictionary *) userInfo;
+```
+
 ## Parameters
 
-- `userInfo`: A dictionary of custom information associated with the push-to -talk message, such as the active remote participant. The containing app’s [`PTChannelManagerDelegate`](https://developer.apple.com/documentation/pushtotalk/ptchannelmanagerdelegate) receives this dictionary if the user has joined a push-to-talk channel.
+- `userInfo`: A dictionary of custom information associated with the push-to -talk message, such as the active remote participant. The containing app’s [`PTChannelManagerDelegate`](../../PushToTalk/ptchannelmanagerdelegate.md) receives this dictionary if the user has joined a push-to-talk channel.
 
 ## See Also
 
-- [func reportIncomingCall(userInfo: [AnyHashable : Any])](neapppushprovider/reportincomingcall(userinfo:).md)
+### Receiving local events
+- [func reportIncomingCall(userInfo: [AnyHashable : Any])](./reportincomingcall%28userinfo%29.md)
   Informs the manager about an incoming call.
 
 

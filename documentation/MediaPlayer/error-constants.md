@@ -1,35 +1,37 @@
 # Error constants
 
-**Framework**: Media Player
+**Framework**: Media Player  
+**Role**: API Collection
 
 Error code constants for framework operations.
 
 ## Topics
 
 ### Error code constants
-- [static var cancelled: MPError.Code](mperror/cancelled.md)
+- [static var cancelled: MPError.Code](./mperror/cancelled.md)
   The system cancels the requested operation before it completes.
-- [static var cloudServiceCapabilityMissing: MPError.Code](mperror/cloudservicecapabilitymissing.md)
+- [static var cloudServiceCapabilityMissing: MPError.Code](./mperror/cloudservicecapabilitymissing.md)
   The operation can’t complete because iCloud services aren’t in an enabled state.
-- [static var unknown: MPError.Code](mperror/unknown.md)
+- [static var unknown: MPError.Code](./mperror/unknown.md)
   The requested operation can’t complete due to an unknown error.
-- [static var networkConnectionFailed: MPError.Code](mperror/networkconnectionfailed.md)
+- [static var networkConnectionFailed: MPError.Code](./mperror/networkconnectionfailed.md)
   The operation fails because the device can’t connect to the network.
-- [static var notFound: MPError.Code](mperror/notfound.md)
+- [static var notFound: MPError.Code](./mperror/notfound.md)
   The operation fails because the system can’t find the requested identifier in the current storefront.
-- [static var notSupported: MPError.Code](mperror/notsupported.md)
+- [static var notSupported: MPError.Code](./mperror/notsupported.md)
   The requested operation fails because the system doesn’t support it.
-- [static var permissionDenied: MPError.Code](mperror/permissiondenied.md)
+- [static var permissionDenied: MPError.Code](./mperror/permissiondenied.md)
   The operation can’t complete because the user doesn’t have permission for the request.
-- [static var requestTimedOut: MPError.Code](mperror/requesttimedout.md)
+- [static var requestTimedOut: MPError.Code](./mperror/requesttimedout.md)
   The requested operation times out.
 
 ## See Also
 
-- [static var errorDomain: String](mperror/errordomain.md)
-- [let MPErrorDomain: String](mperrordomain.md)
+### Inspecting an error
+- [static var errorDomain: String](./mperror/errordomain.md)
+- [let MPErrorDomain: String](./mperrordomain.md)
   The Media Player framework error domain.
-- [MPError.Code](mperror/code.md)
+- [MPError.Code](./mperror/code.md)
   An enumeration that represents error codes for framework operations.
 
 

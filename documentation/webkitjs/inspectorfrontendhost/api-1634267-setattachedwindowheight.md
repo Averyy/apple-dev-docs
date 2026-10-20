@@ -1,14 +1,15 @@
 # setAttachedWindowHeight
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 void setAttachedWindowHeight(
     unsigned long height
 );

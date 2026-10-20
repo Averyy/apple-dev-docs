@@ -1,7 +1,8 @@
 # defaultMediaDataStorage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default storage container for media data added to a movie.
 
@@ -17,6 +18,10 @@ The default storage container for media data added to a movie.
 
 ```swift
 var defaultMediaDataStorage: AVMediaDataStorage? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) AVMediaDataStorage * defaultMediaDataStorage;
 ```
 
 

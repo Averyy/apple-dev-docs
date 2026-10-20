@@ -1,7 +1,8 @@
 # init(mapItem:displaysMap:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a map item detail view controller
 
@@ -18,6 +19,10 @@ Create a map item detail view controller
 init(mapItem: MKMapItem?, displaysMap: Bool)
 ```
 
+```objc
+- (instancetype) initWithMapItem:(MKMapItem *) mapItem displaysMap:(BOOL) displaysMap;
+```
+
 ## Parameters
 
 - `mapItem`: The map item to display, or `nil` to indicate the item is loading.
@@ -25,7 +30,8 @@ init(mapItem: MKMapItem?, displaysMap: Bool)
 
 ## See Also
 
-- [init(mapItem: MKMapItem?)](mkmapitemdetailviewcontroller/init(mapitem:).md)
+### Creating a map item detail view controller
+- [init(mapItem: MKMapItem?)](./init%28mapitem%29.md)
   Create a map item detail view controller.
 
 

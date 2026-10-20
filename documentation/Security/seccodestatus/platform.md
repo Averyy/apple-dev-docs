@@ -1,7 +1,8 @@
 # platform
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The code ships with the operating system and is signed by Apple.
 
@@ -13,6 +14,10 @@ The code ships with the operating system and is signed by Apple.
 
 ```swift
 static var platform: SecCodeStatus { get }
+```
+
+```c
+kSecCodeStatusPlatform
 ```
 
 

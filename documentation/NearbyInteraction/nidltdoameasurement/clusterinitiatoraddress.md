@@ -1,7 +1,8 @@
 # clusterInitiatorAddress
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the initiator anchor within the same cluster.
 
@@ -16,13 +17,17 @@ The address of the initiator anchor within the same cluster.
 var clusterInitiatorAddress: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSUInteger clusterInitiatorAddress;
+```
+
 #### Discussion
 
 In DL-TDOA deployments, anchors organize into clusters. An anchor cluster contains an initiator anchor and one or more responder anchors. The initiator coordinates a ranging sequence by sending an initial poll message.
 
-Use this property to group measurements from anchors that belong to the same cluster. Measurements with the same value for this property originate from anchors in the same cluster, even if their individual [`address`](nidltdoameasurement/address.md) differs.
+Use this property to group measurements from anchors that belong to the same cluster. Measurements with the same value for this property originate from anchors in the same cluster, even if their individual [`address`](./address.md) differs.
 
-##### Group Measurements By Cluster
+##### Group measurements by cluster
 
 To process measurements from related anchors together, group the measurements by cluster:
 
@@ -41,7 +46,8 @@ func session(_ session: NISession, didUpdateDLTDOA measurements: [NIDLTDOAMeasur
 
 ## See Also
 
-- [var address: Int](nidltdoameasurement/address.md)
+### Identifying the anchor
+- [var address: Int](./address.md)
   A value that uniquely identifies an anchor in a tracked area.
 
 

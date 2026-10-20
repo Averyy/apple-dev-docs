@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Core Media  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Equality is derived from
 
@@ -22,7 +23,7 @@ static func == (lhs: CMFormatDescription, rhs: CMFormatDescription) -> Bool
 
 #### Discussion
 
-```None
+```
 lhs.equalTo(rhs,
             extensionKeysToIgnore: [],
             sampleDescriptionExtensionAtomKeysToIgnore: [])
@@ -30,9 +31,10 @@ lhs.equalTo(rhs,
 
 ## See Also
 
-- [func equalTo(CMAudioFormatDescription, equalityMask: CMFormatDescription.EqualityMask) -> (Bool, equalityMask: CMFormatDescription.EqualityMask)](cmformatdescription/equalto(_:equalitymask:).md)
+### Comparing Format Descriptions
+- [func equalTo(CMAudioFormatDescription, equalityMask: CMFormatDescription.EqualityMask) -> (Bool, equalityMask: CMFormatDescription.EqualityMask)](./equalto%28_,equalitymask%29.md)
   Evaluates equality for the parts of two audio format descriptions.
-- [func equalTo(CMFormatDescription, extensionKeysToIgnore: [CMFormatDescription.Extensions.Key], sampleDescriptionExtensionAtomKeysToIgnore: [String]) -> Bool](cmformatdescription/equalto(_:extensionkeystoignore:sampledescriptionextensionatomkeystoignore:).md)
+- [func equalTo(CMFormatDescription, extensionKeysToIgnore: [CMFormatDescription.Extensions.Key], sampleDescriptionExtensionAtomKeysToIgnore: [String]) -> Bool](./equalto%28_,extensionkeystoignore,sampledescriptionextensionatomkeystoignore%29.md)
   Evaluates equality for the parts of two audio format descriptions, ignoring the extensions you specify.
 
 

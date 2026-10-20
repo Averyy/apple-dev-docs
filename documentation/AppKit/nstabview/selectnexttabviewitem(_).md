@@ -1,17 +1,22 @@
 # selectNextTabViewItem(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This action method selects the next tab view item in the sequence.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func selectNextTabViewItem(_ sender: Any?)
+```
+
+```objc
+- (void) selectNextTabViewItem:(id) sender;
 ```
 
 #### Discussion
@@ -24,21 +29,22 @@ If the currently visible item is the last item in the sequence, this method does
 
 ## See Also
 
-- [func selectFirstTabViewItem(Any?)](nstabview/selectfirsttabviewitem(_:).md)
+### Selecting a Tab
+- [func selectFirstTabViewItem(Any?)](./selectfirsttabviewitem%28_%29.md)
   This action method selects the first tab view item.
-- [func selectLastTabViewItem(Any?)](nstabview/selectlasttabviewitem(_:).md)
+- [func selectLastTabViewItem(Any?)](./selectlasttabviewitem%28_%29.md)
   This action method selects the last tab view item.
-- [func selectPreviousTabViewItem(Any?)](nstabview/selectprevioustabviewitem(_:).md)
+- [func selectPreviousTabViewItem(Any?)](./selectprevioustabviewitem%28_%29.md)
   This action method selects the previous tab view item in the sequence.
-- [func selectTabViewItem(NSTabViewItem?)](nstabview/selecttabviewitem(_:).md)
+- [func selectTabViewItem(NSTabViewItem?)](./selecttabviewitem%28_%29.md)
   Selects the specified tab view item.
-- [func selectTabViewItem(at: Int)](nstabview/selecttabviewitem(at:).md)
+- [func selectTabViewItem(at: Int)](./selecttabviewitem%28at%29.md)
   Selects the tab view item specified by `index`.
-- [func selectTabViewItem(withIdentifier: Any)](nstabview/selecttabviewitem(withidentifier:).md)
+- [func selectTabViewItem(withIdentifier: Any)](./selecttabviewitem%28withidentifier%29.md)
   Selects the tab view item specified by `identifier`.
-- [var selectedTabViewItem: NSTabViewItem?](nstabview/selectedtabviewitem.md)
+- [var selectedTabViewItem: NSTabViewItem?](./selectedtabviewitem.md)
   The tab view item for the currently selected tab.
-- [func takeSelectedTabViewItemFromSender(Any?)](nstabview/takeselectedtabviewitemfromsender(_:).md)
+- [func takeSelectedTabViewItemFromSender(Any?)](./takeselectedtabviewitemfromsender%28_%29.md)
   Sets the selected tab view item to the selected item obtained from the sender.
 
 

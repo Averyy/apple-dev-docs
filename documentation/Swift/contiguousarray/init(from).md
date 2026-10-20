@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new contiguous array by decoding from the given decoder.
 
@@ -19,6 +20,8 @@ Creates a new contiguous array by decoding from the given decoder.
 ```swift
 init(from decoder: any Decoder) throws
 ```
+
+Available when `Element` conforms to `Decodable`.
 
 #### Discussion
 

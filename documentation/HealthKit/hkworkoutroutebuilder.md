@@ -1,7 +1,8 @@
 # HKWorkoutRouteBuilder
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A builder object that incrementally constructs a workout route.
 
@@ -19,56 +20,61 @@ A builder object that incrementally constructs a workout route.
 class HKWorkoutRouteBuilder
 ```
 
+```objc
+@interface HKWorkoutRouteBuilder : HKSeriesBuilder
+```
+
 #### Overview
 
-To create a workout route, use [`seriesBuilder(for:)`](hkworkoutbuilder/seriesbuilder(for:).md) to instantiate a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md), and provide it with location data throughout the workout. After the workout ends, call the builder’s [`finishRoute(with:metadata:completion:)`](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md) method to construct the route. Instantiating a [`HKWorkoutRouteBuilder`](hkworkoutroutebuilder.md) directly is discouraged. For detailed instructions, see [`Creating a workout route`](creating-a-workout-route.md).
+To create a workout route, use [`seriesBuilder(for:)`](./hkworkoutbuilder/seriesbuilder%28for%29.md) to instantiate a [`HKWorkoutRouteBuilder`](./hkworkoutroutebuilder.md), and provide it with location data throughout the workout. After the workout ends, call the builder’s [`finishRoute(with:metadata:completion:)`](./hkworkoutroutebuilder/finishroute%28with,metadata,completion%29.md) method to construct the route. Instantiating a [`HKWorkoutRouteBuilder`](./hkworkoutroutebuilder.md) directly is discouraged. For detailed instructions, see [Creating a workout route](./creating-a-workout-route.md).
 
 ## Topics
 
 ### Creating the builder
-- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](hkworkoutbuilder/seriesbuilder(for:).md)
+- [func seriesBuilder(for: HKSeriesType) -> HKSeriesBuilder?](./hkworkoutbuilder/seriesbuilder%28for%29.md)
   Returns the series builder for the specified type, creating a new builder, if necessary.
-- [init(healthStore: HKHealthStore, device: HKDevice?)](hkworkoutroutebuilder/init(healthstore:device:).md)
+- [init(healthStore: HKHealthStore, device: HKDevice?)](./hkworkoutroutebuilder/init%28healthstore,device%29.md)
   Creates and returns a new workout route builder.
 ### Building the route
-- [func finishRoute(with: HKWorkout, metadata: [String : Any]?, completion: (HKWorkoutRoute?, (any Error)?) -> Void)](hkworkoutroutebuilder/finishroute(with:metadata:completion:).md)
+- [func finishRoute(with: HKWorkout, metadata: [String : Any]?, completion: (HKWorkoutRoute?, (any Error)?) -> Void)](./hkworkoutroutebuilder/finishroute%28with,metadata,completion%29.md)
   Creates, saves, and associates the route with the provided workout.
-- [func insertRouteData([CLLocation], completion: (Bool, (any Error)?) -> Void)](hkworkoutroutebuilder/insertroutedata(_:completion:).md)
+- [func insertRouteData([CLLocation], completion: (Bool, (any Error)?) -> Void)](./hkworkoutroutebuilder/insertroutedata%28_,completion%29.md)
   Adds route data to the builder.
-- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](hkworkoutroutebuilder/addmetadata(_:completion:).md)
+- [func addMetadata([String : Any], completion: (Bool, (any Error)?) -> Void)](./hkworkoutroutebuilder/addmetadata%28_,completion%29.md)
   Adds metadata to the builder.
 
 ## Relationships
 
 ### Inherits From
-- [HKSeriesBuilder](hkseriesbuilder.md)
+- [HKSeriesBuilder](./hkseriesbuilder.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating a workout route](creating-a-workout-route.md)
+### Route data
+- [Creating a workout route](./creating-a-workout-route.md)
   Record the user’s route during a workout.
-- [Reading route data](reading-route-data.md)
+- [Reading route data](./reading-route-data.md)
   Access the user’s route for a workout.
-- [class HKWorkoutRoute](hkworkoutroute.md)
+- [class HKWorkoutRoute](./hkworkoutroute.md)
   A sample that contains a workout’s route data.
-- [struct HKWorkoutRouteQueryDescriptor](hkworkoutroutequerydescriptor.md)
+- [struct HKWorkoutRouteQueryDescriptor](./hkworkoutroutequerydescriptor.md)
   A query interface that reads the location data stored in a workout route using Swift concurrency.
-- [class HKWorkoutRouteQuery](hkworkoutroutequery.md)
+- [class HKWorkoutRouteQuery](./hkworkoutroutequery.md)
   A query to access the location data stored in a workout route.
-- [let HKWorkoutRouteTypeIdentifier: String](hkworkoutroutetypeidentifier.md)
+- [let HKWorkoutRouteTypeIdentifier: String](./hkworkoutroutetypeidentifier.md)
   A series sample containing location data that defines the route the user took during a workout.
-- [class HKSeriesBuilder](hkseriesbuilder.md)
+- [class HKSeriesBuilder](./hkseriesbuilder.md)
   An abstract base class for building series samples.
-- [class HKSeriesSample](hkseriessample.md)
+- [class HKSeriesSample](./hkseriessample.md)
   An abstract base class that defines samples that contain a series of items.
 
 

@@ -1,7 +1,8 @@
 # addRenderDelegate(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,10 +15,11 @@ func addRenderDelegate(_ delegate: some TabletopGame.RenderDelegate)
 
 ## See Also
 
-- [func removeRenderDelegate(some TabletopGame.RenderDelegate)](tabletopgame/removerenderdelegate(_:).md)
-- [TabletopGame.RenderDelegate](tabletopgame/renderdelegate.md)
+### Rendering the table
+- [func removeRenderDelegate(some TabletopGame.RenderDelegate)](./removerenderdelegate%28_%29.md)
+- [TabletopGame.RenderDelegate](./renderdelegate.md)
   A protocol for the object that renders your entire game.
-- [protocol EntityRenderDelegate](entityrenderdelegate.md)
+- [protocol EntityRenderDelegate](../entityrenderdelegate.md)
   A protocol for the object that renders your entire game using RealityKit.
 
 

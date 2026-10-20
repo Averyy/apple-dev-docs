@@ -1,7 +1,8 @@
 # originFromAnchorTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location and orientation of the image in world space.
 
@@ -16,15 +17,16 @@ var originFromAnchorTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var referenceImage: ReferenceImage](imageanchor/referenceimage.md)
+### Getting image information
+- [var referenceImage: ReferenceImage](./referenceimage.md)
   The reference image that this image anchor tracks.
-- [var estimatedScaleFactor: Float](imageanchor/estimatedscalefactor.md)
+- [var estimatedScaleFactor: Float](./estimatedscalefactor.md)
   The estimated scale factor between the tracked image’s physical size and the reference image’s size.
-- [var isTracked: Bool](imageanchor/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this image.
-- [var description: String](imageanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
-- [var id: UUID](imageanchor/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
 
 

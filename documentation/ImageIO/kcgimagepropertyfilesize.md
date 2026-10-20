@@ -1,7 +1,8 @@
 # kCGImagePropertyFileSize
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The size of the image file in bytes, if known.
 
@@ -20,9 +21,13 @@ The size of the image file in bytes, if known.
 let kCGImagePropertyFileSize: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyFileSize;
+```
+
 #### Discussion
 
-The value of this key is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # kBluetoothHCICommandReadLinkSupervisionTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandReadLinkSupervisionTimeout = 0x0036
 ```
 

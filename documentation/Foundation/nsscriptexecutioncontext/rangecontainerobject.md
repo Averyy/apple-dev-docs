@@ -1,7 +1,8 @@
 # rangeContainerObject
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the top-level container object for a range-specifier evaluation to a give object.
 
@@ -15,6 +16,10 @@ Sets the top-level container object for a range-specifier evaluation to a give o
 var rangeContainerObject: Any? { get set }
 ```
 
+```objc
+@property (retain, nullable) id rangeContainerObject;
+```
+
 #### Discussion
 
 Instances of `NSRangeSpecifier` contain object specifiers representing the first or last element in a range of elements, and these specifiers are evaluated in the context of `container`.
@@ -25,9 +30,10 @@ Instances of `NSRangeSpecifier` contain object specifiers representing the first
 
 ## See Also
 
-- [var topLevelObject: Any?](nsscriptexecutioncontext/toplevelobject.md)
+### Getting and setting the container object
+- [var topLevelObject: Any?](./toplevelobject.md)
   Sets the top-level object for an object-specifier evaluation.
-- [var objectBeingTested: Any?](nsscriptexecutioncontext/objectbeingtested.md)
+- [var objectBeingTested: Any?](./objectbeingtested.md)
   Sets the top-level container object currently being tested in a “whose” qualifier to a given object.
 
 

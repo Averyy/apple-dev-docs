@@ -1,7 +1,8 @@
 # init(callUUID:callUUIDToGroupWith:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

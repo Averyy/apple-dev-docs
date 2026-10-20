@@ -1,7 +1,8 @@
 # init(enabledStateReportingDomains:)
 
 **Framework**: MetricKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `MetricManager` instance with state reporting domains enabled for metrics aggregation.
 
@@ -19,7 +20,7 @@ init(enabledStateReportingDomains: Set<StateReportingDomain>)
 
 #### Discussion
 
-Pass a set of [`StateReportingDomain`](statereportingdomain.md) values to enable state-contextualized metrics. When state reporting is enabled, the [`stateEntries`](metricreport/stateentries.md) property of each [`MetricReport`](metricreport.md) is populated with metric values segmented by each recorded app state.
+Pass a set of [`StateReportingDomain`](../statereportingdomain.md) values to enable state-contextualized metrics. When state reporting is enabled, the [`stateEntries`](../metricreport/stateentries.md) property of each [`MetricReport`](../metricreport.md) is populated with metric values segmented by each recorded app state.
 
 ```swift
 let manager = MetricManager(
@@ -27,13 +28,14 @@ let manager = MetricManager(
 )
 ```
 
-Use [`init()`](metricmanager/init().md) if you don’t need per-state metrics.
+Use [`init()`](./init%28%29.md) if you don’t need per-state metrics.
 
 ## See Also
 
-- [convenience init()](metricmanager/init.md)
+### Initialization
+- [convenience init()](./init%28%29.md)
   Creates a new `MetricManager` instance without state reporting domains.
-- [var enabledStateReportingDomains: Set<StateReportingDomain>](metricmanager/enabledstatereportingdomains.md)
+- [var enabledStateReportingDomains: Set<StateReportingDomain>](./enabledstatereportingdomains.md)
   StateReporting domains enabled for metrics aggregation
 
 

@@ -1,7 +1,8 @@
 # StatusAppManagedListManagedConfigurationStateObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status of any app managed configuration. This key is only present when the managed app has a managed configuration.
 
@@ -14,19 +15,24 @@ The status of any app managed configuration. This key is only present when the m
 
 ## Declaration
 
-```swift
+```
 object StatusAppManagedListManagedConfigurationStateObject
 ```
 
 ## Properties
 
-- `state` (string) *(required)*: The managed configuration status. - `unknown`: The device hasn’t read the managed configuration.
-- `invalid`: The device read the managed configuration and found it to be invalid.
-- `valid`: The device read the managed configuration and found it to be valid.
+- `state` (string) *(required)*: The managed configuration status.
+
+  - `unknown`: The device hasn’t read the managed configuration.
+  - `invalid`: The device read the managed configuration and found it to be invalid.
+  - `valid`: The device read the managed configuration and found it to be valid.
+
+  **Allowed Values**: `unknown`, `invalid`, `valid`
 
 ## See Also
 
-- [object StatusAppManagedListManagedConfiguration_ExtensionConfigStateObject](statusappmanagedlistmanagedconfiguration_extensionconfigstateobject.md)
+### Objects
+- [object StatusAppManagedListManagedConfiguration_ExtensionConfigStateObject](./statusappmanagedlistmanagedconfiguration_extensionconfigstateobject.md)
   The status of any app extension managed configuration. This key’s value is a dictionary whose keys are the bundle identifiers of app extensions that have a managed configuration. The values of each key represent the status of the corresponding app extension’s managed configuration.
 
 

@@ -1,7 +1,8 @@
 # init(urlString:username:userIdentifier:service:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new social profile object with the specified URL.
 
@@ -17,6 +18,10 @@ Initializes a new social profile object with the specified URL.
 
 ```swift
 init(urlString: String?, username: String?, userIdentifier: String?, service: String?)
+```
+
+```objc
+- (instancetype) initWithUrlString:(NSString *) urlString username:(NSString *) username userIdentifier:(NSString *) userIdentifier service:(NSString *) service;
 ```
 
 #### Return Value

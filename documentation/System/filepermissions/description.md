@@ -1,7 +1,8 @@
 # description
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the file permissions.
 
@@ -22,7 +23,8 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](filepermissions/debugdescription.md)
+### Debugging
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the file permissions, suitable for debugging.
 
 

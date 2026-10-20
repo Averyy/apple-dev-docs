@@ -1,7 +1,8 @@
 # add(_:toContainerWithIdentifier:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified contact to the contact store.
 
@@ -18,6 +19,10 @@ Adds the specified contact to the contact store.
 func add(_ contact: CNMutableContact, toContainerWithIdentifier identifier: String?)
 ```
 
+```objc
+- (void) addContact:(CNMutableContact *) contact toContainerWithIdentifier:(NSString *) identifier;
+```
+
 #### Discussion
 
 This method overrides any previously made deletion requests for the contact. The new contact may be modified by executing the save request.
@@ -29,9 +34,10 @@ This method overrides any previously made deletion requests for the contact. The
 
 ## See Also
 
-- [func update(CNMutableContact)](cnsaverequest/update(_:)-3gaig.md)
+### Saving contact changes
+- [func update(CNMutableContact)](./update%28_%29-3gaig.md)
   Updates an existing contact in the contact store.
-- [func delete(CNMutableContact)](cnsaverequest/delete(_:)-8m1tc.md)
+- [func delete(CNMutableContact)](./delete%28_%29-8m1tc.md)
   Deletes a contact from the contact store.
 
 

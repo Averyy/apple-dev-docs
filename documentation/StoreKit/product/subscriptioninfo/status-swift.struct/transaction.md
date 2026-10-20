@@ -1,7 +1,8 @@
 # transaction
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest transaction for the subscription group.
 
@@ -22,13 +23,14 @@ let transaction: VerificationResult<Transaction>
 
 ## See Also
 
-- [let state: Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/status-swift.struct/state.md)
+### Getting subscription status information
+- [let state: Product.SubscriptionInfo.RenewalState](./state.md)
   The renewal state of the auto-renewable subscription.
-- [let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>](product/subscriptioninfo/status-swift.struct/renewalinfo.md)
+- [let renewalInfo: VerificationResult<Product.SubscriptionInfo.RenewalInfo>](./renewalinfo.md)
   The signed renewal information for the auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalInfo](product/subscriptioninfo/renewalinfo.md)
+- [Product.SubscriptionInfo.RenewalInfo](../renewalinfo.md)
   The renewal information for an auto-renewable subscription.
-- [Product.SubscriptionInfo.RenewalState](product/subscriptioninfo/renewalstate.md)
+- [Product.SubscriptionInfo.RenewalState](../renewalstate.md)
   The renewal states of auto-renewable subscriptions.
 
 

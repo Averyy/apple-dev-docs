@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the range contains no elements.
 
@@ -32,9 +33,10 @@ print(empty.isEmpty)
 
 ## See Also
 
-- [let lowerBound: Bound](range/lowerbound.md)
+### Inspecting a Range
+- [let lowerBound: Bound](./lowerbound.md)
   The range’s lower bound.
-- [let upperBound: Bound](range/upperbound.md)
+- [let upperBound: Bound](./upperbound.md)
   The range’s upper bound.
 
 

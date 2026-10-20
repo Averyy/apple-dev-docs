@@ -1,7 +1,8 @@
 # MDQueryIsGatheringComplete(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns true if the first phase of a query, the initial result gathering, has finished.
 
@@ -14,7 +15,11 @@ Returns true if the first phase of a query, the initial result gathering, has fi
 func MDQueryIsGatheringComplete(_ query: MDQuery!) -> Bool
 ```
 
-#### Return_value
+```c
+Boolean MDQueryIsGatheringComplete(MDQueryRef query);
+```
+
+#### Return Value
 
 Returns `TRUE` if the first phase of a query has completed, otherwise `FALSE`.
 
@@ -24,13 +29,14 @@ Returns `TRUE` if the first phase of a query has completed, otherwise `FALSE`.
 
 ## See Also
 
-- [func MDQueryExecute(MDQuery!, CFOptionFlags) -> Bool](1413099-mdqueryexecute.md)
+### Starting, Stopping and Pausing Queries
+- [func MDQueryExecute(MDQuery!, CFOptionFlags) -> Bool](./api-1413099-mdqueryexecute.md)
   Run the query, and populate the query with the results. 
-- [func MDQueryStop(MDQuery!)](1413077-mdquerystop.md)
+- [func MDQueryStop(MDQuery!)](./api-1413077-mdquerystop.md)
   Stops the query from generating more results. 
-- [func MDQueryDisableUpdates(MDQuery!)](1413041-mdquerydisableupdates.md)
+- [func MDQueryDisableUpdates(MDQuery!)](./api-1413041-mdquerydisableupdates.md)
   Disables updates to the query result list.
-- [func MDQueryEnableUpdates(MDQuery!)](1413066-mdqueryenableupdates.md)
+- [func MDQueryEnableUpdates(MDQuery!)](./api-1413066-mdqueryenableupdates.md)
   Enables updates to the query result list.
 
 

@@ -1,7 +1,8 @@
 # ASError.Code.invalidRequest
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session received an invalid request.
 
@@ -15,11 +16,16 @@ The session received an invalid request.
 case invalidRequest
 ```
 
+```c
+ASErrorCodeInvalidRequest
+```
+
 ## See Also
 
-- [ASError.Code.extensionNotFound](aserror/code/extensionnotfound.md)
+### Configuration errors
+- [ASError.Code.extensionNotFound](./extensionnotfound.md)
   The framework couldn’t find the app extension.
-- [ASError.Code.userRestricted](aserror/code/userrestricted.md)
+- [ASError.Code.userRestricted](./userrestricted.md)
   The person using the app restricted access.
 
 

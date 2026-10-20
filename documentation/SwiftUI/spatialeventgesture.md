@@ -1,7 +1,8 @@
 # SpatialEventGesture
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gesture that provides information about ongoing spatial events like clicks and touches.
 
@@ -22,7 +23,7 @@ struct SpatialEventGesture
 
 #### Overview
 
-Use a gesture of this type to track multiple simultaneous spatial events and gain access to detailed information about each. For example, you can place a particle emitter at every location in a [`Canvas`](canvas.md) that has an ongoing spatial event:
+Use a gesture of this type to track multiple simultaneous spatial events and gain access to detailed information about each. For example, you can place a particle emitter at every location in a [`Canvas`](./canvas.md) that has an ongoing spatial event:
 
 ```swift
 struct ParticlePlayground: View {
@@ -61,33 +62,34 @@ struct ParticlePlayground: View {
 }
 ```
 
-The gesture provides a [`SpatialEventCollection`](spatialeventcollection.md) structure when it detects changes. The collection contains [`SpatialEventCollection.Event`](spatialeventcollection/event.md) values that represent ongoing spatial events. Each event contains a stable, unique identifier so that you can track how the event changes over time. The event also indicates its current location, a timestamp, the pose of the input device that creates it, and other useful information.
+The gesture provides a [`SpatialEventCollection`](./spatialeventcollection.md) structure when it detects changes. The collection contains [`SpatialEventCollection.Event`](./spatialeventcollection/event.md) values that represent ongoing spatial events. Each event contains a stable, unique identifier so that you can track how the event changes over time. The event also indicates its current location, a timestamp, the pose of the input device that creates it, and other useful information.
 
-The phase of events in the collection can change to [`SpatialEventCollection.Event.Phase.ended`](spatialeventcollection/event/phase-swift.enum/ended.md) or [`SpatialEventCollection.Event.Phase.cancelled`](spatialeventcollection/event/phase-swift.enum/cancelled.md) while the gesture itself remains active. Individually track state for each event inside [`onChanged(_:)`](gesture/onchanged(_:).md) or [`updating(_:body:)`](gesture/updating(_:body:).md) and clean up all state in [`onEnded(_:)`](gesture/onended(_:).md).
+The phase of events in the collection can change to [`SpatialEventCollection.Event.Phase.ended`](./spatialeventcollection/event/phase-swift.enum/ended.md) or [`SpatialEventCollection.Event.Phase.cancelled`](./spatialeventcollection/event/phase-swift.enum/cancelled.md) while the gesture itself remains active. Individually track state for each event inside [`onChanged(_:)`](./gesture/onchanged%28_%29.md) or [`updating(_:body:)`](./gesture/updating%28_,body%29.md) and clean up all state in [`onEnded(_:)`](./gesture/onended%28_%29.md).
 
-> 💡 **Tip**: Only use a spatial event gesture if you need to access low-level event information, like when you create a complex multi-touch experience. For most use cases, it’s better to rely on gestures that recognize targeted interactions, like a [`SpatialTapGesture`](spatialtapgesture.md), [`MagnifyGesture`](magnifygesture.md), or [`DragGesture`](draggesture.md).
+> 💡 **Tip**: Only use a spatial event gesture if you need to access low-level event information, like when you create a complex multi-touch experience. For most use cases, it’s better to rely on gestures that recognize targeted interactions, like a [`SpatialTapGesture`](./spatialtapgesture.md), [`MagnifyGesture`](./magnifygesture.md), or [`DragGesture`](./draggesture.md).
 
 ## Topics
 
 ### Creating a spatial event gesture
-- [init(coordinateSpace: any CoordinateSpaceProtocol)](spatialeventgesture/init(coordinatespace:).md)
+- [init(coordinateSpace: any CoordinateSpaceProtocol)](./spatialeventgesture/init%28coordinatespace%29.md)
   Creates the gesture with a desired coordinate space.
-- [init(coordinateSpace3D: some CoordinateSpace3D)](spatialeventgesture/init(coordinatespace3d:).md)
+- [init(coordinateSpace3D: some CoordinateSpace3D)](./spatialeventgesture/init%28coordinatespace3d%29.md)
   Creates the gesture with a desired coordinate space 3D.
 ### Getting gesture properties
-- [let coordinateSpace: CoordinateSpace](spatialeventgesture/coordinatespace.md)
+- [let coordinateSpace: CoordinateSpace](./spatialeventgesture/coordinatespace.md)
   The coordinate space of the gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Gesture](gesture.md)
+- [Gesture](./gesture.md)
 
 ## See Also
 
-- [struct SpatialEventCollection](spatialeventcollection.md)
+### Recognizing spatial events
+- [struct SpatialEventCollection](./spatialeventcollection.md)
   A collection of spatial input events that target a specific view.
-- [enum Chirality](chirality.md)
+- [enum Chirality](./chirality.md)
   The chirality, or handedness, of a pose.
 
 

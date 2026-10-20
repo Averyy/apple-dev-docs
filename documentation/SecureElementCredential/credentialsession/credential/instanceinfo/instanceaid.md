@@ -1,7 +1,8 @@
 # instanceAID
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the applet instance.
 
@@ -17,13 +18,14 @@ let instanceAID: Data
 
 #### Discussion
 
-Use this identifier in [`performWiredTransaction(using:over:instanceAID:)`](credentialsession/performwiredtransaction(using:over:instanceaid:).md) for UIKit or [`performTransactionInWiredMode(using:instanceAID:)`](credentialtransaction/performtransactioninwiredmode(using:instanceaid:).md) for SwiftUI, and when selecting this instance to perform data transceiving.
+Use this identifier in [`performWiredTransaction(using:over:instanceAID:)`](../../performwiredtransaction%28using,over,instanceaid%29.md) for UIKit or [`performTransactionInWiredMode(using:instanceAID:)`](../../../credentialtransaction/performtransactioninwiredmode%28using,instanceaid%29.md) for SwiftUI, and when selecting this instance to perform data transceiving.
 
 ## See Also
 
-- [let packageAID: Data](credentialsession/credential/instanceinfo/packageaid.md)
+### Inspecting instance identifiers
+- [let packageAID: Data](./packageaid.md)
   The unique identifier of the package you use to install the instance.
-- [let moduleAID: Data](credentialsession/credential/instanceinfo/moduleaid.md)
+- [let moduleAID: Data](./moduleaid.md)
   The module identifier of the package with which this instance is associated.
 
 

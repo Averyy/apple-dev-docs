@@ -2,6 +2,7 @@
 
 **Framework**: Playground Bluetooth  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the connection view needs a title to display for its current state.
@@ -16,20 +17,21 @@ Tells the delegate that the connection view needs a title to display for its cur
 func connectionView(_ connectionView: PlaygroundBluetoothConnectionView, titleFor state: PlaygroundBluetoothConnectionView.State) -> String
 ```
 
-#### Return_value
+#### Return Value
 
 A localized string corresponding to the current state of the view.
 
 ## Parameters
 
 - `connectionView`: The connection view that’s entering this state.
-- `state`: The state of the view. The state is one of the cases of the [`PlaygroundBluetoothConnectionView.State`](playgroundbluetoothconnectionview/state.md) enumeration.
+- `state`: The state of the view. The state is one of the cases of the [`PlaygroundBluetoothConnectionView.State`](../playgroundbluetoothconnectionview/state.md) enumeration.
 
 ## See Also
 
-- [func connectionView(PlaygroundBluetoothConnectionView, shouldConnectTo: CBPeripheral, withAdvertisementData: [String : Any]?) -> Bool](playgroundbluetoothconnectionviewdelegate/3029523-connectionview.md)
+### Displaying New Peripherals
+- [func connectionView(PlaygroundBluetoothConnectionView, shouldConnectTo: CBPeripheral, withAdvertisementData: [String : Any]?) -> Bool](./api-3029523-connectionview.md)
   Tells the delegate that a new peripheral was discovered and can be displayed in the connection view.
-- [func connectionView(PlaygroundBluetoothConnectionView, shouldDisplayDiscovered: CBPeripheral, withAdvertisementData: [String : Any]?, rssi: Double) -> Bool](playgroundbluetoothconnectionviewdelegate/3029525-connectionview.md)
+- [func connectionView(PlaygroundBluetoothConnectionView, shouldDisplayDiscovered: CBPeripheral, withAdvertisementData: [String : Any]?, rssi: Double) -> Bool](./api-3029525-connectionview.md)
   Tells the delegate that a new peripheral was discovered and can be displayed in the connection view.
 
 

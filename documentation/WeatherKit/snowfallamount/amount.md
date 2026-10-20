@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated amount of snowfall as depth of snow crystals for the period.
 

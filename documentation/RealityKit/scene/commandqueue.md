@@ -1,7 +1,8 @@
 # commandQueue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If this scene uses a MTLCommandQueue for rendering, returns it.
 

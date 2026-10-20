@@ -1,7 +1,8 @@
 # PKPaymentInformationEventExtension
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for an extension to collect payment information and sign transaction data in a QR code purchase.
 
@@ -9,7 +10,7 @@ An abstract superclass for an extension to collect payment information and sign 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.0+
 
@@ -19,6 +20,10 @@ An abstract superclass for an extension to collect payment information and sign 
 class PKPaymentInformationEventExtension
 ```
 
+```objc
+@interface PKPaymentInformationEventExtension : NSObject
+```
+
 #### Overview
 
 > ❗ **Important**:  Before you can add a QR purchase extension you need an entitlement from Apple. For more information on requesting an entitlement, contact apple-pay-inquiries@apple.com.
@@ -26,18 +31,19 @@ class PKPaymentInformationEventExtension
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol PKPaymentInformationRequestHandling](pkpaymentinformationrequesthandling.md)
+### QR transaction information
+- [protocol PKPaymentInformationRequestHandling](./pkpaymentinformationrequesthandling.md)
 
 
 ---

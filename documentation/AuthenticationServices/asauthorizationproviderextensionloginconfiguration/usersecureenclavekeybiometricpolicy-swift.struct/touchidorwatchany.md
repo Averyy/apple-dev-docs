@@ -1,7 +1,8 @@
 # touchIDOrWatchAny
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.15+
@@ -12,11 +13,16 @@
 static var touchIDOrWatchAny: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy { get }
 ```
 
+```c
+ASAuthorizationProviderExtensionUserSecureEnclaveKeyBiometricPolicyTouchIDOrWatchAny
+```
+
 ## See Also
 
-- [static var passwordFallback: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct/passwordfallback.md)
-- [static var reuseDuringUnlock: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct/reuseduringunlock.md)
-- [static var touchIDOrWatchCurrentSet: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](asauthorizationproviderextensionloginconfiguration/usersecureenclavekeybiometricpolicy-swift.struct/touchidorwatchcurrentset.md)
+### Type Properties
+- [static var passwordFallback: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./passwordfallback.md)
+- [static var reuseDuringUnlock: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./reuseduringunlock.md)
+- [static var touchIDOrWatchCurrentSet: ASAuthorizationProviderExtensionLoginConfiguration.UserSecureEnclaveKeyBiometricPolicy](./touchidorwatchcurrentset.md)
 
 
 ---

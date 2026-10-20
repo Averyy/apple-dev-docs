@@ -1,7 +1,8 @@
 # mainMixerNode
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio engine’s optional singleton main mixer node.
 
@@ -20,19 +21,24 @@ The audio engine’s optional singleton main mixer node.
 var mainMixerNode: AVAudioMixerNode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioMixerNode * mainMixerNode;
+```
+
 #### Discussion
 
-The audio engine constructs a singleton main mixer and connects it to the [`outputNode`](avaudioengine/outputnode.md) when first accessing this property. You can then connect additional audio nodes to the mixer.
+The audio engine constructs a singleton main mixer and connects it to the [`outputNode`](./outputnode.md) when first accessing this property. You can then connect additional audio nodes to the mixer.
 
-If the client never sets the connection format between the `mainMixerNode` and the `outputNode`, the engine always updates the format to track the format of the `outputNode` on startup or restart, even after an [`AVAudioEngineConfigurationChangeNotification`](avaudioengineconfigurationchangenotification.md). Otherwise, it’s the client’s responsibility to update the connection format after an [`AVAudioEngineConfigurationChangeNotification`](avaudioengineconfigurationchangenotification.md).
+If the client never sets the connection format between the `mainMixerNode` and the `outputNode`, the engine always updates the format to track the format of the `outputNode` on startup or restart, even after an [`AVAudioEngineConfigurationChangeNotification`](../avaudioengineconfigurationchangenotification.md). Otherwise, it’s the client’s responsibility to update the connection format after an [`AVAudioEngineConfigurationChangeNotification`](../avaudioengineconfigurationchangenotification.md).
 
 By default, the mixer’s output format (sample rate and channel count) tracks the format of the output node.
 
 ## See Also
 
-- [var inputNode: AVAudioInputNode](avaudioengine/inputnode.md)
+### Accessing the built-in nodes
+- [var inputNode: AVAudioInputNode](./inputnode.md)
   The audio engine’s singleton input audio node.
-- [var outputNode: AVAudioOutputNode](avaudioengine/outputnode.md)
+- [var outputNode: AVAudioOutputNode](./outputnode.md)
   The audio engine’s singleton output audio node.
 
 

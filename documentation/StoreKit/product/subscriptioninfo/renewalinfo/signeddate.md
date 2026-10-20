@@ -1,7 +1,8 @@
 # signedDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that the App Store signed the JWS renewal information.
 
@@ -22,13 +23,14 @@ let signedDate: Date
 
 #### Discussion
 
-Use the [`signedDate`](product/subscriptioninfo/renewalinfo/signeddate.md) to verify whether the certificate used to sign the transaction was valid when the App Store signed the transaction.
+Use the [`signedDate`](./signeddate.md) to verify whether the certificate used to sign the transaction was valid when the App Store signed the transaction.
 
 ## See Also
 
-- [let deviceVerification: Data](product/subscriptioninfo/renewalinfo/deviceverification.md)
+### Verifying subscription renewal information
+- [let deviceVerification: Data](./deviceverification.md)
   The device verification value to use to verify whether the renewal information belongs to the device.
-- [let deviceVerificationNonce: UUID](product/subscriptioninfo/renewalinfo/deviceverificationnonce.md)
+- [let deviceVerificationNonce: UUID](./deviceverificationnonce.md)
   The UUID to use to compute the device verification value.
 
 

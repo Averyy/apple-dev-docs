@@ -1,7 +1,8 @@
 # readOnlyPixelBuffer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
 
@@ -23,9 +24,10 @@ The pixel format is fixed to `kCVPixelFormatType_32BGRA` defined in <CoreVideo/C
 
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer](avrenderedcaptionimage/pixelbuffer.md)
+### Inspecting the image
+- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
   An object that contains pixel data for the rendered caption.
-- [var position: CGPoint](avrenderedcaptionimage/position.md)
+- [var position: CGPoint](./position.md)
   A point that defines the position, in pixels, of the rendered caption image relative to the video frame.
 
 

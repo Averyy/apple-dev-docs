@@ -1,16 +1,17 @@
 # label
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifes this tensor.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,23 +19,28 @@ A string that identifes this tensor.
 var label: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSString * label;
+```
+
 ## See Also
 
-- [var tensorID: Int](mlctensor/tensorid.md)
+### Inspecting Tensors
+- [var tensorID: Int](./tensorid.md)
   A number that uniquely identifies the tensor, which the framework assigns when it creates a tensor.
-- [var descriptor: MLCTensorDescriptor](mlctensor/descriptor.md)
+- [var descriptor: MLCTensorDescriptor](./descriptor.md)
   The configuration object you use to create a tensor.
-- [var data: Data?](mlctensor/data.md)
+- [var data: Data?](./data.md)
   The tensor data.
-- [var device: MLCDevice?](mlctensor/device.md)
+- [var device: MLCDevice?](./device.md)
   The device associated with this tensor.
-- [var optimizerData: [MLCTensorData]](mlctensor/optimizerdata.md)
+- [var optimizerData: [MLCTensorData]](./optimizerdata.md)
   An array that contains optimizer buffers you specify when you create a tensor parameter.
-- [var optimizerDeviceData: [MLCTensorOptimizerDeviceData]](mlctensor/optimizerdevicedata.md)
+- [var optimizerDeviceData: [MLCTensorOptimizerDeviceData]](./optimizerdevicedata.md)
   An array that contains the device optimizer buffers you specify.
-- [var hasValidNumerics: Bool](mlctensor/hasvalidnumerics.md)
+- [var hasValidNumerics: Bool](./hasvalidnumerics.md)
   A Boolean that indicates whether a tensor contains NaN or INF values.
-- [class MLCTensorOptimizerDeviceData](mlctensoroptimizerdevicedata.md)
+- [class MLCTensorOptimizerDeviceData](../mlctensoroptimizerdevicedata.md)
   An encapsulation of the device memory associated with a tensor that an optimizer uses.
 
 

@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,15 +12,16 @@ This field must be set to `'kmat'`.
 
 ## See Also
 
-- [Size](compressed_matte_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this compressed matte atom.
-- [Version](compressed_matte_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this compressed matte atom.
-- [Flags](compressed_matte_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes of space for flags.
-- [Matte image description structure](compressed_matte_atom/matte_image_description_structure.md)
+- [Matte image description structure](./matte_image_description_structure.md)
   An image description structure associated with this matte data.
-- [Matte data](compressed_matte_atom/matte_data.md)
+- [Matte data](./matte_data.md)
   The compressed matte data, which is of variable length.
 
 

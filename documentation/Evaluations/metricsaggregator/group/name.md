@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this group.
 

@@ -1,7 +1,8 @@
 # HMNumberRange
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of numbers used to specify conditions for characteristic range threshold events.
 
@@ -19,40 +20,45 @@ A set of numbers used to specify conditions for characteristic range threshold e
 class HMNumberRange
 ```
 
+```objc
+@interface HMNumberRange : NSObject
+```
+
 ## Topics
 
 ### Creating a number range
-- [convenience init(minValue: NSNumber, maxValue: NSNumber)](hmnumberrange/init(minvalue:maxvalue:).md)
+- [convenience init(minValue: NSNumber, maxValue: NSNumber)](./hmnumberrange/init%28minvalue,maxvalue%29.md)
   Creates a new number range.
-- [convenience init(minValue: NSNumber)](hmnumberrange/init(minvalue:).md)
+- [convenience init(minValue: NSNumber)](./hmnumberrange/init%28minvalue%29.md)
   Creates an one-sided number range with a minimum value.
-- [convenience init(maxValue: NSNumber)](hmnumberrange/init(maxvalue:).md)
+- [convenience init(maxValue: NSNumber)](./hmnumberrange/init%28maxvalue%29.md)
   Creates a one-sided number range with a maximum value.
 ### Inspecting a number range
-- [var minValue: NSNumber?](hmnumberrange/minvalue.md)
+- [var minValue: NSNumber?](./hmnumberrange/minvalue.md)
   The minimum value of the range.
-- [var maxValue: NSNumber?](hmnumberrange/maxvalue.md)
+- [var maxValue: NSNumber?](./hmnumberrange/maxvalue.md)
   The maximum value of the range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMCharacteristicThresholdRangeEvent](hmcharacteristicthresholdrangeevent.md)
+### Characteristic ranges
+- [class HMCharacteristicThresholdRangeEvent](./hmcharacteristicthresholdrangeevent.md)
   An event that triggers when the value of a characteristic is within a specified range.
-- [class HMMutableCharacteristicThresholdRangeEvent](hmmutablecharacteristicthresholdrangeevent.md)
+- [class HMMutableCharacteristicThresholdRangeEvent](./hmmutablecharacteristicthresholdrangeevent.md)
   A mutable event that triggers when the value of a characteristic is within a specified range.
 
 

@@ -1,7 +1,8 @@
 # menuOrder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred order of items for menus presented from this view.
 
@@ -22,13 +23,14 @@ var menuOrder: MenuOrder { get set }
 
 #### Discussion
 
-Set this value for a view hierarchy by calling the [`menuOrder(_:)`](view/menuorder(_:).md) view modifier.
+Set this value for a view hierarchy by calling the [`menuOrder(_:)`](../view/menuorder%28_%29.md) view modifier.
 
 ## See Also
 
-- [func menuOrder(MenuOrder) -> some View](view/menuorder(_:).md)
+### Setting a preferred order
+- [func menuOrder(MenuOrder) -> some View](../view/menuorder%28_%29.md)
   Sets the preferred order of items for menus presented from this view.
-- [struct MenuOrder](menuorder.md)
+- [struct MenuOrder](../menuorder.md)
   The order in which a menu presents its content.
 
 

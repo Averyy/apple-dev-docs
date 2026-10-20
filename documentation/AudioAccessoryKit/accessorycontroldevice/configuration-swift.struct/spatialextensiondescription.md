@@ -1,7 +1,8 @@
 # spatialExtensionDescription
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spatial audio component description.
 

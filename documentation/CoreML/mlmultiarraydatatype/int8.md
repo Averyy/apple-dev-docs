@@ -1,7 +1,8 @@
 # MLMultiArrayDataType.int8
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,19 +19,24 @@
 case int8
 ```
 
+```c
+MLMultiArrayDataTypeInt8
+```
+
 ## See Also
 
-- [MLMultiArrayDataType.int32](mlmultiarraydatatype/int32.md)
+### Multiarray data types
+- [MLMultiArrayDataType.int32](./int32.md)
   Designates the multiarray’s elements as 32-bit integers.
-- [MLMultiArrayDataType.float16](mlmultiarraydatatype/float16.md)
+- [MLMultiArrayDataType.float16](./float16.md)
   Designates the multiarray’s elements as 16-bit floats.
-- [MLMultiArrayDataType.float32](mlmultiarraydatatype/float32.md)
+- [MLMultiArrayDataType.float32](./float32.md)
   Designates the multiarray’s elements as 32-bit floats.
-- [MLMultiArrayDataType.double](mlmultiarraydatatype/double.md)
+- [MLMultiArrayDataType.double](./double.md)
   Designates the multiarray’s elements as doubles.
-- [static var float: MLMultiArrayDataType](mlmultiarraydatatype/float.md)
+- [static var float: MLMultiArrayDataType](./float.md)
   Designates the multiarray’s elements as floats.
-- [static var float64: MLMultiArrayDataType](mlmultiarraydatatype/float64.md)
+- [static var float64: MLMultiArrayDataType](./float64.md)
   Designates the multiarray’s elements as 64-bit floats.
 
 

@@ -1,7 +1,8 @@
 # headerProminence
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prominence to apply to section headers within a view.
 
@@ -22,13 +23,14 @@ var headerProminence: Prominence { get set }
 
 #### Discussion
 
-The default is [`Prominence.standard`](prominence/standard.md).
+The default is [`Prominence.standard`](../prominence/standard.md).
 
 ## See Also
 
-- [func headerProminence(Prominence) -> some View](view/headerprominence(_:).md)
+### Configuring headers
+- [func headerProminence(Prominence) -> some View](../view/headerprominence%28_%29.md)
   Sets the header prominence for this view.
-- [enum Prominence](prominence.md)
+- [enum Prominence](../prominence.md)
   A type indicating the prominence of a view hierarchy.
 
 

@@ -1,12 +1,13 @@
 # unboldFontMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mask that specifies a font that is not bold.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,29 +15,34 @@ A mask that specifies a font that is not bold.
 static var unboldFontMask: NSFontTraitMask { get }
 ```
 
+```c
+NSUnboldFontMask
+```
+
 ## See Also
 
-- [static var boldFontMask: NSFontTraitMask](nsfonttraitmask/boldfontmask.md)
+### Trait Masks
+- [static var boldFontMask: NSFontTraitMask](./boldfontmask.md)
   A mask that specifies a bold font.
-- [static var compressedFontMask: NSFontTraitMask](nsfonttraitmask/compressedfontmask.md)
+- [static var compressedFontMask: NSFontTraitMask](./compressedfontmask.md)
   A mask that specifies a compressed font.
-- [static var condensedFontMask: NSFontTraitMask](nsfonttraitmask/condensedfontmask.md)
+- [static var condensedFontMask: NSFontTraitMask](./condensedfontmask.md)
   A mask that specifies a condensed font.
-- [static var expandedFontMask: NSFontTraitMask](nsfonttraitmask/expandedfontmask.md)
+- [static var expandedFontMask: NSFontTraitMask](./expandedfontmask.md)
   A mask that specifies an expanded font.
-- [static var fixedPitchFontMask: NSFontTraitMask](nsfonttraitmask/fixedpitchfontmask.md)
+- [static var fixedPitchFontMask: NSFontTraitMask](./fixedpitchfontmask.md)
   A mask that specifies a fixed pitch font.
-- [static var italicFontMask: NSFontTraitMask](nsfonttraitmask/italicfontmask.md)
+- [static var italicFontMask: NSFontTraitMask](./italicfontmask.md)
   A mask that specifies an italic font.
-- [static var narrowFontMask: NSFontTraitMask](nsfonttraitmask/narrowfontmask.md)
+- [static var narrowFontMask: NSFontTraitMask](./narrowfontmask.md)
   A mask that specifies a narrow font.
-- [static var nonStandardCharacterSetFontMask: NSFontTraitMask](nsfonttraitmask/nonstandardcharactersetfontmask.md)
+- [static var nonStandardCharacterSetFontMask: NSFontTraitMask](./nonstandardcharactersetfontmask.md)
   A mask that specifies a font containing a non-standard character set.
-- [static var posterFontMask: NSFontTraitMask](nsfonttraitmask/posterfontmask.md)
+- [static var posterFontMask: NSFontTraitMask](./posterfontmask.md)
   A mask that specifies a poster-style font.
-- [static var smallCapsFontMask: NSFontTraitMask](nsfonttraitmask/smallcapsfontmask.md)
+- [static var smallCapsFontMask: NSFontTraitMask](./smallcapsfontmask.md)
   A mask that specifies a small-caps font.
-- [static var unitalicFontMask: NSFontTraitMask](nsfonttraitmask/unitalicfontmask.md)
+- [static var unitalicFontMask: NSFontTraitMask](./unitalicfontmask.md)
   A mask that specifies a font that is not italic.
 
 

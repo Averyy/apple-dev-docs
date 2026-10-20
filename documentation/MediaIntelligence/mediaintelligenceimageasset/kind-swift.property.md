@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that describes how the framework accesses the image data.
 
@@ -21,7 +22,8 @@ let kind: MediaIntelligenceImageAsset.Kind
 
 ## See Also
 
-- [let id: MediaIntelligenceImageAsset.ID](mediaintelligenceimageasset/id-swift.property.md)
+### Inspecting an asset
+- [let id: MediaIntelligenceImageAsset.ID](./id-swift.property.md)
   A unique identifier for the asset.
 
 

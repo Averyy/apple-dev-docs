@@ -1,7 +1,8 @@
 # reserved5
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved for future use. Set this field to `0`.
 
@@ -10,7 +11,7 @@ Reserved for future use. Set this field to `0`.
 
 ## Declaration
 
-```swift
+```c
 uint64_t reserved5;
 ```
 

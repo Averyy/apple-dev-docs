@@ -1,7 +1,8 @@
 # encodeConditional(_:forKey:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a reference to the given object only if it is encoded unconditionally elsewhere in the payload (previously, or in the future).
 
@@ -24,7 +25,7 @@ mutating func encodeConditional<T>(_ object: T, forKey key: KeyedEncodingContain
 
 For encoders which don’t support this feature, the default implementation encodes the given object unconditionally.
 
-> **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
 ## Parameters
 

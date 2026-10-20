@@ -1,7 +1,8 @@
 # withUnsafePointerToVImageBuffer(_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with an unsafe pointer to the underlying vImage buffer.
 
@@ -11,7 +12,7 @@ Calls the given closure with an unsafe pointer to the underlying vImage buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,15 @@ Calls the given closure with an unsafe pointer to the underlying vImage buffer.
 func withUnsafePointerToVImageBuffer<R>(_ body: (UnsafePointer<vImage_Buffer>) throws -> R) rethrows -> R
 ```
 
+Available when `Format` conforms to `SinglePlanePixelFormat`.
+
 #### Return Value
 
 The return value, if any, of the body closure parameter.
 
 #### Discussion
 
-Use this function to incorporate pixel buffer based image processing code with existing vImage code. For example, the following code passes a pixel buffer to the C API [`vImageBufferFill_ARGB8888(_:_:_:)`](vimagebufferfill_argb8888(_:_:_:).md) routine:
+Use this function to incorporate pixel buffer based image processing code with existing vImage code. For example, the following code passes a pixel buffer to the C API [`vImageBufferFill_ARGB8888(_:_:_:)`](../../vimagebufferfill_argb8888%28_,_,_%29.md) routine:
 
 ```swift
  let src = vImage.PixelBuffer<vImage.Interleaved8x4>(size: vImage.Size(width: 128, height: 128))
@@ -40,13 +43,14 @@ Use this function to incorporate pixel buffer based image processing code with e
 
 ## Parameters
 
-- `body`: A closure with an unsafe pointer to a [`vImage_Buffer`](vimage_buffer.md) parameter that points to the underlying vImage buffer of the pixel buffer.
+- `body`: A closure with an unsafe pointer to a [`vImage_Buffer`](../../vimage_buffer.md) parameter that points to the underlying vImage buffer of the pixel buffer.
 
 ## See Also
 
-- [func withUnsafeVImageBuffer<R>((vImage_Buffer) throws -> R) rethrows -> R](vimage/pixelbuffer/withunsafevimagebuffer(_:).md)
+### Accessing underlying vImage buffers
+- [func withUnsafeVImageBuffer<R>((vImage_Buffer) throws -> R) rethrows -> R](./withunsafevimagebuffer%28_%29.md)
   Calls the given closure with the underlying vImage buffer.
-- [func withUnsafeVImageBuffers<R>(([vImage_Buffer]) throws -> R) rethrows -> R](vimage/pixelbuffer/withunsafevimagebuffers(_:).md)
+- [func withUnsafeVImageBuffers<R>(([vImage_Buffer]) throws -> R) rethrows -> R](./withunsafevimagebuffers%28_%29.md)
   Calls the given closure with the underlying vImage buffers.
 
 

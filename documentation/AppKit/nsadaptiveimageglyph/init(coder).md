@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+
@@ -12,9 +13,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(imageContent: Data)](nsadaptiveimageglyph/init(imagecontent:).md)
+### Creating an adaptive image glyph
+- [init(imageContent: Data)](./init%28imagecontent%29.md)
   Create an adaptive image glyph from the previously saved data.
 
 

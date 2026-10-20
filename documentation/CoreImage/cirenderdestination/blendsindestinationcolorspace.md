@@ -1,7 +1,8 @@
 # blendsInDestinationColorSpace
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicator of whether to blend in the destination’s color space.
 
@@ -19,25 +20,30 @@ Indicator of whether to blend in the destination’s color space.
 var blendsInDestinationColorSpace: Bool { get set }
 ```
 
+```objc
+@property BOOL blendsInDestinationColorSpace;
+```
+
 ## See Also
 
-- [var alphaMode: CIRenderDestinationAlphaMode](cirenderdestination/alphamode.md)
+### Customizing Rendering
+- [var alphaMode: CIRenderDestinationAlphaMode](./alphamode.md)
   The render destination’s representation of alpha (transparency) values.
-- [enum CIRenderDestinationAlphaMode](cirenderdestinationalphamode.md)
+- [enum CIRenderDestinationAlphaMode](../cirenderdestinationalphamode.md)
   Different ways of representing alpha.
-- [var blendKernel: CIBlendKernel?](cirenderdestination/blendkernel.md)
+- [var blendKernel: CIBlendKernel?](./blendkernel.md)
   The destination’s blend kernel.
-- [var colorSpace: CGColorSpace?](cirenderdestination/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The destination’s color space.
-- [var width: Int](cirenderdestination/width.md)
+- [var width: Int](./width.md)
   The render destination’s row width.
-- [var height: Int](cirenderdestination/height.md)
+- [var height: Int](./height.md)
   The render destination’s buffer height.
-- [var isClamped: Bool](cirenderdestination/isclamped.md)
+- [var isClamped: Bool](./isclamped.md)
   Indicator of whether or not the destination clamps.
-- [var isDithered: Bool](cirenderdestination/isdithered.md)
+- [var isDithered: Bool](./isdithered.md)
   Indicator of whether or not the destination dithers.
-- [var isFlipped: Bool](cirenderdestination/isflipped.md)
+- [var isFlipped: Bool](./isflipped.md)
   Indicator of whether the destination is flipped.
 
 

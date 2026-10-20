@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts the elements of a sequence into the collection at the specified position.
@@ -36,12 +37,18 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
 - `newElements`: The new elements to insert into the collection.
 - `i`: The position at which to insert the new elements. `index` must be a valid index of the collection.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func insert<C>(contentsOf: C, at: Self.Index)](./insert%28contentsof,at%29-3h5sa.md)
+  Inserts the elements of a sequence into the collection at the specified position.
 
 
 ---

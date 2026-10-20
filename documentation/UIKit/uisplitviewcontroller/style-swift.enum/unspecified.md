@@ -1,7 +1,8 @@
 # UISplitViewController.Style.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The split view interface uses the classic split view style.
 
@@ -10,7 +11,7 @@ The split view interface uses the classic split view style.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: UISplitViewController.Style.doubleColumn)
 
 ## Declaration
 
@@ -18,17 +19,22 @@ The split view interface uses the classic split view style.
 case unspecified
 ```
 
+```c
+UISplitViewControllerStyleUnspecified
+```
+
 #### Discussion
 
-A split view controller with this style represents a classic split view controller created using any other approach than [`init(style:)`](uisplitviewcontroller/init(style:).md). You cannot create a split view controller with a style of [`UISplitViewController.Style.unspecified`](uisplitviewcontroller/style-swift.enum/unspecified.md) using this initializer.
+A split view controller with this style represents a classic split view controller created using any other approach than [`init(style:)`](../init%28style%29.md). You cannot create a split view controller with a style of [`UISplitViewController.Style.unspecified`](./unspecified.md) using this initializer.
 
-Split view controllers with this style don’t support any column-style APIs, such as [`setViewController(_:for:)`](uisplitviewcontroller/setviewcontroller(_:for:).md).
+Split view controllers with this style don’t support any column-style APIs, such as [`setViewController(_:for:)`](../setviewcontroller%28_,for%29.md).
 
 ## See Also
 
-- [UISplitViewController.Style.doubleColumn](uisplitviewcontroller/style-swift.enum/doublecolumn.md)
+### Constants
+- [UISplitViewController.Style.doubleColumn](./doublecolumn.md)
   The split view interface displays two columns.
-- [UISplitViewController.Style.tripleColumn](uisplitviewcontroller/style-swift.enum/triplecolumn.md)
+- [UISplitViewController.Style.tripleColumn](./triplecolumn.md)
   The split view interface displays three columns.
 
 

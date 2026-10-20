@@ -1,7 +1,8 @@
 # targetContentIdentifierPrefix
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier you provide to the system for use in scheme prefixes for Focus.
 
@@ -11,7 +12,7 @@ An identifier you provide to the system for use in scheme prefixes for Focus.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

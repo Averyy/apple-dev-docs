@@ -1,7 +1,8 @@
 # UIImage.SymbolWeight.black
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ultra-heavy weight.
 
@@ -19,25 +20,30 @@ An ultra-heavy weight.
 case black
 ```
 
+```c
+UIImageSymbolWeightBlack
+```
+
 ## See Also
 
-- [UIImage.SymbolWeight.unspecified](uiimage/symbolweight/unspecified.md)
+### Symbol image weights
+- [UIImage.SymbolWeight.unspecified](./unspecified.md)
   An unspecified symbol image weight.
-- [UIImage.SymbolWeight.ultraLight](uiimage/symbolweight/ultralight.md)
+- [UIImage.SymbolWeight.ultraLight](./ultralight.md)
   An ultralight weight.
-- [UIImage.SymbolWeight.thin](uiimage/symbolweight/thin.md)
+- [UIImage.SymbolWeight.thin](./thin.md)
   A thin weight
-- [UIImage.SymbolWeight.light](uiimage/symbolweight/light.md)
+- [UIImage.SymbolWeight.light](./light.md)
   A light weight.
-- [UIImage.SymbolWeight.regular](uiimage/symbolweight/regular.md)
+- [UIImage.SymbolWeight.regular](./regular.md)
   A regular weight.
-- [UIImage.SymbolWeight.medium](uiimage/symbolweight/medium.md)
+- [UIImage.SymbolWeight.medium](./medium.md)
   A medium weight.
-- [UIImage.SymbolWeight.semibold](uiimage/symbolweight/semibold.md)
+- [UIImage.SymbolWeight.semibold](./semibold.md)
   A semibold weight.
-- [UIImage.SymbolWeight.bold](uiimage/symbolweight/bold.md)
+- [UIImage.SymbolWeight.bold](./bold.md)
   A bold weight.
-- [UIImage.SymbolWeight.heavy](uiimage/symbolweight/heavy.md)
+- [UIImage.SymbolWeight.heavy](./heavy.md)
   A heavy weight.
 
 

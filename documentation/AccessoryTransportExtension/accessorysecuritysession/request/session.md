@@ -1,7 +1,8 @@
 # session
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A security session object for the request.
 

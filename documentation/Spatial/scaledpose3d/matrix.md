@@ -1,7 +1,8 @@
 # matrix
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaled pose’s underlying matrix.
 
@@ -11,7 +12,7 @@ The scaled pose’s underlying matrix.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ var matrix: simd_double4x4 { get }
 
 ## See Also
 
-- [var position: Point3D](scaledpose3d/position.md)
+### Inspecting a 3D scaled pose’s properties
+- [var position: Point3D](./position.md)
   The scaled pose’s position.
-- [var rotation: Rotation3D](scaledpose3d/rotation.md)
+- [var rotation: Rotation3D](./rotation.md)
   The scaled pose’s rotation.
-- [var scale: Double](scaledpose3d/scale.md)
+- [var scale: Double](./scale.md)
   The scaled pose’s scale.
-- [var inverse: ScaledPose3D](scaledpose3d/inverse.md)
+- [var inverse: ScaledPose3D](./inverse.md)
   The scaled pose’s inverse.
-- [var customMirror: Mirror](scaledpose3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the notification.
-- [static var identity: ScaledPose3D](scaledpose3d/identity.md)
+- [static var identity: ScaledPose3D](./identity.md)
   The identity scaled pose.
 
 

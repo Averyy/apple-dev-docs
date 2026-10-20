@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the file path, suitable for debugging.
 
@@ -26,9 +27,10 @@ If the content of the path isn’t a well-formed Unicode string, this replaces i
 
 ## See Also
 
-- [var length: Int](filepath/length.md)
+### Working with File Paths
+- [var length: Int](./length.md)
   The length of the file path, excluding the null terminator.
-- [var description: String](filepath/description.md)
+- [var description: String](./description.md)
   A textual representation of the file path.
 
 

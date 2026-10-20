@@ -1,7 +1,8 @@
 # heightInPixels
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the display, in pixels.
 
@@ -14,11 +15,16 @@ The height of the display, in pixels.
 var heightInPixels: Int { get set }
 ```
 
+```objc
+@property NSInteger heightInPixels;
+```
+
 ## See Also
 
-- [var widthInPixels: Int](vzmacgraphicsdisplayconfiguration/widthinpixels.md)
+### Configuring the display properties
+- [var widthInPixels: Int](./widthinpixels.md)
   The width of the display, in pixels.
-- [var pixelsPerInch: Int](vzmacgraphicsdisplayconfiguration/pixelsperinch.md)
+- [var pixelsPerInch: Int](./pixelsperinch.md)
   The pixel density in pixels per inch.
 
 

@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to authorize for the payment token context.
 
@@ -11,13 +12,13 @@ The amount to authorize for the payment token context.
 
 ## Declaration
 
-```swift
+```
 required DOMString amount;
 ```
 
 #### Discussion
 
-The sum of the [`amount`](applepaypaymenttokencontext/amount.md) of all the payment token contexts in a payment request must be less than or equal to the grand total amount of the enclosing payment request.
+The sum of the [`amount`](./amount.md) of all the payment token contexts in a payment request must be less than or equal to the grand total amount of the enclosing payment request.
 
 
 ---

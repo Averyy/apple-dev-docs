@@ -1,7 +1,8 @@
 # GCInputShifter
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the shifter element.
 
@@ -17,15 +18,17 @@ var GCInputShifter: String { get }
 
 ## See Also
 
-- [var shifter: GCGearShifterElement?](gcracingwheelinputstate/shifter.md)
+### Related Documentation
+- [var shifter: GCGearShifterElement?](./gcracingwheelinputstate/shifter.md)
   The controller’s gear shift element.
-- [var GCInputSteeringWheel: String](gcinputsteeringwheel-26283.md)
+### Accessing elements by name
+- [var GCInputSteeringWheel: String](./gcinputsteeringwheel-26283.md)
   The name of the steering wheel element.
-- [var GCInputPedalClutch: String](gcinputpedalclutch-82gwe.md)
+- [var GCInputPedalClutch: String](./gcinputpedalclutch-82gwe.md)
   The name of the clutch element.
-- [var GCInputPedalAccelerator: String](gcinputpedalaccelerator-6kg6u.md)
+- [var GCInputPedalAccelerator: String](./gcinputpedalaccelerator-6kg6u.md)
   The name of the accelerator element.
-- [var GCInputPedalBrake: String](gcinputpedalbrake-6wpdc.md)
+- [var GCInputPedalBrake: String](./gcinputpedalbrake-6wpdc.md)
   The name of the brake element.
 
 

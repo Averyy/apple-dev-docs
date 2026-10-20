@@ -1,7 +1,8 @@
 # restoreTrainingSession(sessionParameters:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an asynchronous training session for an action classifier by restoring an existing training session’s state from its parameters.
 
@@ -16,19 +17,20 @@ static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameter
 
 #### Return Value
 
-An [`MLTrainingSession`](mltrainingsession.md) that represents the action classifier training session.
+An [`MLTrainingSession`](../mltrainingsession.md) that represents the action classifier training session.
 
 ## Parameters
 
-- `sessionParameters`: The [`MLTrainingSessionParameters`](mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md).
+- `sessionParameters`: The [`MLTrainingSessionParameters`](../mltrainingsessionparameters.md) instance you used to create the training session using [`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md).
 
 ## See Also
 
-- [static func train(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLActionClassifier>](mlactionclassifier/train(trainingdata:parameters:sessionparameters:).md)
+### Training an action classifier asynchronously
+- [static func train(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLJob<MLActionClassifier>](./train%28trainingdata,parameters,sessionparameters%29.md)
   Begins an asynchronous action classifier training session.
-- [static func makeTrainingSession(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActionClassifier>](mlactionclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+- [static func makeTrainingSession(trainingData: MLActionClassifier.DataSource, parameters: MLActionClassifier.ModelParameters, sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLActionClassifier>](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
   Creates an asynchronous training session for an action classifier.
-- [static func resume(MLTrainingSession<MLActionClassifier>) throws -> MLJob<MLActionClassifier>](mlactionclassifier/resume(_:).md)
+- [static func resume(MLTrainingSession<MLActionClassifier>) throws -> MLJob<MLActionClassifier>](./resume%28_%29.md)
   Begins or continues an asynchronous action classifier training session.
 
 

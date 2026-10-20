@@ -1,21 +1,23 @@
 # Macros
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var HKAnchoredObjectQueryNoAnchor: Int32](hkanchoredobjectquerynoanchor.md)
+- [var HKAnchoredObjectQueryNoAnchor: Int32](./hkanchoredobjectquerynoanchor.md)
   An anchor that returns all of the matching samples currently in the HealthKit store.
 
 ## See Also
 
-- [HealthKit Enumerations](healthkit-enumerations.md)
-- [HealthKit Classes](healthkit-classes.md)
-- [HealthKit Constants](healthkit-constants.md)
-- [HealthKit Data Types](healthkit-data-types.md)
-- [HealthKit Functions](healthkit-functions.md)
-- [HealthKit Variables](healthkit-variables.md)
+### Reference
+- [HealthKit Enumerations](./healthkit-enumerations.md)
+- [HealthKit Classes](./healthkit-classes.md)
+- [HealthKit Constants](./healthkit-constants.md)
+- [HealthKit Data Types](./healthkit-data-types.md)
+- [HealthKit Functions](./healthkit-functions.md)
+- [HealthKit Variables](./healthkit-variables.md)
 
 
 ---

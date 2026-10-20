@@ -1,6 +1,7 @@
 # Xcode 15.4 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -20,13 +21,19 @@ Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, mac
 
 ###### Known Issues
 
-- Some Macs recently received a macOS system update which disabled the simulator runtimes used by Xcode, including the simulators for iOS, tvOS, watchOS, and visionOS. If your Mac received this update, you will receive the following error message and will be unable to use the simulator: ```None
- The com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime is not available.
- Domain: com.apple.CoreSimulator.SimError
- Code: 401
- Failure Reason: runtime profile not found using "System" match policy
- Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
-``` (127498625) **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Settings → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
+- Some Macs recently received a macOS system update which disabled the simulator runtimes used by Xcode, including the simulators for iOS, tvOS, watchOS, and visionOS. If your Mac received this update, you will receive the following error message and will be unable to use the simulator:
+
+  ```
+   The com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime is not available.
+   Domain: com.apple.CoreSimulator.SimError
+   Code: 401
+   Failure Reason: runtime profile not found using "System" match policy
+   Recovery Suggestion: Download the com.apple.CoreSimulator.SimRuntime.iOS-17-2 simulator runtime from the Xcode 
+  ```
+
+  (127498625)
+
+  **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Settings → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
 
 ##### App Shortcuts Preview
 
@@ -63,19 +70,22 @@ Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, mac
 
 ###### Known Issues
 
-- Previews may fail in projects or targets that use special characters such as curly quotes, Phi, etc.  (125490102) (FB13699939) **Workaround:** Rename project and/or target to no longer use special characters.
+- Previews may fail in projects or targets that use special characters such as curly quotes, Phi, etc.  (125490102) (FB13699939)
+
+  **Workaround:** Rename project and/or target to no longer use special characters.
 
 ## See Also
 
-- [Xcode 15.3 Release Notes](xcode-15_3-release-notes.md)
+### Xcode 15
+- [Xcode 15.3 Release Notes](./xcode-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.2 Release Notes](xcode-15_2-release-notes.md)
+- [Xcode 15.2 Release Notes](./xcode-15_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.1 Release Notes](xcode-15_1-release-notes.md)
+- [Xcode 15.1 Release Notes](./xcode-15_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15.0.1 Release Notes](xcode-15_0_1-release-notes.md)
+- [Xcode 15.0.1 Release Notes](./xcode-15_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 15 Release Notes](xcode-15-release-notes.md)
+- [Xcode 15 Release Notes](./xcode-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

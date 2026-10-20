@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity specified for the fetch request.
 
@@ -10,7 +11,7 @@ The entity specified for the fetch request.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,21 +21,26 @@ The entity specified for the fetch request.
 var entity: NSEntityDescription? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSEntityDescription * entity;
+```
+
 #### Discussion
 
-When an [`NSFetchRequest`](nsfetchrequest.md) instance is created with `init()`, it is expected that the [`entity`](nspropertydescription/entity.md) property will be set.  If this property is not set, the fetch request fails upon execution.
+When an [`NSFetchRequest`](../nsfetchrequest.md) instance is created with `init()`, it is expected that the [`entity`](../nspropertydescription/entity.md) property will be set.  If this property is not set, the fetch request fails upon execution.
 
 ## See Also
 
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+### Managing the Fetch Request’s Entity
+- [convenience init(entityName: String)](./init%28entityname%29-5anoo.md)
   Returns a fetch request configured with a given entity name.
-- [init()](nsfetchrequest/init.md)
+- [init()](./init%28%29.md)
   Creates a new fetch request.
-- [var entityName: String?](nsfetchrequest/entityname.md)
+- [var entityName: String?](./entityname.md)
   The name of the entity the request is configured to fetch.
-- [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)
+- [var includesSubentities: Bool](./includessubentities.md)
   A Boolean value that indicates whether the fetch request includes subentities in the results.
-- [struct NSFetchRequestResultType](nsfetchrequestresulttype.md)
+- [struct NSFetchRequestResultType](../nsfetchrequestresulttype.md)
   Constants that specify the possible result types a fetch request can return.
 
 

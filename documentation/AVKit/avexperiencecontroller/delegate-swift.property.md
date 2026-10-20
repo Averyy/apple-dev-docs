@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object for the experience controller.
 
@@ -21,7 +22,8 @@ Provide a delegate to have the system notify your app about transitions and othe
 
 ## See Also
 
-- [AVExperienceController.Delegate](avexperiencecontroller/delegate-swift.protocol.md)
+### Configuring a delegate
+- [AVExperienceController.Delegate](./delegate-swift.protocol.md)
   A protocol that defines the methods to implement to respond to experience changes.
 
 

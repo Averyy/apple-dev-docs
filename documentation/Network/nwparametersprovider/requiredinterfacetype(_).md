@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Require an interface type when connecting, listening, and browsing.
@@ -24,6 +25,12 @@ func requiredInterfaceType(_ type: NWInterface.InterfaceType) -> Self
 ## Parameters
 
 - `type`: The interface type to require.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func requiredInterfaceType(NWInterface.InterfaceType) -> Self](./requiredinterfacetype%28_%29-8w0cb.md)
+  Require an interface type when connecting, listening, and browsing.
 
 
 ---

@@ -1,7 +1,8 @@
 # MediaElementAudioSourceNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface MediaElementAudioSourceNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [mediaElement](mediaelementaudiosourcenode/1630397-mediaelement.md)
+- [mediaElement](./mediaelementaudiosourcenode/api-1630397-mediaelement.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

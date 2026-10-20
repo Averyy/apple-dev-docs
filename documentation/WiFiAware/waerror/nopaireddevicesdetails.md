@@ -1,7 +1,8 @@
 # WAError.NoPairedDevicesDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the lack of paired devices.
 
@@ -19,14 +20,15 @@ struct NoPairedDevicesDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case noPairedDevices(WAError.NoPairedDevicesDetails)](waerror/nopaireddevices(_:).md)
+### Checking if paired devices are present or specified
+- [case noPairedDevices(WAError.NoPairedDevicesDetails)](./nopaireddevices%28_%29.md)
   An error that occurs if your app doesn’t have access to any paired devices.
 
 

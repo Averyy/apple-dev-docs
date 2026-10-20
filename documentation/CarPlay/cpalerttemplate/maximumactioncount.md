@@ -1,7 +1,8 @@
 # maximumActionCount
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of actions allowed in an alert template.
 
@@ -16,9 +17,14 @@ The maximum number of actions allowed in an alert template.
 class var maximumActionCount: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSUInteger maximumActionCount;
+```
+
 ## See Also
 
-- [init(titleVariants: [String], actions: [CPAlertAction])](cpalerttemplate/init(titlevariants:actions:).md)
+### Creating an Alert Template
+- [init(titleVariants: [String], actions: [CPAlertAction])](./init%28titlevariants,actions%29.md)
   Creates an alert template.
 
 

@@ -1,6 +1,7 @@
 # Adopting best practices for persistent UI
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 
@@ -18,13 +19,13 @@ People can anchor apps to their space in a few different ways:
 
 Locking and persisting content in visionOS makes the user experience more natural and integrated by letting people attach apps to specific places in their real world. This means people can easily return to what they were doing, creating a smoother and more immersive experience. Knowing the kind of surface the app snaps to allows for more useful and personalized apps, giving developers the ability to show content that’s relevant to a given situation.
 
-> **Note**: Watch the WWDC25 session [`Set the scene with SwiftUI in visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/290/) for more information on system behavior and API usage.
+> **Note**: Watch the WWDC25 session [Set the scene with SwiftUI in visionOS](https://developer.apple.com/videos/play/wwdc2025/290/) for more information on system behavior and API usage.
 
-#### Handle Scene Restoration
+#### Handle scene restoration
 
 Scene restoration is an important part of a seamless experience on visionOS. People expect content to persist where they’ve placed it, and they expect to be able to pick up where they left off. To ensure the system correctly restores windows and maintains a person’s desired layout, you’ll need to handle your app’s scene restoration.
 
-> **Note**: To learn more, download the sample code project in [`Restoring your app’s state with SwiftUI`](https://developer.apple.com/documentation/swiftui/restoring-your-app-s-state-with-swiftui).
+> **Note**: To learn more, download the sample code project in [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md).
 
 However, there are some cases in which you might not want to restore scenes, especially for those that serve a temporary or context-specific purpose, including:
 
@@ -47,7 +48,7 @@ Window("Onboarding", id: "onboarding") {
 .restorationBehavior(.disabled)
 ```
 
-#### Customize Window Launch Behavior
+#### Customize window launch behavior
 
 It’s important to launch only essential windows to prevent redundancy and confusion. You can use `.defaultLaunchBehavior` to fine-tune which windows appear when a person relaunches your app. By default, your app presents the first window declared in your `Scene` matching the “Preferred Default Scene Session Role” key in your `Info.plist`.
 
@@ -102,13 +103,13 @@ var body: some Scene {
 }
 ```
 
-#### Present Content Dynamically Using Surface Snapping
+#### Present content dynamically using surface snapping
 
 You can use a scene’s physical placement to show content dynamically in an immersive app. Knowing where a person has placed content in their physical space allows you to integrate your app more deeply with their real world and make your app more contextually relevant.
 
 To ensure your app has access to the physical placement:
 
-- **Request ARKit data access** — Follow the steps outlined in [`Setting up access to ARKit data`](setting-up-access-to-arkit-data.md).
+- **Request ARKit data access** — Follow the steps outlined in [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md).
 - **Enable detailed surface info** — Add the `UIWantsDetailedSurfaceInfo` key to your app’s `Info.plist` file and set its value to `YES`.
 
 To check and use the snapped status:
@@ -169,13 +170,14 @@ struct ContentView: View {
 
 ## See Also
 
-- [Canyon Crosser: Building a volumetric hike-planning app](canyon-crosser-building-a-volumetric-hike-planning-app.md)
+### SwiftUI
+- [Canyon Crosser: Building a volumetric hike-planning app](./canyon-crosser-building-a-volumetric-hike-planning-app.md)
   Create a hike planning app using SwiftUI and RealityKit.
-- [Hello World](world.md)
+- [Hello World](./world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Presenting windows and spaces](presenting-windows-and-spaces.md)
+- [Presenting windows and spaces](./presenting-windows-and-spaces.md)
   Open and close the scenes that make up your app’s interface.
-- [Positioning and sizing windows](positioning-and-sizing-windows.md)
+- [Positioning and sizing windows](./positioning-and-sizing-windows.md)
   Influence the initial geometry of windows that your app presents.
 
 

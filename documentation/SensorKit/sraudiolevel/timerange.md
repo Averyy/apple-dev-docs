@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range in the audio stream that the level applies to.
 
@@ -16,9 +17,14 @@ The time range in the audio stream that the level applies to.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var loudness: Double](sraudiolevel/loudness.md)
+### Getting metrics
+- [var loudness: Double](./loudness.md)
   The measure of the audio level in decibels.
 
 

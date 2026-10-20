@@ -1,7 +1,8 @@
 # AERemoveSpecialHandler(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a handler from a special handler dispatch table.
 
@@ -14,21 +15,25 @@ Removes a handler from a special handler dispatch table.
 func AERemoveSpecialHandler(_ functionClass: AEKeyword, _ handler: AEEventHandlerUPP!, _ isSysHandler: Bool) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AERemoveSpecialHandler(AEKeyword functionClass, AEEventHandlerUPP handler, Boolean isSysHandler);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
-See also [`AEInstallSpecialHandler(_:_:_:)`](1445532-aeinstallspecialhandler.md) and [`AEGetSpecialHandler(_:_:_:)`](1444274-aegetspecialhandler.md). 
+See also [`AEInstallSpecialHandler(_:_:_:)`](./api-1445532-aeinstallspecialhandler.md) and [`AEGetSpecialHandler(_:_:_:)`](./api-1444274-aegetspecialhandler.md). 
 
-##### 1770211
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 Your application should not install a special handler in a system dispatch table with the goal that the handler will get called when other applications receive events—this won’t work in macOS.
 
-In some previous versions of the Mac OS, applications might have reason to disable, within the application only, all Apple Event Manager functions that support Apple event objects—that is, all the functions available to an application as a result of linking the Object Support Library (OSL) and calling the [`AEObjectInit()`](1447372-aeobjectinit.md) function.
+In some previous versions of the Mac OS, applications might have reason to disable, within the application only, all Apple Event Manager functions that support Apple event objects—that is, all the functions available to an application as a result of linking the Object Support Library (OSL) and calling the [`AEObjectInit()`](./api-1447372-aeobjectinit.md) function.
 
 To disable the OSL, you should pass the keyword `keySelectProc` in the `functionClass` parameter, `NULL` in the `handler` parameter, and `FALSE` in the `isSysHandler` parameter. An application that expects its copy of the OSL to move after it is installed—for example, an application that keeps it in a stand-alone code resource—would need to disable the OSL. When an application calls `AEObjectInit` to initialize the OSL, the OSL installs the addresses of its functions as extensions to the pack. If those functions move, the addresses become invalid.
 
@@ -38,15 +43,16 @@ If you expect to initialize the OSL and disable it several times, you should cal
 
 ## Parameters
 
-- `functionClass`: The keyword for the special handler to remove. Pass one of the constants described in [`Special Handler Callback Constants`](apple_events/1572726-special_handler_callback_constan.md). See [`AEKeyword`](aekeyword.md).
-- `handler`: A universal procedure pointer to the special handler to remove. Although the `functionClass` parameter is sufficient to identify the handler to remove, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the function class to identify the handler. See [`AEEventHandlerUPP`](aeeventhandlerupp.md).
+- `functionClass`: The keyword for the special handler to remove. Pass one of the constants described in [Special Handler Callback Constants](./apple_events/api-1572726-special_handler_callback_constan.md). See [`AEKeyword`](./aekeyword.md).
+- `handler`: A universal procedure pointer to the special handler to remove. Although the `functionClass` parameter is sufficient to identify the handler to remove, you can identify the handler explicitly as a safeguard. If you pass `NULL` for this parameter, the Apple Event Manager relies solely on the function class to identify the handler. See [`AEEventHandlerUPP`](./aeeventhandlerupp.md).
 - `isSysHandler`: Specifies the special handler dispatch table to remove the handler from. Pass `TRUE` to remove the handler from the system special handler dispatch table or `FALSE` to remove the handler from your application’s special handler dispatch table. Use of the system special handler dispatch table is not recommended.
 
 ## See Also
 
-- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](1444274-aegetspecialhandler.md)
+### Managing Special Handler Dispatch Tables
+- [func AEGetSpecialHandler(AEKeyword, UnsafeMutablePointer<AEEventHandlerUPP?>!, Bool) -> OSErr](./api-1444274-aegetspecialhandler.md)
   Gets a specified handler from a special handler dispatch table.
-- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](1445532-aeinstallspecialhandler.md)
+- [func AEInstallSpecialHandler(AEKeyword, AEEventHandlerUPP!, Bool) -> OSErr](./api-1445532-aeinstallspecialhandler.md)
   Installs a callback function in a special handler dispatch table.
 
 

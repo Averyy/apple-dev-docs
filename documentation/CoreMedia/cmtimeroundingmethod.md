@@ -1,7 +1,8 @@
 # CMTimeRoundingMethod
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of rounding methods to use when performing time calculations.
 
@@ -20,40 +21,45 @@ An enumeration of rounding methods to use when performing time calculations.
 enum CMTimeRoundingMethod
 ```
 
+```c
+enum CMTimeRoundingMethod : uint32_t;
+```
+
 ## Topics
 
 ### Default Rounding Method
-- [static var `default`: CMTimeRoundingMethod](cmtimeroundingmethod/default.md)
+- [static var `default`: CMTimeRoundingMethod](./cmtimeroundingmethod/default.md)
   The default rounding method.
 ### Rounding Methods
-- [CMTimeRoundingMethod.roundHalfAwayFromZero](cmtimeroundingmethod/roundhalfawayfromzero.md)
+- [CMTimeRoundingMethod.roundHalfAwayFromZero](./cmtimeroundingmethod/roundhalfawayfromzero.md)
   Rounds half away from zero.
-- [CMTimeRoundingMethod.roundAwayFromZero](cmtimeroundingmethod/roundawayfromzero.md)
+- [CMTimeRoundingMethod.roundAwayFromZero](./cmtimeroundingmethod/roundawayfromzero.md)
   Rounds away from zero.
-- [CMTimeRoundingMethod.roundTowardZero](cmtimeroundingmethod/roundtowardzero.md)
+- [CMTimeRoundingMethod.roundTowardZero](./cmtimeroundingmethod/roundtowardzero.md)
   Rounds toward zero.
-- [CMTimeRoundingMethod.quickTime](cmtimeroundingmethod/quicktime.md)
+- [CMTimeRoundingMethod.quickTime](./cmtimeroundingmethod/quicktime.md)
   Rounds using the QuickTime method.
-- [CMTimeRoundingMethod.roundTowardPositiveInfinity](cmtimeroundingmethod/roundtowardpositiveinfinity.md)
+- [CMTimeRoundingMethod.roundTowardPositiveInfinity](./cmtimeroundingmethod/roundtowardpositiveinfinity.md)
   Rounds toward positive infinity.
-- [CMTimeRoundingMethod.roundTowardNegativeInfinity](cmtimeroundingmethod/roundtowardnegativeinfinity.md)
+- [CMTimeRoundingMethod.roundTowardNegativeInfinity](./cmtimeroundingmethod/roundtowardnegativeinfinity.md)
   Rounds toward negative infinity.
 ### Initializers
-- [init?(rawValue: UInt32)](cmtimeroundingmethod/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cmtimeroundingmethod/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CMTimeConvertScale(CMTime, timescale: Int32, method: CMTimeRoundingMethod) -> CMTime](cmtimeconvertscale(_:timescale:method:).md)
+### Changing the Timescale
+- [func CMTimeConvertScale(CMTime, timescale: Int32, method: CMTimeRoundingMethod) -> CMTime](./cmtimeconvertscale%28_,timescale,method%29.md)
   Converts the source time to a new timescale using the specified rounding method.
 
 

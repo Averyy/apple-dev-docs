@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared App Attest service that you use to validate your app.
 
@@ -20,10 +21,14 @@ The shared App Attest service that you use to validate your app.
 class var shared: DCAppAttestService { get }
 ```
 
+```objc
+@property (class, readonly) DCAppAttestService * sharedService;
+```
+
 ## Mentions
 
-- [Establishing your app’s integrity](establishing-your-app-s-integrity.md)
-- [Validating apps that connect to your server](validating-apps-that-connect-to-your-server.md)
+- [Establishing your app’s integrity](../establishing-your-app-s-integrity.md)
+- [Validating apps that connect to your server](../validating-apps-that-connect-to-your-server.md)
 
 #### Discussion
 
@@ -31,7 +36,8 @@ Use the shared instance of the service to generate and to certify a cryptographi
 
 ## See Also
 
-- [var isSupported: Bool](dcappattestservice/issupported.md)
+### Accessing the service
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether a particular device provides the App Attest service.
 
 

@@ -1,16 +1,17 @@
 # UINavigationItem.LargeTitleDisplayMode.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Never display a large title.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ Never display a large title.
 case never
 ```
 
+```c
+UINavigationItemLargeTitleDisplayModeNever
+```
+
 ## See Also
 
-- [UINavigationItem.LargeTitleDisplayMode.automatic](uinavigationitem/largetitledisplaymode-swift.enum/automatic.md)
+### Constants
+- [UINavigationItem.LargeTitleDisplayMode.automatic](./automatic.md)
   Inherit the display mode from the previous navigation item.
-- [UINavigationItem.LargeTitleDisplayMode.always](uinavigationitem/largetitledisplaymode-swift.enum/always.md)
+- [UINavigationItem.LargeTitleDisplayMode.always](./always.md)
   Always display a large title.
 
 

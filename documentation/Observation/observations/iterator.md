@@ -1,7 +1,8 @@
 # Observations.Iterator
 
 **Framework**: Observation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +22,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../Swift/asynciteratorprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # maskVal4
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var maskVal4: MTRUnitTestingBitmap64MaskMap { get }
+```
+
+```c
+MTRUnitTestingBitmap64MaskMapMaskVal4
 ```
 
 

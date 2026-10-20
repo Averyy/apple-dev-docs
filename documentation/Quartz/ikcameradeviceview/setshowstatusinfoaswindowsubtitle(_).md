@@ -1,7 +1,8 @@
 # setShowStatusInfoAsWindowSubtitle(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 func setShowStatusInfoAsWindowSubtitle(_ value: Bool)
+```
+
+```objc
+- (void) setShowStatusInfoAsWindowSubtitle:(BOOL) value;
 ```
 
 

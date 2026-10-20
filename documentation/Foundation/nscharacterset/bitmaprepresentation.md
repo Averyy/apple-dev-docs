@@ -1,7 +1,8 @@
 # bitmapRepresentation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An `NSData` object encoding the receiver in binary format.
 
@@ -18,6 +19,10 @@ An `NSData` object encoding the receiver in binary format.
 
 ```swift
 var bitmapRepresentation: Data { get }
+```
+
+```objc
+@property (copy, readonly) NSData * bitmapRepresentation;
 ```
 
 #### Discussion
@@ -39,9 +44,10 @@ if (bitmapRep[n >> 3] & (((unsigned int)1) << (n  & 7))) {
 
 ## See Also
 
-- [init(bitmapRepresentation: Data)](nscharacterset/init(bitmaprepresentation:).md)
+### Creating and Managing Character Sets as Bitmap Representations
+- [init(bitmapRepresentation: Data)](./init%28bitmaprepresentation%29.md)
   Returns a character set containing characters determined by a given bitmap representation.
-- [init?(contentsOfFile: String)](nscharacterset/init(contentsoffile:).md)
+- [init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Returns a character set read from the bitmap representation stored in the file a given path.
 
 

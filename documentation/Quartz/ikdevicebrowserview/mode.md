@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the browser display mode.
 
@@ -14,9 +15,13 @@ Specifies the browser display mode.
 var mode: IKDeviceBrowserViewDisplayMode { get set }
 ```
 
+```objc
+@property IKDeviceBrowserViewDisplayMode mode;
+```
+
 #### Discussion
 
-The supported display modes are defined in [`IKDeviceBrowserViewDisplayMode`](ikdevicebrowserviewdisplaymode.md)
+The supported display modes are defined in [`IKDeviceBrowserViewDisplayMode`](../ikdevicebrowserviewdisplaymode.md)
 
 
 ---

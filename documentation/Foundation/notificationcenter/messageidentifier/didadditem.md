@@ -1,7 +1,8 @@
 # didAddItem
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didAddItem: NotificationCenter.BaseMessageIdentifier<NSMenu.DidAddItemMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMenu.DidAddItemMessage>`.
 
 
 ---

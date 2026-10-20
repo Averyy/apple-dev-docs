@@ -1,7 +1,8 @@
 # kSecKeyModifiable
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is nonzero. Attributes of this key can be modified.
 
@@ -12,6 +13,10 @@ Type uint32; value is nonzero. Attributes of this key can be modified.
 
 ```swift
 var kSecKeyModifiable: Int32 { get }
+```
+
+```c
+kSecKeyModifiable
 ```
 
 

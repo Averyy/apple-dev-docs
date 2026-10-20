@@ -1,7 +1,8 @@
 # errSecInvalidServiceMask
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid service mask was detected.
 
@@ -18,6 +19,10 @@ An invalid service mask was detected.
 
 ```swift
 var errSecInvalidServiceMask: OSStatus { get }
+```
+
+```c
+errSecInvalidServiceMask
 ```
 
 

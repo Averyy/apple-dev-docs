@@ -1,7 +1,8 @@
 # writeAttributeLongOctetString(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeLongOctetString(withValue value: Data, params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeLongOctetString(withValue value: Data, params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributeLongOctetStringWithValue:(NSData *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

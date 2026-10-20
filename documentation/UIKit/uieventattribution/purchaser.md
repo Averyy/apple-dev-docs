@@ -1,7 +1,8 @@
 # purchaser
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that purchased the ad or content.
 
@@ -17,19 +18,24 @@ The entity that purchased the ad or content.
 var purchaser: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * purchaser;
+```
+
 #### Discussion
 
 This property contains the name of the party that purchased the ad or other content. For example, for an in-app ad, this would contain the name of the company or individual that purchased the advertisement. The system may truncate this field if it’s longer than 100 characters.
 
 ## See Also
 
-- [var destinationURL: URL](uieventattribution/destinationurl.md)
+### Setting attribution details
+- [var destinationURL: URL](./destinationurl.md)
   The destination URL to attribute.
-- [var reportEndpoint: URL?](uieventattribution/reportendpoint.md)
+- [var reportEndpoint: URL?](./reportendpoint.md)
   The URL that receives attribution data.
-- [var sourceDescription: String](uieventattribution/sourcedescription.md)
+- [var sourceDescription: String](./sourcedescription.md)
   A string describing the source tapped to launch the external link.
-- [var sourceIdentifier: UInt8](uieventattribution/sourceidentifier.md)
+- [var sourceIdentifier: UInt8](./sourceidentifier.md)
   A number that identifies the source of the attribution.
 
 

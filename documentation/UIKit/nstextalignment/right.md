@@ -1,7 +1,8 @@
 # NSTextAlignment.right
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is right-aligned.
 
@@ -19,21 +20,26 @@ Text is right-aligned.
 case right
 ```
 
+```c
+NSTextAlignmentRight
+```
+
 #### Discussion
 
 The value of this enumeration case is `2` for binaries built for the `arm64` architecture, and running in iOS, macOS, or Simulator. The value is also `2` for binaries built for the `x86_64` architecture and running in Simulator for iOS. However, the value of this enumeration case is `1` for other binaries built for the `x86_64` architecture, including apps translated using Rosetta. If you persist this value manually, make sure to convert it for the appropriate environment when you read it.
 
-For more information about Rosetta, see [`About the Rosetta translation environment`](https://developer.apple.com/documentation/apple-silicon/about-the-rosetta-translation-environment).
+For more information about Rosetta, see [About the Rosetta translation environment](../../apple-silicon/about-the-rosetta-translation-environment.md).
 
 ## See Also
 
-- [NSTextAlignment.left](nstextalignment/left.md)
+### Constants
+- [NSTextAlignment.left](./left.md)
   Text is left-aligned.
-- [NSTextAlignment.center](nstextalignment/center.md)
+- [NSTextAlignment.center](./center.md)
   Text is center-aligned.
-- [NSTextAlignment.justified](nstextalignment/justified.md)
+- [NSTextAlignment.justified](./justified.md)
   Text is justified.
-- [NSTextAlignment.natural](nstextalignment/natural.md)
+- [NSTextAlignment.natural](./natural.md)
   Text uses the default alignment for the current localization of the app.
 
 

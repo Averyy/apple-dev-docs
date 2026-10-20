@@ -1,7 +1,8 @@
 # textureType
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimension and arrangement of texture image data.
 

@@ -1,7 +1,8 @@
 # NIAlgorithmConvergenceStatus.notConverged(_:)
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the framework’s Camera Assistance feature requires action from the user.
 
@@ -19,9 +20,9 @@ case notConverged([NIAlgorithmConvergenceStatus.Reason])
 
 #### Discussion
 
-In this state, the framework needs more information about the user’s physical environment before setting [`horizontalAngle`](ninearbyobject/horizontalangle-hsg.md) and/or [`verticalDirectionEstimate`](ninearbyobject/verticaldirectionestimate-swift.property.md).
+In this state, the framework needs more information about the user’s physical environment before setting [`horizontalAngle`](../ninearbyobject/horizontalangle-hsg.md) and/or [`verticalDirectionEstimate`](../ninearbyobject/verticaldirectionestimate-swift.property.md).
 
-Look to the reasons array of the `convergence` object provided by [`session(_:didUpdateAlgorithmConvergence:for:)`](nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).md) for more information on the cause. Each reason indicates a specific action the user can do to provide ARKit with the necessary camera data to support Nearby Interaction’s Camera Assistance.
+Look to the reasons array of the `convergence` object provided by [`session(_:didUpdateAlgorithmConvergence:for:)`](../nisessiondelegate/session%28_,didupdatealgorithmconvergence,for%29.md) for more information on the cause. Each reason indicates a specific action the user can do to provide ARKit with the necessary camera data to support Nearby Interaction’s Camera Assistance.
 
 ## Parameters
 
@@ -29,9 +30,10 @@ Look to the reasons array of the `convergence` object provided by [`session(_:di
 
 ## See Also
 
-- [NIAlgorithmConvergenceStatus.converged](nialgorithmconvergencestatus-2fnve/converged.md)
+### Interpreting the convergence state
+- [NIAlgorithmConvergenceStatus.converged](./converged.md)
   A status that indicates the framework’s Camera Assistance feature is operational.
-- [NIAlgorithmConvergenceStatus.unknown](nialgorithmconvergencestatus-2fnve/unknown.md)
+- [NIAlgorithmConvergenceStatus.unknown](./unknown.md)
   An indication that the framework is unsure of the Camera Assistance status.
 
 

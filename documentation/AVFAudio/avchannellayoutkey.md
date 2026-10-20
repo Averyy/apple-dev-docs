@@ -1,7 +1,8 @@
 # AVChannelLayoutKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -18,11 +19,16 @@
 let AVChannelLayoutKey: String
 ```
 
+```c
+extern NSString * const AVChannelLayoutKey;
+```
+
 ## See Also
 
-- [Linear PCM format settings](linear-pcm-format-settings.md)
+### Format and layout keys
+- [Linear PCM format settings](./linear-pcm-format-settings.md)
   The audio settings that apply to linear PCM audio formats.
-- [Format settings](format-settings.md)
+- [Format settings](./format-settings.md)
   The audio settings that apply to all audio formats that the audio player and recorder classes support.
 
 

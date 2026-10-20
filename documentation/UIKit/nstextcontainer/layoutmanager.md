@@ -1,7 +1,8 @@
 # layoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text container’s layout manager.
 
@@ -18,19 +19,25 @@ The text container’s layout manager.
 unowned(unsafe) var layoutManager: NSLayoutManager? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) NSLayoutManager * layoutManager;
+```
+
 #### Discussion
 
-Avoid assigning a layout manager directly through this property. Instead, use the [`replaceLayoutManager(_:)`](nstextcontainer/replacelayoutmanager(_:).md) method when you want to replace the layout manager. The framework sets the value of this property automatically when you add a text container to your layout manager using the [`addTextContainer(_:)`](nslayoutmanager/addtextcontainer(_:).md) method.
+Avoid assigning a layout manager directly through this property. Instead, use the [`replaceLayoutManager(_:)`](./replacelayoutmanager%28_%29.md) method when you want to replace the layout manager. The framework sets the value of this property automatically when you add a text container to your layout manager using the [`addTextContainer(_:)`](../nslayoutmanager/addtextcontainer%28_%29.md) method.
 
 ## See Also
 
-- [func addTextContainer(NSTextContainer)](nslayoutmanager/addtextcontainer(_:).md)
+### Related Documentation
+- [func addTextContainer(NSTextContainer)](../nslayoutmanager/addtextcontainer%28_%29.md)
   Appends the specified text container to the series of text containers where the layout manager arranges text.
-- [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
-  The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
-- [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
+### Managing text components
+- [var textLayoutManager: NSTextLayoutManager?](./textlayoutmanager.md)
+  The [`NSTextLayoutManager`](../nstextlayoutmanager.md) owning the text container.
+- [func replaceLayoutManager(NSLayoutManager)](./replacelayoutmanager%28_%29.md)
   Replaces the layout manager for the group of text system objects that contains the text container.
-- [var textView: NSTextView?](../appkit/nstextcontainer/textview.md)
+- [var textView: NSTextView?](../../AppKit/nstextcontainer/textview.md)
   The text container’s text view.
 
 

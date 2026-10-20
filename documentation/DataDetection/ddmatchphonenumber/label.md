@@ -1,7 +1,8 @@
 # label
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that categorizes a phone number, such as Home or Work.
 
@@ -20,9 +21,14 @@ A string that categorizes a phone number, such as Home or Work.
 var label: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var phoneNumber: String](ddmatchphonenumber/phonenumber.md)
+### Getting phone information
+- [var phoneNumber: String](./phonenumber.md)
   A string that represents a phone number.
 
 

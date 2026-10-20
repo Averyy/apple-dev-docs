@@ -1,7 +1,8 @@
 # StopIO
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the clock device to stop I/O.
 
@@ -10,29 +11,30 @@ Tells the clock device to stop I/O.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StopIO(IOUserAudioStartStopFlags in_flags);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation always returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess).
+The default implementation always returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md).
 
 Subclass and override this method to handle hardware-specific tasks during I/O shutdown, then call the superclass to update the I/O state. The framework expects this call to always succeed or fail.
 
 ## Parameters
 
-- `in_flags`: A [`IOUserAudioStartStopFlags`](audiodriverkit/iouseraudiostartstopflags.md) value to indicate I/O shutdown behavior.
+- `in_flags`: A [`IOUserAudioStartStopFlags`](../audiodriverkit-page/iouseraudiostartstopflags.md) value to indicate I/O shutdown behavior.
 
 ## See Also
 
-- [StartIO](iouseraudioclockdevice/startio.md)
+### Performing I/O
+- [StartIO](./startio.md)
   Tells the clock device to start I/O.
-- [IOUserAudioStartStopFlags](audiodriverkit/iouseraudiostartstopflags.md)
+- [IOUserAudioStartStopFlags](../audiodriverkit-page/iouseraudiostartstopflags.md)
   Values that indicate I/O starts or stops.
 
 

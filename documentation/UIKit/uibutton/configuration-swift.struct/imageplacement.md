@@ -1,7 +1,8 @@
 # imagePlacement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge against which the button places the image.
 
@@ -10,7 +11,7 @@ The edge against which the button places the image.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,15 +25,16 @@ Use this property to place the image along the top, leading, trailing, or bottom
 
 ## See Also
 
-- [var image: UIImage?](uibutton/configuration-swift.struct/image.md)
+### Configuring images
+- [var image: UIImage?](./image.md)
   The foreground image the button displays.
-- [var imagePadding: CGFloat](uibutton/configuration-swift.struct/imagepadding.md)
+- [var imagePadding: CGFloat](./imagepadding.md)
   The distance between the button’s image and text.
-- [var imageReservation: CGFloat](uibutton/configuration-swift.struct/imagereservation.md)
+- [var imageReservation: CGFloat](./imagereservation.md)
   A value that reserves space for the image in the same axis as the edge against which the button places the image.
-- [var imageColorTransformer: UIConfigurationColorTransformer?](uibutton/configuration-swift.struct/imagecolortransformer.md)
+- [var imageColorTransformer: UIConfigurationColorTransformer?](./imagecolortransformer.md)
   A block that transforms the image color when the button state changes.
-- [var preferredSymbolConfigurationForImage: UIImage.SymbolConfiguration?](uibutton/configuration-swift.struct/preferredsymbolconfigurationforimage.md)
+- [var preferredSymbolConfigurationForImage: UIImage.SymbolConfiguration?](./preferredsymbolconfigurationforimage.md)
   A requested configuration object for the button symbol image.
 
 

@@ -1,7 +1,8 @@
 # applications
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the application activity that contributed to this category’s total activity time.
 
@@ -18,7 +19,8 @@ var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity> 
 
 ## See Also
 
-- [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](deviceactivitydata/categoryactivity/webdomains.md)
+### Accessing contributing activities
+- [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](./webdomains.md)
   Access the web domain activity that contributed to this category’s total activity time.
 
 

@@ -1,7 +1,8 @@
 # added
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Participants that were added by this operation.
 

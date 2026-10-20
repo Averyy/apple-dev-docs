@@ -1,16 +1,17 @@
 # CGFLOAT_DEFINED
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 var CGFLOAT_DEFINED: Int32 { get }
 ```
 
+```c
+#define CGFLOAT_DEFINED
+```
+
 ## See Also
 
-- [var CF_HAS_TYPED_ALLOCATOR: Int32](cf_has_typed_allocator.md)
-- [var COREFOUNDATION_CFPLUGINCOM_SEPARATE: Int32](corefoundation_cfplugincom_separate.md)
+### Macros
+- [var CF_HAS_TYPED_ALLOCATOR: Int32](./cf_has_typed_allocator.md)
+- [var COREFOUNDATION_CFPLUGINCOM_SEPARATE: Int32](./corefoundation_cfplugincom_separate.md)
 
 
 ---

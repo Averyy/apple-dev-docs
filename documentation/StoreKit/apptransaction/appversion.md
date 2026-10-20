@@ -1,7 +1,8 @@
 # appVersion
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app version that the app transaction applies to.
 
@@ -26,13 +27,14 @@ This value is the version string you entered in Xcode. This value is a machine-r
 
 ## See Also
 
-- [let bundleID: String](apptransaction/bundleid.md)
+### Getting app and version information
+- [let bundleID: String](./bundleid.md)
   The bundle identifier that the app transaction applies to.
-- [let originalAppVersion: String](apptransaction/originalappversion.md)
+- [let originalAppVersion: String](./originalappversion.md)
   The app version that the customer originally purchased from the App Store.
-- [let appID: UInt64?](apptransaction/appid.md)
+- [let appID: UInt64?](./appid.md)
   The unique identifier the App Store uses to identify the app.
-- [let appVersionID: UInt64?](apptransaction/appversionid.md)
+- [let appVersionID: UInt64?](./appversionid.md)
   The number that the App Store uses to uniquely identify the version of the app.
 
 

@@ -1,7 +1,8 @@
 # threshold
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alpha threshold for clipping the stroke rendering for supported inks.
 
@@ -24,12 +25,13 @@ Only pixels with an alpha greater than the threshold are drawn. A threshold of `
 
 ## See Also
 
-- [var size: CGSize](pkstrokepoint-swift.struct/size.md)
+### Getting the point’s drawing data
+- [var size: CGSize](./size.md)
   The size of this point.
-- [var opacity: CGFloat](pkstrokepoint-swift.struct/opacity.md)
+- [var opacity: CGFloat](./opacity.md)
   Opacity of the point.
-- [var secondaryScale: CGFloat](pkstrokepoint-swift.struct/secondaryscale.md)
-- [var lateralJitter: CGFloat](pkstrokepoint-swift.struct/lateraljitter.md)
+- [var secondaryScale: CGFloat](./secondaryscale.md)
+- [var lateralJitter: CGFloat](./lateraljitter.md)
   The amount of lateral particle jitter at the stroke edge for supported inks.
 
 

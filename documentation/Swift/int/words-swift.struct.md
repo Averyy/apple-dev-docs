@@ -1,7 +1,8 @@
 # Int.Words
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the words of this integer.
 
@@ -24,66 +25,67 @@ struct Words
 ## Topics
 
 ### Initializers
-- [init(Int)](int/words-swift.struct/init(_:).md)
+- [init(Int)](./words-swift.struct/init%28_%29.md)
 ### Instance Properties
-- [var count: Int](int/words-swift.struct/count.md)
+- [var count: Int](./words-swift.struct/count.md)
   The number of elements in the collection.
-- [var endIndex: Int](int/words-swift.struct/endindex.md)
+- [var endIndex: Int](./words-swift.struct/endindex.md)
   The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Int.Words.Indices](int/words-swift.struct/indices-swift.property.md)
+- [var indices: Int.Words.Indices](./words-swift.struct/indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var startIndex: Int](int/words-swift.struct/startindex.md)
+- [var startIndex: Int](./words-swift.struct/startindex.md)
   The position of the first element in a nonempty collection.
 ### Instance Methods
-- [func index(after: Int) -> Int](int/words-swift.struct/index(after:).md)
+- [func index(after: Int) -> Int](./words-swift.struct/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: Int) -> Int](int/words-swift.struct/index(before:).md)
+- [func index(before: Int) -> Int](./words-swift.struct/index%28before%29.md)
   Returns the position immediately before the given index.
 ### Subscripts
-- [subscript(Int) -> UInt](int/words-swift.struct/subscript(_:).md)
+- [subscript(Int) -> UInt](./words-swift.struct/subscript%28_%29.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [Int.Words.Element](int/words-swift.struct/element.md)
+- [Int.Words.Element](./words-swift.struct/element.md)
   A type representing the sequence’s elements.
-- [Int.Words.Index](int/words-swift.struct/index.md)
+- [Int.Words.Index](./words-swift.struct/index.md)
   A type that represents a position in the collection.
-- [Int.Words.Indices](int/words-swift.struct/indices-swift.typealias.md)
+- [Int.Words.Indices](./words-swift.struct/indices-swift.typealias.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.
-- [Int.Words.Iterator](int/words-swift.struct/iterator.md)
+- [Int.Words.Iterator](./words-swift.struct/iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [Int.Words.SubSequence](int/words-swift.struct/subsequence.md)
+- [Int.Words.SubSequence](./words-swift.struct/subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 ### Default Implementations
-- [BidirectionalCollection Implementations](int/words-swift.struct/bidirectionalcollection-implementations.md)
-- [Collection Implementations](int/words-swift.struct/collection-implementations.md)
-- [RandomAccessCollection Implementations](int/words-swift.struct/randomaccesscollection-implementations.md)
-- [Sequence Implementations](int/words-swift.struct/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./words-swift.struct/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./words-swift.struct/collection-implementations.md)
+- [RandomAccessCollection Implementations](./words-swift.struct/randomaccesscollection-implementations.md)
+- [Sequence Implementations](./words-swift.struct/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [RandomAccessCollection](randomaccesscollection.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [RandomAccessCollection](../randomaccesscollection.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 ## See Also
 
-- [static var bitWidth: Int](int/bitwidth.md)
+### Working with Binary Representation
+- [static var bitWidth: Int](./bitwidth.md)
   The number of bits used for the underlying binary representation of values of this type.
-- [var bitWidth: Int](int/bitwidth-swift.property.md)
+- [var bitWidth: Int](./bitwidth-swift.property.md)
   The number of bits in the current binary representation of this value.
-- [var nonzeroBitCount: Int](int/nonzerobitcount.md)
+- [var nonzeroBitCount: Int](./nonzerobitcount.md)
   The number of bits equal to 1 in this value’s binary representation.
-- [var leadingZeroBitCount: Int](int/leadingzerobitcount.md)
+- [var leadingZeroBitCount: Int](./leadingzerobitcount.md)
   The number of leading zeros in this value’s binary representation.
-- [var trailingZeroBitCount: Int](int/trailingzerobitcount.md)
+- [var trailingZeroBitCount: Int](./trailingzerobitcount.md)
   The number of trailing zeros in this value’s binary representation.
-- [var words: Int.Words](int/words-swift.property.md)
+- [var words: Int.Words](./words-swift.property.md)
   A collection containing the words of this value’s binary representation, in order from the least significant to most significant.
 
 

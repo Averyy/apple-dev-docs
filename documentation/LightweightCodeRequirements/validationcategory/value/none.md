@@ -1,7 +1,8 @@
 # none
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the code is either adhoc signed or signed by an un-recognized certificate chain.
 

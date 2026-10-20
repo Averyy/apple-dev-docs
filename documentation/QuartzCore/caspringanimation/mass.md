@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mass of the object attached to the end of the spring.
 
@@ -19,19 +20,24 @@ The mass of the object attached to the end of the spring.
 var mass: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat mass;
+```
+
 #### Discussion
 
-The default mass is `1`. Increasing this value will increase the spring effect: the attached object will be subject to more oscillations and greater overshoot, resulting in an increased [`settlingDuration`](caspringanimation/settlingduration.md). Decreasing the mass will reduce the spring effect: there will be fewer oscillations and a reduced overshoot, resulting in a decreased [`settlingDuration`](caspringanimation/settlingduration.md).
+The default mass is `1`. Increasing this value will increase the spring effect: the attached object will be subject to more oscillations and greater overshoot, resulting in an increased [`settlingDuration`](./settlingduration.md). Decreasing the mass will reduce the spring effect: there will be fewer oscillations and a reduced overshoot, resulting in a decreased [`settlingDuration`](./settlingduration.md).
 
 ## See Also
 
-- [var damping: CGFloat](caspringanimation/damping.md)
+### Configuring Physical Attributes
+- [var damping: CGFloat](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var initialVelocity: CGFloat](caspringanimation/initialvelocity.md)
+- [var initialVelocity: CGFloat](./initialvelocity.md)
   The initial velocity of the object attached to the spring.
-- [var settlingDuration: CFTimeInterval](caspringanimation/settlingduration.md)
+- [var settlingDuration: CFTimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
-- [var stiffness: CGFloat](caspringanimation/stiffness.md)
+- [var stiffness: CGFloat](./stiffness.md)
   The spring stiffness coefficient.
 
 

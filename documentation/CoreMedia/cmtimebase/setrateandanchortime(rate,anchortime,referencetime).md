@@ -1,7 +1,8 @@
 # setRateAndAnchorTime(rate:anchorTime:referenceTime:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time at a particular primary time, and changes the rate at exactly that time.
 
@@ -22,7 +23,8 @@ func setRateAndAnchorTime(rate: Double, anchorTime: CMTime, referenceTime: CMTim
 
 ## See Also
 
-- [func setRate(Double) throws](cmtimebase/setrate(_:).md)
+### Getting and Setting the Timebase Rate
+- [func setRate(Double) throws](./setrate%28_%29.md)
   Sets the rate.
 
 

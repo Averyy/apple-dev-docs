@@ -1,7 +1,8 @@
 # MTLTensorDataType.uint4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 4-bit unsigned integer data type.
 
@@ -17,6 +18,10 @@ A 4-bit unsigned integer data type.
 
 ```swift
 case uint4
+```
+
+```c
+MTLTensorDataTypeUInt4
 ```
 
 

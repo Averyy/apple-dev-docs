@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string representation of the recovery suggestion.
 

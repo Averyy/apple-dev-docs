@@ -1,12 +1,15 @@
 # execute(_:atTime:withArguments:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the processing or rendering tasks appropriate for the custom patch.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Performs the processing or rendering tasks appropriate for the custom patch.
 func execute(_ context: (any QCPlugInContext)!, atTime time: TimeInterval, withArguments arguments: [AnyHashable : Any]!) -> Bool
 ```
 
+```objc
+- (BOOL) execute:(id<QCPlugInContext>) context atTime:(NSTimeInterval) time withArguments:(NSDictionary *) arguments;
+```
+
 #### Return Value
 
-[`false`](https://developer.apple.com/documentation/swift/false) indicates the custom patch was not able to execute successfully. In this case, the Quartz Composer engine stops rendering the current frame.
+[`false`](../../Swift/false.md) indicates the custom patch was not able to execute successfully. In this case, the Quartz Composer engine stops rendering the current frame.
 
 #### Discussion
 
@@ -27,13 +34,13 @@ The Quartz Composer engine calls this method each time your custom patch needs t
 - updating the values on the output ports
 - rendering to the execution context
 
-For example implementations of this method, see [`Quartz Composer Custom Patch Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787).
+For example implementations of this method, see [Quartz Composer Custom Patch Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787).
 
 ## Parameters
 
-- `context`: An opaque object , conforming to the [`QCPlugInContext`](qcplugincontext.md) protocol, that represents the execution context of the `QCPlugIn` object. Do not retain this object or use it outside of the scope of this method.
+- `context`: An opaque object , conforming to the [`QCPlugInContext`](../qcplugincontext.md) protocol, that represents the execution context of the `QCPlugIn` object. Do not retain this object or use it outside of the scope of this method.
 - `time`: The execution interval.
-- `arguments`: A dictionary of arguments that can be used during execution. See [`Execution Arguments`](execution-arguments.md).
+- `arguments`: A dictionary of arguments that can be used during execution. See [Execution Arguments](../execution-arguments.md).
 
 
 ---

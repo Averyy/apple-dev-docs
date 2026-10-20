@@ -1,7 +1,8 @@
 # prelu(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Parametric ReLU (PReLU) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Parametric ReLU (PReLU) activation operation to the current graph.
 ```swift
 func prelu(alpha: [Float]) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

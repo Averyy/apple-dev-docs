@@ -1,7 +1,8 @@
 # avoidSync
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,13 +18,18 @@
 static var avoidSync: IOSurfaceLockOptions { get }
 ```
 
+```c
+kIOSurfaceLockAvoidSync
+```
+
 #### Discussion
 
 If you want to detect/avoid a potentially expensive paging operation (such as readback from a GPU to system memory) when you lock the buffer, you may include this flag. If locking the buffer requires a readback, the lock will fail with an error return of `kIOReturnCannotLock`.
 
 ## See Also
 
-- [static var readOnly: IOSurfaceLockOptions](iosurfacelockoptions/readonly.md)
+### Options
+- [static var readOnly: IOSurfaceLockOptions](./readonly.md)
 
 
 ---

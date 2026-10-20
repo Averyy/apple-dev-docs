@@ -1,7 +1,8 @@
 # settings
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that provides information about the player’s audio data.
 
@@ -20,13 +21,18 @@ A dictionary that provides information about the player’s audio data.
 var settings: [String : Any] { get }
 ```
 
+```objc
+@property (readonly) NSDictionary<NSString *,id> * settings;
+```
+
 ## See Also
 
-- [var url: URL?](avaudioplayer/url.md)
+### Inspecting the audio data
+- [var url: URL?](./url.md)
   The URL of the audio file.
-- [var data: Data?](avaudioplayer/data.md)
+- [var data: Data?](./data.md)
   The audio data associated with the player.
-- [var format: AVAudioFormat](avaudioplayer/format.md)
+- [var format: AVAudioFormat](./format.md)
   The format of the player’s audio data.
 
 

@@ -1,7 +1,8 @@
 # MLModelError.Code
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Information about a Core ML model error.
 
@@ -20,53 +21,58 @@ Information about a Core ML model error.
 enum Code
 ```
 
+```c
+enum MLModelError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MLModelError.Code.featureType](mlmodelerror-swift.struct/code/featuretype.md)
+- [MLModelError.Code.featureType](./code/featuretype.md)
   An error code for problems related to model features.
-- [MLModelError.Code.parameters](mlmodelerror-swift.struct/code/parameters.md)
+- [MLModelError.Code.parameters](./code/parameters.md)
   An error code for problems related to model parameters.
-- [MLModelError.Code.modelCollection](mlmodelerror-swift.struct/code/modelcollection.md)
+- [MLModelError.Code.modelCollection](./code/modelcollection.md)
   An error code for problems related to retrieving a model collection from the deployment system.
-- [MLModelError.Code.modelDecryptionKeyFetch](mlmodelerror-swift.struct/code/modeldecryptionkeyfetch.md)
+- [MLModelError.Code.modelDecryptionKeyFetch](./code/modeldecryptionkeyfetch.md)
   An error code for problems related to retrieving a model’s decryption key.
-- [MLModelError.Code.modelDecryption](mlmodelerror-swift.struct/code/modeldecryption.md)
+- [MLModelError.Code.modelDecryption](./code/modeldecryption.md)
   An error code for problems related to decrypting models.
-- [MLModelError.Code.update](mlmodelerror-swift.struct/code/update.md)
+- [MLModelError.Code.update](./code/update.md)
   An error code for problems related to on-device model updates.
-- [MLModelError.Code.customLayer](mlmodelerror-swift.struct/code/customlayer.md)
+- [MLModelError.Code.customLayer](./code/customlayer.md)
   An error code for problems related to custom layers.
-- [MLModelError.Code.customModel](mlmodelerror-swift.struct/code/custommodel.md)
+- [MLModelError.Code.customModel](./code/custommodel.md)
   An error code for problems related to custom models.
-- [MLModelError.Code.io](mlmodelerror-swift.struct/code/io.md)
+- [MLModelError.Code.io](./code/io.md)
   An error code for problems related to the system’s input or output.
-- [MLModelError.Code.predictionCancelled](mlmodelerror-swift.struct/code/predictioncancelled.md)
+- [MLModelError.Code.predictionCancelled](./code/predictioncancelled.md)
   An error code for problems related to canceling the prediction before it completes.
-- [MLModelError.Code.generic](mlmodelerror-swift.struct/code/generic.md)
+- [MLModelError.Code.generic](./code/generic.md)
   An error code for runtime issues that don’t apply to the other error codes.
 ### Error domain
-- [let MLModelErrorDomain: String](mlmodelerrordomain.md)
+- [let MLModelErrorDomain: String](../mlmodelerrordomain.md)
   The domain for Core ML errors.
-- [static var errorDomain: String](mlmodelerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./errordomain.md)
 ### Creating a model error
-- [init?(rawValue: Int)](mlmodelerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLModelError](mlmodelerror-swift.struct.md)
+### Model errors
+- [struct MLModelError](../mlmodelerror-swift.struct.md)
   Information about a Core ML model error.
-- [let MLModelErrorDomain: String](mlmodelerrordomain.md)
+- [let MLModelErrorDomain: String](../mlmodelerrordomain.md)
   The domain for Core ML errors.
 
 

@@ -1,7 +1,8 @@
 # NetworkFixedWidthInteger
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -21,26 +22,26 @@ protocol NetworkFixedWidthInteger : FixedWidthInteger
 ## Topics
 
 ### Initializers
-- [init(bigEndian: Self)](networkfixedwidthinteger/init(bigendian:).md)
+- [init(bigEndian: Self)](./networkfixedwidthinteger/init%28bigendian%29.md)
   Creates an integer from its big-endian representation, changing the byte order if necessary.
 ### Instance Properties
-- [var bigEndian: Self](networkfixedwidthinteger/bigendian.md)
+- [var bigEndian: Self](./networkfixedwidthinteger/bigendian.md)
   The big-endian representation of this integer.
 
 ## Relationships
 
 ### Inherits From
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [BinaryInteger](../swift/binaryinteger.md)
-- [Comparable](../swift/comparable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [FixedWidthInteger](../swift/fixedwidthinteger.md)
-- [Hashable](../swift/hashable.md)
-- [LosslessStringConvertible](../swift/losslessstringconvertible.md)
-- [Numeric](../swift/numeric.md)
-- [Strideable](../swift/strideable.md)
+- [AdditiveArithmetic](../Swift/additivearithmetic.md)
+- [BinaryInteger](../Swift/binaryinteger.md)
+- [Comparable](../Swift/comparable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [FixedWidthInteger](../Swift/fixedwidthinteger.md)
+- [Hashable](../Swift/hashable.md)
+- [LosslessStringConvertible](../Swift/losslessstringconvertible.md)
+- [Numeric](../Swift/numeric.md)
+- [Strideable](../Swift/strideable.md)
 
 
 ---

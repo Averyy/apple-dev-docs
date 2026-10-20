@@ -1,7 +1,8 @@
 # init(deviceTypeID:revision:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(deviceTypeID: NSNumber, revision: NSNumber)
+```
+
+```objc
+- (instancetype) initWithDeviceTypeID:(NSNumber *) deviceTypeID revision:(NSNumber *) revision;
 ```
 
 

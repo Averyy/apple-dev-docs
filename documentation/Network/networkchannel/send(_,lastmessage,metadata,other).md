@@ -1,7 +1,8 @@
 # send(_:lastMessage:metadata:other:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data on a connection.
 
@@ -19,6 +20,8 @@ Send data on a connection.
 ```swift
 func send<T>(_ content: Data, lastMessage: Bool = false, metadata: NWProtocolFramer.Message? = nil, @ProtocolMetadataBuilder other builder: () -> [NWProtocolMetadata] = {[]}) async throws where ApplicationProtocol == Framer<T>, T : FramerProtocol
 ```
+
+Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
 ## Parameters
 

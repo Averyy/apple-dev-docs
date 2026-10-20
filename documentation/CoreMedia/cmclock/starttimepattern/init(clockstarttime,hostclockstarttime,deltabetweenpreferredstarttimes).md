@@ -1,7 +1,8 @@
 # init(clockStartTime:hostClockStartTime:deltaBetweenPreferredStartTimes:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

@@ -1,18 +1,19 @@
 # CFStringCompareFlags
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A [`CFOptionFlags`](cfoptionflags.md) type for specifying options for string comparison .
+A [`CFOptionFlags`](./cfoptionflags.md) type for specifying options for string comparison .
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,53 +21,58 @@ A [`CFOptionFlags`](cfoptionflags.md) type for specifying options for string com
 struct CFStringCompareFlags
 ```
 
+```c
+enum CFStringCompareFlags : CFOptionFlags;
+```
+
 #### Overview
 
-See [`String Comparison Flags`](string-comparison-flags.md) for values.
+See [String Comparison Flags](./string-comparison-flags.md) for values.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: CFOptionFlags)](cfstringcompareflags/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./cfstringcompareflags/init%28rawvalue%29.md)
 ### Type Properties
-- [static var compareAnchored: CFStringCompareFlags](cfstringcompareflags/compareanchored.md)
+- [static var compareAnchored: CFStringCompareFlags](./cfstringcompareflags/compareanchored.md)
   Performs searching only on characters at the beginning or end of the range.
-- [static var compareBackwards: CFStringCompareFlags](cfstringcompareflags/comparebackwards.md)
+- [static var compareBackwards: CFStringCompareFlags](./cfstringcompareflags/comparebackwards.md)
   Specifies that the comparison should start at the last elements of the entities being compared (for example, strings or arrays).
-- [static var compareCaseInsensitive: CFStringCompareFlags](cfstringcompareflags/comparecaseinsensitive.md)
+- [static var compareCaseInsensitive: CFStringCompareFlags](./cfstringcompareflags/comparecaseinsensitive.md)
   Specifies that the comparison should ignore differences in case between alphabetical characters.
-- [static var compareDiacriticInsensitive: CFStringCompareFlags](cfstringcompareflags/comparediacriticinsensitive.md)
+- [static var compareDiacriticInsensitive: CFStringCompareFlags](./cfstringcompareflags/comparediacriticinsensitive.md)
   Specifies that the comparison should ignore diacritic markers.
-- [static var compareForcedOrdering: CFStringCompareFlags](cfstringcompareflags/compareforcedordering.md)
+- [static var compareForcedOrdering: CFStringCompareFlags](./cfstringcompareflags/compareforcedordering.md)
   Specifies that the comparison is forced to return either `kCFCompareLessThan` or `kCFCompareGreaterThan` if the strings are equivalent but not strictly equal.
-- [static var compareLocalized: CFStringCompareFlags](cfstringcompareflags/comparelocalized.md)
+- [static var compareLocalized: CFStringCompareFlags](./cfstringcompareflags/comparelocalized.md)
   Specifies that the comparison should take into account differences related to locale, such as the thousands separator character.
-- [static var compareNonliteral: CFStringCompareFlags](cfstringcompareflags/comparenonliteral.md)
+- [static var compareNonliteral: CFStringCompareFlags](./cfstringcompareflags/comparenonliteral.md)
   Specifies that loose equivalence is acceptable, especially as pertains to diacritical marks.
-- [static var compareNumerically: CFStringCompareFlags](cfstringcompareflags/comparenumerically.md)
+- [static var compareNumerically: CFStringCompareFlags](./cfstringcompareflags/comparenumerically.md)
   Specifies that represented numeric values should be used as the basis for comparison and not the actual character values.
-- [static var compareWidthInsensitive: CFStringCompareFlags](cfstringcompareflags/comparewidthinsensitive.md)
+- [static var compareWidthInsensitive: CFStringCompareFlags](./cfstringcompareflags/comparewidthinsensitive.md)
   Specifies that the comparison should ignore width differences.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias CFStringEncoding](cfstringencoding.md)
+### Data Types
+- [typealias CFStringEncoding](./cfstringencoding.md)
   An integer type for constants used to specify supported string encodings in various CFString functions.
-- [enum CFStringEncodings](cfstringencodings.md)
+- [enum CFStringEncodings](./cfstringencodings.md)
   Index type for constants used to specify external string encodings.
-- [struct CFStringInlineBuffer](cfstringinlinebuffer.md)
+- [struct CFStringInlineBuffer](./cfstringinlinebuffer.md)
   Defines the buffer and related fields used for in-line buffer access of characters in CFString objects.
 
 

@@ -1,7 +1,8 @@
 # makeTextWritingDirectionLeftToRight(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the writing direction to left-to-right.
 
@@ -9,13 +10,17 @@ Changes the writing direction to left-to-right.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func makeTextWritingDirectionLeftToRight(_ sender: Any?)
+```
+
+```objc
+- (void) makeTextWritingDirectionLeftToRight:(id) sender;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ Use this method to make your content adopt a left-to-right layout. Apply this la
 
 ## See Also
 
-- [func makeTextWritingDirectionRightToLeft(Any?)](uiresponderstandardeditactions/maketextwritingdirectionrighttoleft(_:).md)
+### Handling writing direction changes
+- [func makeTextWritingDirectionRightToLeft(Any?)](./maketextwritingdirectionrighttoleft%28_%29.md)
   Changes the writing direction to right-to-left.
 
 

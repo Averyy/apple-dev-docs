@@ -1,7 +1,8 @@
 # LAErrorDomain
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain that the framework uses when issuing errors.
 
@@ -19,11 +20,16 @@ The error domain that the framework uses when issuing errors.
 let LAErrorDomain: String
 ```
 
+```c
+extern NSString * const LAErrorDomain;
+```
+
 ## See Also
 
-- [struct LAError](laerror-swift.struct.md)
+### Errors
+- [struct LAError](./laerror-swift.struct.md)
   Errors issued by the LocalAuthentication framework.
-- [LAError.Code](laerror-swift.struct/code.md)
+- [LAError.Code](./laerror-swift.struct/code.md)
   Errors issued by the LocalAuthentication framework.
 
 

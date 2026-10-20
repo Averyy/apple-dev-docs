@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The command queue that this capture scope uses to limit which commands are recorded.
@@ -20,15 +21,20 @@ The command queue that this capture scope uses to limit which commands are recor
 var commandQueue: (any MTLCommandQueue)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLCommandQueue> commandQueue;
+```
+
 #### Discussion
 
-This value is only available if you created the capture scope by calling the [`makeCaptureScope(commandQueue:)`](mtlcapturemanager/makecapturescope(commandqueue:)-1rozd.md) method. Otherwise, the value is `nil`.
+This value is only available if you created the capture scope by calling the [`makeCaptureScope(commandQueue:)`](../mtlcapturemanager/makecapturescope%28commandqueue%29-1rozd.md) method. Otherwise, the value is `nil`.
 
 ## See Also
 
-- [var label: String?](mtlcapturescope/label.md)
+### Identifying the capture scope
+- [var label: String?](./label.md)
   A string that helps you identify the capture scope.
-- [var device: any MTLDevice](mtlcapturescope/device.md)
+- [var device: any MTLDevice](./device.md)
   The device object from which you created the capture scope.
 
 

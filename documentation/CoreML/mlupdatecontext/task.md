@@ -1,7 +1,8 @@
 # task
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The update task that generated the update context.
 
@@ -20,15 +21,20 @@ The update task that generated the update context.
 var task: MLUpdateTask { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLUpdateTask * task;
+```
+
 ## See Also
 
-- [var event: MLUpdateProgressEvent](mlupdatecontext/event.md)
+### Getting the update context
+- [var event: MLUpdateProgressEvent](./event.md)
   The event type that triggered an update task to notify your app’s completion and update progress handlers.
-- [struct MLUpdateProgressEvent](mlupdateprogressevent.md)
+- [struct MLUpdateProgressEvent](../mlupdateprogressevent.md)
   A type of event during a model update task.
-- [var parameters: [MLParameterKey : Any]](mlupdatecontext/parameters.md)
+- [var parameters: [MLParameterKey : Any]](./parameters.md)
   The parameters for the update task.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

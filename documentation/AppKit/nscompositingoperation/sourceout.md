@@ -1,17 +1,22 @@
 # NSCompositingOperation.sourceOut
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The source image wherever it is opaque and the destination image is transparent, and transparent elsewhere.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case sourceOut
+```
+
+```c
+NSCompositingOperationSourceOut
 ```
 
 #### Discussion
@@ -20,35 +25,36 @@ The source image is applied using the formula `R = S*(1 - Da)`.
 
 ## See Also
 
-- [NSCompositingOperation.clear](nscompositingoperation/clear.md)
+### Operations for Compositing
+- [NSCompositingOperation.clear](./clear.md)
   Transparency everywhere.
-- [NSCompositingOperation.copy](nscompositingoperation/copy.md)
+- [NSCompositingOperation.copy](./copy.md)
   The source image.
-- [NSCompositingOperation.sourceOver](nscompositingoperation/sourceover.md)
+- [NSCompositingOperation.sourceOver](./sourceover.md)
   The source image wherever it is opaque, and the destination image elsewhere.
-- [NSCompositingOperation.sourceIn](nscompositingoperation/sourcein.md)
+- [NSCompositingOperation.sourceIn](./sourcein.md)
   The source image wherever both images are opaque, and transparent elsewhere.
-- [NSCompositingOperation.sourceAtop](nscompositingoperation/sourceatop.md)
+- [NSCompositingOperation.sourceAtop](./sourceatop.md)
   The source image wherever both images are opaque, the destination image wherever it is opaque but the source image is transparent, and transparent elsewhere
-- [NSCompositingOperation.destinationOver](nscompositingoperation/destinationover.md)
+- [NSCompositingOperation.destinationOver](./destinationover.md)
   The destination image wherever it is opaque, and the source image elsewhere.
-- [NSCompositingOperation.destinationIn](nscompositingoperation/destinationin.md)
+- [NSCompositingOperation.destinationIn](./destinationin.md)
   The destination image wherever both images are opaque, and transparent elsewhere.
-- [NSCompositingOperation.destinationOut](nscompositingoperation/destinationout.md)
+- [NSCompositingOperation.destinationOut](./destinationout.md)
   The destination image wherever it is opaque and the source image is transparent, and transparent elsewhere.
-- [NSCompositingOperation.destinationAtop](nscompositingoperation/destinationatop.md)
+- [NSCompositingOperation.destinationAtop](./destinationatop.md)
   The destination image wherever both images are opaque, the source image wherever it is opaque and the destination image is transparent, and transparent elsehwere.
-- [NSCompositingOperation.xor](nscompositingoperation/xor.md)
+- [NSCompositingOperation.xor](./xor.md)
   Exclusive OR of the source and destination images.
-- [NSCompositingOperation.plusDarker](nscompositingoperation/plusdarker.md)
+- [NSCompositingOperation.plusDarker](./plusdarker.md)
   The sum of the source and destination images, with color values approach 0 as a limit.
-- [NSCompositingOperation.plusLighter](nscompositingoperation/pluslighter.md)
+- [NSCompositingOperation.plusLighter](./pluslighter.md)
   The sum of the source and destination images, with color values approach 1 as a limit.
-- [NSCompositingOperation.multiply](nscompositingoperation/multiply.md)
+- [NSCompositingOperation.multiply](./multiply.md)
   The source color is multiplied by the destination color.
-- [NSCompositingOperation.screen](nscompositingoperation/screen.md)
+- [NSCompositingOperation.screen](./screen.md)
   Multiplies the complement of the destination and source color values, and then complements the result.
-- [NSCompositingOperation.overlay](nscompositingoperation/overlay.md)
+- [NSCompositingOperation.overlay](./overlay.md)
   Source colors overlay the destination.
 
 

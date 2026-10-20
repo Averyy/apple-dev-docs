@@ -1,7 +1,8 @@
 # GetWorkQueue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the work queue created by the video object.
 
@@ -10,7 +11,7 @@ Gets the work queue created by the video object.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<IODispatchQueue> GetWorkQueue();
 ```
 

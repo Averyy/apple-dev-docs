@@ -1,7 +1,8 @@
 # setPeerRequirement(_:)
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requires that the session peer has the specified requirement
 

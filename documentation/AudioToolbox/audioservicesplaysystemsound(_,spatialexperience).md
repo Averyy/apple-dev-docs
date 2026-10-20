@@ -1,7 +1,8 @@
 # AudioServicesPlaySystemSound(_:spatialExperience:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Play a system sound with the provided spatial audio experience.
 
@@ -16,7 +17,7 @@ func AudioServicesPlaySystemSound(_ systemSoundID: SystemSoundID, spatialExperie
 
 ## Mentions
 
-- [Anchoring sound to a window or volume](spatializing-sound-from-a-uiscene.md)
+- [Anchoring sound to a window or volume](./spatializing-sound-from-a-uiscene.md)
 
 #### Discussion
 

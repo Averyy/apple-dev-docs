@@ -1,7 +1,8 @@
 # phoneNumberCheckingResult(range:phoneNumber:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns a text checking result with the specified phone number.
 
@@ -20,9 +21,13 @@ Creates and returns a text checking result with the specified phone number.
 class func phoneNumberCheckingResult(range: NSRange, phoneNumber: String) -> NSTextCheckingResult
 ```
 
+```objc
++ (NSTextCheckingResult *) phoneNumberCheckingResultWithRange:(NSRange) range phoneNumber:(NSString *) phoneNumber;
+```
+
 #### Return Value
 
-Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingresult/range.md) and a [`resultType`](nstextcheckingresult/resulttype.md) of [`phoneNumber`](nstextcheckingresult/checkingtype/phonenumber.md).
+Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`phoneNumber`](./checkingtype/phonenumber.md).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Returns an `NSTextCheckingResult` with the specified [`range`](nstextcheckingres
 
 ## See Also
 
-- [var phoneNumber: String?](nstextcheckingresult/phonenumber.md)
+### Text Checking Results for Phone Numbers
+- [var phoneNumber: String?](./phonenumber.md)
   The phone number of a type checking result.
 
 

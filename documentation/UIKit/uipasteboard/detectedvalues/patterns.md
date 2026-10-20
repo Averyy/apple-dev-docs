@@ -1,7 +1,8 @@
 # patterns
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of key paths that represent patterns that the data detection system identifies.
 
@@ -9,7 +10,7 @@ A set of key paths that represent patterns that the data detection system identi
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var patterns: Set<PartialKeyPath<UIPasteboard.DetectedValues>> { get }
 
 ## See Also
 
-- [var probableWebSearch: String](uipasteboard/detectedvalues/probablewebsearch.md)
+### Detected patterns
+- [var probableWebSearch: String](./probablewebsearch.md)
   A string that the data detection system identifies as a probable web search item.
-- [var probableWebURL: String](uipasteboard/detectedvalues/probableweburl.md)
+- [var probableWebURL: String](./probableweburl.md)
   A string that the data detection system identifies as a probable web URL.
 
 

@@ -1,7 +1,8 @@
 # wifi
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Wi-Fi system menu bar item.
 
@@ -13,6 +14,10 @@ The Wi-Fi system menu bar item.
 
 ```swift
 static let wifi: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemWifi;
 ```
 
 

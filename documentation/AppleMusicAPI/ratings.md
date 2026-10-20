@@ -1,7 +1,8 @@
 # Ratings
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents a rating for a resource.
 
@@ -10,31 +11,34 @@ An object that represents a rating for a resource.
 
 ## Declaration
 
-```swift
+```
 object Ratings
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Ratings.Attributes](ratings/attributes-data.dictionary.md)
+- [object Ratings.Attributes](./ratings/attributes-data.dictionary.md)
   The attributes for a rating resource.
-- [object Ratings.Relationships](ratings/relationships-data.dictionary.md)
+- [object Ratings.Relationships](./ratings/relationships-data.dictionary.md)
   The relationships for a rating resource.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the rating.
 - `type` (string) *(required)*: This value is always `ratings`.
+
+  **Allowed Values**: `ratings`
 - `href` (string) *(required)*: The relative location for the playlist resource.
 - `attributes` (Ratings.Attributes): The attributes for the rating.
 - `relationships` (Ratings.Relationships): The relationships from ratings to other resources.
 
 ## See Also
 
-- [object RatingsResponse](ratingsresponse.md)
+### Handling the Response
+- [object RatingsResponse](./ratingsresponse.md)
   The response to a request for a rating.
-- [object RatingRequest](ratingrequest.md)
+- [object RatingRequest](./ratingrequest.md)
   A request containing the data for a rating.
 
 

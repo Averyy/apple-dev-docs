@@ -1,7 +1,8 @@
 # CMClockInvalidate(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops the clock.
 
@@ -18,6 +19,10 @@ Stops the clock.
 
 ```swift
 func CMClockInvalidate(_ clock: CMClock)
+```
+
+```c
+extern void CMClockInvalidate(CMClockRef clock);
 ```
 
 #### Discussion

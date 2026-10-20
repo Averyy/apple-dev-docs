@@ -1,7 +1,8 @@
 # cantCreateSingleForkFile
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The file to be created already exists. 
 

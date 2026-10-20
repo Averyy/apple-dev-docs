@@ -1,7 +1,8 @@
 # ImmersiveVideoFrame.VideoLayout.sideBySide
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents side by side video layout.
 

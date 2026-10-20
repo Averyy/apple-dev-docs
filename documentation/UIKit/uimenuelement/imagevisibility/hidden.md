@@ -1,7 +1,8 @@
 # UIMenuElement.ImageVisibility.hidden
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element prefers its image to be hidden, even in contexts where images are shown by default.
 
@@ -16,6 +17,10 @@ The element prefers its image to be hidden, even in contexts where images are sh
 
 ```swift
 case hidden
+```
+
+```c
+UIMenuElementImageVisibilityHidden
 ```
 
 

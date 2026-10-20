@@ -1,7 +1,8 @@
 # samplingStrategy
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy for selecting existing samples as examples in the prompt.
 
@@ -26,9 +27,10 @@ When `nil`, the generator shows no examples and doesn’t retry on repetition. W
 
 ## See Also
 
-- [var validator: ((SampleType) async throws -> Bool)?](samplegenerator/validator.md)
+### Configuring generation
+- [var validator: ((SampleType) async throws -> Bool)?](./validator.md)
   An optional closure that decides whether a generated sample is valid.
-- [SampleGenerator.SamplingStrategy](samplegenerator/samplingstrategy-swift.enum.md)
+- [SampleGenerator.SamplingStrategy](./samplingstrategy-swift.enum.md)
   The values that define how the generator selects existing samples as examples in the generation prompt.
 
 

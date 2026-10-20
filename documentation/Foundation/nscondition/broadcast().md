@@ -1,7 +1,8 @@
 # broadcast()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signals the condition, waking up all threads waiting on it.
 
@@ -20,6 +21,10 @@ Signals the condition, waking up all threads waiting on it.
 func broadcast()
 ```
 
+```objc
+- (void) broadcast;
+```
+
 #### Discussion
 
 If no threads are waiting on the condition, this method does nothing.
@@ -28,7 +33,8 @@ To avoid race conditions, you should invoke this method only while the receiver 
 
 ## See Also
 
-- [func signal()](nscondition/signal.md)
+### Signaling Waiting Threads
+- [func signal()](./signal%28%29.md)
   Signals the condition, waking up one thread waiting on it.
 
 

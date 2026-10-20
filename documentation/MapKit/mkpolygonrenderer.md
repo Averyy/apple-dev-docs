@@ -1,7 +1,8 @@
 # MKPolygonRenderer
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The visual representation of a single polygon overlay.
 
@@ -19,6 +20,10 @@ The visual representation of a single polygon overlay.
 class MKPolygonRenderer
 ```
 
+```objc
+@interface MKPolygonRenderer : MKOverlayPathRenderer
+```
+
 #### Overview
 
 This renderer creates the polygon overlay by first filling the shape and then representing its outline with strokes. You can change the color and other drawing attributes of the polygon by modifying the properties inherited from the parent class.
@@ -26,38 +31,39 @@ This renderer creates the polygon overlay by first filling the shape and then re
 ## Topics
 
 ### Creating a polygon renderer
-- [init(polygon: MKPolygon)](mkpolygonrenderer/init(polygon:).md)
+- [init(polygon: MKPolygon)](./mkpolygonrenderer/init%28polygon%29.md)
   Creates a new renderer that handles drawing for the specified polygon overlay object.
 ### Accessing the polygon overlay object
-- [var polygon: MKPolygon](mkpolygonrenderer/polygon.md)
+- [var polygon: MKPolygon](./mkpolygonrenderer/polygon.md)
   The polygon object that contains the information used to draw the overlay’s contents.
 ### Accessing the stroke
-- [var strokeStart: CGFloat](mkpolygonrenderer/strokestart.md)
+- [var strokeStart: CGFloat](./mkpolygonrenderer/strokestart.md)
   The unit distance along the polygon where the stroke starts.
-- [var strokeEnd: CGFloat](mkpolygonrenderer/strokeend.md)
+- [var strokeEnd: CGFloat](./mkpolygonrenderer/strokeend.md)
   The unit distance along the polygon where the stroke ends.
 
 ## Relationships
 
 ### Inherits From
-- [MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolygon](mkpolygon.md)
+### Custom shape overlays
+- [class MKPolygon](./mkpolygon.md)
   A closed polygon overlay.
-- [class MKMultiPolygon](mkmultipolygon.md)
+- [class MKMultiPolygon](./mkmultipolygon.md)
   A collection of multiple closed polygon overlays.
-- [class MKMultiPolygonRenderer](mkmultipolygonrenderer.md)
+- [class MKMultiPolygonRenderer](./mkmultipolygonrenderer.md)
   The visual representation of multiple polygon overlays.
-- [class MKOverlayPathRenderer](mkoverlaypathrenderer.md)
+- [class MKOverlayPathRenderer](./mkoverlaypathrenderer.md)
   The visual representation of a path-based overlay.
 
 

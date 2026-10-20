@@ -1,7 +1,8 @@
 # HMError.Code.readWritePartialSuccess
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating a partially successful read/write operation.
 
@@ -19,9 +20,14 @@ An error indicating a partially successful read/write operation.
 case readWritePartialSuccess
 ```
 
+```c
+HMErrorCodeReadWritePartialSuccess
+```
+
 ## See Also
 
-- [HMError.Code.readWriteFailure](hmerror/code/readwritefailure.md)
+### Read and write errors
+- [HMError.Code.readWriteFailure](./readwritefailure.md)
   An error indicating a failed read/write operation.
 
 

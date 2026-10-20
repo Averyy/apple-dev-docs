@@ -1,7 +1,8 @@
 # NSHealthUpdateUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message to the user that explains why the app requested permission to save samples to the HealthKit store.
 
@@ -10,9 +11,10 @@ A message to the user that explains why the app requested permission to save sam
 - iPadOS 8.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSHealthUpdateUsageDescription` (Privacy - Health Update Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -20,13 +22,14 @@ A message to the user that explains why the app requested permission to save sam
 
 ## See Also
 
-- [Setting up HealthKit](../healthkit/setting-up-healthkit.md)
+### Health
+- [Setting up HealthKit](../../HealthKit/setting-up-healthkit.md)
   Set up and configure your HealthKit store.
-- [NSHealthClinicalHealthRecordsShareUsageDescription](information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md)
+- [NSHealthClinicalHealthRecordsShareUsageDescription](./nshealthclinicalhealthrecordsshareusagedescription.md)
   A message to the user that explains why the app requested permission to read clinical records.
-- [NSHealthShareUsageDescription](information-property-list/nshealthshareusagedescription.md)
+- [NSHealthShareUsageDescription](./nshealthshareusagedescription.md)
   A message that explains to people why the app requests permission to read samples from the HealthKit store.
-- [NSHealthRequiredReadAuthorizationTypeIdentifiers](information-property-list/nshealthrequiredreadauthorizationtypeidentifiers.md)
+- [NSHealthRequiredReadAuthorizationTypeIdentifiers](./nshealthrequiredreadauthorizationtypeidentifiers.md)
   The clinical record data types that your app must get permission to read.
 
 

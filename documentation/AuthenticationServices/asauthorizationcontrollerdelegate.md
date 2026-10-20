@@ -1,7 +1,8 @@
 # ASAuthorizationControllerDelegate
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing information about the outcome of an authorization request.
 
@@ -21,39 +22,44 @@ An interface for providing information about the outcome of an authorization req
 protocol ASAuthorizationControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationControllerDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Supporting passkeys](supporting-passkeys.md)
-- [Supporting Security Key Authentication Using Physical Keys](supporting-security-key-authentication-using-physical-keys.md)
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Supporting passkeys](./supporting-passkeys.md)
+- [Supporting Security Key Authentication Using Physical Keys](./supporting-security-key-authentication-using-physical-keys.md)
+- [Authenticating people by using passkeys in browser apps](./authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## Topics
 
 ### Handling Successful Authorization
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](./asauthorizationcontrollerdelegate/authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
-- [func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization: ASAuthorization)](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewithauthorization:).md)
+- [func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization: ASAuthorization)](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md)
   Tells the delegate when authorization completes successfully.
-- [class ASAuthorization](asauthorization.md)
+- [class ASAuthorization](./asauthorization.md)
   The encapsulation of a successful authorization by a controller.
 ### Handling Authorization Errors
-- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](asauthorizationcontrollerdelegate/authorizationcontroller(controller:didcompletewitherror:).md)
+- [func authorizationController(controller: ASAuthorizationController, didCompleteWithError: any Error)](./asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md)
   Tells the delegate when authorization fails, and provides an error explaining why.
-- [let ASAuthorizationErrorDomain: String](asauthorizationerrordomain.md)
+- [let ASAuthorizationErrorDomain: String](./asauthorizationerrordomain.md)
   The domain of authorization errors.
-- [struct ASAuthorizationError](asauthorizationerror-swift.struct.md)
+- [struct ASAuthorizationError](./asauthorizationerror-swift.struct.md)
   Errors that can occur during authorization.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any ASAuthorizationControllerDelegate)?](asauthorizationcontroller/delegate.md)
+### Responding to request completion
+- [var delegate: (any ASAuthorizationControllerDelegate)?](./asauthorizationcontroller/delegate.md)
   A delegate that the authorization controller informs about the success or failure of an authorization attempt.
-- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](asauthorizationcontrollerdelegate/authorizationcontroller(_:didcompletewithcustommethod:).md)
+- [func authorizationController(ASAuthorizationController, didCompleteWithCustomMethod: ASAuthorizationCustomMethod)](./asauthorizationcontrollerdelegate/authorizationcontroller%28_,didcompletewithcustommethod%29.md)
   Informs the delegate when authorization completes, and specifies the custom method the user selected.
 
 

@@ -1,7 +1,8 @@
 # kCGImagePropertyGIFFrameInfoArray
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of dictionaries that contain timing information for the image sequence.
 
@@ -20,17 +21,22 @@ An array of dictionaries that contain timing information for the image sequence.
 let kCGImagePropertyGIFFrameInfoArray: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGIFFrameInfoArray;
+```
+
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) in the array contains timing information about an image in the sequence.
+The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each [`CFDictionary`](../CoreFoundation/cfdictionary.md) in the array contains timing information about an image in the sequence.
 
 ## See Also
 
-- [let kCGImagePropertyGIFDelayTime: CFString](kcgimagepropertygifdelaytime.md)
+### Sequence Timing
+- [let kCGImagePropertyGIFDelayTime: CFString](./kcgimagepropertygifdelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence, clamped to a minimum of 100 milliseconds.
-- [let kCGImagePropertyGIFUnclampedDelayTime: CFString](kcgimagepropertygifunclampeddelaytime.md)
+- [let kCGImagePropertyGIFUnclampedDelayTime: CFString](./kcgimagepropertygifunclampeddelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
-- [let kCGImagePropertyGIFLoopCount: CFString](kcgimagepropertygifloopcount.md)
+- [let kCGImagePropertyGIFLoopCount: CFString](./kcgimagepropertygifloopcount.md)
   The number of times to repeat an animated sequence.
 
 

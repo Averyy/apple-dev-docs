@@ -1,7 +1,8 @@
 # init(upstream:predicate:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that publishes only elements that don’t match the previous element, as evaluated by a provided error-throwing closure.
 

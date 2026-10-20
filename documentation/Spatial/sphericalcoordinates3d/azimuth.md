@@ -1,7 +1,8 @@
 # azimuth
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The azimuthal angle, in radians.
 
@@ -22,13 +23,14 @@ var azimuth: Angle2D { get set }
 
 ## See Also
 
-- [var inclination: Angle2D](sphericalcoordinates3d/inclination.md)
+### Inspecting a spherical coordinates structure’s properties
+- [var inclination: Angle2D](./inclination.md)
   The inclination angle, in radians.
-- [var radius: Double](sphericalcoordinates3d/radius.md)
+- [var radius: Double](./radius.md)
   The distance to the origin.
-- [var vector: simd_double3](sphericalcoordinates3d/vector.md)
+- [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the radius, inclination, and azimuth values.
-- [var customMirror: Mirror](sphericalcoordinates3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for this instance.
 
 

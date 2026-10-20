@@ -1,7 +1,8 @@
 # animationEvaluation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Animation-evaluation data baked into this resource at construction time.
 
@@ -25,9 +26,10 @@ Fixed at construction and immutable for the lifetime of the resource — every r
 
 ## See Also
 
-- [SkeletonResource.AnimationEvaluation](skeletonresource/animationevaluation-swift.struct.md)
+### Configuring animation evaluation
+- [SkeletonResource.AnimationEvaluation](./animationevaluation-swift.struct.md)
   A bundle of additional animation-related skeletal data the runtime consumes when evaluating animations against this skeleton.
-- [SkeletonResource.BlendMask](skeletonresource/blendmask.md)
+- [SkeletonResource.BlendMask](./blendmask.md)
   Describes a single blend mask for selective animation control.
 
 

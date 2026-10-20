@@ -1,7 +1,8 @@
 # maximum(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a maximum reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a maximum reduction operation along the given axis operation to the current
 ```swift
 func maximum(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

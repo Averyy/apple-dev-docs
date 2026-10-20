@@ -1,7 +1,8 @@
 # count
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of key-value pairs in the dictionary.
 
@@ -11,7 +12,7 @@ The number of key-value pairs in the dictionary.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var count: Int { get }
 
 ## See Also
 
-- [var isEmpty: Bool](xpcdictionary/isempty.md)
+### Inspecting a dictionary
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the dictionary is empty.
 
 

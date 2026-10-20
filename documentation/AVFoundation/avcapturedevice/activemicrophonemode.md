@@ -1,7 +1,8 @@
 # activeMicrophoneMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device’s active microphone mode.
 
@@ -18,17 +19,22 @@ The device’s active microphone mode.
 class var activeMicrophoneMode: AVCaptureDevice.MicrophoneMode { get }
 ```
 
+```objc
+@property (class, readonly) AVCaptureMicrophoneMode activeMicrophoneMode;
+```
+
 #### Discussion
 
-The value may differ from the value of the [`preferredMicrophoneMode`](avcapturedevice/preferredmicrophonemode.md) property if the app’s active audio route doesn’t support the mode.
+The value may differ from the value of the [`preferredMicrophoneMode`](./preferredmicrophonemode.md) property if the app’s active audio route doesn’t support the mode.
 
 This property is key-value observable.
 
 ## See Also
 
-- [class var preferredMicrophoneMode: AVCaptureDevice.MicrophoneMode](avcapturedevice/preferredmicrophonemode.md)
+### Inspecting the microphone mode
+- [class var preferredMicrophoneMode: AVCaptureDevice.MicrophoneMode](./preferredmicrophonemode.md)
   The microphone mode that the user selects in Control Center.
-- [AVCaptureDevice.MicrophoneMode](avcapturedevice/microphonemode.md)
+- [AVCaptureDevice.MicrophoneMode](./microphonemode.md)
   Constants that define the available microphone modes.
 
 

@@ -1,18 +1,19 @@
 # isPaused
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to run actions and animations attached to the node and its child nodes.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A Boolean value that determines whether to run actions and animations attached t
 var isPaused: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isPaused) BOOL paused;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), specifying that SceneKit should continuously update the node’s contents. Pausing a node pauses any running animations or actions. This property applies to the actions and animations attached to the node itself and those attached to any of its child or descendant nodes.
+The default value of this property is [`false`](../../Swift/false.md), specifying that SceneKit should continuously update the node’s contents. Pausing a node pauses any running animations or actions. This property applies to the actions and animations attached to the node itself and those attached to any of its child or descendant nodes.
 
 ## See Also
 
-- [var presentation: SCNNode](scnnode/presentation.md)
+### Working with Node Animation
+- [var presentation: SCNNode](./presentation.md)
   A node object representing the state of the node as it currently appears onscreen.
 
 

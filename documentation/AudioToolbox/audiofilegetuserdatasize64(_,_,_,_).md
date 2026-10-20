@@ -1,7 +1,8 @@
 # AudioFileGetUserDataSize64(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the size of a user data item in an audio file.
 
@@ -17,6 +18,10 @@ Gets the size of a user data item in an audio file.
 
 ```swift
 func AudioFileGetUserDataSize64(_ inAudioFile: AudioFileID, _ inUserDataID: UInt32, _ inIndex: UInt32, _ outUserDataSize: UnsafeMutablePointer<UInt64>) -> OSStatus
+```
+
+```c
+extern OSStatus AudioFileGetUserDataSize64(AudioFileID inAudioFile, UInt32 inUserDataID, UInt32 inIndex, UInt64 *outUserDataSize);
 ```
 
 #### Return Value
@@ -92,17 +97,18 @@ constexpr size_t CHUNK_BUFFER_SIZE = 16 * 1024;  // Arbitrary, but 16K is the ty
 
 ## See Also
 
-- [func AudioFileCountUserData(AudioFileID, UInt32, UnsafeMutablePointer<UInt32>) -> OSStatus](audiofilecountuserdata(_:_:_:).md)
+### Working with User Data
+- [func AudioFileCountUserData(AudioFileID, UInt32, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiofilecountuserdata%28_,_,_%29.md)
   Gets the number of user data items with a specified ID in a file.
-- [func AudioFileGetUserDataSize(AudioFileID, UInt32, UInt32, UnsafeMutablePointer<UInt32>) -> OSStatus](audiofilegetuserdatasize(_:_:_:_:).md)
+- [func AudioFileGetUserDataSize(AudioFileID, UInt32, UInt32, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiofilegetuserdatasize%28_,_,_,_%29.md)
   Gets the size of a user data item in an audio file.
-- [func AudioFileGetUserData(AudioFileID, UInt32, UInt32, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilegetuserdata(_:_:_:_:_:).md)
+- [func AudioFileGetUserData(AudioFileID, UInt32, UInt32, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilegetuserdata%28_,_,_,_,_%29.md)
   Gets a chunk from an audio file.
-- [func AudioFileGetUserDataAtOffset(AudioFileID, UInt32, UInt32, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilegetuserdataatoffset(_:_:_:_:_:_:).md)
+- [func AudioFileGetUserDataAtOffset(AudioFileID, UInt32, UInt32, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilegetuserdataatoffset%28_,_,_,_,_,_%29.md)
   Gets part of the data from a chunk in an audio file.
-- [func AudioFileSetUserData(AudioFileID, UInt32, UInt32, UInt32, UnsafeRawPointer) -> OSStatus](audiofilesetuserdata(_:_:_:_:_:).md)
+- [func AudioFileSetUserData(AudioFileID, UInt32, UInt32, UInt32, UnsafeRawPointer) -> OSStatus](./audiofilesetuserdata%28_,_,_,_,_%29.md)
   Sets a user data item in an audio file.
-- [func AudioFileRemoveUserData(AudioFileID, UInt32, UInt32) -> OSStatus](audiofileremoveuserdata(_:_:_:).md)
+- [func AudioFileRemoveUserData(AudioFileID, UInt32, UInt32) -> OSStatus](./audiofileremoveuserdata%28_,_,_%29.md)
   Removes a user data item from an audio file.
 
 

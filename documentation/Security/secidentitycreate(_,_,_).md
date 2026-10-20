@@ -1,7 +1,8 @@
 # SecIdentityCreate(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 11.2+
@@ -16,6 +17,10 @@
 
 ```swift
 func SecIdentityCreate(_ allocator: CFAllocator?, _ certificate: SecCertificate, _ privateKey: SecKey) -> SecIdentity?
+```
+
+```c
+SecIdentityRefSecIdentityCreate(CFAllocatorRef allocator, SecCertificateRef certificate, SecKeyRef privateKey);
 ```
 
 #### Return Value

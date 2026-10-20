@@ -1,7 +1,8 @@
 # MTRRVCOperationalStateClusterOperationalCommandResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.4+
@@ -18,25 +19,29 @@
 class MTRRVCOperationalStateClusterOperationalCommandResponseParams
 ```
 
+```objc
+@interface MTRRVCOperationalStateClusterOperationalCommandResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrrvcoperationalstateclusteroperationalcommandresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrrvcoperationalstateclusteroperationalcommandresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var commandResponseState: MTRRVCOperationalStateClusterErrorStateStruct](mtrrvcoperationalstateclusteroperationalcommandresponseparams/commandresponsestate.md)
+- [var commandResponseState: MTRRVCOperationalStateClusterErrorStateStruct](./mtrrvcoperationalstateclusteroperationalcommandresponseparams/commandresponsestate.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

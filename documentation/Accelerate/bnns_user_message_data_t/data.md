@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the additional logging data.
 
@@ -18,6 +19,10 @@ A pointer to the additional logging data.
 
 ```swift
 var data: UnsafeMutableRawPointer?
+```
+
+```c
+void * data;
 ```
 
 

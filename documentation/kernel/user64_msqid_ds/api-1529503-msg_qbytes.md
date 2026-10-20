@@ -1,14 +1,15 @@
 # msg_qbytes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 user64_msglen_t msg_qbytes;
 ```
 

@@ -1,7 +1,8 @@
 # DetectTextRectanglesRequest
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image-analysis request that finds regions of visible text in an image.
 
@@ -21,64 +22,65 @@ struct DetectTextRectanglesRequest
 
 #### Overview
 
-This request generates a collection of [`TextObservation`](textobservation.md) objects that describe each text region the request detects.
+This request generates a collection of [`TextObservation`](./textobservation.md) objects that describe each text region the request detects.
 
 ## Topics
 
 ### Creating a request
-- [init(DetectTextRectanglesRequest.Revision?)](detecttextrectanglesrequest/init(_:).md)
+- [init(DetectTextRectanglesRequest.Revision?)](./detecttextrectanglesrequest/init%28_%29.md)
   Creates a text rectangles detection request.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct TextObservation](textobservation.md)
+- [struct TextObservation](./textobservation.md)
   Information about regions of text that an image-analysis request detects.
 ### Configuring a request
-- [var reportCharacterBoxes: Bool](detecttextrectanglesrequest/reportcharacterboxes.md)
+- [var reportCharacterBoxes: Bool](./detecttextrectanglesrequest/reportcharacterboxes.md)
   A Boolean value that indicates whether the request detects character-bounding boxes.
 ### Getting the revision
-- [let revision: DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.property.md)
+- [let revision: DetectTextRectanglesRequest.Revision](./detecttextrectanglesrequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectTextRectanglesRequest.Revision]](detecttextrectanglesrequest/supportedrevisions.md)
+- [static let supportedRevisions: [DetectTextRectanglesRequest.Revision]](./detecttextrectanglesrequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [DetectTextRectanglesRequest.Revision](detecttextrectanglesrequest/revision-swift.enum.md)
+- [DetectTextRectanglesRequest.Revision](./detecttextrectanglesrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
+### Text and document analysis
+- [Locating and displaying recognized text](./locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
-- [Recognizing tables within a document](recognize-tables-within-a-document.md)
+- [Recognizing tables within a document](./recognize-tables-within-a-document.md)
   Scan a document that contains a table and extract its content in a formatted way.
-- [struct DetectBarcodesRequest](detectbarcodesrequest.md)
+- [struct DetectBarcodesRequest](./detectbarcodesrequest.md)
   A request that detects barcodes in an image.
-- [struct DetectDocumentSegmentationRequest](detectdocumentsegmentationrequest.md)
+- [struct DetectDocumentSegmentationRequest](./detectdocumentsegmentationrequest.md)
   A request that detects rectangular regions that contain text in the input image.
-- [struct RecognizeDocumentsRequest](recognizedocumentsrequest.md)
+- [struct RecognizeDocumentsRequest](./recognizedocumentsrequest.md)
   An image-analysis request to scan an image of a document and provide information about its structure.
-- [struct RecognizeTextRequest](recognizetextrequest.md)
+- [struct RecognizeTextRequest](./recognizetextrequest.md)
   An image-analysis request that recognizes text in an image.
 
 

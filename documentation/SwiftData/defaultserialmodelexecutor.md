@@ -1,7 +1,8 @@
 # DefaultSerialModelExecutor
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that safely performs storage-related tasks using an isolated model context.
 
@@ -24,25 +25,26 @@ class DefaultSerialModelExecutor
 ## Topics
 
 ### Creating a model executor
-- [init(modelContext: ModelContext)](defaultserialmodelexecutor/init(modelcontext:).md)
+- [init(modelContext: ModelContext)](./defaultserialmodelexecutor/init%28modelcontext%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Executor](../swift/executor.md)
-- [ModelExecutor](modelexecutor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SerialExecutor](../swift/serialexecutor.md)
-- [SerialModelExecutor](serialmodelexecutor.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Executor](../Swift/executor.md)
+- [ModelExecutor](./modelexecutor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SerialExecutor](../Swift/serialexecutor.md)
+- [SerialModelExecutor](./serialmodelexecutor.md)
 
 ## See Also
 
-- [protocol SerialModelExecutor](serialmodelexecutor.md)
+### Model executors
+- [protocol SerialModelExecutor](./serialmodelexecutor.md)
   An interface for performing serial storage-related tasks using an isolated model context.
-- [protocol ModelExecutor](modelexecutor.md)
+- [protocol ModelExecutor](./modelexecutor.md)
   An interface for performing storage-related tasks using an isolated model context.
 
 

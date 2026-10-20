@@ -1,7 +1,8 @@
 # NFCFeliCaPollingTimeSlot.max2
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case max2
+```
+
+```c
+NFCFeliCaPollingTimeSlotMax2
 ```
 
 

@@ -1,7 +1,8 @@
 # pathControl(_:shouldDrag:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -11,6 +12,10 @@
 ```swift
 @MainActor
 optional func pathControl(_ pathControl: NSPathControl, shouldDrag pathItem: NSPathControlItem, with pasteboard: NSPasteboard) -> Bool
+```
+
+```objc
+- (BOOL) pathControl:(NSPathControl *) pathControl shouldDragItem:(NSPathControlItem *) pathItem withPasteboard:(NSPasteboard *) pasteboard;
 ```
 
 

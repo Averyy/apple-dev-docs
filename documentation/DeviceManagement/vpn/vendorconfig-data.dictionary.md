@@ -1,7 +1,8 @@
 # VPN.VendorConfig
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The vendor-specific configuration dictionary.
 
@@ -15,7 +16,7 @@ The vendor-specific configuration dictionary.
 
 ## Declaration
 
-```swift
+```
 object VPN.VendorConfig
 ```
 
@@ -28,23 +29,24 @@ object VPN.VendorConfig
 
 ## See Also
 
-- [object VPN.AlwaysOn](vpn/alwayson-data.dictionary.md)
+### Objects
+- [object VPN.AlwaysOn](./alwayson-data.dictionary.md)
   The dictionary that contains IPSec settings.
-- [object VPN.DNS](vpn/dns-data.dictionary.md)
+- [object VPN.DNS](./dns-data.dictionary.md)
   The dictionary to configure DNS settings for the VPN.
-- [object VPN.IKEv2](vpn/ikev2-data.dictionary.md)
+- [object VPN.IKEv2](./ikev2-data.dictionary.md)
   The dictionary to use for an IKEv2 VPN type.
-- [object VPN.IPSec](vpn/ipsec-data.dictionary.md)
+- [object VPN.IPSec](./ipsec-data.dictionary.md)
   The dictionary to use for an IPSec VPN type.
-- [object VPN.IPv4](vpn/ipv4-data.dictionary.md)
+- [object VPN.IPv4](./ipv4-data.dictionary.md)
   The dictionary that contains IPV4 settings.
-- [object VPN.PPP](vpn/ppp-data.dictionary.md)
+- [object VPN.PPP](./ppp-data.dictionary.md)
   The dictionary that contains PPP settings.
-- [object VPN.Proxies](vpn/proxies-data.dictionary.md)
+- [object VPN.Proxies](./proxies-data.dictionary.md)
   The dictionary that contains the Proxies settings.
-- [object VPN.TransparentProxy](vpn/transparentproxy-data.dictionary.md)
+- [object VPN.TransparentProxy](./transparentproxy-data.dictionary.md)
   The dictionary to use for a transparent proxy VPN type.
-- [object VPN.VPN](vpn/vpn-data.dictionary.md)
+- [object VPN.VPN](./vpn-data.dictionary.md)
   The dictionary that contains VPN, IPSec, and IKEv2 settings.
 
 

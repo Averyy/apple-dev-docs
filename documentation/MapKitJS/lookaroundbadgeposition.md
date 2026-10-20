@@ -1,7 +1,8 @@
 # LookAroundBadgePosition
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that control the positions of a badge on a Look Around preview.
 
@@ -10,7 +11,7 @@ Values that control the positions of a badge on a Look Around preview.
 
 ## Declaration
 
-```swift
+```
 const LookAroundBadgePosition: Readonly<{
     readonly TopLeading: "topLeading";
     readonly TopTrailing: "topTrailing";
@@ -23,16 +24,17 @@ type LookAroundBadgePosition =
 ## Topics
 
 ### Badge positions
-- [BottomTrailing](lookaroundbadgeposition/bottomtrailing.md)
+- [BottomTrailing](./lookaroundbadgeposition/bottomtrailing.md)
   Places the badge on the bottom trailing corner of the Look Around preview.
-- [TopLeading](lookaroundbadgeposition/topleading.md)
+- [TopLeading](./lookaroundbadgeposition/topleading.md)
   Places the badge on the top leading corner of the Look Around preview.
-- [TopTrailing](lookaroundbadgeposition/toptrailing.md)
+- [TopTrailing](./lookaroundbadgeposition/toptrailing.md)
   Places the badge on the top trailing corner of the Look Around preview.
 
 ## See Also
 
-- [badgePosition](lookaroundpreview/badgeposition.md)
+### Positioning a badge
+- [badgePosition](./lookaroundpreview/badgeposition.md)
   A value you set to specify the position of a badge on the Look Around preview.
 
 

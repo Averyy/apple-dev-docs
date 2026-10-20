@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body for an experimental rule set.
 
@@ -10,7 +11,7 @@ The data structure of the request body for an experimental rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet.Data
 ```
 
@@ -18,6 +19,8 @@ object GameCenterMatchmakingQueue.Relationships.ExperimentRuleSet.Data
 
 - `id` (string) *(required)*: The unique identifier for the rule set.
 - `type` (string) *(required)*: The type of resource.
+
+  **Allowed Values**: `gameCenterMatchmakingRuleSets`
 
 
 ---

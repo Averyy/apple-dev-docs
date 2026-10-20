@@ -1,7 +1,8 @@
 # bundle()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an `NSBundle` object for the input method.
 
@@ -12,6 +13,10 @@ Returns an `NSBundle` object for the input method.
 
 ```swift
 func bundle() -> Bundle!
+```
+
+```objc
+- (NSBundle *) bundle;
 ```
 
 #### Return Value

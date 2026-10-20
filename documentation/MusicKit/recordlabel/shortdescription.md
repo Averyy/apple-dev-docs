@@ -1,7 +1,8 @@
 # shortDescription
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An abbreviated description to show inline or when the record label appears alongside other content.
 

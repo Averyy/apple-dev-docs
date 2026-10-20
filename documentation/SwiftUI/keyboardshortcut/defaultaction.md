@@ -1,7 +1,8 @@
 # defaultAction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard keyboard shortcut for the default button, consisting of the Return (↩) key and no modifiers.
 
@@ -24,7 +25,8 @@ On macOS, the default button is designated with special coloration. If more than
 
 ## See Also
 
-- [static let cancelAction: KeyboardShortcut](keyboardshortcut/cancelaction.md)
+### Getting standard shortcuts
+- [static let cancelAction: KeyboardShortcut](./cancelaction.md)
   The standard keyboard shortcut for cancelling the in-progress action or dismissing a prompt, consisting of the Escape (⎋) key and no modifiers.
 
 

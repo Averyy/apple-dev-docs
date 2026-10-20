@@ -1,7 +1,8 @@
 # kMDItemWhereFroms
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Describes where the file was obtained from. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Describes where the file was obtained from. A CFArray of CFStrings.
 
 ```swift
 let kMDItemWhereFroms: CFString!
+```
+
+```c
+const CFStringRef kMDItemWhereFroms;
 ```
 
 #### Discussion

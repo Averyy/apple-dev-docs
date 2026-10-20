@@ -1,7 +1,8 @@
 # FileManager.SearchPathDirectory.developerApplicationDirectory
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Developer applications (`/Developer/Applications`).
 
@@ -20,41 +21,46 @@ Developer applications (`/Developer/Applications`).
 case developerApplicationDirectory
 ```
 
+```c
+NSDeveloperApplicationDirectory
+```
+
 #### Discussion
 
 Deprecated: As of Xcode 4.3, there is no longer a Developer Application directory directory; instead, Xcode.app is a self-contained application that gets installed in the user’s Applications directory, by default, although it can be put anywhere.
 
 ## See Also
 
-- [FileManager.SearchPathDirectory.applicationDirectory](filemanager/searchpathdirectory/applicationdirectory.md)
+### Directory Locations
+- [FileManager.SearchPathDirectory.applicationDirectory](./applicationdirectory.md)
   Supported applications (`/Applications`).
-- [FileManager.SearchPathDirectory.demoApplicationDirectory](filemanager/searchpathdirectory/demoapplicationdirectory.md)
+- [FileManager.SearchPathDirectory.demoApplicationDirectory](./demoapplicationdirectory.md)
   Unsupported applications and demonstration versions.
-- [FileManager.SearchPathDirectory.adminApplicationDirectory](filemanager/searchpathdirectory/adminapplicationdirectory.md)
+- [FileManager.SearchPathDirectory.adminApplicationDirectory](./adminapplicationdirectory.md)
   System and network administration applications.
-- [FileManager.SearchPathDirectory.libraryDirectory](filemanager/searchpathdirectory/librarydirectory.md)
+- [FileManager.SearchPathDirectory.libraryDirectory](./librarydirectory.md)
   Various user-visible documentation, support, and configuration files (`/Library`).
-- [FileManager.SearchPathDirectory.developerDirectory](filemanager/searchpathdirectory/developerdirectory.md)
+- [FileManager.SearchPathDirectory.developerDirectory](./developerdirectory.md)
   Developer resources (`/Developer`).
-- [FileManager.SearchPathDirectory.userDirectory](filemanager/searchpathdirectory/userdirectory.md)
+- [FileManager.SearchPathDirectory.userDirectory](./userdirectory.md)
   User home directories (`/Users`).
-- [FileManager.SearchPathDirectory.documentationDirectory](filemanager/searchpathdirectory/documentationdirectory.md)
+- [FileManager.SearchPathDirectory.documentationDirectory](./documentationdirectory.md)
   Documentation.
-- [FileManager.SearchPathDirectory.documentDirectory](filemanager/searchpathdirectory/documentdirectory.md)
+- [FileManager.SearchPathDirectory.documentDirectory](./documentdirectory.md)
   Document directory.
-- [FileManager.SearchPathDirectory.coreServiceDirectory](filemanager/searchpathdirectory/coreservicedirectory.md)
+- [FileManager.SearchPathDirectory.coreServiceDirectory](./coreservicedirectory.md)
   Core services (`System/Library/CoreServices`).
-- [FileManager.SearchPathDirectory.autosavedInformationDirectory](filemanager/searchpathdirectory/autosavedinformationdirectory.md)
+- [FileManager.SearchPathDirectory.autosavedInformationDirectory](./autosavedinformationdirectory.md)
   The user’s autosaved documents (`Library/Autosave Information`).
-- [FileManager.SearchPathDirectory.desktopDirectory](filemanager/searchpathdirectory/desktopdirectory.md)
+- [FileManager.SearchPathDirectory.desktopDirectory](./desktopdirectory.md)
   The user’s desktop directory.
-- [FileManager.SearchPathDirectory.cachesDirectory](filemanager/searchpathdirectory/cachesdirectory.md)
+- [FileManager.SearchPathDirectory.cachesDirectory](./cachesdirectory.md)
   Discardable cache files (`Library/Caches`).
-- [FileManager.SearchPathDirectory.applicationSupportDirectory](filemanager/searchpathdirectory/applicationsupportdirectory.md)
+- [FileManager.SearchPathDirectory.applicationSupportDirectory](./applicationsupportdirectory.md)
   Application support files (`Library/Application Support`).
-- [FileManager.SearchPathDirectory.downloadsDirectory](filemanager/searchpathdirectory/downloadsdirectory.md)
+- [FileManager.SearchPathDirectory.downloadsDirectory](./downloadsdirectory.md)
   The user’s downloads directory.
-- [FileManager.SearchPathDirectory.inputMethodsDirectory](filemanager/searchpathdirectory/inputmethodsdirectory.md)
+- [FileManager.SearchPathDirectory.inputMethodsDirectory](./inputmethodsdirectory.md)
   Input Methods `(Library/Input Methods)`.
 
 

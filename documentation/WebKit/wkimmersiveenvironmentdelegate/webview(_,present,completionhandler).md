@@ -2,6 +2,7 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+func webView(_ webView: WKWebView, present environment: WKImmersiveEnvironment, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 func webView(_ webView: WKWebView, presentImmersiveEnvironment environment: WKImmersiveEnvironment) async throws
+```
+
+```objc
+- (void) webView:(WKWebView *) webView presentImmersiveEnvironment:(WKImmersiveEnvironment *) environment completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion

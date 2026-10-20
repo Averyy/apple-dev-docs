@@ -1,7 +1,8 @@
 # init(forUpdating:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
 
@@ -20,13 +21,17 @@ Returns a file handle initialized for reading and writing to the file, device, o
 convenience init(forUpdating url: URL) throws
 ```
 
+```objc
++ (instancetype) fileHandleForUpdatingURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Return Value
 
 The initialized file handle object or `nil` if no file exists at `url`.
 
 #### Discussion
 
-The file pointer is set to the beginning of the file. The returned object responds to both read and [`write(_:)`](filehandle/write(_:).md) messages.
+The file pointer is set to the beginning of the file. The returned object responds to both read and [`write(_:)`](./write%28_%29.md) messages.
 
 When using this method to create a file handle object, the file handle owns its associated file descriptor and is responsible for closing it.
 

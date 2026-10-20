@@ -1,7 +1,8 @@
 # localizedCapitalized
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capitalized representation of the string that is produced using the current locale.
 

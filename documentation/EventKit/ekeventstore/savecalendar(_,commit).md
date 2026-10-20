@@ -1,7 +1,8 @@
 # saveCalendar(_:commit:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves a calendar to the event store by either committing or batching the changes.
 
@@ -18,30 +19,35 @@ Saves a calendar to the event store by either committing or batching the changes
 func saveCalendar(_ calendar: EKCalendar, commit: Bool) throws
 ```
 
+```objc
+- (BOOL) saveCalendar:(EKCalendar *) calendar commit:(BOOL) commit error:(NSError **) error;
+```
+
 #### Discussion
 
 This method raises an exception if `calendar` belongs to another event store.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. Call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. Call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
 - `calendar`: The calendar to save.
-- `commit`: [`true`](https://developer.apple.com/documentation/swift/true) to save the calendar immediately; otherwise, the change is batched until the [`commit()`](ekeventstore/commit().md) method is invoked.
+- `commit`: [`true`](../../Swift/true.md) to save the calendar immediately; otherwise, the change is batched until the [`commit()`](./commit%28%29.md) method is invoked.
 
 ## See Also
 
-- [var defaultCalendarForNewEvents: EKCalendar?](ekeventstore/defaultcalendarfornewevents.md)
+### Accessing calendars
+- [var defaultCalendarForNewEvents: EKCalendar?](./defaultcalendarfornewevents.md)
   The calendar that events are added to by default, as specified by user settings.
-- [func defaultCalendarForNewReminders() -> EKCalendar?](ekeventstore/defaultcalendarfornewreminders.md)
+- [func defaultCalendarForNewReminders() -> EKCalendar?](./defaultcalendarfornewreminders%28%29.md)
   Identifies the default calendar for adding reminders to, as specified by user settings.
-- [func calendars(for: EKEntityType) -> [EKCalendar]](ekeventstore/calendars(for:).md)
+- [func calendars(for: EKEntityType) -> [EKCalendar]](./calendars%28for%29.md)
   Identifies the calendars that support a given entity type, such as reminders or events.
-- [func calendar(withIdentifier: String) -> EKCalendar?](ekeventstore/calendar(withidentifier:).md)
+- [func calendar(withIdentifier: String) -> EKCalendar?](./calendar%28withidentifier%29.md)
   Locates a calendar with the specified identifier.
-- [func removeCalendar(EKCalendar, commit: Bool) throws](ekeventstore/removecalendar(_:commit:).md)
+- [func removeCalendar(EKCalendar, commit: Bool) throws](./removecalendar%28_,commit%29.md)
   Removes a calendar from the event store by either committing or batching the changes.
-- [var calendars: [EKCalendar]](ekeventstore/calendars.md)
+- [var calendars: [EKCalendar]](./calendars.md)
   The calendars associated with the event store.
 
 

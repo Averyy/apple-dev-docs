@@ -1,23 +1,28 @@
 # CFCharacterSetRemoveCharactersInString(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes the characters in a given string from a character set.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCharacterSetRemoveCharactersInString(_ theSet: CFMutableCharacterSet!, _ theString: CFString!)
+```
+
+```c
+extern void CFCharacterSetRemoveCharactersInString(CFMutableCharacterSetRef theSet, CFStringRef theString);
 ```
 
 ## Parameters
@@ -27,7 +32,8 @@ func CFCharacterSetRemoveCharactersInString(_ theSet: CFMutableCharacterSet!, _ 
 
 ## See Also
 
-- [func CFCharacterSetRemoveCharactersInRange(CFMutableCharacterSet!, CFRange)](cfcharactersetremovecharactersinrange(_:_:).md)
+### Removing Characters
+- [func CFCharacterSetRemoveCharactersInRange(CFMutableCharacterSet!, CFRange)](./cfcharactersetremovecharactersinrange%28_,_%29.md)
   Removes a given range of Unicode characters from a character set.
 
 

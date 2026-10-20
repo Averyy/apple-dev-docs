@@ -1,7 +1,8 @@
 # symbolColorRenderingMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color rendering mode of the image.
 

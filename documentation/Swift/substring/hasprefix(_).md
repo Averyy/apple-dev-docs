@@ -1,7 +1,8 @@
 # hasPrefix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the string begins with the specified prefix.
 

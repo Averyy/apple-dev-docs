@@ -1,7 +1,8 @@
 # new PlaceLookup(options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a place lookup with a set of options.
 
@@ -10,7 +11,7 @@ Creates a place lookup with a set of options.
 
 ## Declaration
 
-```swift
+```
 constructor(options?: ServiceConstructorOptions);
 ```
 

@@ -1,7 +1,8 @@
 # MLUpdateProgressHandlers
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of closures an update task uses to notify your app of its progress.
 
@@ -20,47 +21,52 @@ A collection of closures an update task uses to notify your app of its progress.
 class MLUpdateProgressHandlers
 ```
 
+```objc
+@interface MLUpdateProgressHandlers : NSObject
+```
+
 ## Topics
 
 ### Creating progress handlers
-- [init(forEvents: MLUpdateProgressEvent, progressHandler: ((MLUpdateContext) -> Void)?, completionHandler: (MLUpdateContext) -> Void)](mlupdateprogresshandlers/init(forevents:progresshandler:completionhandler:).md)
+- [init(forEvents: MLUpdateProgressEvent, progressHandler: ((MLUpdateContext) -> Void)?, completionHandler: (MLUpdateContext) -> Void)](./mlupdateprogresshandlers/init%28forevents,progresshandler,completionhandler%29.md)
   Creates the collection of closures an update task uses to notify your app of its progress.
-- [struct MLUpdateProgressEvent](mlupdateprogressevent.md)
+- [struct MLUpdateProgressEvent](./mlupdateprogressevent.md)
   A type of event during a model update task.
-- [class MLUpdateContext](mlupdatecontext.md)
+- [class MLUpdateContext](./mlupdatecontext.md)
   The context an update task provides to your app’s completion and update progress handlers.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, completionHandler: (MLUpdateContext) -> Void) throws](mlupdatetask/init(formodelat:trainingdata:completionhandler:).md)
+### Creating an update task
+- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, completionHandler: (MLUpdateContext) -> Void) throws](./mlupdatetask/init%28formodelat,trainingdata,completionhandler%29.md)
   Creates a task that updates the model at the URL with the training data, and calls the completion handler when the update completes.
-- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, progressHandlers: MLUpdateProgressHandlers) throws](mlupdatetask/init(formodelat:trainingdata:progresshandlers:).md)
+- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, progressHandlers: MLUpdateProgressHandlers) throws](./mlupdatetask/init%28formodelat,trainingdata,progresshandlers%29.md)
   Creates a task that updates the model at the URL with the training data, and calls the progress handlers during and after the update.
-- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, completionHandler: (MLUpdateContext) -> Void) throws](mlupdatetask/init(formodelat:trainingdata:configuration:completionhandler:).md)
+- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, completionHandler: (MLUpdateContext) -> Void) throws](./mlupdatetask/init%28formodelat,trainingdata,configuration,completionhandler%29.md)
   Creates a task that updates the model at the URL with the training data and configuration, and calls the completion handler when the update completes.
-- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, progressHandlers: MLUpdateProgressHandlers) throws](mlupdatetask/init(formodelat:trainingdata:configuration:progresshandlers:).md)
+- [convenience init(forModelAt: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, progressHandlers: MLUpdateProgressHandlers) throws](./mlupdatetask/init%28formodelat,trainingdata,configuration,progresshandlers%29.md)
   Creates a task that updates the model at the URL with the training data and configuration, and calls the progress handlers during and after the update.
-- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, completionHandler: (MLUpdateContext) -> Void) throws](mlupdatetask/init(formodelaturl:trainingdata:completionhandler:).md)
-- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, progressHandlers: MLUpdateProgressHandlers) throws](mlupdatetask/init(formodelaturl:trainingdata:progresshandlers:).md)
-- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, completionHandler: (MLUpdateContext) -> Void) throws](mlupdatetask/init(formodelaturl:trainingdata:configuration:completionhandler:).md)
-- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, progressHandlers: MLUpdateProgressHandlers) throws](mlupdatetask/init(formodelaturl:trainingdata:configuration:progresshandlers:).md)
-- [protocol MLBatchProvider](mlbatchprovider.md)
+- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, completionHandler: (MLUpdateContext) -> Void) throws](./mlupdatetask/init%28formodelaturl,trainingdata,completionhandler%29.md)
+- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, progressHandlers: MLUpdateProgressHandlers) throws](./mlupdatetask/init%28formodelaturl,trainingdata,progresshandlers%29.md)
+- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, completionHandler: (MLUpdateContext) -> Void) throws](./mlupdatetask/init%28formodelaturl,trainingdata,configuration,completionhandler%29.md)
+- [convenience init(forModelAtURL: URL, trainingData: any MLBatchProvider, configuration: MLModelConfiguration?, progressHandlers: MLUpdateProgressHandlers) throws](./mlupdatetask/init%28formodelaturl,trainingdata,configuration,progresshandlers%29.md)
+- [protocol MLBatchProvider](./mlbatchprovider.md)
   An interface that represents a collection of feature providers.
-- [class MLModelConfiguration](mlmodelconfiguration.md)
+- [class MLModelConfiguration](./mlmodelconfiguration.md)
   The settings for creating or updating a machine learning model.
-- [class MLUpdateContext](mlupdatecontext.md)
+- [class MLUpdateContext](./mlupdatecontext.md)
   The context an update task provides to your app’s completion and update progress handlers.
 
 

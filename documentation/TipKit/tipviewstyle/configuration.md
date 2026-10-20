@@ -1,7 +1,8 @@
 # TipViewStyle.Configuration
 
 **Framework**: TipKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The tip style’s configuration.
 

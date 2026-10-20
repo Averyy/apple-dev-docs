@@ -1,7 +1,8 @@
 # SSReadingListErrorDomain
 
 **Framework**: Safari Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Safari Reading List errors.
 
@@ -17,13 +18,18 @@ The domain for Safari Reading List errors.
 let SSReadingListErrorDomain: String
 ```
 
+```c
+extern NSString * const SSReadingListErrorDomain;
+```
+
 ## See Also
 
-- [class SSReadingList](ssreadinglist.md)
+### Safari Reading List
+- [class SSReadingList](./ssreadinglist.md)
   An object for adding items to a user’s Safari Reading List.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](./ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
-- [struct SSReadingListError](ssreadinglisterror.md)
+- [struct SSReadingListError](./ssreadinglisterror.md)
   A Safari Reading List error.
 
 

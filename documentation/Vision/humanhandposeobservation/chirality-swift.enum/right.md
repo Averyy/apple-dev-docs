@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.Chirality.right
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +20,8 @@ case right
 
 ## See Also
 
-- [HumanHandPoseObservation.Chirality.left](humanhandposeobservation/chirality-swift.enum/left.md)
+### Getting the handedness
+- [HumanHandPoseObservation.Chirality.left](./left.md)
 
 
 ---

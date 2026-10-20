@@ -1,7 +1,8 @@
 # forceThreadScan
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether to force a network scan before requesting Thread credentials. The default is NO.
 
@@ -18,6 +19,10 @@ Whether to force a network scan before requesting Thread credentials. The defaul
 
 ```swift
 var forceThreadScan: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL forceThreadScan;
 ```
 
 #### Discussion

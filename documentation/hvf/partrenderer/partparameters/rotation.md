@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation applied to the part, counterclockwise, in radians
 

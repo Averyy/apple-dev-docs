@@ -1,7 +1,8 @@
 # AVCaptureVideoDataOutputSampleBufferDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for receiving sample buffers from, and monitoring the status of, a video data output.
 
@@ -19,32 +20,37 @@ Methods for receiving sample buffers from, and monitoring the status of, a video
 protocol AVCaptureVideoDataOutputSampleBufferDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVCaptureVideoDataOutputSampleBufferDelegate <NSObject>
+```
+
 #### Overview
 
-This protocol defines an interface for delegates of an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) object to receive captured video sample buffers and be notified of late sample buffers that were dropped.
+This protocol defines an interface for delegates of an [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) object to receive captured video sample buffers and be notified of late sample buffers that were dropped.
 
-The delegate of an [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) object must adopt the `AVCaptureVideoDataOutputSampleBufferDelegate` protocol. The methods in this protocol are optional.
+The delegate of an [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) object must adopt the `AVCaptureVideoDataOutputSampleBufferDelegate` protocol. The methods in this protocol are optional.
 
 ## Topics
 
 ### Managing sample buffer behavior
-- [func captureOutput(AVCaptureOutput, didOutput: CMSampleBuffer, from: AVCaptureConnection)](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:didoutput:from:).md)
+- [func captureOutput(AVCaptureOutput, didOutput: CMSampleBuffer, from: AVCaptureConnection)](./avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,didoutput,from%29.md)
   Notifies the delegate that a new video frame was written.
-- [func captureOutput(AVCaptureOutput, didDrop: CMSampleBuffer, from: AVCaptureConnection)](avcapturevideodataoutputsamplebufferdelegate/captureoutput(_:diddrop:from:).md)
+- [func captureOutput(AVCaptureOutput, didDrop: CMSampleBuffer, from: AVCaptureConnection)](./avcapturevideodataoutputsamplebufferdelegate/captureoutput%28_,diddrop,from%29.md)
   Notifies the delegate that a video frame was discarded.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func setSampleBufferDelegate((any AVCaptureVideoDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](avcapturevideodataoutput/setsamplebufferdelegate(_:queue:).md)
+### Receiving captured video data
+- [func setSampleBufferDelegate((any AVCaptureVideoDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](./avcapturevideodataoutput/setsamplebufferdelegate%28_,queue%29.md)
   Sets the sample buffer delegate and the queue for invoking callbacks.
-- [var sampleBufferDelegate: (any AVCaptureVideoDataOutputSampleBufferDelegate)?](avcapturevideodataoutput/samplebufferdelegate.md)
+- [var sampleBufferDelegate: (any AVCaptureVideoDataOutputSampleBufferDelegate)?](./avcapturevideodataoutput/samplebufferdelegate.md)
   The capture object’s delegate.
-- [var sampleBufferCallbackQueue: dispatch_queue_t?](avcapturevideodataoutput/samplebuffercallbackqueue.md)
+- [var sampleBufferCallbackQueue: dispatch_queue_t?](./avcapturevideodataoutput/samplebuffercallbackqueue.md)
   The queue on which the system invokes delegate callbacks.
 
 

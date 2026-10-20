@@ -1,12 +1,15 @@
 # init(identifier:displayName:supportedFamilies:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new complication descriptor.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -22,9 +25,10 @@ convenience init(identifier: String, displayName: String, supportedFamilies: [CL
 
 ## See Also
 
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userActivity: NSUserActivity)](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:).md)
+### Creating descriptors
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userActivity: NSUserActivity)](./init%28identifier,displayname,supportedfamilies,useractivity%29.md)
   Returns a new complication descriptor with an associated user activity.
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:userinfo:).md)
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](./init%28identifier,displayname,supportedfamilies,userinfo%29.md)
   Returns a new complication descriptor with an associated dictionary of user data.
 
 

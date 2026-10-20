@@ -1,13 +1,14 @@
 # CustomNSError Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var errorCode: Int](mlcreateerror/errorcode.md)
+- [var errorCode: Int](./errorcode.md)
   The numeric code of this error.
-- [var errorUserInfo: [String : Any]](mlcreateerror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](./erroruserinfo.md)
   A dictionary that provides additional information about the error.
 
 

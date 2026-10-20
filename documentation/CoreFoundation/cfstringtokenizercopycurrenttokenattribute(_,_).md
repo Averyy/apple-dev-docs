@@ -1,7 +1,8 @@
 # CFStringTokenizerCopyCurrentTokenAttribute(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a given attribute of the current token.
 
@@ -20,9 +21,13 @@ Returns a given attribute of the current token.
 func CFStringTokenizerCopyCurrentTokenAttribute(_ tokenizer: CFStringTokenizer!, _ attribute: CFOptionFlags) -> CFTypeRef!
 ```
 
+```c
+extern CFTypeRefCFStringTokenizerCopyCurrentTokenAttribute(CFStringTokenizerRef tokenizer, CFOptionFlags attribute);
+```
+
 #### Return Value
 
-The attribute specified by `attribute` of the current token, or `NULL` if the current token does not have the specified attribute or there is no current token. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The attribute specified by `attribute` of the current token, or `NULL` if the current token does not have the specified attribute or there is no current token. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ The attribute specified by `attribute` of the current token, or `NULL` if the cu
 
 ## See Also
 
-- [func CFStringTokenizerGetCurrentTokenRange(CFStringTokenizer!) -> CFRange](cfstringtokenizergetcurrenttokenrange(_:).md)
+### Getting Information About the Current Token
+- [func CFStringTokenizerGetCurrentTokenRange(CFStringTokenizer!) -> CFRange](./cfstringtokenizergetcurrenttokenrange%28_%29.md)
   Returns the range of the current token.
-- [func CFStringTokenizerGetCurrentSubTokens(CFStringTokenizer!, UnsafeMutablePointer<CFRange>!, CFIndex, CFMutableArray!) -> CFIndex](cfstringtokenizergetcurrentsubtokens(_:_:_:_:).md)
+- [func CFStringTokenizerGetCurrentSubTokens(CFStringTokenizer!, UnsafeMutablePointer<CFRange>!, CFIndex, CFMutableArray!) -> CFIndex](./cfstringtokenizergetcurrentsubtokens%28_,_,_,_%29.md)
   Retrieves the subtokens or derived subtokens contained in the compound token.
 
 

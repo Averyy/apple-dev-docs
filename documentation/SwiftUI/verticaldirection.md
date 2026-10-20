@@ -1,7 +1,8 @@
 # VerticalDirection
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A direction on the vertical axis.
 
@@ -24,36 +25,37 @@ enum VerticalDirection
 ## Topics
 
 ### Structures
-- [VerticalDirection.Set](verticaldirection/set.md)
+- [VerticalDirection.Set](./verticaldirection/set.md)
   An efficient set of vertical directions.
 ### Enumeration Cases
-- [VerticalDirection.down](verticaldirection/down.md)
+- [VerticalDirection.down](./verticaldirection/down.md)
   The downward direction.
-- [VerticalDirection.up](verticaldirection/up.md)
+- [VerticalDirection.up](./verticaldirection/up.md)
   The upward direction.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HorizontalDirection](horizontaldirection.md)
+### Supporting types
+- [enum HorizontalDirection](./horizontaldirection.md)
   A direction on the horizontal axis.
-- [enum FrameResizePosition](frameresizeposition.md)
+- [enum FrameResizePosition](./frameresizeposition.md)
   The position along the perimeter of a rectangular frame (its edges and corners) from which it’s resized.
-- [enum FrameResizeDirection](frameresizedirection.md)
+- [enum FrameResizeDirection](./frameresizedirection.md)
   The direction in which a rectangular frame can be resized.
 
 

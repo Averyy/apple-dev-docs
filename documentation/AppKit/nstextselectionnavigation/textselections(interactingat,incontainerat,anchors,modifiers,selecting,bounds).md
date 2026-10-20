@@ -1,7 +1,8 @@
 # textSelections(interactingAt:inContainerAt:anchors:modifiers:selecting:bounds:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of text selections produced by a tap or click at the point you specify.
 
@@ -14,6 +15,10 @@ Returns an array of text selections produced by a tap or click at the point you 
 func textSelections(interactingAt point: CGPoint, inContainerAt containerLocation: any NSTextLocation, anchors: [NSTextSelection], modifiers: NSTextSelectionNavigation.Modifier, selecting: Bool, bounds: CGRect) -> [NSTextSelection]
 ```
 
+```objc
+- (NSArray<NSTextSelection *> *) textSelectionsInteractingAtPoint:(CGPoint) point inContainerAtLocation:(id<NSTextLocation>) containerLocation anchors:(NSArray<NSTextSelection *> *) anchors modifiers:(NSTextSelectionNavigationModifier) modifiers selecting:(BOOL) selecting bounds:(CGRect) bounds;
+```
+
 #### Return Value
 
 An array of text selections.
@@ -23,15 +28,16 @@ An array of text selections.
 - `point`: A `CGPoint` that represents the location of the tap or click.
 - `containerLocation`: A `NSTextLocation that describes the contasiner location`.
 - `anchors`: An array of `NSTextSelection` objects.
-- `modifiers`: One or more [`NSTextSelectionNavigation.Modifier`](nstextselectionnavigation/modifier.md) options.
+- `modifiers`: One or more [`NSTextSelectionNavigation.Modifier`](./modifier.md) options.
 - `selecting`: A Boolean value that indicates if the selection is in drag session.
 - `bounds`: A `CGRect` that defines the view area in the container’s coordinate system that can interact with events.
 
 ## See Also
 
-- [func textSelection(for: NSTextSelection.Granularity, enclosing: NSTextSelection) -> NSTextSelection](nstextselectionnavigation/textselection(for:enclosing:).md)
+### Working with text selections
+- [func textSelection(for: NSTextSelection.Granularity, enclosing: NSTextSelection) -> NSTextSelection](./textselection%28for,enclosing%29.md)
   Returns a text selection expanded to the nearest boundaries for the selection granularity and enclosing text selection text ranges you specify.
-- [func destinationSelection(for: NSTextSelection, direction: NSTextSelectionNavigation.Direction, destination: NSTextSelectionNavigation.Destination, extending: Bool, confined: Bool) -> NSTextSelection?](nstextselectionnavigation/destinationselection(for:direction:destination:extending:confined:).md)
+- [func destinationSelection(for: NSTextSelection, direction: NSTextSelectionNavigation.Direction, destination: NSTextSelectionNavigation.Destination, extending: Bool, confined: Bool) -> NSTextSelection?](./destinationselection%28for,direction,destination,extending,confined%29.md)
   Returns a new selection that results from applying the navigation operations you specify to the text selection you provide.
 
 

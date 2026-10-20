@@ -1,7 +1,8 @@
 # storeOverlayWillStartPresentation(_:transitionContext:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the platform presents an overlay.
 
@@ -17,9 +18,13 @@ Indicates that the platform presents an overlay.
 optional func storeOverlayWillStartPresentation(_ overlay: SKOverlay, transitionContext: SKOverlay.TransitionContext)
 ```
 
+```objc
+- (void) storeOverlay:(SKOverlay *) overlay willStartPresentation:(SKOverlayTransitionContext *) transitionContext;
+```
+
 #### Discussion
 
-Use the `transitionContext` parameter to animate updates to the UI on the main thread. For example, make a [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview) disappear by animating the change of its opacity to 0% as shown in the following code:
+Use the `transitionContext` parameter to animate updates to the UI on the main thread. For example, make a [`UIImageView`](../../UIKit/uiimageview.md) disappear by animating the change of its opacity to 0% as shown in the following code:
 
 ```swift
 func storeOverlayWillStartPresentation(_ overlay: SKOverlay, transitionContext: SKOverlay.TransitionContext) {
@@ -36,13 +41,14 @@ func storeOverlayWillStartPresentation(_ overlay: SKOverlay, transitionContext: 
 
 ## See Also
 
-- [func storeOverlayDidFinishPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaydidfinishpresentation(_:transitioncontext:).md)
+### Responding to the Overlay’s Appearance and Disappearance
+- [func storeOverlayDidFinishPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](./storeoverlaydidfinishpresentation%28_,transitioncontext%29.md)
   Indicates that the platform finished presenting an overlay.
-- [func storeOverlayWillStartDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaywillstartdismissal(_:transitioncontext:).md)
+- [func storeOverlayWillStartDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](./storeoverlaywillstartdismissal%28_,transitioncontext%29.md)
   Indicates that the platform dismisses an overlay.
-- [func storeOverlayDidFinishDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaydidfinishdismissal(_:transitioncontext:).md)
+- [func storeOverlayDidFinishDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](./storeoverlaydidfinishdismissal%28_,transitioncontext%29.md)
   Indicates that platform finished dismissing an overlay.
-- [SKOverlay.TransitionContext](skoverlay/transitioncontext.md)
+- [SKOverlay.TransitionContext](../skoverlay/transitioncontext.md)
   A context object you can use to animate UI changes while the platform presents or dismisses an overlay.
 
 

@@ -1,7 +1,8 @@
 # SLRequestMethod.POST
 
 **Framework**: Social  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Submits data to be processed.
 
@@ -17,17 +18,22 @@ Submits data to be processed.
 case POST
 ```
 
+```c
+SLRequestMethodPOST
+```
+
 #### Discussion
 
 Use a POST request to submit information to the specified server, such as a status update or an image.
 
 ## See Also
 
-- [SLRequestMethod.GET](slrequestmethod/get.md)
+### Constants
+- [SLRequestMethod.GET](./get.md)
   Requests information from the specified resource.
-- [SLRequestMethod.DELETE](slrequestmethod/delete.md)
+- [SLRequestMethod.DELETE](./delete.md)
   Deletes the specified resource.
-- [SLRequestMethod.PUT](slrequestmethod/put.md)
+- [SLRequestMethod.PUT](./put.md)
   Uses a PUT request to submit the data.
 
 

@@ -1,7 +1,8 @@
 # shouldReaderModeBeActive
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether reader mode in the tab should be active.
 
@@ -16,6 +17,10 @@ Indicates whether reader mode in the tab should be active.
 
 ```swift
 var shouldReaderModeBeActive: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL shouldReaderModeBeActive;
 ```
 
 

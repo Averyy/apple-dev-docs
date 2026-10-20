@@ -1,18 +1,19 @@
 # textureNamed(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a texture from data stored in the texture atlas.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,10 +21,14 @@ Creates a texture from data stored in the texture atlas.
 func textureNamed(_ name: String) -> SKTexture
 ```
 
+```objc
+- (SKTexture *) textureNamed:(NSString *) name;
+```
+
 ## Mentions
 
-- [About Texture Atlases](about-texture-atlases.md)
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+- [About Texture Atlases](../about-texture-atlases.md)
+- [Maximizing Node Drawing Performance](../maximizing-node-drawing-performance.md)
 
 #### Return Value
 

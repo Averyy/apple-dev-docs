@@ -7,14 +7,14 @@ The sorting function used by an OSOrderedSet to order objects.
 
 ## Declaration
 
-```swift
+```c
 typedef SInt32 ( *OSOrderFunction)(
    const OSMetaClassBase *obj1,
    const OSMetaClassBase *obj2,
    void *context);
 ```
 
-#### Return_value
+#### Return Value
 
 A comparison result of the object:
 

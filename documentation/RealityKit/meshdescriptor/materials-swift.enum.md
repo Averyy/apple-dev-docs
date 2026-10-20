@@ -1,7 +1,8 @@
 # MeshDescriptor.Materials
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,16 +21,17 @@ enum Materials
 ## Topics
 
 ### Enumeration Cases
-- [MeshDescriptor.Materials.allFaces(_:)](meshdescriptor/materials-swift.enum/allfaces(_:).md)
+- [MeshDescriptor.Materials.allFaces(_:)](./materials-swift.enum/allfaces%28_%29.md)
   A single material index for the whole mesh.
-- [MeshDescriptor.Materials.perFace(_:)](meshdescriptor/materials-swift.enum/perface(_:).md)
+- [MeshDescriptor.Materials.perFace(_:)](./materials-swift.enum/perface%28_%29.md)
   A different material index for each face.
 
 ## See Also
 
-- [struct MeshDescriptor](meshdescriptor.md)
+### Static meshes
+- [struct MeshDescriptor](../meshdescriptor.md)
   Defines a 3D mesh’s structure and data.
-- [MeshDescriptor.Primitives](meshdescriptor/primitives-swift.enum.md)
+- [MeshDescriptor.Primitives](./primitives-swift.enum.md)
   Indicates which primitive shape type a mesh applies to its vertex indices.
 
 

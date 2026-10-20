@@ -1,7 +1,8 @@
 # appearsOn
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of playlists that include tracks from the album.
 

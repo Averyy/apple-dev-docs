@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The host time, in seconds, when the drawable was displayed onscreen.
@@ -20,15 +21,20 @@ The host time, in seconds, when the drawable was displayed onscreen.
 var presentedTime: CFTimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CFTimeInterval presentedTime;
+```
+
 #### Discussion
 
-Typically, you query this property in a callback method. See [`addPresentedHandler(_:)`](mtldrawable/addpresentedhandler(_:).md).
+Typically, you query this property in a callback method. See [`addPresentedHandler(_:)`](./addpresentedhandler%28_%29.md).
 
 The property value is `0.0` if the drawable hasn’t been presented or if its associated frame was dropped.
 
 ## See Also
 
-- [func addPresentedHandler(MTLDrawablePresentedHandler)](mtldrawable/addpresentedhandler(_:).md)
+### Getting presentation information
+- [func addPresentedHandler(MTLDrawablePresentedHandler)](./addpresentedhandler%28_%29.md)
   Registers a block of code to be called immediately after the drawable is presented.
 
 

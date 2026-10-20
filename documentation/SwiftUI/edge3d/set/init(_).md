@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 1.0+
@@ -10,6 +11,12 @@
 
 ```swift
 init(_ e: Edge)
+```
+
+**Other overloads**:
+
+```swift
+init(_ e: Edge3D)
 ```
 
 

@@ -1,7 +1,8 @@
 # init(extent:format:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an image accumulator with the specified extent and pixel format.
 
@@ -19,6 +20,10 @@ Initializes an image accumulator with the specified extent and pixel format.
 init?(extent: CGRect, format: CIFormat)
 ```
 
+```objc
+- (instancetype) initWithExtent:(CGRect) extent format:(CIFormat) format;
+```
+
 #### Return Value
 
 The initialized image accumulator object.
@@ -26,11 +31,12 @@ The initialized image accumulator object.
 ## Parameters
 
 - `extent`: A rectangle that specifies the x-value of the rectangle origin, the y-value of the rectangle origin, and the width and height.
-- `format`: The format and size of each pixel. You must supply a pixel format constant, such askCIFormatARGB8  (32 bit-per-pixel, fixed-point pixel format) or kCIFormatRGBAf (128 bit-per-pixel, floating-point pixel format). See [`CIImage`](ciimage.md) for more information about pixel format constants.
+- `format`: The format and size of each pixel. You must supply a pixel format constant, such askCIFormatARGB8  (32 bit-per-pixel, fixed-point pixel format) or kCIFormatRGBAf (128 bit-per-pixel, floating-point pixel format). See [`CIImage`](../ciimage.md) for more information about pixel format constants.
 
 ## See Also
 
-- [init?(extent: CGRect, format: CIFormat, colorSpace: CGColorSpace)](ciimageaccumulator/init(extent:format:colorspace:).md)
+### Initializing an Image Accumulator
+- [init?(extent: CGRect, format: CIFormat, colorSpace: CGColorSpace)](./init%28extent,format,colorspace%29.md)
   Initializes an image accumulator with the specified extent, pixel format, and color space.
 
 

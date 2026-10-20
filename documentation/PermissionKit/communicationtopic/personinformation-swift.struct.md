@@ -1,7 +1,8 @@
 # CommunicationTopic.PersonInformation
 
 **Framework**: PermissionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a person the child wants to communicate with.
 
@@ -21,30 +22,31 @@ struct PersonInformation
 ## Topics
 
 ### Creating contact details
-- [init(handle: CommunicationHandle, nameComponents: PersonNameComponents?, avatarImage: CGImage?)](communicationtopic/personinformation-swift.struct/init(handle:namecomponents:avatarimage:).md)
+- [init(handle: CommunicationHandle, nameComponents: PersonNameComponents?, avatarImage: CGImage?)](./personinformation-swift.struct/init%28handle,namecomponents,avatarimage%29.md)
   Creates person information with contact details and optional display information.
-- [init(from: any Decoder) throws](communicationtopic/personinformation-swift.struct/init(from:).md)
+- [init(from: any Decoder) throws](./personinformation-swift.struct/init%28from%29.md)
   Creates an instance from the given decoder.
 ### Accessing properties
-- [var avatarImage: CGImage?](communicationtopic/personinformation-swift.struct/avatarimage.md)
+- [var avatarImage: CGImage?](./personinformation-swift.struct/avatarimage.md)
   An image that represents the person.
-- [var handle: CommunicationHandle](communicationtopic/personinformation-swift.struct/handle.md)
+- [var handle: CommunicationHandle](./personinformation-swift.struct/handle.md)
   The handle to identify and communicate with the person.
-- [var nameComponents: PersonNameComponents?](communicationtopic/personinformation-swift.struct/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./personinformation-swift.struct/namecomponents.md)
   The components that make up the person’s name.
 ### Encoding
-- [func encode(to: any Encoder) throws](communicationtopic/personinformation-swift.struct/encode(to:).md)
+- [func encode(to: any Encoder) throws](./personinformation-swift.struct/encode%28to%29.md)
   Performs the inverse of the decoding process.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
 
 ## See Also
 
-- [CommunicationTopic.Action](communicationtopic/action.md)
+### Working with supporting types
+- [CommunicationTopic.Action](./action.md)
   A communication action you can request permission for.
 
 

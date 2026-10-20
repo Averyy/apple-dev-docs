@@ -1,7 +1,8 @@
 # WorkoutScheduler
 
 **Framework**: WorkoutKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for scheduling and managing workouts.
 
@@ -21,42 +22,43 @@ final class WorkoutScheduler
 ## Topics
 
 ### Accessing the scheduler
-- [static let shared: WorkoutScheduler](workoutscheduler/shared.md)
+- [static let shared: WorkoutScheduler](./workoutscheduler/shared.md)
   A shared instance of the workout scheduler.
-- [static var isSupported: Bool](workoutscheduler/issupported.md)
+- [static var isSupported: Bool](./workoutscheduler/issupported.md)
   A Boolean value that indicates whether the current device supports scheduled workouts.
-- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](workoutscheduler/requestauthorization.md)
+- [func requestAuthorization() async -> WorkoutScheduler.AuthorizationState](./workoutscheduler/requestauthorization%28%29.md)
   Requests authorization to schedule workouts.
-- [var authorizationState: WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.property.md)
+- [var authorizationState: WorkoutScheduler.AuthorizationState](./workoutscheduler/authorizationstate-swift.property.md)
   The workout scheduler’s authorization status.
-- [WorkoutScheduler.AuthorizationState](workoutscheduler/authorizationstate-swift.enum.md)
+- [WorkoutScheduler.AuthorizationState](./workoutscheduler/authorizationstate-swift.enum.md)
   The workout scheduler’s authorization status.
 ### Scheduling workouts
-- [func schedule(WorkoutPlan, at: DateComponents) async](workoutscheduler/schedule(_:at:).md)
+- [func schedule(WorkoutPlan, at: DateComponents) async](./workoutscheduler/schedule%28_,at%29.md)
   Schedules the provided workout at the specified date.
 ### Managing scheduled workouts
-- [var scheduledWorkouts: [ScheduledWorkoutPlan]](workoutscheduler/scheduledworkouts.md)
+- [var scheduledWorkouts: [ScheduledWorkoutPlan]](./workoutscheduler/scheduledworkouts.md)
   An array of all the workouts scheduled by your app.
-- [static let maxAllowedScheduledWorkoutCount: Int](workoutscheduler/maxallowedscheduledworkoutcount.md)
+- [static let maxAllowedScheduledWorkoutCount: Int](./workoutscheduler/maxallowedscheduledworkoutcount.md)
   The maximum number of workouts your app can schedule.
-- [func markComplete(WorkoutPlan, at: DateComponents) async](workoutscheduler/markcomplete(_:at:).md)
+- [func markComplete(WorkoutPlan, at: DateComponents) async](./workoutscheduler/markcomplete%28_,at%29.md)
   Marks the workout as complete.
-- [func remove(WorkoutPlan, at: DateComponents) async](workoutscheduler/remove(_:at:).md)
+- [func remove(WorkoutPlan, at: DateComponents) async](./workoutscheduler/remove%28_,at%29.md)
   Removes the scheduled workout.
-- [func removeAllWorkouts() async](workoutscheduler/removeallworkouts.md)
+- [func removeAllWorkouts() async](./workoutscheduler/removeallworkouts%28%29.md)
   Removes all scheduled workouts.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WorkoutPlan](workoutplan.md)
+### Workout plans and schedules
+- [struct WorkoutPlan](./workoutplan.md)
   A wrapper around a workout object that your app can use to open the object in Workout or schedule it for later.
-- [struct ScheduledWorkoutPlan](scheduledworkoutplan.md)
+- [struct ScheduledWorkoutPlan](./scheduledworkoutplan.md)
   A wrapper around a workout plan that your app can use to schedule the workout plan.
 
 

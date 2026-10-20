@@ -1,7 +1,8 @@
 # init(compactJWS:)
 
 **Framework**: AdAttributionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new app impression with the provided compact JSON Web Signature (JWS).
 

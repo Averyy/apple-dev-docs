@@ -1,7 +1,8 @@
 # materialUpdates
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of materials with delta changes this frame.
 

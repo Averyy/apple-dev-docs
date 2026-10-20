@@ -1,7 +1,8 @@
 # radialAmount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Radial sweep angle for sphere, cylinder, cone, and torus emitter shapes. Defaults to 2 * pi.
 

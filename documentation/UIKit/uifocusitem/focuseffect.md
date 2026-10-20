@@ -1,7 +1,8 @@
 # focusEffect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual effect to apply when the item becomes focused.
 
@@ -16,6 +17,10 @@ The visual effect to apply when the item becomes focused.
 ```swift
 @NSCopying
 optional var focusEffect: UIFocusEffect? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIFocusEffect * focusEffect;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # HMEventTriggerActivationState.disabled
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Trigger is not activated.
 
@@ -19,15 +20,20 @@ Trigger is not activated.
 case disabled
 ```
 
+```c
+HMEventTriggerActivationStateDisabled
+```
+
 ## See Also
 
-- [HMEventTriggerActivationState.disabledNoCompatibleHomeHub](hmeventtriggeractivationstate/disablednocompatiblehomehub.md)
+### Inspecting activation state
+- [HMEventTriggerActivationState.disabledNoCompatibleHomeHub](./disablednocompatiblehomehub.md)
   Trigger is not active because there is no compatible home hub.
-- [HMEventTriggerActivationState.disabledNoHomeHub](hmeventtriggeractivationstate/disablednohomehub.md)
+- [HMEventTriggerActivationState.disabledNoHomeHub](./disablednohomehub.md)
   Trigger is not active because there is no home hub.
-- [HMEventTriggerActivationState.disabledNoLocationServicesAuthorization](hmeventtriggeractivationstate/disablednolocationservicesauthorization.md)
+- [HMEventTriggerActivationState.disabledNoLocationServicesAuthorization](./disablednolocationservicesauthorization.md)
   Trigger is not active because the user has not authorized use of location services.
-- [HMEventTriggerActivationState.enabled](hmeventtriggeractivationstate/enabled.md)
+- [HMEventTriggerActivationState.enabled](./enabled.md)
   The trigger is currently active.
 
 

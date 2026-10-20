@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default menu style, based on the menu’s context.
 
@@ -20,6 +21,8 @@ The default menu style, based on the menu’s context.
 @export(implementation) @preconcurrency static var automatic: DefaultMenuStyle { get }
 ```
 
+Available when `Self` is `DefaultMenuStyle`.
+
 #### Discussion
 
 The default menu style can vary by platform. By default, macOS uses the bordered button style.
@@ -36,11 +39,12 @@ Menu("Edit") {
 }
 ```
 
-You can override a menu’s style. To apply the default style to a menu, or to a view that contains a menu, use the [`menuStyle(_:)`](view/menustyle(_:).md) modifier.
+You can override a menu’s style. To apply the default style to a menu, or to a view that contains a menu, use the [`menuStyle(_:)`](../view/menustyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static var button: ButtonMenuStyle](menustyle/button.md)
+### Getting built-in menu styles
+- [static var button: ButtonMenuStyle](./button.md)
   A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 
 

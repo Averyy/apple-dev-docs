@@ -1,15 +1,16 @@
 # stratifiedSplit(proportions:seed:labelColumn:textColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data table by splitting the data source into strata.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
 - visionOS 1.0+
 
 ## Declaration
@@ -31,7 +32,8 @@ A new data table.
 
 ## See Also
 
-- [func labeledTexts() throws -> [String : [String]]](mltextclassifier/datasource/labeledtexts.md)
+### Retrieving the data
+- [func labeledTexts() throws -> [String : [String]]](./labeledtexts%28%29.md)
   Fetches the labeled data from the data source.
 
 

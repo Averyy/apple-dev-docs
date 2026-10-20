@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are not equal.
 
@@ -33,7 +34,8 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ## See Also
 
-- [static func == (borrowing Self, borrowing Self) -> Bool](equatable/==(_:_:).md)
+### Equatable Requirements
+- [static func == (borrowing Self, borrowing Self) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

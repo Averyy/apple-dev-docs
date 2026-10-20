@@ -1,7 +1,8 @@
 # library
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a reference to the library containing the function.
 
@@ -17,6 +18,10 @@ Returns a reference to the library containing the function.
 
 ```swift
 var library: (any MTLLibrary)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MTLLibrary> library;
 ```
 
 

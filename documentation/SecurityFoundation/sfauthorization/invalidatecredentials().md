@@ -1,7 +1,8 @@
 # invalidateCredentials()
 
 **Framework**: Security Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents any rights that were obtained by this object from being preserved.
 
@@ -12,6 +13,10 @@ Prevents any rights that were obtained by this object from being preserved.
 
 ```swift
 func invalidateCredentials()
+```
+
+```objc
+- (void) invalidateCredentials;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # status
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The current status of the application cache. One of the values described in "Constants.”
 
@@ -11,13 +12,14 @@ The current status of the application cache. One of the values described in "Con
 
 ## Declaration
 
-```swift
+```
 readonly attribute unsigned short status;
 ```
 
 ## See Also
 
-- [Safari Web Content Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051)
+### Related Documentation
+- [Safari Web Content Guide](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051)
 
 
 ---

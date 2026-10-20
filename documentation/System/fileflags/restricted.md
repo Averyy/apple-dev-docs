@@ -1,7 +1,8 @@
 # restricted
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File requires an entitlement for writing.
 

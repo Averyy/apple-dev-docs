@@ -1,7 +1,8 @@
 # init(temporalLayerID:profileSpace:tierFlag:profileIndex:profileCompatibilityFlags:constraintIndicatorFlags:levelIndex:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

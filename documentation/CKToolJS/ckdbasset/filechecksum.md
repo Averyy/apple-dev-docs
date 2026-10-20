@@ -1,7 +1,8 @@
 # fileChecksum
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signature of a file returned from the file upload step.
 
@@ -10,7 +11,7 @@ The signature of a file returned from the file upload step.
 
 ## Declaration
 
-```swift
+```
 attribute string? fileChecksum;
 ```
 

@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Keyframes
 
@@ -20,16 +21,23 @@ Keyframes
 static func buildExpression<Content>(_ expression: Content) -> Content where Value == Content.Value, Content : Keyframes
 ```
 
+**Other overloads**:
+
+```swift
+static func buildExpression<K>(_ expression: K) -> K where Value == K.Value, K : KeyframeTrackContent
+```
+
 ## See Also
 
+### Building keyframes
 - [static func buildArray([some KeyframeTrackContent<Value>]) -> some KeyframeTrackContent<Value>
-](keyframesbuilder/buildarray(_:).md)
-- [static buildBlock()](keyframesbuilder/buildblock.md)
-- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframesbuilder/buildeither(first:).md)
-- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](keyframesbuilder/buildeither(second:).md)
-- [static buildFinalResult(_:)](keyframesbuilder/buildfinalresult(_:).md)
-- [static buildPartialBlock(accumulated:next:)](keyframesbuilder/buildpartialblock(accumulated:next:).md)
-- [static buildPartialBlock(first:)](keyframesbuilder/buildpartialblock(first:).md)
+](./buildarray%28_%29.md)
+- [static buildBlock()](./buildblock%28%29.md)
+- [static func buildEither<First, Second>(first: First) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28first%29.md)
+- [static func buildEither<First, Second>(second: Second) -> KeyframeTrackContentBuilder<Value>.Conditional<Value, First, Second>](./buildeither%28second%29.md)
+- [static buildFinalResult(_:)](./buildfinalresult%28_%29.md)
+- [static buildPartialBlock(accumulated:next:)](./buildpartialblock%28accumulated,next%29.md)
+- [static buildPartialBlock(first:)](./buildpartialblock%28first%29.md)
 
 
 ---

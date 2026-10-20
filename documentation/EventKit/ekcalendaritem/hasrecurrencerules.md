@@ -1,7 +1,8 @@
 # hasRecurrenceRules
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the calendar item has recurrence rules.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether the calendar item has recurrence rules.
 var hasRecurrenceRules: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasRecurrenceRules;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has recurrence rules; otherwise it does not.
+If [`true`](../../Swift/true.md), the calendar item has recurrence rules; otherwise it does not.
 
 ##### Special Considerations
 
@@ -29,11 +34,12 @@ The implementation only supports a single recurrence rule. Adding a recurrence r
 
 ## See Also
 
-- [func addRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/addrecurrencerule(_:).md)
+### Setting Recurrence Rules
+- [func addRecurrenceRule(EKRecurrenceRule)](./addrecurrencerule%28_%29.md)
   Adds a recurrence rule to the recurrence rule array.
-- [func removeRecurrenceRule(EKRecurrenceRule)](ekcalendaritem/removerecurrencerule(_:).md)
+- [func removeRecurrenceRule(EKRecurrenceRule)](./removerecurrencerule%28_%29.md)
   Removes a recurrence rule from the recurrence rule array.
-- [var recurrenceRules: [EKRecurrenceRule]?](ekcalendaritem/recurrencerules.md)
+- [var recurrenceRules: [EKRecurrenceRule]?](./recurrencerules.md)
   The recurrence rules for the calendar item.
 
 

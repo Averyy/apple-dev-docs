@@ -1,7 +1,8 @@
 # start
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date.
 
@@ -22,9 +23,10 @@ var start: Date
 
 ## See Also
 
-- [var end: Date](dateinterval/end.md)
+### Accessing Start Date, End Date, and Duration
+- [var end: Date](./end.md)
   The end date.
-- [var duration: TimeInterval](dateinterval/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The duration.
 
 

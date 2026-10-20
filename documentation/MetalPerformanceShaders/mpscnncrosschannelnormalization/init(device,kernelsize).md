@@ -1,7 +1,8 @@
 # init(device:kernelSize:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a normalization kernel in a channel.
 
@@ -19,9 +20,13 @@ Initializes a normalization kernel in a channel.
 init(device: any MTLDevice, kernelSize: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelSize:(NSUInteger) kernelSize;
+```
+
 #### Return Value
 
-A valid [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) object or `nil`, if failure.
+A valid [`MPSCNNCrossChannelNormalization`](../mpscnncrosschannelnormalization.md) object or `nil`, if failure.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A valid [`MPSCNNCrossChannelNormalization`](mpscnncrosschannelnormalization.md) 
 
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnncrosschannelnormalization/init(coder:device:).md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
   Initializes a normalization kernel in a channel.
 
 

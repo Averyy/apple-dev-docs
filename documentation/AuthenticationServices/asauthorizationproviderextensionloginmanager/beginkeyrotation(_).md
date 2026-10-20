@@ -1,7 +1,8 @@
 # beginKeyRotation(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func beginKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType) -> SecKey?
+```
+
+```objc
+- (SecKeyRef) beginKeyRotationForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # activityBackgroundTint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tint color for the background of a Live Activity that appears on the Lock Screen.
 
@@ -18,7 +19,7 @@ Sets the tint color for the background of a Live Activity that appears on the Lo
 
 #### Discussion
 
-When you set a custom background tint color, consider setting a custom text color for the auxiliary button people use to end a Live Activity on the Lock Screen. To set a custom text color, use the [`activitySystemActionForegroundColor(_:)`](view/activitysystemactionforegroundcolor(_:).md) view modifier.
+When you set a custom background tint color, consider setting a custom text color for the auxiliary button people use to end a Live Activity on the Lock Screen. To set a custom text color, use the [`activitySystemActionForegroundColor(_:)`](./activitysystemactionforegroundcolor%28_%29.md) view modifier.
 
 ## Parameters
 
@@ -26,11 +27,12 @@ When you set a custom background tint color, consider setting a custom text colo
 
 ## See Also
 
-- [func activitySystemActionForegroundColor(Color?) -> some View](view/activitysystemactionforegroundcolor(_:).md)
+### Configuring a Live Activity
+- [func activitySystemActionForegroundColor(Color?) -> some View](./activitysystemactionforegroundcolor%28_%29.md)
   The text color for the auxiliary action button that the system shows next to a Live Activity on the Lock Screen.
-- [var isActivityFullscreen: Bool](environmentvalues/isactivityfullscreen.md)
+- [var isActivityFullscreen: Bool](../environmentvalues/isactivityfullscreen.md)
   A Boolean value that indicates whether the Live Activity appears in a full-screen presentation.
-- [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
+- [var activityFamily: ActivityFamily](../environmentvalues/activityfamily.md)
   The size family of the current Live Activity.
 
 

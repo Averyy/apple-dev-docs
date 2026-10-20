@@ -1,7 +1,8 @@
 # macIdiomStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use when this button appears in macOS.
 
@@ -10,7 +11,7 @@ The style to use when this button appears in macOS.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var macIdiomStyle: UIButton.Configuration.MacIdiomStyle { get set }
 
 #### Discussion
 
-Use this property when building your app with Mac Catalyst. The value [`UIButton.Configuration.MacIdiomStyle.automatic`](uibutton/configuration-swift.struct/macidiomstyle-swift.enum/automatic.md) lets the system choose the appropriate style. Select a specific style to force the button to always use that style.
+Use this property when building your app with Mac Catalyst. The value [`UIButton.Configuration.MacIdiomStyle.automatic`](./macidiomstyle-swift.enum/automatic.md) lets the system choose the appropriate style. Select a specific style to force the button to always use that style.
 
 ## See Also
 
-- [UIButton.Configuration.MacIdiomStyle](uibutton/configuration-swift.struct/macidiomstyle-swift.enum.md)
+### Configuring the appearance on macOS
+- [UIButton.Configuration.MacIdiomStyle](./macidiomstyle-swift.enum.md)
   The button style your app uses when running in macOS.
 
 

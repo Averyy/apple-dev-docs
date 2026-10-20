@@ -1,7 +1,8 @@
 # init(shapedArray:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a shaped array.
 
@@ -22,11 +23,12 @@ convenience init<Scalar>(shapedArray: MLShapedArray<Scalar>) where Scalar : MLSh
 
 ## Parameters
 
-- `shapedArray`: An [`MLShapedArray`](mlshapedarray.md) instance.
+- `shapedArray`: An [`MLShapedArray`](../mlshapedarray.md) instance.
 
 ## See Also
 
-- [convenience init(multiArray: MLMultiArray)](mlfeaturevalue/init(multiarray:).md)
+### Creating multidimensional feature values
+- [convenience init(multiArray: MLMultiArray)](./init%28multiarray%29.md)
   Creates a feature value that contains a multidimensional array.
 
 

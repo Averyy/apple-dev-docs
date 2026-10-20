@@ -1,7 +1,8 @@
 # kAXStrikethroughTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFBooleanRef` value that indicates whether the text displays strikethrough.
 
@@ -12,6 +13,10 @@ A `CFBooleanRef` value that indicates whether the text displays strikethrough.
 
 ```swift
 var kAXStrikethroughTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXStrikethroughTextAttribute;
 ```
 
 #### Discussion

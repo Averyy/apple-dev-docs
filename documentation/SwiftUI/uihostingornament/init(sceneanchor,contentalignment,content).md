@@ -1,7 +1,8 @@
 # init(sceneAnchor:contentAlignment:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ornament with the specified alignment and content.
 
@@ -14,6 +15,12 @@ Creates an ornament with the specified alignment and content.
 init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ContentBuilder content: () -> Content)
 ```
 
+**Other overloads**:
+
+```swift
+init(sceneAnchor: UnitPoint, contentAlignment: Alignment3D = .back, @ContentBuilder content: () -> Content)
+```
+
 ## Parameters
 
 - `sceneAnchor`: The anchor point for aligning the ornament’s content (based on the `contentAlignment`) with the scene.
@@ -22,7 +29,8 @@ init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ContentBuil
 
 ## See Also
 
-- [var rootView: Content](uihostingornament/rootview.md)
+### Creating a hosting ornament
+- [var rootView: Content](./rootview.md)
   The root view of the SwiftUI view hierarchy managed by this ornament.
 
 

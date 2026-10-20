@@ -1,7 +1,8 @@
 # subscript(_:as:default:)
 
 **Framework**: XPC  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Reads and writes the value associated with the given key as a Boolean value, falling back to the given default value.
 
@@ -11,7 +12,7 @@ Reads and writes the value associated with the given key as a Boolean value, fal
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ subscript(key: String, as type: Bool.Type = Bool.self, default defaultValue: @au
 
 #### Return Value
 
-The value associated with key in the dictionary; otherwise, [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+The value associated with key in the dictionary; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## Parameters
 
@@ -32,35 +33,36 @@ The value associated with key in the dictionary; otherwise, [`nil`](https://deve
 
 ## See Also
 
-- [var keys: [String]](xpcdictionary/keys.md)
+### Accessing keys and values
+- [var keys: [String]](./keys.md)
   A collection containing just the keys of the dictionary.
-- [var values: [xpc_object_t]](xpcdictionary/values.md)
+- [var values: [xpc_object_t]](./values.md)
   A collection containing just the values of the dictionary.
-- [subscript(String) -> XPCDictionary?](xpcdictionary/subscript(_:)-4hbmg.md)
+- [subscript(String) -> XPCDictionary?](./subscript%28_%29-4hbmg.md)
   Reads and writes the value associated with the given key as an XPC dictionary.
-- [subscript(String) -> String?](xpcdictionary/subscript(_:)-80fs2.md)
+- [subscript(String) -> String?](./subscript%28_%29-80fs2.md)
   Reads and writes the value associated with the given key as a string.
-- [subscript(String) -> Bool?](xpcdictionary/subscript(_:)-gas6.md)
+- [subscript(String) -> Bool?](./subscript%28_%29-gas6.md)
   Reads and writes the value associated with the given key as a Boolean value.
-- [subscript(String) -> xpc_object_t?](xpcdictionary/subscript(_:)-4j21u.md)
+- [subscript(String) -> xpc_object_t?](./subscript%28_%29-4j21u.md)
   Reads and writes the value associated with the given key as an XPC object.
-- [subscript<T>(String) -> T?](xpcdictionary/subscript(_:)-8gyze.md)
+- [subscript<T>(String) -> T?](./subscript%28_%29-8gyze.md)
   Reads and writes the value associated with the given key as a floating point value.
-- [subscript<T>(String) -> T?](xpcdictionary/subscript(_:)-4vrsa.md)
+- [subscript<T>(String) -> T?](./subscript%28_%29-4vrsa.md)
   Reads and writes the value associated with the given key as an unsigned integer value.
-- [subscript<T>(String) -> T?](xpcdictionary/subscript(_:)-3i01t.md)
+- [subscript<T>(String) -> T?](./subscript%28_%29-3i01t.md)
   Reads and writes the value associated with the given key as a signed integer value.
-- [subscript(String, as _: XPCDictionary.Type) -> XPCDictionary?](xpcdictionary/subscript(_:as:)-1mm7n.md)
+- [subscript(String, as _: XPCDictionary.Type) -> XPCDictionary?](./subscript%28_,as%29-1mm7n.md)
   Reads the value associated with the given key as an XPC dictionary.
-- [subscript(String, as _: String.Type) -> String?](xpcdictionary/subscript(_:as:)-4zxc8.md)
+- [subscript(String, as _: String.Type) -> String?](./subscript%28_,as%29-4zxc8.md)
   Reads and writes the value associated with the given key as a string.
-- [subscript(String, as _: Bool.Type) -> Bool?](xpcdictionary/subscript(_:as:)-18db5.md)
+- [subscript(String, as _: Bool.Type) -> Bool?](./subscript%28_,as%29-18db5.md)
   Reads and writes the value associated with the given key as a Boolean value.
-- [subscript(String, as _: any OS_xpc_object.Type) -> xpc_object_t?](xpcdictionary/subscript(_:as:)-5y39v.md)
+- [subscript(String, as _: any OS_xpc_object.Type) -> xpc_object_t?](./subscript%28_,as%29-5y39v.md)
   Reads and writes the value associated with the given key as an XPC object.
-- [subscript(String, as _: xpc_type_t) -> xpc_object_t?](xpcdictionary/subscript(_:as:)-qjxa.md)
+- [subscript(String, as _: xpc_type_t) -> xpc_object_t?](./subscript%28_,as%29-qjxa.md)
   Reads and writes the value associated with the given key as an XPC object.
-- [subscript<T>(String, as _: T.Type) -> T?](xpcdictionary/subscript(_:as:)-3mzgc.md)
+- [subscript<T>(String, as _: T.Type) -> T?](./subscript%28_,as%29-3mzgc.md)
   Reads and writes the value associated with the given key as a floating point value.
 
 

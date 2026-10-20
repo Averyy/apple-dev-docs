@@ -1,7 +1,8 @@
 # ENOTSUP
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation not supported.
 

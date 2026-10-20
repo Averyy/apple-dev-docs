@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A boolean value that indicates whether the processor supported on the current configuration.
 
@@ -17,13 +18,18 @@ A boolean value that indicates whether the processor supported on the current co
 class var supportedRevisions: IndexSet { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) NSIndexSet * supportedRevisions;
+```
+
 ## See Also
 
-- [var revision: VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.property.md)
+### Inspecting revision information
+- [var revision: VTOpticalFlowConfiguration.Revision](./revision-swift.property.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
-- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/defaultrevision.md)
+- [class var defaultRevision: VTOpticalFlowConfiguration.Revision](./defaultrevision.md)
   The default revision of a particular algorithm or configuration.
-- [VTOpticalFlowConfiguration.Revision](vtopticalflowconfiguration/revision-swift.enum.md)
+- [VTOpticalFlowConfiguration.Revision](./revision-swift.enum.md)
   The specific algorithm or configuration revision that is to be used to perform the request.
 
 

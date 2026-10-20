@@ -1,7 +1,8 @@
 # self
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bind target for the entity.
 
@@ -11,7 +12,7 @@ A bind target for the entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,15 +22,16 @@ var `self`: BindTarget { get }
 
 #### Discussion
 
-This property represents a bind path within an [`AnimationView`](animationview.md) to redirect the view’s [`source`](blendtreesourcenode/source.md) animation to a different scene.
+This property represents a bind path within an [`AnimationView`](../../animationview.md) to redirect the view’s [`source`](../../blendtreesourcenode/source.md) animation to a different scene.
 
 ## See Also
 
-- [var jointTransforms: BindTarget](bindtarget/entitypath/jointtransforms.md)
+### Accessing a bind target
+- [var jointTransforms: BindTarget](./jointtransforms.md)
   A bind target for the entity’s joint transforms.
-- [var transform: BindTarget](bindtarget/entitypath/transform.md)
+- [var transform: BindTarget](./transform.md)
   A bind target for the entity’s transform.
-- [func parameter(String) -> BindTarget](bindtarget/entitypath/parameter(_:).md)
+- [func parameter(String) -> BindTarget](./parameter%28_%29.md)
   Provides a bind target for a particular animated property.
 
 

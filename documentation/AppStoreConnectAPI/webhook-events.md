@@ -1,6 +1,7 @@
 # Understanding webhook events
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Learn the events that describe payloads and the notifications the system sends.
 
@@ -11,11 +12,11 @@ Learn the events that describe payloads and the notifications the system sends.
 
 Webhooks give you real-time, event-driven notifications over HTTP, so you can act on events in an automated way. When you enable a webhook, you get a notification each time one of the events you specify occurs. Use the information in the notification to make subsequent calls to the App Store Connect API to retrieve data.
 
-Webhook events describe the payloads that the system sends to your listening server, based on the configuration you provide when using [`Create a Webhook Configuration`](post-v1-webhooks.md). To read a list of possible webhook event types, see [`WebhookEventType`](webhookeventtype.md).
+Webhook events describe the payloads that the system sends to your listening server, based on the configuration you provide when using [`Create a Webhook Configuration`](./post-v1-webhooks.md). To read a list of possible webhook event types, see [`WebhookEventType`](./webhookeventtype.md).
 
-To learn more about setting up, testing, and parsing webhook configurations, see [`Configuring and parsing App Store Connect API webhook notifications`](configuring-webhook-notifications.md).
+To learn more about setting up, testing, and parsing webhook configurations, see [Configuring and parsing App Store Connect API webhook notifications](./configuring-webhook-notifications.md).
 
-#### Learn Webhook Event Types
+#### Learn webhook event types
 
 The following event types are available. Each type carries a different set of attributes, depending on whether the system notifies you about an app status change, a build change, beta tester feedback, a background asset change, or an alternative marketplace change.
 
@@ -123,7 +124,7 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-- **Background asset version state changes**: These notifications show when your background asset version changes state during processing. The system sends this event after you commit an upload with [`Commit an Uploaded Asset Pack to a Background Asset Version`](patch-v1-backgroundassetuploadfiles-_id_.md), when import validation finishes. A change from `PROCESSING` to `FAILED` indicates that validation failed; you also receive an email with more context about the failure. For the full list of states, see [`BackgroundAssetVersionState`](backgroundassetversionstate.md).
+- **Background asset version state changes**: These notifications show when your background asset version changes state during processing. The system sends this event after you commit an upload with [`Commit an Uploaded Asset Pack to a Background Asset Version`](./patch-v1-backgroundassetuploadfiles-_id_.md), when import validation finishes. A change from `PROCESSING` to `FAILED` indicates that validation failed; you also receive an email with more context about the failure. For the full list of states, see [`BackgroundAssetVersionState`](./backgroundassetversionstate.md).
 
 ```json
 {
@@ -171,7 +172,7 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-- **Background asset external beta release state changes**: These notifications show when your background asset version moves through beta review. A change to `REJECTED` indicates that review didn’t approve the version, and a change to `READY_FOR_TESTING` indicates that the version is live for external beta testers. For the full list of states, see [`BackgroundAssetVersionExternalBetaReleaseState`](backgroundassetversionexternalbetareleasestate.md).
+- **Background asset external beta release state changes**: These notifications show when your background asset version moves through beta review. A change to `REJECTED` indicates that review didn’t approve the version, and a change to `READY_FOR_TESTING` indicates that the version is live for external beta testers. For the full list of states, see [`BackgroundAssetVersionExternalBetaReleaseState`](./backgroundassetversionexternalbetareleasestate.md).
 
 **Rejected in review**:
 
@@ -223,7 +224,7 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-- **Background asset App Store release state changes**: These notifications show when your background asset version moves through App Store review. A change to `REJECTED` indicates that review didn’t approve the version, and a change to `READY_FOR_DISTRIBUTION` indicates that the version is available to App Store customers. For the full list of states, see [`BackgroundAssetVersionAppStoreReleaseState`](backgroundassetversionappstorereleasestate.md).
+- **Background asset App Store release state changes**: These notifications show when your background asset version moves through App Store review. A change to `REJECTED` indicates that review didn’t approve the version, and a change to `READY_FOR_DISTRIBUTION` indicates that the version is available to App Store customers. For the full list of states, see [`BackgroundAssetVersionAppStoreReleaseState`](./backgroundassetversionappstorereleasestate.md).
 
 **Rejected in review**:
 
@@ -298,9 +299,13 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-- **Alternative app marketplace changes**: These notifications inform a marketplace about changes to apps it distributes. The system sends a notification for these changes: - A new app version is available.
-- You need to remove a specific app version.
-- You need to remove all versions of an app.
+- **Alternative app marketplace changes**: These notifications inform a marketplace about changes to apps it distributes.
+
+  The system sends a notification for these changes:
+
+  - A new app version is available.
+  - You need to remove a specific app version.
+  - You need to remove all versions of an app.
 
 **ALTERNATIVE_DISTRIBUTION_PACKAGE_VERSION_CREATED**:
 
@@ -461,17 +466,17 @@ The following event types are available. Each type carries a different set of at
 }
 ```
 
-#### Trace Background Asset Events to Your Api Calls
+#### Trace background asset events to your API calls
 
 Background asset events correspond to specific points in the upload and review workflow, so you can use them to drive automation instead of polling for state.
 
 To upload a new background asset version, make the following calls:
 
-1. Create a background asset with [`Create Asset Pack Record`](post-v1-backgroundassets.md).
-2. Create a background asset version with [`Create Asset Pack Version Record`](post-v1-backgroundassetversions.md).
-3. Create a background asset upload file with [`Create a Reservation for an Asset Pack Upload`](post-v1-backgroundassetuploadfiles.md).
+1. Create a background asset with [`Create Asset Pack Record`](./post-v1-backgroundassets.md).
+2. Create a background asset version with [`Create Asset Pack Version Record`](./post-v1-backgroundassetversions.md).
+3. Create a background asset upload file with [`Create a Reservation for an Asset Pack Upload`](./post-v1-backgroundassetuploadfiles.md).
 4. Upload the asset pack to the URLs the previous response returns.
-5. Commit the upload with [`Commit an Uploaded Asset Pack to a Background Asset Version`](patch-v1-backgroundassetuploadfiles-_id_.md).
+5. Commit the upload with [`Commit an Uploaded Asset Pack to a Background Asset Version`](./patch-v1-backgroundassetuploadfiles-_id_.md).
 
 Committing the upload triggers import validation, and the validation result determines which event the system sends. After validation succeeds, submitting the version for review triggers further events:
 
@@ -482,13 +487,14 @@ Committing the upload triggers import validation, and the validation result dete
 | `BACKGROUND_ASSET_VERSION_EXTERNAL_BETA_RELEASE_STATE_UPDATED` | Beta review rejects the version, or the version becomes available to external beta testers. |
 | `BACKGROUND_ASSET_VERSION_APP_STORE_RELEASE_STATE_UPDATED` | App Store review rejects the version, or the version becomes available to App Store customers. |
 
-Submit a version for App Store review with [`Create a Review Submission`](post-v1-reviewsubmissions.md).
+Submit a version for App Store review with [`Create a Review Submission`](./post-v1-reviewsubmissions.md).
 
 > **Note**: Each background asset event reports the affected resource in `relationships.instance`, with the resource `id`, `type`, and a `self` link. Unlike other webhook events, background asset events don’t wrap that identifier in a `data` object.
 
 ## See Also
 
-- [Configuring and parsing App Store Connect API webhook notifications](configuring-webhook-notifications.md)
+### Essentials
+- [Configuring and parsing App Store Connect API webhook notifications](./configuring-webhook-notifications.md)
   Manage the configuration, testing, and processing of App Store Connect API notifications for your app.
 
 

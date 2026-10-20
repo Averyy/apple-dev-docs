@@ -1,7 +1,8 @@
 # aspect
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The aspect ratio of the light’s shape.
 
@@ -19,15 +20,20 @@ The aspect ratio of the light’s shape.
 var aspect: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float aspect;
+```
+
 #### Discussion
 
-If the light’s type is [`MDLLightType.discArea`](mdllighttype/discarea.md),  [`MDLLightType.rectangularArea`](mdllighttype/rectangulararea.md), or [`MDLLightType.superElliptical`](mdllighttype/superelliptical.md), this property determines the lengths of the shape’s major and minor axes (longer and shorter dimensions) relative to the [`areaRadius`](mdlarealight/arearadius.md) property’s value.
+If the light’s type is [`MDLLightType.discArea`](../mdllighttype/discarea.md),  [`MDLLightType.rectangularArea`](../mdllighttype/rectangulararea.md), or [`MDLLightType.superElliptical`](../mdllighttype/superelliptical.md), this property determines the lengths of the shape’s major and minor axes (longer and shorter dimensions) relative to the [`areaRadius`](./arearadius.md) property’s value.
 
 ## See Also
 
-- [var areaRadius: Float](mdlarealight/arearadius.md)
+### Managing a Light’s Shape
+- [var areaRadius: Float](./arearadius.md)
   The radius, in units of local coordinate space, of the area from which light emanates.
-- [var superEllipticPower: vector_float2](mdlarealight/superellipticpower.md)
+- [var superEllipticPower: vector_float2](./superellipticpower.md)
   A vector that controls the roundness of a superelliptical light in the x- and y-axis directions.
 
 

@@ -1,16 +1,19 @@
 # MTLLanguageVersion.version1_0
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Version 1.0 of the Metal shading language.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 16.0
+- iPadOS 9.0+ - Deprecated in 16.0
+- Mac Catalyst 9.0+ - Deprecated in 16.0
+- tvOS 9.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use a newer version of the Metal Shading Language (MSL) standard, such as [`MTLLanguageVersion.version1_1`](./version1_1.md) instead.
 
 ## Declaration
 
@@ -18,27 +21,32 @@ Version 1.0 of the Metal shading language.
 case version1_0
 ```
 
+```c
+MTLLanguageVersion1_0
+```
+
 ## See Also
 
-- [MTLLanguageVersion.version1_1](mtllanguageversion/version1_1.md)
+### Version numbers
+- [MTLLanguageVersion.version1_1](./version1_1.md)
   Version 1.1 of the Metal shading language.
-- [MTLLanguageVersion.version1_2](mtllanguageversion/version1_2.md)
+- [MTLLanguageVersion.version1_2](./version1_2.md)
   Version 1.2 of the Metal shading language.
-- [MTLLanguageVersion.version2_0](mtllanguageversion/version2_0.md)
+- [MTLLanguageVersion.version2_0](./version2_0.md)
   Version 2.0 of the Metal shading language.
-- [MTLLanguageVersion.version2_1](mtllanguageversion/version2_1.md)
+- [MTLLanguageVersion.version2_1](./version2_1.md)
   Version 2.1 of the Metal shading language.
-- [MTLLanguageVersion.version2_2](mtllanguageversion/version2_2.md)
+- [MTLLanguageVersion.version2_2](./version2_2.md)
   Version 2.2 of the Metal shading language.
-- [MTLLanguageVersion.version2_3](mtllanguageversion/version2_3.md)
+- [MTLLanguageVersion.version2_3](./version2_3.md)
   Version 2.3 of the Metal shading language.
-- [MTLLanguageVersion.version2_4](mtllanguageversion/version2_4.md)
+- [MTLLanguageVersion.version2_4](./version2_4.md)
   Version 2.4 of the Metal shading language.
-- [MTLLanguageVersion.version3_0](mtllanguageversion/version3_0.md)
+- [MTLLanguageVersion.version3_0](./version3_0.md)
   Version 3.0 of the Metal shading language.
-- [MTLLanguageVersion.version3_1](mtllanguageversion/version3_1.md)
+- [MTLLanguageVersion.version3_1](./version3_1.md)
   Version 3.1 of the Metal shading language.
-- [MTLLanguageVersion.version3_2](mtllanguageversion/version3_2.md)
+- [MTLLanguageVersion.version3_2](./version3_2.md)
   Version 3.2 of the Metal shading language.
 
 

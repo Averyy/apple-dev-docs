@@ -1,7 +1,8 @@
 # CVPixelBufferCopyCreationAttributes(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 15.0+
@@ -18,9 +19,14 @@
 func CVPixelBufferCopyCreationAttributes(_ pixelBuffer: CVPixelBuffer) -> CFDictionary
 ```
 
+```c
+extern CFDictionaryRefCVPixelBufferCopyCreationAttributes(CVPixelBufferRef pixelBuffer);
+```
+
 ## See Also
 
-- [func CVIsCompressedPixelFormatAvailable(OSType) -> Bool](cviscompressedpixelformatavailable(_:).md)
+### Functions
+- [func CVIsCompressedPixelFormatAvailable(OSType) -> Bool](./cviscompressedpixelformatavailable%28_%29.md)
 
 
 ---

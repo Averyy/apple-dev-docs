@@ -1,7 +1,8 @@
 # strokePath()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Paints a line along the current path.
 
@@ -10,7 +11,7 @@ Paints a line along the current path.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Paints a line along the current path.
 func strokePath()
 ```
 
+```c
+extern void CGContextStrokePath(CGContextRef c);
+```
+
 #### Discussion
 
 The line width and stroke color of the context’s graphics state are used to paint the path. The current path is cleared as a side effect of calling this function.
 
 ## See Also
 
-- [func drawPath(using: CGPathDrawingMode)](cgcontext/drawpath(using:).md)
+### Drawing the Current Graphics Path
+- [func drawPath(using: CGPathDrawingMode)](./drawpath%28using%29.md)
   Draws the current path using the provided drawing mode.
-- [enum CGPathDrawingMode](cgpathdrawingmode.md)
+- [enum CGPathDrawingMode](../cgpathdrawingmode.md)
   Options for rendering a path.
-- [func fillPath(using: CGPathFillRule)](cgcontext/fillpath(using:).md)
+- [func fillPath(using: CGPathFillRule)](./fillpath%28using%29.md)
   Paints the area within the current path, as determined by the specified fill rule.
 
 

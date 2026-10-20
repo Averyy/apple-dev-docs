@@ -1,7 +1,8 @@
 # errSecInvalidParsingModule
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The parsing module is not valid.
 
@@ -18,6 +19,10 @@ The parsing module is not valid.
 
 ```swift
 var errSecInvalidParsingModule: OSStatus { get }
+```
+
+```c
+errSecInvalidParsingModule
 ```
 
 

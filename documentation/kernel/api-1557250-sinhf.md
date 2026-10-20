@@ -1,24 +1,26 @@
 # sinhf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float sinhf(float);
 ```
 
 ## See Also
 
-- [sin](1557267-sin.md)
-- [sinf](1532196-sinf.md)
-- [sinh](1557279-sinh.md)
-- [sinhl](1557240-sinhl.md)
-- [sinl](1557325-sinl.md)
+### Sine
+- [sin](./api-1557267-sin.md)
+- [sinf](./api-1532196-sinf.md)
+- [sinh](./api-1557279-sinh.md)
+- [sinhl](./api-1557240-sinhl.md)
+- [sinl](./api-1557325-sinl.md)
 
 
 ---

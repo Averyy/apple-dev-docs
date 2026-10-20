@@ -1,7 +1,8 @@
 # init(_:_:_:_:_:_:_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new context object.
 

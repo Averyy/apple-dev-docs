@@ -1,7 +1,8 @@
 # share(text:from:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents standard UI for someone to share text from a browser text view.
 
@@ -17,6 +18,10 @@ Presents standard UI for someone to share text from a browser text view.
 func share(text: String, from presentationRect: CGRect)
 ```
 
+```objc
+- (void) shareText:(NSString *) text fromRect:(CGRect) presentationRect;
+```
+
 ## Parameters
 
 - `text`: The text to share.
@@ -24,7 +29,8 @@ func share(text: String, from presentationRect: CGRect)
 
 ## See Also
 
-- [func showDictionary(forTextInContext: String, definingTextInRange: NSRange, from: CGRect)](betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:).md)
+### Sharing and defining text
+- [func showDictionary(forTextInContext: String, definingTextInRange: NSRange, from: CGRect)](./showdictionary%28fortextincontext,definingtextinrange,from%29.md)
   Presents a dictionary definition for the supplied text.
 
 

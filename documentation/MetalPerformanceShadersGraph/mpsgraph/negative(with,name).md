@@ -1,7 +1,8 @@
 # negative(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies negative to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies negative to the input tensor elements.
 
 ```swift
 func negative(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) negativeWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

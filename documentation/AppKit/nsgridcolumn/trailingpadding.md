@@ -1,7 +1,8 @@
 # trailingPadding
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,14 +13,19 @@
 var trailingPadding: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat trailingPadding;
+```
+
 ## See Also
 
-- [var gridView: NSGridView?](nsgridcolumn/gridview.md)
-- [var isHidden: Bool](nsgridcolumn/ishidden.md)
-- [var leadingPadding: CGFloat](nsgridcolumn/leadingpadding.md)
-- [var numberOfCells: Int](nsgridcolumn/numberofcells.md)
-- [var width: CGFloat](nsgridcolumn/width.md)
-- [var xPlacement: NSGridCell.Placement](nsgridcolumn/xplacement.md)
+### Instance Properties
+- [var gridView: NSGridView?](./gridview.md)
+- [var isHidden: Bool](./ishidden.md)
+- [var leadingPadding: CGFloat](./leadingpadding.md)
+- [var numberOfCells: Int](./numberofcells.md)
+- [var width: CGFloat](./width.md)
+- [var xPlacement: NSGridCell.Placement](./xplacement.md)
 
 
 ---

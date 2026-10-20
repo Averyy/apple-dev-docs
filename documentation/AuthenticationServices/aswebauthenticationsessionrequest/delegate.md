@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that the session request instance informs about authentication completion.
 
@@ -14,9 +15,14 @@ A delegate that the session request instance informs about authentication comple
 weak var delegate: (any ASWebAuthenticationSessionRequestDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ASWebAuthenticationSessionRequestDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol ASWebAuthenticationSessionRequestDelegate](aswebauthenticationsessionrequestdelegate.md)
+### Indicating completion
+- [protocol ASWebAuthenticationSessionRequestDelegate](../aswebauthenticationsessionrequestdelegate.md)
   An interface through which the session request can inform its delegate, which is typically a browser, about the outcome of the authentication attempt.
 
 

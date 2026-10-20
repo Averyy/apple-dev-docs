@@ -1,7 +1,8 @@
 # AccessibilitySettings.Feature.assistiveTouch
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case assistiveTouch
+```
+
+```c
+AXSettingsFeatureAssistiveTouch
 ```
 
 

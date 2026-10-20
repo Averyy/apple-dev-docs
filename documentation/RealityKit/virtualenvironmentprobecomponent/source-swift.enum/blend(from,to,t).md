@@ -1,7 +1,8 @@
 # VirtualEnvironmentProbeComponent.Source.blend(from:to:t:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A source that blends between two pregenerated probes based on the provided blend factor.
 

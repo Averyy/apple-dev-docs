@@ -1,7 +1,8 @@
 # ArgumentMatcher.PartiallyGenerated.keyOnly(argumentName:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially generated key-only argument matcher.
 

@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized, human-readable display name of the provider.
 

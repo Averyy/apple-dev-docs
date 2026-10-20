@@ -1,7 +1,8 @@
 # !(_:)
 
 **Framework**: USDKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the opposite of a predicate.
 

@@ -1,7 +1,8 @@
 # hoverPose
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hover pose of Apple Pencil during a squeeze interaction.
 
@@ -17,19 +18,24 @@ The hover pose of Apple Pencil during a squeeze interaction.
 var hoverPose: UIPencilHoverPose? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIPencilHoverPose * hoverPose;
+```
+
 #### Discussion
 
 The value of this property is `nil` if Apple Pencil isn’t close enough to the screen to detect a hover, or if the device doesn’t support hover.
 
 ## See Also
 
-- [var timestamp: TimeInterval](uipencilinteraction/squeeze/timestamp.md)
+### Getting information about a squeeze interaction
+- [var timestamp: TimeInterval](./timestamp.md)
   The timestamp of the squeeze interaction.
-- [var phase: UIPencilInteraction.Phase](uipencilinteraction/squeeze/phase.md)
+- [var phase: UIPencilInteraction.Phase](./phase.md)
   The phase of a squeeze interaction on Apple Pencil.
-- [UIPencilInteraction.Phase](uipencilinteraction/phase.md)
+- [UIPencilInteraction.Phase](../phase.md)
   Constants that describe the phases of an interaction on Apple Pencil.
-- [class UIPencilHoverPose](uipencilhoverpose.md)
+- [class UIPencilHoverPose](../../uipencilhoverpose.md)
   An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 

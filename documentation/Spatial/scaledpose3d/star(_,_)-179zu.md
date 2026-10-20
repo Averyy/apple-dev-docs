@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the concatenation of a pose and a scaled pose.
 
@@ -11,7 +12,7 @@ Returns the concatenation of a pose and a scaled pose.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ static func * (lhs: Pose3D, rhs: ScaledPose3D) -> ScaledPose3D
 
 ## See Also
 
-- [static func * (ScaledPose3D, ScaledPose3D) -> ScaledPose3D](scaledpose3d/*(_:_:)-6nx9h.md)
+### Applying arithmetic operations
+- [static func * (ScaledPose3D, ScaledPose3D) -> ScaledPose3D](./star%28_,_%29-6nx9h.md)
   Returns the concatenation of two scaled poses.
-- [static func * (ScaledPose3D, Pose3D) -> ScaledPose3D](scaledpose3d/*(_:_:)-93yyr.md)
+- [static func * (ScaledPose3D, Pose3D) -> ScaledPose3D](./star%28_,_%29-93yyr.md)
   Returns the concatenation of a scaled pose and a pose.
-- [static func *= (inout ScaledPose3D, ScaledPose3D)](scaledpose3d/*=(_:_:).md)
+- [static func *= (inout ScaledPose3D, ScaledPose3D)](./stareq%28_,_%29.md)
   Concatenates two scaled poses and stores the result in the left-hand-side variable.
 
 

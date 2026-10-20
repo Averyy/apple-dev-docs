@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Retrieves a group slice by key.
 

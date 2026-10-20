@@ -1,7 +1,8 @@
 # webDomains
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Websites for the system to cover with a shielding view.
 
@@ -22,11 +23,12 @@ When the user visits a website in this list of domains, the system calls your ex
 
 ## See Also
 
-- [var applications: Set<ApplicationToken>?](shieldsettings/applications-swift.property.md)
+### Blocking apps and websites
+- [var applications: Set<ApplicationToken>?](./applications-swift.property.md)
   Applications for the system to cover with a shielding view.
-- [static let applications: SettingMetadata<Set<ApplicationToken>>](shieldsettings/applications-swift.type.property.md)
+- [static let applications: SettingMetadata<Set<ApplicationToken>>](./applications-swift.type.property.md)
   The metadata for the configuration that specifies apps for the system to cover with a shielding view.
-- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](shieldsettings/webdomains-swift.type.property.md)
+- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](./webdomains-swift.type.property.md)
   The metadata for the configuration that specifies websites for the system to shield.
 
 

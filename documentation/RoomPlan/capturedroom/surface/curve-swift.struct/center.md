@@ -1,7 +1,8 @@
 # center
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Center of the curve, in local coordinates. Corresponds to xz center coordinates
 

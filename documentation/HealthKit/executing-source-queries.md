@@ -1,6 +1,7 @@
 # Executing Source Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create and run source queries.
 
@@ -10,7 +11,7 @@ Source queries return a list of apps and devices that have saved data to the Hea
 
 ##### Create Source Queries
 
-You create a source query by calling the [`init(sampleType:samplePredicate:completionHandler:)`](hksourcequery/init(sampletype:samplepredicate:completionhandler:).md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
+You create a source query by calling the [`init(sampleType:samplePredicate:completionHandler:)`](./hksourcequery/init%28sampletype,samplepredicate,completionhandler%29.md) initializer. Start by creating the type object for the desired samples. The following example creates a type object for step counts.
 
 ```swift
 guard let stepCountType = HKObjectType.quantityType(forIdentifier: .stepCount) else {
@@ -41,7 +42,7 @@ let query = HKSourceQuery(sampleType: stepCountType, samplePredicate: nil) { (qu
 
 ##### Run the Query
 
-After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method.
+After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method.
 
 ```swift
 store.execute(query)
@@ -51,7 +52,8 @@ This runs the query on an anonymous background queue. When the query is complete
 
 ## See Also
 
-- [init(sampleType: HKSampleType, samplePredicate: NSPredicate?, completionHandler: (HKSourceQuery, Set<HKSource>?, (any Error)?) -> Void)](hksourcequery/init(sampletype:samplepredicate:completionhandler:).md)
+### Creating Source Queries
+- [init(sampleType: HKSampleType, samplePredicate: NSPredicate?, completionHandler: (HKSourceQuery, Set<HKSource>?, (any Error)?) -> Void)](./hksourcequery/init%28sampletype,samplepredicate,completionhandler%29.md)
   Instantiates and returns a source query.
 
 

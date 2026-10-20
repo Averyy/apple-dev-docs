@@ -1,7 +1,8 @@
 # latestAnchors
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most recent hand anchors for each hand.
 
@@ -16,11 +17,12 @@ final var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?) { get }
 
 #### Discussion
 
-Accessing this tuple consumes its values and sets them to `nil` until the next anchor update. Both elements of this tuple are `nil` when the associated [`HandTrackingProvider`](handtrackingprovider.md) isn’t running.
+Accessing this tuple consumes its values and sets them to `nil` until the next anchor update. Both elements of this tuple are `nil` when the associated [`HandTrackingProvider`](../handtrackingprovider.md) isn’t running.
 
 ## See Also
 
-- [var anchorUpdates: AnchorUpdateSequence<HandAnchor>](handtrackingprovider/anchorupdates.md)
+### Observing hand anchor data
+- [var anchorUpdates: AnchorUpdateSequence<HandAnchor>](./anchorupdates.md)
   A sequence of updates for all hands that a provider tracks.
 
 

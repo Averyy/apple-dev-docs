@@ -1,7 +1,8 @@
 # displayPrice
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string representation of `price`.
 

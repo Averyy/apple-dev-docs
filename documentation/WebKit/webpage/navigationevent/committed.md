@@ -1,7 +1,8 @@
 # WebPage.NavigationEvent.committed
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This event occurs when the page has started to receive content for the main frame.
 

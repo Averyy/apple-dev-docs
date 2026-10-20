@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 

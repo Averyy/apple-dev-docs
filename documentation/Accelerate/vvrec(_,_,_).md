@@ -1,7 +1,8 @@
 # vvrec(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Calculates the reciprocal of each element in an array of double-precision values.
 
@@ -10,7 +11,7 @@ Calculates the reciprocal of each element in an array of double-precision values
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,19 @@ Calculates the reciprocal of each element in an array of double-precision values
 func vvrec(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafePointer<Int32>)
 ```
 
+```c
+void vvrec(double *, const double *, const int *);
+```
+
 #### Discussion
 
-##### Parameters
+##### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.
 - **parameter 3**: The number of elements in the arrays.
 
-The following code shows an example of using [`vvrec(_:_:_:)`](vvrec(_:_:_:).md):
+The following code shows an example of using [`vvrec(_:_:_:)`](./vvrec%28_,_,_%29.md):
 
 **Swift**:
 
@@ -57,35 +62,36 @@ printf("y: [%lf, %lf, %lf, %lf]\n", y[0], y[1], y[2], y[3]);
 
 ## See Also
 
-- [static func ceil<U>(U) -> [Double]](vforce/ceil(_:)-9dsdt.md)
+### Array-Oriented Arithmetic and Auxiliary Functions
+- [static func ceil<U>(U) -> [Double]](./vforce/ceil%28_%29-9dsdt.md)
   Returns the ceiling of each element in a vector of double-precision values.
-- [static func ceil<U>(U) -> [Float]](vforce/ceil(_:)-57grr.md)
+- [static func ceil<U>(U) -> [Float]](./vforce/ceil%28_%29-57grr.md)
   Returns the ceiling of each element in a vector of single-precision values.
-- [static func ceil<U, V>(U, result: inout V)](vforce/ceil(_:result:)-4wev4.md)
+- [static func ceil<U, V>(U, result: inout V)](./vforce/ceil%28_,result%29-4wev4.md)
   Calculates the ceiling of each element in a vector of double-precision values.
-- [static func ceil<U, V>(U, result: inout V)](vforce/ceil(_:result:)-6zm3u.md)
+- [static func ceil<U, V>(U, result: inout V)](./vforce/ceil%28_,result%29-6zm3u.md)
   Calculates the ceiling of each element in a vector of single-precision values.
-- [static func copysign<U, V>(magnitudes: U, signs: V) -> [Double]](vforce/copysign(magnitudes:signs:)-s0r3.md)
+- [static func copysign<U, V>(magnitudes: U, signs: V) -> [Double]](./vforce/copysign%28magnitudes,signs%29-s0r3.md)
   Returns each single-precision element in the magnitudes vector, setting its sign to the corresponding elements in the signs vector.
-- [static func copysign<U, V>(magnitudes: U, signs: V) -> [Float]](vforce/copysign(magnitudes:signs:)-3jhf0.md)
+- [static func copysign<U, V>(magnitudes: U, signs: V) -> [Float]](./vforce/copysign%28magnitudes,signs%29-3jhf0.md)
   Returns each single-precision element in the magnitudes vector, setting its sign to the corresponding elements in the signs vector.
-- [static func copysign<T, U, V>(magnitudes: T, signs: U, result: inout V)](vforce/copysign(magnitudes:signs:result:)-3zoya.md)
+- [static func copysign<T, U, V>(magnitudes: T, signs: U, result: inout V)](./vforce/copysign%28magnitudes,signs,result%29-3zoya.md)
   Calculates each double-precision element in the magnitudes vector, setting its sign to the corresponding elements in the signs vector.
-- [static func copysign<T, U, V>(magnitudes: T, signs: U, result: inout V)](vforce/copysign(magnitudes:signs:result:)-5umya.md)
+- [static func copysign<T, U, V>(magnitudes: T, signs: U, result: inout V)](./vforce/copysign%28magnitudes,signs,result%29-5umya.md)
   Calculates each single-precision element in the magnitudes vector, setting its sign to the corresponding elements in the signs vector.
-- [static func floor<U>(U) -> [Double]](vforce/floor(_:)-64hyu.md)
+- [static func floor<U>(U) -> [Double]](./vforce/floor%28_%29-64hyu.md)
   Returns the floor of each element in a vector of double-precision values.
-- [static func floor<U>(U) -> [Float]](vforce/floor(_:)-5awna.md)
+- [static func floor<U>(U) -> [Float]](./vforce/floor%28_%29-5awna.md)
   Returns the floor of each element in a vector of single-precision values.
-- [static func floor<U, V>(U, result: inout V)](vforce/floor(_:result:)-61veb.md)
+- [static func floor<U, V>(U, result: inout V)](./vforce/floor%28_,result%29-61veb.md)
   Calculates the floor of each element in a vector of double-precision values.
-- [static func floor<U, V>(U, result: inout V)](vforce/floor(_:result:)-4mf4q.md)
+- [static func floor<U, V>(U, result: inout V)](./vforce/floor%28_,result%29-4mf4q.md)
   Calculates the floor of each element in a vector of single-precision values.
-- [static func nearestInteger<U>(U) -> [Double]](vforce/nearestinteger(_:)-5mppu.md)
+- [static func nearestInteger<U>(U) -> [Double]](./vforce/nearestinteger%28_%29-5mppu.md)
   Returns the nearest integer to each element in a vector of double-precision values.
-- [static func nearestInteger<U>(U) -> [Float]](vforce/nearestinteger(_:)-386dx.md)
+- [static func nearestInteger<U>(U) -> [Float]](./vforce/nearestinteger%28_%29-386dx.md)
   Returns the nearest integer to each element in a vector of single-precision values.
-- [static func nearestInteger<U, V>(U, result: inout V)](vforce/nearestinteger(_:result:)-bbtt.md)
+- [static func nearestInteger<U, V>(U, result: inout V)](./vforce/nearestinteger%28_,result%29-bbtt.md)
   Calculates the nearest integer to each element in a vector of double-precision values.
 
 

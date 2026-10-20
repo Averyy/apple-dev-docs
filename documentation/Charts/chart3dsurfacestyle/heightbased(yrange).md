@@ -1,7 +1,8 @@
 # heightBased(yRange:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Height (Y) based style with Y range.
 
@@ -17,6 +18,8 @@ Height (Y) based style with Y range.
 ```swift
 static func heightBased(yRange: ClosedRange<CGFloat>) -> Self
 ```
+
+Available when `Self` is `BasicChart3DSurfaceStyle`.
 
 
 ---

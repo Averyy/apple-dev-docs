@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void removeFromQ();
 ```
 
@@ -15,8 +15,9 @@ Removes command from current queue.
 
 ## See Also
 
-- [insertAfter](iofwcommand/1813158-insertafter.md)
-- [setHead](iofwcommand/1813176-sethead.md)
+### Miscellaneous
+- [insertAfter](./api-1813158-insertafter.md)
+- [setHead](./api-1813176-sethead.md)
 
 
 ---

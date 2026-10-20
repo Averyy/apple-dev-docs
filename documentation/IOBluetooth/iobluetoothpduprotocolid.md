@@ -1,12 +1,13 @@
 # IOBluetoothPDUProtocolID
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The protocol of the text message content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The protocol of the text message content.
 let IOBluetoothPDUProtocolID: String
 ```
 
+```c
+extern NSString * const IOBluetoothPDUProtocolID;
+```
+
 ## See Also
 
-- [let IOBluetoothPDUUserData: String](iobluetoothpduuserdata.md)
+### Message Information
+- [let IOBluetoothPDUUserData: String](./iobluetoothpduuserdata.md)
   The content of the text message.
-- [let IOBluetoothPDUTimestamp: String](iobluetoothpdutimestamp.md)
+- [let IOBluetoothPDUTimestamp: String](./iobluetoothpdutimestamp.md)
   The time the text message was sent.
-- [let IOBluetoothPDUType: String](iobluetoothpdutype.md)
+- [let IOBluetoothPDUType: String](./iobluetoothpdutype.md)
   The GSM type of the text message.
-- [let IOBluetoothPDUEncoding: String](iobluetoothpduencoding.md)
+- [let IOBluetoothPDUEncoding: String](./iobluetoothpduencoding.md)
   The encoding for the text message.
 
 

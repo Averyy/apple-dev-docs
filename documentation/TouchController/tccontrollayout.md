@@ -1,7 +1,8 @@
 # TCControlLayout
 
 **Framework**: Touch Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol defining the controlLayout properties for a control.
 
@@ -16,41 +17,46 @@ A protocol defining the controlLayout properties for a control.
 protocol TCControlLayout : NSObjectProtocol
 ```
 
+```objc
+@protocol TCControlLayout <NSObject>
+```
+
 ## Topics
 
 ### Inspecting the control layout
-- [var anchor: TCControlLayoutAnchor](tccontrollayout/anchor.md)
+- [var anchor: TCControlLayoutAnchor](./tccontrollayout/anchor.md)
   The anchor point of the control.
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tccontrollayout/anchorcoordinatesystem.md)
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./tccontrollayout/anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [var offset: CGPoint](tccontrollayout/offset.md)
+- [var offset: CGPoint](./tccontrollayout/offset.md)
   The offset from the anchor point.
-- [var position: CGPoint](tccontrollayout/position.md)
+- [var position: CGPoint](./tccontrollayout/position.md)
   The calculated position of the control.
-- [var size: CGSize](tccontrollayout/size.md)
+- [var size: CGSize](./tccontrollayout/size.md)
   The size of the control in points.
-- [var zIndex: Int](tccontrollayout/zindex.md)
+- [var zIndex: Int](./tccontrollayout/zindex.md)
   The z-index of the controlLayout, used for z-ordering.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [TCControl](tccontrol.md)
+- [TCControl](./tccontrol.md)
 ### Conforming Types
-- [TCButton](tcbutton.md)
-- [TCDirectionPad](tcdirectionpad.md)
-- [TCSwitch](tcswitch.md)
-- [TCThrottle](tcthrottle.md)
-- [TCThumbstick](tcthumbstick.md)
-- [TCTouchpad](tctouchpad.md)
+- [TCButton](./tcbutton.md)
+- [TCDirectionPad](./tcdirectionpad.md)
+- [TCSwitch](./tcswitch.md)
+- [TCThrottle](./tcthrottle.md)
+- [TCThumbstick](./tcthumbstick.md)
+- [TCTouchpad](./tctouchpad.md)
 
 ## See Also
 
-- [class TCControlContents](tccontrolcontents.md)
+### Visuals
+- [class TCControlContents](./tccontrolcontents.md)
   Represents the visual contents of a touch control.
-- [class TCControlImage](tccontrolimage.md)
+- [class TCControlImage](./tccontrolimage.md)
   Represents an image to be rendered using Metal.
 
 

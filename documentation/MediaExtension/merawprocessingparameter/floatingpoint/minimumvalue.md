@@ -1,7 +1,8 @@
 # minimumValue
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum value for this parameter.
 
@@ -14,13 +15,18 @@ The minimum value for this parameter.
 var minimumValue: Float { get }
 ```
 
+```objc
+@property (readonly) float minimumValue;
+```
+
 ## See Also
 
-- [var currentValue: Float](merawprocessingparameter/floatingpoint/currentvalue.md)
+### Properties
+- [var currentValue: Float](./currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Float](merawprocessingparameter/floatingpoint/initialvalue.md)
+- [var initialValue: Float](./initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
-- [var maximumValue: Float](merawprocessingparameter/floatingpoint/maximumvalue.md)
+- [var maximumValue: Float](./maximumvalue.md)
   The maximum value for this parameter.
 
 

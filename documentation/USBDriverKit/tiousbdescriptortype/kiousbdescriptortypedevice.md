@@ -1,7 +1,8 @@
 # kIOUSBDescriptorTypeDevice
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The type for a device descriptor.
 
@@ -10,41 +11,42 @@ The type for a device descriptor.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDescriptorTypeDevice
 ```
 
 ## See Also
 
-- [kIOUSBDescriptorTypeConfiguration](tiousbdescriptortype/kiousbdescriptortypeconfiguration.md)
+### Getting the Descriptor Type
+- [kIOUSBDescriptorTypeConfiguration](./kiousbdescriptortypeconfiguration.md)
   The type for a configuration descriptor.
-- [kIOUSBDescriptorTypeString](tiousbdescriptortype/kiousbdescriptortypestring.md)
+- [kIOUSBDescriptorTypeString](./kiousbdescriptortypestring.md)
   The type for a string descriptor.
-- [kIOUSBDescriptorTypeInterface](tiousbdescriptortype/kiousbdescriptortypeinterface.md)
+- [kIOUSBDescriptorTypeInterface](./kiousbdescriptortypeinterface.md)
   The type for an interface descriptor.
-- [kIOUSBDescriptorTypeEndpoint](tiousbdescriptortype/kiousbdescriptortypeendpoint.md)
+- [kIOUSBDescriptorTypeEndpoint](./kiousbdescriptortypeendpoint.md)
   The type for an endpoint descriptor.
-- [kIOUSBDescriptorTypeDeviceQualifier](tiousbdescriptortype/kiousbdescriptortypedevicequalifier.md)
+- [kIOUSBDescriptorTypeDeviceQualifier](./kiousbdescriptortypedevicequalifier.md)
   The type for a device qualifier descriptor.
-- [kIOUSBDescriptorTypeOtherSpeedConfiguration](tiousbdescriptortype/kiousbdescriptortypeotherspeedconfiguration.md)
+- [kIOUSBDescriptorTypeOtherSpeedConfiguration](./kiousbdescriptortypeotherspeedconfiguration.md)
   The type for an other speed configuration descriptor.
-- [kIOUSBDescriptorTypeInterfacePower](tiousbdescriptortype/kiousbdescriptortypeinterfacepower.md)
+- [kIOUSBDescriptorTypeInterfacePower](./kiousbdescriptortypeinterfacepower.md)
   The type for an interface power descriptor.
-- [kIOUSBDescriptorTypeOTG](tiousbdescriptortype/kiousbdescriptortypeotg.md)
+- [kIOUSBDescriptorTypeOTG](./kiousbdescriptortypeotg.md)
   The type for an on-the-go descriptor.
-- [kIOUSBDescriptorTypeDebug](tiousbdescriptortype/kiousbdescriptortypedebug.md)
+- [kIOUSBDescriptorTypeDebug](./kiousbdescriptortypedebug.md)
   The type for a debug descriptor.
-- [kIOUSBDescriptorTypeInterfaceAssociation](tiousbdescriptortype/kiousbdescriptortypeinterfaceassociation.md)
+- [kIOUSBDescriptorTypeInterfaceAssociation](./kiousbdescriptortypeinterfaceassociation.md)
   The type for an interface association descriptor.
-- [kIOUSBDescriptorTypeBOS](tiousbdescriptortype/kiousbdescriptortypebos.md)
+- [kIOUSBDescriptorTypeBOS](./kiousbdescriptortypebos.md)
   The type for a binary object store descriptor.
-- [kIOUSBDescriptorTypeDeviceCapability](tiousbdescriptortype/kiousbdescriptortypedevicecapability.md)
+- [kIOUSBDescriptorTypeDeviceCapability](./kiousbdescriptortypedevicecapability.md)
   The type for a capability descriptor.
-- [kIOUSBDecriptorTypeHID](tiousbdescriptortype/kiousbdecriptortypehid.md)
+- [kIOUSBDecriptorTypeHID](./kiousbdecriptortypehid.md)
   The type for a human interaction device descriptor.
-- [kIOUSBDecriptorTypeReport](tiousbdescriptortype/kiousbdecriptortypereport.md)
+- [kIOUSBDecriptorTypeReport](./kiousbdecriptortypereport.md)
   The type for a report descriptor.
-- [kIOUSBDescriptorTypePhysical](tiousbdescriptortype/kiousbdescriptortypephysical.md)
+- [kIOUSBDescriptorTypePhysical](./kiousbdescriptortypephysical.md)
   The type for a physical descriptor.
 
 

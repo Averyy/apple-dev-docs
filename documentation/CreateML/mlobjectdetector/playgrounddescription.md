@@ -1,7 +1,8 @@
 # playgroundDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the object detector within a playground.
 
@@ -16,9 +17,10 @@ var playgroundDescription: Any { get }
 
 ## See Also
 
-- [var description: String](mlobjectdetector/description.md)
+### Describing an object detector
+- [var description: String](./description.md)
   A text representation of the object detector.
-- [var debugDescription: String](mlobjectdetector/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the object detector that’s suitable for output during debugging.
 
 

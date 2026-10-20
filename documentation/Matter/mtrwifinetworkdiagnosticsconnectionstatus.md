@@ -1,7 +1,8 @@
 # MTRWiFiNetworkDiagnosticsConnectionStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.5+
@@ -18,23 +19,27 @@
 enum MTRWiFiNetworkDiagnosticsConnectionStatus
 ```
 
+```c
+enum MTRWiFiNetworkDiagnosticsConnectionStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRWiFiNetworkDiagnosticsConnectionStatus.connected](mtrwifinetworkdiagnosticsconnectionstatus/connected.md)
-- [MTRWiFiNetworkDiagnosticsConnectionStatus.notConnected](mtrwifinetworkdiagnosticsconnectionstatus/notconnected.md)
+- [MTRWiFiNetworkDiagnosticsConnectionStatus.connected](./mtrwifinetworkdiagnosticsconnectionstatus/connected.md)
+- [MTRWiFiNetworkDiagnosticsConnectionStatus.notConnected](./mtrwifinetworkdiagnosticsconnectionstatus/notconnected.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrwifinetworkdiagnosticsconnectionstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrwifinetworkdiagnosticsconnectionstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

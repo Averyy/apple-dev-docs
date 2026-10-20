@@ -1,34 +1,36 @@
 # kIOUSBEndpointDescriptorUsageTypeInterruptReserved2
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBEndpointDescriptorUsageTypeInterruptReserved2
 ```
 
 ## See Also
 
-- [kIOUSBEndpointDescriptorNumber](kiousbendpointdescriptornumber.md)
-- [kIOUSBEndpointDescriptorNumberPhase](kiousbendpointdescriptornumberphase.md)
-- [kIOUSBEndpointDescriptorEndpointAddressReserved](kiousbendpointdescriptorendpointaddressreserved.md)
-- [kIOUSBEndpointDescriptorDirection](kiousbendpointdescriptordirection.md)
-- [kIOUSBEndpointDescriptorDirectionPhase](kiousbendpointdescriptordirectionphase.md)
-- [kIOUSBEndpointDescriptorDirectionOut](kiousbendpointdescriptordirectionout.md)
-- [kIOUSBEndpointDescriptorDirectionIn](kiousbendpointdescriptordirectionin.md)
-- [kIOUSBEndpointDescriptorTransferType](kiousbendpointdescriptortransfertype.md)
-- [kIOUSBEndpointDescriptorTransferTypePhase](kiousbendpointdescriptortransfertypephase.md)
-- [kIOUSBEndpointDescriptorTransferTypeControl](kiousbendpointdescriptortransfertypecontrol.md)
-- [kIOUSBEndpointDescriptorTransferTypeIsochronous](kiousbendpointdescriptortransfertypeisochronous.md)
-- [kIOUSBEndpointDescriptorTransferTypeBulk](kiousbendpointdescriptortransfertypebulk.md)
-- [kIOUSBEndpointDescriptorTransferTypeInterrupt](kiousbendpointdescriptortransfertypeinterrupt.md)
-- [kIOUSBEndpointDescriptorSynchronizationType](kiousbendpointdescriptorsynchronizationtype.md)
-- [kIOUSBEndpointDescriptorSynchronizationTypePhase](kiousbendpointdescriptorsynchronizationtypephase.md)
+### Getting the Options
+- [kIOUSBEndpointDescriptorNumber](./kiousbendpointdescriptornumber.md)
+- [kIOUSBEndpointDescriptorNumberPhase](./kiousbendpointdescriptornumberphase.md)
+- [kIOUSBEndpointDescriptorEndpointAddressReserved](./kiousbendpointdescriptorendpointaddressreserved.md)
+- [kIOUSBEndpointDescriptorDirection](./kiousbendpointdescriptordirection.md)
+- [kIOUSBEndpointDescriptorDirectionPhase](./kiousbendpointdescriptordirectionphase.md)
+- [kIOUSBEndpointDescriptorDirectionOut](./kiousbendpointdescriptordirectionout.md)
+- [kIOUSBEndpointDescriptorDirectionIn](./kiousbendpointdescriptordirectionin.md)
+- [kIOUSBEndpointDescriptorTransferType](./kiousbendpointdescriptortransfertype.md)
+- [kIOUSBEndpointDescriptorTransferTypePhase](./kiousbendpointdescriptortransfertypephase.md)
+- [kIOUSBEndpointDescriptorTransferTypeControl](./kiousbendpointdescriptortransfertypecontrol.md)
+- [kIOUSBEndpointDescriptorTransferTypeIsochronous](./kiousbendpointdescriptortransfertypeisochronous.md)
+- [kIOUSBEndpointDescriptorTransferTypeBulk](./kiousbendpointdescriptortransfertypebulk.md)
+- [kIOUSBEndpointDescriptorTransferTypeInterrupt](./kiousbendpointdescriptortransfertypeinterrupt.md)
+- [kIOUSBEndpointDescriptorSynchronizationType](./kiousbendpointdescriptorsynchronizationtype.md)
+- [kIOUSBEndpointDescriptorSynchronizationTypePhase](./kiousbendpointdescriptorsynchronizationtypephase.md)
 
 
 ---

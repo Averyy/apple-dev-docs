@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Date` of a given string interpreted using the current settings.
 
@@ -26,7 +27,7 @@ A `Date` represented by `value`.
 
 #### Discussion
 
-> **Note**: Throws `NSFormattingError` if the string cannot be parsed.
+> **Throws**: Throws `NSFormattingError` if the string cannot be parsed.
 
 ## Parameters
 

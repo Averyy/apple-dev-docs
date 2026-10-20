@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The origin of a view.
 
@@ -20,7 +21,8 @@ A view’s origin appears in the top-left-back corner in a left-to-right languag
 
 ## See Also
 
-- [static let zero: UnitPoint3D](unitpoint3d/zero.md)
+### Getting the origin
+- [static let zero: UnitPoint3D](./zero.md)
   A 3D unit point with all components equal to zero.
 
 

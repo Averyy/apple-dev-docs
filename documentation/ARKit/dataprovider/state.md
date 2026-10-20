@@ -2,6 +2,7 @@
 
 **Framework**: ARKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current status of data coming from this provider.

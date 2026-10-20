@@ -1,7 +1,8 @@
 # CTFrameGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for the CTFrame opaque type.
 
@@ -18,6 +19,10 @@ Returns the type identifier for the CTFrame opaque type.
 
 ```swift
 func CTFrameGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTFrameGetTypeID();
 ```
 
 #### Return Value

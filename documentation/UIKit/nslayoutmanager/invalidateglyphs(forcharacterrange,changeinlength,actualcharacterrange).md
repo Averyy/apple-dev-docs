@@ -1,7 +1,8 @@
 # invalidateGlyphs(forCharacterRange:changeInLength:actualCharacterRange:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates and adjusts the glyphs in the specified character range.
 
@@ -9,7 +10,7 @@ Invalidates and adjusts the glyphs in the specified character range.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Invalidates and adjusts the glyphs in the specified character range.
 func invalidateGlyphs(forCharacterRange charRange: NSRange, changeInLength delta: Int, actualCharacterRange actualCharRange: NSRangePointer?)
 ```
 
+```objc
+- (void) invalidateGlyphsForCharacterRange:(NSRange) charRange changeInLength:(NSInteger) delta actualCharacterRange:(NSRangePointer) actualCharRange;
+```
+
 #### Discussion
 
-This method invalidates the cached glyphs for the characters in the given character range, adjusts the character indices of all the subsequent glyphs by the change in length, and invalidates the new character range. This method invalidates only glyph information and performs no glyph generation or layout. Because invalidating glyphs also invalidates layout, after invoking this method you should also invoke [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md), passing `charRange` as the first argument.
+This method invalidates the cached glyphs for the characters in the given character range, adjusts the character indices of all the subsequent glyphs by the change in length, and invalidates the new character range. This method invalidates only glyph information and performs no glyph generation or layout. Because invalidating glyphs also invalidates layout, after invoking this method you should also invoke [`invalidateLayout(forCharacterRange:actualCharacterRange:)`](./invalidatelayout%28forcharacterrange,actualcharacterrange%29.md), passing `charRange` as the first argument.
 
 This method is used by the layout mechanism and should be invoked only during typesetting, in almost all cases only by the typesetter. For example, a custom typesetter might invoke it.
 
@@ -32,13 +37,14 @@ This method is used by the layout mechanism and should be invoked only during ty
 
 ## See Also
 
-- [func invalidateDisplay(forCharacterRange: NSRange)](nslayoutmanager/invalidatedisplay(forcharacterrange:).md)
+### Invalidating glyphs and layout
+- [func invalidateDisplay(forCharacterRange: NSRange)](./invalidatedisplay%28forcharacterrange%29.md)
   Invalidates display for the specified character range.
-- [func invalidateDisplay(forGlyphRange: NSRange)](nslayoutmanager/invalidatedisplay(forglyphrange:).md)
+- [func invalidateDisplay(forGlyphRange: NSRange)](./invalidatedisplay%28forglyphrange%29.md)
   Invalidates a range of glyphs, requiring new layout information, and updates the appropriate regions of any text views that display those glyphs.
-- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](nslayoutmanager/invalidatelayout(forcharacterrange:actualcharacterrange:).md)
+- [func invalidateLayout(forCharacterRange: NSRange, actualCharacterRange: NSRangePointer?)](./invalidatelayout%28forcharacterrange,actualcharacterrange%29.md)
   Invalidates the layout information for the glyphs that map to the specified character range.
-- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nslayoutmanager/processediting(for:edited:range:changeinlength:invalidatedrange:).md)
+- [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](./processediting%28for,edited,range,changeinlength,invalidatedrange%29.md)
   Notifies the layout manager when an edit action changes the contents of its text storage object.
 
 

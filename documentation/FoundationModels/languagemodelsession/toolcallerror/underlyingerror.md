@@ -1,7 +1,8 @@
 # underlyingError
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying error that was thrown during a tool call.
 

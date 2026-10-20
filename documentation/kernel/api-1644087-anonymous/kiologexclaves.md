@@ -1,14 +1,15 @@
 # kIOLogExclaves
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kIOLogExclaves = 0x100000000ULL
 ```
 

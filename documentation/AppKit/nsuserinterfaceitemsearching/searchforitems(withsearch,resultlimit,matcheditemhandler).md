@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Search for the specified items, with the result limit.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func searchForItems(withSearch searchString: String, resultLimit: Int, matchedItemHandler handleMatchedItems: @escaping ([Any]) -> Void)
+```
+
+```objc
+- (void) searchForItemsWithSearchString:(NSString *) searchString resultLimit:(NSInteger) resultLimit matchedItemHandler:(void (^)(NSArray *items)) handleMatchedItems;
 ```
 
 #### Discussion
@@ -25,11 +30,16 @@ When `searchForItemsWithSearchString:resultLimit:matchedItemHandler:` gets calle
 
 - `searchString`: The string to search for.
 - `resultLimit`: The maximum number of results that Spotlight for Help will process.  Any results returned beyond this limit will be ignored, but for performance reasons it is better to not exceed it.
-- `handleMatchedItems`: The Block used to add results to the search. The Block takes one argument: - **items**: The items to add to the results array. The `handleMatchedItems` block can be invoked from any thread desired.  If it is called more than once the additional results will be appended after previous items until the maximum is reached.
+- `handleMatchedItems`: The Block used to add results to the search.
+
+  The Block takes one argument:
+
+  - **items**: The items to add to the results array. The `handleMatchedItems` block can be invoked from any thread desired.  If it is called more than once the additional results will be appended after previous items until the maximum is reached.
 
 ## See Also
 
-- [func performAction(forItem: Any)](nsuserinterfaceitemsearching/performaction(foritem:).md)
+### Search Help Content
+- [func performAction(forItem: Any)](./performaction%28foritem%29.md)
   Invoked when the user selects a search result in Help menu.
 
 

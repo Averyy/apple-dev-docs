@@ -1,7 +1,8 @@
 # accessibilityHeaderElements(forColumn:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the accessibility element for the specified column header.
 
@@ -18,6 +19,10 @@ Returns the accessibility element for the specified column header.
 optional func accessibilityHeaderElements(forColumn column: Int) -> [any UIAccessibilityContainerDataTableCell]?
 ```
 
+```objc
+- (NSArray<id<UIAccessibilityContainerDataTableCell>> *) accessibilityHeaderElementsForColumn:(NSUInteger) column;
+```
+
 #### Return Value
 
 The accessibility elements for the specified column header.
@@ -28,7 +33,8 @@ The accessibility elements for the specified column header.
 
 ## See Also
 
-- [func accessibilityHeaderElements(forRow: Int) -> [any UIAccessibilityContainerDataTableCell]?](uiaccessibilitycontainerdatatable/accessibilityheaderelements(forrow:).md)
+### Providing header elements
+- [func accessibilityHeaderElements(forRow: Int) -> [any UIAccessibilityContainerDataTableCell]?](./accessibilityheaderelements%28forrow%29.md)
   Returns the accessibility element for the specified row header.
 
 

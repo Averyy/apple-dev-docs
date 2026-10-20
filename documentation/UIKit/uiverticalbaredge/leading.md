@@ -1,7 +1,8 @@
 # UIVerticalBarEdge.leading
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The vertical bar is on the leading edge.
 
@@ -16,11 +17,16 @@ The vertical bar is on the leading edge.
 case leading
 ```
 
+```c
+UIVerticalBarEdgeLeading
+```
+
 ## See Also
 
-- [UIVerticalBarEdge.trailing](uiverticalbaredge/trailing.md)
+### Getting the vertical bar edges
+- [UIVerticalBarEdge.trailing](./trailing.md)
   The vertical bar is on the trailing edge.
-- [UIVerticalBarEdge.unspecified](uiverticalbaredge/unspecified.md)
+- [UIVerticalBarEdge.unspecified](./unspecified.md)
   The system has no preferred edge for the vertical bar.
 
 

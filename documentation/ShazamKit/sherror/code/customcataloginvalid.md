@@ -1,7 +1,8 @@
 # SHError.Code.customCatalogInvalid
 
 **Framework**: ShazamKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code to indicate when the custom catalog fails to load due to an invalid format.
 
@@ -20,9 +21,14 @@ The error code to indicate when the custom catalog fails to load due to an inval
 case customCatalogInvalid
 ```
 
+```c
+SHErrorCodeCustomCatalogInvalid
+```
+
 ## See Also
 
-- [SHError.Code.customCatalogInvalidURL](sherror/code/customcataloginvalidurl.md)
+### Catalog errors
+- [SHError.Code.customCatalogInvalidURL](./customcataloginvalidurl.md)
   The error code to indicate that the format for the custom catalog URL is invalid.
 
 

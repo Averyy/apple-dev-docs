@@ -1,7 +1,8 @@
 # stringRepresentation
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The String representation of this ID.
 

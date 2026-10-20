@@ -1,7 +1,8 @@
 # exceptionProtected
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt was made to fetch an exception port that is protected, or to abort a thread while processing a protected exception.
 

@@ -1,7 +1,8 @@
 # snapPoint
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point to which to snap.
 
@@ -18,15 +19,20 @@ The point to which to snap.
 var snapPoint: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGPoint snapPoint;
+```
+
 #### Discussion
 
-The initial value of this property is the value you passed in to the [`init(item:snapTo:)`](uisnapbehavior/init(item:snapto:).md) method. Changing this value updates the dynamic item and potentially puts it in motion again.
+The initial value of this property is the value you passed in to the [`init(item:snapTo:)`](./init%28item,snapto%29.md) method. Changing this value updates the dynamic item and potentially puts it in motion again.
 
-The coordinate system of the point depends on how you initialized the underlying dynamic animator, as described in the overview of [`UIDynamicAnimator`](uidynamicanimator.md).
+The coordinate system of the point depends on how you initialized the underlying dynamic animator, as described in the overview of [`UIDynamicAnimator`](../uidynamicanimator.md).
 
 ## See Also
 
-- [var damping: CGFloat](uisnapbehavior/damping.md)
+### Configuring a snap behavior
+- [var damping: CGFloat](./damping.md)
   The amount of oscillation of a dynamic item during the conclusion of a snap.
 
 

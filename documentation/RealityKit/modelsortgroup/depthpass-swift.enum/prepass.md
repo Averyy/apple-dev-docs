@@ -1,7 +1,8 @@
 # ModelSortGroup.DepthPass.prePass
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that instructs the renderer to draw the depth of all the models in the group before it draws any model’s color.
 

@@ -1,7 +1,8 @@
 # CMIOExtensionDeviceProperties
 
 **Framework**: Core Media I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines the properties of a device.
 
@@ -15,6 +16,10 @@ An object that defines the properties of a device.
 class CMIOExtensionDeviceProperties
 ```
 
+```objc
+@interface CMIOExtensionDeviceProperties : NSObject
+```
+
 #### Overview
 
 Create an instance of this object to manage the device’s property state.
@@ -22,39 +27,40 @@ Create an instance of this object to manage the device’s property state.
 ## Topics
 
 ### Creating Device Properties
-- [init(dictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](cmioextensiondeviceproperties/init(dictionary:).md)
+- [init(dictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])](./cmioextensiondeviceproperties/init%28dictionary%29.md)
   Creates a properties object with a dictionary of property states.
 ### Configuring Device Properties
-- [var model: String?](cmioextensiondeviceproperties/model.md)
+- [var model: String?](./cmioextensiondeviceproperties/model.md)
   A device model string.
-- [var linkedCoreAudioDeviceUID: String?](cmioextensiondeviceproperties/linkedcoreaudiodeviceuid.md)
+- [var linkedCoreAudioDeviceUID: String?](./cmioextensiondeviceproperties/linkedcoreaudiodeviceuid.md)
   A universal identifier of the audio device linked to this device.
-- [var transportType: Int?](cmioextensiondeviceproperties/transporttype-96gm.md)
+- [var transportType: Int?](./cmioextensiondeviceproperties/transporttype-96gm.md)
   The transport type of the device, such as USB or HDMI.
-- [var suspended: Bool?](cmioextensiondeviceproperties/suspended-eru0.md)
+- [var suspended: Bool?](./cmioextensiondeviceproperties/suspended-eru0.md)
   A Boolean value that indicates whether the device is in a suspended state.
-- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](cmioextensiondeviceproperties/setpropertystate(_:forproperty:).md)
+- [func setPropertyState(CMIOExtensionPropertyState<AnyObject>?, forProperty: CMIOExtensionProperty)](./cmioextensiondeviceproperties/setpropertystate%28_,forproperty%29.md)
   Sets the value of a device property.
-- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](cmioextensiondeviceproperties/propertiesdictionary.md)
+- [var propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>]](./cmioextensiondeviceproperties/propertiesdictionary.md)
   A dictionary of properties for a device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMIOExtensionDevice](cmioextensiondevice.md)
+### Devices
+- [class CMIOExtensionDevice](./cmioextensiondevice.md)
   An object that represents a physical or virtual device.
-- [protocol CMIOExtensionDeviceSource](cmioextensiondevicesource.md)
+- [protocol CMIOExtensionDeviceSource](./cmioextensiondevicesource.md)
   A protocol for objects that act as device sources.
 
 

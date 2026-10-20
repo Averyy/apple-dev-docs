@@ -1,7 +1,8 @@
 # ProcessInfo.ThermalState.critical
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The thermal state is significantly impacting the performance of the system and the device needs to cool down.
 
@@ -20,6 +21,10 @@ The thermal state is significantly impacting the performance of the system and t
 case critical
 ```
 
+```c
+NSProcessInfoThermalStateCritical
+```
+
 #### Discussion
 
 The system takes significant steps to reduce thermal state. Fans are running at maximum speed.
@@ -28,11 +33,12 @@ Reduce usage of the CPU, GPU, and I/O such as Bluetooth or network to the minimu
 
 ## See Also
 
-- [ProcessInfo.ThermalState.nominal](processinfo/thermalstate-swift.enum/nominal.md)
+### Constants
+- [ProcessInfo.ThermalState.nominal](./nominal.md)
   The thermal state is within normal limits.
-- [ProcessInfo.ThermalState.fair](processinfo/thermalstate-swift.enum/fair.md)
+- [ProcessInfo.ThermalState.fair](./fair.md)
   The thermal state is slightly elevated.
-- [ProcessInfo.ThermalState.serious](processinfo/thermalstate-swift.enum/serious.md)
+- [ProcessInfo.ThermalState.serious](./serious.md)
   The thermal state is high.
 
 

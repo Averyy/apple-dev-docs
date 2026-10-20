@@ -1,7 +1,8 @@
 # CMMagneticFieldCalibrationAccuracy.low
 
 **Framework**: Core Motion  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accuracy of the magnetic field calibration is low.
 
@@ -19,13 +20,18 @@ The accuracy of the magnetic field calibration is low.
 case low
 ```
 
+```c
+CMMagneticFieldCalibrationAccuracyLow
+```
+
 ## See Also
 
-- [CMMagneticFieldCalibrationAccuracy.uncalibrated](cmmagneticfieldcalibrationaccuracy/uncalibrated.md)
+### Constants
+- [CMMagneticFieldCalibrationAccuracy.uncalibrated](./uncalibrated.md)
   The magnetic field estimate is not calibrated.
-- [CMMagneticFieldCalibrationAccuracy.medium](cmmagneticfieldcalibrationaccuracy/medium.md)
+- [CMMagneticFieldCalibrationAccuracy.medium](./medium.md)
   The accuracy of the magnetic field calibration is medium.
-- [CMMagneticFieldCalibrationAccuracy.high](cmmagneticfieldcalibrationaccuracy/high.md)
+- [CMMagneticFieldCalibrationAccuracy.high](./high.md)
   The accuracy of the magnetic field calibration is high.
 
 

@@ -1,14 +1,15 @@
 # KDTEST_KERNEL_MACROS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KDTEST_KERNEL_MACROS
 ```
 

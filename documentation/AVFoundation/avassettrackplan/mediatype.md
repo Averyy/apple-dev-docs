@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type of this track.
 
@@ -19,11 +20,16 @@ The media type of this track.
 var mediaType: AVMediaType { get }
 ```
 
+```objc
+@property (readonly) AVMediaType mediaType;
+```
+
 ## See Also
 
-- [var segmentConfigurations: [AVPlannedSegmentConfiguration]](avassettrackplan/segmentconfigurations.md)
+### Inspecting the track plan
+- [var segmentConfigurations: [AVPlannedSegmentConfiguration]](./segmentconfigurations.md)
   Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
-- [var assemblyTrackID: CMPersistentTrackID](avassettrackplan/assemblytrackid.md)
+- [var assemblyTrackID: CMPersistentTrackID](./assemblytrackid.md)
   This is the track ID of this track when it is included in the assemblyComposition the planner passes to the completion handler to assemble all planned segments of all tracks into a single AVComposition.
 
 

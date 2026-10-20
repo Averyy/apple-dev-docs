@@ -1,7 +1,8 @@
 # VStack
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that arranges its subviews in a vertical line.
 
@@ -23,20 +24,20 @@ nonisolated struct VStack<Content> where Content : View
 
 ## Mentions
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
-- [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
-- [Adding a background to your view](adding-a-background-to-your-view.md)
-- [Inspecting view layout](inspecting-view-layout.md)
-- [Picking container views for your content](picking-container-views-for-your-content.md)
-- [Aligning views across stacks](aligning-views-across-stacks.md)
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
-- [Configuring views](configuring-views.md)
-- [Declaring a custom view](declaring-a-custom-view.md)
+- [Building layouts with stack views](./building-layouts-with-stack-views.md)
+- [Creating performant scrollable stacks](./creating-performant-scrollable-stacks.md)
+- [Adding a background to your view](./adding-a-background-to-your-view.md)
+- [Inspecting view layout](./inspecting-view-layout.md)
+- [Picking container views for your content](./picking-container-views-for-your-content.md)
+- [Aligning views across stacks](./aligning-views-across-stacks.md)
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
+- [Configuring views](./configuring-views.md)
+- [Declaring a custom view](./declaring-a-custom-view.md)
 
 #### Overview
 
-Unlike [`LazyVStack`](lazyvstack.md), which only renders the views when your app needs to display them, a `VStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `VStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
+Unlike [`LazyVStack`](./lazyvstack.md), which only renders the views when your app needs to display them, a `VStack` renders the views all at once, regardless of whether they are on- or offscreen. Use the regular `VStack` when you have a small number of subviews or don’t want the delayed rendering behavior of the “lazy” version.
 
 The following example shows a simple vertical stack of 10 text views:
 
@@ -56,26 +57,27 @@ var body: some View {
 }
 ```
 
-![Ten text views, named Item 1 through Item 10, arranged in a](/images/com.apple.SwiftUI/SwiftUI-VStack-simple@2x.png)
+![Ten text views, named Item 1 through Item 10, arranged in a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-VStack-simple@2x.png)
 
-> **Note**: If you need a vertical stack that conforms to the [`Layout`](layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](anylayout.md), use [`VStackLayout`](vstacklayout.md) instead.
+> **Note**: If you need a vertical stack that conforms to the [`Layout`](./layout.md) protocol, like when you want to create a conditional layout using [`AnyLayout`](./anylayout.md), use [`VStackLayout`](./vstacklayout.md) instead.
 
 ## Topics
 
 ### Creating a stack
-- [init(alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> Content)](vstack/init(alignment:spacing:content:).md)
+- [init(alignment: HorizontalAlignment, spacing: CGFloat?, content: () -> Content)](./vstack/init%28alignment,spacing,content%29.md)
   Creates an instance with the given spacing and horizontal alignment.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
+### Statically arranging views in one dimension
+- [Building layouts with stack views](./building-layouts-with-stack-views.md)
   Compose complex layouts from primitive container views.
-- [struct HStack](hstack.md)
+- [struct HStack](./hstack.md)
   A view that arranges its subviews in a horizontal line.
 
 

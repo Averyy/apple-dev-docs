@@ -1,7 +1,8 @@
 # type
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A type with an identifier that matches a value in the app’s configuration.
 
@@ -18,13 +19,18 @@ A type with an identifier that matches a value in the app’s configuration.
 var type: UTType { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UTType * type;
+```
+
 #### Discussion
 
 Provide a `UTType` symbol name and description in your app’s `Info.plist` file.
 
 ## See Also
 
-- [var overrideTitle: String?](avcustomroutingactionitem/overridetitle.md)
+### Configuring an item
+- [var overrideTitle: String?](./overridetitle.md)
   A string to use to override the title of the item’s type.
 
 

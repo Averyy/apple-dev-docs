@@ -1,7 +1,8 @@
 # Get Previous Submissions
 
 **Framework**: Notary API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a list of your team’s previous notarization submissions.
 
@@ -10,13 +11,13 @@ Fetch a list of your team’s previous notarization submissions.
 
 ## Mentions
 
-- [Submitting software for notarization over the web](submitting-software-for-notarization-over-the-web.md)
+- [Submitting software for notarization over the web](./submitting-software-for-notarization-over-the-web.md)
 
 #### Discussion
 
 Use this endpoint to get the list of submissions associated with your team. The response holds an array of values that include the unique identifier for the submission, the date you initiated the submission, the name of the associated software, and the status of the submission. The response returns information about only the 100 most recent submissions.
 
-If you need information about just one submission, and you have the associated identifier, use [`Get Submission Status`](get-submission-status.md) instead.
+If you need information about just one submission, and you have the associated identifier, use [`Get Submission Status`](./get-submission-status.md) instead.
 
 ##### Example
 
@@ -68,9 +69,16 @@ https://appstoreconnect.apple.com/notary/v2/submissions
 
 `GET https://appstoreconnect.apple.com/notary/v2/submissions`
 
+## Responses
+
+- `200` OK (`SubmissionListResponse`, `application/json`): The submission list request succeeded. The response contains a list of recent submissions, truncated to the 100 most recent.
+- `403` Forbidden (`ErrorResponse`, `application/json`): An authentication failure occurred.
+- `404` Not Found (`ErrorResponse`, `application/json`): No data was found for this team.
+
 ## See Also
 
-- [object SubmissionListResponse](submissionlistresponse.md)
+### History
+- [object SubmissionListResponse](./submissionlistresponse.md)
   The notary service’s response to a request for information about your team’s previous submissions.
 
 

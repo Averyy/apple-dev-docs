@@ -1,7 +1,8 @@
 # SVGAElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [target](svgaelement/1628902-target.md)
+- [target](./svgaelement/api-1628902-target.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

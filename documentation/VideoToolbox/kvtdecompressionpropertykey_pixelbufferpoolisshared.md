@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_PixelBufferPoolIsShared
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether a common pixel buffer pool is shared between the video decoder and the session client.
 
@@ -19,15 +20,20 @@ A Boolean value indicating whether a common pixel buffer pool is shared between 
 let kVTDecompressionPropertyKey_PixelBufferPoolIsShared: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_PixelBufferPoolIsShared;
+```
+
 #### Discussion
 
 This value is false if separate pools are used because the pixel buffer attributes specified by the video decoder and the client are incompatible.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
+### Pixel Buffer Pools
+- [let kVTDecompressionPropertyKey_OutputPoolRequestedMinimumBufferCount: CFString](./kvtdecompressionpropertykey_outputpoolrequestedminimumbuffercount.md)
   The requested minimum buffer count that a decompression session should use for its output pixel buffer pool, without releasing buffers while the number in use is below this level.
-- [let kVTDecompressionPropertyKey_PixelBufferPool: CFString](kvtdecompressionpropertykey_pixelbufferpool.md)
+- [let kVTDecompressionPropertyKey_PixelBufferPool: CFString](./kvtdecompressionpropertykey_pixelbufferpool.md)
   A pixel buffer pool for pixel buffers being output by the decompression session.
 
 

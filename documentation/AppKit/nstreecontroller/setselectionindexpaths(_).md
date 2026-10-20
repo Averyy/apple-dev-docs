@@ -1,12 +1,13 @@
 # setSelectionIndexPaths(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tree controller’s current selection to the specified index paths.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sets the tree controller’s current selection to the specified index paths.
 func setSelectionIndexPaths(_ indexPaths: [IndexPath]) -> Bool
 ```
 
+```objc
+- (BOOL) setSelectionIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Return [`true`](../../Swift/true.md) if the selection has changed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -24,19 +29,20 @@ Attempting to change the selection may cause a `commitEditing` message which fai
 
 ## Parameters
 
-- `indexPaths`: An array of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects specifying the selected objects.
+- `indexPaths`: An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects specifying the selected objects.
 
 ## See Also
 
-- [func setSelectionIndexPath(IndexPath?) -> Bool](nstreecontroller/setselectionindexpath(_:).md)
+### Getting the current selection
+- [func setSelectionIndexPath(IndexPath?) -> Bool](./setselectionindexpath%28_%29.md)
   Sets the tree controller’s current selection.
-- [var selectionIndexPath: IndexPath?](nstreecontroller/selectionindexpath.md)
+- [var selectionIndexPath: IndexPath?](./selectionindexpath.md)
   The index path of the first selected object.
-- [var selectionIndexPaths: [IndexPath]](nstreecontroller/selectionindexpaths.md)
+- [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of the currently selected objects.
-- [var selectedObjects: [Any]](nstreecontroller/selectedobjects.md)
+- [var selectedObjects: [Any]](./selectedobjects.md)
   An array containing the currently selected objects in the tree controller’s content.
-- [var selectedNodes: [NSTreeNode]](nstreecontroller/selectednodes.md)
+- [var selectedNodes: [NSTreeNode]](./selectednodes.md)
   An array containing the tree controller’s selected tree nodes.
 
 

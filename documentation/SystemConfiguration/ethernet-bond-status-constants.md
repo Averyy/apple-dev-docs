@@ -1,26 +1,28 @@
 # Ethernet Bond Status Constants
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: API Collection
 
 Ethernet bond status codes.
 
 ## Topics
 
 ### Constants
-- [let kSCBondStatusDeviceAggregationStatus: CFString](kscbondstatusdeviceaggregationstatus.md)
-  Device is aggregating. See [`Ethernet Bond Aggregation Status`](1546981-ethernet-bond-aggregation-status.md) for a list of possible values.
-- [let kSCBondStatusDeviceCollecting: CFString](kscbondstatusdevicecollecting.md)
+- [let kSCBondStatusDeviceAggregationStatus: CFString](./kscbondstatusdeviceaggregationstatus.md)
+  Device is aggregating. See [Ethernet Bond Aggregation Status](./api-1546981-ethernet-bond-aggregation-status.md) for a list of possible values.
+- [let kSCBondStatusDeviceCollecting: CFString](./kscbondstatusdevicecollecting.md)
   Can be `0` or `1`.
-- [let kSCBondStatusDeviceDistributing: CFString](kscbondstatusdevicedistributing.md)
+- [let kSCBondStatusDeviceDistributing: CFString](./kscbondstatusdevicedistributing.md)
   Can be `0` or `1`.
 
 ## See Also
 
-- [Ethernet Bond Aggregation Status](1546981-ethernet-bond-aggregation-status.md)
+### Constants
+- [Ethernet Bond Aggregation Status](./api-1546981-ethernet-bond-aggregation-status.md)
   Ethernet bond aggregation status codes.
-- [Network Interface Types](network-interface-types.md)
+- [Network Interface Types](./network-interface-types.md)
   Keys that identify network interface types.
-- [Network Protocol Types](network-protocol-types.md)
+- [Network Protocol Types](./network-protocol-types.md)
   Keys that identify network protocol types.
 
 

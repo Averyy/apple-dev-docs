@@ -1,7 +1,8 @@
 # CMWaterSubmersionMeasurement.DepthState
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A state based on the device’s depth under water.
 
@@ -18,47 +19,52 @@ A state based on the device’s depth under water.
 enum DepthState
 ```
 
+```c
+enum CMWaterSubmersionDepthState : NSInteger;
+```
+
 ## Topics
 
 ### Depth states
-- [CMWaterSubmersionMeasurement.DepthState.notSubmerged](cmwatersubmersionmeasurement/depthstate/notsubmerged.md)
+- [CMWaterSubmersionMeasurement.DepthState.notSubmerged](./depthstate/notsubmerged.md)
   The device is not submerged in water.
-- [CMWaterSubmersionMeasurement.DepthState.submergedShallow](cmwatersubmersionmeasurement/depthstate/submergedshallow.md)
+- [CMWaterSubmersionMeasurement.DepthState.submergedShallow](./depthstate/submergedshallow.md)
   The device is submerged, but less than 1 meter under water.
-- [CMWaterSubmersionMeasurement.DepthState.submergedDeep](cmwatersubmersionmeasurement/depthstate/submergeddeep.md)
+- [CMWaterSubmersionMeasurement.DepthState.submergedDeep](./depthstate/submergeddeep.md)
   The device is submerged at least 1 meter under water.
-- [CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth](cmwatersubmersionmeasurement/depthstate/approachingmaxdepth.md)
+- [CMWaterSubmersionMeasurement.DepthState.approachingMaxDepth](./depthstate/approachingmaxdepth.md)
   The device is approaching the maximum safe diving depth.
-- [CMWaterSubmersionMeasurement.DepthState.pastMaxDepth](cmwatersubmersionmeasurement/depthstate/pastmaxdepth.md)
+- [CMWaterSubmersionMeasurement.DepthState.pastMaxDepth](./depthstate/pastmaxdepth.md)
   The device has exceeded the maximum safe diving depth.
-- [CMWaterSubmersionMeasurement.DepthState.sensorDepthError](cmwatersubmersionmeasurement/depthstate/sensordeptherror.md)
+- [CMWaterSubmersionMeasurement.DepthState.sensorDepthError](./depthstate/sensordeptherror.md)
   An error with the depth sensor occurred.
-- [CMWaterSubmersionMeasurement.DepthState.unknown](cmwatersubmersionmeasurement/depthstate/unknown.md)
+- [CMWaterSubmersionMeasurement.DepthState.unknown](./depthstate/unknown.md)
   The device’s depth state is unknown.
 ### Initializers
-- [init?(rawValue: Int)](cmwatersubmersionmeasurement/depthstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./depthstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var date: Date](cmwatersubmersionmeasurement/date.md)
+### Accessing the data
+- [var date: Date](./date.md)
   The time and date when the system recorded the measurements.
-- [var depth: Measurement<UnitLength>?](cmwatersubmersionmeasurement/depth.md)
+- [var depth: Measurement<UnitLength>?](./depth.md)
   The depth under water.
-- [var pressure: Measurement<UnitPressure>?](cmwatersubmersionmeasurement/pressure.md)
+- [var pressure: Measurement<UnitPressure>?](./pressure.md)
   The water pressure.
-- [var surfacePressure: Measurement<UnitPressure>](cmwatersubmersionmeasurement/surfacepressure.md)
+- [var surfacePressure: Measurement<UnitPressure>](./surfacepressure.md)
   The surface air pressure.
-- [var submersionState: CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/submersionstate.md)
+- [var submersionState: CMWaterSubmersionMeasurement.DepthState](./submersionstate.md)
   The depth state.
 
 

@@ -1,7 +1,8 @@
 # exported(as:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports this entity’s content as an `IntentFile`.
 
@@ -30,7 +31,7 @@ When no content type is specified, the entity’s first registered `TransferRepr
 
 The returned file contains the exported data and, when available, a sandbox-extended file URL that can be passed directly as a parameter to another intent.
 
-> **Note**: If the entity does not conform to `Transferable` or does not support the requested format.
+> **Throws**: If the entity does not conform to `Transferable` or does not support the requested format.
 
 ## Parameters
 

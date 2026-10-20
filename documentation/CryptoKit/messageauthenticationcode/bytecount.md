@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of bytes in the message authentication code.

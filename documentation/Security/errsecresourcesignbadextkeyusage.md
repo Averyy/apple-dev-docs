@@ -1,7 +1,8 @@
 # errSecResourceSignBadExtKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Resource signing detects an error in the extended key usage.
 
@@ -18,6 +19,10 @@ Resource signing detects an error in the extended key usage.
 
 ```swift
 var errSecResourceSignBadExtKeyUsage: OSStatus { get }
+```
+
+```c
+errSecResourceSignBadExtKeyUsage
 ```
 
 

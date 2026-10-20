@@ -1,7 +1,8 @@
 # inputLatency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latency for audio input, in seconds.
 
@@ -19,9 +20,14 @@ The latency for audio input, in seconds.
 var inputLatency: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval inputLatency;
+```
+
 ## See Also
 
-- [var outputLatency: TimeInterval](avaudiosession/outputlatency.md)
+### Inspecting latency
+- [var outputLatency: TimeInterval](./outputlatency.md)
   The latency for audio output, in seconds.
 
 

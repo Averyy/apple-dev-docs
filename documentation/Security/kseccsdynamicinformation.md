@@ -1,7 +1,8 @@
 # kSecCSDynamicInformation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Dynamic validity information about running code.
 
@@ -15,9 +16,13 @@ Dynamic validity information about running code.
 var kSecCSDynamicInformation: UInt32 { get }
 ```
 
+```c
+kSecCSDynamicInformation
+```
+
 #### Discussion
 
-This information cannot be returned for code on disk (represented by a [`SecStaticCode`](secstaticcode.md) object).
+This information cannot be returned for code on disk (represented by a [`SecStaticCode`](./secstaticcode.md) object).
 
 
 ---

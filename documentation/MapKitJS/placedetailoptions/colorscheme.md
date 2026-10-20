@@ -1,7 +1,8 @@
 # colorScheme
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The color scheme to use when displaying a place detail view.
 
@@ -10,7 +11,7 @@ The color scheme to use when displaying a place detail view.
 
 ## Declaration
 
-```swift
+```
 colorScheme?: ColorScheme;
 ```
 

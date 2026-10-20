@@ -1,7 +1,8 @@
 # reorderingHandlers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The diffable data source’s handlers for reordering items.
 
@@ -19,11 +20,15 @@ The diffable data source’s handlers for reordering items.
 var reorderingHandlers: __UICollectionViewDiffableDataSourceReorderingHandlers { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UICollectionViewDiffableDataSourceReorderingHandlers<id,id> * reorderingHandlers;
+```
+
 #### Discussion
 
 Provide reordering handlers to support the reordering of items in your collection view.
 
-The system calls the [`didReorderHandler`](uicollectionviewdiffabledatasourcereorderinghandlers/didreorderhandler.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
+The system calls the [`didReorderHandler`](../uicollectionviewdiffabledatasourcereorderinghandlers/didreorderhandler.md) handler after a reordering transaction ([`NSDiffableDataSourceTransaction`](../nsdiffabledatasourcetransaction-swift.struct.md)) occurs, so you can update your data backing store with information about the changes.
 
 **Swift**:
 

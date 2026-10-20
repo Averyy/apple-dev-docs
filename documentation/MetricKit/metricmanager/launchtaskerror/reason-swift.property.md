@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the error
 
@@ -19,9 +20,10 @@ let reason: MetricManager.LaunchTaskError.Reason
 
 ## See Also
 
-- [let taskID: LaunchTaskID](metricmanager/launchtaskerror/taskid.md)
+### Error details
+- [let taskID: LaunchTaskID](./taskid.md)
   The task ID that caused the error
-- [MetricManager.LaunchTaskError.Reason](metricmanager/launchtaskerror/reason-swift.enum.md)
+- [MetricManager.LaunchTaskError.Reason](./reason-swift.enum.md)
   A value that describes why a launch task tracking operation failed.
 
 

@@ -1,7 +1,8 @@
 # ALAssetsLibraryWriteFailedError
 
 **Framework**: Assets Library  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The attempt to write data failed.
 
@@ -16,29 +17,34 @@ The attempt to write data failed.
 var ALAssetsLibraryWriteFailedError: Int { get }
 ```
 
+```c
+ALAssetsLibraryWriteFailedError
+```
+
 #### Discussion
 
-This error may be returned in the completion block for `ALAssetsLibrary/writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` as well as the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uiimagewritetosavedphotosalbum(_:_:_:_:)) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/uikit/uisavevideoatpathtosavedphotosalbum(_:_:_:_:)).
+This error may be returned in the completion block for `ALAssetsLibrary/writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` as well as the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uiimagewritetosavedphotosalbum%28_,_,_,_%29.md) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](../UIKit/uisavevideoatpathtosavedphotosalbum%28_,_,_,_%29.md).
 
 ## See Also
 
-- [var ALAssetsLibraryUnknownError: Int](alassetslibraryunknownerror.md)
+### Constants
+- [var ALAssetsLibraryUnknownError: Int](./alassetslibraryunknownerror.md)
   The reason for the error is unknown.
-- [var ALAssetsLibraryWriteBusyError: Int](alassetslibrarywritebusyerror.md)
+- [var ALAssetsLibraryWriteBusyError: Int](./alassetslibrarywritebusyerror.md)
   Writing was already busy when the attempt to write was made.
-- [var ALAssetsLibraryWriteInvalidDataError: Int](alassetslibrarywriteinvaliddataerror.md)
+- [var ALAssetsLibraryWriteInvalidDataError: Int](./alassetslibrarywriteinvaliddataerror.md)
   The data was invalid.
-- [var ALAssetsLibraryWriteIncompatibleDataError: Int](alassetslibrarywriteincompatibledataerror.md)
+- [var ALAssetsLibraryWriteIncompatibleDataError: Int](./alassetslibrarywriteincompatibledataerror.md)
   The data contained incompatible data.
-- [var ALAssetsLibraryWriteDataEncodingError: Int](alassetslibrarywritedataencodingerror.md)
+- [var ALAssetsLibraryWriteDataEncodingError: Int](./alassetslibrarywritedataencodingerror.md)
   The data contained data with the wrong encoding.
-- [var ALAssetsLibraryWriteDiskSpaceError: Int](alassetslibrarywritediskspaceerror.md)
+- [var ALAssetsLibraryWriteDiskSpaceError: Int](./alassetslibrarywritediskspaceerror.md)
   There was not enough space on the disk to write the data.
-- [var ALAssetsLibraryDataUnavailableError: Int](alassetslibrarydataunavailableerror.md)
+- [var ALAssetsLibraryDataUnavailableError: Int](./alassetslibrarydataunavailableerror.md)
   The data was not available.
-- [var ALAssetsLibraryAccessUserDeniedError: Int](alassetslibraryaccessuserdeniederror.md)
+- [var ALAssetsLibraryAccessUserDeniedError: Int](./alassetslibraryaccessuserdeniederror.md)
   The user denied access to the library.
-- [var ALAssetsLibraryAccessGloballyDeniedError: Int](alassetslibraryaccessgloballydeniederror.md)
+- [var ALAssetsLibraryAccessGloballyDeniedError: Int](./alassetslibraryaccessgloballydeniederror.md)
   Access to the library was denied globally.
 
 

@@ -1,7 +1,8 @@
 # product
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product name for the device.
 

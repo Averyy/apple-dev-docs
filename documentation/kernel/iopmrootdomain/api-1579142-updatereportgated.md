@@ -1,14 +1,15 @@
 # updateReportGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn updateReportGated(uint64_t ch_id, void *result, IOBufferMemoryDescriptor *dest);
 ```
 

@@ -1,7 +1,8 @@
 # new MapPoint(x, y)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a map location.
 
@@ -10,7 +11,7 @@ Creates a map location.
 
 ## Declaration
 
-```swift
+```
 constructor(x?: number, y?: number);
 ```
 
@@ -33,7 +34,8 @@ const y = mapPoint.y; // 0.5
 
 ## See Also
 
-- [interface MapPointData](mappointdata.md)
+### Creating a map point
+- [interface MapPointData](../mappointdata.md)
   A plain object representation of a map point in map units.
 
 

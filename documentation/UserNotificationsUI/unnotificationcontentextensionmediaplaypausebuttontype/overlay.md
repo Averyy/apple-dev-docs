@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionMediaPlayPauseButtonType.overlay
 
 **Framework**: User Notifications UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A partially transparent play/pause button that is layered on top of your media content.
 
@@ -18,15 +19,20 @@ A partially transparent play/pause button that is layered on top of your media c
 case overlay
 ```
 
+```c
+UNNotificationContentExtensionMediaPlayPauseButtonTypeOverlay
+```
+
 #### Discussion
 
 This button draws a play icon over the content initially. When playback begins, the button disappears. Tapping the content again pauses playback and displays the play button again.
 
 ## See Also
 
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](unnotificationcontentextensionmediaplaypausebuttontype/none.md)
+### Button Types
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](./none.md)
   No media button.
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](unnotificationcontentextensionmediaplaypausebuttontype/default.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.default](./default.md)
   A standard play/pause button.
 
 

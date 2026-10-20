@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a value of the given type for the given key.
@@ -27,16 +28,24 @@ A value of the requested type, if present for the given key and convertible to t
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
+> **Throws**: `DecodingError.typeMismatch` if the encountered encoded value is not convertible to the requested type.
 
-> **Note**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
+> **Throws**: `DecodingError.keyNotFound` if `self` does not have an entry for the given key.
 
-> **Note**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
+> **Throws**: `DecodingError.valueNotFound` if `self` has a null entry for the given key.
 
 ## Parameters
 
 - `type`: The type of value to decode.
 - `key`: The key that the decoded value is associated with.
+
+## Default Implementations
+
+### KeyedDecodingContainerProtocol Implementations
+- [func decode(Int128.Type, forKey: Self.Key) throws -> Int128](./decode%28_,forkey%29-7za3v.md)
+  Decodes a value of the given type for the given key.
+- [func decode(UInt128.Type, forKey: Self.Key) throws -> UInt128](./decode%28_,forkey%29-u839.md)
+  Decodes a value of the given type for the given key.
 
 
 ---

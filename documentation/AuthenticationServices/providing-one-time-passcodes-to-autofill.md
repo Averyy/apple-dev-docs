@@ -1,6 +1,7 @@
 # Providing one-time passcodes to AutoFill
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Help people efficiently perform multifactor authentication.
 
@@ -10,25 +11,26 @@ Many online services rely on one-time passcodes (OTPs), particularly time-based 
 
 Your credential provider extension can supply OTPs to AutoFill so that people can automatically fill out passcodes in apps and on websites. Someone can configure multiple credential providers in Settings so that different apps supply their passwords and OTPs in AutoFill.
 
-##### Indicate That Your Extension Provides Otps
+##### Indicate that your extension provides OTPs
 
-Open your credential provider extension’s information property list file in Xcode and add a key to the [`ASCredentialProviderExtensionCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities) dictionary. Set the key’s name to `ProvidesOneTimeCodes`, and its value to the Boolean `true`.
+Open your credential provider extension’s information property list file in Xcode and add a key to the [`ASCredentialProviderExtensionCapabilities`](../BundleResources/information-property-list/nsextension/nsextensionattributes/ascredentialproviderextensioncapabilities.md) dictionary. Set the key’s name to `ProvidesOneTimeCodes`, and its value to the Boolean `true`.
 
-##### Respond to System Requests for Otp Autofill
+##### Respond to system requests for OTP AutoFill
 
-The system calls your credential provider view controller’s  [`provideCredentialWithoutUserInteraction(for:)`](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-3mo23.md) method with a request type of [`ASCredentialRequestType.oneTimeCode`](ascredentialrequesttype/onetimecode.md) to request an OTP. If your credential provider extension can provide the code without presenting UI, call [`completeOneTimeCodeRequest(using:completionHandler:)`](ascredentialproviderextensioncontext/completeonetimecoderequest(using:completionhandler:).md) to supply the text to the system.
+The system calls your credential provider view controller’s  [`provideCredentialWithoutUserInteraction(for:)`](./ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction%28for%29-3mo23.md) method with a request type of [`ASCredentialRequestType.oneTimeCode`](./ascredentialrequesttype/onetimecode.md) to request an OTP. If your credential provider extension can provide the code without presenting UI, call [`completeOneTimeCodeRequest(using:completionHandler:)`](./ascredentialproviderextensioncontext/completeonetimecoderequest%28using,completionhandler%29.md) to supply the text to the system.
 
-Otherwise, if your credential provider extension needs to present UI to provide the OTP, call [`cancelRequest(withError:)`](ascredentialproviderextensioncontext/cancelrequest(witherror:).md). Use the error domain [`ASExtensionErrorDomain`](asextensionerrordomain.md), and the code [`ASExtensionError.Code.userInteractionRequired`](asextensionerror/code/userinteractionrequired.md). The system calls [`prepareInterfaceToProvideCredential(for:)`](ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential(for:)-68qpo.md). In your implementation, present the UI you need for someone to choose the OTP for the request. Call [`completeOneTimeCodeRequest(using:completionHandler:)`](ascredentialproviderextensioncontext/completeonetimecoderequest(using:completionhandler:).md) to supply the text to the system, or [`cancelRequest(withError:)`](ascredentialproviderextensioncontext/cancelrequest(witherror:).md) to inform the system if an error occurs.
+Otherwise, if your credential provider extension needs to present UI to provide the OTP, call [`cancelRequest(withError:)`](./ascredentialproviderextensioncontext/cancelrequest%28witherror%29.md). Use the error domain [`ASExtensionErrorDomain`](./asextensionerrordomain.md), and the code [`ASExtensionError.Code.userInteractionRequired`](./asextensionerror/code/userinteractionrequired.md). The system calls [`prepareInterfaceToProvideCredential(for:)`](./ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential%28for%29-68qpo.md). In your implementation, present the UI you need for someone to choose the OTP for the request. Call [`completeOneTimeCodeRequest(using:completionHandler:)`](./ascredentialproviderextensioncontext/completeonetimecoderequest%28using,completionhandler%29.md) to supply the text to the system, or [`cancelRequest(withError:)`](./ascredentialproviderextensioncontext/cancelrequest%28witherror%29.md) to inform the system if an error occurs.
 
-##### Provide a List of Available Otps
+##### Provide a list of available OTPs
 
-When someone uses a text field to complete an OTP using AutoFill, they can tap a button to see a list of all available OTPs. The system calls [`prepareOneTimeCodeCredentialList(for:)`](ascredentialproviderviewcontroller/prepareonetimecodecredentiallist(for:).md) to get the list of OTPs from your extension, then presents your controller.
+When someone uses a text field to complete an OTP using AutoFill, they can tap a button to see a list of all available OTPs. The system calls [`prepareOneTimeCodeCredentialList(for:)`](./ascredentialproviderviewcontroller/prepareonetimecodecredentiallist%28for%29.md) to get the list of OTPs from your extension, then presents your controller.
 
 ## See Also
 
-- [AutoFill Credential Provider Entitlement](../bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
+### AutoFill credentials
+- [AutoFill Credential Provider Entitlement](../BundleResources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
-- [class ASCredentialProviderViewController](ascredentialproviderviewcontroller.md)
+- [class ASCredentialProviderViewController](./ascredentialproviderviewcontroller.md)
   A view controller that a credential manager app uses to extend AutoFill.
 
 

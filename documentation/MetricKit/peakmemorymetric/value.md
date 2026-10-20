@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Peak memory footprint.
 

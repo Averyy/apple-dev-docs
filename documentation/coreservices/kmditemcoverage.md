@@ -1,7 +1,8 @@
 # kMDItemCoverage
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The extent or scope of the content of the resource. A CFString.
 
@@ -12,6 +13,10 @@ The extent or scope of the content of the resource. A CFString.
 
 ```swift
 let kMDItemCoverage: CFString!
+```
+
+```c
+const CFStringRef kMDItemCoverage;
 ```
 
 #### Discussion

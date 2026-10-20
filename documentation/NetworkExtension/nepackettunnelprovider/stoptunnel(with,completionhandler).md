@@ -1,7 +1,8 @@
 # stopTunnel(with:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop the network tunnel.
 
@@ -16,7 +17,15 @@ Stop the network tunnel.
 ## Declaration
 
 ```swift
+func stopTunnel(with reason: NEProviderStopReason, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func stopTunnel(with reason: NEProviderStopReason) async
+```
+
+```objc
+- (void) stopTunnelWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -29,14 +38,15 @@ Do not use this method to stop the tunnel from the Packet Tunnel Provider. Use `
 
 ## Parameters
 
-- `reason`: An `NEProviderStopReason` code indicating why the tunnel is being stopped. Possible codes are listed in [`NEProvider`](neprovider.md).
+- `reason`: An `NEProviderStopReason` code indicating why the tunnel is being stopped. Possible codes are listed in [`NEProvider`](../neprovider.md).
 - `completionHandler`: A block that must be executed when the tunnel is fully stopped.
 
 ## See Also
 
-- [func startTunnel(options: [String : NSObject]?, completionHandler: ((any Error)?) -> Void)](nepackettunnelprovider/starttunnel(options:completionhandler:).md)
+### Managing the tunnel life cycle
+- [func startTunnel(options: [String : NSObject]?, completionHandler: ((any Error)?) -> Void)](./starttunnel%28options,completionhandler%29.md)
   Start the network tunnel.
-- [func cancelTunnelWithError((any Error)?)](nepackettunnelprovider/canceltunnelwitherror(_:).md)
+- [func cancelTunnelWithError((any Error)?)](./canceltunnelwitherror%28_%29.md)
   Stop the network tunnel from the Packet Tunnel Provider.
 
 

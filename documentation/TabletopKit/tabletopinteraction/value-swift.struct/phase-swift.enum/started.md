@@ -1,7 +1,8 @@
 # TabletopInteraction.Value.Phase.started
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 2.0+
@@ -14,9 +15,10 @@ case started
 
 ## See Also
 
-- [TabletopInteraction.Value.Phase.cancelled](tabletopinteraction/value-swift.struct/phase-swift.enum/cancelled.md)
-- [TabletopInteraction.Value.Phase.ended](tabletopinteraction/value-swift.struct/phase-swift.enum/ended.md)
-- [TabletopInteraction.Value.Phase.update](tabletopinteraction/value-swift.struct/phase-swift.enum/update.md)
+### Phases
+- [TabletopInteraction.Value.Phase.cancelled](./cancelled.md)
+- [TabletopInteraction.Value.Phase.ended](./ended.md)
+- [TabletopInteraction.Value.Phase.update](./update.md)
 
 
 ---

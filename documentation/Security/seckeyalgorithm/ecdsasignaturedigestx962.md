@@ -1,7 +1,8 @@
 # ecdsaSignatureDigestX962
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let ecdsaSignatureDigestX962: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECDSASignatureDigestX962;
 ```
 
 

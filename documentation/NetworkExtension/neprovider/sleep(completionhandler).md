@@ -1,7 +1,8 @@
 # sleep(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a sleep event.
 
@@ -16,7 +17,15 @@ Handle a sleep event.
 ## Declaration
 
 ```swift
+func sleep(completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func sleep() async
+```
+
+```objc
+- (void) sleepWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -31,7 +40,8 @@ This method is called by the system when the device is about to go to sleep.
 
 ## See Also
 
-- [func wake()](neprovider/wake.md)
+### Handling sleep and wake
+- [func wake()](./wake%28%29.md)
   Handle a wake event.
 
 

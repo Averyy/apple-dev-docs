@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this location was determined.
 
@@ -10,7 +11,7 @@ The time at which this location was determined.
 
 ## Declaration
 
-```swift
+```
 attribute date? timestamp;
 ```
 

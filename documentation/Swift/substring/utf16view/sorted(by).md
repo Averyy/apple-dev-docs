@@ -1,7 +1,8 @@
 # sorted(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
 
@@ -81,7 +82,7 @@ The predicate must be a *strict weak ordering* over the elements. That is, for a
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements for which `areInIncreasingOrder` does not establish an order.
 
-> **Note**: O(*n* log *n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the sequence.
 
 ## Parameters
 

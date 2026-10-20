@@ -1,7 +1,8 @@
 # FileWrapperDocumentWriter.WriteConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,8 @@ typealias WriteConfiguration = DocumentWriteConfiguration
 
 ## See Also
 
-- [init(sending FileWrapperDocumentWriter<Snapshot>.WriteConfiguration, makeFileWrapper: (Snapshot, FileWrapper?) async throws -> FileWrapper)](filewrapperdocumentwriter/init(_:makefilewrapper:).md)
+### Creating a writer
+- [init(sending FileWrapperDocumentWriter<Snapshot>.WriteConfiguration, makeFileWrapper: (Snapshot, FileWrapper?) async throws -> FileWrapper)](./init%28_,makefilewrapper%29.md)
   Creates a writer that converts a snapshot into a `FileWrapper`.
 
 

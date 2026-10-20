@@ -1,7 +1,8 @@
 # NEFilterReport.Event.dataDecision
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of event indicating the report is about a pass/block decision made after analyzing some amount of a flow’s data.
 
@@ -18,13 +19,18 @@ A type of event indicating the report is about a pass/block decision made after 
 case dataDecision
 ```
 
+```c
+NEFilterReportEventDataDecision
+```
+
 ## See Also
 
-- [NEFilterReport.Event.newFlow](nefilterreport/event-swift.enum/newflow.md)
+### Event Types
+- [NEFilterReport.Event.newFlow](./newflow.md)
   A type of event indicating the report is for a new flow.
-- [NEFilterReport.Event.flowClosed](nefilterreport/event-swift.enum/flowclosed.md)
+- [NEFilterReport.Event.flowClosed](./flowclosed.md)
   A type of event indicating the report is for a flow’s closing.
-- [NEFilterReport.Event.statistics](nefilterreport/event-swift.enum/statistics.md)
+- [NEFilterReport.Event.statistics](./statistics.md)
   A type of event indicating the report is for the latest statistics of the flow.
 
 

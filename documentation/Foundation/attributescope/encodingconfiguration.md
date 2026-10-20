@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The configuration for encoding the attribute scope.
@@ -21,9 +22,16 @@ The configuration for encoding the attribute scope.
 static var encodingConfiguration: AttributeScopeCodableConfiguration { get }
 ```
 
+## Default Implementations
+
+### AttributeScope Implementations
+- [static var encodingConfiguration: AttributeScopeCodableConfiguration](./encodingconfiguration-73uew.md)
+  The configuration for encoding the attribute scope.
+
 ## See Also
 
-- [static var decodingConfiguration: AttributeScopeCodableConfiguration](attributescope/decodingconfiguration.md)
+### Supporting Coding Configurations
+- [static var decodingConfiguration: AttributeScopeCodableConfiguration](./decodingconfiguration.md)
   The configuration for decoding the attribute scope.
 
 

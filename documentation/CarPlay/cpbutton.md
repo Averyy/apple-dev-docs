@@ -1,7 +1,8 @@
 # CPButton
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A button that displays an image and invokes a handler when the user taps it.
 
@@ -16,49 +17,54 @@ A button that displays an image and invokes a handler when the user taps it.
 class CPButton
 ```
 
+```objc
+@interface CPButton : NSObject
+```
+
 #### Overview
 
 You create instances of `CPButton` to provide a template’s actions. The button displays a custom image that communicates its function. When a user taps the button, CarPlay invokes the handler you provide. The template that contains the button manages its appearance.
 
-The framework provides specialized subclasses for common actions, such as [`CPContactCallButton`](cpcontactcallbutton.md) or [`CPContactMessageButton`](cpcontactmessagebutton.md).
+The framework provides specialized subclasses for common actions, such as [`CPContactCallButton`](./cpcontactcallbutton.md) or [`CPContactMessageButton`](./cpcontactmessagebutton.md).
 
 ## Topics
 
 ### Creating a Button
-- [init(image: UIImage, handler: ((CPButton) -> Void)?)](cpbutton/init(image:handler:).md)
+- [init(image: UIImage, handler: ((CPButton) -> Void)?)](./cpbutton/init%28image,handler%29.md)
   Creates a button that displays an image and invokes a handler when the user taps it.
-- [let CPButtonMaximumImageSize: CGSize](cpbuttonmaximumimagesize.md)
+- [let CPButtonMaximumImageSize: CGSize](./cpbuttonmaximumimagesize.md)
   The maximum size of a button’s image that CarPlay supports.
 ### Getting the Button’s Image
-- [var image: UIImage?](cpbutton/image.md)
+- [var image: UIImage?](./cpbutton/image.md)
   The button’s image.
 ### Configuring the Button’s Attributes
-- [var title: String?](cpbutton/title.md)
+- [var title: String?](./cpbutton/title.md)
   The button’s title.
-- [var isEnabled: Bool](cpbutton/isenabled.md)
+- [var isEnabled: Bool](./cpbutton/isenabled.md)
   A Boolean value that determines whether the button is in an enabled state.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CPContactCallButton](cpcontactcallbutton.md)
-- [CPContactDirectionsButton](cpcontactdirectionsbutton.md)
-- [CPContactMessageButton](cpcontactmessagebutton.md)
+- [CPContactCallButton](./cpcontactcallbutton.md)
+- [CPContactDirectionsButton](./cpcontactdirectionsbutton.md)
+- [CPContactMessageButton](./cpcontactmessagebutton.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CPImageSet](cpimageset.md)
+### Related Types
+- [class CPImageSet](./cpimageset.md)
   Light and dark representations of an image.
-- [let CarPlayErrorDomain: String](carplayerrordomain.md)
+- [let CarPlayErrorDomain: String](./carplayerrordomain.md)
   The domain that CarPlay uses for any errors it provides.
 
 

@@ -1,7 +1,8 @@
 # time
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp indicating when the dock captured the tracking state.
 

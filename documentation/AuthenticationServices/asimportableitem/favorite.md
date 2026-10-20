@@ -1,7 +1,8 @@
 # favorite
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicate whether this is a “favorite” item.
 

@@ -1,7 +1,8 @@
 # init(primary:secondary:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an arrangement view with a primary and secondary view.
 
@@ -28,9 +29,10 @@ init(@ContentBuilder primary: () -> Primary, @ContentBuilder secondary: () -> Se
 
 ## See Also
 
-- [init(ArrangementViewStyleConfiguration)](arrangementview/init(_:).md)
+### Creating an arrangement view
+- [init(ArrangementViewStyleConfiguration)](./init%28_%29.md)
   Creates an arrangement view from a style configuration.
-- [struct ArrangementViewStyleConfiguration](arrangementviewstyleconfiguration.md)
+- [struct ArrangementViewStyleConfiguration](../arrangementviewstyleconfiguration.md)
   The properties of an arrangement view you provide to create a custom style.
 
 

@@ -1,7 +1,8 @@
 # BNNSNDArrayFlagBackpropAccumulate
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag that indicates backpropagation adds the value of the Jacobian to the elements of this n-dimensional array.
 
@@ -20,12 +21,17 @@ A flag that indicates backpropagation adds the value of the Jacobian to the elem
 var BNNSNDArrayFlagBackpropAccumulate: BNNSNDArrayFlags { get }
 ```
 
+```c
+BNNSNDArrayFlagBackpropAccumulate
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsndarrayflags/init(_:).md)
-- [init(rawValue: UInt32)](bnnsndarrayflags/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsndarrayflags/rawvalue.md)
-- [var BNNSNDArrayFlagBackpropSet: BNNSNDArrayFlags](bnnsndarrayflagbackpropset.md)
+### N-Dimensional Array Flags
+- [init(UInt32)](./bnnsndarrayflags/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsndarrayflags/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsndarrayflags/rawvalue.md)
+- [var BNNSNDArrayFlagBackpropSet: BNNSNDArrayFlags](./bnnsndarrayflagbackpropset.md)
   A flag that indicates the elements of this n-dimensional array are overwritten by the Jacobian during backpropagation.
 
 

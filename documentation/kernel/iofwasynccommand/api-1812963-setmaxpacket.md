@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOReturn setMaxPacket(
  UInt32maxBytes)
 ```

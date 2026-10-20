@@ -1,7 +1,8 @@
 # finishInApp
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to ask the person setting up the accessory to finish additional setup in the app after the accessory is authorized.
 
@@ -15,11 +16,16 @@ An option to ask the person setting up the accessory to finish additional setup 
 static var finishInApp: ASPickerDisplayItem.SetupOptions { get }
 ```
 
+```c
+ASPickerDisplayItemSetupFinishInApp
+```
+
 ## See Also
 
-- [static var rename: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/rename.md)
+### Options
+- [static var rename: ASPickerDisplayItem.SetupOptions](./rename.md)
   An option to ask the person using the app to rename the accessory.
-- [static var confirmAuthorization: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/confirmauthorization.md)
+- [static var confirmAuthorization: ASPickerDisplayItem.SetupOptions](./confirmauthorization.md)
   An option to require the app to finish accessory authorization before showing the setup view.
 
 

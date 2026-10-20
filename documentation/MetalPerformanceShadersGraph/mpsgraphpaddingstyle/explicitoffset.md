@@ -1,7 +1,8 @@
 # MPSGraphPaddingStyle.explicitOffset
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 TF_VALID
 
@@ -17,6 +18,10 @@ TF_VALID
 
 ```swift
 case explicitOffset
+```
+
+```c
+MPSGraphPaddingStyleExplicitOffset
 ```
 
 

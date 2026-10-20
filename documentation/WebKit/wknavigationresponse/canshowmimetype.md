@@ -1,7 +1,8 @@
 # canShowMIMEType
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether WebKit is capable of displaying the response’s MIME type natively.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether WebKit is capable of displaying the respo
 var canShowMIMEType: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canShowMIMEType;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if WebKit is able to display the MIME type.
+The value of this property is [`true`](../../Swift/true.md) if WebKit is able to display the MIME type.
 
 ## See Also
 
-- [var isForMainFrame: Bool](wknavigationresponse/isformainframe.md)
+### Getting Additional Response Information
+- [var isForMainFrame: Bool](./isformainframe.md)
   A Boolean value that indicates whether the response targets the web view’s main frame.
 
 

@@ -1,7 +1,8 @@
 # base64EncodedString(options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Base-64 encoded string.
 
@@ -30,11 +31,12 @@ The Base-64 encoded string.
 
 ## See Also
 
-- [func base64EncodedData(options: Data.Base64EncodingOptions) -> Data](data/base64encodeddata(options:).md)
+### Base-64 Encoding
+- [func base64EncodedData(options: Data.Base64EncodingOptions) -> Data](./base64encodeddata%28options%29.md)
   Returns Base-64 encoded data.
-- [typealias Base64DecodingOptions](data/base64decodingoptions.md)
+- [typealias Base64DecodingOptions](./base64decodingoptions.md)
   Options to use when decoding data.
-- [typealias Base64EncodingOptions](data/base64encodingoptions.md)
+- [typealias Base64EncodingOptions](./base64encodingoptions.md)
   Options to use when encoding data.
 
 

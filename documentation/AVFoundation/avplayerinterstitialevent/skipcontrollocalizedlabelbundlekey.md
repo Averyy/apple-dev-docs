@@ -1,7 +1,8 @@
 # skipControlLocalizedLabelBundleKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key defined in the AVPlayerInterstitialEventController’s localizedStringsBundle that points to the localized label for the skip button.
 
@@ -20,15 +21,20 @@ The key defined in the AVPlayerInterstitialEventController’s localizedStringsB
 var skipControlLocalizedLabelBundleKey: String? { get set }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * skipControlLocalizedLabelBundleKey;
+```
+
 #### Discussion
 
 If the value of the property is nil, the skip button may contain a generic label depending on the implementation of the UI that’s in use. To ensure the best available user experience in various playback configurations, including external playback, set a value for this property that provides localized translations of skip control labels.
 
 ## See Also
 
-- [var skipControlTimeRange: CMTimeRange](avplayerinterstitialevent/skipcontroltimerange.md)
+### Managing skipping behavior
+- [var skipControlTimeRange: CMTimeRange](./skipcontroltimerange.md)
   The time range within the duration of the interstitial event for which a skip button should be displayed.
-- [AVPlayerInterstitialEvent.SkippableEventState](avplayerinterstitialevent/skippableeventstate.md)
+- [AVPlayerInterstitialEvent.SkippableEventState](./skippableeventstate.md)
   These constants describe the state for a skippable AVPlayerInterstitialEvent.
 
 

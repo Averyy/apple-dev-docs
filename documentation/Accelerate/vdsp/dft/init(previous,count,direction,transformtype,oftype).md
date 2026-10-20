@@ -1,7 +1,8 @@
 # init(previous:count:direction:transformType:ofType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new discrete Fourier transform instance.
 
@@ -11,8 +12,10 @@ Initializes a new discrete Fourier transform instance.
 - Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
-- visionOS ?+
+- visionOS
 - watchOS 6.0+ - Deprecated
+
+> **Deprecated**: Use `vDSP.DiscreteFourierTransform`.
 
 ## Declaration
 

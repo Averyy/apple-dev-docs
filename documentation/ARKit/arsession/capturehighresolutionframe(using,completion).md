@@ -1,7 +1,8 @@
 # captureHighResolutionFrame(using:completion:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a single, high resolution frame to be captured.
 
@@ -12,7 +13,15 @@ Requests a single, high resolution frame to be captured.
 ## Declaration
 
 ```swift
+func captureHighResolutionFrame(using photoSettings: AVCapturePhotoSettings?, completion: @escaping @Sendable (ARFrame?, (any Error)?) -> Void)
+```
+
+```swift
 func captureHighResolutionFrame(using photoSettings: AVCapturePhotoSettings?) async throws -> ARFrame
+```
+
+```objc
+- (void) captureHighResolutionFrameUsingPhotoSettings:(AVCapturePhotoSettings *) photoSettings completion:(void (^)(ARFrame *frame, NSError *error)) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # newTexture(URL:options:)
 
 **Framework**: MetalKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronously loads image data and creates a new Metal texture from a given URL.
 
@@ -19,6 +20,10 @@ Synchronously loads image data and creates a new Metal texture from a given URL.
 func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]? = nil) throws -> any MTLTexture
 ```
 
+```objc
+- (id<MTLTexture>) newTextureWithContentsOfURL:(NSURL *) URL options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
+```
+
 #### Return Value
 
 A fully loaded and initialized Metal texture, or `nil` if an error occurred.
@@ -30,11 +35,12 @@ A fully loaded and initialized Metal texture, or `nil` if an error occurred.
 
 ## See Also
 
-- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](mtktextureloader/newtexture(url:options:completionhandler:).md)
+### Loading Textures from URLs
+- [func newTexture(URL: URL, options: [MTKTextureLoader.Option : Any]?, completionHandler: ((any MTLTexture)?, (any Error)?) -> Void)](./newtexture%28url,options,completionhandler%29.md)
   Asynchronously loads image data and creates a new Metal texture from a given URL.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, error: NSErrorPointer) -> [any MTLTexture]](mtktextureloader/newtextures(urls:options:error:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, error: NSErrorPointer) -> [any MTLTexture]](./newtextures%28urls,options,error%29.md)
   Synchronously loads image data and creates new Metal textures from the specified list of URLs.
-- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](mtktextureloader/newtextures(urls:options:completionhandler:).md)
+- [func newTextures(URLs: [URL], options: [MTKTextureLoader.Option : Any]?, completionHandler: ([any MTLTexture], (any Error)?) -> Void)](./newtextures%28urls,options,completionhandler%29.md)
   Asynchronously loads image data and creates new Metal textures from the specified list of URLs.
 
 

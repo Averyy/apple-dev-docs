@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: ARKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two room anchors are equal.
 

@@ -1,7 +1,8 @@
 # CNLabelOther
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for identifying other information.
 
@@ -19,23 +20,28 @@ The label for identifying other information.
 let CNLabelOther: String
 ```
 
+```c
+extern NSString * const CNLabelOther;
+```
+
 #### Discussion
 
 This label takes a string value.
 
 ## See Also
 
-- [let CNLabelHome: String](cnlabelhome.md)
+### Getting common labels
+- [let CNLabelHome: String](./cnlabelhome.md)
   The label for identifying home information.
-- [let CNLabelWork: String](cnlabelwork.md)
+- [let CNLabelWork: String](./cnlabelwork.md)
   The label for identifying work information.
-- [let CNLabelSchool: String](cnlabelschool.md)
+- [let CNLabelSchool: String](./cnlabelschool.md)
   The label for the contact’s school.
-- [let CNLabelEmailiCloud: String](cnlabelemailicloud.md)
+- [let CNLabelEmailiCloud: String](./cnlabelemailicloud.md)
   The label for identifying the contact’s iCloud email information.
-- [let CNLabelURLAddressHomePage: String](cnlabelurladdresshomepage.md)
+- [let CNLabelURLAddressHomePage: String](./cnlabelurladdresshomepage.md)
   The label for identifying URL information.
-- [let CNLabelDateAnniversary: String](cnlabeldateanniversary.md)
+- [let CNLabelDateAnniversary: String](./cnlabeldateanniversary.md)
   The label for identifying the contact’s anniversary date.
 
 

@@ -1,7 +1,8 @@
 # cancelled
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The query stopped because someone canceled it.
 
@@ -20,15 +21,16 @@ static var cancelled: CSSearchQueryError.Code { get }
 
 #### Discussion
 
-The system reports this error if your code called the [`cancel()`](csuserquery/cancel().md) method.
+The system reports this error if your code called the [`cancel()`](../csuserquery/cancel%28%29.md) method.
 
 ## See Also
 
-- [static var indexUnreachable: CSSearchQueryError.Code](cssearchqueryerror/indexunreachable.md)
+### Getting the error codes
+- [static var indexUnreachable: CSSearchQueryError.Code](./indexunreachable.md)
   The index is unreachable.
-- [static var invalidQuery: CSSearchQueryError.Code](cssearchqueryerror/invalidquery.md)
+- [static var invalidQuery: CSSearchQueryError.Code](./invalidquery.md)
   The query is syntactically invalid or specifies items that your app doesn’t have access to.
-- [static var unknown: CSSearchQueryError.Code](cssearchqueryerror/unknown.md)
+- [static var unknown: CSSearchQueryError.Code](./unknown.md)
   An unknown error occurred.
 
 

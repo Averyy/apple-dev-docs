@@ -1,7 +1,8 @@
 # converter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit converter that represents the unit in terms of the dimension’s base unit.
 
@@ -19,6 +20,10 @@ The unit converter that represents the unit in terms of the dimension’s base u
 ```swift
 @NSCopying
 var converter: UnitConverter { get }
+```
+
+```objc
+@property (copy, readonly) NSUnitConverter * converter;
 ```
 
 

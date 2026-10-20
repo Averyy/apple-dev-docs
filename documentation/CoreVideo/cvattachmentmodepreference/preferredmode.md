@@ -2,6 +2,7 @@
 
 **Framework**: Core Video  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:

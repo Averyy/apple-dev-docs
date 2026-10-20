@@ -1,7 +1,8 @@
 # MediaCommand.FeedbackStatus
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The feedback status for a media item.
 
@@ -27,25 +28,26 @@ Use this to represent whether the user has expressed positive, negative, or no p
 ## Topics
 
 ### Enumeration Cases
-- [MediaCommand.FeedbackStatus.negative](mediacommand/feedbackstatus/negative.md)
+- [MediaCommand.FeedbackStatus.negative](./feedbackstatus/negative.md)
   The user has expressed negative feedback for the content.
-- [MediaCommand.FeedbackStatus.neutral](mediacommand/feedbackstatus/neutral.md)
+- [MediaCommand.FeedbackStatus.neutral](./feedbackstatus/neutral.md)
   The user has not expressed a preference.
-- [MediaCommand.FeedbackStatus.positive](mediacommand/feedbackstatus/positive.md)
+- [MediaCommand.FeedbackStatus.positive](./feedbackstatus/positive.md)
   The user has expressed positive feedback for the content.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func feedback(title: String?, shortTitle: String?, status: MediaCommand.FeedbackStatus, (MediaCommand.FeedbackStatus) async throws -> Void) -> MediaCommand](mediacommand/feedback(title:shorttitle:status:_:).md)
+### Providing feedback
+- [static func feedback(title: String?, shortTitle: String?, status: MediaCommand.FeedbackStatus, (MediaCommand.FeedbackStatus) async throws -> Void) -> MediaCommand](./feedback%28title,shorttitle,status,_%29.md)
   Creates a command that handles user feedback (positive, neutral, or negative) for the current content.
 
 

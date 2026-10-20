@@ -1,7 +1,8 @@
 # fontSize
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font size used to render the receiver’s text. Animatable.
 
@@ -19,21 +20,26 @@ The font size used to render the receiver’s text. Animatable.
 var fontSize: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat fontSize;
+```
+
 #### Discussion
 
 Defaults to 36.0.
 
-The `fontSize` property is only used when the [`string`](catextlayer/string.md) property is not an `NSAttributedString`.
+The `fontSize` property is only used when the [`string`](./string.md) property is not an `NSAttributedString`.
 
 > **Note**:  Implicit animation of this property is only enabled in applications compiled for macOS 10.6 and later.
 
 ## See Also
 
-- [var font: CFTypeRef?](catextlayer/font.md)
+### Text Visual Properties
+- [var font: CFTypeRef?](./font.md)
   The font used to render the receiver’s text.
-- [var foregroundColor: CGColor?](catextlayer/foregroundcolor.md)
+- [var foregroundColor: CGColor?](./foregroundcolor.md)
   The color used to render the receiver’s text. Animatable.
-- [var allowsFontSubpixelQuantization: Bool](catextlayer/allowsfontsubpixelquantization.md)
+- [var allowsFontSubpixelQuantization: Bool](./allowsfontsubpixelquantization.md)
   Determines whether to allow subpixel quantization for the graphics context used for text rendering.
 
 

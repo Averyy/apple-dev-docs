@@ -1,15 +1,20 @@
 # NSImageAlignment.alignBottomRight
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case alignBottomRight
+```
+
+```c
+NSImageAlignBottomRight
 ```
 
 #### Discussion
@@ -18,14 +23,15 @@ Align the image with the bottom and right edges of the cell.
 
 ## See Also
 
-- [NSImageAlignment.alignCenter](nsimagealignment/aligncenter.md)
-- [NSImageAlignment.alignTop](nsimagealignment/aligntop.md)
-- [NSImageAlignment.alignTopLeft](nsimagealignment/aligntopleft.md)
-- [NSImageAlignment.alignTopRight](nsimagealignment/aligntopright.md)
-- [NSImageAlignment.alignLeft](nsimagealignment/alignleft.md)
-- [NSImageAlignment.alignBottom](nsimagealignment/alignbottom.md)
-- [NSImageAlignment.alignBottomLeft](nsimagealignment/alignbottomleft.md)
-- [NSImageAlignment.alignRight](nsimagealignment/alignright.md)
+### Constants
+- [NSImageAlignment.alignCenter](./aligncenter.md)
+- [NSImageAlignment.alignTop](./aligntop.md)
+- [NSImageAlignment.alignTopLeft](./aligntopleft.md)
+- [NSImageAlignment.alignTopRight](./aligntopright.md)
+- [NSImageAlignment.alignLeft](./alignleft.md)
+- [NSImageAlignment.alignBottom](./alignbottom.md)
+- [NSImageAlignment.alignBottomLeft](./alignbottomleft.md)
+- [NSImageAlignment.alignRight](./alignright.md)
 
 
 ---

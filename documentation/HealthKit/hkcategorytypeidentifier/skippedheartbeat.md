@@ -1,7 +1,8 @@
 # skippedHeartbeat
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records skipped heartbeat as a symptom.
 
@@ -19,21 +20,26 @@ A category type that records skipped heartbeat as a symptom.
 static let skippedHeartbeat: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierSkippedHeartbeat;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let chestTightnessOrPain: HKCategoryTypeIdentifier](hkcategorytypeidentifier/chesttightnessorpain.md)
+### Heart and Lung
+- [static let chestTightnessOrPain: HKCategoryTypeIdentifier](./chesttightnessorpain.md)
   A category type that records chest tightness or pain as a symptom.
-- [static let coughing: HKCategoryTypeIdentifier](hkcategorytypeidentifier/coughing.md)
+- [static let coughing: HKCategoryTypeIdentifier](./coughing.md)
   A category type that records coughing as a symptom.
-- [static let rapidPoundingOrFlutteringHeartbeat: HKCategoryTypeIdentifier](hkcategorytypeidentifier/rapidpoundingorflutteringheartbeat.md)
+- [static let rapidPoundingOrFlutteringHeartbeat: HKCategoryTypeIdentifier](./rapidpoundingorflutteringheartbeat.md)
   A category type that records a rapid, pounding, or fluttering heartbeat as a symptom.
-- [static let shortnessOfBreath: HKCategoryTypeIdentifier](hkcategorytypeidentifier/shortnessofbreath.md)
+- [static let shortnessOfBreath: HKCategoryTypeIdentifier](./shortnessofbreath.md)
   A category type that records shortness of breath as a symptom.
-- [static let wheezing: HKCategoryTypeIdentifier](hkcategorytypeidentifier/wheezing.md)
+- [static let wheezing: HKCategoryTypeIdentifier](./wheezing.md)
   A category type that records wheezing as a symptom.
 
 

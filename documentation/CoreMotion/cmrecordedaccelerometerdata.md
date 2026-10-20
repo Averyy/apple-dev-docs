@@ -1,7 +1,8 @@
 # CMRecordedAccelerometerData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A single piece of accelerometer data that was recorded by the device.
 
@@ -18,42 +19,47 @@ A single piece of accelerometer data that was recorded by the device.
 class CMRecordedAccelerometerData
 ```
 
+```objc
+@interface CMRecordedAccelerometerData : CMAccelerometerData
+```
+
 #### Overview
 
-You do not create instances of this class directly. Instead, you use a [`CMSensorRecorder`](cmsensorrecorder.md) object to retrieve already recorded data from the system.
+You do not create instances of this class directly. Instead, you use a [`CMSensorRecorder`](./cmsensorrecorder.md) object to retrieve already recorded data from the system.
 
 ## Topics
 
 ### Getting the Accelerometer Data
-- [var startDate: Date](cmrecordedaccelerometerdata/startdate.md)
+- [var startDate: Date](./cmrecordedaccelerometerdata/startdate.md)
   The wall clock time when the sensor sample was recorded.
-- [var identifier: UInt64](cmrecordedaccelerometerdata/identifier.md)
+- [var identifier: UInt64](./cmrecordedaccelerometerdata/identifier.md)
   The unique identifier for the accelerometer data.
 
 ## Relationships
 
 ### Inherits From
-- [CMAccelerometerData](cmaccelerometerdata.md)
+- [CMAccelerometerData](./cmaccelerometerdata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
+### Accelerometers
+- [Getting raw accelerometer events](./getting-raw-accelerometer-events.md)
   Retrieve data from the onboard accelerometers.
-- [class CMAccelerometerData](cmaccelerometerdata.md)
+- [class CMAccelerometerData](./cmaccelerometerdata.md)
   A data sample from the device’s three accelerometers.
-- [class CMSensorRecorder](cmsensorrecorder.md)
+- [class CMSensorRecorder](./cmsensorrecorder.md)
   An object that gathers and retrieves accelerometer data from a device.
-- [class CMSensorDataList](cmsensordatalist.md)
+- [class CMSensorDataList](./cmsensordatalist.md)
   A list of the accelerometer data recorded by the system.
 
 

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the provider and completes all active calls with an error.
 
@@ -16,6 +17,10 @@ Invalidates the provider and completes all active calls with an error.
 
 ```swift
 func invalidate()
+```
+
+```objc
+- (void) invalidate;
 ```
 
 #### Discussion

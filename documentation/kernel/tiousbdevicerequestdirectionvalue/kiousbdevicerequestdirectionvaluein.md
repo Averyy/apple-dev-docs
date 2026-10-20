@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestDirectionValueIn
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The input direction value.
 
@@ -10,7 +11,7 @@ The input direction value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionValueIn = 1
 ```
 

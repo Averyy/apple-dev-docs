@@ -1,10 +1,11 @@
 # kAudioUnitProperty_ParameterValueName
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 var kAudioUnitProperty_ParameterValueName: AudioUnitPropertyID { get }
 ```
 
+```c
+kAudioUnitProperty_ParameterValueName
+```
+
 ## See Also
 
-- [var kAudioOfflineUnitProperty_InputSize: AudioUnitPropertyID](kaudioofflineunitproperty_inputsize.md)
-- [var kAudioOfflineUnitProperty_OutputSize: AudioUnitPropertyID](kaudioofflineunitproperty_outputsize.md)
-- [var kAudioUnitProperty_BusCount: AudioUnitPropertyID](kaudiounitproperty_buscount.md)
-- [var kAudioUnitProperty_CurrentPreset: AudioUnitPropertyID](kaudiounitproperty_currentpreset.md)
-- [var kAudioUnitProperty_MIDIControlMapping: AudioUnitPropertyID](kaudiounitproperty_midicontrolmapping.md)
-- [var kAudioUnitProperty_SRCAlgorithm: AudioUnitPropertyID](kaudiounitproperty_srcalgorithm.md)
+### Constants
+- [var kAudioOfflineUnitProperty_InputSize: AudioUnitPropertyID](./kaudioofflineunitproperty_inputsize.md)
+- [var kAudioOfflineUnitProperty_OutputSize: AudioUnitPropertyID](./kaudioofflineunitproperty_outputsize.md)
+- [var kAudioUnitProperty_BusCount: AudioUnitPropertyID](./kaudiounitproperty_buscount.md)
+- [var kAudioUnitProperty_CurrentPreset: AudioUnitPropertyID](./kaudiounitproperty_currentpreset.md)
+- [var kAudioUnitProperty_MIDIControlMapping: AudioUnitPropertyID](./kaudiounitproperty_midicontrolmapping.md)
+- [var kAudioUnitProperty_SRCAlgorithm: AudioUnitPropertyID](./kaudiounitproperty_srcalgorithm.md)
 
 
 ---

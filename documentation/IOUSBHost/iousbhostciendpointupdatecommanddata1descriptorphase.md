@@ -1,7 +1,8 @@
 # IOUSBHostCIEndpointUpdateCommandData1DescriptorPhase
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var IOUSBHostCIEndpointUpdateCommandData1DescriptorPhase: UInt { get }
 ```
 
+```c
+IOUSBHostCIEndpointUpdateCommandData1DescriptorPhase
+```
+
 ## See Also
 
-- [var IOUSBHostCIEndpointUpdateCommandData1Descriptor: UInt](iousbhostciendpointupdatecommanddata1descriptor.md)
+### Constants
+- [var IOUSBHostCIEndpointUpdateCommandData1Descriptor: UInt](./iousbhostciendpointupdatecommanddata1descriptor.md)
 
 
 ---

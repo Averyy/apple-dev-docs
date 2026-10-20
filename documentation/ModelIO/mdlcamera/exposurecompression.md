@@ -1,7 +1,8 @@
 # exposureCompression
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Two parameters that determine the brightness compression curve for colors in the camera’s image.
 
@@ -19,6 +20,10 @@ Two parameters that determine the brightness compression curve for colors in the
 var exposureCompression: vector_float2 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) vector_float2 exposureCompression;
+```
+
 #### Discussion
 
 Simulating a real-world camera requires considering the way a pixel value captured by an imaging sensor is processed for display (or how a unit of film stock is developed and projected). Part of such consideration is the exposure compression function, which scales each color component value between minimum and maximum brightness.
@@ -27,21 +32,22 @@ Color values below the x component of this vector should be left unchanged. Colo
 
 `output = pow(compressionFunction(baseValue), displayGamma)`
 
-In this formula, `compressionFunction` implements the clamping and scaling behavior described above, `baseValue` is derived as explained for the [`exposure`](mdlcamera/exposure.md) property, and `displayGamma` is the gamma value of the output display device (for example, 2.0 for the default sRGB color space on Macs and iOS devices).
+In this formula, `compressionFunction` implements the clamping and scaling behavior described above, `baseValue` is derived as explained for the [`exposure`](./exposure.md) property, and `displayGamma` is the gamma value of the output display device (for example, 2.0 for the default sRGB color space on Macs and iOS devices).
 
 ## See Also
 
-- [var sensorVerticalAperture: Float](mdlcamera/sensorverticalaperture.md)
+### Modeling a Physical Imaging Surface
+- [var sensorVerticalAperture: Float](./sensorverticalaperture.md)
   The height, in millimeters, of the camera’s simulated imaging surface.
-- [var sensorAspect: Float](mdlcamera/sensoraspect.md)
+- [var sensorAspect: Float](./sensoraspect.md)
   The ratio of width to height for the camera’s simulated imaging surface.
-- [var sensorEnlargement: vector_float2](mdlcamera/sensorenlargement.md)
+- [var sensorEnlargement: vector_float2](./sensorenlargement.md)
   The horizontal and vertical scale factors that determine the active region of the sensor.
-- [var sensorShift: vector_float2](mdlcamera/sensorshift.md)
+- [var sensorShift: vector_float2](./sensorshift.md)
   The horizontal and vertical offsets, in millimeters, of the center of the camera image relative to the center of the simulated lens.
-- [var flash: vector_float3](mdlcamera/flash.md)
+- [var flash: vector_float3](./flash.md)
   Red, green, and blue factors to be used in brightening darker areas of the camera’s image.
-- [var exposure: vector_float3](mdlcamera/exposure.md)
+- [var exposure: vector_float3](./exposure.md)
   Red, green, and blue factors that scale each color channel in the camera’s image.
 
 

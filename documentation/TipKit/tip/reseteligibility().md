@@ -1,7 +1,8 @@
 # resetEligibility()
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reset a previously invalidated tip.
 
@@ -47,7 +48,8 @@ struct CatTrackSettings: View {
 
 ## See Also
 
-- [func invalidate(reason: Self.InvalidationReason)](tip/invalidate(reason:).md)
+### Invalidating a tip
+- [func invalidate(reason: Self.InvalidationReason)](./invalidate%28reason%29.md)
   Permanently invalidates a tip and prevents it from displaying.
 
 

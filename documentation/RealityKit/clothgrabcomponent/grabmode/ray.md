@@ -1,7 +1,8 @@
 # ray
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Grabbing will be performed using a ray.
 
@@ -22,7 +23,8 @@ The translation of the entity determines the origin of the ray, and the forward 
 
 ## See Also
 
-- [static func volume(shape: ClothVolumeShape) -> ClothGrabComponent.GrabMode](clothgrabcomponent/grabmode/volume(shape:).md)
+### Creating a grab mode
+- [static func volume(shape: ClothVolumeShape) -> ClothGrabComponent.GrabMode](./volume%28shape%29.md)
   Grabbing will be performed using a volume of the given shape.
 
 

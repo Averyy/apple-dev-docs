@@ -1,7 +1,8 @@
 # writingToolsAffordanceVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 
@@ -27,7 +28,7 @@ A view with the specified Writing Tools affordance visibility.
 
 #### Discussion
 
-Use this view modifier to disable the Writing Tools affordance for [`TextField`](textfield.md) views when running on macOS or Mac Catalyst.
+Use this view modifier to disable the Writing Tools affordance for [`TextField`](../textfield.md) views when running on macOS or Mac Catalyst.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ Use this view modifier to disable the Writing Tools affordance for [`TextField`]
 
 ## See Also
 
-- [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
+### Configuring the Writing Tools behavior
+- [func writingToolsBehavior(WritingToolsBehavior) -> some View](./writingtoolsbehavior%28_%29.md)
   Specifies the Writing Tools behavior for text and text input in the environment.
-- [struct WritingToolsBehavior](writingtoolsbehavior.md)
+- [struct WritingToolsBehavior](../writingtoolsbehavior.md)
   The Writing Tools editing experience for text and text input.
 
 

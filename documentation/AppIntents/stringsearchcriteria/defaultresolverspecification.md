@@ -1,7 +1,8 @@
 # defaultResolverSpecification
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.2+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -20,9 +21,10 @@ static var defaultResolverSpecification: some ResolverSpecification { get }
 
 ## See Also
 
-- [StringSearchCriteria.Specification](stringsearchcriteria/specification.md)
-- [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
-- [StringSearchCriteria.ValueType](stringsearchcriteria/valuetype.md)
+### Getting related types
+- [StringSearchCriteria.Specification](./specification.md)
+- [StringSearchCriteria.UnwrappedType](./unwrappedtype.md)
+- [StringSearchCriteria.ValueType](./valuetype.md)
 
 
 ---

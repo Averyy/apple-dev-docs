@@ -1,7 +1,8 @@
 # setCornerRadius(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the radius to use when drawing rounded corners for the group.
 
@@ -12,6 +13,10 @@ Changes the radius to use when drawing rounded corners for the group.
 
 ```swift
 func setCornerRadius(_ cornerRadius: CGFloat)
+```
+
+```objc
+- (void) setCornerRadius:(CGFloat) cornerRadius;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The default corner radius for groups is 6 points.
 
 ## See Also
 
-- [func setContentInset(UIEdgeInsets)](wkinterfacegroup/setcontentinset(_:).md)
+### Setting the Layout Information
+- [func setContentInset(UIEdgeInsets)](./setcontentinset%28_%29.md)
   Sets the distance between the edges of the group and any contained objects.
 
 

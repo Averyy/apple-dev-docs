@@ -1,7 +1,8 @@
 # Resource.Localization.base
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents base internationalization.
 
@@ -16,7 +17,8 @@ case base
 
 ## See Also
 
-- [Resource.Localization.default](resource/localization/default.md)
+### Enumeration Cases
+- [Resource.Localization.default](./default.md)
   A constant that represents default localization.
 
 

@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale for the displayed messages. If `nil`, the user’s current locale is used. By default, this value is the current locale of the system.
 
@@ -20,9 +21,14 @@ The locale for the displayed messages. If `nil`, the user’s current locale is 
 var locale: Locale! { get set }
 ```
 
+```objc
+@property (null_resettable) NSLocale * locale;
+```
+
 ## See Also
 
-- [var pinMessageIndices: [NSNumber]?](tksmartcarduserinteractionforpinoperation/pinmessageindices.md)
+### Configuring Messages
+- [var pinMessageIndices: [NSNumber]?](./pinmessageindices.md)
   A list of message indices referring to a predefined message table, used to specify the type and number of messages displayed during the PIN operation. `nil` by default.
 
 

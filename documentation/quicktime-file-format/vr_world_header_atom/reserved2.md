@@ -1,7 +1,8 @@
 # reserved2
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 Reserved.
 
@@ -11,17 +12,18 @@ This field must be `0`.
 
 ## See Also
 
-- [majorVersion](vr_world_header_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](vr_world_header_atom/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [nameAtomID](vr_world_header_atom/nameatomid.md)
+- [nameAtomID](./nameatomid.md)
   The ID of the string atom that contains the name of the scene.
-- [defaultNodeID](vr_world_header_atom/defaultnodeid.md)
+- [defaultNodeID](./defaultnodeid.md)
   The ID of the default node.
-- [vrWorldFlags](vr_world_header_atom/vrworldflags.md)
+- [vrWorldFlags](./vrworldflags.md)
   A set of flags for the VR world.
-- [reserved1](vr_world_header_atom/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
 
 

@@ -1,7 +1,8 @@
 # init(validation:algorithm:language:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates model parameters for a text classifier with the specified validation data, algorithm, and language.
 
@@ -26,11 +27,12 @@ init(validation: MLTextClassifier.ModelParameters.ValidationData = .split(strate
 
 ## See Also
 
-- [struct NLLanguage](../naturallanguage/nllanguage.md)
+### Creating parameters
+- [struct NLLanguage](../../../NaturalLanguage/nllanguage.md)
   The languages that the Natural Language framework supports.
-- [MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelalgorithmtype.md)
+- [MLTextClassifier.ModelAlgorithmType](../modelalgorithmtype.md)
   The type of algorithm that a text classifier uses.
-- [MLTextClassifier.ModelParameters.ValidationData](mltextclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLTextClassifier.ModelParameters.ValidationData](./validationdata-swift.enum.md)
   The validation data that a text classifier uses.
 
 

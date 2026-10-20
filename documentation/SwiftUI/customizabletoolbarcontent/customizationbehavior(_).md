@@ -1,7 +1,8 @@
 # customizationBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the customization behavior of customizable toolbar content.
 
@@ -42,7 +43,7 @@ ContentView()
     }
 ```
 
-You can create an item that can not be removed from the toolbar or moved within the toolbar  by passing a value of [`disabled`](toolbarcustomizationbehavior/disabled.md) to this modifier.
+You can create an item that can not be removed from the toolbar or moved within the toolbar  by passing a value of [`disabled`](../toolbarcustomizationbehavior/disabled.md) to this modifier.
 
 ```swift
 ContentView()
@@ -54,7 +55,7 @@ ContentView()
     }
 ```
 
-You can create an item that can not be removed from the toolbar, but can be moved by passing a value of [`reorderable`](toolbarcustomizationbehavior/reorderable.md).
+You can create an item that can not be removed from the toolbar, but can be moved by passing a value of [`reorderable`](../toolbarcustomizationbehavior/reorderable.md).
 
 ```swift
 ContentView()
@@ -72,7 +73,8 @@ ContentView()
 
 ## See Also
 
-- [func axisBehavior(ToolbarItemAxisBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/axisbehavior(_:).md)
+### Customizing behaviors
+- [func axisBehavior(ToolbarItemAxisBehavior) -> some CustomizableToolbarContent](./axisbehavior%28_%29.md)
   The bar axis behavior of the toolbar item.
 
 

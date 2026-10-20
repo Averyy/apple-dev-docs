@@ -1,7 +1,8 @@
 # omitInsertedObjects
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates that the difference should omit references to the insertions.
 
@@ -20,11 +21,16 @@ An option that indicates that the difference should omit references to the inser
 static var omitInsertedObjects: NSOrderedCollectionDifferenceCalculationOptions { get }
 ```
 
+```c
+NSOrderedCollectionDifferenceCalculationOmitInsertedObjects
+```
+
 ## See Also
 
-- [static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/infermoves.md)
+### Difference Calculation Options
+- [static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions](./infermoves.md)
   An option that identifies insertions or removals as moves.
-- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/omitremovedobjects.md)
+- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](./omitremovedobjects.md)
   An option that indicates that the difference should omit references to the removals.
 
 

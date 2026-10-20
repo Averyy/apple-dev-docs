@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -18,19 +19,22 @@
 init(integerLiteral value: Self)
 ```
 
+Available when `Self` conforms to `_ExpressibleByBuiltinIntegerLiteral`.
+
 ## See Also
 
-- [init()](int/init.md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
   Creates a new value equal to zero.
-- [typealias IntegerLiteralType](int/integerliteraltype.md)
+- [typealias IntegerLiteralType](./integerliteraltype.md)
   A type that represents an integer literal.
-- [func distance(to: Int) -> Int](int/distance(to:).md)
+- [func distance(to: Int) -> Int](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [func advanced(by: Int) -> Int](int/advanced(by:).md)
+- [func advanced(by: Int) -> Int](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [typealias Stride](int/stride.md)
+- [typealias Stride](./stride.md)
   A type that represents the distance between two values.
-- [var hashValue: Int](int/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

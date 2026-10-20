@@ -1,19 +1,24 @@
 # UIImagePickerController.QualityType.typeHigh
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 If recording, specifies that you want to use the highest-quality video recording supported for the active camera on the device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
 ```swift
 case typeHigh
+```
+
+```c
+UIImagePickerControllerQualityTypeHigh
 ```
 
 #### Discussion
@@ -24,15 +29,16 @@ If displaying a recorded movie in the image picker, specifies that you do not wa
 
 ## See Also
 
-- [UIImagePickerController.QualityType.type640x480](uiimagepickercontroller/qualitytype/type640x480.md)
+### Constants
+- [UIImagePickerController.QualityType.type640x480](./type640x480.md)
   If recording, specifies that you want to use VGA-quality video recording (pixel dimensions of 640x480).
-- [UIImagePickerController.QualityType.typeMedium](uiimagepickercontroller/qualitytype/typemedium.md)
+- [UIImagePickerController.QualityType.typeMedium](./typemedium.md)
   If recording, specifies that you want to use medium-quality video recording.
-- [UIImagePickerController.QualityType.typeLow](uiimagepickercontroller/qualitytype/typelow.md)
+- [UIImagePickerController.QualityType.typeLow](./typelow.md)
   If recording, specifies that you want to use low-quality video recording.
-- [UIImagePickerController.QualityType.typeIFrame1280x720](uiimagepickercontroller/qualitytype/typeiframe1280x720.md)
+- [UIImagePickerController.QualityType.typeIFrame1280x720](./typeiframe1280x720.md)
   If recording, specifies that you want to use 1280x720 iFrame format.
-- [UIImagePickerController.QualityType.typeIFrame960x540](uiimagepickercontroller/qualitytype/typeiframe960x540.md)
+- [UIImagePickerController.QualityType.typeIFrame960x540](./typeiframe960x540.md)
   If recording, specifies that you want to use 960x540 iFrame format.
 
 

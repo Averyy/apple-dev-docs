@@ -1,7 +1,8 @@
 # tooManySymbolicLinkLevels
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Too many levels of symbolic links.
 
@@ -22,7 +23,7 @@ static var tooManySymbolicLinkLevels: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `ELOOP`.
 
 ## See Also
 
-- [static var fileNameTooLong: Errno](errno/filenametoolong.md)
+### Path Errors
+- [static var fileNameTooLong: Errno](./filenametoolong.md)
   The file name is too long.
-- [static var tooManyRemoteLevels: Errno](errno/toomanyremotelevels.md)
+- [static var tooManyRemoteLevels: Errno](./toomanyremotelevels.md)
   Too many levels of remote in path.
 
 

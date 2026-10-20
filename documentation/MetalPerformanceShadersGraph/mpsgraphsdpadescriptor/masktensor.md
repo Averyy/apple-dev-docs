@@ -1,9 +1,10 @@
 # maskTensor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An optional additive mask tensor applied to the scaled QK^T scores before softmax. Must be broadcast-compatible with shape `[batch, heads, T_q, T_kv]`. Mutually exclusive with [`isCausal`](mpsgraphsdpadescriptor/iscausal.md).
+An optional additive mask tensor applied to the scaled QK^T scores before softmax. Must be broadcast-compatible with shape `[batch, heads, T_q, T_kv]`. Mutually exclusive with [`isCausal`](./iscausal.md).
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@ An optional additive mask tensor applied to the scaled QK^T scores before softma
 
 ```swift
 var maskTensor: MPSGraphTensor? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) MPSGraphTensor * maskTensor;
 ```
 
 

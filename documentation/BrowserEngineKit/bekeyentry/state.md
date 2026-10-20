@@ -1,7 +1,8 @@
 # state
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates if the key is pressed.
 
@@ -17,13 +18,18 @@ A value that indicates if the key is pressed.
 var state: BEKeyEntry.KeyPressState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BEKeyPressState state;
+```
+
 ## See Also
 
-- [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
+### Getting information about the keypress
+- [BEKeyEntry.KeyPressState](./keypressstate.md)
   Key-press states for a keyboard event.
-- [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
+- [var isKeyRepeating: Bool](./iskeyrepeating.md)
   A Boolean value that indicates whether the person holds a key down to repeat its key event.
-- [var timestamp: TimeInterval](bekeyentry/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time that the key event occurs.
 
 

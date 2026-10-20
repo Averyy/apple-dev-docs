@@ -1,17 +1,22 @@
 # init(forConjunction:children:)
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a compound search element, created by combining the search elements in an array with the given conjunction.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init!(forConjunction conjuction: ABSearchConjunction, children: [Any]!)
+```
+
+```objc
++ (ABSearchElement *) searchElementForConjunction:(ABSearchConjunction) conjuction children:(NSArray *) children;
 ```
 
 #### Return Value

@@ -11,7 +11,7 @@ The locales and text-break variants available for finding boundaries in Unicode 
 ## Topics
 
 ### Constants
-- [var kUnicodeTextBreakClass: Int](kunicodetextbreakclass.md)
+- [var kUnicodeTextBreakClass: Int](../../kunicodetextbreakclass.md)
   Identifies the class of Unicode utility operations that find text boundaries.
 
 

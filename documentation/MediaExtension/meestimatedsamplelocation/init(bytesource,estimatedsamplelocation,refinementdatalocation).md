@@ -1,7 +1,8 @@
 # init(byteSource:estimatedSampleLocation:refinementDataLocation:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an estimated sample location object with the byte source, sample location, and data location that you specify.
 
@@ -12,6 +13,10 @@ Creates an estimated sample location object with the byte source, sample locatio
 
 ```swift
 init(byteSource: MEByteSource, estimatedSampleLocation: AVSampleCursorStorageRange, refinementDataLocation: AVSampleCursorStorageRange)
+```
+
+```objc
+- (instancetype) initWithByteSource:(MEByteSource *) byteSource estimatedSampleLocation:(AVSampleCursorStorageRange) estimatedSampleLocation refinementDataLocation:(AVSampleCursorStorageRange) refinementDataLocation;
 ```
 
 ## Parameters

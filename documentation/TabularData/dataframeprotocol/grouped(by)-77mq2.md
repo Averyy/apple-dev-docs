@@ -1,7 +1,8 @@
 # grouped(by:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a grouping of rows that the method selects by choosing unique values in a column.
 
@@ -30,13 +31,14 @@ A collection of groups.
 
 ## See Also
 
-- [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframeprotocol/grouped(by:timeunit:)-7s782.md)
+### Creating a Row Grouping by a Column
+- [func grouped(by: String, timeUnit: Calendar.Component) -> RowGrouping<Int>](./grouped%28by,timeunit%29-7s782.md)
   Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by name.
-- [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](dataframeprotocol/grouped(by:timeunit:)-78cy.md)
+- [func grouped(by: ColumnID<Date>, timeUnit: Calendar.Component) -> RowGrouping<Int>](./grouped%28by,timeunit%29-78cy.md)
   Creates a grouping of rows that the method selects by choosing unique units of time in a date column you select by column identifier.
-- [func grouped<InputKey, GroupingKey>(by: String, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframeprotocol/grouped(by:transform:)-3cr4p.md)
+- [func grouped<InputKey, GroupingKey>(by: String, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](./grouped%28by,transform%29-3cr4p.md)
   Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by name.
-- [func grouped<InputKey, GroupingKey>(by: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](dataframeprotocol/grouped(by:transform:)-3aade.md)
+- [func grouped<InputKey, GroupingKey>(by: ColumnID<InputKey>, transform: (InputKey?) -> GroupingKey?) -> RowGrouping<GroupingKey>](./grouped%28by,transform%29-3aade.md)
   Creates a grouping of rows that the method selects by choosing unique values the transform closure creates with elements of a column you select by column identifier.
 
 

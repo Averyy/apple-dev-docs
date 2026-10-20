@@ -1,7 +1,8 @@
 # UIContextMenuConfiguration.ElementOrder.fixed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that displays menu elements in a fixed order.
 
@@ -18,15 +19,20 @@ A constant that displays menu elements in a fixed order.
 case fixed
 ```
 
+```c
+UIContextMenuConfigurationElementOrderFixed
+```
+
 #### Discussion
 
-This ordering strategy displays the menu elements in the order they appear in the [`children`](uimenu/children.md) array of the [`UIMenu`](uimenu.md).
+This ordering strategy displays the menu elements in the order they appear in the [`children`](../../uimenu/children.md) array of the [`UIMenu`](../../uimenu.md).
 
 ## See Also
 
-- [UIContextMenuConfiguration.ElementOrder.automatic](uicontextmenuconfiguration/elementorder/automatic.md)
+### Constants
+- [UIContextMenuConfiguration.ElementOrder.automatic](./automatic.md)
   A constant that allows the system to choose an ordering strategy according to the current context.
-- [UIContextMenuConfiguration.ElementOrder.priority](uicontextmenuconfiguration/elementorder/priority.md)
+- [UIContextMenuConfiguration.ElementOrder.priority](./priority.md)
   A constant that displays menu elements according to their priority.
 
 

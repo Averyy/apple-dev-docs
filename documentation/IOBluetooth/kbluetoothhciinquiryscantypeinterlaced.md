@@ -1,10 +1,11 @@
 # kBluetoothHCIInquiryScanTypeInterlaced
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothHCIInquiryScanTypeInterlaced: BluetoothHCIInquiryScanTypes { get }
 ```
 
+```c
+kBluetoothHCIInquiryScanTypeInterlaced
+```
+
 ## See Also
 
-- [var kBluetoothHCIInquiryScanTypeReservedEnd: BluetoothHCIInquiryScanTypes](kbluetoothhciinquiryscantypereservedend.md)
-- [var kBluetoothHCIInquiryScanTypeReservedStart: BluetoothHCIInquiryScanTypes](kbluetoothhciinquiryscantypereservedstart.md)
-- [var kBluetoothHCIInquiryScanTypeStandard: BluetoothHCIInquiryScanTypes](kbluetoothhciinquiryscantypestandard.md)
+### Constants
+- [var kBluetoothHCIInquiryScanTypeReservedEnd: BluetoothHCIInquiryScanTypes](./kbluetoothhciinquiryscantypereservedend.md)
+- [var kBluetoothHCIInquiryScanTypeReservedStart: BluetoothHCIInquiryScanTypes](./kbluetoothhciinquiryscantypereservedstart.md)
+- [var kBluetoothHCIInquiryScanTypeStandard: BluetoothHCIInquiryScanTypes](./kbluetoothhciinquiryscantypestandard.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # KF_SCHED_HYGIENE_DEBUG_PMC_OVRD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 KF_SCHED_HYGIENE_DEBUG_PMC_OVRD
 ```
 

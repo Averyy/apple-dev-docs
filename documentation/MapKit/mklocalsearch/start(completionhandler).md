@@ -1,7 +1,8 @@
 # start(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the search and delivers the results to the specified completion handler.
 
@@ -17,7 +18,15 @@ Starts the search and delivers the results to the specified completion handler.
 ## Declaration
 
 ```swift
+func start(completionHandler: @escaping @MainActor @Sendable (MKLocalSearch.Response?, (any Error)?) -> Void)
+```
+
+```swift
 func start() async throws -> MKLocalSearch.Response
+```
+
+```objc
+- (void) startWithCompletionHandler:(MKLocalSearchCompletionHandler) completionHandler;
 ```
 
 #### Discussion
@@ -34,11 +43,12 @@ The provided completion handler executes on your app’s main thread. The local 
 
 ## See Also
 
-- [MKLocalSearch.CompletionHandler](mklocalsearch/completionhandler.md)
+### Performing the search
+- [MKLocalSearch.CompletionHandler](./completionhandler.md)
   A completion handler block for a search operation.
-- [var isSearching: Bool](mklocalsearch/issearching.md)
+- [var isSearching: Bool](./issearching.md)
   A Boolean value that indicates whether the search is in progress.
-- [func cancel()](mklocalsearch/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels an in-progress search operation.
 
 

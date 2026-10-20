@@ -1,17 +1,24 @@
 # runModal(for:modalDelegate:didEnd:contextInfo:)
 
 **Framework**: Collaboration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the receiver modally as a sheet attached to a specified window.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.11
+
+> **Deprecated**: Use [`runModal(for:completionHandler:)`](./runmodal%28for,completionhandler%29.md) instead.
 
 ## Declaration
 
 ```swift
 func runModal(for window: NSWindow, modalDelegate delegate: Any?, didEnd didEndSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) runModalForWindow:(NSWindow *) window modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -33,10 +40,12 @@ where the `identityPicker` argument is the identity picker object, the `returnCo
 
 ## See Also
 
-- [Identity Services Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
-- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](cbidentitypicker/runmodal(for:completionhandler:).md)
+### Related Documentation
+- [Identity Services Programming Guide](https://developer.apple.com/library/archive/documentation/Networking/Conceptual/IdentityServices_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004490)
+### Running an Identity Picker
+- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./runmodal%28for,completionhandler%29.md)
   Runs the identity picker modally as a sheet attached to a specified window.
-- [func runModal() -> Int](cbidentitypicker/runmodal.md)
+- [func runModal() -> Int](./runmodal%28%29.md)
   Runs the receiver as an application-modal dialog.
 
 

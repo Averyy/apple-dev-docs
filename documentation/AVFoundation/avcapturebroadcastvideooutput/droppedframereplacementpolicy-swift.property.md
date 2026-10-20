@@ -1,7 +1,8 @@
 # droppedFrameReplacementPolicy
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used to replace dropped video frames.
 
@@ -18,21 +19,27 @@ The strategy used to replace dropped video frames.
 var droppedFrameReplacementPolicy: AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy { get set }
 ```
 
+```objc
+@property (nonatomic) AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicy droppedFrameReplacementPolicy;
+```
+
 #### Discussion
 
 This property determines how the broadcast video output handles dropped frames. The default value is `AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicyRepeatPreviousFrame`.
 
 ## See Also
 
-- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](avcapturebroadcastvideooutput/droppedframereplacementpolicy-swift.enum.md)
+### Related Documentation
+- [AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy](./droppedframereplacementpolicy-swift.enum.md)
   Constants indicating the replacement policy when a video frame is dropped.
-- [var videoSettings: [String : Any]?](avcapturebroadcastvideooutput/videosettings.md)
+### Managing Video Output
+- [var videoSettings: [String : Any]?](./videosettings.md)
   The current video output settings for the broadcast video output.
-- [var maxBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxbufferedframecount.md)
+- [var maxBufferedFrameCount: Int](./maxbufferedframecount.md)
   This represents the maximum count of buffered frames. By default the value is 0, which means late frames are immediately dropped to maintain minimal latency.
-- [class var maxSupportedBufferedFrameCount: Int](avcapturebroadcastvideooutput/maxsupportedbufferedframecount.md)
+- [class var maxSupportedBufferedFrameCount: Int](./maxsupportedbufferedframecount.md)
   The maximum value supported for maxBufferedFrameCount.
-- [func resetFrameBuffer()](avcapturebroadcastvideooutput/resetframebuffer.md)
+- [func resetFrameBuffer()](./resetframebuffer%28%29.md)
   Tells the broadcast video output to reset the frame buffer and drop all currently buffered frames.
 
 

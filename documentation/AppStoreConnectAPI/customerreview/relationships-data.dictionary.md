@@ -1,7 +1,8 @@
 # CustomerReview.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,17 +11,17 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object CustomerReview.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object CustomerReview.Relationships.Response](customerreview/relationships-data.dictionary/response-data.dictionary.md)
+- [object CustomerReview.Relationships.Response](./relationships-data.dictionary/response-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
-- [object CustomerReview.Relationships.ReviewTerritory](customerreview/relationships-data.dictionary/reviewterritory-data.dictionary.md)
+- [object CustomerReview.Relationships.ReviewTerritory](./relationships-data.dictionary/reviewterritory-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object CustomerReview.Relationships
 
 ## See Also
 
-- [object CustomerReview.Attributes](customerreview/attributes-data.dictionary.md)
+### Objects
+- [object CustomerReview.Attributes](./attributes-data.dictionary.md)
   The attributes of the customer’s review including its content.
 
 

@@ -1,7 +1,8 @@
 # VSErrorInfoKeyAccountProviderResponse
 
 **Framework**: Video Subscriber Account  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The account provider’s error-response object.
 
@@ -9,7 +10,7 @@ The account provider’s error-response object.
 - iOS 10.2+
 - iPadOS 10.2+
 - Mac Catalyst 10.2+
-- macOS ?+
+- macOS
 - tvOS 10.1+
 - visionOS 1.0+
 
@@ -19,23 +20,28 @@ The account provider’s error-response object.
 let VSErrorInfoKeyAccountProviderResponse: String
 ```
 
+```c
+extern NSErrorUserInfoKey const VSErrorInfoKeyAccountProviderResponse;
+```
+
 #### Discussion
 
-This key is a string in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary that the system returns with the error.
+This key is a string in the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary that the system returns with the error.
 
 ## See Also
 
-- [let VSErrorDomain: String](vserrordomain.md)
+### Errors
+- [let VSErrorDomain: String](./vserrordomain.md)
   The domain for all errors in the framework.
-- [let VSErrorInfoKeySAMLResponse: String](vserrorinfokeysamlresponse.md)
+- [let VSErrorInfoKeySAMLResponse: String](./vserrorinfokeysamlresponse.md)
   The subscription provider’s SAML error response.
-- [let VSErrorInfoKeySAMLResponseStatus: String](vserrorinfokeysamlresponsestatus.md)
+- [let VSErrorInfoKeySAMLResponseStatus: String](./vserrorinfokeysamlresponsestatus.md)
   The subscription provider’s SAML error-response status code.
-- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](vserrorinfokeyunsupportedprovideridentifier.md)
+- [let VSErrorInfoKeyUnsupportedProviderIdentifier: String](./vserrorinfokeyunsupportedprovideridentifier.md)
   The identifier of the unsupported subscription provider.
-- [struct VSError](vserror.md)
+- [struct VSError](./vserror.md)
   Error information in the framework error domain.
-- [VSError.Code](vserror/code.md)
+- [VSError.Code](./vserror/code.md)
   Error codes in the framework error domain.
 
 

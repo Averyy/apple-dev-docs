@@ -1,7 +1,8 @@
 # FIMenuKind.contextualMenuForContainer
 
 **Framework**: Finder Sync  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A shortcut menu created when the user control-clicks on the Finder window’s background.
 
@@ -14,13 +15,18 @@ A shortcut menu created when the user control-clicks on the Finder window’s ba
 case contextualMenuForContainer
 ```
 
+```c
+FIMenuKindContextualMenuForContainer
+```
+
 ## See Also
 
-- [FIMenuKind.contextualMenuForItems](fimenukind/contextualmenuforitems.md)
+### Constants
+- [FIMenuKind.contextualMenuForItems](./contextualmenuforitems.md)
   A shortcut menu created when the user control-clicks on an item or a group of selected items inside the Finder window.
-- [FIMenuKind.contextualMenuForSidebar](fimenukind/contextualmenuforsidebar.md)
+- [FIMenuKind.contextualMenuForSidebar](./contextualmenuforsidebar.md)
   A shortcut menu created when the user control-clicks on an item in the sidebar.
-- [FIMenuKind.toolbarItemMenu](fimenukind/toolbaritemmenu.md)
+- [FIMenuKind.toolbarItemMenu](./toolbaritemmenu.md)
   A menu created when the user clicks on the extension’s toolbar button.
 
 

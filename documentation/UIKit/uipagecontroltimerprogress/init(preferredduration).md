@@ -1,7 +1,8 @@
 # init(preferredDuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time interval progress with a specified preferred duration.
 
@@ -16,6 +17,10 @@ Creates a time interval progress with a specified preferred duration.
 
 ```swift
 init(preferredDuration: TimeInterval)
+```
+
+```objc
+- (instancetype) initWithPreferredDuration:(NSTimeInterval) preferredDuration;
 ```
 
 

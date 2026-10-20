@@ -1,7 +1,8 @@
 # ReceiverSpeaker
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A speaker on a telephone handset receiver.
 
@@ -10,15 +11,16 @@ A speaker on a telephone handset receiver.
 
 ## Declaration
 
-```swift
+```c
 ReceiverSpeaker
 ```
 
 ## See Also
 
-- [Speaker](audiodriverkit/iouseraudiostreamterminaltype/speaker.md)
+### Speakers
+- [Speaker](./speaker.md)
   An audio speaker.
-- [LFESpeaker](audiodriverkit/iouseraudiostreamterminaltype/lfespeaker.md)
+- [LFESpeaker](./lfespeaker.md)
   A speaker for low-frequency effects.
 
 

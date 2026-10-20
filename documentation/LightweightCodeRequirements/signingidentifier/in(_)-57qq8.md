@@ -1,7 +1,8 @@
 # in(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Matches if the signing identifier of the code matches any of the provided signing identifiers.
 

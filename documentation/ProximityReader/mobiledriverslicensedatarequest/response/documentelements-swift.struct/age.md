@@ -1,7 +1,8 @@
 # age
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mobile driver’s license holder’s age in years.
 

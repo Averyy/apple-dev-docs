@@ -1,7 +1,8 @@
 # storeIdentifier
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier that locates the extension in the App Store.
 
@@ -15,17 +16,22 @@ An identifier that locates the extension in the App Store.
 var storeIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * storeIdentifier;
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 ## See Also
 
-- [var developerName: String](bebrowserdataextension/developername.md)
+### Accessing extension metadata
+- [var developerName: String](./developername.md)
   An extension developer’s name.
-- [var displayName: String](bebrowserdataextension/displayname.md)
+- [var displayName: String](./displayname.md)
   An extension’s localized display name.
-- [var identifier: String](bebrowserdataextension/identifier.md)
+- [var identifier: String](./identifier.md)
   A unique identifier for an extension.
 
 

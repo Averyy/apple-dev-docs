@@ -1,7 +1,8 @@
 # kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -18,9 +19,13 @@
 let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString
 ```
 
+```c
+extern CFStringRef const kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50;
+```
+
 #### Discussion
 
-```None
+```
 SMPTE ST2094-50 HDR metadata.  Conforms to
 kCMMetadataBaseDataType_RawData.
 ```

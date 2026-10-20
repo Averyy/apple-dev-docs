@@ -1,7 +1,8 @@
 # MaterialScalarParameter.texture(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A one-channel texture.
 
@@ -11,7 +12,7 @@ A one-channel texture.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ case texture(TextureResource)
 
 ## See Also
 
-- [MaterialScalarParameter.float(_:)](materialscalarparameter/float(_:).md)
+### Getting scalar parameters
+- [MaterialScalarParameter.float(_:)](./float%28_%29.md)
   A scalar, single-precision value.
 
 

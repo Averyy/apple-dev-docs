@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the change in motion occurred.
 
@@ -18,11 +19,16 @@ The time at which the change in motion occurred.
 var startDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * startDate;
+```
+
 ## See Also
 
-- [var confidence: CMMotionActivityConfidence](cmmotionactivity/confidence.md)
+### Getting Metadata for the Motion
+- [var confidence: CMMotionActivityConfidence](./confidence.md)
   The confidence in the assessment of the motion type.
-- [enum CMMotionActivityConfidence](cmmotionactivityconfidence.md)
+- [enum CMMotionActivityConfidence](../cmmotionactivityconfidence.md)
   The confidence that the motion data is accurate.
 
 

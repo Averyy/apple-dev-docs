@@ -1,12 +1,13 @@
 # error
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An error that describes the cause of a failure.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
@@ -14,15 +15,20 @@ An error that describes the cause of a failure.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-This property is `nil` unless the [`status`](wkaudiofileplayeritem/status.md) property of the player item is [`WKAudioFilePlayerItemStatus.failed`](wkaudiofileplayeritemstatus/failed.md). When playback fails, the error indicates the reason for the failure.
+This property is `nil` unless the [`status`](./status.md) property of the player item is [`WKAudioFilePlayerItemStatus.failed`](../wkaudiofileplayeritemstatus/failed.md). When playback fails, the error indicates the reason for the failure.
 
 ## See Also
 
-- [var asset: WKAudioFileAsset](wkaudiofileplayeritem/asset.md)
+### Getting Information About the Item
+- [var asset: WKAudioFileAsset](./asset.md)
   The audio file asset being managed.
-- [var status: WKAudioFilePlayerItemStatus](wkaudiofileplayeritem/status.md)
+- [var status: WKAudioFilePlayerItemStatus](./status.md)
   The status of the player item.
 
 

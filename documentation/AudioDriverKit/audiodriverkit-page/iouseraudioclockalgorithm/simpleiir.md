@@ -1,7 +1,8 @@
 # SimpleIIR
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The simple IIR filter algorithm.
 
@@ -10,7 +11,7 @@ The simple IIR filter algorithm.
 
 ## Declaration
 
-```swift
+```c
 SimpleIIR
 ```
 
@@ -20,9 +21,10 @@ Under this algorithm, the Host applies a simple IIR filter to the time stamp str
 
 ## See Also
 
-- [Raw](audiodriverkit/iouseraudioclockalgorithm/raw.md)
+### Clock-Smoothing Algorithms
+- [Raw](./raw.md)
   An algorithm that uses timestamp values as-is.
-- [TwelvePtMovingWindowAverage](audiodriverkit/iouseraudioclockalgorithm/twelveptmovingwindowaverage.md)
+- [TwelvePtMovingWindowAverage](./twelveptmovingwindowaverage.md)
   The 12-point moving window average filter algorithm.
 
 

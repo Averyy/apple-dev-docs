@@ -1,18 +1,19 @@
 # Yp
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The *Yp* value in the conversion matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The *Yp* value in the conversion matrix.
 var Yp: Float
 ```
 
+```c
+float Yp;
+```
+
 ## See Also
 
-- [var Cr_R: Float](vimage_ypcbcrtoargbmatrix/cr_r.md)
+### Conversion matrix elements
+- [var Cr_R: Float](./cr_r.md)
   The *Cr_R* value in the conversion matrix.
-- [var Cr_G: Float](vimage_ypcbcrtoargbmatrix/cr_g.md)
+- [var Cr_G: Float](./cr_g.md)
   The *Cr_G* value in the conversion matrix.
-- [var Cb_G: Float](vimage_ypcbcrtoargbmatrix/cb_g.md)
+- [var Cb_G: Float](./cb_g.md)
   The *Cb_G* value in the conversion matrix.
-- [var Cb_B: Float](vimage_ypcbcrtoargbmatrix/cb_b.md)
+- [var Cb_B: Float](./cb_b.md)
   The *Cb_B* value in the conversion matrix.
 
 

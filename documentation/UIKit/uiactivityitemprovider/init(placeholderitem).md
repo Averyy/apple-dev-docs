@@ -1,7 +1,8 @@
 # init(placeholderItem:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a provider object with the specified placeholder data.
 
@@ -15,6 +16,10 @@ Initializes and returns a provider object with the specified placeholder data.
 
 ```swift
 init(placeholderItem: Any)
+```
+
+```objc
+- (instancetype) initWithPlaceholderItem:(id) placeholderItem;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # WebPage.DeviceSensorAuthorization.Permission.mediaCapture(_:)
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A media capture device, like a microphone or camera.
 

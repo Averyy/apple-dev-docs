@@ -1,7 +1,8 @@
 # CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the array of matching font descriptors sorted with the callback function.
 
@@ -20,6 +21,10 @@ Returns the array of matching font descriptors sorted with the callback function
 func CTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(_ collection: CTFontCollection, _ sortCallback: CTFontCollectionSortDescriptorsCallback?, _ refCon: UnsafeMutableRawPointer?) -> CFArray?
 ```
 
+```c
+extern CFArrayRefCTFontCollectionCreateMatchingFontDescriptorsSortedWithCallback(CTFontCollectionRef collection, CTFontCollectionSortDescriptorsCallback sortCallback, void *refCon);
+```
+
 #### Return Value
 
 An array of font descriptors matching the criteria of the collection sorted by the results of the sorting callback function.
@@ -32,13 +37,14 @@ An array of font descriptors matching the criteria of the collection sorted by t
 
 ## See Also
 
-- [func CTFontCollectionCreateMatchingFontDescriptors(CTFontCollection) -> CFArray?](ctfontcollectioncreatematchingfontdescriptors(_:).md)
+### Getting Font Descriptors
+- [func CTFontCollectionCreateMatchingFontDescriptors(CTFontCollection) -> CFArray?](./ctfontcollectioncreatematchingfontdescriptors%28_%29.md)
   Returns an array of font descriptors matching the collection.
-- [func CTFontCollectionCreateMatchingFontDescriptorsWithOptions(CTFontCollection, CFDictionary?) -> CFArray?](ctfontcollectioncreatematchingfontdescriptorswithoptions(_:_:).md)
+- [func CTFontCollectionCreateMatchingFontDescriptorsWithOptions(CTFontCollection, CFDictionary?) -> CFArray?](./ctfontcollectioncreatematchingfontdescriptorswithoptions%28_,_%29.md)
   Creates an array of font descriptors that match the specified collection.
-- [func CTFontCollectionCreateMatchingFontDescriptorsForFamily(CTFontCollection, CFString, CFDictionary?) -> CFArray?](ctfontcollectioncreatematchingfontdescriptorsforfamily(_:_:_:).md)
+- [func CTFontCollectionCreateMatchingFontDescriptorsForFamily(CTFontCollection, CFString, CFDictionary?) -> CFArray?](./ctfontcollectioncreatematchingfontdescriptorsforfamily%28_,_,_%29.md)
   Retrieves an array of font descriptors that match the specified family, one descriptor for each style in the collection.
-- [typealias CTFontCollectionSortDescriptorsCallback](ctfontcollectionsortdescriptorscallback.md)
+- [typealias CTFontCollectionSortDescriptorsCallback](./ctfontcollectionsortdescriptorscallback.md)
   The collection sorting callback type.
 
 

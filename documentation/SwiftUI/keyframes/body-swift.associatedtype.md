@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of keyframes representing the body of this type.
@@ -23,13 +24,14 @@ associatedtype Body : Keyframes
 
 #### Discussion
 
-When you create a custom keyframes type, Swift infers this type from your implementation of the required [`body`](keyframes/body-swift.property.md) property.
+When you create a custom keyframes type, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 ## See Also
 
-- [var body: Self.Body](keyframes/body-swift.property.md)
+### Creating a keyframe
+- [var body: Self.Body](./body-swift.property.md)
   The composition of content that comprise the keyframes.
-- [associatedtype Value = Self.Body.Value](keyframes/value.md)
+- [associatedtype Value = Self.Body.Value](./value.md)
   The type of value animated by this keyframes type
 
 

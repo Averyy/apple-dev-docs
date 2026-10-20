@@ -1,7 +1,8 @@
 # lengthInSeconds
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of the track, in seconds.
 
@@ -19,6 +20,10 @@ The total duration of the track, in seconds.
 var lengthInSeconds: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval lengthInSeconds;
+```
+
 #### Discussion
 
 This property returns the time of the last event in the track, plus any additional time that’s necessary to fade out the ending notes, or to round a loop point to a musical bar.
@@ -29,7 +34,8 @@ This property returns the maximum of the user-set track length or the calculated
 
 ## See Also
 
-- [var lengthInBeats: AVMusicTimeStamp](avmusictrack/lengthinbeats.md)
+### Configuring the track duration
+- [var lengthInBeats: AVMusicTimeStamp](./lengthinbeats.md)
   The total duration of the track, in beats.
 
 

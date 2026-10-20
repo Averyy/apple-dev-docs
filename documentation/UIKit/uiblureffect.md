@@ -1,7 +1,8 @@
 # UIBlurEffect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that applies a blurring effect to the content layered behind a visual effect view.
 
@@ -9,7 +10,7 @@ An object that applies a blurring effect to the content layered behind a visual 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,45 +20,50 @@ An object that applies a blurring effect to the content layered behind a visual 
 class UIBlurEffect
 ```
 
+```objc
+@interface UIBlurEffect : UIVisualEffect
+```
+
 #### Overview
 
-Views that you add to the [`contentView`](uivisualeffectview/contentview.md) of a visual effect view aren’t affected by the blur effect.
+Views that you add to the [`contentView`](./uivisualeffectview/contentview.md) of a visual effect view aren’t affected by the blur effect.
 
 ## Topics
 
 ### Creating a blur effect
-- [init(style: UIBlurEffect.Style)](uiblureffect/init(style:).md)
+- [init(style: UIBlurEffect.Style)](./uiblureffect/init%28style%29.md)
   Creates a blur effect with the designated style.
 ### Constants
-- [UIBlurEffect.Style](uiblureffect/style.md)
+- [UIBlurEffect.Style](./uiblureffect/style.md)
   Blur styles available for blur effect objects.
 
 ## Relationships
 
 ### Inherits From
-- [UIVisualEffect](uivisualeffect.md)
+- [UIVisualEffect](./uivisualeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIVisualEffect](uivisualeffect.md)
+### Visual effects
+- [class UIVisualEffect](./uivisualeffect.md)
   An initializer for visual effect views and blur and vibrancy effect objects.
-- [class UIVisualEffectView](uivisualeffectview.md)
+- [class UIVisualEffectView](./uivisualeffectview.md)
   An object that implements some complex visual effects.
-- [class UIVibrancyEffect](uivibrancyeffect.md)
+- [class UIVibrancyEffect](./uivibrancyeffect.md)
   An object that amplifies and adjusts the color of the content layered behind a visual effect view.
-- [class UIColorEffect](uicoloreffect.md)
+- [class UIColorEffect](./uicoloreffect.md)
   A visual effect that applies a solid color background.
 
 

@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsAttachedToRootHubBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB device has directly attached to the root hub.
 
@@ -10,7 +11,7 @@ The USB device has directly attached to the root hub.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsAttachedToRootHubBit = 1
 ```
 

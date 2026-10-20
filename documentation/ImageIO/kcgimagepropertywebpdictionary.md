@@ -1,7 +1,8 @@
 # kCGImagePropertyWebPDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of properties related to a WebP container.
 
@@ -18,6 +19,10 @@ A dictionary of properties related to a WebP container.
 
 ```swift
 let kCGImagePropertyWebPDictionary: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyWebPDictionary;
 ```
 
 

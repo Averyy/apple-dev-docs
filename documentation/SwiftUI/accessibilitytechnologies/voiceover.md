@@ -1,7 +1,8 @@
 # voiceOver
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that represents the VoiceOver screen reader, allowing use of the system without seeing the screen visually.
 
@@ -22,7 +23,8 @@ static let voiceOver: AccessibilityTechnologies
 
 ## See Also
 
-- [static let switchControl: AccessibilityTechnologies](accessibilitytechnologies/switchcontrol.md)
+### Getting technology types
+- [static let switchControl: AccessibilityTechnologies](./switchcontrol.md)
   The value that represents a Switch Control, allowing the use of the entire system using controller buttons, a breath-controlled switch or similar hardware.
 
 

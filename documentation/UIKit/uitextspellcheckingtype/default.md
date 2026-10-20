@@ -1,7 +1,8 @@
 # UITextSpellCheckingType.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the default spell-checking behavior.
 
@@ -9,7 +10,7 @@ Specifies the default spell-checking behavior.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ Specifies the default spell-checking behavior.
 case `default`
 ```
 
+```c
+UITextSpellCheckingTypeDefault
+```
+
 #### Discussion
 
 The default behavior is to enable spell-checking whenever autocorrection is also enabled.
 
 ## See Also
 
-- [UITextSpellCheckingType.no](uitextspellcheckingtype/no.md)
+### Constants
+- [UITextSpellCheckingType.no](./no.md)
   Disables spell-checking behavior.
-- [UITextSpellCheckingType.yes](uitextspellcheckingtype/yes.md)
+- [UITextSpellCheckingType.yes](./yes.md)
   Enables spell-checking behavior.
 
 

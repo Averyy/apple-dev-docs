@@ -1,7 +1,8 @@
 # BNNS.ReductionFunction.mean
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function for reduction that computes the mean value.
 
@@ -11,7 +12,7 @@ A function for reduction that computes the mean value.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,31 +23,32 @@ case mean
 
 ## See Also
 
-- [BNNS.ReductionFunction.max](bnns/reductionfunction/max.md)
+### Reduction Functions
+- [BNNS.ReductionFunction.max](./max.md)
   A reduction function that computes the maximum value.
-- [BNNS.ReductionFunction.argMax](bnns/reductionfunction/argmax.md)
+- [BNNS.ReductionFunction.argMax](./argmax.md)
   A reduction function that computes the index of the maximum value.
-- [BNNS.ReductionFunction.meanNonZero](bnns/reductionfunction/meannonzero.md)
+- [BNNS.ReductionFunction.meanNonZero](./meannonzero.md)
   A reduction function that computes the mean value of nonzero elements.
-- [BNNS.ReductionFunction.min](bnns/reductionfunction/min.md)
+- [BNNS.ReductionFunction.min](./min.md)
   A reduction function that computes the minimum value.
-- [BNNS.ReductionFunction.argMin](bnns/reductionfunction/argmin.md)
+- [BNNS.ReductionFunction.argMin](./argmin.md)
   A reduction function that computes the index of the minimum value.
-- [BNNS.ReductionFunction.sum](bnns/reductionfunction/sum.md)
+- [BNNS.ReductionFunction.sum](./sum.md)
   A reduction function that computes the sum of all values.
-- [BNNS.ReductionFunction.sumOfAbsolutes](bnns/reductionfunction/sumofabsolutes.md)
+- [BNNS.ReductionFunction.sumOfAbsolutes](./sumofabsolutes.md)
   A reduction function that computes the sum of all absolute values.
-- [BNNS.ReductionFunction.sumOfLogs(epsilon:)](bnns/reductionfunction/sumoflogs(epsilon:).md)
+- [BNNS.ReductionFunction.sumOfLogs(epsilon:)](./sumoflogs%28epsilon%29.md)
   A reduction function that computes the sum of the natural logarithm of all values.
-- [BNNS.ReductionFunction.sumOfSquares](bnns/reductionfunction/sumofsquares.md)
+- [BNNS.ReductionFunction.sumOfSquares](./sumofsquares.md)
   A reduction function that computes the sum of the square of all values.
-- [BNNS.ReductionFunction.logicalAnd](bnns/reductionfunction/logicaland.md)
+- [BNNS.ReductionFunction.logicalAnd](./logicaland.md)
   A reduction function that computes the logical AND of all values.
-- [BNNS.ReductionFunction.all](bnns/reductionfunction/all.md)
+- [BNNS.ReductionFunction.all](./all.md)
   An alias of the logical AND reduction function.
-- [BNNS.ReductionFunction.logicalOr](bnns/reductionfunction/logicalor.md)
+- [BNNS.ReductionFunction.logicalOr](./logicalor.md)
   A reduction function that computes the logical OR of all values.
-- [BNNS.ReductionFunction.any](bnns/reductionfunction/any.md)
+- [BNNS.ReductionFunction.any](./any.md)
   An alias of the logical OR reduction function.
 
 

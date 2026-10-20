@@ -1,7 +1,8 @@
 # pathControl(_:validateDrop:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to enable dragging onto the control.
 
@@ -13,6 +14,10 @@ Implement this method to enable dragging onto the control.
 ```swift
 @MainActor
 optional func pathControl(_ pathControl: NSPathControl, validateDrop info: any NSDraggingInfo) -> NSDragOperation
+```
+
+```objc
+- (NSDragOperation) pathControl:(NSPathControl *) pathControl validateDrop:(id<NSDraggingInfo>) info;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ If not implemented, and the control’s cell is editable, the drop is accepted i
 
 ## See Also
 
-- [func pathControl(NSPathControl, shouldDrag: NSPathComponentCell, with: NSPasteboard) -> Bool](nspathcontroldelegate/pathcontrol(_:shoulddrag:with:)-35j1e.md)
+### Dragging Support
+- [func pathControl(NSPathControl, shouldDrag: NSPathComponentCell, with: NSPasteboard) -> Bool](./pathcontrol%28_,shoulddrag,with%29-35j1e.md)
   Implement this method to enable dragging from the control.
-- [func pathControl(NSPathControl, acceptDrop: any NSDraggingInfo) -> Bool](nspathcontroldelegate/pathcontrol(_:acceptdrop:).md)
+- [func pathControl(NSPathControl, acceptDrop: any NSDraggingInfo) -> Bool](./pathcontrol%28_,acceptdrop%29.md)
   Implement this method to accept previously validated contents dropped onto the control.
 
 

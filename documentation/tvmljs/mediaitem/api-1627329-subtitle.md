@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The subtitle for a the media item.
 
@@ -10,21 +11,22 @@ The subtitle for a the media item.
 
 ## Declaration
 
-```swift
+```
 attribute String subtitle;
 ```
 
 ## See Also
 
-- [artworkImageURL](mediaitem/1627319-artworkimageurl.md)
+### Identifying Media Items
+- [artworkImageURL](./api-1627319-artworkimageurl.md)
   The URL path to the artwork that accompanies the media item.
-- [description](mediaitem/1627441-description.md)
+- [description](./api-1627441-description.md)
   The description for a media item.
-- [title](mediaitem/1627381-title.md)
+- [title](./api-1627381-title.md)
   The title of the media item.
-- [type](mediaitem/1627315-type.md)
+- [type](./api-1627315-type.md)
   The type of media item.
-- [url](mediaitem/1627401-url.md)
+- [url](./api-1627401-url.md)
   The URL path to the media item.
 
 

@@ -1,7 +1,8 @@
 # symbolVariant(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes symbols within the view show a particular variant.
 
@@ -27,7 +28,7 @@ A view that applies the specified symbol variant or variants to itself and its c
 
 #### Discussion
 
-When you want all the [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) in a part of your app’s user interface to use the same variant, use the `symbolVariant(_:)` modifier with a [`SymbolVariants`](symbolvariants.md) value, like [`fill`](symbolvariants/fill-swift.type.property.md):
+When you want all the [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) in a part of your app’s user interface to use the same variant, use the `symbolVariant(_:)` modifier with a [`SymbolVariants`](../symbolvariants.md) value, like [`fill`](../symbolvariants/fill-swift.type.property.md):
 
 ```swift
 VStack(spacing: 20) {
@@ -50,7 +51,7 @@ VStack(spacing: 20) {
 
 A symbol that doesn’t have the specified variant remains unaffected. In the example above, the `list.bullet` symbol doesn’t have a filled variant, so the `symbolVariant(_:)` modifer has no effect.
 
-![A screenshot showing two rows of four symbols. Both rows contain a](/images/com.apple.SwiftUI/View-symbolVariant-1@2x.png)
+![A screenshot showing two rows of four symbols. Both rows contain a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-symbolVariant-1@2x.png)
 
 If you apply the modifier more than once, its effects accumulate. Alternatively, you can apply multiple variants in one call:
 
@@ -67,9 +68,9 @@ Label("Airplane", systemImage: "airplane")
 
 All of the labels in the code above produce the same output:
 
-![A screenshot of a label that shows an airplane in a filled circle](/images/com.apple.SwiftUI/View-symbolVariant-2@2x.png)
+![A screenshot of a label that shows an airplane in a filled circle](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-symbolVariant-2@2x.png)
 
-You can apply all these variants in any order, but if you apply more than one shape variant, the one closest to the symbol takes precedence. For example, the following image uses the [`square`](symbolvariants/square-swift.type.property.md) shape:
+You can apply all these variants in any order, but if you apply more than one shape variant, the one closest to the symbol takes precedence. For example, the following image uses the [`square`](../symbolvariants/square-swift.type.property.md) shape:
 
 ```swift
 Image(systemName: "arrow.left")
@@ -78,19 +79,20 @@ Image(systemName: "arrow.left")
     .symbolVariant(.fill)
 ```
 
-![A screenshot of a left arrow symbol in a filled](/images/com.apple.SwiftUI/View-symbolVariant-3@2x.png)
+![A screenshot of a left arrow symbol in a filled](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-symbolVariant-3@2x.png)
 
-To cause a symbol to ignore the variants currently in the environment, directly set the [`symbolVariants`](environmentvalues/symbolvariants.md) environment value to [`none`](symbolvariants/none.md) using the [`environment(_:_:)`](view/environment(_:_:).md) modifer.
+To cause a symbol to ignore the variants currently in the environment, directly set the [`symbolVariants`](../environmentvalues/symbolvariants.md) environment value to [`none`](../symbolvariants/none.md) using the [`environment(_:_:)`](./environment%28_,_%29.md) modifer.
 
 ## Parameters
 
-- `variant`: The variant to use for symbols. Use the values in [`SymbolVariants`](symbolvariants.md).
+- `variant`: The variant to use for symbols. Use the values in [`SymbolVariants`](../symbolvariants.md).
 
 ## See Also
 
-- [var symbolVariants: SymbolVariants](environmentvalues/symbolvariants.md)
+### Setting a symbol variant
+- [var symbolVariants: SymbolVariants](../environmentvalues/symbolvariants.md)
   The symbol variant to use in this environment.
-- [struct SymbolVariants](symbolvariants.md)
+- [struct SymbolVariants](../symbolvariants.md)
   A variant of a symbol.
 
 

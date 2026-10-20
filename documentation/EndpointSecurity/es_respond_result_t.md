@@ -1,13 +1,14 @@
 # es_respond_result_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that indicate the result of responding to a message.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,44 +16,49 @@ Values that indicate the result of responding to a message.
 struct es_respond_result_t
 ```
 
+```c
+typedef enum { ... } es_respond_result_t;
+```
+
 ## Topics
 
 ### Success
-- [var ES_RESPOND_RESULT_SUCCESS: es_respond_result_t](es_respond_result_success.md)
+- [var ES_RESPOND_RESULT_SUCCESS: es_respond_result_t](./es_respond_result_success.md)
   Endpoint Security successfully delivered the response.
 ### Errors
-- [var ES_RESPOND_RESULT_ERR_DUPLICATE_RESPONSE: es_respond_result_t](es_respond_result_err_duplicate_response.md)
+- [var ES_RESPOND_RESULT_ERR_DUPLICATE_RESPONSE: es_respond_result_t](./es_respond_result_err_duplicate_response.md)
   The caller responded to a message that already received a response.
-- [var ES_RESPOND_RESULT_ERR_INTERNAL: es_respond_result_t](es_respond_result_err_internal.md)
+- [var ES_RESPOND_RESULT_ERR_INTERNAL: es_respond_result_t](./es_respond_result_err_internal.md)
   Communication with the Endpoint Security system failed.
-- [var ES_RESPOND_RESULT_ERR_INVALID_ARGUMENT: es_respond_result_t](es_respond_result_err_invalid_argument.md)
+- [var ES_RESPOND_RESULT_ERR_INVALID_ARGUMENT: es_respond_result_t](./es_respond_result_err_invalid_argument.md)
   The caller provided one or more invalid arguments.
-- [var ES_RESPOND_RESULT_NOT_FOUND: es_respond_result_t](es_respond_result_not_found.md)
+- [var ES_RESPOND_RESULT_NOT_FOUND: es_respond_result_t](./es_respond_result_not_found.md)
   The system couldn’t find the message that the caller sent this response to.
-- [var ES_RESPOND_RESULT_ERR_EVENT_TYPE: es_respond_result_t](es_respond_result_err_event_type.md)
+- [var ES_RESPOND_RESULT_ERR_EVENT_TYPE: es_respond_result_t](./es_respond_result_err_event_type.md)
   The caller performed an inappropriate response to the event.
 ### Initializers
-- [init(UInt32)](es_respond_result_t/init(_:).md)
-- [init(rawValue: UInt32)](es_respond_result_t/init(rawvalue:).md)
+- [init(UInt32)](./es_respond_result_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./es_respond_result_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](es_respond_result_t/rawvalue.md)
+- [var rawValue: UInt32](./es_respond_result_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](es_respond_auth_result(_:_:_:_:).md)
+### Responding to Events
+- [func es_respond_auth_result(OpaquePointer, UnsafePointer<es_message_t>, es_auth_result_t, Bool) -> es_respond_result_t](./es_respond_auth_result%28_,_,_,_%29.md)
   Responds to an event that requires an authorization response.
-- [struct es_auth_result_t](es_auth_result_t.md)
+- [struct es_auth_result_t](./es_auth_result_t.md)
   Values used when responding to an authorization event.
-- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](es_respond_flags_result(_:_:_:_:).md)
+- [func es_respond_flags_result(OpaquePointer, UnsafePointer<es_message_t>, UInt32, Bool) -> es_respond_result_t](./es_respond_flags_result%28_,_,_,_%29.md)
   Responds to an event that requires authorization flags as a response.
 
 

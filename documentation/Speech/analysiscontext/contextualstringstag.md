@@ -1,7 +1,8 @@
 # AnalysisContext.ContextualStringsTag
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,23 +21,24 @@ struct ContextualStringsTag
 ## Topics
 
 ### Creating a tag
-- [init(AnalysisContext.ContextualStringsTag.RawValue)](analysiscontext/contextualstringstag/init(_:).md)
+- [init(AnalysisContext.ContextualStringsTag.RawValue)](./contextualstringstag/init%28_%29.md)
 ### Predefined tags
-- [static let general: AnalysisContext.ContextualStringsTag](analysiscontext/contextualstringstag/general.md)
+- [static let general: AnalysisContext.ContextualStringsTag](./contextualstringstag/general.md)
   A predefined tag for applications that have no need to distinguish between sets of contextual strings.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](analysiscontext/contextualstrings.md)
+### Providing textual context
+- [var contextualStrings: [AnalysisContext.ContextualStringsTag : [String]]](./contextualstrings.md)
   Words or phrases, grouped by tag, that should be recognized even if they are not in the system vocabulary.
 
 

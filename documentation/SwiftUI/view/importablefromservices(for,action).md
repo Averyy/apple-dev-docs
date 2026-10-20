@@ -1,7 +1,8 @@
 # importableFromServices(for:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables importing items from services, such as Continuity Camera on macOS.
 
@@ -36,9 +37,10 @@ var body: some View {
 
 ## See Also
 
-- [func exportableToServices<T>(@autoclosure () -> [T]) -> some View](view/exportabletoservices(_:).md)
+### Importing and exporting transferable items
+- [func exportableToServices<T>(@autoclosure () -> [T]) -> some View](./exportabletoservices%28_%29.md)
   Exports items for consumption by shortcuts, quick actions, and services.
-- [func exportableToServices<T>(@autoclosure () -> [T], onEdit: ([T]) -> Bool) -> some View](view/exportabletoservices(_:onedit:).md)
+- [func exportableToServices<T>(@autoclosure () -> [T], onEdit: ([T]) -> Bool) -> some View](./exportabletoservices%28_,onedit%29.md)
   Exports read-write items for consumption by shortcuts, quick actions, and services.
 
 

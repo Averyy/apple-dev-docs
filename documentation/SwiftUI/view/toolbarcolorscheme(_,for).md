@@ -1,7 +1,8 @@
 # toolbarColorScheme(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the preferred color scheme of a bar managed by SwiftUI.
 
@@ -23,7 +24,7 @@ func toolbarColorScheme(_ colorScheme: ColorScheme?, for bars: ToolbarPlacement.
 
 #### Discussion
 
-The preferred color scheme flows up to the nearest container that renders a bar. This could be a [`NavigationView`](navigationview.md) or [`TabView`](tabview.md) in iOS, or the root view of a [`WindowGroup`](windowgroup.md) in macOS. Pass in a value of nil to match the current system’s color scheme.
+The preferred color scheme flows up to the nearest container that renders a bar. This could be a [`NavigationView`](../navigationview.md) or [`TabView`](../tabview.md) in iOS, or the root view of a [`WindowGroup`](../windowgroup.md) in macOS. Pass in a value of nil to match the current system’s color scheme.
 
 This examples shows a view that renders the navigation bar with a blue background and dark color scheme:
 
@@ -38,7 +39,7 @@ TabView {
 }
 ```
 
-You can provide multiple [`ToolbarPlacement`](toolbarplacement.md) instances to customize multiple bars at once.
+You can provide multiple [`ToolbarPlacement`](../toolbarplacement.md) instances to customize multiple bars at once.
 
 ```swift
 TabView {
@@ -67,23 +68,24 @@ Depending on the specified bars, the requested color scheme may not be able to b
 ## Parameters
 
 - `colorScheme`: The preferred color scheme of the background of the bar.
-- `bars`: The bars to update the color scheme of or [`automatic`](toolbarplacement/automatic.md) if empty.
+- `bars`: The bars to update the color scheme of or [`automatic`](../toolbarplacement/automatic.md) if empty.
 
 ## See Also
 
-- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
+### Styling a toolbar
+- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](./toolbarforegroundstyle%28_,for%29.md)
   Specifies the preferred foreground style of bars managed by SwiftUI.
-- [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
+- [func windowToolbarStyle<S>(S) -> some Scene](../scene/windowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar defined within this scene.
-- [protocol WindowToolbarStyle](windowtoolbarstyle.md)
+- [protocol WindowToolbarStyle](../windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
-- [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
+- [var toolbarLabelStyle: ToolbarLabelStyle?](../environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
-- [struct ToolbarLabelStyle](toolbarlabelstyle.md)
+- [struct ToolbarLabelStyle](../toolbarlabelstyle.md)
   The label style of a toolbar.
-- [struct SpacerSizing](spacersizing.md)
+- [struct SpacerSizing](../spacersizing.md)
   A type which defines how spacers should size themselves.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+- [func toolbarBackground(_:for:)](./toolbarbackground%28_,for%29.md)
   Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 
 

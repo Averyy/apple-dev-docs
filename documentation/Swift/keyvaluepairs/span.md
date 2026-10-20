@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the key-value pairs of this collection.
 
@@ -26,7 +27,7 @@ A `Span` over the elements of this collection.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

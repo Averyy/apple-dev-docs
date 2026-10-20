@@ -1,10 +1,11 @@
 # init(ACLDataPacketLength:SCODataPacketLength:totalNumACLDataPackets:totalNumSCODataPackets:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

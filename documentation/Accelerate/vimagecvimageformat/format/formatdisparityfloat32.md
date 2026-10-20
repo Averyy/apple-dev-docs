@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.formatDisparityFloat32
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit disparity pixel format that describes the normalized shift when comparing two images.
 
@@ -11,7 +12,7 @@ A 32-bit disparity pixel format that describes the normalized shift when compari
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ Units are `1 / meters`, that is, `(pixelShift / (pixelFocalLength * baselineInMe
 
 ## See Also
 
-- [vImageCVImageFormat.Format.formatDisparityFloat16](vimagecvimageformat/format/formatdisparityfloat16.md)
+### Disparity format constants
+- [vImageCVImageFormat.Format.formatDisparityFloat16](./formatdisparityfloat16.md)
   A 16-bit disparity pixel format that describes the normalized shift when comparing two images.
 
 

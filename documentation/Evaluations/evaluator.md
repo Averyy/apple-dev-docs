@@ -1,7 +1,8 @@
 # Evaluator
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A closure-based evaluator.
 
@@ -22,11 +23,11 @@ struct Evaluator<Input> where Input : SampleProtocol, Input.ExpectedValue : Deco
 
 ## Mentions
 
-- [Designing specific, measurable criteria in an evaluation suite](designing-evaluation-criteria.md)
+- [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
 
 #### Overview
 
-Use Evaluator to create inline evaluators without defining a custom type. The closure receives the input sample and the [`ModelSubject`](modelsubject.md), providing access to both .value and .transcript.
+Use Evaluator to create inline evaluators without defining a custom type. The closure receives the input sample and the [`ModelSubject`](./modelsubject.md), providing access to both .value and .transcript.
 
 ```swift
 Evaluator { sample, subject in
@@ -39,26 +40,27 @@ Evaluator { sample, subject in
 ## Topics
 
 ### Initializers
-- [init(nonisolated(nonsending) (Input, ModelSubject<Input.ExpectedValue>) async throws -> Metric)](evaluator/init(_:).md)
+- [init(nonisolated(nonsending) (Input, ModelSubject<Input.ExpectedValue>) async throws -> Metric)](./evaluator/init%28_%29.md)
   Creates an evaluator with the given evaluation closure.
 ### Instance Methods
-- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](evaluator/metrics(subject:input:).md)
+- [func metrics(subject: ModelSubject<Input.ExpectedValue>, input: Input) async throws -> [Metric]](./evaluator/metrics%28subject,input%29.md)
   Evaluates the input and returns an array of metrics.
 
 ## Relationships
 
 ### Conforms To
-- [EvaluatorProtocol](evaluatorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [EvaluatorProtocol](./evaluatorprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Designing specific, measurable criteria in an evaluation suite](designing-evaluation-criteria.md)
+### Metrics and evaluators
+- [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md)
   Define quality for your feature by choosing measurable criteria, scoring approaches, and ground-truth strategies.
-- [struct Metric](metric.md)
+- [struct Metric](./metric.md)
   A named metric that carries a result value.
-- [struct MetricsAggregator](metricsaggregator.md)
+- [struct MetricsAggregator](./metricsaggregator.md)
   A utility for computing aggregate statistics from evaluation metrics.
 
 

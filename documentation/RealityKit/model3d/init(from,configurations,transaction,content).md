@@ -1,7 +1,8 @@
 # init(from:configurations:transaction:content:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a modifiable model using the provided `ConfigurationCatalog` and configuration choices in phases.
 
@@ -17,7 +18,7 @@ init(from catalog: Entity.ConfigurationCatalog, configurations: [String : String
 
 #### Discussion
 
-Before the load operation completes, the phase is [`Model3DPhase.empty`](model3dphase/empty.md). After the operation completes, the phase becomes either [`Model3DPhase.failure(_:)`](model3dphase/failure(_:).md) or [`Model3DPhase.success(_:)`](model3dphase/success(_:).md). In the first case, the phase’s [`error`](model3dphase/error.md) value indicates the reason for failure. In the second case, the phase’s [`model`](model3dphase/model.md) property contains the loaded model. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
+Before the load operation completes, the phase is [`Model3DPhase.empty`](../model3dphase/empty.md). After the operation completes, the phase becomes either [`Model3DPhase.failure(_:)`](../model3dphase/failure%28_%29.md) or [`Model3DPhase.success(_:)`](../model3dphase/success%28_%29.md). In the first case, the phase’s [`error`](../model3dphase/error.md) value indicates the reason for failure. In the second case, the phase’s [`model`](../model3dphase/model.md) property contains the loaded model. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 
 ```swift
     Model3D(from: myConfigurationCatalog, configurations: ["vibe": "relaxed"]) { phase in
@@ -31,7 +32,7 @@ Before the load operation completes, the phase is [`Model3DPhase.empty`](model3d
     }
 ```
 
-To add transitions when you change the name, apply an identifier to the [`Model3D`](model3d.md).
+To add transitions when you change the name, apply an identifier to the [`Model3D`](../model3d.md).
 
 ## Parameters
 

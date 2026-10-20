@@ -1,7 +1,8 @@
 # init(_:contentType:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and opens new documents.
 
@@ -19,6 +20,25 @@ Creates and opens new documents.
 nonisolated init(_ title: LocalizedStringResource, contentType: UTType? = nil)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ label: Text? = nil, contentType: UTType? = nil)
+```
+
+```swift
+nonisolated
+init(_ title: LocalizedStringKey, contentType: UTType? = nil)
+```
+
+```swift
+nonisolated
+init(_ title: some StringProtocol, contentType: UTType? = nil)
+```
+
 ## Parameters
 
 - `title`: A title resource to use as the button title.
@@ -26,7 +46,8 @@ nonisolated init(_ title: LocalizedStringResource, contentType: UTType? = nil)
 
 ## See Also
 
-- [init(_:contentType:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:preparedocumenturl:).md)
+### Creating and opening a document
+- [init(_:contentType:prepareDocumentURL:)](./init%28_,contenttype,preparedocumenturl%29.md)
   Creates and opens new documents.
 
 

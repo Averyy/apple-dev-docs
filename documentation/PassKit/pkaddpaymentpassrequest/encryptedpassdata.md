@@ -1,7 +1,8 @@
 # encryptedPassData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An encrypted JSON file containing the sensitive information needed to add a card to Apple Pay.
 
@@ -9,13 +10,17 @@ An encrypted JSON file containing the sensitive information needed to add a card
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var encryptedPassData: Data? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSData * encryptedPassData;
 ```
 
 #### Discussion
@@ -32,11 +37,12 @@ The JSON file must contain the following keys:
 
 ## See Also
 
-- [var activationData: Data?](pkaddpaymentpassrequest/activationdata.md)
+### Accessing request data
+- [var activationData: Data?](./activationdata.md)
   The request’s activation data.
-- [var ephemeralPublicKey: Data?](pkaddpaymentpassrequest/ephemeralpublickey.md)
+- [var ephemeralPublicKey: Data?](./ephemeralpublickey.md)
   The ephemeral public key used by elliptic curve cryptography (ECC).
-- [var wrappedKey: Data?](pkaddpaymentpassrequest/wrappedkey.md)
+- [var wrappedKey: Data?](./wrappedkey.md)
 
 
 ---

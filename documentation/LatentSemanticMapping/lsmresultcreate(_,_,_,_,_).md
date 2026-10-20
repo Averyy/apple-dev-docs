@@ -1,13 +1,14 @@
 # LSMResultCreate(_:_:_:_:_:)
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the categories or words that best match when a text is mapped into a map, in decreasing order of likelihood.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Returns the categories or words that best match when a text is mapped into a map
 func LSMResultCreate(_ alloc: CFAllocator?, _ mapref: LSMMap, _ textref: LSMText, _ numResults: CFIndex, _ flags: CFOptionFlags) -> Unmanaged<LSMResult>
 ```
 
+```c
+LSMResultRefLSMResultCreate(CFAllocatorRef alloc, LSMMapRef mapref, LSMTextRef textref, CFIndex numResults, CFOptionFlags flags);
+```
+
 ## See Also
 
-- [Result Flags](result-flags.md)
+### Creating a Result
+- [Result Flags](./result-flags.md)
   Options for creating a result.
 
 

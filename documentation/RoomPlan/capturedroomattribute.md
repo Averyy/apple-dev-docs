@@ -1,7 +1,8 @@
 # CapturedRoomAttribute
 
 **Framework**: RoomPlan  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Details about an object in the room that the framework observes during a scan.
 
@@ -18,37 +19,38 @@ protocol CapturedRoomAttribute : CaseIterable, RawRepresentable, Sendable where 
 
 #### Overview
 
-If the framework identifies details about an [`CapturedRoom.Object`](capturedroom/object.md) during a scan, it adds an adopter of this protocol that represents that detail to the object’s [`attributes`](capturedroom/object/attributes.md) array. For example, details the framework recognizes as a stool with a star-shaped base contains both of the [`ChairType.stool`](chairtype/stool.md) and [`ChairLegType.star`](chairlegtype/star.md) options in the `attributes` array for the object that represents the physical stool.
+If the framework identifies details about an [`CapturedRoom.Object`](./capturedroom/object.md) during a scan, it adds an adopter of this protocol that represents that detail to the object’s [`attributes`](./capturedroom/object/attributes.md) array. For example, details the framework recognizes as a stool with a star-shaped base contains both of the [`ChairType.stool`](./chairtype/stool.md) and [`ChairLegType.star`](./chairlegtype/star.md) options in the `attributes` array for the object that represents the physical stool.
 
 ## Topics
 
 ### Identifying an attribute
-- [var shortIdentifier: String](capturedroomattribute/shortidentifier.md)
+- [var shortIdentifier: String](./capturedroomattribute/shortidentifier.md)
   A human-readable identifier for the attribute.
 ### Determining an attribute’s category
-- [static var parentCategory: CapturedElementCategory?](capturedroomattribute/parentcategory.md)
+- [static var parentCategory: CapturedElementCategory?](./capturedroomattribute/parentcategory.md)
   A category to which this room attribute belongs.
 
 ## Relationships
 
 ### Inherits From
-- [CaseIterable](../swift/caseiterable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [ChairArmType](chairarmtype.md)
-- [ChairBackType](chairbacktype.md)
-- [ChairLegType](chairlegtype.md)
-- [ChairType](chairtype.md)
-- [SofaType](sofatype.md)
-- [StorageType](storagetype.md)
-- [TableShapeType](tableshapetype.md)
-- [TableType](tabletype.md)
+- [ChairArmType](./chairarmtype.md)
+- [ChairBackType](./chairbacktype.md)
+- [ChairLegType](./chairlegtype.md)
+- [ChairType](./chairtype.md)
+- [SofaType](./sofatype.md)
+- [StorageType](./storagetype.md)
+- [TableShapeType](./tableshapetype.md)
+- [TableType](./tabletype.md)
 
 ## See Also
 
-- [enum CapturedElementCategory](capturedelementcategory.md)
+### Accessing object details
+- [enum CapturedElementCategory](./capturedelementcategory.md)
   The category of the particular object or surface.
 
 

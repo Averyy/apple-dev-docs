@@ -1,7 +1,8 @@
 # requiredRecipientContactFields
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that indicates which of the recipient’s contact details the merchant requires in order to process a disbursement.
 
@@ -18,13 +19,18 @@ An array that indicates which of the recipient’s contact details the merchant 
 var requiredRecipientContactFields: [PKContactField] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<NSString *> * requiredRecipientContactFields;
+```
+
 #### Discussion
 
 The framework uses these details to display the input fields for name, email address, phone number, and so on on the payment sheet. The framework always shows them in a specific order, regardless of the order of API input.
 
 ## See Also
 
-- [var recipientContact: PKContact?](pkdisbursementrequest/recipientcontact.md)
+### Requesting recipient contact fields
+- [var recipientContact: PKContact?](./recipientcontact.md)
   A contact object that describes the recipient.
 
 

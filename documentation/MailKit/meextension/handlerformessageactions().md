@@ -1,7 +1,8 @@
 # handlerForMessageActions()
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that performs actions on mail messages as the system downloads them.
 
@@ -12,6 +13,10 @@ Returns an object that performs actions on mail messages as the system downloads
 
 ```swift
 optional func handlerForMessageActions() -> any MEMessageActionHandler
+```
+
+```objc
+- (id<MEMessageActionHandler>) handlerForMessageActions;
 ```
 
 #### Return Value

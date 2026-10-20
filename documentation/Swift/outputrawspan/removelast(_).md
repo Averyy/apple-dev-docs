@@ -1,7 +1,8 @@
 # removeLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove the last n bytes from this span, returning the memory they occupy to the uninitialized state.
 

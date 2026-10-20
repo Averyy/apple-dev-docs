@@ -1,7 +1,8 @@
 # MPSMatrixNeuron
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A neuron activation kernel that operates on matrices.
 
@@ -19,47 +20,52 @@ A neuron activation kernel that operates on matrices.
 class MPSMatrixNeuron
 ```
 
+```objc
+@interface MPSMatrixNeuron : MPSMatrixUnaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixneuron/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsmatrixneuron/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsmatrixneuron/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsmatrixneuron/init%28device%29.md)
 ### Instance Properties
-- [var alpha: Double](mpsmatrixneuron/alpha.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixneuron/sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixneuron/sourcenumberoffeaturevectors.md)
+- [var alpha: Double](./mpsmatrixneuron/alpha.md)
+- [var sourceInputFeatureChannels: Int](./mpsmatrixneuron/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](./mpsmatrixneuron/sourcenumberoffeaturevectors.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixneuron/copy(with:device:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](mpsmatrixneuron/encode(commandbuffer:inputmatrix:biasvector:resultmatrix:).md)
-- [func neuronParameterA() -> Float](mpsmatrixneuron/neuronparametera.md)
-- [func neuronParameterB() -> Float](mpsmatrixneuron/neuronparameterb.md)
-- [func neuronParameterC() -> Float](mpsmatrixneuron/neuronparameterc.md)
-- [func neuronType() -> MPSCNNNeuronType](mpsmatrixneuron/neurontype.md)
-- [func setNeuronToPReLUWithParametersA(Data)](mpsmatrixneuron/setneurontopreluwithparametersa(_:).md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](mpsmatrixneuron/setneurontype(_:parametera:parameterb:parameterc:).md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsmatrixneuron/copy%28with,device%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, inputMatrix: MPSMatrix, biasVector: MPSVector?, resultMatrix: MPSMatrix)](./mpsmatrixneuron/encode%28commandbuffer,inputmatrix,biasvector,resultmatrix%29.md)
+- [func neuronParameterA() -> Float](./mpsmatrixneuron/neuronparametera%28%29.md)
+- [func neuronParameterB() -> Float](./mpsmatrixneuron/neuronparameterb%28%29.md)
+- [func neuronParameterC() -> Float](./mpsmatrixneuron/neuronparameterc%28%29.md)
+- [func neuronType() -> MPSCNNNeuronType](./mpsmatrixneuron/neurontype%28%29.md)
+- [func setNeuronToPReLUWithParametersA(Data)](./mpsmatrixneuron/setneurontopreluwithparametersa%28_%29.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float, parameterC: Float)](./mpsmatrixneuron/setneurontype%28_,parametera,parameterb,parameterc%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+- [MPSMatrixUnaryKernel](./mpsmatrixunarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixFullyConnected](mpsmatrixfullyconnected.md)
+### Matrix Neural Network Operations
+- [class MPSMatrixFullyConnected](./mpsmatrixfullyconnected.md)
   A kernel for applying a fully connected neural network layer.
-- [class MPSMatrixFullyConnectedGradient](mpsmatrixfullyconnectedgradient.md)
+- [class MPSMatrixFullyConnectedGradient](./mpsmatrixfullyconnectedgradient.md)
   A kernel for applying a fully gradient connected neural network layer.
-- [class MPSMatrixNeuronGradient](mpsmatrixneurongradient.md)
+- [class MPSMatrixNeuronGradient](./mpsmatrixneurongradient.md)
   A gradient neuron activation kernel that operates on matrices.
 
 

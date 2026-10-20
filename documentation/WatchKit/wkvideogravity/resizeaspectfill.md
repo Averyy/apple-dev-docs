@@ -1,7 +1,8 @@
 # WKVideoGravity.resizeAspectFill
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content is resized to fill the bounds rectangle completely while preserving the original aspect ratio of the content. This option results in cropping of the edges of the video in the axis it exceeds.
 
@@ -14,11 +15,16 @@ Content is resized to fill the bounds rectangle completely while preserving the 
 case resizeAspectFill
 ```
 
+```c
+WKVideoGravityResizeAspectFill
+```
+
 ## See Also
 
-- [WKVideoGravity.resizeAspect](wkvideogravity/resizeaspect.md)
+### Constants
+- [WKVideoGravity.resizeAspect](./resizeaspect.md)
   Content is resized to fit the bounds rectangle, preserving the original aspect ratio of the content. Content that does not completely fill the bounds rectangle is centered in the partial axis.
-- [WKVideoGravity.resize](wkvideogravity/resize.md)
+- [WKVideoGravity.resize](./resize.md)
   Content is resized to fit the entire bounds rectangle. This option does not preserve the original aspect ratio of the content.
 
 

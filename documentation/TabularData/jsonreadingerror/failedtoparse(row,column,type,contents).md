@@ -1,7 +1,8 @@
 # JSONReadingError.failedToParse(row:column:type:contents:)
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when a JSON value fails to parse as the specified type.
 
@@ -29,11 +30,12 @@ case failedToParse(row: Int, column: String, type: JSONType, contents: String)
 
 ## See Also
 
-- [JSONReadingError.incompatibleValues(column:)](jsonreadingerror/incompatiblevalues(column:).md)
+### Getting Error Information
+- [JSONReadingError.incompatibleValues(column:)](./incompatiblevalues%28column%29.md)
   An error that occurs when the JSON data contains incompatible values in a column.
-- [JSONReadingError.unsupportedStructure](jsonreadingerror/unsupportedstructure.md)
+- [JSONReadingError.unsupportedStructure](./unsupportedstructure.md)
   An error that occurs when the JSON structure is incompatible with a data frame.
-- [case wrongType(row: Int, column: String, expectedType: JSONType, value: any Sendable)](jsonreadingerror/wrongtype(row:column:expectedtype:value:).md)
+- [case wrongType(row: Int, column: String, expectedType: JSONType, value: any Sendable)](./wrongtype%28row,column,expectedtype,value%29.md)
   An error that occurs when the JSON data contains a value of the wrong type for a type-constrained column.
 
 

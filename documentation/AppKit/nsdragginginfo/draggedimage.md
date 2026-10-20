@@ -2,17 +2,24 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image that represents the dragging item.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use NSDraggingItem objects instead
 
 ## Declaration
 
 ```swift
 var draggedImage: NSImage? { get }
+```
+
+```objc
+@property (readonly, nullable) NSImage * draggedImage;
 ```
 
 #### Discussion
@@ -23,7 +30,8 @@ This method returns non-`nil` for a local drag, but `nil` for a cross-process dr
 
 ## See Also
 
-- [var draggedImageLocation: NSPoint](nsdragginginfo/draggedimagelocation.md)
+### Getting image information
+- [var draggedImageLocation: NSPoint](./draggedimagelocation.md)
   The current location of the dragged image’s origin, in the base coordinate system of the destination object’s window.
 
 

@@ -1,15 +1,20 @@
 # icr_timer
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var icr_timer: UInt32
+```
+
+```c
+uint32_t icr_timer;
 ```
 
 

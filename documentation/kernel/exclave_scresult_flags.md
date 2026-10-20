@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum exclave_scresult_flags : uint64_t {
     ...
 };
@@ -17,7 +17,7 @@ enum exclave_scresult_flags : uint64_t {
 ## Topics
 
 ### Constants
-- [kExclaveScresultHaveIPCStack](exclave_scresult_flags/kexclavescresulthaveipcstack.md)
+- [kExclaveScresultHaveIPCStack](./exclave_scresult_flags/kexclavescresulthaveipcstack.md)
 
 
 ---

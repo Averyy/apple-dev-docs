@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: Core Transferable  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an encodable and decodable transfer representation from an expression.
 
@@ -22,9 +23,10 @@ static func buildExpression<Encoder, Decoder>(_ content: CodableRepresentation<I
 
 ## See Also
 
-- [static func buildBlock<Content>(Content) -> Content](transferrepresentationbuilder/buildblock(_:).md)
+### Building a transfer representation
+- [static func buildBlock<Content>(Content) -> Content](./buildblock%28_%29.md)
   Passes a single transfer representation to the builder unmodified.
-- [static func buildExpression<R>(R) -> R](transferrepresentationbuilder/buildexpression(_:)-3z8sl.md)
+- [static func buildExpression<R>(R) -> R](./buildexpression%28_%29-3z8sl.md)
   Builds a transfer representation from an expression.
 
 

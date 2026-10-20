@@ -1,7 +1,8 @@
 # FilePath.Component.Kind.parentDirectory
 
 **Framework**: System  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The special directory `..`, representing the parent directory.
 

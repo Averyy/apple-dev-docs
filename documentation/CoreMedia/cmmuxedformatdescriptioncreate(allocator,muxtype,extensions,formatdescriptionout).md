@@ -1,7 +1,8 @@
 # CMMuxedFormatDescriptionCreate(allocator:muxType:extensions:formatDescriptionOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a format description for a muxed media stream.
 
@@ -18,6 +19,10 @@ Creates a format description for a muxed media stream.
 
 ```swift
 func CMMuxedFormatDescriptionCreate(allocator: CFAllocator?, muxType: CMMuxedStreamType, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMMuxedFormatDescription?>) -> OSStatus
+```
+
+```c
+extern OSStatus CMMuxedFormatDescriptionCreate(CFAllocatorRef allocator, CMMuxedStreamType muxType, CFDictionaryRef extensions, CMMuxedFormatDescriptionRef*formatDescriptionOut);
 ```
 
 #### Return Value

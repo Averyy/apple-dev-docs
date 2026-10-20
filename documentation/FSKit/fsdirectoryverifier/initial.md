@@ -1,7 +1,8 @@
 # initial
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The constant initial value for the directory-enumeration verifier.
 
@@ -12,6 +13,10 @@ The constant initial value for the directory-enumeration verifier.
 
 ```swift
 static let initial: FSDirectoryVerifier
+```
+
+```c
+extern const FSDirectoryVerifier FSDirectoryVerifierInitial;
 ```
 
 

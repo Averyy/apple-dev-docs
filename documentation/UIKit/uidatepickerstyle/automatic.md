@@ -1,7 +1,8 @@
 # UIDatePickerStyle.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the system picks the concrete style based on the current platform and date picker mode.
 
@@ -17,13 +18,18 @@ A style indicating that the system picks the concrete style based on the current
 case automatic
 ```
 
+```c
+UIDatePickerStyleAutomatic
+```
+
 ## See Also
 
-- [UIDatePickerStyle.compact](uidatepickerstyle/compact.md)
+### Styles
+- [UIDatePickerStyle.compact](./compact.md)
   A style indicating that the date picker displays as a label that when tapped displays a calendar-style editor.
-- [UIDatePickerStyle.inline](uidatepickerstyle/inline.md)
+- [UIDatePickerStyle.inline](./inline.md)
   A style indicating that the date pickers displays as an inline, editable field.
-- [UIDatePickerStyle.wheels](uidatepickerstyle/wheels.md)
+- [UIDatePickerStyle.wheels](./wheels.md)
   A style indicating that the date picker displays as a wheel picker.
 
 

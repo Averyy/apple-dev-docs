@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassSIM_Access
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassSIM_Access = 0x112D
 ```
 

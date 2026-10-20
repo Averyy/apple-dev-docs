@@ -1,7 +1,8 @@
 # DataStoreSnapshot
 
 **Framework**: SwiftData  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -22,31 +23,32 @@ protocol DataStoreSnapshot : Decodable, Encodable, Sendable
 ## Topics
 
 ### Initializers
-- [init(from: any BackingData, relatedBackingDatas: inout [PersistentIdentifier : any BackingData])](datastoresnapshot/init(from:relatedbackingdatas:).md)
+- [init(from: any BackingData, relatedBackingDatas: inout [PersistentIdentifier : any BackingData])](./datastoresnapshot/init%28from,relatedbackingdatas%29.md)
 ### Instance Properties
-- [var persistentIdentifier: PersistentIdentifier](datastoresnapshot/persistentidentifier.md)
+- [var persistentIdentifier: PersistentIdentifier](./datastoresnapshot/persistentidentifier.md)
 ### Instance Methods
-- [func copy(persistentIdentifier: PersistentIdentifier, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier]?) -> Self](datastoresnapshot/copy(persistentidentifier:remappedidentifiers:).md)
+- [func copy(persistentIdentifier: PersistentIdentifier, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier]?) -> Self](./datastoresnapshot/copy%28persistentidentifier,remappedidentifiers%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [DefaultSnapshot](defaultsnapshot.md)
+- [DefaultSnapshot](./defaultsnapshot.md)
 
 ## See Also
 
-- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](datastore/fetch(_:).md)
-- [struct DataStoreFetchRequest](datastorefetchrequest.md)
-- [struct DataStoreFetchResult](datastorefetchresult.md)
-- [associatedtype Snapshot : DataStoreSnapshot](datastore/snapshot.md)
-- [typealias DataStoreSnapshotValue](datastoresnapshotvalue.md)
-- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](datastore/fetchcount(_:).md)
-- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](datastore/fetchidentifiers(_:).md)
+### Processing fetch requests
+- [func fetch<T>(DataStoreFetchRequest<T>) throws -> DataStoreFetchResult<T, Self.Snapshot>](./datastore/fetch%28_%29.md)
+- [struct DataStoreFetchRequest](./datastorefetchrequest.md)
+- [struct DataStoreFetchResult](./datastorefetchresult.md)
+- [associatedtype Snapshot : DataStoreSnapshot](./datastore/snapshot.md)
+- [typealias DataStoreSnapshotValue](./datastoresnapshotvalue.md)
+- [func fetchCount<T>(DataStoreFetchRequest<T>) throws -> Int](./datastore/fetchcount%28_%29.md)
+- [func fetchIdentifiers<T>(DataStoreFetchRequest<T>) throws -> [PersistentIdentifier]](./datastore/fetchidentifiers%28_%29.md)
 
 
 ---

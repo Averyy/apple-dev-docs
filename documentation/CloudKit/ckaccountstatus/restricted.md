@@ -1,7 +1,8 @@
 # CKAccountStatus.restricted
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system denies access to the user’s iCloud account.
 
@@ -10,7 +11,7 @@ The system denies access to the user’s iCloud account.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,19 +21,24 @@ The system denies access to the user’s iCloud account.
 case restricted
 ```
 
+```c
+CKAccountStatusRestricted
+```
+
 #### Discussion
 
 Your app can’t access the user’s iCloud account due to restrictions that Parental Controls or Mobile Device Management impose.
 
 ## See Also
 
-- [CKAccountStatus.available](ckaccountstatus/available.md)
+### Account Statuses
+- [CKAccountStatus.available](./available.md)
   The user’s iCloud account is available.
-- [CKAccountStatus.couldNotDetermine](ckaccountstatus/couldnotdetermine.md)
+- [CKAccountStatus.couldNotDetermine](./couldnotdetermine.md)
   CloudKit can’t determine the status of the user’s iCloud account.
-- [CKAccountStatus.noAccount](ckaccountstatus/noaccount.md)
+- [CKAccountStatus.noAccount](./noaccount.md)
   The device doesn’t have an iCloud account.
-- [CKAccountStatus.temporarilyUnavailable](ckaccountstatus/temporarilyunavailable.md)
+- [CKAccountStatus.temporarilyUnavailable](./temporarilyunavailable.md)
   The user’s iCloud account is temporarily unavailable.
 
 

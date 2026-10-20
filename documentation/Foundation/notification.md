@@ -1,7 +1,8 @@
 # Notification
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container for information broadcast through a notification center to all registered observers.
 
@@ -23,43 +24,44 @@ struct Notification
 ## Topics
 
 ### Creating a Notification
-- [init(name: Notification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](notification/init(name:object:userinfo:).md)
+- [init(name: Notification.Name, object: Any?, userInfo: [AnyHashable : Any]?)](./notification/init%28name,object,userinfo%29.md)
   Initializes a new notification.
-- [Notification.Name](notification/name-swift.typealias.md)
+- [Notification.Name](./notification/name-swift.typealias.md)
   An alias for a type used to represent the name of a notification.
-- [NSNotification.Name](nsnotification/name-swift.struct.md)
+- [NSNotification.Name](./nsnotification/name-swift.struct.md)
   A structure that defines the name of a notification.
 ### Getting Notification Information
-- [var name: Notification.Name](notification/name-swift.property.md)
+- [var name: Notification.Name](./notification/name-swift.property.md)
   A tag identifying the notification.
-- [var object: Any?](notification/object.md)
+- [var object: Any?](./notification/object.md)
   An object that the poster wishes to send to observers.
-- [var userInfo: [AnyHashable : Any]?](notification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./notification/userinfo.md)
   Storage for values or objects related to this notification.
 ### Using Reference Types
-- [class NSNotification](nsnotification.md)
+- [class NSNotification](./nsnotification.md)
   A container for information broadcast through a notification center to all registered observers.
 ### Operators
-- [static func == (Notification, Notification) -> Bool](notification/==(_:_:).md)
+- [static func == (Notification, Notification) -> Bool](./notification/eqeq%28_,_%29.md)
   Compare two notifications for equality.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [ReferenceConvertible](referenceconvertible.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [ReferenceConvertible](./referenceconvertible.md)
 
 ## See Also
 
-- [class NotificationCenter](notificationcenter.md)
+### Notifications
+- [class NotificationCenter](./notificationcenter.md)
   A notification dispatch mechanism that enables the broadcast of information to registered observers.
-- [class NotificationQueue](notificationqueue.md)
+- [class NotificationQueue](./notificationqueue.md)
   A notification center buffer.
 
 

@@ -1,6 +1,7 @@
 # Adding Matter support to your ecosystem
 
-**Framework**: MatterSupport
+**Framework**: MatterSupport  
+**Role**: Article
 
 Allow people to add Matter accessories to your platform.
 
@@ -8,11 +9,11 @@ Allow people to add Matter accessories to your platform.
 
 With the MatterSupport framework, you can administer, add, and configure Matter devices in your ecosystem using an iOS device. To onboard a device, you need to configure discovery, set up a home, create an extension request handler, and override its methods.
 
-##### Configure Discovery
+##### Configure discovery
 
-Add the following to your app’s `Info.plist` so it can discover Matter-related services. See [`NSBonjourServices`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsbonjourservices) for more information.
+Add the following to your app’s `Info.plist` so it can discover Matter-related services. See [`NSBonjourServices`](../BundleResources/information-property-list/nsbonjourservices.md) for more information.
 
-```None
+```
 <key>NSBonjourServices</key>
     <array>
         <string>_matter._tcp</string>
@@ -21,7 +22,7 @@ Add the following to your app’s `Info.plist` so it can discover Matter-related
 </array>
 ```
 
-##### Set Up the Home
+##### Set up the home
 
 Define the home’s name, then create the topology and pass your ecosystem name and an array of homes.
 
@@ -39,7 +40,7 @@ Use the newly created topology object to create a request to add a device.
 let request = MatterAddDeviceRequest(topology: topology)
 ```
 
-You can optionally provide the Matter setup code programmatically while setting up a Matter device in an ecosystem. To do this, pass a string containing the payload information from the device’s packaging, such as a QR code. For more information on when this is appropriate, see [`Matter Allow Setup Payload`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.matter.allow-setup-payload).
+You can optionally provide the Matter setup code programmatically while setting up a Matter device in an ecosystem. To do this, pass a string containing the payload information from the device’s packaging, such as a QR code. For more information on when this is appropriate, see [`Matter Allow Setup Payload`](../BundleResources/entitlements/com.apple.developer.matter.allow-setup-payload.md).
 
 ```swift
 // Provide the Matter setup code programmatically.
@@ -77,9 +78,9 @@ do {
 }
 ```
 
-##### Create the Extension Request Handler
+##### Create the extension request handler
 
-Subclass [`MatterAddDeviceExtensionRequestHandler`](matteradddeviceextensionrequesthandler.md) and override its methods. This class facilitates the user interface flow during the setup of a new Matter device.
+Subclass [`MatterAddDeviceExtensionRequestHandler`](./matteradddeviceextensionrequesthandler.md) and override its methods. This class facilitates the user interface flow during the setup of a new Matter device.
 
 ```swift
 class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestHandler {
@@ -193,11 +194,11 @@ class MyMatterAddDeviceExtensionRequestHandler: MatterAddDeviceExtensionRequestH
 }
 ```
 
-##### Set the Principal Class
+##### Set the principal class
 
-Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsprincipalclass) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
+Register the subclass you created above in the app’s `Info.plist` as the [`NSPrincipalClass`](../BundleResources/information-property-list/nsprincipalclass.md) for the `com.apple.matter.support.extension.device-setup` extension point identifier.
 
-```None
+```
 <key>NSExtension</key>
 <dict>
     <key>NSExtensionPointIdentifier</key>
@@ -209,9 +210,10 @@ Register the subclass you created above in the app’s `Info.plist` as the [`NSP
 
 ## See Also
 
-- [struct MatterAddDeviceRequest](matteradddevicerequest.md)
+### Adding a device
+- [struct MatterAddDeviceRequest](./matteradddevicerequest.md)
   A request that adds and sets up a device into an ecosystem.
-- [class MatterAddDeviceExtensionRequestHandler](matteradddeviceextensionrequesthandler.md)
+- [class MatterAddDeviceExtensionRequestHandler](./matteradddeviceextensionrequesthandler.md)
   The object that handles configuration and commissioning of a device into an ecosystem.
 
 

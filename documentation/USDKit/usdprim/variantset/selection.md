@@ -1,7 +1,8 @@
 # selection
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected variant name, or `nil` if no selection composes.
 

@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides compile-time options when you build the pipeline.
 
@@ -17,6 +18,10 @@ Provides compile-time options when you build the pipeline.
 
 ```swift
 var options: MTL4PipelineOptions? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) MTL4PipelineOptions * options;
 ```
 
 

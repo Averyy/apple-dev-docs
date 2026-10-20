@@ -1,7 +1,8 @@
 # init(_:onCompletion:)
 
 **Framework**: Journaling Suggestions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a suggestions picker with button text defined by the given string.
 
@@ -15,6 +16,8 @@ Creates a suggestions picker with button text defined by the given string.
 @preconcurrency init<S>(_ title: S, onCompletion: @escaping (JournalingSuggestion) async -> Void) where S : StringProtocol
 ```
 
+Available when `Label` is `Text`.
+
 #### Discussion
 
 This initializer creates a text view on your behalf and uses the string argument to set its text.
@@ -26,9 +29,10 @@ This initializer creates a text view on your behalf and uses the string argument
 
 ## See Also
 
-- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(label:oncompletion:).md)
+### Creating a suggestions picker
+- [init(label: () -> Label, onCompletion: (JournalingSuggestion) async -> Void)](./init%28label,oncompletion%29.md)
   Creates a suggestions picker within the given view.
-- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](journalingsuggestionspicker/init(_:oncompletion:)-7uxov.md)
+- [init(LocalizedStringKey, onCompletion: (JournalingSuggestion) async -> Void)](./init%28_,oncompletion%29-7uxov.md)
   Creates a suggestions picker with button text defined by the given localized string key.
 
 

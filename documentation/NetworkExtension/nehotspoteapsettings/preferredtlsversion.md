@@ -1,7 +1,8 @@
 # preferredTLSVersion
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Transport Layer Security (TLS) version to use during a TLS authentication handshake.
 
@@ -17,32 +18,37 @@ The Transport Layer Security (TLS) version to use during a TLS authentication ha
 var preferredTLSVersion: NEHotspotEAPSettings.TLSVersion { get set }
 ```
 
+```objc
+@property NEHotspotConfigurationEAPTLSVersion preferredTLSVersion;
+```
+
 #### Discussion
 
-Optional. For possible values see [`NEHotspotEAPSettings.TLSVersion`](nehotspoteapsettings/tlsversion.md). The default value is Version 1.2.
+Optional. For possible values see [`NEHotspotEAPSettings.TLSVersion`](./tlsversion.md). The default value is Version 1.2.
 
 ## See Also
 
-- [var isTLSClientCertificateRequired: Bool](nehotspoteapsettings/istlsclientcertificaterequired.md)
+### Accessing EAP properties
+- [var isTLSClientCertificateRequired: Bool](./istlsclientcertificaterequired.md)
   A Boolean value indicating whether a network requires two-factor authentication or allows zero-factor authentication.
-- [var trustedServerNames: [String]](nehotspoteapsettings/trustedservernames.md)
+- [var trustedServerNames: [String]](./trustedservernames.md)
   An array of server certificate common name strings used to verify a server’s certificate.
-- [var supportedEAPTypes: [NSNumber]](nehotspoteapsettings/supportedeaptypes.md)
+- [var supportedEAPTypes: [NSNumber]](./supportedeaptypes.md)
   An array of supported EAP types.
-- [NEHotspotEAPSettings.EAPType](nehotspoteapsettings/eaptype.md)
-  The EAP types that may be specified in [`supportedEAPTypes`](nehotspoteapsettings/supportedeaptypes.md).
-- [var username: String](nehotspoteapsettings/username.md)
+- [NEHotspotEAPSettings.EAPType](./eaptype.md)
+  The EAP types that may be specified in [`supportedEAPTypes`](./supportedeaptypes.md).
+- [var username: String](./username.md)
   The user name string for EAP authentication, encoded as UTF-8.
-- [var password: String](nehotspoteapsettings/password.md)
+- [var password: String](./password.md)
   The password component of the IEEE 802.1X authentication credential.
-- [NEHotspotEAPSettings.TLSVersion](nehotspoteapsettings/tlsversion.md)
-  The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](nehotspoteapsettings/preferredtlsversion.md).
-- [var outerIdentity: String](nehotspoteapsettings/outeridentity.md)
+- [NEHotspotEAPSettings.TLSVersion](./tlsversion.md)
+  The EAPTLS Version identifiers that may be specified by [`preferredTLSVersion`](./preferredtlsversion.md).
+- [var outerIdentity: String](./outeridentity.md)
   The identity string to be used in the EAP-Identity/Response packet during outer EAP authentication.
-- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.property.md)
+- [var ttlsInnerAuthenticationType: NEHotspotEAPSettings.TTLSInnerAuthenticationType](./ttlsinnerauthenticationtype-swift.property.md)
   The inner-layer authentication protocol used by a TTLS module.
-- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md)
-  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](nehotspoteapsettings/ttlsinnerauthenticationtype-swift.enum.md).
+- [NEHotspotEAPSettings.TTLSInnerAuthenticationType](./ttlsinnerauthenticationtype-swift.enum.md)
+  The TTLS Inner Authentication Types that may be specified by [`NEHotspotEAPSettings.TTLSInnerAuthenticationType`](./ttlsinnerauthenticationtype-swift.enum.md).
 
 
 ---

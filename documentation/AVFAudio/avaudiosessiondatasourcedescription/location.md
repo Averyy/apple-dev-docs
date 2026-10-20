@@ -1,7 +1,8 @@
 # location
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the data source on the device.
 
@@ -19,13 +20,18 @@ The location of the data source on the device.
 var location: AVAudioSession.Location? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAudioSessionLocation location;
+```
+
 #### Discussion
 
 This property returns `nil` if the data source’s location isn’t known.
 
 ## See Also
 
-- [AVAudioSession.Location](avaudiosession/location.md)
+### Retrieving the data source location
+- [AVAudioSession.Location](../avaudiosession/location.md)
   Constants that describe the location of the data source on device.
 
 

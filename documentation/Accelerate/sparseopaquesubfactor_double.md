@@ -1,23 +1,28 @@
 # SparseOpaqueSubfactor_Double
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseOpaqueSubfactor_Double
+```
+
+```c
+typedef struct { ... } SparseOpaqueSubfactor_Double;
 ```
 
 #### Overview
@@ -31,25 +36,26 @@ struct SparseOpaqueSubfactor_Double
 ## Topics
 
 ### Initializers
-- [init()](sparseopaquesubfactor_double/init.md)
-- [init(attributes: SparseAttributes_t, contents: SparseSubfactor_t, factor: SparseOpaqueFactorization_Double, workspaceRequiredStatic: Int, workspaceRequiredPerRHS: Int)](sparseopaquesubfactor_double/init(attributes:contents:factor:workspacerequiredstatic:workspacerequiredperrhs:).md)
+- [init()](./sparseopaquesubfactor_double/init%28%29.md)
+- [init(attributes: SparseAttributes_t, contents: SparseSubfactor_t, factor: SparseOpaqueFactorization_Double, workspaceRequiredStatic: Int, workspaceRequiredPerRHS: Int)](./sparseopaquesubfactor_double/init%28attributes,contents,factor,workspacerequiredstatic,workspacerequiredperrhs%29.md)
 ### Instance Properties
-- [var attributes: SparseAttributes_t](sparseopaquesubfactor_double/attributes.md)
+- [var attributes: SparseAttributes_t](./sparseopaquesubfactor_double/attributes.md)
   A type representing the attributes of a matrix.
-- [var contents: SparseSubfactor_t](sparseopaquesubfactor_double/contents.md)
+- [var contents: SparseSubfactor_t](./sparseopaquesubfactor_double/contents.md)
   Types of sub-factor object.
-- [var factor: SparseOpaqueFactorization_Double](sparseopaquesubfactor_double/factor.md)
+- [var factor: SparseOpaqueFactorization_Double](./sparseopaquesubfactor_double/factor.md)
   A semi-opaque type representing a matrix factorization in double.
-- [var workspaceRequiredPerRHS: Int](sparseopaquesubfactor_double/workspacerequiredperrhs.md)
-- [var workspaceRequiredStatic: Int](sparseopaquesubfactor_double/workspacerequiredstatic.md)
+- [var workspaceRequiredPerRHS: Int](./sparseopaquesubfactor_double/workspacerequiredperrhs.md)
+- [var workspaceRequiredStatic: Int](./sparseopaquesubfactor_double/workspacerequiredstatic.md)
 
 ## See Also
 
-- [struct SparseOpaqueSubfactor_Float](sparseopaquesubfactor_float.md)
+### Structures
+- [struct SparseOpaqueSubfactor_Float](./sparseopaquesubfactor_float.md)
   Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
-- [struct SparseOpaqueSubfactor_Complex_Double](sparseopaquesubfactor_complex_double.md)
+- [struct SparseOpaqueSubfactor_Complex_Double](./sparseopaquesubfactor_complex_double.md)
   Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
-- [struct SparseOpaqueSubfactor_Complex_Float](sparseopaquesubfactor_complex_float.md)
+- [struct SparseOpaqueSubfactor_Complex_Float](./sparseopaquesubfactor_complex_float.md)
   Represents a sub-factor of the factorization (for example,  `L` from `LDL^T`).
 
 

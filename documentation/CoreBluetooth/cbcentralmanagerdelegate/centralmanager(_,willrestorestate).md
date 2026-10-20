@@ -1,7 +1,8 @@
 # centralManager(_:willRestoreState:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the system is about to restore the central manager.
 
@@ -20,9 +21,13 @@ Tells the delegate the system is about to restore the central manager.
 optional func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any])
 ```
 
+```objc
+- (void) centralManager:(CBCentralManager *) central willRestoreState:(NSDictionary<NSString *,id> *) dict;
+```
+
 #### Discussion
 
-This method only applies to your app if it opts in to state restoration by providing [`CBCentralManagerOptionRestoreIdentifierKey`](cbcentralmanageroptionrestoreidentifierkey.md) when initializing a [`CBCentralManager`](cbcentralmanager.md). The system invokes this method when relaunching your app to service active or pending connections and scans that were in progress when your app stopped.
+This method only applies to your app if it opts in to state restoration by providing [`CBCentralManagerOptionRestoreIdentifierKey`](../cbcentralmanageroptionrestoreidentifierkey.md) when initializing a [`CBCentralManager`](../cbcentralmanager.md). The system invokes this method when relaunching your app to service active or pending connections and scans that were in progress when your app stopped.
 
 If the system calls this method but the parameters are missing (for example, if your app stopped before establishing peripherals and services), your app is responsible for restoring its previous state. Initialize any peripherals and services your app requires, and resume any activities from where they stopped.
 
@@ -47,11 +52,12 @@ func centralManager(_ central: CBCentralManager, willRestoreState dict: [String 
 ## Parameters
 
 - `central`: The central manager that provides this information.
-- `dict`: A dictionary that contains information about the central manager that the system preserved when your app stopped. For the available keys, see [`Central Manager State Restoration Options`](central-manager-state-restoration-options.md).
+- `dict`: A dictionary that contains information about the central manager that the system preserved when your app stopped. For the available keys, see [Central Manager State Restoration Options](../central-manager-state-restoration-options.md).
 
 ## See Also
 
-- [func centralManagerDidUpdateState(CBCentralManager)](cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:).md)
+### Monitoring the Central Manager’s State
+- [func centralManagerDidUpdateState(CBCentralManager)](./centralmanagerdidupdatestate%28_%29.md)
   Tells the delegate the central manager’s state updated.
 
 

@@ -1,7 +1,8 @@
 # MultiLabelClassificationMetrics.ThresholdSelectionStrategy.recall(_:minimumPrecision:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A confidence threshold strategy for a recall precision that has at least a minimum precision value.
 
@@ -28,11 +29,12 @@ Use this strategy to reduce the rate of false-negative predictions while constra
 
 ## See Also
 
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.balancedPrecisionAndRecall](multilabelclassificationmetrics/thresholdselectionstrategy/balancedprecisionandrecall.md)
+### Selection strategies
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.balancedPrecisionAndRecall](./balancedprecisionandrecall.md)
   A confidence threshold strategy that balances precision and recall equivalently.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.fixed(_:)](multilabelclassificationmetrics/thresholdselectionstrategy/fixed(_:).md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.fixed(_:)](./fixed%28_%29.md)
   A confidence threshold strategy that uses the specified thresholds for each label.
-- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.precision(_:minimumRecall:)](multilabelclassificationmetrics/thresholdselectionstrategy/precision(_:minimumrecall:).md)
+- [MultiLabelClassificationMetrics.ThresholdSelectionStrategy.precision(_:minimumRecall:)](./precision%28_,minimumrecall%29.md)
   A confidence threshold strategy for a specific precision that has at least a minimum recall value.
 
 

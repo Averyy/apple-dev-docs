@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Compositor Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an uninitialized frame.
 

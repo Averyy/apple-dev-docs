@@ -1,14 +1,15 @@
 # iOS & iPadOS 26.1 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [`Xcode 26.1 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_1-release-notes).
+The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.1. The SDK comes bundled with Xcode 26.1. For information on the compatibility requirements for Xcode 26.1, see [Xcode 26.1 Release Notes](../Xcode-Release-Notes/xcode-26_1-release-notes.md).
 
-##### Airdrop
+##### AirDrop
 
 ###### Resolved Issues
 
@@ -26,7 +27,7 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: The time returned by `GCPressedStateInput.lastPressedStateTimestamp` is not in the correct time domain.  (159124910)
 
-##### Healthkit
+##### HealthKit
 
 ###### New Features
 
@@ -54,7 +55,7 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Devices might sleep unexpectedly while using certain apps on the Lock Screen (Calculator, Timer, Notes).  (162150524)
 
-##### Nearbyinteraction
+##### NearbyInteraction
 
 ###### New Features
 
@@ -72,10 +73,12 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Siri Voice preview might default to legacy pt-BR voices, rather than new pt-PT options.  (155929981) **Workaround:** Select Voice 2 as your new Siri voice. Ask Siri a question, and you will hear the new pt-PT offering.
+- Siri Voice preview might default to legacy pt-BR voices, rather than new pt-PT options.  (155929981)
+
+  **Workaround:** Select Voice 2 as your new Siri voice. Ask Siri a question, and you will hear the new pt-PT offering.
 - The initial pt-PT Siri Voices have pronunciation and word stress issues. Your feedback is appreciated.  (160205691)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -84,37 +87,42 @@ The iOS & iPadOS 26.1 SDK provides support to develop apps for iPhone and iPad r
 ###### Resolved Issues
 
 - Fixed: Buttons that do not specify an explicit label display text instead of a symbol in toolbars.  (157671221)
-- Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases. You must recompile your app against the 26.1 SDK to receive this fix.  (158236264) (FB19613386)
+- Fixed: The `navigationLinkIndicatorVisibility` modifier crashes when run on iOS 17, iOS 18 and aligned releases.
+
+  You must recompile your app against the 26.1 SDK to receive this fix.  (158236264) (FB19613386)
 
 ###### Known Issues
 
 - On iOS and iPadOS, `@FocusState` doesn’t work in `safeAreaBar`.  (158720838)
 
-##### Uikit
+##### UIKit
 
 ###### Resolved Issues
 
 - UIDocument was incorrectly annotated to be main actor only. This has been corrected. As a result you might see new warnings or errors show up in your Swift code using UIDocument.  (149990945)
 
-##### Webkit
+##### WebKit
 
 ###### Known Issues
 
-- WebKit outputs a crash stacktrace to `stderr` when `decidePolicyFor navigationAction` returns `.cancel`.  (156957269) **Workaround:** This trace does not represent a bug in the application, and can be safely ignored.
+- WebKit outputs a crash stacktrace to `stderr` when `decidePolicyFor navigationAction` returns `.cancel`.  (156957269)
+
+  **Workaround:** This trace does not represent a bug in the application, and can be safely ignored.
 
 ## See Also
 
-- [iOS & iPadOS 26.6 Release Notes](ios-ipados-26_6-release-notes.md)
+### iOS & iPadOS 26
+- [iOS & iPadOS 26.6 Release Notes](./ios-ipados-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.5 Release Notes](ios-ipados-26_5-release-notes.md)
+- [iOS & iPadOS 26.5 Release Notes](./ios-ipados-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.4 Release Notes](ios-ipados-26_4-release-notes.md)
+- [iOS & iPadOS 26.4 Release Notes](./ios-ipados-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.3 Release Notes](ios-ipados-26_3-release-notes.md)
+- [iOS & iPadOS 26.3 Release Notes](./ios-ipados-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26.2 Release Notes](ios-ipados-26_2-release-notes.md)
+- [iOS & iPadOS 26.2 Release Notes](./ios-ipados-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 26 Release Notes](ios-ipados-26-release-notes.md)
+- [iOS & iPadOS 26 Release Notes](./ios-ipados-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

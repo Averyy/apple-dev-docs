@@ -1,7 +1,8 @@
 # ConstraintError
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error types that can be thrown from lightweight code requirement routines.
 
@@ -23,23 +24,23 @@ enum ConstraintError
 ## Topics
 
 ### Enumeration Cases
-- [ConstraintError.duplicateKey](constrainterror/duplicatekey.md)
+- [ConstraintError.duplicateKey](./constrainterror/duplicatekey.md)
   Two constraints of the same type were found in the same logical group.
-- [ConstraintError.malformedConstraint](constrainterror/malformedconstraint.md)
+- [ConstraintError.malformedConstraint](./constrainterror/malformedconstraint.md)
   An unexpected type was found when trying to encode or decode a constraint.
-- [ConstraintError.taskIsNoLongerValid](constrainterror/taskisnolongervalid.md)
+- [ConstraintError.taskIsNoLongerValid](./constrainterror/taskisnolongervalid.md)
   A SecTask operation failed because the task is no longer valid
-- [ConstraintError.unsupportedConstraintForRequirementType](constrainterror/unsupportedconstraintforrequirementtype.md)
+- [ConstraintError.unsupportedConstraintForRequirementType](./constrainterror/unsupportedconstraintforrequirementtype.md)
   Converting one code requirement type to another failed because the original requirement included a constraint that is not supported by the target requirement type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

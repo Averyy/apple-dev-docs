@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this variant set is valid.
 

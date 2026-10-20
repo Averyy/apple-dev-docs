@@ -1,7 +1,8 @@
 # ConstraintError.unsupportedConstraintForRequirementType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Converting one code requirement type to another failed because the original requirement included a constraint that is not supported by the target requirement type.
 

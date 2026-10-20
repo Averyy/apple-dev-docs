@@ -1,7 +1,8 @@
 # PasteboardCreate(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardCreate(_ inName: CFString?, _ outPasteboard: UnsafeMutablePointer<Pasteboard?>) -> OSStatus
+```
+
+```c
+OSStatus PasteboardCreate(CFStringRef inName, PasteboardRef  _Nullable *outPasteboard);
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecFunctionFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A function has failed.
 
@@ -18,6 +19,10 @@ A function has failed.
 
 ```swift
 var errSecFunctionFailed: OSStatus { get }
+```
+
+```c
+errSecFunctionFailed
 ```
 
 

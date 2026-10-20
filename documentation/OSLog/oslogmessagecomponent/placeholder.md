@@ -1,7 +1,8 @@
 # placeholder
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placeholder text for the message component.
 
@@ -20,13 +21,18 @@ The placeholder text for the message component.
 var placeholder: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * placeholder;
+```
+
 #### Discussion
 
 The `placeholder` property holds an empty value when it is the last component.
 
 ## See Also
 
-- [var formatSubstring: String](oslogmessagecomponent/formatsubstring.md)
+### Reading the Message Component
+- [var formatSubstring: String](./formatsubstring.md)
   The text immediately preceding a placeholder.
 
 

@@ -1,7 +1,8 @@
 # setUniformData(_:for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a uniform to raw bytes.
 

@@ -1,7 +1,8 @@
 # MPSGraphOptions.synchronizeResults
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The graph synchronizes results to the CPU using a blit encoder if on a discrete GPU at the end of execution.
 
@@ -17,6 +18,10 @@ The graph synchronizes results to the CPU using a blit encoder if on a discrete 
 
 ```swift
 case synchronizeResults
+```
+
+```c
+MPSGraphOptionsSynchronizeResults
 ```
 
 

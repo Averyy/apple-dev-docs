@@ -1,7 +1,8 @@
 # unique
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ensures the property’s value is unique across all models of the same type.
 

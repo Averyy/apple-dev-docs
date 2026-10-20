@@ -1,7 +1,8 @@
 # maxHeapSize
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var maxHeapSize: UInt32
+```
+
+```c
+UInt32 maxHeapSize;
 ```
 
 

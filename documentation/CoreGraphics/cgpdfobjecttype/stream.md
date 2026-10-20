@@ -1,18 +1,19 @@
 # CGPDFObjectType.stream
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The type for a PDF stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ The type for a PDF stream.
 case stream
 ```
 
+```c
+kCGPDFObjectTypeStream
+```
+
 ## See Also
 
-- [CGPDFObjectType.null](cgpdfobjecttype/null.md)
+### Constants
+- [CGPDFObjectType.null](./null.md)
   The type for a PDF null.
-- [CGPDFObjectType.boolean](cgpdfobjecttype/boolean.md)
+- [CGPDFObjectType.boolean](./boolean.md)
   The type for a PDF Boolean.
-- [CGPDFObjectType.integer](cgpdfobjecttype/integer.md)
+- [CGPDFObjectType.integer](./integer.md)
   The type for a PDF integer.
-- [CGPDFObjectType.real](cgpdfobjecttype/real.md)
+- [CGPDFObjectType.real](./real.md)
   The type for a PDF real.
-- [CGPDFObjectType.name](cgpdfobjecttype/name.md)
+- [CGPDFObjectType.name](./name.md)
   Type for a PDF name.
-- [CGPDFObjectType.string](cgpdfobjecttype/string.md)
+- [CGPDFObjectType.string](./string.md)
   The type for a PDF string.
-- [CGPDFObjectType.array](cgpdfobjecttype/array.md)
+- [CGPDFObjectType.array](./array.md)
   Type for a PDF array.
-- [CGPDFObjectType.dictionary](cgpdfobjecttype/dictionary.md)
+- [CGPDFObjectType.dictionary](./dictionary.md)
   The type for a PDF dictionary.
 
 

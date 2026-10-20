@@ -1,12 +1,13 @@
 # numberOfRows
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows in the rule editor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The number of rows in the rule editor.
 var numberOfRows: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfRows;
+```
+
 ## See Also
 
-- [func parentRow(forRow: Int) -> Int](nsruleeditor/parentrow(forrow:).md)
+### Obtaining Row Information
+- [func parentRow(forRow: Int) -> Int](./parentrow%28forrow%29.md)
   Returns the index of the parent of a given row.
-- [func row(forDisplayValue: Any) -> Int](nsruleeditor/row(fordisplayvalue:).md)
+- [func row(forDisplayValue: Any) -> Int](./row%28fordisplayvalue%29.md)
   Returns the index of the row containing a given value.
-- [func rowType(forRow: Int) -> NSRuleEditor.RowType](nsruleeditor/rowtype(forrow:).md)
+- [func rowType(forRow: Int) -> NSRuleEditor.RowType](./rowtype%28forrow%29.md)
   Returns the type of a given row.
-- [NSRuleEditor.RowType](nsruleeditor/rowtype.md)
+- [NSRuleEditor.RowType](./rowtype.md)
   Specifies a type for row types.
-- [func subrowIndexes(forRow: Int) -> IndexSet](nsruleeditor/subrowindexes(forrow:).md)
+- [func subrowIndexes(forRow: Int) -> IndexSet](./subrowindexes%28forrow%29.md)
   Returns the immediate subrows of a given row.
 
 

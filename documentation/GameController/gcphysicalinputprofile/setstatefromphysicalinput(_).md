@@ -1,7 +1,8 @@
 # setStateFromPhysicalInput(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the input values from a specified physical input profile to a snapshot of the profile.
 
@@ -19,6 +20,10 @@ Copies the input values from a specified physical input profile to a snapshot of
 func setStateFromPhysicalInput(_ physicalInput: GCPhysicalInputProfile)
 ```
 
+```objc
+- (void) setStateFromPhysicalInput:(GCPhysicalInputProfile *) physicalInput;
+```
+
 #### Discussion
 
 If the associated controller isn’t a snapshot, this method does nothing.
@@ -29,9 +34,11 @@ If the associated controller isn’t a snapshot, this method does nothing.
 
 ## See Also
 
-- [var isSnapshot: Bool](gccontroller/issnapshot.md)
+### Related Documentation
+- [var isSnapshot: Bool](../gccontroller/issnapshot.md)
   A Boolean value that indicates whether the controller is a snapshot of a controller.
-- [func capture() -> Self](gcphysicalinputprofile/capture.md)
+### Setting snapshot values
+- [func capture() -> Self](./capture%28%29.md)
   Returns a snapshot of the profile with its current element values.
 
 

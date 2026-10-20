@@ -1,12 +1,13 @@
 # sizeOfLabel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the size of the receiver’s label.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ Calculates the size of the receiver’s label.
 func sizeOfLabel(_ computeMin: Bool) -> NSSize
 ```
 
+```objc
+- (NSSize) sizeOfLabel:(BOOL) computeMin;
+```
+
 #### Discussion
 
-If `shouldTruncateLabel` is [`false`](https://developer.apple.com/documentation/swift/false), returns the size of the receiver’s full label. If `shouldTruncateLabel` is [`true`](https://developer.apple.com/documentation/swift/true), returns the truncated size. If your application does anything to change the size of tab labels, such as overriding the [`drawLabel(_:in:)`](nstabviewitem/drawlabel(_:in:).md) method to add an icon to each tab, you should override [`sizeOfLabel(_:)`](nstabviewitem/sizeoflabel(_:).md) too so the NSTabView knows the correct size for the tab label.
+If `shouldTruncateLabel` is [`false`](../../Swift/false.md), returns the size of the receiver’s full label. If `shouldTruncateLabel` is [`true`](../../Swift/true.md), returns the truncated size. If your application does anything to change the size of tab labels, such as overriding the [`drawLabel(_:in:)`](./drawlabel%28_,in%29.md) method to add an icon to each tab, you should override [`sizeOfLabel(_:)`](./sizeoflabel%28_%29.md) too so the NSTabView knows the correct size for the tab label.
 
 ## See Also
 
-- [var font: NSFont](nstabview/font.md)
+### Related Documentation
+- [var font: NSFont](../nstabview/font.md)
   The font used for the tab view’s label text.
-- [func drawLabel(Bool, in: NSRect)](nstabviewitem/drawlabel(_:in:).md)
+### Working with Labels
+- [func drawLabel(Bool, in: NSRect)](./drawlabel%28_,in%29.md)
   Draws the receiver’s label in `tabRect`, which is the area between the curved end caps.
-- [var label: String](nstabviewitem/label.md)
+- [var label: String](./label.md)
   Sets the label text for the receiver to `label`.
 
 

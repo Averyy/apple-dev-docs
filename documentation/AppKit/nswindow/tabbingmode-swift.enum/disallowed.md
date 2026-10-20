@@ -1,7 +1,8 @@
 # NSWindow.TabbingMode.disallowed
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A window that explicitly does not prefer to tab together with other windows.
 
@@ -14,11 +15,16 @@ A window that explicitly does not prefer to tab together with other windows.
 case disallowed
 ```
 
+```c
+NSWindowTabbingModeDisallowed
+```
+
 ## See Also
 
-- [NSWindow.TabbingMode.automatic](nswindow/tabbingmode-swift.enum/automatic.md)
+### Modes
+- [NSWindow.TabbingMode.automatic](./automatic.md)
   A window that automatically tabs together based on the user’s tabbing preference.
-- [NSWindow.TabbingMode.preferred](nswindow/tabbingmode-swift.enum/preferred.md)
+- [NSWindow.TabbingMode.preferred](./preferred.md)
   A window that explicitly prefers to tab together with other windows with the same tabbing identifier.
 
 

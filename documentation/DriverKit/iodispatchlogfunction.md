@@ -1,19 +1,20 @@
 # IODispatchLogFunction
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A function that logs content.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef int (*)(const char *, ...) IODispatchLogFunction;
 ```
 
@@ -23,7 +24,8 @@ typedef int (*)(const char *, ...) IODispatchLogFunction;
 
 ## See Also
 
-- [Log](iodispatchqueue/log.md)
+### Logging Dispatch Information
+- [Log](./iodispatchqueue/log.md)
   Log the current execution context with respect to any queues the current thread holds.
 
 

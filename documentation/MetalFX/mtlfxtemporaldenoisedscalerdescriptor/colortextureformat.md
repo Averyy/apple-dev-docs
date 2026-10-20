@@ -1,7 +1,8 @@
 # colorTextureFormat
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the input color texture for the scaler you create with this descriptor.
 
@@ -16,6 +17,10 @@ The pixel format of the input color texture for the scaler you create with this 
 
 ```swift
 var colorTextureFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLPixelFormat colorTextureFormat;
 ```
 
 

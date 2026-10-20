@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(String)](character/init(_:)-6o1aq.md)
+- [init(String)](./init%28_%29-6o1aq.md)
   Creates a character from a single-character string.
 
 

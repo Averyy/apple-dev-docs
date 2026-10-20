@@ -1,7 +1,8 @@
 # WKUserScriptInjectionTime
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for the times at which to inject script content into a webpage.
 
@@ -18,33 +19,38 @@ Constants for the times at which to inject script content into a webpage.
 enum WKUserScriptInjectionTime
 ```
 
+```c
+enum WKUserScriptInjectionTime : NSInteger;
+```
+
 ## Topics
 
 ### Script-Injection Times
-- [WKUserScriptInjectionTime.atDocumentStart](wkuserscriptinjectiontime/atdocumentstart.md)
+- [WKUserScriptInjectionTime.atDocumentStart](./wkuserscriptinjectiontime/atdocumentstart.md)
   A constant to inject the script after the creation of the webpage’s document element, but before loading any other content.
-- [WKUserScriptInjectionTime.atDocumentEnd](wkuserscriptinjectiontime/atdocumentend.md)
+- [WKUserScriptInjectionTime.atDocumentEnd](./wkuserscriptinjectiontime/atdocumentend.md)
   A constant to inject the script after the document finishes loading, but before loading any other subresources.
 ### Initializers
-- [init?(rawValue: Int)](wkuserscriptinjectiontime/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkuserscriptinjectiontime/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var source: String](wkuserscript/source.md)
+### Inspecting Script Information
+- [var source: String](./wkuserscript/source.md)
   The script’s source code.
-- [var injectionTime: WKUserScriptInjectionTime](wkuserscript/injectiontime.md)
+- [var injectionTime: WKUserScriptInjectionTime](./wkuserscript/injectiontime.md)
   The time at which to inject the script into the webpage.
-- [var isForMainFrameOnly: Bool](wkuserscript/isformainframeonly.md)
+- [var isForMainFrameOnly: Bool](./wkuserscript/isformainframeonly.md)
   A Boolean value that indicates whether to inject the script into the main frame or all frames.
 
 

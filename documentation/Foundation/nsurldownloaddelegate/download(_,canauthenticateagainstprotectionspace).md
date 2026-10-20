@@ -1,7 +1,8 @@
 # download(_:canAuthenticateAgainstProtectionSpace:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to determine whether the delegate is able to respond to a protection spaceâ€™s form of authentication.
 
@@ -14,9 +15,13 @@ Sent to determine whether the delegate is able to respond to a protection spaceâ
 optional func download(_ connection: NSURLDownload, canAuthenticateAgainstProtectionSpace protectionSpace: URLProtectionSpace) -> Bool
 ```
 
+```objc
+- (BOOL) download:(NSURLDownload *) connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *) protectionSpace;
+```
+
 #### Discussion
 
-This method is called before [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](https://developer.apple.com/documentation/swift/true), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`download(_:didReceive:)`](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md). Not implementing this method is the same as returning [`false`](https://developer.apple.com/documentation/swift/false), in which case default authentication handling is used.
+This method is called before [`download(_:didReceive:)`](./download%28_,didreceive%29-1pc0v.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](../../Swift/true.md), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`download(_:didReceive:)`](./download%28_,didreceive%29-1pc0v.md). Not implementing this method is the same as returning [`false`](../../Swift/false.md), in which case default authentication handling is used.
 
 ## Parameters
 
@@ -25,11 +30,12 @@ This method is called before [`download(_:didReceive:)`](nsurldownloaddelegate/d
 
 ## See Also
 
-- [func download(NSURLDownload, didCancel: URLAuthenticationChallenge)](nsurldownloaddelegate/download(_:didcancel:).md)
+### Download Authentication
+- [func download(NSURLDownload, didCancel: URLAuthenticationChallenge)](./download%28_,didcancel%29.md)
   Sent if an authentication challenge is canceled due to the protocol implementation encountering an error.
-- [func download(NSURLDownload, didReceive: URLAuthenticationChallenge)](nsurldownloaddelegate/download(_:didreceive:)-1pc0v.md)
+- [func download(NSURLDownload, didReceive: URLAuthenticationChallenge)](./download%28_,didreceive%29-1pc0v.md)
   Sent when the URL download must authenticate a challenge in order to download the request.
-- [func downloadShouldUseCredentialStorage(NSURLDownload) -> Bool](nsurldownloaddelegate/downloadshouldusecredentialstorage(_:).md)
+- [func downloadShouldUseCredentialStorage(NSURLDownload) -> Bool](./downloadshouldusecredentialstorage%28_%29.md)
   Sent to determine whether the URL loader should consult the credential storage to authenticate the download.
 
 

@@ -1,7 +1,8 @@
 # mapTemplate(_:didRotateWithCenter:rotation:velocity:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a person is rotating the map.
 
@@ -16,9 +17,13 @@ Tells the delegate that a person is rotating the map.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didRotateWithCenter center: CGPoint, rotation: CGFloat, velocity: CGFloat)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didRotateWithCenter:(CGPoint) center rotation:(CGFloat) rotation velocity:(CGFloat) velocity;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `center`: A `CGPoint` that indicates the center between two fingers performing the rotation gesture.
 - `rotation`: A `CGFloat` that indicates the rotation of the gesture in radians.
 - `velocity`: The velocity of the rotation gesture in radians per second.

@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regressor.
 
@@ -14,6 +15,12 @@ Creates a regressor.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
@@ -22,9 +29,10 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 ## See Also
 
-- [var targetColumn: String](mlregressor/targetcolumn.md)
+### Creating and training a regressor
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
-- [var featureColumns: [String]](mlregressor/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 
 

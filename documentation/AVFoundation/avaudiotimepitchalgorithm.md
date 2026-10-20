@@ -1,18 +1,19 @@
 # AVAudioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An algorithm used to set the audio pitch as the rate changes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ An algorithm used to set the audio pitch as the rate changes.
 struct AVAudioTimePitchAlgorithm
 ```
 
+```c
+typedef NSString * AVAudioTimePitchAlgorithm;
+```
+
 ## Topics
 
 ### Type properties
-- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/lowqualityzerolatency.md)
+- [static let lowQualityZeroLatency: AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm/lowqualityzerolatency.md)
   A low-quality and very low computationally intensive pitch algorithm.
-- [static let spectral: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/spectral.md)
+- [static let spectral: AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm/spectral.md)
   A highest-quality time pitch algorithm that’s suitable for music.
-- [static let timeDomain: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/timedomain.md)
+- [static let timeDomain: AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm/timedomain.md)
   A modest quality time pitch algorithm that’s suitable for voice.
-- [static let varispeed: AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm/varispeed.md)
+- [static let varispeed: AVAudioTimePitchAlgorithm](./avaudiotimepitchalgorithm/varispeed.md)
   A high-quality time pitch algorithm that doesn’t perform pitch correction.
 ### Initializers
-- [init(rawValue: String)](avaudiotimepitchalgorithm/init(rawvalue:).md)
+- [init(rawValue: String)](./avaudiotimepitchalgorithm/init%28rawvalue%29.md)
   Creates a new time pitch algorithm with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](avaudiomixinputparameters/audiotimepitchalgorithm.md)
+### Getting the time pitch algorithm setting
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm?](./avaudiomixinputparameters/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
 
 

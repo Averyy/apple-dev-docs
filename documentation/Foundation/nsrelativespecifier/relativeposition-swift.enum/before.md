@@ -1,7 +1,8 @@
 # NSRelativeSpecifier.RelativePosition.before
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a position before another object.
 
@@ -15,9 +16,14 @@ Specifies a position before another object.
 case before
 ```
 
+```c
+NSRelativeBefore
+```
+
 ## See Also
 
-- [NSRelativeSpecifier.RelativePosition.after](nsrelativespecifier/relativeposition-swift.enum/after.md)
+### Constants
+- [NSRelativeSpecifier.RelativePosition.after](./after.md)
   Specifies a position after another object.
 
 

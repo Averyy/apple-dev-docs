@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the group has any remaining tasks.
 
@@ -32,12 +33,13 @@ It’s guaranteed to be empty when returning from that body because a task group
 
 ## See Also
 
-- [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
-- [func nextResult() async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult.md)
+### Accessing Individual Results
+- [func next() async throws -> ChildTaskResult?](./next%28%29.md)
+- [func nextResult() async -> Result<ChildTaskResult, Failure>?](./nextresult%28%29.md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
-- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](./next%28isolation%29.md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
-- [func waitForAll() async throws](throwingtaskgroup/waitforall.md)
+- [func waitForAll() async throws](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

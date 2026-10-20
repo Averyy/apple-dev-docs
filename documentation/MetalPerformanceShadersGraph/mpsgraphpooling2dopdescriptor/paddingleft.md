@@ -1,7 +1,8 @@
 # paddingLeft
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the explicit padding value for the width dimension to add before the data.
 
@@ -17,6 +18,10 @@ Defines the explicit padding value for the width dimension to add before the dat
 
 ```swift
 var paddingLeft: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingLeft;
 ```
 
 #### Discussion

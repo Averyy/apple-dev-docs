@@ -1,7 +1,8 @@
 # isJunk
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the message thread is “junk”, such as spam.
 
@@ -14,6 +15,10 @@ A Boolean value that indicates whether the message thread is “junk”, such as
 
 ```swift
 var isJunk: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) BOOL isJunk;
 ```
 
 

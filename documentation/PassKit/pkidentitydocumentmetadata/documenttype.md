@@ -1,7 +1,8 @@
 # documentType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifies the type of the identity document.
 
@@ -9,13 +10,17 @@ Identifies the type of the identity document.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - visionOS 26.0+
 
 ## Declaration
 
 ```swift
 var documentType: PKAddIdentityDocumentType { get }
+```
+
+```objc
+@property (nonatomic, readonly) PKAddIdentityDocumentType documentType;
 ```
 
 

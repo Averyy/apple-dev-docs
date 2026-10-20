@@ -1,7 +1,8 @@
 # deltaAltitude
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The change in altitude above mean sea level associated with the location, measured in meters.
 
@@ -19,9 +20,14 @@ The change in altitude above mean sea level associated with the location, measur
 var deltaAltitude: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance deltaAltitude;
+```
+
 ## See Also
 
-- [var deltaDistance: CLLocationDistance](cmodometerdata/deltadistance.md)
+### Measuring distances
+- [var deltaDistance: CLLocationDistance](./deltadistance.md)
   The change in distance that the user travels since the last location, measured in meters.
 
 

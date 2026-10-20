@@ -1,7 +1,8 @@
 # attestationNonce
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attestation nonce from the AttestationRequest command.
 
@@ -18,6 +19,10 @@ The attestation nonce from the AttestationRequest command.
 
 ```swift
 var attestationNonce: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSData * attestationNonce;
 ```
 
 

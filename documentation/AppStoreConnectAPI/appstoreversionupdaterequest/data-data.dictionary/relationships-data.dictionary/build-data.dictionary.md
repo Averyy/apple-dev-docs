@@ -1,7 +1,8 @@
 # AppStoreVersionUpdateRequest.Data.Relationships.Build
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionUpdateRequest.Data.Relationships.Build
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionUpdateRequest.Data.Relationships.Build.Data](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionUpdateRequest.Data.Relationships.Build.Data](./build-data.dictionary/data-data.dictionary.md)
   The type and ID of a resource that you’re relating with the resource you’re updating.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppStoreVersionUpdateRequest.Data.Relationships.Build
 
 ## See Also
 
-- [object AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience](appstoreversionupdaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
+### Objects
+- [object AppStoreVersionUpdateRequest.Data.Relationships.AppClipDefaultExperience](./appclipdefaultexperience-data.dictionary.md)
   The relationship to the Default App Clip Default Experiences resource you set with the request that updates the App Store Versions resource.
 
 

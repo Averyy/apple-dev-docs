@@ -1,7 +1,8 @@
 # eciesEncryptionStandardX963SHA224AESGCM
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let eciesEncryptionStandardX963SHA224AESGCM: SecKeyAlgorithm
+```
+
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECIESEncryptionStandardX963SHA224AESGCM;
 ```
 
 

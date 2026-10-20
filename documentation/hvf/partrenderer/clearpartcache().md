@@ -1,7 +1,8 @@
 # clearPartCache()
 
 **Framework**: hvf  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clear the cache of loaded parts. This only happens when this function is called.
 

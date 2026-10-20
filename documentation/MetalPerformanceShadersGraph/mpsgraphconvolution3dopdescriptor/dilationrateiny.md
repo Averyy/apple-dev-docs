@@ -1,7 +1,8 @@
 # dilationRateInY
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which weights tensor expands in the `y`-direction.
 
@@ -17,6 +18,10 @@ The amount by which weights tensor expands in the `y`-direction.
 
 ```swift
 var dilationRateInY: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger dilationRateInY;
 ```
 
 #### Discussion

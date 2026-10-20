@@ -1,19 +1,24 @@
 # DDDevice.WiFiAwareServiceRole.subscriber
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case subscriber
+```
+
+```c
+DDDeviceWiFiAwareServiceRoleSubscriber
 ```
 
 

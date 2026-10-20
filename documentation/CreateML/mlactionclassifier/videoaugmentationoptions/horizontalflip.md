@@ -1,7 +1,8 @@
 # horizontalFlip
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A video augmentation that creates a horizontally flipped copy of a sample video.
 

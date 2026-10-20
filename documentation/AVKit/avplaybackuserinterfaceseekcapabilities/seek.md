@@ -1,7 +1,8 @@
 # seek
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The source supports seeking to specific time positions for precise navigation. Enables jumping directly to any arbitrary point within the seekable time ranges.
 
@@ -14,6 +15,10 @@ The source supports seeking to specific time positions for precise navigation. E
 
 ```swift
 static var seek: AVPlaybackUserInterfaceSeekCapabilities { get }
+```
+
+```c
+AVPlaybackUserInterfaceSeekCapabilitiesSeek
 ```
 
 

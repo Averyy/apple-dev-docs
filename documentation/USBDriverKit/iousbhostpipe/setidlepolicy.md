@@ -1,7 +1,8 @@
 # SetIdlePolicy
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the pipe’s desired idle timeout.
 
@@ -10,13 +11,13 @@ Sets the pipe’s desired idle timeout.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetIdlePolicy(uint32_t idleTimeoutMs);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,7 +29,8 @@ When a bulk or interrupt pipe is actively servicing an I/O request, it’s consi
 
 ## See Also
 
-- [GetIdlePolicy](iousbhostpipe/getidlepolicy.md)
+### Managing the Pipe’s Idle Policy
+- [GetIdlePolicy](./getidlepolicy.md)
   Retrieves the pipe’s current idle timeout.
 
 

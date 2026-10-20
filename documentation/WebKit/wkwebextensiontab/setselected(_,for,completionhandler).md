@@ -1,7 +1,8 @@
 # setSelected(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set the selected state of the tab.
 
@@ -15,7 +16,15 @@ Called to set the selected state of the tab.
 ## Declaration
 
 ```swift
+optional func setSelected(_ selected: Bool, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setSelected(_ selected: Bool, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setSelected:(BOOL) selected forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -32,7 +41,8 @@ The method should update the tab’s selection state without changing the active
 
 ## See Also
 
-- [func isSelected(for: WKWebExtensionContext) -> Bool](wkwebextensiontab/isselected(for:).md)
+### Related Documentation
+- [func isSelected(for: WKWebExtensionContext) -> Bool](./isselected%28for%29.md)
   Called when the selected state of the tab is needed.
 
 

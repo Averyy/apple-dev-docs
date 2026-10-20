@@ -1,7 +1,8 @@
 # sortOrder
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How overlapping particles are sorted before rendering. Defaults to `increasingDepth`.
 

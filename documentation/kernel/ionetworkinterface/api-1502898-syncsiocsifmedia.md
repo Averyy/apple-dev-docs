@@ -1,14 +1,15 @@
 # syncSIOCSIFMEDIA
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 SInt32 syncSIOCSIFMEDIA(IONetworkController *ctr, struct ifreq *ifr);
 ```
 

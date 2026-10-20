@@ -1,7 +1,8 @@
 # GCButtonElementName
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The names of the button elements.
 
@@ -11,7 +12,7 @@ The names of the button elements.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,104 +23,105 @@ struct GCButtonElementName
 ## Topics
 
 ### Getting extended gamepad shoulder button names
-- [static let leftShoulder: GCButtonElementName](gcbuttonelementname-swift.struct/leftshoulder.md)
+- [static let leftShoulder: GCButtonElementName](./gcbuttonelementname-swift.struct/leftshoulder.md)
   The name of the left shoulder button.
-- [static let rightShoulder: GCButtonElementName](gcbuttonelementname-swift.struct/rightshoulder.md)
+- [static let rightShoulder: GCButtonElementName](./gcbuttonelementname-swift.struct/rightshoulder.md)
   The name of the right shoulder button.
-- [static let leftBumper: GCButtonElementName](gcbuttonelementname-swift.struct/leftbumper.md)
+- [static let leftBumper: GCButtonElementName](./gcbuttonelementname-swift.struct/leftbumper.md)
   The name of the additional left shoulder button.
-- [static let rightBumper: GCButtonElementName](gcbuttonelementname-swift.struct/rightbumper.md)
+- [static let rightBumper: GCButtonElementName](./gcbuttonelementname-swift.struct/rightbumper.md)
   The name of the additional right shoulder button.
 ### Getting extended gamepad trigger names
-- [static let leftTrigger: GCButtonElementName](gcbuttonelementname-swift.struct/lefttrigger.md)
+- [static let leftTrigger: GCButtonElementName](./gcbuttonelementname-swift.struct/lefttrigger.md)
   The name of the left trigger.
-- [static let rightTrigger: GCButtonElementName](gcbuttonelementname-swift.struct/righttrigger.md)
+- [static let rightTrigger: GCButtonElementName](./gcbuttonelementname-swift.struct/righttrigger.md)
   The name of the right trigger.
 ### Getting extended gamepad face button names
-- [static let menu: GCButtonElementName](gcbuttonelementname-swift.struct/menu.md)
+- [static let menu: GCButtonElementName](./gcbuttonelementname-swift.struct/menu.md)
   The name of the primary menu button element.
-- [static let options: GCButtonElementName](gcbuttonelementname-swift.struct/options.md)
+- [static let options: GCButtonElementName](./gcbuttonelementname-swift.struct/options.md)
   The name of the main options button element.
-- [static let home: GCButtonElementName](gcbuttonelementname-swift.struct/home.md)
+- [static let home: GCButtonElementName](./gcbuttonelementname-swift.struct/home.md)
   The name of the main menu button element.
-- [static let a: GCButtonElementName](gcbuttonelementname-swift.struct/a.md)
+- [static let a: GCButtonElementName](./gcbuttonelementname-swift.struct/a.md)
   The name for the controller’s A button.
-- [static let b: GCButtonElementName](gcbuttonelementname-swift.struct/b.md)
+- [static let b: GCButtonElementName](./gcbuttonelementname-swift.struct/b.md)
   The name for the controller’s B button.
-- [static let x: GCButtonElementName](gcbuttonelementname-swift.struct/x.md)
+- [static let x: GCButtonElementName](./gcbuttonelementname-swift.struct/x.md)
   The name for the controller’s X button.
-- [static let y: GCButtonElementName](gcbuttonelementname-swift.struct/y.md)
+- [static let y: GCButtonElementName](./gcbuttonelementname-swift.struct/y.md)
   The name for the controller’s Y button.
 ### Getting extended gamepad thumbstick names
-- [static let leftThumbstickButton: GCButtonElementName](gcbuttonelementname-swift.struct/leftthumbstickbutton.md)
+- [static let leftThumbstickButton: GCButtonElementName](./gcbuttonelementname-swift.struct/leftthumbstickbutton.md)
   The name of the left thumbstick element.
-- [static let rightThumbstickButton: GCButtonElementName](gcbuttonelementname-swift.struct/rightthumbstickbutton.md)
+- [static let rightThumbstickButton: GCButtonElementName](./gcbuttonelementname-swift.struct/rightthumbstickbutton.md)
   The name of the right thumbstick element.
 ### Getting extended gamepad back button names
-- [static func backLeftButton(position: Int) -> GCButtonElementName](gcbuttonelementname-swift.struct/backleftbutton(position:).md)
+- [static func backLeftButton(position: Int) -> GCButtonElementName](./gcbuttonelementname-swift.struct/backleftbutton%28position%29.md)
   Returns the name of the back left button at the specified location.
-- [static func backRightButton(position: Int) -> GCButtonElementName](gcbuttonelementname-swift.struct/backrightbutton(position:).md)
+- [static func backRightButton(position: Int) -> GCButtonElementName](./gcbuttonelementname-swift.struct/backrightbutton%28position%29.md)
   Returns the name of the back right button at the specified location.
 ### Getting steering wheel controller names
-- [static let pedalClutch: GCButtonElementName](gcbuttonelementname-swift.struct/pedalclutch.md)
+- [static let pedalClutch: GCButtonElementName](./gcbuttonelementname-swift.struct/pedalclutch.md)
   The name of the controller’s clutch.
-- [static let pedalBrake: GCButtonElementName](gcbuttonelementname-swift.struct/pedalbrake.md)
+- [static let pedalBrake: GCButtonElementName](./gcbuttonelementname-swift.struct/pedalbrake.md)
   The name of the controller’s brake pedal.
-- [static let pedalAccelerator: GCButtonElementName](gcbuttonelementname-swift.struct/pedalaccelerator.md)
+- [static let pedalAccelerator: GCButtonElementName](./gcbuttonelementname-swift.struct/pedalaccelerator.md)
   The name of the controller’s accelerator pedal.
-- [static let leftPaddle: GCButtonElementName](gcbuttonelementname-swift.struct/leftpaddle.md)
+- [static let leftPaddle: GCButtonElementName](./gcbuttonelementname-swift.struct/leftpaddle.md)
   The name of the controller’s left paddle.
-- [static let rightPaddle: GCButtonElementName](gcbuttonelementname-swift.struct/rightpaddle.md)
+- [static let rightPaddle: GCButtonElementName](./gcbuttonelementname-swift.struct/rightpaddle.md)
   The name of the controller’s right paddle.
 ### Getting Xbox button names
-- [static let share: GCButtonElementName](gcbuttonelementname-swift.struct/share.md)
+- [static let share: GCButtonElementName](./gcbuttonelementname-swift.struct/share.md)
   The name of the Xbox share button.
 ### Getting arcade stick button names
-- [static func arcadeButton(row: Int, column: Int) -> GCButtonElementName](gcbuttonelementname-swift.struct/arcadebutton(row:column:).md)
+- [static func arcadeButton(row: Int, column: Int) -> GCButtonElementName](./gcbuttonelementname-swift.struct/arcadebutton%28row,column%29.md)
   Returns the name of the arcade stick button at the specified location.
 ### Type Properties
-- [static let grip: GCButtonElementName](gcbuttonelementname-swift.struct/grip.md)
-- [static let leftSideButton: GCButtonElementName](gcbuttonelementname-swift.struct/leftsidebutton.md)
-- [static let rightSideButton: GCButtonElementName](gcbuttonelementname-swift.struct/rightsidebutton.md)
-- [static let stylusPrimaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylusprimarybutton.md)
-- [static let stylusSecondaryButton: GCButtonElementName](gcbuttonelementname-swift.struct/stylussecondarybutton.md)
-- [static let stylusTip: GCButtonElementName](gcbuttonelementname-swift.struct/stylustip.md)
-- [static let thumbstickButton: GCButtonElementName](gcbuttonelementname-swift.struct/thumbstickbutton.md)
-- [static let trigger: GCButtonElementName](gcbuttonelementname-swift.struct/trigger.md)
+- [static let grip: GCButtonElementName](./gcbuttonelementname-swift.struct/grip.md)
+- [static let leftSideButton: GCButtonElementName](./gcbuttonelementname-swift.struct/leftsidebutton.md)
+- [static let rightSideButton: GCButtonElementName](./gcbuttonelementname-swift.struct/rightsidebutton.md)
+- [static let stylusPrimaryButton: GCButtonElementName](./gcbuttonelementname-swift.struct/stylusprimarybutton.md)
+- [static let stylusSecondaryButton: GCButtonElementName](./gcbuttonelementname-swift.struct/stylussecondarybutton.md)
+- [static let stylusTip: GCButtonElementName](./gcbuttonelementname-swift.struct/stylustip.md)
+- [static let thumbstickButton: GCButtonElementName](./gcbuttonelementname-swift.struct/thumbstickbutton.md)
+- [static let trigger: GCButtonElementName](./gcbuttonelementname-swift.struct/trigger.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [GCPhysicalInputElementTypedName](./gcphysicalinputelementtypedname.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct GCPhysicalInputElementName](gcphysicalinputelementname-swift.struct.md)
+### Element names
+- [struct GCPhysicalInputElementName](./gcphysicalinputelementname-swift.struct.md)
   The name of a physical input element.
-- [protocol GCPhysicalInputElementTypedName](gcphysicalinputelementtypedname.md)
+- [protocol GCPhysicalInputElementTypedName](./gcphysicalinputelementtypedname.md)
   A type-safe name for accessing elements of a physical input element collection.
-- [struct GCAxisElementName](gcaxiselementname-swift.struct.md)
+- [struct GCAxisElementName](./gcaxiselementname-swift.struct.md)
   The names for the elements that provide values along an axis.
-- [struct GCSwitchElementName](gcswitchelementname-swift.struct.md)
+- [struct GCSwitchElementName](./gcswitchelementname-swift.struct.md)
   The name for an element that represents a switch.
-- [struct GCDirectionPadElementName](gcdirectionpadelementname-swift.struct.md)
+- [struct GCDirectionPadElementName](./gcdirectionpadelementname-swift.struct.md)
   The names for directional pad elements.
-- [Extended gamepad input names](extended-gamepad-input-names.md)
+- [Extended gamepad input names](./extended-gamepad-input-names.md)
   Constants for names of extended gamepad elements.
-- [DualShock controller input names](dualshock-controller-input-names.md)
+- [DualShock controller input names](./dualshock-controller-input-names.md)
   Constants for names of DualShock 4 elements.
-- [Xbox controller input names](xbox-controller-input-names.md)
+- [Xbox controller input names](./xbox-controller-input-names.md)
   Constants for names of Xbox elements.
-- [Micro gamepad input names](micro-gamepad-input-names.md)
+- [Micro gamepad input names](./micro-gamepad-input-names.md)
   Constants for names of micro gamepad elements.
-- [Directional Gamepad Input Names](directional-gamepad-input-names.md)
+- [Directional Gamepad Input Names](./directional-gamepad-input-names.md)
   Constants for names of directional pad elements.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the gesture recognizer.
 
@@ -14,11 +15,15 @@ The delegate of the gesture recognizer.
 weak var delegate: (any NSGestureRecognizerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSGestureRecognizerDelegate> delegate;
+```
+
 #### Discussion
 
 Use the delegate for fine-grained control over the recognition of a gesture. For example, you can use the delegate to determine whether gesture recognition should begin or whether it should start only after other gesture recognizers fail.
 
-The delegate must implement the [`NSGestureRecognizerDelegate`](nsgesturerecognizerdelegate.md) protocol.
+The delegate must implement the [`NSGestureRecognizerDelegate`](../nsgesturerecognizerdelegate.md) protocol.
 
 
 ---

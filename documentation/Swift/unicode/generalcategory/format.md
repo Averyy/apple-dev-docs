@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.format
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A format control character.
 
@@ -22,7 +23,7 @@ case format
 
 #### Discussion
 
-This value corresponds to the category `Format` (abbreviated `Cf`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Format` (abbreviated `Cf`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

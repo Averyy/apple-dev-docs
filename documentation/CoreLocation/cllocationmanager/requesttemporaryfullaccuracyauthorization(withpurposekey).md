@@ -1,7 +1,8 @@
 # requestTemporaryFullAccuracyAuthorization(withPurposeKey:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to temporarily use location services with full accuracy.
 
@@ -20,29 +21,34 @@ Requests permission to temporarily use location services with full accuracy.
 func requestTemporaryFullAccuracyAuthorization(withPurposeKey purposeKey: String)
 ```
 
+```objc
+- (void) requestTemporaryFullAccuracyAuthorizationWithPurposeKey:(NSString *) purposeKey;
+```
+
 #### Discussion
 
-This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthorization(withPurposeKey:completion:)`](cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:completion:).md) method, passing `nil` as the completion closure. Use this method if your app’s logic to respond to changes in location data accuracy is already handled by the [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) delegate method, and your app doesn’t have any work to do in the closure.
+This method behaves the same as calling the [`requestTemporaryFullAccuracyAuthorization(withPurposeKey:completion:)`](./requesttemporaryfullaccuracyauthorization%28withpurposekey,completion%29.md) method, passing `nil` as the completion closure. Use this method if your app’s logic to respond to changes in location data accuracy is already handled by the [`locationManagerDidChangeAuthorization(_:)`](../cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) delegate method, and your app doesn’t have any work to do in the closure.
 
 ## Parameters
 
-- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationtemporaryusagedescriptiondictionary) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
+- `purposeKey`: A key in the [`NSLocationTemporaryUsageDescriptionDictionary`](../../BundleResources/information-property-list/nslocationtemporaryusagedescriptiondictionary.md) dictionary of the app’s `Info.plist` file.  The value for this key is an app-provided string that describes the reason for accessing location data with full accuracy.  To localize a usage description, add an entry to your `InfoPlist.strings` file with the same key you provide for this parameter.
 
 ## See Also
 
-- [func requestWhenInUseAuthorization()](cllocationmanager/requestwheninuseauthorization.md)
+### Requesting authorization for location services
+- [func requestWhenInUseAuthorization()](./requestwheninuseauthorization%28%29.md)
   Requests the user’s permission to use location services while the app is in use.
-- [func requestAlwaysAuthorization()](cllocationmanager/requestalwaysauthorization.md)
+- [func requestAlwaysAuthorization()](./requestalwaysauthorization%28%29.md)
   Requests the user’s permission to use location services regardless of whether the app is in use.
-- [func requestTemporaryFullAccuracyAuthorization(withPurposeKey: String, completion: (((any Error)?) -> Void)?)](cllocationmanager/requesttemporaryfullaccuracyauthorization(withpurposekey:completion:).md)
+- [func requestTemporaryFullAccuracyAuthorization(withPurposeKey: String, completion: (((any Error)?) -> Void)?)](./requesttemporaryfullaccuracyauthorization%28withpurposekey,completion%29.md)
   Requests permission to temporarily use location services with full accuracy and reports the results to the provided completion handler.
-- [var authorizationStatus: CLAuthorizationStatus](cllocationmanager/authorizationstatus-swift.property.md)
+- [var authorizationStatus: CLAuthorizationStatus](./authorizationstatus-swift.property.md)
   The current authorization status for the app.
-- [enum CLAuthorizationStatus](clauthorizationstatus.md)
+- [enum CLAuthorizationStatus](../clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
+- [NSLocationDefaultAccuracyReduced](../../BundleResources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../../BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
 
 

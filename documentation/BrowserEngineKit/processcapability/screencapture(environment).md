@@ -1,7 +1,8 @@
 # ProcessCapability.screenCapture(environment:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The helper extension process may access AV hardware required for media capture and playback.
 

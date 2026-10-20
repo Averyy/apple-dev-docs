@@ -1,7 +1,8 @@
 # TKSmartCardPINFormat.Encoding
 
 **Framework**: CryptoTokenKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible PIN encoding types.
 
@@ -20,30 +21,35 @@ Possible PIN encoding types.
 enum Encoding
 ```
 
+```c
+enum TKSmartCardPINEncoding : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [TKSmartCardPINFormat.Encoding.binary](tksmartcardpinformat/encoding-swift.enum/binary.md)
-- [TKSmartCardPINFormat.Encoding.ascii](tksmartcardpinformat/encoding-swift.enum/ascii.md)
-- [TKSmartCardPINFormat.Encoding.bcd](tksmartcardpinformat/encoding-swift.enum/bcd.md)
+- [TKSmartCardPINFormat.Encoding.binary](./encoding-swift.enum/binary.md)
+- [TKSmartCardPINFormat.Encoding.ascii](./encoding-swift.enum/ascii.md)
+- [TKSmartCardPINFormat.Encoding.bcd](./encoding-swift.enum/bcd.md)
 ### Initializers
-- [init?(rawValue: Int)](tksmartcardpinformat/encoding-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./encoding-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TKSmartCardPINFormat.Charset](tksmartcardpinformat/charset-swift.enum.md)
+### PIN Characteristics
+- [TKSmartCardPINFormat.Charset](./charset-swift.enum.md)
   Possible PIN character sets.
-- [TKSmartCardPINFormat.Justification](tksmartcardpinformat/justification.md)
+- [TKSmartCardPINFormat.Justification](./justification.md)
   Possible PIN justification types
 
 

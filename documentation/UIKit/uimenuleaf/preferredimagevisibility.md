@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The preferred visibility of the element’s image.
@@ -17,6 +18,10 @@ The preferred visibility of the element’s image.
 
 ```swift
 var preferredImageVisibility: UIMenuElement.ImageVisibility { get set }
+```
+
+```objc
+@property (nonatomic) UIMenuElementImageVisibility preferredImageVisibility;
 ```
 
 

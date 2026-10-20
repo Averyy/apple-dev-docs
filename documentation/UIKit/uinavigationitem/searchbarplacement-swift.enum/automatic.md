@@ -1,7 +1,8 @@
 # UINavigationItem.SearchBarPlacement.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that places the search bar according to the current layout.
 
@@ -17,11 +18,16 @@ A constant that places the search bar according to the current layout.
 case automatic
 ```
 
+```c
+UINavigationItemSearchBarPlacementAutomatic
+```
+
 ## See Also
 
-- [UINavigationItem.SearchBarPlacement.stacked](uinavigationitem/searchbarplacement-swift.enum/stacked.md)
+### Constants
+- [UINavigationItem.SearchBarPlacement.stacked](./stacked.md)
   A constant that stacks the search bar vertically below the other content in the navigation bar.
-- [static var inline: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum/inline.md)
+- [static var inline: UINavigationItem.SearchBarPlacement](./inline.md)
   A constant that places the search bar on the trailing edge of the navigation bar, inline with the other content.
 
 

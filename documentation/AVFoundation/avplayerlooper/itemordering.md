@@ -1,7 +1,8 @@
 # AVPlayerLooper.ItemOrdering
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the ordering of items in a player looper.
 
@@ -19,25 +20,29 @@ Constants that define the ordering of items in a player looper.
 enum ItemOrdering
 ```
 
+```c
+enum AVPlayerLooperItemOrdering : NSInteger;
+```
+
 ## Topics
 
 ### Ordering
-- [AVPlayerLooper.ItemOrdering.loopingItemsPrecedeExistingItems](avplayerlooper/itemordering/loopingitemsprecedeexistingitems.md)
+- [AVPlayerLooper.ItemOrdering.loopingItemsPrecedeExistingItems](./itemordering/loopingitemsprecedeexistingitems.md)
   Indicates to insert replica items before any existing items in the specified player’s queue.
-- [AVPlayerLooper.ItemOrdering.loopingItemsFollowExistingItems](avplayerlooper/itemordering/loopingitemsfollowexistingitems.md)
+- [AVPlayerLooper.ItemOrdering.loopingItemsFollowExistingItems](./itemordering/loopingitemsfollowexistingitems.md)
   Indicates to insert replica items after any existing items in the specified player’s queue.
 ### Initializers
-- [init?(rawValue: Int)](avplayerlooper/itemordering/init(rawvalue:).md)
+- [init?(rawValue: Int)](./itemordering/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

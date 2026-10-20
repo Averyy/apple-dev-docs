@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKOrientationDemand.Mode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the acting modes of an orientation demand.
 
@@ -22,11 +23,11 @@ enum Mode
 ## Topics
 
 ### Enumeration Cases
-- [IKRig.Constraint.IKOrientationDemand.Mode.absoluteLookAt(targetAxis:)](ikrig/constraint/ikorientationdemand/mode-swift.enum/absolutelookat(targetaxis:).md)
+- [IKRig.Constraint.IKOrientationDemand.Mode.absoluteLookAt(targetAxis:)](./mode-swift.enum/absolutelookat%28targetaxis%29.md)
   A mode which computes the rotation target as absolute look-at.
-- [IKRig.Constraint.IKOrientationDemand.Mode.additiveLookAt(targetAxis:)](ikrig/constraint/ikorientationdemand/mode-swift.enum/additivelookat(targetaxis:).md)
+- [IKRig.Constraint.IKOrientationDemand.Mode.additiveLookAt(targetAxis:)](./mode-swift.enum/additivelookat%28targetaxis%29.md)
   A mode which computes the rotation target as additive look-at.
-- [IKRig.Constraint.IKOrientationDemand.Mode.orientation](ikrig/constraint/ikorientationdemand/mode-swift.enum/orientation.md)
+- [IKRig.Constraint.IKOrientationDemand.Mode.orientation](./mode-swift.enum/orientation.md)
   A mode which uses the set rotation target.
 
 

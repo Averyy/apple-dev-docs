@@ -1,7 +1,8 @@
 # Value
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit field that represents a value related to a feature.
 
@@ -11,11 +12,12 @@ The fourth field is the value, which is also a 32-bit field. The value may be a 
 
 ## See Also
 
-- [Reserved](movie_profile_atom/reserved.md)
+### Data fields
+- [Reserved](./reserved.md)
   A 32-bit field.
-- [Part-ID](movie_profile_atom/part-id.md)
+- [Part-ID](./part-id.md)
   A 32-bit field that defines the feature as being either brand-specific or universal.
-- [Feature code](movie_profile_atom/feature_code.md)
+- [Feature code](./feature_code.md)
   A 32-bit unsigned integer that represents a code specifying a feature.
 
 

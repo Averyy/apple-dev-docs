@@ -1,6 +1,7 @@
 # Adopting type-aware memory allocation
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Reduce the opportunities to treat pointers as data in your code.
 
@@ -12,18 +13,18 @@ Because the system records that the memory zone containing the pointer is associ
 
 When you enable the type-aware memory allocator, the compiler automatically rewrites calls to `malloc`, `calloc`, `realloc`, `posix_memalign`, related functions, and the C++ `new` operator, to use type-aware equivalents.
 
-##### Enable the Type Aware Memory Allocator for Your Target
+##### Enable the type-aware memory allocator for your target
 
-Xcode automatically configures your target to use the type-aware memory allocator, in addition to other hardening settings, when you add the Enhanced Security capability. For more information, see [`Enabling enhanced security for your app`](enabling-enhanced-security-for-your-app.md).
+Xcode automatically configures your target to use the type-aware memory allocator, in addition to other hardening settings, when you add the Enhanced Security capability. For more information, see [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md).
 
 To enable the type-aware memory allocator without adding the Enhanced Security capability, in your target:
 
 - Set the `CLANG_ENABLE_C_TYPED_ALLOCATOR_SUPPORT` build setting with the value `YES`
 - Set the `CLANG_ENABLE_CPLUSPLUS_TYPED_ALLOCATOR_SUPPORT` build setting with the value to `YES`
 
-Consider adding the [`com.apple.security.hardened-process.hardened-heap`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.hardened-process.hardened-heap) entitlement with the value `YES` to apply additional runtime allocator restrictions.
+Consider adding the [`com.apple.security.hardened-process.hardened-heap`](../BundleResources/entitlements/com.apple.security.hardened-process.hardened-heap.md) entitlement with the value `YES` to apply additional runtime allocator restrictions.
 
-##### Make Type Aware Memory Allocations
+##### Make type-aware memory allocations
 
 You need to call the type-aware version of memory-allocation functions anywhere you use runtime information to determine type before allocating memory. For example, if your app includes a runtime library for a programming language that uses runtime information to determine the type of a pointer. To call the type-aware version of memory-allocation functions yourself, prefix the function name with `malloc_type_`. For example, `malloc` becomes `malloc_type_malloc`.
 
@@ -31,7 +32,7 @@ The `malloc_type_` functions take an additional parameter compared with the regu
 
 If you use `union` types, avoid designing a type that uses the same location for either a pointer or for data, as the typed allocator can’t protect that memory.
 
-##### Create Type Aware Allocator Wrappers
+##### Create type-aware allocator wrappers
 
 If your project includes wrapper functions that call the system’s memory-allocation functions, consider whether you can remove the wrappers and call the memory-allocation functions directly, and benefit from the compiler’s automatic rewrites to use typed allocators. If you can’t remove your wrapper functions, write type-aware variants of the wrapper functions and use the `_MALLOC_TYPED` macro to annotate your existing wrapper functions with references to their type-aware variants. The macro takes two parameters:
 
@@ -69,13 +70,14 @@ void *my_malloc_typed(size_t size, malloc_type_id_t type_id) {
 
 ## See Also
 
-- [Verifying the origin of your XCFrameworks](verifying-the-origin-of-your-xcframeworks.md)
+### Security and privacy
+- [Verifying the origin of your XCFrameworks](./verifying-the-origin-of-your-xcframeworks.md)
   Discover who signed a framework, and take action when that changes.
-- [Enabling enhanced security for your app](enabling-enhanced-security-for-your-app.md)
+- [Enabling enhanced security for your app](./enabling-enhanced-security-for-your-app.md)
   Detect out-of-bounds memory access, use of freed memory, and other potential vulnerabilities.
-- [Creating enhanced security helper extensions](creating-enhanced-security-helper-extensions.md)
+- [Creating enhanced security helper extensions](./creating-enhanced-security-helper-extensions.md)
   Reduce opportunities for an attacker to target your app through its extensions.
-- [Conforming to Mach IPC security restrictions](conforming-to-mach-ipc-security-restrictions.md)
+- [Conforming to Mach IPC security restrictions](./conforming-to-mach-ipc-security-restrictions.md)
   Avoid crashes and potentially insecure situations associated with Mach messages.
 
 

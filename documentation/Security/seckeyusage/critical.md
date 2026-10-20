@@ -1,7 +1,8 @@
 # critical
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The KeyUsage extension is marked critical.
 
@@ -12,6 +13,10 @@ The KeyUsage extension is marked critical.
 
 ```swift
 static var critical: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageCritical
 ```
 
 

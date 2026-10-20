@@ -1,7 +1,8 @@
 # Edge3D.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of 3D edges.
 
@@ -18,31 +19,31 @@ struct Set
 ## Topics
 
 ### Getting edge sets
-- [static let all: Edge3D.Set](edge3d/set/all.md)
-- [static let top: Edge3D.Set](edge3d/set/top.md)
-- [static let bottom: Edge3D.Set](edge3d/set/bottom.md)
-- [static let leading: Edge3D.Set](edge3d/set/leading.md)
-- [static let front: Edge3D.Set](edge3d/set/front.md)
-- [static let back: Edge3D.Set](edge3d/set/back.md)
-- [static let trailing: Edge3D.Set](edge3d/set/trailing.md)
-- [static let horizontal: Edge3D.Set](edge3d/set/horizontal.md)
-- [static let vertical: Edge3D.Set](edge3d/set/vertical.md)
-- [static let depth: Edge3D.Set](edge3d/set/depth.md)
+- [static let all: Edge3D.Set](./set/all.md)
+- [static let top: Edge3D.Set](./set/top.md)
+- [static let bottom: Edge3D.Set](./set/bottom.md)
+- [static let leading: Edge3D.Set](./set/leading.md)
+- [static let front: Edge3D.Set](./set/front.md)
+- [static let back: Edge3D.Set](./set/back.md)
+- [static let trailing: Edge3D.Set](./set/trailing.md)
+- [static let horizontal: Edge3D.Set](./set/horizontal.md)
+- [static let vertical: Edge3D.Set](./set/vertical.md)
+- [static let depth: Edge3D.Set](./set/depth.md)
 ### Creating an edge set
-- [init(_:)](edge3d/set/init(_:).md)
+- [init(_:)](./set/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

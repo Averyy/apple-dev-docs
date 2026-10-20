@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 26.0+
@@ -12,6 +13,8 @@
 nonisolated
 init(asset: Model3DAsset) where Content == ResolvedModel3D
 ```
+
+Available when `Content` conforms to `View`.
 
 
 ---

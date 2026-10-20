@@ -1,7 +1,8 @@
 # AVPlayerItem
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that models the timing and presentation state of an asset during playback.
 
@@ -21,319 +22,324 @@ An object that models the timing and presentation state of an asset during playb
 class AVPlayerItem
 ```
 
+```objc
+@interface AVPlayerItem : NSObject
+```
+
 ## Mentions
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
-- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
+- [Implementing simple enhanced buffering for your content](./implementing-simple-enhanced-buffering-for-your-content.md)
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
+- [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
 #### Overview
 
-A player item stores a reference to an [`AVAsset`](avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
+A player item stores a reference to an [`AVAsset`](./avasset.md) object, which represents the media to play. If you require inspecting an asset before you enqueue it for playback, call its [`load(_:isolation:)`](./avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the values of one or more properties. Alternatively, you can tell the player item to automatically load the required properties by passing them to its [`init(asset:automaticallyLoadedAssetKeys:)`](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-5czjh.md) initializer. When the player item is ready to play, the asset properties you request are ready to use.
 
 ## Topics
 
 ### Creating a player item
-- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
+- [convenience init(url: URL)](./avplayeritem/init%28url%29-1xrtk.md)
   Creates a player item with a specified URL.
-- [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
+- [convenience init(asset: AVAsset)](./avplayeritem/init%28asset%29-87rjl.md)
   Creates a player item for a specified asset.
-- [convenience init(asset: any AVAsset & Sendable)](avplayeritem/init(asset:)-1nme9.md)
-- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md)
+- [convenience init(asset: any AVAsset & Sendable)](./avplayeritem/init%28asset%29-1nme9.md)
+- [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-5czjh.md)
   Creates a player item for the asset, and automatically loads values for the specified properties.
-- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-85hal.md)
-- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](avplayeritem/init(asset:automaticallyloadedassetkeys:)-8x4.md)
+- [convenience init(asset: any AVAsset & Sendable, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-85hal.md)
+- [init(asset: AVAsset, automaticallyLoadedAssetKeys: [String]?)](./avplayeritem/init%28asset,automaticallyloadedassetkeys%29-8x4.md)
   Creates a player item with the specified asset and the asset keys to automatically load.
 ### Accessing tracks
-- [var tracks: [AVPlayerItemTrack]](avplayeritem/tracks.md)
+- [var tracks: [AVPlayerItemTrack]](./avplayeritem/tracks.md)
   An array of player item track objects.
 ### Accessing metadata
-- [var externalMetadata: [AVMetadataItem]](avplayeritem/externalmetadata.md)
+- [var externalMetadata: [AVMetadataItem]](./avplayeritem/externalmetadata.md)
   An array of additional metadata for the player item to supplement or replace an asset’s embedded metadata.
 ### Determining readiness
-- [var status: AVPlayerItem.Status](avplayeritem/status-swift.property.md)
+- [var status: AVPlayerItem.Status](./avplayeritem/status-swift.property.md)
   The status of the player item.
-- [AVPlayerItem.Status](avplayeritem/status-swift.enum.md)
+- [AVPlayerItem.Status](./avplayeritem/status-swift.enum.md)
   The statuses for a player item.
-- [var error: (any Error)?](avplayeritem/error.md)
+- [var error: (any Error)?](./avplayeritem/error.md)
   The error that caused the player item to fail.
 ### Determining playback capabilities
-- [var canPlayReverse: Bool](avplayeritem/canplayreverse.md)
+- [var canPlayReverse: Bool](./avplayeritem/canplayreverse.md)
   A Boolean value that indicates whether the item can play in reverse.
-- [var canPlayFastForward: Bool](avplayeritem/canplayfastforward.md)
+- [var canPlayFastForward: Bool](./avplayeritem/canplayfastforward.md)
   A Boolean value that indicates whether the item can play at fast-forward rates.
-- [var canPlayFastReverse: Bool](avplayeritem/canplayfastreverse.md)
+- [var canPlayFastReverse: Bool](./avplayeritem/canplayfastreverse.md)
   A Boolean value that indicates whether the item can be quickly reversed.
-- [var canPlaySlowForward: Bool](avplayeritem/canplayslowforward.md)
+- [var canPlaySlowForward: Bool](./avplayeritem/canplayslowforward.md)
   A Boolean value that indicates whether the item can play slower than normal.
-- [var canPlaySlowReverse: Bool](avplayeritem/canplayslowreverse.md)
+- [var canPlaySlowReverse: Bool](./avplayeritem/canplayslowreverse.md)
   A Boolean value that indicates whether the item can play slowly backward.
 ### Setting playback boundaries
-- [var forwardPlaybackEndTime: CMTime](avplayeritem/forwardplaybackendtime.md)
+- [var forwardPlaybackEndTime: CMTime](./avplayeritem/forwardplaybackendtime.md)
   The time at which forward playback ends.
-- [var reversePlaybackEndTime: CMTime](avplayeritem/reverseplaybackendtime.md)
+- [var reversePlaybackEndTime: CMTime](./avplayeritem/reverseplaybackendtime.md)
   The time at which reverse playback ends.
 ### Stepping through media
-- [var canStepForward: Bool](avplayeritem/canstepforward.md)
+- [var canStepForward: Bool](./avplayeritem/canstepforward.md)
   A Boolean value that indicates whether the item supports stepping forward.
-- [var canStepBackward: Bool](avplayeritem/canstepbackward.md)
+- [var canStepBackward: Bool](./avplayeritem/canstepbackward.md)
   A Boolean value that indicates whether the item supports stepping backward.
-- [func step(byCount: Int)](avplayeritem/step(bycount:).md)
+- [func step(byCount: Int)](./avplayeritem/step%28bycount%29.md)
   Moves the player item’s current time forward or backward by a specified number of steps.
 ### Seeking through media
-- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:completionhandler:)-91gnw.md)
+- [func seek(to: CMTime, completionHandler: ((Bool) -> Void)?)](./avplayeritem/seek%28to,completionhandler%29-91gnw.md)
   Sets the current playback time to the specified time.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](avplayeritem/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: ((Bool) -> Void)?)](./avplayeritem/seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Sets the current playback time within a specified time bound and invokes the specified block when the seek operation completes or is interrupted.
-- [func seek(to: Date, completionHandler: ((Bool) -> Void)?) -> Bool](avplayeritem/seek(to:completionhandler:)-1dibq.md)
+- [func seek(to: Date, completionHandler: ((Bool) -> Void)?) -> Bool](./avplayeritem/seek%28to,completionhandler%29-1dibq.md)
   Sets the current playback time to the time specified by the date object.
-- [func cancelPendingSeeks()](avplayeritem/cancelpendingseeks.md)
+- [func cancelPendingSeeks()](./avplayeritem/cancelpendingseeks%28%29.md)
   Cancels any pending seek requests and invokes the corresponding completion handlers if present.
 ### Selecting media options
-- [func select(AVMediaPresentationSetting, for: AVMediaSelectionGroup)](avplayeritem/select(_:for:).md)
+- [func select(AVMediaPresentationSetting, for: AVMediaSelectionGroup)](./avplayeritem/select%28_,for%29.md)
   When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular presentation setting, replacing any previous preference for settings of the same media presentation selector.
-- [var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme]](avplayeritem/preferredcustommediaselectionschemes.md)
+- [var preferredCustomMediaSelectionSchemes: [AVCustomMediaSelectionScheme]](./avplayeritem/preferredcustommediaselectionschemes.md)
   Indicates the AVCustomMediaSelectionSchemes of AVMediaSelectionGroups of the receiver’s asset with which an associated UI implementation should configure its interface for media selection.
-- [func effectiveMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](avplayeritem/effectivemediapresentationsettings(for:).md)
+- [func effectiveMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](./avplayeritem/effectivemediapresentationsettings%28for%29.md)
   Indicates the media presentation settings with media characteristics that are possessed by the currently selected AVMediaSelectionOption in the specified AVMediaSelectionGroup.
-- [func selectMediaPresentationLanguage(String, for: AVMediaSelectionGroup)](avplayeritem/selectmediapresentationlanguage(_:for:).md)
+- [func selectMediaPresentationLanguage(String, for: AVMediaSelectionGroup)](./avplayeritem/selectmediapresentationlanguage%28_,for%29.md)
   When the associated AVPlayer’s appliesMediaSelectionCriteriaAutomatically property is set to YES, configures the player item to prefer a particular language, replacing any previous preference for available languages of the specified group’s custom media selection scheme.
-- [func selectedMediaPresentationLanguage(for: AVMediaSelectionGroup) -> String?](avplayeritem/selectedmediapresentationlanguage(for:).md)
+- [func selectedMediaPresentationLanguage(for: AVMediaSelectionGroup) -> String?](./avplayeritem/selectedmediapresentationlanguage%28for%29.md)
   Returns the selected media presentation language for the specified media selection group, if any language has previously been selected via use of -selectMediaPresentationLanguages:forMediaSelectionGroup:.
-- [func selectedMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](avplayeritem/selectedmediapresentationsettings(for:).md)
+- [func selectedMediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : Any]](./avplayeritem/selectedmediapresentationsettings%28for%29.md)
   Indicates the media presentation settings that have most recently been selected for each AVMediaPresentationSelector of the AVCustomMediaSelectionScheme of the specified AVMediaSelectionGroup.
-- [var currentMediaSelection: AVMediaSelection](avplayeritem/currentmediaselection.md)
+- [var currentMediaSelection: AVMediaSelection](./avplayeritem/currentmediaselection.md)
   The current media selections for each of the receiver’s media selection groups.
-- [func select(AVMediaSelectionOption?, in: AVMediaSelectionGroup)](avplayeritem/select(_:in:).md)
+- [func select(AVMediaSelectionOption?, in: AVMediaSelectionGroup)](./avplayeritem/select%28_,in%29.md)
   Selects a media option in a given media selection group and deselects all other options in that group.
-- [func selectMediaOptionAutomatically(in: AVMediaSelectionGroup)](avplayeritem/selectmediaoptionautomatically(in:).md)
+- [func selectMediaOptionAutomatically(in: AVMediaSelectionGroup)](./avplayeritem/selectmediaoptionautomatically%28in%29.md)
   Selects the media option in the specified media selection group that best matches the receiver’s automatic selection criteria.
 ### Setting variant behavior
-- [var variantPreferences: AVVariantPreferences](avplayeritem/variantpreferences.md)
+- [var variantPreferences: AVVariantPreferences](./avplayeritem/variantpreferences.md)
   The preferences the player item uses when selecting variant playlists.
-- [struct AVVariantPreferences](avvariantpreferences.md)
+- [struct AVVariantPreferences](./avvariantpreferences.md)
   Defines the preferences the player item uses when selecting variant playlists.
-- [var startsOnFirstEligibleVariant: Bool](avplayeritem/startsonfirsteligiblevariant.md)
+- [var startsOnFirstEligibleVariant: Bool](./avplayeritem/startsonfirsteligiblevariant.md)
   A Boolean value that indicates whether playback starts with the first eligible variant that appears in the stream’s main playlist.
 ### Configuring interstitial events
-- [var integratedTimeline: AVPlayerItemIntegratedTimeline](avplayeritem/integratedtimeline.md)
+- [var integratedTimeline: AVPlayerItemIntegratedTimeline](./avplayeritem/integratedtimeline.md)
   An integrated timeline that represents the player item timing including its scheduled interstitial events.
-- [var automaticallyHandlesInterstitialEvents: Bool](avplayeritem/automaticallyhandlesinterstitialevents.md)
+- [var automaticallyHandlesInterstitialEvents: Bool](./avplayeritem/automaticallyhandlesinterstitialevents.md)
   A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives.
-- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
+- [var translatesPlayerInterstitialEvents: Bool](./avplayeritem/translatesplayerinterstitialevents.md)
   A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
-- [var interstitialTimeRanges: [AVInterstitialTimeRange]](avplayeritem/interstitialtimeranges.md)
+- [var interstitialTimeRanges: [AVInterstitialTimeRange]](./avplayeritem/interstitialtimeranges.md)
   An array of time ranges that identify interstitial content.
-- [var template: AVPlayerItem?](avplayeritem/template.md)
+- [var template: AVPlayerItem?](./avplayeritem/template.md)
   The template player item that initializes this instance.
 ### Accessing timing information
-- [func currentTime() -> CMTime](avplayeritem/currenttime.md)
+- [func currentTime() -> CMTime](./avplayeritem/currenttime%28%29.md)
   Returns the current time of the item.
-- [func currentDate() -> Date?](avplayeritem/currentdate.md)
+- [func currentDate() -> Date?](./avplayeritem/currentdate%28%29.md)
   Returns the current time of the item as a date.
-- [var duration: CMTime](avplayeritem/duration.md)
+- [var duration: CMTime](./avplayeritem/duration.md)
   The duration of the item.
-- [var timebase: CMTimebase?](avplayeritem/timebase.md)
+- [var timebase: CMTimebase?](./avplayeritem/timebase.md)
   The timebase information for the item.
 ### Determining available time ranges
-- [var loadedTimeRanges: [NSValue]](avplayeritem/loadedtimeranges.md)
+- [var loadedTimeRanges: [NSValue]](./avplayeritem/loadedtimeranges.md)
   An array of time ranges indicating media data that is readily available.
-- [var seekableTimeRanges: [NSValue]](avplayeritem/seekabletimeranges.md)
+- [var seekableTimeRanges: [NSValue]](./avplayeritem/seekabletimeranges.md)
   An array of time ranges within which it is possible to seek.
 ### Determining buffering status
-- [var isPlaybackLikelyToKeepUp: Bool](avplayeritem/isplaybacklikelytokeepup.md)
+- [var isPlaybackLikelyToKeepUp: Bool](./avplayeritem/isplaybacklikelytokeepup.md)
   A Boolean value that indicates whether the item will likely play through without stalling.
-- [var isPlaybackBufferFull: Bool](avplayeritem/isplaybackbufferfull.md)
+- [var isPlaybackBufferFull: Bool](./avplayeritem/isplaybackbufferfull.md)
   A Boolean value that indicates whether the internal media buffer is full and that further I/O is suspended.
-- [var isPlaybackBufferEmpty: Bool](avplayeritem/isplaybackbufferempty.md)
+- [var isPlaybackBufferEmpty: Bool](./avplayeritem/isplaybackbufferempty.md)
   A Boolean value that indicates whether playback has consumed all buffered media and that playback will stall or end.
 ### Configuring expensive network behavior
-- [var preferredPeakBitRateForExpensiveNetworks: Double](avplayeritem/preferredpeakbitrateforexpensivenetworks.md)
+- [var preferredPeakBitRateForExpensiveNetworks: Double](./avplayeritem/preferredpeakbitrateforexpensivenetworks.md)
   A limit of network bandwidth consumption by the item when connecting over expensive networks.
-- [var preferredMaximumResolutionForExpensiveNetworks: CGSize](avplayeritem/preferredmaximumresolutionforexpensivenetworks.md)
+- [var preferredMaximumResolutionForExpensiveNetworks: CGSize](./avplayeritem/preferredmaximumresolutionforexpensivenetworks.md)
   An upper limit on the resolution of video to download when connecting over expensive networks.
 ### Accessing text style rules
-- [var textStyleRules: [AVTextStyleRule]?](avplayeritem/textstylerules.md)
+- [var textStyleRules: [AVTextStyleRule]?](./avplayeritem/textstylerules.md)
   An array of text style rules that specify the formatting and presentation of Web Video Text Tracks (WebVTT) subtitles.
-- [class AVTextStyleRule](avtextstylerule.md)
+- [class AVTextStyleRule](./avtextstylerule.md)
   An object that represents the text styling rules to apply to a media item’s textual content.
 ### Accessing logging information
-- [func accessLog() -> AVPlayerItemAccessLog?](avplayeritem/accesslog.md)
+- [func accessLog() -> AVPlayerItemAccessLog?](./avplayeritem/accesslog%28%29.md)
   Returns an object that represents a snapshot of the network access log.
-- [class AVPlayerItemAccessLog](avplayeritemaccesslog.md)
+- [class AVPlayerItemAccessLog](./avplayeritemaccesslog.md)
   An object used to retrieve the access log associated with a player item.
-- [class AVPlayerItemAccessLogEvent](avplayeritemaccesslogevent.md)
+- [class AVPlayerItemAccessLogEvent](./avplayeritemaccesslogevent.md)
   A single entry in a player item’s access log.
-- [func errorLog() -> AVPlayerItemErrorLog?](avplayeritem/errorlog.md)
+- [func errorLog() -> AVPlayerItemErrorLog?](./avplayeritem/errorlog%28%29.md)
   Returns an object that represents a snapshot of the error log.
-- [class AVPlayerItemErrorLog](avplayeritemerrorlog.md)
+- [class AVPlayerItemErrorLog](./avplayeritemerrorlog.md)
   The error log associated with a player item.
-- [class AVPlayerItemErrorLogEvent](avplayeritemerrorlogevent.md)
+- [class AVPlayerItemErrorLogEvent](./avplayeritemerrorlogevent.md)
   A single item in a player item’s error log.
 ### Observing notifications
-- [class let didPlayToEndTimeNotification: NSNotification.Name](avplayeritem/didplaytoendtimenotification.md)
+- [class let didPlayToEndTimeNotification: NSNotification.Name](./avplayeritem/didplaytoendtimenotification.md)
   A notification the system posts when a player item plays to its end time.
-- [class let failedToPlayToEndTimeNotification: NSNotification.Name](avplayeritem/failedtoplaytoendtimenotification.md)
+- [class let failedToPlayToEndTimeNotification: NSNotification.Name](./avplayeritem/failedtoplaytoendtimenotification.md)
   A notification that the system posts when a player item fails to play to its end time.
-- [class let timeJumpedNotification: NSNotification.Name](avplayeritem/timejumpednotification.md)
+- [class let timeJumpedNotification: NSNotification.Name](./avplayeritem/timejumpednotification.md)
   A notification the system posts when a player item’s time changes discontinuously.
-- [class let playbackStalledNotification: NSNotification.Name](avplayeritem/playbackstallednotification.md)
+- [class let playbackStalledNotification: NSNotification.Name](./avplayeritem/playbackstallednotification.md)
   A notification the system posts when a player item media doesn’t arrive in time to continue playback.
-- [class let mediaSelectionDidChangeNotification: NSNotification.Name](avplayeritem/mediaselectiondidchangenotification.md)
+- [class let mediaSelectionDidChangeNotification: NSNotification.Name](./avplayeritem/mediaselectiondidchangenotification.md)
   A notification the player item posts when its media selection changes.
-- [class let recommendedTimeOffsetFromLiveDidChangeNotification: NSNotification.Name](avplayeritem/recommendedtimeoffsetfromlivedidchangenotification.md)
+- [class let recommendedTimeOffsetFromLiveDidChangeNotification: NSNotification.Name](./avplayeritem/recommendedtimeoffsetfromlivedidchangenotification.md)
   A notification the player item posts when its offset from the live time changes.
-- [class let newAccessLogEntryNotification: NSNotification.Name](avplayeritem/newaccesslogentrynotification.md)
+- [class let newAccessLogEntryNotification: NSNotification.Name](./avplayeritem/newaccesslogentrynotification.md)
   A notification the system posts when a player item adds a new entry to its access log.
-- [class let newErrorLogEntryNotification: NSNotification.Name](avplayeritem/newerrorlogentrynotification.md)
+- [class let newErrorLogEntryNotification: NSNotification.Name](./avplayeritem/newerrorlogentrynotification.md)
   A notification the system posts when a player item adds a new entry to its error log.
 ### Managing time offsets
-- [var automaticallyPreservesTimeOffsetFromLive: Bool](avplayeritem/automaticallypreservestimeoffsetfromlive.md)
+- [var automaticallyPreservesTimeOffsetFromLive: Bool](./avplayeritem/automaticallypreservestimeoffsetfromlive.md)
   A Boolean value that indicates whether the player preserves its time offset from the live time after a buffering operation.
-- [var recommendedTimeOffsetFromLive: CMTime](avplayeritem/recommendedtimeoffsetfromlive.md)
+- [var recommendedTimeOffsetFromLive: CMTime](./avplayeritem/recommendedtimeoffsetfromlive.md)
   A recommended time offset from the live time based on observed network conditions.
-- [var configuredTimeOffsetFromLive: CMTime](avplayeritem/configuredtimeoffsetfromlive.md)
+- [var configuredTimeOffsetFromLive: CMTime](./avplayeritem/configuredtimeoffsetfromlive.md)
   A time value that indicates the offset from the live time to start playback, or resume playback after a seek to positive infinity.
 ### Configuring presentation
-- [var presentationSize: CGSize](avplayeritem/presentationsize.md)
+- [var presentationSize: CGSize](./avplayeritem/presentationsize.md)
   The size at which the visual portion of the item is presented by the player.
-- [var preferredMaximumResolution: CGSize](avplayeritem/preferredmaximumresolution.md)
+- [var preferredMaximumResolution: CGSize](./avplayeritem/preferredmaximumresolution.md)
   The desired maximum resolution of a video that is to be downloaded.
-- [var videoApertureMode: AVVideoApertureMode](avplayeritem/videoaperturemode.md)
+- [var videoApertureMode: AVVideoApertureMode](./avplayeritem/videoaperturemode.md)
   The video aperture mode to apply during playback.
-- [struct AVVideoApertureMode](avvideoaperturemode.md)
+- [struct AVVideoApertureMode](./avvideoaperturemode.md)
   A value that describes how a video is scaled or cropped.
 ### Accessing Now Playing information
-- [var nowPlayingInfo: [String : Any]?](avplayeritem/nowplayinginfo.md)
+- [var nowPlayingInfo: [String : Any]?](./avplayeritem/nowplayinginfo.md)
   The current now playing information for the player item.
 ### Configuring HDR settings
-- [var appliesPerFrameHDRDisplayMetadata: Bool](avplayeritem/appliesperframehdrdisplaymetadata.md)
+- [var appliesPerFrameHDRDisplayMetadata: Bool](./avplayeritem/appliesperframehdrdisplaymetadata.md)
   A Boolean value that indicates whether the player item applies per-frame HDR display metadata during playback.
 ### Configuring video compositing
-- [var videoComposition: AVVideoComposition?](avplayeritem/videocomposition.md)
+- [var videoComposition: AVVideoComposition?](./avplayeritem/videocomposition.md)
   The video composition settings to be applied during playback.
-- [var customVideoCompositor: (any AVVideoCompositing)?](avplayeritem/customvideocompositor.md)
+- [var customVideoCompositor: (any AVVideoCompositing)?](./avplayeritem/customvideocompositor.md)
   The custom video compositor.
-- [var seekingWaitsForVideoCompositionRendering: Bool](avplayeritem/seekingwaitsforvideocompositionrendering.md)
+- [var seekingWaitsForVideoCompositionRendering: Bool](./avplayeritem/seekingwaitsforvideocompositionrendering.md)
   A Boolean value that indicates whether the item’s timing follows the displayed video frame when seeking with a video composition.
 ### Configuring audio
-- [var audioMix: AVAudioMix?](avplayeritem/audiomix.md)
+- [var audioMix: AVAudioMix?](./avplayeritem/audiomix.md)
   The audio mix parameters to be applied during playback.
-- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](avplayeritem/audiotimepitchalgorithm.md)
+- [var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm](./avplayeritem/audiotimepitchalgorithm.md)
   The processing algorithm used to manage audio pitch for scaled audio edits.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./avplayeritem/allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [struct AVAudioSpatializationFormats](avaudiospatializationformats.md)
+- [struct AVAudioSpatializationFormats](./avaudiospatializationformats.md)
   A structure that defines the spatialization formats that a player item supports.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./avplayeritem/isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
 ### Managing player item outputs
-- [var outputs: [AVPlayerItemOutput]](avplayeritem/outputs.md)
+- [var outputs: [AVPlayerItemOutput]](./avplayeritem/outputs.md)
   An array of outputs associated with the player item.
-- [func add(AVPlayerItemOutput)](avplayeritem/add(_:)-16ctk.md)
+- [func add(AVPlayerItemOutput)](./avplayeritem/add%28_%29-16ctk.md)
   Adds the specified player item output object to the receiver.
-- [func remove(AVPlayerItemOutput)](avplayeritem/remove(_:)-46b1r.md)
+- [func remove(AVPlayerItemOutput)](./avplayeritem/remove%28_%29-46b1r.md)
   Removes the specified player item output object from the receiver.
 ### Managing player item data collectors
-- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](avplayeritem/mediadatacollectors.md)
+- [var mediaDataCollectors: [AVPlayerItemMediaDataCollector]](./avplayeritem/mediadatacollectors.md)
   The collection of associated media data collectors.
-- [func add(AVPlayerItemMediaDataCollector)](avplayeritem/add(_:)-9l3to.md)
+- [func add(AVPlayerItemMediaDataCollector)](./avplayeritem/add%28_%29-9l3to.md)
   Adds the specified media data collector to the player item’s collection of media collectors.
-- [func remove(AVPlayerItemMediaDataCollector)](avplayeritem/remove(_:)-29iuz.md)
+- [func remove(AVPlayerItemMediaDataCollector)](./avplayeritem/remove%28_%29-29iuz.md)
   Removes the specified media data collector from the player item’s collection of media collectors.
 ### Configuring network behavior
-- [var preferredPeakBitRate: Double](avplayeritem/preferredpeakbitrate.md)
+- [var preferredPeakBitRate: Double](./avplayeritem/preferredpeakbitrate.md)
   The desired limit, in bits per second, of network bandwidth consumption for this item.
-- [var preferredForwardBufferDuration: TimeInterval](avplayeritem/preferredforwardbufferduration.md)
+- [var preferredForwardBufferDuration: TimeInterval](./avplayeritem/preferredforwardbufferduration.md)
   The duration the player should buffer media from the network ahead of the playhead to guard against playback disruption.
-- [var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool](avplayeritem/canusenetworkresourcesforlivestreamingwhilepaused.md)
+- [var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool](./avplayeritem/canusenetworkresourcesforlivestreamingwhilepaused.md)
   A Boolean value that indicates whether the player item can use network resources to keep the playback state up to date while paused.
 ### Configuring player items for AVKit
-- [var navigationMarkerGroups: [AVNavigationMarkersGroup]](avplayeritem/navigationmarkergroups.md)
+- [var navigationMarkerGroups: [AVNavigationMarkersGroup]](./avplayeritem/navigationmarkergroups.md)
   The time marker groups that provide ways to navigate the player item’s content.
-- [var nextContentProposal: AVContentProposal?](avplayeritem/nextcontentproposal.md)
+- [var nextContentProposal: AVContentProposal?](./avplayeritem/nextcontentproposal.md)
   The item proposed to follow the current content.
 ### Requesting playback authorization in tvOS
-- [func requestPlaybackRestrictionsAuthorization((Bool, (any Error)?) -> Void)](avplayeritem/requestplaybackrestrictionsauthorization(_:).md)
+- [func requestPlaybackRestrictionsAuthorization((Bool, (any Error)?) -> Void)](./avplayeritem/requestplaybackrestrictionsauthorization%28_%29.md)
   Determines whether this item is subject to parental restrictions, and, if so, prompts the user to enter the restrictions passcode.
-- [func cancelPlaybackRestrictionsAuthorizationRequest()](avplayeritem/cancelplaybackrestrictionsauthorizationrequest.md)
+- [func cancelPlaybackRestrictionsAuthorizationRequest()](./avplayeritem/cancelplaybackrestrictionsauthorizationrequest%28%29.md)
   Cancels a pending authorization request and dismisses the passcode entry, if displayed.
 ### Managing playback authorization in macOS
-- [var isContentAuthorizedForPlayback: Bool](avplayeritem/iscontentauthorizedforplayback.md)
+- [var isContentAuthorizedForPlayback: Bool](./avplayeritem/iscontentauthorizedforplayback.md)
   A Boolean value that indicates whether the content has been authorized by the user.
-- [var isAuthorizationRequiredForPlayback: Bool](avplayeritem/isauthorizationrequiredforplayback.md)
+- [var isAuthorizationRequiredForPlayback: Bool](./avplayeritem/isauthorizationrequiredforplayback.md)
   A Boolean value that indicates whether authorization is required to play the content.
-- [var isApplicationAuthorizedForPlayback: Bool](avplayeritem/isapplicationauthorizedforplayback.md)
+- [var isApplicationAuthorizedForPlayback: Bool](./avplayeritem/isapplicationauthorizedforplayback.md)
   A Boolean value that indicates whether the application can be used to play the content.
-- [func requestContentAuthorizationAsynchronously(withTimeoutInterval: TimeInterval, completionHandler: () -> Void)](avplayeritem/requestcontentauthorizationasynchronously(withtimeoutinterval:completionhandler:).md)
+- [func requestContentAuthorizationAsynchronously(withTimeoutInterval: TimeInterval, completionHandler: () -> Void)](./avplayeritem/requestcontentauthorizationasynchronously%28withtimeoutinterval,completionhandler%29.md)
   Presents the user the opportunity to authorize the content for playback.
-- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](avplayeritem/contentauthorizationrequeststatus.md)
+- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](./avplayeritem/contentauthorizationrequeststatus.md)
   The status of the most recent content authorization request.
-- [enum AVContentAuthorizationStatus](avcontentauthorizationstatus.md)
+- [enum AVContentAuthorizationStatus](./avcontentauthorizationstatus.md)
   A value representing the status of a content authorization request.
-- [func cancelContentAuthorizationRequest()](avplayeritem/cancelcontentauthorizationrequest.md)
+- [func cancelContentAuthorizationRequest()](./avplayeritem/cancelcontentauthorizationrequest%28%29.md)
   Cancels the currently outstanding content authorization request.
 ### Accessing initialization parameters
-- [var asset: AVAsset](avplayeritem/asset.md)
+- [var asset: AVAsset](./avplayeritem/asset.md)
   The asset provided during initialization.
-- [var automaticallyLoadedAssetKeys: [String]](avplayeritem/automaticallyloadedassetkeys.md)
+- [var automaticallyLoadedAssetKeys: [String]](./avplayeritem/automaticallyloadedassetkeys.md)
   The array of asset keys to be automatically loaded before the player item is ready to play.
 ### Copying an player item
-- [func copy() -> Any](avplayeritem/copy.md)
+- [func copy() -> Any](./avplayeritem/copy%28%29.md)
   Creates a copy of the object.
-- [func copy(with: NSZone?) -> Any](avplayeritem/copy(with:).md)
+- [func copy(with: NSZone?) -> Any](./avplayeritem/copy%28with%29.md)
   Creates a copy of the object with the specified zone.
 ### Deprecated
-- [Deprecated symbols](avplayeritem-deprecated-symbols.md)
+- [Deprecated symbols](./avplayeritem-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Initializers
-- [convenience init(URL: URL)](avplayeritem/init(url:)-5rssp.md)
-- [convenience init(URL: URL)](avplayeritem/init(url:)-91z05.md)
+- [convenience init(URL: URL)](./avplayeritem/init%28url%29-5rssp.md)
+- [convenience init(URL: URL)](./avplayeritem/init%28url%29-91z05.md)
 ### Instance Properties
-- [var interstitialEventIdentifier: String?](avplayeritem/interstitialeventidentifier.md)
+- [var interstitialEventIdentifier: String?](./avplayeritem/interstitialeventidentifier.md)
   The identifier of the AVPlayerInterstitialEvent that created this item, or nil if the item was not created from an interstitial event.
 ### Instance Methods
-- [func fetchAccessLog(completionHandler: (sending AVPlayerItemAccessLog?) -> Void)](avplayeritem/fetchaccesslog(completionhandler:).md)
+- [func fetchAccessLog(completionHandler: (sending AVPlayerItemAccessLog?) -> Void)](./avplayeritem/fetchaccesslog%28completionhandler%29.md)
   Asynchronously retrieves the access log without blocking the calling thread.
-- [func fetchErrorLog(completionHandler: (sending AVPlayerItemErrorLog?) -> Void)](avplayeritem/fetcherrorlog(completionhandler:).md)
+- [func fetchErrorLog(completionHandler: (sending AVPlayerItemErrorLog?) -> Void)](./avplayeritem/fetcherrorlog%28completionhandler%29.md)
   Asynchronously retrieves the error log without blocking the calling thread.
-- [func selectableMediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avplayeritem/selectablemediaselectionoptions(in:).md)
+- [func selectableMediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](./avplayeritem/selectablemediaselectionoptions%28in%29.md)
   Returns the media selection options in the specified media selection group that can produce content.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
+- [AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+### Playback control
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
   Keep your user interface in sync with state changes from playback objects.
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+- [Creating a seamless multiview playback experience](./creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [class AVPlayer](avplayer.md)
+- [class AVPlayer](./avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
-- [class AVPlayerLooper](avplayerlooper.md)
+- [class AVPlayerLooper](./avplayerlooper.md)
   An object that loops media content using a queue player.
 
 

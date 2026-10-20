@@ -1,16 +1,19 @@
 # pastPayloads
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of the daily metrics reports generated since the last allocation of the shared manager instance.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`metricReports`](../metricmanager/metricreports.md) instead.
 
 ## Declaration
 
@@ -18,9 +21,14 @@ Returns an array of the daily metrics reports generated since the last allocatio
 var pastPayloads: [MXMetricPayload] { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSArray<MXMetricPayload *> * pastPayloads;
+```
+
 ## See Also
 
-- [var pastDiagnosticPayloads: [MXDiagnosticPayload]](mxmetricmanager/pastdiagnosticpayloads.md)
+### Retrieving previous reports
+- [var pastDiagnosticPayloads: [MXDiagnosticPayload]](./pastdiagnosticpayloads.md)
   The diagnostic reports since the last initialization of the shared manager instance.
 
 

@@ -1,12 +1,13 @@
 # isAutoscroll
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the receiver is automatically scrolled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean that indicates whether the receiver is automatically scrolled.
 var isAutoscroll: Bool { get set }
 ```
 
+```objc
+@property (getter=isAutoscroll) BOOL autoscroll;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix, if it is in a scrolling view, is automatically scrolled whenever the cursor is dragged outside the matrix after a mouse-down event within its bounds.
+When the value of this property is [`true`](../../Swift/true.md), the matrix, if it is in a scrolling view, is automatically scrolled whenever the cursor is dragged outside the matrix after a mouse-down event within its bounds.
 
 ## See Also
 
-- [func setScrollable(Bool)](nsmatrix/setscrollable(_:).md)
+### Scrolling Cells in the Matrix
+- [func setScrollable(Bool)](./setscrollable%28_%29.md)
   Specifies whether the cells in the matrix are scrollable.
-- [func scrollCellToVisible(atRow: Int, column: Int)](nsmatrix/scrollcelltovisible(atrow:column:).md)
+- [func scrollCellToVisible(atRow: Int, column: Int)](./scrollcelltovisible%28atrow,column%29.md)
   Scrolls the receiver so the specified cell is visible.
 
 

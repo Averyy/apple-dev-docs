@@ -1,17 +1,24 @@
 # SecTransformExecuteAsync(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Executes transform or transform group asynchronously.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 12.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 func SecTransformExecuteAsync(_ transformRef: SecTransform, _ deliveryQueue: dispatch_queue_t, _ deliveryBlock: @escaping SecMessageBlock)
+```
+
+```c
+extern void SecTransformExecuteAsync(SecTransformRef transformRef, dispatch_queue_t deliveryQueue, SecMessageBlock deliveryBlock);
 ```
 
 #### Discussion

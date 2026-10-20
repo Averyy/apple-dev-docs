@@ -1,17 +1,18 @@
 # newDeviceDescription
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a new dictionary that describes the HID device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual OSDictionary * newDeviceDescription();
 ```
 
@@ -23,16 +24,16 @@ An `OSDictionary` that describes the device.
 
 Override this method and return a dictionary of key-value pairs that describe the device. The supported keys are:
 
-- [`kIOHIDReportIntervalKey`](https://developer.apple.com/documentation/iokit/kiohidreportintervalkey)
-- [`kIOHIDVendorIDKey`](https://developer.apple.com/documentation/iokit/kiohidvendoridkey)
-- [`kIOHIDProductIDKey`](https://developer.apple.com/documentation/iokit/kiohidproductidkey)
-- [`kIOHIDTransportKey`](https://developer.apple.com/documentation/iokit/kiohidtransportkey)
-- [`kIOHIDVersionNumberKey`](https://developer.apple.com/documentation/iokit/kiohidversionnumberkey)
-- [`kIOHIDCountryCodeKey`](https://developer.apple.com/documentation/iokit/kiohidcountrycodekey)
-- [`kIOHIDLocationIDKey`](https://developer.apple.com/documentation/iokit/kiohidlocationidkey)
-- [`kIOHIDManufacturerKey`](https://developer.apple.com/documentation/iokit/kiohidmanufacturerkey)
-- [`kIOHIDProductKey`](https://developer.apple.com/documentation/iokit/kiohidproductkey)
-- [`kIOHIDSerialNumberKey`](https://developer.apple.com/documentation/iokit/kiohidserialnumberkey)
+- [`kIOHIDReportIntervalKey`](../../iokit/kiohidreportintervalkey.md)
+- [`kIOHIDVendorIDKey`](../../iokit/kiohidvendoridkey.md)
+- [`kIOHIDProductIDKey`](../../iokit/kiohidproductidkey.md)
+- [`kIOHIDTransportKey`](../../iokit/kiohidtransportkey.md)
+- [`kIOHIDVersionNumberKey`](../../iokit/kiohidversionnumberkey.md)
+- [`kIOHIDCountryCodeKey`](../../iokit/kiohidcountrycodekey.md)
+- [`kIOHIDLocationIDKey`](../../iokit/kiohidlocationidkey.md)
+- [`kIOHIDManufacturerKey`](../../iokit/kiohidmanufacturerkey.md)
+- [`kIOHIDProductKey`](../../iokit/kiohidproductkey.md)
+- [`kIOHIDSerialNumberKey`](../../iokit/kiohidserialnumberkey.md)
 - `kIOHIDRequestTimeoutKey`
 
 

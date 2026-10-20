@@ -1,15 +1,18 @@
 # proximityUUID
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique ID of the beacons you’re targeting.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.15+ - Deprecated in 10.15
+
+> **Deprecated**: Use [`uuid`](./uuid.md) instead.
 
 ## Declaration
 
@@ -17,17 +20,22 @@ The unique ID of the beacons you’re targeting.
 var proximityUUID: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * proximityUUID;
+```
+
 #### Discussion
 
-Typically, the UUID is unique to your company and is the same for all of the beacons that you install. Use the [`major`](clbeaconregion/major.md) and [`minor`](clbeaconregion/minor.md) values to differentiate the beacons in your installation.
+Typically, the UUID is unique to your company and is the same for all of the beacons that you install. Use the [`major`](./major.md) and [`minor`](./minor.md) values to differentiate the beacons in your installation.
 
 ## See Also
 
-- [init(proximityUUID: UUID, identifier: String)](clbeaconregion/init(proximityuuid:identifier:).md)
+### Deprecated
+- [init(proximityUUID: UUID, identifier: String)](./init%28proximityuuid,identifier%29.md)
   Creates and returns a region object that targets a beacon with the specified UUID.
-- [init(proximityUUID: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(proximityuuid:major:identifier:).md)
+- [init(proximityUUID: UUID, major: CLBeaconMajorValue, identifier: String)](./init%28proximityuuid,major,identifier%29.md)
   Creates and returns a region object that targets a beacon with the specified proximity ID and major value.
-- [init(proximityUUID: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](clbeaconregion/init(proximityuuid:major:minor:identifier:).md)
+- [init(proximityUUID: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](./init%28proximityuuid,major,minor,identifier%29.md)
   Creates and returns a region object that targets a beacon with the specified proximity ID, major value, and minor value.
 
 

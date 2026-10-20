@@ -1,7 +1,8 @@
 # removeChildren()
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all child objects from the given object.
 
@@ -19,19 +20,24 @@ Removes all child objects from the given object.
 func removeChildren()
 ```
 
+```objc
+- (void) removeChildren;
+```
+
 #### Discussion
 
-This function removes all members from the [`children`](phaseobject/children.md) array.
+This function removes all members from the [`children`](./children.md) array.
 
 ## See Also
 
-- [var children: [PHASEObject]](phaseobject/children.md)
+### Managing the Hierarchy
+- [var children: [PHASEObject]](./children.md)
   Objects that position and orient in the scene relative to the given object.
-- [var parent: PHASEObject?](phaseobject/parent.md)
+- [var parent: PHASEObject?](./parent.md)
   The object that this instance positions and orients relative to in the scene.
-- [func addChild(PHASEObject) throws](phaseobject/addchild(_:).md)
+- [func addChild(PHASEObject) throws](./addchild%28_%29.md)
   Adds the given object as a child.
-- [func removeChild(PHASEObject)](phaseobject/removechild(_:).md)
+- [func removeChild(PHASEObject)](./removechild%28_%29.md)
   Removes the given object as a child.
 
 

@@ -1,7 +1,8 @@
 # com.apple.developer.sustained-execution
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app performs consistently when the system constrains it to a sustainable performance level.
 
@@ -11,9 +12,10 @@ A Boolean value that indicates whether your app performs consistently when the s
 - Mac Catalyst 17.0+
 - macOS 15.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.sustained-execution`
+- **Type**: boolean
 
 #### Discussion
 

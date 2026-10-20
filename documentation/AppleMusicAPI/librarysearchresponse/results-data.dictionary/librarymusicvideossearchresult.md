@@ -1,7 +1,8 @@
 # LibrarySearchResponse.Results.LibraryMusicVideosSearchResult
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The library music videos results for a term search for specific resource types.
 
@@ -10,7 +11,7 @@ The library music videos results for a term search for specific resource types.
 
 ## Declaration
 
-```swift
+```
 object LibrarySearchResponse.Results.LibraryMusicVideosSearchResult
 ```
 
@@ -22,13 +23,14 @@ object LibrarySearchResponse.Results.LibraryMusicVideosSearchResult
 
 ## See Also
 
-- [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](librarysearchresponse/results-data.dictionary/libraryalbumssearchresult.md)
+### Related Objects
+- [object LibrarySearchResponse.Results.LibraryAlbumsSearchResult](./libraryalbumssearchresult.md)
   The library albums results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibraryArtistsSearchResult](librarysearchresponse/results-data.dictionary/libraryartistssearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryArtistsSearchResult](./libraryartistssearchresult.md)
   The library artists results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibraryPlaylistsSearchResult](librarysearchresponse/results-data.dictionary/libraryplaylistssearchresult.md)
+- [object LibrarySearchResponse.Results.LibraryPlaylistsSearchResult](./libraryplaylistssearchresult.md)
   The library playlists results for a term search for specific resource types.
-- [object LibrarySearchResponse.Results.LibrarySongsSearchResult](librarysearchresponse/results-data.dictionary/librarysongssearchresult.md)
+- [object LibrarySearchResponse.Results.LibrarySongsSearchResult](./librarysongssearchresult.md)
   The library songs results for a term search for specific resource types.
 
 

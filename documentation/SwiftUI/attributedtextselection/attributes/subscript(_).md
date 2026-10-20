@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a sequence which iterates of the values of a single attribute.
 
@@ -18,6 +19,12 @@ Returns a sequence which iterates of the values of a single attribute.
 
 ```swift
 subscript<K>(type: K.Type) -> some Sequence<Optional<K.Value>> where K : AttributedStringKey, K.Value : Sendable { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript<K>(type: KeyPath<AttributeDynamicLookup, K>) -> some Sequence<Optional<K.Value>> where K : AttributedStringKey, K.Value : Sendable { get }
 ```
 
 #### Overview

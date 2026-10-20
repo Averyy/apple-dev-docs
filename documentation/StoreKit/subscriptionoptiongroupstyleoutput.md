@@ -1,7 +1,8 @@
 # SubscriptionOptionGroupStyleOutput
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,9 +21,10 @@ struct SubscriptionOptionGroupStyleOutput
 
 ## See Also
 
-- [struct AutomaticSubscriptionOptionGroupStyle](automaticsubscriptionoptiongroupstyle.md)
-- [struct LinksSubscriptionOptionGroupStyle](linkssubscriptionoptiongroupstyle.md)
-- [struct TabsSubscriptionOptionGroupStyle](tabssubscriptionoptiongroupstyle.md)
+### Supporting types
+- [struct AutomaticSubscriptionOptionGroupStyle](./automaticsubscriptionoptiongroupstyle.md)
+- [struct LinksSubscriptionOptionGroupStyle](./linkssubscriptionoptiongroupstyle.md)
+- [struct TabsSubscriptionOptionGroupStyle](./tabssubscriptionoptiongroupstyle.md)
 
 
 ---

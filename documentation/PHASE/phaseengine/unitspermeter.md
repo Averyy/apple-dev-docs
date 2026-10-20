@@ -1,7 +1,8 @@
 # unitsPerMeter
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A conversion factor from meters to your app’s preferred unit of measurement.
 
@@ -19,9 +20,13 @@ A conversion factor from meters to your app’s preferred unit of measurement.
 var unitsPerMeter: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double unitsPerMeter;
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Discussion
 
@@ -29,7 +34,8 @@ Distance-based properties throughout the framework apply the value you supply fo
 
 ## See Also
 
-- [var unitsPerSecond: Double](phaseengine/unitspersecond.md)
+### Measuring Units
+- [var unitsPerSecond: Double](./unitspersecond.md)
   A conversion factor from seconds to your app’s preferred unit of time.
 
 

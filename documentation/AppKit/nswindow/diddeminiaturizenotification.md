@@ -1,12 +1,13 @@
 # didDeminiaturizeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the window is no longer minimized.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,43 +15,48 @@ A notification that the window is no longer minimized.
 class let didDeminiaturizeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSWindowDidDeminiaturizeNotification;
+```
+
 #### Discussion
 
 The notification object is the `NSWindow` object that’s no longer minimized. This notification doesn’t contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSWindow.DidDeminiaturizeMessage`](nswindow/diddeminiaturizemessage.md).
+To observe this notification using Swift concurrency, use [`NSWindow.DidDeminiaturizeMessage`](./diddeminiaturizemessage.md).
 
 ## See Also
 
-- [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)
+### Notifications
+- [class let didBecomeKeyNotification: NSNotification.Name](./didbecomekeynotification.md)
   A notification that the window object became the key window.
-- [class let didBecomeMainNotification: NSNotification.Name](nswindow/didbecomemainnotification.md)
+- [class let didBecomeMainNotification: NSNotification.Name](./didbecomemainnotification.md)
   A notification that the window object became the main window.
-- [class let didChangeScreenNotification: NSNotification.Name](nswindow/didchangescreennotification.md)
+- [class let didChangeScreenNotification: NSNotification.Name](./didchangescreennotification.md)
   A notification that a portion of the window object’s frame moved onto or off of a screen.
-- [class let didChangeScreenProfileNotification: NSNotification.Name](nswindow/didchangescreenprofilenotification.md)
+- [class let didChangeScreenProfileNotification: NSNotification.Name](./didchangescreenprofilenotification.md)
   A notification that the screen containing the window changed.
-- [class let didEndSheetNotification: NSNotification.Name](nswindow/didendsheetnotification.md)
+- [class let didEndSheetNotification: NSNotification.Name](./didendsheetnotification.md)
   A notification that the window object closed an attached sheet.
-- [class let didEndLiveResizeNotification: NSNotification.Name](nswindow/didendliveresizenotification.md)
+- [class let didEndLiveResizeNotification: NSNotification.Name](./didendliveresizenotification.md)
   A notification that the user resized the window object.
-- [class let didExposeNotification: NSNotification.Name](nswindow/didexposenotification.md)
+- [class let didExposeNotification: NSNotification.Name](./didexposenotification.md)
   A notification that a window exposed a portion of its nonretained content.
-- [class let didMiniaturizeNotification: NSNotification.Name](nswindow/didminiaturizenotification.md)
+- [class let didMiniaturizeNotification: NSNotification.Name](./didminiaturizenotification.md)
   A notification that the window object minimized.
-- [class let didMoveNotification: NSNotification.Name](nswindow/didmovenotification.md)
+- [class let didMoveNotification: NSNotification.Name](./didmovenotification.md)
   A notification that the window object moved.
-- [class let didResignKeyNotification: NSNotification.Name](nswindow/didresignkeynotification.md)
+- [class let didResignKeyNotification: NSNotification.Name](./didresignkeynotification.md)
   A notification that the window object resigned its status as key window.
-- [class let didResignMainNotification: NSNotification.Name](nswindow/didresignmainnotification.md)
+- [class let didResignMainNotification: NSNotification.Name](./didresignmainnotification.md)
   A notification that the window object resigned its status as main window.
-- [class let didResizeNotification: NSNotification.Name](nswindow/didresizenotification.md)
+- [class let didResizeNotification: NSNotification.Name](./didresizenotification.md)
   A notification that the window object size changed.
-- [class let didUpdateNotification: NSNotification.Name](nswindow/didupdatenotification.md)
+- [class let didUpdateNotification: NSNotification.Name](./didupdatenotification.md)
   A notification that the window object received an update message.
-- [class let willBeginSheetNotification: NSNotification.Name](nswindow/willbeginsheetnotification.md)
+- [class let willBeginSheetNotification: NSNotification.Name](./willbeginsheetnotification.md)
   A notification that the window object is about to open a sheet.
-- [class let willCloseNotification: NSNotification.Name](nswindow/willclosenotification.md)
+- [class let willCloseNotification: NSNotification.Name](./willclosenotification.md)
   A notification that the window object is about to close.
 
 

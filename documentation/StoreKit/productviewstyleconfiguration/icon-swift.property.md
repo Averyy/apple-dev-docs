@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A decorative view for merchandising the product.
 
@@ -22,7 +23,8 @@ let icon: ProductViewStyleConfiguration.Icon
 
 ## See Also
 
-- [ProductViewStyleConfiguration.Icon](productviewstyleconfiguration/icon-swift.struct.md)
+### Getting a product view’s icon
+- [ProductViewStyleConfiguration.Icon](./icon-swift.struct.md)
   A type-erased icon of an Apple In-App Purchase product.
 
 

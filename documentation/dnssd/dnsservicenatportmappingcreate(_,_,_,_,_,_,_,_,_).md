@@ -1,7 +1,8 @@
 # DNSServiceNATPortMappingCreate(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Requests a port mapping in the NAT gateway, which maps a port on the local machine to an external port on the NAT.
 
@@ -20,9 +21,13 @@ Requests a port mapping in the NAT gateway, which maps a port on the local machi
 func DNSServiceNATPortMappingCreate(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags: DNSServiceFlags, _ interfaceIndex: UInt32, _ protocol: DNSServiceProtocol, _ internalPort: UInt16, _ externalPort: UInt16, _ ttl: UInt32, _ callBack: DNSServiceNATPortMappingReply!, _ context: UnsafeMutableRawPointer!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceNATPortMappingCreate(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceProtocol protocol, uint16_t internalPort, uint16_t externalPort, uint32_t ttl, DNSServiceNATPortMappingReply callBack, void *context);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred. 
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred. 
 
 If you don’t actually want a port mapped, and are just calling the API because you want to find out the NAT’s external IP address (e.g. for UI display) then pass zero for protocol, internalPort, externalPort and ttl.
 
@@ -30,7 +35,7 @@ If you don’t actually want a port mapped, and are just calling the API because
 
 The NAT should support either the NAT-PMP or the UPnP IGD for this API to create a successful mapping. Note that this API currently supports IPv4 addresses/mappings only. If the NAT gateway supports PCP and returns an IPv6 address (incorrectly, since this API specifically requests IPv4 addresses), the DNSServiceNATPortMappingReply callback is invoked with errorCode kDNSServiceErr_NATPortMappingUnsupported.
 
-The port mapping will be renewed indefinitely until the client process exits, or explicitly terminates the port mapping request by calling [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md). The client callback will be invoked, informing the client of the NAT gateway’s external IP address and the external port that has been allocated for this client. The client should then record this external IP address and port using whatever directory service mechanism it is using to enable peers to connect to it. (Clients advertising services using Wide-Area DNS-SD DO NOT need to use this API; when a client calls [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).md) NAT mappings are automatically created, and the external IP address and port for the service are recorded in the global DNS. Only clients using some directory mechanism other than Wide-Area DNS-SD need to use this API to explicitly map their own ports.)
+The port mapping will be renewed indefinitely until the client process exits, or explicitly terminates the port mapping request by calling [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md). The client callback will be invoked, informing the client of the NAT gateway’s external IP address and the external port that has been allocated for this client. The client should then record this external IP address and port using whatever directory service mechanism it is using to enable peers to connect to it. (Clients advertising services using Wide-Area DNS-SD DO NOT need to use this API; when a client calls [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) NAT mappings are automatically created, and the external IP address and port for the service are recorded in the global DNS. Only clients using some directory mechanism other than Wide-Area DNS-SD need to use this API to explicitly map their own ports.)
 
 It’s possible that the client callback could be called multiple times, for example if the NAT gateway’s IP address changes, or if a configuration change results in a different external port being mapped for this client. Over the lifetime of any long-lived port mapping, the client should be prepared to handle these notifications of changes in the environment, and should update its recorded address and/or port as appropriate.
 
@@ -45,7 +50,7 @@ NOTE: There are two unusual aspects of how the DNSServiceNATPortMappingCreate AP
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the nat port mapping will last indefinitely until the client terminates the port mapping request by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md), and the nat port mapping will last indefinitely until the client terminates the port mapping request by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md).
 - `flags`: Currently ignored, reserved for future use.
 - `interfaceIndex`: The interface on which to create port mappings in a NAT gateway. Passing 0 causes the port mapping request to be sent on the primary interface.
 - `protocol`: To request a port mapping, pass in kDNSServiceProtocol_UDP, or kDNSServiceProtocol_TCP, or (kDNSServiceProtocol_UDP | kDNSServiceProtocol_TCP) to map both. The local listening port number must also be specified in the internalPort parameter. To just discover the NAT gateway’s external IP address, pass zero for protocol, internalPort, externalPort and ttl.

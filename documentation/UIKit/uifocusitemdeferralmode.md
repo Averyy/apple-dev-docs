@@ -1,7 +1,8 @@
 # UIFocusItemDeferralMode
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -16,36 +17,41 @@
 enum UIFocusItemDeferralMode
 ```
 
+```c
+enum UIFocusItemDeferralMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UIFocusItemDeferralMode.always](uifocusitemdeferralmode/always.md)
+- [UIFocusItemDeferralMode.always](./uifocusitemdeferralmode/always.md)
   Always defer focus for this item, even if deferral is disabled right now. This means a programmatic update to this item would result in focus disappearing until the user interacts with the focus engine again.
-- [UIFocusItemDeferralMode.automatic](uifocusitemdeferralmode/automatic.md)
+- [UIFocusItemDeferralMode.automatic](./uifocusitemdeferralmode/automatic.md)
   Use the system default behavior.
-- [UIFocusItemDeferralMode.never](uifocusitemdeferralmode/never.md)
+- [UIFocusItemDeferralMode.never](./uifocusitemdeferralmode/never.md)
   Never defer focus for this item. When a programmatic focus update lands on this item, it will always be and appear focused even if focus deferral is currently enabled.
 ### Initializers
-- [init?(rawValue: Int)](uifocusitemdeferralmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uifocusitemdeferralmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
-- [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+### Enumerations
+- [UIAccessibility.ExpandedStatus](./uiaccessibility/expandedstatus.md)
+- [UITextFormattingViewController.ComponentSize](./uitextformattingviewcontroller/componentsize.md)
   Sizes of text formatting view controller components.
-- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
-- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
-- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
+- [enum UIBarMinimizationBehavior](./uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](./uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](./uibarminimizationsafeareaadjustment.md)
 
 
 ---

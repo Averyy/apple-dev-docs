@@ -1,7 +1,8 @@
 # kMDItemEXIFGPSVersion
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The version of GPSInfoIFD in EXIF used to generate the metadata. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemEXIFGPSVersion: CFString!
+```
+
+```c
+const CFStringRef kMDItemEXIFGPSVersion;
 ```
 
 

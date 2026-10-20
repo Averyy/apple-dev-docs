@@ -1,7 +1,8 @@
 # specType
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of spec, or `nil` if the spec is dormant.
 

@@ -1,7 +1,8 @@
 # doubleAction
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the receiver’s double-click action.
 
@@ -12,6 +13,10 @@ Sets the receiver’s double-click action.
 
 ```swift
 var doubleAction: Selector? { get set }
+```
+
+```objc
+@property (nullable) SEL doubleAction;
 ```
 
 ## Parameters

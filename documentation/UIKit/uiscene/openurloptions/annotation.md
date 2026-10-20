@@ -1,7 +1,8 @@
 # annotation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property-list object that contains the annotation data provided by a document interaction controller.
 
@@ -18,15 +19,20 @@ A property-list object that contains the annotation data provided by a document 
 var annotation: Any? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id annotation;
+```
+
 #### Discussion
 
-This property contains the data that the originating app placed in the [`annotation`](uidocumentinteractioncontroller/annotation.md) property of its [`UIDocumentInteractionController`](uidocumentinteractioncontroller.md). The root object is always an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object. The contents of that dictionary may be any other property list types, including [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects.
+This property contains the data that the originating app placed in the [`annotation`](../../uidocumentinteractioncontroller/annotation.md) property of its [`UIDocumentInteractionController`](../../uidocumentinteractioncontroller.md). The root object is always an [`NSDictionary`](../../../Foundation/nsdictionary.md) object. The contents of that dictionary may be any other property list types, including [`NSDictionary`](../../../Foundation/nsdictionary.md), [`NSArray`](../../../Foundation/nsarray.md), [`NSData`](../../../Foundation/nsdata.md), [`NSString`](../../../Foundation/nsstring.md), [`NSNumber`](../../../Foundation/nsnumber.md), or [`NSDate`](../../../Foundation/nsdate.md) objects.
 
 ## See Also
 
-- [var sourceApplication: String?](uiscene/openurloptions/sourceapplication.md)
+### Specifying the URL details
+- [var sourceApplication: String?](./sourceapplication.md)
   The bundle ID of the app that originated the request.
-- [var eventAttribution: UIEventAttribution?](uiscene/openurloptions/eventattribution.md)
+- [var eventAttribution: UIEventAttribution?](./eventattribution.md)
   An event attribution associated with the URL to open.
 
 

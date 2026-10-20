@@ -1,7 +1,8 @@
 # PrereleaseVersion.Relationships.Builds.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object PrereleaseVersion.Relationships.Builds.Data
 ```
 
@@ -18,6 +19,8 @@ object PrereleaseVersion.Relationships.Builds.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `builds`
 
 
 ---

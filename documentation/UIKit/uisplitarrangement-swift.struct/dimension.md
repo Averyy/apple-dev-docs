@@ -1,7 +1,8 @@
 # UISplitArrangement.Dimension
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dimension for a view within a split arrangement.
 
@@ -21,28 +22,29 @@ struct Dimension
 ## Topics
 
 ### Getting a dimension
-- [static var automatic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/automatic.md)
+- [static var automatic: UISplitArrangement.Dimension](./dimension/automatic.md)
   A dimension that indicates sizing for a view in a split arrangement follows automatic rules.
-- [static var intrinsic: UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/intrinsic.md)
+- [static var intrinsic: UISplitArrangement.Dimension](./dimension/intrinsic.md)
   A dimension that indicates sizing for a view in a split arrangement uses intrinsic content size.
-- [static func absolute(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/absolute(_:).md)
+- [static func absolute(CGFloat) -> UISplitArrangement.Dimension](./dimension/absolute%28_%29.md)
   A dimension that indicates sizing for a view in a split arrangement uses the float value you provide, expressed in points.
-- [static func fractional(CGFloat) -> UISplitArrangement.Dimension](uisplitarrangement-swift.struct/dimension/fractional(_:).md)
+- [static func fractional(CGFloat) -> UISplitArrangement.Dimension](./dimension/fractional%28_%29.md)
   A dimension that indicates sizing for a view in a split arrangement uses the float value you provide as a fraction.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func axes(UIAxis) -> UISplitArrangement](uisplitarrangement-swift.struct/axes(_:).md)
+### Configuring the arrangement
+- [func axes(UIAxis) -> UISplitArrangement](./axes%28_%29.md)
   Sets the axes that the arrangement supports to the axes you provide.
-- [UISplitArrangement.DimensionRange](uisplitarrangement-swift.struct/dimensionrange.md)
+- [UISplitArrangement.DimensionRange](./dimensionrange.md)
   A range of dimensions defining the minimum, preferred, and maximum size for a view within a split arrangement.
 
 

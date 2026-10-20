@@ -1,7 +1,8 @@
 # identifier(_:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the identifier conforming to the specified standard for the specified string.
 
@@ -26,24 +27,25 @@ A locale identifier.
 
 ## Parameters
 
-- `type`: The identifier type used by `string`, such as [`Locale.IdentifierType.icu`](locale/identifiertype/icu.md) or [`Locale.IdentifierType.bcp47`](locale/identifiertype/bcp47.md).
+- `type`: The identifier type used by `string`, such as [`Locale.IdentifierType.icu`](./identifiertype/icu.md) or [`Locale.IdentifierType.bcp47`](./identifiertype/bcp47.md).
 - `string`: An identifier string that complies with the standard indicated by `type`.
 
 ## See Also
 
-- [static func canonicalIdentifier(from: String) -> String](locale/canonicalidentifier(from:).md)
+### Converting between identifiers
+- [static func canonicalIdentifier(from: String) -> String](./canonicalidentifier%28from%29.md)
   Returns a canonical identifier from the given string.
-- [static func components(fromIdentifier: String) -> [String : String]](locale/components(fromidentifier:).md)
+- [static func components(fromIdentifier: String) -> [String : String]](./components%28fromidentifier%29.md)
   Returns a dictionary that splits an identifier into its component pieces.
-- [static func identifier(fromComponents: [String : String]) -> String](locale/identifier(fromcomponents:).md)
+- [static func identifier(fromComponents: [String : String]) -> String](./identifier%28fromcomponents%29.md)
   Constructs an identifier from a dictionary of components.
-- [Locale.IdentifierType](locale/identifiertype.md)
+- [Locale.IdentifierType](./identifiertype.md)
   A type that indicates the standard that defines a locale’s identifier.
-- [static func canonicalLanguageIdentifier(from: String) -> String](locale/canonicallanguageidentifier(from:).md)
+- [static func canonicalLanguageIdentifier(from: String) -> String](./canonicallanguageidentifier%28from%29.md)
   Returns a canonical language identifier from the given string.
-- [static func identifier(fromWindowsLocaleCode: Int) -> String?](locale/identifier(fromwindowslocalecode:).md)
+- [static func identifier(fromWindowsLocaleCode: Int) -> String?](./identifier%28fromwindowslocalecode%29.md)
   Returns the locale identifier from a given Windows locale code, or `nil` if it could not be converted.
-- [static func windowsLocaleCode(fromIdentifier: String) -> Int?](locale/windowslocalecode(fromidentifier:).md)
+- [static func windowsLocaleCode(fromIdentifier: String) -> Int?](./windowslocalecode%28fromidentifier%29.md)
   Returns the Windows locale code from a given identifier, or `nil` if it could not be converted.
 
 

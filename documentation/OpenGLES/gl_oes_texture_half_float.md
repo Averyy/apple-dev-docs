@@ -1,7 +1,8 @@
 # GL_OES_texture_half_float
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_OES_texture_half_float: Int32 { get }
+```
+
+```c
+#define GL_OES_texture_half_float
 ```
 
 

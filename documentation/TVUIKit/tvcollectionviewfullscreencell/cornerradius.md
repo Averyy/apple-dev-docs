@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius to use when drawing rounded corners for the cell.
 
@@ -14,15 +15,20 @@ The radius to use when drawing rounded corners for the cell.
 var cornerRadius: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat cornerRadius;
+```
+
 #### Discussion
 
 Setting the radius to a value greater than 0.0 points applies increasingly rounded corners to the cell.
 
 ## See Also
 
-- [var contentBleed: UIEdgeInsets](tvcollectionviewfullscreencell/contentbleed.md)
+### Modifying Cell Appearance
+- [var contentBleed: UIEdgeInsets](./contentbleed.md)
   The amount of content that overlaps into the masked portions of the cell.
-- [var maskAmount: CGFloat](tvcollectionviewfullscreencell/maskamount.md)
+- [var maskAmount: CGFloat](./maskamount.md)
   The factor that determines the amount of masking applied on the cell.
 
 

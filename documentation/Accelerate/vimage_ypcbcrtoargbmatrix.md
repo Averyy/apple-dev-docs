@@ -1,18 +1,19 @@
 # vImage_YpCbCrToARGBMatrix
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The 3 x 3 matrix that the vImage library uses to convert from YpCbCr to RGB.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ The 3 x 3 matrix that the vImage library uses to convert from YpCbCr to RGB.
 struct vImage_YpCbCrToARGBMatrix
 ```
 
+```c
+typedef struct vImage_YpCbCrToARGBMatrix { ... } vImage_YpCbCrToARGBMatrix;
+```
+
 #### Overview
 
 The vImage library uses this matrix to convert from YpCbCr to RGB using the following multiplication:
 
-```None
+```
                     | R |   | Yp    0     Cr_R |   | Y' |
                     | G | = | Yp   Cb_G   Cr_G | * | Cb |
                     | B |   | Yp   Cb_B     0  |   | Cr |
@@ -33,44 +38,45 @@ The vImage library uses this matrix to convert from YpCbCr to RGB using the foll
 ## Topics
 
 ### Creating a conversion matrix
-- [init(Yp: Float, Cr_R: Float, Cr_G: Float, Cb_G: Float, Cb_B: Float)](vimage_ypcbcrtoargbmatrix/init(yp:cr_r:cr_g:cb_g:cb_b:).md)
+- [init(Yp: Float, Cr_R: Float, Cr_G: Float, Cb_G: Float, Cb_B: Float)](./vimage_ypcbcrtoargbmatrix/init%28yp,cr_r,cr_g,cb_g,cb_b%29.md)
   Creates a 3 x 3 matrix for converting Y’CbCr signals to RGB.
-- [init()](vimage_ypcbcrtoargbmatrix/init.md)
+- [init()](./vimage_ypcbcrtoargbmatrix/init%28%29.md)
   Creates a 3 x 3 zero matrix for converting Y’CbCr signals to RGB.
 ### Conversion matrix elements
-- [var Yp: Float](vimage_ypcbcrtoargbmatrix/yp.md)
+- [var Yp: Float](./vimage_ypcbcrtoargbmatrix/yp.md)
   The *Yp* value in the conversion matrix.
-- [var Cr_R: Float](vimage_ypcbcrtoargbmatrix/cr_r.md)
+- [var Cr_R: Float](./vimage_ypcbcrtoargbmatrix/cr_r.md)
   The *Cr_R* value in the conversion matrix.
-- [var Cr_G: Float](vimage_ypcbcrtoargbmatrix/cr_g.md)
+- [var Cr_G: Float](./vimage_ypcbcrtoargbmatrix/cr_g.md)
   The *Cr_G* value in the conversion matrix.
-- [var Cb_G: Float](vimage_ypcbcrtoargbmatrix/cb_g.md)
+- [var Cb_G: Float](./vimage_ypcbcrtoargbmatrix/cb_g.md)
   The *Cb_G* value in the conversion matrix.
-- [var Cb_B: Float](vimage_ypcbcrtoargbmatrix/cb_b.md)
+- [var Cb_B: Float](./vimage_ypcbcrtoargbmatrix/cb_b.md)
   The *Cb_B* value in the conversion matrix.
 ### Conversion matrices
-- [var kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](kvimage_ypcbcrtoargbmatrix_itu_r_601_4.md)
+- [var kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](./kvimage_ypcbcrtoargbmatrix_itu_r_601_4.md)
   Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.601-4.
-- [var kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](kvimage_ypcbcrtoargbmatrix_itu_r_709_2.md)
+- [var kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](./kvimage_ypcbcrtoargbmatrix_itu_r_709_2.md)
   Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.709-2.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func vImageConvert_YpCbCrToARGB_GenerateConversion(UnsafePointer<vImage_YpCbCrToARGBMatrix>, UnsafePointer<vImage_YpCbCrPixelRange>, UnsafeMutablePointer<vImage_YpCbCrToARGB>, vImageYpCbCrType, vImageARGBType, vImage_Flags) -> vImage_Error](vimageconvert_ypcbcrtoargb_generateconversion(_:_:_:_:_:_:).md)
+### Generating conversion information
+- [func vImageConvert_YpCbCrToARGB_GenerateConversion(UnsafePointer<vImage_YpCbCrToARGBMatrix>, UnsafePointer<vImage_YpCbCrPixelRange>, UnsafeMutablePointer<vImage_YpCbCrToARGB>, vImageYpCbCrType, vImageARGBType, vImage_Flags) -> vImage_Error](./vimageconvert_ypcbcrtoargb_generateconversion%28_,_,_,_,_,_%29.md)
   Generates the information that describes the conversion from YpCbCr to ARGB.
-- [struct vImageYpCbCrType](vimageypcbcrtype.md)
+- [struct vImageYpCbCrType](./vimageypcbcrtype.md)
   Constants that describe the encoding of a YpCbCr image for conversions between RGB and YpCbCr.
-- [struct vImageARGBType](vimageargbtype.md)
+- [struct vImageARGBType](./vimageargbtype.md)
   Constants that describe the encoding of an ARGB image for conversions between RGB and YpCbCr.
-- [struct vImage_YpCbCrToARGB](vimage_ypcbcrtoargb.md)
+- [struct vImage_YpCbCrToARGB](./vimage_ypcbcrtoargb.md)
   The information that describes the conversion from YpCbCr to ARGB.
-- [struct vImage_YpCbCrPixelRange](vimage_ypcbcrpixelrange.md)
+- [struct vImage_YpCbCrPixelRange](./vimage_ypcbcrpixelrange.md)
   The description of range and clamping information for YpCbCr pixel formats.
 
 

@@ -1,7 +1,8 @@
 # init(rate:localizedName:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback speed with a rate and localized name.
 
@@ -17,6 +18,10 @@ Creates a playback speed with a rate and localized name.
 
 ```swift
 init(rate: Float, localizedName: String)
+```
+
+```objc
+- (instancetype) initWithRate:(float) rate localizedName:(NSString *) localizedName;
 ```
 
 ## Parameters

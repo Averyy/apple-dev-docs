@@ -1,7 +1,8 @@
 # layoutManagers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout managers for the text storage object.
 
@@ -18,11 +19,16 @@ The layout managers for the text storage object.
 var layoutManagers: [NSLayoutManager] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<NSLayoutManager *> * layoutManagers;
+```
+
 ## See Also
 
-- [func addLayoutManager(NSLayoutManager)](nstextstorage/addlayoutmanager(_:).md)
+### Accessing the layout managers
+- [func addLayoutManager(NSLayoutManager)](./addlayoutmanager%28_%29.md)
   Adds a layout manager to the text storage object’s set of layout managers.
-- [func removeLayoutManager(NSLayoutManager)](nstextstorage/removelayoutmanager(_:).md)
+- [func removeLayoutManager(NSLayoutManager)](./removelayoutmanager%28_%29.md)
   Removes a layout manager from the text storage object’s set of layout managers.
 
 

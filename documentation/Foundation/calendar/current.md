@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user’s current calendar.
 
@@ -26,7 +27,8 @@ This calendar does not track changes that the user makes to their preferences.
 
 ## See Also
 
-- [static var autoupdatingCurrent: Calendar](calendar/autoupdatingcurrent.md)
+### Getting the User’s Calendar
+- [static var autoupdatingCurrent: Calendar](./autoupdatingcurrent.md)
   A calendar that tracks changes to user’s preferred calendar.
 
 

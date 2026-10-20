@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](mlsupportvectorclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the support vector classifier that’s suitable for output during debugging.
 
 

@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Core Media  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a new block buffer by concatenating two block buffers.
 

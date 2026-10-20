@@ -1,7 +1,8 @@
 # protocolMetadata(definition:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retreives the metadata associated with a specific protocol.
 
@@ -22,7 +23,8 @@ func protocolMetadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?
 
 ## See Also
 
-- [let isFinal: Bool](nwconnection/contentcontext/isfinal.md)
+### Inspecting Receive Contexts
+- [let isFinal: Bool](./isfinal.md)
   A Boolean indicating whether this context represents the final message being sent or received.
 
 

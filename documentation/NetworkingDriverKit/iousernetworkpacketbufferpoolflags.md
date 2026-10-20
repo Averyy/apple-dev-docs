@@ -1,28 +1,29 @@
 # IOUserNetworkPacketBufferPoolFlags
 
 **Framework**: NetworkingDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 enum IOUserNetworkPacketBufferPoolFlags : unsigned int;
 ```
 
 ## Topics
 
 ### Enumeration Cases
-- [PoolFlagIODirectionIn](iousernetworkpacketbufferpoolflags/poolflagiodirectionin.md)
-- [PoolFlagIODirectionOut](iousernetworkpacketbufferpoolflags/poolflagiodirectionout.md)
-- [PoolFlagMapToDevice](iousernetworkpacketbufferpoolflags/poolflagmaptodevice.md)
-- [PoolFlagMapToDext](iousernetworkpacketbufferpoolflags/poolflagmaptodext.md)
-- [PoolFlagMask](iousernetworkpacketbufferpoolflags/poolflagmask.md)
-- [PoolFlagPersistentMemory](iousernetworkpacketbufferpoolflags/poolflagpersistentmemory.md)
-- [PoolFlagSingleMemorySegment](iousernetworkpacketbufferpoolflags/poolflagsinglememorysegment.md)
-- [PoolFlagVirtualDevice](iousernetworkpacketbufferpoolflags/poolflagvirtualdevice.md)
+- [PoolFlagIODirectionIn](./iousernetworkpacketbufferpoolflags/poolflagiodirectionin.md)
+- [PoolFlagIODirectionOut](./iousernetworkpacketbufferpoolflags/poolflagiodirectionout.md)
+- [PoolFlagMapToDevice](./iousernetworkpacketbufferpoolflags/poolflagmaptodevice.md)
+- [PoolFlagMapToDext](./iousernetworkpacketbufferpoolflags/poolflagmaptodext.md)
+- [PoolFlagMask](./iousernetworkpacketbufferpoolflags/poolflagmask.md)
+- [PoolFlagPersistentMemory](./iousernetworkpacketbufferpoolflags/poolflagpersistentmemory.md)
+- [PoolFlagSingleMemorySegment](./iousernetworkpacketbufferpoolflags/poolflagsinglememorysegment.md)
+- [PoolFlagVirtualDevice](./iousernetworkpacketbufferpoolflags/poolflagvirtualdevice.md)
 
 
 ---

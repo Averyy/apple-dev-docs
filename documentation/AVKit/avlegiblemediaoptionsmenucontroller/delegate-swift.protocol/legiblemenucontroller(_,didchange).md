@@ -1,7 +1,8 @@
 # legibleMenuController(_:didChange:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 optional func legibleMenuController(_ menuController: AVLegibleMediaOptionsMenuController, didChange state: AVLegibleMediaOptionsMenuState)
 ```
 
+```objc
+- (void) legibleMenuController:(AVLegibleMediaOptionsMenuController *) menuController didChangeMenuState:(AVLegibleMediaOptionsMenuState) state;
+```
+
 #### Discussion
 
 Tells the delegate, when legible media options menu state changes.
@@ -27,8 +32,9 @@ Tells the delegate, when legible media options menu state changes.
 
 ## See Also
 
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didrequestcaptionpreviewforprofileid:).md)
-- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview(_:).md)
+### Responding to menu changes
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](./legiblemenucontroller%28_,didrequestcaptionpreviewforprofileid%29.md)
+- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](./legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview%28_%29.md)
 
 
 ---

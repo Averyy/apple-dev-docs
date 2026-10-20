@@ -1,7 +1,8 @@
 # TabViewBottomAccessoryPlacement.inline
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view is displayed in line with the bottom tab bar.
 

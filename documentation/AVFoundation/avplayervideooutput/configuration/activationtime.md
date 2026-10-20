@@ -1,7 +1,8 @@
 # activationTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host time this configuration became active on its associated player object.
 
@@ -20,13 +21,18 @@ The host time this configuration became active on its associated player object.
 var activationTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime activationTime;
+```
+
 ## See Also
 
-- [var sourcePlayerItem: AVPlayerItem?](avplayervideooutput/configuration/sourceplayeritem.md)
+### Inspecting the configuration
+- [var sourcePlayerItem: AVPlayerItem?](./sourceplayeritem.md)
   The player item that’s the source of this configuration.
-- [var dataChannelDescription: [[CMTag]]](avplayervideooutput/configuration/datachanneldescription.md)
+- [var dataChannelDescription: [[CMTag]]](./datachanneldescription.md)
   An array of data channels selected for this configuration.
-- [var preferredTransform: CGAffineTransform](avplayervideooutput/configuration/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transform of the visual media.
 
 

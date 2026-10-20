@@ -1,7 +1,8 @@
 # init(bytes:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `TKSmartCardATR` object from a provided data object.
 
@@ -20,6 +21,10 @@ Initializes a `TKSmartCardATR` object from a provided data object.
 init?(bytes: Data)
 ```
 
+```objc
+- (instancetype) initWithBytes:(NSData *) bytes;
+```
+
 #### Return Value
 
 A `TKSmartCardATR` object initialized with the parsed data. If `bytes` does not contain a valid ATR, returns `nil`.
@@ -30,7 +35,8 @@ A `TKSmartCardATR` object initialized with the parsed data. If `bytes` does not 
 
 ## See Also
 
-- [init?(source: () -> Int32)](tksmartcardatr/init(source:).md)
+### Creating a Smart Card ATR
+- [init?(source: () -> Int32)](./init%28source%29.md)
   Initializes a `TKSmartCardATR` object from a provided data source.
 
 

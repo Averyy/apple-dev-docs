@@ -1,7 +1,8 @@
 # MerchantDetails
 
 **Framework**: Apple Pay Web Merchant Registration API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Detailed information for a single registered merchant.
 
@@ -10,7 +11,7 @@ Detailed information for a single registered merchant.
 
 ## Declaration
 
-```swift
+```
 object MerchantDetails
 ```
 
@@ -42,14 +43,19 @@ The result is a hexadecimal value that you can compare with the value that this 
 ## Properties
 
 - `domainNames` ([string]): A list of fully qualified domain names for which Apple Pay processes payments for this merchant.
-- `encryptTo` (string): A SHA-256 hash of the payment platform integrator ID or merchant ID that you provided for the `encryptTo` value when calling [`Register Merchant`](register-merchant.md).
+- `encryptTo` (string): A SHA-256 hash of the payment platform integrator ID or merchant ID that you provided for the `encryptTo` value when calling [`Register Merchant`](./register-merchant.md).
 - `partnerMerchantName` (string): A human-readable name for the merchant.
+
+  **Maximum Length**: `1024`
 - `partnerMerchantValidationURI` (string): The URI used by Apple to locate the domain verification file during merchant registration. It is used for tracking and debugging.
 - `partnerInternalMerchantIdentifier` (string): The identifier that uniquely identifies the merchant.
 
+  **Maximum Length**: `1024`; **Allowed Values**: `/ a-zA-Z0-9~-_+&@$!|,.;/`
+
 ## See Also
 
-- [Get Merchant Details](get-merchant.md)
+### Web Merchant Details
+- [Get Merchant Details](./get-merchant.md)
   Retrieve information about a registered merchant’s current state by using the merchant’s internal merchant identifier.
 
 

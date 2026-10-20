@@ -1,21 +1,26 @@
 # CGColorRenderingIntent.saturation
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case saturation
+```
+
+```c
+kCGRenderingIntentSaturation
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ Preserve the relative saturation value of the colors when converting into the ga
 
 ## See Also
 
-- [CGColorRenderingIntent.defaultIntent](cgcolorrenderingintent/defaultintent.md)
+### Constants
+- [CGColorRenderingIntent.defaultIntent](./defaultintent.md)
   The default rendering intent for the graphics context.
-- [CGColorRenderingIntent.absoluteColorimetric](cgcolorrenderingintent/absolutecolorimetric.md)
-- [CGColorRenderingIntent.relativeColorimetric](cgcolorrenderingintent/relativecolorimetric.md)
-- [CGColorRenderingIntent.perceptual](cgcolorrenderingintent/perceptual.md)
+- [CGColorRenderingIntent.absoluteColorimetric](./absolutecolorimetric.md)
+- [CGColorRenderingIntent.relativeColorimetric](./relativecolorimetric.md)
+- [CGColorRenderingIntent.perceptual](./perceptual.md)
   Preserve the visual relationship between colors by compressing the gamut of the graphics context to fit inside the gamut of the output device. Perceptual intent is good for photographs and other complex, detailed images.
 
 

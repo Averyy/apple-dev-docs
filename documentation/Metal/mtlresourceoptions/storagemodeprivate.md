@@ -1,7 +1,8 @@
 # storageModePrivate
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The resource is only available to the GPU.
 
@@ -19,19 +20,24 @@ The resource is only available to the GPU.
 static var storageModePrivate: MTLResourceOptions { get }
 ```
 
+```c
+MTLResourceStorageModePrivate
+```
+
 #### Discussion
 
 Metal may apply additional optimizations to private resources that aren’t allowed on shared or managed resources.
 
-For more guidance on how to choose storage modes, see [`Setting resource storage modes`](setting-resource-storage-modes.md).
+For more guidance on how to choose storage modes, see [Setting resource storage modes](../setting-resource-storage-modes.md).
 
 ## See Also
 
-- [static var storageModeShared: MTLResourceOptions](mtlresourceoptions/storagemodeshared.md)
+### Specifying storage modes
+- [static var storageModeShared: MTLResourceOptions](./storagemodeshared.md)
   The CPU and GPU share access to the resource, allocated in system memory.
-- [static var storageModeManaged: MTLResourceOptions](mtlresourceoptions/storagemodemanaged.md)
+- [static var storageModeManaged: MTLResourceOptions](./storagemodemanaged.md)
   The CPU and GPU may maintain separate copies of the resource, and any changes need to be explicitly synchronized.
-- [static var storageModeMemoryless: MTLResourceOptions](mtlresourceoptions/storagemodememoryless.md)
+- [static var storageModeMemoryless: MTLResourceOptions](./storagemodememoryless.md)
   The resource’s contents are only available to the GPU, and only exist temporarily during a render pass.
 
 

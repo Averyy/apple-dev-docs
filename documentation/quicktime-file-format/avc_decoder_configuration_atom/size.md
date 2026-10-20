@@ -1,15 +1,17 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit integer holding the size of the AVC decoder configuration atom.
 
 ## See Also
 
-- [Type](avc_decoder_configuration_atom/type.md)
+### Data fields
+- [Type](./type.md)
   An unsigned 32-bit field.
-- [AVC decoder configuration record](avc_decoder_configuration_atom/avc_decoder_configuration_record.md)
+- [AVC decoder configuration record](./avc_decoder_configuration_record.md)
   A record that configures the AVC decoder.
 
 

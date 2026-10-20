@@ -1,7 +1,8 @@
 # functionalName
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the functional operation this definition implements.
 
@@ -19,9 +20,9 @@ var functionalName: String { get }
 
 #### Discussion
 
-Unlike [`name`](shadergraph/nodedefinition/name.md), the functional name omits type information and is shared by all definitions that implement the same operation across different types. For example, `ND_atan2_float` and `ND_atan2_vector2` both have the functional name `"atan2"`.
+Unlike [`name`](./name.md), the functional name omits type information and is shared by all definitions that implement the same operation across different types. For example, `ND_atan2_float` and `ND_atan2_vector2` both have the functional name `"atan2"`.
 
-Use this value with [`definitions(function:inputs:)`](shadergraph/nodelibrary/definitions(function:inputs:).md) to find all type variants of an operation.
+Use this value with [`definitions(function:inputs:)`](../nodelibrary/definitions%28function,inputs%29.md) to find all type variants of an operation.
 
 
 ---

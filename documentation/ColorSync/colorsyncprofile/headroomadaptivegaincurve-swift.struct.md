@@ -1,7 +1,8 @@
 # ColorSyncProfile.HeadroomAdaptiveGainCurve
 
 **Framework**: ColorSync  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Headroom Adaptive Gain Curve metadata that describes how to tone map a profile’s HDR content to the dynamic range available on the display.
 
@@ -22,34 +23,35 @@ struct HeadroomAdaptiveGainCurve
 
 #### Overview
 
-A profile stores this metadata in its HAGC tag; it applies only to profiles whose transfer function is PQ, HLG, or linear. Use [`colorVolumeTransform`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md) to describe the tone mapping to perform, then embed the curve in a profile with `ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary`.
+A profile stores this metadata in its HAGC tag; it applies only to profiles whose transfer function is PQ, HLG, or linear. Use [`colorVolumeTransform`](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md) to describe the tone mapping to perform, then embed the curve in a profile with `ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary`.
 
 ## Topics
 
 ### Structures
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md)
   A color volume transform that maps HDR content into a display’s dynamic range.
 ### Initializers
-- [init(applicationVersion: UInt8, colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform?) throws](colorsyncprofile/headroomadaptivegaincurve-swift.struct/init(applicationversion:colorvolumetransform:).md)
+- [init(applicationVersion: UInt8, colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform?) throws](./headroomadaptivegaincurve-swift.struct/init%28applicationversion,colorvolumetransform%29.md)
   Creates Headroom Adaptive Gain Curve metadata.
 ### Instance Properties
-- [var applicationVersion: UInt8](colorsyncprofile/headroomadaptivegaincurve-swift.struct/applicationversion.md)
+- [var applicationVersion: UInt8](./headroomadaptivegaincurve-swift.struct/applicationversion.md)
   The application version of the metadata, as defined by ST 2094-50.
-- [var colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform?](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md)
+- [var colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform?](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md)
   The color volume transform to apply, if any.
 ### Enumerations
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.Error](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.Error](./headroomadaptivegaincurve-swift.struct/error.md)
   An error thrown while constructing Headroom Adaptive Gain Curve metadata.
 
 ## See Also
 
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md)
+### Describing a curve in Swift
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct.md)
   A color volume transform that maps HDR content into a display’s dynamic range.
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping.md)
   Headroom-adaptive tone mapping that adjusts HDR content to the display’s available headroom.
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method](./headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md)
   The tone-mapping method: reference-white-based, or a headroom-adaptive gain curve.
-- [ColorSyncProfile.HeadroomAdaptiveGainCurve.Error](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error.md)
+- [ColorSyncProfile.HeadroomAdaptiveGainCurve.Error](./headroomadaptivegaincurve-swift.struct/error.md)
   An error thrown while constructing Headroom Adaptive Gain Curve metadata.
 
 

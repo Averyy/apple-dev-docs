@@ -1,7 +1,8 @@
 # automaticReloadBilling
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Summary items that contain the top-up amount and balance threshold amount for the automatic reload payment.
 
@@ -18,9 +19,14 @@ Summary items that contain the top-up amount and balance threshold amount for th
 var automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem { get set }
 ```
 
+```objc
+@property (nonatomic, strong) PKAutomaticReloadPaymentSummaryItem * automaticReloadBilling;
+```
+
 ## See Also
 
-- [class PKAutomaticReloadPaymentSummaryItem](pkautomaticreloadpaymentsummaryitem.md)
+### Setting the payment summary items
+- [class PKAutomaticReloadPaymentSummaryItem](../pkautomaticreloadpaymentsummaryitem.md)
   An object that defines a summary item for an automatic reload or refill payment, such as a store card top-up.
 
 

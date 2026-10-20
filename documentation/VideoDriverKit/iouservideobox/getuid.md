@@ -1,7 +1,8 @@
 # GetUID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the unique identifier of the video box.
 
@@ -10,7 +11,7 @@ Gets the unique identifier of the video box.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetUID();
 ```
 

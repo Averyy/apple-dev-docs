@@ -1,7 +1,8 @@
 # parentID
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the item’s parent.
 
@@ -14,9 +15,14 @@ The identifier of the item’s parent.
 var parentID: FSItem.Identifier { get set }
 ```
 
+```objc
+@property (nonatomic) FSItemID parentID;
+```
+
 ## See Also
 
-- [var fileID: FSItem.Identifier](fsitem/attributes/fileid.md)
+### Working with identifier attributes
+- [var fileID: FSItem.Identifier](./fileid.md)
   The item’s file identifier.
 
 

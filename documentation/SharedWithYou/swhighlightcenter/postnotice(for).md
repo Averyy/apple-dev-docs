@@ -1,7 +1,8 @@
 # postNotice(for:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Posts a specified event to the highlight center for display.
 
@@ -18,13 +19,18 @@ Posts a specified event to the highlight center for display.
 func postNotice(for event: any SWHighlightEvent)
 ```
 
+```objc
+- (void) postNoticeForHighlightEvent:(id<SWHighlightEvent>) event;
+```
+
 ## Parameters
 
-- `event`: The [`SWHighlightEvent`](swhighlightevent.md) to add.
+- `event`: The [`SWHighlightEvent`](../swhighlightevent.md) to add.
 
 ## See Also
 
-- [func clearNotices(for: SWCollaborationHighlight)](swhighlightcenter/clearnotices(for:).md)
+### Posting highlight events
+- [func clearNotices(for: SWCollaborationHighlight)](./clearnotices%28for%29.md)
   Clears the notices for a specified collaboration highlight.
 
 

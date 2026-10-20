@@ -1,7 +1,8 @@
 # readAttributeCapabilityMinima(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCapabilityMinima(completion: @escaping @Sendable (MTRBasicInformationClusterCapabilityMinimaStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCapabilityMinima() async throws -> MTRBasicInformationClusterCapabilityMinimaStruct
+```
+
+```objc
+- (void) readAttributeCapabilityMinimaWithCompletion:(void (^)(MTRBasicInformationClusterCapabilityMinimaStruct *value, NSError *error)) completion;
 ```
 
 

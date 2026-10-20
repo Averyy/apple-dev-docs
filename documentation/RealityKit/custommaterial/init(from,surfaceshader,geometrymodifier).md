@@ -1,7 +1,8 @@
 # init(from:surfaceShader:geometryModifier:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom material from an existing material, surface shader, and geometry modifier.
 
@@ -30,11 +31,12 @@ Use this initializer to create a custom material with the same properties as ano
 
 ## See Also
 
-- [init(from: any Material, geometryModifier: CustomMaterial.GeometryModifier) throws](custommaterial/init(from:geometrymodifier:).md)
+### Creating custom materials
+- [init(from: any Material, geometryModifier: CustomMaterial.GeometryModifier) throws](./init%28from,geometrymodifier%29.md)
   Creates a custom material from an existing material and a geometry modifier.
-- [init(surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier?, lightingModel: CustomMaterial.LightingModel) throws](custommaterial/init(surfaceshader:geometrymodifier:lightingmodel:).md)
+- [init(surfaceShader: CustomMaterial.SurfaceShader, geometryModifier: CustomMaterial.GeometryModifier?, lightingModel: CustomMaterial.LightingModel) throws](./init%28surfaceshader,geometrymodifier,lightingmodel%29.md)
   Creates a custom material from a lighting model, surface shader, and geometry modifier.
-- [init(program: CustomMaterial.Program)](custommaterial/init(program:).md)
+- [init(program: CustomMaterial.Program)](./init%28program%29.md)
 
 
 ---

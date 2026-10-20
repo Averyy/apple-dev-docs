@@ -1,7 +1,8 @@
 # allowedInputSourceLocales
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of keyboard input source locales allowed when this input context is active.
 
@@ -14,13 +15,18 @@ The set of keyboard input source locales allowed when this input context is acti
 var allowedInputSourceLocales: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * allowedInputSourceLocales;
+```
+
 #### Discussion
 
 `NSAllRomanInputSourcesLocaleIdentifier` can be specified as a valid locale.
 
 ## See Also
 
-- [var acceptsGlyphInfo: Bool](nstextinputcontext/acceptsglyphinfo.md)
+### Configuring the Input Context
+- [var acceptsGlyphInfo: Bool](./acceptsglyphinfo.md)
   A Boolean value that indicates whether the client handles `NSGlyphInfoAttributeName` or not.
 
 

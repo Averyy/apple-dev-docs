@@ -1,7 +1,8 @@
 # edge
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge of the scroll view to affect
 
@@ -16,6 +17,10 @@ The edge of the scroll view to affect
 
 ```swift
 var edge: UIRectEdge { get set }
+```
+
+```objc
+@property (nonatomic) UIRectEdge edge;
 ```
 
 

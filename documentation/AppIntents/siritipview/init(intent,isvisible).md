@@ -1,7 +1,8 @@
 # init(intent:isVisible:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `SiriTipView` for the associated action that displays when the binding to a Boolean value is true .
 
@@ -9,7 +10,7 @@ Creates a `SiriTipView` for the associated action that displays when the binding
 - iOS 16.0+
 - iPadOS 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

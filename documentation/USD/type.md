@@ -1,6 +1,7 @@
 # type
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that controls the order in which the actions execute.
 
@@ -23,15 +24,16 @@ uniform token type = "serial" (
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [audio](audio.md)
+- [audio](./audio.md)
   The location of an audio file.
-- [gain](gain.md)
+- [gain](./gain.md)
   A value that controls the audio volume.
-- [auralMode](auralmode.md)
+- [auralMode](./auralmode.md)
   An option that controls the audio signal’s spacial dynamics.
 
 

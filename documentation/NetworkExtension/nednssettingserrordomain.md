@@ -1,7 +1,8 @@
 # NEDNSSettingsErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors resulting from calls to the DNS settings manager.
 
@@ -18,13 +19,18 @@ The domain for errors resulting from calls to the DNS settings manager.
 let NEDNSSettingsErrorDomain: String
 ```
 
+```c
+extern NSString * const NEDNSSettingsErrorDomain;
+```
+
 #### Discussion
 
-Match this constant to the [`domain`](https://developer.apple.com/documentation/foundation/nserror/domain) of an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) encountered when calling methods on [`NEDNSSettingsManager`](nednssettingsmanager.md). The [`NEDNSSettingsManagerError`](nednssettingsmanagererror.md) enumeration defines possible [`code`](https://developer.apple.com/documentation/foundation/nserror/code) values for these errors.
+Match this constant to the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) encountered when calling methods on [`NEDNSSettingsManager`](./nednssettingsmanager.md). The [`NEDNSSettingsManagerError`](./nednssettingsmanagererror.md) enumeration defines possible [`code`](../Foundation/nserror/code.md) values for these errors.
 
 ## See Also
 
-- [enum NEDNSSettingsManagerError](nednssettingsmanagererror.md)
+### Handling errors
+- [enum NEDNSSettingsManagerError](./nednssettingsmanagererror.md)
   Error codes specific to DNS managers.
 
 

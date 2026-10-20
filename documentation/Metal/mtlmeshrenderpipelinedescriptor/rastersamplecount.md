@@ -1,7 +1,8 @@
 # rasterSampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var rasterSampleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger rasterSampleCount;
 ```
 
 

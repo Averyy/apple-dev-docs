@@ -1,14 +1,17 @@
 # ENVariantOfConcernType.type4
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The fourth user-definable type for a variant of concern.
 
 **Availability**:
-- iOS 15.2+
-- iPadOS 15.2+
-- Mac Catalyst 15.2+
+- iOS 15.2+ - Deprecated in 27.0
+- iPadOS 15.2+ - Deprecated in 27.0
+- Mac Catalyst 15.2+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ The fourth user-definable type for a variant of concern.
 case type4
 ```
 
+```c
+ENVariantOfConcernType4
+```
+
 ## See Also
 
-- [ENVariantOfConcernType.type1](envariantofconcerntype/type1.md)
+### User-Defined Types
+- [ENVariantOfConcernType.type1](./type1.md)
   The first user-definable type for a variant of concern.
-- [ENVariantOfConcernType.type2](envariantofconcerntype/type2.md)
+- [ENVariantOfConcernType.type2](./type2.md)
   The second user-definable type for a variant of concern.
-- [ENVariantOfConcernType.type3](envariantofconcerntype/type3.md)
+- [ENVariantOfConcernType.type3](./type3.md)
   The third user-definable type for a variant of concern.
-- [ENVariantOfConcernType.typeUnknown](envariantofconcerntype/typeunknown.md)
+- [ENVariantOfConcernType.typeUnknown](./typeunknown.md)
   The unknown type for a variant of concern.
 
 

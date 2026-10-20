@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextDecoration.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requests a preview of the text without any additional decoration.
 
@@ -15,6 +16,10 @@ Requests a preview of the text without any additional decoration.
 
 ```swift
 case none
+```
+
+```c
+UIWritingToolsCoordinatorTextDecorationNone
 ```
 
 

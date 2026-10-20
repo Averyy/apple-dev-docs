@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Returns the lesser of the two given values.
@@ -40,12 +41,18 @@ Double.minimum(.nan, .nan)
 // nan
 ```
 
-The `minimum` method implements the `minNum` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `minimum` method implements the `minNum` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
 - `x`: A floating-point value.
 - `y`: Another floating-point value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [static func minimum(Self, Self) -> Self](./minimum%28_,_%29-cb9c.md)
+  Returns the lesser of the two given values.
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the sampler.
@@ -11,7 +12,7 @@ A string that identifies the sampler.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ A string that identifies the sampler.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. See [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlsamplerstate/device.md)
+### Identifying the sampler
+- [var device: any MTLDevice](./device.md)
   The device object that created the sampler.
 
 

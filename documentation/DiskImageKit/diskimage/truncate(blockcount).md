@@ -1,7 +1,8 @@
 # truncate(blockCount:)
 
 **Framework**: DiskImageKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Truncate or extend the disk image to a new size.
 
@@ -18,7 +19,7 @@ func truncate(blockCount: Int) throws
 
 This changes the size of the disk image itself, but not its contents, such as file systems, partition map, and so on. Shrinking the disk image may cause data loss if the file system inside it exceeds the new size. The image must not be a cache image. For a stacked disk image, the top layer is truncated, as the stack size equals to its top layer’s size.
 
-> **Note**: [`InvalidBlockCountError`](invalidblockcounterror.md) if the block count is zero or negative. `POSIXError` if the truncate operation fails.
+> **Throws**: [`InvalidBlockCountError`](../invalidblockcounterror.md) if the block count is zero or negative. `POSIXError` if the truncate operation fails.
 
 ## Parameters
 

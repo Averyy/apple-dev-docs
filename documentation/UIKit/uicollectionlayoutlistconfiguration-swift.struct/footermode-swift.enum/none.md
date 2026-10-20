@@ -1,7 +1,8 @@
 # UICollectionLayoutListConfiguration.FooterMode.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No footers are shown.
 
@@ -10,7 +11,7 @@ No footers are shown.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ case none
 
 ## See Also
 
-- [UICollectionLayoutListConfiguration.FooterMode.supplementary](uicollectionlayoutlistconfiguration-swift.struct/footermode-swift.enum/supplementary.md)
+### Footer modes
+- [UICollectionLayoutListConfiguration.FooterMode.supplementary](./supplementary.md)
   A footer mode that uses supplementary views to show footers.
 
 

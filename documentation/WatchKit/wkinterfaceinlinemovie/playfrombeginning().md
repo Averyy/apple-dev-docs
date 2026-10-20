@@ -1,7 +1,8 @@
 # playFromBeginning()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Plays the movie from the beginning.
 
@@ -14,11 +15,16 @@ Plays the movie from the beginning.
 func playFromBeginning()
 ```
 
+```objc
+- (void) playFromBeginning;
+```
+
 ## See Also
 
-- [func pause()](wkinterfaceinlinemovie/pause.md)
+### Controlling Playback
+- [func pause()](./pause%28%29.md)
   Pauses the movie.
-- [func play()](wkinterfaceinlinemovie/play.md)
+- [func play()](./play%28%29.md)
   Plays the movie.
 
 

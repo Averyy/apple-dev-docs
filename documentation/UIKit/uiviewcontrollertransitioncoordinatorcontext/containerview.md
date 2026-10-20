@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the view in which the transition takes place.
@@ -10,13 +11,17 @@ Returns the view in which the transition takes place.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var containerView: UIView { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIView * containerView;
 ```
 
 #### Return Value
@@ -29,9 +34,10 @@ The container view acts as the host view for any animations between the transiti
 
 ## See Also
 
-- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](uiviewcontrollertransitioncoordinatorcontext/viewcontroller(forkey:).md)
+### Getting the views and view controllers
+- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](./viewcontroller%28forkey%29.md)
   Returns the view controllers involved in the transition.
-- [func view(forKey: UITransitionContextViewKey) -> UIView?](uiviewcontrollertransitioncoordinatorcontext/view(forkey:).md)
+- [func view(forKey: UITransitionContextViewKey) -> UIView?](./view%28forkey%29.md)
   Returns the specified view involved in the transition.
 
 

@@ -1,7 +1,8 @@
 # setIdleTimeout(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the desired idle suspend timeout for the interface.
 
@@ -15,6 +16,10 @@ Sets the desired idle suspend timeout for the interface.
 func setIdleTimeout(_ idleTimeout: TimeInterval) throws
 ```
 
+```objc
+- (BOOL) setIdleTimeout:(NSTimeInterval) idleTimeout error:(NSError **) error;
+```
+
 #### Discussion
 
 After the interface idles, it defers electrical suspension of the device for the specified duration.
@@ -25,7 +30,8 @@ After the interface idles, it defers electrical suspension of the device for the
 
 ## See Also
 
-- [var idleTimeout: TimeInterval](iousbhostinterface/idletimeout.md)
+### Enabling Power Savings
+- [var idleTimeout: TimeInterval](./idletimeout.md)
   The current idle suspend timeout.
 
 

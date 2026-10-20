@@ -1,7 +1,8 @@
 # filterPacketProviderBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the filter packet provider system extension.
 
@@ -14,15 +15,20 @@ The bundle identifier of the filter packet provider system extension.
 var filterPacketProviderBundleIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * filterPacketProviderBundleIdentifier;
+```
+
 #### Discussion
 
-If this property is `nil`, then the framework uses the bundle identifier of the [`NEFilterPacketProvider`](nefilterpacketprovider.md) extension in the calling app’s bundle. In this case, make sure the calling app’s bundle contains only one [`NEFilterPacketProvider`](nefilterpacketprovider.md), so there’s no ambiguity about which one to use.
+If this property is `nil`, then the framework uses the bundle identifier of the [`NEFilterPacketProvider`](../nefilterpacketprovider.md) extension in the calling app’s bundle. In this case, make sure the calling app’s bundle contains only one [`NEFilterPacketProvider`](../nefilterpacketprovider.md), so there’s no ambiguity about which one to use.
 
 This property only applies to system extensions, since macOS doesn’t support implementing a filter packet provider as an app extension.
 
 ## See Also
 
-- [var filterDataProviderBundleIdentifier: String?](nefilterproviderconfiguration/filterdataproviderbundleidentifier.md)
+### Accessing bundle identifiers
+- [var filterDataProviderBundleIdentifier: String?](./filterdataproviderbundleidentifier.md)
   The bundle identifier of the filter data provider system extension.
 
 

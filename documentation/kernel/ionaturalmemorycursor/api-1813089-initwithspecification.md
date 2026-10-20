@@ -7,14 +7,14 @@ Primary initializer for the IONaturalMemoryCursor class.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithSpecification(
  IOPhysicalLength maxSegmentSize, 
  IOPhysicalLength maxTransferSize, 
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if the inherited classes and this instance initialize successfully.
 
@@ -26,11 +26,12 @@ Returns true if the inherited classes and this instance initialize successfully.
 
 ## See Also
 
-- [getPhysicalSegments](ionaturalmemorycursor/1813076-getphysicalsegments.md)
+### Miscellaneous
+- [getPhysicalSegments](./api-1813076-getphysicalsegments.md)
   Generates a CPU natural physical scatter/gather list given a memory descriptor.
-- [outputSegment](ionaturalmemorycursor/1813100-outputsegment.md)
+- [outputSegment](./api-1813100-outputsegment.md)
   Outputs the given segment into the output segments array in natural byte order.
-- [withSpecification](ionaturalmemorycursor/1813112-withspecification.md)
+- [withSpecification](./api-1813112-withspecification.md)
   Creates and initializes an IONaturalMemoryCursor in one operation.
 
 

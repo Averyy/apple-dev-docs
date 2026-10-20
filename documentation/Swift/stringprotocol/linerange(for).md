@@ -1,7 +1,8 @@
 # lineRange(for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of characters representing the line or lines containing a given range.
 

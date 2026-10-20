@@ -1,7 +1,8 @@
 # state
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the Smart Card reader slot.
 
@@ -20,13 +21,18 @@ The current state of the Smart Card reader slot.
 var state: TKSmartCardSlot.State { get }
 ```
 
+```objc
+@property (readonly) TKSmartCardSlotState state;
+```
+
 #### Discussion
 
-Use Key-Value-Observing to be notified for changes to the state. For more information, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+Use Key-Value-Observing to be notified for changes to the state. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 ## See Also
 
-- [TKSmartCardSlot.State](tksmartcardslot/state-swift.enum.md)
+### Getting the Slot State
+- [TKSmartCardSlot.State](./state-swift.enum.md)
   All smart card slot states.
 
 

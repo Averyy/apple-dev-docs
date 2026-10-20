@@ -1,11 +1,12 @@
 # Shearable3DProtocol Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func sheared(AxisWithFactorsFloat) -> ProjectiveTransform3DFloat](projectivetransform3dfloat/sheared(_:).md)
+- [func sheared(AxisWithFactorsFloat) -> ProjectiveTransform3DFloat](./sheared%28_%29.md)
   Returns the transform sheared by the specified shear.
 
 

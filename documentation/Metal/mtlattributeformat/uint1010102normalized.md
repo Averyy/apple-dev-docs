@@ -1,7 +1,8 @@
 # MTLAttributeFormat.uint1010102Normalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 One packed 32-bit value with four normalized unsigned integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
 
@@ -19,11 +20,16 @@ One packed 32-bit value with four normalized unsigned integer values, arranged a
 case uint1010102Normalized
 ```
 
+```c
+MTLAttributeFormatUInt1010102Normalized
+```
+
 ## See Also
 
-- [MTLAttributeFormat.int1010102Normalized](mtlattributeformat/int1010102normalized.md)
+### 32-bit normalized integer formats
+- [MTLAttributeFormat.int1010102Normalized](./int1010102normalized.md)
   One packed 32-bit value with four normalized signed two’s complement integer values, arranged as 10 bits, 10 bits, 10 bits, and 2 bits.
-- [MTLAttributeFormat.uchar4Normalized_bgra](mtlattributeformat/uchar4normalized_bgra.md)
+- [MTLAttributeFormat.uchar4Normalized_bgra](./uchar4normalized_bgra.md)
   Four unsigned normalized 8-bit values, arranged as blue, green, red, and alpha components.
 
 

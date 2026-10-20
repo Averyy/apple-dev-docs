@@ -1,14 +1,15 @@
 # ConstHFSUniStr255Param
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef const HFSUniStr255 *ConstHFSUniStr255Param;
 ```
 

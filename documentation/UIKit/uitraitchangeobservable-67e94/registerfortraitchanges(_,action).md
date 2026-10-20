@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Registers a list of traits to observe, and calls a method on the receiving object when one of the observed traits changes.
@@ -11,7 +12,7 @@ Registers a list of traits to observe, and calls a method on the receiving objec
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,13 +23,13 @@ Registers a list of traits to observe, and calls a method on the receiving objec
 
 #### Return Value
 
-An opaque token you can use to stop observing trait changes by passing to [`unregisterForTraitChanges(_:)`](uitraitchangeobservable-67e94/unregisterfortraitchanges(_:).md). You don’t have to unregister your observations, and you can safely ignore this value.
+An opaque token you can use to stop observing trait changes by passing to [`unregisterForTraitChanges(_:)`](./unregisterfortraitchanges%28_%29.md). You don’t have to unregister your observations, and you can safely ignore this value.
 
 #### Discussion
 
-This is a convenience method for [`registerForTraitChanges(_:target:action:)`](uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:).md) when the object receiving the registration is the target of the action. For example, when you register for changes on `self`, the `target` is `self`.
+This is a convenience method for [`registerForTraitChanges(_:target:action:)`](./registerfortraitchanges%28_,target,action%29.md) when the object receiving the registration is the target of the action. For example, when you register for changes on `self`, the `target` is `self`.
 
-The following example calls [`setNeedsLayout()`](uiview/setneedslayout().md) in response to changes to size traits:
+The following example calls [`setNeedsLayout()`](../uiview/setneedslayout%28%29.md) in response to changes to size traits:
 
 ```swift
 let sizeTraits: [UITrait] = [UITraitVerticalSizeClass.self, UITraitHorizontalSizeClass.self]
@@ -44,15 +45,16 @@ registerForTraitChanges(sizeTraits, action: #selector(UIView.setNeedsLayout))
 
 ## See Also
 
-- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](uitraitchangeobservable-67e94/registerfortraitchanges(_:handler:).md)
+### Observing trait changes
+- [func registerForTraitChanges<TraitEnvironment>([UITrait], handler: Self.TraitChangeHandler<TraitEnvironment>) -> any UITraitChangeRegistration](./registerfortraitchanges%28_,handler%29.md)
   Registers a list of traits to observe and a closure to execute when one of the observed traits changes.
-- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](uitraitchangeobservable-67e94/registerfortraitchanges(_:target:action:).md)
+- [func registerForTraitChanges([UITrait], target: Any, action: Selector) -> any UITraitChangeRegistration](./registerfortraitchanges%28_,target,action%29.md)
   Registers a list of traits to observe, and calls a method on the specified target object when one of the observed traits changes.
-- [func unregisterForTraitChanges(any UITraitChangeRegistration)](uitraitchangeobservable-67e94/unregisterfortraitchanges(_:).md)
+- [func unregisterForTraitChanges(any UITraitChangeRegistration)](./unregisterfortraitchanges%28_%29.md)
   Tells the system to stop observing previously registered traits.
-- [UITraitChangeObservable.TraitChangeHandler](uitraitchangeobservable-67e94/traitchangehandler.md)
+- [UITraitChangeObservable.TraitChangeHandler](./traitchangehandler.md)
   A closure the system executes when observed traits change.
-- [protocol UITraitChangeRegistration](uitraitchangeregistration.md)
+- [protocol UITraitChangeRegistration](../uitraitchangeregistration.md)
 
 
 ---

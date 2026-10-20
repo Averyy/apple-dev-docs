@@ -1,7 +1,8 @@
 # sentDate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date that notes when the sender added the message to the conversation.
 
@@ -16,9 +17,14 @@ A date that notes when the sender added the message to the conversation.
 var sentDate: Date { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) NSDate * sentDate;
+```
+
 ## See Also
 
-- [var text: String](uiconversationcontext/entry/text.md)
+### Getting entry details
+- [var text: String](./text.md)
   A string that contains the message’s text.
 
 

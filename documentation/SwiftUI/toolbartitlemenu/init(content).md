@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar title menu.
 
@@ -27,7 +28,8 @@ init(@ContentBuilder content: () -> Content)
 
 ## See Also
 
-- [init()](toolbartitlemenu/init.md)
+### Creating a toolbar title menu
+- [init()](./init%28%29.md)
   Creates a toolbar title menu where actions are inferred from your apps commands.
 
 

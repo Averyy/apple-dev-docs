@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a row grouping containing only the groups that satisfy a predicate.

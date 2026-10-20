@@ -1,7 +1,8 @@
 # channelManager(_:failedToStopTransmittingInChannel:error:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer that transmission failed to stop.
 
@@ -16,6 +17,10 @@ Tells the observer that transmission failed to stop.
 optional func channelManager(_ channelManager: PTChannelManager, failedToStopTransmittingInChannel channelUUID: UUID, error: any Error)
 ```
 
+```objc
+- (void) channelManager:(PTChannelManager *) channelManager failedToStopTransmittingInChannelWithUUID:(NSUUID *) channelUUID error:(NSError *) error;
+```
+
 ## Parameters
 
 - `channelManager`: The channel manager.
@@ -24,13 +29,14 @@ optional func channelManager(_ channelManager: PTChannelManager, failedToStopTra
 
 ## See Also
 
-- [func channelManager(PTChannelManager, channelUUID: UUID, didBeginTransmittingFrom: PTChannelTransmitRequestSource)](ptchannelmanagerdelegate/channelmanager(_:channeluuid:didbegintransmittingfrom:).md)
+### Beginning or ending transmission
+- [func channelManager(PTChannelManager, channelUUID: UUID, didBeginTransmittingFrom: PTChannelTransmitRequestSource)](./channelmanager%28_,channeluuid,didbegintransmittingfrom%29.md)
   Tells the observer that transmission began.
-- [func channelManager(PTChannelManager, channelUUID: UUID, didEndTransmittingFrom: PTChannelTransmitRequestSource)](ptchannelmanagerdelegate/channelmanager(_:channeluuid:didendtransmittingfrom:).md)
+- [func channelManager(PTChannelManager, channelUUID: UUID, didEndTransmittingFrom: PTChannelTransmitRequestSource)](./channelmanager%28_,channeluuid,didendtransmittingfrom%29.md)
   Tells the observer that transmission ended.
-- [func channelManager(PTChannelManager, failedToBeginTransmittingInChannel: UUID, error: any Error)](ptchannelmanagerdelegate/channelmanager(_:failedtobegintransmittinginchannel:error:).md)
+- [func channelManager(PTChannelManager, failedToBeginTransmittingInChannel: UUID, error: any Error)](./channelmanager%28_,failedtobegintransmittinginchannel,error%29.md)
   Tells the observer that transmission failed to begin.
-- [func incomingServiceUpdatePush(channelManager: PTChannelManager, channelUUID: UUID, pushPayload: [String : Any], isHighPriority: Bool, remainingHighPriorityBudget: Int, completion: () -> Void)](ptchannelmanagerdelegate/incomingserviceupdatepush(channelmanager:channeluuid:pushpayload:ishighpriority:remaininghighprioritybudget:completion:).md)
+- [func incomingServiceUpdatePush(channelManager: PTChannelManager, channelUUID: UUID, pushPayload: [String : Any], isHighPriority: Bool, remainingHighPriorityBudget: Int, completion: () -> Void)](./incomingserviceupdatepush%28channelmanager,channeluuid,pushpayload,ishighpriority,remaininghighprioritybudget,completion%29.md)
   Extracts the service update data from the notification’s payload to perform the relevant task for that data.
 
 

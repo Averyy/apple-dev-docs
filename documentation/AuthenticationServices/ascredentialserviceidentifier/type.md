@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of services that the identifier represents.
 
@@ -18,11 +19,16 @@ The kind of services that the identifier represents.
 var type: ASCredentialServiceIdentifier.IdentifierType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASCredentialServiceIdentifierType type;
+```
+
 ## See Also
 
-- [var identifier: String](ascredentialserviceidentifier/identifier.md)
+### Identifying the credential service
+- [var identifier: String](./identifier.md)
   A string that names the identified service.
-- [ASCredentialServiceIdentifier.IdentifierType](ascredentialserviceidentifier/identifiertype.md)
+- [ASCredentialServiceIdentifier.IdentifierType](./identifiertype.md)
   Possible values for the service identifier type.
 
 

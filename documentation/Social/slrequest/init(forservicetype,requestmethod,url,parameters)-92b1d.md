@@ -1,7 +1,8 @@
 # init(forServiceType:requestMethod:URL:parameters:)
 
 **Framework**: Social  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 6.0+

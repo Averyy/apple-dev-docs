@@ -1,54 +1,56 @@
 # fBufferIOVMAddr
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start address of the generated physical segment of the data buffer.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 uint64_t fBufferIOVMAddr;
 ```
 
 #### Discussion
 
-The physical segment is large enough to accommodate the amount of data that [`fRequestedTransferCount`](scsiuserparalleltask/frequestedtransfercount.md) indicates.
+The physical segment is large enough to accommodate the amount of data that [`fRequestedTransferCount`](./frequestedtransfercount.md) indicates.
 
 ## See Also
 
-- [version](scsiuserparalleltask/version.md)
+### Task properties
+- [version](./version.md)
   The version of the parallel task structure currently in use.
-- [SCSIUserParallelTaskVersion](scsiuserparalleltaskversion.md)
+- [SCSIUserParallelTaskVersion](../scsiuserparalleltaskversion.md)
   Constants that represent versions of the user parallel task structure.
-- [fTargetID](scsiuserparalleltask/ftargetid.md)
+- [fTargetID](./ftargetid.md)
   An identifier that represents a SCSI target device.
-- [fSCSIParallelFeatureRequest](scsiuserparalleltask/fscsiparallelfeaturerequest.md)
+- [fSCSIParallelFeatureRequest](./fscsiparallelfeaturerequest.md)
   An array of features of the SCSI parallel interface to negotiate.
-- [SCSIParallelFeatureRequest](scsiparallelfeaturerequest.md)
+- [SCSIParallelFeatureRequest](../scsiparallelfeaturerequest.md)
   An enumeration of feature negotiation behaviors.
-- [fSCSIParallelFeatureRequestCount](scsiuserparalleltask/fscsiparallelfeaturerequestcount.md)
+- [fSCSIParallelFeatureRequestCount](./fscsiparallelfeaturerequestcount.md)
   The number of features to negotiate.
-- [fControllerTaskIdentifier](scsiuserparalleltask/fcontrollertaskidentifier.md)
+- [fControllerTaskIdentifier](./fcontrollertaskidentifier.md)
   A unique identifier for a task.
-- [fRequestedTransferCount](scsiuserparalleltask/frequestedtransfercount.md)
+- [fRequestedTransferCount](./frequestedtransfercount.md)
   The requested data transfer count for the request’s data.
-- [fTaskAttribute](scsiuserparalleltask/ftaskattribute.md)
+- [fTaskAttribute](./ftaskattribute.md)
   The SCSI task attribute of the task.
-- [fTaskTagIdentifier](scsiuserparalleltask/ftasktagidentifier.md)
+- [fTaskTagIdentifier](./ftasktagidentifier.md)
   A 64-bit number that represents a unique task identifier.
-- [fLogicalUnitBytes](scsiuserparalleltask/flogicalunitbytes.md)
+- [fLogicalUnitBytes](./flogicalunitbytes.md)
   The request’s logical unit bytes.
-- [fCommandDescriptorBlock](scsiuserparalleltask/fcommanddescriptorblock.md)
+- [fCommandDescriptorBlock](./fcommanddescriptorblock.md)
   The task’s SCSI command descriptor block.
-- [fCommandSize](scsiuserparalleltask/fcommandsize.md)
+- [fCommandSize](./fcommandsize.md)
   The size of the SCSI command descriptor block in bytes.
-- [fTransferDirection](scsiuserparalleltask/ftransferdirection.md)
+- [fTransferDirection](./ftransferdirection.md)
   The direction of data transfer for this task.
-- [reserved](scsiuserparalleltask/reserved.md)
+- [reserved](./reserved.md)
   An unused field reserved for future use.
 
 

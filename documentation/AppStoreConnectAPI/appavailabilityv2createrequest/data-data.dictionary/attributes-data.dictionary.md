@@ -1,7 +1,8 @@
 # AppAvailabilityV2CreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app availability create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app availability create request resource.
 
 ## Declaration
 
-```swift
+```
 object AppAvailabilityV2CreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object AppAvailabilityV2CreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppAvailabilityV2CreateRequest.Data.Relationships](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppAvailabilityV2CreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

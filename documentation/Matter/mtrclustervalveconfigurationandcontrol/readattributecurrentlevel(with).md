@@ -1,7 +1,8 @@
 # readAttributeCurrentLevel(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeCurrentLevel(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeCurrentLevelWithParams:(MTRReadParams *) params;
 ```
 
 

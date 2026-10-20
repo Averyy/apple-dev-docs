@@ -1,22 +1,25 @@
 # Find Ad Groups
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetches ad groups within a campaign.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
 #### Discussion
 
-Use this endpoint to find ad groups within campaigns using the associated `campaignId` in the resource path. Use  a [`Selector`](selector.md) [`Condition`](condition.md) to narrow results. If you don’t specify selector conditions, all ad groups in campaigns return. See the [`AdGroup`](adgroup.md) object for field descriptions and selector condition operators.
+Use this endpoint to find ad groups within campaigns using the associated `campaignId` in the resource path. Use  a [`Selector`](./selector.md) [`Condition`](./condition.md) to narrow results. If you don’t specify selector conditions, all ad groups in campaigns return. See the [`AdGroup`](./adgroup.md) object for field descriptions and selector condition operators.
 
-##### Payload Example Find Ad Groups
+##### Payload example: Find ad groups
 
 **Request**:
 
@@ -247,25 +250,41 @@ POST https://api.searchads.apple.com/api/v5/campaigns/<campaignid>/adgroups/find
 
 ## Parameters
 
+### Path Parameters
+
 - `campaignId` (int64) *(required)*: The unique identifier for the campaign.
 
 ## Request Body
 
-The request body that includes the selector [`Condition`](condition.md). [`Selector`](selector.md) objects define what data the API returns when fetching resources.
+**Content-Type**: `application/json`  
+**Type**: `Selector`
+
+The request body that includes the selector [`Condition`](./condition.md). [`Selector`](./selector.md) objects define what data the API returns when fetching resources.
+
+## Responses
+
+- `200` OK (`AdGroupListResponse`, `application/json`): If the call succeeds, the API returns the [`AdGroup`](./adgroup.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `404` Not Found (`ApiErrorResponse`, `application/json`): The API can’t locate the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Create an Ad Group](create-an-ad-group.md)
+### Ad Group Endpoints
+- [Create an Ad Group](./create-an-ad-group.md)
   Creates an ad group as part of a campaign.
-- [Find Ad Groups (org-level)](find-ad-groups-(org-level).md)
+- [Find Ad Groups (org-level)](./find-ad-groups-%28org-level%29.md)
   Fetches ad groups within an organization.
-- [Get an Ad Group](get-an-ad-group.md)
+- [Get an Ad Group](./get-an-ad-group.md)
   Fetches a specific ad group with a campaign and ad group identifier.
-- [Get all Ad Groups](get-all-ad-groups.md)
+- [Get all Ad Groups](./get-all-ad-groups.md)
   Fetches all ad groups with a campaign identifier.
-- [Update an Ad Group](update-an-ad-group.md)
+- [Update an Ad Group](./update-an-ad-group.md)
   Updates an ad group with an ad group identifier.
-- [Delete an Ad Group](delete-an-ad-group.md)
+- [Delete an Ad Group](./delete-an-ad-group.md)
   Deletes an ad group with a campaign and ad group identifier.
 
 

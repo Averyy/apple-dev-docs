@@ -1,15 +1,22 @@
 # CTFontManagerAutoActivationSetting.promptUser
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.13
+
+> **Deprecated**: Deprecated
 
 ## Declaration
 
 ```swift
 case promptUser
+```
+
+```c
+kCTFontManagerAutoActivationPromptUser
 ```
 
 #### Discussion
@@ -18,9 +25,10 @@ Requires user input for auto-activation. A dialog is presented to the user to co
 
 ## See Also
 
-- [CTFontManagerAutoActivationSetting.default](ctfontmanagerautoactivationsetting/default.md)
-- [CTFontManagerAutoActivationSetting.disabled](ctfontmanagerautoactivationsetting/disabled.md)
-- [CTFontManagerAutoActivationSetting.enabled](ctfontmanagerautoactivationsetting/enabled.md)
+### Constants
+- [CTFontManagerAutoActivationSetting.default](./default.md)
+- [CTFontManagerAutoActivationSetting.disabled](./disabled.md)
+- [CTFontManagerAutoActivationSetting.enabled](./enabled.md)
 
 
 ---

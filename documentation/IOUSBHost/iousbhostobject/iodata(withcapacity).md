@@ -1,7 +1,8 @@
 # ioData(withCapacity:)
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allocates a buffer for input/output requests.
 
@@ -15,6 +16,10 @@ Allocates a buffer for input/output requests.
 func ioData(withCapacity capacity: Int) throws -> NSMutableData
 ```
 
+```objc
+- (NSMutableData *) ioDataWithCapacity:(NSUInteger) capacity error:(NSError **) error;
+```
+
 #### Return Value
 
 A pointer to an allocated buffer.
@@ -23,7 +28,7 @@ A pointer to an allocated buffer.
 
 This method allocates and maps a kernel buffer that the underlying controller hardware has optimized. Using this method, the buffer doesn’t bounce to perform DMA operations.
 
-> ❗ **Important**:  Because the kernel backs the [`NSMutableData`](https://developer.apple.com/documentation/foundation/nsmutabledata) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
+> ❗ **Important**:  Because the kernel backs the [`NSMutableData`](../../Foundation/nsmutabledata.md) object, the length and capacity aren’t mutable. Any changes to the length or capacity throws an exception.
 
 ## Parameters
 

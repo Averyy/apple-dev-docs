@@ -1,12 +1,15 @@
 # video
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The media item incorporates video.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The media item incorporates video.
 static let video: TVMediaItem.MediaType
 ```
 
+```c
+extern TVMediaItemType const TVMediaItemTypeVideo;
+```
+
 ## See Also
 
-- [static let audio: TVMediaItem.MediaType](tvmediaitem/mediatype/audio.md)
+### Media Types
+- [static let audio: TVMediaItem.MediaType](./audio.md)
   The media item is audio only.
 
 

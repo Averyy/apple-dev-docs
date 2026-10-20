@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Accesses a contiguous subrange of the collection’s elements.
@@ -38,7 +39,7 @@ print(streets[index!])
 // Prints "Evarts"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

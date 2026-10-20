@@ -1,7 +1,8 @@
 # DetectFaceRectanglesRequest.Revision
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the algorithm or implementation that the request performs.
 
@@ -23,27 +24,28 @@ enum Revision
 ## Topics
 
 ### Getting the revision
-- [DetectFaceRectanglesRequest.Revision.revision3](detectfacerectanglesrequest/revision-swift.enum/revision3.md)
+- [DetectFaceRectanglesRequest.Revision.revision3](./revision-swift.enum/revision3.md)
   An algorithm or implementation that represents the third revision.
-- [DetectFaceRectanglesRequest.Revision.revision4](detectfacerectanglesrequest/revision-swift.enum/revision4.md)
-  Compared to `.revision3`, this revision generally provides better precision and recall, and bounding boxes tend to be tighter. This is the default revision on platforms that support it. Specify `.revision3` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](detectfacerectanglesrequest/supportedrevisions.md) to check if this revision is supported on the platform.
+- [DetectFaceRectanglesRequest.Revision.revision4](./revision-swift.enum/revision4.md)
+  Compared to `.revision3`, this revision generally provides better precision and recall, and bounding boxes tend to be tighter. This is the default revision on platforms that support it. Specify `.revision3` at instantiation to preserve the previous behavior. Use [`supportedRevisions`](./supportedrevisions.md) to check if this revision is supported on the platform.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revision: DetectFaceRectanglesRequest.Revision](detectfacerectanglesrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectFaceRectanglesRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [DetectFaceRectanglesRequest.Revision]](detectfacerectanglesrequest/supportedrevisions.md)
+- [static let supportedRevisions: [DetectFaceRectanglesRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
 
 

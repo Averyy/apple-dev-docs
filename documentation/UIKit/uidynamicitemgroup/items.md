@@ -1,7 +1,8 @@
 # items
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic items in the group.
 
@@ -16,6 +17,10 @@ The dynamic items in the group.
 
 ```swift
 var items: [any UIDynamicItem] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<id<UIDynamicItem>> * items;
 ```
 
 

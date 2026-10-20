@@ -1,7 +1,8 @@
 # CLLocationButtonIcon.none
 
 **Framework**: CoreLocationUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that doesn’t display an icon.
 
@@ -16,15 +17,20 @@ A style that doesn’t display an icon.
 case none
 ```
 
+```c
+CLLocationButtonIconNone
+```
+
 #### Discussion
 
-Use a different icon style if [`label`](cllocationbutton/label.md) is [`CLLocationButtonLabel.none`](cllocationbuttonlabel/none.md).
+Use a different icon style if [`label`](../cllocationbutton/label.md) is [`CLLocationButtonLabel.none`](../cllocationbuttonlabel/none.md).
 
 ## See Also
 
-- [CLLocationButtonIcon.arrowFilled](cllocationbuttonicon/arrowfilled.md)
+### Customizing icon styles
+- [CLLocationButtonIcon.arrowFilled](./arrowfilled.md)
   A style that displays a filled arrow icon.
-- [CLLocationButtonIcon.arrowOutline](cllocationbuttonicon/arrowoutline.md)
+- [CLLocationButtonIcon.arrowOutline](./arrowoutline.md)
   A style that displays an unfilled, outline arrow icon.
 
 

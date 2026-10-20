@@ -1,14 +1,15 @@
 # matchPathLocation
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 const char * matchPathLocation(const char *cmp, const IORegistryPlane *plane);
 ```
 

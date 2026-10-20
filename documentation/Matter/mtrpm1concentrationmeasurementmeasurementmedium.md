@@ -1,7 +1,8 @@
 # MTRPM1ConcentrationMeasurementMeasurementMedium
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,24 +19,28 @@
 enum MTRPM1ConcentrationMeasurementMeasurementMedium
 ```
 
+```c
+enum MTRPM1ConcentrationMeasurementMeasurementMedium : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRPM1ConcentrationMeasurementMeasurementMedium.air](mtrpm1concentrationmeasurementmeasurementmedium/air.md)
-- [MTRPM1ConcentrationMeasurementMeasurementMedium.soil](mtrpm1concentrationmeasurementmeasurementmedium/soil.md)
-- [MTRPM1ConcentrationMeasurementMeasurementMedium.water](mtrpm1concentrationmeasurementmeasurementmedium/water.md)
+- [MTRPM1ConcentrationMeasurementMeasurementMedium.air](./mtrpm1concentrationmeasurementmeasurementmedium/air.md)
+- [MTRPM1ConcentrationMeasurementMeasurementMedium.soil](./mtrpm1concentrationmeasurementmeasurementmedium/soil.md)
+- [MTRPM1ConcentrationMeasurementMeasurementMedium.water](./mtrpm1concentrationmeasurementmeasurementmedium/water.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrpm1concentrationmeasurementmeasurementmedium/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrpm1concentrationmeasurementmeasurementmedium/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

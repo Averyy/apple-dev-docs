@@ -1,7 +1,8 @@
 # zoneDurations
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the time spent in each zone, ordered from lowest to highest threshold.
 
@@ -25,7 +26,8 @@ Each element in this array corresponds to a zone in the group’s configuration 
 
 ## See Also
 
-- [let configuration: HKWorkoutZoneConfiguration](hkworkoutzonegroup/configuration.md)
+### Accessing group properties
+- [let configuration: HKWorkoutZoneConfiguration](./configuration.md)
   A property that specifies the zone configuration that defines the zones for this group.
 
 

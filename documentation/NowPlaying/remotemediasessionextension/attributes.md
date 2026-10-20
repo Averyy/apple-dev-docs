@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type that represents attributes for your remote sessions.

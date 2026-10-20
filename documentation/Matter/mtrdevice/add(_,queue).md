@@ -1,7 +1,8 @@
 # add(_:queue:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a delegate to receive asynchronous callbacks about the device.
 
@@ -18,6 +19,10 @@ Adds a delegate to receive asynchronous callbacks about the device.
 
 ```swift
 func add(_ delegate: any MTRDeviceDelegate, queue: dispatch_queue_t)
+```
+
+```objc
+- (void) addDelegate:(id<MTRDeviceDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
 #### Discussion

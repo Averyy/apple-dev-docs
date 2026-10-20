@@ -1,7 +1,8 @@
 # feedTensors
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tensors fed to the graph, can be used to order the inputs when executable is created with a graph.
 
@@ -17,6 +18,10 @@ Tensors fed to the graph, can be used to order the inputs when executable is cre
 
 ```swift
 var feedTensors: [MPSGraphTensor]? { get }
+```
+
+```objc
+@property (atomic, readonly, nullable) NSArray<MPSGraphTensor *> * feedTensors;
 ```
 
 

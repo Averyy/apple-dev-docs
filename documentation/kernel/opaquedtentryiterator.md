@@ -1,14 +1,15 @@
 # OpaqueDTEntryIterator
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct OpaqueDTEntryIterator {
     ...
 } OpaqueDTEntryIterator;
@@ -17,11 +18,11 @@ typedef struct OpaqueDTEntryIterator {
 ## Topics
 
 ### Instance Properties
-- [currentEntry](opaquedtentryiterator/2869586-currententry.md)
-- [currentIndex](opaquedtentryiterator/2869590-currentindex.md)
-- [currentScope](opaquedtentryiterator/2869592-currentscope.md)
-- [outerScope](opaquedtentryiterator/2869601-outerscope.md)
-- [savedScope](opaquedtentryiterator/2869591-savedscope.md)
+- [currentEntry](./opaquedtentryiterator/api-2869586-currententry.md)
+- [currentIndex](./opaquedtentryiterator/api-2869590-currentindex.md)
+- [currentScope](./opaquedtentryiterator/api-2869592-currentscope.md)
+- [outerScope](./opaquedtentryiterator/api-2869601-outerscope.md)
+- [savedScope](./opaquedtentryiterator/api-2869591-savedscope.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isHiddenOrHasHiddenAncestor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the menu item or any of its superitems is hidden.
 
@@ -14,9 +15,14 @@ A Boolean value that indicates whether the menu item or any of its superitems is
 var isHiddenOrHasHiddenAncestor: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isHiddenOrHasHiddenAncestor) BOOL hiddenOrHasHiddenAncestor;
+```
+
 ## See Also
 
-- [var isHidden: Bool](nsmenuitem/ishidden.md)
+### Managing hidden status
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that indicates whether the menu item is hidden.
 
 

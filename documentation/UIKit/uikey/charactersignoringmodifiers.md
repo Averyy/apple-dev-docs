@@ -1,7 +1,8 @@
 # charactersIgnoringModifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the text value of the key without modifier keys.
 
@@ -18,19 +19,24 @@ A string that represents the text value of the key without modifier keys.
 var charactersIgnoringModifiers: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * charactersIgnoringModifiers;
+```
+
 ## Mentions
 
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
 #### Discussion
 
 For Latin-based languages, always expect a lowercase property value. If the user is pressing only a modifier key, the property value is an empty string.
 
-To check for special keys, compare [`charactersIgnoringModifiers`](uikey/charactersignoringmodifiers.md) to constants listed in [`Input strings for special keys`](input-strings-for-special-keys.md).
+To check for special keys, compare [`charactersIgnoringModifiers`](./charactersignoringmodifiers.md) to constants listed in [Input strings for special keys](../input-strings-for-special-keys.md).
 
 ## See Also
 
-- [var characters: String](uikey/characters.md)
+### Getting key characters
+- [var characters: String](./characters.md)
   A string that represents the text value of the key combined with any active modifier keys.
 
 

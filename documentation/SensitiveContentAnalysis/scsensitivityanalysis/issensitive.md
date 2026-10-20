@@ -1,7 +1,8 @@
 # isSensitive
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the checked content contains sensitive material.
 
@@ -18,14 +19,18 @@ A Boolean value that indicates whether the checked content contains sensitive ma
 var isSensitive: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSensitive) BOOL sensitive;
+```
+
 ## Mentions
 
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
-- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
+- [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
-The framework indicates that content is sensitive only when the active [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md). When this property is `true`, check [`detectedTypes`](scsensitivityanalysis/detectedtypes.md) to determine the specific categories of sensitive content that the framework detects in the media.
+The framework indicates that content is sensitive only when the active [`analysisPolicy`](../scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](../scsensitivityanalysispolicy/disabled.md). When this property is `true`, check [`detectedTypes`](./detectedtypes.md) to determine the specific categories of sensitive content that the framework detects in the media.
 
 
 ---

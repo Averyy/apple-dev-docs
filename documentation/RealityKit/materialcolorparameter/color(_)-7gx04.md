@@ -1,7 +1,8 @@
 # MaterialColorParameter.color(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A color value in macOS.
 
@@ -16,7 +17,8 @@ case color(NSColor)
 
 ## See Also
 
-- [MaterialColorParameter.texture(_:)](materialcolorparameter/texture(_:).md)
+### Selecting color parameters
+- [MaterialColorParameter.texture(_:)](./texture%28_%29.md)
   A texture resource.
 
 

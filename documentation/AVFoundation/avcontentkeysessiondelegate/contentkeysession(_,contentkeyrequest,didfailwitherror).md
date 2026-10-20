@@ -1,7 +1,8 @@
 # contentKeySession(_:contentKeyRequest:didFailWithError:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the receiver that the content key request failed.
 
@@ -20,28 +21,33 @@ Tells the receiver that the content key request failed.
 optional func contentKeySession(_ session: AVContentKeySession, contentKeyRequest keyRequest: AVContentKeyRequest, didFailWithError err: any Error)
 ```
 
+```objc
+- (void) contentKeySession:(AVContentKeySession *) session contentKeyRequest:(AVContentKeyRequest *) keyRequest didFailWithError:(NSError *) err;
+```
+
 ## Parameters
 
 - `session`: The content key session that initiated the content key request.
 - `keyRequest`: The content key request that failed.
-- `err`: An instance of [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the failure that occurred.
+- `err`: An instance of [`NSError`](../../Foundation/nserror.md) that describes the failure that occurred.
 
 ## See Also
 
-- [func contentKeySession(AVContentKeySession, didProvide: [AVContentKeyRequest], forInitializationData: Data?)](avcontentkeysessiondelegate/contentkeysession(_:didprovide:forinitializationdata:).md)
-- [func contentKeySession(AVContentKeySession, externalProtectionStatusDidChangeFor: AVContentKey)](avcontentkeysessiondelegate/contentkeysession(_:externalprotectionstatusdidchangefor:).md)
+### Updating and retrying content key requests
+- [func contentKeySession(AVContentKeySession, didProvide: [AVContentKeyRequest], forInitializationData: Data?)](./contentkeysession%28_,didprovide,forinitializationdata%29.md)
+- [func contentKeySession(AVContentKeySession, externalProtectionStatusDidChangeFor: AVContentKey)](./contentkeysession%28_,externalprotectionstatusdidchangefor%29.md)
   Tells the delegate when external protection state has changed.
-- [func contentKeySession(AVContentKeySession, didUpdatePersistableContentKey: Data, forContentKeyIdentifier: Any)](avcontentkeysessiondelegate/contentkeysession(_:didupdatepersistablecontentkey:forcontentkeyidentifier:).md)
+- [func contentKeySession(AVContentKeySession, didUpdatePersistableContentKey: Data, forContentKeyIdentifier: Any)](./contentkeysession%28_,didupdatepersistablecontentkey,forcontentkeyidentifier%29.md)
   Provides the receiver with an updated persistable content key for a specific key request.
-- [func contentKeySession(AVContentKeySession, shouldRetry: AVContentKeyRequest, reason: AVContentKeyRequest.RetryReason) -> Bool](avcontentkeysessiondelegate/contentkeysession(_:shouldretry:reason:).md)
+- [func contentKeySession(AVContentKeySession, shouldRetry: AVContentKeyRequest, reason: AVContentKeyRequest.RetryReason) -> Bool](./contentkeysession%28_,shouldretry,reason%29.md)
   Provides the receiver with a content key request object to retry.
-- [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
+- [AVContentKeyRequest.RetryReason](../avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
-- [func contentKeySessionContentProtectionSessionIdentifierDidChange(AVContentKeySession)](avcontentkeysessiondelegate/contentkeysessioncontentprotectionsessionidentifierdidchange(_:).md)
+- [func contentKeySessionContentProtectionSessionIdentifierDidChange(AVContentKeySession)](./contentkeysessioncontentprotectionsessionidentifierdidchange%28_%29.md)
   Tells the receiver the content protection session identifier changed.
-- [func contentKeySession(AVContentKeySession, contentKeyRequestDidSucceed: AVContentKeyRequest)](avcontentkeysessiondelegate/contentkeysession(_:contentkeyrequestdidsucceed:).md)
+- [func contentKeySession(AVContentKeySession, contentKeyRequestDidSucceed: AVContentKeyRequest)](./contentkeysession%28_,contentkeyrequestdidsucceed%29.md)
   Tells the content key session that the response to a content key requeset was successfully processed.
-- [func contentKeySessionDidGenerateExpiredSessionReport(AVContentKeySession)](avcontentkeysessiondelegate/contentkeysessiondidgenerateexpiredsessionreport(_:).md)
+- [func contentKeySessionDidGenerateExpiredSessionReport(AVContentKeySession)](./contentkeysessiondidgenerateexpiredsessionreport%28_%29.md)
   Notifies the sender that an expired session report has been generated.
 
 

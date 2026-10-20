@@ -2,18 +2,23 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the view containing the receiver’s user interface.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func provideNewView(_ initialRequest: Bool) -> NSView
+```
+
+```objc
+- (NSView *) provideNewView:(BOOL) initialRequest;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ This message is sent to the color picker whenever the color panel attempts to di
 
 ## Parameters
 
-- `initialRequest`: [`true`](https://developer.apple.com/documentation/swift/true) only when this method is first invoked for your color picker. If `initialRequest` is [`true`](https://developer.apple.com/documentation/swift/true), the method should perform any initialization required (such as lazily loading a nib file, initializing the view, or performing any other custom initialization required for your picker).
+- `initialRequest`: [`true`](../../Swift/true.md) only when this method is first invoked for your color picker. If `initialRequest` is [`true`](../../Swift/true.md), the method should perform any initialization required (such as lazily loading a nib file, initializing the view, or performing any other custom initialization required for your picker).
 
 
 ---

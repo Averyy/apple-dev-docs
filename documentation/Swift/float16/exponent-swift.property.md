@@ -1,7 +1,8 @@
 # exponent
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exponent of the floating-point value.
 
@@ -42,7 +43,7 @@ The `exponent` property has the following edge cases:
 - If `x` is zero, then `x.exponent` is `Int.min`.
 - If `x` is +/-infinity or NaN, then `x.exponent` is `Int.max`
 
-This property implements the `logB` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This property implements the `logB` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 
 ---

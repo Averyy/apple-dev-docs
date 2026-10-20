@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func intersects(_ other: Rect3DFloat) -> Bool
+```
+
+```c
+static bool SPRect3DFloatIntersectsRect(SPRect3DFloat rect, SPRect3DFloat other);
 ```
 
 #### Return Value

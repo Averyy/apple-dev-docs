@@ -1,7 +1,8 @@
 # mapTemplate(_:didEndZoomGestureWithVelocity:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a person stopped zooming the map.
 
@@ -16,9 +17,13 @@ Tells the delegate that a person stopped zooming the map.
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didEndZoomGestureWithVelocity velocity: CGFloat)
 ```
 
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didEndZoomGestureWithVelocity:(CGFloat) velocity;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 - `velocity`: The velocity of the zoom gesture in scale factor per second.
 
 

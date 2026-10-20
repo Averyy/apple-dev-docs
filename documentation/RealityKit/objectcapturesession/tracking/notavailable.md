@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.notAvailable
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracking is not yet available.
 

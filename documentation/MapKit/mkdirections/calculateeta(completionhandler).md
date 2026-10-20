@@ -1,7 +1,8 @@
 # calculateETA(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins calculating the requested travel-time information asynchronously.
 
@@ -17,14 +18,22 @@ Begins calculating the requested travel-time information asynchronously.
 ## Declaration
 
 ```swift
+func calculateETA(completionHandler: @escaping @Sendable (MKDirections.ETAResponse?, (any Error)?) -> Void)
+```
+
+```swift
 func calculateETA() async throws -> MKDirections.ETAResponse
+```
+
+```objc
+- (void) calculateETAWithCompletionHandler:(MKETAHandler) completionHandler;
 ```
 
 #### Discussion
 
 This method initiates a request for a travel-time estimate and calls your completion handler block with the results. Travel-time estimates take much less time to generate than directions, so use this method in situations where you want a time estimate only. The method executes your completion handler on your app’s main thread. The implementation of your handler needs to check for errors and then incorporate the response data as appropriate.
 
-If you call this method while a previous request is in process, this method calls your completion handler with an error. You can determine whether a request is in process by checking the value of the [`isCalculating`](mkdirections/iscalculating.md) property. You can also cancel a request as necessary.
+If you call this method while a previous request is in process, this method calls your completion handler with an error. You can determine whether a request is in process by checking the value of the [`isCalculating`](./iscalculating.md) property. You can also cancel a request as necessary.
 
 ## Parameters
 
@@ -32,9 +41,10 @@ If you call this method while a previous request is in process, this method call
 
 ## See Also
 
-- [MKDirections.ETAHandler](mkdirections/etahandler.md)
+### Getting the ETA
+- [MKDirections.ETAHandler](./etahandler.md)
   The block to use for processing travel-time information.
-- [MKDirections.ETAResponse](mkdirections/etaresponse.md)
+- [MKDirections.ETAResponse](./etaresponse.md)
   The travel-time information that Apple servers return.
 
 

@@ -1,7 +1,8 @@
 # init(localized:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized attributed string from a localized string resource, including an attribute scope that a key path identifies.
 
@@ -22,32 +23,33 @@ init<S>(localized resource: LocalizedStringResource, including scope: KeyPath<At
 
 #### Discussion
 
-Call this initializer to look up the localization indicated by `resource`. Alter the resource’s [`locale`](localizedstringresource/locale.md) prior to calling this method if you want to localize this string in a different locale than the process that created the [`LocalizedStringResource`](localizedstringresource.md).
+Call this initializer to look up the localization indicated by `resource`. Alter the resource’s [`locale`](../localizedstringresource/locale.md) prior to calling this method if you want to localize this string in a different locale than the process that created the [`LocalizedStringResource`](../localizedstringresource.md).
 
-The attributed string contains attributes of type [`AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes`](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct.md) to indicate runs containing formatted text, such as localized numbers or dates. Access these attributes with the attribute key [`localizedNumericArgument`](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargument.md) or [`localizedDateArgument`](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateargument.md).
+The attributed string contains attributes of type [`AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes`](../attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct.md) to indicate runs containing formatted text, such as localized numbers or dates. Access these attributes with the attribute key [`localizedNumericArgument`](../attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargument.md) or [`localizedDateArgument`](../attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateargument.md).
 
 ## Parameters
 
-- `resource`: A [`LocalizedStringResource`](localizedstringresource.md) that provides the localization key, table, bundle, and locale.
-- `scope`: An [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
+- `resource`: A [`LocalizedStringResource`](../localizedstringresource.md) that provides the localization key, table, bundle, and locale.
+- `scope`: An [`AttributeScopes`](../attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 
 ## See Also
 
-- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md)
+### Creating a Localized Attributed String
+- [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](./init%28localized,options,table,bundle,locale,comment%29-8dlnl.md)
   Creates an attributed string by looking up a localized string from the app’s bundle.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-8uknv.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: S.Type)](./init%28localized,options,table,bundle,locale,comment,including%29-8uknv.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope.
-- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(localized:options:table:bundle:locale:comment:including:)-5jzpg.md)
+- [init<S>(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?, including: KeyPath<AttributeScopes, S.Type>)](./init%28localized,options,table,bundle,locale,comment,including%29-5jzpg.md)
   Creates an attributed string by looking up a localized string from the app’s bundle, including an attribute scope that a key path identifies.
-- [String.LocalizationValue](../swift/string/localizationvalue.md)
+- [String.LocalizationValue](../../Swift/string/localizationvalue.md)
   A reference to a localizable string, with optional string interpolation.
-- [AttributedString.FormattingOptions](attributedstring/formattingoptions.md)
+- [AttributedString.FormattingOptions](./formattingoptions.md)
   Options that affect the handling of attributes.
-- [init(localized: LocalizedStringResource)](attributedstring/init(localized:).md)
+- [init(localized: LocalizedStringResource)](./init%28localized%29.md)
   Creates a localized attributed string from a localized string resource.
-- [init<S>(localized: LocalizedStringResource, including: S.Type)](attributedstring/init(localized:including:)-2xebo.md)
+- [init<S>(localized: LocalizedStringResource, including: S.Type)](./init%28localized,including%29-2xebo.md)
   Creates a localized attributed string from a localized string resource, including an attribute scope.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](../localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
 
 

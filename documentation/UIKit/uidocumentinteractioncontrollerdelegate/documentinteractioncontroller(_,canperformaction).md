@@ -1,15 +1,18 @@
 # documentInteractionController(_:canPerformAction:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller needs to know whether the specified action can be performed on the associated document.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 3.2+
-- visionOS 1.0+
+- iOS 3.2+ - Deprecated in 6.0
+- iPadOS 3.2+ - Deprecated in 6.0
+- Mac Catalyst 3.2+ - Deprecated in 6.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Apps should use [`UIActivityViewController`](../uiactivityviewcontroller.md) for actions.
 
 ## Declaration
 
@@ -17,17 +20,21 @@ Called when a document interaction controller needs to know whether the specifie
 optional func documentInteractionController(_ controller: UIDocumentInteractionController, canPerformAction action: Selector?) -> Bool
 ```
 
+```objc
+- (BOOL) documentInteractionController:(UIDocumentInteractionController *) controller canPerformAction:(SEL) action;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified action is supported for the associated document or [`false`](https://developer.apple.com/documentation/swift/false) if it is not. If you do not implement this method, the return value is assumed to be [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified action is supported for the associated document or [`false`](../../Swift/false.md) if it is not. If you do not implement this method, the return value is assumed to be [`false`](../../Swift/false.md).
 
 #### Discussion
 
-When building the options menu (invoked, for example, by the user performing a long press gesture), a document interaction controller calls this method to find out if your app can perform various actions. If you implement this method for a given action, you must also implement the [`documentInteractionController(_:performAction:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md) method for that action.
+When building the options menu (invoked, for example, by the user performing a long press gesture), a document interaction controller calls this method to find out if your app can perform various actions. If you implement this method for a given action, you must also implement the [`documentInteractionController(_:performAction:)`](./documentinteractioncontroller%28_,performaction%29.md) method for that action.
 
 The supported `action` selectors for this method are `copy:` and `print:`. (The `print:` selector is available in iOS 4.2 and later. Printing is supported only on devices that support multitasking.)
 
-For each action that you implement in the [`documentInteractionController(_:performAction:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontroller(_:performaction:).md) delegate method, return [`true`](https://developer.apple.com/documentation/swift/true) from this method if that action is available for the document.
+For each action that you implement in the [`documentInteractionController(_:performAction:)`](./documentinteractioncontroller%28_,performaction%29.md) delegate method, return [`true`](../../Swift/true.md) from this method if that action is available for the document.
 
 ## Parameters
 
@@ -36,17 +43,18 @@ For each action that you implement in the [`documentInteractionController(_:perf
 
 ## See Also
 
-- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillbeginpreview(_:).md)
+### Presenting the user interface
+- [func documentInteractionControllerWillBeginPreview(UIDocumentInteractionController)](./documentinteractioncontrollerwillbeginpreview%28_%29.md)
   Called when a document interaction controller is about to display a preview for its document.
-- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdidendpreview(_:).md)
+- [func documentInteractionControllerDidEndPreview(UIDocumentInteractionController)](./documentinteractioncontrollerdidendpreview%28_%29.md)
   Called when a document interaction controller has dismissed its document preview.
-- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentoptionsmenu(_:).md)
+- [func documentInteractionControllerWillPresentOptionsMenu(UIDocumentInteractionController)](./documentinteractioncontrollerwillpresentoptionsmenu%28_%29.md)
   Called when a document interaction controller is about to display an options menu.
-- [func documentInteractionControllerDidDismissOptionsMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissoptionsmenu(_:).md)
+- [func documentInteractionControllerDidDismissOptionsMenu(UIDocumentInteractionController)](./documentinteractioncontrollerdiddismissoptionsmenu%28_%29.md)
   Called when a document interaction controller has dismissed its options menu.
-- [func documentInteractionControllerWillPresentOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerwillpresentopeninmenu(_:).md)
+- [func documentInteractionControllerWillPresentOpenInMenu(UIDocumentInteractionController)](./documentinteractioncontrollerwillpresentopeninmenu%28_%29.md)
   Called when a document interaction controller is about to display an Open In menu.
-- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerdiddismissopeninmenu(_:).md)
+- [func documentInteractionControllerDidDismissOpenInMenu(UIDocumentInteractionController)](./documentinteractioncontrollerdiddismissopeninmenu%28_%29.md)
   Called when a document interaction controller has dismissed its Open In menu.
 
 

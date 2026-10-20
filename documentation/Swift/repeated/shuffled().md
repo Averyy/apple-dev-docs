@@ -1,7 +1,8 @@
 # shuffled()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elements of the sequence, shuffled.
 
@@ -36,7 +37,7 @@ let shuffledNumbers = numbers.shuffled()
 
 This method is equivalent to calling `shuffled(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 
 ---

@@ -1,7 +1,8 @@
 # ~=(_:_:)
 
 **Framework**: System  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 14.0+

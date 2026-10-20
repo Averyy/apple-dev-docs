@@ -1,7 +1,8 @@
 # message
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message associated with the configuration error.
 
@@ -10,7 +11,7 @@ The message associated with the configuration error.
 
 ## Declaration
 
-```swift
+```
 readonly message: string;
 ```
 

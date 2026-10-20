@@ -1,7 +1,8 @@
 # allow(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allow delivery of a previously-delayed packet.
 
@@ -14,6 +15,10 @@ Allow delivery of a previously-delayed packet.
 func allow(_ packet: NEPacket)
 ```
 
+```objc
+- (void) allowPacket:(NEPacket *) packet;
+```
+
 #### Discussion
 
 Use this method to allow a previously-delayed packet to continue its journey into or out of the networking stack.
@@ -24,7 +29,8 @@ Use this method to allow a previously-delayed packet to continue its journey int
 
 ## See Also
 
-- [func delayCurrentPacket(NEFilterPacketContext) -> NEPacket](nefilterpacketprovider/delaycurrentpacket(_:).md)
+### Delaying packets
+- [func delayCurrentPacket(NEFilterPacketContext) -> NEPacket](./delaycurrentpacket%28_%29.md)
   Delay a packet currently processed by a packet handler.
 
 

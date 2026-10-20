@@ -1,7 +1,8 @@
 # exabytes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The exabytes unit of information.
 
@@ -21,37 +22,42 @@ The exabytes unit of information.
 class var exabytes: UnitInformationStorage { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitInformationStorage * exabytes;
+```
+
 ## See Also
 
-- [class var kilobits: UnitInformationStorage](unitinformationstorage/kilobits.md)
+### Accessing Predefined Decimal Units
+- [class var kilobits: UnitInformationStorage](./kilobits.md)
   The kilobits unit of information.
-- [class var kilobytes: UnitInformationStorage](unitinformationstorage/kilobytes.md)
+- [class var kilobytes: UnitInformationStorage](./kilobytes.md)
   The kilobytes unit of information.
-- [class var megabits: UnitInformationStorage](unitinformationstorage/megabits.md)
+- [class var megabits: UnitInformationStorage](./megabits.md)
   The megabits unit of information.
-- [class var megabytes: UnitInformationStorage](unitinformationstorage/megabytes.md)
+- [class var megabytes: UnitInformationStorage](./megabytes.md)
   The megabytes unit of information.
-- [class var gigabits: UnitInformationStorage](unitinformationstorage/gigabits.md)
+- [class var gigabits: UnitInformationStorage](./gigabits.md)
   The gigabits unit of information.
-- [class var gigabytes: UnitInformationStorage](unitinformationstorage/gigabytes.md)
+- [class var gigabytes: UnitInformationStorage](./gigabytes.md)
   The gigabytes unit of information.
-- [class var terabits: UnitInformationStorage](unitinformationstorage/terabits.md)
+- [class var terabits: UnitInformationStorage](./terabits.md)
   The terabits unit of information.
-- [class var terabytes: UnitInformationStorage](unitinformationstorage/terabytes.md)
+- [class var terabytes: UnitInformationStorage](./terabytes.md)
   The terrabytes unit of information.
-- [class var petabits: UnitInformationStorage](unitinformationstorage/petabits.md)
+- [class var petabits: UnitInformationStorage](./petabits.md)
   The petabits unit of information.
-- [class var petabytes: UnitInformationStorage](unitinformationstorage/petabytes.md)
+- [class var petabytes: UnitInformationStorage](./petabytes.md)
   The petabytes unit of information.
-- [class var exabits: UnitInformationStorage](unitinformationstorage/exabits.md)
+- [class var exabits: UnitInformationStorage](./exabits.md)
   The exabits unit of information.
-- [class var zettabits: UnitInformationStorage](unitinformationstorage/zettabits.md)
+- [class var zettabits: UnitInformationStorage](./zettabits.md)
   The zettabits unit of information.
-- [class var zettabytes: UnitInformationStorage](unitinformationstorage/zettabytes.md)
+- [class var zettabytes: UnitInformationStorage](./zettabytes.md)
   The zettabytes unit of information.
-- [class var yottabits: UnitInformationStorage](unitinformationstorage/yottabits.md)
+- [class var yottabits: UnitInformationStorage](./yottabits.md)
   The yottabits unit of information.
-- [class var yottabytes: UnitInformationStorage](unitinformationstorage/yottabytes.md)
+- [class var yottabytes: UnitInformationStorage](./yottabytes.md)
   The yottabytes unit of information.
 
 

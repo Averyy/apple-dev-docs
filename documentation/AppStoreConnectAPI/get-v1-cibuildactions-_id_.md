@@ -1,7 +1,8 @@
 # Read build action information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific action Xcode Cloud performed as part of a build.
 
@@ -10,13 +11,13 @@ Get information about a specific action Xcode Cloud performed as part of a build
 
 #### Discussion
 
-The example request below retrieves detailed information about an action Xcode Cloud performed. It also requests detailed information about the action’s build by including the [`Build Runs`](build-runs.md) resource in the query. Use the information provided in the response to display information on a dashboard or to access additional information; for example, information about other actions Xcode Cloud performed during the build.
+The example request below retrieves detailed information about an action Xcode Cloud performed. It also requests detailed information about the action’s build by including the [Build Runs](./build-runs.md) resource in the query. Use the information provided in the response to display information on a dashboard or to access additional information; for example, information about other actions Xcode Cloud performed during the build.
 
 ##### Example Request and Response
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/6034552c-6cc0-4ac3-ad18-c3d24970882d?include=buildRun
 ```
 
@@ -145,24 +146,46 @@ GET https://api.appstoreconnect.apple.com/v1/ciBuildActions/6034552c-6cc0-4ac3-a
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Build Actions resource.
+
+### Query Parameters
+
 - `fields[ciBuildActions]` ([string]): Additional fields to include for the Build Actions resource returned by the response.
+
+  **Allowed Values**: `name`, `actionType`, `startedDate`, `finishedDate`, `issueCounts`, `executionProgress`, `completionStatus`, `isRequiredToPass`, `buildRun`, `artifacts`, `issues`, `testResults`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `buildRun`
 - `fields[ciBuildRuns]` ([string]): Additional fields to include for the Build Actions resource returned by the response.
+
+  **Allowed Values**: `number`, `createdDate`, `startedDate`, `finishedDate`, `sourceCommit`, `destinationCommit`, `isPullRequestBuild`, `issueCounts`, `executionProgress`, `completionStatus`, `startReason`, `cancelReason`, `builds`, `workflow`, `product`, `sourceBranchOrTag`, `destinationBranch`, `actions`, `pullRequest`
+
+## Responses
+
+- `200` OK (`CiBuildActionResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all artifacts for a build action](get-v1-cibuildactions-_id_-artifacts.md)
+### Getting Build Actions
+- [List all artifacts for a build action](./get-v1-cibuildactions-_id_-artifacts.md)
   List all artifacts Xcode Cloud created when it performed an action.
-- [Read the xcode cloud build information for a build action](get-v1-cibuildactions-_id_-buildrun.md)
+- [Read the xcode cloud build information for a build action](./get-v1-cibuildactions-_id_-buildrun.md)
   Get Xcode Cloud build information for a given build action.
-- [List all issues for a build action](get-v1-cibuildactions-_id_-issues.md)
+- [List all issues for a build action](./get-v1-cibuildactions-_id_-issues.md)
   List all issues that occurred for a specific action that Xcode Cloud performed as part of a build.
-- [List all test results for an xcode cloud test action](get-v1-cibuildactions-_id_-testresults.md)
+- [List all test results for an xcode cloud test action](./get-v1-cibuildactions-_id_-testresults.md)
   List all test results for a specific test action Xcode Cloud performed as part of a build.
-- [List artifact IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-artifacts.md)
-- [Get the build run ID for a CI build action](get-v1-cibuildactions-_id_-relationships-buildrun.md)
-- [List issue IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-issues.md)
-- [List test result IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-testresults.md)
+- [List artifact IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-artifacts.md)
+- [Get the build run ID for a CI build action](./get-v1-cibuildactions-_id_-relationships-buildrun.md)
+- [List issue IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-issues.md)
+- [List test result IDs for a CI build action](./get-v1-cibuildactions-_id_-relationships-testresults.md)
 
 
 ---

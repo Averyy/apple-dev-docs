@@ -1,7 +1,8 @@
 # HMError.Code.objectWithSimilarNameExistsInHome
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to give the name of one object to another object in the home.
 
@@ -19,13 +20,18 @@ An attempt to give the name of one object to another object in the home.
 case objectWithSimilarNameExistsInHome
 ```
 
+```c
+HMErrorCodeObjectWithSimilarNameExistsInHome
+```
+
 ## See Also
 
-- [HMError.Code.homeWithSimilarNameExists](hmerror/code/homewithsimilarnameexists.md)
+### Collision errors
+- [HMError.Code.homeWithSimilarNameExists](./homewithsimilarnameexists.md)
   An attempt to assign a home the same name as an existing home.
-- [HMError.Code.objectWithSimilarNameExists](hmerror/code/objectwithsimilarnameexists.md)
+- [HMError.Code.objectWithSimilarNameExists](./objectwithsimilarnameexists.md)
   An object with a similar name already exists.
-- [HMError.Code.renameWithSimilarName](hmerror/code/renamewithsimilarname.md)
+- [HMError.Code.renameWithSimilarName](./renamewithsimilarname.md)
   An attempt to rename an object with its current name.
 
 

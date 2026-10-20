@@ -1,7 +1,8 @@
 # process(readingFrom:writingTo:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Processes data between two byte streams.
 
@@ -11,7 +12,7 @@ Processes data between two byte streams.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

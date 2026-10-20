@@ -1,7 +1,8 @@
 # MEMessageEncryptionState.unknown
 
 **Framework**: MailKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 12.0+
@@ -12,10 +13,15 @@
 case unknown
 ```
 
+```c
+MEMessageEncryptionStateUnknown
+```
+
 ## See Also
 
-- [MEMessageEncryptionState.encrypted](memessageencryptionstate/encrypted.md)
-- [MEMessageEncryptionState.notEncrypted](memessageencryptionstate/notencrypted.md)
+### Enumeration Cases
+- [MEMessageEncryptionState.encrypted](./encrypted.md)
+- [MEMessageEncryptionState.notEncrypted](./notencrypted.md)
 
 
 ---

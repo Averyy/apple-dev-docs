@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the primitive to the union of itself and the specified primitive.
@@ -24,6 +25,12 @@ mutating func formUnion(_ other: Self)
 ## Parameters
 
 - `other`: The second primitive.
+
+## Default Implementations
+
+### VolumetricProtocol Implementations
+- [func formUnion(Self)](./formunion%28_%29-8j3kt.md)
+  Sets the primitive to the union of itself and the specified primitive.
 
 
 ---

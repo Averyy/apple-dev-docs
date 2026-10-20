@@ -1,17 +1,22 @@
 # init(mainResource:subresources:subframeArchives:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver with a resource and optional subresources and subframe archives..
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 init!(mainResource: WebResource!, subresources: [Any]!, subframeArchives: [Any]!)
+```
+
+```objc
+- (instancetype) initWithMainResource:(WebResource *) mainResource subresources:(NSArray *) subresources subframeArchives:(NSArray *) subframeArchives;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This method initializes and returns the receiver by setting the main resource to
 
 ## See Also
 
-- [init!(data: Data!)](webarchive/init(data:).md)
+### Initializing
+- [init!(data: Data!)](./init%28data%29.md)
   Initializes and returns the receiver, specifying the initial content data.
 
 

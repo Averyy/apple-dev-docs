@@ -1,7 +1,8 @@
 # skipHiddenVolumes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The enumeration skips hidden volumes.
 
@@ -20,9 +21,14 @@ The enumeration skips hidden volumes.
 static var skipHiddenVolumes: FileManager.VolumeEnumerationOptions { get }
 ```
 
+```c
+NSVolumeEnumerationSkipHiddenVolumes
+```
+
 ## See Also
 
-- [static var produceFileReferenceURLs: FileManager.VolumeEnumerationOptions](filemanager/volumeenumerationoptions/producefilereferenceurls.md)
+### Volume Enumeration Options
+- [static var produceFileReferenceURLs: FileManager.VolumeEnumerationOptions](./producefilereferenceurls.md)
   The enumeration produces file reference URLs rather than path-based URLs.
 
 

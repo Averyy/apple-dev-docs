@@ -1,7 +1,8 @@
 # CMHeadphoneActivityManager.Status
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Headphone connection status updates.
 
@@ -18,31 +19,36 @@ Headphone connection status updates.
 enum Status
 ```
 
+```c
+enum CMHeadphoneActivityStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CMHeadphoneActivityManager.Status.connected](cmheadphoneactivitymanager/status/connected.md)
+- [CMHeadphoneActivityManager.Status.connected](./status/connected.md)
   A compatible set of headphones is connected.
-- [CMHeadphoneActivityManager.Status.disconnected](cmheadphoneactivitymanager/status/disconnected.md)
+- [CMHeadphoneActivityManager.Status.disconnected](./status/disconnected.md)
   The headphones disconnected.
 ### Initializers
-- [init?(rawValue: Int)](cmheadphoneactivitymanager/status/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMHeadphoneActivityManager.ActivityHandler](cmheadphoneactivitymanager/activityhandler.md)
+### Supporting Types
+- [CMHeadphoneActivityManager.ActivityHandler](./activityhandler.md)
   The type for a handler to be invoked when headphone motion activity data is available.
-- [CMHeadphoneActivityManager.StatusHandler](cmheadphoneactivitymanager/statushandler.md)
+- [CMHeadphoneActivityManager.StatusHandler](./statushandler.md)
   The type for a handler to be invoked with status updates.
 
 

@@ -1,7 +1,8 @@
 # Namespace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dynamic property type that allows access to a namespace defined by the persistent identity of the object containing the property (e.g. a view).
 
@@ -23,35 +24,36 @@ A dynamic property type that allows access to a namespace defined by the persist
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
 ## Topics
 
 ### Creating a namespace
-- [init()](namespace/init.md)
+- [init()](./namespace/init%28%29.md)
 ### Getting the namespace
-- [var wrappedValue: Namespace.ID](namespace/wrappedvalue.md)
-- [Namespace.ID](namespace/id.md)
+- [var wrappedValue: Namespace.ID](./namespace/wrappedvalue.md)
+- [Namespace.ID](./namespace/id.md)
   A namespace defined by the persistent identity of an `@Namespace` dynamic property.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](view/matchedgeometryeffect(id:in:properties:anchor:issource:).md)
+### Synchronizing geometries
+- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](./view/matchedgeometryeffect%28id,in,properties,anchor,issource%29.md)
   Defines a group of views with synchronized geometry using an identifier and namespace that you provide.
-- [struct MatchedGeometryProperties](matchedgeometryproperties.md)
+- [struct MatchedGeometryProperties](./matchedgeometryproperties.md)
   A set of view properties that may be synchronized between views using the `View.matchedGeometryEffect()` function.
-- [protocol GeometryEffect](geometryeffect.md)
+- [protocol GeometryEffect](./geometryeffect.md)
   An effect that changes the visual appearance of a view, largely without changing its ancestors or descendants.
-- [func geometryGroup() -> some View](view/geometrygroup.md)
+- [func geometryGroup() -> some View](./view/geometrygroup%28%29.md)
   Isolates the geometry (e.g. position and size) of the view from its parent view.
 
 

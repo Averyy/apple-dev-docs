@@ -1,7 +1,8 @@
 # RemoteImmersiveSpace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that presents its content in an unbounded space on a remote device.
 
@@ -38,9 +39,9 @@ struct SolarSystemApp: App {
 }
 ```
 
-##### Using the Environment State and Modifiers
+##### Using the environment, state, and modifiers
 
-Declare types that conform to the [`CompositorContent`](compositorcontent.md) protocol to access the environment, declare `@State` variables, and use modifiers inside your remote immersive space.
+Declare types that conform to the [`CompositorContent`](./compositorcontent.md) protocol to access the environment, declare `@State` variables, and use modifiers inside your remote immersive space.
 
 ```swift
 struct SolarSystem: CompositorContent {
@@ -64,9 +65,9 @@ struct SolarSystem: CompositorContent {
 }
 ```
 
-##### Identifying the Remote Device
+##### Identifying the remote device
 
-Use the [`remoteDeviceIdentifier`](environmentvalues/remotedeviceidentifier.md) environment value to identify the device the scene is running on. This identifier can also be used to initialize an `ARKitSession` associated with the remote device.
+Use the [`remoteDeviceIdentifier`](./environmentvalues/remotedeviceidentifier.md) environment value to identify the device the scene is running on. This identifier can also be used to initialize an `ARKitSession` associated with the remote device.
 
 ```swift
 struct SolarSystem: CompositorContent {
@@ -92,9 +93,9 @@ struct SolarSystem: CompositorContent {
 
 > **Note**: This identifier is not stable across app launches.
 
-##### Style the Immersive Space
+##### Style the immersive space
 
-By default, immersive spaces use the [`mixed`](immersionstyle/mixed.md) style which places virtual content in a person’s surroundings. You can select a different style for the immersive space by adding the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier to the scene. For example, you can completely control the visual experience using the [`full`](immersionstyle/full.md) immersion style:
+By default, immersive spaces use the [`mixed`](./immersionstyle/mixed.md) style which places virtual content in a person’s surroundings. You can select a different style for the immersive space by adding the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md) scene modifier to the scene. For example, you can completely control the visual experience using the [`full`](./immersionstyle/full.md) immersion style:
 
 ```swift
 @main
@@ -112,7 +113,7 @@ struct SolarSystemApp: App {
 
 You can change the immersion style after presenting the immersive space by changing the modifier’s `selection` input, although you can only use one of the values that you specify in the modifier’s second parameter.
 
-##### Open a Remote Immersive Space
+##### Open a remote immersive space
 
 You can programmatically open a remote immersive space by giving it an identifier. For example, you can label the solar system view from the previous example:
 
@@ -122,7 +123,7 @@ RemoteImmersiveSpace(id: "solarSystem") {
 }
 ```
 
-Elsewhere in your code, you use the [`openImmersiveSpace`](environmentvalues/openimmersivespace.md) environment value to get the instance of the [`OpenImmersiveSpaceAction`](openimmersivespaceaction.md) structure for a given [`Environment`](environment.md). You call the instance directly — for example, from a button’s closure, like in the following code — using the identifier:
+Elsewhere in your code, you use the [`openImmersiveSpace`](./environmentvalues/openimmersivespace.md) environment value to get the instance of the [`OpenImmersiveSpaceAction`](./openimmersivespaceaction.md) structure for a given [`Environment`](./environment.md). You call the instance directly — for example, from a button’s closure, like in the following code — using the identifier:
 
 ```swift
 struct NewSolarSystemImmersiveSpaceButton: View {
@@ -145,9 +146,9 @@ struct NewSolarSystemImmersiveSpaceButton: View {
 
 Mark the call to the action with `await` because it executes asynchronously. When your app opens a remote immersive space, the system may ask the user for a preferred device with which to display the content. Upon selection, the system on the remote device hides all other visible apps. The system allows only one immersive space to be open at a time. Be sure to close the open immersive space before opening another one.
 
-##### Dismiss a Remote Immersive Space
+##### Dismiss a remote immersive space
 
-You can dismiss an immersive space by calling the [`dismissImmersiveSpace`](environmentvalues/dismissimmersivespace.md) action from the environment. For example, you can define a button that dismisses an immersive space:
+You can dismiss an immersive space by calling the [`dismissImmersiveSpace`](./environmentvalues/dismissimmersivespace.md) action from the environment. For example, you can define a button that dismisses an immersive space:
 
 ```swift
 struct DismissImmersiveSpaceButton: View {
@@ -166,35 +167,36 @@ struct DismissImmersiveSpaceButton: View {
 
 The dismiss action runs asynchronously, like the open action. You don’t need to specify an identifier when dismissing an immersive space because there can only be one immersive space open at a time.
 
-##### Present an Immersive Space at Launch
+##### Present an immersive space at launch
 
 When an app launches, it opens an instance of the first scene that’s listed in the app’s body. When opening an immersive space at launch, the system may still ask the user for a preferred device with which to display the content.
 
 ## Topics
 
 ### Initializers
-- [init<C>(content: () -> C)](remoteimmersivespace/init(content:).md)
+- [init<C>(content: () -> C)](./remoteimmersivespace/init%28content%29.md)
   Creates a remote immersive space.
-- [init<C>(for: Data.Type, content: (Binding<Data?>) -> C)](remoteimmersivespace/init(for:content:).md)
+- [init<C>(for: Data.Type, content: (Binding<Data?>) -> C)](./remoteimmersivespace/init%28for,content%29.md)
   Creates the remote immersive space for a specified type of presented data.
-- [init<C>(for: Data.Type, content: (Binding<Data>) -> C, defaultValue: () -> Data)](remoteimmersivespace/init(for:content:defaultvalue:).md)
+- [init<C>(for: Data.Type, content: (Binding<Data>) -> C, defaultValue: () -> Data)](./remoteimmersivespace/init%28for,content,defaultvalue%29.md)
   Creates the remote immersive space for a specified type of presented data, and a default value, if the data is not set.
-- [init<C>(id: String, content: () -> C)](remoteimmersivespace/init(id:content:).md)
+- [init<C>(id: String, content: () -> C)](./remoteimmersivespace/init%28id,content%29.md)
   Creates the remote immersive space associated with the specified identifier.
-- [init<C>(id: String, for: Data.Type, content: (Binding<Data?>) -> C)](remoteimmersivespace/init(id:for:content:).md)
+- [init<C>(id: String, for: Data.Type, content: (Binding<Data?>) -> C)](./remoteimmersivespace/init%28id,for,content%29.md)
   Creates the remote immersive space associated with an identifier for a specified type of presented data.
-- [init<C>(id: String, for: Data.Type, content: (Binding<Data>) -> C, defaultValue: () -> Data)](remoteimmersivespace/init(id:for:content:defaultvalue:).md)
+- [init<C>(id: String, for: Data.Type, content: (Binding<Data>) -> C, defaultValue: () -> Data)](./remoteimmersivespace/init%28id,for,content,defaultvalue%29.md)
   Creates the remote immersive space associated with an identifier for a specified type of presented data, and a default value, if the data is not set.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [struct RemoteDeviceIdentifier](remotedeviceidentifier.md)
-  An opaque type that identifies a remote device displaying scene content in a [`RemoteImmersiveSpace`](remoteimmersivespace.md).
+### Handling remote immersive spaces
+- [struct RemoteDeviceIdentifier](./remotedeviceidentifier.md)
+  An opaque type that identifies a remote device displaying scene content in a [`RemoteImmersiveSpace`](./remoteimmersivespace.md).
 
 
 ---

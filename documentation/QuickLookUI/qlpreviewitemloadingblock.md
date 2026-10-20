@@ -1,17 +1,24 @@
 # QLPreviewItemLoadingBlock
 
 **Framework**: Quick Look UI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that defines a block used to load a Quick Look preview item.
 
 **Availability**:
-- macOS 10.13+
+- macOS 10.13+ - Deprecated in 10.14
+
+> **Deprecated**: Use void (^)(NSError * _Nullable) instead
 
 ## Declaration
 
 ```swift
 typealias QLPreviewItemLoadingBlock = ((any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSError *) QLPreviewItemLoadingBlock;
 ```
 
 #### Discussion
@@ -20,15 +27,16 @@ A type that defines a block used to load a Quick Look preview item.
 
 ## See Also
 
-- [class QLPreviewPanel](qlpreviewpanel.md)
+### Previews
+- [class QLPreviewPanel](./qlpreviewpanel.md)
   A class that implements the Quick Look preview panel to display a preview of a list of items.
-- [class QLPreviewView](qlpreviewview.md)
+- [class QLPreviewView](./qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
-- [protocol QLPreviewItem](qlpreviewitem.md)
+- [protocol QLPreviewItem](./qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your app’s content.
-- [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
+- [protocol QLPreviewPanelDataSource](./qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
-- [protocol QLPreviewPanelDelegate](qlpreviewpaneldelegate.md)
+- [protocol QLPreviewPanelDelegate](./qlpreviewpaneldelegate.md)
   A protocol for the delegate of the Quick Look preview panel.
 
 

@@ -1,7 +1,8 @@
 # supportsEyedropper
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If set to `NO` the eyedropper functionality is not supported for this color well.
 
@@ -17,15 +18,20 @@ If set to `NO` the eyedropper functionality is not supported for this color well
 var supportsEyedropper: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsEyedropper;
+```
+
 ## See Also
 
-- [var title: String?](uicolorwell/title.md)
+### Configuring color picker attributes
+- [var title: String?](./title.md)
   The title for the color picker.
-- [var maximumLinearExposure: CGFloat](uicolorwell/maximumlinearexposure.md)
+- [var maximumLinearExposure: CGFloat](./maximumlinearexposure.md)
   The maximum exposure to apply to a color when returned by the color well.
-- [var supportsAlpha: Bool](uicolorwell/supportsalpha.md)
+- [var supportsAlpha: Bool](./supportsalpha.md)
   A Boolean value that determines whether the color picker supports alpha values.
-- [var selectedColor: UIColor?](uicolorwell/selectedcolor.md)
+- [var selectedColor: UIColor?](./selectedcolor.md)
   The selected color in the color picker.
 
 

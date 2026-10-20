@@ -1,7 +1,8 @@
 # init(device:leftQuantizationDescriptor:rightQuantizationDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, leftQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?, rightQuantizationDescriptor: MPSNDArrayQuantizationDescriptor?)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device leftQuantizationDescriptor:(MPSNDArrayQuantizationDescriptor *) leftQuantizationDescriptor rightQuantizationDescriptor:(MPSNDArrayQuantizationDescriptor *) rightQuantizationDescriptor;
 ```
 
 

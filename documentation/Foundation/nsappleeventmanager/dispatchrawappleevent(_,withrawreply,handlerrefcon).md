@@ -1,9 +1,10 @@
 # dispatchRawAppleEvent(_:withRawReply:handlerRefCon:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Causes the Apple event specified by `theAppleEvent` to be dispatched to the appropriate Apple event handler, if one has been registered by calling [`setEventHandler(_:andSelector:forEventClass:andEventID:)`](nsappleeventmanager/seteventhandler(_:andselector:foreventclass:andeventid:).md).
+Causes the Apple event specified by `theAppleEvent` to be dispatched to the appropriate Apple event handler, if one has been registered by calling [`setEventHandler(_:andSelector:forEventClass:andEventID:)`](./seteventhandler%28_,andselector,foreventclass,andeventid%29.md).
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ Causes the Apple event specified by `theAppleEvent` to be dispatched to the appr
 
 ```swift
 func dispatchRawAppleEvent(_ theAppleEvent: UnsafePointer<AppleEvent>, withRawReply theReply: UnsafeMutablePointer<AppleEvent>, handlerRefCon: SRefCon) -> OSErr
+```
+
+```objc
+- (OSErr) dispatchRawAppleEvent:(const AppleEvent *) theAppleEvent withRawReply:(AppleEvent *) theReply handlerRefCon:(SRefCon) handlerRefCon;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # EntityCollection.Specification
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 typealias Specification = some ResolverSpecification
 ```
+
+Available when `Entity` conforms to `AppEntity`.
 
 
 ---

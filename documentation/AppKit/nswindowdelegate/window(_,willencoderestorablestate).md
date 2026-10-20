@@ -1,7 +1,8 @@
 # window(_:willEncodeRestorableState:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the window is about to add its restorable state to a given archiver.
 
@@ -15,9 +16,13 @@ Tells the delegate the window is about to add its restorable state to a given ar
 optional func window(_ window: NSWindow, willEncodeRestorableState state: NSCoder)
 ```
 
+```objc
+- (void) window:(NSWindow *) window willEncodeRestorableState:(NSCoder *) state;
+```
+
 #### Discussion
 
-This method is called during the window’s [`encodeRestorableState(with:)`](nsresponder/encoderestorablestate(with:).md) method.
+This method is called during the window’s [`encodeRestorableState(with:)`](../nsresponder/encoderestorablestate%28with%29.md) method.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ This method is called during the window’s [`encodeRestorableState(with:)`](nsr
 
 ## See Also
 
-- [func window(NSWindow, didDecodeRestorableState: NSCoder)](nswindowdelegate/window(_:diddecoderestorablestate:).md)
+### Managing Restorable State
+- [func window(NSWindow, didDecodeRestorableState: NSCoder)](./window%28_,diddecoderestorablestate%29.md)
   Tells the delegate the window is has extracted its restorable state from a given archiver.
 
 

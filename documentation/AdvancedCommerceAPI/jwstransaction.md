@@ -1,7 +1,8 @@
 # JWSTransaction
 
 **Framework**: Advanced Commerce API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
@@ -10,17 +11,18 @@ Transaction information signed by the App Store, in JSON Web Signature (JWS) Com
 
 ## Declaration
 
-```swift
+```
 string JWSTransaction
 ```
 
 ##### Description
 
-This `JWSTransaction` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSTransaction`](https://developer.apple.com/documentation/appstoreserverapi/jwstransaction).
+This `JWSTransaction` object is identical to the one used in the App Store Server API and by App Store Server Notifications. For details, see [`JWSTransaction`](../AppStoreServerAPI/jwstransaction.md).
 
 ## See Also
 
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
+### Signed transaction information
+- [type JWSRenewalInfo](./jwsrenewalinfo.md)
   Subscription renewal information signed by the App Store, in JSON Web Signature (JWS) format.
 
 

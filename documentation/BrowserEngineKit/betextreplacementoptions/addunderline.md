@@ -1,7 +1,8 @@
 # addUnderline
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that processes text by adding an underline to its visual style.
 
@@ -15,6 +16,10 @@ An option that processes text by adding an underline to its visual style.
 
 ```swift
 static var addUnderline: BETextReplacementOptions { get }
+```
+
+```c
+BETextReplacementOptionsAddUnderline
 ```
 
 

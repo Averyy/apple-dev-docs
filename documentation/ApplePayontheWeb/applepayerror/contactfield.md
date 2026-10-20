@@ -1,7 +1,8 @@
 # contactField
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The field name that contains the error on the payment sheet.
 
@@ -11,7 +12,7 @@ The field name that contains the error on the payment sheet.
 
 ## Declaration
 
-```swift
+```
 attribute ApplePayErrorContactField contactField;
 ```
 
@@ -19,13 +20,14 @@ attribute ApplePayErrorContactField contactField;
 
 The payment sheet highlights the field corresponding to the value of this attribute.
 
-For the possible field values, see [`ApplePayErrorContactField`](applepayerrorcontactfield.md).
+For the possible field values, see [`ApplePayErrorContactField`](../applepayerrorcontactfield.md).
 
 ## See Also
 
-- [code](applepayerror/code.md)
+### Error Properties
+- [code](./code.md)
   The error code for this instance.
-- [message](applepayerror/message.md)
+- [message](./message.md)
   A localized, user-facing string that describes the error.
 
 

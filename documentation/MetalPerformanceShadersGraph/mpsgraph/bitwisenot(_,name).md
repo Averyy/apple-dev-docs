@@ -1,7 +1,8 @@
 # bitwiseNOT(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the bitwise NOT operation to the input tensor element.
 
@@ -17,6 +18,10 @@ Applies the bitwise NOT operation to the input tensor element.
 
 ```swift
 func bitwiseNOT(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bitwiseNOTWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

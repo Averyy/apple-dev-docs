@@ -1,7 +1,8 @@
 # metric
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A metric identifier that uses this dimension’s name.
 
@@ -22,7 +23,7 @@ var metric: Metric { get }
 
 #### Discussion
 
-Use this to reference the dimension’s metric in [`MetricsAggregator`](metricsaggregator.md) without repeating the name as a raw string:
+Use this to reference the dimension’s metric in [`MetricsAggregator`](../metricsaggregator.md) without repeating the name as a raw string:
 
 ```swift
 let relevance = ScoreDimension("Relevance", scale: .numeric([...]))
@@ -31,9 +32,10 @@ aggregator.computeMean(of: relevance.metric)
 
 ## See Also
 
-- [let scale: ScoringScale](scoredimension/scale.md)
+### Inspecting a dimension
+- [let scale: ScoringScale](./scale.md)
   The scoring scale for this dimension.
-- [let description: String?](scoredimension/description.md)
+- [let description: String?](./description.md)
   An optional description providing additional context for the model judge about what this dimension measures.
 
 

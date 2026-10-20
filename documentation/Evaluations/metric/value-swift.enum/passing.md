@@ -1,7 +1,8 @@
 # Metric.Value.passing
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A passing result.
 

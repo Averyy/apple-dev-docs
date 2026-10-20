@@ -1,7 +1,8 @@
 # kUSBInformationRootHubIsBuiltInMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the root hub is built-in.
 
@@ -10,7 +11,7 @@ The mask indicating that the root hub is built-in.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationRootHubIsBuiltInMask = (1 << kUSBInformationRootHubIsBuiltInBit)
 ```
 

@@ -1,7 +1,8 @@
 # TVTopShelfSectionedItem.ImageShape.square
 
 **Framework**: TV Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An image with a 1:1 aspect ratio.
 
@@ -14,11 +15,16 @@ An image with a 1:1 aspect ratio.
 case square
 ```
 
+```c
+TVTopShelfSectionedItemImageShapeSquare
+```
+
 ## See Also
 
-- [TVTopShelfSectionedItem.ImageShape.poster](tvtopshelfsectioneditem/imageshape-swift.enum/poster.md)
+### Image Shapes
+- [TVTopShelfSectionedItem.ImageShape.poster](./poster.md)
   A poster-shaped image with a 2:3 aspect ratio.
-- [TVTopShelfSectionedItem.ImageShape.hdtv](tvtopshelfsectioneditem/imageshape-swift.enum/hdtv.md)
+- [TVTopShelfSectionedItem.ImageShape.hdtv](./hdtv.md)
   An image with a 16:9 aspect ratio.
 
 

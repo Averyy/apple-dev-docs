@@ -1,7 +1,8 @@
 # ThrowingTaskGroup.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides an iteration interface over the results of tasks added to the group.
 
@@ -19,6 +20,8 @@ A type that provides an iteration interface over the results of tasks added to t
 ```swift
 struct Iterator
 ```
+
+Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
 
 #### Overview
 
@@ -43,31 +46,32 @@ do {
 for try await r in group { print(r) }
 ```
 
-> **Note**: `ThrowingTaskGroup.next()`
+> **See Also**: `ThrowingTaskGroup.next()`
 
 ## Topics
 
 ### Instance Methods
-- [func cancel()](throwingtaskgroup/iterator/cancel.md)
-- [func next() async throws -> ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator.Element?](throwingtaskgroup/iterator/next.md)
+- [func cancel()](./iterator/cancel%28%29.md)
+- [func next() async throws -> ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator.Element?](./iterator/next%28%29.md)
   Advances to and returns the result of the next child task.
-- [func next(isolation: isolated (any Actor)?) async throws(Failure) -> ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator.Element?](throwingtaskgroup/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(Failure) -> ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator.Element?](./iterator/next%28isolation%29.md)
   Advances to and returns the result of the next child task.
 ### Type Aliases
-- [ThrowingTaskGroup.Iterator.Element](throwingtaskgroup/iterator/element.md)
+- [ThrowingTaskGroup.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](throwingtaskgroup/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
 
 ## See Also
 
-- [ThrowingTaskGroup.Element](throwingtaskgroup/element.md)
+### Supporting Types
+- [ThrowingTaskGroup.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [ThrowingTaskGroup.AsyncIterator](throwingtaskgroup/asynciterator.md)
+- [ThrowingTaskGroup.AsyncIterator](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 

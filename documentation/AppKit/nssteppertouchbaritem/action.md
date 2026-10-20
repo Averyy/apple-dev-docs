@@ -1,7 +1,8 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action-message selector associated with the stepper.
 
@@ -17,9 +18,14 @@ The action-message selector associated with the stepper.
 var action: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL action;
+```
+
 ## See Also
 
-- [var target: AnyObject?](nssteppertouchbaritem/target.md)
+### Handling stepper interaction
+- [var target: AnyObject?](./target.md)
   The target object that receives action messages from the stepper.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -19,6 +20,11 @@
 ```swift
 func erase() throws
 ```
+
+## Default Implementations
+
+### DataStore Implementations
+- [func erase() throws](./erase%28%29-4xvdm.md)
 
 
 ---

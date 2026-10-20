@@ -1,7 +1,8 @@
 # dependentParameters
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Any other parameter’s whose values may change as a side effect of this parameter’s value changing.
 
@@ -19,25 +20,38 @@ Any other parameter’s whose values may change as a side effect of this paramet
 var dependentParameters: [NSNumber]? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSNumber *> * dependentParameters;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSArray<NSNumber *> * dependentParameters;
+```
+
 #### Discussion
 
-The array contains [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects representing [`AUParameterAddress`](auparameteraddress.md) values.
+The array contains [`NSNumber`](../../Foundation/nsnumber.md) objects representing [`AUParameterAddress`](../auparameteraddress.md) values.
 
 ## See Also
 
-- [var minValue: AUValue](auparameter/minvalue.md)
+### Querying Parameter Properties
+- [var minValue: AUValue](./minvalue.md)
   The parameter’s minimum value.
-- [var maxValue: AUValue](auparameter/maxvalue.md)
+- [var maxValue: AUValue](./maxvalue.md)
   The parameter’s maximum value.
-- [var unit: AudioUnitParameterUnit](auparameter/unit.md)
+- [var unit: AudioUnitParameterUnit](./unit.md)
   The parameter’s unit of measurement.
-- [var unitName: String?](auparameter/unitname.md)
+- [var unitName: String?](./unitname.md)
   The parameter’s localized unit name.
-- [var flags: AudioUnitParameterOptions](auparameter/flags.md)
+- [var flags: AudioUnitParameterOptions](./flags.md)
   The parameter’s characteristic details.
-- [var address: AUParameterAddress](auparameter/address.md)
+- [var address: AUParameterAddress](./address.md)
   The parameter’s address.
-- [var valueStrings: [String]?](auparameter/valuestrings.md)
+- [var valueStrings: [String]?](./valuestrings.md)
   The parameter’s localized value strings.
 
 

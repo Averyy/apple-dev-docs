@@ -1,7 +1,8 @@
 # TranslationSession.BatchResponse
 
 **Framework**: Translation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides asynchronous access to translation responses.
 
@@ -19,37 +20,38 @@ struct BatchResponse
 
 #### Overview
 
-This type returns instances of [`TranslationSession.Response`](translationsession/response.md) asynchronously and throws an `Error` if something goes wrong.
+This type returns instances of [`TranslationSession.Response`](./response.md) asynchronously and throws an `Error` if something goes wrong.
 
 ## Topics
 
 ### Iterating over translation results
-- [func makeAsyncIterator() -> TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/makeasynciterator.md)
+- [func makeAsyncIterator() -> TranslationSession.BatchResponse.AsyncIterator](./batchresponse/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 ### Iteration types
-- [TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/asynciterator.md)
+- [TranslationSession.BatchResponse.AsyncIterator](./batchresponse/asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [TranslationSession.BatchResponse.Element](translationsession/batchresponse/element.md)
+- [TranslationSession.BatchResponse.Element](./batchresponse/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func translate(AttributedString) async throws -> TranslationSession.Response](translationsession/translate(_:)-59zi2.md)
+### Translating the text
+- [func translate(AttributedString) async throws -> TranslationSession.Response](./translate%28_%29-59zi2.md)
   Translates a formatted string of text, preserving formatting in the translation.
-- [func translate(String) async throws -> TranslationSession.Response](translationsession/translate(_:)-4m20l.md)
+- [func translate(String) async throws -> TranslationSession.Response](./translate%28_%29-4m20l.md)
   Translates a single string of text.
-- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](translationsession/translate(batch:).md)
+- [func translate(batch: [TranslationSession.Request]) -> TranslationSession.BatchResponse](./translate%28batch%29.md)
   Translates multiple strings of text of the same language, returning a sequence of responses as they’re available.
-- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](translationsession/translations(from:).md)
+- [func translations(from: [TranslationSession.Request]) async throws -> [TranslationSession.Response]](./translations%28from%29.md)
   Translates multiple strings of text of the same language, returning the results all at once when complete.
-- [TranslationSession.Request](translationsession/request.md)
+- [TranslationSession.Request](./request.md)
   A translation request containing a single item of text to translate.
-- [TranslationSession.Response](translationsession/response.md)
+- [TranslationSession.Response](./response.md)
   The response to a translation request.
 
 

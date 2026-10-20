@@ -1,7 +1,8 @@
 # threshold(_:to:with:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the elements of the supplied double-precision vector after applying a specified thresholding rule.
 
@@ -11,7 +12,7 @@ Returns the elements of the supplied double-precision vector after applying a sp
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ static func threshold<U>(_ vector: U, to lowerBound: Double, with rule: vDSP.Thr
 
 ## See Also
 
-- [static func threshold<U>(U, to: Float, with: vDSP.ThresholdRule<Float>) -> [Float]](vdsp/threshold(_:to:with:)-534ob.md)
+### Threshold Operations
+- [static func threshold<U>(U, to: Float, with: vDSP.ThresholdRule<Float>) -> [Float]](./threshold%28_,to,with%29-534ob.md)
   Returns the elements of the supplied single-precision vector after applying a specified thresholding rule.
-- [static func threshold<U, V>(U, to: Double, with: vDSP.ThresholdRule<Double>, result: inout V)](vdsp/threshold(_:to:with:result:)-45b58.md)
+- [static func threshold<U, V>(U, to: Double, with: vDSP.ThresholdRule<Double>, result: inout V)](./threshold%28_,to,with,result%29-45b58.md)
   Calculates the elements of the supplied double-precision vector after applying a specified thresholding rule.
-- [static func threshold<U, V>(U, to: Float, with: vDSP.ThresholdRule<Float>, result: inout V)](vdsp/threshold(_:to:with:result:)-8137c.md)
+- [static func threshold<U, V>(U, to: Float, with: vDSP.ThresholdRule<Float>, result: inout V)](./threshold%28_,to,with,result%29-8137c.md)
   Calculates the elements of the supplied single-precision vector after applying a specified thresholding rule.
-- [vDSP.ThresholdRule](vdsp/thresholdrule.md)
+- [vDSP.ThresholdRule](./thresholdrule.md)
   Constants that specify vector threshold rules.
 
 

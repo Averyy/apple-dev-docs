@@ -1,7 +1,8 @@
 # UITableView.SeparatorInsetReference
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how to interpret the separator inset value of a table view.
 
@@ -18,39 +19,44 @@ Constants that indicate how to interpret the separator inset value of a table vi
 enum SeparatorInsetReference
 ```
 
+```c
+enum UITableViewSeparatorInsetReference : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITableView.SeparatorInsetReference.fromCellEdges](uitableview/separatorinsetreference-swift.enum/fromcelledges.md)
+- [UITableView.SeparatorInsetReference.fromCellEdges](./separatorinsetreference-swift.enum/fromcelledges.md)
   An inset value that’s relative to the edge of the cell.
-- [UITableView.SeparatorInsetReference.fromAutomaticInsets](uitableview/separatorinsetreference-swift.enum/fromautomaticinsets.md)
+- [UITableView.SeparatorInsetReference.fromAutomaticInsets](./separatorinsetreference-swift.enum/fromautomaticinsets.md)
   An inset value that indicates the starting position is based on the default separator insets.
 ### Initializers
-- [init?(rawValue: Int)](uitableview/separatorinsetreference-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./separatorinsetreference-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var separatorStyle: UITableViewCell.SeparatorStyle](uitableview/separatorstyle.md)
+### Customizing the separator appearance
+- [var separatorStyle: UITableViewCell.SeparatorStyle](./separatorstyle.md)
   The style for table cells to use as separators.
-- [UITableViewCell.SeparatorStyle](uitableviewcell/separatorstyle.md)
+- [UITableViewCell.SeparatorStyle](../uitableviewcell/separatorstyle.md)
   The style for cells to use as separators.
-- [var separatorColor: UIColor?](uitableview/separatorcolor.md)
+- [var separatorColor: UIColor?](./separatorcolor.md)
   The color of separator rows in the table view.
-- [var separatorEffect: UIVisualEffect?](uitableview/separatoreffect.md)
+- [var separatorEffect: UIVisualEffect?](./separatoreffect.md)
   The effect to apply to table separators.
-- [var separatorInset: UIEdgeInsets](uitableview/separatorinset.md)
+- [var separatorInset: UIEdgeInsets](./separatorinset.md)
   The default inset of cell separators.
-- [var separatorInsetReference: UITableView.SeparatorInsetReference](uitableview/separatorinsetreference-swift.property.md)
+- [var separatorInsetReference: UITableView.SeparatorInsetReference](./separatorinsetreference-swift.property.md)
   An indicator of how to interpret the separator inset value.
 
 

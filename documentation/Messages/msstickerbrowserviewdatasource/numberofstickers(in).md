@@ -2,6 +2,7 @@
 
 **Framework**: Messages  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the data source for the number of stickers that the browser will display.
@@ -17,6 +18,10 @@ Asks the data source for the number of stickers that the browser will display.
 func numberOfStickers(in stickerBrowserView: MSStickerBrowserView) -> Int
 ```
 
+```objc
+- (NSInteger) numberOfStickersInStickerBrowserView:(MSStickerBrowserView *) stickerBrowserView;
+```
+
 #### Return Value
 
 The number of stickers. This must be a non-negative number.
@@ -27,7 +32,8 @@ The number of stickers. This must be a non-negative number.
 
 ## See Also
 
-- [func stickerBrowserView(MSStickerBrowserView, stickerAt: Int) -> MSSticker](msstickerbrowserviewdatasource/stickerbrowserview(_:stickerat:).md)
+### Providing Stickers
+- [func stickerBrowserView(MSStickerBrowserView, stickerAt: Int) -> MSSticker](./stickerbrowserview%28_,stickerat%29.md)
   Asks the data source for the sticker object that the browser will display at the provided index.
 
 

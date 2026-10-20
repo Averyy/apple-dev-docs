@@ -1,7 +1,8 @@
 # hearingProtectionEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var hearingProtectionEnabled: SRHeadphoneSettings.SettingEnablement { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement hearingProtectionEnabled;
 ```
 
 #### Discussion

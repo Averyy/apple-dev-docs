@@ -1,7 +1,8 @@
 # currentConfigurations()
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves information about user-configured widgets.
 

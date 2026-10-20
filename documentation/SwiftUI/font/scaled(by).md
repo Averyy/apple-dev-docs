@@ -1,7 +1,8 @@
 # scaled(by:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales the point size of the font.
 

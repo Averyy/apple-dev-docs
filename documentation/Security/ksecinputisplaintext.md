@@ -1,7 +1,8 @@
 # kSecInputIsPlainText
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The input is plain text.
 
@@ -13,6 +14,10 @@ The input is plain text.
 
 ```swift
 let kSecInputIsPlainText: CFString
+```
+
+```c
+extern CFStringRef const kSecInputIsPlainText;
 ```
 
 

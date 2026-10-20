@@ -1,7 +1,8 @@
 # MusicPlayer.Transition.crossfade(options:)
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A smooth overlap between the currently playing item and the next item.
 

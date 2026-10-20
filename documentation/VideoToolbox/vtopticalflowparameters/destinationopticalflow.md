@@ -1,7 +1,8 @@
 # destinationOpticalFlow
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A user allocated mutable optical flow that will receive the results.
 
@@ -17,15 +18,20 @@ A user allocated mutable optical flow that will receive the results.
 var destinationOpticalFlow: VTFrameProcessorOpticalFlow { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTFrameProcessorOpticalFlow * destinationOpticalFlow;
+```
+
 ## See Also
 
-- [var sourceFrame: VTFrameProcessorFrame](vtopticalflowparameters/sourceframe.md)
+### Inspecting the parameters
+- [var sourceFrame: VTFrameProcessorFrame](./sourceframe.md)
   The current source frame.
-- [var nextFrame: VTFrameProcessorFrame](vtopticalflowparameters/nextframe.md)
+- [var nextFrame: VTFrameProcessorFrame](./nextframe.md)
   The next source frame in presentation time order.
-- [var submissionMode: VTOpticalFlowParameters.SubmissionMode](vtopticalflowparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTOpticalFlowParameters.SubmissionMode](./submissionmode-swift.property.md)
   A value describing the processing request in a parameters submission object.
-- [VTOpticalFlowParameters.SubmissionMode](vtopticalflowparameters/submissionmode-swift.enum.md)
+- [VTOpticalFlowParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
 
 

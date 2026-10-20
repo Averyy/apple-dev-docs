@@ -1,7 +1,8 @@
 # replaceCharacters(in:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the characters in the given range with the characters of the given string.
 
@@ -20,11 +21,15 @@ Replaces the characters in the given range with the characters of the given stri
 func replaceCharacters(in range: NSRange, with str: String)
 ```
 
+```objc
+- (void) replaceCharactersInRange:(NSRange) range withString:(NSString *) str;
+```
+
 #### Discussion
 
 The new characters inherit the attributes of the first replaced character from `range`. Where the length of `range` is 0, the new characters inherit the attributes of the character preceding `range` if it has any, otherwise of the character following `range`.
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [func deleteCharacters(in: NSRange)](nsmutableattributedstring/deletecharacters(in:).md)
+### Changing Characters
+- [func deleteCharacters(in: NSRange)](./deletecharacters%28in%29.md)
   Deletes the characters in the given range along with their associated attributes.
 
 

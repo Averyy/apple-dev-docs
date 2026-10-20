@@ -1,7 +1,8 @@
 # dragRegion
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constraints that define where a person can drag this adornment.
 
@@ -25,9 +26,10 @@ var dragRegion: MarkupAdornment.DragRegion
 
 ## See Also
 
-- [MarkupAdornment.DragRegion](markupadornment/dragregion-swift.struct.md)
+### Controlling interactions
+- [MarkupAdornment.DragRegion](./dragregion-swift.struct.md)
   The movement behavior and interaction constraints for a markup adornment.
-- [var scalesWithZoom: Bool](markupadornment/scaleswithzoom.md)
+- [var scalesWithZoom: Bool](./scaleswithzoom.md)
   A Boolean value that indicates whether the adornment scales with the zoom level or remains fixed in the base coordinate system.
 
 

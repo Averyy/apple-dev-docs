@@ -1,7 +1,8 @@
 # instanceCount
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of copies to create, including the source layers.
 
@@ -19,16 +20,22 @@ The number of copies to create, including the source layers.
 var instanceCount: Int { get set }
 ```
 
+```objc
+@property NSInteger instanceCount;
+```
+
 #### Discussion
 
 Default value is `1`, no extra copies are created.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [var instanceDelay: CFTimeInterval](careplicatorlayer/instancedelay.md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Setting Instance Display Properties
+- [var instanceDelay: CFTimeInterval](./instancedelay.md)
   Specifies the delay, in seconds, between replicated copies. Animatable.
-- [var instanceTransform: CATransform3D](careplicatorlayer/instancetransform.md)
+- [var instanceTransform: CATransform3D](./instancetransform.md)
   The transform matrix applied to the previous instance to produce the current instance. Animatable.
 
 

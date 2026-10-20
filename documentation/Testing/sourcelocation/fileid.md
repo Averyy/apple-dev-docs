@@ -1,18 +1,19 @@
 # fileID
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file ID of the source file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,13 +25,14 @@ var fileID: String { get set }
 
 #### Discussion
 
-> **Note**: The value of this property must not be empty and must be formatted as described in the documentation for the [`#fileID`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fileID()). macro in the Swift standard library.
+> **Precondition**: The value of this property must not be empty and must be formatted as described in the documentation for the [#fileID](../../Swift/fileid%28%29.md). macro in the Swift standard library.
 
 ## See Also
 
-- [var moduleName: String](sourcelocation/modulename.md)
+### Related Documentation
+- [var moduleName: String](./modulename.md)
   The name of the module containing the source file.
-- [var fileName: String](sourcelocation/filename.md)
+- [var fileName: String](./filename.md)
   The name of the source file.
 
 

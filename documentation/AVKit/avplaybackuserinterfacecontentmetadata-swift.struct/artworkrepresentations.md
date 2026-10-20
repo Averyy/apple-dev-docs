@@ -1,7 +1,8 @@
 # artworkRepresentations
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of available artwork representations in various formats and sizes.
 

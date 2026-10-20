@@ -1,7 +1,8 @@
 # HMCharacteristicTypeWaterLevel
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The water level measured by an accessory.
 
@@ -19,15 +20,20 @@ The water level measured by an accessory.
 let HMCharacteristicTypeWaterLevel: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeWaterLevel;
+```
+
 #### Discussion
 
 The corresponding value is a percentage of the maximum amount of water that the accessory, like a humidifier, can hold.
 
 ## See Also
 
-- [let HMCharacteristicTypeValveType: String](hmcharacteristictypevalvetype.md)
+### Water
+- [let HMCharacteristicTypeValveType: String](./hmcharacteristictypevalvetype.md)
   The type of automated valve that controls fluid flow.
-- [let HMCharacteristicTypeLeakDetected: String](hmcharacteristictypeleakdetected.md)
+- [let HMCharacteristicTypeLeakDetected: String](./hmcharacteristictypeleakdetected.md)
   A leak detection indicator.
 
 

@@ -1,7 +1,8 @@
 # spline(leftEndpoint:from:to:rightEndpoint:t:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an interpolated value between two rotations along a spherical cubic spline.
 
@@ -11,7 +12,7 @@ Returns an interpolated value between two rotations along a spherical cubic spli
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

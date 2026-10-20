@@ -1,7 +1,8 @@
 # value(at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value at the specified position in the noise map’s discrete sample grid.
 
@@ -19,25 +20,30 @@ Returns the value at the specified position in the noise map’s discrete sample
 func value(at position: vector_int2) -> Float
 ```
 
+```objc
+- (float) valueAtPosition:(vector_int2) position;
+```
+
 #### Return Value
 
 The value at the specified position.
 
 #### Discussion
 
-When you create a noise map from a [`GKNoise`](gknoise.md) object, GameplayKit performs the noise generation and processing computations necessary to fill a discrete grid with noise samples. (You specify the size of the grid and its number of samples in the [`init(_:size:origin:sampleCount:seamless:)`](gknoisemap/init(_:size:origin:samplecount:seamless:).md) initializer.) Use this method to get sample values from that grid.
+When you create a noise map from a [`GKNoise`](../gknoise.md) object, GameplayKit performs the noise generation and processing computations necessary to fill a discrete grid with noise samples. (You specify the size of the grid and its number of samples in the [`init(_:size:origin:sampleCount:seamless:)`](./init%28_,size,origin,samplecount,seamless%29.md) initializer.) Use this method to get sample values from that grid.
 
-You can also use the [`interpolatedValue(at:)`](gknoisemap/interpolatedvalue(at:).md) method to query positions that are not on the discrete integer grid of samples.
+You can also use the [`interpolatedValue(at:)`](./interpolatedvalue%28at%29.md) method to query positions that are not on the discrete integer grid of samples.
 
 ## Parameters
 
-- `position`: The position to query in the noise map’s grid of sampled noise values. Must be within the rectangle from `[0, 0]` to the noise map’s [`sampleCount`](gknoisemap/samplecount.md) value.
+- `position`: The position to query in the noise map’s grid of sampled noise values. Must be within the rectangle from `[0, 0]` to the noise map’s [`sampleCount`](./samplecount.md) value.
 
 ## See Also
 
-- [func interpolatedValue(at: vector_float2) -> Float](gknoisemap/interpolatedvalue(at:).md)
+### Accessing Noise Values
+- [func interpolatedValue(at: vector_float2) -> Float](./interpolatedvalue%28at%29.md)
   Returns the value at the specified position in the noise map, interpolating results for positions not on the discrete sample grid.
-- [func setValue(Float, at: vector_int2)](gknoisemap/setvalue(_:at:).md)
+- [func setValue(Float, at: vector_int2)](./setvalue%28_,at%29.md)
   Sets the value at the specified position in the noise map.
 
 

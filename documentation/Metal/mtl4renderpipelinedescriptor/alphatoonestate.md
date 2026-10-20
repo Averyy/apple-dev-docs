@@ -1,7 +1,8 @@
 # alphaToOneState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the pipeline forces alpha channel values of color attachments to the largest representable value.
 
@@ -17,6 +18,10 @@ Indicates whether the pipeline forces alpha channel values of color attachments 
 
 ```swift
 var alphaToOneState: MTL4AlphaToOneState { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTL4AlphaToOneState alphaToOneState;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Assigns a texture to an entry in the object shader argument table.
@@ -20,18 +21,23 @@ Assigns a texture to an entry in the object shader argument table.
 func setObjectTexture(_ texture: (any MTLTexture)?, index: Int)
 ```
 
+```objc
+- (void) setObjectTexture:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
 By default, the texture at each index is `nil`.
 
 ## Parameters
 
-- `texture`: An [`MTLTexture`](mtltexture.md) instance the command assigns to an entry in the object shader argument table for textures.
+- `texture`: An [`MTLTexture`](../mtltexture.md) instance the command assigns to an entry in the object shader argument table for textures.
 - `index`: An integer that represents the entry in the object shader argument table for textures that stores a record of `texture`.
 
 ## See Also
 
-- [func setObjectTextures([(any MTLTexture)?], range: Range<Int>)](mtlrendercommandencoder/setobjecttextures(_:range:).md)
+### Assigning textures for object shaders
+- [func setObjectTextures([(any MTLTexture)?], range: Range<Int>)](./setobjecttextures%28_,range%29.md)
   Assigns multiple textures to a range of entries in the object shader argument table.
 
 

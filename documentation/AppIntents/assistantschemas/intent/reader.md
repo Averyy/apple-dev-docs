@@ -1,7 +1,8 @@
 # reader
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer document viewing and editing functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer document viewing and edi
 ```swift
 static var reader: some AssistantSchemas.ReaderIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

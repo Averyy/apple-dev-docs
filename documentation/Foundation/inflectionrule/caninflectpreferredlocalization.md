@@ -1,7 +1,8 @@
 # canInflectPreferredLocalization
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the rule can inflect the user’s current preferred localization.
 
@@ -26,7 +27,8 @@ This value doesn’t change throughout the lifetime of a process.
 
 ## See Also
 
-- [static func canInflect(language: String) -> Bool](inflectionrule/caninflect(language:).md)
+### Determining Availability
+- [static func canInflect(language: String) -> Bool](./caninflect%28language%29.md)
   Returns a Boolean value that indicates whether the rule can inflect a given language.
 
 

@@ -1,7 +1,8 @@
 # precondition(_:_:file:line:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Checks a necessary condition for making forward progress.
 
@@ -37,11 +38,12 @@ Use this function to detect conditions that must prevent the program from procee
 
 ## See Also
 
-- [func assert(@autoclosure () -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](assert(_:_:file:line:).md)
+### Testing
+- [func assert(@autoclosure () -> Bool, @autoclosure () -> String, file: StaticString, line: UInt)](./assert%28_,_,file,line%29.md)
   Performs a traditional C-style assert with an optional message.
-- [func assertionFailure(@autoclosure () -> String, file: StaticString, line: UInt)](assertionfailure(_:file:line:).md)
+- [func assertionFailure(@autoclosure () -> String, file: StaticString, line: UInt)](./assertionfailure%28_,file,line%29.md)
   Indicates that an internal consistency check failed.
-- [func preconditionFailure(@autoclosure () -> String, file: StaticString, line: UInt) -> Never](preconditionfailure(_:file:line:).md)
+- [func preconditionFailure(@autoclosure () -> String, file: StaticString, line: UInt) -> Never](./preconditionfailure%28_,file,line%29.md)
   Indicates that a precondition was violated.
 
 

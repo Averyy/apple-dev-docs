@@ -1,7 +1,8 @@
 # location
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map item that contains the point of interest’s geographical information.
 
@@ -16,9 +17,14 @@ The map item that contains the point of interest’s geographical information.
 var location: MKMapItem { get set }
 ```
 
+```objc
+@property (nonatomic, strong) MKMapItem * location;
+```
+
 ## See Also
 
-- [var pinImage: UIImage?](cppointofinterest/pinimage.md)
+### Managing the Map Annotation
+- [var pinImage: UIImage?](./pinimage.md)
   A custom image that the map annotation displays.
 
 

@@ -1,7 +1,8 @@
 # kCFErrorDomainCGImageMetadata
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for metadata-related errors that originate in the Image I/O framework.
 
@@ -20,17 +21,22 @@ The domain for metadata-related errors that originate in the Image I/O framework
 let kCFErrorDomainCGImageMetadata: CFString
 ```
 
+```c
+extern CFStringRef const kCFErrorDomainCGImageMetadata;
+```
+
 ## See Also
 
-- [class CGImageMetadata](cgimagemetadata.md)
+### XMP Metadata
+- [class CGImageMetadata](./cgimagemetadata.md)
   An immutable object that contains the XMP metadata associated with an image.
-- [class CGMutableImageMetadata](cgmutableimagemetadata.md)
+- [class CGMutableImageMetadata](./cgmutableimagemetadata.md)
   An opaque type for adding or modifying image metadata.
-- [class CGImageMetadataTag](cgimagemetadatatag.md)
+- [class CGImageMetadataTag](./cgimagemetadatatag.md)
   An immutable type that contains information about a single piece of image metadata.
-- [XMP Namespaces and Prefixes](xmp-namespaces-and-prefixes.md)
+- [XMP Namespaces and Prefixes](./xmp-namespaces-and-prefixes.md)
   Discover the public namespaces and prefixes that exist in XMP metadata tags.
-- [enum CGImageMetadataErrors](cgimagemetadataerrors.md)
+- [enum CGImageMetadataErrors](./cgimagemetadataerrors.md)
   Constants for errors that occur when getting or setting metadata information.
 
 

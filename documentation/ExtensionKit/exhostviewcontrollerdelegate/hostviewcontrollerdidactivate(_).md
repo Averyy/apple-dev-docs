@@ -1,7 +1,8 @@
 # hostViewControllerDidActivate(_:)
 
 **Framework**: ExtensionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the host that the app extension is active and ready to accept an XPC connection.
 
@@ -20,7 +21,7 @@ optional func hostViewControllerDidActivate(_ viewController: EXHostViewControll
 
 ## Mentions
 
-- [Including extension-based UI in your interface](including-extension-based-ui-in-your-interface.md)
+- [Including extension-based UI in your interface](../including-extension-based-ui-in-your-interface.md)
 
 #### Discussion
 
@@ -32,7 +33,8 @@ The host view controller calls this method after it launches an app extension an
 
 ## See Also
 
-- [func hostViewControllerWillDeactivate(EXHostViewController, error: (any Error)?)](exhostviewcontrollerdelegate/hostviewcontrollerwilldeactivate(_:error:).md)
+### Responding to activation and deactivation events
+- [func hostViewControllerWillDeactivate(EXHostViewController, error: (any Error)?)](./hostviewcontrollerwilldeactivate%28_,error%29.md)
   Tells the host that the app extension disconnected and is no longer available.
 
 

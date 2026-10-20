@@ -1,7 +1,8 @@
 # MKLocalSearchCompleterDelegate
 
 **Framework**: MapKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods the delegate calls with search completion data.
 
@@ -20,26 +21,31 @@ Methods the delegate calls with search completion data.
 protocol MKLocalSearchCompleterDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MKLocalSearchCompleterDelegate <NSObject>
+```
+
 #### Overview
 
-You use this protocol when implementing an autocomplete solution for a map in your app. As the user types search terms, use an [`MKLocalSearchCompleter`](mklocalsearchcompleter.md) object to start searching for valid completions. The delegate you assign to that object needs to conform to this protocol. As it receives completions, the local search completer calls the methods of this protocol to deliver the results.
+You use this protocol when implementing an autocomplete solution for a map in your app. As the user types search terms, use an [`MKLocalSearchCompleter`](./mklocalsearchcompleter.md) object to start searching for valid completions. The delegate you assign to that object needs to conform to this protocol. As it receives completions, the local search completer calls the methods of this protocol to deliver the results.
 
 ## Topics
 
 ### Getting the search results
-- [func completerDidUpdateResults(MKLocalSearchCompleter)](mklocalsearchcompleterdelegate/completerdidupdateresults(_:).md)
+- [func completerDidUpdateResults(MKLocalSearchCompleter)](./mklocalsearchcompleterdelegate/completerdidupdateresults%28_%29.md)
   Tells the method when the specified search completer updates its array of search completions.
-- [func completer(MKLocalSearchCompleter, didFailWithError: any Error)](mklocalsearchcompleterdelegate/completer(_:didfailwitherror:).md)
+- [func completer(MKLocalSearchCompleter, didFailWithError: any Error)](./mklocalsearchcompleterdelegate/completer%28_,didfailwitherror%29.md)
   Tells the method when the specified search completer is unable to generate a list of search results.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any MKLocalSearchCompleterDelegate)?](mklocalsearchcompleter/delegate.md)
+### Receiving the search results
+- [var delegate: (any MKLocalSearchCompleterDelegate)?](./mklocalsearchcompleter/delegate.md)
   The object that receives the completion results.
 
 

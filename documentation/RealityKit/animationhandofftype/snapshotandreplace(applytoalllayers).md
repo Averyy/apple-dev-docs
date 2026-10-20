@@ -1,7 +1,8 @@
 # snapshotAndReplace(applyToAllLayers:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Stops the current animation and uses the current value of that animation as the blend value for the transition to the new animation.
 

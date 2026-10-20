@@ -1,14 +1,15 @@
 # init(title:subtitle:image:selectedImage:preferredImageVisibility:identifier:discoverabilityTitle:attributes:state:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - tvOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

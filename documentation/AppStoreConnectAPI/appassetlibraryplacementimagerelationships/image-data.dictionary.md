@@ -1,21 +1,22 @@
 # AppAssetLibraryPlacementImageRelationships.Image
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementImageRelationships.Image
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryPlacementImageRelationships.Image.Data](appassetlibraryplacementimagerelationships/image-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryPlacementImageRelationships.Image.Data](./image-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

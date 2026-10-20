@@ -1,6 +1,8 @@
 # Calculating primitive visibility using depth testing
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [CalculatingPrimitiveVisibilityUsingDepthTesting.zip](https://docs-assets.developer.apple.com/published/ea4f1de05ccc/CalculatingPrimitiveVisibilityUsingDepthTesting.zip)
 
 Determine which pixels are visible in a scene by using a depth texture.
 
@@ -17,13 +19,13 @@ When graphics primitives overlap each other, by default, Metal renders them in t
 
 Depth is a measure of the distance from a viewing position to a specific pixel. When using depth testing, you add a *depth texture* (sometimes called a *depth buffer*) to your render pass. A depth texture stores a depth value for each pixel in the same way that a color texture holds a color value. You determine how depth values are calculated for each fragment, usually by calculating the depth for each vertex and letting the hardware interpolate these depth values. The GPU tests new fragments to see if they are closer to the viewing position than the current value stored in the depth texture. If a fragment is farther away, the GPU discards the fragment. Otherwise, it updates the pixel data, including the new depth value. Because the GPU tests the depth of all fragments, it renders triangles correctly even when the triangles are partially obscured.
 
-![A flowchart showing the depth test sequence. The depth of each new fragment is tested against data in the depth texture. When the test succeeds, the new fragment is stored to the depth and color textures.](/images/com.apple.metal/1-depth-testing-flow.png)
+![A flowchart showing the depth test sequence. The depth of each new fragment is tested against data in the depth texture. When the test succeeds, the new fragment is stored to the depth and color textures.](https://developer.apple.com/tutorials/images/com.apple.metal/1-depth-testing-flow.png)
 
 This sample demonstrates depth testing by showing a triangle and letting you change the depth value of each of its vertices. The depth of each fragment is interpolated between the depth values you set for the triangle’s vertices, and the app configures the GPU to perform the depth test as described above. Each time a render pass is executed, it clears the depth texture’s data, then renders a gray square at the halfway point. Finally, the render pass renders the triangle. Only the fragments closer to the viewer than the gray square are visible.
 
 This sample only demonstrates how to use depth testing. It doesn’t cover concepts for rendering a 3D scene.
 
-##### Create a Depth Texture
+##### Create a depth texture
 
 By default, `MTKView` doesn’t create depth textures. To add them, set the `depthStencilPixelFormat` property to the data format you want to use for depth textures. The view creates and manages them for you automatically.
 
@@ -33,7 +35,7 @@ mtkView.depthStencilPixelFormat = MTLPixelFormatDepth32Float;
 
 This sample uses a 32-bit floating-point depth value for each pixel. Pick a format that has the range and precision you need for your intended use case.
 
-##### Specify the Depth Format in the Render Pipeline
+##### Specify the depth format in the render pipeline
 
 To enable depth testing for a render pipeline, set the `depthAttachmentPixelFormat` property on the descriptor when you create the render pipeline, as shown below:
 
@@ -43,11 +45,11 @@ pipelineStateDescriptor.depthAttachmentPixelFormat = mtkView.depthStencilPixelFo
 
 As with color formats, the render pipeline needs information about the format of the depth texture so that it can read or write values in the texture. Specify the same depth format that you used to configure your view. When you add a depth texture, Metal enables additional stages on the render pipeline:
 
-![Flowchart showing a rendering pipeline with depth testing](/images/com.apple.metal/2-depth-testing-pipeline.png)
+![Flowchart showing a rendering pipeline with depth testing](https://developer.apple.com/tutorials/images/com.apple.metal/2-depth-testing-pipeline.png)
 
-##### Configure the Depth Test
+##### Configure the depth test
 
-In Metal, you configure depth testing independently from the render pipeline, so you can mix and match combinations of render pipelines and depth tests. The depth test is represented by an [`MTLDepthStencilState`](mtldepthstencilstate.md) object, and like you do with a render pipeline, you usually create this object when you initialize your app, and keep a reference to it as long as you need to execute that test.
+In Metal, you configure depth testing independently from the render pipeline, so you can mix and match combinations of render pipelines and depth tests. The depth test is represented by an [`MTLDepthStencilState`](./mtldepthstencilstate.md) object, and like you do with a render pipeline, you usually create this object when you initialize your app, and keep a reference to it as long as you need to execute that test.
 
 In the flowchart shown in the overview, the depth test passes when a new depth value is smaller than the existing value for the target pixel in the depth texture, indicating that the fragment is closer to the viewer than whatever was previously rendered there. When the depth test passes, the fragment’s color values are written to the color render attachments, and the new depth value is written to the depth attachment. This code shows how to configure the depth test:
 
@@ -60,7 +62,7 @@ _depthState = [_device newDepthStencilStateWithDescriptor:depthDescriptor];
 
 > **Note**: Metal combines depth testing with a *stencil test*, which performs a similar test using a count stored for each pixel, typically the number of times that fragments pass the depth test. Stencil operations are useful for implementing certain 3D algorithms. By default, the stencil test is disabled, and this sample doesn’t enable it.
 
-##### Generate Depth Values in Your Shaders
+##### Generate depth values in your shaders
 
 To implement the depth test, you need to provide a value for the z coordinate in a vertex shader. The Normalized Device Coordinate (NDC) system in Metal uses four-dimensional coordinates, and your vertex shader needs to provide a position for each vertex.
 
@@ -72,11 +74,11 @@ out.clipSpacePosition.z = vertices[vertexID].position.z;
 
 When the rasterizer calculates the data to send to the fragment shader, it interpolates between these z values:
 
-![Illustration showing the depth values generated from a triangle with the given vertices.](/images/com.apple.metal/3-depth-testing-depth-values.png)
+![Illustration showing the depth values generated from a triangle with the given vertices.](https://developer.apple.com/tutorials/images/com.apple.metal/3-depth-testing-depth-values.png)
 
 Your fragment function can read the z value, ignore it, or modify it, as needed. If you don’t modify the value calculated by the rasterizer, a GPU can sometimes perform additional optimizations. For example, it may be able to execute the z test before running the fragment shader, so that it doesn’t run the fragment shader for hidden fragments. If you change the depth value in the fragment shader, you may incur a performance penalty because the GPU needs to execute the fragment shader first.
 
-##### Clear the Depth Texture at the Start of the Render Pass
+##### Clear the depth texture at the start of the render pass
 
 A render pass includes a list of textures that it targets, including (optionally) a depth texture. If you plan to use depth testing, you need to configure the render pass’s depth texture attachment.  Because you configured the view to include a depth texture, when you ask the view for a render pass descriptor, it automatically configures the descriptor’s depth render target to point at a depth texture. It also configures the render pass to clear the depth texture at the start of the frame. All you need to do is provide the starting depth value for the depth texture.
 
@@ -86,7 +88,7 @@ mtkView.clearDepth = 1.0;
 
 When the GPU starts the render pass, every pixel in the depth texture is initialized to `1.0`.
 
-##### Encode a Draw Command
+##### Encode a draw command
 
 As in other Metal rendering examples, this sample creates a render command encoder and then encodes a series of draw commands. When you configure the arguments for a draw call, you include a reference to the depth test to execute.
 
@@ -100,31 +102,32 @@ Experiment with the sliders and see how the results change.
 
 ## See Also
 
-- [Using Metal to draw a view’s contents](using-metal-to-draw-a-view's-contents.md)
+### Render workflows
+- [Using Metal to draw a view’s contents](./using-metal-to-draw-a-views-contents.md)
   Create a MetalKit view and a render pass to draw the view’s contents.
-- [Drawing a triangle with Metal 4](drawing-a-triangle-with-metal-4.md)
+- [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md)
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Selecting device objects for graphics rendering](selecting-device-objects-for-graphics-rendering.md)
+- [Selecting device objects for graphics rendering](./selecting-device-objects-for-graphics-rendering.md)
   Switch dynamically between multiple GPUs to efficiently render to a display.
-- [Customizing render pass setup](customizing-render-pass-setup.md)
+- [Customizing render pass setup](./customizing-render-pass-setup.md)
   Render into an offscreen texture by creating a custom render pass.
-- [Creating a custom Metal view](creating-a-custom-metal-view.md)
+- [Creating a custom Metal view](./creating-a-custom-metal-view.md)
   Implement a lightweight view for Metal rendering that’s customized to your app’s needs.
-- [Encoding indirect command buffers on the CPU](encoding-indirect-command-buffers-on-the-cpu.md)
+- [Encoding indirect command buffers on the CPU](./encoding-indirect-command-buffers-on-the-cpu.md)
   Reduce CPU overhead and simplify your command execution by reusing commands.
-- [Implementing order-independent transparency with image blocks](implementing-order-independent-transparency-with-image-blocks.md)
+- [Implementing order-independent transparency with image blocks](./implementing-order-independent-transparency-with-image-blocks.md)
   Draw overlapping, transparent surfaces in any order by using tile shaders and image blocks.
-- [Loading textures and models using Metal fast resource loading](loading-textures-and-models-using-metal-fast-resource-loading.md)
+- [Loading textures and models using Metal fast resource loading](./loading-textures-and-models-using-metal-fast-resource-loading.md)
   Stream texture and buffer data directly from disk into Metal resources using fast resource loading.
-- [Adjusting the level of detail using Metal mesh shaders](adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
+- [Adjusting the level of detail using Metal mesh shaders](./adjusting-the-level-of-detail-using-metal-mesh-shaders.md)
   Choose and render meshes with several levels of detail using object and mesh shaders.
-- [Creating a 3D application with hydra rendering](creating-a-3d-application-with-hydra-rendering.md)
+- [Creating a 3D application with hydra rendering](./creating-a-3d-application-with-hydra-rendering.md)
   Build a 3D application that integrates with Hydra and USD.
-- [Culling occluded geometry using the visibility result buffer](culling-occluded-geometry-using-the-visibility-result-buffer.md)
+- [Culling occluded geometry using the visibility result buffer](./culling-occluded-geometry-using-the-visibility-result-buffer.md)
   Draw a scene without rendering hidden geometry by checking whether each object in the scene is visible.
-- [Improving edge-rendering quality with multisample antialiasing (MSAA)](improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
+- [Improving edge-rendering quality with multisample antialiasing (MSAA)](./improving-edge-rendering-quality-with-multisample-antialiasing-msaa.md)
   Apply MSAA to enhance the rendering of edges with custom resolve options and immediate and tile-based resolve paths.
-- [Achieving smooth frame rates with a Metal display link](achieving-smooth-frame-rates-with-a-metal-display-link.md)
+- [Achieving smooth frame rates with a Metal display link](./achieving-smooth-frame-rates-with-a-metal-display-link.md)
   Pace rendering with minimal input latency while providing essential information to the operating system for power-efficient rendering, thermal mitigation, and the scheduling of sustainable workloads.
 
 

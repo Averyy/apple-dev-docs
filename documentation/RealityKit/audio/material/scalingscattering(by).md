@@ -1,7 +1,8 @@
 # scalingScattering(by:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scale the scattering data by a frequency-dependent scalar value between -1 and 1.
 
@@ -33,7 +34,7 @@ Audio material with scattering data scaled by the frequency-dependent scaling fu
 
 Example usage:
 
-```None
+```
 // Make a generic concrete material scatter more at high frequencies by making it rougher.
 // Below 4000Hz, the scattering remains the same. Above 4000Hz, the scattering is increased.
 let roughConcrete: Audio.Material = .concrete.scalingScattering { frequency in
@@ -47,7 +48,8 @@ let roughConcrete: Audio.Material = .concrete.scalingScattering { frequency in
 
 ## See Also
 
-- [func scalingAbsorption(by: (Float) -> Float) -> Audio.Material](audio/material/scalingabsorption(by:).md)
+### Adjusting acoustic properties
+- [func scalingAbsorption(by: (Float) -> Float) -> Audio.Material](./scalingabsorption%28by%29.md)
   Scale the absorption data by a frequency-dependent scalar value between -1 and 1.
 
 

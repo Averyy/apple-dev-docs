@@ -1,7 +1,8 @@
 # supportedActivityFamilies
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An environment value that that indicates potential rendered family for a Live Activity.
 
@@ -17,7 +18,7 @@ var supportedActivityFamilies: Set<ActivityFamily> { get set }
 
 #### Discussion
 
-To detect the currently rendered activity family size, use the [`activityFamily`](environmentvalues/activityfamily.md) environment variable. The `supportedActivityFamilies` environment value might only be useful if your make you make your Live Activity views available in a Swift package.
+To detect the currently rendered activity family size, use the [`activityFamily`](./activityfamily.md) environment variable. The `supportedActivityFamilies` environment value might only be useful if your make you make your Live Activity views available in a Swift package.
 
 
 ---

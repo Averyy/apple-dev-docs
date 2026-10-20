@@ -1,7 +1,8 @@
 # stratifiedSplit(on:_:_:by:randomSeed:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates two data frames by randomly splitting the rows of three columns, which you select by column identifiers, into strata.
 
@@ -34,13 +35,14 @@ A tuple of two data frames.
 
 ## See Also
 
-- [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-9iauf.md)
+### Creating Two Data Frames by Splitting Rows
+- [func stratifiedSplit(on: String, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,by,randomseed%29-9iauf.md)
   Generates two data frames by randomly splitting the rows of a column, which you select by its name, into strata.
-- [func stratifiedSplit(on: String..., by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-8szu1.md)
+- [func stratifiedSplit(on: String..., by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,by,randomseed%29-8szu1.md)
   Generates two data frames by randomly splitting the rows of multiple columns, which you select by their names, into strata.
-- [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:by:randomseed:)-714jk.md)
+- [func stratifiedSplit<T>(on: ColumnID<T>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,by,randomseed%29-714jk.md)
   Generates two data frames by randomly splitting the rows of a column, which you select by column identifier, into strata.
-- [func stratifiedSplit<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](dataframeprotocol/stratifiedsplit(on:_:by:randomseed:).md)
+- [func stratifiedSplit<T0, T1>(on: ColumnID<T0>, ColumnID<T1>, by: Double, randomSeed: Int?) -> (DataFrame, DataFrame)](./stratifiedsplit%28on,_,by,randomseed%29.md)
   Generates two data frames by randomly splitting the rows of two columns, which you select by column identifiers, into strata.
 
 

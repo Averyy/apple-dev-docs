@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The linear speed relative to the origin in physics space.
 
@@ -11,7 +12,7 @@ The linear speed relative to the origin in physics space.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let velocity: SIMD3<Float>
 
 ## See Also
 
-- [let isOnGround: Bool](charactercontrollerstatecomponent/isonground.md)
+### Accessing character controller state
+- [let isOnGround: Bool](./isonground.md)
   A Boolean value that indicates whether the character controller is on the ground.
 
 

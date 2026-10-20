@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension controller delegate.
 
@@ -16,6 +17,10 @@ The extension controller delegate.
 
 ```swift
 weak var delegate: (any WKWebExtensionControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak) id<WKWebExtensionControllerDelegate> delegate;
 ```
 
 

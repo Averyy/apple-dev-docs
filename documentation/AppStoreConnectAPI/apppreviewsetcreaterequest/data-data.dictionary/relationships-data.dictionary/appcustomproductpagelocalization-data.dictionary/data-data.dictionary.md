@@ -1,23 +1,26 @@
 # AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app preview set.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryPlacementCreateRequest`](../../../../appassetlibraryplacementcreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPageLocalizations`
 
 
 ---

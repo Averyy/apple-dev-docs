@@ -1,7 +1,8 @@
 # TupleSliderTickContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Slider content created from a Swift tuple of slider content.
 
@@ -23,24 +24,25 @@ struct TupleSliderTickContent<V, T> where V : BinaryFloatingPoint
 ## Topics
 
 ### Instance Properties
-- [var value: T](tupleslidertickcontent/value.md)
+- [var value: T](./tupleslidertickcontent/value.md)
 ### Type Aliases
-- [TupleSliderTickContent.TicksCollection](tupleslidertickcontent/tickscollection.md)
+- [TupleSliderTickContent.TicksCollection](./tupleslidertickcontent/tickscollection.md)
 
 ## Relationships
 
 ### Conforms To
-- [SliderTickContent](slidertickcontent.md)
+- [SliderTickContent](./slidertickcontent.md)
 
 ## See Also
 
-- [struct SliderTick](slidertick.md)
+### Adding ticks to a slider
+- [struct SliderTick](./slidertick.md)
   A representation of a tick in a slider, with associated value and optional label.
-- [struct SliderTickBuilder](slidertickbuilder.md)
+- [struct SliderTickBuilder](./slidertickbuilder.md)
   A result builder that constructs `SliderTick`s for use when creating a `Slider`.
-- [struct SliderTickContentForEach](slidertickcontentforeach.md)
+- [struct SliderTickContentForEach](./slidertickcontentforeach.md)
   A type of slider content that creates content by iterating over a collection.
-- [protocol SliderTickContent](slidertickcontent.md)
+- [protocol SliderTickContent](./slidertickcontent.md)
   A type that provides content for a `SliderTickBuilder`.
 
 

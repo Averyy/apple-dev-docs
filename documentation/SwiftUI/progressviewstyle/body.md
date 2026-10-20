@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view representing the body of a progress view.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](progressviewstyle/makebody(configuration:).md)
+### Creating custom progress view styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a progress view.
-- [ProgressViewStyle.Configuration](progressviewstyle/configuration.md)
+- [ProgressViewStyle.Configuration](./configuration.md)
   A type alias for the properties of a progress view instance.
 
 

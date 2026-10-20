@@ -1,7 +1,8 @@
 # type
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the call action.
 
@@ -18,13 +19,18 @@ The type of the call action.
 var type: CXPlayDTMFCallAction.ActionType { get set }
 ```
 
+```objc
+@property (nonatomic) CXPlayDTMFCallActionType type;
+```
+
 #### Discussion
 
-For possible values, see [`CXPlayDTMFCallAction.ActionType`](cxplaydtmfcallaction/actiontype.md).
+For possible values, see [`CXPlayDTMFCallAction.ActionType`](./actiontype.md).
 
 ## See Also
 
-- [var digits: String](cxplaydtmfcallaction/digits.md)
+### Accessing Action Information
+- [var digits: String](./digits.md)
   The digits tapped by the user into the in-call keypad or included in the dial string.
 
 

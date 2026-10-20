@@ -1,7 +1,8 @@
 # apply(foreground:background:colorSpace:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func apply(foreground: CIImage, background: CIImage, colorSpace: CGColorSpace) -> CIImage?
+```
+
+```objc
+- (CIImage *) applyWithForeground:(CIImage *) foreground background:(CIImage *) background colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
 

@@ -1,7 +1,8 @@
 # overrideTitle
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string to use to override the title of the item’s type.
 
@@ -17,13 +18,18 @@ A string to use to override the title of the item’s type.
 var overrideTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * overrideTitle;
+```
+
 #### Discussion
 
 Use this value to dynamically override the title of the custom item.
 
 ## See Also
 
-- [var type: UTType](avcustomroutingactionitem/type.md)
+### Configuring an item
+- [var type: UTType](./type.md)
   A type with an identifier that matches a value in the app’s configuration.
 
 

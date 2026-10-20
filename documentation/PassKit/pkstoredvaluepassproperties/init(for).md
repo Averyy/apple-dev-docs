@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stored-value pass properties object for the specified pass.
 
@@ -9,7 +10,7 @@ Creates a stored-value pass properties object for the specified pass.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.0+
 
@@ -17,6 +18,10 @@ Creates a stored-value pass properties object for the specified pass.
 
 ```swift
 convenience init?(for pass: PKPass)
+```
+
+```objc
++ (instancetype) passPropertiesForPass:(PKPass *) pass;
 ```
 
 ## Parameters

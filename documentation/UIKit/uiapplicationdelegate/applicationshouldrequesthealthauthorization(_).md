@@ -1,7 +1,8 @@
 # applicationShouldRequestHealthAuthorization(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when your app should ask the user for access to his or her HealthKit data.
 
@@ -18,9 +19,13 @@ Tells the delegate when your app should ask the user for access to his or her He
 optional func applicationShouldRequestHealthAuthorization(_ application: UIApplication)
 ```
 
+```objc
+- (void) applicationShouldRequestHealthAuthorization:(UIApplication *) application;
+```
+
 #### Discussion
 
-In your implementation of this method, call the [`handleAuthorizationForExtension(completion:)`](https://developer.apple.com/documentation/healthkit/hkhealthstore/handleauthorizationforextension(completion:)) method of the [`HKHealthStore`](https://developer.apple.com/documentation/healthkit/hkhealthstore) object.
+In your implementation of this method, call the [`handleAuthorizationForExtension(completion:)`](../../HealthKit/hkhealthstore/handleauthorizationforextension%28completion%29.md) method of the [`HKHealthStore`](../../HealthKit/hkhealthstore.md) object.
 
 ## Parameters
 

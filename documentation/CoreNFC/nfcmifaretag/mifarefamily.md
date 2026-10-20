@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The MIFARE product family identifier for the tag.
@@ -17,13 +18,18 @@ The MIFARE product family identifier for the tag.
 var mifareFamily: NFCMiFareFamily { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NFCMiFareFamily mifareFamily;
+```
+
 ## See Also
 
-- [enum NFCMiFareFamily](nfcmifarefamily.md)
+### Getting Tag Information
+- [enum NFCMiFareFamily](../nfcmifarefamily.md)
   Identifiers for the MIFARE product families.
-- [var identifier: Data](nfcmifaretag/identifier.md)
+- [var identifier: Data](./identifier.md)
   The unique hardware identifier of the tag.
-- [var historicalBytes: Data?](nfcmifaretag/historicalbytes.md)
+- [var historicalBytes: Data?](./historicalbytes.md)
   The historical bytes extracted from an Answer To Select response.
 
 

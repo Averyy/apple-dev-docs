@@ -1,7 +1,8 @@
 # strideInX
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the stride in width dimension.
 
@@ -17,6 +18,10 @@ The property that defines the stride in width dimension.
 
 ```swift
 var strideInX: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger strideInX;
 ```
 
 

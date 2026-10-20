@@ -1,16 +1,21 @@
 # mNumberStreams
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var mNumberStreams: UInt32
+```
+
+```c
+UInt32 mNumberStreams;
 ```
 
 

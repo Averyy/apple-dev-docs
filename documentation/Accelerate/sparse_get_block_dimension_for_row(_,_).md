@@ -1,7 +1,8 @@
 # sparse_get_block_dimension_for_row(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the dimension of the block for a specified row of a double-precision matrix.
 
@@ -20,6 +21,10 @@ Returns the dimension of the block for a specified row of a double-precision mat
 func sparse_get_block_dimension_for_row(_ A: UnsafeMutableRawPointer!, _ i: sparse_index) -> Int
 ```
 
+```c
+long sparse_get_block_dimension_for_row(void *A, sparse_index i);
+```
+
 #### Return Value
 
 The dimension of the block of the specified row.
@@ -30,12 +35,13 @@ The dimension of the block of the specified row.
 
 ## Parameters
 
-- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](sparse_matrix_block_create_float(_:_:_:_:).md),  [`sparse_matrix_block_create_double(_:_:_:_:)`](sparse_matrix_block_create_double(_:_:_:_:).md), [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](sparse_matrix_variable_block_create_float(_:_:_:_:).md), or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](sparse_matrix_variable_block_create_double(_:_:_:_:).md). 0 is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
+- `A`: The sparse matrix, *A*, which must have been created with [`sparse_matrix_block_create_float(_:_:_:_:)`](./sparse_matrix_block_create_float%28_,_,_,_%29.md),  [`sparse_matrix_block_create_double(_:_:_:_:)`](./sparse_matrix_block_create_double%28_,_,_,_%29.md), [`sparse_matrix_variable_block_create_float(_:_:_:_:)`](./sparse_matrix_variable_block_create_float%28_,_,_,_%29.md), or [`sparse_matrix_variable_block_create_double(_:_:_:_:)`](./sparse_matrix_variable_block_create_double%28_,_,_,_%29.md). 0 is returned if not met. `A` holds block dimensions (fixed or variable) set with matrix object creation routine.
 - `i`: The row to query.
 
 ## See Also
 
-- [func sparse_get_block_dimension_for_col(UnsafeMutableRawPointer!, sparse_index) -> Int](sparse_get_block_dimension_for_col(_:_:).md)
+### Block dimension queries
+- [func sparse_get_block_dimension_for_col(UnsafeMutableRawPointer!, sparse_index) -> Int](./sparse_get_block_dimension_for_col%28_,_%29.md)
   Returns the dimension of the block for a specified column of a single-precision matrix.
 
 

@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The USB product identifier associated with the external sync device.
 
@@ -18,21 +19,26 @@ The USB product identifier associated with the external sync device.
 var productID: UInt32 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UInt32 productID;
+```
+
 #### Discussion
 
-This `UInt32` value comes from the hardware vendor, and returns 0 if not available. Use this value in conjunction with the [`vendorID`](avexternalsyncdevice/vendorid.md) to determine a specific product.
+This `UInt32` value comes from the hardware vendor, and returns 0 if not available. Use this value in conjunction with the [`vendorID`](./vendorid.md) to determine a specific product.
 
 ## See Also
 
-- [var clock: CMClock?](avexternalsyncdevice/clock.md)
+### Inspecting a device
+- [var clock: CMClock?](./clock.md)
   A clock representing the source of time from the external sync device.
-- [var signalCompensationDelay: CMTime](avexternalsyncdevice/signalcompensationdelay.md)
+- [var signalCompensationDelay: CMTime](./signalcompensationdelay.md)
   Delay to wait before starting the frame capture.
-- [var status: AVExternalSyncDeviceStatus](avexternalsyncdevice/status.md)
+- [var status: AVExternalSyncDeviceStatus](./status.md)
   The status of the externally connected device.
-- [var uuid: UUID](avexternalsyncdevice/uuid.md)
+- [var uuid: UUID](./uuid.md)
   A unique identifier for an external sync device.
-- [var vendorID: UInt32](avexternalsyncdevice/vendorid.md)
+- [var vendorID: UInt32](./vendorid.md)
   The USB vendor identifier associated with the external sync device.
 
 

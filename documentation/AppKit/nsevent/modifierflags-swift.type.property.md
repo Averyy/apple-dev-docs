@@ -1,7 +1,8 @@
 # modifierFlags
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The currently pressed modifier keys.
 
@@ -14,6 +15,10 @@ The currently pressed modifier keys.
 class var modifierFlags: NSEvent.ModifierFlags { get }
 ```
 
+```objc
+@property (class, readonly) NSEventModifierFlags modifierFlags;
+```
+
 #### Return Value
 
 A mask of the current modifiers using the values in `Modifier Flags`.
@@ -24,9 +29,10 @@ This returns the state of devices combined with synthesized events at the moment
 
 ## See Also
 
-- [var modifierFlags: NSEvent.ModifierFlags](nsevent/modifierflags-swift.property.md)
+### Getting modifier flags
+- [var modifierFlags: NSEvent.ModifierFlags](./modifierflags-swift.property.md)
   An integer bit field that indicates the pressed modifier keys.
-- [NSEvent.ModifierFlags](nsevent/modifierflags-swift.struct.md)
+- [NSEvent.ModifierFlags](./modifierflags-swift.struct.md)
   Flags that represent key states in an event object.
 
 

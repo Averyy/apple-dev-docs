@@ -1,7 +1,8 @@
 # GLsizeiptr
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLsizeiptr = Int
+```
+
+```c
+typedef intptr_t GLsizeiptr;
 ```
 
 

@@ -1,7 +1,8 @@
 # productViewControllerDidFinish(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user dismisses the store screen.
 
@@ -17,9 +18,13 @@ Called when the user dismisses the store screen.
 optional func productViewControllerDidFinish(_ viewController: SKStoreProductViewController)
 ```
 
+```objc
+- (void) productViewControllerDidFinish:(SKStoreProductViewController *) viewController;
+```
+
 #### Discussion
 
-Your delegate should call the [`dismissModalViewControllerAnimated:`](https://developer.apple.com/documentation/uikit/uiviewcontroller/dismissmodalviewcontrolleranimated:) method on the view controller that originally presented the store screen. If your app paused any other activities before presenting the store, it can restart those services in this method.
+Your delegate should call the [`dismissModalViewControllerAnimated:`](../../UIKit/uiviewcontroller/dismissmodalviewcontrolleranimated_.md) method on the view controller that originally presented the store screen. If your app paused any other activities before presenting the store, it can restart those services in this method.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ Your delegate should call the [`dismissModalViewControllerAnimated:`](https://de
 
 ## See Also
 
-- [Apple In-App Purchase Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
+### Related Documentation
+- [Apple In-App Purchase Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StoreKitGuide/Introduction.html#//apple_ref/doc/uid/TP40008267)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(image:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the sampler with an image object using options specified in a dictionary.
 
@@ -19,14 +20,19 @@ Initializes the sampler with an image object using options specified in a dictio
 init(image im: CIImage, options dict: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithImage:(CIImage *) im options:(NSDictionary *) dict;
+```
+
 ## Parameters
 
 - `im`: The image to initialize the sampler with.
-- `dict`: A dictionary that contains options specified as key-value pairs. See [`Sampler Option Keys`](sampler-option-keys.md).
+- `dict`: A dictionary that contains options specified as key-value pairs. See [Sampler Option Keys](../sampler-option-keys.md).
 
 ## See Also
 
-- [convenience init(image: CIImage)](cisampler/init(image:).md)
+### Initializing a Sampler
+- [convenience init(image: CIImage)](./init%28image%29.md)
   Initializes a sampler with an image object.
 
 

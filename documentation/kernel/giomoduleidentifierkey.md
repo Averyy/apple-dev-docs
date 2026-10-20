@@ -1,14 +1,15 @@
 # gIOModuleIdentifierKey
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 OSPtr<const OSSymbol> gIOModuleIdentifierKey;
 ```
 

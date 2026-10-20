@@ -1,7 +1,8 @@
 # init(id:kind:)
 
 **Framework**: Media Intelligence  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image asset with the specified identifier and kind.
 
@@ -26,9 +27,10 @@ init(id: MediaIntelligenceImageAsset.ID, kind: MediaIntelligenceImageAsset.Kind)
 
 ## See Also
 
-- [MediaIntelligenceImageAsset.ID](mediaintelligenceimageasset/id-swift.struct.md)
+### Creating an asset
+- [MediaIntelligenceImageAsset.ID](./id-swift.struct.md)
   A unique identifier for an image asset.
-- [MediaIntelligenceImageAsset.Kind](mediaintelligenceimageasset/kind-swift.enum.md)
+- [MediaIntelligenceImageAsset.Kind](./kind-swift.enum.md)
   A value that describes the source of an image asset’s data.
 
 

@@ -1,7 +1,8 @@
 # didEndEditingReasonUserInfoKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that indicates the reason for ending editing in a text field.
 
@@ -19,23 +20,28 @@ nonisolated
 class let didEndEditingReasonUserInfoKey: String
 ```
 
+```c
+extern NSString * const UITextFieldDidEndEditingReasonKey;
+```
+
 ## See Also
 
-- [var isEditing: Bool](uitextfield/isediting.md)
+### Managing the editing behavior
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the text field is currently in edit mode.
-- [var clearsOnBeginEditing: Bool](uitextfield/clearsonbeginediting.md)
+- [var clearsOnBeginEditing: Bool](./clearsonbeginediting.md)
   A Boolean value that determines whether the text field removes old text when editing begins.
-- [var clearsOnInsertion: Bool](uitextfield/clearsoninsertion.md)
+- [var clearsOnInsertion: Bool](./clearsoninsertion.md)
   A Boolean value that determines whether inserting text replaces the previous contents.
-- [var allowsEditingTextAttributes: Bool](uitextfield/allowseditingtextattributes.md)
+- [var allowsEditingTextAttributes: Bool](./allowseditingtextattributes.md)
   A Boolean value that determines whether the user can edit the attributes of the text in the text field.
-- [UITextField.DidEndEditingReason](uitextfield/didendeditingreason.md)
+- [UITextField.DidEndEditingReason](./didendeditingreason.md)
   Constants that indicate the reason for ending editing in a text field.
-- [class let textDidBeginEditingNotification: NSNotification.Name](uitextfield/textdidbegineditingnotification.md)
+- [class let textDidBeginEditingNotification: NSNotification.Name](./textdidbegineditingnotification.md)
   A notification that alerts observers when an editing session begins in a text field.
-- [class let textDidChangeNotification: NSNotification.Name](uitextfield/textdidchangenotification.md)
+- [class let textDidChangeNotification: NSNotification.Name](./textdidchangenotification.md)
   A notification that alerts observers when the text in a text field changes.
-- [class let textDidEndEditingNotification: NSNotification.Name](uitextfield/textdidendeditingnotification.md)
+- [class let textDidEndEditingNotification: NSNotification.Name](./textdidendeditingnotification.md)
   A notification that alerts observers when the editing session ends for a text field.
 
 

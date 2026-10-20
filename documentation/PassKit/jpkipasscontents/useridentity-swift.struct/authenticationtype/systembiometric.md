@@ -1,7 +1,8 @@
 # JPKIPassContents.UserIdentity.AuthenticationType.systemBiometric
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authentication using biometric information.
 
@@ -17,11 +18,12 @@ case systemBiometric
 
 #### Discussion
 
-Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsfaceidusagedescription) usage description.
+Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](../../../../BundleResources/information-property-list/nsfaceidusagedescription.md) usage description.
 
 ## See Also
 
-- [JPKIPassContents.UserIdentity.AuthenticationType.pin(_:)](jpkipasscontents/useridentity-swift.struct/authenticationtype/pin(_:).md)
+### Types of authentication
+- [JPKIPassContents.UserIdentity.AuthenticationType.pin(_:)](./pin%28_%29.md)
   The PIN associated with the user identity.
 
 

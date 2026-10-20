@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numbering system’s BCP 47 identifier.
 

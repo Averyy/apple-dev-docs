@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UTI type for this collaboration highlight.
 
@@ -18,13 +19,18 @@ The UTI type for this collaboration highlight.
 var contentType: UTType { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UTType * contentType;
+```
+
 ## See Also
 
-- [var collaborationIdentifier: String](swcollaborationhighlight/collaborationidentifier.md)
+### Accessing collaboration attributes
+- [var collaborationIdentifier: String](./collaborationidentifier.md)
   A unique identifier that the app hosting the collaboration provides.
-- [var creationDate: Date](swcollaborationhighlight/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date the system creates this file.
-- [var title: String?](swcollaborationhighlight/title.md)
+- [var title: String?](./title.md)
   The title of the collaboration highlight.
 
 

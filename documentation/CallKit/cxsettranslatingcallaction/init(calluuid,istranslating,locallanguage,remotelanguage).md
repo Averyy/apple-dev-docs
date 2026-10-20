@@ -1,7 +1,8 @@
 # init(callUUID:isTranslating:localLanguage:remoteLanguage:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

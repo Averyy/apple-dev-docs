@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A description of the renamed item.
@@ -19,9 +20,14 @@ A description of the renamed item.
 var renamedItem: NSFileProviderItem { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItem renamedItem;
+```
+
 ## See Also
 
-- [var side: NSFileProviderTestingOperationSide](nsfileprovidertestingcollisionresolution/side.md)
+### Accessing the Operation’s Data
+- [var side: NSFileProviderTestingOperationSide](./side.md)
   The item’s location.
 
 

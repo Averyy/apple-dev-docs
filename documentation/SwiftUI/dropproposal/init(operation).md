@@ -1,7 +1,8 @@
 # init(operation:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.4+
@@ -18,7 +19,8 @@ init(operation: DropOperation)
 
 ## See Also
 
-- [let operation: DropOperation](dropproposal/operation.md)
+### Creating a drop proposal
+- [let operation: DropOperation](./operation.md)
   The drop operation that the drop proposes to perform.
 
 

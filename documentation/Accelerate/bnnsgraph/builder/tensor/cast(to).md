@@ -1,7 +1,8 @@
 # cast(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a cast operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a cast operation to the current graph.
 ```swift
 func cast<U>(to type: U.Type) -> BNNSGraph.Builder.Tensor<U> where U : BNNSScalar
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

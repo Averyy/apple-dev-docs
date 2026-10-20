@@ -1,7 +1,8 @@
 # signInWithAppleButtonStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
 
@@ -26,13 +27,14 @@ func signInWithAppleButtonStyle(_ style: SignInWithAppleButton.Style) -> some Vi
 
 ## See Also
 
-- [struct LocalAuthenticationView](../localauthentication/localauthenticationview.md)
+### Authorizing and authenticating
+- [struct LocalAuthenticationView](../../LocalAuthentication/localauthenticationview.md)
   A SwiftUI view that displays an authentication interface.
-- [struct SignInWithAppleButton](../authenticationservices/signinwithapplebutton.md)
+- [struct SignInWithAppleButton](../../AuthenticationServices/signinwithapplebutton.md)
   A SwiftUI view that creates the Sign in with Apple button for display.
-- [var authorizationController: AuthorizationController](environmentvalues/authorizationcontroller.md)
+- [var authorizationController: AuthorizationController](../environmentvalues/authorizationcontroller.md)
   A value provided in the SwiftUI environment that views can use to perform authorization requests.
-- [var webAuthenticationSession: WebAuthenticationSession](environmentvalues/webauthenticationsession.md)
+- [var webAuthenticationSession: WebAuthenticationSession](../environmentvalues/webauthenticationsession.md)
   A value provided in the SwiftUI environment that views can use to authenticate a user through a web service.
 
 

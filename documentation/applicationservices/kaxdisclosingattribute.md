@@ -1,7 +1,8 @@
 # kAXDisclosingAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether a row in an outline view represented by this accessibility object has an open or closed disclosure triangle. `true` indicates an open disclosure triangle; `false` indicates a closed disclosure triangle.
 
@@ -12,6 +13,10 @@ Indicates whether a row in an outline view represented by this accessibility obj
 
 ```swift
 var kAXDisclosingAttribute: String { get }
+```
+
+```c
+#define kAXDisclosingAttribute
 ```
 
 

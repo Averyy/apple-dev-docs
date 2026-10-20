@@ -1,7 +1,8 @@
 # withStorageBehaviorOptimizationDisabled()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create configuration that disables storage behavior optimizations.
 
@@ -18,6 +19,10 @@ Create configuration that disables storage behavior optimizations.
 
 ```swift
 class func withStorageBehaviorOptimizationDisabled() -> Self
+```
+
+```objc
++ (instancetype) configurationWithStorageBehaviorOptimizationDisabled;
 ```
 
 

@@ -1,7 +1,8 @@
 # uncoded
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `mis` code: represents languages that have not been included in the ISO standard yet
 

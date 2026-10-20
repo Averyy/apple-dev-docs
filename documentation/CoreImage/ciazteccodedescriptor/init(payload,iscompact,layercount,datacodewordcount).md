@@ -1,7 +1,8 @@
 # init(payload:isCompact:layerCount:dataCodewordCount:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an Aztec code descriptor for the given payload and parameters.
 
@@ -19,9 +20,13 @@ Initializes an Aztec code descriptor for the given payload and parameters.
 init?(payload errorCorrectedPayload: Data, isCompact: Bool, layerCount: Int, dataCodewordCount: Int)
 ```
 
+```objc
+- (instancetype) initWithPayload:(NSData *) errorCorrectedPayload isCompact:(BOOL) isCompact layerCount:(NSInteger) layerCount dataCodewordCount:(NSInteger) dataCodewordCount;
+```
+
 #### Return Value
 
- An initialized [`CIAztecCodeDescriptor`](ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
+ An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 

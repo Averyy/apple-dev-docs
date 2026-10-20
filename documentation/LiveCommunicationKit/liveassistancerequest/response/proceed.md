@@ -1,7 +1,8 @@
 # LiveAssistanceRequest.Response.proceed
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A response that indicates the extension successfully handled the request and setting up live assistance can proceed.
 
@@ -22,13 +23,14 @@ case proceed
 
 When you return this value, FaceTime displays a “waiting” tile while your service finds a match.
 
-Prior to returning this value, forward [`url`](liveassistancerequest/url.md) to your backend.
+Prior to returning this value, forward [`url`](../url.md) to your backend.
 
 ## See Also
 
-- [case requiresUserInput(reason: LiveAssistanceLaunchReason)](liveassistancerequest/response/requiresuserinput(reason:).md)
+### Working with responses
+- [case requiresUserInput(reason: LiveAssistanceLaunchReason)](./requiresuserinput%28reason%29.md)
   A response that indicates the extension needs to complete a task in the container app before the request can proceed.
-- [enum LiveAssistanceLaunchReason](liveassistancelaunchreason.md)
+- [enum LiveAssistanceLaunchReason](../../liveassistancelaunchreason.md)
   A type that indicates why the live assistance extension needs to launch its container app.
 
 

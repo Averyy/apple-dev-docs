@@ -1,7 +1,8 @@
 # Datatype namespace
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit identifier describing how to interpret the data type for the value.
 
@@ -11,11 +12,12 @@ New namespace types should be registered with Apple.
 
 ## See Also
 
-- [Size](metadata_datatype_definition_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_datatype_definition_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Datatype array](metadata_datatype_definition_atom/datatype_array.md)
+- [Datatype array](./datatype_array.md)
   An array of unsigned 8-bit bytes holding the data type designation for values in timed metadata media samples having this key.
 
 

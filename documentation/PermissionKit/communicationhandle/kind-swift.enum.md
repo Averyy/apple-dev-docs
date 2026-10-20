@@ -1,7 +1,8 @@
 # CommunicationHandle.Kind
 
 **Framework**: PermissionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that identifies different types of communication handles.
 
@@ -25,20 +26,20 @@ Use these cases to specify whether a handle represents an email address, phone n
 ## Topics
 
 ### Identifying a handle type
-- [CommunicationHandle.Kind.phoneNumber](communicationhandle/kind-swift.enum/phonenumber.md)
+- [CommunicationHandle.Kind.phoneNumber](./kind-swift.enum/phonenumber.md)
   A person’s phone number.
-- [CommunicationHandle.Kind.emailAddress](communicationhandle/kind-swift.enum/emailaddress.md)
+- [CommunicationHandle.Kind.emailAddress](./kind-swift.enum/emailaddress.md)
   A person’s email address.
-- [CommunicationHandle.Kind.custom](communicationhandle/kind-swift.enum/custom.md)
+- [CommunicationHandle.Kind.custom](./kind-swift.enum/custom.md)
   A unique identifier that distinguishes one person from another.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

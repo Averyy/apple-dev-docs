@@ -1,7 +1,8 @@
 # skip(item:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an event that indicates a skipped track or playback item.
 
@@ -29,11 +30,12 @@ This function creates an action that represents a skipped playback item. If your
 
 ## See Also
 
-- [static let play: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/play.md)
+### Getting playback-related actions
+- [static let play: GroupSessionEvent.Action](./play.md)
   An action that indicates the start of playback.
-- [static let pause: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/pause.md)
+- [static let pause: GroupSessionEvent.Action](./pause.md)
   An action that indicates an end to playback.
-- [static let seek: GroupSessionEvent.Action](groupsessionevent/action-swift.struct/seek.md)
+- [static let seek: GroupSessionEvent.Action](./seek.md)
   An event that indicates a change to the current playback location.
 
 

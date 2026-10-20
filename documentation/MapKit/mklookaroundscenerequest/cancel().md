@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the pending scene request.
 
@@ -18,9 +19,14 @@ Cancels the pending scene request.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## See Also
 
-- [func getSceneWithCompletionHandler((MKLookAroundScene?, (any Error)?) -> Void)](mklookaroundscenerequest/getscenewithcompletionhandler(_:).md)
+### Starting and stopping scene requests
+- [func getSceneWithCompletionHandler((MKLookAroundScene?, (any Error)?) -> Void)](./getscenewithcompletionhandler%28_%29.md)
   Requests a LookAround scene and calls the specified completion handler.
 
 

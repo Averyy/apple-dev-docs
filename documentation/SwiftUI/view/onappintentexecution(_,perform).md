@@ -1,7 +1,8 @@
 # onAppIntentExecution(_:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a handler to run when the app receives an app intent that targets the associated scene.
 
@@ -27,9 +28,9 @@ A view that handles the specified app intent.
 
 Add this modifier to a view and use it to receive app intents intended for one of your scenes. In your handler, use the contents of the app intent to configure the views of your scene. For example, retrieve the item from an `OpenIntent` type and display it in your views. Your closure runs before the app comes to the foreground and before the system calls the app intent’s `AppIntent/perform()` method, so you can use the closure to configure your interface in advance.
 
-> **Note**: In your closure, you can inspect the parameter values of the app intent, but cannot perform interactive requests with it. For example, you can’t call the [`requestValue(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/requestvalue(_:)-592nd) or [`needsValueError(_:)`](https://developer.apple.com/documentation/appintents/intentparameter/needsvalueerror(_:)) methods.
+> **Note**: In your closure, you can inspect the parameter values of the app intent, but cannot perform interactive requests with it. For example, you can’t call the [`requestValue(_:)`](../../AppIntents/intentparameter/requestvalue%28_%29-592nd.md) or [`needsValueError(_:)`](../../AppIntents/intentparameter/needsvalueerror%28_%29.md) methods.
 
-To route app intents to a particular scene, add the [`handlesExternalEvents(preferring:allowing:)`](view/handlesexternalevents(preferring:allowing:).md) modifier to your view or the [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md) modifier to your [`Scene`](scene.md) type. For each modifier, you supply one or more strings to match against the target content modifier of an incoming app intent. SwiftUI delivers only matching app intents to this modifier.
+To route app intents to a particular scene, add the [`handlesExternalEvents(preferring:allowing:)`](./handlesexternalevents%28preferring,allowing%29.md) modifier to your view or the [`handlesExternalEvents(matching:)`](../scene/handlesexternalevents%28matching%29.md) modifier to your [`Scene`](../scene.md) type. For each modifier, you supply one or more strings to match against the target content modifier of an incoming app intent. SwiftUI delivers only matching app intents to this modifier.
 
 ## Parameters
 
@@ -38,15 +39,16 @@ To route app intents to a particular scene, add the [`handlesExternalEvents(pref
 
 ## See Also
 
-- [func appEntityIdentifier(EntityIdentifier?) -> some View](view/appentityidentifier(_:).md)
+### App intents
+- [func appEntityIdentifier(EntityIdentifier?) -> some View](./appentityidentifier%28_%29.md)
   Associates a SwiftUI view with an app entity to make its content discoverable by Apple Intelligence and Siri.
-- [func appEntityIdentifier<I>(forSelectionType: I.Type, identifier: (I) -> EntityIdentifier?) -> some View](view/appentityidentifier(forselectiontype:identifier:).md)
+- [func appEntityIdentifier<I>(forSelectionType: I.Type, identifier: (I) -> EntityIdentifier?) -> some View](./appentityidentifier%28forselectiontype,identifier%29.md)
   Associates the items in a SwiftUI list view with app entities to make them discoverable by Apple Intelligence and Siri.
-- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
+- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](./appentityuielements%28_%29.md)
   Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
-- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
+- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](./shortcutslinkstyle%28_%29.md)
   Sets the given style for ShortcutsLinks within the view hierarchy
-- [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)
+- [func siriTipViewStyle(SiriTipViewStyle) -> some View](./siritipviewstyle%28_%29.md)
   Sets the given style for SiriTipView within the view hierarchy
 
 

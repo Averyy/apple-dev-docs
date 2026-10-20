@@ -1,7 +1,8 @@
 # PlaybackQueueLocationResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about whether your service can resolve the specified queue location.
 
@@ -10,7 +11,7 @@ Information about whether your service can resolve the specified queue location.
 
 ## Declaration
 
-```swift
+```
 object PlaybackQueueLocationResolutionResult
 ```
 
@@ -21,27 +22,30 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Topics
 
 ### Specifying a Result
-- [object PlaybackQueueLocationResolutionResult.Success](playbackqueuelocationresolutionresult/success-data.dictionary.md)
+- [object PlaybackQueueLocationResolutionResult.Success](./playbackqueuelocationresolutionresult/success-data.dictionary.md)
   A queue location that matches the intent.
-- [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.md)
+- [object PlaybackQueueLocationResolutionResult.ConfirmationRequired](./playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the playback mode before proceeding.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `PlaybackQueueLocationResolutionResult`
 - `success` (PlaybackQueueLocationResolutionResult.Success): A queue location that matches the intent.
 - `confirmationRequired` (PlaybackQueueLocationResolutionResult.ConfirmationRequired): A queue location for the user to confirm or reject before proceeding.
 
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse](playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md)
+### Resolving the Intended Queue Location
+- [object PlayMediaIntentHandlingResolvePlaybackQueueLocationInvocationResponse](./playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md)
   Your service’s response to a request to resolve the queue location in a play media intent.
-- [type PlaybackQueueLocation](playbackqueuelocation.md)
+- [type PlaybackQueueLocation](./playbackqueuelocation.md)
   Possible locations in a playback queue to insert a media item.
 
 

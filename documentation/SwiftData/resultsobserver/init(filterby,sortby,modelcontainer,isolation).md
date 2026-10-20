@@ -1,7 +1,8 @@
 # init(filterBy:sortBy:modelContainer:isolation:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new unsectioned observer with individual filter and sort criteria and a model container.
 
@@ -20,11 +21,13 @@ Creates a new unsectioned observer with individual filter and sort criteria and 
 convenience init(filterBy: Predicate<Element>? = nil, sortBy: [SortDescriptor<Element>]? = nil, modelContainer: ModelContainer, isolation: isolated (any Actor)? = #isolation) throws
 ```
 
+Available when `Element` conforms to `PersistentModel` and `SectionTitle` is `Never`.
+
 #### Discussion
 
 A new `ModelContext` is created from the provided container.
 
-> **Note**: An error if the initial fetch fails.
+> **Throws**: An error if the initial fetch fails.
 
 ## Parameters
 
@@ -34,15 +37,16 @@ A new `ModelContext` is created from the provided container.
 
 ## See Also
 
-- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(filterby:sortby:modelcontext:isolation:).md)
+### Creating a results observer with a predicate
+- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28filterby,sortby,modelcontext,isolation%29.md)
   Creates a new unsectioned observer with individual filter and sort criteria and a model context.
-- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String?>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(filterby:sortby:sectionby:modelcontext:isolation:)-4ainb.md)
+- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String?>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28filterby,sortby,sectionby,modelcontext,isolation%29-4ainb.md)
   Creates a new observer with individual filter and sort criteria, an optional String section key path, and a model context.
-- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](resultsobserver/init(filterby:sortby:sectionby:modelcontext:isolation:)-gsuz.md)
+- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String>, modelContext: ModelContext, isolation: isolated (any Actor)?) throws](./init%28filterby,sortby,sectionby,modelcontext,isolation%29-gsuz.md)
   Creates a new observer with individual filter and sort criteria, a String section key path, and a model context.
-- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](resultsobserver/init(filterby:sortby:sectionby:modelcontainer:isolation:)-5ufvn.md)
+- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](./init%28filterby,sortby,sectionby,modelcontainer,isolation%29-5ufvn.md)
   Creates a new observer with individual filter and sort criteria, a String section key path, and a model container.
-- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String?>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](resultsobserver/init(filterby:sortby:sectionby:modelcontainer:isolation:)-9lfy0.md)
+- [convenience init(filterBy: Predicate<Element>?, sortBy: [SortDescriptor<Element>]?, sectionBy: KeyPath<Element, String?>, modelContainer: ModelContainer, isolation: isolated (any Actor)?) throws](./init%28filterby,sortby,sectionby,modelcontainer,isolation%29-9lfy0.md)
   Creates a new observer with individual filter and sort criteria, an optional String section key path, and a model container.
 
 

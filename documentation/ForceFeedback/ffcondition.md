@@ -1,7 +1,8 @@
 # FFCONDITION
 
 **Framework**: Force Feedback  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure containing type-specific information for certain effects.
 
@@ -13,6 +14,10 @@ A structure containing type-specific information for certain effects.
 
 ```swift
 struct FFCONDITION
+```
+
+```c
+struct FFCONDITION;
 ```
 
 #### Overview
@@ -42,45 +47,46 @@ If there is a single FFCONDITION structure for an effect with more than one axis
 ## Topics
 
 ### Initializers
-- [init()](ffcondition/init.md)
-- [init(lOffset: LONG, lPositiveCoefficient: LONG, lNegativeCoefficient: LONG, dwPositiveSaturation: DWORD, dwNegativeSaturation: DWORD, lDeadBand: LONG)](ffcondition/init(loffset:lpositivecoefficient:lnegativecoefficient:dwpositivesaturation:dwnegativesaturation:ldeadband:).md)
+- [init()](./ffcondition/init%28%29.md)
+- [init(lOffset: LONG, lPositiveCoefficient: LONG, lNegativeCoefficient: LONG, dwPositiveSaturation: DWORD, dwNegativeSaturation: DWORD, lDeadBand: LONG)](./ffcondition/init%28loffset,lpositivecoefficient,lnegativecoefficient,dwpositivesaturation,dwnegativesaturation,ldeadband%29.md)
 ### Instance Properties
-- [var dwNegativeSaturation: DWORD](ffcondition/dwnegativesaturation.md)
+- [var dwNegativeSaturation: DWORD](./ffcondition/dwnegativesaturation.md)
   Maximum force output on the negative side of the offset, in the range from 0 through 10,000.
-- [var dwPositiveSaturation: DWORD](ffcondition/dwpositivesaturation.md)
+- [var dwPositiveSaturation: DWORD](./ffcondition/dwpositivesaturation.md)
   Maximum force output on the positive side of the offset, in the range from 0 through 10,000.
-- [var lDeadBand: LONG](ffcondition/ldeadband.md)
+- [var lDeadBand: LONG](./ffcondition/ldeadband.md)
   Region around **lOffset** in which the condition is not active, in the range from 0 through 10,000. In other words, the condition is not active between **lOffset** minus **lDeadBand** and **lOffset** plus **lDeadBand**.
-- [var lNegativeCoefficient: LONG](ffcondition/lnegativecoefficient.md)
+- [var lNegativeCoefficient: LONG](./ffcondition/lnegativecoefficient.md)
   Coefficient constant on the negative side of the offset, in the range from -10,000 through 10,000.
-- [var lOffset: LONG](ffcondition/loffset.md)
+- [var lOffset: LONG](./ffcondition/loffset.md)
   Offset for the condition, in the range from -10,000 through 10,000.
-- [var lPositiveCoefficient: LONG](ffcondition/lpositivecoefficient.md)
+- [var lPositiveCoefficient: LONG](./ffcondition/lpositivecoefficient.md)
   Coefficient constant on the positive side of the offset, in the range from -10,000 through 10,000.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct FFCAPABILITIES](ffcapabilities.md)
+### Data Types
+- [struct FFCAPABILITIES](./ffcapabilities.md)
   Used by the FFDeviceGetForceFeedbackCapabilities method to retrieve device force-feedback capabilities.
-- [struct FFCONSTANTFORCE](ffconstantforce.md)
+- [struct FFCONSTANTFORCE](./ffconstantforce.md)
   Contains type-specific information for the CONSTANTFORCE effect.
-- [struct FFCUSTOMFORCE](ffcustomforce.md)
+- [struct FFCUSTOMFORCE](./ffcustomforce.md)
   Contains type-specific information for the CUSTOMFORCE effect.
-- [struct FFEFFECT](ffeffect.md)
+- [struct FFEFFECT](./ffeffect.md)
   UsUsed by the FFDeviceCreateEffect method to initialize a new effect object. It is also used by the FFEffectSetParameters and FFEffectGetParameters functions.
-- [struct FFEFFESCAPE](ffeffescape.md)
+- [struct FFEFFESCAPE](./ffeffescape.md)
   The FFEFFESCAPE structure passes hardware-specific data directly to the Force Feedback plugIn.
-- [struct FFENVELOPE](ffenvelope.md)
+- [struct FFENVELOPE](./ffenvelope.md)
   Used by the FFEFFECT structure to specify the optional envelope parameters for an effect.
-- [struct FFPERIODIC](ffperiodic.md)
+- [struct FFPERIODIC](./ffperiodic.md)
   A structure containing type-specific information for certain effects.
-- [struct FFRAMPFORCE](fframpforce.md)
+- [struct FFRAMPFORCE](./fframpforce.md)
   Contains type-specific information for the RAMPFORCE effect.
 
 

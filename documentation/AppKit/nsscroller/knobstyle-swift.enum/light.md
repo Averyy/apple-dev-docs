@@ -1,7 +1,8 @@
 # NSScroller.KnobStyle.light
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a light knob.
 
@@ -14,15 +15,20 @@ Specifies a light knob.
 case light
 ```
 
+```c
+NSScrollerKnobStyleLight
+```
+
 #### Discussion
 
 This style is particularly good against a dark background.
 
 ## See Also
 
-- [NSScroller.KnobStyle.default](nsscroller/knobstyle-swift.enum/default.md)
+### Constants
+- [NSScroller.KnobStyle.default](./default.md)
   Specifies a dark knob with a light border.
-- [NSScroller.KnobStyle.dark](nsscroller/knobstyle-swift.enum/dark.md)
+- [NSScroller.KnobStyle.dark](./dark.md)
   Specifies a dark knob.
 
 

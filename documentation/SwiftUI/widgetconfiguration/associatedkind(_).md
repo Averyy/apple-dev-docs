@@ -1,7 +1,8 @@
 # associatedKind(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the system that a relevance-based widget can replace a timeline-based widget.
 

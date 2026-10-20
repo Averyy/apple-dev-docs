@@ -1,7 +1,8 @@
 # typeID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Core Foundation type identifier that represents a timebase object.
 
@@ -22,9 +23,10 @@ static var typeID: CFTypeID { get }
 
 ## See Also
 
-- [CMTimebase.Error](cmtimebase/error.md)
+### Constants
+- [CMTimebase.Error](./error.md)
   Constants that describe timebase errors.
-- [CMTimebase.NotificationKey](cmtimebase/notificationkey.md)
+- [CMTimebase.NotificationKey](./notificationkey.md)
   Constants that describe notification keys.
 
 

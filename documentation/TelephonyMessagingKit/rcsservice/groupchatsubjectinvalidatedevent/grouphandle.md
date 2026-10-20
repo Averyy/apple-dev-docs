@@ -1,7 +1,8 @@
 # groupHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group handle whose subject was invalidated.
 

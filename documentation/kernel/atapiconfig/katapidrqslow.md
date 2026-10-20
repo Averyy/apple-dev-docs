@@ -1,14 +1,15 @@
 # kATAPIDRQSlow
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAPIDRQSlow = 0x00
 ```
 

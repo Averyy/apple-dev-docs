@@ -1,23 +1,28 @@
 # AVMediaCharacteristic
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines media data characteristics.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct AVMediaCharacteristic
+```
+
+```c
+typedef NSString * AVMediaCharacteristic;
 ```
 
 #### Discussion
@@ -36,7 +41,7 @@ for (AVMetadataItem *metadataItem in trackTaggedMediaCharacteristics) {
 }
 ```
 
-You write tagged media characteristics to files of type [`mov`](avfiletype/mov.md) and [`m4v`](avfiletype/m4v.md) by using an instance of [`AVAssetWriter`](avassetwriter.md). You indicate tagged characteristics for a track by setting metadata on its associated asset writer input as shown below:
+You write tagged media characteristics to files of type [`mov`](./avfiletype/mov.md) and [`m4v`](./avfiletype/m4v.md) by using an instance of [`AVAssetWriter`](./avassetwriter.md). You indicate tagged characteristics for a track by setting metadata on its associated asset writer input as shown below:
 
 ```objc
 AVMutableMetadataItem *myTaggedMediaCharacteristic = [[AVMutableMetadataItem alloc] init];
@@ -50,80 +55,81 @@ AVMutableMetadataItem *myTaggedMediaCharacteristic = [[AVMutableMetadataItem all
 ## Topics
 
 ### Visual
-- [static let visual: AVMediaCharacteristic](avmediacharacteristic/visual.md)
+- [static let visual: AVMediaCharacteristic](./avmediacharacteristic/visual.md)
   A media characteristic that indicates that a track or media selection option includes visual content.
-- [static let containsAlphaChannel: AVMediaCharacteristic](avmediacharacteristic/containsalphachannel.md)
+- [static let containsAlphaChannel: AVMediaCharacteristic](./avmediacharacteristic/containsalphachannel.md)
   A media characteristic that indicates that a track contains an alpha channel.
-- [static let containsHDRVideo: AVMediaCharacteristic](avmediacharacteristic/containshdrvideo.md)
+- [static let containsHDRVideo: AVMediaCharacteristic](./avmediacharacteristic/containshdrvideo.md)
   A media characteristic that indicates that a track contains HDR video.
-- [static let frameBased: AVMediaCharacteristic](avmediacharacteristic/framebased.md)
+- [static let frameBased: AVMediaCharacteristic](./avmediacharacteristic/framebased.md)
   A media characteristic that indicates that a track or media selection option includes frame-based content.
-- [static let usesWideGamutColorSpace: AVMediaCharacteristic](avmediacharacteristic/useswidegamutcolorspace.md)
+- [static let usesWideGamutColorSpace: AVMediaCharacteristic](./avmediacharacteristic/useswidegamutcolorspace.md)
   A media characteristic that indicates that a track uses a wide-gamut color space.
-- [static let containsStereoMultiviewVideo: AVMediaCharacteristic](avmediacharacteristic/containsstereomultiviewvideo.md)
+- [static let containsStereoMultiviewVideo: AVMediaCharacteristic](./avmediacharacteristic/containsstereomultiviewvideo.md)
   A media characteristic that indicates that a track contains stereoscopic video captured in a multiview compression format.
-- [static let carriesVideoStereoMetadata: AVMediaCharacteristic](avmediacharacteristic/carriesvideostereometadata.md)
+- [static let carriesVideoStereoMetadata: AVMediaCharacteristic](./avmediacharacteristic/carriesvideostereometadata.md)
   A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.
-- [static let indicatesHorizontalFieldOfView: AVMediaCharacteristic](avmediacharacteristic/indicateshorizontalfieldofview.md)
+- [static let indicatesHorizontalFieldOfView: AVMediaCharacteristic](./avmediacharacteristic/indicateshorizontalfieldofview.md)
   A media characteristic that indicates the video track carries information related to the horizontal field of view.
-- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](./avmediacharacteristic/indicatesnonrectilinearprojection.md)
   A media characteristic that indicates the video track carries information related to how it should be projected for display.
 ### Audible
-- [static let audible: AVMediaCharacteristic](avmediacharacteristic/audible.md)
+- [static let audible: AVMediaCharacteristic](./avmediacharacteristic/audible.md)
   A media characteristic that indicates that a track or media selection option includes audible content.
-- [static let dubbedTranslation: AVMediaCharacteristic](avmediacharacteristic/dubbedtranslation.md)
+- [static let dubbedTranslation: AVMediaCharacteristic](./avmediacharacteristic/dubbedtranslation.md)
   A media characteristic that indicates that a track or media selection option contains audio language or dialect translation of the original content.
-- [static let voiceOverTranslation: AVMediaCharacteristic](avmediacharacteristic/voiceovertranslation.md)
+- [static let voiceOverTranslation: AVMediaCharacteristic](./avmediacharacteristic/voiceovertranslation.md)
   A media characteristic that indicates that a track or media selection option contains a language translation and verbal interpretation of spoken dialog.
-- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](avmediacharacteristic/enhancesspeechintelligibility.md)
+- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](./avmediacharacteristic/enhancesspeechintelligibility.md)
   A media characteristic that indicates a track or media selection option includes audio processed to enhance the intelligibility of speech.
-- [static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic](avmediacharacteristic/describesmusicandsoundforaccessibility.md)
+- [static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic](./avmediacharacteristic/describesmusicandsoundforaccessibility.md)
   A media characteristic that indicates that a track or media selection option includes legible content in the language of its specified locale.
-- [static let tactileMinimal: AVMediaCharacteristic](avmediacharacteristic/tactileminimal.md)
+- [static let tactileMinimal: AVMediaCharacteristic](./avmediacharacteristic/tactileminimal.md)
   A media characteristic that indicates that a track or media selection option includes haptic content.
 ### Legible
-- [static let legible: AVMediaCharacteristic](avmediacharacteristic/legible.md)
+- [static let legible: AVMediaCharacteristic](./avmediacharacteristic/legible.md)
   A media characteristic that indicates that a track or media selection option includes legible content.
-- [static let easyToRead: AVMediaCharacteristic](avmediacharacteristic/easytoread.md)
+- [static let easyToRead: AVMediaCharacteristic](./avmediacharacteristic/easytoread.md)
   A media characteristic that indicates a track or media selection option provides legible content that’s edited for easy reading.
-- [static let describesVideoForAccessibility: AVMediaCharacteristic](avmediacharacteristic/describesvideoforaccessibility.md)
+- [static let describesVideoForAccessibility: AVMediaCharacteristic](./avmediacharacteristic/describesvideoforaccessibility.md)
   A media characteristic that indicates the media includes audible content that describes the visual portion of the presentation.
-- [static let containsOnlyForcedSubtitles: AVMediaCharacteristic](avmediacharacteristic/containsonlyforcedsubtitles.md)
+- [static let containsOnlyForcedSubtitles: AVMediaCharacteristic](./avmediacharacteristic/containsonlyforcedsubtitles.md)
   A media characteristic that indicates that a track or media selection option presents only forced subtitles.
-- [static let languageTranslation: AVMediaCharacteristic](avmediacharacteristic/languagetranslation.md)
+- [static let languageTranslation: AVMediaCharacteristic](./avmediacharacteristic/languagetranslation.md)
   A media characteristic that indicates that a track or media selection option contains a language or dialect translation of the original content.
-- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](avmediacharacteristic/transcribesspokendialogforaccessibility.md)
+- [static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic](./avmediacharacteristic/transcribesspokendialogforaccessibility.md)
   A media characteristic that indicates that a media selection option includes legible content that transcribes spoken dialog.
 ### Content
-- [static let isOriginalContent: AVMediaCharacteristic](avmediacharacteristic/isoriginalcontent.md)
+- [static let isOriginalContent: AVMediaCharacteristic](./avmediacharacteristic/isoriginalcontent.md)
   A media characteristic that indicates that a track or media selection option contains original content.
-- [static let isMainProgramContent: AVMediaCharacteristic](avmediacharacteristic/ismainprogramcontent.md)
+- [static let isMainProgramContent: AVMediaCharacteristic](./avmediacharacteristic/ismainprogramcontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
-- [static let isAuxiliaryContent: AVMediaCharacteristic](avmediacharacteristic/isauxiliarycontent.md)
+- [static let isAuxiliaryContent: AVMediaCharacteristic](./avmediacharacteristic/isauxiliarycontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
-- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+- [static let machineGenerated: AVMediaCharacteristic](./avmediacharacteristic/machinegenerated.md)
   A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 ### Initializers
-- [init(String)](avmediacharacteristic/init(_:).md)
+- [init(String)](./avmediacharacteristic/init%28_%29.md)
   Creates a media characteristic.
-- [init(rawValue: String)](avmediacharacteristic/init(rawvalue:).md)
+- [init(rawValue: String)](./avmediacharacteristic/init%28rawvalue%29.md)
   Creates a media characteristic with a string value.
 ### Type Properties
-- [static let signLanguageInterpretationForAccessibility: AVMediaCharacteristic](avmediacharacteristic/signlanguageinterpretationforaccessibility.md)
+- [static let signLanguageInterpretationForAccessibility: AVMediaCharacteristic](./avmediacharacteristic/signlanguageinterpretationforaccessibility.md)
   A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AVMediaType](avmediatype.md)
+### Media types
+- [struct AVMediaType](./avmediatype.md)
   An identifier for various media types.
 
 

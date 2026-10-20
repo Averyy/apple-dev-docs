@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainer.EventChangedMessage
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Posted when a CloudKit event occurs on the CloudKit private serial queue.
 
@@ -23,15 +24,15 @@ struct EventChangedMessage
 ## Topics
 
 ### Instance Properties
-- [let event: NSPersistentCloudKitContainer.Event](nspersistentcloudkitcontainer/eventchangedmessage/event.md)
+- [let event: NSPersistentCloudKitContainer.Event](./eventchangedmessage/event.md)
   The CloudKit event that triggered this notification.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

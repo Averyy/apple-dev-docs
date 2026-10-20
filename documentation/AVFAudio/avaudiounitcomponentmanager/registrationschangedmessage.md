@@ -1,7 +1,8 @@
 # AVAudioUnitComponentManager.RegistrationsChangedMessage
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type-safe notification message for audio unit component registration changes.
 
@@ -26,13 +27,14 @@ This notification is posted when the system’s audio component registrations ha
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class let registrationsChangedNotification: NSNotification.Name](avaudiounitcomponentmanager/registrationschangednotification.md)
+### Observing registration changes
+- [class let registrationsChangedNotification: NSNotification.Name](./registrationschangednotification.md)
   A notification the component manager generates when it updates its list of components.
 
 

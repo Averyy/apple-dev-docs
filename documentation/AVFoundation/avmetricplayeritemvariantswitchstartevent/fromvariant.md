@@ -1,7 +1,8 @@
 # fromVariant
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,13 +19,18 @@
 var fromVariant: AVAssetVariant? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVAssetVariant * fromVariant;
+```
+
 ## See Also
 
-- [var loadedTimeRanges: [CMTimeRange]](avmetricplayeritemvariantswitchstartevent/loadedtimeranges-2mbm7.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchstartevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/audiorendition.md)
-- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/videorendition.md)
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
+### Inspecting the event
+- [var loadedTimeRanges: [CMTimeRange]](./loadedtimeranges-2mbm7.md)
+- [var toVariant: AVAssetVariant](./tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
+- [var videoRendition: AVMetricMediaRendition](./videorendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
 
 
 ---

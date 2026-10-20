@@ -1,7 +1,8 @@
 # valueLength
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the value field.
 
@@ -13,6 +14,10 @@ The number of bytes in the value field.
 
 ```swift
 var valueLength: Int
+```
+
+```c
+size_t valueLength;
 ```
 
 #### Discussion

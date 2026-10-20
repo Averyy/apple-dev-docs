@@ -1,7 +1,8 @@
 # ScrollInputBehavior
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines whether input should scroll a view.
 
@@ -23,25 +24,26 @@ struct ScrollInputBehavior
 ## Topics
 
 ### Type Properties
-- [static let automatic: ScrollInputBehavior](scrollinputbehavior/automatic.md)
+- [static let automatic: ScrollInputBehavior](./scrollinputbehavior/automatic.md)
   Indicates that the system should determine whether the associated input scrolls a view.
-- [static let disabled: ScrollInputBehavior](scrollinputbehavior/disabled.md)
+- [static let disabled: ScrollInputBehavior](./scrollinputbehavior/disabled.md)
   Indicates that the associated input should not scroll a view.
-- [static let enabled: ScrollInputBehavior](scrollinputbehavior/enabled.md)
+- [static let enabled: ScrollInputBehavior](./scrollinputbehavior/enabled.md)
   Indicates that the associated input should scroll a view.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](view/scrollinputbehavior(_:for:).md)
+### Managing scrolling for different inputs
+- [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](./view/scrollinputbehavior%28_,for%29.md)
   Enables or disables scrolling in scrollable views when using particular inputs.
-- [struct ScrollInputKind](scrollinputkind.md)
+- [struct ScrollInputKind](./scrollinputkind.md)
   Inputs used to scroll views.
 
 

@@ -1,7 +1,8 @@
 # init(_:step:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new interval step.
 
@@ -25,7 +26,8 @@ init(_ purpose: IntervalStep.Purpose, step: WorkoutStep)
 
 ## See Also
 
-- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
+### Creating interval steps
+- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](./init%28_,goal,alert%29.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIEndpointCreateCommandData1Descriptor](3612499-anonymous/iousbhostciendpointcreatecommanddata1descriptor.md)
-- [IOUSBHostCIEndpointCreateCommandData1DescriptorPhase](3612499-anonymous/iousbhostciendpointcreatecommanddata1descriptorphase.md)
+- [IOUSBHostCIEndpointCreateCommandData1Descriptor](./api-3612499-anonymous/iousbhostciendpointcreatecommanddata1descriptor.md)
+- [IOUSBHostCIEndpointCreateCommandData1DescriptorPhase](./api-3612499-anonymous/iousbhostciendpointcreatecommanddata1descriptorphase.md)
 
 
 ---

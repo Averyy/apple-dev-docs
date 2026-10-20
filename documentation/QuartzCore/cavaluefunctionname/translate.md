@@ -1,7 +1,8 @@
 # translate
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value function that translates by the input values along all three axis. Animations using this value transform function must provide animation values in an `NSArray` of three `NSNumber` instances that specify the (x, y, z) translate values.
 
@@ -19,13 +20,18 @@ A value function that translates by the input values along all three axis. Anima
 static let translate: CAValueFunctionName
 ```
 
+```c
+extern CAValueFunctionName const kCAValueFunctionTranslate;
+```
+
 ## See Also
 
-- [static let translateX: CAValueFunctionName](cavaluefunctionname/translatex.md)
+### Constants
+- [static let translateX: CAValueFunctionName](./translatex.md)
   A value function translates by the input value along the x-axis. Animations referencing this value function must provide a single input value.
-- [static let translateY: CAValueFunctionName](cavaluefunctionname/translatey.md)
+- [static let translateY: CAValueFunctionName](./translatey.md)
   A value function translates by the input value along the y-axis. Animations referencing this value function must provide a single input value.
-- [static let translateZ: CAValueFunctionName](cavaluefunctionname/translatez.md)
+- [static let translateZ: CAValueFunctionName](./translatez.md)
   A value function translates by the input value along the z-axis. Animations referencing this value function must provide a single input value.
 
 

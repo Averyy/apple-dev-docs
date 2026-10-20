@@ -1,7 +1,8 @@
 # kLABiometryTypeFaceID
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,11 +18,16 @@
 var kLABiometryTypeFaceID: Int32 { get }
 ```
 
+```c
+#define kLABiometryTypeFaceID
+```
+
 ## See Also
 
-- [var kLABiometryTypeNone: Int32](klabiometrytypenone.md)
-- [var kLABiometryTypeOpticID: Int32](klabiometrytypeopticid.md)
-- [var kLABiometryTypeTouchID: Int32](klabiometrytypetouchid.md)
+### Constants
+- [var kLABiometryTypeNone: Int32](./klabiometrytypenone.md)
+- [var kLABiometryTypeOpticID: Int32](./klabiometrytypeopticid.md)
+- [var kLABiometryTypeTouchID: Int32](./klabiometrytypetouchid.md)
 
 
 ---

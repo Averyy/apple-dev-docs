@@ -1,7 +1,8 @@
 # stringCompareOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The options to use in comparisons when searching text for matches to a string.
 
@@ -17,11 +18,16 @@ The options to use in comparisons when searching text for matches to a string.
 var stringCompareOptions: NSString.CompareOptions { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSStringCompareOptions stringCompareOptions;
+```
+
 ## See Also
 
-- [var wordMatchMethod: UITextSearchOptions.WordMatchMethod](uitextsearchoptions/wordmatchmethod-swift.property.md)
+### Configuring searches
+- [var wordMatchMethod: UITextSearchOptions.WordMatchMethod](./wordmatchmethod-swift.property.md)
   The method to use when searching text for matches to words.
-- [UITextSearchOptions.WordMatchMethod](uitextsearchoptions/wordmatchmethod-swift.enum.md)
+- [UITextSearchOptions.WordMatchMethod](./wordmatchmethod-swift.enum.md)
   Constants that describe the method to use when searching text for words that match a string.
 
 

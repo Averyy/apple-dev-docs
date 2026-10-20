@@ -1,7 +1,8 @@
 # ensuresLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When enumerating, tell the layout fragments to layout their contents.
 
@@ -18,13 +19,18 @@ When enumerating, tell the layout fragments to layout their contents.
 static var ensuresLayout: NSTextLayoutFragment.EnumerationOptions { get }
 ```
 
+```c
+NSTextLayoutFragmentEnumerationOptionsEnsuresLayout
+```
+
 ## See Also
 
-- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/ensuresextralinefragment.md)
+### Layout fragment characteristics
+- [static var ensuresExtraLineFragment: NSTextLayoutFragment.EnumerationOptions](./ensuresextralinefragment.md)
   Synthesize the extra line fragment when necessary.
-- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/estimatessize.md)
+- [static var estimatesSize: NSTextLayoutFragment.EnumerationOptions](./estimatessize.md)
   When enumerating, tell the layout fragments to estimate their size.
-- [static var reverse: NSTextLayoutFragment.EnumerationOptions](nstextlayoutfragment/enumerationoptions/reverse.md)
+- [static var reverse: NSTextLayoutFragment.EnumerationOptions](./reverse.md)
   Causes the enumeration to start from the last element.
 
 

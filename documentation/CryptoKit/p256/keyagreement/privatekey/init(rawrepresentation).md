@@ -1,7 +1,8 @@
 # init(rawRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-256 private key for key agreement from a collection of bytes.
 
@@ -26,13 +27,14 @@ init<Bytes>(rawRepresentation: Bytes) throws where Bytes : ContiguousBytes
 
 ## See Also
 
-- [init(compactRepresentable: Bool)](p256/keyagreement/privatekey/init(compactrepresentable:).md)
+### Creating a private key
+- [init(compactRepresentable: Bool)](./init%28compactrepresentable%29.md)
   Creates a random P-256 private key for key agreement.
-- [init<Bytes>(derRepresentation: Bytes) throws](p256/keyagreement/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./init%28derrepresentation%29.md)
   Creates a P-256 private key for key agreement from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p256/keyagreement/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./init%28pemrepresentation%29.md)
   Creates a P-256 private key for key agreement from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p256/keyagreement/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./init%28x963representation%29.md)
   Creates a P-256 private key for key agreement from an ANSI x9.63 representation.
 
 

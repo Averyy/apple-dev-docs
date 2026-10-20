@@ -1,7 +1,8 @@
 # invalidAddress
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specified address is not currently valid.
 

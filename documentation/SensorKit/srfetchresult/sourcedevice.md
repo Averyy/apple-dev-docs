@@ -1,7 +1,8 @@
 # sourceDevice
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var sourceDevice: SRSourceDevice? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) SRSourceDevice * sourceDevice;
 ```
 
 #### Discussion

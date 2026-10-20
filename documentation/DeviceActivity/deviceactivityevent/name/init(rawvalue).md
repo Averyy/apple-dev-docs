@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -35,7 +36,8 @@ print(DeviceActivityEvent.Name.event.rawValue)
 
 ## See Also
 
-- [init(String)](deviceactivityevent/name/init(_:).md)
+### Creating an Instance
+- [init(String)](./init%28_%29.md)
   Creates a new instance with the specified raw value.
 
 

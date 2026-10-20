@@ -1,18 +1,19 @@
 # samplePresentationTime(forTrackTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Maps the specified track time through the appropriate time mapping and returns the resulting sample presentation time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Maps the specified track time through the appropriate time mapping and returns t
 func samplePresentationTime(forTrackTime trackTime: CMTime) -> CMTime
 ```
 
+```objc
+- (CMTime) samplePresentationTimeForTrackTime:(CMTime) trackTime;
+```
+
 #### Return Value
 
-The sample presentation time corresponding to the specified time; otherwise [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if the time is out of range.
+The sample presentation time corresponding to the specified time; otherwise [`invalid`](../../CoreMedia/cmtime/invalid.md) if the time is out of range.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The sample presentation time corresponding to the specified time; otherwise [`in
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avcompositiontrack/timerange.md)
+### Accessing temporal information
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the track within the overall timeline of the asset.
-- [var naturalTimeScale: CMTimeScale](avcompositiontrack/naturaltimescale.md)
+- [var naturalTimeScale: CMTimeScale](./naturaltimescale.md)
   The natural time scale of the media that a track references.
-- [var estimatedDataRate: Float](avcompositiontrack/estimateddatarate.md)
+- [var estimatedDataRate: Float](./estimateddatarate.md)
   The estimated data rate, in bits per second, of the media that the track references.
 
 

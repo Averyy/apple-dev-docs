@@ -1,18 +1,19 @@
 # chunkHasUniformSampleSizes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The samples in the chunk occupy the same number of bytes in storage.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The samples in the chunk occupy the same number of bytes in storage.
 var chunkHasUniformSampleSizes: ObjCBool
 ```
 
+```c
+BOOL chunkHasUniformSampleSizes;
+```
+
 ## See Also
 
-- [var chunkSampleCount: Int64](avsamplecursorchunkinfo/chunksamplecount.md)
+### Chunk information
+- [var chunkSampleCount: Int64](./chunksamplecount.md)
   The count of media samples in the chunk.
-- [var chunkHasUniformSampleDurations: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformsampledurations.md)
+- [var chunkHasUniformSampleDurations: ObjCBool](./chunkhasuniformsampledurations.md)
   The samples in the chunk have the same duration.
-- [var chunkHasUniformFormatDescriptions: ObjCBool](avsamplecursorchunkinfo/chunkhasuniformformatdescriptions.md)
+- [var chunkHasUniformFormatDescriptions: ObjCBool](./chunkhasuniformformatdescriptions.md)
   The samples in the chunk have the same format description.
 
 

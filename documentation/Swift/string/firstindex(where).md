@@ -1,7 +1,8 @@
 # firstIndex(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first index in which an element of the collection satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Abena starts with 'A'!"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
@@ -44,31 +45,32 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 
 ## See Also
 
-- [func contains(Self.Element) -> Bool](string/contains(_:).md)
+### Finding Characters
+- [func contains(Self.Element) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the sequence contains the given element.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](string/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](string/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](string/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func firstIndex(of: Self.Element) -> Self.Index?](string/firstindex(of:).md)
+- [func firstIndex(of: Self.Element) -> Self.Index?](./firstindex%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](string/last(where:).md)
+- [func last(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./last%28where%29.md)
   Returns the last element of the sequence that satisfies the given predicate.
-- [func lastIndex(of: Self.Element) -> Self.Index?](string/lastindex(of:).md)
+- [func lastIndex(of: Self.Element) -> Self.Index?](./lastindex%28of%29.md)
   Returns the last index where the specified value appears in the collection.
-- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](string/lastindex(where:).md)
+- [func lastIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./lastindex%28where%29.md)
   Returns the index of the last element in the collection that matches the given predicate.
-- [func max() -> Self.Element?](string/max.md)
+- [func max() -> Self.Element?](./max%28%29.md)
   Returns the maximum element in the sequence.
-- [func max<T>(T, T) -> T](string/max(_:_:).md)
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](string/max(by:).md)
+- [func max<T>(T, T) -> T](./max%28_,_%29.md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
-- [func min() -> Self.Element?](string/min.md)
+- [func min() -> Self.Element?](./min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min<T>(T, T) -> T](string/min(_:_:).md)
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](string/min(by:).md)
+- [func min<T>(T, T) -> T](./min%28_,_%29.md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
 
 

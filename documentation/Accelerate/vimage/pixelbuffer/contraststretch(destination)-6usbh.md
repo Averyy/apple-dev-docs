@@ -1,7 +1,8 @@
 # contrastStretch(destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stretches the histogram of an 8-bit planar pixel buffer.
 
@@ -11,7 +12,7 @@ Stretches the histogram of an 8-bit planar pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Stretches the histogram of an 8-bit planar pixel buffer.
 ```swift
 func contrastStretch(destination: vImage.PixelBuffer<vImage.Planar8>)
 ```
+
+Available when `Format` is `vImage.Planar8`.
 
 #### Discussion
 
@@ -54,17 +57,19 @@ let outputImage = buffer.makeCGImage(cgImageFormat: cgImageFormat)
 
 ## See Also
 
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+### Related Documentation
+- [Enhancing image contrast with histogram manipulation](../../enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/contraststretch(bincount:destination:)-3bo13.md)
+### Contrast stretching
+- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<vImage.PlanarF>)](./contraststretch%28bincount,destination%29-3bo13.md)
   Stretches the histogram of a 32-bit planar pixel buffer.
-- [func contrastStretch(destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/contraststretch(destination:)-7zo9.md)
+- [func contrastStretch(destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](./contraststretch%28destination%29-7zo9.md)
   Stretches the histogram of an 8-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<vImage.InterleavedFx4>)](vimage/pixelbuffer/contraststretch(bincount:destination:)-704t6.md)
+- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<vImage.InterleavedFx4>)](./contraststretch%28bincount,destination%29-704t6.md)
   Stretches the histogram of a 32-bit-per-channel, 4-channel interleaved pixel buffer.
-- [func contrastStretch(destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/contraststretch(destination:)-2nsx9.md)
+- [func contrastStretch(destination: vImage.PixelBuffer<Format>)](./contraststretch%28destination%29-2nsx9.md)
   Stretches the histogram of a multiple-plane 8-bit pixel buffer.
-- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/contraststretch(bincount:destination:)-81vq2.md)
+- [func contrastStretch(binCount: Int, destination: vImage.PixelBuffer<Format>)](./contraststretch%28bincount,destination%29-81vq2.md)
   Stretches the histogram of a multiple-plane 32-bit pixel buffer.
 
 

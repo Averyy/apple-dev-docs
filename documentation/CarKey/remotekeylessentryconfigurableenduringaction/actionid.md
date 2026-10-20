@@ -1,7 +1,8 @@
 # actionID
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle-specific code that identifies what action to take on the targeted feature.
 

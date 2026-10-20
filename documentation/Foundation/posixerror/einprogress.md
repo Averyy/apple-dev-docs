@@ -1,7 +1,8 @@
 # EINPROGRESS
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation now in progress.
 

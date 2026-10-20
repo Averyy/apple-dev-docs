@@ -1,7 +1,8 @@
 # titlePositionAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset to apply to the title’s position.
 
@@ -9,7 +10,7 @@ The offset to apply to the title’s position.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The offset to apply to the title’s position.
 var titlePositionAdjustment: UIOffset { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIOffset titlePositionAdjustment;
+```
+
 ## See Also
 
-- [var selectedImage: UIImage?](uitabbaritem/selectedimage.md)
+### Configuring the item’s appearance
+- [var selectedImage: UIImage?](./selectedimage.md)
   The source image the item uses to generate its selected image.
-- [var standardAppearance: UITabBarAppearance?](uitabbaritem/standardappearance.md)
+- [var standardAppearance: UITabBarAppearance?](./standardappearance.md)
   The appearance settings for a tab bar.
-- [var scrollEdgeAppearance: UITabBarAppearance?](uitabbaritem/scrolledgeappearance.md)
+- [var scrollEdgeAppearance: UITabBarAppearance?](./scrolledgeappearance.md)
   The appearance settings for the tab bar when the edge of scrollable content aligns with the edge of the tab bar.
 
 

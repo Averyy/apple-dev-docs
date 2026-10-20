@@ -1,7 +1,8 @@
 # none
 
 **Framework**: XPC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the listener uses a default configuration during creation.
 
@@ -11,7 +12,7 @@ Indicates that the listener uses a default configuration during creation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ static let none: XPCSession.InitializationOptions
 
 ## See Also
 
-- [static let inactive: XPCSession.InitializationOptions](xpcsession/initializationoptions/inactive.md)
+### Session creation options
+- [static let inactive: XPCSession.InitializationOptions](./inactive.md)
   Indicates that the session isn’t activated during its creation.
-- [static let privileged: XPCSession.InitializationOptions](xpcsession/initializationoptions/privileged.md)
+- [static let privileged: XPCSession.InitializationOptions](./privileged.md)
   Indicates that the Mach service is in the priviledged Mach bootstrap.
 
 

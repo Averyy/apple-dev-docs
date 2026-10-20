@@ -1,7 +1,8 @@
 # URLSession.ResponseDisposition.allow
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow the load operation to continue.
 
@@ -20,14 +21,19 @@ Allow the load operation to continue.
 case allow
 ```
 
+```c
+NSURLSessionResponseAllow
+```
+
 ## See Also
 
-- [URLSession.ResponseDisposition.cancel](urlsession/responsedisposition/cancel.md)
+### Task dispositions
+- [URLSession.ResponseDisposition.cancel](./cancel.md)
   Cancel the load.
-- [URLSession.ResponseDisposition.becomeDownload](urlsession/responsedisposition/becomedownload.md)
-  Convert the response for this request to use a [`URLSessionDownloadTask`](urlsessiondownloadtask.md).
-- [URLSession.ResponseDisposition.becomeStream](urlsession/responsedisposition/becomestream.md)
-  Convert the response for this request to use a [`URLSessionStreamTask`](urlsessionstreamtask.md).
+- [URLSession.ResponseDisposition.becomeDownload](./becomedownload.md)
+  Convert the response for this request to use a [`URLSessionDownloadTask`](../../urlsessiondownloadtask.md).
+- [URLSession.ResponseDisposition.becomeStream](./becomestream.md)
+  Convert the response for this request to use a [`URLSessionStreamTask`](../../urlsessionstreamtask.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # kAXDisclosedByRowAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The accessibility object representing the disclosing row.
 
@@ -12,6 +13,10 @@ The accessibility object representing the disclosing row.
 
 ```swift
 var kAXDisclosedByRowAttribute: String { get }
+```
+
+```c
+#define kAXDisclosedByRowAttribute
 ```
 
 

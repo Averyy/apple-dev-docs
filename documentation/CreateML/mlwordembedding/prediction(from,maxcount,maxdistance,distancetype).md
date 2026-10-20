@@ -1,7 +1,8 @@
 # prediction(from:maxCount:maxDistance:distanceType:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts neighbors.
 
@@ -20,7 +21,7 @@ An array of neighboring strings and their distances to the input string.
 
 #### Discussion
 
-The distance values are calculated with a formula determined by [`NLDistanceType`](https://developer.apple.com/documentation/naturallanguage/nldistancetype), such as [`NLDistanceType.cosine`](https://developer.apple.com/documentation/naturallanguage/nldistancetype/cosine).
+The distance values are calculated with a formula determined by [`NLDistanceType`](../../NaturalLanguage/nldistancetype.md), such as [`NLDistanceType.cosine`](../../NaturalLanguage/nldistancetype/cosine.md).
 
 ## Parameters
 
@@ -31,13 +32,14 @@ The distance values are calculated with a formula determined by [`NLDistanceType
 
 ## See Also
 
-- [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](mlwordembedding/distance(between:and:distancetype:).md)
+### Testing a word embedding
+- [func distance(between: String, and: String, distanceType: NLDistanceType) -> Double](./distance%28between,and,distancetype%29.md)
   Calculates the distance between two strings in the vocabulary space.
-- [enum NLDistanceType](../naturallanguage/nldistancetype.md)
+- [enum NLDistanceType](../../NaturalLanguage/nldistancetype.md)
   The means of calculating a distance between two locations in a text embedding.
-- [func contains(String) -> Bool](mlwordembedding/contains(_:).md)
+- [func contains(String) -> Bool](./contains%28_%29.md)
   Returns a Boolean value indicating whether the vocabulary contains the given string.
-- [func vector(for: String) -> [Double]?](mlwordembedding/vector(for:).md)
+- [func vector(for: String) -> [Double]?](./vector%28for%29.md)
   Accesses the vector associated with the given string in the vocabulary.
 
 

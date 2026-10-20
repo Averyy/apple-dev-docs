@@ -1,7 +1,8 @@
 # kvImage_YpCbCrToARGBMatrix_ITU_R_709_2
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.709-2.
 
@@ -20,9 +21,14 @@ Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.709-2.
 var kvImage_YpCbCrToARGBMatrix_ITU_R_709_2: UnsafePointer<vImage_YpCbCrToARGBMatrix>!
 ```
 
+```c
+extern const vImage_YpCbCrToARGBMatrix * kvImage_YpCbCrToARGBMatrix_ITU_R_709_2;
+```
+
 ## See Also
 
-- [var kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](kvimage_ypcbcrtoargbmatrix_itu_r_601_4.md)
+### Conversion matrices
+- [var kvImage_YpCbCrToARGBMatrix_ITU_R_601_4: UnsafePointer<vImage_YpCbCrToARGBMatrix>!](./kvimage_ypcbcrtoargbmatrix_itu_r_601_4.md)
   Y’CbCr-to-RGB conversion matrix for ITU Recommendation BT.601-4.
 
 

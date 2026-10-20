@@ -1,7 +1,8 @@
 # MusicCatalogResourceRequestOption
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option to use when requesting a resource from the Apple Music catalog.
 
@@ -22,24 +23,24 @@ struct MusicCatalogResourceRequestOption
 
 #### Overview
 
-> **Note**: [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md)
+> **See Also**: [`MusicCatalogResourceRequest`](./musiccatalogresourcerequest.md)
 
 ## Topics
 
 ### Type Properties
-- [static let findEquivalents: MusicCatalogResourceRequestOption](musiccatalogresourcerequestoption/findequivalents.md)
+- [static let findEquivalents: MusicCatalogResourceRequestOption](./musiccatalogresourcerequestoption/findequivalents.md)
   An option for finding the best available equivalent match for a resource in the current storefront for the Apple Music catalog.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

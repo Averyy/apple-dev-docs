@@ -1,7 +1,8 @@
 # excludedFQDNs
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var excludedFQDNs: [String]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSArray<NSString *> * excludedFQDNs;
 ```
 
 #### Discussion

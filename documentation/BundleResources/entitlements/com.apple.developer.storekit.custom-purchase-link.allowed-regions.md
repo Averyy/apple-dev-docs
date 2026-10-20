@@ -1,7 +1,8 @@
 # StoreKit external purchases or offers entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
 
@@ -13,9 +14,10 @@ An entitlement that enables a qualifying app to offer external purchases within 
 - visionOS 26.2+
 - watchOS 26.2+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `com.apple.developer.storekit.custom-purchase-link.allowed-regions` (StoreKit External Custom Purchase Link Regions)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -23,7 +25,7 @@ This entitlement enables a qualifying app to offer external purchases within the
 
 If your account receives this entitlement, you can add it to your app by opening the project’s `.entitlements` file in Xcode. Then, add a key named `com.apple.developer.storekit.custom-purchase-link.allowed-regions`, followed by an array that enumerates the two-letter ISO-3166-1 country codes for the allowed regions. The example below describes an entitlement that includes Brazil and Japan as the allowed regions that the app supports.
 
-```None
+```
 <plist>
 <dict>
     <key>com.apple.developer.storekit.custom-purchase-link.allowed-regions</key>
@@ -39,17 +41,18 @@ If your account receives this entitlement, you can add it to your app by opening
 
 In addition to Brazil (br) and Japan (jp), the permitted EU country codes include: Austria (at), Belgium (be), Bulgaria (bg), Croatia (hr), Cyprus (cy), Czechia (cz), Denmark (dk), Estonia (ee), Finland (fi), France (fr), Germany (de), Greece (gr), Hungary (hu), Ireland (ie), Italy (it), Latvia (lv), Lithuania (lt), Luxembourg (lu), Malta (mt), Netherlands (nl), Poland (pl), Portugal (pt), Romania (ro), Slovakia (sk), Slovenia (si), Spain (es), Sweden (se).
 
-For more information, see [`External Purchase`](https://developer.apple.com/documentation/storekit/external-purchase).
+For more information, see [External Purchase](../../StoreKit/external-purchase.md).
 
 ## See Also
 
-- [com.apple.developer.storekit.external-link.account](entitlements/com.apple.developer.storekit.external-link.account.md)
+### StoreKit
+- [com.apple.developer.storekit.external-link.account](./com.apple.developer.storekit.external-link.account.md)
   A Boolean value that indicates whether your app can link to an external website for account creation or management.
-- [com.apple.developer.storekit.external-purchase](entitlements/com.apple.developer.storekit.external-purchase.md)
+- [com.apple.developer.storekit.external-purchase](./com.apple.developer.storekit.external-purchase.md)
   A Boolean value that indicates whether your app can offer external purchases.
-- [com.apple.developer.storekit.external-purchase-link](entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [com.apple.developer.storekit.external-purchase-link](./com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
-- [com.apple.developer.storekit.external-purchase-link-streaming](entitlements/com.apple.developer.storekit.external-purchase-link-streaming.md)
+- [com.apple.developer.storekit.external-purchase-link-streaming](./com.apple.developer.storekit.external-purchase-link-streaming.md)
   An entitlement that grants a qualifying music-streaming app the ability to communicate and promote offers.
 
 

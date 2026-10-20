@@ -1,7 +1,8 @@
 # CMVideoFormatDescriptionCreateFromHEVCParameterSets(allocator:parameterSetCount:parameterSetPointers:parameterSetSizes:nalUnitHeaderLength:extensions:formatDescriptionOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a format description for a video media stream using HEVC (H.265) parameter set NAL units.
 
@@ -18,6 +19,10 @@ Creates a format description for a video media stream using HEVC (H.265) paramet
 
 ```swift
 func CMVideoFormatDescriptionCreateFromHEVCParameterSets(allocator: CFAllocator?, parameterSetCount: Int, parameterSetPointers: UnsafePointer<UnsafePointer<UInt8>>, parameterSetSizes: UnsafePointer<Int>, nalUnitHeaderLength NALUnitHeaderLength: Int32, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMFormatDescription?>) -> OSStatus
+```
+
+```c
+extern OSStatus CMVideoFormatDescriptionCreateFromHEVCParameterSets(CFAllocatorRef allocator, size_t parameterSetCount, const uint8_t * const*parameterSetPointers, const size_t *parameterSetSizes, int NALUnitHeaderLength, CFDictionaryRef extensions, CMFormatDescriptionRef*formatDescriptionOut);
 ```
 
 #### Discussion
@@ -40,40 +45,41 @@ The supported NAL unit types to include in the format description are:
 - `parameterSetPointers`: Points to a C array containing `parameterSetCount` pointers to parameter sets.
 - `parameterSetSizes`: Points to a C array containing the size, in bytes, of each of the parameter sets.
 - `NALUnitHeaderLength`: The size, in bytes, of the `NALUnitLength` field in an AVC video sample or an AVC parameter set sample. Pass `1`, `2`, or `4`.
-- `extensions`: An optional dictionary of extension key-value pairs. Keys are [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and values are property list objects, such as [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata), [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean), [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber), [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring), [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate), [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray), and [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
+- `extensions`: An optional dictionary of extension key-value pairs. Keys are [`CFString`](../CoreFoundation/cfstring.md) and values are property list objects, such as [`CFData`](../CoreFoundation/cfdata.md), [`CFBoolean`](../CoreFoundation/cfboolean.md), [`CFNumber`](../CoreFoundation/cfnumber.md), [`CFString`](../CoreFoundation/cfstring.md), [`CFDate`](../CoreFoundation/cfdate.md), [`CFArray`](../CoreFoundation/cfarray.md), and [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 - `formatDescriptionOut`: The newly created video format description.
 
 ## See Also
 
-- [struct CMImageDescriptionFlavor](cmimagedescriptionflavor.md)
+### Working with Video Descriptions
+- [struct CMImageDescriptionFlavor](./cmimagedescriptionflavor.md)
   Types that represent image format descriptions.
-- [func CMVideoFormatDescriptionCreate(allocator: CFAllocator?, codecType: CMVideoCodecType, width: Int32, height: Int32, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](cmvideoformatdescriptioncreate(allocator:codectype:width:height:extensions:formatdescriptionout:).md)
+- [func CMVideoFormatDescriptionCreate(allocator: CFAllocator?, codecType: CMVideoCodecType, width: Int32, height: Int32, extensions: CFDictionary?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](./cmvideoformatdescriptioncreate%28allocator,codectype,width,height,extensions,formatdescriptionout%29.md)
   Creates a format description for a video media stream.
-- [func CMVideoFormatDescriptionCreateForImageBuffer(allocator: CFAllocator?, imageBuffer: CVImageBuffer, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](cmvideoformatdescriptioncreateforimagebuffer(allocator:imagebuffer:formatdescriptionout:).md)
+- [func CMVideoFormatDescriptionCreateForImageBuffer(allocator: CFAllocator?, imageBuffer: CVImageBuffer, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](./cmvideoformatdescriptioncreateforimagebuffer%28allocator,imagebuffer,formatdescriptionout%29.md)
   Creates a format description for a video media stream by using an image buffer.
-- [func CMVideoFormatDescriptionGetCleanAperture(CMVideoFormatDescription, originIsAtTopLeft: Bool) -> CGRect](cmvideoformatdescriptiongetcleanaperture(_:originisattopleft:).md)
+- [func CMVideoFormatDescriptionGetCleanAperture(CMVideoFormatDescription, originIsAtTopLeft: Bool) -> CGRect](./cmvideoformatdescriptiongetcleanaperture%28_,originisattopleft%29.md)
   Returns a rectangle that defines the portion of the encoded pixel dimensions that represent the image data that’s valid for displaying.
-- [func CMVideoFormatDescriptionGetDimensions(CMVideoFormatDescription) -> CMVideoDimensions](cmvideoformatdescriptiongetdimensions(_:).md)
+- [func CMVideoFormatDescriptionGetDimensions(CMVideoFormatDescription) -> CMVideoDimensions](./cmvideoformatdescriptiongetdimensions%28_%29.md)
   Returns the video dimensions, in encoded pixels.
-- [func CMVideoFormatDescriptionGetExtensionKeysCommonWithImageBuffers() -> CFArray](cmvideoformatdescriptiongetextensionkeyscommonwithimagebuffers().md)
+- [func CMVideoFormatDescriptionGetExtensionKeysCommonWithImageBuffers() -> CFArray](./cmvideoformatdescriptiongetextensionkeyscommonwithimagebuffers%28%29.md)
   Returns an array of keys that you use for video format description extensions, image buffer attachments, and attributes.
-- [func CMVideoFormatDescriptionGetPresentationDimensions(CMVideoFormatDescription, usePixelAspectRatio: Bool, useCleanAperture: Bool) -> CGSize](cmvideoformatdescriptiongetpresentationdimensions(_:usepixelaspectratio:usecleanaperture:).md)
+- [func CMVideoFormatDescriptionGetPresentationDimensions(CMVideoFormatDescription, usePixelAspectRatio: Bool, useCleanAperture: Bool) -> CGSize](./cmvideoformatdescriptiongetpresentationdimensions%28_,usepixelaspectratio,usecleanaperture%29.md)
   Returns the dimensions after taking the pixel aspect ratio and clean aperture into account.
-- [func CMVideoFormatDescriptionMatchesImageBuffer(CMVideoFormatDescription, imageBuffer: CVImageBuffer) -> Bool](cmvideoformatdescriptionmatchesimagebuffer(_:imagebuffer:).md)
+- [func CMVideoFormatDescriptionMatchesImageBuffer(CMVideoFormatDescription, imageBuffer: CVImageBuffer) -> Bool](./cmvideoformatdescriptionmatchesimagebuffer%28_,imagebuffer%29.md)
   Returns a Boolean value that indicates whether a format description matches an image buffer.
-- [func CMVideoFormatDescriptionCreateFromH264ParameterSets(allocator: CFAllocator?, parameterSetCount: Int, parameterSetPointers: UnsafePointer<UnsafePointer<UInt8>>, parameterSetSizes: UnsafePointer<Int>, nalUnitHeaderLength: Int32, formatDescriptionOut: UnsafeMutablePointer<CMFormatDescription?>) -> OSStatus](cmvideoformatdescriptioncreatefromh264parametersets(allocator:parametersetcount:parametersetpointers:parametersetsizes:nalunitheaderlength:formatdescriptionout:).md)
+- [func CMVideoFormatDescriptionCreateFromH264ParameterSets(allocator: CFAllocator?, parameterSetCount: Int, parameterSetPointers: UnsafePointer<UnsafePointer<UInt8>>, parameterSetSizes: UnsafePointer<Int>, nalUnitHeaderLength: Int32, formatDescriptionOut: UnsafeMutablePointer<CMFormatDescription?>) -> OSStatus](./cmvideoformatdescriptioncreatefromh264parametersets%28allocator,parametersetcount,parametersetpointers,parametersetsizes,nalunitheaderlength,formatdescriptionout%29.md)
   Creates a format description for a video media stream that the parameter set describes.
-- [func CMVideoFormatDescriptionGetH264ParameterSetAtIndex(CMFormatDescription, parameterSetIndex: Int, parameterSetPointerOut: UnsafeMutablePointer<UnsafePointer<UInt8>?>?, parameterSetSizeOut: UnsafeMutablePointer<Int>?, parameterSetCountOut: UnsafeMutablePointer<Int>?, nalUnitHeaderLengthOut: UnsafeMutablePointer<Int32>?) -> OSStatus](cmvideoformatdescriptiongeth264parametersetatindex(_:parametersetindex:parametersetpointerout:parametersetsizeout:parametersetcountout:nalunitheaderlengthout:).md)
+- [func CMVideoFormatDescriptionGetH264ParameterSetAtIndex(CMFormatDescription, parameterSetIndex: Int, parameterSetPointerOut: UnsafeMutablePointer<UnsafePointer<UInt8>?>?, parameterSetSizeOut: UnsafeMutablePointer<Int>?, parameterSetCountOut: UnsafeMutablePointer<Int>?, nalUnitHeaderLengthOut: UnsafeMutablePointer<Int32>?) -> OSStatus](./cmvideoformatdescriptiongeth264parametersetatindex%28_,parametersetindex,parametersetpointerout,parametersetsizeout,parametersetcountout,nalunitheaderlengthout%29.md)
   Returns a parameter set that an H.264 format description contains.
-- [func CMVideoFormatDescriptionCopyAsBigEndianImageDescriptionBlockBuffer(allocator: CFAllocator?, videoFormatDescription: CMVideoFormatDescription, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](cmvideoformatdescriptioncopyasbigendianimagedescriptionblockbuffer(allocator:videoformatdescription:stringencoding:flavor:blockbufferout:).md)
+- [func CMVideoFormatDescriptionCopyAsBigEndianImageDescriptionBlockBuffer(allocator: CFAllocator?, videoFormatDescription: CMVideoFormatDescription, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, blockBufferOut: UnsafeMutablePointer<CMBlockBuffer?>) -> OSStatus](./cmvideoformatdescriptioncopyasbigendianimagedescriptionblockbuffer%28allocator,videoformatdescription,stringencoding,flavor,blockbufferout%29.md)
   Copies the contents of a video format description to a buffer in big-endian byte ordering.
-- [func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianImageDescriptionBlockBuffer: CMBlockBuffer, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](cmvideoformatdescriptioncreatefrombigendianimagedescriptionblockbuffer(allocator:bigendianimagedescriptionblockbuffer:stringencoding:flavor:formatdescriptionout:).md)
+- [func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionBlockBuffer(allocator: CFAllocator?, bigEndianImageDescriptionBlockBuffer: CMBlockBuffer, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](./cmvideoformatdescriptioncreatefrombigendianimagedescriptionblockbuffer%28allocator,bigendianimagedescriptionblockbuffer,stringencoding,flavor,formatdescriptionout%29.md)
   Creates a video format description from a big-endian image description inside a buffer.
-- [func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionData(allocator: CFAllocator?, bigEndianImageDescriptionData: UnsafePointer<UInt8>, size: Int, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](cmvideoformatdescriptioncreatefrombigendianimagedescriptiondata(allocator:bigendianimagedescriptiondata:size:stringencoding:flavor:formatdescriptionout:).md)
+- [func CMVideoFormatDescriptionCreateFromBigEndianImageDescriptionData(allocator: CFAllocator?, bigEndianImageDescriptionData: UnsafePointer<UInt8>, size: Int, stringEncoding: CFStringEncoding, flavor: CMImageDescriptionFlavor?, formatDescriptionOut: UnsafeMutablePointer<CMVideoFormatDescription?>) -> OSStatus](./cmvideoformatdescriptioncreatefrombigendianimagedescriptiondata%28allocator,bigendianimagedescriptiondata,size,stringencoding,flavor,formatdescriptionout%29.md)
   Creates a video format description from a big-endian image description structure.
-- [func CMSwapBigEndianImageDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswapbigendianimagedescriptiontohost(_:_:).md)
+- [func CMSwapBigEndianImageDescriptionToHost(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswapbigendianimagedescriptiontohost%28_,_%29.md)
   Converts an image description data structure from big-endian to host-endian, in place.
-- [func CMSwapHostEndianImageDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](cmswaphostendianimagedescriptiontobig(_:_:).md)
+- [func CMSwapHostEndianImageDescriptionToBig(UnsafeMutablePointer<UInt8>, Int) -> OSStatus](./cmswaphostendianimagedescriptiontobig%28_,_%29.md)
   Converts an image description data structure from host-endian to big-endian, in place.
 
 

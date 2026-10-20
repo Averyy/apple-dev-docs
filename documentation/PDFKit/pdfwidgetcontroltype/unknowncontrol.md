@@ -1,7 +1,8 @@
 # PDFWidgetControlType.unknownControl
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown control type.
 
@@ -10,7 +11,7 @@ Unknown control type.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ Unknown control type.
 case unknownControl
 ```
 
+```c
+kPDFWidgetUnknownControl
+```
+
 ## See Also
 
-- [PDFWidgetControlType.pushButtonControl](pdfwidgetcontroltype/pushbuttoncontrol.md)
+### Constants
+- [PDFWidgetControlType.pushButtonControl](./pushbuttoncontrol.md)
   Push button control.
-- [PDFWidgetControlType.radioButtonControl](pdfwidgetcontroltype/radiobuttoncontrol.md)
+- [PDFWidgetControlType.radioButtonControl](./radiobuttoncontrol.md)
   Radio button control.
-- [PDFWidgetControlType.checkBoxControl](pdfwidgetcontroltype/checkboxcontrol.md)
+- [PDFWidgetControlType.checkBoxControl](./checkboxcontrol.md)
   Check box control.
 
 

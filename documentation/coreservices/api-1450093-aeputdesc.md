@@ -1,7 +1,8 @@
 # AEPutDesc(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a descriptor to any descriptor list, possibly replacing an existing descriptor in the list.
 
@@ -14,9 +15,13 @@ Adds a descriptor to any descriptor list, possibly replacing an existing descrip
 func AEPutDesc(_ theAEDescList: UnsafeMutablePointer<AEDescList>!, _ index: Int, _ theAEDesc: UnsafePointer<AEDesc>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AEPutDesc(AEDescList *theAEDescList, long index, const AEDesc *theAEDesc);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
@@ -24,15 +29,18 @@ Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDescList`: A pointer to the descriptor list to add a descriptor to. See [`AEDescList`](aedesclist.md).
-- `index`: A one-based positive integer indicating the position to insert the descriptor at. If there is already a descriptor in the specified position, it is replaced. You can pass a value of zero or count + 1 to add the descriptor at the end of the list. `AEPutDesc` returns an error (`AEIllegalIndex`) if you pass a negative number or a value that is out of range.
-- `theAEDesc`: A pointer to the descriptor to add to the list. See [`AEDesc`](aedesc.md).
+- `theAEDescList`: A pointer to the descriptor list to add a descriptor to. See [`AEDescList`](./aedesclist.md).
+- `index`: A one-based positive integer indicating the position to insert the descriptor at. If there is already a descriptor in the specified position, it is replaced.
+
+  You can pass a value of zero or count + 1 to add the descriptor at the end of the list. `AEPutDesc` returns an error (`AEIllegalIndex`) if you pass a negative number or a value that is out of range.
+- `theAEDesc`: A pointer to the descriptor to add to the list. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AEPutArray(UnsafeMutablePointer<AEDescList>!, AEArrayType, UnsafePointer<AEArrayData>!, DescType, Size, Int) -> OSErr](1442535-aeputarray.md)
+### Adding Items to Descriptor Lists
+- [func AEPutArray(UnsafeMutablePointer<AEDescList>!, AEArrayType, UnsafePointer<AEArrayData>!, DescType, Size, Int) -> OSErr](./api-1442535-aeputarray.md)
   Inserts the data for an Apple event array into a descriptor list, replacing any previous descriptors in the list.
-- [func AEPutPtr(UnsafeMutablePointer<AEDescList>!, Int, DescType, UnsafeRawPointer!, Size) -> OSErr](1445287-aeputptr.md)
+- [func AEPutPtr(UnsafeMutablePointer<AEDescList>!, Int, DescType, UnsafeRawPointer!, Size) -> OSErr](./api-1445287-aeputptr.md)
   Inserts data specified in a buffer into a descriptor list as a descriptor, possibly replacing an existing descriptor in the list.
 
 

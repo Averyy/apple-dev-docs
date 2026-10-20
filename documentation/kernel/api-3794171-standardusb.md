@@ -1,14 +1,15 @@
 # StandardUSB::getNextCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 const DeviceCapabilityDescriptor * StandardUSB::getNextCapabilityDescriptor(const BOSDescriptor *bosDescriptor, const DeviceCapabilityDescriptor *currentDescriptor);
 ```
 

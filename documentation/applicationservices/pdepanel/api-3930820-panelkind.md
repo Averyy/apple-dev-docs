@@ -2,6 +2,7 @@
 
 **Framework**: Application Services  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -11,6 +12,10 @@
 
 ```swift
 func panelKind() -> String
+```
+
+```objc
+- (NSString *)panelKind;
 ```
 
 

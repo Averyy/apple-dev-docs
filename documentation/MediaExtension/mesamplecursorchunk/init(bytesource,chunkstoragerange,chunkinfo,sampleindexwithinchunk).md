@@ -1,7 +1,8 @@
 # init(byteSource:chunkStorageRange:chunkInfo:sampleIndexWithinChunk:)
 
 **Framework**: MediaExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new sample cursor chunk with byte source and chunk data that you provide.
 
@@ -12,6 +13,10 @@ Creates a new sample cursor chunk with byte source and chunk data that you provi
 
 ```swift
 init(byteSource: MEByteSource, chunkStorageRange: AVSampleCursorStorageRange, chunkInfo: AVSampleCursorChunkInfo, sampleIndexWithinChunk: CFIndex)
+```
+
+```objc
+- (instancetype) initWithByteSource:(MEByteSource *) byteSource chunkStorageRange:(AVSampleCursorStorageRange) chunkStorageRange chunkInfo:(AVSampleCursorChunkInfo) chunkInfo sampleIndexWithinChunk:(CFIndex) sampleIndexWithinChunk;
 ```
 
 ## Parameters

@@ -1,18 +1,19 @@
 # cornerRadius
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of curvature for the plane’s corners. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The radius of curvature for the plane’s corners. Animatable.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat cornerRadius;
+```
+
 #### Discussion
 
 The minimum (and default) corner radius is `0.0`, specifying square corners. Set this property to a nonzero value to add rounded corners to the plane. Setting a corner radius of less than zero creates an empty geometry.
 
-The maximum corner radius is half the plane’s smaller dimension. For example, if a plane’s [`width`](scnplane/width.md) and [`height`](scnplane/height.md) properties are both `10.0`, setting a corner radius of `5.0` gives the plane a circular shape, and increasing the corner radius beyond `5.0` has no effect. If a plane has width `10.0` and height `5.0`, the maximum corner radius is `2.5`, creating a rectangular shape with circular endcaps.
+The maximum corner radius is half the plane’s smaller dimension. For example, if a plane’s [`width`](./width.md) and [`height`](./height.md) properties are both `10.0`, setting a corner radius of `5.0` gives the plane a circular shape, and increasing the corner radius beyond `5.0` has no effect. If a plane has width `10.0` and height `5.0`, the maximum corner radius is `2.5`, creating a rectangular shape with circular endcaps.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var cornerSegmentCount: Int](scnplane/cornersegmentcount.md)
+### Adding Rounded Corners
+- [var cornerSegmentCount: Int](./cornersegmentcount.md)
   The number of line segments used to create each rounded corner of the plane. Animatable.
 
 

@@ -1,7 +1,8 @@
 # label
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the label for the outline.
 
@@ -17,6 +18,10 @@ Returns the label for the outline.
 
 ```swift
 var label: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
 ```
 
 #### Discussion

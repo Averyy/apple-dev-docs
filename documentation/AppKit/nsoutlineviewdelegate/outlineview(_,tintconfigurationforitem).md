@@ -1,7 +1,8 @@
 # outlineView(_:tintConfigurationForItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Customizes an item’s tinting behavior.
 
@@ -15,9 +16,13 @@ Customizes an item’s tinting behavior.
 optional func outlineView(_ outlineView: NSOutlineView, tintConfigurationForItem item: Any) -> NSTintConfiguration?
 ```
 
+```objc
+- (NSTintConfiguration *) outlineView:(NSOutlineView *) outlineView tintConfigurationForItem:(id) item;
+```
+
 #### Return Value
 
-Returns a new [`NSTintConfiguration`](nstintconfiguration.md) object to create a particular tinting behavior for the item’s row, or `nil` to inherit the tinting behavior from the item’s parent.
+Returns a new [`NSTintConfiguration`](../nstintconfiguration.md) object to create a particular tinting behavior for the item’s row, or `nil` to inherit the tinting behavior from the item’s parent.
 
 #### Discussion
 
@@ -30,7 +35,8 @@ You typically use this method to customize the color for a sidebar.
 
 ## See Also
 
-- [class NSTintConfiguration](nstintconfiguration.md)
+### Customizing Tint Color
+- [class NSTintConfiguration](../nstintconfiguration.md)
   An object that gives you the ability to choose from system-provided tinting behaviors.
 
 

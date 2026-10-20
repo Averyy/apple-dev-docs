@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var version: uint16
+```
+
+```c
+uint16 version;
 ```
 
 

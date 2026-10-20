@@ -1,14 +1,15 @@
 # kHFSAutoCandidateBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHFSAutoCandidateBit = 0x000b
 ```
 

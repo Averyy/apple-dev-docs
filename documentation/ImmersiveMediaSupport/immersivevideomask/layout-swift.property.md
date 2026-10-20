@@ -1,9 +1,10 @@
 # layout
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The layout of this mask, see [`ImmersiveVideoMask.Layout`](immersivevideomask/layout-swift.enum.md) for more details.
+The layout of this mask, see [`ImmersiveVideoMask.Layout`](./layout-swift.enum.md) for more details.
 
 **Availability**:
 - iOS 26.4+
@@ -20,7 +21,8 @@ var layout: ImmersiveVideoMask.Layout { get }
 
 ## See Also
 
-- [var texture: any MTLTexture](immersivevideomask/texture.md)
+### Instance Properties
+- [var texture: any MTLTexture](./texture.md)
   The mask texture ready for rendering.
 
 

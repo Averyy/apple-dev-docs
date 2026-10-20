@@ -1,7 +1,8 @@
 # attach(contentKey:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches an AVContentKey to a CMReadySampleBuffer for the purpose of content decryption. The client is expected to attach AVContentKeys to CMReadySampleBuffers that have been created by the client for enqueueing with AVSampleBufferDisplayLayer or AVSampleBufferAudioRenderer, for which the AVContentKeySpecifier matches indications of suitability that are available to the client according to the content key system that’s in use.
 
@@ -20,9 +21,11 @@ Attaches an AVContentKey to a CMReadySampleBuffer for the purpose of content dec
 mutating func attach(contentKey: AVContentKey) throws
 ```
 
+Available when `Content` conforms to `CMSampleBuffer.Content`.
+
 #### Discussion
 
-> **Note**: Describes the reason for failure to attach the content key.
+> **Throws**: Describes the reason for failure to attach the content key.
 
 ## Parameters
 

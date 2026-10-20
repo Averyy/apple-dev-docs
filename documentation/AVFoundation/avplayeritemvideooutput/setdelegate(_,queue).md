@@ -1,7 +1,8 @@
 # setDelegate(_:queue:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate and dispatch queue for the receiver.
 
@@ -19,6 +20,10 @@ Sets the delegate and dispatch queue for the receiver.
 func setDelegate(_ delegate: (any AVPlayerItemOutputPullDelegate)?, queue delegateQueue: dispatch_queue_t?)
 ```
 
+```objc
+- (void) setDelegate:(id<AVPlayerItemOutputPullDelegate>) delegate queue:(dispatch_queue_t) delegateQueue;
+```
+
 ## Parameters
 
 - `delegate`: The delegate object for the receiver. You may specify `nil` for this parameter.
@@ -26,11 +31,12 @@ func setDelegate(_ delegate: (any AVPlayerItemOutputPullDelegate)?, queue delega
 
 ## See Also
 
-- [var delegate: (any AVPlayerItemOutputPullDelegate)?](avplayeritemvideooutput/delegate.md)
+### Configuring the delegate
+- [var delegate: (any AVPlayerItemOutputPullDelegate)?](./delegate.md)
   The delegate for the video output object.
-- [protocol AVPlayerItemOutputPullDelegate](avplayeritemoutputpulldelegate.md)
+- [protocol AVPlayerItemOutputPullDelegate](../avplayeritemoutputpulldelegate.md)
   Methods you can implement to respond to pixel buffer changes.
-- [var delegateQueue: dispatch_queue_t?](avplayeritemvideooutput/delegatequeue.md)
+- [var delegateQueue: dispatch_queue_t?](./delegatequeue.md)
   The dispatch queue on which to call delegate methods.
 
 

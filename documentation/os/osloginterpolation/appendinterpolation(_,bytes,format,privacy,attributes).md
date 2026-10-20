@@ -1,7 +1,8 @@
 # appendInterpolation(_:bytes:format:privacy:attributes:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends interpolated pointer data with the specified attributes.
 
@@ -11,7 +12,7 @@ Appends interpolated pointer data with the specified attributes.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -28,17 +29,18 @@ mutating func appendInterpolation(_ pointer: @autoclosure @escaping () -> Unsafe
 
 - `pointer`: The interpolated pointer data. The system automatically wraps this value in a closure.
 - `bytes`: The size of the pointer in bytes.
-- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogPointerFormat`](oslogpointerformat.md). The default value is [`OSLogPointerFormat.none`](oslogpointerformat/none.md).
-- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](oslogprivacy.md). The default value is [`auto`](oslogprivacy/auto.md).
-- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [`Instruments Developer Help`](https://developer.apple.comhttps://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
+- `format`: The format to apply to the value when the system renders it in a log message. For more information, see [`OSLogPointerFormat`](../oslogpointerformat.md). The default value is [`OSLogPointerFormat.none`](../oslogpointerformat/none.md).
+- `privacy`: The privacy level of the value, which the system applies when it renders the value in a log message. For more information, see [`OSLogPrivacy`](../oslogprivacy.md). The default value is [`auto`](../oslogprivacy/auto.md).
+- `attributes`: Additional information about the value. Tools that process log messages interpret these attributes, which you typically provide as key-value pairs. For example, Instruments processes any  e_ngineering types_ you embed in this value. For more information, see [Instruments Developer Help](https://help.apple.com/instruments/developer/mac/current/#/devcd5016d31).
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:bytes:format:privacy:).md)
+### Appending Pointer Data
+- [func appendInterpolation(@autoclosure () -> UnsafeRawPointer, bytes: @autoclosure () -> Int, format: OSLogPointerFormat, privacy: OSLogPrivacy)](./appendinterpolation%28_,bytes,format,privacy%29.md)
   Appends interpolated pointer data.
-- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy)](osloginterpolation/appendinterpolation(_:format:privacy:)-5qaau.md)
+- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy)](./appendinterpolation%28_,format,privacy%29-5qaau.md)
   Appends an interpolated collection of raw bytes.
-- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:format:privacy:attributes:)-93lbs.md)
+- [func appendInterpolation(@autoclosure () -> UnsafeRawBufferPointer, format: OSLogPointerFormat, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,format,privacy,attributes%29-93lbs.md)
   Appends an interpolated collection of raw bytes with the specified attributes.
 
 

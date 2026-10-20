@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A system-default hover effect that automatically selects the appropriate effect based on the view to which it applies.
 
@@ -17,11 +18,14 @@ A system-default hover effect that automatically selects the appropriate effect 
 static var automatic: UIHoverAutomaticEffect { get }
 ```
 
+Available when `Self` is `UIHoverAutomaticEffect`.
+
 ## See Also
 
-- [static var highlight: UIHoverHighlightEffect](uihovereffect-40091/highlight.md)
+### Choosing a hover effect
+- [static var highlight: UIHoverHighlightEffect](./highlight.md)
   An effect that applies a highlight to the view on hover.
-- [static var lift: UIHoverLiftEffect](uihovereffect-40091/lift.md)
+- [static var lift: UIHoverLiftEffect](./lift.md)
   An effect that can visually lift the view on hover where appropriate.
 
 

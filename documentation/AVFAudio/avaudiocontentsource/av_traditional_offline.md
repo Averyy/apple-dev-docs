@@ -1,7 +1,8 @@
 # AVAudioContentSource.av_Traditional_Offline
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -18,15 +19,20 @@
 case av_Traditional_Offline
 ```
 
+```c
+AVAudioContentSource_AV_Traditional_Offline
+```
+
 ## See Also
 
-- [AVAudioContentSource.appleAV_Spatial_Live](avaudiocontentsource/appleav_spatial_live.md)
-- [AVAudioContentSource.appleAV_Spatial_Offline](avaudiocontentsource/appleav_spatial_offline.md)
-- [AVAudioContentSource.appleAV_Traditional_Live](avaudiocontentsource/appleav_traditional_live.md)
-- [AVAudioContentSource.appleAV_Traditional_Offline](avaudiocontentsource/appleav_traditional_offline.md)
-- [AVAudioContentSource.av_Spatial_Live](avaudiocontentsource/av_spatial_live.md)
-- [AVAudioContentSource.av_Spatial_Offline](avaudiocontentsource/av_spatial_offline.md)
-- [AVAudioContentSource.av_Traditional_Live](avaudiocontentsource/av_traditional_live.md)
+### Identifying audiovisual content
+- [AVAudioContentSource.appleAV_Spatial_Live](./appleav_spatial_live.md)
+- [AVAudioContentSource.appleAV_Spatial_Offline](./appleav_spatial_offline.md)
+- [AVAudioContentSource.appleAV_Traditional_Live](./appleav_traditional_live.md)
+- [AVAudioContentSource.appleAV_Traditional_Offline](./appleav_traditional_offline.md)
+- [AVAudioContentSource.av_Spatial_Live](./av_spatial_live.md)
+- [AVAudioContentSource.av_Spatial_Offline](./av_spatial_offline.md)
+- [AVAudioContentSource.av_Traditional_Live](./av_traditional_live.md)
 
 
 ---

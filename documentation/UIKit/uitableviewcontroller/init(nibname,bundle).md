@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a table view controller with the nib file in the specified bundle.
 
@@ -9,7 +10,7 @@ Creates a table view controller with the nib file in the specified bundle.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a table view controller with the nib file in the specified bundle.
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 
+```objc
+- (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
+```
+
 ## See Also
 
-- [init(style: UITableView.Style)](uitableviewcontroller/init(style:).md)
+### Creating a table view controller
+- [init(style: UITableView.Style)](./init%28style%29.md)
   Initializes a table view controller to manage a table view of a given style.
-- [init?(coder: NSCoder)](uitableviewcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a table view controller from data in an unarchiver.
 
 

@@ -1,7 +1,8 @@
 # deleteOrBackspace
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the Delete or Backspace key.
 
@@ -19,37 +20,42 @@ The keyboard code for the Delete or Backspace key.
 static let deleteOrBackspace: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodeDeleteOrBackspace;
+```
+
 ## See Also
 
-- [static let tab: GCKeyCode](gckeycode/tab.md)
+### Punctuation and Command Keys
+- [static let tab: GCKeyCode](./tab.md)
   The keyboard code for the Tab key.
-- [static let spacebar: GCKeyCode](gckeycode/spacebar.md)
+- [static let spacebar: GCKeyCode](./spacebar.md)
   The keyboard code for the Space Bar key.
-- [static let hyphen: GCKeyCode](gckeycode/hyphen.md)
+- [static let hyphen: GCKeyCode](./hyphen.md)
   The keyboard code for the - or _ key.
-- [static let equalSign: GCKeyCode](gckeycode/equalsign.md)
+- [static let equalSign: GCKeyCode](./equalsign.md)
   The keyboard code for the = or + key.
-- [static let openBracket: GCKeyCode](gckeycode/openbracket.md)
+- [static let openBracket: GCKeyCode](./openbracket.md)
   The keyboard code for the [ or { key.
-- [static let closeBracket: GCKeyCode](gckeycode/closebracket.md)
+- [static let closeBracket: GCKeyCode](./closebracket.md)
   The keyboard code for the ] or } key.
-- [static let backslash: GCKeyCode](gckeycode/backslash.md)
+- [static let backslash: GCKeyCode](./backslash.md)
   The keyboard code for the \ or | key.
-- [static let nonUSPound: GCKeyCode](gckeycode/nonuspound.md)
+- [static let nonUSPound: GCKeyCode](./nonuspound.md)
   The keyboard code for the non-US Pound or _ key.
-- [static let semicolon: GCKeyCode](gckeycode/semicolon.md)
+- [static let semicolon: GCKeyCode](./semicolon.md)
   The keyboard code for the ; or : key.
-- [static let quote: GCKeyCode](gckeycode/quote.md)
+- [static let quote: GCKeyCode](./quote.md)
   The keyboard code for the ’ or “ key.
-- [static let graveAccentAndTilde: GCKeyCode](gckeycode/graveaccentandtilde.md)
+- [static let graveAccentAndTilde: GCKeyCode](./graveaccentandtilde.md)
   The keyboard code for the Grave Accent or Tilde key.
-- [static let comma: GCKeyCode](gckeycode/comma.md)
+- [static let comma: GCKeyCode](./comma.md)
   The keyboard code for the Comma or < key.
-- [static let period: GCKeyCode](gckeycode/period.md)
+- [static let period: GCKeyCode](./period.md)
   The keyboard code for the Period or > key.
-- [static let slash: GCKeyCode](gckeycode/slash.md)
+- [static let slash: GCKeyCode](./slash.md)
   The keyboard code for the / or ? key.
-- [static let capsLock: GCKeyCode](gckeycode/capslock.md)
+- [static let capsLock: GCKeyCode](./capslock.md)
   The keyboard code for the Caps Lock key.
 
 

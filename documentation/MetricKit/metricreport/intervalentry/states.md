@@ -1,7 +1,8 @@
 # states
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All states that were active during this collection interval.
 
@@ -19,7 +20,7 @@ let states: [MetricManager.ReportedState]
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -27,7 +28,8 @@ This array contains all the StateReporting states that occurred within the inter
 
 ## See Also
 
-- [let duration: Measurement<UnitDuration>](metricreport/intervalentry/duration.md)
+### Interval details
+- [let duration: Measurement<UnitDuration>](./duration.md)
   The duration of this collection interval.
 
 

@@ -1,7 +1,8 @@
 # insert(contentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the given range into the range set.
 
@@ -22,7 +23,7 @@ mutating func insert(contentsOf range: Range<Bound>)
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the number of ranges in the range set.
+> **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

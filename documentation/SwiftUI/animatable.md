@@ -1,7 +1,8 @@
 # Animatable
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes how to animate a property of a view.
 
@@ -22,11 +23,11 @@ protocol Animatable
 
 #### Overview
 
-When an animatable value changes inside a [`withAnimation(_:_:)`](withanimation(_:_:).md) block (or is affected by an `animation(_:value:)` modifier), SwiftUI reads the old and new [`animatableData`](animatable/animatabledata-6nydg.md) values, then interpolates between them over successive frames using [`VectorArithmetic`](vectorarithmetic.md) operations. The framework calls the [`animatableData`](animatable/animatabledata-6nydg.md) setter on each frame, giving your type a chance to update any derived state.
+When an animatable value changes inside a [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) block (or is affected by an `animation(_:value:)` modifier), SwiftUI reads the old and new [`animatableData`](./animatable/animatabledata-6nydg.md) values, then interpolates between them over successive frames using [`VectorArithmetic`](./vectorarithmetic.md) operations. The framework calls the [`animatableData`](./animatable/animatabledata-6nydg.md) setter on each frame, giving your type a chance to update any derived state.
 
-##### Use the Animatable Macro
+##### Use the Animatable macro
 
-To conform a type to the `Animatable` protocol, use the [`Animatable()`](animatable().md) macro to avoid writing the [`animatableData`](animatable/animatabledata-6nydg.md) property by hand:
+To conform a type to the `Animatable` protocol, use the [`Animatable()`](./animatable%28%29.md) macro to avoid writing the [`animatableData`](./animatable/animatabledata-6nydg.md) property by hand:
 
 ```swift
 @Animatable
@@ -37,7 +38,7 @@ struct RingSegment: Shape {
 }
 ```
 
-The macro inspects every stored property. Properties whose types conform to `VectorArithmetic` or `Animatable` are included in the synthesized [`animatableData`](animatable/animatabledata-6nydg.md). If a property cannot participate, the macro emits an error suggesting you mark it with [`AnimatableIgnored()`](animatableignored().md) or conform its type to `VectorArithmetic` or `Animatable`:
+The macro inspects every stored property. Properties whose types conform to `VectorArithmetic` or `Animatable` are included in the synthesized [`animatableData`](./animatable/animatabledata-6nydg.md). If a property cannot participate, the macro emits an error suggesting you mark it with [`AnimatableIgnored()`](./animatableignored%28%29.md) or conform its type to `VectorArithmetic` or `Animatable`:
 
 ```swift
 @Animatable
@@ -49,11 +50,11 @@ struct RingSegment: Shape {
 }
 ```
 
-##### Manual Conformance for Custom Interpolation
+##### Manual conformance for custom interpolation
 
-Reach for a handwritten [`animatableData`](animatable/animatabledata-6nydg.md) when the interpolated value needs custom logic that does not correspond one-to-one with a stored property, such as normalization, clamping, or driving a derived value.
+Reach for a handwritten [`animatableData`](./animatable/animatabledata-6nydg.md) when the interpolated value needs custom logic that does not correspond one-to-one with a stored property, such as normalization, clamping, or driving a derived value.
 
-Use [`AnimatableValues`](animatablevalues.md) (26.0+ releases) to group multiple animated properties, or [`AnimatablePair`](animatablepair.md) on earlier deployment targets:
+Use [`AnimatableValues`](./animatablevalues.md) (26.0+ releases) to group multiple animated properties, or [`AnimatablePair`](./animatablepair.md) on earlier deployment targets:
 
 ```swift
 struct WaveShape: Shape {
@@ -84,75 +85,76 @@ struct WaveShape: Shape {
 ## Topics
 
 ### Animating data
-- [macro Animatable()](animatable().md)
+- [macro Animatable()](./animatable%28%29.md)
   A member and extension macro that, when applied to a struct, class or enum declaration, synthesizes the conformance to `Animatable` and its requirement, the `animatableData` property using the existing animatable properties of the type this macro is applied to.
-- [macro AnimatableIgnored()](animatableignored().md)
+- [macro AnimatableIgnored()](./animatableignored%28%29.md)
   An accessor macro that marks a property of a type to be excluded from the `animatableData` synthesis:
-- [var animatableData: Self.AnimatableData](animatable/animatabledata-6nydg.md)
+- [var animatableData: Self.AnimatableData](./animatable/animatabledata-6nydg.md)
   The data to animate.
-- [associatedtype AnimatableData : VectorArithmetic](animatable/animatabledata-swift.associatedtype.md)
+- [associatedtype AnimatableData : VectorArithmetic](./animatable/animatabledata-swift.associatedtype.md)
   The type defining the data to animate.
 
 ## Relationships
 
 ### Inherited By
-- [AnimatableModifier](animatablemodifier.md)
-- [GeometryEffect](geometryeffect.md)
-- [InsettableShape](insettableshape.md)
-- [Layout](layout.md)
-- [RoundedRectangularShape](roundedrectangularshape.md)
-- [Shape](shape.md)
-- [TextRenderer](textrenderer.md)
-- [VisualEffect](visualeffect.md)
+- [AnimatableModifier](./animatablemodifier.md)
+- [GeometryEffect](./geometryeffect.md)
+- [InsettableShape](./insettableshape.md)
+- [Layout](./layout.md)
+- [RoundedRectangularShape](./roundedrectangularshape.md)
+- [Shape](./shape.md)
+- [TextRenderer](./textrenderer.md)
+- [VisualEffect](./visualeffect.md)
 ### Conforming Types
-- [Angle](angle.md)
-- [AnyLayout](anylayout.md)
-- [AnyShape](anyshape.md)
-- [ButtonBorderShape](buttonbordershape.md)
-- [Capsule](capsule.md)
-- [Circle](circle.md)
-- [Color.Resolved](color/resolved.md)
-- [Color.ResolvedHDR](color/resolvedhdr.md)
-- [ConcentricRectangle](concentricrectangle.md)
-- [ContainerRelativeShape](containerrelativeshape.md)
-- [DefaultGlassEffectShape](defaultglasseffectshape.md)
-- [Edge.Corner.Style](edge/corner/style.md)
-- [EdgeInsets](edgeinsets.md)
-- [EdgeInsets3D](edgeinsets3d.md)
-- [Ellipse](ellipse.md)
-- [EmptyVisualEffect](emptyvisualeffect.md)
-- [GridLayout](gridlayout.md)
-- [HStackLayout](hstacklayout.md)
-- [LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
-- [ModifiedContent](modifiedcontent.md)
-- [OffsetShape](offsetshape.md)
-- [Path](path.md)
-- [Rectangle](rectangle.md)
-- [RectangleCornerRadii](rectanglecornerradii.md)
-- [RotatedShape](rotatedshape.md)
-- [RoundedRectangle](roundedrectangle.md)
-- [RoundedRectangularShapeCorners](roundedrectangularshapecorners.md)
-- [ScaledShape](scaledshape.md)
-- [SpatialContainer](spatialcontainer.md)
-- [StrokeStyle](strokestyle.md)
-- [TextInputBorderShape](textinputbordershape.md)
-- [TransformedShape](transformedshape.md)
-- [UnevenRoundedRectangle](unevenroundedrectangle.md)
-- [UnitPoint](unitpoint.md)
-- [UnitPoint3D](unitpoint3d.md)
-- [VStackLayout](vstacklayout.md)
-- [ZStackLayout](zstacklayout.md)
+- [Angle](./angle.md)
+- [AnyLayout](./anylayout.md)
+- [AnyShape](./anyshape.md)
+- [ButtonBorderShape](./buttonbordershape.md)
+- [Capsule](./capsule.md)
+- [Circle](./circle.md)
+- [Color.Resolved](./color/resolved.md)
+- [Color.ResolvedHDR](./color/resolvedhdr.md)
+- [ConcentricRectangle](./concentricrectangle.md)
+- [ContainerRelativeShape](./containerrelativeshape.md)
+- [DefaultGlassEffectShape](./defaultglasseffectshape.md)
+- [Edge.Corner.Style](./edge/corner/style.md)
+- [EdgeInsets](./edgeinsets.md)
+- [EdgeInsets3D](./edgeinsets3d.md)
+- [Ellipse](./ellipse.md)
+- [EmptyVisualEffect](./emptyvisualeffect.md)
+- [GridLayout](./gridlayout.md)
+- [HStackLayout](./hstacklayout.md)
+- [LayoutRotationUnaryLayout](./layoutrotationunarylayout.md)
+- [ModifiedContent](./modifiedcontent.md)
+- [OffsetShape](./offsetshape.md)
+- [Path](./path.md)
+- [Rectangle](./rectangle.md)
+- [RectangleCornerRadii](./rectanglecornerradii.md)
+- [RotatedShape](./rotatedshape.md)
+- [RoundedRectangle](./roundedrectangle.md)
+- [RoundedRectangularShapeCorners](./roundedrectangularshapecorners.md)
+- [ScaledShape](./scaledshape.md)
+- [SpatialContainer](./spatialcontainer.md)
+- [StrokeStyle](./strokestyle.md)
+- [TextInputBorderShape](./textinputbordershape.md)
+- [TransformedShape](./transformedshape.md)
+- [UnevenRoundedRectangle](./unevenroundedrectangle.md)
+- [UnitPoint](./unitpoint.md)
+- [UnitPoint3D](./unitpoint3d.md)
+- [VStackLayout](./vstacklayout.md)
+- [ZStackLayout](./zstacklayout.md)
 
 ## See Also
 
-- [struct AnimatableValues](animatablevalues.md)
-- [struct AnimatablePair](animatablepair.md)
+### Making data animatable
+- [struct AnimatableValues](./animatablevalues.md)
+- [struct AnimatablePair](./animatablepair.md)
   A pair of animatable values, which is itself animatable.
-- [protocol VectorArithmetic](vectorarithmetic.md)
+- [protocol VectorArithmetic](./vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
-- [struct EmptyAnimatableData](emptyanimatabledata.md)
+- [struct EmptyAnimatableData](./emptyanimatabledata.md)
   An empty type for animatable data.
-- [protocol AnimatableModifier](animatablemodifier.md)
+- [protocol AnimatableModifier](./animatablemodifier.md)
   A modifier that can create another modifier with animation.
 
 

@@ -1,7 +1,8 @@
 # addChild(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child node after the last of the receiver’s existing children.
 
@@ -15,21 +16,26 @@ Adds a child node after the last of the receiver’s existing children.
 func addChild(_ child: XMLNode)
 ```
 
+```objc
+- (void) addChild:(NSXMLNode *) child;
+```
+
 ## Parameters
 
-- `child`: The [`XMLNode`](xmlnode.md) object to be added.
+- `child`: The [`XMLNode`](../xmlnode.md) object to be added.
 
 ## See Also
 
-- [func insertChild(XMLNode, at: Int)](xmldocument/insertchild(_:at:).md)
+### Adding and Removing Child Nodes
+- [func insertChild(XMLNode, at: Int)](./insertchild%28_,at%29.md)
   Inserts a node object at specified position in the receiver’s array of children.
-- [func insertChildren([XMLNode], at: Int)](xmldocument/insertchildren(_:at:).md)
+- [func insertChildren([XMLNode], at: Int)](./insertchildren%28_,at%29.md)
   Inserts an array of children at a specified position in the receiver’s array of children.
-- [func removeChild(at: Int)](xmldocument/removechild(at:).md)
+- [func removeChild(at: Int)](./removechild%28at%29.md)
   Removes the child node of the receiver located at a specified position in its array of children.
-- [func replaceChild(at: Int, with: XMLNode)](xmldocument/replacechild(at:with:).md)
+- [func replaceChild(at: Int, with: XMLNode)](./replacechild%28at,with%29.md)
   Replaces the child node of the receiver located at a specified position in its array of children with another node.
-- [func setChildren([XMLNode]?)](xmldocument/setchildren(_:).md)
+- [func setChildren([XMLNode]?)](./setchildren%28_%29.md)
   Sets the child nodes of the receiver.
 
 

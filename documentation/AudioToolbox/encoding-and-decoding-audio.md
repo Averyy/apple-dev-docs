@@ -1,6 +1,8 @@
 # Encoding and decoding audio
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Sample Code  
+**Download**: [EncodingAndDecodingAudio.zip](https://docs-assets.developer.apple.com/published/71f0b42489a6/EncodingAndDecodingAudio.zip)
 
 Convert audio formats to efficiently manage data and quality.
 
@@ -14,9 +16,9 @@ This sample shows how to encode and decode audio by using Audio Toolbox. If it�
 
 The sample also explores how to set up data structures that describe audio formats, read and write packets to and from audio files, retrieve and set magic cookies, and loop through the input callback that signals the end of a buffer stream.
 
-##### Create Input and Output Descriptions
+##### Create input and output descriptions
 
-Whether it’s encoding or decoding audio, the sample uses the structure [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) to describe  the input and output audio data formats. When encoding audio, the sample checks whether the input audio is in PCM format. If the input is not PCM, the sample fails because a single audio converter instance can’t transcode (decode one non-PCM format and encode to another non-PCM format).
+Whether it’s encoding or decoding audio, the sample uses the structure [`AudioStreamBasicDescription`](../CoreAudioTypes/audiostreambasicdescription.md) to describe  the input and output audio data formats. When encoding audio, the sample checks whether the input audio is in PCM format. If the input is not PCM, the sample fails because a single audio converter instance can’t transcode (decode one non-PCM format and encode to another non-PCM format).
 
 ```c++
 // Open the input file and get its data format.
@@ -69,7 +71,7 @@ if (encode) {
 
 With the output specification, the sample creates the audio converter object that it uses for encoding or decoding the audio.
 
-##### Provide a Magic Cookie
+##### Provide a magic cookie
 
 Some audio formats have a magic cookie that the converter requires to decompress audio data. A *magic cookie* refers to information in an audio file that describes its data format. An encoder produces the magic cookie, and it’s included in the same file or stream as the audio packets, in a header, or a container file format through a box.
 
@@ -100,9 +102,9 @@ if (magicCookieSize.has_value()) {
 }
 ```
 
-When encoding an audio file, the sample adds the magic cookie back to the file — after converting the audio — because it could change during the encoding process. Get the magic cookie by using the property [`kAudioConverterCompressionMagicCookie`](kaudioconvertercompressionmagiccookie.md) and then add it to the output file.
+When encoding an audio file, the sample adds the magic cookie back to the file — after converting the audio — because it could change during the encoding process. Get the magic cookie by using the property [`kAudioConverterCompressionMagicCookie`](./kaudioconvertercompressionmagiccookie.md) and then add it to the output file.
 
-##### Convert the Audio
+##### Convert the audio
 
 After the sample creates the output description, and sets the magic cookie if it’s decoding, it converts the audio by looping through the available data. The loop begins by trying to decode the available packets.
 
@@ -121,7 +123,7 @@ audioConverter.FillComplexBuffer(InputContext::InputDataProc,
 								 encode ? packetDescriptions.data() : NULL);
 ```
 
-When looping through the available packets, the sample reads packets from the input file through an input callback that wraps [`AudioFileReadPacketData(_:_:_:_:_:_:_:)`](audiofilereadpacketdata(_:_:_:_:_:_:_:).md). It’s important that `ioNumberDataPackets` and `mDataByteSize` in the buffers remain consistent. If one changes, the other must match. If the audio format calls for packet descriptions, they should also be consistent with `ioNumberDataPackets` and `mDataByteSize`.
+When looping through the available packets, the sample reads packets from the input file through an input callback that wraps [`AudioFileReadPacketData(_:_:_:_:_:_:_:)`](./audiofilereadpacketdata%28_,_,_,_,_,_,_%29.md). It’s important that `ioNumberDataPackets` and `mDataByteSize` in the buffers remain consistent. If one changes, the other must match. If the audio format calls for packet descriptions, they should also be consistent with `ioNumberDataPackets` and `mDataByteSize`.
 
 ```c++
 // Read packets from the file into the buffer, along with packet descriptions, if any exist.
@@ -150,17 +152,18 @@ if (numPackets > 0) {
 
 The loop stops when there aren’t enough packets to satisfy the input request. There are two additional cases to consider when running out of data.
 
-First, there’s no data currently available from the input stream, but data remains to convert. For example, when streaming input data in real time, the converter may not reach the end of the stream because it’s waiting to receive the next input packet. In this case, set `ioNumberDataPackets` to zero and return a custom error code. The error propagates to the call [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md), which makes it distinguishable from other errors in the conversion process, such as errors that indicate there’s no data currently available. The caller receives any remaining data the converter processes.
+First, there’s no data currently available from the input stream, but data remains to convert. For example, when streaming input data in real time, the converter may not reach the end of the stream because it’s waiting to receive the next input packet. In this case, set `ioNumberDataPackets` to zero and return a custom error code. The error propagates to the call [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md), which makes it distinguishable from other errors in the conversion process, such as errors that indicate there’s no data currently available. The caller receives any remaining data the converter processes.
 
 Second, the conversion reaches the end of the stream. In this case, set `ioNumberDataPackets` and `mDataByteSize` to zero and return `noErr`. The audio converter may call the input procedure a few times, so return zero and `noErr`.
 
 ## See Also
 
-- [func AudioConverterConvertBuffer(AudioConverterRef, UInt32, UnsafeRawPointer, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audioconverterconvertbuffer(_:_:_:_:_:).md)
+### Performing Conversions
+- [func AudioConverterConvertBuffer(AudioConverterRef, UInt32, UnsafeRawPointer, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audioconverterconvertbuffer%28_,_,_,_,_%29.md)
   Converts audio data from one linear PCM format to another.
-- [func AudioConverterFillComplexBuffer(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md)
+- [func AudioConverterFillComplexBuffer(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md)
   Converts audio data supplied by a callback function, supporting non-interleaved and packetized formats.
-- [func AudioConverterConvertComplexBuffer(AudioConverterRef, UInt32, UnsafePointer<AudioBufferList>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](audioconverterconvertcomplexbuffer(_:_:_:_:).md)
+- [func AudioConverterConvertComplexBuffer(AudioConverterRef, UInt32, UnsafePointer<AudioBufferList>, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./audioconverterconvertcomplexbuffer%28_,_,_,_%29.md)
   Converts audio data from one linear PCM format to another, where both use the same sample rate.
 
 

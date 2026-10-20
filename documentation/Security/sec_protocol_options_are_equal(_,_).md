@@ -1,7 +1,8 @@
 # sec_protocol_options_are_equal(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_options_are_equal(_ optionsA: sec_protocol_options_t, _ optionsB: sec_protocol_options_t) -> Bool
+```
+
+```c
+bool sec_protocol_options_are_equal(sec_protocol_options_t optionsA, sec_protocol_options_t optionsB);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # filter(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 
@@ -35,7 +36,7 @@ print(shortNames)
 // Prints "["Kim", "Karl"]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

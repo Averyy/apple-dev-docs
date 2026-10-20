@@ -1,7 +1,8 @@
 # matchDomains
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of domain strings.
 
@@ -19,6 +20,10 @@ An array of domain strings.
 var matchDomains: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * matchDomains;
+```
+
 #### Discussion
 
 If the destination host name of a HTTP connection shares a suffix with one of these strings then the proxy settings will be used for the HTTP connection. Otherwise the proxy settings will not be used.
@@ -27,9 +32,10 @@ This property should be used in conjunction with a split tunnel VPN, where only 
 
 ## See Also
 
-- [var excludeSimpleHostnames: Bool](neproxysettings/excludesimplehostnames.md)
+### Accessing General Proxy Properties
+- [var excludeSimpleHostnames: Bool](./excludesimplehostnames.md)
   A Boolean indicating if HTTP requests using single-label host names should be excluded from using the proxy settings.
-- [var exceptionList: [String]?](neproxysettings/exceptionlist.md)
+- [var exceptionList: [String]?](./exceptionlist.md)
   An array of domain name patterns. If the destination host name of an HTTP connection matches one of these patterns then the proxy settings will not be used for the connection.
 
 

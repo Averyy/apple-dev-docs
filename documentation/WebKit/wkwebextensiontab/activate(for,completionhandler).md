@@ -1,7 +1,8 @@
 # activate(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to activate the tab, making it frontmost.
 
@@ -15,7 +16,15 @@ Called to activate the tab, making it frontmost.
 ## Declaration
 
 ```swift
+optional func activate(for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func activate(for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) activateForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -29,7 +38,8 @@ Upon activation, the tab should become the frontmost and either be the sole sele
 
 ## See Also
 
-- [func setSelected(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensiontab/setselected(_:for:completionhandler:).md)
+### Related Documentation
+- [func setSelected(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./setselected%28_,for,completionhandler%29.md)
   Called to set the selected state of the tab.
 
 

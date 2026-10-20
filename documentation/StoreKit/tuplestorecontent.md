@@ -1,7 +1,8 @@
 # TupleStoreContent
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,18 +23,19 @@
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StoreContent](storecontent.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [StoreContent](./storecontent.md)
 
 ## See Also
 
-- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](storecontentbuilder/buildblock(_:).md)
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(first:).md)
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](storecontentbuilder/buildeither(second:).md)
-- [static func buildExpression<Content>(Content) -> some StoreContent](storecontentbuilder/buildexpression(_:).md)
-- [static func buildIf<Content>(Content?) -> Content?](storecontentbuilder/buildif(_:).md)
-- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](storecontentbuilder/buildlimitedavailability(_:).md)
+### Building store content
+- [static func buildBlock<each Content>(repeat each Content) -> TupleStoreContent<repeat each Content>](./storecontentbuilder/buildblock%28_%29.md)
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](./storecontentbuilder/buildeither%28first%29.md)
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](./storecontentbuilder/buildeither%28second%29.md)
+- [static func buildExpression<Content>(Content) -> some StoreContent](./storecontentbuilder/buildexpression%28_%29.md)
+- [static func buildIf<Content>(Content?) -> Content?](./storecontentbuilder/buildif%28_%29.md)
+- [static func buildLimitedAvailability(any StoreContent) -> some StoreContent](./storecontentbuilder/buildlimitedavailability%28_%29.md)
 
 
 ---

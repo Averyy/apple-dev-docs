@@ -1,7 +1,8 @@
 # isTransient
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates transient text selection during drag handling.
 
@@ -14,27 +15,32 @@ A Boolean value that indicates transient text selection during drag handling.
 var isTransient: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isTransient) BOOL transient;
+```
+
 ## See Also
 
-- [var affinity: NSTextSelection.Affinity](nstextselection/affinity-swift.property.md)
+### Characteristics of a selection
+- [var affinity: NSTextSelection.Affinity](./affinity-swift.property.md)
   Returns the selection affinity of the text selection.
-- [NSTextSelection.Affinity](nstextselection/affinity-swift.enum.md)
+- [NSTextSelection.Affinity](./affinity-swift.enum.md)
   Values that describe the visual location of the text cursor, or the direction of the non-anchored edge of the selection.
-- [var anchorPositionOffset: CGFloat](nstextselection/anchorpositionoffset.md)
+- [var anchorPositionOffset: CGFloat](./anchorpositionoffset.md)
   Represents the anchor position offset from the beginning of a line fragment in the visual order for the initial tap or click location.
-- [var granularity: NSTextSelection.Granularity](nstextselection/granularity-swift.property.md)
+- [var granularity: NSTextSelection.Granularity](./granularity-swift.property.md)
   The granularity of the selection.
-- [NSTextSelection.Granularity](nstextselection/granularity-swift.enum.md)
+- [NSTextSelection.Granularity](./granularity-swift.enum.md)
   Values that describe the different granularities available to make a selection.
-- [var isLogical: Bool](nstextselection/islogical.md)
+- [var isLogical: Bool](./islogical.md)
   A Boolean value that indicates whether the framework interprets the selection as logical or visual.
-- [var secondarySelectionLocation: (any NSTextLocation)?](nstextselection/secondaryselectionlocation.md)
+- [var secondarySelectionLocation: (any NSTextLocation)?](./secondaryselectionlocation.md)
   Specifies the secondary character location when user taps or clicks at a directional boundary.
-- [protocol NSTextLocation](nstextlocation.md)
+- [protocol NSTextLocation](../nstextlocation.md)
   An interface you implement that represents an abstract location inside your document’s content.
-- [var textRanges: [NSTextRange]](nstextselection/textranges.md)
+- [var textRanges: [NSTextRange]](./textranges.md)
   Represents an array of noncontiguous logical ranges in the selection.
-- [var typingAttributes: [NSAttributedString.Key : Any]](nstextselection/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]](./typingattributes.md)
   The template attributes the framework uses for characters that replace the contents of this selection.
 
 

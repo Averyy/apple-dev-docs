@@ -1,7 +1,8 @@
 # estimator
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wrapped estimator.
 
@@ -22,7 +23,8 @@ let estimator: Estimator
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<Annotation>](tabularestimatortosupervisedadaptor/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
 
 

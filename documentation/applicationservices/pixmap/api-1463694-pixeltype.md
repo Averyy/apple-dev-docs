@@ -1,9 +1,10 @@
 # pixelType
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-The storage format for a pixel image. Indexed pixels are indicated by a value of 0. Direct pixels are specified by a value of `RGBDirect`, or 16. In the `PixMap` record of the [`GDevice`](gdevice.md) structure for a direct device, this field is set to `RGBDirect` when the screen depth is set.
+The storage format for a pixel image. Indexed pixels are indicated by a value of 0. Direct pixels are specified by a value of `RGBDirect`, or 16. In the `PixMap` record of the [`GDevice`](../gdevice.md) structure for a direct device, this field is set to `RGBDirect` when the screen depth is set.
 
 **Availability**:
 - macOS 10.0+
@@ -12,6 +13,10 @@ The storage format for a pixel image. Indexed pixels are indicated by a value of
 
 ```swift
 var pixelType: Int16
+```
+
+```c
+short pixelType;
 ```
 
 

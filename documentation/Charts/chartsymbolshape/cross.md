@@ -1,7 +1,8 @@
 # cross
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cross symbol.
 
@@ -19,6 +20,8 @@ Cross symbol.
 ```swift
 static var cross: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

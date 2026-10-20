@@ -1,14 +1,15 @@
 # findAVCRequestHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn findAVCRequestHandler(IOFireWireAVCProtocolUserClient *userClient, UInt32 generation, UInt16 nodeID, IOFWSpeed speed, UInt32 handlerSearchIndex, const char *pCmdBuf, UInt32 cmdLen);
 ```
 

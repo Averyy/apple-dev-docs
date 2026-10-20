@@ -1,7 +1,8 @@
 # Register a device for update notifications
 
 **Framework**: Wallet Orders  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Registers a device to receive update notifications for an order.
 
@@ -12,7 +13,7 @@ Registers a device to receive update notifications for an order.
 
 #### Discussion
 
-When the system modifies an order, use the [`PushToken`](pushtoken.md) to send a push notification to the device. In the notification, set the push topic as the order type identifier and leave the payload empty.
+When the system modifies an order, use the [`PushToken`](./pushtoken.md) to send a push notification to the device. In the notification, set the push topic as the order type identifier and leave the payload empty.
 
 ## Endpoint
 
@@ -20,17 +21,37 @@ When the system modifies an order, use the [`PushToken`](pushtoken.md) to send a
 
 ## Parameters
 
+### Path Parameters
+
+- `orderIdentifier` (string) *(required)*: The order identifier. This value corresponds to the value of the `orderIdentifier` key of the [`Order`](./order.md).
+- `orderTypeIdentifier` (string) *(required)*: The order type identifier of the order. This value corresponds to the value of the `orderTypeIdentifier` key of the [`Order`](./order.md).
+- `deviceIdentifier` (string) *(required)*: A unique identifier for the device.
+
+### Header Parameters
+
 - `Authorization` (string) *(required)*: The authentication for an order. The scheme is `AppleOrder` with the order’s value for the `authenticationToken` key as parameter. For example, `AppleOrder {authenticationToken}`.
+
+  **Allowed Values**: `AppleOrder {authenticationToken}`
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `PushToken`
+
 The push token APNS uses to send update notifications to the device.
+
+## Responses
+
+- `200` Device Already Registered: The device is already registered for the order.
+- `201` Device Registered: The device successfully registered for the order.
+- `401` Request Not Authorized: The request isn’t authorized.
 
 ## See Also
 
-- [Unregister a device from update notifications](unregister-a-device-from-update-notifications.md)
+### Notifications
+- [Unregister a device from update notifications](./unregister-a-device-from-update-notifications.md)
   Unregisters a device from receiving update notifications for an order.
-- [object PushToken](pushtoken.md)
+- [object PushToken](./pushtoken.md)
   The push token APNS uses to send update notifications to the device.
 
 

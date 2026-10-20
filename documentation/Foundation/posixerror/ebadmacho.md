@@ -1,7 +1,8 @@
 # EBADMACHO
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Malformed Macho file.
 

@@ -1,7 +1,8 @@
 # green
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of green in the color in the sRGB color space.
 

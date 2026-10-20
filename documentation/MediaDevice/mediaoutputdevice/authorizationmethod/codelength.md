@@ -1,7 +1,8 @@
 # MediaOutputDevice.AuthorizationMethod.CodeLength
 
 **Framework**: Media Device  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents the valid lengths for an authorization code.
 
@@ -23,17 +24,17 @@ Use one of the provided static properties to specify the length of an authorizat
 ## Topics
 
 ### Type Properties
-- [static let fourCharacter: MediaOutputDevice.AuthorizationMethod.CodeLength](mediaoutputdevice/authorizationmethod/codelength/fourcharacter.md)
+- [static let fourCharacter: MediaOutputDevice.AuthorizationMethod.CodeLength](./codelength/fourcharacter.md)
   A 4-character code.
-- [static let sixCharacter: MediaOutputDevice.AuthorizationMethod.CodeLength](mediaoutputdevice/authorizationmethod/codelength/sixcharacter.md)
+- [static let sixCharacter: MediaOutputDevice.AuthorizationMethod.CodeLength](./codelength/sixcharacter.md)
   A 6-character code.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

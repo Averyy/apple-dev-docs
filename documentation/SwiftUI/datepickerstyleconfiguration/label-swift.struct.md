@@ -1,7 +1,8 @@
 # DatePickerStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a `DatePicker`.
 
@@ -23,13 +24,14 @@ A type-erased label of a `DatePicker`.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: DatePickerStyleConfiguration.Label](datepickerstyleconfiguration/label-swift.property.md)
+### Labeling the date picker
+- [let label: DatePickerStyleConfiguration.Label](./label-swift.property.md)
   A description of the `DatePicker`.
-- [var displayedComponents: DatePickerComponents](datepickerstyleconfiguration/displayedcomponents.md)
+- [var displayedComponents: DatePickerComponents](./displayedcomponents.md)
   The date components that the user is able to view and edit.
 
 

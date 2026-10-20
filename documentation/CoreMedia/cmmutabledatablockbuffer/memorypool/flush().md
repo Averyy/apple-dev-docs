@@ -1,7 +1,8 @@
 # flush()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Release all memory that the pool was waiting to deallocate.
 

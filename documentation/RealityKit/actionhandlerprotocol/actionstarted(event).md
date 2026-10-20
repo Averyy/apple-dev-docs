@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action started events.
@@ -23,6 +24,13 @@ mutating func actionStarted(event: Self.EventType)
 #### Discussion
 
 A start event is raised when the animation time first falls within an event’s defined time interval.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionStarted(event: Self.EventType)](./actionstarted%28event%29-75a3q.md)
+  The function used to respond to action started events.
+- [func actionStarted(event: Self.EventType)](./actionstarted%28event%29-7h84p.md)
 
 
 ---

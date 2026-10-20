@@ -1,7 +1,8 @@
 # Package.Dependency.RegistryRequirement.exact(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A requirement based on an exact version.
 

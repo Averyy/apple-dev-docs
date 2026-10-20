@@ -1,7 +1,8 @@
 # init(Version:IntendedUsage:SenderEmailLen:SenderEmail:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.0+

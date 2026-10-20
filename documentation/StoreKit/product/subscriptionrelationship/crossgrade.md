@@ -1,7 +1,8 @@
 # crossgrade
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -20,10 +21,11 @@ static let crossgrade: Product.SubscriptionRelationship
 
 ## See Also
 
-- [static let all: Product.SubscriptionRelationship](product/subscriptionrelationship/all.md)
-- [static let current: Product.SubscriptionRelationship](product/subscriptionrelationship/current.md)
-- [static let downgrade: Product.SubscriptionRelationship](product/subscriptionrelationship/downgrade.md)
-- [static let upgrade: Product.SubscriptionRelationship](product/subscriptionrelationship/upgrade.md)
+### Getting subscription relationships
+- [static let all: Product.SubscriptionRelationship](./all.md)
+- [static let current: Product.SubscriptionRelationship](./current.md)
+- [static let downgrade: Product.SubscriptionRelationship](./downgrade.md)
+- [static let upgrade: Product.SubscriptionRelationship](./upgrade.md)
 
 
 ---

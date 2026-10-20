@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](mltensor/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   The custom mirror for `MLTensor`.
 
 

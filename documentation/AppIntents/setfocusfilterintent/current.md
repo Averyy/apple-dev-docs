@@ -1,7 +1,8 @@
 # current
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ static var current: Self { get async throws }
 
 ## See Also
 
-- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](setfocusfilterintent/suggestedfocusfilters(for:).md)
+### Getting the current app configuration
+- [static func suggestedFocusFilters(for: FocusFilterSuggestionContext) async -> [Self]](./suggestedfocusfilters%28for%29.md)
   You can implement this method to return a list of suggested focus configurations. This is useful when the suggested focus configurations are different from the configuration when the focus is turned off.
 
 

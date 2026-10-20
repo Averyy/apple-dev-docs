@@ -1,7 +1,8 @@
 # HMCharacteristicValueRemoteKey
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for the state of the remote.
 
@@ -19,55 +20,59 @@ Values for the state of the remote.
 enum HMCharacteristicValueRemoteKey
 ```
 
+```c
+enum HMCharacteristicValueRemoteKey : NSInteger;
+```
+
 ## Topics
 
 ### Remote states
-- [HMCharacteristicValueRemoteKey.arrowDown](hmcharacteristicvalueremotekey/arrowdown.md)
+- [HMCharacteristicValueRemoteKey.arrowDown](./hmcharacteristicvalueremotekey/arrowdown.md)
   A value that represents the down-arrow key.
-- [HMCharacteristicValueRemoteKey.arrowLeft](hmcharacteristicvalueremotekey/arrowleft.md)
+- [HMCharacteristicValueRemoteKey.arrowLeft](./hmcharacteristicvalueremotekey/arrowleft.md)
   A value that represents the left arrow key.
-- [HMCharacteristicValueRemoteKey.arrowRight](hmcharacteristicvalueremotekey/arrowright.md)
+- [HMCharacteristicValueRemoteKey.arrowRight](./hmcharacteristicvalueremotekey/arrowright.md)
   A value that represents the right arrow key.
-- [HMCharacteristicValueRemoteKey.arrowUp](hmcharacteristicvalueremotekey/arrowup.md)
+- [HMCharacteristicValueRemoteKey.arrowUp](./hmcharacteristicvalueremotekey/arrowup.md)
   A value that represents the up-arrow key.
-- [HMCharacteristicValueRemoteKey.back](hmcharacteristicvalueremotekey/back.md)
+- [HMCharacteristicValueRemoteKey.back](./hmcharacteristicvalueremotekey/back.md)
   A value that represents the back key.
-- [HMCharacteristicValueRemoteKey.exit](hmcharacteristicvalueremotekey/exit.md)
+- [HMCharacteristicValueRemoteKey.exit](./hmcharacteristicvalueremotekey/exit.md)
   A value that represents the exit key.
-- [HMCharacteristicValueRemoteKey.fastForward](hmcharacteristicvalueremotekey/fastforward.md)
+- [HMCharacteristicValueRemoteKey.fastForward](./hmcharacteristicvalueremotekey/fastforward.md)
   A value that represents the fast forward key.
-- [HMCharacteristicValueRemoteKey.home](hmcharacteristicvalueremotekey/home.md)
+- [HMCharacteristicValueRemoteKey.home](./hmcharacteristicvalueremotekey/home.md)
   A value that represents the home key.
-- [HMCharacteristicValueRemoteKey.info](hmcharacteristicvalueremotekey/info.md)
+- [HMCharacteristicValueRemoteKey.info](./hmcharacteristicvalueremotekey/info.md)
   A value that represents the info key.
-- [HMCharacteristicValueRemoteKey.menu](hmcharacteristicvalueremotekey/menu.md)
+- [HMCharacteristicValueRemoteKey.menu](./hmcharacteristicvalueremotekey/menu.md)
   A value that represents the menu key.
-- [HMCharacteristicValueRemoteKey.nextTrack](hmcharacteristicvalueremotekey/nexttrack.md)
+- [HMCharacteristicValueRemoteKey.nextTrack](./hmcharacteristicvalueremotekey/nexttrack.md)
   A value that represents the next track key.
-- [HMCharacteristicValueRemoteKey.pause](hmcharacteristicvalueremotekey/pause.md)
+- [HMCharacteristicValueRemoteKey.pause](./hmcharacteristicvalueremotekey/pause.md)
   A value that represents the pause key.
-- [HMCharacteristicValueRemoteKey.play](hmcharacteristicvalueremotekey/play.md)
+- [HMCharacteristicValueRemoteKey.play](./hmcharacteristicvalueremotekey/play.md)
   A value that represents the play key.
-- [HMCharacteristicValueRemoteKey.playPause](hmcharacteristicvalueremotekey/playpause.md)
+- [HMCharacteristicValueRemoteKey.playPause](./hmcharacteristicvalueremotekey/playpause.md)
   A value that represents the play pause key.
-- [HMCharacteristicValueRemoteKey.previousTrack](hmcharacteristicvalueremotekey/previoustrack.md)
+- [HMCharacteristicValueRemoteKey.previousTrack](./hmcharacteristicvalueremotekey/previoustrack.md)
   A value that represents the previous track key.
-- [HMCharacteristicValueRemoteKey.rewind](hmcharacteristicvalueremotekey/rewind.md)
+- [HMCharacteristicValueRemoteKey.rewind](./hmcharacteristicvalueremotekey/rewind.md)
   A value that represents the rewind key.
-- [HMCharacteristicValueRemoteKey.select](hmcharacteristicvalueremotekey/select.md)
+- [HMCharacteristicValueRemoteKey.select](./hmcharacteristicvalueremotekey/select.md)
   A value that represents the select key.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueremotekey/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueremotekey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

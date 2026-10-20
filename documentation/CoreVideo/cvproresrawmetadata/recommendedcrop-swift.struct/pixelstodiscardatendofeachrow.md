@@ -1,7 +1,8 @@
 # pixelsToDiscardAtEndOfEachRow
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixels to discard from the end (right) of each row of the image.
 

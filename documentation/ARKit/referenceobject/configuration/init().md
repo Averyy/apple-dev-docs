@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a reference object configuration.
 

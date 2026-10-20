@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two intervals.
 

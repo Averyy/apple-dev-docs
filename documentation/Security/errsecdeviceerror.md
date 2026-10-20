@@ -1,7 +1,8 @@
 # errSecDeviceError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A device error was encountered.
 
@@ -18,6 +19,10 @@ A device error was encountered.
 
 ```swift
 var errSecDeviceError: OSStatus { get }
+```
+
+```c
+errSecDeviceError
 ```
 
 

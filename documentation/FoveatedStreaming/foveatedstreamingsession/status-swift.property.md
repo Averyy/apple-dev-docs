@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connection status of the session.
 
@@ -17,7 +18,7 @@ final var status: FoveatedStreamingSession.Status { get }
 
 #### Discussion
 
-Observe this property to monitor the session’s connection status, as well as obtain disconnection reasons. The default value is [`FoveatedStreamingSession.Status.initialized`](foveatedstreamingsession/status-swift.enum/initialized.md).
+Observe this property to monitor the session’s connection status, as well as obtain disconnection reasons. The default value is [`FoveatedStreamingSession.Status.initialized`](./status-swift.enum/initialized.md).
 
 For example, you can display a view that’s only visible when the session is fully connected:
 

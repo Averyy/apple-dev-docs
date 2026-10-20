@@ -1,7 +1,8 @@
 # RCSFileTransferMetadata.Disposition
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the disposition of the file, indicating how a receiving app should handle it.
 
@@ -17,24 +18,25 @@ enum Disposition
 ## Topics
 
 ### Working with dispositions
-- [RCSFileTransferMetadata.Disposition.attachment](rcsfiletransfermetadata/disposition-swift.enum/attachment.md)
+- [RCSFileTransferMetadata.Disposition.attachment](./disposition-swift.enum/attachment.md)
   The attachment disposition, directing the receiving app to not automatically render the file.
-- [RCSFileTransferMetadata.Disposition.render](rcsfiletransfermetadata/disposition-swift.enum/render.md)
+- [RCSFileTransferMetadata.Disposition.render](./disposition-swift.enum/render.md)
   The render disposition, directing the receiving app to render the file automatically.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var disposition: RCSFileTransferMetadata.Disposition?](rcsfiletransfermetadata/disposition-swift.property.md)
+### Working with file disposition
+- [var disposition: RCSFileTransferMetadata.Disposition?](./disposition-swift.property.md)
   The disposition of the file, indicating how a recipient needs to handle the file.
 
 

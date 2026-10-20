@@ -1,6 +1,7 @@
 # Subtitle track header size and placement
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Specify the size and placement of subtitles.
 
@@ -26,17 +27,18 @@ Alternatively, if the Vertical Placement flag (`0x20000000`) display flag of the
 
 ## See Also
 
-- [Subtitle sample description](subtitle_sample_description.md)
+### Storing subtitles
+- [Subtitle sample description](./subtitle_sample_description.md)
   An atom that defines how to interpret subtitle media data.
-- [Font table atom ('ftab')](font_table_atom.md)
+- [Font table atom ('ftab')](./font_table_atom.md)
   An atom that specifies the font used to display the subtitle.
-- [Subtitle sample data](subtitle_sample_data.md)
+- [Subtitle sample data](./subtitle_sample_data.md)
   An atom that contains subtitle sample data.
-- [Subtitle style atom ('styl')](subtitle_style_atom.md)
+- [Subtitle style atom ('styl')](./subtitle_style_atom.md)
   An atom that specifies changes to the appearance of a subtitle.
-- [Text box atom ('tbox')](text_box_atom.md)
+- [Text box atom ('tbox')](./text_box_atom.md)
   An atom that defines a text box for a subtitle sample.
-- [Referencing a related forced subtitle track](referencing_a_related_forced_subtitle_track.md)
+- [Referencing a related forced subtitle track](./referencing_a_related_forced_subtitle_track.md)
   Prevent overlapping a timed subtitle track with a forced subtitle track.
 
 

@@ -1,7 +1,8 @@
 # BEContextMenuConfiguration
 
 **Framework**: BrowserEngineKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defers presentation of a contextual menu.
 
@@ -16,32 +17,36 @@ An object that defers presentation of a contextual menu.
 class BEContextMenuConfiguration
 ```
 
+```objc
+@interface BEContextMenuConfiguration : UIContextMenuConfiguration
+```
+
 #### Overview
 
-Return an instance of this class when you don’t yet know whether a contextual menu is presentable, or don’t have the menu items available when the system calls your interaction delegate’s [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](https://developer.apple.com/documentation/uikit/uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:)) method. Once you have the real configuration, call [`fulfill(using:)`](becontextmenuconfiguration/fulfill(using:).md) with it, or pass `nil` to indicate that no menu presentation is possible.
+Return an instance of this class when you don’t yet know whether a contextual menu is presentable, or don’t have the menu items available when the system calls your interaction delegate’s [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](../UIKit/uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md) method. Once you have the real configuration, call [`fulfill(using:)`](./becontextmenuconfiguration/fulfill%28using%29.md) with it, or pass `nil` to indicate that no menu presentation is possible.
 
-> **Note**:  In most situations, use [`UIDeferredMenuElement`](https://developer.apple.com/documentation/uikit/uideferredmenuelement) when you don’t have the content of a contextual menu element at the time the system asks your delegate and you need to calculate it asynchronously. Use this class instead when the calculation involves a short deferral, for example, an XPC call to a browser extension.
+> **Note**:  In most situations, use [`UIDeferredMenuElement`](../UIKit/uideferredmenuelement.md) when you don’t have the content of a contextual menu element at the time the system asks your delegate and you need to calculate it asynchronously. Use this class instead when the calculation involves a short deferral, for example, an XPC call to a browser extension.
 
 ## Topics
 
 ### Creating a context menu configuration
-- [init()](becontextmenuconfiguration/init.md)
+- [init()](./becontextmenuconfiguration/init%28%29.md)
   Creates a context menu configuration.
 ### Fulfilling the configuration
-- [func fulfill(using: UIContextMenuConfiguration?) -> Bool](becontextmenuconfiguration/fulfill(using:).md)
+- [func fulfill(using: UIContextMenuConfiguration?) -> Bool](./becontextmenuconfiguration/fulfill%28using%29.md)
   Supplies a contextual menu configuration to the system.
 
 ## Relationships
 
 ### Inherits From
-- [UIContextMenuConfiguration](../uikit/uicontextmenuconfiguration.md)
+- [UIContextMenuConfiguration](../UIKit/uicontextmenuconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

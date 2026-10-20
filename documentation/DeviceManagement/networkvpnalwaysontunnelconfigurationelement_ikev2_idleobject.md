@@ -1,7 +1,8 @@
 # NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system handles idle VPN connections.
 
@@ -13,24 +14,29 @@ Specifies details about how the system handles idle VPN connections.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject
 ```
 
 ## Properties
 
-- `DeadPeerDetectionRate` (string): One of the following: - `None`: No keepalive.
-- `Low`: Send keepalive every 30 minutes.
-- `Medium`: Send keepalive every 10 minutes.
-- `High`: Send keepalive every 1 minute.
+- `DeadPeerDetectionRate` (string): One of the following:
+
+  - `None`: No keepalive.
+  - `Low`: Send keepalive every 30 minutes.
+  - `Medium`: Send keepalive every 10 minutes.
+  - `High`: Send keepalive every 1 minute.
+
+  **Default**: `Medium`; **Allowed Values**: `None`, `Low`, `Medium`, `High`
 
 ## See Also
 
-- [object NetworkVPNAlwaysOnSecurityAssociationParametersObject](networkvpnalwaysonsecurityassociationparametersobject.md)
+### Objects
+- [object NetworkVPNAlwaysOnSecurityAssociationParametersObject](./networkvpnalwaysonsecurityassociationparametersobject.md)
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_AuthenticationObject](networkvpnalwaysontunnelconfigurationelement_ikev2_authenticationobject.md)
+- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_AuthenticationObject](./networkvpnalwaysontunnelconfigurationelement_ikev2_authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject.md)
+- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](./networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
 
 

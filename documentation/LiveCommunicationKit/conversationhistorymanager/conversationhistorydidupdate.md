@@ -1,7 +1,8 @@
 # ConversationHistoryManager.ConversationHistoryDidUpdate
 
 **Framework**: LiveCommunicationKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message you can observe to receive conversation history updates if your app is the default dialer app.
 
@@ -18,19 +19,19 @@ struct ConversationHistoryDidUpdate
 
 ## Mentions
 
-- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+- [Preparing your app to be the default dialer app](../preparing-your-app-to-be-the-default-dialer-app.md)
 
 ## Topics
 
 ### Creating the message
-- [init()](conversationhistorymanager/conversationhistorydidupdate/init.md)
+- [init()](./conversationhistorydidupdate/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

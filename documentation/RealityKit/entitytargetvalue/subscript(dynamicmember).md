@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 18.0+
@@ -18,9 +19,10 @@ subscript<T>(dynamicMember keyPath: KeyPath<Value, T>) -> T { get }
 
 ## See Also
 
-- [var entity: Entity](entitytargetvalue/entity.md)
+### Accessing gesture info
+- [var entity: Entity](./entity.md)
   The targeted entity.
-- [var gestureValue: Value](entitytargetvalue/gesturevalue.md)
+- [var gestureValue: Value](./gesturevalue.md)
   The gesture value updated by the gesture.
 
 

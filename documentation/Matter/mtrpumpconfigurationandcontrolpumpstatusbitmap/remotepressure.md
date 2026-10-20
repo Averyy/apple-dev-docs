@@ -1,7 +1,8 @@
 # remotePressure
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 static var remotePressure: MTRPumpConfigurationAndControlPumpStatusBitmap { get }
+```
+
+```c
+MTRPumpConfigurationAndControlPumpStatusBitmapRemotePressure
 ```
 
 

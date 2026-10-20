@@ -1,14 +1,15 @@
 # FindPCICapability_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t FindPCICapability_Invoke(const IORPC rpc, OSMetaClassBase *target, FindPCICapability_Handler func);
 ```
 

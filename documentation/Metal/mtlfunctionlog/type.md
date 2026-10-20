@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of message that was logged.
@@ -20,9 +21,14 @@ The type of message that was logged.
 var type: MTLFunctionLogType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLFunctionLogType type;
+```
+
 ## See Also
 
-- [enum MTLFunctionLogType](mtlfunctionlogtype.md)
+### Getting the log messsage
+- [enum MTLFunctionLogType](../mtlfunctionlogtype.md)
   Options for different kinds of function logs.
 
 

@@ -1,7 +1,8 @@
 # SRDeletionRecord
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the reason the framework deletes samples.
 
@@ -16,11 +17,15 @@ An object that describes the reason the framework deletes samples.
 class SRDeletionRecord
 ```
 
+```objc
+@interface SRDeletionRecord : NSObject
+```
+
 #### Overview
 
-When there are gaps in a recorded sensor’s data, deletion records account for the occasions when the framework deliberately removes the records. A deletion record specifies the time range when records are unavailable (see [`startTime`](srdeletionrecord/starttime.md) and [`endTime`](srdeletionrecord/endtime.md)), and the [`reason`](srdeletionrecord/reason.md) for removal.
+When there are gaps in a recorded sensor’s data, deletion records account for the occasions when the framework deliberately removes the records. A deletion record specifies the time range when records are unavailable (see [`startTime`](./srdeletionrecord/starttime.md) and [`endTime`](./srdeletionrecord/endtime.md)), and the [`reason`](./srdeletionrecord/reason.md) for removal.
 
-To access deletion records for a particular sensor, create a new reader by applying the `sr_sensorForDeletionRecordsFromSensor()` extension of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) to the source sensor.
+To access deletion records for a particular sensor, create a new reader by applying the `sr_sensorForDeletionRecordsFromSensor()` extension of [`NSString`](../Foundation/nsstring.md) to the source sensor.
 
 ```swift
 let deletionRecordsReader = SRSensorReader(sensor: ambientLightSensor.rawValue.sr_sensorForDeletionRecordsFromSensor())
@@ -30,31 +35,31 @@ deletionRecordsReader.delegate = myAmbientLightDeletionRecordsDelegate
 ## Topics
 
 ### Accessing the Deletion Reason
-- [var reason: SRDeletionReason](srdeletionrecord/reason.md)
+- [var reason: SRDeletionReason](./srdeletionrecord/reason.md)
   The reason the framework deletes samples.
-- [enum SRDeletionReason](srdeletionreason.md)
+- [enum SRDeletionReason](./srdeletionreason.md)
   Reasons that the framework deletes samples.
 ### Accessing the Deletion Time
-- [var startTime: SRAbsoluteTime](srdeletionrecord/starttime.md)
+- [var startTime: SRAbsoluteTime](./srdeletionrecord/starttime.md)
   The time the framework begins deleting samples.
-- [var endTime: SRAbsoluteTime](srdeletionrecord/endtime.md)
+- [var endTime: SRAbsoluteTime](./srdeletionrecord/endtime.md)
   The time the framework finishes deleting samples.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

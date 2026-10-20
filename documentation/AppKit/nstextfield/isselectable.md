@@ -1,12 +1,13 @@
 # isSelectable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the user can select the content of the text field.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that determines whether the user can select the content of the t
 var isSelectable: Bool { get set }
 ```
 
+```objc
+@property (getter=isSelectable) BOOL selectable;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field becomes selectable but not editable. Use [`isEditable`](nstextfield/iseditable.md) to make the text field selectable and editable. If [`false`](https://developer.apple.com/documentation/swift/false), the text is neither editable nor selectable.
+If [`true`](../../Swift/true.md), the text field becomes selectable but not editable. Use [`isEditable`](./iseditable.md) to make the text field selectable and editable. If [`false`](../../Swift/false.md), the text is neither editable nor selectable.
 
 ## See Also
 
-- [var isEditable: Bool](nstextfield/iseditable.md)
+### Controlling selection and editing
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that controls whether the user can edit the value in the text field.
 
 

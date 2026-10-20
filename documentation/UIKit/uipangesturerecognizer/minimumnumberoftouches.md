@@ -1,7 +1,8 @@
 # minimumNumberOfTouches
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of fingers that can touch the view for gesture recognition.
 
@@ -17,9 +18,13 @@ The minimum number of fingers that can touch the view for gesture recognition.
 var minimumNumberOfTouches: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger minimumNumberOfTouches;
+```
+
 ## Mentions
 
-- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pan gestures](../handling-pan-gestures.md)
 
 #### Discussion
 
@@ -27,7 +32,8 @@ The default value is `1`.
 
 ## See Also
 
-- [var maximumNumberOfTouches: Int](uipangesturerecognizer/maximumnumberoftouches.md)
+### Configuring the gesture recognizer
+- [var maximumNumberOfTouches: Int](./maximumnumberoftouches.md)
   The maximum number of fingers that can touch the view for gesture recognition.
 
 

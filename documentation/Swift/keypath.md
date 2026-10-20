@@ -1,7 +1,8 @@
 # KeyPath
 
 **Framework**: Swift  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A key path from a specific root type to a specific resulting value type.
 
@@ -22,24 +23,25 @@ class KeyPath<Root, Value>
 
 #### Overview
 
-The most common way to make an instance of this type is by using a key-path expression like `\SomeClass.someProperty`. For more information, see [`Key-Path Expressions`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Expressions.html#ID563) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+The most common way to make an instance of this type is by using a key-path expression like `\SomeClass.someProperty`. For more information, see [Key-Path Expressions](https://docs.swift.org/swift-book/ReferenceManual/Expressions.html#ID563) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 ## Relationships
 
 ### Inherits From
-- [PartialKeyPath](partialkeypath.md)
+- [PartialKeyPath](./partialkeypath.md)
 ### Inherited By
-- [WritableKeyPath](writablekeypath.md)
+- [WritableKeyPath](./writablekeypath.md)
 ### Conforms To
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Hashable](./hashable.md)
 
 ## See Also
 
-- [class PartialKeyPath](partialkeypath.md)
+### Key Paths
+- [class PartialKeyPath](./partialkeypath.md)
   A partially type-erased key path, from a concrete root type to any resulting value type.
-- [class AnyKeyPath](anykeypath.md)
+- [class AnyKeyPath](./anykeypath.md)
   A type-erased key path, from any root type to any resulting value type.
 
 

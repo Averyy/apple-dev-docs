@@ -1,7 +1,8 @@
 # Date
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A specific point in time, independent of any calendar or time zone.
 
@@ -22,169 +23,170 @@ struct Date
 
 ## Mentions
 
-- [Encoding and Decoding Custom Types](encoding-and-decoding-custom-types.md)
+- [Encoding and Decoding Custom Types](./encoding-and-decoding-custom-types.md)
 
 #### Overview
 
-A [`Date`](date.md) value encapsulates a single point in time, independent of any particular calendrical system or time zone. Date values represent a time interval relative to an absolute reference date.
+A [`Date`](./date.md) value encapsulates a single point in time, independent of any particular calendrical system or time zone. Date values represent a time interval relative to an absolute reference date.
 
-The [`Date`](date.md) structure provides methods for comparing dates, calculating the time interval between two dates, and creating a new date from a time interval relative to another date. Use date values in conjunction with [`DateFormatter`](dateformatter.md) instances to create localized representations of dates and times and with [`Calendar`](calendar.md) instances to perform calendar arithmetic.
+The [`Date`](./date.md) structure provides methods for comparing dates, calculating the time interval between two dates, and creating a new date from a time interval relative to another date. Use date values in conjunction with [`DateFormatter`](./dateformatter.md) instances to create localized representations of dates and times and with [`Calendar`](./calendar.md) instances to perform calendar arithmetic.
 
-[`Date`](date.md) bridges to the [`NSDate`](nsdate.md) class. You can use these interchangeably in code that interacts with Objective-C APIs.
+[`Date`](./date.md) bridges to the [`NSDate`](./nsdate.md) class. You can use these interchangeably in code that interacts with Objective-C APIs.
 
 ## Topics
 
 ### Creating a Date
-- [init()](date/init.md)
+- [init()](./date/init%28%29.md)
   Creates a date value initialized to the current date and time.
-- [init(timeIntervalSinceNow: TimeInterval)](date/init(timeintervalsincenow:).md)
+- [init(timeIntervalSinceNow: TimeInterval)](./date/init%28timeintervalsincenow%29.md)
   Creates a date value initialized relative to the current date and time by a given number of seconds.
-- [init(timeInterval: TimeInterval, since: Date)](date/init(timeinterval:since:).md)
+- [init(timeInterval: TimeInterval, since: Date)](./date/init%28timeinterval,since%29.md)
   Creates a date value initialized relative to another given date by a given number of seconds.
-- [init(timeIntervalSinceReferenceDate: TimeInterval)](date/init(timeintervalsincereferencedate:).md)
+- [init(timeIntervalSinceReferenceDate: TimeInterval)](./date/init%28timeintervalsincereferencedate%29.md)
   Creates a date value initialized relative to 00:00:00 UTC on 1 January 2001 by a given number of seconds.
-- [init(timeIntervalSince1970: TimeInterval)](date/init(timeintervalsince1970:).md)
+- [init(timeIntervalSince1970: TimeInterval)](./date/init%28timeintervalsince1970%29.md)
   Creates a date value initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 ### Retrieving the Current Date
-- [static var now: Date](date/now.md)
+- [static var now: Date](./date/now.md)
   Returns a date instance that represents the current date and time, at the moment of access.
 ### Getting Temporal Boundaries
-- [static let distantFuture: Date](date/distantfuture.md)
+- [static let distantFuture: Date](./date/distantfuture.md)
   A date value representing a date in the distant future.
-- [static let distantPast: Date](date/distantpast.md)
+- [static let distantPast: Date](./date/distantpast.md)
   A date value representing a date in the distant past.
 ### Comparing Dates
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](./date/eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
-- [static func > (Date, Date) -> Bool](date/_(_:_:)-880ns.md)
+- [static func > (Date, Date) -> Bool](./date/op%28_,_%29-880ns.md)
   Returns true if the left hand `Date` is later in time than the right hand `Date`.
-- [static func >= (Date, Date) -> Bool](date/_=(_:_:)-9dues.md)
+- [static func >= (Date, Date) -> Bool](./date/opeq%28_,_%29-9dues.md)
   Returns true if the left hand `Date` is later in time than or equal to the right hand `Date`.
-- [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
+- [static func < (Date, Date) -> Bool](./date/op%28_,_%29-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
-- [static func <= (Date, Date) -> Bool](date/_=(_:_:)-9co12.md)
+- [static func <= (Date, Date) -> Bool](./date/opeq%28_,_%29-9co12.md)
   Returns true if the left hand `Date` is earlier in time than or equal to the right hand `Date`.
-- [func compare(Date) -> ComparisonResult](date/compare(_:).md)
+- [func compare(Date) -> ComparisonResult](./date/compare%28_%29.md)
   Compares another date to this one.
-- [func distance(to: Date) -> TimeInterval](date/distance(to:).md)
+- [func distance(to: Date) -> TimeInterval](./date/distance%28to%29.md)
   Returns the distance from this date to another date, specified as a time interval.
 ### Getting Time Intervals
-- [func timeIntervalSince(Date) -> TimeInterval](date/timeintervalsince(_:).md)
+- [func timeIntervalSince(Date) -> TimeInterval](./date/timeintervalsince%28_%29.md)
   Returns the interval between this date and another given date.
-- [var timeIntervalSinceNow: TimeInterval](date/timeintervalsincenow.md)
+- [var timeIntervalSinceNow: TimeInterval](./date/timeintervalsincenow.md)
   The time interval between the date value and the current date and time.
-- [var timeIntervalSinceReferenceDate: TimeInterval](date/timeintervalsincereferencedate-swift.property.md)
+- [var timeIntervalSinceReferenceDate: TimeInterval](./date/timeintervalsincereferencedate-swift.property.md)
   The interval between the date value and 00:00:00 UTC on 1 January 2001.
-- [var timeIntervalSince1970: TimeInterval](date/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./date/timeintervalsince1970.md)
   The interval between the date value and 00:00:00 UTC on 1 January 1970.
-- [static var timeIntervalSinceReferenceDate: TimeInterval](date/timeintervalsincereferencedate-swift.type.property.md)
+- [static var timeIntervalSinceReferenceDate: TimeInterval](./date/timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
-- [static let timeIntervalBetween1970AndReferenceDate: Double](date/timeintervalbetween1970andreferencedate.md)
+- [static let timeIntervalBetween1970AndReferenceDate: Double](./date/timeintervalbetween1970andreferencedate.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
-- [typealias Stride](date/stride.md)
+- [typealias Stride](./date/stride.md)
   A type alias to define the stride of a date.
 ### Adding or Subtracting a Time Interval
-- [func addTimeInterval(TimeInterval)](date/addtimeinterval(_:).md)
+- [func addTimeInterval(TimeInterval)](./date/addtimeinterval%28_%29.md)
   Adds a time interval to this date.
-- [func addingTimeInterval(TimeInterval) -> Date](date/addingtimeinterval(_:).md)
+- [func addingTimeInterval(TimeInterval) -> Date](./date/addingtimeinterval%28_%29.md)
   Creates a new date value by adding a time interval to this date.
-- [func advanced(by: TimeInterval) -> Date](date/advanced(by:).md)
+- [func advanced(by: TimeInterval) -> Date](./date/advanced%28by%29.md)
   Returns a date offset the specified time interval from this date.
-- [static func + (Date, TimeInterval) -> Date](date/+(_:_:).md)
+- [static func + (Date, TimeInterval) -> Date](./date/plus%28_,_%29.md)
   Returns a date with a specified amount of time added to it.
-- [static func += (inout Date, TimeInterval)](date/+=(_:_:).md)
+- [static func += (inout Date, TimeInterval)](./date/pluseq%28_,_%29.md)
   Adds a time interval to a date.
-- [static func - (Date, TimeInterval) -> Date](date/-(_:_:).md)
+- [static func - (Date, TimeInterval) -> Date](./date/minus%28_,_%29.md)
   Returns a `Date` with a specified amount of time subtracted from it.
-- [static func -= (inout Date, TimeInterval)](date/-=(_:_:).md)
+- [static func -= (inout Date, TimeInterval)](./date/minuseq%28_,_%29.md)
   Subtract a `TimeInterval` from a `Date`.
 ### Formatting a Date
-- [func formatted() -> String](date/formatted.md)
+- [func formatted() -> String](./date/formatted%28%29.md)
   Generates a locale-aware string representation of a date using the default date format style.
-- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](date/formatted(date:time:).md)
+- [func formatted(date: Date.FormatStyle.DateStyle, time: Date.FormatStyle.TimeStyle) -> String](./date/formatted%28date,time%29.md)
   Generates a locale-aware string representation of a date using specified date and time format styles.
-- [func formatted<F>(F) -> F.FormatOutput](date/formatted(_:).md)
+- [func formatted<F>(F) -> F.FormatOutput](./date/formatted%28_%29.md)
   Generates a locale-aware string representation of a date using the specified date format style.
-- [struct FormatStyle](date/formatstyle.md)
+- [struct FormatStyle](./date/formatstyle.md)
   A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./date/relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./date/intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](date/iso8601format(_:).md)
+- [func ISO8601Format(Date.ISO8601FormatStyle) -> String](./date/iso8601format%28_%29.md)
   Generates a locale-aware string representation of a date using the ISO 8601 date format.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./date/iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
 ### Describing Dates
-- [var description: String](date/description.md)
-  The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [`NSDateFormatter`](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [`Data Formatting Guide`](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
-- [func description(with: Locale?) -> String](date/description(with:).md)
+- [var description: String](./date/description.md)
+  The representation is useful for debugging only. There are a number of options to acquire a formatted string for a date including: date formatters (see [NSDateFormatter](https://developer.apple.com//apple_ref/occ/cl/NSDateFormatter) and [Data Formatting Guide](https://developer.apple.com//apple_ref/doc/uid/10000029i)), and the `Date` function `description(locale:)`.
+- [func description(with: Locale?) -> String](./date/description%28with%29.md)
   Returns a string representation of the receiver using the given locale.
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](date/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./date/customplaygroundquicklook.md)
   A custom playground Quick Look for the date.
 ### Working with notification messages
-- [struct SystemClockDidChangeMessage](date/systemclockdidchangemessage.md)
+- [struct SystemClockDidChangeMessage](./date/systemclockdidchangemessage.md)
   A message the system sends when the system clock changes.
 ### Using Reference Types
-- [class NSDate](nsdate.md)
+- [class NSDate](./nsdate.md)
   A representation of a specific point in time, independent of any calendar or time zone.
 ### Structures
-- [struct AnchoredRelativeFormatStyle](date/anchoredrelativeformatstyle.md)
+- [struct AnchoredRelativeFormatStyle](./date/anchoredrelativeformatstyle.md)
   A relative format style that is detached from the system time, and instead formats an anchor date relative to the format input.
-- [struct AttributedStyle](date/attributedstyle.md)
+- [struct AttributedStyle](./date/attributedstyle.md)
   A structure that creates a locale-appropriate attributed string representation of a date instance.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](./date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
-- [struct FormatString](date/formatstring.md)
+- [struct FormatString](./date/formatstring.md)
   A type that represents a fixed date format string using string interpolation.
-- [struct HTTPFormatStyle](date/httpformatstyle.md)
-  Options for generating and parsing string representations of dates following the HTTP date format from [`RFC 9110 § 5.6.7`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc9110.html#http.date).
-- [struct ParseStrategy](date/parsestrategy.md)
+- [struct HTTPFormatStyle](./date/httpformatstyle.md)
+  Options for generating and parsing string representations of dates following the HTTP date format from [RFC 9110 § 5.6.7](https://www.rfc-editor.org/rfc/rfc9110.html#http.date).
+- [struct ParseStrategy](./date/parsestrategy.md)
   Options for parsing string representations of dates to create a `Date` instance.
-- [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [struct VerbatimFormatStyle](./date/verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
 ### Initializers
-- [init<T>(T.ParseInput, strategy: T) throws](date/init(_:strategy:)-2oqi.md)
-- [init<T, Value>(Value, strategy: T) throws](date/init(_:strategy:)-6cq9s.md)
+- [init<T>(T.ParseInput, strategy: T) throws](./date/init%28_,strategy%29-2oqi.md)
+- [init<T, Value>(Value, strategy: T) throws](./date/init%28_,strategy%29-6cq9s.md)
 ### Type Aliases
-- [typealias Specification](date/specification.md)
-- [typealias UnwrappedType](date/unwrappedtype.md)
-- [typealias ValueType](date/valuetype.md)
+- [typealias Specification](./date/specification.md)
+- [typealias UnwrappedType](./date/unwrappedtype.md)
+- [typealias ValueType](./date/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](date/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./date/defaultresolverspecification.md)
 ### Default Implementations
-- [CustomStringConvertible Implementations](date/customstringconvertible-implementations.md)
-- [Strideable Implementations](date/strideable-implementations.md)
+- [CustomStringConvertible Implementations](./date/customstringconvertible-implementations.md)
+- [Strideable Implementations](./date/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CKRecordValueProtocol](../cloudkit/ckrecordvalueprotocol.md)
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [Plottable](../charts/plottable.md)
-- [PrimitivePlottableProtocol](../charts/primitiveplottableprotocol.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Strideable](../swift/strideable.md)
+- [CKRecordValueProtocol](../CloudKit/ckrecordvalueprotocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [Comparable](../Swift/comparable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [Plottable](../Charts/plottable.md)
+- [PrimitivePlottableProtocol](../Charts/primitiveplottableprotocol.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Strideable](../Swift/strideable.md)
 
 ## See Also
 
-- [struct DateInterval](dateinterval.md)
+### Date Representations
+- [struct DateInterval](./dateinterval.md)
   The span of time between a specific start date and end date.
-- [typealias TimeInterval](timeinterval.md)
+- [typealias TimeInterval](./timeinterval.md)
   A number of seconds.
 
 

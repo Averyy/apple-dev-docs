@@ -1,7 +1,8 @@
 # init(response:data:userInfo:storagePolicy:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cached URL response with a given server response, data, user-info dictionary, and storage policy.
 
@@ -20,6 +21,10 @@ Creates a cached URL response with a given server response, data, user-info dict
 init(response: URLResponse, data: Data, userInfo: [AnyHashable : Any]? = nil, storagePolicy: URLCache.StoragePolicy)
 ```
 
+```objc
+- (instancetype) initWithResponse:(NSURLResponse *) response data:(NSData *) data userInfo:(NSDictionary *) userInfo storagePolicy:(NSURLCacheStoragePolicy) storagePolicy;
+```
+
 #### Return Value
 
 A cached URL response object, containing the response and data.
@@ -33,7 +38,8 @@ A cached URL response object, containing the response and data.
 
 ## See Also
 
-- [init(response: URLResponse, data: Data)](cachedurlresponse/init(response:data:).md)
+### Creating a cached URL response
+- [init(response: URLResponse, data: Data)](./init%28response,data%29.md)
   Creates a cached URL response instance.
 
 

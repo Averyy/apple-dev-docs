@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [init(device: any MTLDevice, dataLayout: MPSDataLayout)](mpsimagecopytomatrix/init(device:datalayout:).md)
+### Initializers
+- [init(device: any MTLDevice, dataLayout: MPSDataLayout)](./init%28device,datalayout%29.md)
 
 
 ---

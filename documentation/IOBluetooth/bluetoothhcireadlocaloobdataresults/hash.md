@@ -1,15 +1,20 @@
 # hash
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var hash: BluetoothHCISimplePairingOOBData
+```
+
+```c
+BluetoothHCISimplePairingOOBData hash;
 ```
 
 

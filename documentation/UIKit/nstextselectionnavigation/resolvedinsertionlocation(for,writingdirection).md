@@ -1,7 +1,8 @@
 # resolvedInsertionLocation(for:writingDirection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location for inserting the next input depending on the state of the current and secondary selections.
 
@@ -18,6 +19,10 @@ Returns the location for inserting the next input depending on the state of the 
 func resolvedInsertionLocation(for textSelection: NSTextSelection, writingDirection: NSTextSelectionNavigation.WritingDirection) -> (any NSTextLocation)?
 ```
 
+```objc
+- (id<NSTextLocation>) resolvedInsertionLocationForTextSelection:(NSTextSelection *) textSelection writingDirection:(NSTextSelectionNavigationWritingDirection) writingDirection;
+```
+
 #### Return Value
 
 Returns an `NSTextLocation` when the `textSelection.isLogical = false AND` `secondarySelectionLocation != nil`. Otherwise, returns nil.
@@ -25,7 +30,7 @@ Returns an `NSTextLocation` when the `textSelection.isLogical = false AND` `seco
 ## Parameters
 
 - `textSelection`: The text selection.
-- `writingDirection`: The [`NSTextSelectionNavigation.WritingDirection`](nstextselectionnavigation/writingdirection.md) direction.
+- `writingDirection`: The [`NSTextSelectionNavigation.WritingDirection`](./writingdirection.md) direction.
 
 
 ---

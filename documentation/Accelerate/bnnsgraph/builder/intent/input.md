@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Intent.input
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that specifies the argument is an input tensor.
 

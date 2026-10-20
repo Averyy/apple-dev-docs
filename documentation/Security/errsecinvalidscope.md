@@ -1,7 +1,8 @@
 # errSecInvalidScope
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid scope was detected.
 
@@ -18,6 +19,10 @@ An invalid scope was detected.
 
 ```swift
 var errSecInvalidScope: OSStatus { get }
+```
+
+```c
+errSecInvalidScope
 ```
 
 

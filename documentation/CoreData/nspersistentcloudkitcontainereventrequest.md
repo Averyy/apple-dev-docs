@@ -1,7 +1,8 @@
 # NSPersistentCloudKitContainerEventRequest
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to fetch setup, import, or export events in a persistent CloudKit container.
 
@@ -20,44 +21,49 @@ A request to fetch setup, import, or export events in a persistent CloudKit cont
 class NSPersistentCloudKitContainerEventRequest
 ```
 
+```objc
+@interface NSPersistentCloudKitContainerEventRequest : NSPersistentStoreRequest
+```
+
 ## Topics
 
 ### Fetching Events
-- [class func fetchEvents(after: Date) -> Self](nspersistentcloudkitcontainereventrequest/fetchevents(after:)-5izg7.md)
+- [class func fetchEvents(after: Date) -> Self](./nspersistentcloudkitcontainereventrequest/fetchevents%28after%29-5izg7.md)
   Creates a fetch request for events after a specified date from a persistent CloudKit container.
-- [class func fetchEvents(after: NSPersistentCloudKitContainer.Event?) -> Self](nspersistentcloudkitcontainereventrequest/fetchevents(after:)-3yfp.md)
+- [class func fetchEvents(after: NSPersistentCloudKitContainer.Event?) -> Self](./nspersistentcloudkitcontainereventrequest/fetchevents%28after%29-3yfp.md)
   Creates a fetch request for events that occur after a specified event from a persistent CloudKit container.
-- [class func fetchEvents(matchingFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](nspersistentcloudkitcontainereventrequest/fetchevents(matchingfetch:).md)
+- [class func fetchEvents(matchingFetch: NSFetchRequest<any NSFetchRequestResult>) -> Self](./nspersistentcloudkitcontainereventrequest/fetchevents%28matchingfetch%29.md)
   Creates a fetch request for events that match a specified fetch request from a persistent CloudKit container.
-- [class func fetchForEvents() -> NSFetchRequest<any NSFetchRequestResult>](nspersistentcloudkitcontainereventrequest/fetchforevents.md)
+- [class func fetchForEvents() -> NSFetchRequest<any NSFetchRequestResult>](./nspersistentcloudkitcontainereventrequest/fetchforevents%28%29.md)
   Creates a fetch request for all events in a persistent CloudKit container.
-- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](nspersistentcloudkitcontainereventrequest/resulttype.md)
+- [var resultType: NSPersistentCloudKitContainerEventResult.ResultType](./nspersistentcloudkitcontainereventrequest/resulttype.md)
   The type of result that the request returns.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [NSPersistentStoreRequest](./nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [NSPersistentCloudKitContainer.Event](nspersistentcloudkitcontainer/event.md)
+### Monitoring Container Events
+- [NSPersistentCloudKitContainer.Event](./nspersistentcloudkitcontainer/event.md)
   An object that represents activity in a persistent CloudKit container.
-- [NSPersistentCloudKitContainer.EventType](nspersistentcloudkitcontainer/eventtype.md)
+- [NSPersistentCloudKitContainer.EventType](./nspersistentcloudkitcontainer/eventtype.md)
   The type of event in a persistent CloudKit container, either setup, import, or export.
-- [class NSPersistentCloudKitContainerEventResult](nspersistentcloudkitcontainereventresult.md)
+- [class NSPersistentCloudKitContainerEventResult](./nspersistentcloudkitcontainereventresult.md)
   The result of a request to fetch persistent CloudKit container events.
-- [class let eventChangedNotification: NSNotification.Name](nspersistentcloudkitcontainer/eventchangednotification.md)
+- [class let eventChangedNotification: NSNotification.Name](./nspersistentcloudkitcontainer/eventchangednotification.md)
   A notification that contains details about an event in a persistent CloudKit container.
-- [class let eventNotificationUserInfoKey: String](nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
+- [class let eventNotificationUserInfoKey: String](./nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
   The user info dictionary key for the persistent CloudKit container event.
 
 

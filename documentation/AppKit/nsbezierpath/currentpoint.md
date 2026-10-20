@@ -1,12 +1,13 @@
 # currentPoint
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current point (the trailing point or ending point in the most recently added segment).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,31 @@ The current point (the trailing point or ending point in the most recently added
 var currentPoint: NSPoint { get }
 ```
 
+```objc
+@property (readonly) NSPoint currentPoint;
+```
+
 #### Discussion
 
-This property contains the point from which the next drawn line or curve segment begins. If the path is empty, accessing this property raises [`genericException`](https://developer.apple.com/documentation/foundation/nsexceptionname/genericexception).
+This property contains the point from which the next drawn line or curve segment begins. If the path is empty, accessing this property raises [`genericException`](../../Foundation/nsexceptionname/genericexception.md).
 
 ## See Also
 
-- [func curve(to: NSPoint, controlPoint1: NSPoint, controlPoint2: NSPoint)](nsbezierpath/curve(to:controlpoint1:controlpoint2:).md)
+### Related Documentation
+- [func curve(to: NSPoint, controlPoint1: NSPoint, controlPoint2: NSPoint)](./curve%28to,controlpoint1,controlpoint2%29.md)
   Adds a Bezier cubic curve to the path.
-- [func close()](nsbezierpath/close.md)
+- [func close()](./close%28%29.md)
   Closes the most recently added subpath.
-- [func move(to: NSPoint)](nsbezierpath/move(to:).md)
+- [func move(to: NSPoint)](./move%28to%29.md)
   Moves the path’s current point to the specified location.
-- [func line(to: NSPoint)](nsbezierpath/line(to:).md)
+- [func line(to: NSPoint)](./line%28to%29.md)
   Appends a straight line to the path.
-- [var bounds: NSRect](nsbezierpath/bounds.md)
+### Querying a Path
+- [var bounds: NSRect](./bounds.md)
   The bounding box of the path.
-- [var controlPointBounds: NSRect](nsbezierpath/controlpointbounds.md)
+- [var controlPointBounds: NSRect](./controlpointbounds.md)
   The bounding box of the path, including any control points.
-- [var isEmpty: Bool](nsbezierpath/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the path is empty.
 
 

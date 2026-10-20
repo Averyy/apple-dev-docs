@@ -1,7 +1,8 @@
 # restrictedState
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of cellular data restrictions.
 
@@ -16,9 +17,14 @@ The current state of cellular data restrictions.
 var restrictedState: CTCellularDataRestrictedState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CTCellularDataRestrictedState restrictedState;
+```
+
 ## See Also
 
-- [enum CTCellularDataRestrictedState](ctcellulardatarestrictedstate.md)
+### Determining the Cellular Data Restricted State
+- [enum CTCellularDataRestrictedState](../ctcellulardatarestrictedstate.md)
   The possible states of the cellular data policy.
 
 

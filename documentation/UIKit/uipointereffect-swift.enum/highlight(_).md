@@ -1,7 +1,8 @@
 # UIPointerEffect.highlight(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An effect where the pointer slides under the given view and morphs into the view’s shape.
 
@@ -9,7 +10,7 @@ An effect where the pointer slides under the given view and morphs into the view
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ case highlight(UITargetedPreview)
 
 ## See Also
 
-- [case hover(UITargetedPreview, preferredTintMode: UIPointerEffect.TintMode, prefersShadow: Bool, prefersScaledContent: Bool)](uipointereffect-swift.enum/hover(_:preferredtintmode:prefersshadow:prefersscaledcontent:).md)
+### Creating a specific effect
+- [case hover(UITargetedPreview, preferredTintMode: UIPointerEffect.TintMode, prefersShadow: Bool, prefersScaledContent: Bool)](./hover%28_,preferredtintmode,prefersshadow,prefersscaledcontent%29.md)
   An effect where visual changes apply to the view and the pointer retains its default shape.
-- [case lift(UITargetedPreview)](uipointereffect-swift.enum/lift(_:).md)
+- [case lift(UITargetedPreview)](./lift%28_%29.md)
   An effect where the pointer slides under the given view and disappears as the view scales up and gains a shadow.
 
 

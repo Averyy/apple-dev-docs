@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for responding to user actions.
 
@@ -22,7 +23,8 @@ Observe `selectedIndirectPointerTouchMode` or `selectedDrawingTool` to watch for
 
 ## See Also
 
-- [let supportedFeatureSet: FeatureSet](markuptoolbarviewcontroller/supportedfeatureset.md)
+### Configuring the toolbar
+- [let supportedFeatureSet: FeatureSet](./supportedfeatureset.md)
   The supported features of this toolbar.
 
 

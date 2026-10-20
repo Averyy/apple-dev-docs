@@ -1,7 +1,8 @@
 # MTRServerAttribute
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,34 +19,38 @@
 class MTRServerAttribute
 ```
 
+```objc
+@interface MTRServerAttribute : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(readonlyAttributeWithID: NSNumber, initialValue: [String : Any], requiredPrivilege: MTRAccessControlEntryPrivilege)](mtrserverattribute/init(readonlyattributewithid:initialvalue:requiredprivilege:).md)
+- [init?(readonlyAttributeWithID: NSNumber, initialValue: [String : Any], requiredPrivilege: MTRAccessControlEntryPrivilege)](./mtrserverattribute/init%28readonlyattributewithid,initialvalue,requiredprivilege%29.md)
 ### Instance Properties
-- [var attributeID: NSNumber](mtrserverattribute/attributeid.md)
-- [var isWritable: Bool](mtrserverattribute/iswritable.md)
-- [var requiredReadPrivilege: MTRAccessControlEntryPrivilege](mtrserverattribute/requiredreadprivilege.md)
-- [var value: [String : Any]](mtrserverattribute/value.md)
+- [var attributeID: NSNumber](./mtrserverattribute/attributeid.md)
+- [var isWritable: Bool](./mtrserverattribute/iswritable.md)
+- [var requiredReadPrivilege: MTRAccessControlEntryPrivilege](./mtrserverattribute/requiredreadprivilege.md)
+- [var value: [String : Any]](./mtrserverattribute/value.md)
 ### Instance Methods
-- [func setValue([String : Any]) -> Bool](mtrserverattribute/setvalue(_:).md)
+- [func setValue([String : Any]) -> Bool](./mtrserverattribute/setvalue%28_%29.md)
 ### Type Methods
-- [class func newFeatureMapAttribute(withInitialValue: NSNumber) -> Self](mtrserverattribute/newfeaturemapattribute(withinitialvalue:).md)
+- [class func newFeatureMapAttribute(withInitialValue: NSNumber) -> Self](./mtrserverattribute/newfeaturemapattribute%28withinitialvalue%29.md)
   Create an attribute description for a FeatureMap attribute with the provided value (expected to be an unsigned integer representing the value of the bitmap). This will automatically set requiredPrivilege to the right value for FeatureMap.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

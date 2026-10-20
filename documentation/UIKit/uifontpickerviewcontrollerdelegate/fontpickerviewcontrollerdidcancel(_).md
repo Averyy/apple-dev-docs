@@ -1,7 +1,8 @@
 # fontPickerViewControllerDidCancel(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user dismissed the font picker without selecting a font.
 
@@ -17,6 +18,10 @@ Tells the delegate that the user dismissed the font picker without selecting a f
 optional func fontPickerViewControllerDidCancel(_ viewController: UIFontPickerViewController)
 ```
 
+```objc
+- (void) fontPickerViewControllerDidCancel:(UIFontPickerViewController *) viewController;
+```
+
 #### Discussion
 
 Implement this optional method if your app needs to add custom logic when the user cancels the font picker instead of picking a font.
@@ -27,7 +32,8 @@ Implement this optional method if your app needs to add custom logic when the us
 
 ## See Also
 
-- [func fontPickerViewControllerDidPickFont(UIFontPickerViewController)](uifontpickerviewcontrollerdelegate/fontpickerviewcontrollerdidpickfont(_:).md)
+### Receiving font picker interactions
+- [func fontPickerViewControllerDidPickFont(UIFontPickerViewController)](./fontpickerviewcontrollerdidpickfont%28_%29.md)
   Tells the delegate that the user has selected a font.
 
 

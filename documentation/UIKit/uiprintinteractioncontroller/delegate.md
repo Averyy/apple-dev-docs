@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the print-interaction controller.
 
@@ -17,13 +18,18 @@ The delegate of the print-interaction controller.
 weak var delegate: (any UIPrintInteractionControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPrintInteractionControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate must adopt the [`UIPrintInteractionControllerDelegate`](uiprintinteractioncontrollerdelegate.md) protocol and implement one or more of its methods. It is not retained.
+The delegate must adopt the [`UIPrintInteractionControllerDelegate`](../uiprintinteractioncontrollerdelegate.md) protocol and implement one or more of its methods. It is not retained.
 
 ## See Also
 
-- [protocol UIPrintInteractionControllerDelegate](uiprintinteractioncontrollerdelegate.md)
+### Assigning the delegate
+- [protocol UIPrintInteractionControllerDelegate](../uiprintinteractioncontrollerdelegate.md)
   An optional set of methods that the delegate of the shared print-interaction controller implements.
 
 

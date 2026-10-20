@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The maximum number of unique argument buffer samplers per app.
@@ -20,19 +21,24 @@ The maximum number of unique argument buffer samplers per app.
 var maxArgumentBufferSamplerCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maxArgumentBufferSamplerCount;
+```
+
 #### Discussion
 
-This limit only applies to samplers that support argument buffers (see [`supportArgumentBuffers`](mtlsamplerdescriptor/supportargumentbuffers.md)). An [`MTLSamplerState`](mtlsamplerstate.md) instance is only unique if the properties of the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that created it are unique. For example, two samplers with equal [`minFilter`](mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](mtlsamplerdescriptor/magfilter.md) values are unique.
+This limit only applies to samplers that support argument buffers (see [`supportArgumentBuffers`](../mtlsamplerdescriptor/supportargumentbuffers.md)). An [`MTLSamplerState`](../mtlsamplerstate.md) instance is only unique if the properties of the [`MTLSamplerDescriptor`](../mtlsamplerdescriptor.md) instance that created it are unique. For example, two samplers with equal [`minFilter`](../mtlsamplerdescriptor/minfilter.md) values but different [`magFilter`](../mtlsamplerdescriptor/magfilter.md) values are unique.
 
-See [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
+See [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
 
 ## See Also
 
-- [var argumentBuffersSupport: MTLArgumentBuffersTier](mtldevice/argumentbufferssupport.md)
+### Creating argument buffer encoders
+- [var argumentBuffersSupport: MTLArgumentBuffersTier](./argumentbufferssupport.md)
   Returns the GPU device’s support tier for argument buffers.
-- [func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgumentEncoder)?](mtldevice/makeargumentencoder(arguments:).md)
+- [func makeArgumentEncoder(arguments: [MTLArgumentDescriptor]) -> (any MTLArgumentEncoder)?](./makeargumentencoder%28arguments%29.md)
   Creates a new argument encoder for an array of arguments.
-- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](mtldevice/makeargumentencoder(bufferbinding:).md)
+- [func makeArgumentEncoder(bufferBinding: any MTLBufferBinding) -> any MTLArgumentEncoder](./makeargumentencoder%28bufferbinding%29.md)
   Creates a new argument encoder for a buffer binding.
 
 

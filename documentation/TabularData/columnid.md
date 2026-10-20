@@ -1,7 +1,8 @@
 # ColumnID
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A column identifier that stores a column’s name and the type of its elements.
 
@@ -23,31 +24,32 @@ struct ColumnID<T>
 ## Topics
 
 ### Creating a Column ID
-- [init(String, T.Type)](columnid/init(_:_:).md)
+- [init(String, T.Type)](./columnid/init%28_,_%29.md)
   Creates a column identifier.
 ### Getting the Properties
-- [var name: String](columnid/name.md)
+- [var name: String](./columnid/name.md)
   The name of the column the identifier represents.
 ### Instance Properties
-- [var type: any Any.Type](columnid/type.md)
+- [var type: any Any.Type](./columnid/type.md)
   The type of elements stored in the column the identifier represents.
 ### Default Implementations
-- [CustomStringConvertible Implementations](columnid/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./columnid/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Order](order.md)
+### Supporting Types
+- [enum Order](./order.md)
   A type that represents a sort ordering.
-- [struct FormattingOptions](formattingoptions.md)
+- [struct FormattingOptions](./formattingoptions.md)
   A set of parameters that indicate how to present the contents of data frame or column types to a printable string.
 
 

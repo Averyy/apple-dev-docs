@@ -1,14 +1,15 @@
 # kext_assertions_enable
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 int kext_assertions_enable;
 ```
 

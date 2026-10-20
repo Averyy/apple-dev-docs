@@ -1,7 +1,8 @@
 # externalObjects
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The replacements for any proxy objects in the nib file.
 
@@ -9,7 +10,7 @@ The replacements for any proxy objects in the nib file.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The replacements for any proxy objects in the nib file.
 static let externalObjects: UINib.OptionsKey
 ```
 
+```c
+extern UINibOptionsKey const UINibExternalObjects;
+```
+
 #### Discussion
 
-The value for this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy.
+The value for this key is an [`NSDictionary`](../../../Foundation/nsdictionary.md) object. The keys of the dictionary are the names of any proxy objects in the nib file, and the value for each key is the actual object to use in place of the proxy.
 
 
 ---

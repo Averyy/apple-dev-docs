@@ -1,7 +1,8 @@
 # kAEOpenApplication
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Event that launches an application.
 

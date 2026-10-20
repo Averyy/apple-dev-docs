@@ -1,31 +1,32 @@
 # Buffer Queue Error Codes
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 Error codes that framework operations produce.
 
 ## Topics
 
 ### Error Codes
-- [var kCMBufferQueueError_AllocationFailed: OSStatus](kcmbufferqueueerror_allocationfailed.md)
+- [var kCMBufferQueueError_AllocationFailed: OSStatus](./kcmbufferqueueerror_allocationfailed.md)
   The system failed to allocate memory.
-- [var kCMBufferQueueError_RequiredParameterMissing: OSStatus](kcmbufferqueueerror_requiredparametermissing.md)
+- [var kCMBufferQueueError_RequiredParameterMissing: OSStatus](./kcmbufferqueueerror_requiredparametermissing.md)
   You failed to provide a valid value for a required parameter.
-- [var kCMBufferQueueError_InvalidCMBufferCallbacksStruct: OSStatus](kcmbufferqueueerror_invalidcmbuffercallbacksstruct.md)
+- [var kCMBufferQueueError_InvalidCMBufferCallbacksStruct: OSStatus](./kcmbufferqueueerror_invalidcmbuffercallbacksstruct.md)
   The format of a callbacks structure isn’t correct.
-- [var kCMBufferQueueError_EnqueueAfterEndOfData: OSStatus](kcmbufferqueueerror_enqueueafterendofdata.md)
+- [var kCMBufferQueueError_EnqueueAfterEndOfData: OSStatus](./kcmbufferqueueerror_enqueueafterendofdata.md)
   You attempted to enqueue a buffer on a queue that disallows it.
-- [var kCMBufferQueueError_QueueIsFull: OSStatus](kcmbufferqueueerror_queueisfull.md)
+- [var kCMBufferQueueError_QueueIsFull: OSStatus](./kcmbufferqueueerror_queueisfull.md)
   You attempted to enqueue a buffer on a queue that’s full.
-- [var kCMBufferQueueError_BadTriggerDuration: OSStatus](kcmbufferqueueerror_badtriggerduration.md)
+- [var kCMBufferQueueError_BadTriggerDuration: OSStatus](./kcmbufferqueueerror_badtriggerduration.md)
   You specified an invalid trigger duration.
-- [var kCMBufferQueueError_CannotModifyQueueFromTriggerCallback: OSStatus](kcmbufferqueueerror_cannotmodifyqueuefromtriggercallback.md)
+- [var kCMBufferQueueError_CannotModifyQueueFromTriggerCallback: OSStatus](./kcmbufferqueueerror_cannotmodifyqueuefromtriggercallback.md)
   A trigger callback attempted to modify a queue.
-- [var kCMBufferQueueError_InvalidTriggerCondition: OSStatus](kcmbufferqueueerror_invalidtriggercondition.md)
+- [var kCMBufferQueueError_InvalidTriggerCondition: OSStatus](./kcmbufferqueueerror_invalidtriggercondition.md)
   You specified an invalid trigger condition.
-- [var kCMBufferQueueError_InvalidTriggerToken: OSStatus](kcmbufferqueueerror_invalidtriggertoken.md)
+- [var kCMBufferQueueError_InvalidTriggerToken: OSStatus](./kcmbufferqueueerror_invalidtriggertoken.md)
   You specified a trigger token that isn’t a trigger currently associated with this queue.
-- [var kCMBufferQueueError_InvalidBuffer: OSStatus](kcmbufferqueueerror_invalidbuffer.md)
+- [var kCMBufferQueueError_InvalidBuffer: OSStatus](./kcmbufferqueueerror_invalidbuffer.md)
   A buffer validation callback rejected the buffer.
 
 

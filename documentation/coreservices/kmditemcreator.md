@@ -1,7 +1,8 @@
 # kMDItemCreator
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Application used to create the document content (for example “Word”, “Pages”, and so on). A CFString.
 
@@ -12,6 +13,10 @@ Application used to create the document content (for example “Word”, “Page
 
 ```swift
 let kMDItemCreator: CFString!
+```
+
+```c
+const CFStringRef kMDItemCreator;
 ```
 
 

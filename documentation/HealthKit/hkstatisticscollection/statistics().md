@@ -1,7 +1,8 @@
 # statistics()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of statistics objects representing the populated time intervals covered by the statistics collection query.
 
@@ -19,6 +20,10 @@ Returns an array of statistics objects representing the populated time intervals
 func statistics() -> [HKStatistics]
 ```
 
+```objc
+- (NSArray<HKStatistics *> *) statistics;
+```
+
 #### Return Value
 
 An array of statistics objects. The statistics objects are sorted in chronological order.
@@ -29,9 +34,10 @@ The resulting array contains a statistics object for each time interval that has
 
 ## See Also
 
-- [func statistics(for: Date) -> HKStatistics?](hkstatisticscollection/statistics(for:).md)
+### Accessing Statistics Collections
+- [func statistics(for: Date) -> HKStatistics?](./statistics%28for%29.md)
   Returns the statistics object for the time interval that contains the provided date.
-- [func enumerateStatistics(from: Date, to: Date, with: (HKStatistics, UnsafeMutablePointer<ObjCBool>) -> Void)](hkstatisticscollection/enumeratestatistics(from:to:with:).md)
+- [func enumerateStatistics(from: Date, to: Date, with: (HKStatistics, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumeratestatistics%28from,to,with%29.md)
   Enumerates the statistics objects for all the time intervals from the start date until the end date.
 
 

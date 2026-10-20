@@ -1,7 +1,8 @@
 # AlarmManager.AlarmUpdates
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence that publishes whenever an alarm changes.
 
@@ -19,23 +20,24 @@ struct AlarmUpdates
 ## Topics
 
 ### Creating an iterator
-- [AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/iterator.md)
+- [AlarmManager.AlarmUpdates.Iterator](./alarmupdates-swift.struct/iterator.md)
   A nested type that iterates over the elements of this sequence.
-- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](alarmmanager/alarmupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> AlarmManager.AlarmUpdates.Iterator](./alarmupdates-swift.struct/makeasynciterator%28%29.md)
   Returns an async iterator over the elements of this sequence.
-- [AlarmManager.AlarmUpdates.Element](alarmmanager/alarmupdates-swift.struct/element.md)
+- [AlarmManager.AlarmUpdates.Element](./alarmupdates-swift.struct/element.md)
   A type representing the sequence’s elements.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var alarmUpdates: some AsyncSequence<Array<Alarm>, Never>](alarmmanager/alarmupdates-swift.property.md)
+### Updating an alarm
+- [var alarmUpdates: some AsyncSequence<Array<Alarm>, Never>](./alarmupdates-swift.property.md)
   An asynchronous sequence that emits events when the set of alarms changes.
-- [var alarms: [Alarm]](alarmmanager/alarms.md)
+- [var alarms: [Alarm]](./alarms.md)
   Fetches all alarms from the daemon that belong to the current client.
 
 

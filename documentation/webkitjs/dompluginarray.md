@@ -1,7 +1,8 @@
 # DOMPluginArray
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMPluginArray
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](dompluginarray/1633881-length.md)
+- [length](./dompluginarray/api-1633881-length.md)
 ### Instance Methods
-- [item](dompluginarray/1632619-item.md)
-- [namedItem](dompluginarray/1633573-nameditem.md)
-- [refresh](dompluginarray/1633254-refresh.md)
+- [item](./dompluginarray/api-1632619-item.md)
+- [namedItem](./dompluginarray/api-1633573-nameditem.md)
+- [refresh](./dompluginarray/api-1633254-refresh.md)
 
 
 ---

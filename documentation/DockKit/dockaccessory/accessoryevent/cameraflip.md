@@ -1,7 +1,8 @@
 # DockAccessory.AccessoryEvent.cameraFlip
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A camera flip event that indicates a request to switch between back and front cameras.
 

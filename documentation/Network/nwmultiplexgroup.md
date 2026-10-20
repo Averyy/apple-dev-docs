@@ -1,7 +1,8 @@
 # NWMultiplexGroup
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 15.0+
@@ -21,16 +22,16 @@ class NWMultiplexGroup
 ## Topics
 
 ### Initializers
-- [init(to: NWEndpoint)](nwmultiplexgroup/init(to:).md)
+- [init(to: NWEndpoint)](./nwmultiplexgroup/init%28to%29.md)
 ### Instance Properties
-- [var members: [NWEndpoint]](nwmultiplexgroup/members.md)
+- [var members: [NWEndpoint]](./nwmultiplexgroup/members.md)
 
 ## Relationships
 
 ### Conforms To
-- [NWGroupDescriptor](nwgroupdescriptor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NWGroupDescriptor](./nwgroupdescriptor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

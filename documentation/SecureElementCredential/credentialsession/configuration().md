@@ -1,7 +1,8 @@
 # configuration()
 
 **Framework**: SecureElementCredential  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a transaction configuration related to this session.
 
@@ -20,13 +21,14 @@ func configuration() async throws -> CredentialTransaction.Configuration
 
 This method provides a way to get the session configuration after performing a transaction task with a SwiftUI view.
 
-Clients should call [`invalidate()`](credentialtransaction/configuration/invalidate().md) on this configuration after completing each transaction.
+Clients should call [`invalidate()`](../credentialtransaction/configuration/invalidate%28%29.md) on this configuration after completing each transaction.
 
-> ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
+> ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [SecureElementCredential](../SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
 
 ## See Also
 
-- [CredentialTransaction.Configuration](credentialtransaction/configuration.md)
+### Using SwiftUI
+- [CredentialTransaction.Configuration](../credentialtransaction/configuration.md)
   An object that provides configuration information for a transaction that the client intends to perform.
 
 

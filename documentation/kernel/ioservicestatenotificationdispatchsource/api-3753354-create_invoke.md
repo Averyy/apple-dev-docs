@@ -1,14 +1,15 @@
 # Create_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create_Invoke(const IORPC rpc, Create_Handler func);
 ```
 

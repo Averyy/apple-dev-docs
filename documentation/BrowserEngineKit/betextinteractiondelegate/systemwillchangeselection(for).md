@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Invoked by the system when the selection is about to change in the document.
@@ -9,7 +10,7 @@ Invoked by the system when the selection is about to change in the document.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -19,9 +20,14 @@ Invoked by the system when the selection is about to change in the document.
 func systemWillChangeSelection(for textInteraction: BETextInteraction)
 ```
 
+```objc
+- (void) systemWillChangeSelectionForInteraction:(BETextInteraction *) textInteraction;
+```
+
 ## See Also
 
-- [func systemDidChangeSelection(for: BETextInteraction)](betextinteractiondelegate/systemdidchangeselection(for:).md)
+### Text selection changes
+- [func systemDidChangeSelection(for: BETextInteraction)](./systemdidchangeselection%28for%29.md)
   Invoked by the system when the selection is about to change in the document.
 
 

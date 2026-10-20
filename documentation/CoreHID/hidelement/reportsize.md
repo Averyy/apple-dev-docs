@@ -1,7 +1,8 @@
 # reportSize
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size in bits of the data for this element.
 

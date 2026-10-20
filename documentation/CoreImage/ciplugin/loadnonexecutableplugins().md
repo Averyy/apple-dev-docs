@@ -1,7 +1,8 @@
 # loadNonExecutablePlugIns()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Scans directories for plugins.
 
@@ -12,6 +13,10 @@ Scans directories for plugins.
 
 ```swift
 class func loadNonExecutablePlugIns()
+```
+
+```objc
++ (void) loadNonExecutablePlugIns;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ This call adds new plug-ins. It doesn’t remove any plug-ins.
 
 ## See Also
 
-- [class func loadNonExecutablePlugIn(URL!)](ciplugin/loadnonexecutableplugin(_:).md)
+### Loading Plug-ins
+- [class func loadNonExecutablePlugIn(URL!)](./loadnonexecutableplugin%28_%29.md)
   Loads a non-executable plug-in specified by its URL.
 
 

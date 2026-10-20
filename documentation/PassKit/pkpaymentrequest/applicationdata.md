@@ -1,7 +1,8 @@
 # applicationData
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Application-specific data or state.
 
@@ -19,11 +20,15 @@ Application-specific data or state.
 var applicationData: Data? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSData * applicationData;
+```
+
 #### Discussion
 
 Use this property for additional data as may be appropriate for your app—for example, a shopping cart identifier or an order number.
 
-A hash of this data is included in the signed payment data (the [`paymentData`](pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`](pkpaymenttoken.md)). You are responsible for sending the full application data to your server, if needed.
+A hash of this data is included in the signed payment data (the [`paymentData`](../pkpaymenttoken/paymentdata.md) property of [`PKPaymentToken`](../pkpaymenttoken.md)). You are responsible for sending the full application data to your server, if needed.
 
 
 ---

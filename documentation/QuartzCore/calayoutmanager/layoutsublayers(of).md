@@ -1,7 +1,8 @@
 # layoutSublayers(of:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Override to customize layout of sublayers whenever the layer needs redrawing.
 
@@ -15,11 +16,16 @@ Override to customize layout of sublayers whenever the layer needs redrawing.
 optional func layoutSublayers(of layer: CALayer)
 ```
 
+```objc
+- (void) layoutSublayersOfLayer:(CALayer *) layer;
+```
+
 ## See Also
 
-- [func invalidateLayout(of: CALayer)](calayoutmanager/invalidatelayout(of:).md)
+### Managing Layout
+- [func invalidateLayout(of: CALayer)](./invalidatelayout%28of%29.md)
   Invalidates the layout of a layer so it knows to refresh its content on the next frame.
-- [func preferredSize(of: CALayer) -> CGSize](calayoutmanager/preferredsize(of:).md)
+- [func preferredSize(of: CALayer) -> CGSize](./preferredsize%28of%29.md)
   Override to customize layer size.
 
 

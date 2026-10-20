@@ -1,14 +1,15 @@
 # serial_keyboard_poll
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 void serial_keyboard_poll(void);
 ```
 

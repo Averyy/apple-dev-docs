@@ -1,6 +1,7 @@
 # Assets Data Objects
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Reference the request and response objects for asset endpoints.
 
@@ -9,22 +10,23 @@ Reference the request and response objects for asset endpoints.
 
 ## Topics
 
-- [object Asset](asset.md)
+- [object Asset](./asset.md)
   Unified asset entity containing product-agnostic asset metadata and references.
-- [object AssetResponse](assetresponse.md)
+- [object AssetResponse](./assetresponse.md)
   The Get Asset and Upload Asset endpoints return this response object.
-- [object AssetQueryResponse](assetqueryresponse.md)
+- [object AssetQueryResponse](./assetqueryresponse.md)
   Paginated response object for asset queries.
-- [object AssetEligibility](asseteligibility.md)
+- [object AssetEligibility](./asseteligibility.md)
   Eligibility status and constraint details for an asset.
-- [object AssetConstraintGroup](assetconstraintgroup.md)
+- [object AssetConstraintGroup](./assetconstraintgroup.md)
   A constraint group defining the supply placements and countries or regions where an asset is blocked or allowed to serve.
 
 ## See Also
 
-- [Assets Endpoints](assets-endpoints.md)
+### Assets
+- [Assets Endpoints](./assets-endpoints.md)
   Upload, query, retrieve, and delete Apple Maps creative assets.
-- [Assets Data Types](assets-data-types.md)
+- [Assets Data Types](./assets-data-types.md)
   Look up the enumerations and scalar types used for assets.
 
 

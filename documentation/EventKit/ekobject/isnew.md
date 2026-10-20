@@ -1,7 +1,8 @@
 # isNew
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this object has ever been saved.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether this object has ever been saved.
 var isNew: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isNew) BOOL new;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the object hasn’t been saved; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the object hasn’t been saved; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var hasChanges: Bool](ekobject/haschanges.md)
+### Saving and Restoring State
+- [var hasChanges: Bool](./haschanges.md)
   Returns whether this object or any of the objects it contains has uncommitted changes.
-- [func refresh() -> Bool](ekobject/refresh.md)
+- [func refresh() -> Bool](./refresh%28%29.md)
   Merges changes to this object with the latest saved values.
-- [func reset()](ekobject/reset.md)
+- [func reset()](./reset%28%29.md)
   Returns this object to its saved state.
-- [func rollback()](ekobject/rollback.md)
+- [func rollback()](./rollback%28%29.md)
   Rolls back the property values of this object to its original state when it was first fetched.
 
 

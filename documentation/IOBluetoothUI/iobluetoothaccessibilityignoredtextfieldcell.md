@@ -1,7 +1,8 @@
 # IOBluetoothAccessibilityIgnoredTextFieldCell
 
 **Framework**: IOBluetooth UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 10.2+
@@ -12,40 +13,45 @@
 class IOBluetoothAccessibilityIgnoredTextFieldCell
 ```
 
+```objc
+@interface IOBluetoothAccessibilityIgnoredTextFieldCell : NSTextFieldCell
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSTextFieldCell](../appkit/nstextfieldcell.md)
+- [NSTextFieldCell](../AppKit/nstextfieldcell.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class IOBluetoothAccessibilityIgnoredImageCell](iobluetoothaccessibilityignoredimagecell.md)
-- [class IOBluetoothDeviceSelectorController](iobluetoothdeviceselectorcontroller.md)
+### Classes
+- [class IOBluetoothAccessibilityIgnoredImageCell](./iobluetoothaccessibilityignoredimagecell.md)
+- [class IOBluetoothDeviceSelectorController](./iobluetoothdeviceselectorcontroller.md)
   A NSWindowController subclass to display a window to initiate pairing to other bluetooth devices.
-- [class IOBluetoothDeviceSelectorControllerRef](iobluetoothdeviceselectorcontrollerref.md)
-- [class IOBluetoothObjectPushUIController](iobluetoothobjectpushuicontroller.md)
+- [class IOBluetoothDeviceSelectorControllerRef](./iobluetoothdeviceselectorcontrollerref.md)
+- [class IOBluetoothObjectPushUIController](./iobluetoothobjectpushuicontroller.md)
   An NSWindowController subclass that supports the creation of an IOBluetoothObjectPushUIController object.
-- [class IOBluetoothPairingController](iobluetoothpairingcontroller.md)
+- [class IOBluetoothPairingController](./iobluetoothpairingcontroller.md)
   A NSWindowController subclass to display a window to initiate pairing to other bluetooth devices.
-- [class IOBluetoothPairingControllerRef](iobluetoothpairingcontrollerref.md)
-- [class IOBluetoothPasskeyDisplay](iobluetoothpasskeydisplay.md)
-- [class IOBluetoothServiceBrowserController](iobluetoothservicebrowsercontroller.md)
+- [class IOBluetoothPairingControllerRef](./iobluetoothpairingcontrollerref.md)
+- [class IOBluetoothPasskeyDisplay](./iobluetoothpasskeydisplay.md)
+- [class IOBluetoothServiceBrowserController](./iobluetoothservicebrowsercontroller.md)
   A NSWindowController subclass to display a window to search for and perform SDP queries on bluetooth devices within range.
-- [class IOBluetoothServiceBrowserControllerRef](iobluetoothservicebrowsercontrollerref.md)
+- [class IOBluetoothServiceBrowserControllerRef](./iobluetoothservicebrowsercontrollerref.md)
 
 
 ---

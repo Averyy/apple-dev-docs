@@ -1,7 +1,8 @@
 # MusicPersonalRecommendationItem
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for music items that your app can fetch by using a personal recommendations request.
 
@@ -23,13 +24,13 @@ protocol MusicPersonalRecommendationItem : MusicItem
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [Playlist](playlist.md)
-- [Station](station.md)
+- [Album](./album.md)
+- [Playlist](./playlist.md)
+- [Station](./station.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that formats the duration as an attributed string.
 
@@ -22,7 +23,7 @@ var attributed: Duration.TimeFormatStyle.Attributed { get }
 
 #### Discussion
 
-Apply the `attributed` property to a configured [`Duration.TimeFormatStyle`](duration/timeformatstyle.md) to produce an [`Duration.TimeFormatStyle.Attributed`](duration/timeformatstyle/attributed-swift.struct.md) style. You can then format a duration with this style to create a formatted [`AttributedString`](https://developer.apple.com/documentation/foundation/attributedstring). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](https://developer.apple.com/documentation/foundation/attributescopes/foundationattributes/datefieldattribute) for runs with formatted durations.
+Apply the `attributed` property to a configured [`Duration.TimeFormatStyle`](../timeformatstyle.md) to produce an [`Duration.TimeFormatStyle.Attributed`](./attributed-swift.struct.md) style. You can then format a duration with this style to create a formatted [`AttributedString`](../../../Foundation/attributedstring.md). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](../../../Foundation/attributescopes/foundationattributes/datefieldattribute.md) for runs with formatted durations.
 
 The following example formats a duration as an attributed string:
 
@@ -45,7 +46,8 @@ The resulting `attributedDuration`, representing the string `1:10:32` contains t
 
 ## See Also
 
-- [Duration.TimeFormatStyle.Attributed](duration/timeformatstyle/attributed-swift.struct.md)
+### Formatting a duration as an attributed string
+- [Duration.TimeFormatStyle.Attributed](./attributed-swift.struct.md)
   A format style that formats durations as attributed strings.
 
 

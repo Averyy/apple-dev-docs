@@ -1,14 +1,15 @@
 # withAudioEngine
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.10
 
 ## Declaration
 
-```swift
+```c
 static IOAudioEngineUserClient * withAudioEngine(IOAudioEngine *engine, task_t clientTask, void *securityToken, UInt32 type, OSDictionary *properties);
 ```
 

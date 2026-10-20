@@ -1,7 +1,8 @@
 # transposeDimension(_:withDimension:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func transposeDimension(_ dimensionIndex: Int, withDimension dimensionIndex2: Int)
+```
+
+```objc
+- (void) transposeDimension:(NSUInteger) dimensionIndex withDimension:(NSUInteger) dimensionIndex2;
 ```
 
 

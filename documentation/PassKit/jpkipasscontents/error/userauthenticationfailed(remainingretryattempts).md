@@ -1,7 +1,8 @@
 # JPKIPassContents.Error.userAuthenticationFailed(remainingRetryAttempts:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Credential authentication request provided was rejected.
 

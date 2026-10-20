@@ -1,7 +1,8 @@
 # object(withName:)
 
 **Framework**: Scripting Bridge  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object in the array with the given name.
 
@@ -15,13 +16,17 @@ Returns the object in the array with the given name.
 func object(withName name: String) -> Any
 ```
 
+```objc
+- (ObjectType) objectWithName:(NSString *) name;
+```
+
 #### Return Value
 
 A reference to the designated object or `nil` if the object couldn’t be found.
 
 #### Discussion
 
-This method is provided as an alternative to [`object(at:)`](https://developer.apple.com/documentation/foundation/nsarray/object(at:)) for applications where a name is available instead of (or in addition to) an index. A name is generally more stable than an index. For example, it is typically more useful to identify a mailbox in Mail by its name than by its index in the list of mailboxes.
+This method is provided as an alternative to [`object(at:)`](../../Foundation/nsarray/object%28at%29.md) for applications where a name is available instead of (or in addition to) an index. A name is generally more stable than an index. For example, it is typically more useful to identify a mailbox in Mail by its name than by its index in the list of mailboxes.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ This method is provided as an alternative to [`object(at:)`](https://developer.a
 
 ## See Also
 
-- [func object(withID: Any) -> Any](sbelementarray/object(withid:).md)
+### Getting Objects in the Array
+- [func object(withID: Any) -> Any](./object%28withid%29.md)
   Returns the object in the array with the given identifier.
-- [func object(atLocation: Any) -> Any](sbelementarray/object(atlocation:).md)
+- [func object(atLocation: Any) -> Any](./object%28atlocation%29.md)
   Returns the object at the given location in the receiver.
 
 

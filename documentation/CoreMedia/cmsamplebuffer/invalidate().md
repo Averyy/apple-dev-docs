@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates a sample buffer by calling its invalidation handler.
 
@@ -28,9 +29,10 @@ You can’t use a sample buffer after invalidating it; all of its accessors thro
 
 ## See Also
 
-- [var isValid: Bool](cmsamplebuffer/isvalid.md)
+### Invalidating Sample Buffers
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the sample buffer is valid.
-- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](cmsamplebuffer/setinvalidatehandler(_:).md)
+- [func setInvalidateHandler((CMSampleBuffer) throws -> Void) throws](./setinvalidatehandler%28_%29.md)
   Sets a closure for the sample buffer to call when it’s invalidated.
 
 

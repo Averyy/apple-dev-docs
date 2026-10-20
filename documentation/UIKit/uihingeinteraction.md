@@ -1,7 +1,8 @@
 # UIHingeInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction for observing the hinge state associated with the view’s hierarchy.
 
@@ -19,11 +20,15 @@ An interaction for observing the hinge state associated with the view’s hierar
 class UIHingeInteraction
 ```
 
+```objc
+@interface UIHingeInteraction : NSObject
+```
+
 #### Overview
 
 Add a `UIHingeInteraction` to a view to receive hinge state updates. The interaction’s handler is called when the hinge state changes, or when the interaction moves between hierarchies. When the interaction moves out of a hierarchy that provides hinge updates, the update’s `hinge` is nil.
 
-```None
+```
 override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -49,36 +54,37 @@ In the example above, the current angle and status of the hinge are displayed as
 ## Topics
 
 ### Creating a hinge interaction
-- [init(updateHandler: (UIHingeInteraction, UIHingeInteraction.Update) -> Void)](uihingeinteraction/init(updatehandler:).md)
+- [init(updateHandler: (UIHingeInteraction, UIHingeInteraction.Update) -> Void)](./uihingeinteraction/init%28updatehandler%29.md)
   Creates a new hinge interaction with the provided update handler.
 ### Configuring the interaction
-- [var isEnabled: Bool](uihingeinteraction/isenabled.md)
+- [var isEnabled: Bool](./uihingeinteraction/isenabled.md)
   Whether the interaction is enabled.
 ### Getting hinge updates
-- [UIHingeInteraction.Update](uihingeinteraction/update.md)
+- [UIHingeInteraction.Update](./uihingeinteraction/update.md)
   An update for a `UIHingeInteraction`
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [class UIDevice](uidevice.md)
+### Device environment
+- [class UIDevice](./uidevice.md)
   A representation of the current device.
-- [class UIStatusBarManager](uistatusbarmanager.md)
+- [class UIStatusBarManager](./uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
-- [class UIHinge](uihinge.md)
+- [class UIHinge](./uihinge.md)
   An object encapsulating the state of a single hinge.
 
 

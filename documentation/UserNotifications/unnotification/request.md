@@ -1,7 +1,8 @@
 # request
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification request containing the payload and trigger condition for the notification.
 
@@ -21,13 +22,26 @@ The notification request containing the payload and trigger condition for the no
 var request: UNNotificationRequest { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) UNNotificationRequest * request;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) UNNotificationRequest * request;
+```
+
 #### Discussion
 
 For local notifications, the request object is a copy of the one you originally configured. For remote notifications, the system synthesizes the request object from information received from Apple Push Notification service.
 
 ## See Also
 
-- [var date: Date](unnotification/date.md)
+### Getting the Notification Details
+- [var date: Date](./date.md)
   The delivery date of the notification.
 
 

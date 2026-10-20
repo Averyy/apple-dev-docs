@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next mesh instance slot, or `nil` when all slots have been visited.
 

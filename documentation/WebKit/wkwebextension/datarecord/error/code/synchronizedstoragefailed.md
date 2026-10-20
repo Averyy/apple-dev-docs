@@ -1,7 +1,8 @@
 # WKWebExtension.DataRecord.Error.Code.synchronizedStorageFailed
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a failure occurred when either deleting or calculating synchronized storage.
 
@@ -16,6 +17,10 @@ Indicates a failure occurred when either deleting or calculating synchronized st
 
 ```swift
 case synchronizedStorageFailed
+```
+
+```c
+WKWebExtensionDataRecordErrorSynchronizedStorageFailed
 ```
 
 

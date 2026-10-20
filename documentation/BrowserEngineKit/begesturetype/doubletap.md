@@ -1,14 +1,15 @@
 # BEGestureType.doubleTap
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gesture for two rapid consecutive taps.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -18,15 +19,20 @@ A gesture for two rapid consecutive taps.
 case doubleTap
 ```
 
+```c
+BEGestureTypeDoubleTap
+```
+
 ## See Also
 
-- [BEGestureType.oneFingerTap](begesturetype/onefingertap.md)
+### Tap gestures
+- [BEGestureType.oneFingerTap](./onefingertap.md)
   A gesture for a single tap performed with one finger.
-- [BEGestureType.oneFingerDoubleTap](begesturetype/onefingerdoubletap.md)
+- [BEGestureType.oneFingerDoubleTap](./onefingerdoubletap.md)
   A gesture for a double tap with a single finger.
-- [BEGestureType.oneFingerTripleTap](begesturetype/onefingertripletap.md)
+- [BEGestureType.oneFingerTripleTap](./onefingertripletap.md)
   A gesture for three rapid consecutive taps with one finger.
-- [BEGestureType.twoFingerSingleTap](begesturetype/twofingersingletap.md)
+- [BEGestureType.twoFingerSingleTap](./twofingersingletap.md)
   A gesture for a single simultaneous tap with two fingers.
 
 

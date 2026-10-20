@@ -1,7 +1,8 @@
 # credentialID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credential identifier for this passkey credential identity.
 
@@ -18,13 +19,18 @@ The credential identifier for this passkey credential identity.
 var credentialID: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * credentialID;
+```
+
 #### Discussion
 
-Use the credential identifier, along with the [`userHandle`](aspasskeycredentialidentity/userhandle.md), to identify the correct credential to use for a given relying party request.
+Use the credential identifier, along with the [`userHandle`](./userhandle.md), to identify the correct credential to use for a given relying party request.
 
 ## See Also
 
-- [var recordIdentifier: String?](aspasskeycredentialidentity/recordidentifier.md)
+### Distinguishing identities
+- [var recordIdentifier: String?](./recordidentifier.md)
   A string used to correlate this identity to a record in your app’s own database.
 
 

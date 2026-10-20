@@ -5,13 +5,13 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn update(
  UInt32 offset,
  const UInt32 *&romBase) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 kIOReturnSuccess if the specified offset is now accessable at romBase[offset].
 
@@ -21,14 +21,15 @@ makes sure that the ROM has at least the specified capacity, and that the ROM is
 
 ## See Also
 
-- [getIndexEntry](ioconfigdirectory/1811146-getindexentry.md)
-- [getIndexKey](ioconfigdirectory/1811157-getindexkey.md)
-- [getIndexType](ioconfigdirectory/1811166-getindextype.md)
-- [getIndexValue](ioconfigdirectory/1811176-getindexvalue.md)
-- [getKeySubdirectories](ioconfigdirectory/1811186-getkeysubdirectories.md)
-- [getKeyType](ioconfigdirectory/1811199-getkeytype.md)
-- [getKeyValue](ioconfigdirectory/1811212-getkeyvalue.md)
-- [getSubdirectories](ioconfigdirectory/1811222-getsubdirectories.md)
+### Miscellaneous
+- [getIndexEntry](./api-1811146-getindexentry.md)
+- [getIndexKey](./api-1811157-getindexkey.md)
+- [getIndexType](./api-1811166-getindextype.md)
+- [getIndexValue](./api-1811176-getindexvalue.md)
+- [getKeySubdirectories](./api-1811186-getkeysubdirectories.md)
+- [getKeyType](./api-1811199-getkeytype.md)
+- [getKeyValue](./api-1811212-getkeyvalue.md)
+- [getSubdirectories](./api-1811222-getsubdirectories.md)
 
 
 ---

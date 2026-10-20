@@ -1,7 +1,8 @@
 # traitOverrides
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutable container of traits you use to set trait changes for this view controller and its views.
 
@@ -10,7 +11,7 @@ A mutable container of traits you use to set trait changes for this view control
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ A mutable container of traits you use to set trait changes for this view control
 
 ## See Also
 
-- [struct UITraitOverrides](uitraitoverrides-swift.struct.md)
+### Overriding trait values
+- [struct UITraitOverrides](../uitraitoverrides-swift.struct.md)
   A mutable container of traits you use to set trait changes for an object and its descendants.
-- [func updateTraitsIfNeeded()](uiviewcontroller/updatetraitsifneeded.md)
+- [func updateTraitsIfNeeded()](./updatetraitsifneeded%28%29.md)
   Updates traits immediately for this view controller and its view, including any view controllers and views in this subtree.
 
 

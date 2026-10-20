@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the receiver to provide data for a specified type to a given pasteboard.
@@ -16,9 +17,13 @@ nonisolated
 func pasteboard(_ pasteboard: NSPasteboard?, item: NSPasteboardItem, provideDataForType type: NSPasteboard.PasteboardType)
 ```
 
+```objc
+- (void) pasteboard:(NSPasteboard *) pasteboard item:(NSPasteboardItem *) item provideDataForType:(NSPasteboardType) type;
+```
+
 #### Discussion
 
-The receiver was previously set as the provider using [`setDataProvider(_:forTypes:)`](nspasteboarditem/setdataprovider(_:fortypes:).md).
+The receiver was previously set as the provider using [`setDataProvider(_:forTypes:)`](../nspasteboarditem/setdataprovider%28_,fortypes%29.md).
 
 ## Parameters
 
@@ -28,13 +33,15 @@ The receiver was previously set as the provider using [`setDataProvider(_:forTyp
 
 ## See Also
 
-- [Drag and Drop](drag-and-drop.md)
+### Related Documentation
+- [Drag and Drop](../drag-and-drop.md)
   Support the direct manipulation of your app’s content using drag and drop.
-- [class NSPasteboard](nspasteboard.md)
+- [class NSPasteboard](../nspasteboard.md)
   An object that transfers data to and from the pasteboard server.
-- [Services Functions](services-functions.md)
+- [Services Functions](../services-functions.md)
   Configure the contents of your app’s Services menu.
-- [func pasteboardFinishedWithDataProvider(NSPasteboard)](nspasteboarditemdataprovider/pasteboardfinishedwithdataprovider(_:).md)
+### Providing Data
+- [func pasteboardFinishedWithDataProvider(NSPasteboard)](./pasteboardfinishedwithdataprovider%28_%29.md)
   Informs the receiver that the pasteboard no longer needs the data provider for any of its pasteboard items.
 
 

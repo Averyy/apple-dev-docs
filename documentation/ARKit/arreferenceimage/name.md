@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the image.
 
@@ -15,6 +16,10 @@ A descriptive name for the image.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 #### Discussion
 
 For reference images loaded from an Xcode asset catalog, this property is the name assigned in the asset catalog. For programmatically created reference images, this value is `nil`.
@@ -23,9 +28,10 @@ For reference images loaded from an Xcode asset catalog, this property is the na
 
 ## See Also
 
-- [var physicalSize: CGSize](arreferenceimage/physicalsize.md)
+### Examining a Reference Image
+- [var physicalSize: CGSize](./physicalsize.md)
   The real-world dimensions, in meters, of the image.
-- [var resourceGroupName: String?](arreferenceimage/resourcegroupname.md)
+- [var resourceGroupName: String?](./resourcegroupname.md)
   The AR resource group name for this image.
 
 

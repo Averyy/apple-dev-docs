@@ -1,7 +1,8 @@
 # reservedSize
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reserved size of streaming asset.
 
@@ -10,7 +11,7 @@ The reserved size of streaming asset.
 
 ## Declaration
 
-```swift
+```
 attribute Int64? reservedSize;
 ```
 

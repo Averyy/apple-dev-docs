@@ -1,23 +1,28 @@
 # flatness
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that determines the accuracy or smoothness of the text geometry.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var flatness: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat flatness;
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ The default value of this property is `0.6`, specifying that the line segments m
 
 ## See Also
 
-- [var extrusionDepth: CGFloat](scntext/extrusiondepth.md)
+### Managing the Text’s 3D Representation
+- [var extrusionDepth: CGFloat](./extrusiondepth.md)
   The extent of the extruded text in the z-axis direction. Animatable.
-- [var chamferRadius: CGFloat](scntext/chamferradius.md)
+- [var chamferRadius: CGFloat](./chamferradius.md)
   The width or depth of each chamfered edge. Animatable.
-- [var chamferProfile: UIBezierPath?](scntext/chamferprofile.md)
+- [var chamferProfile: UIBezierPath?](./chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
 
 

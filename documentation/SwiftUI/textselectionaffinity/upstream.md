@@ -1,7 +1,8 @@
 # TextSelectionAffinity.upstream
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An upstream selection affinity. In this case, the cursor is associated with the character immediately before it.
 

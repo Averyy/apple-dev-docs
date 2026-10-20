@@ -1,7 +1,8 @@
 # SecGuestRef
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a guest object, which identifies a particular block of guest code in the context of its code signing host.
 
@@ -15,9 +16,13 @@ A reference to a guest object, which identifies a particular block of guest code
 typealias SecGuestRef = UInt32
 ```
 
+```c
+typedef u_int32_t SecGuestRef;
+```
+
 #### Discussion
 
-Guest handles are assigned by the host at will, with [`kSecNoGuest`](ksecnoguest.md) being reserved as the `NULL` value. They can be reused for new children if desired.
+Guest handles are assigned by the host at will, with [`kSecNoGuest`](./ksecnoguest.md) being reserved as the `NULL` value. They can be reused for new children if desired.
 
 
 ---

@@ -1,7 +1,8 @@
 # setObject(_:atIndexedSubscript:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value’s JavaScript property at the specified index, allowing subscript syntax.
 
@@ -19,9 +20,13 @@ Sets the value’s JavaScript property at the specified index, allowing subscrip
 func setObject(_ object: Any!, atIndexedSubscript index: Int)
 ```
 
+```objc
+- (void) setObject:(id) object atIndexedSubscript:(NSUInteger) index;
+```
+
 #### Discussion
 
-This method is equivalent to the [`setValue(_:at:)`](jsvalue/setvalue(_:at:).md) method, but provides Objective-C subscripting support.
+This method is equivalent to the [`setValue(_:at:)`](./setvalue%28_,at%29.md) method, but provides Objective-C subscripting support.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ This method is equivalent to the [`setValue(_:at:)`](jsvalue/setvalue(_:at:).md)
 
 ## See Also
 
-- [func objectAtIndexedSubscript(Int) -> JSValue!](jsvalue/objectatindexedsubscript(_:).md)
+### Accessing Values with Subscript Syntax
+- [func objectAtIndexedSubscript(Int) -> JSValue!](./objectatindexedsubscript%28_%29.md)
   Returns the value’s JavaScript property at the specified index, allowing subscript syntax.
-- [func objectForKeyedSubscript(Any!) -> JSValue!](jsvalue/objectforkeyedsubscript(_:).md)
+- [func objectForKeyedSubscript(Any!) -> JSValue!](./objectforkeyedsubscript%28_%29.md)
   Returns the value’s JavaScript property named with the specified key, allowing subscript syntax.
-- [func setObject(Any!, forKeyedSubscript: Any!)](jsvalue/setobject(_:forkeyedsubscript:).md)
+- [func setObject(Any!, forKeyedSubscript: Any!)](./setobject%28_,forkeyedsubscript%29.md)
   Sets the value’s JavaScript property named with the specified key, allowing subscript syntax.
 
 

@@ -1,7 +1,8 @@
 # CSSM_CL_HANDLE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_CL_HANDLE = CSSM_MODULE_HANDLE
+```
+
+```c
+typedef CSSM_MODULE_HANDLE CSSM_CL_HANDLE;
 ```
 
 

@@ -1,7 +1,8 @@
 # setAggregatedIOPreference(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the audio session’s aggregated I/O configuration preference.
 
@@ -17,13 +18,17 @@ Sets the audio session’s aggregated I/O configuration preference.
 func setAggregatedIOPreference(_ inIOType: AVAudioSession.IOType) throws
 ```
 
+```objc
+- (BOOL) setAggregatedIOPreference:(AVAudioSessionIOType) inIOType error:(NSError **) outError;
+```
+
 #### Discussion
 
-Starting with iOS 10, [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) has changed its default audio input configuration on iPhone and iPad devices that support the Live Photos feature. This change allows taking a Live Photo without interrupting background audio playback. Configure your preferred audio input behavior by setting your aggregated I/O preference.
+Starting with iOS 10, [`AVCaptureSession`](../../AVFoundation/avcapturesession.md) has changed its default audio input configuration on iPhone and iPad devices that support the Live Photos feature. This change allows taking a Live Photo without interrupting background audio playback. Configure your preferred audio input behavior by setting your aggregated I/O preference.
 
-Apps that use [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) in its default audio input configuration ([`usesApplicationAudioSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession/usesapplicationaudiosession) `=` [`true`](https://developer.apple.com/documentation/swift/true), [`automaticallyConfiguresApplicationAudioSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession/automaticallyconfiguresapplicationaudiosession) `=` [`true`](https://developer.apple.com/documentation/swift/true)), and that need to guarantee the same behavior as previous versions of iOS, should opt-out of this new behavior by setting the aggregated I/O preference to [`AVAudioSession.IOType.aggregated`](avaudiosession/iotype/aggregated.md).
+Apps that use [`AVCaptureSession`](../../AVFoundation/avcapturesession.md) in its default audio input configuration ([`usesApplicationAudioSession`](../../AVFoundation/avcapturesession/usesapplicationaudiosession.md) `=` [`true`](../../Swift/true.md), [`automaticallyConfiguresApplicationAudioSession`](../../AVFoundation/avcapturesession/automaticallyconfiguresapplicationaudiosession.md) `=` [`true`](../../Swift/true.md)), and that need to guarantee the same behavior as previous versions of iOS, should opt-out of this new behavior by setting the aggregated I/O preference to [`AVAudioSession.IOType.aggregated`](./iotype/aggregated.md).
 
-Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession), or that use a capture session in its nondefault configuration, can ignore this preference. In these cases, there’s no change in behavior from previous versions of iOS.
+Apps that don’t use [`AVCaptureSession`](../../AVFoundation/avcapturesession.md), or that use a capture session in its nondefault configuration, can ignore this preference. In these cases, there’s no change in behavior from previous versions of iOS.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Apps that don’t use [`AVCaptureSession`](https://developer.apple.com/documenta
 
 ## See Also
 
-- [AVAudioSession.IOType](avaudiosession/iotype.md)
+### Setting the aggregated I/O preference
+- [AVAudioSession.IOType](./iotype.md)
   Constant values used to specify the audio session’s aggregated I/O behavior.
 
 

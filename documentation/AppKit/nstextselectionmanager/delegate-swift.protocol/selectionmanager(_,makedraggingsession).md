@@ -1,7 +1,8 @@
 # selectionManager(_:makeDraggingSession:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a dragging session for the specified gesture recognizer.
 
@@ -12,6 +13,10 @@ Creates and returns a dragging session for the specified gesture recognizer.
 
 ```swift
 optional func selectionManager(_ selectionManager: NSTextSelectionManager, makeDraggingSession gesture: NSGestureRecognizer) -> NSDraggingSession?
+```
+
+```objc
+- (NSDraggingSession *) selectionManager:(NSTextSelectionManager *) selectionManager makeDraggingSessionWithGesture:(NSGestureRecognizer *) gesture;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(version:AllocateBlock:FreeBlock:refCon:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(version: UInt32, AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeM
 
 ## See Also
 
-- [init()](cmblockbuffercustomblocksource/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

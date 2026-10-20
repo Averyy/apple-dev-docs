@@ -1,7 +1,8 @@
 # SpatialAudioExperiences.SoundStageSize.large
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Spreads an audio stream’s channels around the user according to the coordinates described in its channel layout.
 

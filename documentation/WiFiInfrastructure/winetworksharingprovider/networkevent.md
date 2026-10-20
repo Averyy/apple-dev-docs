@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.NetworkEvent
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An event that occurred, indicating an update to the available shared networks.
 
@@ -31,45 +32,46 @@ Use the sequence number and update counter to track changes and avoid processing
 ## Topics
 
 ### Identifying an event
-- [WINetworkSharingProvider.NetworkEvent.ID](winetworksharingprovider/networkevent/id-swift.typealias.md)
+- [WINetworkSharingProvider.NetworkEvent.ID](./networkevent/id-swift.typealias.md)
   The type of value that uniquely identifies this event.
-- [var id: WINetworkSharingProvider.NetworkEvent.ID](winetworksharingprovider/networkevent/id-swift.property.md)
+- [var id: WINetworkSharingProvider.NetworkEvent.ID](./networkevent/id-swift.property.md)
   A stable identifier that uniquely identifies this event.
 ### Getting network data
-- [let networks: [WINetworkSharingProvider.Network]](winetworksharingprovider/networkevent/networks.md)
+- [let networks: [WINetworkSharingProvider.Network]](./networkevent/networks.md)
   The latest network data, containing a list of all networks shared to the device.
-- [let networksUpdateCounter: UInt64](winetworksharingprovider/networkevent/networksupdatecounter.md)
+- [let networksUpdateCounter: UInt64](./networkevent/networksupdatecounter.md)
   A counter that increments whenever the network data changes.
 ### Getting event signals
-- [let newShareableNetworkAvailable: Bool](winetworksharingprovider/networkevent/newshareablenetworkavailable.md)
+- [let newShareableNetworkAvailable: Bool](./networkevent/newshareablenetworkavailable.md)
   A Boolean value that indicates whether the system detected available networks your app extension may request from people.
-- [let appRequestedSharing: Bool](winetworksharingprovider/networkevent/apprequestedsharing.md)
+- [let appRequestedSharing: Bool](./networkevent/apprequestedsharing.md)
   A Boolean value that indicates whether the container app requested network sharing.
 ### Getting the event time
-- [let timestamp: Date](winetworksharingprovider/networkevent/timestamp.md)
+- [let timestamp: Date](./networkevent/timestamp.md)
   The date when this event occurred.
 ### Getting the event description
-- [var description: String](winetworksharingprovider/networkevent/description.md)
+- [var description: String](./networkevent/description.md)
   A string description of the event, for debugging purposes.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
+### Getting network updates
 - [func networkEvents(matching: Predicate<WINetworkSharingProvider.Network>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.NetworkEvent, any Error>
-](winetworksharingprovider/networkevents(matching:).md)
+](./networkevents%28matching%29.md)
   Returns an async sequence of network events, containing current shared networks and future updates.
-- [WINetworkSharingProvider.Network](winetworksharingprovider/network.md)
+- [WINetworkSharingProvider.Network](./network.md)
   A Wi-Fi network to share with a connected accessory.
 
 

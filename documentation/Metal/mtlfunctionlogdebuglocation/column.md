@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The column where the log message appears.
@@ -20,13 +21,18 @@ The column where the log message appears.
 var column: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger column;
+```
+
 ## See Also
 
-- [var functionName: String?](mtlfunctionlogdebuglocation/functionname.md)
+### Inspecting the location details
+- [var functionName: String?](./functionname.md)
   The name of the shader function.
-- [var url: URL?](mtlfunctionlogdebuglocation/url.md)
+- [var url: URL?](./url.md)
   The URL of the file that contains the shader function.
-- [var line: Int](mtlfunctionlogdebuglocation/line.md)
+- [var line: Int](./line.md)
   The line that the log message appears on.
 
 

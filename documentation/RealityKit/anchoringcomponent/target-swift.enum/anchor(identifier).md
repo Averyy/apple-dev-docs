@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.anchor(identifier:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An anchor point attached to the AR anchor with a given identifier.
 
@@ -20,11 +21,12 @@ case anchor(identifier: UUID)
 
 ## See Also
 
-- [AnchoringComponent.Target.world(transform:)](anchoringcomponent/target-swift.enum/world(transform:).md)
+### Basic anchor targets
+- [AnchoringComponent.Target.world(transform:)](./world%28transform%29.md)
   An anchor point attached to a fixed position in the scene.
-- [case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](anchoringcomponent/target-swift.enum/plane(_:classification:minimumbounds:).md)
+- [case plane(AnchoringComponent.Target.Alignment, classification: AnchoringComponent.Target.Classification, minimumBounds: SIMD2<Float>)](./plane%28_,classification,minimumbounds%29.md)
   An anchor point attached to a real world surface.
-- [AnchoringComponent.Target.camera](anchoringcomponent/target-swift.enum/camera.md)
+- [AnchoringComponent.Target.camera](./camera.md)
   An anchor point attached to the device’s camera.
 
 

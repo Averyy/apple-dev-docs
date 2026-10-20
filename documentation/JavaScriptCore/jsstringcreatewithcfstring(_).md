@@ -1,7 +1,8 @@
 # JSStringCreateWithCFString(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript string from a Core Foundation string.
 
@@ -19,21 +20,26 @@ Creates a JavaScript string from a Core Foundation string.
 func JSStringCreateWithCFString(_ string: CFString!) -> JSStringRef!
 ```
 
+```c
+JSStringRefJSStringCreateWithCFString(CFStringRef string);
+```
+
 #### Return Value
 
-A [`JSStringRef`](jsstringref.md) that contains `string`. Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A [`JSStringRef`](./jsstringref.md) that contains `string`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
-The system optimizes this function to take advantage of cases when [`CFStringGetCharactersPtr(_:)`](https://developer.apple.com/documentation/corefoundation/cfstringgetcharactersptr(_:)) returns a valid pointer.
+The system optimizes this function to take advantage of cases when [`CFStringGetCharactersPtr(_:)`](../CoreFoundation/cfstringgetcharactersptr%28_%29.md) returns a valid pointer.
 
 ## Parameters
 
-- `string`: The [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) to copy into the new [`JSStringRef`](jsstringref.md).
+- `string`: The [`CFString`](../CoreFoundation/cfstring.md) to copy into the new [`JSStringRef`](./jsstringref.md).
 
 ## See Also
 
-- [func JSStringCopyCFString(CFAllocator!, JSStringRef!) -> CFString!](jsstringcopycfstring(_:_:).md)
+### Converting to and from Core Foundation Strings
+- [func JSStringCopyCFString(CFAllocator!, JSStringRef!) -> CFString!](./jsstringcopycfstring%28_,_%29.md)
   Creates a Core Foundation string from a JavaScript string.
 
 

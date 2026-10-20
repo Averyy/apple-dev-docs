@@ -1,7 +1,8 @@
 # init(credentialIdentity:clientDataHash:userVerificationPreference:supportedAlgorithms:extensionInput:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a passkey credential request, providing additional passkey assertion data.
 
@@ -20,7 +21,7 @@ convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash
 
 #### Discussion
 
-For credential assertion requests, supply an empty array for `supportedAlgorithms`. For credential registration requests, supply an array of one or more [`ASCOSEAlgorithmIdentifier`](ascosealgorithmidentifier.md) values.
+For credential assertion requests, supply an empty array for `supportedAlgorithms`. For credential registration requests, supply an array of one or more [`ASCOSEAlgorithmIdentifier`](../ascosealgorithmidentifier.md) values.
 
 ## Parameters
 
@@ -32,11 +33,12 @@ For credential assertion requests, supply an empty array for `supportedAlgorithm
 
 ## See Also
 
-- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [NSNumber])](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:)-1jihy.md)
+### Creating passkey credential requests
+- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [NSNumber])](./init%28credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms%29-1jihy.md)
   Initializes a passkey credential request, identifying supported algorithms by number.
-- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier])](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:)-52txr.md)
+- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier])](./init%28credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms%29-52txr.md)
   Initializes a passkey credential request, identifying supported algorithms with constants.
-- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)](aspasskeycredentialrequest/init(credentialidentity:clientdatahash:userverificationpreference:supportedalgorithms:extensioninput:)-1258o.md)
+- [convenience init(credentialIdentity: ASPasskeyCredentialIdentity, clientDataHash: Data, userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference, supportedAlgorithms: [ASCOSEAlgorithmIdentifier], extensionInput: ASPasskeyRegistrationCredentialExtensionInput?)](./init%28credentialidentity,clientdatahash,userverificationpreference,supportedalgorithms,extensioninput%29-1258o.md)
   Initializes a passkey credential request, providing additional passkey registration data.
 
 

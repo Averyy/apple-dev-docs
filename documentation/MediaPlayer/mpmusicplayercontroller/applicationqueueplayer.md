@@ -1,7 +1,8 @@
 # applicationQueuePlayer
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the application queue music player.
 
@@ -18,6 +19,10 @@ Returns the application queue music player.
 class var applicationQueuePlayer: MPMusicPlayerApplicationController { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) MPMusicPlayerApplicationController * applicationQueuePlayer;
+```
+
 #### Return Value
 
 The application queue music player.
@@ -30,9 +35,10 @@ The music player doesn’t affect the Music app’s state. When your app moves t
 
 ## See Also
 
-- [class var applicationMusicPlayer: MPMusicPlayerController](mpmusicplayercontroller/applicationmusicplayer.md)
+### Getting a music player
+- [class var applicationMusicPlayer: MPMusicPlayerController](./applicationmusicplayer.md)
   Returns the application music player.
-- [class var systemMusicPlayer: any MPMusicPlayerController & MPSystemMusicPlayerController](mpmusicplayercontroller/systemmusicplayer.md)
+- [class var systemMusicPlayer: any MPMusicPlayerController & MPSystemMusicPlayerController](./systemmusicplayer.md)
   Returns the system music player, which controls the Music app’s state.
 
 

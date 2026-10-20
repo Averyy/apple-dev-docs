@@ -1,7 +1,8 @@
 # writeBookmarkData(_:to:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an alias file on disk at a specified location with specified bookmark data.
 
@@ -20,13 +21,19 @@ Creates an alias file on disk at a specified location with specified bookmark da
 class func writeBookmarkData(_ bookmarkData: Data, to bookmarkFileURL: URL, options: NSURL.BookmarkFileCreationOptions) throws
 ```
 
+```objc
++ (BOOL) writeBookmarkData:(NSData *) bookmarkData toURL:(NSURL *) bookmarkFileURL options:(NSURLBookmarkFileCreationOptions) options error:(NSError **) error;
+```
+
 #### Discussion
 
 This method will produce an error if `bookmarkData` was not created with the `NSURLBookmarkCreationSuitableForBookmarkFile` option.
 
 If `bookmarkFileURL` points to a directory, the alias file will be created in that directory with its name derived from the information in `bookmarkData`. If `bookmarkFileURL` points to a file, the alias file will be created with the location and name indicated by `bookmarkFileURL`, and its extension will be changed to `.alias` if it is not already.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -36,21 +43,22 @@ If `bookmarkFileURL` points to a directory, the alias file will be created in th
 
 ## See Also
 
-- [class func bookmarkData(withContentsOf: URL) throws -> Data](nsurl/bookmarkdata(withcontentsof:).md)
+### Working with Bookmark Data
+- [class func bookmarkData(withContentsOf: URL) throws -> Data](./bookmarkdata%28withcontentsof%29.md)
   Initializes and returns bookmark data derived from an alias file pointed to by a specified URL.
-- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:).md)
+- [func bookmarkData(options: NSURL.BookmarkCreationOptions, includingResourceValuesForKeys: [URLResourceKey]?, relativeTo: URL?) throws -> Data](./bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md)
   Returns a bookmark for the URL, created with specified options and resource values.
-- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](nsurl/resourcevalues(forkeys:frombookmarkdata:).md)
+- [class func resourceValues(forKeys: [URLResourceKey], fromBookmarkData: Data) -> [URLResourceKey : Any]?](./resourcevalues%28forkeys,frombookmarkdata%29.md)
   Returns the resource values for properties identified by a specified array of keys contained in specified bookmark data.
-- [func startAccessingSecurityScopedResource() -> Bool](nsurl/startaccessingsecurityscopedresource.md)
+- [func startAccessingSecurityScopedResource() -> Bool](./startaccessingsecurityscopedresource%28%29.md)
   In an app that has adopted App Sandbox, makes the resource pointed to by a security-scoped URL available to the app.
-- [func stopAccessingSecurityScopedResource()](nsurl/stopaccessingsecurityscopedresource.md)
+- [func stopAccessingSecurityScopedResource()](./stopaccessingsecurityscopedresource%28%29.md)
   In an app that adopts App Sandbox, revokes access to the resource pointed to by a security-scoped URL.
-- [typealias BookmarkFileCreationOptions](nsurl/bookmarkfilecreationoptions.md)
+- [typealias BookmarkFileCreationOptions](./bookmarkfilecreationoptions.md)
   Options used when creating file bookmark data
-- [struct BookmarkCreationOptions](nsurl/bookmarkcreationoptions.md)
+- [struct BookmarkCreationOptions](./bookmarkcreationoptions.md)
   Options used when creating bookmark data.
-- [struct BookmarkResolutionOptions](nsurl/bookmarkresolutionoptions.md)
+- [struct BookmarkResolutionOptions](./bookmarkresolutionoptions.md)
   Options used when resolving bookmark data.
 
 

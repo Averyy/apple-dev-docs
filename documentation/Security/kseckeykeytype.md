@@ -1,7 +1,8 @@
 # kSecKeyKeyType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is a CSSM algorithm (`CSSM_ALGORITHMS`) representing the algorithm associated with this key.
 
@@ -12,6 +13,10 @@ Type uint32; value is a CSSM algorithm (`CSSM_ALGORITHMS`) representing the algo
 
 ```swift
 var kSecKeyKeyType: Int32 { get }
+```
+
+```c
+kSecKeyKeyType
 ```
 
 

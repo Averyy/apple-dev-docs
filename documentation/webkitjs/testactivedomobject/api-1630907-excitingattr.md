@@ -1,14 +1,15 @@
 # excitingAttr
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 readonly attribute long excitingAttr;
 ```
 

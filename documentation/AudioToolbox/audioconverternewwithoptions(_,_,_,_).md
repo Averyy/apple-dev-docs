@@ -1,7 +1,8 @@
 # AudioConverterNewWithOptions(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -17,12 +18,17 @@
 func AudioConverterNewWithOptions(_ inSourceFormat: UnsafePointer<AudioStreamBasicDescription>, _ inDestinationFormat: UnsafePointer<AudioStreamBasicDescription>, _ inOptions: AudioConverterOptions, _ outAudioConverter: UnsafeMutablePointer<AudioConverterRef?>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioConverterNewWithOptions(const AudioStreamBasicDescription *inSourceFormat, const AudioStreamBasicDescription *inDestinationFormat, AudioConverterOptions inOptions, AudioConverterRef*outAudioConverter);
+```
+
 ## See Also
 
-- [func AudioComponentValidateWithResults(AudioComponent, CFDictionary?, (AudioComponentValidationResult, CFDictionary) -> Void) -> OSStatus](audiocomponentvalidatewithresults(_:_:_:).md)
-- [func AudioConverterPrepare(UInt32, UnsafeMutableRawPointer?, ((OSStatus) -> Void)?)](audioconverterprepare(_:_:_:).md)
-- [func AudioFileComponentGetUserDataAtOffset(AudioFileComponent, UInt32, UInt32, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audiofilecomponentgetuserdataatoffset(_:_:_:_:_:_:).md)
-- [func AudioFileComponentGetUserDataSize64(AudioFileComponent, UInt32, UInt32, UnsafeMutablePointer<UInt64>) -> OSStatus](audiofilecomponentgetuserdatasize64(_:_:_:_:).md)
+### Functions
+- [func AudioComponentValidateWithResults(AudioComponent, CFDictionary?, (AudioComponentValidationResult, CFDictionary) -> Void) -> OSStatus](./audiocomponentvalidatewithresults%28_,_,_%29.md)
+- [func AudioConverterPrepare(UInt32, UnsafeMutableRawPointer?, ((OSStatus) -> Void)?)](./audioconverterprepare%28_,_,_%29.md)
+- [func AudioFileComponentGetUserDataAtOffset(AudioFileComponent, UInt32, UInt32, Int64, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audiofilecomponentgetuserdataatoffset%28_,_,_,_,_,_%29.md)
+- [func AudioFileComponentGetUserDataSize64(AudioFileComponent, UInt32, UInt32, UnsafeMutablePointer<UInt64>) -> OSStatus](./audiofilecomponentgetuserdatasize64%28_,_,_,_%29.md)
 
 
 ---

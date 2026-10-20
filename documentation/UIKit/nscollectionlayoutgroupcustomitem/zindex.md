@@ -1,7 +1,8 @@
 # zIndex
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical stacking order of the custom item in relation to other items in the group.
 
@@ -16,6 +17,10 @@ The vertical stacking order of the custom item in relation to other items in the
 
 ```swift
 var zIndex: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger zIndex;
 ```
 
 

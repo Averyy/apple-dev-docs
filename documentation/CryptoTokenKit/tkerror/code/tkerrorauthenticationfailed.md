@@ -1,16 +1,19 @@
 # TKErrorAuthenticationFailed
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 9.0+ - Deprecated in 9.0 (renamed: TKError.authenticationFailed)
+- iPadOS 9.0+ - Deprecated in 9.0 (renamed: TKError.authenticationFailed)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: TKError.authenticationFailed)
+- macOS 10.10+ - Deprecated in 10.11 (renamed: TKError.authenticationFailed)
+- tvOS 9.0+ - Deprecated in 9.0 (renamed: TKError.authenticationFailed)
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: TKError.authenticationFailed)
+- watchOS 2.0+ - Deprecated in 2.0 (renamed: TKError.authenticationFailed)
+
+> **Deprecated**: Use [`TKError.Code.authenticationFailed`](./authenticationfailed.md) instead.
 
 ## Declaration
 
@@ -20,26 +23,27 @@ static var TKErrorAuthenticationFailed: TKError.Code { get }
 
 ## See Also
 
-- [TKError.Code.notImplemented](tkerror/code/notimplemented.md)
+### Error Codes
+- [TKError.Code.notImplemented](./notimplemented.md)
   The functionality is not implemented.
-- [TKError.Code.communicationError](tkerror/code/communicationerror.md)
+- [TKError.Code.communicationError](./communicationerror.md)
   A communication error occurred.
-- [TKError.Code.corruptedData](tkerror/code/corrupteddata.md)
+- [TKError.Code.corruptedData](./corrupteddata.md)
   The data was corrupted.
-- [TKError.Code.canceledByUser](tkerror/code/canceledbyuser.md)
+- [TKError.Code.canceledByUser](./canceledbyuser.md)
   The operation was canceled by the user.
-- [TKError.Code.authenticationFailed](tkerror/code/authenticationfailed.md)
+- [TKError.Code.authenticationFailed](./authenticationfailed.md)
   Authentication failed.
-- [TKError.Code.objectNotFound](tkerror/code/objectnotfound.md)
+- [TKError.Code.objectNotFound](./objectnotfound.md)
   The object was not found.
-- [TKError.Code.tokenNotFound](tkerror/code/tokennotfound.md)
+- [TKError.Code.tokenNotFound](./tokennotfound.md)
   The token was not found.
-- [TKError.Code.badParameter](tkerror/code/badparameter.md)
+- [TKError.Code.badParameter](./badparameter.md)
   An invalid parameter was provided.
-- [TKError.Code.authenticationNeeded](tkerror/code/authenticationneeded.md)
+- [TKError.Code.authenticationNeeded](./authenticationneeded.md)
   Authentication is needed.
-- [static var TKErrorObjectNotFound: TKError.Code](tkerror/code/tkerrorobjectnotfound.md)
-- [static var TKErrorTokenNotFound: TKError.Code](tkerror/code/tkerrortokennotfound.md)
+- [static var TKErrorObjectNotFound: TKError.Code](./tkerrorobjectnotfound.md)
+- [static var TKErrorTokenNotFound: TKError.Code](./tkerrortokennotfound.md)
 
 
 ---

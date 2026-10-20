@@ -1,7 +1,8 @@
 # availableCollations
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of available collations on the system.
 

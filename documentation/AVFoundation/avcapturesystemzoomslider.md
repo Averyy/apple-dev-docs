@@ -1,7 +1,8 @@
 # AVCaptureSystemZoomSlider
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control that adjusts the video zoom factor of a capture device within the system-recommended range.
 
@@ -18,47 +19,52 @@ A control that adjusts the video zoom factor of a capture device within the syst
 class AVCaptureSystemZoomSlider
 ```
 
+```objc
+@interface AVCaptureSystemZoomSlider : AVCaptureControl
+```
+
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+- [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
 
 #### Overview
 
-The system sets the slider’s range to the value of the [`systemRecommendedVideoZoomRange`](avcapturedevice/format/systemrecommendedvideozoomrange.md) property of the device’s active format. If a device’s [`activeFormat`](avcapturedevice/activeformat.md) value changes, the slider updates its range to the new format’s recommendation.
+The system sets the slider’s range to the value of the [`systemRecommendedVideoZoomRange`](./avcapturedevice/format/systemrecommendedvideozoomrange.md) property of the device’s active format. If a device’s [`activeFormat`](./avcapturedevice/activeformat.md) value changes, the slider updates its range to the new format’s recommendation.
 
-To use this control, add it to the capture session by calling the session’s [`addControl(_:)`](avcapturesession/addcontrol(_:).md) method.
+To use this control, add it to the capture session by calling the session’s [`addControl(_:)`](./avcapturesession/addcontrol%28_%29.md) method.
 
 ## Topics
 
 ### Creating a zoom slider
-- [init(device: AVCaptureDevice)](avcapturesystemzoomslider/init(device:).md)
+- [init(device: AVCaptureDevice)](./avcapturesystemzoomslider/init%28device%29.md)
   Creates a slider to control the video zoom factor of a capture device.
-- [init(device: AVCaptureDevice, action: (CGFloat) -> Void)](avcapturesystemzoomslider/init(device:action:).md)
+- [init(device: AVCaptureDevice, action: (CGFloat) -> Void)](./avcapturesystemzoomslider/init%28device,action%29.md)
   Creates a slider to control the zoom level of the specified capture device with an action to respond to zoom changes.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureControl](avcapturecontrol.md)
+- [AVCaptureControl](./avcapturecontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+### Capture controls
+- [Enhancing your app experience with the Camera Control](./enhancing-your-app-experience-with-the-camera-control.md)
   Provide direct access to your camera app’s features to help people quickly capture the perfect shot.
-- [class AVCaptureControl](avcapturecontrol.md)
+- [class AVCaptureControl](./avcapturecontrol.md)
   An abstract base class for controls that interact with the camera system.
-- [class AVCaptureSystemExposureBiasSlider](avcapturesystemexposurebiasslider.md)
+- [class AVCaptureSystemExposureBiasSlider](./avcapturesystemexposurebiasslider.md)
   A control that adjusts the exposure bias of a capture device within the system-recommended range.
-- [class AVCaptureSlider](avcaptureslider.md)
+- [class AVCaptureSlider](./avcaptureslider.md)
   A slider control that selects a value from a bounded range.
-- [class AVCaptureIndexPicker](avcaptureindexpicker.md)
+- [class AVCaptureIndexPicker](./avcaptureindexpicker.md)
   A control for selecting from a set of mutually exclusive values by index.
 
 

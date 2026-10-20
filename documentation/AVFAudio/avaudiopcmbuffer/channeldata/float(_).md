@@ -1,7 +1,8 @@
 # AVAudioPCMBuffer.ChannelData.float(_:)
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -20,8 +21,9 @@ case float(Span<Float>)
 
 ## See Also
 
-- [AVAudioPCMBuffer.ChannelData.int16(_:)](avaudiopcmbuffer/channeldata/int16(_:).md)
-- [AVAudioPCMBuffer.ChannelData.int32(_:)](avaudiopcmbuffer/channeldata/int32(_:).md)
+### Getting typed channel data
+- [AVAudioPCMBuffer.ChannelData.int16(_:)](./int16%28_%29.md)
+- [AVAudioPCMBuffer.ChannelData.int32(_:)](./int32%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # OSLGetMarkTokenUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `OSLGetMarkTokenProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `OSLGetMarkToken
 typealias OSLGetMarkTokenUPP = OSLGetMarkTokenProcPtr
 ```
 
+```c
+typedef OSLGetMarkTokenProcPtr OSLGetMarkTokenUPP;
+```
+
 #### Discussion
 
-For a description of a mark token callback function, see [`OSLGetMarkTokenProcPtr`](oslgetmarktokenprocptr.md). 
+For a description of a mark token callback function, see [`OSLGetMarkTokenProcPtr`](./oslgetmarktokenprocptr.md). 
 
 
 ---

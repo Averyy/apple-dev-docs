@@ -1,7 +1,8 @@
 # AutomaticPresentationSizing
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default presentation sizing, appropriate for the platform.
 
@@ -22,22 +23,23 @@ struct AutomaticPresentationSizing
 
 #### Overview
 
-> **Note**: [`automatic`](presentationsizing/automatic.md)
+> **See Also**: [`automatic`](./presentationsizing/automatic.md)
 
 ## Relationships
 
 ### Conforms To
-- [PresentationSizing](presentationsizing.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [PresentationSizing](./presentationsizing.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct FittedPresentationSizing](fittedpresentationsizing.md)
+### Supporting types
+- [struct FittedPresentationSizing](./fittedpresentationsizing.md)
   The size of the presentation is dictated by the ideal size of the content.
-- [struct FormPresentationSizing](formpresentationsizing.md)
+- [struct FormPresentationSizing](./formpresentationsizing.md)
   The size is appropriate for forms and slightly less wide than`.page`
-- [struct PagePresentationSizing](pagepresentationsizing.md)
+- [struct PagePresentationSizing](./pagepresentationsizing.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 
 

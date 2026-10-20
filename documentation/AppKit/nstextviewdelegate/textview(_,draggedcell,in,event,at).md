@@ -1,18 +1,23 @@
 # textView(_:draggedCell:in:event:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the user attempts to drag a cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func textView(_ view: NSTextView, draggedCell cell: any NSTextAttachmentCellProtocol, in rect: NSRect, event: NSEvent, at charIndex: Int)
+```
+
+```objc
+- (void) textView:(NSTextView *) view draggedCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) rect event:(NSEvent *) event atIndex:(NSUInteger) charIndex;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ The delegate can use this message as its cue to initiate a dragging operation.
 
 ## See Also
 
-- [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](nsview/dragfile(_:from:slideback:event:).md)
+### Related Documentation
+- [func dragFile(String, from: NSRect, slideBack: Bool, event: NSEvent) -> Bool](../nsview/dragfile%28_,from,slideback,event%29.md)
   Initiates a dragging operation from the view, allowing the user to drag a file icon to any application that has window or view objects that accept files.
 
 

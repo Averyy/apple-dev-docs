@@ -1,7 +1,8 @@
 # MLDataValue.MultiArrayType
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A multidimensional array of data values.
 
@@ -22,32 +23,33 @@ struct MultiArrayType
 ## Topics
 
 ### Creating an array type
-- [init(MLMultiArray)](mldatavalue/multiarraytype/init(_:).md)
-- [init(shape: [Int])](mldatavalue/multiarraytype/init(shape:).md)
+- [init(MLMultiArray)](./multiarraytype/init%28_%29.md)
+- [init(shape: [Int])](./multiarraytype/init%28shape%29.md)
 ### Getting the array
-- [var mlMultiArray: MLMultiArray](mldatavalue/multiarraytype/mlmultiarray.md)
+- [var mlMultiArray: MLMultiArray](./multiarraytype/mlmultiarray.md)
 ### Getting an element
-- [subscript(_:)](mldatavalue/multiarraytype/subscript(_:).md)
+- [subscript(_:)](./multiarraytype/subscript%28_%29.md)
 ### Default Implementations
-- [MLDataValueConvertible Implementations](mldatavalue/multiarraytype/mldatavalueconvertible-implementations.md)
+- [MLDataValueConvertible Implementations](./multiarraytype/mldatavalueconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [MLDataValueConvertible](mldatavalueconvertible.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [MLDataValueConvertible](../mldatavalueconvertible.md)
 
 ## See Also
 
-- [var sequenceValue: MLDataValue.SequenceType?](mldatavalue/sequencevalue.md)
+### Accessing array values
+- [var sequenceValue: MLDataValue.SequenceType?](./sequencevalue.md)
   The underlying sequence.
-- [MLDataValue.SequenceType](mldatavalue/sequencetype.md)
+- [MLDataValue.SequenceType](./sequencetype.md)
   A sequence of data values.
-- [var multiArrayValue: MLDataValue.MultiArrayType?](mldatavalue/multiarrayvalue.md)
+- [var multiArrayValue: MLDataValue.MultiArrayType?](./multiarrayvalue.md)
   The underlying multidimensional array.
 
 

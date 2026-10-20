@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,9 +23,10 @@ let upstream: Upstream
 
 ## See Also
 
-- [let prefix: String](publishers/print/prefix.md)
+### Inspecting publisher properties
+- [let prefix: String](./prefix.md)
   A string with which to prefix all log messages.
-- [let stream: (any TextOutputStream)?](publishers/print/stream.md)
+- [let stream: (any TextOutputStream)?](./stream.md)
 
 
 ---

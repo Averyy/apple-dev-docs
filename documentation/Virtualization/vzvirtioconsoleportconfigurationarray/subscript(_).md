@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Virtualization  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the Virtio console port configuration as the specified index.
 
@@ -14,9 +15,13 @@ Returns the Virtio console port configuration as the specified index.
 subscript(portIndex: Int) -> VZVirtioConsolePortConfiguration? { get set }
 ```
 
+```objc
+- (VZVirtioConsolePortConfiguration *) objectAtIndexedSubscript:(NSUInteger) portIndex;
+```
+
 #### Return Value
 
-The [`VZVirtioConsolePortConfiguration`](vzvirtioconsoleportconfiguration.md), or nil is the index exceeds the number of configurations in the array.
+The [`VZVirtioConsolePortConfiguration`](../vzvirtioconsoleportconfiguration.md), or nil is the index exceeds the number of configurations in the array.
 
 ## Parameters
 

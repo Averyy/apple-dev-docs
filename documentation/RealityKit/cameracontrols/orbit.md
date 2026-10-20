@@ -1,7 +1,8 @@
 # orbit
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Move the camera around a target by dragging a trackpad or mouse.
 

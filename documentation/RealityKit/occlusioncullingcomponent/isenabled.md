@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether occlusion culling should be performed on this Entity and its children.
 

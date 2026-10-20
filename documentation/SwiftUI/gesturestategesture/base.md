@@ -1,7 +1,8 @@
 # base
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The originating gesture.
 
@@ -22,9 +23,10 @@ var base: Base
 
 ## See Also
 
-- [init(base: Base, state: GestureState<State>, body: (GestureStateGesture<Base, State>.Value, inout State, inout Transaction) -> Void)](gesturestategesture/init(base:state:body:).md)
+### Creating an in-progress gesture
+- [init(base: Base, state: GestureState<State>, body: (GestureStateGesture<Base, State>.Value, inout State, inout Transaction) -> Void)](./init%28base,state,body%29.md)
   Creates a new gesture that’s the result of an ongoing gesture.
-- [var state: GestureState<State>](gesturestategesture/state.md)
+- [var state: GestureState<State>](./state.md)
   A value that changes as the user performs the gesture.
 
 

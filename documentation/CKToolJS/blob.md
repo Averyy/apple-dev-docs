@@ -1,27 +1,28 @@
 # Blob
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - CKTool JS 1.2.15+
 
 ## Declaration
 
-```swift
+```
 interface Blob
 ```
 
 ## Topics
 
 ### Instance Methods
-- [arrayBuffer](blob/arraybuffer.md)
-- [text](blob/text.md)
+- [arrayBuffer](./blob/arraybuffer.md)
+- [text](./blob/text.md)
 
 ## Relationships
 
 ### Inherits From
-- [File](file.md)
+- [File](./file.md)
 
 
 ---

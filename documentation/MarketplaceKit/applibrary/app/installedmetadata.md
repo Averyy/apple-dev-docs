@@ -1,7 +1,8 @@
 # installedMetadata
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app version and the account that’s installing the app
 
@@ -18,7 +19,8 @@ final var installedMetadata: AppLibrary.App.Metadata? { get }
 
 ## See Also
 
-- [AppLibrary.App.Metadata](applibrary/app/metadata.md)
+### Inspecting an app’s version and account
+- [AppLibrary.App.Metadata](./metadata.md)
   Information about an app’s version and account.
 
 

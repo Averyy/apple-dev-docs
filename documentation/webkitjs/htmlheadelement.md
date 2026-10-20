@@ -1,7 +1,8 @@
 # HTMLHeadElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLHeadElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [profile](htmlheadelement/1633736-profile.md)
+- [profile](./htmlheadelement/api-1633736-profile.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

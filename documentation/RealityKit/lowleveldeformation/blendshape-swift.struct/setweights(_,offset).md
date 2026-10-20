@@ -1,7 +1,8 @@
 # setWeights(_:offset:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the buffer containing blend-shape weights.
 
@@ -21,7 +22,7 @@ func setWeights(_ buffer: any MTLBuffer, offset: Int) throws
 
 The buffer must contain `targetCount` Float values, one per blend-shape target.
 
-> **Note**: If `offset` is out of bounds for `buffer`, or if the buffer is too small.
+> **Throws**: If `offset` is out of bounds for `buffer`, or if the buffer is too small.
 
 ## Parameters
 

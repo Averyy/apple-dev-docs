@@ -1,7 +1,8 @@
 # sourceAppVersion
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The short version string of the app that is the source of the flow.
 
@@ -17,19 +18,24 @@ The short version string of the app that is the source of the flow.
 var sourceAppVersion: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * sourceAppVersion;
+```
+
 #### Discussion
 
 This property is `nil` if the app info is unavailable.
 
 ## See Also
 
-- [var sourceAppUniqueIdentifier: Data?](nefilterflow/sourceappuniqueidentifier.md)
+### Source app identification
+- [var sourceAppUniqueIdentifier: Data?](./sourceappuniqueidentifier.md)
   A byte string that uniquely identifies the binary for each build of the app that is the source of the flow.
-- [var sourceAppIdentifier: String?](nefilterflow/sourceappidentifier.md)
+- [var sourceAppIdentifier: String?](./sourceappidentifier.md)
   A string containing the identifier of the source app of the flow.
-- [var sourceAppAuditToken: Data?](nefilterflow/sourceappaudittoken.md)
+- [var sourceAppAuditToken: Data?](./sourceappaudittoken.md)
   The audit token of the source application of the flow.
-- [var sourceProcessAuditToken: Data?](nefilterflow/sourceprocessaudittoken.md)
+- [var sourceProcessAuditToken: Data?](./sourceprocessaudittoken.md)
   The audit token of the process that created the flow.
 
 

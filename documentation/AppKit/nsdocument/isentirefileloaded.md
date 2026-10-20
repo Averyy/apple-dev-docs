@@ -1,7 +1,8 @@
 # isEntireFileLoaded
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the document’s file is completely loaded into memory.
 
@@ -15,29 +16,34 @@ nonisolated
 var isEntireFileLoaded: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEntireFileLoaded) BOOL entireFileLoaded;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the document’s entire file is loaded into memory; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the document’s entire file is loaded into memory; otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true), which signifies that the entire file is loaded into memory. You can override this property to return [`false`](https://developer.apple.com/documentation/swift/false) if additional data needs to be read from the file. `NSDocument` may use this value to do things like prevent volume ejection or warn the user when a partially loaded file disappears from the file system.
+The default value of this property is [`true`](../../Swift/true.md), which signifies that the entire file is loaded into memory. You can override this property to return [`false`](../../Swift/false.md) if additional data needs to be read from the file. `NSDocument` may use this value to do things like prevent volume ejection or warn the user when a partially loaded file disappears from the file system.
 
 ## See Also
 
-- [var fileURL: URL?](nsdocument/fileurl.md)
+### Getting Document Metadata
+- [var fileURL: URL?](./fileurl.md)
   The location of the document’s on-disk representation.
-- [var fileModificationDate: Date?](nsdocument/filemodificationdate.md)
+- [var fileModificationDate: Date?](./filemodificationdate.md)
   The last-known modification date of the document’s on-disk representation.
-- [var keepBackupFile: Bool](nsdocument/keepbackupfile.md)
+- [var keepBackupFile: Bool](./keepbackupfile.md)
   A Boolean value that indicates whether the document archives previously saved versions of the document.
-- [var isDraft: Bool](nsdocument/isdraft.md)
+- [var isDraft: Bool](./isdraft.md)
   A Boolean value that indicates whether the document is a draft that the user has not yet saved.
-- [var fileType: String?](nsdocument/filetype.md)
+- [var fileType: String?](./filetype.md)
   The name of the document type, as specified in the app’s information property-list file.
-- [var isDocumentEdited: Bool](nsdocument/isdocumentedited.md)
+- [var isDocumentEdited: Bool](./isdocumentedited.md)
   A Boolean value that indicates whether the document has unsaved changes.
-- [var isInViewingMode: Bool](nsdocument/isinviewingmode.md)
+- [var isInViewingMode: Bool](./isinviewingmode.md)
   A Boolean value that indicates whether the document is in read-only mode.
 
 

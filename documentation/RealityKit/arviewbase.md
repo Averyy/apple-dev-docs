@@ -1,7 +1,8 @@
 # ARViewBase
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The platform-specific base class for the view into which RealityKit renders content.
 
@@ -14,15 +15,24 @@ The platform-specific base class for the view into which RealityKit renders cont
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS*
+
+```swift
+typealias ARViewBase = UIView
+```
+
+*macOS*
+
 ```swift
 typealias ARViewBase = NSView
 ```
 
 ## See Also
 
-- [class ARView](arview.md)
+### UIKit and AppKit presentation
+- [class ARView](./arview.md)
   A view that enables you to display an AR experience with RealityKit.
-- [ARView.DebugOptions](arview/debugoptions-swift.struct.md)
+- [ARView.DebugOptions](./arview/debugoptions-swift.struct.md)
   Options for drawing overlay content in a scene that can aid in debugging.
 
 

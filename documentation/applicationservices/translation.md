@@ -1,7 +1,8 @@
 # Translation
 
 **Framework**: Application Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.3+

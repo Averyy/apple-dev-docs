@@ -1,7 +1,8 @@
 # MPSNNGramMatrixCalculation
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,29 +18,33 @@
 class MPSNNGramMatrixCalculation
 ```
 
+```objc
+@interface MPSNNGramMatrixCalculation : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngrammatrixcalculation/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsnngrammatrixcalculation/init(device:).md)
-- [init(device: any MTLDevice, alpha: Float)](mpsnngrammatrixcalculation/init(device:alpha:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnngrammatrixcalculation/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsnngrammatrixcalculation/init%28device%29.md)
+- [init(device: any MTLDevice, alpha: Float)](./mpsnngrammatrixcalculation/init%28device,alpha%29.md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculation/alpha.md)
+- [var alpha: Float](./mpsnngrammatrixcalculation/alpha.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

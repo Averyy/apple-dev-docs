@@ -1,7 +1,8 @@
 # catch
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells `CancellablePromise` what callback to call on failure of the inner promise.
 
@@ -10,7 +11,7 @@ Tells `CancellablePromise` what callback to call on failure of the inner promise
 
 ## Declaration
 
-```swift
+```
 CancellablePromise catch(
 	Function? onrejected
 );

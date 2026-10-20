@@ -1,14 +1,15 @@
 # cpu_event_unregister_callback
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void cpu_event_unregister_callback(cpu_callback_t fn);
 ```
 

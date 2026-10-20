@@ -1,7 +1,8 @@
 # receiveData(_:fromApplication:session:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delivers data received from a remote application to the system for processing.
 

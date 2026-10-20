@@ -1,14 +1,15 @@
 # kESCZero21Inch
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kESCZero21Inch = 0x00
 ```
 

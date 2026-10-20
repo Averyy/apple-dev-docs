@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The human-readable name of the device.
 

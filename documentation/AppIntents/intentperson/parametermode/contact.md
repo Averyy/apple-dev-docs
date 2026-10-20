@@ -1,7 +1,8 @@
 # IntentPerson.ParameterMode.contact
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The parameter shows an interface allowing the user to pick a contact
 
@@ -11,7 +12,7 @@ The parameter shows an interface allowing the user to pick a contact
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ case contact
 
 ## See Also
 
-- [IntentPerson.ParameterMode.email](intentperson/parametermode/email.md)
+### Getting the interface type
+- [IntentPerson.ParameterMode.email](./email.md)
   The parameter shows an interface allowing the user to pick an email
-- [IntentPerson.ParameterMode.emailOrPhone](intentperson/parametermode/emailorphone.md)
+- [IntentPerson.ParameterMode.emailOrPhone](./emailorphone.md)
   The parameter shows an interface allowing the user to pick an email or phone number
-- [IntentPerson.ParameterMode.phone](intentperson/parametermode/phone.md)
+- [IntentPerson.ParameterMode.phone](./phone.md)
   The parameter shows an interface allowing the user to pick a phone number
 
 

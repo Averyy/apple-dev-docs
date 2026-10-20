@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboard3
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 32 (decimal)/20 (hexadecimal).
 
@@ -18,25 +19,30 @@ The raw usage code 32 (decimal)/20 (hexadecimal).
 case keyboard3
 ```
 
+```c
+UIKeyboardHIDUsageKeyboard3
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboard0](uikeyboardhidusage/keyboard0.md)
+### Numerical keys
+- [UIKeyboardHIDUsage.keyboard0](./keyboard0.md)
   The raw usage code 39 (decimal)/27 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard1](uikeyboardhidusage/keyboard1.md)
+- [UIKeyboardHIDUsage.keyboard1](./keyboard1.md)
   The raw usage code 30 (decimal)/1E (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard2](uikeyboardhidusage/keyboard2.md)
+- [UIKeyboardHIDUsage.keyboard2](./keyboard2.md)
   The raw usage code 31 (decimal)/1F (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard4](uikeyboardhidusage/keyboard4.md)
+- [UIKeyboardHIDUsage.keyboard4](./keyboard4.md)
   The raw usage code 33 (decimal)/21 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard5](uikeyboardhidusage/keyboard5.md)
+- [UIKeyboardHIDUsage.keyboard5](./keyboard5.md)
   The raw usage code 34 (decimal)/22 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard6](uikeyboardhidusage/keyboard6.md)
+- [UIKeyboardHIDUsage.keyboard6](./keyboard6.md)
   The raw usage code 35 (decimal)/23 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard7](uikeyboardhidusage/keyboard7.md)
+- [UIKeyboardHIDUsage.keyboard7](./keyboard7.md)
   The raw usage code 36 (decimal)/24 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard8](uikeyboardhidusage/keyboard8.md)
+- [UIKeyboardHIDUsage.keyboard8](./keyboard8.md)
   The raw usage code 37 (decimal)/25 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboard9](uikeyboardhidusage/keyboard9.md)
+- [UIKeyboardHIDUsage.keyboard9](./keyboard9.md)
   The raw usage code 38 (decimal)/26 (hexadecimal).
 
 

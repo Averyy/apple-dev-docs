@@ -1,7 +1,8 @@
 # automotive
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the device is in an automobile.
 
@@ -18,17 +19,22 @@ A Boolean indicating whether the device is in an automobile.
 var automotive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL automotive;
+```
+
 ## See Also
 
-- [var stationary: Bool](cmmotionactivity/stationary.md)
+### Getting the Type of Motion
+- [var stationary: Bool](./stationary.md)
   A Boolean indicating whether the device is stationary.
-- [var walking: Bool](cmmotionactivity/walking.md)
+- [var walking: Bool](./walking.md)
   A Boolean indicating whether the device is on a walking person.
-- [var running: Bool](cmmotionactivity/running.md)
+- [var running: Bool](./running.md)
   A Boolean indicating whether the device is on a running person.
-- [var cycling: Bool](cmmotionactivity/cycling.md)
+- [var cycling: Bool](./cycling.md)
   A Boolean indicating whether the device is in a bicycle.
-- [var unknown: Bool](cmmotionactivity/unknown.md)
+- [var unknown: Bool](./unknown.md)
   A Boolean indicating whether the type of motion is unknown.
 
 

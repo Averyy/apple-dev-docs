@@ -1,7 +1,8 @@
 # NSSplitViewItem.CollapseBehavior.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The item uses the default collapsing behavior.
 
@@ -14,13 +15,18 @@ The item uses the default collapsing behavior.
 case `default`
 ```
 
+```c
+NSSplitViewItemCollapseBehaviorDefault
+```
+
 ## See Also
 
-- [NSSplitViewItem.CollapseBehavior.preferResizingSplitViewWithFixedSiblings](nssplitviewitem/collapsebehavior-swift.enum/preferresizingsplitviewwithfixedsiblings.md)
+### Constants
+- [NSSplitViewItem.CollapseBehavior.preferResizingSplitViewWithFixedSiblings](./preferresizingsplitviewwithfixedsiblings.md)
   The item’s preference is to keep the other panes at their current size and position onscreen, potentially growing or shrinking the window in the direction to best preserve that.
-- [NSSplitViewItem.CollapseBehavior.preferResizingSiblingsWithFixedSplitView](nssplitviewitem/collapsebehavior-swift.enum/preferresizingsiblingswithfixedsplitview.md)
+- [NSSplitViewItem.CollapseBehavior.preferResizingSiblingsWithFixedSplitView](./preferresizingsiblingswithfixedsplitview.md)
   The item’s preference is to resize the other split panes.
-- [NSSplitViewItem.CollapseBehavior.useConstraints](nssplitviewitem/collapsebehavior-swift.enum/useconstraints.md)
+- [NSSplitViewItem.CollapseBehavior.useConstraints](./useconstraints.md)
   The item collapses and expands using a constraint animation, with a constraint priority of the item’s holding priority.
 
 

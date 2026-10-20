@@ -1,7 +1,8 @@
 # shape(_:eoFill:size:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes a pointer style with a given shape.
 
@@ -16,9 +17,9 @@ static func shape(_ shape: some Shape, eoFill: Bool = false, size: CGSize) -> Po
 
 #### Discussion
 
-For guidance on using a custom pointer, refer to [`Pointing devices`](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
+For guidance on using a custom pointer, refer to [Pointing devices](https://developer.apple.com/design/human-interface-guidelines/pointing-devices) in the Human Interface Guidelines.
 
-You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](view/pointerstyle(_:).md) modifier.
+You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 
 ## Parameters
 
@@ -28,7 +29,8 @@ You may apply this pointer style to a single view or a view hierarchy using the 
 
 ## See Also
 
-- [static image(_:hotSpot:)](pointerstyle/image(_:hotspot:).md)
+### Creating custom pointer styles
+- [static image(_:hotSpot:)](./image%28_,hotspot%29.md)
   Initializes a pointer style with a given image and hot spot.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a GPU family instance from a raw value.
 
@@ -23,7 +24,7 @@ init?(rawValue: Int)
 
 You don’t need to call this initializer because it’s part of how Swift represents an enumeration from an Objective-C framework.
 
-> 💡 **Tip**:  Use one of the [`MTLGPUFamily`](mtlgpufamily.md) cases, such as [`MTLGPUFamily.metal3`](mtlgpufamily/metal3.md), instead of this initializer.
+> 💡 **Tip**:  Use one of the [`MTLGPUFamily`](../mtlgpufamily.md) cases, such as [`MTLGPUFamily.metal3`](./metal3.md), instead of this initializer.
 
 ## Parameters
 

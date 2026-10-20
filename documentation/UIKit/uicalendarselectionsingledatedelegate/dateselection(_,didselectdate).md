@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the delegate that a user selected a date represented by date components.
@@ -16,6 +17,10 @@ Informs the delegate that a user selected a date represented by date components.
 
 ```swift
 func dateSelection(_ selection: UICalendarSelectionSingleDate, didSelectDate dateComponents: DateComponents?)
+```
+
+```objc
+- (void) dateSelection:(UICalendarSelectionSingleDate *) selection didSelectDate:(NSDateComponents *) dateComponents;
 ```
 
 ## Parameters

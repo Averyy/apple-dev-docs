@@ -1,7 +1,8 @@
 # JSONWritingOptions
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of JSON file-reading options.
 
@@ -23,14 +24,14 @@ struct JSONWritingOptions
 ## Topics
 
 ### Initializers
-- [init()](jsonwritingoptions/init.md)
+- [init()](./jsonwritingoptions/init%28%29.md)
   Creates a set of options for writing a JSON file.
 ### Instance Properties
-- [var dateFormatter: (Date) -> String](jsonwritingoptions/dateformatter.md)
+- [var dateFormatter: (Date) -> String](./jsonwritingoptions/dateformatter.md)
   A closure that maps dates to their string representations.
-- [var prettyPrint: Bool](jsonwritingoptions/prettyprint.md)
+- [var prettyPrint: Bool](./jsonwritingoptions/prettyprint.md)
   A Boolean value that indicates whether to split lines and indent the generated JSON.
-- [var sortKeys: Bool](jsonwritingoptions/sortkeys.md)
+- [var sortKeys: Bool](./jsonwritingoptions/sortkeys.md)
   A Boolean value that indicates whether to sort the keys.
 
 

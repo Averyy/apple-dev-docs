@@ -1,7 +1,8 @@
 # vehicleReports
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration details of the provisioned vehicles that match your company’s make.
 
@@ -24,7 +25,8 @@ The system maintains a cache of provisioned vehicles and updates that informatio
 
 ## See Also
 
-- [func isPassiveEntryAvailable(forVehicle: String) throws -> Bool](carkeyremotecontrolsession/ispassiveentryavailable(forvehicle:).md)
+### Getting Vehicle Information
+- [func isPassiveEntryAvailable(forVehicle: String) throws -> Bool](./ispassiveentryavailable%28forvehicle%29.md)
   Returns a Boolean value that indicates whether passive entry is currently available for the specified vehicle.
 
 

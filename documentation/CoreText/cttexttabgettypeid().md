@@ -1,7 +1,8 @@
 # CTTextTabGetTypeID()
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier of the text tab object.
 
@@ -18,6 +19,10 @@ Returns the Core Foundation type identifier of the text tab object.
 
 ```swift
 func CTTextTabGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID CTTextTabGetTypeID();
 ```
 
 

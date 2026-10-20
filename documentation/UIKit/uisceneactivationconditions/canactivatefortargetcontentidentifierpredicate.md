@@ -1,7 +1,8 @@
 # canActivateForTargetContentIdentifierPredicate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Conditions for which UIKit can activate the scene if a better alternative doesn’t exist.
 
@@ -19,15 +20,20 @@ Conditions for which UIKit can activate the scene if a better alternative doesn�
 var canActivateForTargetContentIdentifierPredicate: NSPredicate { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSPredicate * canActivateForTargetContentIdentifierPredicate;
+```
+
 #### Discussion
 
-Use this property to specify the tasks your scene can handle, if needed. UIKit evaluates your predicate against the [`targetContentIdentifier`](uiapplicationshortcutitem/targetcontentidentifier.md) property of the object causing the activation of the scene. Many different objects contain target content identifiers, including [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity), [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent), and [`UIApplicationShortcutItem`](uiapplicationshortcutitem.md).
+Use this property to specify the tasks your scene can handle, if needed. UIKit evaluates your predicate against the [`targetContentIdentifier`](../uiapplicationshortcutitem/targetcontentidentifier.md) property of the object causing the activation of the scene. Many different objects contain target content identifiers, including [`NSUserActivity`](../../Foundation/nsuseractivity.md), [`UNNotificationContent`](../../UserNotifications/unnotificationcontent.md), and [`UIApplicationShortcutItem`](../uiapplicationshortcutitem.md).
 
-UIKit must be able to evaluate your predicate’s conditions outside the scope of your app, so don’t include conditions that require dynamic evaluation. For example, don’t include key paths in your predicate and don’t create predicates that evaluate conditions using selectors or blocks. The default value of this property is a predicate that always evaluates to the value [`true`](https://developer.apple.com/documentation/swift/true).
+UIKit must be able to evaluate your predicate’s conditions outside the scope of your app, so don’t include conditions that require dynamic evaluation. For example, don’t include key paths in your predicate and don’t create predicates that evaluate conditions using selectors or blocks. The default value of this property is a predicate that always evaluates to the value [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var prefersToActivateForTargetContentIdentifierPredicate: NSPredicate](uisceneactivationconditions/preferstoactivatefortargetcontentidentifierpredicate.md)
+### Specifying the conditions
+- [var prefersToActivateForTargetContentIdentifierPredicate: NSPredicate](./preferstoactivatefortargetcontentidentifierpredicate.md)
   The set of conditions for which UIKit chooses to activate this scene over others.
 
 

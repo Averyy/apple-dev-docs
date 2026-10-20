@@ -1,7 +1,8 @@
 # ShaderGraph.NodeDefinition.Availability.unavailable
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

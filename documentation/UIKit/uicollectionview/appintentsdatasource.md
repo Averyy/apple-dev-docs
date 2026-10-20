@@ -1,7 +1,8 @@
 # appIntentsDataSource
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object acting as the collection view’s data source for app entity identifiers that make a cell’s content avdiscoverable by Apple Intelligence and Siri.
 
@@ -21,7 +22,7 @@ The object acting as the collection view’s data source for app entity identifi
 
 #### Discussion
 
-For more information, refer to [`Providing contextual cues to Apple Intelligence and Siri`](https://developer.apple.com/documentation/appintents/providing-contextual-cues-to-apple-intelligence-and-siri) and [`App Intents`](https://developer.apple.com/documentation/appintents).
+For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](../../AppIntents/providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](../../AppIntents/AppIntents.md).
 
 
 ---

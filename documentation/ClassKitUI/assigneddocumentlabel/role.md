@@ -1,7 +1,8 @@
 # AssignedDocumentLabel.Role
 
 **Framework**: ClassKit UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of assignment information to display.
 
@@ -25,18 +26,18 @@ For example, use `.status` to show submission status or `.date` to show relevant
 ## Topics
 
 ### Type Properties
-- [static let date: AssignedDocumentLabel.Role](assigneddocumentlabel/role/date.md)
+- [static let date: AssignedDocumentLabel.Role](./role/date.md)
   Displays the relevant assigned document date.
-- [static let status: AssignedDocumentLabel.Role](assigneddocumentlabel/role/status.md)
+- [static let status: AssignedDocumentLabel.Role](./role/status.md)
   Displays assigned document’s submission status text.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

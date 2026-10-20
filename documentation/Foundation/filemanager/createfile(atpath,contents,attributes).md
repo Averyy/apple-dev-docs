@@ -1,7 +1,8 @@
 # createFile(atPath:contents:attributes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a file with the specified content and attributes at the given location.
 
@@ -20,9 +21,13 @@ Creates a file with the specified content and attributes at the given location.
 func createFile(atPath path: String, contents data: Data?, attributes attr: [FileAttributeKey : Any]? = nil) -> Bool
 ```
 
+```objc
+- (BOOL) createFileAtPath:(NSString *) path contents:(NSData *) data attributes:(NSDictionary<NSString *,id> *) attr;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation was successful or if the item already exists, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation was successful or if the item already exists, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -38,27 +43,29 @@ If a file already exists at `path`, this method overwrites the contents of that 
 
 - `path`: The path for the new file.
 - `data`: A data object containing the contents of the new file.
-- `attr`: A dictionary containing the attributes to associate with the new file. You can use these attributes to set the owner and group numbers, file permissions, and modification date. For a list of keys, see [`FileAttributeKey`](fileattributekey.md). If you specify `nil` for `attributes`, the file is created with a set of default attributes.
+- `attr`: A dictionary containing the attributes to associate with the new file. You can use these attributes to set the owner and group numbers, file permissions, and modification date. For a list of keys, see [`FileAttributeKey`](../fileattributekey.md). If you specify `nil` for `attributes`, the file is created with a set of default attributes.
 
 ## See Also
 
-- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](filemanager/attributesofitem(atpath:).md)
+### Related Documentation
+- [func attributesOfItem(atPath: String) throws -> [FileAttributeKey : Any]](./attributesofitem%28atpath%29.md)
   Returns the attributes of the item at a given path.
-- [func contents(atPath: String) -> Data?](filemanager/contents(atpath:).md)
+- [func contents(atPath: String) -> Data?](./contents%28atpath%29.md)
   Returns the contents of the file at the specified path.
-- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](filemanager/setattributes(_:ofitematpath:).md)
+- [func setAttributes([FileAttributeKey : Any], ofItemAtPath: String) throws](./setattributes%28_,ofitematpath%29.md)
   Sets the attributes of the specified file or directory.
-- [struct FileAttributeKey](fileattributekey.md)
+- [struct FileAttributeKey](../fileattributekey.md)
   Keys in dictionaries used to get and set file attributes.
-- [func createDirectory(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](filemanager/createdirectory(at:withintermediatedirectories:attributes:).md)
+### Creating and deleting items
+- [func createDirectory(at: URL, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](./createdirectory%28at,withintermediatedirectories,attributes%29.md)
   Creates a directory with the given attributes at the specified URL.
-- [func createDirectory(atPath: String, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](filemanager/createdirectory(atpath:withintermediatedirectories:attributes:).md)
+- [func createDirectory(atPath: String, withIntermediateDirectories: Bool, attributes: [FileAttributeKey : Any]?) throws](./createdirectory%28atpath,withintermediatedirectories,attributes%29.md)
   Creates a directory with given attributes at the specified path.
-- [func removeItem(at: URL) throws](filemanager/removeitem(at:).md)
+- [func removeItem(at: URL) throws](./removeitem%28at%29.md)
   Removes the file or directory at the specified URL.
-- [func removeItem(atPath: String) throws](filemanager/removeitem(atpath:).md)
+- [func removeItem(atPath: String) throws](./removeitem%28atpath%29.md)
   Removes the file or directory at the specified path.
-- [func trashItem(at: URL, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/trashitem(at:resultingitemurl:).md)
+- [func trashItem(at: URL, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](./trashitem%28at,resultingitemurl%29.md)
   Moves an item to the trash.
 
 

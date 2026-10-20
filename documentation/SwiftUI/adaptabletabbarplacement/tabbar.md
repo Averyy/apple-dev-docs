@@ -1,7 +1,8 @@
 # tabBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tab bar of a tab view.
 

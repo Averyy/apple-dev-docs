@@ -1,7 +1,8 @@
 # cardEffectiveState
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effective state of the card that the system read.
 

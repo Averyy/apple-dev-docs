@@ -1,7 +1,8 @@
 # preferred
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The preference for the device to store the resident key.
 
@@ -18,11 +19,16 @@ The preference for the device to store the resident key.
 static let preferred: ASAuthorizationPublicKeyCredentialResidentKeyPreference
 ```
 
+```c
+extern ASAuthorizationPublicKeyCredentialResidentKeyPreference const ASAuthorizationPublicKeyCredentialResidentKeyPreferencePreferred;
+```
+
 ## See Also
 
-- [static let discouraged: ASAuthorizationPublicKeyCredentialResidentKeyPreference](asauthorizationpublickeycredentialresidentkeypreference/discouraged.md)
+### Getting preferences
+- [static let discouraged: ASAuthorizationPublicKeyCredentialResidentKeyPreference](./discouraged.md)
   The preference for the device not to store the resident key.
-- [static let required: ASAuthorizationPublicKeyCredentialResidentKeyPreference](asauthorizationpublickeycredentialresidentkeypreference/required.md)
+- [static let required: ASAuthorizationPublicKeyCredentialResidentKeyPreference](./required.md)
   The device must store the resident key.
 
 

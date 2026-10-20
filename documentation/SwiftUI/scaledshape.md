@@ -1,7 +1,8 @@
 # ScaledShape
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A shape with a scale transform applied to it.
 
@@ -24,31 +25,32 @@ struct ScaledShape<Content> where Content : Shape
 ## Topics
 
 ### Creating a scaled shape
-- [init(shape: Content, scale: CGSize, anchor: UnitPoint)](scaledshape/init(shape:scale:anchor:).md)
+- [init(shape: Content, scale: CGSize, anchor: UnitPoint)](./scaledshape/init%28shape,scale,anchor%29.md)
 ### Getting the shape’s characteristics
-- [var anchor: UnitPoint](scaledshape/anchor.md)
-- [var scale: CGSize](scaledshape/scale.md)
-- [var shape: Content](scaledshape/shape.md)
+- [var anchor: UnitPoint](./scaledshape/anchor.md)
+- [var scale: CGSize](./scaledshape/scale.md)
+- [var shape: Content](./scaledshape/shape.md)
 ### Supporting types
-- [var animatableData: ScaledShape<Content>.AnimatableData](scaledshape/animatabledata.md)
+- [var animatableData: ScaledShape<Content>.AnimatableData](./scaledshape/animatabledata.md)
   The data to animate.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct RotatedShape](rotatedshape.md)
+### Transforming a shape
+- [struct RotatedShape](./rotatedshape.md)
   A shape with a rotation transform applied to it.
-- [struct OffsetShape](offsetshape.md)
+- [struct OffsetShape](./offsetshape.md)
   A shape with a translation offset transform applied to it.
-- [struct TransformedShape](transformedshape.md)
+- [struct TransformedShape](./transformedshape.md)
   A shape with an affine transform applied to it.
 
 

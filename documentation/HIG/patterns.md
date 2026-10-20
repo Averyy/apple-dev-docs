@@ -35,7 +35,6 @@ Get design guidance for supporting common user actions, tasks, and experiences.
 - [Undo and redo](/design/human-interface-guidelines/undo-and-redo) - Undo and redo gives people easy ways to reverse many types of actions, which can also help people explore and experiment safely as they learn a new interface or task.
 - [Workouts](/design/human-interface-guidelines/workouts) - A great workout or fitness experience encourages people to engage with their current activity and helps them track their progress on their devices.
 
-
 ## Topics
 
 - [Charting data](charting-data.md) - Presenting data in a chart can help you communicate information with clarity and appeal.
@@ -63,8 +62,6 @@ Get design guidance for supporting common user actions, tasks, and experiences.
 - [Settings](settings.md) - People expect apps and games to just work, but they also appreciate having ways to customize the experience to fit their needs.
 - [Undo and redo](undo-and-redo.md) - Undo and redo gives people easy ways to reverse many types of actions, which can also help people explore and experiment safely as they learn a new interface or task.
 - [Workouts](workouts.md) - A great workout or fitness experience encourages people to engage with their current activity and helps them track their progress on their devices.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/patterns](https://developer.apple.com/design/human-interface-guidelines/patterns)*

@@ -1,7 +1,8 @@
 # Failures
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A map of server-to-server notification failure reasons and counts that represent the number of failures during a performance test.
 
@@ -10,31 +11,32 @@ A map of server-to-server notification failure reasons and counts that represent
 
 ## Declaration
 
-```swift
+```
 object Failures
 ```
 
 ## Properties
 
-- `Any Key` (int32): A string that describes the success or error the server encountered as it attempted to send a notification to your server as part of a performance test. For possible keys, see [`sendAttemptResult`](sendattemptresult.md).
+- `Any Key` (int32): A string that describes the success or error the server encountered as it attempted to send a notification to your server as part of a performance test. For possible keys, see [`sendAttemptResult`](./sendattemptresult.md).
 
 ## See Also
 
-- [object PerformanceTestConfig](performancetestconfig.md)
+### Performance testing
+- [object PerformanceTestConfig](./performancetestconfig.md)
   An object that enumerates the test configuration parameters.
-- [object PerformanceTestRequest](performancetestrequest.md)
+- [object PerformanceTestRequest](./performancetestrequest.md)
   The request object you provide for a performance test that contains an original transaction identifier.
-- [object PerformanceTestResponse](performancetestresponse.md)
+- [object PerformanceTestResponse](./performancetestresponse.md)
   The performance test response object.
-- [object PerformanceTestResponseTimes](performancetestresponsetimes.md)
+- [object PerformanceTestResponseTimes](./performancetestresponsetimes.md)
   An object that describes test response times.
-- [object PerformanceTestResultResponse](performancetestresultresponse.md)
+- [object PerformanceTestResultResponse](./performancetestresultresponse.md)
   An object the API returns that describes the performance test results.
-- [type PerformanceTestStatus](performanceteststatus.md)
+- [type PerformanceTestStatus](./performanceteststatus.md)
   The status of the performance test.
-- [type sendAttemptResult](sendattemptresult.md)
+- [type sendAttemptResult](./sendattemptresult.md)
   The success or error information the App Store server records when it attempts to send an App Store server notification to your server.
-- [type requestId](requestid.md)
+- [type requestId](./requestid.md)
   The identifier of the performance test request.
 
 

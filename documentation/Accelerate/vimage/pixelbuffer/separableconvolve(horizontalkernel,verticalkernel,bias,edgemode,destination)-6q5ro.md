@@ -1,7 +1,8 @@
 # separableConvolve(horizontalKernel:verticalKernel:bias:edgeMode:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs separable convolution on a multiple plane 32-bit pixel buffer.
 
@@ -11,7 +12,7 @@ Performs separable convolution on a multiple plane 32-bit pixel buffer.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,11 @@ Performs separable convolution on a multiple plane 32-bit pixel buffer.
 func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float = 0, edgeMode: vImage.EdgeMode<Pixel_F>, destination: vImage.PixelBuffer<Format>)
 ```
 
+Available when `Format` conforms to `MultiplePlanePixelFormat` and `Format.ComponentType` is `Float`.
+
 #### Discussion
 
-The following code shows how to generate a multiplane pixel buffer from a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance and apply a Gaussian blur using separable convolution:
+The following code shows how to generate a multiplane pixel buffer from a [`CGImage`](../../../CoreGraphics/cgimage.md) instance and apply a Gaussian blur using separable convolution:
 
 ```swift
 let srcImage =  imageLiteral(resourceName: " ... ").cgImage(
@@ -65,22 +68,24 @@ let outputImage = interleavedBuffer.makeCGImage(cgImageFormat: cgImageFormat)
 - `horizontalKernel`: The 1D horizontal convolution kernel.
 - `verticalKernel`: The 1D vertical convolution kernel.
 - `bias`: A value that the operation adds to each element in the convolution result, before performing any clipping.
-- `edgeMode`: The convolution edge mode. The background color must be a single [`Pixel_F`](pixel_f.md) value.
+- `edgeMode`: The convolution edge mode. The background color must be a single [`Pixel_F`](../../pixel_f.md) value.
 - `destination`: The destination pixel buffer.
 
 ## See Also
 
-- [Blurring an image](blurring-an-image.md)
+### Related Documentation
+- [Blurring an image](../../blurring-an-image.md)
   Filter an image by convolving it with custom and high-speed kernels.
-- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16U>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:destination:)-2iyq6.md)
+### Separable convolution
+- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16U>, destination: vImage.PixelBuffer<Format>)](./separableconvolve%28horizontalkernel,verticalkernel,bias,edgemode,destination%29-2iyq6.md)
   Performs separable convolution on an 8-bit planar pixel buffer.
-- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16F>, useFloat16Accumulator: Bool, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:usefloat16accumulator:destination:).md)
+- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16F>, useFloat16Accumulator: Bool, destination: vImage.PixelBuffer<Format>)](./separableconvolve%28horizontalkernel,verticalkernel,bias,edgemode,usefloat16accumulator,destination%29.md)
   Performs separable convolution on a 16-bit planar pixel buffer.
-- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_F>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:destination:)-2qofv.md)
+- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_F>, destination: vImage.PixelBuffer<Format>)](./separableconvolve%28horizontalkernel,verticalkernel,bias,edgemode,destination%29-2qofv.md)
   Performs separable convolution on a 32-bit planar pixel buffer.
-- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16U>, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/separableconvolve(horizontalkernel:verticalkernel:bias:edgemode:destination:)-6t9b3.md)
+- [func separableConvolve(horizontalKernel: [Float], verticalKernel: [Float], bias: Float, edgeMode: vImage.EdgeMode<Pixel_16U>, destination: vImage.PixelBuffer<Format>)](./separableconvolve%28horizontalkernel,verticalkernel,bias,edgemode,destination%29-6t9b3.md)
   Performs separable convolution on a multiple plane 8-bit pixel buffer.
-- [vImage.ConvolutionKernel](vimage/convolutionkernel.md)
+- [vImage.ConvolutionKernel](../convolutionkernel.md)
   Constants that describe 1D convolution kernels.
 
 

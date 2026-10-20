@@ -1,18 +1,19 @@
 # preventAutoActivation
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Prevents automatic font activation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Prevents automatic font activation.
 static var preventAutoActivation: CTFontOptions { get }
 ```
 
+```c
+kCTFontOptionsPreventAutoActivation
+```
+
 ## See Also
 
-- [static var preferSystemFont: CTFontOptions](ctfontoptions/prefersystemfont.md)
+### Constants
+- [static var preferSystemFont: CTFontOptions](./prefersystemfont.md)
   Font matching prefers to match Apple system fonts.
 
 

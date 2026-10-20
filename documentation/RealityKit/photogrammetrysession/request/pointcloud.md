@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.pointCloud
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw detected points from the pictures with no polygons connecting them.
 

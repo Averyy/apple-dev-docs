@@ -1,7 +1,8 @@
 # CloudKitContainer
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for specifying the CloudKit container used for syncing tips.
 
@@ -22,23 +23,23 @@ struct CloudKitContainer
 
 #### Overview
 
-For more information on CloudKit syncing, see [`cloudKitContainer(_:)`](tips/configurationoption/cloudkitcontainer(_:).md).
+For more information on CloudKit syncing, see [`cloudKitContainer(_:)`](./cloudkitcontainer%28_%29.md).
 
 ## Topics
 
 ### Type Properties
-- [static var automatic: Tips.ConfigurationOption.CloudKitContainer](tips/configurationoption/cloudkitcontainer/automatic.md)
+- [static var automatic: Tips.ConfigurationOption.CloudKitContainer](./cloudkitcontainer/automatic.md)
   Syncs the TipKit datastore using the first container in your app’s entitlements with a “.tips” suffix or, if none is available, the primary container is used.
 ### Type Methods
-- [static func named(String) -> Tips.ConfigurationOption.CloudKitContainer](tips/configurationoption/cloudkitcontainer/named(_:).md)
+- [static func named(String) -> Tips.ConfigurationOption.CloudKitContainer](./cloudkitcontainer/named%28_%29.md)
   Syncs the TipKit datastore using the specified CloudKit container.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

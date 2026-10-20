@@ -1,7 +1,8 @@
 # nowPlayingInfoCenter
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Now Playing information center associated with the session.
 
@@ -18,9 +19,14 @@ The Now Playing information center associated with the session.
 var nowPlayingInfoCenter: MPNowPlayingInfoCenter { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MPNowPlayingInfoCenter * nowPlayingInfoCenter;
+```
+
 ## See Also
 
-- [var automaticallyPublishesNowPlayingInfo: Bool](mpnowplayingsession/automaticallypublishesnowplayinginfo.md)
+### Configuring Now Playing information
+- [var automaticallyPublishesNowPlayingInfo: Bool](./automaticallypublishesnowplayinginfo.md)
   A Boolean that indicates whether Now Playing info automatically publishes.
 
 

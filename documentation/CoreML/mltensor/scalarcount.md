@@ -1,7 +1,8 @@
 # scalarCount
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of scalar elements in the tensor.
 
@@ -22,13 +23,14 @@ var scalarCount: Int { get }
 
 ## See Also
 
-- [var isScalar: Bool](mltensor/isscalar.md)
+### Accessing tensor properties
+- [var isScalar: Bool](./isscalar.md)
   A Boolean value indicating whether the tensor is a scalar (when the `rank` is equal to `0`) or not.
-- [var rank: Int](mltensor/rank.md)
+- [var rank: Int](./rank.md)
   The number of dimensions of the tensor.
-- [var scalarType: any MLTensorScalar.Type](mltensor/scalartype.md)
+- [var scalarType: any MLTensorScalar.Type](./scalartype.md)
   The type of scalars in the tensor.
-- [var shape: [Int]](mltensor/shape.md)
+- [var shape: [Int]](./shape.md)
   The shape of the tensor.
 
 

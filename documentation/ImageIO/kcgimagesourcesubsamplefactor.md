@@ -1,7 +1,8 @@
 # kCGImageSourceSubsampleFactor
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The factor by which to scale down any returned images.
 
@@ -20,31 +21,36 @@ The factor by which to scale down any returned images.
 let kCGImageSourceSubsampleFactor: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageSourceSubsampleFactor;
+```
+
 #### Discussion
 
-When you specify this key, the image source scales down the image data by the specified numerical factor. The value of this key must be a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) containing the integer value 2, 4, or 8. If the image doesn’t support the specified scale factor, the image source provides a larger or full-size normal image.
+When you specify this key, the image source scales down the image data by the specified numerical factor. The value of this key must be a [`CFNumber`](../CoreFoundation/cfnumber.md) containing the integer value 2, 4, or 8. If the image doesn’t support the specified scale factor, the image source provides a larger or full-size normal image.
 
 Image sources support this option only for JPEG, HEIF, TIFF, and PNG images.
 
 ## See Also
 
-- [let kCGImageSourceTypeIdentifierHint: CFString](kcgimagesourcetypeidentifierhint.md)
+### Specifying the Read Options
+- [let kCGImageSourceTypeIdentifierHint: CFString](./kcgimagesourcetypeidentifierhint.md)
   The uniform type identifier that represents your best guess for the image’s type.
-- [let kCGImageSourceShouldAllowFloat: CFString](kcgimagesourceshouldallowfloat.md)
+- [let kCGImageSourceShouldAllowFloat: CFString](./kcgimagesourceshouldallowfloat.md)
   A Boolean that indicates whether to use floating-point values in returned images.
-- [let kCGImageSourceShouldCache: CFString](kcgimagesourceshouldcache.md)
+- [let kCGImageSourceShouldCache: CFString](./kcgimagesourceshouldcache.md)
   A Boolean value that indicates whether to cache the decoded image.
-- [let kCGImageSourceShouldCacheImmediately: CFString](kcgimagesourceshouldcacheimmediately.md)
+- [let kCGImageSourceShouldCacheImmediately: CFString](./kcgimagesourceshouldcacheimmediately.md)
   A Boolean value that indicates whether image decoding and caching happens at image creation time.
-- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](kcgimagesourcecreatethumbnailfromimageifabsent.md)
+- [let kCGImageSourceCreateThumbnailFromImageIfAbsent: CFString](./kcgimagesourcecreatethumbnailfromimageifabsent.md)
   A Boolean value that indicates whether to create a thumbnail image automatically if the data source doesn’t contain one.
-- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](kcgimagesourcecreatethumbnailfromimagealways.md)
+- [let kCGImageSourceCreateThumbnailFromImageAlways: CFString](./kcgimagesourcecreatethumbnailfromimagealways.md)
   A Boolean value that indicates whether to always create a thumbnail image.
-- [let kCGImageSourceThumbnailMaxPixelSize: CFString](kcgimagesourcethumbnailmaxpixelsize.md)
+- [let kCGImageSourceThumbnailMaxPixelSize: CFString](./kcgimagesourcethumbnailmaxpixelsize.md)
   The maximum width and height of a thumbnail image, specified in pixels.
-- [let kCGImageSourceCreateThumbnailWithTransform: CFString](kcgimagesourcecreatethumbnailwithtransform.md)
+- [let kCGImageSourceCreateThumbnailWithTransform: CFString](./kcgimagesourcecreatethumbnailwithtransform.md)
   A Boolean value that indicates whether to rotate and scale the thumbnail image to match the image’s orientation and aspect ratio.
-- [let kCGImageSourceAllowableTypes: CFString](kcgimagesourceallowabletypes.md)
+- [let kCGImageSourceAllowableTypes: CFString](./kcgimagesourceallowabletypes.md)
   Option key for restricting which image formats can be decoded.
 
 

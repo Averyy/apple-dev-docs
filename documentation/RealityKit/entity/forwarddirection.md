@@ -1,7 +1,8 @@
 # Entity.ForwardDirection
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the forward direction for an entity.
 
@@ -22,24 +23,25 @@ enum ForwardDirection
 ## Topics
 
 ### Enumeration Cases
-- [Entity.ForwardDirection.negativeZ](entity/forwarddirection/negativez.md)
-- [Entity.ForwardDirection.positiveZ](entity/forwarddirection/positivez.md)
+- [Entity.ForwardDirection.negativeZ](./forwarddirection/negativez.md)
+- [Entity.ForwardDirection.positiveZ](./forwarddirection/positivez.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [protocol HasTransform](hastransform.md)
+### Positioning entities in space
+- [protocol HasTransform](../hastransform.md)
   An interface that enables manipulating the scale, rotation, and translation of an entity.
-- [struct Transform](transform.md)
+- [struct Transform](../transform.md)
   A component that defines the scale, rotation, and translation of an entity.
-- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](entity/transformmatrix(relativeto:).md)
+- [func transformMatrix(relativeTo: Entity.CoordinateSpaceReference) -> float4x4?](./transformmatrix%28relativeto%29.md)
   Returns the 4 x 4 transform matrix of an entity relative to the given coordinate space.
-- [Entity.CoordinateSpaceReference](entity/coordinatespacereference.md)
+- [Entity.CoordinateSpaceReference](./coordinatespacereference.md)
   Defines the coordinate space reference for transform conversion.
 
 

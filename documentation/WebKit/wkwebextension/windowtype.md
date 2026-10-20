@@ -1,9 +1,10 @@
 # WKWebExtension.WindowType
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate the type of a window.
+Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate the type of a window.
 
 **Availability**:
 - iOS 18.4+
@@ -18,30 +19,35 @@ Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate 
 enum WindowType
 ```
 
+```c
+enum WKWebExtensionWindowType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [WKWebExtension.WindowType.normal](wkwebextension/windowtype/normal.md)
+- [WKWebExtension.WindowType.normal](./windowtype/normal.md)
   Indicates a normal window.
-- [WKWebExtension.WindowType.popup](wkwebextension/windowtype/popup.md)
+- [WKWebExtension.WindowType.popup](./windowtype/popup.md)
   Indicates a pop-up window.
 ### Initializers
-- [init?(rawValue: Int)](wkwebextension/windowtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./windowtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtension.WindowState](wkwebextension/windowstate.md)
-  Constants used by [`WKWebExtensionWindow`](wkwebextensionwindow.md) to indicate possible states of a window.
+### Enumerations
+- [WKWebExtension.WindowState](./windowstate.md)
+  Constants used by [`WKWebExtensionWindow`](../wkwebextensionwindow.md) to indicate possible states of a window.
 
 
 ---

@@ -1,14 +1,15 @@
 # PDFPage.ImageInitializationOption
 
 **Framework**: PDFKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,28 +18,32 @@
 struct ImageInitializationOption
 ```
 
+```c
+typedef NSString * PDFPageImageInitializationOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](pdfpage/imageinitializationoption/init(rawvalue:).md)
+- [init(rawValue: String)](./imageinitializationoption/init%28rawvalue%29.md)
 ### Type Properties
-- [static let compressionQuality: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/compressionquality.md)
-- [static let mediaBox: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/mediabox.md)
-- [static let rotation: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/rotation.md)
-- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/upscaleifsmaller.md)
-- [static let compressionQuality: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/compressionquality.md)
-- [static let mediaBox: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/mediabox.md)
-- [static let rotation: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/rotation.md)
-- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/upscaleifsmaller.md)
+- [static let compressionQuality: PDFPage.ImageInitializationOption](./imageinitializationoption/compressionquality.md)
+- [static let mediaBox: PDFPage.ImageInitializationOption](./imageinitializationoption/mediabox.md)
+- [static let rotation: PDFPage.ImageInitializationOption](./imageinitializationoption/rotation.md)
+- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](./imageinitializationoption/upscaleifsmaller.md)
+- [static let compressionQuality: PDFPage.ImageInitializationOption](./imageinitializationoption/compressionquality.md)
+- [static let mediaBox: PDFPage.ImageInitializationOption](./imageinitializationoption/mediabox.md)
+- [static let rotation: PDFPage.ImageInitializationOption](./imageinitializationoption/rotation.md)
+- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](./imageinitializationoption/upscaleifsmaller.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

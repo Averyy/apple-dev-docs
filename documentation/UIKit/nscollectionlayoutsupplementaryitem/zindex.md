@@ -1,7 +1,8 @@
 # zIndex
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical stacking order of the supplementary item in relation to other items in the section.
 
@@ -16,6 +17,10 @@ The vertical stacking order of the supplementary item in relation to other items
 
 ```swift
 var zIndex: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSInteger zIndex;
 ```
 
 

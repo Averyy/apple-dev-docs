@@ -1,7 +1,8 @@
 # init(useTintColor:useTexture:outputChannel:outputOpacity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for the specified combination of inputs and outputs.
 

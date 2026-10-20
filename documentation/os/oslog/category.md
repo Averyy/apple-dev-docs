@@ -1,7 +1,8 @@
 # OSLog.Category
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 System-defined categories that identify well-known parts of your app.
 
@@ -11,7 +12,7 @@ System-defined categories that identify well-known parts of your app.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
@@ -23,27 +24,28 @@ struct Category
 ## Topics
 
 ### Logging Signposts
-- [static let pointsOfInterest: OSLog.Category](oslog/category/pointsofinterest.md)
+- [static let pointsOfInterest: OSLog.Category](./category/pointsofinterest.md)
   The category you use to log signposts.
-- [static let dynamicStackTracing: OSLog.Category](oslog/category/dynamicstacktracing.md)
+- [static let dynamicStackTracing: OSLog.Category](./category/dynamicstacktracing.md)
   The category for dynamic stack tracing.
-- [static let dynamicTracing: OSLog.Category](oslog/category/dynamictracing.md)
+- [static let dynamicTracing: OSLog.Category](./category/dynamictracing.md)
   The category for dynamic tracing.
 ### Inspecting Log Categories
-- [let rawValue: String](oslog/category/rawvalue.md)
+- [let rawValue: String](./category/rawvalue.md)
   A string that uniquely identifies a logging category.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(subsystem: String, category: String)](oslog/init(subsystem:category:)-17gyy.md)
+### Creating a Log
+- [convenience init(subsystem: String, category: String)](./init%28subsystem,category%29-17gyy.md)
   Creates a log using the specified subsystem and category.
-- [convenience init(subsystem: String, category: OSLog.Category)](oslog/init(subsystem:category:)-72ghw.md)
+- [convenience init(subsystem: String, category: OSLog.Category)](./init%28subsystem,category%29-72ghw.md)
   Creates a log using the specified subsystem and system-defined category.
 
 

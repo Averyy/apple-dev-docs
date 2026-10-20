@@ -1,7 +1,8 @@
 # startTrackingCaptureRequest(using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tracks a capture request that uses the specified photo settings.
 
@@ -18,13 +19,18 @@ Tracks a capture request that uses the specified photo settings.
 func startTrackingCaptureRequest(using settings: AVCapturePhotoSettings)
 ```
 
+```objc
+- (void) startTrackingCaptureRequestUsingPhotoSettings:(AVCapturePhotoSettings *) settings;
+```
+
 ## Parameters
 
-- `settings`: A settings object that the system passes [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) for this capture request.
+- `settings`: A settings object that the system passes [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) for this capture request.
 
 ## See Also
 
-- [func stopTrackingCaptureRequest(using: Int64)](avcapturephotooutputreadinesscoordinator/stoptrackingcapturerequest(using:).md)
+### Performing tracking requests
+- [func stopTrackingCaptureRequest(using: Int64)](./stoptrackingcapturerequest%28using%29.md)
   Stop tracking the capture request represented by the specified photo setting’s unique identifier.
 
 

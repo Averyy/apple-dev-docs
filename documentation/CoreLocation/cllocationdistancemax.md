@@ -1,7 +1,8 @@
 # CLLocationDistanceMax
 
 **Framework**: Core Location  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant indicating the maximum distance.
 
@@ -20,21 +21,26 @@ A constant indicating the maximum distance.
 let CLLocationDistanceMax: CLLocationDistance
 ```
 
+```c
+extern const CLLocationDistance CLLocationDistanceMax;
+```
+
 #### Discussion
 
 When scheduling deferred updates, you can use this constant to indicate that a new update should be triggered only after the device moves a significantly large distance.
 
 ## See Also
 
-- [var distanceFilter: CLLocationDistance](cllocationmanager/distancefilter.md)
+### Specifying distance and accuracy
+- [var distanceFilter: CLLocationDistance](./cllocationmanager/distancefilter.md)
   The minimum distance in meters the device must move horizontally before an update event is generated.
-- [let kCLDistanceFilterNone: CLLocationDistance](kcldistancefilternone.md)
+- [let kCLDistanceFilterNone: CLLocationDistance](./kcldistancefilternone.md)
   A constant indicating that all movement should be reported.
-- [typealias CLLocationDistance](cllocationdistance.md)
+- [typealias CLLocationDistance](./cllocationdistance.md)
   A distance in meters from an existing location.
-- [var desiredAccuracy: CLLocationAccuracy](cllocationmanager/desiredaccuracy.md)
+- [var desiredAccuracy: CLLocationAccuracy](./cllocationmanager/desiredaccuracy.md)
   The accuracy of the location data that your app wants to receive.
-- [typealias CLLocationAccuracy](cllocationaccuracy.md)
+- [typealias CLLocationAccuracy](./cllocationaccuracy.md)
   The accuracy of a geographical coordinate.
 
 

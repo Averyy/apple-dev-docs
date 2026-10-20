@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Storage for values or objects related to this notification.
 
@@ -24,7 +25,7 @@ var userInfo: [AnyHashable : Any]?
 
 The user information dictionary stores any additional objects that objects receiving the notification might use.
 
-For example, in AppKit, [`NSControl`](https://developer.apple.com/documentation/appkit/nscontrol) objects post the [`textDidChangeNotification`](https://developer.apple.com/documentation/appkit/nscontrol/textdidchangenotification) whenever the field editor (an [`NSText`](https://developer.apple.com/documentation/appkit/nstext) object) changes text inside the `NSControl`. This notification provides the `NSControl` object as the notification’s associated object. In order to provide access to the field editor, the `NSControl` object posting the notification adds the field editor to the notification’s user information dictionary. Objects receiving the notification can access the field editor and the `NSControl` object posting the notification as follows:
+For example, in AppKit, [`NSControl`](../../AppKit/nscontrol.md) objects post the [`textDidChangeNotification`](../../AppKit/nscontrol/textdidchangenotification.md) whenever the field editor (an [`NSText`](../../AppKit/nstext.md) object) changes text inside the `NSControl`. This notification provides the `NSControl` object as the notification’s associated object. In order to provide access to the field editor, the `NSControl` object posting the notification adds the field editor to the notification’s user information dictionary. Objects receiving the notification can access the field editor and the `NSControl` object posting the notification as follows:
 
 ```swift
 func controlTextDidChange(_ notification: Notification) 
@@ -39,9 +40,10 @@ func controlTextDidChange(_ notification: Notification)
 
 ## See Also
 
-- [var name: Notification.Name](notification/name-swift.property.md)
+### Getting Notification Information
+- [var name: Notification.Name](./name-swift.property.md)
   A tag identifying the notification.
-- [var object: Any?](notification/object.md)
+- [var object: Any?](./object.md)
   An object that the poster wishes to send to observers.
 
 

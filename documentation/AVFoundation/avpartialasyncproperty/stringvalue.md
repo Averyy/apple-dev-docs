@@ -1,7 +1,8 @@
 # stringValue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value of the metadata item as a string.
 
@@ -20,29 +21,32 @@ The value of the metadata item as a string.
 static var stringValue: AVAsyncProperty<Root, String?> { get }
 ```
 
+Available when `Root` inherits `AVMetadataItem`.
+
 ## Mentions
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
+- [Retrieving media metadata](../retrieving-media-metadata.md)
 
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 This value is `nil` if the system can’t represent the value as a string.
 
 ## See Also
 
-- [var dataType: String?](avmetadataitem/datatype.md)
+### Loading values
+- [var dataType: String?](../avmetadataitem/datatype.md)
   The data type of the metadata item’s value.
-- [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](avpartialasyncproperty/value.md)
+- [static var value: AVAsyncProperty<Root, (any NSCopying & NSObjectProtocol)?>](./value.md)
   The value of the metadata item.
-- [static var numberValue: AVAsyncProperty<Root, NSNumber?>](avpartialasyncproperty/numbervalue.md)
+- [static var numberValue: AVAsyncProperty<Root, NSNumber?>](./numbervalue.md)
   The value of the metadata item as a number.
-- [static var dateValue: AVAsyncProperty<Root, Date?>](avpartialasyncproperty/datevalue.md)
+- [static var dateValue: AVAsyncProperty<Root, Date?>](./datevalue.md)
   The value of the metadata item as a date.
-- [static var dataValue: AVAsyncProperty<Root, Data?>](avpartialasyncproperty/datavalue.md)
+- [static var dataValue: AVAsyncProperty<Root, Data?>](./datavalue.md)
   The value of the metadata item as a data value.
-- [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](avpartialasyncproperty/extraattributes.md)
+- [static var extraAttributes: AVAsyncProperty<Root, [AVMetadataExtraAttributeKey : Any]?>](./extraattributes.md)
   A dictionary of additional attributes for the item.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_BS_OKToUse
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BS_OKToUse = 0x1A
 ```
 

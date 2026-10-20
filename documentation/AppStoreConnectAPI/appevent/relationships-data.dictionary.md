@@ -1,7 +1,8 @@
 # AppEvent.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppEvent.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEvent.Relationships.Localizations](appevent/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object AppEvent.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppEvent.Relationships
 
 ## See Also
 
-- [object AppEvent.Attributes](appevent/attributes-data.dictionary.md)
+### Objects
+- [object AppEvent.Attributes](./attributes-data.dictionary.md)
   The attributes that describe an In-App event.
 
 

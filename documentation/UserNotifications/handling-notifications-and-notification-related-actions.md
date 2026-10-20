@@ -1,6 +1,7 @@
 # Handling notifications and notification-related actions
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Respond to user interactions with the system’s notification interfaces, including handling your app’s custom actions.
 
@@ -10,18 +11,18 @@ Notifications are primarily a way of putting information in front of the user, b
 
 - Actions selected by the user from the notification interface.
 - A notification that arrives when your app is running in the foreground.
-- A silent notification (see [`Pushing background updates to your App`](pushing-background-updates-to-your-app.md)).
-- A notification associated with the [`PushKit`](https://developer.apple.com/documentation/pushkit) framework, such as VoIP or complication-related notifications.
+- A silent notification (see [Pushing background updates to your App](./pushing-background-updates-to-your-app.md)).
+- A notification associated with the [PushKit](../PushKit/PushKit.md) framework, such as VoIP or complication-related notifications.
 
-##### Handle User Selected Actions
+##### Handle user-selected actions
 
 Actionable notifications let the user respond to a notification directly from the notification interface. In addition to the notification’s content, an actionable notification displays one or more buttons representing the actions that the user can take. Tapping one of the buttons forwards the selected action to your app, without bringing the app to the foreground. If your app supports actionable notification types, you must handle the associated actions.
 
-![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](/images/com.apple.usernotifications/media-2953610@2x.png)
+![A notification for a meeting app contains an invitation along with buttons for accepting or declining the invitation.](https://developer.apple.com/tutorials/images/com.apple.usernotifications/media-2953610@2x.png)
 
-> **Note**:  You declare actionable notification types at launch time at the same time you declare your app’s supported categories. For more information, see [`Declaring your actionable notification types`](declaring-your-actionable-notification-types.md).
+> **Note**:  You declare actionable notification types at launch time at the same time you declare your app’s supported categories. For more information, see [Declaring your actionable notification types](./declaring-your-actionable-notification-types.md).
 
-You handle selected actions from the delegate object of the shared [`UNUserNotificationCenter`](unusernotificationcenter.md) object. When the user selects an action, the system launches your app in the background and calls the delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:).md) method. Match the value in the [`actionIdentifier`](unnotificationresponse/actionidentifier.md) property of the response object to one of your app’s actions or a system-defined action. The system reports special actions when the user dismisses the notification or launches your app.
+You handle selected actions from the delegate object of the shared [`UNUserNotificationCenter`](./unusernotificationcenter.md) object. When the user selects an action, the system launches your app in the background and calls the delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method. Match the value in the [`actionIdentifier`](./unnotificationresponse/actionidentifier.md) property of the response object to one of your app’s actions or a system-defined action. The system reports special actions when the user dismisses the notification or launches your app.
 
 Listing 1 shows an example that processes actions associated with a meeting invitation. The `ACCEPT_ACTION` and `DECLINE_ACTION` strings identify the app-specific actions, which generate an appropriate response to the meeting invitation. If the user doesn’t choose one of the app-defined actions, the method saves the invitation until the user launches the app.
 
@@ -73,11 +74,11 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-##### Handle Notifications While Your App Runs in the Foreground
+##### Handle notifications while your app runs in the foreground
 
 If a notification arrives when your app is running in the foreground, the system delivers that notification directly to your app. Upon receiving a notification, you can use the notification’s payload to do whatever you want. For example, you can update your app’s interface to reflect new information contained in the notification. You can then suppress any scheduled alerts or modify those alerts.
 
-When a notification arrives, the system calls the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:).md) method of the [`UNUserNotificationCenter`](unusernotificationcenter.md) object’s delegate. Use that method to process the notification and let the system know how you want it to proceed. Listing 2 shows a version of this method for a calendar app. When a meeting invitation arrives, the app calls its custom `queueMeetingForDelivery` method to show the new invitation in the app’s interface. The app also asks the system to play the notification’s sound by passing the [`sound`](unnotificationpresentationoptions/sound.md) value to the completion handler. For other notification types, the method silences the notification.
+When a notification arrives, the system calls the [`userNotificationCenter(_:willPresent:withCompletionHandler:)`](./unusernotificationcenterdelegate/usernotificationcenter%28_,willpresent,withcompletionhandler%29.md) method of the [`UNUserNotificationCenter`](./unusernotificationcenter.md) object’s delegate. Use that method to process the notification and let the system know how you want it to proceed. Listing 2 shows a version of this method for a calendar app. When a meeting invitation arrives, the app calls its custom `queueMeetingForDelivery` method to show the new invitation in the app’s interface. The app also asks the system to play the notification’s sound by passing the [`sound`](./unnotificationpresentationoptions/sound.md) value to the completion handler. For other notification types, the method silences the notification.
 
 Listing 2. Processing notifications in the foreground
 
@@ -111,13 +112,14 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 }
 ```
 
-If you registered your app with PushKit, notifications targeting PushKit-types are always delivered directly to your app and are never displayed to the user. If your app is in the foreground or background, the system gives your app time to process the notification. If your app isn’t running, the system launches your app in the background so that it can process the notification. To send a PushKit notification, your provider server must set the notification’s topic to the appropriate target, such as your app’s complication. For more information about registering for PushKit notifications, see [`PushKit`](https://developer.apple.com/documentation/pushkit).
+If you registered your app with PushKit, notifications targeting PushKit-types are always delivered directly to your app and are never displayed to the user. If your app is in the foreground or background, the system gives your app time to process the notification. If your app isn’t running, the system launches your app in the background so that it can process the notification. To send a PushKit notification, your provider server must set the notification’s topic to the appropriate target, such as your app’s complication. For more information about registering for PushKit notifications, see [PushKit](../PushKit/PushKit.md).
 
 ## See Also
 
-- [class UNNotificationResponse](unnotificationresponse.md)
+### Notification responses
+- [class UNNotificationResponse](./unnotificationresponse.md)
   The user’s response to an actionable notification.
-- [class UNTextInputNotificationResponse](untextinputnotificationresponse.md)
+- [class UNTextInputNotificationResponse](./untextinputnotificationresponse.md)
   The user’s response to an actionable notification, including any custom text that the user typed or dictated.
 
 

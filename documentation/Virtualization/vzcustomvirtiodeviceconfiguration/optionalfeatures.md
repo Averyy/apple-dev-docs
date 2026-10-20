@@ -1,7 +1,8 @@
 # optionalFeatures
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of optional features that the device offers.
 
@@ -14,9 +15,13 @@ The set of optional features that the device offers.
 var optionalFeatures: VZVirtioFeatureSet { get }
 ```
 
+```objc
+@property (strong, readonly) VZVirtioFeatureSet * optionalFeatures;
+```
+
 #### Discussion
 
-The optional features are the set of features that the guest driver may or may not accept, see [`negotiatedFeatures`](vzcustomvirtiodevice/negotiatedfeatures.md) for the set of features that the guest accepts. A few feature bits are always set internally by default for optimal performance.
+The optional features are the set of features that the guest driver may or may not accept, see [`negotiatedFeatures`](../vzcustomvirtiodevice/negotiatedfeatures.md) for the set of features that the guest accepts. A few feature bits are always set internally by default for optimal performance.
 
 
 ---

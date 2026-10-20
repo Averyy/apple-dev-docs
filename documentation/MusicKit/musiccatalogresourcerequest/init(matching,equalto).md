@@ -1,7 +1,8 @@
 # init(matching:equalTo:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to fetch items using a filter that matches a specific value.
 

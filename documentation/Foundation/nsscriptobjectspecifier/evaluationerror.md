@@ -1,7 +1,8 @@
 # evaluationError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the object specifier in which an evaluation error occurred.
 
@@ -15,6 +16,10 @@ Returns the object specifier in which an evaluation error occurred.
 var evaluationError: NSScriptObjectSpecifier? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSScriptObjectSpecifier * evaluationErrorSpecifier;
+```
+
 #### Return Value
 
 The object specifier in which an evaluation error occurred.
@@ -25,7 +30,8 @@ The object specifier failing to evaluate could be the receiver or any container 
 
 ## See Also
 
-- [var evaluationErrorNumber: Int](nsscriptobjectspecifier/evaluationerrornumber.md)
+### Getting evaluation errors
+- [var evaluationErrorNumber: Int](./evaluationerrornumber.md)
   Sets the value of the evaluation error.
 
 

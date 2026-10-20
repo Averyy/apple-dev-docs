@@ -1,7 +1,8 @@
 # MTRDeviceEnergyManagementClusterPowerAdjustRequestParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,29 +19,33 @@
 class MTRDeviceEnergyManagementClusterPowerAdjustRequestParams
 ```
 
+```objc
+@interface MTRDeviceEnergyManagementClusterPowerAdjustRequestParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var cause: NSNumber](mtrdeviceenergymanagementclusterpoweradjustrequestparams/cause.md)
-- [var duration: NSNumber](mtrdeviceenergymanagementclusterpoweradjustrequestparams/duration.md)
-- [var power: NSNumber](mtrdeviceenergymanagementclusterpoweradjustrequestparams/power.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrdeviceenergymanagementclusterpoweradjustrequestparams/serversideprocessingtimeout.md)
+- [var cause: NSNumber](./mtrdeviceenergymanagementclusterpoweradjustrequestparams/cause.md)
+- [var duration: NSNumber](./mtrdeviceenergymanagementclusterpoweradjustrequestparams/duration.md)
+- [var power: NSNumber](./mtrdeviceenergymanagementclusterpoweradjustrequestparams/power.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrdeviceenergymanagementclusterpoweradjustrequestparams/serversideprocessingtimeout.md)
   Controls how much time, in seconds, we will allow for the server to process the command.
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdeviceenergymanagementclusterpoweradjustrequestparams/timedinvoketimeoutms.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdeviceenergymanagementclusterpoweradjustrequestparams/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

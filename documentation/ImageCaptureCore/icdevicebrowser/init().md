@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ImageCaptureCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ImageCaptureCore device browser.
 
@@ -16,6 +17,10 @@ Creates an ImageCaptureCore device browser.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

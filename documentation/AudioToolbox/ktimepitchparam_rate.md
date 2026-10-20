@@ -1,15 +1,16 @@
 # kTimePitchParam_Rate
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kTimePitchParam_Rate: AudioUnitParameterID { get }
 ```
 
+```c
+kTimePitchParam_Rate
+```
+
 ## See Also
 
-- [var kTimePitchParam_EffectBlend: AudioUnitParameterID](ktimepitchparam_effectblend.md)
-- [var kTimePitchParam_Pitch: AudioUnitParameterID](ktimepitchparam_pitch.md)
+### Constants
+- [var kTimePitchParam_EffectBlend: AudioUnitParameterID](./ktimepitchparam_effectblend.md)
+- [var kTimePitchParam_Pitch: AudioUnitParameterID](./ktimepitchparam_pitch.md)
 
 
 ---

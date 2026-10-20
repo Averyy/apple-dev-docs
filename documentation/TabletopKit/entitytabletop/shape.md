@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape of the table.
 

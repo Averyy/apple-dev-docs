@@ -1,7 +1,8 @@
 # persistTimeout(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the TCP persist timeout.
 

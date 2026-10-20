@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics describing the image classifier’s performance on labeled images represented by a data source.
 
@@ -18,6 +19,12 @@ Generates metrics describing the image classifier’s performance on labeled ima
 func evaluation(on labeledImages: MLImageClassifier.DataSource) -> MLClassifierMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on labeledImages: [String : [URL]]) -> MLClassifierMetrics
+```
+
 #### Return Value
 
 The metrics that indicate the performance of the classifier when operating on the input dataset.
@@ -28,9 +35,10 @@ The metrics that indicate the performance of the classifier when operating on th
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlimageclassifier/trainingmetrics.md)
+### Evaluating an image classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the classifier’s performance on the training data set.
-- [var validationMetrics: MLClassifierMetrics](mlimageclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the image classifier’s performance on the validation dataset.
 
 

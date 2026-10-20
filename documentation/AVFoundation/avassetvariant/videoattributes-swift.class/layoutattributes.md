@@ -1,7 +1,8 @@
 # AVAssetVariant.VideoAttributes.LayoutAttributes
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Attributes that describe the layout of video content.
 
@@ -20,41 +21,46 @@ Attributes that describe the layout of video content.
 class LayoutAttributes
 ```
 
+```objc
+@interface AVAssetVariantVideoLayoutAttributes : NSObject
+```
+
 ## Topics
 
 ### Accessing attributes
-- [var stereoViewComponents: CMStereoViewComponents](avassetvariant/videoattributes-swift.class/layoutattributes/stereoviewcomponents.md)
+- [var stereoViewComponents: CMStereoViewComponents](./layoutattributes/stereoviewcomponents.md)
   Attributes that describe the video’s stereo components.
-- [var projectionType: CMProjectionType](avassetvariant/videoattributes-swift.class/layoutattributes/projectiontype.md)
+- [var projectionType: CMProjectionType](./layoutattributes/projectiontype.md)
   Describes the video projection.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [NSObjectProtocol](../../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var codecTypes: [CMVideoCodecType]](avassetvariant/videoattributes-swift.class/codectypes.md)
+### Inspecting the attributes
+- [var codecTypes: [CMVideoCodecType]](./codectypes.md)
   The video sample codec types present in the variant’s renditions.
-- [var nominalFrameRate: Double?](avassetvariant/videoattributes-swift.class/nominalframerate.md)
+- [var nominalFrameRate: Double?](./nominalframerate.md)
   The nominal frame rate of the variant’s renditions.
-- [var presentationSize: CGSize](avassetvariant/videoattributes-swift.class/presentationsize.md)
+- [var presentationSize: CGSize](./presentationsize.md)
   The presentation size of the variant’s renditions.
-- [var videoRange: AVVideoRange](avassetvariant/videoattributes-swift.class/videorange.md)
+- [var videoRange: AVVideoRange](./videorange.md)
   The video range of the variant.
-- [struct AVVideoRange](avvideorange.md)
+- [struct AVVideoRange](../../avvideorange.md)
   Constants that describe a video variant’s dynamic range.
-- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](avassetvariant/videoattributes-swift.class/videolayoutattributes.md)
+- [var videoLayoutAttributes: [AVAssetVariant.VideoAttributes.LayoutAttributes]](./videolayoutattributes.md)
   Attributes that describe the layout of the video content.
 
 

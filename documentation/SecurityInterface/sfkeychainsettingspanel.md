@@ -1,7 +1,8 @@
 # SFKeychainSettingsPanel
 
 **Framework**: Security Interface  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A panel or sheet that allows users to change their keychain settings.
 
@@ -14,6 +15,10 @@ A panel or sheet that allows users to change their keychain settings.
 class SFKeychainSettingsPanel
 ```
 
+```objc
+@interface SFKeychainSettingsPanel : NSPanel
+```
+
 #### Overview
 
 Keychain settings include:
@@ -24,62 +29,63 @@ Keychain settings include:
 
 The following figure shows an example of a keychain settings panel.
 
-![Keychain settings panel](/images/com.apple.securityinterface/media-1965595.png)
+![Keychain settings panel](https://developer.apple.com/tutorials/images/com.apple.securityinterface/media-1965595.png)
 
-For more information, see [`Keychain Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/keychainServConcepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000897).
+For more information, see [Keychain Services Programming Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/keychainServConcepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000897).
 
 ## Topics
 
 ### Returning a shared keychain save panel object
-- [class func shared() -> SFKeychainSettingsPanel!](sfkeychainsettingspanel/shared.md)
+- [class func shared() -> SFKeychainSettingsPanel!](./sfkeychainsettingspanel/shared%28%29.md)
   Returns a shared keychain settings panel object.
 ### Displaying a sheet or panel
-- [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!)](sfkeychainsettingspanel/beginsheet(for:modaldelegate:didend:contextinfo:settings:keychain:).md)
+- [func beginSheet(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!, settings: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!)](./sfkeychainsettingspanel/beginsheet%28for,modaldelegate,didend,contextinfo,settings,keychain%29.md)
   Displays a sheet that allows users to change keychain settings.
-- [func runModal(for: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!) -> Int](sfkeychainsettingspanel/runmodal(for:keychain:).md)
+- [func runModal(for: UnsafeMutablePointer<SecKeychainSettings>!, keychain: SecKeychain!) -> Int](./sfkeychainsettingspanel/runmodal%28for,keychain%29.md)
   Displays a panel that allows users to change keychain settings.
 
 ## Relationships
 
 ### Inherits From
-- [NSPanel](../appkit/nspanel.md)
+- [NSPanel](../AppKit/nspanel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSMenuItemValidation](../appkit/nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSMenuItemValidation](../AppKit/nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../AppKit/nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SFAuthorizationPluginView](sfauthorizationpluginview.md)
+### Classes
+- [class SFAuthorizationPluginView](./sfauthorizationpluginview.md)
   Allows authorization plug-in developers to create a custom view their plug-in can display.
-- [class SFAuthorizationView](sfauthorizationview.md)
+- [class SFAuthorizationView](./sfauthorizationview.md)
   The class responsible for displaying a lock icon that can be used to indicate that a user interface has restricted access.
-- [class SFCertificatePanel](sfcertificatepanel.md)
+- [class SFCertificatePanel](./sfcertificatepanel.md)
   A panel or sheet that displays one or more certificates.
-- [class SFCertificateTrustPanel](sfcertificatetrustpanel.md)
+- [class SFCertificateTrustPanel](./sfcertificatetrustpanel.md)
   A panel or sheet that lets the user edit the trust settings in any of the certificates in a certificate chain.
-- [class SFCertificateView](sfcertificateview.md)
+- [class SFCertificateView](./sfcertificateview.md)
   A view that displays the contents of a certificate, with options to display certificate details, display trust settings, and allow users to edit a certificate’s trust settings.
-- [class SFChooseIdentityPanel](sfchooseidentitypanel.md)
+- [class SFChooseIdentityPanel](./sfchooseidentitypanel.md)
   A panel or sheet containing a list of identities that a user can choose from.
-- [class SFChooseIdentityTableCellView](sfchooseidentitytablecellview.md)
-- [class SFKeychainSavePanel](sfkeychainsavepanel.md)
+- [class SFChooseIdentityTableCellView](./sfchooseidentitytablecellview.md)
+- [class SFKeychainSavePanel](./sfkeychainsavepanel.md)
   A panel or sheet that allows the user to create a keychain.
 
 

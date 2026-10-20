@@ -1,7 +1,8 @@
 # pressedMouseButtons
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The indices of the currently pressed mouse buttons.
 
@@ -12,6 +13,10 @@ The indices of the currently pressed mouse buttons.
 
 ```swift
 class var pressedMouseButtons: Int { get }
+```
+
+```objc
+@property (class, readonly) NSUInteger pressedMouseButtons;
 ```
 
 #### Return Value
@@ -26,15 +31,16 @@ This returns the state of devices combined with synthesized events at the moment
 
 ## See Also
 
-- [class var doubleClickInterval: TimeInterval](nsevent/doubleclickinterval.md)
+### Getting mouse event information
+- [class var doubleClickInterval: TimeInterval](./doubleclickinterval.md)
   The maximum number of seconds in which a second mouse click must occur for an event to be a double-click event.
-- [class var mouseLocation: NSPoint](nsevent/mouselocation.md)
+- [class var mouseLocation: NSPoint](./mouselocation.md)
   Reports the current mouse position in screen coordinates.
-- [var buttonNumber: Int](nsevent/buttonnumber.md)
+- [var buttonNumber: Int](./buttonnumber.md)
   The button number for a mouse event.
-- [var clickCount: Int](nsevent/clickcount.md)
+- [var clickCount: Int](./clickcount.md)
   The number of mouse clicks associated with a mouse-down or mouse-up event.
-- [var associatedEventsMask: NSEvent.EventTypeMask](nsevent/associatedeventsmask.md)
+- [var associatedEventsMask: NSEvent.EventTypeMask](./associatedeventsmask.md)
   The associated events mask of a mouse event.
 
 

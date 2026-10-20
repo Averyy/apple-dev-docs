@@ -1,17 +1,22 @@
 # set()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the color of subsequent drawing to the color that the color object represents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func set()
+```
+
+```objc
+- (void) set;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ This method should be implemented in subclasses.
 
 ## See Also
 
-- [func drawSwatch(in: NSRect)](nscolor/drawswatch(in:).md)
+### Drawing with colors
+- [func drawSwatch(in: NSRect)](./drawswatch%28in%29.md)
   Draws the current color in the specified rectangle.
-- [func setFill()](nscolor/setfill.md)
+- [func setFill()](./setfill%28%29.md)
   Sets the fill color of subsequent drawing to the color object’s color.
-- [func setStroke()](nscolor/setstroke.md)
+- [func setStroke()](./setstroke%28%29.md)
   Sets the stroke color of subsequent drawing to the color object’s color.
 
 

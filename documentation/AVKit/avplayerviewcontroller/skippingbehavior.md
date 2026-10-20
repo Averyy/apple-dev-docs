@@ -1,7 +1,8 @@
 # skippingBehavior
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior that skipping gestures perform.
 
@@ -14,17 +15,22 @@ The behavior that skipping gestures perform.
 var skippingBehavior: AVPlayerViewControllerSkippingBehavior { get set }
 ```
 
+```objc
+@property (nonatomic) AVPlayerViewControllerSkippingBehavior skippingBehavior;
+```
+
 #### Discussion
 
 This property lets you override the default skipping behavior in tvOS, which is to skip forward or backward 10 seconds when a user presses the right or left sides, respectively, of the Touch surface on the Siri Remote.
 
 ## See Also
 
-- [var isSkipForwardEnabled: Bool](avplayerviewcontroller/isskipforwardenabled.md)
+### Configuring skipping behavior
+- [var isSkipForwardEnabled: Bool](./isskipforwardenabled.md)
   A Boolean value that indicates whether forward-skipping is available.
-- [var isSkipBackwardEnabled: Bool](avplayerviewcontroller/isskipbackwardenabled.md)
+- [var isSkipBackwardEnabled: Bool](./isskipbackwardenabled.md)
   A Boolean value that indicates whether backward-skipping is available.
-- [enum AVPlayerViewControllerSkippingBehavior](avplayerviewcontrollerskippingbehavior.md)
+- [enum AVPlayerViewControllerSkippingBehavior](../avplayerviewcontrollerskippingbehavior.md)
   Constants that represent the player view controller’s skipping behavior.
 
 

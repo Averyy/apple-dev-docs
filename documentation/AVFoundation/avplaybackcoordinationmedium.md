@@ -1,7 +1,8 @@
 # AVPlaybackCoordinationMedium
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
@@ -19,6 +20,10 @@ The AVPlaybackCoordinationMedium passes states and messages between its connecte
 class AVPlaybackCoordinationMedium
 ```
 
+```objc
+@interface AVPlaybackCoordinationMedium : NSObject
+```
+
 #### Overview
 
 The coordination medium passes states and messages from one playback coordinator to all other connected playback coordinators to enable coordination of rate changes and seeks. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
@@ -26,37 +31,38 @@ The coordination medium passes states and messages from one playback coordinator
 ## Topics
 
 ### Creating a coordination medium
-- [init()](avplaybackcoordinationmedium/init.md)
+- [init()](./avplaybackcoordinationmedium/init%28%29.md)
   Initializes an AVPlaybackCoordinationMedium
 ### Managing playback coordinators
-- [var connectedPlaybackCoordinators: [AVPlayerPlaybackCoordinator]](avplaybackcoordinationmedium/connectedplaybackcoordinators.md)
+- [var connectedPlaybackCoordinators: [AVPlayerPlaybackCoordinator]](./avplaybackcoordinationmedium/connectedplaybackcoordinators.md)
   All playback coordinators that are connected to the coordination medium.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Destination Video](../visionos/destination-video.md)
+### SharePlay
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](./supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
-- [class AVPlaybackCoordinator](avplaybackcoordinator.md)
+- [class AVPlaybackCoordinator](./avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.
-- [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
+- [class AVPlayerPlaybackCoordinator](./avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
-- [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
+- [class AVDelegatingPlaybackCoordinator](./avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 
 

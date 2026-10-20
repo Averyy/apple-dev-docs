@@ -1,7 +1,8 @@
 # billingContact
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prepopulated billing address.
 
@@ -19,17 +20,22 @@ A prepopulated billing address.
 var billingContact: PKContact? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKContact * billingContact;
+```
+
 #### Discussion
 
 If you have an up-to-date billing address on file, you can set it here. This billing address appears in the payment sheet. The user can either use the address you specify or select a different address.
 
-Note that a [`PKContact`](pkcontact.md) object that represents a billing contact contains information for only the [`postalAddress`](pkcontact/postaladdress.md) property. All other properties in the object are set to `nil`.
+Note that a [`PKContact`](../pkcontact.md) object that represents a billing contact contains information for only the [`postalAddress`](../pkcontact/postaladdress.md) property. All other properties in the object are set to `nil`.
 
 ## See Also
 
-- [var shippingContact: PKContact?](pkpaymentrequest/shippingcontact.md)
+### Providing known contact information
+- [var shippingContact: PKContact?](./shippingcontact.md)
   A prepopulated shipping address.
-- [class PKContact](pkcontact.md)
+- [class PKContact](../pkcontact.md)
   An object that encapsulates contact information needed for billing and shipping.
 
 

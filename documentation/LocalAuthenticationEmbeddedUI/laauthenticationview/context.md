@@ -1,7 +1,8 @@
 # context
 
 **Framework**: Local Authentication Embedded UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The local authentication context associated with the authentication view.
 
@@ -14,9 +15,14 @@ The local authentication context associated with the authentication view.
 var context: LAContext { get }
 ```
 
+```objc
+@property (nonatomic, readonly) LAContext * context;
+```
+
 ## See Also
 
-- [init(context: LAContext)](laauthenticationview/init(context:).md)
+### Creating a local authentication view
+- [init(context: LAContext)](./init%28context%29.md)
   Creates a new authentication icon that reflects the current authentication state.
 
 

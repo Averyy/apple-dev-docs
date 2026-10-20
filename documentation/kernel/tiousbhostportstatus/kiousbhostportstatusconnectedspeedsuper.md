@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusConnectedSpeedSuper
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The SuperSpeed connection value.
 
@@ -10,7 +11,7 @@ The SuperSpeed connection value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusConnectedSpeedSuper = (kIOUSBHostConnectionSpeedSuper << IOUSBHostFamilyBitRangePhase(8, 10))
 ```
 

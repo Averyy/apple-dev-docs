@@ -1,7 +1,8 @@
 # UIPrintError
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about a printing error.
 
@@ -20,35 +21,36 @@ struct UIPrintError
 ## Topics
 
 ### Accessing error codes
-- [UIPrintError.Code](uiprinterror/code.md)
+- [UIPrintError.Code](./uiprinterror/code.md)
   Constants that specify the print error code.
-- [static var notAvailable: UIPrintError.Code](uiprinterror/notavailable.md)
+- [static var notAvailable: UIPrintError.Code](./uiprinterror/notavailable.md)
   The device doesn’t support printing.
-- [static var noContent: UIPrintError.Code](uiprinterror/nocontent.md)
+- [static var noContent: UIPrintError.Code](./uiprinterror/nocontent.md)
   UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
-- [static var unknownImageFormat: UIPrintError.Code](uiprinterror/unknownimageformat.md)
+- [static var unknownImageFormat: UIPrintError.Code](./uiprinterror/unknownimageformat.md)
   An image is in a format that UIKit doesn’t recognize for printing.
-- [static var jobFailed: UIPrintError.Code](uiprinterror/jobfailed.md)
+- [static var jobFailed: UIPrintError.Code](./uiprinterror/jobfailed.md)
   An internal error occurred with the print job.
 ### Getting error information
-- [static var errorDomain: String](uiprinterror/errordomain.md)
+- [static var errorDomain: String](./uiprinterror/errordomain.md)
   The printing error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let UIPrintErrorDomain: String](uiprinterrordomain.md)
+### Handling printing errors
+- [let UIPrintErrorDomain: String](./uiprinterrordomain.md)
   The string constant that defines the UIKit printing error domain.
-- [UIPrintError.Code](uiprinterror/code.md)
+- [UIPrintError.Code](./uiprinterror/code.md)
   Constants that specify the print error code.
 
 

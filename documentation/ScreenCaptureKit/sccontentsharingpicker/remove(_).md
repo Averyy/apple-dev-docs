@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an observer instance from the content-sharing picker.
 
@@ -19,13 +20,18 @@ Removes an observer instance from the content-sharing picker.
 func remove(_ observer: any SCContentSharingPickerObserver)
 ```
 
+```objc
+- (void) removeObserver:(id<SCContentSharingPickerObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The observer instance to remove.
 
 ## See Also
 
-- [func add(any SCContentSharingPickerObserver)](sccontentsharingpicker/add(_:).md)
+### Manage observers
+- [func add(any SCContentSharingPickerObserver)](./add%28_%29.md)
   Adds an observer instance to notify of changes in the content-sharing picker.
 
 

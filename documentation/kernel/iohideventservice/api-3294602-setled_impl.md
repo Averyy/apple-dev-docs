@@ -1,14 +1,15 @@
 # SetLED_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```c
 void SetLED_Impl(uint32_t usage, bool on);
 ```
 

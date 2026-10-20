@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately before the given index.
 
@@ -26,7 +27,7 @@ The index value immediately before `i`.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

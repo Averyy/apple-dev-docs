@@ -1,7 +1,8 @@
 # endCompositionTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end time of the upcoming composition requests.
 
@@ -19,9 +20,14 @@ The end time of the upcoming composition requests.
 var endCompositionTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime endCompositionTime;
+```
+
 ## See Also
 
-- [var startCompositionTime: CMTime](avvideocompositionrenderhint/startcompositiontime.md)
+### Managing composition timing
+- [var startCompositionTime: CMTime](./startcompositiontime.md)
   The start time of the upcoming composition requests.
 
 

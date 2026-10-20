@@ -1,7 +1,8 @@
 # JPKIPassContents.SigningIdentity.AuthenticationType.password(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reads the signing identity using the password.
 

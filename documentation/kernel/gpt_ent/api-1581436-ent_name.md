@@ -1,14 +1,15 @@
 # ent_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 uint16_t ent_name[36];
 ```
 

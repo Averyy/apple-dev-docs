@@ -1,7 +1,8 @@
 # SecAccess
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An opaque type that identifies a keychain item’s access information.
 
@@ -14,11 +15,15 @@ An opaque type that identifies a keychain item’s access information.
 class SecAccess
 ```
 
+```c
+typedef struct __SecAccess * SecAccessRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

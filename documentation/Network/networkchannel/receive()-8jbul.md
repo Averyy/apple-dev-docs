@@ -1,7 +1,8 @@
 # receive()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive data on a connection.
 
@@ -19,6 +20,8 @@ Receive data on a connection.
 ```swift
 func receive<T>() async throws -> ApplicationProtocol.Message<Data> where ApplicationProtocol == Framer<T>, T : FramerProtocol
 ```
+
+Available when `ApplicationProtocol` conforms to `NetworkProtocolOptions`.
 
 
 ---

@@ -1,7 +1,8 @@
 # AnimatedArtwork
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Animated artwork for the media item with video and preview support.
 
@@ -53,30 +54,31 @@ let content = MusicContent(
 ## Topics
 
 ### Initializers
-- [init(id: String, supportedAspectRatios: [AnimatedArtwork.AspectRatio], preview: (CGSize, AnimatedArtwork.AspectRatio) async throws -> ArtworkRepresentation, video: (CGSize, AnimatedArtwork.AspectRatio) async throws -> URL)](animatedartwork/init(id:supportedaspectratios:preview:video:).md)
+- [init(id: String, supportedAspectRatios: [AnimatedArtwork.AspectRatio], preview: (CGSize, AnimatedArtwork.AspectRatio) async throws -> ArtworkRepresentation, video: (CGSize, AnimatedArtwork.AspectRatio) async throws -> URL)](./animatedartwork/init%28id,supportedaspectratios,preview,video%29.md)
   Creates an animated artwork whose preview and video assets load on demand.
 ### Instance Properties
-- [let id: String](animatedartwork/id.md)
+- [let id: String](./animatedartwork/id.md)
   A unique identifier for this animated artwork asset.
-- [let supportedAspectRatios: [AnimatedArtwork.AspectRatio]](animatedartwork/supportedaspectratios.md)
+- [let supportedAspectRatios: [AnimatedArtwork.AspectRatio]](./animatedartwork/supportedaspectratios.md)
   The aspect ratios this artwork supports.
 ### Type Properties
-- [static let compatibleAspectRatios: [AnimatedArtwork.AspectRatio]](animatedartwork/compatibleaspectratios.md)
+- [static let compatibleAspectRatios: [AnimatedArtwork.AspectRatio]](./animatedartwork/compatibleaspectratios.md)
   The aspect ratios compatible with the current device.
 ### Enumerations
-- [AnimatedArtwork.AspectRatio](animatedartwork/aspectratio.md)
+- [AnimatedArtwork.AspectRatio](./animatedartwork/aspectratio.md)
   The aspect ratio of the animated artwork.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct Artwork](artwork.md)
+### Displaying artwork
+- [struct Artwork](./artwork.md)
   Artwork for a media item that can be requested at a specified size.
-- [struct ArtworkRepresentation](artworkrepresentation.md)
+- [struct ArtworkRepresentation](./artworkrepresentation.md)
   An artwork image representation, such as music album cover art, associated with a media item.
 
 

@@ -1,11 +1,12 @@
 # kAudioDevicePropertyDeviceHasChanged
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,21 +14,26 @@
 var kAudioDevicePropertyDeviceHasChanged: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioDevicePropertyDeviceHasChanged
+```
+
 ## See Also
 
-- [var kAudioDeviceProcessorOverload: AudioObjectPropertySelector](kaudiodeviceprocessoroverload.md)
-- [var kAudioDevicePropertyActualSampleRate: AudioObjectPropertySelector](kaudiodevicepropertyactualsamplerate.md)
-- [var kAudioDevicePropertyBufferFrameSize: AudioObjectPropertySelector](kaudiodevicepropertybufferframesize.md)
-- [var kAudioDevicePropertyBufferFrameSizeRange: AudioObjectPropertySelector](kaudiodevicepropertybufferframesizerange.md)
-- [var kAudioDevicePropertyDeviceIsRunningSomewhere: AudioObjectPropertySelector](kaudiodevicepropertydeviceisrunningsomewhere.md)
-- [var kAudioDevicePropertyHogMode: AudioObjectPropertySelector](kaudiodevicepropertyhogmode.md)
-- [var kAudioDevicePropertyIOCycleUsage: AudioObjectPropertySelector](kaudiodevicepropertyiocycleusage.md)
-- [var kAudioDevicePropertyIOProcStreamUsage: AudioObjectPropertySelector](kaudiodevicepropertyioprocstreamusage.md)
-- [var kAudioDevicePropertyIOStoppedAbnormally: AudioObjectPropertySelector](kaudiodevicepropertyiostoppedabnormally.md)
-- [var kAudioDevicePropertyPlugIn: AudioObjectPropertySelector](kaudiodevicepropertyplugin.md)
-- [var kAudioDevicePropertyStreamConfiguration: AudioObjectPropertySelector](kaudiodevicepropertystreamconfiguration.md)
-- [var kAudioDevicePropertyUsesVariableBufferFrameSizes: AudioObjectPropertySelector](kaudiodevicepropertyusesvariablebufferframesizes.md)
-- [var kAudioDevicePropertyClockDevice: AudioObjectPropertySelector](kaudiodevicepropertyclockdevice.md)
+### Constants
+- [var kAudioDeviceProcessorOverload: AudioObjectPropertySelector](./kaudiodeviceprocessoroverload.md)
+- [var kAudioDevicePropertyActualSampleRate: AudioObjectPropertySelector](./kaudiodevicepropertyactualsamplerate.md)
+- [var kAudioDevicePropertyBufferFrameSize: AudioObjectPropertySelector](./kaudiodevicepropertybufferframesize.md)
+- [var kAudioDevicePropertyBufferFrameSizeRange: AudioObjectPropertySelector](./kaudiodevicepropertybufferframesizerange.md)
+- [var kAudioDevicePropertyDeviceIsRunningSomewhere: AudioObjectPropertySelector](./kaudiodevicepropertydeviceisrunningsomewhere.md)
+- [var kAudioDevicePropertyHogMode: AudioObjectPropertySelector](./kaudiodevicepropertyhogmode.md)
+- [var kAudioDevicePropertyIOCycleUsage: AudioObjectPropertySelector](./kaudiodevicepropertyiocycleusage.md)
+- [var kAudioDevicePropertyIOProcStreamUsage: AudioObjectPropertySelector](./kaudiodevicepropertyioprocstreamusage.md)
+- [var kAudioDevicePropertyIOStoppedAbnormally: AudioObjectPropertySelector](./kaudiodevicepropertyiostoppedabnormally.md)
+- [var kAudioDevicePropertyPlugIn: AudioObjectPropertySelector](./kaudiodevicepropertyplugin.md)
+- [var kAudioDevicePropertyStreamConfiguration: AudioObjectPropertySelector](./kaudiodevicepropertystreamconfiguration.md)
+- [var kAudioDevicePropertyUsesVariableBufferFrameSizes: AudioObjectPropertySelector](./kaudiodevicepropertyusesvariablebufferframesizes.md)
+- [var kAudioDevicePropertyClockDevice: AudioObjectPropertySelector](./kaudiodevicepropertyclockdevice.md)
 
 
 ---

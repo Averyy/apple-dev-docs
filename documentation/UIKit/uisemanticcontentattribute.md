@@ -1,7 +1,8 @@
 # UISemanticContentAttribute
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
 
@@ -18,55 +19,60 @@ A semantic description of the view’s contents, used to determine whether the v
 enum UISemanticContentAttribute
 ```
 
+```c
+enum UISemanticContentAttribute : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UISemanticContentAttribute.unspecified](uisemanticcontentattribute/unspecified.md)
+- [UISemanticContentAttribute.unspecified](./uisemanticcontentattribute/unspecified.md)
   The default value for views.
-- [UISemanticContentAttribute.playback](uisemanticcontentattribute/playback.md)
+- [UISemanticContentAttribute.playback](./uisemanticcontentattribute/playback.md)
   A view representing the playback controls, such as Play, Rewind, or Fast Forward buttons or playhead scrubbers.
-- [UISemanticContentAttribute.spatial](uisemanticcontentattribute/spatial.md)
+- [UISemanticContentAttribute.spatial](./uisemanticcontentattribute/spatial.md)
   A view representing a directional control, such as a segment control for text alignment, or a D-pad control for a game.
-- [UISemanticContentAttribute.forceLeftToRight](uisemanticcontentattribute/forcelefttoright.md)
+- [UISemanticContentAttribute.forceLeftToRight](./uisemanticcontentattribute/forcelefttoright.md)
   A view that’s always displayed using a left-to-right layout.
-- [UISemanticContentAttribute.forceRightToLeft](uisemanticcontentattribute/forcerighttoleft.md)
+- [UISemanticContentAttribute.forceRightToLeft](./uisemanticcontentattribute/forcerighttoleft.md)
   A view that’s always displayed using a right-to-left layout.
 ### Initializers
-- [init?(rawValue: Int)](uisemanticcontentattribute/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uisemanticcontentattribute/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIView.AnimationCurve](uiview/animationcurve.md)
+### Constants
+- [UIView.AnimationCurve](./uiview/animationcurve.md)
   Specifies the supported animation curves.
-- [UIView.AnimationOptions](uiview/animationoptions.md)
+- [UIView.AnimationOptions](./uiview/animationoptions.md)
   Options for animating views using block objects.
-- [UIView.AnimationTransition](uiview/animationtransition.md)
+- [UIView.AnimationTransition](./uiview/animationtransition.md)
   Animation transition options for use in an animation block object.
-- [UIView.SystemAnimation](uiview/systemanimation.md)
+- [UIView.SystemAnimation](./uiview/systemanimation.md)
   Option to remove the views from the hierarchy when animation is complete.
-- [UIView.KeyframeAnimationOptions](uiview/keyframeanimationoptions.md)
+- [UIView.KeyframeAnimationOptions](./uiview/keyframeanimationoptions.md)
   Options for configuring keyframe-based animations.
-- [NSLayoutConstraint.Axis](nslayoutconstraint/axis.md)
+- [NSLayoutConstraint.Axis](./nslayoutconstraint/axis.md)
   Keys that specify a horizontal or vertical layout constraint between objects.
-- [UIView.TintAdjustmentMode](uiview/tintadjustmentmode-swift.enum.md)
+- [UIView.TintAdjustmentMode](./uiview/tintadjustmentmode-swift.enum.md)
   The tint adjustment mode for the view.
-- [class let layoutFittingCompressedSize: CGSize](uiview/layoutfittingcompressedsize.md)
+- [class let layoutFittingCompressedSize: CGSize](./uiview/layoutfittingcompressedsize.md)
   The option to use the smallest possible size.
-- [class let layoutFittingExpandedSize: CGSize](uiview/layoutfittingexpandedsize.md)
+- [class let layoutFittingExpandedSize: CGSize](./uiview/layoutfittingexpandedsize.md)
   The option to use the largest possible size.
-- [class let noIntrinsicMetric: CGFloat](uiview/nointrinsicmetric.md)
+- [class let noIntrinsicMetric: CGFloat](./uiview/nointrinsicmetric.md)
   The absence of an intrinsic metric for a given numeric view property.
-- [UIView.AutoresizingMask](uiview/autoresizingmask-swift.struct.md)
+- [UIView.AutoresizingMask](./uiview/autoresizingmask-swift.struct.md)
   Options for automatic view resizing.
 
 

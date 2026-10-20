@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A contact property value.
 
@@ -20,13 +21,26 @@ A contact property value.
 var value: ValueType { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) ValueType value;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) ValueType value;
+```
+
 #### Discussion
 
-A contact property value, such as [`CNPhoneNumber`](cnphonenumber.md) for a phone number, NSString for an email address, and so on. For valid values, see [`CNContact`](cncontact.md) properties that are arrays of labeled value objects.
+A contact property value, such as [`CNPhoneNumber`](../cnphonenumber.md) for a phone number, NSString for an email address, and so on. For valid values, see [`CNContact`](../cncontact.md) properties that are arrays of labeled value objects.
 
 ## See Also
 
-- [var label: String?](cnlabeledvalue/label.md)
+### Getting the label and value
+- [var label: String?](./label.md)
   The label for a contact property value.
 
 

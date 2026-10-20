@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard image for indicating user-initiated actions.
 
@@ -19,15 +20,20 @@ The standard image for indicating user-initiated actions.
 class var actions: UIImage { get }
 ```
 
+```objc
+@property (class, strong, readonly) UIImage * actionsImage;
+```
+
 ## See Also
 
-- [class var add: UIImage](uiimage/add.md)
+### Getting standard system images
+- [class var add: UIImage](./add.md)
   The standard image for indicating the addition of content.
-- [class var remove: UIImage](uiimage/remove.md)
+- [class var remove: UIImage](./remove.md)
   The standard image for indicating the removal of content.
-- [class var checkmark: UIImage](uiimage/checkmark.md)
+- [class var checkmark: UIImage](./checkmark.md)
   The standard image for a checkmark on a filled-circle background.
-- [class var strokedCheckmark: UIImage](uiimage/strokedcheckmark.md)
+- [class var strokedCheckmark: UIImage](./strokedcheckmark.md)
   The standard image for a checkmark on a tinted circle with a white-stroked border.
 
 

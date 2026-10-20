@@ -1,7 +1,8 @@
 # removalAllowed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status item that allows interactive removal.
 
@@ -14,13 +15,18 @@ A status item that allows interactive removal.
 static var removalAllowed: NSStatusItem.Behavior { get }
 ```
 
+```c
+NSStatusItemBehaviorRemovalAllowed
+```
+
 #### Discussion
 
-Status items with this behavior allow interactive removal from the menu bar. Upon removal, the item’s [`isVisible`](nsstatusitem/isvisible.md) property changes to [`false`](https://developer.apple.com/documentation/swift/false). This change is observable using key-value observation.
+Status items with this behavior allow interactive removal from the menu bar. Upon removal, the item’s [`isVisible`](../isvisible.md) property changes to [`false`](../../../Swift/false.md). This change is observable using key-value observation.
 
 ## See Also
 
-- [static var terminationOnRemoval: NSStatusItem.Behavior](nsstatusitem/behavior-swift.struct/terminationonremoval.md)
+### Behaviors
+- [static var terminationOnRemoval: NSStatusItem.Behavior](./terminationonremoval.md)
   A status item that quits the application upon removal.
 
 

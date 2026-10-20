@@ -1,22 +1,23 @@
 # IOUserNetworkRxSubmissionQueueCompat_IVars
 
 **Framework**: NetworkingDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 struct IOUserNetworkRxSubmissionQueueCompat_IVars;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dataAvailableAction](iousernetworkrxsubmissionqueuecompat_ivars/dataavailableaction.md)
-- [dataQueue](iousernetworkrxsubmissionqueuecompat_ivars/dataqueue.md)
+- [dataAvailableAction](./iousernetworkrxsubmissionqueuecompat_ivars/dataavailableaction.md)
+- [dataQueue](./iousernetworkrxsubmissionqueuecompat_ivars/dataqueue.md)
 
 
 ---

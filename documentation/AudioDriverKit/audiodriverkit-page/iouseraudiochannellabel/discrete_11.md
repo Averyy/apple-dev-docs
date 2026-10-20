@@ -1,7 +1,8 @@
 # Discrete_11
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Numbered discrete channel 11.
 
@@ -10,41 +11,42 @@ Numbered discrete channel 11.
 
 ## Declaration
 
-```swift
+```c
 Discrete_11
 ```
 
 ## See Also
 
-- [Discrete_0](audiodriverkit/iouseraudiochannellabel/discrete_0.md)
+### Numbered Discrete Channels
+- [Discrete_0](./discrete_0.md)
   Numbered discrete channel 0.
-- [Discrete_1](audiodriverkit/iouseraudiochannellabel/discrete_1.md)
+- [Discrete_1](./discrete_1.md)
   Numbered discrete channel 1.
-- [Discrete_2](audiodriverkit/iouseraudiochannellabel/discrete_2.md)
+- [Discrete_2](./discrete_2.md)
   Numbered discrete channel 2.
-- [Discrete_3](audiodriverkit/iouseraudiochannellabel/discrete_3.md)
+- [Discrete_3](./discrete_3.md)
   Numbered discrete channel 3.
-- [Discrete_4](audiodriverkit/iouseraudiochannellabel/discrete_4.md)
+- [Discrete_4](./discrete_4.md)
   Numbered discrete channel 4.
-- [Discrete_5](audiodriverkit/iouseraudiochannellabel/discrete_5.md)
+- [Discrete_5](./discrete_5.md)
   Numbered discrete channel 5.
-- [Discrete_6](audiodriverkit/iouseraudiochannellabel/discrete_6.md)
+- [Discrete_6](./discrete_6.md)
   Numbered discrete channel 6.
-- [Discrete_7](audiodriverkit/iouseraudiochannellabel/discrete_7.md)
+- [Discrete_7](./discrete_7.md)
   Numbered discrete channel 7.
-- [Discrete_8](audiodriverkit/iouseraudiochannellabel/discrete_8.md)
+- [Discrete_8](./discrete_8.md)
   Numbered discrete channel 8.
-- [Discrete_9](audiodriverkit/iouseraudiochannellabel/discrete_9.md)
+- [Discrete_9](./discrete_9.md)
   Numbered discrete channel 9.
-- [Discrete_10](audiodriverkit/iouseraudiochannellabel/discrete_10.md)
+- [Discrete_10](./discrete_10.md)
   Numbered discrete channel 10.
-- [Discrete_12](audiodriverkit/iouseraudiochannellabel/discrete_12.md)
+- [Discrete_12](./discrete_12.md)
   Numbered discrete channel 12.
-- [Discrete_13](audiodriverkit/iouseraudiochannellabel/discrete_13.md)
+- [Discrete_13](./discrete_13.md)
   Numbered discrete channel 13.
-- [Discrete_14](audiodriverkit/iouseraudiochannellabel/discrete_14.md)
+- [Discrete_14](./discrete_14.md)
   Numbered discrete channel 14.
-- [Discrete_15](audiodriverkit/iouseraudiochannellabel/discrete_15.md)
+- [Discrete_15](./discrete_15.md)
   Numbered discrete channel 15.
 
 

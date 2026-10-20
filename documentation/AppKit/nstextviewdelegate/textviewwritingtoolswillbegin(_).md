@@ -1,7 +1,8 @@
 # textViewWritingToolsWillBegin(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -13,14 +14,19 @@
 optional func textViewWritingToolsWillBegin(_ textView: NSTextView)
 ```
 
+```objc
+- (void) textViewWritingToolsWillBegin:(NSTextView *) textView;
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for AppKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 ## See Also
 
-- [func textViewWritingToolsDidEnd(NSTextView)](nstextviewdelegate/textviewwritingtoolsdidend(_:).md)
-- [func textView(NSTextView, writingToolsIgnoredRangesInEnclosingRange: NSRange) -> [NSValue]](nstextviewdelegate/textview(_:writingtoolsignoredrangesinenclosingrange:).md)
+### Responding to writing tools interactions
+- [func textViewWritingToolsDidEnd(NSTextView)](./textviewwritingtoolsdidend%28_%29.md)
+- [func textView(NSTextView, writingToolsIgnoredRangesInEnclosingRange: NSRange) -> [NSValue]](./textview%28_,writingtoolsignoredrangesinenclosingrange%29.md)
 
 
 ---

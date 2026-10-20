@@ -1,12 +1,13 @@
 # init(reason:exception:)
 
 **Framework**: Hypervisor  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new virtual cpu exit structure with a reason and exception that you provide.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,12 +17,13 @@ init(reason: hv_exit_reason_t, exception: hv_vcpu_exit_exception_t)
 
 ## Parameters
 
-- `reason`: The [`hv_exit_reason_t`](hv_exit_reason_t.md) result code that describes the reason for the exception.
+- `reason`: The [`hv_exit_reason_t`](../hv_exit_reason_t.md) result code that describes the reason for the exception.
 - `exception`: The exception struture.
 
 ## See Also
 
-- [init()](hv_vcpu_exit_t/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a new exit reason structure.
 
 

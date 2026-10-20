@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new command allocator.
@@ -20,13 +21,17 @@ Creates a new command allocator.
 func makeCommandAllocator() -> (any MTL4CommandAllocator)?
 ```
 
+```objc
+- (id<MTL4CommandAllocator>) newCommandAllocator;
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
 #### Return Value
 
-A [`MTL4CommandAllocator`](mtl4commandallocator.md) instance, or `nil` if the function failed.
+A [`MTL4CommandAllocator`](../mtl4commandallocator.md) instance, or `nil` if the function failed.
 
 
 ---

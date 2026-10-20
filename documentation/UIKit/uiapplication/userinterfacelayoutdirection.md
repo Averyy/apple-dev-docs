@@ -1,7 +1,8 @@
 # userInterfaceLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout direction of the user interface.
 
@@ -9,7 +10,7 @@ The layout direction of the user interface.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The layout direction of the user interface.
 var userInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceLayoutDirection userInterfaceLayoutDirection;
+```
+
 #### Discussion
 
-This method specifies the general user interface layout flow direction. See [`UIUserInterfaceLayoutDirection`](uiuserinterfacelayoutdirection.md) for a description of the constants returned by this property.
+This method specifies the general user interface layout flow direction. See [`UIUserInterfaceLayoutDirection`](../uiuserinterfacelayoutdirection.md) for a description of the constants returned by this property.
 
 ## See Also
 
-- [enum UIUserInterfaceLayoutDirection](uiuserinterfacelayoutdirection.md)
+### Accessing the layout direction
+- [enum UIUserInterfaceLayoutDirection](../uiuserinterfacelayoutdirection.md)
   Constants that specify the directional flow of the user interface.
 
 

@@ -1,7 +1,8 @@
 # isEdgeLightSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the format supports the Edge Light feature.
 
@@ -16,6 +17,10 @@ Indicates whether the format supports the Edge Light feature.
 
 ```swift
 var isEdgeLightSupported: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isEdgeLightSupported) BOOL edgeLightSupported;
 ```
 
 #### Discussion

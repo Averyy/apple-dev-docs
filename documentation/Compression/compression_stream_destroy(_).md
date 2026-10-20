@@ -1,7 +1,8 @@
 # compression_stream_destroy(_:)
 
 **Framework**: Compression  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Frees any memory allocated by stream initialization function.
 
@@ -20,36 +21,41 @@ Frees any memory allocated by stream initialization function.
 func compression_stream_destroy(_ stream: UnsafeMutablePointer<compression_stream>) -> compression_status
 ```
 
+```c
+extern compression_status compression_stream_destroy(compression_stream *stream);
+```
+
 ##### Return Value
 
-A value of type [`compression_status`](compression_status.md), interpreted as follows:
+A value of type [`compression_status`](./compression_status.md), interpreted as follows:
 
-- [`COMPRESSION_STATUS_OK`](compression_status_ok.md) means that the function successfully destroyed the stream.
-- [`COMPRESSION_STATUS_ERROR`](compression_status_error.md) means an error occurred.
+- [`COMPRESSION_STATUS_OK`](./compression_status_ok.md) means that the function successfully destroyed the stream.
+- [`COMPRESSION_STATUS_ERROR`](./compression_status_error.md) means an error occurred.
 
 #### Discussion
 
-Note that [`compression_stream_destroy(_:)`](compression_stream_destroy(_:).md) doesn’t free the stream object or the buffers allocated by the caller.
+Note that [`compression_stream_destroy(_:)`](./compression_stream_destroy%28_%29.md) doesn’t free the stream object or the buffers allocated by the caller.
 
 ## Parameters
 
-- `stream`: A pointer to an allocated and initialized [`compression_stream`](compression_stream.md) structure.
+- `stream`: A pointer to an allocated and initialized [`compression_stream`](./compression_stream.md) structure.
 
 ## See Also
 
-- [struct compression_stream](compression_stream.md)
+### Multiple-step compression
+- [struct compression_stream](./compression_stream.md)
   A structure representing a compression stream.
-- [func compression_stream_init(UnsafeMutablePointer<compression_stream>, compression_stream_operation, compression_algorithm) -> compression_status](compression_stream_init(_:_:_:).md)
+- [func compression_stream_init(UnsafeMutablePointer<compression_stream>, compression_stream_operation, compression_algorithm) -> compression_status](./compression_stream_init%28_,_,_%29.md)
   Initializes a compression stream for either compression or decompression.
-- [func compression_stream_process(UnsafeMutablePointer<compression_stream>, Int32) -> compression_status](compression_stream_process(_:_:).md)
+- [func compression_stream_process(UnsafeMutablePointer<compression_stream>, Int32) -> compression_status](./compression_stream_process%28_,_%29.md)
   Performs compression or decompression using an initialized compression stream structure.
-- [struct compression_status](compression_status.md)
+- [struct compression_status](./compression_status.md)
   A set of values used to represent the status of stream compression.
-- [struct compression_stream_flags](compression_stream_flags.md)
+- [struct compression_stream_flags](./compression_stream_flags.md)
   A set of values used to represent stream compression flags.
-- [struct compression_stream_operation](compression_stream_operation.md)
+- [struct compression_stream_operation](./compression_stream_operation.md)
   A set of values used to represent a stream compression operation.
-- [struct compression_algorithm](compression_algorithm.md)
+- [struct compression_algorithm](./compression_algorithm.md)
   A structure for values that represent compression algorithms.
 
 

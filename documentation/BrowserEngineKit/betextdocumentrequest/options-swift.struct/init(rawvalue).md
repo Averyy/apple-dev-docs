@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an options instance for a text document request with the specified raw value.
 

@@ -1,7 +1,8 @@
 # nw_connection_group_state_cancelled
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The connection group has been canceled.
 
@@ -20,15 +21,20 @@ The connection group has been canceled.
 var nw_connection_group_state_cancelled: nw_connection_group_state_t { get }
 ```
 
+```c
+nw_connection_group_state_cancelled
+```
+
 ## See Also
 
-- [var nw_connection_group_state_invalid: nw_connection_group_state_t](nw_connection_group_state_invalid.md)
+### States
+- [var nw_connection_group_state_invalid: nw_connection_group_state_t](./nw_connection_group_state_invalid.md)
   The connection group is not valid.
-- [var nw_connection_group_state_waiting: nw_connection_group_state_t](nw_connection_group_state_waiting.md)
+- [var nw_connection_group_state_waiting: nw_connection_group_state_t](./nw_connection_group_state_waiting.md)
   The connection group is waiting for a network path change.
-- [var nw_connection_group_state_ready: nw_connection_group_state_t](nw_connection_group_state_ready.md)
+- [var nw_connection_group_state_ready: nw_connection_group_state_t](./nw_connection_group_state_ready.md)
   The connection group is joined, and ready to send and receive data.
-- [var nw_connection_group_state_failed: nw_connection_group_state_t](nw_connection_group_state_failed.md)
+- [var nw_connection_group_state_failed: nw_connection_group_state_t](./nw_connection_group_state_failed.md)
   The connection group encountered a fatal error.
 
 

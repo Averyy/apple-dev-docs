@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a transformer to a data frame.
 
@@ -32,11 +33,12 @@ The fitted transformer.
 
 ## See Also
 
-- [func makeTransformer() -> Estimator.Transformer](updatabletabularestimatortosupervisedadaptor/maketransformer.md)
+### Fitting
+- [func makeTransformer() -> Estimator.Transformer](./maketransformer%28%29.md)
   Creates a default-initialized transformer suitable for incremental fitting.
-- [func update(inout UpdatableTabularEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](updatabletabularestimatortosupervisedadaptor/update(_:with:eventhandler:).md)
+- [func update(inout UpdatableTabularEstimatorToSupervisedAdaptor<Estimator, Annotation>.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new data frame containing examples.
-- [protocol Transformer](transformer.md)
+- [protocol Transformer](../transformer.md)
   A transformer that takes an input and produces an output.
 
 

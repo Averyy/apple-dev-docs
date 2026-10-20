@@ -1,12 +1,13 @@
 # squareLength
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status item length that is equal to the status bar’s thickness.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A status item length that is equal to the status bar’s thickness.
 class let squareLength: CGFloat
 ```
 
+```c
+static const CGFloat NSSquareStatusItemLength;
+```
+
 ## See Also
 
-- [var isVisible: Bool](nsstatusitem/isvisible.md)
+### Configuring the status item’s appearance
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value indicating if the menu bar currently displays the status item.
-- [var length: CGFloat](nsstatusitem/length.md)
+- [var length: CGFloat](./length.md)
   The amount of space in the status bar that should be allocated to the status item.
-- [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
+- [class let variableLength: CGFloat](./variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
-- [var view: NSView?](nsstatusitem/view.md)
+- [var view: NSView?](./view.md)
   The custom view the status item displays at its position in the status bar.
 
 

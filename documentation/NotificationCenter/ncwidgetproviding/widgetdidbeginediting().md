@@ -1,12 +1,15 @@
 # widgetDidBeginEditing()
 
 **Framework**: Notification Center  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a user chooses the widget’s begin editing button.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -14,15 +17,20 @@ Called when a user chooses the widget’s begin editing button.
 optional func widgetDidBeginEditing()
 ```
 
+```objc
+- (void) widgetDidBeginEditing;
+```
+
 #### Discussion
 
-This method can be called when [`widgetAllowsEditing`](ncwidgetproviding/widgetallowsediting.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+This method can be called when [`widgetAllowsEditing`](./widgetallowsediting.md) is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var widgetAllowsEditing: Bool](ncwidgetproviding/widgetallowsediting.md)
+### Supporting Editing
+- [var widgetAllowsEditing: Bool](./widgetallowsediting.md)
   A Boolean value indicating whether the widget can be edited by users.
-- [func widgetDidEndEditing()](ncwidgetproviding/widgetdidendediting.md)
+- [func widgetDidEndEditing()](./widgetdidendediting%28%29.md)
   Called when a widget’s editing session ends.
 
 

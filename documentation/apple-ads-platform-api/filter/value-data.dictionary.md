@@ -1,7 +1,8 @@
 # Filter.Value
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The comparison operand supplied for the filter condition.
 
@@ -10,7 +11,7 @@ The comparison operand supplied for the filter condition.
 
 ## Declaration
 
-```swift
+```
 object Filter.Value
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the rectangle, in unit coordinates, that contains the image within the view.
@@ -21,7 +22,7 @@ func contentsRect(for interaction: ImageAnalysisInteraction) -> CGRect
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 #### Return Value
 
@@ -29,17 +30,24 @@ The rectangle of the image within the view, in unit coordinates. The default ret
 
 #### Discussion
 
-Implement this method when the interaction view type isn’t [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
+Implement this method when the interaction view type isn’t [`UIImageView`](../../UIKit/uiimageview.md).
 
 ## Parameters
 
 - `interaction`: The associated interaction object for the contents rectangle.
 
+## Default Implementations
+
+### ImageAnalysisInteractionDelegate Implementations
+- [func contentsRect(for: ImageAnalysisInteraction) -> CGRect](./contentsrect%28for%29-90dek.md)
+  A default unit rectangle that represents the full size of the interaction view.
+
 ## See Also
 
-- [func contentView(for: ImageAnalysisInteraction) -> UIView?](imageanalysisinteractiondelegate/contentview(for:).md)
+### Providing interface details
+- [func contentView(for: ImageAnalysisInteraction) -> UIView?](./contentview%28for%29.md)
   Provides the view that contains the image.
-- [func presentingViewController(for: ImageAnalysisInteraction) -> UIViewController?](imageanalysisinteractiondelegate/presentingviewcontroller(for:).md)
+- [func presentingViewController(for: ImageAnalysisInteraction) -> UIViewController?](./presentingviewcontroller%28for%29.md)
   Provides the view controller that presents the interface objects.
 
 

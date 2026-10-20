@@ -7,12 +7,12 @@ Appends a C string to the XML stream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool addString(
  const char *cString);
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if `cString` is successfully added to the XML stream, `false` otherwise.
 
@@ -22,19 +22,20 @@ virtual bool addString(
 
 ## See Also
 
-- [addChar](osserialize/1808034-addchar.md)
+### Miscellaneous
+- [addChar](./api-1808034-addchar.md)
   Appends a single character to the XML stream.
-- [addXMLEndTag](osserialize/1808061-addxmlendtag.md)
+- [addXMLEndTag](./api-1808061-addxmlendtag.md)
   Appends an XML end tag to the XML stream.
-- [addXMLStartTag](osserialize/1808073-addxmlstarttag.md)
+- [addXMLStartTag](./api-1808073-addxmlstarttag.md)
   Appends an XML start tag to the XML stream.
-- [clearText](osserialize/1808086-cleartext.md)
+- [clearText](./api-1808086-cleartext.md)
   Resets the OSSerialize object.
-- [previouslySerialized](osserialize/1808096-previouslyserialized.md)
+- [previouslySerialized](./api-1808096-previouslyserialized.md)
   Checks whether the object has already been serialized into the XML stream, emitting a reference if it has.
-- [text](osserialize/1808110-text.md)
+- [text](./api-1808110-text.md)
   Returns the XML text serialized so far.
-- [withCapacity](osserialize/1808120-withcapacity.md)
+- [withCapacity](./api-1808120-withcapacity.md)
   Creates and initializes an empty OSSerialize object.
 
 

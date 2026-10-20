@@ -1,7 +1,8 @@
 # subscribe(on:options:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the scheduler on which to perform subscribe, cancel, and request operations.
 
@@ -26,9 +27,9 @@ A publisher which performs upstream operations on the specified scheduler.
 
 #### Discussion
 
-In contrast with [`receive(on:options:)`](publisher/receive(on:options:).md), which affects downstream messages, [`subscribe(on:options:)`](publisher/subscribe(on:options:).md) changes the execution context of upstream messages.
+In contrast with [`receive(on:options:)`](./receive%28on,options%29.md), which affects downstream messages, [`subscribe(on:options:)`](./subscribe%28on,options%29.md) changes the execution context of upstream messages.
 
-In the following example, the [`subscribe(on:options:)`](publisher/subscribe(on:options:).md) operator causes `ioPerformingPublisher` to receive requests on `backgroundQueue`, while the [`receive(on:options:)`](publisher/receive(on:options:).md) causes `uiUpdatingSubscriber` to receive elements and completion on `RunLoop.main`.
+In the following example, the [`subscribe(on:options:)`](./subscribe%28on,options%29.md) operator causes `ioPerformingPublisher` to receive requests on `backgroundQueue`, while the [`receive(on:options:)`](./receive%28on,options%29.md) causes `uiUpdatingSubscriber` to receive elements and completion on `RunLoop.main`.
 
 ```swift
 let ioPerformingPublisher == // Some publisher.
@@ -40,7 +41,7 @@ ioPerformingPublisher
     .subscribe(uiUpdatingSubscriber)
 ```
 
-Using [`subscribe(on:options:)`](publisher/subscribe(on:options:).md) also causes the upstream publisher to perform [`cancel()`](cancellable/cancel().md) using the specfied scheduler.
+Using [`subscribe(on:options:)`](./subscribe%28on,options%29.md) also causes the upstream publisher to perform [`cancel()`](../cancellable/cancel%28%29.md) using the specfied scheduler.
 
 ## Parameters
 
@@ -49,7 +50,8 @@ Using [`subscribe(on:options:)`](publisher/subscribe(on:options:).md) also cause
 
 ## See Also
 
-- [func receive<S>(on: S, options: S.SchedulerOptions?) -> Publishers.ReceiveOn<Self, S>](publisher/receive(on:options:).md)
+### Specifying schedulers
+- [func receive<S>(on: S, options: S.SchedulerOptions?) -> Publishers.ReceiveOn<Self, S>](./receive%28on,options%29.md)
   Specifies the scheduler on which to receive elements from the publisher.
 
 

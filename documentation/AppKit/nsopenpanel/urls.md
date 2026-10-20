@@ -1,17 +1,22 @@
 # urls
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of URLs, each of which contains the fully specified location of a selected file or directory.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var urls: [URL] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSURL *> * URLs;
 ```
 
 #### Discussion

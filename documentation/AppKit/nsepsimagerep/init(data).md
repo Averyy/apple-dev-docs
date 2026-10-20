@@ -1,17 +1,24 @@
 # init(data:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a representation of an image initialized with the specified EPS data.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: `NSEPSImageRep` instances cannot be created on macOS 14.0 and later
 
 ## Declaration
 
 ```swift
 init?(data epsData: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) epsData;
 ```
 
 #### Return Value

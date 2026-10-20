@@ -1,7 +1,8 @@
 # MDLabelGetTypeID()
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDLabelGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID MDLabelGetTypeID(void);
 ```
 
 

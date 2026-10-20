@@ -1,16 +1,23 @@
 # FSEventStreamScheduleWithRunLoop(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 16.0
 - macOS 10.5+ - Deprecated in 13.0
 
+> **Deprecated**: Use [`FSEventStreamSetDispatchQueue(_:_:)`](./api-1444164-fseventstreamsetdispatchqueue.md) instead.
+
 ## Declaration
 
 ```swift
 func FSEventStreamScheduleWithRunLoop(_ streamRef: FSEventStreamRef, _ runLoop: CFRunLoop, _ runLoopMode: CFString)
+```
+
+```c
+void FSEventStreamScheduleWithRunLoop(FSEventStreamRef streamRef, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
 #### Discussion

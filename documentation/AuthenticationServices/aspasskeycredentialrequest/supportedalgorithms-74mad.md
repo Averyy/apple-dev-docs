@@ -1,7 +1,8 @@
 # supportedAlgorithms
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of cryptographic signature algorithms that the relying party supports.
 
@@ -24,13 +25,14 @@ For credential assertion requests, this property is empty.
 
 ## See Also
 
-- [var clientDataHash: Data](aspasskeycredentialrequest/clientdatahash.md)
+### Viewing passkey challenge information
+- [var clientDataHash: Data](./clientdatahash.md)
   The hash of the client data for this assertion.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequest/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   The relying party’s user verification preference.
-- [var extensionInput: ASPasskeyCredentialExtensionInput](aspasskeycredentialrequest/extensioninput.md)
+- [var extensionInput: ASPasskeyCredentialExtensionInput](./extensioninput.md)
   An input for WebAuthn extensions.
-- [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
+- [enum ASPasskeyCredentialExtensionInput](../aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
 
 

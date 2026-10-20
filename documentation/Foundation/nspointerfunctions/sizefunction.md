@@ -1,7 +1,8 @@
 # sizeFunction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function used to determine the size of pointers.
 
@@ -20,17 +21,22 @@ The function used to determine the size of pointers.
 var sizeFunction: ((UnsafeRawPointer) -> Int)? { get set }
 ```
 
+```objc
+@property (nullable) unsigned long (*)(const void *) sizeFunction;
+```
+
 #### Discussion
 
 This function is used for copy-in operations (unless the collection has an object personality).
 
 ## See Also
 
-- [var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)?](nspointerfunctions/hashfunction.md)
+### Personality Functions
+- [var hashFunction: ((UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> Int)?](./hashfunction.md)
   The hash function.
-- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](nspointerfunctions/isequalfunction.md)
+- [var isEqualFunction: ((UnsafeRawPointer, UnsafeRawPointer, ((UnsafeRawPointer) -> Int)?) -> ObjCBool)?](./isequalfunction.md)
   The function used to compare pointers.
-- [var descriptionFunction: ((UnsafeRawPointer) -> String?)?](nspointerfunctions/descriptionfunction.md)
+- [var descriptionFunction: ((UnsafeRawPointer) -> String?)?](./descriptionfunction.md)
   The function used to describe elements.
 
 

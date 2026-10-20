@@ -1,18 +1,21 @@
 # CLGeocoder
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for converting between geographic coordinates and place names.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 26.0
+- iPadOS 5.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 2.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use MapKit
 
 ## Declaration
 
@@ -20,22 +23,26 @@ An interface for converting between geographic coordinates and place names.
 class CLGeocoder
 ```
 
+```objc
+@interface CLGeocoder : NSObject
+```
+
 ## Mentions
 
-- [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+- [Converting between coordinates and user-friendly place names](./converting-between-coordinates-and-user-friendly-place-names.md)
+- [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
 
 #### Overview
 
-The [`CLGeocoder`](clgeocoder.md) class provides services for converting between a coordinate (specified as a latitude and longitude) and the user-friendly representation of that coordinate. A user-friendly representation of the coordinate typically consists of the street, city, state, and country or region information corresponding to the given location, but it may also contain a relevant point of interest, landmarks, or other identifying information. A geocoder object is a single-shot object that works with a network-based service to look up placemark information for its specified coordinate value.
+The [`CLGeocoder`](./clgeocoder.md) class provides services for converting between a coordinate (specified as a latitude and longitude) and the user-friendly representation of that coordinate. A user-friendly representation of the coordinate typically consists of the street, city, state, and country or region information corresponding to the given location, but it may also contain a relevant point of interest, landmarks, or other identifying information. A geocoder object is a single-shot object that works with a network-based service to look up placemark information for its specified coordinate value.
 
-To use a geocoder object, you create it and call one of its forward- or reverse-geocoding methods to begin the request. *Reverse-geocoding* requests take a latitude and longitude value and find a user-readable address. *Forward-geocoding* requests take a user-readable address and find the corresponding latitude and longitude value. Forward-geocoding requests may also return additional information about the specified location, such as a point of interest or building at that location. For both types of request, the results are returned using a [`CLPlacemark`](clplacemark.md) object. In the case of forward-geocoding requests, multiple placemark objects may be returned if the provided information yielded multiple possible locations.
+To use a geocoder object, you create it and call one of its forward- or reverse-geocoding methods to begin the request. *Reverse-geocoding* requests take a latitude and longitude value and find a user-readable address. *Forward-geocoding* requests take a user-readable address and find the corresponding latitude and longitude value. Forward-geocoding requests may also return additional information about the specified location, such as a point of interest or building at that location. For both types of request, the results are returned using a [`CLPlacemark`](./clplacemark.md) object. In the case of forward-geocoding requests, multiple placemark objects may be returned if the provided information yielded multiple possible locations.
 
 To make smart decisions about what types of information to return, the geocoder server uses all the information provided to it when processing the request. For example, if the user is moving quickly along a highway, it might return the name of the overall region, and not the name of a small park that the user is passing through.
 
 ##### Tips for Using a Geocoder Object
 
-Apps must be conscious of how they use geocoding. Geocoding requests are rate-limited for each app, so making too many requests in a short period of time may cause some of the requests to fail. (When the maximum rate is exceeded, the geocoder returns an error object with the [`CLError.Code.network`](clerror-swift.struct/code/network.md) error to the associated completion handler.) Here are some rules of thumb for using this class effectively:
+Apps must be conscious of how they use geocoding. Geocoding requests are rate-limited for each app, so making too many requests in a short period of time may cause some of the requests to fail. (When the maximum rate is exceeded, the geocoder returns an error object with the [`CLError.Code.network`](./clerror-swift.struct/code/network.md) error to the associated completion handler.) Here are some rules of thumb for using this class effectively:
 
 - Send at most one geocoding request for any one user action.
 - If the user performs multiple actions that involve geocoding the same location, reuse the results from the initial geocoding request instead of starting individual requests for each action.
@@ -44,57 +51,58 @@ Apps must be conscious of how they use geocoding. Geocoding requests are rate-li
 
 The computer or device must have access to the network in order for the geocoder object to return detailed placemark information. Although, the geocoder stores enough information locally to report the localized country or region name and ISO country code for many locations. If this information isn’t available for a specific location, the geocoder may still report an error to your completion block.
 
-You can use geocoder objects either in conjunction with, or independent of, the classes of the [`MapKit`](https://developer.apple.com/documentation/mapkit) framework.
+You can use geocoder objects either in conjunction with, or independent of, the classes of the [MapKit](../MapKit/MapKit.md) framework.
 
 ## Topics
 
 ### Reverse geocoding a location
-- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:preferredlocale:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/reversegeocodelocation%28_,preferredlocale,completionhandler%29.md)
   Submits a reverse-geocoding request for the specified location and locale.
-- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/reversegeocodelocation(_:completionhandler:).md)
+- [func reverseGeocodeLocation(CLLocation, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/reversegeocodelocation%28_,completionhandler%29.md)
   Submits a reverse-geocoding request for the specified location.
-- [typealias CLGeocodeCompletionHandler](clgeocodecompletionhandler.md)
+- [typealias CLGeocodeCompletionHandler](./clgeocodecompletionhandler.md)
   A block to be called when a geocoding request is complete.
 ### Geocoding an address
-- [func geocodeAddressString(String, in: CLRegion?, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:in:preferredlocale:completionhandler:).md)
+- [func geocodeAddressString(String, in: CLRegion?, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodeaddressstring%28_,in,preferredlocale,completionhandler%29.md)
   Submits a forward-geocoding requesting using the specified address string and locale information.
-- [func geocodeAddressString(String, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:completionhandler:).md)
+- [func geocodeAddressString(String, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodeaddressstring%28_,completionhandler%29.md)
   Submits a forward-geocoding request using the specified string.
-- [func geocodeAddressString(String, in: CLRegion?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:in:completionhandler:).md)
+- [func geocodeAddressString(String, in: CLRegion?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodeaddressstring%28_,in,completionhandler%29.md)
   Submits a forward-geocoding request using the specified string and region information.
-- [func geocodePostalAddress(CNPostalAddress, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodepostaladdress(_:completionhandler:).md)
+- [func geocodePostalAddress(CNPostalAddress, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodepostaladdress%28_,completionhandler%29.md)
   Submits a forward-geocoding requesting using the specified Contacts framework information.
-- [func geocodePostalAddress(CNPostalAddress, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodepostaladdress(_:preferredlocale:completionhandler:).md)
+- [func geocodePostalAddress(CNPostalAddress, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodepostaladdress%28_,preferredlocale,completionhandler%29.md)
   Submits a forward-geocoding requesting using the specified locale and Contacts framework information.
-- [func geocodeAddressDictionary([AnyHashable : Any], completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressdictionary(_:completionhandler:).md)
+- [func geocodeAddressDictionary([AnyHashable : Any], completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodeaddressdictionary%28_,completionhandler%29.md)
   Submits a forward-geocoding request using the specified address dictionary.
 ### Managing geocoding requests
-- [func cancelGeocode()](clgeocoder/cancelgeocode.md)
+- [func cancelGeocode()](./clgeocoder/cancelgeocode%28%29.md)
   Cancels a pending geocoding request.
-- [var isGeocoding: Bool](clgeocoder/isgeocoding.md)
+- [var isGeocoding: Bool](./clgeocoder/isgeocoding.md)
   A Boolean value indicating whether the receiver is in the middle of geocoding its value.
 ### Instance Methods
-- [func geocodeAddressString(String, inRegionCenteredAt: CLLocationCoordinate2D, inRegionRadius: CLLocationDistance, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](clgeocoder/geocodeaddressstring(_:inregioncenteredat:inregionradius:preferredlocale:completionhandler:).md)
+- [func geocodeAddressString(String, inRegionCenteredAt: CLLocationCoordinate2D, inRegionRadius: CLLocationDistance, preferredLocale: Locale?, completionHandler: ([CLPlacemark]?, (any Error)?) -> Void)](./clgeocoder/geocodeaddressstring%28_,inregioncenteredat,inregionradius,preferredlocale,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Converting between coordinates and user-friendly place names](converting-between-coordinates-and-user-friendly-place-names.md)
+### Geocoding
+- [Converting between coordinates and user-friendly place names](./converting-between-coordinates-and-user-friendly-place-names.md)
   Convert between a latitude and longitude pair and a more user-friendly description of that location.
-- [Converting a user’s location to a descriptive placemark](converting-a-user-s-location-to-a-descriptive-placemark.md)
+- [Converting a user’s location to a descriptive placemark](./converting-a-user-s-location-to-a-descriptive-placemark.md)
   Transform the user’s location that displays on a map into an informative textual description by reverse geocoding.
-- [class CLPlacemark](clplacemark.md)
+- [class CLPlacemark](./clplacemark.md)
   A user-friendly description of a geographic coordinate, often containing the name of the place, its address, and other relevant information.
 
 

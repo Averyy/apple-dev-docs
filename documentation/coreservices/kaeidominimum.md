@@ -1,7 +1,8 @@
 # kAEIDoMinimum
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The application does not handle whose tests or provide marking callbacks.
 

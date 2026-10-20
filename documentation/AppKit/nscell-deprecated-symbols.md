@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,13 +12,13 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated properties
-- [var controlTint: NSControlTint](nscell/controltint.md)
+- [var controlTint: NSControlTint](./nscell/controltint.md)
   The cell’s control tint.
 ### Deprecated type aliases
-- [typealias StateValue](nscell/statevalue.md)
+- [typealias StateValue](./nscell/statevalue.md)
   Constants for specifying a cell’s state and are used mostly for buttons.
 ### Deprecated constants
-- [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
+- [class let currentControlTintDidChangeNotification: NSNotification.Name](./nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
 
 

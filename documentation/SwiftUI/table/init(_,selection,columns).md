@@ -1,7 +1,8 @@
 # init(_:selection:columns:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a table that computes its rows based on a collection of identifiable data, and that supports selecting multiple rows.
 
@@ -19,6 +20,15 @@ nonisolated
 init<Data>(_ data: Data, selection: Binding<Set<Value.ID>>, @TableColumnBuilder<Value, Never> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Columns.TableRowValue == Data.Element
 ```
 
+Available when `Value` is `Rows.TableRowValue`, `Rows` conforms to `TableRowContent`, `Columns` conforms to `TableColumnContent`, and `Rows.TableRowValue` is `Columns.TableRowValue`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<Data>(_ data: Data, selection: Binding<Value.ID?>, @TableColumnBuilder<Value, Never> columns: () -> Columns) where Rows == TableForEachContent<Data>, Data : RandomAccessCollection, Columns.TableRowValue == Data.Element
+```
+
 ## Parameters
 
 - `data`: The identifiable data for computing the table rows.
@@ -27,7 +37,8 @@ init<Data>(_ data: Data, selection: Binding<Set<Value.ID>>, @TableColumnBuilder<
 
 ## See Also
 
-- [init<Data>(Data, columns: () -> Columns)](table/init(_:columns:).md)
+### Creating a table from columns
+- [init<Data>(Data, columns: () -> Columns)](./init%28_,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data.
 
 

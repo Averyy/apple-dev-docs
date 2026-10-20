@@ -1,7 +1,8 @@
 # String.IntentInputOptions.CapitalizationType.words
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that capitalizes the first letter of each word.
 

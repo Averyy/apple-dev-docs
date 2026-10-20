@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a new part to the container. Returns true if added. Returns false if it already exists.
 
@@ -11,7 +12,7 @@ Add a new part to the container. Returns true if added. Returns false if it alre
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ mutating func insert(_ part: MeshResource.Part) -> Bool
 
 ## See Also
 
-- [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
+### Using the collection
+- [func remove(id: String) -> MeshResource.Part?](./remove%28id%29.md)
   Remove a part by id.
-- [func removeAll()](meshpartcollection/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Remove all the parts.
-- [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
+- [func update(MeshResource.Part) -> MeshResource.Part?](./update%28_%29.md)
   Update an existing part. The old part is returned.
 
 

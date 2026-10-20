@@ -1,7 +1,8 @@
 # OSLogEntryLog.Level.notice
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The log level that captures notifications.
 
@@ -20,21 +21,26 @@ The log level that captures notifications.
 case notice
 ```
 
+```c
+OSLogEntryLogLevelNotice
+```
+
 #### Discussion
 
 This log level captures normal `os_log` entries used to generate notifications on system errors.
 
 ## See Also
 
-- [OSLogEntryLog.Level.undefined](oslogentrylog/level-swift.enum/undefined.md)
+### Log Levels
+- [OSLogEntryLog.Level.undefined](./undefined.md)
   The log level was never specified.
-- [OSLogEntryLog.Level.debug](oslogentrylog/level-swift.enum/debug.md)
+- [OSLogEntryLog.Level.debug](./debug.md)
   A log level that captures diagnostic information.
-- [OSLogEntryLog.Level.info](oslogentrylog/level-swift.enum/info.md)
+- [OSLogEntryLog.Level.info](./info.md)
   The log level that captures additional information.
-- [OSLogEntryLog.Level.error](oslogentrylog/level-swift.enum/error.md)
+- [OSLogEntryLog.Level.error](./error.md)
   The log level that captures errors.
-- [OSLogEntryLog.Level.fault](oslogentrylog/level-swift.enum/fault.md)
+- [OSLogEntryLog.Level.fault](./fault.md)
   The log level that captures fault information.
 
 

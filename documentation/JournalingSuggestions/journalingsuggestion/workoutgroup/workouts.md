@@ -1,7 +1,8 @@
 # workouts
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of workout suggestions that a person chooses in the picker.
 

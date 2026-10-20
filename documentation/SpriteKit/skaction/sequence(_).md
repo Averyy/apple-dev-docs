@@ -1,23 +1,28 @@
 # sequence(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that runs a collection of actions sequentially.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func sequence(_ actions: [SKAction]) -> SKAction
+```
+
+```objc
++ (SKAction *) sequence:(NSArray<SKAction *> *) actions;
 ```
 
 #### Return Value
@@ -32,15 +37,16 @@ This action is reversible; it creates a new sequence action that reverses the or
 
 ## Parameters
 
-- `actions`: An array of [`SKAction`](skaction.md) objects.
+- `actions`: An array of [`SKAction`](../skaction.md) objects.
 
 ## See Also
 
-- [class func group([SKAction]) -> SKAction](skaction/group(_:).md)
+### Chaining Actions
+- [class func group([SKAction]) -> SKAction](./group%28_%29.md)
   Creates an action that runs a collection of actions in parallel.
-- [class func `repeat`(SKAction, count: Int) -> SKAction](skaction/repeat(_:count:).md)
+- [class func `repeat`(SKAction, count: Int) -> SKAction](./repeat%28_,count%29.md)
   Creates an action that repeats another action a specified number of times.
-- [class func repeatForever(SKAction) -> SKAction](skaction/repeatforever(_:).md)
+- [class func repeatForever(SKAction) -> SKAction](./repeatforever%28_%29.md)
   Creates an action that repeats another action forever.
 
 

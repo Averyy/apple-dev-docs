@@ -1,7 +1,8 @@
 # pciSubclassID
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PCI subclass ID of the device.
 
@@ -12,6 +13,10 @@ The PCI subclass ID of the device.
 
 ```swift
 var pciSubclassID: UInt8 { get set }
+```
+
+```objc
+@property (readwrite) uint8_t PCISubclassID;
 ```
 
 

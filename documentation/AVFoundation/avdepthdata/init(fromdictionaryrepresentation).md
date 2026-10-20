@@ -1,7 +1,8 @@
 # init(fromDictionaryRepresentation:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a depth data object from depth information such as that found in an image file.
 
@@ -19,13 +20,17 @@ Creates a depth data object from depth information such as that found in an imag
 convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: [AnyHashable : Any]) throws
 ```
 
+```objc
++ (instancetype) depthDataFromDictionaryRepresentation:(NSDictionary *) imageSourceAuxDataInfoDictionary error:(NSError **) outError;
+```
+
 ## Mentions
 
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](../creating-auxiliary-depth-data-manually.md)
 
 #### Discussion
 
-When using `CGImageSource` functions to read from a HEIF, JPEG, or DNG file containing depth data (as well as image data), you can use the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)) function to load primitive depth map information, then use this initializer to create an [`AVDepthData`](avdepthdata.md) object, as shown below.
+When using `CGImageSource` functions to read from a HEIF, JPEG, or DNG file containing depth data (as well as image data), you can use the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function to load primitive depth map information, then use this initializer to create an [`AVDepthData`](../avdepthdata.md) object, as shown below.
 
 ```swift
 - (nullable AVDepthData *)depthDataFromImageData:(nonnull NSData *)imageData {
@@ -47,11 +52,12 @@ When using `CGImageSource` functions to read from a HEIF, JPEG, or DNG file cont
 
 ## Parameters
 
-- `imageSourceAuxDataInfoDictionary`: A dictionary of primitive depth-related information, in the format provided by the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)) function.
+- `imageSourceAuxDataInfoDictionary`: A dictionary of primitive depth-related information, in the format provided by the  [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function.
 
 ## See Also
 
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avdepthdata/dictionaryrepresentation(forauxiliarydatatype:).md)
+### Creating depth data
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./dictionaryrepresentation%28forauxiliarydatatype%29.md)
   Returns a dictionary representation of the depth data suitable for writing into an image file.
 
 

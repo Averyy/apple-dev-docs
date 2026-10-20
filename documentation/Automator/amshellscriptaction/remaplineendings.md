@@ -1,7 +1,8 @@
 # remapLineEndings
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you want automatic remapping of carriage return (`\r`) to newline (`\n`) characters in the input string.
 
@@ -15,15 +16,20 @@ A Boolean value that indicates whether you want automatic remapping of carriage 
 var remapLineEndings: Bool { get }
 ```
 
+```objc
+@property (atomic, readonly) BOOL remapLineEndings;
+```
+
 #### Discussion
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false). Override to return [`true`](https://developer.apple.com/documentation/swift/true) if you want the remapping to occur.
+The default is [`false`](../../Swift/false.md). Override to return [`true`](../../Swift/true.md) if you want the remapping to occur.
 
 ## See Also
 
-- [var inputFieldSeparator: String](amshellscriptaction/inputfieldseparator.md)
+### Handling the I/O Separator Character
+- [var inputFieldSeparator: String](./inputfieldseparator.md)
   A string to use as the delimiter between items in the string passed to the action through standard input.
-- [var outputFieldSeparator: String](amshellscriptaction/outputfieldseparator.md)
+- [var outputFieldSeparator: String](./outputfieldseparator.md)
   A string to use as a delimiter in the string output by the action.
 
 

@@ -1,7 +1,8 @@
 # HKElectrocardiogram.VoltageMeasurement
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The voltage for all leads at a single point in time.
 
@@ -19,32 +20,37 @@ The voltage for all leads at a single point in time.
 class VoltageMeasurement
 ```
 
+```objc
+@interface HKElectrocardiogramVoltageMeasurement : NSObject
+```
+
 ## Topics
 
 ### Accessing Data
-- [func quantity(for: HKElectrocardiogram.Lead) -> HKQuantity?](hkelectrocardiogram/voltagemeasurement/quantity(for:).md)
+- [func quantity(for: HKElectrocardiogram.Lead) -> HKQuantity?](./voltagemeasurement/quantity%28for%29.md)
   Returns the voltage for the specified lead.
-- [var timeSinceSampleStart: TimeInterval](hkelectrocardiogram/voltagemeasurement/timesincesamplestart.md)
+- [var timeSinceSampleStart: TimeInterval](./voltagemeasurement/timesincesamplestart.md)
   The time of the measurement relative to the sample’s start time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKElectrocardiogram](hkelectrocardiogram.md)
+### Electrocardiograms
+- [class HKElectrocardiogram](../hkelectrocardiogram.md)
   A sample for electrocardiogram data.
 
 

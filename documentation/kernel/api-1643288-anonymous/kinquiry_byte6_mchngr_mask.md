@@ -1,14 +1,15 @@
 # kINQUIRY_Byte6_MCHNGR_Mask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_Byte6_MCHNGR_Mask = (1 << kINQUIRY_Byte6_MCHNGR_Bit)
 ```
 

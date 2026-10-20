@@ -1,7 +1,8 @@
 # GroupActivitySharingResult
 
 **Framework**: Group Activities  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of a request to share a group activity in iOS.
 
@@ -20,20 +21,21 @@ enum GroupActivitySharingResult
 ## Topics
 
 ### Getting the result
-- [GroupActivitySharingResult.success](groupactivitysharingresult-2ijfu/success.md)
+- [GroupActivitySharingResult.success](./groupactivitysharingresult-2ijfu/success.md)
   A result that indicates someone wants to share the activity with the group.
-- [GroupActivitySharingResult.cancelled](groupactivitysharingresult-2ijfu/cancelled.md)
+- [GroupActivitySharingResult.cancelled](./groupactivitysharingresult-2ijfu/cancelled.md)
   A result that indicates someone canceled the request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [var result: GroupActivitySharingResult](groupactivitysharingcontroller-ybcy/result.md)
+### Getting the result
+- [var result: GroupActivitySharingResult](./groupactivitysharingcontroller-ybcy/result.md)
   The result of a request to share a group activity.
 
 

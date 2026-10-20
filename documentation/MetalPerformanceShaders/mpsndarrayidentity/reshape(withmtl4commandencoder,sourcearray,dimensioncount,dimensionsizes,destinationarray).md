@@ -1,7 +1,8 @@
 # reshape(withMTL4CommandEncoder:sourceArray:dimensionCount:dimensionSizes:destinationArray:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func reshape(withMTL4CommandEncoder encoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, dimensionCount numberOfDimensions: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray)
+```
+
+```objc
+- (void) reshapeWithMTL4CommandEncoder:(id<MTL4ComputeCommandEncoder>) encoder sourceArray:(MPSNDArray *) sourceArray dimensionCount:(NSUInteger) numberOfDimensions dimensionSizes:(NSUInteger *) dimensionSizes destinationArray:(MPSNDArray *) destinationArray;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # optionalString
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var optionalString: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * optionalString;
 ```
 
 

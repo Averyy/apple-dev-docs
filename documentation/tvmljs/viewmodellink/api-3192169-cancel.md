@@ -1,14 +1,15 @@
 # cancel
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - tvOS 13.0+
 
 ## Declaration
 
-```swift
+```
 attribute  cancel;
 ```
 

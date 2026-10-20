@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format of per-vertex data for the attribute.
 
@@ -19,15 +20,20 @@ The format of per-vertex data for the attribute.
 var format: MDLVertexFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MDLVertexFormat format;
+```
+
 #### Discussion
 
-A [`MDLVertexFormat`](mdlvertexformat.md) value describes the number of vector components for an attribute, as well as the data type of each component, and, for special packed formats, the layout of components.
+A [`MDLVertexFormat`](../mdlvertexformat.md) value describes the number of vector components for an attribute, as well as the data type of each component, and, for special packed formats, the layout of components.
 
 ## See Also
 
-- [var dataStart: UnsafeMutableRawPointer](mdlvertexattributedata/datastart.md)
+### Accessing Data for a Vertex Attribute
+- [var dataStart: UnsafeMutableRawPointer](./datastart.md)
   The offset, in bytes, from the start of the data to where vertex attribute information begins.
-- [var stride: Int](mdlvertexattributedata/stride.md)
+- [var stride: Int](./stride.md)
   The stride, in bytes, between vertex information for consecutive vertices in the data.
 
 

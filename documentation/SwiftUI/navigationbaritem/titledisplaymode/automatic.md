@@ -1,7 +1,8 @@
 # NavigationBarItem.TitleDisplayMode.automatic
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Inherit the display mode from the previous navigation item.
 
@@ -21,9 +22,10 @@ case automatic
 
 ## See Also
 
-- [NavigationBarItem.TitleDisplayMode.inline](navigationbaritem/titledisplaymode/inline.md)
+### Getting title display modes
+- [NavigationBarItem.TitleDisplayMode.inline](./inline.md)
   Display the title within the standard bounds of the navigation bar.
-- [NavigationBarItem.TitleDisplayMode.large](navigationbaritem/titledisplaymode/large.md)
+- [NavigationBarItem.TitleDisplayMode.large](./large.md)
   Display a large title within an expanded navigation bar.
 
 

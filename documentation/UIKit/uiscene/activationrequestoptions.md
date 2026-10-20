@@ -1,7 +1,8 @@
 # UIScene.ActivationRequestOptions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information you want the system to use when activating the session associated with a scene.
 
@@ -19,47 +20,52 @@ An object that contains information you want the system to use when activating t
 class ActivationRequestOptions
 ```
 
+```objc
+@interface UISceneActivationRequestOptions : NSObject
+```
+
 #### Overview
 
-Create a [`UIScene.ActivationRequestOptions`](uiscene/activationrequestoptions.md) object before you activate or create a scene using the [`activateSceneSession(for:errorHandler:)`](uiapplication/activatescenesession(for:errorhandler:).md) (Swift) or [`activateSceneSessionForRequest:errorHandler:`](uiapplication/activatescenesessionforrequest:errorhandler:.md) (Objective-C) method of [`UIApplication`](uiapplication.md). Use this object to specify which of your app’s existing scenes originated the request for the new scene.
+Create a [`UIScene.ActivationRequestOptions`](./activationrequestoptions.md) object before you activate or create a scene using the [`activateSceneSession(for:errorHandler:)`](../uiapplication/activatescenesession%28for,errorhandler%29.md) (Swift) or [`activateSceneSessionForRequest:errorHandler:`](../uiapplication/activatescenesessionforrequest_errorhandler_.md) (Objective-C) method of [`UIApplication`](../uiapplication.md). Use this object to specify which of your app’s existing scenes originated the request for the new scene.
 
 ## Topics
 
 ### Specifying the originator of the request
-- [var requestingScene: UIScene?](uiscene/activationrequestoptions/requestingscene.md)
+- [var requestingScene: UIScene?](./activationrequestoptions/requestingscene.md)
   The scene object that requested the activation of a different scene.
 ### Specifying collection join behavior
-- [var collectionJoinBehavior: UISceneCollectionJoinBehavior](uiscene/activationrequestoptions/collectionjoinbehavior.md)
+- [var collectionJoinBehavior: UISceneCollectionJoinBehavior](./activationrequestoptions/collectionjoinbehavior.md)
   The behavior that specifies how a new scene joins a scene collection.
-- [enum UISceneCollectionJoinBehavior](uiscenecollectionjoinbehavior.md)
+- [enum UISceneCollectionJoinBehavior](../uiscenecollectionjoinbehavior.md)
   A set of behaviors that specify how a new scene joins a scene collection.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIWindowScene.ActivationRequestOptions](uiwindowscene/activationrequestoptions.md)
+- [UIWindowScene.ActivationRequestOptions](../uiwindowscene/activationrequestoptions.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](uiapplication/activatescenesession(for:errorhandler:).md)
+### Managing a scene’s life cycle
+- [func activateSceneSession(for: UISceneSessionActivationRequest, errorHandler: ((any Error) -> Void)?)](../uiapplication/activatescenesession%28for,errorhandler%29.md)
   Asks the system to activate an existing scene or create a new scene and associate it with your app.
-- [func requestSceneSessionDestruction(UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)?)](uiapplication/requestscenesessiondestruction(_:options:errorhandler:).md)
+- [func requestSceneSessionDestruction(UISceneSession, options: UISceneDestructionRequestOptions?, errorHandler: ((any Error) -> Void)?)](../uiapplication/requestscenesessiondestruction%28_,options,errorhandler%29.md)
   Asks the system to dismiss an existing scene and remove it from the app switcher.
-- [func requestSceneSessionRefresh(UISceneSession)](uiapplication/requestscenesessionrefresh(_:).md)
+- [func requestSceneSessionRefresh(UISceneSession)](../uiapplication/requestscenesessionrefresh%28_%29.md)
   Asks the system to update any system UI associated with the specified scene.
-- [struct UISceneSessionActivationRequest](uiscenesessionactivationrequest-swift.struct.md)
+- [struct UISceneSessionActivationRequest](../uiscenesessionactivationrequest-swift.struct.md)
   A collection of properties that you use to request activation of a scene.
-- [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+- [class UISceneDestructionRequestOptions](../uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
 
 

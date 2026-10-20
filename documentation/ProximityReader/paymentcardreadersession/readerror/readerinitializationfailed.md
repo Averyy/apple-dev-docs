@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.readerInitializationFailed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The reader initialization failed, try again.
 

@@ -1,7 +1,8 @@
 # init(identifier:request:essential:fileSize:applicationGroupIdentifier:priority:)
 
 **Framework**: Background Assets  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -15,6 +16,10 @@
 
 ```swift
 init(identifier: String, request: URLRequest, essential: Bool, fileSize: Int, applicationGroupIdentifier: String, priority: BADownload.Priority)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier request:(NSURLRequest *) request essential:(BOOL) essential fileSize:(NSUInteger) fileSize applicationGroupIdentifier:(NSString *) applicationGroupIdentifier priority:(BADownloaderPriority) priority;
 ```
 
 #### Discussion
@@ -32,10 +37,11 @@ Constructs a download object to represent the download of a asset located inside
 
 ## See Also
 
-- [convenience init(identifier: String, request: URLRequest, fileSize: Int, applicationGroupIdentifier: String)](baurldownload/init(identifier:request:filesize:applicationgroupidentifier:).md)
-- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String)](baurldownload/init(identifier:request:applicationgroupidentifier:).md)
+### Creating a download
+- [convenience init(identifier: String, request: URLRequest, fileSize: Int, applicationGroupIdentifier: String)](./init%28identifier,request,filesize,applicationgroupidentifier%29.md)
+- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String)](./init%28identifier,request,applicationgroupidentifier%29.md)
   Creates a download that uses the specified identifier and App Group.
-- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String, priority: BADownload.Priority)](baurldownload/init(identifier:request:applicationgroupidentifier:priority:).md)
+- [convenience init(identifier: String, request: URLRequest, applicationGroupIdentifier: String, priority: BADownload.Priority)](./init%28identifier,request,applicationgroupidentifier,priority%29.md)
   Creates a prioritized download that uses the specified identifier and App Group.
 
 

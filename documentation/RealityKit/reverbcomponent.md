@@ -1,7 +1,8 @@
 # ReverbComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines the reverberation of spatial audio sources.
 
@@ -21,7 +22,7 @@ struct ReverbComponent
 
 #### Overview
 
-Bring your spatial audio to life by setting a reverb appropriate for your immersive environment. In visionOS, an acoustic simulation of a person’s real environment reverberates the spatial audio sources by default. When presenting your content in [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) and [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive spaces, consider setting a reverb component to make your spatial audio sound like it exists within the environment that your visuals represent.
+Bring your spatial audio to life by setting a reverb appropriate for your immersive environment. In visionOS, an acoustic simulation of a person’s real environment reverberates the spatial audio sources by default. When presenting your content in [`progressive`](../SwiftUI/immersionstyle/progressive.md) and [`full`](../SwiftUI/immersionstyle/full.md) immersive spaces, consider setting a reverb component to make your spatial audio sound like it exists within the environment that your visuals represent.
 
 For example, a desert, living room, and concert hall each have unique acoustical characteristics. When the visuals and acoustic properties of sounds in your content are congruent, the environment becomes more effective as a whole.
 
@@ -52,42 +53,43 @@ if let violin = try? await AudioFileResource(named: "violin") {
 }
 ```
 
-Use the [`reverbLevel`](spatialaudiocomponent/reverblevel.md) property to adjust the level of audio you send to the spatial modeler. Use the [`directLevel`](spatialaudiocomponent/directlevel.md) property to adjust the level of audio you send directly to a person’s ears, without additional reverberation. Use the [`directivity`](spatialaudiocomponent/directivity.md) property to define the pattern that disperses sound into the acoustic environment.
+Use the [`reverbLevel`](./spatialaudiocomponent/reverblevel.md) property to adjust the level of audio you send to the spatial modeler. Use the [`directLevel`](./spatialaudiocomponent/directlevel.md) property to adjust the level of audio you send directly to a person’s ears, without additional reverberation. Use the [`directivity`](./spatialaudiocomponent/directivity.md) property to define the pattern that disperses sound into the acoustic environment.
 
-In macOS and iOS, only one `ReverbComponent` can be active at a time per [`ARView`](arview.md) or [`RealityView`](realityview.md). In visionOS, a `ReverbComponent` is only active while an app has a [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) or [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) immersive space open.
+In macOS and iOS, only one `ReverbComponent` can be active at a time per [`ARView`](./arview.md) or [`RealityView`](./realityview.md). In visionOS, a `ReverbComponent` is only active while an app has a [`progressive`](../SwiftUI/immersionstyle/progressive.md) or [`full`](../SwiftUI/immersionstyle/full.md) immersive space open.
 
 You can place multiple simulated reverb components in a scene — for example, one entity each for the ceiling, floor, and walls of a virtual room — and the reflections and reverb update as audio sources move through the space. However, only one preset reverb can be active at a time; if both a preset and simulated reverb are present, the preset takes priority.
 
-When the content is within a [`progressive`](https://developer.apple.com/documentation/swiftui/immersionstyle/progressive) immersive space, the Digital Crown adjusts how RealityKit blends:
+When the content is within a [`progressive`](../SwiftUI/immersionstyle/progressive.md) immersive space, the Digital Crown adjusts how RealityKit blends:
 
 - The acoustics simulation of a person’s real-world environment
 - The reverberation the `ReverbComponent` generates
 
-When your app is in a Shared Space [`WindowGroup`](https://developer.apple.com/documentation/swiftui/windowgroup) or an [`ImmersiveSpace`](https://developer.apple.com/documentation/swiftui/immersivespace) using a [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) style, RealityKit reverberates the spatial audio from the acoustics simulation and ignores the reverberation from the `ReverbComponent`.
+When your app is in a Shared Space [`WindowGroup`](../SwiftUI/windowgroup.md) or an [`ImmersiveSpace`](../SwiftUI/immersivespace.md) using a [`mixed`](../SwiftUI/immersionstyle/mixed.md) style, RealityKit reverberates the spatial audio from the acoustics simulation and ignores the reverberation from the `ReverbComponent`.
 
 ## Topics
 
 ### Initializers
-- [init(reverb: Reverb)](reverbcomponent/init(reverb:).md)
+- [init(reverb: Reverb)](./reverbcomponent/init%28reverb%29.md)
   Creates a component from a reverberation setting.
 ### Instance Properties
-- [var reverb: Reverb](reverbcomponent/reverb.md)
+- [var reverb: Reverb](./reverbcomponent/reverb.md)
   A reverberation setting the component applies to spatial audio.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Reverb](reverb.md)
+### Reverb
+- [struct Reverb](./reverb.md)
   The reverberation RealityKit applies to spatial audio sources.
-- [Reverb.Preset](reverb/preset.md)
+- [Reverb.Preset](./reverb/preset.md)
   Reverbs defined by a preset environment.
 
 

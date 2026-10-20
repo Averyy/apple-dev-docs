@@ -1,7 +1,8 @@
 # showPopover(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the main bar with this item’s popover bar.
 
@@ -17,16 +18,21 @@ Replaces the main bar with this item’s popover bar.
 func showPopover(_ sender: Any?)
 ```
 
+```objc
+- (void) showPopover:(id) sender;
+```
+
 #### Discussion
 
 If this item is not visible, this method will have no effect.
 
 ## See Also
 
-- [func dismissPopover(Any?)](nspopovertouchbaritem/dismisspopover(_:).md)
+### Expanding and collapsing a popover
+- [func dismissPopover(Any?)](./dismisspopover%28_%29.md)
   Restores the previously visible main bar.
-- [func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer](nspopovertouchbaritem/makestandardactivatepopovergesturerecognizer.md)
-  Returns a gesture recognizer, configured to invoke the [`showPopover(_:)`](nspopovertouchbaritem/showpopover(_:).md) method.
+- [func makeStandardActivatePopoverGestureRecognizer() -> NSGestureRecognizer](./makestandardactivatepopovergesturerecognizer%28%29.md)
+  Returns a gesture recognizer, configured to invoke the [`showPopover(_:)`](./showpopover%28_%29.md) method.
 
 
 ---

@@ -1,14 +1,15 @@
 # WKdm_decompress_4k
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void WKdm_decompress_4k(const WK_word *src_buf, WK_word *dest_buf, WK_word *scratch, unsigned int bytes);
 ```
 

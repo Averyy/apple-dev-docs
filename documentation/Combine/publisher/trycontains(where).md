@@ -1,7 +1,8 @@
 # tryContains(where:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes a Boolean value upon receiving an element that satisfies the throwing predicate closure.
 
@@ -26,7 +27,7 @@ A publisher that emits the Boolean value `true` when the upstream publisher emit
 
 #### Discussion
 
-Use [`tryContains(where:)`](publisher/trycontains(where:).md) to find the first element in an upstream that satisfies the error-throwing closure you provide.
+Use [`tryContains(where:)`](./trycontains%28where%29.md) to find the first element in an upstream that satisfies the error-throwing closure you provide.
 
 This operator consumes elements produced from the upstream publisher until the upstream publisher either:
 
@@ -35,7 +36,7 @@ This operator consumes elements produced from the upstream publisher until the u
 
 If the predicate throws an error, the publisher fails, passing the error to its downstream.
 
-In the example below, the [`tryContains(where:)`](publisher/trycontains(where:).md) operator tests values to find an element less than `10`; when the closure finds an odd number, like `3`, the publisher terminates with an `IllegalValueError`.
+In the example below, the [`tryContains(where:)`](./trycontains%28where%29.md) operator tests values to find an element less than `10`; when the closure finds an odd number, like `3`, the publisher terminates with an `IllegalValueError`.
 
 ```swift
 struct IllegalValueError: Error {}
@@ -62,13 +63,14 @@ numbers.publisher
 
 ## See Also
 
-- [func contains(Self.Output) -> Publishers.Contains<Self>](publisher/contains(_:).md)
+### Applying matching criteria to elements
+- [func contains(Self.Output) -> Publishers.Contains<Self>](./contains%28_%29.md)
   Publishes a Boolean value upon receiving an element equal to the argument.
-- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](publisher/contains(where:).md)
+- [func contains(where: (Self.Output) -> Bool) -> Publishers.ContainsWhere<Self>](./contains%28where%29.md)
   Publishes a Boolean value upon receiving an element that satisfies the predicate closure.
-- [func allSatisfy((Self.Output) -> Bool) -> Publishers.AllSatisfy<Self>](publisher/allsatisfy(_:).md)
+- [func allSatisfy((Self.Output) -> Bool) -> Publishers.AllSatisfy<Self>](./allsatisfy%28_%29.md)
   Publishes a single Boolean value that indicates whether all received elements pass a given predicate.
-- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](publisher/tryallsatisfy(_:).md)
+- [func tryAllSatisfy((Self.Output) throws -> Bool) -> Publishers.TryAllSatisfy<Self>](./tryallsatisfy%28_%29.md)
   Publishes a single Boolean value that indicates whether all received elements pass a given error-throwing predicate.
 
 

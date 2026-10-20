@@ -1,7 +1,8 @@
 # init(device:rnnDescriptor:trainableWeights:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor, trainableWeights: NSMutableArray)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device rnnDescriptor:(const MPSRNNDescriptor *) rnnDescriptor trainableWeights:(NSMutableArray<MPSMatrix *> *) trainableWeights;
 ```
 
 

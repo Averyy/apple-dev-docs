@@ -1,7 +1,8 @@
 # CMTimeRoundingMethod.roundTowardZero
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rounds toward zero.
 
@@ -20,21 +21,26 @@ Rounds toward zero.
 case roundTowardZero
 ```
 
+```c
+kCMTimeRoundingMethod_RoundTowardZero
+```
+
 #### Discussion
 
 This method rounds toward zero if the fraction isn’t equal to `0`.
 
 ## See Also
 
-- [CMTimeRoundingMethod.roundHalfAwayFromZero](cmtimeroundingmethod/roundhalfawayfromzero.md)
+### Rounding Methods
+- [CMTimeRoundingMethod.roundHalfAwayFromZero](./roundhalfawayfromzero.md)
   Rounds half away from zero.
-- [CMTimeRoundingMethod.roundAwayFromZero](cmtimeroundingmethod/roundawayfromzero.md)
+- [CMTimeRoundingMethod.roundAwayFromZero](./roundawayfromzero.md)
   Rounds away from zero.
-- [CMTimeRoundingMethod.quickTime](cmtimeroundingmethod/quicktime.md)
+- [CMTimeRoundingMethod.quickTime](./quicktime.md)
   Rounds using the QuickTime method.
-- [CMTimeRoundingMethod.roundTowardPositiveInfinity](cmtimeroundingmethod/roundtowardpositiveinfinity.md)
+- [CMTimeRoundingMethod.roundTowardPositiveInfinity](./roundtowardpositiveinfinity.md)
   Rounds toward positive infinity.
-- [CMTimeRoundingMethod.roundTowardNegativeInfinity](cmtimeroundingmethod/roundtowardnegativeinfinity.md)
+- [CMTimeRoundingMethod.roundTowardNegativeInfinity](./roundtowardnegativeinfinity.md)
   Rounds toward negative infinity.
 
 

@@ -1,7 +1,8 @@
 # init(Data1:Data2:Data3:Data4:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

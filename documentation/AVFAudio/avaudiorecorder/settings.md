@@ -1,7 +1,8 @@
 # settings
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The settings that describe the format of the recorded audio.
 
@@ -20,15 +21,20 @@ The settings that describe the format of the recorded audio.
 var settings: [String : Any] { get }
 ```
 
+```objc
+@property (readonly) NSDictionary<NSString *,id> * settings;
+```
+
 #### Discussion
 
-See [`init(url:settings:)`](avaudiorecorder/init(url:settings:)-5whyq.md) for supported keys and values.
+See [`init(url:settings:)`](./init%28url,settings%29-5whyq.md) for supported keys and values.
 
 ## See Also
 
-- [var url: URL](avaudiorecorder/url.md)
+### Inspecting the audio data
+- [var url: URL](./url.md)
   The URL to which the recorder writes its data.
-- [var format: AVAudioFormat](avaudiorecorder/format.md)
+- [var format: AVAudioFormat](./format.md)
   The format of the recorded audio.
 
 

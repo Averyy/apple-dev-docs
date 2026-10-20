@@ -1,7 +1,8 @@
 # isCanonicallyEquivalent(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Whether `self` is equivalent to `other` under Unicode Canonical Equivalence.
 
@@ -22,7 +23,7 @@ func isCanonicallyEquivalent(to other: UTF8Span) -> Bool
 
 #### Discussion
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

@@ -1,7 +1,8 @@
 # lastIndex(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the last index where the specified value appears in the collection.
 
@@ -20,6 +21,8 @@ Returns the last index where the specified value appears in the collection.
 func lastIndex(of element: Self.Element) -> Self.Index?
 ```
 
+Available when `Element` conforms to `Equatable`.
+
 #### Return Value
 
 The last index where `element` is found. If `element` is not found in the collection, this method returns `nil`.
@@ -37,7 +40,7 @@ print(students)
 // Prints "["Ben", "Ivy", "Jordell", "Benjamin", "Max"]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

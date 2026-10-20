@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new fetch request.
 
@@ -10,7 +11,7 @@ Creates a new fetch request.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Creates a new fetch request.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+### Managing the Fetch Request’s Entity
+- [convenience init(entityName: String)](./init%28entityname%29-5anoo.md)
   Returns a fetch request configured with a given entity name.
-- [var entityName: String?](nsfetchrequest/entityname.md)
+- [var entityName: String?](./entityname.md)
   The name of the entity the request is configured to fetch.
-- [var entity: NSEntityDescription?](nsfetchrequest/entity.md)
+- [var entity: NSEntityDescription?](./entity.md)
   The entity specified for the fetch request.
-- [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)
+- [var includesSubentities: Bool](./includessubentities.md)
   A Boolean value that indicates whether the fetch request includes subentities in the results.
-- [struct NSFetchRequestResultType](nsfetchrequestresulttype.md)
+- [struct NSFetchRequestResultType](../nsfetchrequestresulttype.md)
   Constants that specify the possible result types a fetch request can return.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a value that is offset the specified distance from this value.
@@ -44,18 +45,25 @@ let y = addOne(to: 3.5)
 
 If this type’s `Stride` type conforms to `BinaryInteger`, then for a value `x`, a distance `n`, and a value `y = x.advanced(by: n)`, `x.distance(to: y) == n`. Using this method with types that have a noninteger `Stride` may result in an approximation. If the result of advancing by `n` is not representable as a value of this type, then a runtime error may occur.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
 - `n`: The distance to advance this value.
 
+## Default Implementations
+
+### Strideable Implementations
+- [func advanced(by: Int) -> Self](./advanced%28by%29-9b2es.md)
+  Returns a value that is offset the specified distance from this value.
+
 ## See Also
 
-- [static func + (Self, Self.Stride) -> Self](strideable/+(_:_:)-8m1px.md)
-- [static func + (Self.Stride, Self) -> Self](strideable/+(_:_:)-94mlm.md)
-- [static func - (Self, Self.Stride) -> Self](strideable/-(_:_:)-1kjns.md)
-- [static func - (Self, Self) -> Self.Stride](strideable/-(_:_:)-2mot7.md)
+### Getting an Offset Value
+- [static func + (Self, Self.Stride) -> Self](./plus%28_,_%29-8m1px.md)
+- [static func + (Self.Stride, Self) -> Self](./plus%28_,_%29-94mlm.md)
+- [static func - (Self, Self.Stride) -> Self](./minus%28_,_%29-1kjns.md)
+- [static func - (Self, Self) -> Self.Stride](./minus%28_,_%29-2mot7.md)
 
 
 ---

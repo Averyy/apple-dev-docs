@@ -1,6 +1,8 @@
 # Building a cross-platform web browser
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: Sample Code  
+**Download**: [BuildingACrossPlatformWebBrowser.zip](https://docs-assets.developer.apple.com/published/915b29ff84b0/BuildingACrossPlatformWebBrowser.zip)
 
 Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 
@@ -14,22 +16,22 @@ Implement a browser on multiple platforms that loads content, manages navigation
 
 #### Overview
 
-This sample project demonstrates how you can create a cross-platform web browser with SwiftUI and WebKit, in iOS 26 and later or macOS 26 and later. The sample displays web content in a [`WebView`](webview-swift.struct.md), and builds the following features:
+This sample project demonstrates how you can create a cross-platform web browser with SwiftUI and WebKit, in iOS 26 and later or macOS 26 and later. The sample displays web content in a [`WebView`](./webview-swift.struct.md), and builds the following features:
 
-- Load and observe web content with [`WebPage`](webpage.md).
-- Display web content and enable browser behaviors using [`WebView`](webview-swift.struct.md).
-- Observe and navigate browser history using [`WebPage.BackForwardList`](webpage/backforwardlist-swift.struct.md).
-- Serve local HTML resources with a custom [`URLSchemeHandler`](urlschemehandler.md).
-- Load website favicons asynchronously with [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata).
-- Export and share webpage content using [`WebPage`](webpage.md)’s [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) conformance.
+- Load and observe web content with [`WebPage`](./webpage.md).
+- Display web content and enable browser behaviors using [`WebView`](./webview-swift.struct.md).
+- Observe and navigate browser history using [`WebPage.BackForwardList`](./webpage/backforwardlist-swift.struct.md).
+- Serve local HTML resources with a custom [`URLSchemeHandler`](./urlschemehandler.md).
+- Load website favicons asynchronously with [`LinkMetadata`](../LinkPresentation/linkmetadata.md).
+- Export and share webpage content using [`WebPage`](./webpage.md)’s [`Transferable`](../CoreTransferable/transferable.md) conformance.
 
-The sample demonstrates how using these SwiftUI features to interact with web content simplifies your app compared to implementing them with [`WKWebView`](wkwebview.md) and related APIs.
+The sample demonstrates how using these SwiftUI features to interact with web content simplifies your app compared to implementing them with [`WKWebView`](./wkwebview.md) and related APIs.
 
-> **Note**: This sample code project is associated with WWDC 2025 session 231: [`Meet WebKit for SwiftUI`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/231/).
+> **Note**: This sample code project is associated with WWDC 2025 session 231: [Meet WebKit for SwiftUI](https://developer.apple.com/videos/play/wwdc2025/231/).
 
-#### Create an Observable Browser Model
+#### Create an observable browser model
 
-The sample stores webpage and browser properties in an [`Observable()`](https://developer.apple.com/documentation/observation/observable()) class called `BrowserManager`, as shown below, enabling SwiftUI to automatically redraw views when properties change:
+The sample stores webpage and browser properties in an [`Observable()`](../Observation/observable%28%29.md) class called `BrowserManager`, as shown below, enabling SwiftUI to automatically redraw views when properties change:
 
 ```swift
 @Observable
@@ -40,7 +42,7 @@ class BrowserManager {
 }
 ```
 
-The `BrowserManager` class initializes [`WebPage`](webpage.md) with a configuration that specifies a data store and registers custom URL scheme handlers. It also creates a `NavigationPolicyHandler` instance that implements [`WebPage.NavigationDeciding`](webpage/navigationdeciding.md) to intercept navigation requests and capture link-activated URLs, as shown here:
+The `BrowserManager` class initializes [`WebPage`](./webpage.md) with a configuration that specifies a data store and registers custom URL scheme handlers. It also creates a `NavigationPolicyHandler` instance that implements [`WebPage.NavigationDeciding`](./webpage/navigationdeciding.md) to intercept navigation requests and capture link-activated URLs, as shown here:
 
 ```swift
 init(privateBrowsingEnabled: Bool = false) {
@@ -72,11 +74,11 @@ init(privateBrowsingEnabled: Bool = false) {
 }
 ```
 
-The sample’s `ContentView` creates a `BrowserManager` instance with the [`State`](https://developer.apple.com/documentation/swiftui/state) property wrapper and injects it into the view hierarchy using [`environment(_:)`](https://developer.apple.com/documentation/swiftui/view/environment(_:)). Subviews retrieve it with `@Environment(BrowserManager.self)`.
+The sample’s `ContentView` creates a `BrowserManager` instance with the [`State`](../SwiftUI/state.md) property wrapper and injects it into the view hierarchy using [`environment(_:)`](../SwiftUI/view/environment%28_%29.md). Subviews retrieve it with `@Environment(BrowserManager.self)`.
 
-#### Load and Display Web Content
+#### Load and display web content
 
-The sample uses [`WebPage`](webpage.md) because it’s an observable type that handles loading and tracks properties like the current URL and title. The sample keeps an instance of [`WebPage`](webpage.md) called `page` in `BrowserManager`, and specifies that `page` when it declares [`WebView`](webview-swift.struct.md), the SwiftUI view that renders it. The sample applies modifiers to enable common browser behaviors, as shown here:
+The sample uses [`WebPage`](./webpage.md) because it’s an observable type that handles loading and tracks properties like the current URL and title. The sample keeps an instance of [`WebPage`](./webpage.md) called `page` in `BrowserManager`, and specifies that `page` when it declares [`WebView`](./webview-swift.struct.md), the SwiftUI view that renders it. The sample applies modifiers to enable common browser behaviors, as shown here:
 
 ```swift
 WebView(browserManager.page)
@@ -102,9 +104,9 @@ WebView(browserManager.page)
 
 In macOS, the sample uses `webViewContextMenu` to provide a secondary-click menu with link-specific options.
 
-#### Handle Navigation History
+#### Handle navigation history
 
-The `BrowserManager` class exposes navigation history as computed arrays from [`WebPage.BackForwardList`](webpage/backforwardlist-swift.struct.md), as the following code snippet demonstrates. The toolbar uses these arrays to populate back and forward buttons, where a tap navigates immediately and a long press reveals the full history.
+The `BrowserManager` class exposes navigation history as computed arrays from [`WebPage.BackForwardList`](./webpage/backforwardlist-swift.struct.md), as the following code snippet demonstrates. The toolbar uses these arrays to populate back and forward buttons, where a tap navigates immediately and a long press reveals the full history.
 
 ```swift
 // Webpage navigation history: back entries.
@@ -138,7 +140,7 @@ Menu {
 .menuIndicator(.hidden)
 ```
 
-The view observes navigation events through [`navigations`](webpage/navigations.md), an async sequence that emits events as navigation progresses. If navigation throws an error, the view updates `isPresented` and stores the error information, like this:
+The view observes navigation events through [`navigations`](./webpage/navigations.md), an async sequence that emits events as navigation progresses. If navigation throws an error, the view updates `isPresented` and stores the error information, like this:
 
 ```swift
 // Listens for navigation events and presents an alert on error.
@@ -158,9 +160,9 @@ The view observes navigation events through [`navigations`](webpage/navigations.
 
 When `isPresented` is `true`, the view presents an alert with the error’s localized description.
 
-#### Load Local Html Files with a Custom Scheme
+#### Load local HTML files with a custom scheme
 
-The sample registers `CustomSchemeHandler` for the `local` URL scheme. `CustomSchemeHandler` intercepts any navigation to a `local://` address and serves it from the app bundle instead of the network. The handler conforms to [`URLSchemeHandler`](urlschemehandler.md), locates the requested resource in the bundle, and yields the response and data, as follows:.
+The sample registers `CustomSchemeHandler` for the `local` URL scheme. `CustomSchemeHandler` intercepts any navigation to a `local://` address and serves it from the app bundle instead of the network. The handler conforms to [`URLSchemeHandler`](./urlschemehandler.md), locates the requested resource in the bundle, and yields the response and data, as follows:.
 
 ```swift
 struct CustomSchemeHandler: URLSchemeHandler {
@@ -202,9 +204,9 @@ struct CustomSchemeHandler: URLSchemeHandler {
 }
 ```
 
-#### Display Website Favicons
+#### Display website favicons
 
-The favorite row views that the sample declares in `FavoriteRowView` load each website’s favicon asynchronously using [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata) from the [`Link Presentation`](https://developer.apple.com/documentation/linkpresentation) framework, as shown in the code below. The fetch runs in a [`task(id:name:executorPreference:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(id:name:executorpreference:priority:file:line:_:)) modifier keyed to the favorite’s URL, so it restarts automatically whenever the URL changes.
+The favorite row views that the sample declares in `FavoriteRowView` load each website’s favicon asynchronously using [`LinkMetadata`](../LinkPresentation/linkmetadata.md) from the [Link Presentation](../LinkPresentation/LinkPresentation.md) framework, as shown in the code below. The fetch runs in a [`task(id:name:executorPreference:priority:file:line:_:)`](../SwiftUI/view/task%28id,name,executorpreference,priority,file,line,_%29.md) modifier keyed to the favorite’s URL, so it restarts automatically whenever the URL changes.
 
 ```swift
 .task(id: webpage.url) {
@@ -213,7 +215,7 @@ The favorite row views that the sample declares in `FavoriteRowView` load each w
 }
 ```
 
-The `fetchFavicon(for:)` method initializes a [`LinkMetadata`](https://developer.apple.com/documentation/linkpresentation/linkmetadata) value by fetching the URL, then extracts the icon as [`Image`](https://developer.apple.com/documentation/swiftui/image) using the `.icon` attachment, as the code below demonstrates. Using [`Image`](https://developer.apple.com/documentation/swiftui/image) supports all common favicon formats — including ICO, PNG, and JPEG — directly.
+The `fetchFavicon(for:)` method initializes a [`LinkMetadata`](../LinkPresentation/linkmetadata.md) value by fetching the URL, then extracts the icon as [`Image`](../SwiftUI/image.md) using the `.icon` attachment, as the code below demonstrates. Using [`Image`](../SwiftUI/image.md) supports all common favicon formats — including ICO, PNG, and JPEG — directly.
 
 ```swift
 private func fetchFavicon(for url: URL) async -> Image? {
@@ -228,9 +230,9 @@ private func fetchFavicon(for url: URL) async -> Image? {
 
 While the favicon loads, the row displays a placeholder globe icon.
 
-#### Export and Share Webpage Content
+#### Export and share webpage content
 
-The [`WebPage`](webpage.md) type conforms to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable), so it works directly with [`ShareLink`](https://developer.apple.com/documentation/swiftui/sharelink) and the file exporter. The sample places both options in a toolbar menu, like this:
+The [`WebPage`](./webpage.md) type conforms to [`Transferable`](../CoreTransferable/transferable.md), so it works directly with [`ShareLink`](../SwiftUI/sharelink.md) and the file exporter. The sample places both options in a toolbar menu, like this:
 
 ```swift
 Menu {
@@ -260,13 +262,14 @@ Menu {
 }
 ```
 
-The [`exportedContentTypes(visibility:)`](https://developer.apple.com/documentation/coretransferable/transferable/exportedcontenttypes(visibility:)) method returns the file formats the current page supports, so the export menu always reflects what the page can produce.
+The [`exportedContentTypes(visibility:)`](../CoreTransferable/transferable/exportedcontenttypes%28visibility%29.md) method returns the file formats the current page supports, so the export menu always reflects what the page can produce.
 
 ## See Also
 
-- [struct WebView](webview-swift.struct.md)
+### Essentials
+- [struct WebView](./webview-swift.struct.md)
   A view that displays some web content.
-- [class WebPage](webpage.md)
+- [class WebPage](./webpage.md)
   An object that controls and manages the behavior of interactive web content.
 
 

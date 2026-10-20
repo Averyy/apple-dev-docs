@@ -1,7 +1,8 @@
 # errorEvent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,17 +19,22 @@
 var errorEvent: AVMetricErrorEvent? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVMetricErrorEvent * errorEvent;
+```
+
 ## See Also
 
-- [var byteRange: NSRange](avmetricmediaresourcerequestevent/byterange.md)
-- [var networkTransactionMetrics: URLSessionTaskMetrics?](avmetricmediaresourcerequestevent/networktransactionmetrics.md)
-- [var requestEndTime: Date](avmetricmediaresourcerequestevent/requestendtime.md)
-- [var requestStartTime: Date](avmetricmediaresourcerequestevent/requeststarttime.md)
-- [var responseEndTime: Date](avmetricmediaresourcerequestevent/responseendtime.md)
-- [var responseStartTime: Date](avmetricmediaresourcerequestevent/responsestarttime.md)
-- [var serverAddress: String?](avmetricmediaresourcerequestevent/serveraddress.md)
-- [var url: URL?](avmetricmediaresourcerequestevent/url.md)
-- [var wasReadFromCache: Bool](avmetricmediaresourcerequestevent/wasreadfromcache.md)
+### Inspecting the event
+- [var byteRange: NSRange](./byterange.md)
+- [var networkTransactionMetrics: URLSessionTaskMetrics?](./networktransactionmetrics.md)
+- [var requestEndTime: Date](./requestendtime.md)
+- [var requestStartTime: Date](./requeststarttime.md)
+- [var responseEndTime: Date](./responseendtime.md)
+- [var responseStartTime: Date](./responsestarttime.md)
+- [var serverAddress: String?](./serveraddress.md)
+- [var url: URL?](./url.md)
+- [var wasReadFromCache: Bool](./wasreadfromcache.md)
 
 
 ---

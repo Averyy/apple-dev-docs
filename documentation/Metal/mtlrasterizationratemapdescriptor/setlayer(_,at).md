@@ -1,7 +1,8 @@
 # setLayer(_:at:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a configuration for a layer rate map.
 
@@ -19,6 +20,10 @@ Sets a configuration for a layer rate map.
 func setLayer(_ layer: MTLRasterizationRateLayerDescriptor?, at layerIndex: Int)
 ```
 
+```objc
+- (void) setLayer:(MTLRasterizationRateLayerDescriptor *) layer atIndex:(NSUInteger) layerIndex;
+```
+
 #### Discussion
 
 Calling this method is equivalent to using array subscript syntax.
@@ -30,13 +35,14 @@ Calling this method is equivalent to using array subscript syntax.
 
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemapdescriptor/layercount.md)
+### Configuring the rate map layers
+- [var layerCount: Int](./layercount.md)
   The number of layers in the rate map.
-- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](mtlrasterizationratemapdescriptor/layer(at:).md)
+- [func layer(at: Int) -> MTLRasterizationRateLayerDescriptor?](./layer%28at%29.md)
   Returns the layer description for a layer in the rate map.
-- [var layers: MTLRasterizationRateLayerArray](mtlrasterizationratemapdescriptor/layers.md)
+- [var layers: MTLRasterizationRateLayerArray](./layers.md)
   The rasterization rates for one or more layers in the rate map.
-- [class MTLRasterizationRateLayerArray](mtlrasterizationratelayerarray.md)
+- [class MTLRasterizationRateLayerArray](../mtlrasterizationratelayerarray.md)
   Descriptions for the rasterization rates to apply to the set of layers in a rate map.
 
 

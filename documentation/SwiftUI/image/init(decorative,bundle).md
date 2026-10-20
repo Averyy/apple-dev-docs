@@ -1,7 +1,8 @@
 # init(decorative:bundle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unlabeled, decorative image.
 
@@ -31,9 +32,10 @@ SwiftUI ignores this image for accessibility purposes.
 
 ## See Also
 
-- [init(decorative: String, variableValue: Double?, bundle: Bundle?)](image/init(decorative:variablevalue:bundle:).md)
+### Creating an image for decorative use
+- [init(decorative: String, variableValue: Double?, bundle: Bundle?)](./init%28decorative,variablevalue,bundle%29.md)
   Creates an unlabeled, decorative image, with a variable value.
-- [init(decorative: CGImage, scale: CGFloat, orientation: Image.Orientation)](image/init(decorative:scale:orientation:).md)
+- [init(decorative: CGImage, scale: CGFloat, orientation: Image.Orientation)](./init%28decorative,scale,orientation%29.md)
   Creates an unlabeled, decorative image based on a Core Graphics image instance.
 
 

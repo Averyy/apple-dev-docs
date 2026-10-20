@@ -1,7 +1,8 @@
 # SecItemAttr.customIconItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the custom icon attribute.
 
@@ -13,6 +14,10 @@ Identifies the custom icon attribute.
 
 ```swift
 case customIconItemAttr
+```
+
+```c
+kSecCustomIconItemAttr
 ```
 
 #### Discussion

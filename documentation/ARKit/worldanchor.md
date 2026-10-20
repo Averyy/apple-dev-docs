@@ -1,7 +1,8 @@
 # WorldAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A fixed location in a person’s surroundings.
 
@@ -16,56 +17,57 @@ struct WorldAnchor
 
 #### Overview
 
-ARKit persists world anchor UUIDs and transforms across multiple runs of your app. For more information, see [`Tracking specific points in world space`](https://developer.apple.com/documentation/visionos/tracking-points-in-world-space).
+ARKit persists world anchor UUIDs and transforms across multiple runs of your app. For more information, see [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md).
 
 ## Topics
 
 ### Creating a world anchor
-- [init(originFromAnchorTransform: simd_float4x4)](worldanchor/init(originfromanchortransform:).md)
+- [init(originFromAnchorTransform: simd_float4x4)](./worldanchor/init%28originfromanchortransform%29.md)
   Creates a world anchor from a position and orientation in world space.
 ### Identifying a world anchor
-- [var id: UUID](worldanchor/id.md)
+- [var id: UUID](./worldanchor/id.md)
   The unique identifier of this anchor.
 ### Inspecting a world anchor
-- [var originFromAnchorTransform: simd_float4x4](worldanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./worldanchor/originfromanchortransform.md)
   The position and orientation of a world anchor.
-- [var isTracked: Bool](worldanchor/istracked.md)
+- [var isTracked: Bool](./worldanchor/istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking a world anchor.
-- [var description: String](worldanchor/description.md)
+- [var description: String](./worldanchor/description.md)
   A textual representation of this anchor.
 ### Initializers
-- [init(originFromAnchorTransform: simd_float4x4, sharedWithNearbyParticipants: Bool)](worldanchor/init(originfromanchortransform:sharedwithnearbyparticipants:).md)
+- [init(originFromAnchorTransform: simd_float4x4, sharedWithNearbyParticipants: Bool)](./worldanchor/init%28originfromanchortransform,sharedwithnearbyparticipants%29.md)
   Initialize a world anchor with a transform and indicate if it should be shared with nearby participants.
 ### Instance Properties
-- [var isSharedWithNearbyParticipants: Bool](worldanchor/issharedwithnearbyparticipants.md)
+- [var isSharedWithNearbyParticipants: Bool](./worldanchor/issharedwithnearbyparticipants.md)
   Check if a world anchor is shared with nearby participants.
 ### Default Implementations
-- [ARKitCoordinateSpaceProviding Implementations](worldanchor/arkitcoordinatespaceproviding-implementations.md)
-- [Equatable Implementations](worldanchor/equatable-implementations.md)
+- [ARKitCoordinateSpaceProviding Implementations](./worldanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](./worldanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TrackableAnchor](trackableanchor.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TrackableAnchor](./trackableanchor.md)
 
 ## See Also
 
-- [Tracking specific points in world space](../visionos/tracking-points-in-world-space.md)
+### World tracking
+- [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Placing entities using head and device transform](../visionos/placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [class WorldTrackingProvider](worldtrackingprovider.md)
+- [class WorldTrackingProvider](./worldtrackingprovider.md)
   A source of live data about the device pose and anchors in a person’s surroundings.
-- [struct DeviceAnchor](deviceanchor.md)
+- [struct DeviceAnchor](./deviceanchor.md)
   The position and orientation of Apple Vision Pro.
 
 

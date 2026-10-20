@@ -1,7 +1,8 @@
 # nameSuffix
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s suffix.
 
@@ -10,7 +11,7 @@ The user’s suffix.
 
 ## Declaration
 
-```swift
+```
 attribute string? nameSuffix;
 ```
 

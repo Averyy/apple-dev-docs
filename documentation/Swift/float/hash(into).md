@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -32,13 +33,14 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 ## See Also
 
-- [var description: String](float/description.md)
+### Describing a Float
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var debugDescription: String](float/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [var customMirror: Mirror](float/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Float` instance.
-- [var hashValue: Int](float/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
 
 

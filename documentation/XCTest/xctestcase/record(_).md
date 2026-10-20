@@ -1,14 +1,27 @@
 # record(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Records an issue during test execution.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+func record(_ issue: XCTIssue)
+```
+
+*macOS*
+
 ```swift
 func record(_ issue: XCTIssueReference)
+```
+
+```objc
+- (void) recordIssue:(XCTIssue *) issue;
 ```
 
 ## Parameters
@@ -17,19 +30,20 @@ func record(_ issue: XCTIssueReference)
 
 ## See Also
 
-- [init(invocation: NSInvocation?)](xctestcase/init(invocation:).md)
+### Creating Tests Programmatically
+- [init(invocation: NSInvocation?)](./init%28invocation%29.md)
   Initializes a test case with an invocation.
-- [init(selector: Selector)](xctestcase/init(selector:).md)
+- [init(selector: Selector)](./init%28selector%29.md)
   Initializes a test case with a selector.
-- [class var testInvocations: [NSInvocation]](xctestcase/testinvocations.md)
+- [class var testInvocations: [NSInvocation]](./testinvocations.md)
   An array of invocations that represents each test method in the test case.
-- [var invocation: NSInvocation?](xctestcase/invocation.md)
+- [var invocation: NSInvocation?](./invocation.md)
   The invocation for running the test.
-- [func invokeTest()](xctestcase/invoketest.md)
+- [func invokeTest()](./invoketest%28%29.md)
   Invokes the test.
-- [func recordFailure(withDescription: String, inFile: String, atLine: Int, expected: Bool)](xctestcase/recordfailure(withdescription:infile:atline:expected:).md)
+- [func recordFailure(withDescription: String, inFile: String, atLine: Int, expected: Bool)](./recordfailure%28withdescription,infile,atline,expected%29.md)
   Records a failure during text execution.
-- [class var defaultTestSuite: XCTestSuite](xctestcase/defaulttestsuite.md)
+- [class var defaultTestSuite: XCTestSuite](./defaulttestsuite.md)
   A test suite that contains test cases for all of the tests in the class.
 
 

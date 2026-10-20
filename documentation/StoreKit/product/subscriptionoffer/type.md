@@ -1,7 +1,8 @@
 # type
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of subscription offer, which can be introductory, promotional, or win-back.
 
@@ -22,7 +23,8 @@ let type: Product.SubscriptionOffer.OfferType
 
 ## See Also
 
-- [Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype.md)
+### Getting the subscription offer type
+- [Product.SubscriptionOffer.OfferType](./offertype.md)
   The types of offers for auto-renewable subscriptions.
 
 

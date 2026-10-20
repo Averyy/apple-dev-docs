@@ -1,7 +1,8 @@
 # fillExtendedPixels
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Callback which can replicate edge pixels to the extended pixels.
 

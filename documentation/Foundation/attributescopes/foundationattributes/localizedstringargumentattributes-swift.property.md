@@ -1,7 +1,8 @@
 # localizedStringArgumentAttributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a localized string argument attribute.
 
@@ -22,7 +23,8 @@ let localizedStringArgumentAttributes: AttributeScopes.FoundationAttributes.Loca
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct.md)
+### Using string localization attributes
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes](./localizedstringargumentattributes-swift.struct.md)
   A type for using a localized string argument as an attribute.
 
 

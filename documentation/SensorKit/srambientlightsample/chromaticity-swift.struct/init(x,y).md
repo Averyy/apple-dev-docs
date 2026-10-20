@@ -1,7 +1,8 @@
 # init(x:y:)
 
 **Framework**: SensorKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a chromaticity instance from the argument coordinate pair.
 
@@ -23,7 +24,8 @@ init(x: Float32, y: Float32)
 
 ## See Also
 
-- [init()](srambientlightsample/chromaticity-swift.struct/init.md)
+### Creating a Chromaticity
+- [init()](./init%28%29.md)
   Creates a chromaticity instance.
 
 

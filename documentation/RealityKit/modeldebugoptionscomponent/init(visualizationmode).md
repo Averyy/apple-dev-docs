@@ -1,7 +1,8 @@
 # init(visualizationMode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a component that isolates a portion of the rendering process and displays it as the entity’s surface texture.
 
@@ -11,7 +12,7 @@ Creates a component that isolates a portion of the rendering process and display
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

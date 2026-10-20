@@ -1,7 +1,8 @@
 # BadRequestTooManyBulletPointsError
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates there are too many bullet points.
 
@@ -10,32 +11,33 @@ An error that indicates there are too many bullet points.
 
 ## Declaration
 
-```swift
+```
 object BadRequestTooManyBulletPointsError
 ```
 
 ## Properties
 
-- `errorCode` (number)
-- `errorMessage` (string)
+- `errorCode` (number): **Allowed Values**: `4000218`
+- `errorMessage` (string): **Allowed Values**: `Invalid request. The number of bullet points is too many.`
 
 ## See Also
 
-- [object BadRequestAboveImageRequiresAnImageError](badrequestaboveimagerequiresanimageerror.md)
+### Errors for bad requests
+- [object BadRequestAboveImageRequiresAnImageError](./badrequestaboveimagerequiresanimageerror.md)
   An error that indicates that no image object is included, but the request indicates that the header should be placed above the image.
-- [object BadRequestAppTransactionIdForUnsupportedEndpointError](badrequestapptransactionidforunsupportedendpointerror.md)
+- [object BadRequestAppTransactionIdForUnsupportedEndpointError](./badrequestapptransactionidforunsupportedendpointerror.md)
   An error that indicates the endpoint doesn’t support app transaction identifiers instead of transaction identifiers.
-- [object BadRequestBulletPointTextTooLongError](badrequestbulletpointtexttoolongerror.md)
+- [object BadRequestBulletPointTextTooLongError](./badrequestbulletpointtexttoolongerror.md)
   An error that indicates the text for a bullet point is too long.
-- [object BadRequestImageSizeError](badrequestimagesizeerror.md)
+- [object BadRequestImageSizeError](./badrequestimagesizeerror.md)
   An error that indicates the image size provided is invalid.
-- [object BadRequestRealtimeUrlError](badrequestrealtimeurlerror.md)
+- [object BadRequestRealtimeUrlError](./badrequestrealtimeurlerror.md)
   An error that indicates the URL is invalid.
-- [object BadRequestTransactionIdError](badrequesttransactioniderror.md)
+- [object BadRequestTransactionIdError](./badrequesttransactioniderror.md)
   An error that indicates the transaction ID is invalid.
-- [object BadRequestTransactionIdNotOtidError](badrequesttransactionidnototiderror.md)
+- [object BadRequestTransactionIdNotOtidError](./badrequesttransactionidnototiderror.md)
   An error that indicates the transaction ID provided is not an original transaction ID.
-- [object BadRequestTransactionIdNotSupportedForFamilySharingError](badrequesttransactionidnotsupportedforfamilysharingerror.md)
+- [object BadRequestTransactionIdNotSupportedForFamilySharingError](./badrequesttransactionidnotsupportedforfamilysharingerror.md)
   An error that indicates that the endpoint doesn’t support transactions for products the customer receives through Family Sharing.
 
 

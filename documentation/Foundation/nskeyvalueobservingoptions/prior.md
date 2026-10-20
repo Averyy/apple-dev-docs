@@ -1,7 +1,8 @@
 # prior
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether separate notifications should be sent to the observer before and after each change, instead of a single notification after the change.
 
@@ -20,17 +21,22 @@ Whether separate notifications should be sent to the observer before and after e
 static var prior: NSKeyValueObservingOptions { get }
 ```
 
+```c
+NSKeyValueObservingOptionPrior
+```
+
 #### Discussion
 
-The change dictionary in a notification sent before a change always contains an [`notificationIsPriorKey`](nskeyvaluechangekey/notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](https://developer.apple.com/documentation/swift/true), but never contains an [`newKey`](nskeyvaluechangekey/newkey.md) entry. When this option is specified the change dictionary in a notification sent after a change contains the same entries that it would contain if this option were not specified. You can use this option when the observer’s own key-value observing-compliance requires it to invoke one of the `-willChange...` methods for one of its own properties, and the value of that property depends on the value of the observed object’s property. (In that situation it’s too late to easily invoke `-willChange...` properly in response to receiving an [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)) message after the change.)
+The change dictionary in a notification sent before a change always contains an [`notificationIsPriorKey`](../nskeyvaluechangekey/notificationispriorkey.md) entry whose value is an `NSNumber` object that contains the Boolean value [`true`](../../Swift/true.md), but never contains an [`newKey`](../nskeyvaluechangekey/newkey.md) entry. When this option is specified the change dictionary in a notification sent after a change contains the same entries that it would contain if this option were not specified. You can use this option when the observer’s own key-value observing-compliance requires it to invoke one of the `-willChange...` methods for one of its own properties, and the value of that property depends on the value of the observed object’s property. (In that situation it’s too late to easily invoke `-willChange...` properly in response to receiving an [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md) message after the change.)
 
 ## See Also
 
-- [static var new: NSKeyValueObservingOptions](nskeyvalueobservingoptions/new.md)
+### Constants
+- [static var new: NSKeyValueObservingOptions](./new.md)
   Indicates that the change dictionary should provide the new attribute value, if applicable.
-- [static var old: NSKeyValueObservingOptions](nskeyvalueobservingoptions/old.md)
+- [static var old: NSKeyValueObservingOptions](./old.md)
   Indicates that the change dictionary should contain the old attribute value, if applicable.
-- [static var initial: NSKeyValueObservingOptions](nskeyvalueobservingoptions/initial.md)
+- [static var initial: NSKeyValueObservingOptions](./initial.md)
   If specified, a notification should be sent to the observer immediately, before the observer registration method even returns.
 
 

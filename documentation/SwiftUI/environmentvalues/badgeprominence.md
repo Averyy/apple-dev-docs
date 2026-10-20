@@ -1,7 +1,8 @@
 # badgeProminence
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prominence to apply to badges associated with this environment.
 
@@ -20,15 +21,16 @@ var badgeProminence: BadgeProminence { get set }
 
 #### Discussion
 
-The default is [`standard`](badgeprominence/standard.md).
+The default is [`standard`](../badgeprominence/standard.md).
 
 ## See Also
 
-- [func badge(_:)](view/badge(_:).md)
+### Displaying a badge on a list item
+- [func badge(_:)](../view/badge%28_%29.md)
   Generates a badge for the view from a localized string resource.
-- [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
+- [func badgeProminence(BadgeProminence) -> some View](../view/badgeprominence%28_%29.md)
   Specifies the prominence of badges created by this view.
-- [struct BadgeProminence](badgeprominence.md)
+- [struct BadgeProminence](../badgeprominence.md)
   The visual prominence of a badge.
 
 

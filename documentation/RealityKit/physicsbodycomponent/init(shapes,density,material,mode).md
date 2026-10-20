@@ -1,7 +1,8 @@
 # init(shapes:density:material:mode:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physics body component deriving mass properties from shape and density.
 
@@ -11,7 +12,7 @@ Creates a physics body component deriving mass properties from shape and density
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Creates a physics body component deriving mass properties from shape and density
 
 ## Mentions
 
-- [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
+- [Designing scene hierarchies for efficient physics simulation](../designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
 ## Parameters
 
@@ -33,11 +34,12 @@ Creates a physics body component deriving mass properties from shape and density
 
 ## See Also
 
-- [init()](physicsbodycomponent/init.md)
+### Creating a physics body component
+- [init()](./init%28%29.md)
   Creates a physics body component with default settings.
-- [init(massProperties: PhysicsMassProperties, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](physicsbodycomponent/init(massproperties:material:mode:).md)
+- [init(massProperties: PhysicsMassProperties, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](./init%28massproperties,material,mode%29.md)
   Creates a physics body component with the given mass properties, material, and mode.
-- [init(shapes: [ShapeResource], mass: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](physicsbodycomponent/init(shapes:mass:material:mode:).md)
+- [init(shapes: [ShapeResource], mass: Float, material: PhysicsMaterialResource?, mode: PhysicsBodyMode)](./init%28shapes,mass,material,mode%29.md)
   Creates a physics body component deriving mass properties from shape and mass.
 
 

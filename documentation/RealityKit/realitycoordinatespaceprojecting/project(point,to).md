@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Projects a point from the 3D world coordinate system of the scene to the 2D pixel coordinate system of the reality view.

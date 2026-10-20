@@ -1,12 +1,13 @@
 # frameName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the frame. If the receiver does not represent the contents of an entire HTML frame, this is `nil`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The name of the frame. If the receiver does not represent the contents of an ent
 var frameName: String! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * frameName;
+```
+
 ## See Also
 
-- [var data: Data!](webresource/data.md)
+### Getting attributes
+- [var data: Data!](./data.md)
   The receiver’s data.
-- [var url: URL!](webresource/url.md)
+- [var url: URL!](./url.md)
   The receiver’s URL.
-- [var mimeType: String!](webresource/mimetype.md)
+- [var mimeType: String!](./mimetype.md)
   The receiver’s MIME type.
-- [var textEncodingName: String!](webresource/textencodingname.md)
+- [var textEncodingName: String!](./textencodingname.md)
   The receiver’s text encoding name.
 
 

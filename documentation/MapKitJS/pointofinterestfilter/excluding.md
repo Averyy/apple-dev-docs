@@ -1,7 +1,8 @@
 # excluding(categories)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Creates a point-of-interest filter that excludes categories from a list that you provide.
 
@@ -10,7 +11,7 @@ Creates a point-of-interest filter that excludes categories from a list that you
 
 ## Declaration
 
-```swift
+```
 static excluding(
     categories: PointOfInterestCategory[],
 ): PointOfInterestFilter;
@@ -18,11 +19,12 @@ static excluding(
 
 ## See Also
 
-- [including(categories)](pointofinterestfilter/including.md)
+### Creating filters
+- [including(categories)](./including.md)
   Creates a point-of-interest filter that includes categories from a list that you provide.
-- [excludingAllCategories](pointofinterestfilter/excludingallcategories.md)
+- [excludingAllCategories](./excludingallcategories.md)
   A filter that excludes all point-of-interest categories.
-- [includingAllCategories](pointofinterestfilter/includingallcategories.md)
+- [includingAllCategories](./includingallcategories.md)
   A filter that includes all point-of-interest categories.
 
 

@@ -1,7 +1,8 @@
 # PTChannelErrorDomain
 
 **Framework**: Push to Talk  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string representation of the channel error domain.
 
@@ -16,17 +17,22 @@ A string representation of the channel error domain.
 let PTChannelErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const PTChannelErrorDomain;
+```
+
 ## See Also
 
-- [struct PTChannelError](ptchannelerror-swift.struct.md)
+### Push to Talk errors
+- [struct PTChannelError](./ptchannelerror-swift.struct.md)
   A structure that represents a channel error.
-- [PTChannelError.Code](ptchannelerror-swift.struct/code.md)
+- [PTChannelError.Code](./ptchannelerror-swift.struct/code.md)
   Error codes for channel operations.
-- [struct PTInstantiationError](ptinstantiationerror-swift.struct.md)
+- [struct PTInstantiationError](./ptinstantiationerror-swift.struct.md)
   A structure that represents an instantiation error.
-- [PTInstantiationError.Code](ptinstantiationerror-swift.struct/code.md)
+- [PTInstantiationError.Code](./ptinstantiationerror-swift.struct/code.md)
   Error codes for instantiation operations.
-- [let PTInstantiationErrorDomain: String](ptinstantiationerrordomain.md)
+- [let PTInstantiationErrorDomain: String](./ptinstantiationerrordomain.md)
   A string representation of the instantiation error domain.
 
 

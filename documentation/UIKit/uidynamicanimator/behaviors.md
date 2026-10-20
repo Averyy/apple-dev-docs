@@ -1,7 +1,8 @@
 # behaviors
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dynamic behaviors managed by a dynamic animator.
 
@@ -9,7 +10,7 @@ The dynamic behaviors managed by a dynamic animator.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The dynamic behaviors managed by a dynamic animator.
 var behaviors: [UIDynamicBehavior] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<__kindof UIDynamicBehavior *> * behaviors;
+```
+
 ## See Also
 
-- [var elapsedTime: TimeInterval](uidynamicanimator/elapsedtime.md)
+### Accessing a dynamic animator’s state
+- [var elapsedTime: TimeInterval](./elapsedtime.md)
   Returns the time interval since the dynamic animator started running.
-- [var isRunning: Bool](uidynamicanimator/isrunning.md)
+- [var isRunning: Bool](./isrunning.md)
   Returns true if the dynamic animator is running.
-- [var referenceView: UIView?](uidynamicanimator/referenceview.md)
+- [var referenceView: UIView?](./referenceview.md)
   The view that a dynamic animator was initialized with.
-- [func updateItem(usingCurrentState: any UIDynamicItem)](uidynamicanimator/updateitem(usingcurrentstate:).md)
+- [func updateItem(usingCurrentState: any UIDynamicItem)](./updateitem%28usingcurrentstate%29.md)
   Asks a dynamic animator to read the current state of a dynamic item, replacing the animator’s internal representation of the item’s state.
 
 

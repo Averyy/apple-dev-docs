@@ -1,7 +1,8 @@
 # IOUSBDFUDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines the USB device firmware update descriptor.
 
@@ -10,22 +11,22 @@ A structure that defines the USB device firmware update descriptor.
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBDFUDescriptor;
 ```
 
 #### Overview
 
-See the USB Device Firmware Update Specification at [`http://www.usb.org`](https://developer.apple.comhttp://www.usb.org).
+See the USB Device Firmware Update Specification at [http://www.usb.org](http://www.usb.org).
 
 ## Topics
 
 ### Accessing the Descriptor Properties
-- [bLength](iousbdfudescriptor/blength.md)
-- [bDescriptorType](iousbdfudescriptor/bdescriptortype.md)
-- [bmAttributes](iousbdfudescriptor/bmattributes.md)
-- [wDetachTimeout](iousbdfudescriptor/wdetachtimeout.md)
-- [wTransferSize](iousbdfudescriptor/wtransfersize.md)
+- [bLength](./iousbdfudescriptor/blength.md)
+- [bDescriptorType](./iousbdfudescriptor/bdescriptortype.md)
+- [bmAttributes](./iousbdfudescriptor/bmattributes.md)
+- [wDetachTimeout](./iousbdfudescriptor/wdetachtimeout.md)
+- [wTransferSize](./iousbdfudescriptor/wtransfersize.md)
 
 
 ---

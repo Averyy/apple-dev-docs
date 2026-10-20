@@ -1,7 +1,8 @@
 # selectedDate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date component object that represents a selected date in a calendar view.
 
@@ -17,9 +18,14 @@ A date component object that represents a selected date in a calendar view.
 var selectedDate: DateComponents? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDateComponents * selectedDate;
+```
+
 ## See Also
 
-- [func setSelected(DateComponents?, animated: Bool)](uicalendarselectionsingledate/setselected(_:animated:).md)
+### Updating the selected date
+- [func setSelected(DateComponents?, animated: Bool)](./setselected%28_,animated%29.md)
   Updates the date component object that represents a selected date in a calendar view, with an option to animate the change.
 
 

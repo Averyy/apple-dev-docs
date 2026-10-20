@@ -1,7 +1,8 @@
 # TLS.PeerAuthentication.none
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not authenticate the peer.
 

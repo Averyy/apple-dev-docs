@@ -1,7 +1,8 @@
 # spawnVelocityFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How much of the parent particle’s velocity to inherit. Defaults to 1.
 

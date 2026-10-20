@@ -1,6 +1,8 @@
 # Analyzing Image Similarity with Feature Print
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [AnalyzingImageSimilarityWithFeaturePrint.zip](https://docs-assets.developer.apple.com/published/cfefa2e36cc5/AnalyzingImageSimilarityWithFeaturePrint.zip)
 
 Generate a feature print to compute distance between images.
 
@@ -13,27 +15,28 @@ Generate a feature print to compute distance between images.
 
 #### Overview
 
-> **Note**: For more information about this sample code project, see [`WWDC 2019 Session 222: Understanding Images in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/222/).
+> **Note**: For more information about this sample code project, see [WWDC 2019 Session 222: Understanding Images in Vision Framework](https://developer.apple.com/videos/play/wwdc19/222/).
 
 ## See Also
 
-- [Detecting Objects in Still Images](detecting-objects-in-still-images.md)
+### Still-image analysis
+- [Detecting Objects in Still Images](./detecting-objects-in-still-images.md)
   Locate and demarcate rectangles, faces, barcodes, and text in images using the Vision framework.
-- [Classifying images for categorization and search](classifying-images-for-categorization-and-search.md)
+- [Classifying images for categorization and search](./classifying-images-for-categorization-and-search.md)
   Analyze and label images using a Vision classification request.
-- [class VNRequest](vnrequest.md)
+- [class VNRequest](./vnrequest.md)
   The abstract superclass for analysis requests.
-- [class VNImageBasedRequest](vnimagebasedrequest.md)
+- [class VNImageBasedRequest](./vnimagebasedrequest.md)
   The abstract superclass for image-analysis requests that focus on a specific part of an image.
-- [class VNClassifyImageRequest](vnclassifyimagerequest.md)
+- [class VNClassifyImageRequest](./vnclassifyimagerequest.md)
   A request to classify an image.
-- [class VNGenerateImageFeaturePrintRequest](vngenerateimagefeatureprintrequest.md)
+- [class VNGenerateImageFeaturePrintRequest](./vngenerateimagefeatureprintrequest.md)
   An image-based request to generate feature prints from an image.
-- [class VNFeaturePrintObservation](vnfeatureprintobservation.md)
+- [class VNFeaturePrintObservation](./vnfeatureprintobservation.md)
   An observation that provides the recognized feature print.
-- [class VNImageRequestHandler](vnimagerequesthandler.md)
+- [class VNImageRequestHandler](./vnimagerequesthandler.md)
   An object that processes one or more image-analysis request pertaining to a single image.
-- [class VNObservation](vnobservation.md)
+- [class VNObservation](./vnobservation.md)
   The abstract superclass for analysis results.
 
 

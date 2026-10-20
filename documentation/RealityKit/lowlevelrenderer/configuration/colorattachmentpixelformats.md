@@ -1,7 +1,8 @@
 # colorAttachmentPixelFormats
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel formats of the color attachments in the render pass the renderer encodes into.
 
@@ -23,9 +24,10 @@ Use these formats when compiling your own `MTLRenderPipelineState` objects for d
 
 ## See Also
 
-- [var depthAttachmentPixelFormat: MTLPixelFormat](lowlevelrenderer/configuration/depthattachmentpixelformat.md)
+### Configuring pixel formats
+- [var depthAttachmentPixelFormat: MTLPixelFormat](./depthattachmentpixelformat.md)
   The pixel format of the depth attachment in the render pass the renderer encodes into.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](lowlevelrenderer/configuration/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./stencilattachmentpixelformat.md)
   The pixel format of the stencil attachment in the render pass the renderer encodes into.
 
 

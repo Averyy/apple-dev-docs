@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Global pixel format registry.
 

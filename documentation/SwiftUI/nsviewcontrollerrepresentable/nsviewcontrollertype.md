@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view controller to present.
@@ -17,11 +18,12 @@ associatedtype NSViewControllerType : NSViewController
 
 ## See Also
 
-- [func makeNSViewController(context: Self.Context) -> Self.NSViewControllerType](nsviewcontrollerrepresentable/makensviewcontroller(context:).md)
+### Creating and updating the view controller
+- [func makeNSViewController(context: Self.Context) -> Self.NSViewControllerType](./makensviewcontroller%28context%29.md)
   Creates the view controller object and configures its initial state.
-- [func updateNSViewController(Self.NSViewControllerType, context: Self.Context)](nsviewcontrollerrepresentable/updatensviewcontroller(_:context:).md)
+- [func updateNSViewController(Self.NSViewControllerType, context: Self.Context)](./updatensviewcontroller%28_,context%29.md)
   Updates the state of the specified view controller with new information from SwiftUI.
-- [NSViewControllerRepresentable.Context](nsviewcontrollerrepresentable/context.md)
+- [NSViewControllerRepresentable.Context](./context.md)
 
 
 ---

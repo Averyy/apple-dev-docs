@@ -1,7 +1,8 @@
 # MeshResource.Font
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A platform-specific type that represents a font for use in generating a text mesh.
 
@@ -15,13 +16,22 @@ A platform-specific type that represents a font for use in generating a text mes
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+typealias Font = UIFont
+```
+
+*macOS*
+
 ```swift
 typealias Font = NSFont
 ```
 
 ## See Also
 
-- [MeshResource.GenerateTextOptions](meshresource/generatetextoptions.md)
+### Text generation options
+- [MeshResource.GenerateTextOptions](./generatetextoptions.md)
   A type that determines the configuration for rendering text in 2D, before it is extruded.
 
 

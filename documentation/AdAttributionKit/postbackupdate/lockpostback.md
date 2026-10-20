@@ -1,7 +1,8 @@
 # lockPostback
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system should lock the postback, reducing system time deliver a signal
 

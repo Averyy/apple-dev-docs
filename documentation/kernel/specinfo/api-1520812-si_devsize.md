@@ -1,14 +1,15 @@
 # si_devsize
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t si_devsize;
 ```
 

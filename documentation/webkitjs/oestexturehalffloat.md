@@ -1,7 +1,8 @@
 # OESTextureHalfFloat
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface OESTextureHalfFloat
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [HALF_FLOAT_OES](oestexturehalffloat/1628876-half_float_oes.md)
+- [HALF_FLOAT_OES](./oestexturehalffloat/api-1628876-half_float_oes.md)
 
 
 ---

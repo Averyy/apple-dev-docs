@@ -1,7 +1,8 @@
 # TemporalAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A temporal transformer that applies a regular transformer to each value of a temporal sequence.
 
@@ -23,33 +24,34 @@ struct TemporalAdaptor<Base> where Base : Transformer, Base : Sendable
 ## Topics
 
 ### Creating a temporal adaptor
-- [init(Base)](temporaladaptor/init(_:).md)
+- [init(Base)](./temporaladaptor/init%28_%29.md)
   Creates a temporal transformer from a transformer.
 ### Applying a temporal adapter
-- [func applied(to: some TemporalSequence<Base.Input>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<TemporalAdaptor<Base>.Output>](temporaladaptor/applied(to:eventhandler:).md)
+- [func applied(to: some TemporalSequence<Base.Input>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<TemporalAdaptor<Base>.Output>](./temporaladaptor/applied%28to,eventhandler%29.md)
   Performs the transformation on each element of the input sequence.
 ### Supporting types
-- [TemporalAdaptor.Input](temporaladaptor/input.md)
+- [TemporalAdaptor.Input](./temporaladaptor/input.md)
   The input type.
-- [TemporalAdaptor.Output](temporaladaptor/output.md)
+- [TemporalAdaptor.Output](./temporaladaptor/output.md)
   The output type.
-- [TemporalAdaptor.OutputSequence](temporaladaptor/outputsequence.md)
+- [TemporalAdaptor.OutputSequence](./temporaladaptor/outputsequence.md)
   The output sequence type.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TemporalTransformer](temporaltransformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TemporalTransformer](./temporaltransformer.md)
 
 ## See Also
 
-- [struct TemporalTransformerToEstimatorAdaptor](temporaltransformertoestimatoradaptor.md)
+### Temporal adaptors
+- [struct TemporalTransformerToEstimatorAdaptor](./temporaltransformertoestimatoradaptor.md)
   A temporal estimator that always returns a predefined temporal transformer.
-- [struct TemporalEstimatorToSupervisedAdaptor](temporalestimatortosupervisedadaptor.md)
+- [struct TemporalEstimatorToSupervisedAdaptor](./temporalestimatortosupervisedadaptor.md)
   An adaptor that exposes a temporal estimator as a supervised temporal estimator.
-- [struct TemporalTransformerToUpdatableEstimatorAdaptor](temporaltransformertoupdatableestimatoradaptor.md)
+- [struct TemporalTransformerToUpdatableEstimatorAdaptor](./temporaltransformertoupdatableestimatoradaptor.md)
   A temporal estimator that always returns a predefined temporal transformer.
 
 

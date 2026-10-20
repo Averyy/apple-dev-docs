@@ -1,7 +1,8 @@
 # isAllDay
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the event is an all-day event.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the event is an all-day event.
 var isAllDay: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAllDay) BOOL allDay;
+```
+
 ## See Also
 
-- [var endDate: Date?](ddmatchcalendarevent/enddate.md)
+### Getting event details
+- [var endDate: Date?](./enddate.md)
   A date that represents the end of the event.
-- [var endTimeZone: TimeZone?](ddmatchcalendarevent/endtimezone.md)
+- [var endTimeZone: TimeZone?](./endtimezone.md)
   The time zone for the event’s end date.
-- [var startDate: Date?](ddmatchcalendarevent/startdate.md)
+- [var startDate: Date?](./startdate.md)
   A date that represents the start of the event.
-- [var startTimeZone: TimeZone?](ddmatchcalendarevent/starttimezone.md)
+- [var startTimeZone: TimeZone?](./starttimezone.md)
   The time zone for the event’s start date.
 
 

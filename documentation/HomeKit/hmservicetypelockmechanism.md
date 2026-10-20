@@ -1,7 +1,8 @@
 # HMServiceTypeLockMechanism
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A lock mechanism service.
 
@@ -19,15 +20,20 @@ A lock mechanism service.
 let HMServiceTypeLockMechanism: String
 ```
 
+```c
+extern NSString * const HMServiceTypeLockMechanism;
+```
+
 ## See Also
 
-- [let HMServiceTypeDoor: String](hmservicetypedoor.md)
+### Locks and Openers
+- [let HMServiceTypeDoor: String](./hmservicetypedoor.md)
   A door service.
-- [let HMServiceTypeDoorbell: String](hmservicetypedoorbell.md)
+- [let HMServiceTypeDoorbell: String](./hmservicetypedoorbell.md)
   A doorbell service.
-- [let HMServiceTypeGarageDoorOpener: String](hmservicetypegaragedooropener.md)
+- [let HMServiceTypeGarageDoorOpener: String](./hmservicetypegaragedooropener.md)
   A garage door opener service.
-- [let HMServiceTypeLockManagement: String](hmservicetypelockmanagement.md)
+- [let HMServiceTypeLockManagement: String](./hmservicetypelockmanagement.md)
   A lock management service.
 
 

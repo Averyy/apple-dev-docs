@@ -1,7 +1,8 @@
 # backgroundAccessoryView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view that appears behind the title view in the launch scene.
 
@@ -17,13 +18,18 @@ A view that appears behind the title view in the launch scene.
 var backgroundAccessoryView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * backgroundAccessoryView;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
 ## See Also
 
-- [var foregroundAccessoryView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/foregroundaccessoryview.md)
+### Adding accessory views
+- [var foregroundAccessoryView: UIView?](./foregroundaccessoryview.md)
   A view that appears in front of the title view in the launch scene.
 
 

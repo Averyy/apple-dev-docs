@@ -1,14 +1,15 @@
 # mbuf_tag_free
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void mbuf_tag_free(mbuf_t mbuf, mbuf_tag_id_t module_id, mbuf_tag_type_t type);
 ```
 

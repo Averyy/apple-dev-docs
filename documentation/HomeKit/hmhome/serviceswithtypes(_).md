@@ -1,7 +1,8 @@
 # servicesWithTypes(_:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of all services provided by accessories in the home that match the specified types.
 
@@ -19,23 +20,28 @@ Returns an array of all services provided by accessories in the home that match 
 func servicesWithTypes(_ serviceTypes: [String]) -> [HMService]?
 ```
 
+```objc
+- (NSArray<HMService *> *) servicesWithTypes:(NSArray<NSString *> *) serviceTypes;
+```
+
 #### Return Value
 
 An array of found services. Returns `nil` if no matching services are found.
 
 ## Parameters
 
-- `serviceTypes`: An array of strings that identify service types. See [`Accessory Service Types`](accessory-service-types.md) for a list of types.
+- `serviceTypes`: An array of strings that identify service types. See [Accessory Service Types](../accessory-service-types.md) for a list of types.
 
 ## See Also
 
-- [var serviceGroups: [HMServiceGroup]](hmhome/servicegroups.md)
+### Grouping services
+- [var serviceGroups: [HMServiceGroup]](./servicegroups.md)
   An array of all service groups in the home.
-- [func addServiceGroup(withName: String, completionHandler: (HMServiceGroup?, (any Error)?) -> Void)](hmhome/addservicegroup(withname:completionhandler:).md)
+- [func addServiceGroup(withName: String, completionHandler: (HMServiceGroup?, (any Error)?) -> Void)](./addservicegroup%28withname,completionhandler%29.md)
   Adds a service group to the home.
-- [func removeServiceGroup(HMServiceGroup, completionHandler: ((any Error)?) -> Void)](hmhome/removeservicegroup(_:completionhandler:).md)
+- [func removeServiceGroup(HMServiceGroup, completionHandler: ((any Error)?) -> Void)](./removeservicegroup%28_,completionhandler%29.md)
   Removes a service group from the home.
-- [class HMServiceGroup](hmservicegroup.md)
+- [class HMServiceGroup](../hmservicegroup.md)
   A collection of accessory services.
 
 

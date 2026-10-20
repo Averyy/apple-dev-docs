@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of this member relative to the start of its struct, in bytes.
 
@@ -10,7 +11,7 @@ The location of this member relative to the start of its struct, in bytes.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The location of this member relative to the start of its struct, in bytes.
 var offset: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger offset;
+```
+
 ## See Also
 
-- [var name: String](mtlstructmember/name.md)
+### Describing the struct member
+- [var name: String](./name.md)
   The name of the struct member.
-- [var dataType: MTLDataType](mtlstructmember/datatype.md)
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the struct member.
-- [var argumentIndex: Int](mtlstructmember/argumentindex.md)
+- [var argumentIndex: Int](./argumentindex.md)
   The index in the argument table that corresponds to the struct member.
 
 

@@ -1,7 +1,8 @@
 # init(bitPattern:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the same memory representation as the given value.
 

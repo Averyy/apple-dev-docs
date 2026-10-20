@@ -1,7 +1,8 @@
 # step(byDecodeTime:wasPinned:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the cursor by a given delta time on the decode timeline.
 
@@ -20,6 +21,10 @@ Moves the cursor by a given delta time on the decode timeline.
 func step(byDecodeTime deltaDecodeTime: CMTime, wasPinned outWasPinned: UnsafeMutablePointer<ObjCBool>?) -> CMTime
 ```
 
+```objc
+- (CMTime) stepByDecodeTime:(CMTime) deltaDecodeTime wasPinned:(BOOL *) outWasPinned;
+```
+
 #### Return Value
 
 The amount of time the cursor was moved along the decode timeline. Because sample cursors snap to sample boundaries when stepped, this value may not be equal to the specified time delta even if the cursor wasn’t pinned.
@@ -27,15 +32,16 @@ The amount of time the cursor was moved along the decode timeline. Because sampl
 ## Parameters
 
 - `deltaDecodeTime`: The amount of time to move in the decode timeline.
-- `outWasPinned`: The system sets the value of this pointer to [`true`](https://developer.apple.com/documentation/swift/true) if the cursor reaches the beginning or the end of the sample sequence before it reaches the requested time. You may specify `nil` if you’re not interested in this information.
+- `outWasPinned`: The system sets the value of this pointer to [`true`](../../Swift/true.md) if the cursor reaches the beginning or the end of the sample sequence before it reaches the requested time. You may specify `nil` if you’re not interested in this information.
 
 ## See Also
 
-- [func step(byPresentationTime: CMTime, wasPinned: UnsafeMutablePointer<ObjCBool>?) -> CMTime](avsamplecursor/step(bypresentationtime:waspinned:).md)
+### Navigating samples
+- [func step(byPresentationTime: CMTime, wasPinned: UnsafeMutablePointer<ObjCBool>?) -> CMTime](./step%28bypresentationtime,waspinned%29.md)
   Moves the cursor by a given delta time on the presentation timeline.
-- [func stepInDecodeOrder(byCount: Int64) -> Int64](avsamplecursor/stepindecodeorder(bycount:).md)
+- [func stepInDecodeOrder(byCount: Int64) -> Int64](./stepindecodeorder%28bycount%29.md)
   Moves the cursor a given number of samples in decode order.
-- [func stepInPresentationOrder(byCount: Int64) -> Int64](avsamplecursor/stepinpresentationorder(bycount:).md)
+- [func stepInPresentationOrder(byCount: Int64) -> Int64](./stepinpresentationorder%28bycount%29.md)
   Moves the cursor a given number of samples in presentation order.
 
 

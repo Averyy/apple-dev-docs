@@ -1,7 +1,8 @@
 # kAXWindowRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A window.
 
@@ -12,6 +13,10 @@ A window.
 
 ```swift
 var kAXWindowRole: String { get }
+```
+
+```c
+#define kAXWindowRole
 ```
 
 

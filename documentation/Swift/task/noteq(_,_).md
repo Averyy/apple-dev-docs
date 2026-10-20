@@ -1,7 +1,8 @@
 # !=(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are not equal.
 
@@ -33,11 +34,12 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ## See Also
 
-- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
+### Comparing Tasks
+- [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [var hashValue: Int](task/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](task/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

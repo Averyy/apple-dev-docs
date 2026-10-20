@@ -1,7 +1,8 @@
 # callCommunications
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calls the user selected to report.
 
@@ -15,6 +16,10 @@ The calls the user selected to report.
 
 ```swift
 var callCommunications: [ILCallCommunication] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<ILCallCommunication *> * callCommunications;
 ```
 
 #### Discussion

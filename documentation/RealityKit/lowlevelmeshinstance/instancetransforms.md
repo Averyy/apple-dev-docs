@@ -1,7 +1,8 @@
 # instanceTransforms
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform buffer for GPU instancing, or `nil` for single-instance rendering.
 
@@ -23,7 +24,8 @@ When non-`nil`, the renderer issues a single instanced draw call with `instanceT
 
 ## See Also
 
-- [func setInstanceTransforms(LowLevelInstanceTransformResource?) throws(LowLevelRenderContextError)](lowlevelmeshinstance/setinstancetransforms(_:).md)
+### Positioning instances
+- [func setInstanceTransforms(LowLevelInstanceTransformResource?) throws(LowLevelRenderContextError)](./setinstancetransforms%28_%29.md)
   Assigns or clears the transform buffer for GPU instancing.
 
 

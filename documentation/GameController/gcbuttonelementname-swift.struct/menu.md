@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the primary menu button element.
 
@@ -11,7 +12,7 @@ The name of the primary menu button element.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ static let menu: GCButtonElementName
 
 ## See Also
 
-- [static let options: GCButtonElementName](gcbuttonelementname-swift.struct/options.md)
+### Getting extended gamepad face button names
+- [static let options: GCButtonElementName](./options.md)
   The name of the main options button element.
-- [static let home: GCButtonElementName](gcbuttonelementname-swift.struct/home.md)
+- [static let home: GCButtonElementName](./home.md)
   The name of the main menu button element.
-- [static let a: GCButtonElementName](gcbuttonelementname-swift.struct/a.md)
+- [static let a: GCButtonElementName](./a.md)
   The name for the controller’s A button.
-- [static let b: GCButtonElementName](gcbuttonelementname-swift.struct/b.md)
+- [static let b: GCButtonElementName](./b.md)
   The name for the controller’s B button.
-- [static let x: GCButtonElementName](gcbuttonelementname-swift.struct/x.md)
+- [static let x: GCButtonElementName](./x.md)
   The name for the controller’s X button.
-- [static let y: GCButtonElementName](gcbuttonelementname-swift.struct/y.md)
+- [static let y: GCButtonElementName](./y.md)
   The name for the controller’s Y button.
 
 

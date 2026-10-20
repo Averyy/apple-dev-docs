@@ -1,7 +1,8 @@
 # FinancialConnectionExtensionAuthorizationRequest.CompletionHandlerResult
 
 **Framework**: FinanceKitUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.0+
@@ -16,7 +17,8 @@ typealias CompletionHandlerResult = Result<FinancialConnectionExtensionAuthoriza
 
 ## See Also
 
-- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](financialconnectionextensionauthorizationrequest/completionhandler.md)
+### Type Aliases
+- [FinancialConnectionExtensionAuthorizationRequest.CompletionHandler](./completionhandler.md)
 
 
 ---

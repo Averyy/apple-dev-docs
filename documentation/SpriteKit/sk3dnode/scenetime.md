@@ -1,7 +1,8 @@
 # sceneTime
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current scene time.
 
@@ -10,7 +11,7 @@ The current scene time.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The current scene time.
 var sceneTime: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval sceneTime;
+```
+
 #### Discussion
 
-This timestamp determines the behavior of running animations, similar to how the playhead time in a video player application determines which frame of a movie to display. It applies only to animations whose [`usesSceneTimeBase`](https://developer.apple.com/documentation/quartzcore/caanimation/usesscenetimebase) property is [`true`](https://developer.apple.com/documentation/swift/true), including those loaded from a scene source using the [`playUsingSceneTimeBase`](https://developer.apple.com/documentation/scenekit/scnscenesource/animationimportpolicy/playusingscenetimebase) option.
+This timestamp determines the behavior of running animations, similar to how the playhead time in a video player application determines which frame of a movie to display. It applies only to animations whose [`usesSceneTimeBase`](../../QuartzCore/caanimation/usesscenetimebase.md) property is [`true`](../../Swift/true.md), including those loaded from a scene source using the [`playUsingSceneTimeBase`](../../SceneKit/scnscenesource/animationimportpolicy/playusingscenetimebase.md) option.
 
 Use this property together with the above animation options when you want to directly control (or allow the user to directly control) the playback of animations.
 
 ## See Also
 
-- [var isPlaying: Bool](sk3dnode/isplaying.md)
+### Animating a 3D Node’s Content in Scene Kit
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that determines whether the scene is playing.
-- [var loops: Bool](sk3dnode/loops.md)
+- [var loops: Bool](./loops.md)
   A Boolean value that determines whether Scene Kit restarts the scene time after all animations in the scene have played.
 
 

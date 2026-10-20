@@ -1,7 +1,8 @@
 # init(channelLayout:orientation:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ambient mixer with the given channel layout and orientation.
 
@@ -19,6 +20,10 @@ Creates an ambient mixer with the given channel layout and orientation.
 init(channelLayout layout: AVAudioChannelLayout, orientation: simd_quatf)
 ```
 
+```objc
+- (instancetype) initWithChannelLayout:(AVAudioChannelLayout *) layout orientation:(simd_quatf) orientation;
+```
+
 ## Parameters
 
 - `layout`: The channel layout of input audio.
@@ -26,7 +31,8 @@ init(channelLayout layout: AVAudioChannelLayout, orientation: simd_quatf)
 
 ## See Also
 
-- [convenience init(channelLayout: AVAudioChannelLayout, orientation: simd_quatf, identifier: String)](phaseambientmixerdefinition/init(channellayout:orientation:identifier:).md)
+### Creating an Ambient Mixer
+- [convenience init(channelLayout: AVAudioChannelLayout, orientation: simd_quatf, identifier: String)](./init%28channellayout,orientation,identifier%29.md)
   Creates a named ambient mixer with the given channel layout and orientation.
 
 

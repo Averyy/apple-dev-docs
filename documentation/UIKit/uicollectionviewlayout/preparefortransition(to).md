@@ -1,7 +1,8 @@
 # prepareForTransition(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the layout object that it is about to be removed as the layout for the collection view.
 
@@ -9,13 +10,17 @@ Tells the layout object that it is about to be removed as the layout for the col
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func prepareForTransition(to newLayout: UICollectionViewLayout)
+```
+
+```objc
+- (void) prepareForTransitionToLayout:(UICollectionViewLayout *) newLayout;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ Prior to performing a layout transition, the collection view calls this method s
 
 ## See Also
 
-- [func prepareForTransition(from: UICollectionViewLayout)](uicollectionviewlayout/preparefortransition(from:).md)
+### Transitioning between layouts
+- [func prepareForTransition(from: UICollectionViewLayout)](./preparefortransition%28from%29.md)
   Tells the layout object to prepare to be installed as the layout for the collection view.
-- [func finalizeLayoutTransition()](uicollectionviewlayout/finalizelayouttransition.md)
+- [func finalizeLayoutTransition()](./finalizelayouttransition%28%29.md)
   Tells the layout object to perform any final steps before the transition animations occur.
 
 

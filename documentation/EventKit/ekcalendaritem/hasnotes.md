@@ -1,7 +1,8 @@
 # hasNotes
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the calendar item has notes.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the calendar item has notes.
 var hasNotes: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasNotes;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the calendar item has notes; otherwise it does not.
+If [`true`](../../Swift/true.md), the calendar item has notes; otherwise it does not.
 
 ## See Also
 
-- [var notes: String?](ekcalendaritem/notes.md)
+### Attaching Notes
+- [var notes: String?](./notes.md)
   The notes associated with the calendar item.
 
 

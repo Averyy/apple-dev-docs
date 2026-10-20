@@ -1,7 +1,8 @@
 # kIOUSBDecriptorTypeHID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type for a human interaction device descriptor.
 
@@ -10,15 +11,16 @@ The type for a human interaction device descriptor.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDecriptorTypeHID = 33
 ```
 
 ## See Also
 
-- [kIOUSBDecriptorTypeReport](tiousbdescriptortype/kiousbdecriptortypereport.md)
+### Getting the Descriptor Type
+- [kIOUSBDecriptorTypeReport](./kiousbdecriptortypereport.md)
   The type for a report descriptor.
-- [kIOUSBDescriptorTypePhysical](tiousbdescriptortype/kiousbdescriptortypephysical.md)
+- [kIOUSBDescriptorTypePhysical](./kiousbdescriptortypephysical.md)
   The type for a physical descriptor.
 
 

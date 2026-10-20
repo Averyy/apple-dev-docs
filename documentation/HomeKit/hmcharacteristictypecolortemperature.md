@@ -1,7 +1,8 @@
 # HMCharacteristicTypeColorTemperature
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The color temperature of a light.
 
@@ -19,19 +20,24 @@ The color temperature of a light.
 let HMCharacteristicTypeColorTemperature: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeColorTemperature;
+```
+
 #### Discussion
 
 The corresponding value is an integer representing the color temperature in micro-reciprocal degrees (mired), which is 1,000,000 divided by the color temperature in kelvins. For example, to emulate a traditional tungsten light with a color temperature of 3200 K, use a mired value of about 312.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentLightLevel: String](hmcharacteristictypecurrentlightlevel.md)
+### Light
+- [let HMCharacteristicTypeCurrentLightLevel: String](./hmcharacteristictypecurrentlightlevel.md)
   The current light level.
-- [let HMCharacteristicTypeHue: String](hmcharacteristictypehue.md)
+- [let HMCharacteristicTypeHue: String](./hmcharacteristictypehue.md)
   The hue of the color used by a light.
-- [let HMCharacteristicTypeBrightness: String](hmcharacteristictypebrightness.md)
+- [let HMCharacteristicTypeBrightness: String](./hmcharacteristictypebrightness.md)
   The brightness of a light.
-- [let HMCharacteristicTypeSaturation: String](hmcharacteristictypesaturation.md)
+- [let HMCharacteristicTypeSaturation: String](./hmcharacteristictypesaturation.md)
   The saturation of the color used by a light.
 
 

@@ -1,7 +1,8 @@
 # counters
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of score counters.
 
@@ -16,9 +17,10 @@ var counters: CounterCollection
 
 ## See Also
 
-- [var equipment: EquipmentCollection](tablestate/equipment.md)
+### Getting the table state
+- [var equipment: EquipmentCollection](./equipment.md)
   The collection of equipment.
-- [var turn: Set<TableSeatIdentifier>](tablestate/turn.md)
+- [var turn: Set<TableSeatIdentifier>](./turn.md)
   The seats that are currently in turn.
 
 

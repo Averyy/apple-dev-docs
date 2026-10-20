@@ -1,7 +1,8 @@
 # sourceRegion
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region in the source texture, in tiles.
 
@@ -19,11 +20,15 @@ The region in the source texture, in tiles.
 var sourceRegion: MTLRegion
 ```
 
+```c
+MTLRegion sourceRegion;
+```
+
 #### Discussion
 
 The tiles remain mapped in the source texture.
 
-When [`sourceLevel`](mtl4copysparsetexturemappingoperation/sourcelevel.md) is equal to the source texture’s [`firstMipmapInTail`](mtltexture/firstmipmapintail.md), set `origin.y` to `0` and `size.height` to `1`.
+When [`sourceLevel`](./sourcelevel.md) is equal to the source texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md), set `origin.y` to `0` and `size.height` to `1`.
 
 
 ---

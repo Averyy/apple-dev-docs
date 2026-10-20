@@ -12,7 +12,7 @@ Once you start a packet trace on a network interface, it records all traffic pas
 
 Both macOS and iOS have built-in support for packet traces. This article explains how to record a packet trace on both platforms. Even if your primary focus is iOS, you should start by running some tests on macOS to familiarize yourself with the tools before you attempt to debug your actual problem.
 
-> **Note**:  Packet traces are a low-level feature and, if you’re just getting started, you may be better off using one of the higher-level tools referenced in [`Choosing a Network Debugging Tool`](choosing-a-network-debugging-tool.md). Additionally, while the focus of this article is the built-in packet trace tools, there are a variety of third-party packet trace tools that you might want to investigate; see [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md) for details.
+> **Note**:  Packet traces are a low-level feature and, if you’re just getting started, you may be better off using one of the higher-level tools referenced in [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md). Additionally, while the focus of this article is the built-in packet trace tools, there are a variety of third-party packet trace tools that you might want to investigate; see [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md) for details.
 
 ##### Choose the Correct Interface
 
@@ -48,7 +48,7 @@ In this example:
 
 - `tcpdump` is the name of macOS’s built-in packet trace tool.
 - The `sudo` command causes `tcpdump` to run with privileges, which is necessary in order to record packets.
-- The `-i en0` option tells `tcpdump` to record packets on the default Ethernet-like interface. Replace `en0` with the short interface name you determined in [`Choose the Correct Interface`](recording-a-packet-trace#Choose-the-Correct-Interface.md).
+- The `-i en0` option tells `tcpdump` to record packets on the default Ethernet-like interface. Replace `en0` with the short interface name you determined in [Choose the Correct Interface](./recording-a-packet-trace.md#Choose-the-Correct-Interface).
 - The `-n` option tells tcpdump not to attempt to use reverse DNS to map IP addresses to names; such mapping is rarely useful on the modern Internet and it radically slows things down.
 
 When you run `tcpdump` in this way, you see something like this:
@@ -70,13 +70,13 @@ Packet traces can be quite overwhelming. Rather than trying to interpret the pac
 sudo tcpdump -i en0 -w trace.pcap
 ```
 
-This example records a packet trace and writes the results to a file call `trace.pcap`. You can save that file to analyze later on using `tcpdump` itself, or one of the tools listed in [`Taking Advantage of Third-Party Network Debugging Tools`](taking-advantage-of-third-party-network-debugging-tools.md). You can also submit it to Apple for analysis (see [`Submitting a Packet Trace to Apple`](submitting-a-packet-trace-to-apple.md)).
+This example records a packet trace and writes the results to a file call `trace.pcap`. You can save that file to analyze later on using `tcpdump` itself, or one of the tools listed in [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md). You can also submit it to Apple for analysis (see [Submitting a Packet Trace to Apple](./submitting-a-packet-trace-to-apple.md)).
 
 > ❗ **Important**:  Even if your ultimate goal is to save a packet trace file, it’s often a good idea to start out by looking at real-time results from `tcpdump`, just to make sure that you’re capturing the right thing.
 
-If you’re having problems recording a packet trace, see [`Troubleshooting Packet Traces`](troubleshooting-packet-traces.md).
+If you’re having problems recording a packet trace, see [Troubleshooting Packet Traces](./troubleshooting-packet-traces.md).
 
-##### Set Up Ios Packet Tracing
+##### Set Up iOS Packet Tracing
 
 iOS doesn’t let you record a packet trace directly. However, you can use your Mac to record a packet trace on an attached iOS device using the Remote Virtual Interface (RVI) mechanism. To get started, first connect your iOS device to your Mac via USB. Next run the `rvictl` command in Terminal.
 
@@ -104,33 +104,34 @@ This output includes the interface name of the newly-created RVI, `rvi0` in this
 sudo tcpdump -i rvi0 -w trace.pcap
 ```
 
-If you’re having problems working with RVIs, see [`Troubleshooting Packet Traces`](troubleshooting-packet-traces.md) for some troubleshooting tips.
+If you’re having problems working with RVIs, see [Troubleshooting Packet Traces](./troubleshooting-packet-traces.md) for some troubleshooting tips.
 
-##### Display and Filter Ios Interface Information
+##### Display and Filter iOS Interface Information
 
-An RVI represents the entire networking stack of the iOS device; you cannot target a specific interface on the device as you would on the Mac. However, information about the interface is recorded in the packet metadata. You can use your packet trace tool to display the interface for each packet and filter the trace based on that interface. For the `tcpdump` tool, use the -k option to display packet metadata and tcpdump -Q to filter on it. The `tcpdump` man page has the details; see doc://com.apple.documentation/documentation/os/reading-unix-manual-pages.
+An RVI represents the entire networking stack of the iOS device; you cannot target a specific interface on the device as you would on the Mac. However, information about the interface is recorded in the packet metadata. You can use your packet trace tool to display the interface for each packet and filter the trace based on that interface. For the `tcpdump` tool, use the -k option to display packet metadata and tcpdump -Q to filter on it. The `tcpdump` man page has the details; see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
 
 ## Topics
 
 ### Working with Packet Traces
-- [Troubleshooting Packet Traces](troubleshooting-packet-traces.md)
+- [Troubleshooting Packet Traces](./troubleshooting-packet-traces.md)
   Take action to address packet tracing problems.
-- [Recording a Wi-Fi Packet Trace](recording-a-wi-fi-packet-trace.md)
+- [Recording a Wi-Fi Packet Trace](./recording-a-wi-fi-packet-trace.md)
   Record traces of Wi-Fi traffic and traffic management.
-- [Submitting a Packet Trace to Apple](submitting-a-packet-trace-to-apple.md)
+- [Submitting a Packet Trace to Apple](./submitting-a-packet-trace-to-apple.md)
   Learn the best way to record a packet trace when communicating with Apple.
 
 ## See Also
 
-- [Choosing a Network Debugging Tool](choosing-a-network-debugging-tool.md)
+### Network Debugging
+- [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md)
   Decide which tool works best for your network debugging problem.
-- [Debugging HTTP Server-Side Errors](debugging-http-server-side-errors.md)
+- [Debugging HTTP Server-Side Errors](./debugging-http-server-side-errors.md)
   Understand HTTP server-side errors and how to debug them.
-- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
+- [Debugging HTTPS Problems with CFNetwork Diagnostic Logging](./debugging-https-problems-with-cfnetwork-diagnostic-logging.md)
   Use CFNetwork diagnostic logging to investigate HTTP and HTTPS problems.
-- [Taking Advantage of Third-Party Network Debugging Tools](taking-advantage-of-third-party-network-debugging-tools.md)
+- [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md)
   Learn about the available third-party network debugging tools.
-- [Testing and Debugging L4S in Your App](testing-and-debugging-l4s-in-your-app.md)
+- [Testing and Debugging L4S in Your App](./testing-and-debugging-l4s-in-your-app.md)
   Learn how to verify your app on an L4S-capable host and network to improve your app’s responsiveness.
 
 

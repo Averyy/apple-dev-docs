@@ -1,7 +1,8 @@
 # restorableStateKeyPaths
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of key paths representing the restorable attributes of the responder.
 
@@ -14,27 +15,32 @@ Returns an array of key paths representing the restorable attributes of the resp
 class var restorableStateKeyPaths: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * restorableStateKeyPaths;
+```
+
 #### Return Value
 
-An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a key path to one of the responder’s attributes.
+An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains a key path to one of the responder’s attributes.
 
 #### Discussion
 
-You can use this method instead of, or in addition to, the [`encodeRestorableState(with:)`](nsresponder/encoderestorablestate(with:).md) and [`restoreState(with:)`](nsresponder/restorestate(with:).md) methods to save and restore the state of your responder. The key paths you return must refer to attributes that are key-value coding and key-value observing compliant. To learn more about these mechanisms, see [`Key-Value Coding Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i) and [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+You can use this method instead of, or in addition to, the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) and [`restoreState(with:)`](./restorestate%28with%29.md) methods to save and restore the state of your responder. The key paths you return must refer to attributes that are key-value coding and key-value observing compliant. To learn more about these mechanisms, see [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i) and [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 When changes are detected, the specified attributes are automatically written to disk with the rest of the application’s interface-related state. At launch time, the attributes are automatically restored to their previous values.
 
 ## See Also
 
-- [class func allowedClasses(forRestorableStateKeyPath: String) -> [AnyClass]](nsresponder/allowedclasses(forrestorablestatekeypath:).md)
+### Handling Window Restoration
+- [class func allowedClasses(forRestorableStateKeyPath: String) -> [AnyClass]](./allowedclasses%28forrestorablestatekeypath%29.md)
   Returns the classes that support secure coding.
-- [func encodeRestorableState(with: NSCoder)](nsresponder/encoderestorablestate(with:).md)
+- [func encodeRestorableState(with: NSCoder)](./encoderestorablestate%28with%29.md)
   Saves the interface-related state of the responder.
-- [func encodeRestorableState(with: NSCoder, backgroundQueue: OperationQueue)](nsresponder/encoderestorablestate(with:backgroundqueue:).md)
+- [func encodeRestorableState(with: NSCoder, backgroundQueue: OperationQueue)](./encoderestorablestate%28with,backgroundqueue%29.md)
   Saves the interface-related state of the responder to a keyed archiver either synchronously or asynchronously on the given operation queue.
-- [func restoreState(with: NSCoder)](nsresponder/restorestate(with:).md)
+- [func restoreState(with: NSCoder)](./restorestate%28with%29.md)
   Restores the interface-related state of the responder.
-- [func invalidateRestorableState()](nsresponder/invalidaterestorablestate.md)
+- [func invalidateRestorableState()](./invalidaterestorablestate%28%29.md)
   Marks the responder’s interface-related state as dirty.
 
 

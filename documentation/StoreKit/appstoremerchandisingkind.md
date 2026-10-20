@@ -1,7 +1,8 @@
 # AppStoreMerchandisingKind
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct AppStoreMerchandisingKind
 ## Topics
 
 ### Type methods
-- [static func subscriptionBundle(String) -> AppStoreMerchandisingKind](appstoremerchandisingkind/subscriptionbundle(_:).md)
+- [static func subscriptionBundle(String) -> AppStoreMerchandisingKind](./appstoremerchandisingkind/subscriptionbundle%28_%29.md)
 ### Enumerations
-- [AppStoreMerchandisingKind.PresentationResult](appstoremerchandisingkind/presentationresult.md)
+- [AppStoreMerchandisingKind.PresentationResult](./appstoremerchandisingkind/presentationresult.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A local copy of this item exists and is the most up-to-date version known to the device.
 
@@ -20,12 +21,17 @@ A local copy of this item exists and is the most up-to-date version known to the
 static let current: URLUbiquitousItemDownloadingStatus
 ```
 
+```c
+extern NSURLUbiquitousItemDownloadingStatus const NSURLUbiquitousItemDownloadingStatusCurrent;
+```
+
 ## See Also
 
-- [static let downloaded: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/downloaded.md)
+### Constants
+- [static let downloaded: URLUbiquitousItemDownloadingStatus](./downloaded.md)
   A local copy of this item exists, but it is stale. The most recent version will be downloaded as soon as possible.
-- [static let notDownloaded: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/notdownloaded.md)
-  This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](filemanager/startdownloadingubiquitousitem(at:).md) to download it.
+- [static let notDownloaded: URLUbiquitousItemDownloadingStatus](./notdownloaded.md)
+  This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](../filemanager/startdownloadingubiquitousitem%28at%29.md) to download it.
 
 
 ---

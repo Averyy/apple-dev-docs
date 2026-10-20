@@ -1,7 +1,8 @@
 # TipGroup
 
 **Framework**: TipKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of tips that can be presented one at a time using a specific order or based on the first tip eligible for display.
 
@@ -22,9 +23,9 @@ final class TipGroup
 
 #### Overview
 
-Use this class to group multiple tips together and have them presented one at a time. You display tips in a specific order with an [`TipGroup.Priority.ordered`](tipgroup/priority/ordered.md) priority or display the first tip eligible for display with a [`TipGroup.Priority.firstAvailable`](tipgroup/priority/firstavailable.md) priority.
+Use this class to group multiple tips together and have them presented one at a time. You display tips in a specific order with an [`ordered`](./tipgroup/priority/ordered.md) priority or display the first tip eligible for display with a [`firstAvailable`](./tipgroup/priority/firstavailable.md) priority.
 
-TipGroup has a [`TipGroup.Priority.firstAvailable`](tipgroup/priority/firstavailable.md) default priority.
+TipGroup has a [`firstAvailable`](./tipgroup/priority/firstavailable.md) default priority.
 
 ```swift
 struct TrailDetails: View {
@@ -60,29 +61,30 @@ struct TrailDetails: View {
 ## Topics
 
 ### Creating a tip group
-- [init(TipGroup.Priority, () -> [any Tip])](tipgroup/init(_:_:).md)
+- [init(TipGroup.Priority, () -> [any Tip])](./tipgroup/init%28_,_%29.md)
   Creates a tip group with the specified presentation priority.
 ### Controlling the display order of a TipGroup’s tips
-- [TipGroup.Priority](tipgroup/priority.md)
-  Order priority for a [`TipGroup`](tipgroup.md).
+- [TipGroup.Priority](./tipgroup/priority.md)
+  Order priority for a [`TipGroup`](./tipgroup.md).
 ### Getting the currently available tip
-- [var currentTip: (any Tip)?](tipgroup/currenttip.md)
+- [var currentTip: (any Tip)?](./tipgroup/currenttip.md)
   Returns the current tip available for display.
-- [var currentTipUpdates: some AsyncSequence<any Tip, Never>](tipgroup/currenttipupdates.md)
+- [var currentTipUpdates: some AsyncSequence<any Tip, Never>](./tipgroup/currenttipupdates.md)
   Stream of tips that become eligible for display.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Tip](tip.md)
+### Content
+- [protocol Tip](./tip.md)
   A type that sets a tip’s content, as well as the conditions for when it displays.
 
 

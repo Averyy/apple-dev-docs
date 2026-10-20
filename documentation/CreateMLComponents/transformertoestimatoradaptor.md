@@ -1,7 +1,8 @@
 # TransformerToEstimatorAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that always returns a predefined transformer.
 
@@ -23,32 +24,33 @@ struct TransformerToEstimatorAdaptor<Transformer> where Transformer : Transforme
 ## Topics
 
 ### Creating a feature
-- [init(Transformer)](transformertoestimatoradaptor/init(_:).md)
+- [init(Transformer)](./transformertoestimatoradaptor/init%28_%29.md)
   Creates a trivial estimator.
 ### Getting the transformer
-- [let transformer: Transformer](transformertoestimatoradaptor/transformer.md)
+- [let transformer: Transformer](./transformertoestimatoradaptor/transformer.md)
   A pre-defined transformer.
 ### Encoding and Decoding
-- [func encode(Transformer, to: inout any EstimatorEncoder) throws](transformertoestimatoradaptor/encode(_:to:).md)
+- [func encode(Transformer, to: inout any EstimatorEncoder) throws](./transformertoestimatoradaptor/encode%28_,to%29.md)
   Does nothing since this estimator uses a pre-defined transformer.
-- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](transformertoestimatoradaptor/decode(from:).md)
+- [func decode(from: inout any EstimatorDecoder) throws -> Transformer](./transformertoestimatoradaptor/decode%28from%29.md)
   Returns the pre-defined transformer.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Transformer](transformertoestimatoradaptor/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) async throws -> Transformer](./transformertoestimatoradaptor/fitted%28to,eventhandler%29.md)
   Returns the pre-defined transformer.
 
 ## Relationships
 
 ### Conforms To
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct TransformerToTemporalAdaptor](transformertotemporaladaptor.md)
+### Transformer adaptors
+- [struct TransformerToTemporalAdaptor](./transformertotemporaladaptor.md)
   A temporal transformer that applies a regular transformer to each value of a temporal sequence.
-- [struct TransformerToUpdatableEstimatorAdaptor](transformertoupdatableestimatoradaptor.md)
+- [struct TransformerToUpdatableEstimatorAdaptor](./transformertoupdatableestimatoradaptor.md)
   An updatable estimator that always returns a predefined transformer.
 
 

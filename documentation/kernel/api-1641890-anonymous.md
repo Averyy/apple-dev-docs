@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kKUNCAlternateResponse](1641890-anonymous/kkuncalternateresponse.md)
-- [kKUNCCancelResponse](1641890-anonymous/kkunccancelresponse.md)
-- [kKUNCDefaultResponse](1641890-anonymous/kkuncdefaultresponse.md)
-- [kKUNCOtherResponse](1641890-anonymous/kkuncotherresponse.md)
+- [kKUNCAlternateResponse](./api-1641890-anonymous/kkuncalternateresponse.md)
+- [kKUNCCancelResponse](./api-1641890-anonymous/kkunccancelresponse.md)
+- [kKUNCDefaultResponse](./api-1641890-anonymous/kkuncdefaultresponse.md)
+- [kKUNCOtherResponse](./api-1641890-anonymous/kkuncotherresponse.md)
 
 
 ---

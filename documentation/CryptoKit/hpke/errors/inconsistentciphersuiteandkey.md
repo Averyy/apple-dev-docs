@@ -1,7 +1,8 @@
 # HPKE.Errors.inconsistentCiphersuiteAndKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The supplied encryption key is incompatible with the requested cipher suite.
 

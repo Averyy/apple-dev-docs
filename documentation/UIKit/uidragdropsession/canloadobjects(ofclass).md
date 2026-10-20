@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether at least one drag item in the session can create an instance of the specified class.
@@ -18,19 +19,29 @@ Returns a Boolean value that indicates whether at least one drag item in the ses
 func canLoadObjects(ofClass aClass: any NSItemProviderReading.Type) -> Bool
 ```
 
+```objc
+- (BOOL) canLoadObjectsOfClass:(Class<NSItemProviderReading> *) aClass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if at least one drag item in the session can create an instance of the specified class; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if at least one drag item in the session can create an instance of the specified class; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `aClass`: A class conforming to the [`NSItemProviderReading`](https://developer.apple.com/documentation/foundation/nsitemproviderreading) protocol.
+- `aClass`: A class conforming to the [`NSItemProviderReading`](../../Foundation/nsitemproviderreading.md) protocol.
+
+## Default Implementations
+
+### UIDragDropSession Implementations
+- [func canLoadObjects<T>(ofClass: T.Type) -> Bool](./canloadobjects%28ofclass%29-6x43t.md)
 
 ## See Also
 
-- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](uidragdropsession/hasitemsconforming(totypeidentifiers:).md)
+### Checking for drag items
+- [func hasItemsConforming(toTypeIdentifiers: [String]) -> Bool](./hasitemsconforming%28totypeidentifiers%29.md)
   Returns a Boolean value that indicates whether at least one drag item in the session conforms to at least one of the specified UTIs.
-- [var items: [UIDragItem]](uidragdropsession/items.md)
+- [var items: [UIDragItem]](./items.md)
   An array of drag items in the drag session or drop session.
 
 

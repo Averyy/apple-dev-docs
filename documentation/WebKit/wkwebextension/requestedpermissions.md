@@ -1,7 +1,8 @@
 # requestedPermissions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of permissions that the extension requires for its base functionality.
 
@@ -16,6 +17,10 @@ The set of permissions that the extension requires for its base functionality.
 
 ```swift
 var requestedPermissions: Set<WKWebExtension.Permission> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * requestedPermissions;
 ```
 
 

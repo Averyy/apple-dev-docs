@@ -1,7 +1,8 @@
 # listHeader
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional details header displayed at the top of the list template.
 
@@ -14,6 +15,10 @@ An optional details header displayed at the top of the list template.
 
 ```swift
 var listHeader: CPListTemplateDetailsHeader? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPListTemplateDetailsHeader * listHeader;
 ```
 
 #### Discussion

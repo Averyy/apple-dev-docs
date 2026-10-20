@@ -1,12 +1,15 @@
 # Client Configuration
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Store client-specific information on the server.
 
 **Availability**:
 - VPP License Management 1.0+
+
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
 #### Discussion
 
@@ -14,7 +17,7 @@ Store client-specific information on the server.
 
 **Request**:
 
-```None
+```
 {
 	"apnToken": null,
 	"clientContext": "{\"guid\":\"b92\",\"hostname\":\"test.test.org\",\"ac2\":1}",
@@ -49,7 +52,7 @@ Store client-specific information on the server.
 
 **Request**:
 
-```None
+```
 {
   "sToken": "h40Gte9aQnZFDNM39IUkRPCsQDxBxbZB4Wy34pxefOuQkeeb3h2 a5Rlopo4KDn3MrFKf4CM3OY+WGAoZ1cD6iZ6yzsMk1+5PVBNc66YS6ZQ="
 }
@@ -76,9 +79,9 @@ Store client-specific information on the server.
 ## Topics
 
 ### Request and Response
-- [object VppClientConfigRequest](vppclientconfigrequest.md)
+- [object VppClientConfigRequest](./vppclientconfigrequest.md)
   The request for the client configuration.
-- [object VppClientConfigResponse](vppclientconfigresponse.md)
+- [object VppClientConfigResponse](./vppclientconfigresponse.md)
   The response that contains the client configuration.
 
 ## Endpoint
@@ -87,11 +90,19 @@ Store client-specific information on the server.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `VppClientConfigRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`VppClientConfigResponse`, `application/json`)
 
 ## See Also
 
-- [Service Configuration](service-configuration.md)
+### Configuration management
+- [Service Configuration](./service-configuration.md)
   Provides the full list of web service URLs and a list of possible error numbers.
 
 

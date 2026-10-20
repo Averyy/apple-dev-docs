@@ -1,7 +1,8 @@
 # HMCharacteristicValueSecuritySystemAlarmType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible trigger states for an alarm.
 
@@ -19,25 +20,29 @@ Possible trigger states for an alarm.
 enum HMCharacteristicValueSecuritySystemAlarmType
 ```
 
+```c
+enum HMCharacteristicValueSecuritySystemAlarmType : NSInteger;
+```
+
 ## Topics
 
 ### Alarm Types
-- [HMCharacteristicValueSecuritySystemAlarmType.noAlarm](hmcharacteristicvaluesecuritysystemalarmtype/noalarm.md)
+- [HMCharacteristicValueSecuritySystemAlarmType.noAlarm](./hmcharacteristicvaluesecuritysystemalarmtype/noalarm.md)
   The alarm isn’t triggered.
-- [HMCharacteristicValueSecuritySystemAlarmType.unknown](hmcharacteristicvaluesecuritysystemalarmtype/unknown.md)
+- [HMCharacteristicValueSecuritySystemAlarmType.unknown](./hmcharacteristicvaluesecuritysystemalarmtype/unknown.md)
   An alarm has been triggered with an unknown cause.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluesecuritysystemalarmtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluesecuritysystemalarmtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

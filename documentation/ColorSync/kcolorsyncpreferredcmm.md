@@ -1,9 +1,10 @@
 # kColorSyncPreferredCMM
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A key whose value is the [`ColorSyncCMM`](colorsynccmm.md) of the preferred CMM.
+A key whose value is the [`ColorSyncCMM`](./colorsynccmm.md) of the preferred CMM.
 
 **Availability**:
 - iOS 16.0+
@@ -18,6 +19,10 @@ A key whose value is the [`ColorSyncCMM`](colorsynccmm.md) of the preferred CMM.
 
 ```swift
 var kColorSyncPreferredCMM: Unmanaged<CFString>!
+```
+
+```c
+extern CFStringRef kColorSyncPreferredCMM;
 ```
 
 

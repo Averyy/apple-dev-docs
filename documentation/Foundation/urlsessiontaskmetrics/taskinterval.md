@@ -1,7 +1,8 @@
 # taskInterval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval between when a task is instantiated and when the task is completed.
 
@@ -20,13 +21,18 @@ The time interval between when a task is instantiated and when the task is compl
 var taskInterval: DateInterval { get }
 ```
 
+```objc
+@property (copy, readonly) NSDateInterval * taskInterval;
+```
+
 ## See Also
 
-- [var transactionMetrics: [URLSessionTaskTransactionMetrics]](urlsessiontaskmetrics/transactionmetrics.md)
+### Accessing task metrics
+- [var transactionMetrics: [URLSessionTaskTransactionMetrics]](./transactionmetrics.md)
   An array of metrics for each individual request-response transaction made during the execution of the task.
-- [class URLSessionTaskTransactionMetrics](urlsessiontasktransactionmetrics.md)
+- [class URLSessionTaskTransactionMetrics](../urlsessiontasktransactionmetrics.md)
   An object that encapsualtes the performance metrics collected by the URL Loading System during the execution of a session task.
-- [var redirectCount: Int](urlsessiontaskmetrics/redirectcount.md)
+- [var redirectCount: Int](./redirectcount.md)
   The number of redirects that occurred during the execution of the task.
 
 

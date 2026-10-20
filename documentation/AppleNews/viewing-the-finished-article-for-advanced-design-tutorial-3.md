@@ -1,6 +1,7 @@
 # Viewing the Finished Article for Advanced Design Tutorial 3
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 See the full JSON code from this tutorial.
 
@@ -8,7 +9,7 @@ See the full JSON code from this tutorial.
 
 This page brings together everything from this tutorial as a template that you can use for your News articles. If you followed the steps throughout this tutorial, the following example code should match the code in your `article.json` file.
 
-You can copy this template (which is also the `article.json` file in `Desktop/News_Design_Tutorial_Advanced/News_Design_Tutorial_Advanced_Article_3`) and modify it to create your own News articles with the effects from this tutorial. See [`Download the Article Bundle Examples`](setting-up-the-advanced-tutorials#Download-the-Article-Bundle-Examples.md). To preview this article, see [`Preview the Article Bundle Examples`](setting-up-the-introductory-tutorial#Preview-the-Article-Bundle-Examples.md).
+You can copy this template (which is also the `article.json` file in `Desktop/News_Design_Tutorial_Advanced/News_Design_Tutorial_Advanced_Article_3`) and modify it to create your own News articles with the effects from this tutorial. See [Download the Article Bundle Examples](./setting-up-the-advanced-tutorials.md#Download-the-Article-Bundle-Examples). To preview this article, see [Preview the Article Bundle Examples](./setting-up-the-introductory-tutorial.md#Preview-the-Article-Bundle-Examples).
 
 > **Note**:  If your `article.json` file refers to an image using a URL that begins with `bundle://`, that image must be located within the same folder as your `article.json` file.
 
@@ -821,19 +822,20 @@ You can copy this template (which is also the `article.json` file in `Desktop/Ne
 
 ##### Previous
 
-[`Creating a Newsletter Sign-Up Element`](creating-a-newsletter-sign-up-element.md)
+[Creating a Newsletter Sign-Up Element](./creating-a-newsletter-sign-up-element.md)
 
 ## See Also
 
-- [Giving the Article a Dark Color Scheme](giving-the-article-a-dark-color-scheme.md)
+### Advanced Design Tutorial 3: More Ideas
+- [Giving the Article a Dark Color Scheme](./giving-the-article-a-dark-color-scheme.md)
   Apply a new color scheme to your article.
-- [Adding a Video](adding-a-video.md)
+- [Adding a Video](./adding-a-video.md)
   Add a video component inside the header component.
-- [Creating a Sidebar](creating-a-sidebar.md)
+- [Creating a Sidebar](./creating-a-sidebar.md)
   Create a box with an HTML bulleted list in the margin.
-- [Adding a Fixed Image Fill](adding-a-fixed-image-fill.md)
+- [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
   Add an image that remains stationary when the user scrolls.
-- [Creating a Newsletter Sign-Up Element](creating-a-newsletter-sign-up-element.md)
+- [Creating a Newsletter Sign-Up Element](./creating-a-newsletter-sign-up-element.md)
   Add a newsletter sign-up element in your article.
 
 

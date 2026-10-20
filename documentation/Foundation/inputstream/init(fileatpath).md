@@ -1,7 +1,8 @@
 # init(fileAtPath:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an `NSInputStream` object that reads data from the file at a given path.
 
@@ -20,6 +21,10 @@ Initializes and returns an `NSInputStream` object that reads data from the file 
 convenience init?(fileAtPath path: String)
 ```
 
+```objc
+- (instancetype) initWithFileAtPath:(NSString *) path;
+```
+
 #### Return Value
 
 An initialized `NSInputStream` object that reads data from the file at `path`.
@@ -34,9 +39,10 @@ The stream must be opened before it can be used.
 
 ## See Also
 
-- [init(data: Data)](inputstream/init(data:).md)
+### Creating Streams
+- [init(data: Data)](./init%28data%29.md)
   Initializes and returns an `NSInputStream` object for reading from a given `NSData` object.
-- [init?(url: URL)](inputstream/init(url:)-1lfmj.md)
+- [init?(url: URL)](./init%28url%29-1lfmj.md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given URL.
 
 

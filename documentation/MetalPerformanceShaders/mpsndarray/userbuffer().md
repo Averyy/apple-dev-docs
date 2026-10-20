@@ -1,7 +1,8 @@
 # userBuffer()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func userBuffer() -> (any MTLBuffer)?
+```
+
+```objc
+- (id<MTLBuffer>) userBuffer;
 ```
 
 

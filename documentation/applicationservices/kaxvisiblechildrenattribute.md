@@ -1,7 +1,8 @@
 # kAXVisibleChildrenAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXVisibleChildrenAttribute: String { get }
+```
+
+```c
+#define kAXVisibleChildrenAttribute
 ```
 
 #### Discussion

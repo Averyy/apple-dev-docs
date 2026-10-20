@@ -1,7 +1,8 @@
 # BrandsReportingCampaign.AdChannelType
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The advertising channel type of the campaign at report time.
 
@@ -10,9 +11,14 @@ The advertising channel type of the campaign at report time.
 
 ## Declaration
 
-```swift
+```
 string BrandsReportingCampaign.AdChannelType
 ```
+
+## Possible Values
+
+- `SEARCH`: Metrics from Search results ads.
+- `DISPLAY`: Metrics from Search tab, Today tab, or Product Pages ads.
 
 #### Discussion
 
@@ -26,7 +32,7 @@ Since Brands campaigns only run on Apple Maps, this field distinguishes `SEARCH`
 }
 ```
 
-See [`ReportingAdChannelType`](reportingadchanneltype.md) for additional context.
+See [`ReportingAdChannelType`](../reportingadchanneltype.md) for additional context.
 
 
 ---

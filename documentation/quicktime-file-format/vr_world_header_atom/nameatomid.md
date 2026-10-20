@@ -1,7 +1,8 @@
 # nameAtomID
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The ID of the string atom that contains the name of the scene.
 
@@ -11,17 +12,18 @@ That atom should be a sibling of the VR world header atom. The value of this fie
 
 ## See Also
 
-- [majorVersion](vr_world_header_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](vr_world_header_atom/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [defaultNodeID](vr_world_header_atom/defaultnodeid.md)
+- [defaultNodeID](./defaultnodeid.md)
   The ID of the default node.
-- [vrWorldFlags](vr_world_header_atom/vrworldflags.md)
+- [vrWorldFlags](./vrworldflags.md)
   A set of flags for the VR world.
-- [reserved1](vr_world_header_atom/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](vr_world_header_atom/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
 
 

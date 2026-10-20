@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the entity is enabled in the scene, allowing observation of its state.
 
@@ -21,7 +22,7 @@ var isEnabled: Bool { get set }
 
 #### Discussion
 
-For more information, see [`isEnabled`](entity/isenabled.md).
+For more information, see [`isEnabled`](../isenabled.md).
 
 
 ---

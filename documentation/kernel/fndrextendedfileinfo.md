@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct FndrExtendedFileInfo {
     ...
 };
@@ -17,11 +17,11 @@ struct FndrExtendedFileInfo {
 ## Topics
 
 ### Instance Properties
-- [date_added](fndrextendedfileinfo/1578162-date_added.md)
-- [document_id](fndrextendedfileinfo/1577938-document_id.md)
-- [extended_flags](fndrextendedfileinfo/1578032-extended_flags.md)
-- [reserved2](fndrextendedfileinfo/1578242-reserved2.md)
-- [write_gen_counter](fndrextendedfileinfo/1578100-write_gen_counter.md)
+- [date_added](./fndrextendedfileinfo/api-1578162-date_added.md)
+- [document_id](./fndrextendedfileinfo/api-1577938-document_id.md)
+- [extended_flags](./fndrextendedfileinfo/api-1578032-extended_flags.md)
+- [reserved2](./fndrextendedfileinfo/api-1578242-reserved2.md)
+- [write_gen_counter](./fndrextendedfileinfo/api-1578100-write_gen_counter.md)
 
 
 ---

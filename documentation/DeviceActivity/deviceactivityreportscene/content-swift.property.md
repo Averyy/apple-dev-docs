@@ -2,6 +2,7 @@
 
 **Framework**: Device Activity  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A closure that builds your report’s content with the provided configuration.

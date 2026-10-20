@@ -1,17 +1,20 @@
 # volume
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The volume level for the channel.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.1+ - Deprecated in 18.0
+- iPadOS 4.1+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.8+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -19,9 +22,21 @@ The volume level for the channel.
 var volume: Float { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) float volume;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign) float volume;
+```
+
 ## Mentions
 
-- [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Adding voice chat to multiplayer games](../adding-voice-chat-to-multiplayer-games.md)
 
 #### Discussion
 
@@ -29,7 +44,8 @@ GameKit mixes voice data received from all other players and scales it by the `v
 
 ## See Also
 
-- [func setPlayer(GKPlayer, muted: Bool)](gkvoicechat/setplayer(_:muted:).md)
+### Controlling Chat Volume
+- [func setPlayer(GKPlayer, muted: Bool)](./setplayer%28_,muted%29.md)
   Mutes a player in the chat, including the local player.
 
 

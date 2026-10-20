@@ -1,7 +1,8 @@
 # prepare(withActivityItems:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares your service to act on the specified data.
 
@@ -17,9 +18,13 @@ Prepares your service to act on the specified data.
 func prepare(withActivityItems activityItems: [Any])
 ```
 
+```objc
+- (void) prepareWithActivityItems:(NSArray *) activityItems;
+```
+
 #### Discussion
 
-The default implementation of this method does nothing. This method is called after the user has selected your service but before your service is asked to perform its action. Subclasses should override this method and use it to store a reference to the data items in the `activityItems` parameter. In addition, if the implementation of your service requires displaying additional UI to the user, you can use this method to prepare your view controller object and make it available from the [`activityViewController`](uiactivity/activityviewcontroller.md) method.
+The default implementation of this method does nothing. This method is called after the user has selected your service but before your service is asked to perform its action. Subclasses should override this method and use it to store a reference to the data items in the `activityItems` parameter. In addition, if the implementation of your service requires displaying additional UI to the user, you can use this method to prepare your view controller object and make it available from the [`activityViewController`](./activityviewcontroller.md) method.
 
 ## Parameters
 
@@ -27,13 +32,14 @@ The default implementation of this method does nothing. This method is called af
 
 ## See Also
 
-- [func canPerform(withActivityItems: [Any]) -> Bool](uiactivity/canperform(withactivityitems:).md)
+### Performing the activity
+- [func canPerform(withActivityItems: [Any]) -> Bool](./canperform%28withactivityitems%29.md)
   Queries whether the service can act on the specified data items.
-- [var activityViewController: UIViewController?](uiactivity/activityviewcontroller.md)
+- [var activityViewController: UIViewController?](./activityviewcontroller.md)
   The view controller to present to the user.
-- [func perform()](uiactivity/perform.md)
+- [func perform()](./perform%28%29.md)
   Performs the service when no custom view controller is provided.
-- [func activityDidFinish(Bool)](uiactivity/activitydidfinish(_:).md)
+- [func activityDidFinish(Bool)](./activitydidfinish%28_%29.md)
   Notifies the system that your activity object has completed its work.
 
 

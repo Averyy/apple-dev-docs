@@ -1,7 +1,8 @@
 # wSVID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The standard or vendor ID.
 
@@ -10,15 +11,16 @@ The standard or vendor ID.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wSVID;
 ```
 
 ## See Also
 
-- [bAltenateMode](iousbdevicecapabilitybillboardaltconfig/1646368-baltenatemode.md)
+### Getting the Properties
+- [bAltenateMode](./api-1646368-baltenatemode.md)
   The index of the alternative mode.
-- [iAlternateModeString](iousbdevicecapabilitybillboardaltconfig/1646376-ialternatemodestring.md)
+- [iAlternateModeString](./api-1646376-ialternatemodestring.md)
   The index of the string descriptor describing the protocol.
 
 

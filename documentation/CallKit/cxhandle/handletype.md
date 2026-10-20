@@ -1,7 +1,8 @@
 # CXHandle.HandleType
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible types of handles.
 
@@ -18,27 +19,31 @@ The possible types of handles.
 enum HandleType
 ```
 
+```c
+enum CXHandleType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CXHandle.HandleType.generic](cxhandle/handletype/generic.md)
+- [CXHandle.HandleType.generic](./handletype/generic.md)
   An unspecified type of handle.
-- [CXHandle.HandleType.phoneNumber](cxhandle/handletype/phonenumber.md)
+- [CXHandle.HandleType.phoneNumber](./handletype/phonenumber.md)
   A phone number.
-- [CXHandle.HandleType.emailAddress](cxhandle/handletype/emailaddress.md)
+- [CXHandle.HandleType.emailAddress](./handletype/emailaddress.md)
   An email address.
 ### Initializers
-- [init?(rawValue: Int)](cxhandle/handletype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./handletype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

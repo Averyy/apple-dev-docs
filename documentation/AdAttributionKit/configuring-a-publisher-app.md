@@ -1,6 +1,7 @@
 # Configuring a publisher app
 
-**Framework**: AdAttributionKit
+**Framework**: AdAttributionKit  
+**Role**: Article
 
 Set up a publisher app to participate in ad campaigns.
 
@@ -20,7 +21,7 @@ Only ads from ad networks that have an entry in the app’s Information Property
 
 The following example shows an array with two strings that represent the example ad network IDs `"f2d92a.adattributionkit"` and `"2jida.adattributionkit"`:
 
-```None
+```
 "AdNetworkIdentifiers": [
   "f2d92a.adattributionkit",
   "2jida.adattributionkit"
@@ -31,11 +32,12 @@ For more information about property lists, see [Edit property lists](https://hel
 
 ## See Also
 
-- [Registering an ad network](registering-an-ad-network.md)
+### Ad network registration and configuration
+- [Registering an ad network](./registering-an-ad-network.md)
   Use the AdAttributionKit APIs for your ad campaigns after registering your ad network with Apple.
-- [Configuring an advertised app](configuring-an-advertised-app.md)
+- [Configuring an advertised app](./configuring-an-advertised-app.md)
   Prepare an advertised app to participate in ad campaigns.
-- [Configuring attribution rules for your app](configuring-attribution-rules-for-your-app.md)
+- [Configuring attribution rules for your app](./configuring-attribution-rules-for-your-app.md)
   Tune aspects of attribution flow, including the time available to register impressions and the minimum time your app is willing to accept conversions.
 
 

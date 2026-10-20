@@ -1,14 +1,15 @@
 # ml_get_boot_cluster_type
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 cluster_type_t ml_get_boot_cluster_type(void);
 ```
 

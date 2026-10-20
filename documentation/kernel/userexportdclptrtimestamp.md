@@ -1,25 +1,26 @@
 # UserExportDCLPtrTimeStamp
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef struct UserExportDCLPtrTimeStampStruct UserExportDCLPtrTimeStamp;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compilerData](userexportdclptrtimestamp/1561322-compilerdata.md)
-- [opcode](userexportdclptrtimestamp/1561385-opcode.md)
-- [pClientDCLStruct](userexportdclptrtimestamp/1561359-pclientdclstruct.md)
-- [pNextDCLCommand](userexportdclptrtimestamp/1561472-pnextdclcommand.md)
-- [timeStampPtr](userexportdclptrtimestamp/1561489-timestampptr.md)
+- [compilerData](./userexportdclptrtimestamp/api-1561322-compilerdata.md)
+- [opcode](./userexportdclptrtimestamp/api-1561385-opcode.md)
+- [pClientDCLStruct](./userexportdclptrtimestamp/api-1561359-pclientdclstruct.md)
+- [pNextDCLCommand](./userexportdclptrtimestamp/api-1561472-pnextdclcommand.md)
+- [timeStampPtr](./userexportdclptrtimestamp/api-1561489-timestampptr.md)
 
 
 ---

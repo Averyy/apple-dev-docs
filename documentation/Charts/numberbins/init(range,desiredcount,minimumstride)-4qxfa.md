@@ -1,7 +1,8 @@
 # init(range:desiredCount:minimumStride:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Automatically determine the bins from a range of data.
 

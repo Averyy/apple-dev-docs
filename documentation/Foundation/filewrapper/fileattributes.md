@@ -1,7 +1,8 @@
 # fileAttributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of file attributes.
 
@@ -20,17 +21,22 @@ A dictionary of file attributes.
 var fileAttributes: [String : Any] { get set }
 ```
 
+```objc
+@property (copy) NSDictionary<NSString *,id> * fileAttributes;
+```
+
 #### Discussion
 
-The file attributes’ dictionary is the same format as that returned by [`attributesOfItem(atPath:)`](filemanager/attributesofitem(atpath:).md) (`NSFileManager`).
+The file attributes’ dictionary is the same format as that returned by [`attributesOfItem(atPath:)`](../filemanager/attributesofitem%28atpath%29.md) (`NSFileManager`).
 
 ## See Also
 
-- [var filename: String?](filewrapper/filename.md)
+### Accessing Files
+- [var filename: String?](./filename.md)
   The filename of the file wrapper object
-- [var preferredFilename: String?](filewrapper/preferredfilename.md)
+- [var preferredFilename: String?](./preferredfilename.md)
   The preferred filename for the file wrapper object.
-- [var regularFileContents: Data?](filewrapper/regularfilecontents.md)
+- [var regularFileContents: Data?](./regularfilecontents.md)
   The contents of the file-system node associated with a regular-file file wrapper.
 
 

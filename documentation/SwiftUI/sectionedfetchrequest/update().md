@@ -1,7 +1,8 @@
 # update()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the fetched results.
 
@@ -21,13 +22,16 @@ Updates the fetched results.
 @preconcurrency func update()
 ```
 
+Available when `SectionIdentifier` conforms to `Hashable` and `Result` conforms to `NSFetchRequestResult`.
+
 #### Discussion
 
-SwiftUI calls this function before rendering a view’s [`body`](view/body-8kl5o.md) to ensure the view has the most recent fetched results.
+SwiftUI calls this function before rendering a view’s [`body`](../view/body-8kl5o.md) to ensure the view has the most recent fetched results.
 
 ## See Also
 
-- [var wrappedValue: SectionedFetchResults<SectionIdentifier, Result>](sectionedfetchrequest/wrappedvalue.md)
+### Getting the fetched results
+- [var wrappedValue: SectionedFetchResults<SectionIdentifier, Result>](./wrappedvalue.md)
   The fetched results of the fetch request.
 
 

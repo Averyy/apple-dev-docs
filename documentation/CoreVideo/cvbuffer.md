@@ -1,7 +1,8 @@
 # CVBuffer
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 4.0+
@@ -18,6 +19,10 @@
 class CVBuffer
 ```
 
+```c
+typedef struct __CVBuffer * CVBufferRef;
+```
+
 #### Overview
 
 Base type for all CoreVideo buffers
@@ -25,28 +30,29 @@ Base type for all CoreVideo buffers
 ## Topics
 
 ### Structures
-- [CVBuffer.Attributes](cvbuffer/attributes.md)
+- [CVBuffer.Attributes](./cvbuffer/attributes.md)
   A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
-- [CVBuffer.CreationAttributes](cvbuffer/creationattributes.md)
+- [CVBuffer.CreationAttributes](./cvbuffer/creationattributes.md)
   Attributes needed for creating a pixel buffer.
 ### Type Aliases
-- [typealias OriginPosition](cvbuffer/originposition.md)
-- [typealias Padding](cvbuffer/padding.md)
-- [typealias PlaneProperties](cvbuffer/planeproperties.md)
-- [typealias Size](cvbuffer/size.md)
+- [typealias OriginPosition](./cvbuffer/originposition.md)
+- [typealias Padding](./cvbuffer/padding.md)
+- [typealias PlaneProperties](./cvbuffer/planeproperties.md)
+- [typealias Size](./cvbuffer/size.md)
 
 ## Relationships
 
 ### Conforms To
-- [CMAttachmentBearerProtocol](../coremedia/cmattachmentbearerprotocol.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CMAttachmentBearerProtocol](../CoreMedia/cmattachmentbearerprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [enum CVAttachmentMode](cvattachmentmode.md)
+### Data types
+- [enum CVAttachmentMode](./cvattachmentmode.md)
   The propagation modes of a Core Video buffer attachment.
 
 

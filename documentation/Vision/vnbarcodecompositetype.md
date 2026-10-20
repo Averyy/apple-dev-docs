@@ -1,7 +1,8 @@
 # VNBarcodeCompositeType
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Composite types for barcode requests.
 
@@ -20,35 +21,40 @@ Composite types for barcode requests.
 enum VNBarcodeCompositeType
 ```
 
+```c
+enum VNBarcodeCompositeType : NSInteger;
+```
+
 ## Topics
 
 ### Composite Types
-- [VNBarcodeCompositeType.gs1TypeA](vnbarcodecompositetype/gs1typea.md)
+- [VNBarcodeCompositeType.gs1TypeA](./vnbarcodecompositetype/gs1typea.md)
   A type that represents trade items in bulk.
-- [VNBarcodeCompositeType.gs1TypeB](vnbarcodecompositetype/gs1typeb.md)
+- [VNBarcodeCompositeType.gs1TypeB](./vnbarcodecompositetype/gs1typeb.md)
   A type that represents trade items by piece.
-- [VNBarcodeCompositeType.gs1TypeC](vnbarcodecompositetype/gs1typec.md)
+- [VNBarcodeCompositeType.gs1TypeC](./vnbarcodecompositetype/gs1typec.md)
   A type that represents trade items in varying quantity.
-- [VNBarcodeCompositeType.linked](vnbarcodecompositetype/linked.md)
+- [VNBarcodeCompositeType.linked](./vnbarcodecompositetype/linked.md)
   A type that represents a linked composite type.
-- [VNBarcodeCompositeType.none](vnbarcodecompositetype/none.md)
+- [VNBarcodeCompositeType.none](./vnbarcodecompositetype/none.md)
   A type that represents no composite type.
 ### Creating a Composite Type
-- [init?(rawValue: Int)](vnbarcodecompositetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./vnbarcodecompositetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VNDetectBarcodesRequest](vndetectbarcodesrequest.md)
+### Barcode detection
+- [class VNDetectBarcodesRequest](./vndetectbarcodesrequest.md)
   A request that detects barcodes in an image.
 
 

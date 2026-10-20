@@ -1,7 +1,8 @@
 # CSSMERR_AC_SERVICE_NOT_AVAILABLE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_AC_SERVICE_NOT_AVAILABLE: Int { get }
+```
+
+```c
+CSSMERR_AC_SERVICE_NOT_AVAILABLE
 ```
 
 

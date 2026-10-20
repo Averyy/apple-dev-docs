@@ -1,7 +1,8 @@
 # init(lightContentImage:darkContentImage:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image set with light and dark versions of an image.
 
@@ -14,6 +15,10 @@ Creates an image set with light and dark versions of an image.
 
 ```swift
 init(lightContentImage lightImage: UIImage, darkContentImage darkImage: UIImage)
+```
+
+```objc
+- (instancetype) initWithLightContentImage:(UIImage *) lightImage darkContentImage:(UIImage *) darkImage;
 ```
 
 #### Return Value

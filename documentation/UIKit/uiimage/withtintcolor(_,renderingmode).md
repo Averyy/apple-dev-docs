@@ -1,7 +1,8 @@
 # withTintColor(_:renderingMode:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of the image with a tint color that uses the specified rendering mode.
 
@@ -19,13 +20,17 @@ Returns a new version of the image with a tint color that uses the specified ren
 func withTintColor(_ color: UIColor, renderingMode: UIImage.RenderingMode) -> UIImage
 ```
 
+```objc
+- (UIImage *) imageWithTintColor:(UIColor *) color renderingMode:(UIImageRenderingMode) renderingMode;
+```
+
 #### Return Value
 
 A new version of the image that incorporates the specified tint color.
 
 #### Discussion
 
-For bitmap images, this method draws the background tint color followed by the image contents using the [`CGBlendMode.destinationIn`](https://developer.apple.com/documentation/coregraphics/cgblendmode/destinationin) mode. For symbol images, this method returns an image that always uses the specified tint color.
+For bitmap images, this method draws the background tint color followed by the image contents using the [`CGBlendMode.destinationIn`](../../CoreGraphics/cgblendmode/destinationin.md) mode. For symbol images, this method returns an image that always uses the specified tint color.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ For bitmap images, this method draws the background tint color followed by the i
 
 ## See Also
 
-- [func withTintColor(UIColor) -> UIImage](uiimage/withtintcolor(_:).md)
+### Tinting the image
+- [func withTintColor(UIColor) -> UIImage](./withtintcolor%28_%29.md)
   Returns a new version of the current image with the specified tint color.
 
 

@@ -1,7 +1,8 @@
 # autolaunchApplicationPath
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file system path of an application to launch automatically when this device is added.
 
@@ -14,11 +15,16 @@ The file system path of an application to launch automatically when this device 
 var autolaunchApplicationPath: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * autolaunchApplicationPath;
+```
+
 ## See Also
 
-- [var userData: NSMutableDictionary?](icdevice/userdata.md)
+### Configuring a Device’s Characteristics
+- [var userData: NSMutableDictionary?](./userdata.md)
   A bookkeeping object for client convenience.
-- [var isRemote: Bool](icdevice/isremote.md)
+- [var isRemote: Bool](./isremote.md)
   A Boolean value indicating whether the device is published by the Image Capture device-sharing facility.
 
 

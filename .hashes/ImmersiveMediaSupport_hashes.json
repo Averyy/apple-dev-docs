@@ -216,9 +216,8 @@
       "hash": "0107f3749654f126ba6578f800e66b532d84f1922f8a13a82ed6b001f8966841"
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh": {
-      "etag": "W/\"e80678ed0acd895c6f0c6a52c07a9a00\"",
       "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh.md",
-      "hash": "0479b5067af67889c69086e50e9a406ed09b8828c2322937a8f133bcc4ce1a64"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh(_:)": {
       "etag": "\"1cb9-65d55dcdadabe-df\"",
@@ -1501,9 +1500,8 @@
       "hash": "70d49edced2617c72cfe4f31321e7bf65555df11499b3e14e5d907875384c5f5"
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/calibrationtype/usdzmesh.json": {
-      "etag": "W/\"e80678ed0acd895c6f0c6a52c07a9a00\"",
       "file_path": "documentation/ImmersiveMediaSupport/immersivecameracalibration/calibrationtype/usdzmesh.md",
-      "hash": "0479b5067af67889c69086e50e9a406ed09b8828c2322937a8f133bcc4ce1a64"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/immersivemediasupport/immersivecameracalibration/cameraorigin.json": {
       "etag": "\"2f4c-65d55dcdcd112-df\"",
@@ -2562,6 +2560,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 512
   }
 }

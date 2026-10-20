@@ -1,7 +1,8 @@
 # hidden
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 By default, the system hides the item when the user views the file system.
 
@@ -18,15 +19,20 @@ By default, the system hides the item when the user views the file system.
 static var hidden: NSFileProviderFileSystemFlags { get }
 ```
 
+```c
+NSFileProviderFileSystemHidden
+```
+
 ## See Also
 
-- [static var userReadable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userreadable.md)
+### Flags
+- [static var userReadable: NSFileProviderFileSystemFlags](./userreadable.md)
   The user can read the item.
-- [static var userWritable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userwritable.md)
+- [static var userWritable: NSFileProviderFileSystemFlags](./userwritable.md)
   The user can modify the item.
-- [static var userExecutable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userexecutable.md)
+- [static var userExecutable: NSFileProviderFileSystemFlags](./userexecutable.md)
   The user can execute the item.
-- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/pathextensionhidden.md)
+- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](./pathextensionhidden.md)
   By default, the system hides the item’s extension when showing its filename.
 
 

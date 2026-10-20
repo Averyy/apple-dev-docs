@@ -1,7 +1,8 @@
 # AccessoryAnchor.TrackingState.positionOrientationTrackedLowAccuracy
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Both position and orientation are tracked, but with low accuracy.
 

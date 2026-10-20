@@ -1,7 +1,8 @@
 # AnimationEvents.PlaybackTerminated
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The event raised when an animation has been terminated, regardless of whether it ran to completion.
 
@@ -11,7 +12,7 @@ The event raised when an animation has been terminated, regardless of whether it
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,23 +23,24 @@ struct PlaybackTerminated
 ## Topics
 
 ### Instance Properties
-- [let playbackController: AnimationPlaybackController](animationevents/playbackterminated/playbackcontroller.md)
+- [let playbackController: AnimationPlaybackController](./playbackterminated/playbackcontroller.md)
   The animation playback controller managing the animation that triggered the event.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AnimationEvents.PlaybackStarted](animationevents/playbackstarted.md)
+### Recognizing animation events
+- [AnimationEvents.PlaybackStarted](./playbackstarted.md)
   The event raised when an animation has been started.
-- [AnimationEvents.PlaybackCompleted](animationevents/playbackcompleted.md)
+- [AnimationEvents.PlaybackCompleted](./playbackcompleted.md)
   The event raised when an animation reaches the end of its duration.
-- [AnimationEvents.PlaybackLooped](animationevents/playbacklooped.md)
+- [AnimationEvents.PlaybackLooped](./playbacklooped.md)
   The event raised when an animation loops.
 
 

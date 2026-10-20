@@ -1,7 +1,8 @@
 # floorNumber
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floor number on which the anchor resides.
 
@@ -16,15 +17,20 @@ The floor number on which the anchor resides.
 var floorNumber: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger floorNumber;
+```
+
 #### Discussion
 
 This property indicates the floor that the DL-TDOA anchor is on. Negative values represent floors below ground level.
 
-Use this property in combination with [`height`](nidltdoameasurement/floorelevation-swift.class/height.md) to determine the precise vertical position of the anchor within a floor, for deployments in buildings that have multiple floors.
+Use this property in combination with [`height`](./height.md) to determine the precise vertical position of the anchor within a floor, for deployments in buildings that have multiple floors.
 
 ## See Also
 
-- [var height: Double](nidltdoameasurement/floorelevation-swift.class/height.md)
+### Accessing floor elevation components
+- [var height: Double](./height.md)
   The height above the floor in meters.
 
 

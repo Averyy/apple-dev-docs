@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional array of media data associated with the extension item.
 
@@ -20,15 +21,28 @@ An optional array of media data associated with the extension item.
 var attachments: [NSItemProvider]? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSItemProvider *> * attachments;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) NSArray<NSItemProvider *> * attachments;
+```
+
 #### Discussion
 
-Populate this array with images, videos, URLs, and so on. It’s not meant to be an array of alternative data formats or types, but is instead a collection to include in a social media post, for example. These items are always typed [`NSItemProvider`](nsitemprovider.md).
+Populate this array with images, videos, URLs, and so on. It’s not meant to be an array of alternative data formats or types, but is instead a collection to include in a social media post, for example. These items are always typed [`NSItemProvider`](../nsitemprovider.md).
 
-> ❗ **Important**:  Alternatively, you can set attachments in the [`userInfo`](nsextensionitem/userinfo.md) dictionary using the [`NSExtensionItemAttachmentsKey`](nsextensionitemattachmentskey.md) key. However, setting the [`userInfo`](nsextensionitem/userinfo.md) dictionary after setting [`attachments`](nsextensionitem/attachments.md) will override this property.
+> ❗ **Important**:  Alternatively, you can set attachments in the [`userInfo`](./userinfo.md) dictionary using the [`NSExtensionItemAttachmentsKey`](../nsextensionitemattachmentskey.md) key. However, setting the [`userInfo`](./userinfo.md) dictionary after setting [`attachments`](./attachments.md) will override this property.
 
 ## See Also
 
-- [var attributedContentText: NSAttributedString?](nsextensionitem/attributedcontenttext.md)
+### Item Contents
+- [var attributedContentText: NSAttributedString?](./attributedcontenttext.md)
   An optional string describing the extension item content.
 
 

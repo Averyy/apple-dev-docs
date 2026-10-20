@@ -1,7 +1,8 @@
 # textFieldShouldClear(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to remove the text field’s current contents.
 
@@ -9,7 +10,7 @@ Asks the delegate whether to remove the text field’s current contents.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ Asks the delegate whether to remove the text field’s current contents.
 optional func textFieldShouldClear(_ textField: UITextField) -> Bool
 ```
 
+```objc
+- (BOOL) textFieldShouldClear:(UITextField *) textField;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text field’s contents should be cleared; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the text field’s contents should be cleared; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The text field calls this method in response to the user pressing the built-in clear button. (This button is not shown by default but can be enabled by changing the value in the [`clearButtonMode`](uitextfield/clearbuttonmode.md) property of the text field.) This method is also called when editing begins and the [`clearsOnBeginEditing`](uitextfield/clearsonbeginediting.md) property of the text field is set to [`true`](https://developer.apple.com/documentation/swift/true).
+The text field calls this method in response to the user pressing the built-in clear button. (This button is not shown by default but can be enabled by changing the value in the [`clearButtonMode`](../uitextfield/clearbuttonmode.md) property of the text field.) This method is also called when editing begins and the [`clearsOnBeginEditing`](../uitextfield/clearsonbeginediting.md) property of the text field is set to [`true`](../../Swift/true.md).
 
-If you do not implement this method, the text field clears the text as if the method had returned [`true`](https://developer.apple.com/documentation/swift/true).
+If you do not implement this method, the text field clears the text as if the method had returned [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -34,9 +39,10 @@ If you do not implement this method, the text field clears the text as if the me
 
 ## See Also
 
-- [func textFieldShouldReturn(UITextField) -> Bool](uitextfielddelegate/textfieldshouldreturn(_:).md)
+### Editing the text field’s text
+- [func textFieldShouldReturn(UITextField) -> Bool](./textfieldshouldreturn%28_%29.md)
   Asks the delegate whether to process the pressing of the Return button for the text field.
-- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](uitextfielddelegate/textfield(_:shouldchangecharactersin:replacementstring:).md)
+- [func textField(UITextField, shouldChangeCharactersIn: NSRange, replacementString: String) -> Bool](./textfield%28_,shouldchangecharactersin,replacementstring%29.md)
   Asks the delegate whether to change the specified text.
 
 

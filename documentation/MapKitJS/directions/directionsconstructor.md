@@ -1,7 +1,8 @@
 # new Directions(options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a directions object with options you provide.
 
@@ -10,15 +11,15 @@ Creates a directions object with options you provide.
 
 ## Declaration
 
-```swift
+```
 constructor(options?: DirectionsConstructorOptions);
 ```
 
 #### Discussion
 
-To request directions, create an instance of the [`Directions`](directions.md) object, then call the [`route()`](directions/route.md) function with a [`DirectionsRequest`](directionsrequest.md) object as the first parameter. The second parameter for [`route()`](directions/route.md) is a callback function, through which MapKit JS returns the directions response asynchronously.
+To request directions, create an instance of the [`Directions`](../directions.md) object, then call the [`route()`](./route.md) function with a [`DirectionsRequest`](../directionsrequest.md) object as the first parameter. The second parameter for [`route()`](./route.md) is a callback function, through which MapKit JS returns the directions response asynchronously.
 
-To return directions in a specific language, set [`language`](directionsconstructoroptions/language.md) in [`DirectionsConstructorOptions`](directionsconstructoroptions.md) when you create an instance of the [`Directions`](directions.md) object.
+To return directions in a specific language, set [`language`](../directionsconstructoroptions/language.md) in [`DirectionsConstructorOptions`](../directionsconstructoroptions.md) when you create an instance of the [`Directions`](../directions.md) object.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ To return directions in a specific language, set [`language`](directionsconstruc
 
 ## See Also
 
-- [interface DirectionsConstructorOptions](directionsconstructoroptions.md)
+### Creating a directions object
+- [interface DirectionsConstructorOptions](../directionsconstructoroptions.md)
   Options that you may provide when creating a directions object.
 
 

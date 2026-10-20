@@ -1,7 +1,8 @@
 # name
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name associated with the tile group rule.
 
@@ -20,13 +21,18 @@ A name associated with the tile group rule.
 var name: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var adjacency: SKTileAdjacencyMask](sktilegrouprule/adjacency.md)
+### Accessing or Setting Tile Group Rule Properties
+- [var adjacency: SKTileAdjacencyMask](./adjacency.md)
   The adjacency requirement for this rule.
-- [struct SKTileAdjacencyMask](sktileadjacencymask.md)
+- [struct SKTileAdjacencyMask](../sktileadjacencymask.md)
   An enumeration defining how neighboring tiles are automatically placed next to each other.
-- [var tileDefinitions: [SKTileDefinition]](sktilegrouprule/tiledefinitions.md)
+- [var tileDefinitions: [SKTileDefinition]](./tiledefinitions.md)
   The tile definitions used for this rule.
 
 

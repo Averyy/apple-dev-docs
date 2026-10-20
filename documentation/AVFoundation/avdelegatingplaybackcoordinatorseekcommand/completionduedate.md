@@ -1,7 +1,8 @@
 # completionDueDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The deadline by which the coordinator expects the delegate to handle the command.
 
@@ -19,13 +20,18 @@ The deadline by which the coordinator expects the delegate to handle the command
 var completionDueDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * completionDueDate;
+```
+
 ## See Also
 
-- [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorseekcommand/shouldbufferinanticipationofplayback.md)
+### Accessing command details
+- [var shouldBufferInAnticipationOfPlayback: Bool](./shouldbufferinanticipationofplayback.md)
   A Boolean value that indicates whether the player starts buffering in anticipation of a request to begin playback.
-- [var anticipatedPlaybackRate: Float](avdelegatingplaybackcoordinatorseekcommand/anticipatedplaybackrate.md)
+- [var anticipatedPlaybackRate: Float](./anticipatedplaybackrate.md)
   The rate at which the coordinator expects playback to resume.
-- [var itemTime: CMTime](avdelegatingplaybackcoordinatorseekcommand/itemtime.md)
+- [var itemTime: CMTime](./itemtime.md)
   The time to seek to in the item timeline.
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a table view from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a table view from data in an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a table view from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)](uitableviewcell/init(style:reuseidentifier:).md)
+### Creating a table view cell
+- [init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)](./init%28style,reuseidentifier%29.md)
   Initializes a table cell with a style and a reuse identifier and returns it to the caller.
-- [UITableViewCell.CellStyle](uitableviewcell/cellstyle.md)
+- [UITableViewCell.CellStyle](./cellstyle.md)
   An enumeration for the various styles of cells.
 
 

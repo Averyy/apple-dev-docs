@@ -1,7 +1,8 @@
 # hidesEmptyCells
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 6.0+
@@ -17,12 +18,17 @@
 var hidesEmptyCells: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL hidesEmptyCells;
+```
+
 ## See Also
 
-- [var numberOfColumns: Int](nstexttable/numberofcolumns.md)
-- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.property.md)
-- [var collapsesBorders: Bool](nstexttable/collapsesborders.md)
-- [NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum.md)
+### Configuring the table
+- [var numberOfColumns: Int](./numberofcolumns.md)
+- [var layoutAlgorithm: NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.property.md)
+- [var collapsesBorders: Bool](./collapsesborders.md)
+- [NSTextTable.LayoutAlgorithm](./layoutalgorithm-swift.enum.md)
 
 
 ---

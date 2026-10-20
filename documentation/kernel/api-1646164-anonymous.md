@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServiceFamilyOpenOptions](1646164-anonymous/kioservicefamilyopenoptions.md)
-- [kIOServiceSeize](1646164-anonymous/kioserviceseize.md)
+- [kIOServiceFamilyOpenOptions](./api-1646164-anonymous/kioservicefamilyopenoptions.md)
+- [kIOServiceSeize](./api-1646164-anonymous/kioserviceseize.md)
 
 
 ---

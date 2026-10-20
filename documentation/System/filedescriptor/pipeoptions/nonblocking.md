@@ -1,7 +1,8 @@
 # nonBlocking
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that all subsequent input and output operations on the pipe’s file descriptors will be nonblocking.
 

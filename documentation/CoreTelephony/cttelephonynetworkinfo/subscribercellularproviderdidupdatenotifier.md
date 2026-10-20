@@ -1,19 +1,26 @@
 # subscriberCellularProviderDidUpdateNotifier
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block dispatched when the user’s cellular service provider information changes.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
+- iOS 4.0+ - Deprecated in 12.0
+- iPadOS 4.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use [`serviceSubscriberCellularProvidersDidUpdateNotifier`](./servicesubscribercellularprovidersdidupdatenotifier.md) instead.
 
 ## Declaration
 
 ```swift
 var subscriberCellularProviderDidUpdateNotifier: ((CTCarrier) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^)(CTCarrier *) subscriberCellularProviderDidUpdateNotifier;
 ```
 
 #### Discussion
@@ -24,15 +31,16 @@ To handle changes in cellular service provider information, define a block in yo
 
 ## See Also
 
-- [var currentRadioAccessTechnology: String?](cttelephonynetworkinfo/currentradioaccesstechnology.md)
+### Deprecated
+- [var currentRadioAccessTechnology: String?](./currentradioaccesstechnology.md)
   The current radio access technology registered with the device.
-- [var subscriberCellularProvider: CTCarrier?](cttelephonynetworkinfo/subscribercellularprovider.md)
+- [var subscriberCellularProvider: CTCarrier?](./subscribercellularprovider.md)
   Information about the user’s cellular service provider.
-- [var serviceSubscriberCellularProviders: [String : CTCarrier]?](cttelephonynetworkinfo/servicesubscribercellularproviders.md)
+- [var serviceSubscriberCellularProviders: [String : CTCarrier]?](./servicesubscribercellularproviders.md)
   A dictionary that contains carrier information about each service.
-- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md)
+- [var serviceSubscriberCellularProvidersDidUpdateNotifier: ((String) -> Void)?](./servicesubscribercellularprovidersdidupdatenotifier.md)
   A block dispatched when there are updates to the user’s cellular provider information for any service.
-- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
+- [static let CTRadioAccessTechnologyDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/ctradioaccesstechnologydidchange.md)
   The name of the notification indicating that the radio access technology changed for one of the services.
 
 

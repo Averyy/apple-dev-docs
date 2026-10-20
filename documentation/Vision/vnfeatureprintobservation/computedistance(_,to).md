@@ -1,7 +1,8 @@
 # computeDistance(_:to:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the distance between two feature print observations.
 
@@ -17,6 +18,10 @@ Computes the distance between two feature print observations.
 
 ```swift
 func computeDistance(_ outDistance: UnsafeMutablePointer<Float>, to featurePrint: VNFeaturePrintObservation) throws
+```
+
+```objc
+- (BOOL) computeDistance:(float *) outDistance toFeaturePrintObservation:(VNFeaturePrintObservation *) featurePrint error:(NSError **) error;
 ```
 
 #### Discussion

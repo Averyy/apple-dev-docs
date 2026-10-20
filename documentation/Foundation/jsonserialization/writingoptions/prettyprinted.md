@@ -1,7 +1,8 @@
 # prettyPrinted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the output uses white space and indentation to make the resulting data more readable.
 
@@ -20,17 +21,22 @@ Specifies that the output uses white space and indentation to make the resulting
 static var prettyPrinted: JSONSerialization.WritingOptions { get }
 ```
 
+```c
+NSJSONWritingPrettyPrinted
+```
+
 #### Discussion
 
 If this option isn’t set, the serialization generates the most compact possible JSON representation.
 
 ## See Also
 
-- [static var fragmentsAllowed: JSONSerialization.WritingOptions](jsonserialization/writingoptions/fragmentsallowed.md)
+### Formatting JSON
+- [static var fragmentsAllowed: JSONSerialization.WritingOptions](./fragmentsallowed.md)
   Specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
-- [static var sortedKeys: JSONSerialization.WritingOptions](jsonserialization/writingoptions/sortedkeys.md)
+- [static var sortedKeys: JSONSerialization.WritingOptions](./sortedkeys.md)
   Specifies that the output sorts keys in lexicographic order.
-- [static var withoutEscapingSlashes: JSONSerialization.WritingOptions](jsonserialization/writingoptions/withoutescapingslashes.md)
+- [static var withoutEscapingSlashes: JSONSerialization.WritingOptions](./withoutescapingslashes.md)
   Specifies that the output doesn’t prefix slash characters with escape characters.
 
 

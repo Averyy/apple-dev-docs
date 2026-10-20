@@ -1,7 +1,8 @@
 # ExchangeActiveSync.CommunicationServiceRules
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The communication service rules.
 
@@ -13,14 +14,14 @@ The communication service rules.
 
 ## Declaration
 
-```swift
+```
 object ExchangeActiveSync.CommunicationServiceRules
 ```
 
 ## Topics
 
 ### Objects
-- [object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers](exchangeactivesync/communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
+- [object ExchangeActiveSync.CommunicationServiceRules.DefaultServiceHandlers](./communicationservicerules-data.dictionary/defaultservicehandlers-data.dictionary.md)
   The default service handlers.
 
 ## Properties

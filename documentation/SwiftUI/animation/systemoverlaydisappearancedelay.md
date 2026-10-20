@@ -1,7 +1,8 @@
 # systemOverlayDisappearanceDelay
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The length of time system overlays remain visible before disappearing.
 

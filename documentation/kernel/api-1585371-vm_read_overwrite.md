@@ -1,22 +1,24 @@
 # vm_read_overwrite
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t vm_read_overwrite(vm_map_read_t target_task, vm_address_t address, vm_size_t size, vm_address_t data, vm_size_t *outsize);
 ```
 
 ## See Also
 
-- [vm_read](1585350-vm_read.md)
-- [vm_read_list](1585516-vm_read_list.md)
-- [vm_write](1585462-vm_write.md)
+### Reads and Writes
+- [vm_read](./api-1585350-vm_read.md)
+- [vm_read_list](./api-1585516-vm_read_list.md)
+- [vm_write](./api-1585462-vm_write.md)
 
 
 ---

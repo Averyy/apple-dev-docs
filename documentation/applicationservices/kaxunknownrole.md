@@ -1,7 +1,8 @@
 # kAXUnknownRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Generic role value for an unknown accessibility object.
 
@@ -12,6 +13,10 @@ Generic role value for an unknown accessibility object.
 
 ```swift
 var kAXUnknownRole: String { get }
+```
+
+```c
+#define kAXUnknownRole
 ```
 
 

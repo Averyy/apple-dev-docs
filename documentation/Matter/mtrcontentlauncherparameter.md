@@ -1,7 +1,8 @@
 # MTRContentLauncherParameter
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,38 +19,42 @@
 enum MTRContentLauncherParameter
 ```
 
+```c
+enum MTRContentLauncherParameter : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRContentLauncherParameter.actor](mtrcontentlauncherparameter/actor.md)
-- [MTRContentLauncherParameter.channel](mtrcontentlauncherparameter/channel.md)
-- [MTRContentLauncherParameter.character](mtrcontentlauncherparameter/character.md)
-- [MTRContentLauncherParameter.director](mtrcontentlauncherparameter/director.md)
-- [MTRContentLauncherParameter.event](mtrcontentlauncherparameter/event.md)
-- [MTRContentLauncherParameter.franchise](mtrcontentlauncherparameter/franchise.md)
-- [MTRContentLauncherParameter.genre](mtrcontentlauncherparameter/genre.md)
-- [MTRContentLauncherParameter.league](mtrcontentlauncherparameter/league.md)
-- [MTRContentLauncherParameter.popularity](mtrcontentlauncherparameter/popularity.md)
-- [MTRContentLauncherParameter.provider](mtrcontentlauncherparameter/provider.md)
-- [MTRContentLauncherParameter.sport](mtrcontentlauncherparameter/sport.md)
-- [MTRContentLauncherParameter.sportsTeam](mtrcontentlauncherparameter/sportsteam.md)
-- [MTRContentLauncherParameter.type](mtrcontentlauncherparameter/type.md)
-- [MTRContentLauncherParameter.video](mtrcontentlauncherparameter/video.md)
-- [MTRContentLauncherParameter.any](mtrcontentlauncherparameter/any.md)
-- [MTRContentLauncherParameter.episode](mtrcontentlauncherparameter/episode.md)
-- [MTRContentLauncherParameter.season](mtrcontentlauncherparameter/season.md)
+- [MTRContentLauncherParameter.actor](./mtrcontentlauncherparameter/actor.md)
+- [MTRContentLauncherParameter.channel](./mtrcontentlauncherparameter/channel.md)
+- [MTRContentLauncherParameter.character](./mtrcontentlauncherparameter/character.md)
+- [MTRContentLauncherParameter.director](./mtrcontentlauncherparameter/director.md)
+- [MTRContentLauncherParameter.event](./mtrcontentlauncherparameter/event.md)
+- [MTRContentLauncherParameter.franchise](./mtrcontentlauncherparameter/franchise.md)
+- [MTRContentLauncherParameter.genre](./mtrcontentlauncherparameter/genre.md)
+- [MTRContentLauncherParameter.league](./mtrcontentlauncherparameter/league.md)
+- [MTRContentLauncherParameter.popularity](./mtrcontentlauncherparameter/popularity.md)
+- [MTRContentLauncherParameter.provider](./mtrcontentlauncherparameter/provider.md)
+- [MTRContentLauncherParameter.sport](./mtrcontentlauncherparameter/sport.md)
+- [MTRContentLauncherParameter.sportsTeam](./mtrcontentlauncherparameter/sportsteam.md)
+- [MTRContentLauncherParameter.type](./mtrcontentlauncherparameter/type.md)
+- [MTRContentLauncherParameter.video](./mtrcontentlauncherparameter/video.md)
+- [MTRContentLauncherParameter.any](./mtrcontentlauncherparameter/any.md)
+- [MTRContentLauncherParameter.episode](./mtrcontentlauncherparameter/episode.md)
+- [MTRContentLauncherParameter.season](./mtrcontentlauncherparameter/season.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcontentlauncherparameter/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcontentlauncherparameter/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

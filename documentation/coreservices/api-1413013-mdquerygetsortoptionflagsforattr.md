@@ -1,7 +1,8 @@
 # MDQueryGetSortOptionFlagsForAttribute(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDQueryGetSortOptionFlagsForAttribute(_ query: MDQuery!, _ fieldName: CFString!) -> UInt32
+```
+
+```c
+uint32_t MDQueryGetSortOptionFlagsForAttribute(MDQueryRef query, CFStringRef fieldName);
 ```
 
 

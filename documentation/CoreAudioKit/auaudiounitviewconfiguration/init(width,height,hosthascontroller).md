@@ -1,7 +1,8 @@
 # init(width:height:hostHasController:)
 
 **Framework**: CoreAudioKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new configuration object.
 
@@ -16,6 +17,10 @@ Creates a new configuration object.
 
 ```swift
 init(width: CGFloat, height: CGFloat, hostHasController: Bool)
+```
+
+```objc
+- (instancetype) initWithWidth:(CGFloat) width height:(CGFloat) height hostHasController:(BOOL) hostHasController;
 ```
 
 ## Parameters

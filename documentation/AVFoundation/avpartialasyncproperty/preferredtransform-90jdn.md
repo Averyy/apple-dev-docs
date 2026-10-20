@@ -1,7 +1,8 @@
 # preferredTransform
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The track’s transform preference to apply to its visual content during presentation or processing.
 
@@ -20,13 +21,16 @@ The track’s transform preference to apply to its visual content during present
 static var preferredTransform: AVAsyncProperty<Root, CGAffineTransform> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [static var naturalSize: AVAsyncProperty<Root, CGSize>](avpartialasyncproperty/naturalsize.md)
+### Loading visual characteristics
+- [static var naturalSize: AVAsyncProperty<Root, CGSize>](./naturalsize.md)
   The natural dimensions of the media data that the track references.
 
 

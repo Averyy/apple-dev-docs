@@ -1,7 +1,8 @@
 # userString
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Text included in a response sent over SMS.
 
@@ -17,15 +18,20 @@ Text included in a response sent over SMS.
 var userString: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * userString;
+```
+
 #### Discussion
 
 Use this property if you set the `ILClassificationExtensionSMSReportDestination` key in the extension’s `Info.plist` file. The string can store additional data that you want to pass in the SMS message.
 
 ## See Also
 
-- [var action: ILClassificationAction](ilclassificationresponse/action.md)
+### Accessing Data
+- [var action: ILClassificationAction](./action.md)
   A classification that determines what action the system takes.
-- [var userInfo: [String : Any]?](ilclassificationresponse/userinfo.md)
+- [var userInfo: [String : Any]?](./userinfo.md)
   JSON data included in a response sent over the network.
 
 

@@ -1,12 +1,13 @@
 # NSRulerView.Orientation.horizontalRuler
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ruler is oriented horizontally.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Ruler is oriented horizontally.
 case horizontalRuler
 ```
 
+```c
+NSHorizontalRuler
+```
+
 ## See Also
 
-- [NSRulerView.Orientation.verticalRuler](nsrulerview/orientation-swift.enum/verticalruler.md)
+### Constants
+- [NSRulerView.Orientation.verticalRuler](./verticalruler.md)
   Ruler is oriented vertically.
 
 

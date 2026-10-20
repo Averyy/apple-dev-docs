@@ -1,7 +1,8 @@
 # init(items:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a gravity behavior with an array of dynamic items.
 
@@ -9,13 +10,17 @@ Initializes a gravity behavior with an array of dynamic items.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(items: [any UIDynamicItem])
+```
+
+```objc
+- (instancetype) initWithItems:(NSArray<id<UIDynamicItem>> *) items;
 ```
 
 #### Return Value

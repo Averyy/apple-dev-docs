@@ -1,7 +1,8 @@
 # bmAttributes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A bit mask indicating the configuration’s characteristics.
 
@@ -10,25 +11,26 @@ A bit mask indicating the configuration’s characteristics.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bmAttributes;
 ```
 
 ## See Also
 
-- [bLength](iousbconfigurationdescriptor/1546137-blength.md)
+### Getting the Properties
+- [bLength](./api-1546137-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbconfigurationdescriptor/1546155-bdescriptortype.md)
+- [bDescriptorType](./api-1546155-bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbconfigurationdescriptor/1546253-wtotallength.md)
+- [wTotalLength](./api-1546253-wtotallength.md)
   The total length of the descriptor, including the length of all related interface, endpoint, and vendor-specific descriptors.
-- [bNumInterfaces](iousbconfigurationdescriptor/1546162-bnuminterfaces.md)
+- [bNumInterfaces](./api-1546162-bnuminterfaces.md)
   The number of interfaces this configuration supports.
-- [bConfigurationValue](iousbconfigurationdescriptor/1546567-bconfigurationvalue.md)
+- [bConfigurationValue](./api-1546567-bconfigurationvalue.md)
   The value to use when selecting this configuration.
-- [iConfiguration](iousbconfigurationdescriptor/1546218-iconfiguration.md)
+- [iConfiguration](./api-1546218-iconfiguration.md)
   The index of the string descriptor that describes this configuration.
-- [MaxPower](iousbconfigurationdescriptor/1545938-maxpower.md)
+- [MaxPower](./api-1545938-maxpower.md)
   The maximum power consumption of the USB device expressed in 2 milliamp units.
 
 

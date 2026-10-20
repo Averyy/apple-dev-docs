@@ -1,6 +1,8 @@
 # Displaying low-latency connected video
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [DisplayingLowLatencyConnectedVideo.zip](https://docs-assets.developer.apple.com/published/2b94902c740c/DisplayingLowLatencyConnectedVideo.zip)
 
 Render connected camera feeds in visionOS with minimal latency.
 
@@ -10,20 +12,20 @@ Render connected camera feeds in visionOS with minimal latency.
 
 #### Overview
 
-Your visionOS app can access video from USB Video Class (UVC) devices connected with the Developer Strap for Apple Vision Pro. You can use [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) to capture and display connected camera feeds, as demonstrated in [`Displaying video from connected devices`](https://developer.apple.com/documentation/visionos/displaying-video-from-connected-devices). Although this sample captures from a UVC device, you can apply the same low-latency rendering technique to video frames from other sources, such as a wireless camera stream.
+Your visionOS app can access video from USB Video Class (UVC) devices connected with the Developer Strap for Apple Vision Pro. You can use [AVFoundation](../AVFoundation/AVFoundation.md) to capture and display connected camera feeds, as demonstrated in [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md). Although this sample captures from a UVC device, you can apply the same low-latency rendering technique to video frames from other sources, such as a wireless camera stream.
 
 This sample code shows you how to combine AVFoundation with additional frameworks to render connected video with lower latency and support for stereoscopic cameras:
 
-- **[`Core Image`](https://developer.apple.com/documentation/coreimage)**: Converts camera pixel buffers into Metal textures.
-- **[`Metal`](https://developer.apple.com/documentation/metal)**: Provides GPU-private shared textures that avoid data copies.
-- **[`RealityKit`](RealityKit.md)**: Displays textures in your scene using low-level textures and device resources.
-- **[`ShaderGraph`](https://developer.apple.com/documentation/shadergraph)**: Combines left and right eye textures into a single material for stereoscopic display.
+- **[Core Image](../CoreImage/CoreImage.md)**: Converts camera pixel buffers into Metal textures.
+- **[Metal](../Metal/Metal.md)**: Provides GPU-private shared textures that avoid data copies.
+- **[RealityKit](./RealityKit.md)**: Displays textures in your scene using low-level textures and device resources.
+- **[ShaderGraph](../ShaderGraph/ShaderGraph.md)**: Combines left and right eye textures into a single material for stereoscopic display.
 
-This article uses [`LowLevelTexture`](lowleveltexture.md) and [`LowLevelDeviceResource`](lowleveldeviceresource.md) resources, which improve rendering latency for camera feeds. The technique works for both mono and stereo camera images.
+This article uses [`LowLevelTexture`](./lowleveltexture.md) and [`LowLevelDeviceResource`](./lowleveldeviceresource.md) resources, which improve rendering latency for camera feeds. The technique works for both mono and stereo camera images.
 
 > **Note**: Displaying low-latency connected camera feeds is not supported in the simulator.
 
-#### Review the Rendering Pipeline
+#### Review the rendering pipeline
 
 The low-latency rendering pipeline consists of four main components:
 
@@ -34,7 +36,7 @@ The low-latency rendering pipeline consists of four main components:
 
 This architecture minimizes latency by using shared texture handles to avoid copying data between Metal and RealityKit. It renders directly to GPU-private memory and signals frame updates efficiently through device resource replacement.
 
-#### Create Shared Textures for Low Latency Rendering
+#### Create shared textures for low-latency rendering
 
 Create a `CameraFeedSharedTexture` class that manages the low-level textures and their associated device resources. This class bridges Metal and RealityKit by creating shared texture handles that both frameworks can access.
 
@@ -116,9 +118,9 @@ final class CameraFeedSharedTexture {
 
 The `TextureConfiguration` enumeration stores either a single texture set for mono cameras or separate left and right texture sets for stereo cameras. Each texture set contains a Metal texture for rendering and a RealityKit low-level texture for display. Each texture set also includes two device resources that signal updates.
 
-#### Initialize Low Level Textures with Shared Texture Handles
+#### Initialize low-level textures with shared texture handles
 
-Create a method to initialize the [`LowLevelTexture`](lowleveltexture.md) using a shared Metal texture handle. This allows both Metal (for rendering) and RealityKit (for display) to access the same texture memory without copying data.
+Create a method to initialize the [`LowLevelTexture`](./lowleveltexture.md) using a shared Metal texture handle. This allows both Metal (for rendering) and RealityKit (for display) to access the same texture memory without copying data.
 
 ```swift
 private static func createSharedTexture(
@@ -173,10 +175,10 @@ private static func createSharedTexture(
 
 The `createSharedTexture` method:
 
-- Creates matching [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) and [`LowLevelTexture`](lowleveltexture.md) objects with identical pixel formats and dimensions. The storage mode must be [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private) to create shared textures that reside entirely in GPU memory.
+- Creates matching [`MTLTexture`](../Metal/mtltexture.md) and [`LowLevelTexture`](./lowleveltexture.md) objects with identical pixel formats and dimensions. The storage mode must be [`MTLStorageMode.private`](../Metal/mtlstoragemode/private.md) to create shared textures that reside entirely in GPU memory.
 - Creates two separate device resource instances from the same shared texture handle. You use these to signal frame updates to RealityKit.
 
-#### Signal Frame Updates By Toggling Device Resources
+#### Signal frame updates by toggling device resources
 
 Create a method that alternates between two device resources on each frame. This signals to RealityKit that the texture content has changed and needs redrawing:
 
@@ -212,9 +214,9 @@ func replaceTexture() {
 
 RealityKit updates the display each time you call `replace(deviceResource:)`, even though both device resources point to the same underlying shared texture. This mechanism ensures frame-accurate updates without copying texture data. Call this method before rendering each new camera frame.
 
-#### Create an Entity to Display Camera Textures
+#### Create an entity to display camera textures
 
-Create [`Entity`](entity.md) factory methods that build camera feed entities for your scene. For mono cameras, use [`UnlitMaterial`](unlitmaterial.md) with a single texture. For stereo cameras, use [`ShaderGraphMaterial`](shadergraphmaterial.md) that combines left and right eye textures:
+Create [`Entity`](./entity.md) factory methods that build camera feed entities for your scene. For mono cameras, use [`UnlitMaterial`](./unlitmaterial.md) with a single texture. For stereo cameras, use [`ShaderGraphMaterial`](./shadergraphmaterial.md) that combines left and right eye textures:
 
 ```swift
 extension Entity {
@@ -269,11 +271,11 @@ extension Entity {
 }
 ```
 
-The `makeCameraFeed(texture:width:height:)` method creates a plane with an unlit material displaying the camera texture. The `makeStereoCameraFeed(leftEyeTexture:rightEyeTexture:width:height:material:)` method assigns separate textures to a shader graph material’s left and right eye parameters. This enables proper stereo presentation in visionOS. To learn how the app uses [`ShaderGraphMaterial`](shadergraphmaterial.md) to render stereo images, see [`Displaying a stereoscopic image`](https://developer.apple.com/documentation/visionos/displaying-a-stereoscopic-image-in-visionos).
+The `makeCameraFeed(texture:width:height:)` method creates a plane with an unlit material displaying the camera texture. The `makeStereoCameraFeed(leftEyeTexture:rightEyeTexture:width:height:material:)` method assigns separate textures to a shader graph material’s left and right eye parameters. This enables proper stereo presentation in visionOS. To learn how the app uses [`ShaderGraphMaterial`](./shadergraphmaterial.md) to render stereo images, see [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md).
 
-#### Add the Camera Feed Entity to Your Scene
+#### Add the camera feed entity to your scene
 
-Create a [`RealityView`](realityview.md) that reads the shared texture from the renderer, builds the appropriate camera feed entity, and adds it to the scene:
+Create a [`RealityView`](./realityview.md) that reads the shared texture from the renderer, builds the appropriate camera feed entity, and adds it to the scene:
 
 ```swift
 RealityView { content in
@@ -319,9 +321,9 @@ RealityView { content in
 
 The code calculates plane dimensions based on the camera’s aspect ratio. For stereo cameras, it divides the texture width by two because the camera provides side-by-side stereo images in a single buffer. The code then calls the appropriate factory method to create either a mono or stereo entity depending on the texture configuration.
 
-#### Render Pixel Buffers to Textures
+#### Render pixel buffers to textures
 
-Use Core Image to convert incoming [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) frames to Metal textures. Create a Metal command buffer and use [`CIRenderDestination`](https://developer.apple.com/documentation/coreimage/cirenderdestination) to render directly to the shared texture.
+Use Core Image to convert incoming [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) frames to Metal textures. Create a Metal command buffer and use [`CIRenderDestination`](../CoreImage/cirenderdestination.md) to render directly to the shared texture.
 
 ```swift
 func renderWithCoreImage(
@@ -398,9 +400,9 @@ private func renderImage(
 
 Core Image handles color space conversion automatically, transforming YCbCr camera data to RGB for display. For stereo cameras, the code crops the side-by-side stereo image into separate left and right images before rendering each to its respective texture. The `replaceTexture()` call toggles the device resource before rendering, ensuring RealityKit detects the new frame.
 
-#### Process Camera Frames From the Capture Session
+#### Process camera frames from the capture session
 
-Extract the pixel buffer from each [`CMSampleBuffer`](https://developer.apple.com/documentation/coremedia/cmsamplebuffer) you receive from the camera capture session and send it to the renderer:
+Extract the pixel buffer from each [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) you receive from the camera capture session and send it to the renderer:
 
 ```swift
 private func processFrame(_ sampleBuffer: CMSampleBuffer) {

@@ -1,7 +1,8 @@
 # init(eoFill:antialiased:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new fill style with the specified settings.
 

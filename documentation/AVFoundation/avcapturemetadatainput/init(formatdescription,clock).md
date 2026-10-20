@@ -1,7 +1,8 @@
 # init(formatDescription:clock:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates capture metadata input to provide timed groups to a capture session.
 
@@ -17,10 +18,14 @@ Creates capture metadata input to provide timed groups to a capture session.
 init(formatDescription desc: CMMetadataFormatDescription, clock: CMClock)
 ```
 
+```objc
+- (instancetype) initWithFormatDescription:(CMMetadataFormatDescriptionRef) desc clock:(CMClockRef) clock;
+```
+
 ## Parameters
 
-- `desc`: A [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) that defines the metadata to be supplied by the client. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `NULL` is passed.
-- `clock`: A [`CMClock`](https://developer.apple.com/documentation/coremedia/cmclock) that provides the timebase for the supplied samples. Throws [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if `NULL` is passed.
+- `desc`: A [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) that defines the metadata to be supplied by the client. Throws [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if `NULL` is passed.
+- `clock`: A [`CMClock`](../../CoreMedia/cmclock.md) that provides the timebase for the supplied samples. Throws [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if `NULL` is passed.
 
 
 ---

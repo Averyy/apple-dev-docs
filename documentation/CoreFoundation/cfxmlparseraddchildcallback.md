@@ -1,12 +1,13 @@
 # CFXMLParserAddChildCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback function invoked by the parser to notify your application of parent/child relationships between XML structures.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ Callback function invoked by the parser to notify your application of parent/chi
 typealias CFXMLParserAddChildCallBack = (CFXMLParser?, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFXMLParser *, void *, void *, void *) CFXMLParserAddChildCallBack;
+```
+
 #### Discussion
 
-If the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) function returns NULL for a given structure, that structure is omitted entirely, and this callback will *not* be called for either a NULL child or parent.
+If the [`CFXMLParserCreateXMLStructureCallBack`](./cfxmlparsercreatexmlstructurecallback.md) function returns NULL for a given structure, that structure is omitted entirely, and this callback will *not* be called for either a NULL child or parent.
 
 ## Parameters
 
 - `parser`: The CFXMLParser object making the callback.
-- `parent`: The program-defined value representing the XML element to whom `child` is being added. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
-- `child`: The program-defined value representing the XML element that is being added to `parent`. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
-- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](cfxmlparsercontext.md) structure when creating the parser.
+- `parent`: The program-defined value representing the XML element to whom `child` is being added. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](./cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
+- `child`: The program-defined value representing the XML element that is being added to `parent`. This value was returned by the [`CFXMLParserCreateXMLStructureCallBack`](./cfxmlparsercreatexmlstructurecallback.md) callback when this element’s open tag was detected.
+- `info`: The program-defined context data you specified in the [`CFXMLParserContext`](./cfxmlparsercontext.md) structure when creating the parser.
 
 ## See Also
 
-- [typealias CFXMLParserCopyDescriptionCallBack](cfxmlparsercopydescriptioncallback.md)
+### Callbacks
+- [typealias CFXMLParserCopyDescriptionCallBack](./cfxmlparsercopydescriptioncallback.md)
   Callback function invoked by the parser when handling the information pointer.
-- [typealias CFXMLParserCreateXMLStructureCallBack](cfxmlparsercreatexmlstructurecallback.md)
+- [typealias CFXMLParserCreateXMLStructureCallBack](./cfxmlparsercreatexmlstructurecallback.md)
   Callback function invoked when the parser encounters an XML open tag.
-- [typealias CFXMLParserEndXMLStructureCallBack](cfxmlparserendxmlstructurecallback.md)
+- [typealias CFXMLParserEndXMLStructureCallBack](./cfxmlparserendxmlstructurecallback.md)
   Callback function invoked by the parser to notify your application that an XML structure (and all its children) have been completely parsed.
-- [typealias CFXMLParserHandleErrorCallBack](cfxmlparserhandleerrorcallback.md)
+- [typealias CFXMLParserHandleErrorCallBack](./cfxmlparserhandleerrorcallback.md)
   Callback function invoked by the parser to notify your application that an error has occurred.
-- [typealias CFXMLParserReleaseCallBack](cfxmlparserreleasecallback.md)
+- [typealias CFXMLParserReleaseCallBack](./cfxmlparserreleasecallback.md)
   Callback function invoked by the parser when it wants to release a reference to the information pointer.
-- [typealias CFXMLParserResolveExternalEntityCallBack](cfxmlparserresolveexternalentitycallback.md)
+- [typealias CFXMLParserResolveExternalEntityCallBack](./cfxmlparserresolveexternalentitycallback.md)
   Callback function invoked by the parser to notify your application that an external entity has been referenced.
-- [typealias CFXMLParserRetainCallBack](cfxmlparserretaincallback.md)
+- [typealias CFXMLParserRetainCallBack](./cfxmlparserretaincallback.md)
   Callback function invoked by the parser when it needs another reference to the information pointer.
 
 

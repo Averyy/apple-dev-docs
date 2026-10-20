@@ -1,7 +1,8 @@
 # minimumInteritemSpacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum spacing (in points) to use between items in the same row or column.
 
@@ -14,6 +15,10 @@ The minimum spacing (in points) to use between items in the same row or column.
 var minimumInteritemSpacing: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat minimumInteritemSpacing;
+```
+
 #### Discussion
 
 For a vertically scrolling layout, the value represents the minimum spacing between items in the same row. For a horizontally scrolling layout, the value represents the minimum spacing between items in the same column. The layout object uses this spacing only to compute how many items can fit in a single row or column. The actual spacing may be increased after the number of items has been determined.
@@ -22,9 +27,10 @@ The default value of this property is `0.0`.
 
 ## See Also
 
-- [var minimumLineSpacing: CGFloat](nscollectionviewgridlayout/minimumlinespacing.md)
+### Specifying the Grid Layout Attributes
+- [var minimumLineSpacing: CGFloat](./minimumlinespacing.md)
   The minimum spacing (in points) to use between rows or columns.
-- [var margins: NSEdgeInsets](nscollectionviewgridlayout/margins.md)
+- [var margins: NSEdgeInsets](./margins.md)
   The amount of empty space (in points) around the grid’s content.
 
 

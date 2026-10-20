@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the given attributes on an item.
@@ -12,14 +13,22 @@ Sets the given attributes on an item.
 ## Declaration
 
 ```swift
+func setAttributes(_ newAttributes: FSItem.SetAttributesRequest, on item: FSItem, context: FSContext, replyHandler reply: @escaping @Sendable (FSSetAttributesResult?, (any Error)?) -> Void)
+```
+
+```swift
 func setAttributes(_ newAttributes: FSItem.SetAttributesRequest, on item: FSItem, context: FSContext) async throws -> FSSetAttributesResult
+```
+
+```objc
+- (void) setAttributes:(FSItemSetAttributesRequest *) newAttributes onItem:(FSItem *) item context:(FSContext *) context replyHandler:(void (^)(FSSetAttributesResult *result, NSError *error)) reply;
 ```
 
 #### Discussion
 
 Several attributes are considered “read-only”, and an attempt to set these attributes results in an error with the code `EINVAL`.
 
-A request may set [`size`](fsitem/attributes/size.md) beyond the end of the file. If the underlying file system doesn’t support sparse files, allocate space to fill the new file size. Either fill this space with zeroes, or configure it to read as zeroes.
+A request may set [`size`](../../fsitem/attributes/size.md) beyond the end of the file. If the underlying file system doesn’t support sparse files, allocate space to fill the new file size. Either fill this space with zeroes, or configure it to read as zeroes.
 
 If a request sets the file size below the current end-of-file, truncate the file and return any unused space to the file system as free space.
 
@@ -32,19 +41,20 @@ If the caller attempts to set an attribute not supported by the on-disk file sys
 - `newAttributes`: A request containing the attributes to set.
 - `item`: The item on which to set the attributes.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
-- `reply`: A block or closure to indicate success or failure. If setting attributes succeeds, pass an instance of [`FSSetAttributesResult`](fssetattributesresult.md) containing the item’s updated attributes and the volume’s updated free space, along with a `nil` error. If setting attributes fails, pass the relevant error as the second parameter; FSKit ignores the [`FSSetAttributesResult`](fssetattributesresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
+- `reply`: A block or closure to indicate success or failure. If setting attributes succeeds, pass an instance of [`FSSetAttributesResult`](../../fssetattributesresult.md) containing the item’s updated attributes and the volume’s updated free space, along with a `nil` error. If setting attributes fails, pass the relevant error as the second parameter; FSKit ignores the [`FSSetAttributesResult`](../../fssetattributesresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 
-- [func getAttributes(FSItem.GetAttributesRequest, of: FSItem, context: FSContext, replyHandler: (FSGetAttributesResult?, (any Error)?) -> Void)](fsvolume/handler/getattributes(_:of:context:replyhandler:).md)
+### Working with attributes
+- [func getAttributes(FSItem.GetAttributesRequest, of: FSItem, context: FSContext, replyHandler: (FSGetAttributesResult?, (any Error)?) -> Void)](./getattributes%28_,of,context,replyhandler%29.md)
   Fetches attributes for the given item.
-- [FSItem.GetAttributesRequest](fsitem/getattributesrequest.md)
+- [FSItem.GetAttributesRequest](../../fsitem/getattributesrequest.md)
   A request to get attributes from an item.
-- [class FSGetAttributesResult](fsgetattributesresult.md)
+- [class FSGetAttributesResult](../../fsgetattributesresult.md)
   The result of a get-attributes call.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSSetAttributesResult](fssetattributesresult.md)
+- [class FSSetAttributesResult](../../fssetattributesresult.md)
   The restlt of a set-attributes call.
 
 

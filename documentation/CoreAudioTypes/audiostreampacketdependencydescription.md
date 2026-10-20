@@ -1,7 +1,8 @@
 # AudioStreamPacketDependencyDescription
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -18,31 +19,35 @@
 struct AudioStreamPacketDependencyDescription
 ```
 
+```c
+struct AudioStreamPacketDependencyDescription;
+```
+
 #### Overview
 
 A structure to provide a description of the dependencies of one audio packet on other audio packets.
 
-```None
+```
                 1 if the packet is independently decodable, 0 otherwise.
 ```
 
-```None
+```
                 The count of packets that must be decoded after this packet in order to refresh the decoder,
                 if the packet is independently decodable.  This value should be ignored if
                 ``mIsIndependentlyDecodable`` is 0.
 ```
 
-```None
+```
                 Currently unused.
 ```
 
-```None
+```
                 Reserved for future use.
 ```
 
-For independently decodable packets, the [`mPreRollCount`](audiostreampacketdependencydescription/mprerollcount.md) indicates how many additional packets need to be decoded after this packet in order for the decoder to start returning optimal output, if this is the first packet decoded since the decoder was initialized.
+For independently decodable packets, the [`mPreRollCount`](./audiostreampacketdependencydescription/mprerollcount.md) indicates how many additional packets need to be decoded after this packet in order for the decoder to start returning optimal output, if this is the first packet decoded since the decoder was initialized.
 
-```None
+```
 For example, if this packet is packet #123 of some given packet stream, and ``mIsIndependentlyDecodable``
 is 0, or ``mIsIndependentlyDecodable`` is 1 and ``mPreRollCount`` is non-zero, and the client desires optimal
 output starting with the output corresponding with packet #123 (because for example the client
@@ -59,19 +64,19 @@ start decoding from this point, but discard the output equivalent of the two ext
 ## Topics
 
 ### Initializers
-- [init()](audiostreampacketdependencydescription/init.md)
-- [init(mIsIndependentlyDecodable: UInt32, mPreRollCount: UInt32, mFlags: UInt32, mReserved: UInt32)](audiostreampacketdependencydescription/init(misindependentlydecodable:mprerollcount:mflags:mreserved:).md)
+- [init()](./audiostreampacketdependencydescription/init%28%29.md)
+- [init(mIsIndependentlyDecodable: UInt32, mPreRollCount: UInt32, mFlags: UInt32, mReserved: UInt32)](./audiostreampacketdependencydescription/init%28misindependentlydecodable,mprerollcount,mflags,mreserved%29.md)
 ### Instance Properties
-- [var mFlags: UInt32](audiostreampacketdependencydescription/mflags.md)
-- [var mIsIndependentlyDecodable: UInt32](audiostreampacketdependencydescription/misindependentlydecodable.md)
-- [var mPreRollCount: UInt32](audiostreampacketdependencydescription/mprerollcount.md)
-- [var mReserved: UInt32](audiostreampacketdependencydescription/mreserved.md)
+- [var mFlags: UInt32](./audiostreampacketdependencydescription/mflags.md)
+- [var mIsIndependentlyDecodable: UInt32](./audiostreampacketdependencydescription/misindependentlydecodable.md)
+- [var mPreRollCount: UInt32](./audiostreampacketdependencydescription/mprerollcount.md)
+- [var mReserved: UInt32](./audiostreampacketdependencydescription/mreserved.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

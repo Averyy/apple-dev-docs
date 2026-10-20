@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher created by applying the merge function to an arbitrary number of upstream publishers.
 
@@ -26,7 +27,8 @@ init(_ upstream: Upstream...)
 
 ## See Also
 
-- [init<S>(S)](publishers/mergemany/init(_:)-3hrmo.md)
+### Creating a merge many publisher
+- [init<S>(S)](./init%28_%29-3hrmo.md)
   Creates a publisher created by applying the merge function to a sequence of upstream publishers.
 
 

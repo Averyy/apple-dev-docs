@@ -1,7 +1,8 @@
 # acousticFeatureValuePerFrame
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
 
@@ -10,7 +11,7 @@ An array of feature values, one value per audio frame, corresponding to a transc
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ var acousticFeatureValuePerFrame: [Double] { get }
 
 ## See Also
 
-- [var frameDuration: TimeInterval](sfacousticfeature/frameduration.md)
+### Inspecting a feature
+- [var frameDuration: TimeInterval](./frameduration.md)
   The duration of the audio frame.
 
 

@@ -1,16 +1,19 @@
 # setOverrideTraitCollection(_:forChild:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the traits assigned to the specified child view controller.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- tvOS - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use [`traitOverrides`](./traitoverrides-1z1cc.md) instead.
 
 ## Declaration
 
@@ -18,10 +21,14 @@ Changes the traits assigned to the specified child view controller.
 func setOverrideTraitCollection(_ collection: UITraitCollection?, forChild childViewController: UIViewController)
 ```
 
+```objc
+- (void) setOverrideTraitCollection:(UITraitCollection *) collection forChildViewController:(UIViewController *) childViewController;
+```
+
 ## Mentions
 
-- [Choosing a specific interface style for your iOS app](choosing-a-specific-interface-style-for-your-ios-app.md)
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+- [Choosing a specific interface style for your iOS app](../choosing-a-specific-interface-style-for-your-ios-app.md)
+- [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 
 #### Discussion
 
@@ -34,35 +41,36 @@ Usually, traits are passed unmodified from the parent view controller to its chi
 
 ## See Also
 
-- [func overrideTraitCollection(forChild: UIViewController) -> UITraitCollection?](uiviewcontroller/overridetraitcollection(forchild:).md)
+### Deprecated methods
+- [func overrideTraitCollection(forChild: UIViewController) -> UITraitCollection?](./overridetraitcollection%28forchild%29.md)
   Retrieves the trait collection for a child view controller.
-- [class func attemptRotationToDeviceOrientation()](uiviewcontroller/attemptrotationtodeviceorientation.md)
+- [class func attemptRotationToDeviceOrientation()](./attemptrotationtodeviceorientation%28%29.md)
   Attempts to rotate all windows to the orientation of the device.
-- [func registerForPreviewing(with: any UIViewControllerPreviewingDelegate, sourceView: UIView) -> any UIViewControllerPreviewing](uiviewcontroller/registerforpreviewing(with:sourceview:).md)
+- [func registerForPreviewing(with: any UIViewControllerPreviewingDelegate, sourceView: UIView) -> any UIViewControllerPreviewing](./registerforpreviewing%28with,sourceview%29.md)
   Registers a view controller to participate with 3D Touch preview (peek) and commit (pop).
-- [func unregisterForPreviewing(withContext: any UIViewControllerPreviewing)](uiviewcontroller/unregisterforpreviewing(withcontext:).md)
+- [func unregisterForPreviewing(withContext: any UIViewControllerPreviewing)](./unregisterforpreviewing%28withcontext%29.md)
   Unregisters a previously registered view controller identified by its context object.
-- [func canPerformUnwindSegueAction(Selector, from: UIViewController, withSender: Any) -> Bool](uiviewcontroller/canperformunwindsegueaction(_:from:withsender:).md)
+- [func canPerformUnwindSegueAction(Selector, from: UIViewController, withSender: Any) -> Bool](./canperformunwindsegueaction%28_,from,withsender%29.md)
   Called on a view controller to determine whether it wants to respond to an unwind action.
-- [func didRotate(from: UIInterfaceOrientation)](uiviewcontroller/didrotate(from:).md)
+- [func didRotate(from: UIInterfaceOrientation)](./didrotate%28from%29.md)
   Sent to the view controller after the user interface rotates.
-- [func dismissMoviePlayerViewControllerAnimated()](uiviewcontroller/dismissmovieplayerviewcontrolleranimated.md)
+- [func dismissMoviePlayerViewControllerAnimated()](./dismissmovieplayerviewcontrolleranimated%28%29.md)
   Dismisses a movie player view controller using the standard movie player transition.
-- [func forUnwindSegueAction(Selector, from: UIViewController, withSender: Any?) -> UIViewController?](uiviewcontroller/forunwindsegueaction(_:from:withsender:).md)
+- [func forUnwindSegueAction(Selector, from: UIViewController, withSender: Any?) -> UIViewController?](./forunwindsegueaction%28_,from,withsender%29.md)
   Called when an unwind segue action wants to search a container’s children for a view controller to handle the unwind action.
-- [func presentMoviePlayerViewControllerAnimated(MPMoviePlayerViewController!)](uiviewcontroller/presentmovieplayerviewcontrolleranimated(_:).md)
+- [func presentMoviePlayerViewControllerAnimated(MPMoviePlayerViewController!)](./presentmovieplayerviewcontrolleranimated%28_%29.md)
   Presents the movie player view controller using the standard movie player transition.
-- [func rotatingFooterView() -> UIView?](uiviewcontroller/rotatingfooterview.md)
+- [func rotatingFooterView() -> UIView?](./rotatingfooterview%28%29.md)
   Returns the footer view to transition during an interface orientation change.
-- [func rotatingHeaderView() -> UIView?](uiviewcontroller/rotatingheaderview.md)
+- [func rotatingHeaderView() -> UIView?](./rotatingheaderview%28%29.md)
   Returns the header view to transition during an interface orientation change.
-- [func segueForUnwinding(to: UIViewController, from: UIViewController, identifier: String?) -> UIStoryboardSegue?](uiviewcontroller/segueforunwinding(to:from:identifier:).md)
+- [func segueForUnwinding(to: UIViewController, from: UIViewController, identifier: String?) -> UIStoryboardSegue?](./segueforunwinding%28to,from,identifier%29.md)
   Called when an unwind segue action needs to transition between two view controllers.
-- [func shouldAutomaticallyForwardRotationMethods() -> Bool](uiviewcontroller/shouldautomaticallyforwardrotationmethods.md)
+- [func shouldAutomaticallyForwardRotationMethods() -> Bool](./shouldautomaticallyforwardrotationmethods%28%29.md)
   Returns a Boolean value indicating whether rotation methods are forwarded to child view controllers.
-- [func willAnimateRotation(to: UIInterfaceOrientation, duration: TimeInterval)](uiviewcontroller/willanimaterotation(to:duration:).md)
+- [func willAnimateRotation(to: UIInterfaceOrientation, duration: TimeInterval)](./willanimaterotation%28to,duration%29.md)
   Sent to the view controller before performing a one-step user interface rotation.
-- [func willRotate(to: UIInterfaceOrientation, duration: TimeInterval)](uiviewcontroller/willrotate(to:duration:).md)
+- [func willRotate(to: UIInterfaceOrientation, duration: TimeInterval)](./willrotate%28to,duration%29.md)
   Sent to the view controller just before the user interface begins rotating.
 
 

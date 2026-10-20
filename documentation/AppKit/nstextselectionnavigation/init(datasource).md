@@ -1,7 +1,8 @@
 # init(dataSource:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new object using the text selection data source you provide.
 
@@ -12,6 +13,10 @@ Creates a new object using the text selection data source you provide.
 
 ```swift
 init(dataSource: any NSTextSelectionDataSource)
+```
+
+```objc
+- (instancetype) initWithDataSource:(id<NSTextSelectionDataSource>) dataSource;
 ```
 
 ## Parameters

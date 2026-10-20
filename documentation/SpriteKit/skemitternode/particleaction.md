@@ -1,24 +1,29 @@
 # particleAction
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action executed by new particles.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 @NSCopying
 var particleAction: SKAction? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) SKAction * particleAction;
 ```
 
 #### Discussion
@@ -31,7 +36,8 @@ For the purpose of using actions on particles, you can treat the particle as if 
 
 ## See Also
 
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
+### Animating Particles
+- [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
   Supply keyframe sequences to do linear or nonlinear particle animations.
 
 

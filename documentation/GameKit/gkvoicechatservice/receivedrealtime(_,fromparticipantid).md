@@ -1,21 +1,28 @@
 # receivedRealTime(_:fromParticipantID:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the client to deliver voice data received from a remote participant..
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use SharePlay instead
 
 ## Declaration
 
 ```swift
 func receivedRealTime(_ audio: Data!, fromParticipantID participantID: String!)
+```
+
+```objc
+- (void) receivedRealTimeData:(NSData *) audio fromParticipantID:(NSString *) participantID;
 ```
 
 #### Discussion
@@ -29,13 +36,15 @@ The voice chat service uses a network connection provided by the client to excha
 
 ## See Also
 
-- [func voiceChatService(GKVoiceChatService, sendRealTime: Data, toParticipantID: String)](gkvoicechatclient/voicechatservice(_:sendrealtime:toparticipantid:).md)
+### Related Documentation
+- [func voiceChatService(GKVoiceChatService, sendRealTime: Data, toParticipantID: String)](../gkvoicechatclient/voicechatservice%28_,sendrealtime,toparticipantid%29.md)
   Asks the client to send data to a participant that must get there quickly.
-- [func acceptCallID(Int) throws](gkvoicechatservice/acceptcallid(_:).md)
+### Methods Called by the Client
+- [func acceptCallID(Int) throws](./acceptcallid%28_%29.md)
   Accepts a request from a remote user to establish a voice chat.
-- [func denyCallID(Int)](gkvoicechatservice/denycallid(_:).md)
+- [func denyCallID(Int)](./denycallid%28_%29.md)
   Rejects a request to establish a voice chat.
-- [func receivedData(Data!, fromParticipantID: String!)](gkvoicechatservice/receiveddata(_:fromparticipantid:).md)
+- [func receivedData(Data!, fromParticipantID: String!)](./receiveddata%28_,fromparticipantid%29.md)
   Called by the client to deliver new data received from a remote participant.
 
 

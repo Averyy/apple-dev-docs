@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets the subview proxies in the specified range.
 
@@ -20,17 +21,28 @@ Gets the subview proxies in the specified range.
 subscript(bounds: Range<Int>) -> LayoutSubviews { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(index: Int) -> LayoutSubviews.Element { get }
+```
+
+```swift
+subscript<S>(indices: S) -> LayoutSubviews where S : Sequence, S.Element == Int { get }
+```
+
 ## See Also
 
-- [var startIndex: Int](layoutsubviews/startindex.md)
+### Accessing subviews
+- [var startIndex: Int](./startindex.md)
   The index of the first subview.
-- [var endIndex: Int](layoutsubviews/endindex.md)
+- [var endIndex: Int](./endindex.md)
   An index that’s one higher than the last subview.
-- [LayoutSubviews.Element](layoutsubviews/element.md)
+- [LayoutSubviews.Element](./element.md)
   A type that contains a proxy value.
-- [LayoutSubviews.Index](layoutsubviews/index.md)
+- [LayoutSubviews.Index](./index.md)
   A type that you can use to index proxy values.
-- [LayoutSubviews.SubSequence](layoutsubviews/subsequence.md)
+- [LayoutSubviews.SubSequence](./subsequence.md)
   A type that contains a subsequence of proxy values.
 
 

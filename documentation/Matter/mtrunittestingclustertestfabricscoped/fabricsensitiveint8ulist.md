@@ -1,7 +1,8 @@
 # fabricSensitiveInt8uList
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var fabricSensitiveInt8uList: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * fabricSensitiveInt8uList;
 ```
 
 

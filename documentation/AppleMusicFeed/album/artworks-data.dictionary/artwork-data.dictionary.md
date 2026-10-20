@@ -1,7 +1,8 @@
 # Album.Artworks.Artwork
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a piece of artwork.
 
@@ -10,7 +11,7 @@ Information about a piece of artwork.
 
 ## Declaration
 
-```swift
+```
 object Album.Artworks.Artwork
 ```
 

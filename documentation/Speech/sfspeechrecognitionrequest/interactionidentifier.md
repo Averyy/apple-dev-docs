@@ -1,21 +1,28 @@
 # interactionIdentifier
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier string that you use to describe the type of interaction associated with the speech recognition request.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 15.0
+- iPadOS 10.0+ - Deprecated in 15.0
+- Mac Catalyst 10.0+ - Deprecated in 15.0
+- macOS 10.15+ - Deprecated in 12.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Not used anymore
 
 ## Declaration
 
 ```swift
 var interactionIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * interactionIdentifier;
 ```
 
 #### Discussion

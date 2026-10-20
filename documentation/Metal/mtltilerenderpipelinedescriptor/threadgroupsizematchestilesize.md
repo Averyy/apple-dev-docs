@@ -1,7 +1,8 @@
 # threadgroupSizeMatchesTileSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether all threadgroups for this pipeline completely cover tiles.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether all threadgroups for this pipeline comple
 var threadgroupSizeMatchesTileSize: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL threadgroupSizeMatchesTileSize;
+```
+
 #### Discussion
 
 Metal can optimize code generation when the threadgroup and tile sizes match.
 
 ## See Also
 
-- [var rasterSampleCount: Int](mtltilerenderpipelinedescriptor/rastersamplecount.md)
+### Specifying rasterization and visibility state
+- [var rasterSampleCount: Int](./rastersamplecount.md)
   The number of samples in each fragment.
 
 

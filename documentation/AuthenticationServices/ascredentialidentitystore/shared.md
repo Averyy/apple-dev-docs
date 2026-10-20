@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared credential identity store.
 
@@ -16,6 +17,10 @@ The shared credential identity store.
 
 ```swift
 class var shared: ASCredentialIdentityStore { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) ASCredentialIdentityStore * sharedStore;
 ```
 
 #### Discussion

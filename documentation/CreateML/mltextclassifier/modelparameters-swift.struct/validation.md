@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validation dataset.
 
@@ -20,15 +21,16 @@ var validation: MLTextClassifier.ModelParameters.ValidationData { get set }
 
 #### Discussion
 
-The default value is [`MLTextClassifier.ModelParameters.ValidationData.split(strategy:)`](mltextclassifier/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md) with the [`MLSplitStrategy.automatic`](mlsplitstrategy/automatic.md) split strategy``, which automatically generates the validation dataset by partitioning up to 10% of the training dataset.
+The default value is [`MLTextClassifier.ModelParameters.ValidationData.split(strategy:)`](./validationdata-swift.enum/split%28strategy%29.md) with the [`MLSplitStrategy.automatic`](../../mlsplitstrategy/automatic.md) split strategy``, which automatically generates the validation dataset by partitioning up to 10% of the training dataset.
 
 ## See Also
 
-- [var algorithm: MLTextClassifier.ModelAlgorithmType](mltextclassifier/modelparameters-swift.struct/algorithm.md)
+### Accessing parameters
+- [var algorithm: MLTextClassifier.ModelAlgorithmType](./algorithm.md)
   The parameter’s algorithm setting.
-- [var language: NLLanguage?](mltextclassifier/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./language.md)
   The parameter’s language setting.
-- [var maxIterations: Int?](mltextclassifier/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int?](./maxiterations.md)
   The maximum number of training iterations.
 
 

@@ -1,7 +1,8 @@
 # didMergeChanges
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var didMergeChanges: NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.DidMergeChangesMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.DidMergeChangesMessage>`.
 
 
 ---

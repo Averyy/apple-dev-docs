@@ -1,7 +1,8 @@
 # init(forKeySystem:identifier:options:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content key specifier.
 
@@ -18,6 +19,10 @@ Creates a content key specifier.
 
 ```swift
 init(forKeySystem keySystem: AVContentKeySystem, identifier contentKeyIdentifier: Any, options: [String : Any] = [:])
+```
+
+```objc
+- (instancetype) initForKeySystem:(AVContentKeySystem) keySystem identifier:(id) contentKeyIdentifier options:(NSDictionary<NSString *,id> *) options;
 ```
 
 ## Parameters

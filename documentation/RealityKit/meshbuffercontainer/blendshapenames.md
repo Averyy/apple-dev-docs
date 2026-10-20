@@ -1,7 +1,8 @@
 # blendShapeNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of blendShape names that exist in MeshBufferContainer
 

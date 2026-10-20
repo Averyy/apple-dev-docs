@@ -1,7 +1,8 @@
 # registerLanguage(_:byVendor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the receiver of a language your spelling checker can check.
 
@@ -15,9 +16,13 @@ Notifies the receiver of a language your spelling checker can check.
 func registerLanguage(_ language: String?, byVendor vendor: String?) -> Bool
 ```
 
+```objc
+- (BOOL) registerLanguage:(NSString *) language byVendor:(NSString *) vendor;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the language is registered, [`false`](https://developer.apple.com/documentation/swift/false) if for some reason it can’t be registered.
+Returns [`true`](../../Swift/true.md) if the language is registered, [`false`](../../Swift/false.md) if for some reason it can’t be registered.
 
 #### Discussion
 
@@ -30,7 +35,8 @@ If your spelling checker supports more than one language, it should invoke this 
 
 ## See Also
 
-- [func run()](nsspellserver/run.md)
+### Providing Spelling Services
+- [func run()](./run%28%29.md)
   Causes the receiver to start listening for spell-checking requests.
 
 

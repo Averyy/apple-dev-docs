@@ -2,6 +2,7 @@
 
 **Framework**: StoreKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,7 +22,8 @@ associatedtype Body : StoreContent
 
 ## See Also
 
-- [var body: Self.Body](storecontent/body-swift.property.md)
+### Implementing store content
+- [var body: Self.Body](./body-swift.property.md)
 
 
 ---

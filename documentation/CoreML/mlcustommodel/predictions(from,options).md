@@ -1,7 +1,8 @@
 # predictions(from:options:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts output values from the given batch of input features.
 
@@ -20,6 +21,10 @@ Predicts output values from the given batch of input features.
 optional func predictions(from inputBatch: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider
 ```
 
+```objc
+- (id<MLBatchProvider>) predictionsFromBatch:(id<MLBatchProvider>) inputBatch options:(MLPredictionOptions *) options error:(NSError **) error;
+```
+
 #### Return Value
 
 A batch provider that represents the model’s predictions for the batch of inputs.
@@ -31,7 +36,8 @@ A batch provider that represents the model’s predictions for the batch of inpu
 
 ## See Also
 
-- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](mlcustommodel/prediction(from:options:).md)
+### Making predictions
+- [func prediction(from: any MLFeatureProvider, options: MLPredictionOptions) throws -> any MLFeatureProvider](./prediction%28from,options%29.md)
   Predicts output values from the given input features.
 
 

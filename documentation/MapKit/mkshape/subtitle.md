@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle of the shape annotation.
 
@@ -20,13 +21,18 @@ The subtitle of the shape annotation.
 var subtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
+```
+
 #### Discussion
 
 The shape displays this string in the callout for the associated annotation view. The default value of this property is `nil`.
 
 ## See Also
 
-- [var title: String?](mkshape/title.md)
+### Accessing the shape attributes
+- [var title: String?](./title.md)
   The title of the shape annotation.
 
 

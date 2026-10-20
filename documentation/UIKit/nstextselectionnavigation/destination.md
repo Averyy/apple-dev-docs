@@ -1,7 +1,8 @@
 # NSTextSelectionNavigation.Destination
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that affect how the framework handles navigation across different textual boundaries during a selection.
 
@@ -18,47 +19,52 @@ Values that affect how the framework handles navigation across different textual
 enum Destination
 ```
 
+```c
+enum NSTextSelectionNavigationDestination : NSInteger;
+```
+
 ## Topics
 
 ### Selection destinations
-- [NSTextSelectionNavigation.Destination.character](nstextselectionnavigation/destination/character.md)
+- [NSTextSelectionNavigation.Destination.character](./destination/character.md)
   The selection moves to the next extended grapheme cluster boundary.
-- [NSTextSelectionNavigation.Destination.word](nstextselectionnavigation/destination/word.md)
+- [NSTextSelectionNavigation.Destination.word](./destination/word.md)
   The selection moves to the next word boundary ignoring punctuation, whitespace, and format characters preceding the next word.
-- [NSTextSelectionNavigation.Destination.line](nstextselectionnavigation/destination/line.md)
+- [NSTextSelectionNavigation.Destination.line](./destination/line.md)
   The selection moves to the next line boundary.
-- [NSTextSelectionNavigation.Destination.sentence](nstextselectionnavigation/destination/sentence.md)
+- [NSTextSelectionNavigation.Destination.sentence](./destination/sentence.md)
   The selection moves to the next sentence boundary, ignoring punctuation, whitespace, and format characters preceding the next sentence.
-- [NSTextSelectionNavigation.Destination.paragraph](nstextselectionnavigation/destination/paragraph.md)
+- [NSTextSelectionNavigation.Destination.paragraph](./destination/paragraph.md)
   The selection moves to the next paragraph boundary, ignoring the end of line elastic characters and paragraph separators.
-- [NSTextSelectionNavigation.Destination.container](nstextselectionnavigation/destination/container.md)
+- [NSTextSelectionNavigation.Destination.container](./destination/container.md)
   The selection moves to the next container or page boundary after boundary of the current container, ignoring the end of line elastic characters.
-- [NSTextSelectionNavigation.Destination.document](nstextselectionnavigation/destination/document.md)
+- [NSTextSelectionNavigation.Destination.document](./destination/document.md)
   The selection moves to the document boundary.
 ### Initializers
-- [init?(rawValue: Int)](nstextselectionnavigation/destination/init(rawvalue:).md)
+- [init?(rawValue: Int)](./destination/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allowsNonContiguousRanges: Bool](nstextselectionnavigation/allowsnoncontiguousranges.md)
+### Selection characteristics
+- [var allowsNonContiguousRanges: Bool](./allowsnoncontiguousranges.md)
   Determines if the instance could produce selections with multiple noncontiguous selections.
-- [var rotatesCoordinateSystemForLayoutOrientation: Bool](nstextselectionnavigation/rotatescoordinatesystemforlayoutorientation.md)
+- [var rotatesCoordinateSystemForLayoutOrientation: Bool](./rotatescoordinatesystemforlayoutorientation.md)
   Determines if the framework rotates the coordinate system to match the layout orientation.
-- [NSTextSelectionNavigation.Modifier](nstextselectionnavigation/modifier.md)
+- [NSTextSelectionNavigation.Modifier](./modifier.md)
   Values that describe how the framework handles different kinds of selection modifiers.
-- [NSTextSelectionNavigation.Direction](nstextselectionnavigation/direction.md)
+- [NSTextSelectionNavigation.Direction](./direction.md)
   Values that describe the direction of a selection.
-- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](nstextselectionnavigation/textselection(for:enclosing:incontainerat:).md)
+- [func textSelection(for: NSTextSelection.Granularity, enclosing: CGPoint, inContainerAt: any NSTextLocation) -> NSTextSelection?](./textselection%28for,enclosing,incontainerat%29.md)
   Returns a text selection that expands to the nearest boundaries for selection granularity and an enclosing point you specify.
 
 

@@ -1,7 +1,8 @@
 # currentItem
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current item.
 

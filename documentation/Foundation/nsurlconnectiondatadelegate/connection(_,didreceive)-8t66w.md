@@ -1,7 +1,8 @@
 # connection(_:didReceive:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the connection has received sufficient data to construct the URL response for its request.
 
@@ -20,6 +21,10 @@ Sent when the connection has received sufficient data to construct the URL respo
 optional func connection(_ connection: NSURLConnection, didReceive response: URLResponse)
 ```
 
+```objc
+- (void) connection:(NSURLConnection *) connection didReceiveResponse:(NSURLResponse *) response;
+```
+
 #### Discussion
 
 In rare cases, for example in the case of an HTTP load where the content type of the load data is `multipart/x-mixed-replace`, the delegate will receive more than one `connection:didReceiveResponse:` message. When this happens, discard (or process) all data previously delivered by `connection:didReceiveData:`, and prepare to handle the next part (which could potentially have a different MIME type).
@@ -33,9 +38,11 @@ The only case where this message is not sent to the delegate is when the protoco
 
 ## See Also
 
-- [URL Loading System](url-loading-system.md)
+### Related Documentation
+- [URL Loading System](../url-loading-system.md)
   Interact with URLs and communicate with servers using standard Internet protocols.
-- [func connection(NSURLConnection, didReceive: Data)](nsurlconnectiondatadelegate/connection(_:didreceive:)-8p5vg.md)
+### Handling Incoming Data
+- [func connection(NSURLConnection, didReceive: Data)](./connection%28_,didreceive%29-8p5vg.md)
   Sent as a connection loads data incrementally.
 
 

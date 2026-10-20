@@ -1,7 +1,8 @@
 # cameraCalibrationData
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The imaging parameters with which this depth data was captured.
 
@@ -19,11 +20,15 @@ The imaging parameters with which this depth data was captured.
 var cameraCalibrationData: AVCameraCalibrationData? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVCameraCalibrationData * cameraCalibrationData;
+```
+
 #### Discussion
 
-Using depth or disparity map data to render effects into a corresponding image or to perform computer vision tasks requires knowledge of the camera parameters that generated the depth data. Depth data captured by an [`AVCaptureDevice`](avcapturedevice.md) object contains camera calibration data that includes such information.
+Using depth or disparity map data to render effects into a corresponding image or to perform computer vision tasks requires knowledge of the camera parameters that generated the depth data. Depth data captured by an [`AVCaptureDevice`](../avcapturedevice.md) object contains camera calibration data that includes such information.
 
-> **Note**:  Depth data read from a file (see the [`init(fromDictionaryRepresentation:)`](avdepthdata/init(fromdictionaryrepresentation:).md) initializer) or transformed through arbitrary editing of its data map might not contain calibration data.
+> **Note**:  Depth data read from a file (see the [`init(fromDictionaryRepresentation:)`](./init%28fromdictionaryrepresentation%29.md) initializer) or transformed through arbitrary editing of its data map might not contain calibration data.
 
 
 ---

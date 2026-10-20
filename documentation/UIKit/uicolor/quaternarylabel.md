@@ -1,7 +1,8 @@
 # quaternaryLabel
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The color for text labels that contain quaternary content.
 
@@ -18,13 +19,18 @@ The color for text labels that contain quaternary content.
 class var quaternaryLabel: UIColor { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIColor * quaternaryLabelColor;
+```
+
 ## See Also
 
-- [class var label: UIColor](uicolor/label.md)
+### Label colors
+- [class var label: UIColor](./label.md)
   The color for text labels that contain primary content.
-- [class var secondaryLabel: UIColor](uicolor/secondarylabel.md)
+- [class var secondaryLabel: UIColor](./secondarylabel.md)
   The color for text labels that contain secondary content.
-- [class var tertiaryLabel: UIColor](uicolor/tertiarylabel.md)
+- [class var tertiaryLabel: UIColor](./tertiarylabel.md)
   The color for text labels that contain tertiary content.
 
 

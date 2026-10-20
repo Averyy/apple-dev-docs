@@ -1,7 +1,8 @@
 # preferredMenuElementOrder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred menu-element ordering strategy for the menu.
 
@@ -18,9 +19,14 @@ The preferred menu-element ordering strategy for the menu.
 var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder { get set }
 ```
 
+```objc
+@property (nonatomic) UIContextMenuConfigurationElementOrder preferredMenuElementOrder;
+```
+
 ## See Also
 
-- [var menu: UIMenu?](uibarbuttonitem/menu.md)
+### Managing the context menu
+- [var menu: UIMenu?](./menu.md)
   The context menu for this button.
 
 

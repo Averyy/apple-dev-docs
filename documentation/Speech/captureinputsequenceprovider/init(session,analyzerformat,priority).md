@@ -1,7 +1,8 @@
 # init(session:analyzerFormat:priority:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input sequence provider.
 
@@ -22,7 +23,7 @@ init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPri
 
 This initializer also creates an `AVCaptureAudioDataOutput` object suitable for adding to the given `AVCaptureSession`. It does not reconfigure or alter the session.
 
-Use the [`captureAudioDataOutput`](captureinputsequenceprovider/captureaudiodataoutput.md) property to access the output object and add it to your session.
+Use the [`captureAudioDataOutput`](./captureaudiodataoutput.md) property to access the output object and add it to your session.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ Use the [`captureAudioDataOutput`](captureinputsequenceprovider/captureaudiodata
 
 ## See Also
 
-- [static func providerWithSession(from: AVCaptureDevice, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](captureinputsequenceprovider/providerwithsession(from:compatiblewith:priority:).md)
+### Creating a provider
+- [static func providerWithSession(from: AVCaptureDevice, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](./providerwithsession%28from,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from an audio capture device, and configures a new audio capture session with that device.
-- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](captureinputsequenceprovider/provider(from:in:compatiblewith:priority:).md)
+- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](./provider%28from,in,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from an audio capture device.
 
 

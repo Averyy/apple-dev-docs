@@ -1,7 +1,8 @@
 # Read the organization
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Returns information about the Apple School Manager organization.
 
@@ -10,7 +11,7 @@ Returns information about the Apple School Manager organization.
 
 ## Mentions
 
-- [Integrating with Roster API and Sign in with Apple](integrating-with-roster-api-and-sign-in-with-apple.md)
+- [Integrating with Roster API and Sign in with Apple](./integrating-with-roster-api-and-sign-in-with-apple.md)
 
 #### Discussion
 
@@ -20,7 +21,7 @@ Access to the `organization` resource requires authorization to either the `edu.
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/organization" -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -41,11 +42,21 @@ curl "https://api-school.apple.com/rosterapi/v1/organization" -H "Authorization:
 
 `GET https://api-school.apple.com/rosterapi/v1/organization`
 
+## Responses
+
+- `200` OK (`Organization`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: You don’t have permission to access the organization information.
+- `404` Not Found: The server didn’t find the organization information.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
+
 ## See Also
 
-- [object Organization](organization.md)
+### Information about the organization
+- [object Organization](./organization.md)
   Information about an Apple School Manager organization.
-- [object Domain](domain.md)
+- [object Domain](./domain.md)
   A DNS domain name associated with an Apple School Manager organization.
 
 

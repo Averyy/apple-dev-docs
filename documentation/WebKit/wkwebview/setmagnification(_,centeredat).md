@@ -1,7 +1,8 @@
 # setMagnification(_:centeredAt:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales the page content and centers the result on the specified point.
 
@@ -14,6 +15,10 @@ Scales the page content and centers the result on the specified point.
 func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
 ```
 
+```objc
+- (void) setMagnification:(CGFloat) magnification centeredAtPoint:(CGPoint) point;
+```
+
 ## Parameters
 
 - `magnification`: The factor by which to scale the content.
@@ -21,11 +26,12 @@ func setMagnification(_ magnification: CGFloat, centeredAt point: CGPoint)
 
 ## See Also
 
-- [var pageZoom: CGFloat](wkwebview/pagezoom.md)
+### Scaling content
+- [var pageZoom: CGFloat](./pagezoom.md)
   The scale factor by which the web view scales content relative to its bounds.
-- [var allowsMagnification: Bool](wkwebview/allowsmagnification.md)
+- [var allowsMagnification: Bool](./allowsmagnification.md)
   A Boolean value that indicates whether magnify gestures change the web view’s magnification.
-- [var magnification: CGFloat](wkwebview/magnification.md)
+- [var magnification: CGFloat](./magnification.md)
   The factor by which the page content is currently scaled.
 
 

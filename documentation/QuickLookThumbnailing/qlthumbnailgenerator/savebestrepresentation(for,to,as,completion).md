@@ -1,7 +1,8 @@
 # saveBestRepresentation(for:to:as:completion:)
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves a thumbnail for the request on disk at fileURL. The file saved at fileURL has to be deleted when it is not used anymore. This is primarily intended for file provider extensions which need to upload thumbnails and have a small memory limit.
 
@@ -15,7 +16,15 @@ Saves a thumbnail for the request on disk at fileURL. The file saved at fileURL 
 ## Declaration
 
 ```swift
+func saveBestRepresentation(for request: QLThumbnailGenerator.Request, to fileURL: URL, as contentType: UTType, completion completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func saveBestRepresentation(for request: QLThumbnailGenerator.Request, to fileURL: URL, as contentType: UTType) async throws
+```
+
+```objc
+- (void) saveBestRepresentationForRequest:(QLThumbnailGenerationRequest *) request toFileAtURL:(NSURL *) fileURL asContentType:(UTType *) contentType completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters

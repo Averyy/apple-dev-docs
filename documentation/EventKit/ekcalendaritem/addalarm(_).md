@@ -1,7 +1,8 @@
 # addAlarm(_:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an alarm to the receiver.
 
@@ -19,10 +20,14 @@ Adds an alarm to the receiver.
 func addAlarm(_ alarm: EKAlarm)
 ```
 
+```objc
+- (void) addAlarm:(EKAlarm *) alarm;
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
-- [Setting an alarm](setting-an-alarm.md)
+- [Creating events and reminders](../creating-events-and-reminders.md)
+- [Setting an alarm](../setting-an-alarm.md)
 
 ## Parameters
 
@@ -30,12 +35,13 @@ func addAlarm(_ alarm: EKAlarm)
 
 ## See Also
 
-- [var hasAlarms: Bool](ekcalendaritem/hasalarms.md)
+### Adding and Removing Alarms
+- [var hasAlarms: Bool](./hasalarms.md)
   A Boolean value that indicates whether the calendar item has alarms.
-- [func removeAlarm(EKAlarm)](ekcalendaritem/removealarm(_:).md)
+- [func removeAlarm(EKAlarm)](./removealarm%28_%29.md)
   Removes an alarm from the calendar item.
-- [var alarms: [EKAlarm]?](ekcalendaritem/alarms.md)
-  The alarms associated with the calendar item, as an array of [`EKAlarm`](ekalarm.md) objects.
+- [var alarms: [EKAlarm]?](./alarms.md)
+  The alarms associated with the calendar item, as an array of [`EKAlarm`](../ekalarm.md) objects.
 
 
 ---

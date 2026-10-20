@@ -1,7 +1,8 @@
 # ConsumptionRequestV1
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body containing consumption information.
 
@@ -10,69 +11,69 @@ The request body containing consumption information.
 
 ## Declaration
 
-```swift
+```
 object ConsumptionRequestV1
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Overview
 
-> ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`ConsumptionRequest`](consumptionrequest.md) with the [`Send Consumption Information`](send-consumption-information.md) endpoint instead.
+> ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`ConsumptionRequest`](./consumptionrequest.md) with the [`Send Consumption Information`](./send-consumption-information.md) endpoint instead.
 
 #### Discussion
 
-Use `ConsumptionRequestV1` to provide information about the customer’s consumable in-app purchase or auto-renewable subscription when you call the [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint.
+Use `ConsumptionRequestV1` to provide information about the customer’s consumable in-app purchase or auto-renewable subscription when you call the [`Send Consumption Information V1`](./send-consumption-information-v1.md) endpoint.
 
-To create a valid request and avoid an `HTTP 400 Bad Request` error, [`ConsumptionRequestV1`](consumptionrequestv1.md) must contain all the required fields with proper data types and valid values. However, you can choose whether or not to provide information for most fields. Most fields have a valid option if you choose not to provide the information.
+To create a valid request and avoid an `HTTP 400 Bad Request` error, [`ConsumptionRequestV1`](./consumptionrequestv1.md) must contain all the required fields with proper data types and valid values. However, you can choose whether or not to provide information for most fields. Most fields have a valid option if you choose not to provide the information.
 
 > **Note**:  Use the field value for *undeclared*, where available, if you choose not to provide information.
 
-For example, if you choose not to provide information for the [`accountTenure`](accounttenure.md) field, set [`accountTenure`](accounttenure.md) to `0`. If you choose not to provide information for the [`appAccountToken`](appaccounttoken.md) field, set its value to an empty string. Refer to each field’s documentation for the list of valid values, including the undeclared value where available.
+For example, if you choose not to provide information for the [`accountTenure`](./accounttenure.md) field, set [`accountTenure`](./accounttenure.md) to `0`. If you choose not to provide information for the [`appAccountToken`](./appaccounttoken.md) field, set its value to an empty string. Refer to each field’s documentation for the list of valid values, including the undeclared value where available.
 
-The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
+The App Store server rejects requests that have a [`customerConsented`](./customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](./invalidcustomerconsentederror.md).
 
-##### Provide the App Account Token in a Consumption Request
+##### Provide the app account token in a consumption request
 
-The [`ConsumptionRequestV1`](consumptionrequestv1.md) request body requires that you set the `appAccountToken` to a valid value of either a UUID or an empty string. Set the `appAccountToken` value to the value you received in the `CONSUMPTION_REQUEST` notification, or, if you choose not to provide this information, set the value to an empty string.
+The [`ConsumptionRequestV1`](./consumptionrequestv1.md) request body requires that you set the `appAccountToken` to a valid value of either a UUID or an empty string. Set the `appAccountToken` value to the value you received in the `CONSUMPTION_REQUEST` notification, or, if you choose not to provide this information, set the value to an empty string.
 
 If you receive a `CONSUMPTION_REQUEST` notification for a transaction, find its associated `appAccountToken` value as follows:
 
-- If you receive [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2), the `appAccountToken` value is in [`JWSTransactionDecodedPayload`](https://developer.apple.com/documentation/appstoreservernotifications/jwstransactiondecodedpayload).
-- If you receive [`App Store Server Notifications Version 1`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-version-1), the `appAccountToken` value is in [`unified_receipt.Latest_receipt_info`](https://developer.apple.com/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary).
+- If you receive [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md), the `appAccountToken` value is in [`JWSTransactionDecodedPayload`](../AppStoreServerNotifications/jwstransactiondecodedpayload.md).
+- If you receive [App Store Server Notifications Version 1](../AppStoreServerNotifications/app-store-server-notifications-version-1.md), the `appAccountToken` value is in [`unified_receipt.Latest_receipt_info`](../AppStoreServerNotifications/unified_receipt/latest_receipt_info-data.dictionary.md).
 
 The `appAccountToken` value may be an empty string if your app doesn’t use app account tokens.
 
-For more information about App Store Server Notifications versions, see [`App Store Server Notifications changelog`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-changelog).
+For more information about App Store Server Notifications versions, see [App Store Server Notifications changelog](../AppStoreServerNotifications/app-store-server-notifications-changelog.md).
 
 ## Topics
 
 ### Consumption data types
-- [type accountTenure](accounttenure.md)
+- [type accountTenure](./accounttenure.md)
   The age of the customer’s account.
-- [type appAccountToken](appaccounttoken.md)
+- [type appAccountToken](./appaccounttoken.md)
   The UUID that you generate to associate a customer’s In-App Purchase with its resulting App Store transaction.
-- [type consumptionStatus](consumptionstatus.md)
+- [type consumptionStatus](./consumptionstatus.md)
   A value that indicates the extent to which the customer consumed the In-App Purchase.
-- [type customerConsented](customerconsented.md)
+- [type customerConsented](./customerconsented.md)
   A Boolean value that indicates whether the customer consented to provide consumption data to the App Store.
-- [type deliveryStatusV1](deliverystatusv1.md)
+- [type deliveryStatusV1](./deliverystatusv1.md)
   A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
-- [type lifetimeDollarsPurchased](lifetimedollarspurchased.md)
+- [type lifetimeDollarsPurchased](./lifetimedollarspurchased.md)
   A value that indicates the dollar amount of in-app purchases the customer has made in your app, since purchasing the app, across all platforms.
-- [type lifetimeDollarsRefunded](lifetimedollarsrefunded.md)
+- [type lifetimeDollarsRefunded](./lifetimedollarsrefunded.md)
   A value that indicates the dollar amount of refunds the customer has received in your app, since purchasing the app, across all platforms.
-- [type platform](platform.md)
+- [type platform](./platform.md)
   The platform on which the customer consumed the in-app purchase.
-- [type playTime](playtime.md)
+- [type playTime](./playtime.md)
   A value that indicates the amount of time that the customer used the app.
-- [type refundPreferenceV1](refundpreferencev1.md)
+- [type refundPreferenceV1](./refundpreferencev1.md)
   A value that indicates your preferred outcome for the refund request.
-- [type sampleContentProvided](samplecontentprovided.md)
+- [type sampleContentProvided](./samplecontentprovided.md)
   A Boolean value that indicates whether you provided, prior to its purchase, a free sample or trial of the content, or information about its functionality.
-- [type userStatus](userstatus.md)
+- [type userStatus](./userstatus.md)
   The status of a customer’s account within your app.
 
 ## Properties
@@ -80,7 +81,9 @@ For more information about App Store Server Notifications versions, see [`App St
 - `accountTenure` (accountTenure) *(required)*: The age of the customer’s account.
 - `appAccountToken` (appAccountToken) *(required)*: The UUID of the in-app user account that completed the in-app purchase transaction.
 - `consumptionStatus` (consumptionStatus) *(required)*: A value that indicates the extent to which the customer consumed the in-app purchase.
-- `customerConsented` (customerConsented) *(required)*: A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data. Note: The App Store server rejects requests that have a [`customerConsented`](customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](invalidcustomerconsentederror.md).
+- `customerConsented` (customerConsented) *(required)*: A Boolean value of `true` or `false` that indicates whether the customer consented to provide consumption data.
+
+  Note: The App Store server rejects requests that have a [`customerConsented`](./customerconsented.md) value other than `true` by returning an `HTTP 400` error with an [`InvalidCustomerConsentedError`](./invalidcustomerconsentederror.md).
 - `deliveryStatus` (deliveryStatusV1) *(required)*: A value that indicates whether the app successfully delivered an in-app purchase that works properly.
 - `lifetimeDollarsPurchased` (lifetimeDollarsPurchased) *(required)*: A value that indicates the total amount, in USD, of in-app purchases the customer has made in your app, across all platforms.
 - `lifetimeDollarsRefunded` (lifetimeDollarsRefunded) *(required)*: A value that indicates the total amount, in USD, of refunds the customer has received, in your app, across all platforms.
@@ -92,11 +95,12 @@ For more information about App Store Server Notifications versions, see [`App St
 
 ## See Also
 
-- [Send Consumption Information](send-consumption-information.md)
+### Consumption information
+- [Send Consumption Information](./send-consumption-information.md)
   Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.
-- [object ConsumptionRequest](consumptionrequest.md)
+- [object ConsumptionRequest](./consumptionrequest.md)
   The request body that contains consumption information for an In-App Purchase.
-- [Send Consumption Information V1](send-consumption-information-v1.md)
+- [Send Consumption Information V1](./send-consumption-information-v1.md)
   Send consumption information about a consumable In-App Purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
 
 

@@ -1,14 +1,15 @@
 # kExclaveIpcStackEntryHaveStack
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 kExclaveIpcStackEntryHaveStack = 0x2
 ```
 

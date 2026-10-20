@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of the overall match.
 

@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the currently running match attempt.
 
@@ -22,11 +23,12 @@ final func cancel()
 
 ## See Also
 
-- [func result() async -> SHSession.Result](shmanagedsession/result.md)
+### Returning queries
+- [func result() async -> SHSession.Result](./result%28%29.md)
   Performs an asynchronous match with a single signature.
-- [var results: SHSession.Results](shmanagedsession/results.md)
+- [var results: SHSession.Results](./results.md)
   The results as an asynchronous sequence of matches.
-- [func prepare() async](shmanagedsession/prepare.md)
+- [func prepare() async](./prepare%28%29.md)
   Preallocates the resources needed for a match, which increases the responsiveness of matches.
 
 

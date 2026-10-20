@@ -1,7 +1,8 @@
 # NetworkBrowser.State
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible states for the browser to be in.
 
@@ -23,23 +24,23 @@ enum State
 ## Topics
 
 ### Enumeration Cases
-- [NetworkBrowser.State.cancelled](networkbrowser/state/cancelled.md)
+- [NetworkBrowser.State.cancelled](./state/cancelled.md)
   The browser has been cancelled. Do not call `start()` on the browser to restart it. Instead, create a new browser.
-- [NetworkBrowser.State.failed(_:)](networkbrowser/state/failed(_:).md)
+- [NetworkBrowser.State.failed(_:)](./state/failed%28_%29.md)
   The browser has irrecoverably failed. Do not call `start()` on the browser to restart it. Instead, `cancel()` the browser and create a new browser.
-- [NetworkBrowser.State.ready](networkbrowser/state/ready.md)
+- [NetworkBrowser.State.ready](./state/ready.md)
   The browser is active and will monitor services on the network. Set the `browseResultsChangedHandler` to get updates for these services.
-- [NetworkBrowser.State.setup](networkbrowser/state/setup.md)
+- [NetworkBrowser.State.setup](./state/setup.md)
   The browser has been created but not started. Set any relevant callback handlers on the browser before calling `start()`.
-- [NetworkBrowser.State.waiting(_:)](networkbrowser/state/waiting(_:).md)
+- [NetworkBrowser.State.waiting(_:)](./state/waiting%28_%29.md)
   The browser is waiting for connectivity. Results will not be delivered until the browser moves into the ready state. A browser can move from the ready state into the waiting state. The associated error indicates why the browser is unable to browse.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

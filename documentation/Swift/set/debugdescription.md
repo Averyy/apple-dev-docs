@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the set, suitable for debugging.
 
@@ -20,13 +21,16 @@ A string that represents the contents of the set, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## See Also
 
-- [func hash(into: inout Hasher)](set/hash(into:).md)
+### Describing a Set
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var description: String](set/description.md)
+- [var description: String](./description.md)
   A string that represents the contents of the set.
-- [var customMirror: Mirror](set/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the set.
 
 

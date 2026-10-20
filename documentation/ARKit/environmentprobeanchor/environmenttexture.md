@@ -1,7 +1,8 @@
 # environmentTexture
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The environment texture of an anchor.
 
@@ -20,9 +21,10 @@ Textures may be `nil` if the person isn’t in a well-lit environment.
 
 ## See Also
 
-- [var cameraScaleReference: Float](environmentprobeanchor/camerascalereference.md)
+### Getting anchor information
+- [var cameraScaleReference: Float](./camerascalereference.md)
   The camera scale reference of this anchor.
-- [var originFromAnchorTransform: simd_float4x4](environmentprobeanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The transform from the environment probe anchor to the origin coordinate system.
 
 

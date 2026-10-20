@@ -1,7 +1,8 @@
 # clearKey
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A method of key delivery that uses a clear key system.
 
@@ -20,11 +21,16 @@ A method of key delivery that uses a clear key system.
 static let clearKey: AVContentKeySystem
 ```
 
+```c
+extern AVContentKeySystem const AVContentKeySystemClearKey;
+```
+
 ## See Also
 
-- [static let fairPlayStreaming: AVContentKeySystem](avcontentkeysystem/fairplaystreaming.md)
+### Key-delivery methods
+- [static let fairPlayStreaming: AVContentKeySystem](./fairplaystreaming.md)
   A method of key delivery that uses FairPlay Streaming.
-- [static let authorizationToken: AVContentKeySystem](avcontentkeysystem/authorizationtoken.md)
+- [static let authorizationToken: AVContentKeySystem](./authorizationtoken.md)
   A method of key delivery that uses a token to authorize playback.
 
 

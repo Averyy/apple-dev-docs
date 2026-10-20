@@ -1,7 +1,8 @@
 # BNNSParameter
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A parameter that’s trainable, such as weights or bias.
 
@@ -20,14 +21,19 @@ A parameter that’s trainable, such as weights or bias.
 var BNNSParameter: BNNSDescriptorType { get }
 ```
 
+```c
+BNNSParameter
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsdescriptortype/init(_:).md)
-- [init(rawValue: UInt32)](bnnsdescriptortype/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsdescriptortype/rawvalue.md)
-- [var BNNSConstant: BNNSDescriptorType](bnnsconstant.md)
+### Descriptor Types
+- [init(UInt32)](./bnnsdescriptortype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsdescriptortype/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsdescriptortype/rawvalue.md)
+- [var BNNSConstant: BNNSDescriptorType](./bnnsconstant.md)
   A constant that doesn’t have a gradient.
-- [var BNNSSample: BNNSDescriptorType](bnnssample.md)
+- [var BNNSSample: BNNSDescriptorType](./bnnssample.md)
   A sample such as input or output.
 
 

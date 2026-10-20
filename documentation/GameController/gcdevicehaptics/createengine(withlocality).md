@@ -1,7 +1,8 @@
 # createEngine(withLocality:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a haptics engine with the specified locality.
 
@@ -19,13 +20,17 @@ Creates a haptics engine with the specified locality.
 func createEngine(withLocality locality: GCHapticsLocality) -> CHHapticEngine?
 ```
 
+```objc
+- (CHHapticEngine *) createEngineWithLocality:(GCHapticsLocality) locality;
+```
+
 #### Return Value
 
 A new haptics engine with the specified locality.
 
 #### Discussion
 
-If you create an engine using the [`default`](gchapticslocality/default.md) location, users have the expected haptic experience. For example, the engine uses the handle accuators. If you want to create different experiences, such as using the left handle actuator as a woofer and the right actuator as a tweeter, create one or more engines with different localities.
+If you create an engine using the [`default`](../gchapticslocality/default.md) location, users have the expected haptic experience. For example, the engine uses the handle accuators. If you want to create different experiences, such as using the left handle actuator as a woofer and the right actuator as a tweeter, create one or more engines with different localities.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ If you create an engine using the [`default`](gchapticslocality/default.md) loca
 
 ## See Also
 
-- [let GCHapticDurationInfinite: Float](gchapticdurationinfinite.md)
+### Creating a haptics engine
+- [let GCHapticDurationInfinite: Float](../gchapticdurationinfinite.md)
   An infinite duration for a haptics event.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setHead(
  IOFWCmdQ &queue);
 ```
@@ -20,8 +20,9 @@ inserts a command at the head of a queue.
 
 ## See Also
 
-- [insertAfter](iofwcommand/1813158-insertafter.md)
-- [removeFromQ](iofwcommand/1813168-removefromq.md)
+### Miscellaneous
+- [insertAfter](./api-1813158-insertafter.md)
+- [removeFromQ](./api-1813168-removefromq.md)
 
 
 ---

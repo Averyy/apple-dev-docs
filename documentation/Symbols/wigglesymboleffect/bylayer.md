@@ -1,7 +1,8 @@
 # byLayer
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that applies separately to each motion group.
 

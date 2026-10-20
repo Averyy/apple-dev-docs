@@ -1,7 +1,8 @@
 # Restrictions
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of restrictions on the device.
 
@@ -17,7 +18,7 @@ Get a list of restrictions on the device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +28,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowQueryRestrictions |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -80,9 +81,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object RestrictionsCommand](restrictionscommand.md)
+- [object RestrictionsCommand](./restrictionscommand.md)
   The command to get a list of restrictions on the device.
-- [object RestrictionsResponse](restrictionsresponse.md)
+- [object RestrictionsResponse](./restrictionsresponse.md)
   A response from the device after it processes the command to get a list of restrictions on the device.
 
 ## Endpoint
@@ -91,15 +92,23 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RestrictionsCommand`
+
 The request object the server returns for the Restrictions Command.
+
+## Responses
+
+- `200` OK (`RestrictionsResponse`, `application/xml`): The response object the system returns for the Restrictions Command.
 
 ## See Also
 
-- [Device Information](device-information-command.md)
+### Device details
+- [Device Information](./device-information-command.md)
   Get detailed information about a device.
-- [Device Configured](device-configured-command.md)
+- [Device Configured](./device-configured-command.md)
   Inform the device that it can allow the user to continue in Setup Assistant.
-- [User Configured](user-configured-command.md)
+- [User Configured](./user-configured-command.md)
   Inform the device that it can continue past Setup Assistant and finish login.
 
 

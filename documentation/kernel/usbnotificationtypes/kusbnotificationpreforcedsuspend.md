@@ -1,7 +1,8 @@
 # kUSBNotificationPreForcedSuspend
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system sends a notification prior to a forced suspend.
 
@@ -10,7 +11,7 @@ The system sends a notification prior to a forced suspend.
 
 ## Declaration
 
-```swift
+```c
 kUSBNotificationPreForcedSuspend = (1 << kUSBNotificationPreForcedSuspendBit)
 ```
 

@@ -1,17 +1,22 @@
 # withIncomingRFCOMMChannel(_:eventSelector:selectorTarget:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Bluetooth-based OBEX Session using an incoming RFCOMM channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withIncomingRFCOMMChannel(_ inChannel: IOBluetoothRFCOMMChannel!, eventSelector inEventSelector: Selector!, selectorTarget inEventSelectorTarget: Any!, refCon inUserRefCon: UnsafeMutableRawPointer!) -> Self!
+```
+
+```objc
++ (instancetype) withIncomingRFCOMMChannel:(IOBluetoothRFCOMMChannel *) inChannel eventSelector:(SEL) inEventSelector selectorTarget:(id) inEventSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
 #### Discussion

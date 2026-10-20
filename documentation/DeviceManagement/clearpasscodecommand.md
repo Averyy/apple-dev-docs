@@ -1,7 +1,8 @@
 # ClearPasscodeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remove the passcode from a device.
 
@@ -14,19 +15,19 @@ The command to remove the passcode from a device.
 
 ## Declaration
 
-```swift
+```
 object ClearPasscodeCommand
 ```
 
 ## Mentions
 
-- [Managing passcodes](managing-passcodes.md)
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Managing passcodes](./managing-passcodes.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ClearPasscodeCommand.Command](clearpasscodecommand/command-data.dictionary.md)
+- [object ClearPasscodeCommand.Command](./clearpasscodecommand/command-data.dictionary.md)
   The command to remove the passcode from a device.
 
 ## Properties
@@ -36,7 +37,8 @@ object ClearPasscodeCommand
 
 ## See Also
 
-- [object ClearPasscodeResponse](clearpasscoderesponse.md)
+### Commands and responses
+- [object ClearPasscodeResponse](./clearpasscoderesponse.md)
   A response from the device after it processes the command to remove the passcode from a device.
 
 

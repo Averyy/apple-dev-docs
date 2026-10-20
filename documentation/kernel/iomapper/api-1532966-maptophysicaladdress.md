@@ -1,22 +1,24 @@
 # mapToPhysicalAddress
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint64_t mapToPhysicalAddress(uint64_t mappedAddress);
 ```
 
 ## See Also
 
-- [- iovmMapMemory](iomapper/1532977-iovmmapmemory.md)
-- [- iovmUnmapMemory](iomapper/1532968-iovmunmapmemory.md)
-- [- iovmInsert](iomapper/1532983-iovminsert.md)
+### Mapping Memory Addresses
+- [- iovmMapMemory](./api-1532977-iovmmapmemory.md)
+- [- iovmUnmapMemory](./api-1532968-iovmunmapmemory.md)
+- [- iovmInsert](./api-1532983-iovminsert.md)
 
 
 ---

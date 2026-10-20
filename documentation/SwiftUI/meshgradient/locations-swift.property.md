@@ -1,7 +1,8 @@
 # locations
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of locations. Must contain `width x height` elements.
 

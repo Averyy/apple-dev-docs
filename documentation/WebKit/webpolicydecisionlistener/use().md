@@ -2,17 +2,22 @@
 
 **Framework**: WebKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the listener to use the resource.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func use()
+```
+
+```objc
+- (void) use;
 ```
 
 #### Discussion
@@ -21,11 +26,13 @@ If there are pending policy decisions, the next policy delegate method has the o
 
 ## See Also
 
-- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](webview-swift.class/registerclass(_:representationclass:formimetype:).md)
+### Related Documentation
+- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](../webview-swift.class/registerclass%28_,representationclass,formimetype%29.md)
   Specifies the view and representation objects to be used for specific MIME types.
-- [func download()](webpolicydecisionlistener/download.md)
+### Making Resource-Usage Decisions
+- [func download()](./download%28%29.md)
   Tells the listener to download the resource instead of displaying it.
-- [func ignore()](webpolicydecisionlistener/ignore.md)
+- [func ignore()](./ignore%28%29.md)
   Tells the listener to ignore the resource.
 
 

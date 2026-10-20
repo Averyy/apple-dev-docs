@@ -1,7 +1,8 @@
 # TVUserActivityTypeBrowsingEntertainmentContent
 
 **Framework**: TV Services  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The activity type used to open the main screen of the TV Provider app
 
@@ -12,6 +13,10 @@ The activity type used to open the main screen of the TV Provider app
 
 ```swift
 let TVUserActivityTypeBrowsingEntertainmentContent: String
+```
+
+```c
+extern NSString * const TVUserActivityTypeBrowsingEntertainmentContent;
 ```
 
 

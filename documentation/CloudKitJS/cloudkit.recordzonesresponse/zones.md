@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zones for the successful database operations.
 
@@ -10,7 +11,7 @@ The zones for the successful database operations.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.RecordZone[] zones;
 ```
 

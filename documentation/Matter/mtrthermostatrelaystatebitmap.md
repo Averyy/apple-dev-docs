@@ -1,7 +1,8 @@
 # MTRThermostatRelayStateBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,30 +19,34 @@
 struct MTRThermostatRelayStateBitmap
 ```
 
+```c
+enum MTRThermostatRelayStateBitmap : uint16_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt16)](mtrthermostatrelaystatebitmap/init(rawvalue:).md)
+- [init(rawValue: UInt16)](./mtrthermostatrelaystatebitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var cool: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/cool.md)
-- [static var coolStage2: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/coolstage2.md)
-- [static var fan: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/fan.md)
-- [static var fanStage2: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/fanstage2.md)
-- [static var fanStage3: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/fanstage3.md)
-- [static var heat: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/heat.md)
-- [static var heatStage2: MTRThermostatRelayStateBitmap](mtrthermostatrelaystatebitmap/heatstage2.md)
+- [static var cool: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/cool.md)
+- [static var coolStage2: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/coolstage2.md)
+- [static var fan: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/fan.md)
+- [static var fanStage2: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/fanstage2.md)
+- [static var fanStage3: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/fanstage3.md)
+- [static var heat: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/heat.md)
+- [static var heatStage2: MTRThermostatRelayStateBitmap](./mtrthermostatrelaystatebitmap/heatstage2.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

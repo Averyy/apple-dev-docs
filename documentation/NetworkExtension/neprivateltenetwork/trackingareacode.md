@@ -1,7 +1,8 @@
 # trackingAreaCode
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Tracking Area Code of the private LTE network.
 
@@ -17,15 +18,20 @@ The Tracking Area Code of the private LTE network.
 var trackingAreaCode: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * trackingAreaCode;
+```
+
 #### Discussion
 
 This property is only applicable for band 48 private LTE networks.
 
 ## See Also
 
-- [var mobileCountryCode: String](neprivateltenetwork/mobilecountrycode.md)
+### Accessing network properties
+- [var mobileCountryCode: String](./mobilecountrycode.md)
   The Mobile Country Code (MCC) of the private LTE network.
-- [var mobileNetworkCode: String](neprivateltenetwork/mobilenetworkcode.md)
+- [var mobileNetworkCode: String](./mobilenetworkcode.md)
   The Mobile Network Code (MNC) of the private LTE network.
 
 

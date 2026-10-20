@@ -1,21 +1,26 @@
 # UICollectionViewDiffableDataSourceReferenceCellProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a cell for a collection view from its diffable data source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias UICollectionViewDiffableDataSourceReferenceCellProvider = (UICollectionView, IndexPath, Any) -> UICollectionViewCell?
+```
+
+```c
+typedef UICollectionViewCell *(^)(UICollectionView *, NSIndexPath *, id) UICollectionViewDiffableDataSourceCellProvider;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A non-`nil` configured cell object. The cell provider must return a valid cell o
 
 ## See Also
 
-- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSourceReferenceCellProvider)](uicollectionviewdiffabledatasourcereference/init(collectionview:cellprovider:).md)
+### Creating a diffable data source
+- [init(collectionView: UICollectionView, cellProvider: UICollectionViewDiffableDataSourceReferenceCellProvider)](./uicollectionviewdiffabledatasourcereference/init%28collectionview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified collection view.
 
 

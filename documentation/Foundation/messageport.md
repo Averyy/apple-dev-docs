@@ -1,7 +1,8 @@
 # MessagePort
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A port that can be used as an endpoint for distributed object connections (or raw messaging).
 
@@ -20,44 +21,52 @@ A port that can be used as an endpoint for distributed object connections (or ra
 class MessagePort
 ```
 
+```objc
+@interface NSMessagePort : NSPort
+```
+
 #### Overview
 
-[`MessagePort`](messageport.md) is a subclass of [`Port`](port.md) that allows for local (on the same machine) communication only. A companion class, [`SocketPort`](socketport.md), allows for both local and remote communication, but may be more expensive than [`MessagePort`](messageport.md) for the local case.
+[`MessagePort`](./messageport.md) is a subclass of [`Port`](./port.md) that allows for local (on the same machine) communication only. A companion class, [`SocketPort`](./socketport.md), allows for both local and remote communication, but may be more expensive than [`MessagePort`](./messageport.md) for the local case.
 
-[`MessagePort`](messageport.md) defines no additional methods over those already defined by [`Port`](port.md).
+[`MessagePort`](./messageport.md) defines no additional methods over those already defined by [`Port`](./port.md).
 
-> **Note**:  [`MessagePort`](messageport.md) conforms to the [`NSCoding`](nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](nsportcoder.md) object. [`Port`](port.md) and its subclasses do not support archiving.
+> **Note**:  [`MessagePort`](./messageport.md) conforms to the [`NSCoding`](./nscoding.md) protocol, but only supports coding by an [`NSPortCoder`](./nsportcoder.md) object. [`Port`](./port.md) and its subclasses do not support archiving.
 
-> ❗ **Important**:  Avoid [`MessagePort`](messageport.md). There’s little reason to use [`MessagePort`](messageport.md) rather than [`NSMachPort`](nsmachport.md) or [`SocketPort`](socketport.md). There’s no particular performance or functionality advantage. It is recommended avoiding its use. [`MessagePort`](messageport.md) may be deprecated in the macOS 10.6 or later.
+> ❗ **Important**:  Avoid [`MessagePort`](./messageport.md). There’s little reason to use [`MessagePort`](./messageport.md) rather than [`NSMachPort`](./nsmachport.md) or [`SocketPort`](./socketport.md). There’s no particular performance or functionality advantage. It is recommended avoiding its use.
+>
+> [`MessagePort`](./messageport.md) may be deprecated in the macOS 10.6 or later.
 
 ## Relationships
 
 ### Inherits From
-- [Port](port.md)
+- [Port](./port.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
-- [protocol NSMachPortDelegate](nsmachportdelegate.md)
+### Related Documentation
+- [Distributed Objects Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
+### Legacy
+- [protocol NSMachPortDelegate](./nsmachportdelegate.md)
   An interface for handling incoming Mach messages.
-- [class NSMachPort](nsmachport.md)
+- [class NSMachPort](./nsmachport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [protocol PortDelegate](portdelegate.md)
+- [protocol PortDelegate](./portdelegate.md)
   An interface for handling incoming messages.
-- [class PortMessage](portmessage.md)
+- [class PortMessage](./portmessage.md)
   A low-level, operating system-independent type for inter-application (and inter-thread) messages.
-- [class NSProtocolChecker](nsprotocolchecker.md)
+- [class NSProtocolChecker](./nsprotocolchecker.md)
   An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate).
 
 

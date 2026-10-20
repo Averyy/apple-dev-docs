@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the weather condition
 

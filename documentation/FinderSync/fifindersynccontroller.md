@@ -1,7 +1,8 @@
 # FIFinderSyncController
 
 **Framework**: Finder Sync  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller that acts as a bridge between your Finder Sync extension and the Finder itself.
 
@@ -14,6 +15,10 @@ A controller that acts as a bridge between your Finder Sync extension and the Fi
 class FIFinderSyncController
 ```
 
+```objc
+@interface FIFinderSyncController : NSExtensionContext
+```
+
 #### Overview
 
 Use the Finder Sync controller to configure your extension, to set badges on items in the Finder’s window, and to get a list of selected and targeted items.
@@ -21,45 +26,46 @@ Use the Finder Sync controller to configure your extension, to set badges on ite
 ## Topics
 
 ### Managing the Finder Sync Controller
-- [class func `default`() -> Self](fifindersynccontroller/default.md)
+- [class func `default`() -> Self](./fifindersynccontroller/default%28%29.md)
   Returns the shared Finder Sync controller object.
-- [var directoryURLs: Set<URL>!](fifindersynccontroller/directoryurls.md)
+- [var directoryURLs: Set<URL>!](./fifindersynccontroller/directoryurls.md)
   The directories managed by this extension.
-- [func selectedItemURLs() -> [URL]?](fifindersynccontroller/selecteditemurls.md)
+- [func selectedItemURLs() -> [URL]?](./fifindersynccontroller/selecteditemurls%28%29.md)
   Returns an array of selected items.
-- [func setBadgeIdentifier(String, for: URL)](fifindersynccontroller/setbadgeidentifier(_:for:).md)
+- [func setBadgeIdentifier(String, for: URL)](./fifindersynccontroller/setbadgeidentifier%28_,for%29.md)
   Sets the badge for a file or directory.
-- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](fifindersynccontroller/setbadgeimage(_:label:forbadgeidentifier:).md)
+- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](./fifindersynccontroller/setbadgeimage%28_,label,forbadgeidentifier%29.md)
   Sets the badge image and label for the given ID.
-- [func targetedURL() -> URL?](fifindersynccontroller/targetedurl.md)
+- [func targetedURL() -> URL?](./fifindersynccontroller/targetedurl%28%29.md)
   Returns the URL of the Finder’s current target.
 ### Instance Methods
-- [func lastUsedDateForItem(with: URL) -> Date?](fifindersynccontroller/lastuseddateforitem(with:).md)
-- [func setLastUsedDate(Date, forItemWith: URL, completion: (any Error) -> Void)](fifindersynccontroller/setlastuseddate(_:foritemwith:completion:).md)
-- [func setTagData(Data?, forItemWith: URL, completion: (any Error) -> Void)](fifindersynccontroller/settagdata(_:foritemwith:completion:).md)
-- [func tagDataForItem(with: URL) -> Data?](fifindersynccontroller/tagdataforitem(with:).md)
+- [func lastUsedDateForItem(with: URL) -> Date?](./fifindersynccontroller/lastuseddateforitem%28with%29.md)
+- [func setLastUsedDate(Date, forItemWith: URL, completion: (any Error) -> Void)](./fifindersynccontroller/setlastuseddate%28_,foritemwith,completion%29.md)
+- [func setTagData(Data?, forItemWith: URL, completion: (any Error) -> Void)](./fifindersynccontroller/settagdata%28_,foritemwith,completion%29.md)
+- [func tagDataForItem(with: URL) -> Data?](./fifindersynccontroller/tagdataforitem%28with%29.md)
 ### Type Properties
-- [class var isExtensionEnabled: Bool](fifindersynccontroller/isextensionenabled.md)
+- [class var isExtensionEnabled: Bool](./fifindersynccontroller/isextensionenabled.md)
 ### Type Methods
-- [class func showExtensionManagementInterface()](fifindersynccontroller/showextensionmanagementinterface.md)
+- [class func showExtensionManagementInterface()](./fifindersynccontroller/showextensionmanagementinterface%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSExtensionContext](../foundation/nsextensioncontext.md)
+- [NSExtensionContext](../Foundation/nsextensioncontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class FIFinderSync](fifindersync-swift.class.md)
+### Classes
+- [class FIFinderSync](./fifindersync-swift.class.md)
   A type to subclass to add badges, custom shortcut menus, and toolbar buttons to the Finder.
 
 

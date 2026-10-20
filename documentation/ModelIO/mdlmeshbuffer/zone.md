@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The memory pool from which the buffer was created.
@@ -20,15 +21,20 @@ The memory pool from which the buffer was created.
 var zone: any MDLMeshBufferZone { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) id<MDLMeshBufferZone> zone;
+```
+
 #### Discussion
 
-Use the [`newBuffer(from:data:type:)`](mdlmeshbufferallocator/newbuffer(from:data:type:).md) or [`newBuffer(from:length:type:)`](mdlmeshbufferallocator/newbuffer(from:length:type:).md) method of an allocator to reserve memory in a shared pool for multiple related buffers.
+Use the [`newBuffer(from:data:type:)`](../mdlmeshbufferallocator/newbuffer%28from,data,type%29.md) or [`newBuffer(from:length:type:)`](../mdlmeshbufferallocator/newbuffer%28from,length,type%29.md) method of an allocator to reserve memory in a shared pool for multiple related buffers.
 
 ## See Also
 
-- [var allocator: any MDLMeshBufferAllocator](mdlmeshbuffer/allocator.md)
+### Inspecting a Buffer
+- [var allocator: any MDLMeshBufferAllocator](./allocator.md)
   The allocator object that created the buffer.
-- [var type: MDLMeshBufferType](mdlmeshbuffer/type.md)
+- [var type: MDLMeshBufferType](./type.md)
   The type of data contained in a buffer.
 
 

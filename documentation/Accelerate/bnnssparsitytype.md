@@ -1,16 +1,17 @@
 # BNNSSparsityType
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,33 +19,38 @@
 struct BNNSSparsityType
 ```
 
+```c
+typedef enum { ... } BNNSSparsityType;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](bnnssparsitytype/init(_:).md)
-- [init(rawValue: UInt32)](bnnssparsitytype/init(rawvalue:).md)
+- [init(UInt32)](./bnnssparsitytype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnssparsitytype/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](bnnssparsitytype/rawvalue.md)
+- [var rawValue: UInt32](./bnnssparsitytype/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct BNNSDataType](bnnsdatatype.md)
+### Structures
+- [struct BNNSDataType](./bnnsdatatype.md)
   BNNS Data Types.
-- [struct BNNSSparsityParameters](bnnssparsityparameters.md)
-- [struct BNNSTargetSystem](bnnstargetsystem.md)
-- [struct bnns_graph_argument_t](bnns_graph_argument_t.md)
+- [struct BNNSSparsityParameters](./bnnssparsityparameters.md)
+- [struct BNNSTargetSystem](./bnnstargetsystem.md)
+- [struct bnns_graph_argument_t](./bnns_graph_argument_t.md)
   Describes data associated with an input or output argument
-- [struct BNNSImageStackDescriptor](bnnsimagestackdescriptor.md)
-- [struct BNNSVectorDescriptor](bnnsvectordescriptor.md)
+- [struct BNNSImageStackDescriptor](./bnnsimagestackdescriptor.md)
+- [struct BNNSVectorDescriptor](./bnnsvectordescriptor.md)
 
 
 ---

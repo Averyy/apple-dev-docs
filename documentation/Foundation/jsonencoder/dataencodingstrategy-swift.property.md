@@ -1,7 +1,8 @@
 # dataEncodingStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy that an encoder uses to encode raw data.
 
@@ -22,11 +23,12 @@ var dataEncodingStrategy: JSONEncoder.DataEncodingStrategy { get set }
 
 #### Discussion
 
-The default strategy is the [`JSONEncoder.DataEncodingStrategy.base64`](jsonencoder/dataencodingstrategy-swift.enum/base64.md) strategy.
+The default strategy is the [`JSONEncoder.DataEncodingStrategy.base64`](./dataencodingstrategy-swift.enum/base64.md) strategy.
 
 ## See Also
 
-- [JSONEncoder.DataEncodingStrategy](jsonencoder/dataencodingstrategy-swift.enum.md)
+### Encoding Raw Data
+- [JSONEncoder.DataEncodingStrategy](./dataencodingstrategy-swift.enum.md)
   The strategies for encoding raw data.
 
 

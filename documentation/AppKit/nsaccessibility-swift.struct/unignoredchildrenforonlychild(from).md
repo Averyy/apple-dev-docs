@@ -1,17 +1,22 @@
 # unignoredChildrenForOnlyChild(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a list of unignored accessibility objects, descending the hierarchy, if necessary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 static func unignoredChildrenForOnlyChild(from originalChild: Any) -> [Any]
+```
+
+```c
+extern NSArray *NSAccessibilityUnignoredChildrenForOnlyChild(id originalChild);
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Tests whether `originalChild` is an ignored object and returns an array containi
 
 ## See Also
 
-- [static func unignoredAncestor(of: Any) -> Any?](nsaccessibility-swift.struct/unignoredancestor(of:).md)
+### Getting Accessibility Objects
+- [static func unignoredAncestor(of: Any) -> Any?](./unignoredancestor%28of%29.md)
   Returns an unignored accessibility object, ascending the hierarchy, if necessary.
-- [static func unignoredChildren(from: [Any]) -> [Any]](nsaccessibility-swift.struct/unignoredchildren(from:).md)
+- [static func unignoredChildren(from: [Any]) -> [Any]](./unignoredchildren%28from%29.md)
   Returns a list of unignored accessibility objects, descending the hierarchy, if necessary.
-- [static func unignoredDescendant(of: Any) -> Any?](nsaccessibility-swift.struct/unignoreddescendant(of:).md)
+- [static func unignoredDescendant(of: Any) -> Any?](./unignoreddescendant%28of%29.md)
   Returns an unignored accessibility object, descending the hierarchy, if necessary.
 
 

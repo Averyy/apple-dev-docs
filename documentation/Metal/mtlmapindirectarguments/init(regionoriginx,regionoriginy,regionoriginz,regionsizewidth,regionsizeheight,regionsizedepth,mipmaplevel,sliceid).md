@@ -1,17 +1,18 @@
 # init(regionOriginX:regionOriginY:regionOriginZ:regionSizeWidth:regionSizeHeight:regionSizeDepth:mipMapLevel:sliceId:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new data layout for mapping sparse texture regions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -32,7 +33,8 @@ init(regionOriginX: UInt32, regionOriginY: UInt32, regionOriginZ: UInt32, region
 
 ## See Also
 
-- [init()](mtlmapindirectarguments/init.md)
+### Creating indirect mapping arguments
+- [init()](./init%28%29.md)
   Returns a default data layout for mapping sparse texture regions.
 
 

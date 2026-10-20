@@ -1,7 +1,8 @@
 # memoryBarrier(resources:after:before:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a memory barrier that enforces the order of write and read operations for specific resources.
 
@@ -11,7 +12,7 @@ Creates a memory barrier that enforces the order of write and read operations fo
 - Mac Catalyst 14.0+
 - macOS 10.14+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,21 +24,22 @@ func memoryBarrier(resources: [any MTLResource], after: MTLRenderStages, before:
 
 Memory barriers ensure the relevant stages of prior draw commands finish modifying resources before starting the stages of subsequent commands that depend on those resources.
 
-To determine whether a GPU supports memory barriers, see the [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+To determine whether a GPU supports memory barriers, see the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
 ## Parameters
 
-- `resources`: An array of [`MTLResource`](mtlresource.md) instances the barrier applies to.
+- `resources`: An array of [`MTLResource`](../mtlresource.md) instances the barrier applies to.
 - `after`: The render stages of previous draw commands that modify `resources`.
 - `before`: The render stages of subsequent draw commands that read or modify `resources`.
 
 ## See Also
 
-- [func waitForFence(any MTLFence, before: MTLRenderStages)](mtlrendercommandencoder/waitforfence(_:before:).md)
+### Preventing resource access conflicts
+- [func waitForFence(any MTLFence, before: MTLRenderStages)](./waitforfence%28_,before%29.md)
   Encodes a command that instructs the GPU to pause before starting one or more stages of the render pass until a pass updates a fence.
-- [func updateFence(any MTLFence, after: MTLRenderStages)](mtlrendercommandencoder/updatefence(_:after:).md)
+- [func updateFence(any MTLFence, after: MTLRenderStages)](./updatefence%28_,after%29.md)
   Encodes a command that instructs the GPU to update a fence after one or more stages, which can unblock other passes waiting for the fence.
-- [func memoryBarrier(scope: MTLBarrierScope, after: MTLRenderStages, before: MTLRenderStages)](mtlrendercommandencoder/memorybarrier(scope:after:before:).md)
+- [func memoryBarrier(scope: MTLBarrierScope, after: MTLRenderStages, before: MTLRenderStages)](./memorybarrier%28scope,after,before%29.md)
   Creates a memory barrier that enforces the order of write and read operations for specific resource types.
 
 

@@ -1,7 +1,8 @@
 # InstallApplicationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to install a third-party app on a device.
 
@@ -16,18 +17,18 @@ The command to install a third-party app on a device.
 
 ## Declaration
 
-```swift
+```
 object InstallApplicationCommand
 ```
 
 ## Mentions
 
-- [Allowing and denying apps and binaries](allowing-and-denying-apps-and-binaries.md)
+- [Allowing and denying apps and binaries](./allowing-and-denying-apps-and-binaries.md)
 
 ## Topics
 
 ### Objects
-- [object InstallApplicationCommand.Command](installapplicationcommand/command-data.dictionary.md)
+- [object InstallApplicationCommand.Command](./installapplicationcommand/command-data.dictionary.md)
   The command to install a third-party app on a device.
 
 ## Properties
@@ -37,7 +38,8 @@ object InstallApplicationCommand
 
 ## See Also
 
-- [object InstallApplicationResponse](installapplicationresponse.md)
+### Commands and responses
+- [object InstallApplicationResponse](./installapplicationresponse.md)
   A response from the device after it processes the command to install a third-party app on a device.
 
 

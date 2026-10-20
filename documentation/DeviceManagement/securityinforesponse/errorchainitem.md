@@ -1,7 +1,8 @@
 # SecurityInfoResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object SecurityInfoResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object SecurityInfoResponse.ErrorChainItem
 
 ## See Also
 
-- [object SecurityInfoResponse.SecurityInfo](securityinforesponse/securityinfo-data.dictionary.md)
+### Objects
+- [object SecurityInfoResponse.SecurityInfo](./securityinfo-data.dictionary.md)
   A dictionary that contains security-related information.
 
 

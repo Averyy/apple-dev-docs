@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a placeholder object to reserve visual space during text input.
@@ -15,7 +16,15 @@ Inserts a placeholder object to reserve visual space during text input.
 ## Declaration
 
 ```swift
+func insertTextPlaceholder(size: CGSize, completionHandler: @escaping @Sendable (UITextPlaceholder) -> Void)
+```
+
+```swift
 func insertTextPlaceholder(size: CGSize) async -> UITextPlaceholder
+```
+
+```objc
+- (void) insertTextPlaceholderWithSize:(CGSize) size completionHandler:(void (^)(UITextPlaceholder *)) completionHandler;
 ```
 
 #### Discussion

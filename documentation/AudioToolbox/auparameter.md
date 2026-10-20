@@ -1,7 +1,8 @@
 # AUParameter
 
 **Framework**: Audio Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a single audio unit parameter.
 
@@ -19,61 +20,66 @@ An object that represents a single audio unit parameter.
 class AUParameter
 ```
 
+```objc
+@interface AUParameter : AUParameterNode
+```
+
 ## Topics
 
 ### Querying Parameter Properties
-- [var minValue: AUValue](auparameter/minvalue.md)
+- [var minValue: AUValue](./auparameter/minvalue.md)
   The parameter’s minimum value.
-- [var maxValue: AUValue](auparameter/maxvalue.md)
+- [var maxValue: AUValue](./auparameter/maxvalue.md)
   The parameter’s maximum value.
-- [var unit: AudioUnitParameterUnit](auparameter/unit.md)
+- [var unit: AudioUnitParameterUnit](./auparameter/unit.md)
   The parameter’s unit of measurement.
-- [var unitName: String?](auparameter/unitname.md)
+- [var unitName: String?](./auparameter/unitname.md)
   The parameter’s localized unit name.
-- [var flags: AudioUnitParameterOptions](auparameter/flags.md)
+- [var flags: AudioUnitParameterOptions](./auparameter/flags.md)
   The parameter’s characteristic details.
-- [var address: AUParameterAddress](auparameter/address.md)
+- [var address: AUParameterAddress](./auparameter/address.md)
   The parameter’s address.
-- [var valueStrings: [String]?](auparameter/valuestrings.md)
+- [var valueStrings: [String]?](./auparameter/valuestrings.md)
   The parameter’s localized value strings.
-- [var dependentParameters: [NSNumber]?](auparameter/dependentparameters.md)
+- [var dependentParameters: [NSNumber]?](./auparameter/dependentparameters.md)
   Any other parameter’s whose values may change as a side effect of this parameter’s value changing.
 ### Managing Parameter Values
-- [var value: AUValue](auparameter/value.md)
+- [var value: AUValue](./auparameter/value.md)
   The parameter’s current value.
-- [func setValue(AUValue, originator: AUParameterObserverToken?)](auparameter/setvalue(_:originator:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?)](./auparameter/setvalue%28_,originator%29.md)
   Sets the parameter’s value, avoiding redundant notifications to the originator.
-- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64)](auparameter/setvalue(_:originator:athosttime:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64)](./auparameter/setvalue%28_,originator,athosttime%29.md)
   Sets the parameter’s value, preserving the host time of the gesture that initiated the change.
-- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64, eventType: AUParameterAutomationEventType)](auparameter/setvalue(_:originator:athosttime:eventtype:).md)
-- [func string(fromValue: UnsafePointer<AUValue>?) -> String](auparameter/string(fromvalue:).md)
+- [func setValue(AUValue, originator: AUParameterObserverToken?, atHostTime: UInt64, eventType: AUParameterAutomationEventType)](./auparameter/setvalue%28_,originator,athosttime,eventtype%29.md)
+- [func string(fromValue: UnsafePointer<AUValue>?) -> String](./auparameter/string%28fromvalue%29.md)
   Gets the string representation of a parameter value.
-- [func value(from: String) -> AUValue](auparameter/value(from:).md)
+- [func value(from: String) -> AUValue](./auparameter/value%28from%29.md)
   Converts a string into a parameter value.
 ### Initializers
-- [init?(coder: NSCoder)](auparameter/init(coder:).md)
+- [init?(coder: NSCoder)](./auparameter/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AUParameterNode](auparameternode.md)
+- [AUParameterNode](./auparameternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class AUParameterGroup](auparametergroup.md)
+### Parameters
+- [class AUParameterGroup](./auparametergroup.md)
   A parameter group object represents a group of related audio unit parameters.
-- [class AUParameterNode](auparameternode.md)
+- [class AUParameterNode](./auparameternode.md)
   An object that represents a node in an audio unit’s parameter tree.
-- [class AUParameterTree](auparametertree.md)
+- [class AUParameterTree](./auparametertree.md)
   An object that represents a top-level group node that contains all of an audio unit’s parameters.
 
 

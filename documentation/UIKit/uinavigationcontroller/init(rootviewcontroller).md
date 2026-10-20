@@ -1,7 +1,8 @@
 # init(rootViewController:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly created navigation controller.
 
@@ -9,13 +10,17 @@ Initializes and returns a newly created navigation controller.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(rootViewController: UIViewController)
+```
+
+```objc
+- (instancetype) initWithRootViewController:(UIViewController *) rootViewController;
 ```
 
 #### Return Value
@@ -28,15 +33,16 @@ This is a convenience method for initializing the receiver and pushing a root vi
 
 ## Parameters
 
-- `rootViewController`: The view controller that resides at the bottom of the navigation stack. This object cannot be an instance of the [`UITabBarController`](uitabbarcontroller.md) class.
+- `rootViewController`: The view controller that resides at the bottom of the navigation stack. This object cannot be an instance of the [`UITabBarController`](../uitabbarcontroller.md) class.
 
 ## See Also
 
-- [init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?)](uinavigationcontroller/init(navigationbarclass:toolbarclass:).md)
+### Creating a navigation controller
+- [init(navigationBarClass: AnyClass?, toolbarClass: AnyClass?)](./init%28navigationbarclass,toolbarclass%29.md)
   Initializes and returns a newly created navigation controller that uses your custom bar subclasses.
-- [init(nibName: String?, bundle: Bundle?)](uinavigationcontroller/init(nibname:bundle:).md)
+- [init(nibName: String?, bundle: Bundle?)](./init%28nibname,bundle%29.md)
   Creates a navigation controller with the nib file in the specified bundle.
-- [init?(coder: NSCoder)](uinavigationcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a navigation controller from data in an unarchiver.
 
 

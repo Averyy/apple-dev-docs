@@ -1,31 +1,33 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [withString](osstring/withstring.md)
+### Creating a String
+- [withString](./withstring.md)
   Allocates an OSString object with a copy of an OString object.
-- [withCString](osstring/withcstring-4wsql.md)
+- [withCString](./withcstring-4wsql.md)
   Allocates an OSString object with a copy of a c-string.
-- [withCString](osstring/withcstring-721oh.md)
+- [withCString](./withcstring-721oh.md)
   Allocates an OSString object with a copy of a c-string, up to a given length.
-- [withCStringNoCopy](osstring/withcstringnocopy.md)
+- [withCStringNoCopy](./withcstringnocopy.md)
   Allocates an OSString object with a copy of a c-string.
-- [OSStringCreate](osstringcreate.md)
+- [OSStringCreate](../osstringcreate.md)
 
 
 ---

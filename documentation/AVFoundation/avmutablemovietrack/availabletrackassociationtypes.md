@@ -1,7 +1,8 @@
 # availableTrackAssociationTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of association types that the track uses to associate with other tracks.
 
@@ -21,11 +22,12 @@ var availableTrackAssociationTypes: [AVAssetTrack.AssociationType] { get }
 
 ## See Also
 
-- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](avmutablemovietrack/associatedtracks(oftype:).md)
+### Managing track associations
+- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](./associatedtracks%28oftype%29.md)
   Returns an array of associated tracks that have the specified association type.
-- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/addtrackassociation(to:type:).md)
+- [func addTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](./addtrackassociation%28to,type%29.md)
   Creates a specific type of track association between two tracks.
-- [func removeTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](avmutablemovietrack/removetrackassociation(to:type:).md)
+- [func removeTrackAssociation(to: AVMovieTrack, type: AVAssetTrack.AssociationType)](./removetrackassociation%28to,type%29.md)
   Removes a specific type of track association between two tracks.
 
 

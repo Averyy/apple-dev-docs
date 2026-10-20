@@ -1,7 +1,8 @@
 # MediaCommand.FeedbackStatus.negative
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has expressed negative feedback for the content.
 

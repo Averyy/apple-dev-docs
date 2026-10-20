@@ -1,7 +1,8 @@
 # SKNodeFocusBehavior.none
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Node is not focusable.
 
@@ -19,15 +20,20 @@ Node is not focusable.
 case none
 ```
 
+```c
+SKNodeFocusBehaviorNone
+```
+
 #### Discussion
 
 This behavior is the default for a node.
 
 ## See Also
 
-- [SKNodeFocusBehavior.occluding](sknodefocusbehavior/occluding.md)
+### Enumeration Cases
+- [SKNodeFocusBehavior.occluding](./occluding.md)
   Node is not focusable and prevents nodes that it visually obscures from becoming focusable.
-- [SKNodeFocusBehavior.focusable](sknodefocusbehavior/focusable.md)
+- [SKNodeFocusBehavior.focusable](./focusable.md)
   Node is focusable and prevents nodes that it visually obscures from becoming focusable.
 
 

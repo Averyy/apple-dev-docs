@@ -1,7 +1,8 @@
 # token
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specified token, when retrieving history defined by a token.
 
@@ -18,6 +19,10 @@ The specified token, when retrieving history defined by a token.
 
 ```swift
 var token: NSPersistentHistoryToken? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSPersistentHistoryToken * token;
 ```
 
 

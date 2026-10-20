@@ -1,7 +1,8 @@
 # init(client:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The designated initializer
 
@@ -12,6 +13,10 @@ The designated initializer
 
 ```swift
 init(client: any NSTextInputClient)
+```
+
+```objc
+- (instancetype) initWithClient:(id<NSTextInputClient>) client;
 ```
 
 

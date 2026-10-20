@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the view properties for a placement in the arrangement.
@@ -23,7 +24,7 @@ mutating func setViewProperties(_ properties: Self.ViewProperties, for placement
 
 Set view properties to configure how an arrangement presents a view in the placement you specify.
 
-For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 
 ## Parameters
 

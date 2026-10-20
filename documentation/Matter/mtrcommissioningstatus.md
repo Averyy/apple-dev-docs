@@ -1,7 +1,8 @@
 # MTRCommissioningStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.4+
@@ -18,25 +19,29 @@
 enum MTRCommissioningStatus
 ```
 
+```c
+enum MTRCommissioningStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRCommissioningStatus.discoveringMoreDevices](mtrcommissioningstatus/discoveringmoredevices.md)
-- [MTRCommissioningStatus.failed](mtrcommissioningstatus/failed.md)
-- [MTRCommissioningStatus.success](mtrcommissioningstatus/success.md)
-- [MTRCommissioningStatus.unknown](mtrcommissioningstatus/unknown.md)
+- [MTRCommissioningStatus.discoveringMoreDevices](./mtrcommissioningstatus/discoveringmoredevices.md)
+- [MTRCommissioningStatus.failed](./mtrcommissioningstatus/failed.md)
+- [MTRCommissioningStatus.success](./mtrcommissioningstatus/success.md)
+- [MTRCommissioningStatus.unknown](./mtrcommissioningstatus/unknown.md)
 ### Initializers
-- [init?(rawValue: Int)](mtrcommissioningstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtrcommissioningstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,18 +1,21 @@
 # GKScore
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object containing information for a score that was earned by the player.
 
 **Availability**:
-- iOS 4.1+
-- iPadOS 4.1+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 4.1+ - Deprecated in 14.0
+- iPadOS 4.1+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.8+ - Deprecated in 11.0
+- tvOS 9.0+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 7.0
+
+> **Deprecated**: Use the [`GKLeaderboard.Entry`](./gkleaderboard/entry.md) class instead.
 
 ## Declaration
 
@@ -20,115 +23,120 @@ An object containing information for a score that was earned by the player.
 class GKScore
 ```
 
+```objc
+@interface GKScore : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**:  Your game must initialize a local player before you can use any Game Center classes. If there is no initialized player, your game receives a [`GKError.Code.notAuthenticated`](gkerror/code/notauthenticated.md) error. For more information, see [`Authenticating a player`](authenticating-a-player.md).
+> ❗ **Important**:  Your game must initialize a local player before you can use any Game Center classes. If there is no initialized player, your game receives a [`GKError.Code.notAuthenticated`](./gkerror/code/notauthenticated.md) error. For more information, see [Authenticating a player](./authenticating-a-player.md).
 
 Your game creates `GKScore` objects to post scores to a leaderboard on Game Center. When your game retrieves score information from a leaderboard, those scores are returned as `GKScore` objects.
 
-Scores and leaderboards work together to help you create a better game. Whenever a new `GKScore` object is created, it is associated with a leaderboard. You must ensure that the score being sent to a leaderboard is compatible with the leaderboard scoring format set in App Store Connect. See [`Leaderboards and Leaderboard Sets`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/iTunesConnectGameCenter_Guide/Leaderboards/Leaderboards.html#//apple_ref/doc/uid/TP40013726-CH2) for information on how to create a leaderboard in App Store Connect.
+Scores and leaderboards work together to help you create a better game. Whenever a new `GKScore` object is created, it is associated with a leaderboard. You must ensure that the score being sent to a leaderboard is compatible with the leaderboard scoring format set in App Store Connect. See [Leaderboards and Leaderboard Sets](https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/iTunesConnectGameCenter_Guide/Leaderboards/Leaderboards.html#//apple_ref/doc/uid/TP40013726-CH2) for information on how to create a leaderboard in App Store Connect.
 
-To report a score to Game Center, your game allocates and initializes a new object, sets the [`value`](gkscore/value.md) property to the score the player earned, and then calls the [`report(completionHandler:)`](gkscore/report(completionhandler:).md) method. The mechanism your game uses to calculate scores is up to you to design; scores are only compared within your game.
+To report a score to Game Center, your game allocates and initializes a new object, sets the [`value`](./gkscore/value.md) property to the score the player earned, and then calls the [`report(completionHandler:)`](./gkscore/report%28completionhandler%29.md) method. The mechanism your game uses to calculate scores is up to you to design; scores are only compared within your game.
 
 ## Topics
 
 ### Reporting a New Score
-- [class func report([GKLeaderboardScore], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](gkscore/report(_:witheligiblechallenges:withcompletionhandler:)-2tycl.md)
+- [class func report([GKLeaderboardScore], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](./gkscore/report%28_,witheligiblechallenges,withcompletionhandler%29-2tycl.md)
   Submits a list of scores and all eligible challenges.
-- [class func report([GKScore], withCompletionHandler: (((any Error)?) -> Void)?)](gkscore/report(_:withcompletionhandler:).md)
+- [class func report([GKScore], withCompletionHandler: (((any Error)?) -> Void)?)](./gkscore/report%28_,withcompletionhandler%29.md)
   Reports a list of scores to Game Center
-- [class func report([GKScore], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](gkscore/report(_:witheligiblechallenges:withcompletionhandler:)-3c5lh.md)
+- [class func report([GKScore], withEligibleChallenges: [GKChallenge], withCompletionHandler: (((any Error)?) -> Void)?)](./gkscore/report%28_,witheligiblechallenges,withcompletionhandler%29-3c5lh.md)
   Submits a list of scores and all eligible challenges.
 ### Issuing a Score Challenge
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completion: GKChallengeComposeHandler?) -> UIViewController](gkscore/challengecomposecontroller(withmessage:players:completion:).md)
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completion: GKChallengeComposeHandler?) -> UIViewController](./gkscore/challengecomposecontroller%28withmessage,players,completion%29.md)
   Provides a challenge compose view controller with preselected player identifiers and a preformatted, player-editable message.
-- [typealias GKChallengeComposeHandler](gkchallengecomposehandler.md)
+- [typealias GKChallengeComposeHandler](./gkchallengecomposehandler.md)
   A completion block that provides information about the player who issues a challenge and the players who receive it.
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](gkscore/challengecomposecontroller(withmessage:players:completionhandler:).md)
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](./gkscore/challengecomposecontroller%28withmessage,players,completionhandler%29.md)
   Provides a challenge compose view controller with pre-selected player identifiers and a preformatted, player-editable message.
-- [func challengeComposeController(withPlayers: [String]?, message: String?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController?](gkscore/challengecomposecontroller(withplayers:message:completionhandler:).md)
+- [func challengeComposeController(withPlayers: [String]?, message: String?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController?](./gkscore/challengecomposecontroller%28withplayers,message,completionhandler%29.md)
   Provides a challenge compose view controller with pre-selected player identifiers and a preformatted, player-editable message.
 ### Deprecated Methods and Properties
-- [var category: String?](gkscore/category.md)
+- [var category: String?](./gkscore/category.md)
   The leaderboard that this score belongs to.
-- [var context: UInt64](gkscore/context.md)
+- [var context: UInt64](./gkscore/context.md)
   An integer value used by your game.
-- [var date: Date](gkscore/date.md)
+- [var date: Date](./gkscore/date.md)
   The date and time when the score was earned.
-- [var formattedValue: String?](gkscore/formattedvalue.md)
+- [var formattedValue: String?](./gkscore/formattedvalue.md)
   Returns the player’s score as a localized string.
-- [var leaderboardIdentifier: String](gkscore/leaderboardidentifier.md)
+- [var leaderboardIdentifier: String](./gkscore/leaderboardidentifier.md)
   The identifier for the leaderboard.
-- [var player: GKPlayer](gkscore/player.md)
+- [var player: GKPlayer](./gkscore/player.md)
   The player who earned the score.
-- [var rank: Int](gkscore/rank.md)
+- [var rank: Int](./gkscore/rank.md)
   The position of the score in the results of a leaderboard search.
-- [var value: Int64](gkscore/value.md)
+- [var value: Int64](./gkscore/value.md)
   The score earned by the player.
-- [var shouldSetDefaultLeaderboard: Bool](gkscore/shouldsetdefaultleaderboard.md)
+- [var shouldSetDefaultLeaderboard: Bool](./gkscore/shouldsetdefaultleaderboard.md)
   A Boolean value that indicates whether this score should also update the default leaderboard.
-- [init(leaderboardIdentifier: String)](gkscore/init(leaderboardidentifier:).md)
+- [init(leaderboardIdentifier: String)](./gkscore/init%28leaderboardidentifier%29.md)
   Returns an initialized score object using the local player and the current date.
-- [init(leaderboardIdentifier: String, player: GKPlayer)](gkscore/init(leaderboardidentifier:player:).md)
+- [init(leaderboardIdentifier: String, player: GKPlayer)](./gkscore/init%28leaderboardidentifier,player%29.md)
   Returns an initialized score object for the specified leaderboard and player.
-- [init(category: String?)](gkscore/init(category:).md)
+- [init(category: String?)](./gkscore/init%28category%29.md)
   Returns an initialized score object.
-- [init?(leaderboardIdentifier: String, forPlayer: String)](gkscore/init(leaderboardidentifier:forplayer:).md)
+- [init?(leaderboardIdentifier: String, forPlayer: String)](./gkscore/init%28leaderboardidentifier,forplayer%29.md)
   Returns an initialized score object for the specified leaderboard and player.
-- [func issueChallenge(toPlayers: [String]?, message: String?)](gkscore/issuechallenge(toplayers:message:).md)
+- [func issueChallenge(toPlayers: [String]?, message: String?)](./gkscore/issuechallenge%28toplayers,message%29.md)
   Issues a score challenge to a set of players.
-- [var playerID: String?](gkscore/playerid.md)
+- [var playerID: String?](./gkscore/playerid.md)
   The player identifier for the player that earned the score.
-- [func report(completionHandler: (((any Error)?) -> Void)?)](gkscore/report(completionhandler:).md)
+- [func report(completionHandler: (((any Error)?) -> Void)?)](./gkscore/report%28completionhandler%29.md)
   Reports a score to Game Center.
 ### Initializers
-- [init?(coder: NSCoder)](gkscore/init(coder:).md)
+- [init?(coder: NSCoder)](./gkscore/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKAchievementViewController](gkachievementviewcontroller.md)
-  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKChallengeEventHandler](gkchallengeeventhandler.md)
+### Deprecated classes
+- [class GKAchievementViewController](./gkachievementviewcontroller.md)
+  An `GKAchievementViewController` object provides a standard user interface to display achievement progress for the local player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKChallengeEventHandler](./gkchallengeeventhandler.md)
   The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
-- [class GKChallengesViewController](gkchallengesviewcontroller.md)
-- [class GKChallenge](gkchallenge.md)
+- [class GKChallengesViewController](./gkchallengesviewcontroller.md)
+- [class GKChallenge](./gkchallenge.md)
   A challenge issued by the local player to another player.
-- [class GKScoreChallenge](gkscorechallenge.md)
+- [class GKScoreChallenge](./gkscorechallenge.md)
   A type of challenge where a player must beat the leaderboard score of another player.
-- [class GKAchievementChallenge](gkachievementchallenge.md)
+- [class GKAchievementChallenge](./gkachievementchallenge.md)
   A type of challenge where a player must earn another player’s achievement.
-- [class GKCloudPlayer](gkcloudplayer.md)
+- [class GKCloudPlayer](./gkcloudplayer.md)
   The object representing the currently signed-in iCloud user.
-- [class GKGameCenterViewController](gkgamecenterviewcontroller.md)
+- [class GKGameCenterViewController](./gkgamecenterviewcontroller.md)
   The dashboard that allows players to access their Game Center data in your game.
-- [class GKGameSession](gkgamesession.md)
+- [class GKGameSession](./gkgamesession.md)
   A game session you can use to save game data, invite other players, and create turn-based and real-time game apps.
-- [class GKGameSessionSharingViewController](gkgamesessionsharingviewcontroller.md)
+- [class GKGameSessionSharingViewController](./gkgamesessionsharingviewcontroller.md)
   A user interface you can use to invite other users into a tvOS game session.
-- [class GKFriendRequestComposeViewController](gkfriendrequestcomposeviewcontroller.md)
+- [class GKFriendRequestComposeViewController](./gkfriendrequestcomposeviewcontroller.md)
   Your game uses the `GKFriendRequestComposeViewController` class to present a screen that allows the local player to send friend requests to other players.
-- [class GKLeaderboardViewController](gkleaderboardviewcontroller.md)
-  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
-- [class GKPeerPickerController](gkpeerpickercontroller.md)
+- [class GKLeaderboardViewController](./gkleaderboardviewcontroller.md)
+  The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](./gkgamecenterviewcontroller.md) class is available, you should use it instead.
+- [class GKPeerPickerController](./gkpeerpickercontroller.md)
   Provides a standard user interface to allow one iOS device to discover and connect to another.
-- [class GKSession](gksession.md)
-  A [`GKSession`](gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
-- [class GKTurnBasedEventHandler](gkturnbasedeventhandler.md)
-  The [`GKTurnBasedEventHandler`](gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](gkturnbasedeventhandler/shared().md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
+- [class GKSession](./gksession.md)
+  A [`GKSession`](./gksession.md) object provides the ability to discover and connect to nearby iOS devices using Bluetooth or Wi-fi.
+- [class GKTurnBasedEventHandler](./gkturnbasedeventhandler.md)
+  The [`GKTurnBasedEventHandler`](./gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](./gkturnbasedeventhandler/shared%28%29.md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](./gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](./gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
 
 
 ---

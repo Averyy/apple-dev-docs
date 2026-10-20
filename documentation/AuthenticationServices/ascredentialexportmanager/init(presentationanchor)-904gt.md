@@ -1,7 +1,8 @@
 # init(presentationAnchor:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an export manager, anchored by the given UIKit window.
 
@@ -19,9 +20,10 @@ convenience init(presentationAnchor: ASPresentationAnchor)
 
 ## See Also
 
-- [convenience init(presentationAnchor: ASPresentationAnchor)](ascredentialexportmanager/init(presentationanchor:)-56ki6.md)
+### Creating an export manager
+- [convenience init(presentationAnchor: ASPresentationAnchor)](./init%28presentationanchor%29-56ki6.md)
   Creates an export manager, anchored by the given AppKit window.
-- [typealias ASPresentationAnchor](aspresentationanchor.md)
+- [typealias ASPresentationAnchor](../aspresentationanchor.md)
   A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
 

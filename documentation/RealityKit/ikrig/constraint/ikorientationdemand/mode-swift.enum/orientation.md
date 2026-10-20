@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKOrientationDemand.Mode.orientation
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode which uses the set rotation target.
 
@@ -19,12 +20,12 @@ A mode which uses the set rotation target.
 case orientation
 ```
 
-##### Demand Target
+##### Demand target
 
 - **Source**: The model space orientation of the constrained joint from the FK demands pose.
-- **Target**: The rotation component of [`target`](ikcomponent/constraint/target.md).
+- **Target**: The rotation component of [`target`](../../../../ikcomponent/constraint/target.md).
 
-The rotation weight of [`animationOverrideWeight`](ikcomponent/constraint/animationoverrideweight.md) determines how the rotation target is calculated:
+The rotation weight of [`animationOverrideWeight`](../../../../ikcomponent/constraint/animationoverrideweight.md) determines how the rotation target is calculated:
 
 - A weight of **`0`** uses the `Source`.
 - A weight of **`1`** uses the `Target`.

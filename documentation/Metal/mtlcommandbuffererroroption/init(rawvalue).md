@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of error options from a raw integer value.
 
@@ -21,7 +22,7 @@ init(rawValue: UInt)
 
 #### Discussion
 
-Use the [`MTLCommandBufferErrorOption`](mtlcommandbuffererroroption.md) structure’s type properties, such as [`encoderExecutionStatus`](mtlcommandbuffererroroption/encoderexecutionstatus.md), instead of this initializer.
+Use the [`MTLCommandBufferErrorOption`](../mtlcommandbuffererroroption.md) structure’s type properties, such as [`encoderExecutionStatus`](./encoderexecutionstatus.md), instead of this initializer.
 
 ## Parameters
 

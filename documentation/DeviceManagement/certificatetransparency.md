@@ -1,7 +1,8 @@
 # CertificateTransparency
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures certificate transparency enforcement.
 
@@ -16,19 +17,19 @@ The payload that configures certificate transparency enforcement.
 
 ## Declaration
 
-```swift
+```
 object CertificateTransparency
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
 Specify `com.apple.security.certificatetransparency` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -94,35 +95,38 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 ## Topics
 
 ### Objects
-- [object CertificateTransparency.SubjectPublicKeyInfoHashDict](certificatetransparency/subjectpublickeyinfohashdict.md)
+- [object CertificateTransparency.SubjectPublicKeyInfoHashDict](./certificatetransparency/subjectpublickeyinfohashdict.md)
   A dictionary of hashed public keys.
 
 ## Properties
 
-- `DisabledForCerts` ([CertificateTransparency.SubjectPublicKeyInfoHashDict]): An array of certificates for which certificate transparency is disabled. One of the following conditions needs to be met to disable certificate transparency enforcement when this policy is set: - The hash is of the server certificate’s `subjectPublicKeyInfo`.
-- The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain; the X.509v3 `nameConstraints` extension constrains the CA certificate. One or more `directoryName` `nameConstraints` are present in the `permittedSubtrees`, and the `directoryName` contains an `organizationName` attribute.
-- The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain. The CA certificate has one or more `organizationName` attributes in the certificate `Subject`, and the server’s certificate contains the same number of `organizationName` attributes, in the same order, and with byte-for-byte identical values.
+- `DisabledForCerts` ([CertificateTransparency.SubjectPublicKeyInfoHashDict]): An array of certificates for which certificate transparency is disabled. One of the following conditions needs to be met to disable certificate transparency enforcement when this policy is set:
+
+  - The hash is of the server certificate’s `subjectPublicKeyInfo`.
+  - The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain; the X.509v3 `nameConstraints` extension constrains the CA certificate. One or more `directoryName` `nameConstraints` are present in the `permittedSubtrees`, and the `directoryName` contains an `organizationName` attribute.
+  - The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain. The CA certificate has one or more `organizationName` attributes in the certificate `Subject`, and the server’s certificate contains the same number of `organizationName` attributes, in the same order, and with byte-for-byte identical values.
 - `DisabledForDomains` ([string]): An array of strings that represent the domains to exclude from certificate transparency enforcement. The system supports using a leading period (`.`) to signify subdomains. However, the system doesn’t support wildcards. If you include a leading period, the domain can’t be a top-level domain, such as `.com` and `.co.uk`.
 
 ## See Also
 
-- [object ACMECertificate](acmecertificate.md)
+### Certificates
+- [object ACMECertificate](./acmecertificate.md)
   The payload that configures Automated Certificate Management Environment (ACME) settings.
-- [object ActiveDirectoryCertificate](activedirectorycertificate.md)
+- [object ActiveDirectoryCertificate](./activedirectorycertificate.md)
   The payload that configures Active Directory Certificate settings.
-- [object CertificatePEM](certificatepem.md)
+- [object CertificatePEM](./certificatepem.md)
   The payload that configures a PEM-formatted certificate.
-- [object CertificatePKCS1](certificatepkcs1.md)
+- [object CertificatePKCS1](./certificatepkcs1.md)
   The payload that configures a PKCS #1-formatted certificate.
-- [object CertificatePKCS12](certificatepkcs12.md)
+- [object CertificatePKCS12](./certificatepkcs12.md)
   The payload that configures a PKCS #12-formatted certificate.
-- [object CertificateRoot](certificateroot.md)
+- [object CertificateRoot](./certificateroot.md)
   The payload that configures a root certificate.
-- [object CertificatePreference](certificatepreference.md)
+- [object CertificatePreference](./certificatepreference.md)
   The payload that configures a certificate preference.
-- [object CertificateRevocation](certificaterevocation.md)
+- [object CertificateRevocation](./certificaterevocation.md)
   The payload that configures certificate revocation checking.
-- [object SCEP](scep.md)
+- [object SCEP](./scep.md)
   The payload that configures Simple Certificate Enrollment Protocol (SCEP) settings.
 
 

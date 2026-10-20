@@ -1,14 +1,15 @@
 # hvg_hcall_args_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct hvg_hcall_args {
     ...
 } hvg_hcall_args_t;
@@ -17,7 +18,7 @@ typedef struct hvg_hcall_args {
 ## Topics
 
 ### Instance Properties
-- [args](hvg_hcall_args_t/3727942-args.md)
+- [args](./hvg_hcall_args_t/api-3727942-args.md)
 
 
 ---

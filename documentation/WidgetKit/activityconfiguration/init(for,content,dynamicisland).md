@@ -1,7 +1,8 @@
 # init(for:content:dynamicIsland:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration object for a Live Activity.
 
@@ -24,7 +25,8 @@ Creates a configuration object for a Live Activity.
 
 ## See Also
 
-- [struct ActivityViewContext](activityviewcontext.md)
+### Creating a Live Activity configuration
+- [struct ActivityViewContext](../activityviewcontext.md)
   A structure that describes the view context for creating the views of a Live Activity.
 
 

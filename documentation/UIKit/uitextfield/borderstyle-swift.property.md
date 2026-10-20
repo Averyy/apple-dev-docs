@@ -1,7 +1,8 @@
 # borderStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The border style for the text field.
 
@@ -9,7 +10,7 @@ The border style for the text field.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The border style for the text field.
 var borderStyle: UITextField.BorderStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UITextBorderStyle borderStyle;
+```
+
 #### Discussion
 
-The default value for this property is [`UITextField.BorderStyle.none`](uitextfield/borderstyle-swift.enum/none.md). If the value is set to the [`UITextField.BorderStyle.roundedRect`](uitextfield/borderstyle-swift.enum/roundedrect.md) style, the custom background image associated with the text field is ignored.
+The default value for this property is [`UITextField.BorderStyle.none`](./borderstyle-swift.enum/none.md). If the value is set to the [`UITextField.BorderStyle.roundedRect`](./borderstyle-swift.enum/roundedrect.md) style, the custom background image associated with the text field is ignored.
 
 ## See Also
 
-- [var background: UIImage?](uitextfield/background.md)
+### Setting the view’s background appearance
+- [var background: UIImage?](./background.md)
   The image that represents the background appearance of the text field when it is in an enabled state.
-- [var disabledBackground: UIImage?](uitextfield/disabledbackground.md)
+- [var disabledBackground: UIImage?](./disabledbackground.md)
   The image that represents the background appearance of the text field when it is in a disabled state.
 
 

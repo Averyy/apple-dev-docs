@@ -1,7 +1,8 @@
 # standaloneQuarterSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of standalone quarter symbols for this calendar.
 
@@ -20,13 +21,18 @@ A list of standalone quarter symbols for this calendar.
 var standaloneQuarterSymbols: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * standaloneQuarterSymbols;
+```
+
 ## See Also
 
-- [var quarterSymbols: [String]](nscalendar/quartersymbols.md)
+### Getting Quarter Symbols
+- [var quarterSymbols: [String]](./quartersymbols.md)
   A list of quarter symbols for this calendar.
-- [var shortQuarterSymbols: [String]](nscalendar/shortquartersymbols.md)
+- [var shortQuarterSymbols: [String]](./shortquartersymbols.md)
   A list of short quarter symbols for this calendar.
-- [var shortStandaloneQuarterSymbols: [String]](nscalendar/shortstandalonequartersymbols.md)
+- [var shortStandaloneQuarterSymbols: [String]](./shortstandalonequartersymbols.md)
   A list of short standalone quarter symbols for this calendar.
 
 

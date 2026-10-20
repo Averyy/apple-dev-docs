@@ -1,7 +1,8 @@
 # open(_:using:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Decrypts the message and verifies its authenticity.
 
@@ -31,7 +32,8 @@ The original plaintext message that was sealed in the box, as long as the correc
 
 ## See Also
 
-- [static func open<AuthenticatedData>(AES.GCM.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](aes/gcm/open(_:using:authenticating:).md)
+### Decrypting and verifying the message
+- [static func open<AuthenticatedData>(AES.GCM.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](./open%28_,using,authenticating%29.md)
   Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
 
 

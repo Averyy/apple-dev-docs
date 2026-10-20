@@ -1,7 +1,8 @@
 # MediaCommand.ShuffleMode.items
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player shuffles individual items during playback (for example, songs).
 

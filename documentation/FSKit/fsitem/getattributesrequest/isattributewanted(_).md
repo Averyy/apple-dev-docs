@@ -1,7 +1,8 @@
 # isAttributeWanted(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method that indicates whether the request wants given attribute.
 
@@ -14,15 +15,20 @@ A method that indicates whether the request wants given attribute.
 func isAttributeWanted(_ attribute: FSItem.Attribute) -> Bool
 ```
 
+```objc
+- (BOOL) isAttributeWanted:(FSItemAttribute) attribute;
+```
+
 ## Parameters
 
-- `attribute`: The [`FSItem.Attribute`](fsitem/attribute.md) to check.
+- `attribute`: The [`FSItem.Attribute`](../attribute.md) to check.
 
 ## See Also
 
-- [var wantedAttributes: FSItem.Attribute](fsitem/getattributesrequest/wantedattributes.md)
+### Inspecting requested attributes
+- [var wantedAttributes: FSItem.Attribute](./wantedattributes.md)
   The attributes requested by the request.
-- [FSItem.Attribute](fsitem/attribute.md)
+- [FSItem.Attribute](../attribute.md)
   A value that indicates a set of item attributes to get or set.
 
 

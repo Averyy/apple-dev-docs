@@ -1,7 +1,8 @@
 # readAttributePIRUnoccupiedToOccupiedThreshold(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePIRUnoccupiedToOccupiedThreshold(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePIRUnoccupiedToOccupiedThreshold() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePIRUnoccupiedToOccupiedThresholdWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

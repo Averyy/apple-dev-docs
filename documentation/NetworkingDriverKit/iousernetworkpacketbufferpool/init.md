@@ -1,16 +1,17 @@
 # init
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the network packet buffer pool object.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -20,9 +21,10 @@ virtual bool init();
 
 ## See Also
 
-- [Create](iousernetworkpacketbufferpool/create.md)
+### Creating a Buffer Pool
+- [Create](./create.md)
   Creates a new packet buffer pool object and allocates space for the specified number of packets.
-- [free](iousernetworkpacketbufferpool/free.md)
+- [free](./free.md)
   Releases the resources owned by the network packet buffer pool object.
 
 

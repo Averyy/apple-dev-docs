@@ -1,7 +1,8 @@
 # tls_protocol_version_t.TLSv12
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The TLS 1.2 protocol.
 
@@ -18,6 +19,10 @@ The TLS 1.2 protocol.
 
 ```swift
 case TLSv12
+```
+
+```c
+tls_protocol_version_TLSv12
 ```
 
 

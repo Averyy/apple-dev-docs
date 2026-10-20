@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentVisibilityState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values for the current visibility state of input sources.
 
@@ -19,29 +20,33 @@ Values for the current visibility state of input sources.
 enum HMCharacteristicValueCurrentVisibilityState
 ```
 
+```c
+enum HMCharacteristicValueCurrentVisibilityState : NSInteger;
+```
+
 ## Topics
 
 ### Visibility states
-- [HMCharacteristicValueCurrentVisibilityState.alwaysShown](hmcharacteristicvaluecurrentvisibilitystate/alwaysshown.md)
+- [HMCharacteristicValueCurrentVisibilityState.alwaysShown](./hmcharacteristicvaluecurrentvisibilitystate/alwaysshown.md)
   The media source is always displayed.
-- [HMCharacteristicValueCurrentVisibilityState.connected](hmcharacteristicvaluecurrentvisibilitystate/connected.md)
+- [HMCharacteristicValueCurrentVisibilityState.connected](./hmcharacteristicvaluecurrentvisibilitystate/connected.md)
   The media source is displayed since there’s a device connected to the input source.
-- [HMCharacteristicValueCurrentVisibilityState.hidden](hmcharacteristicvaluecurrentvisibilitystate/hidden.md)
+- [HMCharacteristicValueCurrentVisibilityState.hidden](./hmcharacteristicvaluecurrentvisibilitystate/hidden.md)
   The media source isn’t displayed.
-- [HMCharacteristicValueCurrentVisibilityState.shown](hmcharacteristicvaluecurrentvisibilitystate/shown.md)
+- [HMCharacteristicValueCurrentVisibilityState.shown](./hmcharacteristicvaluecurrentvisibilitystate/shown.md)
   The media source is displayed.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentvisibilitystate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentvisibilitystate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

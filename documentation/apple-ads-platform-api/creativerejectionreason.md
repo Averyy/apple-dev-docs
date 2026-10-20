@@ -1,7 +1,8 @@
 # CreativeRejectionReason
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Detailed rejection reason for an ad creative that failed Apple review.
 
@@ -10,15 +11,15 @@ Detailed rejection reason for an ad creative that failed Apple review.
 
 ## Declaration
 
-```swift
+```
 object CreativeRejectionReason
 ```
 
 #### Discussion
 
-The `CreativeRejectionReason` object represents a record returned by the rejection reasons endpoint, describing why a specific ad creative was rejected. Each record includes the scope of rejection (by `adamId`, `productPageId`, or `assetId`) and the policy categories that were violated. To diagnose and remediate rejected ad creatives, use these records alongside `systemStatusReasons` on the [`Creative`](creative.md).
+The `CreativeRejectionReason` object represents a record returned by the rejection reasons endpoint, describing why a specific ad creative was rejected. Each record includes the scope of rejection (by `adamId`, `productPageId`, or `assetId`) and the policy categories that were violated. To diagnose and remediate rejected ad creatives, use these records alongside `systemStatusReasons` on the [`Creative`](./creative.md).
 
-The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/rejection-reasons/apps/query` ([`Query Rejection Reasons`](find-rejection-reasons.md)) and `GET /v1/rejection-reasons/apps/{rejectionReasonId}` ([`Get Rejection Reasons`](gets-rejection-reasons-by-id.md)), are documented under Apps > App Eligibility. See [`Query Rejection Reasons`](find-rejection-reasons.md) and [`Get Rejection Reasons`](gets-rejection-reasons-by-id.md).
+The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/rejection-reasons/apps/query` ([`Query Rejection Reasons`](./find-rejection-reasons.md)) and `GET /v1/rejection-reasons/apps/{rejectionReasonId}` ([`Get Rejection Reasons`](./gets-rejection-reasons-by-id.md)), are documented under Apps > App Eligibility. See [`Query Rejection Reasons`](./find-rejection-reasons.md) and [`Get Rejection Reasons`](./gets-rejection-reasons-by-id.md).
 
 ##### Example
 
@@ -49,6 +50,8 @@ The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/
 - `productPageId` (string): The product page ID associated with the rejection, if applicable. Read-only.
 - `assetId` (string): The UUID of the asset that triggered the rejection, if applicable. Read-only.
 - `supplySource` (string): Supply source for the rejection. Read-only.
+
+  **Allowed Values**: `APPSTORE`, `MAPS`
 - `supplyPlacement` (string): Supply placement for the rejection. Read-only.
 - `countryOrRegion` (string): Country or region code. Read-only.
 - `languageCode` (string): BCP-47 language code, for example, `en-US` or `zh-Hans`. Read-only.
@@ -57,35 +60,37 @@ The endpoints that query and fetch `CreativeRejectionReason` records, `POST /v1/
 - `comment` (string): Additional context for the rejection. Nullable. Read-only.
 - `reasonLevel` (string): The level at which the rejection applies. Read-only.
 
+  **Allowed Values**: `DEFAULT_PRODUCT_PAGE`, `DEFAULT_PRODUCT_PAGE_LOCALE`, `CUSTOM_PRODUCT_PAGE`, `CUSTOM_PRODUCT_PAGE_LOCALE`
+
 ## See Also
 
-- [object Creative](creative.md)
+- [object Creative](./creative.md)
   Ad creative containing all data for visually rendering an ad.
-- [object CreativeCreate](creativecreate.md)
+- [object CreativeCreate](./creativecreate.md)
   The request body for creating a new Creative object.
-- [object CreativeUpdate](creativeupdate.md)
+- [object CreativeUpdate](./creativeupdate.md)
   The request body for updating an existing Creative object.
-- [object CreativeResponse](creativeresponse.md)
+- [object CreativeResponse](./creativeresponse.md)
   The response object for an ad creative operation.
-- [object CreativeQueryResponse](creativequeryresponse.md)
+- [object CreativeQueryResponse](./creativequeryresponse.md)
   The response object for a Creative query, containing matched results and pagination metadata.
-- [object CreativeEligibility](creativeeligibility.md)
+- [object CreativeEligibility](./creativeeligibility.md)
   Eligibility state for an ad creative across supply sources and placements.
-- [object AssetReference](assetreference.md)
+- [object AssetReference](./assetreference.md)
   A reference to an asset by its UUID.
-- [object AssetImage](assetimage.md)
+- [object AssetImage](./assetimage.md)
   Image-specific asset detail fields.
-- [object Destination](destination.md)
+- [object Destination](./destination.md)
   Post-tap destination entity embedded in a Creative.
-- [object DestinationCreate](destinationcreate.md)
+- [object DestinationCreate](./destinationcreate.md)
   Request payload for specifying the post-tap destination when creating an ad creative.
-- [object DestinationParameter](destinationparameter.md)
+- [object DestinationParameter](./destinationparameter.md)
   Destination-specific identifiers used when linking an ad creative to an App Store product page.
-- [object CreativeRejectionReasonQueryRequest](creativerejectionreasonqueryrequest.md)
+- [object CreativeRejectionReasonQueryRequest](./creativerejectionreasonqueryrequest.md)
   The request body for querying ad creative rejection reasons.
-- [object CreativeRejectionReasonQueryResponse](creativerejectionreasonqueryresponse.md)
+- [object CreativeRejectionReasonQueryResponse](./creativerejectionreasonqueryresponse.md)
   The response object for a creative rejection reason query, containing matched results and pagination metadata.
-- [object LocaleInfo](localeinfo.md)
+- [object LocaleInfo](./localeinfo.md)
   Represents a specific language and its corresponding language code.
 
 

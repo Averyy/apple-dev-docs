@@ -1,7 +1,8 @@
 # HasVideo
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value indicating if box has video capabilities.
 
@@ -10,7 +11,7 @@ A Boolean value indicating if box has video capabilities.
 
 ## Declaration
 
-```swift
+```c
 bool HasVideo();
 ```
 
@@ -20,15 +21,16 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetHasAudio](iouservideobox/sethasaudio.md)
+### Determining media support
+- [SetHasAudio](./sethasaudio.md)
   Sets the value indicating the box’s audio support.
-- [HasAudio](iouservideobox/hasaudio.md)
+- [HasAudio](./hasaudio.md)
   A Boolean value indicating if box has audio capabilities.
-- [SetHasVideo](iouservideobox/sethasvideo.md)
+- [SetHasVideo](./sethasvideo.md)
   Sets the value indicating the box’s video support.
-- [SetHasMIDI](iouservideobox/sethasmidi.md)
+- [SetHasMIDI](./sethasmidi.md)
   Sets the value indicating the box’s MIDI support
-- [HasMIDI](iouservideobox/hasmidi.md)
+- [HasMIDI](./hasmidi.md)
   A Boolean value indicating if box has MIDI capabilities.
 
 

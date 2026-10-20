@@ -1,16 +1,18 @@
 # OSBundleLibraries
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The drivers that the system must load before your driver.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `OSBundleLibraries`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -22,7 +24,8 @@ Don’t include this key for codeless kexts.
 
 ## See Also
 
-- [OSBundleCompatibleVersion](information-property-list/osbundlecompatibleversion.md)
+### Kext dependencies
+- [OSBundleCompatibleVersion](./osbundlecompatibleversion.md)
   The backward limit of compatibility for the current driver.
 
 

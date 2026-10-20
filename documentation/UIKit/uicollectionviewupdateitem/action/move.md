@@ -1,19 +1,24 @@
 # UICollectionViewUpdateItem.Action.move
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case move
+```
+
+```c
+UICollectionUpdateActionMove
 ```
 
 #### Discussion
@@ -22,10 +27,11 @@ Move the item from its current location to a new location.
 
 ## See Also
 
-- [UICollectionViewUpdateItem.Action.none](uicollectionviewupdateitem/action/none.md)
-- [UICollectionViewUpdateItem.Action.insert](uicollectionviewupdateitem/action/insert.md)
-- [UICollectionViewUpdateItem.Action.delete](uicollectionviewupdateitem/action/delete.md)
-- [UICollectionViewUpdateItem.Action.reload](uicollectionviewupdateitem/action/reload.md)
+### Constants
+- [UICollectionViewUpdateItem.Action.none](./none.md)
+- [UICollectionViewUpdateItem.Action.insert](./insert.md)
+- [UICollectionViewUpdateItem.Action.delete](./delete.md)
+- [UICollectionViewUpdateItem.Action.reload](./reload.md)
 
 
 ---

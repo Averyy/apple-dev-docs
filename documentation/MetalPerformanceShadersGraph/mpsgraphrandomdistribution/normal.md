@@ -1,7 +1,8 @@
 # MPSGraphRandomDistribution.normal
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The normal distribution defined by mean and standard deviation.
 
@@ -17,6 +18,10 @@ The normal distribution defined by mean and standard deviation.
 
 ```swift
 case normal
+```
+
+```c
+MPSGraphRandomDistributionNormal
 ```
 
 

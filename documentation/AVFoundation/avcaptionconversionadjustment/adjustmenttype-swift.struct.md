@@ -1,7 +1,8 @@
 # AVCaptionConversionAdjustment.AdjustmentType
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate an adjustment type.
 
@@ -17,29 +18,34 @@ Constants that indicate an adjustment type.
 struct AdjustmentType
 ```
 
+```c
+typedef NSString * AVCaptionConversionAdjustmentType;
+```
+
 ## Topics
 
 ### Adjustment types
-- [static let timeRange: AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.struct/timerange.md)
+- [static let timeRange: AVCaptionConversionAdjustment.AdjustmentType](./adjustmenttype-swift.struct/timerange.md)
   Indicates a timing adjustment.
 ### Initializers
-- [init(rawValue: String)](avcaptionconversionadjustment/adjustmenttype-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./adjustmenttype-swift.struct/init%28rawvalue%29.md)
   Creates an adjustment type with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.property.md)
+### Accessing the adjustment type
+- [var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType](./adjustmenttype-swift.property.md)
   The type of caption conversion adjustment.
-- [class AVCaptionConversionTimeRangeAdjustment](avcaptionconversiontimerangeadjustment.md)
+- [class AVCaptionConversionTimeRangeAdjustment](../avcaptionconversiontimerangeadjustment.md)
   An object that describes an adjustment to the time range of one or more captions.
 
 

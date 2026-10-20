@@ -1,7 +1,8 @@
 # StandardScaler
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An estimator that standardizes the input by removing the mean and scaling to unit variance.
 
@@ -23,34 +24,35 @@ struct StandardScaler<Element> where Element : BinaryFloatingPoint, Element : De
 ## Topics
 
 ### Creating an estimator
-- [init()](standardscaler/init.md)
+- [init()](./standardscaler/init%28%29.md)
   Creates a standard scaling estimator.
 ### Fitting
-- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> StandardScaler<Element>.Transformer](standardscaler/fitted(to:eventhandler:).md)
+- [func fitted<S>(to: S, eventHandler: EventHandler?) throws -> StandardScaler<Element>.Transformer](./standardscaler/fitted%28to,eventhandler%29.md)
   Fits a transformer to a particular input sequence by computing the mean and standard deviation.
 ### Default Implementations
-- [Estimator Implementations](standardscaler/estimator-implementations.md)
-- [UpdatableEstimator Implementations](standardscaler/updatableestimator-implementations.md)
+- [Estimator Implementations](./standardscaler/estimator-implementations.md)
+- [UpdatableEstimator Implementations](./standardscaler/updatableestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Estimator](estimator.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UpdatableEstimator](updatableestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Estimator](./estimator.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UpdatableEstimator](./updatableestimator.md)
 
 ## See Also
 
-- [struct MaxAbsScaler](maxabsscaler.md)
+### Scalers
+- [struct MaxAbsScaler](./maxabsscaler.md)
   An estimator that scales the input values so that the maximum absolute value is 1.0.
-- [struct MinMaxScaler](minmaxscaler.md)
+- [struct MinMaxScaler](./minmaxscaler.md)
   An estimator that scales the input values so that they all lie in a closed range.
-- [struct NormalizationScaler](normalizationscaler.md)
+- [struct NormalizationScaler](./normalizationscaler.md)
   An estimator that normalizes the input values using a normalization strategy.
-- [struct RobustScaler](robustscaler.md)
+- [struct RobustScaler](./robustscaler.md)
   An estimator that scales the input using statistics that are robust to outliers.
 
 

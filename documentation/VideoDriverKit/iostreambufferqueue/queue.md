@@ -1,23 +1,25 @@
 # queue
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 IOStreamBufferQueueEntry queue[0];
 ```
 
 ## See Also
 
-- [entryCount](iostreambufferqueue/entrycount.md)
-- [headIndex](iostreambufferqueue/headindex.md)
-- [tailIndex](iostreambufferqueue/tailindex.md)
-- [IOStreamBufferQueueEntry](iostreambufferqueueentry.md)
+### Accessing queue contents
+- [entryCount](./entrycount.md)
+- [headIndex](./headindex.md)
+- [tailIndex](./tailindex.md)
+- [IOStreamBufferQueueEntry](../iostreambufferqueueentry.md)
 
 
 ---

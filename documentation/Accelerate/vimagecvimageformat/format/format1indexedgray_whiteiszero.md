@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format1IndexedGray_WhiteIsZero
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 1-bit indexed pixel format with white equal to zero.
 
@@ -11,7 +12,7 @@ A 1-bit indexed pixel format with white equal to zero.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,23 +23,24 @@ case format1IndexedGray_WhiteIsZero
 
 #### Discussion
 
-This pixel format supports color spaces that are [`CGColorSpaceModel.indexed`](https://developer.apple.com/documentation/coregraphics/cgcolorspacemodel/indexed).
+This pixel format supports color spaces that are [`CGColorSpaceModel.indexed`](../../../CoreGraphics/cgcolorspacemodel/indexed.md).
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format1Monochrome](vimagecvimageformat/format/format1monochrome.md)
+### Indexed color format constants
+- [vImageCVImageFormat.Format.format1Monochrome](./format1monochrome.md)
   A 1-bit indexed pixel format.
-- [vImageCVImageFormat.Format.format2Indexed](vimagecvimageformat/format/format2indexed.md)
+- [vImageCVImageFormat.Format.format2Indexed](./format2indexed.md)
   A 2-bit indexed pixel format.
-- [vImageCVImageFormat.Format.format2IndexedGray_WhiteIsZero](vimagecvimageformat/format/format2indexedgray_whiteiszero.md)
+- [vImageCVImageFormat.Format.format2IndexedGray_WhiteIsZero](./format2indexedgray_whiteiszero.md)
   A 2-bit indexed pixel format with white equal to zero.
-- [vImageCVImageFormat.Format.format4Indexed](vimagecvimageformat/format/format4indexed.md)
+- [vImageCVImageFormat.Format.format4Indexed](./format4indexed.md)
   A 4-bit indexed pixel format.
-- [vImageCVImageFormat.Format.format4IndexedGray_WhiteIsZero](vimagecvimageformat/format/format4indexedgray_whiteiszero.md)
+- [vImageCVImageFormat.Format.format4IndexedGray_WhiteIsZero](./format4indexedgray_whiteiszero.md)
   A 4-bit indexed pixel format with white equal to zero.
-- [vImageCVImageFormat.Format.format8Indexed](vimagecvimageformat/format/format8indexed.md)
+- [vImageCVImageFormat.Format.format8Indexed](./format8indexed.md)
   An 8-bit indexed pixel format.
-- [vImageCVImageFormat.Format.format8IndexedGray_WhiteIsZero](vimagecvimageformat/format/format8indexedgray_whiteiszero.md)
+- [vImageCVImageFormat.Format.format8IndexedGray_WhiteIsZero](./format8indexedgray_whiteiszero.md)
   An 8-bit indexed pixel format with white equal to zero.
 
 

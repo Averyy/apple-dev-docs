@@ -1,7 +1,8 @@
 # kVTEncodeFrameOptionKey_ForceKeyFrame
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Boolean value indicating whether the current frame is forced to be a key frame.
 
@@ -19,13 +20,18 @@ Boolean value indicating whether the current frame is forced to be a key frame.
 let kVTEncodeFrameOptionKey_ForceKeyFrame: CFString
 ```
 
+```c
+extern CFStringRef const kVTEncodeFrameOptionKey_ForceKeyFrame;
+```
+
 #### Discussion
 
-This value is set in the `frameProperties` dictionary passed to [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](vtcompressionsessionencodeframe(_:imagebuffer:presentationtimestamp:duration:frameproperties:sourceframerefcon:infoflagsout:).md); it determines whether the current frame is forced to be a keyframe or not. Note that it may not be possible for the encoder to accommodate all requests.
+This value is set in the `frameProperties` dictionary passed to [`VTCompressionSessionEncodeFrame(_:imageBuffer:presentationTimeStamp:duration:frameProperties:sourceFrameRefcon:infoFlagsOut:)`](./vtcompressionsessionencodeframe%28_,imagebuffer,presentationtimestamp,duration,frameproperties,sourceframerefcon,infoflagsout%29.md); it determines whether the current frame is forced to be a keyframe or not. Note that it may not be possible for the encoder to accommodate all requests.
 
 ## See Also
 
-- [let kVTEncodeFrameOptionKey_BaseFrameQP: CFString](kvtencodeframeoptionkey_baseframeqp.md)
+### Per-Frame Configuration
+- [let kVTEncodeFrameOptionKey_BaseFrameQP: CFString](./kvtencodeframeoptionkey_baseframeqp.md)
 
 
 ---

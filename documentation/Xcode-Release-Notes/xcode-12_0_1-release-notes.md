@@ -1,6 +1,7 @@
 # Xcode 12.0.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,19 +17,20 @@ Xcode 12.0.1 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS 
 
 ## See Also
 
-- [Xcode 12.5.1 Release Notes](xcode-12_5_1-release-notes.md)
+### Xcode 12
+- [Xcode 12.5.1 Release Notes](./xcode-12_5_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.5 Release Notes](xcode-12_5-release-notes.md)
+- [Xcode 12.5 Release Notes](./xcode-12_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.4 Release Notes](xcode-12_4-release-notes.md)
+- [Xcode 12.4 Release Notes](./xcode-12_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.3 Release Notes](xcode-12_3-release-notes.md)
+- [Xcode 12.3 Release Notes](./xcode-12_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.2 Release Notes](xcode-12_2-release-notes.md)
+- [Xcode 12.2 Release Notes](./xcode-12_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.1 Release Notes](xcode-12_1-release-notes.md)
+- [Xcode 12.1 Release Notes](./xcode-12_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12 Release Notes](xcode-12-release-notes.md)
+- [Xcode 12 Release Notes](./xcode-12-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # files
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe file data.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe file data.
 ```swift
 static var files: some AssistantSchemas.FilesEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

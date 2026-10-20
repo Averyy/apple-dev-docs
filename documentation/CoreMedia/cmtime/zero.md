@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents time zero.
 
@@ -20,19 +21,24 @@ A value that represents time zero.
 static let zero: CMTime
 ```
 
+```c
+extern const CMTime kCMTimeZero;
+```
+
 #### Discussion
 
-Don’t test a time against this constant using (time == [`zero`](cmtime/zero.md)) because there are many times that are also `0`. Use [`CMTimeCompare(_:_:)`](cmtimecompare(_:_:).md) instead.
+Don’t test a time against this constant using (time == [`zero`](./zero.md)) because there are many times that are also `0`. Use [`CMTimeCompare(_:_:)`](../cmtimecompare%28_,_%29.md) instead.
 
 ## See Also
 
-- [static let invalid: CMTime](cmtime/invalid.md)
+### Constants
+- [static let invalid: CMTime](./invalid.md)
   A value that represents an invalid time.
-- [static let indefinite: CMTime](cmtime/indefinite.md)
+- [static let indefinite: CMTime](./indefinite.md)
   A value that represents an indefinite time.
-- [static let negativeInfinity: CMTime](cmtime/negativeinfinity.md)
+- [static let negativeInfinity: CMTime](./negativeinfinity.md)
   A value that represents negative infinity.
-- [static let positiveInfinity: CMTime](cmtime/positiveinfinity.md)
+- [static let positiveInfinity: CMTime](./positiveinfinity.md)
   A value that represents positive infinity.
 
 

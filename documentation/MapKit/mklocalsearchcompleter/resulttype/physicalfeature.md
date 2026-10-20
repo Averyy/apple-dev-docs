@@ -1,7 +1,8 @@
 # physicalFeature
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates that the search completer includes physical feature completions in the result.
 
@@ -20,13 +21,18 @@ A value that indicates that the search completer includes physical feature compl
 static var physicalFeature: MKLocalSearchCompleter.ResultType { get }
 ```
 
+```c
+MKLocalSearchCompleterResultTypePhysicalFeature
+```
+
 ## See Also
 
-- [static var address: MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype/address.md)
+### Type properties
+- [static var address: MKLocalSearchCompleter.ResultType](./address.md)
   A value that indicates that the search completer includes address completions in the result.
-- [static var pointOfInterest: MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype/pointofinterest.md)
+- [static var pointOfInterest: MKLocalSearchCompleter.ResultType](./pointofinterest.md)
   A value that indicates that the search completer includes point-of-interest completions in the result.
-- [static var query: MKLocalSearchCompleter.ResultType](mklocalsearchcompleter/resulttype/query.md)
+- [static var query: MKLocalSearchCompleter.ResultType](./query.md)
   A value that indicates that the search completer includes query completions in the result.
 
 

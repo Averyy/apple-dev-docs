@@ -1,7 +1,8 @@
 # init(parameterID:scope:element:value:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a parameter identifier, scope, element, and value for the parameter to set.
 
@@ -19,9 +20,13 @@ Creates an event with a parameter identifier, scope, element, and value for the 
 init(parameterID: UInt32, scope: UInt32, element: UInt32, value: Float)
 ```
 
+```objc
+- (instancetype) initWithParameterID:(UInt32) parameterID scope:(UInt32) scope element:(UInt32) element value:(float) value;
+```
+
 #### Discussion
 
-For more information about the parameters, see [`AudioUnitParameterID`](https://developer.apple.com/documentation/audiotoolbox/audiounitparameterid), [`AudioUnitScope`](https://developer.apple.com/documentation/audiotoolbox/audiounitscope), and [`AudioUnitElement`](https://developer.apple.com/documentation/audiotoolbox/audiounitelement). The valid range of values depend on the parameter you set.
+For more information about the parameters, see [`AudioUnitParameterID`](../../AudioToolbox/audiounitparameterid.md), [`AudioUnitScope`](../../AudioToolbox/audiounitscope.md), and [`AudioUnitElement`](../../AudioToolbox/audiounitelement.md). The valid range of values depend on the parameter you set.
 
 ## Parameters
 

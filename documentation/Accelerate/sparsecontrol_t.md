@@ -1,18 +1,19 @@
 # SparseControl_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that control the computation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,38 +21,43 @@ Options that control the computation.
 struct SparseControl_t
 ```
 
+```c
+typedef enum { ... } SparseControl_t;
+```
+
 ## Topics
 
 ### Constants
-- [var SparseDefaultControl: SparseControl_t](sparsedefaultcontrol.md)
+- [var SparseDefaultControl: SparseControl_t](./sparsedefaultcontrol.md)
   A flag that indicates default values.
 ### Raw Values
-- [init(UInt32)](sparsecontrol_t/init(_:).md)
-- [init(rawValue: UInt32)](sparsecontrol_t/init(rawvalue:).md)
-- [var rawValue: UInt32](sparsecontrol_t/rawvalue.md)
+- [init(UInt32)](./sparsecontrol_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./sparsecontrol_t/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./sparsecontrol_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var control: SparseControl_t](sparsenumericfactoroptions/control.md)
+### Instance Properties
+- [var control: SparseControl_t](./sparsenumericfactoroptions/control.md)
   The flags that control the computation.
-- [var scalingMethod: SparseScaling_t](sparsenumericfactoroptions/scalingmethod.md)
+- [var scalingMethod: SparseScaling_t](./sparsenumericfactoroptions/scalingmethod.md)
   The scaling method.
-- [var scaling: UnsafeMutableRawPointer?](sparsenumericfactoroptions/scaling.md)
+- [var scaling: UnsafeMutableRawPointer?](./sparsenumericfactoroptions/scaling.md)
   An array that scales the matrix before factorization.
-- [struct SparseScaling_t](sparsescaling_t.md)
+- [struct SparseScaling_t](./sparsescaling_t.md)
   Options that define which scaling algorithm to use.
-- [var pivotTolerance: Double](sparsenumericfactoroptions/pivottolerance.md)
+- [var pivotTolerance: Double](./sparsenumericfactoroptions/pivottolerance.md)
   The pivot tolerance that threshold partial pivoting uses.
-- [var zeroTolerance: Double](sparsenumericfactoroptions/zerotolerance.md)
+- [var zeroTolerance: Double](./sparsenumericfactoroptions/zerotolerance.md)
   The zero tolerance that some pivoting modes use.
 
 

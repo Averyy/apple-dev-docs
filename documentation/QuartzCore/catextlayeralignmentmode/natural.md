@@ -1,7 +1,8 @@
 # natural
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the natural alignment of the text’s script.
 
@@ -19,15 +20,20 @@ Use the natural alignment of the text’s script.
 static let natural: CATextLayerAlignmentMode
 ```
 
+```c
+extern CATextLayerAlignmentMode const kCAAlignmentNatural;
+```
+
 ## See Also
 
-- [static let left: CATextLayerAlignmentMode](catextlayeralignmentmode/left.md)
+### Constants
+- [static let left: CATextLayerAlignmentMode](./left.md)
   Text is visually left aligned.
-- [static let right: CATextLayerAlignmentMode](catextlayeralignmentmode/right.md)
+- [static let right: CATextLayerAlignmentMode](./right.md)
   Text is visually right aligned.
-- [static let center: CATextLayerAlignmentMode](catextlayeralignmentmode/center.md)
+- [static let center: CATextLayerAlignmentMode](./center.md)
   Text is visually center aligned.
-- [static let justified: CATextLayerAlignmentMode](catextlayeralignmentmode/justified.md)
+- [static let justified: CATextLayerAlignmentMode](./justified.md)
   Text is justified.
 
 

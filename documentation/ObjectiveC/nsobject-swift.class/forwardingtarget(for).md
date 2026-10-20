@@ -1,7 +1,8 @@
 # forwardingTarget(for:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object to which unrecognized messages should first be directed.
 
@@ -20,6 +21,10 @@ Returns the object to which unrecognized messages should first be directed.
 func forwardingTarget(for aSelector: Selector!) -> Any?
 ```
 
+```objc
+- (id) forwardingTargetForSelector:(SEL) aSelector;
+```
+
 #### Return Value
 
 The object to which unrecognized messages should first be directed.
@@ -30,11 +35,11 @@ If an object implements (or inherits) this method, and returns a non-`nil` (and 
 
 If you implement this method in a non-root class, if your class has nothing to return for the given selector then you should return the result of invoking super’s implementation.
 
-This method gives an object a chance to redirect an unknown message sent to it before the much more expensive [`forwardInvocation:`](nsobject-swift.class/forwardinvocation:.md) machinery takes over. This is useful when you simply want to redirect messages to another object and can be an order of magnitude faster than regular forwarding. It is not useful where the goal of the forwarding is to capture the NSInvocation, or manipulate the arguments or return value during the forwarding.
+This method gives an object a chance to redirect an unknown message sent to it before the much more expensive [`forwardInvocation:`](./forwardinvocation_.md) machinery takes over. This is useful when you simply want to redirect messages to another object and can be an order of magnitude faster than regular forwarding. It is not useful where the goal of the forwarding is to capture the NSInvocation, or manipulate the arguments or return value during the forwarding.
 
 ## Parameters
 
-- `aSelector`: A [`Selector`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) for a method that the receiver does not implement.
+- `aSelector`: A [Selector](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html#//apple_ref/doc/uid/TP40008195-CH48) for a method that the receiver does not implement.
 
 
 ---

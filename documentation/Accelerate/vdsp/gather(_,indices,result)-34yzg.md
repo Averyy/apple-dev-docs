@@ -1,7 +1,8 @@
 # gather(_:indices:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gathers the specified double-precision vector using a vector that defines the indices to keep.
 
@@ -11,7 +12,7 @@ Gathers the specified double-precision vector using a vector that defines the in
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -56,11 +57,12 @@ print(destination)
 
 ## See Also
 
-- [static func gather<T, U>(T, indices: U) -> [Float]](vdsp/gather(_:indices:)-4jwvh.md)
+### Vector gathering functions
+- [static func gather<T, U>(T, indices: U) -> [Float]](./gather%28_,indices%29-4jwvh.md)
   Returns a gathered copy of the specified single-precision vector using a vector that defines the indices to keep.
-- [static func gather<T, U>(T, indices: U) -> [Double]](vdsp/gather(_:indices:)-4yt3o.md)
+- [static func gather<T, U>(T, indices: U) -> [Double]](./gather%28_,indices%29-4yt3o.md)
   Returns a gathered copy of the specified double-precision vector using a vector that defines the indices to keep.
-- [static func gather<T, U, V>(T, indices: U, result: inout V)](vdsp/gather(_:indices:result:)-7erii.md)
+- [static func gather<T, U, V>(T, indices: U, result: inout V)](./gather%28_,indices,result%29-7erii.md)
   Gathers the specified single-precision vector using a vector that defines the indices to keep.
 
 

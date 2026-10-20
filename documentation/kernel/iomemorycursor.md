@@ -1,7 +1,8 @@
 # IOMemoryCursor
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A mechanism to convert memory references to physical addresses.
 
@@ -10,7 +11,7 @@ A mechanism to convert memory references to physical addresses.
 
 ## Declaration
 
-```swift
+```cpp
 class IOMemoryCursor : OSObject
 ```
 
@@ -37,43 +38,44 @@ UInt32 outSegmentIndex)
 ## Topics
 
 ### Miscellaneous
-- [genPhysicalSegments](iomemorycursor/1812441-genphysicalsegments.md)
+- [genPhysicalSegments](./iomemorycursor/api-1812441-genphysicalsegments.md)
   Generates a physical scatter/gather list given a memory descriptor.
-- [initWithSpecification](iomemorycursor/1812445-initwithspecification.md)
+- [initWithSpecification](./iomemorycursor/api-1812445-initwithspecification.md)
   Primary initializer for the IOMemoryCursor class.
-- [withSpecification](iomemorycursor/1812453-withspecification.md)
+- [withSpecification](./iomemorycursor/api-1812453-withspecification.md)
   Creates and initializes an IOMemoryCursor in one operation.
 ### Callbacks
-- [SegmentFunction](iodmacommand/segmentfunction.md)
+- [SegmentFunction](./iodmacommand/segmentfunction.md)
   A C function that translates a 64-bit segment and outputs a single desired segment to the specified array. 
 ### Constants
-- [Miscellaneous Defines](iomemorycursor/miscellaneous_defines.md)
+- [Miscellaneous Defines](./iomemorycursor/miscellaneous_defines.md)
 ### DataTypes
-- [PhysicalSegment](iomemorycursor/physicalsegment.md)
+- [PhysicalSegment](./iomemorycursor/physicalsegment.md)
 ### Instance Variables
-- [outSeg](iomemorycursor/outseg.md)
-- [maxTransferSize](iomemorycursor/maxtransfersize.md)
-- [maxSegmentSize](iomemorycursor/maxsegmentsize.md)
-- [alignMask](iomemorycursor/alignmask.md)
+- [outSeg](./iomemorycursor/outseg.md)
+- [maxTransferSize](./iomemorycursor/maxtransfersize.md)
+- [maxSegmentSize](./iomemorycursor/maxsegmentsize.md)
+- [alignMask](./iomemorycursor/alignmask.md)
 ### Instance Methods
-- [- genPhysicalSegments](iomemorycursor/1400980-genphysicalsegments.md)
-- [- getMetaClass](iomemorycursor/1401008-getmetaclass.md)
-- [- initWithSpecification](iomemorycursor/1401022-initwithspecification.md)
+- [- genPhysicalSegments](./iomemorycursor/api-1400980-genphysicalsegments.md)
+- [- getMetaClass](./iomemorycursor/api-1401008-getmetaclass.md)
+- [- initWithSpecification](./iomemorycursor/api-1401022-initwithspecification.md)
 ### Type Methods
-- [+ withSpecification](iomemorycursor/1400994-withspecification.md)
+- [+ withSpecification](./iomemorycursor/api-1400994-withspecification.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOBigMemoryCursor](iobigmemorycursor.md)
+### Cursors
+- [IOBigMemoryCursor](./iobigmemorycursor.md)
   An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the big endian byte order.
-- [IOLittleMemoryCursor](iolittlememorycursor.md)
+- [IOLittleMemoryCursor](./iolittlememorycursor.md)
   An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the little endian byte order.
-- [IONaturalMemoryCursor](ionaturalmemorycursor.md)
+- [IONaturalMemoryCursor](./ionaturalmemorycursor.md)
   An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the natural byte orientation for the CPU.
 
 

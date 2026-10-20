@@ -1,7 +1,8 @@
 # unitExponent
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calculated exponent for this element.
 

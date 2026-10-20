@@ -1,7 +1,8 @@
 # appClipCodeTrackingEnabled
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
 
@@ -15,21 +16,26 @@ A Boolean value that indicates if the framework searches the physical environmen
 var appClipCodeTrackingEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL appClipCodeTrackingEnabled;
+```
+
 #### Discussion
 
-When this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), the session delegate recieves an [`ARAppClipCodeAnchor`](arappclipcodeanchor.md) via [`session(_:didAdd:)`](arsessiondelegate/session(_:didadd:).md) for every App Clip Code that ARKit detects in the physical environment. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+When this property’s value is [`true`](../../Swift/true.md), the session delegate recieves an [`ARAppClipCodeAnchor`](../arappclipcodeanchor.md) via [`session(_:didAdd:)`](../arsessiondelegate/session%28_,didadd%29.md) for every App Clip Code that ARKit detects in the physical environment. The default value is [`false`](../../Swift/false.md).
 
-Before calling this function, check that the configuration supports App Clip Code tracking by calling [`supportsAppClipCodeTracking`](arworldtrackingconfiguration/supportsappclipcodetracking.md).
+Before calling this function, check that the configuration supports App Clip Code tracking by calling [`supportsAppClipCodeTracking`](./supportsappclipcodetracking.md).
 
-To avoid scanning a physical code that’s not connected to an App Clip, the system ensures that an app provides an App Clip before allowing the app to interact with App Clip Codes. Without providing an App Clip, the app can recognize codes in the environment by determining their physical location ([`transform`](aranchor/transform.md)), but code URLs ([`url`](arappclipcodeanchor/url.md)) remain `nil`.
+To avoid scanning a physical code that’s not connected to an App Clip, the system ensures that an app provides an App Clip before allowing the app to interact with App Clip Codes. Without providing an App Clip, the app can recognize codes in the environment by determining their physical location ([`transform`](../aranchor/transform.md)), but code URLs ([`url`](../arappclipcodeanchor/url.md)) remain `nil`.
 
 ## See Also
 
-- [Interacting with App Clip Codes in AR](../appclip/interacting-with-app-clip-codes-in-ar.md)
+### Accessing App Clip Codes
+- [Interacting with App Clip Codes in AR](../../AppClip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
-- [class var supportsAppClipCodeTracking: Bool](arworldtrackingconfiguration/supportsappclipcodetracking.md)
+- [class var supportsAppClipCodeTracking: Bool](./supportsappclipcodetracking.md)
   A flag that indicates if the device tracks App Clip Codes.
-- [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
+- [class ARAppClipCodeAnchor](../arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
 
 

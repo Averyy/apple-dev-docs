@@ -1,7 +1,8 @@
 # CPNowPlayingSportsTeamLogo
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A logo image or, if no image is available, an abbreviation or initialism for this team.
 
@@ -17,34 +18,38 @@ A logo image or, if no image is available, an abbreviation or initialism for thi
 class CPNowPlayingSportsTeamLogo
 ```
 
+```objc
+@interface CPNowPlayingSportsTeamLogo : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpnowplayingsportsteamlogo/init(coder:).md)
-- [init(teamInitials: String)](cpnowplayingsportsteamlogo/init(teaminitials:).md)
+- [init?(coder: NSCoder)](./cpnowplayingsportsteamlogo/init%28coder%29.md)
+- [init(teamInitials: String)](./cpnowplayingsportsteamlogo/init%28teaminitials%29.md)
   If no team logo image is available, initialize a team logo with an abbreviation or initialism for this team.
-- [init(teamLogo: UIImage)](cpnowplayingsportsteamlogo/init(teamlogo:).md)
+- [init(teamLogo: UIImage)](./cpnowplayingsportsteamlogo/init%28teamlogo%29.md)
   Initialize a team logo with an image representation of this team. Provide an image no larger than 350x350; larger images will be resized down.
 ### Instance Properties
-- [var initials: String?](cpnowplayingsportsteamlogo/initials.md)
+- [var initials: String?](./cpnowplayingsportsteamlogo/initials.md)
   An abbreviation or initialism for this team, used only if no logo image is available for this team.
-- [var logo: UIImage?](cpnowplayingsportsteamlogo/logo.md)
+- [var logo: UIImage?](./cpnowplayingsportsteamlogo/logo.md)
   A team logo image for this team.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

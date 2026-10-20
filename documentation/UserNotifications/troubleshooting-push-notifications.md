@@ -1,14 +1,15 @@
 # Troubleshooting push notifications
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Debug your server to send push notifications with device and broadcast push notifications.
 
 #### Overview
 
-When encountering issues where test devices fail to receive push notifications from the provider server, troubleshooting becomes essential to ensure the functionality of your app’s notification system. Verify that you aren’t spamming the device. If you send too many notifications to the same device within a short timespan, APNs may treat it as a denial-of-service attack and temporarily block your server from sending notifications. Check to refer to if silent notifications are being throttled. APNs sends a limited number of silent notifications with the `content-available` key. In addition, if the device has already exceeded its power budget for the day, silent notifications aren’t sent again until the power budget resets, which happens once a day. These limits are disabled when testing your app from Xcode. For more information, refer to [`Pushing background updates to your App`](pushing-background-updates-to-your-app.md).
+When encountering issues where test devices fail to receive push notifications from the provider server, troubleshooting becomes essential to ensure the functionality of your app’s notification system. Verify that you aren’t spamming the device. If you send too many notifications to the same device within a short timespan, APNs may treat it as a denial-of-service attack and temporarily block your server from sending notifications. Check to refer to if silent notifications are being throttled. APNs sends a limited number of silent notifications with the `content-available` key. In addition, if the device has already exceeded its power budget for the day, silent notifications aren’t sent again until the power budget resets, which happens once a day. These limits are disabled when testing your app from Xcode. For more information, refer to [Pushing background updates to your App](./pushing-background-updates-to-your-app.md).
 
-Make sure you have the necessary certificates installed on your provider server. If your provider server doesn’t have the proper certificates for TLS/SSL validation, it can’t connect to APNs. For certificate-based connections, your provider server also needs the certificate you obtained from Apple. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
+Make sure you have the necessary certificates installed on your provider server. If your provider server doesn’t have the proper certificates for TLS/SSL validation, it can’t connect to APNs. For certificate-based connections, your provider server also needs the certificate you obtained from Apple. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 
 Check how often your provider server connects to APNs. If your provider server opens and closes its connection to APNs repeatedly, APNs may treat it as a denial-of-service attack and temporarily block your server from connecting.
 
@@ -21,17 +22,17 @@ $ openssl s_client -connect api-broadcast.push.apple.com:443 -cert YourSSLCertAn
 -showcerts -CAfile server-ca-cert.pem
 ```
 
-##### Troubleshoot Receiving Device Push Notifications
+##### Troubleshoot receiving device push notifications
 
 If your test devices aren’t receiving notifications sent by your provider server, examine the following possible causes:
 
-- **Make sure that your provider server has an up-to-date device token for your test device.** Each time your app launches, it needs to request its current token and forward that token to your provider server. Implement the appropriate failure handler methods to determine if APNs reported an error. For more information, refer to [`Registering your app with APNs`](registering-your-app-with-apns.md).
+- **Make sure that your provider server has an up-to-date device token for your test device.** Each time your app launches, it needs to request its current token and forward that token to your provider server. Implement the appropriate failure handler methods to determine if APNs reported an error. For more information, refer to [Registering your app with APNs](./registering-your-app-with-apns.md).
 - **Check for errors returned by APNs.** When failures occur, APNs reports an appropriate error back to your provider server. Use the error code to decide the proper action that makes sense for your app.
 - **Make sure you included the apns-push-type key in your request headers.** This key is required starting in watchOS 6. The absence of this key may delay the delivery of notifications, or prevent their delivery altogether. See .
 - **Check to refer to if you’re sending requests to the same device too quickly.** APNs queues only one notification at a time for each device, and the device must acknowledge receipt of the notification before APNs dequeues it. If you send multiple notification requests in a very short period of time, each new request might overwrite the previous request.
 - **Check the firewall settings of your server and devices.** To send notifications, your provider server must allow inbound and outbound TCP packets over port 443 for HTTP/2 connections, or port 2195 when using the binary interface. Devices connecting to APNs over Wi-Fi need to allow inbound and outbound TCP packets over port 5223, falling back to port 443 if port 5223 is unavailable.
 
-##### Troubleshoot Receiving Broadcast Push Notifications
+##### Troubleshoot receiving broadcast push notifications
 
 During testing, if you find that your test devices aren’t receiving notifications sent by your provider server, examine the following possible causes:
 

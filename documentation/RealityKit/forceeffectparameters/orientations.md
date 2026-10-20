@@ -1,7 +1,8 @@
 # orientations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientations of all rigid bodies under the influence of the effect, or nil if rotational information was not requested.
 

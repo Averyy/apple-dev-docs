@@ -1,7 +1,8 @@
 # isMatchingFrameRateSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether the external display supports matching frame rate to a capture device.
 
@@ -18,15 +19,20 @@ Whether the external display supports matching frame rate to a capture device.
 class var isMatchingFrameRateSupported: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isMatchingFrameRateSupported) BOOL shouldMatchFrameRateSupported;
+```
+
 #### Discussion
 
-If `true`, you may instantiate a configurator with a configuration specifying [`shouldMatchFrameRate`](avcaptureexternaldisplayconfiguration/shouldmatchframerate.md) set to `true`.
+If `true`, you may instantiate a configurator with a configuration specifying [`shouldMatchFrameRate`](../avcaptureexternaldisplayconfiguration/shouldmatchframerate.md) set to `true`.
 
 ## See Also
 
-- [class var isPreferredResolutionSupported: Bool](avcaptureexternaldisplayconfigurator/ispreferredresolutionsupported.md)
+### Determining configuration support
+- [class var isPreferredResolutionSupported: Bool](./ispreferredresolutionsupported.md)
   Whether the external display supports configuration to your preferred resolution.
-- [class var isBypassingColorSpaceConversionSupported: Bool](avcaptureexternaldisplayconfigurator/isbypassingcolorspaceconversionsupported.md)
+- [class var isBypassingColorSpaceConversionSupported: Bool](./isbypassingcolorspaceconversionsupported.md)
   Whether the external display supports bypassing color space conversion.
 
 

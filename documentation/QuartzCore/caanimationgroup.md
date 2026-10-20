@@ -1,7 +1,8 @@
 # CAAnimationGroup
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that allows multiple animations to be grouped and run concurrently.
 
@@ -19,11 +20,15 @@ An object that allows multiple animations to be grouped and run concurrently.
 class CAAnimationGroup
 ```
 
+```objc
+@interface CAAnimationGroup : CAAnimation
+```
+
 #### Overview
 
-The grouped animations run in the time space specified by the [`CAAnimationGroup`](caanimationgroup.md) instance.
+The grouped animations run in the time space specified by the [`CAAnimationGroup`](./caanimationgroup.md) instance.
 
-The duration of the grouped animations are not scaled to the duration of their [`CAAnimationGroup`](caanimationgroup.md). Instead, the animations are clipped to the duration of the animation group. For example, a 10 second animation grouped within an animation group with a duration of 5 seconds displays only the first 5 seconds of the animation.
+The duration of the grouped animations are not scaled to the duration of their [`CAAnimationGroup`](./caanimationgroup.md). Instead, the animations are clipped to the duration of the animation group. For example, a 10 second animation grouped within an animation group with a duration of 5 seconds displays only the first 5 seconds of the animation.
 
 The following code shows how you can create a grouped animation containing  opacity and scale animations to fade out a layer while expanding it. The animation starts with an opacity of `1` and a scale of `1` on all axes. As the animation’s scale increases to `(3, 3, 3)`, the opacity drops to `0` and the animated layer vanishes.
 
@@ -44,36 +49,37 @@ fadeAndScale.animations = [fadeOut, expandScale]
 fadeAndScale.duration = 1
 ```
 
-> ❗ **Important**:  The [`delegate`](caanimation/delegate.md) and [`isRemovedOnCompletion`](caanimation/isremovedoncompletion.md) properties of animations in the [`animations`](caanimationgroup/animations.md) array are currently ignored. The [`CAAnimationGroup`](caanimationgroup.md) delegate does receive these messages.
+> ❗ **Important**:  The [`delegate`](./caanimation/delegate.md) and [`isRemovedOnCompletion`](./caanimation/isremovedoncompletion.md) properties of animations in the [`animations`](./caanimationgroup/animations.md) array are currently ignored. The [`CAAnimationGroup`](./caanimationgroup.md) delegate does receive these messages.
 
 ## Topics
 
 ### Grouped animations
-- [var animations: [CAAnimation]?](caanimationgroup/animations.md)
+- [var animations: [CAAnimation]?](./caanimationgroup/animations.md)
   An array of `CAAnimation` objects to be evaluated in the time space of the receiver.
 
 ## Relationships
 
 ### Inherits From
-- [CAAnimation](caanimation.md)
+- [CAAnimation](./caanimation.md)
 ### Conforms To
-- [CAAction](caaction.md)
-- [CAMediaTiming](camediatiming.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CAAction](./caaction.md)
+- [CAMediaTiming](./camediatiming.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CATransaction](catransaction.md)
+### Animation Groups
+- [class CATransaction](./catransaction.md)
   A mechanism for grouping multiple layer-tree operations into atomic updates to the render tree.
 
 

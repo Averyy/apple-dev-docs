@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bottom leading and trailing corners.
 

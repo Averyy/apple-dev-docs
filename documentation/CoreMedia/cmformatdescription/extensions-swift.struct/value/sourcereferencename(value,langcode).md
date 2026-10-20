@@ -1,7 +1,8 @@
 # sourceReferenceName(value:langCode:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,21 +21,22 @@ static func sourceReferenceName(value: String, langCode: Int) -> CMFormatDescrip
 
 ## See Also
 
-- [static func alphaChannelMode(CMFormatDescription.Extensions.Value.AlphaChannelMode) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/alphachannelmode(_:).md)
-- [static func chromaLocation(CMFormatDescription.Extensions.Value.ChromaLocation) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/chromalocation(_:).md)
-- [static func cleanAperture(width: (numerator: Int, denominator: Int), height: (numerator: Int, denominator: Int), horizontalOffet: (numerator: Int, denominator: Int), verticalOffset: (numerator: Int, denominator: Int)) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/cleanaperture(width:height:horizontaloffet:verticaloffset:)-4b52p.md)
-- [static func cleanAperture<Width, Height, Horizontal, Vertical>(width: Width, height: Height, horizontalOffet: Horizontal, verticalOffset: Vertical) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/cleanaperture(width:height:horizontaloffet:verticaloffset:)-2r4iq.md)
-- [static func colorPrimaries(CMFormatDescription.Extensions.Value.ColorPrimaries) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/colorprimaries(_:).md)
-- [static func data(CFData) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/data(_:).md)
-- [static func fieldDetail(CMFormatDescription.Extensions.Value.FieldDetail) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/fielddetail(_:).md)
-- [static func fontTable([Int : String]) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/fonttable(_:).md)
-- [static func mobile3GPPTextColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/mobile3gpptextcolor(red:green:blue:alpha:).md)
-- [static func mobile3GPPTextDefaultStyle(startChar: Int, endChar: Int, localFontID: Int, fontFace: CMFormatDescription.Extensions.Value.FontFace, fontSize: Int, foregroundColor: CMFormatDescription.Extensions.Value) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/mobile3gpptextdefaultstyle(startchar:endchar:localfontid:fontface:fontsize:foregroundcolor:).md)
-- [static func mpeg2VideoProfile(CMFormatDescription.Extensions.Value.MPEG2VideoProfile) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/mpeg2videoprofile(_:).md)
-- [static func number<T>(T) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/number(_:).md)
-- [static func pixelAspectRatio<Horizontal, Vertical>(horizontalSpacing: Horizontal, verticalSpacing: Vertical) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/pixelaspectratio(horizontalspacing:verticalspacing:).md)
-- [static func qtTextColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/qttextcolor(red:green:blue:alpha:).md)
-- [static func qtTextDefaultStyle(startChar: Int, height: Int, ascent: Int, localFontID: Int, fontFace: CMFormatDescription.Extensions.Value.FontFace, fontSize: Int, foregroundColor: CMFormatDescription.Extensions.Value, defaultFontName: String?) -> CMFormatDescription.Extensions.Value](cmformatdescription/extensions-swift.struct/value/qttextdefaultstyle(startchar:height:ascent:localfontid:fontface:fontsize:foregroundcolor:defaultfontname:).md)
+### Extension Values
+- [static func alphaChannelMode(CMFormatDescription.Extensions.Value.AlphaChannelMode) -> CMFormatDescription.Extensions.Value](./alphachannelmode%28_%29.md)
+- [static func chromaLocation(CMFormatDescription.Extensions.Value.ChromaLocation) -> CMFormatDescription.Extensions.Value](./chromalocation%28_%29.md)
+- [static func cleanAperture(width: (numerator: Int, denominator: Int), height: (numerator: Int, denominator: Int), horizontalOffet: (numerator: Int, denominator: Int), verticalOffset: (numerator: Int, denominator: Int)) -> CMFormatDescription.Extensions.Value](./cleanaperture%28width,height,horizontaloffet,verticaloffset%29-4b52p.md)
+- [static func cleanAperture<Width, Height, Horizontal, Vertical>(width: Width, height: Height, horizontalOffet: Horizontal, verticalOffset: Vertical) -> CMFormatDescription.Extensions.Value](./cleanaperture%28width,height,horizontaloffet,verticaloffset%29-2r4iq.md)
+- [static func colorPrimaries(CMFormatDescription.Extensions.Value.ColorPrimaries) -> CMFormatDescription.Extensions.Value](./colorprimaries%28_%29.md)
+- [static func data(CFData) -> CMFormatDescription.Extensions.Value](./data%28_%29.md)
+- [static func fieldDetail(CMFormatDescription.Extensions.Value.FieldDetail) -> CMFormatDescription.Extensions.Value](./fielddetail%28_%29.md)
+- [static func fontTable([Int : String]) -> CMFormatDescription.Extensions.Value](./fonttable%28_%29.md)
+- [static func mobile3GPPTextColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> CMFormatDescription.Extensions.Value](./mobile3gpptextcolor%28red,green,blue,alpha%29.md)
+- [static func mobile3GPPTextDefaultStyle(startChar: Int, endChar: Int, localFontID: Int, fontFace: CMFormatDescription.Extensions.Value.FontFace, fontSize: Int, foregroundColor: CMFormatDescription.Extensions.Value) -> CMFormatDescription.Extensions.Value](./mobile3gpptextdefaultstyle%28startchar,endchar,localfontid,fontface,fontsize,foregroundcolor%29.md)
+- [static func mpeg2VideoProfile(CMFormatDescription.Extensions.Value.MPEG2VideoProfile) -> CMFormatDescription.Extensions.Value](./mpeg2videoprofile%28_%29.md)
+- [static func number<T>(T) -> CMFormatDescription.Extensions.Value](./number%28_%29.md)
+- [static func pixelAspectRatio<Horizontal, Vertical>(horizontalSpacing: Horizontal, verticalSpacing: Vertical) -> CMFormatDescription.Extensions.Value](./pixelaspectratio%28horizontalspacing,verticalspacing%29.md)
+- [static func qtTextColor(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> CMFormatDescription.Extensions.Value](./qttextcolor%28red,green,blue,alpha%29.md)
+- [static func qtTextDefaultStyle(startChar: Int, height: Int, ascent: Int, localFontID: Int, fontFace: CMFormatDescription.Extensions.Value.FontFace, fontSize: Int, foregroundColor: CMFormatDescription.Extensions.Value, defaultFontName: String?) -> CMFormatDescription.Extensions.Value](./qttextdefaultstyle%28startchar,height,ascent,localfontid,fontface,fontsize,foregroundcolor,defaultfontname%29.md)
 
 
 ---

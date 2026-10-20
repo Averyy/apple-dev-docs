@@ -1,7 +1,8 @@
 # MPMusicShuffleMode.songs
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The playlist is shuffled by song.
 
@@ -18,13 +19,18 @@ The playlist is shuffled by song.
 case songs
 ```
 
+```c
+MPMusicShuffleModeSongs
+```
+
 ## See Also
 
-- [MPMusicShuffleMode.default](mpmusicshufflemode/default.md)
+### Constants
+- [MPMusicShuffleMode.default](./default.md)
   The user’s preferred shuffle mode.
-- [MPMusicShuffleMode.off](mpmusicshufflemode/off.md)
+- [MPMusicShuffleMode.off](./off.md)
   The playlist is not shuffled.
-- [MPMusicShuffleMode.albums](mpmusicshufflemode/albums.md)
+- [MPMusicShuffleMode.albums](./albums.md)
   The playlist is shuffled by album.
 
 

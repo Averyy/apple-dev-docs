@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.I
 
 # mlx.nn.InstanceNorm
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.InstanceNorm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.InstanceNorm
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.InstanceNorm
-
 **class InstanceNorm(*dims: int*, *eps: float = 1e-05*, *affine: bool = False*)**
 : Applies instance normalization [1] on the inputs.
 Computes
@@ -56,14 +29,15 @@ The input must have at least 3 dimensions.
 Output: Same shape as the input.
 
 Examples
->>> import mlx.core as mx
->>> import mlx.nn as nn
->>> x = mx.random.normal((8, 4, 4, 16))
->>> inorm = nn.InstanceNorm(dims=16)
->>> output = inorm(x)
+
+  ```
+  >>> import mlx.core as mx
+  >>> import mlx.nn as nn
+  >>> x = mx.random.normal((8, 4, 4, 16))
+  >>> inorm = nn.InstanceNorm(dims=16)
+  >>> output = inorm(x)
+  ```
 
 References
 [1]: [https://arxiv.org/abs/1607.08022](https://arxiv.org/abs/1607.08022)
 Methods
-
-** Contents

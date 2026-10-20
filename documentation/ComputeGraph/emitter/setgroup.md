@@ -1,13 +1,14 @@
 # emitter::setGroup
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the element group(s) for spawn requests from this emitter.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void emitter::setGroup(int activeGroup, int sequentialGroups)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/emitter__setGroup.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__setGroup.svg)
 
 > **Note**: Reads from emitter state `int activeGroupIndex`, if it exists
 

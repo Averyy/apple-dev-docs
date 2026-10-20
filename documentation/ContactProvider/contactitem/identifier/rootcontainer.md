@@ -1,7 +1,8 @@
 # rootContainer
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The top-level container, containing the user’s contacts.
 

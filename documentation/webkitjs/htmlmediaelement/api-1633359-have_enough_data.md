@@ -11,7 +11,7 @@ Enough data is available to play at the default playback rate to the end of the 
 
 ## Declaration
 
-```swift
+```
 const unsigned short HAVE_ENOUGH_DATA;
 ```
 

@@ -1,14 +1,15 @@
 # newUserClientGated
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 IOReturn newUserClientGated(task_t owningTask, void *security_id, UInt32 type, OSDictionary *properties, IOUserClient **handler);
 ```
 

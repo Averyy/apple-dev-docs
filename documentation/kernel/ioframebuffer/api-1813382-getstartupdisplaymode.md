@@ -7,13 +7,13 @@ Return the framebuffers display mode and depth to be used during boot and at sta
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn getStartupDisplayMode(
  IODisplayModeID *displayMode, 
  IOIndex *depth );
 ```
 
-#### Return_value
+#### Return Value
 
 an IOReturn code.
 
@@ -28,89 +28,90 @@ IOFramebuffer subclasses should implement this method to return the current mode
 
 ## See Also
 
-- [connectFlags](ioframebuffer/1812972-connectflags.md)
+### Miscellaneous
+- [connectFlags](./api-1812972-connectflags.md)
   Return display sense information for legacy Apple sensing.
-- [convertCursorImage](ioframebuffer/1812983-convertcursorimage.md)
+- [convertCursorImage](./api-1812983-convertcursorimage.md)
   Utility method of IOFramebuffer to convert cursor image to a hardware cursor format.
-- [doI2CRequest](ioframebuffer/1812996-doi2crequest.md)
+- [doI2CRequest](./api-1812996-doi2crequest.md)
   Carry out an I2C request.
-- [enableController](ioframebuffer/1813011-enablecontroller.md)
+- [enableController](./api-1813011-enablecontroller.md)
   Perform first time setup of the framebuffer.
-- [flushCursor](ioframebuffer/1813022-flushcursor.md)
+- [flushCursor](./api-1813022-flushcursor.md)
   Perform any needed cache flushing after software cursor rendering.
-- [getApertureRange](ioframebuffer/1813036-getaperturerange.md)
+- [getApertureRange](./api-1813036-getaperturerange.md)
   Return reference to IODeviceMemory object representing memory range of framebuffer.
-- [getAppleSense](ioframebuffer/1813053-getapplesense.md)
+- [getAppleSense](./api-1813053-getapplesense.md)
   Return display sense information for legacy Apple sensing.
-- [getAttribute](ioframebuffer/1813070-getattribute.md)
+- [getAttribute](./api-1813070-getattribute.md)
   Generic method to retrieve some attribute of the framebuffer device.
-- [getAttributeForConnection](ioframebuffer/1813093-getattributeforconnection.md)
+- [getAttributeForConnection](./api-1813093-getattributeforconnection.md)
   Generic method to retrieve some attribute of the framebuffer device, specific to one display connection.
-- [getConnectionCount](ioframebuffer/1813110-getconnectioncount.md)
+- [getConnectionCount](./api-1813110-getconnectioncount.md)
   Reports the number of display connections the device supports, driven from one framebuffer.
-- [getCurrentDisplayMode(IODisplayModeID *, IOIndex *)](ioframebuffer/1813145-getcurrentdisplaymode.md)
+- [getCurrentDisplayMode(IODisplayModeID *, IOIndex *)](./api-1813145-getcurrentdisplaymode.md)
   Return the framebuffers display mode and depth to be used during boot and at startup.
-- [getDDCBlock](ioframebuffer/1813183-getddcblock.md)
+- [getDDCBlock](./api-1813183-getddcblock.md)
   Return display EDID data.
-- [getDisplayModeCount](ioframebuffer/1813210-getdisplaymodecount.md)
+- [getDisplayModeCount](./api-1813210-getdisplaymodecount.md)
   Return the number of display modes the framebuffer supports.
-- [getDisplayModes](ioframebuffer/1813237-getdisplaymodes.md)
+- [getDisplayModes](./api-1813237-getdisplaymodes.md)
   Return the number of display modes the framebuffer supports.
-- [getInformationForDisplayMode](ioframebuffer/1813269-getinformationfordisplaymode.md)
+- [getInformationForDisplayMode](./api-1813269-getinformationfordisplaymode.md)
   Return information about a given display mode.
-- [getPixelFormats](ioframebuffer/1813303-getpixelformats.md)
+- [getPixelFormats](./api-1813303-getpixelformats.md)
   List the pixel formats the framebuffer supports.
-- [getPixelFormatsForDisplayMode](ioframebuffer/1813329-getpixelformatsfordisplaymode.md)
+- [getPixelFormatsForDisplayMode](./api-1813329-getpixelformatsfordisplaymode.md)
   Obsolete.
-- [getPixelInformation](ioframebuffer/1813353-getpixelinformation.md)
+- [getPixelInformation](./api-1813353-getpixelinformation.md)
   Return information about the framebuffer format for a given display mode and depth.
-- [getTimingInfoForDisplayMode](ioframebuffer/1813413-gettiminginfofordisplaymode.md)
+- [getTimingInfoForDisplayMode](./api-1813413-gettiminginfofordisplaymode.md)
   Returns a timing description for a display mode.
-- [getVRAMRange](ioframebuffer/1813443-getvramrange.md)
+- [getVRAMRange](./api-1813443-getvramrange.md)
   Return reference to IODeviceMemory object representing memory range of all the cards vram.
-- [handleEvent](ioframebuffer/1813481-handleevent.md)
+- [handleEvent](./api-1813481-handleevent.md)
   Notify IOFramebuffer superclass code of events.
-- [hasDDCConnect](ioframebuffer/1813510-hasddcconnect.md)
+- [hasDDCConnect](./api-1813510-hasddcconnect.md)
   Return display DDC connect state.
-- [readDDCClock](ioframebuffer/1813550-readddcclock.md)
+- [readDDCClock](./api-1813550-readddcclock.md)
   Reads the input state of the I2C clock line on a bus.
-- [readDDCData](ioframebuffer/1813593-readddcdata.md)
+- [readDDCData](./api-1813593-readddcdata.md)
   Reads the input state of the I2C data line on a bus.
-- [registerForInterruptType](ioframebuffer/1813622-registerforinterrupttype.md)
+- [registerForInterruptType](./api-1813622-registerforinterrupttype.md)
   Set callbacks for driver to call on interrupt events.
-- [setApertureEnable](ioframebuffer/1813646-setapertureenable.md)
+- [setApertureEnable](./api-1813646-setapertureenable.md)
   Enable an aperture on the framebuffer (usually unimplemented, no OS usage).
-- [setAttribute](ioframebuffer/1813661-setattribute.md)
+- [setAttribute](./api-1813661-setattribute.md)
   Generic method to set some attribute of the framebuffer device.
-- [setAttributeForConnection](ioframebuffer/1813672-setattributeforconnection.md)
+- [setAttributeForConnection](./api-1813672-setattributeforconnection.md)
   Generic method to set some attribute of the framebuffer device, specific to one display connection.
-- [setCLUTWithEntries](ioframebuffer/1813680-setclutwithentries.md)
+- [setCLUTWithEntries](./api-1813680-setclutwithentries.md)
   Set the color lookup table to be used by the framebuffer in indexed modes.
-- [setCurrentDisplayMode](ioframebuffer/1813685-setcurrentdisplaymode.md)
+- [setCurrentDisplayMode](./api-1813685-setcurrentdisplaymode.md)
   Set the framebuffers current display mode and depth.
-- [setCursorImage](ioframebuffer/1813692-setcursorimage.md)
+- [setCursorImage](./api-1813692-setcursorimage.md)
   Set a new image for the hardware cursor.
-- [setCursorState](ioframebuffer/1813699-setcursorstate.md)
+- [setCursorState](./api-1813699-setcursorstate.md)
   Set a new position and visibility for the hardware cursor.
-- [setDDCClock](ioframebuffer/1813707-setddcclock.md)
+- [setDDCClock](./api-1813707-setddcclock.md)
   Sets the state of the I2C clock line on a bus.
-- [setDDCData](ioframebuffer/1813718-setddcdata.md)
+- [setDDCData](./api-1813718-setddcdata.md)
   Sets the state of the I2C data line on a bus.
-- [setDetailedTimings](ioframebuffer/1813724-setdetailedtimings.md)
+- [setDetailedTimings](./api-1813724-setdetailedtimings.md)
   Installs an array of OS programmed detailed timings to be made available by the driver.
-- [setDisplayMode](ioframebuffer/1813732-setdisplaymode.md)
+- [setDisplayMode](./api-1813732-setdisplaymode.md)
   Set the framebuffers current display mode and depth.
-- [setGammaTable](ioframebuffer/1813739-setgammatable.md)
+- [setGammaTable](./api-1813739-setgammatable.md)
   Set the gamma table to be used by the framebuffer.
-- [setInterruptState](ioframebuffer/1813744-setinterruptstate.md)
+- [setInterruptState](./api-1813744-setinterruptstate.md)
   Enable or disable a callback previously installed by registerForInterruptType().
-- [setStartupDisplayMode](ioframebuffer/1813749-setstartupdisplaymode.md)
+- [setStartupDisplayMode](./api-1813749-setstartupdisplaymode.md)
   Set the framebuffers display mode and depth to be used during boot and at startup.
-- [unregisterInterrupt(void *)](ioframebuffer/1813753-unregisterinterrupt.md)
+- [unregisterInterrupt(void *)](./api-1813753-unregisterinterrupt.md)
   Remove a callback previously installed by registerForInterruptType().
-- [unregisterInterrupt(void *, UInt32)](ioframebuffer/1813757-unregisterinterrupt.md)
+- [unregisterInterrupt(void *, UInt32)](./api-1813757-unregisterinterrupt.md)
   Enable or disable a callback previously installed by registerForInterruptType().
-- [validateDetailedTiming](ioframebuffer/1813761-validatedetailedtiming.md)
+- [validateDetailedTiming](./api-1813761-validatedetailedtiming.md)
   Reports whether a detailed timing is able to be programmed with the device.
 
 

@@ -1,7 +1,8 @@
 # isReadyForDisplay
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the first video frame of the player’s current item is ready for display.
 
@@ -19,11 +20,15 @@ A Boolean value that indicates whether the first video frame of the player’s c
 var isReadyForDisplay: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
+```
+
 #### Discussion
 
-Use this property to determine when to show or animate a player layer into view. You can display a player layer while this property value is [`false`](https://developer.apple.com/documentation/swift/false), but the layer doesn’t present any content until the value becomes [`true`](https://developer.apple.com/documentation/swift/true).
+Use this property to determine when to show or animate a player layer into view. You can display a player layer while this property value is [`false`](../../Swift/false.md), but the layer doesn’t present any content until the value becomes [`true`](../../Swift/true.md).
 
-This property remains [`false`](https://developer.apple.com/documentation/swift/false) for a player when its [`currentItem`](avplayer/currentitem.md) contains no enabled video tracks.
+This property remains [`false`](../../Swift/false.md) for a player when its [`currentItem`](../avplayer/currentitem.md) contains no enabled video tracks.
 
 This property is key-value observable.
 

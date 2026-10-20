@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,9 +21,10 @@ static var z: Axis3D { get }
 
 ## See Also
 
-- [static var x: Axis3D](axis3d/x.md)
+### Constants
+- [static var x: Axis3D](./x.md)
   The operation is along the x-axis.
-- [static var y: Axis3D](axis3d/y.md)
+- [static var y: Axis3D](./y.md)
   The operation is along the y-axis.
 
 

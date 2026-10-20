@@ -1,7 +1,8 @@
 # PassTypeIdCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The identifying attributes for a new pass type ID, including the identifier string.
 
@@ -10,7 +11,7 @@ The identifying attributes for a new pass type ID, including the identifier stri
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdCreateRequest.Data.Attributes
 ```
 

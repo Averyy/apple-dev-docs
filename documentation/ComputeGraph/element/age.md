@@ -1,13 +1,14 @@
 # element::age
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current age of the element in seconds.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The age in seconds since the element was created
 
 Use this function to determine how long the element has existed, which is useful for time-based effects and animations.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__age.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__age.svg)
 
 
 ---

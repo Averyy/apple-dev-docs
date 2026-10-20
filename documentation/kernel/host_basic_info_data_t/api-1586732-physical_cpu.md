@@ -1,14 +1,15 @@
 # physical_cpu
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 integer_t physical_cpu;
 ```
 

@@ -1,7 +1,8 @@
 # init(flags:block:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.5+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.5+
 - macOS 11.3+
 - tvOS 14.5+
-- visionOS ?+
+- visionOS
 - watchOS 7.4+
 
 ## Declaration

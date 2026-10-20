@@ -1,7 +1,8 @@
 # presentationTime
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Presentation timestamp associated with the pixel buffers.
 

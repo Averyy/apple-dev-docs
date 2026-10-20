@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized string key from the given string value.
 
@@ -26,7 +27,8 @@ init(_ value: String)
 
 ## See Also
 
-- [init(stringLiteral: String)](localizedstringkey/init(stringliteral:).md)
+### Creating a key from a literal value
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a localized string key from the given string literal.
 
 

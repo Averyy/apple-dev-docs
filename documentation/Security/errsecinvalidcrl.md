@@ -1,7 +1,8 @@
 # errSecInvalidCRL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list is not valid.
 
@@ -18,6 +19,10 @@ The certificate revocation list is not valid.
 
 ```swift
 var errSecInvalidCRL: OSStatus { get }
+```
+
+```c
+errSecInvalidCRL
 ```
 
 

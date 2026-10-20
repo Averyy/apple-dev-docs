@@ -1,7 +1,8 @@
 # sphericalHarmonics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor for each splat’s spherical harmonic color coefficients.
 

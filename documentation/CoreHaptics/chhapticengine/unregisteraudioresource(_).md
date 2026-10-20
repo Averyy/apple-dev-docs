@@ -1,7 +1,8 @@
 # unregisterAudioResource(_:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unregisters an external audio file that you previously registered with the engine.
 
@@ -19,15 +20,20 @@ Unregisters an external audio file that you previously registered with the engin
 func unregisterAudioResource(_ resourceID: CHHapticAudioResourceID) throws
 ```
 
+```objc
+- (BOOL) unregisterAudioResource:(CHHapticAudioResourceID) resourceID error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `resourceID`: The ID of the audio resource you’d like to unregister.
 
 ## See Also
 
-- [func registerAudioResource(URL, options: [AnyHashable : Any]) throws -> CHHapticAudioResourceID](chhapticengine/registeraudioresource(_:options:).md)
+### Registering Audio Resources
+- [func registerAudioResource(URL, options: [AnyHashable : Any]) throws -> CHHapticAudioResourceID](./registeraudioresource%28_,options%29.md)
   Registers an external audio to use as a custom waveform.
-- [typealias CHHapticAudioResourceID](chhapticaudioresourceid.md)
+- [typealias CHHapticAudioResourceID](../chhapticaudioresourceid.md)
   A type that identifies a custom audio resource.
 
 

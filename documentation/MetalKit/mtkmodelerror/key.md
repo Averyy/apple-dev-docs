@@ -1,9 +1,10 @@
 # key
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+The key used to retrieve an error string from an error object’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary.
 
 **Availability**:
 - iOS 9.0+
@@ -19,9 +20,14 @@ The key used to retrieve an error string from an error object’s [`userInfo`](h
 static let key: MTKModelError
 ```
 
+```c
+extern MTKModelError const MTKModelErrorKey;
+```
+
 ## See Also
 
-- [static let domain: MTKModelError](mtkmodelerror/domain.md)
+### Constants
+- [static let domain: MTKModelError](./domain.md)
   The error domain used by MetalKit when returning mesh initialization errors.
 
 

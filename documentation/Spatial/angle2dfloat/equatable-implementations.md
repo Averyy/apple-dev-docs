@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Angle2DFloat, Angle2DFloat) -> Bool](angle2dfloat/==(_:_:).md)
+- [static func == (Angle2DFloat, Angle2DFloat) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two angles are equal.
 
 

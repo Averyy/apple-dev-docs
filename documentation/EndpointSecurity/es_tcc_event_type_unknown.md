@@ -1,16 +1,21 @@
 # ES_TCC_EVENT_TYPE_UNKNOWN
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_TCC_EVENT_TYPE_UNKNOWN: es_tcc_event_type_t { get }
+```
+
+```c
+ES_TCC_EVENT_TYPE_UNKNOWN
 ```
 
 

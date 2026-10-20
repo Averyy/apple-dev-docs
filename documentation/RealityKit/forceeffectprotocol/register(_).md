@@ -1,7 +1,8 @@
 # register(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Registers the custom effect.
 
@@ -14,6 +15,13 @@ Registers the custom effect.
 - visionOS 2.0+
 
 ## Declaration
+
+```swift
+@MainActor
+@preconcurrency static func register(_ updateHandler: (@MainActor (inout ForceEffectEvent<Self>) -> Void)? = nil)
+```
+
+**Other overloads**:
 
 ```swift
 @MainActor

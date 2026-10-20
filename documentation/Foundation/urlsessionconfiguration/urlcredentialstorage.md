@@ -1,7 +1,8 @@
 # urlCredentialStorage
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A credential store that provides credentials for authentication.
 
@@ -20,27 +21,32 @@ A credential store that provides credentials for authentication.
 var urlCredentialStorage: URLCredentialStorage? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSURLCredentialStorage * URLCredentialStorage;
+```
+
 #### Discussion
 
 This property determines the credential storage object used by tasks within sessions based on this configuration.
 
 If you don’t want to use a credential store, set this property to `nil`.
 
-For default and background sessions, the default value is the [`shared`](urlcredentialstorage/shared.md) credential store object.
+For default and background sessions, the default value is the [`shared`](../urlcredentialstorage/shared.md) credential store object.
 
-For [`ephemeral`](urlsessionconfiguration/ephemeral.md) sessions, the default value is a private credential store object that stores data in memory only, and is destroyed when you invalidate the session.
+For [`ephemeral`](./ephemeral.md) sessions, the default value is a private credential store object that stores data in memory only, and is destroyed when you invalidate the session.
 
 ## See Also
 
-- [var tlsMinimumSupportedProtocolVersion: tls_protocol_version_t](urlsessionconfiguration/tlsminimumsupportedprotocolversion.md)
+### Setting security policies
+- [var tlsMinimumSupportedProtocolVersion: tls_protocol_version_t](./tlsminimumsupportedprotocolversion.md)
   The minimum TLS protocol version that the client should accept when making connections in this session.
-- [var tlsMaximumSupportedProtocolVersion: tls_protocol_version_t](urlsessionconfiguration/tlsmaximumsupportedprotocolversion.md)
+- [var tlsMaximumSupportedProtocolVersion: tls_protocol_version_t](./tlsmaximumsupportedprotocolversion.md)
   The maximum TLS protocol version that the client should request when making connections in this session.
-- [var tlsMinimumSupportedProtocol: SSLProtocol](urlsessionconfiguration/tlsminimumsupportedprotocol.md)
+- [var tlsMinimumSupportedProtocol: SSLProtocol](./tlsminimumsupportedprotocol.md)
   The minimum TLS protocol to accept during protocol negotiation.
-- [var tlsMaximumSupportedProtocol: SSLProtocol](urlsessionconfiguration/tlsmaximumsupportedprotocol.md)
+- [var tlsMaximumSupportedProtocol: SSLProtocol](./tlsmaximumsupportedprotocol.md)
   The maximum TLS protocol version that the client should request when making connections in this session.
-- [var requiresDNSSECValidation: Bool](urlsessionconfiguration/requiresdnssecvalidation.md)
+- [var requiresDNSSECValidation: Bool](./requiresdnssecvalidation.md)
 
 
 ---

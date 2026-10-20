@@ -1,7 +1,8 @@
 # dontAddToRecents
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that the application or documents not be added to the Finder’s Recent Items menu.
 

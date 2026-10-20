@@ -1,7 +1,8 @@
 # getCapacity
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns the number of bytes the buffer is capable of holding. 
 
@@ -10,15 +11,16 @@ Returns the number of bytes the buffer is capable of holding.
 
 ## Declaration
 
-```swift
+```cpp
 virtual vm_size_t getCapacity(void);
 ```
 
 ## See Also
 
-- [- setDirection](iobuffermemorydescriptor/1574826-setdirection.md)
+### Configuring the Descriptor
+- [- setDirection](./api-1574826-setdirection.md)
   Changes the direction associated with the buffer’s memory transfers.
-- [- setLength](iobuffermemorydescriptor/1574850-setlength.md)
+- [- setLength](./api-1574850-setlength.md)
   Sets the length of the data in the buffer.
 
 

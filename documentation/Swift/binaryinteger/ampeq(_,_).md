@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Stores the result of performing a bitwise AND operation on the two given values in the left-hand-side variable.
@@ -38,9 +39,10 @@ x &= y                    // 0b00000100
 
 ## See Also
 
-- [static func & (Self, Self) -> Self](binaryinteger/&(_:_:).md)
+### Bitwise Operations
+- [static func & (Self, Self) -> Self](./amp%28_,_%29.md)
   Returns the result of performing a bitwise AND operation on the two given values.
-- [static func ~ (Self) -> Self](binaryinteger/~(_:).md)
+- [static func ~ (Self) -> Self](./tilde%28_%29.md)
   Returns the inverse of the bits set in the argument.
 
 

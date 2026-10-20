@@ -1,7 +1,8 @@
 # menuIndicator(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the menu indicator visibility for controls within this view.
 
@@ -42,7 +43,7 @@ Menu {
 .menuIndicator(.hidden)
 ```
 
-> **Note**: On tvOS, the standard button styles do not include a menu indicator, so this modifier will have no effect when using a built-in button style. You can implement an indicator in your own [`ButtonStyle`](buttonstyle.md) implementation by checking the value of the `menuIndicatorVisibility` environment value.
+> **Note**: On tvOS, the standard button styles do not include a menu indicator, so this modifier will have no effect when using a built-in button style. You can implement an indicator in your own [`ButtonStyle`](../buttonstyle.md) implementation by checking the value of the `menuIndicatorVisibility` environment value.
 
 ## Parameters
 
@@ -50,7 +51,8 @@ Menu {
 
 ## See Also
 
-- [var menuIndicatorVisibility: Visibility](environmentvalues/menuindicatorvisibility.md)
+### Showing a menu indicator
+- [var menuIndicatorVisibility: Visibility](../environmentvalues/menuindicatorvisibility.md)
   The menu indicator visibility to apply to controls within a view.
 
 

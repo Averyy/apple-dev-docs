@@ -1,7 +1,8 @@
 # setParameter(name:value:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a parameter by name.
 
@@ -23,7 +24,7 @@ mutating func setParameter(name: String, value newValue: MaterialParameters.Valu
 
 Call this method to drive a shader-graph input from Swift — for example, to animate a portal’s opacity each frame, or to swap in a different texture in response to user input.
 
-> **Note**: An error if the parameter doesn’t exist on this material’s program, or if the value’s type doesn’t match the parameter’s declared type.
+> **Throws**: An error if the parameter doesn’t exist on this material’s program, or if the value’s type doesn’t match the parameter’s declared type.
 
 ## Parameters
 
@@ -31,13 +32,14 @@ Call this method to drive a shader-graph input from Swift — for example, to an
 
 ## See Also
 
-- [func getParameter(name: String) -> MaterialParameters.Value?](portalmaterial/getparameter(name:).md)
+### Accessing shader parameters
+- [func getParameter(name: String) -> MaterialParameters.Value?](./getparameter%28name%29.md)
   Returns the value of a parameter by name.
-- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](portalmaterial/getparameter(handle:).md)
+- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](./getparameter%28handle%29.md)
   Returns the value of a parameter identified by a handle.
-- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](portalmaterial/setparameter(handle:value:).md)
+- [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](./setparameter%28handle,value%29.md)
   Sets the value of a parameter identified by a handle.
-- [static func parameterHandle(name: String) -> MaterialParameters.Handle](portalmaterial/parameterhandle(name:).md)
+- [static func parameterHandle(name: String) -> MaterialParameters.Handle](./parameterhandle%28name%29.md)
   Returns a handle for the parameter with the given name.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-defined value you use to identify the card.
 
@@ -9,7 +10,7 @@ A developer-defined value you use to identify the card.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ A developer-defined value you use to identify the card.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var art: CGImage](pkissuerprovisioningextensionpassentry/art.md)
+### Information for displaying an addable card
+- [var art: CGImage](./art.md)
   An image to that the system displays to the user when they add or select the card.
-- [var title: String](pkissuerprovisioningextensionpassentry/title.md)
+- [var title: String](./title.md)
   A name for the pass that the system displays to the user when they add or select the card.
 
 

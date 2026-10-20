@@ -1,7 +1,8 @@
 # text
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A text field the user can type text in.
 
@@ -19,17 +20,22 @@ A text field the user can type text in.
 static let text: PDFAnnotationWidgetSubtype
 ```
 
+```c
+extern PDFAnnotationWidgetSubtype PDFAnnotationWidgetSubtypeText;
+```
+
 ## Mentions
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+- [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
 ## See Also
 
-- [static let button: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/button.md)
+### Configuring a Widget Subtype
+- [static let button: PDFAnnotationWidgetSubtype](./button.md)
   A button widget type, including push buttons, checkboxes, and radio buttons.
-- [static let choice: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/choice.md)
+- [static let choice: PDFAnnotationWidgetSubtype](./choice.md)
   A type that presents a list of choices the user can choose from.
-- [static let signature: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/signature.md)
+- [static let signature: PDFAnnotationWidgetSubtype](./signature.md)
   A digital signature widget type.
 
 

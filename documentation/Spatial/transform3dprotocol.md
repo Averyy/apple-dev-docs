@@ -1,7 +1,8 @@
 # Transform3DProtocol
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that are common to transforms.
 
@@ -23,58 +24,58 @@ protocol Transform3DProtocol : SpatialTypeProtocol
 ## Topics
 
 ### Initializers
-- [init(rotation: Self.Rotation)](transform3dprotocol/init(rotation:).md)
+- [init(rotation: Self.Rotation)](./transform3dprotocol/init%28rotation%29.md)
   Returns a new rotation transform.
-- [init(scale: Self.Size)](transform3dprotocol/init(scale:).md)
+- [init(scale: Self.Size)](./transform3dprotocol/init%28scale%29.md)
   Returns a new scale transform.
-- [init(scale: Self.Size, rotation: Self.Rotation, translation: Self.Vector)](transform3dprotocol/init(scale:rotation:translation:).md)
+- [init(scale: Self.Size, rotation: Self.Rotation, translation: Self.Vector)](./transform3dprotocol/init%28scale,rotation,translation%29.md)
   Returns a new scale, rotate, translate transform.
-- [init(shear: Self.AxisEnumeration)](transform3dprotocol/init(shear:).md)
+- [init(shear: Self.AxisEnumeration)](./transform3dprotocol/init%28shear%29.md)
   Returns a new shear transform
-- [init(translation: Self.Vector)](transform3dprotocol/init(translation:).md)
+- [init(translation: Self.Vector)](./transform3dprotocol/init%28translation%29.md)
   Returns a new translate transform.
 ### Instance Properties
-- [var inverse: Self?](transform3dprotocol/inverse.md)
+- [var inverse: Self?](./transform3dprotocol/inverse.md)
   Returns a transform that’s constructed by inverting an existing transform.
-- [var isIdentity: Bool](transform3dprotocol/isidentity.md)
+- [var isIdentity: Bool](./transform3dprotocol/isidentity.md)
   Returns `true` if the transform is the identity transform.
-- [var isRectilinear: Bool](transform3dprotocol/isrectilinear.md)
+- [var isRectilinear: Bool](./transform3dprotocol/isrectilinear.md)
   Returns `true` if the transform is rectilinear.
-- [var isTranslation: Bool](transform3dprotocol/istranslation.md)
+- [var isTranslation: Bool](./transform3dprotocol/istranslation.md)
   Returns `true` if the transform is a translation.
-- [var isUniform: Bool](transform3dprotocol/isuniform.md)
+- [var isUniform: Bool](./transform3dprotocol/isuniform.md)
   Returns `true` if the transform is uniform over all dimensions.
-- [var rotation: Self.Rotation?](transform3dprotocol/rotation.md)
+- [var rotation: Self.Rotation?](./transform3dprotocol/rotation.md)
   The transform’s rotation. This is `nil` if the transform isn’t scale-rotate-translate.
-- [var translation: Self.Vector](transform3dprotocol/translation.md)
+- [var translation: Self.Vector](./transform3dprotocol/translation.md)
   The transform’s translation.
 ### Instance Methods
-- [func concatenating(Self) -> Self](transform3dprotocol/concatenating(_:).md)
+- [func concatenating(Self) -> Self](./transform3dprotocol/concatenating%28_%29.md)
   Returns a transform that’s constructed by combining two existing transforms.
-- [func flip(along: Axis3D)](transform3dprotocol/flip(along:).md)
+- [func flip(along: Axis3D)](./transform3dprotocol/flip%28along%29.md)
   Flips the transform along the specified axis.
-- [func flipped(along: Axis3D) -> Self](transform3dprotocol/flipped(along:).md)
+- [func flipped(along: Axis3D) -> Self](./transform3dprotocol/flipped%28along%29.md)
   Returns the transform flipped along the specified axis.
-- [func isApproximatelyEqual(to: Self, tolerance: Self.Scalar) -> Bool](transform3dprotocol/isapproximatelyequal(to:tolerance:).md)
+- [func isApproximatelyEqual(to: Self, tolerance: Self.Scalar) -> Bool](./transform3dprotocol/isapproximatelyequal%28to,tolerance%29.md)
   Returns a Boolean value that indicates whether two transforms are equal within a specified tolerance.
-- [func isUniform(overDimensions: Dimension3DSet) -> Bool](transform3dprotocol/isuniform(overdimensions:).md)
+- [func isUniform(overDimensions: Dimension3DSet) -> Bool](./transform3dprotocol/isuniform%28overdimensions%29.md)
   Returns `true` if the transform is uniform over the specified dimensions.
 ### Type Properties
-- [static var identity: Self](transform3dprotocol/identity.md)
+- [static var identity: Self](./transform3dprotocol/identity.md)
   Returns the identity transform.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
 ### Conforming Types
-- [AffineTransform3D](affinetransform3d.md)
-- [AffineTransform3DFloat](affinetransform3dfloat.md)
-- [ProjectiveTransform3D](projectivetransform3d.md)
-- [ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
+- [AffineTransform3D](./affinetransform3d.md)
+- [AffineTransform3DFloat](./affinetransform3dfloat.md)
+- [ProjectiveTransform3D](./projectivetransform3d.md)
+- [ProjectiveTransform3DFloat](./projectivetransform3dfloat.md)
 
 
 ---

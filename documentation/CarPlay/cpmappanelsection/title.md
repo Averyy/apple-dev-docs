@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized string to display for the section title.
 
@@ -14,6 +15,10 @@ The localized string to display for the section title.
 
 ```swift
 var title: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
 ```
 
 #### Discussion

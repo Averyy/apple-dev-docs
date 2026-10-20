@@ -1,7 +1,8 @@
 # JSNotificationURLFormat
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A universal link that determines how the system provides Journaling Suggestion notifications to your app.
 
@@ -9,13 +10,14 @@ A universal link that determines how the system provides Journaling Suggestion n
 - iOS 26.0+
 - iPadOS 26.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `JSNotificationURLFormat`
+- **Type**: string
 
 #### Discussion
 
-Add this key to your app’s Info.plist to register it as an eligible client of [`Journaling Suggestions`](https://developer.apple.com/documentation/journalingsuggestions) notifications. The value needs to be a *universal link*, which consists of a base URL for your app, followed by the parameter string: `{journaling-suggestion-id}`, which represents the unique journaling suggestion. For example:
+Add this key to your app’s Info.plist to register it as an eligible client of [Journaling Suggestions](../../JournalingSuggestions/JournalingSuggestions.md) notifications. The value needs to be a *universal link*, which consists of a base URL for your app, followed by the parameter string: `{journaling-suggestion-id}`, which represents the unique journaling suggestion. For example:
 
 ```http
 <base_URL>/{journaling-suggesion-id}

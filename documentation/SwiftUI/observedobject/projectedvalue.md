@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the observed object that creates bindings to its properties.
 
@@ -23,7 +24,7 @@ A projection of the observed object that creates bindings to its properties.
 
 #### Discussion
 
-Use the projected value to get a [`Binding`](binding.md) to a property of an observed object. To access the projected value, prefix the property variable with a dollar sign (`$`). For example, you can get a binding to a model’s `isEnabled` Boolean so that a [`Toggle`](toggle.md) can control its value:
+Use the projected value to get a [`Binding`](../binding.md) to a property of an observed object. To access the projected value, prefix the property variable with a dollar sign (`$`). For example, you can get a binding to a model’s `isEnabled` Boolean so that a [`Toggle`](../toggle.md) can control its value:
 
 ```swift
 struct MySubView: View {
@@ -39,9 +40,10 @@ struct MySubView: View {
 
 ## See Also
 
-- [var wrappedValue: ObjectType](observedobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType](./wrappedvalue.md)
   The underlying value that the observed object references.
-- [ObservedObject.Wrapper](observedobject/wrapper.md)
+- [ObservedObject.Wrapper](./wrapper.md)
   A wrapper of the underlying observable object that can create bindings to its properties.
 
 

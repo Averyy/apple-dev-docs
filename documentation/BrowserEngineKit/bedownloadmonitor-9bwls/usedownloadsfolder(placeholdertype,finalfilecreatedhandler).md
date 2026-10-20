@@ -1,7 +1,8 @@
 # useDownloadsFolder(placeholderType:finalFileCreatedHandler:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the system to create a placeholder for the downloaded file in the person’s Downloads folder.
 
@@ -18,7 +19,7 @@ Asks the system to create a placeholder for the downloaded file in the person’
 
 ## Mentions
 
-- [Downloading files in a web browser with an alternative browser engine](downloading-files-in-a-web-browser.md)
+- [Downloading files in a web browser with an alternative browser engine](../downloading-files-in-a-web-browser.md)
 
 ## Parameters
 
@@ -27,7 +28,8 @@ Asks the system to create a placeholder for the downloaded file in the person’
 
 ## See Also
 
-- [BEDownloadMonitor.Location](bedownloadmonitor-9bwls/location.md)
+### Creating a download placeholder
+- [BEDownloadMonitor.Location](./location.md)
   A class that associates a URL with the bookmark you use to access that URL.
 
 

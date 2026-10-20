@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct timespec {
     ...
 };
@@ -17,8 +17,8 @@ struct timespec {
 ## Topics
 
 ### Instance Properties
-- [tv_nsec](timespec/1404407-tv_nsec.md)
-- [tv_sec](timespec/1404405-tv_sec.md)
+- [tv_nsec](./timespec/api-1404407-tv_nsec.md)
+- [tv_sec](./timespec/api-1404405-tv_sec.md)
 
 
 ---

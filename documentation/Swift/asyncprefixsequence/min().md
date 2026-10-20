@@ -1,7 +1,8 @@
 # min()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum element in an asynchronous sequence of comparable elements.
 
@@ -20,6 +21,8 @@ Returns the minimum element in an asynchronous sequence of comparable elements.
 @warn_unqualified_access
 func min() async rethrows -> Self.Element?
 ```
+
+Available when `Element` conforms to `Comparable`.
 
 #### Return Value
 

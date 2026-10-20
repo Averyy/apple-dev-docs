@@ -1,7 +1,8 @@
 # contextHelpModeDidActivate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var contextHelpModeDidActivate: NotificationCenter.BaseMessageIdentifier<NSHelpManager.ContextHelpModeDidActivateMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSHelpManager.ContextHelpModeDidActivateMessage>`.
 
 
 ---

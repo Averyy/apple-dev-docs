@@ -1,7 +1,8 @@
 # availableType(from:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns from a given array of types the first type within the pasteboard item, according to the ordering of types.
 
@@ -12,6 +13,10 @@ Returns from a given array of types the first type within the pasteboard item, a
 
 ```swift
 func availableType(from types: [NSPasteboard.PasteboardType]) -> NSPasteboard.PasteboardType?
+```
+
+```objc
+- (NSPasteboardType) availableTypeFromArray:(NSArray<NSString *> *) types;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ The method checks for UTI conformance of the requested types, preferring an exac
 
 ## See Also
 
-- [var types: [NSPasteboard.PasteboardType]](nspasteboarditem/types.md)
+### Getting types
+- [var types: [NSPasteboard.PasteboardType]](./types.md)
   An array of uniform type identifier strings of the data types that the receiver supports.
 
 

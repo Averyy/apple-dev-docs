@@ -1,7 +1,8 @@
 # CSSearchQueryContext.SourceOptions
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The query source options to allow or deny Mail messages in the search.
 
@@ -14,33 +15,38 @@ The query source options to allow or deny Mail messages in the search.
 struct SourceOptions
 ```
 
+```c
+enum CSSearchQuerySourceOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Search options
-- [static var allowMail: CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.struct/allowmail.md)
+- [static var allowMail: CSSearchQueryContext.SourceOptions](./sourceoptions-swift.struct/allowmail.md)
   The query allows Mail messages in the search.
 ### Initializers
-- [init(rawValue: UInt)](cssearchquerycontext/sourceoptions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./sourceoptions-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var fetchAttributes: [String]](cssearchquerycontext/fetchattributes.md)
+### Configuring search behavior
+- [var fetchAttributes: [String]](./fetchattributes.md)
   The attributes the system fetches for the searchable items.
-- [var keyboardLanguage: String?](cssearchquerycontext/keyboardlanguage.md)
+- [var keyboardLanguage: String?](./keyboardlanguage.md)
   The language used for the query.
-- [var sourceOptions: CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.property.md)
+- [var sourceOptions: CSSearchQueryContext.SourceOptions](./sourceoptions-swift.property.md)
   The query source options to allow or deny Mail messages in the search.
 
 

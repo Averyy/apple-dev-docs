@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type this encoder produces.

@@ -1,7 +1,8 @@
 # symbolImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image that represents the maneuver.
 
@@ -16,17 +17,22 @@ An image that represents the maneuver.
 var symbolImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * symbolImage;
+```
+
 #### Discussion
 
-You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](https://developer.apple.com/documentation/uikit/uiimage/init(named:)). CarPlay then selects the correct image for the current interface style.
+You use a named image asset to supply variants for both dark and light interface styles, and initialize the image using [`init(named:)`](../../UIKit/uiimage/init%28named%29.md). CarPlay then selects the correct image for the current interface style.
 
 ## See Also
 
-- [var dashboardSymbolImage: UIImage?](cpmaneuver/dashboardsymbolimage.md)
+### Providing symbol images
+- [var dashboardSymbolImage: UIImage?](./dashboardsymbolimage.md)
   An image for the CarPlay dashboard that represents the maneuver.
-- [var notificationSymbolImage: UIImage?](cpmaneuver/notificationsymbolimage.md)
+- [var notificationSymbolImage: UIImage?](./notificationsymbolimage.md)
   An image for notification banners that represents the maneuver.
-- [var symbolSet: CPImageSet?](cpmaneuver/symbolset.md)
+- [var symbolSet: CPImageSet?](./symbolset.md)
   An image set that represents the maneuver.
 
 

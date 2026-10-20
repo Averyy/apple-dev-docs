@@ -1,7 +1,8 @@
 # splitViewControllerDidCollapse(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the split view controller interface has collapsed.
 
@@ -18,11 +19,15 @@ Tells the delegate that the split view controller interface has collapsed.
 optional func splitViewControllerDidCollapse(_ svc: UISplitViewController)
 ```
 
+```objc
+- (void) splitViewControllerDidCollapse:(UISplitViewController *) svc;
+```
+
 #### Discussion
 
-This delegate method only applies to column-style split view interfaces. For more information, see [`Split view styles`](uisplitviewcontroller#Split-view-styles.md).
+This delegate method only applies to column-style split view interfaces. For more information, see [Split view styles](../uisplitviewcontroller.md#Split-view-styles).
 
-The split view controller calls this method after its interface has collapsed, meaning that [`isCollapsed`](uisplitviewcontroller/iscollapsed.md) is [`true`](https://developer.apple.com/documentation/swift/true). Use this method to perform any customization associated with the collapsed interface.
+The split view controller calls this method after its interface has collapsed, meaning that [`isCollapsed`](../uisplitviewcontroller/iscollapsed.md) is [`true`](../../Swift/true.md). Use this method to perform any customization associated with the collapsed interface.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The split view controller calls this method after its interface has collapsed, m
 
 ## See Also
 
-- [func splitViewController(UISplitViewController, topColumnForCollapsingToProposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column](uisplitviewcontrollerdelegate/splitviewcontroller(_:topcolumnforcollapsingtoproposedtopcolumn:).md)
+### Collapsing the interface
+- [func splitViewController(UISplitViewController, topColumnForCollapsingToProposedTopColumn: UISplitViewController.Column) -> UISplitViewController.Column](./splitviewcontroller%28_,topcolumnforcollapsingtoproposedtopcolumn%29.md)
   Asks the delegate to provide the column to display after the split view interface collapses.
-- [func splitViewController(UISplitViewController, willHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willhide:).md)
+- [func splitViewController(UISplitViewController, willHide: UISplitViewController.Column)](./splitviewcontroller%28_,willhide%29.md)
   Tells the delegate that the specified column is about to be hidden.
-- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](uisplitviewcontrollerdelegate/splitviewcontroller(_:didhide:).md)
+- [func splitViewController(UISplitViewController, didHide: UISplitViewController.Column)](./splitviewcontroller%28_,didhide%29.md)
   Tells the delegate that the system completed hiding the specified column.
 
 

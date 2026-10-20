@@ -1,7 +1,8 @@
 # init(_:text:selection:prompt:axis:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field with a binding to the current selection and a text label generated from a localized title string resource.
 
@@ -17,6 +18,20 @@ Creates a text field with a binding to the current selection and a text label ge
 ```swift
 @export(implementation)
 nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil)
+```
+
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil) where S : StringProtocol
 ```
 
 #### Discussion
@@ -36,13 +51,13 @@ var body: some View {
 }
 ```
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever the user submits this text field.
 
 ## Parameters
 
 - `titleResource`: The localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
-- `selection`: A [`Binding`](binding.md) to the variable containing the selection.
+- `selection`: A [`Binding`](../binding.md) to the variable containing the selection.
 - `prompt`: A `Text` representing the prompt of the text field which provides users with guidance on what to type into the text field. Defaults to `nil`.
 - `axis`: The axis in which to scroll text when it doesn’t fit in the available space. Defaults to `nil`.
 

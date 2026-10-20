@@ -1,7 +1,8 @@
 # addObserver(_:forKeyPath:options:context:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises an exception.
 
@@ -20,6 +21,10 @@ Raises an exception.
 func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKeyValueObservingOptions = [], context: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) addObserver:(NSObject *) observer forKeyPath:(NSString *) keyPath options:(NSKeyValueObservingOptions) options context:(void *) context;
+```
+
 #### Discussion
 
 `NSOrderedSet` objects are not observable, so this method raises an exception when invoked on an `NSOrderedSet` object. Instead of observing an ordered set, observe the to-many relationship for which the ordered set is the collection of related objects.
@@ -28,14 +33,15 @@ func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKe
 
 - `observer`: The object to register for KVO notifications.
 - `keyPath`: The key path, relative to the array, of the property to observe. This value must not be nil.
-- `options`: A combination of [`NSKeyValueObservingOptions`](nskeyvalueobservingoptions.md) values that specifies what is included in observation notifications.
-- `context`: Arbitrary data that is passed to observer in [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)).
+- `options`: A combination of [`NSKeyValueObservingOptions`](../nskeyvalueobservingoptions.md) values that specifies what is included in observation notifications.
+- `context`: Arbitrary data that is passed to observer in [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md).
 
 ## See Also
 
-- [func removeObserver(NSObject, forKeyPath: String)](nsorderedset/removeobserver(_:forkeypath:).md)
+### Key-Value Observing Support
+- [func removeObserver(NSObject, forKeyPath: String)](./removeobserver%28_,forkeypath%29.md)
   Raises an exception.
-- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](nsorderedset/removeobserver(_:forkeypath:context:).md)
+- [func removeObserver(NSObject, forKeyPath: String, context: UnsafeMutableRawPointer?)](./removeobserver%28_,forkeypath,context%29.md)
   Raises an exception.
 
 

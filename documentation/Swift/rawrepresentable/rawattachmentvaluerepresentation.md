@@ -1,7 +1,8 @@
 # rawAttachmentValueRepresentation
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 var rawAttachmentValueRepresentation: CVAttachmentRawValue { get }
 ```
+
+Available when `RawValue` conforms to `CVAttachmentValueRepresentable`.
 
 
 ---

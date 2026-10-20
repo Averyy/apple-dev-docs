@@ -1,7 +1,8 @@
 # mouseMovedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the profile calls when the mouse moves.
 
@@ -19,9 +20,14 @@ The block that the profile calls when the mouse moves.
 var mouseMovedHandler: GCMouseMoved? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCMouseMoved mouseMovedHandler;
+```
+
 ## See Also
 
-- [typealias GCMouseMoved](gcmousemoved.md)
+### Getting Change Information
+- [typealias GCMouseMoved](../gcmousemoved.md)
   The signature for the block that the mouse input profile calls when the mouse moves.
 
 

@@ -1,7 +1,8 @@
 # CLKComplicationFamily.utilitarianSmall
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A small square or rectangular area that ClockKit Displays on the Utility, Mickey, Chronograph, and Simple watch faces.
 
@@ -14,19 +15,24 @@ A small square or rectangular area that ClockKit Displays on the Utility, Mickey
 case utilitarianSmall
 ```
 
+```c
+CLKComplicationFamilyUtilitarianSmall
+```
+
 #### Discussion
 
 The following figure shows the size and location of the utilitarian small complication.
 
-![Diagram showing the size and position of a utilitarian small complication.](/images/com.apple.clockkit/media-2933733@2x.png)
+![Diagram showing the size and position of a utilitarian small complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-2933733@2x.png)
 
-The utilitarian small family can display the [`CLKComplicationTemplateUtilitarianSmallFlat`](clkcomplicationtemplateutilitariansmallflat.md), [`CLKComplicationTemplateUtilitarianSmallSquare`](clkcomplicationtemplateutilitariansmallsquare.md), [`CLKComplicationTemplateUtilitarianSmallRingText`](clkcomplicationtemplateutilitariansmallringtext.md), and [`CLKComplicationTemplateUtilitarianSmallRingImage`](clkcomplicationtemplateutilitariansmallringimage.md) templates.
+The utilitarian small family can display the [`CLKComplicationTemplateUtilitarianSmallFlat`](../clkcomplicationtemplateutilitariansmallflat.md), [`CLKComplicationTemplateUtilitarianSmallSquare`](../clkcomplicationtemplateutilitariansmallsquare.md), [`CLKComplicationTemplateUtilitarianSmallRingText`](../clkcomplicationtemplateutilitariansmallringtext.md), and [`CLKComplicationTemplateUtilitarianSmallRingImage`](../clkcomplicationtemplateutilitariansmallringimage.md) templates.
 
 ## See Also
 
-- [CLKComplicationFamily.utilitarianSmallFlat](clkcomplicationfamily/utilitariansmallflat.md)
+### Utilitarian
+- [CLKComplicationFamily.utilitarianSmallFlat](./utilitariansmallflat.md)
   A small rectangular area that ClockKit Displays on the Photos, Motion, and Timelapse watch faces.
-- [CLKComplicationFamily.utilitarianLarge](clkcomplicationfamily/utilitarianlarge.md)
+- [CLKComplicationFamily.utilitarianLarge](./utilitarianlarge.md)
   A large rectangular area that spans the width of the screen in the Utility and Mickey watch faces.
 
 

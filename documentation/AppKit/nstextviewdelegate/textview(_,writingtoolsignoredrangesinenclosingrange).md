@@ -1,7 +1,8 @@
 # textView(_:writingToolsIgnoredRangesInEnclosingRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -13,14 +14,19 @@
 optional func textView(_ textView: NSTextView, writingToolsIgnoredRangesInEnclosingRange enclosingRange: NSRange) -> [NSValue]
 ```
 
+```objc
+- (NSArray<NSValue *> *) textView:(NSTextView *) textView writingToolsIgnoredRangesInEnclosingRange:(NSRange) enclosingRange;
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for AppKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 ## See Also
 
-- [func textViewWritingToolsWillBegin(NSTextView)](nstextviewdelegate/textviewwritingtoolswillbegin(_:).md)
-- [func textViewWritingToolsDidEnd(NSTextView)](nstextviewdelegate/textviewwritingtoolsdidend(_:).md)
+### Responding to writing tools interactions
+- [func textViewWritingToolsWillBegin(NSTextView)](./textviewwritingtoolswillbegin%28_%29.md)
+- [func textViewWritingToolsDidEnd(NSTextView)](./textviewwritingtoolsdidend%28_%29.md)
 
 
 ---

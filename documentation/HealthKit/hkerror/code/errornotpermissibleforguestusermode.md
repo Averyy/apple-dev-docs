@@ -1,7 +1,8 @@
 # HKError.Code.errorNotPermissibleForGuestUserMode
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app attempted to write HealthKit data while in a Guest User session in visionOS.
 
@@ -19,9 +20,13 @@ The app attempted to write HealthKit data while in a Guest User session in visio
 case errorNotPermissibleForGuestUserMode
 ```
 
+```c
+HKErrorNotPermissibleForGuestUserMode
+```
+
 ## Mentions
 
-- [Authorizing access to health data](authorizing-access-to-health-data.md)
+- [Authorizing access to health data](../../authorizing-access-to-health-data.md)
 
 
 ---

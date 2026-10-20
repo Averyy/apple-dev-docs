@@ -1,7 +1,8 @@
 # register(defaults:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the set of default settings and values to use as a fallback in cases where the app domain doesn’t have them.
 
@@ -20,9 +21,13 @@ Specifies the set of default settings and values to use as a fallback in cases w
 func register(defaults registrationDictionary: [String : Any])
 ```
 
+```objc
+- (void) registerDefaults:(NSDictionary<NSString *,id> *) registrationDictionary;
+```
+
 ## Mentions
 
-- [Accessing settings from your code](accessing-settings-from-your-code.md)
+- [Accessing settings from your code](../accessing-settings-from-your-code.md)
 
 #### Discussion
 

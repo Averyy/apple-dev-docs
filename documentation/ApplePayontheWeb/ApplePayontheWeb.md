@@ -1,7 +1,8 @@
 # Apple Pay on the Web
 
 **Framework**: Apple Pay on the Web  
-**Kind**: module
+**Kind**: module  
+**Role**: Technology
 
 Support Apple Pay on your website with JavaScript-based APIs.
 
@@ -13,82 +14,82 @@ Support Apple Pay on your website with JavaScript-based APIs.
 
 Safari supports two JavaScript APIs that let you accept Apple Pay payments from customers on your website:
 
-- [`Payment Request API`](payment-request-api.md), a [`W3C candidate API`](https://developer.apple.comhttps://www.w3.org/TR/payment-request/)
-- [`Apple Pay JS API`](apple-pay-js-api.md), analogous to the [`PassKit (Apple Pay and Wallet)`](https://developer.apple.com/documentation/passkit) framework for Apple Pay in apps
+- [Payment Request API](./payment-request-api.md), a [W3C candidate API](https://www.w3.org/TR/payment-request/)
+- [Apple Pay JS API](./apple-pay-js-api.md), analogous to the [PassKit (Apple Pay and Wallet)](../PassKit/PassKit.md) framework for Apple Pay in apps
 
-> 💡 **Tip**:  You can try out Apple Pay transactions on the demo page. See [`Apple Pay on the Web Interactive Demo`](https://developer.apple.comhttps://applepaydemo.apple.com).
+> 💡 **Tip**:  You can try out Apple Pay transactions on the demo page. See [Apple Pay on the Web Interactive Demo](https://applepaydemo.apple.com).
 
 Apple Pay is available on all iOS devices with a Secure Element — an industry-standard, certified chip designed to store payment information safely. In macOS, to authorize the payment, users need a Mac with Touch ID, or an Apple Pay-capable iPhone or Apple Watch..
 
-##### Apple Pay Availability By Region and Platform
+##### Apple Pay availability by region and platform
 
-Apple Pay is available in [`supported regions`](https://developer.apple.comhttps://www.apple.com/ios/feature-availability/#apple-pay).
+Apple Pay is available in [supported regions](https://www.apple.com/ios/feature-availability/#apple-pay).
 
 The Apple Pay APIs are available in Safari on the following platforms:
 
 |  | **Worldwide (except China)** | **China** |
 | --- | --- | --- |
-| **Apple Pay JS** | iOS 10 and later ![None](/images/com.apple.applepayontheweb/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![None](/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
-| **Payment Request API** | iOS 11.3 and later ![None](/images/com.apple.applepayontheweb/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![None](/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
+| **Apple Pay JS** | iOS 10 and later ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) macOS 10.12 and later | iOS 11.2 and later ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
+| **Payment Request API** | iOS 11.3 and later ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) macOS 10.12.6 and later, in Safari 11.1 and later | iOS 11.3 and later ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) (Not available in macOS) |
 
-In iOS, Safari and [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) objects support Apple Pay.
+In iOS, Safari and [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md) objects support Apple Pay.
 
-See [`Checking for Apple Pay availability`](checking-for-apple-pay-availability.md) to ensure your implementation only displays the Apple Pay button on supported devices.
+See [Checking for Apple Pay availability](./checking-for-apple-pay-availability.md) to ensure your implementation only displays the Apple Pay button on supported devices.
 
-> **Note**:  Regulations in some regions may require specific configurations in your implementation. For more information, see [`Complying with regional regulations`](https://developer.apple.com/documentation/passkit/complying-with-regional-regulations).
+> **Note**:  Regulations in some regions may require specific configurations in your implementation. For more information, see [Complying with regional regulations](../PassKit/complying-with-regional-regulations.md).
 
-##### Apple Pay Requirements
+##### Apple Pay requirements
 
 To use Apple Pay on your website, the requirements are:
 
-- A website that complies with the Apple Pay guidelines. For more information, see [`Acceptable Use Guidelines for Apple Pay on the Web`](https://developer.apple.comhttps://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/).
-- An Apple Developer account and complete the registration. For more information, see [`Configuring Your Environment`](configuring-your-environment.md).
-- Serve all pages that include Apple Pay over HTTPS. For more information, see [`Setting Up Your Server`](setting-up-your-server.md).
+- A website that complies with the Apple Pay guidelines. For more information, see [Acceptable Use Guidelines for Apple Pay on the Web](https://developer.apple.com/apple-pay/acceptable-use-guidelines-for-websites/).
+- An Apple Developer account and complete the registration. For more information, see [Configuring Your Environment](./configuring-your-environment.md).
+- Serve all pages that include Apple Pay over HTTPS. For more information, see [Setting Up Your Server](./setting-up-your-server.md).
 
-For design guidance, see [`Human Interface Guidelines > Apple Pay`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/introduction/).
+For design guidance, see [Human Interface Guidelines > Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/introduction/).
 
 ## Topics
 
 ### Essentials
-- [Loading the latest version of the Apple Pay JS SDK](loading-the-latest-version-of-apple-pay-js.md)
+- [Loading the latest version of the Apple Pay JS SDK](./loading-the-latest-version-of-apple-pay-js.md)
   Link to the most recent autoupdating version of the Apple Pay JS SDK or a version of your choice.
 ### Apple Pay setup
-- [Setting Up Your Server](setting-up-your-server.md)
+- [Setting Up Your Server](./setting-up-your-server.md)
   Set up your server for secure communications with Apple Pay.
-- [Configuring Your Environment](configuring-your-environment.md)
+- [Configuring Your Environment](./configuring-your-environment.md)
   Create your Apple Pay merchant ID and certificates, and verify your domain.
-- [Maintaining Your Environment](maintaining-your-environment.md)
+- [Maintaining Your Environment](./maintaining-your-environment.md)
   Prevent interruptions in your Apple Pay service by keeping certificates and domain verification current.
 ### Apple Pay merchandising
-- [Integrating the Apple Pay merchandising component](integrating-the-apple-pay-merchandising-component.md)
+- [Integrating the Apple Pay merchandising component](./integrating-the-apple-pay-merchandising-component.md)
   Display Apple Pay installment payment options and merchandising information to customers using the Apple Pay Merchandising web component.
 ### Apple order tracking button
-- [Adding a Track with Apple Wallet button](adding-a-track-with-apple-wallet-button.md)
+- [Adding a Track with Apple Wallet button](./adding-a-track-with-apple-wallet-button.md)
   Configure and style an Apple Wallet Button to match your website.
 ### Apple Pay buttons
-- [Displaying Apple Pay Buttons Using JavaScript](displaying-apple-pay-buttons-using-javascript.md)
+- [Displaying Apple Pay Buttons Using JavaScript](./displaying-apple-pay-buttons-using-javascript.md)
   Load and configure the JavaScript Apple Pay button.
-- [ApplePayButton](applepaybutton.md)
+- [ApplePayButton](./applepaybutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
-- [Displaying Apple Pay Buttons Using CSS](displaying-apple-pay-buttons-using-css.md)
+- [Displaying Apple Pay Buttons Using CSS](./displaying-apple-pay-buttons-using-css.md)
   Use CSS templates to display Apple Pay buttons in Safari.
 ### Apple Pay JavaScript APIs
-- [Choosing an API for Implementing Apple Pay on Your Website](choosing-an-api-for-implementing-apple-pay-on-your-website.md)
+- [Choosing an API for Implementing Apple Pay on Your Website](./choosing-an-api-for-implementing-apple-pay-on-your-website.md)
   Compare Apple Pay JS and Payment Request API to choose the right implementation for your website.
-- [Apple Pay on the Web version history](apple-pay-on-the-web-version-history.md)
+- [Apple Pay on the Web version history](./apple-pay-on-the-web-version-history.md)
   Learn about features in each version of Apple Pay on the Web.
-- [Apple Pay JS API](apple-pay-js-api.md)
+- [Apple Pay JS API](./apple-pay-js-api.md)
   Implement Apple Pay on the web using Apple’s JavaScript API.
-- [Payment Request API](payment-request-api.md)
+- [Payment Request API](./payment-request-api.md)
   Accept payments on your website with Apple Pay using the Payment Request API.
 ### Supported payment networks
-- [Supporting payment networks](supported-networks.md)
+- [Supporting payment networks](./supported-networks.md)
   Learn which payment networks Apple Pay on the Web supports.
 ### Errors
-- [ApplePayError](applepayerror.md)
+- [ApplePayError](./applepayerror.md)
   A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
 ### Apple Pay JS SDK change log
-- [Apple Pay JS change log](apple-pay-js-change-log.md)
+- [Apple Pay JS change log](./apple-pay-js-change-log.md)
   Learn about new features and updates in the Apple Pay JS SDK.
 
 

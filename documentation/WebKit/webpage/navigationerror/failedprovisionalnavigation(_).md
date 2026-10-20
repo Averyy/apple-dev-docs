@@ -1,7 +1,8 @@
 # WebPage.NavigationError.failedProvisionalNavigation(_:)
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error occurred during the early navigation process.
 

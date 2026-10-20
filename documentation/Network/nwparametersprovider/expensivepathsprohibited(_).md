@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prohibit using expensive paths.
@@ -28,6 +29,12 @@ Prohibit connections and listeners from using a network interface that is consid
 ## Parameters
 
 - `prohibited`: True if expensive paths are prohibited, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func expensivePathsProhibited(Bool) -> Self](./expensivepathsprohibited%28_%29-53yp0.md)
+  Prohibit using expensive paths.
 
 
 ---

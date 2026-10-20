@@ -1,6 +1,7 @@
 # Requesting authorization to use location services
 
-**Framework**: Core Location
+**Framework**: Core Location  
+**Role**: Article
 
 Obtain authorization to use location services and manage changes to your app’s authorization status.
 
@@ -10,7 +11,7 @@ Location data is sensitive information, and the use of location data has privacy
 
 To help people understand why you need location data, make authorization requests only when someone engages a part of your app that requires that data. Making the request immediately before it’s needed increases the likelihood of the person granting the request. If you make a request immediately at app launch, or in a part of your app that doesn’t clearly use location data, the person might misinterpret your intent and deny the request.
 
-##### Choose the Access Level You Need
+##### Choose the access level you need
 
 Before you place an authorization request, choose the level of access your app needs. Core Location supports two authorization levels:
 
@@ -34,9 +35,9 @@ Regardless of which access level you choose, you can start any location services
 | Supported location services | All | All |
 | Launches a terminated app automatically | No. The user must launch the app. | Yes for significant location change, visits, and region monitoring services; no for others |
 
-For information about how to handle location updates in the background, see [`Handling location updates in the background`](handling-location-updates-in-the-background.md).
+For information about how to handle location updates in the background, see [Handling location updates in the background](./handling-location-updates-in-the-background.md).
 
-##### Provide Descriptions of How You Use Location Services
+##### Provide descriptions of how you use location services
 
 The first time you make an authorization request, the system displays an alert asking the person to grant or deny the request. The alert includes a usage description string that explains why you want access to location data. You provide this string in your app’s Information Property List and use it to inform people about how your app uses location data.
 
@@ -44,15 +45,15 @@ Core Location supports different usage strings for each access level. You must i
 
 | Usage key | Required when: |
 | --- | --- |
-| [`NSLocationWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationwheninuseusagedescription) | The app requests When in Use or Always authorization. |
-| [`NSLocationAlwaysAndWhenInUseUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription) | The app requests Always authorization. |
-| [`NSLocationUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nslocationusagedescription) | (macOS only) Your macOS app uses location services. |
+| [`NSLocationWhenInUseUsageDescription`](../BundleResources/information-property-list/nslocationwheninuseusagedescription.md) | The app requests When in Use or Always authorization. |
+| [`NSLocationAlwaysAndWhenInUseUsageDescription`](../BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md) | The app requests Always authorization. |
+| [`NSLocationUsageDescription`](../BundleResources/information-property-list/nslocationusagedescription.md) | (macOS only) Your macOS app uses location services. |
 
 Add all usage description keys to your app’s Information Property List before you make any authorization requests. Authorization requests fail immediately if the required keys aren’t present.
 
-##### Make Authorization Requests and Respond to Status Changes
+##### Make authorization requests and respond to status changes
 
-Before you start any location services, check your app’s current authorization status and place an authorization request if needed. You can get your app’s current authorization from the [`authorizationStatus`](cllocationmanager/authorizationstatus-swift.property.md) property of your location-manager object. However, a newly configured [`CLLocationManager`](cllocationmanager.md) object also reports your app’s current authorization status to its delegate’s [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) method automatically. You might use that method to place an authorization request when the current status is [`CLAuthorizationStatus.notDetermined`](clauthorizationstatus/notdetermined.md). In the following example, the delegate method enables or disables location features when the status is known and requests authorization when the status is undetermined.
+Before you start any location services, check your app’s current authorization status and place an authorization request if needed. You can get your app’s current authorization from the [`authorizationStatus`](./cllocationmanager/authorizationstatus-swift.property.md) property of your location-manager object. However, a newly configured [`CLLocationManager`](./cllocationmanager.md) object also reports your app’s current authorization status to its delegate’s [`locationManagerDidChangeAuthorization(_:)`](./cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) method automatically. You might use that method to place an authorization request when the current status is [`CLAuthorizationStatus.notDetermined`](./clauthorizationstatus/notdetermined.md). In the following example, the delegate method enables or disables location features when the status is known and requests authorization when the status is undetermined.
 
 ```swift
 func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) { 
@@ -76,25 +77,26 @@ func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
 
 ```
 
-The [`locationManagerDidChangeAuthorization(_:)`](cllocationmanagerdelegate/locationmanagerdidchangeauthorization(_:).md) method offers a central place to process any authorization-related changes. People can change your app’s authorization status at any time in system settings. If your app is running when the change happens, each of your app’s [`CLLocationManager`](cllocationmanager.md) objects reports the change to that delegate method. The location manager also reports your app’s current authorization at other times. For example, the location manager also calls the method when a suspended iOS app starts running again.
+The [`locationManagerDidChangeAuthorization(_:)`](./cllocationmanagerdelegate/locationmanagerdidchangeauthorization%28_%29.md) method offers a central place to process any authorization-related changes. People can change your app’s authorization status at any time in system settings. If your app is running when the change happens, each of your app’s [`CLLocationManager`](./cllocationmanager.md) objects reports the change to that delegate method. The location manager also reports your app’s current authorization at other times. For example, the location manager also calls the method when a suspended iOS app starts running again.
 
 ## See Also
 
-- [Suspending authorization requests](suspending-authorization-requests.md)
+### Authorization
+- [Suspending authorization requests](./suspending-authorization-requests.md)
   Defer the system’s authorization request dialog until your app is ready.
-- [enum CLAuthorizationStatus](clauthorizationstatus.md)
+- [enum CLAuthorizationStatus](./clauthorizationstatus.md)
   Constants that indicate the app’s authorization to use location services.
-- [enum CLAccuracyAuthorization](claccuracyauthorization.md)
+- [enum CLAccuracyAuthorization](./claccuracyauthorization.md)
   Constants that indicate the level of location accuracy the app has authorization to use.
-- [NSLocationAlwaysAndWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
+- [NSLocationAlwaysAndWhenInUseUsageDescription](../BundleResources/information-property-list/nslocationalwaysandwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information at all times.
-- [NSLocationWhenInUseUsageDescription](../bundleresources/information-property-list/nslocationwheninuseusagedescription.md)
+- [NSLocationWhenInUseUsageDescription](../BundleResources/information-property-list/nslocationwheninuseusagedescription.md)
   A message that tells people why the app is requesting access to their location information while the app is running in the foreground.
-- [NSLocationUsageDescription](../bundleresources/information-property-list/nslocationusagedescription.md)
+- [NSLocationUsageDescription](../BundleResources/information-property-list/nslocationusagedescription.md)
   A message that tells people why the app is requesting access to their location information.
-- [NSLocationDefaultAccuracyReduced](../bundleresources/information-property-list/nslocationdefaultaccuracyreduced.md)
+- [NSLocationDefaultAccuracyReduced](../BundleResources/information-property-list/nslocationdefaultaccuracyreduced.md)
   A Boolean value that indicates whether the app requests reduced location accuracy by default.
-- [NSLocationAlwaysUsageDescription](../bundleresources/information-property-list/nslocationalwaysusagedescription.md)
+- [NSLocationAlwaysUsageDescription](../BundleResources/information-property-list/nslocationalwaysusagedescription.md)
   A message that tells people why the app is requesting access to their location at all times.
 
 

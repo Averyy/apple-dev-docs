@@ -1,7 +1,8 @@
 # USDLayer.ChangeList.Entry.Flags
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Boolean flags describing structural changes to a spec.
 
@@ -22,64 +23,64 @@ struct Flags
 ## Topics
 
 ### Instance Properties
-- [var didAddInertPrim: Bool](usdlayer/changelist/entry/flags-swift.struct/didaddinertprim.md)
+- [var didAddInertPrim: Bool](./flags-swift.struct/didaddinertprim.md)
   Whether an inert prim spec was added.
-- [var didAddNonInertPrim: Bool](usdlayer/changelist/entry/flags-swift.struct/didaddnoninertprim.md)
+- [var didAddNonInertPrim: Bool](./flags-swift.struct/didaddnoninertprim.md)
   Whether a non-inert prim spec was added.
-- [var didAddProperty: Bool](usdlayer/changelist/entry/flags-swift.struct/didaddproperty.md)
+- [var didAddProperty: Bool](./flags-swift.struct/didaddproperty.md)
   Whether a property was added.
-- [var didAddPropertyWithOnlyRequiredFields: Bool](usdlayer/changelist/entry/flags-swift.struct/didaddpropertywithonlyrequiredfields.md)
+- [var didAddPropertyWithOnlyRequiredFields: Bool](./flags-swift.struct/didaddpropertywithonlyrequiredfields.md)
   Whether a property with only required fields was added.
-- [var didAddTarget: Bool](usdlayer/changelist/entry/flags-swift.struct/didaddtarget.md)
+- [var didAddTarget: Bool](./flags-swift.struct/didaddtarget.md)
   Whether a target was added to a relationship.
-- [var didChangeAttributeConnection: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeattributeconnection.md)
+- [var didChangeAttributeConnection: Bool](./flags-swift.struct/didchangeattributeconnection.md)
   Whether an attribute’s connection targets changed.
-- [var didChangeAttributeTimeSamples: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeattributetimesamples.md)
+- [var didChangeAttributeTimeSamples: Bool](./flags-swift.struct/didchangeattributetimesamples.md)
   Whether an attribute’s time samples changed.
-- [var didChangeIdentifier: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeidentifier.md)
+- [var didChangeIdentifier: Bool](./flags-swift.struct/didchangeidentifier.md)
   Whether the layer’s identifier changed.
-- [var didChangePrimInheritPaths: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangepriminheritpaths.md)
+- [var didChangePrimInheritPaths: Bool](./flags-swift.struct/didchangepriminheritpaths.md)
   Whether a prim’s inherit paths list changed.
-- [var didChangePrimReferences: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeprimreferences.md)
+- [var didChangePrimReferences: Bool](./flags-swift.struct/didchangeprimreferences.md)
   Whether a prim’s references list changed.
-- [var didChangePrimSpecializes: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeprimspecializes.md)
+- [var didChangePrimSpecializes: Bool](./flags-swift.struct/didchangeprimspecializes.md)
   Whether a prim’s specializes list changed.
-- [var didChangePrimVariantSets: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeprimvariantsets.md)
+- [var didChangePrimVariantSets: Bool](./flags-swift.struct/didchangeprimvariantsets.md)
   Whether a prim’s variant sets list changed.
-- [var didChangeRelationshipTargets: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangerelationshiptargets.md)
+- [var didChangeRelationshipTargets: Bool](./flags-swift.struct/didchangerelationshiptargets.md)
   Whether a relationship’s target list changed.
-- [var didChangeResolvedPath: Bool](usdlayer/changelist/entry/flags-swift.struct/didchangeresolvedpath.md)
+- [var didChangeResolvedPath: Bool](./flags-swift.struct/didchangeresolvedpath.md)
   Whether the layer’s resolved path changed.
-- [var didReloadContent: Bool](usdlayer/changelist/entry/flags-swift.struct/didreloadcontent.md)
+- [var didReloadContent: Bool](./flags-swift.struct/didreloadcontent.md)
   Whether the layer was reloaded from its source.
-- [var didRemoveInertPrim: Bool](usdlayer/changelist/entry/flags-swift.struct/didremoveinertprim.md)
+- [var didRemoveInertPrim: Bool](./flags-swift.struct/didremoveinertprim.md)
   Whether an inert prim spec was removed.
-- [var didRemoveNonInertPrim: Bool](usdlayer/changelist/entry/flags-swift.struct/didremovenoninertprim.md)
+- [var didRemoveNonInertPrim: Bool](./flags-swift.struct/didremovenoninertprim.md)
   Whether a non-inert prim spec was removed.
-- [var didRemoveProperty: Bool](usdlayer/changelist/entry/flags-swift.struct/didremoveproperty.md)
+- [var didRemoveProperty: Bool](./flags-swift.struct/didremoveproperty.md)
   Whether a property was removed.
-- [var didRemovePropertyWithOnlyRequiredFields: Bool](usdlayer/changelist/entry/flags-swift.struct/didremovepropertywithonlyrequiredfields.md)
+- [var didRemovePropertyWithOnlyRequiredFields: Bool](./flags-swift.struct/didremovepropertywithonlyrequiredfields.md)
   Whether a property with only required fields was removed.
-- [var didRemoveTarget: Bool](usdlayer/changelist/entry/flags-swift.struct/didremovetarget.md)
+- [var didRemoveTarget: Bool](./flags-swift.struct/didremovetarget.md)
   Whether a target was removed from a relationship.
-- [var didRename: Bool](usdlayer/changelist/entry/flags-swift.struct/didrename.md)
+- [var didRename: Bool](./flags-swift.struct/didrename.md)
   Whether a spec was renamed.
-- [var didReorderChildren: Bool](usdlayer/changelist/entry/flags-swift.struct/didreorderchildren.md)
+- [var didReorderChildren: Bool](./flags-swift.struct/didreorderchildren.md)
   Whether the children list of a prim was reordered.
-- [var didReorderProperties: Bool](usdlayer/changelist/entry/flags-swift.struct/didreorderproperties.md)
+- [var didReorderProperties: Bool](./flags-swift.struct/didreorderproperties.md)
   Whether the properties list of a prim was reordered.
-- [var didReplaceContent: Bool](usdlayer/changelist/entry/flags-swift.struct/didreplacecontent.md)
+- [var didReplaceContent: Bool](./flags-swift.struct/didreplacecontent.md)
   Whether the layer’s content was replaced.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

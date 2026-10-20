@@ -1,17 +1,22 @@
 # runModal()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the page layout panel and begins the modal loop using the shared print info object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func runModal() -> Int
+```
+
+```objc
+- (NSInteger) runModal;
 ```
 
 #### Return Value
@@ -24,8 +29,9 @@ The receiver’s values are recorded in the shared `NSPrintInfo` object.
 
 ## See Also
 
-- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPageLayout.Result) -> Void)?)](nspagelayout/beginsheet(using:on:completionhandler:).md)
-- [func runModal(with: NSPrintInfo) -> Int](nspagelayout/runmodal(with:).md)
+### Running the page setup dialog
+- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPageLayout.Result) -> Void)?)](./beginsheet%28using,on,completionhandler%29.md)
+- [func runModal(with: NSPrintInfo) -> Int](./runmodal%28with%29.md)
   Displays the page layout panel and begins the modal loop using the specified print info object.
 
 

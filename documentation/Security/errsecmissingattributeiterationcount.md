@@ -1,7 +1,8 @@
 # errSecMissingAttributeIterationCount
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An iteration count attribute is missing.
 
@@ -18,6 +19,10 @@ An iteration count attribute is missing.
 
 ```swift
 var errSecMissingAttributeIterationCount: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeIterationCount
 ```
 
 

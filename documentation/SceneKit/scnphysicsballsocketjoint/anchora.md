@@ -1,18 +1,19 @@
 # anchorA
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The point at which the joint connects, relative to the node containing the first body.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The point at which the joint connects, relative to the node containing the first
 var anchorA: SCNVector3 { get set }
 ```
 
+```objc
+@property (nonatomic) SCNVector3 anchorA;
+```
+
 ## See Also
 
-- [var bodyA: SCNPhysicsBody](scnphysicsballsocketjoint/bodya.md)
+### Managing the Characteristics of a Ball and Socket Joint
+- [var bodyA: SCNPhysicsBody](./bodya.md)
   The first physics body connected by the joint.
-- [var bodyB: SCNPhysicsBody?](scnphysicsballsocketjoint/bodyb.md)
+- [var bodyB: SCNPhysicsBody?](./bodyb.md)
   The second physics body connected by the joint.
-- [var anchorB: SCNVector3](scnphysicsballsocketjoint/anchorb.md)
+- [var anchorB: SCNVector3](./anchorb.md)
   The point at which the joint connects, relative to the node containing the second body.
 
 

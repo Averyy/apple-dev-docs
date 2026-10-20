@@ -1,15 +1,20 @@
 # querySelector(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func querySelector(_ selectors: String!) -> DOMElement!
+```
+
+```objc
+- (DOMElement *) querySelector:(NSString *) selectors;
 ```
 
 

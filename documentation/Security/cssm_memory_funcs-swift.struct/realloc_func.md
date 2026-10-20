@@ -1,7 +1,8 @@
 # realloc_func
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var realloc_func: CSSM_REALLOC!
+```
+
+```c
+CSSM_REALLOC realloc_func;
 ```
 
 

@@ -1,6 +1,7 @@
 # Single-channel biquadratic filters
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Filter a single-channel signal with a cascade of biquadratic sections.
 
@@ -15,25 +16,26 @@ When the biquadratic filter function executes, the sections execute in sequence.
 ## Topics
 
 ### Biquadratic filter essentials
-- [Applying biquadratic filters to a music loop](applying-biquadratic-filters-to-a-music-loop.md)
+- [Applying biquadratic filters to a music loop](./applying-biquadratic-filters-to-a-music-loop.md)
   Change the frequency response of an audio signal using a cascaded biquadratic filter.
-- [Creating an audio unit extension using the vDSP library](creating-an-audio-unit-extension-using-the-vdsp-library.md)
+- [Creating an audio unit extension using the vDSP library](./creating-an-audio-unit-extension-using-the-vdsp-library.md)
   Add biquadratic filter audio-effect processing to apps like Logic Pro X and GarageBand with the Accelerate framework.
 ### Creating a single-channel biquadratic filter setup
-- [typealias vDSP_biquad_Setup](vdsp_biquad_setup.md)
+- [typealias vDSP_biquad_Setup](./vdsp_biquad_setup.md)
   A data structure that contains precalculated data for use by the single-precision cascaded biquadratic IIR filter function.
-- [typealias vDSP_biquad_SetupD](vdsp_biquad_setupd.md)
+- [typealias vDSP_biquad_SetupD](./vdsp_biquad_setupd.md)
   A data structure that contains precalculated data for use by the double-precision cascaded biquadratic IIR filter function.
 
 ## See Also
 
-- [Biquadratic IIR filters](biquadratic-iir-filters.md)
+### Vector filtering
+- [Biquadratic IIR filters](./biquadratic-iir-filters.md)
   Apply biquadratic filters to single-channel and multichannel data.
-- [Multichannel biquadratic filters](multichannel-biquadratic-filters.md)
+- [Multichannel biquadratic filters](./multichannel-biquadratic-filters.md)
   Filter a multichannel signal with a cascade of biquadratic sections.
-- [Finite impulse response filters](finite-impulse-response-filters.md)
+- [Finite impulse response filters](./finite-impulse-response-filters.md)
   Perform finite impulse response filtering with decimation and antialiasing on vectors of real or complex values.
-- [Recursive filters](recursive-filters.md)
+- [Recursive filters](./recursive-filters.md)
   Perform two-pole two-zero recursive filtering on a vector.
 
 

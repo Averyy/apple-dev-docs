@@ -1,7 +1,8 @@
 # init(shapes:isStatic:filter:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collision component.
 

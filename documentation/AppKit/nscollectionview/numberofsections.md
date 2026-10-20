@@ -1,7 +1,8 @@
 # numberOfSections
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of sections in the collection view.
 
@@ -14,13 +15,18 @@ The number of sections in the collection view.
 var numberOfSections: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfSections;
+```
+
 #### Discussion
 
 This property contains the number of sections reported by the data source object. If the collection view does not use a data source object, the value in this property is `1`.
 
 ## See Also
 
-- [func numberOfItems(inSection: Int) -> Int](nscollectionview/numberofitems(insection:).md)
+### Getting the State of the Collection View
+- [func numberOfItems(inSection: Int) -> Int](./numberofitems%28insection%29.md)
   Returns the number of items in the specified section.
 
 

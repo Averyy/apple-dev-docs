@@ -1,7 +1,8 @@
 # FSModuleIdentity
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An installed file system module.
 
@@ -14,34 +15,39 @@ An installed file system module.
 class FSModuleIdentity
 ```
 
+```objc
+@interface FSModuleIdentity : NSObject
+```
+
 ## Topics
 
 ### Accessing module properties
-- [var bundleIdentifier: String](fsmoduleidentity/bundleidentifier.md)
+- [var bundleIdentifier: String](./fsmoduleidentity/bundleidentifier.md)
   The module’s bundle identifier.
-- [var url: URL](fsmoduleidentity/url.md)
+- [var url: URL](./fsmoduleidentity/url.md)
   The module’s URL.
-- [var isEnabled: Bool](fsmoduleidentity/isenabled.md)
+- [var isEnabled: Bool](./fsmoduleidentity/isenabled.md)
   A Boolean value that indicates if the module is enabled.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func fetchInstalledExtensions(completionHandler: ([FSModuleIdentity]?, (any Error)?) -> Void)](fsclient/fetchinstalledextensions(completionhandler:).md)
+### Discovering installed extensions
+- [func fetchInstalledExtensions(completionHandler: ([FSModuleIdentity]?, (any Error)?) -> Void)](./fsclient/fetchinstalledextensions%28completionhandler%29.md)
   Asynchronously retrieves an list of installed file system modules.
 
 

@@ -1,7 +1,8 @@
 # sortName
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the artist to use when sorting.
 
@@ -15,15 +16,20 @@ The name of the artist to use when sorting.
 var sortName: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * sortName;
+```
+
 #### Discussion
 
-If `nil`, iTunes uses [`name`](itlibartist/name.md) to sort by artist name.
+If `nil`, iTunes uses [`name`](./name.md) to sort by artist name.
 
 ## See Also
 
-- [var name: String?](itlibartist/name.md)
+### Getting Artist Info
+- [var name: String?](./name.md)
   The name of the artist.
-- [var persistentID: NSNumber](itlibartist/persistentid.md)
+- [var persistentID: NSNumber](./persistentid.md)
   The unique identifier of the artist.
 
 

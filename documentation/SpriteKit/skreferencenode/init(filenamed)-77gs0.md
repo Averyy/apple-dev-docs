@@ -1,7 +1,8 @@
 # init(fileNamed:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a reference node from a file in the app’s main bundle.
 
@@ -20,6 +21,10 @@ Creates a reference node from a file in the app’s main bundle.
 convenience init(fileNamed fileName: String)
 ```
 
+```objc
++ (instancetype) referenceNodeWithFileNamed:(NSString *) fileName;
+```
+
 #### Return Value
 
 A newly initialized reference node.
@@ -34,13 +39,14 @@ This initializer is for loading files that reside inside of the app bundle.
 
 ## See Also
 
-- [convenience init(url: URL)](skreferencenode/init(url:)-3jryz.md)
+### Initializers
+- [convenience init(url: URL)](./init%28url%29-3jryz.md)
   Creates a reference node from a URL.
-- [init(url: URL?)](skreferencenode/init(url:)-429mo.md)
+- [init(url: URL?)](./init%28url%29-429mo.md)
   Initializes a reference node from a URL.
-- [init(fileNamed: String?)](skreferencenode/init(filenamed:)-2yeh2.md)
+- [init(fileNamed: String?)](./init%28filenamed%29-2yeh2.md)
   Initializes a reference node from a file in the app’s main bundle.
-- [init?(coder: NSCoder)](skreferencenode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   A method that initializes a reference node from an archive.
 
 

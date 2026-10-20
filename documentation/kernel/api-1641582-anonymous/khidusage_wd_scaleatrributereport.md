@@ -1,14 +1,15 @@
 # kHIDUsage_WD_ScaleAtrributeReport
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_WD_ScaleAtrributeReport = 0x30
 ```
 

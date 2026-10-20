@@ -1,9 +1,10 @@
 # HKMetadataKeyMenstrualCycleStart
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-A key that indicates whether the sample represents the start of a menstrual cycle. This metadata key is required for [`menstrualFlow`](hkcategorytypeidentifier/menstrualflow.md) category samples.
+A key that indicates whether the sample represents the start of a menstrual cycle. This metadata key is required for [`menstrualFlow`](./hkcategorytypeidentifier/menstrualflow.md) category samples.
 
 **Availability**:
 - iOS 9.0+
@@ -19,9 +20,13 @@ A key that indicates whether the sample represents the start of a menstrual cycl
 let HKMetadataKeyMenstrualCycleStart: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyMenstrualCycleStart;
+```
+
 #### Discussion
 
-Set this key’s value to [`true`](https://developer.apple.com/documentation/swift/true) if the sample represents the start of a menstrual cycle; otherwise, set it to [`false`](https://developer.apple.com/documentation/swift/false).
+Set this key’s value to [`true`](../Swift/true.md) if the sample represents the start of a menstrual cycle; otherwise, set it to [`false`](../Swift/false.md).
 
 
 ---

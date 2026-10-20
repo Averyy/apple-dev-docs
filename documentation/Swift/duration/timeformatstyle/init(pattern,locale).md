@@ -1,7 +1,8 @@
 # init(pattern:locale:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time format style using the provided pattern and optional locale.
 
@@ -23,11 +24,12 @@ init(pattern: Duration.TimeFormatStyle.Pattern, locale: Locale = .autoupdatingCu
 ## Parameters
 
 - `pattern`: A `Pattern` that specifies the units to include in the displayed string and the behavior of the units.
-- `locale`: The `Locale` used to create the string representation of the duration. This parameter defaults to [`autoupdatingCurrent`](https://developer.apple.com/documentation/foundation/locale/autoupdatingcurrent).
+- `locale`: The `Locale` used to create the string representation of the duration. This parameter defaults to [`autoupdatingCurrent`](../../../Foundation/locale/autoupdatingcurrent.md).
 
 ## See Also
 
-- [Duration.TimeFormatStyle.Pattern](duration/timeformatstyle/pattern-swift.struct.md)
+### Creating a time format style
+- [Duration.TimeFormatStyle.Pattern](./pattern-swift.struct.md)
   The units — including hours, minutes, or seconds — and the configuration of those units, used to format a duration.
 
 

@@ -1,7 +1,8 @@
 # upc
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The universal product code (UPC) for the album.
 

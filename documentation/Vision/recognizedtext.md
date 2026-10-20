@@ -1,7 +1,8 @@
 # RecognizedText
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Text recognized in an image through a text recognition request.
 
@@ -22,30 +23,31 @@ struct RecognizedText
 ## Topics
 
 ### Getting the bounding box
-- [func boundingBox(for: Range<String.Index>) -> RectangleObservation?](recognizedtext/boundingbox(for:).md)
+- [func boundingBox(for: Range<String.Index>) -> RectangleObservation?](./recognizedtext/boundingbox%28for%29.md)
   Calculates the bounding box around the characters in the range of a string.
 ### Inspecting the recognized text
-- [var string: String](recognizedtext/string.md)
+- [var string: String](./recognizedtext/string.md)
   The top candidate for recognized text.
-- [var confidence: Float](recognizedtext/confidence.md)
+- [var confidence: Float](./recognizedtext/confidence.md)
   A normalized confidence score for the text recognition result.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func topCandidates(Int) -> [RecognizedText]](recognizedtextobservation/topcandidates(_:).md)
+### Getting the recognized text
+- [func topCandidates(Int) -> [RecognizedText]](./recognizedtextobservation/topcandidates%28_%29.md)
   Requests the top candidates for a recognized text string.
 
 

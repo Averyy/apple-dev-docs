@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: ContactProvider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain that this instance manages.
 
@@ -17,17 +18,18 @@ var domain: any ContactProviderDomain { get }
 
 #### Discussion
 
-This value defaults to [`DefaultContactProviderDomain`](defaultcontactproviderdomain.md).
+This value defaults to [`DefaultContactProviderDomain`](../defaultcontactproviderdomain.md).
 
 ## See Also
 
-- [func enable() async throws](contactprovidermanager/enable.md)
+### Managing the domain
+- [func enable() async throws](./enable%28%29.md)
   Requests the person using the app to enable the extension domain.
-- [var isEnabled: Bool](contactprovidermanager/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the person using the app enabled the extension domain.
-- [func reset() async throws](contactprovidermanager/reset.md)
+- [func reset() async throws](./reset%28%29.md)
   Resets the extension domain.
-- [func disable() async throws](contactprovidermanager/disable.md)
+- [func disable() async throws](./disable%28%29.md)
   Disables the extension domain.
 
 

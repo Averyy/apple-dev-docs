@@ -1,7 +1,8 @@
 # Calendar.RecurrenceRule.Frequency
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 How often a recurring event repeats
 
@@ -23,25 +24,25 @@ enum Frequency
 ## Topics
 
 ### Enumeration Cases
-- [Calendar.RecurrenceRule.Frequency.daily](calendar/recurrencerule/frequency-swift.enum/daily.md)
-- [Calendar.RecurrenceRule.Frequency.hourly](calendar/recurrencerule/frequency-swift.enum/hourly.md)
-- [Calendar.RecurrenceRule.Frequency.minutely](calendar/recurrencerule/frequency-swift.enum/minutely.md)
-- [Calendar.RecurrenceRule.Frequency.monthly](calendar/recurrencerule/frequency-swift.enum/monthly.md)
-- [Calendar.RecurrenceRule.Frequency.weekly](calendar/recurrencerule/frequency-swift.enum/weekly.md)
-- [Calendar.RecurrenceRule.Frequency.yearly](calendar/recurrencerule/frequency-swift.enum/yearly.md)
+- [Calendar.RecurrenceRule.Frequency.daily](./frequency-swift.enum/daily.md)
+- [Calendar.RecurrenceRule.Frequency.hourly](./frequency-swift.enum/hourly.md)
+- [Calendar.RecurrenceRule.Frequency.minutely](./frequency-swift.enum/minutely.md)
+- [Calendar.RecurrenceRule.Frequency.monthly](./frequency-swift.enum/monthly.md)
+- [Calendar.RecurrenceRule.Frequency.weekly](./frequency-swift.enum/weekly.md)
+- [Calendar.RecurrenceRule.Frequency.yearly](./frequency-swift.enum/yearly.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,21 +1,23 @@
 # createReportPool
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool createReportPool();
 ```
 
 ## See Also
 
-- [dispatchEvent](iouserhideventservice/dispatchevent.md)
+### Performing Private Tasks
+- [dispatchEvent](./dispatchevent.md)
   Dispatches a HID event to the system.
 
 

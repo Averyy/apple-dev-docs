@@ -1,7 +1,8 @@
 # MediaSession
 
 **Framework**: Now Playing  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A local Now Playing session that publishes metadata and commands to the system.
 
@@ -23,13 +24,13 @@ class MediaSession<Representable> where Representable : MediaSessionRepresentabl
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
-Use a session to represent media playback happening on the current device. The session automatically observes your [`MediaSessionRepresentable`](mediasessionrepresentable.md) model and syncs changes to the system’s Now Playing interface.
+Use a session to represent media playback happening on the current device. The session automatically observes your [`MediaSessionRepresentable`](./mediasessionrepresentable.md) model and syncs changes to the system’s Now Playing interface.
 
-For more information, see [`Publishing media sessions`](publishing-media-sessions.md)
+For more information, see [Publishing media sessions](./publishing-media-sessions.md)
 
 Create a session by providing a session representable:
 
@@ -37,7 +38,7 @@ Create a session by providing a session representable:
 let session = MediaSession(myModel)
 ```
 
-Call [`requestToBecomeApplicationPrimary()`](mediasession/requesttobecomeapplicationprimary().md) to make this your app’s primary Now Playing session when you want to display playback controls:
+Call [`requestToBecomeApplicationPrimary()`](./mediasession/requesttobecomeapplicationprimary%28%29.md) to make this your app’s primary Now Playing session when you want to display playback controls:
 
 ```swift
 try await session.requestToBecomeApplicationPrimary()
@@ -46,40 +47,41 @@ try await session.requestToBecomeApplicationPrimary()
 ## Topics
 
 ### Initializers
-- [init(Representable)](mediasession/init(_:).md)
+- [init(Representable)](./mediasession/init%28_%29.md)
   Creates a new local Now Playing session.
 ### Instance Properties
-- [var canBecomeApplicationPrimary: Bool](mediasession/canbecomeapplicationprimary.md)
+- [var canBecomeApplicationPrimary: Bool](./mediasession/canbecomeapplicationprimary.md)
   A Boolean value that indicates whether this session can become the app’s primary session.
-- [let id: String](mediasession/id.md)
+- [let id: String](./mediasession/id.md)
   The unique identifier for this session.
-- [var isApplicationPrimary: Bool](mediasession/isapplicationprimary.md)
+- [var isApplicationPrimary: Bool](./mediasession/isapplicationprimary.md)
   A Boolean value that indicates whether this is currently the primary application session.
-- [var isSystemPrimary: Bool](mediasession/issystemprimary.md)
+- [var isSystemPrimary: Bool](./mediasession/issystemprimary.md)
   A Boolean value that indicates whether this is currently the primary system session.
 ### Instance Methods
-- [func requestToBecomeApplicationPrimary() async throws](mediasession/requesttobecomeapplicationprimary.md)
+- [func requestToBecomeApplicationPrimary() async throws](./mediasession/requesttobecomeapplicationprimary%28%29.md)
   Attempts to make this session your app’s primary media session.
-- [func requestToBecomeSystemPrimary() async throws](mediasession/requesttobecomesystemprimary.md)
+- [func requestToBecomeSystemPrimary() async throws](./mediasession/requesttobecomesystemprimary%28%29.md)
   Requests to make this session the primary system media session.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Publishing media sessions](publishing-media-sessions.md)
+### Local sessions
+- [Publishing media sessions](./publishing-media-sessions.md)
   Show your app’s media on the Lock Screen and Control Center.
-- [protocol MediaSessionRepresentable](mediasessionrepresentable.md)
+- [protocol MediaSessionRepresentable](./mediasessionrepresentable.md)
   A protocol that provides content metadata, playback state, and commands for a Now Playing session.
-- [enum MediaSessionError](mediasessionerror.md)
+- [enum MediaSessionError](./mediasessionerror.md)
   Errors that can occur during local session operations.
 
 

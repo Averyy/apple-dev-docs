@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The password to configure for the macOS virtual machine.
 
@@ -12,6 +13,10 @@ The password to configure for the macOS virtual machine.
 
 ```swift
 var password: String { get set }
+```
+
+```objc
+@property (copy, readwrite) NSString * password;
 ```
 
 

@@ -1,14 +1,15 @@
 # kINQUIRY_PERIPHERAL_TYPE_OpticalMemorySBCDevice
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kINQUIRY_PERIPHERAL_TYPE_OpticalMemorySBCDevice = 0x07
 ```
 

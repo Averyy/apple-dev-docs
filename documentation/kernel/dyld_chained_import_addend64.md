@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_import_addend64 {
     ...
 };
@@ -17,11 +17,11 @@ struct dyld_chained_import_addend64 {
 ## Topics
 
 ### Instance Properties
-- [addend](dyld_chained_import_addend64/3553598-addend.md)
-- [lib_ordinal](dyld_chained_import_addend64/3553599-lib_ordinal.md)
-- [name_offset](dyld_chained_import_addend64/3553600-name_offset.md)
-- [reserved](dyld_chained_import_addend64/3553601-reserved.md)
-- [weak_import](dyld_chained_import_addend64/3553602-weak_import.md)
+- [addend](./dyld_chained_import_addend64/api-3553598-addend.md)
+- [lib_ordinal](./dyld_chained_import_addend64/api-3553599-lib_ordinal.md)
+- [name_offset](./dyld_chained_import_addend64/api-3553600-name_offset.md)
+- [reserved](./dyld_chained_import_addend64/api-3553601-reserved.md)
+- [weak_import](./dyld_chained_import_addend64/api-3553602-weak_import.md)
 
 
 ---

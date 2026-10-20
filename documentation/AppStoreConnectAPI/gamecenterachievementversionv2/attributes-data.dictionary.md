@@ -1,14 +1,15 @@
 # GameCenterAchievementVersionV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2.Attributes
 ```
 
@@ -23,7 +24,8 @@ object GameCenterAchievementVersionV2.Attributes
 
 ## See Also
 
-- [object GameCenterAchievementVersionV2.Relationships](gamecenterachievementversionv2/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementVersionV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

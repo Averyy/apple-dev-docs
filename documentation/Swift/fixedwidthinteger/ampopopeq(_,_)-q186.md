@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
@@ -45,6 +46,12 @@ y &<<= 19
 
 - `lhs`: The value to shift.
 - `rhs`: The number of bits to shift `lhs` to the left. If `rhs` is outside the range `0..<lhs.bitWidth`, it is masked to produce a value within that range.
+
+## Default Implementations
+
+### FixedWidthInteger Implementations
+- [static func &<<= <Other>(inout Self, Other)](./ampopopeq%28_,_%29-5s3cx.md)
+  Returns the result of shifting a value’s binary representation the specified number of digits to the left, masking the shift amount to the type’s bit width, and stores the result in the left-hand-side variable.
 
 
 ---

@@ -1,7 +1,8 @@
 # style
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style applied to the action button.
 
@@ -14,15 +15,20 @@ The style applied to the action button.
 var style: NSTableViewRowAction.Style { get }
 ```
 
+```objc
+@property (readonly) NSTableViewRowActionStyle style;
+```
+
 #### Discussion
 
 The value of this property is set at creation time and cannot be changed later.
 
 ## See Also
 
-- [var title: String](nstableviewrowaction/title.md)
+### Configuring the Action’s Appearance
+- [var title: String](./title.md)
   The title of the action button.
-- [var backgroundColor: NSColor!](nstableviewrowaction/backgroundcolor.md)
+- [var backgroundColor: NSColor!](./backgroundcolor.md)
   The background color of the action button.
 
 

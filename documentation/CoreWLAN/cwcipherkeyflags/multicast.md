@@ -1,7 +1,8 @@
 # multicast
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates to use the cipher key for multicast packets.
 
@@ -14,13 +15,18 @@ A flag that indicates to use the cipher key for multicast packets.
 static var multicast: CWCipherKeyFlags { get }
 ```
 
+```c
+kCWCipherKeyFlagsMulticast
+```
+
 ## See Also
 
-- [static var unicast: CWCipherKeyFlags](cwcipherkeyflags/unicast.md)
+### Constants
+- [static var unicast: CWCipherKeyFlags](./unicast.md)
   A flag that indicates to use the cipher key for unicast packets.
-- [static var tx: CWCipherKeyFlags](cwcipherkeyflags/tx.md)
+- [static var tx: CWCipherKeyFlags](./tx.md)
   A flag that indicates to use the cipher key for packets sent from the interface.
-- [static var rx: CWCipherKeyFlags](cwcipherkeyflags/rx.md)
+- [static var rx: CWCipherKeyFlags](./rx.md)
   A flag that indicates to use the cipher key for packets received by the interface.
 
 

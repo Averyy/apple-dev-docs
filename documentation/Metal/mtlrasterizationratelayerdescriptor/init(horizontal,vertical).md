@@ -1,7 +1,8 @@
 # init(horizontal:vertical:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a layer rate map with a set of horizontal and vertical rasterization rates.
 
@@ -11,7 +12,7 @@ Initializes a layer rate map with a set of horizontal and vertical rasterization
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ A layer descriptor whose width is the number of horizontal rates and whose heigh
 
 ## See Also
 
-- [init(sampleCount: MTLSize)](mtlrasterizationratelayerdescriptor/init(samplecount:).md)
+### Creating a layer rasterization rate descriptor
+- [init(sampleCount: MTLSize)](./init%28samplecount%29.md)
   Initializes the layer map with an empty grid.
 
 

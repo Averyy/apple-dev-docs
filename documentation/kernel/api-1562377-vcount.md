@@ -1,7 +1,8 @@
 # vcount
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Count total references to a given file, disregarding "kusecount" (event listener, as with O_EVTONLY) references.
 
@@ -10,11 +11,11 @@ Count total references to a given file, disregarding "kusecount" (event listener
 
 ## Declaration
 
-```swift
+```c
 int vcount(vnode_t vp);
 ```
 
-#### Return_value
+#### Return Value
 
 Count of references.
 

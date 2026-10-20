@@ -1,7 +1,8 @@
 # setPrivacyContext(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a privacy context with any connections or listeners that use the parameters.
 
@@ -26,7 +27,8 @@ The privacy context allows using separate caches for different sets of connectio
 
 ## See Also
 
-- [NWParameters.PrivacyContext](nwparameters/privacycontext.md)
+### Configuring Privacy Settings
+- [NWParameters.PrivacyContext](./privacycontext.md)
   An object that defines the privacy requirements for a set of connections.
 
 

@@ -1,7 +1,8 @@
 # ColorSyncDeviceSetCustomProfiles(_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets custom profiles for a device in lieu of its factory profiles.
 
@@ -15,6 +16,10 @@ Sets custom profiles for a device in lieu of its factory profiles.
 func ColorSyncDeviceSetCustomProfiles(_ deviceClass: CFString!, _ deviceID: CFUUID!, _ profileInfo: CFDictionary!) -> Bool
 ```
 
+```c
+extern bool ColorSyncDeviceSetCustomProfiles(CFStringRef deviceClass, CFUUIDRef deviceID, CFDictionaryRef profileInfo);
+```
+
 #### Return Value
 
 `true` on success and `false` in case of failure.
@@ -23,7 +28,7 @@ func ColorSyncDeviceSetCustomProfiles(_ deviceClass: CFString!, _ deviceID: CFUU
 
 The `profileInfo` dictionary requires the following keys:
 
-- ProfileIDs, which must be a subset of the ProfileIDs you registered the device with, or [`kColorSyncDeviceDefaultProfileID`](kcolorsyncdevicedefaultprofileid.md) for setting a custom default profile.
+- ProfileIDs, which must be a subset of the ProfileIDs you registered the device with, or [`kColorSyncDeviceDefaultProfileID`](./kcolorsyncdevicedefaultprofileid.md) for setting a custom default profile.
 
 It requires the following values:
 
@@ -31,8 +36,8 @@ It requires the following values:
 
 It may also include the following optional keys:
 
-- [`kColorSyncProfileHostScope`](kcolorsyncprofilehostscope.md): The host scope of the profile; one of `kCFPreferencesCurrentHost` or `kCFPreferencesAnyHost`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentHost`.
-- [`kColorSyncProfileUserScope`](kcolorsyncprofileuserscope.md): The user scope of the profile; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentUser`.
+- [`kColorSyncProfileHostScope`](./kcolorsyncprofilehostscope.md): The host scope of the profile; one of `kCFPreferencesCurrentHost` or `kCFPreferencesAnyHost`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentHost`.
+- [`kColorSyncProfileUserScope`](./kcolorsyncprofileuserscope.md): The user scope of the profile; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`. If you don’t specify it, the framework assumes `kCFPreferencesCurrentUser`.
 
 > **Note**: Profile scope for custom profiles cannot exceed the scope of the factory profiles.
 
@@ -48,17 +53,18 @@ It may also include the following optional keys:
 
 ## See Also
 
-- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](colorsyncdevicecopydeviceinfo(_:_:).md)
+### Registering and enumerating devices
+- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](./colorsyncdevicecopydeviceinfo%28_,_%29.md)
   Copies information about a device, resolved for the current host and current user.
-- [typealias ColorSyncDeviceProfileIterateCallback](colorsyncdeviceprofileiteratecallback.md)
+- [typealias ColorSyncDeviceProfileIterateCallback](./colorsyncdeviceprofileiteratecallback.md)
   A callback that ColorSync invokes for each device profile during iteration.
-- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](colorsynciteratedeviceprofiles(_:_:).md)
+- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](./colorsynciteratedeviceprofiles%28_,_%29.md)
   Iterates over the profiles registered for all devices, invoking a callback for each.
-- [func ColorSyncProfileCreateDeviceProfile(CFString!, CFUUID!, CFTypeRef!) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreatedeviceprofile(_:_:_:).md)
+- [func ColorSyncProfileCreateDeviceProfile(CFString!, CFUUID!, CFTypeRef!) -> Unmanaged<ColorSyncProfile>?](./colorsyncprofilecreatedeviceprofile%28_,_,_%29.md)
   Creates a profile for a device registered with ColorSync.
-- [func ColorSyncRegisterDevice(CFString!, CFUUID!, CFDictionary!) -> Bool](colorsyncregisterdevice(_:_:_:).md)
+- [func ColorSyncRegisterDevice(CFString!, CFUUID!, CFDictionary!) -> Bool](./colorsyncregisterdevice%28_,_,_%29.md)
   Registers a device of the given class with ColorSync.
-- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](colorsyncunregisterdevice(_:_:).md)
+- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](./colorsyncunregisterdevice%28_,_%29.md)
   Unregisters a device of the given class and identifier.
 
 

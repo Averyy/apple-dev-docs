@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the presented WatchKit interface object (and its coordinator) to the latest configuration.
@@ -27,9 +28,10 @@ When the state of your app changes, SwiftUI updates the portions of your interfa
 
 ## See Also
 
-- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](wkinterfaceobjectrepresentable/makewkinterfaceobject(context:).md)
+### Creating and updating the interface object
+- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](./makewkinterfaceobject%28context%29.md)
   Creates a WatchKit interface object and configures its initial state.
-- [WKInterfaceObjectRepresentable.Context](wkinterfaceobjectrepresentable/context.md)
+- [WKInterfaceObjectRepresentable.Context](./context.md)
 
 
 ---

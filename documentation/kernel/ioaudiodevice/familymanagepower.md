@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool familyManagePower;
 ```
 
@@ -15,19 +15,20 @@ Set to true if the family is supposed to manage power - this is the default stat
 
 ## See Also
 
-- [workLoop](ioaudiodevice/workloop.md)
-- [timerEventSource](ioaudiodevice/timereventsource.md)
-- [timerEvents](ioaudiodevice/timerevents.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [timerEventSource](./timereventsource.md)
+- [timerEvents](./timerevents.md)
   The set of timer events in use by the device.
-- [pendingPowerState](ioaudiodevice/pendingpowerstate.md)
-- [numRunningAudioEngines](ioaudiodevice/numrunningaudioengines.md)
-- [minimumInterval](ioaudiodevice/minimuminterval.md)
-- [duringStartup](ioaudiodevice/duringstartup.md)
-- [currentPowerState](ioaudiodevice/currentpowerstate.md)
-- [commandGate](ioaudiodevice/commandgate.md)
-- [audioPorts](ioaudiodevice/audioports.md)
-- [audioEngines](ioaudiodevice/audioengines.md)
-- [asyncPowerStateChangeInProgress](ioaudiodevice/asyncpowerstatechangeinprogress.md)
+- [pendingPowerState](./pendingpowerstate.md)
+- [numRunningAudioEngines](./numrunningaudioengines.md)
+- [minimumInterval](./minimuminterval.md)
+- [duringStartup](./duringstartup.md)
+- [currentPowerState](./currentpowerstate.md)
+- [commandGate](./commandgate.md)
+- [audioPorts](./audioports.md)
+- [audioEngines](./audioengines.md)
+- [asyncPowerStateChangeInProgress](./asyncpowerstatechangeinprogress.md)
 
 
 ---

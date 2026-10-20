@@ -1,7 +1,8 @@
 # supportsCouponCode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the payment sheet displays the coupon code field.
 
@@ -11,7 +12,7 @@ A Boolean value that determines whether the payment sheet displays the coupon co
 
 ## Declaration
 
-```swift
+```
 boolean supportsCouponCode;
 ```
 
@@ -21,7 +22,8 @@ Set the value to `true` to display the coupon code field.
 
 ## See Also
 
-- [couponCode](applepayrequestbase/couponcode.md)
+### Managing coupon codes
+- [couponCode](./couponcode.md)
   The initial coupon code for the payment request.
 
 

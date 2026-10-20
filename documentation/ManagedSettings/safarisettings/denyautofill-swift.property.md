@@ -1,7 +1,8 @@
 # denyAutoFill
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether Safari’s AutoFill feature is active.
 
@@ -22,7 +23,8 @@ Set this value to `true` to prevent Safari from automatically entering passwords
 
 ## See Also
 
-- [static let denyAutoFill: SettingMetadata<Bool>](safarisettings/denyautofill-swift.type.property.md)
+### Denying autofill
+- [static let denyAutoFill: SettingMetadata<Bool>](./denyautofill-swift.type.property.md)
   The metadata associated with the setting that deactivates Safari’s AutoFill feature.
 
 

@@ -1,7 +1,8 @@
 # localizedVASType
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the loyalty program.
 
@@ -22,9 +23,10 @@ Specify the loyalty program name, instead of a payment amount, when you request 
 
 ## See Also
 
-- [let vasMerchants: [VASRequest.Merchant]](vasrequest/vasmerchants.md)
+### Getting the loyalty card details
+- [let vasMerchants: [VASRequest.Merchant]](./vasmerchants.md)
   The list of merchants to match against the user’s Wallet content or loyalty card.
-- [VASRequest.Merchant](vasrequest/merchant.md)
+- [VASRequest.Merchant](./merchant.md)
   The identity of a merchant that offers a loyalty program.
 
 

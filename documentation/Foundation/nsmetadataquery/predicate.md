@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate used to filter query results.
 
@@ -21,25 +22,30 @@ The predicate used to filter query results.
 var predicate: NSPredicate? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSPredicate * predicate;
+```
+
 #### Discussion
 
 Setting this property while a query is running stops the query and discards the current results. The receiver immediately starts a new query.
 
 ## See Also
 
-- [var searchScopes: [Any]](nsmetadataquery/searchscopes.md)
+### Configuring queries
+- [var searchScopes: [Any]](./searchscopes.md)
   An array containing the search scopes.
-- [var sortDescriptors: [NSSortDescriptor]](nsmetadataquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]](./sortdescriptors.md)
   An array of sort descriptor objects.
-- [var valueListAttributes: [String]](nsmetadataquery/valuelistattributes.md)
+- [var valueListAttributes: [String]](./valuelistattributes.md)
   An array of attributes whose values are gathered by the query.
-- [var groupingAttributes: [String]?](nsmetadataquery/groupingattributes.md)
+- [var groupingAttributes: [String]?](./groupingattributes.md)
   An array of grouping attributes. (read-only)
-- [var notificationBatchingInterval: TimeInterval](nsmetadataquery/notificationbatchinginterval.md)
+- [var notificationBatchingInterval: TimeInterval](./notificationbatchinginterval.md)
   The interval at which notification of updated results occurs.
-- [var delegate: (any NSMetadataQueryDelegate)?](nsmetadataquery/delegate.md)
+- [var delegate: (any NSMetadataQueryDelegate)?](./delegate.md)
   The query’s delegate.
-- [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
+- [var searchItems: [Any]?](./searchitems.md)
   An array of objects that define the query’s scope.
 
 

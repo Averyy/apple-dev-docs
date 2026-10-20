@@ -1,7 +1,8 @@
 # CMTimeShow(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Prints a description of the time to the console.
 
@@ -20,6 +21,10 @@ Prints a description of the time to the console.
 func CMTimeShow(_ time: CMTime)
 ```
 
+```c
+extern void CMTimeShow(CMTime time);
+```
+
 #### Discussion
 
 This function is most appropriate to use for debugging purposes.
@@ -30,9 +35,10 @@ This function is most appropriate to use for debugging purposes.
 
 ## See Also
 
-- [func CMTimeCopyDescription(allocator: CFAllocator?, time: CMTime) -> CFString?](cmtimecopydescription(allocator:time:).md)
+### Representing Times
+- [func CMTimeCopyDescription(allocator: CFAllocator?, time: CMTime) -> CFString?](./cmtimecopydescription%28allocator,time%29.md)
   Creates a string representation of the time.
-- [func CMTimeCopyAsDictionary(CMTime, allocator: CFAllocator?) -> CFDictionary?](cmtimecopyasdictionary(_:allocator:).md)
+- [func CMTimeCopyAsDictionary(CMTime, allocator: CFAllocator?) -> CFDictionary?](./cmtimecopyasdictionary%28_,allocator%29.md)
   Creates a dictionary representation of the time.
 
 

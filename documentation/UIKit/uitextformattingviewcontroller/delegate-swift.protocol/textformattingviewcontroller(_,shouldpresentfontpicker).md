@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,6 +16,11 @@
 @MainActor
 func textFormattingViewController(_ viewController: UITextFormattingViewController, shouldPresentFontPicker fontPicker: UIFontPickerViewController) -> Bool
 ```
+
+## Default Implementations
+
+### UITextFormattingViewController.Delegate Implementations
+- [func textFormattingViewController(UITextFormattingViewController, shouldPresentFontPicker: UIFontPickerViewController) -> Bool](./textformattingviewcontroller%28_,shouldpresentfontpicker%29-7951p.md)
 
 
 ---

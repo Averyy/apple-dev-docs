@@ -1,16 +1,18 @@
 # CSSupportedContentTypes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `CSSupportedContentTypes`
+- **Type**: array of string 
 
 
 ---

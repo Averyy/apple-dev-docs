@@ -1,12 +1,15 @@
 # leadingTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display on the leading edge of the gauge.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,17 +18,22 @@ The text to display on the leading edge of the gauge.
 var leadingTextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * leadingTextProvider;
+```
+
 #### Discussion
 
 This property supports multicolor text.
 
 ## See Also
 
-- [var centerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugerangetext/centertextprovider.md)
+### Setting the Complication Data
+- [var centerTextProvider: CLKTextProvider](./centertextprovider.md)
   The text to display in the center of the gauge.
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicextralargecircularopengaugerangetext/gaugeprovider.md)
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge to display in the complication.
-- [var trailingTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugerangetext/trailingtextprovider.md)
+- [var trailingTextProvider: CLKTextProvider](./trailingtextprovider.md)
   The text to display on the trailing edge of the gauge.
 
 

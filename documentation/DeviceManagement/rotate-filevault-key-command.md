@@ -1,7 +1,8 @@
 # Rotate FileVault Key
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Change the FileVault primary password on a device.
 
@@ -14,7 +15,7 @@ Change the FileVault password periodically to mitigate the security risk of depl
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example Request and Response
+##### Example request and response
 
 **Personal**:
 
@@ -178,9 +179,9 @@ This command changes the File Vault institutional recovery key.
 ## Topics
 
 ### Commands and responses
-- [object RotateFileVaultKeyCommand](rotatefilevaultkeycommand.md)
+- [object RotateFileVaultKeyCommand](./rotatefilevaultkeycommand.md)
   The command to change the FileVault primary password on a device.
-- [object RotateFileVaultKeyResponse](rotatefilevaultkeyresponse.md)
+- [object RotateFileVaultKeyResponse](./rotatefilevaultkeyresponse.md)
   A response from the device after it processes the command to change the FileVault primary password on a device.
 
 ## Endpoint
@@ -189,17 +190,25 @@ This command changes the File Vault institutional recovery key.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RotateFileVaultKeyCommand`
+
 The request object the server returns for the Rotate FileVault Key Command.
+
+## Responses
+
+- `200` OK (`RotateFileVaultKeyResponse`, `application/xml`): The response object the system returns for the Rotate FileVault Key Command.
 
 ## See Also
 
-- [Security Info](security-info-command.md)
+### Security
+- [Security Info](./security-info-command.md)
   Get security-related information about a device.
-- [Certificate List](certificate-list-command.md)
+- [Certificate List](./certificate-list-command.md)
   Get a list of installed certificates on a device.
-- [Activation Lock Bypass Code](activation-lock-bypass-code-command.md)
+- [Activation Lock Bypass Code](./activation-lock-bypass-code-command.md)
   Get the code to bypass Activation Lock on a device.
-- [Clear Activation Lock Bypass Code](clear-activation-lock-bypass-code-command.md)
+- [Clear Activation Lock Bypass Code](./clear-activation-lock-bypass-code-command.md)
   Clear the Activation Lock bypass code on a device.
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify an In-App Purchase offer code one-time use code update request.
 
@@ -10,7 +11,7 @@ The request body you use to modify an In-App Purchase offer code one-time use co
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest.Data.Attributes
 ```
 

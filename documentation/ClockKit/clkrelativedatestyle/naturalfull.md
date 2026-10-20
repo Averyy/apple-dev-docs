@@ -1,17 +1,22 @@
 # CLKRelativeDateStyle.naturalFull
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A natural date style using unabbreviated units, when possible.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 case naturalFull
+```
+
+```c
+CLKRelativeDateStyleNaturalFull
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ The text provider breaks the time interval into various components. If there’s
 
 ## See Also
 
-- [CLKRelativeDateStyle.natural](clkrelativedatestyle/natural.md)
+### Date Styles
+- [CLKRelativeDateStyle.natural](./natural.md)
   A natural date style.
-- [CLKRelativeDateStyle.naturalAbbreviated](clkrelativedatestyle/naturalabbreviated.md)
+- [CLKRelativeDateStyle.naturalAbbreviated](./naturalabbreviated.md)
   An abbreviated, natural date style.
-- [CLKRelativeDateStyle.offset](clkrelativedatestyle/offset.md)
+- [CLKRelativeDateStyle.offset](./offset.md)
   An offset date style.
-- [CLKRelativeDateStyle.offsetShort](clkrelativedatestyle/offsetshort.md)
+- [CLKRelativeDateStyle.offsetShort](./offsetshort.md)
   A short offset date style.
-- [CLKRelativeDateStyle.timer](clkrelativedatestyle/timer.md)
+- [CLKRelativeDateStyle.timer](./timer.md)
   A timer style.
 
 

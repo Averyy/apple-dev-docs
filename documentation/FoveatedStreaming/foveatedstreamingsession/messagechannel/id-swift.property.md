@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the message channel.
 

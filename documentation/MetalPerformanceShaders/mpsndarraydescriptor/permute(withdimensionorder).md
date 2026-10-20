@@ -1,7 +1,8 @@
 # permute(withDimensionOrder:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func permute(withDimensionOrder dimensionOrder: UnsafeMutablePointer<Int>)
+```
+
+```objc
+- (void) permuteWithDimensionOrder:(NSUInteger *) dimensionOrder;
 ```
 
 

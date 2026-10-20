@@ -1,7 +1,8 @@
 # appleEvent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If the receiver was constructed by Cocoa scripting’s built-in Apple event handling, returns the Apple event descriptor from which it was constructed.
 
@@ -14,6 +15,10 @@ If the receiver was constructed by Cocoa scripting’s built-in Apple event hand
 ```swift
 @NSCopying
 var appleEvent: NSAppleEventDescriptor? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSAppleEventDescriptor * appleEvent;
 ```
 
 #### Discussion

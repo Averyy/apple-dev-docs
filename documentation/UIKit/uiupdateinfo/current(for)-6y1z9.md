@@ -1,7 +1,8 @@
 # current(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an object that describes the current UI update state for the specified window.
 
@@ -18,9 +19,14 @@ Returns an object that describes the current UI update state for the specified w
 class func current(for windowScene: UIWindowScene) -> Self?
 ```
 
+```objc
++ (instancetype) currentUpdateInfoForWindowScene:(UIWindowScene *) windowScene;
+```
+
 ## See Also
 
-- [class func current(for: UIView) -> Self?](uiupdateinfo/current(for:)-34zby.md)
+### Getting the current UI update information
+- [class func current(for: UIView) -> Self?](./current%28for%29-34zby.md)
   Returns an object that describes the current UI update state for the specified view.
 
 

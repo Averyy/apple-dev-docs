@@ -1,7 +1,8 @@
 # AnimationEvents.SkeletalPoseUpdateComplete
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Raised immediately after the SkeletalPoseSystem has been updated.
 
@@ -22,15 +23,15 @@ struct SkeletalPoseUpdateComplete
 ## Topics
 
 ### Instance Properties
-- [let deltaTime: Float](animationevents/skeletalposeupdatecomplete/deltatime.md)
+- [let deltaTime: Float](./skeletalposeupdatecomplete/deltatime.md)
   The elapsed time since the last update.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

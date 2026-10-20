@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing a sequence of bytes.
 
@@ -10,7 +11,7 @@ A string containing a sequence of bytes.
 
 ## Declaration
 
-```swift
+```
 attribute ByteArray? value;
 ```
 

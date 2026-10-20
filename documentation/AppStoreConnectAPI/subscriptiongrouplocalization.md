@@ -1,25 +1,28 @@
 # SubscriptionGroupLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized display name and optional custom app name for a subscription group, shown to customers on the App Store.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionGroupLocalizationV2`](./subscriptiongrouplocalizationv2.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupLocalization.Attributes](subscriptiongrouplocalization/attributes-data.dictionary.md)
+- [object SubscriptionGroupLocalization.Attributes](./subscriptiongrouplocalization/attributes-data.dictionary.md)
   Attributes that describe a subscription group localization resource.
-- [object SubscriptionGroupLocalization.Relationships](subscriptiongrouplocalization/relationships-data.dictionary.md)
+- [object SubscriptionGroupLocalization.Relationships](./subscriptiongrouplocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,15 +31,16 @@ object SubscriptionGroupLocalization
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (SubscriptionGroupLocalization.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroupLocalizations`
 
 ## See Also
 
-- [object SubscriptionGroupLocalizationResponse](subscriptiongrouplocalizationresponse.md)
+### Objects
+- [object SubscriptionGroupLocalizationResponse](./subscriptiongrouplocalizationresponse.md)
   The response body for endpoints that create, read, or modify a single subscription group localization.
-- [object SubscriptionGroupLocalizationCreateRequest](subscriptiongrouplocalizationcreaterequest.md)
+- [object SubscriptionGroupLocalizationCreateRequest](./subscriptiongrouplocalizationcreaterequest.md)
   The request body you use to create a subscription group localization.
-- [object SubscriptionGroupLocalizationUpdateRequest](subscriptiongrouplocalizationupdaterequest.md)
+- [object SubscriptionGroupLocalizationUpdateRequest](./subscriptiongrouplocalizationupdaterequest.md)
   The request body you use to update a subscription group localization update request.
 
 

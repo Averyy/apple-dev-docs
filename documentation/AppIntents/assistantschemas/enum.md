@@ -1,7 +1,8 @@
 # AssistantSchemas.Enum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -21,26 +22,26 @@ protocol Enum : AssistantSchemas.Model
 ## Topics
 
 ### Type Properties
-- [static var books: some AssistantSchemas.BooksEnum](assistantschemas/enum/books.md)
+- [static var books: some AssistantSchemas.BooksEnum](./enum/books.md)
   Assistant schema conformance for types you use to describe books.
-- [static var browser: some AssistantSchemas.BrowserEnum](assistantschemas/enum/browser.md)
+- [static var browser: some AssistantSchemas.BrowserEnum](./enum/browser.md)
   Assistant schema conformance for types you use for web browsing functionality.
-- [static var camera: some AssistantSchemas.CameraEnum](assistantschemas/enum/camera.md)
+- [static var camera: some AssistantSchemas.CameraEnum](./enum/camera.md)
   Assistant schema conformance for types you use for camera functionality.
-- [static var photos: some AssistantSchemas.PhotosEnum](assistantschemas/enum/photos.md)
+- [static var photos: some AssistantSchemas.PhotosEnum](./enum/photos.md)
   Assistant schema conformance for types you use to describe photos and videos.
-- [static var reader: some AssistantSchemas.ReaderEnum](assistantschemas/enum/reader.md)
+- [static var reader: some AssistantSchemas.ReaderEnum](./enum/reader.md)
   Assistant schema conformance for types you use to describe documents.
-- [static var whiteboard: some AssistantSchemas.WhiteboardEnum](assistantschemas/enum/whiteboard.md)
+- [static var whiteboard: some AssistantSchemas.WhiteboardEnum](./enum/whiteboard.md)
   Assistant schema conformance for whiteboard types.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

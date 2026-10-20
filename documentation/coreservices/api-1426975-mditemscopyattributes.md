@@ -1,7 +1,8 @@
 # MDItemsCopyAttributes(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.12+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDItemsCopyAttributes(_ items: CFArray!, _ names: CFArray!) -> CFArray!
+```
+
+```c
+CFArrayRef MDItemsCopyAttributes(CFArrayRef items, CFArrayRef names);
 ```
 
 

@@ -1,7 +1,8 @@
 # GetBaseClassID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the class identifier of the base class object.
 
@@ -10,7 +11,7 @@ Gets the class identifier of the base class object.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoClassID GetBaseClassID();
 ```
 
@@ -20,15 +21,16 @@ A video class identifier.
 
 ## See Also
 
-- [GetClassID](iouservideodriver/getclassid.md)
+### Getting information about the class
+- [GetClassID](./getclassid.md)
   Gets the class identifier of the object.
-- [IOUserVideoClassID](videodriverkit/iouservideoclassid.md)
+- [IOUserVideoClassID](../videodriverkit-page/iouservideoclassid.md)
   Video class identifiers of an video object.
-- [GetWorkQueue](iouservideodriver/getworkqueue.md)
+- [GetWorkQueue](./getworkqueue.md)
   Gets the work queue created by the video object.
-- [GetName](iouservideodriver/getname.md)
+- [GetName](./getname.md)
   Gets the name of the driver.
-- [SetName](iouservideodriver/setname.md)
+- [SetName](./setname.md)
   Sets the name of the video driver.
 
 

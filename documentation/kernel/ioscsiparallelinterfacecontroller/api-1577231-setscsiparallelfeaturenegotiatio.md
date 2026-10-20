@@ -1,14 +1,15 @@
 # SetSCSIParallelFeatureNegotiationResult
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void SetSCSIParallelFeatureNegotiationResult(SCSIParallelTaskIdentifier parallelTask, SCSIParallelFeature requestedFeature, SCSIParallelFeatureResult newResult);
 ```
 

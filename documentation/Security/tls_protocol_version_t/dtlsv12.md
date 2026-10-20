@@ -1,7 +1,8 @@
 # tls_protocol_version_t.DTLSv12
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The DTLS 1.2 protocol.
 
@@ -18,6 +19,10 @@ The DTLS 1.2 protocol.
 
 ```swift
 case DTLSv12
+```
+
+```c
+tls_protocol_version_DTLSv12
 ```
 
 

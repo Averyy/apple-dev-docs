@@ -1,7 +1,8 @@
 # sampleRate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample rate for audio capture.
 
@@ -19,17 +20,22 @@ The sample rate for audio capture.
 var sampleRate: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger sampleRate;
+```
+
 #### Discussion
 
 The framework supports sample rates of `8000`, `16000`, `24000`, and `48000`. If you don’t specify a sample rate, or specify an unsupported value, the system uses a default sample rate of 48 kHz.
 
 ## See Also
 
-- [var capturesAudio: Bool](scstreamconfiguration/capturesaudio.md)
+### Configuring audio
+- [var capturesAudio: Bool](./capturesaudio.md)
   A Boolean value that indicates whether to capture audio.
-- [var channelCount: Int](scstreamconfiguration/channelcount.md)
+- [var channelCount: Int](./channelcount.md)
   The number of audio channels to capture.
-- [var excludesCurrentProcessAudio: Bool](scstreamconfiguration/excludescurrentprocessaudio.md)
+- [var excludesCurrentProcessAudio: Bool](./excludescurrentprocessaudio.md)
   A Boolean value that indicates whether to exclude audio from your app during capture.
 
 

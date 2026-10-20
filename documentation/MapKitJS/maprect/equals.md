@@ -1,7 +1,8 @@
 # equals(anotherRect)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares whether two map rectangles are equal.
 
@@ -10,7 +11,7 @@ Compares whether two map rectangles are equal.
 
 ## Declaration
 
-```swift
+```
 equals(anotherRect: MapRect): boolean;
 ```
 
@@ -24,11 +25,12 @@ Returns `true` if a rectangle exactly matches `anotherRect`. Returns `false` if 
 
 ## See Also
 
-- [copy()](maprect/copy.md)
+### Working with map rectangles
+- [copy()](./copy.md)
   Returns a copy of a map rectangle.
-- [scale(scaleFactor, scaleCenter)](maprect/scale.md)
+- [scale(scaleFactor, scaleCenter)](./scale.md)
   Returns a scaled map rectangle for a map location.
-- [toCoordinateRegion()](maprect/tocoordinateregion.md)
+- [toCoordinateRegion()](./tocoordinateregion.md)
   Returns the region that corresponds to a map rectangle.
 
 

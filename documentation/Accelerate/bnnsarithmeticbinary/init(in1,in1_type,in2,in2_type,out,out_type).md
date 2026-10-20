@@ -1,18 +1,21 @@
 # init(in1:in1_type:in2:in2_type:out:out_type:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new arithmetic structure that takes two inputs from the specified parameters.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -22,7 +25,7 @@ init(in1: BNNSNDArrayDescriptor, in1_type: BNNSDescriptorType, in2: BNNSNDArrayD
 
 #### Discussion
 
-> ❗ **Important**:  The data types of the inputs must be equal to the output data type. The size of the inputs must either 1, or the maximum size of either input and the output. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](bnns/datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](bnns/datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](bnns/datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](bnns/datalayout/imagechw.md).
+> ❗ **Important**:  The data types of the inputs must be equal to the output data type. The size of the inputs must either 1, or the maximum size of either input and the output. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](../bnns/datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](../bnns/datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](../bnns/datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](../bnns/datalayout/imagechw.md).
 
 ## Parameters
 
@@ -35,7 +38,8 @@ init(in1: BNNSNDArrayDescriptor, in1_type: BNNSDescriptorType, in2: BNNSNDArrayD
 
 ## See Also
 
-- [init()](bnnsarithmeticbinary/init.md)
+### Creating an Arithmetic Structure
+- [init()](./init%28%29.md)
   Returns a new arithmetic structure that takes two inputs.
 
 

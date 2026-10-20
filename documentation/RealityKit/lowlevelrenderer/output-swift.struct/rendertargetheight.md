@@ -1,7 +1,8 @@
 # renderTargetHeight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the render target, in pixels.
 
@@ -23,11 +24,12 @@ Corresponds to `MTLRenderPassDescriptor.renderTargetHeight`.
 
 ## See Also
 
-- [var renderTargetWidth: Int](lowlevelrenderer/output-swift.struct/rendertargetwidth.md)
+### Configuring render targets
+- [var renderTargetWidth: Int](./rendertargetwidth.md)
   The width of the render target, in pixels.
-- [var renderTargetArrayLength: Int](lowlevelrenderer/output-swift.struct/rendertargetarraylength.md)
+- [var renderTargetArrayLength: Int](./rendertargetarraylength.md)
   The number of active array slices in the render target textures.
-- [var threadgroupMemoryLength: Int](lowlevelrenderer/output-swift.struct/threadgroupmemorylength.md)
+- [var threadgroupMemoryLength: Int](./threadgroupmemorylength.md)
   The per-tile size, in bytes, of the persistent threadgroup memory allocation, used when rendering.
 
 

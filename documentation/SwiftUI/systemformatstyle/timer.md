@@ -1,7 +1,8 @@
 # SystemFormatStyle.Timer
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that displays a countdown or count-up timer within a bounded time interval.
 
@@ -22,7 +23,7 @@ struct Timer
 
 #### Overview
 
-`Timer` produces a time-pattern output (like `4:32` or `1:23:45`) that progresses between zero and the interval’s total duration. Unlike [`SystemFormatStyle.Stopwatch`](systemformatstyle/stopwatch.md), a timer operates within a defined start and end date and can count in either direction.
+`Timer` produces a time-pattern output (like `4:32` or `1:23:45`) that progresses between zero and the interval’s total duration. Unlike [`SystemFormatStyle.Stopwatch`](./stopwatch.md), a timer operates within a defined start and end date and can count in either direction.
 
 ```swift
 let start = Date.now
@@ -35,7 +36,7 @@ Text(.currentDate, format: .timer(countingDownIn: start..<end))
 Text(.currentDate, format: .timer(countingUpIn: start..<end))
 ```
 
-##### Countdown Behavior
+##### Countdown behavior
 
 A countdown timer starts at the total interval duration and decreases to zero:
 
@@ -53,7 +54,7 @@ Text(.currentDate, format: .timer(countingDownIn: start..<end))
 | 4 min, 30 sec | `0:30` |
 | 5 minutes | `0:00` |
 
-##### Count Up Behavior
+##### Count-up behavior
 
 A count-up timer starts at zero and increases toward the total interval duration:
 
@@ -71,7 +72,7 @@ Text(.currentDate, format: .timer(countingUpIn: start..<end))
 | 59 min, 59 sec | `59:59` |
 | 1 hour | `1:00:00` |
 
-##### Hours Display
+##### Hours display
 
 When `showsHours` is `true` (the default), the hours field appears once the displayed value reaches one hour. The transition between formats happens cleanly:
 
@@ -87,7 +88,7 @@ When `showsHours` is `false`, minutes accumulate beyond 60:
 // Output for 90 minutes remaining: "90:00"
 ```
 
-##### Precision Control
+##### Precision control
 
 The `maxPrecision` parameter determines the smallest displayed unit:
 
@@ -102,24 +103,24 @@ The `maxPrecision` parameter determines the smallest displayed unit:
 ## Topics
 
 ### Initializers
-- [init(countingDownIn: Range<Date>, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](systemformatstyle/timer/init(countingdownin:showshours:maxfieldcount:maxprecision:).md)
+- [init(countingDownIn: Range<Date>, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](./timer/init%28countingdownin,showshours,maxfieldcount,maxprecision%29.md)
   Creates a timer format style that counts down within the interval you provide.
-- [init(countingUpIn: Range<Date>, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](systemformatstyle/timer/init(countingupin:showshours:maxfieldcount:maxprecision:).md)
+- [init(countingUpIn: Range<Date>, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](./timer/init%28countingupin,showshours,maxfieldcount,maxprecision%29.md)
   Creates a timer format style that counts up within the interval you provide.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../../Foundation/discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../../Foundation/formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

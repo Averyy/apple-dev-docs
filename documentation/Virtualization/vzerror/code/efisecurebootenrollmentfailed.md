@@ -1,7 +1,8 @@
 # VZError.Code.efiSecureBootEnrollmentFailed
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the Secure Boot signatures failed to enroll.
 
@@ -12,6 +13,10 @@ An error that indicates the Secure Boot signatures failed to enroll.
 
 ```swift
 case efiSecureBootEnrollmentFailed
+```
+
+```c
+VZErrorEFISecureBootEnrollmentFailed
 ```
 
 

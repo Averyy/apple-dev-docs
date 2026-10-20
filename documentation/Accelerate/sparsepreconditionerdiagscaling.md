@@ -1,18 +1,19 @@
 # SparsePreconditionerDiagScaling
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A diagonal scaling preconditioner.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A diagonal scaling preconditioner.
 var SparsePreconditionerDiagScaling: SparsePreconditioner_t { get }
 ```
 
+```c
+SparsePreconditionerDiagScaling
+```
+
 #### Discussion
 
-[`SparsePreconditionerDiagScaling`](sparsepreconditionerdiagscaling.md) provides a simple preconditioner for the least squares minimal residual (LSMR) method.
+[`SparsePreconditionerDiagScaling`](./sparsepreconditionerdiagscaling.md) provides a simple preconditioner for the least squares minimal residual (LSMR) method.
 
 ## See Also
 
-- [var SparsePreconditionerDiagonal: SparsePreconditioner_t](sparsepreconditionerdiagonal.md)
+### Constants
+- [var SparsePreconditionerDiagonal: SparsePreconditioner_t](./sparsepreconditionerdiagonal.md)
   A Jacobi preconditioner.
-- [var SparsePreconditionerNone: SparsePreconditioner_t](sparsepreconditionernone.md)
+- [var SparsePreconditionerNone: SparsePreconditioner_t](./sparsepreconditionernone.md)
   No preconditioner.
-- [var SparsePreconditionerUser: SparsePreconditioner_t](sparsepreconditioneruser.md)
+- [var SparsePreconditionerUser: SparsePreconditioner_t](./sparsepreconditioneruser.md)
   A user-provided preconditioner.
 
 

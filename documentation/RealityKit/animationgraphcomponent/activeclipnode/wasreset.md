@@ -1,7 +1,8 @@
 # wasReset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
@@ -21,9 +22,10 @@ var wasReset: Bool { get }
 
 ## See Also
 
-- [let id: Int](animationgraphcomponent/activeclipnode/id.md)
+### Inspecting playback state
+- [let id: Int](./id.md)
   The unique identifier of the node within the compiled graph.
-- [var currentCycle: Float](animationgraphcomponent/activeclipnode/currentcycle.md)
+- [var currentCycle: Float](./currentcycle.md)
   The current playback cycle of the clip.
 
 

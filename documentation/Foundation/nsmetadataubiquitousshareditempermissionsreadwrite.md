@@ -1,7 +1,8 @@
 # NSMetadataUbiquitousSharedItemPermissionsReadWrite
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The current user is allowed to both read and write this item.
 
@@ -18,9 +19,14 @@ The current user is allowed to both read and write this item.
 let NSMetadataUbiquitousSharedItemPermissionsReadWrite: String
 ```
 
+```c
+extern NSString * const NSMetadataUbiquitousSharedItemPermissionsReadWrite;
+```
+
 ## See Also
 
-- [let NSMetadataUbiquitousSharedItemPermissionsReadOnly: String](nsmetadataubiquitousshareditempermissionsreadonly.md)
+### iCloud Sharing Permissions Values
+- [let NSMetadataUbiquitousSharedItemPermissionsReadOnly: String](./nsmetadataubiquitousshareditempermissionsreadonly.md)
   The current user is only allowed to read this item.
 
 

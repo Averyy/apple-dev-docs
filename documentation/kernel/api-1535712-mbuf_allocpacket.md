@@ -1,18 +1,19 @@
 # mbuf_allocpacket
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_allocpacket(mbuf_how_t how, size_t packetlen, unsigned int *maxchunks, mbuf_t *mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns 0 upon success or the following error code: EINVAL - Invalid parameter ENOMEM - Not enough memory available ENOBUFS - Buffers not big enough for the maximum number of chunks requested
 

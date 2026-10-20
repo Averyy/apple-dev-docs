@@ -1,7 +1,8 @@
 # maximumGrade(forFacts:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the highest membership grade among the specified facts.
 
@@ -19,6 +20,10 @@ Returns the highest membership grade among the specified facts.
 func maximumGrade(forFacts facts: [Any]) -> Float
 ```
 
+```objc
+- (float) maximumGradeForFacts:(NSArray *) facts;
+```
+
 #### Return Value
 
 The highest membership grade in the array of facts.
@@ -27,19 +32,21 @@ The highest membership grade in the array of facts.
 
 In fuzzy logic, this method is called the OR Zadeh operator, because it corresponds to the OR operator in Boolean logic.
 
-> **Note**:  If a fact is not in the [`facts`](gkrulesystem/facts.md) array, its membership grade for purposes of this operation is implicitly zero.
+> **Note**:  If a fact is not in the [`facts`](./facts.md) array, its membership grade for purposes of this operation is implicitly zero.
 
 ## Parameters
 
-- `facts`: An array of objects representing truths claimed or rejected by the rule system. For details, see the [`facts`](gkrulesystem/facts.md) property.
+- `facts`: An array of objects representing truths claimed or rejected by the rule system. For details, see the [`facts`](./facts.md) property.
 
 ## See Also
 
-- [var facts: [Any]](gkrulesystem/facts.md)
+### Related Documentation
+- [var facts: [Any]](./facts.md)
   The list of facts claimed by the rule system.
-- [func grade(forFact: any NSObjectProtocol) -> Float](gkrulesystem/grade(forfact:).md)
+### Drawing Conclusions from Facts
+- [func grade(forFact: any NSObjectProtocol) -> Float](./grade%28forfact%29.md)
   Returns the membership grade of the specified fact.
-- [func minimumGrade(forFacts: [Any]) -> Float](gkrulesystem/minimumgrade(forfacts:).md)
+- [func minimumGrade(forFacts: [Any]) -> Float](./minimumgrade%28forfacts%29.md)
   Returns the lowest membership grade among the specified facts.
 
 

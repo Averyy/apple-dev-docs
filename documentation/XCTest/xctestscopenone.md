@@ -1,7 +1,10 @@
 # XCTestScopeNone
 
 **Framework**: XCTest  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
+
+> **Deprecated**: [`XCTestScopeNone`](./xctestscopenone.md) is deprecated.
 
 ## Declaration
 
@@ -9,14 +12,19 @@
 let XCTestScopeNone: String
 ```
 
+```c
+extern NSString * const XCTestScopeNone;
+```
+
 ## See Also
 
-- [let XCTestObserverClassKey: String](xctestobserverclasskey.md)
-- [let XCTestedUnitPath: String](xctestedunitpath.md)
-- [let XCTestScopeAll: String](xctestscopeall.md)
-- [let XCTestScopeKey: String](xctestscopekey.md)
-- [let XCTestScopeSelf: String](xctestscopeself.md)
-- [let XCTestToolKey: String](xctesttoolkey.md)
+### Deprecated Constants
+- [let XCTestObserverClassKey: String](./xctestobserverclasskey.md)
+- [let XCTestedUnitPath: String](./xctestedunitpath.md)
+- [let XCTestScopeAll: String](./xctestscopeall.md)
+- [let XCTestScopeKey: String](./xctestscopekey.md)
+- [let XCTestScopeSelf: String](./xctestscopeself.md)
+- [let XCTestToolKey: String](./xctesttoolkey.md)
 
 
 ---

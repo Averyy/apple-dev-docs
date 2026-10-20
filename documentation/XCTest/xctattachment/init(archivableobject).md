@@ -1,7 +1,8 @@
 # init(archivableObject:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment from an object that conforms to `NSSecureCoding`.
 
@@ -11,19 +12,24 @@ Creates an attachment from an object that conforms to `NSSecureCoding`.
 convenience init(archivableObject object: any NSSecureCoding)
 ```
 
+```objc
++ (instancetype) attachmentWithArchivableObject:(id<NSSecureCoding>) object;
+```
+
 #### Discussion
 
-Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtypeidentifier.md) of `"``public.data"`.
+Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"``public.data"`.
 
 ## Parameters
 
-- `object`: An encodable object that conforms to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding).
+- `object`: An encodable object that conforms to [`NSSecureCoding`](../../Foundation/nssecurecoding.md).
 
 ## See Also
 
-- [convenience init(plistObject: Any)](xctattachment/init(plistobject:).md)
+### Creating Attachments from Objects
+- [convenience init(plistObject: Any)](./init%28plistobject%29.md)
   Creates an attachment from an object that can be represented in an XML property list.
-- [convenience init(archivableObject: any NSSecureCoding, uniformTypeIdentifier: String)](xctattachment/init(archivableobject:uniformtypeidentifier:).md)
+- [convenience init(archivableObject: any NSSecureCoding, uniformTypeIdentifier: String)](./init%28archivableobject,uniformtypeidentifier%29.md)
   Creates an attachment from an object that conforms to `NSSecureCoding`, with a custom UTI.
 
 

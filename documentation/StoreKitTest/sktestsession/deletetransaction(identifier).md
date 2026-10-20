@@ -1,7 +1,8 @@
 # deleteTransaction(identifier:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a specific transaction from the test environment.
 
@@ -20,6 +21,10 @@ Deletes a specific transaction from the test environment.
 func deleteTransaction(identifier: Int) throws
 ```
 
+```objc
+- (BOOL) deleteTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
+```
+
 #### Discussion
 
 When you delete a transaction, the test environment also removes the existing transaction from the receipt. Some transactions don’t appear in the receipt, including finished consumable purchases, failed purchases, Ask To Buy transactions pending approval, and restored purchases. Deleting a transaction deletes its child transactions, for example:
@@ -33,9 +38,10 @@ When you delete a transaction, the test environment also removes the existing tr
 
 ## See Also
 
-- [func allTransactions() -> [SKTestTransaction]](sktestsession/alltransactions.md)
+### Managing transactions in the test environment
+- [func allTransactions() -> [SKTestTransaction]](./alltransactions%28%29.md)
   Gets a list of all transactions in the test environment.
-- [func clearTransactions()](sktestsession/cleartransactions.md)
+- [func clearTransactions()](./cleartransactions%28%29.md)
   Removes all transactions from the test environment.
 
 

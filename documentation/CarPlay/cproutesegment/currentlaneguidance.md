@@ -1,7 +1,8 @@
 # currentLaneGuidance
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 currentLaneGuidance is a CPLaneGuidance object, describing the current lane guidance.
 
@@ -15,6 +16,10 @@ currentLaneGuidance is a CPLaneGuidance object, describing the current lane guid
 ```swift
 @NSCopying
 var currentLaneGuidance: CPLaneGuidance { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CPLaneGuidance * currentLaneGuidance;
 ```
 
 

@@ -1,7 +1,8 @@
 # workflowController(_:didRun:)
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the specified action finishes running.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the specified action finishes running.
 optional func workflowController(_ controller: AMWorkflowController, didRun action: AMAction)
 ```
 
+```objc
+- (void) workflowController:(AMWorkflowController *) controller didRunAction:(AMAction *) action;
+```
+
 ## Parameters
 
 - `controller`: The controller object sending the message.
@@ -22,7 +27,8 @@ optional func workflowController(_ controller: AMWorkflowController, didRun acti
 
 ## See Also
 
-- [func workflowControllerDidRun(AMWorkflowController)](amworkflowcontrollerdelegate/workflowcontrollerdidrun(_:).md)
+### Running
+- [func workflowControllerDidRun(AMWorkflowController)](./workflowcontrollerdidrun%28_%29.md)
   Notifies the delegate when the workflow controller object finishes running.
 
 

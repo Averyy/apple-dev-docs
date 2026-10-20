@@ -1,7 +1,8 @@
 # enableRate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can adjust the playback rate of the audio player.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether you can adjust the playback rate of the a
 var enableRate: Bool { get set }
 ```
 
+```objc
+@property BOOL enableRate;
+```
+
 #### Discussion
 
-To enable modifying the player’s rate, set this property to [`true`](https://developer.apple.com/documentation/swift/true) after you create the player, but before you call [`prepareToPlay()`](avaudioplayer/preparetoplay().md).
+To enable modifying the player’s rate, set this property to [`true`](../../Swift/true.md) after you create the player, but before you call [`prepareToPlay()`](./preparetoplay%28%29.md).
 
 ## See Also
 
-- [var volume: Float](avaudioplayer/volume.md)
+### Configuring playback settings
+- [var volume: Float](./volume.md)
   The audio player’s volume relative to other audio output.
-- [func setVolume(Float, fadeDuration: TimeInterval)](avaudioplayer/setvolume(_:fadeduration:).md)
+- [func setVolume(Float, fadeDuration: TimeInterval)](./setvolume%28_,fadeduration%29.md)
   Changes the audio player’s volume over a duration of time.
-- [var pan: Float](avaudioplayer/pan.md)
+- [var pan: Float](./pan.md)
   The audio player’s stereo pan position.
-- [var rate: Float](avaudioplayer/rate.md)
+- [var rate: Float](./rate.md)
   The audio player’s playback rate.
-- [var numberOfLoops: Int](avaudioplayer/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the audio repeats playback.
 
 

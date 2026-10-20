@@ -1,43 +1,45 @@
 # IOHIDValueScaleType
 
 **Framework**: HIDDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of scaling to use for an element’s value.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDValueScaleType;
 ```
 
 ## See Also
 
-- [getValue](iohidelement/getvalue.md)
+### Accessing the Element’s Value
+- [getValue](./iohidelement/getvalue.md)
   Gets the logical value that the device reported.
-- [getDataValue](iohidelement/getdatavalue.md)
+- [getDataValue](./iohidelement/getdatavalue.md)
   Gets the data value.
-- [getScaledValue](iohidelement/getscaledvalue.md)
+- [getScaledValue](./iohidelement/getscaledvalue.md)
   Returns a scaled version of the logical value.
-- [getScaledFixedValue](iohidelement/getscaledfixedvalue.md)
+- [getScaledFixedValue](./iohidelement/getscaledfixedvalue.md)
   Returns a fixed number that represents the scaled version of the element’s logical value.
-- [setValue](iohidelement/setvalue.md)
+- [setValue](./iohidelement/setvalue.md)
   Sets the value of the element.
-- [setDataValue](iohidelement/setdatavalue.md)
+- [setDataValue](./iohidelement/setdatavalue.md)
   Sets the data value of the element.
-- [getUnit](iohidelement/getunit.md)
+- [getUnit](./iohidelement/getunit.md)
   Returns the units that you use to interpret the element’s value.
-- [getUnitExponent](iohidelement/getunitexponent.md)
+- [getUnitExponent](./iohidelement/getunitexponent.md)
   Returns the exponent that you use to interpret the element’s value.
-- [IOHIDValueOptions](iohidvalueoptions.md)
+- [IOHIDValueOptions](./iohidvalueoptions.md)
   A type for specifying value-related options.
-- [Value Options](value-options-enum.md)
+- [Value Options](./value-options-enum.md)
   Options for how to retrieve an element’s values.
-- [Value Scale Types](value-scale-types-enum.md)
+- [Value Scale Types](./value-scale-types-enum.md)
   The different types of scaling that you can perform on element values.
 
 

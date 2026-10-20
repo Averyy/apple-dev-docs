@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.FontAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for the font of a run of attributed text.
 
@@ -23,9 +24,9 @@ enum FontAttribute
 
 #### Overview
 
-Access this key through the [`font`](attributescopes/swiftuiattributes/font.md) property of an attribute container, or set it on an `AttributedString` and pass the result to a `Text` view:
+Access this key through the [`font`](./font.md) property of an attribute container, or set it on an `AttributedString` and pass the result to a `Text` view:
 
-```None
+```
 var headline = AttributedString("On Sale")
 headline.font = .headline
 
@@ -35,14 +36,14 @@ Text(headline)
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

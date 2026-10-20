@@ -1,9 +1,10 @@
 # featureValue
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The feature result of a [`VNCoreMLRequest`](vncoremlrequest.md) that outputs neither a classification nor an image.
+The feature result of a [`VNCoreMLRequest`](../vncoremlrequest.md) that outputs neither a classification nor an image.
 
 **Availability**:
 - iOS 11.0+
@@ -20,13 +21,18 @@ The feature result of a [`VNCoreMLRequest`](vncoremlrequest.md) that outputs nei
 var featureValue: MLFeatureValue { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) MLFeatureValue * featureValue;
+```
+
 #### Discussion
 
-Refer to [`Core ML`](https://developer.apple.com/documentation/coreml) documentation and the model itself to learn about proper handling of the content.
+Refer to [Core ML](../../CoreML/CoreML.md) documentation and the model itself to learn about proper handling of the content.
 
 ## See Also
 
-- [var featureName: String](vncoremlfeaturevalueobservation/featurename.md)
+### Obtaining Feature Values
+- [var featureName: String](./featurename.md)
   The name used in the model description of the CoreML model that produced this observation.
 
 

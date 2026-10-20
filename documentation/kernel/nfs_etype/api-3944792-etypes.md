@@ -1,14 +1,15 @@
 # etypes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 nfs_supported_kerberos_etypes etypes[3];
 ```
 

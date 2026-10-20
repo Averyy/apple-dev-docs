@@ -1,10 +1,11 @@
 # kBluetoothL2CAPQoSTypeNoTraffic
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothL2CAPQoSTypeNoTraffic: BluetoothL2CAPQoSType { get }
 ```
 
+```c
+kBluetoothL2CAPQoSTypeNoTraffic
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPQoSTypeBestEffort: BluetoothL2CAPQoSType](kbluetoothl2capqostypebesteffort.md)
-- [var kBluetoothL2CAPQoSTypeGuaranteed: BluetoothL2CAPQoSType](kbluetoothl2capqostypeguaranteed.md)
+### Constants
+- [var kBluetoothL2CAPQoSTypeBestEffort: BluetoothL2CAPQoSType](./kbluetoothl2capqostypebesteffort.md)
+- [var kBluetoothL2CAPQoSTypeGuaranteed: BluetoothL2CAPQoSType](./kbluetoothl2capqostypeguaranteed.md)
 
 
 ---

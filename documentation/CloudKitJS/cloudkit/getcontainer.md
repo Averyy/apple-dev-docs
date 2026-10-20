@@ -1,7 +1,8 @@
 # getContainer
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the container with the specified container ID.
 
@@ -10,7 +11,7 @@ Returns the container with the specified container ID.
 
 ## Declaration
 
-```swift
+```
 CloudKit.Container getContainer(
 	String containerIdentifier
 );
@@ -26,9 +27,10 @@ The container with the specified container ID if it exists; otherwise, the value
 
 ## See Also
 
-- [getDefaultContainer](cloudkit/getdefaultcontainer.md)
+### Accessing Containers
+- [getDefaultContainer](./getdefaultcontainer.md)
   Returns the default container.
-- [getAllContainers](cloudkit/getallcontainers.md)
+- [getAllContainers](./getallcontainers.md)
   Returns all the containers that were configured.
 
 

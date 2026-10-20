@@ -1,7 +1,8 @@
 # localizedString(forKey:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the localized name for the property associated with the specified key.
 
@@ -19,6 +20,10 @@ Returns the localized name for the property associated with the specified key.
 class func localizedString(forKey key: String) -> String
 ```
 
+```objc
++ (NSString *) localizedStringForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The localized property name.
@@ -29,17 +34,18 @@ The localized property name.
 
 ## See Also
 
-- [let CNPostalAddressStreetKey: String](cnpostaladdressstreetkey.md)
+### Getting Localized Postal Values
+- [let CNPostalAddressStreetKey: String](../cnpostaladdressstreetkey.md)
   The street name of the address.
-- [let CNPostalAddressCityKey: String](cnpostaladdresscitykey.md)
+- [let CNPostalAddressCityKey: String](../cnpostaladdresscitykey.md)
   The city of the address.
-- [let CNPostalAddressStateKey: String](cnpostaladdressstatekey.md)
+- [let CNPostalAddressStateKey: String](../cnpostaladdressstatekey.md)
   The state name of the address.
-- [let CNPostalAddressPostalCodeKey: String](cnpostaladdresspostalcodekey.md)
+- [let CNPostalAddressPostalCodeKey: String](../cnpostaladdresspostalcodekey.md)
   The postal code of the address.
-- [let CNPostalAddressCountryKey: String](cnpostaladdresscountrykey.md)
+- [let CNPostalAddressCountryKey: String](../cnpostaladdresscountrykey.md)
   The country or region name of the address.
-- [let CNPostalAddressISOCountryCodeKey: String](cnpostaladdressisocountrycodekey.md)
+- [let CNPostalAddressISOCountryCodeKey: String](../cnpostaladdressisocountrycodekey.md)
   The ISO country code of the address.
 
 

@@ -1,7 +1,8 @@
 # anyInferenceProduced
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether any sample produced a subject.
 

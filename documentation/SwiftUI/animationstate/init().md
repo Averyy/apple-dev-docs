@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an empty state container.
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-You don’t typically create an instance of [`AnimationState`](animationstate.md) directly. Instead, the [`AnimationContext`](animationcontext.md) provides the animation state to an instance of [`CustomAnimation`](customanimation.md).
+You don’t typically create an instance of [`AnimationState`](../animationstate.md) directly. Instead, the [`AnimationContext`](../animationcontext.md) provides the animation state to an instance of [`CustomAnimation`](../customanimation.md).
 
 
 ---

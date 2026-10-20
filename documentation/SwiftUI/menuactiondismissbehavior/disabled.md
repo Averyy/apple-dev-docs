@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Never dismiss the presented menu after performing an action.
 
@@ -20,9 +21,10 @@ static let disabled: MenuActionDismissBehavior
 
 ## See Also
 
-- [static let automatic: MenuActionDismissBehavior](menuactiondismissbehavior/automatic.md)
+### Getting dismiss behaviors
+- [static let automatic: MenuActionDismissBehavior](./automatic.md)
   Use the a dismissal behavior that’s appropriate for the given context.
-- [static let enabled: MenuActionDismissBehavior](menuactiondismissbehavior/enabled.md)
+- [static let enabled: MenuActionDismissBehavior](./enabled.md)
   Always dismiss the presented menu after performing an action.
 
 

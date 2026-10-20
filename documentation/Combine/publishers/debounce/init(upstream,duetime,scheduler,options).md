@@ -1,7 +1,8 @@
 # init(upstream:dueTime:scheduler:options:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that publishes elements only after a specified time interval elapses between events.
 

@@ -1,17 +1,22 @@
 # setTitle(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the string displayed in the receiver when the user isn’t pressing the mouse button.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setTitle(_ string: String)
+```
+
+```objc
+- (void) setTitle:(NSString *) string;
 ```
 
 #### Discussion

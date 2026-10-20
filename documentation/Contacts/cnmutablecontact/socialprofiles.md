@@ -1,7 +1,8 @@
 # socialProfiles
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of labeled social profiles for a contact.
 
@@ -19,9 +20,21 @@ An array of labeled social profiles for a contact.
 var socialProfiles: [CNLabeledValue<CNSocialProfile>] { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSArray<CNLabeledValue<CNSocialProfile *> *> * socialProfiles;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSArray<CNLabeledValue<CNSocialProfile *> *> * socialProfiles;
+```
+
 #### Discussion
 
-This property is an array of [`CNLabeledValue`](cnlabeledvalue.md) objects, each of which has a label and a [`CNSocialProfile`](cnsocialprofile.md) value.
+This property is an array of [`CNLabeledValue`](../cnlabeledvalue.md) objects, each of which has a label and a [`CNSocialProfile`](../cnsocialprofile.md) value.
 
 
 ---

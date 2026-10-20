@@ -1,7 +1,8 @@
 # remoteVideoURL
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A remote URL corresponding to a representative video for the URL.
 
@@ -20,13 +21,18 @@ A remote URL corresponding to a representative video for the URL.
 var remoteVideoURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSURL * remoteVideoURL;
+```
+
 #### Discussion
 
-This may reference a remote video file that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) can stream.
+This may reference a remote video file that [AVFoundation](../../AVFoundation/AVFoundation.md) can stream.
 
 ## See Also
 
-- [var videoProvider: NSItemProvider?](lplinkmetadata/videoprovider.md)
+### Getting the link’s video
+- [var videoProvider: NSItemProvider?](./videoprovider.md)
   An object that retrieves data corresponding to a representative video for the URL.
 
 

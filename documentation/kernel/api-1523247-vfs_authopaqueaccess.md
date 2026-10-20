@@ -1,7 +1,8 @@
 # vfs_authopaqueaccess
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Check if a filesystem is marked as having reliable remote VNOP_ACCESS support.
 
@@ -10,11 +11,11 @@ Check if a filesystem is marked as having reliable remote VNOP_ACCESS support.
 
 ## Declaration
 
-```swift
+```c
 int vfs_authopaqueaccess(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if VNOP_ACCESS is supported remotely, else 0.
 

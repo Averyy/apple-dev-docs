@@ -1,7 +1,8 @@
 # withIntentCancellationHandler(operation:onCancel:isolation:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs an operation with a cancellation handler that receives a cancellation reason.
 
@@ -26,9 +27,9 @@ The value you return from the `operation` closure.
 
 #### Discussion
 
-> **Note**: Rethrows any error thrown by the operation.
+> **Throws**: Rethrows any error thrown by the operation.
 
-Use this method to handle cancellation in an app intent’s [`perform()`](appintent/perform().md) method when you also want to know the reason for cancellation. If cancellation occurs due to a timeout or someone canceling the operation, the system runs your `handler` and gives you a little extra time to perform any cleanup. If you don’t need to know the cancellation reason, you can use the standard Swift [`withTaskCancellationHandler(handler:operation:)`](https://developer.apple.com/documentation/swift/withtaskcancellationhandler(handler:operation:)) method for tasks instead.
+Use this method to handle cancellation in an app intent’s [`perform()`](../appintent/perform%28%29.md) method when you also want to know the reason for cancellation. If cancellation occurs due to a timeout or someone canceling the operation, the system runs your `handler` and gives you a little extra time to perform any cleanup. If you don’t need to know the cancellation reason, you can use the standard Swift [`withTaskCancellationHandler(handler:operation:)`](../../Swift/withtaskcancellationhandler%28handler,operation%29.md) method for tasks instead.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ Use this method to handle cancellation in an app intent’s [`perform()`](appint
 
 ## See Also
 
-- [struct IntentCancellationReason](intentcancellationreason.md)
+### Cancelling the intent
+- [struct IntentCancellationReason](../intentcancellationreason.md)
   Reasons for the cancellation of an app intent’s operation.
 
 

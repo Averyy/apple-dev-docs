@@ -1,17 +1,24 @@
 # hostWindow
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s host window.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 var hostWindow: NSWindow! { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSWindow * hostWindow;
 ```
 
 #### Discussion

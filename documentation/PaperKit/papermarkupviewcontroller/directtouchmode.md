@@ -1,7 +1,8 @@
 # directTouchMode
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interaction mode for direct touches on the canvas.
 
@@ -24,11 +25,12 @@ To control automatic behavior for direct touches based on system state, see `dir
 
 ## See Also
 
-- [var directTouchAutomaticallyDraws: Bool](papermarkupviewcontroller/directtouchautomaticallydraws.md)
+### Controlling touch input
+- [var directTouchAutomaticallyDraws: Bool](./directtouchautomaticallydraws.md)
   A Boolean value that indicates whether direct touches automatically draw based on system state.
-- [var indirectPointerTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/indirectpointertouchmode.md)
+- [var indirectPointerTouchMode: PaperMarkupViewController.TouchMode](./indirectpointertouchmode.md)
   The interaction mode for indirect pointer touches on the canvas.
-- [PaperMarkupViewController.TouchMode](papermarkupviewcontroller/touchmode.md)
+- [PaperMarkupViewController.TouchMode](./touchmode.md)
   The canvas behavior for touches.
 
 

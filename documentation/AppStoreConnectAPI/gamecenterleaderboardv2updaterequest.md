@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2UpdateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a Game Center leaderboard v2.
 
@@ -10,7 +11,7 @@ The request body you use to update a Game Center leaderboard v2.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2UpdateRequest
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardV2UpdateRequest
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardV2UpdateRequest.Data](gamecenterleaderboardv2updaterequest/data-data.dictionary.md)
+- [object GameCenterLeaderboardV2UpdateRequest.Data](./gamecenterleaderboardv2updaterequest/data-data.dictionary.md)
   The data structure that represents a Game Center leaderboard update request resource.
 
 ## Properties
@@ -30,35 +31,36 @@ object GameCenterLeaderboardV2UpdateRequest
 
 ## See Also
 
-- [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)
+### Objects and types
+- [object GameCenterLeaderboardV2](./gamecenterleaderboardv2.md)
   The data structure that represents a Game Center leaderboard v2 resource.
-- [object GameCenterLeaderboardV2CreateRequest](gamecenterleaderboardv2createrequest.md)
+- [object GameCenterLeaderboardV2CreateRequest](./gamecenterleaderboardv2createrequest.md)
   The request body you use to create a Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2Response](gamecenterleaderboardv2response.md)
+- [object GameCenterLeaderboardV2Response](./gamecenterleaderboardv2response.md)
   A response that contains a single Game Center leaderboard v2 resource.
-- [object GameCenterLeaderboardsV2Response](gamecenterleaderboardsv2response.md)
+- [object GameCenterLeaderboardsV2Response](./gamecenterleaderboardsv2response.md)
   A response that contains a list of Game Center leaderboard resources.
-- [object GameCenterLeaderboardV2ActivityLinkageRequest](gamecenterleaderboardv2activitylinkagerequest.md)
+- [object GameCenterLeaderboardV2ActivityLinkageRequest](./gamecenterleaderboardv2activitylinkagerequest.md)
   The data structure that represents a Game Center leaderboard v2 activity linkage request resource.
-- [object GameCenterLeaderboardV2ChallengeLinkageRequest](gamecenterleaderboardv2challengelinkagerequest.md)
+- [object GameCenterLeaderboardV2ChallengeLinkageRequest](./gamecenterleaderboardv2challengelinkagerequest.md)
   The data structure that represents a Game Center leaderboard v2 challenge linkage request resource.
-- [object GameCenterLeaderboardV2VersionsLinkagesResponse](gamecenterleaderboardv2versionslinkagesresponse.md)
+- [object GameCenterLeaderboardV2VersionsLinkagesResponse](./gamecenterleaderboardv2versionslinkagesresponse.md)
   A response that contains a list of Game Center leaderboard v2 version linkage resources.
-- [object GameCenterLeaderboardUpdateRequest](gamecenterleaderboardupdaterequest.md)
+- [object GameCenterLeaderboardUpdateRequest](./gamecenterleaderboardupdaterequest.md)
   The request body you use to update a leaderboard.
-- [object GameCenterLeaderboardsResponse](gamecenterleaderboardsresponse.md)
+- [object GameCenterLeaderboardsResponse](./gamecenterleaderboardsresponse.md)
   The response body for endpoints that list Game Center leaderboards.
-- [object GameCenterLeaderboard](gamecenterleaderboard.md)
+- [object GameCenterLeaderboard](./gamecenterleaderboard.md)
   The data structure that represent a leaderboard resource.
-- [object GameCenterLeaderboardCreateRequest](gamecenterleaderboardcreaterequest.md)
+- [object GameCenterLeaderboardCreateRequest](./gamecenterleaderboardcreaterequest.md)
   The request body you use to create a leaderboard.
-- [object GameCenterLeaderboardResponse](gamecenterleaderboardresponse.md)
+- [object GameCenterLeaderboardResponse](./gamecenterleaderboardresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard.
-- [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
+- [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](./gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
-- [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](gamecenterleaderboardgroupleaderboardlinkageresponse.md)
+- [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](./gamecenterleaderboardgroupleaderboardlinkageresponse.md)
   A response confriming a relationship between a leaderboard and group leaderboard.
-- [object GameCenterLeaderboardActivityLinkageRequest](gamecenterleaderboardactivitylinkagerequest.md)
+- [object GameCenterLeaderboardActivityLinkageRequest](./gamecenterleaderboardactivitylinkagerequest.md)
 
 
 ---

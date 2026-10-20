@@ -1,7 +1,8 @@
 # MKAnnotationView.DragState
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the drag state of an annotation view.
 
@@ -18,31 +19,35 @@ Constants that indicate the drag state of an annotation view.
 enum DragState
 ```
 
+```c
+enum MKAnnotationViewDragState : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKAnnotationView.DragState.none](mkannotationview/dragstate-swift.enum/none.md)
+- [MKAnnotationView.DragState.none](./dragstate-swift.enum/none.md)
   An annotation view that doesn’t have a drag operation.
-- [MKAnnotationView.DragState.starting](mkannotationview/dragstate-swift.enum/starting.md)
+- [MKAnnotationView.DragState.starting](./dragstate-swift.enum/starting.md)
   An annotation view begins dragging.
-- [MKAnnotationView.DragState.dragging](mkannotationview/dragstate-swift.enum/dragging.md)
+- [MKAnnotationView.DragState.dragging](./dragstate-swift.enum/dragging.md)
   An annotation view is actively dragging.
-- [MKAnnotationView.DragState.canceling](mkannotationview/dragstate-swift.enum/canceling.md)
+- [MKAnnotationView.DragState.canceling](./dragstate-swift.enum/canceling.md)
   An annotation view cancels drag operation.
-- [MKAnnotationView.DragState.ending](mkannotationview/dragstate-swift.enum/ending.md)
+- [MKAnnotationView.DragState.ending](./dragstate-swift.enum/ending.md)
   An annotation view ends dragging.
 ### Initializers
-- [init?(rawValue: UInt)](mkannotationview/dragstate-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./dragstate-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

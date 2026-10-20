@@ -1,7 +1,8 @@
 # interface(withName:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the Wi-Fi interface with the given name.
 
@@ -14,21 +15,26 @@ Returns the Wi-Fi interface with the given name.
 func interface(withName interfaceName: String?) -> CWInterface?
 ```
 
+```objc
+- (CWInterface *) interfaceWithName:(NSString *) interfaceName;
+```
+
 #### Return Value
 
-The [`CWInterface`](cwinterface.md) object bound to the given interface name, or the default interface if no name is specified.
+The [`CWInterface`](../cwinterface.md) object bound to the given interface name, or the default interface if no name is specified.
 
 ## Parameters
 
-- `interfaceName`: The name of an available Wi-Fi interface. Use the [`interfaceNames()`](cwwificlient/interfacenames()-swift.type.method.md) class method to obtain a list of valid interface names.
+- `interfaceName`: The name of an available Wi-Fi interface. Use the [`interfaceNames()`](./interfacenames%28%29-swift.type.method.md) class method to obtain a list of valid interface names.
 
 ## See Also
 
-- [func interface() -> CWInterface?](cwwificlient/interface.md)
+### Getting Interfaces
+- [func interface() -> CWInterface?](./interface%28%29.md)
   Returns the default Wi-Fi interface.
-- [func interfaces() -> [CWInterface]?](cwwificlient/interfaces.md)
+- [func interfaces() -> [CWInterface]?](./interfaces%28%29.md)
   Returns all available Wi-Fi interfaces.
-- [class func interfaceNames() -> [String]?](cwwificlient/interfacenames-swift.type.method.md)
+- [class func interfaceNames() -> [String]?](./interfacenames%28%29-swift.type.method.md)
   Returns the list of the names of available Wi-Fi interfaces.
 
 

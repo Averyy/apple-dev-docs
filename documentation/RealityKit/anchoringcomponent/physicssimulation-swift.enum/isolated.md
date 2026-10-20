@@ -1,7 +1,8 @@
 # AnchoringComponent.PhysicsSimulation.isolated
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Simulates the entity and its descendants in the entity’s own physics space.
 
@@ -21,7 +22,7 @@ case isolated
 
 #### Discussion
 
-This behavior is similar to using a [`PhysicsSimulationComponent`](physicssimulationcomponent.md).
+This behavior is similar to using a [`PhysicsSimulationComponent`](../../physicssimulationcomponent.md).
 
 
 ---

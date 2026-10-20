@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Indicates whether two texture resources are equal.
 

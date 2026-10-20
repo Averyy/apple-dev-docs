@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that loads data from a file handle into a GPU texture.
@@ -20,6 +21,10 @@ Encodes a command that loads data from a file handle into a GPU texture.
 func load(_ texture: any MTLTexture, slice: Int, level: Int, size: MTLSize, sourceBytesPerRow: Int, sourceBytesPerImage: Int, destinationOrigin: MTLOrigin, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)
 ```
 
+```objc
+- (void) loadTexture:(id<MTLTexture>) texture slice:(NSUInteger) slice level:(NSUInteger) level size:(MTLSize) size sourceBytesPerRow:(NSUInteger) sourceBytesPerRow sourceBytesPerImage:(NSUInteger) sourceBytesPerImage destinationOrigin:(MTLOrigin) destinationOrigin sourceHandle:(id<MTLIOFileHandle>) sourceHandle sourceHandleOffset:(NSUInteger) sourceHandleOffset;
+```
+
 ## Parameters
 
 - `texture`: A texture instance the method loads data into.
@@ -34,9 +39,10 @@ func load(_ texture: any MTLTexture, slice: Int, level: Int, size: MTLSize, sour
 
 ## See Also
 
-- [func load(any MTLBuffer, offset: Int, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](mtliocommandbuffer/load(_:offset:size:sourcehandle:sourcehandleoffset:).md)
+### Loading assets
+- [func load(any MTLBuffer, offset: Int, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](./load%28_,offset,size,sourcehandle,sourcehandleoffset%29.md)
   Encodes a command that loads data from a file handle into a GPU buffer.
-- [func loadBytes(UnsafeMutableRawPointer, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](mtliocommandbuffer/loadbytes(_:size:sourcehandle:sourcehandleoffset:).md)
+- [func loadBytes(UnsafeMutableRawPointer, size: Int, sourceHandle: any MTLIOFileHandle, sourceHandleOffset: Int)](./loadbytes%28_,size,sourcehandle,sourcehandleoffset%29.md)
   Encodes a command that loads data from a file handle into CPU-accessible memory buffer.
 
 

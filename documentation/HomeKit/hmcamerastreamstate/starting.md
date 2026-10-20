@@ -1,7 +1,8 @@
 # HMCameraStreamState.starting
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state when the camera stream start request is processing.
 
@@ -19,13 +20,18 @@ The state when the camera stream start request is processing.
 case starting
 ```
 
+```c
+HMCameraStreamStateStarting
+```
+
 ## See Also
 
-- [HMCameraStreamState.notStreaming](hmcamerastreamstate/notstreaming.md)
+### Observing the streaming state
+- [HMCameraStreamState.notStreaming](./notstreaming.md)
   The state when the camera stream is not active.
-- [HMCameraStreamState.stopping](hmcamerastreamstate/stopping.md)
+- [HMCameraStreamState.stopping](./stopping.md)
   The state when the camera stream is stopping.
-- [HMCameraStreamState.streaming](hmcamerastreamstate/streaming.md)
+- [HMCameraStreamState.streaming](./streaming.md)
   The state when the camera stream is currently in progress.
 
 

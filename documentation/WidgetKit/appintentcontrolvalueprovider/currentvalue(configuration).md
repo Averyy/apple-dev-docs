@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The current value of the control.

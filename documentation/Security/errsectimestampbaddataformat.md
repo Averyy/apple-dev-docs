@@ -1,7 +1,8 @@
 # errSecTimestampBadDataFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The timestamp data submitted has the wrong format.
 
@@ -18,6 +19,10 @@ The timestamp data submitted has the wrong format.
 
 ```swift
 var errSecTimestampBadDataFormat: OSStatus { get }
+```
+
+```c
+errSecTimestampBadDataFormat
 ```
 
 

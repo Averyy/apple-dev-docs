@@ -1,18 +1,19 @@
 # init(bytes:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 24-bit unsigned integer value from the specified bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,7 +27,8 @@ init(bytes: (UInt8, UInt8, UInt8))
 
 ## See Also
 
-- [init()](vdsp_uint24/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates a 24-but unsigned integer value.
 
 

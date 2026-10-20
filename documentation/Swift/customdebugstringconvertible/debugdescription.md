@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A textual representation of this instance, suitable for debugging.
@@ -41,6 +42,12 @@ print(s)
 ```
 
 The conversion of `p` to a string in the assignment to `s` uses the `Point` type’s `debugDescription` property.
+
+## Default Implementations
+
+### CustomDebugStringConvertible Implementations
+- [var debugDescription: String](./debugdescription-1omzk.md)
+  A textual representation of this key, suitable for debugging.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(id:title:perform:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tip action that generates its label from a string.
 
@@ -29,7 +30,8 @@ nonisolated init(id: String? = nil, title: some StringProtocol, perform handler:
 
 ## See Also
 
-- [init(id: String?, perform: () -> Void, () -> Text)](tips/action/init(id:perform:_:).md)
+### Initializers
+- [init(id: String?, perform: () -> Void, () -> Text)](./init%28id,perform,_%29.md)
   Creates a tip action that displays a custom label.
 
 

@@ -1,17 +1,24 @@
 # MPMovieFinishReason.playbackError
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 case playbackError
+```
+
+```c
+MPMovieFinishReasonPlaybackError
 ```
 
 #### Discussion
@@ -20,8 +27,9 @@ There was an error during playback.
 
 ## See Also
 
-- [MPMovieFinishReason.playbackEnded](mpmoviefinishreason/playbackended.md)
-- [MPMovieFinishReason.userExited](mpmoviefinishreason/userexited.md)
+### Constants
+- [MPMovieFinishReason.playbackEnded](./playbackended.md)
+- [MPMovieFinishReason.userExited](./userexited.md)
 
 
 ---

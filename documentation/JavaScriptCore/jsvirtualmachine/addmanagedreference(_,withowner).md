@@ -1,7 +1,8 @@
 # addManagedReference(_:withOwner:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the JavaScriptCore virtual machine of an external object relationship.
 
@@ -19,11 +20,15 @@ Notifies the JavaScriptCore virtual machine of an external object relationship.
 func addManagedReference(_ object: Any!, withOwner owner: Any!)
 ```
 
+```objc
+- (void) addManagedReference:(id) object withOwner:(id) owner;
+```
+
 #### Discussion
 
 Use this method to make the JavaScript runtime aware of arbitrary external Objective-C or Swift object graphs. The runtime can then use this information to retain any JavaScript values that are referenced from somewhere in said object graph.
 
-For correct behavior, clients must make their external object graphs reachable from within the JavaScript runtime. If an Objective-C or Swift object is reachable from within the JavaScript runtime, all managed references transitively reachable from it as recorded using the [`addManagedReference(_:withOwner:)`](jsvirtualmachine/addmanagedreference(_:withowner:).md) method are scanned by the garbage collector.
+For correct behavior, clients must make their external object graphs reachable from within the JavaScript runtime. If an Objective-C or Swift object is reachable from within the JavaScript runtime, all managed references transitively reachable from it as recorded using the [`addManagedReference(_:withOwner:)`](./addmanagedreference%28_,withowner%29.md) method are scanned by the garbage collector.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ For correct behavior, clients must make their external object graphs reachable f
 
 ## See Also
 
-- [func removeManagedReference(Any!, withOwner: Any!)](jsvirtualmachine/removemanagedreference(_:withowner:).md)
+### Managing Memory for Bridged Values
+- [func removeManagedReference(Any!, withOwner: Any!)](./removemanagedreference%28_,withowner%29.md)
   Notifies the JavaScriptCore virtual machine that a previously registered object relationship no longer exists.
 
 

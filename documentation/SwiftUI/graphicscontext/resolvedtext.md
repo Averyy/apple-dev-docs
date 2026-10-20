@@ -1,7 +1,8 @@
 # GraphicsContext.ResolvedText
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A text view resolved to a particular environment.
 
@@ -22,29 +23,30 @@ struct ResolvedText
 
 #### Overview
 
-You resolve a [`Text`](text.md) view in preparation for drawing it into a context, either manually by calling [`resolve(_:)`](graphicscontext/resolve(_:)-4dx65.md) or automatically when calling [`draw(_:in:)`](graphicscontext/draw(_:in:)-5opqf.md) or [`draw(_:at:anchor:)`](graphicscontext/draw(_:at:anchor:)-5dgmd.md). The resolved text view takes into account environment values like the display resolution and current color scheme.
+You resolve a [`Text`](../text.md) view in preparation for drawing it into a context, either manually by calling [`resolve(_:)`](./resolve%28_%29-4dx65.md) or automatically when calling [`draw(_:in:)`](./draw%28_,in%29-5opqf.md) or [`draw(_:at:anchor:)`](./draw%28_,at,anchor%29-5dgmd.md). The resolved text view takes into account environment values like the display resolution and current color scheme.
 
 ## Topics
 
 ### Getting the text properties
-- [func firstBaseline(in: CGSize) -> CGFloat](graphicscontext/resolvedtext/firstbaseline(in:).md)
+- [func firstBaseline(in: CGSize) -> CGFloat](./resolvedtext/firstbaseline%28in%29.md)
   Gets the distance from the first line’s ascender to its baseline.
-- [func lastBaseline(in: CGSize) -> CGFloat](graphicscontext/resolvedtext/lastbaseline(in:).md)
+- [func lastBaseline(in: CGSize) -> CGFloat](./resolvedtext/lastbaseline%28in%29.md)
   Gets the distance from the first line’s ascender to the last line’s baseline.
-- [func measure(in: CGSize) -> CGSize](graphicscontext/resolvedtext/measure(in:).md)
+- [func measure(in: CGSize) -> CGSize](./resolvedtext/measure%28in%29.md)
   Measures the size of the resolved text for a given area into which the text should be placed.
-- [var shading: GraphicsContext.Shading](graphicscontext/resolvedtext/shading.md)
+- [var shading: GraphicsContext.Shading](./resolvedtext/shading.md)
   The shading to fill uncolored text regions with.
 
 ## See Also
 
-- [func resolve(_:)](graphicscontext/resolve(_:).md)
+### Resolving a drawn entity
+- [func resolve(_:)](./resolve%28_%29.md)
   Gets a version of an image that’s fixed with the current values of the graphics context’s environment.
-- [func resolveSymbol<ID>(id: ID) -> GraphicsContext.ResolvedSymbol?](graphicscontext/resolvesymbol(id:).md)
+- [func resolveSymbol<ID>(id: ID) -> GraphicsContext.ResolvedSymbol?](./resolvesymbol%28id%29.md)
   Gets the identified child view as a resolved symbol, if the view exists.
-- [GraphicsContext.ResolvedSymbol](graphicscontext/resolvedsymbol.md)
+- [GraphicsContext.ResolvedSymbol](./resolvedsymbol.md)
   A static sequence of drawing operations that may be drawn multiple times, preserving their resolution independence.
-- [GraphicsContext.ResolvedImage](graphicscontext/resolvedimage.md)
+- [GraphicsContext.ResolvedImage](./resolvedimage.md)
   An image resolved to a particular environment.
 
 

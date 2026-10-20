@@ -1,7 +1,8 @@
 # extractValues(as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns strongly-typed match output by converting this type-erased output to the specified type, if possible.
 

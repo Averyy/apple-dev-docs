@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Cached values associated with the layout instance.
@@ -25,13 +26,14 @@ associatedtype Cache = Void
 
 If you create a cache for your custom layout, you can use a type alias to define this type as your data storage type. Alternatively, you can refer to the data storage type directly in all the places where you work with the cache.
 
-See [`makeCache(subviews:)`](layout/makecache(subviews:).md) for more information.
+See [`makeCache(subviews:)`](./makecache%28subviews%29.md) for more information.
 
 ## See Also
 
-- [func makeCache(subviews: Self.Subviews) -> Self.Cache](layout/makecache(subviews:).md)
+### Managing a cache
+- [func makeCache(subviews: Self.Subviews) -> Self.Cache](./makecache%28subviews%29.md)
   Creates and initializes a cache for a layout instance.
-- [func updateCache(inout Self.Cache, subviews: Self.Subviews)](layout/updatecache(_:subviews:).md)
+- [func updateCache(inout Self.Cache, subviews: Self.Subviews)](./updatecache%28_,subviews%29.md)
   Updates the layout’s cache when something changes.
 
 

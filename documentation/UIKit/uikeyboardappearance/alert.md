@@ -1,16 +1,19 @@
 # alert
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a keyboard appearance suitable for an alert panel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+
+> **Deprecated**: Use [`UIKeyboardAppearance.dark`](./dark.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,18 @@ Specifies a keyboard appearance suitable for an alert panel.
 static var alert: UIKeyboardAppearance { get }
 ```
 
+```c
+UIKeyboardAppearanceAlert
+```
+
 ## See Also
 
-- [UIKeyboardAppearance.default](uikeyboardappearance/default.md)
+### Constants
+- [UIKeyboardAppearance.default](./default.md)
   Specifies the default keyboard appearance for the current input method.
-- [UIKeyboardAppearance.dark](uikeyboardappearance/dark.md)
+- [UIKeyboardAppearance.dark](./dark.md)
   Specifies a keyboard appearance suitable for a dark UI look.
-- [UIKeyboardAppearance.light](uikeyboardappearance/light.md)
+- [UIKeyboardAppearance.light](./light.md)
   Specifies a keyboard appearance suitable for a light UI look.
 
 

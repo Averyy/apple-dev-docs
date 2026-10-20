@@ -1,7 +1,8 @@
 # Activity.ActivityUpdates.Element
 
 **Framework**: ActivityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element this asynchronous sequence produces.
 
@@ -17,9 +18,10 @@ typealias Element = Activity<Attributes>
 
 ## See Also
 
-- [func makeAsyncIterator() -> Activity<Attributes>.ActivityUpdates.Iterator](activity/activityupdates-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> Activity<Attributes>.ActivityUpdates.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [Activity.ActivityUpdates.Iterator](activity/activityupdates-swift.struct/iterator.md)
+- [Activity.ActivityUpdates.Iterator](./iterator.md)
   An iterator for accessing individual data entries from the series.
 
 

@@ -1,22 +1,27 @@
 # insideTessellationFactor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inside tessellation factor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var insideTessellationFactor: UInt16
+```
+
+```c
+uint16_t insideTessellationFactor;
 ```
 
 

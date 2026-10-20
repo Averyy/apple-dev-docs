@@ -1,18 +1,19 @@
 # BNNSGraphArgumentType
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the argument type for a graph context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,47 +21,52 @@ Constants that specify the argument type for a graph context.
 struct BNNSGraphArgumentType
 ```
 
+```c
+typedef enum { ... } BNNSGraphArgumentType;
+```
+
 ## Topics
 
 ### Argument types
-- [init(UInt32)](bnnsgraphargumenttype/init(_:).md)
+- [init(UInt32)](./bnnsgraphargumenttype/init%28_%29.md)
   Creates a new instance.
-- [init(rawValue: UInt32)](bnnsgraphargumenttype/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsgraphargumenttype/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 ### Instance Properties
-- [var rawValue: UInt32](bnnsgraphargumenttype/rawvalue.md)
+- [var rawValue: UInt32](./bnnsgraphargumenttype/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSGraphArgumentTypePointer: BNNSGraphArgumentType](bnnsgraphargumenttypepointer.md)
+- [var BNNSGraphArgumentTypePointer: BNNSGraphArgumentType](./bnnsgraphargumenttypepointer.md)
   A pointer to the raw data for the tensor.
-- [var BNNSGraphArgumentTypeTensor: BNNSGraphArgumentType](bnnsgraphargumenttypetensor.md)
+- [var BNNSGraphArgumentTypeTensor: BNNSGraphArgumentType](./bnnsgraphargumenttypetensor.md)
   A tensor structure.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+### Specifying and querying a context’s properties
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](./bnnsgraphcontextsetstreamingadvancecount%28_,_%29.md)
   Sets the streaming advancement amount for cases with dynamically shaped inputs.
-- [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](bnnsgraphcontextsetargumenttype(_:_:).md)
+- [func BNNSGraphContextSetArgumentType(bnns_graph_context_t, BNNSGraphArgumentType) -> Int32](./bnnsgraphcontextsetargumenttype%28_,_%29.md)
   Specifies the argument type for a graph context.
-- [func BNNSGraphContextSetDynamicShapes(bnns_graph_context_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<bnns_graph_shape_t>) -> Int32](bnnsgraphcontextsetdynamicshapes(_:_:_:_:).md)
+- [func BNNSGraphContextSetDynamicShapes(bnns_graph_context_t, UnsafePointer<CChar>?, Int, UnsafeMutablePointer<bnns_graph_shape_t>) -> Int32](./bnnsgraphcontextsetdynamicshapes%28_,_,_,_%29.md)
   Specifies the dynamic shapes for a graph and, if possible, infers, the output shapes.
-- [struct bnns_graph_shape_t](bnns_graph_shape_t.md)
+- [struct bnns_graph_shape_t](./bnns_graph_shape_t.md)
   The specification of the shape of an argument.
-- [func BNNSGraphContextSetBatchSize(bnns_graph_context_t, UnsafePointer<CChar>?, UInt64) -> Int32](bnnsgraphcontextsetbatchsize(_:_:_:).md)
+- [func BNNSGraphContextSetBatchSize(bnns_graph_context_t, UnsafePointer<CChar>?, UInt64) -> Int32](./bnnsgraphcontextsetbatchsize%28_,_,_%29.md)
   Sets the batch size for a graph.
-- [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](bnnsgraphcontextenablenanandinfchecks(_:_:).md)
+- [func BNNSGraphContextEnableNanAndInfChecks(bnns_graph_context_t, Bool)](./bnnsgraphcontextenablenanandinfchecks%28_,_%29.md)
   Specifies that the context checks intermediate tensors for NaNs and infinities.
-- [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](bnnsgraphcontextgetworkspacesize(_:_:).md)
+- [func BNNSGraphContextGetWorkspaceSize(bnns_graph_context_t, UnsafePointer<CChar>?) -> Int](./bnnsgraphcontextgetworkspacesize%28_,_%29.md)
   Returns the minimum size, in bytes, of the workspace that graph context execution requires.
-- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](bnnsgraphcontextsetstreamingadvancecount(_:_:).md)
+- [func BNNSGraphContextSetStreamingAdvanceCount(bnns_graph_context_t, Int) -> Int32](./bnnsgraphcontextsetstreamingadvancecount%28_,_%29.md)
   Sets the streaming advancement amount for cases with dynamically shaped inputs.
 
 

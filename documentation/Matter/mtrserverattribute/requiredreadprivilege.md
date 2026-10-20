@@ -1,7 +1,8 @@
 # requiredReadPrivilege
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var requiredReadPrivilege: MTRAccessControlEntryPrivilege { get }
+```
+
+```objc
+@property (atomic, assign, readonly) MTRAccessControlEntryPrivilege requiredReadPrivilege;
 ```
 
 

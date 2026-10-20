@@ -1,7 +1,8 @@
 # savedRecords
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modified records.
 
@@ -11,7 +12,7 @@ The modified records.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ let savedRecords: [CKRecord]
 
 ## See Also
 
-- [let deletedRecordIDs: [CKRecord.ID]](cksyncengine-5sie5/event/sentrecordzonechanges/deletedrecordids.md)
+### Accessing successful changes
+- [let deletedRecordIDs: [CKRecord.ID]](./deletedrecordids.md)
   The unique identifiers of the deleted records.
 
 

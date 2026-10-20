@@ -1,7 +1,8 @@
 # UIViewControllerRepresentable.Context
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+
@@ -18,11 +19,12 @@ typealias Context = UIViewControllerRepresentableContext<Self>
 
 ## See Also
 
-- [func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType](uiviewcontrollerrepresentable/makeuiviewcontroller(context:).md)
+### Creating and updating the view controller
+- [func makeUIViewController(context: Self.Context) -> Self.UIViewControllerType](./makeuiviewcontroller%28context%29.md)
   Creates the view controller object and configures its initial state.
-- [func updateUIViewController(Self.UIViewControllerType, context: Self.Context)](uiviewcontrollerrepresentable/updateuiviewcontroller(_:context:).md)
+- [func updateUIViewController(Self.UIViewControllerType, context: Self.Context)](./updateuiviewcontroller%28_,context%29.md)
   Updates the state of the specified view controller with new information from SwiftUI.
-- [associatedtype UIViewControllerType : UIViewController](uiviewcontrollerrepresentable/uiviewcontrollertype.md)
+- [associatedtype UIViewControllerType : UIViewController](./uiviewcontrollertype.md)
   The type of view controller to present.
 
 

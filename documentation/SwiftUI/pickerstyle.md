@@ -1,7 +1,8 @@
 # PickerStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the appearance and interaction of all pickers within a view hierarchy.
 
@@ -23,67 +24,68 @@ protocol PickerStyle
 ## Topics
 
 ### Getting built-in picker styles
-- [static var automatic: DefaultPickerStyle](pickerstyle/automatic.md)
+- [static var automatic: DefaultPickerStyle](./pickerstyle/automatic.md)
   The default picker style, based on the picker’s context.
-- [static var inline: InlinePickerStyle](pickerstyle/inline.md)
+- [static var inline: InlinePickerStyle](./pickerstyle/inline.md)
   A `PickerStyle` where each option is displayed inline with other views in the current container.
-- [static var menu: MenuPickerStyle](pickerstyle/menu.md)
+- [static var menu: MenuPickerStyle](./pickerstyle/menu.md)
   A picker style that presents the options as a menu when the user presses a button, or as a submenu when nested within a larger menu.
-- [static var navigationLink: NavigationLinkPickerStyle](pickerstyle/navigationlink.md)
+- [static var navigationLink: NavigationLinkPickerStyle](./pickerstyle/navigationlink.md)
   A picker style represented by a navigation link that presents the options by pushing a List-style picker view.
-- [static var palette: PalettePickerStyle](pickerstyle/palette.md)
+- [static var palette: PalettePickerStyle](./pickerstyle/palette.md)
   A picker style that presents the options as a row of compact elements.
-- [static var radioGroup: RadioGroupPickerStyle](pickerstyle/radiogroup.md)
+- [static var radioGroup: RadioGroupPickerStyle](./pickerstyle/radiogroup.md)
   A picker style that presents the options as a group of radio buttons.
-- [static var segmented: SegmentedPickerStyle](pickerstyle/segmented.md)
+- [static var segmented: SegmentedPickerStyle](./pickerstyle/segmented.md)
   A picker style that presents the options in a segmented control.
-- [static var tabs: TabsPickerStyle](pickerstyle/tabs.md)
+- [static var tabs: TabsPickerStyle](./pickerstyle/tabs.md)
   A picker style that presents options as segmented tabs.
-- [static var wheel: WheelPickerStyle](pickerstyle/wheel.md)
+- [static var wheel: WheelPickerStyle](./pickerstyle/wheel.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 ### Supporting types
-- [struct DefaultPickerStyle](defaultpickerstyle.md)
+- [struct DefaultPickerStyle](./defaultpickerstyle.md)
   The default picker style, based on the picker’s context.
-- [struct InlinePickerStyle](inlinepickerstyle.md)
+- [struct InlinePickerStyle](./inlinepickerstyle.md)
   A `PickerStyle` where each option is displayed inline with other views in the current container.
-- [struct MenuPickerStyle](menupickerstyle.md)
+- [struct MenuPickerStyle](./menupickerstyle.md)
   A picker style that presents the options as a menu when the user presses a button, or as a submenu when nested within a larger menu.
-- [struct NavigationLinkPickerStyle](navigationlinkpickerstyle.md)
+- [struct NavigationLinkPickerStyle](./navigationlinkpickerstyle.md)
   A picker style represented by a navigation link that presents the options by pushing a List-style picker view.
-- [struct PalettePickerStyle](palettepickerstyle.md)
+- [struct PalettePickerStyle](./palettepickerstyle.md)
   A picker style that presents the options as a row of compact elements.
-- [struct RadioGroupPickerStyle](radiogrouppickerstyle.md)
+- [struct RadioGroupPickerStyle](./radiogrouppickerstyle.md)
   A picker style that presents the options as a group of radio buttons.
-- [struct SegmentedPickerStyle](segmentedpickerstyle.md)
+- [struct SegmentedPickerStyle](./segmentedpickerstyle.md)
   A picker style that presents the options in a segmented control.
-- [struct TabsPickerStyle](tabspickerstyle.md)
+- [struct TabsPickerStyle](./tabspickerstyle.md)
   A picker style that presents options as segmented tabs.
-- [struct WheelPickerStyle](wheelpickerstyle.md)
+- [struct WheelPickerStyle](./wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
-- [struct PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
+- [struct PopUpButtonPickerStyle](./popupbuttonpickerstyle.md)
   A picker style that presents the options as a menu when the user presses a button.
 
 ## Relationships
 
 ### Conforming Types
-- [DefaultPickerStyle](defaultpickerstyle.md)
-- [InlinePickerStyle](inlinepickerstyle.md)
-- [MenuPickerStyle](menupickerstyle.md)
-- [NavigationLinkPickerStyle](navigationlinkpickerstyle.md)
-- [PalettePickerStyle](palettepickerstyle.md)
-- [PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
-- [RadioGroupPickerStyle](radiogrouppickerstyle.md)
-- [SegmentedPickerStyle](segmentedpickerstyle.md)
-- [TabsPickerStyle](tabspickerstyle.md)
-- [WheelPickerStyle](wheelpickerstyle.md)
+- [DefaultPickerStyle](./defaultpickerstyle.md)
+- [InlinePickerStyle](./inlinepickerstyle.md)
+- [MenuPickerStyle](./menupickerstyle.md)
+- [NavigationLinkPickerStyle](./navigationlinkpickerstyle.md)
+- [PalettePickerStyle](./palettepickerstyle.md)
+- [PopUpButtonPickerStyle](./popupbuttonpickerstyle.md)
+- [RadioGroupPickerStyle](./radiogrouppickerstyle.md)
+- [SegmentedPickerStyle](./segmentedpickerstyle.md)
+- [TabsPickerStyle](./tabspickerstyle.md)
+- [WheelPickerStyle](./wheelpickerstyle.md)
 
 ## See Also
 
-- [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
+### Styling pickers
+- [func pickerStyle<S>(S) -> some View](./view/pickerstyle%28_%29.md)
   Sets the style for pickers within this view.
-- [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
+- [func datePickerStyle<S>(S) -> some View](./view/datepickerstyle%28_%29.md)
   Sets the style for date pickers within this view.
-- [protocol DatePickerStyle](datepickerstyle.md)
+- [protocol DatePickerStyle](./datepickerstyle.md)
   A type that specifies the appearance and interaction of all date pickers within a view hierarchy.
 
 

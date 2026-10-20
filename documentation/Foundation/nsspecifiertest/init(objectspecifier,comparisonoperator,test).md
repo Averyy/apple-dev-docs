@@ -1,7 +1,8 @@
 # init(objectSpecifier:comparisonOperator:test:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a specifier test initialized to evaluate a test object against an object specified by an object specifier using a given comparison operation.
 
@@ -13,6 +14,10 @@ Returns a specifier test initialized to evaluate a test object against an object
 
 ```swift
 init(objectSpecifier obj1: NSScriptObjectSpecifier?, comparisonOperator compOp: NSSpecifierTest.TestComparisonOperation, test obj2: Any?)
+```
+
+```objc
+- (instancetype) initWithObjectSpecifier:(NSScriptObjectSpecifier *) obj1 comparisonOperator:(NSTestComparisonOperation) compOp testObject:(id) obj2;
 ```
 
 #### Return Value
@@ -27,7 +32,8 @@ A specifier test initialized to evaluate (`obj2`) against an object specified by
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

@@ -1,7 +1,8 @@
 # kMDItemDisplayName
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The localized version of the file name.  A CFString.
 
@@ -14,9 +15,13 @@ The localized version of the file name.  A CFString.
 let kMDItemDisplayName: CFString!
 ```
 
+```c
+const CFStringRef kMDItemDisplayName;
+```
+
 #### Discussion
 
-This is the localized version of the LaunchServices call [`LSCopyDisplayNameForURL(_:_:)`](1446850-lscopydisplaynameforurl.md)/[`LSCopyDisplayNameForRef(_:_:)`](1442576-lscopydisplaynameforref.md).
+This is the localized version of the LaunchServices call [`LSCopyDisplayNameForURL(_:_:)`](./api-1446850-lscopydisplaynameforurl.md)/[`LSCopyDisplayNameForRef(_:_:)`](./api-1442576-lscopydisplaynameforref.md).
 
 
 ---

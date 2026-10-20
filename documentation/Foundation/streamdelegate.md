@@ -1,7 +1,8 @@
 # StreamDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that delegates of a stream instance use to handle events on the stream.
 
@@ -20,28 +21,33 @@ An interface that delegates of a stream instance use to handle events on the str
 protocol StreamDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSStreamDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](./uploading-streams-of-data.md)
 
 ## Topics
 
 ### Using Streams
-- [func stream(Stream, handle: Stream.Event)](streamdelegate/stream(_:handle:).md)
+- [func stream(Stream, handle: Stream.Event)](./streamdelegate/stream%28_,handle%29.md)
   The delegate receives this message when a given event has occurred on a given stream.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class Stream](stream.md)
+### Streams
+- [class Stream](./stream.md)
   An abstract class representing a stream.
-- [class InputStream](inputstream.md)
+- [class InputStream](./inputstream.md)
   A stream that provides read-only stream functionality.
-- [class OutputStream](outputstream.md)
+- [class OutputStream](./outputstream.md)
   A stream that provides write-only stream functionality.
 
 

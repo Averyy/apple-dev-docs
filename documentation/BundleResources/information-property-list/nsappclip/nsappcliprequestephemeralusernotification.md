@@ -1,7 +1,8 @@
 # NSAppClipRequestEphemeralUserNotification
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether an App Clip can schedule or receive notifications for a limited amount of time.
 
@@ -9,13 +10,14 @@ A Boolean value that indicates whether an App Clip can schedule or receive notif
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSAppClipRequestEphemeralUserNotification` (Requests ephemeral user notifications)
+- **Type**: boolean
 
 #### Discussion
 
-Set the corresponding value to `true` to enable your App Clip to schedule or receive notifications for up to 8 hours after each launch. For more information, see [`Enabling notifications in App Clips`](https://developer.apple.com/documentation/appclip/enabling-notifications-in-app-clips).
+Set the corresponding value to `true` to enable your App Clip to schedule or receive notifications for up to 8 hours after each launch. For more information, see [Enabling notifications in App Clips](../../../AppClip/enabling-notifications-in-app-clips.md).
 
 
 ---

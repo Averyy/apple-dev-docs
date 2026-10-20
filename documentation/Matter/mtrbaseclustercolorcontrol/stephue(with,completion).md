@@ -1,7 +1,8 @@
 # stepHue(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stepHue(with params: MTRColorControlClusterStepHueParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stepHue(with params: MTRColorControlClusterStepHueParams) async throws
+```
+
+```objc
+- (void) stepHueWithParams:(MTRColorControlClusterStepHueParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # primaryDSTU2()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the primary Second Draft Standard for Trial Use (DSTU2) version.
 
@@ -18,11 +19,16 @@ Returns the primary Second Draft Standard for Trial Use (DSTU2) version.
 class func primaryDSTU2() -> Self
 ```
 
+```objc
++ (instancetype) primaryDSTU2Version;
+```
+
 ## See Also
 
-- [convenience init(fromVersionString: String) throws](hkfhirversion/init(fromversionstring:).md)
+### Creating Version Objects
+- [convenience init(fromVersionString: String) throws](./init%28fromversionstring%29.md)
   Creates an FHIR version object from a string representation of the version.
-- [class func primaryR4() -> Self](hkfhirversion/primaryr4.md)
+- [class func primaryR4() -> Self](./primaryr4%28%29.md)
   Returns the primary Release 4 (R4) version.
 
 

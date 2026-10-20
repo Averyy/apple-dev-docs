@@ -1,7 +1,8 @@
 # isOrdered
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the list is ordered.
 
@@ -19,11 +20,16 @@ A Boolean value that indicates whether the list is ordered.
 var isOrdered: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isOrdered) BOOL ordered;
+```
+
 ## See Also
 
-- [var listOptions: NSTextList.Options](nstextlist/listoptions.md)
+### Getting list options
+- [var listOptions: NSTextList.Options](./listoptions.md)
   Returns the list options mask value of the receiver.
-- [NSTextList.Options](nstextlist/options.md)
+- [NSTextList.Options](./options.md)
   Values that available options for text list items.
 
 

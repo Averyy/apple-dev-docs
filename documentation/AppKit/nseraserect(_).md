@@ -1,17 +1,22 @@
 # NSEraseRect(_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Erases the specified rect by filling it with white.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func NSEraseRect(_ rect: NSRect)
+```
+
+```c
+extern void NSEraseRect(NSRect rect);
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ This function fills the specified rectangle with white. It does not alter the cu
 
 ## See Also
 
-- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](nsdrawtiledrects(_:_:_:_:_:).md)
+### Drawing Rectangles
+- [func NSDrawTiledRects(NSRect, NSRect, UnsafePointer<NSRectEdge>, UnsafePointer<CGFloat>, Int) -> NSRect](./nsdrawtiledrects%28_,_,_,_,_%29.md)
   Draws rectangles with borders.
-- [func NSDrawGroove(NSRect, NSRect)](nsdrawgroove(_:_:).md)
+- [func NSDrawGroove(NSRect, NSRect)](./nsdrawgroove%28_,_%29.md)
   Draws a gray-filled rectangle with a groove border.
 
 

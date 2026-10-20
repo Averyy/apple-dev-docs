@@ -1,7 +1,8 @@
 # AVAudioUnitDelay
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that implements a delay effect.
 
@@ -19,6 +20,10 @@ An object that implements a delay effect.
 class AVAudioUnitDelay
 ```
 
+```objc
+@interface AVAudioUnitDelay : AVAudioUnitEffect
+```
+
 #### Overview
 
 A delay unit delays the input signal by the specified time interval and then blends it with the input signal. You can also control the amount of high-frequency roll-off to simulate the effect of a tape delay.
@@ -26,38 +31,39 @@ A delay unit delays the input signal by the specified time interval and then ble
 ## Topics
 
 ### Configuring the delay
-- [var delayTime: TimeInterval](avaudiounitdelay/delaytime.md)
+- [var delayTime: TimeInterval](./avaudiounitdelay/delaytime.md)
   The time for the input signal to reach the output.
-- [var feedback: Float](avaudiounitdelay/feedback.md)
+- [var feedback: Float](./avaudiounitdelay/feedback.md)
   The amount of the output signal that feeds back into the delay line.
-- [var lowPassCutoff: Float](avaudiounitdelay/lowpasscutoff.md)
+- [var lowPassCutoff: Float](./avaudiounitdelay/lowpasscutoff.md)
   The cutoff frequency above which high frequency content rolls off, in hertz.
-- [var wetDryMix: Float](avaudiounitdelay/wetdrymix.md)
+- [var wetDryMix: Float](./avaudiounitdelay/wetdrymix.md)
   The blend of the wet and dry signals.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioUnitEffect](avaudiouniteffect.md)
+- [AVAudioUnitEffect](./avaudiouniteffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioUnitEQ](avaudiouniteq.md)
+### Audio effects
+- [class AVAudioUnitEQ](./avaudiouniteq.md)
   An object that implements a multiband equalizer.
-- [class AVAudioUnitDistortion](avaudiounitdistortion.md)
+- [class AVAudioUnitDistortion](./avaudiounitdistortion.md)
   An object that implements a multistage distortion effect.
-- [class AVAudioUnitReverb](avaudiounitreverb.md)
+- [class AVAudioUnitReverb](./avaudiounitreverb.md)
   An object that implements a reverb effect.
-- [class AVAudioUnitEffect](avaudiouniteffect.md)
+- [class AVAudioUnitEffect](./avaudiouniteffect.md)
   An object that processes audio in real time.
 
 

@@ -1,12 +1,15 @@
 # bodyTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display in the body line.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,9 +18,14 @@ The text to display in the body line.
 var bodyTextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * bodyTextProvider;
+```
+
 ## See Also
 
-- [var headerTextProvider: CLKTextProvider](clkcomplicationtemplatemodularlargetallbody/headertextprovider.md)
+### Setting the Complication Data
+- [var headerTextProvider: CLKTextProvider](./headertextprovider.md)
   The text to display in the header line.
 
 

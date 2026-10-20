@@ -1,20 +1,22 @@
 # MS_Mid
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 MS_Mid
 ```
 
 ## See Also
 
-- [MS_Side](videodriverkit/iouservideochannellabel/ms_side.md)
+### Mid/side recording
+- [MS_Side](./ms_side.md)
 
 
 ---

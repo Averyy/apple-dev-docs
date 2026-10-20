@@ -1,13 +1,14 @@
 # USDPreviewSession.SpatialViewerOptions
 
 **Framework**: Spatial Preview  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options that control interaction capabilities for a USD document session.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,29 +23,29 @@ Use these options to specify what features are available to users during a remot
 ## Topics
 
 ### Instance Properties
-- [var description: String](usdpreviewsession/spatialvieweroptions/description.md)
+- [var description: String](./spatialvieweroptions/description.md)
   A human-readable description of the enabled options.
 ### Type Properties
-- [static let annotations: USDPreviewSession.SpatialViewerOptions](usdpreviewsession/spatialvieweroptions/annotations.md)
+- [static let annotations: USDPreviewSession.SpatialViewerOptions](./spatialvieweroptions/annotations.md)
   Enables annotation capabilities during the `USDPreviewSession`.
-- [static let `default`: USDPreviewSession.SpatialViewerOptions](usdpreviewsession/spatialvieweroptions/default.md)
+- [static let `default`: USDPreviewSession.SpatialViewerOptions](./spatialvieweroptions/default.md)
   The default configuration enabling all available interaction capabilities.
-- [static let export: USDPreviewSession.SpatialViewerOptions](usdpreviewsession/spatialvieweroptions/export.md)
+- [static let export: USDPreviewSession.SpatialViewerOptions](./spatialvieweroptions/export.md)
   Enables export capabilities during the `USDPreviewSession`
-- [static let perObjectManipulation: USDPreviewSession.SpatialViewerOptions](usdpreviewsession/spatialvieweroptions/perobjectmanipulation.md)
+- [static let perObjectManipulation: USDPreviewSession.SpatialViewerOptions](./spatialvieweroptions/perobjectmanipulation.md)
   Enables per-object manipulation capabilities during the `USDPreviewSession`.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

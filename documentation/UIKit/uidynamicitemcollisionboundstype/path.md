@@ -1,9 +1,10 @@
 # UIDynamicItemCollisionBoundsType.path
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Path-based collision bounds. For this type, the shape is a [`UIBezierPath`](uibezierpath.md) object stored in the item’s [`collisionBoundingPath`](uidynamicitem/collisionboundingpath.md) property. See the description of that property for information about how to configure the path itself.
+Path-based collision bounds. For this type, the shape is a [`UIBezierPath`](../uibezierpath.md) object stored in the item’s [`collisionBoundingPath`](../uidynamicitem/collisionboundingpath.md) property. See the description of that property for information about how to configure the path itself.
 
 **Availability**:
 - iOS 9.0+
@@ -18,12 +19,17 @@ Path-based collision bounds. For this type, the shape is a [`UIBezierPath`](uibe
 case path
 ```
 
+```c
+UIDynamicItemCollisionBoundsTypePath
+```
+
 ## See Also
 
-- [UIDynamicItemCollisionBoundsType.rectangle](uidynamicitemcollisionboundstype/rectangle.md)
+### Constants
+- [UIDynamicItemCollisionBoundsType.rectangle](./rectangle.md)
   Rectangular collision bounds.
-- [UIDynamicItemCollisionBoundsType.ellipse](uidynamicitemcollisionboundstype/ellipse.md)
-  Elliptical collision bounds. The shape of the ellipse is determined by the width and height of the item’s [`bounds`](uidynamicitem/bounds.md) property.
+- [UIDynamicItemCollisionBoundsType.ellipse](./ellipse.md)
+  Elliptical collision bounds. The shape of the ellipse is determined by the width and height of the item’s [`bounds`](../uidynamicitem/bounds.md) property.
 
 
 ---

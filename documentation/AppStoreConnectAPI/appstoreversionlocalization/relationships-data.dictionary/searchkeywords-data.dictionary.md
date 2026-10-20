@@ -1,21 +1,22 @@
 # AppStoreVersionLocalization.Relationships.SearchKeywords
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalization.Relationships.SearchKeywords
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppStoreVersionLocalization.Relationships.SearchKeywords.Data](appstoreversionlocalization/relationships-data.dictionary/searchkeywords-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionLocalization.Relationships.SearchKeywords.Data](./searchkeywords-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

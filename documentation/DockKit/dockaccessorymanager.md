@@ -1,7 +1,8 @@
 # DockAccessoryManager
 
 **Framework**: DockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Observe the state of dock accessories and enable or disable system tracking.
 
@@ -19,37 +20,38 @@ class DockAccessoryManager
 
 #### Overview
 
-`DockAccessoryManager`  enables and disables system tracking for camera-enabled apps, and provides docking and undocking notifications. If you want to customize the tracking behavior of a dock accessory, use [`accessoryStateChanges`](dockaccessorymanager/accessorystatechanges.md) to obtain that accessory.
+`DockAccessoryManager`  enables and disables system tracking for camera-enabled apps, and provides docking and undocking notifications. If you want to customize the tracking behavior of a dock accessory, use [`accessoryStateChanges`](./dockaccessorymanager/accessorystatechanges.md) to obtain that accessory.
 
-This class is a singleton, so use [`shared`](dockaccessorymanager/shared.md) to fetch the single instance.
+This class is a singleton, so use [`shared`](./dockaccessorymanager/shared.md) to fetch the single instance.
 
 ## Topics
 
 ### Obtaining a manager
-- [static let shared: DockAccessoryManager](dockaccessorymanager/shared.md)
+- [static let shared: DockAccessoryManager](./dockaccessorymanager/shared.md)
   The accessory manager singleton object.
 ### Controlling dock accessories
-- [var accessoryStateChanges: DockAccessory.StateChanges](dockaccessorymanager/accessorystatechanges.md)
+- [var accessoryStateChanges: DockAccessory.StateChanges](./dockaccessorymanager/accessorystatechanges.md)
   Obtain a reference to a dock accessory and receive notifications about its state.
 ### Changing tracking behavior
-- [var isSystemTrackingEnabled: Bool](dockaccessorymanager/issystemtrackingenabled.md)
+- [var isSystemTrackingEnabled: Bool](./dockaccessorymanager/issystemtrackingenabled.md)
   An indication of whether system tracking is enabled.
-- [func setSystemTrackingEnabled(Bool) async throws](dockaccessorymanager/setsystemtrackingenabled(_:).md)
+- [func setSystemTrackingEnabled(Bool) async throws](./dockaccessorymanager/setsystemtrackingenabled%28_%29.md)
   Enable and disable system tracking for camera-enabled apps.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Controlling a DockKit accessory using your camera app](controlling-a-dockkit-accessory-using-your-camera-app.md)
+### Controlling the dock accessory
+- [Controlling a DockKit accessory using your camera app](./controlling-a-dockkit-accessory-using-your-camera-app.md)
   Follow subjects in real time using an iPhone that you mount on a DockKit accessory.
-- [class DockAccessory](dockaccessory.md)
+- [class DockAccessory](./dockaccessory.md)
   Obtain accessory information and control tracking behavior.
-- [enum DockKitError](dockkiterror.md)
+- [enum DockKitError](./dockkiterror.md)
   A list of errors that DockKit sends.
 
 

@@ -1,17 +1,20 @@
 # obliqueness
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing an obliqueness attribute.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
+- iOS 15.0+ - Deprecated in 27.2
+- iPadOS 15.0+ - Deprecated in 27.2
+- Mac Catalyst 15.0+ - Deprecated in 27.2
 - tvOS 15.0+
 - visionOS 1.0+
 - watchOS 8.0+
+
+> **Deprecated**: This attribute is not supported with TextKit 2
 
 ## Declaration
 
@@ -21,25 +24,26 @@ let obliqueness: AttributeScopes.UIKitAttributes.ObliquenessAttribute
 
 ## See Also
 
-- [let baselineOffset: AttributeScopes.UIKitAttributes.BaselineOffsetAttribute](attributescopes/uikitattributes/baselineoffset.md)
+### Using Text Styling Attributes
+- [let baselineOffset: AttributeScopes.UIKitAttributes.BaselineOffsetAttribute](./baselineoffset.md)
   A property for accessing a baseline offset attribute.
-- [let paragraphStyle: AttributeScopes.UIKitAttributes.ParagraphStyleAttribute](attributescopes/uikitattributes/paragraphstyle.md)
+- [let paragraphStyle: AttributeScopes.UIKitAttributes.ParagraphStyleAttribute](./paragraphstyle.md)
   A property for accessing a paragraph style attribute.
-- [let shadow: AttributeScopes.UIKitAttributes.ShadowAttribute](attributescopes/uikitattributes/shadow.md)
+- [let shadow: AttributeScopes.UIKitAttributes.ShadowAttribute](./shadow.md)
   A property for accessing a shadow attribute.
-- [let strikethroughColor: AttributeScopes.UIKitAttributes.StrikethroughColorAttribute](attributescopes/uikitattributes/strikethroughcolor.md)
+- [let strikethroughColor: AttributeScopes.UIKitAttributes.StrikethroughColorAttribute](./strikethroughcolor.md)
   A property for accessing a strikethrough color attribute.
-- [let strikethroughStyle: AttributeScopes.UIKitAttributes.StrikethroughStyleAttribute](attributescopes/uikitattributes/strikethroughstyle.md)
+- [let strikethroughStyle: AttributeScopes.UIKitAttributes.StrikethroughStyleAttribute](./strikethroughstyle.md)
   A property for accessing a strikethrough style attribute.
-- [let strokeColor: AttributeScopes.UIKitAttributes.StrokeColorAttribute](attributescopes/uikitattributes/strokecolor.md)
+- [let strokeColor: AttributeScopes.UIKitAttributes.StrokeColorAttribute](./strokecolor.md)
   A property for accessing a stroke color attribute.
-- [let strokeWidth: AttributeScopes.UIKitAttributes.StrokeWidthAttribute](attributescopes/uikitattributes/strokewidth.md)
+- [let strokeWidth: AttributeScopes.UIKitAttributes.StrokeWidthAttribute](./strokewidth.md)
   A property for accessing a stroke width attribute.
-- [let textEffect: AttributeScopes.UIKitAttributes.TextEffectAttribute](attributescopes/uikitattributes/texteffect.md)
+- [let textEffect: AttributeScopes.UIKitAttributes.TextEffectAttribute](./texteffect.md)
   A property for accessing a text effect attribute.
-- [let underlineColor: AttributeScopes.UIKitAttributes.UnderlineColorAttribute](attributescopes/uikitattributes/underlinecolor.md)
+- [let underlineColor: AttributeScopes.UIKitAttributes.UnderlineColorAttribute](./underlinecolor.md)
   A property for accessing an underline color attribute.
-- [let underlineStyle: AttributeScopes.UIKitAttributes.UnderlineStyleAttribute](attributescopes/uikitattributes/underlinestyle.md)
+- [let underlineStyle: AttributeScopes.UIKitAttributes.UnderlineStyleAttribute](./underlinestyle.md)
   A property for accessing an underline style attribute.
 
 

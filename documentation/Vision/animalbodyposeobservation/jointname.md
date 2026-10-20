@@ -1,7 +1,8 @@
 # AnimalBodyPoseObservation.JointName
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The joint names for an animal body pose.
 
@@ -22,48 +23,49 @@ enum JointName
 ## Topics
 
 ### Getting the joint names
-- [AnimalBodyPoseObservation.JointName.leftBackElbow](animalbodyposeobservation/jointname/leftbackelbow.md)
-- [AnimalBodyPoseObservation.JointName.leftBackKnee](animalbodyposeobservation/jointname/leftbackknee.md)
-- [AnimalBodyPoseObservation.JointName.leftBackPaw](animalbodyposeobservation/jointname/leftbackpaw.md)
-- [AnimalBodyPoseObservation.JointName.leftEarBottom](animalbodyposeobservation/jointname/leftearbottom.md)
-- [AnimalBodyPoseObservation.JointName.leftEarMiddle](animalbodyposeobservation/jointname/leftearmiddle.md)
-- [AnimalBodyPoseObservation.JointName.leftEarTop](animalbodyposeobservation/jointname/lefteartop.md)
-- [AnimalBodyPoseObservation.JointName.leftEye](animalbodyposeobservation/jointname/lefteye.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontElbow](animalbodyposeobservation/jointname/leftfrontelbow.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontKnee](animalbodyposeobservation/jointname/leftfrontknee.md)
-- [AnimalBodyPoseObservation.JointName.leftFrontPaw](animalbodyposeobservation/jointname/leftfrontpaw.md)
-- [AnimalBodyPoseObservation.JointName.neck](animalbodyposeobservation/jointname/neck.md)
-- [AnimalBodyPoseObservation.JointName.nose](animalbodyposeobservation/jointname/nose.md)
-- [AnimalBodyPoseObservation.JointName.rightBackElbow](animalbodyposeobservation/jointname/rightbackelbow.md)
-- [AnimalBodyPoseObservation.JointName.rightBackKnee](animalbodyposeobservation/jointname/rightbackknee.md)
-- [AnimalBodyPoseObservation.JointName.rightBackPaw](animalbodyposeobservation/jointname/rightbackpaw.md)
-- [AnimalBodyPoseObservation.JointName.rightEarBottom](animalbodyposeobservation/jointname/rightearbottom.md)
-- [AnimalBodyPoseObservation.JointName.rightEarMiddle](animalbodyposeobservation/jointname/rightearmiddle.md)
-- [AnimalBodyPoseObservation.JointName.rightEarTop](animalbodyposeobservation/jointname/righteartop.md)
-- [AnimalBodyPoseObservation.JointName.rightEye](animalbodyposeobservation/jointname/righteye.md)
-- [AnimalBodyPoseObservation.JointName.rightFrontElbow](animalbodyposeobservation/jointname/rightfrontelbow.md)
-- [AnimalBodyPoseObservation.JointName.rightFrontKnee](animalbodyposeobservation/jointname/rightfrontknee.md)
-- [AnimalBodyPoseObservation.JointName.rightFrontPaw](animalbodyposeobservation/jointname/rightfrontpaw.md)
-- [AnimalBodyPoseObservation.JointName.tailBottom](animalbodyposeobservation/jointname/tailbottom.md)
-- [AnimalBodyPoseObservation.JointName.tailMiddle](animalbodyposeobservation/jointname/tailmiddle.md)
-- [AnimalBodyPoseObservation.JointName.tailTop](animalbodyposeobservation/jointname/tailtop.md)
+- [AnimalBodyPoseObservation.JointName.leftBackElbow](./jointname/leftbackelbow.md)
+- [AnimalBodyPoseObservation.JointName.leftBackKnee](./jointname/leftbackknee.md)
+- [AnimalBodyPoseObservation.JointName.leftBackPaw](./jointname/leftbackpaw.md)
+- [AnimalBodyPoseObservation.JointName.leftEarBottom](./jointname/leftearbottom.md)
+- [AnimalBodyPoseObservation.JointName.leftEarMiddle](./jointname/leftearmiddle.md)
+- [AnimalBodyPoseObservation.JointName.leftEarTop](./jointname/lefteartop.md)
+- [AnimalBodyPoseObservation.JointName.leftEye](./jointname/lefteye.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontElbow](./jointname/leftfrontelbow.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontKnee](./jointname/leftfrontknee.md)
+- [AnimalBodyPoseObservation.JointName.leftFrontPaw](./jointname/leftfrontpaw.md)
+- [AnimalBodyPoseObservation.JointName.neck](./jointname/neck.md)
+- [AnimalBodyPoseObservation.JointName.nose](./jointname/nose.md)
+- [AnimalBodyPoseObservation.JointName.rightBackElbow](./jointname/rightbackelbow.md)
+- [AnimalBodyPoseObservation.JointName.rightBackKnee](./jointname/rightbackknee.md)
+- [AnimalBodyPoseObservation.JointName.rightBackPaw](./jointname/rightbackpaw.md)
+- [AnimalBodyPoseObservation.JointName.rightEarBottom](./jointname/rightearbottom.md)
+- [AnimalBodyPoseObservation.JointName.rightEarMiddle](./jointname/rightearmiddle.md)
+- [AnimalBodyPoseObservation.JointName.rightEarTop](./jointname/righteartop.md)
+- [AnimalBodyPoseObservation.JointName.rightEye](./jointname/righteye.md)
+- [AnimalBodyPoseObservation.JointName.rightFrontElbow](./jointname/rightfrontelbow.md)
+- [AnimalBodyPoseObservation.JointName.rightFrontKnee](./jointname/rightfrontknee.md)
+- [AnimalBodyPoseObservation.JointName.rightFrontPaw](./jointname/rightfrontpaw.md)
+- [AnimalBodyPoseObservation.JointName.tailBottom](./jointname/tailbottom.md)
+- [AnimalBodyPoseObservation.JointName.tailMiddle](./jointname/tailmiddle.md)
+- [AnimalBodyPoseObservation.JointName.tailTop](./jointname/tailtop.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AnimalBodyPoseObservation.JointsGroupName](animalbodyposeobservation/jointsgroupname.md)
+### Getting the joints
+- [AnimalBodyPoseObservation.JointsGroupName](./jointsgroupname.md)
   The joint group names for an animal body pose.
 
 

@@ -1,7 +1,8 @@
 # UserLocation
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains Information about the person’s current location.
 
@@ -11,7 +12,7 @@ A structure that contains Information about the person’s current location.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,9 +24,9 @@ struct UserLocation
 ## Topics
 
 ### Accessing the user’s location and heading
-- [var heading: CLHeading?](userlocation/heading.md)
+- [var heading: CLHeading?](./userlocation/heading.md)
   A value that indicates the heading of the person’s device.
-- [var location: CLLocation?](userlocation/location.md)
+- [var location: CLLocation?](./userlocation/location.md)
   An object that describes the current location of the persons’s device, including the latitude and longitude.
 
 

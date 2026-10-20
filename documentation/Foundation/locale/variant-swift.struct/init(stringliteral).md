@@ -1,7 +1,8 @@
 # init(stringLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a variant from a BCP 47 identifier as a string literal.
 
@@ -26,7 +27,8 @@ init(stringLiteral value: String)
 
 ## See Also
 
-- [init(String)](locale/variant-swift.struct/init(_:).md)
+### Creating a variant
+- [init(String)](./init%28_%29.md)
   Creates a variant from a BCP 47 identifier.
 
 

@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -20,6 +21,8 @@ The hash value.
 var hashValue: Int { get }
 ```
 
+Available when `Bound` conforms to `Comparable` and `Hashable`.
+
 #### Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
@@ -28,7 +31,8 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [init(uncheckedBounds: (lower: Bound, upper: Bound))](closedrange/init(uncheckedbounds:).md)
+### Infrequently Used Functionality
+- [init(uncheckedBounds: (lower: Bound, upper: Bound))](./init%28uncheckedbounds%29.md)
   Creates an instance with the given bounds.
 
 

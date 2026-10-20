@@ -1,22 +1,24 @@
 # setSurfaceDimensions
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setSurfaceDimensions(OSDictionary *properties);
 ```
 
 ## See Also
 
-- [setAccelerationProperties](iouserhideventdriver/setaccelerationproperties.md)
-- [setTipThreshold](iouserhideventdriver/settipthreshold.md)
+### Configuring Private Properties
+- [setAccelerationProperties](./setaccelerationproperties.md)
+- [setTipThreshold](./settipthreshold.md)
 
 
 ---

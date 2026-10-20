@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a nonempty collection.
 

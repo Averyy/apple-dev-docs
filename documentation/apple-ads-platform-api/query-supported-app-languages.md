@@ -1,7 +1,8 @@
 # Query Supported App Languages
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query countries and regions to discover the ad-supported languages available in each market.
 
@@ -20,7 +21,7 @@ Use this endpoint to:
 
 An empty request body returns all supported countries and regions with default pagination. To scope results to specific country codes, use `filters`. To order results alphabetically, use `sorting`.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -29,7 +30,7 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `countryCode` | string | `EQUALS`, `NOT_EQUALS`, `IN` | Yes | ISO 3166-1 alpha-2 country code (for example, `US`, `GB`, `CA`) |
 | `name` | string | `EQUALS`, `NOT_EQUALS`, `IN`, `STARTS_WITH`, `ENDS_WITH`, `LIKE` | Yes | Full country or region name |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 Each result row includes the following fields:
 
@@ -312,13 +313,30 @@ POST /v1/metadata/apps/supported-languages/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`AppSupportedLanguagesQueryResponse`, `application/json`)
+- `400` Bad Request (`AppSupportedLanguagesQueryResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Search for Apps](searches-for-a-list-of-apps.md)
+- [Search for Apps](./searches-for-a-list-of-apps.md)
   Search the App Store for apps matching the supplied criteria and return app details.
-- [Get App Details by Adam ID](get-app-details-by-adam-id.md)
+- [Get App Details by Adam ID](./get-app-details-by-adam-id.md)
   Retrieve application details for a specific Adam ID.
 
 

@@ -1,7 +1,8 @@
 # generate(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a mesh resource from contents.
 
@@ -11,7 +12,7 @@ Create a mesh resource from contents.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,19 +21,27 @@ Create a mesh resource from contents.
 @preconcurrency static func generate(from content: MeshResource.Contents) throws -> MeshResource
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func generate(from descriptors: [MeshDescriptor]) throws -> MeshResource
+```
+
 ## See Also
 
-- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+### Creating a mesh resource
+- [convenience init(from: LowLevelMesh) async throws](./init%28from%29-1i7c9.md)
   Asynchronously creates a mesh resource from a low-level mesh.
-- [convenience init(from: LowLevelMesh) async throws](meshresource/init(from:)-1i7c9.md)
+- [convenience init(from: LowLevelMesh) async throws](./init%28from%29-1i7c9.md)
   Asynchronously creates a mesh resource from a low-level mesh.
-- [convenience init(shape: ShapeResource)](meshresource/init(shape:)-3rtda.md)
+- [convenience init(shape: ShapeResource)](./init%28shape%29-3rtda.md)
   Generates a MeshResource from a ShapeResource.
-- [convenience init(shape: ShapeResource)](meshresource/init(shape:)-3rtda.md)
+- [convenience init(shape: ShapeResource)](./init%28shape%29-3rtda.md)
   Generates a MeshResource from a ShapeResource.
-- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/generateasync(from:)-1n2vv.md)
+- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](./generateasync%28from%29-1n2vv.md)
   Create a mesh resource from contents asynchronously.
-- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/generateasync(from:)-1n2vv.md)
+- [static func generateAsync(from: MeshResource.Contents) -> LoadRequest<MeshResource>](./generateasync%28from%29-1n2vv.md)
   Create a mesh resource from contents asynchronously.
 
 

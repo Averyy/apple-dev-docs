@@ -1,16 +1,17 @@
 # nfat_arch
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-An integer specifying the number of [`fat_arch`](fat_arch.md) data structures that follow. This is the number of architectures contained in this binary.
+An integer specifying the number of [`fat_arch`](../fat_arch.md) data structures that follow. This is the number of architectures contained in this binary.
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 uint32_t nfat_arch;
 ```
 

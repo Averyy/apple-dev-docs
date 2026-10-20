@@ -1,7 +1,8 @@
 # resumeAction(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func resumeAction(with params: MTRActionsClusterResumeActionParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func resumeAction(with params: MTRActionsClusterResumeActionParams) async throws
+```
+
+```objc
+- (void) resumeActionWithParams:(MTRActionsClusterResumeActionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

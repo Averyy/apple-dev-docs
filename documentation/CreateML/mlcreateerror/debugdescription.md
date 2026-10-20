@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable description of the error that’s suitable for output during debugging.
 
@@ -21,7 +22,8 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlcreateerror/description.md)
+### Describing errors
+- [var description: String](./description.md)
   A human-readable description of the error.
 
 

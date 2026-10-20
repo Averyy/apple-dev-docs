@@ -1,7 +1,8 @@
 # NSDecimalNumber.RoundingMode.bankers
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round to the closest possible return value; when halfway between two possibilities, return the possibility whose last digit is even.
 
@@ -20,17 +21,22 @@ Round to the closest possible return value; when halfway between two possibiliti
 case bankers
 ```
 
+```c
+NSRoundBankers
+```
+
 #### Discussion
 
 In practice, this means that, over the long run, numbers will be rounded up as often as they are rounded down; there will be no systematic bias.
 
 ## See Also
 
-- [NSDecimalNumber.RoundingMode.plain](nsdecimalnumber/roundingmode/plain.md)
+### Constants
+- [NSDecimalNumber.RoundingMode.plain](./plain.md)
   Round to the closest possible return value; when caught halfway between two positive numbers, round up; when caught between two negative numbers, round down.
-- [NSDecimalNumber.RoundingMode.down](nsdecimalnumber/roundingmode/down.md)
+- [NSDecimalNumber.RoundingMode.down](./down.md)
   Round return values down.
-- [NSDecimalNumber.RoundingMode.up](nsdecimalnumber/roundingmode/up.md)
+- [NSDecimalNumber.RoundingMode.up](./up.md)
   Round return values up.
 
 

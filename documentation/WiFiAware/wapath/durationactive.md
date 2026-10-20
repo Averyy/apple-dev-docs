@@ -1,7 +1,8 @@
 # durationActive
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that indicates a cumulative duration data path is connected on this Wi-Fi Aware path.
 

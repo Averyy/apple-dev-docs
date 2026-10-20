@@ -1,7 +1,8 @@
 # authorizationViewDidHide(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to indicate that the view’s visibility has changed.
 
@@ -14,9 +15,13 @@ Sent to the delegate to indicate that the view’s visibility has changed.
 func authorizationViewDidHide(_ view: SFAuthorizationView!)
 ```
 
+```objc
+- (void) authorizationViewDidHide:(SFAuthorizationView *) view;
+```
+
 #### Discussion
 
-This delegate method, if present, is called whenever the [`isHidden`](https://developer.apple.com/documentation/appkit/nsview/ishidden) method is called to show or hide the view.
+This delegate method, if present, is called whenever the [`isHidden`](../../AppKit/nsview/ishidden.md) method is called to show or hide the view.
 
 
 ---

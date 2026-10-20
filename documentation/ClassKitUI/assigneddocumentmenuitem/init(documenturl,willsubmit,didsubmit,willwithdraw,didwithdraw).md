@@ -1,7 +1,8 @@
 # init(documentURL:willSubmit:didSubmit:willWithdraw:didWithdraw:)
 
 **Framework**: ClassKit UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu item for assigned document submission.
 

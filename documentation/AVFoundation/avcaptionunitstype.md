@@ -1,20 +1,25 @@
 # AVCaptionUnitsType
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A structure that defines a units for caption formats.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 enum AVCaptionUnitsType
+```
+
+```c
+enum AVCaptionUnitsType : NSInteger;
 ```
 
 #### Overview
@@ -24,30 +29,31 @@ Some geometry values may use sizing and positioning with different units. In som
 ## Topics
 
 ### Unit types
-- [AVCaptionUnitsType.cells](avcaptionunitstype/cells.md)
+- [AVCaptionUnitsType.cells](./avcaptionunitstype/cells.md)
   A cell-based unit type.
-- [AVCaptionUnitsType.percent](avcaptionunitstype/percent.md)
+- [AVCaptionUnitsType.percent](./avcaptionunitstype/percent.md)
   A percentage-based unit type.
-- [AVCaptionUnitsType.unspecified](avcaptionunitstype/unspecified.md)
+- [AVCaptionUnitsType.unspecified](./avcaptionunitstype/unspecified.md)
   An unspecified unit type.
 ### Initializers
-- [init?(rawValue: Int)](avcaptionunitstype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avcaptionunitstype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var value: CGFloat](avcaptiondimension/value.md)
+### Inspecting the dimensions
+- [var value: CGFloat](./avcaptiondimension/value.md)
   The value of the coordinate or length.
-- [var units: AVCaptionUnitsType](avcaptiondimension/units.md)
+- [var units: AVCaptionUnitsType](./avcaptiondimension/units.md)
   The units of the coordinate, such as cells or points.
 
 

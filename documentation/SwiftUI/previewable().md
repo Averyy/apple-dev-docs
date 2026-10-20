@@ -1,7 +1,8 @@
 # Previewable()
 
 **Framework**: SwiftUI  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Tag allowing a dynamic property to appear inline in a preview.
 
@@ -36,9 +37,10 @@ It is an error to use `@Previewable` outside of a `#Preview` body closure.
 
 ## See Also
 
-- [protocol PreviewModifier](previewmodifier.md)
+### Customizing a preview
+- [protocol PreviewModifier](./previewmodifier.md)
   A type that defines an environment in which previews can appear.
-- [struct PreviewModifierContent](previewmodifiercontent.md)
+- [struct PreviewModifierContent](./previewmodifiercontent.md)
   The type-erased content of a preview.
 
 

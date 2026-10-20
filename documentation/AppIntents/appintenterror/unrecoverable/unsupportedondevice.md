@@ -1,7 +1,8 @@
 # unsupportedOnDevice
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This feature isn’t supported on this device.
 

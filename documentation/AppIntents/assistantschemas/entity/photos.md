@@ -1,7 +1,8 @@
 # photos
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe media assets.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe media assets.
 ```swift
 static var photos: some AssistantSchemas.PhotosEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

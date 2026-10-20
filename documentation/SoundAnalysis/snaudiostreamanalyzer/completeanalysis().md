@@ -1,7 +1,8 @@
 # completeAnalysis()
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the analyzer when it receives the final audio buffer.
 
@@ -20,13 +21,18 @@ Notifies the analyzer when it receives the final audio buffer.
 func completeAnalysis()
 ```
 
+```objc
+- (void) completeAnalysis;
+```
+
 #### Discussion
 
-Use this method for requests that provide final results when a stream reaches its end. The analyzer ignores any further calls to the [`analyze(_:atAudioFramePosition:)`](snaudiostreamanalyzer/analyze(_:ataudioframeposition:).md) method.
+Use this method for requests that provide final results when a stream reaches its end. The analyzer ignores any further calls to the [`analyze(_:atAudioFramePosition:)`](./analyze%28_,ataudioframeposition%29.md) method.
 
 ## See Also
 
-- [func analyze(AVAudioBuffer, atAudioFramePosition: AVAudioFramePosition)](snaudiostreamanalyzer/analyze(_:ataudioframeposition:).md)
+### Analyzing Data
+- [func analyze(AVAudioBuffer, atAudioFramePosition: AVAudioFramePosition)](./analyze%28_,ataudioframeposition%29.md)
   Adds a new audio buffer to the analyzer’s larger stream buffer.
 
 

@@ -1,7 +1,8 @@
 # init(recognizedDataTypes:qualityLevel:recognizesMultipleItems:isHighFrameRateTrackingEnabled:isPinchToZoomEnabled:isGuidanceEnabled:isHighlightingEnabled:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scanner for finding data, such as text and machine-readable codes, in the camera’s live video.
 
@@ -29,17 +30,19 @@ init(recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>, qua
 
 ## See Also
 
-- [let qualityLevel: DataScannerViewController.QualityLevel](datascannerviewcontroller/qualitylevel-swift.property.md)
+### Related Documentation
+- [let qualityLevel: DataScannerViewController.QualityLevel](./qualitylevel-swift.property.md)
   The resolution that the scanner uses to find data.
-- [let recognizesMultipleItems: Bool](datascannerviewcontroller/recognizesmultipleitems.md)
+- [let recognizesMultipleItems: Bool](./recognizesmultipleitems.md)
   A Boolean value that indicates whether the scanner should identify all items in the live video.
-- [let isHighFrameRateTrackingEnabled: Bool](datascannerviewcontroller/ishighframeratetrackingenabled.md)
+- [let isHighFrameRateTrackingEnabled: Bool](./ishighframeratetrackingenabled.md)
   A Boolean value that determines the frequency at which the scanner updates the geometry of recognized items.
-- [let isGuidanceEnabled: Bool](datascannerviewcontroller/isguidanceenabled.md)
+- [let isGuidanceEnabled: Bool](./isguidanceenabled.md)
   A Boolean value that indicates whether the scanner provides help to a person when selecting items.
-- [let recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>](datascannerviewcontroller/recognizeddatatypes.md)
+### Creating data scanners
+- [let recognizedDataTypes: Set<DataScannerViewController.RecognizedDataType>](./recognizeddatatypes.md)
   The types of data that the data scanner identifies in the live video.
-- [DataScannerViewController.RecognizedDataType](datascannerviewcontroller/recognizeddatatype.md)
+- [DataScannerViewController.RecognizedDataType](./recognizeddatatype.md)
   A type of data that the scanner recognizes.
 
 

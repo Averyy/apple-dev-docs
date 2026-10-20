@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new collection difference from a collection of changes.
 
@@ -30,7 +31,7 @@ The collection of changes passed as `changes` must meet these requirements:
 - All removal offsets are unique
 - All associations between insertions and removals are symmetric
 
-> **Note**: O(*n* * log(*n*)), where *n* is the length of the parameter.
+> **Complexity**: O(*n* * log(*n*)), where *n* is the length of the parameter.
 
 ## Parameters
 

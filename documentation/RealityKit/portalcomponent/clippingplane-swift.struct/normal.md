@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normal of the clipping plane.
 

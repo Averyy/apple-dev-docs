@@ -1,26 +1,29 @@
 # Update a Budget Order
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Updates an existing budget order.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
 #### Discussion
 
-Use this endpoint to modify an existing budget order. Use the `id` that returns in the [`Create a Budget Order`](create-a-budget-order.md) call as a resource.
+Use this endpoint to modify an existing budget order. Use the `id` that returns in the [`Create a Budget Order`](./create-a-budget-order.md) call as a resource.
 
-##### Payload Example Update a Budget Order
+##### Payload example: Update a budget order
 
 **Request**:
 
-```None
+```
 HTTP PUT  https://api.searchads.apple.com/api/v5/budgetorders/{boid}
 
 {
@@ -81,19 +84,35 @@ HTTP PUT  https://api.searchads.apple.com/api/v5/budgetorders/{boid}
 
 ## Parameters
 
+### Path Parameters
+
 - `boId` (int64) *(required)*: The unique identifier for the budget order.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `BudgetOrderUpdate`
+
 The request body that includes the details of the budget order.
+
+## Responses
+
+- `200` OK (`BudgetOrderInfoResponse`, `application/json`): If the call succeeds, the API returns the [`BudgetOrderInfo`](./budgetorderinfo.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `404` Not Found (`ApiErrorResponse`, `application/json`): The API can’t locate the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Create a Budget Order](create-a-budget-order.md)
+### Budget Order Endpoints
+- [Create a Budget Order](./create-a-budget-order.md)
   Creates a budget order in the context of your org ID.
-- [Get a Budget Order](get-a-budget-order.md)
+- [Get a Budget Order](./get-a-budget-order.md)
   Fetches a specific budget order using a budget order identifier.
-- [Get all Budget Orders](get-all-budget-orders.md)
+- [Get all Budget Orders](./get-all-budget-orders.md)
   Fetches all assigned budget orders for an organization.
 
 

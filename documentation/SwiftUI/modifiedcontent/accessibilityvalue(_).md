@@ -1,7 +1,8 @@
 # accessibilityValue(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a textual description of the value that the view contains.
 
@@ -19,6 +20,25 @@ Adds a textual description of the value that the view contains.
 ```swift
 @export(implementation)
 nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityValue(_ valueDescription: Text) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityValue(_ valueKey: LocalizedStringKey) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityValue<S>(_ value: S) -> ModifiedContent<Content, Modifier> where S : StringProtocol
 ```
 
 #### Discussion

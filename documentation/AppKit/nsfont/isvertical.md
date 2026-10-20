@@ -1,7 +1,8 @@
 # isVertical
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the font is a vertical font.
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the font is a vertical font.
 var isVertical: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isVertical) BOOL vertical;
+```
+
 #### Discussion
 
-The value in this property is [`true`](https://developer.apple.com/documentation/swift/true) for a vertical font or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value in this property is [`true`](../../Swift/true.md) for a vertical font or [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var vertical: NSFont](nsfont/vertical-6ym79.md)
+### Vertical Fonts
+- [var vertical: NSFont](./vertical-6ym79.md)
   A vertical version of the font.
 
 

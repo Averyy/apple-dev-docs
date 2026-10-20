@@ -1,7 +1,8 @@
 # didReceive(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delivers a notification object to your interface controller for processing.
 
@@ -14,9 +15,14 @@ Delivers a notification object to your interface controller for processing.
 func didReceive(_ notification: UNNotification)
 ```
 
+```objc
+- (void) didReceiveNotification:(UNNotification *) notification;
+```
+
 ## See Also
 
-- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](wkusernotificationinterfacecontroller/didreceive(_:withcompletion:).md)
+### Processing the Notification
+- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](./didreceive%28_,withcompletion%29.md)
   Delivers a notification object to your interface controller for processing.
 
 

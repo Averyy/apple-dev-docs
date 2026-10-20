@@ -1,7 +1,8 @@
 # ciphertext
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted data.
 
@@ -26,9 +27,10 @@ The length of the ciphertext of a sealed box is the same as the length of the pl
 
 ## See Also
 
-- [var nonce: AES.GCM.Nonce](aes/gcm/sealedbox/nonce.md)
+### Inspecting the component elements
+- [var nonce: AES.GCM.Nonce](./nonce.md)
   The nonce used to encrypt the data.
-- [var tag: Data](aes/gcm/sealedbox/tag.md)
+- [var tag: Data](./tag.md)
   An authentication tag.
 
 

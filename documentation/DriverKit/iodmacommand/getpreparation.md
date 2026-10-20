@@ -1,25 +1,27 @@
 # GetPreparation
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetPreparation(uint64_t *offset, uint64_t *length, IOMemoryDescriptor **memory);
 ```
 
 ## See Also
 
-- [CompleteDMA](iodmacommand/completedma.md)
-- [PerformOperation](iodmacommand/performoperation.md)
-- [PrepareForDMA](iodmacommand/preparefordma.md)
+### Performing Internal Operations
+- [CompleteDMA](./completedma.md)
+- [PerformOperation](./performoperation.md)
+- [PrepareForDMA](./preparefordma.md)
 
 
 ---

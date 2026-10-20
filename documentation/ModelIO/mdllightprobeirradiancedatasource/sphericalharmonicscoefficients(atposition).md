@@ -1,7 +1,8 @@
 # sphericalHarmonicsCoefficients(atPosition:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the data source to provide spherical harmonics coefficients that describe lighting conditions in all directions from the specified point in a scene.
 
@@ -19,11 +20,15 @@ Asks the data source to provide spherical harmonics coefficients that describe l
 optional func sphericalHarmonicsCoefficients(atPosition position: vector_float3) -> Data
 ```
 
+```objc
+- (NSData *) sphericalHarmonicsCoefficientsAtPosition:(vector_float3) position;
+```
+
 #### Discussion
 
-When you call the [`MDLAsset`](mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](mdlasset/placelightprobes(withdensity:heuristic:using:).md) method to automatically distribute light probes in a scene, Model I/O repeatedly calls this method to evaluate the lighting conditions at various points in the scene (as determined by the `density` and `heuristic` parameters), then uses the resulting information to choose where to place light probes.
+When you call the [`MDLAsset`](../mdlasset.md) [`placeLightProbes(withDensity:heuristic:using:)`](../mdlasset/placelightprobes%28withdensity,heuristic,using%29.md) method to automatically distribute light probes in a scene, Model I/O repeatedly calls this method to evaluate the lighting conditions at various points in the scene (as determined by the `density` and `heuristic` parameters), then uses the resulting information to choose where to place light probes.
 
-The data you return from this method is equivalent to that provided by the [`sphericalHarmonicsCoefficients`](mdllightprobe/sphericalharmonicscoefficients.md) property of an existing light probe object. You provide this information in a data object containing an array of 32-bit floating-point values, organized into three noninterleaved data sets corresponding to the red, green, and blue sets of coefficients. The value you return for the [`sphericalHarmonicsLevel`](mdllightprobeirradiancedatasource/sphericalharmonicslevel.md) property determines the expected length of the array:
+The data you return from this method is equivalent to that provided by the [`sphericalHarmonicsCoefficients`](../mdllightprobe/sphericalharmonicscoefficients.md) property of an existing light probe object. You provide this information in a data object containing an array of 32-bit floating-point values, organized into three noninterleaved data sets corresponding to the red, green, and blue sets of coefficients. The value you return for the [`sphericalHarmonicsLevel`](./sphericalharmonicslevel.md) property determines the expected length of the array:
 
 - At level 0, the array has 1 coefficient (3 values).
 - At level 1, the array has 4 coefficients (3 sets of 4 values, 12 values total).
@@ -37,9 +42,10 @@ The data you return from this method is equivalent to that provided by the [`sph
 
 ## See Also
 
-- [var boundingBox: MDLAxisAlignedBoundingBox](mdllightprobeirradiancedatasource/boundingbox.md)
+### Providing Light Probe Information
+- [var boundingBox: MDLAxisAlignedBoundingBox](./boundingbox.md)
   The bounding region of the scene to which light probes are being added.
-- [var sphericalHarmonicsLevel: Int](mdllightprobeirradiancedatasource/sphericalharmonicslevel.md)
+- [var sphericalHarmonicsLevel: Int](./sphericalharmonicslevel.md)
   The number of levels of spherical harmonics information provided by the data source.
 
 

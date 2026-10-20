@@ -1,7 +1,8 @@
 # kAudio_FileNotFoundError
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An error that indicates the file wasn’t found.
 
@@ -20,13 +21,18 @@ An error that indicates the file wasn’t found.
 var kAudio_FileNotFoundError: OSStatus { get }
 ```
 
+```c
+kAudio_FileNotFoundError
+```
+
 ## See Also
 
-- [var kAudio_ParamError: OSStatus](kaudio_paramerror.md)
+### Errors
+- [var kAudio_ParamError: OSStatus](./kaudio_paramerror.md)
   An error in the parameter list of the function.
-- [var kAudio_MemFullError: OSStatus](kaudio_memfullerror.md)
+- [var kAudio_MemFullError: OSStatus](./kaudio_memfullerror.md)
   An error that indicates that the heap zone is full.
-- [var kAudio_UnimplementedError: OSStatus](kaudio_unimplementederror.md)
+- [var kAudio_UnimplementedError: OSStatus](./kaudio_unimplementederror.md)
   An error that indicates the app called an unimplemented system function.
 
 

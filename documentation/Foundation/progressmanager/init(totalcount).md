@@ -1,7 +1,8 @@
 # init(totalCount:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes `self` with `totalCount`.
 

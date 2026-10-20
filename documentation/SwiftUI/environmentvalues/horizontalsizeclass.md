@@ -1,7 +1,8 @@
 # horizontalSizeClass
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal size class of this environment.
 
@@ -23,7 +24,7 @@ var horizontalSizeClass: UserInterfaceSizeClass? { get set }
 
 #### Discussion
 
-You receive a [`UserInterfaceSizeClass`](userinterfacesizeclass.md) value when you read this environment value. The value tells you about the amount of horizontal space available to the view that reads it. You can read this size class like any other of the [`EnvironmentValues`](environmentvalues.md), by creating a property with the [`Environment`](environment.md) property wrapper:
+You receive a [`UserInterfaceSizeClass`](../userinterfacesizeclass.md) value when you read this environment value. The value tells you about the amount of horizontal space available to the view that reads it. You can read this size class like any other of the [`EnvironmentValues`](../environmentvalues.md), by creating a property with the [`Environment`](../environment.md) property wrapper:
 
 ```swift
 @Environment(\.horizontalSizeClass) private var horizontalSizeClass
@@ -35,23 +36,24 @@ SwiftUI sets this size class based on several factors, including:
 - The orientation of the device.
 - The appearance of Slide Over and Split View on iPad.
 
-Several built-in views change their behavior based on this size class. For example, a [`NavigationView`](navigationview.md) presents a multicolumn view when the horizontal size class is [`UserInterfaceSizeClass.regular`](userinterfacesizeclass/regular.md), but a single column otherwise. You can also adjust the appearance of custom views by reading the size class and conditioning your views. If you do, be prepared to handle size class changes while your app runs, because factors like device orientation can change at runtime.
+Several built-in views change their behavior based on this size class. For example, a [`NavigationView`](../navigationview.md) presents a multicolumn view when the horizontal size class is [`UserInterfaceSizeClass.regular`](../userinterfacesizeclass/regular.md), but a single column otherwise. You can also adjust the appearance of custom views by reading the size class and conditioning your views. If you do, be prepared to handle size class changes while your app runs, because factors like device orientation can change at runtime.
 
-In watchOS, the horizontal size class is always [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md). In macOS, and tvOS, it’s always [`UserInterfaceSizeClass.regular`](userinterfacesizeclass/regular.md).
+In watchOS, the horizontal size class is always [`UserInterfaceSizeClass.compact`](../userinterfacesizeclass/compact.md). In macOS, and tvOS, it’s always [`UserInterfaceSizeClass.regular`](../userinterfacesizeclass/regular.md).
 
 Writing to the horizontal size class in the environment before macOS 14.0, tvOS 17.0, and watchOS 10.0 is not supported.
 
 ## See Also
 
-- [var isLuminanceReduced: Bool](environmentvalues/isluminancereduced.md)
+### Reacting to interface characteristics
+- [var isLuminanceReduced: Bool](./isluminancereduced.md)
   A Boolean value that indicates whether the display or environment currently requires reduced luminance.
-- [var displayScale: CGFloat](environmentvalues/displayscale.md)
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of this environment.
-- [var pixelLength: CGFloat](environmentvalues/pixellength.md)
+- [var pixelLength: CGFloat](./pixellength.md)
   The size of a pixel on the screen.
-- [var verticalSizeClass: UserInterfaceSizeClass?](environmentvalues/verticalsizeclass.md)
+- [var verticalSizeClass: UserInterfaceSizeClass?](./verticalsizeclass.md)
   The vertical size class of this environment.
-- [enum UserInterfaceSizeClass](userinterfacesizeclass.md)
+- [enum UserInterfaceSizeClass](../userinterfacesizeclass.md)
   A set of values that indicate the visual size available to the view.
 
 

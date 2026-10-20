@@ -1,7 +1,8 @@
 # cursorRect
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The region that the cursor image currently occupies in software cursor mode.
 
@@ -10,7 +11,7 @@ The region that the cursor image currently occupies in software cursor mode.
 
 ## Declaration
 
-```swift
+```c
 IOGBounds cursorRect;
 ```
 

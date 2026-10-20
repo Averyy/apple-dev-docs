@@ -1,10 +1,11 @@
 # selectParagraph(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 optional func selectParagraph(_ sender: Any?)
 ```
 
+```objc
+- (void) selectParagraph:(id) sender;
+```
+
 ## See Also
 
-- [func selectAll(Any?)](nsstandardkeybindingresponding/selectall(_:).md)
-- [func selectLine(Any?)](nsstandardkeybindingresponding/selectline(_:).md)
-- [func selectWord(Any?)](nsstandardkeybindingresponding/selectword(_:).md)
+### Changing the Selection
+- [func selectAll(Any?)](./selectall%28_%29.md)
+- [func selectLine(Any?)](./selectline%28_%29.md)
+- [func selectWord(Any?)](./selectword%28_%29.md)
 
 
 ---

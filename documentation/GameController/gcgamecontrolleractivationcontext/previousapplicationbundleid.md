@@ -1,7 +1,8 @@
 # previousApplicationBundleID
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var previousApplicationBundleID: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * previousApplicationBundleID;
 ```
 
 

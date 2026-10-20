@@ -1,23 +1,28 @@
 # physicsWorld(_:didBegin:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that two bodies have come into contact.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 optional func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysicsContact)
+```
+
+```objc
+- (void) physicsWorld:(SCNPhysicsWorld *) world didBeginContact:(SCNPhysicsContact *) contact;
 ```
 
 ## Parameters
@@ -27,9 +32,10 @@ optional func physicsWorld(_ world: SCNPhysicsWorld, didBegin contact: SCNPhysic
 
 ## See Also
 
-- [func physicsWorld(SCNPhysicsWorld, didUpdate: SCNPhysicsContact)](scnphysicscontactdelegate/physicsworld(_:didupdate:).md)
+### Responding to Contact Events
+- [func physicsWorld(SCNPhysicsWorld, didUpdate: SCNPhysicsContact)](./physicsworld%28_,didupdate%29.md)
   Tells the delegate that new information is available about an ongoing contact.
-- [func physicsWorld(SCNPhysicsWorld, didEnd: SCNPhysicsContact)](scnphysicscontactdelegate/physicsworld(_:didend:).md)
+- [func physicsWorld(SCNPhysicsWorld, didEnd: SCNPhysicsContact)](./physicsworld%28_,didend%29.md)
   Tells the delegate that a contact has ended.
 
 

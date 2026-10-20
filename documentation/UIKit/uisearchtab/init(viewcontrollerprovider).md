@@ -1,7 +1,8 @@
 # init(viewControllerProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a search tab with a system localized title and image.
 
@@ -16,6 +17,10 @@ Creates a search tab with a system localized title and image.
 
 ```swift
 init(viewControllerProvider: ((UITab) -> UIViewController)? = nil)
+```
+
+```objc
+- (instancetype) initWithViewControllerProvider:(UIViewController * (^)(UITab *)) viewControllerProvider;
 ```
 
 ## Parameters

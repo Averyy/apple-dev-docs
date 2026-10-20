@@ -1,7 +1,8 @@
 # EventSubscription
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A subscription to an event.
 
@@ -22,15 +23,16 @@ struct EventSubscription
 ## Topics
 
 ### Instance Methods
-- [func cancel()](eventsubscription/cancel.md)
+- [func cancel()](./eventsubscription/cancel%28%29.md)
   Cancels the event subscription.
-- [func subscribe(to: Scene)](eventsubscription/subscribe(to:).md)
+- [func subscribe(to: Scene)](./eventsubscription/subscribe%28to%29.md)
 
 ## See Also
 
-- [protocol Event](event.md)
+### Core event types
+- [protocol Event](./event.md)
   A type that can be sent as an event.
-- [protocol EventSource](eventsource.md)
+- [protocol EventSource](./eventsource.md)
   A type on which events can be published and subscribed.
 
 

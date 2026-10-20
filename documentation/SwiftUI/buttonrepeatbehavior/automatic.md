@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic repeat behavior.
 
@@ -22,9 +23,10 @@ static let automatic: ButtonRepeatBehavior
 
 ## See Also
 
-- [static let enabled: ButtonRepeatBehavior](buttonrepeatbehavior/enabled.md)
+### Getting repeat behaviors
+- [static let enabled: ButtonRepeatBehavior](./enabled.md)
   Repeating button actions will be enabled.
-- [static let disabled: ButtonRepeatBehavior](buttonrepeatbehavior/disabled.md)
+- [static let disabled: ButtonRepeatBehavior](./disabled.md)
   Repeating button actions will be disabled.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureBroadcastVideoOutputDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Protocol for receiving broadcast video output events and data.
 
@@ -18,6 +19,10 @@ Protocol for receiving broadcast video output events and data.
 protocol AVCaptureBroadcastVideoOutputDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVCaptureBroadcastVideoOutputDelegate <NSObject>
+```
+
 #### Overview
 
 Objects conforming to this protocol can be set as delegates to receive notifications about broadcast video output operations, including dropped frames and ancillary data processing.
@@ -25,21 +30,22 @@ Objects conforming to this protocol can be set as delegates to receive notificat
 ## Topics
 
 ### Responding to dropped frames
-- [func broadcastVideoOutput(AVCaptureBroadcastVideoOutput, didDropVideoFrameWithPresentationTimeStamp: CMTime, from: AVCaptureConnection)](avcapturebroadcastvideooutputdelegate/broadcastvideooutput(_:diddropvideoframewithpresentationtimestamp:from:).md)
+- [func broadcastVideoOutput(AVCaptureBroadcastVideoOutput, didDropVideoFrameWithPresentationTimeStamp: CMTime, from: AVCaptureConnection)](./avcapturebroadcastvideooutputdelegate/broadcastvideooutput%28_,diddropvideoframewithpresentationtimestamp,from%29.md)
   Called when a video frame is dropped during broadcast video output processing.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureBroadcastVideoOutput](avcapturebroadcastvideooutput.md)
-  [`AVCaptureBroadcastVideoOutput`](avcapturebroadcastvideooutput.md) is a subclass of [`AVCaptureOutput`](avcaptureoutput.md) that delivers broadcast-quality video and ancillary data through the device’s DisplayPort hardware interface (USB-C DP Alt Mode)
-- [class AVCaptureAncillaryDataEncoder](avcaptureancillarydataencoder.md)
-- [struct AVCaptureAncillaryDataUserKey](avcaptureancillarydatauserkey.md)
-  Clients may use an AVCaptureAncillaryDataUserKey to inspect the [`currentUserDefinedAncillaryData`](avcaptureancillarydataencoder/currentuserdefinedancillarydata.md).
+### Broadcast video output
+- [class AVCaptureBroadcastVideoOutput](./avcapturebroadcastvideooutput.md)
+  [`AVCaptureBroadcastVideoOutput`](./avcapturebroadcastvideooutput.md) is a subclass of [`AVCaptureOutput`](./avcaptureoutput.md) that delivers broadcast-quality video and ancillary data through the device’s DisplayPort hardware interface (USB-C DP Alt Mode)
+- [class AVCaptureAncillaryDataEncoder](./avcaptureancillarydataencoder.md)
+- [struct AVCaptureAncillaryDataUserKey](./avcaptureancillarydatauserkey.md)
+  Clients may use an AVCaptureAncillaryDataUserKey to inspect the [`currentUserDefinedAncillaryData`](./avcaptureancillarydataencoder/currentuserdefinedancillarydata.md).
 
 
 ---

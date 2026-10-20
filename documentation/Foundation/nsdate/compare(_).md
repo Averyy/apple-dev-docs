@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the temporal ordering of the receiver and another given date.
 
@@ -20,31 +21,39 @@ Indicates the temporal ordering of the receiver and another given date.
 func compare(_ other: Date) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compare:(NSDate *) other;
+```
+
 #### Return Value
 
 If:
 
-- The receiver and `anotherDate` are exactly equal to each other, [`ComparisonResult.orderedSame`](comparisonresult/orderedsame.md)
-- The receiver is later in time than `anotherDate`, [`ComparisonResult.orderedDescending`](comparisonresult/ordereddescending.md)
-- The receiver is earlier in time than `anotherDate`, [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md).
+- The receiver and `anotherDate` are exactly equal to each other, [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md)
+- The receiver is later in time than `anotherDate`, [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md)
+- The receiver is earlier in time than `anotherDate`, [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md).
 
 #### Discussion
 
-This method detects sub-second differences between dates. If you want to compare dates with a less fine granularity, use [`timeIntervalSince(_:)`](nsdate/timeintervalsince(_:).md) to compare the two dates.
+This method detects sub-second differences between dates. If you want to compare dates with a less fine granularity, use [`timeIntervalSince(_:)`](./timeintervalsince%28_%29.md) to compare the two dates.
 
 ## Parameters
 
-- `other`: The date with which to compare the receiver. This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
+- `other`: The date with which to compare the receiver.
+
+  This value must not be `nil`. If the value is `nil`, the behavior is undefined and may change in future versions of macOS.
 
 ## See Also
 
-- [func isEqual(Any?) -> Bool](../objectivec/nsobjectprotocol/isequal(_:).md)
+### Related Documentation
+- [func isEqual(Any?) -> Bool](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md)
   Returns a Boolean value that indicates whether the receiver and a given object are equal.
-- [func isEqual(to: Date) -> Bool](nsdate/isequal(to:).md)
+### Comparing Dates
+- [func isEqual(to: Date) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value that indicates whether a given object is a date that is exactly equal the receiver.
-- [func earlierDate(Date) -> Date](nsdate/earlierdate(_:).md)
+- [func earlierDate(Date) -> Date](./earlierdate%28_%29.md)
   Returns the earlier of the receiver and another given date.
-- [func laterDate(Date) -> Date](nsdate/laterdate(_:).md)
+- [func laterDate(Date) -> Date](./laterdate%28_%29.md)
   Returns the later of the receiver and another given date.
 
 

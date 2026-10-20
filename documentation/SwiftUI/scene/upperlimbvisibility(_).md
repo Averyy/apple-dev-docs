@@ -1,9 +1,10 @@
 # upperLimbVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](immersivespace.md) scene is presented.
+Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](../immersivespace.md) scene is presented.
 
 **Availability**:
 - visionOS 1.0+
@@ -27,8 +28,9 @@ Note that this modifier only sets a preference and ultimately the system will de
 
 ## See Also
 
-- [func upperLimbVisibility(Visibility) -> some View](view/upperlimbvisibility(_:).md)
-  Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](immersivespace.md) scene is presented.
+### Hiding upper limbs during immersion
+- [func upperLimbVisibility(Visibility) -> some View](../view/upperlimbvisibility%28_%29.md)
+  Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](../immersivespace.md) scene is presented.
 
 
 ---

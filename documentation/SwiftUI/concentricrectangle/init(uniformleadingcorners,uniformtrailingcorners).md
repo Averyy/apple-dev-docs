@@ -1,7 +1,8 @@
 # init(uniformLeadingCorners:uniformTrailingCorners:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle with a corner style set on the leading two corners uniformly, and another style set on the trailing two corners uniformly.
 
@@ -31,7 +32,8 @@ For the two leading corners and two trailing corners, the system calculates the 
 
 ## See Also
 
-- [static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:uniformtrailingcorners:).md)
+### Creating a rectangle with uniform leading and trailing corners
+- [static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self](../shape/rect%28uniformleadingcorners,uniformtrailingcorners%29.md)
   Creates a rectangle with a corner style uniformly set on the two leading corners, and another style uniformly set on the two trailing corners.
 
 

@@ -1,7 +1,8 @@
 # init(instanceCount:instanceCapacity:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a low-level instance data object with an instance count and capacity.
 

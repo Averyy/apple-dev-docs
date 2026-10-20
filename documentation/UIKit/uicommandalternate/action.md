@@ -1,7 +1,8 @@
 # action
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command alternative’s action-method selector.
 
@@ -18,11 +19,16 @@ The command alternative’s action-method selector.
 var action: Selector { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SEL action;
+```
+
 ## See Also
 
-- [var title: String](uicommandalternate/title.md)
+### Getting information about the alternative
+- [var title: String](./title.md)
   The command alternative’s title.
-- [var modifierFlags: UIKeyModifierFlags](uicommandalternate/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./modifierflags.md)
   The bit mask of modifier keys that the user must press to invoke the action for the alternative command.
 
 

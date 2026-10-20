@@ -1,7 +1,8 @@
 # GCAcceleration
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A three-dimensional acceleration vector.
 
@@ -19,34 +20,39 @@ A three-dimensional acceleration vector.
 struct GCAcceleration
 ```
 
+```c
+typedef struct { ... } GCAcceleration;
+```
+
 ## Topics
 
 ### Getting Acceleration Values
-- [var x: Double](gcacceleration/x.md)
+- [var x: Double](./gcacceleration/x.md)
   The acceleration measurement along the x-axis, in multiples of earth’s gravity.
-- [var y: Double](gcacceleration/y.md)
+- [var y: Double](./gcacceleration/y.md)
   The acceleration measurement along the y-axis, in multiples of earth’s gravity.
-- [var z: Double](gcacceleration/z.md)
+- [var z: Double](./gcacceleration/z.md)
   The acceleration measurement along the z-axis, in multiples of earth’s gravity.
 ### Initializers
-- [init()](gcacceleration/init.md)
+- [init()](./gcacceleration/init%28%29.md)
   Creates an acceleration structure.
-- [init(x: Double, y: Double, z: Double)](gcacceleration/init(x:y:z:).md)
+- [init(x: Double, y: Double, z: Double)](./gcacceleration/init%28x,y,z%29.md)
   Creates an acceleration structure with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var acceleration: GCAcceleration](gcmotion/acceleration.md)
+### Accessing Gravity and Acceleration Data
+- [var acceleration: GCAcceleration](./gcmotion/acceleration.md)
   The total acceleration of the controller that includes gravity and the acceleration the user applies to the controller.
-- [var gravity: GCAcceleration](gcmotion/gravity.md)
+- [var gravity: GCAcceleration](./gcmotion/gravity.md)
   The gravity acceleration vector from the controller’s reference frame.
-- [var userAcceleration: GCAcceleration](gcmotion/useracceleration.md)
+- [var userAcceleration: GCAcceleration](./gcmotion/useracceleration.md)
   The acceleration that the user applies to the controller.
 
 

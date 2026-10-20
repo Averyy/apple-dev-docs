@@ -1,7 +1,8 @@
 # probableWebURL
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that the data detection system identifies as a probable web URL.
 
@@ -9,7 +10,7 @@ A string that the data detection system identifies as a probable web URL.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var probableWebURL: String { get }
 
 ## See Also
 
-- [var patterns: Set<PartialKeyPath<UIPasteboard.DetectedValues>>](uipasteboard/detectedvalues/patterns.md)
+### Detected patterns
+- [var patterns: Set<PartialKeyPath<UIPasteboard.DetectedValues>>](./patterns.md)
   A set of key paths that represent patterns that the data detection system identifies.
-- [var probableWebSearch: String](uipasteboard/detectedvalues/probablewebsearch.md)
+- [var probableWebSearch: String](./probablewebsearch.md)
   A string that the data detection system identifies as a probable web search item.
 
 

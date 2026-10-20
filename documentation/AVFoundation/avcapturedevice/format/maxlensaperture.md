@@ -1,9 +1,10 @@
 # maxLensAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The maximum supported value for the [`lensAperture`](avcapturedevice/lensaperture.md) property.
+The maximum supported value for the [`lensAperture`](../lensaperture.md) property.
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@ The maximum supported value for the [`lensAperture`](avcapturedevice/lensapertur
 
 ```swift
 var maxLensAperture: Float { get }
+```
+
+```objc
+@property (nonatomic, readonly) float maxLensAperture;
 ```
 
 

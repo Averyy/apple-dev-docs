@@ -1,19 +1,20 @@
 # GetOffset
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the offset from the original start of the memory block.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint64_t GetOffset();
 ```
 
@@ -27,9 +28,10 @@ When creating a memory map object, you can map to a location in the middle of th
 
 ## See Also
 
-- [GetAddress](iomemorymap/getaddress.md)
+### Getting the Map Attributes
+- [GetAddress](./getaddress.md)
   Returns the address of the memory block.
-- [GetLength](iomemorymap/getlength.md)
+- [GetLength](./getlength.md)
   Returns the length of the memory block in bytes.
 
 

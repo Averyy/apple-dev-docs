@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: AdSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The shared instance of the identifier manager class.
 
@@ -18,13 +19,18 @@ The shared instance of the identifier manager class.
 class func shared() -> ASIdentifierManager
 ```
 
+```objc
++ (ASIdentifierManager *) sharedManager;
+```
+
 #### Return Value
 
 Returns the shared instance of the AdSupport identifier manager class.
 
 ## See Also
 
-- [var advertisingIdentifier: UUID](asidentifiermanager/advertisingidentifier.md)
+### Getting the Advertising Identifier
+- [var advertisingIdentifier: UUID](./advertisingidentifier.md)
   The UUID that is specific to a device.
 
 

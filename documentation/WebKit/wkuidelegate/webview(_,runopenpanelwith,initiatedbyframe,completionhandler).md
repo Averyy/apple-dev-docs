@@ -1,7 +1,8 @@
 # webView(_:runOpenPanelWith:initiatedByFrame:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a file upload panel.
 
@@ -15,7 +16,15 @@ Displays a file upload panel.
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping @MainActor @Sendable ([URL]?) -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, runOpenPanelWith parameters: WKOpenPanelParameters, initiatedByFrame frame: WKFrameInfo) async -> [URL]?
+```
+
+```objc
+- (void) webView:(WKWebView *) webView runOpenPanelWithParameters:(WKOpenPanelParameters *) parameters initiatedByFrame:(WKFrameInfo *) frame completionHandler:(void (^)(NSArray<NSURL *> *)) completionHandler;
 ```
 
 #### Discussion
@@ -34,7 +43,8 @@ Implement this method to customize the upload panel. To disable file uploads, im
 
 ## See Also
 
-- [class WKOpenPanelParameters](wkopenpanelparameters.md)
+### Displaying an upload panel
+- [class WKOpenPanelParameters](../wkopenpanelparameters.md)
   The configuration details of a file upload control in your web content.
 
 

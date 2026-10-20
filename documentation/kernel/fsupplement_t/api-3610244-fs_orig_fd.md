@@ -1,14 +1,15 @@
 # fs_orig_fd
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int fs_orig_fd;
 ```
 

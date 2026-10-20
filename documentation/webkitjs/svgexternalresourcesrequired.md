@@ -1,7 +1,8 @@
 # SVGExternalResourcesRequired
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGExternalResourcesRequired
 ```
 
 ## Topics
 
 ### Instance Properties
-- [externalResourcesRequired](svgexternalresourcesrequired/1628846-externalresourcesrequired.md)
+- [externalResourcesRequired](./svgexternalresourcesrequired/api-1628846-externalresourcesrequired.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Schedules an operation to signal a GPU event with a specific value after all GPU work prior to this point is complete.
@@ -20,10 +21,14 @@ Schedules an operation to signal a GPU event with a specific value after all GPU
 func signalEvent(_ event: any MTLEvent, value: UInt64)
 ```
 
+```objc
+- (void) signalEvent:(id<MTLEvent>) event value:(uint64_t) value;
+```
+
 ## Parameters
 
-- `event`: [`MTLEvent`](mtlevent.md) to signal.
-- `value`: The value to signal the [`MTLEvent`](mtlevent.md) with.
+- `event`: [`MTLEvent`](../mtlevent.md) to signal.
+- `value`: The value to signal the [`MTLEvent`](../mtlevent.md) with.
 
 
 ---

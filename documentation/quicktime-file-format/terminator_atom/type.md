@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit integer.
 
@@ -11,7 +12,8 @@ Set to zero (`0x00000000`).
 
 ## See Also
 
-- [Size](terminator_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the decompression parameters atom.
 
 

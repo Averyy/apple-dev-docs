@@ -1,7 +1,8 @@
 # AudioQueueGetCurrentTime(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the current audio queue time.
 
@@ -19,6 +20,10 @@ Gets the current audio queue time.
 func AudioQueueGetCurrentTime(_ inAQ: AudioQueueRef, _ inTimeline: AudioQueueTimelineRef?, _ outTimeStamp: UnsafeMutablePointer<AudioTimeStamp>?, _ outTimelineDiscontinuity: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueGetCurrentTime(AudioQueueRef inAQ, AudioQueueTimelineRef inTimeline, AudioTimeStamp *outTimeStamp, Boolean *outTimelineDiscontinuity);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -28,21 +33,24 @@ A result code. See Result Codes.
 - `inAQ`: The audio queue whose current time you want to get.
 - `inTimeline`: The audio queue timeline object to which timeline discontinuities are reported. Use `NULL` if the audio queue does not have an associated timeline object.
 - `outTimeStamp`: On output, the current audio queue time. The `mSampleTime` field represents audio queue time in terms of the audio queue sample rate, relative to when the queue started or will start.
-- `outTimelineDiscontinuity`: On output, `true` if there has been a timeline discontinuity, or `false` if there has been no discontinuity. If the audio queue does not have an associated timeline object, this parameter is always `NULL`. A timeline discontinuity may occur, for example, if the sample rate is changed for the audio hardware device associated with an audio queue.
+- `outTimelineDiscontinuity`: On output, `true` if there has been a timeline discontinuity, or `false` if there has been no discontinuity. If the audio queue does not have an associated timeline object, this parameter is always `NULL`.
+
+  A timeline discontinuity may occur, for example, if the sample rate is changed for the audio hardware device associated with an audio queue.
 
 ## See Also
 
-- [func AudioQueueCreateTimeline(AudioQueueRef, UnsafeMutablePointer<AudioQueueTimelineRef?>) -> OSStatus](audioqueuecreatetimeline(_:_:).md)
+### Managing the Timeline
+- [func AudioQueueCreateTimeline(AudioQueueRef, UnsafeMutablePointer<AudioQueueTimelineRef?>) -> OSStatus](./audioqueuecreatetimeline%28_,_%29.md)
   Creates a timeline object for an audio queue.
-- [func AudioQueueDisposeTimeline(AudioQueueRef, AudioQueueTimelineRef) -> OSStatus](audioqueuedisposetimeline(_:_:).md)
+- [func AudioQueueDisposeTimeline(AudioQueueRef, AudioQueueTimelineRef) -> OSStatus](./audioqueuedisposetimeline%28_,_%29.md)
   Disposes of an audio queue’s timeline object.
-- [func AudioQueueDeviceGetCurrentTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](audioqueuedevicegetcurrenttime(_:_:).md)
+- [func AudioQueueDeviceGetCurrentTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](./audioqueuedevicegetcurrenttime%28_,_%29.md)
   Gets the current time of the audio hardware device associated with an audio queue.
-- [func AudioQueueDeviceGetNearestStartTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>, UInt32) -> OSStatus](audioqueuedevicegetneareststarttime(_:_:_:).md)
+- [func AudioQueueDeviceGetNearestStartTime(AudioQueueRef, UnsafeMutablePointer<AudioTimeStamp>, UInt32) -> OSStatus](./audioqueuedevicegetneareststarttime%28_,_,_%29.md)
   Gets the start time, for an audio hardware device, that is closest to a requested start time.
-- [func AudioQueueDeviceTranslateTime(AudioQueueRef, UnsafePointer<AudioTimeStamp>, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](audioqueuedevicetranslatetime(_:_:_:).md)
+- [func AudioQueueDeviceTranslateTime(AudioQueueRef, UnsafePointer<AudioTimeStamp>, UnsafeMutablePointer<AudioTimeStamp>) -> OSStatus](./audioqueuedevicetranslatetime%28_,_,_%29.md)
   Converts the time for an audio queue’s associated audio hardware device from one time base representation to another.
-- [typealias AudioQueueTimelineRef](audioqueuetimelineref.md)
+- [typealias AudioQueueTimelineRef](./audioqueuetimelineref.md)
   Defines an opaque data type that represents an audio queue timeline object.
 
 

@@ -1,7 +1,8 @@
 # allowsExternalBinaryDataStorage
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the attribute allows external binary storage.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the attribute allows external binary stor
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the attribute allows external binary stor
 var allowsExternalBinaryDataStorage: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsExternalBinaryDataStorage;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the attribute allows external binary storage, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If this value is [`true`](https://developer.apple.com/documentation/swift/true), the corresponding attribute may be stored in a file external to the persistent store itself.
+[`true`](../../Swift/true.md) if the attribute allows external binary storage, otherwise [`false`](../../Swift/false.md). If this value is [`true`](../../Swift/true.md), the corresponding attribute may be stored in a file external to the persistent store itself.
 
 ## See Also
 
-- [var allowsCloudEncryption: Bool](nsattributedescription/allowscloudencryption.md)
+### Configuring the behavior
+- [var allowsCloudEncryption: Bool](./allowscloudencryption.md)
   A Boolean value that determines whether to encrypt the attribute’s value.
-- [var defaultValue: Any?](nsattributedescription/defaultvalue.md)
+- [var defaultValue: Any?](./defaultvalue.md)
   The default value of the attribute.
-- [var preservesValueInHistoryOnDeletion: Bool](nsattributedescription/preservesvalueinhistoryondeletion.md)
+- [var preservesValueInHistoryOnDeletion: Bool](./preservesvalueinhistoryondeletion.md)
   A Boolean value that indicates whether the attribute records its value in the persistent history transaction for a managed object’s deletion.
-- [var valueTransformerName: String?](nsattributedescription/valuetransformername.md)
+- [var valueTransformerName: String?](./valuetransformername.md)
   The name of the transformer to use for the attribute value.
 
 

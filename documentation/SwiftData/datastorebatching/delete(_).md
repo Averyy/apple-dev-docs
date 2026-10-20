@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -22,7 +23,8 @@ func delete<T>(_ request: DataStoreBatchDeleteRequest<T>) throws where T : Persi
 
 ## See Also
 
-- [struct DataStoreBatchDeleteRequest](datastorebatchdeleterequest.md)
+### Deleting persisted model data
+- [struct DataStoreBatchDeleteRequest](../datastorebatchdeleterequest.md)
 
 
 ---

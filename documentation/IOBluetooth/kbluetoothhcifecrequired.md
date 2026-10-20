@@ -1,10 +1,11 @@
 # kBluetoothHCIFECRequired
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothHCIFECRequired: BluetoothHCIFECRequiredValues { get }
 ```
 
+```c
+kBluetoothHCIFECRequired
+```
+
 ## See Also
 
-- [var kBluetoothHCIFECNotRequired: BluetoothHCIFECRequiredValues](kbluetoothhcifecnotrequired.md)
+### Constants
+- [var kBluetoothHCIFECNotRequired: BluetoothHCIFECRequiredValues](./kbluetoothhcifecnotrequired.md)
 
 
 ---

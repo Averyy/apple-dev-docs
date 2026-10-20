@@ -1,7 +1,8 @@
 # LowLevelRenderContextStandalone
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A standalone Metal-backed render context for creating low-level rendering resources.
 
@@ -19,51 +20,52 @@ final class LowLevelRenderContextStandalone
 
 #### Overview
 
-`LowLevelRenderContextStandalone` is a concrete implementation of [`LowLevelRenderContext`](lowlevelrendercontext.md), [`LowLevelRenderContextLighting`](lowlevelrendercontextlighting.md), and [`LowLevelRenderContextShaderGraph`](lowlevelrendercontextshadergraph.md). Create one using [`init(configuration:)`](lowlevelrendercontextstandalone/init(configuration:).md) , or [`init(configuration:resources:)`](lowlevelrendercontextstandalone/init(configuration:resources:).md) with a prepared [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) instance.
+`LowLevelRenderContextStandalone` is a concrete implementation of [`LowLevelRenderContext`](./lowlevelrendercontext.md), [`LowLevelRenderContextLighting`](./lowlevelrendercontextlighting.md), and [`LowLevelRenderContextShaderGraph`](./lowlevelrendercontextshadergraph.md). Create one using [`init(configuration:)`](./lowlevelrendercontextstandalone/init%28configuration%29.md) , or [`init(configuration:resources:)`](./lowlevelrendercontextstandalone/init%28configuration,resources%29.md) with a prepared [`LowLevelRenderContextStandalone.Resources`](./lowlevelrendercontextstandalone/resources.md) instance.
 
 ## Topics
 
 ### Creating a render context
-- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
+- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](./lowlevelrendercontextstandalone/init%28configuration,resources%29.md)
   Creates a standalone render context using resources prepared ahead of time.
-- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
+- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](./lowlevelrendercontextstandalone/init%28configuration%29.md)
   Creates a standalone render context, asynchronously preparing required resources.
-- [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
+- [LowLevelRenderContextStandalone.Configuration](./lowlevelrendercontextstandalone/configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
-- [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
+- [LowLevelRenderContextStandalone.Resources](./lowlevelrendercontextstandalone/resources.md)
   Resources needed for a render context
 ### Creating lighting functions
-- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeimagebasedlightingfunction.md)
+- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./lowlevelrendercontextstandalone/makeimagebasedlightingfunction%28%29.md)
   Returns a lighting function using image-based lighting (IBL).
-- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeunlitlightingfunction.md)
+- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./lowlevelrendercontextstandalone/makeunlitlightingfunction%28%29.md)
   Returns an unlit lighting function that emits the surface emissive color directly, without any lighting calculations.
 ### Default Implementations
-- [LowLevelRenderContext Implementations](lowlevelrendercontextstandalone/lowlevelrendercontext-implementations.md)
-- [LowLevelRenderContextLighting Implementations](lowlevelrendercontextstandalone/lowlevelrendercontextlighting-implementations.md)
-- [LowLevelRenderContextShaderGraph Implementations](lowlevelrendercontextstandalone/lowlevelrendercontextshadergraph-implementations.md)
+- [LowLevelRenderContext Implementations](./lowlevelrendercontextstandalone/lowlevelrendercontext-implementations.md)
+- [LowLevelRenderContextLighting Implementations](./lowlevelrendercontextstandalone/lowlevelrendercontextlighting-implementations.md)
+- [LowLevelRenderContextShaderGraph Implementations](./lowlevelrendercontextstandalone/lowlevelrendercontextshadergraph-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [LowLevelRenderContext](lowlevelrendercontext.md)
-- [LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-- [LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [LowLevelRenderContext](./lowlevelrendercontext.md)
+- [LowLevelRenderContextLighting](./lowlevelrendercontextlighting.md)
+- [LowLevelRenderContextShaderGraph](./lowlevelrendercontextshadergraph.md)
 
 ## See Also
 
-- [class LowLevelRenderer](lowlevelrenderer.md)
+### Render contexts
+- [class LowLevelRenderer](./lowlevelrenderer.md)
   A renderer that encodes draw calls for a collection of mesh instances into a Metal command buffer.
-- [protocol LowLevelRenderContext](lowlevelrendercontext.md)
+- [protocol LowLevelRenderContext](./lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
-- [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
+- [protocol LowLevelRenderContextLighting](./lowlevelrendercontextlighting.md)
   The interface for creating lighting functions for use in materials.
-- [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+- [protocol LowLevelRenderContextShaderGraph](./lowlevelrendercontextshadergraph.md)
   The interface for creating Metal shader functions from a ShaderGraph.
-- [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
+- [struct LowLevelRenderContextError](./lowlevelrendercontexterror.md)
   An error thrown when binding or updating a low-level rendering resource fails.
-- [struct LowLevelRendererError](lowlevelrenderererror.md)
+- [struct LowLevelRendererError](./lowlevelrenderererror.md)
   An error thrown when creating or configuring a renderer.
 
 

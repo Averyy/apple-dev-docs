@@ -1,7 +1,8 @@
 # init(url:error:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(url: URL, error: (any Error)?)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url error:(NSError *) error;
 ```
 
 

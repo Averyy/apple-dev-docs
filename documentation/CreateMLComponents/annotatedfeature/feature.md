@@ -1,7 +1,8 @@
 # feature
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature value.
 
@@ -22,7 +23,8 @@ var feature: Feature
 
 ## See Also
 
-- [var annotation: Annotation](annotatedfeature/annotation.md)
+### Getting the properties
+- [var annotation: Annotation](./annotation.md)
   The annotation.
 
 

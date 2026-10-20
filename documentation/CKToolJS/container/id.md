@@ -1,7 +1,8 @@
 # id
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the container.
 
@@ -10,7 +11,7 @@ The unique identifier of the container.
 
 ## Declaration
 
-```swift
+```
 attribute string id;
 ```
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure representing the results of a match request.
 
@@ -10,7 +11,7 @@ The data structure representing the results of a match request.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults
 ```
 

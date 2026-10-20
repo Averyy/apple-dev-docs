@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses rows of a data frame type with an index range expression.
 
@@ -26,7 +27,8 @@ subscript<R>(r: R) -> DataFrame.Slice where R : RangeExpression, R.Bound == Int 
 
 ## See Also
 
-- [subscript(Range<Int>) -> DataFrame.Slice](dataframeprotocol/subscript(_:).md)
+### Accessing Rows
+- [subscript(Range<Int>) -> DataFrame.Slice](./subscript%28_%29.md)
   Accesses a slice of the data frame type with an index range.
 
 

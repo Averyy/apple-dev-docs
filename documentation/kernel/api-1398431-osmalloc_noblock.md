@@ -1,20 +1,21 @@
 # OSMalloc_noblock
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
-Allocates a block of memory associated with a given [`OSMallocTag`](osmalloctag.md), returning `NULL` if it would block.
+Allocates a block of memory associated with a given [`OSMallocTag`](./osmalloctag.md), returning `NULL` if it would block.
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void * OSMalloc_noblock(uint32_t size, OSMallocTag tag);
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to the memory on success, `NULL` on failure or if allocation would block.
 
@@ -27,22 +28,23 @@ This function is guaranteed not to block.
 ## Parameters
 
 - `size`: The size of the memory block to allocate.
-- `tag`: The [`OSMallocTag`](osmalloctag.md) under which to allocate the memory.
+- `tag`: The [`OSMallocTag`](./osmalloctag.md) under which to allocate the memory.
 
 ## See Also
 
-- [OSMalloc](1398447-osmalloc.md)
-  Allocates a block of memory associated with a given [`OSMallocTag`](osmalloctag.md).
-- [OSMalloc_Tagalloc](1398437-osmalloc_tagalloc.md)
+### Memory
+- [OSMalloc](./api-1398447-osmalloc.md)
+  Allocates a block of memory associated with a given [`OSMallocTag`](./osmalloctag.md).
+- [OSMalloc_Tagalloc](./api-1398437-osmalloc_tagalloc.md)
   Creates a tag for use with OSMalloc functions.
-- [OSMalloc_Tagfree](1398439-osmalloc_tagfree.md)
+- [OSMalloc_Tagfree](./api-1398439-osmalloc_tagfree.md)
   Frees a tag used with OSMalloc functions.
-- [OSMalloc_nowait](1398445-osmalloc_nowait.md)
-  Equivalent to [`OSMalloc_noblock`](1398431-osmalloc_noblock.md).
-- [OSFree](1398441-osfree.md)
-  Frees a block of memory allocated by [`OSMalloc`](1398447-osmalloc.md).
-- [bzero](1579350-bzero.md)
-- [bzero_phys](1593364-bzero_phys.md)
+- [OSMalloc_nowait](./api-1398445-osmalloc_nowait.md)
+  Equivalent to [`OSMalloc_noblock`](./api-1398431-osmalloc_noblock.md).
+- [OSFree](./api-1398441-osfree.md)
+  Frees a block of memory allocated by [`OSMalloc`](./api-1398447-osmalloc.md).
+- [bzero](./api-1579350-bzero.md)
+- [bzero_phys](./api-1593364-bzero_phys.md)
 
 
 ---

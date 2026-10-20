@@ -1,7 +1,8 @@
 # PKPaymentMerchantSession
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that validates the identity of a merchant for a payment request.
 
@@ -19,29 +20,34 @@ An object that validates the identity of a merchant for a payment request.
 class PKPaymentMerchantSession
 ```
 
+```objc
+@interface PKPaymentMerchantSession : NSObject
+```
+
 ## Topics
 
 ### Creating a merchant session
-- [init(dictionary: [AnyHashable : Any])](pkpaymentmerchantsession/init(dictionary:).md)
+- [init(dictionary: [AnyHashable : Any])](./pkpaymentmerchantsession/init%28dictionary%29.md)
   Creates an object that validates the identity of a merchant for a payment request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var status: PKPaymentAuthorizationStatus](pkpaymentrequestmerchantsessionupdate/status.md)
+### Getting information for the merchant session update
+- [var status: PKPaymentAuthorizationStatus](./pkpaymentrequestmerchantsessionupdate/status.md)
   The current authorization status for the payment.
-- [var session: PKPaymentMerchantSession?](pkpaymentrequestmerchantsessionupdate/session.md)
+- [var session: PKPaymentMerchantSession?](./pkpaymentrequestmerchantsessionupdate/session.md)
   An object that validates the identity of a merchant for the payment request.
 
 

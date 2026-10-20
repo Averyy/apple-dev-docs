@@ -1,7 +1,8 @@
 # assessmentSession(_:failedToUpdateTo:error:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a configuration update failed.
 
@@ -17,9 +18,13 @@ Tells the delegate that a configuration update failed.
 optional func assessmentSession(_ session: AEAssessmentSession, failedToUpdateTo configuration: AEAssessmentConfiguration, error: any Error)
 ```
 
+```objc
+- (void) assessmentSession:(AEAssessmentSession *) session failedToUpdateToConfiguration:(AEAssessmentConfiguration *) configuration error:(NSError *) error;
+```
+
 #### Discussion
 
-After you call a session’s [`update(to:)`](aeassessmentsession/update(to:).md) method, the session calls this delegate method if the update fails. If the update succeeds, the session calls [`assessmentSessionDidUpdate(_:)`](aeassessmentsessiondelegate/assessmentsessiondidupdate(_:).md) instead.
+After you call a session’s [`update(to:)`](../aeassessmentsession/update%28to%29.md) method, the session calls this delegate method if the update fails. If the update succeeds, the session calls [`assessmentSessionDidUpdate(_:)`](./assessmentsessiondidupdate%28_%29.md) instead.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ After you call a session’s [`update(to:)`](aeassessmentsession/update(to:).md)
 
 ## See Also
 
-- [func assessmentSessionDidUpdate(AEAssessmentSession)](aeassessmentsessiondelegate/assessmentsessiondidupdate(_:).md)
+### Responding to configuration changes
+- [func assessmentSessionDidUpdate(AEAssessmentSession)](./assessmentsessiondidupdate%28_%29.md)
   Tells the delegate that a configuration update succeeded.
 
 

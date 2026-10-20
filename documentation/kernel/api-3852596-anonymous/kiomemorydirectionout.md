@@ -1,14 +1,15 @@
 # kIOMemoryDirectionOut
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryDirectionOut = 0x00000002
 ```
 

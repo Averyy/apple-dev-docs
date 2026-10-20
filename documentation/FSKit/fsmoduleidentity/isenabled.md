@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the module is enabled.
 
@@ -14,11 +15,16 @@ A Boolean value that indicates if the module is enabled.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [var bundleIdentifier: String](fsmoduleidentity/bundleidentifier.md)
+### Accessing module properties
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The module’s bundle identifier.
-- [var url: URL](fsmoduleidentity/url.md)
+- [var url: URL](./url.md)
   The module’s URL.
 
 

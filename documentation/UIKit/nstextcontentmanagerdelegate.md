@@ -1,7 +1,8 @@
 # NSTextContentManagerDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The optional methods that delegates of content manager objects implement for customizing or validating text elements.
 
@@ -18,27 +19,32 @@ The optional methods that delegates of content manager objects implement for cus
 protocol NSTextContentManagerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextContentManagerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Finding a text element at a specific location
-- [func textContentManager(NSTextContentManager, textElementAt: any NSTextLocation) -> NSTextElement?](nstextcontentmanagerdelegate/textcontentmanager(_:textelementat:).md)
+- [func textContentManager(NSTextContentManager, textElementAt: any NSTextLocation) -> NSTextElement?](./nstextcontentmanagerdelegate/textcontentmanager%28_,textelementat%29.md)
   The method the framework calls to return the text element at a specific location.
 ### Validating a text element
-- [func textContentManager(NSTextContentManager, shouldEnumerate: NSTextElement, options: NSTextContentManager.EnumerationOptions) -> Bool](nstextcontentmanagerdelegate/textcontentmanager(_:shouldenumerate:options:).md)
+- [func textContentManager(NSTextContentManager, shouldEnumerate: NSTextElement, options: NSTextContentManager.EnumerationOptions) -> Bool](./nstextcontentmanagerdelegate/textcontentmanager%28_,shouldenumerate,options%29.md)
   Returns a Boolean value that indicates whether the framework should skip this text element in the enumeration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSTextContentStorageDelegate](nstextcontentstoragedelegate.md)
+- [NSTextContentStorageDelegate](./nstextcontentstoragedelegate.md)
 
 ## See Also
 
-- [var delegate: (any NSTextContentManagerDelegate)?](nstextcontentmanager/delegate.md)
+### Customizing and validating text elements
+- [var delegate: (any NSTextContentManagerDelegate)?](./nstextcontentmanager/delegate.md)
   The delegate for the content manager object.
-- [NSTextContentManager.EnumerationOptions](nstextcontentmanager/enumerationoptions.md)
+- [NSTextContentManager.EnumerationOptions](./nstextcontentmanager/enumerationoptions.md)
   Values that control the order in which the framework enumerates text elements.
 
 

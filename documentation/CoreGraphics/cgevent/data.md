@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,15 +18,16 @@ var data: CFData? { get }
 
 ## See Also
 
-- [var flags: CGEventFlags](cgevent/flags.md)
+### Instance Properties
+- [var flags: CGEventFlags](./flags.md)
   Returns the event flags of a Quartz event.
-- [var location: CGPoint](cgevent/location.md)
+- [var location: CGPoint](./location.md)
   Returns the location of a Quartz mouse event.
-- [var timestamp: CGEventTimestamp](cgevent/timestamp.md)
+- [var timestamp: CGEventTimestamp](./timestamp.md)
   Returns the timestamp of a Quartz event.
-- [var type: CGEventType](cgevent/type.md)
+- [var type: CGEventType](./type.md)
   Returns the event type of a Quartz event (left mouse down, for example).
-- [var unflippedLocation: CGPoint](cgevent/unflippedlocation.md)
+- [var unflippedLocation: CGPoint](./unflippedlocation.md)
   Returns the location of a Quartz mouse event.
 
 

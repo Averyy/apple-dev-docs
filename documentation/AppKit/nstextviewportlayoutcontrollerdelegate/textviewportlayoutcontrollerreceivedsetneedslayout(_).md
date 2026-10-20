@@ -1,7 +1,8 @@
 # textViewportLayoutControllerReceivedSetNeedsLayout(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers relayout of the view.
 
@@ -12,6 +13,10 @@ Triggers relayout of the view.
 
 ```swift
 optional func textViewportLayoutControllerReceivedSetNeedsLayout(_ textViewportLayoutController: NSTextViewportLayoutController)
+```
+
+```objc
+- (void) textViewportLayoutControllerReceivedSetNeedsLayout:(NSTextViewportLayoutController *) textViewportLayoutController;
 ```
 
 ## Parameters

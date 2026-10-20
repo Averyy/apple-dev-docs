@@ -1,18 +1,19 @@
 # CFDataCreateWithBytesNoCopy(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable CFData object from an external (client-owned) byte buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an immutable CFData object from an external (client-owned) byte buffer.
 func CFDataCreateWithBytesNoCopy(_ allocator: CFAllocator!, _ bytes: UnsafePointer<UInt8>!, _ length: CFIndex, _ bytesDeallocator: CFAllocator!) -> CFData!
 ```
 
+```c
+extern CFDataRefCFDataCreateWithBytesNoCopy(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex length, CFAllocatorRef bytesDeallocator);
+```
+
 #### Return Value
 
-A new CFData object, or `NULL` if there was a problem creating the object. On a `NULL` return, the `bytes` buffer is left intact. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new CFData object, or `NULL` if there was a problem creating the object. On a `NULL` return, the `bytes` buffer is left intact. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -37,9 +42,10 @@ This function creates an immutable CFData object from a buffer of unstructured b
 
 ## See Also
 
-- [func CFDataCreate(CFAllocator!, UnsafePointer<UInt8>!, CFIndex) -> CFData!](cfdatacreate(_:_:_:).md)
+### Creating a CFData Object
+- [func CFDataCreate(CFAllocator!, UnsafePointer<UInt8>!, CFIndex) -> CFData!](./cfdatacreate%28_,_,_%29.md)
   Creates an immutable CFData object using data copied from a specified byte buffer.
-- [func CFDataCreateCopy(CFAllocator!, CFData!) -> CFData!](cfdatacreatecopy(_:_:).md)
+- [func CFDataCreateCopy(CFAllocator!, CFData!) -> CFData!](./cfdatacreatecopy%28_,_%29.md)
   Creates an immutable copy of a CFData object.
 
 

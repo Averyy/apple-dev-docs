@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataUnitsFahrenheit
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unit of the characteristic is fahrenheit.
 
@@ -19,9 +20,14 @@ The unit of the characteristic is fahrenheit.
 let HMCharacteristicMetadataUnitsFahrenheit: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataUnitsFahrenheit;
+```
+
 ## See Also
 
-- [let HMCharacteristicMetadataUnitsCelsius: String](hmcharacteristicmetadataunitscelsius.md)
+### Temperature
+- [let HMCharacteristicMetadataUnitsCelsius: String](./hmcharacteristicmetadataunitscelsius.md)
   The unit of the characteristic is celsius.
 
 

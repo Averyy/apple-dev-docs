@@ -1,7 +1,8 @@
 # GK_VERSION
 
 **Framework**: GameplayKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var GK_VERSION: Int32 { get }
+```
+
+```c
+#define GK_VERSION
 ```
 
 

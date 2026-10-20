@@ -1,7 +1,8 @@
 # QuartzFilter
 
 **Framework**: Quartz  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 10.4+
@@ -12,36 +13,41 @@
 class QuartzFilter
 ```
 
+```objc
+@interface QuartzFilter : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init!(URL: URL!)](quartzfilter/init(url:)-8bbzw.md)
-- [init!(outputIntents: [Any]!)](quartzfilter/init(outputintents:).md)
-- [init!(properties: [AnyHashable : Any]!)](quartzfilter/init(properties:).md)
-- [init!(url: URL!)](quartzfilter/init(url:)-5vjm.md)
+- [init!(URL: URL!)](./quartzfilter/init%28url%29-8bbzw.md)
+- [init!(outputIntents: [Any]!)](./quartzfilter/init%28outputintents%29.md)
+- [init!(properties: [AnyHashable : Any]!)](./quartzfilter/init%28properties%29.md)
+- [init!(url: URL!)](./quartzfilter/init%28url%29-5vjm.md)
 ### Instance Methods
-- [func apply(to: CGContext!) -> Bool](quartzfilter/apply(to:).md)
-- [func localizedName() -> String!](quartzfilter/localizedname.md)
-- [func properties() -> [AnyHashable : Any]!](quartzfilter/properties.md)
-- [func remove(from: CGContext!)](quartzfilter/remove(from:).md)
-- [func url() -> URL!](quartzfilter/url.md)
+- [func apply(to: CGContext!) -> Bool](./quartzfilter/apply%28to%29.md)
+- [func localizedName() -> String!](./quartzfilter/localizedname%28%29.md)
+- [func properties() -> [AnyHashable : Any]!](./quartzfilter/properties%28%29.md)
+- [func remove(from: CGContext!)](./quartzfilter/remove%28from%29.md)
+- [func url() -> URL!](./quartzfilter/url%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class QuartzFilterManager](quartzfiltermanager.md)
-- [class QuartzFilterView](quartzfilterview.md)
+### Classes
+- [class QuartzFilterManager](./quartzfiltermanager.md)
+- [class QuartzFilterView](./quartzfilterview.md)
 
 
 ---

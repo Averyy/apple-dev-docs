@@ -1,7 +1,8 @@
 # CAClockSMPTETimeToSeconds(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,18 +13,23 @@
 func CAClockSMPTETimeToSeconds(_ inCAClock: CAClockRef, _ inSMPTETime: UnsafePointer<SMPTETime>, _ outSeconds: UnsafeMutablePointer<CAClockSeconds>) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockSMPTETimeToSeconds(CAClockRef inCAClock, const SMPTETime *inSMPTETime, CAClockSeconds *outSeconds);
+```
+
 ## See Also
 
-- [func CAClockBarBeatTimeToBeats(CAClockRef, UnsafePointer<CABarBeatTime>, UnsafeMutablePointer<CAClockBeats>) -> OSStatus](caclockbarbeattimetobeats(_:_:_:).md)
-- [func CAClockBeatsToBarBeatTime(CAClockRef, CAClockBeats, UInt16, UnsafeMutablePointer<CABarBeatTime>) -> OSStatus](caclockbeatstobarbeattime(_:_:_:_:).md)
-- [func CAClockSecondsToSMPTETime(CAClockRef, CAClockSeconds, UInt16, UnsafeMutablePointer<SMPTETime>) -> OSStatus](caclocksecondstosmptetime(_:_:_:_:).md)
-- [func CAClockTranslateTime(CAClockRef, UnsafePointer<CAClockTime>, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](caclocktranslatetime(_:_:_:_:).md)
-- [enum CAClockTimebase](caclocktimebase.md)
-- [typealias CAClockSeconds](caclockseconds.md)
-- [typealias CAClockBeats](caclockbeats.md)
-- [typealias CAClockSMPTEFormat](caclocksmpteformat.md)
-- [struct CABarBeatTime](cabarbeattime.md)
-- [struct CAMeterTrackEntry](cametertrackentry.md)
+### Converting Time Values
+- [func CAClockBarBeatTimeToBeats(CAClockRef, UnsafePointer<CABarBeatTime>, UnsafeMutablePointer<CAClockBeats>) -> OSStatus](./caclockbarbeattimetobeats%28_,_,_%29.md)
+- [func CAClockBeatsToBarBeatTime(CAClockRef, CAClockBeats, UInt16, UnsafeMutablePointer<CABarBeatTime>) -> OSStatus](./caclockbeatstobarbeattime%28_,_,_,_%29.md)
+- [func CAClockSecondsToSMPTETime(CAClockRef, CAClockSeconds, UInt16, UnsafeMutablePointer<SMPTETime>) -> OSStatus](./caclocksecondstosmptetime%28_,_,_,_%29.md)
+- [func CAClockTranslateTime(CAClockRef, UnsafePointer<CAClockTime>, CAClockTimeFormat, UnsafeMutablePointer<CAClockTime>) -> OSStatus](./caclocktranslatetime%28_,_,_,_%29.md)
+- [enum CAClockTimebase](./caclocktimebase.md)
+- [typealias CAClockSeconds](./caclockseconds.md)
+- [typealias CAClockBeats](./caclockbeats.md)
+- [typealias CAClockSMPTEFormat](./caclocksmpteformat.md)
+- [struct CABarBeatTime](./cabarbeattime.md)
+- [struct CAMeterTrackEntry](./cametertrackentry.md)
 
 
 ---

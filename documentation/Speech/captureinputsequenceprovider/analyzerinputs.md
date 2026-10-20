@@ -1,7 +1,8 @@
 # analyzerInputs
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A new sequence of speech analyzer input objects containing captured audio.
 

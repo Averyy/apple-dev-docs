@@ -1,9 +1,10 @@
 # init(containerView:style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a [`UIHoverEffectLayer`](uihovereffectlayer.md) with the provided `containerView` and `style`. If a `nil` `style` is provided, the automatic style will be used instead.
+Creates a [`UIHoverEffectLayer`](../uihovereffectlayer.md) with the provided `containerView` and `style`. If a `nil` `style` is provided, the automatic style will be used instead.
 
 **Availability**:
 - visionOS 1.0+
@@ -12,6 +13,10 @@ Creates a [`UIHoverEffectLayer`](uihovereffectlayer.md) with the provided `conta
 
 ```swift
 init(containerView: UIView, style: UIHoverStyle?)
+```
+
+```objc
+- (instancetype) initWithContainerView:(UIView *) containerView style:(UIHoverStyle *) style;
 ```
 
 

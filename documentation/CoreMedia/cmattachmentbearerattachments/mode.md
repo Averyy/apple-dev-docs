@@ -1,7 +1,8 @@
 # CMAttachmentBearerAttachments.Mode
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that defines the available attachment modes.
 
@@ -23,27 +24,28 @@ enum Mode
 ## Topics
 
 ### Cases
-- [CMAttachmentBearerAttachments.Mode.shouldPropagate](cmattachmentbearerattachments/mode/shouldpropagate.md)
+- [CMAttachmentBearerAttachments.Mode.shouldPropagate](./mode/shouldpropagate.md)
   A mode that propagates attachments.
-- [CMAttachmentBearerAttachments.Mode.shouldNotPropagate](cmattachmentbearerattachments/mode/shouldnotpropagate.md)
+- [CMAttachmentBearerAttachments.Mode.shouldNotPropagate](./mode/shouldnotpropagate.md)
   A mode that doesn’t propagate attachments.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func merge([String : Any], mode: CMAttachmentBearerAttachments.Mode)](cmattachmentbearerattachments/merge(_:mode:).md)
+### Managing Attachments
+- [func merge([String : Any], mode: CMAttachmentBearerAttachments.Mode)](./merge%28_,mode%29.md)
   Sets a collection of attachments on the object.
-- [func removeAll()](cmattachmentbearerattachments/removeall.md)
+- [func removeAll()](./removeall%28%29.md)
   Removes all attachments from this object.
 
 

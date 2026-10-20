@@ -1,7 +1,8 @@
 # merchantName
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merchant’s display name that the Apple Pay server associates with the payment token.
 
@@ -18,17 +19,22 @@ The merchant’s display name that the Apple Pay server associates with the paym
 var merchantName: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * merchantName;
+```
+
 #### Discussion
 
 Provide the name of the merchant associated with the payment token, to display to the user.
 
 ## See Also
 
-- [var merchantIdentifier: String](pkpaymenttokencontext/merchantidentifier.md)
+### Specifying the merchant
+- [var merchantIdentifier: String](./merchantidentifier.md)
   The Apply Pay merchant identifier.
-- [var merchantDomain: String?](pkpaymenttokencontext/merchantdomain.md)
+- [var merchantDomain: String?](./merchantdomain.md)
   The merchant’s top-level domain that the Apple Pay server associates with the payment token.
-- [var externalIdentifier: String](pkpaymenttokencontext/externalidentifier.md)
+- [var externalIdentifier: String](./externalidentifier.md)
   An external identifier for the merchant.
 
 

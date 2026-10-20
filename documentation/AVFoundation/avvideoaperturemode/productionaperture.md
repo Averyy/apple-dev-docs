@@ -1,7 +1,8 @@
 # productionAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pixel aspect ratio will be applied.
 
@@ -19,15 +20,20 @@ The pixel aspect ratio will be applied.
 static let productionAperture: AVVideoApertureMode
 ```
 
+```c
+extern AVVideoApertureMode const AVVideoApertureModeProductionAperture;
+```
+
 #### Discussion
 
 The image is not cropped to the clean aperture region, but it is scaled according to the pixel aspect ratio. Use this option when you want to see all the pixels in your video, including the edges.
 
 ## See Also
 
-- [static let cleanAperture: AVVideoApertureMode](avvideoaperturemode/cleanaperture.md)
+### Aperture modes
+- [static let cleanAperture: AVVideoApertureMode](./cleanaperture.md)
   The pixel aspect ratio and clean aperture will be applied.
-- [static let encodedPixels: AVVideoApertureMode](avvideoaperturemode/encodedpixels.md)
+- [static let encodedPixels: AVVideoApertureMode](./encodedpixels.md)
   The encoded dimensions of the image description are displayed.
 
 

@@ -1,7 +1,8 @@
 # SubscriptionGroupUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription group update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a subscription group update request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroupUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionGroupUpdateRequest.Data.Attributes](subscriptiongroupupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionGroupUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription group update request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionGroupUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionGroups`
 
 
 ---

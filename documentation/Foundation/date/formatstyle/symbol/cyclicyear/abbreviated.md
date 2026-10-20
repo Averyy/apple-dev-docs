@@ -1,7 +1,8 @@
 # abbreviated
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Custom cyclic year format style that portrays a shortened cyclic year.
 
@@ -22,13 +23,14 @@ static var abbreviated: Date.FormatStyle.Symbol.CyclicYear { get }
 
 #### Discussion
 
-The [`abbreviated`](date/formatstyle/symbol/cyclicyear/abbreviated.md) cyclic year format style is appropriate for space-constrained applications.
+The [`abbreviated`](./abbreviated.md) cyclic year format style is appropriate for space-constrained applications.
 
 ## See Also
 
-- [static var narrow: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/narrow.md)
+### Modifying a Cyclic Year
+- [static var narrow: Date.FormatStyle.Symbol.CyclicYear](./narrow.md)
   Custom cyclic year format style that portrays the shortest representation of a cyclic year.
-- [static var wide: Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.CyclicYear](./wide.md)
   Custom cyclic year format style that portrays a complete representation of a cyclic year.
 
 

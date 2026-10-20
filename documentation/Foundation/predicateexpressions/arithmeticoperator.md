@@ -1,7 +1,8 @@
 # PredicateExpressions.ArithmeticOperator
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -21,19 +22,19 @@ enum ArithmeticOperator
 ## Topics
 
 ### Enumeration Cases
-- [PredicateExpressions.ArithmeticOperator.add](predicateexpressions/arithmeticoperator/add.md)
-- [PredicateExpressions.ArithmeticOperator.multiply](predicateexpressions/arithmeticoperator/multiply.md)
-- [PredicateExpressions.ArithmeticOperator.subtract](predicateexpressions/arithmeticoperator/subtract.md)
+- [PredicateExpressions.ArithmeticOperator.add](./arithmeticoperator/add.md)
+- [PredicateExpressions.ArithmeticOperator.multiply](./arithmeticoperator/multiply.md)
+- [PredicateExpressions.ArithmeticOperator.subtract](./arithmeticoperator/subtract.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

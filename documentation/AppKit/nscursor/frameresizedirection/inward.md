@@ -1,7 +1,8 @@
 # NSCursor.FrameResizeDirection.inward
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the rectangular frame can be resized inwards to be smaller.
 

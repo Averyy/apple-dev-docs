@@ -1,7 +1,8 @@
 # readerIdentifier
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this card reader.
 
@@ -18,11 +19,12 @@ var readerIdentifier: String { get async throws }
 
 #### Discussion
 
-Include this identifier in support requests or tracing incidents to help track down potential problems. If the identifier isn’t readable, getting this value throws a [`PaymentCardReaderError`](paymentcardreadererror.md).
+Include this identifier in support requests or tracing incidents to help track down potential problems. If the identifier isn’t readable, getting this value throws a [`PaymentCardReaderError`](../paymentcardreadererror.md).
 
 ## See Also
 
-- [let options: PaymentCardReader.Options](paymentcardreader/options-swift.property.md)
+### Getting the configuration details
+- [let options: PaymentCardReader.Options](./options-swift.property.md)
   The defined configuration settings when the reader was created.
 
 

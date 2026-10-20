@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the set is a superset of the given set.
@@ -39,6 +40,12 @@ print(employees.isSuperset(of: attendees))
 ## Parameters
 
 - `other`: A set of the same type as the current set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func isSuperset(of: Self) -> Bool](./issuperset%28of%29-88ovx.md)
+  Returns a Boolean value that indicates whether the set is a superset of the given set.
 
 
 ---

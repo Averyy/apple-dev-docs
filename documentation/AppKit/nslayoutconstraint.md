@@ -1,7 +1,8 @@
 # NSLayoutConstraint
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 
@@ -12,6 +13,10 @@ The relationship between two user interface objects that must be satisfied by th
 
 ```swift
 class NSLayoutConstraint
+```
+
+```objc
+@interface NSLayoutConstraint : NSObject
 ```
 
 #### Overview
@@ -43,78 +48,78 @@ A valid layout is defined as a set of constraints with one and only one possible
 
 After solving for the required constraints, Auto Layout tries to solve all the optional constraints in priority order from highest to lowest. If it cannot solve for an optional constraint, it tries to come as close as possible to the desired result, and then moves on to the next constraint.
 
-This combination of inequalities, equalities, and priorities gives you a great amount of flexibility and power. By combining multiple constraints, you can define layouts that dynamically adapt as the size and location of the elements in your user interface change. For more information, see [`NSStackView`](nsstackview.md).
+This combination of inequalities, equalities, and priorities gives you a great amount of flexibility and power. By combining multiple constraints, you can define layouts that dynamically adapt as the size and location of the elements in your user interface change. For more information, see [`NSStackView`](./nsstackview.md).
 
 ## Topics
 
 ### Creating constraints
-- [class func constraints(withVisualFormat: String, options: NSLayoutConstraint.FormatOptions, metrics: [String : Any]?, views: [String : Any]) -> [NSLayoutConstraint]](nslayoutconstraint/constraints(withvisualformat:options:metrics:views:).md)
+- [class func constraints(withVisualFormat: String, options: NSLayoutConstraint.FormatOptions, metrics: [String : Any]?, views: [String : Any]) -> [NSLayoutConstraint]](./nslayoutconstraint/constraints%28withvisualformat,options,metrics,views%29.md)
   Creates constraints described by an ASCII art-like visual format string.
-- [convenience init(item: Any, attribute: NSLayoutConstraint.Attribute, relatedBy: NSLayoutConstraint.Relation, toItem: Any?, attribute: NSLayoutConstraint.Attribute, multiplier: CGFloat, constant: CGFloat)](nslayoutconstraint/init(item:attribute:relatedby:toitem:attribute:multiplier:constant:).md)
+- [convenience init(item: Any, attribute: NSLayoutConstraint.Attribute, relatedBy: NSLayoutConstraint.Relation, toItem: Any?, attribute: NSLayoutConstraint.Attribute, multiplier: CGFloat, constant: CGFloat)](./nslayoutconstraint/init%28item,attribute,relatedby,toitem,attribute,multiplier,constant%29.md)
   Creates a constraint that defines the relationship between the specified attributes of the given views.
 ### Activating and deactivating constraints
-- [var isActive: Bool](nslayoutconstraint/isactive.md)
+- [var isActive: Bool](./nslayoutconstraint/isactive.md)
   The active state of the constraint.
-- [class func activate([NSLayoutConstraint])](nslayoutconstraint/activate(_:).md)
+- [class func activate([NSLayoutConstraint])](./nslayoutconstraint/activate%28_%29.md)
   Activates each constraint in the specified array.
-- [class func deactivate([NSLayoutConstraint])](nslayoutconstraint/deactivate(_:).md)
+- [class func deactivate([NSLayoutConstraint])](./nslayoutconstraint/deactivate%28_%29.md)
   Deactivates each constraint in the specified array.
 ### Accessing constraint data
-- [var firstItem: AnyObject?](nslayoutconstraint/firstitem.md)
+- [var firstItem: AnyObject?](./nslayoutconstraint/firstitem.md)
   The first object participating in the constraint.
-- [var firstAttribute: NSLayoutConstraint.Attribute](nslayoutconstraint/firstattribute.md)
+- [var firstAttribute: NSLayoutConstraint.Attribute](./nslayoutconstraint/firstattribute.md)
   The attribute of the first object participating in the constraint.
-- [var relation: NSLayoutConstraint.Relation](nslayoutconstraint/relation-swift.property.md)
+- [var relation: NSLayoutConstraint.Relation](./nslayoutconstraint/relation-swift.property.md)
   The relation between the two attributes in the constraint.
-- [var secondItem: AnyObject?](nslayoutconstraint/seconditem.md)
+- [var secondItem: AnyObject?](./nslayoutconstraint/seconditem.md)
   The second object participating in the constraint.
-- [var secondAttribute: NSLayoutConstraint.Attribute](nslayoutconstraint/secondattribute.md)
+- [var secondAttribute: NSLayoutConstraint.Attribute](./nslayoutconstraint/secondattribute.md)
   The attribute of the second object participating in the constraint.
-- [var multiplier: CGFloat](nslayoutconstraint/multiplier.md)
+- [var multiplier: CGFloat](./nslayoutconstraint/multiplier.md)
   The multiplier applied to the second attribute participating in the constraint.
-- [var constant: CGFloat](nslayoutconstraint/constant.md)
+- [var constant: CGFloat](./nslayoutconstraint/constant.md)
   The constant added to the multiplied second attribute participating in the constraint.
-- [var firstAnchor: NSLayoutAnchor<AnyObject>](nslayoutconstraint/firstanchor.md)
+- [var firstAnchor: NSLayoutAnchor<AnyObject>](./nslayoutconstraint/firstanchor.md)
   The first anchor that defines the constraint.
-- [var secondAnchor: NSLayoutAnchor<AnyObject>?](nslayoutconstraint/secondanchor.md)
+- [var secondAnchor: NSLayoutAnchor<AnyObject>?](./nslayoutconstraint/secondanchor.md)
   The second anchor that defines the constraint.
 ### Getting the layout priority
-- [var priority: NSLayoutConstraint.Priority](nslayoutconstraint/priority-swift.property.md)
+- [var priority: NSLayoutConstraint.Priority](./nslayoutconstraint/priority-swift.property.md)
   The priority of the constraint.
-- [NSLayoutConstraint.Priority](nslayoutconstraint/priority-swift.struct.md)
+- [NSLayoutConstraint.Priority](./nslayoutconstraint/priority-swift.struct.md)
   Layout priority used to indicate the relative importance of constraints, allowing Auto Layout to make appropriate tradeoffs when satisfying the constraints of the system as a whole.
 ### Identifying a constraint
-- [var identifier: String?](nslayoutconstraint/identifier.md)
+- [var identifier: String?](./nslayoutconstraint/identifier.md)
   The name that identifies the constraint.
 ### Controlling constraint archiving
-- [var shouldBeArchived: Bool](nslayoutconstraint/shouldbearchived.md)
+- [var shouldBeArchived: Bool](./nslayoutconstraint/shouldbearchived.md)
   A Boolean value that determines whether the constraint should be archived by its owning view.
 ### Constants
-- [NSLayoutConstraint.Relation](nslayoutconstraint/relation-swift.enum.md)
+- [NSLayoutConstraint.Relation](./nslayoutconstraint/relation-swift.enum.md)
   The relation between the first attribute and the modified second attribute in a constraint.
-- [NSLayoutConstraint.Attribute](nslayoutconstraint/attribute.md)
+- [NSLayoutConstraint.Attribute](./nslayoutconstraint/attribute.md)
   The part of the object’s visual representation that should be used to get the value for the constraint.
-- [NSLayoutConstraint.FormatOptions](nslayoutconstraint/formatoptions.md)
+- [NSLayoutConstraint.FormatOptions](./nslayoutconstraint/formatoptions.md)
   A bit mask that specifies both a part of an interface element to align and a direction for the alignment between two interface elements.
-- [NSLayoutConstraint.Orientation](nslayoutconstraint/orientation.md)
+- [NSLayoutConstraint.Orientation](./nslayoutconstraint/orientation.md)
   The layout constraint orientation, either horizontal or vertical, that the constraint uses to enforce layout between objects.
-- [struct NSEdgeInsets](../foundation/nsedgeinsets.md)
+- [struct NSEdgeInsets](../Foundation/nsedgeinsets.md)
   A description of the distance between the edges of two rectangles.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

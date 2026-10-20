@@ -1,7 +1,8 @@
 # title
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command alternative’s title.
 
@@ -18,11 +19,16 @@ The command alternative’s title.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var action: Selector](uicommandalternate/action.md)
+### Getting information about the alternative
+- [var action: Selector](./action.md)
   The command alternative’s action-method selector.
-- [var modifierFlags: UIKeyModifierFlags](uicommandalternate/modifierflags.md)
+- [var modifierFlags: UIKeyModifierFlags](./modifierflags.md)
   The bit mask of modifier keys that the user must press to invoke the action for the alternative command.
 
 

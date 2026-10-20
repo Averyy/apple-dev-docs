@@ -1,7 +1,8 @@
 # disableTypeInference()
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Turns off type inference and relies on type inference during runtime.
 
@@ -17,6 +18,10 @@ Turns off type inference and relies on type inference during runtime.
 
 ```swift
 func disableTypeInference()
+```
+
+```objc
+- (void) disableTypeInference;
 ```
 
 

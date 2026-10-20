@@ -1,7 +1,8 @@
 # notAllowed
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This action isn’t allowed.
 

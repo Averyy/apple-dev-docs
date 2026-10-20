@@ -1,7 +1,8 @@
 # currency
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currency to use for this disbursement.
 
@@ -9,7 +10,7 @@ The currency to use for this disbursement.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ Apple Pay interprets the amounts that this request’s summary items provide as 
 
 ## See Also
 
-- [var region: Locale.Region](pkdisbursementrequest/region.md)
+### Setting currency and region information
+- [var region: Locale.Region](./region.md)
   The geographic region that describes the location for this disbursement.
-- [var supportedRegions: [Locale.Region]?](pkdisbursementrequest/supportedregions-1cl0f.md)
+- [var supportedRegions: [Locale.Region]?](./supportedregions-1cl0f.md)
   An array of regions that describe the locations to support.
 
 

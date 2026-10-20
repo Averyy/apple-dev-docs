@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a new collection by concatenating the elements of two collections.
 

@@ -1,7 +1,8 @@
 # device
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The digitizer that generates the touch. Useful to distinguish touches emanating from multiple-device scenarios.
 
@@ -14,9 +15,14 @@ The digitizer that generates the touch. Useful to distinguish touches emanating 
 var device: Any? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id device;
+```
+
 ## See Also
 
-- [var deviceSize: NSSize](nstouch/devicesize.md)
+### Using Touch Device Properties
+- [var deviceSize: NSSize](./devicesize.md)
   The range of the touch device in points, such as 72 ppi.
 
 

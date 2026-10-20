@@ -1,7 +1,8 @@
 # participants
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of participants in the shared record.
 
@@ -10,7 +11,7 @@ The array of participants in the shared record.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBShareParticipant[]? participants;
 ```
 

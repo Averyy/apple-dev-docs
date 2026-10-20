@@ -1,7 +1,8 @@
 # UISplitViewController.SplitBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The split view controller automatically decides the most appropriate split behavior based on the device and the current app size.
 
@@ -18,13 +19,18 @@ The split view controller automatically decides the most appropriate split behav
 case automatic
 ```
 
+```c
+UISplitViewControllerSplitBehaviorAutomatic
+```
+
 ## See Also
 
-- [UISplitViewController.SplitBehavior.tile](uisplitviewcontroller/splitbehavior-swift.enum/tile.md)
+### Constants
+- [UISplitViewController.SplitBehavior.tile](./tile.md)
   The sidebars and secondary view controller appear tiled side-by-side.
-- [UISplitViewController.SplitBehavior.overlay](uisplitviewcontroller/splitbehavior-swift.enum/overlay.md)
+- [UISplitViewController.SplitBehavior.overlay](./overlay.md)
   The sidebars are layered on top of the secondary view controller, leaving the secondary view controller partially visible.
-- [UISplitViewController.SplitBehavior.displace](uisplitviewcontroller/splitbehavior-swift.enum/displace.md)
+- [UISplitViewController.SplitBehavior.displace](./displace.md)
   The sidebars displace the secondary view controller instead of overlapping it, moving it partially offscreen.
 
 

@@ -1,7 +1,8 @@
 # image
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image data for this sample.
 
@@ -19,17 +20,18 @@ let image: CVPixelBuffer
 
 #### Discussion
 
-Provide image data in the [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) or [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb) pixel formats.
+Provide image data in the [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) or [`kCVPixelFormatType_32ARGB`](../../CoreVideo/kcvpixelformattype_32argb.md) pixel formats.
 
 ## See Also
 
-- [var metadata: [String : Any]](photogrammetrysample/metadata.md)
+### Describing the sample
+- [var metadata: [String : Any]](./metadata.md)
   An image’s EXIF metadata.
-- [var depthDataMap: CVPixelBuffer?](photogrammetrysample/depthdatamap.md)
+- [var depthDataMap: CVPixelBuffer?](./depthdatamap.md)
   The image’s depth data.
-- [var gravity: CMAcceleration?](photogrammetrysample/gravity.md)
+- [var gravity: CMAcceleration?](./gravity.md)
   An image’s gravity vector.
-- [var objectMask: CVPixelBuffer?](photogrammetrysample/objectmask.md)
+- [var objectMask: CVPixelBuffer?](./objectmask.md)
   The image’s object mask.
 
 

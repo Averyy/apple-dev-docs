@@ -1,7 +1,8 @@
 # videoMinZoomFactorForCenterStage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum zoom factor available when Center Stage is active.
 
@@ -18,17 +19,22 @@ The minimum zoom factor available when Center Stage is active.
 var videoMinZoomFactorForCenterStage: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat videoMinZoomFactorForCenterStage;
+```
+
 #### Discussion
 
 Devices support a limited zoom range when Center Stage is active. If the device doesn’t support Center Stage, the value is 1.0.
 
 ## See Also
 
-- [var isCenterStageSupported: Bool](avcapturedevice/format/iscenterstagesupported.md)
+### Determining Center Stage support
+- [var isCenterStageSupported: Bool](./iscenterstagesupported.md)
   A Boolean value that indicates whether the format supports Center Stage.
-- [var videoFrameRateRangeForCenterStage: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforcenterstage.md)
+- [var videoFrameRateRangeForCenterStage: AVFrameRateRange?](./videoframeraterangeforcenterstage.md)
   The range of frame rates available when Center Stage is active.
-- [var videoMaxZoomFactorForCenterStage: CGFloat](avcapturedevice/format/videomaxzoomfactorforcenterstage.md)
+- [var videoMaxZoomFactorForCenterStage: CGFloat](./videomaxzoomfactorforcenterstage.md)
   The maximum zoom factor available when Center Stage is active.
 
 

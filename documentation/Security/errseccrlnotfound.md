@@ -1,7 +1,8 @@
 # errSecCRLNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list was not found.
 
@@ -18,6 +19,10 @@ The certificate revocation list was not found.
 
 ```swift
 var errSecCRLNotFound: OSStatus { get }
+```
+
+```c
+errSecCRLNotFound
 ```
 
 

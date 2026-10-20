@@ -1,7 +1,8 @@
 # NSSystemTimeZoneDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification posted when the time zone changes.
 
@@ -18,6 +19,10 @@ A notification posted when the time zone changes.
 
 ```swift
 static let NSSystemTimeZoneDidChange: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const NSSystemTimeZoneDidChangeNotification;
 ```
 
 

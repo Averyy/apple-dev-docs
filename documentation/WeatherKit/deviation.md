@@ -1,7 +1,8 @@
 # Deviation
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes a comparison between two values in a trend.
 
@@ -23,26 +24,26 @@ enum Deviation
 ## Topics
 
 ### Enumeration Cases
-- [Deviation.higher](deviation/higher.md)
+- [Deviation.higher](./deviation/higher.md)
   The most recently observed value is larger than the value it is being compared against.
-- [Deviation.lower](deviation/lower.md)
+- [Deviation.lower](./deviation/lower.md)
   The most recently observed value is lower than the value it is being compared against.
-- [Deviation.muchHigher](deviation/muchhigher.md)
+- [Deviation.muchHigher](./deviation/muchhigher.md)
   The most recently observed value is much larger than the value it is being compared against.
-- [Deviation.muchLower](deviation/muchlower.md)
+- [Deviation.muchLower](./deviation/muchlower.md)
   The most recently observed value is much lower than the value it is being compared against.
-- [Deviation.normal](deviation/normal.md)
+- [Deviation.normal](./deviation/normal.md)
   The most recently observed value is about the same as the value it is being compared against.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

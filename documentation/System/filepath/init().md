@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty, null-terminated path.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(stringLiteral: String)](filepath/init(stringliteral:).md)
+### Creating a File Path
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a file path from a string literal.
 
 

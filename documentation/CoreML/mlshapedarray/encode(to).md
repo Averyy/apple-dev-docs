@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a shaped array.
 
@@ -20,13 +21,16 @@ Encode a shaped array.
 func encode(to encoder: any Encoder) throws
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `Encodable`.
+
 ## Parameters
 
 - `encoder`: The object to encode the shaped array.
 
 ## See Also
 
-- [init(from: any Decoder) throws](mlshapedarray/init(from:).md)
+### Encoding and decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a shaped array from a decoder.
 
 

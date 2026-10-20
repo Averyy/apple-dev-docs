@@ -1,7 +1,8 @@
 # context
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Data related to the message signature, such as the signing certificate.
 
@@ -14,13 +15,18 @@ Data related to the message signature, such as the signing certificate.
 var context: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * context;
+```
+
 ## See Also
 
-- [init(emailAddresses: [MEEmailAddress], signatureLabel: String, context: Data?)](memessagesigner/init(emailaddresses:signaturelabel:context:).md)
+### Describing Message Signers
+- [init(emailAddresses: [MEEmailAddress], signatureLabel: String, context: Data?)](./init%28emailaddresses,signaturelabel,context%29.md)
   Creates a new message signer object that contains the email addresses of the signers, a label, and context data.
-- [var emailAddresses: [MEEmailAddress]](memessagesigner/emailaddresses.md)
+- [var emailAddresses: [MEEmailAddress]](./emailaddresses.md)
   An array of email addresses associated with the signature.
-- [var label: String](memessagesigner/label.md)
+- [var label: String](./label.md)
   A string that the message’s headers use to display the message signer.
 
 

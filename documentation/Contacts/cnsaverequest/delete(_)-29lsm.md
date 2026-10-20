@@ -1,7 +1,8 @@
 # delete(_:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a group from the contact store.
 
@@ -18,6 +19,10 @@ Deletes a group from the contact store.
 func delete(_ group: CNMutableGroup)
 ```
 
+```objc
+- (void) deleteGroup:(CNMutableGroup *) group;
+```
+
 #### Discussion
 
 This method overrides any previously made add request on the group. The group to be deleted must already exist in the contact store. If it does not, the delete request fails, the `CNErrorCodeRecordDoesNotExist` error is thrown, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain that object.
@@ -28,13 +33,14 @@ This method overrides any previously made add request on the group. The group to
 
 ## See Also
 
-- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](cnsaverequest/add(_:tocontainerwithidentifier:)-4ikaa.md)
+### Saving group changes
+- [func add(CNMutableGroup, toContainerWithIdentifier: String?)](./add%28_,tocontainerwithidentifier%29-4ikaa.md)
   Adds a group to the contact store.
-- [func update(CNMutableGroup)](cnsaverequest/update(_:)-8h6f6.md)
+- [func update(CNMutableGroup)](./update%28_%29-8h6f6.md)
   Updates an existing group in the contact store.
-- [func addMember(CNContact, to: CNGroup)](cnsaverequest/addmember(_:to:).md)
+- [func addMember(CNContact, to: CNGroup)](./addmember%28_,to%29.md)
   Adds a contact as a member of a group.
-- [func removeMember(CNContact, from: CNGroup)](cnsaverequest/removemember(_:from:).md)
+- [func removeMember(CNContact, from: CNGroup)](./removemember%28_,from%29.md)
   Removes a contact as a member of a group.
 
 

@@ -1,7 +1,8 @@
 # opcode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 NSNumber
 
@@ -14,15 +15,20 @@ NSNumber
 static let opcode: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey
 ```
 
+```c
+extern NSSpeechPhonemeInfoKey const NSSpeechPhonemeInfoOpcode;
+```
+
 ## See Also
 
-- [static let example: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/example.md)
+### Phoneme Info Keys
+- [static let example: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./example.md)
   An example word that illustrates the use of the phoneme.
-- [static let hiliteEnd: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/hiliteend.md)
+- [static let hiliteEnd: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./hiliteend.md)
   The character offset into the example word that identifies the location of the end of the phoneme.
-- [static let hiliteStart: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/hilitestart.md)
+- [static let hiliteStart: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./hilitestart.md)
   The character offset into the example word that identifies the location of the beginning of the phoneme.
-- [static let symbol: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/symbol.md)
+- [static let symbol: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./symbol.md)
   The symbol used to represent the phoneme.
 
 

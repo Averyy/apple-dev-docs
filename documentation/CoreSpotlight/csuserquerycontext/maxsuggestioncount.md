@@ -1,7 +1,8 @@
 # maxSuggestionCount
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of suggested text completions for the query to return.
 
@@ -18,15 +19,20 @@ The maximum number of suggested text completions for the query to return.
 var maxSuggestionCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger maxSuggestionCount;
+```
+
 #### Discussion
 
 You might specify different limits to account for the amount of available space.
 
 ## See Also
 
-- [var maxResultCount: Int](csuserquerycontext/maxresultcount.md)
+### Configuring search options
+- [var maxResultCount: Int](./maxresultcount.md)
   The maximum number of search results for the query to return.
-- [var disableSemanticSearch: Bool](csuserquerycontext/disablesemanticsearch.md)
+- [var disableSemanticSearch: Bool](./disablesemanticsearch.md)
   A Boolean value that indicates whether to exclude semantic-based search results from the output.
 
 

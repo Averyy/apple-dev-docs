@@ -1,12 +1,13 @@
 # view(forUIConfiguration:excludedKeys:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a filter view for the filter.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,27 @@ Returns a filter view for the filter.
 func view(forUIConfiguration inUIConfiguration: [AnyHashable : Any]!, excludedKeys inKeys: [Any]!) -> IKFilterUIView!
 ```
 
+```objc
+- (IKFilterUIView *) viewForUIConfiguration:(NSDictionary *) inUIConfiguration excludedKeys:(NSArray *) inKeys;
+```
+
 #### Return Value
 
-An [`IKFilterUIView`](https://developer.apple.com/documentation/quartz/ikfilteruiview) object.
+An [`IKFilterUIView`](../../Quartz/ikfilteruiview.md) object.
 
 #### Discussion
 
-Calling this method to receive a view for a filter causes the [`CIFilter`](cifilter-swift.class.md) class to invoke the [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/quartz/ikfiltercustomuiprovider/provideview(foruiconfiguration:excludedkeys:)) method. If you override [`provideView(forUIConfiguration:excludedKeys:)`](https://developer.apple.com/documentation/quartz/ikfiltercustomuiprovider/provideview(foruiconfiguration:excludedkeys:)) the user interface is created by your filter subclass. Otherwise, Core Image automatically generates the user interface based on the filter keys and attributes.
+Calling this method to receive a view for a filter causes the [`CIFilter`](../cifilter-swift.class.md) class to invoke the [`provideView(forUIConfiguration:excludedKeys:)`](../../Quartz/ikfiltercustomuiprovider/provideview%28foruiconfiguration,excludedkeys%29.md) method. If you override [`provideView(forUIConfiguration:excludedKeys:)`](../../Quartz/ikfiltercustomuiprovider/provideview%28foruiconfiguration,excludedkeys%29.md) the user interface is created by your filter subclass. Otherwise, Core Image automatically generates the user interface based on the filter keys and attributes.
 
 Your app can retrieve a view whose control sizes complement the size of user interface elements already used in the application. It is also possible to choose which filter input parameters appear in the view. Consumer applications, for example, may want to show a small, basic set of input parameters whereas professional applications may want to provide access to all input parameters.
 
 When you request a user interface for a parameter set, all keys for that set and below are included. For example, the advanced set consists of all parameters in the basic, intermediate and advanced sets. The development set should contain parameters that are either experimental or for debugging purposes. You should use them only during the development of filters and client applications, and not in a shipping product.
 
-The controls in the view use bindings to set the values of the filter. See [`Cocoa Bindings Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i) if you are unfamiliar with bindings.
+The controls in the view use bindings to set the values of the filter. See [Cocoa Bindings Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaBindings/CocoaBindings.html#//apple_ref/doc/uid/10000167i) if you are unfamiliar with bindings.
 
 ## Parameters
 
-- `inUIConfiguration`: A dictionary that contains values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/quartz/ikuisizeflavor) and [`kCIUIParameterSet`](kciuiparameterset.md) keys. For allowed values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/quartz/ikuisizeflavor) key, see [`User Interface Options`](user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](kciuiparameterset.md) key, see [`User Interface Control Options`](user-interface-control-options.md).
+- `inUIConfiguration`: A dictionary that contains values for the [`IKUISizeFlavor`](../../Quartz/ikuisizeflavor.md) and [`kCIUIParameterSet`](../kciuiparameterset.md) keys. For allowed values for the [`IKUISizeFlavor`](../../Quartz/ikuisizeflavor.md) key, see [User Interface Options](../user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](../kciuiparameterset.md) key, see [User Interface Control Options](../user-interface-control-options.md).
 - `inKeys`: An array of the input keys for which you do *not* want to provide a user interface. Pass `nil` if you want all input keys to be represented in the user interface.
 
 

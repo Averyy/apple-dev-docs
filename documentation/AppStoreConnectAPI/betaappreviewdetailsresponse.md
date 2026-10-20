@@ -1,7 +1,8 @@
 # BetaAppReviewDetailsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of beta app review detail records.
 
@@ -10,7 +11,7 @@ A response containing a list of beta app review detail records.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewDetailsResponse
 ```
 
@@ -23,19 +24,21 @@ object BetaAppReviewDetailsResponse
 
 ## See Also
 
-- [List beta app review details](get-v1-betaappreviewdetails.md)
+### Related Documentation
+- [List beta app review details](./get-v1-betaappreviewdetails.md)
   Find and list beta app review details for all apps.
-- [object BetaAppReviewDetail](betaappreviewdetail.md)
+### Objects
+- [object BetaAppReviewDetail](./betaappreviewdetail.md)
   Contact information and demo credentials provided to App Store reviewers for beta app review.
-- [object BetaAppReviewDetailUpdateRequest](betaappreviewdetailupdaterequest.md)
+- [object BetaAppReviewDetailUpdateRequest](./betaappreviewdetailupdaterequest.md)
   The request body you use to update a Beta App Review Detail.
-- [object BetaAppReviewDetailResponse](betaappreviewdetailresponse.md)
+- [object BetaAppReviewDetailResponse](./betaappreviewdetailresponse.md)
   The response body for endpoints that read or modify the beta review contact and demo details for an app.
-- [object BetaAppReviewDetailWithoutIncludesResponse](betaappreviewdetailwithoutincludesresponse.md)
+- [object BetaAppReviewDetailWithoutIncludesResponse](./betaappreviewdetailwithoutincludesresponse.md)
   A response containing a single beta app review detail, without related resources.
-- [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
+- [object AppBetaTestersLinkagesRequest](./appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
-- [object BetaAppReviewDetailAppLinkageResponse](betaappreviewdetailapplinkageresponse.md)
+- [object BetaAppReviewDetailAppLinkageResponse](./betaappreviewdetailapplinkageresponse.md)
 
 
 ---

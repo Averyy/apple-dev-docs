@@ -1,20 +1,27 @@
 # completionHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completion handler to execute after the activity view controller is dismissed.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 6.0+ - Deprecated in 8.0
+- iPadOS 6.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`completionWithItemsHandler`](./completionwithitemshandler-swift.property.md) property instead.
 
 ## Declaration
 
 ```swift
 var completionHandler: UIActivityViewController.CompletionHandler? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UIActivityViewControllerCompletionHandler completionHandler;
 ```
 
 #### Discussion
@@ -23,9 +30,10 @@ When the user-selected service finishes operating on the data, or when the user 
 
 ## See Also
 
-- [var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler?](uiactivityviewcontroller/completionwithitemshandler-swift.property.md)
+### Accessing the completion handler
+- [var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler?](./completionwithitemshandler-swift.property.md)
   The completion handler to execute after the activity view controller is dismissed.
-- [UIActivityViewController.CompletionWithItemsHandler](uiactivityviewcontroller/completionwithitemshandler-swift.typealias.md)
+- [UIActivityViewController.CompletionWithItemsHandler](./completionwithitemshandler-swift.typealias.md)
   A completion handler to execute after the activity view controller is dismissed.
 
 

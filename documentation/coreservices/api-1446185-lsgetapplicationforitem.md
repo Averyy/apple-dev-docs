@@ -1,12 +1,15 @@
 # LSGetApplicationForItem(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Locates the preferred app for opening an item with a file-system reference.
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`LSCopyDefaultApplicationURLForURL(_:_:_:)`](./api-1448824-lscopydefaultapplicationurlforur.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Locates the preferred app for opening an item with a file-system reference.
 func LSGetApplicationForItem(_ inItemRef: UnsafePointer<FSRef>!, _ inRoleMask: LSRolesMask, _ outAppRef: UnsafeMutablePointer<FSRef>!, _ outAppURL: UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus LSGetApplicationForItem(const FSRef *inItemRef, LSRolesMask inRoleMask, FSRef *outAppRef, CFURLRef *outAppURL);
+```
 
-A result code; see [`Launch Services`](launch_services.md). If no application suitable for opening the item is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
+#### Return Value
+
+A result code; see [Launch Services](./launch_services.md). If no application suitable for opening the item is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
 #### Discussion
 
@@ -25,67 +32,70 @@ Thread-safe since Mac OS version 10.2.
 ## Parameters
 
 - `inItemRef`: A pointer to a file-system reference designating the item whose preferred application is requested; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type.
-- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to the designated item; see [`LSRolesMask`](lsrolesmask.md) for a description of this mask. If the role is unimportant, pass `kLSRolesAll`.
+- `inRolesMask`: A bit mask specifying the application’s desired role or roles with respect to the designated item; see [`LSRolesMask`](./lsrolesmask.md) for a description of this mask. If the role is unimportant, pass `kLSRolesAll`.
 - `outAppRef`: A pointer to a file-system reference that, on return, will identify the item’s preferred application; see the *File Manager Reference* in the Carbon File Management Documentation for a description of the `FSRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppURL` cannot both be `NULL`.
-- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the item’s preferred application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppRef` cannot both be `NULL`. Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
+- `outAppURL`: A pointer to a Core Foundation URL reference that, on return, will identify the item’s preferred application; see the *CFURL Reference* in the Core Foundation Reference Documentation for a description of the `CFURLRef` data type. Pass `NULL` if you are not interested in identifying the preferred application in this form; however, this parameter and `outAppRef` cannot both be `NULL`.
+
+  Despite the absence of the word `Copy` in its name, this function retains the URL reference object on your behalf; you are responsible for releasing this object.
 
 ## See Also
 
-- [func LSGetHandlerOptionsForContentType(CFString!) -> LSHandlerOptions](1445296-lsgethandleroptionsforcontenttyp.md)
+### Deprecated Functions
+- [func LSGetHandlerOptionsForContentType(CFString!) -> LSHandlerOptions](./api-1445296-lsgethandleroptionsforcontenttyp.md)
   Gets the handler options for the specified content type.
-- [func LSSetHandlerOptionsForContentType(CFString!, LSHandlerOptions) -> OSStatus](1447588-lssethandleroptionsforcontenttyp.md)
+- [func LSSetHandlerOptionsForContentType(CFString!, LSHandlerOptions) -> OSStatus](./api-1447588-lssethandleroptionsforcontenttyp.md)
   Sets the handler option for the specified content type.
-- [func LSCopyAllHandlersForURLScheme(CFString) -> Unmanaged<CFArray>?](1443240-lscopyallhandlersforurlscheme.md)
+- [func LSCopyAllHandlersForURLScheme(CFString) -> Unmanaged<CFArray>?](./api-1443240-lscopyallhandlersforurlscheme.md)
   Locates app bundle identifiers for apps capable of handling the specified URL scheme.
-- [func LSCopyDefaultHandlerForURLScheme(CFString) -> Unmanaged<CFString>?](1441725-lscopydefaulthandlerforurlscheme.md)
+- [func LSCopyDefaultHandlerForURLScheme(CFString) -> Unmanaged<CFString>?](./api-1441725-lscopydefaulthandlerforurlscheme.md)
   Returns the bundle identifier of the user’s preferred default handler for the specified URL scheme.
-- [func LSGetApplicationForURL(CFURL!, LSRolesMask, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](1445210-lsgetapplicationforurl.md)
+- [func LSGetApplicationForURL(CFURL!, LSRolesMask, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](./api-1445210-lsgetapplicationforurl.md)
   Locates the preferred app for opening an item with a URL.
-- [func LSGetApplicationForInfo(OSType, OSType, CFString!, LSRolesMask, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](1449928-lsgetapplicationforinfo.md)
+- [func LSGetApplicationForInfo(OSType, OSType, CFString!, LSRolesMask, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](./api-1449928-lsgetapplicationforinfo.md)
   Locates the preferred app for opening items with a specified file type, creator signature, filename extension, or any combination of these characteristics.
-- [func LSCopyApplicationForMIMEType(CFString!, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](1448586-lscopyapplicationformimetype.md)
+- [func LSCopyApplicationForMIMEType(CFString!, LSRolesMask, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](./api-1448586-lscopyapplicationformimetype.md)
   Locates the preferred app for opening items with a specified MIME type.
-- [func LSCanRefAcceptItem(UnsafePointer<FSRef>!, UnsafePointer<FSRef>!, LSRolesMask, LSAcceptanceFlags, UnsafeMutablePointer<DarwinBoolean>!) -> OSStatus](1442183-lscanrefacceptitem.md)
+- [func LSCanRefAcceptItem(UnsafePointer<FSRef>!, UnsafePointer<FSRef>!, LSRolesMask, LSAcceptanceFlags, UnsafeMutablePointer<DarwinBoolean>!) -> OSStatus](./api-1442183-lscanrefacceptitem.md)
   Tests whether an app can accept (open) an item with a file-system reference.
-- [func LSFindApplicationForInfo(OSType, CFString!, CFString!, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](1449588-lsfindapplicationforinfo.md)
+- [func LSFindApplicationForInfo(OSType, CFString!, CFString!, UnsafeMutablePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus](./api-1449588-lsfindapplicationforinfo.md)
   Locates an app with a specified creator signature, bundle ID, filename, or any combination of these characteristics.
-- [func LSOpenApplication(UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!) -> OSStatus](1447930-lsopenapplication.md)
+- [func LSOpenApplication(UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!) -> OSStatus](./api-1447930-lsopenapplication.md)
   Launches the specified app.
-- [func LSOpenItemsWithRole(UnsafePointer<FSRef>!, CFIndex, LSRolesMask, UnsafePointer<AEKeyDesc>!, UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!, CFIndex) -> OSStatus](1449783-lsopenitemswithrole.md)
+- [func LSOpenItemsWithRole(UnsafePointer<FSRef>!, CFIndex, LSRolesMask, UnsafePointer<AEKeyDesc>!, UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!, CFIndex) -> OSStatus](./api-1449783-lsopenitemswithrole.md)
   Opens items with an array of file-system references with a specified role.
-- [func LSOpenURLsWithRole(CFArray!, LSRolesMask, UnsafePointer<AEKeyDesc>!, UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!, CFIndex) -> OSStatus](1448184-lsopenurlswithrole.md)
+- [func LSOpenURLsWithRole(CFArray!, LSRolesMask, UnsafePointer<AEKeyDesc>!, UnsafePointer<LSApplicationParameters>!, UnsafeMutablePointer<ProcessSerialNumber>!, CFIndex) -> OSStatus](./api-1448184-lsopenurlswithrole.md)
   Opens one or more URLs with the specified roles.
-- [func LSOpenFSRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<FSRef>!) -> OSStatus](1445663-lsopenfsref.md)
+- [func LSOpenFSRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<FSRef>!) -> OSStatus](./api-1445663-lsopenfsref.md)
   Opens an item with a file-system reference in the default manner in its preferred app.
-- [func LSOpenFromRefSpec(UnsafePointer<LSLaunchFSRefSpec>!, UnsafeMutablePointer<FSRef>!) -> OSStatus](1444466-lsopenfromrefspec.md)
+- [func LSOpenFromRefSpec(UnsafePointer<LSLaunchFSRefSpec>!, UnsafeMutablePointer<FSRef>!) -> OSStatus](./api-1444466-lsopenfromrefspec.md)
   Opens one or more items with a file-system reference in either their preferred apps or a designated app.
-- [func LSCopyItemInfoForRef(UnsafePointer<FSRef>!, LSRequestedInfo, UnsafeMutablePointer<LSItemInfoRecord>!) -> OSStatus](1445227-lscopyiteminfoforref.md)
+- [func LSCopyItemInfoForRef(UnsafePointer<FSRef>!, LSRequestedInfo, UnsafeMutablePointer<LSItemInfoRecord>!) -> OSStatus](./api-1445227-lscopyiteminfoforref.md)
   Obtains requested information about an item with a file-system reference.
-- [func LSCopyItemInfoForURL(CFURL!, LSRequestedInfo, UnsafeMutablePointer<LSItemInfoRecord>!) -> OSStatus](1445685-lscopyiteminfoforurl.md)
+- [func LSCopyItemInfoForURL(CFURL!, LSRequestedInfo, UnsafeMutablePointer<LSItemInfoRecord>!) -> OSStatus](./api-1445685-lscopyiteminfoforurl.md)
   Obtains requested information about an item with a URL.
-- [func LSCopyDisplayNameForRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1442576-lscopydisplaynameforref.md)
+- [func LSCopyDisplayNameForRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1442576-lscopydisplaynameforref.md)
   Obtains the display name for an item with a file-system reference.
-- [func LSCopyDisplayNameForURL(CFURL!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1446850-lscopydisplaynameforurl.md)
+- [func LSCopyDisplayNameForURL(CFURL!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1446850-lscopydisplaynameforurl.md)
   Obtains the display name for an item with a URL.
-- [func LSCopyKindStringForRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1448593-lscopykindstringforref.md)
+- [func LSCopyKindStringForRef(UnsafePointer<FSRef>!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1448593-lscopykindstringforref.md)
   Obtains the kind string for an item with a file-system reference.
-- [func LSCopyKindStringForURL(CFURL!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1447481-lscopykindstringforurl.md)
+- [func LSCopyKindStringForURL(CFURL!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1447481-lscopykindstringforurl.md)
   Obtains the kind string for an item with a URL.
-- [func LSCopyKindStringForTypeInfo(OSType, OSType, CFString!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1446207-lscopykindstringfortypeinfo.md)
+- [func LSCopyKindStringForTypeInfo(OSType, OSType, CFString!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1446207-lscopykindstringfortypeinfo.md)
   Obtains a kind string for items with a specified file type, creator signature, filename extension, or any combination of these characteristics.
-- [func LSCopyKindStringForMIMEType(CFString!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](1442446-lscopykindstringformimetype.md)
+- [func LSCopyKindStringForMIMEType(CFString!, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> OSStatus](./api-1442446-lscopykindstringformimetype.md)
   Obtains the kind string for a specified MIME type.
-- [func LSCopyItemAttribute(UnsafePointer<FSRef>!, LSRolesMask, CFString!, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>!) -> OSStatus](1445023-lscopyitemattribute.md)
+- [func LSCopyItemAttribute(UnsafePointer<FSRef>!, LSRolesMask, CFString!, UnsafeMutablePointer<Unmanaged<CFTypeRef>?>!) -> OSStatus](./api-1445023-lscopyitemattribute.md)
   Obtains the value of an item’s attribute.
-- [func LSCopyItemAttributes(UnsafePointer<FSRef>!, LSRolesMask, CFArray!, UnsafeMutablePointer<Unmanaged<CFDictionary>?>!) -> OSStatus](1446078-lscopyitemattributes.md)
+- [func LSCopyItemAttributes(UnsafePointer<FSRef>!, LSRolesMask, CFArray!, UnsafeMutablePointer<Unmanaged<CFDictionary>?>!) -> OSStatus](./api-1446078-lscopyitemattributes.md)
   Obtains multiple item attribute values as a dictionary.
-- [func LSGetExtensionInfo(Int, UnsafePointer<UniChar>!, UnsafeMutablePointer<Int>!) -> OSStatus](1446043-lsgetextensioninfo.md)
+- [func LSGetExtensionInfo(Int, UnsafePointer<UniChar>!, UnsafeMutablePointer<Int>!) -> OSStatus](./api-1446043-lsgetextensioninfo.md)
   Obtains the starting index of the extension within a filename.
-- [func LSSetExtensionHiddenForRef(UnsafePointer<FSRef>!, Bool) -> OSStatus](1442766-lssetextensionhiddenforref.md)
+- [func LSSetExtensionHiddenForRef(UnsafePointer<FSRef>!, Bool) -> OSStatus](./api-1442766-lssetextensionhiddenforref.md)
   Specifies whether to show or hide the filename extension for an item with a file-system reference.
-- [func LSSetExtensionHiddenForURL(CFURL!, Bool) -> OSStatus](1443948-lssetextensionhiddenforurl.md)
+- [func LSSetExtensionHiddenForURL(CFURL!, Bool) -> OSStatus](./api-1443948-lssetextensionhiddenforurl.md)
   Specifies whether to show or hide the filename extension for an item with a URL.
-- [func LSRegisterFSRef(UnsafePointer<FSRef>!, Bool) -> OSStatus](1444582-lsregisterfsref.md)
+- [func LSRegisterFSRef(UnsafePointer<FSRef>!, Bool) -> OSStatus](./api-1444582-lsregisterfsref.md)
   Registers an app with a file-system reference in the Launch Services database.
 
 

@@ -1,7 +1,8 @@
 # SetInputLatency
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the input latency of the clock device.
 
@@ -10,7 +11,7 @@ Sets the input latency of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetInputLatency(uint32_t in_latency);
 ```
 
@@ -28,11 +29,12 @@ Drivers can change the latency of the clock device dynamically. If successful, t
 
 ## See Also
 
-- [SetOutputLatency](iouservideoclockdevice/setoutputlatency.md)
+### Working with timing and latency
+- [SetOutputLatency](./setoutputlatency.md)
   Sets the output latency of the clock device.
-- [GetOutputLatency](iouservideoclockdevice/getoutputlatency.md)
+- [GetOutputLatency](./getoutputlatency.md)
   Gets the output latency of the clock device.
-- [GetInputLatency](iouservideoclockdevice/getinputlatency.md)
+- [GetInputLatency](./getinputlatency.md)
   Gets the input latency of the clock device.
 
 

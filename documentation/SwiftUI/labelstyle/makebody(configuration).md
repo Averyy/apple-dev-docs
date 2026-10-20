@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of a label.
@@ -24,7 +25,7 @@ Creates a view that represents the body of a label.
 
 #### Discussion
 
-The system calls this method for each [`Label`](label.md) instance in a view hierarchy where this style is the current label style.
+The system calls this method for each [`Label`](../label.md) instance in a view hierarchy where this style is the current label style.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ The system calls this method for each [`Label`](label.md) instance in a view hie
 
 ## See Also
 
-- [LabelStyle.Configuration](labelstyle/configuration.md)
+### Creating custom label styles
+- [LabelStyle.Configuration](./configuration.md)
   The properties of a label.
-- [associatedtype Body : View](labelstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a label.
 
 

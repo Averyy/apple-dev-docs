@@ -1,7 +1,8 @@
 # percent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style for formatting 8-bit unsigned integers as a percent representation.
 
@@ -20,31 +21,34 @@ A style for formatting 8-bit unsigned integers as a percent representation.
 static var percent: IntegerFormatStyle<UInt8>.Percent { get }
 ```
 
+Available when `Self` is `IntegerFormatStyle<UInt8>.Percent`.
+
 #### Discussion
 
-Use this type property when the call point allows the use of [`IntegerFormatStyle`](integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger).
+Use this type property when the call point allows the use of [`IntegerFormatStyle`](../integerformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryInteger`](../../Swift/binaryinteger.md).
 
 ## See Also
 
-- [static var percent: IntegerFormatStyle<Int>.Percent](formatstyle/percent-cl9k.md)
+### Applying percentage styles for integers
+- [static var percent: IntegerFormatStyle<Int>.Percent](./percent-cl9k.md)
   A style for formatting signed integer types in Swift as a percent representation.
-- [static var percent: IntegerFormatStyle<UInt>.Percent](formatstyle/percent-9pj79.md)
+- [static var percent: IntegerFormatStyle<UInt>.Percent](./percent-9pj79.md)
   A style for formatting signed integer types in Swift as a percent representation.
-- [static var percent: IntegerFormatStyle<Int8>.Percent](formatstyle/percent-7r4rl.md)
+- [static var percent: IntegerFormatStyle<Int8>.Percent](./percent-7r4rl.md)
   A style for formatting 8-bit signed integers as a percent representation.
-- [static var percent: IntegerFormatStyle<Int16>.Percent](formatstyle/percent-3qjzh.md)
+- [static var percent: IntegerFormatStyle<Int16>.Percent](./percent-3qjzh.md)
   A style for formatting 16-bit signed integers as a percent representation.
-- [static var percent: IntegerFormatStyle<Int32>.Percent](formatstyle/percent-1f0q.md)
+- [static var percent: IntegerFormatStyle<Int32>.Percent](./percent-1f0q.md)
   A style for formatting 32-bit signed integers as a percent representation.
-- [static var percent: IntegerFormatStyle<Int64>.Percent](formatstyle/percent-934se.md)
+- [static var percent: IntegerFormatStyle<Int64>.Percent](./percent-934se.md)
   A style for formatting 64-bit signed integers as a percent representation.
-- [static var percent: IntegerFormatStyle<UInt16>.Percent](formatstyle/percent-4kdme.md)
+- [static var percent: IntegerFormatStyle<UInt16>.Percent](./percent-4kdme.md)
   A style for formatting 16-bit unsigned integers as a percent representation.
-- [static var percent: IntegerFormatStyle<UInt32>.Percent](formatstyle/percent-2f11j.md)
+- [static var percent: IntegerFormatStyle<UInt32>.Percent](./percent-2f11j.md)
   A style for formatting 32-bit unsigned integers as a percent representation.
-- [static var percent: IntegerFormatStyle<UInt64>.Percent](formatstyle/percent-8bxla.md)
+- [static var percent: IntegerFormatStyle<UInt64>.Percent](./percent-8bxla.md)
   A style for formatting 64-bit unsigned integers as a percent representation.
-- [IntegerFormatStyle.Percent](integerformatstyle/percent.md)
+- [IntegerFormatStyle.Percent](../integerformatstyle/percent.md)
   A format style that converts between integer percentage values and their textual representations.
 
 

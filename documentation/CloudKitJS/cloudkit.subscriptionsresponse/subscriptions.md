@@ -1,7 +1,8 @@
 # subscriptions
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains the subscriptions for the successful operations.
 
@@ -10,7 +11,7 @@ Contains the subscriptions for the successful operations.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.Subscription[] subscriptions;
 ```
 

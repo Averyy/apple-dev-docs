@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product identifier of the Apple In-App Purchase that the customer selects to purchase outside of the app.
 
@@ -20,7 +21,8 @@ var id: Product.ID { get }
 
 ## See Also
 
-- [let product: Product](purchaseintent/product.md)
+### Identifying the product
+- [let product: Product](./product.md)
   The product information of the Apple In-App Purchase the customer selects to purchase outside of the app.
 
 

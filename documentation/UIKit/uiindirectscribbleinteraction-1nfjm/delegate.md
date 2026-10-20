@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the interaction, to supply and customize writable elements in the interaction’s view.
 
@@ -9,7 +10,7 @@ The delegate for the interaction, to supply and customize writable elements in t
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

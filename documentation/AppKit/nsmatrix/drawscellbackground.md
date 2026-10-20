@@ -1,12 +1,13 @@
 # drawsCellBackground
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the matrix draws the background within each of its cells.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A Boolean that indicates whether the matrix draws the background within each of 
 var drawsCellBackground: Bool { get set }
 ```
 
+```objc
+@property BOOL drawsCellBackground;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix draws the cell background.
+When the value of this property is [`true`](../../Swift/true.md), the matrix draws the cell background.
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsmatrix/backgroundcolor.md)
+### Modifying Graphics Attributes
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color of the matrix (the space between the cells).
-- [var cellBackgroundColor: NSColor?](nsmatrix/cellbackgroundcolor.md)
+- [var cellBackgroundColor: NSColor?](./cellbackgroundcolor.md)
   The background color of the matrix’s cells.
-- [var drawsBackground: Bool](nsmatrix/drawsbackground.md)
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean that indicates whether the matrix draws its background.
 
 

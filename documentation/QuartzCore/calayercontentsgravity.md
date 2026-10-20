@@ -1,7 +1,8 @@
 # CALayerContentsGravity
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 2.0+
@@ -17,62 +18,67 @@
 struct CALayerContentsGravity
 ```
 
+```c
+typedef NSString * CALayerContentsGravity;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](calayercontentsgravity/init(rawvalue:).md)
+- [init(rawValue: String)](./calayercontentsgravity/init%28rawvalue%29.md)
 ### Type Properties
-- [static let bottom: CALayerContentsGravity](calayercontentsgravity/bottom.md)
+- [static let bottom: CALayerContentsGravity](./calayercontentsgravity/bottom.md)
   The content is horizontally centered at the bottom-edge of the bounds rectangle.
-- [static let bottomLeft: CALayerContentsGravity](calayercontentsgravity/bottomleft.md)
+- [static let bottomLeft: CALayerContentsGravity](./calayercontentsgravity/bottomleft.md)
   The content is positioned in the bottom-left corner of the bounds rectangle.
-- [static let bottomRight: CALayerContentsGravity](calayercontentsgravity/bottomright.md)
+- [static let bottomRight: CALayerContentsGravity](./calayercontentsgravity/bottomright.md)
   The content is positioned in the bottom-right corner of the bounds rectangle.
-- [static let center: CALayerContentsGravity](calayercontentsgravity/center.md)
+- [static let center: CALayerContentsGravity](./calayercontentsgravity/center.md)
   The content is horizontally and vertically centered in the bounds rectangle.
-- [static let left: CALayerContentsGravity](calayercontentsgravity/left.md)
+- [static let left: CALayerContentsGravity](./calayercontentsgravity/left.md)
   The content is vertically centered at the left-edge of the bounds rectangle.
-- [static let resize: CALayerContentsGravity](calayercontentsgravity/resize.md)
+- [static let resize: CALayerContentsGravity](./calayercontentsgravity/resize.md)
   The content is resized to fit the entire bounds rectangle.
-- [static let resizeAspect: CALayerContentsGravity](calayercontentsgravity/resizeaspect.md)
+- [static let resizeAspect: CALayerContentsGravity](./calayercontentsgravity/resizeaspect.md)
   The content is resized to fit the bounds rectangle, preserving the aspect of the content. If the content does not completely fill the bounds rectangle, the content is centered in the partial axis.
-- [static let resizeAspectFill: CALayerContentsGravity](calayercontentsgravity/resizeaspectfill.md)
+- [static let resizeAspectFill: CALayerContentsGravity](./calayercontentsgravity/resizeaspectfill.md)
   The content is resized to completely fill the bounds rectangle, while still preserving the aspect of the content. The content is centered in the axis it exceeds.
-- [static let right: CALayerContentsGravity](calayercontentsgravity/right.md)
+- [static let right: CALayerContentsGravity](./calayercontentsgravity/right.md)
   The content is vertically centered at the right-edge of the bounds rectangle.
-- [static let top: CALayerContentsGravity](calayercontentsgravity/top.md)
+- [static let top: CALayerContentsGravity](./calayercontentsgravity/top.md)
   The content is horizontally centered at the top-edge of the bounds rectangle.
-- [static let topLeft: CALayerContentsGravity](calayercontentsgravity/topleft.md)
+- [static let topLeft: CALayerContentsGravity](./calayercontentsgravity/topleft.md)
   The content is positioned in the top-left corner of the bounds rectangle.
-- [static let topRight: CALayerContentsGravity](calayercontentsgravity/topright.md)
+- [static let topRight: CALayerContentsGravity](./calayercontentsgravity/topright.md)
   The content is positioned in the top-right corner of the bounds rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAnimationCalculationMode](caanimationcalculationmode.md)
-- [struct CAAnimationRotationMode](caanimationrotationmode.md)
-- [struct CAEmitterLayerEmitterMode](caemitterlayeremittermode.md)
-- [struct CAEmitterLayerEmitterShape](caemitterlayeremittershape.md)
-- [struct CAEmitterLayerRenderMode](caemitterlayerrendermode.md)
-- [struct CAGradientLayerType](cagradientlayertype.md)
-- [struct CALayerContentsFilter](calayercontentsfilter.md)
-- [struct CALayerContentsFormat](calayercontentsformat.md)
-- [struct CALayerCornerCurve](calayercornercurve.md)
-- [struct CAMediaTimingFillMode](camediatimingfillmode.md)
-- [struct CAMediaTimingFunctionName](camediatimingfunctionname.md)
-- [struct CAScrollLayerScrollMode](cascrolllayerscrollmode.md)
-- [struct CAShapeLayerFillRule](cashapelayerfillrule.md)
-- [struct CAShapeLayerLineCap](cashapelayerlinecap.md)
-- [struct CAShapeLayerLineJoin](cashapelayerlinejoin.md)
+### Data Types
+- [struct CAAnimationCalculationMode](./caanimationcalculationmode.md)
+- [struct CAAnimationRotationMode](./caanimationrotationmode.md)
+- [struct CAEmitterLayerEmitterMode](./caemitterlayeremittermode.md)
+- [struct CAEmitterLayerEmitterShape](./caemitterlayeremittershape.md)
+- [struct CAEmitterLayerRenderMode](./caemitterlayerrendermode.md)
+- [struct CAGradientLayerType](./cagradientlayertype.md)
+- [struct CALayerContentsFilter](./calayercontentsfilter.md)
+- [struct CALayerContentsFormat](./calayercontentsformat.md)
+- [struct CALayerCornerCurve](./calayercornercurve.md)
+- [struct CAMediaTimingFillMode](./camediatimingfillmode.md)
+- [struct CAMediaTimingFunctionName](./camediatimingfunctionname.md)
+- [struct CAScrollLayerScrollMode](./cascrolllayerscrollmode.md)
+- [struct CAShapeLayerFillRule](./cashapelayerfillrule.md)
+- [struct CAShapeLayerLineCap](./cashapelayerlinecap.md)
+- [struct CAShapeLayerLineJoin](./cashapelayerlinejoin.md)
 
 
 ---

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ipv6_mreq {
     ...
 };
@@ -17,8 +17,8 @@ struct ipv6_mreq {
 ## Topics
 
 ### Instance Properties
-- [ipv6mr_interface](ipv6_mreq/1527524-ipv6mr_interface.md)
-- [ipv6mr_multiaddr](ipv6_mreq/1527650-ipv6mr_multiaddr.md)
+- [ipv6mr_interface](./ipv6_mreq/api-1527524-ipv6mr_interface.md)
+- [ipv6mr_multiaddr](./ipv6_mreq/api-1527650-ipv6mr_multiaddr.md)
 
 
 ---

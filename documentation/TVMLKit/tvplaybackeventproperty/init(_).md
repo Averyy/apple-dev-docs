@@ -1,10 +1,13 @@
 # init(_:)
 
 **Framework**: TVMLKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,7 +17,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](tvplaybackeventproperty/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
 
 
 ---

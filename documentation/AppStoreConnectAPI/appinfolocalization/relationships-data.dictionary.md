@@ -1,7 +1,8 @@
 # AppInfoLocalization.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppInfoLocalization.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppInfoLocalization.Relationships.AppInfo](appinfolocalization/relationships-data.dictionary/appinfo-data.dictionary.md)
+- [object AppInfoLocalization.Relationships.AppInfo](./relationships-data.dictionary/appinfo-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppInfoLocalization.Relationships
 
 ## See Also
 
-- [object AppInfoLocalization.Attributes](appinfolocalization/attributes-data.dictionary.md)
+### Objects
+- [object AppInfoLocalization.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Info Localizations resource.
 
 

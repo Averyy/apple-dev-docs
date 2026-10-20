@@ -1,7 +1,8 @@
 # definition
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system definition of the QUIC transport protocol.
 
@@ -22,7 +23,8 @@ static let definition: NWProtocolDefinition
 
 ## See Also
 
-- [NWProtocolQUIC.Options](nwprotocolquic/options.md)
+### Creating QUIC Connections
+- [NWProtocolQUIC.Options](./options.md)
   A container of options that configure the use of QUIC on a connection.
 
 

@@ -1,7 +1,8 @@
 # displayedHostname
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Internal use only.
 
@@ -10,7 +11,7 @@ Internal use only.
 
 ## Declaration
 
-```swift
+```
 attribute string? displayedHostname;
 ```
 

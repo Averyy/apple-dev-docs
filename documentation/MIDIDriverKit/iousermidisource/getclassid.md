@@ -1,23 +1,25 @@
 # GetClassID
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUserMIDIClassID GetClassID() const;
 ```
 
 ## See Also
 
-- [GetBaseClassID](iousermidisource/getbaseclassid.md)
-- [Send](iousermidisource/send.md)
-- [free](iousermidisource/free.md)
-- [init](iousermidisource/init.md)
+### Instance Methods
+- [GetBaseClassID](./getbaseclassid.md)
+- [Send](./send.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

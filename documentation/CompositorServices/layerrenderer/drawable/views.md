@@ -1,7 +1,8 @@
 # views
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of viewports that tell you how to draw to the drawable’s textures
 
@@ -21,7 +22,8 @@ The drawable provides one view for each distinct image you need to render. For e
 
 ## See Also
 
-- [LayerRenderer.Drawable.View](layerrenderer/drawable/view.md)
+### Getting the views
+- [LayerRenderer.Drawable.View](./view.md)
   A type that provides information on how to render content into the frame’s textures.
 
 

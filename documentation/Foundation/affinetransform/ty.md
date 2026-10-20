@@ -1,7 +1,8 @@
 # tY
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An element of the transform matrix that contributes translation.
 
@@ -16,15 +17,16 @@ var tY: CGFloat
 
 ## See Also
 
-- [var m11: CGFloat](affinetransform/m11.md)
+### Accessing the Transformation Matrix
+- [var m11: CGFloat](./m11.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m12: CGFloat](affinetransform/m12.md)
+- [var m12: CGFloat](./m12.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m21: CGFloat](affinetransform/m21.md)
+- [var m21: CGFloat](./m21.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var m22: CGFloat](affinetransform/m22.md)
+- [var m22: CGFloat](./m22.md)
   An element of the transform matrix that contributes scaling, rotation, and shear.
-- [var tX: CGFloat](affinetransform/tx.md)
+- [var tX: CGFloat](./tx.md)
   An element of the transform matrix that contributes translation.
 
 

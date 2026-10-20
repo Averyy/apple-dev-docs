@@ -1,7 +1,8 @@
 # LitLightingModel
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration for RealityKit’s physically based lighting model.
 
@@ -22,41 +23,42 @@ struct LitLightingModel
 ## Topics
 
 ### Configuring shading models
-- [var diffuseModel: LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.property.md)
+- [var diffuseModel: LitLightingModel.DiffuseModel](./litlightingmodel/diffusemodel-swift.property.md)
   The diffuse algorithm to use.
-- [LitLightingModel.DiffuseModel](litlightingmodel/diffusemodel-swift.enum.md)
-  The diffuse lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
-- [var specularModel: LitLightingModel.SpecularModel](litlightingmodel/specularmodel-swift.property.md)
+- [LitLightingModel.DiffuseModel](./litlightingmodel/diffusemodel-swift.enum.md)
+  The diffuse lighting algorithm used in a [`LitLightingModel`](./litlightingmodel.md).
+- [var specularModel: LitLightingModel.SpecularModel](./litlightingmodel/specularmodel-swift.property.md)
   The specular algorithm to use.
-- [LitLightingModel.SpecularModel](litlightingmodel/specularmodel-swift.enum.md)
-  The specular lighting algorithm used in a [`LitLightingModel`](litlightingmodel.md).
+- [LitLightingModel.SpecularModel](./litlightingmodel/specularmodel-swift.enum.md)
+  The specular lighting algorithm used in a [`LitLightingModel`](./litlightingmodel.md).
 ### Enabling lighting features
-- [var isSubsurfaceScatteringEnabled: Bool](litlightingmodel/issubsurfacescatteringenabled.md)
+- [var isSubsurfaceScatteringEnabled: Bool](./litlightingmodel/issubsurfacescatteringenabled.md)
   Whether to include subsurface scattering in the lighting calculation.
-- [var isClearcoatEnabled: Bool](litlightingmodel/isclearcoatenabled.md)
+- [var isClearcoatEnabled: Bool](./litlightingmodel/isclearcoatenabled.md)
   Whether to include a clearcoat layer in the lighting calculation.
-- [var isMultiscatteringEnabled: Bool](litlightingmodel/ismultiscatteringenabled.md)
+- [var isMultiscatteringEnabled: Bool](./litlightingmodel/ismultiscatteringenabled.md)
   Whether to account for multiple scattering between microfacets.
-- [var isBentNormalEnabled: Bool](litlightingmodel/isbentnormalenabled.md)
+- [var isBentNormalEnabled: Bool](./litlightingmodel/isbentnormalenabled.md)
   Whether to apply bent normal maps to improve ambient occlusion accuracy.
 ### Initializers
-- [init()](litlightingmodel/init.md)
+- [init()](./litlightingmodel/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum LightingModel](lightingmodel.md)
-  The lighting model used by a [`ShaderGraphMaterial.Program`](shadergraphmaterial/program-swift.struct.md).
-- [struct UnlitLightingModel](unlitlightingmodel.md)
+### Lighting models
+- [enum LightingModel](./lightingmodel.md)
+  The lighting model used by a [`ShaderGraphMaterial.Program`](./shadergraphmaterial/program-swift.struct.md).
+- [struct UnlitLightingModel](./unlitlightingmodel.md)
   Configuration for an unlit lighting model, which renders without any light interaction.
-- [struct HairLightingModel](hairlightingmodel.md)
+- [struct HairLightingModel](./hairlightingmodel.md)
   Configuration for RealityKit’s hair lighting model.
 
 

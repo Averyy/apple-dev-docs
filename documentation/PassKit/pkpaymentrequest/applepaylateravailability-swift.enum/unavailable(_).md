@@ -1,7 +1,8 @@
 # PKPaymentRequest.ApplePayLaterAvailability.unavailable(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apple Pay Later is not available.
 
@@ -10,8 +11,8 @@ Apple Pay Later is not available.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
-- watchOS ?+
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ case unavailable(PKPaymentRequest.ApplePayLaterAvailability.Reason)
 
 ## See Also
 
-- [PKPaymentRequest.ApplePayLaterAvailability.available](pkpaymentrequest/applepaylateravailability-swift.enum/available.md)
+### Availability
+- [PKPaymentRequest.ApplePayLaterAvailability.available](./available.md)
   Apple Pay Later is available.
 
 

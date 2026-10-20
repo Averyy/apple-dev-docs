@@ -1,14 +1,15 @@
 # kBluetoothHCIErrorHostRejectedUnacceptableDeviceAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIErrorHostRejectedUnacceptableDeviceAddress = 0x0F
 ```
 

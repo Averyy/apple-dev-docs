@@ -1,7 +1,8 @@
 # UITextSmartInsertDeleteType.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the default behavior for inserting and deleting space characters.
 
@@ -18,15 +19,20 @@ Use the default behavior for inserting and deleting space characters.
 case `default`
 ```
 
+```c
+UITextSmartInsertDeleteTypeDefault
+```
+
 #### Discussion
 
 This option selectively enables the automatic deletion of one or two neighboring spaces after a cut or delete, and the insertion of an extra space after a paste. For example, this option disables the behavior for email address and password keyboards.
 
 ## See Also
 
-- [UITextSmartInsertDeleteType.no](uitextsmartinsertdeletetype/no.md)
+### Constants
+- [UITextSmartInsertDeleteType.no](./no.md)
   Disable the insertion or deletion of extra spaces.
-- [UITextSmartInsertDeleteType.yes](uitextsmartinsertdeletetype/yes.md)
+- [UITextSmartInsertDeleteType.yes](./yes.md)
   Enable the insertion or deletion of extra spaces.
 
 

@@ -1,7 +1,8 @@
 # recurringPaymentRequest
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recurring payment request to update the payment request with.
 
@@ -18,11 +19,15 @@ The recurring payment request to update the payment request with.
 var recurringPaymentRequest: PKRecurringPaymentRequest? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PKRecurringPaymentRequest * recurringPaymentRequest;
+```
+
 #### Discussion
 
 The default value is `nil`, which indicates the recurring payment request doesn’t require an update.
 
-> ⚠️ **Warning**:  Changing the [`billingAgreement`](pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
+> ⚠️ **Warning**:  Changing the [`billingAgreement`](../pkrecurringpaymentrequest/billingagreement.md) along with this property causes the framework to invalidate the current payment request, close the payment sheet, and return an error in the completion handler.
 
 You can’t use this property simultaneously with multitoken contexts or automatic reload payment requests.
 

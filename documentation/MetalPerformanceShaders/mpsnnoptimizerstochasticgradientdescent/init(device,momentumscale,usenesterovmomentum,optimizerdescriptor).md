@@ -1,7 +1,8 @@
 # init(device:momentumScale:useNesterovMomentum:optimizerDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, momentumScale: Float, useNesterovMomentum: Bool, optimizerDescriptor: MPSNNOptimizerDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device momentumScale:(float) momentumScale useNesterovMomentum:(BOOL) useNesterovMomentum optimizerDescriptor:(MPSNNOptimizerDescriptor *) optimizerDescriptor;
 ```
 
 

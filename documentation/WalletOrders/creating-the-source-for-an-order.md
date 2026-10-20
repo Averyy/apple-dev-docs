@@ -1,6 +1,7 @@
 # Creating the source for an order
 
-**Framework**: Wallet Orders
+**Framework**: Wallet Orders  
+**Role**: Article
 
 Define an order by creating the directory structure, and adding source files and images.
 
@@ -12,15 +13,15 @@ An order is a self-contained package that represents a purchase a user makes, an
 - An `order.json` file that contains the strings the system displays to describe the order, and the current state of any fulfillments and tracking metadata.
 - Optional localization information.
 
-Create the source in a directory that you use to create the final distributable order package. For information about building the order package and donating to Wallet, see [`Building a distributable order package`](building-a-distributable-order-package.md).
+Create the source in a directory that you use to create the final distributable order package. For information about building the order package and donating to Wallet, see [Building a distributable order package](./building-a-distributable-order-package.md).
 
-##### Create the Directory and Add Files and Images
+##### Create the directory and add files and images
 
-Create a directory to hold all the source files. Add the `order.json` file that contains the information and metadata for the order. For more information about the contents of this file, see the top-level [`Order`](order.md) object.
+Create a directory to hold all the source files. Add the `order.json` file that contains the information and metadata for the order. For more information about the contents of this file, see the top-level [`Order`](./order.md) object.
 
 Create a visually rich order by providing product images of line items and a merchant logo to represent your company or brand. The system displays product images in notifications, including on the Lock Screen, when you publish relevant updates to the order.
 
-##### Add Localization
+##### Add localization
 
 You can expand your audience by localizing the strings and images of your order for different languages and regions. Add a directory at the top-level source directory of each order for each localization. The name of the directory identifies the language and an optional region.
 
@@ -28,15 +29,15 @@ You can expand your audience by localizing the strings and images of your order 
 [language identifier]-[region identifier].lproj
 ```
 
-For example, the name for the French localization directory is `fr.lproj`, and the name for the Simplified Chinese directory is `zh-Hans.lproj`. For more information about language identifiers, see [`Choosing localization regions and scripts`](https://developer.apple.com/documentation/xcode/choosing-localization-regions-and-scripts).
+For example, the name for the French localization directory is `fr.lproj`, and the name for the Simplified Chinese directory is `zh-Hans.lproj`. For more information about language identifiers, see [Choosing localization regions and scripts](../Xcode/choosing-localization-regions-and-scripts.md).
 
 Localize an image by adding the location-specific image files to each localization directory. For example, to add localized versions of a merchant logo, add the English version of `logo@2x.png` and `logo@3x.png` files to the `en.lprojfolder`, and the Simplified Chinese version of the `logo@2x.png` and `logo@3x.png` files to the `zh-Hans.lproj` folder. Reference your image in the `order.json` by the filename `logo`. Be sure to provide the same number of resolutions for each localization.
 
 > **Note**:  Adding an image of the same name to the top-level folder of the order file overrides any localized versions.
 
-##### Localize the Strings
+##### Localize the strings
 
-The system localizes the strings in your order using a strings file that contains a list of keys and associated localized strings. For more information about fields that are localizable, see the top-level [`Order`](order.md) object.
+The system localizes the strings in your order using a strings file that contains a list of keys and associated localized strings. For more information about fields that are localizable, see the top-level [`Order`](./order.md) object.
 
 Add localized strings to your order using the following steps:
 
@@ -82,15 +83,16 @@ The system localizes fields that contain dates and times that use standard forma
 
 ## See Also
 
-- [Building a distributable order package](building-a-distributable-order-package.md)
+### Essentials
+- [Building a distributable order package](./building-a-distributable-order-package.md)
   Prepare an order for distribution by building, signing, and compressing the source files.
-- [Retrieve the registrations for a device](retrieve-the-registrations-for-a-device.md)
+- [Retrieve the registrations for a device](./retrieve-the-registrations-for-a-device.md)
   Retrieves the identifiers of the orders that the device registered for.
-- [Retrieve the latest version of an order](retrieve-the-latest-version-of-an-order.md)
+- [Retrieve the latest version of an order](./retrieve-the-latest-version-of-an-order.md)
   Retrieves the latest signed and compressed version of an order.
-- [object Order](order.md)
+- [object Order](./order.md)
   The order’s details, including information about the products or services rendered, customer service, and fulfillment.
-- [Example Order Packages](example-order-packages.md)
+- [Example Order Packages](./example-order-packages.md)
   Edit, build, and add example order packages to Wallet.
 
 

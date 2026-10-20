@@ -1,7 +1,8 @@
 # init(rawRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-521 public key for signing from a collection of bytes.
 
@@ -26,15 +27,16 @@ init<D>(rawRepresentation: D) throws where D : ContiguousBytes
 
 ## See Also
 
-- [init<Bytes>(compactRepresentation: Bytes) throws](p521/signing/publickey/init(compactrepresentation:).md)
+### Creating a key
+- [init<Bytes>(compactRepresentation: Bytes) throws](./init%28compactrepresentation%29.md)
   Creates a P-521 public key for signing from a compact representation of the key.
-- [init<Bytes>(compressedRepresentation: Bytes) throws](p521/signing/publickey/init(compressedrepresentation:).md)
+- [init<Bytes>(compressedRepresentation: Bytes) throws](./init%28compressedrepresentation%29.md)
   Creates a P-521 public key for signing from a compressed representation of the key.
-- [init<Bytes>(derRepresentation: Bytes) throws](p521/signing/publickey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./init%28derrepresentation%29.md)
   Creates a P-521 public key for signing from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p521/signing/publickey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./init%28pemrepresentation%29.md)
   Creates a P-521 public key for signing from a Privacy-Enhanced Mail (PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p521/signing/publickey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./init%28x963representation%29.md)
   Creates a P-521 public key for signing from an ANSI x9.63 representation.
 
 

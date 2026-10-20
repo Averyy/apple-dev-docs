@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.ScheduleType.schedule
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person logged this dose event in response to a scheduled medication reminder.
 
@@ -17,6 +18,10 @@ The person logged this dose event in response to a scheduled medication reminder
 
 ```swift
 case schedule
+```
+
+```c
+HKMedicationDoseEventScheduleTypeSchedule
 ```
 
 

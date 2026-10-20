@@ -1,9 +1,10 @@
 # kCVZeroTime
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Zero time or duration. For example, [`CVDisplayLinkGetOutputVideoLatency(_:)`](cvdisplaylinkgetoutputvideolatency(_:).md) returns `kCVZeroTime` for zero video latency.
+Zero time or duration. For example, [`CVDisplayLinkGetOutputVideoLatency(_:)`](./cvdisplaylinkgetoutputvideolatency%28_%29.md) returns `kCVZeroTime` for zero video latency.
 
 **Availability**:
 - iOS 4.0+
@@ -20,10 +21,15 @@ Zero time or duration. For example, [`CVDisplayLinkGetOutputVideoLatency(_:)`](c
 let kCVZeroTime: CVTime
 ```
 
+```c
+extern const CVTime kCVZeroTime;
+```
+
 ## See Also
 
-- [let kCVIndefiniteTime: CVTime](kcvindefinitetime.md)
-  An unknown or indefinite time. For example, [`CVDisplayLinkGetNominalOutputVideoRefreshPeriod(_:)`](cvdisplaylinkgetnominaloutputvideorefreshperiod(_:).md) returns `kCVIndefiniteTime` if the display link specified is not valid.
+### Constants
+- [let kCVIndefiniteTime: CVTime](./kcvindefinitetime.md)
+  An unknown or indefinite time. For example, [`CVDisplayLinkGetNominalOutputVideoRefreshPeriod(_:)`](./cvdisplaylinkgetnominaloutputvideorefreshperiod%28_%29.md) returns `kCVIndefiniteTime` if the display link specified is not valid.
 
 
 ---

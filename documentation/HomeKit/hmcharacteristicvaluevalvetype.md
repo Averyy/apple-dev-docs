@@ -1,7 +1,8 @@
 # HMCharacteristicValueValveType
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for a valve type.
 
@@ -19,29 +20,33 @@ Possible values for a valve type.
 enum HMCharacteristicValueValveType
 ```
 
+```c
+enum HMCharacteristicValueValveType : NSInteger;
+```
+
 ## Topics
 
 ### Valve Types
-- [HMCharacteristicValueValveType.genericValve](hmcharacteristicvaluevalvetype/genericvalve.md)
+- [HMCharacteristicValueValveType.genericValve](./hmcharacteristicvaluevalvetype/genericvalve.md)
   A generic valve.
-- [HMCharacteristicValueValveType.irrigation](hmcharacteristicvaluevalvetype/irrigation.md)
+- [HMCharacteristicValueValveType.irrigation](./hmcharacteristicvaluevalvetype/irrigation.md)
   An irrigation valve.
-- [HMCharacteristicValueValveType.showerHead](hmcharacteristicvaluevalvetype/showerhead.md)
+- [HMCharacteristicValueValveType.showerHead](./hmcharacteristicvaluevalvetype/showerhead.md)
   A shower head.
-- [HMCharacteristicValueValveType.waterFaucet](hmcharacteristicvaluevalvetype/waterfaucet.md)
+- [HMCharacteristicValueValveType.waterFaucet](./hmcharacteristicvaluevalvetype/waterfaucet.md)
   A water faucet.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluevalvetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluevalvetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

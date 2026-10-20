@@ -1,18 +1,19 @@
 # MIDINotificationMessageID
 
 **Framework**: Core MIDI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of state changes the system supports.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,43 +21,48 @@ The types of state changes the system supports.
 enum MIDINotificationMessageID
 ```
 
+```c
+enum MIDINotificationMessageID : SInt32;
+```
+
 ## Topics
 
 ### Change Types
-- [MIDINotificationMessageID.msgSetupChanged](midinotificationmessageid/msgsetupchanged.md)
+- [MIDINotificationMessageID.msgSetupChanged](./midinotificationmessageid/msgsetupchanged.md)
   Some aspect of the current MIDI setup changed.
-- [MIDINotificationMessageID.msgObjectAdded](midinotificationmessageid/msgobjectadded.md)
+- [MIDINotificationMessageID.msgObjectAdded](./midinotificationmessageid/msgobjectadded.md)
   The system added a device, entity, or endpoint.
-- [MIDINotificationMessageID.msgObjectRemoved](midinotificationmessageid/msgobjectremoved.md)
+- [MIDINotificationMessageID.msgObjectRemoved](./midinotificationmessageid/msgobjectremoved.md)
   The system removed a device, entity, or endpoint.
-- [MIDINotificationMessageID.msgPropertyChanged](midinotificationmessageid/msgpropertychanged.md)
+- [MIDINotificationMessageID.msgPropertyChanged](./midinotificationmessageid/msgpropertychanged.md)
   An object’s property value changed.
-- [MIDINotificationMessageID.msgThruConnectionsChanged](midinotificationmessageid/msgthruconnectionschanged.md)
+- [MIDINotificationMessageID.msgThruConnectionsChanged](./midinotificationmessageid/msgthruconnectionschanged.md)
   The system created or disposed of a persistent MIDI Thru connection.
-- [MIDINotificationMessageID.msgSerialPortOwnerChanged](midinotificationmessageid/msgserialportownerchanged.md)
+- [MIDINotificationMessageID.msgSerialPortOwnerChanged](./midinotificationmessageid/msgserialportownerchanged.md)
   The system changed a serial port owner.
-- [MIDINotificationMessageID.msgIOError](midinotificationmessageid/msgioerror.md)
+- [MIDINotificationMessageID.msgIOError](./midinotificationmessageid/msgioerror.md)
   A driver I/O error occurred.
 ### Enumeration Cases
-- [MIDINotificationMessageID.msgInternalStart](midinotificationmessageid/msginternalstart.md)
+- [MIDINotificationMessageID.msgInternalStart](./midinotificationmessageid/msginternalstart.md)
 ### Initializers
-- [init?(rawValue: Int32)](midinotificationmessageid/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./midinotificationmessageid/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var messageID: MIDINotificationMessageID](midinotification/messageid.md)
+### Inspecting the Notification
+- [var messageID: MIDINotificationMessageID](./midinotification/messageid.md)
   An identifier that describes the type of state change.
-- [var messageSize: UInt32](midinotification/messagesize.md)
+- [var messageSize: UInt32](./midinotification/messagesize.md)
   The size of the message including its ID.
 
 

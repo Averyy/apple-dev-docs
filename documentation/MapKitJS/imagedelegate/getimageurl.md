@@ -1,26 +1,30 @@
 # getImageUrl(ratio, callback)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Interface Method
 
 Returns the URL to an image of the specified scale.
 
 **Availability**:
-- MapKit JS 5.74+
+- MapKit JS 5.74+ - Deprecated in 6.0
+
+> **Deprecated**: Use [`getImage()`](./getimage.md) instead, which supports both URLs and [`ImageSource`](../imagesource.md) objects.
 
 ## Declaration
 
-```swift
+```
 getImageUrl?(ratio: number, callback: (url: string | null) => void): void;
 ```
 
 ## Mentions
 
-- [MapKit JS 6](mapkit-js-6.md)
+- [MapKit JS 6](../mapkit-js-6.md)
 
 ## See Also
 
-- [getImage(ratio)](imagedelegate/getimage.md)
+### Returning an image
+- [getImage(ratio)](./getimage.md)
   Returns an image for the specified scale.
 
 

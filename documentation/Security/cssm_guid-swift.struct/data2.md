@@ -1,7 +1,8 @@
 # Data2
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var Data2: uint16
+```
+
+```c
+uint16 Data2;
 ```
 
 

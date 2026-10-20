@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kAlwaysSendSubject: Int](../coreservices/kalwayssendsubject.md)
-- [var kDontFindAppBySignature: Int](../coreservices/kdontfindappbysignature.md)
-- [var kLaunchToGetTerminology: Int](../coreservices/klaunchtogetterminology.md)
+- [var kAlwaysSendSubject: Int](../../coreservices/kalwayssendsubject.md)
+- [var kDontFindAppBySignature: Int](../../coreservices/kdontfindappbysignature.md)
+- [var kLaunchToGetTerminology: Int](../../coreservices/klaunchtogetterminology.md)
 
 
 ---

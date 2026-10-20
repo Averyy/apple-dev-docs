@@ -1,14 +1,15 @@
 # IOEthernetControllerAVBState
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.1+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOEthernetControllerAVBState : unsigned int {
     ...
 } IOEthernetControllerAVBState;
@@ -17,10 +18,10 @@ typedef enum IOEthernetControllerAVBState : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOEthernetControllerAVBStateAVBEnabled](ioethernetcontrolleravbstate/kioethernetcontrolleravbstateavbenabled.md)
-- [kIOEthernetControllerAVBStateActivated](ioethernetcontrolleravbstate/kioethernetcontrolleravbstateactivated.md)
-- [kIOEthernetControllerAVBStateDisabled](ioethernetcontrolleravbstate/kioethernetcontrolleravbstatedisabled.md)
-- [kIOEthernetControllerAVBStateTimeSyncEnabled](ioethernetcontrolleravbstate/kioethernetcontrolleravbstatetimesyncenabled.md)
+- [kIOEthernetControllerAVBStateAVBEnabled](./ioethernetcontrolleravbstate/kioethernetcontrolleravbstateavbenabled.md)
+- [kIOEthernetControllerAVBStateActivated](./ioethernetcontrolleravbstate/kioethernetcontrolleravbstateactivated.md)
+- [kIOEthernetControllerAVBStateDisabled](./ioethernetcontrolleravbstate/kioethernetcontrolleravbstatedisabled.md)
+- [kIOEthernetControllerAVBStateTimeSyncEnabled](./ioethernetcontrolleravbstate/kioethernetcontrolleravbstatetimesyncenabled.md)
 
 
 ---

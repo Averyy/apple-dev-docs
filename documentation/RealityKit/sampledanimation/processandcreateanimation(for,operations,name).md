@@ -1,7 +1,8 @@
 # processAndCreateAnimation(for:operations:name:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes skeletal animation with the specified operations.
 
@@ -19,31 +20,36 @@ Processes skeletal animation with the specified operations.
 func processAndCreateAnimation(for skeleton: SkeletonResource? = nil, operations: [SampledAnimation<Value>.SkeletalAnimationOperation], name: String = "") throws -> any AnimationDefinition
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Return Value
 
-An [`AnimationDefinition`](animationdefinition.md) containing the processed animation. If root motion extraction is performed, returns an [`AnimationGroup`](animationgroup.md) containing both the skeletal animation (`SampledAnimation<JointTransforms>`) and extracted root motion (`SampledAnimation<Transform>`). Otherwise returns a `SampledAnimation<JointTransforms>`.
+An [`AnimationDefinition`](../animationdefinition.md) containing the processed animation. If root motion extraction is performed, returns an [`AnimationGroup`](../animationgroup.md) containing both the skeletal animation (`SampledAnimation<JointTransforms>`) and extracted root motion (`SampledAnimation<Transform>`). Otherwise returns a `SampledAnimation<JointTransforms>`.
 
 #### Discussion
 
 Applies a series of skeletal animation processing operations to create a new animation. The function executes operations in the order specified. If skeleton is nil, only additive operations are supported.
 
-> **Note**: An error if validation fails. All errors provide descriptive messages via their `localizedDescription` property. Common validation failures include: - Duplicate operation types in a single call (e.g., two [`extractRootMotion(jointName:options:lockPosition:)`](sampledanimation/skeletalanimationoperation/extractrootmotion(jointname:options:lockposition:).md) operations).
-- Both [`extractRootMotion(jointName:options:lockPosition:)`](sampledanimation/skeletalanimationoperation/extractrootmotion(jointname:options:lockposition:).md) and [`removeAnimation(for:)`](sampledanimation/skeletalanimationoperation/removeanimation(for:).md) operations in the same call.
-- Operations requiring a skeleton when skeleton parameter is nil.
-- Joint name does not exist in the skeleton for root motion extraction or removal.
-- Base animation has a different sample rate than the source animation for [`convertToAdditive(baseAnimation:)`](sampledanimation/skeletalanimationoperation/converttoadditive(baseanimation:).md).
+> **Throws**: An error if validation fails. All errors provide descriptive messages via their `localizedDescription` property. Common validation failures include:
+>
+> - Duplicate operation types in a single call (e.g., two [`extractRootMotion(jointName:options:lockPosition:)`](./skeletalanimationoperation/extractrootmotion%28jointname,options,lockposition%29.md) operations).
+> - Both [`extractRootMotion(jointName:options:lockPosition:)`](./skeletalanimationoperation/extractrootmotion%28jointname,options,lockposition%29.md) and [`removeAnimation(for:)`](./skeletalanimationoperation/removeanimation%28for%29.md) operations in the same call.
+> - Operations requiring a skeleton when skeleton parameter is nil.
+> - Joint name does not exist in the skeleton for root motion extraction or removal.
+> - Base animation has a different sample rate than the source animation for [`convertToAdditive(baseAnimation:)`](./skeletalanimationoperation/converttoadditive%28baseanimation%29.md).
 
 ## Parameters
 
-- `skeleton`: The skeleton resource for the animation; required for all operations except [`convertToAdditive(baseAnimation:)`](sampledanimation/skeletalanimationoperation/converttoadditive(baseanimation:).md) and [`convertToAdditiveUsingFirstSample()`](sampledanimation/skeletalanimationoperation/converttoadditiveusingfirstsample().md).
+- `skeleton`: The skeleton resource for the animation; required for all operations except [`convertToAdditive(baseAnimation:)`](./skeletalanimationoperation/converttoadditive%28baseanimation%29.md) and [`convertToAdditiveUsingFirstSample()`](./skeletalanimationoperation/converttoadditiveusingfirstsample%28%29.md).
 - `operations`: Operations to perform on the animation. Must not be empty.
 - `name`: Name for the processed animation.
 
 ## See Also
 
-- [func processAndCreateAnimation(retargeting: RetargetingConfiguration, operations: [SampledAnimation<Value>.SkeletalAnimationOperation], name: String) throws -> any AnimationDefinition](sampledanimation/processandcreateanimation(retargeting:operations:name:).md)
+### Processing skeletal animations
+- [func processAndCreateAnimation(retargeting: RetargetingConfiguration, operations: [SampledAnimation<Value>.SkeletalAnimationOperation], name: String) throws -> any AnimationDefinition](./processandcreateanimation%28retargeting,operations,name%29.md)
   Processes skeletal animation with the specified retargeting and operations.
-- [SampledAnimation.SkeletalAnimationOperation](sampledanimation/skeletalanimationoperation.md)
+- [SampledAnimation.SkeletalAnimationOperation](./skeletalanimationoperation.md)
   Operations that can be performed on skeletal animations.
 
 

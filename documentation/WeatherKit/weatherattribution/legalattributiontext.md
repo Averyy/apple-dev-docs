@@ -1,7 +1,8 @@
 # legalAttributionText
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This property returns text that should be made available to users for apps that cannot display the attributionURL contents in a Safari view. It contains language that outlines the weather data sources attribution and is a legal requirement of using WeatherKit.
 

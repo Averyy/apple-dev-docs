@@ -1,7 +1,8 @@
 # cardBackgroundColor
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the content view.
 
@@ -12,6 +13,10 @@ The background color of the content view.
 
 ```swift
 var cardBackgroundColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIColor * cardBackgroundColor;
 ```
 
 

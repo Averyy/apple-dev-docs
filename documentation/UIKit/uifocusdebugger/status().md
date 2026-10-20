@@ -1,7 +1,8 @@
 # status()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the state of the focus system, including information about the currently focused item.
 
@@ -16,6 +17,10 @@ Returns the state of the focus system, including information about the currently
 
 ```swift
 class func status() -> any UIFocusDebuggerOutput
+```
+
+```objc
++ (id<UIFocusDebuggerOutput>) status;
 ```
 
 #### Return Value
@@ -42,15 +47,16 @@ The method returns information about the focus system and the currently focused 
 
 ## See Also
 
-- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](uifocusdebugger/checkfocusability(for:).md)
+### Getting focus information
+- [class func checkFocusability(for: any UIFocusItem) -> any UIFocusDebuggerOutput](./checkfocusability%28for%29.md)
   Returns information about whether the item can become focused, including any known issues that would prevent the item from becoming focused.
-- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/focusgroups(for:).md)
+- [class func focusGroups(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./focusgroups%28for%29.md)
   Returns the focus group hierarchy for the specified environment object.
-- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/preferredfocusenvironments(for:).md)
+- [class func preferredFocusEnvironments(for: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./preferredfocusenvironments%28for%29.md)
   Returns the hierarchy of preferred focus environments for the specified environment object.
-- [class func simulateFocusUpdateRequest(from: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](uifocusdebugger/simulatefocusupdaterequest(from:).md)
+- [class func simulateFocusUpdateRequest(from: any UIFocusEnvironment) -> any UIFocusDebuggerOutput](./simulatefocusupdaterequest%28from%29.md)
   Simulates a focus update request from the specified environment.
-- [protocol UIFocusDebuggerOutput](uifocusdebuggeroutput.md)
+- [protocol UIFocusDebuggerOutput](../uifocusdebuggeroutput.md)
   An interface for specifying output from a focus debugger object.
 
 

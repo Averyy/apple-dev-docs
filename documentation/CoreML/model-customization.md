@@ -1,6 +1,7 @@
 # Model Customization
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: API Collection
 
 Expand and modify your model with new layers.
 
@@ -11,28 +12,29 @@ Customize your Core ML model to make it work better for your specific app. For i
 ## Topics
 
 ### Model file size
-- [Reducing the Size of Your Core ML App](reducing-the-size-of-your-core-ml-app.md)
+- [Reducing the Size of Your Core ML App](./reducing-the-size-of-your-core-ml-app.md)
   Reduce the storage used by the Core ML model inside your app bundle.
 ### Custom model layers
-- [Creating and Integrating a Model with Custom Layers](creating-and-integrating-a-model-with-custom-layers.md)
+- [Creating and Integrating a Model with Custom Layers](./creating-and-integrating-a-model-with-custom-layers.md)
   Add models with custom neural-network layers to your app.
-- [protocol MLCustomLayer](mlcustomlayer.md)
+- [protocol MLCustomLayer](./mlcustomlayer.md)
   An interface that defines the behavior of a custom layer in your neural network model.
 ### Custom models
-- [protocol MLCustomModel](mlcustommodel.md)
+- [protocol MLCustomModel](./mlcustommodel.md)
   An interface that defines the behavior of a custom model.
 
 ## See Also
 
-- [Getting a Core ML Model](getting-a-core-ml-model.md)
+### Core ML models
+- [Getting a Core ML Model](./getting-a-core-ml-model.md)
   Obtain a Core ML model to use in your app.
-- [Updating a Model File to a Model Package](updating-a-model-file-to-a-model-package.md)
+- [Updating a Model File to a Model Package](./updating-a-model-file-to-a-model-package.md)
   Convert a Core ML model file into a model package in Xcode.
-- [Integrating a Core ML Model into Your App](integrating-a-core-ml-model-into-your-app.md)
+- [Integrating a Core ML Model into Your App](./integrating-a-core-ml-model-into-your-app.md)
   Add a simple model to an app, pass input data to the model, and process the model’s predictions.
-- [class MLModel](mlmodel.md)
+- [class MLModel](./mlmodel.md)
   An encapsulation of all the details of your machine learning model.
-- [Model Personalization](model-personalization.md)
+- [Model Personalization](./model-personalization.md)
   Update your model to adapt to new data.
 
 

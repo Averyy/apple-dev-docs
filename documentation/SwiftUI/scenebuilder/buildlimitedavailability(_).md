@@ -1,7 +1,8 @@
 # buildLimitedAvailability(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Processes scene content for a conditional compiler-control statement that performs an availability check.
 
@@ -23,10 +24,11 @@ static func buildLimitedAvailability(_ scene: some Scene) -> any Scene & _Limite
 
 ## See Also
 
-- [static buildBlock(_:)](scenebuilder/buildblock(_:).md)
-- [static func buildExpression<Content>(Content) -> Content](scenebuilder/buildexpression(_:).md)
+### Building content
+- [static buildBlock(_:)](./buildblock%28_%29.md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static func buildOptional((any Scene & _LimitedAvailabilitySceneMarker)?) -> some Scene](scenebuilder/buildoptional(_:).md)
+- [static func buildOptional((any Scene & _LimitedAvailabilitySceneMarker)?) -> some Scene](./buildoptional%28_%29.md)
   Produces an optional scene for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
 
 

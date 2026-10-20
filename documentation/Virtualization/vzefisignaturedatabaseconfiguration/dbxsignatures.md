@@ -1,7 +1,8 @@
 # dbxSignatures
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Forbidden signature database (dbx) entries.
 
@@ -12,6 +13,10 @@ Forbidden signature database (dbx) entries.
 
 ```swift
 var dbxSignatures: [VZEFISignatureList] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<VZEFISignatureList *> * dbxSignatures;
 ```
 
 

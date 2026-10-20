@@ -1,7 +1,8 @@
 # SRKeyboardMetrics.SentimentCategory
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Moods that the framework determines by analyzing the user’s input.
 
@@ -16,51 +17,56 @@ Moods that the framework determines by analyzing the user’s input.
 enum SentimentCategory
 ```
 
+```c
+enum SRKeyboardMetricsSentimentCategory : NSInteger;
+```
+
 #### Overview
 
-This class describes possible values for [`wordCount(for:)`](srkeyboardmetrics/wordcount(for:).md) and [`emojiCount(for:)`](srkeyboardmetrics/emojicount(for:).md) properties of a keyboard report.
+This class describes possible values for [`wordCount(for:)`](./wordcount%28for%29.md) and [`emojiCount(for:)`](./emojicount%28for%29.md) properties of a keyboard report.
 
 ## Topics
 
 ### Sentiments
-- [SRKeyboardMetrics.SentimentCategory.absolutist](srkeyboardmetrics/sentimentcategory/absolutist.md)
+- [SRKeyboardMetrics.SentimentCategory.absolutist](./sentimentcategory/absolutist.md)
   A mood that embodies absolutism.
-- [SRKeyboardMetrics.SentimentCategory.anger](srkeyboardmetrics/sentimentcategory/anger.md)
+- [SRKeyboardMetrics.SentimentCategory.anger](./sentimentcategory/anger.md)
   A mood that embodies anger.
-- [SRKeyboardMetrics.SentimentCategory.anxiety](srkeyboardmetrics/sentimentcategory/anxiety.md)
+- [SRKeyboardMetrics.SentimentCategory.anxiety](./sentimentcategory/anxiety.md)
   A mood that embodies worrying.
-- [SRKeyboardMetrics.SentimentCategory.confused](srkeyboardmetrics/sentimentcategory/confused.md)
+- [SRKeyboardMetrics.SentimentCategory.confused](./sentimentcategory/confused.md)
   A mood that embodies confusion.
-- [SRKeyboardMetrics.SentimentCategory.death](srkeyboardmetrics/sentimentcategory/death.md)
+- [SRKeyboardMetrics.SentimentCategory.death](./sentimentcategory/death.md)
   A mood that expresses death.
-- [SRKeyboardMetrics.SentimentCategory.down](srkeyboardmetrics/sentimentcategory/down.md)
+- [SRKeyboardMetrics.SentimentCategory.down](./sentimentcategory/down.md)
   A mood that embodies depression.
-- [SRKeyboardMetrics.SentimentCategory.health](srkeyboardmetrics/sentimentcategory/health.md)
+- [SRKeyboardMetrics.SentimentCategory.health](./sentimentcategory/health.md)
   A general concern for health.
-- [SRKeyboardMetrics.SentimentCategory.lowEnergy](srkeyboardmetrics/sentimentcategory/lowenergy.md)
+- [SRKeyboardMetrics.SentimentCategory.lowEnergy](./sentimentcategory/lowenergy.md)
   A mood that indicates low energy.
-- [SRKeyboardMetrics.SentimentCategory.positive](srkeyboardmetrics/sentimentcategory/positive.md)
+- [SRKeyboardMetrics.SentimentCategory.positive](./sentimentcategory/positive.md)
   A mood that embodies positivity.
-- [SRKeyboardMetrics.SentimentCategory.sad](srkeyboardmetrics/sentimentcategory/sad.md)
+- [SRKeyboardMetrics.SentimentCategory.sad](./sentimentcategory/sad.md)
   A mood that embodies sadness.
 ### Initializers
-- [init?(rawValue: Int)](srkeyboardmetrics/sentimentcategory/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sentimentcategory/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](srkeyboardmetrics/wordcount(for:).md)
+### Inferring Sentiment
+- [func wordCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](./wordcount%28for%29.md)
   Provides the number of typed words for the specified sentiment in the report.
-- [func emojiCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](srkeyboardmetrics/emojicount(for:).md)
+- [func emojiCount(for: SRKeyboardMetrics.SentimentCategory) -> Int](./emojicount%28for%29.md)
   Provides the number of typed emojis for the specified sentiment in the report.
 
 

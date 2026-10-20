@@ -1,7 +1,8 @@
 # CSIdentityQueryEvent
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSIdentityQueryEvent = CFIndex
+```
+
+```c
+typedef CFIndex CSIdentityQueryEvent;
 ```
 
 

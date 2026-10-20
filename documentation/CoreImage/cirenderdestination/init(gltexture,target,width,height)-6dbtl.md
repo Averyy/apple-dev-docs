@@ -1,7 +1,8 @@
 # init(GLTexture:target:width:height:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

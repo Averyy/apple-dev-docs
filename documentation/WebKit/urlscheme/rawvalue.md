@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value of the scheme string.
 

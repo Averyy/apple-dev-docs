@@ -1,7 +1,8 @@
 # init(MIDINote:velocity:groupID:duration:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+

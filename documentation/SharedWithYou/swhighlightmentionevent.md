@@ -1,7 +1,8 @@
 # SWHighlightMentionEvent
 
 **Framework**: Shared with You  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents mention activity for a highlight.
 
@@ -18,48 +19,53 @@ An object that represents mention activity for a highlight.
 class SWHighlightMentionEvent
 ```
 
+```objc
+@interface SWHighlightMentionEvent : NSObject
+```
+
 ## Mentions
 
-- [Adding custom collaboration to your app](adding-custom-collaboration-to-your-app.md)
+- [Adding custom collaboration to your app](./adding-custom-collaboration-to-your-app.md)
 
 ## Topics
 
 ### Creating a mention event
-- [init(highlight: SWHighlight, mentionedPersonCloudKitShareHandle: String)](swhighlightmentionevent/init(highlight:mentionedpersoncloudkitsharehandle:).md)
+- [init(highlight: SWHighlight, mentionedPersonCloudKitShareHandle: String)](./swhighlightmentionevent/init%28highlight,mentionedpersoncloudkitsharehandle%29.md)
   Creates and initializes a mention event.
-- [init(highlight: SWHighlight, mentionedPersonIdentity: SWPerson.Identity)](swhighlightmentionevent/init(highlight:mentionedpersonidentity:).md)
+- [init(highlight: SWHighlight, mentionedPersonIdentity: SWPerson.Identity)](./swhighlightmentionevent/init%28highlight,mentionedpersonidentity%29.md)
   Creates and initializes a mention event.
 ### Accessing the event person
-- [var mentionedPersonHandle: String](swhighlightmentionevent/mentionedpersonhandle.md)
+- [var mentionedPersonHandle: String](./swhighlightmentionevent/mentionedpersonhandle.md)
   The handle of the person the sender mentions.
 ### Initializers
-- [init?(coder: NSCoder)](swhighlightmentionevent/init(coder:).md)
+- [init?(coder: NSCoder)](./swhighlightmentionevent/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SWHighlightEvent](swhighlightevent.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SWHighlightEvent](./swhighlightevent.md)
 
 ## See Also
 
-- [protocol SWHighlightEvent](swhighlightevent.md)
+### Highlight events
+- [protocol SWHighlightEvent](./swhighlightevent.md)
   A protocol that defines an activity that the system posts in response to a user action for a highlight.
-- [class SWHighlightChangeEvent](swhighlightchangeevent.md)
+- [class SWHighlightChangeEvent](./swhighlightchangeevent.md)
   An object that represents change activity for a highlight.
-- [class SWHighlightMembershipEvent](swhighlightmembershipevent.md)
+- [class SWHighlightMembershipEvent](./swhighlightmembershipevent.md)
   An object that represents membership activity for a highlight.
-- [class SWHighlightPersistenceEvent](swhighlightpersistenceevent.md)
+- [class SWHighlightPersistenceEvent](./swhighlightpersistenceevent.md)
   An object that represents persistence activity for a highlight.
 
 

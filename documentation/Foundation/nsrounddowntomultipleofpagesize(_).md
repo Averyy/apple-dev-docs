@@ -1,7 +1,8 @@
 # NSRoundDownToMultipleOfPageSize(_:)
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the specified number of bytes rounded down to a multiple of the page size.
 
@@ -20,25 +21,30 @@ Returns the specified number of bytes rounded down to a multiple of the page siz
 func NSRoundDownToMultipleOfPageSize(_ bytes: Int) -> Int
 ```
 
+```c
+extern NSUInteger NSRoundDownToMultipleOfPageSize(NSUInteger bytes);
+```
+
 #### Return Value
 
 In bytes, the multiple of the page size that is closest to, but not greater than, `byteCount` (that is, the number of bytes rounded down to a multiple of the page size).
 
 ## See Also
 
-- [func NSAllocateMemoryPages(Int) -> UnsafeMutableRawPointer](nsallocatememorypages(_:).md)
+### Memory Management
+- [func NSAllocateMemoryPages(Int) -> UnsafeMutableRawPointer](./nsallocatememorypages%28_%29.md)
   Allocates a new block of memory.
-- [func NSCopyMemoryPages(UnsafeRawPointer, UnsafeMutableRawPointer, Int)](nscopymemorypages(_:_:_:).md)
+- [func NSCopyMemoryPages(UnsafeRawPointer, UnsafeMutableRawPointer, Int)](./nscopymemorypages%28_,_,_%29.md)
   Copies a block of memory.
-- [func NSDeallocateMemoryPages(UnsafeMutableRawPointer, Int)](nsdeallocatememorypages(_:_:).md)
+- [func NSDeallocateMemoryPages(UnsafeMutableRawPointer, Int)](./nsdeallocatememorypages%28_,_%29.md)
   Deallocates the specified block of memory.
-- [func NSLogPageSize() -> Int](nslogpagesize().md)
+- [func NSLogPageSize() -> Int](./nslogpagesize%28%29.md)
   Returns the binary log of the page size.
-- [func NSPageSize() -> Int](nspagesize().md)
+- [func NSPageSize() -> Int](./nspagesize%28%29.md)
   Returns the number of bytes in a page.
-- [func NSRealMemoryAvailable() -> Int](nsrealmemoryavailable().md)
+- [func NSRealMemoryAvailable() -> Int](./nsrealmemoryavailable%28%29.md)
   Returns information about the user’s system.
-- [func NSRoundUpToMultipleOfPageSize(Int) -> Int](nsrounduptomultipleofpagesize(_:).md)
+- [func NSRoundUpToMultipleOfPageSize(Int) -> Int](./nsrounduptomultipleofpagesize%28_%29.md)
   Returns the specified number of bytes rounded up to a multiple of the page size.
 
 

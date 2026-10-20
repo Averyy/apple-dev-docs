@@ -1,7 +1,8 @@
 # contentStyleDidChange(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.4+
@@ -12,6 +13,10 @@
 
 ```swift
 optional func contentStyleDidChange(_ contentStyle: UIUserInterfaceStyle)
+```
+
+```objc
+- (void) contentStyleDidChange:(UIUserInterfaceStyle) contentStyle;
 ```
 
 

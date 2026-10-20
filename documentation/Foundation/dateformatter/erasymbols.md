@@ -1,7 +1,8 @@
 # eraSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The era symbols for the receiver.
 
@@ -20,13 +21,18 @@ The era symbols for the receiver.
 var eraSymbols: [String]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSString *> * eraSymbols;
+```
+
 #### Discussion
 
 An array containing `NSString` objects representing the era symbols for the receiver (for example, {“B.C.E.”, “C.E.”}).
 
 ## See Also
 
-- [var longEraSymbols: [String]!](dateformatter/longerasymbols.md)
+### Managing Era Symbols
+- [var longEraSymbols: [String]!](./longerasymbols.md)
   The long era symbols for the receiver
 
 

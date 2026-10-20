@@ -1,17 +1,18 @@
 # init(version:info:retain:release:copyDescription:)
 
 **Framework**: System Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preferences context with the specified raw values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 

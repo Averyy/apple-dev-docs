@@ -1,7 +1,8 @@
 # errSSLIllegalParam
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An illegal parameter was encountered.
 
@@ -18,6 +19,10 @@ An illegal parameter was encountered.
 
 ```swift
 var errSSLIllegalParam: OSStatus { get }
+```
+
+```c
+errSSLIllegalParam
 ```
 
 

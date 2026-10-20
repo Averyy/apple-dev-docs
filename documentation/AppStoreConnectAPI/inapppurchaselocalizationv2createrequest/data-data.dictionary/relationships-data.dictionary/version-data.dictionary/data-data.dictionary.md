@@ -1,7 +1,8 @@
 # InAppPurchaseLocalizationV2CreateRequest.Data.Relationships.Version.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase localization with the v2 API.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase localization with the v2 A
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseLocalizationV2CreateRequest.Data.Relationships.Version.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `inAppPurchaseVersions`
 
 
 ---

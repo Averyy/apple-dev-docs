@@ -1,7 +1,8 @@
 # testLog(withFormat:arguments:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Logs test results to the test log.
 
@@ -11,6 +12,10 @@ Logs test results to the test log.
 func testLog(withFormat format: String!, arguments: CVaListPointer)
 ```
 
+```objc
+- (void) testLogWithFormat:(NSString *) format arguments:(va_list) arguments;
+```
+
 ## Parameters
 
 - `format`: A string that describes a test result by replacing format indicators with variable data, such as failure details, source code filenames, and line numbers.
@@ -18,7 +23,8 @@ func testLog(withFormat format: String!, arguments: CVaListPointer)
 
 ## See Also
 
-- [var logFileHandle: FileHandle!](xctestlog/logfilehandle.md)
+### Logging Test Results
+- [var logFileHandle: FileHandle!](./logfilehandle.md)
   An object to interact with the test log file.
 
 

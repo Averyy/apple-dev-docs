@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateIntervalArgumentAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for a date interval argument used to format the run with this attribute.
 
@@ -24,34 +25,35 @@ enum LocalizedDateIntervalArgumentAttribute
 ## Topics
 
 ### Inspecting attributed string key properties
-- [static let name: String](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateintervalargumentattribute/name.md)
+- [static let name: String](./localizeddateintervalargumentattribute/name.md)
   The name of the attribute.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../../attributedstringkey.md)
+- [BitwiseCopyable](../../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let localizedNumericArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargument.md)
+### Retrieving localization arguments
+- [let localizedNumericArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute](./localizednumericargument.md)
   The value of a numeric argument used to format the run with this attribute.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute.md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute](./localizednumericargumentattribute.md)
   A type for a numeric argument used to format the run with this attribute.
-- [let localizedDateArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateargument.md)
+- [let localizedDateArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateArgumentAttribute](./localizeddateargument.md)
   The date value used to format the run with this attribute.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateargumentattribute.md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateArgumentAttribute](./localizeddateargumentattribute.md)
   A type for a date argument used to format the run with this attribute.
-- [let localizedDateIntervalArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateIntervalArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateintervalargument.md)
+- [let localizedDateIntervalArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedDateIntervalArgumentAttribute](./localizeddateintervalargument.md)
   The date interval value used to format the run with this attribute.
-- [let localizedURLArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedURLArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizedurlargument.md)
+- [let localizedURLArgument: AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedURLArgumentAttribute](./localizedurlargument.md)
   The URL value used to format the run with this attribute.
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedURLArgumentAttribute](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizedurlargumentattribute.md)
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedURLArgumentAttribute](./localizedurlargumentattribute.md)
   A type for a URL argument used to format the run with this attribute.
 
 

@@ -1,7 +1,8 @@
 # wallClockTime
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A performance metric that records the time in seconds to execute a block of code.
 
@@ -9,6 +10,10 @@ A performance metric that records the time in seconds to execute a block of code
 
 ```swift
 static let wallClockTime: XCTPerformanceMetric
+```
+
+```c
+extern XCTPerformanceMetric const XCTPerformanceMetric_WallClockTime;
 ```
 
 

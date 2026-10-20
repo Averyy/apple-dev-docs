@@ -1,7 +1,8 @@
 # options
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of options used to initialize key loading.
 
@@ -20,13 +21,18 @@ A dictionary of options used to initialize key loading.
 var options: [String : any Sendable] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,id> * options;
+```
+
 ## See Also
 
-- [var contentKey: AVContentKey?](avcontentkeyrequest/contentkey.md)
+### Inspecting a request
+- [var contentKey: AVContentKey?](./contentkey.md)
   The generated content key.
-- [var contentKeySpecifier: AVContentKeySpecifier](avcontentkeyrequest/contentkeyspecifier.md)
+- [var contentKeySpecifier: AVContentKeySpecifier](./contentkeyspecifier.md)
   The requested content key specifier.
-- [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
+- [AVContentKeyRequest.RetryReason](./retryreason.md)
   The reason for asking the client to retry a content key request.
 
 

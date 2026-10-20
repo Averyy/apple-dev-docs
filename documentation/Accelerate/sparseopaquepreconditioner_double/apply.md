@@ -1,23 +1,28 @@
 # apply
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A function that calculates *Y = PX*, where *P* is the preconditioner.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var apply: (UnsafeMutableRawPointer, CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) -> Void
+```
+
+```c
+void (*)(void *, enum CBLAS_TRANSPOSE, DenseMatrix_Double, DenseMatrix_Double) apply;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The function has some approximation to *A⁻¹*.
 
 ## See Also
 
-- [var mem: UnsafeMutableRawPointer](sparseopaquepreconditioner_double/mem.md)
+### Inspecting Preconditioner Properties
+- [var mem: UnsafeMutableRawPointer](./mem.md)
   The unaltered memory pointer that passes as the first parameter of the apply function.
-- [var type: SparsePreconditioner_t](sparseopaquepreconditioner_double/type.md)
+- [var type: SparsePreconditioner_t](./type.md)
   The preconditioner type.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: CarKey  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new action identifier with the specified value.
 
@@ -28,7 +29,8 @@ A new action identifier type.
 
 ## See Also
 
-- [init(rawValue: Int)](actionidentifier/init(rawvalue:).md)
+### Creating the Action Identifier
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates and returns a new action identifier with the specified value.
 
 

@@ -1,7 +1,8 @@
 # MusicLibrarySection
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A section for a library sectioned response.
 
@@ -25,29 +26,29 @@ struct MusicLibrarySection<SectionType, MusicItemType> where SectionType : Music
 
 Your app can access any property of the requested section type directly on this library section object.
 
-Your app can also access the items contained in a library section with the [`items`](musiclibrarysection/items.md) property.
+Your app can also access the items contained in a library section with the [`items`](./musiclibrarysection/items.md) property.
 
 ## Topics
 
 ### Instance Properties
-- [let items: MusicItemCollection<MusicItemType>](musiclibrarysection/items.md)
+- [let items: MusicItemCollection<MusicItemType>](./musiclibrarysection/items.md)
   A collection of items that correspond to the children of the section.
 ### Subscripts
-- [subscript<T>(dynamicMember _: KeyPath<SectionType, T>) -> T](musiclibrarysection/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<SectionType, T>) -> T](./musiclibrarysection/subscript%28dynamicmember%29.md)
   A subscript that allows your app to access any property of the requested section type directly on this library section object.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

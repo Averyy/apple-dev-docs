@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s Uniform Type Identifier (UTI).
 
@@ -19,19 +20,24 @@ The item’s Uniform Type Identifier (UTI).
 optional var contentType: UTType { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) UTType * contentType;
+```
+
 #### Discussion
 
-Your extension must provide either the [`typeIdentifier`](nsfileprovideritemprotocol/typeidentifier.md) or the [`contentType`](nsfileprovideritemprotocol/contenttype.md) property. Where possible, use the [`contentType`](nsfileprovideritemprotocol/contenttype.md) property. Use the [`typeIdentifier`](nsfileprovideritemprotocol/typeidentifier.md) property only in iOS 13 or earlier.
+Your extension must provide either the [`typeIdentifier`](./typeidentifier.md) or the [`contentType`](./contenttype.md) property. Where possible, use the [`contentType`](./contenttype.md) property. Use the [`typeIdentifier`](./typeidentifier.md) property only in iOS 13 or earlier.
 
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovideritemprotocol/itemidentifier.md)
+### Providing Required Properties
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The item’s persistent identifier.
-- [var filename: String](nsfileprovideritemprotocol/filename.md)
+- [var filename: String](./filename.md)
   The item’s filename.
-- [var typeIdentifier: String](nsfileprovideritemprotocol/typeidentifier.md)
+- [var typeIdentifier: String](./typeidentifier.md)
   The item’s Uniform Type Identifier (UTI).
-- [var capabilities: NSFileProviderItemCapabilities](nsfileprovideritemprotocol/capabilities.md)
+- [var capabilities: NSFileProviderItemCapabilities](./capabilities.md)
   The item’s capabilities.
 
 

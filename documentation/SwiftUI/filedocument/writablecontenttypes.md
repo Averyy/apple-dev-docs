@@ -2,16 +2,19 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The file types that the document supports saving or exporting to.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Conform your type to Document instead.
 
 ## Declaration
 
@@ -21,13 +24,20 @@ static var writableContentTypes: [UTType] { get }
 
 #### Discussion
 
-By default, SwiftUI assumes that your document reads and writes the same set of content types. Only define this property if you need to indicate a different set of types for writing files. Otherwise, the default implementation of this property returns the list that you specify in your implementation of [`readableContentTypes`](filedocument/readablecontenttypes.md).
+By default, SwiftUI assumes that your document reads and writes the same set of content types. Only define this property if you need to indicate a different set of types for writing files. Otherwise, the default implementation of this property returns the list that you specify in your implementation of [`readableContentTypes`](./readablecontenttypes.md).
+
+## Default Implementations
+
+### FileDocument Implementations
+- [static var writableContentTypes: [UTType]](./writablecontenttypes-289b3.md)
+  The file types that the document supports saving or exporting to.
 
 ## See Also
 
-- [func fileWrapper(configuration: Self.WriteConfiguration) throws -> FileWrapper](filedocument/filewrapper(configuration:).md)
+### Writing a document
+- [func fileWrapper(configuration: Self.WriteConfiguration) throws -> FileWrapper](./filewrapper%28configuration%29.md)
   Serializes a document snapshot to a file wrapper.
-- [FileDocument.WriteConfiguration](filedocument/writeconfiguration.md)
+- [FileDocument.WriteConfiguration](./writeconfiguration.md)
   The configuration for writing document contents.
 
 

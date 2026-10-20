@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the characteristic.
 
@@ -20,21 +21,26 @@ The value of the characteristic.
 var value: Data? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSData * value;
+```
+
 #### Discussion
 
 This property contains the value of the characteristic. For example, a temperature measurement characteristic of a health thermometer service may have a value that indicates a temperature in Celsius.
 
 ## See Also
 
-- [var descriptors: [CBDescriptor]?](cbcharacteristic/descriptors.md)
+### Accessing Characteristic Data
+- [var descriptors: [CBDescriptor]?](./descriptors.md)
   A list of the descriptors discovered in this characteristic.
-- [var properties: CBCharacteristicProperties](cbcharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [struct CBCharacteristicProperties](cbcharacteristicproperties.md)
+- [struct CBCharacteristicProperties](../cbcharacteristicproperties.md)
   Values that represent the possible properties of a characteristic.
-- [var isNotifying: Bool](cbcharacteristic/isnotifying.md)
+- [var isNotifying: Bool](./isnotifying.md)
   A Boolean value that indicates whether the characteristic is currently notifying a subscribed central of its value.
-- [var isBroadcasted: Bool](cbcharacteristic/isbroadcasted.md)
+- [var isBroadcasted: Bool](./isbroadcasted.md)
   A Boolean value that indicates whether the characteristic the service broadcasts this characteristic.
 
 

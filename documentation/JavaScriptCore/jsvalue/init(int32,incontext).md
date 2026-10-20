@@ -1,7 +1,8 @@
 # init(int32:inContext:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+

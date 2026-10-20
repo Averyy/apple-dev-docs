@@ -5,11 +5,11 @@
 ## Topics
 
 ### Constants
-- [var kAEDebugPOSTHeader: Int](kaedebugpostheader.md)
-- [var kAEDebugReplyHeader: Int](kaedebugreplyheader.md)
-- [var kAEDebugXMLDebugAll: Int](kaedebugxmldebugall.md)
-- [var kAEDebugXMLRequest: Int](kaedebugxmlrequest.md)
-- [var kAEDebugXMLResponse: Int](kaedebugxmlresponse.md)
+- [var kAEDebugPOSTHeader: Int](../kaedebugpostheader.md)
+- [var kAEDebugReplyHeader: Int](../kaedebugreplyheader.md)
+- [var kAEDebugXMLDebugAll: Int](../kaedebugxmldebugall.md)
+- [var kAEDebugXMLRequest: Int](../kaedebugxmlrequest.md)
+- [var kAEDebugXMLResponse: Int](../kaedebugxmlresponse.md)
 
 
 ---

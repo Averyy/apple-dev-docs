@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors associated with the top-level computation of this class.
 
@@ -18,31 +19,32 @@ enum Error
 ## Topics
 
 ### Enumeration Cases
-- [ObjectCaptureSession.Error.cancelled](objectcapturesession/error/cancelled.md)
+- [ObjectCaptureSession.Error.cancelled](./error/cancelled.md)
   The user requested that the session be canceled and the session is now canceled.  Another session may now be created.
-- [ObjectCaptureSession.Error.directoryNotEmpty(_:)](objectcapturesession/error/directorynotempty(_:).md)
+- [ObjectCaptureSession.Error.directoryNotEmpty(_:)](./error/directorynotempty%28_%29.md)
   We cannot continue a pre-existing capture, so if an output directory is provided that already exists and it is not empty, this error is thrown.
-- [ObjectCaptureSession.Error.insufficientStorage(requiredBytes:)](objectcapturesession/error/insufficientstorage(requiredbytes:).md)
+- [ObjectCaptureSession.Error.insufficientStorage(requiredBytes:)](./error/insufficientstorage%28requiredbytes%29.md)
   The session can’t be started since there is not enough storage space in the provided directories.
-- [ObjectCaptureSession.Error.sensorFailed](objectcapturesession/error/sensorfailed.md)
+- [ObjectCaptureSession.Error.sensorFailed](./error/sensorfailed.md)
   There was an ARKit failure in one of the sensors.
-- [ObjectCaptureSession.Error.trackingFailed](objectcapturesession/error/trackingfailed.md)
+- [ObjectCaptureSession.Error.trackingFailed](./error/trackingfailed.md)
   There was an unrecoverable error related to tracking the object or environment.
 ### Instance Properties
-- [var localizedDescription: String](objectcapturesession/error/localizeddescription.md)
+- [var localizedDescription: String](./error/localizeddescription.md)
   Retrieve the localized description for this error.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ObjectCaptureSession.CaptureState](objectcapturesession/capturestate.md)
+### Monitoring the session
+- [ObjectCaptureSession.CaptureState](./capturestate.md)
   State of the capture session.
 
 

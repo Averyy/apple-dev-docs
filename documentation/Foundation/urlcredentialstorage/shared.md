@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared URL credential storage instance.
 
@@ -18,6 +19,10 @@ The shared URL credential storage instance.
 
 ```swift
 class var shared: URLCredentialStorage { get }
+```
+
+```objc
+@property (class, strong, readonly) NSURLCredentialStorage * sharedCredentialStorage;
 ```
 
 

@@ -1,14 +1,15 @@
 # writeAddressSpace
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn writeAddressSpace(UInt64 value, IOACPIAddressSpaceID spaceID, IOACPIAddress address, UInt32 bitWidth, UInt32 bitOffset, IOOptionBits options);
 ```
 

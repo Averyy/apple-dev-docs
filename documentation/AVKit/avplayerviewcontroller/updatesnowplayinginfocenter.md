@@ -1,7 +1,8 @@
 # updatesNowPlayingInfoCenter
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view controller updates Now Playing information.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether the view controller updates Now Playing i
 
 ```swift
 var updatesNowPlayingInfoCenter: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL updatesNowPlayingInfoCenter;
 ```
 
 #### Discussion

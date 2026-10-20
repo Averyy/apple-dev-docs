@@ -7,13 +7,13 @@ Handy initializer: pass the 512-byte result of the Identify Device or Identify P
 
 ## Declaration
 
-```swift
+```c
 IOReturn initWithBestSelection(
  const UInt16 *identifyData,
  IOATABusInfo *busInfo);
 ```
 
-#### Return_value
+#### Return Value
 
 kIOSuccess (0) when a matching transfer mode is available between the device and controller.
 
@@ -24,23 +24,24 @@ kIOSuccess (0) when a matching transfer mode is available between the device and
 
 ## See Also
 
-- [atadevconfig](ioatadevconfig/1811729-atadevconfig.md)
+### Miscellaneous
+- [atadevconfig](./api-1811729-atadevconfig.md)
   static creator function.
-- [bitSigToNumeric](ioatadevconfig/1811736-bitsigtonumeric.md)
+- [bitSigToNumeric](./api-1811736-bitsigtonumeric.md)
   converts a bit-significant field to a numerical value. Note that a bit field of 0x00 has no defined result.
-- [getDMACycleTime](ioatadevconfig/1811744-getdmacycletime.md)
-- [getDMAMode](ioatadevconfig/1811750-getdmamode.md)
-- [getPacketConfig](ioatadevconfig/1811758-getpacketconfig.md)
-- [getPIOCycleTime](ioatadevconfig/1811768-getpiocycletime.md)
-- [getPIOMode](ioatadevconfig/1811774-getpiomode.md)
-- [getUltraMode](ioatadevconfig/1811781-getultramode.md)
-- [setDMACycleTime](ioatadevconfig/1811797-setdmacycletime.md)
-- [setDMAMode](ioatadevconfig/1811803-setdmamode.md)
-- [setPacketConfig](ioatadevconfig/1811808-setpacketconfig.md)
+- [getDMACycleTime](./api-1811744-getdmacycletime.md)
+- [getDMAMode](./api-1811750-getdmamode.md)
+- [getPacketConfig](./api-1811758-getpacketconfig.md)
+- [getPIOCycleTime](./api-1811768-getpiocycletime.md)
+- [getPIOMode](./api-1811774-getpiomode.md)
+- [getUltraMode](./api-1811781-getultramode.md)
+- [setDMACycleTime](./api-1811797-setdmacycletime.md)
+- [setDMAMode](./api-1811803-setdmamode.md)
+- [setPacketConfig](./api-1811808-setpacketconfig.md)
   For ATAPI devices, if the device asserts interrupt after the Packet Command when it is ready to accept the packet, set this value to true (mostly older devices). If the device accepts the packet only by asserting DRQ bit in status, then set this value false. Tells the bus controller whether to wait for packet acceptance or set pending interrupt.
-- [setPIOCycleTime](ioatadevconfig/1811814-setpiocycletime.md)
-- [setPIOMode](ioatadevconfig/1811821-setpiomode.md)
-- [setUltraMode](ioatadevconfig/1811827-setultramode.md)
+- [setPIOCycleTime](./api-1811814-setpiocycletime.md)
+- [setPIOMode](./api-1811821-setpiomode.md)
+- [setUltraMode](./api-1811827-setultramode.md)
 
 
 ---

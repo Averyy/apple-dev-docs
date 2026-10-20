@@ -1,7 +1,8 @@
 # ChannelAudioComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that configures channel-based rendering of sounds from an entity.
 
@@ -43,32 +44,33 @@ Channel audio sources are well suited to play back sounds not associated with an
 ## Topics
 
 ### Initializers
-- [init(gain: Audio.Decibel)](channelaudiocomponent/init(gain:).md)
+- [init(gain: Audio.Decibel)](./channelaudiocomponent/init%28gain%29.md)
   Configure the behavior of a channel audio source.
 ### Instance Properties
-- [var gain: Audio.Decibel](channelaudiocomponent/gain.md)
+- [var gain: Audio.Decibel](./channelaudiocomponent/gain.md)
   The overall level for all sounds emitted from an entity. In relative Decibels, in the range  `-.infinity ... .zero` where `.zero` is the default.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Creating a Spaceship game](creating-a-spaceship-game.md)
+### Audio source components
+- [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
-- [struct SpatialAudioComponent](spatialaudiocomponent.md)
+- [struct SpatialAudioComponent](./spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.
-- [struct AmbientAudioComponent](ambientaudiocomponent.md)
+- [struct AmbientAudioComponent](./ambientaudiocomponent.md)
   A component that configures the ambient rendering of sounds from an entity.
 
 

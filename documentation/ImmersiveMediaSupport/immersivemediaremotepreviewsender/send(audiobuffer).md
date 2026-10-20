@@ -1,7 +1,8 @@
 # send(audioBuffer:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an audio frame to all connected receivers.
 
@@ -16,7 +17,7 @@ func send(audioBuffer: CMSampleBuffer) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails while sending the audio data, for example, if the audio sample buffer has an invalid format or data.
+> **Throws**: This function throws if anything fails while sending the audio data, for example, if the audio sample buffer has an invalid format or data.
 
 ## Parameters
 

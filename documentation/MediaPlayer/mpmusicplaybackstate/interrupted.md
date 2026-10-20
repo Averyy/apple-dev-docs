@@ -1,7 +1,8 @@
 # MPMusicPlaybackState.interrupted
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player has been interrupted, such as by an incoming phone call.
 
@@ -18,17 +19,22 @@ The music player has been interrupted, such as by an incoming phone call.
 case interrupted
 ```
 
+```c
+MPMusicPlaybackStateInterrupted
+```
+
 ## See Also
 
-- [MPMusicPlaybackState.stopped](mpmusicplaybackstate/stopped.md)
+### Constants
+- [MPMusicPlaybackState.stopped](./stopped.md)
   The music player is stopped.
-- [MPMusicPlaybackState.playing](mpmusicplaybackstate/playing.md)
+- [MPMusicPlaybackState.playing](./playing.md)
   The music player is playing.
-- [MPMusicPlaybackState.paused](mpmusicplaybackstate/paused.md)
+- [MPMusicPlaybackState.paused](./paused.md)
   The music player is paused.
-- [MPMusicPlaybackState.seekingForward](mpmusicplaybackstate/seekingforward.md)
+- [MPMusicPlaybackState.seekingForward](./seekingforward.md)
   The music player is seeking forward.
-- [MPMusicPlaybackState.seekingBackward](mpmusicplaybackstate/seekingbackward.md)
+- [MPMusicPlaybackState.seekingBackward](./seekingbackward.md)
   The music player is seeking backward.
 
 

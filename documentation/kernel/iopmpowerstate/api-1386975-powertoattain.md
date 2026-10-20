@@ -1,7 +1,8 @@
 # powerToAttain
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes dditional power to attain this state from next lower state (in milliWatts). Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Describes dditional power to attain this state from next lower state (in milliWa
 
 ## Declaration
 
-```swift
+```c
 unsigned long powerToAttain;
 ```
 

@@ -1,7 +1,8 @@
 # localizedAttributedSuggestion
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed string for the localized suggestion.
 
@@ -22,13 +23,14 @@ var localizedAttributedSuggestion: AttributedString { get }
 
 The `localizedAttributedString` provides the suggestion text that the system uses to replace the text in the search bar. The system uses the attributed string to highlight the range of the suggestion string that matches the user query string.
 
-For example, the user types “search”, and the system offers a suggestion for “search suggestion”, where the system marks up “search” using the [`CSSuggestionHighlightAttributeName`](cssuggestionhighlightattributename.md). Your app can use the range to add a bold highlight, if desired.
+For example, the user types “search”, and the system offers a suggestion for “search suggestion”, where the system marks up “search” using the [`CSSuggestionHighlightAttributeName`](../cssuggestionhighlightattributename.md). Your app can use the range to add a bold highlight, if desired.
 
 ## See Also
 
-- [var suggestionKind: CSSuggestion.SuggestionKind](cssuggestion/suggestionkind-swift.property.md)
+### Setting suggestion attributes
+- [var suggestionKind: CSSuggestion.SuggestionKind](./suggestionkind-swift.property.md)
   The type of suggestion.
-- [CSSuggestion.SuggestionKind](cssuggestion/suggestionkind-swift.enum.md)
+- [CSSuggestion.SuggestionKind](./suggestionkind-swift.enum.md)
   The suggestion type that determines how the system handles a suggestion.
 
 

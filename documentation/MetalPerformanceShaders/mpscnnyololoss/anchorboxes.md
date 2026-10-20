@@ -1,7 +1,8 @@
 # anchorBoxes
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var anchorBoxes: Data { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) NSData * anchorBoxes;
 ```
 
 

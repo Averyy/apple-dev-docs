@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification.deviceRemoved
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that the device is no longer connected to the system.
 
@@ -16,7 +17,7 @@ case deviceRemoved
 
 #### Discussion
 
-After the device is removed, no other notifications occur and most methods fail. Discard the [`HIDDeviceClient`](hiddeviceclient.md).
+After the device is removed, no other notifications occur and most methods fail. Discard the [`HIDDeviceClient`](../../hiddeviceclient.md).
 
 
 ---

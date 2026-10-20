@@ -1,7 +1,8 @@
 # CNLabelContactRelationTeacher
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The label for the contact’s teacher.
 
@@ -17,6 +18,10 @@ The label for the contact’s teacher.
 
 ```swift
 let CNLabelContactRelationTeacher: String
+```
+
+```c
+extern NSString * const CNLabelContactRelationTeacher;
 ```
 
 

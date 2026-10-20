@@ -1,7 +1,8 @@
 # init(bounds:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a new paper model with the specified bounds.
 
@@ -24,7 +25,8 @@ init(bounds: CGRect)
 
 ## See Also
 
-- [init(dataRepresentation: Data) throws](papermarkup/init(datarepresentation:).md)
+### Creating markup
+- [init(dataRepresentation: Data) throws](./init%28datarepresentation%29.md)
   Initializes and returns a new paper model from the specified data.
 
 

@@ -1,7 +1,8 @@
 # bucket_max
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 int64_t bucket_max;
 ```
 

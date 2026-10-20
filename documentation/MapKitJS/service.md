@@ -1,7 +1,8 @@
 # Service
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class that provides common interfaces for service objects.
 
@@ -10,7 +11,7 @@ An abstract class that provides common interfaces for service objects.
 
 ## Declaration
 
-```swift
+```
 abstract class Service
 ```
 
@@ -21,26 +22,27 @@ You can’t initialize an abstract class. Use specific service classes to create
 ## Topics
 
 ### Instance Properties
-- [getsUserLocation](service/getsuserlocation.md)
+- [getsUserLocation](./service/getsuserlocation.md)
   A Boolean value that indicates whether the request returns results near a person’s location.
-- [language](service/language.md)
+- [language](./service/language.md)
   A language ID that determines the language to use for displaying addresses.
 ### Instance Methods
-- [cancel(promise)](service/cancel.md)
+- [cancel(promise)](./service/cancel.md)
   Cancels a request using the provided request promise.
 
 ## Relationships
 
 ### Inherited By
-- [Directions](directions.md)
-- [Geocoder](geocoder.md)
-- [PlaceLookup](placelookup.md)
-- [PointsOfInterestSearch](pointsofinterestsearch.md)
-- [Search](search.md)
+- [Directions](./directions.md)
+- [Geocoder](./geocoder.md)
+- [PlaceLookup](./placelookup.md)
+- [PointsOfInterestSearch](./pointsofinterestsearch.md)
+- [Search](./search.md)
 
 ## See Also
 
-- [class RequestError](requesterror.md)
+### Service
+- [class RequestError](./requesterror.md)
   The error that a service method’s returned promise rejects with when a request fails.
 
 

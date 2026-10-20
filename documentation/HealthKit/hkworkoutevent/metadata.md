@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metadata associated with the workout event.
 
@@ -19,11 +20,16 @@ The metadata associated with the workout event.
 var metadata: [String : Any]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
+```
+
 ## See Also
 
-- [var dateInterval: DateInterval](hkworkoutevent/dateinterval.md)
+### Getting property data
+- [var dateInterval: DateInterval](./dateinterval.md)
   The time and duration of the event.
-- [var type: HKWorkoutEventType](hkworkoutevent/type.md)
+- [var type: HKWorkoutEventType](./type.md)
   The type of workout event.
 
 

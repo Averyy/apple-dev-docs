@@ -1,7 +1,8 @@
 # copyBytes(to:from:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copy the bytes from the given range to the destination buffer.
 

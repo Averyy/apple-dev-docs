@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.6+
@@ -16,9 +17,14 @@
 var attachment: ASAuthorizationPublicKeyCredentialAttachment { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ASAuthorizationPublicKeyCredentialAttachment attachment;
+```
+
 ## See Also
 
-- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md)
+### Accessing registration properties
+- [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](./largeblob-5nvj9.md)
   The request’s binary large object value.
 
 

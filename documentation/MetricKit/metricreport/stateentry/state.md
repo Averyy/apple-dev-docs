@@ -1,7 +1,8 @@
 # state
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 StateReporting information during which this entry was collected.
 

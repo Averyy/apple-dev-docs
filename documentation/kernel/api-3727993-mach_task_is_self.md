@@ -1,14 +1,15 @@
 # mach_task_is_self
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_task_is_self(task_name_t task, boolean_t *is_self);
 ```
 

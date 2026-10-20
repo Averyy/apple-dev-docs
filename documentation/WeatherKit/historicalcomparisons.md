@@ -1,7 +1,8 @@
 # HistoricalComparisons
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the weather condition comparisons for a specific location. It’s a list of comparisons between current readings and historical averages. The list is ordered by significance of deviation.
 
@@ -23,30 +24,30 @@ struct HistoricalComparisons
 ## Topics
 
 ### Instance Properties
-- [var comparisons: [HistoricalComparison]](historicalcomparisons/comparisons.md)
+- [var comparisons: [HistoricalComparison]](./historicalcomparisons/comparisons.md)
   A list of comparisons between current readings and historical averages, ordered by significance of deviation.
-- [var endIndex: HistoricalComparisons.Index](historicalcomparisons/endindex.md)
+- [var endIndex: HistoricalComparisons.Index](./historicalcomparisons/endindex.md)
   The end index for the historical comparisons.
-- [var metadata: WeatherMetadata](historicalcomparisons/metadata.md)
+- [var metadata: WeatherMetadata](./historicalcomparisons/metadata.md)
   Descriptive information about the weather comparisons data.
-- [var startIndex: HistoricalComparisons.Index](historicalcomparisons/startindex.md)
+- [var startIndex: HistoricalComparisons.Index](./historicalcomparisons/startindex.md)
   The start index for the historical comparisons.
 ### Subscripts
-- [subscript(HistoricalComparisons.Index) -> HistoricalComparisons.Element](historicalcomparisons/subscript(_:).md)
+- [subscript(HistoricalComparisons.Index) -> HistoricalComparisons.Element](./historicalcomparisons/subscript%28_%29.md)
   The historical comparison at the provided index.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

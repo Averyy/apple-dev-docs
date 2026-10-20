@@ -1,7 +1,8 @@
 # CIDetector
 
 **Framework**: Core Image  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image processor that identifies notable features, such as faces and barcodes, in a still image or video.
 
@@ -10,7 +11,7 @@ An image processor that identifies notable features, such as faces and barcodes,
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,57 +20,62 @@ An image processor that identifies notable features, such as faces and barcodes,
 class CIDetector
 ```
 
+```objc
+@interface CIDetector : NSObject
+```
+
 #### Overview
 
-> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [`Vision`](https://developer.apple.com/documentation/vision) framework replaces these classes for identifying and analyzing image features. See [`VNRequest`](https://developer.apple.com/documentation/vision/vnrequest).
+> **Note**:  In macOS 10.13, iOS 11, and tvOS 11 or later, the [Vision](../Vision/Vision.md) framework replaces these classes for identifying and analyzing image features. See [`VNRequest`](../Vision/vnrequest.md).
 
-A `CIDetector` object uses image processing to search for and identify notable features (faces, rectangles, and barcodes) in a still image or video. Detected features are represented by [`CIFeature`](cifeature.md) objects that provide more information about each feature.
+A `CIDetector` object uses image processing to search for and identify notable features (faces, rectangles, and barcodes) in a still image or video. Detected features are represented by [`CIFeature`](./cifeature.md) objects that provide more information about each feature.
 
 This class can maintain many state variables that can impact performance. So for best performance, reuse `CIDetector` instances instead of creating new ones.
 
 ## Topics
 
 ### Creating a Detector Object
-- [init?(ofType: String, context: CIContext?, options: [String : Any]?)](cidetector/init(oftype:context:options:).md)
+- [init?(ofType: String, context: CIContext?, options: [String : Any]?)](./cidetector/init%28oftype,context,options%29.md)
   Creates and returns a configured detector.
 ### Using a Detector Object to Find Features
-- [func features(in: CIImage) -> [CIFeature]](cidetector/features(in:).md)
+- [func features(in: CIImage) -> [CIFeature]](./cidetector/features%28in%29.md)
   Searches for features in an image.
-- [func features(in: CIImage, options: [String : Any]?) -> [CIFeature]](cidetector/features(in:options:).md)
+- [func features(in: CIImage, options: [String : Any]?) -> [CIFeature]](./cidetector/features%28in,options%29.md)
   Searches for features in an image based on the specified image orientation.
 ### Constants
-- [Detector Types](detector-types.md)
+- [Detector Types](./detector-types.md)
   Strings used to declare the detector for which you are interested.
-- [Detector Configuration Keys](detector-configuration-keys.md)
+- [Detector Configuration Keys](./detector-configuration-keys.md)
   Keys used in the options dictionary to configure a detector.
-- [Detector Accuracy Options](detector-accuracy-options.md)
+- [Detector Accuracy Options](./detector-accuracy-options.md)
   Value options used to specify the desired accuracy of the detector.
-- [Feature Detection Keys](feature-detection-keys.md)
-  Keys used in the options dictionary for [`features(in:options:)`](cidetector/features(in:options:).md).
+- [Feature Detection Keys](./feature-detection-keys.md)
+  Keys used in the options dictionary for [`features(in:options:)`](./cidetector/features%28in,options%29.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CIFeature](cifeature.md)
+### Image Feature Detection
+- [class CIFeature](./cifeature.md)
   The abstract superclass for objects representing notable features detected in an image.
-- [class CIFaceFeature](cifacefeature.md)
+- [class CIFaceFeature](./cifacefeature.md)
   Information about a face detected in a still or video image.
-- [class CIRectangleFeature](cirectanglefeature.md)
+- [class CIRectangleFeature](./cirectanglefeature.md)
   Information about a rectangular region detected in a still or video image.
-- [class CITextFeature](citextfeature.md)
+- [class CITextFeature](./citextfeature.md)
   Information about a text that was detected in a still or video image.
-- [class CIQRCodeFeature](ciqrcodefeature.md)
+- [class CIQRCodeFeature](./ciqrcodefeature.md)
   Information about a Quick Response code detected in a still or video image.
 
 

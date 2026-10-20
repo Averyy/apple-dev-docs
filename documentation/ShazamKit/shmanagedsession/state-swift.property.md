@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the managed session.
 
@@ -23,7 +24,8 @@ final var state: SHManagedSession.State { get }
 
 ## See Also
 
-- [SHManagedSession.State](shmanagedsession/state-swift.enum.md)
+### Getting the session state
+- [SHManagedSession.State](./state-swift.enum.md)
   The state of a managed session.
 
 

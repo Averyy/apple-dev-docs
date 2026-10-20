@@ -1,7 +1,8 @@
 # coordinator
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An instance you use to communicate your AppKit view’s behavior and state out to SwiftUI objects.
 
@@ -28,11 +29,12 @@ class Coordinator: NSObject {
 }
 ```
 
-To create and configure your custom coordinator, implement the [`makeCoordinator()`](nsviewcontrollerrepresentable/makecoordinator().md) method of your [`NSViewControllerRepresentable`](nsviewcontrollerrepresentable.md) object.
+To create and configure your custom coordinator, implement the [`makeCoordinator()`](../nsviewcontrollerrepresentable/makecoordinator%28%29.md) method of your [`NSViewControllerRepresentable`](../nsviewcontrollerrepresentable.md) object.
 
 ## See Also
 
-- [var transaction: Transaction](nsviewrepresentablecontext/transaction.md)
+### Coordinating view-related interactions
+- [var transaction: Transaction](./transaction.md)
   The current transaction.
 
 

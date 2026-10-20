@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Swift 6.2+
@@ -12,6 +13,8 @@
 ```swift
 var description: String { get }
 ```
+
+Available when `AttachableValue` conforms to `Attachable`.
 
 
 ---

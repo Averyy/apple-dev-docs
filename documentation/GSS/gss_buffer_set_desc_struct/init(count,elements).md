@@ -1,7 +1,8 @@
 # init(count:elements:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new buffer set with the given buffers.
 
@@ -25,7 +26,8 @@ init(count: Int, elements: UnsafeMutablePointer<gss_buffer_desc>!)
 
 ## See Also
 
-- [init()](gss_buffer_set_desc_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty buffer set.
 
 

@@ -1,7 +1,8 @@
 # textureTopologies
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture topologies available for the layer.
 
@@ -21,7 +22,8 @@ Use the topology information to allocate the resources you need to manage your M
 
 ## See Also
 
-- [struct TextureTopology](texturetopology.md)
+### Getting the layer’s texture topology
+- [struct TextureTopology](../../texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.
 
 

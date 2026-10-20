@@ -1,7 +1,8 @@
 # removeAll(keepingCapacity:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all key-value pairs from the dictionary.
 
@@ -20,11 +21,13 @@ Removes all key-value pairs from the dictionary.
 mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Discussion
 
 Calling this method invalidates all indices with respect to the dictionary.
 
-> **Note**: O(*n*), where *n* is the number of key-value pairs in the dictionary.
+> **Complexity**: O(*n*), where *n* is the number of key-value pairs in the dictionary.
 
 ## Parameters
 
@@ -32,11 +35,12 @@ Calling this method invalidates all indices with respect to the dictionary.
 
 ## See Also
 
-- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](dictionary/filter(_:).md)
+### Removing Keys and Values
+- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](./filter%28_%29.md)
   Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
-- [func removeValue(forKey: Key) -> Value?](dictionary/removevalue(forkey:).md)
+- [func removeValue(forKey: Key) -> Value?](./removevalue%28forkey%29.md)
   Removes the given key and its associated value from the dictionary.
-- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/remove(at:).md)
+- [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](./remove%28at%29.md)
   Removes and returns the key-value pair at the specified index.
 
 

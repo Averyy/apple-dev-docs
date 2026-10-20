@@ -1,7 +1,8 @@
 # EntityGestureRecognizer
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A gesture recognizer that works on entities.
 
@@ -19,29 +20,30 @@ protocol EntityGestureRecognizer : UIGestureRecognizer
 ## Topics
 
 ### Using the gesture recognizer
-- [var entity: (any HasCollision)?](entitygesturerecognizer/entity.md)
+- [var entity: (any HasCollision)?](./entitygesturerecognizer/entity.md)
   The entity the receiver is associated with
-- [func location(in: Entity?) -> SIMD3<Float>?](entitygesturerecognizer/location(in:).md)
+- [func location(in: Entity?) -> SIMD3<Float>?](./entitygesturerecognizer/location%28in%29.md)
   Returns the unprojected location of the gesture represented by the receiver in the space of the given entity.
 
 ## Relationships
 
 ### Inherits From
-- [UIGestureRecognizer](../uikit/uigesturerecognizer.md)
+- [UIGestureRecognizer](../UIKit/uigesturerecognizer.md)
 ### Conforming Types
-- [EntityRotationGestureRecognizer](entityrotationgesturerecognizer.md)
-- [EntityScaleGestureRecognizer](entityscalegesturerecognizer.md)
-- [EntityTranslationGestureRecognizer](entitytranslationgesturerecognizer.md)
+- [EntityRotationGestureRecognizer](./entityrotationgesturerecognizer.md)
+- [EntityScaleGestureRecognizer](./entityscalegesturerecognizer.md)
+- [EntityTranslationGestureRecognizer](./entitytranslationgesturerecognizer.md)
 
 ## See Also
 
-- [ARView.EntityGestures](arview/entitygestures.md)
+### UIKit and AppKit gestures
+- [ARView.EntityGestures](./arview/entitygestures.md)
   The set of possible entity gesture recognizers.
-- [class EntityRotationGestureRecognizer](entityrotationgesturerecognizer.md)
+- [class EntityRotationGestureRecognizer](./entityrotationgesturerecognizer.md)
   A gesture recognizer that uses rotation gestures involving two touches to rotate a given entity.
-- [class EntityScaleGestureRecognizer](entityscalegesturerecognizer.md)
+- [class EntityScaleGestureRecognizer](./entityscalegesturerecognizer.md)
   A gesture recognizer that uses a pinch gesture to scale or zoom an entity.
-- [class EntityTranslationGestureRecognizer](entitytranslationgesturerecognizer.md)
+- [class EntityTranslationGestureRecognizer](./entitytranslationgesturerecognizer.md)
   A gesture recognizer that uses a pan gesture to move an entity.
 
 

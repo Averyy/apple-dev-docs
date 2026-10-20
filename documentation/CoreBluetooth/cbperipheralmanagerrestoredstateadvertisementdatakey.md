@@ -1,7 +1,8 @@
 # CBPeripheralManagerRestoredStateAdvertisementDataKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of restored advertising data.
 
@@ -20,13 +21,18 @@ A dictionary of restored advertising data.
 let CBPeripheralManagerRestoredStateAdvertisementDataKey: String
 ```
 
+```c
+extern NSString * const CBPeripheralManagerRestoredStateAdvertisementDataKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary) that contains the data advertised by the peripheral manager at the time the system quit the app.
+The value associated with this key is an [`NSDictionary`](../Foundation/nsdictionary.md) that contains the data advertised by the peripheral manager at the time the system quit the app.
 
 ## See Also
 
-- [let CBPeripheralManagerRestoredStateServicesKey: String](cbperipheralmanagerrestoredstateserviceskey.md)
+### State Restoration Dictionary Keys
+- [let CBPeripheralManagerRestoredStateServicesKey: String](./cbperipheralmanagerrestoredstateserviceskey.md)
   An array of restored peripheral services.
 
 

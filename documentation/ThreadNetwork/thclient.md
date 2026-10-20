@@ -1,7 +1,8 @@
 # THClient
 
 **Framework**: ThreadNetwork  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that supports safely sharing Thread credentials between multiple clients.
 
@@ -19,64 +20,69 @@ A class that supports safely sharing Thread credentials between multiple clients
 class THClient
 ```
 
+```objc
+@interface THClient : NSObject
+```
+
 #### Overview
 
-Request credentials for either a specific Thread network or for the *preferred network* using [`THClient`](thclient.md). The preferred network is the default Thread network chosen by the framework for a home.
+Request credentials for either a specific Thread network or for the *preferred network* using [`THClient`](./thclient.md). The preferred network is the default Thread network chosen by the framework for a home.
 
 The ThreadNetwork framework maintains a database of network credentials. The class allows clients to store, list, and delete credentials for a given network from the database.
 
-Some methods in [`THClient`](thclient.md) use the *team ID*, a string that you store in your application’s `Info.plist`. The ThreadNetwork framework uses the team ID to preserve the privacy of the Thread network credentials across different clients. For example, credentials stored by one client can’t be deleted or modified by another client.
+Some methods in [`THClient`](./thclient.md) use the *team ID*, a string that you store in your application’s `Info.plist`. The ThreadNetwork framework uses the team ID to preserve the privacy of the Thread network credentials across different clients. For example, credentials stored by one client can’t be deleted or modified by another client.
 
 > ❗ **Important**: Thread credentials give you the ability to add any device into the Thread network. Use this information responsibly.
 
 ## Topics
 
 ### Creating the Client
-- [init()](thclient/init.md)
+- [init()](./thclient/init%28%29.md)
   Creates the client object.
 ### Retrieving Credentials
-- [func isPreferredNetworkAvailable(completion: (Bool) -> Void)](thclient/ispreferrednetworkavailable(completion:).md)
+- [func isPreferredNetworkAvailable(completion: (Bool) -> Void)](./thclient/ispreferrednetworkavailable%28completion%29.md)
   Indicates whether a preferred network is available.
-- [func checkPreferredNetwork(forActiveOperationalDataset: Data, completion: (Bool) -> Void)](thclient/checkpreferrednetwork(foractiveoperationaldataset:completion:).md)
+- [func checkPreferredNetwork(forActiveOperationalDataset: Data, completion: (Bool) -> Void)](./thclient/checkpreferrednetwork%28foractiveoperationaldataset,completion%29.md)
   Determines if the essential operating parameters match the preferred network’s parameters.
-- [func retrieveCredentials(forBorderAgent: Data, completion: (THCredentials?, (any Error)?) -> Void)](thclient/retrievecredentials(forborderagent:completion:).md)
+- [func retrieveCredentials(forBorderAgent: Data, completion: (THCredentials?, (any Error)?) -> Void)](./thclient/retrievecredentials%28forborderagent,completion%29.md)
   Requests Thread credentials for a Border Agent.
-- [func retrieveCredentials(forExtendedPANID: Data, completion: (THCredentials?, (any Error)?) -> Void)](thclient/retrievecredentials(forextendedpanid:completion:).md)
+- [func retrieveCredentials(forExtendedPANID: Data, completion: (THCredentials?, (any Error)?) -> Void)](./thclient/retrievecredentials%28forextendedpanid,completion%29.md)
   Requests Thread credentials for an extended Personal Area Network (PAN) ID.
-- [func retrieveAllCredentials((Set<THCredentials>?, (any Error)?) -> Void)](thclient/retrieveallcredentials(_:).md)
+- [func retrieveAllCredentials((Set<THCredentials>?, (any Error)?) -> Void)](./thclient/retrieveallcredentials%28_%29.md)
   Requests all Thread credentials from the framework.
-- [func retrievePreferredCredentials((THCredentials?, (any Error)?) -> Void)](thclient/retrievepreferredcredentials(_:).md)
+- [func retrievePreferredCredentials((THCredentials?, (any Error)?) -> Void)](./thclient/retrievepreferredcredentials%28_%29.md)
   Requests Thread credentials for the preferred network.
-- [func retrieveAllActiveCredentials((Set<THCredentials>?, (any Error)?) -> Void)](thclient/retrieveallactivecredentials(_:).md)
+- [func retrieveAllActiveCredentials((Set<THCredentials>?, (any Error)?) -> Void)](./thclient/retrieveallactivecredentials%28_%29.md)
   Returns a set of the active credentials.
 ### Storing and Deleting Credentials
-- [func deleteCredentials(forBorderAgent: Data, completion: ((any Error)?) -> Void)](thclient/deletecredentials(forborderagent:completion:).md)
+- [func deleteCredentials(forBorderAgent: Data, completion: ((any Error)?) -> Void)](./thclient/deletecredentials%28forborderagent,completion%29.md)
   Deletes Thread network credentials from the framework database for a Border Agent.
-- [func storeCredentials(forBorderAgent: Data, activeOperationalDataSet: Data, completion: ((any Error)?) -> Void)](thclient/storecredentials(forborderagent:activeoperationaldataset:completion:).md)
+- [func storeCredentials(forBorderAgent: Data, activeOperationalDataSet: Data, completion: ((any Error)?) -> Void)](./thclient/storecredentials%28forborderagent,activeoperationaldataset,completion%29.md)
   Stores Thread network credentials into the framework database that a Border Agent provides.
 ### Instance Methods
-- [func enableCredentialSharingMode(forExtendedPANID: Data, completion: ((any Error)?) -> Void)](thclient/enablecredentialsharingmode(forextendedpanid:completion:).md)
+- [func enableCredentialSharingMode(forExtendedPANID: Data, completion: ((any Error)?) -> Void)](./thclient/enablecredentialsharingmode%28forextendedpanid,completion%29.md)
   Triggers Credential Share mode on a nearby eligible Apple Border Router (tvOS(27.0)).
-- [func retrieveActiveCredentialsForNearbyNetworks(completion: (Set<THCredentials>?, (any Error)?) -> Void)](thclient/retrieveactivecredentialsfornearbynetworks(completion:).md)
+- [func retrieveActiveCredentialsForNearbyNetworks(completion: (Set<THCredentials>?, (any Error)?) -> Void)](./thclient/retrieveactivecredentialsfornearbynetworks%28completion%29.md)
   Requests all active Thread credentials with active border routers around from the framework.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [com.apple.developer.networking.manage-thread-network-credentials](../bundleresources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
+### Managing clients and sharing credentials
+- [com.apple.developer.networking.manage-thread-network-credentials](../BundleResources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
   A Boolean value that indicates whether the app can use ThreadNetwork.
-- [class THCredentials](thcredentials.md)
+- [class THCredentials](./thcredentials.md)
   A class that contains credentials for a Thread network.
 
 

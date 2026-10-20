@@ -1,7 +1,8 @@
 # HIDElementCollection
 
 **Framework**: Core HID  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of items from a report descriptor for a HID device.
 
@@ -18,61 +19,62 @@ struct HIDElementCollection
 
 Collections are a defined part of the HID specification to specify how groupings of data relate to each other, and provide an overall structure for the organization of device functionality.
 
-See the HID specification for more details: [`https://www.usb.org/hid`](https://developer.apple.comhttps://www.usb.org/hid).
+See the HID specification for more details: [https://www.usb.org/hid](https://www.usb.org/hid).
 
 ## Topics
 
 ### Instance Properties
-- [var childCollections: [HIDElementCollection]](hidelementcollection/childcollections.md)
+- [var childCollections: [HIDElementCollection]](./hidelementcollection/childcollections.md)
   The collections contained by this collection, if there are any.
-- [var childElements: [HIDElement]](hidelementcollection/childelements.md)
+- [var childElements: [HIDElement]](./hidelementcollection/childelements.md)
   The elements contained by this collection, if there are any.
-- [var client: HIDDeviceClient](hidelementcollection/client.md)
+- [var client: HIDDeviceClient](./hidelementcollection/client.md)
   The client for the device with which this collection is associated.
-- [var parentCollection: HIDElementCollection?](hidelementcollection/parentcollection.md)
+- [var parentCollection: HIDElementCollection?](./hidelementcollection/parentcollection.md)
   The collection that contains this collection, if there is one.
-- [var type: HIDElementCollection.CollectionType](hidelementcollection/type.md)
+- [var type: HIDElementCollection.CollectionType](./hidelementcollection/type.md)
   The type of this collection.
-- [var usage: HIDUsage](hidelementcollection/usage.md)
+- [var usage: HIDUsage](./hidelementcollection/usage.md)
   The HID specification compliant usage for this collection.
 ### Enumerations
-- [HIDElementCollection.CollectionType](hidelementcollection/collectiontype.md)
-  Types of [`HIDElementCollection`](hidelementcollection.md)s.
+- [HIDElementCollection.CollectionType](./hidelementcollection/collectiontype.md)
+  Types of [`HIDElementCollection`](./hidelementcollection.md)s.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+### Interaction
+- [Communicating with human interface devices](./communicatingwithhiddevices.md)
   Interact with and obtain data from devices such as keyboards and mice.
-- [actor HIDDeviceClient](hiddeviceclient.md)
+- [actor HIDDeviceClient](./hiddeviceclient.md)
   A client of a physical or virtual HID compatible peripheral.
-- [struct HIDElement](hidelement.md)
+- [struct HIDElement](./hidelement.md)
   A representation of an item from a report descriptor for a HID device.
-- [HIDElement.Value](hidelement/value.md)
+- [HIDElement.Value](./hidelement/value.md)
   Data associated with a HID element.
-- [protocol HIDElementUpdate](hidelementupdate.md)
+- [protocol HIDElementUpdate](./hidelementupdate.md)
   A base protocol for element update types.
-- [enum HIDReportType](hidreporttype.md)
+- [enum HIDReportType](./hidreporttype.md)
   Types for HID reports.
-- [struct HIDReportID](hidreportid.md)
+- [struct HIDReportID](./hidreportid.md)
   A type to represent the report IDs of HID reports.
-- [enum HIDUsage](hidusage.md)
+- [enum HIDUsage](./hidusage.md)
   A type to represent HID usage pages.
-- [enum HIDDeviceError](hiddeviceerror.md)
+- [enum HIDDeviceError](./hiddeviceerror.md)
   Errors that the framework can throw.
-- [enum HIDDeviceTransport](hiddevicetransport.md)
+- [enum HIDDeviceTransport](./hiddevicetransport.md)
   Common transport types that transmit data to or from a HID device.
-- [enum HIDDeviceLocalizationCode](hiddevicelocalizationcode.md)
+- [enum HIDDeviceLocalizationCode](./hiddevicelocalizationcode.md)
   The localization codes that some HID devices declare to specify conformance to a certain format or language.
 
 

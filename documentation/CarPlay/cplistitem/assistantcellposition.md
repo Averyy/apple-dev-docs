@@ -1,7 +1,8 @@
 # CPListItem.AssistantCellPosition
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to specify the position of the assistant cell.
 
@@ -16,29 +17,34 @@ Constants to specify the position of the assistant cell.
 enum AssistantCellPosition
 ```
 
+```c
+enum CPAssistantCellPosition : NSInteger;
+```
+
 ## Topics
 
 ### Controlling the Assistant Cell Position
-- [CPListItem.AssistantCellPosition.bottom](cplistitem/assistantcellposition/bottom.md)
+- [CPListItem.AssistantCellPosition.bottom](./assistantcellposition/bottom.md)
   Positions the assistant cell at the bottom of all visible cells.
-- [CPListItem.AssistantCellPosition.top](cplistitem/assistantcellposition/top.md)
+- [CPListItem.AssistantCellPosition.top](./assistantcellposition/top.md)
   Positions the assistant cell at the top of all visible cells.
 ### Initializers
-- [init?(rawValue: Int)](cplistitem/assistantcellposition/init(rawvalue:).md)
+- [init?(rawValue: Int)](./assistantcellposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CPListItem.AssistantCellVisibility](cplistitem/assistantcellvisibility.md)
+### Managing the Assistant Cell
+- [CPListItem.AssistantCellVisibility](./assistantcellvisibility.md)
   Constants to specify the visibility of the assistant cell.
 
 

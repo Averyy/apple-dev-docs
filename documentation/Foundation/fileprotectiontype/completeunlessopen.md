@@ -1,7 +1,8 @@
 # completeUnlessOpen
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file is stored in an encrypted format on disk after it is closed.
 
@@ -20,17 +21,22 @@ The file is stored in an encrypted format on disk after it is closed.
 static let completeUnlessOpen: FileProtectionType
 ```
 
+```c
+extern NSFileProtectionType const NSFileProtectionCompleteUnlessOpen;
+```
+
 #### Discussion
 
-Files with this type of protection can be created while the device is locked, but once closed, cannot be opened again until the device is unlocked. If the file is opened when unlocked, you may continue to access the file normally, even if the user locks the device. There is a small performance penalty when the file is created and opened, though not when being written to or read from. This can be mitigated by changing the file protection to [`complete`](fileprotectiontype/complete.md) when the device is unlocked.
+Files with this type of protection can be created while the device is locked, but once closed, cannot be opened again until the device is unlocked. If the file is opened when unlocked, you may continue to access the file normally, even if the user locks the device. There is a small performance penalty when the file is created and opened, though not when being written to or read from. This can be mitigated by changing the file protection to [`complete`](./complete.md) when the device is unlocked.
 
 ## See Also
 
-- [static let complete: FileProtectionType](fileprotectiontype/complete.md)
+### Working with Protection Levels
+- [static let complete: FileProtectionType](./complete.md)
   The file is stored in an encrypted format on disk and cannot be read from or written to while the device is locked or booting.
-- [static let completeUntilFirstUserAuthentication: FileProtectionType](fileprotectiontype/completeuntilfirstuserauthentication.md)
+- [static let completeUntilFirstUserAuthentication: FileProtectionType](./completeuntilfirstuserauthentication.md)
   The file is stored in an encrypted format on disk and cannot be accessed until after the device has booted.
-- [static let none: FileProtectionType](fileprotectiontype/none.md)
+- [static let none: FileProtectionType](./none.md)
   The file has no special protections associated with it.
 
 

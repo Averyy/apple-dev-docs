@@ -1,22 +1,24 @@
 # strtol
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 long strtol(const char *, char **, int);
 ```
 
 ## See Also
 
-- [strtoq](1441090-strtoq.md)
-- [strtoul](1441100-strtoul.md)
-- [strtouq](1441084-strtouq.md)
+### Conversion
+- [strtoq](./api-1441090-strtoq.md)
+- [strtoul](./api-1441100-strtoul.md)
+- [strtouq](./api-1441084-strtouq.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # cube
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cube symbol.
 
@@ -17,6 +18,8 @@ Cube symbol.
 ```swift
 static var cube: BasicChart3DSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChart3DSymbolShape`.
 
 
 ---

@@ -1,7 +1,8 @@
 # willDisappear()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the interface controller that its view is now offscreen.
 
@@ -14,9 +15,13 @@ Tells the interface controller that its view is now offscreen.
 func willDisappear()
 ```
 
+```objc
+- (void) willDisappear;
+```
+
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -26,11 +31,12 @@ The system calls this method on your WatchKit extension’s main thread. The `su
 
 ## See Also
 
-- [func willActivate()](wkinterfacecontroller/willactivate.md)
+### Responding to activation and appearance events
+- [func willActivate()](./willactivate%28%29.md)
   Tells the interface controller that the system is about to activate its view.
-- [func didDeactivate()](wkinterfacecontroller/diddeactivate.md)
+- [func didDeactivate()](./diddeactivate%28%29.md)
   Tells the interface controller that its view is no longer active.
-- [func didAppear()](wkinterfacecontroller/didappear.md)
+- [func didAppear()](./didappear%28%29.md)
   Tells the interface controller that its view is now onscreen.
 
 

@@ -1,7 +1,8 @@
 # MTLPixelFormat.rgb9e5Float
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Packed 32-bit format with floating-point color components: 9 bits each for RGB and 5 bits for an exponent shared by RGB, packed into 32 bits.
 
@@ -10,7 +11,7 @@ Packed 32-bit format with floating-point color components: 9 bits each for RGB a
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,19 +20,24 @@ Packed 32-bit format with floating-point color components: 9 bits each for RGB a
 case rgb9e5Float
 ```
 
+```c
+MTLPixelFormatRGB9E5Float
+```
+
 ## Mentions
 
-- [Developing Metal apps that run in Simulator](developing-metal-apps-that-run-in-simulator.md)
+- [Developing Metal apps that run in Simulator](../developing-metal-apps-that-run-in-simulator.md)
 
 ## See Also
 
-- [MTLPixelFormat.bgr10a2Unorm](mtlpixelformat/bgr10a2unorm.md)
+### Packed 32-bit pixel formats
+- [MTLPixelFormat.bgr10a2Unorm](./bgr10a2unorm.md)
   A 32-bit packed pixel format with four normalized unsigned integer components: 10-bit blue, 10-bit green, 10-bit red, and 2-bit alpha.
-- [MTLPixelFormat.rgb10a2Unorm](mtlpixelformat/rgb10a2unorm.md)
+- [MTLPixelFormat.rgb10a2Unorm](./rgb10a2unorm.md)
   A 32-bit packed pixel format with four normalized unsigned integer components: 10-bit red, 10-bit green, 10-bit blue, and 2-bit alpha.
-- [MTLPixelFormat.rgb10a2Uint](mtlpixelformat/rgb10a2uint.md)
+- [MTLPixelFormat.rgb10a2Uint](./rgb10a2uint.md)
   A 32-bit packed pixel format with four unsigned integer components: 10-bit red, 10-bit green, 10-bit blue, and 2-bit alpha.
-- [MTLPixelFormat.rg11b10Float](mtlpixelformat/rg11b10float.md)
+- [MTLPixelFormat.rg11b10Float](./rg11b10float.md)
   32-bit format with floating-point color components, 11 bits each for red and green and 10 bits for blue.
 
 

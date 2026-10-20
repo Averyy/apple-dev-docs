@@ -1,7 +1,8 @@
 # lookAroundViewControllerWillPresentFullScreen(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the view controller is about to enter full-screen mode.
 
@@ -18,17 +19,22 @@ Tells the delegate when the view controller is about to enter full-screen mode.
 optional func lookAroundViewControllerWillPresentFullScreen(_ viewController: MKLookAroundViewController)
 ```
 
+```objc
+- (void) lookAroundViewControllerWillPresentFullScreen:(MKLookAroundViewController *) viewController;
+```
+
 ## Parameters
 
-- `viewController`: The [`MKLookAroundViewController`](mklookaroundviewcontroller.md).
+- `viewController`: The [`MKLookAroundViewController`](../mklookaroundviewcontroller.md).
 
 ## See Also
 
-- [func lookAroundViewControllerDidPresentFullScreen(MKLookAroundViewController)](mklookaroundviewcontrollerdelegate/lookaroundviewcontrollerdidpresentfullscreen(_:).md)
+### Entering and exiting full-screen modes
+- [func lookAroundViewControllerDidPresentFullScreen(MKLookAroundViewController)](./lookaroundviewcontrollerdidpresentfullscreen%28_%29.md)
   Tells the delegate when the view controller enters full-screen mode.
-- [func lookAroundViewControllerWillDismissFullScreen(MKLookAroundViewController)](mklookaroundviewcontrollerdelegate/lookaroundviewcontrollerwilldismissfullscreen(_:).md)
+- [func lookAroundViewControllerWillDismissFullScreen(MKLookAroundViewController)](./lookaroundviewcontrollerwilldismissfullscreen%28_%29.md)
   Tells the delegate when the view controller is about to exit full-screen mode.
-- [func lookAroundViewControllerDidDismissFullScreen(MKLookAroundViewController)](mklookaroundviewcontrollerdelegate/lookaroundviewcontrollerdiddismissfullscreen(_:).md)
+- [func lookAroundViewControllerDidDismissFullScreen(MKLookAroundViewController)](./lookaroundviewcontrollerdiddismissfullscreen%28_%29.md)
   Tells the delegate when the view controller exits full-screen mode.
 
 

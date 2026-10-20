@@ -1,21 +1,22 @@
 # AlternativeDistributionPackageVersion.Relationships.Variants
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.3+
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageVersion.Relationships.Variants
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionPackageVersion.Relationships.Variants.Data](alternativedistributionpackageversion/relationships-data.dictionary/variants-data.dictionary/data-data.dictionary.md)
+- [object AlternativeDistributionPackageVersion.Relationships.Variants.Data](./variants-data.dictionary/data-data.dictionary.md)
   The request body you use to update an alternative distribution package version.
 
 ## Properties
@@ -26,8 +27,9 @@ object AlternativeDistributionPackageVersion.Relationships.Variants
 
 ## See Also
 
-- [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage](alternativedistributionpackageversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary.md)
-- [object AlternativeDistributionPackageVersion.Relationships.Deltas](alternativedistributionpackageversion/relationships-data.dictionary/deltas-data.dictionary.md)
+### Objects
+- [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage](./alternativedistributionpackage-data.dictionary.md)
+- [object AlternativeDistributionPackageVersion.Relationships.Deltas](./deltas-data.dictionary.md)
 
 
 ---

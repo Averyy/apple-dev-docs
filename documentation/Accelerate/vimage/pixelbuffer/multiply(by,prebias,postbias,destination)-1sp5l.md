@@ -1,7 +1,8 @@
 # multiply(by:preBias:postBias:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buffer by a four element matrix to produce a single channel result.
 
@@ -11,7 +12,7 @@ Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buff
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Multiplies each four channel pixel in a 32-bit-per channel, 4-channel pixel buff
 ```swift
 func multiply(by matrix: (Float, Float, Float, Float), preBias: (Float, Float, Float, Float), postBias: Float, destination: vImage.PixelBuffer<vImage.PlanarF>)
 ```
+
+Available when `Format` is `vImage.InterleavedFx4`.
 
 #### Discussion
 
@@ -41,7 +44,8 @@ destination = (p + postBias)
 
 ## See Also
 
-- [func multiply(by: (Int, Int, Int, Int), divisor: Int, preBias: (Int, Int, Int, Int), postBias: Int, destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/multiply(by:divisor:prebias:postbias:destination:)-4q614.md)
+### Pixel Multiplication
+- [func multiply(by: (Int, Int, Int, Int), divisor: Int, preBias: (Int, Int, Int, Int), postBias: Int, destination: vImage.PixelBuffer<vImage.Planar8>)](./multiply%28by,divisor,prebias,postbias,destination%29-4q614.md)
   Multiplies each four channel pixel in an 8-bit-per channel, 4-channel pixel buffer by a four element matrix to produce a single channel result.
 
 

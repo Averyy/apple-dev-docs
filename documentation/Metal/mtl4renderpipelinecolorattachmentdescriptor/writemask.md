@@ -1,7 +1,8 @@
 # writeMask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the color write mask.
 
@@ -19,9 +20,13 @@ Configures the color write mask.
 var writeMask: MTLColorWriteMask { get set }
 ```
 
+```objc
+@property (nonatomic) MTLColorWriteMask writeMask;
+```
+
 #### Discussion
 
-This property defaults to [`all`](mtlcolorwritemask/all.md).
+This property defaults to [`all`](../mtlcolorwritemask/all.md).
 
 
 ---

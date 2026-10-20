@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Notification Center  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
+- iOS 10.0+ - Deprecated in 14.0
+- iPadOS 10.0+ - Deprecated in 14.0
+- Mac Catalyst 10.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use WidgetKit instead. Today View extensions have been deprecated.
 
 ## Declaration
 

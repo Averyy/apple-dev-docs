@@ -1,7 +1,8 @@
 # boolValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Boolean value of the string.
 
@@ -20,25 +21,31 @@ The Boolean value of the string.
 var boolValue: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL boolValue;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) on encountering one of “Y”, “y”, “T”, “t”, or a digit 1-9—the method ignores any trailing characters. This property is [`false`](https://developer.apple.com/documentation/swift/false) if the receiver doesn’t begin with a valid decimal text representation of a number.
+This property is [`true`](../../Swift/true.md) on encountering one of “Y”, “y”, “T”, “t”, or a digit 1-9—the method ignores any trailing characters. This property is [`false`](../../Swift/false.md) if the receiver doesn’t begin with a valid decimal text representation of a number.
 
 The property assumes a decimal representation and skips whitespace at the beginning of the string. It also skips initial whitespace characters, or optional -/+ sign followed by zeroes.
 
 ## See Also
 
-- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](scanner/scanint32(_:).md)
+### Related Documentation
+- [func scanInt32(UnsafeMutablePointer<Int32>?) -> Bool](../scanner/scanint32%28_%29.md)
   Scans for an int value from a decimal representation, returning a found value by reference.
-- [var doubleValue: Double](nsstring/doublevalue.md)
+### Getting Numeric Values
+- [var doubleValue: Double](./doublevalue.md)
   The floating-point value of the string as a `double`.
-- [var floatValue: Float](nsstring/floatvalue.md)
+- [var floatValue: Float](./floatvalue.md)
   The floating-point value of the string as a `float`.
-- [var intValue: Int32](nsstring/intvalue.md)
+- [var intValue: Int32](./intvalue.md)
   The integer value of the string.
-- [var integerValue: Int](nsstring/integervalue.md)
+- [var integerValue: Int](./integervalue.md)
   The `NSInteger` value of the string.
-- [var longLongValue: Int64](nsstring/longlongvalue.md)
+- [var longLongValue: Int64](./longlongvalue.md)
   The `long long` value of the string.
 
 

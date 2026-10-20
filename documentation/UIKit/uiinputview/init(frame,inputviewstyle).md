@@ -1,7 +1,8 @@
 # init(frame:inputViewStyle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an input view using the specified style information.
 
@@ -9,13 +10,17 @@ Initializes and returns an input view using the specified style information.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(frame: CGRect, inputViewStyle: UIInputView.Style)
+```
+
+```objc
+- (instancetype) initWithFrame:(CGRect) frame inputViewStyle:(UIInputViewStyle) inputViewStyle;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ This method is the designated initializer for the view and must be called by you
 ## Parameters
 
 - `frame`: The frame rectangle for the view, measured in points. The origin of the frame is relative to the superview in which you plan to add it.
-- `inputViewStyle`: The style to use when altering the appearance of the view and its subviews. For a list of possible values, see [`UIInputView.Style`](uiinputview/style.md)
+- `inputViewStyle`: The style to use when altering the appearance of the view and its subviews. For a list of possible values, see [`UIInputView.Style`](./style.md)
 
 ## See Also
 
-- [init?(coder: NSCoder)](uiinputview/init(coder:).md)
+### Initializing an input view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates an input view from data in an unarchiver.
 
 

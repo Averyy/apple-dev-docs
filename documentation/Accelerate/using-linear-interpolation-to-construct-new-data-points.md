@@ -1,6 +1,7 @@
 # Using linear interpolation to construct new data points
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Fill the gaps in arrays of numerical data using linear interpolation.
 
@@ -8,16 +9,16 @@ Fill the gaps in arrays of numerical data using linear interpolation.
 
 Linear interpolation is a method of calculating intermediate data between known values by conceptually drawing a straight line between two adjacent known values. An interpolated value is any point along that line. You use linear interpolation to, for example, draw graphs or animate between keyframes. The following figure shows an example interpolated value between two points:
 
-![An illustration containing two points joined by a straight line. The first point is at the bottom left of the illustration and the second point is at the top right of the illustration. A point on the line represents an interpolated value.](/images/com.apple.accelerate/media-3122762@2x.png)
+![An illustration containing two points joined by a straight line. The first point is at the bottom left of the illustration and the second point is at the top right of the illustration. A point on the line represents an interpolated value.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122762@2x.png)
 
 vDSP provides the following functions to linearly interpolate between the elements in an array:
 
-- The single-precision function [`linearInterpolate(values:atIndices:)`](vdsp/linearinterpolate(values:atindices:)-5mbnu.md) and the double-precision function [`linearInterpolate(values:atIndices:)`](vdsp/linearinterpolate(values:atindices:)-9rxb4.md) that provide a simple interface for generating interpolated data. These functions wrap [`vDSP_vgenp`](vdsp_vgenp.md) and [`vDSP_vgenpD`](vdsp_vgenpd.md), respectively.
-- The single-precision function [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) and the double-precision function [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-5i3jc.md) that provide fine control over the interpolation. These functions wrap [`vDSP_vlint`](vdsp_vlint.md) and [`vDSP_vlintD`](vdsp_vlintd.md), respectively.
+- The single-precision function [`linearInterpolate(values:atIndices:)`](./vdsp/linearinterpolate%28values,atindices%29-5mbnu.md) and the double-precision function [`linearInterpolate(values:atIndices:)`](./vdsp/linearinterpolate%28values,atindices%29-9rxb4.md) that provide a simple interface for generating interpolated data. These functions wrap [`vDSP_vgenp`](./vdsp_vgenp.md) and [`vDSP_vgenpD`](./vdsp_vgenpd.md), respectively.
+- The single-precision function [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-49r3c.md) and the double-precision function [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-5i3jc.md) that provide fine control over the interpolation. These functions wrap [`vDSP_vlint`](./vdsp_vlint.md) and [`vDSP_vlintD`](./vdsp_vlintd.md), respectively.
 
 This article discusses using these functions to draw a continuous line graph based on a set of discrete data points.
 
-##### Create the Data
+##### Create the data
 
 In this example, the code interpolates the data that the `values` and `indices` arrays represent.
 
@@ -31,9 +32,9 @@ Each array consists of 10 elements. A pair of corresponding elements in the two 
 - Elements in the `values` array denote the vertical position.
 - Elements in the `indices` array denote the horizontal position.
 
-![A scatter chart showing a plot of the data points as small circles formed by the corresponding elements in vectors values and indices. ](/images/com.apple.accelerate/media-3122542@2x.png)
+![A scatter chart showing a plot of the data points as small circles formed by the corresponding elements in vectors values and indices. ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122542@2x.png)
 
-##### Define the Constant That Represents the Number of Elements
+##### Define the constant that represents the number of elements
 
 The following code defines `count` as the number of elements in the interpolation result:
 
@@ -41,9 +42,9 @@ The following code defines `count` as the number of elements in the interpolatio
 let count = 1024
 ```
 
-##### Generate a Vector By Interpolation
+##### Generate a vector by interpolation
 
-The [`linearInterpolate(values:atIndices:)`](vdsp/linearinterpolate(values:atindices:)-5mbnu.md) function accepts the `values` and `indices` arrays and returns the interpolation result.
+The [`linearInterpolate(values:atIndices:)`](./vdsp/linearinterpolate%28values,atindices%29-5mbnu.md) function accepts the `values` and `indices` arrays and returns the interpolation result.
 
 ```swift
 let result = vDSP.linearInterpolate(values: values,
@@ -52,13 +53,13 @@ let result = vDSP.linearInterpolate(values: values,
 
 On return, `result` contains the interpolated values. The following graph shows the values in `result` as a line between the known values that the `values` and `indices` arrays describe:
 
-![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](/images/com.apple.accelerate/media-3122764@2x.png)
+![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122764@2x.png)
 
-##### Interpolate with Fine Control
+##### Interpolate with fine control
 
-The [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) function requires a control vector array that includes fractional parts. The fractional parts define the interpolation between the pair of values in the `values` array, starting at the index that the integer part defines.
+The [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-49r3c.md) function requires a control vector array that includes fractional parts. The fractional parts define the interpolation between the pair of values in the `values` array, starting at the index that the integer part defines.
 
-Use [`ramp(in:count:)`](vdsp/ramp(in:count:)-79aw7.md) to generate a linear ramp from `0` to the number of elements in `values`, minus `1`. Note that the [`ramp(in:count:)`](vdsp/ramp(in:count:)-79aw7.md) function wraps [`vDSP_vgen`](vdsp_vgen.md).
+Use [`ramp(in:count:)`](./vdsp/ramp%28in,count%29-79aw7.md) to generate a linear ramp from `0` to the number of elements in `values`, minus `1`. Note that the [`ramp(in:count:)`](./vdsp/ramp%28in,count%29-79aw7.md) function wraps [`vDSP_vgen`](./vdsp_vgen.md).
 
 ```swift
 let base: Float = 0
@@ -86,9 +87,9 @@ On return, `control` contains the following:
 
 The following figure shows a visualization of the values in `control`, with small circles indicating each integer index:
 
-![A line graph showing the linear ramp result as a line from the bottom left to the top right and a series of ten small circles along the line’s length that represent the known values.](/images/com.apple.accelerate/media-3122765@2x.png)
+![A line graph showing the linear ramp result as a line from the bottom left to the top right and a series of ten small circles along the line’s length that represent the known values.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122765@2x.png)
 
-The following code passes the control values to [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) to calculate the interpolated values:
+The following code passes the control values to [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-49r3c.md) to calculate the interpolated values:
 
 ```swift
 let result = vDSP.linearInterpolate(elementsOf: values,
@@ -97,11 +98,11 @@ let result = vDSP.linearInterpolate(elementsOf: values,
 
 On return, `result` contains the interpolated values. The graph below shows the values in `result` as a line between the known values that the `values` and `indices` arrays describe:
 
-![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](/images/com.apple.accelerate/media-3122535@2x.png)
+![A line graph showing the known values as small circles joined together by a series of lines that represent the interpolation result.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122535@2x.png)
 
-The result of [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) is equal to the result of [`linearInterpolate(values:atIndices:)`](vdsp/linearinterpolate(values:atindices:)-5mbnu.md).
+The result of [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-49r3c.md) is equal to the result of [`linearInterpolate(values:atIndices:)`](./vdsp/linearinterpolate%28values,atindices%29-5mbnu.md).
 
-##### Add Smoothing to the Interpolation Result
+##### Add smoothing to the interpolation result
 
 You can change the way that you generate the control array to alter the interpolated result. For example, you may want to add smoothing between the segments of a line graph or add easing to an animation. The following code uses [`simd_smoothstep(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_smoothstep(_:_:_:)-993b1) to smooth the fractional parts of `control` near the increments to the integer parts:
 
@@ -116,21 +117,22 @@ let control: [Float] = (0 ... count).map {
 
 The following graph shows a visualization of the values in `control`, with small circles indicating each integer index:
 
-![A line graph showing the smoothed ramp result as a line from the bottom left to the top right. The line flattens near the circles that indicate the index positions.](/images/com.apple.accelerate/media-3122763@2x.png)
+![A line graph showing the smoothed ramp result as a line from the bottom left to the top right. The line flattens near the circles that indicate the index positions.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122763@2x.png)
 
-Using the same call to  [`linearInterpolate(elementsOf:using:)`](vdsp/linearinterpolate(elementsof:using:)-49r3c.md) as above, the result, as shown below, shows a smoother transition between the known values.
+Using the same call to  [`linearInterpolate(elementsOf:using:)`](./vdsp/linearinterpolate%28elementsof,using%29-49r3c.md) as above, the result, as shown below, shows a smoother transition between the known values.
 
-![A line graph showing the known values as small circles joined together by a series of smoothly curved lines that represent the interpolation result. ](/images/com.apple.accelerate/media-3122543@2x.png)
+![A line graph showing the known values as small circles joined together by a series of smoothly curved lines that represent the interpolation result. ](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3122543@2x.png)
 
 ## See Also
 
-- [Controlling vDSP operations with stride](controlling-vdsp-operations-with-stride.md)
+### Signal Processing Essentials
+- [Controlling vDSP operations with stride](./controlling-vdsp-operations-with-stride.md)
   Operate selectively on the elements of a vector at regular intervals.
-- [Using vDSP for vector-based arithmetic](using-vdsp-for-vector-based-arithmetic.md)
+- [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
   Increase the performance of common mathematical tasks with vDSP vector-vector and vector-scalar operations.
-- [Resampling a signal with decimation](resampling-a-signal-with-decimation.md)
+- [Resampling a signal with decimation](./resampling-a-signal-with-decimation.md)
   Reduce the sample rate of a signal by specifying a decimation factor and applying a custom antialiasing filter.
-- [vDSP](vdsp-library.md)
+- [vDSP](./vdsp-library.md)
   Perform basic arithmetic operations and common digital signal processing (DSP) routines on large vectors.
 
 

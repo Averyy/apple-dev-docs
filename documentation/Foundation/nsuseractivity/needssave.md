@@ -1,7 +1,8 @@
 # needsSave
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the state of the activity needs to be updated.
 
@@ -20,21 +21,26 @@ A Boolean value that indicates whether the state of the activity needs to be upd
 var needsSave: Bool { get set }
 ```
 
+```objc
+@property (assign) BOOL needsSave;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the delegate for this user activity receives a [`userActivityWillSave(_:)`](nsuseractivitydelegate/useractivitywillsave(_:).md) callback before the activity is sent for continuation on another device.
+If [`true`](../../Swift/true.md), the delegate for this user activity receives a [`userActivityWillSave(_:)`](../nsuseractivitydelegate/useractivitywillsave%28_%29.md) callback before the activity is sent for continuation on another device.
 
 ## See Also
 
-- [func becomeCurrent()](nsuseractivity/becomecurrent.md)
+### Registering and invalidating activities
+- [func becomeCurrent()](./becomecurrent%28%29.md)
   Marks the activity as currently in use by the user.
-- [func resignCurrent()](nsuseractivity/resigncurrent.md)
+- [func resignCurrent()](./resigncurrent%28%29.md)
   Marks this activity object as inactive without invalidating it.
-- [func invalidate()](nsuseractivity/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates an activity and marks it as no longer eligible for continuation.
-- [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](nsuseractivity/deleteallsaveduseractivities(completionhandler:).md)
+- [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](./deleteallsaveduseractivities%28completionhandler%29.md)
   Deletes all user activities created by your app.
-- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
+- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](./deletesaveduseractivities%28withpersistentidentifiers,completionhandler%29.md)
   Deletes user activities created by your app that have the specified persistent identifiers.
 
 

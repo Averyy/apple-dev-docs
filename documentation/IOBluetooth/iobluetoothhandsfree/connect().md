@@ -1,7 +1,8 @@
 # connect()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connect to the device
 
@@ -12,6 +13,10 @@ Connect to the device
 
 ```swift
 func connect()
+```
+
+```objc
+- (void) connect;
 ```
 
 #### Discussion

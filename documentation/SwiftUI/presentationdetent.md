@@ -1,7 +1,8 @@
 # PresentationDetent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a height where a sheet naturally rests.
 
@@ -23,45 +24,46 @@ struct PresentationDetent
 ## Topics
 
 ### Getting built-in detents
-- [static let large: PresentationDetent](presentationdetent/large.md)
+- [static let large: PresentationDetent](./presentationdetent/large.md)
   The system detent for a sheet at full height.
-- [static let medium: PresentationDetent](presentationdetent/medium.md)
+- [static let medium: PresentationDetent](./presentationdetent/medium.md)
   The system detent for a sheet that’s approximately half the height of the screen, and is inactive in compact height.
 ### Creating custom detents
-- [static func custom<D>(D.Type) -> PresentationDetent](presentationdetent/custom(_:).md)
+- [static func custom<D>(D.Type) -> PresentationDetent](./presentationdetent/custom%28_%29.md)
   A custom detent with a calculated height.
-- [static func fraction(CGFloat) -> PresentationDetent](presentationdetent/fraction(_:).md)
+- [static func fraction(CGFloat) -> PresentationDetent](./presentationdetent/fraction%28_%29.md)
   A custom detent with the specified fractional height.
-- [static func height(CGFloat) -> PresentationDetent](presentationdetent/height(_:).md)
+- [static func height(CGFloat) -> PresentationDetent](./presentationdetent/height%28_%29.md)
   A custom detent with the specified height.
-- [PresentationDetent.Context](presentationdetent/context.md)
+- [PresentationDetent.Context](./presentationdetent/context.md)
   Information that you use to calculate the presentation’s height.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func presentationDetents(Set<PresentationDetent>) -> some View](view/presentationdetents(_:).md)
+### Configuring a sheet’s height and placement
+- [func presentationDetents(Set<PresentationDetent>) -> some View](./view/presentationdetents%28_%29.md)
   Sets the available detents for the enclosing sheet.
-- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](view/presentationdetents(_:selection:).md)
+- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](./view/presentationdetents%28_,selection%29.md)
   Sets the available detents for the enclosing sheet, giving you programmatic control of the currently selected detent.
-- [func presentationContentInteraction(PresentationContentInteraction) -> some View](view/presentationcontentinteraction(_:).md)
+- [func presentationContentInteraction(PresentationContentInteraction) -> some View](./view/presentationcontentinteraction%28_%29.md)
   Configures the behavior of swipe gestures on a presentation.
-- [func presentationDragIndicator(Visibility) -> some View](view/presentationdragindicator(_:).md)
+- [func presentationDragIndicator(Visibility) -> some View](./view/presentationdragindicator%28_%29.md)
   Sets the visibility of the drag indicator on top of a sheet.
-- [protocol CustomPresentationDetent](custompresentationdetent.md)
+- [protocol CustomPresentationDetent](./custompresentationdetent.md)
   The definition of a custom detent with a calculated height.
-- [struct PresentationContentInteraction](presentationcontentinteraction.md)
+- [struct PresentationContentInteraction](./presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
-- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+- [func presentationPlacement(PresentationPlacement) -> some View](./view/presentationplacement%28_%29.md)
   Sets the placement of a presentation within the presenting view.
-- [struct PresentationPlacement](presentationplacement.md)
+- [struct PresentationPlacement](./presentationplacement.md)
   The placement of a presentation within the presenting view.
 
 

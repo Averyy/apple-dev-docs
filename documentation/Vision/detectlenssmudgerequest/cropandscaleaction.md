@@ -1,7 +1,8 @@
 # cropAndScaleAction
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional setting that tells the algorithm how to scale an input image before generating the result.
 
@@ -22,7 +23,8 @@ var cropAndScaleAction: ImageCropAndScaleAction
 
 ## See Also
 
-- [enum ImageCropAndScaleAction](imagecropandscaleaction.md)
+### Configuring a request
+- [enum ImageCropAndScaleAction](../imagecropandscaleaction.md)
   A scale to apply to an input image before performing a request.
 
 

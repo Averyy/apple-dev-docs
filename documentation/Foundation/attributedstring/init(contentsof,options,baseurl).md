@@ -1,7 +1,8 @@
 # init(contentsOf:options:baseURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from the contents of a specified URL that contains Markdown-formatted data, using the provided options.
 
@@ -22,7 +23,7 @@ init(contentsOf url: URL, options: AttributedString.MarkdownParsingOptions = .in
 
 #### Discussion
 
-If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
+If your source string includes custom attributes defined by conformers to [`MarkdownDecodableAttributedStringKey`](../markdowndecodableattributedstringkey.md) and used with Apple’s markdown extension syntax, be sure to include the [`allowsExtendedAttributes`](../nsattributedstringmarkdownparsingoptions/allowsextendedattributes.md) option. Otherwise, the initializer doesn’t parse these attributes.
 
 ## Parameters
 
@@ -32,9 +33,10 @@ If your source string includes custom attributes defined by conformers to [`Mark
 
 ## See Also
 
-- [init<S>(contentsOf: URL, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(contentsof:including:options:baseurl:)-1x6fz.md)
+### Initializing with Markdown from URL Contents
+- [init<S>(contentsOf: URL, including: S.Type, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28contentsof,including,options,baseurl%29-1x6fz.md)
   Creates an attributed string from the contents of a specified URL that contains Markdown-formatted data, using the provided options and attribute scope.
-- [init<S>(contentsOf: URL, including: KeyPath<AttributeScopes, S.Type>, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](attributedstring/init(contentsof:including:options:baseurl:)-1fcpy.md)
+- [init<S>(contentsOf: URL, including: KeyPath<AttributeScopes, S.Type>, options: AttributedString.MarkdownParsingOptions, baseURL: URL?) throws](./init%28contentsof,including,options,baseurl%29-1fcpy.md)
   Creates an attributed string from the contents of a specified Markdown URL, using the provided options and attribute scope that a key path identifies.
 
 

@@ -1,16 +1,17 @@
 # Setting Up Apple Search Ads Attribution
 
-**Framework**: iAd
+**Framework**: iAd  
+**Role**: Article
 
 Retrieve the attribution dictionary.
 
 #### Overview
 
-> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See `ADClient/requestAttributionDetails(_:)`. Use the [`AdServices`](https://developer.apple.com/documentation/adservices) framework for current attribution integration with the [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
+> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See `ADClient/requestAttributionDetails(_:)`. Use the [AdServices](../AdServices/AdServices.md) framework for current attribution integration with the [Apple Ads](../apple_ads/apple_ads.md) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
-The attribution dictionary contains attribution data that the system retrieves from user interaction with ads originating from [`Apple Search Ads`](https://developer.apple.comhttps://searchads.apple.com/advanced/) campaigns.
+The attribution dictionary contains attribution data that the system retrieves from user interaction with ads originating from [Apple Search Ads](https://searchads.apple.com/advanced/) campaigns.
 
-![An illustration that shows a developer or Mobile Measurement Provider requesting an attribution record from the iAd framework, and the iAd framework returning the attribution record.](/images/com.apple.iad/media-3692726@2x.png)
+![An illustration that shows a developer or Mobile Measurement Provider requesting an attribution record from the iAd framework, and the iAd framework returning the attribution record.](https://developer.apple.com/tutorials/images/com.apple.iad/media-3692726@2x.png)
 
 To retrieve the attribution dictionary, use the following process in sequence.
 
@@ -69,11 +70,11 @@ The following list contains the data dictionary keys and data types the iAd fram
 - **`iad-conversion-date`**: Date/Time string. The date and time when the user downloads or redownloads your app by clicking an Apple Search Ad.
 - **`iad-conversion-type`**: String. The type of conversion is either a `newdownload` or a `redownload`. A `redownload` is a download of an app by users who have previously installed your app.
 - **`iad-adgroup-id`**: Integer. The `Id` of the ad group that the corresponding ad belongs to.
-- **`iad-adgroup-name`**: String. The name of the ad group that the corresponding ad belongs to. See [`Ad Groups`](https://developer.apple.com/documentation/apple_ads/ad-groups) for more information.
+- **`iad-adgroup-name`**: String. The name of the ad group that the corresponding ad belongs to. See [Ad Groups](../apple_ads/ad-groups.md) for more information.
 - **`iad-country-or-region`**: String. The country or region associated with the campaign that results in an installation.
 - **`iad-keyword`**: String. The keyword for the ad impression that led to the corresponding ad click.
 - **`iad-keyword-id`**: String. The `Id` of the keyword for the ad impression.
-- **`iad-keyword-matchtype`**: String. The match type of the keyword for the ad impression. Values are `Broad`, `Exact`, or search match. See [`Ad Groups`](https://developer.apple.com/documentation/apple_ads/ad-groups) for more information.
+- **`iad-keyword-matchtype`**: String. The match type of the keyword for the ad impression. Values are `Broad`, `Exact`, or search match. See [Ad Groups](../apple_ads/ad-groups.md) for more information.
 - **`iad-ad-id`**: Integer. The `Id` of the ad that the corresponding ad belongs to.
 
 ###### Report Attribution Data
@@ -93,9 +94,10 @@ If you integrate your data-reporting strategy with a Mobile Measurement Provider
 
 ## See Also
 
-- [iAd Changelog](iad-changelog.md)
+### Essentials
+- [iAd Changelog](./iad-changelog.md)
   Learn what’s new in the Apple Search Ads iAd Attribution API.
-- [ADClient](adclient.md)
+- [ADClient](./adclient.md)
   The parent class you use to request an attribution response.
 
 

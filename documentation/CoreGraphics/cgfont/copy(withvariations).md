@@ -1,7 +1,8 @@
 # copy(withVariations:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a copy of a font using a variation specification dictionary.
 
@@ -10,7 +11,7 @@ Creates a copy of a font using a variation specification dictionary.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates a copy of a font using a variation specification dictionary.
 
 ```swift
 func copy(withVariations variations: CFDictionary?) -> CGFont?
+```
+
+```c
+extern CGFontRefCGFontCreateCopyWithVariations(CGFontRef font, CFDictionaryRef variations);
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The font object.
 
 ## See Also
 
-- [var variations: CFDictionary?](cgfont/variations.md)
+### Working with Variations
+- [var variations: CFDictionary?](./variations.md)
   Returns the variation specification dictionary for a font.
-- [var variationAxes: CFArray?](cgfont/variationaxes.md)
+- [var variationAxes: CFArray?](./variationaxes.md)
   Returns an array of the variation axis dictionaries for a font.
-- [Font Variation Axis Keys](font-variation-axis-keys.md)
+- [Font Variation Axis Keys](../font-variation-axis-keys.md)
   Keys used for a font variation axis dictionary.
 
 

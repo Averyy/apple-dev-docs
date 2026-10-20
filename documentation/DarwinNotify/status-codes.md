@@ -1,6 +1,7 @@
 # Status Codes
 
-**Framework**: Darwin Notify
+**Framework**: Darwin Notify  
+**Role**: API Collection
 
 #### Discussion
 
@@ -21,19 +22,20 @@ Synchronization between two processes may be achieved using the notify_set_state
 ## Topics
 
 ### Constants
-- [var NOTIFY_STATUS_FAILED: Int32](notify_status_failed.md)
-- [var NOTIFY_STATUS_INVALID_FILE: Int32](notify_status_invalid_file.md)
-- [var NOTIFY_STATUS_INVALID_NAME: Int32](notify_status_invalid_name.md)
-- [var NOTIFY_STATUS_INVALID_PORT: Int32](notify_status_invalid_port.md)
-- [var NOTIFY_STATUS_INVALID_REQUEST: Int32](notify_status_invalid_request.md)
-- [var NOTIFY_STATUS_INVALID_SIGNAL: Int32](notify_status_invalid_signal.md)
-- [var NOTIFY_STATUS_INVALID_TOKEN: Int32](notify_status_invalid_token.md)
-- [var NOTIFY_STATUS_NOT_AUTHORIZED: Int32](notify_status_not_authorized.md)
-- [var NOTIFY_STATUS_OK: Int32](notify_status_ok.md)
+- [var NOTIFY_STATUS_FAILED: Int32](./notify_status_failed.md)
+- [var NOTIFY_STATUS_INVALID_FILE: Int32](./notify_status_invalid_file.md)
+- [var NOTIFY_STATUS_INVALID_NAME: Int32](./notify_status_invalid_name.md)
+- [var NOTIFY_STATUS_INVALID_PORT: Int32](./notify_status_invalid_port.md)
+- [var NOTIFY_STATUS_INVALID_REQUEST: Int32](./notify_status_invalid_request.md)
+- [var NOTIFY_STATUS_INVALID_SIGNAL: Int32](./notify_status_invalid_signal.md)
+- [var NOTIFY_STATUS_INVALID_TOKEN: Int32](./notify_status_invalid_token.md)
+- [var NOTIFY_STATUS_NOT_AUTHORIZED: Int32](./notify_status_not_authorized.md)
+- [var NOTIFY_STATUS_OK: Int32](./notify_status_ok.md)
 
 ## See Also
 
-- [Miscellaneous Defines](miscellaneous-defines.md)
+### Constants
+- [Miscellaneous Defines](./miscellaneous-defines.md)
 
 
 ---

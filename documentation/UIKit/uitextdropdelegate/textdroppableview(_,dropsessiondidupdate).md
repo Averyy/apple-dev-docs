@@ -1,7 +1,8 @@
 # textDroppableView(_:dropSessionDidUpdate:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the drop session has been updated.
 
@@ -17,9 +18,13 @@ Tells the delegate that the drop session has been updated.
 optional func textDroppableView(_ textDroppableView: any UIView & UITextDroppable, dropSessionDidUpdate session: any UIDropSession)
 ```
 
+```objc
+- (void) textDroppableView:(UIView<UITextDroppable> *) textDroppableView dropSessionDidUpdate:(id<UIDropSession>) session;
+```
+
 #### Discussion
 
-The system usually—but not always—calls this method before calling the [`textDroppableView(_:proposalForDrop:)`](uitextdropdelegate/textdroppableview(_:proposalfordrop:).md) method. However, it’s called frequently, so do only what is necessary in your implementation.
+The system usually—but not always—calls this method before calling the [`textDroppableView(_:proposalForDrop:)`](./textdroppableview%28_,proposalfordrop%29.md) method. However, it’s called frequently, so do only what is necessary in your implementation.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ The system usually—but not always—calls this method before calling the [`tex
 
 ## See Also
 
-- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidEnter: any UIDropSession)](uitextdropdelegate/textdroppableview(_:dropsessiondidenter:).md)
+### Handling drop session notifications
+- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidEnter: any UIDropSession)](./textdroppableview%28_,dropsessiondidenter%29.md)
   Tells the delegate that the user has moved the drag items into the coordinate system of the text view.
-- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidExit: any UIDropSession)](uitextdropdelegate/textdroppableview(_:dropsessiondidexit:).md)
+- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidExit: any UIDropSession)](./textdroppableview%28_,dropsessiondidexit%29.md)
   Tells the delegate that the user has moved the drag items out of the text view’s coordinate system.
-- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidEnd: any UIDropSession)](uitextdropdelegate/textdroppableview(_:dropsessiondidend:).md)
+- [func textDroppableView(any UIView & UITextDroppable, dropSessionDidEnd: any UIDropSession)](./textdroppableview%28_,dropsessiondidend%29.md)
   Tells the delegate that the drop session has ended.
 
 

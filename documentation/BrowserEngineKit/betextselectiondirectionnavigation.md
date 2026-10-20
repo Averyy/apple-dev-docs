@@ -1,7 +1,8 @@
 # BETextSelectionDirectionNavigation
 
 **Framework**: BrowserEngineKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines methods for cursor and selection adjustments.
 
@@ -17,6 +18,10 @@ A protocol that defines methods for cursor and selection adjustments.
 protocol BETextSelectionDirectionNavigation
 ```
 
+```objc
+@protocol BETextSelectionDirectionNavigation
+```
+
 #### Overview
 
 This protocol enables your app to request text-cursor movement and selection modifications. In response to a person’s input, the system calls your app in the conditions described by the protocol. Your app performs the requested operation and updates text cursor or selection state accordingly.
@@ -24,26 +29,27 @@ This protocol enables your app to request text-cursor movement and selection mod
 ## Topics
 
 ### Extending the text section
-- [func extend(in: UITextLayoutDirection)](betextselectiondirectionnavigation/extend(in:).md)
+- [func extend(in: UITextLayoutDirection)](./betextselectiondirectionnavigation/extend%28in%29.md)
   Extends text selection in the specified directions, such as in response to an arrow key press while shift is held.
-- [func extend(in: UITextStorageDirection, by: UITextGranularity)](betextselectiondirectionnavigation/extend(in:by:).md)
+- [func extend(in: UITextStorageDirection, by: UITextGranularity)](./betextselectiondirectionnavigation/extend%28in,by%29.md)
   Moves the selection in the specified directions by granularity, in response to different key combinations:
 ### Moving the cursor
-- [func move(in: UITextLayoutDirection)](betextselectiondirectionnavigation/move(in:).md)
+- [func move(in: UITextLayoutDirection)](./betextselectiondirectionnavigation/move%28in%29.md)
   Moves the cursor in the specified directions, such as in response to an arrow key press.
-- [func move(in: UITextStorageDirection, by: UITextGranularity)](betextselectiondirectionnavigation/move(in:by:).md)
+- [func move(in: UITextStorageDirection, by: UITextGranularity)](./betextselectiondirectionnavigation/move%28in,by%29.md)
   Moves the cursor in the specified directions by granularity, in response to different key combinations:
 
 ## Relationships
 
 ### Inherited By
-- [BETextInput](betextinput.md)
+- [BETextInput](./betextinput.md)
 
 ## See Also
 
-- [struct BESelectionFlags](beselectionflags.md)
+### Text selection
+- [struct BESelectionFlags](./beselectionflags.md)
   Flags that indicate different states or characteristics of a text selection.
-- [enum BESelectionTouchPhase](beselectiontouchphase.md)
+- [enum BESelectionTouchPhase](./beselectiontouchphase.md)
   The different phases of touch interaction during text selection operations.
 
 

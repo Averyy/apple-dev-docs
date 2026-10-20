@@ -1,7 +1,8 @@
 # normalized
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns this vector with a length of `1`.
 

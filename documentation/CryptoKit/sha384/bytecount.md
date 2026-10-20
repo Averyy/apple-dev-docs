@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bytes in a SHA384 digest.
 
@@ -22,7 +23,8 @@ static let byteCount: Int
 
 ## See Also
 
-- [static let blockByteCount: Int](sha384/blockbytecount.md)
+### Inspecting hash information
+- [static let blockByteCount: Int](./blockbytecount.md)
   The number of bytes that represents the hash function’s internal state.
 
 

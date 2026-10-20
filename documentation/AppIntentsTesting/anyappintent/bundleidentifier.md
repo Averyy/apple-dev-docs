@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the app that contains this intent.
 
@@ -22,7 +23,8 @@ let bundleIdentifier: String
 
 ## See Also
 
-- [let identifier: String](anyappintent/identifier.md)
+### Identifying the intent
+- [let identifier: String](./identifier.md)
   The unique identifier for the intent type.
 
 

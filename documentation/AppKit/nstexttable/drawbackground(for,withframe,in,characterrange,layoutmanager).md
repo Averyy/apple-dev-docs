@@ -1,7 +1,8 @@
 # drawBackground(for:withFrame:in:characterRange:layoutManager:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws any colors and other decorations for a text table block.
 
@@ -12,6 +13,10 @@ Draws any colors and other decorations for a text table block.
 
 ```swift
 func drawBackground(for block: NSTextTableBlock, withFrame frameRect: NSRect, in controlView: NSView, characterRange charRange: NSRange, layoutManager: NSLayoutManager)
+```
+
+```objc
+- (void) drawBackgroundForBlock:(NSTextTableBlock *) block withFrame:(NSRect) frameRect inView:(NSView *) controlView characterRange:(NSRange) charRange layoutManager:(NSLayoutManager *) layoutManager;
 ```
 
 #### Discussion

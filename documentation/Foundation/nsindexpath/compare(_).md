@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the depth-first traversal order of the receiving index path and another index path.
 
@@ -20,19 +21,25 @@ Indicates the depth-first traversal order of the receiving index path and anothe
 func compare(_ otherObject: IndexPath) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compare:(NSIndexPath *) otherObject;
+```
+
 #### Return Value
 
 The depth-first traversal ordering of the receiving index path and `indexPath`.
 
 #### Discussion
 
-- [`ComparisonResult.orderedAscending`](comparisonresult/orderedascending.md): The receiving index path comes before `indexPath`.
-- [`ComparisonResult.orderedDescending`](comparisonresult/ordereddescending.md): The receiving index path comes after `indexPath`.
-- [`ComparisonResult.orderedSame`](comparisonresult/orderedsame.md): The receiving index path and `indexPath` are the same index path.
+- [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md): The receiving index path comes before `indexPath`.
+- [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md): The receiving index path comes after `indexPath`.
+- [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md): The receiving index path and `indexPath` are the same index path.
 
 ## Parameters
 
-- `otherObject`: Index path to compare. This value must not be `nil`. If the value is `nil`, the behavior is undefined.
+- `otherObject`: Index path to compare.
+
+  This value must not be `nil`. If the value is `nil`, the behavior is undefined.
 
 
 ---

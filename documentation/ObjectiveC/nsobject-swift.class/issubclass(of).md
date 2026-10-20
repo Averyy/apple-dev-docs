@@ -1,7 +1,8 @@
 # isSubclass(of:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the receiving class is a subclass of, or identical to, a given class.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the receiving class is a subclass
 class func isSubclass(of aClass: AnyClass) -> Bool
 ```
 
+```objc
++ (BOOL) isSubclassOfClass:(Class) aClass;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the receiving class is a subclass of—or identical to—`aClass`, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the receiving class is a subclass of—or identical to—`aClass`, otherwise [`NO`](../no.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ class func isSubclass(of aClass: AnyClass) -> Bool
 
 ## See Also
 
-- [class func superclass() -> AnyClass?](nsobject-swift.class/superclass.md)
+### Identifying Classes
+- [class func superclass() -> AnyClass?](./superclass%28%29.md)
   Returns the class object for the receiver’s superclass.
 
 

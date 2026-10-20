@@ -1,9 +1,10 @@
 # MDLAxisAlignedBoundingBox
 
 **Framework**: Model I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The minimal volume containing an object, used by the [`boundingBox(atTime:)`](mdlobject/boundingbox(attime:).md) method.
+The minimal volume containing an object, used by the [`boundingBox(atTime:)`](./mdlobject/boundingbox%28attime%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -19,22 +20,26 @@ The minimal volume containing an object, used by the [`boundingBox(atTime:)`](md
 struct MDLAxisAlignedBoundingBox
 ```
 
+```c
+typedef struct { ... } MDLAxisAlignedBoundingBox;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mdlaxisalignedboundingbox/init.md)
-- [init(maxBounds: vector_float3, minBounds: vector_float3)](mdlaxisalignedboundingbox/init(maxbounds:minbounds:).md)
+- [init()](./mdlaxisalignedboundingbox/init%28%29.md)
+- [init(maxBounds: vector_float3, minBounds: vector_float3)](./mdlaxisalignedboundingbox/init%28maxbounds,minbounds%29.md)
 ### Instance Properties
-- [var maxBounds: vector_float3](mdlaxisalignedboundingbox/maxbounds.md)
+- [var maxBounds: vector_float3](./mdlaxisalignedboundingbox/maxbounds.md)
   The corner of the bounding box with the highest x-, y-, and z-coordinate values.
-- [var minBounds: vector_float3](mdlaxisalignedboundingbox/minbounds.md)
+- [var minBounds: vector_float3](./mdlaxisalignedboundingbox/minbounds.md)
   The corner of the bounding box with the lowest x-, y-, and z-coordinate values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

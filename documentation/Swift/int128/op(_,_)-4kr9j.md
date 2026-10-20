@@ -1,7 +1,8 @@
 # %(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the remainder of dividing the first value by the second.
 

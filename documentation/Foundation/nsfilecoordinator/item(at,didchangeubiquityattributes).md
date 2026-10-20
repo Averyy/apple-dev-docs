@@ -1,7 +1,8 @@
 # item(at:didChangeUbiquityAttributes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells observing file providers that the item’s ubiquity attributes have changed.
 
@@ -18,11 +19,15 @@ Tells observing file providers that the item’s ubiquity attributes have change
 func item(at url: URL, didChangeUbiquityAttributes attributes: Set<URLResourceKey>)
 ```
 
+```objc
+- (void) itemAtURL:(NSURL *) url didChangeUbiquityAttributes:(NSSet<NSString *> *) attributes;
+```
+
 #### Discussion
 
-This method triggers the [`NSFilePresenter`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_6) protocol’s [`presentedItemDidChangeUbiquityAttributes(_:)`](nsfilepresenter/presenteditemdidchangeubiquityattributes(_:).md) method on any file presenters that are observing the item, even if they are running in different processes.
+This method triggers the [NSFilePresenter](https://developer.apple.com/library/archive/releasenotes/Foundation/RN-FoundationOlderNotes/index.html#//apple_ref/doc/uid/TP40008080-TRANSLATED_CHAPTER_965-TRANSLATED_DEST_6) protocol’s [`presentedItemDidChangeUbiquityAttributes(_:)`](../nsfilepresenter/presenteditemdidchangeubiquityattributes%28_%29.md) method on any file presenters that are observing the item, even if they are running in different processes.
 
-For information about the types of attributes that can trigger notifications, see the [`NSFilePresenter`](nsfilepresenter.md) protocol’s [`observedPresentedItemUbiquityAttributes`](nsfilepresenter/observedpresenteditemubiquityattributes.md) property.
+For information about the types of attributes that can trigger notifications, see the [`NSFilePresenter`](../nsfilepresenter.md) protocol’s [`observedPresentedItemUbiquityAttributes`](../nsfilepresenter/observedpresenteditemubiquityattributes.md) property.
 
 
 ---

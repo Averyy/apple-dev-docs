@@ -1,7 +1,8 @@
 # allowsDocumentChanges
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether you can modify the document contents except for document attributes.
 
@@ -19,19 +20,24 @@ A Boolean value indicating whether you can modify the document contents except f
 var allowsDocumentChanges: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsDocumentChanges;
+```
+
 ## See Also
 
-- [var allowsCopying: Bool](pdfdocument/allowscopying.md)
+### Getting Permissions
+- [var allowsCopying: Bool](./allowscopying.md)
   A Boolean value indicating whether the document allows copying of content to the Pasteboard.
-- [var allowsPrinting: Bool](pdfdocument/allowsprinting.md)
+- [var allowsPrinting: Bool](./allowsprinting.md)
   A Boolean value indicating whether the document allows printing.
-- [var allowsCommenting: Bool](pdfdocument/allowscommenting.md)
+- [var allowsCommenting: Bool](./allowscommenting.md)
   A Boolean value indicating whether you can create or modify document annotations, including form field entries.
-- [var allowsContentAccessibility: Bool](pdfdocument/allowscontentaccessibility.md)
+- [var allowsContentAccessibility: Bool](./allowscontentaccessibility.md)
   A Boolean value indicating whether you can extract content from the document, but only for the purpose of accessibility.
-- [var allowsDocumentAssembly: Bool](pdfdocument/allowsdocumentassembly.md)
+- [var allowsDocumentAssembly: Bool](./allowsdocumentassembly.md)
   A Boolean value indicating whether you can manage a document by inserting, deleting, and rotating pages.
-- [var allowsFormFieldEntry: Bool](pdfdocument/allowsformfieldentry.md)
+- [var allowsFormFieldEntry: Bool](./allowsformfieldentry.md)
   A Boolean value indicating whether you can modify form field entries even if you can’t edit document annotations.
 
 

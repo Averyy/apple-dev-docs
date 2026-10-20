@@ -1,7 +1,8 @@
 # discoveryMethod
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The technology your app uses to discover DL-TDOA anchors.
 
@@ -16,15 +17,20 @@ The technology your app uses to discover DL-TDOA anchors.
 var discoveryMethod: NIDLTDOAConfiguration.DiscoveryMethod { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NIDLTDOADiscoveryMethod discoveryMethod;
+```
+
 #### Discussion
 
-This property specifies Wi-Fi or Bluetooth Low Energy, depending on how your app scans for nearby DL-TDOA anchors. Set this property when configuring the session by calling [`init(networkIdentifier:discoveryMethod:)`](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md).
+This property specifies Wi-Fi or Bluetooth Low Energy, depending on how your app scans for nearby DL-TDOA anchors. Set this property when configuring the session by calling [`init(networkIdentifier:discoveryMethod:)`](./init%28networkidentifier,discoverymethod%29.md).
 
-If you use the [`init(networkIdentifier:)`](nidltdoaconfiguration/init(networkidentifier:).md) initializer instead, the framework defaults the property to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md).
+If you use the [`init(networkIdentifier:)`](./init%28networkidentifier%29.md) initializer instead, the framework defaults the property to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](./discoverymethod-swift.enum/bluetoothlowenergy.md).
 
 ## See Also
 
-- [NIDLTDOAConfiguration.DiscoveryMethod](nidltdoaconfiguration/discoverymethod-swift.enum.md)
+### Specifing the discovery method
+- [NIDLTDOAConfiguration.DiscoveryMethod](./discoverymethod-swift.enum.md)
   The technologies an app can use to discover Downlink Time-Difference-of-Arrival anchors.
 
 

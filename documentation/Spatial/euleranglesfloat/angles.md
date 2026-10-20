@@ -1,7 +1,8 @@
 # angles
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A three-element vector that contains the angles, in radians.
 
@@ -18,6 +19,10 @@ A three-element vector that contains the angles, in radians.
 
 ```swift
 var angles: simd_float3
+```
+
+```c
+simd_float3 angles;
 ```
 
 

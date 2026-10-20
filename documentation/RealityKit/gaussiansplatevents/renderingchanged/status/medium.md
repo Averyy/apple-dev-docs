@@ -1,7 +1,8 @@
 # GaussianSplatEvents.RenderingChanged.Status.medium
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework moderately reduces the splat rendering work.
 

@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the shaped type.
 
@@ -17,6 +18,10 @@ The data type of the shaped type.
 
 ```swift
 var dataType: MPSDataType { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSDataType dataType;
 ```
 
 

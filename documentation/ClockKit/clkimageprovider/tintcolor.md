@@ -1,17 +1,24 @@
 # tintColor
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the image in a multicolor clock face.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var tintColor: UIColor? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) UIColor * tintColor;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ Specify `nil` to tint the image using the color of the complication template obj
 
 ## See Also
 
-- [var onePieceImage: UIImage](clkimageprovider/onepieceimage.md)
+### Getting the Image Data
+- [var onePieceImage: UIImage](./onepieceimage.md)
   The template image to use as a one-piece image.
-- [var twoPieceImageBackground: UIImage?](clkimageprovider/twopieceimagebackground.md)
+- [var twoPieceImageBackground: UIImage?](./twopieceimagebackground.md)
   The background image in a two-piece image.
-- [var twoPieceImageForeground: UIImage?](clkimageprovider/twopieceimageforeground.md)
+- [var twoPieceImageForeground: UIImage?](./twopieceimageforeground.md)
   The foreground image in a two-piece image.
 
 

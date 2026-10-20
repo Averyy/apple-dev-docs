@@ -1,7 +1,8 @@
 # indicator(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Return an indicator’s value
 
@@ -12,6 +13,10 @@ Return an indicator’s value
 
 ```swift
 func indicator(_ indicatorName: String!) -> Int32
+```
+
+```objc
+- (int) indicator:(NSString *) indicatorName;
 ```
 
 #### Discussion

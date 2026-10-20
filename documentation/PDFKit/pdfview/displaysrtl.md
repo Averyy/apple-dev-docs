@@ -1,7 +1,8 @@
 # displaysRTL
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation of pages from right-to-left.
 
@@ -19,9 +20,14 @@ The presentation of pages from right-to-left.
 var displaysRTL: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL displaysRTL;
+```
+
 ## See Also
 
-- [var displayDirection: PDFDisplayDirection](pdfview/displaydirection.md)
+### Defining Display Direction
+- [var displayDirection: PDFDisplayDirection](./displaydirection.md)
   The layout direction, either vertical or horizontal, for the given display mode.
 
 

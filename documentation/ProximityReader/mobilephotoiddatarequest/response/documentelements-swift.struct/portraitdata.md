@@ -1,7 +1,8 @@
 # portraitData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portrait data of the photo ID holder on record with the issuer.
 

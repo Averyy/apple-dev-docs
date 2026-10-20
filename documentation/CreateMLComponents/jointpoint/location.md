@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the joint point
 

@@ -1,7 +1,8 @@
 # writingToolsBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var writingToolsBehavior: NSWritingToolsBehavior { get set }
+```
+
+```objc
+@property NSWritingToolsBehavior writingToolsBehavior;
 ```
 
 

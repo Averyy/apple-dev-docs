@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that defines motion and scene tracking behaviors for the session.
 
@@ -16,15 +17,20 @@ An object that defines motion and scene tracking behaviors for the session.
 var configuration: ARConfiguration? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) ARConfiguration * configuration;
+```
+
 ## See Also
 
-- [func run(ARConfiguration, options: ARSession.RunOptions)](arsession/run(_:options:).md)
+### Configuring and running a session
+- [func run(ARConfiguration, options: ARSession.RunOptions)](./run%28_,options%29.md)
   Starts AR processing for the session with the specified configuration and options.
-- [var identifier: UUID](arsession/identifier.md)
+- [var identifier: UUID](./identifier.md)
   A unique identifier of the running session.
-- [ARSession.RunOptions](arsession/runoptions.md)
+- [ARSession.RunOptions](./runoptions.md)
   Options for transitioning an AR session’s current state when you change its configuration.
-- [func pause()](arsession/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses processing in the session.
 
 

@@ -1,7 +1,8 @@
 # DADissenterGetStatusString(_:)
 
 **Framework**: Disk Arbitration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the return code string.
 
@@ -15,6 +16,10 @@ Obtains the return code string.
 func DADissenterGetStatusString(_ dissenter: DADissenter) -> CFString?
 ```
 
+```c
+extern CFStringRefDADissenterGetStatusString(DADissenterRef dissenter);
+```
+
 #### Return Value
 
 The return code string.
@@ -25,9 +30,10 @@ The return code string.
 
 ## See Also
 
-- [func DADissenterCreate(CFAllocator?, DAReturn, CFString?) -> DADissenter](dadissentercreate(_:_:_:).md)
+### Miscellaneous
+- [func DADissenterCreate(CFAllocator?, DAReturn, CFString?) -> DADissenter](./dadissentercreate%28_,_,_%29.md)
   Creates a new dissenter object.
-- [func DADissenterGetStatus(DADissenter) -> DAReturn](dadissentergetstatus(_:).md)
+- [func DADissenterGetStatus(DADissenter) -> DAReturn](./dadissentergetstatus%28_%29.md)
   Obtains the return code.
 
 

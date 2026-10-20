@@ -1,7 +1,8 @@
 # init(ssid:rssi:security:band:)
 
 **Framework**: MatterSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance of the request handler.
 
@@ -10,7 +11,7 @@ Creates a new instance of the request handler.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # kSecKeyVerifyRecover
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32. This key can unwrap other keys.
 
@@ -12,6 +13,10 @@ Type uint32. This key can unwrap other keys.
 
 ```swift
 var kSecKeyVerifyRecover: Int32 { get }
+```
+
+```c
+kSecKeyVerifyRecover
 ```
 
 

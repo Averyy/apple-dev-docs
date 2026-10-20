@@ -1,7 +1,8 @@
 # none
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The element is clipped by occluding content. This is not supported when used to customize a sheet breakthrough effect.
 

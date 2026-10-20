@@ -1,7 +1,8 @@
 # MTLTensorPlaneType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible tensor plane types.
 
@@ -19,25 +20,29 @@ The possible tensor plane types.
 enum MTLTensorPlaneType
 ```
 
+```c
+enum MTLTensorPlaneType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTLTensorPlaneType.data](mtltensorplanetype/data.md)
+- [MTLTensorPlaneType.data](./mtltensorplanetype/data.md)
   The main data plane, which every tensor has
-- [MTLTensorPlaneType.scales](mtltensorplanetype/scales.md)
+- [MTLTensorPlaneType.scales](./mtltensorplanetype/scales.md)
   The auxiliary plane that stores scale factors for elements in the data plane.
 ### Initializers
-- [init?(rawValue: Int)](mtltensorplanetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtltensorplanetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

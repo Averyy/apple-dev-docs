@@ -1,12 +1,13 @@
 # defaultOutputDevice
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default output audio device on the system, or nil if there is no default output device.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

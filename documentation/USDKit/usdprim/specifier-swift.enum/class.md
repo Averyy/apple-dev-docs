@@ -1,7 +1,8 @@
 # USDPrim.Specifier.class
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines an abstract template for inheritance.
 

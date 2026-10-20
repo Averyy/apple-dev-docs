@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-provided name of the device as a string, or `nil` if not available.
 

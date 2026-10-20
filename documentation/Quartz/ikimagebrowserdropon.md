@@ -1,7 +1,8 @@
 # IKImageBrowserDropOn
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Drop the item on the cell.
 
@@ -14,9 +15,14 @@ Drop the item on the cell.
 var IKImageBrowserDropOn: IKImageBrowserDropOperation { get }
 ```
 
+```c
+IKImageBrowserDropOn
+```
+
 ## See Also
 
-- [var IKImageBrowserDropBefore: IKImageBrowserDropOperation](ikimagebrowserdropbefore.md)
+### Constants
+- [var IKImageBrowserDropBefore: IKImageBrowserDropOperation](./ikimagebrowserdropbefore.md)
   Drop the item before the cell.
 
 

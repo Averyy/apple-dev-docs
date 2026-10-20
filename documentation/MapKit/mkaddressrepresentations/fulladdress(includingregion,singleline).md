@@ -1,7 +1,8 @@
 # fullAddress(includingRegion:singleLine:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the the location’s full address, optionally including the country or on a single link without line breaks.
 
@@ -20,6 +21,10 @@ Returns the the location’s full address, optionally including the country or o
 func fullAddress(includingRegion: Bool, singleLine: Bool) -> String?
 ```
 
+```objc
+- (NSString *) fullAddressIncludingRegion:(BOOL) includingRegion singleLine:(BOOL) singleLine;
+```
+
 ## Parameters
 
 - `includingRegion`: A Boolean value that indicates whether the address should include the region name.
@@ -27,7 +32,8 @@ func fullAddress(includingRegion: Bool, singleLine: Bool) -> String?
 
 ## See Also
 
-- [func cityWithContext(MKAddressRepresentations.ContextStyle) -> String?](mkaddressrepresentations/citywithcontext(_:).md)
+### Getting a full address and city name
+- [func cityWithContext(MKAddressRepresentations.ContextStyle) -> String?](./citywithcontext%28_%29.md)
   The city name and, optionally and if applicable, state and region to provide additional disambiguating context.
 
 

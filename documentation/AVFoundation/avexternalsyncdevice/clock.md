@@ -1,7 +1,8 @@
 # clock
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A clock representing the source of time from the external sync device.
 
@@ -18,21 +19,26 @@ A clock representing the source of time from the external sync device.
 var clock: CMClock? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CMClockRef clock;
+```
+
 #### Discussion
 
-This property returns `NULL` until the [`status`](avexternalsyncdevice/status.md) reaches `AVExternalSyncDeviceStatusActiveSync`.
+This property returns `NULL` until the [`status`](./status.md) reaches `AVExternalSyncDeviceStatusActiveSync`.
 
 ## See Also
 
-- [var productID: UInt32](avexternalsyncdevice/productid.md)
+### Inspecting a device
+- [var productID: UInt32](./productid.md)
   The USB product identifier associated with the external sync device.
-- [var signalCompensationDelay: CMTime](avexternalsyncdevice/signalcompensationdelay.md)
+- [var signalCompensationDelay: CMTime](./signalcompensationdelay.md)
   Delay to wait before starting the frame capture.
-- [var status: AVExternalSyncDeviceStatus](avexternalsyncdevice/status.md)
+- [var status: AVExternalSyncDeviceStatus](./status.md)
   The status of the externally connected device.
-- [var uuid: UUID](avexternalsyncdevice/uuid.md)
+- [var uuid: UUID](./uuid.md)
   A unique identifier for an external sync device.
-- [var vendorID: UInt32](avexternalsyncdevice/vendorid.md)
+- [var vendorID: UInt32](./vendorid.md)
   The USB vendor identifier associated with the external sync device.
 
 

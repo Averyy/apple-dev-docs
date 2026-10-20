@@ -1,7 +1,8 @@
 # KeywordCreate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for creating a new Keyword object.
 
@@ -10,13 +11,13 @@ The request body for creating a new Keyword object.
 
 ## Declaration
 
-```swift
+```
 object KeywordCreate
 ```
 
 #### Discussion
 
-The `KeywordCreate` object is the request payload for adding a keyword to an ad group via `POST /v1/keywords` ([`Create a Keyword`](post-keywords.md)), after the ad group has already been created. The `AdGroupCreate` doesn’t support keywords inline. See the properties below for field-level requirements, mutability, and defaults.
+The `KeywordCreate` object is the request payload for adding a keyword to an ad group via `POST /v1/keywords` ([`Create a Keyword`](./post-keywords.md)), after the ad group has already been created. The `AdGroupCreate` doesn’t support keywords inline. See the properties below for field-level requirements, mutability, and defaults.
 
 ##### Example
 
@@ -36,28 +37,30 @@ The `KeywordCreate` object is the request payload for adding a keyword to an ad 
 ## Topics
 
 ### Type Aliases
-- [type KeywordCreate.MatchType](keywordcreate/matchtype-data.typealias.md)
+- [type KeywordCreate.MatchType](./keywordcreate/matchtype-data.typealias.md)
   The matching behavior to use when creating this keyword.
-- [type KeywordCreate.Status](keywordcreate/status-data.typealias.md)
+- [type KeywordCreate.Status](./keywordcreate/status-data.typealias.md)
   Whether this keyword is active and eligible to serve at creation.
 
 ## Properties
 
 - `adGroupId` (int64) *(required)*: The ad group this keyword targets.
 - `text` (string) *(required)*: The keyword text as entered by the advertiser. Can’t be changed after creation. To change it, delete the keyword and create a new one.
-- `matchType` (KeywordCreate.MatchType): The match type for this keyword. Values: `EXACT`, `BROAD`, `PHRASE`, `CATEGORY`. See [`KeywordMatchType`](keywordmatchtype.md). Immutable after creation. To change it, delete the keyword and create a new one.
-- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](money.md). Overrides the ad group default bid. Omit or pass `null` to default to the ad group’s `BidStrategy` bid. Not used with Maximize Conversions bid strategy campaigns.
-- `status` (KeywordCreate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED`, `PAUSED`. See [`KeywordStatus`](keywordstatus.md).
+
+  **Minimum Length**: `1`
+- `matchType` (KeywordCreate.MatchType): The match type for this keyword. Values: `EXACT`, `BROAD`, `PHRASE`, `CATEGORY`. See [`KeywordMatchType`](./keywordmatchtype.md). Immutable after creation. To change it, delete the keyword and create a new one.
+- `bid` (Money): Per-keyword bid override as a `Money` object. See [`Money`](./money.md). Overrides the ad group default bid. Omit or pass `null` to default to the ad group’s `BidStrategy` bid. Not used with Maximize Conversions bid strategy campaigns.
+- `status` (KeywordCreate.Status): Whether this keyword is active and eligible to serve. Values: `ENABLED`, `PAUSED`. See [`KeywordStatus`](./keywordstatus.md).
 
 ## See Also
 
-- [object Keyword](keyword.md)
+- [object Keyword](./keyword.md)
   The targeting unit that connects a user’s search query to the ad group’s ads.
-- [object KeywordUpdate](keywordupdate.md)
+- [object KeywordUpdate](./keywordupdate.md)
   The request body for updating an existing Keyword object.
-- [object KeywordResponse](keywordresponse.md)
+- [object KeywordResponse](./keywordresponse.md)
   The response object for a Keyword operation.
-- [object KeywordQueryResponse](keywordqueryresponse.md)
+- [object KeywordQueryResponse](./keywordqueryresponse.md)
   The response object for a Keyword query, containing matched results and pagination metadata.
 
 

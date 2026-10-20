@@ -1,14 +1,15 @@
 # upl_page_info_array_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 typedef upl_page_info_t *upl_page_info_array_t;
 ```
 

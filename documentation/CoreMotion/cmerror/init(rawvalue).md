@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -19,7 +20,8 @@ init(rawValue: UInt32)
 
 ## See Also
 
-- [init(UInt32)](cmerror/init(_:).md)
+### Initializers
+- [init(UInt32)](./init%28_%29.md)
 
 
 ---

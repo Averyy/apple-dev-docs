@@ -1,7 +1,8 @@
 # BlendMode.destinationOut
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ case destinationOut
 
 ## See Also
 
-- [BlendMode.sourceAtop](blendmode/sourceatop.md)
-- [BlendMode.destinationOver](blendmode/destinationover.md)
+### Accessing Porter-Duff modes
+- [BlendMode.sourceAtop](./sourceatop.md)
+- [BlendMode.destinationOver](./destinationover.md)
 
 
 ---

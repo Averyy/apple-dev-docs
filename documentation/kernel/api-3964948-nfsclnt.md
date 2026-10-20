@@ -1,14 +1,15 @@
 # nfsclnt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 int nfsclnt(unsigned long request, void *argstructp);
 ```
 

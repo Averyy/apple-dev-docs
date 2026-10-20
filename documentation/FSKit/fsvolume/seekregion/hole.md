@@ -1,7 +1,8 @@
 # FSVolume.SeekRegion.hole
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Seek the next hole region.
 
@@ -14,13 +15,18 @@ Seek the next hole region.
 case hole
 ```
 
+```c
+FSSeekRegionHole
+```
+
 #### Discussion
 
 When there are no more hole regions past the supplied `offset`, the current file size (end-of-file offset) should be returned.
 
 ## See Also
 
-- [FSVolume.SeekRegion.data](fsvolume/seekregion/data.md)
+### Seek region types
+- [FSVolume.SeekRegion.data](./data.md)
   Seek the next data region.
 
 

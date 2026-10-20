@@ -1,7 +1,8 @@
 # BNNSOptimizerFunctionAdamW
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optimizer function that updates parameters according to the AdamW algorithm.
 
@@ -20,13 +21,18 @@ An optimizer function that updates parameters according to the AdamW algorithm.
 var BNNSOptimizerFunctionAdamW: BNNSOptimizerFunction { get }
 ```
 
+```c
+BNNSOptimizerFunctionAdamW
+```
+
 ## See Also
 
-- [var BNNSOptimizerFunctionAdamWWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionadamwwithclipping.md)
+### AdamW Optimizer Functions
+- [var BNNSOptimizerFunctionAdamWWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionadamwwithclipping.md)
   An optimizer function that updates parameters according to the AdamW algorithm and optionally clips the gradient by value or by norm.
-- [var BNNSOptimizerFunctionAdamWAMSGrad: BNNSOptimizerFunction](bnnsoptimizerfunctionadamwamsgrad.md)
+- [var BNNSOptimizerFunctionAdamWAMSGrad: BNNSOptimizerFunction](./bnnsoptimizerfunctionadamwamsgrad.md)
   An optimizer function that updates parameters according to the AMSGrad variant of the AdamW algorithm.
-- [var BNNSOptimizerFunctionAdamWAMSGradWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionadamwamsgradwithclipping.md)
+- [var BNNSOptimizerFunctionAdamWAMSGradWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionadamwamsgradwithclipping.md)
   An optimizer function that updates parameters according to the AMSGrad variant of the AdamW algorithm and optionally clips the gradient by value or by norm.
 
 

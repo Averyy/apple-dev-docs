@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBBillboardAdditinalInfoNoPower](2869874-anonymous/kusbbillboardadditinalinfonopower.md)
-- [kUSBBillboardAdditinalInfoNoUSBPD](2869874-anonymous/kusbbillboardadditinalinfonousbpd.md)
+- [kUSBBillboardAdditinalInfoNoPower](./api-2869874-anonymous/kusbbillboardadditinalinfonopower.md)
+- [kUSBBillboardAdditinalInfoNoUSBPD](./api-2869874-anonymous/kusbbillboardadditinalinfonousbpd.md)
 
 
 ---

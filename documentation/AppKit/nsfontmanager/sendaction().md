@@ -1,12 +1,13 @@
 # sendAction()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A Boolean value that indicates whether a responder handled the font manager’s action message.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,27 @@ A Boolean value that indicates whether a responder handled the font manager’s 
 func sendAction() -> Bool
 ```
 
+```objc
+- (BOOL) sendAction;
+```
+
 #### Discussion
 
-By default, the font manager’s action message is [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changefont:). The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if some responder object handled the [`changeFont:`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/changefont:) message or [`false`](https://developer.apple.com/documentation/swift/false) if the message went unheard.
+By default, the font manager’s action message is [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md). The value of this property is [`true`](../../Swift/true.md) if some responder object handled the [`changeFont:`](../../ObjectiveC/nsobject-swift.class/changefont_.md) message or [`false`](../../Swift/false.md) if the message went unheard.
 
 ## See Also
 
-- [var action: Selector](nsfontmanager/action.md)
+### Related Documentation
+- [var action: Selector](./action.md)
   The action sent to the first responder when the user selects a new font from the Font panel or chooses a command from the Font menu.
-- [func setSelectedFont(NSFont, isMultiple: Bool)](nsfontmanager/setselectedfont(_:ismultiple:).md)
+### Setting and Examining the Selected Font
+- [func setSelectedFont(NSFont, isMultiple: Bool)](./setselectedfont%28_,ismultiple%29.md)
   Records the specified font as the currently selected font and updates the Font panel.
-- [var selectedFont: NSFont?](nsfontmanager/selectedfont.md)
+- [var selectedFont: NSFont?](./selectedfont.md)
   The currently selected font object.
-- [var isMultiple: Bool](nsfontmanager/ismultiple.md)
+- [var isMultiple: Bool](./ismultiple.md)
   A Boolean value that indicates whether the currently selected font has multiple fonts.
-- [func localizedName(forFamily: String, face: String?) -> String](nsfontmanager/localizedname(forfamily:face:).md)
+- [func localizedName(forFamily: String, face: String?) -> String](./localizedname%28forfamily,face%29.md)
   Returns a localized string with the name of the specified font family and face, if one exists.
 
 

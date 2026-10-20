@@ -1,7 +1,8 @@
 # SecItemAttr.securityDomainItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the security domain attribute.
 
@@ -13,6 +14,10 @@ Identifies the security domain attribute.
 
 ```swift
 case securityDomainItemAttr
+```
+
+```c
+kSecSecurityDomainItemAttr
 ```
 
 #### Discussion

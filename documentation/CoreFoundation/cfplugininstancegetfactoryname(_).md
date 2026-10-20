@@ -1,18 +1,21 @@
 # CFPlugInInstanceGetFactoryName(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Not recommended.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 27.0
+- iPadOS 2.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.0+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 2.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use UUID-based plugins instead
 
 ## Declaration
 
@@ -20,15 +23,20 @@ Not recommended.
 func CFPlugInInstanceGetFactoryName(_ instance: CFPlugInInstance!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFPlugInInstanceGetFactoryName(CFPlugInInstanceRef instance);
+```
+
 ## See Also
 
-- [func CFPlugInInstanceCreateWithInstanceDataSize(CFAllocator!, CFIndex, CFPlugInInstanceDeallocateInstanceDataFunction!, CFString!, CFPlugInInstanceGetInterfaceFunction!) -> CFPlugInInstance!](cfplugininstancecreatewithinstancedatasize(_:_:_:_:_:).md)
+### Deprecated
+- [func CFPlugInInstanceCreateWithInstanceDataSize(CFAllocator!, CFIndex, CFPlugInInstanceDeallocateInstanceDataFunction!, CFString!, CFPlugInInstanceGetInterfaceFunction!) -> CFPlugInInstance!](./cfplugininstancecreatewithinstancedatasize%28_,_,_,_,_%29.md)
   Not recommended.
-- [func CFPlugInInstanceGetInstanceData(CFPlugInInstance!) -> UnsafeMutableRawPointer!](cfplugininstancegetinstancedata(_:).md)
+- [func CFPlugInInstanceGetInstanceData(CFPlugInInstance!) -> UnsafeMutableRawPointer!](./cfplugininstancegetinstancedata%28_%29.md)
   Not recommended.
-- [func CFPlugInInstanceGetInterfaceFunctionTable(CFPlugInInstance!, CFString!, UnsafeMutablePointer<UnsafeMutableRawPointer?>!) -> Bool](cfplugininstancegetinterfacefunctiontable(_:_:_:).md)
+- [func CFPlugInInstanceGetInterfaceFunctionTable(CFPlugInInstance!, CFString!, UnsafeMutablePointer<UnsafeMutableRawPointer?>!) -> Bool](./cfplugininstancegetinterfacefunctiontable%28_,_,_%29.md)
   Not recommended.
-- [func CFPlugInInstanceGetTypeID() -> CFTypeID](cfplugininstancegettypeid().md)
+- [func CFPlugInInstanceGetTypeID() -> CFTypeID](./cfplugininstancegettypeid%28%29.md)
   Not recommended.
 
 

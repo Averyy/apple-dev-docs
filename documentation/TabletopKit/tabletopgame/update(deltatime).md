@@ -1,7 +1,8 @@
 # update(deltaTime:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the game manually. Call this function if `automaticUpdate` was not set when registering the Tabletop instance.
 
@@ -16,11 +17,12 @@ func update(deltaTime: Double)
 
 ## See Also
 
-- [init(tableSetup: TableSetup, version: Int)](tabletopgame/init(tablesetup:version:).md)
+### Creating a tabletop game
+- [init(tableSetup: TableSetup, version: Int)](./init%28tablesetup,version%29.md)
   Creates a tabletop game with the specified table configuration and version of rules.
-- [var rootPose: Pose3D](tabletopgame/rootpose.md)
+- [var rootPose: Pose3D](./rootpose.md)
   Update the root pose for the current player
-- [func withCurrentSnapshot((TableSnapshot) -> Void)](tabletopgame/withcurrentsnapshot(_:).md)
+- [func withCurrentSnapshot((TableSnapshot) -> Void)](./withcurrentsnapshot%28_%29.md)
 
 
 ---

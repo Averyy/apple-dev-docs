@@ -1,7 +1,8 @@
 # init(for:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a browser with a type of service to discover.
 
@@ -22,15 +23,16 @@ init(for descriptor: NWBrowser.Descriptor, using parameters: NWParameters)
 
 ## See Also
 
-- [NWBrowser.Descriptor](nwbrowser/descriptor-swift.enum.md)
+### Browsing for Services
+- [NWBrowser.Descriptor](./descriptor-swift.enum.md)
   A service description used to discover Bonjour services.
-- [func start(queue: DispatchQueue)](nwbrowser/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts browsing for services, and sets the queue on which all browser events will be delivered.
-- [var browseResultsChangedHandler: ((Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)?](nwbrowser/browseresultschangedhandler.md)
+- [var browseResultsChangedHandler: ((Set<NWBrowser.Result>, Set<NWBrowser.Result.Change>) -> Void)?](./browseresultschangedhandler.md)
   A handler that delivers updates about discovered services.
-- [NWBrowser.Result](nwbrowser/result.md)
+- [NWBrowser.Result](./result.md)
   A set of discovered services and changes from the last result.
-- [var browseResults: Set<NWBrowser.Result>](nwbrowser/browseresults.md)
+- [var browseResults: Set<NWBrowser.Result>](./browseresults.md)
   The list of discovered services.
 
 

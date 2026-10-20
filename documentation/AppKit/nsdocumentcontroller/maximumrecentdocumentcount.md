@@ -1,17 +1,22 @@
 # maximumRecentDocumentCount
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of items that may be presented in the standard Open Recent menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maximumRecentDocumentCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger maximumRecentDocumentCount;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ A value of 0 indicates that `NSDocumentController` will not attempt to add an Op
 
 ## See Also
 
-- [func clearRecentDocuments(Any?)](nsdocumentcontroller/clearrecentdocuments(_:).md)
+### Managing the Open Recent Menu
+- [func clearRecentDocuments(Any?)](./clearrecentdocuments%28_%29.md)
   Empties the recent documents list for the application.
-- [func noteNewRecentDocumentURL(URL)](nsdocumentcontroller/notenewrecentdocumenturl(_:).md)
+- [func noteNewRecentDocumentURL(URL)](./notenewrecentdocumenturl%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the data located by the URL.
-- [func noteNewRecentDocument(NSDocument)](nsdocumentcontroller/notenewrecentdocument(_:).md)
+- [func noteNewRecentDocument(NSDocument)](./notenewrecentdocument%28_%29.md)
   Adds or replaces an Open Recent menu item corresponding to the document.
-- [var recentDocumentURLs: [URL]](nsdocumentcontroller/recentdocumenturls.md)
+- [var recentDocumentURLs: [URL]](./recentdocumenturls.md)
   The list of recent-document URLs.
 
 

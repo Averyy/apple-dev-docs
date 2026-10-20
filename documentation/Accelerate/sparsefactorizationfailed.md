@@ -1,18 +1,19 @@
 # SparseFactorizationFailed
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The factorization failed due to a numerical issue.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,20 +21,25 @@ The factorization failed due to a numerical issue.
 var SparseFactorizationFailed: SparseStatus_t { get }
 ```
 
+```c
+SparseFactorizationFailed
+```
+
 ## See Also
 
-- [init(Int32)](sparsestatus_t/init(_:).md)
-- [init(rawValue: Int32)](sparsestatus_t/init(rawvalue:).md)
-- [var rawValue: Int32](sparsestatus_t/rawvalue.md)
-- [var SparseStatusOK: SparseStatus_t](sparsestatusok.md)
+### Constants
+- [init(Int32)](./sparsestatus_t/init%28_%29.md)
+- [init(rawValue: Int32)](./sparsestatus_t/init%28rawvalue%29.md)
+- [var rawValue: Int32](./sparsestatus_t/rawvalue.md)
+- [var SparseStatusOK: SparseStatus_t](./sparsestatusok.md)
   The factorization was successful.
-- [var SparseMatrixIsSingular: SparseStatus_t](sparsematrixissingular.md)
+- [var SparseMatrixIsSingular: SparseStatus_t](./sparsematrixissingular.md)
   The factorization aborted because the matrix is singular.
-- [var SparseInternalError: SparseStatus_t](sparseinternalerror.md)
+- [var SparseInternalError: SparseStatus_t](./sparseinternalerror.md)
   The factorization encountered an internal error, such as failing to allocate memory.
-- [var SparseParameterError: SparseStatus_t](sparseparametererror.md)
+- [var SparseParameterError: SparseStatus_t](./sparseparametererror.md)
   An error in a user-supplied parameter.
-- [var SparseStatusReleased: SparseStatus_t](sparsestatusreleased.md)
+- [var SparseStatusReleased: SparseStatus_t](./sparsestatusreleased.md)
   The system freed the factorization object.
 
 

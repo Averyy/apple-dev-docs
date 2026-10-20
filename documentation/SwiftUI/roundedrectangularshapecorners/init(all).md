@@ -1,7 +1,8 @@
 # init(all:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create corner styles with all corner having the same style.
 

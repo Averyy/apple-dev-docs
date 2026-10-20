@@ -1,20 +1,25 @@
 # menuItems
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom menu items for the editing menu.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 3.2+ - Deprecated in 16.0
+- iPadOS 3.2+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
 ```swift
 var menuItems: [UIMenuItem]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<UIMenuItem *> * menuItems;
 ```
 
 #### Discussion

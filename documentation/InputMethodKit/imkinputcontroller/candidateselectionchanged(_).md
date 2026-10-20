@@ -1,7 +1,8 @@
 # candidateSelectionChanged(_:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs an input controller that the current candidate selection in the candidate window has changed.
 
@@ -14,6 +15,10 @@ Informs an input controller that the current candidate selection in the candidat
 func candidateSelectionChanged(_ candidateString: NSAttributedString!)
 ```
 
+```objc
+- (void) candidateSelectionChanged:(NSAttributedString *) candidateString;
+```
+
 #### Discussion
 
 Note this method is called to indicate user activity in the candidate window. The candidate object might not be the user’s final selection.
@@ -24,9 +29,10 @@ Note this method is called to indicate user activity in the candidate window. Th
 
 ## See Also
 
-- [func annotationSelected(NSAttributedString!, forCandidate: NSAttributedString!)](imkinputcontroller/annotationselected(_:forcandidate:).md)
+### Tracking Selections
+- [func annotationSelected(NSAttributedString!, forCandidate: NSAttributedString!)](./annotationselected%28_,forcandidate%29.md)
   Sends the selected candidate string and annotation string to the input controller.
-- [func candidateSelected(NSAttributedString!)](imkinputcontroller/candidateselected(_:).md)
+- [func candidateSelected(NSAttributedString!)](./candidateselected%28_%29.md)
   Informs an input controller that a new candidate is selected.
 
 

@@ -1,7 +1,8 @@
 # init(source:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(source sourceNode: MPSNNImageNode)
+```
+
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode;
 ```
 
 

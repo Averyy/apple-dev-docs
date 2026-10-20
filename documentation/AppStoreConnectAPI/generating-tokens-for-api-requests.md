@@ -1,12 +1,13 @@
 # Generating Tokens for API Requests
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
 #### Overview
 
-JSON Web Token (JWT) is an open standard ([`RFC 7519`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The App Store Connect API requires JWTs to authorize each API request. You create the token, and sign it with the private key you downloaded from App Store Connect.
+JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The App Store Connect API requires JWTs to authorize each API request. You create the token, and sign it with the private key you downloaded from App Store Connect.
 
 To generate a signed JWT:
 
@@ -16,17 +17,17 @@ To generate a signed JWT:
 
 Include the signed JWT in the authorization header of each App Store Connect API request.
 
-##### Create the Jwt Header
+##### Create the JWT Header
 
 To create a JWT to communicate with the App Store Connect API, use the following fields and values in the header:
 
 | Header Field | Value |
 | --- | --- |
-| `alg` - Encryption Algorithm | `ES256` ![None](/images/com.apple.appstoreconnectapi/spacer.png) All JWTs for App Store Connect API must be signed with ES256 encryption. |
+| `alg` - Encryption Algorithm | `ES256` ![](https://developer.apple.com/tutorials/images/com.apple.appstoreconnectapi/spacer.png) All JWTs for App Store Connect API must be signed with ES256 encryption. |
 | `kid` - Key Identifier | Your private key ID from App Store Connect, for example, `2X9R4HXF34` |
 | `typ` - Token Type | `JWT` |
 
-To get your key ID for your team API key from App Store Connect, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) and:
+To get your key ID for your team API key from App Store Connect, log in to [App Store Connect](https://appstoreconnect.apple.com/) and:
 
 1. Select Users and Access.
 2. Select the Integrations tab.
@@ -36,7 +37,7 @@ The key IDs appear in a column under the Active heading.
 1. Hover the cursor next to a key ID to display the Copy Key ID link.
 2. Click Copy Key ID.
 
-To get your key ID for your individual API key from App Store Connect, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) and:
+To get your key ID for your individual API key from App Store Connect, log in to [App Store Connect](https://appstoreconnect.apple.com/) and:
 
 1. Go to your user profile.
 2. Scroll down to Individual API Key.
@@ -54,7 +55,7 @@ Here’s an example of a JWT header:
 }
 ```
 
-##### Create the Jwt Payload for Team Keys
+##### Create the JWT Payload for Team Keys
 
 The JWT payload contains information specific to the App Store Connect APIs, such as issuer ID and expiration time. Use the following fields and values in the JWT payload:
 
@@ -62,11 +63,11 @@ The JWT payload contains information specific to the App Store Connect APIs, suc
 | --- | --- |
 | `iss` - Issuer ID | Your issuer ID from the API Keys page in App Store Connect, for example, `57246542-96fe-1a63-e053-0824d011072a` |
 | `iat` - Issued At Time | The token’s creation time, in UNIX epoch time, for example, `1528407600` |
-| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes into the future are not valid except for resources listed in [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md). |
+| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes into the future are not valid except for resources listed in [Determine the Appropriate Token Lifetime](./generating-tokens-for-api-requests.md#Determine-the-Appropriate-Token-Lifetime). |
 | `aud` - Audience | `appstoreconnect-v1` |
 | `scope` - Token Scope | A list of operations you want App Store Connect to allow for this token; for example, `GET /v1/apps/123` (Optional) |
 
-To get your issuer ID, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) and:
+To get your issuer ID, log in to [App Store Connect](https://appstoreconnect.apple.com/) and:
 
 1. Select Users and Access.
 2. Select the Integrations tab.
@@ -88,15 +89,15 @@ Here’s an example of a JWT payload:
 
 ```
 
-##### Create the Jwt Payload for Individual Keys
+##### Create the JWT Payload for Individual Keys
 
 The JWT payload for Individual keys contains information specific to the App Store Connect APIs, and expiration time. Use the following fields and values in the JWT payload:
 
 | **Payload Field** | **Value** |
 | --- | --- |
-| `sub` - Subject | `user`  ![None](/images/com.apple.appstoreconnectapi/spacer.png) ``This value is always the same for individual keys. |
+| `sub` - Subject | `user`  ![](https://developer.apple.com/tutorials/images/com.apple.appstoreconnectapi/spacer.png) ``This value is always the same for individual keys. |
 | `iat` - Issued At Time | The token’s creation time, in UNIX epoch time, for example, `1528407600` |
-| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes in the future are not valid except for resources listed in [`Determine the Appropriate Token Lifetime`](generating-tokens-for-api-requests#Determine-the-Appropriate-Token-Lifetime.md). |
+| `exp` - Expiration Time | The token’s expiration time in Unix epoch time. Tokens that expire more than 20 minutes in the future are not valid except for resources listed in [Determine the Appropriate Token Lifetime](./generating-tokens-for-api-requests.md#Determine-the-Appropriate-Token-Lifetime). |
 | `aud` - Audience | `appstoreconnect-v1` |
 | `scope` - Token Scope | A list of operations you want App Store Connect to allow for this token, for example, `GET /v1/apps/123` (Optional) |
 
@@ -145,7 +146,7 @@ The following code listing shows an example of a JWT payload with a scope.
 }
 ```
 
-With this payload, App Store Connect only allows you to fetch a list of iOS apps using the [`List apps`](get-v1-apps.md) endpoint if you use the `filter[platform]=IOS` query parameter.
+With this payload, App Store Connect only allows you to fetch a list of iOS apps using the [`List apps`](./get-v1-apps.md) endpoint if you use the `filter[platform]=IOS` query parameter.
 
 You can use a JWT without a `scope` for any request as long as the role of the API key allows it.
 
@@ -161,29 +162,29 @@ For most requests, App Store Connect rejects a token with a lifetime greater tha
 
 If a token meets all the above criteria, App Store Connect accepts a token with a lifetime of up to six months for the following resources:
 
-- [`Build Actions`](build-actions.md)
-- [`Build Runs`](build-runs.md)
-- [`Git References`](git-references.md)
-- [`Issues`](issues.md)
-- [`macOS Versions`](macos-versions.md)
-- [`Products`](products.md)
-- [`Providers`](providers.md)
-- [`Power and Performance Metrics and Logs`](power-and-performance-metrics-and-logs.md)
-- [`Pull Requests`](pull-requests.md)
-- [`Repositories`](repositories.md)
-- [`Test Results`](test-results.md)
-- [`Workflows`](workflows.md)
-- [`Xcode Versions`](xcode-versions.md)
+- [Build Actions](./build-actions.md)
+- [Build Runs](./build-runs.md)
+- [Git References](./git-references.md)
+- [Issues](./issues.md)
+- [macOS Versions](./macos-versions.md)
+- [Products](./products.md)
+- [Providers](./providers.md)
+- [Power and Performance Metrics and Logs](./power-and-performance-metrics-and-logs.md)
+- [Pull Requests](./pull-requests.md)
+- [Repositories](./repositories.md)
+- [Test Results](./test-results.md)
+- [Workflows](./workflows.md)
+- [Xcode Versions](./xcode-versions.md)
 
-##### Sign the Jwt
+##### Sign the JWT
 
 Use the private key associated with the key ID you specified in the header to sign the token.
 
-Regardless of the programming language you’re using with the App Store Connect API, there are a variety of open source libraries available online for creating and signing JWT tokens. See [`JWT.io`](https://developer.apple.comhttps://jwt.io/) for more information.
+Regardless of the programming language you’re using with the App Store Connect API, there are a variety of open source libraries available online for creating and signing JWT tokens. See [JWT.io](https://jwt.io/) for more information.
 
 > 💡 **Tip**:  You don’t need to generate a new token for every API request. To get better performance from the App Store Connect API, reuse the same signed token for multiple requests until it expires.
 
-##### Include the Jwt in the Requests Authorization Header
+##### Include the JWT in the Request’s Authorization Header
 
 Once you have a complete and signed token, provide the token in the request’s authorization header as a bearer token.
 
@@ -196,15 +197,16 @@ curl -v -H 'Authorization: Bearer [signed token]'
 
 ## See Also
 
-- [Creating API Keys for App Store Connect API](creating-api-keys-for-app-store-connect-api.md)
+### Essentials
+- [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Revoking API Keys](revoking-api-keys.md)
+- [Revoking API Keys](./revoking-api-keys.md)
   Revoke unused, lost, or compromised private keys.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [Uploading Assets to App Store Connect](uploading-assets-to-app-store-connect.md)
+- [Uploading Assets to App Store Connect](./uploading-assets-to-app-store-connect.md)
   Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
-- [App Store Connect API Release Notes](app-store-connect-api-release-notes.md)
+- [App Store Connect API Release Notes](./app-store-connect-api-release-notes.md)
   Learn about new features and updates in the App Store Connect API.
 
 

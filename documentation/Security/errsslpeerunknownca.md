@@ -1,7 +1,8 @@
 # errSSLPeerUnknownCA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown certificate authority was encountered.
 
@@ -18,6 +19,10 @@ An unknown certificate authority was encountered.
 
 ```swift
 var errSSLPeerUnknownCA: OSStatus { get }
+```
+
+```c
+errSSLPeerUnknownCA
 ```
 
 

@@ -1,7 +1,8 @@
 # prefersFullSizePreview
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates that the drag item preview should be shown at its full, original size.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates that the drag item preview should be shown at its
 var prefersFullSizePreview: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL prefersFullSizePreview;
+```
+
 #### Discussion
 
-Set [`prefersFullSizePreview`](uidropproposal/prefersfullsizepreview.md) to [`true`](https://developer.apple.com/documentation/swift/true) to show the preview at its original size, not scaled down to a smaller size. For example, you might set this property to [`true`](https://developer.apple.com/documentation/swift/true) when the user moves items from a nearby view and scaling down the preview is distracting.
+Set [`prefersFullSizePreview`](./prefersfullsizepreview.md) to [`true`](../../Swift/true.md) to show the preview at its original size, not scaled down to a smaller size. For example, you might set this property to [`true`](../../Swift/true.md) when the user moves items from a nearby view and scaling down the preview is distracting.
 
 This property applies only to drag and drop activities performed within the same app.
 
 ## See Also
 
-- [var isPrecise: Bool](uidropproposal/isprecise.md)
+### Configuring a drop proposal
+- [var isPrecise: Bool](./isprecise.md)
   A Boolean value that proposes that the drop interaction define the drop location precisely, such as at a specific point within existing text.
 
 

@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Serializes a captured structure to the specified encoder.
 

@@ -1,6 +1,7 @@
 # Establishing a connection to Apple Push Notification service (APNs)
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Secure your communications with APNs to send API requests.
 
@@ -10,20 +11,20 @@ Use `HTTP/2` and `TLS 1.2` or later to establish a connection between your provi
 
 APNs allows for multiple concurrent streams for each connection, but don’t assume a specific number of streams. The exact number varies based on server load and whether you use a provider certificate or an authentication token. For example, if you’re using an `authentication` token, APNs allows only one stream until you post a request with a valid `authentication` token. APNs ignores `HTTP/2 PRIORITY` frames, so don’t send them on your streams.
 
-If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes `JSON` data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [`Handling notification responses from APNs`](handling-notification-responses-from-apns.md).
+If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes `JSON` data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [Handling notification responses from APNs](./handling-notification-responses-from-apns.md).
 
-##### Create a Request to Apns
+##### Create a request to APNs
 
 To send a notification to a person’s device, construct and send a POST notification to APNs. Send this request over the connection you created using `HTTP/2` and `TLS`. To create your POST notification, you must already have the following pieces of information:
 
-- If you’re using device push, the device token that identifies the device to receive the notification; refer to [`Registering your app with APNs`](registering-your-app-with-apns.md).
-- If you’re using token-based authentication, your current authentication token; refer to [`Establishing a token-based connection to APNs`](establishing-a-token-based-connection-to-apns.md).
-- The notification’s payload, specified as JSON data; refer to [`Generating a remote notification`](generating-a-remote-notification.md).
-- If you’re using certificate-based authentication, your provider certificate. You send your provider certificate to APNs when setting up your `TLS` connection. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
+- If you’re using device push, the device token that identifies the device to receive the notification; refer to [Registering your app with APNs](./registering-your-app-with-apns.md).
+- If you’re using token-based authentication, your current authentication token; refer to [Establishing a token-based connection to APNs](./establishing-a-token-based-connection-to-apns.md).
+- The notification’s payload, specified as JSON data; refer to [Generating a remote notification](./generating-a-remote-notification.md).
+- If you’re using certificate-based authentication, your provider certificate. You send your provider certificate to APNs when setting up your `TLS` connection. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 
 > **Note**: Depending on the connection you’re establishing with APNs, each request has a different path and header requirement.
 
-##### Send a Request to Apns
+##### Send a request to APNs
 
 APNs requires the use of HPACK (header compression for HTTP/2), which prevents repeatedly storing header keys and values. APNs maintains a small dynamic table for HPACK. To avoid filling up that table, encode your headers in the following way—especially when using many streams:
 
@@ -32,11 +33,11 @@ APNs requires the use of HPACK (header compression for HTTP/2), which prevents r
 
 If you are using token-based authentication, the `authorization` header value shouldn’t change frequently and can be indexed. If you are using separate connections for different push types, `apns-push-type` header value can also be indexed and reused. If you are using broadcast push notifications, the channel ID used for push notifications might not change often and can be indexed.
 
-##### Troubleshoot Problems with Connecting to Apns
+##### Troubleshoot problems with connecting to APNs
 
 If your provider server is unable to connect to APNs, examine the following possible causes:
 
-- Make sure you have the needed certificates installed on your provider server. If your provider server doesn’t have the proper certificates for `TLS/SS`L validation, it cannot connect to APNs. For certificate-based connections, your provider server must also have the certificate you obtained from Apple. Refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
+- Make sure you have the needed certificates installed on your provider server. If your provider server doesn’t have the proper certificates for `TLS/SS`L validation, it cannot connect to APNs. For certificate-based connections, your provider server must also have the certificate you obtained from Apple. Refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 - Check how often your provider server connects to APNs. If your provider server opens and closes its connection to APNs repeatedly, APNs may treat it as a denial-of-service attack and temporarily block your server from connecting.
 
 You can verify the TLS handshake between your provider server and APNs by running the `OpenSSL s_client` command from your server, as shown below. This command can also show if your `TLS/SSL` certificates are expired or revoked.
@@ -50,11 +51,12 @@ $ openssl s_client -connect api.development.push.apple.com:443 -cert YourSSLCert
 
 ## See Also
 
-- [Registering your app with APNs](registering-your-app-with-apns.md)
+### Server tasks
+- [Registering your app with APNs](./registering-your-app-with-apns.md)
   Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
-- [Generating a remote notification](generating-a-remote-notification.md)
+- [Generating a remote notification](./generating-a-remote-notification.md)
   Send notifications to the user’s device with a JSON payload.
-- [Pushing background updates to your App](pushing-background-updates-to-your-app.md)
+- [Pushing background updates to your App](./pushing-background-updates-to-your-app.md)
   Deliver notifications that wake your app and update it in the background.
 
 

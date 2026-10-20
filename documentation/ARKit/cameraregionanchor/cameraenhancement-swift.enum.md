@@ -1,7 +1,8 @@
 # CameraRegionAnchor.CameraEnhancement
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enhancements to be used with each anchor.
 
@@ -17,22 +18,22 @@ enum CameraEnhancement
 ## Topics
 
 ### Enumeration Cases
-- [CameraRegionAnchor.CameraEnhancement.contrastAndVibrancy](cameraregionanchor/cameraenhancement-swift.enum/contrastandvibrancy.md)
+- [CameraRegionAnchor.CameraEnhancement.contrastAndVibrancy](./cameraenhancement-swift.enum/contrastandvibrancy.md)
   Contrast and vibrancy enhancement in addition to simple crop/zoom.
-- [CameraRegionAnchor.CameraEnhancement.stabilization](cameraregionanchor/cameraenhancement-swift.enum/stabilization.md)
+- [CameraRegionAnchor.CameraEnhancement.stabilization](./cameraenhancement-swift.enum/stabilization.md)
   Simple crop/zoom.
 ### Instance Properties
-- [var description: String](cameraregionanchor/cameraenhancement-swift.enum/description.md)
+- [var description: String](./cameraenhancement-swift.enum/description.md)
   A textual representation of the camera enhancement.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Read an app asset library image
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about an app asset library image.
 
@@ -10,7 +11,7 @@ Get information about an app asset library image.
 
 ## Mentions
 
-- [Uploading and managing image assets](uploading-and-managing-image-assets.md)
+- [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Get information about an app asset library image.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages/f4000005-e036-8f0b-8018-d259974bee61
 ```
 
@@ -69,16 +70,40 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraryImages/f4000005-e036-8f0
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `fields[appAssetLibraryImages]` ([string]): Additional fields to include for each app asset library image resource returned by the response.
+
+  **Allowed Values**: `category`, `createdDate`, `lastModifiedDate`, `fileName`, `fileSize`, `imageAsset`, `referenceName`, `specId`, `state`, `stateDetails`, `uploadOperations`, `placements`
 - `fields[appAssetLibraryPlacements]` ([string]): Additional fields to include for each app asset library placement resource returned by the response.
+
+  **Allowed Values**: `mediaType`, `placementType`, `placementGroup`, `createdDate`, `lastModifiedDate`, `state`, `stateDetails`, `image`, `video`, `appEventLocalization`, `appStoreVersionLocalization`, `appCustomProductPageLocalization`, `appStoreVersionExperimentTreatmentLocalization`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `placements`
 - `limit[placements]` (integer): The maximum number of related placement resources to return.
+
+  **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryImageResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List related placements](get-v1-appassetlibraryimages-_id_-placements.md)
+### Getting images and reading information
+- [List related placements](./get-v1-appassetlibraryimages-_id_-placements.md)
   List the placements that reuse an app asset library image.
-- [List the placement IDs for an app asset library image](get-v1-appassetlibraryimages-_id_-relationships-placements.md)
+- [List the placement IDs for an app asset library image](./get-v1-appassetlibraryimages-_id_-relationships-placements.md)
   Get a list of placement resource IDs for a specific app asset library image.
 
 

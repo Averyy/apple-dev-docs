@@ -1,7 +1,8 @@
 # changeToken
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies a point in the database’s change history.
 
@@ -10,7 +11,7 @@ A string that identifies a point in the database’s change history.
 
 ## Declaration
 
-```swift
+```
 attribute string? changeToken;
 ```
 

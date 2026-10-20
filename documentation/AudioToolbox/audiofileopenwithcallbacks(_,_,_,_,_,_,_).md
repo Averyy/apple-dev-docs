@@ -1,7 +1,8 @@
 # AudioFileOpenWithCallbacks(_:_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Opens an existing file with callbacks you provide.
 
@@ -17,6 +18,10 @@ Opens an existing file with callbacks you provide.
 
 ```swift
 func AudioFileOpenWithCallbacks(_ inClientData: UnsafeMutableRawPointer, _ inReadFunc: AudioFile_ReadProc, _ inWriteFunc: AudioFile_WriteProc?, _ inGetSizeFunc: AudioFile_GetSizeProc, _ inSetSizeFunc: AudioFile_SetSizeProc?, _ inFileTypeHint: AudioFileTypeID, _ outAudioFile: UnsafeMutablePointer<AudioFileID?>) -> OSStatus
+```
+
+```c
+extern OSStatus AudioFileOpenWithCallbacks(void *inClientData, AudioFile_ReadProc inReadFunc, AudioFile_WriteProc inWriteFunc, AudioFile_GetSizeProc inGetSizeFunc, AudioFile_SetSizeProc inSetSizeFunc, AudioFileTypeID inFileTypeHint, AudioFileID*outAudioFile);
 ```
 
 #### Return Value
@@ -35,11 +40,13 @@ A result code. See Result Codes.
 
 ## See Also
 
-- [func AudioFileInitializeWithCallbacks(UnsafeMutableRawPointer, AudioFile_ReadProc, AudioFile_WriteProc, AudioFile_GetSizeProc, AudioFile_SetSizeProc, AudioFileTypeID, UnsafePointer<AudioStreamBasicDescription>, AudioFileFlags, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](audiofileinitializewithcallbacks(_:_:_:_:_:_:_:_:_:).md)
+### Related Documentation
+- [func AudioFileInitializeWithCallbacks(UnsafeMutableRawPointer, AudioFile_ReadProc, AudioFile_WriteProc, AudioFile_GetSizeProc, AudioFile_SetSizeProc, AudioFileTypeID, UnsafePointer<AudioStreamBasicDescription>, AudioFileFlags, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](./audiofileinitializewithcallbacks%28_,_,_,_,_,_,_,_,_%29.md)
   Deletes the content of an existing file and assigns callbacks to the audio file object.
-- [func AudioFileOpenURL(CFURL, AudioFilePermissions, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](audiofileopenurl(_:_:_:_:).md)
+### Opening and Closing Audio Files
+- [func AudioFileOpenURL(CFURL, AudioFilePermissions, AudioFileTypeID, UnsafeMutablePointer<AudioFileID?>) -> OSStatus](./audiofileopenurl%28_,_,_,_%29.md)
   Open an existing audio file specified by a URL.
-- [func AudioFileClose(AudioFileID) -> OSStatus](audiofileclose(_:).md)
+- [func AudioFileClose(AudioFileID) -> OSStatus](./audiofileclose%28_%29.md)
   Closes an audio file.
 
 

@@ -1,26 +1,27 @@
 # iOS & iPadOS 27 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
-##### Airplay
+##### AirPlay
 
 ###### Resolved Issues
 
 - Fixed: AirPlay to Home Theaters fails when a PIN or password is required. (176462871)
 
-##### Airpods Max 2
+##### AirPods Max 2
 
 ###### Resolved Issues
 
 - Fixed: You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2. (178280323)
 
-##### Airport Utility
+##### AirPort Utility
 
 ###### Deprecations
 
@@ -43,7 +44,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582)
+
+  **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
@@ -61,7 +64,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Updating to iOS 27.0 Beta 3 or 4 might cause Digital ID to expire and become unavailable for presentation affecting any device signed in to the same Apple Account, not just the device being updated. (182055786)
 
-##### Audioaccessorykit
+##### AudioAccessoryKit
 
 ###### New Features
 
@@ -73,7 +76,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages. (163944365)
 
-##### Battery Power Management
+##### Battery / Power Management
 
 ###### Resolved Issues
 
@@ -85,7 +88,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: In the Camera app, Portrait mode blur effect might render incorrectly for photos. (177335723)
 
-##### Carplay
+##### CarPlay
 
 ###### Resolved Issues
 
@@ -98,7 +101,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions. (178952858) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
+- Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions. (178952858)
+
+  **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 
 ##### Clock
 
@@ -106,7 +111,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: You might be unable to stop a ringing alarm from the lock screen without unlocking your device. (177728602)
 
-##### Cloudkit
+##### CloudKit
 
 ###### Resolved Issues
 
@@ -126,9 +131,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Gathering `PowerProfiler` and `Lookback` traces through the `Performance Trace` Control Center widget might fail to produce traces. (184729556) **Workaround:** Gather traces on iOS 27.0 beta 1 or earlier.
+- Gathering `PowerProfiler` and `Lookback` traces through the `Performance Trace` Control Center widget might fail to produce traces. (184729556)
 
-##### Core Ai
+  **Workaround:** Gather traces on iOS 27.0 beta 1 or earlier.
+
+##### Core AI
 
 ###### New Features
 
@@ -159,13 +166,19 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678) **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model: ```None
-  let configuration = SpotlightSearchTool.Configuration(
-    sources: [.coreSpotlight],
-    guide: .focused()
-  )
-  let tool = SpotlightSearchTool(configuration: configuration)
-``` To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
+- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678)
+
+  **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model:
+
+  ```
+    let configuration = SpotlightSearchTool.Configuration(
+      sources: [.coreSpotlight],
+      guide: .focused()
+    )
+    let tool = SpotlightSearchTool(configuration: configuration)
+  ```
+
+  To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
 
 ##### Developer Settings
 
@@ -209,13 +222,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Suggested names for a file or folder might be more generic than its contents. For example, a folder containing only bird photos might receive suggestions like “Wildlife” or “Animal Photos” rather than bird-specific names. (178093786)
 
-##### Findmy
+##### FindMy
 
 ###### Resolved Issues
 
 - Fixed: Siri might not be able to find some of the people sharing location with you in FindMy. (178384345)
 
-##### First Party App Search
+##### First-Party App Search
 
 ###### Resolved Issues
 
@@ -270,9 +283,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
-- arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [`Enhanced Security article`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app). (152103975)
+- arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [Enhanced Security article](../Xcode/enabling-enhanced-security-for-your-app.md). (152103975)
 
-##### Healthkit
+##### HealthKit
 
 ###### New Features
 
@@ -297,7 +310,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Switching between many different posters with different icon tints may cause system sluggishness. (178435221)
 - Fixed: The Home Screen Customization on a newly setup device might not save. (178576719)
 
-##### Homekit
+##### HomeKit
 
 ###### New Features
 
@@ -313,7 +326,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: If required models are downloading, you might see an error message instead of download progress information. (177833994)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from. (178256174)
 
-##### Iphone Mirroring
+##### iPhone Mirroring
 
 ###### Resolved Issues
 
@@ -327,7 +340,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Unlocalized text can appear for paste candidates. (180881635)
 
-##### Ldcm
+##### LDCM
 
 ###### Resolved Issues
 
@@ -343,7 +356,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Starting a Vision Pro Guest Mode session might result in two Live Activities on screen at the same time. (178200601) **Workaround:** Dismiss the Lock Screen and re-lock the device.
+- Starting a Vision Pro Guest Mode session might result in two Live Activities on screen at the same time. (178200601)
+
+  **Workaround:** Dismiss the Lock Screen and re-lock the device.
 
 ##### Mail
 
@@ -382,7 +397,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero. (172520325)
 - Fixed: On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero. (177318505)
 
-##### Metrickit
+##### MetricKit
 
 ###### New Features
 
@@ -409,9 +424,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
-- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion). (176055825)
+- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
 
-##### Networkextension
+  For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
+
+##### NetworkExtension
 
 ###### Resolved Issues
 
@@ -427,9 +444,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- `RemoteMediaSession` and `RemoteMediaSessionRepresentable` always provision Now Playing start and update push tokens for the `production` APNs environment, even if the `aps-environment` configuration is set to `development`. (186036238) **Workaround:** Use the `production` environment for testing and validation.
+- `RemoteMediaSession` and `RemoteMediaSessionRepresentable` always provision Now Playing start and update push tokens for the `production` APNs environment, even if the `aps-environment` configuration is set to `development`. (186036238)
 
-##### Nowplaying
+  **Workaround:** Use the `production` environment for testing and validation.
+
+##### NowPlaying
 
 ###### Resolved Issues
 
@@ -441,13 +460,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead. (170066290)
 
-##### Pencilkit
+##### PencilKit
 
 ###### Deprecations
 
 - `__PKStrokeRenderState` has been renamed to `PKStrokeRenderStateReference`, with `PKStrokeRenderStateReference.init(…)` replacing `PKStrokeRenderState.asObjCRenderState()`. (176410709)
 
-##### Photokit
+##### PhotoKit
 
 ###### Resolved Issues
 
@@ -478,7 +497,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: On first launch after updating, you might experience longer-than-expected library migration times, which might last several minutes. (175524004)
 
-##### Realitykit
+##### RealityKit
 
 ###### New Features
 
@@ -500,7 +519,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003) **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
+- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003)
+
+  **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
 
 ##### Safari
 
@@ -528,13 +549,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail. (183456836)
 
-##### Sensorkit
+##### SensorKit
 
 ###### Resolved Issues
 
 - Fixed: PPG sensor reader might return no samples when attempting to fetch data. (178275291)
 
-##### Shadergraph
+##### ShaderGraph
 
 ###### Resolved Issues
 
@@ -551,8 +572,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
-- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
+
+  **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
+- When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected. (168315587)
+
+  **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
 ##### Siri
 
@@ -599,14 +624,28 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298) **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
-- Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.” (176812955) **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
-- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
-- When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added. (177376984) **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
+- After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298)
+
+  **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
+- Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.” (176812955)
+
+  **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
+- When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121)
+
+  **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
+- When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added. (177376984)
+
+  **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
 - Non-SF Symbol custom images for entities might not appear in Siri results for third-party apps. (177984074)
-- When you ask Siri to read your last message, Siri might read an unread message from an unknown sender, such as spam, instead of the most recent message from a known contact. (178049066) **Workaround:** Name the sender in your request – for example, “Read my last message from .”
-- Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions. (178274714) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
-- Siri might cut off the end of words during navigation. (181266301) **Workaround:** Reduce voice expressivity from the fastest pace, or turn off expressive voices.
+- When you ask Siri to read your last message, Siri might read an unread message from an unknown sender, such as spam, instead of the most recent message from a known contact. (178049066)
+
+  **Workaround:** Name the sender in your request – for example, “Read my last message from .”
+- Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions. (178274714)
+
+  **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
+- Siri might cut off the end of words during navigation. (181266301)
+
+  **Workaround:** Reduce voice expressivity from the fastest pace, or turn off expressive voices.
 
 ##### Sleep Focus
 
@@ -614,7 +653,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device. (179960164)
 
-##### Standby
+##### StandBy
 
 ###### Resolved Issues
 
@@ -626,14 +665,14 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Status bar might appear blurred while apps are in the foreground. (179470940)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
-- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct). (167808780)
+- `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
 ###### Resolved Issues
 
@@ -642,7 +681,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Resolved Issues
 
@@ -672,61 +711,81 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### Swiftdata
+##### SwiftData
 
 ###### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
 - You can now use `.toolbarColorScheme(colorScheme, for: .statusBar)` to set a preferred status bar color scheme. (55162154) (FB7234376)
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
 - In apps built with the iOS 27.0 and iPadOS 27.0 SDKs, a `Text` view with `.textSelection(.enabled)` applied now supports user-interactive selection using the system text selection UI. Previously, selectable `Text` views on iOS and iPadOS offered selection functionality through a callout menu. When building with the iOS 27.0 and iPadOS 27.0 SDKs, selectable `Text` views might include additional gestures for system text selection interactions. Consider using `.highPriorityGesture()` for custom gestures applied to `Text` views that should supersede system text selection gestures. (79770704) (FB9208920)
-- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile: ```None
- struct StickerPageView: View {
-     @State private var page = StickerPage()
-     let title: String
- 
-     init(title: String) {
-         // `title` won't have any effect
-         // this also won't compile with @State macro
-         self.page = StickerPage(title: title)
-         self.title = title
-     }
- }
-``` When assigning initial value via an initializer, do not provide an initial value at the @State declaration. ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage // no initial value expression
-     let title: String
- 
-     init(title: String) {
-         self.page = StickerPage(title: title) // works!
-         self.title = title
-     }
- }
-``` When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type: ```None
- struct StickerPageView: View {
-     @State private var page: StickerPage
-     private let title: String
-     ...
- }
- 
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.init(page: page, title: title) // using the synthesized init
-     }
- }
-``` The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly: ```None
- extension StickerPageView {
-     init(title: String, _ page: StickerPage) {
-         self.title = title
-         self.page = page
-     }
- }
-``` In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported. (105893279)
+- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions.
+
+  If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page = StickerPage()
+       let title: String
+   
+       init(title: String) {
+           // `title` won't have any effect
+           // this also won't compile with @State macro
+           self.page = StickerPage(title: title)
+           self.title = title
+       }
+   }
+  ```
+
+  When assigning initial value via an initializer, do not provide an initial value at the @State declaration.
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage // no initial value expression
+       let title: String
+   
+       init(title: String) {
+           self.page = StickerPage(title: title) // works!
+           self.title = title
+       }
+   }
+  ```
+
+  When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type:
+
+  ```
+   struct StickerPageView: View {
+       @State private var page: StickerPage
+       private let title: String
+       ...
+   }
+   
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.init(page: page, title: title) // using the synthesized init
+       }
+   }
+  ```
+
+  The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly:
+
+  ```
+   extension StickerPageView {
+       init(title: String, _ page: StickerPage) {
+           self.title = title
+           self.page = page
+       }
+   }
+  ```
+
+  In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity.
+
+  Composing `@State` with other property wrappers or macros is not supported. (105893279)
 - In apps built with the iOS 27.0 and macOS 27.0 SDKs, selectable `Text` views now support `TextRenderer`. (158160386) (FB19589465)
 - In apps built with the 27.0 SDKs, the new `ReadableDocument` and `WritableDocument` protocols support asynchronous reading and writing, progress reporting, and direct access to document URLs. New `DocumentGroup` initializers that adopt these protocols let you disable document creation for editing-only apps and present custom UI before any document is opened. The initializers expose an `Observable` `URLDocumentConfiguration` and integrate with Swift concurrency and the `Observation` framework. New applications should prefer `ReadableDocument` and `WritableDocument` over `ReferenceFileDocument`, which remains available. (158441552)
 - In apps built with the iOS 27.0 and iPadOS 27.0 SDKs, a `TabView` enforces that its selection is set to a visible tab. `TabView` might crash when its selection is set to a hidden or otherwise unavailable tab. (164516837)
@@ -775,11 +834,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
-- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
+- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
 ###### Resolved Issues
 
-- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
 ##### System Experience
 
@@ -794,7 +853,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Devices might freeze or panic when idle. (178343305)
 
-##### Textkit
+##### TextKit
 
 ###### New Features
 
@@ -806,7 +865,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - You can now use the TrustInsights framework in your apps by declaring the TrustInsights capability on your app target in Xcode. The framework requires an entitlement and internet connectivity to return results. (154949256)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
@@ -838,17 +897,17 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Deprecations
 
-- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [`Transitioning to the UIKit scene-based life cycle`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle). (141837548)
+- Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 - `canOpenURL:` is deprecated. Attempt to open the URL and handle any failure instead of validating it first. Using universal links instead of custom URL schemes removes the need for this validation entirely. (179874781)
 
-##### Usdkit
+##### USDKit
 
 ###### Resolved Issues
 
 - Fixed: Some types of USD attributes cannot be read or modified. (170653056)
 - Fixed: Array, vector, matrix, and quaternion types cannot be authored using USDKit. (178071414)
 
-##### Videotoolbox
+##### VideoToolbox
 
 ###### New Features
 
@@ -873,7 +932,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Weather Highlights is currently only available in US English. (164408676)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -883,7 +942,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Writing Tools becomes unresponsive when you interact with the Plus button while Writing Tools is in use. (177097101) **Workaround:** Force quit Messages to resolve the issue.
+- Writing Tools becomes unresponsive when you interact with the Plus button while Writing Tools is in use. (177097101)
+
+  **Workaround:** Force quit Messages to resolve the issue.
 
 ##### Xcode
 
@@ -893,7 +954,8 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
-- [iOS & iPadOS 27.2 RC Release Notes](ios-ipados-27_2-release-notes.md)
+### iOS & iPadOS 27
+- [iOS & iPadOS 27.2 RC Release Notes](./ios-ipados-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

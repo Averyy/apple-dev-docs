@@ -1,7 +1,8 @@
 # right
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the right side of the source rectangle to the right side of the result rectangle.
 
@@ -15,13 +16,18 @@ The distance from the right side of the source rectangle to the right side of th
 var right: Double
 ```
 
+```c
+CGFloat right;
+```
+
 ## See Also
 
-- [var bottom: Double](nsedgeinsets/bottom.md)
+### Specifying the edge insets
+- [var bottom: Double](./bottom.md)
   The distance from the bottom of the source rectangle to the bottom of the result rectangle.
-- [var left: Double](nsedgeinsets/left.md)
+- [var left: Double](./left.md)
   The distance from the left side of the source rectangle to the left side of the result rectangle.
-- [var top: Double](nsedgeinsets/top.md)
+- [var top: Double](./top.md)
   The distance from the top of the source rectangle to the top of the result rectangle.
 
 

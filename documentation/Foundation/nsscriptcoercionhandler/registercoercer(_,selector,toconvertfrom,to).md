@@ -1,7 +1,8 @@
 # registerCoercer(_:selector:toConvertFrom:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a given object (typically a class) to handle coercions (conversions) from one given class to another.
 
@@ -15,6 +16,10 @@ Registers a given object (typically a class) to handle coercions (conversions) f
 func registerCoercer(_ coercer: Any, selector: Selector, toConvertFrom fromClass: AnyClass, to toClass: AnyClass)
 ```
 
+```objc
+- (void) registerCoercer:(id) coercer selector:(SEL) selector toConvertFromClass:(Class) fromClass toClass:(Class) toClass;
+```
+
 ## Parameters
 
 - `coercer`: The object that performs the coercion. `coercer` should typically be a class object.
@@ -24,7 +29,8 @@ func registerCoercer(_ coercer: Any, selector: Selector, toConvertFrom fromClass
 
 ## See Also
 
-- [func coerceValue(Any, to: AnyClass) -> Any?](nsscriptcoercionhandler/coercevalue(_:to:).md)
+### Working with handlers
+- [func coerceValue(Any, to: AnyClass) -> Any?](./coercevalue%28_,to%29.md)
   Returns an object of a given class representing a given value.
 
 

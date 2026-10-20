@@ -1,7 +1,8 @@
 # init(norm:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a normalization scaler.
 
@@ -26,7 +27,8 @@ init(norm: NormalizationScaler<Element>.NormalizationStrategy = .l2)
 
 ## See Also
 
-- [NormalizationScaler.NormalizationStrategy](normalizationscaler/normalizationstrategy.md)
+### Creating a scaler
+- [NormalizationScaler.NormalizationStrategy](./normalizationstrategy.md)
   A normalization strategy.
 
 

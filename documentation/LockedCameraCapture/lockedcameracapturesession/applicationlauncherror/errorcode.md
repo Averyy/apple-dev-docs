@@ -1,7 +1,8 @@
 # errorCode
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that represents the error code.
 

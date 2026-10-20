@@ -1,7 +1,8 @@
 # init(_:including:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from another attributed string, including an attribute scope that a key path identifies.
 
@@ -23,11 +24,12 @@ init<S, T>(_ other: T, including scope: KeyPath<AttributeScopes, S.Type>) where 
 ## Parameters
 
 - `other`: An attributed string or attributed substring.
-- `scope`: An [`AttributeScopes`](attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
+- `scope`: An [`AttributeScopes`](../attributescopes.md) key path that identifies an attribute scope to associate with the attributed string.
 
 ## See Also
 
-- [init<S, T>(T, including: S.Type)](attributedstring/init(_:including:)-6u3ho.md)
+### Creating a Duplicate Attributed String
+- [init<S, T>(T, including: S.Type)](./init%28_,including%29-6u3ho.md)
   Creates an attributed string from another attributed string, including an attribute scope.
 
 

@@ -1,7 +1,8 @@
 # currentEntityMapping
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity mapping currently being processed.
 
@@ -10,7 +11,7 @@ The entity mapping currently being processed.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The entity mapping currently being processed.
 
 ```swift
 var currentEntityMapping: NSEntityMapping { get }
+```
+
+```objc
+@property (strong, readonly) NSEntityMapping * currentEntityMapping;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ You can observe this value using key-value observing.
 
 ## See Also
 
-- [var migrationProgress: Float](nsmigrationmanager/migrationprogress.md)
+### Monitoring a Migration’s Progress
+- [var migrationProgress: Float](./migrationprogress.md)
   A number between `0` and `1` that indicates the proportion of completeness of the migration.
 
 

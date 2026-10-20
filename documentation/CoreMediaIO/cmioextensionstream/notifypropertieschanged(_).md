@@ -1,7 +1,8 @@
 # notifyPropertiesChanged(_:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies clients about stream property changes.
 
@@ -13,6 +14,10 @@ Notifies clients about stream property changes.
 
 ```swift
 func notifyPropertiesChanged(_ propertyStates: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])
+```
+
+```objc
+- (void) notifyPropertiesChanged:(NSDictionary<NSString *,CMIOExtensionPropertyState *> *) propertyStates;
 ```
 
 ## Parameters

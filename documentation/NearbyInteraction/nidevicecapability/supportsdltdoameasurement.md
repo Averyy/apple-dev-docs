@@ -2,6 +2,7 @@
 
 **Framework**: Nearby Interaction  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
@@ -17,21 +18,26 @@ A property that indicates if the device supports Downlink Time-Difference-of-Arr
 var supportsDLTDOAMeasurement: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsDLTDOAMeasurement;
+```
+
 #### Discussion
 
-Only create a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) instance if the value of this property is `true`.
+Only create a [`NIDLTDOAConfiguration`](../nidltdoaconfiguration.md) instance if the value of this property is `true`.
 
 ## See Also
 
-- [var supportsPreciseDistanceMeasurement: Bool](nidevicecapability/supportsprecisedistancemeasurement.md)
+### Checking session features
+- [var supportsPreciseDistanceMeasurement: Bool](./supportsprecisedistancemeasurement.md)
   A Boolean value that indicates whether the device produces precise distance measurements to nearby objects.
-- [var supportsDirectionMeasurement: Bool](nidevicecapability/supportsdirectionmeasurement.md)
+- [var supportsDirectionMeasurement: Bool](./supportsdirectionmeasurement.md)
   A Boolean value that indicates whether the device produces instantaneous direction measurements to nearby objects.
-- [var supportsCameraAssistance: Bool](nidevicecapability/supportscameraassistance.md)
+- [var supportsCameraAssistance: Bool](./supportscameraassistance.md)
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
-- [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
+- [var supportsExtendedDistanceMeasurement: Bool](./supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
-- [var supportsBluetoothChannelSounding: Bool](nidevicecapability/supportsbluetoothchannelsounding.md)
+- [var supportsBluetoothChannelSounding: Bool](./supportsbluetoothchannelsounding.md)
   A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
 
 

@@ -1,14 +1,15 @@
 # StandardUSB::getNextInterfaceDescriptor
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 const InterfaceDescriptor * StandardUSB::getNextInterfaceDescriptor(const ConfigurationDescriptor *configurationDescriptor, const Descriptor *currentDescriptor);
 ```
 

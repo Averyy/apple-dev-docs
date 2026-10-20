@@ -1,7 +1,8 @@
 # bitwiseLeftShift(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the elementwise left-shifted binary representations of the primary integer by the secondary tensor amount.
 
@@ -17,6 +18,10 @@ Returns the elementwise left-shifted binary representations of the primary integ
 
 ```swift
 func bitwiseLeftShift(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) bitwiseLeftShiftWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

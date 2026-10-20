@@ -1,7 +1,8 @@
 # WCErrorDomain
 
 **Framework**: Watch Connectivity  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors associated with the Watch Connectivity framework.
 
@@ -18,13 +19,18 @@ The domain for errors associated with the Watch Connectivity framework.
 let WCErrorDomain: String
 ```
 
+```c
+extern NSString * const WCErrorDomain;
+```
+
 ## See Also
 
-- [enum WCSessionActivationState](wcsessionactivationstate.md)
+### Constants
+- [enum WCSessionActivationState](./wcsessionactivationstate.md)
   Constants indicating the activation state of a session.
-- [struct WCError](wcerror.md)
+- [struct WCError](./wcerror.md)
   A structure that contains Watch Connectivity error information.
-- [WCError.Code](wcerror/code.md)
+- [WCError.Code](./wcerror/code.md)
   Constants for errors during a session.
 
 

@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The z-coordinate value.
 
@@ -11,7 +12,7 @@ The z-coordinate value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var z: Double { get set }
 
 ## See Also
 
-- [var x: Double](rotationaxis3d/x-swift.property.md)
+### Checking characteristics
+- [var x: Double](./x-swift.property.md)
   The x-coordinate value.
-- [var y: Double](rotationaxis3d/y-swift.property.md)
+- [var y: Double](./y-swift.property.md)
   The y-coordinate value.
-- [var vector: simd_double3](rotationaxis3d/vector.md)
+- [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
-- [var isZero: Bool](rotationaxis3d/iszero.md)
+- [var isZero: Bool](./iszero.md)
   A Boolean value that indicates whether the rotation axis is zero.
 
 

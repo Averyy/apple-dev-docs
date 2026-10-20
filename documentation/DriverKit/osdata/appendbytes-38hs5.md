@@ -1,19 +1,20 @@
 # appendBytes
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a buffer of bytes to the OSData object’s internal data buffer.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool appendBytes(const OSData *aDataObj);
 ```
 
@@ -27,11 +28,12 @@ True on success or false on failure, due to allocation failure.
 
 ## See Also
 
-- [appendBytes](osdata/appendbytes-lbqa.md)
+### Appending Data to the Object
+- [appendBytes](./appendbytes-lbqa.md)
   Appends a buffer of bytes to the OSData object’s internal data buffer.
-- [appendBytes](osdata/appendbytes-lbqa.md)
+- [appendBytes](./appendbytes-lbqa.md)
   Appends a buffer of bytes to the OSData object’s internal data buffer.
-- [OSDataAppendBytes](osdataappendbytes.md)
+- [OSDataAppendBytes](../osdataappendbytes.md)
 
 
 ---

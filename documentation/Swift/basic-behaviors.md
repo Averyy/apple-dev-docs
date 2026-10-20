@@ -1,52 +1,54 @@
 # Basic Behaviors
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 Use your custom types in operations that depend on testing for equality or order and as members of sets and dictionaries.
 
 ## Topics
 
 ### Equality and Ordering
-- [protocol Equatable](equatable.md)
+- [protocol Equatable](./equatable.md)
   A type that can be compared for value equality.
-- [protocol Comparable](comparable.md)
+- [protocol Comparable](./comparable.md)
   A type that can be compared using the relational operators `<`, `<=`, `>=`, and `>`.
-- [protocol Identifiable](identifiable.md)
+- [protocol Identifiable](./identifiable.md)
   A class of types whose instances hold the value of an entity with stable identity.
 ### Copying
-- [protocol Copyable](copyable.md)
+- [protocol Copyable](./copyable.md)
   A type whose values can be implicitly or explicitly copied.
-- [protocol BitwiseCopyable](bitwisecopyable.md)
-- [protocol Escapable](escapable.md)
+- [protocol BitwiseCopyable](./bitwisecopyable.md)
+- [protocol Escapable](./escapable.md)
   A type whose values can persist beyond their immediate local scope.
 ### Borrowing
-- [struct Ref](ref.md)
+- [struct Ref](./ref.md)
   A safe reference allowing in-place reads to a shared value.
-- [struct MutableRef](mutableref.md)
+- [struct MutableRef](./mutableref.md)
   A safe mutable reference allowing in-place mutation to an exclusive value.
 ### Sets and Dictionaries
-- [protocol Hashable](hashable.md)
+- [protocol Hashable](./hashable.md)
   A type that can be hashed into a `Hasher` to produce an integer hash value.
-- [struct Hasher](hasher.md)
+- [struct Hasher](./hasher.md)
   The universal hash function used by `Set` and `Dictionary`.
 ### String Representation
-- [protocol CustomStringConvertible](customstringconvertible.md)
+- [protocol CustomStringConvertible](./customstringconvertible.md)
   A type with a customized textual representation.
-- [protocol LosslessStringConvertible](losslessstringconvertible.md)
+- [protocol LosslessStringConvertible](./losslessstringconvertible.md)
   A type that can be represented as a string in a lossless, unambiguous way.
-- [protocol CustomDebugStringConvertible](customdebugstringconvertible.md)
+- [protocol CustomDebugStringConvertible](./customdebugstringconvertible.md)
   A type with a customized textual representation suitable for debugging purposes.
 ### Raw Representation
-- [protocol CaseIterable](caseiterable.md)
+- [protocol CaseIterable](./caseiterable.md)
   A type that provides a collection of all of its values.
-- [protocol RawRepresentable](rawrepresentable.md)
+- [protocol RawRepresentable](./rawrepresentable.md)
   A type that can be converted to and from an associated raw value.
 
 ## See Also
 
-- [Encoding, Decoding, and Serialization](encoding-decoding-and-serialization.md)
+### Tools for Your Types
+- [Encoding, Decoding, and Serialization](./encoding-decoding-and-serialization.md)
   Serialize and deserialize instances of your types with implicit or customized encoding.
-- [Initialization with Literals](initialization-with-literals.md)
+- [Initialization with Literals](./initialization-with-literals.md)
   Allow values of your type to be expressed using different kinds of literals.
 
 

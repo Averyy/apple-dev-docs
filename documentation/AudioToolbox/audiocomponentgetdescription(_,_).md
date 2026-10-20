@@ -1,7 +1,8 @@
 # AudioComponentGetDescription(_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the class description, as an `AudioComponentDescription` structure, of an audio component.
 
@@ -19,6 +20,10 @@ Gets the class description, as an `AudioComponentDescription` structure, of an a
 func AudioComponentGetDescription(_ inComponent: AudioComponent, _ outDesc: UnsafeMutablePointer<AudioComponentDescription>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioComponentGetDescription(AudioComponent inComponent, AudioComponentDescription *outDesc);
+```
+
 #### Return Value
 
 A result code.
@@ -30,16 +35,17 @@ A result code.
 
 ## See Also
 
-- [func AudioComponentInstanceCanDo(AudioComponentInstance, Int16) -> Bool](audiocomponentinstancecando(_:_:).md)
+### Getting Information About a Component
+- [func AudioComponentInstanceCanDo(AudioComponentInstance, Int16) -> Bool](./audiocomponentinstancecando%28_,_%29.md)
   Determines if an audio component instance implements a particular function.
-- [func AudioComponentCopyName(AudioComponent, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](audiocomponentcopyname(_:_:).md)
+- [func AudioComponentCopyName(AudioComponent, UnsafeMutablePointer<Unmanaged<CFString>?>) -> OSStatus](./audiocomponentcopyname%28_,_%29.md)
   Returns the generic name of an audio component.
-- [func AudioComponentGetVersion(AudioComponent, UnsafeMutablePointer<UInt32>) -> OSStatus](audiocomponentgetversion(_:_:).md)
+- [func AudioComponentGetVersion(AudioComponent, UnsafeMutablePointer<UInt32>) -> OSStatus](./audiocomponentgetversion%28_,_%29.md)
   Gets the version of an audio component in hexadecimal form as `0xMMMMmmDD` (major, minor, dot).
-- [func AudioComponentCopyIcon(AudioComponent) -> UIImage?](audiocomponentcopyicon(_:).md)
-- [func AudioComponentCopyConfigurationInfo(AudioComponent, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](audiocomponentcopyconfigurationinfo(_:_:).md)
-- [struct AudioComponentPlugInInterface](audiocomponentplugininterface.md)
-- [typealias AudioComponentMethod](audiocomponentmethod.md)
+- [func AudioComponentCopyIcon(AudioComponent) -> UIImage?](./audiocomponentcopyicon%28_%29.md)
+- [func AudioComponentCopyConfigurationInfo(AudioComponent, UnsafeMutablePointer<Unmanaged<CFDictionary>?>) -> OSStatus](./audiocomponentcopyconfigurationinfo%28_,_%29.md)
+- [struct AudioComponentPlugInInterface](./audiocomponentplugininterface.md)
+- [typealias AudioComponentMethod](./audiocomponentmethod.md)
 
 
 ---

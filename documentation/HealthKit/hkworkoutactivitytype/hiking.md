@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.hiking
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for hiking.
 
@@ -19,23 +20,28 @@ The constant for hiking.
 case hiking
 ```
 
+```c
+HKWorkoutActivityTypeHiking
+```
+
 #### Discussion
 
 HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
-- [HKWorkoutActivityType.climbing](hkworkoutactivitytype/climbing.md)
+### Outdoor activities
+- [HKWorkoutActivityType.climbing](./climbing.md)
   The constant for climbing.
-- [HKWorkoutActivityType.equestrianSports](hkworkoutactivitytype/equestriansports.md)
+- [HKWorkoutActivityType.equestrianSports](./equestriansports.md)
   The constant for activities that involve riding a horse, including polo, horse racing, and horse riding.
-- [HKWorkoutActivityType.fishing](hkworkoutactivitytype/fishing.md)
+- [HKWorkoutActivityType.fishing](./fishing.md)
   The constant for fishing.
-- [HKWorkoutActivityType.golf](hkworkoutactivitytype/golf.md)
+- [HKWorkoutActivityType.golf](./golf.md)
   The constant for playing golf.
-- [HKWorkoutActivityType.hunting](hkworkoutactivitytype/hunting.md)
+- [HKWorkoutActivityType.hunting](./hunting.md)
   The constant for hunting.
-- [HKWorkoutActivityType.play](hkworkoutactivitytype/play.md)
+- [HKWorkoutActivityType.play](./play.md)
   The constant for play-based activities like tag, dodgeball, hopscotch, tetherball, and playing on a jungle gym.
 
 

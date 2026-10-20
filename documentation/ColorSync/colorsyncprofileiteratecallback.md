@@ -1,7 +1,8 @@
 # ColorSyncProfileIterateCallback
 
 **Framework**: ColorSync  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A callback that the framework invokes for each installed profile during iteration.
 
@@ -20,6 +21,10 @@ A callback that the framework invokes for each installed profile during iteratio
 typealias ColorSyncProfileIterateCallback = (CFDictionary?, UnsafeMutableRawPointer?) -> Bool
 ```
 
+```c
+typedef _Bool (*)(const struct __CFDictionary *, void *) ColorSyncProfileIterateCallback;
+```
+
 #### Discussion
 
 The framework passes only validated profiles to the callback. Return `false` to stop the iteration.
@@ -31,7 +36,8 @@ The framework passes only validated profiles to the callback. Return `false` to 
 
 ## See Also
 
-- [func ColorSyncIterateInstalledProfiles(ColorSyncProfileIterateCallback?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](colorsynciterateinstalledprofiles(_:_:_:_:).md)
+### Finding installed profiles
+- [func ColorSyncIterateInstalledProfiles(ColorSyncProfileIterateCallback?, UnsafeMutablePointer<UInt32>?, UnsafeMutableRawPointer?, UnsafeMutablePointer<Unmanaged<CFError>?>?)](./colorsynciterateinstalledprofiles%28_,_,_,_%29.md)
   Iterates over the installed profiles.
 
 

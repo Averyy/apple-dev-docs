@@ -1,7 +1,8 @@
 # errSSLBadCertificateStatusResponse
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Bad OCSP response.
 
@@ -18,6 +19,10 @@ Bad OCSP response.
 
 ```swift
 var errSSLBadCertificateStatusResponse: OSStatus { get }
+```
+
+```c
+errSSLBadCertificateStatusResponse
 ```
 
 

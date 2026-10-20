@@ -1,7 +1,8 @@
 # HIDDeviceManager.Notification
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Notifications for HID devices.
 
@@ -16,25 +17,26 @@ enum Notification
 
 #### Overview
 
-You can receive these notifications using [`monitorNotifications(matchingCriteria:)`](hiddevicemanager/monitornotifications(matchingcriteria:).md).
+You can receive these notifications using [`monitorNotifications(matchingCriteria:)`](./monitornotifications%28matchingcriteria%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [case deviceMatched(HIDDeviceClient.DeviceReference)](hiddevicemanager/notification/devicematched(_:).md)
+- [case deviceMatched(HIDDeviceClient.DeviceReference)](./notification/devicematched%28_%29.md)
   A notification that a device matched the device criteria.
-- [case deviceRemoved(HIDDeviceClient.DeviceReference)](hiddevicemanager/notification/deviceremoved(_:).md)
+- [case deviceRemoved(HIDDeviceClient.DeviceReference)](./notification/deviceremoved%28_%29.md)
   A notification that a previously matched device was removed from the system.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func monitorNotifications(matchingCriteria: [HIDDeviceManager.DeviceMatchingCriteria]) -> AsyncThrowingStream<HIDDeviceManager.Notification, any Error>](hiddevicemanager/monitornotifications(matchingcriteria:).md)
+### Monitor device notifications
+- [func monitorNotifications(matchingCriteria: [HIDDeviceManager.DeviceMatchingCriteria]) -> AsyncThrowingStream<HIDDeviceManager.Notification, any Error>](./monitornotifications%28matchingcriteria%29.md)
   Creates an asynchronous stream that receives notifications for devices of interest.
 
 

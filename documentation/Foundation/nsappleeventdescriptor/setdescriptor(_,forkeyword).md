@@ -1,7 +1,8 @@
 # setDescriptor(_:forKeyword:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a descriptor, identified by a keyword, to the receiver.
 
@@ -15,6 +16,10 @@ Adds a descriptor, identified by a keyword, to the receiver.
 func setDescriptor(_ descriptor: NSAppleEventDescriptor, forKeyword keyword: AEKeyword)
 ```
 
+```objc
+- (void) setDescriptor:(NSAppleEventDescriptor *) descriptor forKeyword:(AEKeyword) keyword;
+```
+
 #### Discussion
 
 The receiver must be an Apple event or Apple event record. Currently provides no indication if an error occurs.
@@ -26,11 +31,12 @@ The receiver must be an Apple event or Apple event record. Currently provides no
 
 ## See Also
 
-- [func forKeyword(AEKeyword) -> NSAppleEventDescriptor?](nsappleeventdescriptor/forkeyword(_:).md)
+### Working With Record Descriptors
+- [func forKeyword(AEKeyword) -> NSAppleEventDescriptor?](./forkeyword%28_%29.md)
   Returns the receiver’s descriptor for the specified keyword.
-- [func keywordForDescriptor(at: Int) -> AEKeyword](nsappleeventdescriptor/keywordfordescriptor(at:).md)
+- [func keywordForDescriptor(at: Int) -> AEKeyword](./keywordfordescriptor%28at%29.md)
   Returns the keyword for the descriptor at the specified (one-based) position in the receiver.
-- [func remove(withKeyword: AEKeyword)](nsappleeventdescriptor/remove(withkeyword:).md)
+- [func remove(withKeyword: AEKeyword)](./remove%28withkeyword%29.md)
   Removes the receiver’s descriptor identified by the specified keyword.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_Code39
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_Code39 = 0xC7
 ```
 

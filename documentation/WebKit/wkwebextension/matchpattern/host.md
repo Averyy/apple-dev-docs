@@ -1,9 +1,10 @@
 # host
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The host part of the pattern string, unless [`matchesAllURLs`](wkwebextension/matchpattern/matchesallurls.md) is `YES`.
+The host part of the pattern string, unless [`matchesAllURLs`](./matchesallurls.md) is `YES`.
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@ The host part of the pattern string, unless [`matchesAllURLs`](wkwebextension/ma
 
 ```swift
 var host: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * host;
 ```
 
 

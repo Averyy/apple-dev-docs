@@ -1,16 +1,17 @@
 # decode
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,14 +19,19 @@
 var decode: UnsafeMutablePointer<CGFloat>!
 ```
 
+```c
+CGFloat * decode;
+```
+
 ## See Also
 
-- [var bitmap_info: CGBitmapInfo](cgcolordataformat/bitmap_info.md)
-- [var bits_per_component: Int](cgcolordataformat/bits_per_component.md)
-- [var bytes_per_row: Int](cgcolordataformat/bytes_per_row.md)
-- [var colorspace_info: Unmanaged<CFTypeRef>!](cgcolordataformat/colorspace_info.md)
-- [var intent: CGColorRenderingIntent](cgcolordataformat/intent.md)
-- [var version: UInt32](cgcolordataformat/version.md)
+### Instance Properties
+- [var bitmap_info: CGBitmapInfo](./bitmap_info.md)
+- [var bits_per_component: Int](./bits_per_component.md)
+- [var bytes_per_row: Int](./bytes_per_row.md)
+- [var colorspace_info: Unmanaged<CFTypeRef>!](./colorspace_info.md)
+- [var intent: CGColorRenderingIntent](./intent.md)
+- [var version: UInt32](./version.md)
 
 
 ---

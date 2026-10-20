@@ -1,7 +1,8 @@
 # selectedMediaOption(in:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the media selection option that’s currently selected in the specified group.
 
@@ -20,13 +21,17 @@ Returns the media selection option that’s currently selected in the specified 
 func selectedMediaOption(in mediaSelectionGroup: AVMediaSelectionGroup) -> AVMediaSelectionOption?
 ```
 
+```objc
+- (AVMediaSelectionOption *) selectedMediaOptionInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
+```
+
 #### Return Value
 
-The currently selected [`AVMediaSelectionOption`](avmediaselectionoption.md). The return value may be `nil`.
+The currently selected [`AVMediaSelectionOption`](../avmediaselectionoption.md). The return value may be `nil`.
 
 #### Discussion
 
-This method returns the currently selected [`AVMediaSelectionOption`](avmediaselectionoption.md) in the specified [`AVMediaSelectionGroup`](avmediaselectiongroup.md), but may return `nil` if media selection group’s [`allowsEmptySelection`](avmediaselectiongroup/allowsemptyselection.md) is set to [`true`](https://developer.apple.com/documentation/swift/true).
+This method returns the currently selected [`AVMediaSelectionOption`](../avmediaselectionoption.md) in the specified [`AVMediaSelectionGroup`](../avmediaselectiongroup.md), but may return `nil` if media selection group’s [`allowsEmptySelection`](../avmediaselectiongroup/allowsemptyselection.md) is set to [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This method returns the currently selected [`AVMediaSelectionOption`](avmediasel
 
 ## See Also
 
-- [func mediaSelectionCriteriaCanBeAppliedAutomatically(to: AVMediaSelectionGroup) -> Bool](avmediaselection/mediaselectioncriteriacanbeappliedautomatically(to:).md)
+### Inspecting the media selection
+- [func mediaSelectionCriteriaCanBeAppliedAutomatically(to: AVMediaSelectionGroup) -> Bool](./mediaselectioncriteriacanbeappliedautomatically%28to%29.md)
   Indicates whether the specified media selection group is subject to automatic media selection.
 
 

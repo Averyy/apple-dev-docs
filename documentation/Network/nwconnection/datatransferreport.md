@@ -1,7 +1,8 @@
 # NWConnection.DataTransferReport
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A report that provides metrics about data being sent and received on a connection.
 
@@ -23,34 +24,35 @@ struct DataTransferReport
 ## Topics
 
 ### Examining Data Transfer
-- [let aggregatePathReport: NWConnection.DataTransferReport.PathReport](nwconnection/datatransferreport/aggregatepathreport.md)
+- [let aggregatePathReport: NWConnection.DataTransferReport.PathReport](./datatransferreport/aggregatepathreport.md)
   A report that sums counts across all network paths.
-- [let pathReports: [NWConnection.DataTransferReport.PathReport]](nwconnection/datatransferreport/pathreports.md)
+- [let pathReports: [NWConnection.DataTransferReport.PathReport]](./datatransferreport/pathreports.md)
   An array of reports for each network path the connection used.
-- [NWConnection.DataTransferReport.PathReport](nwconnection/datatransferreport/pathreport.md)
+- [NWConnection.DataTransferReport.PathReport](./datatransferreport/pathreport.md)
   A report that contains details about data transfer over a single network path.
 ### Summarizing Reports
-- [let duration: TimeInterval](nwconnection/datatransferreport/duration.md)
+- [let duration: TimeInterval](./datatransferreport/duration.md)
   The duration of the data transfer report, from when it was started to when it was collected.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Collecting Network Connection Metrics](collecting-network-connection-metrics.md)
+### Collecting Connection Metrics
+- [Collecting Network Connection Metrics](../collecting-network-connection-metrics.md)
   Use reports to understand how DNS and protocol handshakes impact connection establishment.
-- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](nwconnection/requestestablishmentreport(queue:completion:).md)
+- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](./requestestablishmentreport%28queue,completion%29.md)
   Requests a copy of the connection’s establishment report once the connection is in the ready state.
-- [NWConnection.EstablishmentReport](nwconnection/establishmentreport.md)
+- [NWConnection.EstablishmentReport](./establishmentreport.md)
   A report that provides metrics about the establishment of a connection.
-- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](nwconnection/startdatatransferreport.md)
+- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](./startdatatransferreport%28%29.md)
   Begins a new data transfer report, which can later be collected.
-- [NWConnection.PendingDataTransferReport](nwconnection/pendingdatatransferreport.md)
+- [NWConnection.PendingDataTransferReport](./pendingdatatransferreport.md)
   An outstanding data transfer report that has yet to be collected.
 
 

@@ -1,7 +1,8 @@
 # prohibitedInterfaces
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of specific interfaces that connections and listeners will not use.
 
@@ -22,17 +23,18 @@ final var prohibitedInterfaces: [NWInterface]? { get set }
 
 ## See Also
 
-- [var requiredInterfaceType: NWInterface.InterfaceType](nwparameters/requiredinterfacetype.md)
+### Selecting Paths
+- [var requiredInterfaceType: NWInterface.InterfaceType](./requiredinterfacetype.md)
   An interface type to require on connections and listeners.
-- [var requiredInterface: NWInterface?](nwparameters/requiredinterface.md)
+- [var requiredInterface: NWInterface?](./requiredinterface.md)
   A specific interface to require on connections, listeners, and browsers.
-- [var requiredLocalEndpoint: NWEndpoint?](nwparameters/requiredlocalendpoint.md)
+- [var requiredLocalEndpoint: NWEndpoint?](./requiredlocalendpoint.md)
   A specific local IP address and port to use for connections and listeners.
-- [var prohibitConstrainedPaths: Bool](nwparameters/prohibitconstrainedpaths.md)
+- [var prohibitConstrainedPaths: Bool](./prohibitconstrainedpaths.md)
   A Boolean that prevents connections, listeners, and browsers from using network paths marked as constrained by Low Data Mode.
-- [var prohibitExpensivePaths: Bool](nwparameters/prohibitexpensivepaths.md)
+- [var prohibitExpensivePaths: Bool](./prohibitexpensivepaths.md)
   A Boolean that prevents connections, listeners, and browsers from using network paths marked as expensive.
-- [var prohibitedInterfaceTypes: [NWInterface.InterfaceType]?](nwparameters/prohibitedinterfacetypes.md)
+- [var prohibitedInterfaceTypes: [NWInterface.InterfaceType]?](./prohibitedinterfacetypes.md)
   A list of interface types that connections, listeners, and browsers will not use.
 
 

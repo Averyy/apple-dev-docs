@@ -1,7 +1,8 @@
 # init(contentsOfFile:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with the contents of a file.
 

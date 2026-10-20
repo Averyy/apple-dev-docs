@@ -1,7 +1,8 @@
 # AXCustomContent.Importance.high
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Output the content to the user immediately.
 
@@ -20,9 +21,14 @@ Output the content to the user immediately.
 case high
 ```
 
+```c
+AXCustomContentImportanceHigh
+```
+
 ## See Also
 
-- [AXCustomContent.Importance.default](axcustomcontent/importance-swift.enum/default.md)
+### Setting content importance
+- [AXCustomContent.Importance.default](./default.md)
   Output the content to the user on demand.
 
 

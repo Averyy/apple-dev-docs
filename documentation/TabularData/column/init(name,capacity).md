@@ -1,7 +1,8 @@
 # init(name:capacity:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a column with a name and a capacity.
 
@@ -27,17 +28,18 @@ init(name: String, capacity: Int)
 
 ## See Also
 
-- [init(ColumnID<WrappedElement>, capacity: Int)](column/init(_:capacity:).md)
+### Creating a Column
+- [init(ColumnID<WrappedElement>, capacity: Int)](./init%28_,capacity%29.md)
   Creates a column with a column identifier and a capacity.
-- [init<S>(name: String, contents: S)](column/init(name:contents:)-6okx3.md)
+- [init<S>(name: String, contents: S)](./init%28name,contents%29-6okx3.md)
   Creates a column with a name and a sequence of nonoptional values.
-- [init<S>(name: String, contents: S)](column/init(name:contents:)-8nxtj.md)
+- [init<S>(name: String, contents: S)](./init%28name,contents%29-8nxtj.md)
   Creates a column with a name and a sequence of optional values.
-- [init<S>(ColumnID<S.Element>, contents: S)](column/init(_:contents:)-1871a.md)
+- [init<S>(ColumnID<S.Element>, contents: S)](./init%28_,contents%29-1871a.md)
   Creates a column with an identifier and a sequence of nonoptional values.
-- [init<S>(ColumnID<S.Element>, contents: S)](column/init(_:contents:)-7z5ji.md)
+- [init<S>(ColumnID<S.Element>, contents: S)](./init%28_,contents%29-7z5ji.md)
   Creates a column with a column identifier and a sequence of optional values.
-- [init(ColumnSlice<WrappedElement>)](column/init(_:).md)
+- [init(ColumnSlice<WrappedElement>)](./init%28_%29.md)
   Creates a column from a column slice.
 
 

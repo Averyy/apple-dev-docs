@@ -1,14 +1,15 @@
 # kUSB_HSFSEPDesc_wMaxPacketSize_Mult_Shift
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kUSB_HSFSEPDesc_wMaxPacketSize_Mult_Shift = USBBitRangePhase(11, 12)
 ```
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the supplemental category.
 
@@ -14,6 +15,10 @@ A unique identifier for the supplemental category.
 
 ```swift
 var identifier: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
 ```
 
 

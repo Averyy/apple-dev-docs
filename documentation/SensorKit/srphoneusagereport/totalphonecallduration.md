@@ -1,7 +1,8 @@
 # totalPhoneCallDuration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of all calls.
 
@@ -16,15 +17,20 @@ The total duration of all calls.
 var totalPhoneCallDuration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval totalPhoneCallDuration;
+```
+
 ## See Also
 
-- [var duration: TimeInterval](srphoneusagereport/duration.md)
+### Analyzing Phone Use
+- [var duration: TimeInterval](./duration.md)
   The duration that the report spans.
-- [var totalIncomingCalls: Int](srphoneusagereport/totalincomingcalls.md)
+- [var totalIncomingCalls: Int](./totalincomingcalls.md)
   The number of calls the user receives.
-- [var totalOutgoingCalls: Int](srphoneusagereport/totaloutgoingcalls.md)
+- [var totalOutgoingCalls: Int](./totaloutgoingcalls.md)
   The number of calls the user makes.
-- [var totalUniqueContacts: Int](srphoneusagereport/totaluniquecontacts.md)
+- [var totalUniqueContacts: Int](./totaluniquecontacts.md)
   The user’s number of contacts.
 
 

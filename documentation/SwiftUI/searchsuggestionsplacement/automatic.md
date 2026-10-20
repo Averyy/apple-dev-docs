@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Search suggestions render automatically based on the surrounding context.
 
@@ -31,9 +32,10 @@ The behavior varies by platform:
 
 ## See Also
 
-- [static var content: SearchSuggestionsPlacement](searchsuggestionsplacement/content.md)
+### Getting placements
+- [static var content: SearchSuggestionsPlacement](./content.md)
   Search suggestions render in the main content of the app.
-- [static var menu: SearchSuggestionsPlacement](searchsuggestionsplacement/menu.md)
+- [static var menu: SearchSuggestionsPlacement](./menu.md)
   Search suggestions render inside of a menu attached to the search field.
 
 

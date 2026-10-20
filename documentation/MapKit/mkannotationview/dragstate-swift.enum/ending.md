@@ -1,7 +1,8 @@
 # MKAnnotationView.DragState.ending
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An annotation view ends dragging.
 
@@ -18,19 +19,24 @@ An annotation view ends dragging.
 case ending
 ```
 
+```c
+MKAnnotationViewDragStateEnding
+```
+
 #### Discussion
 
 A user action indicates the user dropped the view. The map view automatically moves annotation views to this state in response to appropriate user actions.
 
 ## See Also
 
-- [MKAnnotationView.DragState.none](mkannotationview/dragstate-swift.enum/none.md)
+### Constants
+- [MKAnnotationView.DragState.none](./none.md)
   An annotation view that doesn’t have a drag operation.
-- [MKAnnotationView.DragState.starting](mkannotationview/dragstate-swift.enum/starting.md)
+- [MKAnnotationView.DragState.starting](./starting.md)
   An annotation view begins dragging.
-- [MKAnnotationView.DragState.dragging](mkannotationview/dragstate-swift.enum/dragging.md)
+- [MKAnnotationView.DragState.dragging](./dragging.md)
   An annotation view is actively dragging.
-- [MKAnnotationView.DragState.canceling](mkannotationview/dragstate-swift.enum/canceling.md)
+- [MKAnnotationView.DragState.canceling](./canceling.md)
   An annotation view cancels drag operation.
 
 

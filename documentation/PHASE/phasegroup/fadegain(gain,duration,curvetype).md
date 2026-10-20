@@ -1,7 +1,8 @@
 # fadeGain(gain:duration:curveType:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the volume of the sounds in a group gradually.
 
@@ -19,15 +20,20 @@ Adjusts the volume of the sounds in a group gradually.
 func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)
 ```
 
+```objc
+- (void) fadeGain:(double) gain duration:(double) duration curveType:(PHASECurveType) curveType;
+```
+
 ## Parameters
 
 - `gain`: The target volume.
-- `duration`: The total time to complete the volume adjustment. The framework scales this value by [`unitsPerSecond`](phaseengine/unitspersecond.md).
+- `duration`: The total time to complete the volume adjustment. The framework scales this value by [`unitsPerSecond`](../phaseengine/unitspersecond.md).
 - `curveType`: A selection that specifies a mathematical curve that shapes the volume adjustment over time.
 
 ## See Also
 
-- [var gain: Double](phasegroup/gain.md)
+### Conrolling Loudness
+- [var gain: Double](./gain.md)
   Modifies the volume of the group’s sounds.
 
 

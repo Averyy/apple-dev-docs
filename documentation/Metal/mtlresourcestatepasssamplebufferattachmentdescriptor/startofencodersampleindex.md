@@ -1,7 +1,8 @@
 # startOfEncoderSampleIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index the Metal device object should use to store GPU counters when starting the resource state pass.
 
@@ -19,21 +20,26 @@ The index the Metal device object should use to store GPU counters when starting
 var startOfEncoderSampleIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger startOfEncoderSampleIndex;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-Specify [`MTLCounterDontSample`](mtlcounterdontsample.md) if you don’t want to sample GPU counters at the start of the resource state pass. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
+Specify [`MTLCounterDontSample`](../mtlcounterdontsample.md) if you don’t want to sample GPU counters at the start of the resource state pass. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
 
-On devices that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](mtlcountersamplingpoint/atstageboundary.md) you need to set the value to [`MTLCounterDontSample`](mtlcounterdontsample.md).
+On devices that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](../mtlcountersamplingpoint/atstageboundary.md) you need to set the value to [`MTLCounterDontSample`](../mtlcounterdontsample.md).
 
 ## See Also
 
-- [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlresourcestatepasssamplebufferattachmentdescriptor/samplebuffer.md)
+### Configuring the sample buffer attachment
+- [var sampleBuffer: (any MTLCounterSampleBuffer)?](./samplebuffer.md)
   A specialized memory buffer that the GPU uses to store its counter data during the resource state pass.
-- [var endOfEncoderSampleIndex: Int](mtlresourcestatepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)
+- [var endOfEncoderSampleIndex: Int](./endofencodersampleindex.md)
   The index the Metal device object should use to store GPU counters when ending the resource state pass.
 
 

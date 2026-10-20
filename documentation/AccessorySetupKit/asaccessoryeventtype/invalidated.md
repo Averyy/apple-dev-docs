@@ -1,14 +1,15 @@
 # ASAccessoryEventType.invalidated
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The discovery session invalidated.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ The discovery session invalidated.
 case invalidated
 ```
 
+```c
+ASAccessoryEventTypeInvalidated
+```
+
 ## See Also
 
-- [ASAccessoryEventType.activated](asaccessoryeventtype/activated.md)
+### Life cycle events
+- [ASAccessoryEventType.activated](./activated.md)
   The discovery session activated.
 
 

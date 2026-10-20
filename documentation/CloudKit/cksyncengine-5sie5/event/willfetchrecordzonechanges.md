@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.WillFetchRecordZoneChanges
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides information about an imminent fetch of changes in a record zone.
 
@@ -11,7 +12,7 @@ A type that provides information about an imminent fetch of changes in a record 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,34 +24,35 @@ struct WillFetchRecordZoneChanges
 ## Topics
 
 ### Identifying the record zone
-- [let zoneID: CKRecordZone.ID](cksyncengine-5sie5/event/willfetchrecordzonechanges/zoneid.md)
+- [let zoneID: CKRecordZone.ID](./willfetchrecordzonechanges/zoneid.md)
   The associated record zone’s unique identifier.
 ### Debugging the event
-- [var description: String](cksyncengine-5sie5/event/willfetchrecordzonechanges/description.md)
+- [var description: String](./willfetchrecordzonechanges/description.md)
   The textual description of the event that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/willfetchrecordzonechanges/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./willfetchrecordzonechanges/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case willFetchRecordZoneChanges(CKSyncEngine.Event.WillFetchRecordZoneChanges)](cksyncengine-5sie5/event/willfetchrecordzonechanges(_:).md)
+### Remote record zone changes
+- [case willFetchRecordZoneChanges(CKSyncEngine.Event.WillFetchRecordZoneChanges)](./willfetchrecordzonechanges%28_%29.md)
   The sync engine is about to fetch record zone changes from the server for a specific zone.
-- [case fetchedRecordZoneChanges(CKSyncEngine.Event.FetchedRecordZoneChanges)](cksyncengine-5sie5/event/fetchedrecordzonechanges(_:).md)
+- [case fetchedRecordZoneChanges(CKSyncEngine.Event.FetchedRecordZoneChanges)](./fetchedrecordzonechanges%28_%29.md)
   The sync engine fetched new record zone changes from the server.
-- [CKSyncEngine.Event.FetchedRecordZoneChanges](cksyncengine-5sie5/event/fetchedrecordzonechanges.md)
+- [CKSyncEngine.Event.FetchedRecordZoneChanges](./fetchedrecordzonechanges.md)
   A type that provides information about fetched record zone changes.
-- [case didFetchRecordZoneChanges(CKSyncEngine.Event.DidFetchRecordZoneChanges)](cksyncengine-5sie5/event/didfetchrecordzonechanges(_:).md)
+- [case didFetchRecordZoneChanges(CKSyncEngine.Event.DidFetchRecordZoneChanges)](./didfetchrecordzonechanges%28_%29.md)
   The sync engine has completed fetching record zone changes from the server for a specific zone.
-- [CKSyncEngine.Event.DidFetchRecordZoneChanges](cksyncengine-5sie5/event/didfetchrecordzonechanges.md)
+- [CKSyncEngine.Event.DidFetchRecordZoneChanges](./didfetchrecordzonechanges.md)
   A type that provides information about a finished record zone fetch.
 
 

@@ -1,7 +1,8 @@
 # AVPlaybackCoordinator
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that coordinates the playback of players in a connected group.
 
@@ -19,77 +20,82 @@ An object that coordinates the playback of players in a connected group.
 class AVPlaybackCoordinator
 ```
 
+```objc
+@interface AVPlaybackCoordinator : NSObject
+```
+
 #### Overview
 
 The framework provides two playback coordinator subclasses that manage different types of player objects:
 
-- [`AVPlayerPlaybackCoordinator`](avplayerplaybackcoordinator.md) coordinates the state of [`AVPlayer`](avplayer.md) objects. If your app uses [`AVPlayer`](avplayer.md), continue to use its standard interfaces to control playback. The coordinator intercepts changes to the player’s rate and time, and propagates them to other players in the group.
-- [`AVDelegatingPlaybackCoordinator`](avdelegatingplaybackcoordinator.md) coordinates the state of custom player objects. If your app uses a custom player, such as one that renders media using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md), use this object to coordinate group playback. Adopt the coordinator’s delegate protocol so that your player responds to the commands that the coordinator issues.
+- [`AVPlayerPlaybackCoordinator`](./avplayerplaybackcoordinator.md) coordinates the state of [`AVPlayer`](./avplayer.md) objects. If your app uses [`AVPlayer`](./avplayer.md), continue to use its standard interfaces to control playback. The coordinator intercepts changes to the player’s rate and time, and propagates them to other players in the group.
+- [`AVDelegatingPlaybackCoordinator`](./avdelegatingplaybackcoordinator.md) coordinates the state of custom player objects. If your app uses a custom player, such as one that renders media using [`AVSampleBufferDisplayLayer`](./avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md), use this object to coordinate group playback. Adopt the coordinator’s delegate protocol so that your player responds to the commands that the coordinator issues.
 
-> **Note**:  Use the [`Group Activities`](https://developer.apple.com/documentation/groupactivities) framework to connect a playback coordinator to its peers.
+> **Note**:  Use the [Group Activities](../GroupActivities/GroupActivities.md) framework to connect a playback coordinator to its peers.
 
 ## Topics
 
 ### Configuring playback policies
-- [func participantLimitForWaitingOutSuspensions(withReason: AVCoordinatedPlaybackSuspension.Reason) -> Int](avplaybackcoordinator/participantlimitforwaitingoutsuspensions(withreason:).md)
+- [func participantLimitForWaitingOutSuspensions(withReason: AVCoordinatedPlaybackSuspension.Reason) -> Int](./avplaybackcoordinator/participantlimitforwaitingoutsuspensions%28withreason%29.md)
   Returns the limit on the number of partipants that a group may contain before the coordinator stops waiting on suspensions that occur for a particular reason.
-- [func setParticipantLimit(Int, forWaitingOutSuspensionsWithReason: AVCoordinatedPlaybackSuspension.Reason)](avplaybackcoordinator/setparticipantlimit(_:forwaitingoutsuspensionswithreason:).md)
+- [func setParticipantLimit(Int, forWaitingOutSuspensionsWithReason: AVCoordinatedPlaybackSuspension.Reason)](./avplaybackcoordinator/setparticipantlimit%28_,forwaitingoutsuspensionswithreason%29.md)
   Sets a limit on the number of partipants that a group may contain before the coordinator stops waiting on suspensions that occur for a particular reason.
-- [var suspensionReasonsThatTriggerWaiting: [AVCoordinatedPlaybackSuspension.Reason]](avplaybackcoordinator/suspensionreasonsthattriggerwaiting.md)
+- [var suspensionReasonsThatTriggerWaiting: [AVCoordinatedPlaybackSuspension.Reason]](./avplaybackcoordinator/suspensionreasonsthattriggerwaiting.md)
   The reasons that cause a coordinator to suspend playback.
-- [var pauseSnapsToMediaTimeOfOriginator: Bool](avplaybackcoordinator/pausesnapstomediatimeoforiginator.md)
+- [var pauseSnapsToMediaTimeOfOriginator: Bool](./avplaybackcoordinator/pausesnapstomediatimeoforiginator.md)
   A Boolean value that indicates whether participants mirror the originator’s stop time when they pause.
 ### Suspending state coordination
-- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](avplaybackcoordinator/beginsuspension(for:).md)
+- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](./avplaybackcoordinator/beginsuspension%28for%29.md)
   Tells the coordinator to stop sending playback commands temporarily when the playback object disconnects from the group activity.
-- [class AVCoordinatedPlaybackSuspension](avcoordinatedplaybacksuspension.md)
+- [class AVCoordinatedPlaybackSuspension](./avcoordinatedplaybacksuspension.md)
   An object that represents a temporary suspension of coordinated playback.
-- [func expectedItemTime(atHostTime: CMTime) -> CMTime](avplaybackcoordinator/expecteditemtime(athosttime:).md)
+- [func expectedItemTime(atHostTime: CMTime) -> CMTime](./avplaybackcoordinator/expecteditemtime%28athosttime%29.md)
   Returns a time in the current item’s timeline that the coordinator expects to play at the specified host time.
 ### Observing suspension reasons
-- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](avplaybackcoordinator/suspensionreasons.md)
+- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](./avplaybackcoordinator/suspensionreasons.md)
   The reasons a coordinator is currently unable to participate in a group playback activity.
-- [class let suspensionReasonsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/suspensionreasonsdidchangenotification.md)
+- [class let suspensionReasonsDidChangeNotification: NSNotification.Name](./avplaybackcoordinator/suspensionreasonsdidchangenotification.md)
   A notification that the coordinator posts when its suspension reasons change.
 ### Observing other participants
-- [var otherParticipants: [AVCoordinatedPlaybackParticipant]](avplaybackcoordinator/otherparticipants.md)
+- [var otherParticipants: [AVCoordinatedPlaybackParticipant]](./avplaybackcoordinator/otherparticipants.md)
   The identifiers of the other participants in a group.
-- [class AVCoordinatedPlaybackParticipant](avcoordinatedplaybackparticipant.md)
+- [class AVCoordinatedPlaybackParticipant](./avcoordinatedplaybackparticipant.md)
   An object that represents a participant in a coordinated playback session.
-- [class let otherParticipantsDidChangeNotification: NSNotification.Name](avplaybackcoordinator/otherparticipantsdidchangenotification.md)
+- [class let otherParticipantsDidChangeNotification: NSNotification.Name](./avplaybackcoordinator/otherparticipantsdidchangenotification.md)
   A notification that the coordinator posts when its other participants change.
 ### Coordinating with group sessions
-- [func coordinateWithSession<T>(GroupSession<T>)](avplaybackcoordinator/coordinatewithsession(_:).md)
+- [func coordinateWithSession<T>(GroupSession<T>)](./avplaybackcoordinator/coordinatewithsession%28_%29.md)
   Begins coordination of a player with a group session.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
-- [AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
+- [AVDelegatingPlaybackCoordinator](./avdelegatingplaybackcoordinator.md)
+- [AVPlayerPlaybackCoordinator](./avplayerplaybackcoordinator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Destination Video](../visionos/destination-video.md)
+### SharePlay
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](./supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
-- [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
+- [class AVPlayerPlaybackCoordinator](./avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
-- [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
+- [class AVDelegatingPlaybackCoordinator](./avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
-- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+- [class AVPlaybackCoordinationMedium](./avplaybackcoordinationmedium.md)
   The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 

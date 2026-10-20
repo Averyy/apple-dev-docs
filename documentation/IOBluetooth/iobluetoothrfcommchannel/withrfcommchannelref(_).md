@@ -1,17 +1,22 @@
 # withRFCOMMChannelRef(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Method call to convert an IOBluetoothRFCOMMChannelRef into an IOBluetoothRFCOMMChannel *.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func withRFCOMMChannelRef(_ rfcommChannelRef: IOBluetoothRFCOMMChannelRef!) -> Self!
+```
+
+```objc
++ (instancetype) withRFCOMMChannelRef:(IOBluetoothRFCOMMChannelRef) rfcommChannelRef;
 ```
 
 #### Return Value

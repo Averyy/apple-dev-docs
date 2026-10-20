@@ -1,7 +1,8 @@
 # maximumCallGroups
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of call groups.
 
@@ -19,19 +20,24 @@ The maximum number of call groups.
 var maximumCallGroups: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger maximumCallGroups;
+```
+
 #### Discussion
 
 By default, the maximum number is `2`.
 
 ## See Also
 
-- [var maximumCallsPerCallGroup: Int](cxproviderconfiguration/maximumcallspercallgroup.md)
+### Configuring Call Capabilities
+- [var maximumCallsPerCallGroup: Int](./maximumcallspercallgroup.md)
   The maximum number of calls per call group.
-- [var supportedHandleTypes: Set<CXHandle.HandleType>](cxproviderconfiguration/supportedhandletypes-kd6i.md)
+- [var supportedHandleTypes: Set<CXHandle.HandleType>](./supportedhandletypes-kd6i.md)
   The supported handle types.
-- [var supportsVideo: Bool](cxproviderconfiguration/supportsvideo.md)
+- [var supportsVideo: Bool](./supportsvideo.md)
   A Boolean value that indicates whether the provider supports video in addition to audio.
-- [var includesCallsInRecents: Bool](cxproviderconfiguration/includescallsinrecents.md)
+- [var includesCallsInRecents: Bool](./includescallsinrecents.md)
   A Boolean value that indicates whether the provider includes a call in the system’s Recents list after the call ends.
 
 

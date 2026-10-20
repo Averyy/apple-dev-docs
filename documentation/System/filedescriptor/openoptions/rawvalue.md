@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C options.
 
@@ -22,7 +23,8 @@ var rawValue: CInt
 
 ## See Also
 
-- [init(rawValue: CInt)](filedescriptor/openoptions/init(rawvalue:).md)
+### Interacting with C APIs
+- [init(rawValue: CInt)](./init%28rawvalue%29.md)
   Create a strongly-typed options value from raw C options.
 
 

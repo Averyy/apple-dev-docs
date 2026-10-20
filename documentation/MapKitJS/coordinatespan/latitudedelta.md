@@ -1,7 +1,8 @@
 # latitudeDelta
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of north-to-south distance (in degrees) to display for the map region.
 
@@ -10,7 +11,7 @@ The amount of north-to-south distance (in degrees) to display for the map region
 
 ## Declaration
 
-```swift
+```
 latitudeDelta: number;
 ```
 
@@ -20,7 +21,8 @@ Unlike longitudinal distances, which vary based on the latitude, one degree of l
 
 ## See Also
 
-- [longitudeDelta](coordinatespan/longitudedelta.md)
+### Defining the span
+- [longitudeDelta](./longitudedelta.md)
   The amount of east-to-west distance (in degrees) to display for the map region.
 
 

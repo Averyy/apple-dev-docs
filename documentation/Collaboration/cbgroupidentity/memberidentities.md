@@ -1,7 +1,8 @@
 # memberIdentities
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 var memberIdentities: [CBIdentity] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<CBIdentity *> * memberIdentities;
 ```
 
 

@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of keychain attributes in the array.
 
@@ -12,6 +13,10 @@ The number of keychain attributes in the array.
 
 ```swift
 var count: UInt32
+```
+
+```c
+UInt32 count;
 ```
 
 

@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 URL pointing to the artwork image resource.
 
@@ -14,6 +15,10 @@ URL pointing to the artwork image resource.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSURL * url;
 ```
 
 

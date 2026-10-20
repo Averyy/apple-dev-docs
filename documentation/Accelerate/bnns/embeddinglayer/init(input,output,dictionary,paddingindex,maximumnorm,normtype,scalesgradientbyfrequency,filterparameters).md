@@ -1,7 +1,8 @@
 # init(input:output:dictionary:paddingIndex:maximumNorm:normType:scalesGradientByFrequency:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new embedding layer.
 
@@ -11,8 +12,10 @@ Returns a new embedding layer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -33,9 +36,11 @@ convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, d
 
 ## See Also
 
-- [func BNNSFilterCreateLayerEmbedding(UnsafePointer<BNNSLayerParametersEmbedding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerembedding(_:_:).md)
+### Related Documentation
+- [func BNNSFilterCreateLayerEmbedding(UnsafePointer<BNNSLayerParametersEmbedding>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../../bnnsfiltercreatelayerembedding%28_,_%29.md)
   Returns a new embedding layer.
-- [struct Norm](bnns/norm.md)
+### Creating an Embedding Layer
+- [struct Norm](../norm.md)
   Constants that describe norm types.
 
 

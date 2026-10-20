@@ -1,17 +1,18 @@
 # depth
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth of the region, in pixels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The depth of the region, in pixels.
 var depth: Double
 ```
 
+```c
+double depth;
+```
+
 ## See Also
 
-- [var width: Double](mpssize/width.md)
+### Fields
+- [var width: Double](./width.md)
   The width of the region, in pixels.
-- [var height: Double](mpssize/height.md)
+- [var height: Double](./height.md)
   The height of the region, in pixels.
 
 

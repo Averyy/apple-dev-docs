@@ -1,7 +1,8 @@
 # setFailureType(to:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the failure type declared by the upstream publisher.
 
@@ -20,17 +21,19 @@ Changes the failure type declared by the upstream publisher.
 func setFailureType<E>(to failureType: E.Type) -> Publishers.SetFailureType<Self, E> where E : Error
 ```
 
+Available when `Failure` is `Never`.
+
 #### Return Value
 
 A publisher that appears to send the specified failure type.
 
 #### Discussion
 
-Use [`setFailureType(to:)`](publisher/setfailuretype(to:).md) when you need set the error type of a publisher that cannot fail.
+Use [`setFailureType(to:)`](./setfailuretype%28to%29.md) when you need set the error type of a publisher that cannot fail.
 
-Conversely, if the upstream can fail, you would use [`mapError(_:)`](publisher/maperror(_:).md) to provide instructions on converting the error types to needed by the downstream publisher’s inputs.
+Conversely, if the upstream can fail, you would use [`mapError(_:)`](./maperror%28_%29.md) to provide instructions on converting the error types to needed by the downstream publisher’s inputs.
 
-The following example has two publishers with mismatched error types: `pub1`’s error type is [`Never`](https://developer.apple.com/documentation/swift/never), and `pub2`’s error type is [`Error`](https://developer.apple.com/documentation/swift/error). Because of the mismatch, the [`combineLatest(_:)`](publisher/combinelatest(_:).md) operator requires that `pub1` use [`setFailureType(to:)`](publisher/setfailuretype(to:).md) to make it appear that `pub1` can produce the [`Error`](https://developer.apple.com/documentation/swift/error) type, like `pub2` can.
+The following example has two publishers with mismatched error types: `pub1`’s error type is [`Never`](../../Swift/never.md), and `pub2`’s error type is [`Error`](../../Swift/error.md). Because of the mismatch, the [`combineLatest(_:)`](./combinelatest%28_%29.md) operator requires that `pub1` use [`setFailureType(to:)`](./setfailuretype%28to%29.md) to make it appear that `pub1` can produce the [`Error`](../../Swift/error.md) type, like `pub2` can.
 
 ```swift
 let pub1 = [0, 1, 2, 3, 4, 5].publisher
@@ -52,17 +55,18 @@ let cancellable = pub1
 
 ## See Also
 
-- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](publisher/map(_:)-99evh.md)
+### Mapping elements
+- [func map<T>((Self.Output) -> T) -> Publishers.Map<Self, T>](./map%28_%29-99evh.md)
   Transforms all elements from the upstream publisher with a provided closure.
-- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](publisher/trymap(_:).md)
+- [func tryMap<T>((Self.Output) throws -> T) -> Publishers.TryMap<Self, T>](./trymap%28_%29.md)
   Transforms all elements from the upstream publisher with a provided error-throwing closure.
-- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](publisher/maperror(_:).md)
+- [func mapError<E>((Self.Failure) -> E) -> Publishers.MapError<Self, E>](./maperror%28_%29.md)
   Converts any failure from the upstream publisher into a new error.
-- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](publisher/replacenil(with:).md)
+- [func replaceNil<T>(with: T) -> Publishers.Map<Self, T>](./replacenil%28with%29.md)
   Replaces nil elements in the stream with the provided element.
-- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](publisher/scan(_:_:).md)
+- [func scan<T>(T, (T, Self.Output) -> T) -> Publishers.Scan<Self, T>](./scan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to a closure along with the last value returned by the closure.
-- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](publisher/tryscan(_:_:).md)
+- [func tryScan<T>(T, (T, Self.Output) throws -> T) -> Publishers.TryScan<Self, T>](./tryscan%28_,_%29.md)
   Transforms elements from the upstream publisher by providing the current element to an error-throwing closure along with the last value returned by the closure.
 
 

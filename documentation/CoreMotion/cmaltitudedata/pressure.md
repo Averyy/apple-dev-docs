@@ -1,7 +1,8 @@
 # pressure
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The recorded pressure, in kilopascals.
 
@@ -17,9 +18,14 @@ The recorded pressure, in kilopascals.
 var pressure: NSNumber { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSNumber * pressure;
+```
+
 ## See Also
 
-- [var relativeAltitude: NSNumber](cmaltitudedata/relativealtitude.md)
+### Getting the Altitude Data
+- [var relativeAltitude: NSNumber](./relativealtitude.md)
   The change in altitude (in meters) since the first reported event.
 
 

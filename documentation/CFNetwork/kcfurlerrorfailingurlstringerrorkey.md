@@ -1,7 +1,8 @@
 # kCFURLErrorFailingURLStringErrorKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The URL that caused the load to fail as a `CFStringRef` object.
 
@@ -19,16 +20,21 @@ The URL that caused the load to fail as a `CFStringRef` object.
 let kCFURLErrorFailingURLStringErrorKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFURLErrorFailingURLStringErrorKey;
+```
+
 ## See Also
 
-- [let kCFURLErrorFailingURLErrorKey: CFString](kcfurlerrorfailingurlerrorkey.md)
+### Constants
+- [let kCFURLErrorFailingURLErrorKey: CFString](./kcfurlerrorfailingurlerrorkey.md)
   The URL that caused the load to fail as a `CFURLRef` object.
-- [let kCFGetAddrInfoFailureKey: CFString](kcfgetaddrinfofailurekey.md)
-- [let kCFSOCKSStatusCodeKey: CFString](kcfsocksstatuscodekey.md)
-- [let kCFSOCKSVersionKey: CFString](kcfsocksversionkey.md)
-- [let kCFSOCKSNegotiationMethodKey: CFString](kcfsocksnegotiationmethodkey.md)
-- [let kCFDNSServiceFailureKey: CFString](kcfdnsservicefailurekey.md)
-- [let kCFFTPStatusCodeKey: CFString](kcfftpstatuscodekey.md)
+- [let kCFGetAddrInfoFailureKey: CFString](./kcfgetaddrinfofailurekey.md)
+- [let kCFSOCKSStatusCodeKey: CFString](./kcfsocksstatuscodekey.md)
+- [let kCFSOCKSVersionKey: CFString](./kcfsocksversionkey.md)
+- [let kCFSOCKSNegotiationMethodKey: CFString](./kcfsocksnegotiationmethodkey.md)
+- [let kCFDNSServiceFailureKey: CFString](./kcfdnsservicefailurekey.md)
+- [let kCFFTPStatusCodeKey: CFString](./kcfftpstatuscodekey.md)
 
 
 ---

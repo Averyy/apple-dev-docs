@@ -1,7 +1,8 @@
 # HKWheelchairUse.yes
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user uses a wheelchair.
 
@@ -19,11 +20,16 @@ The user uses a wheelchair.
 case yes
 ```
 
+```c
+HKWheelchairUseYes
+```
+
 ## See Also
 
-- [HKWheelchairUse.notSet](hkwheelchairuse/notset.md)
+### Constants
+- [HKWheelchairUse.notSet](./notset.md)
   Either the wheelchair use is not set or the user has not granted your app permission to read that information.
-- [HKWheelchairUse.no](hkwheelchairuse/no.md)
+- [HKWheelchairUse.no](./no.md)
   The user does not use a wheelchair.
 
 

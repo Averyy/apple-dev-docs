@@ -1,7 +1,8 @@
 # station
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the associated station for the song.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the associated station 
 ```swift
 static let station: MusicRelationshipProperty<Song, Station>
 ```
+
+Available when `Root` is `Song`.
 
 
 ---

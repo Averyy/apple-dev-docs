@@ -1,7 +1,8 @@
 # hdr10PlusPerFrameData
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 HDR10+ per frame metadata.
 

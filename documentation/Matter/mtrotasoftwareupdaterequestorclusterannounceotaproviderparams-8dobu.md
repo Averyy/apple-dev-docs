@@ -1,7 +1,8 @@
 # MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,34 +19,38 @@
 class MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams
 ```
 
+```objc
+@interface MTROTASoftwareUpdateRequestorClusterAnnounceOTAProviderParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var announcementReason: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/announcementreason.md)
-- [var endpoint: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/endpoint.md)
-- [var metadataForNode: Data?](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/metadatafornode.md)
-- [var providerNodeID: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/providernodeid-7l401.md)
-- [var providerNodeId: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/providernodeid-7l40x.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/timedinvoketimeoutms.md)
+- [var announcementReason: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/announcementreason.md)
+- [var endpoint: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/endpoint.md)
+- [var metadataForNode: Data?](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/metadatafornode.md)
+- [var providerNodeID: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/providernodeid-7l401.md)
+- [var providerNodeId: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/providernodeid-7l40x.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
-- [var vendorID: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/vendorid-4g13v.md)
-- [var vendorId: NSNumber](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/vendorid-4g14r.md)
+- [var vendorID: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/vendorid-4g13v.md)
+- [var vendorId: NSNumber](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-8dobu/vendorid-4g14r.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTROtaSoftwareUpdateRequestorClusterAnnounceOtaProviderParams](mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-1ucwe.md)
+- [MTROtaSoftwareUpdateRequestorClusterAnnounceOtaProviderParams](./mtrotasoftwareupdaterequestorclusterannounceotaproviderparams-1ucwe.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

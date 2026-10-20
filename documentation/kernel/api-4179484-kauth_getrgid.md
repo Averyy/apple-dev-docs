@@ -1,14 +1,15 @@
 # kauth_getrgid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 gid_t kauth_getrgid(void);
 ```
 

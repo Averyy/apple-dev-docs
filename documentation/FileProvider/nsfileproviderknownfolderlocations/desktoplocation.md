@@ -1,7 +1,8 @@
 # desktopLocation
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -12,10 +13,15 @@
 var desktopLocation: NSFileProviderKnownFolderLocations.Location? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) NSFileProviderKnownFolderLocation * desktopLocation;
+```
+
 ## See Also
 
-- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](nsfileproviderknownfolderlocations/documentslocation.md)
-- [NSFileProviderKnownFolderLocations.Location](nsfileproviderknownfolderlocations/location.md)
+### Identifying known-folder locations
+- [var documentsLocation: NSFileProviderKnownFolderLocations.Location?](./documentslocation.md)
+- [NSFileProviderKnownFolderLocations.Location](./location.md)
 
 
 ---

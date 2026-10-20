@@ -1,7 +1,8 @@
 # setField(at:name:value:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the named field at the given path, wrapping the typed value in a `USDValue`.
 
@@ -27,11 +28,12 @@ func setField<T>(at path: USDLayer.Path, name: USDToken, value: T) where T : USD
 
 ## See Also
 
-- [func field(at: USDLayer.Path, name: USDToken) -> USDValue?](usdlayer/field(at:name:).md)
+### Reading and authoring fields
+- [func field(at: USDLayer.Path, name: USDToken) -> USDValue?](./field%28at,name%29.md)
   Returns the value of the named field at the given path, or `nil` if no such field is authored.
-- [func fields(at: USDLayer.Path) -> [USDToken]](usdlayer/fields(at:).md)
+- [func fields(at: USDLayer.Path) -> [USDToken]](./fields%28at%29.md)
   Returns the names of the fields authored at the given path.
-- [func setField(at: USDLayer.Path, name: USDToken, value: USDValue)](usdlayer/setfield(at:name:value:)-83nwe.md)
+- [func setField(at: USDLayer.Path, name: USDToken, value: USDValue)](./setfield%28at,name,value%29-83nwe.md)
   Sets the value of the named field at the given path.
 
 

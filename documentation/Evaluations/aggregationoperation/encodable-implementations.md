@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](aggregationoperation/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the operation as a keyed container with a `type` discriminator and either `metric` (the metric name) or `label` (for custom operations).
 
 

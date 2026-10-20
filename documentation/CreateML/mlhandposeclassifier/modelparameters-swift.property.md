@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hand pose model’s configuration parameters.
 
@@ -22,15 +23,16 @@ let modelParameters: MLHandPoseClassifier.ModelParameters
 
 The property reflects the model parameters you provide to one of these methods that train a hand pose classifier:
 
-#### Doccomapplecreatemldocumentationcreatemlmlhandposeclassifiertraintrainingdataparameterssessionparameters
+#### ``doc://com.apple.createml/documentation/CreateML/MLHandPoseClassifier/train(trainingData:parameters:sessionParameters:)``
 
-[`makeTrainingSession(trainingData:parameters:sessionParameters:)`](mlhandposeclassifier/maketrainingsession(trainingdata:parameters:sessionparameters:).md)
+[`makeTrainingSession(trainingData:parameters:sessionParameters:)`](./maketrainingsession%28trainingdata,parameters,sessionparameters%29.md)
 
-- [`init(trainingData:parameters:)`](mlhandposeclassifier/init(trainingdata:parameters:).md)
+- [`init(trainingData:parameters:)`](./init%28trainingdata,parameters%29.md)
 
 ## See Also
 
-- [var model: MLModel](mlhandposeclassifier/model.md)
+### Inspecting a hand pose classifier model
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the hand pose classifier stored in memory.
 
 

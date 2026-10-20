@@ -1,7 +1,8 @@
 # shouldReportEventsUrgently
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var shouldReportEventsUrgently: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=shouldReportEventsUrgently) BOOL reportEventsUrgently;
 ```
 
 

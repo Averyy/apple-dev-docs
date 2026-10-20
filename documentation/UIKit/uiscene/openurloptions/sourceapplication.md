@@ -1,7 +1,8 @@
 # sourceApplication
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle ID of the app that originated the request.
 
@@ -18,11 +19,16 @@ The bundle ID of the app that originated the request.
 var sourceApplication: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * sourceApplication;
+```
+
 ## See Also
 
-- [var annotation: Any?](uiscene/openurloptions/annotation.md)
+### Specifying the URL details
+- [var annotation: Any?](./annotation.md)
   A property-list object that contains the annotation data provided by a document interaction controller.
-- [var eventAttribution: UIEventAttribution?](uiscene/openurloptions/eventattribution.md)
+- [var eventAttribution: UIEventAttribution?](./eventattribution.md)
   An event attribution associated with the URL to open.
 
 

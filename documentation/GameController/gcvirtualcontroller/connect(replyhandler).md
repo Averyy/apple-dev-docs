@@ -1,7 +1,8 @@
 # connect(replyHandler:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Connects the virtual controller to the device and displays it on the screen.
 
@@ -13,12 +14,20 @@ Connects the virtual controller to the device and displays it on the screen.
 ## Declaration
 
 ```swift
+func connect(replyHandler reply: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func connect() async throws
+```
+
+```objc
+- (void) connectWithReplyHandler:(void (^)(NSError *error)) reply;
 ```
 
 ## Mentions
 
-- [Adding virtual controls to games that support game controllers in iOS](adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
+- [Adding virtual controls to games that support game controllers in iOS](../adding-virtual-controls-to-games-that-support-game-controllers-in-ios.md)
 
 #### Discussion
 
@@ -26,11 +35,14 @@ After you invoke this method, the framework calls any input handlers you set for
 
 ## Parameters
 
-- `reply`: A closure that the method calls upon completion with the following parameter: - **`error`**: Describes an error if it occurs, or returns `nil` if the operation completes.
+- `reply`: A closure that the method calls upon completion with the following parameter:
+
+  - **`error`**: Describes an error if it occurs, or returns `nil` if the operation completes.
 
 ## See Also
 
-- [func disconnect()](gcvirtualcontroller/disconnect.md)
+### Connecting and displaying virtual controllers
+- [func disconnect()](./disconnect%28%29.md)
   Disconnects the virtual controller from the device and removes it from the screen.
 
 

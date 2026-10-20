@@ -1,7 +1,8 @@
 # LowLevelRenderTarget.DescriptorSet
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An unordered set of render target descriptors that defines the output format combination a pipeline state or mesh instance array is compatible with.
 
@@ -19,28 +20,29 @@ struct DescriptorSet
 
 #### Overview
 
-`DescriptorSet` conforms to `ExpressibleByArrayLiteral`, so you can initialize it directly with an array literal of [`LowLevelRenderTarget.Descriptor`](lowlevelrendertarget/descriptor.md) values.
+`DescriptorSet` conforms to `ExpressibleByArrayLiteral`, so you can initialize it directly with an array literal of [`LowLevelRenderTarget.Descriptor`](./descriptor.md) values.
 
 ## Topics
 
 ### Creating a descriptor set
-- [init(arrayLiteral: LowLevelRenderTarget.Descriptor...)](lowlevelrendertarget/descriptorset/init(arrayliteral:).md)
+- [init(arrayLiteral: LowLevelRenderTarget.Descriptor...)](./descriptorset/init%28arrayliteral%29.md)
   Creates a descriptor set from an array literal of render target descriptors.
 ### Initializers
-- [init([LowLevelRenderTarget.Descriptor])](lowlevelrendertarget/descriptorset/init(_:).md)
+- [init([LowLevelRenderTarget.Descriptor])](./descriptorset/init%28_%29.md)
   Creates a descriptor set from an array of render target descriptors.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LowLevelRenderTarget.Descriptor](lowlevelrendertarget/descriptor.md)
+### Describing the render target
+- [LowLevelRenderTarget.Descriptor](./descriptor.md)
   A color and depth pixel format combination for a render pass.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that there are text changes to incorporate into the view.
@@ -15,12 +16,20 @@ Tells the delegate that there are text changes to incorporate into the view.
 ## Declaration
 
 ```swift
+func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, replace range: NSRange, in context: UIWritingToolsCoordinator.Context, proposedText replacementText: NSAttributedString, reason: UIWritingToolsCoordinator.TextReplacementReason, animationParameters: UIWritingToolsCoordinator.AnimationParameters?, completion: @escaping @Sendable (NSAttributedString?) -> Void)
+```
+
+```swift
 func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, replace range: NSRange, in context: UIWritingToolsCoordinator.Context, proposedText replacementText: NSAttributedString, reason: UIWritingToolsCoordinator.TextReplacementReason, animationParameters: UIWritingToolsCoordinator.AnimationParameters?) async -> NSAttributedString?
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator replaceRange:(NSRange) range inContext:(UIWritingToolsCoordinatorContext *) context proposedText:(NSAttributedString *) replacementText reason:(UIWritingToolsCoordinatorTextReplacementReason) reason animationParameters:(UIWritingToolsCoordinatorAnimationParameters *) animationParameters completion:(void (^)(NSAttributedString *)) completion;
 ```
 
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
@@ -30,7 +39,7 @@ Use this method to update your view’s text storage with the proposed changes. 
 
 Remove the text in the appropriate range of your text storage, and replace it with the contents of `replacementText`. When you finish, call the completion handler and pass in the replacement text you inserted. If you change the string in `replacementText` before incorporating it into your text storage, return your modified string instead. Returning the string lets Writing Tools track any alterations you made to it. You can also pass `nil` to the completion handler if you don’t incorporate the replacement text.
 
-For interactive changes, Writing Tools works with your delegate to animate the removal of the old text and the insertion of any replacement text. If you need to modify other parts of your interface to reflect the changes, use the provided [`UIWritingToolsCoordinator.AnimationParameters`](uiwritingtoolscoordinator/animationparameters.md) object to create additional animations to run at the same time as the system-provided animations.
+For interactive changes, Writing Tools works with your delegate to animate the removal of the old text and the insertion of any replacement text. If you need to modify other parts of your interface to reflect the changes, use the provided [`UIWritingToolsCoordinator.AnimationParameters`](../animationparameters.md) object to create additional animations to run at the same time as the system-provided animations.
 
 ## Parameters
 
@@ -44,7 +53,8 @@ For interactive changes, Writing Tools works with your delegate to animate the r
 
 ## See Also
 
-- [func writingToolsCoordinator(UIWritingToolsCoordinator, select: [NSValue], in: UIWritingToolsCoordinator.Context, completion: () -> Void)](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:select:in:completion:).md)
+### Incorporating Writing Tools suggestions
+- [func writingToolsCoordinator(UIWritingToolsCoordinator, select: [NSValue], in: UIWritingToolsCoordinator.Context, completion: () -> Void)](./writingtoolscoordinator%28_,select,in,completion%29.md)
   Asks the delegate to update your view’s current text selection.
 
 

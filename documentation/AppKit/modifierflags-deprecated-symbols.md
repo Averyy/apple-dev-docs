@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -10,7 +11,8 @@ Although these symbols are available for use, Apple is no longer actively develo
 
 ## See Also
 
-- [init(rawValue: UInt)](nsevent/modifierflags-swift.struct/init(rawvalue:).md)
+### Deprecated
+- [init(rawValue: UInt)](./nsevent/modifierflags-swift.struct/init%28rawvalue%29.md)
 
 
 ---

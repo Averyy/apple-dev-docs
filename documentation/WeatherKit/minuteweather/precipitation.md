@@ -1,7 +1,8 @@
 # precipitation
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the precipitation for this minute.
 
@@ -22,9 +23,10 @@ var precipitation: Precipitation
 
 ## See Also
 
-- [var precipitationChance: Double](minuteweather/precipitationchance.md)
+### Getting the precipitation
+- [var precipitationChance: Double](./precipitationchance.md)
   The probability of precipitation in this minute.
-- [var precipitationIntensity: Measurement<UnitSpeed>](minuteweather/precipitationintensity.md)
+- [var precipitationIntensity: Measurement<UnitSpeed>](./precipitationintensity.md)
   The forecasted precipitation intensity.
 
 

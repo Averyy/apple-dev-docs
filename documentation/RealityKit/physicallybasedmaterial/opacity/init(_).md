@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an opacity object using a custom material’s opacity property.
 
@@ -24,9 +25,10 @@ init(_ value: CustomMaterial.Opacity)
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/opacity/init(floatliteral:).md)
+### Creating an opacity object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an opacity object using a single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/opacity/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an opacity object using a single value or a texture.
 
 

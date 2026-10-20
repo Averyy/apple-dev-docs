@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the text attachment object that owns the cell.
@@ -14,6 +15,10 @@ Returns the text attachment object that owns the cell.
 ```swift
 nonisolated
 unowned(unsafe) var attachment: NSTextAttachment? { get set }
+```
+
+```objc
+@property (assign, nullable) NSTextAttachment * attachment;
 ```
 
 

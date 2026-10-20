@@ -1,7 +1,8 @@
 # saturation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A mode that uses the luminance and hue values of the background with the saturation of the source image.
 
@@ -26,11 +27,12 @@ Areas of the background that have no saturation — namely, pure gray areas — 
 
 ## See Also
 
-- [static var hue: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/hue.md)
+### Mixing color components
+- [static var hue: GraphicsContext.BlendMode](./hue.md)
   A mode that uses the luminance and saturation values of the background with the hue of the source image.
-- [static var color: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/color.md)
+- [static var color: GraphicsContext.BlendMode](./color.md)
   A mode that uses the luminance values of the background with the hue and saturation values of the source image.
-- [static var luminosity: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct/luminosity.md)
+- [static var luminosity: GraphicsContext.BlendMode](./luminosity.md)
   A mode that uses the hue and saturation of the background with the luminance of the source image.
 
 

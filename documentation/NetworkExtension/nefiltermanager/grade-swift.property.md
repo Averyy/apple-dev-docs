@@ -1,7 +1,8 @@
 # grade
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The grade of the filter, which determines when it acts relative to other filters.
 
@@ -14,13 +15,18 @@ The grade of the filter, which determines when it acts relative to other filters
 var grade: NEFilterManager.Grade { get set }
 ```
 
+```objc
+@property NEFilterManagerGrade grade;
+```
+
 #### Discussion
 
-The default grade is [`NEFilterManager.Grade.firewall`](nefiltermanager/grade-swift.enum/firewall.md).
+The default grade is [`NEFilterManager.Grade.firewall`](./grade-swift.enum/firewall.md).
 
 ## See Also
 
-- [NEFilterManager.Grade](nefiltermanager/grade-swift.enum.md)
+### Prioritizing filters
+- [NEFilterManager.Grade](./grade-swift.enum.md)
   A type for the grade or priority of the filter.
 
 

@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -12,11 +13,16 @@
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var attributedTitle: NSAttributedString](nspathcontrolitem/attributedtitle.md)
-- [var image: NSImage?](nspathcontrolitem/image.md)
-- [var url: URL?](nspathcontrolitem/url.md)
+### Instance Properties
+- [var attributedTitle: NSAttributedString](./attributedtitle.md)
+- [var image: NSImage?](./image.md)
+- [var url: URL?](./url.md)
 
 
 ---

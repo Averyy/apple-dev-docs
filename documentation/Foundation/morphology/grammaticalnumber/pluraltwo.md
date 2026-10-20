@@ -1,7 +1,8 @@
 # Morphology.GrammaticalNumber.pluralTwo
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Two persons or things, as used for a grammatical number.
 
@@ -22,15 +23,16 @@ case pluralTwo
 
 ## See Also
 
-- [Morphology.GrammaticalNumber.zero](morphology/grammaticalnumber/zero.md)
+### Determining Grammatical Number
+- [Morphology.GrammaticalNumber.zero](./zero.md)
   Zero persons or things, as used for a gramnatical number.
-- [Morphology.GrammaticalNumber.singular](morphology/grammaticalnumber/singular.md)
+- [Morphology.GrammaticalNumber.singular](./singular.md)
   A single person or thing, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.plural](morphology/grammaticalnumber/plural.md)
+- [Morphology.GrammaticalNumber.plural](./plural.md)
   Multiple persons or things, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.pluralFew](morphology/grammaticalnumber/pluralfew.md)
+- [Morphology.GrammaticalNumber.pluralFew](./pluralfew.md)
   A small number of persons or things, as used for a grammatical number.
-- [Morphology.GrammaticalNumber.pluralMany](morphology/grammaticalnumber/pluralmany.md)
+- [Morphology.GrammaticalNumber.pluralMany](./pluralmany.md)
   A large number of persons or things, as used for a grammatical number.
 
 

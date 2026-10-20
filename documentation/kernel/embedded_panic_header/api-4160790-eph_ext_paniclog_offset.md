@@ -1,14 +1,15 @@
 # eph_ext_paniclog_offset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t eph_ext_paniclog_offset;
 ```
 

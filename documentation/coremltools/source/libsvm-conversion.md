@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/libsvm-conversion.ht
 
 # LibSVM
 
-**
-
-- [.md](../_sources/source/libsvm-conversion.md)
-- **
-
-.pdf
-
-**
-
-# LibSVM
-
- Table of contents 
-
-# LibSVM
-
 You can convert a [LibSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) model to the Core ML format using [libsvm.convert()](https://apple.github.io/coremltools/source/coremltools.converters.libsvm.html#coremltools.converters.libsvm._libsvm_converter.convert):
 
 ```

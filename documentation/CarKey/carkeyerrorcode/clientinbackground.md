@@ -1,7 +1,8 @@
 # CarKeyErrorCode.ClientInBackground
 
 **Framework**: CarKey  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the operation occurred when the app was in the background.
 
@@ -24,29 +25,30 @@ Perform the operation when the app is running in the foreground.
 
 ## See Also
 
-- [CarKeyErrorCode.AnotherRequestInProgress](carkeyerrorcode/anotherrequestinprogress.md)
+### Getting the Error Code
+- [CarKeyErrorCode.AnotherRequestInProgress](./anotherrequestinprogress.md)
   An error that indicates a previous request is still in progress.
-- [CarKeyErrorCode.EnduringRequestUsingEventMethod](carkeyerrorcode/enduringrequestusingeventmethod.md)
+- [CarKeyErrorCode.EnduringRequestUsingEventMethod](./enduringrequestusingeventmethod.md)
   An error that indicates a mismatch between the initial request type and the results.
-- [CarKeyErrorCode.FeatureNotSupported](carkeyerrorcode/featurenotsupported.md)
+- [CarKeyErrorCode.FeatureNotSupported](./featurenotsupported.md)
   An error that indicates the specified feature isn’t supported in the current environment.
-- [CarKeyErrorCode.FunctionUnknown](carkeyerrorcode/functionunknown.md)
+- [CarKeyErrorCode.FunctionUnknown](./functionunknown.md)
   An error that indicates the vehicle didn’t recognize the specified function identifier.
-- [CarKeyErrorCode.Internal](carkeyerrorcode/internal.md)
+- [CarKeyErrorCode.Internal](./internal.md)
   An error that indicates an unknown error occurred.
-- [CarKeyErrorCode.MessageTooLong](carkeyerrorcode/messagetoolong.md)
+- [CarKeyErrorCode.MessageTooLong](./messagetoolong.md)
   An error that indicates the command you sent was too long.
-- [CarKeyErrorCode.RequestNotInProgress](carkeyerrorcode/requestnotinprogress.md)
+- [CarKeyErrorCode.RequestNotInProgress](./requestnotinprogress.md)
   An error that indicates an enduring operation wasn’t running.
-- [CarKeyErrorCode.RequestTimedOut](carkeyerrorcode/requesttimedout.md)
+- [CarKeyErrorCode.RequestTimedOut](./requesttimedout.md)
   An error that indicates the request didn’t complete in time.
-- [CarKeyErrorCode.SecurityViolation](carkeyerrorcode/securityviolation.md)
+- [CarKeyErrorCode.SecurityViolation](./securityviolation.md)
   An error that indicates your app doesn’t have the required entitlements.
-- [CarKeyErrorCode.SessionNotActive](carkeyerrorcode/sessionnotactive.md)
+- [CarKeyErrorCode.SessionNotActive](./sessionnotactive.md)
   An error that indicates an active session is currently inactive.
-- [CarKeyErrorCode.VehicleNotConnected](carkeyerrorcode/vehiclenotconnected.md)
+- [CarKeyErrorCode.VehicleNotConnected](./vehiclenotconnected.md)
   An error that indicates the vehicle isn’t available to respond to the request.
-- [CarKeyErrorCode.VehicleNotFound](carkeyerrorcode/vehiclenotfound.md)
+- [CarKeyErrorCode.VehicleNotFound](./vehiclenotfound.md)
   An error that indicates a vehicle with the specified ID wasn’t found.
 
 

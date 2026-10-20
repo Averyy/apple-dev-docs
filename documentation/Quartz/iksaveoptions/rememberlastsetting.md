@@ -1,7 +1,8 @@
 # rememberLastSetting
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 var rememberLastSetting: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL rememberLastSetting;
 ```
 
 

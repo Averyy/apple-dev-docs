@@ -1,9 +1,10 @@
 # RoundedRectangularShape
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-A protocol of [`InsettableShape`](insettableshape.md) that describes a rounded rectangular shape.
+A protocol of [`InsettableShape`](./insettableshape.md) that describes a rounded rectangular shape.
 
 **Availability**:
 - iOS 26.0+
@@ -22,51 +23,52 @@ protocol RoundedRectangularShape : InsettableShape
 
 #### Overview
 
-Conform your [`InsettableShape`](insettableshape.md) type to [`RoundedRectangularShape`](roundedrectangularshape.md) when your shape is a rounded rectangular with four corners and you want to expose information about the corners. For example, a custom triangle [`Shape`](shape.md) is not fit for such conformance, while a custom rectangle [`Shape`](shape.md) could benefit from providing the implementation, especially when the shape is used as a container shape in [`containerShape(_:)`](view/containershape(_:)-3br47.md) to achieve concentricity.
+Conform your [`InsettableShape`](./insettableshape.md) type to [`RoundedRectangularShape`](./roundedrectangularshape.md) when your shape is a rounded rectangular with four corners and you want to expose information about the corners. For example, a custom triangle [`Shape`](./shape.md) is not fit for such conformance, while a custom rectangle [`Shape`](./shape.md) could benefit from providing the implementation, especially when the shape is used as a container shape in [`containerShape(_:)`](./view/containershape%28_%29-3br47.md) to achieve concentricity.
 
-System shapes like [`Rectangle`](rectangle.md), [`RoundedRectangle`](roundedrectangle.md), [`UnevenRoundedRectangle`](unevenroundedrectangle.md), [`Capsule`](capsule.md), and [`Circle`](circle.md) already provide default implementation for this protocol.
+System shapes like [`Rectangle`](./rectangle.md), [`RoundedRectangle`](./roundedrectangle.md), [`UnevenRoundedRectangle`](./unevenroundedrectangle.md), [`Capsule`](./capsule.md), and [`Circle`](./circle.md) already provide default implementation for this protocol.
 
 ## Topics
 
 ### Instance Methods
-- [func corners(in: CGSize?) -> Self.Corners?](roundedrectangularshape/corners(in:).md)
+- [func corners(in: CGSize?) -> Self.Corners?](./roundedrectangularshape/corners%28in%29.md)
   Resolved corners given a size. If the corner style of a shape is size-dependent, read the provided size and return values accordingly. This function could be called with a nil size when the size hasn’t been determined. In that case, return the best approximated value. For example, for a capsule shape, its corner radius is determined by the size. If size is not available, return `.fixed(.infinity)` to indicate that the corner should be as round as it could be.
 ### Type Aliases
-- [RoundedRectangularShape.Corners](roundedrectangularshape/corners.md)
+- [RoundedRectangularShape.Corners](./roundedrectangularshape/corners.md)
 
 ## Relationships
 
 ### Inherits From
-- [Animatable](animatable.md)
-- [InsettableShape](insettableshape.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [InsettableShape](./insettableshape.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 ### Conforming Types
-- [Capsule](capsule.md)
-- [Circle](circle.md)
-- [Rectangle](rectangle.md)
-- [RoundedRectangle](roundedrectangle.md)
-- [UnevenRoundedRectangle](unevenroundedrectangle.md)
+- [Capsule](./capsule.md)
+- [Circle](./circle.md)
+- [Rectangle](./rectangle.md)
+- [RoundedRectangle](./roundedrectangle.md)
+- [UnevenRoundedRectangle](./unevenroundedrectangle.md)
 
 ## See Also
 
-- [struct Rectangle](rectangle.md)
+### Creating rectangular shapes
+- [struct Rectangle](./rectangle.md)
   A rectangular shape aligned inside the frame of the view containing it.
-- [struct RoundedRectangle](roundedrectangle.md)
+- [struct RoundedRectangle](./roundedrectangle.md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
-- [enum RoundedCornerStyle](roundedcornerstyle.md)
+- [enum RoundedCornerStyle](./roundedcornerstyle.md)
   Defines the shape of a rounded rectangle’s corners.
-- [struct RoundedRectangularShapeCorners](roundedrectangularshapecorners.md)
-  A type describing the corner styles of a [`RoundedRectangularShape`](roundedrectangularshape.md).
-- [struct UnevenRoundedRectangle](unevenroundedrectangle.md)
+- [struct RoundedRectangularShapeCorners](./roundedrectangularshapecorners.md)
+  A type describing the corner styles of a [`RoundedRectangularShape`](./roundedrectangularshape.md).
+- [struct UnevenRoundedRectangle](./unevenroundedrectangle.md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
-- [struct RectangleCornerRadii](rectanglecornerradii.md)
+- [struct RectangleCornerRadii](./rectanglecornerradii.md)
   Describes the corner radius values of a rounded rectangle with uneven corners.
-- [struct RectangleCornerInsets](rectanglecornerinsets.md)
+- [struct RectangleCornerInsets](./rectanglecornerinsets.md)
   The inset sizes for the corners of a rectangle.
-- [struct ConcentricRectangle](concentricrectangle.md)
+- [struct ConcentricRectangle](./concentricrectangle.md)
   A shape whose corners you configure, individually or uniformly, to be squared, rounded, or concentric relative to a container shape’s corners.
 
 

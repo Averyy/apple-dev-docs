@@ -1,7 +1,8 @@
 # ExtensibleSingleSignOnKerberos.ExtensionData.DomainRealmMapping
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The mapping of realms to their DNS suffixes.
 
@@ -14,7 +15,7 @@ The mapping of realms to their DNS suffixes.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSingleSignOnKerberos.ExtensionData.DomainRealmMapping
 ```
 

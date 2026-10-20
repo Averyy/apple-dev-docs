@@ -1,7 +1,8 @@
 # CMSDecoderCopyContent(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Obtains the message content, if any.
 
@@ -14,13 +15,17 @@ Obtains the message content, if any.
 func CMSDecoderCopyContent(_ cmsDecoder: CMSDecoder, _ contentOut: UnsafeMutablePointer<CFData?>) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderCopyContent(CMSDecoderRef cmsDecoder, CFDataRef*contentOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-If the message has detached content, you are responsible for retrieving the content. In that case, you use the [`CMSDecoderSetDetachedContent(_:_:)`](cmsdecodersetdetachedcontent(_:_:).md) function to tell the decoder the location of the content.
+If the message has detached content, you are responsible for retrieving the content. In that case, you use the [`CMSDecoderSetDetachedContent(_:_:)`](./cmsdecodersetdetachedcontent%28_,_%29.md) function to tell the decoder the location of the content.
 
 You cannot call this function until after you have called the `CMSDecoderFinalizeMessage` function.
 
@@ -31,13 +36,14 @@ You cannot call this function until after you have called the `CMSDecoderFinaliz
 
 ## See Also
 
-- [func CMSEncoderSetHasDetachedContent(CMSEncoder, Bool) -> OSStatus](cmsencodersethasdetachedcontent(_:_:).md)
+### Related Documentation
+- [func CMSEncoderSetHasDetachedContent(CMSEncoder, Bool) -> OSStatus](./cmsencodersethasdetachedcontent%28_,_%29.md)
   Specifies whether the signed data is to be separate from the message.
-- [func CMSDecoderSetDetachedContent(CMSDecoder, CFData) -> OSStatus](cmsdecodersetdetachedcontent(_:_:).md)
+- [func CMSDecoderSetDetachedContent(CMSDecoder, CFData) -> OSStatus](./cmsdecodersetdetachedcontent%28_,_%29.md)
   Specifies the message’s detached content, if any.
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
-- [func CMSDecoderFinalizeMessage(CMSDecoder) -> OSStatus](cmsdecoderfinalizemessage(_:).md)
+- [func CMSDecoderFinalizeMessage(CMSDecoder) -> OSStatus](./cmsdecoderfinalizemessage%28_%29.md)
   Indicates that there is no more data to decode.
 
 

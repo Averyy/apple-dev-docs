@@ -1,7 +1,8 @@
 # CMAudioDeviceClockSetAudioDeviceID(_:deviceID:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Changes the Core Audio device the clock is tracking by specifying a new device identifier.
 
@@ -14,6 +15,10 @@ Changes the Core Audio device the clock is tracking by specifying a new device i
 func CMAudioDeviceClockSetAudioDeviceID(_ clock: CMClock, deviceID: AudioDeviceID) -> OSStatus
 ```
 
+```c
+extern OSStatus CMAudioDeviceClockSetAudioDeviceID(CMClockRef clock, AudioDeviceID deviceID);
+```
+
 ## Parameters
 
 - `clock`: The clock to change.
@@ -21,9 +26,10 @@ func CMAudioDeviceClockSetAudioDeviceID(_ clock: CMClock, deviceID: AudioDeviceI
 
 ## See Also
 
-- [func CMAudioDeviceClockGetAudioDevice(CMClock, deviceUIDOut: AutoreleasingUnsafeMutablePointer<CFString?>?, deviceIDOut: UnsafeMutablePointer<AudioDeviceID>?, trackingDefaultDeviceOut: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](cmaudiodeviceclockgetaudiodevice(_:deviceuidout:deviceidout:trackingdefaultdeviceout:).md)
+### Configuring Audio Clocks
+- [func CMAudioDeviceClockGetAudioDevice(CMClock, deviceUIDOut: AutoreleasingUnsafeMutablePointer<CFString?>?, deviceIDOut: UnsafeMutablePointer<AudioDeviceID>?, trackingDefaultDeviceOut: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./cmaudiodeviceclockgetaudiodevice%28_,deviceuidout,deviceidout,trackingdefaultdeviceout%29.md)
   Returns the Core Audio device the clock is tracking.
-- [func CMAudioDeviceClockSetAudioDeviceUID(CMClock, deviceUID: CFString?) -> OSStatus](cmaudiodeviceclocksetaudiodeviceuid(_:deviceuid:).md)
+- [func CMAudioDeviceClockSetAudioDeviceUID(CMClock, deviceUID: CFString?) -> OSStatus](./cmaudiodeviceclocksetaudiodeviceuid%28_,deviceuid%29.md)
   Changes the Core Audio device the clock is tracking by specifying a new device unique identifier.
 
 

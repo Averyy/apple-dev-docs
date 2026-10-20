@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new capture metadata output.
 
@@ -16,6 +17,10 @@ Creates a new capture metadata output.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

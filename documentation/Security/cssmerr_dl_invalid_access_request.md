@@ -1,7 +1,8 @@
 # CSSMERR_DL_INVALID_ACCESS_REQUEST
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_DL_INVALID_ACCESS_REQUEST: Int { get }
+```
+
+```c
+CSSMERR_DL_INVALID_ACCESS_REQUEST
 ```
 
 

@@ -1,7 +1,8 @@
 # addObserver(_:selector:name:object:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entry to the notification center to call the provided selector with the notification.
 
@@ -20,11 +21,15 @@ Adds an entry to the notification center to call the provided selector with the 
 func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNotification.Name?, object anObject: Any?)
 ```
 
+```objc
+- (void) addObserver:(id) observer selector:(SEL) aSelector name:(NSNotificationName) aName object:(id) anObject;
+```
+
 #### Discussion
 
 Unregister an observer to stop receiving notifications.
 
-To unregister an observer, use `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](notificationcenter/removeobserver(_:name:object:).md) with the most specific detail possible. For example, if you used a name and object to register the observer, use the name and object to remove it.
+To unregister an observer, use `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](./removeobserver%28_,name,object%29.md) with the most specific detail possible. For example, if you used a name and object to register the observer, use the name and object to remove it.
 
 If your app targets iOS 9.0 and later or macOS 10.11 and later, you do not need to unregister an observer that you created with this function. If you forget or are unable to remove an observer, the system cleans up the next time it would have posted to it.
 
@@ -32,16 +37,21 @@ If your app targets iOS 9.0 and later or macOS 10.11 and later, you do not need 
 
 - `observer`: An object to register as an observer.
 - `aSelector`: A selector that specifies the message the receiver sends `observer` to alert it to the notification posting. The method that `aSelector` specifies must have one and only one argument (an instance of `NSNotification`).
-- `aName`: The name of the notification to register for delivery to the observer. Specify a notification name to deliver only entries with this notification name. When `nil`, the sender doesn’t use notification names as criteria for the delivery.
-- `anObject`: The object that sends notifications to the observer. Specify a notification sender to deliver only notifications from this sender. When `nil`, the notification center doesn’t use sender names as criteria for delivery.
+- `aName`: The name of the notification to register for delivery to the observer. Specify a notification name to deliver only entries with this notification name.
+
+  When `nil`, the sender doesn’t use notification names as criteria for the delivery.
+- `anObject`: The object that sends notifications to the observer. Specify a notification sender to deliver only notifications from this sender.
+
+  When `nil`, the notification center doesn’t use sender names as criteria for delivery.
 
 ## See Also
 
-- [func addObserver(forName: NSNotification.Name?, object: Any?, queue: OperationQueue?, using: (Notification) -> Void) -> any NSObjectProtocol](notificationcenter/addobserver(forname:object:queue:using:).md)
+### Adding and removing notification observers
+- [func addObserver(forName: NSNotification.Name?, object: Any?, queue: OperationQueue?, using: (Notification) -> Void) -> any NSObjectProtocol](./addobserver%28forname,object,queue,using%29.md)
   Adds an entry to the notification center to receive notifications that passed to the provided block.
-- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](notificationcenter/removeobserver(_:name:object:).md)
+- [func removeObserver(Any, name: NSNotification.Name?, object: Any?)](./removeobserver%28_,name,object%29.md)
   Removes matching entries from the notification center’s dispatch table.
-- [func removeObserver(Any)](notificationcenter/removeobserver(_:)-2yciv.md)
+- [func removeObserver(Any)](./removeobserver%28_%29-2yciv.md)
   Removes all entries specifying an observer from the notification center’s dispatch table.
 
 

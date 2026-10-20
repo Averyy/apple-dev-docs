@@ -1,7 +1,8 @@
 # all
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All hand group names.
 
@@ -19,17 +20,22 @@ All hand group names.
 static let all: VNHumanHandPoseObservation.JointsGroupName
 ```
 
+```c
+extern VNHumanHandPoseObservationJointsGroupName const VNHumanHandPoseObservationJointsGroupNameAll;
+```
+
 ## See Also
 
-- [static let thumb: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/thumb.md)
+### Group Names
+- [static let thumb: VNHumanHandPoseObservation.JointsGroupName](./thumb.md)
   The thumb.
-- [static let indexFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/indexfinger.md)
+- [static let indexFinger: VNHumanHandPoseObservation.JointsGroupName](./indexfinger.md)
   The index finger.
-- [static let littleFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/littlefinger.md)
+- [static let littleFinger: VNHumanHandPoseObservation.JointsGroupName](./littlefinger.md)
   The little finger.
-- [static let middleFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/middlefinger.md)
+- [static let middleFinger: VNHumanHandPoseObservation.JointsGroupName](./middlefinger.md)
   The middle finger.
-- [static let ringFinger: VNHumanHandPoseObservation.JointsGroupName](vnhumanhandposeobservation/jointsgroupname/ringfinger.md)
+- [static let ringFinger: VNHumanHandPoseObservation.JointsGroupName](./ringfinger.md)
   The ring finger.
 
 

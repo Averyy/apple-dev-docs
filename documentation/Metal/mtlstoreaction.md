@@ -1,7 +1,8 @@
 # MTLStoreAction
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of actions performed for an attachment at the end of a rendering pass.
 
@@ -10,7 +11,7 @@ Types of actions performed for an attachment at the end of a rendering pass.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,45 +20,50 @@ Types of actions performed for an attachment at the end of a rendering pass.
 enum MTLStoreAction
 ```
 
+```c
+enum MTLStoreAction : NSUInteger;
+```
+
 ## Mentions
 
-- [Setting load and store actions](setting-load-and-store-actions.md)
+- [Setting load and store actions](./setting-load-and-store-actions.md)
 
 ## Topics
 
 ### Store actions
-- [MTLStoreAction.dontCare](mtlstoreaction/dontcare.md)
+- [MTLStoreAction.dontCare](./mtlstoreaction/dontcare.md)
   The GPU has permission to discard the rendered contents of the attachment at the end of the render pass, replacing them with arbitrary data.
-- [MTLStoreAction.store](mtlstoreaction/store.md)
+- [MTLStoreAction.store](./mtlstoreaction/store.md)
   The GPU stores the rendered contents to the texture.
-- [MTLStoreAction.multisampleResolve](mtlstoreaction/multisampleresolve.md)
+- [MTLStoreAction.multisampleResolve](./mtlstoreaction/multisampleresolve.md)
   The GPU resolves the multisampled data to one sample per pixel and stores the data to the resolve texture, discarding the multisample data afterwards.
-- [MTLStoreAction.storeAndMultisampleResolve](mtlstoreaction/storeandmultisampleresolve.md)
+- [MTLStoreAction.storeAndMultisampleResolve](./mtlstoreaction/storeandmultisampleresolve.md)
   The GPU stores the multisample data to the multisample texture, resolves the data to a sample per pixel, and stores the data to the resolve texture.
-- [MTLStoreAction.unknown](mtlstoreaction/unknown.md)
+- [MTLStoreAction.unknown](./mtlstoreaction/unknown.md)
   The system selects a store action when it encodes the render pass.
-- [MTLStoreAction.customSampleDepthStore](mtlstoreaction/customsampledepthstore.md)
+- [MTLStoreAction.customSampleDepthStore](./mtlstoreaction/customsampledepthstore.md)
   The GPU stores depth data in a sample-position–agnostic representation.
 ### Initializers
-- [init?(rawValue: UInt)](mtlstoreaction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlstoreaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLParallelRenderCommandEncoder](mtlparallelrendercommandencoder.md)
+### Encoding a render pass in parallel
+- [protocol MTLParallelRenderCommandEncoder](./mtlparallelrendercommandencoder.md)
   An instance that splits up a single render pass so that it can be simultaneously encoded from multiple threads.
-- [enum MTLLoadAction](mtlloadaction.md)
+- [enum MTLLoadAction](./mtlloadaction.md)
   Types of actions performed for an attachment at the start of a rendering pass.
-- [struct MTLStoreActionOptions](mtlstoreactionoptions.md)
+- [struct MTLStoreActionOptions](./mtlstoreactionoptions.md)
   Options that modify a store action.
 
 

@@ -1,7 +1,8 @@
 # updateConversionValue(_:lockPostback:)
 
 **Framework**: AdAttributionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Updates a conversion value with the provided fine and coarse conversion values, and optionally locks the postback, reducing the system time to deliver a signal.
 
@@ -18,10 +19,10 @@ static func updateConversionValue(_ fineConversionValue: Int, lockPostback: Bool
 
 ## Mentions
 
-- [Understanding AdAttributionKit and SKAdNetwork interoperability](adattributionkit-skadnetwork-interoperability.md)
-- [Configuring an advertised app](configuring-an-advertised-app.md)
-- [Identifying the parameters in a postback](identifying-the-parameters-in-a-postback.md)
-- [Receiving postbacks in multiple conversion windows](receiving-postbacks-in-multiple-conversion-windows.md)
+- [Understanding AdAttributionKit and SKAdNetwork interoperability](../adattributionkit-skadnetwork-interoperability.md)
+- [Configuring an advertised app](../configuring-an-advertised-app.md)
+- [Identifying the parameters in a postback](../identifying-the-parameters-in-a-postback.md)
+- [Receiving postbacks in multiple conversion windows](../receiving-postbacks-in-multiple-conversion-windows.md)
 
 ## Parameters
 

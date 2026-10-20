@@ -1,7 +1,8 @@
 # addClipBufferingOutput(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addClipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput) throws
+```
+
+```objc
+- (BOOL) addClipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput error:(NSError **) error;
 ```
 
 #### Discussion

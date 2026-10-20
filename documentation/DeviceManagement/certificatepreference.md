@@ -1,7 +1,8 @@
 # CertificatePreference
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures a certificate preference.
 
@@ -10,13 +11,13 @@ The payload that configures a certificate preference.
 
 ## Declaration
 
-```swift
+```
 object CertificatePreference
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
@@ -24,9 +25,9 @@ Specify `com.apple.security.certificatepreference` as the payload type.
 
 A `CertificatePreference` payload lets you identify a certificate preference item in the user’s keychain that references a certificate payload included in the same profile. It can only appear in a user profile, not a device profile. You can include multiple `CertificatePreference` payloads as needed.
 
-See also [`IdentityPreference`](identitypreference.md)  for information about setting up identity preferences.
+See also [`IdentityPreference`](./identitypreference.md)  for information about setting up identity preferences.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -38,7 +39,7 @@ See also [`IdentityPreference`](identitypreference.md)  for information about se
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -85,23 +86,24 @@ See also [`IdentityPreference`](identitypreference.md)  for information about se
 
 ## See Also
 
-- [object ACMECertificate](acmecertificate.md)
+### Certificates
+- [object ACMECertificate](./acmecertificate.md)
   The payload that configures Automated Certificate Management Environment (ACME) settings.
-- [object ActiveDirectoryCertificate](activedirectorycertificate.md)
+- [object ActiveDirectoryCertificate](./activedirectorycertificate.md)
   The payload that configures Active Directory Certificate settings.
-- [object CertificatePEM](certificatepem.md)
+- [object CertificatePEM](./certificatepem.md)
   The payload that configures a PEM-formatted certificate.
-- [object CertificatePKCS1](certificatepkcs1.md)
+- [object CertificatePKCS1](./certificatepkcs1.md)
   The payload that configures a PKCS #1-formatted certificate.
-- [object CertificatePKCS12](certificatepkcs12.md)
+- [object CertificatePKCS12](./certificatepkcs12.md)
   The payload that configures a PKCS #12-formatted certificate.
-- [object CertificateRoot](certificateroot.md)
+- [object CertificateRoot](./certificateroot.md)
   The payload that configures a root certificate.
-- [object CertificateRevocation](certificaterevocation.md)
+- [object CertificateRevocation](./certificaterevocation.md)
   The payload that configures certificate revocation checking.
-- [object CertificateTransparency](certificatetransparency.md)
+- [object CertificateTransparency](./certificatetransparency.md)
   The payload that configures certificate transparency enforcement.
-- [object SCEP](scep.md)
+- [object SCEP](./scep.md)
   The payload that configures Simple Certificate Enrollment Protocol (SCEP) settings.
 
 

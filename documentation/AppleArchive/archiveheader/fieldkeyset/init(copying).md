@@ -1,7 +1,8 @@
 # init(copying:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a copy of the specified field key set.
 
@@ -11,7 +12,7 @@ Creates a copy of the specified field key set.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ init(copying s: ArchiveHeader.FieldKeySet)
 
 ## See Also
 
-- [init()](archiveheader/fieldkeyset/init.md)
+### Creating a Field Key Set
+- [init()](./init%28%29.md)
   Creates a new empty field key set.
-- [init?(String)](archiveheader/fieldkeyset/init(_:).md)
+- [init?(String)](./init%28_%29.md)
   Creates a new field key set from the specified comma-separated string of three-letter keys.
 
 

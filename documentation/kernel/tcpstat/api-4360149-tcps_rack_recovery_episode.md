@@ -1,14 +1,15 @@
 # tcps_rack_recovery_episode
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t tcps_rack_recovery_episode;
 ```
 

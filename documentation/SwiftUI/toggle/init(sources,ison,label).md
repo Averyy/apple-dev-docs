@@ -1,7 +1,8 @@
 # init(sources:isOn:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle representing a collection of values with a custom label.
 
@@ -50,11 +51,12 @@ Toggle(sources: $alarms, isOn: \.isOn) {
 
 ## See Also
 
-- [init(_:sources:isOn:)](toggle/init(_:sources:ison:).md)
+### Creating a toggle for a collection
+- [init(_:sources:isOn:)](./init%28_,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string resource.
-- [init(_:image:sources:isOn:)](toggle/init(_:image:sources:ison:).md)
+- [init(_:image:sources:isOn:)](./init%28_,image,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:sources:isOn:)](toggle/init(_:systemimage:sources:ison:).md)
+- [init(_:systemImage:sources:isOn:)](./init%28_,systemimage,sources,ison%29.md)
   Creates a toggle representing a collection of values that generates its label from a localized string key and system image.
 
 

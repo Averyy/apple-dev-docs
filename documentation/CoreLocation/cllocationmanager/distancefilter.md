@@ -1,7 +1,8 @@
 # distanceFilter
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum distance in meters the device must move horizontally before an update event is generated.
 
@@ -20,13 +21,17 @@ The minimum distance in meters the device must move horizontally before an updat
 var distanceFilter: CLLocationDistance { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CLLocationDistance distanceFilter;
+```
+
 ## Mentions
 
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+- [Getting the current location of a device](../getting-the-current-location-of-a-device.md)
 
 #### Discussion
 
-This location manager measures this relative to the previously delivered location. Specify the value [`kCLDistanceFilterNone`](kcldistancefilternone.md) to receive notifications for all movements. The default value of this property is [`kCLDistanceFilterNone`](kcldistancefilternone.md).
+This location manager measures this relative to the previously delivered location. Specify the value [`kCLDistanceFilterNone`](../kcldistancefilternone.md) to receive notifications for all movements. The default value of this property is [`kCLDistanceFilterNone`](../kcldistancefilternone.md).
 
 Use this property only in conjunction with the Standard location services and not with the Significant-change or Visits services.
 
@@ -36,15 +41,16 @@ In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `a
 
 ## See Also
 
-- [let CLLocationDistanceMax: CLLocationDistance](cllocationdistancemax.md)
+### Specifying distance and accuracy
+- [let CLLocationDistanceMax: CLLocationDistance](../cllocationdistancemax.md)
   A constant indicating the maximum distance.
-- [let kCLDistanceFilterNone: CLLocationDistance](kcldistancefilternone.md)
+- [let kCLDistanceFilterNone: CLLocationDistance](../kcldistancefilternone.md)
   A constant indicating that all movement should be reported.
-- [typealias CLLocationDistance](cllocationdistance.md)
+- [typealias CLLocationDistance](../cllocationdistance.md)
   A distance in meters from an existing location.
-- [var desiredAccuracy: CLLocationAccuracy](cllocationmanager/desiredaccuracy.md)
+- [var desiredAccuracy: CLLocationAccuracy](./desiredaccuracy.md)
   The accuracy of the location data that your app wants to receive.
-- [typealias CLLocationAccuracy](cllocationaccuracy.md)
+- [typealias CLLocationAccuracy](../cllocationaccuracy.md)
   The accuracy of a geographical coordinate.
 
 

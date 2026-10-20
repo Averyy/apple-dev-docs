@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the accessory.
 
@@ -9,7 +10,7 @@ The tint color to apply to the accessory.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ The default value of this property is `nil`, which means that the accessory uses
 
 ## See Also
 
-- [var isHidden: Bool](uicellaccessory-swift.struct/popupmenuoptions/ishidden.md)
+### Accessing configuration options
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/popupmenuoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
 
 

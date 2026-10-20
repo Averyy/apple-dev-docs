@@ -1,15 +1,20 @@
 # activeElement
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var activeElement: DOMElement! { get }
+```
+
+```objc
+@property (strong, readonly) DOMElement * activeElement;
 ```
 
 

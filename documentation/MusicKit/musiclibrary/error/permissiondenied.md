@@ -1,7 +1,8 @@
 # MusicLibrary.Error.permissionDenied
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the user doesn’t consent for the current app to access their Apple Music library.
 
@@ -22,7 +23,7 @@ case permissionDenied
 
 #### Discussion
 
-Apps using MusicKit need to request prior informed consent from the user to access their Apple Music library by calling [`request()`](musicauthorization/request().md) at the appropriate point in the app flow, right before needing to use other APIs from MusicKit.
+Apps using MusicKit need to request prior informed consent from the user to access their Apple Music library by calling [`request()`](../../musicauthorization/request%28%29.md) at the appropriate point in the app flow, right before needing to use other APIs from MusicKit.
 
 
 ---

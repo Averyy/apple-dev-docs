@@ -1,7 +1,8 @@
 # UIMailConversationContext.MailEntry.Kind
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of categories for an email.
 
@@ -16,37 +17,42 @@ A set of categories for an email.
 enum Kind
 ```
 
+```c
+enum UIMailConversationEntryKind : NSInteger;
+```
+
 ## Topics
 
 ### Kinds of email
-- [UIMailConversationContext.MailEntry.Kind.news](uimailconversationcontext/mailentry/kind-swift.enum/news.md)
+- [UIMailConversationContext.MailEntry.Kind.news](./kind-swift.enum/news.md)
   The email is related to news or current events.
-- [UIMailConversationContext.MailEntry.Kind.none](uimailconversationcontext/mailentry/kind-swift.enum/none.md)
+- [UIMailConversationContext.MailEntry.Kind.none](./kind-swift.enum/none.md)
   The email does not fit in a specific category.
-- [UIMailConversationContext.MailEntry.Kind.personal](uimailconversationcontext/mailentry/kind-swift.enum/personal.md)
+- [UIMailConversationContext.MailEntry.Kind.personal](./kind-swift.enum/personal.md)
   The email is personal correspondence.
-- [UIMailConversationContext.MailEntry.Kind.promotion](uimailconversationcontext/mailentry/kind-swift.enum/promotion.md)
+- [UIMailConversationContext.MailEntry.Kind.promotion](./kind-swift.enum/promotion.md)
   The email contains a promotional offer.
-- [UIMailConversationContext.MailEntry.Kind.social](uimailconversationcontext/mailentry/kind-swift.enum/social.md)
+- [UIMailConversationContext.MailEntry.Kind.social](./kind-swift.enum/social.md)
   The email is related to social media.
-- [UIMailConversationContext.MailEntry.Kind.transaction](uimailconversationcontext/mailentry/kind-swift.enum/transaction.md)
+- [UIMailConversationContext.MailEntry.Kind.transaction](./kind-swift.enum/transaction.md)
   The email is related to a purchase or transaction.
 ### Initializers
-- [init?(rawValue: Int)](uimailconversationcontext/mailentry/kind-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./kind-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kind: UIMailConversationContext.MailEntry.Kind](uimailconversationcontext/mailentry/kind-swift.property.md)
+### Categorizing the email
+- [var kind: UIMailConversationContext.MailEntry.Kind](./kind-swift.property.md)
   An item that reflects the category that describes an email.
 
 

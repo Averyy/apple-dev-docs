@@ -1,7 +1,8 @@
 # init(_:bundle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color from a color set that you indicate by name.
 
@@ -24,7 +25,7 @@ init(_ name: String, bundle: Bundle? = nil)
 
 Use this initializer to load a color from a color set stored in an Asset Catalog. The system determines which color within the set to use based on the environment at render time. For example, you can provide light and dark versions for background and foreground colors:
 
-![A screenshot of color sets for foreground and background colors,](/images/com.apple.SwiftUI/Color-init-1@2x.png)
+![A screenshot of color sets for foreground and background colors,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Color-init-1@2x.png)
 
 You can then instantiate colors by referencing the names of the assets:
 
@@ -43,7 +44,7 @@ struct Hello: View {
 
 SwiftUI renders the appropriate colors for each appearance:
 
-![A side by side comparison of light and dark appearance screenshots](/images/com.apple.SwiftUI/Color-init-2@2x.png)
+![A side by side comparison of light and dark appearance screenshots](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Color-init-2@2x.png)
 
 ## Parameters
 
@@ -52,9 +53,10 @@ SwiftUI renders the appropriate colors for each appearance:
 
 ## See Also
 
-- [init(_:)](color/init(_:).md)
+### Creating a color
+- [init(_:)](./init%28_%29.md)
   Creates a constant color with the values specified by the resolved color.
-- [func resolve(in: EnvironmentValues) -> Color.Resolved](color/resolve(in:).md)
+- [func resolve(in: EnvironmentValues) -> Color.Resolved](./resolve%28in%29.md)
   Evaluates this color to a resolved color given the current `context`.
 
 

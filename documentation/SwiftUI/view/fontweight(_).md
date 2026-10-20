@@ -1,7 +1,8 @@
 # fontWeight(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the font weight of the text in this view.
 
@@ -31,17 +32,18 @@ A view that uses the font weight you specify.
 
 ## See Also
 
-- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
+### Setting a font
+- [Applying custom fonts to text](../applying-custom-fonts-to-text.md)
   Add and use a font in your app that scales with Dynamic Type.
-- [func font(Font?) -> some View](view/font(_:).md)
+- [func font(Font?) -> some View](./font%28_%29.md)
   Sets the default font for text in this view.
-- [func fontDesign(Font.Design?) -> some View](view/fontdesign(_:).md)
+- [func fontDesign(Font.Design?) -> some View](./fontdesign%28_%29.md)
   Sets the font design of the text in this view.
-- [func fontWidth(Font.Width?) -> some View](view/fontwidth(_:).md)
+- [func fontWidth(Font.Width?) -> some View](./fontwidth%28_%29.md)
   Sets the font width of the text in this view.
-- [var font: Font?](environmentvalues/font.md)
+- [var font: Font?](../environmentvalues/font.md)
   The default font of this environment.
-- [struct Font](font.md)
+- [struct Font](../font.md)
   An environment-dependent font.
 
 

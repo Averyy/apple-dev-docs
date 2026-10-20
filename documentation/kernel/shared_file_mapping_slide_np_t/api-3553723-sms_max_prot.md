@@ -1,14 +1,15 @@
 # sms_max_prot
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 vm_prot_t sms_max_prot;
 ```
 

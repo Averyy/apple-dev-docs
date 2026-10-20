@@ -1,7 +1,8 @@
 # OSSynchronizeIO
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 The OSSynchronizeIO routine ensures orderly load and store operations to noncached memory mapped I/O devices.
 
@@ -10,7 +11,7 @@ The OSSynchronizeIO routine ensures orderly load and store operations to noncach
 
 ## Declaration
 
-```swift
+```c
 void OSSynchronizeIO(void);
 ```
 
@@ -20,16 +21,17 @@ The OSSynchronizeIO routine ensures orderly load and store operations to noncach
 
 ## See Also
 
-- [IOServiceOrdering](1532621-ioserviceordering.md)
-- [IOFixedDivide](1575297-iofixeddivide.md)
-- [IOFixedMultiply](1575302-iofixedmultiply.md)
-- [IOAlignmentToSize](1575292-ioalignmenttosize.md)
-- [IOSizeToAlignment](1575319-iosizetoalignment.md)
-- [DriverDescription](driverdescription.md)
-- [DriverOSRuntime](driverosruntime.md)
-- [DriverOSService](driverosservice.md)
-- [DriverServiceInfo](driverserviceinfo.md)
-- [DriverType](drivertype.md)
+### Utilities
+- [IOServiceOrdering](./api-1532621-ioserviceordering.md)
+- [IOFixedDivide](./api-1575297-iofixeddivide.md)
+- [IOFixedMultiply](./api-1575302-iofixedmultiply.md)
+- [IOAlignmentToSize](./api-1575292-ioalignmenttosize.md)
+- [IOSizeToAlignment](./api-1575319-iosizetoalignment.md)
+- [DriverDescription](./driverdescription.md)
+- [DriverOSRuntime](./driverosruntime.md)
+- [DriverOSService](./driverosservice.md)
+- [DriverServiceInfo](./driverserviceinfo.md)
+- [DriverType](./drivertype.md)
 
 
 ---

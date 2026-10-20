@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [BPF_MODE_DISABLED](1641967-anonymous/bpf_mode_disabled.md)
-- [BPF_MODE_INPUT](1641967-anonymous/bpf_mode_input.md)
-- [BPF_MODE_INPUT_OUTPUT](1641967-anonymous/bpf_mode_input_output.md)
-- [BPF_MODE_OUTPUT](1641967-anonymous/bpf_mode_output.md)
+- [BPF_MODE_DISABLED](./api-1641967-anonymous/bpf_mode_disabled.md)
+- [BPF_MODE_INPUT](./api-1641967-anonymous/bpf_mode_input.md)
+- [BPF_MODE_INPUT_OUTPUT](./api-1641967-anonymous/bpf_mode_input_output.md)
+- [BPF_MODE_OUTPUT](./api-1641967-anonymous/bpf_mode_output.md)
 
 
 ---

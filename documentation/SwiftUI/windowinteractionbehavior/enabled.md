@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The enabled behavior. The associated window interaction behavior will be enabled.
 

@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A display name for the person.
 
@@ -18,17 +19,22 @@ A display name for the person.
 var displayName: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * displayName;
+```
+
 #### Discussion
 
 Use this optional property to provide a name for the person object that can be displayed to users.
 
 ## See Also
 
-- [var contactIdentifier: String?](csperson/contactidentifier.md)
+### Accessing person properties
+- [var contactIdentifier: String?](./contactidentifier.md)
   The identifier for the contact associated with the person.
-- [var handleIdentifier: String](csperson/handleidentifier.md)
+- [var handleIdentifier: String](./handleidentifier.md)
   A key that identifies the type of contact property represented by the person object’s handle.
-- [var handles: [String]](csperson/handles.md)
+- [var handles: [String]](./handles.md)
   An array of contact handles related to the person.
 
 

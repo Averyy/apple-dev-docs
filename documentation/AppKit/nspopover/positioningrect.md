@@ -1,7 +1,8 @@
 # positioningRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle within the positioning view relative to which the popover should be positioned.
 
@@ -14,6 +15,10 @@ The rectangle within the positioning view relative to which the popover should b
 var positioningRect: NSRect { get set }
 ```
 
+```objc
+@property NSRect positioningRect;
+```
+
 #### Discussion
 
 Popovers are positioned relative to a positioning view and are automatically moved when the location or size of the positioning view changes.
@@ -24,9 +29,10 @@ This property is exposed as a read-only binding.
 
 ## See Also
 
-- [var behavior: NSPopover.Behavior](nspopover/behavior-swift.property.md)
+### Managing a Popover’s Position and Size
+- [var behavior: NSPopover.Behavior](./behavior-swift.property.md)
   Specifies the behavior of the popover.
-- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](nspopover/show(relativeto:of:preferrededge:).md)
+- [func show(relativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge)](./show%28relativeto,of,preferrededge%29.md)
   Shows the popover anchored to the specified view.
 
 

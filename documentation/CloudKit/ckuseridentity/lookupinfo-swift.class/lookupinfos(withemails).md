@@ -1,7 +1,8 @@
 # lookupInfos(withEmails:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of lookup infos for the specified email addresses.
 
@@ -20,9 +21,13 @@ Returns an array of lookup infos for the specified email addresses.
 class func lookupInfos(withEmails emails: [String]) -> [CKUserIdentity.LookupInfo]
 ```
 
+```objc
++ (NSArray<CKUserIdentityLookupInfo *> *) lookupInfosWithEmails:(NSArray<NSString *> *) emails;
+```
+
 #### Discussion
 
-Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperation`](ckdiscoveruseridentitiesoperation.md) operation or an  [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identities.
+Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperation`](../../ckdiscoveruseridentitiesoperation.md) operation or an  [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identities.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ Use the values that this method returns in an [`CKDiscoverUserIdentitiesOperatio
 
 ## See Also
 
-- [class func lookupInfos(withPhoneNumbers: [String]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(withphonenumbers:).md)
+### Creating Multiple Lookup Infos
+- [class func lookupInfos(withPhoneNumbers: [String]) -> [CKUserIdentity.LookupInfo]](./lookupinfos%28withphonenumbers%29.md)
   Returns an array of lookup infos for the specified phone numbers.
-- [class func lookupInfos(with: [CKRecord.ID]) -> [CKUserIdentity.LookupInfo]](ckuseridentity/lookupinfo-swift.class/lookupinfos(with:).md)
+- [class func lookupInfos(with: [CKRecord.ID]) -> [CKUserIdentity.LookupInfo]](./lookupinfos%28with%29.md)
   Returns an array of lookup infos for the specified user record IDs.
 
 

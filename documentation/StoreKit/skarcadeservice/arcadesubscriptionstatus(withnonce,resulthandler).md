@@ -1,7 +1,8 @@
 # arcadeSubscriptionStatus(withNonce:resultHandler:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,10 +18,15 @@
 class func arcadeSubscriptionStatus(withNonce nonce: UInt64, resultHandler: @escaping (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)
 ```
 
+```objc
++ (void) arcadeSubscriptionStatusWithNonce:(uint64_t) nonce resultHandler:(void (^)(NSData *subscriptionStatus, uint32_t subscriptionStatusLength, NSData *cmacOfNonce, uint32_t cmacOfNonceLength, NSError *error)) resultHandler;
+```
+
 ## See Also
 
-- [class func registerArcadeAppWithRandom(fromLib: Data, randomFromLibLength: UInt32, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](skarcadeservice/registerarcadeappwithrandom(fromlib:randomfromliblength:resulthandler:).md)
-- [class func repairArcadeApp()](skarcadeservice/repairarcadeapp.md)
+### Type Methods
+- [class func registerArcadeAppWithRandom(fromLib: Data, randomFromLibLength: UInt32, resultHandler: (Data?, UInt32, Data?, UInt32, (any Error)?) -> Void)](./registerarcadeappwithrandom%28fromlib,randomfromliblength,resulthandler%29.md)
+- [class func repairArcadeApp()](./repairarcadeapp%28%29.md)
 
 
 ---

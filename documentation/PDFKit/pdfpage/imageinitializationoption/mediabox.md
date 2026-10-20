@@ -1,7 +1,8 @@
 # mediaBox
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -17,14 +18,19 @@
 static let mediaBox: PDFPage.ImageInitializationOption
 ```
 
+```c
+extern PDFPageImageInitializationOption const PDFPageImageInitializationOptionMediaBox;
+```
+
 ## See Also
 
-- [static let compressionQuality: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/compressionquality.md)
-- [static let rotation: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/rotation.md)
-- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/upscaleifsmaller.md)
-- [static let compressionQuality: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/compressionquality.md)
-- [static let rotation: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/rotation.md)
-- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](pdfpage/imageinitializationoption/upscaleifsmaller.md)
+### Type Properties
+- [static let compressionQuality: PDFPage.ImageInitializationOption](./compressionquality.md)
+- [static let rotation: PDFPage.ImageInitializationOption](./rotation.md)
+- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](./upscaleifsmaller.md)
+- [static let compressionQuality: PDFPage.ImageInitializationOption](./compressionquality.md)
+- [static let rotation: PDFPage.ImageInitializationOption](./rotation.md)
+- [static let upscaleIfSmaller: PDFPage.ImageInitializationOption](./upscaleifsmaller.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # disable_iolog_serial_output
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 bool disable_iolog_serial_output;
 ```
 

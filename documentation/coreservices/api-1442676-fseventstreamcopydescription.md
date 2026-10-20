@@ -1,7 +1,8 @@
 # FSEventStreamCopyDescription(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventStreamCopyDescription(_ streamRef: ConstFSEventStreamRef) -> CFString
 ```
 
-#### Return_value
+```c
+CFStringRef FSEventStreamCopyDescription(ConstFSEventStreamRef streamRef);
+```
+
+#### Return Value
 
 A CFStringRef containing the description of the supplied stream. Ownership follows the Copy rule.
 

@@ -1,7 +1,8 @@
 # init(conversationUUID:conversationUUIDToMergeWith:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that merges two conversations.
 

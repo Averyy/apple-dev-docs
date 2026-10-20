@@ -1,7 +1,8 @@
 # hash
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unsigned integer that can be used as a hash table address.
 

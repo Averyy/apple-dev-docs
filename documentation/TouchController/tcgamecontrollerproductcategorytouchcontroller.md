@@ -1,7 +1,8 @@
 # TCGameControllerProductCategoryTouchController
 
 **Framework**: Touch Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 let TCGameControllerProductCategoryTouchController: String
+```
+
+```c
+extern NSString * const TCGameControllerProductCategoryTouchController;
 ```
 
 

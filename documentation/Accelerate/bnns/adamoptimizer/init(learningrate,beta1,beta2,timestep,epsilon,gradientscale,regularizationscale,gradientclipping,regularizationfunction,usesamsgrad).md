@@ -1,7 +1,8 @@
 # init(learningRate:beta1:beta2:timeStep:epsilon:gradientScale:regularizationScale:gradientClipping:regularizationFunction:usesAMSGrad:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new Adam optimizer object with gradient clipped by value or clipped by norm.
 
@@ -11,8 +12,10 @@ Returns a new Adam optimizer object with gradient clipped by value or clipped by
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -35,7 +38,8 @@ init(learningRate: Float = 0.001, beta1: Float = 0.9, beta2: Float = 0.999, time
 
 ## See Also
 
-- [init(learningRate: Float, beta1: Float, beta2: Float, timeStep: Float, epsilon: Float, gradientScale: Float, regularizationScale: Float, clipsGradientsTo: ClosedRange<Float>?, regularizationFunction: BNNSOptimizerRegularizationFunction)](bnns/adamoptimizer/init(learningrate:beta1:beta2:timestep:epsilon:gradientscale:regularizationscale:clipsgradientsto:regularizationfunction:).md)
+### Creating an Adam Optimizer
+- [init(learningRate: Float, beta1: Float, beta2: Float, timeStep: Float, epsilon: Float, gradientScale: Float, regularizationScale: Float, clipsGradientsTo: ClosedRange<Float>?, regularizationFunction: BNNSOptimizerRegularizationFunction)](./init%28learningrate,beta1,beta2,timestep,epsilon,gradientscale,regularizationscale,clipsgradientsto,regularizationfunction%29.md)
   Returns a new Adam optimizer object.
 
 

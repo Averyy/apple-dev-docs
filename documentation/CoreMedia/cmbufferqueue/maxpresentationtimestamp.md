@@ -1,7 +1,8 @@
 # maxPresentationTimeStamp
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The greatest presentation timestamp.
 
@@ -22,19 +23,20 @@ var maxPresentationTimeStamp: CMTime { get }
 
 ## See Also
 
-- [var duration: CMTime](cmbufferqueue/duration.md)
+### Inspecting Duration and Timing
+- [var duration: CMTime](./duration.md)
   The sum of all durations of buffers in the queue.
-- [var totalSize: Int](cmbufferqueue/totalsize.md)
+- [var totalSize: Int](./totalsize.md)
   The total size of all buffers in the queue.
-- [var firstDecodeTimeStamp: CMTime](cmbufferqueue/firstdecodetimestamp.md)
+- [var firstDecodeTimeStamp: CMTime](./firstdecodetimestamp.md)
   The decode timestamp of the first buffer in the queue.
-- [var firstPresentationTimeStamp: CMTime](cmbufferqueue/firstpresentationtimestamp.md)
+- [var firstPresentationTimeStamp: CMTime](./firstpresentationtimestamp.md)
   The presentation timestamp of the first buffer in the queue.
-- [var endPresentationTimeStamp: CMTime](cmbufferqueue/endpresentationtimestamp.md)
+- [var endPresentationTimeStamp: CMTime](./endpresentationtimestamp.md)
   The greatest end presentation timestamp.
-- [var minDecodeTimeStamp: CMTime](cmbufferqueue/mindecodetimestamp.md)
+- [var minDecodeTimeStamp: CMTime](./mindecodetimestamp.md)
   The earliest decode timestamp.
-- [var minPresentationTimeStamp: CMTime](cmbufferqueue/minpresentationtimestamp.md)
+- [var minPresentationTimeStamp: CMTime](./minpresentationtimestamp.md)
   The earliest presentation timestamp.
 
 

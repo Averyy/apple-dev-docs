@@ -1,7 +1,8 @@
 # MACaptionAppearanceCopySelectedLanguages(_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the preferred caption languages.
 
@@ -19,21 +20,26 @@ Returns the preferred caption languages.
 func MACaptionAppearanceCopySelectedLanguages(_ domain: MACaptionAppearanceDomain) -> Unmanaged<CFArray>
 ```
 
+```c
+extern CFArrayRefMACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain domain);
+```
+
 #### Return Value
 
 An ordered array of preferred canonical language identifiers.
 
 #### Discussion
 
-Languages added using the [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](macaptionappearanceaddselectedlanguage(_:_:).md) function are normalized. As a result, the contents of the returned array may have slightly different strings from those passed into [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](macaptionappearanceaddselectedlanguage(_:_:).md).
+Languages added using the [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](./macaptionappearanceaddselectedlanguage%28_,_%29.md) function are normalized. As a result, the contents of the returned array may have slightly different strings from those passed into [`MACaptionAppearanceAddSelectedLanguage(_:_:)`](./macaptionappearanceaddselectedlanguage%28_,_%29.md).
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](./macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](./macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
 
 ## See Also
 
-- [func MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain, CFString) -> Bool](macaptionappearanceaddselectedlanguage(_:_:).md)
+### Language settings
+- [func MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain, CFString) -> Bool](./macaptionappearanceaddselectedlanguage%28_,_%29.md)
   Adds a preference for caption language to the stack of languages.
 
 

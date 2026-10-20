@@ -1,7 +1,8 @@
 # BuildBundle.Attributes.Entitlements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Entitlement information for your app or App Clip.
 
@@ -10,14 +11,14 @@ Entitlement information for your app or App Clip.
 
 ## Declaration
 
-```swift
+```
 object BuildBundle.Attributes.Entitlements
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildBundle.Attributes.Entitlements.Any Key](buildbundle/attributes-data.dictionary/entitlements-data.dictionary/any-key-data.dictionary.md)
+- [object BuildBundle.Attributes.Entitlements.Any Key](./entitlements-data.dictionary/any-key-data.dictionary.md)
   A string that represents the path to an executable in the build bundle.
 
 ## Properties

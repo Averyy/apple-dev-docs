@@ -1,21 +1,22 @@
 # AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.4+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2.Data](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentV2.Data](./appstoreversionexperimentv2-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version experiment treatment.
 
 ## Properties
@@ -24,8 +25,9 @@ object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimen
 
 ## See Also
 
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
-- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalizations-data.dictionary.md)
+### Objects
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperiment](./appstoreversionexperiment-data.dictionary.md)
+- [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations](./appstoreversionexperimenttreatmentlocalizations-data.dictionary.md)
 
 
 ---

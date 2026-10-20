@@ -1,21 +1,22 @@
 # AppPriceV2InlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppPriceV2InlineCreate.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppPriceV2InlineCreate.Relationships.AppPricePoint](apppricev2inlinecreate/relationships-data.dictionary/apppricepoint-data.dictionary.md)
+- [object AppPriceV2InlineCreate.Relationships.AppPricePoint](./relationships-data.dictionary/apppricepoint-data.dictionary.md)
 
 ## Properties
 

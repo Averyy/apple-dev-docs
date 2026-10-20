@@ -1,17 +1,18 @@
 # operator-
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 ptrdiff_t operator-(const bounded_ptr<T, TrappingPolicy> & a, const bounded_ptr<T, TrappingPolicy> & b);
 ```
 

@@ -1,7 +1,8 @@
 # affectedRecordIdentifiers
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that uniquely identify the records affected by the error.
 
@@ -21,11 +22,12 @@ var affectedRecordIdentifiers: [String]? { get }
 
 ## See Also
 
-- [var affectedRecords: [AnyObject]?](cnerror/affectedrecords.md)
+### Error details
+- [var affectedRecords: [AnyObject]?](./affectedrecords.md)
   An array of record objects for which the error applies.
-- [CNError.Code](cnerror/code.md)
+- [CNError.Code](./code.md)
   Error codes that the system may return when you use Contacts framework methods.
-- [var keyPaths: [String]?](cnerror/keypaths.md)
+- [var keyPaths: [String]?](./keypaths.md)
   An array of key paths associated with the error.
 
 

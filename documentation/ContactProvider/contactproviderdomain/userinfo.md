@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Custom values used to configure the extension before enumeration begins.

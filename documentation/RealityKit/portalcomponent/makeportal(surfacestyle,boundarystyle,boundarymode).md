@@ -1,7 +1,8 @@
 # makePortal(surfaceStyle:boundaryStyle:boundaryMode:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a portal entity and a world entity, and configures them.
 
@@ -21,11 +22,11 @@ static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle
 
 #### Return Value
 
-A [`PortalComponent.Portal`](portalcomponent/portal.md) containing the new portal entity and world entity.
+A [`PortalComponent.Portal`](./portal.md) containing the new portal entity and world entity.
 
 #### Discussion
 
-This is the simplest way to set up a portal. The returned [`PortalComponent.Portal`](portalcomponent/portal.md) value contains a fresh portal entity and a fresh world entity that you add to your scene. To add portal world content, parent it under the returned `worldEntity`.
+This is the simplest way to set up a portal. The returned [`PortalComponent.Portal`](./portal.md) value contains a fresh portal entity and a fresh world entity that you add to your scene. To add portal world content, parent it under the returned `worldEntity`.
 
 ```swift
 let portal = PortalComponent.makePortal(
@@ -38,13 +39,13 @@ content.add(portal.worldEntity)
 content.add(portal.portalEntity)
 ```
 
-To configure entities you already own — for example, a portal entity that has gesture components, or a world entity that’s already in your scene hierarchy — use [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md) instead.
+To configure entities you already own — for example, a portal entity that has gesture components, or a world entity that’s already in your scene hierarchy — use [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](./configure%28world,portalentity,surfacestyle,boundarystyle,boundarymode%29.md) instead.
 
 ## Parameters
 
 - `surfaceStyle`: The size of the portal surface mesh.
-- `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](portalcomponent/boundarystyle/infiniteplane().md).
-- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.none`](portalcomponent/boundarymode/none.md).
+- `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](./boundarystyle/infiniteplane%28%29.md).
+- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.none`](./boundarymode/none.md).
 
 
 ---

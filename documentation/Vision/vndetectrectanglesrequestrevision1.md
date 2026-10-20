@@ -1,7 +1,8 @@
 # VNDetectRectanglesRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the rectangle detection request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the rectangle detection request.
 
 ```swift
 var VNDetectRectanglesRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNDetectRectanglesRequestRevision1;
 ```
 
 

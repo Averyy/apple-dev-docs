@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 origin is a CPNavigationWaypoint, describing the origin of the segment.
 
@@ -14,6 +15,10 @@ origin is a CPNavigationWaypoint, describing the origin of the segment.
 
 ```swift
 var origin: CPNavigationWaypoint { get }
+```
+
+```objc
+@property (nonatomic, readonly) CPNavigationWaypoint * origin;
 ```
 
 

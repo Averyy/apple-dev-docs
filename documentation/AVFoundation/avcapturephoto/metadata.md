@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of metadata describing the captured image.
 
@@ -17,19 +18,24 @@ A dictionary of metadata describing the captured image.
 var metadata: [String : Any] { get }
 ```
 
+```objc
+@property (readonly) NSDictionary<NSString *,id> * metadata;
+```
+
 #### Discussion
 
 See `CGImageProperties` for possible keys and values. Metadata captured with a photo may include image orientation, Exif camera properties, and Live Photo metadata.
 
 ## See Also
 
-- [var depthData: AVDepthData?](avcapturephoto/depthdata.md)
+### Accessing photo metadata
+- [var depthData: AVDepthData?](./depthdata.md)
   Depth or disparity map data captured with the photo.
-- [var cameraCalibrationData: AVCameraCalibrationData?](avcapturephoto/cameracalibrationdata.md)
+- [var cameraCalibrationData: AVCameraCalibrationData?](./cameracalibrationdata.md)
   Calibration information for the camera device that captured the photo.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcapturephoto/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./sourcedevicetype.md)
   The type of device that captured the photo.
-- [var portraitEffectsMatte: AVPortraitEffectsMatte?](avcapturephoto/portraiteffectsmatte.md)
+- [var portraitEffectsMatte: AVPortraitEffectsMatte?](./portraiteffectsmatte.md)
   The portrait effects matte captured with the photo.
 
 

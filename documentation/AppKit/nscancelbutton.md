@@ -1,12 +1,15 @@
 # NSCancelButton
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Cancel button
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10 (renamed: NSApplication.ModalResponse.cancel)
+
+> **Deprecated**: In an [`NSWindow`](./nswindow.md) object, use the [`NSApplication.ModalResponse`](./nsapplication/modalresponse.md) constants instead.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The Cancel button
 var NSCancelButton: Int { get }
 ```
 
+```c
+NSCancelButton
+```
+
 ## See Also
 
-- [var NSOKButton: Int](nsokbutton.md)
+### Constants
+- [var NSOKButton: Int](./nsokbutton.md)
   The OK button
 
 

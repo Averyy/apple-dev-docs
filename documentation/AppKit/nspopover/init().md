@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.7+
@@ -12,9 +13,14 @@
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder)](nspopover/init(coder:).md)
+### Initializers
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

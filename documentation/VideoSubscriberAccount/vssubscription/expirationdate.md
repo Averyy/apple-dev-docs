@@ -1,17 +1,20 @@
 # expirationDate
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the user’s subscription expires.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0
+- iPadOS 11.0+ - Deprecated in 18.0
+- Mac Catalyst 11.0+ - Deprecated in 18.0
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use VSUserAccount instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ The date when the user’s subscription expires.
 var expirationDate: Date! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) NSDate * expirationDate;
+```
+
 #### Discussion
 
-This property defines the exact time when the subscription becomes inactive. When the current subscription becomes inactive, the system behaves as though the person isn’t a subscriber, similar to calling [`setCurrentSubscription(_:)`](vssubscriptionregistrationcenter/setcurrentsubscription(_:).md) with a value of `nil`.
+This property defines the exact time when the subscription becomes inactive. When the current subscription becomes inactive, the system behaves as though the person isn’t a subscriber, similar to calling [`setCurrentSubscription(_:)`](../vssubscriptionregistrationcenter/setcurrentsubscription%28_%29.md) with a value of `nil`.
 
 You can use this property when a subscriber decides not to renew their subscription by setting an expiration date that corresponds to the final billing cycle end date.
 
@@ -31,13 +38,14 @@ The default is `distantFuture`.
 
 ## See Also
 
-- [var accessLevel: VSSubscriptionAccessLevel](vssubscription/accesslevel.md)
+### Setting Subscription Details
+- [var accessLevel: VSSubscriptionAccessLevel](./accesslevel.md)
   The subscriber’s level of access to your catalog of content.
-- [enum VSSubscriptionAccessLevel](vssubscriptionaccesslevel.md)
+- [enum VSSubscriptionAccessLevel](../vssubscriptionaccesslevel.md)
   Constants representing a subscriber’s level of access to your content.
-- [var billingIdentifier: String?](vssubscription/billingidentifier.md)
+- [var billingIdentifier: String?](./billingidentifier.md)
   The subscriber’s billing group.
-- [var tierIdentifiers: [String]!](vssubscription/tieridentifiers.md)
+- [var tierIdentifiers: [String]!](./tieridentifiers.md)
   A list of content from your catalog that the subscriber can access.
 
 

@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
 

@@ -1,7 +1,8 @@
 # mountSingleVolume(resource:bundleID:options:completionHandler:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously mounts a single volume file system with a given resource.
 
@@ -11,7 +12,15 @@ Asynchronously mounts a single volume file system with a given resource.
 ## Declaration
 
 ```swift
+func mountSingleVolume(resource: FSResource, bundleID: String, options: [String], completionHandler: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func mountSingleVolume(resource: FSResource, bundleID: String, options: [String]) async throws -> URL
+```
+
+```objc
+- (void) mountSingleVolumeForResource:(FSResource *) resource bundleID:(NSString *) bundleID options:(NSArray<NSString *> *) options completionHandler:(void (^)(NSURL *mountPath, NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -29,7 +38,8 @@ The caller can only mount modules that are visible to them.
 
 ## See Also
 
-- [class FSResource](fsresource.md)
+### Performing single-volume mounting
+- [class FSResource](../fsresource.md)
   An abstract resource a file system uses to provide data for a volume.
 
 

@@ -1,7 +1,8 @@
 # flippedVertically
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that specifies that images should always be flipped.
 
@@ -19,15 +20,20 @@ An option that specifies that images should always be flipped.
 static let flippedVertically: MTKTextureLoader.Origin
 ```
 
+```c
+extern MTKTextureLoaderOrigin const MTKTextureLoaderOriginFlippedVertically;
+```
+
 #### Discussion
 
 The texture will be flipped vertically regardless of any metadata in the file indicating the placement of the origin in the source data.
 
 ## See Also
 
-- [static let topLeft: MTKTextureLoader.Origin](mtktextureloader/origin/topleft.md)
+### Specifying Texture Origin Options
+- [static let topLeft: MTKTextureLoader.Origin](./topleft.md)
   An option for specifying images that should be flipped only to put their origin in the top-left corner.
-- [static let bottomLeft: MTKTextureLoader.Origin](mtktextureloader/origin/bottomleft.md)
+- [static let bottomLeft: MTKTextureLoader.Origin](./bottomleft.md)
   An option for specifying images that should be flipped only to put their origin in the bottom-left corner.
 
 

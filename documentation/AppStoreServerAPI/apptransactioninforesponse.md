@@ -1,7 +1,8 @@
 # AppTransactionInfoResponse
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains signed app transaction information for a customer.
 
@@ -10,24 +11,24 @@ A response that contains signed app transaction information for a customer.
 
 ## Declaration
 
-```swift
+```
 object AppTransactionInfoResponse
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-This response contains information that you request by calling the [`Get App Transaction Info`](get-app-transaction-info.md) endpoint. For information on decoding and reading the app transaction, see [`JWSAppTransaction`](jwsapptransaction.md) and [`JWSAppTransactionDecodedPayload`](jwsapptransactiondecodedpayload.md).
+This response contains information that you request by calling the [`Get App Transaction Info`](./get-app-transaction-info.md) endpoint. For information on decoding and reading the app transaction, see [`JWSAppTransaction`](./jwsapptransaction.md) and [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md).
 
 ## Topics
 
 ### Response data types
-- [type JWSAppTransaction](jwsapptransaction.md)
+- [type JWSAppTransaction](./jwsapptransaction.md)
   App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+- [object JWSAppTransactionDecodedPayload](./jwsapptransactiondecodedpayload.md)
   A decoded payload that contains app transaction information.
 
 ## Properties
@@ -36,7 +37,8 @@ This response contains information that you request by calling the [`Get App Tra
 
 ## See Also
 
-- [Get App Transaction Info](get-app-transaction-info.md)
+### App Transaction information
+- [Get App Transaction Info](./get-app-transaction-info.md)
   Get a customer’s app transaction information for your app.
 
 

@@ -1,7 +1,8 @@
 # UseCoordinates
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 channel is described by the mCoordinates fields.
 
@@ -10,15 +11,16 @@ channel is described by the mCoordinates fields.
 
 ## Declaration
 
-```swift
+```c
 UseCoordinates
 ```
 
 ## See Also
 
-- [Unused](videodriverkit/iouservideochannellabel/unused.md)
+### Special values
+- [Unused](./unused.md)
   channel is present, but has no intended use or destination
-- [Unknown](videodriverkit/iouservideochannellabel/unknown.md)
+- [Unknown](./unknown.md)
   unknown or unspecified other use
 
 

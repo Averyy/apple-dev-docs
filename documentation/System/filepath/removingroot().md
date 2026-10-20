@@ -1,7 +1,8 @@
 # removingRoot()
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new path containing just the components, i.e. everything after `root`.
 
@@ -26,15 +27,19 @@ Returns self if `root == nil`.
 
 Examples:
 
-- Unix: - `/foo/bar => foo/bar`
-- `foo/bar  => foo/bar`
-- `/        => ""`
-- Windows: - `C:\foo\bar                  => foo\bar`
-- `foo\bar                     => foo\bar`
-- `\\?\UNC\server\share\file   => file`
-- `\\?\device\folder\file.exe  => folder\file.exe`
-- `\\server\share\file         => file`
-- `\                           => ""`
+- Unix:
+
+  - `/foo/bar => foo/bar`
+  - `foo/bar  => foo/bar`
+  - `/        => ""`
+- Windows:
+
+  - `C:\foo\bar                  => foo\bar`
+  - `foo\bar                     => foo\bar`
+  - `\\?\UNC\server\share\file   => file`
+  - `\\?\device\folder\file.exe  => folder\file.exe`
+  - `\\server\share\file         => file`
+  - `\                           => ""`
 
 
 ---

@@ -1,7 +1,8 @@
 # createIntermediateCertificate(_:rootCertificate:intermediatePublicKey:issuerID:fabricID:validityPeriod:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.6+
@@ -16,6 +17,10 @@
 
 ```swift
 class func createIntermediateCertificate(_ rootKeypair: any MTRKeypair, rootCertificate: Data, intermediatePublicKey: SecKey, issuerID: NSNumber?, fabricID: NSNumber?, validityPeriod: DateInterval) throws -> Data
+```
+
+```objc
++ (MTRCertificateDERBytes) createIntermediateCertificate:(id<MTRKeypair>) rootKeypair rootCertificate:(MTRCertificateDERBytes) rootCertificate intermediatePublicKey:(SecKeyRef) intermediatePublicKey issuerID:(NSNumber *) issuerID fabricID:(NSNumber *) fabricID validityPeriod:(NSDateInterval *) validityPeriod error:(NSError **) error;
 ```
 
 

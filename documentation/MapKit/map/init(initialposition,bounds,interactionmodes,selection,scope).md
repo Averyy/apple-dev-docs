@@ -1,7 +1,8 @@
 # init(initialPosition:bounds:interactionModes:selection:scope:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new, empty map with the initial camera position, bounds, interaction modes, selected map feature, and scope you provide.
 
@@ -9,7 +10,7 @@ Creates a new, empty map with the initial camera position, bounds, interaction m
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,45 +19,48 @@ Creates a new, empty map with the initial camera position, bounds, interaction m
 @preconcurrency init(initialPosition: MapCameraPosition, bounds: MapCameraBounds? = nil, interactionModes: MapInteractionModes = .all, selection: Binding<MapFeature?>, scope: Namespace.ID? = nil) where Content == MapContentView<MapFeature, EmptyMapContent>
 ```
 
+Available when `Content` conforms to `View`.
+
 ## Parameters
 
-- `initialPosition`: The initial [`MapCameraPosition`](mapcameraposition.md).
-- `bounds`: The [`MapCameraBounds`](mapcamerabounds.md) that define the camera’s view of the map.
-- `interactionModes`: The [`MapInteractionModes`](mapinteractionmodes.md) that describe ways a person can interact with the map.
-- `selection`: A binding to a [`MapFeature`](mapfeature.md) that represents a person’s selection.
-- `scope`: The map’s [`Namespace.ID`](https://developer.apple.com/documentation/swiftui/namespace/id).
+- `initialPosition`: The initial [`MapCameraPosition`](../mapcameraposition.md).
+- `bounds`: The [`MapCameraBounds`](../mapcamerabounds.md) that define the camera’s view of the map.
+- `interactionModes`: The [`MapInteractionModes`](../mapinteractionmodes.md) that describe ways a person can interact with the map.
+- `selection`: A binding to a [`MapFeature`](../mapfeature.md) that represents a person’s selection.
+- `scope`: The map’s [`Namespace.ID`](../../SwiftUI/namespace/id.md).
 
 ## See Also
 
-- [init(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](map/init(bounds:interactionmodes:scope:).md)
+### Creating a map
+- [init(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](./init%28bounds,interactionmodes,scope%29.md)
   Creates a new, empty map with the bounds, interaction modes, and scope you provide.
-- [init<C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](map/init(bounds:interactionmodes:scope:content:).md)
+- [init<C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](./init%28bounds,interactionmodes,scope,content%29.md)
   Creates a new map with the bounds, interaction modes, scope, and content you provide.
-- [init(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?)](map/init(bounds:interactionmodes:selection:scope:)-11lec.md)
+- [init(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?)](./init%28bounds,interactionmodes,selection,scope%29-11lec.md)
   Creates a new, empty map with the bounds, interaction modes, a binding to a map feature, and scope you provide.
-- [init<SelectedValue>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?)](map/init(bounds:interactionmodes:selection:scope:)-236di.md)
+- [init<SelectedValue>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?)](./init%28bounds,interactionmodes,selection,scope%29-236di.md)
   Creates a new, empty map with the bounds, interaction modes, the selected map feature, and scope you provide.
-- [init<C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](map/init(bounds:interactionmodes:selection:scope:content:)-28wns.md)
+- [init<C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](./init%28bounds,interactionmodes,selection,scope,content%29-28wns.md)
   Creates a new map with the bounds, interaction modes, selected map feature, scope, and map content you provide.
-- [init<SelectedValue, C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(bounds:interactionmodes:selection:scope:content:)-2tdbr.md)
+- [init<SelectedValue, C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](./init%28bounds,interactionmodes,selection,scope,content%29-2tdbr.md)
   Creates a new map with the bounds, interaction modes, selected value, scope, and map content you provide.
-- [init(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](map/init(initialposition:bounds:interactionmodes:scope:).md)
+- [init(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](./init%28initialposition,bounds,interactionmodes,scope%29.md)
   Creates a new, empty map with the initial camera position, bounds, interaction modes, and scope you provide.
-- [init<C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](map/init(initialposition:bounds:interactionmodes:scope:content:).md)
+- [init<C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](./init%28initialposition,bounds,interactionmodes,scope,content%29.md)
   Creates a new map with the initial camera position, bounds, interaction modes, scope, and map content you provide.
-- [init<C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-9feos.md)
+- [init<C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](./init%28initialposition,bounds,interactionmodes,selection,scope,content%29-9feos.md)
   Creates a new map with the initial camera position, bounds, interaction modes, selected map feature, scope, and content you provide.
-- [init<SelectedValue, C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-451vp.md)
+- [init<SelectedValue, C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](./init%28initialposition,bounds,interactionmodes,selection,scope,content%29-451vp.md)
   Creates a new map with the initial camera position, bounds, interaction modes, selected map feature, scope, and content you provide.
-- [init(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](map/init(position:bounds:interactionmodes:scope:).md)
+- [init(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?)](./init%28position,bounds,interactionmodes,scope%29.md)
   Creates a new, empty map with the initial camera position, bounds, interaction modes, and scope you provide.
-- [init<C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](map/init(position:bounds:interactionmodes:scope:content:).md)
+- [init<C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, scope: Namespace.ID?, content: () -> C)](./init%28position,bounds,interactionmodes,scope,content%29.md)
   Creates a new map with the initial camera position, bounds, interaction modes, scope, and content you provide.
-- [init(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?)](map/init(position:bounds:interactionmodes:selection:scope:).md)
+- [init(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?)](./init%28position,bounds,interactionmodes,selection,scope%29.md)
   Creates a new map with the initial camera position, bounds, interaction modes, scope, and content you provide.
-- [init<C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](map/init(position:bounds:interactionmodes:selection:scope:content:)-47y4p.md)
+- [init<C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<MapFeature?>, scope: Namespace.ID?, content: () -> C)](./init%28position,bounds,interactionmodes,selection,scope,content%29-47y4p.md)
   Creates a new map with the initial camera position, bounds, interaction modes, selected feature, scope, and content you provide.
-- [init<SelectedValue, C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(position:bounds:interactionmodes:selection:scope:content:)-9xq1q.md)
+- [init<SelectedValue, C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](./init%28position,bounds,interactionmodes,selection,scope,content%29-9xq1q.md)
   Creates a new map with the initial camera position, bounds, interaction modes, selected feature, scope, and content you provide.
 
 

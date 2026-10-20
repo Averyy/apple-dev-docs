@@ -1,7 +1,8 @@
 # hasMediaCharacteristic(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether the track references media with t
 func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Bool
 ```
 
+```objc
+- (BOOL) hasMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the track references media with the specified characteristic; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the track references media with the specified characteristic; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,17 +34,18 @@ func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Boo
 
 ## See Also
 
-- [var isPlayable: Bool](avmutablemovietrack/isplayable.md)
+### Accessing track information
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether the track is playable in the current environment.
-- [var isDecodable: Bool](avmutablemovietrack/isdecodable.md)
+- [var isDecodable: Bool](./isdecodable.md)
   A Boolean value that indicates whether the track is decodable in the current environment.
-- [var isEnabled: Bool](avmutablemovietrack/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the track’s container enables it.
-- [var isSelfContained: Bool](avmutablemovietrack/isselfcontained.md)
+- [var isSelfContained: Bool](./isselfcontained.md)
   A Boolean value that indicates whether this track references sample data only within its container file.
-- [var hasProtectedContent: Bool](avmutablemovietrack/hasprotectedcontent.md)
+- [var hasProtectedContent: Bool](./hasprotectedcontent.md)
   A Boolean value that indicates whether a track contains protected content.
-- [var totalSampleDataLength: Int64](avmutablemovietrack/totalsampledatalength.md)
+- [var totalSampleDataLength: Int64](./totalsampledatalength.md)
   The total number of bytes of sample data the track requires.
 
 

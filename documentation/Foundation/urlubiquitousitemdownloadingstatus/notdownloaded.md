@@ -1,9 +1,10 @@
 # notDownloaded
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](filemanager/startdownloadingubiquitousitem(at:).md) to download it.
+This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](../filemanager/startdownloadingubiquitousitem%28at%29.md) to download it.
 
 **Availability**:
 - iOS 7.0+
@@ -20,11 +21,16 @@ This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)
 static let notDownloaded: URLUbiquitousItemDownloadingStatus
 ```
 
+```c
+extern NSURLUbiquitousItemDownloadingStatus const NSURLUbiquitousItemDownloadingStatusNotDownloaded;
+```
+
 ## See Also
 
-- [static let current: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/current.md)
+### Constants
+- [static let current: URLUbiquitousItemDownloadingStatus](./current.md)
   A local copy of this item exists and is the most up-to-date version known to the device.
-- [static let downloaded: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/downloaded.md)
+- [static let downloaded: URLUbiquitousItemDownloadingStatus](./downloaded.md)
   A local copy of this item exists, but it is stale. The most recent version will be downloaded as soon as possible.
 
 

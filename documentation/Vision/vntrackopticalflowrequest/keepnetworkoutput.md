@@ -1,7 +1,8 @@
 # keepNetworkOutput
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates the raw pixel buffer continues to emit from the network.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates the raw pixel buffer continues to emit from the n
 var keepNetworkOutput: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL keepNetworkOutput;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false); otherwise, the request ignores [`outputPixelFormat`](vntrackopticalflowrequest/outputpixelformat.md).
+The default value is [`false`](../../Swift/false.md); otherwise, the request ignores [`outputPixelFormat`](./outputpixelformat.md).
 
 ## See Also
 
-- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring the Request
+- [var computationAccuracy: VNTrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [VNTrackOpticalFlowRequest.ComputationAccuracy](vntrackopticalflowrequest/computationaccuracy-swift.enum.md)
+- [VNTrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   Computational accuracy options.
-- [var outputPixelFormat: OSType](vntrackopticalflowrequest/outputpixelformat.md)
+- [var outputPixelFormat: OSType](./outputpixelformat.md)
   The pixel format type of the output value.
 
 

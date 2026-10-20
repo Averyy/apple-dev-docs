@@ -1,7 +1,8 @@
 # inputObservation
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object to track.
 
@@ -22,11 +23,12 @@ final let inputObservation: any QuadrilateralProviding & VisionObservation
 
 ## See Also
 
-- [protocol QuadrilateralProviding](quadrilateralproviding.md)
+### Configuring a request
+- [protocol QuadrilateralProviding](../quadrilateralproviding.md)
   A protocol for objects that have a bounding quadrilateral.
-- [var trackingLevel: TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.property.md)
+- [var trackingLevel: TrackRectangleRequest.TrackingLevel](./trackinglevel-swift.property.md)
   The tracking quality preference.
-- [TrackRectangleRequest.TrackingLevel](trackrectanglerequest/trackinglevel-swift.enum.md)
+- [TrackRectangleRequest.TrackingLevel](./trackinglevel-swift.enum.md)
 
 
 ---

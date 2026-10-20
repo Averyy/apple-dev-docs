@@ -1,7 +1,8 @@
 # fetchRecordZones
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches one or more zones.
 
@@ -10,7 +11,7 @@ Fetches one or more zones.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> fetchRecordZones(
 	CloudKit.ZoneID|CloudKit.ZoneID[]|String|String[] zones
 );
@@ -18,28 +19,31 @@ Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> fetchRecordZones(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 #### Discussion
 
-See [`Fetching Zones by Identifier (zones/lookup)`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GettingZonesbyIdentifier.html#//apple_ref/doc/uid/TP40015240-CH22) in [`CloudKit Web Services Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
+See [Fetching Zones by Identifier (zones/lookup)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/GettingZonesbyIdentifier.html#//apple_ref/doc/uid/TP40015240-CH22) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240).
 
 ## Parameters
 
-- `zones`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to fetch. |
-| `CloudKit.ZoneID[]` | An array of zones to fetch. |
-| `String` | The name of a zone to fetch. |
-| `String[]` | An array of names of zones to fetch. |
+- `zones`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.ZoneID`](../cloudkit.zoneid.md) | A zone in the database to fetch. |
+  | `CloudKit.ZoneID[]` | An array of zones to fetch. |
+  | `String` | The name of a zone to fetch. |
+  | `String[]` | An array of names of zones to fetch. |
 
 ## See Also
 
-- [saveRecordZones](cloudkit.database/saverecordzones.md)
+### Accessing Record Zones
+- [saveRecordZones](./saverecordzones.md)
   Creates one or more zones in the database.
-- [fetchAllRecordZones](cloudkit.database/fetchallrecordzones.md)
+- [fetchAllRecordZones](./fetchallrecordzones.md)
   Fetches all zones in the database.
-- [deleteRecordZones](cloudkit.database/deleterecordzones.md)
+- [deleteRecordZones](./deleterecordzones.md)
   Deletes the specified zones.
 
 

@@ -1,6 +1,7 @@
 # Choosing localization regions and scripts
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Add a language-only localization or localizations specific to regional variants and scripts.
 
@@ -10,9 +11,9 @@ When you localize your app, you add localizations by choosing a language, and th
 
 In Xcode menus, you choose a human-readable name for a localization, but in the project and exported files, a language identifier understood by localizers specifies the language, region, and script. The Xcode Localization Catalog (a folder with a `.xcloc` file extension) uses the language identifier as the suffix, as in `en.xcloc` and `de.xcloc` for the English and German catalog names, respectively.
 
-For information about how the `Bundle` object finds the best match between the localizations your app supports and the user’s language and region settings, see [`Bundle`](https://developer.apple.com/documentation/foundation/bundle).
+For information about how the `Bundle` object finds the best match between the localizations your app supports and the user’s language and region settings, see [`Bundle`](../Foundation/bundle.md).
 
-##### Understand the Language Identifier
+##### Understand the language identifier
 
 A *language identifier* is a compound syntax that represents a combination of a language, regional variant, and script. It contains a language code, and, optionally, a region code, and a script code.
 
@@ -43,7 +44,8 @@ This table shows some common language identifiers with their language, region, a
 
 ## See Also
 
-- [Adding support for languages and regions](adding-support-for-languages-and-regions.md)
+### Languages and regions
+- [Adding support for languages and regions](./adding-support-for-languages-and-regions.md)
   Select the resources that you want to localize for each language and region you support.
 
 

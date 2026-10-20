@@ -1,7 +1,8 @@
 # keyboardTypeLast
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 32-bit integer specifying the last keyboard type in this entry. For the initial entry (that is, the default entry) in an array of `UCKeyboardTypeHeader` structures, you should set this value to 0.
 
@@ -13,6 +14,10 @@ An unsigned 32-bit integer specifying the last keyboard type in this entry. For 
 
 ```swift
 var keyboardTypeLast: UInt32
+```
+
+```c
+UInt32 keyboardTypeLast;
 ```
 
 

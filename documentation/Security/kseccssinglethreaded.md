@@ -1,7 +1,8 @@
 # kSecCSSingleThreaded
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kSecCSSingleThreaded: UInt32 { get }
+```
+
+```c
+kSecCSSingleThreaded
 ```
 
 

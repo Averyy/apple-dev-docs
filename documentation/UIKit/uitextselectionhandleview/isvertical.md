@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Convenience accessor for @c direction calculations.
@@ -19,11 +20,16 @@ Convenience accessor for @c direction calculations.
 var isVertical: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVertical) BOOL vertical;
+```
+
 ## See Also
 
-- [var direction: NSDirectionalRectEdge](uitextselectionhandleview/direction.md)
+### Specifying the handle details
+- [var direction: NSDirectionalRectEdge](./direction.md)
   The orientation of the selection handle.
-- [var customShape: UIBezierPath?](uitextselectionhandleview/customshape.md)
+- [var customShape: UIBezierPath?](./customshape.md)
   The custom shape to draw for the stem of the selection handle.
 
 

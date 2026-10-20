@@ -1,7 +1,8 @@
 # init
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the service.
 
@@ -10,7 +11,7 @@ Handles the basic initialization of the service.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -20,19 +21,20 @@ virtual bool init();
 
 #### Discussion
 
-Override this method inherited from [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice).
+Override this method inherited from [`IOService`](../../DriverKit/ioservice.md).
 
-The system calls this method shortly after it instantiates your custom [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass, and before it calls the [`Start`](iouseraudiodriver/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your custom [`IOService`](../../DriverKit/ioservice.md) subclass, and before it calls the [`Start`](./start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 
 Always call `super` early in your implementation of this method.
 
 ## See Also
 
-- [Start](iouseraudiodriver/start.md)
+### Running the Driver Service
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](iouseraudiodriver/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
-- [free](iouseraudiodriver/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

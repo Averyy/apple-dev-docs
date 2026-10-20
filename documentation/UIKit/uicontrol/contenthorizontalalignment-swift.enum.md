@@ -1,16 +1,17 @@
 # UIControl.ContentHorizontalAlignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The horizontal alignment of content (text and images) within a control.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,47 +19,52 @@ The horizontal alignment of content (text and images) within a control.
 enum ContentHorizontalAlignment
 ```
 
+```c
+enum UIControlContentHorizontalAlignment : NSInteger;
+```
+
 #### Overview
 
-You use these constants as the value of the [`contentHorizontalAlignment`](uicontrol/contenthorizontalalignment-swift.property.md) property.
+You use these constants as the value of the [`contentHorizontalAlignment`](./contenthorizontalalignment-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UIControl.ContentHorizontalAlignment.center](uicontrol/contenthorizontalalignment-swift.enum/center.md)
+- [UIControl.ContentHorizontalAlignment.center](./contenthorizontalalignment-swift.enum/center.md)
   Aligns the content horizontally in the center of the control.
-- [UIControl.ContentHorizontalAlignment.left](uicontrol/contenthorizontalalignment-swift.enum/left.md)
+- [UIControl.ContentHorizontalAlignment.left](./contenthorizontalalignment-swift.enum/left.md)
   Aligns the content horizontally from the left of the control (the default).
-- [UIControl.ContentHorizontalAlignment.right](uicontrol/contenthorizontalalignment-swift.enum/right.md)
+- [UIControl.ContentHorizontalAlignment.right](./contenthorizontalalignment-swift.enum/right.md)
   Aligns the content horizontally from the right of the control.
-- [UIControl.ContentHorizontalAlignment.fill](uicontrol/contenthorizontalalignment-swift.enum/fill.md)
+- [UIControl.ContentHorizontalAlignment.fill](./contenthorizontalalignment-swift.enum/fill.md)
   Aligns the content horizontally to fill the content rectangles; text may wrap and images may be stretched.
-- [UIControl.ContentHorizontalAlignment.leading](uicontrol/contenthorizontalalignment-swift.enum/leading.md)
+- [UIControl.ContentHorizontalAlignment.leading](./contenthorizontalalignment-swift.enum/leading.md)
   Aligns the content horizontally from the leading edge of the control.
-- [UIControl.ContentHorizontalAlignment.trailing](uicontrol/contenthorizontalalignment-swift.enum/trailing.md)
+- [UIControl.ContentHorizontalAlignment.trailing](./contenthorizontalalignment-swift.enum/trailing.md)
   Aligns the content horizontally from the trailing edge of the control.
 ### Initializers
-- [init?(rawValue: Int)](uicontrol/contenthorizontalalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./contenthorizontalalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var contentVerticalAlignment: UIControl.ContentVerticalAlignment](uicontrol/contentverticalalignment-swift.property.md)
+### Specifying content alignment
+- [var contentVerticalAlignment: UIControl.ContentVerticalAlignment](./contentverticalalignment-swift.property.md)
   The vertical alignment of content within the control’s bounds.
-- [UIControl.ContentVerticalAlignment](uicontrol/contentverticalalignment-swift.enum.md)
+- [UIControl.ContentVerticalAlignment](./contentverticalalignment-swift.enum.md)
   Constants for specifying the vertical alignment of content (text and images) in a control.
-- [var contentHorizontalAlignment: UIControl.ContentHorizontalAlignment](uicontrol/contenthorizontalalignment-swift.property.md)
+- [var contentHorizontalAlignment: UIControl.ContentHorizontalAlignment](./contenthorizontalalignment-swift.property.md)
   The horizontal alignment of content within the control’s bounds.
-- [var effectiveContentHorizontalAlignment: UIControl.ContentHorizontalAlignment](uicontrol/effectivecontenthorizontalalignment.md)
+- [var effectiveContentHorizontalAlignment: UIControl.ContentHorizontalAlignment](./effectivecontenthorizontalalignment.md)
   The horizontal alignment currently in effect for the control.
 
 

@@ -1,7 +1,8 @@
 # urlSession(_:dataTask:didBecome:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the data task was changed to a download task.
 
@@ -20,9 +21,13 @@ Tells the delegate that the data task was changed to a download task.
 optional func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome downloadTask: URLSessionDownloadTask)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session dataTask:(NSURLSessionDataTask *) dataTask didBecomeDownloadTask:(NSURLSessionDownloadTask *) downloadTask;
+```
+
 #### Discussion
 
-When your [`urlSession(_:dataTask:didReceive:completionHandler:)`](urlsessiondatadelegate/urlsession(_:datatask:didreceive:completionhandler:).md) delegate method uses the [`URLSession.ResponseDisposition.becomeDownload`](urlsession/responsedisposition/becomedownload.md) disposition to convert the request to use a download, the session calls this delegate method to provide you with the new download task. After this call, the session delegate receives no further delegate method calls related to the original data task.
+When your [`urlSession(_:dataTask:didReceive:completionHandler:)`](./urlsession%28_,datatask,didreceive,completionhandler%29.md) delegate method uses the [`URLSession.ResponseDisposition.becomeDownload`](../urlsession/responsedisposition/becomedownload.md) disposition to convert the request to use a download, the session calls this delegate method to provide you with the new download task. After this call, the session delegate receives no further delegate method calls related to the original data task.
 
 ## Parameters
 
@@ -32,11 +37,12 @@ When your [`urlSession(_:dataTask:didReceive:completionHandler:)`](urlsessiondat
 
 ## See Also
 
-- [func urlSession(URLSession, dataTask: URLSessionDataTask, didReceive: URLResponse, completionHandler: (URLSession.ResponseDisposition) -> Void)](urlsessiondatadelegate/urlsession(_:datatask:didreceive:completionhandler:).md)
+### Handling task life cycle changes
+- [func urlSession(URLSession, dataTask: URLSessionDataTask, didReceive: URLResponse, completionHandler: (URLSession.ResponseDisposition) -> Void)](./urlsession%28_,datatask,didreceive,completionhandler%29.md)
   Tells the delegate that the data task received the initial reply (headers) from the server.
-- [URLSession.ResponseDisposition](urlsession/responsedisposition.md)
+- [URLSession.ResponseDisposition](../urlsession/responsedisposition.md)
   Constants indicating how a data or upload session should proceed after receiving the initial headers.
-- [func urlSession(URLSession, dataTask: URLSessionDataTask, didBecome: URLSessionStreamTask)](urlsessiondatadelegate/urlsession(_:datatask:didbecome:)-7nqzu.md)
+- [func urlSession(URLSession, dataTask: URLSessionDataTask, didBecome: URLSessionStreamTask)](./urlsession%28_,datatask,didbecome%29-7nqzu.md)
   Tells the delegate that the data task was changed to a stream task.
 
 

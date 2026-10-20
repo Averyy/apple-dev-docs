@@ -1,7 +1,8 @@
 # evaluation(on:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics describing the action classifier’s performance on labeled videos represented by a data source.
 
@@ -20,9 +21,10 @@ func evaluation(on annotatedVideos: MLActionClassifier.DataSource) throws -> MLC
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlactionclassifier/trainingmetrics.md)
+### Evaluating an action classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the action classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlactionclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the action classifier’s performance on the validation dataset.
 
 

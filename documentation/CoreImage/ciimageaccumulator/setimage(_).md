@@ -1,7 +1,8 @@
 # setImage(_:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the contents of the image accumulator to the contents of the specified image object.
 
@@ -19,13 +20,18 @@ Sets the contents of the image accumulator to the contents of the specified imag
 func setImage(_ image: CIImage)
 ```
 
+```objc
+- (void) setImage:(CIImage *) image;
+```
+
 ## Parameters
 
 - `image`: The image object whose contents you want to assign to the image accumulator.
 
 ## See Also
 
-- [func setImage(CIImage, dirtyRect: CGRect)](ciimageaccumulator/setimage(_:dirtyrect:).md)
+### Setting an Image
+- [func setImage(CIImage, dirtyRect: CGRect)](./setimage%28_,dirtyrect%29.md)
   Updates an image accumulator with a subregion of an image object.
 
 

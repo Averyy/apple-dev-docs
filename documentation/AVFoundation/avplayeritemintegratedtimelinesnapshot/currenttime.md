@@ -1,7 +1,8 @@
 # currentTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current time on the integrated timeline when the system created the snapshot.
 
@@ -20,21 +21,26 @@ The current time on the integrated timeline when the system created the snapshot
 var currentTime: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime currentTime;
+```
+
 #### Discussion
 
 This value doesn’t change as time progresses.
 
 ## See Also
 
-- [var duration: CMTime](avplayeritemintegratedtimelinesnapshot/duration.md)
+### Inspecting the snapshot
+- [var duration: CMTime](./duration.md)
   The total duration of the primary item and scheduled interstitial events.
-- [var currentSegment: AVPlayerItemSegment?](avplayeritemintegratedtimelinesnapshot/currentsegment.md)
+- [var currentSegment: AVPlayerItemSegment?](./currentsegment.md)
   The currently playing segment.
-- [var segments: [AVPlayerItemSegment]](avplayeritemintegratedtimelinesnapshot/segments.md)
+- [var segments: [AVPlayerItemSegment]](./segments.md)
   The segments for this snapshot.
-- [class AVPlayerItemSegment](avplayeritemsegment.md)
+- [class AVPlayerItemSegment](../avplayeritemsegment.md)
   An immutable object that represents a segment of time on the integrated timeline.
-- [var currentDate: Date?](avplayeritemintegratedtimelinesnapshot/currentdate.md)
+- [var currentDate: Date?](./currentdate.md)
   The current date on the integrated timeline when the system created the snapshot.
 
 

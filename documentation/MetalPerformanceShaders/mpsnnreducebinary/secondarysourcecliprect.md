@@ -1,7 +1,8 @@
 # secondarySourceClipRect
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 var secondarySourceClipRect: MTLRegion { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLRegion secondarySourceClipRect;
 ```
 
 

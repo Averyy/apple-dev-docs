@@ -1,6 +1,7 @@
 # Adding a Cutscene to a Playground Book
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Create a subfolder, a manifest file, and cutscene metadata.
 
@@ -31,13 +32,14 @@ The cutscene manifest property list has two keys:
 
 ## See Also
 
-- [Adding a Chapter to a Playground Book](adding-a-chapter-to-a-playground-book.md)
+### Book Structure
+- [Adding a Chapter to a Playground Book](./adding-a-chapter-to-a-playground-book.md)
   Create a folder with a manifest that describes the chapter’s name and page order.
-- [Adding a Page to a Playground Book](adding-a-page-to-a-playground-book.md)
+- [Adding a Page to a Playground Book](./adding-a-page-to-a-playground-book.md)
   Create a subfolder, a manifest file, and a content file.
-- [Using Modules to Share Code in a Playground Book](using-modules-to-share-code-in-a-playground-book.md)
+- [Using Modules to Share Code in a Playground Book](./using-modules-to-share-code-in-a-playground-book.md)
   In Swift Playgrounds 3.0 and later, make code available across multiple chapters to teach the value of reusable code.
-- [Sharing Resources in a Playground Book](sharing-resources-in-a-playground-book.md)
+- [Sharing Resources in a Playground Book](./sharing-resources-in-a-playground-book.md)
   Reuse common assets throughout a book to reduce its size.
 
 

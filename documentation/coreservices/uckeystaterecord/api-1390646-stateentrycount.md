@@ -1,7 +1,8 @@
 # stateEntryCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the number of elements in the `stateEntryData` field’s array for a given dead-key state record.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the number of elements in the `stateEntryD
 
 ```swift
 var stateEntryCount: UInt16
+```
+
+```c
+UInt16 stateEntryCount;
 ```
 
 

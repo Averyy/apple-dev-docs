@@ -1,7 +1,8 @@
 # autocorrectedRanges
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of ranges that identify text the system autocorrects, relative to the context string.
 
@@ -17,9 +18,13 @@ An array of ranges that identify text the system autocorrects, relative to the c
 var autocorrectedRanges: [NSValue] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSValue *> * autocorrectedRanges;
+```
+
 #### Discussion
 
-The context string is the concatenation of the initializer parameters `contextBefore`, `markedText` (or `selectedText` when marked text is empty), and `contextAfter`. For more information, see [`init(attributedSelectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md).
+The context string is the concatenation of the initializer parameters `contextBefore`, `markedText` (or `selectedText` when marked text is empty), and `contextAfter`. For more information, see [`init(attributedSelectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](./init%28attributedselectedtext,contextbefore,contextafter,markedtext,selectedrangeinmarkedtext%29.md).
 
 
 ---

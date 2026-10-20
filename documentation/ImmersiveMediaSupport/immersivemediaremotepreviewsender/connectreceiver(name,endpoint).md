@@ -1,9 +1,10 @@
 # connectReceiver(name:endpoint:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Adds an [`ImmersiveMediaRemotePreviewReceiver`](immersivemediaremotepreviewreceiver.md) to the sender as an active participant of the network preview. Any updates on the sender will be propagated to all active receivers (frames, camera information, static metadata).
+Adds an [`ImmersiveMediaRemotePreviewReceiver`](../immersivemediaremotepreviewreceiver.md) to the sender as an active participant of the network preview. Any updates on the sender will be propagated to all active receivers (frames, camera information, static metadata).
 
 **Availability**:
 - macOS 26.0+
@@ -16,7 +17,7 @@ func connectReceiver(name: String, endpoint: NWEndpoint) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails establishing the connection to the receiver..
+> **Throws**: This function throws if anything fails establishing the connection to the receiver..
 
 ## Parameters
 

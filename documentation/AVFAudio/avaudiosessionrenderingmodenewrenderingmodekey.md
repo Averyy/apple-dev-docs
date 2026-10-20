@@ -1,7 +1,8 @@
 # AVAudioSessionRenderingModeNewRenderingModeKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to retrieve an integer value that represents the new resolved rendering mode.
 
@@ -15,6 +16,10 @@ A key to retrieve an integer value that represents the new resolved rendering mo
 
 ```swift
 let AVAudioSessionRenderingModeNewRenderingModeKey: String
+```
+
+```c
+extern NSString * const AVAudioSessionRenderingModeNewRenderingModeKey;
 ```
 
 

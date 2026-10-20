@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ifqueue {
     ...
 };
@@ -17,11 +17,11 @@ struct ifqueue {
 ## Topics
 
 ### Instance Properties
-- [ifq_drops](ifqueue/1492500-ifq_drops.md)
-- [ifq_head](ifqueue/1492582-ifq_head.md)
-- [ifq_len](ifqueue/1492609-ifq_len.md)
-- [ifq_maxlen](ifqueue/1492518-ifq_maxlen.md)
-- [ifq_tail](ifqueue/1492496-ifq_tail.md)
+- [ifq_drops](./ifqueue/api-1492500-ifq_drops.md)
+- [ifq_head](./ifqueue/api-1492582-ifq_head.md)
+- [ifq_len](./ifqueue/api-1492609-ifq_len.md)
+- [ifq_maxlen](./ifqueue/api-1492518-ifq_maxlen.md)
+- [ifq_tail](./ifqueue/api-1492496-ifq_tail.md)
 
 
 ---

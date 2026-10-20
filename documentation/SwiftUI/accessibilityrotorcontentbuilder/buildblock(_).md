@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 15.0+
@@ -19,10 +20,18 @@
 static func buildBlock<Content>(_ content: Content) -> some AccessibilityRotorContent where Content : AccessibilityRotorContent
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some AccessibilityRotorContent where repeat each Content : AccessibilityRotorContent
+```
+
 ## See Also
 
-- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](accessibilityrotorcontentbuilder/buildif(_:).md)
-- [static func buildExpression<Content>(Content) -> Content](accessibilityrotorcontentbuilder/buildexpression(_:).md)
+### Building navigation content
+- [static func buildIf<Content>(Content?) -> some AccessibilityRotorContent](./buildif%28_%29.md)
+- [static func buildExpression<Content>(Content) -> Content](./buildexpression%28_%29.md)
   Builds an expression within the builder.
 
 

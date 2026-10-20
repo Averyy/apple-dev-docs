@@ -1,7 +1,8 @@
 # UsersResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of team members who have access to your App Store Connect account.
 
@@ -10,7 +11,7 @@ A response containing a list of team members who have access to your App Store C
 
 ## Declaration
 
-```swift
+```
 object UsersResponse
 ```
 
@@ -23,19 +24,21 @@ object UsersResponse
 
 ## See Also
 
-- [List users](get-v1-users.md)
+### Related Documentation
+- [List users](./get-v1-users.md)
   Get a list of the users on your team.
-- [object User](user.md)
+### Objects and Data Types
+- [object User](./user.md)
   A member of your App Store Connect team, with assigned roles and access to specific apps.
-- [object UserUpdateRequest](userupdaterequest.md)
+- [object UserUpdateRequest](./userupdaterequest.md)
   The request body you use to update a User.
-- [object UserResponse](userresponse.md)
+- [object UserResponse](./userresponse.md)
   The response body for endpoints that read or modify a single App Store Connect team member.
-- [object UserVisibleAppsLinkagesRequest](uservisibleappslinkagesrequest.md)
+- [object UserVisibleAppsLinkagesRequest](./uservisibleappslinkagesrequest.md)
   A request body you use to add or remove visible apps from a user.
-- [object UserVisibleAppsLinkagesResponse](uservisibleappslinkagesresponse.md)
+- [object UserVisibleAppsLinkagesResponse](./uservisibleappslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
-- [type UserRole](userrole.md)
+- [type UserRole](./userrole.md)
   A string that represents user roles and permissions in App Store Connect.
 
 

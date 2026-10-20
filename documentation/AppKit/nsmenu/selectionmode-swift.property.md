@@ -1,7 +1,8 @@
 # selectionMode
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selection mode of the menu.
 
@@ -14,15 +15,20 @@ The selection mode of the menu.
 var selectionMode: NSMenu.SelectionMode { get set }
 ```
 
+```objc
+@property NSMenuSelectionMode selectionMode;
+```
+
 #### Discussion
 
 The selection mode only affects menu items that belong to the same selection group. A selection group consists of the items with the same target-action.
 
 ## See Also
 
-- [var selectedItems: [NSMenuItem]](nsmenu/selecteditems.md)
+### Selecting Items
+- [var selectedItems: [NSMenuItem]](./selecteditems.md)
   The menu items that are currently selected.
-- [NSMenu.SelectionMode](nsmenu/selectionmode-swift.enum.md)
+- [NSMenu.SelectionMode](./selectionmode-swift.enum.md)
   Describes how the menu manages selection states of the menu items that belong to the same selection group.
 
 

@@ -1,7 +1,8 @@
 # shuffleMode
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current shuffle mode of the music player.
 

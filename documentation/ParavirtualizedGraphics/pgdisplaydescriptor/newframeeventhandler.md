@@ -1,7 +1,8 @@
 # newFrameEventHandler
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that the framework calls when the guest environment has a new frame to display.
 
@@ -15,9 +16,14 @@ A handler that the framework calls when the guest environment has a new frame to
 var newFrameEventHandler: PGDisplayNewFrameEventHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) PGDisplayNewFrameEventHandler newFrameEventHandler;
+```
+
 ## See Also
 
-- [typealias PGDisplayNewFrameEventHandler](pgdisplaynewframeeventhandler.md)
+### Handling Frame Events
+- [typealias PGDisplayNewFrameEventHandler](../pgdisplaynewframeeventhandler.md)
   The block signature for a routine that handles frame updates from the guest.
 
 

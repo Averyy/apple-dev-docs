@@ -1,7 +1,8 @@
 # tokenVector(at:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets a token vector at the index you specify.
 
@@ -27,7 +28,8 @@ func tokenVector(at index: String.Index) -> ([Double], Range<String.Index>)?
 
 ## See Also
 
-- [func enumerateTokenVectors(in: Range<String.Index>, using: ([Double], Range<String.Index>) -> Bool)](nlcontextualembeddingresult/enumeratetokenvectors(in:using:).md)
+### Enumerating the vectors
+- [func enumerateTokenVectors(in: Range<String.Index>, using: ([Double], Range<String.Index>) -> Bool)](./enumeratetokenvectors%28in,using%29.md)
   Iterates over the embedding vectors corresponding to the subword tokens within the specified range of the input string.
 
 

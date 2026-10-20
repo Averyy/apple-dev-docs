@@ -1,7 +1,8 @@
 # JSONEncoder.KeyEncodingStrategy.useDefaultKeys
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key encoding strategy that doesn’t change key names during encoding.
 
@@ -22,13 +23,14 @@ case useDefaultKeys
 
 #### Discussion
 
-The [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](jsonencoder/keyencodingstrategy-swift.enum/usedefaultkeys.md) strategy is the strategy used if you don’t specify one.
+The [`JSONEncoder.KeyEncodingStrategy.useDefaultKeys`](./usedefaultkeys.md) strategy is the strategy used if you don’t specify one.
 
-> **Note**:  If you use a nested `CodingKeys` enumeration to define custom key names, this strategy continues to use those names rather than reverting back to the original property names. Nested `CodingKeys` enumerations are described in [`Encoding and Decoding Custom Types`](encoding-and-decoding-custom-types.md).
+> **Note**:  If you use a nested `CodingKeys` enumeration to define custom key names, this strategy continues to use those names rather than reverting back to the original property names. Nested `CodingKeys` enumerations are described in [Encoding and Decoding Custom Types](../../encoding-and-decoding-custom-types.md).
 
 ## See Also
 
-- [JSONEncoder.KeyEncodingStrategy.convertToSnakeCase](jsonencoder/keyencodingstrategy-swift.enum/converttosnakecase.md)
+### Built-in Encoding
+- [JSONEncoder.KeyEncodingStrategy.convertToSnakeCase](./converttosnakecase.md)
   A key encoding strategy that converts camel-case keys to snake-case keys.
 
 

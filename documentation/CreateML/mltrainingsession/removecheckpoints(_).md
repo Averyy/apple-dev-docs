@@ -1,7 +1,8 @@
 # removeCheckpoints(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the checkpoints that satisfy your closure from the training session.
 

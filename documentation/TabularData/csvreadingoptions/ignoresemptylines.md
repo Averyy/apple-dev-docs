@@ -1,7 +1,8 @@
 # ignoresEmptyLines
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to ignore empty lines.
 

@@ -1,7 +1,8 @@
 # kAXIncrementorRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A stepper control (also known as the “little arrows”).
 
@@ -12,6 +13,10 @@ A stepper control (also known as the “little arrows”).
 
 ```swift
 var kAXIncrementorRole: String { get }
+```
+
+```c
+#define kAXIncrementorRole
 ```
 
 

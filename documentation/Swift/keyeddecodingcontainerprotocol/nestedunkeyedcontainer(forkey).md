@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the data stored for the given key as represented in an unkeyed container.
@@ -27,7 +28,7 @@ An unkeyed decoding container view into `self`.
 
 #### Discussion
 
-> **Note**: `DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
+> **Throws**: `DecodingError.typeMismatch` if the encountered stored value is not an unkeyed container.
 
 ## Parameters
 

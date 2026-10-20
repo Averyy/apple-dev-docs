@@ -1,7 +1,8 @@
 # suggestedFrameForInserting(contentInFrame:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the suggested frame for inserting shapes and other content.
 
@@ -38,9 +39,10 @@ paperViewController.markup.insertNewShape(configuration: shapeConfiguration, fra
 
 ## See Also
 
-- [var selection: Set<MarkupOrderedSet.ElementID>](papermarkupviewcontroller/selection.md)
+### Selecting elements
+- [var selection: Set<MarkupOrderedSet.ElementID>](./selection.md)
   The current selected elements on the canvas.
-- [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
+- [var selectedMarkup: PaperMarkup](./selectedmarkup.md)
   The selected contents in the UI.
 
 

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default presentation sizing, appropriate for the platform.
 
@@ -20,19 +21,22 @@ The default presentation sizing, appropriate for the platform.
 static var automatic: AutomaticPresentationSizing { get }
 ```
 
+Available when `Self` is `AutomaticPresentationSizing`.
+
 #### Discussion
 
 On macOS, `.automatic` resolves to `.form.fitted(horizontal: false, vertical: true)`. On all other platforms, including Mac Catalyst, it resolves to `.form`.
 
-> **Note**: [`AutomaticPresentationSizing`](automaticpresentationsizing.md)
+> **See Also**: [`AutomaticPresentationSizing`](../automaticpresentationsizing.md)
 
 ## See Also
 
-- [static var fitted: FittedPresentationSizing](presentationsizing/fitted.md)
+### Getting built-in presentation size
+- [static var fitted: FittedPresentationSizing](./fitted.md)
   The presentation sizing is dictated by the ideal size of the content
-- [static var form: FormPresentationSizing](presentationsizing/form.md)
+- [static var form: FormPresentationSizing](./form.md)
   The size is appropriate for forms and slightly less wide than`.page`
-- [static var page: PagePresentationSizing](presentationsizing/page.md)
+- [static var page: PagePresentationSizing](./page.md)
   The size is roughly the size of a page of paper, appropriate for informational or compositional content.
 
 

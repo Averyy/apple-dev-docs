@@ -1,7 +1,8 @@
 # secureUnarchiveFromDataTransformerName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the value transformer that creates then returns an object by attempting to unarchive the data to a class that supports secure coding.
 
@@ -20,21 +21,26 @@ The name of the value transformer that creates then returns an object by attempt
 static let secureUnarchiveFromDataTransformerName: NSValueTransformerName
 ```
 
+```c
+extern NSValueTransformerName const NSSecureUnarchiveFromDataTransformerName;
+```
+
 #### Discussion
 
-The transformer this property references returns the [`NSData`](nsdata.md) instance created by archiving the value using secure keyed archiving. This transformer requires that an object implement the [`NSSecureCoding`](nssecurecoding.md) protocol in order to archive and unarchive with this transformer.
+The transformer this property references returns the [`NSData`](../nsdata.md) instance created by archiving the value using secure keyed archiving. This transformer requires that an object implement the [`NSSecureCoding`](../nssecurecoding.md) protocol in order to archive and unarchive with this transformer.
 
 ## See Also
 
-- [static let isNilTransformerName: NSValueTransformerName](nsvaluetransformername/isniltransformername.md)
+### Type Properties
+- [static let isNilTransformerName: NSValueTransformerName](./isniltransformername.md)
   This value transformer returns true if the value is nil.
-- [static let isNotNilTransformerName: NSValueTransformerName](nsvaluetransformername/isnotniltransformername.md)
+- [static let isNotNilTransformerName: NSValueTransformerName](./isnotniltransformername.md)
   This value transformer returns true if the value is non-nil.
-- [static let keyedUnarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/keyedunarchivefromdatatransformername.md)
+- [static let keyedUnarchiveFromDataTransformerName: NSValueTransformerName](./keyedunarchivefromdatatransformername.md)
   The name of the value transformer that attempts to unarchive data stored inside a keyed archive in an object you provide.
-- [static let negateBooleanTransformerName: NSValueTransformerName](nsvaluetransformername/negatebooleantransformername.md)
+- [static let negateBooleanTransformerName: NSValueTransformerName](./negatebooleantransformername.md)
   This value transformer negates a boolean value, transforming true to false and false to true.
-- [static let unarchiveFromDataTransformerName: NSValueTransformerName](nsvaluetransformername/unarchivefromdatatransformername.md)
+- [static let unarchiveFromDataTransformerName: NSValueTransformerName](./unarchivefromdatatransformername.md)
   The name of the value transformer that attempts to unarchive data from an object you provide.
 
 

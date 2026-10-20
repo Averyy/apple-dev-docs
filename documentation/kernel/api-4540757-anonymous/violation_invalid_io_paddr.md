@@ -1,14 +1,15 @@
 # VIOLATION_INVALID_IO_PADDR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 VIOLATION_INVALID_IO_PADDR = VIOLATION_FIRST_PUBLIC_ID
 ```
 

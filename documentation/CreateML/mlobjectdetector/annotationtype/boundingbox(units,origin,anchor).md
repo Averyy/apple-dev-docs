@@ -1,7 +1,8 @@
 # MLObjectDetector.AnnotationType.boundingBox(units:origin:anchor:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An annotation type that defines a rectangle around an object within an image.
 
@@ -18,11 +19,11 @@ case boundingBox(units: MLBoundingBoxUnits = .pixel, origin: MLBoundingBoxCoordi
 
 To use bounding box annotations, you must tell Create ML how to interpret your annotations.
 
-- Use [`MLBoundingBoxUnits`](mlboundingboxunits.md) to specify the coordinate units of your bounding boxes.
-- Use [`MLBoundingBoxAnchor`](mlboundingboxanchor.md) to specify the location in the bounding box its coordinates refer to.
-- Use [`MLBoundingBoxCoordinatesOrigin`](mlboundingboxcoordinatesorigin.md) to specify the part of the image the annotations use as their origin.
+- Use [`MLBoundingBoxUnits`](../../mlboundingboxunits.md) to specify the coordinate units of your bounding boxes.
+- Use [`MLBoundingBoxAnchor`](../../mlboundingboxanchor.md) to specify the location in the bounding box its coordinates refer to.
+- Use [`MLBoundingBoxCoordinatesOrigin`](../../mlboundingboxcoordinatesorigin.md) to specify the part of the image the annotations use as their origin.
 
-#### Formatting a Bounding Box Json Annotation File
+#### Formatting a Bounding Box JSON Annotation File
 
 The base of the JSON file must contain an array of the following JSON object structure.
 
@@ -49,7 +50,7 @@ The `coordinate` JSON object must have the following structure. The origin of th
 
 As an example, the following JSON file has correct structure with one image file (`"cat and dog.png"`) in its base array, which has two annotations.
 
-```None
+```
 // JSON file
   [{
     "imagefilename": "cat and dog.png",
@@ -83,11 +84,12 @@ A typical annotation JSON file has many more objects in its base array, one for 
 
 ## See Also
 
-- [enum MLBoundingBoxUnits](mlboundingboxunits.md)
+### Bounding box annotations
+- [enum MLBoundingBoxUnits](../../mlboundingboxunits.md)
   The units a bounding box annotation uses to define its position and size.
-- [enum MLBoundingBoxAnchor](mlboundingboxanchor.md)
+- [enum MLBoundingBoxAnchor](../../mlboundingboxanchor.md)
   A location within a bounding box that an annotation’s coordinates use as their reference point.
-- [enum MLBoundingBoxCoordinatesOrigin](mlboundingboxcoordinatesorigin.md)
+- [enum MLBoundingBoxCoordinatesOrigin](../../mlboundingboxcoordinatesorigin.md)
   The location within an image that an annotation’s coordinates use as their origin.
 
 

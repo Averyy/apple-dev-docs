@@ -1,7 +1,8 @@
 # setValue(_:forAttribute:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an attribute value for an attached shader.
 
@@ -20,6 +21,10 @@ Sets an attribute value for an attached shader.
 func setValue(_ value: SKAttributeValue, forAttribute key: String)
 ```
 
+```objc
+- (void) setValue:(SKAttributeValue *) value forAttributeNamed:(NSString *) key;
+```
+
 ## Parameters
 
 - `value`: An attribute value object containing the scalar or vector value to set in the attached shader.
@@ -27,15 +32,16 @@ func setValue(_ value: SKAttributeValue, forAttribute key: String)
 
 ## See Also
 
-- [Controlling Shape Drawing with Shaders](controlling-shape-drawing-with-shaders.md)
+### Customizing Stroking or Fill Drawing
+- [Controlling Shape Drawing with Shaders](../controlling-shape-drawing-with-shaders.md)
   Change a shape node’s appearance by supplying custom shader code.
-- [var strokeShader: SKShader?](skshapenode/strokeshader.md)
+- [var strokeShader: SKShader?](./strokeshader.md)
   A custom shader used to determine the color of the stroked portion of the shape node.
-- [var fillShader: SKShader?](skshapenode/fillshader.md)
+- [var fillShader: SKShader?](./fillshader.md)
   A custom shader used to determine the color of the filled portion of the shape node.
-- [var attributeValues: [String : SKAttributeValue]](skshapenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skshapenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./value%28forattributenamed%29.md)
   The value of a shader attribute.
 
 

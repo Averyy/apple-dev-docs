@@ -1,7 +1,8 @@
 # maxAvailableTorchLevel
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates to set the torch to its maximum level.
 
@@ -18,27 +19,32 @@ A constant that indicates to set the torch to its maximum level.
 class let maxAvailableTorchLevel: Float
 ```
 
+```c
+extern const float AVCaptureMaxAvailableTorchLevel;
+```
+
 #### Discussion
 
-Pass this value to the [`setTorchModeOn(level:)`](avcapturedevice/settorchmodeon(level:).md) method to set the torch to the maximum level currently available. Under thermal duress, the maximum available torch level may be less than 1.0.
+Pass this value to the [`setTorchModeOn(level:)`](./settorchmodeon%28level%29.md) method to set the torch to the maximum level currently available. Under thermal duress, the maximum available torch level may be less than 1.0.
 
 ## See Also
 
-- [var hasTorch: Bool](avcapturedevice/hastorch.md)
+### Configuring torch settings
+- [var hasTorch: Bool](./hastorch.md)
   A Boolean value that specifies whether the capture device has a torch.
-- [var isTorchAvailable: Bool](avcapturedevice/istorchavailable.md)
+- [var isTorchAvailable: Bool](./istorchavailable.md)
   A Boolean value that indicates whether the torch is currently available for use.
-- [var isTorchActive: Bool](avcapturedevice/istorchactive.md)
+- [var isTorchActive: Bool](./istorchactive.md)
   A Boolean value that indicates whether the device’s torch is currently active.
-- [var torchLevel: Float](avcapturedevice/torchlevel.md)
+- [var torchLevel: Float](./torchlevel.md)
   The current torch brightness level.
-- [var torchMode: AVCaptureDevice.TorchMode](avcapturedevice/torchmode-swift.property.md)
+- [var torchMode: AVCaptureDevice.TorchMode](./torchmode-swift.property.md)
   The current torch mode.
-- [AVCaptureDevice.TorchMode](avcapturedevice/torchmode-swift.enum.md)
+- [AVCaptureDevice.TorchMode](./torchmode-swift.enum.md)
   Constants to specify the capture device’s torch mode.
-- [func isTorchModeSupported(AVCaptureDevice.TorchMode) -> Bool](avcapturedevice/istorchmodesupported(_:).md)
+- [func isTorchModeSupported(AVCaptureDevice.TorchMode) -> Bool](./istorchmodesupported%28_%29.md)
   Returns a Boolean value that indicates whether the device supports the specified torch mode.
-- [func setTorchModeOn(level: Float) throws](avcapturedevice/settorchmodeon(level:).md)
+- [func setTorchModeOn(level: Float) throws](./settorchmodeon%28level%29.md)
   Sets the illumination level when in torch mode.
 
 

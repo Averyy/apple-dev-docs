@@ -1,13 +1,14 @@
 # Symbols
 
 **Framework**: Symbols  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Apply universal animations to symbol-based images.
 
 **Availability**:
 - iOS 17.0+
-- iPadOS ?+
+- iPadOS
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
@@ -16,7 +17,7 @@ Apply universal animations to symbol-based images.
 
 #### Overview
 
-The Symbols framework provides access to symbol effects you can use to animate [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/sf-symbols) in your AppKit, UIKit, and SwiftUI apps. These animations exhibit different behaviors:
+The Symbols framework provides access to symbol effects you can use to animate [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) in your AppKit, UIKit, and SwiftUI apps. These animations exhibit different behaviors:
 
 - **Discrete**: An effect that runs from start to finish.
 - **Indefinite**: An effect that lasts until you remove or disable it.
@@ -66,64 +67,64 @@ imageView.addSymbolEffect(.variableColor.reversing)
 ## Topics
 
 ### Symbol effects
-- [static var appear: AppearSymbolEffect](symboleffect/appear.md)
+- [static var appear: AppearSymbolEffect](./symboleffect/appear.md)
   An animation that makes the layers of a symbol-based image appear separately or as a whole.
-- [static var bounce: BounceSymbolEffect](symboleffect/bounce.md)
+- [static var bounce: BounceSymbolEffect](./symboleffect/bounce.md)
   An animation that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [static var disappear: DisappearSymbolEffect](symboleffect/disappear.md)
+- [static var disappear: DisappearSymbolEffect](./symboleffect/disappear.md)
   An animation that makes the layers of a symbol-based image disappear separately or as a whole.
-- [static var pulse: PulseSymbolEffect](symboleffect/pulse.md)
+- [static var pulse: PulseSymbolEffect](./symboleffect/pulse.md)
   An animation that fades the opacity of some or all layers in a symbol-based image.
-- [static var scale: ScaleSymbolEffect](symboleffect/scale.md)
+- [static var scale: ScaleSymbolEffect](./symboleffect/scale.md)
   An animation that scales the layers in a symbol-based image separately or as a whole.
-- [static var variableColor: VariableColorSymbolEffect](symboleffect/variablecolor.md)
+- [static var variableColor: VariableColorSymbolEffect](./symboleffect/variablecolor.md)
   An animation that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 ### Symbol content transitions
-- [static var replace: ReplaceSymbolEffect](symboleffect/replace.md)
+- [static var replace: ReplaceSymbolEffect](./symboleffect/replace.md)
   An animation that replaces the layers of one symbol-based image with those of another.
-- [static var automatic: AutomaticSymbolEffect](symboleffect/automatic.md)
+- [static var automatic: AutomaticSymbolEffect](./symboleffect/automatic.md)
   A transition that applies the default animation to a symbol-based image in a context-sensitive manner.
 ### Symbol effect types
-- [struct AppearSymbolEffect](appearsymboleffect.md)
+- [struct AppearSymbolEffect](./appearsymboleffect.md)
   A type that makes the layers of a symbol-based image appear separately or as a whole.
-- [struct AutomaticSymbolEffect](automaticsymboleffect.md)
+- [struct AutomaticSymbolEffect](./automaticsymboleffect.md)
   A type that applies the default animation to a symbol-based image in a context-sensitive manner.
-- [struct BounceSymbolEffect](bouncesymboleffect.md)
+- [struct BounceSymbolEffect](./bouncesymboleffect.md)
   A type that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [struct DisappearSymbolEffect](disappearsymboleffect.md)
+- [struct DisappearSymbolEffect](./disappearsymboleffect.md)
   A type that makes the layers of a symbol-based image disappear separately or as a whole.
-- [struct PulseSymbolEffect](pulsesymboleffect.md)
+- [struct PulseSymbolEffect](./pulsesymboleffect.md)
   A type that fades the opacity of some or all layers in a symbol-based image.
-- [struct ReplaceSymbolEffect](replacesymboleffect.md)
+- [struct ReplaceSymbolEffect](./replacesymboleffect.md)
   A type that replaces the layers of one symbol-based image with those of another.
-- [struct ScaleSymbolEffect](scalesymboleffect.md)
+- [struct ScaleSymbolEffect](./scalesymboleffect.md)
   A type that scales the layers in a symbol-based image separately or as a whole.
-- [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
+- [struct VariableColorSymbolEffect](./variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
-- [struct BreatheSymbolEffect](breathesymboleffect.md)
+- [struct BreatheSymbolEffect](./breathesymboleffect.md)
   A symbol effect that applies the Breathe animation to symbol images.
-- [struct RotateSymbolEffect](rotatesymboleffect.md)
+- [struct RotateSymbolEffect](./rotatesymboleffect.md)
   A symbol effect that applies the Rotate animation to symbol images.
-- [struct WiggleSymbolEffect](wigglesymboleffect.md)
+- [struct WiggleSymbolEffect](./wigglesymboleffect.md)
   A symbol effect that applies the Wiggle animation to symbol images.
 ### Symbol effect options
-- [struct SymbolEffectOptions](symboleffectoptions.md)
+- [struct SymbolEffectOptions](./symboleffectoptions.md)
   Options that configure how effects apply to symbol-based images.
 ### Symbol effect protocols
-- [protocol SymbolEffect](symboleffect.md)
+- [protocol SymbolEffect](./symboleffect.md)
   A presentation effect that you apply to a symbol-based image.
-- [protocol DiscreteSymbolEffect](discretesymboleffect.md)
+- [protocol DiscreteSymbolEffect](./discretesymboleffect.md)
   An effect that performs a transient animation.
-- [protocol IndefiniteSymbolEffect](indefinitesymboleffect.md)
+- [protocol IndefiniteSymbolEffect](./indefinitesymboleffect.md)
   An animation that continually affects a symbol until it’s disabled or removed.
-- [protocol ContentTransitionSymbolEffect](contenttransitionsymboleffect.md)
+- [protocol ContentTransitionSymbolEffect](./contenttransitionsymboleffect.md)
   An effect that animates between symbols or different configurations of the same symbol.
-- [protocol TransitionSymbolEffect](transitionsymboleffect.md)
+- [protocol TransitionSymbolEffect](./transitionsymboleffect.md)
   An effect that animates a symbol in or out.
 ### Structures
-- [struct DrawOffSymbolEffect](drawoffsymboleffect.md)
+- [struct DrawOffSymbolEffect](./drawoffsymboleffect.md)
   A symbol effect that applies the DrawOff animation to symbol images.
-- [struct DrawOnSymbolEffect](drawonsymboleffect.md)
+- [struct DrawOnSymbolEffect](./drawonsymboleffect.md)
   A symbol effect that applies the DrawOn animation to symbol images.
 
 

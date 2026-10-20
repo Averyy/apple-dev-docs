@@ -1,7 +1,8 @@
 # kAXTimeFieldRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A field that displays time.
 
@@ -12,6 +13,10 @@ A field that displays time.
 
 ```swift
 var kAXTimeFieldRole: String { get }
+```
+
+```c
+#define kAXTimeFieldRole
 ```
 
 

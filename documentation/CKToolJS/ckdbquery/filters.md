@@ -1,7 +1,8 @@
 # filters
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of filters used to determine whether a record matches the query.
 
@@ -10,7 +11,7 @@ The array of filters used to determine whether a record matches the query.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBQueryFilter[]? filters;
 ```
 

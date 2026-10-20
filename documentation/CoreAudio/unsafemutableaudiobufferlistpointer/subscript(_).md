@@ -1,18 +1,19 @@
 # subscript(_:)
 
 **Framework**: Core Audio  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access an indexed `AudioBuffer` (`mBuffers[i]`).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

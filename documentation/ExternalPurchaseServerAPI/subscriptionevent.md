@@ -1,7 +1,8 @@
 # subscriptionEvent
 
 **Framework**: External Purchase Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The event in the subscription’s life cycle that the transaction represents.
 
@@ -10,19 +11,26 @@ The event in the subscription’s life cycle that the transaction represents.
 
 ## Declaration
 
-```swift
+```
 string subscriptionEvent
 ```
 
+## Possible Values
+
+- `SUBSCRIPTION_START`
+- `RENEWAL`
+- `SUBSCRIPTION_CHANGE`
+- `SUBSCRIPTION_PAYMENT`
+
 ## Mentions
 
-- [Reporting tokens with transactions](reportwithtransactions.md)
+- [Reporting tokens with transactions](./reportwithtransactions.md)
 
 #### Discussion
 
 Allowed values: `SUBSCRIPTION_START`, `RENEWAL`, `SUBSCRIPTION_CHANGE`, `SUBSCRIPTION_PAYMENT`
 
-Use the allowed values to indicate the subscription event in a [`SubscriptionBuyLineItem`](subscriptionbuylineitem.md), as follows:
+Use the allowed values to indicate the subscription event in a [`SubscriptionBuyLineItem`](./subscriptionbuylineitem.md), as follows:
 
 - **`SUBSCRIPTION_START`**: The first time you report the subscription, for example, when a customer first subscribes.
 - **`RENEWAL`**: A subscription renewal.
@@ -31,13 +39,14 @@ Use the allowed values to indicate the subscription event in a [`SubscriptionBuy
 
 ## See Also
 
-- [type subscriptionDaysOfPaidService](subscriptiondaysofpaidservice.md)
+### Supplying subscription info
+- [type subscriptionDaysOfPaidService](./subscriptiondaysofpaidservice.md)
   The total number of days of paid service for the subscription.
-- [type subscriptionEndDate](subscriptionenddate.md)
+- [type subscriptionEndDate](./subscriptionenddate.md)
   The UNIX date, in milli-seconds, the subscription renewal cycle ends.
-- [type subscriptionStartDate](subscriptionstartdate.md)
+- [type subscriptionStartDate](./subscriptionstartdate.md)
   The UNIX date, in milli-seconds, of the start of the subscription renewal period.
-- [type referenceLineItemId](referencelineitemid.md)
+- [type referenceLineItemId](./referencelineitemid.md)
   The line item identifier of another transaction, that the report  references.
 
 

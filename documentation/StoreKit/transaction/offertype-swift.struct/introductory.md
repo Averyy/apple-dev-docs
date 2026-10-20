@@ -1,7 +1,8 @@
 # introductory
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An introductory offer for an auto-renewable subscription.
 
@@ -22,17 +23,18 @@ static let introductory: Transaction.OfferType
 
 #### Discussion
 
-For more information about introductory offers, see [`Set up introductory offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
+For more information about introductory offers, see [Set up introductory offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions).
 
-The raw value of the [`introductory`](transaction/offertype-swift.struct/introductory.md) offer type is `1`.
+The raw value of the [`introductory`](./introductory.md) offer type is `1`.
 
 ## See Also
 
-- [static let promotional: Transaction.OfferType](transaction/offertype-swift.struct/promotional.md)
+### Getting offer types
+- [static let promotional: Transaction.OfferType](./promotional.md)
   A promotional offer for an auto-renewable subscription.
-- [static let code: Transaction.OfferType](transaction/offertype-swift.struct/code.md)
+- [static let code: Transaction.OfferType](./code.md)
   An offer code.
-- [static var winBack: Transaction.OfferType](transaction/offertype-swift.struct/winback.md)
+- [static var winBack: Transaction.OfferType](./winback.md)
   A win-back offer for an auto-renewable subscription.
 
 

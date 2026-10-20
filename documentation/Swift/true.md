@@ -1,7 +1,8 @@
 # true
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Keyword
 
 A true value.
 
@@ -17,11 +18,12 @@ A true value.
 
 #### Discussion
 
-For information about true and false values, see [`Booleans`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Booleans) in *[`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/)*.
+For information about true and false values, see [Booleans](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Booleans) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
 ## See Also
 
-- [false](false.md)
+### Boolean Literals
+- [false](./false.md)
   A false value.
 
 

@@ -1,7 +1,8 @@
 # VTMultiPassStorageGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the Core Foundation type identifier for the multipass storage object.
 
@@ -17,6 +18,10 @@ Retrieves the Core Foundation type identifier for the multipass storage object.
 
 ```swift
 func VTMultiPassStorageGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID VTMultiPassStorageGetTypeID();
 ```
 
 #### Return Value

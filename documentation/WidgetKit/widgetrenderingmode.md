@@ -1,7 +1,8 @@
 # WidgetRenderingMode
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that indicate the rendering mode for a widget.
 
@@ -21,11 +22,11 @@ struct WidgetRenderingMode
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
 #### Overview
 
-The system can modify the appearance of accessory family widgets. For example, it renders widgets on the Lock Screen on iPhone using the [`vibrant`](widgetrenderingmode/vibrant.md) mode, while it renders widget-based complications in watchOS using either the [`fullColor`](widgetrenderingmode/fullcolor.md) or [`accented`](widgetrenderingmode/accented.md) modes, depending on the watch face and the user’s settings.
+The system can modify the appearance of accessory family widgets. For example, it renders widgets on the Lock Screen on iPhone using the [`vibrant`](./widgetrenderingmode/vibrant.md) mode, while it renders widget-based complications in watchOS using either the [`fullColor`](./widgetrenderingmode/fullcolor.md) or [`accented`](./widgetrenderingmode/accented.md) modes, depending on the watch face and the user’s settings.
 
 You can read the rendering mode from the environment values using the `.widgetRenderingMode` key.
 
@@ -38,48 +39,49 @@ You can then customize your widget’s design based on the rendering mode.
 ## Topics
 
 ### Rendering modes
-- [static let fullColor: WidgetRenderingMode](widgetrenderingmode/fullcolor.md)
+- [static let fullColor: WidgetRenderingMode](./widgetrenderingmode/fullcolor.md)
   The system renders the widget in full color.
-- [static let accented: WidgetRenderingMode](widgetrenderingmode/accented.md)
+- [static let accented: WidgetRenderingMode](./widgetrenderingmode/accented.md)
   The system divides the widget’s view hierarchy into an accent group and a default group, applying a different color to each group.
-- [static let vibrant: WidgetRenderingMode](widgetrenderingmode/vibrant.md)
+- [static let vibrant: WidgetRenderingMode](./widgetrenderingmode/vibrant.md)
   The system desaturates the widget, making a monochrome version that it uses to create an adaptive, vibrant effect.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
+### Layout and presentation
+- [Supporting additional widget sizes](./supporting-additional-widget-sizes.md)
   Offer widgets in additional contexts by adding support for various widget sizes.
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
+- [Displaying the right widget background](./displaying-the-right-widget-background.md)
   Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+- [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md)
   Ensure that your small system family widget works well in StandBy and CarPlay.
-- [struct WidgetAccentedRenderingMode](widgetaccentedrenderingmode.md)
-  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+- [struct WidgetAccentedRenderingMode](./widgetaccentedrenderingmode.md)
+  Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](./widgetrenderingmode/accented.md) mode.
+- [struct AccessoryWidgetBackground](./accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
+- [struct WidgetLocation](./widgetlocation.md)
   Values that indicate different widget locations.
 - [func widgetAccentable(Bool) -> some View
-](../swiftui/view/widgetaccentable(_:).md)
+](../SwiftUI/view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
-](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+](../SwiftUI/image/widgetaccentedrenderingmode%28_%29.md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
-- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](../SwiftUI/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](../SwiftUI/environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
-- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+- [static let widget: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/widget.md)
   The container background placement for a widget.
-- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+- [var showsWidgetContainerBackground: Bool](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
 
 

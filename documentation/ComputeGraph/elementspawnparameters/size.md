@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial size of the particle as a 2D vector representing width and height.
 
@@ -12,7 +13,7 @@ The initial size of the particle as a 2D vector representing width and height.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

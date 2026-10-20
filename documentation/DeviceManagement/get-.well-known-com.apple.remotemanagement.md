@@ -1,7 +1,8 @@
 # Discover Authentication Servers
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of available authentication servers.
 
@@ -12,7 +13,7 @@ Each server entry corresponds to a server that supports a different version of t
 ## Topics
 
 ### Supporting Objects
-- [object WellKnown](wellknown.md)
+- [object WellKnown](./wellknown.md)
   A list of available servers used for authentication.
 
 ## Endpoint
@@ -21,12 +22,19 @@ Each server entry corresponds to a server that supports a different version of t
 
 ## Parameters
 
-- `model-family` (string)
+### Query Parameters
+
+- `model-family` (string): **Allowed Values**: `Mac`, `iPhone`, `iPad`, `AppleTV`, `Watch`, `RealityDevice`
 - `user-identifier` (string)
+
+## Responses
+
+- `200` OK (`WellKnown`, `application/json`): A list of servers the client device can use for authentication.
 
 ## See Also
 
-- [object EnrollmentSSODocument](enrollmentssodocument.md)
+### Objects
+- [object EnrollmentSSODocument](./enrollmentssodocument.md)
   Enrollment SSO streamlines the MDM enrollment process, reduces sign-ins, and improves security.
 
 

@@ -1,7 +1,8 @@
 # NSTitlebarSeparatorStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles that determine the type of separator displayed between the title bar and content of a window.
 
@@ -14,35 +15,40 @@ Styles that determine the type of separator displayed between the title bar and 
 enum NSTitlebarSeparatorStyle
 ```
 
+```c
+enum NSTitlebarSeparatorStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [NSTitlebarSeparatorStyle.automatic](nstitlebarseparatorstyle/automatic.md)
+- [NSTitlebarSeparatorStyle.automatic](./nstitlebarseparatorstyle/automatic.md)
   A style indicating that the system determines the type of separator.
-- [NSTitlebarSeparatorStyle.line](nstitlebarseparatorstyle/line.md)
+- [NSTitlebarSeparatorStyle.line](./nstitlebarseparatorstyle/line.md)
   A style indicating that the title bar separator is a line.
-- [NSTitlebarSeparatorStyle.none](nstitlebarseparatorstyle/none.md)
+- [NSTitlebarSeparatorStyle.none](./nstitlebarseparatorstyle/none.md)
   A style indicating that there’s no title bar separator.
-- [NSTitlebarSeparatorStyle.shadow](nstitlebarseparatorstyle/shadow.md)
+- [NSTitlebarSeparatorStyle.shadow](./nstitlebarseparatorstyle/shadow.md)
   A style indicating that the title bar separator is a shadow.
 ### Initializers
-- [init?(rawValue: Int)](nstitlebarseparatorstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nstitlebarseparatorstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var allowsFullHeightLayout: Bool](nssplitviewitem/allowsfullheightlayout.md)
+### Customizing appearance
+- [var allowsFullHeightLayout: Bool](./nssplitviewitem/allowsfullheightlayout.md)
   A Boolean value that indicates whether full-height sidebars appear in the window after you set a style mask.
-- [var titlebarSeparatorStyle: NSTitlebarSeparatorStyle](nssplitviewitem/titlebarseparatorstyle.md)
+- [var titlebarSeparatorStyle: NSTitlebarSeparatorStyle](./nssplitviewitem/titlebarseparatorstyle.md)
   The type of separator that the app displays between the title bar and content of a window.
 
 

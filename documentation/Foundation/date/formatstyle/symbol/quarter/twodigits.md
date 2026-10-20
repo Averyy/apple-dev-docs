@@ -1,7 +1,8 @@
 # twoDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The two-digit representation of a quarter.
 
@@ -26,13 +27,14 @@ This custom format style conveys a two-digit representation of a quarter. For ex
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/abbreviated.md)
+### Modifying a Quarter
+- [static var abbreviated: Date.FormatStyle.Symbol.Quarter](./abbreviated.md)
   The abbreviated representation of a quarter.
-- [static var narrow: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.Quarter](./narrow.md)
   The shortest representation of a quarter.
-- [static var oneDigit: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.Quarter](./onedigit.md)
   The one-digit representation of a quarter.
-- [static var wide: Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.Quarter](./wide.md)
   The full representation of a quarter.
 
 

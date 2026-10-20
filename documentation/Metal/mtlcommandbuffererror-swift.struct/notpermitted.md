@@ -1,7 +1,8 @@
 # notPermitted
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates a process doesn’t have access to a GPU device.
 
@@ -10,7 +11,7 @@ An error code that indicates a process doesn’t have access to a GPU device.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -21,27 +22,28 @@ static var notPermitted: MTLCommandBufferError.Code { get }
 
 ## See Also
 
-- [static var none: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/none.md)
+### Errors codes
+- [static var none: MTLCommandBufferError.Code](./none.md)
   An error code that represents the absence of any problems.
-- [static var timeout: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/timeout.md)
+- [static var timeout: MTLCommandBufferError.Code](./timeout.md)
   An error code that indicates the system interrupted and terminated the command buffer before it finished running.
-- [static var pageFault: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/pagefault.md)
+- [static var pageFault: MTLCommandBufferError.Code](./pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [static var outOfMemory: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/outofmemory.md)
+- [static var outOfMemory: MTLCommandBufferError.Code](./outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to execute a command buffer.
-- [static var invalidResource: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/invalidresource.md)
+- [static var invalidResource: MTLCommandBufferError.Code](./invalidresource.md)
   An error code that indicates the command buffer has an invalid reference to resource.
-- [static var memoryless: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/memoryless.md)
+- [static var memoryless: MTLCommandBufferError.Code](./memoryless.md)
   An error code that indicates the GPU ran out of one or more of its internal resources that support memoryless render pass attachments.
-- [static var deviceRemoved: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/deviceremoved.md)
+- [static var deviceRemoved: MTLCommandBufferError.Code](./deviceremoved.md)
   An error code that indicates a person physically removed the GPU device before the command buffer finished running.
-- [static var stackOverflow: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/stackoverflow.md)
+- [static var stackOverflow: MTLCommandBufferError.Code](./stackoverflow.md)
   An error code that indicates the GPU terminated the command buffer because a kernel function of tile shader used too many stack frames.
-- [static var accessRevoked: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/accessrevoked.md)
+- [static var accessRevoked: MTLCommandBufferError.Code](./accessrevoked.md)
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
-- [static var `internal`: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/internal.md)
+- [static var `internal`: MTLCommandBufferError.Code](./internal.md)
   An error code that indicates the Metal framework has an internal problem.
-- [MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/code.md)
+- [MTLCommandBufferError.Code](./code.md)
   Error codes that indicate why a GPU is unable to finish running a command buffer.
 
 

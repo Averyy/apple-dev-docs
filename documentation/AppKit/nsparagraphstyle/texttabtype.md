@@ -1,12 +1,15 @@
 # NSParagraphStyle.TextTabType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the type of tab stop.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use NSTextAlignment-based API.
 
 ## Declaration
 
@@ -14,48 +17,53 @@ Constants that specify the type of tab stop.
 enum TextTabType
 ```
 
+```c
+enum NSTextTabType : NSUInteger;
+```
+
 #### Overview
 
-The following mappings define the conversions between text alignment in [`NSTextTab`](nstexttab.md) and tab stop types that [`NSTextTab`](nstexttab.md) defines:
+The following mappings define the conversions between text alignment in [`NSTextTab`](../nstexttab.md) and tab stop types that [`NSTextTab`](../nstexttab.md) defines:
 
 | Alignment | Tab stop type |
 | --- | --- |
-| [`NSTextAlignment.left`](nstextalignment/left.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](nsparagraphstyle/texttabtype/lefttabstoptype.md) |
-| [`NSTextAlignment.right`](nstextalignment/right.md) | [`NSParagraphStyle.TextTabType.rightTabStopType`](nsparagraphstyle/texttabtype/righttabstoptype.md) |
-| [`NSTextAlignment.center`](nstextalignment/center.md) | [`NSParagraphStyle.TextTabType.centerTabStopType`](nsparagraphstyle/texttabtype/centertabstoptype.md) |
-| [`NSTextAlignment.justified`](nstextalignment/justified.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](nsparagraphstyle/texttabtype/lefttabstoptype.md) |
-| [`NSTextAlignment.natural`](nstextalignment/natural.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](nsparagraphstyle/texttabtype/lefttabstoptype.md), or [`NSParagraphStyle.TextTabType.rightTabStopType`](nsparagraphstyle/texttabtype/righttabstoptype.md), depending on the user setting. |
-| [`NSTextAlignment.right`](nstextalignment/right.md) with a terminator | [`NSParagraphStyle.TextTabType.decimalTabStopType`](nsparagraphstyle/texttabtype/decimaltabstoptype.md) |
+| [`NSTextAlignment.left`](../nstextalignment/left.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](./texttabtype/lefttabstoptype.md) |
+| [`NSTextAlignment.right`](../nstextalignment/right.md) | [`NSParagraphStyle.TextTabType.rightTabStopType`](./texttabtype/righttabstoptype.md) |
+| [`NSTextAlignment.center`](../nstextalignment/center.md) | [`NSParagraphStyle.TextTabType.centerTabStopType`](./texttabtype/centertabstoptype.md) |
+| [`NSTextAlignment.justified`](../nstextalignment/justified.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](./texttabtype/lefttabstoptype.md) |
+| [`NSTextAlignment.natural`](../nstextalignment/natural.md) | [`NSParagraphStyle.TextTabType.leftTabStopType`](./texttabtype/lefttabstoptype.md), or [`NSParagraphStyle.TextTabType.rightTabStopType`](./texttabtype/righttabstoptype.md), depending on the user setting. |
+| [`NSTextAlignment.right`](../nstextalignment/right.md) with a terminator | [`NSParagraphStyle.TextTabType.decimalTabStopType`](./texttabtype/decimaltabstoptype.md) |
 
 ## Topics
 
 ### Constants
-- [NSParagraphStyle.TextTabType.leftTabStopType](nsparagraphstyle/texttabtype/lefttabstoptype.md)
+- [NSParagraphStyle.TextTabType.leftTabStopType](./texttabtype/lefttabstoptype.md)
   A left-aligned tab stop.
-- [NSParagraphStyle.TextTabType.rightTabStopType](nsparagraphstyle/texttabtype/righttabstoptype.md)
+- [NSParagraphStyle.TextTabType.rightTabStopType](./texttabtype/righttabstoptype.md)
   A right-aligned tab stop.
-- [NSParagraphStyle.TextTabType.centerTabStopType](nsparagraphstyle/texttabtype/centertabstoptype.md)
+- [NSParagraphStyle.TextTabType.centerTabStopType](./texttabtype/centertabstoptype.md)
   A center-aligned tab stop.
-- [NSParagraphStyle.TextTabType.decimalTabStopType](nsparagraphstyle/texttabtype/decimaltabstoptype.md)
+- [NSParagraphStyle.TextTabType.decimalTabStopType](./texttabtype/decimaltabstoptype.md)
   A tab stop that aligns columns of numbers to each number’s decimal point.
 ### Initializers
-- [init?(rawValue: UInt)](nsparagraphstyle/texttabtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./texttabtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var tabStops: [NSTextTab]](nsparagraphstyle/tabstops.md)
+### Accessing tab information
+- [var tabStops: [NSTextTab]](./tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
+- [var defaultTabInterval: CGFloat](./defaulttabinterval.md)
   The documentwide default tab interval.
 
 

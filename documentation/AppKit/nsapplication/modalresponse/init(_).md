@@ -1,10 +1,11 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,7 +15,8 @@ init(_ rawValue: Int)
 
 ## See Also
 
-- [init(rawValue: Int)](nsapplication/modalresponse/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
 
 
 ---

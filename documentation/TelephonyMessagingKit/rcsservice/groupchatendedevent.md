@@ -1,7 +1,8 @@
 # RCSService.GroupChatEndedEvent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Event triggered when a group chat is ended.
 
@@ -17,37 +18,38 @@ struct GroupChatEndedEvent
 ## Topics
 
 ### Accessing event properties
-- [let cellularServiceID: CellularServiceID](rcsservice/groupchatendedevent/cellularserviceid.md)
+- [let cellularServiceID: CellularServiceID](./groupchatendedevent/cellularserviceid.md)
   Cellular service identifier associated with this event.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let groupHandle: RCSHandle.Group](rcsservice/groupchatendedevent/grouphandle.md)
+- [let groupHandle: RCSHandle.Group](./groupchatendedevent/grouphandle.md)
   The group handle of the group chat.
-- [RCSHandle.Group](rcshandle/group.md)
+- [RCSHandle.Group](../rcshandle/group.md)
   A structure that represents an RCS group handle.
-- [let endedBy: RCSHandle.URI](rcsservice/groupchatendedevent/endedby.md)
+- [let endedBy: RCSHandle.URI](./groupchatendedevent/endedby.md)
   Handle of device that performed the operation.
-- [RCSHandle.URI](rcshandle/uri.md)
+- [RCSHandle.URI](../rcshandle/uri.md)
   A structure that represents an RCS URI handle.
 ### Instance Properties
-- [let isEndToEndEncrypted: Bool](rcsservice/groupchatendedevent/isendtoendencrypted.md)
+- [let isEndToEndEncrypted: Bool](./groupchatendedevent/isendtoendencrypted.md)
   A Boolean value that indicates whether the associated group is end-to-end encrypted.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [RCSService.GroupChatParticipantsAddedEvent](rcsservice/groupchatparticipantsaddedevent.md)
+### Supporting types
+- [RCSService.GroupChatParticipantsAddedEvent](./groupchatparticipantsaddedevent.md)
   Event triggered when participants are added to a group.
-- [RCSService.GroupChatParticipantsRemovedEvent](rcsservice/groupchatparticipantsremovedevent.md)
+- [RCSService.GroupChatParticipantsRemovedEvent](./groupchatparticipantsremovedevent.md)
   Event triggered when participants are removed from a group.
-- [RCSService.GroupChatStartedEvent](rcsservice/groupchatstartedevent.md)
+- [RCSService.GroupChatStartedEvent](./groupchatstartedevent.md)
   Event triggered when group chat is started.
-- [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
+- [RCSService.GroupChatSubjectUpdatedEvent](./groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
 
 

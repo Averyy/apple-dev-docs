@@ -1,16 +1,18 @@
 # NSAccessoryTrackingUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells a person why the app is requesting access to track accessory position and location.
 
 **Availability**:
 - visionOS 26.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSAccessoryTrackingUsageDescription` (Privacy - Accessory Tracking Usage Description)
+- **Type**: string
 
 #### Discussion
 
@@ -18,9 +20,10 @@ Use this key to indicate that your app requires access to accessory-tracking dat
 
 ## See Also
 
-- [NSWorldSensingUsageDescription](information-property-list/nsworldsensingusagedescription.md)
+### Vision
+- [NSWorldSensingUsageDescription](./nsworldsensingusagedescription.md)
   A message that tells people why the app is requesting access to image tracking, plane detection, or scene reconstruction.
-- [NSHandsTrackingUsageDescription](information-property-list/nshandstrackingusagedescription.md)
+- [NSHandsTrackingUsageDescription](./nshandstrackingusagedescription.md)
   A message that tells people why the app is requesting access to track their hand position and location.
 
 

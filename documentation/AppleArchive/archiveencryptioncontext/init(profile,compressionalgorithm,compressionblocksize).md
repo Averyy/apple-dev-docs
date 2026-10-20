@@ -1,7 +1,8 @@
 # init(profile:compressionAlgorithm:compressionBlockSize:)
 
 **Framework**: Apple Archive  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new encryption context from the specified profile, compression algorithm, and block size.
 
@@ -11,7 +12,7 @@ Returns a new encryption context from the specified profile, compression algorit
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ init(profile: ArchiveEncryptionContext.Profile, compressionAlgorithm: ArchiveCom
 
 ## See Also
 
-- [init?(from: ArchiveByteStream)](archiveencryptioncontext/init(from:).md)
+### Creating an archive encryption context
+- [init?(from: ArchiveByteStream)](./init%28from%29.md)
   Returns a new encryption context from the specified encrypted stream.
 
 

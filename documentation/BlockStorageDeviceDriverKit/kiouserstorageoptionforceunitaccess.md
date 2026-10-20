@@ -1,7 +1,8 @@
 # kIOUserStorageOptionForceUnitAccess
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 An option to use Force Unit Access (FUA).
 
@@ -10,7 +11,7 @@ An option to use Force Unit Access (FUA).
 
 ## Declaration
 
-```swift
+```c
 #define kIOUserStorageOptionForceUnitAccess
 ```
 
@@ -20,7 +21,8 @@ This option tells the storage stack to force a request to access the media.
 
 ## See Also
 
-- [kIOUserStorageOptionNone](kiouserstorageoptionnone.md)
+### Storage Options
+- [kIOUserStorageOptionNone](./kiouserstorageoptionnone.md)
   A value that defines no options.
 
 

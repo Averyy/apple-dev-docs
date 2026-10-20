@@ -1,7 +1,8 @@
 # NETunnelProviderError.Code
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that the tunnel provider declares.
 
@@ -19,27 +20,31 @@ Error codes that the tunnel provider declares.
 enum Code
 ```
 
+```c
+enum NETunnelProviderError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NETunnelProviderError.Code.networkSettingsInvalid](netunnelprovidererror-swift.struct/code/networksettingsinvalid.md)
+- [NETunnelProviderError.Code.networkSettingsInvalid](./code/networksettingsinvalid.md)
   The provided tunnel network settings are invalid.
-- [NETunnelProviderError.Code.networkSettingsCanceled](netunnelprovidererror-swift.struct/code/networksettingscanceled.md)
+- [NETunnelProviderError.Code.networkSettingsCanceled](./code/networksettingscanceled.md)
   The request to set or clear the tunnel network settings was canceled.
-- [NETunnelProviderError.Code.networkSettingsFailed](netunnelprovidererror-swift.struct/code/networksettingsfailed.md)
+- [NETunnelProviderError.Code.networkSettingsFailed](./code/networksettingsfailed.md)
   The request to set or clear the tunnel network settings failed.
 ### Initializers
-- [init?(rawValue: Int)](netunnelprovidererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

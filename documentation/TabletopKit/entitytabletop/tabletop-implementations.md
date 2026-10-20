@@ -1,11 +1,12 @@
 # Tabletop Implementations
 
-**Framework**: TabletopKit
+**Framework**: TabletopKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var shape: TabletopShape](entitytabletop/shape.md)
+- [var shape: TabletopShape](./shape.md)
   The shape of the table.
 
 

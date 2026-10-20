@@ -1,21 +1,22 @@
 # ReviewSubmissionItem.Relationships.InAppPurchaseVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItem.Relationships.InAppPurchaseVersion
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion.Data](reviewsubmissionitem/relationships-data.dictionary/inapppurchaseversion-data.dictionary/data-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion.Data](./inapppurchaseversion-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

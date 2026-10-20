@@ -1,7 +1,8 @@
 # managedContentStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a managed content style to the view.
 
@@ -28,7 +29,8 @@ The styled view.
 
 ## See Also
 
-- [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View](view/automateddeviceenrollmentaddition(ispresented:).md)
+### Working with managed devices
+- [func automatedDeviceEnrollmentAddition(isPresented: Binding<Bool>) -> some View](./automateddeviceenrollmentaddition%28ispresented%29.md)
   Presents a modal view that enables users to add devices to their organization.
 
 

@@ -1,7 +1,8 @@
 # updateCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The simulation update that this event originates from.
 
@@ -18,7 +19,8 @@ let updateCount: UInt64
 
 ## See Also
 
-- [let bodyEntity: Entity](clothbodyevents/newsimulationpositions/bodyentity.md)
+### Identifying the event source
+- [let bodyEntity: Entity](./bodyentity.md)
   The entity that has the body component that this event originates from.
 
 

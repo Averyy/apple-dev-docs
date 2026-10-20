@@ -1,21 +1,22 @@
 # AppAssetLibraryRefDatum.Attributes.PlacementTypes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatum.Attributes.PlacementTypes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryRefDatum.Attributes.PlacementTypes.SpecMappings](appassetlibraryrefdatum/attributes-data.dictionary/placementtypes-data.dictionary/specmappings-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.PlacementTypes.SpecMappings](./placementtypes-data.dictionary/specmappings-data.dictionary.md)
 
 ## Properties
 

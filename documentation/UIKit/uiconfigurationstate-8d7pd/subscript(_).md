@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Accesses custom states by key.
@@ -11,7 +12,7 @@ Accesses custom states by key.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ subscript(key: UIConfigurationStateCustomKey) -> AnyHashable? { get set }
 
 ## See Also
 
-- [var traitCollection: UITraitCollection](uiconfigurationstate-8d7pd/traitcollection.md)
+### Managing configuration states
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   The traits that describe the current layout environment of the view, such as the user interface style and layout direction.
 
 

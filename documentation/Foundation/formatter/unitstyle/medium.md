@@ -1,7 +1,8 @@
 # Formatter.UnitStyle.medium
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a medium unit style.
 
@@ -20,11 +21,16 @@ Specifies a medium unit style.
 case medium
 ```
 
+```c
+NSFormattingUnitStyleMedium
+```
+
 ## See Also
 
-- [Formatter.UnitStyle.short](formatter/unitstyle/short.md)
+### Constants
+- [Formatter.UnitStyle.short](./short.md)
   Specifies a short unit style.
-- [Formatter.UnitStyle.long](formatter/unitstyle/long.md)
+- [Formatter.UnitStyle.long](./long.md)
   Specifies a long unit style.
 
 

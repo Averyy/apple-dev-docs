@@ -1,7 +1,8 @@
 # invalidModel
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates the sound classifier’s underlying Core ML model is an invalid model type.
 
@@ -22,13 +23,14 @@ static var invalidModel: SNError.Code { get }
 
 ## See Also
 
-- [static var invalidFormat: SNError.Code](snerror/invalidformat.md)
+### Error Codes
+- [static var invalidFormat: SNError.Code](./invalidformat.md)
   An error that indicates the audio data’s format isn’t valid.
-- [static var invalidFile: SNError.Code](snerror/invalidfile.md)
+- [static var invalidFile: SNError.Code](./invalidfile.md)
   An error that indicates an audio file is invalid.
-- [static var operationFailed: SNError.Code](snerror/operationfailed.md)
+- [static var operationFailed: SNError.Code](./operationfailed.md)
   An error that occurs when the framework fails to analyze audio.
-- [static var unknownError: SNError.Code](snerror/unknownerror.md)
+- [static var unknownError: SNError.Code](./unknownerror.md)
   An error that represents a failure that no other error handles.
 
 

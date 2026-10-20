@@ -1,7 +1,8 @@
 # SpeechTranscriber.ReportingOption
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options relating to the transcriber’s result delivery.
 
@@ -22,27 +23,28 @@ enum ReportingOption
 ## Topics
 
 ### Reporting options
-- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](speechtranscriber/reportingoption/alternativetranscriptions.md)
+- [SpeechTranscriber.ReportingOption.alternativeTranscriptions](./reportingoption/alternativetranscriptions.md)
   Includes alternative transcriptions in addition to the most likely transcription.
-- [SpeechTranscriber.ReportingOption.fastResults](speechtranscriber/reportingoption/fastresults.md)
+- [SpeechTranscriber.ReportingOption.fastResults](./reportingoption/fastresults.md)
   Biases the transcriber towards responsiveness, yielding faster but also less accurate results.
-- [SpeechTranscriber.ReportingOption.volatileResults](speechtranscriber/reportingoption/volatileresults.md)
+- [SpeechTranscriber.ReportingOption.volatileResults](./reportingoption/volatileresults.md)
   Provides tentative results for an audio range in addition to the finalized result.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [SpeechTranscriber.ResultAttributeOption](speechtranscriber/resultattributeoption.md)
+### Configuring transcription
+- [SpeechTranscriber.ResultAttributeOption](./resultattributeoption.md)
   Options relating to the attributes of the transcription.
-- [SpeechTranscriber.TranscriptionOption](speechtranscriber/transcriptionoption.md)
+- [SpeechTranscriber.TranscriptionOption](./transcriptionoption.md)
   Options relating to the text of the transcription.
 
 

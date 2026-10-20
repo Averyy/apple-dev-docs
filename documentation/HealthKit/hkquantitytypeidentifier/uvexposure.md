@@ -1,7 +1,8 @@
 # uvExposure
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures the user’s exposure to UV radiation.
 
@@ -19,17 +20,22 @@ A quantity sample type that measures the user’s exposure to UV radiation.
 static let uvExposure: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierUVExposure;
+```
+
 #### Discussion
 
-These samples use count units (described in [`HKUnit`](hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)). The sample’s value represents the UV index that the user was exposed to during the sample’s duration.
+These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). The sample’s value represents the UV index that the user was exposed to during the sample’s duration.
 
 ## See Also
 
-- [struct HKQuantityTypeIdentifier](hkquantitytypeidentifier.md)
+### Related Documentation
+- [struct HKQuantityTypeIdentifier](../hkquantitytypeidentifier.md)
   The identifiers that create quantity type objects.
-- [class HKQuantitySample](hkquantitysample.md)
+- [class HKQuantitySample](../hkquantitysample.md)
   A sample that represents a quantity, including the value and the units.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](../hkquantity.md)
   An object that stores a value for a given unit.
 
 

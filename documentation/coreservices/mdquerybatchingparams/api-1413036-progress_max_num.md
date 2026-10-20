@@ -1,7 +1,8 @@
 # progress_max_num
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum number of results that can accumulatebefore additional progress notifications are sent. This value isused only during the initial result-gathering phase of a query.
 
@@ -13,6 +14,10 @@ The maximum number of results that can accumulatebefore additional progress noti
 
 ```swift
 var progress_max_num: Int
+```
+
+```c
+size_t progress_max_num;
 ```
 
 

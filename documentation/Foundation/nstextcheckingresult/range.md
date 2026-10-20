@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the range of the result that the receiver represents.
 
@@ -20,17 +21,22 @@ Returns the range of the result that the receiver represents.
 var range: NSRange { get }
 ```
 
+```objc
+@property (readonly) NSRange range;
+```
+
 #### Discussion
 
 This property will be present for all returned `NSTextCheckingResult` instances.
 
 ## See Also
 
-- [var resultType: NSTextCheckingResult.CheckingType](nstextcheckingresult/resulttype.md)
+### Text Checking Type Range and Type
+- [var resultType: NSTextCheckingResult.CheckingType](./resulttype.md)
   Returns the text checking result type that the receiver represents.
-- [var numberOfRanges: Int](nstextcheckingresult/numberofranges.md)
+- [var numberOfRanges: Int](./numberofranges.md)
   Returns the number of ranges.
-- [func range(at: Int) -> NSRange](nstextcheckingresult/range(at:).md)
+- [func range(at: Int) -> NSRange](./range%28at%29.md)
   Returns the result type that the range represents.
 
 

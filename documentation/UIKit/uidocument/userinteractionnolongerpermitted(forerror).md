@@ -1,7 +1,8 @@
 # userInteractionNoLongerPermitted(forError:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates when it’s no longer safe to proceed without immediately handling the error.
 
@@ -17,9 +18,13 @@ Indicates when it’s no longer safe to proceed without immediately handling the
 func userInteractionNoLongerPermitted(forError error: any Error)
 ```
 
+```objc
+- (void) userInteractionNoLongerPermittedForError:(NSError *) error;
+```
+
 #### Discussion
 
-UIKit calls this method when it’s no longer safe to proceed without immediately handling the error, such as when the application is being suspended. Subclasses that override this method must immediately end error handling (including dismissing any interactive user interface) and call [`finishedHandlingError(_:recovered:)`](uidocument/finishedhandlingerror(_:recovered:).md) before returning. It’s only necessary to override this method if you override [`handleError(_:userInteractionPermitted:)`](uidocument/handleerror(_:userinteractionpermitted:).md) without invoking the superclass implementation (`super`).
+UIKit calls this method when it’s no longer safe to proceed without immediately handling the error, such as when the application is being suspended. Subclasses that override this method must immediately end error handling (including dismissing any interactive user interface) and call [`finishedHandlingError(_:recovered:)`](./finishedhandlingerror%28_,recovered%29.md) before returning. It’s only necessary to override this method if you override [`handleError(_:userInteractionPermitted:)`](./handleerror%28_,userinteractionpermitted%29.md) without invoking the superclass implementation (`super`).
 
 ## Parameters
 
@@ -27,9 +32,10 @@ UIKit calls this method when it’s no longer safe to proceed without immediatel
 
 ## See Also
 
-- [func handleError(any Error, userInteractionPermitted: Bool)](uidocument/handleerror(_:userinteractionpermitted:).md)
+### Resolving conflicts and handling errors
+- [func handleError(any Error, userInteractionPermitted: Bool)](./handleerror%28_,userinteractionpermitted%29.md)
   Handles an error that occurs during an attempt to read, save, or revert a document.
-- [func finishedHandlingError(any Error, recovered: Bool)](uidocument/finishedhandlingerror(_:recovered:).md)
+- [func finishedHandlingError(any Error, recovered: Bool)](./finishedhandlingerror%28_,recovered%29.md)
   Tells UIKit that you finished handling the error.
 
 

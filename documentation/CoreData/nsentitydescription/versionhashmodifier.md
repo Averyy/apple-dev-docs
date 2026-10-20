@@ -1,7 +1,8 @@
 # versionHashModifier
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version hash modifier for the receiver.
 
@@ -10,7 +11,7 @@ The version hash modifier for the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The version hash modifier for the receiver.
 var versionHashModifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * versionHashModifier;
+```
+
 #### Discussion
 
 This value is included in the version hash for the entity. You use it to mark or denote an entity as being a different “version” than another even if all of the values which affect persistence are equal. (Such a difference is important in cases where, for example, the structure of an entity is unchanged but the format or content of data has changed.)
 
 ## See Also
 
-- [var versionHash: Data](nsentitydescription/versionhash.md)
+### Managing versioning
+- [var versionHash: Data](./versionhash.md)
   The version hash for the receiver.
 
 

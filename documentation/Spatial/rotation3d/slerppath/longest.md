@@ -1,7 +1,8 @@
 # Rotation3D.SlerpPath.longest
 
 **Framework**: Spatial  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Spherical linear interpolation along the longest arc between two rotations.
 
@@ -11,7 +12,7 @@ Spherical linear interpolation along the longest arc between two rotations.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case longest
 
 ## See Also
 
-- [Rotation3D.SlerpPath.automatic](rotation3d/slerppath/automatic.md)
+### Enumeration Cases
+- [Rotation3D.SlerpPath.automatic](./automatic.md)
   Spherical linear interpolation along the automatically selected arc between two rotations.
-- [Rotation3D.SlerpPath.shortest](rotation3d/slerppath/shortest.md)
+- [Rotation3D.SlerpPath.shortest](./shortest.md)
   Spherical linear interpolation along the shortest arc between two rotations.
 
 

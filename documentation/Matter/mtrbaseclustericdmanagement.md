@@ -1,7 +1,8 @@
 # MTRBaseClusterICDManagement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster ICD Management
 
@@ -20,6 +21,10 @@ Cluster ICD Management
 class MTRBaseClusterICDManagement
 ```
 
+```objc
+@interface MTRBaseClusterICDManagement : MTRGenericBaseCluster
+```
+
 #### Overview
 
 Allows servers to ensure that listed clients are notified when a server is available for communication.
@@ -27,73 +32,73 @@ Allows servers to ensure that listed clients are notified when a server is avail
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrbaseclustericdmanagement/init(device:endpointid:queue:).md)
+- [init?(device: MTRBaseDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrbaseclustericdmanagement/init%28device,endpointid,queue%29.md)
   For all instance methods (reads, writes, commands) that take a completion, the completion will be called on the provided queue.
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeacceptedcommandlist(completion:).md)
-- [func readAttributeActiveModeDuration(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeactivemodeduration(completion:).md)
-- [func readAttributeActiveModeThreshold(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeactivemodethreshold(completion:).md)
-- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeattributelist(completion:).md)
-- [func readAttributeClientsSupportedPerFabric(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeclientssupportedperfabric(completion:).md)
-- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeclusterrevision(completion:).md)
-- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributefeaturemap(completion:).md)
-- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributegeneratedcommandlist(completion:).md)
-- [func readAttributeICDCounter(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeicdcounter(completion:).md)
-- [func readAttributeIdleModeDuration(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeidlemodeduration(completion:).md)
-- [func readAttributeMaximumCheckInBackOff(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributemaximumcheckinbackoff(completion:).md)
-- [func readAttributeOperatingMode(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeoperatingmode(completion:).md)
-- [func readAttributeRegisteredClients(with: MTRReadParams?, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeregisteredclients(with:completion:).md)
-- [func readAttributeUserActiveModeTriggerHint(completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeuseractivemodetriggerhint(completion:).md)
-- [func readAttributeUserActiveModeTriggerInstruction(completion: (String?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeuseractivemodetriggerinstruction(completion:).md)
-- [func registerClient(with: MTRICDManagementClusterRegisterClientParams, completion: (MTRICDManagementClusterRegisterClientResponseParams?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/registerclient(with:completion:).md)
+- [func readAttributeAcceptedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeacceptedcommandlist%28completion%29.md)
+- [func readAttributeActiveModeDuration(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeactivemodeduration%28completion%29.md)
+- [func readAttributeActiveModeThreshold(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeactivemodethreshold%28completion%29.md)
+- [func readAttributeAttributeList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeattributelist%28completion%29.md)
+- [func readAttributeClientsSupportedPerFabric(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeclientssupportedperfabric%28completion%29.md)
+- [func readAttributeClusterRevision(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeclusterrevision%28completion%29.md)
+- [func readAttributeFeatureMap(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributefeaturemap%28completion%29.md)
+- [func readAttributeGeneratedCommandList(completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributegeneratedcommandlist%28completion%29.md)
+- [func readAttributeICDCounter(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeicdcounter%28completion%29.md)
+- [func readAttributeIdleModeDuration(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeidlemodeduration%28completion%29.md)
+- [func readAttributeMaximumCheckInBackOff(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributemaximumcheckinbackoff%28completion%29.md)
+- [func readAttributeOperatingMode(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeoperatingmode%28completion%29.md)
+- [func readAttributeRegisteredClients(with: MTRReadParams?, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeregisteredclients%28with,completion%29.md)
+- [func readAttributeUserActiveModeTriggerHint(completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeuseractivemodetriggerhint%28completion%29.md)
+- [func readAttributeUserActiveModeTriggerInstruction(completion: (String?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeuseractivemodetriggerinstruction%28completion%29.md)
+- [func registerClient(with: MTRICDManagementClusterRegisterClientParams, completion: (MTRICDManagementClusterRegisterClientResponseParams?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/registerclient%28with,completion%29.md)
   Command RegisterClient
-- [func stayActiveRequest(with: MTRICDManagementClusterStayActiveRequestParams, completion: (MTRICDManagementClusterStayActiveResponseParams?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/stayactiverequest(with:completion:).md)
+- [func stayActiveRequest(with: MTRICDManagementClusterStayActiveRequestParams, completion: (MTRICDManagementClusterStayActiveResponseParams?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/stayactiverequest%28with,completion%29.md)
   Command StayActiveRequest
-- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeacceptedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeActiveModeDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeactivemodeduration(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeActiveModeThreshold(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeactivemodethreshold(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeattributelist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClientsSupportedPerFabric(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeclientssupportedperfabric(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeclusterrevision(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributefeaturemap(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributegeneratedcommandlist(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeICDCounter(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeicdcounter(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeIdleModeDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeidlemodeduration(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeMaximumCheckInBackOff(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributemaximumcheckinbackoff(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeOperatingMode(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeoperatingmode(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeRegisteredClients(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeregisteredclients(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeUserActiveModeTriggerHint(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerhint(with:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeUserActiveModeTriggerInstruction(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerinstruction(with:subscriptionestablished:reporthandler:).md)
-- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, completion: ((any Error)?) -> Void)](mtrbaseclustericdmanagement/unregisterclient(with:completion:).md)
+- [func subscribeAttributeAcceptedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeacceptedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeActiveModeDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeactivemodeduration%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeActiveModeThreshold(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeactivemodethreshold%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeattributelist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClientsSupportedPerFabric(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeclientssupportedperfabric%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeclusterrevision%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributefeaturemap%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributegeneratedcommandlist%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeICDCounter(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeicdcounter%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeIdleModeDuration(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeidlemodeduration%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeMaximumCheckInBackOff(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributemaximumcheckinbackoff%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeOperatingMode(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeoperatingmode%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeRegisteredClients(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeregisteredclients%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeUserActiveModeTriggerHint(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerhint%28with,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeUserActiveModeTriggerInstruction(with: MTRSubscribeParams, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/subscribeattributeuseractivemodetriggerinstruction%28with,subscriptionestablished,reporthandler%29.md)
+- [func unregisterClient(with: MTRICDManagementClusterUnregisterClientParams, completion: ((any Error)?) -> Void)](./mtrbaseclustericdmanagement/unregisterclient%28with,completion%29.md)
   Command UnregisterClient
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeacceptedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeActiveModeDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeactivemodeduration(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeActiveModeThreshold(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeactivemodethreshold(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeattributelist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClientsSupportedPerFabric(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeclientssupportedperfabric(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeclusterrevision(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributefeaturemap(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributegeneratedcommandlist(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeICDCounter(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeicdcounter(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeIdleModeDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeidlemodeduration(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeMaximumCheckInBackOff(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributemaximumcheckinbackoff(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeOperatingMode(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeoperatingmode(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeRegisteredClients(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeregisteredclients(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeUserActiveModeTriggerHint(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeuseractivemodetriggerhint(withclusterstatecache:endpoint:queue:completion:).md)
-- [class func readAttributeUserActiveModeTriggerInstruction(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (String?, (any Error)?) -> Void)](mtrbaseclustericdmanagement/readattributeuseractivemodetriggerinstruction(withclusterstatecache:endpoint:queue:completion:).md)
+- [class func readAttributeAcceptedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeacceptedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeActiveModeDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeactivemodeduration%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeActiveModeThreshold(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeactivemodethreshold%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeAttributeList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeattributelist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClientsSupportedPerFabric(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeclientssupportedperfabric%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeClusterRevision(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeclusterrevision%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeFeatureMap(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributefeaturemap%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeGeneratedCommandList(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributegeneratedcommandlist%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeICDCounter(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeicdcounter%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeIdleModeDuration(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeidlemodeduration%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeMaximumCheckInBackOff(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributemaximumcheckinbackoff%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeOperatingMode(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeoperatingmode%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeRegisteredClients(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: ([Any]?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeregisteredclients%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeUserActiveModeTriggerHint(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeuseractivemodetriggerhint%28withclusterstatecache,endpoint,queue,completion%29.md)
+- [class func readAttributeUserActiveModeTriggerInstruction(withClusterStateCache: MTRClusterStateCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completion: (String?, (any Error)?) -> Void)](./mtrbaseclustericdmanagement/readattributeuseractivemodetriggerinstruction%28withclusterstatecache,endpoint,queue,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericBaseCluster](mtrgenericbasecluster.md)
+- [MTRGenericBaseCluster](./mtrgenericbasecluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

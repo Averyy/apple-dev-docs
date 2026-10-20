@@ -1,12 +1,13 @@
 # avoidsEmptySelection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver requires that the content array attempt to maintain a selection
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the receiver requires that the content ar
 var avoidsEmptySelection: Bool { get set }
 ```
 
+```objc
+@property BOOL avoidsEmptySelection;
+```
+
 #### Discussion
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true). This property is observable using key-value observing.
+The default is [`true`](../../Swift/true.md). This property is observable using key-value observing.
 
 ## See Also
 
-- [var preservesSelection: Bool](nsarraycontroller/preservesselection.md)
+### Selection Attributes
+- [var preservesSelection: Bool](./preservesselection.md)
   A Boolean value that indicates whether the receiver will attempt to preserve the current selection when the content changes
-- [var alwaysUsesMultipleValuesMarker: Bool](nsarraycontroller/alwaysusesmultiplevaluesmarker.md)
+- [var alwaysUsesMultipleValuesMarker: Bool](./alwaysusesmultiplevaluesmarker.md)
   A Boolean value that indicates whether the receiver always returns the multiple values marker when multiple objects are selected
 
 

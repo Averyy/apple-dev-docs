@@ -1,7 +1,8 @@
 # isConstantColorEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to capture the photo with constant color.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether to capture the photo with constant color.
 var isConstantColorEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isConstantColorEnabled) BOOL constantColorEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). Set the value to [`true`](https://developer.apple.com/documentation/swift/true) to capture a constant color photo.
+The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to capture a constant color photo.
 
-> ❗ **Important**:  Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](avcapturephotooutput/isconstantcolorenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false), results in the system throwing an exception.
+> ❗ **Important**:  Attempting to enable constant color capture when a photo output’s [`isConstantColorEnabled`](../avcapturephotooutput/isconstantcolorenabled.md) is [`false`](../../Swift/false.md), results in the system throwing an exception.
 
 ## See Also
 
-- [var isConstantColorFallbackPhotoDeliveryEnabled: Bool](avcapturephotosettings/isconstantcolorfallbackphotodeliveryenabled.md)
+### Configuring constant color
+- [var isConstantColorFallbackPhotoDeliveryEnabled: Bool](./isconstantcolorfallbackphotodeliveryenabled.md)
   A Boolean value that indicates whether to deliver a fallback photo when taking a constant color capture.
 
 

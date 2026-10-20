@@ -1,12 +1,13 @@
 # tag
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The menu item’s tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The menu item’s tag.
 var tag: Int { get set }
 ```
 
+```objc
+@property NSInteger tag;
+```
+
 ## See Also
 
-- [var representedObject: Any?](nsmenuitem/representedobject.md)
+### Related Documentation
+- [var representedObject: Any?](./representedobject.md)
   The object represented by the menu item.
 
 

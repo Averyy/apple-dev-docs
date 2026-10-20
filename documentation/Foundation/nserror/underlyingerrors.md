@@ -1,7 +1,8 @@
 # underlyingErrors
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var underlyingErrors: [any Error] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSError *> * underlyingErrors;
 ```
 
 

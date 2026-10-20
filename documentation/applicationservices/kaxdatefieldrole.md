@@ -1,7 +1,8 @@
 # kAXDateFieldRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A field that displays dates.
 
@@ -12,6 +13,10 @@ A field that displays dates.
 
 ```swift
 var kAXDateFieldRole: String { get }
+```
+
+```c
+#define kAXDateFieldRole
 ```
 
 

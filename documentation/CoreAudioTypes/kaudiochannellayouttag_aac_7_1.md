@@ -1,7 +1,8 @@
 # kAudioChannelLayoutTag_AAC_7_1
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An AAC 7.1-channel surround-based layout.
 
@@ -20,6 +21,10 @@ An AAC 7.1-channel surround-based layout.
 var kAudioChannelLayoutTag_AAC_7_1: AudioChannelLayoutTag { get }
 ```
 
+```c
+kAudioChannelLayoutTag_AAC_7_1
+```
+
 #### Discussion
 
 Your channels must be laid out in the following order:
@@ -35,27 +40,28 @@ Your channels must be laid out in the following order:
 
 ## See Also
 
-- [var kAudioChannelLayoutTag_AAC_3_0: AudioChannelLayoutTag](kaudiochannellayouttag_aac_3_0.md)
+### AAC Defined Layouts
+- [var kAudioChannelLayoutTag_AAC_3_0: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_3_0.md)
   An AAC 3-channel audio layout.
-- [var kAudioChannelLayoutTag_AAC_Quadraphonic: AudioChannelLayoutTag](kaudiochannellayouttag_aac_quadraphonic.md)
+- [var kAudioChannelLayoutTag_AAC_Quadraphonic: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_quadraphonic.md)
   An AAC quadraphonic surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_4_0: AudioChannelLayoutTag](kaudiochannellayouttag_aac_4_0.md)
+- [var kAudioChannelLayoutTag_AAC_4_0: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_4_0.md)
   An AAC 4-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_5_0: AudioChannelLayoutTag](kaudiochannellayouttag_aac_5_0.md)
+- [var kAudioChannelLayoutTag_AAC_5_0: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_5_0.md)
   An AAC 5-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_5_1: AudioChannelLayoutTag](kaudiochannellayouttag_aac_5_1.md)
+- [var kAudioChannelLayoutTag_AAC_5_1: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_5_1.md)
   An AAC 5.1-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_6_0: AudioChannelLayoutTag](kaudiochannellayouttag_aac_6_0.md)
+- [var kAudioChannelLayoutTag_AAC_6_0: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_6_0.md)
   An AAC 6-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_6_1: AudioChannelLayoutTag](kaudiochannellayouttag_aac_6_1.md)
+- [var kAudioChannelLayoutTag_AAC_6_1: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_6_1.md)
   An AAC 6.1-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_7_0: AudioChannelLayoutTag](kaudiochannellayouttag_aac_7_0.md)
+- [var kAudioChannelLayoutTag_AAC_7_0: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_7_0.md)
   An AAC 7-channel surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_7_1_B: AudioChannelLayoutTag](kaudiochannellayouttag_aac_7_1_b.md)
+- [var kAudioChannelLayoutTag_AAC_7_1_B: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_7_1_b.md)
   An AAC 7.1-channel, configuration B, surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_7_1_C: AudioChannelLayoutTag](kaudiochannellayouttag_aac_7_1_c.md)
+- [var kAudioChannelLayoutTag_AAC_7_1_C: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_7_1_c.md)
   An AAC 7.1-channel, configuration C, surround-based layout.
-- [var kAudioChannelLayoutTag_AAC_Octagonal: AudioChannelLayoutTag](kaudiochannellayouttag_aac_octagonal.md)
+- [var kAudioChannelLayoutTag_AAC_Octagonal: AudioChannelLayoutTag](./kaudiochannellayouttag_aac_octagonal.md)
   An AAC 8-channel surround-based layout.
 
 

@@ -1,7 +1,8 @@
 # previous()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decode and return the scalar ending at `currentCodeUnitOffset`. After the function returns, `currentCodeUnitOffset` holds the position at the start of the returned scalar, which is also the end of the previous scalar.
 
@@ -24,7 +25,7 @@ mutating func previous() -> Unicode.Scalar?
 
 Returns `nil` if at the start of the `UTF8Span`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

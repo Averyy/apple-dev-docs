@@ -1,7 +1,8 @@
 # SuspendingClock.Instant
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,34 +22,34 @@ struct Instant
 ## Topics
 
 ### Operators
-- [static func + (SuspendingClock.Instant, Duration) -> SuspendingClock.Instant](suspendingclock/instant/+(_:_:).md)
-- [static func += (inout SuspendingClock.Instant, Duration)](suspendingclock/instant/+=(_:_:).md)
-- [static func - (SuspendingClock.Instant, Duration) -> SuspendingClock.Instant](suspendingclock/instant/-(_:_:)-7hsct.md)
-- [static func - (SuspendingClock.Instant, SuspendingClock.Instant) -> Duration](suspendingclock/instant/-(_:_:)-883fd.md)
-- [static func -= (inout SuspendingClock.Instant, Duration)](suspendingclock/instant/-=(_:_:).md)
+- [static func + (SuspendingClock.Instant, Duration) -> SuspendingClock.Instant](./instant/plus%28_,_%29.md)
+- [static func += (inout SuspendingClock.Instant, Duration)](./instant/pluseq%28_,_%29.md)
+- [static func - (SuspendingClock.Instant, Duration) -> SuspendingClock.Instant](./instant/minus%28_,_%29-7hsct.md)
+- [static func - (SuspendingClock.Instant, SuspendingClock.Instant) -> Duration](./instant/minus%28_,_%29-883fd.md)
+- [static func -= (inout SuspendingClock.Instant, Duration)](./instant/minuseq%28_,_%29.md)
 ### Type Properties
-- [static var now: SuspendingClock.Instant](suspendingclock/instant/now.md)
+- [static var now: SuspendingClock.Instant](./instant/now.md)
 ### Default Implementations
-- [Comparable Implementations](suspendingclock/instant/comparable-implementations.md)
-- [Decodable Implementations](suspendingclock/instant/decodable-implementations.md)
-- [Encodable Implementations](suspendingclock/instant/encodable-implementations.md)
-- [Equatable Implementations](suspendingclock/instant/equatable-implementations.md)
-- [Hashable Implementations](suspendingclock/instant/hashable-implementations.md)
-- [InstantProtocol Implementations](suspendingclock/instant/instantprotocol-implementations.md)
+- [Comparable Implementations](./instant/comparable-implementations.md)
+- [Decodable Implementations](./instant/decodable-implementations.md)
+- [Encodable Implementations](./instant/encodable-implementations.md)
+- [Equatable Implementations](./instant/equatable-implementations.md)
+- [Hashable Implementations](./instant/hashable-implementations.md)
+- [InstantProtocol Implementations](./instant/instantprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [InstantProtocol](instantprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Comparable](../comparable.md)
+- [Copyable](../copyable.md)
+- [Decodable](../decodable.md)
+- [Encodable](../encodable.md)
+- [Equatable](../equatable.md)
+- [Escapable](../escapable.md)
+- [Hashable](../hashable.md)
+- [InstantProtocol](../instantprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

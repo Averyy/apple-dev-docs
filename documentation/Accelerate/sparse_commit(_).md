@@ -1,7 +1,8 @@
 # sparse_commit(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Puts values that you recently added to the matrix into the internal sparse storage format.
 
@@ -20,9 +21,13 @@ Puts values that you recently added to the matrix into the internal sparse stora
 func sparse_commit(_ A: UnsafeMutableRawPointer!) -> sparse_status
 ```
 
+```c
+sparse_status sparse_commit(void *A);
+```
+
 #### Return Value
 
-On success, [`SPARSE_SUCCESS`](sparse_success.md), and `A` has all values inserted into the internal sparse representation.
+On success, [`SPARSE_SUCCESS`](./sparse_success.md), and `A` has all values inserted into the internal sparse representation.
 
 #### Discussion
 
@@ -38,21 +43,22 @@ Adding values to the sparse format can be costly, and batch updates to the matri
 
 ## See Also
 
-- [func sparse_matrix_destroy(UnsafeMutableRawPointer!) -> sparse_status](sparse_matrix_destroy(_:).md)
+### General Sparse Matrix Management Operations
+- [func sparse_matrix_destroy(UnsafeMutableRawPointer!) -> sparse_status](./sparse_matrix_destroy%28_%29.md)
   Releases any memory associated with the matrix object.
-- [func sparse_set_matrix_property(UnsafeMutableRawPointer!, sparse_matrix_property) -> sparse_status](sparse_set_matrix_property(_:_:).md)
+- [func sparse_set_matrix_property(UnsafeMutableRawPointer!, sparse_matrix_property) -> sparse_status](./sparse_set_matrix_property%28_,_%29.md)
   Sets the given property for a matrix object.
-- [func sparse_get_matrix_property(UnsafeMutableRawPointer!, sparse_matrix_property) -> Int](sparse_get_matrix_property(_:_:).md)
+- [func sparse_get_matrix_property(UnsafeMutableRawPointer!, sparse_matrix_property) -> Int](./sparse_get_matrix_property%28_,_%29.md)
   Returns the value of the given property name.
-- [func sparse_get_matrix_number_of_rows(UnsafeMutableRawPointer!) -> sparse_dimension](sparse_get_matrix_number_of_rows(_:).md)
+- [func sparse_get_matrix_number_of_rows(UnsafeMutableRawPointer!) -> sparse_dimension](./sparse_get_matrix_number_of_rows%28_%29.md)
   Returns the number of rows of a matrix.
-- [func sparse_get_matrix_number_of_columns(UnsafeMutableRawPointer!) -> sparse_dimension](sparse_get_matrix_number_of_columns(_:).md)
+- [func sparse_get_matrix_number_of_columns(UnsafeMutableRawPointer!) -> sparse_dimension](./sparse_get_matrix_number_of_columns%28_%29.md)
   Returns the number of columns of a matrix.
-- [func sparse_get_matrix_nonzero_count(UnsafeMutableRawPointer!) -> Int](sparse_get_matrix_nonzero_count(_:).md)
+- [func sparse_get_matrix_nonzero_count(UnsafeMutableRawPointer!) -> Int](./sparse_get_matrix_nonzero_count%28_%29.md)
   Returns the number of nonzero values of a matrix.
-- [func sparse_get_matrix_nonzero_count_for_row(UnsafeMutableRawPointer!, sparse_index) -> Int](sparse_get_matrix_nonzero_count_for_row(_:_:).md)
+- [func sparse_get_matrix_nonzero_count_for_row(UnsafeMutableRawPointer!, sparse_index) -> Int](./sparse_get_matrix_nonzero_count_for_row%28_,_%29.md)
   Returns the number of nonzero values in a row of a matrix.
-- [func sparse_get_matrix_nonzero_count_for_column(UnsafeMutableRawPointer!, sparse_index) -> Int](sparse_get_matrix_nonzero_count_for_column(_:_:).md)
+- [func sparse_get_matrix_nonzero_count_for_column(UnsafeMutableRawPointer!, sparse_index) -> Int](./sparse_get_matrix_nonzero_count_for_column%28_,_%29.md)
   Returns the number of nonzero values in a column of a matrix.
 
 

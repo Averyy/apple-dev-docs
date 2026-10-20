@@ -1,7 +1,8 @@
 # TCControlContents.DpadElementStyle.circle
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A circular direction pad style.
 
@@ -16,9 +17,14 @@ A circular direction pad style.
 case circle
 ```
 
+```c
+TCControlContentsDpadElementStyleCircle
+```
+
 ## See Also
 
-- [TCControlContents.DpadElementStyle.pentagon](tccontrolcontents/dpadelementstyle/pentagon.md)
+### Styles
+- [TCControlContents.DpadElementStyle.pentagon](./pentagon.md)
   A pentagon direction pad style.
 
 

@@ -1,23 +1,24 @@
 # Deprecated symbols
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Determining video stabilization support
-- [var isVideoStabilizationSupported: Bool](avcapturedevice/format/isvideostabilizationsupported.md)
+- [var isVideoStabilizationSupported: Bool](./avcapturedevice/format/isvideostabilizationsupported.md)
   A Boolean value that indicates whether the format supports video stabilization.
 ### Determining photo quality
-- [var highResolutionStillImageDimensions: CMVideoDimensions](avcapturedevice/format/highresolutionstillimagedimensions.md)
+- [var highResolutionStillImageDimensions: CMVideoDimensions](./avcapturedevice/format/highresolutionstillimagedimensions.md)
   The highest resolution still image the system can produce for this format.
 ### Determining zoom capabilities
-- [var supportedVideoZoomFactorsForDepthDataDelivery: [CGFloat]](avcapturedevice/format/supportedvideozoomfactorsfordepthdatadelivery.md)
+- [var supportedVideoZoomFactorsForDepthDataDelivery: [CGFloat]](./avcapturedevice/format/supportedvideozoomfactorsfordepthdatadelivery.md)
   The zoom factors that a format supports for depth data delivery.
-- [var videoMinZoomFactorForDepthDataDelivery: CGFloat](avcapturedevice/format/videominzoomfactorfordepthdatadelivery.md)
+- [var videoMinZoomFactorForDepthDataDelivery: CGFloat](./avcapturedevice/format/videominzoomfactorfordepthdatadelivery.md)
   A minimum zoom factor the device supports when configured for depth data delivery.
-- [var videoMaxZoomFactorForDepthDataDelivery: CGFloat](avcapturedevice/format/videomaxzoomfactorfordepthdatadelivery.md)
+- [var videoMaxZoomFactorForDepthDataDelivery: CGFloat](./avcapturedevice/format/videomaxzoomfactorfordepthdatadelivery.md)
   A maximum zoom factor the device supports when configured for depth data delivery.
 
 

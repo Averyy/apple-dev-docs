@@ -1,7 +1,8 @@
 # representedURL
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the file the window represents.
 
@@ -12,6 +13,10 @@ The URL of the file the window represents.
 
 ```swift
 var representedURL: URL? { get set }
+```
+
+```objc
+@property (copy, nullable) NSURL * representedURL;
 ```
 
 #### Discussion
@@ -30,21 +35,23 @@ You can customize the file icon in the title bar with the following code:
 [[<window> standardWindowButton:NSWindowDocumentIconButton] setImage:<image>]
 ```
 
-When the URL identifies an existing file, the window’s title offers a pop-up menu showing the path components of the URL. (The user displays this menu by Command-clicking the title.) The behavior and contents of this menu can be controlled with [`window(_:shouldPopUpDocumentPathMenu:)`](nswindowdelegate/window(_:shouldpopupdocumentpathmenu:).md).
+When the URL identifies an existing file, the window’s title offers a pop-up menu showing the path components of the URL. (The user displays this menu by Command-clicking the title.) The behavior and contents of this menu can be controlled with [`window(_:shouldPopUpDocumentPathMenu:)`](../nswindowdelegate/window%28_,shouldpopupdocumentpathmenu%29.md).
 
 ## See Also
 
-- [func window(NSWindow, shouldDragDocumentWith: NSEvent, from: NSPoint, with: NSPasteboard) -> Bool](nswindowdelegate/window(_:shoulddragdocumentwith:from:with:).md)
+### Related Documentation
+- [func window(NSWindow, shouldDragDocumentWith: NSEvent, from: NSPoint, with: NSPasteboard) -> Bool](../nswindowdelegate/window%28_,shoulddragdocumentwith,from,with%29.md)
   Asks the delegate whether a user can drag the document icon from the window’s title bar.
-- [var title: String](nswindow/title.md)
+### Managing Titles
+- [var title: String](./title.md)
   The string that appears in the title bar of the window or the path to the represented file.
-- [var subtitle: String](nswindow/subtitle.md)
+- [var subtitle: String](./subtitle.md)
   A secondary line of text that appears in the title bar of the window.
-- [var titleVisibility: NSWindow.TitleVisibility](nswindow/titlevisibility-swift.property.md)
+- [var titleVisibility: NSWindow.TitleVisibility](./titlevisibility-swift.property.md)
   A value that indicates the visibility of the window’s title and title bar buttons.
-- [func setTitleWithRepresentedFilename(String)](nswindow/settitlewithrepresentedfilename(_:).md)
+- [func setTitleWithRepresentedFilename(String)](./settitlewithrepresentedfilename%28_%29.md)
   Sets a given path as the window’s title, formatting it as a file-system path, and records this path as the window’s associated file.
-- [var representedFilename: String](nswindow/representedfilename.md)
+- [var representedFilename: String](./representedfilename.md)
   The path to the file of the window’s represented file.
 
 

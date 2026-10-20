@@ -1,7 +1,8 @@
 # dropDestination(for:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the insert action for the dynamic table rows.
 

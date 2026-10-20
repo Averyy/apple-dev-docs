@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the handle for a function that you can add to a function table.
@@ -20,14 +21,18 @@ Returns the handle for a function that you can add to a function table.
 func functionHandle(function: any MTLFunction) -> (any MTLFunctionHandle)?
 ```
 
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithFunction:(id<MTLFunction>) function;
+```
+
 #### Return Value
 
 A function handle if the method succeeds, otherwise `nil`.
 
 #### Discussion
 
-- [`compileToBinary`](mtlfunctionoptions/compiletobinary.md)
-- [`pipelineIndependent`](mtlfunctionoptions/pipelineindependent.md)
+- [`compileToBinary`](../mtlfunctionoptions/compiletobinary.md)
+- [`pipelineIndependent`](../mtlfunctionoptions/pipelineindependent.md)
 
 ## Parameters
 

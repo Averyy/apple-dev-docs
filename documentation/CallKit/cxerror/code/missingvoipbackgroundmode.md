@@ -1,7 +1,8 @@
 # CXError.Code.missingVoIPBackgroundMode
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.5+
@@ -14,6 +15,10 @@
 
 ```swift
 case missingVoIPBackgroundMode
+```
+
+```c
+CXErrorCodeMissingVoIPBackgroundMode
 ```
 
 

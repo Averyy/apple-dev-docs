@@ -1,7 +1,8 @@
 # NSWorkspace.DidTerminateApplicationMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,15 +16,15 @@ struct DidTerminateApplicationMessage
 ## Topics
 
 ### Initializers
-- [init(application: NSRunningApplication)](nsworkspace/didterminateapplicationmessage/init(application:).md)
+- [init(application: NSRunningApplication)](./didterminateapplicationmessage/init%28application%29.md)
 ### Instance Properties
-- [var application: NSRunningApplication](nsworkspace/didterminateapplicationmessage/application.md)
+- [var application: NSRunningApplication](./didterminateapplicationmessage/application.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,17 +1,18 @@
 # AUParameterEventType.parameterEvent_Ramped
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A gradual change from the parameter’s previous value to a new value, applied linearly over a specified period of time
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,14 @@ A gradual change from the parameter’s previous value to a new value, applied l
 case parameterEvent_Ramped
 ```
 
+```c
+kParameterEvent_Ramped
+```
+
 ## See Also
 
-- [AUParameterEventType.parameterEvent_Immediate](auparametereventtype/parameterevent_immediate.md)
+### Constants
+- [AUParameterEventType.parameterEvent_Immediate](./parameterevent_immediate.md)
   An immediate change from the parameter’s previous value to a new value.
 
 

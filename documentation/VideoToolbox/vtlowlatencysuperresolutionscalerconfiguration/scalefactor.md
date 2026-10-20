@@ -1,7 +1,8 @@
 # scaleFactor
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scale factor with which you initialized the configuration.
 
@@ -19,17 +20,22 @@ Scale factor with which you initialized the configuration.
 var scaleFactor: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float scaleFactor;
+```
+
 ## See Also
 
-- [var frameWidth: Int](vtlowlatencysuperresolutionscalerconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vtlowlatencysuperresolutionscalerconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 
 
 ---

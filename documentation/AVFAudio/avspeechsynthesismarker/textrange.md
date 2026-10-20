@@ -1,7 +1,8 @@
 # textRange
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location and length of the request’s text.
 
@@ -20,17 +21,22 @@ The location and length of the request’s text.
 var textRange: NSRange { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSRange textRange;
+```
+
 ## See Also
 
-- [var mark: AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.property.md)
+### Inspecting a marker
+- [var mark: AVSpeechSynthesisMarker.Mark](./mark-swift.property.md)
   The type that describes the text.
-- [var bookmarkName: String](avspeechsynthesismarker/bookmarkname.md)
+- [var bookmarkName: String](./bookmarkname.md)
   A string that represents the name of a bookmark.
-- [var phoneme: String](avspeechsynthesismarker/phoneme.md)
+- [var phoneme: String](./phoneme.md)
   A string that represents a distinct sound.
-- [var byteSampleOffset: Int](avspeechsynthesismarker/bytesampleoffset.md)
+- [var byteSampleOffset: Int](./bytesampleoffset.md)
   The byte offset into the audio buffer.
-- [AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.enum.md)
+- [AVSpeechSynthesisMarker.Mark](./mark-swift.enum.md)
   Constants that describe the type of text.
 
 

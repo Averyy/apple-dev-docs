@@ -1,7 +1,8 @@
 # init(keyName:searchable:searchableByDefault:unique:multiValued:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new custom attribute key with the specified name and properties.
 
@@ -18,6 +19,10 @@ Returns a new custom attribute key with the specified name and properties.
 init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool, multiValued: Bool)
 ```
 
+```objc
+- (instancetype) initWithKeyName:(NSString *) keyName searchable:(BOOL) searchable searchableByDefault:(BOOL) searchableByDefault unique:(BOOL) unique multiValued:(BOOL) multiValued;
+```
+
 #### Return Value
 
 A new custom attribute key with the specified name and properties.
@@ -28,7 +33,7 @@ To create custom attribute key names, it’s recommended that you use a reverse 
 
 ## Parameters
 
-- `keyName`: The name of the custom attribute for use as a key in a [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md). The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is, “_”). The prefix `kMD` is reserved.
+- `keyName`: The name of the custom attribute for use as a key in a [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md). The key name must be a string that contains only ASCII characters and no punctuation other than the underscore (that is, “_”). The prefix `kMD` is reserved.
 - `searchable`: A Boolean value that indicates if the attribute can be specified as a search term.
 - `searchableByDefault`: A Boolean value that indicates if the attribute should be searchable by default.
 - `unique`: A Boolean value that indicates if duplicate values should be treated as the same value to save storage space.
@@ -36,9 +41,10 @@ To create custom attribute key names, it’s recommended that you use a reverse 
 
 ## See Also
 
-- [convenience init?(keyName: String)](cscustomattributekey/init(keyname:).md)
+### Creating a custom attribute
+- [convenience init?(keyName: String)](./init%28keyname%29.md)
   Returns a new custom attribute key with the specified name.
-- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

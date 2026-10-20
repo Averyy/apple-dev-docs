@@ -1,7 +1,8 @@
 # FloatingPointRoundingRule.toNearestOrEven
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Round to the closest allowed value; if two values are equally close, the even one is chosen.
 
@@ -33,7 +34,7 @@ This rounding rule is also known as “bankers rounding,” and is the default I
 // 4.0
 ```
 
-This rule implements the `roundToIntegralTiesToEven` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This rule implements the `roundToIntegralTiesToEven` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 
 ---

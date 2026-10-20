@@ -1,6 +1,7 @@
 # Reading and writing to sparse textures
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Decide how to handle access to unmapped texture regions.
 
@@ -13,7 +14,7 @@ You don’t need to rewrite your shaders to work with sparse textures. You can t
 
 If this default behavior is insufficient for your app, update your shaders to handle memory operations to unmapped regions.
 
-##### Test for Unmapped Regions in Your Shader
+##### Test for unmapped regions in your shader
 
 When you sample a texture, you can explicitly test to see whether that action accessed an unmapped region. Instead of calling the `sample` method, call `sparse_sample`. The `sparse_sample` methods return a `sparse_color<T>` object, which provides methods you can call to determine whether you sampled a mapped region in the texture, and to get the sampled data.
 
@@ -49,9 +50,9 @@ fragment float4 fragmentShader(
 }
 ```
 
-For more information about the other methods for sampling or reading from sparse textures, see [`Metal Shading Language Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) and [`Restricting access to specific mipmaps`](restricting-access-to-specific-mipmaps.md).
+For more information about the other methods for sampling or reading from sparse textures, see [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) and [Restricting access to specific mipmaps](./restricting-access-to-specific-mipmaps.md).
 
-##### Track Residency Information
+##### Track residency information
 
 A more advanced way to create fallback behavior is to track residency information in a *residency map*. A residency map is another texture with a pixel for every tile region in your main texture. You use a residency map to maintain per-tile information about your texture.
 
@@ -61,25 +62,26 @@ Another way to use a residency map is to store the best level of detail that you
 
 ## See Also
 
-- [Managing sparse texture memory](managing-sparse-texture-memory.md)
+### Sparse textures
+- [Managing sparse texture memory](./managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](./estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
-- [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
+- [class MTLResourceStatePassDescriptor](./mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
-- [struct MTLMapIndirectArguments](mtlmapindirectarguments.md)
+- [struct MTLMapIndirectArguments](./mtlmapindirectarguments.md)
   The data layout for mapping sparse texture regions when using indirect commands.
 
 

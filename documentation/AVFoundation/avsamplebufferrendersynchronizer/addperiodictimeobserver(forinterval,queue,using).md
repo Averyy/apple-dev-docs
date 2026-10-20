@@ -1,18 +1,19 @@
 # addPeriodicTimeObserver(forInterval:queue:using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests invocation of a block during rendering at specified time intervals.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Requests invocation of a block during rendering at specified time intervals.
 func addPeriodicTimeObserver(forInterval interval: CMTime, queue: dispatch_queue_t?, using block: @escaping @Sendable (CMTime) -> Void) -> Any
 ```
 
+```objc
+- (id) addPeriodicTimeObserverForInterval:(CMTime) interval queue:(dispatch_queue_t) queue usingBlock:(void (^)(CMTime time)) block;
+```
+
 #### Return Value
 
-An object that conforms to [`NSObject`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md) to cancel time observation.
+An object that conforms to [`NSObject`](../../ObjectiveC/nsobject-swift.class.md). You must retain this value as long as you want the time observer to be invoked by the synchronizer. Pass this object to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md) to cancel time observation.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ The block associated with this method is invoked at the specified time intervals
 
 If a very short time interval is used, the synchronizer may invoke the block less frequently than requested. However, the synchronizer will invoke the block often enough for the client to update indications of the current time appropriately in its end-user interface.
 
-Always pair a call to this method with a call to [`removeTimeObserver(_:)`](avsamplebufferrendersynchronizer/removetimeobserver(_:).md). Releasing the observer without calling `removeTimeObserver(_:)` results in undefined behavior.
+Always pair a call to this method with a call to [`removeTimeObserver(_:)`](./removetimeobserver%28_%29.md). Releasing the observer without calling `removeTimeObserver(_:)` results in undefined behavior.
 
 ## Parameters
 
@@ -40,9 +45,10 @@ Always pair a call to this method with a call to [`removeTimeObserver(_:)`](avsa
 
 ## See Also
 
-- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](avsamplebufferrendersynchronizer/addboundarytimeobserver(fortimes:queue:using:).md)
+### Observing time
+- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](./addboundarytimeobserver%28fortimes,queue,using%29.md)
   Requests invocation of a block when specified times are traversed during normal rendering.
-- [func removeTimeObserver(Any)](avsamplebufferrendersynchronizer/removetimeobserver(_:).md)
+- [func removeTimeObserver(Any)](./removetimeobserver%28_%29.md)
   Cancels the specified time observer.
 
 

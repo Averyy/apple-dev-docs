@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,12 @@
 
 ```swift
 init<T>(_ anchor: Anchor<T>.Source?) where Value == T?
+```
+
+**Other overloads**:
+
+```swift
+init<T>(_ array: [Anchor<T>.Source]) where Value == [T]
 ```
 
 

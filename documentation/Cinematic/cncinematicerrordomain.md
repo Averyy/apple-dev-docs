@@ -1,7 +1,8 @@
 # CNCinematicErrorDomain
 
 **Framework**: Cinematic  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -14,6 +15,10 @@
 
 ```swift
 let CNCinematicErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const CNCinematicErrorDomain;
 ```
 
 

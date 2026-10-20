@@ -1,7 +1,8 @@
 # isAbsolute
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the path begins with `/`.
 

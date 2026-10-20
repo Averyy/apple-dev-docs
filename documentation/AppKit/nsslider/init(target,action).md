@@ -1,7 +1,8 @@
 # init(target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a continuous horizontal slider whose values range from `0.0` to `1.0`.
 
@@ -12,6 +13,10 @@ Creates a continuous horizontal slider whose values range from `0.0` to `1.0`.
 
 ```swift
 convenience init(target: Any?, action: Selector?)
+```
+
+```objc
++ (instancetype) sliderWithTarget:(id) target action:(SEL) action;
 ```
 
 #### Return Value
@@ -25,8 +30,10 @@ An initialized slider control.
 
 ## See Also
 
-- [Slider Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Slider/Slider.html#//apple_ref/doc/uid/10000025i)
-- [convenience init(value: Double, minValue: Double, maxValue: Double, target: Any?, action: Selector?)](nsslider/init(value:minvalue:maxvalue:target:action:).md)
+### Related Documentation
+- [Slider Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Slider/Slider.html#//apple_ref/doc/uid/10000025i)
+### Creating sliders
+- [convenience init(value: Double, minValue: Double, maxValue: Double, target: Any?, action: Selector?)](./init%28value,minvalue,maxvalue,target,action%29.md)
   Creates a continuous horizontal slider that represents values over the specified range.
 
 

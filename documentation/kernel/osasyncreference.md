@@ -1,25 +1,27 @@
 # OSAsyncReference
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef natural_t OSAsyncReference[8];
 ```
 
 ## See Also
 
-- [OSAsyncReference64](osasyncreference64.md)
-- [OSContainer](oscontainer.md)
-- [OSKextRequestTag](oskextrequesttag.md)
+### Typedefs
+- [OSAsyncReference64](./osasyncreference64.md)
+- [OSContainer](./oscontainer.md)
+- [OSKextRequestTag](./oskextrequesttag.md)
   Identifies a kext request made to user space.
-- [OSIterator](ositerator-8m.md)
-- [OSType](ostype.md)
+- [OSIterator](./ositerator-8m.md)
+- [OSType](./ostype.md)
 
 
 ---

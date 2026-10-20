@@ -1,7 +1,8 @@
 # eciesEncryptionCofactorX963SHA256AESGCM
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,10 +19,14 @@
 static let eciesEncryptionCofactorX963SHA256AESGCM: SecKeyAlgorithm
 ```
 
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmECIESEncryptionCofactorX963SHA256AESGCM;
+```
+
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
-- [Using Keys for Encryption](using-keys-for-encryption.md)
+- [Protecting keys with the Secure Enclave](../protecting-keys-with-the-secure-enclave.md)
+- [Using Keys for Encryption](../using-keys-for-encryption.md)
 
 
 ---

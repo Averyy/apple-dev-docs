@@ -1,7 +1,8 @@
 # updateContentUnavailableConfiguration(using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the content-unavailable configuration for the provided state.
 
@@ -10,7 +11,7 @@ Updates the content-unavailable configuration for the provided state.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,13 @@ Updates the content-unavailable configuration for the provided state.
 
 #### Discussion
 
-Override this method to update the value of [`contentUnavailableConfiguration`](uiviewcontroller/contentunavailableconfiguration-4b95e.md) as appropriate for the given state.
+Override this method to update the value of [`contentUnavailableConfiguration`](./contentunavailableconfiguration-4b95e.md) as appropriate for the given state.
 
-Don’t call this method directly. Instead, call [`setNeedsUpdateContentUnavailableConfiguration()`](uiviewcontroller/setneedsupdatecontentunavailableconfiguration().md) to tell the system to request an update.
+Don’t call this method directly. Instead, call [`setNeedsUpdateContentUnavailableConfiguration()`](./setneedsupdatecontentunavailableconfiguration%28%29.md) to tell the system to request an update.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view controller’s `traitCollection` and the `traitCollection` of its [`view`](uiviewcontroller/view.md). For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view controller’s `traitCollection` and the `traitCollection` of its [`view`](./view.md). For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## Parameters
 
@@ -35,13 +36,14 @@ This method supports automatic observation tracking. For more information, see [
 
 ## See Also
 
-- [func updateProperties()](uiviewcontroller/updateproperties.md)
+### Observing data in view controllers
+- [func updateProperties()](./updateproperties%28%29.md)
   Configures the view controller’s content and styling properties.
-- [func viewWillLayoutSubviews()](uiviewcontroller/viewwilllayoutsubviews.md)
+- [func viewWillLayoutSubviews()](./viewwilllayoutsubviews%28%29.md)
   Notifies the view controller that its view is about to lay out its subviews.
-- [func viewDidLayoutSubviews()](uiviewcontroller/viewdidlayoutsubviews.md)
+- [func viewDidLayoutSubviews()](./viewdidlayoutsubviews%28%29.md)
   Notifies the view controller when its view finishes laying out its subviews.
-- [func updateViewConstraints()](uiviewcontroller/updateviewconstraints.md)
+- [func updateViewConstraints()](./updateviewconstraints%28%29.md)
   Notifies the view controller when its view needs to update its constraints.
 
 

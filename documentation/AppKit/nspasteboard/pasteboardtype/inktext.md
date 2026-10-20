@@ -1,17 +1,22 @@
 # inkText
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Ink text data.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14 (renamed: kUTTypeInkText)
 
 ## Declaration
 
 ```swift
 static let inkText: NSPasteboard.PasteboardType
+```
+
+```c
+extern NSPasteboardType NSInkTextPboardType;
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ For information on ink text objects, see Using Ink Services in Your Application.
 
 ## See Also
 
-- [static let filePromise: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/filepromise.md)
+### Deprecated constants
+- [static let filePromise: NSPasteboard.PasteboardType](./filepromise.md)
   Promised files.
-- [static let postScript: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/postscript.md)
+- [static let postScript: NSPasteboard.PasteboardType](./postscript.md)
   Encapsulated PostScript (EPS) code.
-- [static let vCard: NSPasteboard.PasteboardType](nspasteboard/pasteboardtype/vcard.md)
+- [static let vCard: NSPasteboard.PasteboardType](./vcard.md)
   VCard data.
 
 

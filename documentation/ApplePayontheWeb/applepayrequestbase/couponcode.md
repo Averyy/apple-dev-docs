@@ -1,7 +1,8 @@
 # couponCode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial coupon code for the payment request.
 
@@ -11,7 +12,7 @@ The initial coupon code for the payment request.
 
 ## Declaration
 
-```swift
+```
 DOMString couponCode;
 ```
 
@@ -23,7 +24,8 @@ Set the value to `nil` or the empty string to indicate that there’s no initial
 
 ## See Also
 
-- [supportsCouponCode](applepayrequestbase/supportscouponcode.md)
+### Managing coupon codes
+- [supportsCouponCode](./supportscouponcode.md)
   A Boolean value that determines whether the payment sheet displays the coupon code field.
 
 

@@ -1,7 +1,8 @@
 # fill(using:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills this list of rects in the current NSGraphicsContext with that rect’s associated gray component value in the DeviceGray color space. The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSRectFillListWithGrays()`.
 
@@ -15,9 +16,11 @@ Fills this list of rects in the current NSGraphicsContext with that rect’s ass
 func fill(using operation: NSCompositingOperation = NSGraphicsContext.current?.compositingOperation ?? .sourceOver)
 ```
 
+Available when `Element` is `(CGRect, gray: CGFloat)`.
+
 #### Discussion
 
-> **Note**: There must be a set current NSGraphicsContext.
+> **Precondition**: There must be a set current NSGraphicsContext.
 
 
 ---

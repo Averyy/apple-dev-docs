@@ -1,18 +1,21 @@
 # BNNSDirectApplyQuantizer(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a quantization layer directly to two input matrices.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0
+- iPadOS 15.0+ - Deprecated in 18.0
+- Mac Catalyst 15.0+ - Deprecated in 18.0
+- macOS 12.0+ - Deprecated in 15.0
+- tvOS 15.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 8.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,27 +23,31 @@ Applies a quantization layer directly to two input matrices.
 func BNNSDirectApplyQuantizer(_ layer_params: UnsafePointer<BNNSLayerParametersQuantization>, _ filter_params: UnsafePointer<BNNSFilterParameters>?, _ batch_size: Int, _ input_stride: Int, _ output_stride: Int) -> Int32
 ```
 
+```c
+int BNNSDirectApplyQuantizer(const BNNSLayerParametersQuantization *layer_params, const BNNSFilterParameters *filter_params, size_t batch_size, size_t input_stride, size_t output_stride);
+```
+
 #### Discussion
 
-Use this function, in conjunction with a [`BNNSLayerParametersQuantization`](bnnslayerparametersquantization.md), to convert tensors to different precisions. Pass the [`BNNSQuantizerFunctionQuantize`](bnnsquantizerfunctionquantize.md) quantizer function to convert a higher-precsion tensor to a lower-precision tensor. Pass [`BNNSQuantizerFunctionDequantize`](bnnsquantizerfunctiondequantize.md) to convert a lower-precsion tensor to a higher-precision tensor.
+Use this function, in conjunction with a [`BNNSLayerParametersQuantization`](./bnnslayerparametersquantization.md), to convert tensors to different precisions. Pass the [`BNNSQuantizerFunctionQuantize`](./bnnsquantizerfunctionquantize.md) quantizer function to convert a higher-precsion tensor to a lower-precision tensor. Pass [`BNNSQuantizerFunctionDequantize`](./bnnsquantizerfunctiondequantize.md) to convert a lower-precsion tensor to a higher-precision tensor.
 
 Quantization supports the following conversions:
 
 | Source | Destination |
 | --- | --- |
-| `BNNSDataTypeInt32` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat32` | `BNNSDataTypeInt8` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt8` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt32` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt32` |
+| `BNNSDataTypeInt32` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat32` | `BNNSDataTypeInt8` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt8` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt32` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt32` |
 
 Dequantization supports the following conversions:
 
 | Source | Destination |
 | --- | --- |
-| `BNNSDataTypeInt8` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt8` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt32` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt32` | `BNNSDataTypeInt32` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat16` ![None](/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat32` |
+| `BNNSDataTypeInt8` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt8` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeInt32` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeUInt32` | `BNNSDataTypeInt32` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat16` ![](https://developer.apple.com/tutorials/images/com.apple.accelerate/spacer.png) `BNNSDataTypeFloat32` |
 
 You can provide optional scale and bias that the function applies during conversion. Quantization returns `y = scale*x + bias`, and dequantization returns `y = (x-bias)/scale`.
 
 If you supply scale and bias descriptors, they must have a vector layout and a size that matches the size of the axis that you specify. If you’re applying scale and bias to the entire tensor, scale and bias descriptors must have a size of 1.
 
-See [`BNNSQuantizerFunctionDequantize`](bnnsquantizerfunctiondequantize.md) and [`BNNSQuantizerFunctionQuantize`](bnnsquantizerfunctionquantize.md) for examples of using this function.
+See [`BNNSQuantizerFunctionDequantize`](./bnnsquantizerfunctiondequantize.md) and [`BNNSQuantizerFunctionQuantize`](./bnnsquantizerfunctionquantize.md) for examples of using this function.
 
 ## Parameters
 
@@ -52,13 +59,14 @@ See [`BNNSQuantizerFunctionDequantize`](bnnsquantizerfunctiondequantize.md) and 
 
 ## See Also
 
-- [static func quantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](bnns/quantize(batchsize:input:output:axis:scale:bias:filterparameters:).md)
+### Quantization functions
+- [static func quantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](./bnns/quantize%28batchsize,input,output,axis,scale,bias,filterparameters%29.md)
   Quantizes the input tensor and writes the result to the output tensor.
-- [static func dequantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](bnns/dequantize(batchsize:input:output:axis:scale:bias:filterparameters:).md)
+- [static func dequantize(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int?, scale: BNNSNDArrayDescriptor?, bias: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](./bnns/dequantize%28batchsize,input,output,axis,scale,bias,filterparameters%29.md)
   Dequantizes the input tensor and writes the result to the output tensor.
-- [struct BNNSQuantizerFunction](bnnsquantizerfunction.md)
+- [struct BNNSQuantizerFunction](./bnnsquantizerfunction.md)
   Constants that describe quantization functions.
-- [struct BNNSLayerParametersQuantization](bnnslayerparametersquantization.md)
+- [struct BNNSLayerParametersQuantization](./bnnslayerparametersquantization.md)
   A structure that contains the parameters of a quantization layer.
 
 

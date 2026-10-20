@@ -1,7 +1,8 @@
 # CurrencyFormatStyleConfiguration
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Configuration settings for formatting currency values.
 
@@ -23,25 +24,26 @@ enum CurrencyFormatStyleConfiguration
 ## Topics
 
 ### Specifying Configuration
-- [CurrencyFormatStyleConfiguration.Grouping](currencyformatstyleconfiguration/grouping.md)
+- [CurrencyFormatStyleConfiguration.Grouping](./currencyformatstyleconfiguration/grouping.md)
   The type used to configure grouping for currency format styles.
-- [CurrencyFormatStyleConfiguration.Precision](currencyformatstyleconfiguration/precision.md)
+- [CurrencyFormatStyleConfiguration.Precision](./currencyformatstyleconfiguration/precision.md)
   The type used to configure precision for currency format styles.
-- [CurrencyFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](currencyformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+- [CurrencyFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./currencyformatstyleconfiguration/decimalseparatordisplaystrategy.md)
   The type used to configure decimal separator display strategies for currency format styles.
-- [CurrencyFormatStyleConfiguration.RoundingRule](currencyformatstyleconfiguration/roundingrule.md)
+- [CurrencyFormatStyleConfiguration.RoundingRule](./currencyformatstyleconfiguration/roundingrule.md)
   The type used to configure rounding rules for currency format styles.
-- [CurrencyFormatStyleConfiguration.SignDisplayStrategy](currencyformatstyleconfiguration/signdisplaystrategy.md)
+- [CurrencyFormatStyleConfiguration.SignDisplayStrategy](./currencyformatstyleconfiguration/signdisplaystrategy.md)
   A structure used to configure sign display strategies for currency format styles.
-- [CurrencyFormatStyleConfiguration.Presentation](currencyformatstyleconfiguration/presentation.md)
+- [CurrencyFormatStyleConfiguration.Presentation](./currencyformatstyleconfiguration/presentation.md)
   A structure used to configure the presentation of currency format styles.
 ### Type Aliases
-- [CurrencyFormatStyleConfiguration.Notation](currencyformatstyleconfiguration/notation.md)
+- [CurrencyFormatStyleConfiguration.Notation](./currencyformatstyleconfiguration/notation.md)
   The type used to configure notation for currency format styles.
 
 ## See Also
 
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+### Numeric configurations
+- [enum NumberFormatStyleConfiguration](./numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

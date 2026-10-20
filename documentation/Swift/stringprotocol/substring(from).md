@@ -1,7 +1,8 @@
 # substring(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string containing the characters of the `String` from the one at a given index to the end.
 
@@ -13,7 +14,9 @@ Returns a new string containing the characters of the `String` from the one at a
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.0
+
+> **Deprecated**: Please use String slicing subscript with a 'partial range from' operator.
 
 ## Declaration
 

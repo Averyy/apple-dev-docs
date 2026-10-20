@@ -1,7 +1,8 @@
 # localizedScanner(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an `NSScanner` object that scans a given string according to the user’s default locale.
 
@@ -20,13 +21,17 @@ Returns an `NSScanner` object that scans a given string according to the user’
 class func localizedScanner(with string: String) -> Any
 ```
 
+```objc
++ (id) localizedScannerWithString:(NSString *) string;
+```
+
 #### Return Value
 
 An `NSScanner` object that scans `aString` according to the user’s default locale.
 
 #### Discussion
 
-Sets the string to scan by invoking [`init(string:)`](scanner/init(string:).md) with `aString`. The locale is set with [`Scanner`](scanner.md).
+Sets the string to scan by invoking [`init(string:)`](./init%28string%29.md) with `aString`. The locale is set with [`Scanner`](../scanner.md).
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Sets the string to scan by invoking [`init(string:)`](scanner/init(string:).md) 
 
 ## See Also
 
-- [init(string: String)](scanner/init(string:).md)
+### Creating a Scanner
+- [init(string: String)](./init%28string%29.md)
   Returns an `NSScanner` object initialized to scan a given string.
 
 

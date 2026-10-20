@@ -1,7 +1,8 @@
 # EnergyFormatter.Unit.calorie
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The calorie unit. This unit is often used in chemistry. It is abbreviated as “cal.”
 
@@ -20,13 +21,18 @@ The calorie unit. This unit is often used in chemistry. It is abbreviated as “
 case calorie
 ```
 
+```c
+NSEnergyFormatterUnitCalorie
+```
+
 ## See Also
 
-- [EnergyFormatter.Unit.joule](energyformatter/unit/joule.md)
+### Constants
+- [EnergyFormatter.Unit.joule](./joule.md)
   The joule unit.
-- [EnergyFormatter.Unit.kilojoule](energyformatter/unit/kilojoule.md)
+- [EnergyFormatter.Unit.kilojoule](./kilojoule.md)
   The kilojoule unit.
-- [EnergyFormatter.Unit.kilocalorie](energyformatter/unit/kilocalorie.md)
+- [EnergyFormatter.Unit.kilocalorie](./kilocalorie.md)
   The kilocalorie unit. This unit is used for food calories in some locales. In general, it is abbreviated as “kcal.” However, it may be abbreviated as “C” when used to represent food calories.
 
 

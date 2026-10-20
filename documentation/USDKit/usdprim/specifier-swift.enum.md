@@ -1,7 +1,8 @@
 # USDPrim.Specifier
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 How a prim definition behaves in composition.
 
@@ -22,39 +23,40 @@ enum Specifier
 ## Topics
 
 ### Enumeration Cases
-- [USDPrim.Specifier.class](usdprim/specifier-swift.enum/class.md)
+- [USDPrim.Specifier.class](./specifier-swift.enum/class.md)
   Defines an abstract template for inheritance.
-- [USDPrim.Specifier.def](usdprim/specifier-swift.enum/def.md)
+- [USDPrim.Specifier.def](./specifier-swift.enum/def.md)
   Creates a concrete prim.
-- [USDPrim.Specifier.over](usdprim/specifier-swift.enum/over.md)
+- [USDPrim.Specifier.over](./specifier-swift.enum/over.md)
   Applies only if the prim exists in a weaker layer.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [var path: USDLayer.Path](usdprim/path.md)
+### Identifying the prim
+- [var path: USDLayer.Path](./path.md)
   The complete scene path to this prim, relative to its stage.
-- [var primPath: USDLayer.Path](usdprim/primpath.md)
+- [var primPath: USDLayer.Path](./primpath.md)
   The complete scene path to this prim, relative to its stage.
-- [var isValid: Bool](usdprim/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value indicating whether this prim is valid.
-- [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+- [var specifier: USDPrim.Specifier](./specifier-swift.property.md)
   The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
-- [var stage: USDStage](usdprim/stage.md)
+- [var stage: USDStage](./stage.md)
   The stage that owns this prim.
-- [var parent: USDPrim?](usdprim/parent.md)
+- [var parent: USDPrim?](./parent.md)
   The immediate parent prim of this prim.
-- [var description: String](usdprim/description.md)
+- [var description: String](./description.md)
   A summary description of this prim.
 
 

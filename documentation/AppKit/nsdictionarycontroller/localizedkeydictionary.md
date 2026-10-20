@@ -1,7 +1,8 @@
 # localizedKeyDictionary
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized key names that are displayed by the receiver in place of the key names.
 
@@ -14,13 +15,18 @@ The localized key names that are displayed by the receiver in place of the key n
 var localizedKeyDictionary: [String : String] { get set }
 ```
 
+```objc
+@property (copy) NSDictionary<NSString *,NSString *> * localizedKeyDictionary;
+```
+
 #### Discussion
 
 The dictionary contains the key names as the keys, and the localized key names as the corresponding values.
 
 ## See Also
 
-- [var localizedKeyTable: String?](nsdictionarycontroller/localizedkeytable.md)
+### Localizing Key Names
+- [var localizedKeyTable: String?](./localizedkeytable.md)
   the strings file used to localize key names.
 
 

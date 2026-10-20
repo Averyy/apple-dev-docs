@@ -1,7 +1,8 @@
 # DOMURL
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMURL
 ```
 
 ## Topics
 
 ### Type Methods
-- [createObjectURL](domurl/1631236-createobjecturl.md)
-- [revokeObjectURL](domurl/1630984-revokeobjecturl.md)
+- [createObjectURL](./domurl/api-1631236-createobjecturl.md)
+- [revokeObjectURL](./domurl/api-1630984-revokeobjecturl.md)
 
 
 ---

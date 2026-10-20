@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a traffic side-of-the-road enumeration item with the provided value.
 

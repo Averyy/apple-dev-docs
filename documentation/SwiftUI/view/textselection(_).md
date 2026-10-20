@@ -1,7 +1,8 @@
 # textSelection(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls whether people can select text within this view.
 
@@ -21,7 +22,7 @@ func textSelection<S>(_ selectability: S) -> some View where S : TextSelectabili
 
 #### Discussion
 
-People sometimes need to copy useful information from [`Text`](text.md) views — including error messages, serial numbers, or IP addresses — so they can then paste the text into another context. Enable text selection to let people select text in a platform-appropriate way.
+People sometimes need to copy useful information from [`Text`](../text.md) views — including error messages, serial numbers, or IP addresses — so they can then paste the text into another context. Enable text selection to let people select text in a platform-appropriate way.
 
 You can apply this method to an individual text view, or to a container to make each contained text view selectable. In the following example, the person using the app can select text that shows the date of an event or the name or email of any of the event participants:
 
@@ -48,27 +49,28 @@ var body: some View {
 
 On macOS, people use the mouse or trackpad to select a range of text, which they can quickly copy by choosing Edit > Copy, or with the standard keyboard shortcut.
 
-![A macOS window titled New Invitation, with header Event Invite and](/images/com.apple.SwiftUI/View-textSelection-1@2x.png)
+![A macOS window titled New Invitation, with header Event Invite and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-textSelection-1@2x.png)
 
 On iOS, the person using the app touches and holds on a selectable `Text` view to begin selecting text. In iOS 27 or later, this brings up the system text selection handles and highlight which supports selecting a range of text. In iOS 26 or earlier, this brings up a system menu with menu items appropriate for the current context. These menu items operate on the entire contents of the `Text` view.
 
-![A portion of an iOS view, with header Event Invite and the date](/images/com.apple.SwiftUI/View-textSelection-2@2x.png)
+![A portion of an iOS view, with header Event Invite and the date](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-textSelection-2@2x.png)
 
-> **Note**: [`Button`](button.md) views don’t support text selection.
+> **Note**: [`Button`](../button.md) views don’t support text selection.
 
 ## See Also
 
-- [protocol TextSelectability](textselectability.md)
+### Selecting text
+- [protocol TextSelectability](../textselectability.md)
   A type that describes the ability to select text.
-- [struct TextSelection](textselection.md)
+- [struct TextSelection](../textselection.md)
   Represents a selection of text.
-- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](./textselectionaffinity%28_%29.md)
   Sets the direction of a selection or cursor relative to a text character.
-- [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
+- [var textSelectionAffinity: TextSelectionAffinity](../environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [enum TextSelectionAffinity](textselectionaffinity.md)
+- [enum TextSelectionAffinity](../textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
-- [struct AttributedTextSelection](attributedtextselection.md)
+- [struct AttributedTextSelection](../attributedtextselection.md)
   Represents a selection of attributed text.
 
 

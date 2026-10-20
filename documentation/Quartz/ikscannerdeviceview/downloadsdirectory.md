@@ -1,7 +1,8 @@
 # downloadsDirectory
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directory where scans are saved.
 
@@ -14,13 +15,18 @@ The directory where scans are saved.
 var downloadsDirectory: URL! { get set }
 ```
 
+```objc
+@property (retain) NSURL * downloadsDirectory;
+```
+
 ## See Also
 
-- [var displaysDownloadsDirectoryControl: Bool](ikscannerdeviceview/displaysdownloadsdirectorycontrol.md)
+### Configuring Downloading
+- [var displaysDownloadsDirectoryControl: Bool](./displaysdownloadsdirectorycontrol.md)
   Determines whether the downloads directory control is displayed.
-- [var transferMode: IKScannerDeviceViewTransferMode](ikscannerdeviceview/transfermode.md)
+- [var transferMode: IKScannerDeviceViewTransferMode](./transfermode.md)
   Determines how the scanned content is provided to the delegate.
-- [var documentName: String!](ikscannerdeviceview/documentname.md)
+- [var documentName: String!](./documentname.md)
   Returns the document name.
 
 

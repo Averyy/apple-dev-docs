@@ -1,7 +1,8 @@
 # queueDepth
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of frames for the queue to store.
 
@@ -15,6 +16,10 @@ The maximum number of frames for the queue to store.
 var queueDepth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger queueDepth;
+```
+
 #### Discussion
 
 By default, the system sets the queue depth to its minimum value of three frames. Specifying more frames uses more memory, but may allow you to process frame data without stalling the display stream.
@@ -23,11 +28,12 @@ By default, the system sets the queue depth to its minimum value of three frames
 
 ## See Also
 
-- [var minimumFrameInterval: CMTime](scstreamconfiguration/minimumframeinterval.md)
+### Configuring captured frames
+- [var minimumFrameInterval: CMTime](./minimumframeinterval.md)
   The desired minimum time between frame updates, in seconds.
-- [var captureResolution: SCCaptureResolutionType](scstreamconfiguration/captureresolution.md)
+- [var captureResolution: SCCaptureResolutionType](./captureresolution.md)
   The resolution at which to capture source content.
-- [enum SCCaptureResolutionType](sccaptureresolutiontype.md)
+- [enum SCCaptureResolutionType](../sccaptureresolutiontype.md)
   Available resolutions for content capture.
 
 

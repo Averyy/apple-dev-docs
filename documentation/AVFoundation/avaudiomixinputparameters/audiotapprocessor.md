@@ -1,7 +1,8 @@
 # audioTapProcessor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio processing tap associated with the track.
 
@@ -19,11 +20,15 @@ The audio processing tap associated with the track.
 var audioTapProcessor: MTAudioProcessingTap? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) MTAudioProcessingTapRef audioTapProcessor;
+```
+
 #### Discussion
 
 You can use the audio tap to access the track’s audio data before it is played, read, or exported. This property is `nil` by default.
 
-The process of setting up a tap requires the configuration of an instance of [`AVMutableAudioMixInputParameters`](avmutableaudiomixinputparameters.md). If an instance of [`AVMutableAudioMixInputParameters`](avmutableaudiomixinputparameters.md) is present in the [`inputParameters`](avaudiomix/inputparameters.md) array of an [`AVAudioMix`](avaudiomix.md), the results of mutating the [`AVMutableAudioMixInputParameters`](avmutableaudiomixinputparameters.md) while the audio mix is in use are undefined
+The process of setting up a tap requires the configuration of an instance of [`AVMutableAudioMixInputParameters`](../avmutableaudiomixinputparameters.md). If an instance of [`AVMutableAudioMixInputParameters`](../avmutableaudiomixinputparameters.md) is present in the [`inputParameters`](../avaudiomix/inputparameters.md) array of an [`AVAudioMix`](../avaudiomix.md), the results of mutating the [`AVMutableAudioMixInputParameters`](../avmutableaudiomixinputparameters.md) while the audio mix is in use are undefined
 
 
 ---

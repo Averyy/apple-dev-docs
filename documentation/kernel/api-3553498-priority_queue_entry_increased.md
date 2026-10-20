@@ -1,14 +1,15 @@
 # priority_queue_entry_increased
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool priority_queue_entry_increased(struct priority_queue *pq, struct priority_queue_entry *elt);
 ```
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the model that failed to load, if the source was a bundle.
 
@@ -16,11 +17,12 @@ let name: String?
 
 ## See Also
 
-- [let bundle: Bundle?](objecttrackingprovider/error/bundle.md)
+### Inspecting an error
+- [let bundle: Bundle?](./bundle.md)
   The bundle for the model that failed to load, if the source was a bundle.
-- [var recoverySuggestion: String?](objecttrackingprovider/error/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./recoverysuggestion.md)
   A localized message that describes how to recover from the failure.
-- [let url: URL?](objecttrackingprovider/error/url.md)
+- [let url: URL?](./url.md)
   The URL for the model that failed to load, if the source was a URL.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -11,6 +12,13 @@
 ```swift
 @MainActor
 @preconcurrency convenience init(_ anchor: any Anchor)
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency init(_ target: AnchoringComponent.Target)
 ```
 
 

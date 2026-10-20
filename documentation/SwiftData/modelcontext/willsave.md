@@ -1,7 +1,8 @@
 # willSave
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that posts when the context is about to process pending inserts, changes, and deletes.
 
@@ -27,9 +28,10 @@ static let willSave: Notification.Name
 
 ## See Also
 
-- [static let didSave: Notification.Name](modelcontext/didsave.md)
+### Registering for notifications
+- [static let didSave: Notification.Name](./didsave.md)
   A notification that posts when the context finishes processing pending inserts, changes, and deletes.
-- [ModelContext.NotificationKey](modelcontext/notificationkey.md)
+- [ModelContext.NotificationKey](./notificationkey.md)
   Describes the data in the user info dictionary of a notification sent by a model context.
 
 

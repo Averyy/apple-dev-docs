@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document attribute key.
 
@@ -22,7 +23,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsattributedstring/documentattributekey/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a document attribute key with the specified raw value.
 
 

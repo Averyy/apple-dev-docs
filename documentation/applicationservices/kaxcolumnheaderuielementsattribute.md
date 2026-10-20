@@ -1,7 +1,8 @@
 # kAXColumnHeaderUIElementsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of accessibility objects representing the column headers of this table or browser view.
 
@@ -12,6 +13,10 @@ An array of accessibility objects representing the column headers of this table 
 
 ```swift
 var kAXColumnHeaderUIElementsAttribute: String { get }
+```
+
+```c
+#define kAXColumnHeaderUIElementsAttribute
 ```
 
 

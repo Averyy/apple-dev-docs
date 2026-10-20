@@ -16,29 +16,30 @@ The `specialize` element is used to modify an existing element based on a data q
 </specialize>
 ```
 
-##### Subelements of Specialize
+##### Subelements of specialize
 
 The `specialize` element can contain any element.
 
-##### Elements That Use Specialize
+##### Elements that Use specialize
 
-- [`rules`](rules.md)
+- [rules](./rules.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [prototypes](prototypes.md)
+### Binding Elements
+- [prototypes](./prototypes.md)
   Defines a group of elements that can be reused through binding.
-- [rules](rules.md)
+- [rules](./rules.md)
   Contains the elements used in data binding and media queries.
 
 

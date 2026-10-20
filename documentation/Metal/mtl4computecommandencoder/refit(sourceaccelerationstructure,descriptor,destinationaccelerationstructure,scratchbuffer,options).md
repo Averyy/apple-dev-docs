@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes an acceleration structure refit operation into the command buffer, providing additional options.
@@ -20,6 +21,10 @@ Encodes an acceleration structure refit operation into the command buffer, provi
 func refit(sourceAccelerationStructure: any MTLAccelerationStructure, descriptor: MTL4AccelerationStructureDescriptor, destinationAccelerationStructure: (any MTLAccelerationStructure)?, scratchBuffer: MTL4BufferRange, options: MTLAccelerationStructureRefitOptions = [])
 ```
 
+```objc
+- (void) refitAccelerationStructure:(id<MTLAccelerationStructure>) sourceAccelerationStructure descriptor:(MTL4AccelerationStructureDescriptor *) descriptor destination:(id<MTLAccelerationStructure>) destinationAccelerationStructure scratchBuffer:(MTL4BufferRange) scratchBuffer options:(MTLAccelerationStructureRefitOptions) options;
+```
+
 #### Discussion
 
 You refit an acceleration structure to update it when the geometry it references changes. This operation is typically much faster than rebuilding the acceleration structure from scratch. The trade off is that after you refit the acceleration structure, its quality, as well as the performance of any subsequent ray tracing operation degrades, depending on how much the geometry changes.
@@ -30,9 +35,9 @@ When you refit an acceleration structure, you can do so in place, by specifying 
 
 Typically, the destination acceleration structure is at least as large as the source acceleration structure, except in cases where you compact the source acceleration structure. In this case, you need to allocate the destination acceleration to be at least as large as the compacted size of the source acceleration structure.
 
-The scratch buffer you provide for the refit operation needs to be at least as large as the size that the query [`accelerationStructureSizes(descriptor:)`](mtldevice/accelerationstructuresizes(descriptor:).md) returns. If the size this query returns is zero, you can omit providing a scratch buffer by passing `0` as the address to the `scratchBuffer` parameter.
+The scratch buffer you provide for the refit operation needs to be at least as large as the size that the query [`accelerationStructureSizes(descriptor:)`](../mtldevice/accelerationstructuresizes%28descriptor%29.md) returns. If the size this query returns is zero, you can omit providing a scratch buffer by passing `0` as the address to the `scratchBuffer` parameter.
 
-Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of the scratch buffer the `scratchBuffer` parameter references, as well as for all the instance and primitive acceleration structures you directly and indirectly reference.
+Use an instance of [`MTLResidencySet`](../mtlresidencyset.md) to mark residency of the scratch buffer the `scratchBuffer` parameter references, as well as for all the instance and primitive acceleration structures you directly and indirectly reference.
 
 ## Parameters
 

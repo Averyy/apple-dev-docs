@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The coordinate space of the focus items contained in the focus item container.
@@ -19,13 +20,18 @@ The coordinate space of the focus items contained in the focus item container.
 var coordinateSpace: any UICoordinateSpace { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<UICoordinateSpace> coordinateSpace;
+```
+
 #### Discussion
 
-The focus items returned by [`focusItems(in:)`](uifocusitemcontainer/focusitems(in:).md) should report their frames in this coordinate space.
+The focus items returned by [`focusItems(in:)`](./focusitems%28in%29.md) should report their frames in this coordinate space.
 
 ## See Also
 
-- [func focusItems(in: CGRect) -> [any UIFocusItem]](uifocusitemcontainer/focusitems(in:).md)
+### Retrieving focus items
+- [func focusItems(in: CGRect) -> [any UIFocusItem]](./focusitems%28in%29.md)
   Retrieves all of the focus items within this container that intersect with the provided rectangle.
 
 

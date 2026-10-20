@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder.
 
@@ -21,12 +22,20 @@ Builds an expression within the builder.
 static func buildExpression<Content>(_ content: Content) -> Content where Content : CustomizableToolbarContent
 ```
 
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func buildExpression<Content>(_ content: Content) -> Content where Content : ToolbarContent
+```
+
 ## See Also
 
-- [static buildIf(_:)](toolbarcontentbuilder/buildif(_:).md)
-- [static buildEither(first:)](toolbarcontentbuilder/buildeither(first:).md)
-- [static buildEither(second:)](toolbarcontentbuilder/buildeither(second:).md)
-- [static buildLimitedAvailability(_:)](toolbarcontentbuilder/buildlimitedavailability(_:).md)
+### Building conditional toolbar content
+- [static buildIf(_:)](./buildif%28_%29.md)
+- [static buildEither(first:)](./buildeither%28first%29.md)
+- [static buildEither(second:)](./buildeither%28second%29.md)
+- [static buildLimitedAvailability(_:)](./buildlimitedavailability%28_%29.md)
 
 
 ---

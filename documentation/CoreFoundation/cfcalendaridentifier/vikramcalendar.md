@@ -1,7 +1,8 @@
 # vikramCalendar
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static let vikramCalendar: CFCalendarIdentifier!
+```
+
+```c
+extern CFCalendarIdentifier const kCFVikramCalendar;
 ```
 
 

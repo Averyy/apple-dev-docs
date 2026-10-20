@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBHubDelayNs](3166378-anonymous/kiousbhubdelayns.md)
-- [kIOUSBHubPort2PortExitLatencyNs](3166378-anonymous/kiousbhubport2portexitlatencyns.md)
+- [kIOUSBHubDelayNs](./api-3166378-anonymous/kiousbhubdelayns.md)
+- [kIOUSBHubPort2PortExitLatencyNs](./api-3166378-anonymous/kiousbhubport2portexitlatencyns.md)
 
 
 ---

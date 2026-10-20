@@ -1,7 +1,8 @@
 # setModelFileURL(_:for:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a URL to the given attributes.
 
@@ -20,10 +21,10 @@ mutating func setModelFileURL(_ url: URL?, for attributes: [any CapturedRoomAttr
 
 In error conditions, this function throws:
 
-- [`CapturedRoom.ModelProvider.Error.nonExistingFile(url:)`](capturedroom/modelprovider/error/nonexistingfile(url:).md) if a 3D model doesn’t exist at the given URL.
-- [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](capturedroom/modelprovider/error/attributecombinationnotsupported.md) if no object category supports all of the argument attributes.
+- [`CapturedRoom.ModelProvider.Error.nonExistingFile(url:)`](./error/nonexistingfile%28url%29.md) if a 3D model doesn’t exist at the given URL.
+- [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](./error/attributecombinationnotsupported.md) if no object category supports all of the argument attributes.
 
-Query [`supportedCombinations`](capturedroom/object/category-swift.enum/supportedcombinations.md) to check the attributes that a category supports.
+Query [`supportedCombinations`](../object/category-swift.enum/supportedcombinations.md) to check the attributes that a category supports.
 
 ## Parameters
 
@@ -32,15 +33,16 @@ Query [`supportedCombinations`](capturedroom/object/category-swift.enum/supporte
 
 ## See Also
 
-- [var modelFileURLs: [URL]](capturedroom/modelprovider/modelfileurls.md)
+### Managing models
+- [var modelFileURLs: [URL]](./modelfileurls.md)
   An array of URLs to 3D models for all categories and attributes.
-- [func modelFileURL(for: CapturedRoom.Object.Category) throws -> URL?](capturedroom/modelprovider/modelfileurl(for:)-9irqx.md)
+- [func modelFileURL(for: CapturedRoom.Object.Category) throws -> URL?](./modelfileurl%28for%29-9irqx.md)
   Provides a URL to the 3D model for the given category.
-- [func modelFileURL(for: CapturedRoom.Object) throws -> URL?](capturedroom/modelprovider/modelfileurl(for:)-96rvb.md)
+- [func modelFileURL(for: CapturedRoom.Object) throws -> URL?](./modelfileurl%28for%29-96rvb.md)
   Provides a URL to a 3D model based on the given object’s attributes or category.
-- [func modelFileURL(for: [any CapturedRoomAttribute]) throws -> URL?](capturedroom/modelprovider/modelfileurl(for:)-58ykp.md)
+- [func modelFileURL(for: [any CapturedRoomAttribute]) throws -> URL?](./modelfileurl%28for%29-58ykp.md)
   Provides a URL to the 3D model for the given attributes.
-- [func setModelFileURL(URL?, for: CapturedRoom.Object.Category) throws](capturedroom/modelprovider/setmodelfileurl(_:for:)-4law9.md)
+- [func setModelFileURL(URL?, for: CapturedRoom.Object.Category) throws](./setmodelfileurl%28_,for%29-4law9.md)
   Associates a URL to the given object category.
 
 

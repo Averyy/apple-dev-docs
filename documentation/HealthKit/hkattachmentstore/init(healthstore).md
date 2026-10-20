@@ -1,7 +1,8 @@
 # init(healthStore:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment store for the provided HealthKit store.
 
@@ -17,6 +18,10 @@ Creates an attachment store for the provided HealthKit store.
 
 ```swift
 init(healthStore: HKHealthStore)
+```
+
+```objc
+- (instancetype) initWithHealthStore:(HKHealthStore *) healthStore;
 ```
 
 ## Parameters

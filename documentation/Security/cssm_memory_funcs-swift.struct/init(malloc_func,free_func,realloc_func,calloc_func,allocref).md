@@ -1,7 +1,8 @@
 # init(malloc_func:free_func:realloc_func:calloc_func:AllocRef:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+

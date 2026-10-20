@@ -1,14 +1,15 @@
 # makedev
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 dev_t makedev(__uint32_t _major, __uint32_t _minor);
 ```
 

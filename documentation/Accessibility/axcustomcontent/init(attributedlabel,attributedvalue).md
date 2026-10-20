@@ -1,7 +1,8 @@
 # init(attributedLabel:attributedValue:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates new custom content with an attributed string and attributed value.
 
@@ -20,6 +21,10 @@ Creates new custom content with an attributed string and attributed value.
 convenience init(attributedLabel label: NSAttributedString, attributedValue value: NSAttributedString)
 ```
 
+```objc
++ (instancetype) customContentWithAttributedLabel:(NSAttributedString *) label attributedValue:(NSAttributedString *) value;
+```
+
 ## Parameters
 
 - `label`: A localized attributed string that identifies the label for this content.
@@ -27,9 +32,10 @@ convenience init(attributedLabel label: NSAttributedString, attributedValue valu
 
 ## See Also
 
-- [convenience init(label: String, value: String)](axcustomcontent/init(label:value:).md)
+### Creating custom content
+- [convenience init(label: String, value: String)](./init%28label,value%29.md)
   Creates new custom content with a label and value.
-- [init?(coder: NSCoder)](axcustomcontent/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

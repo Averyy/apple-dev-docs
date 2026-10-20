@@ -1,7 +1,8 @@
 # purgeableEmpty
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 static var purgeableEmpty: IOSurfacePurgeabilityState { get }
 ```
 
+```c
+kIOSurfacePurgeableEmpty
+```
+
 ## See Also
 
-- [static var purgeableKeepCurrent: IOSurfacePurgeabilityState](iosurfacepurgeabilitystate/purgeablekeepcurrent.md)
-- [static var purgeableVolatile: IOSurfacePurgeabilityState](iosurfacepurgeabilitystate/purgeablevolatile.md)
+### Type Properties
+- [static var purgeableKeepCurrent: IOSurfacePurgeabilityState](./purgeablekeepcurrent.md)
+- [static var purgeableVolatile: IOSurfacePurgeabilityState](./purgeablevolatile.md)
 
 
 ---

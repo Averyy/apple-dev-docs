@@ -1,6 +1,7 @@
 # Enable WebDriver on iOS and iPadOS
 
-**Framework**: Safari Developer Features
+**Framework**: Safari Developer Features  
+**Role**: Article
 
 Enable WebDriver to automate testing of Safari on iOS and iPadOS using a connected Mac.
 
@@ -16,7 +17,8 @@ In addition to having enabled WebDriver on the Mac you will use to remotely auto
 
 ## See Also
 
-- [Enable WebDriver on macOS](macos-enabling-webdriver.md)
+### Enabling WebDriver
+- [Enable WebDriver on macOS](./macos-enabling-webdriver.md)
   Enable WebDriver to automate testing of Safari on macOS.
 
 

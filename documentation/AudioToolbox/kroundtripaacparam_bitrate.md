@@ -1,10 +1,11 @@
 # kRoundTripAACParam_BitRate
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 var kRoundTripAACParam_BitRate: AudioUnitParameterID { get }
 ```
 
+```c
+kRoundTripAACParam_BitRate
+```
+
 ## See Also
 
-- [var kRoundTripAACParam_CompressedFormatSampleRate: AudioUnitParameterID](kroundtripaacparam_compressedformatsamplerate.md)
-- [var kRoundTripAACParam_EncodingStrategy: AudioUnitParameterID](kroundtripaacparam_encodingstrategy.md)
-- [var kRoundTripAACParam_Format: AudioUnitParameterID](kroundtripaacparam_format.md)
-- [var kRoundTripAACParam_Quality: AudioUnitParameterID](kroundtripaacparam_quality.md)
-- [var kRoundTripAACParam_RateOrQuality: AudioUnitParameterID](kroundtripaacparam_rateorquality.md)
+### Constants
+- [var kRoundTripAACParam_CompressedFormatSampleRate: AudioUnitParameterID](./kroundtripaacparam_compressedformatsamplerate.md)
+- [var kRoundTripAACParam_EncodingStrategy: AudioUnitParameterID](./kroundtripaacparam_encodingstrategy.md)
+- [var kRoundTripAACParam_Format: AudioUnitParameterID](./kroundtripaacparam_format.md)
+- [var kRoundTripAACParam_Quality: AudioUnitParameterID](./kroundtripaacparam_quality.md)
+- [var kRoundTripAACParam_RateOrQuality: AudioUnitParameterID](./kroundtripaacparam_rateorquality.md)
 
 
 ---

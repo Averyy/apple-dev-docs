@@ -1,7 +1,8 @@
 # objectThreadgroupSizeIsMultipleOfThreadExecutionWidth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides a guarantee to Metal regarding the number of threadgroup threads for the object stage of a pipeline you create from this descriptor.
 
@@ -19,11 +20,15 @@ Provides a guarantee to Metal regarding the number of threadgroup threads for th
 var objectThreadgroupSizeIsMultipleOfThreadExecutionWidth: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL objectThreadgroupSizeIsMultipleOfThreadExecutionWidth;
+```
+
 #### Discussion
 
-If you set this property to [`true`](https://developer.apple.com/documentation/swift/true), you state to Metal that when you use a mesh render pipeline you create from this descriptor, the number of threadgroup threads you dispatch for the object stage is a multiple of its [`objectThreadExecutionWidth`](mtlrenderpipelinestate/objectthreadexecutionwidth.md). The compiler’s optimizer can use this guarantee to generate more efficient code.
+If you set this property to [`true`](../../Swift/true.md), you state to Metal that when you use a mesh render pipeline you create from this descriptor, the number of threadgroup threads you dispatch for the object stage is a multiple of its [`objectThreadExecutionWidth`](../mtlrenderpipelinestate/objectthreadexecutionwidth.md). The compiler’s optimizer can use this guarantee to generate more efficient code.
 
-This property’s default value is [`false`](https://developer.apple.com/documentation/swift/false).
+This property’s default value is [`false`](../../Swift/false.md).
 
 
 ---

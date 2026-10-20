@@ -1,7 +1,8 @@
 # initiator
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initiator of this QUIC stream, either client or server.
 

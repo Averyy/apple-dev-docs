@@ -1,7 +1,8 @@
 # vfs_typenum
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get (archaic) filesystem type number.
 
@@ -10,11 +11,11 @@ Get (archaic) filesystem type number.
 
 ## Declaration
 
-```swift
+```c
 int vfs_typenum(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Type number.
 

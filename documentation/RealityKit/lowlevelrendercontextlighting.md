@@ -1,7 +1,8 @@
 # LowLevelRenderContextLighting
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for creating lighting functions for use in materials.
 
@@ -20,29 +21,30 @@ protocol LowLevelRenderContextLighting
 ## Topics
 
 ### Making lighting functions
-- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextlighting/makeimagebasedlightingfunction.md)
+- [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./lowlevelrendercontextlighting/makeimagebasedlightingfunction%28%29.md)
   Returns a lighting function using image-based lighting (IBL).
-- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextlighting/makeunlitlightingfunction.md)
+- [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](./lowlevelrendercontextlighting/makeunlitlightingfunction%28%29.md)
   Returns an unlit lighting function that emits the surface emissive color directly, without any lighting calculations.
 
 ## Relationships
 
 ### Conforming Types
-- [LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
 
 ## See Also
 
-- [class LowLevelRenderer](lowlevelrenderer.md)
+### Render contexts
+- [class LowLevelRenderer](./lowlevelrenderer.md)
   A renderer that encodes draw calls for a collection of mesh instances into a Metal command buffer.
-- [protocol LowLevelRenderContext](lowlevelrendercontext.md)
+- [protocol LowLevelRenderContext](./lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
-- [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+- [protocol LowLevelRenderContextShaderGraph](./lowlevelrendercontextshadergraph.md)
   The interface for creating Metal shader functions from a ShaderGraph.
-- [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [class LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
-- [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
+- [struct LowLevelRenderContextError](./lowlevelrendercontexterror.md)
   An error thrown when binding or updating a low-level rendering resource fails.
-- [struct LowLevelRendererError](lowlevelrenderererror.md)
+- [struct LowLevelRendererError](./lowlevelrenderererror.md)
   An error thrown when creating or configuring a renderer.
 
 

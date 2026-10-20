@@ -1,7 +1,8 @@
 # substring
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string representation of the utterance in the transcription segment.
 
@@ -18,11 +19,16 @@ The string representation of the utterance in the transcription segment.
 var substring: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * substring;
+```
+
 ## See Also
 
-- [var substringRange: NSRange](sftranscriptionsegment/substringrange.md)
+### Transcribing the segment
+- [var substringRange: NSRange](./substringrange.md)
   The range information for the transcription segment’s substring, relative to the overall transcription.
-- [var alternativeSubstrings: [String]](sftranscriptionsegment/alternativesubstrings.md)
+- [var alternativeSubstrings: [String]](./alternativesubstrings.md)
   An array of alternate interpretations of the utterance in the transcription segment.
 
 

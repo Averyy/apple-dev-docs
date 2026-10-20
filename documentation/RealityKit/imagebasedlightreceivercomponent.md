@@ -1,7 +1,8 @@
 # ImageBasedLightReceiverComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,20 +21,21 @@ struct ImageBasedLightReceiverComponent
 ## Topics
 
 ### Initializers
-- [init(imageBasedLight: Entity)](imagebasedlightreceivercomponent/init(imagebasedlight:).md)
+- [init(imageBasedLight: Entity)](./imagebasedlightreceivercomponent/init%28imagebasedlight%29.md)
 ### Instance Properties
-- [var imageBasedLight: Entity](imagebasedlightreceivercomponent/imagebasedlight.md)
+- [var imageBasedLight: Entity](./imagebasedlightreceivercomponent/imagebasedlight.md)
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct ImageBasedLightComponent](imagebasedlightcomponent.md)
-- [ImageBasedLightComponent.Source](imagebasedlightcomponent/source-swift.enum.md)
+### Image-based lights
+- [struct ImageBasedLightComponent](./imagebasedlightcomponent.md)
+- [ImageBasedLightComponent.Source](./imagebasedlightcomponent/source-swift.enum.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateRecoveryActiveTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The recovery active timeout.
 
@@ -10,7 +11,7 @@ The recovery active timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateRecoveryActiveTimeout = 12
 ```
 

@@ -1,7 +1,8 @@
 # symlinkTargetPath
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target of the symlink.
 
@@ -18,15 +19,20 @@ The target of the symlink.
 optional var symlinkTargetPath: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * symlinkTargetPath;
+```
+
 #### Discussion
 
-If the extension contains an item with a [`typeIdentifier`](nsfileprovideritemprotocol/typeidentifier.md) of `public.symlink` (`kUTTypeSymLink`), this property contains the symlink’s target. Otherwise, it’s `nil`.
+If the extension contains an item with a [`typeIdentifier`](./typeidentifier.md) of `public.symlink` (`kUTTypeSymLink`), this property contains the symlink’s target. Otherwise, it’s `nil`.
 
 ## See Also
 
-- [var parentItemIdentifier: NSFileProviderItemIdentifier](nsfileprovideritemprotocol/parentitemidentifier.md)
+### Specifying Content Location
+- [var parentItemIdentifier: NSFileProviderItemIdentifier](./parentitemidentifier.md)
   The persistent identifier of the item’s parent folder.
-- [var isTrashed: Bool](nsfileprovideritemprotocol/istrashed.md)
+- [var isTrashed: Bool](./istrashed.md)
   A Boolean value that indicates whether an item is in the trash.
 
 

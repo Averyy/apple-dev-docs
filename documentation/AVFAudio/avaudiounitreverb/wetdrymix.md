@@ -1,7 +1,8 @@
 # wetDryMix
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend of the wet and dry signals.
 
@@ -17,6 +18,10 @@ The blend of the wet and dry signals.
 
 ```swift
 var wetDryMix: Float { get set }
+```
+
+```objc
+@property (nonatomic) float wetDryMix;
 ```
 
 #### Discussion

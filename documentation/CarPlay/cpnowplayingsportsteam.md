@@ -1,7 +1,8 @@
 # CPNowPlayingSportsTeam
 
 **Framework**: CarPlay  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a sports team for the now playing screen, in sports that have exactly two teams.
 
@@ -17,40 +18,44 @@ A representation of a sports team for the now playing screen, in sports that hav
 class CPNowPlayingSportsTeam
 ```
 
+```objc
+@interface CPNowPlayingSportsTeam : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](cpnowplayingsportsteam/init(coder:).md)
-- [init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)](cpnowplayingsportsteam/init(name:logo:teamstandings:eventscore:possessionindicator:favorite:).md)
+- [init?(coder: NSCoder)](./cpnowplayingsportsteam/init%28coder%29.md)
+- [init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)](./cpnowplayingsportsteam/init%28name,logo,teamstandings,eventscore,possessionindicator,favorite%29.md)
   Initialize a sports team for display on the now playing screen.
 ### Instance Properties
-- [var eventScore: String](cpnowplayingsportsteam/eventscore.md)
+- [var eventScore: String](./cpnowplayingsportsteam/eventscore.md)
   The numeric score string for this team in the current event. Depending on the size of the car screen, a maximum of 3 to 5 characters may be displayed.
-- [var isFavorite: Bool](cpnowplayingsportsteam/isfavorite.md)
+- [var isFavorite: Bool](./cpnowplayingsportsteam/isfavorite.md)
   If true, the team is marked with a star to indicate it has been saved as a user favorite.
-- [var logo: CPNowPlayingSportsTeamLogo](cpnowplayingsportsteam/logo.md)
+- [var logo: CPNowPlayingSportsTeamLogo](./cpnowplayingsportsteam/logo.md)
   The team logo or, if no logo is available, the initials/abbreviation for this team. See @c CPNowPlayingSportsTeamLogo.
-- [var name: String](cpnowplayingsportsteam/name.md)
+- [var name: String](./cpnowplayingsportsteam/name.md)
   A localized, user-visible name for this sports team.
-- [var possessionIndicator: UIImage?](cpnowplayingsportsteam/possessionindicator.md)
+- [var possessionIndicator: UIImage?](./cpnowplayingsportsteam/possessionindicator.md)
   An optional indicator used to indicate possession by this team. Only one team should have possession at a given time.
-- [var teamStandings: String?](cpnowplayingsportsteam/teamstandings.md)
+- [var teamStandings: String?](./cpnowplayingsportsteam/teamstandings.md)
   An optional additional label displayed near the team name. This could be a win-loss ratio string, team standings, or other statistics relevant to this team. Depending on the size of the car screen, a maximum of 15-20 characters may be displayed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

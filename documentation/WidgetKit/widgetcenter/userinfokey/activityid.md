@@ -1,7 +1,8 @@
 # activityID
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key you use to access the activity ID if the widget represents a Live Activity.
 

@@ -1,7 +1,8 @@
 # Handler type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that indicates the structure used in the metadata atom.
 
@@ -11,19 +12,20 @@ Set to `‘mdta’`.
 
 ## See Also
 
-- [Size](metadata_handler_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_handler_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Version](metadata_handler_atom/version.md)
+- [Version](./version.md)
   One byte.
-- [Flags](metadata_handler_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
-- [Predefined](metadata_handler_atom/predefined.md)
+- [Predefined](./predefined.md)
   A 32-bit integer.
-- [Reserved](metadata_handler_atom/reserved.md)
+- [Reserved](./reserved.md)
   An array of 3 const unsigned 32-bit integers.
-- [Name](metadata_handler_atom/name.md)
+- [Name](./name.md)
   A string with a human-readable name for a metadata type.
 
 

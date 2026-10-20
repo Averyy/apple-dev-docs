@@ -1,29 +1,31 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [addChannel](ioreporter/addchannel.md)
+### Instance Methods
+- [addChannel](./addchannel.md)
   Add an additional, similar channel to the reporter.
-- [configureReport](ioreporter/configurereport.md)
+- [configureReport](./configurereport.md)
   Track IOService::configureReport(), provide sizing info
-- [createLegend](ioreporter/createlegend.md)
+- [createLegend](./createlegend.md)
   Create a legend entry represending this reporter’s channels.
-- [updateReport](ioreporter/updatereport.md)
+- [updateReport](./updatereport.md)
   Produce standard reply to IOService::updateReport()
 
 

@@ -1,17 +1,18 @@
 # SCDynamicStore
 
 **Framework**: System Configuration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The handle to an open dynamic store session with the system configuration daemon.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,17 +20,22 @@ The handle to an open dynamic store session with the system configuration daemon
 class SCDynamicStore
 ```
 
+```c
+typedef const struct __SCDynamicStore * SCDynamicStoreRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias SCDynamicStoreCallBack](scdynamicstorecallback.md)
+### Data Types
+- [typealias SCDynamicStoreCallBack](./scdynamicstorecallback.md)
   Callback used when notification of changes made to the dynamic store is delivered.
-- [struct SCDynamicStoreContext](scdynamicstorecontext.md)
+- [struct SCDynamicStoreContext](./scdynamicstorecontext.md)
   Structure containing user-specified data and callbacks for a dynamic store session.
 
 

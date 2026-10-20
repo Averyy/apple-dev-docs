@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific language associated with a term of address.
 
@@ -22,13 +23,14 @@ var language: Locale.Language? { get }
 
 #### Discussion
 
-This property is only set for terms of address created through the [`localized(language:pronouns:)`](termofaddress/localized(language:pronouns:).md) function. This property is `nil` otherwise.
+This property is only set for terms of address created through the [`localized(language:pronouns:)`](./localized%28language,pronouns%29.md) function. This property is `nil` otherwise.
 
 ## See Also
 
-- [static func localized(language: Locale.Language, pronouns: [Morphology.Pronoun]) -> TermOfAddress](termofaddress/localized(language:pronouns:).md)
+### Defining your own terms of address
+- [static func localized(language: Locale.Language, pronouns: [Morphology.Pronoun]) -> TermOfAddress](./localized%28language,pronouns%29.md)
   Returns a term of address restricted to a specific language for a group of pronouns.
-- [var pronouns: [Morphology.Pronoun]](termofaddress/pronouns.md)
+- [var pronouns: [Morphology.Pronoun]](./pronouns.md)
   The pronouns associated with a term of address.
 
 

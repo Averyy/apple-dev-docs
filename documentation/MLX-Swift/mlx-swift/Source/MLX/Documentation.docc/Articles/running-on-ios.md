@@ -18,7 +18,7 @@ top of that for evaluation.  The size of weights can be controlled by using
 narrower types, e.g. `Float16` instead of `Float32` or quantizing the weights with 
 the [QuantizeLinear](https://swiftpackageindex.com/ml-explore/mlx-swift/main/documentation/mlxnn/quantizedlinear) layer.
 
-The LLM models in the <doc:examples> already make use of these techniques.
+The LLM models in the [MLX Swift Examples](../examples.md) already make use of these techniques.
 
 As MLX evaluates graphs (models), it produces temporary buffers and results.
 These are managed automatically, and for efficiency MLX will recycle the

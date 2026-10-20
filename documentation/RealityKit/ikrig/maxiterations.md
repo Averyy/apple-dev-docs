@@ -1,7 +1,8 @@
 # maxIterations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of iterations the solver is allowed to do per frame.
 

@@ -1,7 +1,8 @@
 # Create or Replace Contexts
 
 **Framework**: ClassKit Catalog API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Store information about the assignable content that your educational app provides.
 
@@ -18,7 +19,7 @@ You can specify up to 200 contexts for any one call to this endpoint. The call o
 
 **Request**:
 
-```None
+```
 {
   "contexts": [
     {
@@ -202,25 +203,40 @@ You can specify up to 200 contexts for any one call to this endpoint. The call o
 
 ## Parameters
 
-- `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [`Testing Your ClassKit Catalog Implementation`](testing-your-classkit-catalog-implementation.md).
+### Query Parameters
+
+- `environment` (string) *(required)*: The development or production environment to use for this access. For details, see [Testing Your ClassKit Catalog Implementation](./testing-your-classkit-catalog-implementation.md).
+
+  **Allowed Values**: `development`, `production`
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ContextsRequest`
+
 The context or contexts to add.
+
+## Responses
+
+- `201` Created: The request succeeded.
+- `202` Accepted: The API accepted but hasn’t completed the request. To ask for a status update later, see [`Get Status`](./get-status.md).
+- `400` Bad Request: The request contained an error.
+- `403` Forbidden: The request wasn’t authorized.
 
 ## See Also
 
-- [Preparing Context Data](preparing-context-data.md)
+### Declaring Contexts
+- [Preparing Context Data](./preparing-context-data.md)
   Adjust how you manage context data when working with the web API.
-- [Get a Context](get-a-context.md)
+- [Get a Context](./get-a-context.md)
   Fetch information that you previously stored about your app’s assignable activities.
-- [Delete a Context](delete-a-context.md)
+- [Delete a Context](./delete-a-context.md)
   Remove information that you previously stored about your app’s assignable activities.
-- [object Context](context.md)
+- [object Context](./context.md)
   An area of your app that represents an assignable task, like a quiz or a chapter.
-- [object ContextsRequest](contextsrequest.md)
+- [object ContextsRequest](./contextsrequest.md)
   A request that you make when modifying context information.
-- [object ContextsResponse](contextsresponse.md)
+- [object ContextsResponse](./contextsresponse.md)
   The response you receive after modifying context information.
 
 

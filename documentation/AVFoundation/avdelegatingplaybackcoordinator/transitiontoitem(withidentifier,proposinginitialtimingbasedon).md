@@ -1,7 +1,8 @@
 # transitionToItem(withIdentifier:proposingInitialTimingBasedOn:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the coordinator to transition to a new item.
 
@@ -19,22 +20,29 @@ Tells the coordinator to transition to a new item.
 func transitionToItem(withIdentifier itemIdentifier: String?, proposingInitialTimingBasedOn snapshotTimebase: CMTimebase?)
 ```
 
+```objc
+- (void) transitionToItemWithIdentifier:(NSString *) itemIdentifier proposingInitialTimingBasedOnTimebase:(CMTimebaseRef) snapshotTimebase;
+```
+
 ## Parameters
 
 - `itemIdentifier`: The identifier for the new current item, which is `nil` if there isn’t anything to play.
-- `snapshotTimebase`: A time base that communicates the initial playback state of the new item. If you specify `nil`, the coordinator assumes that the player pauses at [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero). You can retrieve an appropriate time base to pass for this value from AVFoundation playback objects like [`AVSampleBufferRenderSynchronizer`](avsamplebufferrendersynchronizer.md). You can also create one manually using the [`CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)`](https://developer.apple.com/documentation/coremedia/cmtimebasecreatewithsourceclock(allocator:sourceclock:timebaseout:)) function.
+- `snapshotTimebase`: A time base that communicates the initial playback state of the new item. If you specify `nil`, the coordinator assumes that the player pauses at [`zero`](../../CoreMedia/cmtime/zero.md).
+
+  You can retrieve an appropriate time base to pass for this value from AVFoundation playback objects like [`AVSampleBufferRenderSynchronizer`](../avsamplebufferrendersynchronizer.md). You can also create one manually using the [`CMTimebaseCreateWithSourceClock(allocator:sourceClock:timebaseOut:)`](../../CoreMedia/cmtimebasecreatewithsourceclock%28allocator,sourceclock,timebaseout%29.md) function.
 
 ## See Also
 
-- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](avdelegatingplaybackcoordinator/coordinateratechange(to:options:).md)
+### Coordinating state changes
+- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](./coordinateratechange%28to,options%29.md)
   Coordinates a rate change across all participants, waiting for others to become ready, if necessary.
-- [func coordinateSeek(to: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions)](avdelegatingplaybackcoordinator/coordinateseek(to:options:).md)
+- [func coordinateSeek(to: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions)](./coordinateseek%28to,options%29.md)
   Coordinates a seek to the specified time for all connected participants.
-- [func reapplyCurrentItemStateToPlaybackControlDelegate()](avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate.md)
+- [func reapplyCurrentItemStateToPlaybackControlDelegate()](./reapplycurrentitemstatetoplaybackcontroldelegate%28%29.md)
   Tells the coordinator to reissue current play state commands to synchronize the current item to the state of other participants.
-- [struct AVDelegatingPlaybackCoordinatorSeekOptions](avdelegatingplaybackcoordinatorseekoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorSeekOptions](../avdelegatingplaybackcoordinatorseekoptions.md)
   Constants that define seek options.
-- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](avdelegatingplaybackcoordinatorratechangeoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](../avdelegatingplaybackcoordinatorratechangeoptions.md)
   Constants that define rate change options.
 
 

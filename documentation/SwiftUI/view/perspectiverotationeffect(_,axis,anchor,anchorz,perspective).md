@@ -1,7 +1,8 @@
 # perspectiveRotationEffect(_:axis:anchor:anchorZ:perspective:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 
@@ -34,49 +35,50 @@ Text("Rotation by passing an angle in degrees")
     .border(Color.gray)
 ```
 
-![A screenshot of text in a grey box. The text says Rotation by passing an angle in degrees. The text is rendered in a way that makes it appear farther from the viewer on the right side and closer on the left, as if the text is angled to face someone sitting on the viewer’s right.](/images/com.apple.SwiftUI/SwiftUI-View-rotation3DEffect@2x.png)
+![A screenshot of text in a grey box. The text says Rotation by passing an angle in degrees. The text is rendered in a way that makes it appear farther from the viewer on the right side and closer on the left, as if the text is angled to face someone sitting on the viewer’s right.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-rotation3DEffect@2x.png)
 
-> ❗ **Important**: To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](view/rotation3deffect(_:axis:anchor:).md).
+> ❗ **Important**: To truly rotate a view in three dimensions, use a 3D rotation modifier without a perspective input like [`rotation3DEffect(_:axis:anchor:)`](./rotation3deffect%28_,axis,anchor%29.md).
 
 ## Parameters
 
 - `angle`: The angle by which to rotate the view’s content.
 - `axis`: The axis of rotation, specified as a tuple with named elements for each of the three spatial dimensions.
-- `anchor`: A two dimensional unit point within the view about which to perform the rotation. The default value is [`center`](unitpoint/center.md).
+- `anchor`: A two dimensional unit point within the view about which to perform the rotation. The default value is [`center`](../unitpoint/center.md).
 - `anchorZ`: The location on the z-axis around which to rotate the content. The default is `0`.
 - `perspective`: The relative vanishing point for the rotation. The default is `1`.
 
 ## See Also
 
-- [func scaledToFill() -> some View](view/scaledtofill.md)
+### Scaling, rotating, or transforming a view
+- [func scaledToFill() -> some View](./scaledtofill%28%29.md)
   Scales this view to fill its parent.
-- [func scaledToFit() -> some View](view/scaledtofit.md)
+- [func scaledToFit() -> some View](./scaledtofit%28%29.md)
   Scales this view to fit its parent.
-- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
+- [func scaleEffect(_:anchor:)](./scaleeffect%28_,anchor%29.md)
   Scales this view uniformly by the specified factor, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](./scaleeffect%28x,y,anchor%29.md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](./scaleeffect%28x,y,z,anchor%29.md)
   Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
-- [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
+- [func aspectRatio(_:contentMode:)](./aspectratio%28_,contentmode%29.md)
   Constrains this view’s dimensions to the specified aspect ratio.
-- [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
+- [func rotationEffect(Angle, anchor: UnitPoint) -> some View](./rotationeffect%28_,anchor%29.md)
   Rotates a view’s rendered output in two dimensions around the specified point.
-- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
+- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](./rotation3deffect%28_,axis,anchor,anchorz,perspective%29.md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
-- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some View](view/rotation3deffect(_:anchor:).md)
+- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some View](./rotation3deffect%28_,anchor%29.md)
   Rotates the view’s content by the specified 3D rotation value.
-- [func rotation3DEffect(_:axis:anchor:)](view/rotation3deffect(_:axis:anchor:).md)
+- [func rotation3DEffect(_:axis:anchor:)](./rotation3deffect%28_,axis,anchor%29.md)
   Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
-- [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
+- [func transformEffect(CGAffineTransform) -> some View](./transformeffect%28_%29.md)
   Applies an affine transformation to this view’s rendered output.
-- [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
+- [func transform3DEffect(AffineTransform3D) -> some View](./transform3deffect%28_%29.md)
   Applies a 3D transformation to this view’s rendered output.
-- [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
+- [func projectionEffect(ProjectionTransform) -> some View](./projectioneffect%28_%29.md)
   Applies a projection transformation to this view’s rendered output.
-- [struct ProjectionTransform](projectiontransform.md)
+- [struct ProjectionTransform](../projectiontransform.md)
   A 3x3 matrix that transforms points in a plane.
-- [enum ContentMode](contentmode.md)
+- [enum ContentMode](../contentmode.md)
   Constants that define how a view’s content fills the available space.
 
 

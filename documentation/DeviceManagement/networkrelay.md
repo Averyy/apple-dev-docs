@@ -1,7 +1,8 @@
 # NetworkRelay
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Network Relay settings.
 
@@ -14,7 +15,7 @@ The declaration to configure Network Relay settings.
 
 ## Declaration
 
-```swift
+```
 object NetworkRelay
 ```
 
@@ -22,7 +23,7 @@ object NetworkRelay
 
 Specify `com.apple.configuration.network.relay` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.network.relay` as the declaration type.
 | Allowed in user scope | macOS |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Single relay**:
 
@@ -93,52 +94,63 @@ This configuration routes specific hostnames through two chained relay hops supp
 ## Topics
 
 ### Objects
-- [object NetworkRelayRelayObject](networkrelayrelayobject.md)
+- [object NetworkRelayRelayObject](./networkrelayrelayobject.md)
   An array of dictionaries that describe one or more relay servers that the system can chain together.
 
 ## Properties
 
 - `AllowDNSFailover` (boolean): If `true`, the device allows the relay to failover to the default system DNS resolver.
+
+  **Default**: `false`
 - `ExcludedDomains` ([string]): A list of domain strings to exclude from routing through the servers in `Relays`. Any connection that matches a domain in the list exactly or is a subdomain of the listed domain won’t use the relay server.
 - `ExcludedFQDNs` ([string]): A list of Fully Qualified Domain Names (FQDNs) to exclude from routing through the servers contained in `Relays`. Any connection that matches an FQDN in the list exactly won’t use the relay server. When `MatchDomains` is also present, any FQDN listed in the list should be a subdomain of at least one `MatchDomain` value, otherwise it won’t have any effect.
-- `MatchDomains` ([string]): A list of domain strings that the system uses to determine which connection to route through the servers in `Relays`. Any connection that matches a domain in the list exactly or is a subdomain of the listed domain uses the relay servers, unless it matches a domain in `ExcludedDomains`. If this list and `MatchFQDNs` are empty, the system routes traffic to all domains to the relay servers, except those that match an excluded domain or excluded FQDN.
+- `MatchDomains` ([string]): A list of domain strings that the system uses to determine which connection to route through the servers in `Relays`.
+
+  Any connection that matches a domain in the list exactly or is a subdomain of the listed domain uses the relay servers, unless it matches a domain in `ExcludedDomains`.
+
+  If this list and `MatchFQDNs` are empty, the system routes traffic to all domains to the relay servers, except those that match an excluded domain or excluded FQDN.
 - `MatchFQDNs` ([string]): A list of Fully Qualified Domain Names (FQDNs) to route through the servers contained in `Relays`. Any connection that matches an FQDN in the list exactly uses the relay servers. If this list and `MatchDomains` are empty, the system routes traffic to all domains to the relay servers, except those that match an excluded domain or excluded FQDN.
 - `Relays` ([NetworkRelayRelayObject]) *(required)*: An array of dictionaries that describe one or more relay servers that the system can chain together.
-- `RelayUUID` (string): A globally unique identifier for this relay configuration. The system uses this UUID to route managed apps through the servers in `Relays`. This key is required for user enrollment. Available: iOS 27+ | iPadOS 27+ | visionOS 27+
+- `RelayUUID` (string): A globally unique identifier for this relay configuration. The system uses this UUID to route managed apps through the servers in `Relays`. This key is required for user enrollment.
+
+  Available: iOS 27+ | iPadOS 27+ | visionOS 27+
 - `UIToggleEnabled` (boolean): If `true`, the device allows the user to disable this network relay configuration.
+
+  **Default**: `true`
 - `VisibleName` (string) *(required)*: The name of the network relays that the system displays on the device.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

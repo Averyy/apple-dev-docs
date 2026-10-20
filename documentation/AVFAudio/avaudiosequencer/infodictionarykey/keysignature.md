@@ -1,7 +1,8 @@
 # keySignature
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the key signature.
 
@@ -19,15 +20,20 @@ A key that represents the key signature.
 static let keySignature: AVAudioSequencer.InfoDictionaryKey
 ```
 
+```c
+extern AVAudioSequencerInfoDictionaryKey AVAudioSequencerInfoDictionaryKeyKeySignature;
+```
+
 ## See Also
 
-- [static let encodingApplication: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/encodingapplication.md)
+### Getting encoding information
+- [static let encodingApplication: AVAudioSequencer.InfoDictionaryKey](./encodingapplication.md)
   A key that represents the encoding application.
-- [static let sourceEncoder: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/sourceencoder.md)
+- [static let sourceEncoder: AVAudioSequencer.InfoDictionaryKey](./sourceencoder.md)
   A key that represents the encoder the source uses.
-- [static let nominalBitRate: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/nominalbitrate.md)
+- [static let nominalBitRate: AVAudioSequencer.InfoDictionaryKey](./nominalbitrate.md)
   A key that represents the nominal bit rate.
-- [static let sourceBitDepth: AVAudioSequencer.InfoDictionaryKey](avaudiosequencer/infodictionarykey/sourcebitdepth.md)
+- [static let sourceBitDepth: AVAudioSequencer.InfoDictionaryKey](./sourcebitdepth.md)
   A key that represents the bit depth of the source.
 
 

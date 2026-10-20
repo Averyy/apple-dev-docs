@@ -1,7 +1,8 @@
 # sheen
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of an entity’s sheen.
 
@@ -11,7 +12,7 @@ The intensity of an entity’s sheen.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,13 @@ var sheen: PhysicallyBasedMaterial.SheenColor? { get set }
 
 ## Mentions
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
+- [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
 
 #### Discussion
 
-For a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), object, you can use `sheen` to add soft specular highlights that simulate subtle reflections like the ones that occur with some materials, primarily fabrics. You can specify `sheen` using a single color, or you can provide a UV-mapped image.
+For a [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md), object, you can use `sheen` to add soft specular highlights that simulate subtle reflections like the ones that occur with some materials, primarily fabrics. You can specify `sheen` using a single color, or you can provide a UV-mapped image.
 
-![An illustration showing two spheres. The one on the right has very](/images/com.apple.RealityKit/PhysicallyBasedMaterial-sheen-1@2x.png)
+![An illustration showing two spheres. The one on the right has very](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-sheen-1@2x.png)
 
 The following example specifies `sheen` using a single value for the entire material:
 
@@ -49,7 +50,8 @@ if let sheenResource = try? TextureResource.load(named:
 
 ## See Also
 
-- [var blending: PhysicallyBasedMaterial.Blending](physicallybasedmaterial/blending-swift.property.md)
+### Configuring transparency and highlights
+- [var blending: PhysicallyBasedMaterial.Blending](./blending-swift.property.md)
   The transparency of an entity.
 
 

@@ -1,14 +1,15 @@
 # tei_flags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 uint32_t tei_flags;
 ```
 

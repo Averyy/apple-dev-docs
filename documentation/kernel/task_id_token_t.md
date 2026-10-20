@@ -1,14 +1,15 @@
 # task_id_token_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct task_id_token *task_id_token_t;
 ```
 

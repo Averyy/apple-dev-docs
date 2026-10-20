@@ -1,7 +1,8 @@
 # init(device:)
 
 **Framework**: MetalKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new allocator object.
 
@@ -17,6 +18,10 @@ Initializes a new allocator object.
 
 ```swift
 init(device: any MTLDevice)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device;
 ```
 
 #### Return Value

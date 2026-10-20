@@ -1,7 +1,8 @@
 # init(tunnelRemoteAddress:ethernetAddress:mtu:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a settings object with a given tunnel remote address and MAC address.
 
@@ -12,6 +13,10 @@ Creates a settings object with a given tunnel remote address and MAC address.
 
 ```swift
 init(tunnelRemoteAddress address: String, ethernetAddress: String, mtu: Int)
+```
+
+```objc
+- (instancetype) initWithTunnelRemoteAddress:(NSString *) address ethernetAddress:(NSString *) ethernetAddress mtu:(NSInteger) mtu;
 ```
 
 

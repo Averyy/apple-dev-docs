@@ -1,7 +1,8 @@
 # updateProperties()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the view controller’s content and styling properties.
 
@@ -18,26 +19,31 @@ Configures the view controller’s content and styling properties.
 func updateProperties()
 ```
 
+```objc
+- (void) updateProperties;
+```
+
 ## Mentions
 
-- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
-- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+- [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
+- [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Overview
 
-Override this method to configure the view’s content and styling in your view controller subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](uiviewcontroller/setneedsupdateproperties().md) to schedule an update.
+Override this method to configure the view’s content and styling in your view controller subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](./setneedsupdateproperties%28%29.md) to schedule an update.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func viewWillLayoutSubviews()](uiviewcontroller/viewwilllayoutsubviews.md)
+### Observing data in view controllers
+- [func viewWillLayoutSubviews()](./viewwilllayoutsubviews%28%29.md)
   Notifies the view controller that its view is about to lay out its subviews.
-- [func viewDidLayoutSubviews()](uiviewcontroller/viewdidlayoutsubviews.md)
+- [func viewDidLayoutSubviews()](./viewdidlayoutsubviews%28%29.md)
   Notifies the view controller when its view finishes laying out its subviews.
-- [func updateViewConstraints()](uiviewcontroller/updateviewconstraints.md)
+- [func updateViewConstraints()](./updateviewconstraints%28%29.md)
   Notifies the view controller when its view needs to update its constraints.
-- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](uiviewcontroller/updatecontentunavailableconfiguration(using:).md)
+- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
 
 

@@ -1,7 +1,8 @@
 # imagePlaygroundViewController(_:didCreate:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the generated genmoji to the delegate.
 
@@ -21,7 +22,7 @@ Returns the generated genmoji to the delegate.
 
 #### Discussion
 
-Use this method to access the genmoji. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) from your app’s interface.
+Use this method to access the genmoji. After you finish retrieving the image, dismiss the [`ImagePlaygroundViewController`](../../imageplaygroundviewcontroller.md) from your app’s interface.
 
 ## Parameters
 

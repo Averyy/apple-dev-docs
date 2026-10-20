@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The base slice of the parent texture used to create this texture.
@@ -20,23 +21,28 @@ The base slice of the parent texture used to create this texture.
 var parentRelativeSlice: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger parentRelativeSlice;
+```
+
 #### Discussion
 
-This property is only valid for textures created from a [`parent`](mtltexture/parent.md) texture. The default value is `0`.
+This property is only valid for textures created from a [`parent`](./parent.md) texture. The default value is `0`.
 
 ## See Also
 
-- [var parent: (any MTLTexture)?](mtltexture/parent.md)
+### Getting information about ancestor resources
+- [var parent: (any MTLTexture)?](./parent.md)
   The parent texture used to create this texture, if any.
-- [var parentRelativeLevel: Int](mtltexture/parentrelativelevel.md)
+- [var parentRelativeLevel: Int](./parentrelativelevel.md)
   The base level of the parent texture used to create this texture.
-- [var buffer: (any MTLBuffer)?](mtltexture/buffer.md)
+- [var buffer: (any MTLBuffer)?](./buffer.md)
   The source buffer used to create this texture, if any.
-- [var bufferOffset: Int](mtltexture/bufferoffset.md)
+- [var bufferOffset: Int](./bufferoffset.md)
   The offset in the source buffer where the texture’s data comes from.
-- [var bufferBytesPerRow: Int](mtltexture/bufferbytesperrow.md)
+- [var bufferBytesPerRow: Int](./bufferbytesperrow.md)
   The number of bytes in each row of the texture’s source buffer.
-- [var rootResource: (any MTLResource)?](mtltexture/rootresource.md)
+- [var rootResource: (any MTLResource)?](./rootresource.md)
   The resource that owns the storage for this texture.
 
 

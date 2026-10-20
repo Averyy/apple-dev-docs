@@ -1,7 +1,8 @@
 # read
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This port indicates that it is reading from its state.
 
@@ -12,7 +13,7 @@ This port indicates that it is reading from its state.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

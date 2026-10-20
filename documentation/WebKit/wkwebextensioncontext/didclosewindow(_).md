@@ -1,7 +1,8 @@
 # didCloseWindow(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the app when a window is closed to fire appropriate events with only this extension.
 
@@ -18,6 +19,10 @@ Called by the app when a window is closed to fire appropriate events with only t
 func didCloseWindow(_ closedWindow: any WKWebExtensionWindow)
 ```
 
+```objc
+- (void) didCloseWindow:(id<WKWebExtensionWindow>) closedWindow;
+```
+
 #### Discussion
 
 This method informs only the specific extension of the closure of a window. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
@@ -28,9 +33,10 @@ This method informs only the specific extension of the closure of a window. If t
 
 ## See Also
 
-- [func didOpenWindow(any WKWebExtensionWindow)](wkwebextensioncontext/didopenwindow(_:).md)
+### Related Documentation
+- [func didOpenWindow(any WKWebExtensionWindow)](./didopenwindow%28_%29.md)
   Called by the app when a new window is opened to fire appropriate events with only this extension.
-- [var openWindows: [any WKWebExtensionWindow]](wkwebextensioncontext/openwindows.md)
+- [var openWindows: [any WKWebExtensionWindow]](./openwindows.md)
   The open windows that are exposed to this extension.
 
 

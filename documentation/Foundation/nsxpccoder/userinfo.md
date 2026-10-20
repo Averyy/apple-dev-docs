@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional user information object associated with the coder.
 
@@ -20,9 +21,14 @@ An optional user information object associated with the coder.
 var userInfo: (any NSObjectProtocol)? { get set }
 ```
 
+```objc
+@property (retain, nullable) id<NSObject> userInfo;
+```
+
 ## See Also
 
-- [var connection: NSXPCConnection?](nsxpccoder/connection.md)
+### Inspecting the Coder
+- [var connection: NSXPCConnection?](./connection.md)
   The connection currently performing encoding or decoding.
 
 

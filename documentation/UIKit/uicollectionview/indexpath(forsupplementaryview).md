@@ -1,7 +1,8 @@
 # indexPath(forSupplementaryView:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the index path of the specified supplementary view.
 
@@ -9,13 +10,17 @@ Gets the index path of the specified supplementary view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func indexPath(forSupplementaryView supplementaryView: UICollectionReusableView) -> IndexPath?
+```
+
+```objc
+- (NSIndexPath *) indexPathForSupplementaryView:(UICollectionReusableView *) supplementaryView;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # publicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding public key.
 

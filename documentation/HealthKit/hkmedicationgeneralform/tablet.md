@@ -1,22 +1,27 @@
 # tablet
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The medication comes in tablet form, such as a pill or caplet.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let tablet: HKMedicationGeneralForm
+```
+
+```c
+extern HKMedicationGeneralForm const HKMedicationGeneralFormTablet;
 ```
 
 

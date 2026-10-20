@@ -1,7 +1,8 @@
 # destroyProcessTap(_:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Destroys the given tap.
 

@@ -1,7 +1,8 @@
 # AppSettingsPrivacy_PermissionDefaultsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary of app privacy permission defaults. Each key in the dictionary is an app identifier. The dictionary values represent the permission defaults that the device applies for each matching app.
 
@@ -13,7 +14,7 @@ The dictionary of app privacy permission defaults. Each key in the dictionary is
 
 ## Declaration
 
-```swift
+```
 object AppSettingsPrivacy_PermissionDefaultsObject
 ```
 
@@ -26,7 +27,7 @@ In macOS, the app identifier is a composed identifier. The format of the compose
 ## Topics
 
 ### Objects
-- [object AppSettingsAppDictionaryObject](appsettingsappdictionaryobject.md)
+- [object AppSettingsAppDictionaryObject](./appsettingsappdictionaryobject.md)
   The dictionary that defines the app privacy permission defaults. Each key is an app identifier.
 
 ## Properties

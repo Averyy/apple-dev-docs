@@ -1,7 +1,8 @@
 # kAXCloseButtonAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXCloseButtonAttribute: String { get }
+```
+
+```c
+#define kAXCloseButtonAttribute
 ```
 
 #### Discussion

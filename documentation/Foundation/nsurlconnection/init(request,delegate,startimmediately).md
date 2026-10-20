@@ -1,22 +1,29 @@
 # init(request:delegate:startImmediately:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized URL connection and begins to load the data for the URL request, if specified.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.5+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.5+ - Deprecated in 10.11
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use NSURLSession (see NSURLSession.h)
 
 ## Declaration
 
 ```swift
 init?(request: URLRequest, delegate: Any?, startImmediately: Bool)
+```
+
+```objc
+- (instancetype) initWithRequest:(NSURLRequest *) request delegate:(id) delegate startImmediately:(BOOL) startImmediately;
 ```
 
 #### Return Value
@@ -31,15 +38,16 @@ During the download the connection maintains a strong reference to the `delegate
 
 - `request`: The URL request to load. The `request` object is deep-copied as part of the initialization process. Changes made to `request` after this method returns do not affect the request that is used for the loading process.
 - `delegate`: The delegate object for the connection. The connection calls methods on this delegate as the load progresses.
-- `startImmediately`: [`true`](https://developer.apple.com/documentation/swift/true) if the connection should begin loading data immediately, otherwise [`false`](https://developer.apple.com/documentation/swift/false). If you pass [`false`](https://developer.apple.com/documentation/swift/false), the connection is not scheduled with a run loop. You can then schedule the connection in the run loop and mode of your choice by calling [`schedule(in:forMode:)`](nsurlconnection/schedule(in:formode:).md).
+- `startImmediately`: [`true`](../../Swift/true.md) if the connection should begin loading data immediately, otherwise [`false`](../../Swift/false.md). If you pass [`false`](../../Swift/false.md), the connection is not scheduled with a run loop. You can then schedule the connection in the run loop and mode of your choice by calling [`schedule(in:forMode:)`](./schedule%28in,formode%29.md).
 
 ## See Also
 
-- [init?(request: URLRequest, delegate: Any?)](nsurlconnection/init(request:delegate:).md)
+### Loading Data Asynchronously
+- [init?(request: URLRequest, delegate: Any?)](./init%28request,delegate%29.md)
   Returns an initialized URL connection and begins to load the data for the URL request.
-- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](nsurlconnection/sendasynchronousrequest(_:queue:completionhandler:).md)
+- [class func sendAsynchronousRequest(URLRequest, queue: OperationQueue, completionHandler: (URLResponse?, Data?, (any Error)?) -> Void)](./sendasynchronousrequest%28_,queue,completionhandler%29.md)
   Loads the data for a URL request and executes a handler block on an operation queue when the request completes or fails.
-- [func start()](nsurlconnection/start.md)
+- [func start()](./start%28%29.md)
   Causes the connection to begin loading data, if it has not already.
 
 

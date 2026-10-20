@@ -1,7 +1,8 @@
 # UIOrnament
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class that represents an ornament.
 
@@ -16,16 +17,17 @@ class UIOrnament
 
 #### Overview
 
-You don’t create an instance of this class directly. Instead use [`UIHostingOrnament`](uihostingornament.md) when you want to add ornaments to a UIKit view controller.
+You don’t create an instance of this class directly. Instead use [`UIHostingOrnament`](./uihostingornament.md) when you want to add ornaments to a UIKit view controller.
 
 ## Relationships
 
 ### Inherited By
-- [UIHostingOrnament](uihostingornament.md)
+- [UIHostingOrnament](./uihostingornament.md)
 
 ## See Also
 
-- [class UIHostingOrnament](uihostingornament.md)
+### Hosting an ornament in UIKit
+- [class UIHostingOrnament](./uihostingornament.md)
   A model that represents an ornament suitable for being hosted in UIKit.
 
 

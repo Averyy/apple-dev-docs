@@ -1,7 +1,8 @@
 # clearNotices(for:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears the notices for a specified collaboration highlight.
 
@@ -18,13 +19,18 @@ Clears the notices for a specified collaboration highlight.
 func clearNotices(for highlight: SWCollaborationHighlight)
 ```
 
+```objc
+- (void) clearNoticesForHighlight:(SWCollaborationHighlight *) highlight;
+```
+
 ## Parameters
 
-- `highlight`: The [`SWHighlightEvent`](swhighlightevent.md) that contains the notices.
+- `highlight`: The [`SWHighlightEvent`](../swhighlightevent.md) that contains the notices.
 
 ## See Also
 
-- [func postNotice(for: any SWHighlightEvent)](swhighlightcenter/postnotice(for:).md)
+### Posting highlight events
+- [func postNotice(for: any SWHighlightEvent)](./postnotice%28for%29.md)
   Posts a specified event to the highlight center for display.
 
 

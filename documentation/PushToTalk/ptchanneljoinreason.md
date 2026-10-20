@@ -1,7 +1,8 @@
 # PTChannelJoinReason
 
 **Framework**: Push to Talk  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Identifies the type that indicates the join reason.
 
@@ -16,37 +17,42 @@ Identifies the type that indicates the join reason.
 enum PTChannelJoinReason
 ```
 
+```c
+enum PTChannelJoinReason : NSInteger;
+```
+
 ## Topics
 
 ### Join reasons
-- [PTChannelJoinReason.developerRequest](ptchanneljoinreason/developerrequest.md)
+- [PTChannelJoinReason.developerRequest](./ptchanneljoinreason/developerrequest.md)
   A join reason that indicates the app calls the join channel method while in the foreground.
-- [PTChannelJoinReason.channelRestoration](ptchanneljoinreason/channelrestoration.md)
+- [PTChannelJoinReason.channelRestoration](./ptchanneljoinreason/channelrestoration.md)
   A join reason that indicates the app rejoined a channel through channel restoration.
 ### Initializers
-- [init?(rawValue: Int)](ptchanneljoinreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ptchanneljoinreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol PTChannelManagerDelegate](ptchannelmanagerdelegate.md)
+### Channel management
+- [protocol PTChannelManagerDelegate](./ptchannelmanagerdelegate.md)
   A type that represents your life cycle of a channel manager.
-- [enum PTTransmissionMode](pttransmissionmode.md)
+- [enum PTTransmissionMode](./pttransmissionmode.md)
   Identifies the type of audio transmission modes.
-- [enum PTServiceStatus](ptservicestatus.md)
+- [enum PTServiceStatus](./ptservicestatus.md)
   Identifies the type that indicates the status of the service.
-- [enum PTChannelLeaveReason](ptchannelleavereason.md)
+- [enum PTChannelLeaveReason](./ptchannelleavereason.md)
   Identifies the type that indicates the leave reason.
-- [enum PTChannelTransmitRequestSource](ptchanneltransmitrequestsource.md)
+- [enum PTChannelTransmitRequestSource](./ptchanneltransmitrequestsource.md)
   Identifies the type that indicates the transmission request source.
 
 

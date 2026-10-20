@@ -1,7 +1,8 @@
 # BNNSGraphContextDestroy(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Destroys the specified graph context.
 
@@ -20,17 +21,22 @@ Destroys the specified graph context.
 func BNNSGraphContextDestroy(_ context: bnns_graph_context_t)
 ```
 
+```c
+void BNNSGraphContextDestroy(bnns_graph_context_t context);
+```
+
 ## Parameters
 
 - `context`: The graph context.
 
 ## See Also
 
-- [struct bnns_graph_context_t](bnns_graph_context_t.md)
+### Creating and destroying a context
+- [struct bnns_graph_context_t](./bnns_graph_context_t.md)
   An object that wraps a compiled graph object.
-- [func BNNSGraphContextMake(bnns_graph_t) -> bnns_graph_context_t](bnnsgraphcontextmake(_:).md)
+- [func BNNSGraphContextMake(bnns_graph_t) -> bnns_graph_context_t](./bnnsgraphcontextmake%28_%29.md)
   Returns an allocated and initialized graph context from the specified graph.
-- [func BNNSGraphContextMakeStreaming(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafePointer<BNNSTensor>?) -> bnns_graph_context_t](bnnsgraphcontextmakestreaming(_:_:_:_:).md)
+- [func BNNSGraphContextMakeStreaming(bnns_graph_t, UnsafePointer<CChar>?, Int, UnsafePointer<BNNSTensor>?) -> bnns_graph_context_t](./bnnsgraphcontextmakestreaming%28_,_,_,_%29.md)
   Returns an allocated and initialized graph context with streaming support from the specified graph.
 
 

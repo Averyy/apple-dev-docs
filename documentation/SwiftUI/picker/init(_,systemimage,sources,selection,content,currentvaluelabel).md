@@ -1,7 +1,8 @@
 # init(_:systemImage:sources:selection:content:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker bound to a collection of bindings that accepts a custom current value label and generates its label from a string.
 
@@ -19,6 +20,20 @@ Creates a picker bound to a collection of bindings that accepts a custom current
 ```swift
 @export(implementation)
 nonisolated init<C, S>(_ title: S, systemImage: String, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue>
+```
+
+Available when `Label` is `Label<Text, Image>`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<C>(_ titleKey: LocalizedStringKey, systemImage: String, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue>
+```
+
+```swift
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, systemImage: String, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue>
 ```
 
 ## Parameters

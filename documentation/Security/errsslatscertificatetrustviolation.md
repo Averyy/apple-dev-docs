@@ -1,7 +1,8 @@
 # errSSLATSCertificateTrustViolation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The peer certificate wasn’t issued by a trusted peer.
 
@@ -20,9 +21,13 @@ The peer certificate wasn’t issued by a trusted peer.
 var errSSLATSCertificateTrustViolation: OSStatus { get }
 ```
 
+```c
+errSSLATSCertificateTrustViolation
+```
+
 #### Overview
 
-For more information about App Transport Security (ATS) compliance, see [`Preventing Insecure Network Connections`](preventing-insecure-network-connections.md).
+For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 
 
 ---

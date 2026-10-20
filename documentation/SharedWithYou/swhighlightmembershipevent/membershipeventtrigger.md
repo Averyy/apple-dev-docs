@@ -1,7 +1,8 @@
 # membershipEventTrigger
 
 **Framework**: Shared with You  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of membership event for the highlight.
 
@@ -18,9 +19,14 @@ The type of membership event for the highlight.
 var membershipEventTrigger: SWHighlightMembershipEventTrigger { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SWHighlightMembershipEventTrigger membershipEventTrigger;
+```
+
 ## See Also
 
-- [enum SWHighlightMembershipEventTrigger](swhighlightmembershipeventtrigger.md)
+### Accessing an event trigger
+- [enum SWHighlightMembershipEventTrigger](../swhighlightmembershipeventtrigger.md)
   The type of membership event for the highlight.
 
 

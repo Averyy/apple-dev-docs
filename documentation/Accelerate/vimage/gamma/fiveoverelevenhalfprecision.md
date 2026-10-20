@@ -1,7 +1,8 @@
 # vImage.Gamma.fiveOverElevenHalfPrecision
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Half-precision calculation using a gamma value of `5/11` or `1/2.2`.
 
@@ -11,7 +12,7 @@ Half-precision calculation using a gamma value of `5/11` or `1/2.2`.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,23 +23,24 @@ case fiveOverElevenHalfPrecision
 
 ## See Also
 
-- [vImage.Gamma.bt709ForwardHalfPrecision](vimage/gamma/bt709forwardhalfprecision.md)
+### Constant Gamma
+- [vImage.Gamma.bt709ForwardHalfPrecision](./bt709forwardhalfprecision.md)
   ITU-R BT.709 standard.
-- [vImage.Gamma.bt709ReverseHalfPrecision](vimage/gamma/bt709reversehalfprecision.md)
+- [vImage.Gamma.bt709ReverseHalfPrecision](./bt709reversehalfprecision.md)
   ITU-R BT.709 standard reverse.
-- [vImage.Gamma.elevenOverFiveHalfPrecision](vimage/gamma/elevenoverfivehalfprecision.md)
+- [vImage.Gamma.elevenOverFiveHalfPrecision](./elevenoverfivehalfprecision.md)
   Half-precision calculation using a gamma value of `11/5` or `2.2`.
-- [vImage.Gamma.elevenOverNineHalfPrecision](vimage/gamma/elevenoverninehalfprecision.md)
+- [vImage.Gamma.elevenOverNineHalfPrecision](./elevenoverninehalfprecision.md)
   Half-precision calculation using a gamma value of `11/9` or `(11/5)/(9/5)`.
-- [vImage.Gamma.fiveOverNineHalfPrecision](vimage/gamma/fiveoverninehalfprecision.md)
+- [vImage.Gamma.fiveOverNineHalfPrecision](./fiveoverninehalfprecision.md)
   Half-precision calculation using a gamma value of `5/9` or `1/1.8`.
-- [vImage.Gamma.nineOverElevenHalfPrecision](vimage/gamma/nineoverelevenhalfprecision.md)
+- [vImage.Gamma.nineOverElevenHalfPrecision](./nineoverelevenhalfprecision.md)
   Half-precision calculation using a gamma value of `9/11` or `(9/5)/(11/5)`.
-- [vImage.Gamma.nineOverFiveHalfPrecision](vimage/gamma/nineoverfivehalfprecision.md)
+- [vImage.Gamma.nineOverFiveHalfPrecision](./nineoverfivehalfprecision.md)
   Half-precision calculation using a gamma value of `9/5` or `1.8`.
-- [vImage.Gamma.sRGBForwardHalfPrecision](vimage/gamma/srgbforwardhalfprecision.md)
+- [vImage.Gamma.sRGBForwardHalfPrecision](./srgbforwardhalfprecision.md)
   Half-precision calculation using the sRGB standard gamma value of `2.2`.
-- [vImage.Gamma.sRGBReverseHalfPrecision](vimage/gamma/srgbreversehalfprecision.md)
+- [vImage.Gamma.sRGBReverseHalfPrecision](./srgbreversehalfprecision.md)
   Half-precision calculation using the sRGB standard gamma value of `1/2.2`.
 
 

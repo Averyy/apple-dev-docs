@@ -1,7 +1,8 @@
 # HMCharacteristicValueSwingMode.disabled
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The fan remains in a fixed position.
 
@@ -19,9 +20,14 @@ The fan remains in a fixed position.
 case disabled
 ```
 
+```c
+HMCharacteristicValueSwingModeDisabled
+```
+
 ## See Also
 
-- [HMCharacteristicValueSwingMode.enabled](hmcharacteristicvalueswingmode/enabled.md)
+### Movement Mode
+- [HMCharacteristicValueSwingMode.enabled](./enabled.md)
   The fan swings back and forth.
 
 

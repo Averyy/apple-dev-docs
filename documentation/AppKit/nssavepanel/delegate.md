@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom object you use to manage interactions with an open or save panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A custom object you use to manage interactions with an open or save panel.
 weak var delegate: (any NSOpenSavePanelDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSOpenSavePanelDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSOpenSavePanelDelegate](nsopensavepaneldelegate.md)
+### Responding to User Interactions
+- [protocol NSOpenSavePanelDelegate](../nsopensavepaneldelegate.md)
   A set of methods for managing interactions with an open or save panel.
 
 

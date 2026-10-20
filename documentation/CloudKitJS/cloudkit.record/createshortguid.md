@@ -1,7 +1,8 @@
 # createShortGUID
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether to create a short GUID.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether to create a short GUID.
 
 ## Declaration
 
-```swift
+```
 attribute Boolean createShortGUID;
 ```
 

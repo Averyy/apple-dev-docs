@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance by decoding from the given decoder.
 
@@ -11,7 +12,7 @@ Creates a new instance by decoding from the given decoder.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new identity affine transform.
 

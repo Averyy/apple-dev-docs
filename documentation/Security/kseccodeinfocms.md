@@ -1,7 +1,8 @@
 # kSecCodeInfoCMS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the CMS cryptographic object that secures the code signature.
 
@@ -15,11 +16,15 @@ A key whose value is the CMS cryptographic object that secures the code signatur
 let kSecCodeInfoCMS: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoCMS;
+```
+
 #### Discussion
 
-The value is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object. Empty for ad-hoc signed code.
+The value is a [`CFData`](../CoreFoundation/cfdata.md) object. Empty for ad-hoc signed code.
 
-Specify the [`kSecCSSigningInformation`](kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) function to get this information.
+Specify the [`kSecCSSigningInformation`](./kseccssigninginformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to get this information.
 
 
 ---

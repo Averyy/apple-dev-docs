@@ -1,25 +1,26 @@
 # Create
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Creates a new dispatch queue object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(const IODispatchQueueName name, uint64_t options, uint64_t priority, IODispatchQueue **queue);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](error-codes.md).
+[`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../error-codes.md).
 
 #### Discussion
 
@@ -34,9 +35,10 @@ Creates a new dispatch queue object. All queues are currently serial, executing 
 
 ## See Also
 
-- [init](iodispatchqueue/init.md)
+### Creating a Dispatch Queue
+- [init](./init.md)
   Initializes the dispatch queue object.
-- [free](iodispatchqueue/free.md)
+- [free](./free.md)
   Performs any final cleanup for the dispatch queue object.
 
 

@@ -1,14 +1,15 @@
 # timingApple12x
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 timingApple12x = timingApple_560x384_60hz
 ```
 

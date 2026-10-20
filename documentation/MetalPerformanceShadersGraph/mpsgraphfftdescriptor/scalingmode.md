@@ -1,7 +1,8 @@
 # scalingMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling mode of the fast fourier transform (FFT) operation.
 
@@ -17,6 +18,10 @@ The scaling mode of the fast fourier transform (FFT) operation.
 
 ```swift
 var scalingMode: MPSGraphFFTScalingMode { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphFFTScalingMode scalingMode;
 ```
 
 #### Discussion

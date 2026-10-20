@@ -1,17 +1,22 @@
 # NSRulerMarker
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A symbol on a ruler view, indicating a location for the graphics element it represents in the client of the ruler view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class NSRulerMarker
+```
+
+```objc
+@interface NSRulerMarker : NSObject
 ```
 
 #### Overview
@@ -21,58 +26,59 @@ An example of a marker is the representation of a margin or tab setting, or the 
 ## Topics
 
 ### Creating instances
-- [init(rulerView: NSRulerView, markerLocation: CGFloat, image: NSImage, imageOrigin: NSPoint)](nsrulermarker/init(rulerview:markerlocation:image:imageorigin:).md)
+- [init(rulerView: NSRulerView, markerLocation: CGFloat, image: NSImage, imageOrigin: NSPoint)](./nsrulermarker/init%28rulerview,markerlocation,image,imageorigin%29.md)
   Initializes a newly allocated ruler marker, associating it with (but not adding it to) a specified ruler view and assigning the attributes provided.
 ### Getting the ruler view
-- [var ruler: NSRulerView?](nsrulermarker/ruler.md)
+- [var ruler: NSRulerView?](./nsrulermarker/ruler.md)
   The receiver’s ruler view.
 ### Setting the image
-- [var image: NSImage](nsrulermarker/image.md)
+- [var image: NSImage](./nsrulermarker/image.md)
   The receiver’s image.
-- [var imageOrigin: NSPoint](nsrulermarker/imageorigin.md)
+- [var imageOrigin: NSPoint](./nsrulermarker/imageorigin.md)
   The point in the receiver’s image that is positioned at the receiver’s location on the ruler view.
-- [var imageRectInRuler: NSRect](nsrulermarker/imagerectinruler.md)
+- [var imageRectInRuler: NSRect](./nsrulermarker/imagerectinruler.md)
   The rectangle occupied by the receiver’s image.
-- [var thicknessRequiredInRuler: CGFloat](nsrulermarker/thicknessrequiredinruler.md)
+- [var thicknessRequiredInRuler: CGFloat](./nsrulermarker/thicknessrequiredinruler.md)
   The amount of the receiver’s image that’s displayed above or to the left of the ruler view’s baseline.
 ### Setting movability
-- [var isMovable: Bool](nsrulermarker/ismovable.md)
+- [var isMovable: Bool](./nsrulermarker/ismovable.md)
   A Boolean that indicates whether the user can move the receiver in its ruler view.
-- [var isRemovable: Bool](nsrulermarker/isremovable.md)
+- [var isRemovable: Bool](./nsrulermarker/isremovable.md)
   A Boolean that indicates whether the user can remove the receiver from its ruler view.
 ### Setting the location
-- [var markerLocation: CGFloat](nsrulermarker/markerlocation.md)
+- [var markerLocation: CGFloat](./nsrulermarker/markerlocation.md)
   The location of the receiver in the coordinate system of the ruler view’s client view.
 ### Setting the represented object
-- [var representedObject: (any NSCopying)?](nsrulermarker/representedobject.md)
+- [var representedObject: (any NSCopying)?](./nsrulermarker/representedobject.md)
   The object the receiver represents.
 ### Drawing and event handling
-- [func draw(NSRect)](nsrulermarker/draw(_:).md)
+- [func draw(NSRect)](./nsrulermarker/draw%28_%29.md)
   Draws the receiver’s image that appears in the supplied rectangle.
-- [var isDragging: Bool](nsrulermarker/isdragging.md)
+- [var isDragging: Bool](./nsrulermarker/isdragging.md)
   A Boolean that indicates whether the receiver is being dragged.
-- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](nsrulermarker/trackmouse(with:adding:).md)
+- [func trackMouse(with: NSEvent, adding: Bool) -> Bool](./nsrulermarker/trackmouse%28with,adding%29.md)
   Handles user manipulation of the receiver in its ruler view.
 ### Initializers
-- [init(coder: NSCoder)](nsrulermarker/init(coder:).md)
+- [init(coder: NSCoder)](./nsrulermarker/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSRulerView](nsrulerview.md)
+### Rulers
+- [class NSRulerView](./nsrulerview.md)
   A ruler and the markers above or to the side of a scroll view’s document view.
 
 

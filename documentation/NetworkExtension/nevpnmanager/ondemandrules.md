@@ -1,7 +1,8 @@
 # onDemandRules
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered list of Connect On Demand rules.
 
@@ -19,21 +20,26 @@ An ordered list of Connect On Demand rules.
 var onDemandRules: [NEOnDemandRule]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
+```
+
 #### Discussion
 
-The VPN configuration can optionally be configured to connect automatically based on a variety of criteria specified in [`NEOnDemandRule`](neondemandrule.md) objects. The [`onDemandRules`](nevpnmanager/ondemandrules.md) property contains the current set of Connect On Demand rules for the VPN configuration. Each rule is evaluated in order, and the first rule that matches all criteria on the current network is applied.
+The VPN configuration can optionally be configured to connect automatically based on a variety of criteria specified in [`NEOnDemandRule`](../neondemandrule.md) objects. The [`onDemandRules`](./ondemandrules.md) property contains the current set of Connect On Demand rules for the VPN configuration. Each rule is evaluated in order, and the first rule that matches all criteria on the current network is applied.
 
 ## See Also
 
-- [var isEnabled: Bool](nevpnmanager/isenabled.md)
+### Accessing VPN configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the VPN configuration.
-- [var protocolConfiguration: NEVPNProtocol?](nevpnmanager/protocolconfiguration.md)
-  An [`NEVPNProtocol`](nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
-- [var `protocol`: NEVPNProtocol?](nevpnmanager/protocol.md)
+- [var protocolConfiguration: NEVPNProtocol?](./protocolconfiguration.md)
+  An [`NEVPNProtocol`](../nevpnprotocol.md) object containing the configuration settings of the VPN tunneling protocol.
+- [var `protocol`: NEVPNProtocol?](./protocol.md)
   An `NEVPNProtocol` object containing the configuration settings of the VPN tunneling protocol.
-- [var localizedDescription: String?](nevpnmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string containing the display name of the VPN configuration.
-- [var isOnDemandEnabled: Bool](nevpnmanager/isondemandenabled.md)
+- [var isOnDemandEnabled: Bool](./isondemandenabled.md)
   A Boolean used to toggle the Connect On Demand capability.
 
 

@@ -1,7 +1,8 @@
 # isFileURL
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that determines whether the receiver is a file URL.
 
@@ -20,17 +21,22 @@ A boolean value that determines whether the receiver is a file URL.
 var isFileURL: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isFileURL) BOOL fileURL;
+```
+
 #### Discussion
 
-The property’s value is  [`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses the file scheme, [`false`](https://developer.apple.com/documentation/swift/false) otherwise. Both file path and file reference URLs are considered to be file URLs.
+The property’s value is  [`true`](../../Swift/true.md) if the receiver uses the file scheme, [`false`](../../Swift/false.md) otherwise. Both file path and file reference URLs are considered to be file URLs.
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), then the receiver’s [`path`](nsurl/path.md) property contains a suitable value for input into [`FileManager`](filemanager.md) or `NSPathUtilities`.
+If this property’s value is [`true`](../../Swift/true.md), then the receiver’s [`path`](./path.md) property contains a suitable value for input into [`FileManager`](../filemanager.md) or `NSPathUtilities`.
 
 ## See Also
 
-- [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](nsurl/checkresourceisreachableandreturnerror(_:).md)
+### Querying an NSURL
+- [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](./checkresourceisreachableandreturnerror%28_%29.md)
   Returns whether the resource pointed to by a file URL can be reached.
-- [func isFileReferenceURL() -> Bool](nsurl/isfilereferenceurl.md)
+- [func isFileReferenceURL() -> Bool](./isfilereferenceurl%28%29.md)
   Returns whether the URL is a file reference URL.
 
 

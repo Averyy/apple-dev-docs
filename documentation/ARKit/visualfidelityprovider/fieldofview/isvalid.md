@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validates whether this field of view specification is valid.
 

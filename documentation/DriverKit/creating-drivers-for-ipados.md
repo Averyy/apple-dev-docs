@@ -1,6 +1,7 @@
 # Creating drivers for iPadOS
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: Article
 
 Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
@@ -8,27 +9,27 @@ Bring your drivers to iPadOS by using the platform’s DriverKit support.
 
 In iPadOS 16 and later, you can develop drivers that run on macOS and iPadOS using DriverKit. The DriverKit frameworks provide a safe and secure approach to creating drivers for external USB and Thunderbolt devices that people can connect to their iPad.
 
-iPadOS 16 supports the core [`DriverKit`](DriverKit.md) framework, as well as the following:
+iPadOS 16 supports the core [DriverKit](./DriverKit.md) framework, as well as the following:
 
-- [`USBDriverKit`](https://developer.apple.com/documentation/usbdriverkit)
-- [`PCIDriverKit`](https://developer.apple.com/documentation/pcidriverkit)
-- [`AudioDriverKit`](https://developer.apple.com/documentation/audiodriverkit)
+- [USBDriverKit](../USBDriverKit/USBDriverKit.md)
+- [PCIDriverKit](../PCIDriverKit/PCIDriverKit.md)
+- [AudioDriverKit](../AudioDriverKit/AudioDriverKit.md)
 
 > **Note**:  DriverKit on iPadOS requires an iPad with an M-series chip.
 
-##### Add a Driverkit Target to Your Xcode Project
+##### Add a DriverKit target to your Xcode project
 
 If you’re creating a new app in Xcode, use the Multiplatform App template when you create your project in Xcode. The app you create is what people use to install and update your driver on their macOS and iPadOS devices. To add a driver to your project, add a new target to your project by choosing DriverKit from the tab bar, and select the Driver target.
 
-![The template selection dialog for a new target in Xcode. The tab bar shows DriverKit selected, and the selected template is the Driver target template.](/images/com.apple.driverkit/media-4037570@2x.png)
+![The template selection dialog for a new target in Xcode. The tab bar shows DriverKit selected, and the selected template is the Driver target template.](https://developer.apple.com/tutorials/images/com.apple.driverkit/media-4037570@2x.png)
 
 If you already have a DriverKit project for macOS, you can support iPadOS by editing your project settings. Select the project from the Navigator, select the app target, and choose General from the tab bar. In the Supported Destinations section, use the Add (+) button to add a new iPad destination.
 
-![The Supported Destinations section of an app target’s General tab. The list shows two destinations: iPad (whose associated SDK is iOS) and Mac (whose associated SDK is macOS).](/images/com.apple.driverkit/media-4034747@2x.png)
+![The Supported Destinations section of an app target’s General tab. The list shows two destinations: iPad (whose associated SDK is iOS) and Mac (whose associated SDK is macOS).](https://developer.apple.com/tutorials/images/com.apple.driverkit/media-4034747@2x.png)
 
-##### Install a Driver
+##### Install a driver
 
-On macOS, your host app uses the [`System Extensions`](https://developer.apple.com/documentation/systemextensions) framework to install a driver onto the host system. On iPadOS, this framework is absent, so this step is unneccessary. If you’re writing a driver to run on both platforms, conditionalize your app code so you only call [`System Extensions`](https://developer.apple.com/documentation/systemextensions) on macOS.
+On macOS, your host app uses the [System Extensions](../SystemExtensions/SystemExtensions.md) framework to install a driver onto the host system. On iPadOS, this framework is absent, so this step is unneccessary. If you’re writing a driver to run on both platforms, conditionalize your app code so you only call [System Extensions](../SystemExtensions/SystemExtensions.md) on macOS.
 
 ```swift
 #if os(macOS)
@@ -45,18 +46,19 @@ On iPadOS, there are two locations in the Settings app for managing drivers:
 
 After receiving permission, the driver runs on-demand. For example, a driver for an audio interface only runs when someone connects that hardware to their device.
 
-##### Allow User Clients to Attach to Your Driver
+##### Allow user clients to attach to your driver
 
-Some apps need to communicate with a running driver. The sample code project, [`Communicating between a DriverKit extension and a client app`](communicating-between-a-driverkit-extension-and-a-client-app.md), provides an example of how to do this.
+Some apps need to communicate with a running driver. The sample code project, [Communicating between a DriverKit extension and a client app](./communicating-between-a-driverkit-extension-and-a-client-app.md), provides an example of how to do this.
 
 To allow user clients to connect to your driver, you need specific entitlements, based on the nature of your driver.
 
-- On macOS, use the [`com.apple.developer.driverkit.userclient-access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.userclient-access) entitlement. Provide an array of allowed bundle identifiers as the value of this entitlement. Only apps with these bundle identifiers can connect to the driver at runtime.
-- On iPadOS, use the [`Communicates with Drivers`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.communicates-with-drivers) entitlement. This entitlement takes a Boolean value; set it to `YES` to allow your user client to connect to drivers.
-- If your iPadOS driver works with many apps, use the [`DriverKit Allow Third Party User Clients`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.driverkit.allow-third-party-userclients) entitlement. Set the Boolean value of this entitlement to `YES` to allow any app to connect to your driver.
+- On macOS, use the [`com.apple.developer.driverkit.userclient-access`](../BundleResources/entitlements/com.apple.developer.driverkit.userclient-access.md) entitlement. Provide an array of allowed bundle identifiers as the value of this entitlement. Only apps with these bundle identifiers can connect to the driver at runtime.
+- On iPadOS, use the [`Communicates with Drivers`](../BundleResources/entitlements/com.apple.developer.driverkit.communicates-with-drivers.md) entitlement. This entitlement takes a Boolean value; set it to `YES` to allow your user client to connect to drivers.
+- If your iPadOS driver works with many apps, use the [`DriverKit Allow Third Party User Clients`](../BundleResources/entitlements/com.apple.developer.driverkit.allow-third-party-userclients.md) entitlement. Set the Boolean value of this entitlement to `YES` to allow any app to connect to your driver.
 
 ## See Also
 
+### Essentials
 - [Implementing drivers, system extensions, and kexts](../kernel/implementing_drivers_system_extensions_and_kexts.md)
   Create drivers and system extensions to communicate with hardware and provide low-level services, and only use kernel extensions for a few tasks. 
 

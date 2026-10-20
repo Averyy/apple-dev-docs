@@ -1,7 +1,8 @@
 # kVTProfileLevel_HEVC_Main_AutoLevel
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 let kVTProfileLevel_HEVC_Main_AutoLevel: CFString
 ```
 
+```c
+extern CFStringRef const kVTProfileLevel_HEVC_Main_AutoLevel;
+```
+
 ## See Also
 
-- [let kVTProfileLevel_HEVC_Main10_AutoLevel: CFString](kvtprofilelevel_hevc_main10_autolevel.md)
-- [let kVTProfileLevel_HEVC_Main42210_AutoLevel: CFString](kvtprofilelevel_hevc_main42210_autolevel.md)
-- [let kVTProfileLevel_HEVC_Monochrome10_AutoLevel: CFString](kvtprofilelevel_hevc_monochrome10_autolevel.md)
-- [let kVTProfileLevel_HEVC_Monochrome_AutoLevel: CFString](kvtprofilelevel_hevc_monochrome_autolevel.md)
+### HEVC
+- [let kVTProfileLevel_HEVC_Main10_AutoLevel: CFString](./kvtprofilelevel_hevc_main10_autolevel.md)
+- [let kVTProfileLevel_HEVC_Main42210_AutoLevel: CFString](./kvtprofilelevel_hevc_main42210_autolevel.md)
+- [let kVTProfileLevel_HEVC_Monochrome10_AutoLevel: CFString](./kvtprofilelevel_hevc_monochrome10_autolevel.md)
+- [let kVTProfileLevel_HEVC_Monochrome_AutoLevel: CFString](./kvtprofilelevel_hevc_monochrome_autolevel.md)
 
 
 ---

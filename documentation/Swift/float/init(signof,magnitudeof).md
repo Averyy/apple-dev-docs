@@ -1,7 +1,8 @@
 # init(signOf:magnitudeOf:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new floating-point value using the sign of one value and the magnitude of another.
 
@@ -36,22 +37,23 @@ This initializer implements the IEEE 754 `copysign` operation.
 
 ## See Also
 
-- [init<Source>(Source)](float/init(_:)-1488f.md)
+### Converting Floating-Point Values
+- [init<Source>(Source)](./init%28_%29-1488f.md)
   Creates a new instance from the given value, rounded to the closest possible representation.
-- [init<Source>(Source)](float/init(_:)-1oh9p.md)
+- [init<Source>(Source)](./init%28_%29-1oh9p.md)
   Creates a new value, rounded to the closest possible representation.
-- [init(Double)](float/init(_:)-1kp2p.md)
+- [init(Double)](./init%28_%29-1kp2p.md)
   Creates a new instance that approximates the given value.
-- [init(Float)](float/init(_:)-975tv.md)
+- [init(Float)](./init%28_%29-975tv.md)
   Creates a new instance initialized to the given value.
-- [init(Float80)](float/init(_:)-11orc.md)
+- [init(Float80)](./init%28_%29-11orc.md)
   Creates a new instance that approximates the given value.
-- [init(CGFloat)](float/init(_:)-5soww.md)
-- [init(Float16)](float/init(_:)-ussz.md)
+- [init(CGFloat)](./init%28_%29-5soww.md)
+- [init(Float16)](./init%28_%29-ussz.md)
   Creates a new instance that approximates the given value.
-- [init(sign: FloatingPointSign, exponent: Int, significand: Float)](float/init(sign:exponent:significand:).md)
+- [init(sign: FloatingPointSign, exponent: Int, significand: Float)](./init%28sign,exponent,significand%29.md)
   Creates a new value from the given sign, exponent, and significand.
-- [init(truncating: NSNumber)](float/init(truncating:).md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

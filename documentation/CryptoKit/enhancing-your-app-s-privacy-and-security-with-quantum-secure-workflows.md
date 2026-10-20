@@ -1,6 +1,8 @@
 # Enhancing your app’s privacy and security with quantum-secure workflows
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: Sample Code  
+**Download**: [EnhancingYourAppsPrivacyAndSecurityWithQuantumSecureWorkflows.zip](https://docs-assets.developer.apple.com/published/88fe47e5a225/EnhancingYourAppsPrivacyAndSecurityWithQuantumSecureWorkflows.zip)
 
 Use quantum-secure cryptography to protect your app from quantum attacks.
 
@@ -17,15 +19,15 @@ Quantum attacks represent a threat to the security of widely-deployed cryptograp
 
 Even if an attacker doesn’t currently have access to a quantum computer, they can store any ciphertext they gain access to, and attack the encryption with a quantum computer later to recover the cleartext. You can help protect your data against these attacks by adopting quantum-secure cryptographic mechanisms and algorithms in your app now.
 
-Instead of switching to a cryptographic mechanism that only uses a quantum-secure algorithm, you can use a *hybrid* mechanism, which combines the strengths of both a classical and a quantum-secure algorithm. A hybrid scheme remains secure if an attacker breaks either one of the algorithms the scheme uses. For more information, see [`Get ahead with quantum-secure cryptography`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/314).
+Instead of switching to a cryptographic mechanism that only uses a quantum-secure algorithm, you can use a *hybrid* mechanism, which combines the strengths of both a classical and a quantum-secure algorithm. A hybrid scheme remains secure if an attacker breaks either one of the algorithms the scheme uses. For more information, see [Get ahead with quantum-secure cryptography](https://developer.apple.com/videos/play/wwdc2025/314).
 
-This sample uses round-trip processes — encrypting then decrypting data, or generating a signature then verifying it — to demonstrate how to adopt quantum-secure cryptographic algorithms using [`Apple CryptoKit`](CryptoKit.md). In your app, implement the two stages separately; for example, one person might encrypt a message and send it to another person who decrypts it. The sample demonstrates how to use quantum-secure hybrid public-key encryption (HPKE) to securely share a secret between two people.
+This sample uses round-trip processes — encrypting then decrypting data, or generating a signature then verifying it — to demonstrate how to adopt quantum-secure cryptographic algorithms using [Apple CryptoKit](./CryptoKit.md). In your app, implement the two stages separately; for example, one person might encrypt a message and send it to another person who decrypts it. The sample demonstrates how to use quantum-secure hybrid public-key encryption (HPKE) to securely share a secret between two people.
 
-#### Exchange Cryptographic Keys
+#### Exchange cryptographic keys
 
 The function `KeyTest/check(_:ciphersuite:)` in the file `KeyTest+PQHPKE.swift` performs a full round-trip using HPKE, encrypting a cleartext message using the encapsulated key and verifying that the recipient recovers the same cleartext when they use the encapsulated key to decrypt the ciphertext they receive. It does this by following these steps:
 
-1. It creates an [`HPKE.Sender`](hpke/sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
+1. It creates an [`HPKE.Sender`](./hpke/sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
 
 ```swift
 let info = "INFO"
@@ -38,7 +40,7 @@ var sender = try HPKE.Sender(recipientKey: key.publicKey, ciphersuite: ciphersui
 let encapsulation = sender.encapsulatedKey
 ```
 
-1. It creates an [`HPKE.Recipient`](hpke/recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
+1. It creates an [`HPKE.Recipient`](./hpke/recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
 
 ```swift
 var recipient = try HPKE.Recipient(privateKey: key, ciphersuite: ciphersuite, info: Data(info.utf8), encapsulatedKey: encapsulation)
@@ -58,7 +60,7 @@ let ciphertext = try sender.seal(Data(message.utf8), authenticating: Data(authen
 let decryption = try recipient.open(ciphertext, authenticating: Data(authenticatedMetadata.utf8))
 ```
 
-The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure [`XWingMLKEM768X25519_SHA256_AES_GCM_256`](hpke/ciphersuite/xwingmlkem768x25519_sha256_aes_gcm_256.md) ciphersuite:
+The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure [`XWingMLKEM768X25519_SHA256_AES_GCM_256`](./hpke/ciphersuite/xwingmlkem768x25519_sha256_aes_gcm_256.md) ciphersuite:
 
 ```swift
 internal func testPQHPKE(type: PQHPKEType) throws -> (TestStatus, String) {
@@ -69,7 +71,7 @@ internal func testPQHPKE(type: PQHPKEType) throws -> (TestStatus, String) {
 }
 ```
 
-#### Encapsulate Cryptographic Keys
+#### Encapsulate cryptographic keys
 
 The function `KeyTest/check(_:)` in the file `KeyTest+MLKEM.swift` generates, encapsulates, and decapsulates a shared secret using the quantum-secure Module-Lattice Key Encapsulation Mechanism (ML-KEM). It first generates and encapsulates the shared secret using the public key:
 
@@ -77,7 +79,7 @@ The function `KeyTest/check(_:)` in the file `KeyTest+MLKEM.swift` generates, en
 let encapsulation = try key.publicKey.encapsulate()
 ```
 
-The result of this operation is a [`KEM.EncapsulationResult`](kem/encapsulationresult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md) method to recover the shared secret:
+The result of this operation is a [`KEM.EncapsulationResult`](./kem/encapsulationresult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](./kemprivatekey/decapsulate%28_%29.md) method to recover the shared secret:
 
 ```swift
 let sharedSecret = try key.decapsulate(encapsulation.encapsulated)
@@ -96,7 +98,7 @@ internal func testMLKEM(type: MLKEMType, useSecureEnclave: Bool) throws -> (Test
 }
 ```
 
-#### Encapsulate Cryptographic Keys with One Time Use Private Keys
+#### Encapsulate cryptographic keys with one-time-use private keys
 
 When you use each ML-KEM private key only once — such as in ephemeral key exchange for messaging or transport protocols — use `OneTimePrivateKey` instead of a standard `PrivateKey`. One-time-use private keys are faster because they skip the extra hardening that long-lived keys require.
 
@@ -126,9 +128,9 @@ One-time-use private keys are only suitable for ephemeral use because you can’
 
 > **Note**: The Secure Enclave doesn’t support `OneTimePrivateKey`. Use `SecureEnclave.MLKEM768.PrivateKey` when you need long-term hardware-backed storage.
 
-#### Create Digital Signatures
+#### Create digital signatures
 
-The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](mldsa65.md) and [`MLDSA87`](mldsa87.md) types. Each function accepts a private key, which it uses to sign a test message:
+The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](./mldsa65.md) and [`MLDSA87`](./mldsa87.md) types. Each function accepts a private key, which it uses to sign a test message:
 
 ```swift
 let message = "TEST MESSAGE"
@@ -156,7 +158,7 @@ internal func testMLDSA(type: MLDSAType) throws -> (TestStatus, String) {
 }
 ```
 
-#### Create Hybrid Signatures
+#### Create hybrid signatures
 
 The two `check(_:_:)` functions in the file `KeyTest+HybridSig.swift` generate and validate hybrid digital signatures that use both the quantum-secure ML-DSA, and classic elliptic curve (EC) methods. Each function accepts both an ML-DSA and EC private key, uses both keys to sign a test message, and then concatenates the two signatures:
 
@@ -196,17 +198,18 @@ internal func testHybridSig(type: HybridSigType) throws -> (TestStatus, String) 
 }
 ```
 
-#### Store Cryptographic Keys in the Keychain or in the Secure Enclave
+#### Store cryptographic keys in the keychain or in the Secure Enclave
 
-These workflows store the CryptoKit keys in the keychain by converting between strongly typed cryptographic keys and native Keychain types. Where applicable, they also show how to protect keys with the Secure Enclave. For more information, see [`Storing CryptoKit Keys in the Keychain`](storing-cryptokit-keys-in-the-keychain.md).
+These workflows store the CryptoKit keys in the keychain by converting between strongly typed cryptographic keys and native Keychain types. Where applicable, they also show how to protect keys with the Secure Enclave. For more information, see [Storing CryptoKit Keys in the Keychain](./storing-cryptokit-keys-in-the-keychain.md).
 
 ## See Also
 
-- [Complying with Encryption Export Regulations](../security/complying-with-encryption-export-regulations.md)
+### Essentials
+- [Complying with Encryption Export Regulations](../Security/complying-with-encryption-export-regulations.md)
   Declare the use of encryption in your app to streamline the app submission process.
-- [Performing Common Cryptographic Operations](performing-common-cryptographic-operations.md)
+- [Performing Common Cryptographic Operations](./performing-common-cryptographic-operations.md)
   Use CryptoKit to carry out operations like hashing, key generation, and encryption.
-- [Storing CryptoKit Keys in the Keychain](storing-cryptokit-keys-in-the-keychain.md)
+- [Storing CryptoKit Keys in the Keychain](./storing-cryptokit-keys-in-the-keychain.md)
   Convert between strongly typed cryptographic keys and native keychain types.
 
 

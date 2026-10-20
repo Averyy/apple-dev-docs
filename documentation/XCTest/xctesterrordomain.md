@@ -1,7 +1,8 @@
 # XCTestErrorDomain
 
 **Framework**: XCTest  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain for errors that can occur while the test is waiting to fulfill expectations.
 
@@ -11,25 +12,30 @@ The error domain for errors that can occur while the test is waiting to fulfill 
 let XCTestErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const XCTestErrorDomain;
+```
+
 ## See Also
 
-- [func fulfillment(of: [XCTestExpectation], timeout: TimeInterval, enforceOrder: Bool) async](xctestcase/fulfillment(of:timeout:enforceorder:).md)
+### Waiting for Expectations
+- [func fulfillment(of: [XCTestExpectation], timeout: TimeInterval, enforceOrder: Bool) async](./xctestcase/fulfillment%28of,timeout,enforceorder%29.md)
   Waits on a group of expectations for up to the specified timeout, optionally enforcing their order of fulfillment.
-- [func wait(for: [XCTestExpectation])](xctestcase/wait(for:).md)
+- [func wait(for: [XCTestExpectation])](./xctestcase/wait%28for%29.md)
   Waits on a group of expectations.
-- [func wait(for: [XCTestExpectation], enforceOrder: Bool)](xctestcase/wait(for:enforceorder:).md)
+- [func wait(for: [XCTestExpectation], enforceOrder: Bool)](./xctestcase/wait%28for,enforceorder%29.md)
   Waits on a group of expectations optionally enforcing their order of fulfillment.
-- [func wait(for: [XCTestExpectation], timeout: TimeInterval)](xctestcase/wait(for:timeout:).md)
+- [func wait(for: [XCTestExpectation], timeout: TimeInterval)](./xctestcase/wait%28for,timeout%29.md)
   Waits for the test to fulfill a set of expectations within a specified time.
-- [func wait(for: [XCTestExpectation], timeout: TimeInterval, enforceOrder: Bool)](xctestcase/wait(for:timeout:enforceorder:).md)
+- [func wait(for: [XCTestExpectation], timeout: TimeInterval, enforceOrder: Bool)](./xctestcase/wait%28for,timeout,enforceorder%29.md)
   Waits for the test to satisfy an array of expectations and specifies whether they must occur in the array’s order.
-- [func waitForExpectations(timeout: TimeInterval, handler: (((any Error)?) -> Void)?)](xctestcase/waitforexpectations(timeout:handler:).md)
+- [func waitForExpectations(timeout: TimeInterval, handler: (((any Error)?) -> Void)?)](./xctestcase/waitforexpectations%28timeout,handler%29.md)
   Waits until the test fulfills all expectations or until it times out.
-- [typealias XCWaitCompletionHandler](xcwaitcompletionhandler.md)
+- [typealias XCWaitCompletionHandler](./xcwaitcompletionhandler.md)
   A block the test runner calls when the test fulfills a waiter’s expectations, or when it times out.
-- [struct XCTestError](xctesterror.md)
+- [struct XCTestError](./xctesterror.md)
   A type of error that can occur while the test waits to fulfill expectations.
-- [XCTestError.Code](xctesterror/code.md)
+- [XCTestError.Code](./xctesterror/code.md)
   Error codes for errors that can occur while the test is waiting to fulfill expectations.
 
 

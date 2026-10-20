@@ -1,7 +1,8 @@
 # Tips.InvalidationReason.actionPerformed
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user performed the action that the tip describes.
 

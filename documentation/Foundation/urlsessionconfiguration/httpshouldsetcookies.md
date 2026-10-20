@@ -1,7 +1,8 @@
 # httpShouldSetCookies
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether requests should contain cookies from the cookie store.
 
@@ -20,21 +21,26 @@ A Boolean value that determines whether requests should contain cookies from the
 var httpShouldSetCookies: Bool { get set }
 ```
 
+```objc
+@property BOOL HTTPShouldSetCookies;
+```
+
 #### Discussion
 
 This property controls whether tasks within sessions based on this configuration should automatically provide cookies from the shared cookie store when making requests.
 
-If you want to provide cookies yourself, set this value to [`false`](https://developer.apple.com/documentation/swift/false) and provide a `Cookie` header either through the session’s [`httpAdditionalHeaders`](urlsessionconfiguration/httpadditionalheaders.md) property or on a per-request level using a custom [`NSURLRequest`](nsurlrequest.md) object.
+If you want to provide cookies yourself, set this value to [`false`](../../Swift/false.md) and provide a `Cookie` header either through the session’s [`httpAdditionalHeaders`](./httpadditionalheaders.md) property or on a per-request level using a custom [`NSURLRequest`](../nsurlrequest.md) object.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy](urlsessionconfiguration/httpcookieacceptpolicy.md)
+### Setting cookie policies
+- [var httpCookieAcceptPolicy: HTTPCookie.AcceptPolicy](./httpcookieacceptpolicy.md)
   A policy constant that determines when cookies should be accepted.
-- [var httpCookieStorage: HTTPCookieStorage?](urlsessionconfiguration/httpcookiestorage.md)
+- [var httpCookieStorage: HTTPCookieStorage?](./httpcookiestorage.md)
   The cookie store for storing cookies within this session.
-- [class HTTPCookie](httpcookie.md)
+- [class HTTPCookie](../httpcookie.md)
   A representation of an HTTP cookie.
 
 

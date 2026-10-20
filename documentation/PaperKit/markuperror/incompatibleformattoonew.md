@@ -1,7 +1,8 @@
 # MarkupError.incompatibleFormatTooNew
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data being decoded has a newer format that cannot be decoded.
 
@@ -20,9 +21,10 @@ case incompatibleFormatTooNew
 
 ## See Also
 
-- [MarkupError.incorrectFormat](markuperror/incorrectformat.md)
+### Handling error cases
+- [MarkupError.incorrectFormat](./incorrectformat.md)
   Incorrect format or header.
-- [MarkupError.malformedData](markuperror/malformeddata.md)
+- [MarkupError.malformedData](./malformeddata.md)
   The binary data was malformed in some way.
 
 

@@ -1,7 +1,8 @@
 # HKWorkoutZoneConfiguration.Source.system
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that indicates the system generated the zones automatically.
 
@@ -25,9 +26,10 @@ The system calculates zones based on the person’s health metrics, including ag
 
 ## See Also
 
-- [HKWorkoutZoneConfiguration.Source.user](hkworkoutzoneconfiguration/source-swift.enum/user.md)
+### Identifying the source
+- [HKWorkoutZoneConfiguration.Source.user](./user.md)
   A case that indicates the person configured the zones manually in Health Settings.
-- [HKWorkoutZoneConfiguration.Source.app](hkworkoutzoneconfiguration/source-swift.enum/app.md)
+- [HKWorkoutZoneConfiguration.Source.app](./app.md)
   A case that indicates an app provided the zones for a specific workout.
 
 

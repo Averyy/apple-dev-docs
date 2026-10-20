@@ -1,7 +1,8 @@
 # AlarmPresentation.Countdown
 
 **Framework**: AlarmKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes the content required for the countdown UI.
 
@@ -30,26 +31,27 @@ let paused = AlarmPresentation.Paused(
 ## Topics
 
 ### Creates a pause button
-- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](alarmpresentation/countdown-swift.struct/init(title:pausebutton:).md)
+- [init(title: LocalizedStringResource, pauseButton: AlarmButton?)](./countdown-swift.struct/init%28title,pausebutton%29.md)
   Creates a countdown with an optional pause button.
-- [var pauseButton: AlarmButton?](alarmpresentation/countdown-swift.struct/pausebutton.md)
+- [var pauseButton: AlarmButton?](./countdown-swift.struct/pausebutton.md)
   The pause button for a countdown timer.
-- [var title: LocalizedStringResource](alarmpresentation/countdown-swift.struct/title.md)
+- [var title: LocalizedStringResource](./countdown-swift.struct/title.md)
   The title of the countdown.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AlarmPresentation.Alert](alarmpresentation/alert-swift.struct.md)
+### Describing an alarm state
+- [AlarmPresentation.Alert](./alert-swift.struct.md)
   An object that describes the UI of the alert that appears when an alarm fires.
-- [AlarmPresentation.Paused](alarmpresentation/paused-swift.struct.md)
+- [AlarmPresentation.Paused](./paused-swift.struct.md)
   An object that configures the UI for a paused timer state.
 
 

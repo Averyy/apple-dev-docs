@@ -1,7 +1,8 @@
 # zoneGroup(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a zone group for the specified quantity type.
 
@@ -29,7 +30,8 @@ The zone group for the quantity type, or `nil` if no zone information exists for
 
 ## See Also
 
-- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkoutactivity/zonegroupsbytype.md)
+### Accessing zone data
+- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](./zonegroupsbytype.md)
   A property that contains a dictionary that maps quantity types to their zone groups for this activity.
 
 

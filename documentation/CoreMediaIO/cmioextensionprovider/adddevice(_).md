@@ -1,7 +1,8 @@
 # addDevice(_:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a device to a provider.
 
@@ -15,15 +16,20 @@ Adds a device to a provider.
 func addDevice(_ device: CMIOExtensionDevice) throws
 ```
 
+```objc
+- (BOOL) addDevice:(CMIOExtensionDevice *) device error:(NSError **) outError;
+```
+
 ## Parameters
 
 - `device`: A device to add to a provider.
 
 ## See Also
 
-- [var devices: [CMIOExtensionDevice]](cmioextensionprovider/devices.md)
+### Managing Devices
+- [var devices: [CMIOExtensionDevice]](./devices.md)
   An array of connected devices.
-- [func removeDevice(CMIOExtensionDevice) throws](cmioextensionprovider/removedevice(_:).md)
+- [func removeDevice(CMIOExtensionDevice) throws](./removedevice%28_%29.md)
   Removes a device from a provider.
 
 

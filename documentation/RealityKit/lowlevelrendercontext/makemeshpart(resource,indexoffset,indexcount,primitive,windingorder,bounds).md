@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a mesh part that selects a contiguous range of indices from a mesh resource.
@@ -20,11 +21,11 @@ func makeMeshPart(resource: LowLevelMeshResource, indexOffset: Int, indexCount: 
 
 #### Return Value
 
-A newly created [`LowLevelMeshPart`](lowlevelmeshpart.md).
+A newly created [`LowLevelMeshPart`](../lowlevelmeshpart.md).
 
 #### Discussion
 
-> **Note**: An error if the index range falls outside the resource’s index buffer.
+> **Throws**: An error if the index range falls outside the resource’s index buffer.
 
 ## Parameters
 
@@ -37,13 +38,14 @@ A newly created [`LowLevelMeshPart`](lowlevelmeshpart.md).
 
 ## See Also
 
-- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](lowlevelrendercontext/makemeshresource(descriptor:).md)
+### Creating meshes
+- [func makeMeshResource(descriptor: LowLevelMeshResource.Descriptor) throws -> LowLevelMeshResource](./makemeshresource%28descriptor%29.md)
   Creates a mesh resource from the given descriptor.
-- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](lowlevelrendercontext/makemeshinstance(meshpart:pipeline:geometryarguments:surfacearguments:lightingarguments:transform:sortcategory:).md)
+- [func makeMeshInstance(meshPart: LowLevelMeshPart, pipeline: LowLevelRenderPipelineState, geometryArguments: LowLevelArgumentTable?, surfaceArguments: LowLevelArgumentTable?, lightingArguments: LowLevelArgumentTable?, transform: simd_float4x4, sortCategory: LowLevelMeshInstance.SortCategory) throws -> LowLevelMeshInstance](./makemeshinstance%28meshpart,pipeline,geometryarguments,surfacearguments,lightingarguments,transform,sortcategory%29.md)
   Creates a drawable mesh instance pairing a mesh part with a compiled pipeline state and optional per-draw argument tables.
-- [func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, count: Int) throws -> LowLevelMeshInstanceArray](lowlevelrendercontext/makemeshinstancearray(rendertargets:count:).md)
+- [func makeMeshInstanceArray(renderTargets: LowLevelRenderTarget.DescriptorSet, count: Int) throws -> LowLevelMeshInstanceArray](./makemeshinstancearray%28rendertargets,count%29.md)
   Creates a fixed-capacity ordered collection of mesh instances for the given render targets.
-- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](lowlevelrendercontext/makeinstancetransformresource(instancecapacity:).md)
+- [func makeInstanceTransformResource(instanceCapacity: Int) throws -> LowLevelInstanceTransformResource](./makeinstancetransformresource%28instancecapacity%29.md)
   Creates a transform buffer resource for GPU instancing.
 
 

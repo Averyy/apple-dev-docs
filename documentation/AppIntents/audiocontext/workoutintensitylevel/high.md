@@ -1,7 +1,8 @@
 # high
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A high-intensity workout such as running, HIIT, or cross-training.
 

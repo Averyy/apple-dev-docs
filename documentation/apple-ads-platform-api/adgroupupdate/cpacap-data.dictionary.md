@@ -1,7 +1,8 @@
 # AdGroupUpdate.CpaCap
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The deprecated request payload for updating a cost-per-acquisition goal. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
 
@@ -10,7 +11,7 @@ The deprecated request payload for updating a cost-per-acquisition goal. Use `bi
 
 ## Declaration
 
-```swift
+```
 object AdGroupUpdate.CpaCap
 ```
 
@@ -18,11 +19,11 @@ object AdGroupUpdate.CpaCap
 
 Deprecated. Use `bidStrategy` with `MAX_CONVERSIONS` instead.
 
-See [`CPAGoalUpdate`](cpagoalupdate.md) for the full field reference.
+See [`CPAGoalUpdate`](../cpagoalupdate.md) for the full field reference.
 
 ## Properties
 
-- `value` (Money): The updated target CPA monetary value as a `Money` object. See [`Money`](money.md).
+- `value` (Money): The updated target CPA monetary value as a `Money` object. See [`Money`](../money.md).
 
 
 ---

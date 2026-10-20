@@ -1,7 +1,8 @@
 # HMCharacteristicValueDoorState.open
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The door is fully open.
 
@@ -19,15 +20,20 @@ The door is fully open.
 case open
 ```
 
+```c
+HMCharacteristicValueDoorStateOpen
+```
+
 ## See Also
 
-- [HMCharacteristicValueDoorState.closed](hmcharacteristicvaluedoorstate/closed.md)
+### Door States
+- [HMCharacteristicValueDoorState.closed](./closed.md)
   The door is fully closed.
-- [HMCharacteristicValueDoorState.opening](hmcharacteristicvaluedoorstate/opening.md)
+- [HMCharacteristicValueDoorState.opening](./opening.md)
   The door is actively opening.
-- [HMCharacteristicValueDoorState.closing](hmcharacteristicvaluedoorstate/closing.md)
+- [HMCharacteristicValueDoorState.closing](./closing.md)
   The door is actively closing.
-- [HMCharacteristicValueDoorState.stopped](hmcharacteristicvaluedoorstate/stopped.md)
+- [HMCharacteristicValueDoorState.stopped](./stopped.md)
   The door is not moving, and is neither fully open nor fully closed.
 
 

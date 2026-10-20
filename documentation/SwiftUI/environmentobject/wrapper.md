@@ -1,7 +1,8 @@
 # EnvironmentObject.Wrapper
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper of the underlying environment object that can create bindings to its properties using dynamic member lookup.
 
@@ -24,20 +25,21 @@ A wrapper of the underlying environment object that can create bindings to its p
 ## Topics
 
 ### Getting a binding value
-- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject>](environmentobject/wrapper/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject>](./wrapper/subscript%28dynamicmember%29.md)
   Returns a binding to the resulting value of a given key path.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var wrappedValue: ObjectType](environmentobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType](./wrappedvalue.md)
   The underlying value referenced by the environment object.
-- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](environmentobject/projectedvalue.md)
+- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](./projectedvalue.md)
   A projection of the environment object that creates bindings to its properties using dynamic member lookup.
 
 

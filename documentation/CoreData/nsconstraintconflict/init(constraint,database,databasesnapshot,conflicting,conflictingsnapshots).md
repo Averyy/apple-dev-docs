@@ -1,7 +1,8 @@
 # init(constraint:database:databaseSnapshot:conflicting:conflictingSnapshots:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a constraint conflict.
 
@@ -18,6 +19,10 @@ Initializes a constraint conflict.
 
 ```swift
 init(constraint contraint: [String], database databaseObject: NSManagedObject?, databaseSnapshot: [AnyHashable : Any]?, conflicting conflictingObjects: [NSManagedObject], conflictingSnapshots: [Any])
+```
+
+```objc
+- (instancetype) initWithConstraint:(NSArray<NSString *> *) contraint databaseObject:(NSManagedObject *) databaseObject databaseSnapshot:(NSDictionary *) databaseSnapshot conflictingObjects:(NSArray<NSManagedObject *> *) conflictingObjects conflictingSnapshots:(NSArray *) conflictingSnapshots;
 ```
 
 

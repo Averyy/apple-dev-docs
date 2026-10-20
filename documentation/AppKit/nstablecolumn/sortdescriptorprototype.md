@@ -1,18 +1,23 @@
 # sortDescriptorPrototype
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The table column’s sort descriptor prototype.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @NSCopying
 var sortDescriptorPrototype: NSSortDescriptor? { get set }
+```
+
+```objc
+@property (copy, nullable) NSSortDescriptor * sortDescriptorPrototype;
 ```
 
 #### Discussion

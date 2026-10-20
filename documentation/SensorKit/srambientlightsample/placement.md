@@ -1,7 +1,8 @@
 # placement
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The light’s location relative to the sensor.
 
@@ -16,15 +17,20 @@ The light’s location relative to the sensor.
 var placement: SRAmbientLightSample.SensorPlacement { get }
 ```
 
+```objc
+@property (readonly) SRAmbientLightSensorPlacement placement;
+```
+
 ## See Also
 
-- [var chromaticity: SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.property.md)
+### Measuring light level
+- [var chromaticity: SRAmbientLightSample.Chromaticity](./chromaticity-swift.property.md)
   A coordinate pair that describes the sample’s light brightness and tint.
-- [SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.struct.md)
+- [SRAmbientLightSample.Chromaticity](./chromaticity-swift.struct.md)
   A coordinate pair that describes light brightness and tint.
-- [var lux: Measurement<UnitIlluminance>](srambientlightsample/lux.md)
+- [var lux: Measurement<UnitIlluminance>](./lux.md)
   An object that describes the sample’s luminous flux.
-- [SRAmbientLightSample.SensorPlacement](srambientlightsample/sensorplacement.md)
+- [SRAmbientLightSample.SensorPlacement](./sensorplacement.md)
   Directional values that describe light-source location with respect to the sensor.
 
 

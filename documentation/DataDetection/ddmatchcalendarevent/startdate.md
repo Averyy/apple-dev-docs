@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date that represents the start of the event.
 
@@ -20,15 +21,20 @@ A date that represents the start of the event.
 var startDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * startDate;
+```
+
 ## See Also
 
-- [var isAllDay: Bool](ddmatchcalendarevent/isallday.md)
+### Getting event details
+- [var isAllDay: Bool](./isallday.md)
   A Boolean value that indicates whether the event is an all-day event.
-- [var endDate: Date?](ddmatchcalendarevent/enddate.md)
+- [var endDate: Date?](./enddate.md)
   A date that represents the end of the event.
-- [var endTimeZone: TimeZone?](ddmatchcalendarevent/endtimezone.md)
+- [var endTimeZone: TimeZone?](./endtimezone.md)
   The time zone for the event’s end date.
-- [var startTimeZone: TimeZone?](ddmatchcalendarevent/starttimezone.md)
+- [var startTimeZone: TimeZone?](./starttimezone.md)
   The time zone for the event’s start date.
 
 

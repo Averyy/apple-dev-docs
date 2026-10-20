@@ -1,22 +1,27 @@
 # AudioConverterComplexInputDataProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Supplies input data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) function.
+Supplies input data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AudioConverterComplexInputDataProc = (AudioConverterRef, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<UnsafeMutablePointer<AudioStreamPacketDescription>?>?, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef int (*)(struct OpaqueAudioConverter *, unsigned int *, struct AudioBufferList *, struct AudioStreamPacketDescription **, void *) AudioConverterComplexInputDataProc;
 ```
 
 #### Discussion
@@ -25,7 +30,7 @@ If you named your callback function `MyAudioConverterComplexInputDataProc`, you 
 
 ##### Discussion
 
-This callback supplies input audio data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) function.
+This callback supplies input audio data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function.
 
 The audio converter object requests a minimum number of packets in the `ioNumberDataPackets` parameter. Your callback may provide one or more packets. If the number you provide is less than the minimum requested, the converter will invoke your callback again in the near future.
 
@@ -39,12 +44,13 @@ If your callback returns an error, it must return zero packets of data. Upon rec
 - `ioNumberDataPackets`: On input, the minimum number of packets of input audio data the converter needs for its current conversion cycle. On output, the number of packets of audio data provided for conversion, or `0` if there is no more data to convert.
 - `ioData`: On output, point the fields of the `AudioBufferList` structure, passed by this parameter, to the audio data you are providing to be converted.
 - `outDataPacketDescription`: If not `NULL` on input,  the audio converter expects this callback to provide an array of `AudioStreamPacketDescription` structures on output, one for each packet of audio data you are providing in the `ioData` parameter.
-- `inUserData`: On input, the custom application data you provided to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) function.
+- `inUserData`: On input, the custom application data you provided to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function.
 
 ## See Also
 
-- [typealias AudioConverterInputDataProc](audioconverterinputdataproc.md)
-  Deprecated. Use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) instead.
+### Callbacks
+- [typealias AudioConverterInputDataProc](./audioconverterinputdataproc.md)
+  Deprecated. Use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) instead.
 
 
 ---

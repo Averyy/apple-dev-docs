@@ -1,7 +1,8 @@
 # MTLCaptureError.invalidDescriptor
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A capture error that indicates your descriptor has invalid properties.
 
@@ -19,11 +20,16 @@ A capture error that indicates your descriptor has invalid properties.
 case invalidDescriptor
 ```
 
+```c
+MTLCaptureErrorInvalidDescriptor
+```
+
 ## See Also
 
-- [MTLCaptureError.alreadyCapturing](mtlcaptureerror/alreadycapturing.md)
+### Errors
+- [MTLCaptureError.alreadyCapturing](./alreadycapturing.md)
   A capture error that indicates the session is already in progress.
-- [MTLCaptureError.notSupported](mtlcaptureerror/notsupported.md)
+- [MTLCaptureError.notSupported](./notsupported.md)
   A capture error that indicates the capture options you’re requesting aren’t available.
 
 

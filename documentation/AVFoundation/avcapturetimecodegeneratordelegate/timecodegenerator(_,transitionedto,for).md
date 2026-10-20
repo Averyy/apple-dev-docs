@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the delegate when the synchronization status of a timecode source changes.
@@ -19,19 +20,24 @@ Notifies the delegate when the synchronization status of a timecode source chang
 func timecodeGenerator(_ generator: AVCaptureTimecodeGenerator, transitionedTo synchronizationStatus: AVCaptureTimecodeGenerator.SynchronizationStatus, for source: AVCaptureTimecode.Source)
 ```
 
+```objc
+- (void) timecodeGenerator:(AVCaptureTimecodeGenerator *) generator transitionedToSynchronizationStatus:(AVCaptureTimecodeGeneratorSynchronizationStatus) synchronizationStatus forSource:(AVCaptureTimecodeSource *) source;
+```
+
 ## Parameters
 
-- `generator`: The [`AVCaptureTimecodeGenerator`](avcapturetimecodegenerator.md) instance providing the status update.
+- `generator`: The [`AVCaptureTimecodeGenerator`](../avcapturetimecodegenerator.md) instance providing the status update.
 - `synchronizationStatus`: The updated synchronization state.
 - `source`: The internal or external source to which the generator synchronizes.
 
 ## See Also
 
-- [func timecodeGenerator(AVCaptureTimecodeGenerator, didReceiveUpdate: AVCaptureTimecode, from: AVCaptureTimecode.Source)](avcapturetimecodegeneratordelegate/timecodegenerator(_:didreceiveupdate:from:).md)
+### Responding to timecode events
+- [func timecodeGenerator(AVCaptureTimecodeGenerator, didReceiveUpdate: AVCaptureTimecode, from: AVCaptureTimecode.Source)](./timecodegenerator%28_,didreceiveupdate,from%29.md)
   Notifies the delegate when new, unaligned timecodes are parsed from the specified source.
-- [func timecodeGenerator(AVCaptureTimecodeGenerator, didUpdateAvailableSources: [AVCaptureTimecode.Source])](avcapturetimecodegeneratordelegate/timecodegenerator(_:didupdateavailablesources:).md)
+- [func timecodeGenerator(AVCaptureTimecodeGenerator, didUpdateAvailableSources: [AVCaptureTimecode.Source])](./timecodegenerator%28_,didupdateavailablesources%29.md)
   Notifies the delegate when the list of available timecode synchronization sources is updated.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus](avcapturetimecodegenerator/synchronizationstatus.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus](../avcapturetimecodegenerator/synchronizationstatus.md)
   Constants defining the synchronization status of a timecode generator .
 
 

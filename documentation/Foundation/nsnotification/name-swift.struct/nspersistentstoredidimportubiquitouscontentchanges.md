@@ -1,16 +1,19 @@
 # NSPersistentStoreDidImportUbiquitousContentChanges
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted after records are imported from the ubiquitous content store.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- visionOS 1.0+
+- iOS 5.0+ - Deprecated in 10.0
+- iPadOS 5.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.7+ - Deprecated in 10.12
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Please see the release notes and Core Data documentation.
 
 ## Declaration
 
@@ -20,29 +23,30 @@ static let NSPersistentStoreDidImportUbiquitousContentChanges: NSNotification.Na
 
 #### Discussion
 
-The notification’s `object` is set to the `NSPersistentStoreCoordinator` instance which registered the store. The notification’s `userInfo` dictionary contains the same keys as the [`NSManagedObjectContextObjectsDidChange`](nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md) notification ([`NSInsertedObjectsKey`](https://developer.apple.com/documentation/coredata/nsinsertedobjectskey), [`NSUpdatedObjectsKey`](https://developer.apple.com/documentation/coredata/nsupdatedobjectskey)[`NSDeletedObjectsKey`](https://developer.apple.com/documentation/coredata/nsdeletedobjectskey)), however the values are sets of [`NSManagedObjectID`](https://developer.apple.com/documentation/coredata/nsmanagedobjectid) objects rather than sets of [`NSManagedObject`](https://developer.apple.com/documentation/coredata/nsmanagedobject) objects.
+The notification’s `object` is set to the `NSPersistentStoreCoordinator` instance which registered the store. The notification’s `userInfo` dictionary contains the same keys as the [`NSManagedObjectContextObjectsDidChange`](./nsmanagedobjectcontextobjectsdidchange.md) notification ([`NSInsertedObjectsKey`](../../../CoreData/nsinsertedobjectskey.md), [`NSUpdatedObjectsKey`](../../../CoreData/nsupdatedobjectskey.md)[`NSDeletedObjectsKey`](../../../CoreData/nsdeletedobjectskey.md)), however the values are sets of [`NSManagedObjectID`](../../../CoreData/nsmanagedobjectid.md) objects rather than sets of [`NSManagedObject`](../../../CoreData/nsmanagedobject.md) objects.
 
 ## See Also
 
-- [static let NSManagedObjectContextDidSave: NSNotification.Name](nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md)
+### Core Data
+- [static let NSManagedObjectContextDidSave: NSNotification.Name](./nsmanagedobjectcontextdidsave.md)
   A notification that posts after a context finishes writing unsaved changes.
-- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md)
+- [static let NSManagedObjectContextObjectsDidChange: NSNotification.Name](./nsmanagedobjectcontextobjectsdidchange.md)
   A notification that posts when there are changes to context’s registered managed objects.
-- [static let NSManagedObjectContextWillSave: NSNotification.Name](nsnotification/name-swift.struct/nsmanagedobjectcontextwillsave.md)
+- [static let NSManagedObjectContextWillSave: NSNotification.Name](./nsmanagedobjectcontextwillsave.md)
   A notification that posts before a context writes unsaved changes.
-- [static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name](nsnotification/name-swift.struct/nspersistentstorecoordinatorstoresdidchange.md)
+- [static let NSPersistentStoreCoordinatorStoresDidChange: NSNotification.Name](./nspersistentstorecoordinatorstoresdidchange.md)
   A notification that the coordinator posts after its registered stores change.
-- [static let NSPersistentStoreCoordinatorStoresWillChange: NSNotification.Name](nsnotification/name-swift.struct/nspersistentstorecoordinatorstoreswillchange.md)
+- [static let NSPersistentStoreCoordinatorStoresWillChange: NSNotification.Name](./nspersistentstorecoordinatorstoreswillchange.md)
   A notification that posts before a coordinator changes its registered stores.
-- [static let NSPersistentStoreCoordinatorWillRemoveStore: NSNotification.Name](nsnotification/name-swift.struct/nspersistentstorecoordinatorwillremovestore.md)
+- [static let NSPersistentStoreCoordinatorWillRemoveStore: NSNotification.Name](./nspersistentstorecoordinatorwillremovestore.md)
   A notification that posts before a coordinator removes a store.
-- [static let NSCoreDataCoreSpotlightDelegateIndexDidUpdate: NSNotification.Name](nsnotification/name-swift.struct/nscoredatacorespotlightdelegateindexdidupdate.md)
+- [static let NSCoreDataCoreSpotlightDelegateIndexDidUpdate: NSNotification.Name](./nscoredatacorespotlightdelegateindexdidupdate.md)
   A notification that posts after Spotlight completes an index update.
-- [static let NSManagedObjectContextDidMergeChangesObjectIDs: NSNotification.Name](nsnotification/name-swift.struct/nsmanagedobjectcontextdidmergechangesobjectids.md)
+- [static let NSManagedObjectContextDidMergeChangesObjectIDs: NSNotification.Name](./nsmanagedobjectcontextdidmergechangesobjectids.md)
   A notification that posts after a context merges changes from a different notification.
-- [static let NSManagedObjectContextDidSaveObjectIDs: NSNotification.Name](nsnotification/name-swift.struct/nsmanagedobjectcontextdidsaveobjectids.md)
+- [static let NSManagedObjectContextDidSaveObjectIDs: NSNotification.Name](./nsmanagedobjectcontextdidsaveobjectids.md)
   A notification that posts after a context finishes writing changes.
-- [static let NSPersistentStoreRemoteChange: NSNotification.Name](nsnotification/name-swift.struct/nspersistentstoreremotechange.md)
+- [static let NSPersistentStoreRemoteChange: NSNotification.Name](./nspersistentstoreremotechange.md)
   A notification that posts after another process writes to a persistent store.
 
 

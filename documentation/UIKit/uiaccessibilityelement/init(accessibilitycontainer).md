@@ -1,7 +1,8 @@
 # init(accessibilityContainer:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes an accessibility element to represent an item in the specified container.
 
@@ -9,13 +10,17 @@ Creates and initializes an accessibility element to represent an item in the spe
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(accessibilityContainer container: Any)
+```
+
+```objc
+- (instancetype) initWithAccessibilityContainer:(id) container;
 ```
 
 #### Return Value

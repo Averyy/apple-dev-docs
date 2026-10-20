@@ -1,17 +1,22 @@
 # reflectScrolledClipView(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the receiver’s scrollers to reflect the size and positioning of its content view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func reflectScrolledClipView(_ cView: NSClipView)
+```
+
+```objc
+- (void) reflectScrolledClipView:(NSClipView *) cView;
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ This method is invoked automatically during scrolling and when an `NSClipView` o
 
 ## See Also
 
-- [var documentView: NSView?](nsscrollview/documentview.md)
+### Related Documentation
+- [var documentView: NSView?](./documentview.md)
   The view the scroll view scrolls within its content view.
-- [var contentView: NSClipView](nsscrollview/contentview.md)
+- [var contentView: NSClipView](./contentview.md)
   The scroll view’s content view, the view that clips the document view.
 
 

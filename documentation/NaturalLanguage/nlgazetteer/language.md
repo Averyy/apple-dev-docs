@@ -1,7 +1,8 @@
 # language
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language of the gazetteer.
 
@@ -20,9 +21,14 @@ The language of the gazetteer.
 var language: NLLanguage? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NLLanguage language;
+```
+
 ## See Also
 
-- [var data: Data](nlgazetteer/data.md)
+### Inspecting a Gazetteer
+- [var data: Data](./data.md)
   The gazetteer represented as a data instance.
 
 

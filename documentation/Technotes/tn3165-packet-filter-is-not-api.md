@@ -1,6 +1,7 @@
 # TN3165: Packet Filter is not API
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Plan your migration from Packet Filter to Network Extension.
 
@@ -11,9 +12,9 @@ macOS implements the BSD Packet Filter mechanism. This has two expected use case
 - As an implementation detail of various system services built-in to macOS
 - As an advanced feature for users, site admins, and so on
 
-It is not considered API.  Do not use Packet Filter in a software product that you distribute to a wide audience.  If you’re currently shipping software that relies on Packet Filter, plan to migrate to [`Network Extension`](https://developer.apple.com/documentation/networkextension).
+It is not considered API.  Do not use Packet Filter in a software product that you distribute to a wide audience.  If you’re currently shipping software that relies on Packet Filter, plan to migrate to [Network Extension](../NetworkExtension/NetworkExtension.md).
 
-#### Packet Filter Fundamentals
+#### Packet Filter fundamentals
 
 Packet Filter, oftened shorted to just PF or even pf, shows up in a number of places:
 
@@ -28,21 +29,21 @@ PF implements rule-based filtering.  These rules are manipulated by various syst
 - macOS system services, either now or in the future
 - Other third-party products
 
-#### Moving Off Packet Filter
+#### Moving off packet filter
 
-If you’re currently shipping a product based on PF, plan to migrate it to a supported API.  In most cases that means creating a [`Network Extension`](https://developer.apple.com/documentation/networkextension) provider:
+If you’re currently shipping a product based on PF, plan to migrate it to a supported API.  In most cases that means creating a [Network Extension](../NetworkExtension/NetworkExtension.md) provider:
 
-- If your product is a VPN, create either a [`Packet tunnel provider`](https://developer.apple.com/documentation/networkextension/packet-tunnel-provider) or [`App proxy provider`](https://developer.apple.com/documentation/networkextension/app-proxy-provider) provider.
-- If your product looks at, and potentially blocks, TCP connections or UDP flows, create a [`Content filter providers`](https://developer.apple.com/documentation/networkextension/content-filter-providers).
-- If your product looks at, and potentially blocks, network packets, create a [`Content filter providers`](https://developer.apple.com/documentation/networkextension/content-filter-providers).
-- If your product wants to intercept DNS queries, create a [`DNS proxy provider`](https://developer.apple.com/documentation/networkextension/dns-proxy-provider).
-- If none of these providers meet your specific needs, create a [`NETransparentProxyProvider`](https://developer.apple.com/documentation/networkextension/netransparentproxyprovider).
+- If your product is a VPN, create either a [packet tunnel](../NetworkExtension/packet-tunnel-provider.md) or [app proxy](../NetworkExtension/app-proxy-provider.md) provider.
+- If your product looks at, and potentially blocks, TCP connections or UDP flows, create a [content filter provider](../NetworkExtension/content-filter-providers.md).
+- If your product looks at, and potentially blocks, network packets, create a [packet filter provider](../NetworkExtension/content-filter-providers.md).
+- If your product wants to intercept DNS queries, create a [DNS proxy provider](../NetworkExtension/dns-proxy-provider.md).
+- If none of these providers meet your specific needs, create a [transparent proxy provider](../NetworkExtension/netransparentproxyprovider.md).
 
-For information about packaging and OS version constraints, see [`TN3134: Network Extension provider deployment`](tn3134-network-extension-provider-deployment.md).
+For information about packaging and OS version constraints, see [TN3134: Network Extension provider deployment](./tn3134-network-extension-provider-deployment.md).
 
-If your product needs to do something that’s not covered by one of these providers, use [`Feedback Assistant`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/) to let us know what’s missing.
+If your product needs to do something that’s not covered by one of these providers, use [Feedback Assistant](https://developer.apple.com/bug-reporting/) to let us know what’s missing.
 
-#### Test During the Transition
+#### Test during the transition
 
 It may take you some time to migrate from PF to Network Extension.  In the meantime, test your existing product to ensure that it’s compatible with various macOS system services.  Specifically, test with:
 
@@ -50,7 +51,7 @@ It may take you some time to migrate from PF to Network Extension.  In the meant
 - Xcode
 - Internet Sharing
 - AirDrop
-- Other [`Continuity features`](https://developer.apple.comhttps://www.apple.com/macos/continuity/)
+- Other [Continuity features](https://www.apple.com/macos/continuity/)
 
 Also, consider testing with products from other third-party developers who work in this space.
 

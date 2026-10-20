@@ -1,7 +1,8 @@
 # AsyncStream.AsyncIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of asynchronous iterator that produces elements of this asynchronous sequence.
 

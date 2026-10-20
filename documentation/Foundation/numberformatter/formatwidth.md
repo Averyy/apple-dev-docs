@@ -1,7 +1,8 @@
 # formatWidth
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format width used by the receiver.
 
@@ -20,21 +21,26 @@ The format width used by the receiver.
 var formatWidth: Int { get set }
 ```
 
+```objc
+@property NSUInteger formatWidth;
+```
+
 #### Discussion
 
-The format width is the number of characters of a formatted number within a string that is either left justified or right justified based on the value contained in  [`paddingPosition`](numberformatter/paddingposition.md).
+The format width is the number of characters of a formatted number within a string that is either left justified or right justified based on the value contained in  [`paddingPosition`](./paddingposition.md).
 
 ## See Also
 
-- [var format: String](numberformatter/format.md)
+### Configuring Numeric Formats
+- [var format: String](./format.md)
   The receiver’s format.
-- [var formattingContext: Formatter.Context](numberformatter/formattingcontext.md)
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   The capitalization formatting context used when formatting a number.
-- [var negativeFormat: String!](numberformatter/negativeformat.md)
+- [var negativeFormat: String!](./negativeformat.md)
   The format the receiver uses to display negative values.
-- [var positiveFormat: String!](numberformatter/positiveformat.md)
+- [var positiveFormat: String!](./positiveformat.md)
   The format the receiver uses to display positive values.
-- [var multiplier: NSNumber?](numberformatter/multiplier.md)
+- [var multiplier: NSNumber?](./multiplier.md)
   The multiplier of the receiver.
 
 

@@ -1,7 +1,8 @@
 # insert
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Inserts a new item into the array.
 
@@ -10,7 +11,7 @@ Inserts a new item into the array.
 
 ## Declaration
 
-```swift
+```
 void insert(
     in int index, 
     in Array items, 
@@ -20,13 +21,14 @@ void insert(
 
 ## See Also
 
-- [delete](datasource/datasource/3192115-delete.md)
+### Modifying the Data Source
+- [delete](./api-3192115-delete.md)
   Deletes an item from the data source array.
-- [move](datasource/datasource/3192120-move.md)
+- [move](./api-3192120-move.md)
   Moves an item in the data source array.
-- [replace](datasource/datasource/3192121-replace.md)
+- [replace](./api-3192121-replace.md)
   Replaces an item in the data source array.
-- [update](datasource/datasource/3192123-update.md)
+- [update](./api-3192123-update.md)
   Updates an item in the data source array.
 
 

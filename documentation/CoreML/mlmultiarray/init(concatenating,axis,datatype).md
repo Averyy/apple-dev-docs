@@ -1,7 +1,8 @@
 # init(concatenating:axis:dataType:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Concatenate MLMultiArrays to form a new MLMultiArray.
 
@@ -18,6 +19,10 @@ Concatenate MLMultiArrays to form a new MLMultiArray.
 
 ```swift
 convenience init(concatenating multiArrays: [MLMultiArray], axis: Int, dataType: MLMultiArrayDataType)
+```
+
+```objc
++ (instancetype) multiArrayByConcatenatingMultiArrays:(NSArray<MLMultiArray *> *) multiArrays alongAxis:(NSInteger) axis dataType:(MLMultiArrayDataType) dataType;
 ```
 
 #### Discussion

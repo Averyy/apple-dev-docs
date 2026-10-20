@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns `true` when the running OS version supports `AccessorySensorUpdates`.
 

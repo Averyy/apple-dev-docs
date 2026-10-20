@@ -1,21 +1,26 @@
 # kCMClockError_PreferredStartTimeNotAvailable
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var kCMClockError_PreferredStartTimeNotAvailable: OSStatus { get }
+```
+
+```c
+kCMClockError_PreferredStartTimeNotAvailable
 ```
 
 

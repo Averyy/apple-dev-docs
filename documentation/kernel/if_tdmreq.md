@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_tdmreq {
     ...
 };
@@ -17,9 +17,9 @@ struct if_tdmreq {
 ## Topics
 
 ### Instance Properties
-- [iftdm_len](if_tdmreq/3943797-iftdm_len.md)
-- [iftdm_name](if_tdmreq/3943798-iftdm_name.md)
-- [iftdm_table](if_tdmreq/3943799-iftdm_table.md)
+- [iftdm_len](./if_tdmreq/api-3943797-iftdm_len.md)
+- [iftdm_name](./if_tdmreq/api-3943798-iftdm_name.md)
+- [iftdm_table](./if_tdmreq/api-3943799-iftdm_table.md)
 
 
 ---

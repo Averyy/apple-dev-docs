@@ -1,7 +1,8 @@
 # CTCellularPlanCapability.dataOnly
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cellular plan is available for data only.
 
@@ -17,11 +18,16 @@ The cellular plan is available for data only.
 case dataOnly
 ```
 
+```c
+CTCellularPlanCapabilityDataOnly
+```
+
 ## See Also
 
-- [init?(rawValue: Int)](ctcellularplancapability/init(rawvalue:).md)
+### Defining cellular data plans
+- [init?(rawValue: Int)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [CTCellularPlanCapability.dataAndVoice](ctcellularplancapability/dataandvoice.md)
+- [CTCellularPlanCapability.dataAndVoice](./dataandvoice.md)
   The cellular plan is available for data and voice.
 
 

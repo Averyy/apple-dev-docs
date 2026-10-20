@@ -1,7 +1,8 @@
 # setRegion(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the map’s visible region to the specified coordinate region.
 
@@ -14,6 +15,10 @@ Changes the map’s visible region to the specified coordinate region.
 func setRegion(_ coordinateRegion: MKCoordinateRegion)
 ```
 
+```objc
+- (void) setRegion:(MKCoordinateRegion) coordinateRegion;
+```
+
 #### Discussion
 
 This method changes the currently visible region of the map. The method may adjust the map rectangle slightly to fit the available display space for the map. The adjusted region always includes the entire region you specified.
@@ -22,11 +27,12 @@ Changing the visible region may require the loading of additional map tiles to r
 
 ## Parameters
 
-- `coordinateRegion`: The new region of the map to be displayed. The span value of this parameter provides an implicit zoom value for the map. For more information about the [`MKCoordinateRegion`](https://developer.apple.com/documentation/mapkit/mkcoordinateregion) type, see [`MapKit`](https://developer.apple.com/documentation/mapkit).
+- `coordinateRegion`: The new region of the map to be displayed. The span value of this parameter provides an implicit zoom value for the map. For more information about the [`MKCoordinateRegion`](../../MapKit/mkcoordinateregion.md) type, see [MapKit](../../MapKit/MapKit.md).
 
 ## See Also
 
-- [func setVisibleMapRect(MKMapRect)](wkinterfacemap/setvisiblemaprect(_:).md)
+### Specifying the Map Region
+- [func setVisibleMapRect(MKMapRect)](./setvisiblemaprect%28_%29.md)
   Changes the map’s visible region to the specified map rectangle.
 
 

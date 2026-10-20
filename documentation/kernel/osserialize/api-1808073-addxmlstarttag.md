@@ -7,13 +7,13 @@ Appends an XML start tag to the XML stream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool addXMLStartTag( 
  const OSMetaClassBase *object, 
  const char *tagString);
 ```
 
-#### Return_value
+#### Return Value
 
 `true` if an XML start tag for `tagString` is successfully added to the XML stream, `false` otherwise.
 
@@ -39,19 +39,20 @@ A call to this function must be balanced with one to addXMLEndTag using the same
 
 ## See Also
 
-- [addChar](osserialize/1808034-addchar.md)
+### Miscellaneous
+- [addChar](./api-1808034-addchar.md)
   Appends a single character to the XML stream.
-- [addString](osserialize/1808045-addstring.md)
+- [addString](./api-1808045-addstring.md)
   Appends a C string to the XML stream.
-- [addXMLEndTag](osserialize/1808061-addxmlendtag.md)
+- [addXMLEndTag](./api-1808061-addxmlendtag.md)
   Appends an XML end tag to the XML stream.
-- [clearText](osserialize/1808086-cleartext.md)
+- [clearText](./api-1808086-cleartext.md)
   Resets the OSSerialize object.
-- [previouslySerialized](osserialize/1808096-previouslyserialized.md)
+- [previouslySerialized](./api-1808096-previouslyserialized.md)
   Checks whether the object has already been serialized into the XML stream, emitting a reference if it has.
-- [text](osserialize/1808110-text.md)
+- [text](./api-1808110-text.md)
   Returns the XML text serialized so far.
-- [withCapacity](osserialize/1808120-withcapacity.md)
+- [withCapacity](./api-1808120-withcapacity.md)
   Creates and initializes an empty OSSerialize object.
 
 

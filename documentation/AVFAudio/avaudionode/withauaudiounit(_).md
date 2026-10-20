@@ -1,7 +1,8 @@
 # withAUAudioUnit(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides scoped access to the node’s AUAudioUnit
 
@@ -27,7 +28,7 @@ The value returned by the closure
 
 This method provides thread-safe, scoped access to the underlying AUAudioUnit. The audio unit reference is only valid within the closure and must not be retained or accessed outside of it.
 
-> **Note**: Rethrows any error thrown by the closure
+> **Throws**: Rethrows any error thrown by the closure
 
 ## Parameters
 
@@ -35,11 +36,12 @@ This method provides thread-safe, scoped access to the underlying AUAudioUnit. T
 
 ## See Also
 
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
+### Getting audio node properties
+- [var auAudioUnit: AUAudioUnit](./auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
-- [var latency: TimeInterval](avaudionode/latency.md)
+- [var latency: TimeInterval](./latency.md)
   The processing latency of the node, in seconds.
-- [var outputPresentationLatency: TimeInterval](avaudionode/outputpresentationlatency.md)
+- [var outputPresentationLatency: TimeInterval](./outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.
 
 

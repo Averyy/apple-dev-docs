@@ -1,7 +1,8 @@
 # setMicrophoneCaptureState(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes whether the webpage is using the microphone to capture audio.
 
@@ -25,11 +26,12 @@ final func setMicrophoneCaptureState(_ state: WKMediaCaptureState) async
 
 ## See Also
 
-- [var cameraCaptureState: WKMediaCaptureState](webpage/cameracapturestate.md)
+### Managing the microphone and camera
+- [var cameraCaptureState: WKMediaCaptureState](./cameracapturestate.md)
   Indicates whether the webpage is using the camera to capture images or video.
-- [var microphoneCaptureState: WKMediaCaptureState](webpage/microphonecapturestate.md)
+- [var microphoneCaptureState: WKMediaCaptureState](./microphonecapturestate.md)
   Indicates whether the webpage is using the microphone to capture audio.
-- [func setCameraCaptureState(WKMediaCaptureState) async](webpage/setcameracapturestate(_:).md)
+- [func setCameraCaptureState(WKMediaCaptureState) async](./setcameracapturestate%28_%29.md)
   Changes whether the webpage is using the camera to capture images or video.
 
 

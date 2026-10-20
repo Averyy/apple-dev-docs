@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the default rendering pipeline state values for the descriptor.
 
@@ -10,7 +11,7 @@ Specifies the default rendering pipeline state values for the descriptor.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ Specifies the default rendering pipeline state values for the descriptor.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 ## See Also
 
-- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](mtlrenderpipelinedescriptor/colorattachments.md)
+### Specifying rendering pipeline state
+- [var colorAttachments: MTLRenderPipelineColorAttachmentDescriptorArray](./colorattachments.md)
   An array of attachments that store color data.
-- [var depthAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/depthattachmentpixelformat.md)
+- [var depthAttachmentPixelFormat: MTLPixelFormat](./depthattachmentpixelformat.md)
   The pixel format of the attachment that stores depth data.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](mtlrenderpipelinedescriptor/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./stencilattachmentpixelformat.md)
   The pixel format of the attachment that stores stencil data.
 
 

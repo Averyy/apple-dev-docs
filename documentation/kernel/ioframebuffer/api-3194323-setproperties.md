@@ -1,14 +1,15 @@
 # setProperties
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setProperties(OSObject *properties);
 ```
 

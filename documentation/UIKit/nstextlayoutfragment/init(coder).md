@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new layout fragment with the coder you provide.
 
@@ -18,13 +19,18 @@ Creates a new layout fragment with the coder you provide.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: A coder that conforms to [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: A coder that conforms to [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [init(textElement: NSTextElement, range: NSTextRange?)](nstextlayoutfragment/init(textelement:range:).md)
+### Creating a layout fragment
+- [init(textElement: NSTextElement, range: NSTextRange?)](./init%28textelement,range%29.md)
   Create a new layout fragment using the provided text element and range.
 
 

@@ -1,7 +1,8 @@
 # menu
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A menu that the button displays.
 
@@ -19,17 +20,22 @@ A menu that the button displays.
 var menu: UIMenu? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIMenu * menu;
+```
+
 #### Discussion
 
-The default value is `nil`. When this property changes, the button automatically enables and disables the [`contextMenuInteraction`](uicontrol/contextmenuinteraction.md).
+The default value is `nil`. When this property changes, the button automatically enables and disables the [`contextMenuInteraction`](../uicontrol/contextmenuinteraction.md).
 
 ## See Also
 
-- [var isHeld: Bool](uibutton/isheld.md)
+### Supporting menu and toggle buttons
+- [var isHeld: Bool](./isheld.md)
   A Boolean value that indicates whether the button menu is visible.
-- [var changesSelectionAsPrimaryAction: Bool](uibutton/changesselectionasprimaryaction.md)
+- [var changesSelectionAsPrimaryAction: Bool](./changesselectionasprimaryaction.md)
   A Boolean value that indicates whether the button tracks a selection, either through a menu or a toggle.
-- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](uibutton/preferredmenuelementorder.md)
+- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](./preferredmenuelementorder.md)
   The preferred menu-element ordering strategy for the menu.
 
 

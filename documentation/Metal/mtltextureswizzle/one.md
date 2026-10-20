@@ -1,7 +1,8 @@
 # MTLTextureSwizzle.one
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value of `1.0` is copied to the destination channel.
 
@@ -19,17 +20,22 @@ A value of `1.0` is copied to the destination channel.
 case one
 ```
 
+```c
+MTLTextureSwizzleOne
+```
+
 ## See Also
 
-- [MTLTextureSwizzle.alpha](mtltextureswizzle/alpha.md)
+### Specifying swizzle channels
+- [MTLTextureSwizzle.alpha](./alpha.md)
   The alpha channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.blue](mtltextureswizzle/blue.md)
+- [MTLTextureSwizzle.blue](./blue.md)
   The blue channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.green](mtltextureswizzle/green.md)
+- [MTLTextureSwizzle.green](./green.md)
   The green channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.red](mtltextureswizzle/red.md)
+- [MTLTextureSwizzle.red](./red.md)
   The red channel of the source pixel is copied to the destination channel.
-- [MTLTextureSwizzle.zero](mtltextureswizzle/zero.md)
+- [MTLTextureSwizzle.zero](./zero.md)
   A value of `0.0` is copied to the destination channel.
 
 

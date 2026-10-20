@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A Boolean value indicating whether this type is a signed integer type.
@@ -24,6 +25,14 @@ static var isSigned: Bool { get }
 #### Discussion
 
 *Signed* integer types can represent both positive and negative values. *Unsigned* integer types can represent only nonnegative values.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [static var isSigned: Bool](./issigned-1e7u9.md)
+  A Boolean value indicating whether this type is a signed integer type.
+- [static var isSigned: Bool](./issigned-9pdrm.md)
+  A Boolean value indicating whether this type is a signed integer type.
 
 
 ---

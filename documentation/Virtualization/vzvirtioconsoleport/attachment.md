@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of serial port attachments.
 
@@ -14,13 +15,18 @@ An array of serial port attachments.
 var attachment: VZSerialPortAttachment? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZSerialPortAttachment * attachment;
+```
+
 #### Discussion
 
 This property may change at any time while the VM is running.
 
 ## See Also
 
-- [var name: String?](vzvirtioconsoleport/name.md)
+### Configuring the port
+- [var name: String?](./name.md)
   The name of the port.
 
 

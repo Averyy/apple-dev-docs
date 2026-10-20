@@ -1,7 +1,8 @@
 # object(forKey:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the font attribute that the corresponding key specifies.
 
@@ -9,7 +10,7 @@ Returns the font attribute that the corresponding key specifies.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,9 +20,13 @@ Returns the font attribute that the corresponding key specifies.
 func object(forKey anAttribute: UIFontDescriptor.AttributeName) -> Any?
 ```
 
+```objc
+- (id) objectForKey:(UIFontDescriptorAttributeName) anAttribute;
+```
+
 #### Return Value
 
-The font attribute corresponding to `anAttribute`. For valid values of `anAttribute`, see [`UIFontDescriptor.AttributeName`](uifontdescriptor/attributename.md).
+The font attribute corresponding to `anAttribute`. For valid values of `anAttribute`, see [`UIFontDescriptor.AttributeName`](./attributename.md).
 
 ## Parameters
 
@@ -29,17 +34,18 @@ The font attribute corresponding to `anAttribute`. For valid values of `anAttrib
 
 ## See Also
 
-- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](uifontdescriptor/fontattributes.md)
+### Querying a font descriptor
+- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](./fontattributes.md)
   The font descriptor’s dictionary of attributes.
-- [var matrix: CGAffineTransform](uifontdescriptor/matrix.md)
+- [var matrix: CGAffineTransform](./matrix.md)
   The current transform matrix of the font descriptor.
-- [var pointSize: CGFloat](uifontdescriptor/pointsize.md)
+- [var pointSize: CGFloat](./pointsize.md)
   The point size of the font descriptor.
-- [var postscriptName: String](uifontdescriptor/postscriptname.md)
+- [var postscriptName: String](./postscriptname.md)
   The PostScript name of the font descriptor.
-- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.property.md)
+- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.property.md)
   The traits of the font descriptor.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
 
 

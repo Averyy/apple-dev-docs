@@ -1,7 +1,8 @@
 # preferredVideoStabilizationMode
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stabilization mode that’s the most appropriate for a video connection.
 
@@ -17,23 +18,28 @@ The stabilization mode that’s the most appropriate for a video connection.
 var preferredVideoStabilizationMode: AVCaptureVideoStabilizationMode { get set }
 ```
 
+```objc
+@property (nonatomic) AVCaptureVideoStabilizationMode preferredVideoStabilizationMode;
+```
+
 #### Discussion
 
-The property only applies to a video connection, and defaults to [`AVCaptureVideoStabilizationMode.off`](avcapturevideostabilizationmode/off.md).
+The property only applies to a video connection, and defaults to [`AVCaptureVideoStabilizationMode.off`](../avcapturevideostabilizationmode/off.md).
 
-You can enable video stabilization by setting it to an available stabilization mode (other than [`AVCaptureVideoStabilizationMode.off`](avcapturevideostabilizationmode/off.md)). Video stabilization introduces additional latency into the video capture pipeline and may consume more system memory, depending on the stabilization mode and format. If a stabilization mode isn’t available, the connection sets its [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to [`AVCaptureVideoStabilizationMode.off`](avcapturevideostabilizationmode/off.md). You can make the connection use an appropriate capture format and frame rate by setting the property to [`AVCaptureVideoStabilizationMode.auto`](avcapturevideostabilizationmode/auto.md).
+You can enable video stabilization by setting it to an available stabilization mode (other than [`AVCaptureVideoStabilizationMode.off`](../avcapturevideostabilizationmode/off.md)). Video stabilization introduces additional latency into the video capture pipeline and may consume more system memory, depending on the stabilization mode and format. If a stabilization mode isn’t available, the connection sets its [`activeVideoStabilizationMode`](./activevideostabilizationmode.md) property to [`AVCaptureVideoStabilizationMode.off`](../avcapturevideostabilizationmode/off.md). You can make the connection use an appropriate capture format and frame rate by setting the property to [`AVCaptureVideoStabilizationMode.auto`](../avcapturevideostabilizationmode/auto.md).
 
 > **Note**:  Devices with a video stabilization feature may only support a subset of available source formats.
 
-Use key-value observing with the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to determine which stabilization mode is in use.
+Use key-value observing with the [`activeVideoStabilizationMode`](./activevideostabilizationmode.md) property to determine which stabilization mode is in use.
 
-You can monitor the [`activeVideoStabilizationMode`](avcaptureconnection/activevideostabilizationmode.md) property to detect which stabilization mode the connection’s using. See [`NSKeyValueObserving`](https://developer.apple.com/documentation/objectivec/nskeyvalueobserving) and [`Using Key-Value Observing in Swift`](https://developer.apple.com/documentation/swift/using-key-value-observing-in-swift) for more information.
+You can monitor the [`activeVideoStabilizationMode`](./activevideostabilizationmode.md) property to detect which stabilization mode the connection’s using. See [NSKeyValueObserving](../../ObjectiveC/nskeyvalueobserving.md) and [Using Key-Value Observing in Swift](../../Swift/using-key-value-observing-in-swift.md) for more information.
 
 ## See Also
 
-- [var isVideoStabilizationSupported: Bool](avcaptureconnection/isvideostabilizationsupported.md)
+### Stabilizing video
+- [var isVideoStabilizationSupported: Bool](./isvideostabilizationsupported.md)
   A Boolean value that indicates whether this connection supports video stabilization.
-- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](avcaptureconnection/activevideostabilizationmode.md)
+- [var activeVideoStabilizationMode: AVCaptureVideoStabilizationMode](./activevideostabilizationmode.md)
   The connection’s current stabilization mode.
 
 

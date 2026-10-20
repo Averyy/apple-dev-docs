@@ -1,7 +1,8 @@
 # AudioConverterGetPropertyInfo(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets information about an audio converter property.
 
@@ -19,6 +20,10 @@ Gets information about an audio converter property.
 func AudioConverterGetPropertyInfo(_ inAudioConverter: AudioConverterRef, _ inPropertyID: AudioConverterPropertyID, _ outSize: UnsafeMutablePointer<UInt32>?, _ outWritable: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioConverterGetPropertyInfo(AudioConverterRef inAudioConverter, AudioConverterPropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
+```
+
 #### Return Value
 
 A  result code.
@@ -32,9 +37,10 @@ A  result code.
 
 ## See Also
 
-- [func AudioConverterGetProperty(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](audioconvertergetproperty(_:_:_:_:).md)
+### Configuring Audio Converter Properties
+- [func AudioConverterGetProperty(AudioConverterRef, AudioConverterPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./audioconvertergetproperty%28_,_,_,_%29.md)
   Gets an audio converter property value.
-- [func AudioConverterSetProperty(AudioConverterRef, AudioConverterPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](audioconvertersetproperty(_:_:_:_:).md)
+- [func AudioConverterSetProperty(AudioConverterRef, AudioConverterPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./audioconvertersetproperty%28_,_,_,_%29.md)
   Sets the value of an audio converter object property.
 
 

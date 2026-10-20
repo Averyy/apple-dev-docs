@@ -1,12 +1,13 @@
 # NSCharacterCollection.adobeJapan2CharacterCollection
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the Adobe-Japan2 mapping.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Indicates the Adobe-Japan2 mapping.
 case adobeJapan2CharacterCollection
 ```
 
+```c
+NSAdobeJapan2CharacterCollection
+```
+
 ## See Also
 
-- [NSCharacterCollection.identityMappingCharacterCollection](nscharactercollection/identitymappingcharactercollection.md)
+### Collections
+- [NSCharacterCollection.identityMappingCharacterCollection](./identitymappingcharactercollection.md)
   Indicates that the character identifier is equal to the glyph index.
-- [NSCharacterCollection.adobeCNS1CharacterCollection](nscharactercollection/adobecns1charactercollection.md)
+- [NSCharacterCollection.adobeCNS1CharacterCollection](./adobecns1charactercollection.md)
   Indicates the Adobe-CNS1 mapping.
-- [NSCharacterCollection.adobeGB1CharacterCollection](nscharactercollection/adobegb1charactercollection.md)
+- [NSCharacterCollection.adobeGB1CharacterCollection](./adobegb1charactercollection.md)
   Indicates the Adobe-GB1 mapping.
-- [NSCharacterCollection.adobeJapan1CharacterCollection](nscharactercollection/adobejapan1charactercollection.md)
+- [NSCharacterCollection.adobeJapan1CharacterCollection](./adobejapan1charactercollection.md)
   Indicates the Adobe-Japan1 mapping.
-- [NSCharacterCollection.adobeKorea1CharacterCollection](nscharactercollection/adobekorea1charactercollection.md)
+- [NSCharacterCollection.adobeKorea1CharacterCollection](./adobekorea1charactercollection.md)
   Indicates the Adobe-Korea1 mapping.
 
 

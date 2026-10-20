@@ -1,7 +1,8 @@
 # id
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the recent conversation.
 

@@ -1,7 +1,8 @@
 # protocolWrongTypeForSocket
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Protocol wrong for socket type.
 
@@ -22,7 +23,7 @@ static var protocolWrongTypeForSocket: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,13 +33,14 @@ The corresponding C error is `EPROTOTYPE`.
 
 ## See Also
 
-- [static var protocolError: Errno](errno/protocolerror.md)
+### Network Protocol Errors
+- [static var protocolError: Errno](./protocolerror.md)
   Protocol error.
-- [static var protocolFamilyNotSupported: Errno](errno/protocolfamilynotsupported.md)
+- [static var protocolFamilyNotSupported: Errno](./protocolfamilynotsupported.md)
   Protocol family not supported.
-- [static var protocolNotAvailable: Errno](errno/protocolnotavailable.md)
+- [static var protocolNotAvailable: Errno](./protocolnotavailable.md)
   Protocol not available.
-- [static var protocolNotSupported: Errno](errno/protocolnotsupported.md)
+- [static var protocolNotSupported: Errno](./protocolnotsupported.md)
   Protocol not supported.
 
 

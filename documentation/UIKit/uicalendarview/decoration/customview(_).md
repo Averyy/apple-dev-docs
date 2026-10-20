@@ -1,7 +1,8 @@
 # customView(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new calendar view decoration with a custom view, using your view provider.
 
@@ -15,6 +16,10 @@ Creates a new calendar view decoration with a custom view, using your view provi
 
 ```swift
 class func customView(_ customViewProvider: @escaping () -> UIView) -> Self
+```
+
+```objc
++ (instancetype) decorationWithCustomViewProvider:(UIView * (^)()) customViewProvider;
 ```
 
 #### Return Value

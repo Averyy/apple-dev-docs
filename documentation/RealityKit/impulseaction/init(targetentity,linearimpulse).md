@@ -1,7 +1,8 @@
 # init(targetEntity:linearImpulse:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new impulse action.
 

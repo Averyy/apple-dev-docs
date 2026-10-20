@@ -1,7 +1,8 @@
 # MarkupAutoresizing
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Automatic sizing behaviors for this markup.
 
@@ -37,29 +38,30 @@ textBox.attributedText = AttributedString("This is much longer text")
 ## Topics
 
 ### Resizing options
-- [static let flexibleHeight: MarkupAutoresizing](markupautoresizing/flexibleheight.md)
+- [static let flexibleHeight: MarkupAutoresizing](./markupautoresizing/flexibleheight.md)
   Automatically adjust height to fit content changes.
-- [static let flexibleWidth: MarkupAutoresizing](markupautoresizing/flexiblewidth.md)
+- [static let flexibleWidth: MarkupAutoresizing](./markupautoresizing/flexiblewidth.md)
   Automatically adjust width to fit content changes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct FeatureSet](featureset.md)
+### Configuration
+- [struct FeatureSet](./featureset.md)
   The features PaperKit supports in its UI and data models.
-- [struct ShapeConfiguration](shapeconfiguration.md)
+- [struct ShapeConfiguration](./shapeconfiguration.md)
   A configuration that specifies the appearance of a shape.
-- [struct RenderingOptions](renderingoptions.md)
+- [struct RenderingOptions](./renderingoptions.md)
   The rendering options for drawing paper data models.
 
 

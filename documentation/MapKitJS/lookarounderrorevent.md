@@ -1,7 +1,8 @@
 # LookAroundErrorEvent
 
 **Framework**: MapKit JS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A custom event object that contains information about the error when starting a Look Around view.
 
@@ -10,7 +11,7 @@ A custom event object that contains information about the error when starting a 
 
 ## Declaration
 
-```swift
+```
 type LookAroundErrorEvent = CustomEvent<{
     type: LookAroundErrorType;
     message: string;
@@ -19,11 +20,12 @@ type LookAroundErrorEvent = CustomEvent<{
 
 #### Discussion
 
-The event object describes the error with a [`LookAroundErrorType`](lookarounderrortype.md) value and a message.
+The event object describes the error with a [`LookAroundErrorType`](./lookarounderrortype.md) value and a message.
 
 ## See Also
 
-- [const LookAroundErrorType](lookarounderrortype.md)
+### Events and event properties
+- [const LookAroundErrorType](./lookarounderrortype.md)
   Values that describes errors than can occur when starting a Look Around view.
 
 

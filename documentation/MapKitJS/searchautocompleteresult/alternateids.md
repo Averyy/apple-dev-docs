@@ -1,7 +1,8 @@
 # alternateIds
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of alternate Place IDs that identify a feature.
 
@@ -10,13 +11,13 @@ A list of alternate Place IDs that identify a feature.
 
 ## Declaration
 
-```swift
+```
 alternateIds: string[] | null;
 ```
 
 #### Discussion
 
-These values associate alternate identifiers with a place that changes its identity over time. For information about place identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
+These values associate alternate identifiers with a place that changes its identity over time. For information about place identifiers, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 
 
 ---

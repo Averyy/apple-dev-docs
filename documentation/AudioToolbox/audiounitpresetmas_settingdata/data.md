@@ -1,15 +1,20 @@
 # data
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var data: UInt8
+```
+
+```c
+UInt8 data[1];
 ```
 
 

@@ -1,12 +1,13 @@
 # NSImageView.FrameStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that allow you to specify the kind of frame bordering the image.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,40 +15,45 @@ Constants that allow you to specify the kind of frame bordering the image.
 enum FrameStyle
 ```
 
+```c
+enum NSImageFrameStyle : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by [`imageFrameStyle`](nsimagecell/imageframestyle.md). Note that some of these constants are stylistically obsolete and should be considered deprecated.
+These constants are used by [`imageFrameStyle`](../nsimagecell/imageframestyle.md). Note that some of these constants are stylistically obsolete and should be considered deprecated.
 
 ## Topics
 
 ### Constants
-- [NSImageView.FrameStyle.none](nsimageview/framestyle/none.md)
+- [NSImageView.FrameStyle.none](./framestyle/none.md)
   An invisible frame
-- [NSImageView.FrameStyle.photo](nsimageview/framestyle/photo.md)
+- [NSImageView.FrameStyle.photo](./framestyle/photo.md)
   A thin black outline and a dropped shadow.
-- [NSImageView.FrameStyle.grayBezel](nsimageview/framestyle/graybezel.md)
+- [NSImageView.FrameStyle.grayBezel](./framestyle/graybezel.md)
   A gray, concave bezel that makes the image look sunken.
-- [NSImageView.FrameStyle.groove](nsimageview/framestyle/groove.md)
+- [NSImageView.FrameStyle.groove](./framestyle/groove.md)
   A thin groove that looks etched around the image.
-- [NSImageView.FrameStyle.button](nsimageview/framestyle/button.md)
+- [NSImageView.FrameStyle.button](./framestyle/button.md)
   A convex bezel that makes the image stand out in relief, like a button.
 ### Initializers
-- [init?(rawValue: UInt)](nsimageview/framestyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./framestyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NSImageAlignment](nsimagealignment.md)
-  Constants used by [`imageAlignment`](nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
+### Constants
+- [enum NSImageAlignment](../nsimagealignment.md)
+  Constants used by [`imageAlignment`](../nsimagecell/imagealignment.md) that allow you to specify the location of the image in the frame.
 
 
 ---

@@ -1,12 +1,13 @@
 # maxVisibleColumns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of visible columns.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The maximum number of visible columns.
 var maxVisibleColumns: Int { get set }
 ```
 
+```objc
+@property NSInteger maxVisibleColumns;
+```
+
 ## See Also
 
-- [var reusesColumns: Bool](nsbrowser/reusescolumns.md)
+### Configuring Browsers
+- [var reusesColumns: Bool](./reusescolumns.md)
   A Boolean that indicates whether the browser reuses matrix objects after their columns are unloaded.
-- [var autohidesScroller: Bool](nsbrowser/autohidesscroller.md)
+- [var autohidesScroller: Bool](./autohidesscroller.md)
   A Boolean that indicates whether the browser automatically hides its scroller.
-- [var backgroundColor: NSColor](nsbrowser/backgroundcolor.md)
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The browser’s background color.
-- [var minColumnWidth: CGFloat](nsbrowser/mincolumnwidth.md)
+- [var minColumnWidth: CGFloat](./mincolumnwidth.md)
   The minimum column width, in pixels.
-- [var separatesColumns: Bool](nsbrowser/separatescolumns.md)
+- [var separatesColumns: Bool](./separatescolumns.md)
   A Boolean that indicates whether columns are separated by bezeled borders.
-- [var takesTitleFromPreviousColumn: Bool](nsbrowser/takestitlefrompreviouscolumn.md)
+- [var takesTitleFromPreviousColumn: Bool](./takestitlefrompreviouscolumn.md)
   A Boolean that indicates whether a column takes its title from the selected cell in the previous column.
-- [func tile()](nsbrowser/tile.md)
+- [func tile()](./tile%28%29.md)
   Adjusts the various subviews of the browser—scrollers, columns, titles, and so on—without redrawing.
-- [var delegate: (any NSBrowserDelegate)?](nsbrowser/delegate.md)
+- [var delegate: (any NSBrowserDelegate)?](./delegate.md)
   The browser’s delegate.
 
 

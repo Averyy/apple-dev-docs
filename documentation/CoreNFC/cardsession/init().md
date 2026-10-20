@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contactless card session.
 
@@ -23,18 +24,19 @@ Creating a card session depends on the following conditions:
 - The device is eligible to use a card session.
 - The person using the app has accepted the app’s request to use a card session.
 
-> 💡 **Tip**:  Query the [`isSupported`](cardsession/issupported.md) and [`isEligible`](cardsession/iseligible.md) properties before calling this initializer to avoid showing a system card session UI on ineligible devices.
+> 💡 **Tip**:  Query the [`isSupported`](./issupported.md) and [`isEligible`](./iseligible.md) properties before calling this initializer to avoid showing a system card session UI on ineligible devices.
 
-This initializer throws an error of type [`CardSession.Error`](cardsession/error.md) if it can’t create a card session. Possible error conditions are:
+This initializer throws an error of type [`CardSession.Error`](./error.md) if it can’t create a card session. Possible error conditions are:
 
-- [`CardSession.Error.accessNotAccepted`](cardsession/error/accessnotaccepted.md)
-- [`CardSession.Error.systemEligibilityFailed`](cardsession/error/systemeligibilityfailed.md)
-- [`CardSession.Error.radioDisabled`](cardsession/error/radiodisabled.md)
-- [`CardSession.Error.systemNotAvailable`](cardsession/error/systemnotavailable.md)
+- [`CardSession.Error.accessNotAccepted`](./error/accessnotaccepted.md)
+- [`CardSession.Error.systemEligibilityFailed`](./error/systemeligibilityfailed.md)
+- [`CardSession.Error.radioDisabled`](./error/radiodisabled.md)
+- [`CardSession.Error.systemNotAvailable`](./error/systemnotavailable.md)
 
 ## See Also
 
-- [CardSession.Error](cardsession/error.md)
+### Creating a card session
+- [CardSession.Error](./error.md)
   An error type that indicates problems with a card session.
 
 

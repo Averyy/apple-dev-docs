@@ -1,7 +1,8 @@
 # list(using:layoutEnvironment:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a list section with the specified list configuration and layout environment.
 
@@ -10,7 +11,7 @@ Creates a list section with the specified list configuration and layout environm
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ Creates a list section with the specified list configuration and layout environm
 
 ## See Also
 
-- [convenience init(group: NSCollectionLayoutGroup)](nscollectionlayoutsection/init(group:).md)
+### Creating a section
+- [convenience init(group: NSCollectionLayoutGroup)](./init%28group%29.md)
   Creates a section containing the specified group.
-- [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](nscollectionlayoutsection/orthogonallayoutsectionformediaitems.md)
+- [class func orthogonalLayoutSectionForMediaItems() -> NSCollectionLayoutSection](./orthogonallayoutsectionformediaitems%28%29.md)
   Creates an orthogonally scrolling section with system default spacing.
 
 

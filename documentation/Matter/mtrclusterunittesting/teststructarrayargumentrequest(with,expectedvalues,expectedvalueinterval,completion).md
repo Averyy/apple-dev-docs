@@ -1,7 +1,8 @@
 # testStructArrayArgumentRequest(with:expectedValues:expectedValueInterval:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func testStructArrayArgumentRequest(with params: MTRUnitTestingClusterTestStructArrayArgumentRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?, completion: @escaping @Sendable (MTRUnitTestingClusterTestStructArrayArgumentResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func testStructArrayArgumentRequest(with params: MTRUnitTestingClusterTestStructArrayArgumentRequestParams, expectedValues expectedDataValueDictionaries: [[String : Any]]?, expectedValueInterval expectedValueIntervalMs: NSNumber?) async throws -> MTRUnitTestingClusterTestStructArrayArgumentResponseParams
+```
+
+```objc
+- (void) testStructArrayArgumentRequestWithParams:(MTRUnitTestingClusterTestStructArrayArgumentRequestParams *) params expectedValues:(NSArray<NSDictionary<NSString *,id> *> *) expectedDataValueDictionaries expectedValueInterval:(NSNumber *) expectedValueIntervalMs completion:(void (^)(MTRUnitTestingClusterTestStructArrayArgumentResponseParams *data, NSError *error)) completion;
 ```
 
 

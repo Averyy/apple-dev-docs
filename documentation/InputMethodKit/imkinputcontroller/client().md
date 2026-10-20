@@ -1,7 +1,8 @@
 # client()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the client object associated with the input controller.
 
@@ -14,6 +15,10 @@ Returns the client object associated with the input controller.
 func client() -> (any IMKTextInput & NSObjectProtocol)!
 ```
 
+```objc
+- (id<IMKTextInput,NSObject>) client;
+```
+
 #### Return Value
 
 The client object.
@@ -24,7 +29,8 @@ The client object conforms to the `IMKTextInput` protocol.
 
 ## See Also
 
-- [func server() -> IMKServer!](imkinputcontroller/server.md)
+### Getting the Client and Server Objects
+- [func server() -> IMKServer!](./server%28%29.md)
   Returns the server object that manages the input controller.
 
 

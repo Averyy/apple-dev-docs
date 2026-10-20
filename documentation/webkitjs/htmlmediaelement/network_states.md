@@ -1,19 +1,20 @@
 # Network States
 
-**Framework**: WebKit JS
+**Framework**: WebKit JS  
+**Role**: API Collection
 
-Possible values for the [`networkState`](htmlmediaelement/1633289-networkstate.md) property.
+Possible values for the [`networkState`](./api-1633289-networkstate.md) property.
 
 ## Topics
 
 ### Constants
-- [NETWORK_EMPTY](htmlmediaelement/1629429-network_empty.md)
+- [NETWORK_EMPTY](./api-1629429-network_empty.md)
   The element is not initialized.
-- [NETWORK_IDLE](htmlmediaelement/1629446-network_idle.md)
+- [NETWORK_IDLE](./api-1629446-network_idle.md)
   The network connection is idle.
-- [NETWORK_LOADING](htmlmediaelement/1630624-network_loading.md)
+- [NETWORK_LOADING](./api-1630624-network_loading.md)
   The media resource is loading.
-- [NETWORK_NO_SOURCE](htmlmediaelement/1633898-network_no_source.md)
+- [NETWORK_NO_SOURCE](./api-1633898-network_no_source.md)
   No media resource was found.
 
 

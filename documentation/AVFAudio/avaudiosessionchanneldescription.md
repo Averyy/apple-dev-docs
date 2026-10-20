@@ -1,7 +1,8 @@
 # AVAudioSessionChannelDescription
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that describes a hardware channel on the current device.
 
@@ -19,51 +20,56 @@ A class that describes a hardware channel on the current device.
 class AVAudioSessionChannelDescription
 ```
 
+```objc
+@interface AVAudioSessionChannelDescription : NSObject
+```
+
 ## Mentions
 
-- [Routing audio to specific devices in multidevice sessions](routing-audio-to-specific-devices-in-multidevice-sessions.md)
+- [Routing audio to specific devices in multidevice sessions](./routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
 ## Topics
 
 ### Getting the channel information
-- [var channelName: String](avaudiosessionchanneldescription/channelname.md)
+- [var channelName: String](./avaudiosessionchanneldescription/channelname.md)
   The descriptive name for the channel.
-- [var channelNumber: Int](avaudiosessionchanneldescription/channelnumber.md)
+- [var channelNumber: Int](./avaudiosessionchanneldescription/channelnumber.md)
   The index of this channel in its owning port’s array of channels.
-- [var owningPortUID: String](avaudiosessionchanneldescription/owningportuid.md)
+- [var owningPortUID: String](./avaudiosessionchanneldescription/owningportuid.md)
   The unique identifier (UID) for this channel’s owning port.
-- [var channelLabel: AudioChannelLabel](avaudiosessionchanneldescription/channellabel.md)
+- [var channelLabel: AudioChannelLabel](./avaudiosessionchanneldescription/channellabel.md)
   A description of the physical location of this channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var portName: String](avaudiosessionportdescription/portname.md)
+### Getting the port attributes
+- [var portName: String](./avaudiosessionportdescription/portname.md)
   A descriptive name for the port.
-- [var portType: AVAudioSession.Port](avaudiosessionportdescription/porttype.md)
+- [var portType: AVAudioSession.Port](./avaudiosessionportdescription/porttype.md)
   The type of the port.
-- [AVAudioSession.Port](avaudiosession/port.md)
+- [AVAudioSession.Port](./avaudiosession/port.md)
   A structure that defines the available input and output port types.
-- [var channels: [AVAudioSessionChannelDescription]?](avaudiosessionportdescription/channels.md)
+- [var channels: [AVAudioSessionChannelDescription]?](./avaudiosessionportdescription/channels.md)
   An array of channel objects that describe the port’s input or output channels.
-- [var uid: String](avaudiosessionportdescription/uid.md)
+- [var uid: String](./avaudiosessionportdescription/uid.md)
   A system-assigned unique identifier (UID) for the port.
-- [var hasHardwareVoiceCallProcessing: Bool](avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
+- [var hasHardwareVoiceCallProcessing: Bool](./avaudiosessionportdescription/hashardwarevoicecallprocessing.md)
   A Boolean value that indicates whether the associated hardware port has built-in processing for two-way voice communication.
-- [var isSpatialAudioEnabled: Bool](avaudiosessionportdescription/isspatialaudioenabled.md)
+- [var isSpatialAudioEnabled: Bool](./avaudiosessionportdescription/isspatialaudioenabled.md)
   A Boolean value that indicates whether the port supports spatial audio playback.
 
 

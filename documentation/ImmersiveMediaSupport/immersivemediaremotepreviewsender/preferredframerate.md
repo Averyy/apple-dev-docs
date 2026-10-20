@@ -1,7 +1,8 @@
 # preferredFrameRate
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred frame rate to use when sending and previewing frames. This is optional; a value of `-1` enables the system to decide the best framerate based on network quality.
 

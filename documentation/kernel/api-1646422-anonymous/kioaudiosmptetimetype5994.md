@@ -1,14 +1,15 @@
 # kIOAudioSMPTETimeType5994
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOAudioSMPTETimeType5994 = 7
 ```
 

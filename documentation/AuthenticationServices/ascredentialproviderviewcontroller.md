@@ -1,7 +1,8 @@
 # ASCredentialProviderViewController
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view controller that a credential manager app uses to extend AutoFill.
 
@@ -18,138 +19,151 @@ A view controller that a credential manager app uses to extend AutoFill.
 class ASCredentialProviderViewController
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@interface ASCredentialProviderViewController : UIViewController
+```
+
+*macOS*
+
+```objc
+@interface ASCredentialProviderViewController : NSViewController
+```
+
 #### Overview
 
 To integrate a password, passkey, or one-time passcode manager app with AutoFill:
 
-1. Add a Credential Provider Extension target to your project that subclasses [`ASCredentialProviderViewController`](ascredentialproviderviewcontroller.md). Add the [`AutoFill Credential Provider Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider) to both the extension and its containing app.
-2. Override the view controller’s [`prepareCredentialList(for:)`](ascredentialproviderviewcontroller/preparecredentiallist(for:).md) method to prepare a view with a list of credentials that the person can choose from after opening your extension from the AutoFill suggestions list.
-3. Optionally add [`ASPasswordCredentialIdentity`](aspasswordcredentialidentity.md) and [`ASPasskeyCredentialIdentity`](aspasskeycredentialidentity.md) instances to the shared [`ASCredentialIdentityStore`](ascredentialidentitystore.md) to make identities available directly in the AutoFill suggestions list. Then override the [`provideCredentialWithoutUserInteraction(for:)`](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-3mo23.md) method to provide the associated credentials when the person taps a suggestion.
-4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration().md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
+1. Add a Credential Provider Extension target to your project that subclasses [`ASCredentialProviderViewController`](./ascredentialproviderviewcontroller.md). Add the [`AutoFill Credential Provider Entitlement`](../BundleResources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md) to both the extension and its containing app.
+2. Override the view controller’s [`prepareCredentialList(for:)`](./ascredentialproviderviewcontroller/preparecredentiallist%28for%29.md) method to prepare a view with a list of credentials that the person can choose from after opening your extension from the AutoFill suggestions list.
+3. Optionally add [`ASPasswordCredentialIdentity`](./aspasswordcredentialidentity.md) and [`ASPasskeyCredentialIdentity`](./aspasskeycredentialidentity.md) instances to the shared [`ASCredentialIdentityStore`](./ascredentialidentitystore.md) to make identities available directly in the AutoFill suggestions list. Then override the [`provideCredentialWithoutUserInteraction(for:)`](./ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction%28for%29-3mo23.md) method to provide the associated credentials when the person taps a suggestion.
+4. Optionally, override the [`prepareInterfaceForExtensionConfiguration()`](./ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration%28%29.md) method to specify a configuration interface that you can show when people first enable your credentials manager in Settings.
 
-##### Receiving Credential Updates
+##### Receiving credential updates
 
-Apps and websites that allow sign-ins can signal updates to the operating system with the [`ASCredentialUpdater`](ascredentialupdater.md) class. The various “report” methods of [`ASCredentialUpdater`](ascredentialupdater.md) work like the “signal” methods of `PublicKeyCredential` when using WebAuthn on the web. For example, a website or app can notify credential manager apps that it updated a user name or email for a given account, allowing the manager to stay consistent with the website.
+Apps and websites that allow sign-ins can signal updates to the operating system with the [`ASCredentialUpdater`](./ascredentialupdater.md) class. The various “report” methods of [`ASCredentialUpdater`](./ascredentialupdater.md) work like the “signal” methods of `PublicKeyCredential` when using WebAuthn on the web. For example, a website or app can notify credential manager apps that it updated a user name or email for a given account, allowing the manager to stay consistent with the website.
 
-Your credential manager manager receives these updates in the “report” methods of `ASCredentialProviderViewController`. Use these calls to update your manager’s stored credential data or behavior. For example, a call to [`reportUnusedPasswordCredential(forDomain:userName:)`](ascredentialproviderviewcontroller/reportunusedpasswordcredential(fordomain:username:).md) can indicate that someone using a passkey will no longer use a password to sign in to a given domain, or that they deleted their account. In this case, the manager should stop showing the user name and password for that domain.
+Your credential manager manager receives these updates in the “report” methods of `ASCredentialProviderViewController`. Use these calls to update your manager’s stored credential data or behavior. For example, a call to [`reportUnusedPasswordCredential(forDomain:userName:)`](./ascredentialproviderviewcontroller/reportunusedpasswordcredential%28fordomain,username%29.md) can indicate that someone using a passkey will no longer use a password to sign in to a given domain, or that they deleted their account. In this case, the manager should stop showing the user name and password for that domain.
 
 > **Note**:  This class ignores calls from Mac apps built with Mac Catalyst.
 
 ## Topics
 
 ### Getting the extension context
-- [var extensionContext: ASCredentialProviderExtensionContext](ascredentialproviderviewcontroller/extensioncontext.md)
+- [var extensionContext: ASCredentialProviderExtensionContext](./ascredentialproviderviewcontroller/extensioncontext.md)
   The context your credential provider extension uses to provide information to the system.
-- [class ASCredentialProviderExtensionContext](ascredentialproviderextensioncontext.md)
+- [class ASCredentialProviderExtensionContext](./ascredentialproviderextensioncontext.md)
   A mechanism that credential provider extensions use to communicate with the system.
 ### Configuring the credential provider extension
-- [func prepareInterfaceForExtensionConfiguration()](ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration.md)
+- [func prepareInterfaceForExtensionConfiguration()](./ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration%28%29.md)
   Prepares the interface to enable the user to configure the extension.
-- [class ASCredentialIdentityStore](ascredentialidentitystore.md)
+- [class ASCredentialIdentityStore](./ascredentialidentitystore.md)
   A container that your extension fills to provide credentials through the QuickType bar.
 ### Selecting a credential
-- [func prepareCredentialList(for: [ASCredentialServiceIdentifier])](ascredentialproviderviewcontroller/preparecredentiallist(for:).md)
+- [func prepareCredentialList(for: [ASCredentialServiceIdentifier])](./ascredentialproviderviewcontroller/preparecredentiallist%28for%29.md)
   Prepares the interface to display a list of credentials from which the user can select.
-- [func prepareCredentialList(for: [ASCredentialServiceIdentifier], requestParameters: ASPasskeyCredentialRequestParameters)](ascredentialproviderviewcontroller/preparecredentiallist(for:requestparameters:).md)
+- [func prepareCredentialList(for: [ASCredentialServiceIdentifier], requestParameters: ASPasskeyCredentialRequestParameters)](./ascredentialproviderviewcontroller/preparecredentiallist%28for,requestparameters%29.md)
   Prepares the interface to display a list of passkey and password credentials from which the user can select.
-- [func prepareOneTimeCodeCredentialList(for: [ASCredentialServiceIdentifier])](ascredentialproviderviewcontroller/prepareonetimecodecredentiallist(for:).md)
+- [func prepareOneTimeCodeCredentialList(for: [ASCredentialServiceIdentifier])](./ascredentialproviderviewcontroller/prepareonetimecodecredentiallist%28for%29.md)
   Prepares the interface to display a list of one-time passcodes (OTPs) that people can select from.
-- [func prepareInterface(forPasskeyRegistration: any ASCredentialRequest)](ascredentialproviderviewcontroller/prepareinterface(forpasskeyregistration:).md)
+- [func prepareInterface(forPasskeyRegistration: any ASCredentialRequest)](./ascredentialproviderviewcontroller/prepareinterface%28forpasskeyregistration%29.md)
   Prepare the view controller to show user interface for registering a new passkey.
-- [func prepareInterfaceToProvideCredential(for: any ASCredentialRequest)](ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential(for:)-68qpo.md)
+- [func prepareInterfaceToProvideCredential(for: any ASCredentialRequest)](./ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential%28for%29-68qpo.md)
   Prepare the view controller to show user interface for providing the requested credential.
-- [func provideCredentialWithoutUserInteraction(for: any ASCredentialRequest)](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-3mo23.md)
+- [func provideCredentialWithoutUserInteraction(for: any ASCredentialRequest)](./ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction%28for%29-3mo23.md)
   Attempts to provide the user-requested credential with no further user interaction.
-- [func performWithoutUserInteractionIfPossible(passkeyRegistration: ASPasskeyCredentialRequest)](ascredentialproviderviewcontroller/performwithoutuserinteractionifpossible(passkeyregistration:).md)
+- [func performWithoutUserInteractionIfPossible(passkeyRegistration: ASPasskeyCredentialRequest)](./ascredentialproviderviewcontroller/performwithoutuserinteractionifpossible%28passkeyregistration%29.md)
   Perform a conditional passkey registration, if possible.
-- [class ASCredentialServiceIdentifier](ascredentialserviceidentifier.md)
+- [class ASCredentialServiceIdentifier](./ascredentialserviceidentifier.md)
   An identifier representing a particular service for which the user needs a credential, like a web site.
-- [protocol ASCredentialRequest](ascredentialrequest.md)
+- [protocol ASCredentialRequest](./ascredentialrequest.md)
   A protocol that describes a request from the user for your extension to provide a credential.
-- [class ASPasswordCredentialRequest](aspasswordcredentialrequest.md)
+- [class ASPasswordCredentialRequest](./aspasswordcredentialrequest.md)
   A class that represents a request to supply a password credential.
-- [class ASOneTimeCodeCredentialRequest](asonetimecodecredentialrequest.md)
-- [protocol ASAuthorizationPublicKeyCredentialRegistrationRequest](asauthorizationpublickeycredentialregistrationrequest.md)
+- [class ASOneTimeCodeCredentialRequest](./asonetimecodecredentialrequest.md)
+- [protocol ASAuthorizationPublicKeyCredentialRegistrationRequest](./asauthorizationpublickeycredentialregistrationrequest.md)
   An interface that defines properties for a credential registration request.
-- [class ASPasskeyCredentialRequest](aspasskeycredentialrequest.md)
+- [class ASPasskeyCredentialRequest](./aspasskeycredentialrequest.md)
   A class that represents a request to supply a passkey credential.
-- [class ASPasskeyCredentialRequestParameters](aspasskeycredentialrequestparameters.md)
+- [class ASPasskeyCredentialRequestParameters](./aspasskeycredentialrequestparameters.md)
   A class that represents information about a passkey credential request.
 ### Providing text to AutoFill
-- [func prepareInterfaceForUserChoosingTextToInsert()](ascredentialproviderviewcontroller/prepareinterfaceforuserchoosingtexttoinsert.md)
+- [func prepareInterfaceForUserChoosingTextToInsert()](./ascredentialproviderviewcontroller/prepareinterfaceforuserchoosingtexttoinsert%28%29.md)
   Prepare the view controller to show a list of all insertable text with user selectable fields.
 ### Recognizing errors
-- [struct ASExtensionError](asextensionerror.md)
+- [struct ASExtensionError](./asextensionerror.md)
   A credential provider extension error.
-- [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
+- [let ASExtensionErrorDomain: String](./asextensionerrordomain.md)
   The domain for a credential provider extension error.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./asextensionerror/code.md)
   The codes for a credential provider extension error.
 ### Accessing settings
-- [class ASSettingsHelper](assettingshelper.md)
+- [class ASSettingsHelper](./assettingshelper.md)
   A class that opens Settings and navigates to the settings for configuring credential providers.
 ### Receiving credential updates
-- [func reportAllAcceptedPublicKeyCredentials(forRelyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])](ascredentialproviderviewcontroller/reportallacceptedpublickeycredentials(forrelyingparty:userhandle:acceptedcredentialids:).md)
+- [func reportAllAcceptedPublicKeyCredentials(forRelyingParty: String, userHandle: Data, acceptedCredentialIDs: [Data])](./ascredentialproviderviewcontroller/reportallacceptedpublickeycredentials%28forrelyingparty,userhandle,acceptedcredentialids%29.md)
   Receives a report from the system that a relying party sent a snapshot of all accepted credentials for an account.
-- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](ascredentialproviderviewcontroller/reportpublickeycredentialupdate(forrelyingparty:userhandle:newname:).md)
+- [func reportPublicKeyCredentialUpdate(forRelyingParty: String, userHandle: Data, newName: String)](./ascredentialproviderviewcontroller/reportpublickeycredentialupdate%28forrelyingparty,userhandle,newname%29.md)
   Receives a report from the system that a relying party indicated that a passkey’s user name updated.
-- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](ascredentialproviderviewcontroller/reportunknownpublickeycredential(forrelyingparty:credentialid:).md)
+- [func reportUnknownPublicKeyCredential(forRelyingParty: String, credentialID: Data)](./ascredentialproviderviewcontroller/reportunknownpublickeycredential%28forrelyingparty,credentialid%29.md)
   Receives a report from the system that a relying party indicated a passkey credential is invalid.
-- [func reportUnusedPasswordCredential(forDomain: String, userName: String)](ascredentialproviderviewcontroller/reportunusedpasswordcredential(fordomain:username:).md)
+- [func reportUnusedPasswordCredential(forDomain: String, userName: String)](./ascredentialproviderviewcontroller/reportunusedpasswordcredential%28fordomain,username%29.md)
   Receives a report from the system that a relying party indicatd that a password credential isn’t needed anymore for a given user name.
 ### Deprecated methods
-- [func provideCredentialWithoutUserInteraction(for: ASPasswordCredentialIdentity)](ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction(for:)-7jlg0.md)
+- [func provideCredentialWithoutUserInteraction(for: ASPasswordCredentialIdentity)](./ascredentialproviderviewcontroller/providecredentialwithoutuserinteraction%28for%29-7jlg0.md)
   Attempts to provide the user-requested credential with no further user interaction.
-- [func prepareInterfaceToProvideCredential(for: ASPasswordCredentialIdentity)](ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential(for:)-18ukb.md)
+- [func prepareInterfaceToProvideCredential(for: ASPasswordCredentialIdentity)](./ascredentialproviderviewcontroller/prepareinterfacetoprovidecredential%28for%29-18ukb.md)
   Prepares the interface for a user interaction, like a database login, that enables it to access and return the credential for the given identity.
 ### Instance Methods
-- [func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswordsRequest)](ascredentialproviderviewcontroller/performwithoutuserinteraction(generatepasswordsrequest:).md)
+- [func performWithoutUserInteraction(generatePasswordsRequest: ASGeneratePasswordsRequest)](./ascredentialproviderviewcontroller/performwithoutuserinteraction%28generatepasswordsrequest%29.md)
   Attempt to generate passwords based on developer-specified rules.
-- [func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePasswordRequest)](ascredentialproviderviewcontroller/performwithoutuserinteractionifpossible(savepasswordrequest:).md)
+- [func performWithoutUserInteractionIfPossible(savePasswordRequest: ASSavePasswordRequest)](./ascredentialproviderviewcontroller/performwithoutuserinteractionifpossible%28savepasswordrequest%29.md)
   Attempt to save a password credential.
-- [func prepareInterface(for: ASSavePasswordRequest)](ascredentialproviderviewcontroller/prepareinterface(for:)-69elg.md)
+- [func prepareInterface(for: ASSavePasswordRequest)](./ascredentialproviderviewcontroller/prepareinterface%28for%29-69elg.md)
   Prepares the interface to display a prompt to save a password credential.
-- [func prepareInterface(for: ASGeneratePasswordsRequest)](ascredentialproviderviewcontroller/prepareinterface(for:)-7ideq.md)
+- [func prepareInterface(for: ASGeneratePasswordsRequest)](./ascredentialproviderviewcontroller/prepareinterface%28for%29-7ideq.md)
   Prepares the interface to display a prompt to generate passwords based on developer-specified rules.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Providing one-time passcodes to AutoFill](providing-one-time-passcodes-to-autofill.md)
+### AutoFill credentials
+- [Providing one-time passcodes to AutoFill](./providing-one-time-passcodes-to-autofill.md)
   Help people efficiently perform multifactor authentication.
-- [AutoFill Credential Provider Entitlement](../bundleresources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
+- [AutoFill Credential Provider Entitlement](../BundleResources/entitlements/com.apple.developer.authentication-services.autofill-credential-provider.md)
   A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 
 

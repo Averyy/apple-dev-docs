@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns a modified attribute container as part of building a chain of attributes.
 
@@ -22,7 +23,7 @@ subscript<K>(dynamicMember keyPath: KeyPath<AttributeDynamicLookup, K>) -> Attri
 
 #### Discussion
 
-This method returns an [`AttributeContainer.Builder`](attributecontainer/builder.md), which allows you to chain multiple attributes in a single call, like this:
+This method returns an [`AttributeContainer.Builder`](./builder.md), which allows you to chain multiple attributes in a single call, like this:
 
 ```swift
 // An attribute container with the link and backgroundColor attributes.
@@ -31,17 +32,18 @@ let myContainer = AttributeContainer().link(myURL).backgroundColor(.yellow)
 
 ## See Also
 
-- [subscript<T>(T.Type) -> T.Value?](attributecontainer/subscript(_:).md)
+### Accessing Attributes
+- [subscript<T>(T.Type) -> T.Value?](./subscript%28_%29.md)
   Returns the attribute that corresponds to a specified key.
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributecontainer/subscript(dynamicmember:)-657oj.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./subscript%28dynamicmember%29-657oj.md)
   Returns the attribute that corresponds to a specified key path.
-- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributecontainer/subscript(dynamicmember:)-3jcvx.md)
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](./subscript%28dynamicmember%29-3jcvx.md)
   Returns the attribute container that corresponds to a specified key path.
-- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](attributecontainer/subscript(dynamicmember:)-swift.type.subscript.md)
+- [static subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> AttributeContainer.Builder<K>](./subscript%28dynamicmember%29-swift.type.subscript.md)
   Returns a modified attribute container as part of building a chain of attributes, for use as a static method.
-- [protocol AttributedStringKey](attributedstringkey.md)
+- [protocol AttributedStringKey](../attributedstringkey.md)
   A type that defines an attribute’s name and type.
-- [AttributeContainer.Builder](attributecontainer/builder.md)
+- [AttributeContainer.Builder](./builder.md)
   A type that iteratively builds attribute containers by setting attribute values.
 
 

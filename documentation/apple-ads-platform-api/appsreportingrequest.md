@@ -1,7 +1,8 @@
 # AppsReportingRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request body for apps reporting queries.
 
@@ -10,7 +11,7 @@ Request body for apps reporting queries.
 
 ## Declaration
 
-```swift
+```
 object AppsReportingRequest
 ```
 
@@ -63,45 +64,47 @@ The `AppsReportingRequest` object is the request body for all apps entity-level 
 
 ## Properties
 
-- `pagination` (RequestPagination): Pagination settings for the report results. See [`RequestPagination`](requestpagination.md) for details.
-- `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](sorting.md) for details.
-- `filters` ([Filter]): Filter field conditions for the report. `campaignId` is a required filter for ad group, ad, keyword, and search term reports and optional for campaign reports. See [`Filter`](filter.md) for details.
+- `pagination` (RequestPagination): Pagination settings for the report results. See [`RequestPagination`](./requestpagination.md) for details.
+- `sorting` ([Sorting]): Sort entities in ascending or descending order. The default behavior is to sort by ID, ascending. See [`Sorting`](./sorting.md) for details.
+- `filters` ([Filter]): Filter field conditions for the report. `campaignId` is a required filter for ad group, ad, keyword, and search term reports and optional for campaign reports. See [`Filter`](./filter.md) for details.
 - `fields` ([string]): A list of field names to return in the response. If you omit this field, the response includes all fields.
 - `groupBy` ([string]): Groups responses by selected dimensions. Supported values for APPS: `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`. Note: `KEYWORD` and `SEARCHTERM` entities exclude `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`. The `AD` entity also excludes `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, supporting only `countryOrRegion`.
-- `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](timerange.md) for details.
-- `options` (AppsOptions): Options to include additional rows in the report (for example, GRAND_TOTAL, EMPTY_METRICS). You can’t combine `EMPTY_METRICS` with `groupBy`. See [`AppsOptions`](appsoptions.md) for details.
+
+  **Allowed Values**: `deviceClass`, `ageRange`, `gender`, `countryCode`, `adminArea`, `locality`, `countryOrRegion`
+- `timeRange` (TimeRange): The date range, timezone, and granularity for report data. Defines the start and end dates for the reporting period. See [`TimeRange`](./timerange.md) for details.
+- `options` (AppsOptions): Options to include additional rows in the report (for example, GRAND_TOTAL, EMPTY_METRICS). You can’t combine `EMPTY_METRICS` with `groupBy`. See [`AppsOptions`](./appsoptions.md) for details.
 
 ## See Also
 
-- [object AppsReportingCampaign](appsreportingcampaign.md)
+- [object AppsReportingCampaign](./appsreportingcampaign.md)
   Campaign metadata for apps report rows.
-- [object AppsReportingAdGroup](appsreportingadgroup.md)
+- [object AppsReportingAdGroup](./appsreportingadgroup.md)
   Ad group metadata for apps report rows.
-- [object AppsReportingAd](appsreportingad.md)
+- [object AppsReportingAd](./appsreportingad.md)
   Ad metadata for apps report rows.
-- [object AppsReportingCreative](appsreportingcreative.md)
+- [object AppsReportingCreative](./appsreportingcreative.md)
   Creative metadata for apps ads.
-- [object AppsCampaignReportResponse](appscampaignreportresponse.md)
+- [object AppsCampaignReportResponse](./appscampaignreportresponse.md)
   The top-level response envelope for apps campaign-level reports.
-- [object AppsCampaignReportRow](appscampaignreportrow.md)
+- [object AppsCampaignReportRow](./appscampaignreportrow.md)
   A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object AppsCampaignReportSummary](appscampaignreportsummary.md)
+- [object AppsCampaignReportSummary](./appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
-- [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
+- [object AppsCampaignResultContainer](./appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
-- [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
+- [object AppsAdGroupReportResponse](./appsadgroupreportresponse.md)
   The top-level response envelope for apps ad group reports.
-- [object AppsAdGroupReportRow](appsadgroupreportrow.md)
+- [object AppsAdGroupReportRow](./appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
+- [object AppsAdGroupReportSummary](./appsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad group report.
-- [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
+- [object AppsAdGroupResultContainer](./appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
-- [object AppsAdReportResponse](appsadreportresponse.md)
+- [object AppsAdReportResponse](./appsadreportresponse.md)
   The top-level response envelope for apps ad-level reports.
-- [object AppsAdReportRow](appsadreportrow.md)
+- [object AppsAdReportRow](./appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdReportSummary](appsadreportsummary.md)
+- [object AppsAdReportSummary](./appsadreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 

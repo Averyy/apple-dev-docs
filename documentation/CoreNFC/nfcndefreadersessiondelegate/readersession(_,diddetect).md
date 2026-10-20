@@ -1,7 +1,8 @@
 # readerSession(_:didDetect:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session detected NFC tags with NDEF messages and enables read-write capability for the session.
 
@@ -16,9 +17,14 @@ Tells the delegate that the session detected NFC tags with NDEF messages and ena
 optional func readerSession(_ session: NFCNDEFReaderSession, didDetect tags: [any NFCNDEFTag])
 ```
 
+```objc
+- (void) readerSession:(NFCNDEFReaderSession *) session didDetectTags:(NSArray<__kindof id<NFCNDEFTag>> *) tags;
+```
+
 ## See Also
 
-- [func readerSession(NFCNDEFReaderSession, didDetectNDEFs: [NFCNDEFMessage])](nfcndefreadersessiondelegate/readersession(_:diddetectndefs:).md)
+### Finding NDEF Messages and Tags
+- [func readerSession(NFCNDEFReaderSession, didDetectNDEFs: [NFCNDEFMessage])](./readersession%28_,diddetectndefs%29.md)
   Tells the delegate that the session detected NFC tags with NDEF messages.
 
 

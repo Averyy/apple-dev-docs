@@ -1,7 +1,8 @@
 # handleStatusChange()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets up an observer for the status notification and models it as an asynchronous sequence.
 
@@ -19,15 +20,16 @@ func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>
 
 #### Discussion
 
-The [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) created by this method produces a new status every time the filter posts the [`NEURLFilterStatusDidChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/neurlfilterstatusdidchange) notification.
+The [`AsyncSequence`](../../Swift/asyncsequence.md) created by this method produces a new status every time the filter posts the [`NEURLFilterStatusDidChange`](../../Foundation/nsnotification/name-swift.struct/neurlfilterstatusdidchange.md) notification.
 
 Use this method to watch for the status change notification and react to it.
 
 ## See Also
 
-- [var status: NEURLFilterManager.Status](neurlfiltermanager/status-swift.property.md)
+### Working with filter statuses
+- [var status: NEURLFilterManager.Status](./status-swift.property.md)
   The current status of the URL filter.
-- [NEURLFilterManager.Status](neurlfiltermanager/status-swift.enum.md)
+- [NEURLFilterManager.Status](./status-swift.enum.md)
   An enumeration of URL filter status codes.
 
 

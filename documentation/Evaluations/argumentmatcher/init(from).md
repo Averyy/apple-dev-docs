@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an argument matcher from the given decoder.
 
@@ -22,7 +23,7 @@ init(from decoder: any Decoder) throws
 
 #### Discussion
 
-> **Note**: An error if the data is corrupted or a required value is missing.
+> **Throws**: An error if the data is corrupted or a required value is missing.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # AppTag.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app tag resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app tag resource.
 
 ## Declaration
 
-```swift
+```
 object AppTag.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppTag.Attributes
 
 ## See Also
 
-- [object AppTag.Relationships](apptag/relationships-data.dictionary.md)
+### Dictionaries
+- [object AppTag.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # init(cvImageBuffer:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an image object from the contents of a Core Video image buffer, using the specified options.
 
@@ -19,6 +20,10 @@ Initializes an image object from the contents of a Core Video image buffer, usin
 init(cvImageBuffer imageBuffer: CVImageBuffer, options: [CIImageOption : Any]? = nil)
 ```
 
+```objc
+- (instancetype) initWithCVImageBuffer:(CVImageBufferRef) imageBuffer options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
 The initialized image object.
@@ -27,44 +32,45 @@ The initialized image object.
 
 The `imageBuffer` parameter must be in one of the following formats:
 
-- [`kCVPixelFormatType_32ARGB`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32argb)
-- [`kCVPixelFormatType_422YpCbCr8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_422ypcbcr8)
-- [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra)
+- [`kCVPixelFormatType_32ARGB`](../../CoreVideo/kcvpixelformattype_32argb.md)
+- [`kCVPixelFormatType_422YpCbCr8`](../../CoreVideo/kcvpixelformattype_422ypcbcr8.md)
+- [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md)
 
 ## Parameters
 
-- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [`Core Video`](https://developer.apple.com/documentation/corevideo).
+- `imageBuffer`: A  `CVImageBuffer` object in a supported pixel format constant. For more information, see [Core Video](../../CoreVideo/CoreVideo.md).
 - `options`: A dictionary that contains options for creating an image object. (See `Image Dictionary Keys`.) The pixel format is supplied by the `CVImageBuffer` object.)
 
 ## See Also
 
-- [class func empty() -> CIImage](ciimage/empty.md)
+### Creating an Image
+- [class func empty() -> CIImage](./empty%28%29.md)
   Creates and returns an empty image object.
-- [init?(image: UIImage)](ciimage/init(image:).md)
+- [init?(image: UIImage)](./init%28image%29.md)
   Initializes an image object with the specified UIKit image object.
-- [init?(image: UIImage, options: [CIImageOption : Any]?)](ciimage/init(image:options:).md)
+- [init?(image: UIImage, options: [CIImageOption : Any]?)](./init%28image,options%29.md)
   Initializes an image object with the specified UIKit image object, using the specified options.
-- [init?(contentsOf: URL)](ciimage/init(contentsof:).md)
+- [init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes an image object by reading an image from a URL.
-- [init?(contentsOf: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsof:options:).md)
+- [init?(contentsOf: URL, options: [CIImageOption : Any]?)](./init%28contentsof,options%29.md)
   Initializes an image object by reading an image from a URL, using the specified options.
-- [init(cgImage: CGImage)](ciimage/init(cgimage:)-2kvvb.md)
+- [init(cgImage: CGImage)](./init%28cgimage%29-2kvvb.md)
   Initializes an image object with a Quartz 2D image.
-- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-8663h.md)
+- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](./init%28cgimage,options%29-8663h.md)
   Initializes an image object with a Quartz 2D image, using the specified options.
-- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-e2bz.md)
-- [init?(data: Data)](ciimage/init(data:).md)
+- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](./init%28cgimagesource,index,options%29-e2bz.md)
+- [init?(data: Data)](./init%28data%29.md)
   Initializes an image object with the supplied image data.
-- [init?(data: Data, options: [CIImageOption : Any]?)](ciimage/init(data:options:).md)
+- [init?(data: Data, options: [CIImageOption : Any]?)](./init%28data,options%29.md)
   Initializes an image object with the supplied image data, using the specified options.
-- [init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)](ciimage/init(bitmapdata:bytesperrow:size:format:colorspace:).md)
+- [init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)](./init%28bitmapdata,bytesperrow,size,format,colorspace%29.md)
   Initializes an image object with bitmap data.
-- [init?(bitmapImageRep: NSBitmapImageRep)](ciimage/init(bitmapimagerep:).md)
+- [init?(bitmapImageRep: NSBitmapImageRep)](./init%28bitmapimagerep%29.md)
   Initializes an image object with the specified bitmap image representation.
-- [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](ciimage/init(imageprovider:size:_:format:colorspace:options:).md)
+- [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](./init%28imageprovider,size,_,format,colorspace,options%29.md)
   Initializes an image object based on pixels from an image provider object.
-- [init?(depthData: AVDepthData)](ciimage/init(depthdata:).md)
-- [init?(depthData: AVDepthData, options: [String : Any]?)](ciimage/init(depthdata:options:).md)
+- [init?(depthData: AVDepthData)](./init%28depthdata%29.md)
+- [init?(depthData: AVDepthData, options: [String : Any]?)](./init%28depthdata,options%29.md)
 
 
 ---

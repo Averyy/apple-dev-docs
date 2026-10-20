@@ -1,10 +1,11 @@
 # DOM_BUBBLING_PHASE
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var DOM_BUBBLING_PHASE: Int { get }
 ```
 
+```c
+DOM_BUBBLING_PHASE
+```
+
 ## See Also
 
-- [var DOM_AT_TARGET: Int](dom_at_target.md)
-- [var DOM_CAPTURING_PHASE: Int](dom_capturing_phase.md)
-- [var DOM_NONE: Int](dom_none.md)
+### Constants
+- [var DOM_AT_TARGET: Int](./dom_at_target.md)
+- [var DOM_CAPTURING_PHASE: Int](./dom_capturing_phase.md)
+- [var DOM_NONE: Int](./dom_none.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SecKeychainAttribute
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds a single keychain attribute.
 
@@ -14,23 +15,27 @@ A structure that holds a single keychain attribute.
 struct SecKeychainAttribute
 ```
 
+```c
+struct SecKeychainAttribute;
+```
+
 ## Topics
 
 ### Instance Properties
-- [var data: UnsafeMutableRawPointer?](seckeychainattribute/data.md)
+- [var data: UnsafeMutableRawPointer?](./seckeychainattribute/data.md)
   A pointer to the attribute data.
-- [var length: UInt32](seckeychainattribute/length.md)
+- [var length: UInt32](./seckeychainattribute/length.md)
   The length of the buffer pointed to by data.
-- [var tag: SecKeychainAttrType](seckeychainattribute/tag.md)
+- [var tag: SecKeychainAttrType](./seckeychainattribute/tag.md)
   A 4-byte attribute tag.
 ### Initializers
-- [init()](seckeychainattribute/init.md)
-- [init(tag: SecKeychainAttrType, length: UInt32, data: UnsafeMutableRawPointer?)](seckeychainattribute/init(tag:length:data:).md)
+- [init()](./seckeychainattribute/init%28%29.md)
+- [init(tag: SecKeychainAttrType, length: UInt32, data: UnsafeMutableRawPointer?)](./seckeychainattribute/init%28tag,length,data%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

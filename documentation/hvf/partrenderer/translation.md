@@ -1,7 +1,8 @@
 # PartRenderer.Translation
 
 **Framework**: hvf  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A translation applied to a subpart
 
@@ -23,16 +24,16 @@ struct Translation
 ## Topics
 
 ### Initializers
-- [init(dx: Double, dy: Double)](partrenderer/translation/init(dx:dy:).md)
+- [init(dx: Double, dy: Double)](./translation/init%28dx,dy%29.md)
 ### Instance Properties
-- [var dx: Double](partrenderer/translation/dx.md)
-- [var dy: Double](partrenderer/translation/dy.md)
+- [var dx: Double](./translation/dx.md)
+- [var dy: Double](./translation/dy.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

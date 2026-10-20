@@ -1,19 +1,22 @@
 # NSApplicationServiceUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - tvOS 16.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSApplicationServiceUsageDescription`
+- **Type**: string
 
 ## See Also
 
-- [NSApplicationServiceIdentifier](information-property-list/nsapplicationservices/browses/nsapplicationserviceidentifier.md)
-- [NSApplicationServicePlatformSupport](information-property-list/nsapplicationservices/browses/nsapplicationserviceplatformsupport.md)
+### Property List Keys
+- [NSApplicationServiceIdentifier](./nsapplicationserviceidentifier.md)
+- [NSApplicationServicePlatformSupport](./nsapplicationserviceplatformsupport.md)
 
 
 ---

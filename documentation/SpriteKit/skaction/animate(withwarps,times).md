@@ -1,9 +1,10 @@
 # animate(withWarps:times:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
-Creates an action to distort a node through a sequence of [`SKWarpGeometry`](skwarpgeometry.md) objects.
+Creates an action to distort a node through a sequence of [`SKWarpGeometry`](../skwarpgeometry.md) objects.
 
 **Availability**:
 - iOS 10.0+
@@ -20,9 +21,13 @@ Creates an action to distort a node through a sequence of [`SKWarpGeometry`](skw
 class func animate(withWarps warps: [SKWarpGeometry], times: [NSNumber]) -> SKAction?
 ```
 
+```objc
++ (SKAction *) animateWithWarps:(NSArray<SKWarpGeometry *> *) warps times:(NSArray<NSNumber *> *) times;
+```
+
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
+- [Animate the Warping of a Sprite](../animate-the-warping-of-a-sprite.md)
 
 #### Return Value
 
@@ -30,7 +35,7 @@ A new action object.
 
 #### Discussion
 
-The [`numberOfColumns`](skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRows`](skwarpgeometrygrid/numberofrows.md) in each geometry in the sequence should match.
+The [`numberOfColumns`](../skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRows`](../skwarpgeometrygrid/numberofrows.md) in each geometry in the sequence should match.
 
 ## Parameters
 
@@ -39,10 +44,11 @@ The [`numberOfColumns`](skwarpgeometrygrid/numberofcolumns.md) and [`numberOfRow
 
 ## See Also
 
-- [class func animate(withWarps: [SKWarpGeometry], times: [NSNumber], restore: Bool) -> SKAction?](skaction/animate(withwarps:times:restore:).md)
-  Creates an action to distort a node through a sequence of [`SKWarpGeometry`](skwarpgeometry.md) objects.
-- [class func warp(to: SKWarpGeometry, duration: TimeInterval) -> SKAction?](skaction/warp(to:duration:).md)
-  Creates an action to distort a node based using an [`SKWarpGeometry`](skwarpgeometry.md) object.
+### Animate the Warping of a Node
+- [class func animate(withWarps: [SKWarpGeometry], times: [NSNumber], restore: Bool) -> SKAction?](./animate%28withwarps,times,restore%29.md)
+  Creates an action to distort a node through a sequence of [`SKWarpGeometry`](../skwarpgeometry.md) objects.
+- [class func warp(to: SKWarpGeometry, duration: TimeInterval) -> SKAction?](./warp%28to,duration%29.md)
+  Creates an action to distort a node based using an [`SKWarpGeometry`](../skwarpgeometry.md) object.
 
 
 ---

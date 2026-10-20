@@ -1,7 +1,8 @@
 # isSubset(of:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether this feature set is a subset of the given feature set.
 
@@ -28,11 +29,12 @@ func isSubset(of other: FeatureSet) -> Bool
 
 ## See Also
 
-- [func contains(FeatureSet.Feature) -> Bool](featureset/contains(_:).md)
+### Checking features
+- [func contains(FeatureSet.Feature) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether the given feature exists in the set.
-- [func insert(FeatureSet.Feature)](featureset/insert(_:).md)
+- [func insert(FeatureSet.Feature)](./insert%28_%29.md)
   Inserts the given feature in the set if it is not already present.
-- [func remove(FeatureSet.Feature)](featureset/remove(_:).md)
+- [func remove(FeatureSet.Feature)](./remove%28_%29.md)
   Removes the given feature.
 
 

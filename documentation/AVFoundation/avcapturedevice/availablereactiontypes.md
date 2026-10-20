@@ -1,7 +1,8 @@
 # availableReactionTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of reactions types that a device supports performing.
 
@@ -18,6 +19,10 @@ A set of reactions types that a device supports performing.
 var availableReactionTypes: Set<AVCaptureReactionType> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSSet<NSString *> * availableReactionTypes;
+```
+
 #### Discussion
 
 The list may differ between devices, and may change for a specific device when it’s active format changes.
@@ -26,17 +31,18 @@ This property is key-value observable.
 
 ## See Also
 
-- [class var reactionEffectsEnabled: Bool](avcapturedevice/reactioneffectsenabled.md)
+### Performing reaction effects
+- [class var reactionEffectsEnabled: Bool](./reactioneffectsenabled.md)
   A Boolean value that indicates whether the app supports performing reaction effects.
-- [var canPerformReactionEffects: Bool](avcapturedevice/canperformreactioneffects.md)
+- [var canPerformReactionEffects: Bool](./canperformreactioneffects.md)
   A Boolean value that indicates whether you can perform reaction effects on a capture device.
-- [class var reactionEffectGesturesEnabled: Bool](avcapturedevice/reactioneffectgesturesenabled.md)
+- [class var reactionEffectGesturesEnabled: Bool](./reactioneffectgesturesenabled.md)
   A Boolean value that indicates whether gesture detection triggers reaction effects on the video stream.
-- [func performEffect(for: AVCaptureReactionType)](avcapturedevice/performeffect(for:).md)
+- [func performEffect(for: AVCaptureReactionType)](./performeffect%28for%29.md)
   Performs the specified reaction type on the video stream.
-- [var reactionEffectsInProgress: [AVCaptureReactionEffectState]](avcapturedevice/reactioneffectsinprogress.md)
+- [var reactionEffectsInProgress: [AVCaptureReactionEffectState]](./reactioneffectsinprogress.md)
   An array of reaction effects that the device is currently performing, sorted by timestamp.
-- [class AVCaptureReactionEffectState](avcapturereactioneffectstate.md)
+- [class AVCaptureReactionEffectState](../avcapturereactioneffectstate.md)
   An object that reports the state of a reaction effect performed on a capture device.
 
 

@@ -1,7 +1,8 @@
 # stopLoading()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops protocol-specific loading of the request.
 
@@ -20,6 +21,10 @@ Stops protocol-specific loading of the request.
 func stopLoading()
 ```
 
+```objc
+- (void) stopLoading;
+```
+
 #### Discussion
 
 When this method is called, the subclass implementation should stop loading a request. This could be in response to a cancel operation, so protocol implementations must be able to handle this call while a load is in progress. When your protocol receives a call to this method, it should also stop sending notifications to the client.
@@ -28,7 +33,8 @@ Subclasses must implement this method.
 
 ## See Also
 
-- [func startLoading()](urlprotocol/startloading.md)
+### Starting and stopping downloads
+- [func startLoading()](./startloading%28%29.md)
   Starts protocol-specific loading of the request.
 
 

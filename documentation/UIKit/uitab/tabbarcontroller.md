@@ -1,7 +1,8 @@
 # tabBarController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The containing tab bar controller.
 
@@ -18,11 +19,16 @@ The containing tab bar controller.
 var tabBarController: UITabBarController? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UITabBarController * tabBarController;
+```
+
 ## See Also
 
-- [var parent: UITabGroup?](uitab/parent.md)
+### Accessing context
+- [var parent: UITabGroup?](./parent.md)
   The containing tab group.
-- [var userInfo: Any?](uitab/userinfo.md)
+- [var userInfo: Any?](./userinfo.md)
   A custom object associated with the tab.
 
 

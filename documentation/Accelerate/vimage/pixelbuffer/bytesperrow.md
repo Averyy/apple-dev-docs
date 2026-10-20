@@ -1,7 +1,8 @@
 # bytesPerRow
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width, in bytes, of the underlying memory including any additional row byte padding.
 
@@ -11,7 +12,7 @@ The width, in bytes, of the underlying memory including any additional row byte 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ The width, in bytes, of the underlying memory including any additional row byte 
 ```swift
 var bytesPerRow: Int { get }
 ```
+
+Available when `Format` conforms to `StaticPixelFormat`.
 
 
 ---

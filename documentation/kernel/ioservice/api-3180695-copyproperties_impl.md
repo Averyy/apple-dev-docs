@@ -1,14 +1,15 @@
 # CopyProperties_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CopyProperties_Impl(OSDictionary **properties);
 ```
 

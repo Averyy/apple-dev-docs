@@ -1,7 +1,8 @@
 # apduTemplate
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The template into which the PIN is filled in. `nil` by default.
 
@@ -20,17 +21,22 @@ The template into which the PIN is filled in. `nil` by default.
 var apduTemplate: Data? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSData * APDUTemplate;
+```
+
 #### Discussion
 
 If `nil`, the system will not attempt to authenticate by sending the formatted APDU to the Smart Card. Instead, the token itself is expected to perform the authentication. You are encouraged to provide an APDU template, if possible, as it allows the use of a hardware interface for secure PIN entry, provided one exists.
 
 ## See Also
 
-- [var pinFormat: TKSmartCardPINFormat](tktokensmartcardpinauthoperation/pinformat.md)
+### Configuring the Operation
+- [var pinFormat: TKSmartCardPINFormat](./pinformat.md)
   The PIN format.
-- [var pinByteOffset: Int](tktokensmartcardpinauthoperation/pinbyteoffset.md)
+- [var pinByteOffset: Int](./pinbyteoffset.md)
   The offset, in bytes, within the APDU template to mark the location for filling in the PIN.
-- [var smartCard: TKSmartCard?](tktokensmartcardpinauthoperation/smartcard.md)
+- [var smartCard: TKSmartCard?](./smartcard.md)
   A Smart Card to which the formatted APDU is sent in order to authenticate.
 
 

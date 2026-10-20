@@ -1,7 +1,8 @@
 # textScale(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a text scale to the text.
 
@@ -31,9 +32,10 @@ Text with the specified scale applied.
 
 ## See Also
 
-- [struct Scale](text/scale.md)
+### Fitting text into available space
+- [struct Scale](./scale.md)
   Defines text scales
-- [Text.TruncationMode](text/truncationmode.md)
+- [Text.TruncationMode](./truncationmode.md)
   The type of truncation to apply to a line of text when it’s too long to fit in the available space.
 
 

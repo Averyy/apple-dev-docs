@@ -1,7 +1,8 @@
 # representedElementCategory
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the item.
 
@@ -9,7 +10,7 @@ The type of the item.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The type of the item.
 var representedElementCategory: UICollectionView.ElementCategory { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionElementCategory representedElementCategory;
+```
+
 #### Discussion
 
 You can use the value in this property to distinguish whether the layout attributes are intended for a cell, supplementary view, or decoration view.
 
 ## See Also
 
-- [var indexPath: IndexPath](uicollectionviewlayoutattributes/indexpath.md)
+### Identifying the referenced item
+- [var indexPath: IndexPath](./indexpath.md)
   The index path of the item in the collection view.
-- [var representedElementKind: String?](uicollectionviewlayoutattributes/representedelementkind.md)
+- [var representedElementKind: String?](./representedelementkind.md)
   The layout-specific identifier for the target view.
-- [UICollectionView.ElementCategory](uicollectionview/elementcategory.md)
+- [UICollectionView.ElementCategory](../uicollectionview/elementcategory.md)
   Constants specifying the type of view.
 
 

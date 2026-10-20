@@ -1,16 +1,18 @@
 # Disk options
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kDADiskOptionDefault: Int](kdadiskoptiondefault.md)
+- [var kDADiskOptionDefault: Int](./kdadiskoptiondefault.md)
 
 ## See Also
 
-- [Disk unmount options](anonymous-kdadiskunmountoptions.md)
-- [Disk mount options](anonymous-kdadiskmountoptions.md)
+### Enumerations
+- [Disk unmount options](./anonymous-kdadiskunmountoptions.md)
+- [Disk mount options](./anonymous-kdadiskmountoptions.md)
 
 
 ---

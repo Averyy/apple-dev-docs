@@ -1,7 +1,8 @@
 # square
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies a square line cap style for endpoints for an open path when stroked.
 
@@ -19,11 +20,16 @@ Specifies a square line cap style for endpoints for an open path when stroked.
 static let square: CAShapeLayerLineCap
 ```
 
+```c
+extern CAShapeLayerLineCap const kCALineCapSquare;
+```
+
 ## See Also
 
-- [static let butt: CAShapeLayerLineCap](cashapelayerlinecap/butt.md)
+### Constants
+- [static let butt: CAShapeLayerLineCap](./butt.md)
   Specifies a butt line cap style for endpoints for an open path when stroked.
-- [static let round: CAShapeLayerLineCap](cashapelayerlinecap/round.md)
+- [static let round: CAShapeLayerLineCap](./round.md)
   Specifies a round line cap style for endpoints for an open path when stroked.
 
 

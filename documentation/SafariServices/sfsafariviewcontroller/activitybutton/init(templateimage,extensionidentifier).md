@@ -1,7 +1,8 @@
 # init(templateImage:extensionIdentifier:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(templateImage: UIImage, extensionIdentifier: String)
+```
+
+```objc
+- (instancetype) initWithTemplateImage:(UIImage *) templateImage extensionIdentifier:(NSString *) extensionIdentifier;
 ```
 
 

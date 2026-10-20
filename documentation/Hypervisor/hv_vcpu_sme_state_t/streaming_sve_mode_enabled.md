@@ -1,7 +1,8 @@
 # streaming_sve_mode_enabled
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.2+
@@ -12,9 +13,14 @@
 var streaming_sve_mode_enabled: Bool
 ```
 
+```c
+bool streaming_sve_mode_enabled;
+```
+
 ## See Also
 
-- [var za_storage_enabled: Bool](hv_vcpu_sme_state_t/za_storage_enabled.md)
+### Instance Properties
+- [var za_storage_enabled: Bool](./za_storage_enabled.md)
 
 
 ---

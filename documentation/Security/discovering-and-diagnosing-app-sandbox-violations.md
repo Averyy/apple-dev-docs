@@ -1,6 +1,7 @@
 # Discovering and diagnosing App Sandbox violations
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Determine when your macOS app behaves incorrectly because of a sandbox violation, and fix sandbox-related issues.
 
@@ -14,7 +15,7 @@ If you discover that your app’s failure to complete a task is due to a violati
 - Distribute a separate helper tool with your app that uses the additional capability.
 - Remove the code that accesses the additional capability if it’s not necessary for implementing your app’s feature set.
 
-##### Examine Error Output to Identify Where Your App Exceeds Its Privileges
+##### Examine error output to identify where your app exceeds its privileges
 
 If an App Sandbox constraint stops a system library from performing a task, that library may log a message to your app’s standard error stream to report the problem. To examine your app’s output, follow these steps:
 
@@ -22,7 +23,7 @@ If an App Sandbox constraint stops a system library from performing a task, that
 2. Reproduce the problem in your app.
 3. Switch back to Xcode and check for output from your app in the Debug pane.
 
-![A screenshot of the Debug pane in Xcode, showing log messages from an app that has violated its sandbox.](/images/com.apple.security/media-4116319@2x.png)
+![A screenshot of the Debug pane in Xcode, showing log messages from an app that has violated its sandbox.](https://developer.apple.com/tutorials/images/com.apple.security/media-4116319@2x.png)
 
 Output such as the following indicates that the process encountered an App Sandbox violation.
 
@@ -32,7 +33,7 @@ Output such as the following indicates that the process encountered an App Sandb
 2022-10-25 14:14:45.542962+0100 SampleApp[12447:550451] [] nw_resolver_can_use_dns_xpc_block_invoke Sandbox does not allow access to com.apple.dnssd.service
 ```
 
-##### Use Console to Identify Violations
+##### Use Console to identify violations
 
 You can use the Console app to discover whether a problem is due to an App Sandbox violation by following these steps:
 
@@ -51,7 +52,7 @@ category:violation
 4. Switch to Console.
 5. Look for a message relating to your app in the messages view, shown below.
 
-![A screenshot of Console, showing App Sandbox violation messages.](/images/com.apple.security/media-4116320@2x.png)
+![A screenshot of Console, showing App Sandbox violation messages.](https://developer.apple.com/tutorials/images/com.apple.security/media-4116320@2x.png)
 
 The message names the process that violated the App Sandbox restrictions, the violating action, and provides additional information about the violation where possible. In the example below, the app’s attempt to make an outgoing network connection violates its App Sandbox restrictions.
 
@@ -104,21 +105,21 @@ Thread 0 (id: 551548):
 31 libsystem_pthread.dylib 0x0000000180c30e20 start_wqthread + 7704
 ```
 
-The line in the Console message that starts with “Violation:” describes the app’s behavior that violated its App Sandbox restrictions. Use the backtrace to identify which thread in your app violated the App Sandbox restrictions, and locate the violating code. The backtrace is similar to a crash report, even though the system doesn’t terminate apps that violate App Sandbox restrictions. For more information on interpreting a backtrace, see [`Examining the fields in a crash report`](https://developer.apple.com/documentation/xcode/examining-the-fields-in-a-crash-report).
+The line in the Console message that starts with “Violation:” describes the app’s behavior that violated its App Sandbox restrictions. Use the backtrace to identify which thread in your app violated the App Sandbox restrictions, and locate the violating code. The backtrace is similar to a crash report, even though the system doesn’t terminate apps that violate App Sandbox restrictions. For more information on interpreting a backtrace, see [Examining the fields in a crash report](../Xcode/examining-the-fields-in-a-crash-report.md).
 
-##### Extend Your Apps Sandbox to Accommodate New Features
+##### Extend your app’s sandbox to accommodate new features
 
 If you’ve determined that your app needs to perform the task that leads to an App Sandbox violation, add the appropriate capability to the App Sandbox entitlement for your app in the Xcode entitlements editor. To review the available App Sandbox capabilities, see `Entitlements`.
 
-##### Move Potentially Vulnerable Operations to a Separate Helper Tool
+##### Move potentially vulnerable operations to a separate helper tool
 
 By separating your app into different components that have access to distinct subsets of the required capabilities, you can balance access to operating system resources with the good practice of protecting people’s devices from malicious attacks. As an example, if your app takes camera images, processes them using unsafe memory operations, and communicates with a network service, create separate components for these three features. Separating the features makes it harder for an attacker who compromises the app through the network to gain access to someone’s camera, or to exploit the potentially unsafe processing code.
 
-When an app that uses App Sandbox launches a helper tool directly using [`Process`](https://developer.apple.com/documentation/foundation/process) or fork and exec, the helper tool inherits the same sandbox capabilities as the launching app. To enable different capabilities in the app and the helper, use one of these designs:
+When an app that uses App Sandbox launches a helper tool directly using [`Process`](../Foundation/process.md) or fork and exec, the helper tool inherits the same sandbox capabilities as the launching app. To enable different capabilities in the app and the helper, use one of these designs:
 
-- An [`XPC`](https://developer.apple.com/documentation/xpc) service
+- An [XPC](../XPC/XPC.md) service
 - A login item
-- A helper app, which you can configure to run in the background by setting the [`LSBackgroundOnly`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsbackgroundonly) key
+- A helper app, which you can configure to run in the background by setting the [`LSBackgroundOnly`](../BundleResources/information-property-list/lsbackgroundonly.md) key
 
 
 ---

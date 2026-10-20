@@ -1,7 +1,8 @@
 # AutomaticSubscriptionStoreMarketingContent
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that represents the default marketing content for a subscription store.
 
@@ -23,18 +24,19 @@ A view that represents the default marketing content for a subscription store.
 
 #### Overview
 
-You don’t use this type directly. Instead, create a [`SubscriptionStoreView`](subscriptionstoreview.md) using an initializer that doesn’t include a `marketingContent` parameter for providing custom marketing content.
+You don’t use this type directly. Instead, create a [`SubscriptionStoreView`](./subscriptionstoreview.md) using an initializer that doesn’t include a `marketingContent` parameter for providing custom marketing content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [struct SubscriptionStoreContentView](subscriptionstorecontentview.md)
+### Supporting types
+- [struct SubscriptionStoreContentView](./subscriptionstorecontentview.md)
 
 
 ---

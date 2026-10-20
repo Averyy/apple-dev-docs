@@ -1,17 +1,18 @@
 # EKCalendarType
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible calendar types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,61 +20,66 @@ Possible calendar types.
 enum EKCalendarType
 ```
 
+```c
+enum EKCalendarType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKCalendarType.local](ekcalendartype/local.md)
+- [EKCalendarType.local](./ekcalendartype/local.md)
   A local calendar.
-- [EKCalendarType.calDAV](ekcalendartype/caldav.md)
+- [EKCalendarType.calDAV](./ekcalendartype/caldav.md)
   A CalDAV or iCloud calendar.
-- [EKCalendarType.exchange](ekcalendartype/exchange.md)
+- [EKCalendarType.exchange](./ekcalendartype/exchange.md)
   An Exchange calendar.
-- [EKCalendarType.subscription](ekcalendartype/subscription.md)
+- [EKCalendarType.subscription](./ekcalendartype/subscription.md)
   A locally subscribed calendar.
-- [EKCalendarType.birthday](ekcalendartype/birthday.md)
+- [EKCalendarType.birthday](./ekcalendartype/birthday.md)
   A birthday calendar.
 ### Initializers
-- [init?(rawValue: Int)](ekcalendartype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ekcalendartype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask.md)
+### Accessing Calendar Properties
+- [struct EKCalendarEventAvailabilityMask](./ekcalendareventavailabilitymask.md)
   A bitmask indicating the event availability settings that the calendar can support.
-- [var allowsContentModifications: Bool](ekcalendar/allowscontentmodifications.md)
+- [var allowsContentModifications: Bool](./ekcalendar/allowscontentmodifications.md)
   A Boolean value that indicates whether you can add, edit, and delete items in the calendar.
-- [var cgColor: CGColor!](ekcalendar/cgcolor.md)
+- [var cgColor: CGColor!](./ekcalendar/cgcolor.md)
   The calendar’s color.
-- [var color: NSColor!](ekcalendar/color.md)
+- [var color: NSColor!](./ekcalendar/color.md)
   The calendar’s color.
-- [var isImmutable: Bool](ekcalendar/isimmutable.md)
+- [var isImmutable: Bool](./ekcalendar/isimmutable.md)
   A Boolean value indicating whether the calendar’s properties can be edited or deleted.
-- [var title: String](ekcalendar/title.md)
+- [var title: String](./ekcalendar/title.md)
   The calendar’s title.
-- [var type: EKCalendarType](ekcalendar/type.md)
+- [var type: EKCalendarType](./ekcalendar/type.md)
   The calendar’s type.
-- [var allowedEntityTypes: EKEntityMask](ekcalendar/allowedentitytypes.md)
+- [var allowedEntityTypes: EKEntityMask](./ekcalendar/allowedentitytypes.md)
   The entity types this calendar can contain.
-- [var source: EKSource!](ekcalendar/source.md)
+- [var source: EKSource!](./ekcalendar/source.md)
   The source object representing the account to which this calendar belongs.
-- [var isSubscribed: Bool](ekcalendar/issubscribed.md)
+- [var isSubscribed: Bool](./ekcalendar/issubscribed.md)
   A Boolean value indicating whether the calendar is a subscribed calendar.
-- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](ekcalendar/supportedeventavailabilities.md)
+- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](./ekcalendar/supportedeventavailabilities.md)
   The event availability settings supported by this calendar, as indicated by a bitmask.
-- [var calendarIdentifier: String](ekcalendar/calendaridentifier.md)
+- [var calendarIdentifier: String](./ekcalendar/calendaridentifier.md)
   A unique identifier for the calendar.
-- [func DATETIME_COMPONENTS_DO_NOT_USE()](datetime_components_do_not_use().md)
+- [func DATETIME_COMPONENTS_DO_NOT_USE()](./datetime_components_do_not_use%28%29.md)
   A deprecated function.
-- [func DATE_COMPONENTS_DO_NOT_USE()](date_components_do_not_use().md)
+- [func DATE_COMPONENTS_DO_NOT_USE()](./date_components_do_not_use%28%29.md)
   A deprecated function.
 
 

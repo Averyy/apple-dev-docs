@@ -1,7 +1,8 @@
 # hiliteStart
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The character offset into the example word that identifies the location of the beginning of the phoneme.
 
@@ -14,15 +15,20 @@ The character offset into the example word that identifies the location of the b
 static let hiliteStart: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey
 ```
 
+```c
+extern NSSpeechPhonemeInfoKey const NSSpeechPhonemeInfoHiliteStart;
+```
+
 ## See Also
 
-- [static let example: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/example.md)
+### Phoneme Info Keys
+- [static let example: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./example.md)
   An example word that illustrates the use of the phoneme.
-- [static let hiliteEnd: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/hiliteend.md)
+- [static let hiliteEnd: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./hiliteend.md)
   The character offset into the example word that identifies the location of the end of the phoneme.
-- [static let opcode: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/opcode.md)
+- [static let opcode: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./opcode.md)
   NSNumber
-- [static let symbol: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](nsspeechsynthesizer/speechpropertykey/phonemeinfokey/symbol.md)
+- [static let symbol: NSSpeechSynthesizer.SpeechPropertyKey.PhonemeInfoKey](./symbol.md)
   The symbol used to represent the phoneme.
 
 

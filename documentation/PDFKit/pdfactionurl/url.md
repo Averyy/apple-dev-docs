@@ -1,7 +1,8 @@
 # url
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the URL associated with the URL action.
 
@@ -19,13 +20,18 @@ Returns the URL associated with the URL action.
 var url: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * URL;
+```
+
 #### Return Value
 
 The URL associated with the action, or `NULL` if no URL is specified.
 
 ## See Also
 
-- [class PDFActionURL](pdfactionurl.md)
+### Related Documentation
+- [class PDFActionURL](../pdfactionurl.md)
   `PDFActionURL`, a subclass of `PDFAction`, defines methods for getting and setting the URL associated with a URL action.
 
 

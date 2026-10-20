@@ -1,7 +1,8 @@
 # NSBatchInsertRequest
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to insert a batch of data in a persistent store.
 
@@ -20,56 +21,61 @@ A request to insert a batch of data in a persistent store.
 class NSBatchInsertRequest
 ```
 
+```objc
+@interface NSBatchInsertRequest : NSPersistentStoreRequest
+```
+
 ## Topics
 
 ### Creating a Request
-- [convenience init(entity: NSEntityDescription, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entity:dictionaryhandler:).md)
+- [convenience init(entity: NSEntityDescription, dictionaryHandler: (NSMutableDictionary) -> Bool)](./nsbatchinsertrequest/init%28entity,dictionaryhandler%29.md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that provides data dictionaries for insertion.
-- [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entity:managedobjecthandler:).md)
+- [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](./nsbatchinsertrequest/init%28entity,managedobjecthandler%29.md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that inserts data into the entity.
-- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:)-5l4ps.md)
+- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](./nsbatchinsertrequest/init%28entityname,dictionaryhandler%29-5l4ps.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that provides data dictionaries for insertion.
-- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-7dr6p.md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](./nsbatchinsertrequest/init%28entityname,managedobjecthandler%29-7dr6p.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that inserts data into the entity.
-- [init(entity: NSEntityDescription, objects: [[String : Any]])](nsbatchinsertrequest/init(entity:objects:).md)
+- [init(entity: NSEntityDescription, objects: [[String : Any]])](./nsbatchinsertrequest/init%28entity,objects%29.md)
   Creates a batch-insertion request for a managed entity, and provides an array of data dictionaries for insertion.
-- [init(entityName: String, objects: [[String : Any]])](nsbatchinsertrequest/init(entityname:objects:).md)
+- [init(entityName: String, objects: [[String : Any]])](./nsbatchinsertrequest/init%28entityname,objects%29.md)
   Creates a batch-insertion request for a named managed entity, and provides an array of data dictionaries for insertion.
-- [convenience init()](nsbatchinsertrequest/init.md)
+- [convenience init()](./nsbatchinsertrequest/init%28%29.md)
   Creates a Core Data batch-insertion request.
 ### Configuring a Request
-- [var dictionaryHandler: ((NSMutableDictionary) -> Bool)?](nsbatchinsertrequest/dictionaryhandler.md)
+- [var dictionaryHandler: ((NSMutableDictionary) -> Bool)?](./nsbatchinsertrequest/dictionaryhandler.md)
   A closure that provides a dictionary for your app to insert data into.
-- [var entity: NSEntityDescription?](nsbatchinsertrequest/entity.md)
+- [var entity: NSEntityDescription?](./nsbatchinsertrequest/entity.md)
   The managed entity to insert data into.
-- [var entityName: String](nsbatchinsertrequest/entityname.md)
+- [var entityName: String](./nsbatchinsertrequest/entityname.md)
   The name of the managed entity to insert data into.
-- [var managedObjectHandler: ((NSManagedObject) -> Bool)?](nsbatchinsertrequest/managedobjecthandler.md)
+- [var managedObjectHandler: ((NSManagedObject) -> Bool)?](./nsbatchinsertrequest/managedobjecthandler.md)
   A closure that provides a managed object for your app to insert data into.
-- [var objectsToInsert: [[String : Any]]?](nsbatchinsertrequest/objectstoinsert.md)
+- [var objectsToInsert: [[String : Any]]?](./nsbatchinsertrequest/objectstoinsert.md)
   An array of dictionaries that represents the objects to insert with the keys as attribute names and their assigned values.
-- [var resultType: NSBatchInsertRequestResultType](nsbatchinsertrequest/resulttype.md)
+- [var resultType: NSBatchInsertRequestResultType](./nsbatchinsertrequest/resulttype.md)
   The type of result that Core Data returns from this request.
 ### Initializers
-- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:)-74gtn.md)
-- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-2dgkw.md)
+- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](./nsbatchinsertrequest/init%28entityname,dictionaryhandler%29-74gtn.md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](./nsbatchinsertrequest/init%28entityname,managedobjecthandler%29-2dgkw.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [NSPersistentStoreRequest](./nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSBatchInsertResult](nsbatchinsertresult.md)
+### Data Inserts
+- [class NSBatchInsertResult](./nsbatchinsertresult.md)
   The result that Core Data returns when executing a batch-insertion request.
 
 

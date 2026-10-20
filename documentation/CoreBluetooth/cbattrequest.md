@@ -1,7 +1,8 @@
 # CBATTRequest
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that uses the Attribute Protocol (ATT).
 
@@ -20,41 +21,46 @@ A request that uses the Attribute Protocol (ATT).
 class CBATTRequest
 ```
 
+```objc
+@interface CBATTRequest : NSObject
+```
+
 #### Overview
 
-The [`CBATTRequest`](cbattrequest.md) class represents Attribute Protocol (ATT) read and write requests from remote central devices (represented by [`CBCentral`](cbcentral.md) objects). Remote centrals use these ATT requests to read and write characteristic values on local peripherals (represented by [`CBPeripheralManager`](cbperipheralmanager.md) objects). Local peripherals, on the other hand, use the properties of [`CBATTRequest`](cbattrequest.md) objects to respond to the read and write requests appropriately, using the [`respond(to:withResult:)`](cbperipheralmanager/respond(to:withresult:).md) method of the [`CBPeripheralManager`](cbperipheralmanager.md) class.
+The [`CBATTRequest`](./cbattrequest.md) class represents Attribute Protocol (ATT) read and write requests from remote central devices (represented by [`CBCentral`](./cbcentral.md) objects). Remote centrals use these ATT requests to read and write characteristic values on local peripherals (represented by [`CBPeripheralManager`](./cbperipheralmanager.md) objects). Local peripherals, on the other hand, use the properties of [`CBATTRequest`](./cbattrequest.md) objects to respond to the read and write requests appropriately, using the [`respond(to:withResult:)`](./cbperipheralmanager/respond%28to,withresult%29.md) method of the [`CBPeripheralManager`](./cbperipheralmanager.md) class.
 
 ## Topics
 
 ### Requesting to Read and Write Characteristic Values
-- [var central: CBCentral](cbattrequest/central.md)
+- [var central: CBCentral](./cbattrequest/central.md)
   The remote central device that originated the request.
-- [var characteristic: CBCharacteristic](cbattrequest/characteristic.md)
+- [var characteristic: CBCharacteristic](./cbattrequest/characteristic.md)
   The characteristic to read or write the value of.
-- [var value: Data?](cbattrequest/value.md)
+- [var value: Data?](./cbattrequest/value.md)
   The data that the central reads from or writes to the peripheral.
-- [var offset: Int](cbattrequest/offset.md)
+- [var offset: Int](./cbattrequest/offset.md)
   The zero-based index of the first byte for the read or write request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBManager](cbmanager.md)
+### Supporting Types
+- [class CBManager](./cbmanager.md)
   The abstract base class that manages central and peripheral objects.
-- [class CBPeer](cbpeer.md)
+- [class CBPeer](./cbpeer.md)
   An object that represents a remote device.
-- [class CBUUID](cbuuid.md)
+- [class CBUUID](./cbuuid.md)
   A universally unique identifier, as defined by Bluetooth standards.
 
 

@@ -1,7 +1,8 @@
 # AuthorizationCopyInfo(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves supporting data such as the user name and other information gathered during evaluation of authorization.
 
@@ -15,23 +16,27 @@ Retrieves supporting data such as the user name and other information gathered d
 func AuthorizationCopyInfo(_ authorization: AuthorizationRef, _ tag: AuthorizationString?, _ info: UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationItemSet>?>) -> OSStatus
 ```
 
+```c
+OSStatus AuthorizationCopyInfo(AuthorizationRef authorization, AuthorizationString tag, AuthorizationItemSet **info);
+```
+
 ## Mentions
 
-- [Extending authorization services with plug-ins](extending-authorization-services-with-plug-ins.md)
+- [Extending authorization services with plug-ins](./extending-authorization-services-with-plug-ins.md)
 
 #### Return Value
 
-A result code. See [`Authorization Services Result Codes`](authorization-services-result-codes.md).
+A result code. See [Authorization Services Result Codes](./authorization-services-result-codes.md).
 
 #### Discussion
 
-An authorization plug-in can store the results of an authentication operation by calling the [`SetContextValue`](authorizationcallbacks/setcontextvalue.md) function. You can use the [`AuthorizationCopyInfo(_:_:_:)`](authorizationcopyinfo(_:_:_:).md) function to retrieve this information.
+An authorization plug-in can store the results of an authentication operation by calling the [`SetContextValue`](./authorizationcallbacks/setcontextvalue.md) function. You can use the [`AuthorizationCopyInfo(_:_:_:)`](./authorizationcopyinfo%28_,_,_%29.md) function to retrieve this information.
 
 ## Parameters
 
 - `authorization`: An authorization reference referring to the authorization session.
-- `tag`: An [`AuthorizationString`](authorizationstring.md) specifying the type of data the Security Server should return. Pass `nil` to retrieve all available information.
-- `info`: A pointer to an authorization set the Security Server creates. On return, this set contains side-band authorization data. When this set is no longer needed, free the memory associated with it by calling the function [`AuthorizationFreeItemSet(_:)`](authorizationfreeitemset(_:).md).
+- `tag`: An [`AuthorizationString`](./authorizationstring.md) specifying the type of data the Security Server should return. Pass `nil` to retrieve all available information.
+- `info`: A pointer to an authorization set the Security Server creates. On return, this set contains side-band authorization data. When this set is no longer needed, free the memory associated with it by calling the function [`AuthorizationFreeItemSet(_:)`](./authorizationfreeitemset%28_%29.md).
 
 
 ---

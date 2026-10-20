@@ -1,7 +1,8 @@
 # identifiers
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of unique identifiers corresponding to detected feature points.
 
@@ -18,11 +19,12 @@ var identifiers: [UInt64] { get }
 
 #### Discussion
 
-Each identifier in this list corresponds to the point vector at the same index in the [`points`](arpointcloud/points-4vkif.md) array.
+Each identifier in this list corresponds to the point vector at the same index in the [`points`](./points-4vkif.md) array.
 
 ## See Also
 
-- [var points: [simd_float3]](arpointcloud/points-4vkif.md)
+### Identifying Feature Points
+- [var points: [simd_float3]](./points-4vkif.md)
   The list of detected points.
 
 

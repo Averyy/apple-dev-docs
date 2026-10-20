@@ -1,7 +1,8 @@
 # THCredentials
 
 **Framework**: ThreadNetwork  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that contains credentials for a Thread network.
 
@@ -19,56 +20,61 @@ A class that contains credentials for a Thread network.
 class THCredentials
 ```
 
+```objc
+@interface THCredentials : NSObject
+```
+
 #### Overview
 
-A Thread network defines parameters that all connected devices use. [`THCredentials`](thcredentials.md) provides these parameters.
+A Thread network defines parameters that all connected devices use. [`THCredentials`](./thcredentials.md) provides these parameters.
 
 ## Topics
 
 ### Getting the Thread Parameters
-- [var activeOperationalDataSet: Data?](thcredentials/activeoperationaldataset.md)
+- [var activeOperationalDataSet: Data?](./thcredentials/activeoperationaldataset.md)
   The essential operational parameters for the Thread network.
-- [var borderAgentID: Data?](thcredentials/borderagentid.md)
+- [var borderAgentID: Data?](./thcredentials/borderagentid.md)
   The identifier of an active Thread network Border Agent.
-- [var channel: UInt8](thcredentials/channel.md)
+- [var channel: UInt8](./thcredentials/channel.md)
   The Thread network radio channel.
-- [var extendedPANID: Data?](thcredentials/extendedpanid.md)
+- [var extendedPANID: Data?](./thcredentials/extendedpanid.md)
   The Thread network extended PAN identifier.
-- [var networkKey: Data?](thcredentials/networkkey.md)
+- [var networkKey: Data?](./thcredentials/networkkey.md)
   The Thread network key.
-- [var networkName: String?](thcredentials/networkname.md)
+- [var networkName: String?](./thcredentials/networkname.md)
   The Thread network name.
-- [var panID: Data?](thcredentials/panid.md)
+- [var panID: Data?](./thcredentials/panid.md)
   The Thread network PAN identifier.
-- [var pskc: Data?](thcredentials/pskc.md)
+- [var pskc: Data?](./thcredentials/pskc.md)
   The Thread network pre-shared key (PSKC) for the Commissioner.
 ### Getting the Framework Parameters
-- [var creationDate: Date?](thcredentials/creationdate.md)
+- [var creationDate: Date?](./thcredentials/creationdate.md)
   The date and time that the framework stored the credential in the database.
-- [var lastModificationDate: Date?](thcredentials/lastmodificationdate.md)
+- [var lastModificationDate: Date?](./thcredentials/lastmodificationdate.md)
   The date and time that the framework updated the credential in the database.
 ### Initializers
-- [init?(coder: NSCoder)](thcredentials/init(coder:).md)
+- [init?(coder: NSCoder)](./thcredentials/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [com.apple.developer.networking.manage-thread-network-credentials](../bundleresources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
+### Managing clients and sharing credentials
+- [com.apple.developer.networking.manage-thread-network-credentials](../BundleResources/entitlements/com.apple.developer.networking.manage-thread-network-credentials.md)
   A Boolean value that indicates whether the app can use ThreadNetwork.
-- [class THClient](thclient.md)
+- [class THClient](./thclient.md)
   A class that supports safely sharing Thread credentials between multiple clients.
 
 

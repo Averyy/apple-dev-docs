@@ -1,7 +1,8 @@
 # USDPrim.Attribute.ValueType.TupleDimensions.vector(_:)
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+

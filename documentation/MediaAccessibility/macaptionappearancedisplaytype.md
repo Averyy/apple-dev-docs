@@ -1,7 +1,8 @@
 # MACaptionAppearanceDisplayType
 
 **Framework**: Media Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies the type of captions to display.
 
@@ -19,37 +20,42 @@ A value that specifies the type of captions to display.
 enum MACaptionAppearanceDisplayType
 ```
 
+```c
+enum MACaptionAppearanceDisplayType : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [MACaptionAppearanceDisplayType.forcedOnly](macaptionappearancedisplaytype/forcedonly.md)
+- [MACaptionAppearanceDisplayType.forcedOnly](./macaptionappearancedisplaytype/forcedonly.md)
   Do not display captions unless they are forced for translation.
-- [MACaptionAppearanceDisplayType.automatic](macaptionappearancedisplaytype/automatic.md)
+- [MACaptionAppearanceDisplayType.automatic](./macaptionappearancedisplaytype/automatic.md)
   If the language of the audio track differs from the system locale, then captions matching the system locale should be displayed (if available). If the language of the audio and the language of the system locale match, no captions are shown.
-- [MACaptionAppearanceDisplayType.alwaysOn](macaptionappearancedisplaytype/alwayson.md)
+- [MACaptionAppearanceDisplayType.alwaysOn](./macaptionappearancedisplaytype/alwayson.md)
   The most robust available captioning track should always be displayed, whether subtitles, CC, or SDH. This option is selected by a switch labeled “Closed Captions + SDH” (on the Subtitles & Captioning page of iOS) and “Prefer Closed Captions and SDH” checkbox (on the Captions pane of the Accessibility options in macOS).
 ### Initializers
-- [init?(rawValue: CFIndex)](macaptionappearancedisplaytype/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./macaptionappearancedisplaytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MACaptionAppearanceDomain](macaptionappearancedomain.md)
+### Constants
+- [enum MACaptionAppearanceDomain](./macaptionappearancedomain.md)
   A value that specifies which domain to retrieve a preference setting from.
-- [enum MACaptionAppearanceBehavior](macaptionappearancebehavior.md)
+- [enum MACaptionAppearanceBehavior](./macaptionappearancebehavior.md)
   A value that indicates the preferred behavior for a preference setting.
-- [enum MACaptionAppearanceFontStyle](macaptionappearancefontstyle.md)
+- [enum MACaptionAppearanceFontStyle](./macaptionappearancefontstyle.md)
   A value that specifies a font style.
-- [enum MACaptionAppearanceTextEdgeStyle](macaptionappearancetextedgestyle.md)
+- [enum MACaptionAppearanceTextEdgeStyle](./macaptionappearancetextedgestyle.md)
   A value that specifies a style for the outside of the text.
 
 

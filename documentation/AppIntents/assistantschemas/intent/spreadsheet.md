@@ -1,7 +1,8 @@
 # spreadsheet
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that offer spreadsheet functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app intents that offer spreadsheet functionalit
 ```swift
 static var spreadsheet: some AssistantSchemas.SpreadsheetIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

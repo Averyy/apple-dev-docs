@@ -1,7 +1,8 @@
 # WKWebsiteDataTypeLocalStorage
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTML local storage.
 
@@ -18,9 +19,14 @@ HTML local storage.
 let WKWebsiteDataTypeLocalStorage: String
 ```
 
+```c
+extern NSString * const WKWebsiteDataTypeLocalStorage;
+```
+
 ## See Also
 
-- [let WKWebsiteDataTypeSessionStorage: String](wkwebsitedatatypesessionstorage.md)
+### Storage types
+- [let WKWebsiteDataTypeSessionStorage: String](./wkwebsitedatatypesessionstorage.md)
   HTML session storage.
 
 

@@ -1,6 +1,7 @@
 # SCNetwork
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: API Collection
 
 #### Overview
 
@@ -11,26 +12,27 @@ A remote host is considered reachable when a data packet, sent by an application
 ## Topics
 
 ### Constants
-- [typealias SCNetworkConnectionFlags](scnetworkconnectionflags.md)
+- [typealias SCNetworkConnectionFlags](./scnetworkconnectionflags.md)
   Flags that indicate whether the specified network node name or address is reachable, whether a connection is required, and whether some user intervention may be required when establishing a connection.
 
 ## See Also
 
-- [SCDynamicStore](scdynamicstore-gb2.md)
-- [SCDynamicStoreCopySpecific](scdynamicstorecopyspecific.md)
-- [SCDynamicStoreKey](scdynamicstorekey.md)
-- [SCNetworkConfiguration](scnetworkconfiguration.md)
-- [SCNetworkConnection](scnetworkconnection-g7e.md)
-- [SCNetworkReachability](scnetworkreachability-g7d.md)
-- [SCPreferences](scpreferences-ft8.md)
-- [SCPreferencesPath](scpreferencespath.md)
-- [SCPreferencesSetSpecific](scpreferencessetspecific.md)
-- [SCSchemaDefinitions](scschemadefinitions.md)
-- [System Configuration](system-configuration.md)
-- [SystemConfiguration Enumerations](systemconfiguration-enumerations.md)
-- [SystemConfiguration Constants](systemconfiguration-constants.md)
-- [SystemConfiguration Functions](systemconfiguration-functions.md)
-- [SystemConfiguration Data Types](systemconfiguration-data-types.md)
+### Reference
+- [SCDynamicStore](./scdynamicstore-gb2.md)
+- [SCDynamicStoreCopySpecific](./scdynamicstorecopyspecific.md)
+- [SCDynamicStoreKey](./scdynamicstorekey.md)
+- [SCNetworkConfiguration](./scnetworkconfiguration.md)
+- [SCNetworkConnection](./scnetworkconnection-g7e.md)
+- [SCNetworkReachability](./scnetworkreachability-g7d.md)
+- [SCPreferences](./scpreferences-ft8.md)
+- [SCPreferencesPath](./scpreferencespath.md)
+- [SCPreferencesSetSpecific](./scpreferencessetspecific.md)
+- [SCSchemaDefinitions](./scschemadefinitions.md)
+- [System Configuration](./system-configuration.md)
+- [SystemConfiguration Enumerations](./systemconfiguration-enumerations.md)
+- [SystemConfiguration Constants](./systemconfiguration-constants.md)
+- [SystemConfiguration Functions](./systemconfiguration-functions.md)
+- [SystemConfiguration Data Types](./systemconfiguration-data-types.md)
 
 
 ---

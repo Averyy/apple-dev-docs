@@ -1,7 +1,8 @@
 # UIUserInterfaceLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the directional flow of the user interface.
 
@@ -9,7 +10,7 @@ Constants that specify the directional flow of the user interface.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,33 +19,38 @@ Constants that specify the directional flow of the user interface.
 enum UIUserInterfaceLayoutDirection
 ```
 
+```c
+enum UIUserInterfaceLayoutDirection : NSInteger;
+```
+
 #### Overview
 
-One of these constants is returned by the [`userInterfaceLayoutDirection`](uiapplication/userinterfacelayoutdirection.md) property. It indicates the directionality of the language in the user interface of the app.
+One of these constants is returned by the [`userInterfaceLayoutDirection`](./uiapplication/userinterfacelayoutdirection.md) property. It indicates the directionality of the language in the user interface of the app.
 
 ## Topics
 
 ### Constants
-- [UIUserInterfaceLayoutDirection.leftToRight](uiuserinterfacelayoutdirection/lefttoright.md)
+- [UIUserInterfaceLayoutDirection.leftToRight](./uiuserinterfacelayoutdirection/lefttoright.md)
   The layout direction is left to right.
-- [UIUserInterfaceLayoutDirection.rightToLeft](uiuserinterfacelayoutdirection/righttoleft.md)
+- [UIUserInterfaceLayoutDirection.rightToLeft](./uiuserinterfacelayoutdirection/righttoleft.md)
   The layout direction right to left.
 ### Initializers
-- [init?(rawValue: Int)](uiuserinterfacelayoutdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiuserinterfacelayoutdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var userInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](uiapplication/userinterfacelayoutdirection.md)
+### Accessing the layout direction
+- [var userInterfaceLayoutDirection: UIUserInterfaceLayoutDirection](./uiapplication/userinterfacelayoutdirection.md)
   The layout direction of the user interface.
 
 

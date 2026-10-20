@@ -1,7 +1,8 @@
 # CSIdentityAddAlias(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityAddAlias(_ identity: CSIdentity!, _ alias: CFString!)
+```
+
+```c
+void CSIdentityAddAlias(CSIdentityRef identity, CFStringRef alias);
 ```
 
 

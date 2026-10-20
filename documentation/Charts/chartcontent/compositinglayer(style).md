@@ -1,7 +1,8 @@
 # compositingLayer(style:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some Cha
 
 ## See Also
 
-- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
-- [func zIndex(Double) -> some ChartContent](chartcontent/zindex(_:).md)
+### Layering chart content
+- [func compositingLayer() -> some ChartContent](./compositinglayer%28%29.md)
+- [func zIndex(Double) -> some ChartContent](./zindex%28_%29.md)
   Controls the display order of overlapping chart content.
 
 

@@ -1,7 +1,8 @@
 # ScenePadding
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The padding used to space a view from its containing scene.
 
@@ -22,36 +23,37 @@ struct ScenePadding
 
 #### Overview
 
-Add scene padding to a view using the [`scenePadding(_:edges:)`](view/scenepadding(_:edges:).md) modifier.
+Add scene padding to a view using the [`scenePadding(_:edges:)`](./view/scenepadding%28_,edges%29.md) modifier.
 
 ## Topics
 
 ### Getting padding values
-- [static let minimum: ScenePadding](scenepadding/minimum.md)
+- [static let minimum: ScenePadding](./scenepadding/minimum.md)
   The minimum scene padding value.
-- [static let navigationBar: ScenePadding](scenepadding/navigationbar.md)
+- [static let navigationBar: ScenePadding](./scenepadding/navigationbar.md)
   The navigation bar content scene padding.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func padding(_:)](view/padding(_:).md)
+### Adding padding around a view
+- [func padding(_:)](./view/padding%28_%29.md)
   Adds a different padding amount to each edge of this view.
-- [func padding(Edge.Set, CGFloat?) -> some View](view/padding(_:_:).md)
+- [func padding(Edge.Set, CGFloat?) -> some View](./view/padding%28_,_%29.md)
   Adds an equal padding amount to specific edges of this view.
-- [func padding3D(_:)](view/padding3d(_:).md)
+- [func padding3D(_:)](./view/padding3d%28_%29.md)
   Pads this view using the edge insets you specify.
-- [func padding3D(Edge3D.Set, CGFloat?) -> some View](view/padding3d(_:_:).md)
+- [func padding3D(Edge3D.Set, CGFloat?) -> some View](./view/padding3d%28_,_%29.md)
   Pads this view using the edge insets you specify.
-- [func scenePadding(Edge.Set) -> some View](view/scenepadding(_:).md)
+- [func scenePadding(Edge.Set) -> some View](./view/scenepadding%28_%29.md)
   Adds padding to the specified edges of this view using an amount that’s appropriate for the current scene.
-- [func scenePadding(ScenePadding, edges: Edge.Set) -> some View](view/scenepadding(_:edges:).md)
+- [func scenePadding(ScenePadding, edges: Edge.Set) -> some View](./view/scenepadding%28_,edges%29.md)
   Adds a specified kind of padding to the specified edges of this view using an amount that’s appropriate for the current scene.
 
 

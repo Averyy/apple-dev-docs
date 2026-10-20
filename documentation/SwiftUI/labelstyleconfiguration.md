@@ -1,7 +1,8 @@
 # LabelStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a label.
 
@@ -23,31 +24,32 @@ struct LabelStyleConfiguration
 ## Topics
 
 ### Setting the icon
-- [var icon: LabelStyleConfiguration.Icon](labelstyleconfiguration/icon-swift.property.md)
+- [var icon: LabelStyleConfiguration.Icon](./labelstyleconfiguration/icon-swift.property.md)
   A symbolic representation of the labeled item.
-- [LabelStyleConfiguration.Icon](labelstyleconfiguration/icon-swift.struct.md)
+- [LabelStyleConfiguration.Icon](./labelstyleconfiguration/icon-swift.struct.md)
   A type-erased icon view of a label.
 ### Setting the title
-- [var title: LabelStyleConfiguration.Title](labelstyleconfiguration/title-swift.property.md)
+- [var title: LabelStyleConfiguration.Title](./labelstyleconfiguration/title-swift.property.md)
   A description of the labeled item.
-- [LabelStyleConfiguration.Title](labelstyleconfiguration/title-swift.struct.md)
+- [LabelStyleConfiguration.Title](./labelstyleconfiguration/title-swift.struct.md)
   A type-erased title view of a label.
 
 ## See Also
 
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+### Styling views that display text
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
-- [protocol LabelStyle](labelstyle.md)
+- [protocol LabelStyle](./labelstyle.md)
   A type that applies a custom appearance to all labels within a view.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [protocol TextFieldStyle](textfieldstyle.md)
+- [protocol TextFieldStyle](./textfieldstyle.md)
   A specification for the appearance and interaction of a text field.
-- [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
+- [func textEditorStyle(some TextEditorStyle) -> some View](./view/texteditorstyle%28_%29.md)
   Sets the style for text editors within this view.
-- [protocol TextEditorStyle](texteditorstyle.md)
+- [protocol TextEditorStyle](./texteditorstyle.md)
   A specification for the appearance and interaction of a text editor.
-- [struct TextEditorStyleConfiguration](texteditorstyleconfiguration.md)
+- [struct TextEditorStyleConfiguration](./texteditorstyleconfiguration.md)
   The properties of a text editor.
 
 

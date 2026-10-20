@@ -1,7 +1,8 @@
 # GetVppUserRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request for the user details service.
 
@@ -10,7 +11,7 @@ The request for the user details service.
 
 ## Declaration
 
-```swift
+```
 object GetVppUserRequest
 ```
 
@@ -18,7 +19,7 @@ object GetVppUserRequest
 
 Either `clientUserIdStr` or `userId` is required. If `clientUserIdStr` is used, an `itsIdHash` (iTunes Store ID hash) value may be included, but it is optional. If `userId` has a value, only that value is used, and `clientUserIdStr` and `itsIdHash` are ignored.
 
-##### Clientuseridstr
+##### ClientUserIdStr
 
 It is possible for more than one user record to exist for the same `clientUserIdStr` value, one for each iTunes account that the `clientUserIdStr` value has been associated with in the past (in addition to a currently active record or a retired and never-associated record). However, no more than one of these records can be active at any given time.
 
@@ -34,12 +35,13 @@ To obtain a retired user record previously associated with an iTunes Store accou
 
 - `clientUserIdStr` (string): The identifier supplied by the client when registering a user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr`  and `userId` are supplied, `userId` takes precedence.
 - `itsIdHash` (string): The hash of the user’s iTunes Store ID.
-- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authenticate with the web service`](managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service.md).
+- `sToken` (string) *(required)*: The authentication token. For more information, see [Authenticate with the web service](./managing-apps-and-books-through-web-services-legacy.md#Authenticate-with-the-web-service).
 - `userId` (int64): The unique identifier assigned by the VPP when registering the user. Either `clientUserIdStr` or `userId` is required. If both `clientUserIdStr` and `userId` are supplied, `userId` takes precedence.
 
 ## See Also
 
-- [object GetVppUserResponse](getvppuserresponse.md)
+### Request and Response
+- [object GetVppUserResponse](./getvppuserresponse.md)
   The response from the user details service.
 
 

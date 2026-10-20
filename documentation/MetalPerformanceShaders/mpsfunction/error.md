@@ -1,7 +1,8 @@
 # error
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error produced when attempting to build the function
 
@@ -17,6 +18,10 @@ The error produced when attempting to build the function
 
 ```swift
 var error: (any Error)? { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nullable) NSError * error;
 ```
 
 

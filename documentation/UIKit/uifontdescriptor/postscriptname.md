@@ -1,7 +1,8 @@
 # postscriptName
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PostScript name of the font descriptor.
 
@@ -9,7 +10,7 @@ The PostScript name of the font descriptor.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,19 +20,24 @@ The PostScript name of the font descriptor.
 var postscriptName: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * postscriptName;
+```
+
 ## See Also
 
-- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](uifontdescriptor/fontattributes.md)
+### Querying a font descriptor
+- [var fontAttributes: [UIFontDescriptor.AttributeName : Any]](./fontattributes.md)
   The font descriptor’s dictionary of attributes.
-- [var matrix: CGAffineTransform](uifontdescriptor/matrix.md)
+- [var matrix: CGAffineTransform](./matrix.md)
   The current transform matrix of the font descriptor.
-- [func object(forKey: UIFontDescriptor.AttributeName) -> Any?](uifontdescriptor/object(forkey:).md)
+- [func object(forKey: UIFontDescriptor.AttributeName) -> Any?](./object%28forkey%29.md)
   Returns the font attribute that the corresponding key specifies.
-- [var pointSize: CGFloat](uifontdescriptor/pointsize.md)
+- [var pointSize: CGFloat](./pointsize.md)
   The point size of the font descriptor.
-- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.property.md)
+- [var symbolicTraits: UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.property.md)
   The traits of the font descriptor.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
 
 

@@ -1,7 +1,8 @@
 # AccessibilitySettings.Feature.personalVoiceAllowAppsToRequestToUse
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant for opening the Settings app to the setting for Personal Voice > Allow Apps to Request to Use.
 
@@ -20,9 +21,13 @@ A constant for opening the Settings app to the setting for Personal Voice > Allo
 case personalVoiceAllowAppsToRequestToUse
 ```
 
+```c
+AXSettingsFeaturePersonalVoiceAllowAppsToRequestToUse
+```
+
 #### Discussion
 
-You use this constant with [`openSettings(for:)`](accessibilitysettings/opensettings(for:).md). This constant is relevant for the [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus`](https://developer.apple.com/documentation/avfaudio/avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum) API.
+You use this constant with [`openSettings(for:)`](../opensettings%28for%29.md). This constant is relevant for the [`AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus`](../../../AVFAudio/avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum.md) API.
 
 
 ---

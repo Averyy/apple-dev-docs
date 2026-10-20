@@ -1,7 +1,8 @@
 # UICollectionLayoutSectionOrthogonalScrollingProperties
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies properties for a layout section that scrolls orthogonally in relation to the main layout axis.
 
@@ -19,38 +20,43 @@ An object that specifies properties for a layout section that scrolls orthogonal
 class UICollectionLayoutSectionOrthogonalScrollingProperties
 ```
 
+```objc
+@interface UICollectionLayoutSectionOrthogonalScrollingProperties : NSObject
+```
+
 ## Topics
 
 ### Specifying the bounce behavior
-- [var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.property.md)
+- [var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](./uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.property.md)
   A value that specifies whether the orthogonal scrolling section bounces past the edge of content and back again.
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce](./uicollectionlayoutsectionorthogonalscrollingproperties/bounce-swift.enum.md)
   Constants that specify whether the orthogonal scrolling section bounces past the edge of content and back again.
 ### Specifying the rate of deceleration
-- [var decelerationRate: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.property.md)
+- [var decelerationRate: UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](./uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.property.md)
   A value that specifies the rate of deceleration in the orthogonal scrolling section after the scrolling pan gesture ends.
-- [UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.struct.md)
+- [UICollectionLayoutSectionOrthogonalScrollingProperties.DecelerationRate](./uicollectionlayoutsectionorthogonalscrollingproperties/decelerationrate-swift.struct.md)
   Constants that specify the rate of deceleration in the orthogonal scrolling section after the scrolling pan gesture ends.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior](nscollectionlayoutsection/orthogonalscrollingbehavior.md)
+### Specifying scrolling behavior
+- [var orthogonalScrollingBehavior: UICollectionLayoutSectionOrthogonalScrollingBehavior](./nscollectionlayoutsection/orthogonalscrollingbehavior.md)
   The section’s scrolling behavior in relation to the main layout axis.
-- [var orthogonalScrollingProperties: UICollectionLayoutSectionOrthogonalScrollingProperties](nscollectionlayoutsection/orthogonalscrollingproperties.md)
+- [var orthogonalScrollingProperties: UICollectionLayoutSectionOrthogonalScrollingProperties](./nscollectionlayoutsection/orthogonalscrollingproperties.md)
   The section’s orthogonal scrolling properties.
 
 

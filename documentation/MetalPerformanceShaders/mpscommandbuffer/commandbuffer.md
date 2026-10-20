@@ -1,7 +1,8 @@
 # commandBuffer
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var commandBuffer: any MTLCommandBuffer { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly, nonnull) id<MTLCommandBuffer> commandBuffer;
 ```
 
 

@@ -1,7 +1,8 @@
 # strongerKeyAvailable
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 static var strongerKeyAvailable: ASAuthorizationProviderExtensionRequestOptions { get }
+```
+
+```c
+ASAuthorizationProviderExtensionRequestOptionsStrongerKeyAvailable
 ```
 
 

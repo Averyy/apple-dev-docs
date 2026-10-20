@@ -1,7 +1,8 @@
 # kFxPropertyKey_ChangesOutputSize
 
 **Framework**: Professional Video Applications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that determines whether your filter has the ability to change the size of its output to be different than the size of its input.
 
@@ -14,17 +15,22 @@ A key that determines whether your filter has the ability to change the size of 
 var kFxPropertyKey_ChangesOutputSize: String { get }
 ```
 
+```c
+#define kFxPropertyKey_ChangesOutputSize
+```
+
 #### Discussion
 
-The value of this key is a Boolean `NSNumber` that indicates whether your filter returns an output that has a different size than the input. If not, return `NO` and your filter’s [`destinationImageRect(_:sourceImages:destinationImage:pluginState:at:)`](fxtileableeffect/destinationimagerect(_:sourceimages:destinationimage:pluginstate:at:).md) method will not be called.
+The value of this key is a Boolean `NSNumber` that indicates whether your filter returns an output that has a different size than the input. If not, return `NO` and your filter’s [`destinationImageRect(_:sourceImages:destinationImage:pluginState:at:)`](./fxtileableeffect/destinationimagerect%28_,sourceimages,destinationimage,pluginstate,at%29.md) method will not be called.
 
 ## See Also
 
-- [var kFxPropertyKey_NeedsFullBuffer: String](kfxpropertykey_needsfullbuffer.md)
+### Property Keys
+- [var kFxPropertyKey_NeedsFullBuffer: String](./kfxpropertykey_needsfullbuffer.md)
   A key that determines whether the plug-in needs the entire image to do its processing, and can’t tile its rendering.
-- [var kFxPropertyKey_VariesWhenParamsAreStatic: String](kfxpropertykey_varieswhenparamsarestatic.md)
+- [var kFxPropertyKey_VariesWhenParamsAreStatic: String](./kfxpropertykey_varieswhenparamsarestatic.md)
   A key that determines whether your rendering varies even when the parameters remain the same.
-- [var kFxPropertyKey_DesiredProcessingColorInfo: String](kfxpropertykey_desiredprocessingcolorinfo.md)
+- [var kFxPropertyKey_DesiredProcessingColorInfo: String](./kfxpropertykey_desiredprocessingcolorinfo.md)
   A key that determines whether your plug-in renders in linear or gamma-corrected color space.
 
 

@@ -1,7 +1,8 @@
 # Region size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The region size part of a QuickDraw region.
 
@@ -11,13 +12,14 @@ The region size, region boundary box, and clipping region data fields constitute
 
 ## See Also
 
-- [Size](clipping_region_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this clipping region atom.
-- [Type](clipping_region_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Region boundary box](clipping_region_atom/region_boundary_box.md)
+- [Region boundary box](./region_boundary_box.md)
   The region boundary box part of a QuickDraw region.
-- [Clipping region data](clipping_region_atom/clipping_region_data.md)
+- [Clipping region data](./clipping_region_data.md)
   The clipping region data part of a QuickDraw region.
 
 

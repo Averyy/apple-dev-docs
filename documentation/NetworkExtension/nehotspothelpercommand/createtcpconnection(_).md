@@ -1,20 +1,27 @@
 # createTCPConnection(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a new TCP connection over the network associated with the command.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Pass the Swift [`interface`](./interface-46dq.md) property or the ObjectiveC [`interface`](./interface-7rt15.md) property to the [`nw_parameters_require_interface(_:_:)`](../../Network/nw_parameters_require_interface%28_,_%29.md) function from the [Network](../../Network/Network.md) framework instead.
 
 ## Declaration
 
 ```swift
 func createTCPConnection(_ endpoint: NWEndpoint) -> NWTCPConnection
+```
+
+```objc
+- (NWTCPConnection *) createTCPConnection:(NWEndpoint *) endpoint;
 ```
 
 #### Return Value
@@ -31,9 +38,10 @@ The TCP connection is started automatically. Use KVO to observe the connectionâ€
 
 ## See Also
 
-- [func bind(to: NEHotspotHelperCommand)](../foundation/nsmutableurlrequest/bind(to:).md)
+### Networking on the hotspot network
+- [func bind(to: NEHotspotHelperCommand)](../../Foundation/nsmutableurlrequest/bind%28to%29.md)
   Binds a URL request to the network interface associated with the hotspot helper command instance.
-- [func createUDPSession(NWEndpoint) -> NWUDPSession](nehotspothelpercommand/createudpsession(_:).md)
+- [func createUDPSession(NWEndpoint) -> NWUDPSession](./createudpsession%28_%29.md)
   Creates a new UDP session over the network associated with the command.
 
 

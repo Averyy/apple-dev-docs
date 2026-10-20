@@ -1,7 +1,8 @@
 # webSocketTask(with:protocols:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a WebSocket task given a URL and an array of protocols.
 
@@ -20,11 +21,15 @@ Creates a WebSocket task given a URL and an array of protocols.
 func webSocketTask(with url: URL, protocols: [String]) -> URLSessionWebSocketTask
 ```
 
+```objc
+- (NSURLSessionWebSocketTask *) webSocketTaskWithURL:(NSURL *) url protocols:(NSArray<NSString *> *) protocols;
+```
+
 #### Discussion
 
 During the WebSocket handshake, the task uses the provided protocols to negotiate a preferred protocol with the server.
 
-> **Note**:  The protocol doesn’t affect the WebSocket framing. More details on the protocol are available in [`RFC 6455, The WebSocket Protocol`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6455).
+> **Note**:  The protocol doesn’t affect the WebSocket framing. More details on the protocol are available in [RFC 6455, The WebSocket Protocol](https://tools.ietf.org/html/rfc6455).
 
 ## Parameters
 
@@ -33,13 +38,14 @@ During the WebSocket handshake, the task uses the provided protocols to negotiat
 
 ## See Also
 
-- [func webSocketTask(with: URL) -> URLSessionWebSocketTask](urlsession/websockettask(with:)-87ipz.md)
+### Adding WebSocket tasks to a session
+- [func webSocketTask(with: URL) -> URLSessionWebSocketTask](./websockettask%28with%29-87ipz.md)
   Creates a WebSocket task for the provided URL.
-- [func webSocketTask(with: URLRequest) -> URLSessionWebSocketTask](urlsession/websockettask(with:)-mtks.md)
+- [func webSocketTask(with: URLRequest) -> URLSessionWebSocketTask](./websockettask%28with%29-mtks.md)
   Creates a WebSocket task for the provided URL request.
-- [class URLSessionWebSocketTask](urlsessionwebsockettask.md)
+- [class URLSessionWebSocketTask](../urlsessionwebsockettask.md)
   A URL session task that communicates over the WebSockets protocol standard.
-- [protocol URLSessionWebSocketDelegate](urlsessionwebsocketdelegate.md)
+- [protocol URLSessionWebSocketDelegate](../urlsessionwebsocketdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to WebSocket tasks.
 
 

@@ -1,7 +1,8 @@
 # redGain
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The red gain component of the white balance value.
 
@@ -17,11 +18,16 @@ The red gain component of the white balance value.
 var redGain: Float
 ```
 
+```c
+float redGain;
+```
+
 ## See Also
 
-- [var blueGain: Float](avcapturedevice/whitebalancegains/bluegain.md)
+### Isolating gain by color channel
+- [var blueGain: Float](./bluegain.md)
   The blue gain component of the white balance value.
-- [var greenGain: Float](avcapturedevice/whitebalancegains/greengain.md)
+- [var greenGain: Float](./greengain.md)
   The green gain component of the white balance value.
 
 

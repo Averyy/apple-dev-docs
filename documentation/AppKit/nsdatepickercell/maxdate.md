@@ -1,17 +1,22 @@
 # maxDate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum date that the picker allows as input.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxDate: Date? { get set }
+```
+
+```objc
+@property (copy, nullable) NSDate * maxDate;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Set this property to `nil` if you want to allow any value for the maximum date.
 
 ## See Also
 
-- [var minDate: Date?](nsdatepickercell/mindate.md)
+### Date Range Constraints
+- [var minDate: Date?](./mindate.md)
   The minimum date that the picker allows as input.
 
 

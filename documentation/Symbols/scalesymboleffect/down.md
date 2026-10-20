@@ -1,7 +1,8 @@
 # down
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that scales the symbol down.
 
@@ -22,7 +23,8 @@ var down: ScaleSymbolEffect { get }
 
 ## See Also
 
-- [var up: ScaleSymbolEffect](scalesymboleffect/up.md)
+### Accessing symbol effects
+- [var up: ScaleSymbolEffect](./up.md)
   An effect that scales the symbol up.
 
 

@@ -1,14 +1,15 @@
 # messageClient
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn messageClient(UInt32 messageType, OSObject *client, void *messageArgument, vm_size_t argSize);
 ```
 

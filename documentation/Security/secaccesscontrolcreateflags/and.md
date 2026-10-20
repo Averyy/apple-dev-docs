@@ -1,7 +1,8 @@
 # and
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that all constraints must be satisfied.
 
@@ -18,6 +19,10 @@ Indicates that all constraints must be satisfied.
 
 ```swift
 static var and: SecAccessControlCreateFlags { get }
+```
+
+```c
+kSecAccessControlAnd
 ```
 
 

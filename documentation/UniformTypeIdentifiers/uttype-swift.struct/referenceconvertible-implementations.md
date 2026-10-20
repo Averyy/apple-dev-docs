@@ -1,11 +1,12 @@
 # ReferenceConvertible Implementations
 
-**Framework**: Uniform Type Identifiers
+**Framework**: Uniform Type Identifiers  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [typealias ReferenceType](uttype-swift.struct/referencetype.md)
+- [typealias ReferenceType](./referencetype.md)
   An alias for the associated reference type.
 
 

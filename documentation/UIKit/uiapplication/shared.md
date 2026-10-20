@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton app instance.
 
@@ -9,7 +10,7 @@ The singleton app instance.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ The singleton app instance.
 class var shared: UIApplication { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIApplication * sharedApplication;
+```
+
 #### Return Value
 
-The app instance is created in the [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md) function.
+The app instance is created in the [`UIApplicationMain(_:_:_:_:)`](../uiapplicationmain%28_,_,_,_%29-1yub7.md) function.
 
 #### Discussion
 
-The [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md) function creates the shared app instance at launch time.
+The [`UIApplicationMain(_:_:_:_:)`](../uiapplicationmain%28_,_,_,_%29-1yub7.md) function creates the shared app instance at launch time.
 
 
 ---

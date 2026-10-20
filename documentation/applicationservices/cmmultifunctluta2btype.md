@@ -1,7 +1,8 @@
 # CMMultiFunctLutA2BType
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CMMultiFunctLutA2BType = CMMultiFunctLutType
+```
+
+```c
+typedef struct CMMultiFunctLutType CMMultiFunctLutA2BType;
 ```
 
 

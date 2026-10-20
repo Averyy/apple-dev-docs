@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying data storage for the mesh buffer.
 
@@ -17,6 +18,10 @@ The underlying data storage for the mesh buffer.
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSData * data;
 ```
 
 

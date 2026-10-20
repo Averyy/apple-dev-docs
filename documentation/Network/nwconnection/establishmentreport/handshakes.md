@@ -1,7 +1,8 @@
 # handshakes
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of protocol handshakes in order from first completed to last completed.
 
@@ -22,7 +23,8 @@ let handshakes: [NWConnection.EstablishmentReport.Handshake]
 
 ## See Also
 
-- [NWConnection.EstablishmentReport.Handshake](nwconnection/establishmentreport/handshake.md)
+### Inspecting Protocol Handshakes
+- [NWConnection.EstablishmentReport.Handshake](./handshake.md)
   A description of a single protocol handshake.
 
 

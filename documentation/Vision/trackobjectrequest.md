@@ -1,7 +1,8 @@
 # TrackObjectRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 
@@ -22,61 +23,62 @@ final class TrackObjectRequest
 
 #### Overview
 
-Use this type of request to track the bounding boxes around objects previously identified in an image. Vision attempts to locate the same object from the input observation throughout the sequence. Each time the request runs, it produces a [`DetectedObjectObservation`](detectedobjectobservation.md) that holds the tracked object’s updated bounding box.
+Use this type of request to track the bounding boxes around objects previously identified in an image. Vision attempts to locate the same object from the input observation throughout the sequence. Each time the request runs, it produces a [`DetectedObjectObservation`](./detectedobjectobservation.md) that holds the tracked object’s updated bounding box.
 
 ## Topics
 
 ### Creating a request
-- [init(detectedObject: any BoundingBoxProviding & VisionObservation, TrackObjectRequest.Revision?, frameAnalysisSpacing: CMTime?)](trackobjectrequest/init(detectedobject:_:frameanalysisspacing:).md)
+- [init(detectedObject: any BoundingBoxProviding & VisionObservation, TrackObjectRequest.Revision?, frameAnalysisSpacing: CMTime?)](./trackobjectrequest/init%28detectedobject,_,frameanalysisspacing%29.md)
   Creates an object tracking request.
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+- [protocol BoundingBoxProviding](./boundingboxproviding.md)
   A protocol for objects that have a bounding box.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct DetectedObjectObservation](detectedobjectobservation.md)
+- [struct DetectedObjectObservation](./detectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image-analysis request detects.
 ### Configuring a request
-- [let inputObservation: any BoundingBoxProviding & VisionObservation](trackobjectrequest/inputobservation.md)
+- [let inputObservation: any BoundingBoxProviding & VisionObservation](./trackobjectrequest/inputobservation.md)
   The object to track.
 ### Getting the revision
-- [let revision: TrackObjectRequest.Revision](trackobjectrequest/revision-swift.property.md)
+- [let revision: TrackObjectRequest.Revision](./trackobjectrequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [TrackObjectRequest.Revision]](trackobjectrequest/supportedrevisions.md)
+- [static let supportedRevisions: [TrackObjectRequest.Revision]](./trackobjectrequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [TrackObjectRequest.Revision](trackobjectrequest/revision-swift.enum.md)
+- [TrackObjectRequest.Revision](./trackobjectrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StatefulRequest](statefulrequest.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [StatefulRequest](./statefulrequest.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
+### Motion and object tracking
+- [class DetectTrajectoriesRequest](./detecttrajectoriesrequest.md)
   A request that detects the trajectories of shapes moving along a parabolic path.
-- [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
+- [class TrackOpticalFlowRequest](./trackopticalflowrequest.md)
   A request that determines the direction change of vectors for each pixel from a previous to current image.
-- [class TrackRectangleRequest](trackrectanglerequest.md)
+- [class TrackRectangleRequest](./trackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
 
 

@@ -1,7 +1,8 @@
 # accessibilityScrollAction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 
@@ -20,6 +21,8 @@ Adds an accessibility scroll action to the view. Actions allow assistive technol
 nonisolated
 func accessibilityScrollAction(_ handler: @escaping (Edge) -> Void) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 #### Discussion
 

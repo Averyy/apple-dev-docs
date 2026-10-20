@@ -1,7 +1,8 @@
 # isDownmix
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the variant is a downmix derivative of other media of greater channel count.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the variant is a downmix derivative of ot
 var isDownmix: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDownmix) BOOL downmix;
+```
+
 #### Discussion
 
 If the stream provides one or more multichannel variants, the system assumes the dowmix rendition to be compatible in its internal timing and other attributes with the other variants. Typically, this is because the variant derives its content from the same source. You can use a downmix as a suitable substitute for a multichannel variant under some conditions.
 
 ## See Also
 
-- [var channelCount: Int?](avassetvariant/audioattributes-swift.class/renditionspecificattributes/channelcount.md)
+### Accessing attributes
+- [var channelCount: Int?](./channelcount.md)
   The count of audio channels in the rendition.
-- [var isBinaural: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isbinaural.md)
+- [var isBinaural: Bool](./isbinaural.md)
   A Boolean value that indicates the variant is best suited for delivery to headphones.
-- [var isImmersive: Bool](avassetvariant/audioattributes-swift.class/renditionspecificattributes/isimmersive.md)
+- [var isImmersive: Bool](./isimmersive.md)
   A Boolean value that indicates whether this variant contains virtualized or otherwise preprocessed audio content suitable for various purposes.
 
 

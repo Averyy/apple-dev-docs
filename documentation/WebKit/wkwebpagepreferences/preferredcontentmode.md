@@ -1,7 +1,8 @@
 # preferredContentMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content mode for the web view to use when it loads and renders a webpage.
 
@@ -18,13 +19,18 @@ The content mode for the web view to use when it loads and renders a webpage.
 var preferredContentMode: WKWebpagePreferences.ContentMode { get set }
 ```
 
+```objc
+@property (nonatomic) WKContentMode preferredContentMode;
+```
+
 #### Discussion
 
-The default value of this property is [`WKWebpagePreferences.ContentMode.recommended`](wkwebpagepreferences/contentmode/recommended.md). The web view ignores this preference for subframe navigation.
+The default value of this property is [`WKWebpagePreferences.ContentMode.recommended`](./contentmode/recommended.md). The web view ignores this preference for subframe navigation.
 
 ## See Also
 
-- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+### Setting the preferred content mode
+- [WKWebpagePreferences.ContentMode](./contentmode.md)
   Constants that indicate how to render web view content.
 
 

@@ -1,15 +1,20 @@
 # apr
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var apr: UInt32
+```
+
+```c
+uint32_t apr;
 ```
 
 

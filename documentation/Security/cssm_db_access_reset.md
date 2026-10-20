@@ -1,7 +1,8 @@
 # CSSM_DB_ACCESS_RESET
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_DB_ACCESS_RESET: Int { get }
+```
+
+```c
+CSSM_DB_ACCESS_RESET
 ```
 
 

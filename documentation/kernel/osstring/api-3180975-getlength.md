@@ -1,7 +1,8 @@
 # getLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns length of string not including null terminator.
 
@@ -11,11 +12,19 @@ Returns length of string not including null terminator.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+size_t getLength(void);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int getLength(void);
 ```
 
-#### Return_value
+#### Return Value
 
 length of data present.
 

@@ -1,20 +1,22 @@
 # Timescale
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 Defined timescale values.
 
 ## Topics
 
 ### Timescales
-- [var kCMTimeMaxTimescale: Int](kcmtimemaxtimescale.md)
+- [var kCMTimeMaxTimescale: Int](./kcmtimemaxtimescale.md)
   The maximum timescale.
 
 ## See Also
 
-- [Time](cmtime-time.md)
+### Constants
+- [Time](./cmtime-time.md)
   Defined time values.
-- [Dictionary Keys](cmtime-dictionary-keys.md)
+- [Dictionary Keys](./cmtime-dictionary-keys.md)
   Keys to use when working with dictionary representations of time.
 
 

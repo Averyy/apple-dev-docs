@@ -1,16 +1,17 @@
 # result
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result of the load operation.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.0+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 

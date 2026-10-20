@@ -1,7 +1,8 @@
 # compressedRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A compressed representation of the public key.
 
@@ -22,15 +23,16 @@ var compressedRepresentation: Data { get }
 
 ## See Also
 
-- [var rawRepresentation: Data](p384/keyagreement/publickey/rawrepresentation.md)
+### Representing the key
+- [var rawRepresentation: Data](./rawrepresentation.md)
   A full representation of the public key.
-- [var compactRepresentation: Data?](p384/keyagreement/publickey/compactrepresentation.md)
+- [var compactRepresentation: Data?](./compactrepresentation.md)
   A compact representation of the public key.
-- [var derRepresentation: Data](p384/keyagreement/publickey/derrepresentation.md)
+- [var derRepresentation: Data](./derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the public key.
-- [var pemRepresentation: String](p384/keyagreement/publickey/pemrepresentation.md)
+- [var pemRepresentation: String](./pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the public key.
-- [var x963Representation: Data](p384/keyagreement/publickey/x963representation.md)
+- [var x963Representation: Data](./x963representation.md)
   An ANSI x9.63 representation of the public key.
 
 

@@ -1,7 +1,8 @@
 # init(detectedObject:_:frameAnalysisSpacing:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object tracking request.
 
@@ -22,7 +23,8 @@ init(detectedObject: any BoundingBoxProviding & VisionObservation, _ revision: T
 
 ## See Also
 
-- [protocol BoundingBoxProviding](boundingboxproviding.md)
+### Creating a request
+- [protocol BoundingBoxProviding](../boundingboxproviding.md)
   A protocol for objects that have a bounding box.
 
 

@@ -1,7 +1,8 @@
 # replaceSubrange(_:repeating:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fill a range in the buffer with given byte.
 

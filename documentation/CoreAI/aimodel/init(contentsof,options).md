@@ -1,9 +1,10 @@
 # init(contentsOf:options:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an [`AIModel`](aimodel.md) from a `.aimodel`or `.aimodelc` file.
+Creates an [`AIModel`](../aimodel.md) from a `.aimodel`or `.aimodelc` file.
 
 **Availability**:
 - iOS 27.0+
@@ -20,17 +21,17 @@ init(contentsOf modelURL: URL, options: SpecializationOptions = .default) async 
 
 ## Mentions
 
-- [Compiling Core AI models ahead of time](compiling-core-ai-models-ahead-of-time.md)
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Compiling Core AI models ahead of time](../compiling-core-ai-models-ahead-of-time.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Discussion
 
 This initializer specializes the model if needed, caching the result for future calls.
 
-Specializing the model can take a significant amount of time depending on model size and the compute unit types it targets. This initializer always uses the [`default`](aimodelcache/default.md) cache.
+Specializing the model can take a significant amount of time depending on model size and the compute unit types it targets. This initializer always uses the [`default`](../aimodelcache/default.md) cache.
 
-> **Note**: If specializing or loading the model fails.
+> **Throws**: If specializing or loading the model fails.
 
 ## Parameters
 
@@ -39,7 +40,8 @@ Specializing the model can take a significant amount of time depending on model 
 
 ## See Also
 
-- [init?(resolvingBookmark: Data) throws](aimodel/init(resolvingbookmark:).md)
+### Creating a model
+- [init?(resolvingBookmark: Data) throws](./init%28resolvingbookmark%29.md)
   Create an `AIModel`  by resolving bookmark data pointing to its specialized asset in a cache
 
 

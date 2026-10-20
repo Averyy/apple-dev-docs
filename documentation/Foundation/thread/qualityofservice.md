@@ -1,7 +1,8 @@
 # qualityOfService
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 8.0+
@@ -18,15 +19,20 @@
 var qualityOfService: QualityOfService { get set }
 ```
 
+```objc
+@property NSQualityOfService qualityOfService;
+```
+
 ## See Also
 
-- [enum QualityOfService](qualityofservice.md)
+### Prioritizing Thread Work
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
-- [class func threadPriority() -> Double](thread/threadpriority.md)
+- [class func threadPriority() -> Double](./threadpriority%28%29.md)
   Returns the current thread’s priority.
-- [var threadPriority: Double](thread/threadpriority.md)
+- [var threadPriority: Double](./threadpriority.md)
   The receiver’s priority
-- [class func setThreadPriority(Double) -> Bool](thread/setthreadpriority(_:).md)
+- [class func setThreadPriority(Double) -> Bool](./setthreadpriority%28_%29.md)
   Sets the current thread’s priority.
 
 

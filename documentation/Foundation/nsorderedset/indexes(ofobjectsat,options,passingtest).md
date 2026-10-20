@@ -1,7 +1,8 @@
 # indexes(ofObjectsAt:options:passingTest:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
 
@@ -20,13 +21,17 @@ Returns the index, from a given set of indexes, of the object in the ordered set
 func indexes(ofObjectsAt s: IndexSet, options opts: NSEnumerationOptions = [], passingTest predicate: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet
 ```
 
+```objc
+- (NSIndexSet *) indexesOfObjectsAtIndexes:(NSIndexSet *) s options:(NSEnumerationOptions) opts passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
+```
+
 #### Return Value
 
 The index of the corresponding value in the ordered set that passes the test specified by predicate. If no objects in the ordered set pass the test, returns NSNotFound.
 
 #### Discussion
 
-By default, the enumeration starts with the first object and continues serially through the ordered set to the last object. You can specify [`concurrent`](nsenumerationoptions/concurrent.md) and/or [`reverse`](nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
+By default, the enumeration starts with the first object and continues serially through the ordered set to the last object. You can specify [`concurrent`](../nsenumerationoptions/concurrent.md) and/or [`reverse`](../nsenumerationoptions/reverse.md) as enumeration options to modify this behavior.
 
 > ❗ **Important**:  If the block parameter or `s` is `nil` this method will raise an exception.
 
@@ -34,41 +39,48 @@ By default, the enumeration starts with the first object and continues serially 
 
 - `s`: The indexes of the objects over which to enumerate.
 - `opts`: A bitmask that specifies the options for the enumeration (whether it should be performed concurrently and whether it should be performed in reverse order).
-- `predicate`: The block to apply to elements in the ordered set. The block takes three arguments: - **obj**: The element in the ordered set.
-- **idx**: The index of the element in the ordered set.
-- **stop**: A reference to a Boolean value. The block can set the value to [`true`](https://developer.apple.com/documentation/swift/true) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this value to [`true`](https://developer.apple.com/documentation/swift/true) within the block. The block returns a Boolean value that indicates whether `obj` passed the test.
+- `predicate`: The block to apply to elements in the ordered set.
+
+  The block takes three arguments:
+
+  - **obj**: The element in the ordered set.
+  - **idx**: The index of the element in the ordered set.
+  - **stop**: A reference to a Boolean value. The block can set the value to [`true`](../../Swift/true.md) to stop further processing of the set. The `stop` argument is an out-only argument. You should only ever set this value to [`true`](../../Swift/true.md) within the block.
+
+  The block returns a Boolean value that indicates whether `obj` passed the test.
 
 ## See Also
 
-- [func contains(Any) -> Bool](nsorderedset/contains(_:).md)
+### Accessing Set Members
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the ordered set.
-- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(at:options:using:).md)
+- [func enumerateObjects(at: IndexSet, options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28at,options,using%29.md)
   Executes a given block using the objects in the ordered set at the specified indexes.
-- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(_:).md)
+- [func enumerateObjects((Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28_%29.md)
   Executes a given block using each object in the ordered set.
-- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](nsorderedset/enumerateobjects(options:using:).md)
+- [func enumerateObjects(options: NSEnumerationOptions, using: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateobjects%28options,using%29.md)
   Executes a given block using each object in the set, using the specified enumeration options.
-- [var firstObject: Any?](nsorderedset/firstobject.md)
+- [var firstObject: Any?](./firstobject.md)
   The first object in the ordered set.
-- [var lastObject: Any?](nsorderedset/lastobject.md)
+- [var lastObject: Any?](./lastobject.md)
   The last object in the ordered set.
-- [func object(at: Int) -> Any](nsorderedset/object(at:).md)
+- [func object(at: Int) -> Any](./object%28at%29.md)
   Returns the object at the specified index of the set.
-- [subscript(Int) -> Any](nsorderedset/subscript(_:).md)
+- [subscript(Int) -> Any](./subscript%28_%29.md)
   Returns the object at the specified index of the set.
-- [func objects(at: IndexSet) -> [Any]](nsorderedset/objects(at:).md)
+- [func objects(at: IndexSet) -> [Any]](./objects%28at%29.md)
   Returns the objects in the ordered set at the specified indexes.
-- [func index(of: Any) -> Int](nsorderedset/index(of:).md)
+- [func index(of: Any) -> Int](./index%28of%29.md)
   Returns the index of the specified object.
-- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](nsorderedset/index(of:insortedrange:options:usingcomparator:).md)
+- [func index(of: Any, inSortedRange: NSRange, options: NSBinarySearchingOptions, usingComparator: (Any, Any) -> ComparisonResult) -> Int](./index%28of,insortedrange,options,usingcomparator%29.md)
   Returns the index, within a specified range, of an object compared with elements in the ordered set using a given NSComparator block.
-- [func index(ofObjectAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(ofobjectat:options:passingtest:).md)
+- [func index(ofObjectAt: IndexSet, options: NSEnumerationOptions, passingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./index%28ofobjectat,options,passingtest%29.md)
   Returns the index, from a given set of indexes, of the object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func index(ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(ofobjectpassingtest:).md)
+- [func index(ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./index%28ofobjectpassingtest%29.md)
   Returns the index of the object in the ordered set that passes a test in a given block.
-- [func index(NSEnumerationOptions, ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](nsorderedset/index(_:ofobjectpassingtest:).md)
+- [func index(NSEnumerationOptions, ofObjectPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> Int](./index%28_,ofobjectpassingtest%29.md)
   Returns the index of an object in the ordered set that passes a test in a given block for a given set of enumeration options.
-- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](nsorderedset/indexes(ofobjectspassingtest:).md)
+- [func indexes(ofObjectsPassingTest: (Any, Int, UnsafeMutablePointer<ObjCBool>) -> Bool) -> IndexSet](./indexes%28ofobjectspassingtest%29.md)
   Returns the index of the object in the ordered set that passes a test in a given block.
 
 

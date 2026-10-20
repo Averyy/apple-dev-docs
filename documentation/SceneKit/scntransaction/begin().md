@@ -1,23 +1,28 @@
 # begin()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Begins a new transaction for the current thread.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 class func begin()
+```
+
+```objc
++ (void) begin;
 ```
 
 #### Discussion
@@ -28,9 +33,10 @@ The first time you modify the scene graph during a pass through the run loop, Sc
 
 ## See Also
 
-- [class func commit()](scntransaction/commit.md)
+### Creating and Committing Transactions
+- [class func commit()](./commit%28%29.md)
   Commits all changes made during the current transaction.
-- [class func flush()](scntransaction/flush.md)
+- [class func flush()](./flush%28%29.md)
   Applies all changes from the current automatic transaction.
 
 

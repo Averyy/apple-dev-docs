@@ -1,7 +1,8 @@
 # init(timeIntervalSinceNow:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a date value initialized relative to the current date and time by a given number of seconds.
 
@@ -22,13 +23,14 @@ init(timeIntervalSinceNow: TimeInterval)
 
 ## See Also
 
-- [init()](date/init.md)
+### Creating a Date
+- [init()](./init%28%29.md)
   Creates a date value initialized to the current date and time.
-- [init(timeInterval: TimeInterval, since: Date)](date/init(timeinterval:since:).md)
+- [init(timeInterval: TimeInterval, since: Date)](./init%28timeinterval,since%29.md)
   Creates a date value initialized relative to another given date by a given number of seconds.
-- [init(timeIntervalSinceReferenceDate: TimeInterval)](date/init(timeintervalsincereferencedate:).md)
+- [init(timeIntervalSinceReferenceDate: TimeInterval)](./init%28timeintervalsincereferencedate%29.md)
   Creates a date value initialized relative to 00:00:00 UTC on 1 January 2001 by a given number of seconds.
-- [init(timeIntervalSince1970: TimeInterval)](date/init(timeintervalsince1970:).md)
+- [init(timeIntervalSince1970: TimeInterval)](./init%28timeintervalsince1970%29.md)
   Creates a date value initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 
 

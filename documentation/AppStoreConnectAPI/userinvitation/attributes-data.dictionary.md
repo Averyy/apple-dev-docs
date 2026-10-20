@@ -1,7 +1,8 @@
 # UserInvitation.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a User Invitations resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a User Invitations resource.
 
 ## Declaration
 
-```swift
+```
 object UserInvitation.Attributes
 ```
 
@@ -26,9 +27,11 @@ object UserInvitation.Attributes
 
 ## See Also
 
-- [User Invitations](user-invitations.md)
+### Related Documentation
+- [User Invitations](../user-invitations.md)
   Email invitations to join your App Store Connect team.
-- [object UserInvitation.Relationships](userinvitation/relationships-data.dictionary.md)
+### Objects
+- [object UserInvitation.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

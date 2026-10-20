@@ -1,7 +1,8 @@
 # system()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Morphs the pointer into a default system-style pointer.
 
@@ -17,17 +18,22 @@ Morphs the pointer into a default system-style pointer.
 class func system() -> Self
 ```
 
+```objc
++ (instancetype) systemPointerStyle;
+```
+
 #### Discussion
 
-To display custom accessories alongside the default pointer, use this pointer style and assign your accessories to the [`accessories`](uipointerstyle/accessories.md) property.
+To display custom accessories alongside the default pointer, use this pointer style and assign your accessories to the [`accessories`](./accessories.md) property.
 
 ## See Also
 
-- [convenience init(effect: UIPointerEffect, shape: UIPointerShape?)](uipointerstyle/init(effect:shape:).md)
+### Creating a pointer style
+- [convenience init(effect: UIPointerEffect, shape: UIPointerShape?)](./init%28effect,shape%29.md)
   Applies the provided content effect and pointer shape to the current region.
-- [convenience init(shape: UIPointerShape, constrainedAxes: UIAxis)](uipointerstyle/init(shape:constrainedaxes:).md)
+- [convenience init(shape: UIPointerShape, constrainedAxes: UIAxis)](./init%28shape,constrainedaxes%29.md)
   Morphs the pointer into the provided shape when hovering over the current region.
-- [class func hidden() -> Self](uipointerstyle/hidden.md)
+- [class func hidden() -> Self](./hidden%28%29.md)
   Hides the pointer when it moves over the current region.
 
 

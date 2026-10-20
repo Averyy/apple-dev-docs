@@ -1,7 +1,8 @@
 # Translatable3DProtocol
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines the interface for Spatial entities that can translate.
 
@@ -23,33 +24,33 @@ protocol Translatable3DProtocol<Scalar> : SpatialTypeProtocol
 ## Topics
 
 ### Instance Methods
-- [func translate(by: Self.Vector)](translatable3dprotocol/translate(by:).md)
+- [func translate(by: Self.Vector)](./translatable3dprotocol/translate%28by%29.md)
   Translates the entity by the specified vector.
-- [func translated(by: Self.Vector) -> Self](translatable3dprotocol/translated(by:).md)
+- [func translated(by: Self.Vector) -> Self](./translatable3dprotocol/translated%28by%29.md)
   Returns the entity translated by the specified vector.
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [SpatialTypeProtocol](spatialtypeprotocol.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [SpatialTypeProtocol](./spatialtypeprotocol.md)
 ### Conforming Types
-- [AffineTransform3D](affinetransform3d.md)
-- [AffineTransform3DFloat](affinetransform3dfloat.md)
-- [Point3D](point3d.md)
-- [Point3DFloat](point3dfloat.md)
-- [Pose3D](pose3d.md)
-- [Pose3DFloat](pose3dfloat.md)
-- [ProjectiveTransform3D](projectivetransform3d.md)
-- [ProjectiveTransform3DFloat](projectivetransform3dfloat.md)
-- [Ray3D](ray3d.md)
-- [Ray3DFloat](ray3dfloat.md)
-- [Rect3D](rect3d.md)
-- [Rect3DFloat](rect3dfloat.md)
-- [ScaledPose3D](scaledpose3d.md)
-- [ScaledPose3DFloat](scaledpose3dfloat.md)
+- [AffineTransform3D](./affinetransform3d.md)
+- [AffineTransform3DFloat](./affinetransform3dfloat.md)
+- [Point3D](./point3d.md)
+- [Point3DFloat](./point3dfloat.md)
+- [Pose3D](./pose3d.md)
+- [Pose3DFloat](./pose3dfloat.md)
+- [ProjectiveTransform3D](./projectivetransform3d.md)
+- [ProjectiveTransform3DFloat](./projectivetransform3dfloat.md)
+- [Ray3D](./ray3d.md)
+- [Ray3DFloat](./ray3dfloat.md)
+- [Rect3D](./rect3d.md)
+- [Rect3DFloat](./rect3dfloat.md)
+- [ScaledPose3D](./scaledpose3d.md)
+- [ScaledPose3DFloat](./scaledpose3dfloat.md)
 
 
 ---

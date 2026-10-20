@@ -1,7 +1,8 @@
 # userSelected
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+

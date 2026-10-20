@@ -1,7 +1,8 @@
 # speechSynthesizer(_:didStart:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the synthesizer begins speaking an utterance.
 
@@ -20,9 +21,13 @@ Tells the delegate when the synthesizer begins speaking an utterance.
 optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance)
 ```
 
+```objc
+- (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer didStartSpeechUtterance:(AVSpeechUtterance *) utterance;
+```
+
 #### Discussion
 
-If the utterance’s [`preUtteranceDelay`](avspeechutterance/preutterancedelay.md) property is greater than zero, the system calls this method after the delay completes and speech begins.
+If the utterance’s [`preUtteranceDelay`](../avspeechutterance/preutterancedelay.md) property is greater than zero, the system calls this method after the delay completes and speech begins.
 
 ## Parameters
 
@@ -31,17 +36,18 @@ If the utterance’s [`preUtteranceDelay`](avspeechutterance/preutterancedelay.m
 
 ## See Also
 
-- [func speechSynthesizer(AVSpeechSynthesizer, willSpeakRangeOfSpeechString: NSRange, utterance: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:willspeakrangeofspeechstring:utterance:).md)
+### Responding to speech synthesis events
+- [func speechSynthesizer(AVSpeechSynthesizer, willSpeakRangeOfSpeechString: NSRange, utterance: AVSpeechUtterance)](./speechsynthesizer%28_,willspeakrangeofspeechstring,utterance%29.md)
   Tells the delegate when the synthesizer is about to speak a portion of an utterance’s text.
-- [func speechSynthesizer(AVSpeechSynthesizer, willSpeak: AVSpeechSynthesisMarker, utterance: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:willspeak:utterance:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, willSpeak: AVSpeechSynthesisMarker, utterance: AVSpeechUtterance)](./speechsynthesizer%28_,willspeak,utterance%29.md)
   Tells the delegate when the synthesizer is about to speak a marker of an utterance’s text.
-- [func speechSynthesizer(AVSpeechSynthesizer, didPause: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didpause:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didPause: AVSpeechUtterance)](./speechsynthesizer%28_,didpause%29.md)
   Tells the delegate when the synthesizer pauses while speaking an utterance.
-- [func speechSynthesizer(AVSpeechSynthesizer, didContinue: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didcontinue:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didContinue: AVSpeechUtterance)](./speechsynthesizer%28_,didcontinue%29.md)
   Tells the delegate when the synthesizer resumes speaking an utterance after pausing.
-- [func speechSynthesizer(AVSpeechSynthesizer, didFinish: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didfinish:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didFinish: AVSpeechUtterance)](./speechsynthesizer%28_,didfinish%29.md)
   Tells the delegate when the synthesizer finishes speaking an utterance.
-- [func speechSynthesizer(AVSpeechSynthesizer, didCancel: AVSpeechUtterance)](avspeechsynthesizerdelegate/speechsynthesizer(_:didcancel:).md)
+- [func speechSynthesizer(AVSpeechSynthesizer, didCancel: AVSpeechUtterance)](./speechsynthesizer%28_,didcancel%29.md)
   Tells the delegate when the synthesizer cancels speaking an utterance.
 
 

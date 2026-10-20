@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the element.
@@ -10,7 +11,7 @@ A string that identifies the element.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,6 +19,10 @@ A string that identifies the element.
 ```swift
 @MainActor
 var accessibilityIdentifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accessibilityIdentifier;
 ```
 
 #### Discussion

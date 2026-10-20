@@ -1,7 +1,8 @@
 # folding(options:locale:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with the given character folding options applied.
 

@@ -1,7 +1,8 @@
 # OperationQueue.SchedulerTimeType.Stride
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The interval by which operation queue times advance.
 
@@ -23,43 +24,44 @@ struct Stride
 ## Topics
 
 ### Managing Stride Properties
-- [var timeInterval: TimeInterval](operationqueue/schedulertimetype/stride/timeinterval.md)
+- [var timeInterval: TimeInterval](./stride/timeinterval.md)
   The value of this time interval, in seconds.
-- [var magnitude: TimeInterval](operationqueue/schedulertimetype/stride/magnitude.md)
+- [var magnitude: TimeInterval](./stride/magnitude.md)
   The value of this time interval, in seconds.
 ### Creating Scheduler Time Strides
-- [init(TimeInterval)](operationqueue/schedulertimetype/stride/init(_:).md)
+- [init(TimeInterval)](./stride/init%28_%29.md)
   Creates a stride using the specified time interval.
-- [init?<T>(exactly: T)](operationqueue/schedulertimetype/stride/init(exactly:).md)
+- [init?<T>(exactly: T)](./stride/init%28exactly%29.md)
   Creates a stride using the specified integer, if it can be represented exactly.
-- [init(floatLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(floatliteral:).md)
+- [init(floatLiteral: TimeInterval)](./stride/init%28floatliteral%29.md)
   Creates a stride using the specified floating-point value.
-- [init(integerLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(integerliteral:).md)
+- [init(integerLiteral: TimeInterval)](./stride/init%28integerliteral%29.md)
   Creates a stride using the specified integer value.
 
 ## Relationships
 
 ### Conforms To
-- [AdditiveArithmetic](../swift/additivearithmetic.md)
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Numeric](../swift/numeric.md)
-- [SchedulerTimeIntervalConvertible](../combine/schedulertimeintervalconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SignedNumeric](../swift/signednumeric.md)
+- [AdditiveArithmetic](../../../Swift/additivearithmetic.md)
+- [Comparable](../../../Swift/comparable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByFloatLiteral](../../../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../../../Swift/expressiblebyintegerliteral.md)
+- [Numeric](../../../Swift/numeric.md)
+- [SchedulerTimeIntervalConvertible](../../../Combine/schedulertimeintervalconvertible.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SignedNumeric](../../../Swift/signednumeric.md)
 
 ## See Also
 
-- [var date: Date](operationqueue/schedulertimetype/date.md)
+### Managing Scheduler Time Type Properties
+- [var date: Date](./date.md)
   The date this type represents.
-- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](operationqueue/schedulertimetype/advanced(by:).md)
+- [func advanced(by: OperationQueue.SchedulerTimeType.Stride) -> OperationQueue.SchedulerTimeType](./advanced%28by%29.md)
   Calculates an operation queue scheduler time by advancing the scheduler time type’s date by the given interval.
-- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](operationqueue/schedulertimetype/distance(to:).md)
+- [func distance(to: OperationQueue.SchedulerTimeType) -> OperationQueue.SchedulerTimeType.Stride](./distance%28to%29.md)
   The distance to another operation queue scheduler time.
 
 

@@ -1,7 +1,8 @@
 # init(unicodeScalarLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to the given value.
 

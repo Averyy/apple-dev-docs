@@ -1,7 +1,8 @@
 # WebPage.ExportedContentConfiguration.Region
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a specific semantic region of a webpage.
 
@@ -21,23 +22,24 @@ struct Region
 ## Topics
 
 ### Type Properties
-- [static var contents: WebPage.ExportedContentConfiguration.Region](webpage/exportedcontentconfiguration/region/contents.md)
+- [static var contents: WebPage.ExportedContentConfiguration.Region](./region/contents.md)
   The entire region of the webpage.
 ### Type Methods
-- [static func rect(CGRect) -> WebPage.ExportedContentConfiguration.Region](webpage/exportedcontentconfiguration/region/rect(_:).md)
+- [static func rect(CGRect) -> WebPage.ExportedContentConfiguration.Region](./region/rect%28_%29.md)
   A region that corresponds to a rectangle in the page’s coordinate system.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func image(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool, snapshotWidth: CGFloat?, afterScreenUpdates: Bool) -> WebPage.ExportedContentConfiguration](webpage/exportedcontentconfiguration/image(region:allowtransparentbackground:snapshotwidth:afterscreenupdates:).md)
+### Configurable types
+- [static func image(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool, snapshotWidth: CGFloat?, afterScreenUpdates: Bool) -> WebPage.ExportedContentConfiguration](./image%28region,allowtransparentbackground,snapshotwidth,afterscreenupdates%29.md)
   A configuration of a webpage for a representation as image data.
-- [static func pdf(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool) -> WebPage.ExportedContentConfiguration](webpage/exportedcontentconfiguration/pdf(region:allowtransparentbackground:).md)
+- [static func pdf(region: WebPage.ExportedContentConfiguration.Region, allowTransparentBackground: Bool) -> WebPage.ExportedContentConfiguration](./pdf%28region,allowtransparentbackground%29.md)
   A configuration of a webpage for a representation as PDF data.
 
 

@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when the framework records the sample.
 
@@ -16,9 +17,14 @@ The time when the framework records the sample.
 var timestamp: SRAbsoluteTime { get }
 ```
 
+```objc
+@property (assign, readonly) SRAbsoluteTime timestamp;
+```
+
 ## See Also
 
-- [var sample: SampleType](srfetchresult/sample.md)
+### Sampling Data
+- [var sample: SampleType](./sample.md)
   A recording that the sensor reader fetches.
 
 

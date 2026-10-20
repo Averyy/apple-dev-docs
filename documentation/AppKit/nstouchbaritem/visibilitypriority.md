@@ -1,7 +1,8 @@
 # visibilityPriority
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines which items are shown in a bar when space is limited.
 
@@ -17,15 +18,20 @@ Determines which items are shown in a bar when space is limited.
 var visibilityPriority: NSTouchBarItem.Priority { get set }
 ```
 
+```objc
+@property NSTouchBarItemPriority visibilityPriority;
+```
+
 #### Discussion
 
 The bar hides items of lower priority when there is not enough space to show all items. Use this property to specify the relative priority of the items in your bar.
 
 ## See Also
 
-- [NSTouchBarItem.Priority](nstouchbaritem/priority.md)
+### Managing item visibility
+- [NSTouchBarItem.Priority](./priority.md)
   Priorities for the visibility of a Touch Bar item.
-- [var isVisible: Bool](nstouchbaritem/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that reflects whether or not the item is visible.
 
 

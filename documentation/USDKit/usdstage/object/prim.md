@@ -1,7 +1,8 @@
 # prim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nearest prim that contains this object.
 
@@ -21,7 +22,7 @@ var prim: USDPrim { get }
 
 #### Discussion
 
-If this object is a [`USDPrim`](usdprim.md), the value of this property is that same prim. If this object is a [`USDPrim.Attribute`](usdprim/attribute.md) or a [`USDPrim.Relationship`](usdprim/relationship.md), the value of this property is the nearest prim that contains this object.
+If this object is a [`USDPrim`](../../usdprim.md), the value of this property is that same prim. If this object is a [`USDPrim.Attribute`](../../usdprim/attribute.md) or a [`USDPrim.Relationship`](../../usdprim/relationship.md), the value of this property is the nearest prim that contains this object.
 
 
 ---

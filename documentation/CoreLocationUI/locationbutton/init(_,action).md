@@ -1,7 +1,8 @@
 # init(_:action:)
 
 **Framework**: CoreLocationUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a location button with the specified title and action.
 
@@ -20,12 +21,13 @@ init(_ title: LocationButton.Title? = .currentLocation, action: @escaping () -> 
 
 ## Parameters
 
-- `title`: The text that the button displays. For possible values, see [`LocationButton.Title`](locationbutton/title.md).
+- `title`: The text that the button displays. For possible values, see [`LocationButton.Title`](./title.md).
 - `action`: The action that initiates every time the user taps the button.
 
 ## See Also
 
-- [LocationButton.Title](locationbutton/title.md)
+### Creating a location button
+- [LocationButton.Title](./title.md)
   Constants that specify the text of a button title.
 
 

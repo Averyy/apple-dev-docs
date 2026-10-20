@@ -1,7 +1,8 @@
 # url
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to which a bookmark points.
 
@@ -15,13 +16,18 @@ A URL to which a bookmark points.
 var url: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * url;
+```
+
 ## See Also
 
-- [var identifier: String](bebrowserdatabookmark/identifier.md)
+### Accessing bookmark properties
+- [var identifier: String](./identifier.md)
   A unique identifier for a bookmark.
-- [var isFolder: Bool](bebrowserdatabookmark/isfolder.md)
+- [var isFolder: Bool](./isfolder.md)
   A Boolean value that indicates whether a bookmark represents a folder.
-- [var title: String](bebrowserdatabookmark/title.md)
+- [var title: String](./title.md)
   A localized title for a bookmark.
 
 

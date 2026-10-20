@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the proposed target that a scrollable view should scroll to.
@@ -32,7 +33,8 @@ You can implement this method to override the calculated target which will have 
 
 ## See Also
 
-- [ScrollTargetBehavior.TargetContext](scrolltargetbehavior/targetcontext.md)
+### Updating the proposed target
+- [ScrollTargetBehavior.TargetContext](./targetcontext.md)
   The context in which a scroll behavior updates the scroll target.
 
 

@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system honors a granted capability for the browser extension process.
 
@@ -18,11 +19,12 @@ var isValid: Bool { get }
 
 #### Discussion
 
-If the system grants this capability to the browser extension process and you haven’t called [`invalidate()`](processcapability/grant/invalidate().md), then this property is `true`; otherwise, it’s false.
+If the system grants this capability to the browser extension process and you haven’t called [`invalidate()`](./invalidate%28%29.md), then this property is `true`; otherwise, it’s false.
 
 ## See Also
 
-- [func invalidate()](processcapability/grant/invalidate.md)
+### Testing and changing validity
+- [func invalidate()](./invalidate%28%29.md)
   Invalidates the grant, removing the capability from the process it was granted to.
 
 

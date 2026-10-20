@@ -1,14 +1,15 @@
 # UNMAP_GRANULARITY_ALIGNMENT
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 UInt32 UNMAP_GRANULARITY_ALIGNMENT;
 ```
 

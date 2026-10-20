@@ -1,11 +1,12 @@
 # init(version:beginDocument:endDocument:beginPage:endPage:noteProgress:noteMessage:releaseInfo:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,7 +16,8 @@ init(version: UInt32, beginDocument: CGPSConverterBeginDocumentCallback?, endDoc
 
 ## See Also
 
-- [init()](cgpsconvertercallbacks/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

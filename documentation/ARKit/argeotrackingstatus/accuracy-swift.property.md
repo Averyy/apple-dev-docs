@@ -1,7 +1,8 @@
 # accuracy
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accuracy of geo tracking at the time the session captured the frame.
 
@@ -15,13 +16,18 @@ The accuracy of geo tracking at the time the session captured the frame.
 var accuracy: ARGeoTrackingStatus.Accuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) ARGeoTrackingAccuracy accuracy;
+```
+
 #### Discussion
 
-ARKit populates this property after reaching [`ARGeoTrackingStatus.State.localized`](argeotrackingstatus/state-swift.enum/localized.md). To ensure the best possible user experience, an app must monitor and react to the geo-tracking accuracy. For more information, see [`ARGeoTrackingStatus.Accuracy`](argeotrackingstatus/accuracy-swift.enum.md).
+ARKit populates this property after reaching [`ARGeoTrackingStatus.State.localized`](./state-swift.enum/localized.md). To ensure the best possible user experience, an app must monitor and react to the geo-tracking accuracy. For more information, see [`ARGeoTrackingStatus.Accuracy`](./accuracy-swift.enum.md).
 
 ## See Also
 
-- [ARGeoTrackingStatus.Accuracy](argeotrackingstatus/accuracy-swift.enum.md)
+### Judging Accuracy
+- [ARGeoTrackingStatus.Accuracy](./accuracy-swift.enum.md)
   Values that are possible for the current accuracy of geo tracking.
 
 

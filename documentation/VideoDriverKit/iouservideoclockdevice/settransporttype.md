@@ -1,7 +1,8 @@
 # SetTransportType
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the transport type of the clock device.
 
@@ -10,7 +11,7 @@ Sets the transport type of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetTransportType(IOUserVideoTransportType in_transport_type);
 ```
 
@@ -24,9 +25,10 @@ Drivers can change the transport type of the clock device dynamically. The objec
 
 ## See Also
 
-- [GetTransportType](iouservideoclockdevice/gettransporttype.md)
+### Working with transport type
+- [GetTransportType](./gettransporttype.md)
   Gets the transport type of the IOUserVideoClockDevice.
-- [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+- [IOUserVideoTransportType](../videodriverkit-page/iouservideotransporttype.md)
   The transport type of a video stream.
 
 

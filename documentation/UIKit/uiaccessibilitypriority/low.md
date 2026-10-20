@@ -1,7 +1,8 @@
 # low
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A low-priority announcement that the system queues and speaks after other speech utterances are complete.
 
@@ -20,11 +21,16 @@ nonisolated
 static let low: UIAccessibilityPriority
 ```
 
+```c
+extern UIAccessibilityPriority const UIAccessibilityPriorityLow;
+```
+
 ## See Also
 
-- [static let high: UIAccessibilityPriority](uiaccessibilitypriority/high.md)
+### Choosing a priority
+- [static let high: UIAccessibilityPriority](./high.md)
   A high-priority announcement that interrupts other speech and isn’t interruptible after it starts.
-- [static let `default`: UIAccessibilityPriority](uiaccessibilitypriority/default.md)
+- [static let `default`: UIAccessibilityPriority](./default.md)
   A default-priority announcement that interrupts existing speech, but is interruptible if a new speech utterance starts.
 
 

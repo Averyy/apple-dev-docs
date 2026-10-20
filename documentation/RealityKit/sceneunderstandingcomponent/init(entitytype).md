@@ -1,7 +1,8 @@
 # init(entityType:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a component for the given entity type that makes an entity aware of certain aspects of the physical environment.
 
@@ -24,7 +25,8 @@ init(entityType: SceneUnderstandingComponent.EntityType?)
 
 ## See Also
 
-- [init()](sceneunderstandingcomponent/init.md)
+### Initializing a scene-understanding component
+- [init()](./init%28%29.md)
   Creates a component that makes an entity aware of certain aspects of the physical environment.
 
 

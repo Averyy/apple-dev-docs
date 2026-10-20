@@ -1,7 +1,8 @@
 # IntentParameter.ValueState
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates whether an IntentParameter was provided an initial value or if it was unset
 
@@ -20,25 +21,28 @@ Indicates whether an IntentParameter was provided an initial value or if it was 
 enum ValueState
 ```
 
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.ValueState.set(_:)](intentparameter/valuestate-swift.enum/set(_:).md)
+- [IntentParameter.ValueState.set(_:)](./valuestate-swift.enum/set%28_%29.md)
   The parameter was provided an initial value.
-- [IntentParameter.ValueState.unset](intentparameter/valuestate-swift.enum/unset.md)
+- [IntentParameter.ValueState.unset](./valuestate-swift.enum/unset.md)
   The parameter was never provided a value
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 ## See Also
 
-- [let defaultValue: Value.UnwrappedType?](intentparameter/defaultvalue.md)
-- [var projectedValue: IntentParameter<Value>](intentparameter/projectedvalue.md)
-- [var wrappedValue: Value](intentparameter/wrappedvalue.md)
-- [var valueState: IntentParameter<Value>.ValueState](intentparameter/valuestate-swift.property.md)
+### Accessing the underlying value
+- [let defaultValue: Value.UnwrappedType?](./defaultvalue.md)
+- [var projectedValue: IntentParameter<Value>](./projectedvalue.md)
+- [var wrappedValue: Value](./wrappedvalue.md)
+- [var valueState: IntentParameter<Value>.ValueState](./valuestate-swift.property.md)
   Check if an IntentParameter was provided an initial value
 
 

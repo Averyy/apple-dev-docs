@@ -1,7 +1,8 @@
 # events
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An async sequence of preview session events.
 

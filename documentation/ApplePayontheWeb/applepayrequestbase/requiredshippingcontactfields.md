@@ -1,7 +1,8 @@
 # requiredShippingContactFields
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of fields used for processing the transaction, including the recipient’s name, mailing address, and other contact details.
 
@@ -11,13 +12,14 @@ A list of fields used for processing the transaction, including the recipient’
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayContactField> requiredShippingContactFields;
 ```
 
 ## See Also
 
-- [requiredBillingContactFields](applepayrequestbase/requiredbillingcontactfields.md)
+### Billing and shipping information
+- [requiredBillingContactFields](./requiredbillingcontactfields.md)
   A list of fields use for processing the transaction, including the name, address, and other information associated with the payment method.
 
 

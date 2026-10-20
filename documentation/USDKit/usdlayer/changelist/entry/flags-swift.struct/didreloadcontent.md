@@ -1,7 +1,8 @@
 # didReloadContent
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the layer was reloaded from its source.
 

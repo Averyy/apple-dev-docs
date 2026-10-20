@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Game Controller  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a device type for an identifier.
 
@@ -12,6 +13,10 @@ Create a device type for an identifier.
 
 ```swift
 convenience init?(identifier: String)
+```
+
+```objc
++ (instancetype) deviceTypeWithIdentifier:(NSString *) identifier;
 ```
 
 #### Discussion

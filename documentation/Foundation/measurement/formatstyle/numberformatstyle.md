@@ -1,7 +1,8 @@
 # numberFormatStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The formatting of the measurement value.
 
@@ -37,17 +38,18 @@ volume.formatted(.measurement(width: .abbreviated,
 
 ## See Also
 
-- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/width.md)
+### Modifying a measurement format style
+- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](./width.md)
   The width of the measurement unit.
-- [Measurement.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth.md)
+- [Measurement.FormatStyle.UnitWidth](./unitwidth.md)
   Specifies the width of the unit, determining the textual representation.
-- [var usage: MeasurementFormatUnitUsage<UnitType>?](measurement/formatstyle/usage.md)
+- [var usage: MeasurementFormatUnitUsage<UnitType>?](./usage.md)
   The intended purpose of the formatted measurement.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale of the format style.
-- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](./locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 
 

@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.TextualContextAttribute.TextualContext.messaging
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text used in a message, like in the Messages app.
 

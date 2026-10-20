@@ -1,7 +1,8 @@
 # success
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A condition that matches when a process exits normally.
 
@@ -17,7 +18,7 @@ static var success: ExitTest.Condition { get }
 
 ## Mentions
 
-- [Exit testing](exit-testing.md)
+- [Exit testing](../../exit-testing.md)
 
 #### Discussion
 

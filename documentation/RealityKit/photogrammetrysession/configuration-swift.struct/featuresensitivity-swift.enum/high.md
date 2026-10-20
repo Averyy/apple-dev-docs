@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Configuration.FeatureSensitivity.high
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session uses a slower, more sensitive algorithm to detect landmarks.
 
@@ -19,7 +20,8 @@ case high
 
 ## See Also
 
-- [PhotogrammetrySession.Configuration.FeatureSensitivity.normal](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.enum/normal.md)
+### Specifying feature sensitivity
+- [PhotogrammetrySession.Configuration.FeatureSensitivity.normal](./normal.md)
   The session uses the default algorithm to detect landmarks.
 
 

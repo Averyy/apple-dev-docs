@@ -1,7 +1,8 @@
 # CBAdvertisementDataManufacturerDataKey
 
 **Framework**: Core Bluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The manufacturer data of a peripheral.
 
@@ -20,25 +21,30 @@ The manufacturer data of a peripheral.
 let CBAdvertisementDataManufacturerDataKey: String
 ```
 
+```c
+extern NSString * const CBAdvertisementDataManufacturerDataKey;
+```
+
 #### Discussion
 
-The value associated with this key is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object.
+The value associated with this key is an [`NSData`](../Foundation/nsdata.md) object.
 
 ## See Also
 
-- [let CBAdvertisementDataLocalNameKey: String](cbadvertisementdatalocalnamekey.md)
+### Advertisement Keys
+- [let CBAdvertisementDataLocalNameKey: String](./cbadvertisementdatalocalnamekey.md)
   The local name of a peripheral.
-- [let CBAdvertisementDataServiceDataKey: String](cbadvertisementdataservicedatakey.md)
+- [let CBAdvertisementDataServiceDataKey: String](./cbadvertisementdataservicedatakey.md)
   A dictionary that contains service-specific advertisement data.
-- [let CBAdvertisementDataServiceUUIDsKey: String](cbadvertisementdataserviceuuidskey.md)
+- [let CBAdvertisementDataServiceUUIDsKey: String](./cbadvertisementdataserviceuuidskey.md)
   An array of service UUIDs.
-- [let CBAdvertisementDataOverflowServiceUUIDsKey: String](cbadvertisementdataoverflowserviceuuidskey.md)
+- [let CBAdvertisementDataOverflowServiceUUIDsKey: String](./cbadvertisementdataoverflowserviceuuidskey.md)
   An array of UUIDs found in the overflow area of the advertisement data.
-- [let CBAdvertisementDataTxPowerLevelKey: String](cbadvertisementdatatxpowerlevelkey.md)
+- [let CBAdvertisementDataTxPowerLevelKey: String](./cbadvertisementdatatxpowerlevelkey.md)
   The transmit power of a peripheral.
-- [let CBAdvertisementDataIsConnectable: String](cbadvertisementdataisconnectable.md)
+- [let CBAdvertisementDataIsConnectable: String](./cbadvertisementdataisconnectable.md)
   A Boolean value that indicates whether the advertising event type is connectable.
-- [let CBAdvertisementDataSolicitedServiceUUIDsKey: String](cbadvertisementdatasolicitedserviceuuidskey.md)
+- [let CBAdvertisementDataSolicitedServiceUUIDsKey: String](./cbadvertisementdatasolicitedserviceuuidskey.md)
   An array of solicited service UUIDs.
 
 

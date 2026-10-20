@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct fvmlib {
     ...
 };
@@ -17,9 +17,9 @@ struct fvmlib {
 ## Topics
 
 ### Instance Properties
-- [header_addr](fvmlib/1525258-header_addr.md)
-- [minor_version](fvmlib/1525384-minor_version.md)
-- [name](fvmlib/1525704-name.md)
+- [header_addr](./fvmlib/api-1525258-header_addr.md)
+- [minor_version](./fvmlib/api-1525384-minor_version.md)
+- [name](./fvmlib/api-1525704-name.md)
 
 
 ---

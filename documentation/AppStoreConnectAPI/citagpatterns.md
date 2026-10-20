@@ -1,7 +1,8 @@
 # CiTagPatterns
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Case-sensitive patterns Xcode Cloud uses to determine if a change meets tag names you configure for a workflow’s start condition.
 
@@ -10,14 +11,14 @@ Case-sensitive patterns Xcode Cloud uses to determine if a change meets tag name
 
 ## Declaration
 
-```swift
+```
 object CiTagPatterns
 ```
 
 ## Topics
 
 ### Objects
-- [object CiTagPatterns.Patterns](citagpatterns/patterns-data.dictionary.md)
+- [object CiTagPatterns.Patterns](./citagpatterns/patterns-data.dictionary.md)
   A case-sensitive pattern Xcode Cloud uses to determine if a change meets tag names you configure for a workflow’s start condition.
 
 ## Properties

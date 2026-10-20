@@ -1,7 +1,8 @@
 # anyArea
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var anyArea: PDFAreaOfInterest { get }
+```
+
+```c
+kPDFAnyArea
 ```
 
 

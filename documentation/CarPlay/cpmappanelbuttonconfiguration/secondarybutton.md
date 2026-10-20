@@ -1,7 +1,8 @@
 # secondaryButton
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional button you use to perform a secondary action.
 
@@ -15,6 +16,10 @@ The optional button you use to perform a secondary action.
 ```swift
 @NSCopying
 var secondaryButton: CPButton? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) CPButton * secondaryButton;
 ```
 
 #### Discussion

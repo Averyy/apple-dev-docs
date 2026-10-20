@@ -1,6 +1,7 @@
 # Publishing an Article
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Build a URL and article body for the publish-article request.
 
@@ -233,7 +234,7 @@ filenames = glob.glob('%s/*' % self.article_directory)
 parts = filter(None, map(lambda f: self.build_mime_part(boundary, f), filenames))
 ```
 
-When you build the MIME parts, only use the Apple News-supported file-format extensions; for example, JSON, JPEG, GIF, and PNG. See [`Preparing Image, Video, Audio, Music, and ARKit Assets`](preparing-image-video-audio-music-and-arkit-assets.md).
+When you build the MIME parts, only use the Apple News-supported file-format extensions; for example, JSON, JPEG, GIF, and PNG. See [Preparing Image, Video, Audio, Music, and ARKit Assets](./preparing-image-video-audio-music-and-arkit-assets.md).
 
 ```python
 extension = os.path.splitext(filename)[1]
@@ -303,9 +304,10 @@ def send_request(self, method, url, body=None, content_type=None):
 
 ## See Also
 
-- [Making an HTTP Request to the Apple News API](making-an-http-request-to-the-apple-news-api.md)
+### Apple News API Python Tutorial
+- [Making an HTTP Request to the Apple News API](./making-an-http-request-to-the-apple-news-api.md)
   Create the URL, set the method, and send the request.
-- [Signing the HTTP Request](signing-the-http-request.md)
+- [Signing the HTTP Request](./signing-the-http-request.md)
   Sign the canonical request and send the custom authorization header to the Apple News API.
 
 

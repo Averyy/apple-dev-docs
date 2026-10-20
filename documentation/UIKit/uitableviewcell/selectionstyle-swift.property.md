@@ -1,7 +1,8 @@
 # selectionStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of selection for a cell.
 
@@ -9,7 +10,7 @@ The style of selection for a cell.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,21 +19,26 @@ The style of selection for a cell.
 var selectionStyle: UITableViewCell.SelectionStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UITableViewCellSelectionStyle selectionStyle;
+```
+
 #### Discussion
 
-The selection style is a [`backgroundView`](uitableviewcell/backgroundview.md) constant that determines the color of a cell when it’s selected. The default value is [`UITableViewCell.SelectionStyle.default`](uitableviewcell/selectionstyle-swift.enum/default.md). See [`UITableViewCell.SelectionStyle`](uitableviewcell/selectionstyle-swift.enum.md) for a description of valid constants.
+The selection style is a [`backgroundView`](./backgroundview.md) constant that determines the color of a cell when it’s selected. The default value is [`UITableViewCell.SelectionStyle.default`](./selectionstyle-swift.enum/default.md). See [`UITableViewCell.SelectionStyle`](./selectionstyle-swift.enum.md) for a description of valid constants.
 
 ## See Also
 
-- [UITableViewCell.SelectionStyle](uitableviewcell/selectionstyle-swift.enum.md)
+### Managing cell selection and highlighting
+- [UITableViewCell.SelectionStyle](./selectionstyle-swift.enum.md)
   The style of selected cells.
-- [var isSelected: Bool](uitableviewcell/isselected.md)
+- [var isSelected: Bool](./isselected.md)
   A Boolean value that indicates whether the cell is selected.
-- [func setSelected(Bool, animated: Bool)](uitableviewcell/setselected(_:animated:).md)
+- [func setSelected(Bool, animated: Bool)](./setselected%28_,animated%29.md)
   Sets the selected state of the cell, optionally animating the transition between states.
-- [var isHighlighted: Bool](uitableviewcell/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the cell is highlighted.
-- [func setHighlighted(Bool, animated: Bool)](uitableviewcell/sethighlighted(_:animated:).md)
+- [func setHighlighted(Bool, animated: Bool)](./sethighlighted%28_,animated%29.md)
   Sets the highlighted state of the cell, optionally animating the transition between states.
 
 

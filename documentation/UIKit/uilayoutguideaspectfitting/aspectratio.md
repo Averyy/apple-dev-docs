@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content’s aspect ratio.
@@ -17,6 +18,10 @@ The content’s aspect ratio.
 
 ```swift
 var aspectRatio: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CGFloat aspectRatio;
 ```
 
 #### Discussion

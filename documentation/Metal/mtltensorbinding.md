@@ -1,7 +1,8 @@
 # MTLTensorBinding
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that represents a tensor bound to a graphics or compute function or a machine learning function.
 
@@ -19,48 +20,53 @@ An object that represents a tensor bound to a graphics or compute function or a 
 protocol MTLTensorBinding : MTLBinding
 ```
 
+```objc
+@protocol MTLTensorBinding <MTLBinding>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](mtltensorbinding/auxiliaryplanes.md)
+- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](./mtltensorbinding/auxiliaryplanes.md)
   An array of the tensor’s auxiliary planes.
-- [var dimensions: MTLTensorExtents?](mtltensorbinding/dimensions.md)
+- [var dimensions: MTLTensorExtents?](./mtltensorbinding/dimensions.md)
   The array of sizes, in elements, one for each dimension of this tensor.
-- [var indexType: MTLDataType](mtltensorbinding/indextype.md)
+- [var indexType: MTLDataType](./mtltensorbinding/indextype.md)
   The data format you use for indexing into the tensor.
-- [var tensorDataType: MTLTensorDataType](mtltensorbinding/tensordatatype.md)
+- [var tensorDataType: MTLTensorDataType](./mtltensorbinding/tensordatatype.md)
   The underlying data format of this tensor.
 
 ## Relationships
 
 ### Inherits From
-- [MTLBinding](mtlbinding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MTLBinding](./mtlbinding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLTensor](mtltensor.md)
+### Tensors
+- [protocol MTLTensor](./mtltensor.md)
   A resource representing a multi-dimensional array that you can use with machine learning workloads.
-- [class MTLTensorDescriptor](mtltensordescriptor.md)
+- [class MTLTensorDescriptor](./mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
-- [class MTLTensorExtents](mtltensorextents.md)
+- [class MTLTensorExtents](./mtltensorextents.md)
   An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
-- [class MTLTensorReferenceType](mtltensorreferencetype.md)
+- [class MTLTensorReferenceType](./mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
-- [struct MTLTensorUsage](mtltensorusage.md)
+- [struct MTLTensorUsage](./mtltensorusage.md)
   The contexts in which you can use a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
-- [enum MTLTensorDataType](mtltensordatatype.md)
+- [enum MTLTensorDataType](./mtltensordatatype.md)
   The possible data types for the elements of a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [var MTL_TENSOR_MAX_RANK: Int32](mtl_tensor_max_rank.md)
+- [var MTL_TENSOR_MAX_RANK: Int32](./mtl_tensor_max_rank.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # userName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The username of this passkey credential.
 
@@ -18,13 +19,18 @@ The username of this passkey credential.
 var userName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * userName;
+```
+
 #### Discussion
 
-The passkey reports its `userName` value as its [`user`](ascredentialidentity/user.md).
+The passkey reports its `userName` value as its [`user`](../ascredentialidentity/user.md).
 
 ## See Also
 
-- [var userHandle: Data](aspasskeycredentialidentity/userhandle.md)
+### Associating a user
+- [var userHandle: Data](./userhandle.md)
   The user handle of this passkey credential.
 
 

@@ -1,7 +1,8 @@
 # TvShow.Rating
 
 **Framework**: Apple TV Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a content rating.
 
@@ -10,13 +11,13 @@ Information about a content rating.
 
 ## Declaration
 
-```swift
+```
 object TvShow.Rating
 ```
 
 #### Overview
 
-You can download a full list of rating systems and their ratings codes from the UMC Catalog Data Interface Specification at [`Content Advisories and Ratings`](https://developer.apple.comhttps://developer.apple.com/documentation/applemusicapi/get_a_catalog_resource_by_id).
+You can download a full list of rating systems and their ratings codes from the UMC Catalog Data Interface Specification at [Content Advisories and Ratings](../../AppleMusicAPI/get_a_catalog_resource_by_id.md).
 
 ## Properties
 
@@ -25,21 +26,22 @@ You can download a full list of rating systems and their ratings codes from the 
 
 ## See Also
 
-- [object TvShow.Artworks](tvshow/artworks-data.dictionary.md)
+### Related objects
+- [object TvShow.Artworks](./artworks-data.dictionary.md)
   A mapping of locale to localized artwork.
-- [object TvShow.CastAndCrew](tvshow/castandcrew-data.dictionary.md)
+- [object TvShow.CastAndCrew](./castandcrew-data.dictionary.md)
   Information about a cast or crew member, including translations of their name.
-- [object TvShow.Description](tvshow/description-data.dictionary.md)
+- [object TvShow.Description](./description-data.dictionary.md)
   A mapping of locale to localized descriptions of the TV show.
-- [object TvShow.ExternalContentId](tvshow/externalcontentid.md)
+- [object TvShow.ExternalContentId](./externalcontentid.md)
   Information about an external content ID.
-- [object TvShow.Genre](tvshow/genre.md)
+- [object TvShow.Genre](./genre.md)
   A genre name and its structure.
-- [object TvShow.Name](tvshow/name-data.dictionary.md)
+- [object TvShow.Name](./name-data.dictionary.md)
   A mapping of locale to localized names for the TV show.
-- [object TvShow.Prices](tvshow/prices-data.dictionary.md)
+- [object TvShow.Prices](./prices-data.dictionary.md)
   A mapping of storefront to pricing information and availability.
-- [object TvShow.Url](tvshow/url-data.dictionary.md)
+- [object TvShow.Url](./url-data.dictionary.md)
   A mapping of locale to localized URLs for the content.
 
 

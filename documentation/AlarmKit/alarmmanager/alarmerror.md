@@ -1,7 +1,8 @@
 # AlarmManager.AlarmError
 
 **Framework**: AlarmKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs when trying to schedule a timer.
 
@@ -19,17 +20,17 @@ enum AlarmError
 ## Topics
 
 ### Checking for alarm limit
-- [AlarmManager.AlarmError.maximumLimitReached](alarmmanager/alarmerror/maximumlimitreached.md)
+- [AlarmManager.AlarmError.maximumLimitReached](./alarmerror/maximumlimitreached.md)
   A maximum number of alarms is already scheduled.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NetworkBrowser.State.cancelled
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The browser has been cancelled. Do not call `start()` on the browser to restart it. Instead, create a new browser.
 

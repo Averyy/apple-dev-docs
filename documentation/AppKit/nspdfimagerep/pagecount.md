@@ -1,12 +1,13 @@
 # pageCount
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of pages in the image representation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The number of pages in the image representation.
 var pageCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger pageCount;
+```
+
 ## See Also
 
-- [var bounds: NSRect](nspdfimagerep/bounds.md)
+### Getting Data
+- [var bounds: NSRect](./bounds.md)
   The image representation’s bounding rectangle.
-- [var currentPage: Int](nspdfimagerep/currentpage.md)
+- [var currentPage: Int](./currentpage.md)
   The page currently displayed by the image representation.
-- [var pdfRepresentation: Data](nspdfimagerep/pdfrepresentation.md)
+- [var pdfRepresentation: Data](./pdfrepresentation.md)
   The PDF representation of the representation’s image.
 
 

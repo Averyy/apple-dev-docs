@@ -1,7 +1,8 @@
 # init(fromValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an anchor object from the provided anchor value.
 
@@ -19,6 +20,10 @@ Returns an anchor object from the provided anchor value.
 convenience init(fromValue value: Int)
 ```
 
+```objc
++ (instancetype) anchorFromValue:(NSUInteger) value;
+```
+
 #### Return Value
 
 An anchored object corresponding to the same sample as the anchor value.
@@ -33,9 +38,10 @@ Prior to iOS 9.0, anchored object queries used anchor values to track the last s
 
 ## See Also
 
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:resultshandler:).md)
+### Related Documentation
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: HKQueryAnchor?, limit: Int, resultsHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, (any Error)?) -> Void)](../hkanchoredobjectquery/init%28type,predicate,anchor,limit,resultshandler%29.md)
   Initializes a new anchored object query.
-- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](hkanchoredobjectquery/init(type:predicate:anchor:limit:completionhandler:).md)
+- [init(type: HKSampleType, predicate: NSPredicate?, anchor: Int, limit: Int, completionHandler: (HKAnchoredObjectQuery, [HKSample]?, Int, (any Error)?) -> Void)](../hkanchoredobjectquery/init%28type,predicate,anchor,limit,completionhandler%29.md)
   Initializes a new anchored object query.
 
 

@@ -1,7 +1,8 @@
 # kAXProcessSwitcherListSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The display of running applications (processes) that appears when a user presses Command-Tab.
 
@@ -12,6 +13,10 @@ The display of running applications (processes) that appears when a user presses
 
 ```swift
 var kAXProcessSwitcherListSubrole: String { get }
+```
+
+```c
+#define kAXProcessSwitcherListSubrole
 ```
 
 

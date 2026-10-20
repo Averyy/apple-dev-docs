@@ -1,7 +1,8 @@
 # Context
 
 **Framework**: ClassKit Catalog API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 An area of your app that represents an assignable task, like a quiz or a chapter.
 
@@ -10,44 +11,45 @@ An area of your app that represents an assignable task, like a quiz or a chapter
 
 ## Declaration
 
-```swift
+```
 object Context
 ```
 
 ## Mentions
 
-- [Preparing Context Data](preparing-context-data.md)
+- [Preparing Context Data](./preparing-context-data.md)
 
 #### Discussion
 
-The contexts that you specify in your app as [`CLSContext`](https://developer.apple.com/documentation/classkit/clscontext) instances correspond to the [`Context.Data`](context/data-data.dictionary.md) object. The [`Context.Metadata`](context/metadata-data.dictionary.md) object contains additional information about a context that’s implicit when working with ClassKit in your app.
+The contexts that you specify in your app as [`CLSContext`](../ClassKit/clscontext.md) instances correspond to the [`Context.Data`](./context/data-data.dictionary.md) object. The [`Context.Metadata`](./context/metadata-data.dictionary.md) object contains additional information about a context that’s implicit when working with ClassKit in your app.
 
 ## Topics
 
 ### Objects
-- [object Context.Data](context/data-data.dictionary.md)
+- [object Context.Data](./context/data-data.dictionary.md)
   The data that makes up a context.
-- [object Context.Metadata](context/metadata-data.dictionary.md)
+- [object Context.Metadata](./context/metadata-data.dictionary.md)
   Information that helps the system categorize a context.
 
 ## Properties
 
-- `data` (Context.Data) *(required)*: The data that makes up the context. This is largely the same information that you provide to the ClassKit framework when you create a [`CLSContext`](https://developer.apple.com/documentation/classkit/clscontext) instance.
+- `data` (Context.Data) *(required)*: The data that makes up the context. This is largely the same information that you provide to the ClassKit framework when you create a [`CLSContext`](../ClassKit/clscontext.md) instance.
 - `metadata` (Context.Metadata) *(required)*: Information about the context, like the locale to which the context applies.
 
 ## See Also
 
-- [Preparing Context Data](preparing-context-data.md)
+### Declaring Contexts
+- [Preparing Context Data](./preparing-context-data.md)
   Adjust how you manage context data when working with the web API.
-- [Create or Replace Contexts](create-or-replace-contexts.md)
+- [Create or Replace Contexts](./create-or-replace-contexts.md)
   Store information about the assignable content that your educational app provides.
-- [Get a Context](get-a-context.md)
+- [Get a Context](./get-a-context.md)
   Fetch information that you previously stored about your app’s assignable activities.
-- [Delete a Context](delete-a-context.md)
+- [Delete a Context](./delete-a-context.md)
   Remove information that you previously stored about your app’s assignable activities.
-- [object ContextsRequest](contextsrequest.md)
+- [object ContextsRequest](./contextsrequest.md)
   A request that you make when modifying context information.
-- [object ContextsResponse](contextsresponse.md)
+- [object ContextsResponse](./contextsresponse.md)
   The response you receive after modifying context information.
 
 

@@ -1,6 +1,7 @@
 # firstName
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Adds a person’s first name to an element.
 
@@ -16,25 +17,26 @@ Here’s an example that sets the first name for a monogram.
 </monogramLockup>
 ```
 
-##### Values for Firstname
+##### Values for firstName
 
 - **String**: The first name of a person.
 
-##### Elements That Use Firstname
+##### Elements that Use firstName
 
-- [`monogram`](monogram.md)
+- [monogram](./monogram.md)
 
 ## See Also
 
-- [accessibilityText](accessibilitytext.md)
+### Text Attributes
+- [accessibilityText](./accessibilitytext.md)
   Adds hidden text to an element that is used when VoiceOver is enabled.
-- [lastName](lastname.md)
+- [lastName](./lastname.md)
   Adds a person’s last name to an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [secure](secure.md)
+- [secure](./secure.md)
   Hides typed text.
-- [showSpinner](showspinner.md)
+- [showSpinner](./showspinner.md)
   Displays a rotating spinner icon inside of a search field.
 
 

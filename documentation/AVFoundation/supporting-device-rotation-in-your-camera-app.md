@@ -1,6 +1,8 @@
 # Supporting device rotation in your camera app
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [AVCamBuildingACameraApp.zip](https://docs-assets.developer.apple.com/published/b1de664bee51/AVCamBuildingACameraApp.zip)
 
 Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
 
@@ -14,11 +16,11 @@ Keep your camera preview and captured photos and video upright by applying the a
 
 A capture device’s sensor has a fixed physical orientation, and rotating the device doesn’t change it. Nothing in the capture pipeline compensates for the difference. Unless your app accounts for rotation, it shows a landscape preview and saves photos and movies that appear in landscape in the Photos app.
 
-AVCam corrects both by adopting [`AVCaptureDevice.RotationCoordinator`](avcapturedevice/rotationcoordinator.md), which reports how far to rotate video from a camera to appear level with the horizon, relative to gravity rather than the level relative to the sensor.
+AVCam corrects both by adopting [`AVCaptureDevice.RotationCoordinator`](./avcapturedevice/rotationcoordinator.md), which reports how far to rotate video from a camera to appear level with the horizon, relative to gravity rather than the level relative to the sensor.
 
-A rotation coordinator only reports angles. Applying them is the app’s work, and AVCam gives that job to a `RotationObserver` object on the main actor. The observer sets the preview angle on the preview layer’s connection and publishes the capture angles to the `CaptureService` actor. For more information about the app’s design, see [`AVCam: Building a camera app`](avcam-building-a-camera-app.md).
+A rotation coordinator only reports angles. Applying them is the app’s work, and AVCam gives that job to a `RotationObserver` object on the main actor. The observer sets the preview angle on the preview layer’s connection and publishes the capture angles to the `CaptureService` actor. For more information about the app’s design, see [AVCam: Building a camera app](./avcam-building-a-camera-app.md).
 
-#### Create a Coordinator for the Camera
+#### Create a coordinator for the camera
 
 AVCam handles rotation in a dedicated type so the capture service stays focused on configuring and running the capture session. The `RotationObserver` object owns the coordinator, the camera it monitors, and a weak reference to the layer that displays the preview:
 
@@ -51,7 +53,7 @@ A rotation coordinator binds to one device for its lifetime; changing cameras me
 
 Creating a coordinator needs only a device. The app has one as soon as it selects a camera, which keeps the media it writes level even before a preview appears.
 
-#### Provide the Preview Layer
+#### Provide the preview layer
 
 The preview layer belongs to the view hierarchy on the main actor, and the capture session runs on the `CaptureService` actor. The app’s `PreviewSource` and `PreviewTarget` protocols connect those two sides. One method hands the session to the preview view and passes the layer back to the rotation observer. The capture service creates the source off the main actor, which is why the type is `nonisolated` and only `connect(to:)` runs there:
 
@@ -74,7 +76,7 @@ nonisolated struct DefaultPreviewSource: PreviewSource {
 }
 ```
 
-The observer receives the layer twice because a coordinator measures the layer’s position in a view hierarchy. The `CameraPreview` structure conforms to [`UIViewRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) and builds its view before the system installs it. At connection time the layer has no position to measure. The nested `PreviewView` class reports the layer again after it joins a window:
+The observer receives the layer twice because a coordinator measures the layer’s position in a view hierarchy. The `CameraPreview` structure conforms to [`UIViewRepresentable`](../SwiftUI/uiviewrepresentable.md) and builds its view before the system installs it. At connection time the layer has no position to measure. The nested `PreviewView` class reports the layer again after it joins a window:
 
 ```swift
 class PreviewView: UIView, PreviewTarget {
@@ -93,9 +95,9 @@ class PreviewView: UIView, PreviewTarget {
 
 > ❗ **Important**: A rotation coordinator that an app creates with a `nil` preview layer never reports a preview angle, even after a layer becomes available. When the preview layer arrives, `RotationObserver` creates a new coordinator for the same device. The new coordinator replaces the one the observer already holds.
 
-#### Observe the Rotation Angles
+#### Observe the rotation angles
 
-A coordinator publishes two angles: [`videoRotationAngleForHorizonLevelPreview`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) and [`videoRotationAngleForHorizonLevelCapture`](avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md). Both describe the rotation that makes video level with the horizon. The preview angle also accounts for where the layer sits in the interface, which is why the two can differ. Each supports key-value observing and delivers its updates on the main queue. The observer reads both one time, and then registers a key-value observation on each property:
+A coordinator publishes two angles: [`videoRotationAngleForHorizonLevelPreview`](./avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelpreview.md) and [`videoRotationAngleForHorizonLevelCapture`](./avcapturedevice/rotationcoordinator/videorotationangleforhorizonlevelcapture.md). Both describe the rotation that makes video level with the horizon. The preview angle also accounts for where the layer sits in the interface, which is why the two can differ. Each supports key-value observing and delivers its updates on the main queue. The observer reads both one time, and then registers a key-value observation on each property:
 
 ```swift
 private func startObserving() {
@@ -148,7 +150,7 @@ private func observe(
 
 Handling each change synchronously preserves the coordinator’s ordering, which is what makes a rapid sequence of rotations settle on the correct final angle. The handler already runs on the main queue, and the `MainActor.assumeIsolated(_:)` method asserts that isolation rather than awaiting it. Awaiting would defer the work to a later turn of the main actor. The method traps if the assumption is ever wrong.
 
-#### Apply the Preview Angle
+#### Apply the preview angle
 
 The preview angle belongs to the connection that feeds the preview layer:
 
@@ -159,9 +161,9 @@ private func update(previewAngle angle: CGFloat) {
 }
 ```
 
-The assignment is a single line because the observer already holds the layer and runs on the main actor. It’s a lightweight call to make, because an [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) rotates its contents with a transform rather than rotating pixels.
+The assignment is a single line because the observer already holds the layer and runs on the main actor. It’s a lightweight call to make, because an [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md) rotates its contents with a transform rather than rotating pixels.
 
-#### Publish the Capture Angles
+#### Publish the capture angles
 
 The observer sets the preview angle on a layer it already holds, but it can’t reach the capture outputs the same way. They belong to the capture session, which AVCam isolates to the `CaptureService` actor. The observer yields each new angle into an asynchronous sequence that the service consumes:
 
@@ -185,9 +187,9 @@ private func update(captureAngle angle: CGFloat) {
 }
 ```
 
-The outputs only care about the latest angle. A buffering policy of [`AsyncStream.Continuation.BufferingPolicy.bufferingNewest(_:)`](https://developer.apple.com/documentation/swift/asyncstream/continuation/bufferingpolicy/bufferingnewest(_:)) keeps that one and drops the rest. Rotate the device a few times while the session reconfigures and the capture service still ends up with the latest angle instead of a backlog of stale ones.
+The outputs only care about the latest angle. A buffering policy of [`AsyncStream.Continuation.BufferingPolicy.bufferingNewest(_:)`](../Swift/asyncstream/continuation/bufferingpolicy/bufferingnewest%28_%29.md) keeps that one and drops the rest. Rotate the device a few times while the session reconfigures and the capture service still ends up with the latest angle instead of a backlog of stale ones.
 
-#### Apply the Angle to the Outputs
+#### Apply the angle to the outputs
 
 The capture service consumes the sequence from a single task, stores each angle it receives, and applies it to every output:
 
@@ -241,9 +243,9 @@ extension OutputService {
 }
 ```
 
-Neither output rotates pixels to honor the angle: an [`AVCaptureMovieFileOutput`](avcapturemoviefileoutput.md) records it in a QuickTime track matrix, and an [`AVCapturePhotoOutput`](avcapturephotooutput.md) in Exif tags.
+Neither output rotates pixels to honor the angle: an [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md) records it in a QuickTime track matrix, and an [`AVCapturePhotoOutput`](./avcapturephotooutput.md) in Exif tags.
 
-#### Keep New Outputs in Sync
+#### Keep new outputs in sync
 
 Adding an output connects it to the session with a default rotation angle. After the first angle arrives, any output the app adds still starts at that default rather than the current angle. Switching between photo and video capture is where this occurs in AVCam, because it removes one output and adds another while the session runs. The method that adds an output applies the stored angle every time:
 
@@ -262,19 +264,20 @@ private func addOutput(_ output: AVCaptureOutput) throws {
 
 ## See Also
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+### Capture devices
+- [Choosing a capture device](./choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
-- [class AVCaptureDevice](avcapturedevice.md)
+- [class AVCaptureDevice](./avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
-- [class AVCaptureDeviceInput](avcapturedeviceinput.md)
+- [class AVCaptureDeviceInput](./avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
-- [class AVContinuityDevice](avcontinuitydevice.md)
+- [class AVContinuityDevice](./avcontinuitydevice.md)
   A class that represents a physical iOS device that’s nearby and can provide access to its cameras and microphones.
-- [class AVExternalStorageDevice](avexternalstoragedevice.md)
+- [class AVExternalStorageDevice](./avexternalstoragedevice.md)
   Represents a physical external storage device that stores media assets.
-- [class AVExternalStorageDeviceDiscoverySession](avexternalstoragedevicediscoverysession.md)
+- [class AVExternalStorageDeviceDiscoverySession](./avexternalstoragedevicediscoverysession.md)
   Informs your app when the external storage devices connect to and disconnect from the system.
 
 

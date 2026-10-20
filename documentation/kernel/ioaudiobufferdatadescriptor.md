@@ -1,30 +1,32 @@
 # IOAudioBufferDataDescriptor
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _IOAudioBufferDataDescriptor IOAudioBufferDataDescriptor;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [fActualDataByteSize](ioaudiobufferdatadescriptor/1491191-factualdatabytesize.md)
-- [fActualNumSampleFrames](ioaudiobufferdatadescriptor/1491096-factualnumsampleframes.md)
-- [fData](ioaudiobufferdatadescriptor/1491097-fdata.md)
-- [fNominalDataByteSize](ioaudiobufferdatadescriptor/1491284-fnominaldatabytesize.md)
-- [fTotalDataByteSize](ioaudiobufferdatadescriptor/1491297-ftotaldatabytesize.md)
+- [fActualDataByteSize](./ioaudiobufferdatadescriptor/api-1491191-factualdatabytesize.md)
+- [fActualNumSampleFrames](./ioaudiobufferdatadescriptor/api-1491096-factualnumsampleframes.md)
+- [fData](./ioaudiobufferdatadescriptor/api-1491097-fdata.md)
+- [fNominalDataByteSize](./ioaudiobufferdatadescriptor/api-1491284-fnominaldatabytesize.md)
+- [fTotalDataByteSize](./ioaudiobufferdatadescriptor/api-1491297-ftotaldatabytesize.md)
 
 ## See Also
 
-- [IOAudioSampleIntervalDescriptor](ioaudiosampleintervaldescriptor.md)
-- [IOAudioStreamDataDescriptor](ioaudiostreamdatadescriptor.md)
+### Descriptors
+- [IOAudioSampleIntervalDescriptor](./ioaudiosampleintervaldescriptor.md)
+- [IOAudioStreamDataDescriptor](./ioaudiostreamdatadescriptor.md)
 
 
 ---

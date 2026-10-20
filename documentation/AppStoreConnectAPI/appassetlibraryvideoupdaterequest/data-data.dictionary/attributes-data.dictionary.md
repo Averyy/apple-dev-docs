@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the updated app asset library video resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the updated app asset library video resourc
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoUpdateRequest.Data.Attributes
 ```
 

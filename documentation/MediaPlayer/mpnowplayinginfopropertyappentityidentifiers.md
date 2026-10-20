@@ -1,7 +1,8 @@
 # MPNowPlayingInfoPropertyAppEntityIdentifiers
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let MPNowPlayingInfoPropertyAppEntityIdentifiers: String
+```
+
+```c
+extern NSString * const MPNowPlayingInfoPropertyAppEntityIdentifiers;
 ```
 
 

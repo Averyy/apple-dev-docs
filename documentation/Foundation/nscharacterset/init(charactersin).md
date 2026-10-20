@@ -1,7 +1,8 @@
 # init(charactersIn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a character set containing the characters in a given string.
 
@@ -20,6 +21,10 @@ Returns a character set containing the characters in a given string.
 init(charactersIn aString: String)
 ```
 
+```objc
++ (NSCharacterSet *) characterSetWithCharactersInString:(NSString *) aString;
+```
+
 #### Return Value
 
 A character set containing the characters in `aString`. Returns an empty character set if `aString` is empty.
@@ -30,10 +35,11 @@ A character set containing the characters in `aString`. Returns an empty charact
 
 ## See Also
 
-- [init(coder: NSCoder)](nscharacterset/init(coder:).md)
-- [init(range: NSRange)](nscharacterset/init(range:).md)
+### Creating a Custom Character Set
+- [init(coder: NSCoder)](./init%28coder%29.md)
+- [init(range: NSRange)](./init%28range%29.md)
   Returns a character set containing characters with Unicode values in a given range.
-- [NSOpenStepUnicodeReservedBase](1560803-nsopenstepunicodereservedbase.md)
+- [NSOpenStepUnicodeReservedBase](../api-1560803-nsopenstepunicodereservedbase.md)
   Specifies lower bound for a Unicode character range reserved for Apple’s corporate use.
 
 

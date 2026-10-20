@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 
@@ -22,7 +23,7 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
 
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
 
 ## See Also
 
-- [func dropFirst(Int) -> Self.SubSequence](array/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> Self.SubSequence](./dropfirst%28_%29.md)
   Returns a subsequence containing all but the given number of initial elements.
-- [func dropLast(Int) -> Self.SubSequence](array/droplast(_:).md)
+- [func dropLast(Int) -> Self.SubSequence](./droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
 
 

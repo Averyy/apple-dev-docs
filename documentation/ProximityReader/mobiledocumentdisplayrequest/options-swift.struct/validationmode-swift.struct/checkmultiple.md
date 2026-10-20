@@ -1,7 +1,8 @@
 # checkMultiple
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A button that enables the user to perform multiple document requests in one session.
 

@@ -1,7 +1,8 @@
 # request
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An HTTP request of the flow.
 
@@ -17,11 +18,16 @@ An HTTP request of the flow.
 var request: URLRequest? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSURLRequest * request;
+```
+
 ## See Also
 
-- [var parentURL: URL?](nefilterbrowserflow/parenturl.md)
+### Getting browser flow properties
+- [var parentURL: URL?](./parenturl.md)
   A URL of the web page that’s responsible for the flow’s creation.
-- [var response: URLResponse?](nefilterbrowserflow/response.md)
+- [var response: URLResponse?](./response.md)
   An HTTP response of the flow.
 
 

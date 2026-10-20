@@ -1,7 +1,8 @@
 # TransientAppEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
 
@@ -11,7 +12,7 @@ A type that represents a transient model object which exposes its interface to A
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,41 +24,42 @@ protocol TransientAppEntity : AppEntity
 ## Topics
 
 ### Initializers
-- [init()](transientappentity/init.md)
+- [init()](./transientappentity/init%28%29.md)
   Transient entities must be initializable so they can be initialized and populated by the system.
 
 ## Relationships
 
 ### Inherits From
-- [AppEntity](appentity.md)
-- [AppValue](appvalue.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../swift/identifiable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [AppEntity](./appentity.md)
+- [AppValue](./appvalue.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 
 ## See Also
 
-- [protocol AppEntity](appentity.md)
+### App entity types
+- [protocol AppEntity](./appentity.md)
   An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
-- [protocol FileEntity](fileentity.md)
+- [protocol FileEntity](./fileentity.md)
   An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
+- [protocol IndexedEntity](./indexedentity.md)
   An interface that allows you to include an entity in your app’s Spotlight index.
-- [protocol SyncableEntity](syncableentity.md)
+- [protocol SyncableEntity](./syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
-- [protocol UniqueAppEntity](uniqueappentity.md)
+- [protocol UniqueAppEntity](./uniqueappentity.md)
   An AppEntity subtype for entities that only have a single instance.
-- [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [protocol OwnershipProvidingEntity](./ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
-- [macro UnionValue()](unionvalue().md)
-- [protocol AppUnionValue](appunionvalue.md)
+- [macro UnionValue()](./unionvalue%28%29.md)
+- [protocol AppUnionValue](./appunionvalue.md)
   A protocol that provides nominal type identity and metadata for union values.
-- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+- [protocol AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
   A protocol for the cases enumeration of an `AppUnionValue`.
 
 

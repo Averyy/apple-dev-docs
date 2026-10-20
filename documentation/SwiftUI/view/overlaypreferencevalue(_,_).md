@@ -1,7 +1,8 @@
 # overlayPreferenceValue(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the specified preference value from the view, using it to produce a second view that is applied as an overlay to the original view.
 
@@ -32,11 +33,12 @@ A view that layers a second view in front of the view.
 
 ## See Also
 
-- [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](view/backgroundpreferencevalue(_:_:).md)
+### Generating backgrounds and overlays from preferences
+- [func backgroundPreferenceValue<Key, T>(Key.Type, (Key.Value) -> T) -> some View](./backgroundpreferencevalue%28_,_%29.md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
-- [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](view/backgroundpreferencevalue(_:alignment:_:).md)
+- [func backgroundPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](./backgroundpreferencevalue%28_,alignment,_%29.md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as the background of the original view.
-- [func overlayPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](view/overlaypreferencevalue(_:alignment:_:).md)
+- [func overlayPreferenceValue<K, V>(K.Type, alignment: Alignment, (K.Value) -> V) -> some View](./overlaypreferencevalue%28_,alignment,_%29.md)
   Reads the specified preference value from the view, using it to produce a second view that is applied as an overlay to the original view.
 
 

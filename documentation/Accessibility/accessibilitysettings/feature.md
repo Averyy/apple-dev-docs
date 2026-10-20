@@ -1,7 +1,8 @@
 # AccessibilitySettings.Feature
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe specific Accessibility settings in the Settings app.
 
@@ -20,33 +21,38 @@ Constants that describe specific Accessibility settings in the Settings app.
 enum Feature
 ```
 
+```c
+enum AXSettingsFeature : NSInteger;
+```
+
 ## Topics
 
 ### Audio features
-- [AccessibilitySettings.Feature.personalVoiceAllowAppsToRequestToUse](accessibilitysettings/feature/personalvoiceallowappstorequesttouse.md)
+- [AccessibilitySettings.Feature.personalVoiceAllowAppsToRequestToUse](./feature/personalvoiceallowappstorequesttouse.md)
   A constant for opening the Settings app to the setting for Personal Voice > Allow Apps to Request to Use.
 ### Accessibility feature structure creation
-- [init?(rawValue: Int)](accessibilitysettings/feature/init(rawvalue:).md)
+- [init?(rawValue: Int)](./feature/init%28rawvalue%29.md)
 ### Enumeration Cases
-- [AccessibilitySettings.Feature.allowAppsToAddAudioToCalls](accessibilitysettings/feature/allowappstoaddaudiotocalls.md)
-- [AccessibilitySettings.Feature.assistiveTouch](accessibilitysettings/feature/assistivetouch.md)
-- [AccessibilitySettings.Feature.assistiveTouchDevices](accessibilitysettings/feature/assistivetouchdevices.md)
-- [AccessibilitySettings.Feature.captionStyles](accessibilitysettings/feature/captionstyles.md)
-- [AccessibilitySettings.Feature.dwellControl](accessibilitysettings/feature/dwellcontrol.md)
+- [AccessibilitySettings.Feature.allowAppsToAddAudioToCalls](./feature/allowappstoaddaudiotocalls.md)
+- [AccessibilitySettings.Feature.assistiveTouch](./feature/assistivetouch.md)
+- [AccessibilitySettings.Feature.assistiveTouchDevices](./feature/assistivetouchdevices.md)
+- [AccessibilitySettings.Feature.captionStyles](./feature/captionstyles.md)
+- [AccessibilitySettings.Feature.dwellControl](./feature/dwellcontrol.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func openSettings(for: AccessibilitySettings.Feature) async throws](accessibilitysettings/opensettings(for:).md)
+### Opening the Settings app
+- [static func openSettings(for: AccessibilitySettings.Feature) async throws](./opensettings%28for%29.md)
   Opens the Settings app to a specific section of Accessibility settings.
 
 

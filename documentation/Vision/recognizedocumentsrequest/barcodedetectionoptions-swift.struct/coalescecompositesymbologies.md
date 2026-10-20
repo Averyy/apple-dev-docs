@@ -1,7 +1,8 @@
 # coalesceCompositeSymbologies
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request combines multiple codes.
 
@@ -25,9 +26,10 @@ The default value for this property is `false`.
 
 ## See Also
 
-- [var enabled: Bool](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/enabled.md)
+### Getting the symbology
+- [var enabled: Bool](./enabled.md)
   Boolean value that indicates whether to detect barcodes in the document.
-- [var symbologies: [BarcodeSymbology]](recognizedocumentsrequest/barcodedetectionoptions-swift.struct/symbologies.md)
+- [var symbologies: [BarcodeSymbology]](./symbologies.md)
   The barcode symbologies that the request detects in an image.
 
 

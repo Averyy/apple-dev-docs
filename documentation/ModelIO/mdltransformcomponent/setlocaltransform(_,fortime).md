@@ -1,7 +1,8 @@
 # setLocalTransform(_:forTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a new local transform matrix for the specified time sample.
 
@@ -19,9 +20,13 @@ Sets a new local transform matrix for the specified time sample.
 optional func setLocalTransform(_ transform: matrix_float4x4, forTime time: TimeInterval)
 ```
 
+```objc
+- (void) setLocalTransform:(matrix_float4x4) transform forTime:(NSTimeInterval) time;
+```
+
 #### Discussion
 
-Calling this method updates the [`minimumTime`](mdltransformcomponent/minimumtime.md) and [`maximumTime`](mdltransformcomponent/maximumtime.md) properties to reflect the range of sample values stored in the transform component.
+Calling this method updates the [`minimumTime`](./minimumtime.md) and [`maximumTime`](./maximumtime.md) properties to reflect the range of sample values stored in the transform component.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ Calling this method updates the [`minimumTime`](mdltransformcomponent/minimumtim
 
 ## See Also
 
-- [var minimumTime: TimeInterval](mdltransformcomponent/minimumtime.md)
+### Working with Animated Transforms
+- [var minimumTime: TimeInterval](./minimumtime.md)
   The timestamp for the first timed data sample in the transform component.
-- [var maximumTime: TimeInterval](mdltransformcomponent/maximumtime.md)
+- [var maximumTime: TimeInterval](./maximumtime.md)
   The timestamp for the last timed data sample in the transform component.
-- [func localTransform(atTime: TimeInterval) -> matrix_float4x4](mdltransformcomponent/localtransform(attime:).md)
+- [func localTransform(atTime: TimeInterval) -> matrix_float4x4](./localtransform%28attime%29.md)
   Returns the local transform matrix as of the specified time sample.
 
 

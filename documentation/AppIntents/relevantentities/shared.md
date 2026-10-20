@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of this class.
 

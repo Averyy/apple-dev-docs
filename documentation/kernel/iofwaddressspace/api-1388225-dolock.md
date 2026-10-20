@@ -1,14 +1,15 @@
 # doLock
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 doLock(UInt16 nodeID, IOFWSpeed & speed, FWAddress addr, UInt32 inlen, const UInt32 *newVal, UInt32 & outLen, UInt32 *oldVal, UInt32 extType, IOFWRequestRefCon refcon);
 ```
 

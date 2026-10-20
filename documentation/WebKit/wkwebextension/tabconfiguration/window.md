@@ -1,7 +1,8 @@
 # window
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the window where the tab should be opened.
 
@@ -16,6 +17,10 @@ Indicates the window where the tab should be opened.
 
 ```swift
 var window: (any WKWebExtensionWindow)? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) id<WKWebExtensionWindow> window;
 ```
 
 #### Discussion

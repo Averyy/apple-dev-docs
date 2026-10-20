@@ -1,7 +1,8 @@
 # sequenceNumber
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer sequence number that was output.
 
@@ -15,9 +16,14 @@ The buffer sequence number that was output.
 var sequenceNumber: UInt64 { get }
 ```
 
+```objc
+@property (atomic, readonly) uint64_t sequenceNumber;
+```
+
 ## See Also
 
-- [var hostTimeInNanoseconds: UInt64](cmioextensionscheduledoutput/hosttimeinnanoseconds.md)
+### Inspecting the Output
+- [var hostTimeInNanoseconds: UInt64](./hosttimeinnanoseconds.md)
   The host time in nanoseconds when the buffer was output.
 
 

@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s media queue.
 
@@ -10,23 +11,23 @@ Configuration details for your service’s media queue.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues
 ```
 
 ## Topics
 
 ### Requiring Headers for all Queue Requests
-- [object ExtensionConfig.Media.Queues.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.Hdr](./queues-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to media endpoints.
 ### Requiring Headers and Specifying Paths for Specific Queue Endpoints
-- [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.PlayMedia](./queues-data.dictionary/playmedia-data.dictionary.md)
   Configuration details for your service’s media playback queue.
-- [object ExtensionConfig.Media.Queues.UpdateActivity](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.UpdateActivity](./queues-data.dictionary/updateactivity-data.dictionary.md)
   Configuration details for your service’s update activity endpoint.
-- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](./queues-data.dictionary/contentplaybackfailure-data.dictionary.md)
   Configuration details for your service’s content playback failure endpoint.
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey](./queues-data.dictionary/contentprotectionkey-data.dictionary.md)
   Configuration details for your service’s content protection key endpoint.
 
 ## Properties

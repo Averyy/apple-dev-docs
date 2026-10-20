@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardErrorRollOver
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 1 (decimal)/01 (hexadecimal).
 
@@ -18,9 +19,14 @@ The raw usage code 1 (decimal)/01 (hexadecimal).
 case keyboardErrorRollOver
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardErrorRollOver
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboardErrorUndefined](uikeyboardhidusage/keyboarderrorundefined.md)
+### Error keys
+- [UIKeyboardHIDUsage.keyboardErrorUndefined](./keyboarderrorundefined.md)
   The raw usage code 3 (decimal)/03 (hexadecimal).
 
 

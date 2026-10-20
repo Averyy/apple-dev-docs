@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the container where the user added the contact.
 
@@ -19,9 +20,14 @@ A string that uniquely identifies the container where the user added the contact
 var containerIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * containerIdentifier;
+```
+
 ## See Also
 
-- [var contact: CNContact](cnchangehistoryaddcontactevent/contact.md)
+### Getting event details
+- [var contact: CNContact](./contact.md)
   The contact the user added.
 
 

@@ -1,7 +1,8 @@
 # failureResponse
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL response object representing the last authentication failure.
 
@@ -21,17 +22,23 @@ The URL response object representing the last authentication failure.
 var failureResponse: URLResponse? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSURLResponse * failureResponse;
+```
+
 #### Discussion
 
 This value is `nil` if the protocol doesn’t use responses to indicate an authentication failure.
 
 ## See Also
 
-- [var error: (any Error)?](urlauthenticationchallenge/error.md)
+### Related Documentation
+- [var error: (any Error)?](./error.md)
   The error object representing the last authentication failure.
-- [var previousFailureCount: Int](urlauthenticationchallenge/previousfailurecount.md)
+### Getting properties of previous authentication attempts
+- [var previousFailureCount: Int](./previousfailurecount.md)
   The receiver’s count of failed authentication attempts.
-- [var proposedCredential: URLCredential?](urlauthenticationchallenge/proposedcredential.md)
+- [var proposedCredential: URLCredential?](./proposedcredential.md)
   The proposed credential for this challenge.
 
 

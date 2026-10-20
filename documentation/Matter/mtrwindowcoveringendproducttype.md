@@ -1,7 +1,8 @@
 # MTRWindowCoveringEndProductType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,46 +19,50 @@
 enum MTRWindowCoveringEndProductType
 ```
 
+```c
+enum MTRWindowCoveringEndProductType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRWindowCoveringEndProductType.awningTerracePatio](mtrwindowcoveringendproducttype/awningterracepatio.md)
-- [MTRWindowCoveringEndProductType.awningVerticalScreen](mtrwindowcoveringendproducttype/awningverticalscreen.md)
-- [MTRWindowCoveringEndProductType.balloonShade](mtrwindowcoveringendproducttype/balloonshade.md)
-- [MTRWindowCoveringEndProductType.cellularShade](mtrwindowcoveringendproducttype/cellularshade.md)
-- [MTRWindowCoveringEndProductType.centralCurtain](mtrwindowcoveringendproducttype/centralcurtain.md)
-- [MTRWindowCoveringEndProductType.exteriorVenetianBlind](mtrwindowcoveringendproducttype/exteriorvenetianblind.md)
-- [MTRWindowCoveringEndProductType.exteriorVerticalScreen](mtrwindowcoveringendproducttype/exteriorverticalscreen.md)
-- [MTRWindowCoveringEndProductType.interiorBlind](mtrwindowcoveringendproducttype/interiorblind.md)
-- [MTRWindowCoveringEndProductType.interiorVenetianBlind](mtrwindowcoveringendproducttype/interiorvenetianblind.md)
-- [MTRWindowCoveringEndProductType.lateralLeftCurtain](mtrwindowcoveringendproducttype/lateralleftcurtain.md)
-- [MTRWindowCoveringEndProductType.lateralRightCurtain](mtrwindowcoveringendproducttype/lateralrightcurtain.md)
-- [MTRWindowCoveringEndProductType.layeredShade](mtrwindowcoveringendproducttype/layeredshade.md)
-- [MTRWindowCoveringEndProductType.layeredShade2D](mtrwindowcoveringendproducttype/layeredshade2d.md)
-- [MTRWindowCoveringEndProductType.pleatedShade](mtrwindowcoveringendproducttype/pleatedshade.md)
-- [MTRWindowCoveringEndProductType.rollerShade](mtrwindowcoveringendproducttype/rollershade.md)
-- [MTRWindowCoveringEndProductType.rollerShutter](mtrwindowcoveringendproducttype/rollershutter.md)
-- [MTRWindowCoveringEndProductType.romanShade](mtrwindowcoveringendproducttype/romanshade.md)
-- [MTRWindowCoveringEndProductType.sheerShade](mtrwindowcoveringendproducttype/sheershade.md)
-- [MTRWindowCoveringEndProductType.slidingShutter](mtrwindowcoveringendproducttype/slidingshutter.md)
-- [MTRWindowCoveringEndProductType.swingingShutter](mtrwindowcoveringendproducttype/swingingshutter.md)
-- [MTRWindowCoveringEndProductType.tiltOnlyInteriorBlind](mtrwindowcoveringendproducttype/tiltonlyinteriorblind.md)
-- [MTRWindowCoveringEndProductType.tiltOnlyPergola](mtrwindowcoveringendproducttype/tiltonlypergola.md)
-- [MTRWindowCoveringEndProductType.unknown](mtrwindowcoveringendproducttype/unknown.md)
-- [MTRWindowCoveringEndProductType.verticalBlindStripCurtain](mtrwindowcoveringendproducttype/verticalblindstripcurtain.md)
-- [MTRWindowCoveringEndProductType.wovenWood](mtrwindowcoveringendproducttype/wovenwood.md)
+- [MTRWindowCoveringEndProductType.awningTerracePatio](./mtrwindowcoveringendproducttype/awningterracepatio.md)
+- [MTRWindowCoveringEndProductType.awningVerticalScreen](./mtrwindowcoveringendproducttype/awningverticalscreen.md)
+- [MTRWindowCoveringEndProductType.balloonShade](./mtrwindowcoveringendproducttype/balloonshade.md)
+- [MTRWindowCoveringEndProductType.cellularShade](./mtrwindowcoveringendproducttype/cellularshade.md)
+- [MTRWindowCoveringEndProductType.centralCurtain](./mtrwindowcoveringendproducttype/centralcurtain.md)
+- [MTRWindowCoveringEndProductType.exteriorVenetianBlind](./mtrwindowcoveringendproducttype/exteriorvenetianblind.md)
+- [MTRWindowCoveringEndProductType.exteriorVerticalScreen](./mtrwindowcoveringendproducttype/exteriorverticalscreen.md)
+- [MTRWindowCoveringEndProductType.interiorBlind](./mtrwindowcoveringendproducttype/interiorblind.md)
+- [MTRWindowCoveringEndProductType.interiorVenetianBlind](./mtrwindowcoveringendproducttype/interiorvenetianblind.md)
+- [MTRWindowCoveringEndProductType.lateralLeftCurtain](./mtrwindowcoveringendproducttype/lateralleftcurtain.md)
+- [MTRWindowCoveringEndProductType.lateralRightCurtain](./mtrwindowcoveringendproducttype/lateralrightcurtain.md)
+- [MTRWindowCoveringEndProductType.layeredShade](./mtrwindowcoveringendproducttype/layeredshade.md)
+- [MTRWindowCoveringEndProductType.layeredShade2D](./mtrwindowcoveringendproducttype/layeredshade2d.md)
+- [MTRWindowCoveringEndProductType.pleatedShade](./mtrwindowcoveringendproducttype/pleatedshade.md)
+- [MTRWindowCoveringEndProductType.rollerShade](./mtrwindowcoveringendproducttype/rollershade.md)
+- [MTRWindowCoveringEndProductType.rollerShutter](./mtrwindowcoveringendproducttype/rollershutter.md)
+- [MTRWindowCoveringEndProductType.romanShade](./mtrwindowcoveringendproducttype/romanshade.md)
+- [MTRWindowCoveringEndProductType.sheerShade](./mtrwindowcoveringendproducttype/sheershade.md)
+- [MTRWindowCoveringEndProductType.slidingShutter](./mtrwindowcoveringendproducttype/slidingshutter.md)
+- [MTRWindowCoveringEndProductType.swingingShutter](./mtrwindowcoveringendproducttype/swingingshutter.md)
+- [MTRWindowCoveringEndProductType.tiltOnlyInteriorBlind](./mtrwindowcoveringendproducttype/tiltonlyinteriorblind.md)
+- [MTRWindowCoveringEndProductType.tiltOnlyPergola](./mtrwindowcoveringendproducttype/tiltonlypergola.md)
+- [MTRWindowCoveringEndProductType.unknown](./mtrwindowcoveringendproducttype/unknown.md)
+- [MTRWindowCoveringEndProductType.verticalBlindStripCurtain](./mtrwindowcoveringendproducttype/verticalblindstripcurtain.md)
+- [MTRWindowCoveringEndProductType.wovenWood](./mtrwindowcoveringendproducttype/wovenwood.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrwindowcoveringendproducttype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrwindowcoveringendproducttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dnsSettings
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains the configuration settings for a DNS server.
 
@@ -18,17 +19,22 @@ An object that contains the configuration settings for a DNS server.
 var dnsSettings: NEDNSSettings? { get set }
 ```
 
+```objc
+@property (strong, nullable) NEDNSSettings * dnsSettings;
+```
+
 #### Discussion
 
-This property can be set to either an [`NEDNSOverHTTPSSettings`](nednsoverhttpssettings.md) object or an [`NEDNSOverTLSSettings`](nednsovertlssettings.md) object.
+This property can be set to either an [`NEDNSOverHTTPSSettings`](../nednsoverhttpssettings.md) object or an [`NEDNSOverTLSSettings`](../nednsovertlssettings.md) object.
 
 ## See Also
 
-- [var isEnabled: Bool](nednssettingsmanager/isenabled.md)
+### Accessing DNS configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean you use to query the enabled state of the DNS settings configuration.
-- [var localizedDescription: String?](nednssettingsmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the display name of the DNS settings configuration.
-- [var onDemandRules: [NEOnDemandRule]?](nednssettingsmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./ondemandrules.md)
   A list of ordered rules that defines the networks on which the DNS settings will apply.
 
 

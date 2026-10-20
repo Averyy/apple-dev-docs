@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the layout bounds of the attachment you specify.
@@ -20,27 +21,32 @@ Returns the layout bounds of the attachment you specify.
 func attachmentBounds(for attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?, proposedLineFragment: CGRect, position: CGPoint) -> CGRect
 ```
 
+```objc
+- (CGRect) attachmentBoundsForAttributes:(NSDictionary<NSString *,id> *) attributes location:(id<NSTextLocation>) location textContainer:(NSTextContainer *) textContainer proposedLineFragment:(CGRect) proposedLineFragment position:(CGPoint) position;
+```
+
 #### Return Value
 
-Returns a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the attachment, or `CGRectZero.`
+Returns a [`CGRect`](../../CoreFoundation/cgrect.md) that describes the boundaries of the attachment, or `CGRectZero.`
 
 #### Discussion
 
-The framework interprets the bounds origin to match `position` inside `proposedLineFragment`. The default [`NSTextAttachment`](nstextattachment.md) implementation returns bounds if the value isn’t equivalent to [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero); otherwise, it derives the bounds value from `image.size`. Conforming objects can implement more sophisticated logic for negotiating the frame size based on the available container space and proposed line fragment rectangle.
+The framework interprets the bounds origin to match `position` inside `proposedLineFragment`. The default [`NSTextAttachment`](../nstextattachment.md) implementation returns bounds if the value isn’t equivalent to [`CGRectZero`](../../CoreGraphics/cgrectzero.md); otherwise, it derives the bounds value from `image.size`. Conforming objects can implement more sophisticated logic for negotiating the frame size based on the available container space and proposed line fragment rectangle.
 
 ## Parameters
 
-- `attributes`: A dictionary of [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key) attributes.
-- `location`: An [`NSTextLocation`](nstextlocation.md) that indicates that start of the string.
-- `textContainer`: The [`NSTextContainer`](nstextcontainer.md) that contains the source text.
-- `proposedLineFragment`: A [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) that describes the boundaries of the line fragment.
-- `position`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) inside `proposedLineFragment`.
+- `attributes`: A dictionary of [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md) attributes.
+- `location`: An [`NSTextLocation`](../nstextlocation.md) that indicates that start of the string.
+- `textContainer`: The [`NSTextContainer`](../nstextcontainer.md) that contains the source text.
+- `proposedLineFragment`: A [`CGRect`](../../CoreFoundation/cgrect.md) that describes the boundaries of the line fragment.
+- `position`: A [`CGPoint`](../../CoreFoundation/cgpoint.md) inside `proposedLineFragment`.
 
 ## See Also
 
-- [func image(for: CGRect, attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?) -> UIImage?](nstextattachmentlayout/image(for:attributes:location:textcontainer:).md)
+### Determining the characteristics of an attachment
+- [func image(for: CGRect, attributes: [NSAttributedString.Key : Any], location: any NSTextLocation, textContainer: NSTextContainer?) -> UIImage?](./image%28for,attributes,location,textcontainer%29.md)
   Returns the image object rendered at the bounds and inside the text container you specify.
-- [func viewProvider(for: UIView?, location: any NSTextLocation, textContainer: NSTextContainer?) -> NSTextAttachmentViewProvider?](nstextattachmentlayout/viewprovider(for:location:textcontainer:).md)
+- [func viewProvider(for: UIView?, location: any NSTextLocation, textContainer: NSTextContainer?) -> NSTextAttachmentViewProvider?](./viewprovider%28for,location,textcontainer%29.md)
   Returns the text attachment view provider corresponding to the file type.
 
 

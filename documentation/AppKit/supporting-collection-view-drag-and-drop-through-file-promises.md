@@ -1,6 +1,8 @@
 # Supporting Collection View Drag and Drop Through File Promises
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: Sample Code  
+**Download**: [SupportingCollectionViewDragAndDropThroughFilePromises.zip](https://docs-assets.developer.apple.com/published/2a60f49668a9/SupportingCollectionViewDragAndDropThroughFilePromises.zip)
 
 Share data between macOS apps during drag and drop by using an item provider.
 
@@ -10,9 +12,9 @@ Share data between macOS apps during drag and drop by using an item provider.
 
 #### Overview
 
-A file promise is a possible future file sent by an app of a specified type. When working with drag and drop, use file promises to indicate intent for a future drag operation. The future drag operation promises the delivery of the file at drop time. This avoids loading or performing any actions on the file until the promise completes. Use the [`NSFilePromiseProvider`](nsfilepromiseprovider.md) class when creating file promises. Use the [`NSFilePromiseReceiver`](nsfilepromisereceiver.md) to receive file promises.
+A file promise is a possible future file sent by an app of a specified type. When working with drag and drop, use file promises to indicate intent for a future drag operation. The future drag operation promises the delivery of the file at drop time. This avoids loading or performing any actions on the file until the promise completes. Use the [`NSFilePromiseProvider`](./nsfilepromiseprovider.md) class when creating file promises. Use the [`NSFilePromiseReceiver`](./nsfilepromisereceiver.md) to receive file promises.
 
-Implement drag and drop with an [`NSCollectionView`](nscollectionview.md) by using a dragging pasteboard. When a drag starts, you adopt the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol to write data to the [`NSPasteboard`](nspasteboard.md). When a drag occurs, you determine the valid drop target. When the drag ends, you read the drag data from the `NSPasteboard`. Adopt [`NSCollectionViewDelegate`](nscollectionviewdelegate.md) to handle with these drag operations.
+Implement drag and drop with an [`NSCollectionView`](./nscollectionview.md) by using a dragging pasteboard. When a drag starts, you adopt the [`NSPasteboardWriting`](./nspasteboardwriting.md) protocol to write data to the [`NSPasteboard`](./nspasteboard.md). When a drag occurs, you determine the valid drop target. When the drag ends, you read the drag data from the `NSPasteboard`. Adopt [`NSCollectionViewDelegate`](./nscollectionviewdelegate.md) to handle with these drag operations.
 
 ##### Display Files to Drag and Drop
 
@@ -20,7 +22,7 @@ This sample code project displays a list of image files from the Pictures folder
 
 The sample shows how to support both `URL` and file promises drags when accepting images from Mail, Safari, Photos, and other apps that support drag and drop. It also demonstrates how to provide file promises to other apps.
 
-##### Test Drag and Drop By Creating or Receiving File Promises
+##### Test Drag and Drop by Creating or Receiving File Promises
 
 To see this sample in action, build and run the project, then drag an image from another app or location, such as Finder, Mail, Photos or Safari, into the app’s window. Dragging the image into the window imports it into a form the sample app can parse and consume. There are multiple ways to drag and drop image files to and from the sample app. The way a user drags a file determines how files are promised to and from the destination. If the user drags an image file from the app to the Finder, the Finder uses the `NSFilePromiseProvider` to make a copy. If the user drags a photo from Photos, the sample app uses `NSFilePromiseReceiver` to receive a copy.
 
@@ -46,7 +48,7 @@ In addition, a drag and drop involves just the image file’s URL, without a fil
 
 This sample app also supports drag and drop of images from within the collection view that don’t involve a URL. In this case photos are re-ordered using the index path of the photo as the drag reference.
 
-##### Support Image Import By Accepting File Promises
+##### Support Image Import by Accepting File Promises
 
 When setting up the collection view to support drag and drop, register drag pasteboard types to the collection view. This sample registers three pasteboard types. `NSFilePromiseReceiver` provides the first. This type allows the collection view to accept file promises that handle dragged images from apps like Safari or Photos. The second, `.fileURL`, accepts drags as file URLs. The third type is `itemDragType`, a custom pasteboard type that accepts collection view cell items to drag within the collection view.
 
@@ -101,9 +103,9 @@ func handlePromisedDrops(draggingInfo: NSDraggingInfo, toIndexPath: IndexPath) -
 }
 ```
 
-##### Support Image Export By Providing File Promises
+##### Support Image Export by Providing File Promises
 
-To write images from the collection view, the sample app creates formats that other apps like Safari, Mail, and Finder can consume, write an `NSFilePromiseProvider` instance to the dragging pasteboard, and conform to [`NSFilePromiseProviderDelegate`](nsfilepromiseproviderdelegate.md) by implementing three delegate functions.
+To write images from the collection view, the sample app creates formats that other apps like Safari, Mail, and Finder can consume, write an `NSFilePromiseProvider` instance to the dragging pasteboard, and conform to [`NSFilePromiseProviderDelegate`](./nsfilepromiseproviderdelegate.md) by implementing three delegate functions.
 
 Use the first function to provide the title of the file to be promised. This sample uses the last component of the photo item’s `fileURL` to determine the promised file name.
 
@@ -115,7 +117,7 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider, fileNameF
 }
 ```
 
-Provide a background operation queue in [`operationQueue(for:)`](nsfilepromiseproviderdelegate/operationqueue(for:).md), so the file write happens without blocking the app’s UI. This function is optional, but defaulting to the main queue will block the app’s UI for writing large files to disk. When possible, provide a background queue.
+Provide a background operation queue in [`operationQueue(for:)`](./nsfilepromiseproviderdelegate/operationqueue%28for%29.md), so the file write happens without blocking the app’s UI. This function is optional, but defaulting to the main queue will block the app’s UI for writing large files to disk. When possible, provide a background queue.
 
 ```swift
 func operationQueue(for filePromiseProvider: NSFilePromiseProvider) -> OperationQueue {
@@ -147,7 +149,7 @@ func filePromiseProvider(_ filePromiseProvider: NSFilePromiseProvider,
 }
 ```
 
-Implement `NSCollectionViewDelegate` [`collectionView(_:pasteboardWriterForItemAt:)`](nscollectionviewdelegate/collectionview(_:pasteboardwriterforitemat:)-7ldvs.md) so the collection view uses the file promise provider when the image files are dragged out. It returns a custom instance of [`NSFilePromiseProvider`](nsfilepromiseprovider.md) implements the `NSPasteboardWriting` protocol.
+Implement `NSCollectionViewDelegate` [`collectionView(_:pasteboardWriterForItemAt:)`](./nscollectionviewdelegate/collectionview%28_,pasteboardwriterforitemat%29-7ldvs.md) so the collection view uses the file promise provider when the image files are dragged out. It returns a custom instance of [`NSFilePromiseProvider`](./nsfilepromiseprovider.md) implements the `NSPasteboardWriting` protocol.
 
 ```swift
 func collectionView(_ collectionView: NSCollectionView,
@@ -182,7 +184,7 @@ func collectionView(_ collectionView: NSCollectionView,
 }
 ```
 
-Returning a non-nil value will make the collection view cell draggable. To drag image files from the collection view to other apps, the collection view’s drag operation mask is set by the collection view’s view controller to work outside the app using [`setDraggingSourceOperationMask(_:forLocal:)`](nscollectionview/setdraggingsourceoperationmask(_:forlocal:).md).
+Returning a non-nil value will make the collection view cell draggable. To drag image files from the collection view to other apps, the collection view’s drag operation mask is set by the collection view’s view controller to work outside the app using [`setDraggingSourceOperationMask(_:forLocal:)`](./nscollectionview/setdraggingsourceoperationmask%28_,forlocal%29.md).
 
 ```swift
 collectionView.setDraggingSourceOperationMask([.copy, .delete], forLocal: false)
@@ -190,11 +192,11 @@ collectionView.setDraggingSourceOperationMask([.copy, .delete], forLocal: false)
 
 ##### Validate the Collection Drop
 
-To allow the collection view to determine a valid drop target, implement [`collectionView(_:validateDrop:proposedIndex:dropOperation:)`](nscollectionviewdelegate/collectionview(_:validatedrop:proposedindex:dropoperation:).md). UIKit calls this delegate function when a drag is moved over the collection view and before the dragging object is dropped by the user. Specify how to respond to a proposed drop operation, which will be either on or above a cell. In this sample, users can drop items between cells to insert them.
+To allow the collection view to determine a valid drop target, implement [`collectionView(_:validateDrop:proposedIndex:dropOperation:)`](./nscollectionviewdelegate/collectionview%28_,validatedrop,proposedindex,dropoperation%29.md). UIKit calls this delegate function when a drag is moved over the collection view and before the dragging object is dropped by the user. Specify how to respond to a proposed drop operation, which will be either on or above a cell. In this sample, users can drop items between cells to insert them.
 
-##### Accept the Drop Onto the Collection View
+##### Accept the Drop onto the Collection View
 
-To allow the collection view to accept the drop when the user releases the mouse button over it, implement this delegate function [`collectionView(_:acceptDrop:index:dropOperation:)`](nscollectionviewdelegate/collectionview(_:acceptdrop:index:dropoperation:).md).
+To allow the collection view to accept the drop when the user releases the mouse button over it, implement this delegate function [`collectionView(_:acceptDrop:index:dropOperation:)`](./nscollectionviewdelegate/collectionview%28_,acceptdrop,index,dropoperation%29.md).
 
 ```swift
 func collectionView(_ collectionView: NSCollectionView,
@@ -268,15 +270,16 @@ func dropInternalPhotos(_ collectionView: NSCollectionView, draggingInfo: NSDrag
 
 ## See Also
 
-- [Supporting Drag and Drop Through File Promises](supporting-drag-and-drop-through-file-promises.md)
+### File Promises
+- [Supporting Drag and Drop Through File Promises](./supporting-drag-and-drop-through-file-promises.md)
   Receive and provide file promises to support dragged app files and pasteboard operations.
-- [Supporting Table View Drag and Drop Through File Promises](supporting-table-view-drag-and-drop-through-file-promises.md)
+- [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [class NSFilePromiseProvider](nsfilepromiseprovider.md)
+- [class NSFilePromiseProvider](./nsfilepromiseprovider.md)
   An object that provides a promise for the pasteboard.
-- [protocol NSFilePromiseProviderDelegate](nsfilepromiseproviderdelegate.md)
+- [protocol NSFilePromiseProviderDelegate](./nsfilepromiseproviderdelegate.md)
   A set of methods that provides the name of the promised file and writes the file to the destination directory when the file promise is fulfilled.
-- [class NSFilePromiseReceiver](nsfilepromisereceiver.md)
+- [class NSFilePromiseReceiver](./nsfilepromisereceiver.md)
   An object that receives a file promise from the pasteboard.
 
 

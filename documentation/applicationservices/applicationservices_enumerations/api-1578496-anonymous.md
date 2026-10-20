@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kICServicesTCPBit: Int](kicservicestcpbit.md)
-- [var kICServicesUDPBit: Int](kicservicesudpbit.md)
+- [var kICServicesTCPBit: Int](../kicservicestcpbit.md)
+- [var kICServicesUDPBit: Int](../kicservicesudpbit.md)
 
 
 ---

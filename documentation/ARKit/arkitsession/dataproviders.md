@@ -1,7 +1,8 @@
 # dataProviders
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of all data providers on this session.
 

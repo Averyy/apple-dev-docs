@@ -1,7 +1,8 @@
 # ChairType.unidentified
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An uncategorized chair type.
 
@@ -18,11 +19,12 @@ case unidentified
 
 ## See Also
 
-- [ChairType.dining](chairtype/dining.md)
+### Choosing a chair type
+- [ChairType.dining](./dining.md)
   A type of chair that accompanies a dining table.
-- [ChairType.stool](chairtype/stool.md)
+- [ChairType.stool](./stool.md)
   A type of chair that resembles a stool.
-- [ChairType.swivel](chairtype/swivel.md)
+- [ChairType.swivel](./swivel.md)
   A type of chair that swivels.
 
 

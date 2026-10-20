@@ -1,7 +1,8 @@
 # Update Location Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update an existing location group’s name, rules, or location membership.
 
@@ -10,7 +11,7 @@ Update an existing location group’s name, rules, or location membership.
 
 #### Discussion
 
-The system modifies only the fields you include in the request body. Omitted fields retain their current values. See [`LocationGroupUpdate`](locationgroupupdate.md) for the request body’s accepted fields, including which ones are mutable.
+The system modifies only the fields you include in the request body. Omitted fields retain their current values. See [`LocationGroupUpdate`](./locationgroupupdate.md) for the request body’s accepted fields, including which ones are mutable.
 
 The `brandId` and `adAccountId` fields can’t change after creation, and the update request body doesn’t accept them. To move a group to a different brand or transfer ownership to another ad account, delete the group and recreate it.
 
@@ -113,17 +114,38 @@ PUT /v1/location-groups/{id}
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `LocationGroupUpdate`
+
+## Responses
+
+- `200` OK (`LocationGroupResponse`, `application/json`)
+- `400` Bad Request (`LocationGroupResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`LocationGroupResponse`, `application/json`)
+- `404` Not Found (`LocationGroupResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Create Location Group](create-location-group.md)
+- [Create Location Group](./create-location-group.md)
   Create a named group of locations for geographic targeting.
-- [Query Location Groups](query-location-groups.md)
+- [Query Location Groups](./query-location-groups.md)
   Retrieve a paginated list of location groups using filters and sorting.
-- [Get Location Group](get-location-group-by-id.md)
+- [Get Location Group](./get-location-group-by-id.md)
   Retrieve a single location group by its unique identifier.
-- [Delete Location Group](delete-location-group.md)
+- [Delete Location Group](./delete-location-group.md)
   Delete a location group by its unique identifier.
 
 

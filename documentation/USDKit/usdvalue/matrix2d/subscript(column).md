@@ -1,7 +1,8 @@
 # subscript(column:)
 
 **Framework**: USDKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the column at the specified index.
 

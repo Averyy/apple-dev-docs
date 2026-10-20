@@ -1,7 +1,8 @@
 # WACapabilities.Feature
 
 **Framework**: Wi-Fi Aware  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Features that your app’s current host device can support.
 
@@ -23,23 +24,24 @@ Supported features are typically created by the system on behalf of the client, 
 ## Topics
 
 ### Checking for Wi-Fi Aware support
-- [WACapabilities.Feature.wifiAware](wacapabilities/feature/wifiaware.md)
+- [WACapabilities.Feature.wifiAware](./feature/wifiaware.md)
   Indicates that the host supports Wi-Fi Aware.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WACapabilities](wacapabilities.md)
+### Host capabilities
+- [struct WACapabilities](../wacapabilities.md)
   A structure that checks the host device’s supported features and capabilities.
 
 

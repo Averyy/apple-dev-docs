@@ -1,7 +1,8 @@
 # errSecCRLAlreadySigned
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list is already signed.
 
@@ -18,6 +19,10 @@ The certificate revocation list is already signed.
 
 ```swift
 var errSecCRLAlreadySigned: OSStatus { get }
+```
+
+```c
+errSecCRLAlreadySigned
 ```
 
 

@@ -1,7 +1,8 @@
 # restoreImageURL
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The restore image URL used to initialize this installer.
 
@@ -14,11 +15,16 @@ The restore image URL used to initialize this installer.
 var restoreImageURL: URL { get }
 ```
 
+```objc
+@property (readonly) NSURL * restoreImageURL;
+```
+
 ## See Also
 
-- [var progress: Progress](vzmacosinstaller/progress.md)
+### Getting Information About an Installation
+- [var progress: Progress](./progress.md)
   A progress object that you can use to observe or cancel an installation.
-- [var virtualMachine: VZVirtualMachine](vzmacosinstaller/virtualmachine.md)
+- [var virtualMachine: VZVirtualMachine](./virtualmachine.md)
   The virtual machine used to initialize this installer.
 
 

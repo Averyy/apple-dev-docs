@@ -1,7 +1,8 @@
 # personNameComponents(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a person name components object from a given string.
 
@@ -20,9 +21,13 @@ Returns a person name components object from a given string.
 func personNameComponents(from string: String) -> PersonNameComponents?
 ```
 
+```objc
+- (NSPersonNameComponents *) personNameComponentsFromString:(NSString *) string;
+```
+
 #### Return Value
 
-An [`NSPersonNameComponents`](nspersonnamecomponents.md) object parsing string using the receiver’s format, or `nil` if no components could be parsed.
+An [`NSPersonNameComponents`](../nspersonnamecomponents.md) object parsing string using the receiver’s format, or `nil` if no components could be parsed.
 
 #### Discussion
 
@@ -64,13 +69,14 @@ Here are some general rules that describe the name component parsing behavior:
 
 ## See Also
 
-- [class func localizedString(from: PersonNameComponents, style: PersonNameComponentsFormatter.Style, options: PersonNameComponentsFormatter.Options) -> String](personnamecomponentsformatter/localizedstring(from:style:options:).md)
+### Converting Between Person Name Components and Strings
+- [class func localizedString(from: PersonNameComponents, style: PersonNameComponentsFormatter.Style, options: PersonNameComponentsFormatter.Options) -> String](./localizedstring%28from,style,options%29.md)
   Returns a string formatted for a given `NSPersonNameComponents` object using the provided style and options.
-- [func string(from: PersonNameComponents) -> String](personnamecomponentsformatter/string(from:).md)
+- [func string(from: PersonNameComponents) -> String](./string%28from%29.md)
   Returns a string formatted for a given `NSPersonNameComponents` object.
-- [func annotatedString(from: PersonNameComponents) -> NSAttributedString](personnamecomponentsformatter/annotatedstring(from:).md)
+- [func annotatedString(from: PersonNameComponents) -> NSAttributedString](./annotatedstring%28from%29.md)
   Returns an attributed string formatted for a given `NSPersonNameComponents` object, with attribute annotations for each component.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](personnamecomponentsformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   Returns by reference a person name components object after creating it from a given string.
 
 

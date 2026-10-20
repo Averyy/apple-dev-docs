@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_duration {
     ...
 };
@@ -17,8 +17,8 @@ struct stackshot_duration {
 ## Topics
 
 ### Instance Properties
-- [stackshot_duration](stackshot_duration/1644435-stackshot_duration.md)
-- [stackshot_duration_outer](stackshot_duration/1644358-stackshot_duration_outer.md)
+- [stackshot_duration](./stackshot_duration/api-1644435-stackshot_duration.md)
+- [stackshot_duration_outer](./stackshot_duration/api-1644358-stackshot_duration_outer.md)
 
 
 ---

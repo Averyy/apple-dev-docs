@@ -1,7 +1,8 @@
 # layoutAttributesForInteractivelyMovingItem(at:withTargetPosition:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the layout attributes of an item when it is being moved interactively by the user.
 
@@ -18,13 +19,17 @@ Retrieves the layout attributes of an item when it is being moved interactively 
 func layoutAttributesForInteractivelyMovingItem(at indexPath: IndexPath, withTargetPosition position: CGPoint) -> UICollectionViewLayoutAttributes
 ```
 
+```objc
+- (UICollectionViewLayoutAttributes *) layoutAttributesForInteractivelyMovingItemAtIndexPath:(NSIndexPath *) indexPath withTargetPosition:(CGPoint) position;
+```
+
 #### Return Value
 
 The layout attributes of the item while it is at the specified position.
 
 #### Discussion
 
-When an item is moving because of user interactivity, the layout object uses this method to retrieve layout attributes to use for the item while it is at the specified position. The default implementation of this method returns a copy of the item’s existing attributes with two changes: the [`center`](uicollectionviewlayoutattributes/center.md) point is set to the value in `position` and the [`zIndex`](uicollectionviewlayoutattributes/zindex.md) value is set to [`NSIntegerMax`](https://developer.apple.com/documentation/objectivec/nsintegermax) so that the item floats above other items in the collection view.
+When an item is moving because of user interactivity, the layout object uses this method to retrieve layout attributes to use for the item while it is at the specified position. The default implementation of this method returns a copy of the item’s existing attributes with two changes: the [`center`](../uicollectionviewlayoutattributes/center.md) point is set to the value in `position` and the [`zIndex`](../uicollectionviewlayoutattributes/zindex.md) value is set to [`NSIntegerMax`](../../ObjectiveC/nsintegermax.md) so that the item floats above other items in the collection view.
 
 Subclasses can override this method and modify additional layout attributes as needed. If you override this method, call `super` first to retrieve the item’s existing attributes and then make your changes to the returned structure.
 
@@ -35,21 +40,22 @@ Subclasses can override this method and modify additional layout attributes as n
 
 ## See Also
 
-- [class var layoutAttributesClass: AnyClass](uicollectionviewlayout/layoutattributesclass.md)
+### Providing layout attributes
+- [class var layoutAttributesClass: AnyClass](./layoutattributesclass.md)
   The class to use when creating layout attributes objects.
-- [func prepare()](uicollectionviewlayout/prepare.md)
+- [func prepare()](./prepare%28%29.md)
   Tells the layout object to update the current layout.
-- [func layoutAttributesForElements(in: CGRect) -> [UICollectionViewLayoutAttributes]?](uicollectionviewlayout/layoutattributesforelements(in:).md)
+- [func layoutAttributesForElements(in: CGRect) -> [UICollectionViewLayoutAttributes]?](./layoutattributesforelements%28in%29.md)
   Retrieves the layout attributes for all of the cells and views in the specified rectangle.
-- [func layoutAttributesForItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesforitem(at:).md)
+- [func layoutAttributesForItem(at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforitem%28at%29.md)
   Retrieves layout information for an item at the specified index path with a corresponding cell.
-- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesforsupplementaryview(ofkind:at:).md)
+- [func layoutAttributesForSupplementaryView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesforsupplementaryview%28ofkind,at%29.md)
   Retrieves the layout attributes for the specified supplementary view.
-- [func layoutAttributesForDecorationView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](uicollectionviewlayout/layoutattributesfordecorationview(ofkind:at:).md)
+- [func layoutAttributesForDecorationView(ofKind: String, at: IndexPath) -> UICollectionViewLayoutAttributes?](./layoutattributesfordecorationview%28ofkind,at%29.md)
   Retrieves the layout attributes for the specified decoration view.
-- [func targetContentOffset(forProposedContentOffset: CGPoint) -> CGPoint](uicollectionviewlayout/targetcontentoffset(forproposedcontentoffset:).md)
+- [func targetContentOffset(forProposedContentOffset: CGPoint) -> CGPoint](./targetcontentoffset%28forproposedcontentoffset%29.md)
   Retrieves the content offset to use after an animated layout update or change.
-- [func targetContentOffset(forProposedContentOffset: CGPoint, withScrollingVelocity: CGPoint) -> CGPoint](uicollectionviewlayout/targetcontentoffset(forproposedcontentoffset:withscrollingvelocity:).md)
+- [func targetContentOffset(forProposedContentOffset: CGPoint, withScrollingVelocity: CGPoint) -> CGPoint](./targetcontentoffset%28forproposedcontentoffset,withscrollingvelocity%29.md)
   Retrieves the point at which to stop scrolling.
 
 

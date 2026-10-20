@@ -1,7 +1,8 @@
 # setEditing(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the table view into and out of editing mode.
 
@@ -9,7 +10,7 @@ Toggles the table view into and out of editing mode.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,18 +19,23 @@ Toggles the table view into and out of editing mode.
 func setEditing(_ editing: Bool, animated: Bool)
 ```
 
+```objc
+- (void) setEditing:(BOOL) editing animated:(BOOL) animated;
+```
+
 #### Discussion
 
-When you call this method with the value of `editing` set to [`true`](https://developer.apple.com/documentation/swift/true), the table view goes into editing mode by calling [`setEditing(_:animated:)`](uitableviewcell/setediting(_:animated:).md) on each visible `UITableViewCell` object. Calling this method with `editing` set to [`false`](https://developer.apple.com/documentation/swift/false) turns off editing mode. In editing mode, the cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](uitableviewcell.md) for details.) The data source of the table view can selectively exclude cells from editing mode by implementing [`tableView(_:canEditRowAt:)`](uitableviewdatasource/tableview(_:caneditrowat:).md).
+When you call this method with the value of `editing` set to [`true`](../../Swift/true.md), the table view goes into editing mode by calling [`setEditing(_:animated:)`](../uitableviewcell/setediting%28_,animated%29.md) on each visible `UITableViewCell` object. Calling this method with `editing` set to [`false`](../../Swift/false.md) turns off editing mode. In editing mode, the cells of the table might show an insertion or deletion control on the left side of each cell and a reordering control on the right side, depending on how the cell is configured. (See [`UITableViewCell`](../uitableviewcell.md) for details.) The data source of the table view can selectively exclude cells from editing mode by implementing [`tableView(_:canEditRowAt:)`](../uitableviewdatasource/tableview%28_,caneditrowat%29.md).
 
 ## Parameters
 
-- `editing`: [`true`](https://developer.apple.com/documentation/swift/true) to enter editing mode; [`false`](https://developer.apple.com/documentation/swift/false) to leave it. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
-- `animated`: [`true`](https://developer.apple.com/documentation/swift/true) to animate the transition to editing mode; [`false`](https://developer.apple.com/documentation/swift/false) to make the transition immediate.
+- `editing`: [`true`](../../Swift/true.md) to enter editing mode; [`false`](../../Swift/false.md) to leave it. The default value is [`false`](../../Swift/false.md).
+- `animated`: [`true`](../../Swift/true.md) to animate the transition to editing mode; [`false`](../../Swift/false.md) to make the transition immediate.
 
 ## See Also
 
-- [var isEditing: Bool](uitableview/isediting.md)
+### Putting the table into edit mode
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that determines whether the table view is in editing mode.
 
 

@@ -1,17 +1,22 @@
 # openConnection(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a baseband connection to the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openConnection(_ target: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) openConnection:(id) target;
 ```
 
 #### Return Value

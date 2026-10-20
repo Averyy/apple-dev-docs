@@ -1,6 +1,7 @@
 # Chapter lists
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 A chapter list provides a set of named entry points into a movie.
 
@@ -28,13 +29,14 @@ If more than one enabled track includes a `'chap'` track reference, QuickTime us
 
 ## See Also
 
-- [Modifier tracks](modifier_tracks.md)
+### Track features
+- [Modifier tracks](./modifier_tracks.md)
   Create dynamic movies with modifier tracks that send data to another track.
-- [Creating movies with modifier tracks](creating_movies_with_modifier_tracks.md)
+- [Creating movies with modifier tracks](./creating_movies_with_modifier_tracks.md)
   Send data to another media handler instead of presenting media directly.
-- [Track references](track_references.md)
+- [Track references](./track_references.md)
   Relate a movie’s tracks to one another with track references.
-- [Streaming media](streaming_media.md)
+- [Streaming media](./streaming_media.md)
   Store streaming data in a streaming media track for QuickTime movies.
 
 

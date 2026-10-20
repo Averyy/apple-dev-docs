@@ -1,7 +1,8 @@
 # UIBandSelectionInteraction.State.possible
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the interaction object is ready to start a new interaction.
 
@@ -17,17 +18,22 @@ A state that indicates the interaction object is ready to start a new interactio
 case possible
 ```
 
+```c
+UIBandSelectionInteractionStatePossible
+```
+
 #### Discussion
 
-A [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object in this state is waiting for events to occur that start the interaction. When an interaction concludes, the interaction returns to this state until a new interaction begins.
+A [`UIBandSelectionInteraction`](../../uibandselectioninteraction.md) object in this state is waiting for events to occur that start the interaction. When an interaction concludes, the interaction returns to this state until a new interaction begins.
 
 ## See Also
 
-- [UIBandSelectionInteraction.State.began](uibandselectioninteraction/state-swift.enum/began.md)
+### Getting the selection state
+- [UIBandSelectionInteraction.State.began](./began.md)
   A state that indicates the interaction object began a new interaction.
-- [UIBandSelectionInteraction.State.selecting](uibandselectioninteraction/state-swift.enum/selecting.md)
+- [UIBandSelectionInteraction.State.selecting](./selecting.md)
   A state that indicates the interaction object is tracking changes to the selection rectangle.
-- [UIBandSelectionInteraction.State.ended](uibandselectioninteraction/state-swift.enum/ended.md)
+- [UIBandSelectionInteraction.State.ended](./ended.md)
   A state that indicates the current interaction ended.
 
 

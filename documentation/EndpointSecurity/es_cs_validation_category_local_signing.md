@@ -1,16 +1,21 @@
 # ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING: es_cs_validation_category_t { get }
+```
+
+```c
+ES_CS_VALIDATION_CATEGORY_LOCAL_SIGNING
 ```
 
 

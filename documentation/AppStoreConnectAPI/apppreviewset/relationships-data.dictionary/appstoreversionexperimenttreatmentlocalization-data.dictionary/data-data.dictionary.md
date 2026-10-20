@@ -1,7 +1,8 @@
 # AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update an app preview set.
 
@@ -10,14 +11,14 @@ The request body you use to update an app preview set.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 
 
 ---

@@ -1,14 +1,15 @@
 # UITraitBridgedEnvironmentKey
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,24 +20,25 @@ protocol UITraitBridgedEnvironmentKey : EnvironmentKey
 ## Topics
 
 ### Reading trait values
-- [static func read(from: UITraitCollection) -> Self.Value](uitraitbridgedenvironmentkey/read(from:).md)
+- [static func read(from: UITraitCollection) -> Self.Value](./uitraitbridgedenvironmentkey/read%28from%29.md)
 ### Writing trait values
-- [static func write(to: inout any UIMutableTraits, value: Self.Value)](uitraitbridgedenvironmentkey/write(to:value:).md)
+- [static func write(to: inout any UIMutableTraits, value: Self.Value)](./uitraitbridgedenvironmentkey/write%28to,value%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [EnvironmentKey](../swiftui/environmentkey.md)
+- [EnvironmentKey](../SwiftUI/environmentkey.md)
 
 ## See Also
 
-- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+### Custom traits
+- [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
   Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
+- [protocol UIMutableTraits](./uimutabletraits-13ja5.md)
   A mutable container of traits.
-- [typealias UITrait](uitrait-9423.md)
+- [typealias UITrait](./uitrait-9423.md)
   A type representing a trait in a trait collection.
-- [protocol UITraitDefinition](uitraitdefinition-64c15.md)
+- [protocol UITraitDefinition](./uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
 
 

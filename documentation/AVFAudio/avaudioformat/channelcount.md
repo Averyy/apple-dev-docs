@@ -1,7 +1,8 @@
 # channelCount
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of channels of audio data.
 
@@ -20,13 +21,18 @@ The number of channels of audio data.
 var channelCount: AVAudioChannelCount { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioChannelCount channelCount;
+```
+
 ## See Also
 
-- [var sampleRate: Double](avaudioformat/samplerate.md)
+### Getting audio format values
+- [var sampleRate: Double](./samplerate.md)
   The audio format sampling rate, in hertz.
-- [var channelLayout: AVAudioChannelLayout?](avaudioformat/channellayout.md)
+- [var channelLayout: AVAudioChannelLayout?](./channellayout.md)
   The underlying audio channel layout.
-- [var formatDescription: CMAudioFormatDescription](avaudioformat/formatdescription.md)
+- [var formatDescription: CMAudioFormatDescription](./formatdescription.md)
   The audio format description to use with Core Media APIs.
 
 

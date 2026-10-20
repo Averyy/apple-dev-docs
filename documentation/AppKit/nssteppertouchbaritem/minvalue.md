@@ -1,7 +1,8 @@
 # minValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stepper’s minimum value.
 
@@ -17,17 +18,22 @@ The stepper’s minimum value.
 var minValue: Double { get set }
 ```
 
+```objc
+@property double minValue;
+```
+
 #### Discussion
 
 The default is `0.0`.
 
 ## See Also
 
-- [var value: Double](nssteppertouchbaritem/value.md)
+### Managing the stepper’s value
+- [var value: Double](./value.md)
   The current value of the stepper.
-- [var maxValue: Double](nssteppertouchbaritem/maxvalue.md)
+- [var maxValue: Double](./maxvalue.md)
   The stepper’s maximum value.
-- [var increment: Double](nssteppertouchbaritem/increment.md)
+- [var increment: Double](./increment.md)
   The stepper’s increment value.
 
 

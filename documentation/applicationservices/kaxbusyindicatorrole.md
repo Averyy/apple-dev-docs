@@ -1,7 +1,8 @@
 # kAXBusyIndicatorRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An asynchronous progress indicator.
 
@@ -12,6 +13,10 @@ An asynchronous progress indicator.
 
 ```swift
 var kAXBusyIndicatorRole: String { get }
+```
+
+```c
+#define kAXBusyIndicatorRole
 ```
 
 

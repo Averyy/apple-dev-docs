@@ -2,6 +2,7 @@
 
 **Framework**: Quartz  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the number of items in a slideshow.
@@ -15,6 +16,10 @@ Returns the number of items in a slideshow.
 func numberOfSlideshowItems() -> Int
 ```
 
+```objc
+- (NSUInteger) numberOfSlideshowItems;
+```
+
 #### Return Value
 
 The number of items in the slideshow.
@@ -25,11 +30,12 @@ Your data source must implement this method.
 
 ## See Also
 
-- [func slideshowItem(at: Int) -> Any!](ikslideshowdatasource/slideshowitem(at:).md)
+### Providing Slideshow Information
+- [func slideshowItem(at: Int) -> Any!](./slideshowitem%28at%29.md)
   Returns the item for a given index
-- [func nameOfSlideshowItem(at: Int) -> String!](ikslideshowdatasource/nameofslideshowitem(at:).md)
+- [func nameOfSlideshowItem(at: Int) -> String!](./nameofslideshowitem%28at%29.md)
   Returns the display name for item at the specified index.
-- [func canExportSlideshowItem(at: Int, toApplication: String!) -> Bool](ikslideshowdatasource/canexportslideshowitem(at:toapplication:).md)
+- [func canExportSlideshowItem(at: Int, toApplication: String!) -> Bool](./canexportslideshowitem%28at,toapplication%29.md)
   Reports whether the export button should be enabled for a slideshow item.
 
 

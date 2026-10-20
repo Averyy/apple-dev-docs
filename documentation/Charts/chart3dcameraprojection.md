@@ -1,7 +1,8 @@
 # Chart3DCameraProjection
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,19 +19,20 @@ struct Chart3DCameraProjection
 ## Topics
 
 ### Type Properties
-- [static var automatic: Chart3DCameraProjection](chart3dcameraprojection/automatic.md)
-- [static var orthographic: Chart3DCameraProjection](chart3dcameraprojection/orthographic.md)
-- [static var perspective: Chart3DCameraProjection](chart3dcameraprojection/perspective.md)
+- [static var automatic: Chart3DCameraProjection](./chart3dcameraprojection/automatic.md)
+- [static var orthographic: Chart3DCameraProjection](./chart3dcameraprojection/orthographic.md)
+- [static var perspective: Chart3DCameraProjection](./chart3dcameraprojection/perspective.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct Chart3DPose](chart3dpose.md)
+### Customizing chart presentation
+- [struct Chart3DPose](./chart3dpose.md)
 
 
 ---

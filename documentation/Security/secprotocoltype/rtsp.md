@@ -1,7 +1,8 @@
 # SecProtocolType.RTSP
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates RTSP.
 
@@ -13,6 +14,10 @@ Indicates RTSP.
 
 ```swift
 case RTSP
+```
+
+```c
+kSecProtocolTypeRTSP
 ```
 
 

@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes imports from a decoder.
 
@@ -21,7 +22,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(importFromFiles: Bool)](beimportoptions/init(importfromfiles:).md)
+### Creating import options
+- [init(importFromFiles: Bool)](./init%28importfromfiles%29.md)
   Initializes imports with a file import preference.
 
 

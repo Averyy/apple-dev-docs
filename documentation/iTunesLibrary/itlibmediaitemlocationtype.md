@@ -1,7 +1,8 @@
 # ITLibMediaItemLocationType
 
 **Framework**: iTunes Library  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants specify the location type of a media item.
 
@@ -15,61 +16,66 @@ These constants specify the location type of a media item.
 enum ITLibMediaItemLocationType
 ```
 
+```c
+enum ITLibMediaItemLocationType : NSUInteger;
+```
+
 ## Topics
 
 ### Media Item Location Types
-- [ITLibMediaItemLocationType.unknown](itlibmediaitemlocationtype/unknown.md)
+- [ITLibMediaItemLocationType.unknown](./itlibmediaitemlocationtype/unknown.md)
   The media item location type is unknown.
-- [ITLibMediaItemLocationType.file](itlibmediaitemlocationtype/file.md)
+- [ITLibMediaItemLocationType.file](./itlibmediaitemlocationtype/file.md)
   The media item location refers to a local file.
-- [ITLibMediaItemLocationType.URL](itlibmediaitemlocationtype/url.md)
+- [ITLibMediaItemLocationType.URL](./itlibmediaitemlocationtype/url.md)
   The media item location refers to a URL, such as a podcast.
-- [ITLibMediaItemLocationType.remote](itlibmediaitemlocationtype/remote.md)
+- [ITLibMediaItemLocationType.remote](./itlibmediaitemlocationtype/remote.md)
   The media item location refers to a remote file.
 ### Initializers
-- [init?(rawValue: UInt)](itlibmediaitemlocationtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./itlibmediaitemlocationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var title: String](itlibmediaitem/title.md)
+### Getting Media Item Info
+- [var title: String](./itlibmediaitem/title.md)
   The title of the media item.
-- [var sortTitle: String?](itlibmediaitem/sorttitle.md)
+- [var sortTitle: String?](./itlibmediaitem/sorttitle.md)
   The title of the media item to use when sorting.
-- [var artist: ITLibArtist?](itlibmediaitem/artist.md)
+- [var artist: ITLibArtist?](./itlibmediaitem/artist.md)
   Information about the artist that iTunes associates with the media item.
-- [var composer: String](itlibmediaitem/composer.md)
+- [var composer: String](./itlibmediaitem/composer.md)
   The name of the composer that iTunes associates with the media item.
-- [var sortComposer: String?](itlibmediaitem/sortcomposer.md)
+- [var sortComposer: String?](./itlibmediaitem/sortcomposer.md)
   The name to use when sorting by composer.
-- [var rating: Int](itlibmediaitem/rating.md)
+- [var rating: Int](./itlibmediaitem/rating.md)
   The rating of the media item.
-- [var isRatingComputed: Bool](itlibmediaitem/isratingcomputed.md)
+- [var isRatingComputed: Bool](./itlibmediaitem/isratingcomputed.md)
   A Boolean value that indicates whether iTunes computes the media item’s rating from its album rating.
-- [var startTime: Int](itlibmediaitem/starttime.md)
+- [var startTime: Int](./itlibmediaitem/starttime.md)
   If nonzero, the actual time playback of the media item starts instead of 0:00 (in milliseconds).
-- [var stopTime: Int](itlibmediaitem/stoptime.md)
+- [var stopTime: Int](./itlibmediaitem/stoptime.md)
   If nonzero, the actual time playback of the media item stops versus the total time (in milliseconds).
-- [var album: ITLibAlbum](itlibmediaitem/album.md)
+- [var album: ITLibAlbum](./itlibmediaitem/album.md)
   The album of the media item.
-- [var genre: String](itlibmediaitem/genre.md)
+- [var genre: String](./itlibmediaitem/genre.md)
   The genre of the media item, if any.
-- [var kind: String?](itlibmediaitem/kind.md)
+- [var kind: String?](./itlibmediaitem/kind.md)
   The kind of media item file, such as an MPEG audio file.
-- [var mediaKind: ITLibMediaItemMediaKind](itlibmediaitem/mediakind.md)
+- [var mediaKind: ITLibMediaItemMediaKind](./itlibmediaitem/mediakind.md)
   The kind of media item.
-- [var totalTime: Int](itlibmediaitem/totaltime.md)
+- [var totalTime: Int](./itlibmediaitem/totaltime.md)
   The length of the media item in milliseconds.
-- [var trackNumber: Int](itlibmediaitem/tracknumber.md)
+- [var trackNumber: Int](./itlibmediaitem/tracknumber.md)
   The position of the media item within its album.
 
 

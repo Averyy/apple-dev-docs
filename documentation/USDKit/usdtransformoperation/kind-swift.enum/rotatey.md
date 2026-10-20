@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.rotateY
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rotation around the Y axis.
 

@@ -1,7 +1,8 @@
 # GCControllerLiveInput
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The input profile for a controller.
 
@@ -19,46 +20,51 @@ The input profile for a controller.
 class GCControllerLiveInput
 ```
 
+```objc
+@interface GCControllerLiveInput : GCControllerInputState
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](./handling-input-events.md)
 
 #### Overview
 
-Instances of [`GCControllerLiveInput`](gccontrollerliveinput.md) represent the current input state of a controller. You can save snapshots of the input state and receive callbacks when the input state changes. You can also get the elements of the controller and their current input values from [`GCControllerLiveInput`](gccontrollerliveinput.md) instances.
+Instances of [`GCControllerLiveInput`](./gccontrollerliveinput.md) represent the current input state of a controller. You can save snapshots of the input state and receive callbacks when the input state changes. You can also get the elements of the controller and their current input values from [`GCControllerLiveInput`](./gccontrollerliveinput.md) instances.
 
-Use the [`capture()`](gccontrollerliveinput/capture().md) method to save a copy of the current input state. If you want Game Controller to buffer snapshots of the input states for you, use the  [`inputStateQueueDepth`](gcdevicephysicalinput/inputstatequeuedepth.md) property to set the buffer’s queue depth to a value other than `0`. Then use the [`nextInputState()`](gccontrollerliveinput/nextinputstate().md) method to get the snapshots when you’re ready to process input.
+Use the [`capture()`](./gccontrollerliveinput/capture%28%29.md) method to save a copy of the current input state. If you want Game Controller to buffer snapshots of the input states for you, use the  [`inputStateQueueDepth`](./gcdevicephysicalinput/inputstatequeuedepth.md) property to set the buffer’s queue depth to a value other than `0`. Then use the [`nextInputState()`](./gccontrollerliveinput/nextinputstate%28%29.md) method to get the snapshots when you’re ready to process input.
 
 ## Topics
 
 ### Handling device input
-- [func nextInputState() -> (any GCControllerInputState & GCDevicePhysicalInputStateDiff)?](gccontrollerliveinput/nextinputstate.md)
+- [func nextInputState() -> (any GCControllerInputState & GCDevicePhysicalInputStateDiff)?](./gccontrollerliveinput/nextinputstate%28%29.md)
   Returns the next device input state from the queue.
-- [func capture() -> GCControllerInputState](gccontrollerliveinput/capture.md)
+- [func capture() -> GCControllerInputState](./gccontrollerliveinput/capture%28%29.md)
   Returns a snapshot of the physical device inputs.
 ### Remapping controls
-- [var unmapped: GCControllerLiveInput?](gccontrollerliveinput/unmapped.md)
+- [var unmapped: GCControllerLiveInput?](./gccontrollerliveinput/unmapped.md)
   The live input of a controller without any system-level remapping of the controls.
 
 ## Relationships
 
 ### Inherits From
-- [GCControllerInputState](gccontrollerinputstate.md)
+- [GCControllerInputState](./gccontrollerinputstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCDevicePhysicalInput](gcdevicephysicalinput.md)
-- [GCDevicePhysicalInputState](gcdevicephysicalinputstate.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCDevicePhysicalInput](./gcdevicephysicalinput.md)
+- [GCDevicePhysicalInputState](./gcdevicephysicalinputstate.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var input: GCControllerLiveInput](gccontroller/input.md)
+### Accessing controller input
+- [var input: GCControllerLiveInput](./gccontroller/input.md)
   The input profile for the controller.
-- [class GCControllerInputState](gccontrollerinputstate.md)
+- [class GCControllerInputState](./gccontrollerinputstate.md)
   A class that represents an input state for gamepads and arcade sticks.
 
 

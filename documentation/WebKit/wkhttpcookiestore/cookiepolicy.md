@@ -1,7 +1,8 @@
 # WKHTTPCookieStore.CookiePolicy
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration with cases that indicate whether a cookie store allows cookie storage.
 
@@ -18,25 +19,29 @@ An enumeration with cases that indicate whether a cookie store allows cookie sto
 enum CookiePolicy
 ```
 
+```c
+enum WKCookiePolicy : NSInteger;
+```
+
 ## Topics
 
 ### Specifying a cookie policy
-- [WKHTTPCookieStore.CookiePolicy.allow](wkhttpcookiestore/cookiepolicy/allow.md)
+- [WKHTTPCookieStore.CookiePolicy.allow](./cookiepolicy/allow.md)
   A case that indicates the cookie store allows cookie storage.
-- [WKHTTPCookieStore.CookiePolicy.disallow](wkhttpcookiestore/cookiepolicy/disallow.md)
+- [WKHTTPCookieStore.CookiePolicy.disallow](./cookiepolicy/disallow.md)
   A case that indicates the cookie store does not allow cookie storage.
 ### Initializers
-- [init?(rawValue: Int)](wkhttpcookiestore/cookiepolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cookiepolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

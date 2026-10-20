@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parameters used to initialize the listener.
 
@@ -22,7 +23,8 @@ final let parameters: NWParameters
 
 ## See Also
 
-- [var queue: DispatchQueue?](nwlistener/queue.md)
+### Inspecting Listeners
+- [var queue: DispatchQueue?](./queue.md)
   The queue on which listener events are delivered.
 
 

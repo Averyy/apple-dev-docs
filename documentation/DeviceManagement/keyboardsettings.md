@@ -1,7 +1,8 @@
 # KeyboardSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure keyboard settings.
 
@@ -13,7 +14,7 @@ The declaration to configure keyboard settings.
 
 ## Declaration
 
-```swift
+```
 object KeyboardSettings
 ```
 
@@ -21,7 +22,7 @@ object KeyboardSettings
 
 Specify `com.apple.configuration.keyboard.settings` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.configuration.keyboard.settings` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### Configuration examples
 
 This configuration restricts keyboard features.
 
@@ -57,46 +58,73 @@ This configuration restricts keyboard features.
 
 ## Properties
 
-- `AllowAutoCorrection` (boolean): If `false`, disables auto-correction. Available: iOS 26.4+ | iPadOS 26.4+
+- `AllowAutoCorrection` (boolean): If `false`, disables auto-correction.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
 - `AllowDefinitionLookup` (boolean): If `false`, disables definition lookup.
+
+  **Default**: `true`
 - `AllowDictation` (boolean): If `false`, disables dictation.
+
+  **Default**: `true`
 - `AllowMathKeyboardSuggestions` (boolean): If `false`, disables keyboard suggestions that include math solutions. This key is also supported by the math.settings configuration.
-- `AllowPredictiveText` (boolean): If `false`, disables predictive text. Available: iOS 26.4+ | iPadOS 26.4+
-- `AllowSlideToType` (boolean): If `false`, disables slide to type. Available: iOS 26.4+ | iPadOS 26.4+
-- `AllowSpellCheck` (boolean): If `false`, disables spell check. Available: iOS 26.4+ | iPadOS 26.4+
-- `AllowTextReplacement` (boolean): If `false`, disables text replacement. Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
+- `AllowPredictiveText` (boolean): If `false`, disables predictive text.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
+- `AllowSlideToType` (boolean): If `false`, disables slide to type.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
+- `AllowSpellCheck` (boolean): If `false`, disables spell check.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
+- `AllowTextReplacement` (boolean): If `false`, disables text replacement.
+
+  Available: iOS 26.4+ | iPadOS 26.4+
+
+  **Default**: `true`
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

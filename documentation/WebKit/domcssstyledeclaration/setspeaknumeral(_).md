@@ -1,7 +1,8 @@
 # setSpeakNumeral(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setSpeakNumeral(_ speakNumeral: String!)
+```
+
+```objc
+- (void) setSpeakNumeral:(NSString *) speakNumeral;
 ```
 
 

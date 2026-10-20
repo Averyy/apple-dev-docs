@@ -1,7 +1,8 @@
 # extendedAttributes
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The item’s extended attributes.
 
@@ -18,15 +19,20 @@ The item’s extended attributes.
 static var extendedAttributes: NSFileProviderItemFields { get }
 ```
 
+```c
+NSFileProviderItemExtendedAttributes
+```
+
 ## See Also
 
-- [static var fileSystemFlags: NSFileProviderItemFields](nsfileprovideritemfields/filesystemflags.md)
+### Working with Metadata
+- [static var fileSystemFlags: NSFileProviderItemFields](./filesystemflags.md)
   The flags describing the item’s on-disk representation.
-- [static var tagData: NSFileProviderItemFields](nsfileprovideritemfields/tagdata.md)
+- [static var tagData: NSFileProviderItemFields](./tagdata.md)
   The tags for the item.
-- [static var favoriteRank: NSFileProviderItemFields](nsfileprovideritemfields/favoriterank.md)
+- [static var favoriteRank: NSFileProviderItemFields](./favoriterank.md)
   The item’s favorite rank.
-- [static var typeAndCreator: NSFileProviderItemFields](nsfileprovideritemfields/typeandcreator.md)
+- [static var typeAndCreator: NSFileProviderItemFields](./typeandcreator.md)
   The file type and creator codes for the item.
 
 

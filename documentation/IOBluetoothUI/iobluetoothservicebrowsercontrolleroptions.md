@@ -1,7 +1,8 @@
 # IOBluetoothServiceBrowserControllerOptions
 
 **Framework**: IOBluetooth UI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.2+
@@ -12,6 +13,10 @@
 typealias IOBluetoothServiceBrowserControllerOptions = UInt32
 ```
 
+```c
+typedef uint32_t IOBluetoothServiceBrowserControllerOptions;
+```
+
 #### Discussion
 
 Option values to customize the behavior of an IOBluetoothServiceBrowserController object.
@@ -19,9 +24,9 @@ Option values to customize the behavior of an IOBluetoothServiceBrowserControlle
 ## Topics
 
 ### Constants
-- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](kiobluetoothservicebrowsercontrolleroptionsnone.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
-- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsNone: Int](./kiobluetoothservicebrowsercontrolleroptionsnone.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsAutoStartInquiry: Int](./kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md)
+- [var kIOBluetoothServiceBrowserControllerOptionsDisconnectWhenDone: Int](./kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md)
 
 
 ---

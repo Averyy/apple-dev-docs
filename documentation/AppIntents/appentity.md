@@ -1,7 +1,8 @@
 # AppEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
 
@@ -11,7 +12,7 @@ An interface for making a custom type or app-specific concept discoverable by Ap
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,16 +23,16 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
-- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
-- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
+- [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md)
+- [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
+- [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
+- [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
+- [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
 #### Overview
 
-To use a data model object to app intents, update it to conform to the `AppEntity` protocol. Declare properties using the `@Property` property wrapper to make them visible to the system. The following example from the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample app shows a data model for a trail:
+To use a data model object to app intents, update it to conform to the `AppEntity` protocol. Declare properties using the `@Property` property wrapper to make them visible to the system. The following example from the [Accelerating app interactions with App Intents](./acceleratingappinteractionswithappintents.md) sample app shows a data model for a trail:
 
 ```swift
 struct TrailEntity: AppEntity {
@@ -83,71 +84,72 @@ extension TrailEntity: URLRepresentableEntity {
 
 It is up to you whether you want to conform to the `AppEntity` protocol directly on the data models of your app, or if you create data models specific to your app intents implementation. In many cases, it’s a good idea to create models specific to app intents that shadow your app data models to keep entities separate from the rest of your app’s logic.
 
-> ❗ **Important**: `AppEntity` instances have a total size limit of 10 MB, including all child properties and their values. If your entity exceeds this limit, the system throws an exception, and your app might crash. To reduce the size of your app entity, use the `@DeferredProperty` property wrapper. For more information, see [`Defining app entities for your custom data types`](defining-app-entities-for-your-custom-data-types.md).
+> ❗ **Important**: `AppEntity` instances have a total size limit of 10 MB, including all child properties and their values. If your entity exceeds this limit, the system throws an exception, and your app might crash. To reduce the size of your app entity, use the `@DeferredProperty` property wrapper. For more information, see [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md).
 
 ## Topics
 
 ### Specifying properties
-- [AppEntity.Property](appentity/property.md)
+- [AppEntity.Property](./appentity/property.md)
 ### Making the entity queryable
-- [static var defaultQuery: Self.DefaultQuery](appentity/defaultquery-4khg7.md)
+- [static var defaultQuery: Self.DefaultQuery](./appentity/defaultquery-4khg7.md)
   The default query to use to retrieve entity property instances.
-- [associatedtype DefaultQuery : EntityQuery](appentity/defaultquery-swift.associatedtype.md)
-- [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](appentity/defaultresolverspecification-2dpf2.md)
-- [static var defaultResolverSpecification: some ResolverSpecification](appentity/defaultresolverspecification-589eq.md)
+- [associatedtype DefaultQuery : EntityQuery](./appentity/defaultquery-swift.associatedtype.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<Self>](./appentity/defaultresolverspecification-2dpf2.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./appentity/defaultresolverspecification-589eq.md)
 ### URL representation
-- [struct EntityURLRepresentation](entityurlrepresentation.md)
+- [struct EntityURLRepresentation](./entityurlrepresentation.md)
   The type that provides the URL for an app entity.
 ### Ownership and sharing
-- [struct EntityOwnership](entityownership.md)
+- [struct EntityOwnership](./entityownership.md)
   A type that represents the ownership and sharing characteristics of an app entity.
 ### Type Aliases
-- [AppEntity.ValueRepresentation](appentity/valuerepresentation.md)
+- [AppEntity.ValueRepresentation](./appentity/valuerepresentation.md)
   A type alias for `IntentValueRepresentation`, providing a convenient way to define transfer representations that convert between app entities and system intent values.
 ### Default Implementations
-- [Identifiable Implementations](appentity/identifiable-implementations.md)
+- [Identifiable Implementations](./appentity/identifiable-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppValue](appvalue.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [DisplayRepresentable](displayrepresentable.md)
-- [Identifiable](../swift/identifiable.md)
-- [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [AppValue](./appvalue.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [DisplayRepresentable](./displayrepresentable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 ### Inherited By
-- [AssistantEntity](assistantentity.md)
-- [AssistantSchemaEntity](assistantschemaentity.md)
-- [FileEntity](fileentity.md)
-- [IndexedEntity](indexedentity.md)
-- [OwnershipProvidingEntity](ownershipprovidingentity.md)
-- [SyncableEntity](syncableentity.md)
-- [TransientAppEntity](transientappentity.md)
-- [URLRepresentableEntity](urlrepresentableentity.md)
-- [UniqueAppEntity](uniqueappentity.md)
+- [AssistantEntity](./assistantentity.md)
+- [AssistantSchemaEntity](./assistantschemaentity.md)
+- [FileEntity](./fileentity.md)
+- [IndexedEntity](./indexedentity.md)
+- [OwnershipProvidingEntity](./ownershipprovidingentity.md)
+- [SyncableEntity](./syncableentity.md)
+- [TransientAppEntity](./transientappentity.md)
+- [URLRepresentableEntity](./urlrepresentableentity.md)
+- [UniqueAppEntity](./uniqueappentity.md)
 
 ## See Also
 
-- [protocol FileEntity](fileentity.md)
+### App entity types
+- [protocol FileEntity](./fileentity.md)
   An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
+- [protocol IndexedEntity](./indexedentity.md)
   An interface that allows you to include an entity in your app’s Spotlight index.
-- [protocol SyncableEntity](syncableentity.md)
+- [protocol SyncableEntity](./syncableentity.md)
   An interface that indicates your entity has an identifier that’s consistent across devices.
-- [protocol TransientAppEntity](transientappentity.md)
+- [protocol TransientAppEntity](./transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
-- [protocol UniqueAppEntity](uniqueappentity.md)
+- [protocol UniqueAppEntity](./uniqueappentity.md)
   An AppEntity subtype for entities that only have a single instance.
-- [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [protocol OwnershipProvidingEntity](./ownershipprovidingentity.md)
   A type that provides the system with ownership and sharing context for an app entity.
-- [macro UnionValue()](unionvalue().md)
-- [protocol AppUnionValue](appunionvalue.md)
+- [macro UnionValue()](./unionvalue%28%29.md)
+- [protocol AppUnionValue](./appunionvalue.md)
   A protocol that provides nominal type identity and metadata for union values.
-- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+- [protocol AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
   A protocol for the cases enumeration of an `AppUnionValue`.
 
 

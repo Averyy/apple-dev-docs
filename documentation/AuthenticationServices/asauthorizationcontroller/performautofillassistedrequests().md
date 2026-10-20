@@ -1,7 +1,8 @@
 # performAutoFillAssistedRequests()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiates the authorization flows for requests that support AutoFill presentation.
 
@@ -17,10 +18,14 @@ Initiates the authorization flows for requests that support AutoFill presentatio
 func performAutoFillAssistedRequests()
 ```
 
+```objc
+- (void) performAutoFillAssistedRequests;
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
-- [Supporting passkeys](supporting-passkeys.md)
+- [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Supporting passkeys](../supporting-passkeys.md)
 
 #### Discussion
 
@@ -30,13 +35,14 @@ Upon completion, the authorization controller calls its delegate to report succe
 
 ## See Also
 
-- [func performRequests()](asauthorizationcontroller/performrequests.md)
+### Executing requests
+- [func performRequests()](./performrequests%28%29.md)
   Starts the specified authorization flows during controller initialization.
-- [func performRequests(options: ASAuthorizationController.RequestOptions)](asauthorizationcontroller/performrequests(options:).md)
+- [func performRequests(options: ASAuthorizationController.RequestOptions)](./performrequests%28options%29.md)
   Starts the specified authorization flows during controller initialization.
-- [func cancel()](asauthorizationcontroller/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels any active authorization requests.
-- [ASAuthorizationController.RequestOptions](asauthorizationcontroller/requestoptions.md)
+- [ASAuthorizationController.RequestOptions](./requestoptions.md)
   Options that modify how a controller performs authorization requests.
 
 

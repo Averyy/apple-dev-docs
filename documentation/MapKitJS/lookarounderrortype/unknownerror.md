@@ -1,7 +1,8 @@
 # UnknownError
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error type that indicates the Look Around view encountered an unknown error.
 
@@ -10,7 +11,7 @@ An error type that indicates the Look Around view encountered an unknown error.
 
 ## Declaration
 
-```swift
+```
 readonly UnknownError: "unknown-error";
 ```
 

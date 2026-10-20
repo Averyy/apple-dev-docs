@@ -1,6 +1,7 @@
 # Deleting Donated Shortcuts
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Remove your donations from Siri.
 
@@ -20,58 +21,59 @@ If you need to delete all interactions that your app donated—for example, when
 
 ##### Delete User Activity Donations
 
-The method you use to delete a donation made with [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) depends on how you set up the user activity.
+The method you use to delete a donation made with [`NSUserActivity`](../Foundation/nsuseractivity.md) depends on how you set up the user activity.
 
 ###### Persisted Activities
 
-If user activity’s [`isEligibleForPrediction`](https://developer.apple.com/documentation/foundation/nsuseractivity/iseligibleforprediction) property is set to [`true`](https://developer.apple.com/documentation/swift/true) and the [`persistentIdentifier`](https://developer.apple.com/documentation/foundation/nsuseractivity/persistentidentifier) property is set to a unique string identifying the activity, then:
+If user activity’s [`isEligibleForPrediction`](../Foundation/nsuseractivity/iseligibleforprediction.md) property is set to [`true`](../Swift/true.md) and the [`persistentIdentifier`](../Foundation/nsuseractivity/persistentidentifier.md) property is set to a unique string identifying the activity, then:
 
-- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:)), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
-- Use [`deleteAllSavedUserActivities(completionHandler:)`](https://developer.apple.com/documentation/foundation/nsuseractivity/deleteallsaveduseractivities(completionhandler:)) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
+- Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](../Foundation/nsuseractivity/deletesaveduseractivities%28withpersistentidentifiers,completionhandler%29.md), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
+- Use [`deleteAllSavedUserActivities(completionHandler:)`](../Foundation/nsuseractivity/deleteallsaveduseractivities%28completionhandler%29.md) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
 
 ###### Spotlight Indexed Activities
 
-If the user activity is indexed in Spotlight and the [`relatedUniqueIdentifier`](https://developer.apple.com/documentation/corespotlight/cssearchableitemattributeset/relateduniqueidentifier) property is set to a unique string identifying the activity, then:
+If the user activity is indexed in Spotlight and the [`relatedUniqueIdentifier`](../CoreSpotlight/cssearchableitemattributeset/relateduniqueidentifier.md) property is set to a unique string identifying the activity, then:
 
-- Use [`deleteSearchableItems(withIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deletesearchableitems(withidentifiers:completionhandler:)) to delete specific Spotlight items.
-- Use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deletesearchableitems(withdomainidentifiers:completionhandler:)) to delete Spotlight items grouped by domain identifiers.
-- Use [`deleteAllSearchableItems(completionHandler:)`](https://developer.apple.com/documentation/corespotlight/cssearchableindex/deleteallsearchableitems(completionhandler:)) to delete all searchable items that your app contributed to Spotlight from the index.
+- Use [`deleteSearchableItems(withIdentifiers:completionHandler:)`](../CoreSpotlight/cssearchableindex/deletesearchableitems%28withidentifiers,completionhandler%29.md) to delete specific Spotlight items.
+- Use [`deleteSearchableItems(withDomainIdentifiers:completionHandler:)`](../CoreSpotlight/cssearchableindex/deletesearchableitems%28withdomainidentifiers,completionhandler%29.md) to delete Spotlight items grouped by domain identifiers.
+- Use [`deleteAllSearchableItems(completionHandler:)`](../CoreSpotlight/cssearchableindex/deleteallsearchableitems%28completionhandler%29.md) to delete all searchable items that your app contributed to Spotlight from the index.
 
 When you delete a Spotlight item, the system deletes the related user activity and its donations.
 
-For more information about Spotlight indexing, see [`Core Spotlight`](https://developer.apple.com/documentation/corespotlight).
+For more information about Spotlight indexing, see [Core Spotlight](../CoreSpotlight/CoreSpotlight.md).
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Improving interactions between Siri and your messaging app](improving-interactions-between-siri-and-your-messaging-app.md)
+- [Improving interactions between Siri and your messaging app](./improving-interactions-between-siri-and-your-messaging-app.md)
   Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 

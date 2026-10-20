@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared singleton instance for accessing network slicing functionality.
 

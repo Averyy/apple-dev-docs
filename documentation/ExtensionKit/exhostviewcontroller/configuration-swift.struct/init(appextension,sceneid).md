@@ -1,7 +1,8 @@
 # init(appExtension:sceneID:)
 
 **Framework**: ExtensionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new configuration object.
 

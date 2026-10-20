@@ -1,7 +1,8 @@
 # span
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal and vertical span representing the amount of map to display.
 
@@ -10,18 +11,19 @@ The horizontal and vertical span representing the amount of map to display.
 
 ## Declaration
 
-```swift
+```
 get span(): CoordinateSpan;
 set span(span: CoordinateSpanData);
 ```
 
 #### Discussion
 
-A [`CoordinateSpan`](coordinatespan.md) also defines the current zoom level used by the map object.
+A [`CoordinateSpan`](../coordinatespan.md) also defines the current zoom level used by the map object.
 
 ## See Also
 
-- [center](coordinateregion/center.md)
+### Defining the region
+- [center](./center.md)
   The center point of the region.
 
 

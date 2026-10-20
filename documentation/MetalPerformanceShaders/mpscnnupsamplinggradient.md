@@ -1,7 +1,8 @@
 # MPSCNNUpsamplingGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A gradient filter that upsamples an existing Metal Performance Shaders image.
 
@@ -19,41 +20,46 @@ A gradient filter that upsamples an existing Metal Performance Shaders image.
 class MPSCNNUpsamplingGradient
 ```
 
+```objc
+@interface MPSCNNUpsamplingGradient : MPSCNNGradientKernel
+```
+
 ## Topics
 
 ### Instance Properties
-- [var scaleFactorX: Double](mpscnnupsamplinggradient/scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsamplinggradient/scalefactory.md)
+- [var scaleFactorX: Double](./mpscnnupsamplinggradient/scalefactorx.md)
+- [var scaleFactorY: Double](./mpscnnupsamplinggradient/scalefactory.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNGradientKernel](mpscnngradientkernel.md)
+- [MPSCNNGradientKernel](./mpscnngradientkernel.md)
 ### Inherited By
-- [MPSCNNUpsamplingBilinearGradient](mpscnnupsamplingbilineargradient.md)
-- [MPSCNNUpsamplingNearestGradient](mpscnnupsamplingnearestgradient.md)
+- [MPSCNNUpsamplingBilinearGradient](./mpscnnupsamplingbilineargradient.md)
+- [MPSCNNUpsamplingNearestGradient](./mpscnnupsamplingnearestgradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNUpsampling](mpscnnupsampling.md)
+### Upsampling Layers
+- [class MPSCNNUpsampling](./mpscnnupsampling.md)
   A filter that resamples an existing MPS image.
-- [class MPSCNNUpsamplingBilinear](mpscnnupsamplingbilinear.md)
+- [class MPSCNNUpsamplingBilinear](./mpscnnupsamplingbilinear.md)
   A bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingNearest](mpscnnupsamplingnearest.md)
+- [class MPSCNNUpsamplingNearest](./mpscnnupsamplingnearest.md)
   A nearest spatial upsampling filter.
-- [class MPSCNNUpsamplingBilinearGradient](mpscnnupsamplingbilineargradient.md)
+- [class MPSCNNUpsamplingBilinearGradient](./mpscnnupsamplingbilineargradient.md)
   A gradient bilinear spatial upsampling filter.
-- [class MPSCNNUpsamplingNearestGradient](mpscnnupsamplingnearestgradient.md)
+- [class MPSCNNUpsamplingNearestGradient](./mpscnnupsamplingnearestgradient.md)
   A gradient upsampling filter that samples the pixel nearest to the source when upsampling to the destination pixel.
 
 

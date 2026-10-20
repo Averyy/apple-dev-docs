@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message that describes the reason for the failure.
 
@@ -18,11 +19,12 @@ var failureReason: String? { get }
 
 ## See Also
 
-- [var errorCode: Int](financeerror/errorcode.md)
+### Instance Properties
+- [var errorCode: Int](./errorcode.md)
   The error code within the given domain.
-- [var errorDescription: String?](financeerror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized message that describes what error occurred.
-- [var errorUserInfo: [String : Any]](financeerror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](./erroruserinfo.md)
   The user-info dictionary that contains additional information about the error.
 
 

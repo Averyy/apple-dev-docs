@@ -1,7 +1,8 @@
 # kAXRadioButtonRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A radio button.
 
@@ -12,6 +13,10 @@ A radio button.
 
 ```swift
 var kAXRadioButtonRole: String { get }
+```
+
+```c
+#define kAXRadioButtonRole
 ```
 
 

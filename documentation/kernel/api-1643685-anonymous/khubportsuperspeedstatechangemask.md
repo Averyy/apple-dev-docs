@@ -1,14 +1,15 @@
 # kHubPortSuperSpeedStateChangeMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHubPortSuperSpeedStateChangeMask = (kHubPortConnection | kHubPortEnabled | kHubPortSuspend | kHubPortOverCurrent | kHubPortBeingReset | kSSHubPortStatusBeingResetMask | kSSHubPortChangePortLinkStateMask | kSSHubPortChangePortConfigErrMask)
 ```
 

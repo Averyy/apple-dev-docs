@@ -1,7 +1,8 @@
 # throttle(for:scheduler:latest:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes either the most-recent or first element published by the upstream publisher in the specified time interval.
 
@@ -22,7 +23,7 @@ func throttle<S>(for interval: S.SchedulerTimeType.Stride, scheduler: S, latest:
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 
 #### Return Value
 
@@ -30,9 +31,9 @@ A publisher that emits either the most-recent or first element received during t
 
 #### Discussion
 
-Use [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md) to selectively republish elements from an upstream publisher during an interval you specify. Other elements received from the upstream in the throttling interval aren’t republished.
+Use [`throttle(for:scheduler:latest:)`](./throttle%28for,scheduler,latest%29.md) to selectively republish elements from an upstream publisher during an interval you specify. Other elements received from the upstream in the throttling interval aren’t republished.
 
-In the example below, a [`Timer.TimerPublisher`](https://developer.apple.com/documentation/foundation/timer/timerpublisher) produces elements on one-second intervals; the [`throttle(for:scheduler:latest:)`](publisher/throttle(for:scheduler:latest:).md) operator delivers the first event, then republishes only the latest event in the following ten second intervals:
+In the example below, a [`Timer.TimerPublisher`](../../Foundation/timer/timerpublisher.md) produces elements on one-second intervals; the [`throttle(for:scheduler:latest:)`](./throttle%28for,scheduler,latest%29.md) operator delivers the first event, then republishes only the latest event in the following ten second intervals:
 
 ```swift
 cancellable = Timer.publish(every: 3.0, on: .main, in: .default)
@@ -62,13 +63,14 @@ cancellable = Timer.publish(every: 3.0, on: .main, in: .default)
 
 ## See Also
 
-- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](publisher/measureinterval(using:options:).md)
+### Controlling timing
+- [func measureInterval<S>(using: S, options: S.SchedulerOptions?) -> Publishers.MeasureInterval<Self, S>](./measureinterval%28using,options%29.md)
   Measures and emits the time interval between events received from an upstream publisher.
-- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](publisher/debounce(for:scheduler:options:).md)
+- [func debounce<S>(for: S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Debounce<Self, S>](./debounce%28for,scheduler,options%29.md)
   Publishes elements only after a specified time interval elapses between events.
-- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](publisher/delay(for:tolerance:scheduler:options:).md)
+- [func delay<S>(for: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride?, scheduler: S, options: S.SchedulerOptions?) -> Publishers.Delay<Self, S>](./delay%28for,tolerance,scheduler,options%29.md)
   Delays delivery of all output to the downstream receiver by a specified amount of time on a particular scheduler.
-- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](publisher/timeout(_:scheduler:options:customerror:).md)
+- [func timeout<S>(S.SchedulerTimeType.Stride, scheduler: S, options: S.SchedulerOptions?, customError: (() -> Self.Failure)?) -> Publishers.Timeout<Self, S>](./timeout%28_,scheduler,options,customerror%29.md)
   Terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 
 

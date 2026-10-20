@@ -1,7 +1,8 @@
 # access(_:keyPath:)
 
 **Framework**: Observation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers access to a specific property for observation.
 
@@ -27,7 +28,8 @@ func access<Subject, Member>(_ subject: Subject, keyPath: KeyPath<Subject, Membe
 
 ## See Also
 
-- [func withMutation<Subject, Member, T>(of: Subject, keyPath: KeyPath<Subject, Member>, () throws -> T) rethrows -> T](observationregistrar/withmutation(of:keypath:_:).md)
+### Identifying transactional access
+- [func withMutation<Subject, Member, T>(of: Subject, keyPath: KeyPath<Subject, Member>, () throws -> T) rethrows -> T](./withmutation%28of,keypath,_%29.md)
   Identifies mutations to the transactions registered for observers.
 
 

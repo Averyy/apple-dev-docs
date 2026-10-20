@@ -1,7 +1,8 @@
 # notificationID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification’s ID.
 
@@ -10,7 +11,7 @@ The notification’s ID.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -21,19 +22,24 @@ The notification’s ID.
 var notificationID: CKNotification.ID? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CKNotificationID * notificationID;
+```
+
 #### Discussion
 
 Use this property to differentiate notifications.
 
 ## See Also
 
-- [CKNotification.ID](cknotification/id.md)
+### Identifying the Notification
+- [CKNotification.ID](./id.md)
   An object that uniquely identifies a push notification that a container sends.
-- [var notificationType: CKNotification.NotificationType](cknotification/notificationtype-swift.property.md)
+- [var notificationType: CKNotification.NotificationType](./notificationtype-swift.property.md)
   The type of event that generates the notification.
-- [CKNotification.NotificationType](cknotification/notificationtype-swift.enum.md)
+- [CKNotification.NotificationType](./notificationtype-swift.enum.md)
   Constants that indicate the type of event that generates the push notification.
-- [var containerIdentifier: String?](cknotification/containeridentifier.md)
+- [var containerIdentifier: String?](./containeridentifier.md)
   The ID of the container with the content that triggers the notification.
 
 

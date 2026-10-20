@@ -1,7 +1,8 @@
 # observable
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the entity observable by Swift.
 

@@ -1,12 +1,13 @@
 # insertColor(_:key:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified color at the specified location in the color list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Inserts the specified color at the specified location in the color list.
 func insertColor(_ color: NSColor, key: NSColor.Name, at loc: Int)
 ```
 
+```objc
+- (void) insertColor:(NSColor *) color key:(NSColorName) key atIndex:(NSUInteger) loc;
+```
+
 #### Discussion
 
-If the list already contains a color with the same key at a different location, it’s removed from the old location. This method posts [`didChangeNotification`](nscolorlist/didchangenotification.md) to the default notification center. It raises `NSColorListNotEditableException` if the color list isn’t editable.
+If the list already contains a color with the same key at a different location, it’s removed from the old location. This method posts [`didChangeNotification`](./didchangenotification.md) to the default notification center. It raises `NSColorListNotEditableException` if the color list isn’t editable.
 
 ## Parameters
 
@@ -26,13 +31,14 @@ If the list already contains a color with the same key at a different location, 
 
 ## See Also
 
-- [var allKeys: [NSColor.Name]](nscolorlist/allkeys.md)
+### Managing Colors By Key
+- [var allKeys: [NSColor.Name]](./allkeys.md)
   An array of the keys by which the color objects are stored in the color list.
-- [func color(withKey: NSColor.Name) -> NSColor?](nscolorlist/color(withkey:).md)
+- [func color(withKey: NSColor.Name) -> NSColor?](./color%28withkey%29.md)
   Returns the color object associated with the specified key.
-- [func removeColor(withKey: NSColor.Name)](nscolorlist/removecolor(withkey:).md)
+- [func removeColor(withKey: NSColor.Name)](./removecolor%28withkey%29.md)
   Removes the color associated with the specified key from the color list.
-- [func setColor(NSColor, forKey: NSColor.Name)](nscolorlist/setcolor(_:forkey:).md)
+- [func setColor(NSColor, forKey: NSColor.Name)](./setcolor%28_,forkey%29.md)
   Associates the specified color object with the specified key.
 
 

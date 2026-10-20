@@ -1,7 +1,8 @@
 # UIScene.ActivationState.foregroundInactive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates that the scene is running in the foreground but is not receiving events.
 
@@ -18,17 +19,22 @@ A state that indicates that the scene is running in the foreground but is not re
 case foregroundInactive
 ```
 
+```c
+UISceneActivationStateForegroundInactive
+```
+
 #### Discussion
 
 A scene transits through the foreground-inactive state on its way to or from another state.
 
 ## See Also
 
-- [UIScene.ActivationState.unattached](uiscene/activationstate-swift.enum/unattached.md)
+### Scene States
+- [UIScene.ActivationState.unattached](./unattached.md)
   A state that indicates that the scene is not currently connected to your app.
-- [UIScene.ActivationState.foregroundActive](uiscene/activationstate-swift.enum/foregroundactive.md)
+- [UIScene.ActivationState.foregroundActive](./foregroundactive.md)
   A state that indicates that the scene is running in the foreground and is currently receiving events.
-- [UIScene.ActivationState.background](uiscene/activationstate-swift.enum/background.md)
+- [UIScene.ActivationState.background](./background.md)
   A state that indicates that the scene is running in the background and is not onscreen.
 
 

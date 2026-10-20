@@ -1,14 +1,15 @@
 # cache_line_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned long cache_line_size;
 ```
 

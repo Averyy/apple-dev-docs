@@ -1,7 +1,8 @@
 # postCode
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The postal code of the place.
 
@@ -10,7 +11,7 @@ The postal code of the place.
 
 ## Declaration
 
-```swift
+```
 postCode: string | null;
 ```
 

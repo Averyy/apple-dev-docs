@@ -1,23 +1,24 @@
 # AppAssetLibraryRefDatum.Attributes.VideoSpecs
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryRefDatum.Attributes.VideoSpecs
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.Dimensions](appassetlibraryrefdatum/attributes-data.dictionary/videospecs-data.dictionary/dimensions-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.Duration](appassetlibraryrefdatum/attributes-data.dictionary/videospecs-data.dictionary/duration-data.dictionary.md)
-- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.FrameRates](appassetlibraryrefdatum/attributes-data.dictionary/videospecs-data.dictionary/framerates-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.Dimensions](./videospecs-data.dictionary/dimensions-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.Duration](./videospecs-data.dictionary/duration-data.dictionary.md)
+- [object AppAssetLibraryRefDatum.Attributes.VideoSpecs.FrameRates](./videospecs-data.dictionary/framerates-data.dictionary.md)
 
 ## Properties
 
@@ -28,7 +29,7 @@ object AppAssetLibraryRefDatum.Attributes.VideoSpecs
 - `duration` (AppAssetLibraryRefDatum.Attributes.VideoSpecs.Duration)
 - `fileExtensions` ([string])
 - `frameRates` ([AppAssetLibraryRefDatum.Attributes.VideoSpecs.FrameRates])
-- `maxFileSize` (int64)
+- `maxFileSize` (int64): **Minimum**: `1`; **Maximum**: `9007199254740991`
 - `mimeTypes` ([string])
 - `shortName` (string)
 - `specId` (string)

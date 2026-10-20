@@ -1,7 +1,8 @@
 # lineCap
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use when drawing line endings.
 
@@ -10,7 +11,7 @@ The style to use when drawing line endings.
 
 ## Declaration
 
-```swift
+```
 get lineCap(): "square" | "butt" | "round";
 set lineCap(lineCap: "square" | "butt" | "round");
 ```
@@ -21,17 +22,18 @@ The three options for line endings are `butt` (squared-off ends), `round` (round
 
 ## See Also
 
-- [lineDash](style/linedash.md)
+### Styling lines
+- [lineDash](./linedash.md)
   An array of line and gap lengths for creating a dashed line.
-- [lineDashOffset](style/linedashoffset.md)
+- [lineDashOffset](./linedashoffset.md)
   The number of CSS pixels to use as an offset when drawing a line’s dash pattern.
-- [lineJoin](style/linejoin.md)
+- [lineJoin](./linejoin.md)
   The corner style to apply when joining line segments.
-- [lineWidth](style/linewidth.md)
+- [lineWidth](./linewidth.md)
   The width of a line’s stroke, in CSS pixels.
-- [lineGradient](style/linegradient.md)
+- [lineGradient](./linegradient.md)
   The gradient to apply along the line.
-- [class LineGradient](linegradient.md)
+- [class LineGradient](../linegradient.md)
   A line that displays with a gradient along the length of the line.
 
 

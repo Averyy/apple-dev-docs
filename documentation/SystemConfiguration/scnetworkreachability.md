@@ -1,17 +1,18 @@
 # SCNetworkReachability
 
 **Framework**: System Configuration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The handle to a network address or name.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,16 +20,21 @@ The handle to a network address or name.
 class SCNetworkReachability
 ```
 
+```c
+typedef const struct __SCNetworkReachability * SCNetworkReachabilityRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct SCNetworkReachabilityContext](scnetworkreachabilitycontext.md)
-  Structure containing user-specified data and callbacks used with [`SCNetworkReachabilitySetCallback(_:_:_:)`](scnetworkreachabilitysetcallback(_:_:_:).md).
+### Data Types
+- [struct SCNetworkReachabilityContext](./scnetworkreachabilitycontext.md)
+  Structure containing user-specified data and callbacks used with [`SCNetworkReachabilitySetCallback(_:_:_:)`](./scnetworkreachabilitysetcallback%28_,_,_%29.md).
 
 
 ---

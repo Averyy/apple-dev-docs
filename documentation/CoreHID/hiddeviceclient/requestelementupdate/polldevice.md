@@ -1,7 +1,8 @@
 # pollDevice
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the device should be polled for new updates.
 

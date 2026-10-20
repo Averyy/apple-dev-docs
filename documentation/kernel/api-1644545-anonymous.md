@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDPMSSyncOff](1644545-anonymous/kdpmssyncoff.md)
-- [kDPMSSyncOn](1644545-anonymous/kdpmssyncon.md)
-- [kDPMSSyncStandby](1644545-anonymous/kdpmssyncstandby.md)
-- [kDPMSSyncSuspend](1644545-anonymous/kdpmssyncsuspend.md)
+- [kDPMSSyncOff](./api-1644545-anonymous/kdpmssyncoff.md)
+- [kDPMSSyncOn](./api-1644545-anonymous/kdpmssyncon.md)
+- [kDPMSSyncStandby](./api-1644545-anonymous/kdpmssyncstandby.md)
+- [kDPMSSyncSuspend](./api-1644545-anonymous/kdpmssyncsuspend.md)
 
 
 ---

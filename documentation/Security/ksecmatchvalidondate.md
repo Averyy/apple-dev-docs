@@ -1,7 +1,8 @@
 # kSecMatchValidOnDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the validity date.
 
@@ -20,9 +21,13 @@ A key whose value indicates the validity date.
 let kSecMatchValidOnDate: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchValidOnDate;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFDate`](https://developer.apple.com/documentation/corefoundation/cfdate). If provided, returned keys, certificates or identities are limited to those that are valid for the given date. Pass a value of [`kCFNull`](https://developer.apple.com/documentation/corefoundation/kcfnull) to indicate the current date.
+The corresponding value is of type [`CFDate`](../CoreFoundation/cfdate.md). If provided, returned keys, certificates or identities are limited to those that are valid for the given date. Pass a value of [`kCFNull`](../CoreFoundation/kcfnull.md) to indicate the current date.
 
 
 ---

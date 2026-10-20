@@ -1,7 +1,8 @@
 # acceptCall()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts an incoming call.
 
@@ -14,11 +15,16 @@ Accepts an incoming call.
 func acceptCall()
 ```
 
+```objc
+- (void) acceptCall;
+```
+
 ## See Also
 
-- [func acceptCallOnPhone()](iobluetoothhandsfreedevice/acceptcallonphone.md)
+### Accepting Calls
+- [func acceptCallOnPhone()](./acceptcallonphone%28%29.md)
   Accepts an incoming call and transfers the audio to the managed hands-free phone or headset.
-- [func callTransfer()](iobluetoothhandsfreedevice/calltransfer.md)
+- [func callTransfer()](./calltransfer%28%29.md)
   Ends all calls that are active or on hold, and accepts any waiting calls.
 
 

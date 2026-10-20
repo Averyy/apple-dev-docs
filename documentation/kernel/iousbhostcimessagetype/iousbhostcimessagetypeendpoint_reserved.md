@@ -1,14 +1,15 @@
 # IOUSBHostCIMessageTypeEndpoint_reserved_
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIMessageTypeEndpoint_reserved_
 ```
 

@@ -1,7 +1,8 @@
 # textEditing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Placement for commands that manipulate and transform text selections.
 
@@ -30,11 +31,12 @@ By default, this group includes the following commands in macOS:
 
 ## See Also
 
-- [static let pasteboard: CommandGroupPlacement](commandgroupplacement/pasteboard.md)
+### Content updates
+- [static let pasteboard: CommandGroupPlacement](./pasteboard.md)
   Placement for commands that interact with the Clipboard and manipulate content that is currently selected in the app’s view hierarchy.
-- [static let textFormatting: CommandGroupPlacement](commandgroupplacement/textformatting.md)
+- [static let textFormatting: CommandGroupPlacement](./textformatting.md)
   Placement for commands that manipulate and transform the styles applied to text selections.
-- [static let undoRedo: CommandGroupPlacement](commandgroupplacement/undoredo.md)
+- [static let undoRedo: CommandGroupPlacement](./undoredo.md)
   Placement for commands that control the Undo Manager.
 
 

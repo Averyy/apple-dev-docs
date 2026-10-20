@@ -1,23 +1,28 @@
 # MKStringFromMapSize(_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a formatted string for the specified map size.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func MKStringFromMapSize(_ size: MKMapSize) -> String
+```
+
+```c
+static NSString *MKStringFromMapSize(MKMapSize size);
 ```
 
 #### Return Value

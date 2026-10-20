@@ -1,6 +1,8 @@
 # Annotating a Map with Custom Data
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: Sample Code  
+**Download**: [AnnotatingAMapWithCustomData.zip](https://docs-assets.developer.apple.com/published/a4bb22946fae/AnnotatingAMapWithCustomData.zip)
 
 Annotate a map with location-specific data using default and customized annotation views and callouts.
 
@@ -12,7 +14,7 @@ Annotate a map with location-specific data using default and customized annotati
 
 #### Overview
 
-This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its [`MKAnnotationView`](mkannotationview.md). In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using [`MKAnnotation`](mkannotation.md) and [`MKAnnotationView`](mkannotationview.md).
+This sample code project demonstrates how to display a map with custom annotations, each with a customized callout provided by its [`MKAnnotationView`](./mkannotationview.md). In addition, the Map Callouts sample project shows how you can extend annotations with custom views, strings, and callout accessory views using [`MKAnnotation`](./mkannotation.md) and [`MKAnnotationView`](./mkannotationview.md).
 
 ##### Provide an Annotation
 
@@ -20,7 +22,7 @@ Annotations offer a way to highlight specific coordinates on a map and provide a
 
 To display an annotation on a map, your app must provide two distinct objects: an annotation object and an annotation view.
 
-An annotation object conforms to the `MKAnnotation` protocol and manages the data for the annotation, such as the [`coordinate`](mkannotation/coordinate.md), [`title`](mkannotation/title.md), and [`subtitle`](mkannotation/subtitle.md) properties as shown in this section of the sample code.
+An annotation object conforms to the `MKAnnotation` protocol and manages the data for the annotation, such as the [`coordinate`](./mkannotation/coordinate.md), [`title`](./mkannotation/title.md), and [`subtitle`](./mkannotation/subtitle.md) properties as shown in this section of the sample code.
 
 ```swift
 class SanFranciscoAnnotation: NSObject, MKAnnotation {
@@ -47,7 +49,7 @@ private func registerMapAnnotationViews() {
 }
 ```
 
-When an annotation comes into view, the map view asks the [`MKMapViewDelegate`](mkmapviewdelegate.md) to provide the appropriate annotation view.
+When an annotation comes into view, the map view asks the [`MKMapViewDelegate`](./mkmapviewdelegate.md) to provide the appropriate annotation view.
 
 ```swift
 func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -108,9 +110,9 @@ let rightButton = UIButton(type: .detailDisclosure)
 markerAnnotationView.rightCalloutAccessoryView = rightButton
 ```
 
-When the disclosure button is tapped, MapKit calls [`mapView(_:annotationView:calloutAccessoryControlTapped:)`](mkmapviewdelegate/mapview(_:annotationview:calloutaccessorycontroltapped:).md) for the app to handle the tap event.
+When the disclosure button is tapped, MapKit calls [`mapView(_:annotationView:calloutAccessoryControlTapped:)`](./mkmapviewdelegate/mapview%28_,annotationview,calloutaccessorycontroltapped%29.md) for the app to handle the tap event.
 
-Callouts can also include images, such as the [`detailCalloutAccessoryView`](mkannotationview/detailcalloutaccessoryview.md):
+Callouts can also include images, such as the [`detailCalloutAccessoryView`](./mkannotationview/detailcalloutaccessoryview.md):
 
 ```swift
 // Provide an image view to use as the accessory view's detail view.
@@ -119,13 +121,14 @@ markerAnnotationView.detailCalloutAccessoryView = UIImageView(image: #imageLiter
 
 ## See Also
 
-- [class MKPointAnnotation](mkpointannotation.md)
+### Location annotations
+- [class MKPointAnnotation](./mkpointannotation.md)
   A string-based piece of location-specific data that you apply to a specific point on a map.
-- [class MKMapItemAnnotation](mkmapitemannotation.md)
+- [class MKMapItemAnnotation](./mkmapitemannotation.md)
   An annotation that represents a map item
-- [class MKMarkerAnnotationView](mkmarkerannotationview.md)
+- [class MKMarkerAnnotationView](./mkmarkerannotationview.md)
   An annotation view that displays a balloon-shaped marker at the designated location.
-- [class MKPinAnnotationView](mkpinannotationview.md)
+- [class MKPinAnnotationView](./mkpinannotationview.md)
   An annotation view that displays a pin image on the map.
 
 

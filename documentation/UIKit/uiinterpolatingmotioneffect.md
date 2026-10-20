@@ -1,7 +1,8 @@
 # UIInterpolatingMotionEffect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that maps the horizontal or vertical tilt of a device to values that you specify so that UIKit can apply those values to your views.
 
@@ -9,7 +10,7 @@ An object that maps the horizontal or vertical tilt of a device to values that y
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,47 +20,52 @@ An object that maps the horizontal or vertical tilt of a device to values that y
 class UIInterpolatingMotionEffect
 ```
 
+```objc
+@interface UIInterpolatingMotionEffect : UIMotionEffect
+```
+
 #### Overview
 
-You use this class to determine the amount of tilt along a single axis to apply to a view. After creating an instance of this class, you must assign appropriate values to the [`minimumRelativeValue`](uiinterpolatingmotioneffect/minimumrelativevalue.md) and [`maximumRelativeValue`](uiinterpolatingmotioneffect/maximumrelativevalue.md) properties. As the user moves the device, the motion effect object translates the fixed offset values returned by the system (which are in the range `-1` to `1`) to the range of values you specified. UIKit then applies the translated values to any target views.
+You use this class to determine the amount of tilt along a single axis to apply to a view. After creating an instance of this class, you must assign appropriate values to the [`minimumRelativeValue`](./uiinterpolatingmotioneffect/minimumrelativevalue.md) and [`maximumRelativeValue`](./uiinterpolatingmotioneffect/maximumrelativevalue.md) properties. As the user moves the device, the motion effect object translates the fixed offset values returned by the system (which are in the range `-1` to `1`) to the range of values you specified. UIKit then applies the translated values to any target views.
 
 ## Topics
 
 ### Initializing a motion effect
-- [init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)](uiinterpolatingmotioneffect/init(keypath:type:).md)
+- [init(keyPath: String, type: UIInterpolatingMotionEffect.EffectType)](./uiinterpolatingmotioneffect/init%28keypath,type%29.md)
   Initializes and returns an interpolating motion effect object configured for the specific tilt direction.
-- [init?(coder: NSCoder)](uiinterpolatingmotioneffect/init(coder:).md)
+- [init?(coder: NSCoder)](./uiinterpolatingmotioneffect/init%28coder%29.md)
   Creates a motion effect from data in an unarchiver.
 ### Accessing the motion attributes
-- [var keyPath: String](uiinterpolatingmotioneffect/keypath.md)
+- [var keyPath: String](./uiinterpolatingmotioneffect/keypath.md)
   The key path you want to modify on the view.
-- [var type: UIInterpolatingMotionEffect.EffectType](uiinterpolatingmotioneffect/type.md)
+- [var type: UIInterpolatingMotionEffect.EffectType](./uiinterpolatingmotioneffect/type.md)
   The tilt direction to monitor.
-- [var minimumRelativeValue: Any?](uiinterpolatingmotioneffect/minimumrelativevalue.md)
+- [var minimumRelativeValue: Any?](./uiinterpolatingmotioneffect/minimumrelativevalue.md)
   The value that maps to the minimum viewer offset.
-- [var maximumRelativeValue: Any?](uiinterpolatingmotioneffect/maximumrelativevalue.md)
+- [var maximumRelativeValue: Any?](./uiinterpolatingmotioneffect/maximumrelativevalue.md)
   The value that maps to the maximum viewer offset.
 ### Constants
-- [UIInterpolatingMotionEffect.EffectType](uiinterpolatingmotioneffect/effecttype.md)
+- [UIInterpolatingMotionEffect.EffectType](./uiinterpolatingmotioneffect/effecttype.md)
   The axis to use when interpolating values.
 
 ## Relationships
 
 ### Inherits From
-- [UIMotionEffect](uimotioneffect.md)
+- [UIMotionEffect](./uimotioneffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIMotionEffectGroup](uimotioneffectgroup.md)
+### View-based effects
+- [class UIMotionEffectGroup](./uimotioneffectgroup.md)
   A collection of motion effects that you want to apply to a view at the same time.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the shaped array.
 
@@ -19,6 +20,8 @@ A text representation of the shaped array.
 ```swift
 var description: String { get }
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
 
 ---

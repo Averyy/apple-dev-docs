@@ -1,7 +1,8 @@
 # VNDetectHumanRectanglesRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that finds rectangular regions that contain people in an image.
 
@@ -19,44 +20,49 @@ A request that finds rectangular regions that contain people in an image.
 class VNDetectHumanRectanglesRequest
 ```
 
+```objc
+@interface VNDetectHumanRectanglesRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Configuring the Request
-- [var upperBodyOnly: Bool](vndetecthumanrectanglesrequest/upperbodyonly.md)
+- [var upperBodyOnly: Bool](./vndetecthumanrectanglesrequest/upperbodyonly.md)
   A Boolean value that indicates whether the request requires detecting a full body or upper body only to produce a result.
 ### Accessing the Results
-- [var results: [VNHumanObservation]?](vndetecthumanrectanglesrequest/results.md)
+- [var results: [VNHumanObservation]?](./vndetecthumanrectanglesrequest/results.md)
   The results of the request to find rectangular regions that contain people in an image.
 ### Identifying Request Revisions
-- [var VNDetectHumanRectanglesRequestRevision2: Int](vndetecthumanrectanglesrequestrevision2.md)
+- [var VNDetectHumanRectanglesRequestRevision2: Int](./vndetecthumanrectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the human rectangles detection request.
-- [var VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
+- [var VNDetectHumanRectanglesRequestRevision1: Int](./vndetecthumanrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the human rectangles detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Selecting a selfie based on capture quality](selecting-a-selfie-based-on-capture-quality.md)
+### Face and body detection
+- [Selecting a selfie based on capture quality](./selecting-a-selfie-based-on-capture-quality.md)
   Compare face-capture quality in a set of images by using Vision.
-- [class VNDetectFaceCaptureQualityRequest](vndetectfacecapturequalityrequest.md)
+- [class VNDetectFaceCaptureQualityRequest](./vndetectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
-- [class VNDetectFaceLandmarksRequest](vndetectfacelandmarksrequest.md)
+- [class VNDetectFaceLandmarksRequest](./vndetectfacelandmarksrequest.md)
   An image-analysis request that finds facial features like eyes and mouth in an image.
-- [class VNDetectFaceRectanglesRequest](vndetectfacerectanglesrequest.md)
+- [class VNDetectFaceRectanglesRequest](./vndetectfacerectanglesrequest.md)
   A request that finds faces within an image.
-- [class VNHumanObservation](vnhumanobservation.md)
+- [class VNHumanObservation](./vnhumanobservation.md)
   An object that represents a person that the request detects.
 
 

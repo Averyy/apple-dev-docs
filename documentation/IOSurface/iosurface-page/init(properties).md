@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: IOSurface  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init?(properties: [IOSurfacePropertyKey : any Sendable])
+```
+
+```objc
+- (instancetype) initWithProperties:(NSDictionary<NSString *,id> *) properties;
 ```
 
 

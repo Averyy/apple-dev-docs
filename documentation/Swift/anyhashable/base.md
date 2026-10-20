@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value wrapped by this instance.
 

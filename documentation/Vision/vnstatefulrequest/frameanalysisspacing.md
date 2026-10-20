@@ -1,7 +1,8 @@
 # frameAnalysisSpacing
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time value that indicates the interval between analysis operations.
 
@@ -19,9 +20,14 @@ A time value that indicates the interval between analysis operations.
 var frameAnalysisSpacing: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime frameAnalysisSpacing;
+```
+
 ## See Also
 
-- [var minimumLatencyFrameCount: Int](vnstatefulrequest/minimumlatencyframecount.md)
+### Configuring the Request
+- [var minimumLatencyFrameCount: Int](./minimumlatencyframecount.md)
   The minimum number of frames a request processes before reporting an observation.
 
 

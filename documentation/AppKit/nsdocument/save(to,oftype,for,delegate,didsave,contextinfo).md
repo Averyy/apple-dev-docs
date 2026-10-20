@@ -1,17 +1,22 @@
 # save(to:ofType:for:delegate:didSave:contextInfo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the contents of the document to a file or file package located by a URL, that is formatted to a specified type, for a particular kind of save operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func save(to url: URL, ofType typeName: String, for saveOperation: NSDocument.SaveOperationType, delegate: Any?, didSave didSaveSelector: Selector?, contextInfo: UnsafeMutableRawPointer?)
+```
+
+```objc
+- (void) saveToURL:(NSURL *) url ofType:(NSString *) typeName forSaveOperation:(NSSaveOperationType) saveOperation delegate:(id) delegate didSaveSelector:(SEL) didSaveSelector contextInfo:(void *) contextInfo;
 ```
 
 #### Discussion
@@ -22,7 +27,7 @@ When saving is completed, regardless of success or failure, the method sends the
 - (void)document:(NSDocument *)document didSave:(BOOL)didSaveSuccessfully  contextInfo:(void  *)contextInfo;
 ```
 
-The default implementation of this method invokes `[self saveToURL:absoluteURL ofType:typeName forSaveOperation:saveOperation error:&anError]` and, if [`false`](https://developer.apple.com/documentation/swift/false) is returned, presents the error to the user in a document-modal panel before messaging the delegate.
+The default implementation of this method invokes `[self saveToURL:absoluteURL ofType:typeName forSaveOperation:saveOperation error:&anError]` and, if [`false`](../../Swift/false.md) is returned, presents the error to the user in a document-modal panel before messaging the delegate.
 
 ## Parameters
 
@@ -35,25 +40,26 @@ The default implementation of this method invokes `[self saveToURL:absoluteURL o
 
 ## See Also
 
-- [func canAsynchronouslyWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType) -> Bool](nsdocument/canasynchronouslywrite(to:oftype:for:).md)
+### Writing the Document’s Content
+- [func canAsynchronouslyWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType) -> Bool](./canasynchronouslywrite%28to,oftype,for%29.md)
   Returns whether the receiver can concurrently write to a file or file package located by a URL, that is formatted for a specific type, for a specific kind of save operation.
-- [func unblockUserInteraction()](nsdocument/unblockuserinteraction.md)
+- [func unblockUserInteraction()](./unblockuserinteraction%28%29.md)
   Unblocks the main thread during asynchronous saving.
-- [func write(to: URL, ofType: String) throws](nsdocument/write(to:oftype:).md)
+- [func write(to: URL, ofType: String) throws](./write%28to,oftype%29.md)
   Writes the contents of the document to a file or file package located by a URL, that is formatted to a specified type.
-- [func writeSafely(to: URL, ofType: String, for: NSDocument.SaveOperationType) throws](nsdocument/writesafely(to:oftype:for:).md)
+- [func writeSafely(to: URL, ofType: String, for: NSDocument.SaveOperationType) throws](./writesafely%28to,oftype,for%29.md)
   Writes the contents of the document to a file or file package located by a URL.
-- [func fileWrapper(ofType: String) throws -> FileWrapper](nsdocument/filewrapper(oftype:).md)
+- [func fileWrapper(ofType: String) throws -> FileWrapper](./filewrapper%28oftype%29.md)
   Creates and returns a file wrapper that contains the contents of the document, formatted to the specified type.
-- [func data(ofType: String) throws -> Data](nsdocument/data(oftype:).md)
+- [func data(ofType: String) throws -> Data](./data%28oftype%29.md)
   Creates and returns a data object that contains the contents of the document, formatted to a specified type.
-- [func write(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws](nsdocument/write(to:oftype:for:originalcontentsurl:).md)
+- [func write(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws](./write%28to,oftype,for,originalcontentsurl%29.md)
   Writes the contents of the document to a file or file package located by a URL.
-- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, completionHandler: ((any Error)?) -> Void)](nsdocument/save(to:oftype:for:completionhandler:).md)
+- [func save(to: URL, ofType: String, for: NSDocument.SaveOperationType, completionHandler: ((any Error)?) -> Void)](./save%28to,oftype,for,completionhandler%29.md)
   Saves the contents of the document to a file or file package located by a URL, that is formatted to a specified type, for a particular kind of save operation, and invokes the passed-in completion handler.
-- [func fileAttributesToWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws -> [String : Any]](nsdocument/fileattributestowrite(to:oftype:for:originalcontentsurl:).md)
+- [func fileAttributesToWrite(to: URL, ofType: String, for: NSDocument.SaveOperationType, originalContentsURL: URL?) throws -> [String : Any]](./fileattributestowrite%28to,oftype,for,originalcontentsurl%29.md)
   Returns the attributes to write to the file or file package at the specified URL, and targeting the specified type of save operation.
-- [NSDocument.SaveOperationType](nsdocument/saveoperationtype.md)
+- [NSDocument.SaveOperationType](./saveoperationtype.md)
   Constants for specifying the type of document-save operation to perform.
 
 

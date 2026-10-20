@@ -1,7 +1,8 @@
 # CSIdentityGetEmailAddress(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityGetEmailAddress(_ identity: CSIdentity!) -> Unmanaged<CFString>!
+```
+
+```c
+CFStringRef CSIdentityGetEmailAddress(CSIdentityRef identity);
 ```
 
 

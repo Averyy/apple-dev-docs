@@ -1,7 +1,8 @@
 # list
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Show the notification in Notification Center.
 
@@ -20,15 +21,20 @@ Show the notification in Notification Center.
 static var list: UNNotificationPresentationOptions { get }
 ```
 
+```c
+UNNotificationPresentationOptionList
+```
+
 ## See Also
 
-- [static var badge: UNNotificationPresentationOptions](unnotificationpresentationoptions/badge.md)
+### Constants
+- [static var badge: UNNotificationPresentationOptions](./badge.md)
   Apply the notification’s badge value to the app’s icon.
-- [static var banner: UNNotificationPresentationOptions](unnotificationpresentationoptions/banner.md)
+- [static var banner: UNNotificationPresentationOptions](./banner.md)
   Present the notification as a banner.
-- [static var sound: UNNotificationPresentationOptions](unnotificationpresentationoptions/sound.md)
+- [static var sound: UNNotificationPresentationOptions](./sound.md)
   Play the sound associated with the notification.
-- [static var alert: UNNotificationPresentationOptions](unnotificationpresentationoptions/alert.md)
+- [static var alert: UNNotificationPresentationOptions](./alert.md)
   Display the alert using the content provided by the notification.
 
 

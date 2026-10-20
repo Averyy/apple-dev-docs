@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Compute Graph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the node associated with the given key.
 
@@ -12,7 +13,7 @@ Accesses the node associated with the given key.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

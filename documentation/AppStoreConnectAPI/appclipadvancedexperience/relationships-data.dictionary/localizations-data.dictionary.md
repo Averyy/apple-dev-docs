@@ -1,7 +1,8 @@
 # AppClipAdvancedExperience.Relationships.Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data, links, and paging information that describe the relationship between the Advanced App Clip Experiences and the Localizations resources.
 
@@ -10,14 +11,14 @@ The data, links, and paging information that describe the relationship between t
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperience.Relationships.Localizations
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperience.Relationships.Localizations.Data](appclipadvancedexperience/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+- [object AppClipAdvancedExperience.Relationships.Localizations.Data](./localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Localizations resource.
 
 ## Properties
@@ -27,9 +28,10 @@ object AppClipAdvancedExperience.Relationships.Localizations
 
 ## See Also
 
-- [object AppClipAdvancedExperience.Relationships.AppClip](appclipadvancedexperience/relationships-data.dictionary/appclip-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperience.Relationships.AppClip](./appclip-data.dictionary.md)
   The data and links that describe the relationship between the Advanced App Clip Experiences and the App Clips resources.
-- [object AppClipAdvancedExperience.Relationships.HeaderImage](appclipadvancedexperience/relationships-data.dictionary/headerimage-data.dictionary.md)
+- [object AppClipAdvancedExperience.Relationships.HeaderImage](./headerimage-data.dictionary.md)
   The data and links that describe the relationship between the Advanced App Clip Experiences and the App Clip Header Images resources.
 
 

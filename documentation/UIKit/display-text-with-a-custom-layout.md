@@ -1,6 +1,8 @@
 # Display text with a custom layout
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [DisplayTextWithACustomLayout.zip](https://docs-assets.developer.apple.com/published/c94cdd160e47/DisplayTextWithACustomLayout.zip)
 
 Lay out text in a custom-shaped container and apply glyph substitutions.
 
@@ -14,9 +16,9 @@ Lay out text in a custom-shaped container and apply glyph substitutions.
 
 Some apps, such as book and magazine readers, text editors, and games, may need to lay out their text in a way that better fits their app style. TextKit provides a set of APIs for these apps to implement a custom text layout. This sample demonstrates how to use the APIs to display text in a circular container and in a two-column container, how to set up an exclusive area for a text container, and how to substitute a glyph without changing the text storage.
 
-##### Implement a Custom Shaped Text Container
+##### Implement a custom-shaped text container
 
-When laying out a line of text, TextKit calls the  [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](nstextcontainer/linefragmentrect(forproposedrect:at:writingdirection:remaining:).md) method from [`NSTextContainer`](nstextcontainer.md) to determine the position and size of the line, which TextKit calls a *line fragment rectangle*. By creating a subclass of `NSTextContainer` to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container.
+When laying out a line of text, TextKit calls the  [`lineFragmentRect(forProposedRect:at:writingDirection:remaining:)`](./nstextcontainer/linefragmentrect%28forproposedrect,at,writingdirection,remaining%29.md) method from [`NSTextContainer`](./nstextcontainer.md) to determine the position and size of the line, which TextKit calls a *line fragment rectangle*. By creating a subclass of `NSTextContainer` to return a custom line fragment rectangle in the method, apps can implement a custom-shaped text container.
 
 This sample uses the `CircleTextContainer` class to implement a circular text container. To calculate a line fragment rectangle that fits in the inscribed circle of the container’s bounds, the class calls the implementation of `super` to retrieve the default rectangle, then adjusts its `origin.x` and `width` according to the current line origin and container size.
 
@@ -46,9 +48,9 @@ override func lineFragmentRect(forProposedRect proposedRect: CGRect,
 }
 ```
 
-##### Lay Out Text with a Custom Text Container
+##### Lay out text with a custom text container
 
-To lay out text with a custom text container, apps simply set up a text view with the container, and let TextKit do the rest. The  [`init(frame:textContainer:)`](uitextview/init(frame:textcontainer:).md) method from [`UITextView`](uitextview.md) serves this purpose, and this sample uses it to create a `UITextView` instance with its circular text container.
+To lay out text with a custom text container, apps simply set up a text view with the container, and let TextKit do the rest. The  [`init(frame:textContainer:)`](./uitextview/init%28frame,textcontainer%29.md) method from [`UITextView`](./uitextview.md) serves this purpose, and this sample uses it to create a `UITextView` instance with its circular text container.
 
 ```swift
 let textContainer = CircleTextContainer(size: .zero)
@@ -61,7 +63,7 @@ textStorage.addLayoutManager(layoutManager)
 textView = UITextView(frame: CGRect.zero, textContainer: textContainer)
 ```
 
-With this configuration, the TextKit class that coordinates the layout and display of characters,  [`NSLayoutManager`](nslayoutmanager.md), automatically uses the line fragment rectangles that `CircleTextContainer` returns to lay out the text.
+With this configuration, the TextKit class that coordinates the layout and display of characters,  [`NSLayoutManager`](./nslayoutmanager.md), automatically uses the line fragment rectangles that `CircleTextContainer` returns to lay out the text.
 
 `NSLayoutManager` supports laying out text in multiple text containers, so implementing a two-column layout is as easy as adding a second text container to the layout manager, as the code below shows:
 
@@ -92,23 +94,23 @@ view.addSubview(secondTextView)
 
 Note that after adding a second text container to the layout manager, the text views become uneditable and unselectable.
 
-##### Reserve an Area in a Text Container
+##### Reserve an area in a text container
 
-To create an appealing UI, some apps may have their text wrap around a certain shape. They can achieve that by using the [`exclusionPaths`](nstextcontainer/exclusionpaths.md) property from `NSTextContainer` to reserve an exclusive area for the shape in a text container.
+To create an appealing UI, some apps may have their text wrap around a certain shape. They can achieve that by using the [`exclusionPaths`](./nstextcontainer/exclusionpaths.md) property from `NSTextContainer` to reserve an exclusive area for the shape in a text container.
 
-This sample uses the following code to set up an exclusive area where `translatedCirclePath` is a [`UIBezierPath`](uibezierpath.md) instance using the text container’s coordinate system.
+This sample uses the following code to set up an exclusive area where `translatedCirclePath` is a [`UIBezierPath`](./uibezierpath.md) instance using the text container’s coordinate system.
 
 ```swift
 textView.textContainer.exclusionPaths = [translatedCirclePath]
 ```
 
-##### Substitute Glyphs Without Changing the Text Storage
+##### Substitute glyphs without changing the text storage
 
-When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or *overflow*, text. A standard text container can use the  [`lineBreakMode`](nstextcontainer/linebreakmode.md) property from  `NSTextContainer` to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like `CircleTextContainer`.
+When a text container doesn’t have enough space to display text, apps may need a way to indicate that the container has additional, or *overflow*, text. A standard text container can use the  [`lineBreakMode`](./nstextcontainer/linebreakmode.md) property from  `NSTextContainer` to add an ending ellipsis that helps handle this situation, but the property doesn’t completely support custom-shaped containers like `CircleTextContainer`.
 
 To show an overflow indicator in its circular text container, as well as to demonstrate TextKit’s capability of glyph substitutions and layout adjustment, this sample substitutes the glyphs of the container’s ending characters with an ellipsis, and makes it the container’s last visible glyph.
 
-The ending characters are the characters of the last words with a total width that is larger than an ellipsis. The characters have to be wider so that the text container has enough space to display the ellipsis. However, because they are wider, the text container has extra space after the glyph substitution, which can drag in more characters. To avoid showing text after the ellipsis, this sample implements a second glyph substitution by selecting the character next to the container’s last word, and substituting it with a control glyph that uses the  [`whitespace`](nslayoutmanager/controlcharacteraction/whitespace.md) action. Using this substitution, the character becomes a whitespace with a width that is flexible. With this flexible space character, the sample can fill up the extra space and push the extra characters to the next line, and then move the line out of the text container.
+The ending characters are the characters of the last words with a total width that is larger than an ellipsis. The characters have to be wider so that the text container has enough space to display the ellipsis. However, because they are wider, the text container has extra space after the glyph substitution, which can drag in more characters. To avoid showing text after the ellipsis, this sample implements a second glyph substitution by selecting the character next to the container’s last word, and substituting it with a control glyph that uses the  [`whitespace`](./nslayoutmanager/controlcharacteraction/whitespace.md) action. Using this substitution, the character becomes a whitespace with a width that is flexible. With this flexible space character, the sample can fill up the extra space and push the extra characters to the next line, and then move the line out of the text container.
 
 The detailed implementation of the glyphs substitutions and the layout adjustment is as follows:
 
@@ -121,7 +123,7 @@ layoutManager.invalidateLayout(forCharacterRange: endingWordsCharRange,
                                actualCharacterRange: nil)
 ```
 
-- Implement the  [`layoutManager(_:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:)`](nslayoutmanagerdelegate/layoutmanager(_:shouldgenerateglyphs:properties:characterindexes:font:forglyphrange:).md) method from [`NSLayoutManagerDelegate`](nslayoutmanagerdelegate.md) to substitute the glyphs. TextKit calls this delegate method before storing the glyphs to give apps an opportunity to change the glyphs and their properties.
+- Implement the  [`layoutManager(_:shouldGenerateGlyphs:properties:characterIndexes:font:forGlyphRange:)`](./nslayoutmanagerdelegate/layoutmanager%28_,shouldgenerateglyphs,properties,characterindexes,font,forglyphrange%29.md) method from [`NSLayoutManagerDelegate`](./nslayoutmanagerdelegate.md) to substitute the glyphs. TextKit calls this delegate method before storing the glyphs to give apps an opportunity to change the glyphs and their properties.
 
 ```swift
 let ellipsisStartIndex = ellipsisIntersection.location
@@ -138,7 +140,7 @@ for index in  flexibleSpaceStartIndex..<flexibleSpaceStartIndex + flexibleSpaceI
 }
 ```
 
-- Implement the  [`layoutManager(_:shouldUse:forControlCharacterAt:)`](nslayoutmanagerdelegate/layoutmanager(_:shoulduse:forcontrolcharacterat:).md) method to return the  `NSLayoutManager.ControlCharacterAction.whitespace` action for the flexible space character.
+- Implement the  [`layoutManager(_:shouldUse:forControlCharacterAt:)`](./nslayoutmanagerdelegate/layoutmanager%28_,shoulduse,forcontrolcharacterat%29.md) method to return the  `NSLayoutManager.ControlCharacterAction.whitespace` action for the flexible space character.
 
 ```swift
 func layoutManager(_ layoutManager: NSLayoutManager, shouldUse action: NSLayoutManager.ControlCharacterAction,
@@ -151,7 +153,7 @@ func layoutManager(_ layoutManager: NSLayoutManager, shouldUse action: NSLayoutM
 }
 ```
 
-- Implement the  [`layoutManager(_:boundingBoxForControlGlyphAt:for:proposedLineFragment:glyphPosition:characterIndex:)`](nslayoutmanagerdelegate/layoutmanager(_:boundingboxforcontrolglyphat:for:proposedlinefragment:glyphposition:characterindex:).md) method to return a bounding box that can fill up the current line fragment rectangle.
+- Implement the  [`layoutManager(_:boundingBoxForControlGlyphAt:for:proposedLineFragment:glyphPosition:characterIndex:)`](./nslayoutmanagerdelegate/layoutmanager%28_,boundingboxforcontrolglyphat,for,proposedlinefragment,glyphposition,characterindex%29.md) method to return a bounding box that can fill up the current line fragment rectangle.
 
 ```swift
 func layoutManager(_ layoutManager: NSLayoutManager,
@@ -171,7 +173,7 @@ func layoutManager(_ layoutManager: NSLayoutManager,
 }
 ```
 
-- Implement the  [`layoutManager(_:shouldSetLineFragmentRect:lineFragmentUsedRect:baselineOffset:in:forGlyphRange:)`](nslayoutmanagerdelegate/layoutmanager(_:shouldsetlinefragmentrect:linefragmentusedrect:baselineoffset:in:forglyphrange:).md) method to move the extra line out of the text container.
+- Implement the  [`layoutManager(_:shouldSetLineFragmentRect:lineFragmentUsedRect:baselineOffset:in:forGlyphRange:)`](./nslayoutmanagerdelegate/layoutmanager%28_,shouldsetlinefragmentrect,linefragmentusedrect,baselineoffset,in,forglyphrange%29.md) method to move the extra line out of the text container.
 
 ```swift
 func layoutManager(_ layoutManager: NSLayoutManager,
@@ -192,25 +194,26 @@ func layoutManager(_ layoutManager: NSLayoutManager,
 
 ## See Also
 
-- [Using TextKit 2 to interact with text](using-textkit-2-to-interact-with-text.md)
+### Layout
+- [Using TextKit 2 to interact with text](./using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
-- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+- [Managing viewport layout and attachment reuse in text views](./managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
   Customize layout and preserve attachment views in your text view subclass.
-- [class NSTextLayoutManager](nstextlayoutmanager.md)
+- [class NSTextLayoutManager](./nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
-- [class NSTextContainer](nstextcontainer.md)
+- [class NSTextContainer](./nstextcontainer.md)
   A region where text layout occurs.
-- [class NSTextLayoutFragment](nstextlayoutfragment.md)
+- [class NSTextLayoutFragment](./nstextlayoutfragment.md)
   A class that represents the layout fragment typically corresponding to a rendering surface, such as a layer or view subclass.
-- [class NSTextLineFragment](nstextlinefragment.md)
+- [class NSTextLineFragment](./nstextlinefragment.md)
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
-- [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
+- [class NSTextViewportLayoutController](./nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
-- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+- [protocol NSTextViewportRenderingSurface](./nstextviewportrenderingsurface.md)
   A protocol that identifies a view or layer as a drawable element for a text layout fragment.
-- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+- [protocol NSTextViewportRenderingSurfaceKey](./nstextviewportrenderingsurfacekey.md)
   A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
-- [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
+- [protocol NSTextLayoutOrientationProvider](./nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 
 

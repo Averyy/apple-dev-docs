@@ -1,7 +1,8 @@
 # DropSession
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a drop that is in progress.
 
@@ -20,7 +21,7 @@ struct DropSession
 
 #### Overview
 
-Read [`location`](dropsession/location.md) to find where the drop landed, [`itemsCount`](dropsession/itemscount.md) for how many items it carries, and [`phase`](dropsession/phase-swift.property.md) to follow the drag through its lifecycle.
+Read [`location`](./dropsession/location.md) to find where the drop landed, [`itemsCount`](./dropsession/itemscount.md) for how many items it carries, and [`phase`](./dropsession/phase-swift.property.md) to follow the drag through its lifecycle.
 
 The following example animates a drop at the point of the drop:
 
@@ -32,51 +33,52 @@ Color.pink
     }
 ```
 
-To follow a drag while its phases change, apply [`onDropSessionUpdated(_:)`](view/ondropsessionupdated(_:).md).
+To follow a drag while its phases change, apply [`onDropSessionUpdated(_:)`](./view/ondropsessionupdated%28_%29.md).
 
-Use [`localSession`](dropsession/localsession-swift.property.md) to recognize a drag that started inside your own app. It is `nil` for a drag that came from elsewhere.
+Use [`localSession`](./dropsession/localsession-swift.property.md) to recognize a drag that started inside your own app. It is `nil` for a drag that came from elsewhere.
 
 ## Topics
 
 ### Getting drop session details
-- [var id: DropSession.ID](dropsession/id-swift.property.md)
+- [var id: DropSession.ID](./dropsession/id-swift.property.md)
   The unique identifier of the drop session.
-- [DropSession.ID](dropsession/id-swift.struct.md)
+- [DropSession.ID](./dropsession/id-swift.struct.md)
   The identifier of a drag session.
-- [var localSession: DropSession.LocalSession?](dropsession/localsession-swift.property.md)
+- [var localSession: DropSession.LocalSession?](./dropsession/localsession-swift.property.md)
   Provides additional information about a session if it originated within the app.
-- [DropSession.LocalSession](dropsession/localsession-swift.struct.md)
+- [DropSession.LocalSession](./dropsession/localsession-swift.struct.md)
   Describes the session originated within the app.
-- [var phase: DropSession.Phase](dropsession/phase-swift.property.md)
+- [var phase: DropSession.Phase](./dropsession/phase-swift.property.md)
   The phase of the current drop session.
-- [DropSession.Phase](dropsession/phase-swift.enum.md)
+- [DropSession.Phase](./dropsession/phase-swift.enum.md)
   The phase of the current drop session.
-- [var suggestedOperations: DropOperation.Set](dropsession/suggestedoperations.md)
+- [var suggestedOperations: DropOperation.Set](./dropsession/suggestedoperations.md)
   Operations suggested by the drag source.
 ### Getting drop details
-- [var itemsCount: Int](dropsession/itemscount.md)
+- [var itemsCount: Int](./dropsession/itemscount.md)
   Number of items for the drop.
-- [var location: CGPoint](dropsession/location.md)
+- [var location: CGPoint](./dropsession/location.md)
   Location of drop in the local coordinate space
-- [var size: CGSize](dropsession/size.md)
+- [var size: CGSize](./dropsession/size.md)
   Size of the drop destination view.
 ### Supporting reordering
-- [func reorderDestination<Item, CollectionID>(for: Item.Type, in: CollectionID.Type) -> ReorderDifference<Item.ID, CollectionID>.Destination?](dropsession/reorderdestination(for:in:).md)
+- [func reorderDestination<Item, CollectionID>(for: Item.Type, in: CollectionID.Type) -> ReorderDifference<Item.ID, CollectionID>.Destination?](./dropsession/reorderdestination%28for,in%29.md)
   Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
-- [func reorderDestination<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type) -> ReorderDifference<ItemID, CollectionID>.Destination?](dropsession/reorderdestination(for:itemid:in:).md)
+- [func reorderDestination<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type) -> ReorderDifference<ItemID, CollectionID>.Destination?](./dropsession/reorderdestination%28for,itemid,in%29.md)
   Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct DragSession](dragsession.md)
+### Moving items
+- [struct DragSession](./dragsession.md)
   Describes the ongoing dragging session.
 
 

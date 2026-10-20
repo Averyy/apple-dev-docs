@@ -1,7 +1,8 @@
 # AVCaptureDevice.CinematicVideoFocusMode.strong
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the subject should remain in focus until it exits the scene.
 
@@ -18,11 +19,16 @@ Indicates that the subject should remain in focus until it exits the scene.
 case strong
 ```
 
+```c
+AVCaptureCinematicVideoFocusModeStrong
+```
+
 ## See Also
 
-- [AVCaptureDevice.CinematicVideoFocusMode.none](avcapturedevice/cinematicvideofocusmode/none.md)
+### Focus modes
+- [AVCaptureDevice.CinematicVideoFocusMode.none](./none.md)
   Indicates that no focus mode is specified, in which case weak focus is used as default.
-- [AVCaptureDevice.CinematicVideoFocusMode.weak](avcapturedevice/cinematicvideofocusmode/weak.md)
+- [AVCaptureDevice.CinematicVideoFocusMode.weak](./weak.md)
   Indicates that the Cinematic Video algorithm should automatically adjust focus according to the prominence of the subjects in the scene.
 
 

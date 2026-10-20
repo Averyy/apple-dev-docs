@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.LocationGroup
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Location group targeting, restricting delivery to the business locations in specified groups.
 
@@ -10,13 +11,13 @@ Location group targeting, restricting delivery to the business locations in spec
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.LocationGroup
 ```
 
 #### Discussion
 
-Applies to Apple Maps campaigns. For creating and managing groups, see [`Managing Location Groups`](location-groups-overview.md). Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+Applies to Apple Maps campaigns. For creating and managing groups, see [Managing Location Groups](../location-groups-overview.md). Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 ```json
 "locationGroup": {

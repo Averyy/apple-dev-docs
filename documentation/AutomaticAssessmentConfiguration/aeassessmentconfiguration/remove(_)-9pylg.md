@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the availability of a previously added executable participant.
 
@@ -13,6 +14,10 @@ Removes the availability of a previously added executable participant.
 
 ```swift
 func remove(_ binaryExecutable: AEAssessmentBinaryExecutable)
+```
+
+```objc
+- (void) removeBinaryExecutable:(AEAssessmentBinaryExecutable *) binaryExecutable;
 ```
 
 ## Parameters

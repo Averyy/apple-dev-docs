@@ -1,7 +1,8 @@
 # size
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the box along each axis.
 

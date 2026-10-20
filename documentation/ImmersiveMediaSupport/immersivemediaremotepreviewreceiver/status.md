@@ -1,7 +1,8 @@
 # ImmersiveMediaRemotePreviewReceiver.Status
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that represents the status of the immersive media remote preview receiver object.
 
@@ -18,22 +19,22 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveMediaRemotePreviewReceiver.Status.failed](immersivemediaremotepreviewreceiver/status/failed.md)
+- [ImmersiveMediaRemotePreviewReceiver.Status.failed](./status/failed.md)
   An indication that the receiver is in failed state.
-- [ImmersiveMediaRemotePreviewReceiver.Status.started](immersivemediaremotepreviewreceiver/status/started.md)
+- [ImmersiveMediaRemotePreviewReceiver.Status.started](./status/started.md)
   An indication that the receiver has already started.
-- [ImmersiveMediaRemotePreviewReceiver.Status.starting](immersivemediaremotepreviewreceiver/status/starting.md)
+- [ImmersiveMediaRemotePreviewReceiver.Status.starting](./status/starting.md)
   An indication that the receiver is in starting state.
-- [ImmersiveMediaRemotePreviewReceiver.Status.stopped](immersivemediaremotepreviewreceiver/status/stopped.md)
+- [ImmersiveMediaRemotePreviewReceiver.Status.stopped](./status/stopped.md)
   An indication that the receiver is in stopped state.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MusicSummaries.Views.TopAlbumsView
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The top albums that the user listened to for the given period.
 
@@ -10,7 +11,7 @@ The top albums that the user listened to for the given period.
 
 ## Declaration
 
-```swift
+```
 object MusicSummaries.Views.TopAlbumsView
 ```
 

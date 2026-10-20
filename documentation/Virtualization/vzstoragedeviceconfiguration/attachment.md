@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attachment object that provides the underlying storage for the device.
 
@@ -12,6 +13,10 @@ The attachment object that provides the underlying storage for the device.
 
 ```swift
 var attachment: VZStorageDeviceAttachment { get }
+```
+
+```objc
+@property (strong, readonly) VZStorageDeviceAttachment * attachment;
 ```
 
 #### Discussion

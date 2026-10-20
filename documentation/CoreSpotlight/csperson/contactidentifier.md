@@ -1,7 +1,8 @@
 # contactIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the contact associated with the person.
 
@@ -18,17 +19,22 @@ The identifier for the contact associated with the person.
 var contactIdentifier: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * contactIdentifier;
+```
+
 #### Discussion
 
-When you use the contact’s [`identifier`](https://developer.apple.com/documentation/contacts/cncontact/identifier) value for the optional [`contactIdentifier`](csperson/contactidentifier.md) property, it enables a direct way to look up the associated contact.
+When you use the contact’s [`identifier`](../../Contacts/cncontact/identifier.md) value for the optional [`contactIdentifier`](./contactidentifier.md) property, it enables a direct way to look up the associated contact.
 
 ## See Also
 
-- [var displayName: String?](csperson/displayname.md)
+### Accessing person properties
+- [var displayName: String?](./displayname.md)
   A display name for the person.
-- [var handleIdentifier: String](csperson/handleidentifier.md)
+- [var handleIdentifier: String](./handleidentifier.md)
   A key that identifies the type of contact property represented by the person object’s handle.
-- [var handles: [String]](csperson/handles.md)
+- [var handles: [String]](./handles.md)
   An array of contact handles related to the person.
 
 

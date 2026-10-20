@@ -2,6 +2,7 @@
 
 **Framework**: Accessibility  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An attributed version of the axis title.
@@ -22,13 +23,18 @@ An attributed version of the axis title.
 var attributedTitle: NSAttributedString { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSAttributedString * attributedTitle;
+```
+
 #### Discussion
 
-If you set the value of this property, the system uses this value instead of [`title`](axdataaxisdescriptor/title.md).
+If you set the value of this property, the system uses this value instead of [`title`](./title.md).
 
 ## See Also
 
-- [var title: String](axdataaxisdescriptor/title.md)
+### Specifying the title
+- [var title: String](./title.md)
   The title of the axis.
 
 

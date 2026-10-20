@@ -1,7 +1,8 @@
 # automaticallyUpdatesContentConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
 
@@ -18,17 +19,22 @@ A Boolean value that determines whether the cell automatically updates its conte
 var automaticallyUpdatesContentConfiguration: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyUpdatesContentConfiguration;
+```
+
 #### Discussion
 
-When this value is [`true`](https://developer.apple.com/documentation/swift/true), the cell automatically calls [`updated(for:)`](uicontentconfiguration-9eib5/updated(for:).md) on its [`contentConfiguration`](uicollectionviewcell/contentconfiguration-1lcqh.md) when the cell’s [`configurationState`](uicollectionviewcell/configurationstate-4269k.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+When this value is [`true`](../../Swift/true.md), the cell automatically calls [`updated(for:)`](../uicontentconfiguration-9eib5/updated%28for%29.md) on its [`contentConfiguration`](./contentconfiguration-1lcqh.md) when the cell’s [`configurationState`](./configurationstate-4269k.md) changes, and applies the updated configuration back to the cell. The default value is [`true`](../../Swift/true.md).
 
-If you override [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](https://developer.apple.com/documentation/swift/false).
+If you override [`updateConfiguration(using:)`](./updateconfiguration%28using%29.md) to manually update and customize the content configuration, disable automatic updates by setting this property to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var contentConfiguration: (any UIContentConfiguration)?](uicollectionviewcell/contentconfiguration-13e7k.md)
+### Managing the content
+- [var contentConfiguration: (any UIContentConfiguration)?](./contentconfiguration-13e7k.md)
   The current content configuration of the cell.
-- [var contentView: UIView](uicollectionviewcell/contentview.md)
+- [var contentView: UIView](./contentview.md)
   The main view that you add your cell’s custom content to.
 
 

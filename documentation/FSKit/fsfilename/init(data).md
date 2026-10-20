@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a filename by copying a character sequence data object.
 
@@ -14,6 +15,10 @@ Creates a filename by copying a character sequence data object.
 convenience init(data name: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) name;
+```
+
 #### Discussion
 
 This initializer copies up to `name.length` characters of the sequence pointed to by `bytes`.
@@ -24,9 +29,10 @@ This initializer copies up to `name.length` characters of the sequence pointed t
 
 ## See Also
 
-- [convenience init(bytes: UnsafeBufferPointer<CChar>)](fsfilename/init(bytes:).md)
-- [convenience init(cString: UnsafeBufferPointer<CChar>)](fsfilename/init(cstring:).md)
-- [convenience init(string: String)](fsfilename/init(string:).md)
+### Creating a filename
+- [convenience init(bytes: UnsafeBufferPointer<CChar>)](./init%28bytes%29.md)
+- [convenience init(cString: UnsafeBufferPointer<CChar>)](./init%28cstring%29.md)
+- [convenience init(string: String)](./init%28string%29.md)
   Creates a filename by copying a character sequence from a string instance.
 
 

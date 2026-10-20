@@ -1,7 +1,8 @@
 # windowDurationConstraint
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range or list of sound duration times the request’s underlying sound classifier supports.
 
@@ -23,7 +24,7 @@ var windowDurationConstraint: SNTimeDurationConstraint { get }
 
 #### Discussion
 
-Configure the request’s [`windowDuration`](snclassifysoundrequest/windowduration.md) property with a value that satisfies the window duration constraint.
+Configure the request’s [`windowDuration`](./windowduration.md) property with a value that satisfies the window duration constraint.
 
 
 ---

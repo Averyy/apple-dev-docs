@@ -1,7 +1,8 @@
 # kUSBPowerRequestSleepRelease
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system requests a release of power upon sleeping.
 
@@ -10,13 +11,13 @@ The system requests a release of power upon sleeping.
 
 ## Declaration
 
-```swift
+```c
 kUSBPowerRequestSleepRelease = 3
 ```
 
 #### Discussion
 
-When you use this enumeration with [`ReturnExtraPower`](https://developer.apple.com/documentation/iokit/iousbdeviceinterface942/2977171-returnextrapower), it sends a message to all devices to return any sleep power, if possible.
+When you use this enumeration with [`ReturnExtraPower`](../../iokit/iousbdeviceinterface942/api-2977171-returnextrapower.md), it sends a message to all devices to return any sleep power, if possible.
 
 
 ---

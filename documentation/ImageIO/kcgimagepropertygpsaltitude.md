@@ -1,7 +1,8 @@
 # kCGImagePropertyGPSAltitude
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The altitude.
 
@@ -20,19 +21,24 @@ The altitude.
 let kCGImagePropertyGPSAltitude: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGPSAltitude;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGPSLatitude: CFString](kcgimagepropertygpslatitude.md)
+### GPS Coordinate
+- [let kCGImagePropertyGPSLatitude: CFString](./kcgimagepropertygpslatitude.md)
   The latitude.
-- [let kCGImagePropertyGPSLongitude: CFString](kcgimagepropertygpslongitude.md)
+- [let kCGImagePropertyGPSLongitude: CFString](./kcgimagepropertygpslongitude.md)
   The longitude.
-- [let kCGImagePropertyGPSLatitudeRef: CFString](kcgimagepropertygpslatituderef.md)
+- [let kCGImagePropertyGPSLatitudeRef: CFString](./kcgimagepropertygpslatituderef.md)
   An indication of whether the latitude is north or south.
-- [let kCGImagePropertyGPSLongitudeRef: CFString](kcgimagepropertygpslongituderef.md)
+- [let kCGImagePropertyGPSLongitudeRef: CFString](./kcgimagepropertygpslongituderef.md)
   An indication of whether the longitude is east or west.
-- [let kCGImagePropertyGPSAltitudeRef: CFString](kcgimagepropertygpsaltituderef.md)
+- [let kCGImagePropertyGPSAltitudeRef: CFString](./kcgimagepropertygpsaltituderef.md)
   The altitude point of reference.
-- [let kCGImagePropertyGPSHPositioningError: CFString](kcgimagepropertygpshpositioningerror.md)
+- [let kCGImagePropertyGPSHPositioningError: CFString](./kcgimagepropertygpshpositioningerror.md)
   The horizontal error in the GPS position.
 
 

@@ -1,16 +1,21 @@
 # responsible
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var responsible: UnsafeMutablePointer<es_process_t>?
+```
+
+```c
+es_process_t * responsible;
 ```
 
 

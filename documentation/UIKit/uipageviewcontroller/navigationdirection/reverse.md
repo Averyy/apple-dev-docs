@@ -1,16 +1,17 @@
 # UIPageViewController.NavigationDirection.reverse
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Navigation to the previous page.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ Navigation to the previous page.
 case reverse
 ```
 
+```c
+UIPageViewControllerNavigationDirectionReverse
+```
+
 ## See Also
 
-- [UIPageViewController.NavigationDirection.forward](uipageviewcontroller/navigationdirection/forward.md)
+### Constants
+- [UIPageViewController.NavigationDirection.forward](./forward.md)
   Navigation to the next page.
 
 

@@ -1,7 +1,8 @@
 # extension
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension of the file or directory last component.
 

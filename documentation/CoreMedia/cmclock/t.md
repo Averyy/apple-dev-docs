@@ -1,7 +1,8 @@
 # CMClock.T
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+

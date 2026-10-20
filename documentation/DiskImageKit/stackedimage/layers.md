@@ -2,6 +2,7 @@
 
 **Framework**: DiskImageKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of all layers in the stack, from base (index 0) to top.

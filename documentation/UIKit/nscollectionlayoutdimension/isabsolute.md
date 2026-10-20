@@ -1,7 +1,8 @@
 # isAbsolute
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the dimension is expressed as an absolute value.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the dimension is expressed as an absolute
 var isAbsolute: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isAbsolute;
+```
+
 ## See Also
 
-- [var isEstimated: Bool](nscollectionlayoutdimension/isestimated.md)
+### Getting the dimension type
+- [var isEstimated: Bool](./isestimated.md)
   A Boolean value that indicates whether the dimension is expressed as an estimated value.
-- [var isFractionalHeight: Bool](nscollectionlayoutdimension/isfractionalheight.md)
+- [var isFractionalHeight: Bool](./isfractionalheight.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s height.
-- [var isFractionalWidth: Bool](nscollectionlayoutdimension/isfractionalwidth.md)
+- [var isFractionalWidth: Bool](./isfractionalwidth.md)
   A Boolean value that indicates whether the dimension is expressed as a fraction of its container’s width.
-- [var isUniformAcrossSiblings: Bool](nscollectionlayoutdimension/isuniformacrosssiblings.md)
+- [var isUniformAcrossSiblings: Bool](./isuniformacrosssiblings.md)
   A Boolean value that indicates whether the dimension grows to match the dimension of its largest sibling.
 
 

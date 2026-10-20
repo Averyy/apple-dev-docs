@@ -1,7 +1,8 @@
 # kMDItemTimeSignature
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The time signature of the musical composition contained in the audio/MIDI file. For example: "4/4", "7/8". A CFString.
 
@@ -12,6 +13,10 @@ The time signature of the musical composition contained in the audio/MIDI file. 
 
 ```swift
 let kMDItemTimeSignature: CFString!
+```
+
+```c
+const CFStringRef kMDItemTimeSignature;
 ```
 
 

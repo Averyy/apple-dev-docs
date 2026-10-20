@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index after the given index.
 

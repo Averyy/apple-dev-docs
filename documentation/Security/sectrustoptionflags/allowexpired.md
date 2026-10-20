@@ -1,7 +1,8 @@
 # allowExpired
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow expired certificates (except for the root certificate).
 
@@ -12,6 +13,10 @@ Allow expired certificates (except for the root certificate).
 
 ```swift
 static var allowExpired: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionAllowExpired
 ```
 
 

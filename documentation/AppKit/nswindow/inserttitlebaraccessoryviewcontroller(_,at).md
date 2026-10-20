@@ -1,7 +1,8 @@
 # insertTitlebarAccessoryViewController(_:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the view controller into the window’s array of title bar accessory view controllers at the specified index.
 
@@ -14,6 +15,10 @@ Inserts the view controller into the window’s array of title bar accessory vie
 func insertTitlebarAccessoryViewController(_ childViewController: NSTitlebarAccessoryViewController, at index: Int)
 ```
 
+```objc
+- (void) insertTitlebarAccessoryViewController:(NSTitlebarAccessoryViewController *) childViewController atIndex:(NSInteger) index;
+```
+
 ## Parameters
 
 - `childViewController`: The title bar accessory view controller to insert.
@@ -21,11 +26,12 @@ func insertTitlebarAccessoryViewController(_ childViewController: NSTitlebarAcce
 
 ## See Also
 
-- [func addTitlebarAccessoryViewController(NSTitlebarAccessoryViewController)](nswindow/addtitlebaraccessoryviewcontroller(_:).md)
+### Managing Title Bar Accessories
+- [func addTitlebarAccessoryViewController(NSTitlebarAccessoryViewController)](./addtitlebaraccessoryviewcontroller%28_%29.md)
   Adds the specified title bar accessory view controller to the window.
-- [func removeTitlebarAccessoryViewController(at: Int)](nswindow/removetitlebaraccessoryviewcontroller(at:).md)
+- [func removeTitlebarAccessoryViewController(at: Int)](./removetitlebaraccessoryviewcontroller%28at%29.md)
   Removes the view controller at the specified index from the window’s array of title bar accessory view controllers.
-- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](nswindow/titlebaraccessoryviewcontrollers.md)
+- [var titlebarAccessoryViewControllers: [NSTitlebarAccessoryViewController]](./titlebaraccessoryviewcontrollers.md)
   An array of title bar accessory view controllers that are currently added to the window.
 
 

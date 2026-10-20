@@ -1,7 +1,8 @@
 # penetrationDistance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance of overlap between the contact pair.
 

@@ -1,7 +1,8 @@
 # PKInkingTool.InkType.crayon
 
 **Framework**: PencilKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inking tool that creates the appearance of a crayon.
 
@@ -20,17 +21,18 @@ case crayon
 
 ## See Also
 
-- [PKInkingTool.InkType.marker](pkinkingtool-swift.struct/inktype-swift.enum/marker.md)
+### Choosing ink types
+- [PKInkingTool.InkType.marker](./marker.md)
   An inking tool that creates the appearance of a felt-tip marker.
-- [PKInkingTool.InkType.pen](pkinkingtool-swift.struct/inktype-swift.enum/pen.md)
+- [PKInkingTool.InkType.pen](./pen.md)
   An inking tool that creates the appearance of a pen-based drawing.
-- [PKInkingTool.InkType.pencil](pkinkingtool-swift.struct/inktype-swift.enum/pencil.md)
+- [PKInkingTool.InkType.pencil](./pencil.md)
   An inking tool that creates the appearance of a narrow line from a pencil.
-- [PKInkingTool.InkType.monoline](pkinkingtool-swift.struct/inktype-swift.enum/monoline.md)
+- [PKInkingTool.InkType.monoline](./monoline.md)
   An inking tool that creates the appearance of a monoline pen.
-- [PKInkingTool.InkType.fountainPen](pkinkingtool-swift.struct/inktype-swift.enum/fountainpen.md)
+- [PKInkingTool.InkType.fountainPen](./fountainpen.md)
   An inking tool that creates the appearance of a calligraphy pen.
-- [PKInkingTool.InkType.watercolor](pkinkingtool-swift.struct/inktype-swift.enum/watercolor.md)
+- [PKInkingTool.InkType.watercolor](./watercolor.md)
   An inking tool that creates the appearance of a watercolor brush.
 
 

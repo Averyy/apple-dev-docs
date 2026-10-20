@@ -1,7 +1,8 @@
 # init(scale:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor with the given scale and all other properties set to their defaults (no mask, isCausal = NO, no sinks).
 
@@ -17,6 +18,10 @@ Creates a descriptor with the given scale and all other properties set to their 
 
 ```swift
 convenience init(scale: Float)
+```
+
+```objc
++ (instancetype) descriptorWithScale:(float) scale;
 ```
 
 

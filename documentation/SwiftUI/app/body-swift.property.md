@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of the app.
@@ -24,7 +25,7 @@ The content and behavior of the app.
 
 #### Discussion
 
-For any app that you create, provide a computed `body` property that defines your app’s scenes, which are instances that conform to the [`Scene`](scene.md) protocol. For example, you can create a simple app with a single scene containing a single view:
+For any app that you create, provide a computed `body` property that defines your app’s scenes, which are instances that conform to the [`Scene`](../scene.md) protocol. For example, you can create a simple app with a single scene containing a single view:
 
 ```swift
 @main
@@ -37,11 +38,12 @@ struct MyApp: App {
 }
 ```
 
-Swift infers the app’s [`Body`](app/body-swift.associatedtype.md) associated type based on the scene provided by the `body` property.
+Swift infers the app’s [`Body`](./body-swift.associatedtype.md) associated type based on the scene provided by the `body` property.
 
 ## See Also
 
-- [associatedtype Body : Scene](app/body-swift.associatedtype.md)
+### Implementing an app
+- [associatedtype Body : Scene](./body-swift.associatedtype.md)
   The type of scene representing the content of the app.
 
 

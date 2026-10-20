@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an export option with the specified raw value.
 
@@ -22,7 +23,8 @@ init(rawValue: Int32)
 
 ## See Also
 
-- [let rawValue: Int32](capturedroom/usdexportoptions/rawvalue.md)
+### Creating an export option
+- [let rawValue: Int32](./rawvalue.md)
   A raw value for the export option.
 
 

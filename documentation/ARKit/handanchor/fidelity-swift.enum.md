@@ -1,7 +1,8 @@
 # HandAnchor.Fidelity
 
 **Framework**: ARKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration to distinguish hand fidelity
 
@@ -17,22 +18,22 @@ enum Fidelity
 ## Topics
 
 ### Enumeration Cases
-- [HandAnchor.Fidelity.high](handanchor/fidelity-swift.enum/high.md)
+- [HandAnchor.Fidelity.high](./fidelity-swift.enum/high.md)
   High fidelity.
-- [HandAnchor.Fidelity.nominal](handanchor/fidelity-swift.enum/nominal.md)
+- [HandAnchor.Fidelity.nominal](./fidelity-swift.enum/nominal.md)
   Nominal fidelity.
 ### Instance Properties
-- [var description: String](handanchor/fidelity-swift.enum/description.md)
+- [var description: String](./fidelity-swift.enum/description.md)
   A textual representation of HandAnchor.Fidelity
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

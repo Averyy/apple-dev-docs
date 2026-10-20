@@ -1,7 +1,8 @@
 # ICServiceEntryPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICServiceEntryPtr = UnsafeMutablePointer<ICServiceEntry>
+```
+
+```c
+typedef ICServiceEntry *ICServiceEntryPtr;
 ```
 
 

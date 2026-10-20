@@ -1,7 +1,8 @@
 # vertexFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes the format of the vertices in the vertex buffer.
 
@@ -19,9 +20,13 @@ Describes the format of the vertices in the vertex buffer.
 var vertexFormat: MTLAttributeFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLAttributeFormat vertexFormat;
+```
+
 #### Discussion
 
-This property controls the format of the position attribute of the vertices the [`vertexBuffer`](mtl4accelerationstructuretrianglegeometrydescriptor/vertexbuffer.md) references.
+This property controls the format of the position attribute of the vertices the [`vertexBuffer`](./vertexbuffer.md) references.
 
 The format defaults to `MTLAttributeFormatFloat3`, corresponding to three packed floating point numbers.
 

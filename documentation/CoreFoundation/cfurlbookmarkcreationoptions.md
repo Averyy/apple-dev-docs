@@ -1,7 +1,8 @@
 # CFURLBookmarkCreationOptions
 
 **Framework**: Core Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Type for bookmark data creation options.
 
@@ -20,44 +21,49 @@ Type for bookmark data creation options.
 struct CFURLBookmarkCreationOptions
 ```
 
+```c
+enum CFURLBookmarkCreationOptions : CFOptionFlags;
+```
+
 #### Overview
 
-See [`Bookmark Data Creation Options`](bookmark-data-creation-options.md) for possible values.
+See [Bookmark Data Creation Options](./bookmark-data-creation-options.md) for possible values.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: CFOptionFlags)](cfurlbookmarkcreationoptions/init(rawvalue:).md)
+- [init(rawValue: CFOptionFlags)](./cfurlbookmarkcreationoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var minimalBookmarkMask: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/minimalbookmarkmask.md)
+- [static var minimalBookmarkMask: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/minimalbookmarkmask.md)
   Specifies that an alias created with the bookmark data be created with minimal information, which may make it smaller but still able to resolve in certain ways.
-- [static var preferFileIDResolutionMask: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/preferfileidresolutionmask.md)
+- [static var preferFileIDResolutionMask: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/preferfileidresolutionmask.md)
   Specifies that an alias created with the bookmark data prefers resolving with its embedded file ID.
-- [static var securityScopeAllowOnlyReadAccess: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/securityscopeallowonlyreadaccess.md)
-  When combined with the [`withSecurityScope`](cfurlbookmarkcreationoptions/withsecurityscope.md) option, specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read-only access to a file-system resource; for use in an app that adopts App Sandbox.
-- [static var suitableForBookmarkFile: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/suitableforbookmarkfile.md)
+- [static var securityScopeAllowOnlyReadAccess: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/securityscopeallowonlyreadaccess.md)
+  When combined with the [`withSecurityScope`](./cfurlbookmarkcreationoptions/withsecurityscope.md) option, specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read-only access to a file-system resource; for use in an app that adopts App Sandbox.
+- [static var suitableForBookmarkFile: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/suitableforbookmarkfile.md)
   Specifies that the bookmark data include properties required to create Finder alias files.
-- [static var withSecurityScope: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/withsecurityscope.md)
+- [static var withSecurityScope: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/withsecurityscope.md)
   Specifies that you want to create a security-scoped bookmark that, when resolved, provides a security-scoped URL allowing read/write access to a file-system resource; for use in an app that adopts App Sandbox.
-- [static var withoutImplicitSecurityScope: CFURLBookmarkCreationOptions](cfurlbookmarkcreationoptions/withoutimplicitsecurityscope.md)
+- [static var withoutImplicitSecurityScope: CFURLBookmarkCreationOptions](./cfurlbookmarkcreationoptions/withoutimplicitsecurityscope.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias CFURLBookmarkFileCreationOptions](cfurlbookmarkfilecreationoptions.md)
+### Bookmark Data Types
+- [typealias CFURLBookmarkFileCreationOptions](./cfurlbookmarkfilecreationoptions.md)
   Type for bookmark file creation options.
-- [struct CFURLBookmarkResolutionOptions](cfurlbookmarkresolutionoptions.md)
+- [struct CFURLBookmarkResolutionOptions](./cfurlbookmarkresolutionoptions.md)
   Type for bookmark data resolution options.
 
 

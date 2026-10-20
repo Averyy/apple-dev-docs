@@ -1,7 +1,8 @@
 # nw_parameters_set_service_class(_:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets a level of service quality to use for connections.
 
@@ -20,41 +21,46 @@ Sets a level of service quality to use for connections.
 func nw_parameters_set_service_class(_ parameters: nw_parameters_t, _ service_class: nw_service_class_t)
 ```
 
+```c
+void nw_parameters_set_service_class(nw_parameters_t parameters, nw_service_class_t service_class);
+```
+
 #### Discussion
 
 Service quality affects the on-device queuing priority of your traffic, and packet markings on supported networks. You should only modify this property for cases that have very specific scheduling needs, like interactive voice traffic. You should use the best effort service for most traffic in your app.
 
 ## See Also
 
-- [func nw_parameters_set_multipath_service(nw_parameters_t, nw_multipath_service_t)](nw_parameters_set_multipath_service(_:_:).md)
+### Customizing Connection Options
+- [func nw_parameters_set_multipath_service(nw_parameters_t, nw_multipath_service_t)](./nw_parameters_set_multipath_service%28_,_%29.md)
   Enables multipath protocols to allow connections to use multiple interfaces.
-- [func nw_parameters_get_multipath_service(nw_parameters_t) -> nw_multipath_service_t](nw_parameters_get_multipath_service(_:).md)
+- [func nw_parameters_get_multipath_service(nw_parameters_t) -> nw_multipath_service_t](./nw_parameters_get_multipath_service%28_%29.md)
   Checks if multipath is enabled on a connection.
-- [struct nw_multipath_service_t](nw_multipath_service_t.md)
+- [struct nw_multipath_service_t](./nw_multipath_service_t.md)
   Modes in which a connection can support multipath protocols.
-- [func nw_parameters_get_service_class(nw_parameters_t) -> nw_service_class_t](nw_parameters_get_service_class(_:).md)
+- [func nw_parameters_get_service_class(nw_parameters_t) -> nw_service_class_t](./nw_parameters_get_service_class%28_%29.md)
   Checks the level of service quality used for connections.
-- [struct nw_service_class_t](nw_service_class_t.md)
+- [struct nw_service_class_t](./nw_service_class_t.md)
   Levels of service quality that can be used with a connection.
-- [func nw_parameters_set_fast_open_enabled(nw_parameters_t, Bool)](nw_parameters_set_fast_open_enabled(_:_:).md)
+- [func nw_parameters_set_fast_open_enabled(nw_parameters_t, Bool)](./nw_parameters_set_fast_open_enabled%28_,_%29.md)
   Enables sending application data with protocol handshakes.
-- [func nw_parameters_get_fast_open_enabled(nw_parameters_t) -> Bool](nw_parameters_get_fast_open_enabled(_:).md)
+- [func nw_parameters_get_fast_open_enabled(nw_parameters_t) -> Bool](./nw_parameters_get_fast_open_enabled%28_%29.md)
   Checks if sending application data with protocol handshakes is enabled.
-- [func nw_parameters_set_expired_dns_behavior(nw_parameters_t, nw_parameters_expired_dns_behavior_t)](nw_parameters_set_expired_dns_behavior(_:_:).md)
+- [func nw_parameters_set_expired_dns_behavior(nw_parameters_t, nw_parameters_expired_dns_behavior_t)](./nw_parameters_set_expired_dns_behavior%28_,_%29.md)
   Sets the behavior for how expired DNS answers should be used.
-- [func nw_parameters_get_expired_dns_behavior(nw_parameters_t) -> nw_parameters_expired_dns_behavior_t](nw_parameters_get_expired_dns_behavior(_:).md)
+- [func nw_parameters_get_expired_dns_behavior(nw_parameters_t) -> nw_parameters_expired_dns_behavior_t](./nw_parameters_get_expired_dns_behavior%28_%29.md)
   Checks the behavior for how expired DNS answers should be used.
-- [struct nw_parameters_expired_dns_behavior_t](nw_parameters_expired_dns_behavior_t.md)
+- [struct nw_parameters_expired_dns_behavior_t](./nw_parameters_expired_dns_behavior_t.md)
   Options for configuring how expired DNS answers should be used.
-- [func nw_parameters_set_requires_dnssec_validation(nw_parameters_t, Bool)](nw_parameters_set_requires_dnssec_validation(_:_:).md)
+- [func nw_parameters_set_requires_dnssec_validation(nw_parameters_t, Bool)](./nw_parameters_set_requires_dnssec_validation%28_,_%29.md)
   Determines whether a connection requires DNSSEC validation when resolving endpoints.
-- [func nw_parameters_requires_dnssec_validation(nw_parameters_t) -> Bool](nw_parameters_requires_dnssec_validation(_:).md)
+- [func nw_parameters_requires_dnssec_validation(nw_parameters_t) -> Bool](./nw_parameters_requires_dnssec_validation%28_%29.md)
   Checks whether a connection requires DNSSEC validation when resolving endpoints.
-- [func nw_parameters_set_prefer_no_proxy(nw_parameters_t, Bool)](nw_parameters_set_prefer_no_proxy(_:_:).md)
+- [func nw_parameters_set_prefer_no_proxy(nw_parameters_t, Bool)](./nw_parameters_set_prefer_no_proxy%28_,_%29.md)
   Sets a Boolean that indicates that connections should ignore proxies when they are enabled on the system.
-- [func nw_parameters_get_prefer_no_proxy(nw_parameters_t) -> Bool](nw_parameters_get_prefer_no_proxy(_:).md)
+- [func nw_parameters_get_prefer_no_proxy(nw_parameters_t) -> Bool](./nw_parameters_get_prefer_no_proxy%28_%29.md)
   Checks if proxies are ignored by default.
-- [func nw_parameters_set_include_peer_to_peer(nw_parameters_t, Bool)](nw_parameters_set_include_peer_to_peer(_:_:).md)
+- [func nw_parameters_set_include_peer_to_peer(nw_parameters_t, Bool)](./nw_parameters_set_include_peer_to_peer%28_,_%29.md)
   Enables peer-to-peer link technologies for connections and listeners.
 
 

@@ -1,7 +1,8 @@
 # loadView()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.0+

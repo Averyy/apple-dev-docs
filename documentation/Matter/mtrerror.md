@@ -1,7 +1,8 @@
 # MTRError
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -21,38 +22,38 @@ struct MTRError
 ## Topics
 
 ### Type Properties
-- [static var bufferTooSmall: MTRError.Code](mtrerror/buffertoosmall.md)
-- [static var cancelled: MTRError.Code](mtrerror/cancelled.md)
-- [static var dnssdUnauthorized: MTRError.Code](mtrerror/dnssdunauthorized.md)
-- [static var fabricExists: MTRError.Code](mtrerror/fabricexists.md)
-- [static var generalError: MTRError.Code](mtrerror/generalerror.md)
-- [static var integrityCheckFailed: MTRError.Code](mtrerror/integritycheckfailed.md)
-- [static var invalidArgument: MTRError.Code](mtrerror/invalidargument.md)
-- [static var invalidIntegerValue: MTRError.Code](mtrerror/invalidintegervalue.md)
-- [static var invalidMessageLength: MTRError.Code](mtrerror/invalidmessagelength.md)
-- [static var invalidState: MTRError.Code](mtrerror/invalidstate.md)
-- [static var invalidStringLength: MTRError.Code](mtrerror/invalidstringlength.md)
-- [static var schemaMismatch: MTRError.Code](mtrerror/schemamismatch.md)
-- [static var timeout: MTRError.Code](mtrerror/timeout.md)
-- [static var tlvDecodeFailed: MTRError.Code](mtrerror/tlvdecodefailed.md)
-- [static var unknownSchema: MTRError.Code](mtrerror/unknownschema.md)
-- [static var wrongAddressType: MTRError.Code](mtrerror/wrongaddresstype.md)
-- [static var accessDenied: MTRError.Code](mtrerror/accessdenied.md)
-- [static var busy: MTRError.Code](mtrerror/busy.md)
-- [static var errorDomain: String](mtrerror/errordomain.md)
-- [static var notFound: MTRError.Code](mtrerror/notfound.md)
+- [static var bufferTooSmall: MTRError.Code](./mtrerror/buffertoosmall.md)
+- [static var cancelled: MTRError.Code](./mtrerror/cancelled.md)
+- [static var dnssdUnauthorized: MTRError.Code](./mtrerror/dnssdunauthorized.md)
+- [static var fabricExists: MTRError.Code](./mtrerror/fabricexists.md)
+- [static var generalError: MTRError.Code](./mtrerror/generalerror.md)
+- [static var integrityCheckFailed: MTRError.Code](./mtrerror/integritycheckfailed.md)
+- [static var invalidArgument: MTRError.Code](./mtrerror/invalidargument.md)
+- [static var invalidIntegerValue: MTRError.Code](./mtrerror/invalidintegervalue.md)
+- [static var invalidMessageLength: MTRError.Code](./mtrerror/invalidmessagelength.md)
+- [static var invalidState: MTRError.Code](./mtrerror/invalidstate.md)
+- [static var invalidStringLength: MTRError.Code](./mtrerror/invalidstringlength.md)
+- [static var schemaMismatch: MTRError.Code](./mtrerror/schemamismatch.md)
+- [static var timeout: MTRError.Code](./mtrerror/timeout.md)
+- [static var tlvDecodeFailed: MTRError.Code](./mtrerror/tlvdecodefailed.md)
+- [static var unknownSchema: MTRError.Code](./mtrerror/unknownschema.md)
+- [static var wrongAddressType: MTRError.Code](./mtrerror/wrongaddresstype.md)
+- [static var accessDenied: MTRError.Code](./mtrerror/accessdenied.md)
+- [static var busy: MTRError.Code](./mtrerror/busy.md)
+- [static var errorDomain: String](./mtrerror/errordomain.md)
+- [static var notFound: MTRError.Code](./mtrerror/notfound.md)
 ### Enumerations
-- [MTRError.Code](mtrerror/code.md)
+- [MTRError.Code](./mtrerror/code.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

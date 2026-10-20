@@ -1,14 +1,15 @@
 # user_time
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 time_value_t user_time;
 ```
 

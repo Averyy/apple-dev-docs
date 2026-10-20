@@ -1,7 +1,8 @@
 # imageInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image inset or outset for each edge.
 
@@ -9,7 +10,7 @@ The image inset or outset for each edge.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,32 @@ The image inset or outset for each edge.
 var imageInsets: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic) UIEdgeInsets imageInsets;
+```
+
 #### Discussion
 
-The default value is [`zero`](uiedgeinsets/zero.md).
+The default value is [`zero`](../uiedgeinsets/zero.md).
 
 ## See Also
 
-- [var title: String?](uibaritem/title.md)
+### Getting and setting properties
+- [var title: String?](./title.md)
   The title displayed on the item.
-- [var image: UIImage?](uibaritem/image.md)
+- [var image: UIImage?](./image.md)
   The image used to represent the item.
-- [var landscapeImagePhone: UIImage?](uibaritem/landscapeimagephone.md)
+- [var landscapeImagePhone: UIImage?](./landscapeimagephone.md)
   The image to use to represent the item in landscape orientation when using the iPhone appearance idiom.
-- [var largeContentSizeImage: UIImage?](uibaritem/largecontentsizeimage.md)
+- [var largeContentSizeImage: UIImage?](./largecontentsizeimage.md)
   The image to display for users who are blind or have low vision.
-- [var landscapeImagePhoneInsets: UIEdgeInsets](uibaritem/landscapeimagephoneinsets.md)
+- [var landscapeImagePhoneInsets: UIEdgeInsets](./landscapeimagephoneinsets.md)
   The image inset or outset for each edge of the image in landscape orientation when using the iPhone appearance idiom.
-- [var largeContentSizeImageInsets: UIEdgeInsets](uibaritem/largecontentsizeimageinsets.md)
+- [var largeContentSizeImageInsets: UIEdgeInsets](./largecontentsizeimageinsets.md)
   The insets to apply to the bar item’s large image when displaying the image in an assistive UI.
-- [var isEnabled: Bool](uibaritem/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the item is enabled.
-- [var tag: Int](uibaritem/tag.md)
+- [var tag: Int](./tag.md)
   The bar item’s tag, an app-supplied integer that you can use to identify bar item objects in your app.
 
 

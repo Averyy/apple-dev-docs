@@ -1,10 +1,11 @@
 # kMusicDeviceSampleFrameMask_SampleOffset
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kMusicDeviceSampleFrameMask_SampleOffset: Int { get }
 ```
 
+```c
+kMusicDeviceSampleFrameMask_SampleOffset
+```
+
 ## See Also
 
-- [var kMusicDeviceSampleFrameMask_IsScheduled: Int](kmusicdevicesampleframemask_isscheduled.md)
+### Constants
+- [var kMusicDeviceSampleFrameMask_IsScheduled: Int](./kmusicdevicesampleframemask_isscheduled.md)
 
 
 ---

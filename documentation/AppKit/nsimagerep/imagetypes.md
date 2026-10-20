@@ -1,7 +1,8 @@
 # imageTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array of UTI strings identifying the image types supported by the image representation, either directly or through a user-installed filter service.
 
@@ -14,6 +15,10 @@ Returns an array of UTI strings identifying the image types supported by the ima
 class var imageTypes: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * imageTypes;
+```
+
 #### Return Value
 
 An array of `NSString` objects, each of which contains a UTI identifying a supported image type. Some sample image-related UTI strings include “`public.image`”, “`public.jpeg`”, and “`public.tiff`”. For a list of supported types, see `UTCoreTypes.h`.
@@ -24,11 +29,12 @@ The returned list includes UTIs all file types supported by this image represent
 
 ## See Also
 
-- [class func canInit(with: Data) -> Bool](nsimagerep/caninit(with:)-6zv56.md)
+### Determining Types for Images
+- [class func canInit(with: Data) -> Bool](./caninit%28with%29-6zv56.md)
   Returns a Boolean value that indicates whether the image representation can initialize itself from the specified data.
-- [class func canInit(with: NSPasteboard) -> Bool](nsimagerep/caninit(with:)-56pum.md)
+- [class func canInit(with: NSPasteboard) -> Bool](./caninit%28with%29-56pum.md)
   Returns a Boolean value that indicates whether the receiver can initialize itself from the data on the specified pasteboard.
-- [class var imageUnfilteredTypes: [String]](nsimagerep/imageunfilteredtypes.md)
+- [class var imageUnfilteredTypes: [String]](./imageunfilteredtypes.md)
   Returns an array of UTI strings identifying the image types supported directly by the ime representation.
 
 

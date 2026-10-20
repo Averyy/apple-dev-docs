@@ -1,7 +1,8 @@
 # selections
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text selections in the buffer.
 
@@ -14,13 +15,18 @@ The text selections in the buffer.
 var selections: NSMutableArray { get }
 ```
 
+```objc
+@property (strong, readonly) NSMutableArray<XCSourceTextRange *> * selections;
+```
+
 #### Discussion
 
 An empty range represents an insertion point. Modifying the lines of text in the buffer automatically updates the selections to match.
 
 ## See Also
 
-- [var lines: NSMutableArray](xcsourcetextbuffer/lines.md)
+### Editing Source Text
+- [var lines: NSMutableArray](./lines.md)
   The lines of text in the buffer, including line endings.
 
 

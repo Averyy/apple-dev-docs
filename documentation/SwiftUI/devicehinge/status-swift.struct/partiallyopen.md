@@ -1,7 +1,8 @@
 # partiallyOpen
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The hinge is partially open.
 
@@ -22,9 +23,10 @@ static var partiallyOpen: DeviceHinge.Status { get }
 
 ## See Also
 
-- [static var closed: DeviceHinge.Status](devicehinge/status-swift.struct/closed.md)
+### Getting hinge status
+- [static var closed: DeviceHinge.Status](./closed.md)
   The hinge is closed.
-- [static var fullyOpen: DeviceHinge.Status](devicehinge/status-swift.struct/fullyopen.md)
+- [static var fullyOpen: DeviceHinge.Status](./fullyopen.md)
   The hinge is open as far as the device allows.
 
 

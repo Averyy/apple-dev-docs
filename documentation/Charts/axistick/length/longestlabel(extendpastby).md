@@ -1,7 +1,8 @@
 # longestLabel(extendPastBy:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Describes a tick that extends to the longest label on the axis, with the given additional length.
 

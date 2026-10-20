@@ -1,14 +1,15 @@
 # stub_routine
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 mig_stub_routine_t stub_routine;
 ```
 

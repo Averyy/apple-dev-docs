@@ -1,7 +1,8 @@
 # DDErrorDomain
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A unique error domain for the framework.
 
@@ -9,7 +10,7 @@ A unique error domain for the framework.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ A unique error domain for the framework.
 let DDErrorDomain: String
 ```
 
+```c
+extern NSString * const DDErrorDomain;
+```
+
 #### Discussion
 
-For more information, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
+For more information, see [Error domains](../CoreFoundation/error-domains.md).
 
 ## See Also
 
-- [struct DDError](dderror.md)
+### Errors
+- [struct DDError](./dderror.md)
   An error that the framework reports.
-- [DDError.Code](dderror/code.md)
+- [DDError.Code](./dderror/code.md)
   Codes that identify errors that can occur during the framework’s use.
-- [typealias DDErrorHandler](dderrorhandler.md)
+- [typealias DDErrorHandler](./dderrorhandler.md)
   A function that executes code you provide when an operation returns an error or completes successfully.
-- [typealias DDErrorOutType](dderrorouttype.md)
+- [typealias DDErrorOutType](./dderrorouttype.md)
   A type for framework functions that return error references.
 
 

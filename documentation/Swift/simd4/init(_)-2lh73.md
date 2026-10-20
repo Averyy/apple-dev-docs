@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a simd packed vector from a Spatial rotation.
 
@@ -19,6 +20,8 @@ Creates a simd packed vector from a Spatial rotation.
 ```swift
 init(_ point: Rotation3D)
 ```
+
+Available when `Scalar` is `Double`.
 
 
 ---

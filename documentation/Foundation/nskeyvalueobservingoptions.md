@@ -1,7 +1,8 @@
 # NSKeyValueObservingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The values that can be returned in a change dictionary.
 
@@ -20,46 +21,51 @@ The values that can be returned in a change dictionary.
 struct NSKeyValueObservingOptions
 ```
 
+```c
+enum NSKeyValueObservingOptions : NSUInteger;
+```
+
 #### Overview
 
-These constants are passed to [`addObserver(_:forKeyPath:options:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/addobserver(_:forkeypath:options:context:)) and determine the values that are returned as part of the change dictionary passed to an [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)). You can pass `0` if you require no change dictionary values.
+These constants are passed to [`addObserver(_:forKeyPath:options:context:)`](../ObjectiveC/nsobject-swift.class/addobserver%28_,forkeypath,options,context%29.md) and determine the values that are returned as part of the change dictionary passed to an [`observeValue(forKeyPath:of:change:context:)`](../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md). You can pass `0` if you require no change dictionary values.
 
 ## Topics
 
 ### Constants
-- [static var new: NSKeyValueObservingOptions](nskeyvalueobservingoptions/new.md)
+- [static var new: NSKeyValueObservingOptions](./nskeyvalueobservingoptions/new.md)
   Indicates that the change dictionary should provide the new attribute value, if applicable.
-- [static var old: NSKeyValueObservingOptions](nskeyvalueobservingoptions/old.md)
+- [static var old: NSKeyValueObservingOptions](./nskeyvalueobservingoptions/old.md)
   Indicates that the change dictionary should contain the old attribute value, if applicable.
-- [static var initial: NSKeyValueObservingOptions](nskeyvalueobservingoptions/initial.md)
+- [static var initial: NSKeyValueObservingOptions](./nskeyvalueobservingoptions/initial.md)
   If specified, a notification should be sent to the observer immediately, before the observer registration method even returns.
-- [static var prior: NSKeyValueObservingOptions](nskeyvalueobservingoptions/prior.md)
+- [static var prior: NSKeyValueObservingOptions](./nskeyvalueobservingoptions/prior.md)
   Whether separate notifications should be sent to the observer before and after each change, instead of a single notification after the change.
 ### Initializers
-- [init(rawValue: UInt)](nskeyvalueobservingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nskeyvalueobservingoptions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum NSGrammaticalCase](nsgrammaticalcase.md)
-- [enum NSGrammaticalDefiniteness](nsgrammaticaldefiniteness.md)
-- [enum NSGrammaticalDetermination](nsgrammaticaldetermination.md)
-- [enum NSGrammaticalPerson](nsgrammaticalperson.md)
-- [enum NSGrammaticalPronounType](nsgrammaticalpronountype.md)
-- [enum NSKeyValueChange](nskeyvaluechange.md)
+### Enumerations
+- [enum NSGrammaticalCase](./nsgrammaticalcase.md)
+- [enum NSGrammaticalDefiniteness](./nsgrammaticaldefiniteness.md)
+- [enum NSGrammaticalDetermination](./nsgrammaticaldetermination.md)
+- [enum NSGrammaticalPerson](./nsgrammaticalperson.md)
+- [enum NSGrammaticalPronounType](./nsgrammaticalpronountype.md)
+- [enum NSKeyValueChange](./nskeyvaluechange.md)
   The kinds of changes that can be observed.
-- [enum NSKeyValueSetMutationKind](nskeyvaluesetmutationkind.md)
+- [enum NSKeyValueSetMutationKind](./nskeyvaluesetmutationkind.md)
 
 
 ---

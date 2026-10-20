@@ -1,7 +1,8 @@
 # extendedDynamicRangeHeadroom
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of headroom available for extended dynamic range content.
 
@@ -20,7 +21,7 @@ var extendedDynamicRangeHeadroom: Float { get set }
 
 #### Discussion
 
-When EDR output is enabled using [`extendedDynamicRangeOutput`](realityrenderer/extendeddynamicrangeoutput.md), standard dynamic range values output by this [`RealityRenderer`](realityrenderer.md) will be scaled such that there’s some *headroom* to display extended range values.
+When EDR output is enabled using [`extendedDynamicRangeOutput`](./extendeddynamicrangeoutput.md), standard dynamic range values output by this [`RealityRenderer`](../realityrenderer.md) will be scaled such that there’s some *headroom* to display extended range values.
 
 This value is in the range `[1.0-16.0]`. The default value is `2.0`.
 

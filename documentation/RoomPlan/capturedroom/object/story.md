@@ -1,7 +1,8 @@
 # story
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floor number or level on which the object resides.
 
@@ -18,9 +19,10 @@ var story: Int { get }
 
 ## See Also
 
-- [var transform: simd_float4x4](capturedroom/object/transform.md)
+### Positioning and sizing an object
+- [var transform: simd_float4x4](./transform.md)
   A matrix that defines the object’s position and orientation in the room.
-- [var dimensions: simd_float3](capturedroom/object/dimensions.md)
+- [var dimensions: simd_float3](./dimensions.md)
   A bounding box sized to the object’s extremities.
 
 

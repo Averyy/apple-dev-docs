@@ -1,17 +1,24 @@
 # moveDragCaret(to:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the drag caret that indicates the destination of a drag operation to a given point.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 func moveDragCaret(to point: NSPoint)
+```
+
+```objc
+- (void) moveDragCaretToPoint:(NSPoint) point;
 ```
 
 ## Parameters
@@ -20,9 +27,10 @@ func moveDragCaret(to point: NSPoint)
 
 ## See Also
 
-- [func element(at: NSPoint) -> [AnyHashable : Any]!](webview-swift.class/element(at:).md)
+### Dragging
+- [func element(at: NSPoint) -> [AnyHashable : Any]!](./element%28at%29.md)
   Returns a dictionary description of the element at a given point in the receiver’s coordinates.
-- [func removeDragCaret()](webview-swift.class/removedragcaret.md)
+- [func removeDragCaret()](./removedragcaret%28%29.md)
   Removes the drag caret that indicates the destination of a drag operation.
 
 

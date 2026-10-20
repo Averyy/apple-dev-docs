@@ -1,18 +1,19 @@
 # AVMusicSequenceLoadOptions
 
 **Framework**: AVFAudio  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines whether data on different MIDI channels map to multiple tracks, or whether the framework preserves the tracks as they are.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,37 @@ A structure that defines whether data on different MIDI channels map to multiple
 struct AVMusicSequenceLoadOptions
 ```
 
+```c
+enum AVMusicSequenceLoadOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a load option
-- [init(rawValue: UInt)](avmusicsequenceloadoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./avmusicsequenceloadoptions/init%28rawvalue%29.md)
   Creates a new instance with the raw value you specify.
 ### Getting standard load options
-- [static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions](avmusicsequenceloadoptions/smf_channelstotracks.md)
+- [static var smf_ChannelsToTracks: AVMusicSequenceLoadOptions](./avmusicsequenceloadoptions/smf_channelstotracks.md)
   An option that represents data on different MIDI channels mapped to multiple tracks.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-8o58w.md)
+### Managing sequence load options
+- [func load(from: Data, options: AVMusicSequenceLoadOptions) throws](./avaudiosequencer/load%28from,options%29-8o58w.md)
   Parses the data and adds its events to the sequence.
-- [func load(from: URL, options: AVMusicSequenceLoadOptions) throws](avaudiosequencer/load(from:options:)-9kb6m.md)
+- [func load(from: URL, options: AVMusicSequenceLoadOptions) throws](./avaudiosequencer/load%28from,options%29-9kb6m.md)
   Loads the file the URL references and adds the events to the sequence.
 
 

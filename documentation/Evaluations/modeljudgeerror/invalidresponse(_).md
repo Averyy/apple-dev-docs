@@ -1,7 +1,8 @@
 # ModelJudgeError.invalidResponse(_:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The evaluator can’t interpret the model judge’s response as a valid score.
 

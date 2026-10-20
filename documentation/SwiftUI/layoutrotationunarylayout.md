@@ -1,7 +1,8 @@
 # LayoutRotationUnaryLayout
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A layout that rotates the space containing a view.
 
@@ -22,20 +23,21 @@ struct LayoutRotationUnaryLayout
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ViewModifier](viewmodifier.md)
+- [Animatable](./animatable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [ViewModifier](./viewmodifier.md)
 
 ## See Also
 
-- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](view/layoutdirectionbehavior(_:).md)
+### Setting a layout direction
+- [func layoutDirectionBehavior(LayoutDirectionBehavior) -> some View](./view/layoutdirectionbehavior%28_%29.md)
   Sets the behavior of this view for different layout directions.
-- [enum LayoutDirectionBehavior](layoutdirectionbehavior.md)
+- [enum LayoutDirectionBehavior](./layoutdirectionbehavior.md)
   A description of what should happen when the layout direction changes.
-- [var layoutDirection: LayoutDirection](environmentvalues/layoutdirection.md)
+- [var layoutDirection: LayoutDirection](./environmentvalues/layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum LayoutDirection](layoutdirection.md)
+- [enum LayoutDirection](./layoutdirection.md)
   A direction in which SwiftUI can lay out content.
 
 

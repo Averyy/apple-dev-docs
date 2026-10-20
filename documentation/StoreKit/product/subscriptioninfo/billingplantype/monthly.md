@@ -1,7 +1,8 @@
 # monthly
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -20,12 +21,13 @@ static let monthly: Product.SubscriptionInfo.BillingPlanType
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../../../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## See Also
 
-- [static let upFront: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/upfront.md)
+### Type Properties - generated
+- [static let upFront: Product.SubscriptionInfo.BillingPlanType](./upfront.md)
 
 
 ---

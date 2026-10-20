@@ -1,7 +1,8 @@
 # process(parameters:)
 
 **Framework**: Video Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +20,14 @@ func process(parameters: any VTFrameProcessorParameters) -> some AsyncSequence<V
 
 ## See Also
 
-- [func startSession(configuration: any VTFrameProcessorConfiguration) throws](vtframeprocessor/startsession(configuration:).md)
+### Processing frames
+- [func startSession(configuration: any VTFrameProcessorConfiguration) throws](./startsession%28configuration%29.md)
   Starts a new session and configures the processor pipeline.
-- [func process(parameters: any VTFrameProcessorParameters, completionHandler: (any VTFrameProcessorParameters, (any Error)?) -> Void)](vtframeprocessor/process(parameters:completionhandler:).md)
+- [func process(parameters: any VTFrameProcessorParameters, completionHandler: (any VTFrameProcessorParameters, (any Error)?) -> Void)](./process%28parameters,completionhandler%29.md)
   Asynchronously performs the video effect specified in the start session.
-- [func process(with: any MTLCommandBuffer, parameters: any VTFrameProcessorParameters)](vtframeprocessor/process(with:parameters:).md)
+- [func process(with: any MTLCommandBuffer, parameters: any VTFrameProcessorParameters)](./process%28with,parameters%29.md)
   Asynchronously performs the video effect specified in the start session specifically for Metal.
-- [func endSession()](vtframeprocessor/endsession.md)
+- [func endSession()](./endsession%28%29.md)
   Performs all necessary tasks to end the session.
 
 

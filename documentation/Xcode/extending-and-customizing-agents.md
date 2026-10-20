@@ -1,6 +1,7 @@
 # Extending and customizing agents
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Expand agent capabilities for your specific needs and application domain.
 
@@ -8,7 +9,7 @@ Expand agent capabilities for your specific needs and application domain.
 
 You can give agents more guidance and expertise so that they work productively, can validate their own work, and operate autonomously on your tasks with less intervention. To do this, grant agents permission to use system commands and tools, request agents use built-in skills, add agent-specific configuration files, and install external plug-ins that add more capabilities.
 
-#### Control Access to External Commands and Tools
+#### Control access to external commands and tools
 
 If you want finer control over agents using commands and tools while performing tasks, you can grant or deny access in Intelligence settings.
 
@@ -18,7 +19,7 @@ To give access to a command-line tool that you run in Terminal, click the Add bu
 
 To remove access to a tool, select the tool and click the Remove button (-) under Allowed Tools.
 
-#### Discover Agent Skills and Abilities
+#### Discover agent skills and abilities
 
 Xcode includes built-in expertise that can guide agents to use the best APIs and workflows for high-level tasks. Xcode automatically uses this knowledge based on the prompt that you enter.
 
@@ -26,7 +27,7 @@ For example, when you enter a prompt that includes translating part of your app,
 
 Alternatively, explicitly invoke a skill using a slash command, such as `/plan` for plan mode. To discover all the skills available in Xcode, type the slash (`/`) character in the message text field and scroll through the list in the pop-up menu. To exit plan mode that’s a workflow skill, type `/exit` and choose `/exit-plan` from the pop-up menu.
 
-#### Customize Agent Environments
+#### Customize agent environments
 
 Using product-specific configuration files, you can customize agents beyond the options available in Intelligence settings and the coding assistant. For example, you can set a default model, add additional Model Context Protocol (MCP) servers, and create your own skills.
 
@@ -38,7 +39,7 @@ Place the configuration files in agent-specific subfolders in the `~/Library/Dev
 
 > **Note**: These configurations only affect agents when you launch them in Xcode.
 
-#### Install Agentic Coding Plug Ins
+#### Install agentic coding plug-ins
 
 You can install plug-ins that contain additional subagents, Model Context Protocol (MCP) servers, and skills that agents can use. To manage plug-ins, open Intelligence settings and click the Plug-ins row under Agents in Xcode.
 
@@ -46,9 +47,10 @@ To add a plug-in, click the Add Plug-in button. In the sheet, choose an import o
 
 ## See Also
 
-- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
+### Agent configuration
+- [Giving external agents access to Xcode](./giving-external-agents-access-to-xcode.md)
   Let agents access your project and Xcode capabilities using the Model Context Protocol.
-- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+- [Updating your Xcode project configuration file format](./updating-your-xcode-project-configuration-file-format.md)
   Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 

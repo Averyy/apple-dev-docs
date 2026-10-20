@@ -1,7 +1,8 @@
 # center
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The center coordinate of the region.
 
@@ -10,13 +11,14 @@ The center coordinate of the region.
 
 ## Declaration
 
-```swift
+```
 center: CoordinateData;
 ```
 
 ## See Also
 
-- [span](coordinateregiondata/span.md)
+### Region properties
+- [span](./span.md)
   The span of the region.
 
 

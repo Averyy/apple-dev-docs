@@ -1,7 +1,8 @@
 # cadence(_:unit:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new alert for a range of cadence values.
 
@@ -18,6 +19,8 @@ Creates a new alert for a range of cadence values.
 static func cadence(_ range: ClosedRange<Double>, unit: UnitFrequency = WorkoutAlertMetric.countPerMinute) -> Self
 ```
 
+Available when `Self` is `CadenceRangeAlert`.
+
 ## Parameters
 
 - `range`: A closed range representing the cadence’s value.
@@ -25,11 +28,12 @@ static func cadence(_ range: ClosedRange<Double>, unit: UnitFrequency = WorkoutA
 
 ## See Also
 
-- [struct CadenceRangeAlert](cadencerangealert.md)
+### Creating cadence alerts
+- [struct CadenceRangeAlert](../cadencerangealert.md)
   An alert for a range of cadence values.
-- [static func cadence(Double, unit: UnitFrequency) -> Self](workoutalert/cadence(_:unit:)-3fnpg.md)
+- [static func cadence(Double, unit: UnitFrequency) -> Self](./cadence%28_,unit%29-3fnpg.md)
   Creates an alert for the specified cadence threshold.
-- [struct CadenceThresholdAlert](cadencethresholdalert.md)
+- [struct CadenceThresholdAlert](../cadencethresholdalert.md)
   An alert for a cadence threshold.
 
 

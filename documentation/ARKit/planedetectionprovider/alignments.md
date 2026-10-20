@@ -1,7 +1,8 @@
 # alignments
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The plane alignments that you configure a provider to detect.
 
@@ -16,9 +17,10 @@ final var alignments: [PlaneAnchor.Alignment] { get }
 
 ## See Also
 
-- [var state: DataProviderState](planedetectionprovider/state.md)
+### Inspecting a plane detection provider
+- [var state: DataProviderState](./state.md)
   The current status of data coming from a provider.
-- [var description: String](planedetectionprovider/description.md)
+- [var description: String](./description.md)
   A textual representation of this plane detection provider.
 
 

@@ -1,14 +1,15 @@
 # kIOStorageAccessNone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOStorageAccessNone = 0x00
 ```
 

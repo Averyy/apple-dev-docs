@@ -1,12 +1,13 @@
 # initialFirstResponder
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that’s made first responder (also called the key view) the first time the window is placed onscreen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The view that’s made first responder (also called the key view) the first time
 weak var initialFirstResponder: NSView? { get set }
 ```
 
+```objc
+@property (weak, nullable) NSView * initialFirstResponder;
+```
+
 ## See Also
 
-- [var nextKeyView: NSView?](nsview/nextkeyview.md)
+### Related Documentation
+- [var nextKeyView: NSView?](../nsview/nextkeyview.md)
   The view object that follows the current view in the key view loop.
-- [var firstResponder: NSResponder?](nswindow/firstresponder.md)
+### Managing Responders
+- [var firstResponder: NSResponder?](./firstresponder.md)
   The window’s first responder.
-- [func makeFirstResponder(NSResponder?) -> Bool](nswindow/makefirstresponder(_:).md)
+- [func makeFirstResponder(NSResponder?) -> Bool](./makefirstresponder%28_%29.md)
   Attempts to make a given responder the first responder for the window.
 
 

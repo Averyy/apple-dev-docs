@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to merchandise an individual product using a configuration for product view style.
 
@@ -23,7 +24,7 @@ init(_ configuration: ProductViewStyleConfiguration) where Icon == ProductViewSt
 
 #### Discussion
 
-Use this initializer within the [`makeBody(configuration:)`](productviewstyle/makebody(configuration:).md) method of a [`ProductViewStyle`](productviewstyle.md) to create an instance of the product view you want to style. This is useful for custom product view styles that modify the current style, rather than implementing a new style.
+Use this initializer within the [`makeBody(configuration:)`](../productviewstyle/makebody%28configuration%29.md) method of a [`ProductViewStyle`](../productviewstyle.md) to create an instance of the product view you want to style. This is useful for custom product view styles that modify the current style, rather than implementing a new style.
 
 The following code example shows how to create and use custom styles by composing standard styles:
 

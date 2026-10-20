@@ -1,7 +1,8 @@
 # sample(forHostTime:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a video sample along with auxiliary information for display at the specified host time.
 
@@ -30,10 +31,11 @@ A sample containing the frame, presentation timestamp, and active configuration 
 
 ## See Also
 
-- [AVPlayerVideoOutput.Sample](avplayervideooutput/sample.md)
+### Accessing video data
+- [AVPlayerVideoOutput.Sample](./sample.md)
   A video frame along with auxiliary information for display at the specified presentation time.
-- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](avplayervideooutput/taggedbuffers(forhosttime:).md)
-- [AVPlayerVideoOutput.Configuration](avplayervideooutput/configuration.md)
+- [func taggedBuffers(forHostTime: CMTime) -> (taggedBufferGroup: [CMTaggedBuffer], presentationTime: CMTime, activeConfiguration: AVPlayerVideoOutput.Configuration)?](./taggedbuffers%28forhosttime%29.md)
+- [AVPlayerVideoOutput.Configuration](./configuration.md)
   An object that provides configuration information for the related player item.
 
 

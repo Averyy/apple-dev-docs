@@ -1,7 +1,8 @@
 # localMaxStreamsBidirectional
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of bidirectional streams that the peer can create on a QUIC connection.
 
@@ -22,17 +23,18 @@ var localMaxStreamsBidirectional: Int { get set }
 
 ## See Also
 
-- [var negotiatedALPN: String?](nwprotocolquic/metadata/negotiatedalpn.md)
+### Inspecting Connection State
+- [var negotiatedALPN: String?](./negotiatedalpn.md)
   The Application-Layer Protocol Negotiation value used when establishing the connection.
-- [var localMaxStreamsUnidirectional: Int](nwprotocolquic/metadata/localmaxstreamsunidirectional.md)
+- [var localMaxStreamsUnidirectional: Int](./localmaxstreamsunidirectional.md)
   The maximum number of unidirectional streams that the peer can create on a QUIC connection.
-- [var remoteMaxStreamsBidirectional: Int](nwprotocolquic/metadata/remotemaxstreamsbidirectional.md)
+- [var remoteMaxStreamsBidirectional: Int](./remotemaxstreamsbidirectional.md)
   The maximum number of bidirectional streams advertised by peer that the connection is allowed to create.
-- [var remoteMaxStreamsUnidirectional: Int](nwprotocolquic/metadata/remotemaxstreamsunidirectional.md)
+- [var remoteMaxStreamsUnidirectional: Int](./remotemaxstreamsunidirectional.md)
   The maximum number of unidirectional streams advertised by peer that the connection is allowed to create.
-- [var remoteIdleTimeout: Int](nwprotocolquic/metadata/remoteidletimeout.md)
+- [var remoteIdleTimeout: Int](./remoteidletimeout.md)
   The idle timeout value from the peer’s transport parameters, in milliseconds.
-- [var securityProtocolMetadata: sec_protocol_metadata_t](nwprotocolquic/metadata/securityprotocolmetadata.md)
+- [var securityProtocolMetadata: sec_protocol_metadata_t](./securityprotocolmetadata.md)
   The result of the QUIC handshake.
 
 

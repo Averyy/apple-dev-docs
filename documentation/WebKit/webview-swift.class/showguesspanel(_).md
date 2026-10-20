@@ -1,17 +1,22 @@
 # showGuessPanel(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An action method that shows a spelling correction panel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func showGuessPanel(_ sender: Any?)
+```
+
+```objc
+- (void) showGuessPanel:(id) sender;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ This action method opens the Spelling panel, allowing the user to make a correct
 
 ## See Also
 
-- [func checkSpelling(Any?)](webview-swift.class/checkspelling(_:).md)
+### Spell-checking Action Methods
+- [func checkSpelling(Any?)](./checkspelling%28_%29.md)
   An action method that searches for a misspelled word in the receiver.
 
 

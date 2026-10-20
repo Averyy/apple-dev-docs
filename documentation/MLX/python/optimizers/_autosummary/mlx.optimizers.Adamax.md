@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.Adamax
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.Adamax.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.Adamax
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.Adamax
-
 **class Adamax(*learning_rate: float | Callable[[array], array]*, *betas: List[float] = [0.9, 0.999]*, *eps: float = 1e-08*)**
 : The Adamax optimizer, a variant of Adam based on the infinity norm [1].
 Our Adam implementation follows the original paper and omits the bias
@@ -63,5 +36,3 @@ Performs the Adamax parameter update and stores \(v\) and \(m\) in the optimizer
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

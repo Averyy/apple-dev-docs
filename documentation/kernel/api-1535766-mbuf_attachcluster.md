@@ -1,18 +1,19 @@
 # mbuf_attachcluster
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_attachcluster(mbuf_how_t how, mbuf_type_t type, mbuf_t *mbuf, caddr_t extbuf, void (*extfree)(caddr_t, u_int, caddr_t), size_t extsize, caddr_t extarg);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success EINVAL - Invalid parameter ENOMEM - Not enough memory available
 

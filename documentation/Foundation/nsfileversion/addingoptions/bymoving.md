@@ -1,7 +1,8 @@
 # byMoving
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 static var byMoving: NSFileVersion.AddingOptions { get }
+```
+
+```c
+NSFileVersionAddingByMoving
 ```
 
 #### Discussion

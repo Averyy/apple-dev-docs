@@ -1,7 +1,8 @@
 # NSManagedObjectContext.ConcurrencyType
 
 **Framework**: Core Data  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The concurrency types to use with a managed object context.
 
@@ -11,7 +12,7 @@ The concurrency types to use with a managed object context.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,25 +24,26 @@ struct ConcurrencyType
 ## Topics
 
 ### Concurrency Types
-- [static let mainQueue: NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct/mainqueue.md)
+- [static let mainQueue: NSManagedObjectContext.ConcurrencyType](./concurrencytype-swift.struct/mainqueue.md)
   A concurrency type where the context performs its tasks on the main queue.
-- [static let privateQueue: NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct/privatequeue.md)
+- [static let privateQueue: NSManagedObjectContext.ConcurrencyType](./concurrencytype-swift.struct/privatequeue.md)
   A concurrency type where the context performs its tasks on a private queue.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [convenience init(NSManagedObjectContext.ConcurrencyType)](nsmanagedobjectcontext/init(_:).md)
+### Creating a context
+- [convenience init(NSManagedObjectContext.ConcurrencyType)](./init%28_%29.md)
   Creates a context that uses the specified concurrency type.
-- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](nsmanagedobjectcontext/init(concurrencytype:).md)
+- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](./init%28concurrencytype%29.md)
   Creates a context that uses the specified concurrency type.
-- [enum NSManagedObjectContextConcurrencyType](nsmanagedobjectcontextconcurrencytype.md)
+- [enum NSManagedObjectContextConcurrencyType](../nsmanagedobjectcontextconcurrencytype.md)
   The concurrency types you can use with a managed object context.
 
 

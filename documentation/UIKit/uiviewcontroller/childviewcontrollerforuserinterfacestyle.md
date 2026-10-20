@@ -1,7 +1,8 @@
 # childViewControllerForUserInterfaceStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The child view controller that supports the preferred user interface style.
 
@@ -14,19 +15,24 @@ The child view controller that supports the preferred user interface style.
 var childViewControllerForUserInterfaceStyle: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIViewController * childViewControllerForUserInterfaceStyle;
+```
+
 #### Discussion
 
-The default value of this property is `nil`. A container view controller can override this property and return the child view controller that supports the currently preferred user interface style, as determined by the [`preferredUserInterfaceStyle`](uiviewcontroller/preferreduserinterfacestyle.md) property.
+The default value of this property is `nil`. A container view controller can override this property and return the child view controller that supports the currently preferred user interface style, as determined by the [`preferredUserInterfaceStyle`](./preferreduserinterfacestyle.md) property.
 
 ## See Also
 
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiviewcontroller/overrideuserinterfacestyle.md)
+### Adjusting the interface style
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The user interface style adopted by the view controller and all of its children.
-- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](uiviewcontroller/preferreduserinterfacestyle.md)
+- [var preferredUserInterfaceStyle: UIUserInterfaceStyle](./preferreduserinterfacestyle.md)
   The preferred interface style for this view controller.
-- [func setNeedsUserInterfaceAppearanceUpdate()](uiviewcontroller/setneedsuserinterfaceappearanceupdate.md)
+- [func setNeedsUserInterfaceAppearanceUpdate()](./setneedsuserinterfaceappearanceupdate%28%29.md)
   Notifies the view controller that a change occurred that might affect the preferred interface style.
-- [enum UIUserInterfaceStyle](uiuserinterfacestyle.md)
+- [enum UIUserInterfaceStyle](../uiuserinterfacestyle.md)
   Constants that indicate the interface style for the app.
 
 

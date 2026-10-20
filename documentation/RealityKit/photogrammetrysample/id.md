@@ -1,7 +1,8 @@
 # id
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique identifier for the sample.  This `id` *must* be in the domain [0, 2147483647].
 

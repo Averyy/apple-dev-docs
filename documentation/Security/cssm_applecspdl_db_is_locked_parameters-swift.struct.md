@@ -1,7 +1,8 @@
 # cssm_applecspdl_db_is_locked_parameters
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,19 +13,23 @@
 struct cssm_applecspdl_db_is_locked_parameters
 ```
 
+```c
+struct cssm_applecspdl_db_is_locked_parameters;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_applecspdl_db_is_locked_parameters-swift.struct/init.md)
-- [init(isLocked: uint8)](cssm_applecspdl_db_is_locked_parameters-swift.struct/init(islocked:).md)
+- [init()](./cssm_applecspdl_db_is_locked_parameters-swift.struct/init%28%29.md)
+- [init(isLocked: uint8)](./cssm_applecspdl_db_is_locked_parameters-swift.struct/init%28islocked%29.md)
 ### Instance Properties
-- [var isLocked: uint8](cssm_applecspdl_db_is_locked_parameters-swift.struct/islocked.md)
+- [var isLocked: uint8](./cssm_applecspdl_db_is_locked_parameters-swift.struct/islocked.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

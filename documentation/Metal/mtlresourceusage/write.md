@@ -1,7 +1,8 @@
 # write
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that enables writing to the resource.
 
@@ -17,6 +18,10 @@ An option that enables writing to the resource.
 
 ```swift
 static var write: MTLResourceUsage { get }
+```
+
+```c
+MTLResourceUsageWrite
 ```
 
 

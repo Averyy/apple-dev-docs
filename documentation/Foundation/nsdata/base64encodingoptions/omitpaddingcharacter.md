@@ -1,7 +1,8 @@
 # omitPaddingCharacter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Omit the `=` padding characters in the end of the base64 encoded result
 

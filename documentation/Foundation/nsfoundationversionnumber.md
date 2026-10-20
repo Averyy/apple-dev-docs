@@ -1,7 +1,8 @@
 # NSFoundationVersionNumber
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the Foundation framework in the current environment.
 
@@ -18,6 +19,10 @@ The version of the Foundation framework in the current environment.
 
 ```swift
 let NSFoundationVersionNumber: Double
+```
+
+```c
+extern const double NSFoundationVersionNumber;
 ```
 
 

@@ -1,7 +1,8 @@
 # preferredDevice
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device object that the system recommends using for this view.
 
@@ -19,13 +20,18 @@ The device object that the system recommends using for this view.
 var preferredDevice: (any MTLDevice)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<MTLDevice> preferredDevice;
+```
+
 #### Discussion
 
-On systems with a single GPU, this method returns the default Metal system device; see [`MTLCreateSystemDefaultDevice()`](https://developer.apple.com/documentation/metal/mtlcreatesystemdefaultdevice()). On systems with more than one GPU, this method returns the [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) that was last used to composite and present the view’s contents. This device object usually corresponds to the GPU associated with the screen that’s displaying the view. If you set the view’s [`device`](mtkview/device.md) property to this device object, you reduce the number of cross-GPU texture copies that Core Animation must make to present the view’s contents onscreen.
+On systems with a single GPU, this method returns the default Metal system device; see [`MTLCreateSystemDefaultDevice()`](../../Metal/mtlcreatesystemdefaultdevice%28%29.md). On systems with more than one GPU, this method returns the [`MTLDevice`](../../Metal/mtldevice.md) that was last used to composite and present the view’s contents. This device object usually corresponds to the GPU associated with the screen that’s displaying the view. If you set the view’s [`device`](./device.md) property to this device object, you reduce the number of cross-GPU texture copies that Core Animation must make to present the view’s contents onscreen.
 
 ## See Also
 
-- [var device: (any MTLDevice)?](mtkview/device.md)
+### Configuring the Metal Device
+- [var device: (any MTLDevice)?](./device.md)
   The device object the view uses to create its Metal objects.
 
 

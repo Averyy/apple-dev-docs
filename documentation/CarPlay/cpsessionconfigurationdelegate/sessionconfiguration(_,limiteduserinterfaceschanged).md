@@ -1,7 +1,8 @@
 # sessionConfiguration(_:limitedUserInterfacesChanged:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system changed keyboard or list limits on the user interface.
 
@@ -14,6 +15,10 @@ Tells the delegate that the system changed keyboard or list limits on the user i
 
 ```swift
 optional func sessionConfiguration(_ sessionConfiguration: CPSessionConfiguration, limitedUserInterfacesChanged limitedUserInterfaces: CPLimitableUserInterface)
+```
+
+```objc
+- (void) sessionConfiguration:(CPSessionConfiguration *) sessionConfiguration limitedUserInterfacesChanged:(CPLimitableUserInterface) limitedUserInterfaces;
 ```
 
 ## Parameters

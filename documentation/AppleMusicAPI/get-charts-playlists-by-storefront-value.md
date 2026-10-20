@@ -1,7 +1,8 @@
 # Get Charts Playlists by Storefront Value
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch one or more Charts Playlists by using their Storefront value.
 
@@ -14,7 +15,7 @@ Fetch one or more Charts Playlists by using their Storefront value.
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/playlists?filter[storefront-chart]=us
 ```
 
@@ -4382,24 +4383,38 @@ https://api.music.apple.com/v1/catalog/us/playlists?filter[storefront-chart]=us
 
 ## Parameters
 
+### Path Parameters
+
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 - `filter[storefront-chart]` ([string]) *(required)*: A filter to apply to the request.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 
+## Responses
+
+- `200` OK (`PlaylistsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object Playlists](playlists.md)
+### Related Documentation
+- [object Playlists](./playlists.md)
   A resource object that represents a playlist.
-- [object PlaylistsResponse](playlistsresponse.md)
+- [object PlaylistsResponse](./playlistsresponse.md)
   The response to a playlists request.
-- [Get a Catalog Playlist](get-a-catalog-playlist.md)
+### Requesting a Catalog Playlist
+- [Get a Catalog Playlist](./get-a-catalog-playlist.md)
   Fetch a playlist by using its identifier.
-- [Get a Catalog Playlist's Relationship Directly by Name](fetch-a-relationship-on-this-resource-by-name-707nb.md)
+- [Get a Catalog Playlist's Relationship Directly by Name](./fetch-a-relationship-on-this-resource-by-name-707nb.md)
   Fetch a playlist’s relationship by using its identifier.
-- [Get a Catalog Playlist’s Relationship View Directly by Name](fetch-a-view-on-this-resource-by-name-6i3ek.md)
+- [Get a Catalog Playlist’s Relationship View Directly by Name](./fetch-a-view-on-this-resource-by-name-6i3ek.md)
   Fetch related resources for a single playlist’s relationship view.
-- [Get Multiple Catalog Playlists](get-multiple-catalog-playlists.md)
+- [Get Multiple Catalog Playlists](./get-multiple-catalog-playlists.md)
   Fetch one or more playlists by using their identifiers.
 
 

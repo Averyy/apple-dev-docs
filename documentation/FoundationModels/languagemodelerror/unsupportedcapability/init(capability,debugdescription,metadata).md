@@ -1,7 +1,8 @@
 # init(capability:debugDescription:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates information describing a capability the model doesn’t support.
 

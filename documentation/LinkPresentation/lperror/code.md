@@ -1,7 +1,8 @@
 # LPError.Code
 
 **Framework**: Link Presentation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible error values that can be returned from LinkPresentation APIs.
 
@@ -20,38 +21,43 @@ Possible error values that can be returned from LinkPresentation APIs.
 enum Code
 ```
 
+```c
+enum LPErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error cases
-- [LPError.Code.metadataFetchCancelled](lperror/code/metadatafetchcancelled.md)
+- [LPError.Code.metadataFetchCancelled](./code/metadatafetchcancelled.md)
   An error indicating that the metadata fetch was canceled by the client.
-- [LPError.Code.metadataFetchFailed](lperror/code/metadatafetchfailed.md)
+- [LPError.Code.metadataFetchFailed](./code/metadatafetchfailed.md)
   An error indicating that a metadata fetch failed.
-- [LPError.Code.metadataFetchTimedOut](lperror/code/metadatafetchtimedout.md)
+- [LPError.Code.metadataFetchTimedOut](./code/metadatafetchtimedout.md)
   An error indicating that the metadata fetch took longer than allowed.
-- [LPError.Code.unknown](lperror/code/unknown.md)
+- [LPError.Code.unknown](./code/unknown.md)
   An unknown error.
 ### Enumeration Cases
-- [LPError.Code.metadataFetchNotAllowed](lperror/code/metadatafetchnotallowed.md)
+- [LPError.Code.metadataFetchNotAllowed](./code/metadatafetchnotallowed.md)
   An error indicating that the metadata fetch was not allowed due to system policies.
 ### Initializers
-- [init?(rawValue: Int)](lperror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LPError](lperror.md)
+### Errors
+- [struct LPError](../lperror.md)
   An error returned by the LinkPresentation framework.
-- [let LPErrorDomain: String](lperrordomain.md)
+- [let LPErrorDomain: String](../lperrordomain.md)
   The domain for Link Presentation errors.
 
 

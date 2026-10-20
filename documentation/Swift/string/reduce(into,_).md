@@ -1,7 +1,8 @@
 # reduce(into:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of combining the elements of the sequence using the given closure.
 
@@ -48,7 +49,7 @@ When `letters.reduce(into:_:)` is called, the following steps occur:
 
 If the sequence has no elements, `updateAccumulatingResult` is never executed and `initialResult` is the result of the call to `reduce(into:_:)`.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
@@ -57,14 +58,15 @@ If the sequence has no elements, `updateAccumulatingResult` is never executed an
 
 ## See Also
 
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](string/compactmap(_:).md)
+### Transforming a String’s Characters
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](string/flatmap(_:)-i3m9.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./flatmap%28_%29-i3m9.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](string/flatmap(_:)-6chuq.md)
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](string/reduce(_:_:).md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./flatmap%28_%29-6chuq.md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [var lazy: LazySequence<Self>](string/lazy.md)
+- [var lazy: LazySequence<Self>](./lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 
 

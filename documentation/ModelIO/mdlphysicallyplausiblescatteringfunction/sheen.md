@@ -1,7 +1,8 @@
 # sheen
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of highlights that appear only at glancing angles on a material’s surface.
 
@@ -19,31 +20,36 @@ The intensity of highlights that appear only at glancing angles on a material’
 var sheen: MDLMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MDLMaterialProperty * sheen;
+```
+
 #### Discussion
 
 The default value is `0.05`—a very slight highlight.
 
 ## See Also
 
-- [var subsurface: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/subsurface.md)
+### Working with Shading Properties
+- [var subsurface: MDLMaterialProperty](./subsurface.md)
   The degree to which light scatters under the surface of the material.
-- [var metallic: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/metallic.md)
+- [var metallic: MDLMaterialProperty](./metallic.md)
   The degree to which the material appears as a dielectric surface (lower values) or as a metal (higher values).
-- [var specularAmount: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/specularamount.md)
+- [var specularAmount: MDLMaterialProperty](./specularamount.md)
   The tendency of the material to generate specular highlights.
-- [var specularTint: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/speculartint.md)
+- [var specularTint: MDLMaterialProperty](./speculartint.md)
   The balance of color for specular highlights, between the light color (lower values) and the material’s base color (at higher values).
-- [var roughness: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/roughness.md)
+- [var roughness: MDLMaterialProperty](./roughness.md)
   The degree to which a material appears smooth, affecting both diffuse and specular response.
-- [var anisotropic: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/anisotropic.md)
+- [var anisotropic: MDLMaterialProperty](./anisotropic.md)
   The degree to which specular highlights elongate in the direction of the local tangent basis.
-- [var anisotropicRotation: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/anisotropicrotation.md)
+- [var anisotropicRotation: MDLMaterialProperty](./anisotropicrotation.md)
   The angle at which anisotropic effects are rotated relative to the local tangent basis.
-- [var sheenTint: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/sheentint.md)
+- [var sheenTint: MDLMaterialProperty](./sheentint.md)
   The balance of color for highlights that appear only at glancing angles, between the light color (lower values) and the material’s base color (at higher values).
-- [var clearcoat: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/clearcoat.md)
+- [var clearcoat: MDLMaterialProperty](./clearcoat.md)
   The intensity of a second specular highlight, similar to the gloss that results from a clear coat on an automotive finish.
-- [var clearcoatGloss: MDLMaterialProperty](mdlphysicallyplausiblescatteringfunction/clearcoatgloss.md)
+- [var clearcoatGloss: MDLMaterialProperty](./clearcoatgloss.md)
   The sharpness of a second specular highlight, similar to the gloss that results from a clear coat on an automotive finish.
 
 

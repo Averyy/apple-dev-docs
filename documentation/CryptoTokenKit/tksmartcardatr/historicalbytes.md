@@ -1,7 +1,8 @@
 # historicalBytes
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ATR historical bytes, not including interface bytes or the TCK (check byte).
 
@@ -20,13 +21,18 @@ The ATR historical bytes, not including interface bytes or the TCK (check byte).
 var historicalBytes: Data { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSData * historicalBytes;
+```
+
 ## See Also
 
-- [var protocols: [NSNumber]](tksmartcardatr/protocols.md)
+### Accessing ATR Attributes
+- [var protocols: [NSNumber]](./protocols.md)
   An array of protocols indicated in the ATR
-- [var bytes: Data](tksmartcardatr/bytes.md)
+- [var bytes: Data](./bytes.md)
   The ATR message data.
-- [var historicalRecords: [TKCompactTLVRecord]?](tksmartcardatr/historicalrecords.md)
+- [var historicalRecords: [TKCompactTLVRecord]?](./historicalrecords.md)
   A list of compact TLV records parsed from historical bytes.
 
 

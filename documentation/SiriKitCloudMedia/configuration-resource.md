@@ -1,7 +1,8 @@
 # Configure Your Service Endpoints
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Provide configuration details for your media server’s endpoints to a HomePod speaker or an Apple TV.
 
@@ -10,7 +11,7 @@ Provide configuration details for your media server’s endpoints to a HomePod s
 
 #### Discussion
 
-You must cryptographically sign your configuration endpoint response in JSON Web Signature (JWS) format when communicating with the SiriKit Cloud Media API via [`Media Setup`](https://developer.apple.com/documentation/mediasetup). JWS is part of the JSON Object Signing and Encryption (JOSE) open standard ([`RFC 7515`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7515)) that defines a way to cryptographically sign transmitted data.
+You must cryptographically sign your configuration endpoint response in JSON Web Signature (JWS) format when communicating with the SiriKit Cloud Media API via [Media Setup](../MediaSetup/MediaSetup.md). JWS is part of the JSON Object Signing and Encryption (JOSE) open standard ([RFC 7515](https://tools.ietf.org/html/rfc7515)) that defines a way to cryptographically sign transmitted data.
 
 To generate a signed JWS:
 
@@ -27,7 +28,7 @@ To create a JWS to communicate with the SiriKit Cloud Media API, use the followi
 | `typ` | The type used by the complete JWS. For SiriKit Cloud Media, use `JOSE`. |
 | `cty` | The content type used by the payload of the JWS. For SiriKit Cloud Media, use `JSON`. |
 
-The JWS payload contains JSON-encoded information specific to the SiriKit Cloud Media API and your app, such as intent type, media queues, base URLs for endpoints, and supported API version. The format is defined in the SiriKit Cloud Media [`OpenAPI Specification`](https://developer.apple.comhttps://developer.apple.com/sample-code/siri/sirikit-cloud-media-open-api.zip). Here are the major keys in the configuration data:
+The JWS payload contains JSON-encoded information specific to the SiriKit Cloud Media API and your app, such as intent type, media queues, base URLs for endpoints, and supported API version. The format is defined in the SiriKit Cloud Media [OpenAPI Specification](https://developer.apple.com/sample-code/siri/sirikit-cloud-media-open-api.zip). Here are the major keys in the configuration data:
 
 | Key | Description |
 | --- | --- |
@@ -89,21 +90,39 @@ Regardless of the programming language you’re using with the SiriKit Cloud Med
 
 ## Parameters
 
+### Header Parameters
+
 - `Accept-Language` (string) *(required)*: The client’s current user interface language. Your service responds to requests with localized content for this language, if available.
 - `Cache-Control` (string) *(required)*: Directives for your service’s caching behavior.
 - `If-None-Match` (ExtensionConfigTag): The identifier of the client’s current configuration information.
+
+  **Maximum Length**: `1002`
 - `Request-Timeout` (uint32) *(required)*: An approximate deadline, in seconds, for processing this real-time user request.
-- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an [`RFC 7231`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7231)-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+
+  **Minimum**: `1`
+- `User-Agent` (string) *(required)*: The extension protocol running on the client. This is an [RFC 7231](https://tools.ietf.org/html/rfc7231)-compliant string that contains the product name *AppleCloudExtension* and the SiriKit Extension library version running on the client.
+
+  **Maximum Length**: `250`; **Allowed Values**: `/AppleCloudExtension/([0-9]+\.[0-9]+\.[0-9]+) *.*/`
 - `x-applecloudextension-retry-count` (uint32): The number of previous requests from the client. The client omits this header on the first attempt.
+
+  **Minimum**: `1`
 - `x-applecloudextension-session-id` (string) *(required)*: A constant session identifier to include in each request and response. Your service responds to each request with the session ID provided by the client.
+
+  **Minimum Length**: `1`; **Maximum Length**: `128`
+
+## Responses
+
+- `200` OK (`ExtensionConfig`, `application/jose`): The request is successful.
+- `304` Not Modified: The request’s [`ExtensionConfigTag`](./extensionconfigtag.md) indicates the client already has the current configuration.
 
 ## See Also
 
-- [type ExtensionConfigTag](extensionconfigtag.md)
+### Device Configuration
+- [type ExtensionConfigTag](./extensionconfigtag.md)
   A unique identifier for a specific media service configuration.
-- [object ExtensionConfig](extensionconfig.md)
+- [object ExtensionConfig](./extensionconfig.md)
   Instructions for accessing your media service’s endpoints.
-- [object PlayMediaControlActivity](playmediacontrolactivity.md)
+- [object PlayMediaControlActivity](./playmediacontrolactivity.md)
   Options for reporting playback progress.
 
 

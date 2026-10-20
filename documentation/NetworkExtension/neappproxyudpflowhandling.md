@@ -1,7 +1,8 @@
 # NEAppProxyUDPFlowHandling
 
 **Framework**: Network Extension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +20,7 @@ protocol NEAppProxyUDPFlowHandling
 ## Topics
 
 ### Instance Methods
-- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteFlowEndpoint: NWEndpoint) -> Bool](neappproxyudpflowhandling/handlenewudpflow(_:initialremoteflowendpoint:).md)
+- [func handleNewUDPFlow(NEAppProxyUDPFlow, initialRemoteFlowEndpoint: NWEndpoint) -> Bool](./neappproxyudpflowhandling/handlenewudpflow%28_,initialremoteflowendpoint%29.md)
 
 
 ---

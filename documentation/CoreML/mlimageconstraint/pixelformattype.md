@@ -1,7 +1,8 @@
 # pixelFormatType
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model’s pixel format for an image feature.
 
@@ -20,11 +21,16 @@ The model’s pixel format for an image feature.
 var pixelFormatType: OSType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) OSType pixelFormatType;
+```
+
 ## See Also
 
-- [var pixelsWide: Int](mlimageconstraint/pixelswide.md)
+### Accessing the constraints
+- [var pixelsWide: Int](./pixelswide.md)
   The model’s default width for an image feature.
-- [var pixelsHigh: Int](mlimageconstraint/pixelshigh.md)
+- [var pixelsHigh: Int](./pixelshigh.md)
   The model’s default height for an image feature.
 
 

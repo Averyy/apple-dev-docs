@@ -1,7 +1,8 @@
 # init(near:far:fieldOfViewInDegrees:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a perspective camera component from near and far clipping planes and a field of view.
 
@@ -11,7 +12,7 @@ Creates a perspective camera component from near and far clipping planes and a f
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,7 +28,8 @@ init(near: Float = 0.01, far: Float = .infinity, fieldOfViewInDegrees: Float = 6
 
 ## See Also
 
-- [init(near: Float, far: Float, fieldOfViewInDegrees: Float, fieldOfViewOrientation: CameraFieldOfViewOrientation)](perspectivecameracomponent/init(near:far:fieldofviewindegrees:fieldofvieworientation:).md)
+### Creating a camera component
+- [init(near: Float, far: Float, fieldOfViewInDegrees: Float, fieldOfViewOrientation: CameraFieldOfViewOrientation)](./init%28near,far,fieldofviewindegrees,fieldofvieworientation%29.md)
   Creates a perspective camera component from near and far clipping planes, a field of view, and an orientation.
 
 

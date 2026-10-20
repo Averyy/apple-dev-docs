@@ -1,7 +1,8 @@
 # allowsSimultaneousRecognitionDuringLift
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the interaction allows recognition of other gestures during the lift activity.
 
@@ -17,17 +18,22 @@ A Boolean value that determines whether the interaction allows recognition of ot
 var allowsSimultaneousRecognitionDuringLift: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsSimultaneousRecognitionDuringLift;
+```
+
 #### Discussion
 
-If you set the [`allowsSimultaneousRecognitionDuringLift`](uidraginteraction/allowssimultaneousrecognitionduringlift.md) property to [`true`](https://developer.apple.com/documentation/swift/true), the interaction is canceled when another gesture is recognized. If you set this property to [`false`](https://developer.apple.com/documentation/swift/false) (the default value), competing gesture recognizers fail.
+If you set the [`allowsSimultaneousRecognitionDuringLift`](./allowssimultaneousrecognitionduringlift.md) property to [`true`](../../Swift/true.md), the interaction is canceled when another gesture is recognized. If you set this property to [`false`](../../Swift/false.md) (the default value), competing gesture recognizers fail.
 
-> **Note**:  [`UILongPressGestureRecognizer`](uilongpressgesturerecognizer.md) instances are always delayed and happen simultaneously during the lift activity.
+> **Note**:  [`UILongPressGestureRecognizer`](../uilongpressgesturerecognizer.md) instances are always delayed and happen simultaneously during the lift activity.
 
 ## See Also
 
-- [var delegate: (any UIDragInteractionDelegate)?](uidraginteraction/delegate.md)
+### Managing drag interactions
+- [var delegate: (any UIDragInteractionDelegate)?](./delegate.md)
   An object that configures and controls a drag interaction.
-- [protocol UIDragInteractionDelegate](uidraginteractiondelegate.md)
+- [protocol UIDragInteractionDelegate](../uidraginteractiondelegate.md)
   The interface for configuring and controlling a drag interaction.
 
 

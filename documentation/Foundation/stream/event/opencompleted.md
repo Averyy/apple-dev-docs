@@ -1,7 +1,8 @@
 # openCompleted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The open has completed successfully.
 
@@ -20,15 +21,20 @@ The open has completed successfully.
 static var openCompleted: Stream.Event { get }
 ```
 
+```c
+NSStreamEventOpenCompleted
+```
+
 ## See Also
 
-- [static var hasBytesAvailable: Stream.Event](stream/event/hasbytesavailable.md)
+### Constants
+- [static var hasBytesAvailable: Stream.Event](./hasbytesavailable.md)
   The stream has bytes to be read.
-- [static var hasSpaceAvailable: Stream.Event](stream/event/hasspaceavailable.md)
+- [static var hasSpaceAvailable: Stream.Event](./hasspaceavailable.md)
   The stream can accept bytes for writing.
-- [static var errorOccurred: Stream.Event](stream/event/erroroccurred.md)
+- [static var errorOccurred: Stream.Event](./erroroccurred.md)
   An error has occurred on the stream.
-- [static var endEncountered: Stream.Event](stream/event/endencountered.md)
+- [static var endEncountered: Stream.Event](./endencountered.md)
   The end of the stream has been reached.
 
 

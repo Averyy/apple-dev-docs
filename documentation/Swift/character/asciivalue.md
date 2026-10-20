@@ -1,7 +1,8 @@
 # asciiValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ASCII encoding value of this character, if it is an ASCII character.
 
@@ -46,11 +47,12 @@ let crlf = "\r\n" as Character
 
 ## See Also
 
-- [init(Unicode.Scalar)](character/init(_:)-8hq6x.md)
+### Working with a Character’s Unicode Values
+- [init(Unicode.Scalar)](./init%28_%29-8hq6x.md)
   Creates a character containing the given Unicode scalar value.
-- [var unicodeScalars: Character.UnicodeScalarView](character/unicodescalars.md)
-- [Character.UnicodeScalarView](character/unicodescalarview.md)
-- [var isASCII: Bool](character/isascii.md)
+- [var unicodeScalars: Character.UnicodeScalarView](./unicodescalars.md)
+- [Character.UnicodeScalarView](./unicodescalarview.md)
+- [var isASCII: Bool](./isascii.md)
   A Boolean value indicating whether this is an ASCII character.
 
 

@@ -1,12 +1,13 @@
 # NSFilePromiseProviderDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that provides the name of the promised file and writes the file to the destination directory when the file promise is fulfilled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ A set of methods that provides the name of the promised file and writes the file
 protocol NSFilePromiseProviderDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSFilePromiseProviderDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling File Promises
-- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](nsfilepromiseproviderdelegate/filepromiseprovider(_:filenamefortype:).md)
+- [func filePromiseProvider(NSFilePromiseProvider, fileNameForType: String) -> String](./nsfilepromiseproviderdelegate/filepromiseprovider%28_,filenamefortype%29.md)
   Provides the drag destination file’s name.
-- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](nsfilepromiseproviderdelegate/filepromiseprovider(_:writepromiseto:completionhandler:).md)
+- [func filePromiseProvider(NSFilePromiseProvider, writePromiseTo: URL, completionHandler: ((any Error)?) -> Void)](./nsfilepromiseproviderdelegate/filepromiseprovider%28_,writepromiseto,completionhandler%29.md)
   Writes the contents of a promise to the specified URL.
-- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](nsfilepromiseproviderdelegate/operationqueue(for:).md)
+- [func operationQueue(for: NSFilePromiseProvider) -> OperationQueue](./nsfilepromiseproviderdelegate/operationqueue%28for%29.md)
   Returns the operation queue from which to issue the write request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting Drag and Drop Through File Promises](supporting-drag-and-drop-through-file-promises.md)
+### File Promises
+- [Supporting Drag and Drop Through File Promises](./supporting-drag-and-drop-through-file-promises.md)
   Receive and provide file promises to support dragged app files and pasteboard operations.
-- [Supporting Table View Drag and Drop Through File Promises](supporting-table-view-drag-and-drop-through-file-promises.md)
+- [Supporting Table View Drag and Drop Through File Promises](./supporting-table-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [Supporting Collection View Drag and Drop Through File Promises](supporting-collection-view-drag-and-drop-through-file-promises.md)
+- [Supporting Collection View Drag and Drop Through File Promises](./supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
-- [class NSFilePromiseProvider](nsfilepromiseprovider.md)
+- [class NSFilePromiseProvider](./nsfilepromiseprovider.md)
   An object that provides a promise for the pasteboard.
-- [class NSFilePromiseReceiver](nsfilepromisereceiver.md)
+- [class NSFilePromiseReceiver](./nsfilepromisereceiver.md)
   An object that receives a file promise from the pasteboard.
 
 

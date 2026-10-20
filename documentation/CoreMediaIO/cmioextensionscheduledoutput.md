@@ -1,7 +1,8 @@
 # CMIOExtensionScheduledOutput
 
 **Framework**: Core Media I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents scheduled output.
 
@@ -15,37 +16,42 @@ An object that represents scheduled output.
 class CMIOExtensionScheduledOutput
 ```
 
+```objc
+@interface CMIOExtensionScheduledOutput : NSObject
+```
+
 ## Topics
 
 ### Creating a Scheduled Output
-- [init(sequenceNumber: UInt64, hostTimeInNanoseconds: UInt64)](cmioextensionscheduledoutput/init(sequencenumber:hosttimeinnanoseconds:).md)
+- [init(sequenceNumber: UInt64, hostTimeInNanoseconds: UInt64)](./cmioextensionscheduledoutput/init%28sequencenumber,hosttimeinnanoseconds%29.md)
   Creates a scheduled output object.
 ### Inspecting the Output
-- [var sequenceNumber: UInt64](cmioextensionscheduledoutput/sequencenumber.md)
+- [var sequenceNumber: UInt64](./cmioextensionscheduledoutput/sequencenumber.md)
   The buffer sequence number that was output.
-- [var hostTimeInNanoseconds: UInt64](cmioextensionscheduledoutput/hosttimeinnanoseconds.md)
+- [var hostTimeInNanoseconds: UInt64](./cmioextensionscheduledoutput/hosttimeinnanoseconds.md)
   The host time in nanoseconds when the buffer was output.
 ### Initializers
-- [init?(coder: NSCoder)](cmioextensionscheduledoutput/init(coder:).md)
+- [init?(coder: NSCoder)](./cmioextensionscheduledoutput/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func notifyScheduledOutputChanged(CMIOExtensionScheduledOutput)](cmioextensionstream/notifyscheduledoutputchanged(_:).md)
+### Managing Scheduled Output
+- [func notifyScheduledOutputChanged(CMIOExtensionScheduledOutput)](./cmioextensionstream/notifyscheduledoutputchanged%28_%29.md)
   Notifies clients when a particular buffer is output.
 
 

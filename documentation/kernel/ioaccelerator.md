@@ -1,37 +1,39 @@
 # IOAccelerator
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOAccelerator : IOService
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](ioaccelerator/1494278-getmetaclass.md)
+- [- getMetaClass](./ioaccelerator/api-1494278-getmetaclass.md)
 ### Type Methods
-- [+ createAccelID](ioaccelerator/1494277-createaccelid.md)
-- [+ releaseAccelID](ioaccelerator/1494279-releaseaccelid.md)
-- [+ retainAccelID](ioaccelerator/1494273-retainaccelid.md)
+- [+ createAccelID](./ioaccelerator/api-1494277-createaccelid.md)
+- [+ releaseAccelID](./ioaccelerator/api-1494279-releaseaccelid.md)
+- [+ retainAccelID](./ioaccelerator/api-1494273-retainaccelid.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IODisplayConnect](iodisplayconnect.md)
-- [IOBacklightDisplay](iobacklightdisplay.md)
-- [IODisplay](iodisplay.md)
-- [IODisplayParameterHandler](iodisplayparameterhandler.md)
+### Interfaces
+- [IODisplayConnect](./iodisplayconnect.md)
+- [IOBacklightDisplay](./iobacklightdisplay.md)
+- [IODisplay](./iodisplay.md)
+- [IODisplayParameterHandler](./iodisplayparameterhandler.md)
 
 
 ---

@@ -1,10 +1,11 @@
 # kBluetoothSDPAttributeDeviceIdentifierVersion
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,18 +13,23 @@
 var kBluetoothSDPAttributeDeviceIdentifierVersion: SDPAttributeDeviceIdentificationRecord { get }
 ```
 
+```c
+kBluetoothSDPAttributeDeviceIdentifierVersion
+```
+
 ## See Also
 
-- [var kBluetoothSDPAttributeDeviceIdentifierClientExecutableURL: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierclientexecutableurl.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierDocumentationURL: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierdocumentationurl.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierPrimaryRecord: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierprimaryrecord.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierProductID: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierproductid.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierReservedRangeEnd: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierreservedrangeend.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierReservedRangeStart: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierreservedrangestart.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierServiceDescription: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierservicedescription.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierSpecificationID: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifierspecificationid.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierVendorID: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifiervendorid.md)
-- [var kBluetoothSDPAttributeDeviceIdentifierVendorIDSource: SDPAttributeDeviceIdentificationRecord](kbluetoothsdpattributedeviceidentifiervendoridsource.md)
+### Constants
+- [var kBluetoothSDPAttributeDeviceIdentifierClientExecutableURL: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierclientexecutableurl.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierDocumentationURL: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierdocumentationurl.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierPrimaryRecord: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierprimaryrecord.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierProductID: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierproductid.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierReservedRangeEnd: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierreservedrangeend.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierReservedRangeStart: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierreservedrangestart.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierServiceDescription: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierservicedescription.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierSpecificationID: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifierspecificationid.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierVendorID: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifiervendorid.md)
+- [var kBluetoothSDPAttributeDeviceIdentifierVendorIDSource: SDPAttributeDeviceIdentificationRecord](./kbluetoothsdpattributedeviceidentifiervendoridsource.md)
 
 
 ---

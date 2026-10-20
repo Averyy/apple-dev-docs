@@ -1,7 +1,8 @@
 # fineConversionValue
 
 **Framework**: AdAttributionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that represents the fine conversion value.
 

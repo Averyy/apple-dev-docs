@@ -1,7 +1,8 @@
 # cancelButtonBounds
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle for the cancel button within the bounds of the search field.
 
@@ -14,15 +15,20 @@ The rectangle for the cancel button within the bounds of the search field.
 var cancelButtonBounds: NSRect { get }
 ```
 
+```objc
+@property (readonly) NSRect cancelButtonBounds;
+```
+
 #### Discussion
 
 Subclasses can override `cancelButtonBounds` for custom layout purposes.
 
 ## See Also
 
-- [var searchButtonBounds: NSRect](nssearchfield/searchbuttonbounds.md)
+### Getting Search Field Metrics
+- [var searchButtonBounds: NSRect](./searchbuttonbounds.md)
   The rectangle for the search button within the bounds of the search field.
-- [var searchTextBounds: NSRect](nssearchfield/searchtextbounds.md)
+- [var searchTextBounds: NSRect](./searchtextbounds.md)
   The rectangle for the search text within the bounds of the search field.
 
 

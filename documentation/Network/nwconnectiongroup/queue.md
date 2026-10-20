@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which you handle group events.
 
@@ -22,9 +23,10 @@ final var queue: DispatchQueue? { get }
 
 ## See Also
 
-- [let descriptor: any NWGroupDescriptor](nwconnectiongroup/descriptor.md)
+### Inspecting Groups
+- [let descriptor: any NWGroupDescriptor](./descriptor.md)
   The descriptor of the group you use to initialize the connection group.
-- [let parameters: NWParameters](nwconnectiongroup/parameters.md)
+- [let parameters: NWParameters](./parameters.md)
   The parameters with which you initialize the connection group.
 
 

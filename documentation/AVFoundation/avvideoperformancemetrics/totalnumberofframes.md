@@ -1,7 +1,8 @@
 # totalNumberOfFrames
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of frames that display if no frames drop.
 
@@ -19,15 +20,20 @@ The total number of frames that display if no frames drop.
 var totalNumberOfFrames: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger totalNumberOfFrames;
+```
+
 ## See Also
 
-- [var numberOfCorruptedFrames: Int](avvideoperformancemetrics/numberofcorruptedframes.md)
+### Inspecting metrics
+- [var numberOfCorruptedFrames: Int](./numberofcorruptedframes.md)
   The total number of corrupted frames.
-- [var numberOfDroppedFrames: Int](avvideoperformancemetrics/numberofdroppedframes.md)
+- [var numberOfDroppedFrames: Int](./numberofdroppedframes.md)
   The total number of frames the system drops prior to decoding or from missing the display deadline.
-- [var numberOfFramesDisplayedUsingOptimizedCompositing: Int](avvideoperformancemetrics/numberofframesdisplayedusingoptimizedcompositing.md)
+- [var numberOfFramesDisplayedUsingOptimizedCompositing: Int](./numberofframesdisplayedusingoptimizedcompositing.md)
   The total number of full screen frames rendered in a special power-efficient mode that didn’t require compositing with other UI elements.
-- [var totalAccumulatedFrameDelay: TimeInterval](avvideoperformancemetrics/totalaccumulatedframedelay.md)
+- [var totalAccumulatedFrameDelay: TimeInterval](./totalaccumulatedframedelay.md)
   The accumulated amount of time between the prescribed presentation times of displayed video frames and their actual time of display.
 
 

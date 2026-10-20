@@ -1,7 +1,8 @@
 # Get the app ID for a prerelease version
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -12,15 +13,27 @@
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `200` OK (`PrereleaseVersionAppLinkageResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List prerelease versions](get-v1-prereleaseversions.md)
+### Getting Prerelease Version Information
+- [List prerelease versions](./get-v1-prereleaseversions.md)
   Get a list of prerelease versions for all apps.
-- [Read prerelease version information](get-v1-prereleaseversions-_id_.md)
+- [Read prerelease version information](./get-v1-prereleaseversions-_id_.md)
   Get information about a specific prerelease version.
-- [Read the app information of a prerelease version](get-v1-prereleaseversions-_id_-app.md)
+- [Read the app information of a prerelease version](./get-v1-prereleaseversions-_id_-app.md)
   Get the app information for a specific prerelease version.
 
 

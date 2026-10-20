@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the object detector as a Core ML model file.
 
@@ -21,7 +22,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = MLModelMetadata()) thro
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlobjectdetector/write(tofile:metadata:).md)
+### Saving an object detector
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports the object detector as a Core ML model file.
 
 

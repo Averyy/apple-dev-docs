@@ -1,7 +1,8 @@
 # EKEvent
 
 **Framework**: EventKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents an event in a calendar.
 
@@ -19,82 +20,87 @@ A class that represents an event in a calendar.
 class EKEvent
 ```
 
+```objc
+@interface EKEvent : EKCalendarItem
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Creating events and reminders](./creating-events-and-reminders.md)
+- [Retrieving events and reminders](./retrieving-events-and-reminders.md)
 
 #### Overview
 
-Use the [`init(eventStore:)`](ekevent/init(eventstore:).md) method to create a new event. Use the properties in the class to get and modify certain information about an event. Other properties, such as the event’s title and calendar, are inherited from the parent class [`EKCalendarItem`](ekcalendaritem.md).
+Use the [`init(eventStore:)`](./ekevent/init%28eventstore%29.md) method to create a new event. Use the properties in the class to get and modify certain information about an event. Other properties, such as the event’s title and calendar, are inherited from the parent class [`EKCalendarItem`](./ekcalendaritem.md).
 
 ## Topics
 
 ### Creating Events
-- [init(eventStore: EKEventStore)](ekevent/init(eventstore:).md)
+- [init(eventStore: EKEventStore)](./ekevent/init%28eventstore%29.md)
   Creates and returns a new event belonging to a specified event store.
 ### Scheduling Events
-- [enum EKEventStatus](ekeventstatus.md)
+- [enum EKEventStatus](./ekeventstatus.md)
   The event’s status.
-- [enum EKEventAvailability](ekeventavailability.md)
+- [enum EKEventAvailability](./ekeventavailability.md)
   The event’s availability setting for scheduling purposes.
 ### Comparing Events
-- [func compareStartDate(with: EKEvent) -> ComparisonResult](ekevent/comparestartdate(with:).md)
+- [func compareStartDate(with: EKEvent) -> ComparisonResult](./ekevent/comparestartdate%28with%29.md)
   Compares the start date of the receiving event with the start date of another event.
 ### Accessing Event Properties
-- [var eventIdentifier: String!](ekevent/eventidentifier.md)
+- [var eventIdentifier: String!](./ekevent/eventidentifier.md)
   A unique identifier for the event.
-- [var availability: EKEventAvailability](ekevent/availability.md)
+- [var availability: EKEventAvailability](./ekevent/availability.md)
   The availability setting for the event.
-- [var startDate: Date!](ekevent/startdate.md)
+- [var startDate: Date!](./ekevent/startdate.md)
   The start date of the event.
-- [var endDate: Date!](ekevent/enddate.md)
+- [var endDate: Date!](./ekevent/enddate.md)
   The end date for the event.
-- [var isAllDay: Bool](ekevent/isallday.md)
+- [var isAllDay: Bool](./ekevent/isallday.md)
   A Boolean value that indicates whether the event is an all-day event.
-- [var occurrenceDate: Date!](ekevent/occurrencedate.md)
+- [var occurrenceDate: Date!](./ekevent/occurrencedate.md)
   The original occurrence date of an event if it is part of a recurring series.
-- [var isDetached: Bool](ekevent/isdetached.md)
+- [var isDetached: Bool](./ekevent/isdetached.md)
   A Boolean value that indicates whether an event is a detached instance of a repeating event.
-- [var organizer: EKParticipant?](ekevent/organizer.md)
+- [var organizer: EKParticipant?](./ekevent/organizer.md)
   The organizer associated with the event.
-- [var status: EKEventStatus](ekevent/status.md)
+- [var status: EKEventStatus](./ekevent/status.md)
   The status of the event.
-- [var birthdayContactIdentifier: String?](ekevent/birthdaycontactidentifier.md)
+- [var birthdayContactIdentifier: String?](./ekevent/birthdaycontactidentifier.md)
   The contact identifier of the person for this birthday event.
-- [var structuredLocation: EKStructuredLocation?](ekevent/structuredlocation.md)
+- [var structuredLocation: EKStructuredLocation?](./ekevent/structuredlocation.md)
   The event’s location with a potential geocoordinate.
-- [var birthdayPersonID: Int](ekevent/birthdaypersonid.md)
+- [var birthdayPersonID: Int](./ekevent/birthdaypersonid.md)
   The Address Book framework record identifier of the person for this birthday event.
-- [var birthdayPersonUniqueID: String?](ekevent/birthdaypersonuniqueid.md)
+- [var birthdayPersonUniqueID: String?](./ekevent/birthdaypersonuniqueid.md)
   The Address Book framework record identifier of the person for this birthday event.
 ### Refreshing Event Data
-- [func refresh() -> Bool](ekevent/refresh.md)
+- [func refresh() -> Bool](./ekevent/refresh%28%29.md)
   Updates the event’s data with the current information in the Calendar database.
 
 ## Relationships
 
 ### Inherits From
-- [EKCalendarItem](ekcalendaritem.md)
+- [EKCalendarItem](./ekcalendaritem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+### Events and reminders
+- [Creating events and reminders](./creating-events-and-reminders.md)
   Create and modify events and reminders in a person’s database.
-- [Retrieving events and reminders](retrieving-events-and-reminders.md)
+- [Retrieving events and reminders](./retrieving-events-and-reminders.md)
   Fetch events and reminders from the Calendar database.
-- [Updating with notifications](updating-with-notifications.md)
+- [Updating with notifications](./updating-with-notifications.md)
   Register for notifications about changes and keep your app up to date.
-- [Managing location-based reminders](managing-location-based-reminders.md)
+- [Managing location-based reminders](./managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
-- [class EKReminder](ekreminder.md)
+- [class EKReminder](./ekreminder.md)
   A class that represents a reminder in a calendar.
 
 

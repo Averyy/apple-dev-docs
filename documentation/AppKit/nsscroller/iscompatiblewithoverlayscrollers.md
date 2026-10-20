@@ -1,7 +1,8 @@
 # isCompatibleWithOverlayScrollers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 class var isCompatibleWithOverlayScrollers: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isCompatibleWithOverlayScrollers) BOOL compatibleWithOverlayScrollers;
 ```
 
 

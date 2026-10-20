@@ -1,7 +1,8 @@
 # cancelTracking()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the menu and ends all menu tracking.
 
@@ -14,9 +15,14 @@ Dismisses the menu and ends all menu tracking.
 func cancelTracking()
 ```
 
+```objc
+- (void) cancelTracking;
+```
+
 ## See Also
 
-- [func cancelTrackingWithoutAnimation()](nsmenu/canceltrackingwithoutanimation.md)
+### Handling Tracking
+- [func cancelTrackingWithoutAnimation()](./canceltrackingwithoutanimation%28%29.md)
   Dismisses the menu and ends all menu tracking without displaying the associated animation.
 
 

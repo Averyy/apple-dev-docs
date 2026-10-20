@@ -1,7 +1,8 @@
 # displaySize
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in points, of the widget.
 
@@ -21,7 +22,8 @@ let displaySize: CGSize
 
 ## See Also
 
-- [let family: WidgetFamily](timelineprovidercontext/family.md)
+### Accessing Size Attributes
+- [let family: WidgetFamily](./family.md)
   The user-configured family of the widget: small, medium, or large.
 
 

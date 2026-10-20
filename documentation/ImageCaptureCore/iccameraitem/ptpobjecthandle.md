@@ -1,7 +1,8 @@
 # ptpObjectHandle
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s `PTP` object handle value, if the camera uses the `PTP` protocol.
 
@@ -18,17 +19,22 @@ The item’s `PTP` object handle value, if the camera uses the `PTP` protocol.
 var ptpObjectHandle: UInt32 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) unsigned int ptpObjectHandle;
+```
+
 #### Discussion
 
 The value of this property is set to `0` if the camera does not use PTP protocol.
 
 ## See Also
 
-- [var uti: String?](iccameraitem/uti.md)
+### Inspecting an Item’s Name and Type
+- [var uti: String?](./uti.md)
   The item’s uniform type identifier (UTI) string.
-- [var name: String?](iccameraitem/name.md)
+- [var name: String?](./name.md)
   The item’s name.
-- [var isRaw: Bool](iccameraitem/israw.md)
+- [var isRaw: Bool](./israw.md)
   A Boolean value indicating whether the item is a raw image file.
 
 

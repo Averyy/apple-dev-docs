@@ -1,7 +1,8 @@
 # AttributeScopes.AccessibilityAttributes.TextualContextAttribute.TextualContext.wordProcessing
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text used in a document, like in the Pages app.
 

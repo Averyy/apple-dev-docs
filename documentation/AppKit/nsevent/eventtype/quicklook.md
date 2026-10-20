@@ -1,7 +1,8 @@
 # NSEvent.EventType.quickLook
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event that initiates a Quick Look request.
 
@@ -14,19 +15,24 @@ An event that initiates a Quick Look request.
 case quickLook
 ```
 
+```c
+NSEventTypeQuickLook
+```
+
 ## See Also
 
-- [NSEvent.EventType.appKitDefined](nsevent/eventtype/appkitdefined.md)
+### Getting System Event Types
+- [NSEvent.EventType.appKitDefined](./appkitdefined.md)
   An AppKit-related event occurred.
-- [NSEvent.EventType.applicationDefined](nsevent/eventtype/applicationdefined.md)
+- [NSEvent.EventType.applicationDefined](./applicationdefined.md)
   An app-defined event occurred.
-- [NSEvent.EventType.cursorUpdate](nsevent/eventtype/cursorupdate.md)
+- [NSEvent.EventType.cursorUpdate](./cursorupdate.md)
   An event that updates the cursor.
-- [NSEvent.EventType.flagsChanged](nsevent/eventtype/flagschanged.md)
+- [NSEvent.EventType.flagsChanged](./flagschanged.md)
   The event flags changed.
-- [NSEvent.EventType.periodic](nsevent/eventtype/periodic.md)
+- [NSEvent.EventType.periodic](./periodic.md)
   An event that provides execution time to periodic tasks.
-- [NSEvent.EventType.systemDefined](nsevent/eventtype/systemdefined.md)
+- [NSEvent.EventType.systemDefined](./systemdefined.md)
   A system-related event occurred.
 
 

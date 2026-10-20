@@ -1,7 +1,8 @@
 # Get an Ad Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single ad group by its unique identifier.
 
@@ -18,7 +19,7 @@ The response includes the following status fields:
 | --- | --- | --- |
 | `status` | string | Advertiser-managed state: `ENABLED` or `PAUSED`. |
 | `systemStatus` | string | System-computed: `RUNNING` or `NOT_RUNNING`. When `NOT_RUNNING`, inspect `systemStatusReasons`. |
-| `displayStatus` | string | System-computed, rolled-up delivery state. See [`AdGroupDisplayStatus`](adgroupdisplaystatus.md). |
+| `displayStatus` | string | System-computed, rolled-up delivery state. See [`AdGroupDisplayStatus`](./adgroupdisplaystatus.md). |
 
 Keep the following constraints in mind when reading a GET response:
 
@@ -36,7 +37,7 @@ Keep the following constraints in mind when reading a GET response:
 
 Retrieves an App Store ad group by its unique identifier. This example shows a standard targeting ad group with device and age targeting.
 
-```None
+```
 GET https://api.ads.apple.com/v1/adgroups/555666777
 ```
 
@@ -91,7 +92,7 @@ GET https://api.ads.apple.com/v1/adgroups/555666777
 
 Retrieves an Apple Maps ad group by its unique identifier. This example shows an ad group targeting Apple Maps.
 
-```None
+```
 GET https://api.ads.apple.com/v1/adgroups/555666779
 ```
 
@@ -139,17 +140,33 @@ GET https://api.ads.apple.com/v1/adgroups/555666779
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AdGroupResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad Group](post-adgroups.md)
+- [Create an Ad Group](./post-adgroups.md)
   Create a new ad group within a campaign, defining targeting, bid strategy, and scheduling for a set of ads.
-- [Query Ad Groups](post-adgroups-query.md)
+- [Query Ad Groups](./post-adgroups-query.md)
   Query ad groups using filters, sorting, and pagination.
-- [Update an Ad Group](put-adgroups-_id_.md)
+- [Update an Ad Group](./put-adgroups-_id_.md)
   Update an existing ad group’s name, status, bid strategy, targeting, or scheduling.
-- [Delete an Ad Group](delete-adgroups-_id_.md)
+- [Delete an Ad Group](./delete-adgroups-_id_.md)
   Soft-delete an ad group by its unique identifier, along with all ads and keywords associated with it.
 
 

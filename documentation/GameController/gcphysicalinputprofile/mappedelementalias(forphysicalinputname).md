@@ -1,7 +1,8 @@
 # mappedElementAlias(forPhysicalInputName:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the name of the input element to which the user remaps the given physical element.
 
@@ -19,25 +20,30 @@ Returns the name of the input element to which the user remaps the given physica
 func mappedElementAlias(forPhysicalInputName inputName: String) -> String
 ```
 
+```objc
+- (NSString *) mappedElementAliasForPhysicalInputName:(NSString *) inputName;
+```
+
 #### Return Value
 
 The name of the input element to which the user remaps the physical element, or `nil` if the user doesn’t remap the physical element.
 
 #### Discussion
 
-Use this method to get the alias for an input element. For example, if the user remaps a physical press of the controller’s A button to button B, then passing [`GCInputButtonA`](gcinputbuttona-8z15w.md) to this method returns [`GCInputButtonB`](gcinputbuttonb-6z361.md).
+Use this method to get the alias for an input element. For example, if the user remaps a physical press of the controller’s A button to button B, then passing [`GCInputButtonA`](../gcinputbuttona-8z15w.md) to this method returns [`GCInputButtonB`](../gcinputbuttonb-6z361.md).
 
 ## Parameters
 
-- `inputName`: The name of the physical element. For possible values, see [`Extended gamepad input names`](extended-gamepad-input-names.md).
+- `inputName`: The name of the physical element. For possible values, see [Extended gamepad input names](../extended-gamepad-input-names.md).
 
 ## See Also
 
-- [var hasRemappedElements: Bool](gcphysicalinputprofile/hasremappedelements.md)
+### Remapping input elements
+- [var hasRemappedElements: Bool](./hasremappedelements.md)
   A Boolean value that indicates whether the user remaps elements in this profile.
-- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](gcphysicalinputprofile/mappedphysicalinputnames(forelementalias:).md)
+- [func mappedPhysicalInputNames(forElementAlias: String) -> Set<String>](./mappedphysicalinputnames%28forelementalias%29.md)
   Returns the physical input elements to which the user remaps the given input element.
-- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
+- [static let GCControllerUserCustomizationsDidChange: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerusercustomizationsdidchange.md)
   A notification that posts when the user customizes the button mappings or other settings of a controller.
 
 

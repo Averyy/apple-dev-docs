@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the receiver as needing its data reloaded.
 
@@ -12,6 +13,10 @@ Marks the receiver as needing its data reloaded.
 
 ```swift
 func reloadData()
+```
+
+```objc
+- (void) reloadData;
 ```
 
 

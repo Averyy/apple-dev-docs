@@ -1,7 +1,8 @@
 # init(avAudioNode:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an audio node from an AVFoundation audio node.
 
@@ -20,21 +21,26 @@ Initializes an audio node from an AVFoundation audio node.
 init(avAudioNode node: AVAudioNode?)
 ```
 
+```objc
+- (instancetype) initWithAVAudioNode:(AVAudioNode *) node;
+```
+
 #### Return Value
 
 A newly initialized audio node.
 
 ## Parameters
 
-- `node`: An [`AVAudioNode`](https://developer.apple.com/documentation/avfaudio/avaudionode) object that holds an [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine) sound graph from a single sound source or URL.
+- `node`: An [`AVAudioNode`](../../AVFAudio/avaudionode.md) object that holds an [`AVAudioEngine`](../../AVFAudio/avaudioengine.md) sound graph from a single sound source or URL.
 
 ## See Also
 
-- [convenience init(fileNamed: String)](skaudionode/init(filenamed:).md)
+### Initializing Audio Nodes
+- [convenience init(fileNamed: String)](./init%28filenamed%29.md)
   Initializes an audio node from an audio asset with the specified filename.
-- [convenience init(url: URL)](skaudionode/init(url:)-8v3q0.md)
+- [convenience init(url: URL)](./init%28url%29-8v3q0.md)
   Initializes an audio node from an audio asset with the specified URL.
-- [init?(coder: NSCoder)](skaudionode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize an audio node that has been unarchived.
 
 

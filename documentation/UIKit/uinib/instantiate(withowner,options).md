@@ -1,7 +1,8 @@
 # instantiate(withOwner:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unarchives and instantiates the in-memory contents of the nib object’s nib file, creating a distinct object tree and set of top-level objects.
 
@@ -9,13 +10,19 @@ Unarchives and instantiates the in-memory contents of the nib object’s nib fil
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 func instantiate(withOwner ownerOrNil: Any?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> [Any]
+```
+
+```objc
+- (NSArray *) instantiateWithOwner:(id) ownerOrNil options:(NSDictionary<NSString *,id> *) optionsOrNil;
 ```
 
 #### Return Value
@@ -24,9 +31,9 @@ An autoreleased `NSArray` object containing the top-level objects from the nib f
 
 #### Discussion
 
-You can use this method to instantiate the objects in a nib and provide them to your code. This method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. For detailed information about the nib-loading process, see [`Resource Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
+You can use this method to instantiate the objects in a nib and provide them to your code. This method unarchives each object, initializes it, sets its properties to their configured values, and reestablishes any connections to other objects. For detailed information about the nib-loading process, see [Resource Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/LoadingResources/Introduction/Introduction.html#//apple_ref/doc/uid/10000051i).
 
-If the nib file contains any proxy objects beyond just the File’s Owner proxy object, you can specify the runtime replacement objects for those proxies using the options dictionary. In that dictionary, add the [`externalObjects`](uinib/optionskey/externalobjects.md) key and set its value to a dictionary containing the names of any proxy objects (the keys) and the real objects to use in their place. The proxy object’s name is the string you assign to it in the Name field of the Interface Builder inspector window.
+If the nib file contains any proxy objects beyond just the File’s Owner proxy object, you can specify the runtime replacement objects for those proxies using the options dictionary. In that dictionary, add the [`externalObjects`](./optionskey/externalobjects.md) key and set its value to a dictionary containing the names of any proxy objects (the keys) and the real objects to use in their place. The proxy object’s name is the string you assign to it in the Name field of the Interface Builder inspector window.
 
 ## Parameters
 
@@ -35,7 +42,8 @@ If the nib file contains any proxy objects beyond just the File’s Owner proxy 
 
 ## See Also
 
-- [struct OptionsKey](uinib/optionskey.md)
+### Retrieving objects from the nib file
+- [struct OptionsKey](./optionskey.md)
   Options that specify how to unarchive and instantiate the nib.
 
 

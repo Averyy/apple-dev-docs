@@ -1,7 +1,8 @@
 # zoneWide
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value determining whether all zones should be searched. If `true`, all zones are searched. If `false`, the default zone is searched.
 
@@ -10,7 +11,7 @@ A Boolean value determining whether all zones should be searched. If `true`, all
 
 ## Declaration
 
-```swift
+```
 attribute Boolean zoneWide;
 ```
 

@@ -1,7 +1,8 @@
 # XMLParser.ErrorCode
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following error codes are defined by `NSXMLParser`. For error codes not listed here, see the `<libxml/xmlerror.h>` header file.
 
@@ -20,213 +21,218 @@ The following error codes are defined by `NSXMLParser`. For error codes not list
 enum ErrorCode
 ```
 
+```c
+enum NSXMLParserError : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [XMLParser.ErrorCode.internalError](xmlparser/errorcode/internalerror.md)
+- [XMLParser.ErrorCode.internalError](./errorcode/internalerror.md)
   The parser object encountered an internal error.
-- [XMLParser.ErrorCode.outOfMemoryError](xmlparser/errorcode/outofmemoryerror.md)
+- [XMLParser.ErrorCode.outOfMemoryError](./errorcode/outofmemoryerror.md)
   The parser object ran out of memory.
-- [XMLParser.ErrorCode.documentStartError](xmlparser/errorcode/documentstarterror.md)
+- [XMLParser.ErrorCode.documentStartError](./errorcode/documentstarterror.md)
   The parser object is unable to start parsing.
-- [XMLParser.ErrorCode.emptyDocumentError](xmlparser/errorcode/emptydocumenterror.md)
+- [XMLParser.ErrorCode.emptyDocumentError](./errorcode/emptydocumenterror.md)
   The document is empty.
-- [XMLParser.ErrorCode.prematureDocumentEndError](xmlparser/errorcode/prematuredocumentenderror.md)
+- [XMLParser.ErrorCode.prematureDocumentEndError](./errorcode/prematuredocumentenderror.md)
   The document ended unexpectedly.
-- [XMLParser.ErrorCode.invalidHexCharacterRefError](xmlparser/errorcode/invalidhexcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidHexCharacterRefError](./errorcode/invalidhexcharacterreferror.md)
   Invalid hexadecimal character reference encountered.
-- [XMLParser.ErrorCode.invalidDecimalCharacterRefError](xmlparser/errorcode/invaliddecimalcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidDecimalCharacterRefError](./errorcode/invaliddecimalcharacterreferror.md)
   Invalid decimal character reference encountered.
-- [XMLParser.ErrorCode.invalidCharacterRefError](xmlparser/errorcode/invalidcharacterreferror.md)
+- [XMLParser.ErrorCode.invalidCharacterRefError](./errorcode/invalidcharacterreferror.md)
   Invalid character reference encountered.
-- [XMLParser.ErrorCode.invalidCharacterError](xmlparser/errorcode/invalidcharactererror.md)
+- [XMLParser.ErrorCode.invalidCharacterError](./errorcode/invalidcharactererror.md)
   Invalid character encountered.
-- [XMLParser.ErrorCode.characterRefAtEOFError](xmlparser/errorcode/characterrefateoferror.md)
+- [XMLParser.ErrorCode.characterRefAtEOFError](./errorcode/characterrefateoferror.md)
   Target of character reference cannot be found.
-- [XMLParser.ErrorCode.characterRefInPrologError](xmlparser/errorcode/characterrefinprologerror.md)
+- [XMLParser.ErrorCode.characterRefInPrologError](./errorcode/characterrefinprologerror.md)
   Invalid character found in the prolog.
-- [XMLParser.ErrorCode.characterRefInEpilogError](xmlparser/errorcode/characterrefinepilogerror.md)
+- [XMLParser.ErrorCode.characterRefInEpilogError](./errorcode/characterrefinepilogerror.md)
   Invalid character found in the epilog.
-- [XMLParser.ErrorCode.characterRefInDTDError](xmlparser/errorcode/characterrefindtderror.md)
+- [XMLParser.ErrorCode.characterRefInDTDError](./errorcode/characterrefindtderror.md)
   Invalid character encountered in the DTD.
-- [XMLParser.ErrorCode.entityRefAtEOFError](xmlparser/errorcode/entityrefateoferror.md)
+- [XMLParser.ErrorCode.entityRefAtEOFError](./errorcode/entityrefateoferror.md)
   Target of entity reference is not found.
-- [XMLParser.ErrorCode.entityRefInPrologError](xmlparser/errorcode/entityrefinprologerror.md)
+- [XMLParser.ErrorCode.entityRefInPrologError](./errorcode/entityrefinprologerror.md)
   Invalid entity reference found in the prolog.
-- [XMLParser.ErrorCode.entityRefInEpilogError](xmlparser/errorcode/entityrefinepilogerror.md)
+- [XMLParser.ErrorCode.entityRefInEpilogError](./errorcode/entityrefinepilogerror.md)
   Invalid entity reference found in the epilog.
-- [XMLParser.ErrorCode.entityRefInDTDError](xmlparser/errorcode/entityrefindtderror.md)
+- [XMLParser.ErrorCode.entityRefInDTDError](./errorcode/entityrefindtderror.md)
   Invalid entity reference found in the DTD.
-- [XMLParser.ErrorCode.parsedEntityRefAtEOFError](xmlparser/errorcode/parsedentityrefateoferror.md)
+- [XMLParser.ErrorCode.parsedEntityRefAtEOFError](./errorcode/parsedentityrefateoferror.md)
   Target of parsed entity reference is not found.
-- [XMLParser.ErrorCode.parsedEntityRefInPrologError](xmlparser/errorcode/parsedentityrefinprologerror.md)
+- [XMLParser.ErrorCode.parsedEntityRefInPrologError](./errorcode/parsedentityrefinprologerror.md)
   Target of parsed entity reference is not found in prolog.
-- [XMLParser.ErrorCode.parsedEntityRefInEpilogError](xmlparser/errorcode/parsedentityrefinepilogerror.md)
+- [XMLParser.ErrorCode.parsedEntityRefInEpilogError](./errorcode/parsedentityrefinepilogerror.md)
   Target of parsed entity reference is not found in epilog.
-- [XMLParser.ErrorCode.parsedEntityRefInInternalSubsetError](xmlparser/errorcode/parsedentityrefininternalsubseterror.md)
+- [XMLParser.ErrorCode.parsedEntityRefInInternalSubsetError](./errorcode/parsedentityrefininternalsubseterror.md)
   Target of parsed entity reference is not found in internal subset.
-- [XMLParser.ErrorCode.entityReferenceWithoutNameError](xmlparser/errorcode/entityreferencewithoutnameerror.md)
+- [XMLParser.ErrorCode.entityReferenceWithoutNameError](./errorcode/entityreferencewithoutnameerror.md)
   Entity reference is without name.
-- [XMLParser.ErrorCode.entityReferenceMissingSemiError](xmlparser/errorcode/entityreferencemissingsemierror.md)
+- [XMLParser.ErrorCode.entityReferenceMissingSemiError](./errorcode/entityreferencemissingsemierror.md)
   Entity reference is missing semicolon.
-- [XMLParser.ErrorCode.parsedEntityRefNoNameError](xmlparser/errorcode/parsedentityrefnonameerror.md)
+- [XMLParser.ErrorCode.parsedEntityRefNoNameError](./errorcode/parsedentityrefnonameerror.md)
   Parsed entity reference is without an entity name.
-- [XMLParser.ErrorCode.parsedEntityRefMissingSemiError](xmlparser/errorcode/parsedentityrefmissingsemierror.md)
+- [XMLParser.ErrorCode.parsedEntityRefMissingSemiError](./errorcode/parsedentityrefmissingsemierror.md)
   Parsed entity reference is missing semicolon.
-- [XMLParser.ErrorCode.undeclaredEntityError](xmlparser/errorcode/undeclaredentityerror.md)
+- [XMLParser.ErrorCode.undeclaredEntityError](./errorcode/undeclaredentityerror.md)
   Entity is not declared.
-- [XMLParser.ErrorCode.unparsedEntityError](xmlparser/errorcode/unparsedentityerror.md)
+- [XMLParser.ErrorCode.unparsedEntityError](./errorcode/unparsedentityerror.md)
   Cannot parse entity.
-- [XMLParser.ErrorCode.entityIsExternalError](xmlparser/errorcode/entityisexternalerror.md)
+- [XMLParser.ErrorCode.entityIsExternalError](./errorcode/entityisexternalerror.md)
   Cannot parse external entity.
-- [XMLParser.ErrorCode.entityIsParameterError](xmlparser/errorcode/entityisparametererror.md)
+- [XMLParser.ErrorCode.entityIsParameterError](./errorcode/entityisparametererror.md)
   Entity is a parameter.
-- [XMLParser.ErrorCode.unknownEncodingError](xmlparser/errorcode/unknownencodingerror.md)
+- [XMLParser.ErrorCode.unknownEncodingError](./errorcode/unknownencodingerror.md)
   Document encoding is unknown.
-- [XMLParser.ErrorCode.encodingNotSupportedError](xmlparser/errorcode/encodingnotsupportederror.md)
+- [XMLParser.ErrorCode.encodingNotSupportedError](./errorcode/encodingnotsupportederror.md)
   Document encoding is not supported.
-- [XMLParser.ErrorCode.stringNotStartedError](xmlparser/errorcode/stringnotstartederror.md)
+- [XMLParser.ErrorCode.stringNotStartedError](./errorcode/stringnotstartederror.md)
   String is not started.
-- [XMLParser.ErrorCode.stringNotClosedError](xmlparser/errorcode/stringnotclosederror.md)
+- [XMLParser.ErrorCode.stringNotClosedError](./errorcode/stringnotclosederror.md)
   String is not closed.
-- [XMLParser.ErrorCode.namespaceDeclarationError](xmlparser/errorcode/namespacedeclarationerror.md)
+- [XMLParser.ErrorCode.namespaceDeclarationError](./errorcode/namespacedeclarationerror.md)
   Invalid namespace declaration encountered.
-- [XMLParser.ErrorCode.entityNotStartedError](xmlparser/errorcode/entitynotstartederror.md)
+- [XMLParser.ErrorCode.entityNotStartedError](./errorcode/entitynotstartederror.md)
   Entity is not started.
-- [XMLParser.ErrorCode.entityNotFinishedError](xmlparser/errorcode/entitynotfinishederror.md)
+- [XMLParser.ErrorCode.entityNotFinishedError](./errorcode/entitynotfinishederror.md)
   Entity is not finished.
-- [XMLParser.ErrorCode.lessThanSymbolInAttributeError](xmlparser/errorcode/lessthansymbolinattributeerror.md)
+- [XMLParser.ErrorCode.lessThanSymbolInAttributeError](./errorcode/lessthansymbolinattributeerror.md)
   Angle bracket is used in attribute.
-- [XMLParser.ErrorCode.attributeNotStartedError](xmlparser/errorcode/attributenotstartederror.md)
+- [XMLParser.ErrorCode.attributeNotStartedError](./errorcode/attributenotstartederror.md)
   Attribute is not started.
-- [XMLParser.ErrorCode.attributeNotFinishedError](xmlparser/errorcode/attributenotfinishederror.md)
+- [XMLParser.ErrorCode.attributeNotFinishedError](./errorcode/attributenotfinishederror.md)
   Attribute is not finished.
-- [XMLParser.ErrorCode.attributeHasNoValueError](xmlparser/errorcode/attributehasnovalueerror.md)
+- [XMLParser.ErrorCode.attributeHasNoValueError](./errorcode/attributehasnovalueerror.md)
   Attribute doesn’t contain a value.
-- [XMLParser.ErrorCode.attributeRedefinedError](xmlparser/errorcode/attributeredefinederror.md)
+- [XMLParser.ErrorCode.attributeRedefinedError](./errorcode/attributeredefinederror.md)
   Attribute is redefined.
-- [XMLParser.ErrorCode.literalNotStartedError](xmlparser/errorcode/literalnotstartederror.md)
+- [XMLParser.ErrorCode.literalNotStartedError](./errorcode/literalnotstartederror.md)
   Literal is not started.
-- [XMLParser.ErrorCode.literalNotFinishedError](xmlparser/errorcode/literalnotfinishederror.md)
+- [XMLParser.ErrorCode.literalNotFinishedError](./errorcode/literalnotfinishederror.md)
   Literal is not finished.
-- [XMLParser.ErrorCode.commentNotFinishedError](xmlparser/errorcode/commentnotfinishederror.md)
+- [XMLParser.ErrorCode.commentNotFinishedError](./errorcode/commentnotfinishederror.md)
   Comment is not finished.
-- [XMLParser.ErrorCode.processingInstructionNotStartedError](xmlparser/errorcode/processinginstructionnotstartederror.md)
+- [XMLParser.ErrorCode.processingInstructionNotStartedError](./errorcode/processinginstructionnotstartederror.md)
   Processing instruction is not started.
-- [XMLParser.ErrorCode.processingInstructionNotFinishedError](xmlparser/errorcode/processinginstructionnotfinishederror.md)
+- [XMLParser.ErrorCode.processingInstructionNotFinishedError](./errorcode/processinginstructionnotfinishederror.md)
   Processing instruction is not finished.
-- [XMLParser.ErrorCode.notationNotStartedError](xmlparser/errorcode/notationnotstartederror.md)
+- [XMLParser.ErrorCode.notationNotStartedError](./errorcode/notationnotstartederror.md)
   Notation is not started.
-- [XMLParser.ErrorCode.notationNotFinishedError](xmlparser/errorcode/notationnotfinishederror.md)
+- [XMLParser.ErrorCode.notationNotFinishedError](./errorcode/notationnotfinishederror.md)
   Notation is not finished.
-- [XMLParser.ErrorCode.attributeListNotStartedError](xmlparser/errorcode/attributelistnotstartederror.md)
+- [XMLParser.ErrorCode.attributeListNotStartedError](./errorcode/attributelistnotstartederror.md)
   Attribute list is not started.
-- [XMLParser.ErrorCode.attributeListNotFinishedError](xmlparser/errorcode/attributelistnotfinishederror.md)
+- [XMLParser.ErrorCode.attributeListNotFinishedError](./errorcode/attributelistnotfinishederror.md)
   Attribute list is not finished.
-- [XMLParser.ErrorCode.mixedContentDeclNotStartedError](xmlparser/errorcode/mixedcontentdeclnotstartederror.md)
+- [XMLParser.ErrorCode.mixedContentDeclNotStartedError](./errorcode/mixedcontentdeclnotstartederror.md)
   Mixed content declaration is not started.
-- [XMLParser.ErrorCode.mixedContentDeclNotFinishedError](xmlparser/errorcode/mixedcontentdeclnotfinishederror.md)
+- [XMLParser.ErrorCode.mixedContentDeclNotFinishedError](./errorcode/mixedcontentdeclnotfinishederror.md)
   Mixed content declaration is not finished.
-- [XMLParser.ErrorCode.elementContentDeclNotStartedError](xmlparser/errorcode/elementcontentdeclnotstartederror.md)
+- [XMLParser.ErrorCode.elementContentDeclNotStartedError](./errorcode/elementcontentdeclnotstartederror.md)
   Element content declaration is not started.
-- [XMLParser.ErrorCode.elementContentDeclNotFinishedError](xmlparser/errorcode/elementcontentdeclnotfinishederror.md)
+- [XMLParser.ErrorCode.elementContentDeclNotFinishedError](./errorcode/elementcontentdeclnotfinishederror.md)
   Element content declaration is not finished.
-- [XMLParser.ErrorCode.xmlDeclNotStartedError](xmlparser/errorcode/xmldeclnotstartederror.md)
+- [XMLParser.ErrorCode.xmlDeclNotStartedError](./errorcode/xmldeclnotstartederror.md)
   XML declaration is not started.
-- [XMLParser.ErrorCode.xmlDeclNotFinishedError](xmlparser/errorcode/xmldeclnotfinishederror.md)
+- [XMLParser.ErrorCode.xmlDeclNotFinishedError](./errorcode/xmldeclnotfinishederror.md)
   XML declaration is not finished.
-- [XMLParser.ErrorCode.conditionalSectionNotStartedError](xmlparser/errorcode/conditionalsectionnotstartederror.md)
+- [XMLParser.ErrorCode.conditionalSectionNotStartedError](./errorcode/conditionalsectionnotstartederror.md)
   Conditional section is not started.
-- [XMLParser.ErrorCode.conditionalSectionNotFinishedError](xmlparser/errorcode/conditionalsectionnotfinishederror.md)
+- [XMLParser.ErrorCode.conditionalSectionNotFinishedError](./errorcode/conditionalsectionnotfinishederror.md)
   Conditional section is not finished.
-- [XMLParser.ErrorCode.externalSubsetNotFinishedError](xmlparser/errorcode/externalsubsetnotfinishederror.md)
+- [XMLParser.ErrorCode.externalSubsetNotFinishedError](./errorcode/externalsubsetnotfinishederror.md)
   External subset is not finished.
-- [XMLParser.ErrorCode.doctypeDeclNotFinishedError](xmlparser/errorcode/doctypedeclnotfinishederror.md)
+- [XMLParser.ErrorCode.doctypeDeclNotFinishedError](./errorcode/doctypedeclnotfinishederror.md)
   Document type declaration is not finished.
-- [XMLParser.ErrorCode.misplacedCDATAEndStringError](xmlparser/errorcode/misplacedcdataendstringerror.md)
+- [XMLParser.ErrorCode.misplacedCDATAEndStringError](./errorcode/misplacedcdataendstringerror.md)
   Misplaced CDATA end string.
-- [XMLParser.ErrorCode.cdataNotFinishedError](xmlparser/errorcode/cdatanotfinishederror.md)
+- [XMLParser.ErrorCode.cdataNotFinishedError](./errorcode/cdatanotfinishederror.md)
   CDATA block is not finished.
-- [XMLParser.ErrorCode.misplacedXMLDeclarationError](xmlparser/errorcode/misplacedxmldeclarationerror.md)
+- [XMLParser.ErrorCode.misplacedXMLDeclarationError](./errorcode/misplacedxmldeclarationerror.md)
   Misplaced XML declaration.
-- [XMLParser.ErrorCode.spaceRequiredError](xmlparser/errorcode/spacerequirederror.md)
+- [XMLParser.ErrorCode.spaceRequiredError](./errorcode/spacerequirederror.md)
   Space is required.
-- [XMLParser.ErrorCode.separatorRequiredError](xmlparser/errorcode/separatorrequirederror.md)
+- [XMLParser.ErrorCode.separatorRequiredError](./errorcode/separatorrequirederror.md)
   Separator is required.
-- [XMLParser.ErrorCode.nmtokenRequiredError](xmlparser/errorcode/nmtokenrequirederror.md)
+- [XMLParser.ErrorCode.nmtokenRequiredError](./errorcode/nmtokenrequirederror.md)
   Name token is required.
-- [XMLParser.ErrorCode.nameRequiredError](xmlparser/errorcode/namerequirederror.md)
+- [XMLParser.ErrorCode.nameRequiredError](./errorcode/namerequirederror.md)
   Name is required.
-- [XMLParser.ErrorCode.pcdataRequiredError](xmlparser/errorcode/pcdatarequirederror.md)
+- [XMLParser.ErrorCode.pcdataRequiredError](./errorcode/pcdatarequirederror.md)
   CDATA is required.
-- [XMLParser.ErrorCode.uriRequiredError](xmlparser/errorcode/urirequirederror.md)
+- [XMLParser.ErrorCode.uriRequiredError](./errorcode/urirequirederror.md)
   URI is required.
-- [XMLParser.ErrorCode.publicIdentifierRequiredError](xmlparser/errorcode/publicidentifierrequirederror.md)
+- [XMLParser.ErrorCode.publicIdentifierRequiredError](./errorcode/publicidentifierrequirederror.md)
   Public identifier is required.
-- [XMLParser.ErrorCode.ltRequiredError](xmlparser/errorcode/ltrequirederror.md)
+- [XMLParser.ErrorCode.ltRequiredError](./errorcode/ltrequirederror.md)
   Left angle bracket is required.
-- [XMLParser.ErrorCode.gtRequiredError](xmlparser/errorcode/gtrequirederror.md)
+- [XMLParser.ErrorCode.gtRequiredError](./errorcode/gtrequirederror.md)
   Right angle bracket is required.
-- [XMLParser.ErrorCode.ltSlashRequiredError](xmlparser/errorcode/ltslashrequirederror.md)
+- [XMLParser.ErrorCode.ltSlashRequiredError](./errorcode/ltslashrequirederror.md)
   Left angle bracket slash is required.
-- [XMLParser.ErrorCode.equalExpectedError](xmlparser/errorcode/equalexpectederror.md)
+- [XMLParser.ErrorCode.equalExpectedError](./errorcode/equalexpectederror.md)
   Equal sign expected.
-- [XMLParser.ErrorCode.tagNameMismatchError](xmlparser/errorcode/tagnamemismatcherror.md)
+- [XMLParser.ErrorCode.tagNameMismatchError](./errorcode/tagnamemismatcherror.md)
   Tag name mismatch.
-- [XMLParser.ErrorCode.unfinishedTagError](xmlparser/errorcode/unfinishedtagerror.md)
+- [XMLParser.ErrorCode.unfinishedTagError](./errorcode/unfinishedtagerror.md)
   Unfinished tag found.
-- [XMLParser.ErrorCode.standaloneValueError](xmlparser/errorcode/standalonevalueerror.md)
+- [XMLParser.ErrorCode.standaloneValueError](./errorcode/standalonevalueerror.md)
   Standalone value found.
-- [XMLParser.ErrorCode.invalidEncodingNameError](xmlparser/errorcode/invalidencodingnameerror.md)
+- [XMLParser.ErrorCode.invalidEncodingNameError](./errorcode/invalidencodingnameerror.md)
   Invalid encoding name found.
-- [XMLParser.ErrorCode.commentContainsDoubleHyphenError](xmlparser/errorcode/commentcontainsdoublehyphenerror.md)
+- [XMLParser.ErrorCode.commentContainsDoubleHyphenError](./errorcode/commentcontainsdoublehyphenerror.md)
   Comment contains double hyphen.
-- [XMLParser.ErrorCode.invalidEncodingError](xmlparser/errorcode/invalidencodingerror.md)
+- [XMLParser.ErrorCode.invalidEncodingError](./errorcode/invalidencodingerror.md)
   Invalid encoding.
-- [XMLParser.ErrorCode.externalStandaloneEntityError](xmlparser/errorcode/externalstandaloneentityerror.md)
+- [XMLParser.ErrorCode.externalStandaloneEntityError](./errorcode/externalstandaloneentityerror.md)
   External standalone entity.
-- [XMLParser.ErrorCode.invalidConditionalSectionError](xmlparser/errorcode/invalidconditionalsectionerror.md)
+- [XMLParser.ErrorCode.invalidConditionalSectionError](./errorcode/invalidconditionalsectionerror.md)
   Invalid conditional section.
-- [XMLParser.ErrorCode.entityValueRequiredError](xmlparser/errorcode/entityvaluerequirederror.md)
+- [XMLParser.ErrorCode.entityValueRequiredError](./errorcode/entityvaluerequirederror.md)
   Entity value is required.
-- [XMLParser.ErrorCode.notWellBalancedError](xmlparser/errorcode/notwellbalancederror.md)
+- [XMLParser.ErrorCode.notWellBalancedError](./errorcode/notwellbalancederror.md)
   Document is not well balanced.
-- [XMLParser.ErrorCode.extraContentError](xmlparser/errorcode/extracontenterror.md)
+- [XMLParser.ErrorCode.extraContentError](./errorcode/extracontenterror.md)
   Error in content found.
-- [XMLParser.ErrorCode.invalidCharacterInEntityError](xmlparser/errorcode/invalidcharacterinentityerror.md)
+- [XMLParser.ErrorCode.invalidCharacterInEntityError](./errorcode/invalidcharacterinentityerror.md)
   Invalid character in entity found.
-- [XMLParser.ErrorCode.parsedEntityRefInInternalError](xmlparser/errorcode/parsedentityrefininternalerror.md)
+- [XMLParser.ErrorCode.parsedEntityRefInInternalError](./errorcode/parsedentityrefininternalerror.md)
   Internal error in parsed entity reference found.
-- [XMLParser.ErrorCode.entityRefLoopError](xmlparser/errorcode/entityreflooperror.md)
+- [XMLParser.ErrorCode.entityRefLoopError](./errorcode/entityreflooperror.md)
   Entity reference loop encountered.
-- [XMLParser.ErrorCode.entityBoundaryError](xmlparser/errorcode/entityboundaryerror.md)
+- [XMLParser.ErrorCode.entityBoundaryError](./errorcode/entityboundaryerror.md)
   Entity boundary error.
-- [XMLParser.ErrorCode.invalidURIError](xmlparser/errorcode/invalidurierror.md)
+- [XMLParser.ErrorCode.invalidURIError](./errorcode/invalidurierror.md)
   Invalid URI specified.
-- [XMLParser.ErrorCode.uriFragmentError](xmlparser/errorcode/urifragmenterror.md)
+- [XMLParser.ErrorCode.uriFragmentError](./errorcode/urifragmenterror.md)
   URI fragment.
-- [XMLParser.ErrorCode.noDTDError](xmlparser/errorcode/nodtderror.md)
+- [XMLParser.ErrorCode.noDTDError](./errorcode/nodtderror.md)
   Missing DTD.
-- [XMLParser.ErrorCode.delegateAbortedParseError](xmlparser/errorcode/delegateabortedparseerror.md)
+- [XMLParser.ErrorCode.delegateAbortedParseError](./errorcode/delegateabortedparseerror.md)
   Delegate aborted parse.
 ### Initializers
-- [init?(rawValue: Int)](xmlparser/errorcode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./errorcode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.enum.md)
+### Constants
+- [XMLParser.ExternalEntityResolvingPolicy](./externalentityresolvingpolicy-swift.enum.md)
   Defines the external entity resolving policy used by an `NSXMLParser` instance.
-- [class let errorDomain: String](xmlparser/errordomain.md)
+- [class let errorDomain: String](./errordomain.md)
   Indicates an error in XML parsing.
 
 

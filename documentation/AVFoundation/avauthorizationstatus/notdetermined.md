@@ -1,7 +1,8 @@
 # AVAuthorizationStatus.notDetermined
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the user hasn’t yet granted or denied authorization.
 
@@ -19,21 +20,26 @@ A status that indicates the user hasn’t yet granted or denied authorization.
 case notDetermined
 ```
 
+```c
+AVAuthorizationStatusNotDetermined
+```
+
 ## Mentions
 
-- [Requesting authorization to capture and save media](requesting-authorization-to-capture-and-save-media.md)
+- [Requesting authorization to capture and save media](../requesting-authorization-to-capture-and-save-media.md)
 
 #### Discussion
 
-This is the default status prior to user to granting or denying recording priviledge to the app. Call [`requestAccess(for:completionHandler:)`](avcapturedevice/requestaccess(for:completionhandler:).md) to prompt the user for permission.
+This is the default status prior to user to granting or denying recording priviledge to the app. Call [`requestAccess(for:completionHandler:)`](../avcapturedevice/requestaccess%28for,completionhandler%29.md) to prompt the user for permission.
 
 ## See Also
 
-- [AVAuthorizationStatus.restricted](avauthorizationstatus/restricted.md)
+### Status values
+- [AVAuthorizationStatus.restricted](./restricted.md)
   A status that indicates the app isn’t permitted to use media capture devices.
-- [AVAuthorizationStatus.denied](avauthorizationstatus/denied.md)
+- [AVAuthorizationStatus.denied](./denied.md)
   A status that indicates the user has explicitly denied an app permission to capture media.
-- [AVAuthorizationStatus.authorized](avauthorizationstatus/authorized.md)
+- [AVAuthorizationStatus.authorized](./authorized.md)
   A status that indicates the user has explicitly granted an app permission to capture media.
 
 

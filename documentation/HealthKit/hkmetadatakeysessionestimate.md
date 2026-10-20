@@ -1,7 +1,8 @@
 # HKMetadataKeySessionEstimate
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -17,9 +18,14 @@
 let HKMetadataKeySessionEstimate: String
 ```
 
+```c
+extern NSString * const HKMetadataKeySessionEstimate;
+```
+
 ## See Also
 
-- [let HKMetadataKeyDateOfEarliestDataUsedForEstimate: String](hkmetadatakeydateofearliestdatausedforestimate.md)
+### Estimate Keys
+- [let HKMetadataKeyDateOfEarliestDataUsedForEstimate: String](./hkmetadatakeydateofearliestdatausedforestimate.md)
   The earliest date of data used to calculate the sample’s estimated value.
 
 

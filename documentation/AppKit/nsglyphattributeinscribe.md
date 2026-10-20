@@ -1,12 +1,13 @@
 # NSGlyphAttributeInscribe
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The glyph inscription attribute.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The glyph inscription attribute.
 var NSGlyphAttributeInscribe: Int { get }
 ```
 
+```c
+NSGlyphAttributeInscribe
+```
+
 #### Discussion
 
-See [`NSGlyphInscription`](nsglyphinscription.md) for possible values.
+See [`NSGlyphInscription`](./nsglyphinscription.md) for possible values.
 
 ## See Also
 
-- [var NSGlyphAttributeSoft: Int](nsglyphattributesoft.md)
+### Attributes
+- [var NSGlyphAttributeSoft: Int](./nsglyphattributesoft.md)
   The glyph is soft.
-- [var NSGlyphAttributeElastic: Int](nsglyphattributeelastic.md)
+- [var NSGlyphAttributeElastic: Int](./nsglyphattributeelastic.md)
   The glyph is elastic.
-- [var NSGlyphAttributeBidiLevel: Int](nsglyphattributebidilevel.md)
+- [var NSGlyphAttributeBidiLevel: Int](./nsglyphattributebidilevel.md)
   The bidirectional level of the glyph.
 
 

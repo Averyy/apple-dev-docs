@@ -1,7 +1,8 @@
 # contacts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All contacts between the collision pair. Empty if all contact information is not requested.
 

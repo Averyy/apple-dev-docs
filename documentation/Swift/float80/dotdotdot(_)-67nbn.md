@@ -1,7 +1,8 @@
 # ...(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a partial range extending upward from a lower bound.
 
@@ -34,7 +35,7 @@ print(numbers[3...])
 // Prints "[40, 50, 60, 70]"
 ```
 
-> **Note**: `minimum` must compare equal to itself (i.e. cannot be NaN).
+> **Precondition**: `minimum` must compare equal to itself (i.e. cannot be NaN).
 
 ## Parameters
 

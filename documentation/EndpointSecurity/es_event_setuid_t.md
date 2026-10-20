@@ -1,13 +1,14 @@
 # es_event_setuid_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for an event that indicates the setting of a process’s user ID.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,34 +16,39 @@ A type for an event that indicates the setting of a process’s user ID.
 struct es_event_setuid_t
 ```
 
+```c
+typedef struct { ... } es_event_setuid_t;
+```
+
 ## Topics
 
 ### Inspecting Event Properties
-- [var uid: uid_t](es_event_setuid_t/uid.md)
+- [var uid: uid_t](./es_event_setuid_t/uid.md)
   The user ID.
-- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](es_event_setuid_t/reserved.md)
+- [var reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)](./es_event_setuid_t/reserved.md)
   An unused field reserved for future use.
 ### Initializers
-- [init()](es_event_setuid_t/init.md)
-- [init(uid: uid_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](es_event_setuid_t/init(uid:reserved:).md)
+- [init()](./es_event_setuid_t/init%28%29.md)
+- [init(uid: uid_t, reserved: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8))](./es_event_setuid_t/init%28uid,reserved%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct es_event_setgid_t](es_event_setgid_t.md)
+### User and Group ID Types
+- [struct es_event_setgid_t](./es_event_setgid_t.md)
   A type for an event that indicates the setting of a process’s group ID.
-- [struct es_event_seteuid_t](es_event_seteuid_t.md)
+- [struct es_event_seteuid_t](./es_event_seteuid_t.md)
   A type for an event that indicates the setting of a process’s effective user ID.
-- [struct es_event_setegid_t](es_event_setegid_t.md)
+- [struct es_event_setegid_t](./es_event_setegid_t.md)
   A type for an event that indicates the setting of a process’s effective group ID.
-- [struct es_event_setreuid_t](es_event_setreuid_t.md)
+- [struct es_event_setreuid_t](./es_event_setreuid_t.md)
   A type for an event that indicates the setting of a process’s real and effective user IDs.
-- [struct es_event_setregid_t](es_event_setregid_t.md)
+- [struct es_event_setregid_t](./es_event_setregid_t.md)
   A type for an event that indicates the setting of a process’s real and effective group IDs.
 
 

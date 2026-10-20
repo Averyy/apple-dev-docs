@@ -1,7 +1,8 @@
 # kAXTableRowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A row in a table.
 
@@ -12,6 +13,10 @@ A row in a table.
 
 ```swift
 var kAXTableRowSubrole: String { get }
+```
+
+```c
+#define kAXTableRowSubrole
 ```
 
 

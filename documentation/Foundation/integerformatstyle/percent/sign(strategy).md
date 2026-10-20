@@ -1,7 +1,8 @@
 # sign(strategy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified sign display strategy.
 
@@ -30,23 +31,24 @@ An integer format style modified to use the specified sign display strategy.
 
 ## See Also
 
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Percent.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>.Percent](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Percent.Configuration.Grouping) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Percent.Configuration.Grouping) -> IntegerFormatStyle<Value>.Percent](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/locale(_:).md)
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
-- [func notation(IntegerFormatStyle<Value>.Percent.Configuration.Notation) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/notation(_:).md)
+- [func notation(IntegerFormatStyle<Value>.Percent.Configuration.Notation) -> IntegerFormatStyle<Value>.Percent](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(IntegerFormatStyle<Value>.Percent.Configuration.Precision) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Percent.Configuration.Precision) -> IntegerFormatStyle<Value>.Percent](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: IntegerFormatStyle<Value>.Percent.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/rounded(rule:increment:).md)
+- [func rounded(rule: IntegerFormatStyle<Value>.Percent.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>.Percent](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>.Percent](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [IntegerFormatStyle.Percent.Configuration](integerformatstyle/percent/configuration.md)
+- [IntegerFormatStyle.Percent.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

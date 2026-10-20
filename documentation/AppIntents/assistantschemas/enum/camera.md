@@ -1,7 +1,8 @@
 # camera
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use for camera functionality.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use for camera functionality.
 ```swift
 static var camera: some AssistantSchemas.CameraEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents for the touchpad. May be `nil`.
 
@@ -16,11 +17,16 @@ The contents for the touchpad. May be `nil`.
 var contents: TCControlContents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlContents * contents;
+```
+
 ## See Also
 
-- [var highlightDuration: TimeInterval](tctouchpad/highlightduration.md)
+### Inspecting at touchpad
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var reportsRelativeValues: Bool](tctouchpad/reportsrelativevalues.md)
+- [var reportsRelativeValues: Bool](./reportsrelativevalues.md)
   A Boolean value that represents the touchpad reports deltas.
 
 

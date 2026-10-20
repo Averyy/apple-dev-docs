@@ -1,7 +1,8 @@
 # isComplete
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the transaction has been completed.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the transaction has been completed.
 var isComplete: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isComplete) BOOL complete;
+```
+
 #### Discussion
 
 A transaction is complete only when all of its actions are complete.
 
 ## See Also
 
-- [var uuid: UUID](cxtransaction/uuid.md)
+### Accessing Transaction Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier of the transaction.
-- [var actions: [CXAction]](cxtransaction/actions.md)
+- [var actions: [CXAction]](./actions.md)
   The actions added to a transaction.
 
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two ranges are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two ranges are equal.
 ```swift
 static func == (lhs: Range<Bound>, rhs: Range<Bound>) -> Bool
 ```
+
+Available when `Bound` conforms to `Comparable`.
 
 #### Discussion
 
@@ -41,11 +44,12 @@ print(y == 15..<15)
 
 ## See Also
 
-- [static func != (borrowing Self, borrowing Self) -> Bool](range/!=(_:_:).md)
+### Comparing Ranges
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func overlaps(Range<Bound>) -> Bool](range/overlaps(_:)-7osha.md)
+- [func overlaps(Range<Bound>) -> Bool](./overlaps%28_%29-7osha.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.
-- [func overlaps(ClosedRange<Bound>) -> Bool](range/overlaps(_:)-9fkb2.md)
+- [func overlaps(ClosedRange<Bound>) -> Bool](./overlaps%28_%29-9fkb2.md)
   Returns a Boolean value indicating whether this range and the given closed range contain an element in common.
 
 

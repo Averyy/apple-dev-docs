@@ -1,7 +1,8 @@
 # Read app version information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read the Game Center enablement state and related app version information.
 
@@ -58,22 +59,38 @@ https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/1d9b87fb-80c4-44e
 
 ## Parameters
 
-- `fields[appStoreVersions]` ([string])
-- `fields[gameCenterAppVersions]` ([string])
-- `include` ([string])
-- `limit[compatibilityVersions]` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[appStoreVersions]` ([string]): **Allowed Values**: `platform`, `versionString`, `appStoreState`, `appVersionState`, `copyright`, `reviewType`, `releaseType`, `earliestReleaseDate`, `usesIdfa`, `downloadable`, `createdDate`, `app`, `appStoreVersionLocalizations`, `build`, `appStoreVersionPhasedRelease`, `gameCenterAppVersion`, `routingAppCoverage`, `appStoreReviewDetail`, `appStoreVersionSubmission`, `appClipDefaultExperience`, `appStoreVersionExperiments`, `appStoreVersionExperimentsV2`, `customerReviews`, `alternativeDistributionPackage`
+- `fields[gameCenterAppVersions]` ([string]): **Allowed Values**: `enabled`, `compatibilityVersions`, `appStoreVersion`
+- `include` ([string]): **Allowed Values**: `compatibilityVersions`, `appStoreVersion`
+- `limit[compatibilityVersions]` (integer): **Maximum**: `50`
+
+## Responses
+
+- `200` OK (`GameCenterAppVersionResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read app versions for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
+### Reading Game Center app versions
+- [Read app versions for a game center detail](./get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
   Get a list of app versions for a Game Center detail.
-- [List Game Center app version IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
-- [Read the App Store version for an app version](get-v1-gamecenterappversions-_id_-appstoreversion.md)
+- [List Game Center app version IDs for a Game Center detail](./get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
+- [Read the App Store version for an app version](./get-v1-gamecenterappversions-_id_-appstoreversion.md)
   Read the App Store version and related information for an app version.
-- [Get the App Store version ID for a Game Center app version](get-v1-gamecenterappversions-_id_-relationships-appstoreversion.md)
-- [Read compatibility version information](get-v1-gamecenterappversions-_id_-compatibilityversions.md)
+- [Get the App Store version ID for a Game Center app version](./get-v1-gamecenterappversions-_id_-relationships-appstoreversion.md)
+- [Read compatibility version information](./get-v1-gamecenterappversions-_id_-compatibilityversions.md)
   Get compatibility version information for a specific app version.
-- [List all compatible app version IDs](get-v1-gamecenterappversions-_id_-relationships-compatibilityversions.md)
+- [List all compatible app version IDs](./get-v1-gamecenterappversions-_id_-relationships-compatibilityversions.md)
   List all compatible verisons for an app version.
 
 

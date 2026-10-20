@@ -1,7 +1,8 @@
 # calculateArea(useOrientedArea:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ func calculateArea(useOrientedArea: Bool = false) -> Double
 
 ## See Also
 
-- [func calculatePerimeter() -> Double](contoursobservation/contour/calculateperimeter.md)
+### Calculating area and perimeter
+- [func calculatePerimeter() -> Double](./calculateperimeter%28%29.md)
 
 
 ---

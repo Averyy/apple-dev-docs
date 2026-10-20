@@ -1,7 +1,8 @@
 # *=(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Modifies a column slice by multiplying each element in the column by the corresponding optional value in a collection.
 
@@ -27,23 +28,24 @@ static func *= <C>(lhs: inout DiscontiguousColumnSlice<WrappedElement>, rhs: C) 
 
 ## See Also
 
-- [static func += <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/+=(_:_:)-2jxz1.md)
+### Modifying a Column Slice with a Collection of Values
+- [static func += <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./pluseq%28_,_%29-2jxz1.md)
   Modifies a column slice by adding each value in a collection to the corresponding element in the column.
-- [static func += <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/+=(_:_:)-lpai.md)
+- [static func += <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./pluseq%28_,_%29-lpai.md)
   Modifies a column slice by adding each optional value in a collection to the corresponding element in the column.
-- [static func -= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/-=(_:_:)-9nkq6.md)
+- [static func -= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./minuseq%28_,_%29-9nkq6.md)
   Modifies a column slice by subtracting each value in a collection from the corresponding element in the column.
-- [static func -= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/-=(_:_:)-8a20q.md)
+- [static func -= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./minuseq%28_,_%29-8a20q.md)
   Modifies a column slice by subtracting each optional value in a collection from the corresponding element in the column.
-- [static func *= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/*=(_:_:)-9jg9h.md)
+- [static func *= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./stareq%28_,_%29-9jg9h.md)
   Modifies a column slice by multiplying each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/_=(_:_:)-6xf9s.md)
+- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./opeq%28_,_%29-6xf9s.md)
   Modifies an integer column slice by dividing each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/_=(_:_:)-1mzcg.md)
+- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./opeq%28_,_%29-1mzcg.md)
   Modifies an integer column slice by dividing each element in the column by the corresponding optional value in a collection.
-- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/_=(_:_:)-39wsi.md)
+- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./opeq%28_,_%29-39wsi.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding value in a collection.
-- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](discontiguouscolumnslice/_=(_:_:)-6lzj.md)
+- [static func /= <C>(inout DiscontiguousColumnSlice<WrappedElement>, C)](./opeq%28_,_%29-6lzj.md)
   Modifies a floating-point column slice by dividing each element in the column by the corresponding optional value in a collection.
 
 

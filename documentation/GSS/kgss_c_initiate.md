@@ -1,7 +1,8 @@
 # kGSS_C_INITIATE
 
 **Framework**: GSS  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that indicates a credential may be used to initiate a context.
 
@@ -18,11 +19,16 @@ The value that indicates a credential may be used to initiate a context.
 var kGSS_C_INITIATE: String { get }
 ```
 
+```c
+#define kGSS_C_INITIATE
+```
+
 ## See Also
 
-- [var kGSS_C_ACCEPT: String](kgss_c_accept.md)
+### Credential Usage Values
+- [var kGSS_C_ACCEPT: String](./kgss_c_accept.md)
   The value that indicates that a credential may be used to accept a context.
-- [var kGSS_C_BOTH: String](kgss_c_both.md)
+- [var kGSS_C_BOTH: String](./kgss_c_both.md)
   The value that indicates that a credential may be used to either initiate or accept a context.
 
 

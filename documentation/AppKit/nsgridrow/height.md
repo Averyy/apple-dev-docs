@@ -1,7 +1,8 @@
 # height
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 var height: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat height;
+```
+
 ## See Also
 
-- [var topPadding: CGFloat](nsgridrow/toppadding.md)
-- [var bottomPadding: CGFloat](nsgridrow/bottompadding.md)
-- [var rowAlignment: NSGridRow.Alignment](nsgridrow/rowalignment.md)
-- [var yPlacement: NSGridCell.Placement](nsgridrow/yplacement.md)
-- [NSGridRow.Alignment](nsgridrow/alignment.md)
+### Formatting the Row
+- [var topPadding: CGFloat](./toppadding.md)
+- [var bottomPadding: CGFloat](./bottompadding.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
+- [NSGridRow.Alignment](./alignment.md)
 
 
 ---

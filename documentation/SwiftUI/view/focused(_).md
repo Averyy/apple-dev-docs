@@ -1,7 +1,8 @@
 # focused(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies this view by binding its focus state to the given Boolean state value.
 
@@ -29,7 +30,7 @@ The modified view.
 
 Use this modifier to cause the view to receive focus whenever the `condition` value is `true`. You can use this modifier to observe the focus state of a single view, or programmatically set and remove focus from the view.
 
-In the following example, a single [`TextField`](textfield.md) accepts a user’s desired `username`. The text field binds its focus state to the Boolean value `usernameFieldIsFocused`. A “Submit” button’s action verifies whether the name is available. If the name is unavailable, the button sets `usernameFieldIsFocused` to `true`, which causes focus to return to the text field, so the user can enter a different name.
+In the following example, a single [`TextField`](../textfield.md) accepts a user’s desired `username`. The text field binds its focus state to the Boolean value `usernameFieldIsFocused`. A “Submit” button’s action verifies whether the name is available. If the name is unavailable, the button sets `usernameFieldIsFocused` to `true`, which causes focus to return to the text field, so the user can enter a different name.
 
 ```swift
 @State private var username: String = ""
@@ -54,7 +55,7 @@ var body: some View {
 }
 ```
 
-To control focus by matching a value, use the [`focused(_:equals:)`](view/focused(_:equals:).md) method instead.
+To control focus by matching a value, use the [`focused(_:equals:)`](./focused%28_,equals%29.md) method instead.
 
 ## Parameters
 
@@ -62,23 +63,24 @@ To control focus by matching a value, use the [`focused(_:equals:)`](view/focuse
 
 ## See Also
 
-- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](view/focused(_:equals:).md)
+### Managing focus state
+- [func focused<Value>(FocusState<Value>.Binding, equals: Value) -> some View](./focused%28_,equals%29.md)
   Modifies this view by binding its focus state to the given state value.
-- [var isFocused: Bool](environmentvalues/isfocused.md)
+- [var isFocused: Bool](../environmentvalues/isfocused.md)
   Returns whether the nearest focusable ancestor has focus.
-- [struct FocusState](focusstate.md)
+- [struct FocusState](../focusstate.md)
   A property wrapper type that can read and write a value that SwiftUI updates as the placement of focus within the scene changes.
-- [struct FocusedValue](focusedvalue.md)
+- [struct FocusedValue](../focusedvalue.md)
   A property wrapper for observing values from the focused view or one of its ancestors.
-- [macro Entry()](entry().md)
+- [macro Entry()](../entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
-- [protocol FocusedValueKey](focusedvaluekey.md)
+- [protocol FocusedValueKey](../focusedvaluekey.md)
   A protocol for identifier types used when publishing and observing focused values.
-- [struct FocusedBinding](focusedbinding.md)
+- [struct FocusedBinding](../focusedbinding.md)
   A convenience property wrapper for observing and automatically unwrapping state bindings from the focused view or one of its ancestors.
-- [func searchFocused(FocusState<Bool>.Binding) -> some View](view/searchfocused(_:).md)
+- [func searchFocused(FocusState<Bool>.Binding) -> some View](./searchfocused%28_%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given Boolean value.
-- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](view/searchfocused(_:equals:).md)
+- [func searchFocused<V>(FocusState<V>.Binding, equals: V) -> some View](./searchfocused%28_,equals%29.md)
   Modifies this view by binding the focus state of the search field associated with the nearest searchable modifier to the given value.
 
 

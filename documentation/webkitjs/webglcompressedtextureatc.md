@@ -1,7 +1,8 @@
 # WebGLCompressedTextureATC
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLCompressedTextureATC
 ```
 
 ## Topics
 
 ### Miscellaneous
-- [COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL](webglcompressedtextureatc/1630692-compressed_rgba_atc_explicit_alp.md)
-- [COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL](webglcompressedtextureatc/1632672-compressed_rgba_atc_interpolated.md)
-- [COMPRESSED_RGB_ATC_WEBGL](webglcompressedtextureatc/1631977-compressed_rgb_atc_webgl.md)
+- [COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL](./webglcompressedtextureatc/api-1630692-compressed_rgba_atc_explicit_alp.md)
+- [COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL](./webglcompressedtextureatc/api-1632672-compressed_rgba_atc_interpolated.md)
+- [COMPRESSED_RGB_ATC_WEBGL](./webglcompressedtextureatc/api-1631977-compressed_rgb_atc_webgl.md)
 
 
 ---

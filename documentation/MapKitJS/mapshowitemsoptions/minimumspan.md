@@ -1,7 +1,8 @@
 # minimumSpan
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The minimum longitudinal and latitudinal span the map displays.
 
@@ -10,21 +11,22 @@ The minimum longitudinal and latitudinal span the map displays.
 
 ## Declaration
 
-```swift
+```
 minimumSpan?: CoordinateSpanData;
 ```
 
 #### Discussion
 
-Set this value to ensure that [`showItems()`](map/showitems.md) sets a map region no smaller than the minimum span specified.
+Set this value to ensure that [`showItems()`](../map/showitems.md) sets a map region no smaller than the minimum span specified.
 
 ## See Also
 
-- [animate](mapshowitemsoptions/animate.md)
+### Show item options
+- [animate](./animate.md)
   A Boolean value that determines whether the map animates as the map region changes to show the items.
-- [padding](mapshowitemsoptions/padding.md)
+- [padding](./padding.md)
   Spacing that the framework adds around the computed map region when showing items.
-- [cameraDistance](mapshowitemsoptions/cameradistance.md)
+- [cameraDistance](./cameradistance.md)
   The distance from the center of the map to the camera, when showing the items.
 
 

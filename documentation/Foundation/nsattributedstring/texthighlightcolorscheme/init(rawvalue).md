@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsattributedstring/texthighlightcolorscheme/init(_:).md)
+### Creating a color scheme
+- [init(String)](./init%28_%29.md)
 
 
 ---

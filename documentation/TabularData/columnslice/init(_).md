@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slice with the contents of a column.
 

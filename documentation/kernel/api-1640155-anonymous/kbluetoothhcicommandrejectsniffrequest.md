@@ -1,14 +1,15 @@
 # kBluetoothHCICommandRejectSniffRequest
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandRejectSniffRequest = 0x0032
 ```
 

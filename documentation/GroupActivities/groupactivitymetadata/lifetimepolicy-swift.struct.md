@@ -1,7 +1,8 @@
 # GroupActivityMetadata.LifetimePolicy
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An activity lifetime policy used by a Group Activity.
 
@@ -26,18 +27,18 @@ Activities that share content owned by the initiator may wish to customize their
 ## Topics
 
 ### Type Properties
-- [static let automatic: GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct/automatic.md)
+- [static let automatic: GroupActivityMetadata.LifetimePolicy](./lifetimepolicy-swift.struct/automatic.md)
   The default lifetime policy for a group activity.
-- [static let endsWhenInitiatorLeaves: GroupActivityMetadata.LifetimePolicy](groupactivitymetadata/lifetimepolicy-swift.struct/endswheninitiatorleaves.md)
+- [static let endsWhenInitiatorLeaves: GroupActivityMetadata.LifetimePolicy](./lifetimepolicy-swift.struct/endswheninitiatorleaves.md)
   The activity should end when the initiator of the activity leaves.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

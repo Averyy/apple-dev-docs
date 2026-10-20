@@ -1,14 +1,15 @@
 # absolutetime_to_microtime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 void absolutetime_to_microtime(uint64_t abstime, clock_sec_t *secs, clock_usec_t *microsecs);
 ```
 

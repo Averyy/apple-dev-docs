@@ -1,7 +1,8 @@
 # deviceReference
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reference to the virtual HID device.
 
@@ -17,13 +18,14 @@ final let deviceReference: HIDDeviceClient.DeviceReference
 
 #### Discussion
 
-Use to create a [`HIDDeviceClient`](hiddeviceclient.md), if creating a device and monitoring it within the same app is desired. For more details, see [`HIDDeviceClient.DeviceReference`](hiddeviceclient/devicereference-swift.struct.md).
+Use to create a [`HIDDeviceClient`](../hiddeviceclient.md), if creating a device and monitoring it within the same app is desired. For more details, see [`HIDDeviceClient.DeviceReference`](../hiddeviceclient/devicereference-swift.struct.md).
 
 ## See Also
 
-- [init?(properties: HIDVirtualDevice.Properties)](hidvirtualdevice/init(properties:).md)
+### Create a HID virtual device
+- [init?(properties: HIDVirtualDevice.Properties)](./init%28properties%29.md)
   Creates a virtual HID device.
-- [func activate(delegate: any HIDVirtualDeviceDelegate)](hidvirtualdevice/activate(delegate:).md)
+- [func activate(delegate: any HIDVirtualDeviceDelegate)](./activate%28delegate%29.md)
   Activate a newly created virtual device to begin receiving notifications and enable functionality.
 
 

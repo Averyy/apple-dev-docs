@@ -1,7 +1,8 @@
 # stroke(_:with:lineWidth:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a path into the context with a specified line width.
 
@@ -22,7 +23,7 @@ func stroke(_ path: Path, with shading: GraphicsContext.Shading, lineWidth: CGFl
 
 #### Discussion
 
-When you call this method, all [`StrokeStyle`](strokestyle.md) properties other than [`lineWidth`](strokestyle/linewidth.md) take their default values. To control other style properties, use [`stroke(_:with:style:)`](graphicscontext/stroke(_:with:style:).md) instead.
+When you call this method, all [`StrokeStyle`](../strokestyle.md) properties other than [`lineWidth`](../strokestyle/linewidth.md) take their default values. To control other style properties, use [`stroke(_:with:style:)`](./stroke%28_,with,style%29.md) instead.
 
 ## Parameters
 
@@ -32,13 +33,14 @@ When you call this method, all [`StrokeStyle`](strokestyle.md) properties other 
 
 ## See Also
 
-- [func stroke(Path, with: GraphicsContext.Shading, style: StrokeStyle)](graphicscontext/stroke(_:with:style:).md)
+### Drawing a path
+- [func stroke(Path, with: GraphicsContext.Shading, style: StrokeStyle)](./stroke%28_,with,style%29.md)
   Draws a path into the context with a specified stroke style.
-- [func fill(Path, with: GraphicsContext.Shading, style: FillStyle)](graphicscontext/fill(_:with:style:).md)
+- [func fill(Path, with: GraphicsContext.Shading, style: FillStyle)](./fill%28_,with,style%29.md)
   Draws a path into the context and fills the outlined region.
-- [GraphicsContext.Shading](graphicscontext/shading.md)
+- [GraphicsContext.Shading](./shading.md)
   A color or pattern that you can use to outline or fill a path.
-- [GraphicsContext.GradientOptions](graphicscontext/gradientoptions.md)
+- [GraphicsContext.GradientOptions](./gradientoptions.md)
   Options that affect the rendering of color gradients.
 
 

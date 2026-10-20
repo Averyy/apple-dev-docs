@@ -1,7 +1,8 @@
 # interleaveLayout
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 
@@ -20,15 +21,16 @@ var interleaveLayout: NDArray.InterleaveLayout? { get }
 
 #### Discussion
 
-See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md) for full documentation.
+See [`NDArray.InterleaveLayout`](./interleavelayout-swift.struct.md) for full documentation.
 
 ## See Also
 
-- [var shape: [Int]](ndarray/shape.md)
+### Inspecting an array
+- [var shape: [Int]](./shape.md)
   The length of each dimension of the array.
-- [var scalarType: NDArray.ScalarType](ndarray/scalartype-swift.property.md)
+- [var scalarType: NDArray.ScalarType](./scalartype-swift.property.md)
   The scalar type of the array.
-- [var strides: [Int]](ndarray/strides.md)
+- [var strides: [Int]](./strides.md)
   The distance, in elements, between consecutive values along each dimension.
 
 

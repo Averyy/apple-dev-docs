@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a common counter set name from a raw value.
 
@@ -21,7 +22,7 @@ init(rawValue: String)
 
 #### Discussion
 
-Use one of the [`MTLCommonCounterSet`](mtlcommoncounterset.md) type’s static properties, such as [`timestamp`](mtlcommoncounterset/timestamp.md), [`stageUtilization`](mtlcommoncounterset/stageutilization.md), and [`statistic`](mtlcommoncounterset/statistic.md) instead of creating a common counter set instance yourself with this initializer.
+Use one of the [`MTLCommonCounterSet`](../mtlcommoncounterset.md) type’s static properties, such as [`timestamp`](./timestamp.md), [`stageUtilization`](./stageutilization.md), and [`statistic`](./statistic.md) instead of creating a common counter set instance yourself with this initializer.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # GameCenterAchievementVersionV2.Relationships.Achievement
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the achievement of the Game Center achievement version v2.
 
@@ -10,7 +11,7 @@ The data that describes the achievement of the Game Center achievement version v
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementVersionV2.Relationships.Achievement
 ```
 
@@ -21,7 +22,7 @@ object GameCenterAchievementVersionV2.Relationships.Achievement
 ## Topics
 
 ### Dictionaries
-- [object GameCenterAchievementVersionV2.Relationships.Achievement.Data](gamecenterachievementversionv2/relationships-data.dictionary/achievement-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementVersionV2.Relationships.Achievement.Data](./achievement-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -29,7 +30,8 @@ object GameCenterAchievementVersionV2.Relationships.Achievement
 
 ## See Also
 
-- [object GameCenterAchievementVersionV2.Relationships.Localizations](gamecenterachievementversionv2/relationships-data.dictionary/localizations-data.dictionary.md)
+### Dictionaries
+- [object GameCenterAchievementVersionV2.Relationships.Localizations](./localizations-data.dictionary.md)
   The data and links that describe the localizations of the Game Center achievement version v2.
 
 

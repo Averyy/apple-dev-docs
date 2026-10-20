@@ -1,15 +1,16 @@
 # MPSPackedFloat3.__Unnamed_struct___Anonymous_field0
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,8 +21,8 @@ struct __Unnamed_struct___Anonymous_field0
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Sendable](../../Swift/sendable.md)
 
 
 ---

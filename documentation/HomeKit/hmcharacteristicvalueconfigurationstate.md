@@ -1,7 +1,8 @@
 # HMCharacteristicValueConfigurationState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the configuration state of an accessory.
 
@@ -19,25 +20,29 @@ Possible values for the configuration state of an accessory.
 enum HMCharacteristicValueConfigurationState
 ```
 
+```c
+enum HMCharacteristicValueConfigurationState : NSInteger;
+```
+
 ## Topics
 
 ### Configuration States
-- [HMCharacteristicValueConfigurationState.notConfigured](hmcharacteristicvalueconfigurationstate/notconfigured.md)
+- [HMCharacteristicValueConfigurationState.notConfigured](./hmcharacteristicvalueconfigurationstate/notconfigured.md)
   The accessory has not been configured.
-- [HMCharacteristicValueConfigurationState.configured](hmcharacteristicvalueconfigurationstate/configured.md)
+- [HMCharacteristicValueConfigurationState.configured](./hmcharacteristicvalueconfigurationstate/configured.md)
   The accessory has been configured.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueconfigurationstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueconfigurationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

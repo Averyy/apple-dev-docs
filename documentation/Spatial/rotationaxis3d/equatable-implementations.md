@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (RotationAxis3D, RotationAxis3D) -> Bool](rotationaxis3d/==(_:_:).md)
+- [static func == (RotationAxis3D, RotationAxis3D) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

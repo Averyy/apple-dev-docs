@@ -1,7 +1,8 @@
 # FPUIExtensionErrorCode
 
 **Framework**: File Provider UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The error codes for errors raised by the File Provider UI extension.
 
@@ -18,29 +19,34 @@ The error codes for errors raised by the File Provider UI extension.
 enum FPUIExtensionErrorCode
 ```
 
+```c
+enum FPUIExtensionErrorCode : NSUInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [FPUIExtensionErrorCode.failed](fpuiextensionerrorcode/failed.md)
+- [FPUIExtensionErrorCode.failed](./fpuiextensionerrorcode/failed.md)
   An error indicating that the action has failed.
-- [FPUIExtensionErrorCode.userCancelled](fpuiextensionerrorcode/usercancelled.md)
+- [FPUIExtensionErrorCode.userCancelled](./fpuiextensionerrorcode/usercancelled.md)
   An error indicating that the action was canceled by the user.
 ### Initializers
-- [init?(rawValue: UInt)](fpuiextensionerrorcode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./fpuiextensionerrorcode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let FPUIErrorDomain: String](fpuierrordomain.md)
+### Errors
+- [let FPUIErrorDomain: String](./fpuierrordomain.md)
   The error domain for errors raised by the File Provider UI extension.
 
 

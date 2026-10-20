@@ -1,7 +1,8 @@
 # init(primaryUsage:deviceUsages:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:isBuiltIn:extraProperties:)
 
 **Framework**: Core HID  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates one set of matching criteria for HID devices.
 
@@ -16,30 +17,30 @@ init(primaryUsage: HIDUsage? = nil, deviceUsages: [HIDUsage]? = nil, vendorID: U
 
 ## Mentions
 
-- [Communicating with human interface devices](communicatingwithhiddevices.md)
+- [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
 #### Discussion
 
 This `init` method is the only way to create matching criteria for discovering HID devices connected to the system. All parameters are optional; if none are specified, every discoverable device is matched.
 
-Created [`HIDDeviceManager.DeviceMatchingCriteria`](hiddevicemanager/devicematchingcriteria.md) are used by being passed to [`monitorNotifications(matchingCriteria:)`](hiddevicemanager/monitornotifications(matchingcriteria:).md).
+Created [`HIDDeviceManager.DeviceMatchingCriteria`](../devicematchingcriteria.md) are used by being passed to [`monitorNotifications(matchingCriteria:)`](../monitornotifications%28matchingcriteria%29.md).
 
 ## Parameters
 
-- `primaryUsage`: See [`primaryUsage`](hiddevicemanager/devicematchingcriteria/primaryusage.md).
-- `deviceUsages`: See [`deviceUsages`](hiddevicemanager/devicematchingcriteria/deviceusages.md).
-- `vendorID`: See [`vendorID`](hiddevicemanager/devicematchingcriteria/vendorid.md).
-- `productID`: See [`productID`](hiddevicemanager/devicematchingcriteria/productid.md).
-- `transport`: See [`transport`](hiddevicemanager/devicematchingcriteria/transport.md).
-- `product`: See [`product`](hiddevicemanager/devicematchingcriteria/product.md).
-- `manufacturer`: See [`manufacturer`](hiddevicemanager/devicematchingcriteria/manufacturer.md).
-- `modelNumber`: See [`modelNumber`](hiddevicemanager/devicematchingcriteria/modelnumber.md).
-- `versionNumber`: See [`versionNumber`](hiddevicemanager/devicematchingcriteria/versionnumber.md).
-- `serialNumber`: See [`serialNumber`](hiddevicemanager/devicematchingcriteria/serialnumber.md).
-- `uniqueID`: See [`uniqueID`](hiddevicemanager/devicematchingcriteria/uniqueid.md).
-- `locationID`: See [`locationID`](hiddevicemanager/devicematchingcriteria/locationid.md).
-- `localizationCode`: See [`localizationCode`](hiddevicemanager/devicematchingcriteria/localizationcode.md).
-- `isBuiltIn`: See [`isBuiltIn`](hiddevicemanager/devicematchingcriteria/isbuiltin.md).
+- `primaryUsage`: See [`primaryUsage`](./primaryusage.md).
+- `deviceUsages`: See [`deviceUsages`](./deviceusages.md).
+- `vendorID`: See [`vendorID`](./vendorid.md).
+- `productID`: See [`productID`](./productid.md).
+- `transport`: See [`transport`](./transport.md).
+- `product`: See [`product`](./product.md).
+- `manufacturer`: See [`manufacturer`](./manufacturer.md).
+- `modelNumber`: See [`modelNumber`](./modelnumber.md).
+- `versionNumber`: See [`versionNumber`](./versionnumber.md).
+- `serialNumber`: See [`serialNumber`](./serialnumber.md).
+- `uniqueID`: See [`uniqueID`](./uniqueid.md).
+- `locationID`: See [`locationID`](./locationid.md).
+- `localizationCode`: See [`localizationCode`](./localizationcode.md).
+- `isBuiltIn`: See [`isBuiltIn`](./isbuiltin.md).
 - `extraProperties`: A catch-all for uncommon or device specific criteria not listed above. This parameter is typically only for advanced users that need additional control over the matching process.
 
 

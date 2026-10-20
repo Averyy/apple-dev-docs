@@ -1,7 +1,8 @@
 # CPMaximumListSectionImageSize
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum size of an image in a list section.
 
@@ -16,13 +17,18 @@ The maximum size of an image in a list section.
 let CPMaximumListSectionImageSize: CGSize
 ```
 
+```c
+extern const CGSize CPMaximumListSectionImageSize;
+```
+
 #### Discussion
 
-To properly size your images, use [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) to determine the display scale of the car screen.
+To properly size your images, use [`carTraitCollection`](./cpinterfacecontroller/cartraitcollection.md) to determine the display scale of the car screen.
 
 ## See Also
 
-- [let CPGridTemplateMaximumItems: Int](cpgridtemplatemaximumitems.md)
+### Constants
+- [let CPGridTemplateMaximumItems: Int](./cpgridtemplatemaximumitems.md)
   The maximum number of buttons that a grid template displays.
 
 

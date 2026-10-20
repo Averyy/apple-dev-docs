@@ -1,7 +1,8 @@
 # CKShare.Participant.ID
 
 **Framework**: CloudKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 10.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 

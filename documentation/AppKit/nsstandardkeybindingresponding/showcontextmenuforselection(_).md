@@ -1,7 +1,8 @@
 # showContextMenuForSelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func showContextMenuForSelection(_ sender: Any?)
+```
+
+```objc
+- (void) showContextMenuForSelection:(id) sender;
 ```
 
 #### Discussion

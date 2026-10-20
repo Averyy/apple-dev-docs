@@ -1,14 +1,15 @@
 # dispatchNetworkDataNotification
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static IOReturn dispatchNetworkDataNotification(void *target, void *param, IONetworkData *data, UInt32 type);
 ```
 

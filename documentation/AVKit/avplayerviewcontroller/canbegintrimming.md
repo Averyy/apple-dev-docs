@@ -1,7 +1,8 @@
 # canBeginTrimming
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current media supports trimming.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the current media supports trimming.
 var canBeginTrimming: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL canBeginTrimming;
+```
+
 ## Mentions
 
-- [Trimming and exporting media in visionOS](trimming-and-exporting-media-in-visionos.md)
+- [Trimming and exporting media in visionOS](../trimming-and-exporting-media-in-visionos.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ Observe this property to determine when to change the enabled state of your app 
 
 ## See Also
 
-- [func beginTrimming(completionHandler: ((Bool) -> Void)?)](avplayerviewcontroller/begintrimming(completionhandler:).md)
+### Presenting the visionOS trimming UI
+- [func beginTrimming(completionHandler: ((Bool) -> Void)?)](./begintrimming%28completionhandler%29.md)
   Presents the system trimming interface controls inside the player view.
 
 

@@ -1,7 +1,8 @@
 # QDPrinterStatusProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDPrinterStatusProcPtr = (PrinterStatusOpcode, CGrafPtr?, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef OSStatus (*QDPrinterStatusProcPtr)(PrinterStatusOpcode opcode, CGrafPtr currentPort, void *printerStatus);
 ```
 
 

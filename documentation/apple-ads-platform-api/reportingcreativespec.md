@@ -1,7 +1,8 @@
 # ReportingCreativeSpec
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Creative specification embedded in report rows.
 
@@ -10,7 +11,7 @@ Creative specification embedded in report rows.
 
 ## Declaration
 
-```swift
+```
 object ReportingCreativeSpec
 ```
 
@@ -32,35 +33,35 @@ The `ReportingCreativeSpec` captures the locale language of a creative as record
 
 ## See Also
 
-- [object TimeRange](timerange.md)
+- [object TimeRange](./timerange.md)
   Date range, time zone, and granularity settings for reporting requests.
-- [object Filter](filter.md)
+- [object Filter](./filter.md)
   Filter condition for reporting requests.
-- [object Sorting](sorting.md)
+- [object Sorting](./sorting.md)
   Sort condition for reporting requests.
-- [object RequestPagination](requestpagination.md)
+- [object RequestPagination](./requestpagination.md)
   Pagination settings specific to reporting requests.
-- [object ReportingMoney](reportingmoney.md)
+- [object ReportingMoney](./reportingmoney.md)
   A monetary value wrapper used in reporting contexts, capturing bid amounts and budgets at report time.
-- [object ReportingBidStrategy](reportingbidstrategy.md)
+- [object ReportingBidStrategy](./reportingbidstrategy.md)
   Bid strategy configuration as reported in report rows.
-- [object ReportingCampaignMin](reportingcampaignmin.md)
+- [object ReportingCampaignMin](./reportingcampaignmin.md)
   Minimal campaign information included in nested report objects.
-- [object ReportingAdGroupMin](reportingadgroupmin.md)
+- [object ReportingAdGroupMin](./reportingadgroupmin.md)
   Minimal ad group information included in nested report objects.
-- [object ReportingDestination](reportingdestination.md)
+- [object ReportingDestination](./reportingdestination.md)
   Creative destination embedded in report rows.
-- [object ReportingKeyword](reportingkeyword.md)
+- [object ReportingKeyword](./reportingkeyword.md)
   Keyword metadata in a report row.
-- [object ReportingSearchTerm](reportingsearchterm.md)
+- [object ReportingSearchTerm](./reportingsearchterm.md)
   Search term metadata in a report row.
-- [object ActionMetrics](actionmetrics.md)
+- [object ActionMetrics](./actionmetrics.md)
   Action count metrics breakdown by attribution type.
-- [object CostMetrics](costmetrics.md)
+- [object CostMetrics](./costmetrics.md)
   Cost metrics breakdown by attribution type.
-- [object RateMetrics](ratemetrics.md)
+- [object RateMetrics](./ratemetrics.md)
   Rate metrics breakdown by attribution type.
-- [type ReportingAdChannelType](reportingadchanneltype.md)
+- [type ReportingAdChannelType](./reportingadchanneltype.md)
   The ad channel that served a report row’s metrics.
 
 

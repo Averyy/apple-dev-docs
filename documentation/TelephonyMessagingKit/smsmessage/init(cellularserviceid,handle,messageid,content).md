@@ -1,7 +1,8 @@
 # init(cellularServiceID:handle:messageID:content:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an SMS Message for sending to a receipient.
 

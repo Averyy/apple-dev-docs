@@ -1,7 +1,8 @@
 # minLength
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum length this spacer can be shrunk to, along the axis or axes of expansion.
 
@@ -26,7 +27,8 @@ If `nil`, the system default spacing between views is used.
 
 ## See Also
 
-- [init(minLength: CGFloat?)](spacer/init(minlength:).md)
+### Creating a spacer
+- [init(minLength: CGFloat?)](./init%28minlength%29.md)
 
 
 ---

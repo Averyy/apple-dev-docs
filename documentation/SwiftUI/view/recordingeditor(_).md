@@ -1,7 +1,8 @@
 # recordingEditor(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the recording editor for the given recording URL.
 
@@ -34,7 +35,8 @@ When `item` is non-nil, the editor is presented for that URL. When the user dism
 
 ## See Also
 
-- [func recordingEditor(Binding<URL?>, mode: SCRecordingEditor.Mode) -> some View](view/recordingeditor(_:mode:).md)
+### Screen capture
+- [func recordingEditor(Binding<URL?>, mode: SCRecordingEditor.Mode) -> some View](./recordingeditor%28_,mode%29.md)
   Presents the recording editor for the given recording URL with a specific mode.
 
 

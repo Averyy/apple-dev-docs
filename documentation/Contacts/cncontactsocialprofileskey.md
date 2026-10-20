@@ -1,7 +1,8 @@
 # CNContactSocialProfilesKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A social profiles of a contact.
 
@@ -17,6 +18,10 @@ A social profiles of a contact.
 
 ```swift
 let CNContactSocialProfilesKey: String
+```
+
+```c
+extern NSString * const CNContactSocialProfilesKey;
 ```
 
 #### Discussion

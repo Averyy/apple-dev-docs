@@ -1,7 +1,8 @@
 # WKUserNotificationInterfaceController
 
 **Framework**: WatchKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface controller object that manages a dynamic user interface for a local or remote notification.
 
@@ -15,21 +16,25 @@ An interface controller object that manages a dynamic user interface for a local
 class WKUserNotificationInterfaceController
 ```
 
+```objc
+@interface WKUserNotificationInterfaceController : WKInterfaceController
+```
+
 #### Overview
 
-Apps that support notifications can define one or more subclasses of [`WKUserNotificationInterfaceController`](wkusernotificationinterfacecontroller.md) and use them to implement their dynamic notification interfaces. For example, you might use a dynamic interface to display custom data from the notification payload or add related graphics.
+Apps that support notifications can define one or more subclasses of [`WKUserNotificationInterfaceController`](./wkusernotificationinterfacecontroller.md) and use them to implement their dynamic notification interfaces. For example, you might use a dynamic interface to display custom data from the notification payload or add related graphics.
 
-To create the custom notification interface, add a notification interface controller to your storyboard. Interface Builder provides a static interface and you can add a dynamic interface as needed. Set the class of the dynamic interface controller to the name of your [`WKUserNotificationInterfaceController`](wkusernotificationinterfacecontroller.md) subclass.
+To create the custom notification interface, add a notification interface controller to your storyboard. Interface Builder provides a static interface and you can add a dynamic interface as needed. Set the class of the dynamic interface controller to the name of your [`WKUserNotificationInterfaceController`](./wkusernotificationinterfacecontroller.md) subclass.
 
-Apps can include multiple notification interfaces in their storyboard file, and associate each interface with a different category. Categories define the purpose of an incoming notification and are custom to your app. In Interface Builder, specify the category information for each of your notification interfaces using the notification category object attached to the static notification interface controller. When sending notifications to a user, add the appropriate category string to the remote notification payload or set the string in the [`categoryIdentifier`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/categoryidentifier) property of a local notification.
+Apps can include multiple notification interfaces in their storyboard file, and associate each interface with a different category. Categories define the purpose of an incoming notification and are custom to your app. In Interface Builder, specify the category information for each of your notification interfaces using the notification category object attached to the static notification interface controller. When sending notifications to a user, add the appropriate category string to the remote notification payload or set the string in the [`categoryIdentifier`](../UserNotifications/unnotificationcontent/categoryidentifier.md) property of a local notification.
 
-After initializing your interface controller, WatchKit calls the [`didReceive(_:)`](wkusernotificationinterfacecontroller/didreceive(_:).md) method to provide you with the payload data from the notification. Your implementations of those methods should update any interface objects and call the provided completion handler as quickly as possible. If you don’t call the completion handler in a timely manner, WatchKit displays your static notification interface instead.
+After initializing your interface controller, WatchKit calls the [`didReceive(_:)`](./wkusernotificationinterfacecontroller/didreceive%28_%29.md) method to provide you with the payload data from the notification. Your implementations of those methods should update any interface objects and call the provided completion handler as quickly as possible. If you don’t call the completion handler in a timely manner, WatchKit displays your static notification interface instead.
 
 ##### Actionable Notifications
 
-For each category your app supports, you can also register actions for that category. When a category has registered actions, WatchKit adds a button for each action to the corresponding static or dynamic notification interface. Because the system automatically adds the buttons, don’t manually add your own to your custom notification interface. For more information about registering actions, see [`Declaring your actionable notification types`](https://developer.apple.com/documentation/usernotifications/declaring-your-actionable-notification-types).
+For each category your app supports, you can also register actions for that category. When a category has registered actions, WatchKit adds a button for each action to the corresponding static or dynamic notification interface. Because the system automatically adds the buttons, don’t manually add your own to your custom notification interface. For more information about registering actions, see [Declaring your actionable notification types](../UserNotifications/declaring-your-actionable-notification-types.md).
 
-When the user taps an action button, the system launches your app and calls your notification delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:)) method. The response parameter’s [`actionIdentifier`](https://developer.apple.com/documentation/usernotifications/unnotificationresponse/actionidentifier) property contains the identifier for the selected action. Implement your delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:)) method to check this identifier, and then perform the corresponding task. For more information, see [`Handling notifications and notification-related actions`](https://developer.apple.com/documentation/usernotifications/handling-notifications-and-notification-related-actions).
+When the user taps an action button, the system launches your app and calls your notification delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method. The response parameter’s [`actionIdentifier`](../UserNotifications/unnotificationresponse/actionidentifier.md) property contains the identifier for the selected action. Implement your delegate’s [`userNotificationCenter(_:didReceive:withCompletionHandler:)`](../UserNotifications/unusernotificationcenterdelegate/usernotificationcenter%28_,didreceive,withcompletionhandler%29.md) method to check this identifier, and then perform the corresponding task. For more information, see [Handling notifications and notification-related actions](../UserNotifications/handling-notifications-and-notification-related-actions.md).
 
 The following rules define where the system handles the action:
 
@@ -42,58 +47,58 @@ Xcode lets you configure information about your notification interface controlle
 
 | Attribute | Description |
 | --- | --- |
-| Has Dynamic Interface | A checkbox indicating whether the app supports a dynamic interface for notifications of this type. WatchKit displays dynamic interfaces whenever possible, but WatchKit may fall back to using your static interface because of power restrictions or when your WatchKit extension doesn’t respond in a timely manner. ![None](/images/com.apple.watchkit/spacer.png) Apple Watch always displays the static interface in Notification Center. |
+| Has Dynamic Interface | A checkbox indicating whether the app supports a dynamic interface for notifications of this type. WatchKit displays dynamic interfaces whenever possible, but WatchKit may fall back to using your static interface because of power restrictions or when your WatchKit extension doesn’t respond in a timely manner. ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Apple Watch always displays the static interface in Notification Center. |
 
 The notification category object associated with your notification interface controllers also contains configurable attributes. The following table lists the attributes of the notification category object and their meaning.
 
 | Attribute | Description |
 | --- | --- |
-| Name | The name of the category that this interface supports. For local notifications, this value corresponds to the string in the [`categoryIdentifier`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent/categoryidentifier) property of the [`UNNotificationContent`](https://developer.apple.com/documentation/usernotifications/unnotificationcontent) object. For remote notifications, it’s the string in the `category` key in the payload. When a notification arrives, WatchKit uses the category string in the notification to decide which of your interface controllers to display. |
+| Name | The name of the category that this interface supports. For local notifications, this value corresponds to the string in the [`categoryIdentifier`](../UserNotifications/unnotificationcontent/categoryidentifier.md) property of the [`UNNotificationContent`](../UserNotifications/unnotificationcontent.md) object. For remote notifications, it’s the string in the `category` key in the payload. When a notification arrives, WatchKit uses the category string in the notification to decide which of your interface controllers to display. |
 | Sash Color | The color to apply to the sash at the top of the long-look notification interface. |
 | Wants Sash Blur | A checkbox indicating whether the sash includes a blur effect over the background. |
 | Title Color | The color to apply to the text displayed in the sash. |
 | Description | The format string to display when multiple notifications of the same type arrive simultaneously. If you specify a custom string, you can use the `%d` variable to reflect the number of notifications. If you don’t specify a custom string, WatchKit uses the string `%d Notifications` to reflect the number of notifications that arrived. |
-| Has Dynamic Interface | A checkbox indicating whether the app supports dynamic interfaces for notifications of this type. WatchKit displays dynamic interfaces whenever possible, but it may fall back to using your static interface because of power restrictions or when your WatchKit extension doesn’t respond in a timely manner. ![None](/images/com.apple.watchkit/spacer.png) Apple Watch always displays the static interface in Notification Center. |
+| Has Dynamic Interface | A checkbox indicating whether the app supports dynamic interfaces for notifications of this type. WatchKit displays dynamic interfaces whenever possible, but it may fall back to using your static interface because of power restrictions or when your WatchKit extension doesn’t respond in a timely manner. ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/spacer.png) Apple Watch always displays the static interface in Notification Center. |
 
 ## Topics
 
 ### Initializing the Interface Controller
-- [init()](wkusernotificationinterfacecontroller/init.md)
+- [init()](./wkusernotificationinterfacecontroller/init%28%29.md)
   Initializes and returns the interface controller using the specified remote notification data.
 ### Processing the Notification
-- [func didReceive(UNNotification)](wkusernotificationinterfacecontroller/didreceive(_:).md)
+- [func didReceive(UNNotification)](./wkusernotificationinterfacecontroller/didreceive%28_%29.md)
   Delivers a notification object to your interface controller for processing.
-- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](wkusernotificationinterfacecontroller/didreceive(_:withcompletion:).md)
+- [func didReceive(UNNotification, withCompletion: (WKUserNotificationInterfaceType) -> Void)](./wkusernotificationinterfacecontroller/didreceive%28_,withcompletion%29.md)
   Delivers a notification object to your interface controller for processing.
 ### Working with Actions
-- [var notificationActions: [UNNotificationAction]](wkusernotificationinterfacecontroller/notificationactions.md)
+- [var notificationActions: [UNNotificationAction]](./wkusernotificationinterfacecontroller/notificationactions.md)
   The actions associated with the current notification.
-- [func performNotificationDefaultAction()](wkusernotificationinterfacecontroller/performnotificationdefaultaction.md)
+- [func performNotificationDefaultAction()](./wkusernotificationinterfacecontroller/performnotificationdefaultaction%28%29.md)
   Launches the watchOS app and performs the current notification’s default action.
-- [func performDismissAction()](wkusernotificationinterfacecontroller/performdismissaction.md)
+- [func performDismissAction()](./wkusernotificationinterfacecontroller/performdismissaction%28%29.md)
   Dismisses the notification interface controller.
-- [func dismiss()](wkusernotificationinterfacecontroller/dismiss.md)
+- [func dismiss()](./wkusernotificationinterfacecontroller/dismiss%28%29.md)
   Dismisses the notification interface controller.
 ### Offering Suggestions for Text Input
-- [func suggestionsForResponseToAction(withIdentifier: String, for: UNNotification, inputLanguage: String) -> [String]](wkusernotificationinterfacecontroller/suggestionsforresponsetoaction(withidentifier:for:inputlanguage:).md)
+- [func suggestionsForResponseToAction(withIdentifier: String, for: UNNotification, inputLanguage: String) -> [String]](./wkusernotificationinterfacecontroller/suggestionsforresponsetoaction%28withidentifier,for,inputlanguage%29.md)
   Returns an array of attributed strings representing the text suggestions to display during text input.
 ### Constants
-- [enum WKUserNotificationInterfaceType](wkusernotificationinterfacetype.md)
+- [enum WKUserNotificationInterfaceType](./wkusernotificationinterfacetype.md)
   The type of notification interface to display.
 
 ## Relationships
 
 ### Inherits From
-- [WKInterfaceController](wkinterfacecontroller.md)
+- [WKInterfaceController](./wkinterfacecontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

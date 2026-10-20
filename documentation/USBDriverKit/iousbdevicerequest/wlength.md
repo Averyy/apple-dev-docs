@@ -1,23 +1,25 @@
 # wLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint16_t wLength;
 ```
 
 ## See Also
 
-- [bmRequestType](iousbdevicerequest/bmrequesttype.md)
-- [bRequest](iousbdevicerequest/brequest.md)
-- [wValue](iousbdevicerequest/wvalue.md)
-- [wIndex](iousbdevicerequest/windex.md)
+### Getting the Request Data
+- [bmRequestType](./bmrequesttype.md)
+- [bRequest](./brequest.md)
+- [wValue](./wvalue.md)
+- [wIndex](./windex.md)
 
 
 ---

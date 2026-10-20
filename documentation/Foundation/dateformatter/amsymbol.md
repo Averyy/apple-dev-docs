@@ -1,7 +1,8 @@
 # amSymbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AM symbol for the receiver.
 
@@ -20,9 +21,14 @@ The AM symbol for the receiver.
 var amSymbol: String! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSString * AMSymbol;
+```
+
 ## See Also
 
-- [var pmSymbol: String!](dateformatter/pmsymbol.md)
+### Managing AM and PM Symbols
+- [var pmSymbol: String!](./pmsymbol.md)
   The PM symbol for the receiver.
 
 

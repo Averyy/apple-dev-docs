@@ -1,7 +1,8 @@
 # WebhookDelivery.Attributes.Request
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The HTTP request details of a webhook delivery attempt, including headers and body.
 
@@ -10,7 +11,7 @@ The HTTP request details of a webhook delivery attempt, including headers and bo
 
 ## Declaration
 
-```swift
+```
 object WebhookDelivery.Attributes.Request
 ```
 

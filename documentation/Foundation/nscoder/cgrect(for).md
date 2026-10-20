@@ -1,7 +1,8 @@
 # cgRect(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Core Graphics rectangle structure corresponding to the data in a given string.
 
@@ -21,11 +22,11 @@ class func cgRect(for string: String) -> CGRect
 
 #### Return Value
 
-A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero).
+A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns [`CGRectZero`](../../CoreGraphics/cgrectzero.md).
 
 #### Discussion
 
-In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](nscoder/string(for:)-4qz0a.md) function.
+In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](./string%28for%29-4qz0a.md) function.
 
 ## Parameters
 
@@ -33,35 +34,36 @@ In general, you should use this function only to convert strings that were previ
 
 ## See Also
 
-- [class func cgAffineTransform(for: String) -> CGAffineTransform](nscoder/cgaffinetransform(for:).md)
+### Representing Geometric Types as Strings
+- [class func cgAffineTransform(for: String) -> CGAffineTransform](./cgaffinetransform%28for%29.md)
   Returns a Core Graphics affine transform structure corresponding to the data in a given string.
-- [class func cgPoint(for: String) -> CGPoint](nscoder/cgpoint(for:).md)
+- [class func cgPoint(for: String) -> CGPoint](./cgpoint%28for%29.md)
   Returns a Core Graphics point structure corresponding to the data in a given string.
-- [class func cgSize(for: String) -> CGSize](nscoder/cgsize(for:).md)
+- [class func cgSize(for: String) -> CGSize](./cgsize%28for%29.md)
   Returns a Core Graphics size structure corresponding to the data in a given string.
-- [class func cgVector(for: String) -> CGVector](nscoder/cgvector(for:).md)
+- [class func cgVector(for: String) -> CGVector](./cgvector%28for%29.md)
   Returns a Core Graphics vector corresponding to the data in a given string.
-- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](nscoder/nsdirectionaledgeinsets(for:).md)
+- [class func nsDirectionalEdgeInsets(for: String) -> NSDirectionalEdgeInsets](./nsdirectionaledgeinsets%28for%29.md)
   Returns a directional edge insets structure based on data in the specified string.
-- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](nscoder/uiedgeinsets(for:).md)
+- [class func uiEdgeInsets(for: String) -> UIEdgeInsets](./uiedgeinsets%28for%29.md)
   Returns a UIKit edge insets structure based on the data in the specified string.
-- [class func uiOffset(for: String) -> UIOffset](nscoder/uioffset(for:).md)
+- [class func uiOffset(for: String) -> UIOffset](./uioffset%28for%29.md)
   Returns a UIKit offset structure corresponding to the data in a given string.
-- [class func string(for: CGRect) -> String](nscoder/string(for:)-4qz0a.md)
+- [class func string(for: CGRect) -> String](./string%28for%29-4qz0a.md)
   Returns a string formatted to contain the data from a rectangle.
-- [class func string(for: CGVector) -> String](nscoder/string(for:)-4omzv.md)
+- [class func string(for: CGVector) -> String](./string%28for%29-4omzv.md)
   Returns a string formatted to contain the data from a vector data structure.
-- [class func string(for: CGAffineTransform) -> String](nscoder/string(for:)-6yx6n.md)
+- [class func string(for: CGAffineTransform) -> String](./string%28for%29-6yx6n.md)
   Returns a string formatted to contain the data from an affine transform.
-- [class func string(for: CGPoint) -> String](nscoder/string(for:)-6ix86.md)
+- [class func string(for: CGPoint) -> String](./string%28for%29-6ix86.md)
   Returns a string formatted to contain the data from a point.
-- [class func string(for: CGSize) -> String](nscoder/string(for:)-2f1xb.md)
+- [class func string(for: CGSize) -> String](./string%28for%29-2f1xb.md)
   Returns a string formatted to contain the data from a size data structure.
-- [class func string(for: NSDirectionalEdgeInsets) -> String](nscoder/string(for:)-hp8b.md)
+- [class func string(for: NSDirectionalEdgeInsets) -> String](./string%28for%29-hp8b.md)
   Returns a string formatted to contain the data from a directional edge insets structure.
-- [class func string(for: UIEdgeInsets) -> String](nscoder/string(for:)-26b4z.md)
+- [class func string(for: UIEdgeInsets) -> String](./string%28for%29-26b4z.md)
   Returns a string formatted to contain the data from an edge insets structure.
-- [class func string(for: UIOffset) -> String](nscoder/string(for:)-454dj.md)
+- [class func string(for: UIOffset) -> String](./string%28for%29-454dj.md)
   Returns a string formatted to contain the data from an offset structure.
 
 

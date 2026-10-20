@@ -1,7 +1,8 @@
 # init(title:textStyle:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that displays a title in a specific style.
 
@@ -14,6 +15,10 @@ Creates a button that displays a title in a specific style.
 
 ```swift
 init(title: String, textStyle: CPTextButtonStyle, handler: ((CPTextButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title textStyle:(CPTextButtonStyle) textStyle handler:(void (^)(CPTextButton *contactButton)) handler;
 ```
 
 ## Parameters

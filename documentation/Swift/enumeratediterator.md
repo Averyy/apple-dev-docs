@@ -1,7 +1,8 @@
 # EnumeratedIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -11,7 +12,7 @@
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.2 (renamed: EnumeratedSequence.Iterator)
 
 ## Declaration
 
@@ -21,14 +22,15 @@ typealias EnumeratedIterator<T> = EnumeratedSequence<T>.Iterator where T : Seque
 
 ## See Also
 
-- [struct IteratorSequence](iteratorsequence.md)
+### Indices and Iterators
+- [struct IteratorSequence](./iteratorsequence.md)
   A sequence built around an iterator of type `Base`.
-- [struct IndexingIterator](indexingiterator.md)
+- [struct IndexingIterator](./indexingiterator.md)
   A type that iterates over a collection using its indices.
-- [typealias SetIterator](setiterator.md)
-- [struct StrideThroughIterator](stridethroughiterator.md)
+- [typealias SetIterator](./setiterator.md)
+- [struct StrideThroughIterator](./stridethroughiterator.md)
   An iterator for a `StrideThrough` instance.
-- [struct StrideToIterator](stridetoiterator.md)
+- [struct StrideToIterator](./stridetoiterator.md)
   An iterator for a `StrideTo` instance.
 
 

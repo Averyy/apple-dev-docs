@@ -1,22 +1,25 @@
 # NSReturnTypes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The data types that the service returns.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `NSReturnTypes` (Return Types)
+- **Type**: array of string 
 
 ## See Also
 
-- [NSSendTypes](information-property-list/nsservices/nssendtypes.md)
+### Data
+- [NSSendTypes](./nssendtypes.md)
   The data types that the service can read.
-- [NSUserData](information-property-list/nsservices/nsuserdata.md)
+- [NSUserData](./nsuserdata.md)
   A service-specific string value.
 
 

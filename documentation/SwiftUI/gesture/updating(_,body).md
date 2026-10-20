@@ -1,7 +1,8 @@
 # updating(_:body:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the provided gesture state property as the gesture’s value changes.
 
@@ -23,7 +24,7 @@ Updates the provided gesture state property as the gesture’s value changes.
 
 ## Mentions
 
-- [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
+- [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
 #### Return Value
 
@@ -31,20 +32,21 @@ A version of the gesture that updates the provided `state` as the originating ge
 
 #### Discussion
 
-Use this callback to update transient UI state as described in [`Adding interactivity with gestures`](adding-interactivity-with-gestures.md).
+Use this callback to update transient UI state as described in [Adding interactivity with gestures](../adding-interactivity-with-gestures.md).
 
 ## Parameters
 
-- `state`: A binding to a view’s [`GestureState`](gesturestate.md) property.
+- `state`: A binding to a view’s [`GestureState`](../gesturestate.md) property.
 - `body`: The callback that SwiftUI invokes as the gesture’s value changes. Its `currentState` parameter is the updated state of the gesture. The `gestureState` parameter is the previous state of the gesture, and the `transaction` is the context of the gesture.
 
 ## See Also
 
-- [func onChanged((Self.Value) -> Void) -> _ChangedGesture<Self>](gesture/onchanged(_:).md)
+### Performing the gesture
+- [func onChanged((Self.Value) -> Void) -> _ChangedGesture<Self>](./onchanged%28_%29.md)
   Adds an action to perform when the gesture’s value changes.
-- [func onEnded((Self.Value) -> Void) -> _EndedGesture<Self>](gesture/onended(_:).md)
+- [func onEnded((Self.Value) -> Void) -> _EndedGesture<Self>](./onended%28_%29.md)
   Adds an action to perform when the gesture ends.
-- [associatedtype Value](gesture/value.md)
+- [associatedtype Value](./value.md)
   The type representing the gesture’s value.
 
 

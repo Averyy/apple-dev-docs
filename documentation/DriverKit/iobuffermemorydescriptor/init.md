@@ -1,19 +1,20 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer memory descriptor object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -23,13 +24,14 @@ virtual bool init();
 
 #### Discussion
 
-Don’t call this method directly. Use the [`Create`](iobuffermemorydescriptor/create.md) method instead.
+Don’t call this method directly. Use the [`Create`](./create.md) method instead.
 
 ## See Also
 
-- [Create](iobuffermemorydescriptor/create.md)
+### Creating a Memory Buffer
+- [Create](./create.md)
   Creates a new memory buffer descriptor object in the current process space.
-- [free](iobuffermemorydescriptor/free.md)
+- [free](./free.md)
   Performs any final cleanup for the memory buffer descriptor object.
 
 

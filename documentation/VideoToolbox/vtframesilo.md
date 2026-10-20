@@ -1,7 +1,8 @@
 # VTFrameSilo
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores a large number of sample buffers, as produced by a multipass compression session.
 
@@ -19,11 +20,15 @@ An object that stores a large number of sample buffers, as produced by a multipa
 class VTFrameSilo
 ```
 
+```c
+typedef struct OpaqueVTFrameSilo * VTFrameSiloRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # iip_port_object
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 natural_t iip_port_object;
 ```
 

@@ -1,7 +1,8 @@
 # PortalComponent.Portal
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A pair of related entities that make up a configured portal.
 
@@ -21,15 +22,15 @@ struct Portal
 
 #### Overview
 
-[`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md) returns this value. You’re responsible for adding both entities to your scene.
+[`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](./makeportal%28surfacestyle,boundarystyle,boundarymode%29.md) returns this value. You’re responsible for adding both entities to your scene.
 
 ## Topics
 
 ### Instance Properties
-- [let portalEntity: Entity](portalcomponent/portal/portalentity.md)
-  The entity that has the portal surface mesh, [`PortalMaterial`](portalmaterial.md), and [`PortalComponent`](portalcomponent.md).
-- [let worldEntity: Entity](portalcomponent/portal/worldentity.md)
-  The entity that has [`WorldComponent`](worldcomponent.md). Add portal world content as descendants of this entity.
+- [let portalEntity: Entity](./portal/portalentity.md)
+  The entity that has the portal surface mesh, [`PortalMaterial`](../portalmaterial.md), and [`PortalComponent`](../portalcomponent.md).
+- [let worldEntity: Entity](./portal/worldentity.md)
+  The entity that has [`WorldComponent`](../worldcomponent.md). Add portal world content as descendants of this entity.
 
 
 ---

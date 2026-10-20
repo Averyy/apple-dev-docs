@@ -1,7 +1,8 @@
 # Delete Sign-In Token
 
 **Framework**: Automatic Sign-In API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Deletes a specific sign-in token.
 
@@ -10,11 +11,11 @@ Deletes a specific sign-in token.
 
 ## Mentions
 
-- [Signing people in to their media accounts automatically](../videosubscriberaccount/signing-people-in-to-media-apps-automatically.md)
+- [Signing people in to their media accounts automatically](../VideoSubscriberAccount/signing-people-in-to-media-apps-automatically.md)
 
 #### Overview
 
-Use this endpoint to delete a specific [`value`](https://developer.apple.com/documentation/videosubscriberaccount/vsuseraccountmanager/autosignintoken-swift.struct/value).
+Use this endpoint to delete a specific [`value`](../VideoSubscriberAccount/vsuseraccountmanager/autosignintoken-swift.struct/value.md).
 
 ## Endpoint
 
@@ -22,11 +23,21 @@ Use this endpoint to delete a specific [`value`](https://developer.apple.com/doc
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `DeleteAutoSignInTokenRequest`
+
 The request body that contains the sign-in token to be deleted.
+
+## Responses
+
+- `204` No Content: The request succeeded.
+- `401` Unauthorized: The JSON Web Token (JWT) in the authorization header is invalid. For more information, see [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md).
+- `404` Not Found: Token not found.
 
 ## See Also
 
-- [object DeleteAutoSignInTokenRequest](deleteautosignintokenrequest.md)
+### Token deletion
+- [object DeleteAutoSignInTokenRequest](./deleteautosignintokenrequest.md)
   The request body that contains the sign-in token to be deleted.
 
 

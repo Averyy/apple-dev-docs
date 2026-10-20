@@ -1,7 +1,8 @@
 # beta
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The “beta” variable of the kernel function.
 
@@ -19,17 +20,22 @@ The “beta” variable of the kernel function.
 var beta: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float beta;
+```
+
 #### Discussion
 
 The default value is `5.0`.
 
 ## See Also
 
-- [var alpha: Float](mpscnncrosschannelnormalization/alpha.md)
+### Instance Properties
+- [var alpha: Float](./alpha.md)
   The “alpha” variable of the kernel function.
-- [var delta: Float](mpscnncrosschannelnormalization/delta.md)
+- [var delta: Float](./delta.md)
   The “delta” variable of the kernel function.
-- [var kernelSize: Int](mpscnncrosschannelnormalization/kernelsize.md)
+- [var kernelSize: Int](./kernelsize.md)
   The size of the square kernel window.
 
 

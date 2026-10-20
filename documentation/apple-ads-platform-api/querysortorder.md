@@ -1,7 +1,8 @@
 # QuerySortOrder
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Enumeration of the sort directions available when ordering query results.
 
@@ -10,9 +11,14 @@ Enumeration of the sort directions available when ordering query results.
 
 ## Declaration
 
-```swift
+```
 string QuerySortOrder
 ```
+
+## Possible Values
+
+- `ASC`: Sorts results in ascending order (A to Z, lowest to highest).
+- `DESC`: Sorts results in descending order (Z to A, highest to lowest).
 
 #### Discussion
 
@@ -20,7 +26,8 @@ The `QuerySortOrder` specifies the direction of a sort applied in `QuerySort.ord
 
 ## See Also
 
-- [type QueryFilterOperator](queryfilteroperator.md)
+### Type Aliases
+- [type QueryFilterOperator](./queryfilteroperator.md)
   Enumeration of the comparison operators supported in query filters.
 
 

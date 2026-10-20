@@ -1,7 +1,8 @@
 # init(effect:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new visual effect view with the designated visual effect.
 
@@ -9,7 +10,7 @@ Creates a new visual effect view with the designated visual effect.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Creates a new visual effect view with the designated visual effect.
 init(effect: UIVisualEffect?)
 ```
 
+```objc
+- (instancetype) initWithEffect:(UIVisualEffect *) effect;
+```
+
 #### Return Value
 
 The new view containing the designated visual effect.
 
 ## Parameters
 
-- `effect`: The [`UIVisualEffect`](uivisualeffect.md) you provide for the view. This can be a [`UIBlurEffect`](uiblureffect.md) or a [`UIVibrancyEffect`](uivibrancyeffect.md).
+- `effect`: The [`UIVisualEffect`](../uivisualeffect.md) you provide for the view. This can be a [`UIBlurEffect`](../uiblureffect.md) or a [`UIVibrancyEffect`](../uivibrancyeffect.md).
 
 ## See Also
 
-- [init?(coder: NSCoder)](uivisualeffectview/init(coder:).md)
+### Creating a visual effect view
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a visual effect view from data in an unarchiver.
 
 

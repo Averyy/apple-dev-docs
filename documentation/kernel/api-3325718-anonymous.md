@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOServiceSearchPropertyParents](3325718-anonymous/kioservicesearchpropertyparents.md)
+- [kIOServiceSearchPropertyParents](./api-3325718-anonymous/kioservicesearchpropertyparents.md)
 
 
 ---

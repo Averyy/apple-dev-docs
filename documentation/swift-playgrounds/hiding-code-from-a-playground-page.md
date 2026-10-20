@@ -1,6 +1,7 @@
 # Hiding Code from a Playground Page
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Use special Swift comments to hide code from display but continue to run it.
 
@@ -10,7 +11,7 @@ You can hide code that’s unrelated to the main content of a playground page, l
 
 Place code you want to hide between the `hidden-code` and `end-hidden-code` delimiters.
 
-![Diagram showing the hidden-code and end-hidden code comment syntax. The first line is “//#-hidden-code”, followed by a placeholder line, terminated with a line with contents “//#-end-hidden-code”.](/images/com.apple.Swift-Playgrounds/hiding-code-from-a-playground-page-1@2x.png)
+![Diagram showing the hidden-code and end-hidden code comment syntax. The first line is “//#-hidden-code”, followed by a placeholder line, terminated with a line with contents “//#-end-hidden-code”.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/hiding-code-from-a-playground-page-1@2x.png)
 
 The following shows the raw syntax for a playground page with hidden code.
 
@@ -37,13 +38,14 @@ theView.isChecked = true
 
 ## See Also
 
-- [Writing Prose for a Playground Page](writing-prose-for-a-playground-page.md)
+### Annotations
+- [Writing Prose for a Playground Page](./writing-prose-for-a-playground-page.md)
   Add comment markers in your Swift code to mark text as prose.
-- [Specifying Editable Regions in a Playground Page](specifying-editable-regions-in-a-playground-page.md)
+- [Specifying Editable Regions in a Playground Page](./specifying-editable-regions-in-a-playground-page.md)
   Guide learning by marking code that learners can change or copy forward.
-- [Customizing the Completions in the Shortcut Bar](customizing-the-completions-in-the-shortcut-bar.md)
+- [Customizing the Completions in the Shortcut Bar](./customizing-the-completions-in-the-shortcut-bar.md)
   Guide learners toward a solution by hiding some symbols and showing others.
-- [Localizing Code Comments and String Literals](localizing-code-comments-and-string-literals.md)
+- [Localizing Code Comments and String Literals](./localizing-code-comments-and-string-literals.md)
   In Swift Playgrounds 3.0 and later, mark up code zones to replace them with code that’s localized for the current user.
 
 

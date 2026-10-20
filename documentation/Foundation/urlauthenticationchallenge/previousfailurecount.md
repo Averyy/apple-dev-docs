@@ -1,7 +1,8 @@
 # previousFailureCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s count of failed authentication attempts.
 
@@ -20,15 +21,20 @@ The receiver’s count of failed authentication attempts.
 var previousFailureCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger previousFailureCount;
+```
+
 #### Discussion
 
 The previous failure count includes failures from *all* protection spaces, not just the current one.
 
 ## See Also
 
-- [var failureResponse: URLResponse?](urlauthenticationchallenge/failureresponse.md)
+### Getting properties of previous authentication attempts
+- [var failureResponse: URLResponse?](./failureresponse.md)
   The URL response object representing the last authentication failure.
-- [var proposedCredential: URLCredential?](urlauthenticationchallenge/proposedcredential.md)
+- [var proposedCredential: URLCredential?](./proposedcredential.md)
   The proposed credential for this challenge.
 
 

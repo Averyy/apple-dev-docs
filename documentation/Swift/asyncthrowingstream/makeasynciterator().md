@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -20,9 +21,12 @@ Creates the asynchronous iterator that produces elements of this asynchronous se
 func makeAsyncIterator() -> AsyncThrowingStream<Element, Failure>.Iterator
 ```
 
+Available when `Failure` conforms to `Error`.
+
 ## See Also
 
-- [AsyncThrowingStream.Iterator](asyncthrowingstream/iterator.md)
+### Creating an Iterator
+- [AsyncThrowingStream.Iterator](./iterator.md)
   The asynchronous iterator for iterating an asynchronous stream.
 
 

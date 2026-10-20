@@ -1,17 +1,22 @@
 # IOBluetoothDeviceSearchDeviceAttributes
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure used to search for particular devices.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct IOBluetoothDeviceSearchDeviceAttributes
+```
+
+```c
+struct IOBluetoothDeviceSearchDeviceAttributes;
 ```
 
 #### Overview
@@ -21,32 +26,34 @@ You can search for general device classes and service classes, or you can search
 ## Topics
 
 ### Initializers
-- [init()](iobluetoothdevicesearchdeviceattributes/init.md)
-- [init(address: BluetoothDeviceAddress, name: BluetoothDeviceName, serviceClassMajor: BluetoothServiceClassMajor, deviceClassMajor: BluetoothDeviceClassMajor, deviceClassMinor: BluetoothDeviceClassMinor)](iobluetoothdevicesearchdeviceattributes/init(address:name:serviceclassmajor:deviceclassmajor:deviceclassminor:).md)
+- [init()](./iobluetoothdevicesearchdeviceattributes/init%28%29.md)
+- [init(address: BluetoothDeviceAddress, name: BluetoothDeviceName, serviceClassMajor: BluetoothServiceClassMajor, deviceClassMajor: BluetoothDeviceClassMajor, deviceClassMinor: BluetoothDeviceClassMinor)](./iobluetoothdevicesearchdeviceattributes/init%28address,name,serviceclassmajor,deviceclassmajor,deviceclassminor%29.md)
 ### Instance Properties
-- [var address: BluetoothDeviceAddress](iobluetoothdevicesearchdeviceattributes/address.md)
-- [var deviceClassMajor: BluetoothDeviceClassMajor](iobluetoothdevicesearchdeviceattributes/deviceclassmajor.md)
-- [var deviceClassMinor: BluetoothDeviceClassMinor](iobluetoothdevicesearchdeviceattributes/deviceclassminor.md)
-- [var name: BluetoothDeviceName](iobluetoothdevicesearchdeviceattributes/name.md)
-- [var serviceClassMajor: BluetoothServiceClassMajor](iobluetoothdevicesearchdeviceattributes/serviceclassmajor.md)
+- [var address: BluetoothDeviceAddress](./iobluetoothdevicesearchdeviceattributes/address.md)
+- [var deviceClassMajor: BluetoothDeviceClassMajor](./iobluetoothdevicesearchdeviceattributes/deviceclassmajor.md)
+- [var deviceClassMinor: BluetoothDeviceClassMinor](./iobluetoothdevicesearchdeviceattributes/deviceclassminor.md)
+- [var name: BluetoothDeviceName](./iobluetoothdevicesearchdeviceattributes/name.md)
+- [var serviceClassMajor: BluetoothServiceClassMajor](./iobluetoothdevicesearchdeviceattributes/serviceclassmajor.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct IOBluetoothDeviceSearchAttributes](iobluetoothdevicesearchattributes.md)
+### Related Documentation
+- [struct IOBluetoothDeviceSearchAttributes](./iobluetoothdevicesearchattributes.md)
   Structure used to search for particular devices.
-- [typealias IOBluetoothDeviceSearchTypes](iobluetoothdevicesearchtypes.md)
-- [struct IOBluetoothDeviceSearchTypesBits](iobluetoothdevicesearchtypesbits.md)
+- [typealias IOBluetoothDeviceSearchTypes](./iobluetoothdevicesearchtypes.md)
+- [struct IOBluetoothDeviceSearchTypesBits](./iobluetoothdevicesearchtypesbits.md)
   Bits to determine what Bluetooth devices to search for
-- [struct IOBluetoothDeviceSearchDeviceAttributes](iobluetoothdevicesearchdeviceattributes.md)
+- [struct IOBluetoothDeviceSearchDeviceAttributes](./iobluetoothdevicesearchdeviceattributes.md)
   Structure used to search for particular devices.
-- [typealias IOBluetoothDeviceSearchOptions](iobluetoothdevicesearchoptions.md)
-- [struct IOBluetoothDeviceSearchAttributes](iobluetoothdevicesearchattributes.md)
+### Data Types
+- [typealias IOBluetoothDeviceSearchOptions](./iobluetoothdevicesearchoptions.md)
+- [struct IOBluetoothDeviceSearchAttributes](./iobluetoothdevicesearchattributes.md)
   Structure used to search for particular devices.
 
 

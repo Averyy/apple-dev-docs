@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a temporary CVPixelBuffer that your Core Image Processor Kernel can use as scratch storage during processing.
@@ -20,6 +21,10 @@ Returns a temporary CVPixelBuffer that your Core Image Processor Kernel can use 
 func temporaryPixelBuffer(identifier: String, format: OSType, width: Int, height: Int, attributes: [AnyHashable : Any]? = nil) -> CVPixelBuffer?
 ```
 
+```objc
+- (CVPixelBufferRef) temporaryPixelBufferWithIdentifier:(NSString *) identifier format:(OSType) format width:(size_t) width height:(size_t) height attributes:(NSDictionary *) attributes;
+```
+
 #### Return Value
 
  A non-retained `CVPixelBuffer` of the requested size and format, or `nil` if the buffer could not be created.
@@ -28,7 +33,7 @@ func temporaryPixelBuffer(identifier: String, format: OSType, width: Int, height
 
 Use this method when your processor needs an intermediate `CVPixelBuffer` to stash data between stages of its work. Core Image manages the lifetime of the returned buffer and reuses the underlying allocation across multiple invocations when possible. This is more efficient than allocating a fresh `CVPixelBuffer` on each invocation of your processor.
 
-The returned pixel buffer is valid only for the duration of the [`process(with:arguments:output:)`](ciimageprocessorkernel/process(with:arguments:output:).md) call that requested it. Don’t retain it beyond the scope of that method or use it after the method returns.
+The returned pixel buffer is valid only for the duration of the [`process(with:arguments:output:)`](../ciimageprocessorkernel/process%28with,arguments,output%29.md) call that requested it. Don’t retain it beyond the scope of that method or use it after the method returns.
 
 Calling this method multiple times within the same processor invocation with the same `identifier`, `format`, `width`, and `height` returns a pixel buffer backed by the same `IOSurface`. Otherwise it returns a distinct pixel buffer. This lets a processor request several independent pixel buffers by giving each one a unique name.
 

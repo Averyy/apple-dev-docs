@@ -1,7 +1,8 @@
 # PartRenderer.AxisValues
 
 **Framework**: hvf  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 All the axis values applied to a part. The index is the axis number (determined by the loader). Axis values are in design space (-1.0…1.0)
 
@@ -23,18 +24,18 @@ class AxisValues
 ## Topics
 
 ### Instance Properties
-- [var isNested: Bool](partrenderer/axisvalues/isnested.md)
+- [var isNested: Bool](./axisvalues/isnested.md)
   Whether the axis values apply to a nested subpart or not
 ### Instance Methods
-- [func blendedValue(axis: Int) -> Double](partrenderer/axisvalues/blendedvalue(axis:).md)
+- [func blendedValue(axis: Int) -> Double](./axisvalues/blendedvalue%28axis%29.md)
   The final axis values applied to this subpart after the part has been rendered This is useful for detecting axes going out of range (-1.0…1.0)
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [MutableCollection](../../Swift/mutablecollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

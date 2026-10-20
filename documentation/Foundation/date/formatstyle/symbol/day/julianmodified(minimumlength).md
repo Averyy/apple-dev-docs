@@ -1,7 +1,8 @@
 # julianModified(minimumLength:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom day format style representing the modified Julian day.
 
@@ -30,11 +31,12 @@ The minimum length specifies the minimum number of digits, zero-padded if necess
 
 ## See Also
 
-- [static var defaultDigits: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/defaultdigits.md)
+### Modifying a Day Format
+- [static var defaultDigits: Date.FormatStyle.Symbol.Day](./defaultdigits.md)
   Custom format style portraying the minimum number of digits that represents the numeric day of month.
-- [static var ordinalOfDayInMonth: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/ordinalofdayinmonth.md)
+- [static var ordinalOfDayInMonth: Date.FormatStyle.Symbol.Day](./ordinalofdayinmonth.md)
   Custom format style portraying the ordinal of the day in the month.
-- [static var twoDigits: Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Day](./twodigits.md)
   Custom format style portraying the two-digit numeric day of month, zero-padded if necessary.
 
 

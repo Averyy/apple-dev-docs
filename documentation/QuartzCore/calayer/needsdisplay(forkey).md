@@ -1,7 +1,8 @@
 # needsDisplay(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean indicating whether changes to the specified key require the layer to be redisplayed.
 
@@ -19,15 +20,19 @@ Returns a Boolean indicating whether changes to the specified key require the la
 class func needsDisplay(forKey key: String) -> Bool
 ```
 
+```objc
++ (BOOL) needsDisplayForKey:(NSString *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the layer requires a redisplay.
+[`true`](../../Swift/true.md) if the layer requires a redisplay.
 
 #### Discussion
 
-Subclasses can override this method and return [`true`](https://developer.apple.com/documentation/swift/true) if the layer should be redisplayed when the value of the specified attribute changes. Animations changing the value of the attribute also trigger redisplay.
+Subclasses can override this method and return [`true`](../../Swift/true.md) if the layer should be redisplayed when the value of the specified attribute changes. Animations changing the value of the attribute also trigger redisplay.
 
-The default implementation of this method returns [`false`](https://developer.apple.com/documentation/swift/false).
+The default implementation of this method returns [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -35,19 +40,21 @@ The default implementation of this method returns [`false`](https://developer.ap
 
 ## See Also
 
-- [class func defaultAction(forKey: String) -> (any CAAction)?](calayer/defaultaction(forkey:).md)
+### Related Documentation
+- [class func defaultAction(forKey: String) -> (any CAAction)?](./defaultaction%28forkey%29.md)
   Returns the default action for the current class.
-- [class func defaultValue(forKey: String) -> Any?](calayer/defaultvalue(forkey:).md)
+- [class func defaultValue(forKey: String) -> Any?](./defaultvalue%28forkey%29.md)
   Specifies the default value associated with the specified key.
-- [func setNeedsDisplay()](calayer/setneedsdisplay.md)
+### Updating layer display
+- [func setNeedsDisplay()](./setneedsdisplay%28%29.md)
   Marks the layer’s contents as needing to be updated.
-- [func setNeedsDisplay(CGRect)](calayer/setneedsdisplay(_:).md)
+- [func setNeedsDisplay(CGRect)](./setneedsdisplay%28_%29.md)
   Marks the region within the specified rectangle as needing to be updated.
-- [var needsDisplayOnBoundsChange: Bool](calayer/needsdisplayonboundschange.md)
+- [var needsDisplayOnBoundsChange: Bool](./needsdisplayonboundschange.md)
   A Boolean indicating whether the layer contents must be updated when its bounds rectangle changes.
-- [func displayIfNeeded()](calayer/displayifneeded.md)
+- [func displayIfNeeded()](./displayifneeded%28%29.md)
   Initiates the update process for a layer if it is currently marked as needing an update.
-- [func needsDisplay() -> Bool](calayer/needsdisplay.md)
+- [func needsDisplay() -> Bool](./needsdisplay%28%29.md)
   Returns a Boolean indicating whether the layer has been marked as needing an update.
 
 

@@ -1,7 +1,8 @@
 # AssetError.Kind.duplicateName
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a component with that name already exists in the asset.
 
@@ -20,13 +21,14 @@ case duplicateName
 
 ## See Also
 
-- [AssetError.Kind.corruptedMetadata](asseterror/kind-swift.enum/corruptedmetadata.md)
+### Types of errors
+- [AssetError.Kind.corruptedMetadata](./corruptedmetadata.md)
   An error that indicates the asset metadata is corrupted.
-- [AssetError.Kind.invalidFeatureType(_:)](asseterror/kind-swift.enum/invalidfeaturetype(_:).md)
+- [AssetError.Kind.invalidFeatureType(_:)](./invalidfeaturetype%28_%29.md)
   An error that indicates the feature type is invalid.
-- [AssetError.Kind.invalidName](asseterror/kind-swift.enum/invalidname.md)
+- [AssetError.Kind.invalidName](./invalidname.md)
   An error that indicates the component name is invalid.
-- [AssetError.Kind.unsupportedVersion(_:)](asseterror/kind-swift.enum/unsupportedversion(_:).md)
+- [AssetError.Kind.unsupportedVersion(_:)](./unsupportedversion%28_%29.md)
   An error that indicates the asset version is unsupported.
 
 

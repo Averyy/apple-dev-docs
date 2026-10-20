@@ -1,7 +1,8 @@
 # AttributeScope
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that organizes attributes into a grouping, and supports dynamic member lookup and serialization of attribute keys.
 
@@ -22,7 +23,7 @@ protocol AttributeScope : DecodingConfigurationProviding, EncodingConfigurationP
 
 #### Overview
 
-Attribute owners — typically frameworks — define attributes with [`AttributedStringKey`](attributedstringkey.md) types. To allow access to attributes with dynamic member lookup, owners create one or more structures that conform to [`AttributeScope`](attributescope.md). The scopes provide short names for their attributes that map to the [`AttributedStringKey`](attributedstringkey.md) type. The following example shows how to do this:
+Attribute owners — typically frameworks — define attributes with [`AttributedStringKey`](./attributedstringkey.md) types. To allow access to attributes with dynamic member lookup, owners create one or more structures that conform to [`AttributeScope`](./attributescope.md). The scopes provide short names for their attributes that map to the [`AttributedStringKey`](./attributedstringkey.md) type. The following example shows how to do this:
 
 ```swift
 struct TextStyleAttributes : AttributeScope {
@@ -38,29 +39,29 @@ This allows callers to use a syntax like `myAttributedString.foregroundColor = .
 ## Topics
 
 ### Supporting Coding Configurations
-- [static var encodingConfiguration: AttributeScopeCodableConfiguration](attributescope/encodingconfiguration.md)
+- [static var encodingConfiguration: AttributeScopeCodableConfiguration](./attributescope/encodingconfiguration.md)
   The configuration for encoding the attribute scope.
-- [static var decodingConfiguration: AttributeScopeCodableConfiguration](attributescope/decodingconfiguration.md)
+- [static var decodingConfiguration: AttributeScopeCodableConfiguration](./attributescope/decodingconfiguration.md)
   The configuration for decoding the attribute scope.
 ### Type Properties
-- [static var attributeKeys: some Sequence<any AttributedStringKey.Type>](attributescope/attributekeys.md)
+- [static var attributeKeys: some Sequence<any AttributedStringKey.Type>](./attributescope/attributekeys.md)
   A list of all attribute keys contained within this scope and any sub-scopes.
 
 ## Relationships
 
 ### Inherits From
-- [DecodingConfigurationProviding](decodingconfigurationproviding.md)
-- [EncodingConfigurationProviding](encodingconfigurationproviding.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DecodingConfigurationProviding](./decodingconfigurationproviding.md)
+- [EncodingConfigurationProviding](./encodingconfigurationproviding.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
-- [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
-- [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](attributescopes/foundationattributes/numberformatattributes.md)
-- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
-- [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
-- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
-- [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
+- [AttributeScopes.AccessibilityAttributes](./attributescopes/accessibilityattributes.md)
+- [AttributeScopes.AppKitAttributes](./attributescopes/appkitattributes.md)
+- [AttributeScopes.FoundationAttributes](./attributescopes/foundationattributes.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes](./attributescopes/foundationattributes/numberformatattributes.md)
+- [AttributeScopes.SpeechAttributes](./attributescopes/speechattributes.md)
+- [AttributeScopes.SwiftUIAttributes](./attributescopes/swiftuiattributes.md)
+- [AttributeScopes.TranslationAttributes](./attributescopes/translationattributes.md)
+- [AttributeScopes.UIKitAttributes](./attributescopes/uikitattributes.md)
 
 
 ---

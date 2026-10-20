@@ -1,7 +1,8 @@
 # CNInstantMessageAddress
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable object representing an instant message address for the contact.
 
@@ -19,75 +20,80 @@ An immutable object representing an instant message address for the contact.
 class CNInstantMessageAddress
 ```
 
+```objc
+@interface CNInstantMessageAddress : NSObject
+```
+
 #### Overview
 
-Use the methods and properties of `CNInstantMessageAddress` to identify instant messaging addresses. Some instant message services, such as Facebook and Skype are predefined in this class. You can also specify your own instant message service using the [`init(username:service:)`](cninstantmessageaddress/init(username:service:).md) method.
+Use the methods and properties of `CNInstantMessageAddress` to identify instant messaging addresses. Some instant message services, such as Facebook and Skype are predefined in this class. You can also specify your own instant message service using the [`init(username:service:)`](./cninstantmessageaddress/init%28username,service%29.md) method.
 
 `CNInstantMessageAddress` objects are thread-safe, and you may access their properties from any thread of your app.
 
 ## Topics
 
 ### Creating an Instant Message Address
-- [init(username: String, service: String)](cninstantmessageaddress/init(username:service:).md)
-  Returns a [`CNInstantMessageAddress`](cninstantmessageaddress.md) object initialized with the specified user name and service.
+- [init(username: String, service: String)](./cninstantmessageaddress/init%28username,service%29.md)
+  Returns a [`CNInstantMessageAddress`](./cninstantmessageaddress.md) object initialized with the specified user name and service.
 ### Getting the Address Information
-- [var service: String](cninstantmessageaddress/service.md)
+- [var service: String](./cninstantmessageaddress/service.md)
   The name of the instant message address service.
-- [var username: String](cninstantmessageaddress/username.md)
+- [var username: String](./cninstantmessageaddress/username.md)
   The user name for instant message service address.
 ### Getting Localized Address Information
-- [class func localizedString(forKey: String) -> String](cninstantmessageaddress/localizedstring(forkey:).md)
+- [class func localizedString(forKey: String) -> String](./cninstantmessageaddress/localizedstring%28forkey%29.md)
   Returns a string containing the localized property name.
-- [let CNInstantMessageAddressUsernameKey: String](cninstantmessageaddressusernamekey.md)
+- [let CNInstantMessageAddressUsernameKey: String](./cninstantmessageaddressusernamekey.md)
   Instant message address username key.
-- [let CNInstantMessageAddressServiceKey: String](cninstantmessageaddressservicekey.md)
+- [let CNInstantMessageAddressServiceKey: String](./cninstantmessageaddressservicekey.md)
   Instant message address service key.
 ### Getting Localized Service Names
-- [class func localizedString(forService: String) -> String](cninstantmessageaddress/localizedstring(forservice:).md)
+- [class func localizedString(forService: String) -> String](./cninstantmessageaddress/localizedstring%28forservice%29.md)
   Returns a string containing the localized name of the specified service.
-- [let CNInstantMessageServiceAIM: String](cninstantmessageserviceaim.md)
+- [let CNInstantMessageServiceAIM: String](./cninstantmessageserviceaim.md)
   Instant message service for AIM.
-- [let CNInstantMessageServiceFacebook: String](cninstantmessageservicefacebook.md)
+- [let CNInstantMessageServiceFacebook: String](./cninstantmessageservicefacebook.md)
   Instant message service for Facebook.
-- [let CNInstantMessageServiceGaduGadu: String](cninstantmessageservicegadugadu.md)
+- [let CNInstantMessageServiceGaduGadu: String](./cninstantmessageservicegadugadu.md)
   Instant message service for Gadu Gadu.
-- [let CNInstantMessageServiceGoogleTalk: String](cninstantmessageservicegoogletalk.md)
+- [let CNInstantMessageServiceGoogleTalk: String](./cninstantmessageservicegoogletalk.md)
   Instant message service for Google Talk.
-- [let CNInstantMessageServiceICQ: String](cninstantmessageserviceicq.md)
+- [let CNInstantMessageServiceICQ: String](./cninstantmessageserviceicq.md)
   Instant message service for ICQ.
-- [let CNInstantMessageServiceJabber: String](cninstantmessageservicejabber.md)
+- [let CNInstantMessageServiceJabber: String](./cninstantmessageservicejabber.md)
   Instant message service for Jabber.
-- [let CNInstantMessageServiceMSN: String](cninstantmessageservicemsn.md)
+- [let CNInstantMessageServiceMSN: String](./cninstantmessageservicemsn.md)
   Instant message service for MSN.
-- [let CNInstantMessageServiceQQ: String](cninstantmessageserviceqq.md)
+- [let CNInstantMessageServiceQQ: String](./cninstantmessageserviceqq.md)
   Instant message service for QQ.
-- [let CNInstantMessageServiceSkype: String](cninstantmessageserviceskype.md)
+- [let CNInstantMessageServiceSkype: String](./cninstantmessageserviceskype.md)
   Instant message service for Skype.
-- [let CNInstantMessageServiceYahoo: String](cninstantmessageserviceyahoo.md)
+- [let CNInstantMessageServiceYahoo: String](./cninstantmessageserviceyahoo.md)
   Instant message service for Yahoo.
 ### Initializers
-- [init?(coder: NSCoder)](cninstantmessageaddress/init(coder:).md)
+- [init?(coder: NSCoder)](./cninstantmessageaddress/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CNPostalAddress](cnpostaladdress.md)
+### Addresses
+- [class CNPostalAddress](./cnpostaladdress.md)
   An immutable representation of the postal address for a contact.
-- [class CNMutablePostalAddress](cnmutablepostaladdress.md)
+- [class CNMutablePostalAddress](./cnmutablepostaladdress.md)
   A mutable representation of the postal address for a contact.
 
 

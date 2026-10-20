@@ -1,7 +1,8 @@
 # response()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches data from the Apple Music API endpoint that the URL request defines.
 

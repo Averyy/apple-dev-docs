@@ -1,7 +1,8 @@
 # init(editing:contentType:editor:prepareDocument:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a document group for creating and editing documents that store a specific model type.
 
@@ -16,6 +17,15 @@ Instantiates a document group for creating and editing documents that store a sp
 ```swift
 nonisolated
 init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
+```
+
+Available when `Document` is `ModelDocument` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(editing modelTypes: [any PersistentModel.Type], contentType: UTType, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
 ```
 
 #### Discussion
@@ -55,7 +65,7 @@ init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @
  }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app). Also, remember to specify the supported Document types in the Info.plist as well.
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist`. For more information, see [Defining file and data types for your app](../../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md). Also, remember to specify the supported Document types in the Info.plist as well.
 
 ## Parameters
 
@@ -66,7 +76,8 @@ init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @
 
 ## See Also
 
-- [init(editing: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: () -> Content, prepareDocument: (ModelContext) -> Void)](documentgroup/init(editing:migrationplan:editor:preparedocument:).md)
+### Editing a document backed by a persistent store
+- [init(editing: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: () -> Content, prepareDocument: (ModelContext) -> Void)](./init%28editing,migrationplan,editor,preparedocument%29.md)
   Instantiates a document group for creating and editing documents described by the last `Schema` in the migration plan.
 
 

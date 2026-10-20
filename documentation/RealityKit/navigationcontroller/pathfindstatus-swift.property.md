@@ -1,7 +1,8 @@
 # pathfindStatus
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current pathfind status.
 
@@ -21,9 +22,10 @@ var pathfindStatus: NavigationController.PathfindStatus { get }
 
 ## See Also
 
-- [NavigationController.PathfindStatus](navigationcontroller/pathfindstatus-swift.enum.md)
+### Monitoring pathfinding status
+- [NavigationController.PathfindStatus](./pathfindstatus-swift.enum.md)
   The status of a pathfinding request.
-- [var currentPath: [NavigationMeshResource.PathNode]](navigationcontroller/currentpath.md)
+- [var currentPath: [NavigationMeshResource.PathNode]](./currentpath.md)
   The computed path to the target position found by requestPath(). If called before the pathfind completes, a partial path will be returned. This partial path may be suboptimal. If the pathfind failed or was not requested, the function will return an empty array.
 
 

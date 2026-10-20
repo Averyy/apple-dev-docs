@@ -1,7 +1,8 @@
 # ecdsa_p256
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents an ECDSA Nist P-256 signature.
 
@@ -11,7 +12,7 @@ A constant that represents an ECDSA Nist P-256 signature.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static let ecdsa_p256: ArchiveEncryptionContext.SignatureMode
 
 ## See Also
 
-- [static let none: ArchiveEncryptionContext.SignatureMode](archiveencryptioncontext/signaturemode-swift.struct/none.md)
+### Signature Mode Constants
+- [static let none: ArchiveEncryptionContext.SignatureMode](./none.md)
   A constant that represents no signature.
 
 

@@ -1,7 +1,8 @@
 # RealityViewContent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The content of a visionOS reality view.
 
@@ -23,39 +24,40 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 ## Topics
 
 ### Structures
-- [RealityViewContent.Body](realityviewcontent/body.md)
+- [RealityViewContent.Body](./realityviewcontent/body.md)
   The default view contents of a reality view, using reality view content.
 ### Instance Methods
-- [func animate(body: () -> Void, completion: (() -> Void)?)](realityviewcontent/animate(body:completion:).md)
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](realityviewcontent/subscribe(to:on:componenttype:_:).md)
+- [func animate(body: () -> Void, completion: (() -> Void)?)](./realityviewcontent/animate%28body,completion%29.md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> EventSubscription](./realityviewcontent/subscribe%28to,on,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or a specific component type for component events.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RealityCoordinateSpace](realitycoordinatespace.md)
-- [RealityCoordinateSpaceConverting](realitycoordinatespaceconverting.md)
-- [RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [RealityCoordinateSpace](./realitycoordinatespace.md)
+- [RealityCoordinateSpaceConverting](./realitycoordinatespaceconverting.md)
+- [RealityViewContentProtocol](./realityviewcontentprotocol.md)
 
 ## See Also
 
-- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+### SwiftUI scene presentation
+- [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
   Choose a strategy for sizing frames and centering 3D content.
-- [struct RealityView](realityview.md)
+- [struct RealityView](./realityview.md)
   A view that contains RealityKit content.
-- [struct RealityViewCameraContent](realityviewcameracontent.md)
+- [struct RealityViewCameraContent](./realityviewcameracontent.md)
   The content of a reality view that is displayed through a camera.
-- [protocol RealityViewContentProtocol](realityviewcontentprotocol.md)
+- [protocol RealityViewContentProtocol](./realityviewcontentprotocol.md)
   A protocol representing the content of a reality view.
-- [struct RealityViewDefaultPlaceholder](realityviewdefaultplaceholder.md)
+- [struct RealityViewDefaultPlaceholder](./realityviewdefaultplaceholder.md)
   A view that represents the default placeholder for a RealityView.
-- [struct RealityViewEntityCollection](realityviewentitycollection.md)
+- [struct RealityViewEntityCollection](./realityviewentitycollection.md)
   A collection of entities in a RealityView.
-- [struct RealityViewLayoutOption](realityviewlayoutoption.md)
+- [struct RealityViewLayoutOption](./realityviewlayoutoption.md)
   Options that specify the frame sizing and content alignment option for `RealityView`.
-- [protocol EntityCollection](entitycollection.md)
+- [protocol EntityCollection](./entitycollection.md)
   An ordered, mutable collection of entities.
 
 

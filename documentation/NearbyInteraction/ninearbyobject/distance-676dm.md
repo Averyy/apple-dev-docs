@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: Nearby Interaction  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance from the user’s device to the peer device in meters.
 
@@ -19,11 +20,11 @@ var distance: Float? { get }
 
 ## Mentions
 
-- [Initiating and maintaining a session](initiating-and-maintaining-a-session.md)
+- [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
 #### Discussion
 
-This property contains the distance in meters between the local device and the peer device described by [`NINearbyObject`](ninearbyobject.md). If the framework fails to acquire the peer device’s distance, the value is `nil`.
+This property contains the distance in meters between the local device and the peer device described by [`NINearbyObject`](../ninearbyobject.md). If the framework fails to acquire the peer device’s distance, the value is `nil`.
 
 The maximum detectable range depends on environmental factors. For example, a clear path between the two devices increases the detectable range, and solid obstructions to the device’s line of sight constrict the range.
 

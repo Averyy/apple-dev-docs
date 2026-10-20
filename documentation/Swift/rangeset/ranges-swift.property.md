@@ -1,7 +1,8 @@
 # ranges
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of the ranges that make up the range set.
 

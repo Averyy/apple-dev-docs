@@ -2,6 +2,7 @@
 
 **Framework**: Assignables  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Merges an individual part into the specified part of this object.
@@ -10,7 +11,9 @@ Merges an individual part into the specified part of this object.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use merge(partData:into:)
 
 ## Declaration
 
@@ -25,7 +28,8 @@ mutating func merge(partID: Self.PartID, partDataURL: URL) throws -> Bool
 
 ## See Also
 
-- [func merge(other: Self) throws -> Bool](mergeablepartscontainer/merge(other:).md)
+### Merging the parts
+- [func merge(other: Self) throws -> Bool](./merge%28other%29.md)
   Merge another object of this type into this object.
 
 

@@ -1,21 +1,26 @@
 # DISPATCH_IO_STREAM
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var DISPATCH_IO_STREAM: Int32 { get }
+```
+
+```c
+#define DISPATCH_IO_STREAM
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ Offset values are ignored for channels of this type.
 
 ## See Also
 
-- [var DISPATCH_IO_RANDOM: Int32](dispatch_io_random.md)
+### Initializing the Type
+- [var DISPATCH_IO_RANDOM: Int32](./dispatch_io_random.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CSVWritingError
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A CSV writing error.
 
@@ -23,36 +24,37 @@ enum CSVWritingError
 ## Topics
 
 ### Getting Error Information
-- [var column: String?](csvwritingerror/column.md)
+- [var column: String?](./csvwritingerror/column.md)
   The index of the column that contains the error.
-- [var row: Int](csvwritingerror/row.md)
+- [var row: Int](./csvwritingerror/row.md)
   The index of the row that contains the error.
-- [case badEncoding(row: Int, column: String, Data)](csvwritingerror/badencoding(row:column:_:).md)
+- [case badEncoding(row: Int, column: String, Data)](./csvwritingerror/badencoding%28row,column,_%29.md)
   An error that indicates CSV data contains an invalid UTF-8 byte sequence.
 ### Default Implementations
-- [CustomStringConvertible Implementations](csvwritingerror/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./csvwritingerror/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum JSONReadingError](jsonreadingerror.md)
+### Errors
+- [enum JSONReadingError](./jsonreadingerror.md)
   A JSON reading error.
-- [enum CSVReadingError](csvreadingerror.md)
+- [enum CSVReadingError](./csvreadingerror.md)
   A CSV reading error.
-- [struct ColumnDecodingError](columndecodingerror.md)
+- [struct ColumnDecodingError](./columndecodingerror.md)
   A column decoding error.
-- [struct ColumnEncodingError](columnencodingerror.md)
+- [struct ColumnEncodingError](./columnencodingerror.md)
   A column encoding error.
-- [enum SFrameReadingError](sframereadingerror.md)
+- [enum SFrameReadingError](./sframereadingerror.md)
   An error when reading a Turi Create scalable data frame.
 
 

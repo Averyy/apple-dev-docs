@@ -1,17 +1,22 @@
 # type
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the printer’s make and model.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var type: NSPrinter.TypeName { get }
+```
+
+```objc
+@property (copy, readonly) NSPrinterTypeName type;
 ```
 
 #### Return Value
@@ -20,9 +25,11 @@ A description of the printer’s make and model.
 
 ## See Also
 
-- [class var printerTypes: [NSPrinter.TypeName]](nsprinter/printertypes.md)
+### Related Documentation
+- [class var printerTypes: [NSPrinter.TypeName]](./printertypes.md)
   Returns descriptions of the makes and models of all available printers.
-- [var name: String](nsprinter/name.md)
+### Getting Attributes
+- [var name: String](./name.md)
   The printer’s name.
 
 

@@ -1,7 +1,8 @@
 # locale(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the measurement format style to use the specified locale.
 
@@ -30,17 +31,18 @@ A measurement format style with the specified locale.
 
 ## See Also
 
-- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/width.md)
+### Modifying a measurement format style
+- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](./width.md)
   The width of the measurement unit.
-- [Measurement.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth.md)
+- [Measurement.FormatStyle.UnitWidth](./unitwidth.md)
   Specifies the width of the unit, determining the textual representation.
-- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](measurement/formatstyle/numberformatstyle.md)
+- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](./numberformatstyle.md)
   The formatting of the measurement value.
-- [var usage: MeasurementFormatUnitUsage<UnitType>?](measurement/formatstyle/usage.md)
+- [var usage: MeasurementFormatUnitUsage<UnitType>?](./usage.md)
   The intended purpose of the formatted measurement.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale of the format style.
 
 

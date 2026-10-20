@@ -1,7 +1,8 @@
 # TimeInterval
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A number of seconds.
 
@@ -20,17 +21,22 @@ A number of seconds.
 typealias TimeInterval = Double
 ```
 
+```c
+typedef double NSTimeInterval;
+```
+
 #### Discussion
 
-A [`TimeInterval`](timeinterval.md) value is always specified in seconds; it yields sub-millisecond precision over a range of 10,000 years.
+A [`TimeInterval`](./timeinterval.md) value is always specified in seconds; it yields sub-millisecond precision over a range of 10,000 years.
 
-On its own, a time interval does not specify a unique point in time, or even a span between specific times. Combining a time interval with one or more known reference points yields a [`Date`](date.md) or [`DateInterval`](dateinterval.md) value.
+On its own, a time interval does not specify a unique point in time, or even a span between specific times. Combining a time interval with one or more known reference points yields a [`Date`](./date.md) or [`DateInterval`](./dateinterval.md) value.
 
 ## See Also
 
-- [struct Date](date.md)
+### Date Representations
+- [struct Date](./date.md)
   A specific point in time, independent of any calendar or time zone.
-- [struct DateInterval](dateinterval.md)
+- [struct DateInterval](./dateinterval.md)
   The span of time between a specific start date and end date.
 
 

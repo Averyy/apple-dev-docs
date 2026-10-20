@@ -1,7 +1,8 @@
 # init(upstream:prefix:file:line:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that raises a fatal error upon receiving any failure, and otherwise republishes all received input.
 

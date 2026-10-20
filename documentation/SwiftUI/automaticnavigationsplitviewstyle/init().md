@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the automatic navigation split view style.
 
@@ -23,7 +24,7 @@ Creates an instance of the automatic navigation split view style.
 
 #### Discussion
 
-Use [`automatic`](navigationsplitviewstyle/automatic.md) to construct this style.
+Use [`automatic`](../navigationsplitviewstyle/automatic.md) to construct this style.
 
 
 ---

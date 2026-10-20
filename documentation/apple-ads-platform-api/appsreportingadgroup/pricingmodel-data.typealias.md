@@ -1,7 +1,8 @@
 # AppsReportingAdGroup.PricingModel
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The pricing model of the ad group at report time.
 
@@ -10,9 +11,15 @@ The pricing model of the ad group at report time.
 
 ## Declaration
 
-```swift
+```
 string AppsReportingAdGroup.PricingModel
 ```
+
+## Possible Values
+
+- `CPA`: Cost-per-acquisition.
+- `CPM`: Cost-per-thousand-impressions.
+- `CPT`: Cost-per-tap.
 
 #### Discussion
 
@@ -26,7 +33,7 @@ This determines which report metrics are directly tied to cost: `CPM` pairs with
 }
 ```
 
-See [`ReportingPricingModel`](reportingpricingmodel.md) for additional context.
+See [`ReportingPricingModel`](../reportingpricingmodel.md) for additional context.
 
 
 ---

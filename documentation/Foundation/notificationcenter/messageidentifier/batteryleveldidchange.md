@@ -1,7 +1,8 @@
 # batteryLevelDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,11 +16,14 @@
 static var batteryLevelDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.BatteryLevelDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIDevice.BatteryLevelDidChangeMessage>`.
+
 ## See Also
 
-- [static var batteryStateDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.BatteryStateDidChangeMessage>](notificationcenter/messageidentifier/batterystatedidchange.md)
-- [static var orientationDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.OrientationDidChangeMessage>](notificationcenter/messageidentifier/orientationdidchange.md)
-- [static var proximityStateDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.ProximityStateDidChangeMessage>](notificationcenter/messageidentifier/proximitystatedidchange.md)
+### Identifying UIKIt device messages
+- [static var batteryStateDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.BatteryStateDidChangeMessage>](./batterystatedidchange.md)
+- [static var orientationDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.OrientationDidChangeMessage>](./orientationdidchange.md)
+- [static var proximityStateDidChange: NotificationCenter.BaseMessageIdentifier<UIDevice.ProximityStateDidChangeMessage>](./proximitystatedidchange.md)
 
 
 ---

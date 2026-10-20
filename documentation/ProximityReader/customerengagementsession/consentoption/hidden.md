@@ -1,7 +1,8 @@
 # CustomerEngagementSession.ConsentOption.hidden
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Hides the option.
 

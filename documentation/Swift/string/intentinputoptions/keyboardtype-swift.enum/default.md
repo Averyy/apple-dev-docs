@@ -1,7 +1,8 @@
 # String.IntentInputOptions.KeyboardType.default
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+

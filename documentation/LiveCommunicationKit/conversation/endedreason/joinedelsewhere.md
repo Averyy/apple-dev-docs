@@ -1,7 +1,8 @@
 # Conversation.EndedReason.joinedElsewhere
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Another device joined the conversation.
 
@@ -20,13 +21,14 @@ case joinedElsewhere
 
 ## See Also
 
-- [Conversation.EndedReason.declinedElsewhere](conversation/endedreason/declinedelsewhere.md)
+### Reasons
+- [Conversation.EndedReason.declinedElsewhere](./declinedelsewhere.md)
   Another device declined the conversation.
-- [Conversation.EndedReason.failed](conversation/endedreason/failed.md)
+- [Conversation.EndedReason.failed](./failed.md)
   An error occurred while attempting to service the conversation.
-- [Conversation.EndedReason.remoteEnded](conversation/endedreason/remoteended.md)
+- [Conversation.EndedReason.remoteEnded](./remoteended.md)
   The remote party explicitly ended the conversation.
-- [Conversation.EndedReason.unanswered](conversation/endedreason/unanswered.md)
+- [Conversation.EndedReason.unanswered](./unanswered.md)
   The conversation didn’t complete the connection process and was never explicitly ended.
 
 

@@ -1,7 +1,8 @@
 # AlternativeDistributionKeyCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionKeyCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AlternativeDistributionKeyCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -26,7 +27,8 @@ object AlternativeDistributionKeyCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AlternativeDistributionKeyCreateRequest.Data.Attributes](alternativedistributionkeycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AlternativeDistributionKeyCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the public key used to create a new resource.
 
 

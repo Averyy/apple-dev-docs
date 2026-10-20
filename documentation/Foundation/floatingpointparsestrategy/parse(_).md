@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a floating-point string in accordance with this strategy and returns the parsed value.
 
@@ -20,13 +21,15 @@ Parses a floating-point string in accordance with this strategy and returns the 
 func parse(_ value: String) throws -> Format.FormatInput
 ```
 
+Available when `Format` conforms to `FormatStyle` and `Format.FormatInput` conforms to `BinaryFloatingPoint`.
+
 #### Return Value
 
 The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse floating-point strings with the same [`FloatingPointParseStrategy`](floatingpointparsestrategy.md). To parse a single floating-point string, use the initializers inherited from [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint) that take a [`String`](https://developer.apple.com/documentation/swift/string) and a [`FormatStyle`](formatstyle.md) as parameters.
+Use this method to repeatedly parse floating-point strings with the same [`FloatingPointParseStrategy`](../floatingpointparsestrategy.md). To parse a single floating-point string, use the initializers inherited from [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md) that take a [`String`](../../Swift/string.md) and a [`FormatStyle`](../formatstyle.md) as parameters.
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

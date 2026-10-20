@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current phase of a capture event.
 
@@ -16,9 +17,14 @@ The current phase of a capture event.
 var phase: AVCaptureEventPhase { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureEventPhase phase;
+```
+
 ## See Also
 
-- [enum AVCaptureEventPhase](avcaptureeventphase.md)
+### Inspecting the event
+- [enum AVCaptureEventPhase](../avcaptureeventphase.md)
   Constants that indicate the phase of a system capture event.
 
 

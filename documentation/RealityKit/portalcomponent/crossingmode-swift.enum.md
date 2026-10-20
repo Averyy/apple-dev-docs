@@ -1,7 +1,8 @@
 # PortalComponent.CrossingMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the mode of crossing for a portal.
 
@@ -21,29 +22,29 @@ enum CrossingMode
 
 #### Overview
 
-You pass this type to [`crossingMode`](portalcomponent/crossingmode-swift.property.md) to configure the portal component’s crossing feature.
+You pass this type to [`crossingMode`](./crossingmode-swift.property.md) to configure the portal component’s crossing feature.
 
-Use [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift.enum/disabled.md) to disallow contents within the portal to cross out of the portal boundary.
+Use [`PortalComponent.CrossingMode.disabled`](./crossingmode-swift.enum/disabled.md) to disallow contents within the portal to cross out of the portal boundary.
 
-Use [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md) to allow contents within the portal world with a [`PortalCrossingComponent`](portalcrossingcomponent.md) to cross out of this planar definition of the portal boundary.
+Use [`PortalComponent.CrossingMode.plane(_:)`](./crossingmode-swift.enum/plane%28_%29.md) to allow contents within the portal world with a [`PortalCrossingComponent`](../portalcrossingcomponent.md) to cross out of this planar definition of the portal boundary.
 
-Use [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md) to allow contents to cross using a volumetric box boundary.
+Use [`PortalComponent.CrossingMode.volume(_:)`](./crossingmode-swift.enum/volume%28_%29.md) to allow contents to cross using a volumetric box boundary.
 
 ## Topics
 
 ### Setting the crossing mode
-- [PortalComponent.CrossingMode.volume(_:)](portalcomponent/crossingmode-swift.enum/volume(_:).md)
+- [PortalComponent.CrossingMode.volume(_:)](./crossingmode-swift.enum/volume%28_%29.md)
   Allows contents within the portal to cross a box-shaped boundary.
 ### Enumeration Cases
-- [PortalComponent.CrossingMode.disabled](portalcomponent/crossingmode-swift.enum/disabled.md)
+- [PortalComponent.CrossingMode.disabled](./crossingmode-swift.enum/disabled.md)
   Disallows contents within the portal to cross out of the portal boundary.
-- [PortalComponent.CrossingMode.plane(_:)](portalcomponent/crossingmode-swift.enum/plane(_:).md)
+- [PortalComponent.CrossingMode.plane(_:)](./crossingmode-swift.enum/plane%28_%29.md)
   Allows contents within the portal to cross out of the portal along the provided plane.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../Swift/equatable.md)
 
 
 ---

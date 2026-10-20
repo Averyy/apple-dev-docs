@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp when this validation data was captured.
 

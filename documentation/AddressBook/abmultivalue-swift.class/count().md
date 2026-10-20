@@ -1,12 +1,13 @@
 # count()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of entries in a multivalue list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ Returns the number of entries in a multivalue list.
 func count() -> Int
 ```
 
+```objc
+- (NSUInteger) count;
+```
+
 ## See Also
 
-- [func propertyType() -> ABPropertyType](abmultivalue-swift.class/propertytype.md)
+### Querying the list
+- [func propertyType() -> ABPropertyType](./propertytype%28%29.md)
   Returns the type for the values in a multivalue list.
 
 

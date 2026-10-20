@@ -1,14 +1,15 @@
 # Using Apple’s HTTP Live Streaming (HLS) Tools
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Segment your video stream and create media playlists for successful transmission with Apple’s provided tools.
 
 #### Overview
 
-Apple provides HLS Tools to help you set up an HLS service. HLS Tools update frequently; you can download the current versions from the [`Apple Developer Downloads website`](https://developer.apple.comhttps://developer.apple.com/downloads/all). To access them, sign in with the Apple ID associated with your developer account.
+Apple provides HLS Tools to help you set up an HLS service. HLS Tools update frequently; you can download the current versions from the [Apple Developer Downloads website](https://developer.apple.com/downloads/all). To access them, sign in with the Apple ID associated with your developer account.
 
-##### Download the Tools
+##### Download the tools
 
 The download package contains the following tools:
 

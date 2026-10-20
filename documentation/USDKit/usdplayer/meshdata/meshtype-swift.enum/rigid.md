@@ -1,7 +1,8 @@
 # USDPlayer.MeshData.MeshType.rigid
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mesh with no skeleton or blend shapes.
 

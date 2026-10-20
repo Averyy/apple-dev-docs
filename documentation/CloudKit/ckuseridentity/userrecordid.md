@@ -1,7 +1,8 @@
 # userRecordID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user record ID for the corresponding user record.
 
@@ -21,11 +22,16 @@ The user record ID for the corresponding user record.
 var userRecordID: CKRecord.ID? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) CKRecordID * userRecordID;
+```
+
 ## See Also
 
-- [var contactIdentifiers: [String]](ckuseridentity/contactidentifiers.md)
+### Accessing User Information
+- [var contactIdentifiers: [String]](./contactidentifiers.md)
   Identifiers that match contacts in the local Contacts database.
-- [var nameComponents: PersonNameComponents?](ckuseridentity/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./namecomponents.md)
   The user’s name.
 
 

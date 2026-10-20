@@ -1,7 +1,8 @@
 # errSecCSCancelled
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation was terminated by explicit cancellation.
 
@@ -13,6 +14,10 @@ The operation was terminated by explicit cancellation.
 
 ```swift
 var errSecCSCancelled: OSStatus { get }
+```
+
+```c
+errSecCSCancelled
 ```
 
 

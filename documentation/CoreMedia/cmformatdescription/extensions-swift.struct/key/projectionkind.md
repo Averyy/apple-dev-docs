@@ -1,7 +1,8 @@
 # projectionKind
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the projection that should be applied to presented decoded video frames.
 

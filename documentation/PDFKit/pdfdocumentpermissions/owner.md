@@ -1,7 +1,8 @@
 # PDFDocumentPermissions.owner
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The status that indicates owner document permissions.
 
@@ -19,11 +20,16 @@ The status that indicates owner document permissions.
 case owner
 ```
 
+```c
+kPDFDocumentPermissionsOwner
+```
+
 ## See Also
 
-- [PDFDocumentPermissions.none](pdfdocumentpermissions/none.md)
+### Enumeration Cases
+- [PDFDocumentPermissions.none](./none.md)
   The status that indicates no document permissions.
-- [PDFDocumentPermissions.user](pdfdocumentpermissions/user.md)
+- [PDFDocumentPermissions.user](./user.md)
   The status that indicates user document permissions.
 
 

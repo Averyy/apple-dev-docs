@@ -1,7 +1,8 @@
 # HMCharacteristicPropertyRequiresAuthorizationData
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A variable that specifies that the characteristic requires authorization data to write.
 
@@ -19,17 +20,22 @@ A variable that specifies that the characteristic requires authorization data to
 let HMCharacteristicPropertyRequiresAuthorizationData: String
 ```
 
+```c
+extern NSString * const HMCharacteristicPropertyRequiresAuthorizationData;
+```
+
 ## See Also
 
-- [let HMCharacteristicTypeCurrentSecuritySystemState: String](hmcharacteristictypecurrentsecuritysystemstate.md)
+### Safety and security
+- [let HMCharacteristicTypeCurrentSecuritySystemState: String](./hmcharacteristictypecurrentsecuritysystemstate.md)
   The current security system state.
-- [let HMCharacteristicTypeTargetSecuritySystemState: String](hmcharacteristictypetargetsecuritysystemstate.md)
+- [let HMCharacteristicTypeTargetSecuritySystemState: String](./hmcharacteristictypetargetsecuritysystemstate.md)
   The target security system state.
-- [let HMCharacteristicTypeObstructionDetected: String](hmcharacteristictypeobstructiondetected.md)
+- [let HMCharacteristicTypeObstructionDetected: String](./hmcharacteristictypeobstructiondetected.md)
   An indicator of whether an obstruction is detected, as when something prevents a garage door from closing.
-- [let HMCharacteristicTypeOccupancyDetected: String](hmcharacteristictypeoccupancydetected.md)
+- [let HMCharacteristicTypeOccupancyDetected: String](./hmcharacteristictypeoccupancydetected.md)
   An indicator of whether the home is occupied.
-- [let HMCharacteristicTypeSecuritySystemAlarmType: String](hmcharacteristictypesecuritysystemalarmtype.md)
+- [let HMCharacteristicTypeSecuritySystemAlarmType: String](./hmcharacteristictypesecuritysystemalarmtype.md)
   The alarm trigger state.
 
 

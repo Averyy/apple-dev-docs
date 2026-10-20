@@ -1,7 +1,8 @@
 # MTLLibraryOptimizationLevel.default
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An optimization option for the Metal compiler that prioritizes runtime performance.
 
@@ -19,9 +20,14 @@ An optimization option for the Metal compiler that prioritizes runtime performan
 case `default`
 ```
 
+```c
+MTLLibraryOptimizationLevelDefault
+```
+
 ## See Also
 
-- [MTLLibraryOptimizationLevel.size](mtllibraryoptimizationlevel/size.md)
+### Optimization options
+- [MTLLibraryOptimizationLevel.size](./size.md)
   An optimization option for the Metal compiler that prioritizes minimizing the size of its output binaries, which may also reduce compile time.
 
 

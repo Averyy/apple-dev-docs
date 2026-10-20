@@ -1,7 +1,8 @@
 # init(docFormat:documentAttributes:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed string from Microsoft Word format data in the specified data object.
 
@@ -12,6 +13,10 @@ Creates an attributed string from Microsoft Word format data in the specified da
 
 ```swift
 init?(docFormat data: Data, documentAttributes dict: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)
+```
+
+```objc
+- (instancetype) initWithDocFormat:(NSData *) data documentAttributes:(NSDictionary<NSString *,id> **) dict;
 ```
 
 #### Return Value
@@ -25,9 +30,10 @@ Returns an initialized attributed string object, or `nil` if the method can’t 
 
 ## See Also
 
-- [init(data: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsattributedstring/init(data:options:documentattributes:).md)
+### Creating from a data file
+- [init(data: Data, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](./init%28data,options,documentattributes%29.md)
   Creates an attributed string from the contents of the specified data object.
-- [init(URL: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](nsattributedstring/init(url:options:documentattributes:).md)
+- [init(URL: URL, options: [NSAttributedString.DocumentReadingOptionKey : Any], documentAttributes: AutoreleasingUnsafeMutablePointer<NSDictionary?>?) throws](./init%28url,options,documentattributes%29.md)
   Creates an attributed string from the contents of the specified URL.
 
 

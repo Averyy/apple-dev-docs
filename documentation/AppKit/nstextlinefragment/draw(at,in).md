@@ -1,7 +1,8 @@
 # draw(at:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders the line fragment contents at the rendering origin.
 
@@ -12,6 +13,10 @@ Renders the line fragment contents at the rendering origin.
 
 ```swift
 func draw(at point: CGPoint, in context: CGContext)
+```
+
+```objc
+- (void) drawAtPoint:(CGPoint) point inContext:(CGContextRef) context;
 ```
 
 #### Discussion

@@ -1,6 +1,7 @@
 # Tagging media with video color information
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Inspect and set video color space information when writing and transcoding media.
 
@@ -8,7 +9,7 @@ Inspect and set video color space information when writing and transcoding media
 
 Media files may contain video color space information tags that describe the video media. The system’s color management uses these video color tags to ensure a consistent color appearance across all environments. You can retrieve and inspect the color information tags from your media, and specify new tags when writing and transcoding media. You can also detect wide color media to prevent clamping of the media to a smaller gamut color space.
 
-##### Video Tags Describe Key Video Parameters
+##### Video tags describe key video parameters
 
 For historical reasons, color scientists defined many permutations of broadcast video color spaces. As a result, you should *tag* your media files with color information that describes the video media. If you don’t, the untagged media content might not match your intentions across all the different configurations and environments your customers encounter.
 
@@ -20,7 +21,7 @@ This color information tagging mechanism supports three key video parameters:
 - **Transfer Function**: Defines an index into a table specifying the nonlinear transfer function coefficients that translate between RGB color space values and Y´CbCr values. The table of transfer function coefficients specifies the nonlinear function coefficients that translate between the stored Y´CbCr values and a video capture or display system.
 - **Conversion Matrix**: An index into a table specifying the transformation matrix coefficients that translate between RGB color space values and Y´CbCr values. The table of matrixes specifies the matrix for the translation.
 
-> **Note**:  Each represents indices, not actual values. The [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) and [`Uncompressed Y´CbCr Video in QuickTime Files`](https://developer.apple.comhttps://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10) describe these indices in the `‘colr’` extension of type `‘nclc’`.
+> **Note**:  Each represents indices, not actual values. The [QuickTime File Format](../quicktime-file-format/quicktime-file-format.md) and [Uncompressed Y´CbCr Video in QuickTime Files](https://developer.apple.com/library/archive/technotes/tn2162/_index.html#//apple_ref/doc/uid/DTS40013070-CH1-TNTAG10) describe these indices in the `‘colr’` extension of type `‘nclc’`.
 
 ColorSync uses these video parameters to generate one of the following video color spaces:
 
@@ -29,11 +30,11 @@ ColorSync uses these video parameters to generate one of the following video col
 - P3 (D65)
 - UHD (Rec. 2020)
 
-[`ISO/IEC 23001-8:2016`](https://developer.apple.comhttps://www.iso.org/standard/69661.html), *Coding-Independent Code Points* defines these standard tag numbers.
+[ISO/IEC 23001-8:2016](https://www.iso.org/standard/69661.html), *Coding-Independent Code Points* defines these standard tag numbers.
 
-##### Tag Your Video Using Asset Writer
+##### Tag your video using asset writer
 
-When you initialize an [`AVAssetWriterInput`](avassetwriterinput.md) object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The [`AVVideoColorPropertiesKey`](avvideocolorpropertieskey.md) is a dictionary that contains properties specifying video color (see [`Setting color properties for a specific resolution`](setting-color-properties-for-a-specific-resolution.md) for the details). Set this key in the `AVAssetWriterInput` output settings dictionary to override the tagging of color properties in the video.
+When you initialize an [`AVAssetWriterInput`](./avassetwriterinput.md) object, you can optionally specify a dictionary that contains the settings for encoding the media that you append to the output. The [`AVVideoColorPropertiesKey`](./avvideocolorpropertieskey.md) is a dictionary that contains properties specifying video color (see [Setting color properties for a specific resolution](./setting-color-properties-for-a-specific-resolution.md) for the details). Set this key in the `AVAssetWriterInput` output settings dictionary to override the tagging of color properties in the video.
 
 If the video color properties key is present in the output settings, the writer tags the output as follows:
 
@@ -69,11 +70,11 @@ let input = AVAssetWriterInput(mediaType: .video,
 writer.add(input)
 ```
 
-##### Specify Color Space Information for Your Video Composition
+##### Specify color space information for your video composition
 
 You configure video compositions with color space information using analogous properties.
 
-You designate a working color space for the entire video composition using the [`colorPrimaries`](avmutablevideocomposition/colorprimaries.md) property. Set the transfer function using the [`colorTransferFunction`](avmutablevideocomposition/colortransferfunction.md) key, and the Y’CbCr matrix using the [`colorYCbCrMatrix`](avmutablevideocomposition/colorycbcrmatrix.md) key. Specify values suitable for the `AVVideoColorPrimariesKey`, [`AVVideoTransferFunctionKey`](avvideotransferfunctionkey.md), and [`AVVideoYCbCrMatrixKey`](avvideoycbcrmatrixkey.md) keys, respectively.
+You designate a working color space for the entire video composition using the [`colorPrimaries`](./avmutablevideocomposition/colorprimaries.md) property. Set the transfer function using the [`colorTransferFunction`](./avmutablevideocomposition/colortransferfunction.md) key, and the Y’CbCr matrix using the [`colorYCbCrMatrix`](./avmutablevideocomposition/colorycbcrmatrix.md) key. Specify values suitable for the `AVVideoColorPrimariesKey`, [`AVVideoTransferFunctionKey`](./avvideotransferfunctionkey.md), and [`AVVideoYCbCrMatrixKey`](./avvideoycbcrmatrixkey.md) keys, respectively.
 
 Here’s a code example:
 
@@ -86,7 +87,7 @@ videoComposition.colorYCbCrMatrix = AVVideoYCbCrMatrix_ITU_R_709_2
 
 > **Note**:  The default value for the above properties is `nil`. When the value of a property is `nil`, the system adopts and propogates the source’s value.
 
-##### Tag Your Core Video Buffers with Color Space Information
+##### Tag your core video buffers with color space information
 
 If you generate Core Video source buffers for rendering (for example, using a pixel buffer pool in Metal), you should tag them with color information.
 
@@ -99,11 +100,11 @@ CVBufferSetAttachment(pixelBuffer, kCVImageBufferYCbCrMatrixKey, kCVImageBufferY
 inputPixelBufferAdaptor.append(pixelBuffer, withPresentationTime: presentationTime)
 ```
 
-##### Get Your Medias Color Space Information
+##### Get your media’s color space information
 
-You access the low-level details about an asset’s video track media using [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](avassettrack.md) [`formatDescriptions`](avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercolorprimarieskey) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
+You access the low-level details about an asset’s video track media using [`CMFormatDescription`](../CoreMedia/cmformatdescription.md). A `CMFormatDescriptionRef` object describes the media of a particular type (audio, video, and so on). You get the format descriptions for the asset track’s media sample references using the [`AVAssetTrack`](./avassettrack.md) [`formatDescriptions`](./avassettrack/formatdescriptions.md) property. Look in the format description for the [`kCVImageBufferColorPrimariesKey`](../CoreVideo/kcvimagebuffercolorprimarieskey.md) extension key that defines the color properties of the media. The `CMFormatDescription.h` header defines the color primary key values.
 
-Here’s an example that checks for the [`kCMFormatDescriptionColorPrimaries_ITU_R_709_2`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptioncolorprimaries_itu_r_709_2-swift.var) color primary key value in the [`kCVImageBufferColorPrimariesKey`](https://developer.apple.com/documentation/corevideo/kcvimagebuffercolorprimarieskey) extension:
+Here’s an example that checks for the [`kCMFormatDescriptionColorPrimaries_ITU_R_709_2`](../CoreMedia/kcmformatdescriptioncolorprimaries_itu_r_709_2-swift.var.md) color primary key value in the [`kCVImageBufferColorPrimariesKey`](../CoreVideo/kcvimagebuffercolorprimarieskey.md) extension:
 
 ```swift
 let assetTracks = try await asset.loadTracks(withMediaType: .video)
@@ -129,19 +130,19 @@ for assetTrack in assetTracks {
 }
 ```
 
-##### View Your Medias Color Information
+##### View your media’s color information
 
 You can use the Show Movie Inspector command in the macOS QuickTime Player app to view the color space information for the video media in a file. Open the file in the app and choose Window > Show Movie Inspector. The Inspector window displays the color information and other details about the video media.
 
-![Screenshot of the Inspector window in the QuickTime Player app with an arrow pointing to the Format information for a video.](/images/com.apple.avfoundation/media-3677441@2x.png)
+![Screenshot of the Inspector window in the QuickTime Player app with an arrow pointing to the Format information for a video.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3677441@2x.png)
 
 The Finder Get Info command also shows the color information for the video media in a file. Select a file in the Finder and choose File > Get Info. The More Info section contains the color profile information.
 
-![Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.](/images/com.apple.avfoundation/media-3677442@2x.png)
+![Screenshot of Finder’s Info window with an arrow pointing to the “Color profile” information in the More Info section.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3677442@2x.png)
 
-##### Detect Wide Color Tags in Your Media
+##### Detect wide color tags in your media
 
-The [`usesWideGamutColorSpace`](avmediacharacteristic/useswidegamutcolorspace.md) media characteristic indicates that the video track contains color primaries wider than Rec. 709 that the system can’t accurately represent. A wide color space, such as P3 D65, contains additional dynamic range that may benefit from special treatment when compositing in your workflow. You should exercise care to avoid clamping the colors back to the Rec. 709 space. If you don’t, it’s generally best to stay within the Rec. 709 space for your processing.
+The [`usesWideGamutColorSpace`](./avmediacharacteristic/useswidegamutcolorspace.md) media characteristic indicates that the video track contains color primaries wider than Rec. 709 that the system can’t accurately represent. A wide color space, such as P3 D65, contains additional dynamic range that may benefit from special treatment when compositing in your workflow. You should exercise care to avoid clamping the colors back to the Rec. 709 space. If you don’t, it’s generally best to stay within the Rec. 709 space for your processing.
 
 Here’s an example:
 
@@ -155,18 +156,18 @@ if wideGamutTracks.count > 0 {
 }
 ```
 
-##### Preserve Wide Color in Your Media
+##### Preserve wide color in your media
 
-Set the [`AVAssetReaderOutput`](avassetreaderoutput.md) [`AVVideoAllowWideColorKey`](avvideoallowwidecolorkey.md) property to `true` to receive buffers in their original color space. The default value (`false`) permits implicit color conversions to a nonwide gamut color space.
+Set the [`AVAssetReaderOutput`](./avassetreaderoutput.md) [`AVVideoAllowWideColorKey`](./avvideoallowwidecolorkey.md) property to `true` to receive buffers in their original color space. The default value (`false`) permits implicit color conversions to a nonwide gamut color space.
 
 ```swift
 let allowWideColorSettings = [AVVideoAllowWideColorKey: true]
 let readerOutput = AVAssetReaderOutput(outputSettings: allowWideColorSettings) 
 ```
 
-##### Support Wide Color in Custom Video Compositors
+##### Support wide color in custom video compositors
 
-You implement the optional [`supportsWideColorSourceFrames`](avvideocompositing/supportswidecolorsourceframes.md) property and return `true` to indicate your custom video compositor handles frames that contain wide color properties. In this case, the compositor examines and honors color space tags on every single source frame buffer.
+You implement the optional [`supportsWideColorSourceFrames`](./avvideocompositing/supportswidecolorsourceframes.md) property and return `true` to indicate your custom video compositor handles frames that contain wide color properties. In this case, the compositor examines and honors color space tags on every single source frame buffer.
 
 ```swift
 class MyCustomVideoCompositor : AVVideoCompositing { 
@@ -177,31 +178,32 @@ class MyCustomVideoCompositor : AVVideoCompositing {
 
 ## See Also
 
-- [Converting projected video to Apple Projected Media Profile](converting-projected-video-to-apple-projected-media-profile.md)
+### Media writing
+- [Converting projected video to Apple Projected Media Profile](./converting-projected-video-to-apple-projected-media-profile.md)
   Convert content with equirectangular or half-equirectangular projection to APMP.
-- [Converting side-by-side 3D video to multiview HEVC and spatial video](converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
+- [Converting side-by-side 3D video to multiview HEVC and spatial video](./converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
-- [Adding a display mask rectangle metadata track to a movie file](adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
+- [Adding a display mask rectangle metadata track to a movie file](./adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
   Show a specific area of a video by using timed display mask rectangle metadata.
-- [Writing fragmented MPEG-4 files for HTTP Live Streaming](writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
+- [Writing fragmented MPEG-4 files for HTTP Live Streaming](./writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-- [Creating spatial photos and videos with spatial metadata](../imageio/creating-spatial-photos-and-videos-with-spatial-metadata.md)
+- [Creating spatial photos and videos with spatial metadata](../ImageIO/creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
-- [Evaluating an app’s video color](evaluating-an-app-s-video-color.md)
+- [Evaluating an app’s video color](./evaluating-an-app-s-video-color.md)
   Check color reproduction for a video in your app by using test patterns, video test equipment, and light-measurement instruments.
-- [class AVOutputSettingsAssistant](avoutputsettingsassistant.md)
+- [class AVOutputSettingsAssistant](./avoutputsettingsassistant.md)
   An object that builds audio and video output settings dictionaries.
-- [class AVAssetWriter](avassetwriter.md)
+- [class AVAssetWriter](./avassetwriter.md)
   An object that writes media data to a container file.
-- [class AVAssetWriterInput](avassetwriterinput.md)
+- [class AVAssetWriterInput](./avassetwriterinput.md)
   An object that appends media samples to a track in an asset writer’s output file.
-- [class AVAssetWriterInputPixelBufferAdaptor](avassetwriterinputpixelbufferadaptor.md)
+- [class AVAssetWriterInputPixelBufferAdaptor](./avassetwriterinputpixelbufferadaptor.md)
   An object that appends video samples to an asset writer input.
-- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](avassetwriterinputtaggedpixelbuffergroupadaptor.md)
+- [class AVAssetWriterInputTaggedPixelBufferGroupAdaptor](./avassetwriterinputtaggedpixelbuffergroupadaptor.md)
   An object that appends tagged buffer groups to an asset writer input.
-- [class AVAssetWriterInputMetadataAdaptor](avassetwriterinputmetadataadaptor.md)
+- [class AVAssetWriterInputMetadataAdaptor](./avassetwriterinputmetadataadaptor.md)
   An object that appends timed metadata groups to an asset writer input.
-- [class AVAssetWriterInputGroup](avassetwriterinputgroup.md)
+- [class AVAssetWriterInputGroup](./avassetwriterinputgroup.md)
   A group of inputs with tracks that are mutually exclusive to each other for playback or processing.
 
 

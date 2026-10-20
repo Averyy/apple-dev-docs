@@ -1,41 +1,43 @@
 # vm
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 Interact with the virtual memory system.
 
 ## Topics
 
 ### Compression
-- [WKdm_compress_new](1473458-wkdm_compress_new.md)
-- [WKdm_decompress_new](1473454-wkdm_decompress_new.md)
+- [WKdm_compress_new](./api-1473458-wkdm_compress_new.md)
+- [WKdm_decompress_new](./api-1473454-wkdm_decompress_new.md)
 ### Untitled
-- [vm_kernel_addrhash](2881947-vm_kernel_addrhash.md)
-- [vm_kernel_addrhide](2881946-vm_kernel_addrhide.md)
-- [vm_kernel_addrperm_external](1401818-vm_kernel_addrperm_external.md)
-- [vm_kernel_unslide_or_perm_external](1401816-vm_kernel_unslide_or_perm_extern.md)
+- [vm_kernel_addrhash](./api-2881947-vm_kernel_addrhash.md)
+- [vm_kernel_addrhide](./api-2881946-vm_kernel_addrhide.md)
+- [vm_kernel_addrperm_external](./api-1401818-vm_kernel_addrperm_external.md)
+- [vm_kernel_unslide_or_perm_external](./api-1401816-vm_kernel_unslide_or_perm_extern.md)
 
 ## See Also
 
-- [architecture](architecture.md)
+### BSD
+- [architecture](./architecture.md)
   Access machine-level and architectural information about the current platform.
-- [bsm](bsm.md)
+- [bsm](./bsm.md)
   Audit resource usage on the system.
-- [hfs](hfs.md)
+- [hfs](./hfs.md)
   Access HFS file-system data structures. 
-- [kern](kern.md)
+- [kern](./kern.md)
   Access kernel-level interfaces including clock, task, kernel extension, lock, and compression utilities.  
-- [Math](math.md)
+- [Math](./math.md)
   Perform mathematical operations and manipulate integer, float, and double values.  
-- [miscfs](miscfs.md)
+- [miscfs](./miscfs.md)
   Access device nodes and other file-system entities.
-- [net](net.md)
+- [net](./net.md)
   Access network-related utilities.
-- [Strings](strings.md)
+- [Strings](./strings.md)
   Compare, convert, and catenate strings and access the resulting content of those strings.
-- [sys](sys.md)
+- [sys](./sys.md)
   Access general system utilities for time, file systems, and system information.
-- [vfs](vfs.md)
+- [vfs](./vfs.md)
   Access the virtual file-system interfaces.
 
 

@@ -1,7 +1,8 @@
 # init(markup:supportedFeatureSet:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new markup view controller with the provided data model.
 

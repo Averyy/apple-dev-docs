@@ -1,7 +1,8 @@
 # init(_:allowAccessingOriginalFile:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a description of a file from the perspective of the sender.
 
@@ -27,9 +28,10 @@ init(_ file: URL, allowAccessingOriginalFile: Bool = false)
 
 ## See Also
 
-- [let file: URL](senttransferredfile/file.md)
+### Configuring a file transfer
+- [let file: URL](./file.md)
   A URL that describes the location of the file.
-- [let allowAccessingOriginalFile: Bool](senttransferredfile/allowaccessingoriginalfile.md)
+- [let allowAccessingOriginalFile: Bool](./allowaccessingoriginalfile.md)
   A Boolean value that indicates whether the receiver can read and write the original file. When set to `false`, the receiver can only gain access to a copy of the file.
 
 

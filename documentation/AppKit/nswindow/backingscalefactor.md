@@ -1,7 +1,8 @@
 # backingScaleFactor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backing scale factor.
 
@@ -14,6 +15,10 @@ The backing scale factor.
 var backingScaleFactor: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat backingScaleFactor;
+```
+
 #### Discussion
 
 The value of this property is `2.0` for high-resolution scaled display modes, and `1.0` for all other cases.
@@ -22,27 +27,28 @@ There are some scenarios where an application that is resolution-aware may want 
 
 It is important to note that the value of this property does not represent anything concrete, such as pixel density or physical size, because it can vary based on the configured display mode. For example, the display may be in a mirrored configuration that is still high-resolution scaled, resulting in pixel geometry that may not match the native resolution of the display device.
 
-> **Note**:  For almost all common cases, developers should avoid using the value of [`backingScaleFactor`](nswindow/backingscalefactor.md) as an input to layout or drawing calculations. Developers should instead use the backing coordinate space conversion methods, because the resulting code will more likely work consistently and correctly under both standard and high-resolution operation.
+> **Note**:  For almost all common cases, developers should avoid using the value of [`backingScaleFactor`](./backingscalefactor.md) as an input to layout or drawing calculations. Developers should instead use the backing coordinate space conversion methods, because the resulting code will more likely work consistently and correctly under both standard and high-resolution operation.
 
 ## See Also
 
-- [func backingAlignedRect(NSRect, options: AlignmentOptions) -> NSRect](nswindow/backingalignedrect(_:options:).md)
+### Converting Coordinates
+- [func backingAlignedRect(NSRect, options: AlignmentOptions) -> NSRect](./backingalignedrect%28_,options%29.md)
   Returns a backing store pixel-aligned rectangle in window coordinates.
-- [func convertFromBacking(NSRect) -> NSRect](nswindow/convertfrombacking(_:).md)
+- [func convertFromBacking(NSRect) -> NSRect](./convertfrombacking%28_%29.md)
   Converts a rectangle from its pixel-aligned backing store coordinate system to the window’s coordinate system.
-- [func convertFromScreen(NSRect) -> NSRect](nswindow/convertfromscreen(_:).md)
+- [func convertFromScreen(NSRect) -> NSRect](./convertfromscreen%28_%29.md)
   Converts a rectangle from the screen coordinate system to the window’s coordinate system.
-- [func convertPointFromBacking(NSPoint) -> NSPoint](nswindow/convertpointfrombacking(_:).md)
+- [func convertPointFromBacking(NSPoint) -> NSPoint](./convertpointfrombacking%28_%29.md)
   Converts a point from its pixel-aligned backing store coordinate system to the window’s coordinate system.
-- [func convertPoint(fromScreen: NSPoint) -> NSPoint](nswindow/convertpoint(fromscreen:).md)
+- [func convertPoint(fromScreen: NSPoint) -> NSPoint](./convertpoint%28fromscreen%29.md)
   Converts a point from the screen coordinate system to the window’s coordinate system.
-- [func convertToBacking(NSRect) -> NSRect](nswindow/converttobacking(_:).md)
+- [func convertToBacking(NSRect) -> NSRect](./converttobacking%28_%29.md)
   Converts a rectangle from the window’s coordinate system to its pixel-aligned backing store coordinate system.
-- [func convertToScreen(NSRect) -> NSRect](nswindow/converttoscreen(_:).md)
+- [func convertToScreen(NSRect) -> NSRect](./converttoscreen%28_%29.md)
   Converts a rectangle to the screen coordinate system from the window’s coordinate system.
-- [func convertPointToBacking(NSPoint) -> NSPoint](nswindow/convertpointtobacking(_:).md)
+- [func convertPointToBacking(NSPoint) -> NSPoint](./convertpointtobacking%28_%29.md)
   Converts a point from the window’s coordinate system to its pixel-aligned backing store coordinate system.
-- [func convertPoint(toScreen: NSPoint) -> NSPoint](nswindow/convertpoint(toscreen:).md)
+- [func convertPoint(toScreen: NSPoint) -> NSPoint](./convertpoint%28toscreen%29.md)
   Converts a point to the screen coordinate system from the window’s coordinate system.
 
 

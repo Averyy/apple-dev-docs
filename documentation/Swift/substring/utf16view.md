@@ -1,7 +1,8 @@
 # Substring.UTF16View
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 8.0+
@@ -22,23 +23,23 @@ struct UTF16View
 ## Topics
 
 ### Instance Methods
-- [func isTriviallyIdentical(to: Substring.UTF16View) -> Bool](substring/utf16view/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Substring.UTF16View) -> Bool](./utf16view/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this UTF16 view is trivially identical to `other`.
 ### Default Implementations
-- [BidirectionalCollection Implementations](substring/utf16view/bidirectionalcollection-implementations.md)
-- [Collection Implementations](substring/utf16view/collection-implementations.md)
-- [Sequence Implementations](substring/utf16view/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./utf16view/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./utf16view/collection-implementations.md)
+- [Sequence Implementations](./utf16view/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 
 ---

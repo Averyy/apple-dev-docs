@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs the tool’s action when a language model wants to use this tool.
@@ -23,20 +24,21 @@ func call(arguments: Self.Arguments) async throws -> Self.Output
 
 ## Mentions
 
-- [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
-- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
+- [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
+- [Analyzing images with multimodal prompting](../analyzing-images-with-multimodal-prompting.md)
 
 #### Discussion
 
-If errors are thrown in the body of this method, the framework wraps them in a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) and rethrows them at the call site of [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md).
+If errors are thrown in the body of this method, the framework wraps them in a [`LanguageModelSession.ToolCallError`](../languagemodelsession/toolcallerror.md) and rethrows them at the call site of [`respond(to:options:)`](../languagemodelsession/respond%28to,options%29-6a2gb.md).
 
 > **Note**: This method may be invoked concurrently with itself or with other tools.
 
 ## See Also
 
-- [associatedtype Arguments : ConvertibleFromGeneratedContent](tool/arguments.md)
+### Calling a tool
+- [associatedtype Arguments : ConvertibleFromGeneratedContent](./arguments.md)
   The arguments that this tool should accept.
-- [associatedtype Output : PromptRepresentable](tool/output.md)
+- [associatedtype Output : PromptRepresentable](./output.md)
   The output that this tool produces for the language model to reason about in subsequent interactions.
 
 

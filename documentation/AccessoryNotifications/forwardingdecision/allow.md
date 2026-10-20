@@ -1,7 +1,8 @@
 # ForwardingDecision.allow
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates the person allows notifications from all applicable apps.
 
@@ -16,11 +17,12 @@ case allow
 
 ## See Also
 
-- [ForwardingDecision.deny](forwardingdecision/deny.md)
+### Identifying the decision
+- [ForwardingDecision.deny](./deny.md)
   An option that indicates the person doesn’t allow notification forwarding.
-- [ForwardingDecision.limited](forwardingdecision/limited.md)
+- [ForwardingDecision.limited](./limited.md)
   An option that indicates the person allows notifications from a selected subset of apps.
-- [ForwardingDecision.undetermined](forwardingdecision/undetermined.md)
+- [ForwardingDecision.undetermined](./undetermined.md)
   An option that indicates the person dismissed the prompt without responding.
 
 

@@ -1,7 +1,8 @@
 # RealityRenderer.CameraOutput.RelativeViewport
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure defining a viewport for rendering with a camera.
 
@@ -27,19 +28,19 @@ The units are relative to output texture size. To map normalized-device coordina
 viewport = RealityRenderer.CameraOutput.RelativeViewport(originX: 0.0, originY: 0.0, width: 1.0, height: 1.0)
 ```
 
-Assigning values more than 1.0 to [`width`](realityrenderer/cameraoutput/relativeviewport/width.md) or [`height`](realityrenderer/cameraoutput/relativeviewport/height.md) stretches the viewport in horizontal and vertical directions.
+Assigning values more than 1.0 to [`width`](./relativeviewport/width.md) or [`height`](./relativeviewport/height.md) stretches the viewport in horizontal and vertical directions.
 
-Assigning values less than 0.0 to [`originX`](realityrenderer/cameraoutput/relativeviewport/originx.md) or [`originY`](realityrenderer/cameraoutput/relativeviewport/originy.md) shifts the viewport into negative X and negative Y directions.
+Assigning values less than 0.0 to [`originX`](./relativeviewport/originx.md) or [`originY`](./relativeviewport/originy.md) shifts the viewport into negative X and negative Y directions.
 
 ## Topics
 
 ### Initializers
-- [init(originX: Double, originY: Double, width: Double, height: Double)](realityrenderer/cameraoutput/relativeviewport/init(originx:originy:width:height:).md)
+- [init(originX: Double, originY: Double, width: Double, height: Double)](./relativeviewport/init%28originx,originy,width,height%29.md)
 ### Instance Properties
-- [var height: Double](realityrenderer/cameraoutput/relativeviewport/height.md)
-- [var originX: Double](realityrenderer/cameraoutput/relativeviewport/originx.md)
-- [var originY: Double](realityrenderer/cameraoutput/relativeviewport/originy.md)
-- [var width: Double](realityrenderer/cameraoutput/relativeviewport/width.md)
+- [var height: Double](./relativeviewport/height.md)
+- [var originX: Double](./relativeviewport/originx.md)
+- [var originY: Double](./relativeviewport/originy.md)
+- [var width: Double](./relativeviewport/width.md)
 
 
 ---

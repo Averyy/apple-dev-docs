@@ -1,7 +1,8 @@
 # ARView.Image
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 13.0+
@@ -12,15 +13,24 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS*
+
+```swift
+typealias Image = UIImage
+```
+
+*macOS*
+
 ```swift
 typealias Image = NSImage
 ```
 
 ## See Also
 
-- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](arview/snapshot(savetohdr:completion:)-66jzu.md)
+### Taking a snapshot
+- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](./snapshot%28savetohdr,completion%29-66jzu.md)
   Takes a screenshot.
-- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](arview/snapshot(savetohdr:completion:)-91ifk.md)
+- [func snapshot(saveToHDR: Bool, completion: (ARView.Image?) -> Void)](./snapshot%28savetohdr,completion%29-91ifk.md)
   Takes a screenshot.
 
 

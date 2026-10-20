@@ -1,7 +1,8 @@
 # AVPlayerViewControllerAnimationCoordinator
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods to implement to synchronize animations with playback controls’ visibility animation.
 
@@ -14,20 +15,25 @@ A protocol that defines the methods to implement to synchronize animations with 
 protocol AVPlayerViewControllerAnimationCoordinator : NSObjectProtocol
 ```
 
+```objc
+@protocol AVPlayerViewControllerAnimationCoordinator <NSObject>
+```
+
 ## Topics
 
 ### Coordinating animations
-- [func addCoordinatedAnimations((() -> Void)?, completion: ((Bool) -> Void)?)](avplayerviewcontrolleranimationcoordinator/addcoordinatedanimations(_:completion:).md)
+- [func addCoordinatedAnimations((() -> Void)?, completion: ((Bool) -> Void)?)](./avplayerviewcontrolleranimationcoordinator/addcoordinatedanimations%28_,completion%29.md)
   Adds animations to perform alongside the playback controls’ visibility animation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func playerViewController(AVPlayerViewController, willTransitionToVisibilityOfTransportBar: Bool, with: any AVPlayerViewControllerAnimationCoordinator)](avplayerviewcontrollerdelegate/playerviewcontroller(_:willtransitiontovisibilityoftransportbar:with:).md)
+### Responding to transport bar changes
+- [func playerViewController(AVPlayerViewController, willTransitionToVisibilityOfTransportBar: Bool, with: any AVPlayerViewControllerAnimationCoordinator)](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,willtransitiontovisibilityoftransportbar,with%29.md)
   Tells the delegate when the transport bar’s visibility is about to change.
 
 

@@ -1,7 +1,8 @@
 # AccessoryControlDevice.Error
 
 **Framework**: AudioAccessoryKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that occurs during audio accessory configuration operations.
 
@@ -21,24 +22,24 @@ Use error cases to identify the cause of failures when registering devices or up
 ## Topics
 
 ### Error cases
-- [AccessoryControlDevice.Error.accessoryNotCapable](accessorycontroldevice/error/accessorynotcapable.md)
+- [AccessoryControlDevice.Error.accessoryNotCapable](./error/accessorynotcapable.md)
   An error indicating the accessory doesn’t support the requested capability.
-- [AccessoryControlDevice.Error.invalidRequest](accessorycontroldevice/error/invalidrequest.md)
+- [AccessoryControlDevice.Error.invalidRequest](./error/invalidrequest.md)
   An error indicating an invalid request.
-- [AccessoryControlDevice.Error.invalidated](accessorycontroldevice/error/invalidated.md)
+- [AccessoryControlDevice.Error.invalidated](./error/invalidated.md)
   An error indicating a configuration that the system has invalidated.
-- [AccessoryControlDevice.Error.unknown](accessorycontroldevice/error/unknown.md)
+- [AccessoryControlDevice.Error.unknown](./error/unknown.md)
   An error indicating an unknown error.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SKStoreProductParameterAdvertisingPartnerToken
 
 **Framework**: StoreKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key representing the advertising partner you wish to use for any purchase made through the view controller.
 
@@ -18,21 +19,26 @@ The key representing the advertising partner you wish to use for any purchase ma
 let SKStoreProductParameterAdvertisingPartnerToken: String
 ```
 
+```c
+extern NSString * const SKStoreProductParameterAdvertisingPartnerToken;
+```
+
 #### Discussion
 
-The value for this key is an instance of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring).
+The value for this key is an instance of [`NSString`](../Foundation/nsstring.md).
 
 ## See Also
 
-- [let SKStoreProductParameterProductIdentifier: String](skstoreproductparameterproductidentifier.md)
+### Affiliate and Analytics Keys
+- [let SKStoreProductParameterProductIdentifier: String](./skstoreproductparameterproductidentifier.md)
   The key representing the product identifier for the promoted product you want the store to display at the top of the page.
-- [let SKStoreProductParameterAffiliateToken: String](skstoreproductparameteraffiliatetoken.md)
+- [let SKStoreProductParameterAffiliateToken: String](./skstoreproductparameteraffiliatetoken.md)
   The key representing the affiliate identifier you wish to use for any purchase made through the view controller.
-- [let SKStoreProductParameterCampaignToken: String](skstoreproductparametercampaigntoken.md)
+- [let SKStoreProductParameterCampaignToken: String](./skstoreproductparametercampaigntoken.md)
   The key representing an App Analytics campaign.
-- [let SKStoreProductParameterProviderToken: String](skstoreproductparameterprovidertoken.md)
-  The key representing the provider token for the developer that created the app specified by the [`SKStoreProductParameterITunesItemIdentifier`](skstoreproductparameteritunesitemidentifier.md) key.
-- [let SKStoreProductParameterCustomProductPageIdentifier: String](skstoreproductparametercustomproductpageidentifier.md)
+- [let SKStoreProductParameterProviderToken: String](./skstoreproductparameterprovidertoken.md)
+  The key representing the provider token for the developer that created the app specified by the [`SKStoreProductParameterITunesItemIdentifier`](./skstoreproductparameteritunesitemidentifier.md) key.
+- [let SKStoreProductParameterCustomProductPageIdentifier: String](./skstoreproductparametercustomproductpageidentifier.md)
   The key that represents the custom product page identifier you want the store to display when you present the view controller.
 
 

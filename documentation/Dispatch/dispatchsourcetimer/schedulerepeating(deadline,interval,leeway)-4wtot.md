@@ -1,19 +1,22 @@
 # scheduleRepeating(deadline:interval:leeway:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a repeating timer with the specified deadline, repeat interval, and leeway values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-- Swift ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+- Swift - Deprecated in 4.0 (renamed: schedule(deadline:repeating:leeway:))
+
+> **Deprecated**: Use [`schedule(deadline:repeating:leeway:)`](./schedule%28deadline,repeating,leeway%29-24w9r.md) instead.
 
 ## Declaration
 
@@ -25,7 +28,7 @@ func scheduleRepeating(deadline: DispatchTime, interval: Double, leeway: Dispatc
 
 The system may defer the deliver of timer events to improve power consumption and system performance. The first time the timer fires, the maximum allowable delay is equal to the value in the `leeway` parameter. For subsequent firings, the timer fires at `deadline + (n * repeating)`, and the maximum delay is equal to `min(leeway, repeating/2)`—that is, the smaller of either the `leeway` value or half the value in the `repeating` parameter.
 
-The system may fire a timer sooner than the value in the `deadline` parameter. If you created the timer with the [`strict`](dispatchsource/timerflags/strict.md) flag, the system makes every effort to observe the provided `leeway` value, even if it is smaller than the current lower limit.
+The system may fire a timer sooner than the value in the `deadline` parameter. If you created the timer with the [`strict`](../dispatchsource/timerflags/strict.md) flag, the system makes every effort to observe the provided `leeway` value, even if it is smaller than the current lower limit.
 
 Calling this method on a cancelled dispatch source has no effect.
 
@@ -37,15 +40,16 @@ Calling this method on a cancelled dispatch source has no effect.
 
 ## See Also
 
-- [func scheduleOneshot(deadline: DispatchTime, leeway: DispatchTimeInterval)](dispatchsourcetimer/scheduleoneshot(deadline:leeway:).md)
+### Deprecated
+- [func scheduleOneshot(deadline: DispatchTime, leeway: DispatchTimeInterval)](./scheduleoneshot%28deadline,leeway%29.md)
   Schedules a timer to fire once with the specified deadline and leeway values.
-- [func scheduleOneshot(wallDeadline: DispatchWallTime, leeway: DispatchTimeInterval)](dispatchsourcetimer/scheduleoneshot(walldeadline:leeway:).md)
+- [func scheduleOneshot(wallDeadline: DispatchWallTime, leeway: DispatchTimeInterval)](./scheduleoneshot%28walldeadline,leeway%29.md)
   Schedules a timer to fire once with the specified deadline and leeway values.
-- [func scheduleRepeating(deadline: DispatchTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(deadline:interval:leeway:)-3k199.md)
+- [func scheduleRepeating(deadline: DispatchTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](./schedulerepeating%28deadline,interval,leeway%29-3k199.md)
   Schedules a repeating timer with the specified deadline, repeat interval, and leeway values.
-- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: Double, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-6fiox.md)
+- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: Double, leeway: DispatchTimeInterval)](./schedulerepeating%28walldeadline,interval,leeway%29-6fiox.md)
   Schedules a repeating timer with the specified time, repeat interval, and leeway values.
-- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](dispatchsourcetimer/schedulerepeating(walldeadline:interval:leeway:)-942p7.md)
+- [func scheduleRepeating(wallDeadline: DispatchWallTime, interval: DispatchTimeInterval, leeway: DispatchTimeInterval)](./schedulerepeating%28walldeadline,interval,leeway%29-942p7.md)
   Schedules a repeating timer with the specified time, repeat interval, and leeway values.
 
 

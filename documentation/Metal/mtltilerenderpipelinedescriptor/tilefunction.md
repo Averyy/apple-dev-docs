@@ -1,7 +1,8 @@
 # tileFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compute kernel or fragment function the pipeline calls.
 
@@ -19,15 +20,20 @@ The compute kernel or fragment function the pipeline calls.
 var tileFunction: any MTLFunction { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite) id<MTLFunction> tileFunction;
+```
+
 #### Discussion
 
 Kernel-based and fragment-based tile pipeline dispatches act as a barrier against previous draw commands and other dispatches. Kernel-based pipelines wait until all prior access to the tile completes. Fragment-based pipelines wait only until all prior access to the fragment’s location completes.
 
 ## See Also
 
-- [var tileBuffers: MTLPipelineBufferDescriptorArray](mtltilerenderpipelinedescriptor/tilebuffers.md)
+### Specifying graphics functions and associated data
+- [var tileBuffers: MTLPipelineBufferDescriptorArray](./tilebuffers.md)
   An array that contains the buffer mutability options for a render pipeline’s tile function.
-- [var maxCallStackDepth: Int](mtltilerenderpipelinedescriptor/maxcallstackdepth.md)
+- [var maxCallStackDepth: Int](./maxcallstackdepth.md)
   The maximum call stack depth for indirect function calls in tile shaders.
 
 

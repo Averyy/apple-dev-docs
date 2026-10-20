@@ -1,7 +1,8 @@
 # init(date:time:locale:calendar:timeZone:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided date, time, locale, calendar, time zone, and capitalization context.
 
@@ -24,15 +25,15 @@ init(date: Date.IntervalFormatStyle.DateStyle? = nil, time: Date.IntervalFormatS
 
 Customize the date interval string by providing a date style, time style, locale, calendar, time zone, and capitalization scheme.
 
-Values for date style are [`complete`](date/formatstyle/datestyle/complete.md), [`long`](date/formatstyle/datestyle/long.md), [`abbreviated`](date/formatstyle/datestyle/abbreviated.md), [`numeric`](date/formatstyle/datestyle/numeric.md), [`omitted`](date/formatstyle/datestyle/omitted.md), or `none`. Time style values are [`complete`](date/formatstyle/timestyle/complete.md), [`standard`](date/formatstyle/timestyle/standard.md), [`shortened`](date/formatstyle/timestyle/shortened.md), [`omitted`](date/formatstyle/timestyle/omitted.md), or `none`.
+Values for date style are [`complete`](../formatstyle/datestyle/complete.md), [`long`](../formatstyle/datestyle/long.md), [`abbreviated`](../formatstyle/datestyle/abbreviated.md), [`numeric`](../formatstyle/datestyle/numeric.md), [`omitted`](../formatstyle/datestyle/omitted.md), or `none`. Time style values are [`complete`](../formatstyle/timestyle/complete.md), [`standard`](../formatstyle/timestyle/standard.md), [`shortened`](../formatstyle/timestyle/shortened.md), [`omitted`](../formatstyle/timestyle/omitted.md), or `none`.
 
 ## Parameters
 
-- `date`: The [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) for creating the string representation of the date interval.
-- `time`: The [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) for creating the string representation of the date interval.
-- `locale`: The [`Locale`](locale.md) for creating the string representation of the date interval.
-- `calendar`: The [`Calendar`](calendar.md) for creating the string representation of the date interval.
-- `timeZone`: The [`TimeZone`](timezone.md) for creating the string representation of the date interval.
+- `date`: The [`Date.FormatStyle.DateStyle`](../formatstyle/datestyle.md) for creating the string representation of the date interval.
+- `time`: The [`Date.FormatStyle.TimeStyle`](../formatstyle/timestyle.md) for creating the string representation of the date interval.
+- `locale`: The [`Locale`](../../locale.md) for creating the string representation of the date interval.
+- `calendar`: The [`Calendar`](../../calendar.md) for creating the string representation of the date interval.
+- `timeZone`: The [`TimeZone`](../../timezone.md) for creating the string representation of the date interval.
 
 
 ---

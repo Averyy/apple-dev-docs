@@ -1,7 +1,8 @@
 # init(red:green:blue:alpha:colorSpace:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
 
@@ -17,9 +18,13 @@ Create a Core Image color object with the specified red, green, blue, and alpha 
 convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)
 ```
 
+```objc
++ (instancetype) colorWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha colorSpace:(CGColorSpaceRef) colorSpace;
+```
+
 #### Return Value
 
- An autoreleased [`CIColor`](cicolor.md) instance.
+ An autoreleased [`CIColor`](../cicolor.md) instance.
 
 #### Discussion
 
@@ -37,11 +42,12 @@ The RGB values can be outside the `0...1` range if the `CGColorSpace` is unclamp
 
 ## See Also
 
-- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/init(red:green:blue:).md)
+### Creating Color Objects
+- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](./init%28red,green,blue%29.md)
   Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
-- [convenience init(string: String)](cicolor/init(string:).md)
+- [convenience init(string: String)](./init%28string%29.md)
   Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:)-2og6y.md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,colorspace%29-2og6y.md)
   Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 
 

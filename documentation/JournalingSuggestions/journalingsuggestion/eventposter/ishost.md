@@ -1,7 +1,8 @@
 # isHost
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean whether the user is the host of the event.
 

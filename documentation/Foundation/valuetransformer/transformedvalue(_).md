@@ -1,7 +1,8 @@
 # transformedValue(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of transforming a given value.
 
@@ -20,6 +21,10 @@ Returns the result of transforming a given value.
 func transformedValue(_ value: Any?) -> Any?
 ```
 
+```objc
+- (id) transformedValue:(id) value;
+```
+
 #### Return Value
 
 The result of transforming `value`.
@@ -36,7 +41,8 @@ A subclass should override this method to transform and return an object based o
 
 ## See Also
 
-- [func reverseTransformedValue(Any?) -> Any?](valuetransformer/reversetransformedvalue(_:).md)
+### Transforming Values
+- [func reverseTransformedValue(Any?) -> Any?](./reversetransformedvalue%28_%29.md)
   Returns the result of the reverse transformation of a given value.
 
 

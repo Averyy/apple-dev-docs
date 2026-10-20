@@ -1,7 +1,8 @@
 # meshInstancesArrayCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of mesh instance array slots.
 
@@ -23,9 +24,10 @@ Increase this value before calling `setMeshInstances(_:at:)` to assign arrays to
 
 ## See Also
 
-- [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](lowlevelrenderer/meshinstances(at:).md)
+### Managing mesh instances
+- [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](./meshinstances%28at%29.md)
   Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
-- [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](lowlevelrenderer/setmeshinstances(_:at:).md)
+- [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](./setmeshinstances%28_,at%29.md)
   Assigns a mesh instance array to the given slot index.
 
 

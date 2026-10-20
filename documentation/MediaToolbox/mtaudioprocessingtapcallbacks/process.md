@@ -1,7 +1,8 @@
 # process
 
 **Framework**: Media Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback for processing the audio.
 
@@ -19,19 +20,24 @@ A callback for processing the audio.
 var process: MTAudioProcessingTapProcessCallback
 ```
 
+```c
+MTAudioProcessingTapProcessCallback process;
+```
+
 ## See Also
 
-- [var version: Int32](mtaudioprocessingtapcallbacks/version.md)
+### Fields
+- [var version: Int32](./version.md)
   The version number of the structure.
-- [var clientInfo: UnsafeMutableRawPointer?](mtaudioprocessingtapcallbacks/clientinfo.md)
+- [var clientInfo: UnsafeMutableRawPointer?](./clientinfo.md)
   App data that the system passes to the initialization callback.
-- [var `init`: MTAudioProcessingTapInitCallback?](mtaudioprocessingtapcallbacks/init.md)
+- [var `init`: MTAudioProcessingTapInitCallback?](./init.md)
   A callback to initialize the tap processor.
-- [var finalize: MTAudioProcessingTapFinalizeCallback?](mtaudioprocessingtapcallbacks/finalize.md)
+- [var finalize: MTAudioProcessingTapFinalizeCallback?](./finalize.md)
   A callback to perform any necessary cleanup.
-- [var prepare: MTAudioProcessingTapPrepareCallback?](mtaudioprocessingtapcallbacks/prepare.md)
+- [var prepare: MTAudioProcessingTapPrepareCallback?](./prepare.md)
   A callback to prepare the tap processor.
-- [var unprepare: MTAudioProcessingTapUnprepareCallback?](mtaudioprocessingtapcallbacks/unprepare.md)
+- [var unprepare: MTAudioProcessingTapUnprepareCallback?](./unprepare.md)
   A callback to perform any necessary cleanup for previous preparation.
 
 

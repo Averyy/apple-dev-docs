@@ -1,7 +1,8 @@
 # writingToolsExclusionAttributeName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.2+
@@ -11,6 +12,14 @@
 - visionOS 2.4+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+static let writingToolsExclusionAttributeName: NSAttributedString.Key
+```
+
+*macOS*
 
 ```swift
 static let writingToolsExclusion: NSAttributedString.Key

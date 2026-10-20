@@ -1,7 +1,8 @@
 # withUnsafeSampleBuffer(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Access the underlying CMSampleBuffer instance.
 

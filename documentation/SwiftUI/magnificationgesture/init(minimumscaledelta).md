@@ -1,16 +1,19 @@
 # init(minimumScaleDelta:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a magnification gesture with a given minimum delta for the gesture to start.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+- macOS 10.15+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: MagnifyGesture)
+
+> **Deprecated**: Use [`MagnifyGesture`](../magnifygesture.md) instead.
 
 ## Declaration
 
@@ -21,7 +24,8 @@ init(minimumScaleDelta: CGFloat = 0.01)
 
 ## See Also
 
-- [var minimumScaleDelta: CGFloat](magnificationgesture/minimumscaledelta.md)
+### Creating the gesture
+- [var minimumScaleDelta: CGFloat](./minimumscaledelta.md)
   The minimum required delta before the gesture starts.
 
 

@@ -1,17 +1,18 @@
 # default()
 
 **Framework**: Video Subscriber Account  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default subscription registration center object.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- iPadOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- Mac Catalyst 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: VSUserAccountManager)
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Returns the default subscription registration center object.
 class func `default`() -> VSSubscriptionRegistrationCenter
 ```
 
+```objc
++ (VSSubscriptionRegistrationCenter *) defaultSubscriptionRegistrationCenter;
+```
+
 #### Return Value
 
-This method returns a [`VSSubscriptionRegistrationCenter`](vssubscriptionregistrationcenter.md) object that refers to the default registration center.
+This method returns a [`VSSubscriptionRegistrationCenter`](../vssubscriptionregistrationcenter.md) object that refers to the default registration center.
 
 #### Discussion
 

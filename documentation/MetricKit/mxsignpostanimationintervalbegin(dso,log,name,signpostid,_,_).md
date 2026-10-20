@@ -1,7 +1,8 @@
 # mxSignpostAnimationIntervalBegin(dso:log:name:signpostID:_:_:)
 
 **Framework**: MetricKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Posts the start time of an animation interval to the log system.
 
@@ -20,13 +21,13 @@ func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer = #dsohandle, log: O
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Call this function to mark the beginning of an animation interval in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md), a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit). Don’t alter the parameters `dso`, `signpostID`, or `format`.
+Call this function to mark the beginning of an animation interval in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](./mxmetricmanager/makeloghandle%28category%29.md), a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](../os/os_signpost_event_emit.md). Don’t alter the parameters `dso`, `signpostID`, or `format`.
 
-To end the interval, call [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) with a `type` of `end`, passing the same `log`, `name`, and `signpostID` you used to begin it.
+To end the interval, call [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md) with a `type` of `end`, passing the same `log`, `name`, and `signpostID` you used to begin it.
 
 ## Parameters
 
@@ -39,9 +40,10 @@ To end the interval, call [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignp
 
 ## See Also
 
-- [struct SignpostIntervalMetric](signpostintervalmetric.md)
+### Signpost and custom metrics
+- [struct SignpostIntervalMetric](./signpostintervalmetric.md)
   A metric that measures the duration and count of custom signpost intervals.
-- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
+- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](./mxsignpost%28_,dso,log,name,signpostid,_,_%29.md)
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 
 

@@ -1,7 +1,8 @@
 # NSScrubber.Alignment.trailing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Trailing alignment of items within the scrubber.
 
@@ -14,17 +15,22 @@ Trailing alignment of items within the scrubber.
 case trailing
 ```
 
+```c
+NSScrubberAlignmentTrailing
+```
+
 #### Discussion
 
 Trailing alignment depends on the writing direction of the system language. Alignment is to the right for left-to-right languages, and to the left for right-to-left languages.
 
 ## See Also
 
-- [NSScrubber.Alignment.center](nsscrubber/alignment/center.md)
+### Constants
+- [NSScrubber.Alignment.center](./center.md)
   Center alignment of items within the scrubber.
-- [NSScrubber.Alignment.leading](nsscrubber/alignment/leading.md)
+- [NSScrubber.Alignment.leading](./leading.md)
   Leading alignment of items within the scrubber.
-- [NSScrubber.Alignment.none](nsscrubber/alignment/none.md)
+- [NSScrubber.Alignment.none](./none.md)
   No preference for item alignment.
 
 

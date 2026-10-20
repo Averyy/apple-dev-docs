@@ -1,14 +1,15 @@
 # ATAPIClientData
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ATAPIClientData {
     ...
 } ATAPIClientData;
@@ -21,18 +22,20 @@ This structure is stuffed into the refcon so we can associate which IOATACommand
 ## Topics
 
 ### Instance Properties
-- [cmd](atapiclientdata/1550957-cmd.md)
+- [cmd](./atapiclientdata/api-1550957-cmd.md)
   IOATACommand for request.
-- [scsiTask](atapiclientdata/1550980-scsitask.md)
+- [scsiTask](./atapiclientdata/api-1550980-scsitask.md)
   SCSITaskIdentifier of request.
-- [self](atapiclientdata/1550940-self.md)
+- [self](./atapiclientdata/api-1550940-self.md)
   Pointer to the object.
 
 ## See Also
 
-- [IOATAPIProtocolTransport](ioatapiprotocoltransport.md)
+### ATAPI
+- [IOATAPIProtocolTransport](./ioatapiprotocoltransport.md)
   SCSI Protocol Driver Family for ATAPI Devices.
-- [ATAPICmdPacket](atapicmdpacket.md)
+- [ATAPICmdPacket](./atapicmdpacket.md)
+### Related Documentation
 - [pseudoSymbol-1811777](pseudoSymbol-1811777)
 
 

@@ -1,7 +1,8 @@
 # kMDItemFSHasCustomIcon
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Boolean indicating if this file has a custom icon. Type is a CFBoolean.
 
@@ -12,6 +13,10 @@ Boolean indicating if this file has a custom icon. Type is a CFBoolean.
 
 ```swift
 let kMDItemFSHasCustomIcon: CFString!
+```
+
+```c
+const CFStringRef kMDItemFSHasCustomIcon;
 ```
 
 

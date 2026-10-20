@@ -1,7 +1,8 @@
 # UILocalizedIndexedCollation
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that organizes, sorts, and localizes the data for a table view that has a section index.
 
@@ -9,7 +10,7 @@ An object that organizes, sorts, and localizes the data for a table view that ha
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,11 +20,15 @@ An object that organizes, sorts, and localizes the data for a table view that ha
 class UILocalizedIndexedCollation
 ```
 
+```objc
+@interface UILocalizedIndexedCollation : NSObject
+```
+
 #### Overview
 
-Use a [`UILocalizedIndexedCollation`](uilocalizedindexedcollation.md) object in conjunction with your table’s data source object to sort and manage the data in an indexed table view. An index is an ideal way for users to navigate a table view containing sequential content. For example, the Contacts app sorts contacts alphabetically and displays an index for navigating those contacts quickly. You use the collation object as the source of the table’s section titles and index titles in your table view. You also use it to sort items in each section of your table.
+Use a [`UILocalizedIndexedCollation`](./uilocalizedindexedcollation.md) object in conjunction with your table’s data source object to sort and manage the data in an indexed table view. An index is an ideal way for users to navigate a table view containing sequential content. For example, the Contacts app sorts contacts alphabetically and displays an index for navigating those contacts quickly. You use the collation object as the source of the table’s section titles and index titles in your table view. You also use it to sort items in each section of your table.
 
-To prepare the data for a section index, create an indexed-collation object and call [`section(for:collationStringSelector:)`](uilocalizedindexedcollation/section(for:collationstringselector:).md) for each model object to be indexed. That method determines the section in which each of these objects should appear and returns an integer that identifies the section. The table-view controller then puts each object in a local array for its section. For each section array, the controller calls the [`sortedArray(from:collationStringSelector:)`](uilocalizedindexedcollation/sortedarray(from:collationstringselector:).md) method to sort all of the objects in the section. The indexed-collation object is now the data store that the table-view controller uses to provide section-index data to the table view, as shown in the following example code.
+To prepare the data for a section index, create an indexed-collation object and call [`section(for:collationStringSelector:)`](./uilocalizedindexedcollation/section%28for,collationstringselector%29.md) for each model object to be indexed. That method determines the section in which each of these objects should appear and returns an integer that identifies the section. The table-view controller then puts each object in a local array for its section. For each section array, the controller calls the [`sortedArray(from:collationStringSelector:)`](./uilocalizedindexedcollation/sortedarray%28from,collationstringselector%29.md) method to sort all of the objects in the section. The indexed-collation object is now the data store that the table-view controller uses to provide section-index data to the table view, as shown in the following example code.
 
 **Swift**:
 
@@ -67,51 +72,52 @@ func tableView(tableView: UITableView!, sectionForSectionIndexTitle title: Strin
 ## Topics
 
 ### Getting the shared instance
-- [class func current() -> Self](uilocalizedindexedcollation/current.md)
+- [class func current() -> Self](./uilocalizedindexedcollation/current%28%29.md)
   Returns an indexed-collation instance for the current table view.
 ### Preparing the sections and section indexes
-- [func section(for: Any, collationStringSelector: Selector) -> Int](uilocalizedindexedcollation/section(for:collationstringselector:).md)
+- [func section(for: Any, collationStringSelector: Selector) -> Int](./uilocalizedindexedcollation/section%28for,collationstringselector%29.md)
   Returns an integer identifying the section in which a model object belongs.
-- [func sortedArray(from: [Any], collationStringSelector: Selector) -> [Any]](uilocalizedindexedcollation/sortedarray(from:collationstringselector:).md)
+- [func sortedArray(from: [Any], collationStringSelector: Selector) -> [Any]](./uilocalizedindexedcollation/sortedarray%28from,collationstringselector%29.md)
   Sorts the objects within a section by their localized titles.
 ### Providing section index data to the table view
-- [var sectionTitles: [String]](uilocalizedindexedcollation/sectiontitles.md)
+- [var sectionTitles: [String]](./uilocalizedindexedcollation/sectiontitles.md)
   Returns the list of section titles for the table view.
-- [var sectionIndexTitles: [String]](uilocalizedindexedcollation/sectionindextitles.md)
+- [var sectionIndexTitles: [String]](./uilocalizedindexedcollation/sectionindextitles.md)
   Returns the list of section-index titles for the table view.
-- [func section(forSectionIndexTitle: Int) -> Int](uilocalizedindexedcollation/section(forsectionindextitle:).md)
+- [func section(forSectionIndexTitle: Int) -> Int](./uilocalizedindexedcollation/section%28forsectionindextitle%29.md)
   Returns the section that the table view should scroll to for the given index title.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Filling a table with data](filling-a-table-with-data.md)
+### Data
+- [Filling a table with data](./filling-a-table-with-data.md)
   Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
-- [Asynchronously loading images into table and collection views](asynchronously-loading-images-into-table-and-collection-views.md)
+- [Asynchronously loading images into table and collection views](./asynchronously-loading-images-into-table-and-collection-views.md)
   Store and fetch images asynchronously to make your app more responsive.
-- [protocol UITableViewDataSource](uitableviewdatasource.md)
+- [protocol UITableViewDataSource](./uitableviewdatasource.md)
   The methods that an object adopts to manage data and provide cells for a table view.
-- [protocol UITableViewDataSourcePrefetching](uitableviewdatasourceprefetching.md)
+- [protocol UITableViewDataSourcePrefetching](./uitableviewdatasourceprefetching.md)
   A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
-- [class UITableViewDiffableDataSource](uitableviewdiffabledatasource-2euir.md)
+- [class UITableViewDiffableDataSource](./uitableviewdiffabledatasource-2euir.md)
   The object you use to manage data and provide cells for a table view.
-- [struct NSDiffableDataSourceSnapshot](nsdiffabledatasourcesnapshot-swift.struct.md)
+- [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
-- [protocol UIDataSourceTranslating](uidatasourcetranslating.md)
+- [protocol UIDataSourceTranslating](./uidatasourcetranslating.md)
   An advanced interface for managing a data source object.
-- [class UIRefreshControl](uirefreshcontrol.md)
+- [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
 
 

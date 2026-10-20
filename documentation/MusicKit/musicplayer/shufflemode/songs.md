@@ -1,7 +1,8 @@
 # MusicPlayer.ShuffleMode.songs
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The music player’s shuffle songs mode.
 

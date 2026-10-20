@@ -1,7 +1,8 @@
 # dontSwitch
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that the application be launched without being brought to the foreground.
 

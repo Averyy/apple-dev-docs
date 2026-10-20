@@ -1,7 +1,8 @@
 # ignore
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Any child accessibility elements become hidden.
 
@@ -22,7 +23,7 @@ static let ignore: AccessibilityChildBehavior
 
 #### Discussion
 
-Use this behavior when you want a view represented by a single accessibility element. The new accessibility element has no initial properties. So you will need to use other accessibility modifiers, such as [`accessibilityLabel(_:)`](view/accessibilitylabel(_:).md), to begin making it accessible.
+Use this behavior when you want a view represented by a single accessibility element. The new accessibility element has no initial properties. So you will need to use other accessibility modifiers, such as [`accessibilityLabel(_:)`](../view/accessibilitylabel%28_%29.md), to begin making it accessible.
 
 ```swift
 var body: some View {
@@ -43,15 +44,16 @@ var body: some View {
 }
 ```
 
-Before using the  [`ignore`](accessibilitychildbehavior/ignore.md)behavior, consider using the [`combine`](accessibilitychildbehavior/combine.md) behavior.
+Before using the  [`ignore`](./ignore.md)behavior, consider using the [`combine`](./combine.md) behavior.
 
 > **Note**: A new accessibility element is always created.
 
 ## See Also
 
-- [static let combine: AccessibilityChildBehavior](accessibilitychildbehavior/combine.md)
+### Getting behaviors
+- [static let combine: AccessibilityChildBehavior](./combine.md)
   Any child accessibility element’s properties are merged into the new accessibility element.
-- [static let contain: AccessibilityChildBehavior](accessibilitychildbehavior/contain.md)
+- [static let contain: AccessibilityChildBehavior](./contain.md)
   Any child accessibility elements become children of the new accessibility element.
 
 

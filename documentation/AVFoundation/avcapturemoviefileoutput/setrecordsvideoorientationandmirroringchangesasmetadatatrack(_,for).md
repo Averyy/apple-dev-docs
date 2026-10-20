@@ -1,7 +1,8 @@
 # setRecordsVideoOrientationAndMirroringChangesAsMetadataTrack(_:for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the movie file output creates a timed metadata track to capture changes to the connection’s video orientation and mirroring.
 
@@ -17,6 +18,10 @@ Sets whether the movie file output creates a timed metadata track to capture cha
 func setRecordsVideoOrientationAndMirroringChangesAsMetadataTrack(_ doRecordChanges: Bool, for connection: AVCaptureConnection)
 ```
 
+```objc
+- (void) setRecordsVideoOrientationAndMirroringChanges:(BOOL) doRecordChanges asMetadataTrackForConnection:(AVCaptureConnection *) connection;
+```
+
 ## Parameters
 
 - `doRecordChanges`: A Boolean value that indicates whether to capture orientation and mirroring information. The system observes this value only at the start of recording. Setting a different value has no effect until you start a new recording.
@@ -24,7 +29,8 @@ func setRecordsVideoOrientationAndMirroringChangesAsMetadataTrack(_ doRecordChan
 
 ## See Also
 
-- [func recordsVideoOrientationAndMirroringChangesAsMetadataTrack(for: AVCaptureConnection) -> Bool](avcapturemoviefileoutput/recordsvideoorientationandmirroringchangesasmetadatatrack(for:).md)
+### Setting orientation
+- [func recordsVideoOrientationAndMirroringChangesAsMetadataTrack(for: AVCaptureConnection) -> Bool](./recordsvideoorientationandmirroringchangesasmetadatatrack%28for%29.md)
   A Boolean value that indicates whether the movie file output records video orientation and mirroring information as a metadata track.
 
 

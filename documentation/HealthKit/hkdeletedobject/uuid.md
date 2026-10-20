@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The universally unique identifier (UUID) for the HealthKit object that was deleted from the store.
 
@@ -19,13 +20,18 @@ The universally unique identifier (UUID) for the HealthKit object that was delet
 var uuid: UUID { get }
 ```
 
+```objc
+@property (strong, readonly) NSUUID * UUID;
+```
+
 #### Discussion
 
 Use this UUID to identify and remove the deleted objects from any copies of the HealthKit data that you have stored outside of HealthKit. For example, if you upload sample data to your server, use the deleted object’s UUID to find and remove it from your server.
 
 ## See Also
 
-- [var metadata: [String : Any]?](hkdeletedobject/metadata.md)
+### Identifying Deleted Objects
+- [var metadata: [String : Any]?](./metadata.md)
   The metadata associated with the deleted object.
 
 

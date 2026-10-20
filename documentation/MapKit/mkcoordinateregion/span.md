@@ -1,23 +1,28 @@
 # span
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal and vertical span representing the amount of map to display.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var span: MKCoordinateSpan
+```
+
+```c
+MKCoordinateSpan span;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The span also defines the current zoom level used by the map view object.
 
 ## See Also
 
-- [var center: CLLocationCoordinate2D](mkcoordinateregion/center.md)
+### Getting the region coordinates
+- [var center: CLLocationCoordinate2D](./center.md)
   The center point of the region.
 
 

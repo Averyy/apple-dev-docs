@@ -1,6 +1,7 @@
 # About the HTTP Status Code
 
-**Framework**: Enterprise Program API
+**Framework**: Enterprise Program API  
+**Role**: Article
 
 Learn how the status code helps you determine if an Enterprise Program  API request succeeded or why it failed.
 
@@ -23,7 +24,7 @@ The following table lists the HTTP status codes and the reasons why Enterprise P
 | 403 | Forbidden | The request is not allowed. This can happen if your API key is revoked, your token is incorrectly formatted, or if the requested operation is not allowed. |
 | 404 | Not Found | The request cannot be fulfilled because the resource does not exist. |
 | 405 | Method Not Allowed | The request cannot be accepted because the HTTP method is not appropriate for the given URI. |
-| 406 | Not Acceptable | The request cannot be accepted because the `Accept` header requires a media type the API does not support. ![None](/images/com.apple.devpubs.enterprise-api/spacer.png) The response in this case is in plain text, not JSON. |
+| 406 | Not Acceptable | The request cannot be accepted because the `Accept` header requires a media type the API does not support. ![](https://developer.apple.com/tutorials/images/com.apple.devpubs.enterprise-api/spacer.png) The response in this case is in plain text, not JSON. |
 | 409 | Conflict | The request cannot be accepted because the JSON data you have provided conflicts with rules enforced by the API. |
 | 410 | Gone | The request cannot be fulfilled because the requested resource, which is known to have previously existed, no longer exists. Usually this case results in a 404 status code, but when knowledge that a resource previously existed is important, the API returns a 410. This happens, for instance, if you request a user invitation after the user accepted the invitation. |
 | 415 | Unsupported Media Type | The request cannot be accepted because the media type of the request entity is not a format the API understands. Make sure the `Content-Type` header in the request is `application/json`. |
@@ -31,13 +32,14 @@ The following table lists the HTTP status codes and the reasons why Enterprise P
 | 429 | Too Many Requests | The request cannot be accepted because you have exceeded the rate limit for your API key. You will need to wait awhile and try the request again. |
 | 500 | Internal Server Error | The request failed. This may be due to a temporary outage. Check the Apple Developer System Status Page for up to date information on the Enterprise Program API. |
 
-If the request fails, use the additional data provided in the [`ErrorResponse`](errorresponse.md) to determine how to respond to the error.
+If the request fails, use the additional data provided in the [`ErrorResponse`](./errorresponse.md) to determine how to respond to the error.
 
 ## See Also
 
-- [Parsing the Error Response Code](parsing-the-error-response-code.md)
+### Handling Errors
+- [Parsing the Error Response Code](./parsing-the-error-response-code.md)
   Interpret the error details to troubleshoot API requests and perform programmatic error handling.
-- [Pinpointing the Location of Errors](pinpointing-the-location-of-errors.md)
+- [Pinpointing the Location of Errors](./pinpointing-the-location-of-errors.md)
   Locate the specific source of the error.
 
 

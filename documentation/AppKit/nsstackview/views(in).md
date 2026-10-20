@@ -1,17 +1,22 @@
 # views(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the array of views in the specified gravity area in the stack view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func views(in gravity: NSStackView.Gravity) -> [NSView]
+```
+
+```objc
+- (NSArray<__kindof NSView *> *) viewsInGravity:(NSStackViewGravity) gravity;
 ```
 
 #### Return Value
@@ -24,17 +29,18 @@ The returned array contains all of the views in the specified gravity area of th
 
 ## Parameters
 
-- `gravity`: The gravity area whose view array you want to get. Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration, according to the stack view’s layout direction..
+- `gravity`: The gravity area whose view array you want to get. Valid values are those in the [`NSStackView.Gravity`](./gravity.md) enumeration, according to the stack view’s layout direction..
 
 ## See Also
 
-- [var views: [NSView]](nsstackview/views.md)
+### Inspecting a Stack View
+- [var views: [NSView]](./views.md)
   The array of views owned by the stack view.
-- [var detachedViews: [NSView]](nsstackview/detachedviews.md)
+- [var detachedViews: [NSView]](./detachedviews.md)
   An array that contains the detached views from all the stack view’s gravity areas.
-- [func clippingResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsstackview/clippingresistancepriority(for:).md)
+- [func clippingResistancePriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./clippingresistancepriority%28for%29.md)
   Returns the Auto Layout priority for resisting clipping of views in the stack view when Auto Layout attempts to reduce the stack view’s size.
-- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](nsstackview/huggingpriority(for:).md)
+- [func huggingPriority(for: NSLayoutConstraint.Orientation) -> NSLayoutConstraint.Priority](./huggingpriority%28for%29.md)
   Returns the Auto Layout priority for the stack view to minimize its size to fit its contained views as closely as possible, for a specified user interface axis.
 
 

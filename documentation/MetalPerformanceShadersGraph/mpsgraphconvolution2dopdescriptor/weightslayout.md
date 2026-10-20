@@ -1,7 +1,8 @@
 # weightsLayout
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The named layout of data in the weights tensor.
 
@@ -17,6 +18,10 @@ The named layout of data in the weights tensor.
 
 ```swift
 var weightsLayout: MPSGraphTensorNamedDataLayout { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphTensorNamedDataLayout weightsLayout;
 ```
 
 #### Discussion

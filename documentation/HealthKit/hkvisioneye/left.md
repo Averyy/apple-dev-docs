@@ -1,7 +1,8 @@
 # HKVisionEye.left
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The left eye.
 
@@ -19,9 +20,14 @@ The left eye.
 case left
 ```
 
+```c
+HKVisionEyeLeft
+```
+
 ## See Also
 
-- [HKVisionEye.right](hkvisioneye/right.md)
+### Eyes
+- [HKVisionEye.right](./right.md)
   The right eye.
 
 

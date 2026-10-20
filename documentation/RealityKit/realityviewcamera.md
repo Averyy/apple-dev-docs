@@ -1,7 +1,8 @@
 # RealityViewCamera
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A camera for reality view scenes, that can be world tracking or virtual.
 
@@ -21,21 +22,22 @@ struct RealityViewCamera
 ## Topics
 
 ### Type Properties
-- [static var spatialTracking: RealityViewCamera](realityviewcamera/spatialtracking.md)
+- [static var spatialTracking: RealityViewCamera](./realityviewcamera/spatialtracking.md)
   The camera that displays virtual RealityKit content and camera passthrough, with tracking capabilities.
-- [static var virtual: RealityViewCamera](realityviewcamera/virtual.md)
+- [static var virtual: RealityViewCamera](./realityviewcamera/virtual.md)
   The camera that displays virtual RealityKit content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CameraControls](cameracontrols.md)
-- [ARView.CameraMode](arview/cameramode-swift.enum.md)
+### Camera mode settings
+- [struct CameraControls](./cameracontrols.md)
+- [ARView.CameraMode](./arview/cameramode-swift.enum.md)
   The available camera modes.
 
 

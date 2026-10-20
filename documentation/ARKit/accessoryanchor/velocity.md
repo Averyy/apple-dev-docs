@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Velocity of the accessory in the local coordinate system [m/s].
 

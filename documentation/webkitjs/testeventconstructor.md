@@ -1,22 +1,23 @@
 # TestEventConstructor
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 interface TestEventConstructor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [attr1](testeventconstructor/1631290-attr1.md)
-- [attr2](testeventconstructor/1633391-attr2.md)
+- [attr1](./testeventconstructor/api-1631290-attr1.md)
+- [attr2](./testeventconstructor/api-1633391-attr2.md)
 
 ## Relationships
 

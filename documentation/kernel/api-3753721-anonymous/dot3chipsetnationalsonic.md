@@ -1,14 +1,15 @@
 # dot3ChipSetNationalSonic
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3ChipSetNationalSonic = 2
 ```
 

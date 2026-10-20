@@ -1,7 +1,8 @@
 # MTRCommandPath
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 class MTRCommandPath
 ```
 
+```objc
+@interface MTRCommandPath : MTRClusterPath
+```
+
 ## Topics
 
 ### Initializers
-- [init(endpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber)](mtrcommandpath/init(endpointid:clusterid:commandid:)-98znp.md)
-- [convenience init(endpointId: NSNumber, clusterId: NSNumber, commandId: NSNumber)](mtrcommandpath/init(endpointid:clusterid:commandid:)-99j08.md)
+- [init(endpointID: NSNumber, clusterID: NSNumber, commandID: NSNumber)](./mtrcommandpath/init%28endpointid,clusterid,commandid%29-98znp.md)
+- [convenience init(endpointId: NSNumber, clusterId: NSNumber, commandId: NSNumber)](./mtrcommandpath/init%28endpointid,clusterid,commandid%29-99j08.md)
 ### Instance Properties
-- [var command: NSNumber](mtrcommandpath/command.md)
+- [var command: NSNumber](./mtrcommandpath/command.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRClusterPath](mtrclusterpath.md)
+- [MTRClusterPath](./mtrclusterpath.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

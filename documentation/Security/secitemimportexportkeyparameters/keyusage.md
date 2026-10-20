@@ -1,7 +1,8 @@
 # keyUsage
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing usage attributes applied to a key on import.
 
@@ -14,17 +15,21 @@ An array containing usage attributes applied to a key on import.
 var keyUsage: Unmanaged<CFArray>?
 ```
 
+```c
+CFArrayRef keyUsage;
+```
+
 #### Discussion
 
 The array may contain any of the following key usage constants:
 
-- [`kSecAttrCanEncrypt`](ksecattrcanencrypt.md)
-- [`kSecAttrCanDecrypt`](ksecattrcandecrypt.md)
-- [`kSecAttrCanDerive`](ksecattrcanderive.md)
-- [`kSecAttrCanSign`](ksecattrcansign.md)
-- [`kSecAttrCanVerify`](ksecattrcanverify.md)
-- [`kSecAttrCanWrap`](ksecattrcanwrap.md)
-- [`kSecAttrCanUnwrap`](ksecattrcanunwrap.md)
+- [`kSecAttrCanEncrypt`](../ksecattrcanencrypt.md)
+- [`kSecAttrCanDecrypt`](../ksecattrcandecrypt.md)
+- [`kSecAttrCanDerive`](../ksecattrcanderive.md)
+- [`kSecAttrCanSign`](../ksecattrcansign.md)
+- [`kSecAttrCanVerify`](../ksecattrcanverify.md)
+- [`kSecAttrCanWrap`](../ksecattrcanwrap.md)
+- [`kSecAttrCanUnwrap`](../ksecattrcanunwrap.md)
 
 If the array is `NULL`, all operations are allowed by default.
 

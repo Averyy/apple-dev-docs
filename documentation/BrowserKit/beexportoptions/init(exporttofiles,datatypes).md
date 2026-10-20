@@ -1,7 +1,8 @@
 # init(exportToFiles:dataTypes:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes exports with file information and data types.
 
@@ -15,6 +16,10 @@ Initializes exports with file information and data types.
 init(exportToFiles: Bool, dataTypes: BEExportOptions.DataTypes)
 ```
 
+```objc
+- (instancetype) initWithExportToFiles:(BOOL) exportToFiles dataTypes:(BEExportDataTypes) dataTypes;
+```
+
 ## Parameters
 
 - `exportToFiles`: A Boolean value that indicates whether to export to files.
@@ -22,7 +27,8 @@ init(exportToFiles: Bool, dataTypes: BEExportOptions.DataTypes)
 
 ## See Also
 
-- [init?(coder: NSCoder)](beexportoptions/init(coder:).md)
+### Creating export options
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Initializes exports from a decoder.
 
 

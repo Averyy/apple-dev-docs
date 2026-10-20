@@ -1,14 +1,15 @@
 # rsize_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_size_t rsize_t;
 ```
 

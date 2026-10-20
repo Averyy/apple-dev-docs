@@ -1,7 +1,8 @@
 # UIDragAnimating
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for providing custom animation alongside the system’s lift, drop, and cancellation animations.
 
@@ -18,33 +19,38 @@ The interface for providing custom animation alongside the system’s lift, drop
 protocol UIDragAnimating : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDragAnimating <NSObject>
+```
+
 #### Overview
 
-You can use a [`UIDragAnimating`](uidraganimating.md) object to animate your own changes to the preview displayed during system-provided drag and drop animations.
+You can use a [`UIDragAnimating`](./uidraganimating.md) object to animate your own changes to the preview displayed during system-provided drag and drop animations.
 
 ## Topics
 
 ### Adding animations
-- [func addAnimations(() -> Void)](uidraganimating/addanimations(_:).md)
+- [func addAnimations(() -> Void)](./uidraganimating/addanimations%28_%29.md)
   Adds an animation block for modifying a view animation while it’s running.
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uidraganimating/addcompletion(_:).md)
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./uidraganimating/addcompletion%28_%29.md)
   Adds an animation completion block to run when a view animation has ended.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [UICollectionViewDropPlaceholderContext](uicollectionviewdropplaceholdercontext.md)
-- [UITableViewDropPlaceholderContext](uitableviewdropplaceholdercontext.md)
+- [UICollectionViewDropPlaceholderContext](./uicollectionviewdropplaceholdercontext.md)
+- [UITableViewDropPlaceholderContext](./uitableviewdropplaceholdercontext.md)
 
 ## See Also
 
-- [class UIDragItem](uidragitem.md)
+### Drag sources
+- [class UIDragItem](./uidragitem.md)
   A representation of an underlying data item as a person drags it from one location to another.
-- [protocol UIDragDropSession](uidragdropsession.md)
+- [protocol UIDragDropSession](./uidragdropsession.md)
   The common interface for querying the state of both drag sessions and drop sessions.
-- [protocol UIDragSession](uidragsession.md)
+- [protocol UIDragSession](./uidragsession.md)
   The interface for configuring a drag session.
 
 

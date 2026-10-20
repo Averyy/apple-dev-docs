@@ -1,14 +1,15 @@
 # ml_phys_read_half
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ml_phys_read_half(vm_offset_t paddr);
 ```
 

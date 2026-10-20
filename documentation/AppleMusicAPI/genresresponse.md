@@ -1,7 +1,8 @@
 # GenresResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a genres request.
 
@@ -10,17 +11,18 @@ The response to a genres request.
 
 ## Declaration
 
-```swift
+```
 object GenresResponse
 ```
 
 ## Properties
 
-- `data` ([Genres]) *(required)*: The [`Genres`](genres.md) included in the response for the request.
+- `data` ([Genres]) *(required)*: The [`Genres`](./genres.md) included in the response for the request.
 
 ## See Also
 
-- [object Genres](genres.md)
+### Handling the Response
+- [object Genres](./genres.md)
   A resource object that represents a music genre.
 
 

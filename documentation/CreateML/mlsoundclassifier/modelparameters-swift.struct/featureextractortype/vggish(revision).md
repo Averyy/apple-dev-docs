@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.FeatureExtractorType.vggish(revision:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Represents the VGGish feature extractor, which is compatible with older OS versions.
 
@@ -28,9 +29,10 @@ The case uses the newest version if you don’t provide an associated value for 
 
 ## See Also
 
-- [case audioFeaturePrint(type: MLSoundClassifier.ModelParameters.FeaturePrintType, revision: Int)](mlsoundclassifier/modelparameters-swift.struct/featureextractortype/audiofeatureprint(type:revision:).md)
+### Designating a feature extractor
+- [case audioFeaturePrint(type: MLSoundClassifier.ModelParameters.FeaturePrintType, revision: Int)](./audiofeatureprint%28type,revision%29.md)
   Represents the Audio Feature Print extractor.
-- [MLSoundClassifier.ModelParameters.FeaturePrintType](mlsoundclassifier/modelparameters-swift.struct/featureprinttype.md)
+- [MLSoundClassifier.ModelParameters.FeaturePrintType](../featureprinttype.md)
   The type options for an Audio Feature Print feature extractor.
 
 

@@ -1,7 +1,8 @@
 # MTRLaundryWasherModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,35 +19,39 @@
 enum MTRLaundryWasherModeModeTag
 ```
 
+```c
+enum MTRLaundryWasherModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRLaundryWasherModeModeTag.auto](mtrlaundrywashermodemodetag/auto.md)
-- [MTRLaundryWasherModeModeTag.day](mtrlaundrywashermodemodetag/day.md)
-- [MTRLaundryWasherModeModeTag.delicate](mtrlaundrywashermodemodetag/delicate.md)
-- [MTRLaundryWasherModeModeTag.heavy](mtrlaundrywashermodemodetag/heavy.md)
-- [MTRLaundryWasherModeModeTag.lowEnergy](mtrlaundrywashermodemodetag/lowenergy.md)
-- [MTRLaundryWasherModeModeTag.lowNoise](mtrlaundrywashermodemodetag/lownoise.md)
-- [MTRLaundryWasherModeModeTag.max](mtrlaundrywashermodemodetag/max.md)
-- [MTRLaundryWasherModeModeTag.min](mtrlaundrywashermodemodetag/min.md)
-- [MTRLaundryWasherModeModeTag.night](mtrlaundrywashermodemodetag/night.md)
-- [MTRLaundryWasherModeModeTag.normal](mtrlaundrywashermodemodetag/normal.md)
-- [MTRLaundryWasherModeModeTag.quick](mtrlaundrywashermodemodetag/quick.md)
-- [MTRLaundryWasherModeModeTag.quiet](mtrlaundrywashermodemodetag/quiet.md)
-- [MTRLaundryWasherModeModeTag.vacation](mtrlaundrywashermodemodetag/vacation.md)
-- [MTRLaundryWasherModeModeTag.whites](mtrlaundrywashermodemodetag/whites.md)
+- [MTRLaundryWasherModeModeTag.auto](./mtrlaundrywashermodemodetag/auto.md)
+- [MTRLaundryWasherModeModeTag.day](./mtrlaundrywashermodemodetag/day.md)
+- [MTRLaundryWasherModeModeTag.delicate](./mtrlaundrywashermodemodetag/delicate.md)
+- [MTRLaundryWasherModeModeTag.heavy](./mtrlaundrywashermodemodetag/heavy.md)
+- [MTRLaundryWasherModeModeTag.lowEnergy](./mtrlaundrywashermodemodetag/lowenergy.md)
+- [MTRLaundryWasherModeModeTag.lowNoise](./mtrlaundrywashermodemodetag/lownoise.md)
+- [MTRLaundryWasherModeModeTag.max](./mtrlaundrywashermodemodetag/max.md)
+- [MTRLaundryWasherModeModeTag.min](./mtrlaundrywashermodemodetag/min.md)
+- [MTRLaundryWasherModeModeTag.night](./mtrlaundrywashermodemodetag/night.md)
+- [MTRLaundryWasherModeModeTag.normal](./mtrlaundrywashermodemodetag/normal.md)
+- [MTRLaundryWasherModeModeTag.quick](./mtrlaundrywashermodemodetag/quick.md)
+- [MTRLaundryWasherModeModeTag.quiet](./mtrlaundrywashermodemodetag/quiet.md)
+- [MTRLaundryWasherModeModeTag.vacation](./mtrlaundrywashermodemodetag/vacation.md)
+- [MTRLaundryWasherModeModeTag.whites](./mtrlaundrywashermodemodetag/whites.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrlaundrywashermodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrlaundrywashermodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

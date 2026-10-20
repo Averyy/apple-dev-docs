@@ -1,7 +1,8 @@
 # requestHeaderFields(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts an array of cookies to a dictionary of header fields.
 
@@ -20,13 +21,17 @@ Converts an array of cookies to a dictionary of header fields.
 class func requestHeaderFields(with cookies: [HTTPCookie]) -> [String : String]
 ```
 
+```objc
++ (NSDictionary<NSString *,NSString *> *) requestHeaderFieldsWithCookies:(NSArray<NSHTTPCookie *> *) cookies;
+```
+
 #### Return Value
 
 The dictionary of header fields created from the provided cookies.
 
 #### Discussion
 
-To send these headers as part of a URL request to a remote server, create an [`NSMutableURLRequest`](nsmutableurlrequest.md) object, then call the [`allHTTPHeaderFields`](nsmutableurlrequest/allhttpheaderfields.md) or [`setValue(_:forHTTPHeaderField:)`](nsmutableurlrequest/setvalue(_:forhttpheaderfield:).md) method to set the provided headers for the request. Finally, initialize and start an [`URLSessionTask`](urlsessiontask.md) instance based on that request object.
+To send these headers as part of a URL request to a remote server, create an [`NSMutableURLRequest`](../nsmutableurlrequest.md) object, then call the [`allHTTPHeaderFields`](../nsmutableurlrequest/allhttpheaderfields.md) or [`setValue(_:forHTTPHeaderField:)`](../nsmutableurlrequest/setvalue%28_,forhttpheaderfield%29.md) method to set the provided headers for the request. Finally, initialize and start an [`URLSessionTask`](../urlsessiontask.md) instance based on that request object.
 
 ## Parameters
 

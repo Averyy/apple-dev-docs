@@ -1,7 +1,8 @@
 # notification
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification to which the user responded.
 
@@ -20,15 +21,28 @@ The notification to which the user responded.
 var notification: UNNotification { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) UNNotification * notification;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) UNNotification * notification;
+```
+
 ## See Also
 
-- [var actionIdentifier: String](unnotificationresponse/actionidentifier.md)
+### Getting the Response Information
+- [var actionIdentifier: String](./actionidentifier.md)
   The identifier string of the action that the user selected.
-- [var targetScene: UIScene?](unnotificationresponse/targetscene.md)
+- [var targetScene: UIScene?](./targetscene.md)
   The scene where the system reflects the user’s response to a notification.
-- [let UNNotificationDefaultActionIdentifier: String](unnotificationdefaultactionidentifier.md)
+- [let UNNotificationDefaultActionIdentifier: String](../unnotificationdefaultactionidentifier.md)
   An action that indicates the user opened the app from the notification interface.
-- [let UNNotificationDismissActionIdentifier: String](unnotificationdismissactionidentifier.md)
+- [let UNNotificationDismissActionIdentifier: String](../unnotificationdismissactionidentifier.md)
   The action that indicates the user explicitly dismissed the notification interface.
 
 

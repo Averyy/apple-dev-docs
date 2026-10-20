@@ -1,7 +1,8 @@
 # encode(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer.
 
@@ -22,7 +23,8 @@ func encode(_ transformer: ColumnSelector<Estimator, UnwrappedInput>.Transformer
 
 ## See Also
 
-- [func decode(from: inout any EstimatorDecoder) throws -> ColumnSelector<Estimator, UnwrappedInput>.Transformer](columnselector/decode(from:).md)
+### Encoding and decoding
+- [func decode(from: inout any EstimatorDecoder) throws -> ColumnSelector<Estimator, UnwrappedInput>.Transformer](./decode%28from%29.md)
   Decodes a previously fitted transformer.
 
 

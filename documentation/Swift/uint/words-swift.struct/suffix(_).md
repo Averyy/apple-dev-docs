@@ -1,7 +1,8 @@
 # suffix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
 
@@ -36,7 +37,7 @@ print(numbers.suffix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is equal to `maxLength`.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is equal to `maxLength`.
 
 ## Parameters
 

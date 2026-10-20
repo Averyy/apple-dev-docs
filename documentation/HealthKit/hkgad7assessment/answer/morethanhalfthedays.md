@@ -1,7 +1,8 @@
 # HKGAD7Assessment.Answer.moreThanHalfTheDays
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case moreThanHalfTheDays
+```
+
+```c
+HKGAD7AssessmentAnswerMoreThanHalfTheDays
 ```
 
 

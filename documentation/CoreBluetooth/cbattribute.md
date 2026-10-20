@@ -1,7 +1,8 @@
 # CBAttribute
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of common aspects of services offered by a peripheral.
 
@@ -20,47 +21,52 @@ A representation of common aspects of services offered by a peripheral.
 class CBAttribute
 ```
 
+```objc
+@interface CBAttribute : NSObject
+```
+
 #### Overview
 
-Concrete subclasses of [`CBAttribute`](cbattribute.md) (and their mutable counterparts) represent the services a peripheral offers, the characteristics of those services, and the descriptors attached to those characteristics. The concrete subclasses are:
+Concrete subclasses of [`CBAttribute`](./cbattribute.md) (and their mutable counterparts) represent the services a peripheral offers, the characteristics of those services, and the descriptors attached to those characteristics. The concrete subclasses are:
 
-- [`CBService`](cbservice.md)
-- [`CBCharacteristic`](cbcharacteristic.md)
-- [`CBDescriptor`](cbdescriptor.md)
+- [`CBService`](./cbservice.md)
+- [`CBCharacteristic`](./cbcharacteristic.md)
+- [`CBDescriptor`](./cbdescriptor.md)
 
 ## Topics
 
 ### Identifying an Attribute
-- [var uuid: CBUUID](cbattribute/uuid.md)
+- [var uuid: CBUUID](./cbattribute/uuid.md)
   The Bluetooth-specific UUID of the attribute.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CBCharacteristic](cbcharacteristic.md)
-- [CBDescriptor](cbdescriptor.md)
-- [CBService](cbservice.md)
+- [CBCharacteristic](./cbcharacteristic.md)
+- [CBDescriptor](./cbdescriptor.md)
+- [CBService](./cbservice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBPeripheral](cbperipheral.md)
+### Peripherals
+- [class CBPeripheral](./cbperipheral.md)
   A remote peripheral device.
-- [protocol CBPeripheralDelegate](cbperipheraldelegate.md)
+- [protocol CBPeripheralDelegate](./cbperipheraldelegate.md)
   A protocol that provides updates on the use of a peripheral’s services.
-- [class CBPeripheralManager](cbperipheralmanager.md)
+- [class CBPeripheralManager](./cbperipheralmanager.md)
   An object that manages and advertises peripheral services exposed by this app.
-- [protocol CBPeripheralManagerDelegate](cbperipheralmanagerdelegate.md)
+- [protocol CBPeripheralManagerDelegate](./cbperipheralmanagerdelegate.md)
   A protocol that provides updates for local peripheral state and interactions with remote central devices.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](./cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
 
 

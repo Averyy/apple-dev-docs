@@ -1,7 +1,8 @@
 # directParameter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the object that corresponds to the direct parameter of the Apple event from which the receiver derives.
 
@@ -13,6 +14,10 @@ Sets the object that corresponds to the direct parameter of the Apple event from
 
 ```swift
 var directParameter: Any? { get set }
+```
+
+```objc
+@property (retain, nullable) id directParameter;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # TabView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that switches between multiple child views using interactive user interface elements.
 
@@ -23,7 +24,7 @@ struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content
 
 #### Overview
 
-To create a user interface with tabs, place instances of [`Tab`](tab.md)  in a `TabView`. On iOS, you can also use one of the badge modifiers, like [`badge(_:)`](tabcontent/badge(_:).md), to assign a badge to each of the tabs.
+To create a user interface with tabs, place instances of [`Tab`](./tab.md)  in a `TabView`. On iOS, you can also use one of the badge modifiers, like [`badge(_:)`](./tabcontent/badge%28_%29.md), to assign a badge to each of the tabs.
 
 The following example creates a tab view with three tabs, each presenting a custom child view. The first tab has a numeric badge and the third has a string badge.
 
@@ -45,9 +46,9 @@ TabView {
 }
 ```
 
-![A tab bar with three tabs, each with an icon image and a text label.](/images/com.apple.SwiftUI/TabView-1@2x.png)
+![A tab bar with three tabs, each with an icon image and a text label.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/TabView-1@2x.png)
 
-To programmatically select different tabs, use the [`init(selection:content:)`](tabview/init(selection:content:).md) initializer. You can assign a selection value to each tab using a `Tab` initializer that takes a value. Each tab should have a unique selection value and all tabs should have the same selection value type. When people select a tab in the tab view, the tab view updates the selection binding to the value of the currently selected tab.
+To programmatically select different tabs, use the [`init(selection:content:)`](./tabview/init%28selection,content%29.md) initializer. You can assign a selection value to each tab using a `Tab` initializer that takes a value. Each tab should have a unique selection value and all tabs should have the same selection value type. When people select a tab in the tab view, the tab view updates the selection binding to the value of the currently selected tab.
 
 The following example creates a tab view that supports programatic selection and has 3 tabs.
 
@@ -67,7 +68,7 @@ TabView(selection: $selection) {
 }
 ```
 
-You can use the [`page`](tabviewstyle/page.md) style to display a tab view with multiple scrolling pages of content.
+You can use the [`page`](./tabviewstyle/page.md) style to display a tab view with multiple scrolling pages of content.
 
 The following example uses a `ForEach` to create a scrolling tab view that shows the temperatures of various cities.
 
@@ -80,13 +81,13 @@ TabView {
 .tabViewStyle(.page)
 ```
 
-##### Using Tab Sections
+##### Using tab sections
 
-The [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style supports declaring a secondary tab hierarchy by grouping tabs with a [`TabSection`](tabsection.md).
+The [`sidebarAdaptable`](./tabviewstyle/sidebaradaptable.md) style supports declaring a secondary tab hierarchy by grouping tabs with a [`TabSection`](./tabsection.md).
 
 On iPadOS, tab sections appear in both the sidebar and the tab bar. On iOS and the horizontally compact size class on iPadOS, secondary tabs appear in the tab bar. When secondary tabs appear in the tab bar, the section header doesn’t appear in the tab bar. Consider limiting the number of tabs on iOS and the iPadOS horizontal compact size class so all tabs fit in the tab bar.
 
-The following example has 5 tabs, three of which are grouped within a [`TabSection`](tabsection.md).
+The following example has 5 tabs, three of which are grouped within a [`TabSection`](./tabsection.md).
 
 ```swift
 TabView {
@@ -115,7 +116,7 @@ TabView {
 .tabViewStyle(.sidebarAdaptable)
 ```
 
-##### Changing Tab Structure Between Horizontal and Regular Size Classes
+##### Changing tab structure between horizontal and regular size classes
 
 The following example shows a `TabView` with 4 tabs in compact and 5 tabs in regular. In compact, one of the tabs is a ‘Browse’ tab that displays a custom list view. This list view allows navigating to the destinations that are contained within the ‘Library’ and ‘Playlists’ sections in the horizontally regular size class. The navigation path and the selection state are updated when the number of tabs changes.
 
@@ -200,11 +201,11 @@ struct LibraryView: View {
 }
 ```
 
-##### Adding Support for Customization
+##### Adding support for customization
 
-You can allow people to customize the tabs in a `TabView` by using `sidebarAdaptable` style with the [`tabViewCustomization(_:)`](view/tabviewcustomization(_:).md) modifier. Customization allows people to drag tabs from the sidebar to the tab bar, hide tabs, and rearrange tabs in the sidebar.
+You can allow people to customize the tabs in a `TabView` by using `sidebarAdaptable` style with the [`tabViewCustomization(_:)`](./view/tabviewcustomization%28_%29.md) modifier. Customization allows people to drag tabs from the sidebar to the tab bar, hide tabs, and rearrange tabs in the sidebar.
 
-All tabs and tab sections that support customization need to have a customization ID. You can mark a tab as being non-customizable by specifying a [`disabled`](tabcustomizationbehavior/disabled.md) behavior in all adaptable tab bar placements using [`customizationBehavior(_:for:)`](tabcontent/customizationbehavior(_:for:).md).
+All tabs and tab sections that support customization need to have a customization ID. You can mark a tab as being non-customizable by specifying a [`disabled`](./tabcustomizationbehavior/disabled.md) behavior in all adaptable tab bar placements using [`customizationBehavior(_:for:)`](./tabcontent/customizationbehavior%28_,for%29.md).
 
 On macOS, a default interaction is provided for reordering sections but not for controlling the visibility of individual tabs. A custom experience should be provided if desired by setting the visibility of the tab on the customization.
 
@@ -247,31 +248,32 @@ TabView {
 ## Topics
 
 ### Creating a tab view
-- [init(content:)](tabview/init(content:).md)
-- [init(selection:content:)](tabview/init(selection:content:).md)
+- [init(content:)](./tabview/init%28content%29.md)
+- [init(selection:content:)](./tabview/init%28selection,content%29.md)
   Creates a tab view that uses a builder to create and specify selection values for its tabs.
 ### Configuring search activation
-- [struct TabSearchActivation](tabsearchactivation.md)
+- [struct TabSearchActivation](./tabsearchactivation.md)
   Configures the activation behavior of search in the search tab.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Enhancing your app’s content with tab navigation](enhancing-your-app-content-with-tab-navigation.md)
+### Presenting views in tabs
+- [Enhancing your app’s content with tab navigation](./enhancing-your-app-content-with-tab-navigation.md)
   Keep your app content front and center while providing quick access to navigation using the tab bar.
-- [struct Tab](tab.md)
+- [struct Tab](./tab.md)
   The content for a tab and the tab’s associated tab item in a tab view.
-- [struct TabRole](tabrole.md)
+- [struct TabRole](./tabrole.md)
   A value that defines the purpose of the tab.
-- [struct TabSection](tabsection.md)
+- [struct TabSection](./tabsection.md)
   A container that you can use to add hierarchy within a tab view.
-- [func tabViewStyle<S>(S) -> some View](view/tabviewstyle(_:).md)
+- [func tabViewStyle<S>(S) -> some View](./view/tabviewstyle%28_%29.md)
   Sets the style for the tab view within the current environment.
-- [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
+- [func tabItem<V>(() -> V) -> some View](./view/tabitem%28_%29.md)
   Sets the tab bar item associated with this view.
 
 

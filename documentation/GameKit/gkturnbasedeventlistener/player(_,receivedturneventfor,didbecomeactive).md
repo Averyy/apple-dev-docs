@@ -1,7 +1,8 @@
 # player(_:receivedTurnEventFor:didBecomeActive:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles turn-based match events, such as accepting invitations, passing turns, and saving match data.
 
@@ -20,11 +21,15 @@ Handles turn-based match events, such as accepting invitations, passing turns, a
 optional func player(_ player: GKPlayer, receivedTurnEventFor match: GKTurnBasedMatch, didBecomeActive: Bool)
 ```
 
+```objc
+- (void) player:(GKPlayer *) player receivedTurnEventForMatch:(GKTurnBasedMatch *) match didBecomeActive:(BOOL) didBecomeActive;
+```
+
 ## Mentions
 
-- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
+- [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
 #### Discussion
 
@@ -42,17 +47,18 @@ GameKit invokes this method when these turn-based events occur:
 
 - `player`: The player who receives this turn-based event.
 - `match`: The match related to this turn-based event.
-- `didBecomeActive`: [`true`](https://developer.apple.com/documentation/swift/true) if the system launches the game to deliver the turn-based event; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `didBecomeActive`: [`true`](../../Swift/true.md) if the system launches the game to deliver the turn-based event; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func player(GKPlayer, didRequestMatchWithOtherPlayers: [GKPlayer])](gkturnbasedeventlistener/player(_:didrequestmatchwithotherplayers:).md)
+### Handling Match-Related Events
+- [func player(GKPlayer, didRequestMatchWithOtherPlayers: [GKPlayer])](./player%28_,didrequestmatchwithotherplayers%29.md)
   Handles when the player uses Game Center to start a match with other players.
-- [func player(GKPlayer, matchEnded: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:matchended:).md)
+- [func player(GKPlayer, matchEnded: GKTurnBasedMatch)](./player%28_,matchended%29.md)
   Handles when the match ends.
-- [func player(GKPlayer, wantsToQuitMatch: GKTurnBasedMatch)](gkturnbasedeventlistener/player(_:wantstoquitmatch:).md)
+- [func player(GKPlayer, wantsToQuitMatch: GKTurnBasedMatch)](./player%28_,wantstoquitmatch%29.md)
   Handles when the current participant wants to quit a match.
-- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](gkturnbasedeventlistener/player(_:didrequestmatchwithplayers:).md)
+- [func player(GKPlayer, didRequestMatchWithPlayers: [String])](./player%28_,didrequestmatchwithplayers%29.md)
   Handles when the player uses Game Center to start a match with other players.
 
 

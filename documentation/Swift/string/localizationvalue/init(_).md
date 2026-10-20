@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localization value instance.
 
@@ -22,7 +23,7 @@ init(_ value: String)
 
 #### Discussion
 
-Creating a [`String.LocalizationValue`](string/localizationvalue.md) with this initializer creates a localized value with no interpolated values.
+Creating a [`String.LocalizationValue`](../localizationvalue.md) with this initializer creates a localized value with no interpolated values.
 
 ## Parameters
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 static func object(withItemProviderData data: Data, typeIdentifier: String, requestedClass: AnyClass) throws -> Any
+```
+
+```objc
++ (id) objectWithItemProviderData:(NSData *) data typeIdentifier:(NSString *) typeIdentifier requestedClass:(Class) requestedClass error:(NSError **) outError;
 ```
 
 

@@ -1,7 +1,8 @@
 # offUp
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an effect requesting the Off-Up variant of the Replace animation.
 

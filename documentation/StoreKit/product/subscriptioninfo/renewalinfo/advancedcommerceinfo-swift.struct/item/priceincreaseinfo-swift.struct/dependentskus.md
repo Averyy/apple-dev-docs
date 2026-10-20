@@ -1,7 +1,8 @@
 # dependentSKUs
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of one or more SKUs on which the current subscription offer depends.
 
@@ -28,9 +29,10 @@ You can provide a list of SKUs and create a contingency scenario in which a pers
 
 ## See Also
 
-- [let price: Decimal](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/price.md)
+### Information about a price increase
+- [let price: Decimal](./price.md)
   The cost of the price increase in the location-specific currency.
-- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.property.md)
+- [let status: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./status-swift.property.md)
   The status of the price increase.
 
 

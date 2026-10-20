@@ -1,6 +1,7 @@
 # Analyzing Apple GPU performance with performance heat maps
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Gain insights to SIMD group performance by inspecting source code execution.
 
@@ -10,11 +11,11 @@ Metal organizes the threads of your shader into single-instruction, multiple-dat
 
 > ❗ **Important**: The performance heat maps feature is available for iOS devices with A17 Pro or later, and Mac computers with M3 or later.
 
-##### View the Performance Heat Maps
+##### View the performance heat maps
 
 To open the performance heat maps, click the Performance button in the Metal debugger’s Debug navigator, and then click the Heat Map tab above the Performance timeline.
 
-![A screenshot of the Metal debugger’s performance heat maps.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap@2x.png)
+![A screenshot of the Metal debugger’s performance heat maps.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap@2x.png)
 
 When you select an encoder, pipeline state, or GPU command in the Timeline navigator, the heat maps for the corresponding work appear on the right.
 
@@ -31,19 +32,19 @@ In addition, performance heat maps are available for the following shader types:
 
 > **Note**: For compute, object, and mesh shaders, when the maximum compute thread location in the x-axis or y-axis exceeds 8192, each pixel in the heat map represents a SIMD group instead of a thread.
 
-##### Switch Between Shader Types
+##### Switch between shader types
 
 By default, selecting a render command encoder, a render pipeline state, or a draw command shows the fragment shader heat maps. Selecting a compute dispatch command shows the compute shader heat maps.
 
 You can switch between different shader types using the Vertex and Fragment tabs above the heat maps.
 
-##### Display More Types of Performance Heat Maps
+##### Display more types of performance heat maps
 
 By default, the Shader Execution Cost heat map and the Attachments display for render command encoders, pipeline states, and draws.
 
 Click the Add button (+) in the heat map control bar to open a popover of all available performance heat maps. You can customize which heat maps to display by selecting the checkboxes.
 
-![A screenshot of the popover menu that displays heat map options after clicking the Add button on the heat map control bar. The Shader Execution Cost and Overdraw options are selected.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-add-heatmap@2x.png)
+![A screenshot of the popover menu that displays heat map options after clicking the Add button on the heat map control bar. The Shader Execution Cost and Overdraw options are selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-add-heatmap@2x.png)
 
 Available performance heat map options include the following:
 
@@ -62,33 +63,33 @@ Available performance heat map options include the following:
 
 The color intensity in the heat maps represents the significance of the values. For example, red means *more expensive* in the Shader Execution Cost heat map, and *more divergent* in the Thread Divergence heat map.
 
-##### View and Adjust the Value Range of Performance Heat Maps
+##### View and adjust the value range of performance heat maps
 
 You can filter and tone-map a performance heat map by clicking the Histogram button in the title bar.
 
-![A screenshot showing the Histogram popover that appears after clicking the Histogram button on the heat map’s title bar.](/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-histogram@2x.png)
+![A screenshot showing the Histogram popover that appears after clicking the Histogram button on the heat map’s title bar.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-essentials-heatmap-histogram@2x.png)
 
 The histogram popover shows the value range of the heat map. You can drag the handles to adjust the range to filter smaller and larger values. This can be useful in situations when you want a certain value range, such as showing pixels in a render pass that executes more than 100 instructions.
 
-##### Inspect the Execution History for a Simd Group
+##### Inspect the execution history for a SIMD group
 
 Selecting a pixel in the heat map allows you to inspect the underlying SIMD group.
 
 If more than one SIMD group touches the pixel in a render pass, a list of SIMD groups in order of cost percentile appears so you can select the one to inspect. When you select a SIMD group in the list, its execution history appears below the heat maps.
 
-![A screenshot showing the SIMD group execution history below the performance heat maps.](/images/com.apple.Xcode/gputools-metal-debugger-heatmap-execution-history@2x.png)
+![A screenshot showing the SIMD group execution history below the performance heat maps.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-heatmap-execution-history@2x.png)
 
 The Execution History timeline shows the progress of the selected SIMD group from left to right, and lists the full shader call stack at each point of execution from top to bottom.
 
 The Metal debugger also helps you better understand shader execution by detecting and visualizing loops in the shader instruction stream. You can select a node in the timeline, and the source editor jumps to the file and the line that contain the executed instructions of that node.
 
-##### Understand the Number of Instructions Per Line
+##### Understand the number of instructions per line
 
 The number of executed instructions appears next to the lines of code, in the gutter of the shader source code. This number is the total assembly code executions over the lifetime of the entire SIMD group for that line of code.
 
 For example, if there’s a loop with 10 iterations, the number of instructions for the source lines within the loop is 10 times more than the source lines outside the loop, given the same amount of assembly code.
 
-##### Switch Between Per Line Statistics Modes
+##### Switch between per-line statistics modes
 
 In the shader source code control bar, you can choose different modes for the per-line shader profiling statistics in the gutter. Options include the following:
 
@@ -99,23 +100,24 @@ In the shader source code control bar, you can choose different modes for the pe
 
 You may find thread divergence to be 50% if there’s a conditional branch that only half of the threads enter within the selected SIMD group.
 
-For more information about the Metal profiling tools for M3 and A17 Pro, see [`Discover new Metal profiling tools for M3 and A17 Pro`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/111374/).
+For more information about the Metal profiling tools for M3 and A17 Pro, see [Discover new Metal profiling tools for M3 and A17 Pro](https://developer.apple.com/videos/play/tech-talks/111374/).
 
 ## See Also
 
-- [Analyzing your Metal workload](analyzing-your-metal-workload.md)
+### Metal workload analysis
+- [Analyzing your Metal workload](./analyzing-your-metal-workload.md)
   Investigate your app’s workload, dependencies, performance, and memory impact using the Metal debugger.
-- [Analyzing resource dependencies](analyzing-resource-dependencies.md)
+- [Analyzing resource dependencies](./analyzing-resource-dependencies.md)
   Avoid unnecessary work in your Metal app by understanding the relationships between resources.
-- [Analyzing memory usage](analyzing-memory-usage.md)
+- [Analyzing memory usage](./analyzing-memory-usage.md)
   Manage your Metal app’s memory usage by inspecting its resources.
-- [Analyzing Apple GPU performance using a visual timeline](analyzing-apple-gpu-performance-using-a-visual-timeline.md)
+- [Analyzing Apple GPU performance using a visual timeline](./analyzing-apple-gpu-performance-using-a-visual-timeline.md)
   Locate performance issues using the Performance timeline.
-- [Analyzing Apple GPU performance using counter statistics](analyzing-apple-gpu-performance-using-counter-statistics.md)
+- [Analyzing Apple GPU performance using counter statistics](./analyzing-apple-gpu-performance-using-counter-statistics.md)
   Optimize performance by examining counters for individual passes and commands.
-- [Analyzing Apple GPU performance using the shader cost graph](analyzing-apple-gpu-performance-using-shader-cost-graph-a17-m3.md)
+- [Analyzing Apple GPU performance using the shader cost graph](./analyzing-apple-gpu-performance-using-shader-cost-graph-a17-m3.md)
   Discover potential shader performance issues by examining pipeline states.
-- [Analyzing non-Apple GPU performance using counter statistics](analyzing-non-apple-gpu-performance-using-counter-statistics.md)
+- [Analyzing non-Apple GPU performance using counter statistics](./analyzing-non-apple-gpu-performance-using-counter-statistics.md)
   Optimize performance by examining counters for individual passes and commands.
 
 

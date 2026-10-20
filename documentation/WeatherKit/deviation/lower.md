@@ -1,7 +1,8 @@
 # Deviation.lower
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The most recently observed value is lower than the value it is being compared against.
 

@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.PINToken
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A secure PIN token that you receive from your participating payment service provider.
 
@@ -18,7 +19,7 @@ struct PINToken
 
 ## Mentions
 
-- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
+- [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
 #### Overview
 
@@ -27,24 +28,25 @@ When the payment card issuer requests the PIN during a transaction, your partici
 ## Topics
 
 ### Creating a token
-- [init(rawValue: String)](paymentcardreadersession/pintoken/init(rawvalue:).md)
+- [init(rawValue: String)](./pintoken/init%28rawvalue%29.md)
   Creates a token with the string your payment service provider gave you.
 ### Getting the token value
-- [let rawValue: String](paymentcardreadersession/pintoken/rawvalue.md)
+- [let rawValue: String](./pintoken/rawvalue.md)
   The raw token string from your payment service provider.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func capturePIN(using: PaymentCardReaderSession.PINToken, cardReaderTransactionID: String) async throws -> PaymentCardReadResult](paymentcardreadersession/capturepin(using:cardreadertransactionid:).md)
+### Requesting the PIN
+- [func capturePIN(using: PaymentCardReaderSession.PINToken, cardReaderTransactionID: String) async throws -> PaymentCardReadResult](./capturepin%28using,cardreadertransactionid%29.md)
   Presents a sheet to capture the PIN when required by the payment card issuer, and returns the previously encrypted card data including newly captured PIN data.
 
 

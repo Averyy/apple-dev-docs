@@ -1,21 +1,26 @@
 # UIEvent.EventType.remoteControl
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event is a remote-control event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case remoteControl
+```
+
+```c
+UIEventTypeRemoteControl
 ```
 
 #### Discussion
@@ -24,17 +29,18 @@ Remote-control events originate as commands received from a headset or external 
 
 ## See Also
 
-- [UIEvent.EventType.touches](uievent/eventtype/touches.md)
+### Constants
+- [UIEvent.EventType.touches](./touches.md)
   The event relates to touches on the screen.
-- [UIEvent.EventType.motion](uievent/eventtype/motion.md)
+- [UIEvent.EventType.motion](./motion.md)
   The event relates to motion of the device, such as when a person shakes it.
-- [UIEvent.EventType.presses](uievent/eventtype/presses.md)
+- [UIEvent.EventType.presses](./presses.md)
   The event relates to the press of a physical button.
-- [UIEvent.EventType.scroll](uievent/eventtype/scroll.md)
+- [UIEvent.EventType.scroll](./scroll.md)
   The event relates to scrolling from an indirect input device.
-- [UIEvent.EventType.hover](uievent/eventtype/hover.md)
+- [UIEvent.EventType.hover](./hover.md)
   The event relates to a pointer from an indirect input device moving over a user interface element.
-- [UIEvent.EventType.transform](uievent/eventtype/transform.md)
+- [UIEvent.EventType.transform](./transform.md)
   The event relates to a pointer from an indirect input device performing a transformation on a user interface element, such as scaling, rotation, or translation.
 
 

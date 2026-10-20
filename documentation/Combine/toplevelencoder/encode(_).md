@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes an instance of the indicated type.

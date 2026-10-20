@@ -1,7 +1,8 @@
 # textureIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The slot index within the argument table’s texture array.
 
@@ -19,7 +20,8 @@ var textureIndex: Int { get set }
 
 ## See Also
 
-- [var metalType: MTLTextureType](lowlevelmaterialparametermapping/textureparameter/metaltype.md)
+### Accessing texture parameters
+- [var metalType: MTLTextureType](./metaltype.md)
   The expected Metal texture type.
 
 

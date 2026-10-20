@@ -1,18 +1,19 @@
 # wait(timeout:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Waits synchronously for the previously submitted work to complete, and returns if the work is not completed before the specified timeout period has elapsed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -30,9 +31,10 @@ A result value indicating whether the method returned due to a timeout.
 
 ## See Also
 
-- [func wait()](dispatchgroup/wait.md)
+### Waiting for Tasks to Finish Executing
+- [func wait()](./wait%28%29.md)
   Waits synchronously for the previously submitted work to finish.
-- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](dispatchgroup/wait(walltimeout:).md)
+- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](./wait%28walltimeout%29.md)
   Waits synchronously for the previously submitted work to complete, and returns if the work is not completed before the specified timeout period has elapsed.
 
 

@@ -1,18 +1,19 @@
 # option
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Option key in a combination keystroke.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,17 +22,22 @@ The Option key in a combination keystroke.
 static var option: XCUIElement.KeyModifierFlags { get }
 ```
 
+```c
+XCUIKeyModifierOption
+```
+
 ## See Also
 
-- [static var command: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/command.md)
+### Flags for combination keys
+- [static var command: XCUIElement.KeyModifierFlags](./command.md)
   The Command key in a combination keystroke.
-- [static var control: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/control.md)
+- [static var control: XCUIElement.KeyModifierFlags](./control.md)
   The Control key in a combination keystroke.
-- [static var shift: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/shift.md)
+- [static var shift: XCUIElement.KeyModifierFlags](./shift.md)
   The Shift key in a combination keystroke.
-- [static var capsLock: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/capslock.md)
+- [static var capsLock: XCUIElement.KeyModifierFlags](./capslock.md)
   The Caps Lock key in a combination keystroke.
-- [static var function: XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags/function.md)
+- [static var function: XCUIElement.KeyModifierFlags](./function.md)
   The Function key in a combination keystroke.
 
 

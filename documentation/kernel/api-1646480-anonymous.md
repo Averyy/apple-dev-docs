@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSIPort_StatusFailure](1646480-anonymous/kscsiport_statusfailure.md)
-- [kSCSIPort_StatusOffline](1646480-anonymous/kscsiport_statusoffline.md)
-- [kSCSIPort_StatusOnline](1646480-anonymous/kscsiport_statusonline.md)
+- [kSCSIPort_StatusFailure](./api-1646480-anonymous/kscsiport_statusfailure.md)
+- [kSCSIPort_StatusOffline](./api-1646480-anonymous/kscsiport_statusoffline.md)
+- [kSCSIPort_StatusOnline](./api-1646480-anonymous/kscsiport_statusonline.md)
 
 
 ---

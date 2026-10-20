@@ -1,7 +1,8 @@
 # transposed()
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new transposed shaped array
 
@@ -20,6 +21,8 @@ Returns a new transposed shaped array
 func transposed() -> MLShapedArraySlice<Scalar>
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
+
 #### Discussion
 
 This is equivalent to `transposed(permutation:)` where `permutation:` parameter is `[shape.count-1, shape.count-2, ..., 0]`, which reverses the shape.
@@ -32,15 +35,16 @@ transposed.shape // [3, 2, 1]
 
 ## See Also
 
-- [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/changinglayout(to:).md)
+### Shaping the array slice
+- [func changingLayout(to: MLShapedArrayBufferLayout) -> MLShapedArraySlice<Scalar>](./changinglayout%28to%29.md)
   Returns a copy with the specified buffer layout.
-- [func expandingShape(at: Int) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/expandingshape(at:).md)
+- [func expandingShape(at: Int) -> MLShapedArraySlice<Scalar>](./expandingshape%28at%29.md)
   Returns a new shaped array with expanded dimensions
-- [func reshaped(to: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/reshaped(to:).md)
+- [func reshaped(to: [Int]) -> MLShapedArraySlice<Scalar>](./reshaped%28to%29.md)
   Returns a new reshaped shaped array.
-- [func squeezingShape() -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/squeezingshape.md)
+- [func squeezingShape() -> MLShapedArraySlice<Scalar>](./squeezingshape%28%29.md)
   Returns a new squeezed shaped array.
-- [func transposed(permutation: [Int]) -> MLShapedArraySlice<Scalar>](mlshapedarrayslice/transposed(permutation:).md)
+- [func transposed(permutation: [Int]) -> MLShapedArraySlice<Scalar>](./transposed%28permutation%29.md)
   Returns a new transposed shaped array using a custom permutation.
 
 

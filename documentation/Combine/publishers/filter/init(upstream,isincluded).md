@@ -1,7 +1,8 @@
 # init(upstream:isIncluded:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that republishes all elements that match a provided closure.
 

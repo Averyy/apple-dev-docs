@@ -1,7 +1,8 @@
 # .>(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds an element-wise greater than comparison operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise greater than comparison operation to the current graph.
 ```swift
 static func .> (lhs: BNNSGraph.Builder.Tensor<T>, rhs: BNNSGraph.Builder.Tensor<T>) -> BNNSGraph.Builder.Tensor<Bool>
 ```
+
+Available when `T` conforms to `BNNSScalar` and `BNNSGraph.Builder.OperationParameter`.
 
 
 ---

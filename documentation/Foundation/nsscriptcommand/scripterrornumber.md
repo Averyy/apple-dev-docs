@@ -1,7 +1,8 @@
 # scriptErrorNumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets a script error number that is associated with the execution of the command and is returned in the reply Apple event, if a reply was requested by the sender.
 
@@ -15,11 +16,15 @@ Sets a script error number that is associated with the execution of the command 
 var scriptErrorNumber: Int { get set }
 ```
 
+```objc
+@property NSInteger scriptErrorNumber;
+```
+
 #### Discussion
 
-If you override [`performDefaultImplementation()`](nsscriptcommand/performdefaultimplementation().md) and an error occurs, you should call this method to supply an appropriate error number. In fact, any script handler should call this method when an error occurs. The error number you supply is returned in the reply Apple event.
+If you override [`performDefaultImplementation()`](./performdefaultimplementation%28%29.md) and an error occurs, you should call this method to supply an appropriate error number. In fact, any script handler should call this method when an error occurs. The error number you supply is returned in the reply Apple event.
 
-Invoking `setScriptErrorNumber:` causes an error message to be displayed. To associate a specific error message with the error number, you invoke [`scriptErrorString`](nsscriptcommand/scripterrorstring.md). This make sense, for example, when you set an error number that is specific to your application, or when you can supply a specific and useful error message to the user.
+Invoking `setScriptErrorNumber:` causes an error message to be displayed. To associate a specific error message with the error number, you invoke [`scriptErrorString`](./scripterrorstring.md). This make sense, for example, when you set an error number that is specific to your application, or when you can supply a specific and useful error message to the user.
 
 If `setScriptErrorNumber:` is invoked on an `NSScriptCommand` with multiple receivers, the command will stop sending command handling messages to more receivers.
 
@@ -29,11 +34,12 @@ If `setScriptErrorNumber:` is invoked on an `NSScriptCommand` with multiple rece
 
 ## See Also
 
-- [var scriptErrorExpectedTypeDescriptor: NSAppleEventDescriptor?](nsscriptcommand/scripterrorexpectedtypedescriptor.md)
+### Handling script execution errors
+- [var scriptErrorExpectedTypeDescriptor: NSAppleEventDescriptor?](./scripterrorexpectedtypedescriptor.md)
   Sets a descriptor for the expected type that will be put in the reply Apple event if the sender requested a reply, execution of the receiver completes, and an error number was set.
-- [var scriptErrorOffendingObjectDescriptor: NSAppleEventDescriptor?](nsscriptcommand/scripterroroffendingobjectdescriptor.md)
+- [var scriptErrorOffendingObjectDescriptor: NSAppleEventDescriptor?](./scripterroroffendingobjectdescriptor.md)
   Sets a descriptor for an object that will be put in the reply Apple event if the sender requested a reply, execution of the receiver completes, and an error number was set.
-- [var scriptErrorString: String?](nsscriptcommand/scripterrorstring.md)
+- [var scriptErrorString: String?](./scripterrorstring.md)
   Sets a script error string that is associated with execution of the command.
 
 

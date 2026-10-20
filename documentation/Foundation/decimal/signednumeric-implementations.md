@@ -1,11 +1,12 @@
 # SignedNumeric Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func negate()](decimal/negate.md)
+- [func negate()](./negate%28%29.md)
   Negates this decimal.
 
 

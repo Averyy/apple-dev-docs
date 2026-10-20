@@ -1,7 +1,8 @@
 # AXObserverGetTypeID()
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique type identifier for the AXObserverRef type.
 
@@ -14,21 +15,26 @@ Returns the unique type identifier for the AXObserverRef type.
 func AXObserverGetTypeID() -> CFTypeID
 ```
 
-#### Return_value
+```c
+CFTypeID AXObserverGetTypeID(void);
+```
+
+#### Return Value
 
 Returns the CFTypeID of the AXObserverRef type.
 
 ## See Also
 
-- [func AXObserverAddNotification(AXObserver, AXUIElement, CFString, UnsafeMutableRawPointer?) -> AXError](1462089-axobserveraddnotification.md)
+### Notification API
+- [func AXObserverAddNotification(AXObserver, AXUIElement, CFString, UnsafeMutableRawPointer?) -> AXError](./api-1462089-axobserveraddnotification.md)
   Registers the specified observer to receive notifications from the specified accessibility object.
-- [func AXObserverCreate(pid_t, AXObserverCallback, UnsafeMutablePointer<AXObserver?>) -> AXError](1460133-axobservercreate.md)
+- [func AXObserverCreate(pid_t, AXObserverCallback, UnsafeMutablePointer<AXObserver?>) -> AXError](./api-1460133-axobservercreate.md)
   Creates a new observer that can receive notifications from the specified application.
-- [func AXObserverCreateWithInfoCallback(pid_t, AXObserverCallbackWithInfo, UnsafeMutablePointer<AXObserver?>) -> AXError](1460610-axobservercreatewithinfocallback.md)
+- [func AXObserverCreateWithInfoCallback(pid_t, AXObserverCallbackWithInfo, UnsafeMutablePointer<AXObserver?>) -> AXError](./api-1460610-axobservercreatewithinfocallback.md)
   Creates a new observer that can receive notifications with an information dictionary from the specified application.
-- [func AXObserverGetRunLoopSource(AXObserver) -> CFRunLoopSource](1459139-axobservergetrunloopsource.md)
+- [func AXObserverGetRunLoopSource(AXObserver) -> CFRunLoopSource](./api-1459139-axobservergetrunloopsource.md)
   Returns the observer's run loop source.
-- [func AXObserverRemoveNotification(AXObserver, AXUIElement, CFString) -> AXError](1462066-axobserverremovenotification.md)
+- [func AXObserverRemoveNotification(AXObserver, AXUIElement, CFString) -> AXError](./api-1462066-axobserverremovenotification.md)
   Removes the specified notification from the list of notifications the observer wants to receive from the accessibility object.
 
 

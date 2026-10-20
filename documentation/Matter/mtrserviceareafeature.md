@@ -1,7 +1,8 @@
 # MTRServiceAreaFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,26 +19,30 @@
 struct MTRServiceAreaFeature
 ```
 
+```c
+enum MTRServiceAreaFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtrserviceareafeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtrserviceareafeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var maps: MTRServiceAreaFeature](mtrserviceareafeature/maps.md)
-- [static var progressReporting: MTRServiceAreaFeature](mtrserviceareafeature/progressreporting.md)
-- [static var selectWhileRunning: MTRServiceAreaFeature](mtrserviceareafeature/selectwhilerunning.md)
+- [static var maps: MTRServiceAreaFeature](./mtrserviceareafeature/maps.md)
+- [static var progressReporting: MTRServiceAreaFeature](./mtrserviceareafeature/progressreporting.md)
+- [static var selectWhileRunning: MTRServiceAreaFeature](./mtrserviceareafeature/selectwhilerunning.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

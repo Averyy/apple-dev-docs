@@ -1,7 +1,8 @@
 # init(points:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -19,7 +20,8 @@ init(points: (vector_float3, vector_float3, vector_float3))
 
 ## See Also
 
-- [init()](gktriangle/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NEHotspotConfigurationErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain string for errors involving hotspot configuration.
 
@@ -18,9 +19,14 @@ The domain string for errors involving hotspot configuration.
 let NEHotspotConfigurationErrorDomain: String
 ```
 
+```c
+extern NSString * const NEHotspotConfigurationErrorDomain;
+```
+
 ## See Also
 
-- [enum NEHotspotConfigurationError](nehotspotconfigurationerror.md)
+### Errors
+- [enum NEHotspotConfigurationError](./nehotspotconfigurationerror.md)
   Error values returned by hotspot configuration manager methods.
 
 

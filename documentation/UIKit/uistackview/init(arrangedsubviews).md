@@ -1,7 +1,8 @@
 # init(arrangedSubviews:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new stack view object that manages the provided views.
 
@@ -18,13 +19,17 @@ Returns a new stack view object that manages the provided views.
 convenience init(arrangedSubviews views: [UIView])
 ```
 
+```objc
+- (instancetype) initWithArrangedSubviews:(NSArray<__kindof UIView *> *) views;
+```
+
 #### Return Value
 
 A new stack view object. This stack view contains and lays out the provided views in a single stack. You can modify the orientation or appearance of this stack, using the stack view’s properties.
 
 #### Discussion
 
-The stack view adds all the arranged views to its [`arrangedSubviews`](uistackview/arrangedsubviews.md) array. It also adds these views as subviews. If any view contained in the `arrangedSubviews` array receives a [`removeFromSuperview()`](uiview/removefromsuperview().md) method call, the stack view also removes it from the `arrangedSubviews`.
+The stack view adds all the arranged views to its [`arrangedSubviews`](./arrangedsubviews.md) array. It also adds these views as subviews. If any view contained in the `arrangedSubviews` array receives a [`removeFromSuperview()`](../uiview/removefromsuperview%28%29.md) method call, the stack view also removes it from the `arrangedSubviews`.
 
 ## Parameters
 
@@ -32,19 +37,21 @@ The stack view adds all the arranged views to its [`arrangedSubviews`](uistackvi
 
 ## See Also
 
-- [func insertArrangedSubview(UIView, at: Int)](uistackview/insertarrangedsubview(_:at:).md)
+### Related Documentation
+- [func insertArrangedSubview(UIView, at: Int)](./insertarrangedsubview%28_,at%29.md)
   Adds the provided view to the array of arranged subviews at the specified index.
-- [func removeFromSuperview()](uiview/removefromsuperview.md)
+- [func removeFromSuperview()](../uiview/removefromsuperview%28%29.md)
   Unlinks the view from its superview and its window, and removes it from the responder chain.
-- [var arrangedSubviews: [UIView]](uistackview/arrangedsubviews.md)
+- [var arrangedSubviews: [UIView]](./arrangedsubviews.md)
   The list of views arranged by the stack view.
-- [func addArrangedSubview(UIView)](uistackview/addarrangedsubview(_:).md)
+- [func addArrangedSubview(UIView)](./addarrangedsubview%28_%29.md)
   Adds a view to the end of the arranged subviews array.
-- [func removeArrangedSubview(UIView)](uistackview/removearrangedsubview(_:).md)
+- [func removeArrangedSubview(UIView)](./removearrangedsubview%28_%29.md)
   Removes the provided view from the stack’s array of arranged subviews.
-- [init(frame: CGRect)](uistackview/init(frame:).md)
+### Initializing a stack view
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a stack view with the specified frame.
-- [init(coder: NSCoder)](uistackview/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a stack view from data in an unarchiver.
 
 

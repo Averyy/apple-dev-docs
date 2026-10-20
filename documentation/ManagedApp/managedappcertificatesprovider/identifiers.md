@@ -1,7 +1,8 @@
 # identifiers
 
 **Framework**: ManagedApp  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of arrays of certificate identifiers provided by the MDM server.
 
@@ -19,7 +20,7 @@ var identifiers: some AsyncSequence<Array<String>, Never> { get async }
 
 #### Discussion
 
-Use [`certificate(withIdentifier:)`](managedappcertificatesprovider/certificate(withidentifier:).md) to look up an identifier to obtain the associated certificate. The sequence yields an array of identifiers when:
+Use [`certificate(withIdentifier:)`](./certificate%28withidentifier%29.md) to look up an identifier to obtain the associated certificate. The sequence yields an array of identifiers when:
 
 - You begin iterating this property using `for await`.
 - The list of certificate identifiers changes.

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initiailizes an instance of a document part ID.
 
@@ -9,7 +10,7 @@ Initiailizes an instance of a document part ID.
 - iOS 17.5+
 - iPadOS 17.5+
 - Mac Catalyst 17.5+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

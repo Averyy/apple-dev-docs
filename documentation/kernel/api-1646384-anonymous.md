@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBLowLatencyIsochTransferKey](1646384-anonymous/kusblowlatencyisochtransferkey.md)
+- [kUSBLowLatencyIsochTransferKey](./api-1646384-anonymous/kusblowlatencyisochtransferkey.md)
 
 
 ---

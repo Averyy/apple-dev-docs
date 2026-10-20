@@ -1,6 +1,7 @@
 # Including extension-based UI in your interface
 
-**Framework**: ExtensionKit
+**Framework**: ExtensionKit  
+**Role**: Article
 
 Build app extensions that provide a custom UI, and host those views in your app’s interface.
 
@@ -8,11 +9,11 @@ Build app extensions that provide a custom UI, and host those views in your app�
 
 When adding support for app extensions, you can configure one of your app’s extension points to support a custom UI. You might choose this option when the app extension needs to manage the presented content. For example, an image-editing app might let app extensions present their own UI to configure custom image modifications.
 
-To support app extensions with custom UI, both the app and app extensions must adopt the [`ExtensionKit`](ExtensionKit.md) framework. To display the app extension’s UI, the host app presents a view controller from its interface. The app extension provides the content for that view controller, delivering it the host app with the framework’s help.
+To support app extensions with custom UI, both the app and app extensions must adopt the [ExtensionKit](./ExtensionKit.md) framework. To display the app extension’s UI, the host app presents a view controller from its interface. The app extension provides the content for that view controller, delivering it the host app with the framework’s help.
 
-##### Add the User Interface Attribute to Your Extension Point
+##### Add the user interface attribute to your extension point
 
-To display custom UI from app extensions, the host app’s extension point must include the [`AppExtensionPoint.UserInterface`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/userinterface) attribute in its extension point definition. When this attribute is present and has a value of `true`, the host app can incorporate custom UI from its app extensions. The following example shows an extension point definition that includes this attribute:
+To display custom UI from app extensions, the host app’s extension point must include the [`AppExtensionPoint.UserInterface`](../ExtensionFoundation/appextensionpoint/userinterface.md) attribute in its extension point definition. When this attribute is present and has a value of `true`, the host app can incorporate custom UI from its app extensions. The following example shows an extension point definition that includes this attribute:
 
 ```swift
 extension AppExtensionPoint {
@@ -28,14 +29,14 @@ extension AppExtensionPoint {
 
 In an app extension, the binding declaration you create remains the same whether or not you’re providing custom UI. You’re expected to know whether the extension point requires a custom UI. If you’re creating an app extension for another app, the app’s SDK needs to specify this information.
 
-##### Display a Host View Controller From Your Apps Interface
+##### Display a host view controller from your app’s interface
 
 You’re responsible for deciding how best to integrate UI from app extensions into your host app. You might incorporate this content in a separate window, as part of an inspector, in a settings panel, or in other ways.
 
-To display the UI for an app extension, add an [`EXHostViewController`](exhostviewcontroller.md) to your app’s interface.
-App extensions can provide multiple scenes of content, but the host view controller displays only one of those scenes at a time. When configuring the view controller, specify the identity of the app extension and a string with the name of the scene you want to display in the view controller’s [`configuration`](exhostviewcontroller/configuration-swift.property.md) property. The app extension uses the scene name to deliver the correct set of views to your app. To display a different scene, change the configuration details or display a new host view controller.
+To display the UI for an app extension, add an [`EXHostViewController`](./exhostviewcontroller.md) to your app’s interface.
+App extensions can provide multiple scenes of content, but the host view controller displays only one of those scenes at a time. When configuring the view controller, specify the identity of the app extension and a string with the name of the scene you want to display in the view controller’s [`configuration`](./exhostviewcontroller/configuration-swift.property.md) property. The app extension uses the scene name to deliver the correct set of views to your app. To display a different scene, change the configuration details or display a new host view controller.
 
-When building your interface with SwiftUI, wrap the [`EXHostViewController`](exhostviewcontroller.md) in a representable type for the corresponding platform. The [`UIViewControllerRepresentable`](https://developer.apple.com/documentation/swiftui/uiviewcontrollerrepresentable) and [`NSViewControllerRepresentable`](https://developer.apple.com/documentation/swiftui/nsviewcontrollerrepresentable) protocols give you a way to create a SwiftUI view using content from a UIKit or AppKit view controller. The following example shows a SwiftUI view for macOS that wraps the [`EXHostViewController`](exhostviewcontroller.md) type. The view stores the scene name and app extension identity as local variables, which it uses to configure the view controller.
+When building your interface with SwiftUI, wrap the [`EXHostViewController`](./exhostviewcontroller.md) in a representable type for the corresponding platform. The [`UIViewControllerRepresentable`](../SwiftUI/uiviewcontrollerrepresentable.md) and [`NSViewControllerRepresentable`](../SwiftUI/nsviewcontrollerrepresentable.md) protocols give you a way to create a SwiftUI view using content from a UIKit or AppKit view controller. The following example shows a SwiftUI view for macOS that wraps the [`EXHostViewController`](./exhostviewcontroller.md) type. The view stores the scene name and app extension identity as local variables, which it uses to configure the view controller.
 
 ```swift
 struct ExtensionView: NSViewControllerRepresentable {
@@ -57,7 +58,7 @@ struct ExtensionView: NSViewControllerRepresentable {
 }
 ```
 
-When you display an [`EXHostViewController`](exhostviewcontroller.md) in your app’s interface, either directly or as part of a SwiftUI view, the view controller loads the relevant views from the app extension. Treat the view controller’s content as opaque, and focus on where in your UI you want to display it. The following example displays the UI from one or more app extensions using the custom `ExtensionView` type from the previous example. The custom `viewModel` object locates the available app extensions using an [`AppExtensionPoint.Monitor`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/monitor) type.
+When you display an [`EXHostViewController`](./exhostviewcontroller.md) in your app’s interface, either directly or as part of a SwiftUI view, the view controller loads the relevant views from the app extension. Treat the view controller’s content as opaque, and focus on where in your UI you want to display it. The following example displays the UI from one or more app extensions using the custom `ExtensionView` type from the previous example. The custom `viewModel` object locates the available app extensions using an [`AppExtensionPoint.Monitor`](../ExtensionFoundation/appextensionpoint/monitor.md) type.
 
 ```swift
 struct ContentView: View {
@@ -86,11 +87,11 @@ struct ContentView: View {
 }
 ```
 
-For information about how to get the list of app extension identities using a monitor, see [`Discovering app extensions from your app`](https://developer.apple.com/documentation/extensionfoundation/discovering-app-extensions-from-your-app).
+For information about how to get the list of app extension identities using a monitor, see [Discovering app extensions from your app](../ExtensionFoundation/discovering-app-extensions-from-your-app.md).
 
-##### Create the Initial Scene for Your App Extension
+##### Create the initial scene for your app extension
 
-To build an app extension with custom UI, create that UI using a special set of types from the [`ExtensionKit`](ExtensionKit.md) framework. The recommended way to create your custom views is with SwiftUI, and the framework provides SwiftUI scenes to incorporate into your app extension. When creating new app extensions, the Xcode templates provide the initial views you need to build your UI.
+To build an app extension with custom UI, create that UI using a special set of types from the [ExtensionKit](./ExtensionKit.md) framework. The recommended way to create your custom views is with SwiftUI, and the framework provides SwiftUI scenes to incorporate into your app extension. When creating new app extensions, the Xcode templates provide the initial views you need to build your UI.
 
 To create a new UI-based app extension:
 
@@ -101,13 +102,13 @@ To create a new UI-based app extension:
 5. Provide a name and specify other options for your app extension.
 6. Click Finish.
 
-The template code contains an initial code for you to modify. When starting from this template, make most of your changes in the custom [`AppExtension`](https://developer.apple.com/documentation/extensionfoundation/appextension) type:
+The template code contains an initial code for you to modify. When starting from this template, make most of your changes in the custom [`AppExtension`](../ExtensionFoundation/appextension.md) type:
 
 - Put your SwiftUI views in the closure for the scene in the `body` property.
-- Update the information in the [`AppExtensionPoint.Bind`](https://developer.apple.com/documentation/extensionfoundation/appextensionpoint/bind). Specify the name of the host app and the specific extension point you’re supporting.
+- Update the information in the [extension point binding](../ExtensionFoundation/appextensionpoint/bind.md). Specify the name of the host app and the specific extension point you’re supporting.
 - Add any custom initialization code to the `init()` method.
 
-The template’s `ExampleScene` type provides a concrete implementation of a scene that you can use without modification. This scene delivers your SwiftUI views to the host app using a [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) structure. To display the correct scene, make sure the string you passed to the initializer of this structure matches the scene the host app requests. In the example code, specify the scene name using the `sceneID` property, as shown in the following example:
+The template’s `ExampleScene` type provides a concrete implementation of a scene that you can use without modification. This scene delivers your SwiftUI views to the host app using a [`PrimitiveAppExtensionScene`](./primitiveappextensionscene.md) structure. To display the correct scene, make sure the string you passed to the initializer of this structure matches the scene the host app requests. In the example code, specify the scene name using the `sceneID` property, as shown in the following example:
 
 ```swift
 struct ExampleScene<Content: View>: ExampleAppExtensionScene {
@@ -131,7 +132,7 @@ struct ExampleScene<Content: View>: ExampleAppExtensionScene {
 }
 ```
 
-If your app extension offers multiple scenes, create a separate [`AppExtensionScene`](appextensionscene.md) type for each unique scene you display. If you’re starting from the Xcode template, duplicate the `ExampleScene` type and update the type name and scene ID information. To make each new scene type available, update the `body` property of the [`AppExtension`](https://developer.apple.com/documentation/extensionfoundation/appextension) subclass, as shown in the example below. When the host app requests a scene, [`ExtensionKit`](ExtensionKit.md) determines which scene contains a [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) with the matching scene ID and returns its content.
+If your app extension offers multiple scenes, create a separate [`AppExtensionScene`](./appextensionscene.md) type for each unique scene you display. If you’re starting from the Xcode template, duplicate the `ExampleScene` type and update the type name and scene ID information. To make each new scene type available, update the `body` property of the [`AppExtension`](../ExtensionFoundation/appextension.md) subclass, as shown in the example below. When the host app requests a scene, [ExtensionKit](./ExtensionKit.md) determines which scene contains a [`PrimitiveAppExtensionScene`](./primitiveappextensionscene.md) with the matching scene ID and returns its content.
 
 ```swift
 @main
@@ -149,14 +150,14 @@ class MyExtension : ExampleExtension {
 }
 ```
 
-##### Handle Incoming Xpc Connection Requests
+##### Handle incoming XPC connection requests
 
-[`ExtensionKit`](ExtensionKit.md) handles interface-related updates between the app extension and host app, but the host app might still want to exchange data directly with the app extension. For example, a host app might need to send data to the app extension that’s unrelated to the UI. To facilitate this type of transfer, the host app has two options:
+[ExtensionKit](./ExtensionKit.md) handles interface-related updates between the app extension and host app, but the host app might still want to exchange data directly with the app extension. For example, a host app might need to send data to the app extension that’s unrelated to the UI. To facilitate this type of transfer, the host app has two options:
 
 - Configure an XPC connection that’s tied to a specific instance of the app extension’s UI.
 - Configure an XPC connection that’s global to the app extension.
 
-To communicate with a specific instance of the app extension’s UI, the host app makes an XPC connection using its [`EXHostViewController`](exhostviewcontroller.md) object. Calling the [`makeXPCConnection()`](exhostviewcontroller/makexpcconnection().md) method creates a connection to the [`PrimitiveAppExtensionScene`](primitiveappextensionscene.md) type in the app extension. Use the `onConnection` handler of that type to accept the XPC connection request and provide the host app with a proxy object, as shown in the following code:
+To communicate with a specific instance of the app extension’s UI, the host app makes an XPC connection using its [`EXHostViewController`](./exhostviewcontroller.md) object. Calling the [`makeXPCConnection()`](./exhostviewcontroller/makexpcconnection%28%29.md) method creates a connection to the [`PrimitiveAppExtensionScene`](./primitiveappextensionscene.md) type in the app extension. Use the `onConnection` handler of that type to accept the XPC connection request and provide the host app with a proxy object, as shown in the following code:
 
 ```swift
 public var body: some AppExtensionScene {
@@ -171,13 +172,13 @@ public var body: some AppExtensionScene {
 }
 ```
 
-To create a global connection that’s independent of a specific UI instance, the host app initiates the XPC connection from its [`AppExtensionProcess`](https://developer.apple.com/documentation/extensionfoundation/appextensionprocess) type. The app extension responds to connection requests using the [`accept(connection:)`](https://developer.apple.com/documentation/extensionfoundation/appextensionconfiguration/accept(connection:)) method in its [`AppExtensionConfiguration`](https://developer.apple.com/documentation/extensionfoundation/appextensionconfiguration) type. For information about setting up this connection, see [`Building an app extension to support a host app`](https://developer.apple.com/documentation/extensionfoundation/building-an-app-extension-to-support-a-host-app).
+To create a global connection that’s independent of a specific UI instance, the host app initiates the XPC connection from its [`AppExtensionProcess`](../ExtensionFoundation/appextensionprocess.md) type. The app extension responds to connection requests using the [`accept(connection:)`](../ExtensionFoundation/appextensionconfiguration/accept%28connection%29.md) method in its [`AppExtensionConfiguration`](../ExtensionFoundation/appextensionconfiguration.md) type. For information about setting up this connection, see [Building an app extension to support a host app](../ExtensionFoundation/building-an-app-extension-to-support-a-host-app.md).
 
-##### Respond to Activation and Deactivation Events
+##### Respond to activation and deactivation events
 
-Creating and presenting an [`EXHostViewController`](exhostviewcontroller.md) from your app doesn’t guarantee the appearance of an app extension’s UI. [`ExtensionKit`](ExtensionKit.md) might need to launch the app extension and get it running first, before the host app tries to create an XPC connection to it. Similarly, the app extension might exit unexpectedly or require the dismantling of its views for other reasons. The host view controller reports these changes to its associated delegate object.
+Creating and presenting an [`EXHostViewController`](./exhostviewcontroller.md) from your app doesn’t guarantee the appearance of an app extension’s UI. [ExtensionKit](./ExtensionKit.md) might need to launch the app extension and get it running first, before the host app tries to create an XPC connection to it. Similarly, the app extension might exit unexpectedly or require the dismantling of its views for other reasons. The host view controller reports these changes to its associated delegate object.
 
-When the app extension is ready to accept an XPC connection, the host view controller calls its delegate’s [`hostViewControllerDidActivate(_:)`](exhostviewcontrollerdelegate/hostviewcontrollerdidactivate(_:).md) method. Use this method to initiate the XPC connection and start communication with the app extension. Similarly, use the delegate’s [`hostViewControllerWillDeactivate(_:error:)`](exhostviewcontrollerdelegate/hostviewcontrollerwilldeactivate(_:error:).md) to close out the current connection and stop communicating with the app extension.
+When the app extension is ready to accept an XPC connection, the host view controller calls its delegate’s [`hostViewControllerDidActivate(_:)`](./exhostviewcontrollerdelegate/hostviewcontrollerdidactivate%28_%29.md) method. Use this method to initiate the XPC connection and start communication with the app extension. Similarly, use the delegate’s [`hostViewControllerWillDeactivate(_:error:)`](./exhostviewcontrollerdelegate/hostviewcontrollerwilldeactivate%28_,error%29.md) to close out the current connection and stop communicating with the app extension.
 
 
 ---

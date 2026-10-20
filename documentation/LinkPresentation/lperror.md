@@ -1,7 +1,8 @@
 # LPError
 
 **Framework**: Link Presentation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error returned by the LinkPresentation framework.
 
@@ -23,42 +24,43 @@ struct LPError
 ## Topics
 
 ### Error details
-- [var errorCode: Int](lperror/errorcode.md)
+- [var errorCode: Int](./lperror/errorcode.md)
   A code for the error.
-- [var errorUserInfo: [String : Any]](lperror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](./lperror/erroruserinfo.md)
 ### Error domain
-- [static var errorDomain: String](lperror/errordomain.md)
+- [static var errorDomain: String](./lperror/errordomain.md)
   The domain for the error.
-- [let LPErrorDomain: String](lperrordomain.md)
+- [let LPErrorDomain: String](./lperrordomain.md)
   The domain for Link Presentation errors.
 ### Error codes
-- [static var metadataFetchCancelled: LPError.Code](lperror/metadatafetchcancelled.md)
+- [static var metadataFetchCancelled: LPError.Code](./lperror/metadatafetchcancelled.md)
   An error indicating that the metadata fetch was canceled by the client.
-- [static var metadataFetchFailed: LPError.Code](lperror/metadatafetchfailed.md)
+- [static var metadataFetchFailed: LPError.Code](./lperror/metadatafetchfailed.md)
   An error indicating that a metadata fetch failed.
-- [static var metadataFetchTimedOut: LPError.Code](lperror/metadatafetchtimedout.md)
+- [static var metadataFetchTimedOut: LPError.Code](./lperror/metadatafetchtimedout.md)
   An error indicating that the metadata fetch took longer than allowed.
-- [static var unknown: LPError.Code](lperror/unknown.md)
-- [LPError.Code](lperror/code.md)
+- [static var unknown: LPError.Code](./lperror/unknown.md)
+- [LPError.Code](./lperror/code.md)
   Possible error values that can be returned from LinkPresentation APIs.
 ### Type Properties
-- [static var metadataFetchNotAllowed: LPError.Code](lperror/metadatafetchnotallowed.md)
+- [static var metadataFetchNotAllowed: LPError.Code](./lperror/metadatafetchnotallowed.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LPError.Code](lperror/code.md)
+### Errors
+- [LPError.Code](./lperror/code.md)
   Possible error values that can be returned from LinkPresentation APIs.
-- [let LPErrorDomain: String](lperrordomain.md)
+- [let LPErrorDomain: String](./lperrordomain.md)
   The domain for Link Presentation errors.
 
 

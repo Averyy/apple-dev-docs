@@ -1,13 +1,14 @@
 # group_id
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process group identifier.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The process group identifier.
 var group_id: pid_t
 ```
 
+```c
+pid_t group_id;
+```
+
 ## See Also
 
-- [var ppid: pid_t](es_process_t/ppid.md)
+### Inspecting Process IDs
+- [var ppid: pid_t](./ppid.md)
   The parent process identifier.
-- [var original_ppid: pid_t](es_process_t/original_ppid.md)
+- [var original_ppid: pid_t](./original_ppid.md)
   The original parent process ID.
-- [var session_id: pid_t](es_process_t/session_id.md)
+- [var session_id: pid_t](./session_id.md)
   The identifier of the session that contains the process group.
-- [var tty: UnsafeMutablePointer<es_file_t>?](es_process_t/tty.md)
+- [var tty: UnsafeMutablePointer<es_file_t>?](./tty.md)
   The TTY associated with the process sending the message.
 
 

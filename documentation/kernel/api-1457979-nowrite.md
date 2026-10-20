@@ -1,14 +1,15 @@
 # nowrite
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 int nowrite(void);
 ```
 

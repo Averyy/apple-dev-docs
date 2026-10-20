@@ -1,7 +1,8 @@
 # removeOverlay(overlay)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an overlay from the map.
 
@@ -10,7 +11,7 @@ Removes an overlay from the map.
 
 ## Declaration
 
-```swift
+```
 removeOverlay(overlay: Overlay): Overlay;
 ```
 
@@ -24,19 +25,20 @@ Returns the overlay.
 
 ## See Also
 
-- [overlays](map/overlays.md)
+### Adding and removing overlays
+- [overlays](./overlays.md)
   An array of all of the map’s overlays.
-- [selectedOverlay](map/selectedoverlay.md)
+- [selectedOverlay](./selectedoverlay.md)
   The selected overlay on the map.
-- [overlaysAtPoint(point)](map/overlaysatpoint.md)
+- [overlaysAtPoint(point)](./overlaysatpoint.md)
   Returns an array of overlays at a given point on the webpage.
-- [addOverlay(overlay)](map/addoverlay.md)
+- [addOverlay(overlay)](./addoverlay.md)
   Adds an overlay to the map.
-- [addOverlays(overlays)](map/addoverlays.md)
+- [addOverlays(overlays)](./addoverlays.md)
   Adds multiple overlays to the map.
-- [removeOverlays(overlays)](map/removeoverlays.md)
+- [removeOverlays(overlays)](./removeoverlays.md)
   Removes multiple overlays from the map.
-- [topOverlayAtPoint(point)](map/topoverlayatpoint.md)
+- [topOverlayAtPoint(point)](./topoverlayatpoint.md)
   Returns the topmost overlay at a given point on the webpage.
 
 

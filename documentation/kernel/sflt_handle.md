@@ -1,7 +1,8 @@
 # sflt_handle
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A 4 byte identifier used with the SO_NKE socket option to identify the socket filter to be attached.
 
@@ -10,7 +11,7 @@ A 4 byte identifier used with the SO_NKE socket option to identify the socket fi
 
 ## Declaration
 
-```swift
+```c
 typedef u_int32_t sflt_handle;
 ```
 

@@ -1,7 +1,8 @@
 # currentTime
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The absolute time, in seconds, to use for scheduling haptic and audio events.
 
@@ -19,15 +20,20 @@ The absolute time, in seconds, to use for scheduling haptic and audio events.
 var currentTime: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval currentTime;
+```
+
 #### Discussion
 
-This time applies to all haptic and audio events sent to and managed by the Core Haptics engine. Use the current time as a way to determine or track the start times of haptic and audio events, created as [`CHHapticEvent`](chhapticevent.md) objects. It corresponds to the [`relativeTime`](chhapticevent/relativetime.md) and [`duration`](chhapticevent/duration.md) properties of haptic events.
+This time applies to all haptic and audio events sent to and managed by the Core Haptics engine. Use the current time as a way to determine or track the start times of haptic and audio events, created as [`CHHapticEvent`](../chhapticevent.md) objects. It corresponds to the [`relativeTime`](../chhapticevent/relativetime.md) and [`duration`](../chhapticevent/duration.md) properties of haptic events.
 
-> **Note**:  The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](https://developer.apple.com/documentation/avfaudio/avaudioplayer).
+> **Note**:  The Core Haptics engine time doesn’t correlate to time used in media playback classes from other frameworks, such as [`AVAudioPlayer`](../../AVFAudio/avaudioplayer.md).
 
 ## See Also
 
-- [var CHHapticTimeImmediate: TimeInterval](chhaptictimeimmediate.md)
+### Getting the Current Media Time
+- [var CHHapticTimeImmediate: TimeInterval](../chhaptictimeimmediate.md)
   A time constant used to schedule a command immediately.
 
 

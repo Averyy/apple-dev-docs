@@ -1,7 +1,8 @@
 # init(string:loadingPayloads:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stage from a string containing a `.usda` document.
 
@@ -21,7 +22,7 @@ init(string: String, loadingPayloads: USDStage.InitialLoadRule = .all) throws
 
 #### Discussion
 
-> **Note**: An error if the string cannot be read as a `.usda` layer.
+> **Throws**: An error if the string cannot be read as a `.usda` layer.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ init(string: String, loadingPayloads: USDStage.InitialLoadRule = .all) throws
 
 ## See Also
 
-- [init(displayName: String?, loadingPayloads: USDStage.InitialLoadRule)](usdstage/init(displayname:loadingpayloads:).md)
+### Creating a stage
+- [init(displayName: String?, loadingPayloads: USDStage.InitialLoadRule)](./init%28displayname,loadingpayloads%29.md)
   Creates a new memory-backed stage.
-- [init(Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule) throws](usdstage/init(_:type:loadingpayloads:).md)
+- [init(Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule) throws](./init%28_,type,loadingpayloads%29.md)
   Creates a stage from in-memory data in a given format.
 
 

@@ -1,7 +1,8 @@
 # IOOutputQueue
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A packet queue that supports multiple producers and a single consumer.
 
@@ -10,7 +11,7 @@ A packet queue that supports multiple producers and a single consumer.
 
 ## Declaration
 
-```swift
+```cpp
 class IOOutputQueue : OSObject
 ```
 
@@ -21,71 +22,72 @@ Each producer, or a client thread, will deliver a chain of packets to the queue.
 ## Topics
 
 ### Miscellaneous
-- [cancelServiceThread](iooutputqueue/1810578-cancelservicethread.md)
+- [cancelServiceThread](./iooutputqueue/api-1810578-cancelservicethread.md)
   Cancels any pending service thread callout.
-- [enqueue](iooutputqueue/1810610-enqueue.md)
+- [enqueue](./iooutputqueue/api-1810610-enqueue.md)
   Adds a packet, or a chain of packets, to the queue.
-- [flush](iooutputqueue/1810640-flush.md)
+- [flush](./iooutputqueue/api-1810640-flush.md)
   Drops and frees all packets currently held by the queue.
-- [free](iooutputqueue/1810666-free.md)
+- [free](./iooutputqueue/api-1810666-free.md)
   Frees the IOOutputQueue object.
-- [getCapacity](iooutputqueue/1810689-getcapacity.md)
+- [getCapacity](./iooutputqueue/api-1810689-getcapacity.md)
   Gets the number of packets that the queue can hold.
-- [getMbufPriority](iooutputqueue/1810719-getmbufpriority.md)
+- [getMbufPriority](./iooutputqueue/api-1810719-getmbufpriority.md)
   Determines an mbuf's traffic priority. The highest priority is 0.
-- [getOutputHandler](iooutputqueue/1810744-getoutputhandler.md)
+- [getOutputHandler](./iooutputqueue/api-1810744-getoutputhandler.md)
   Returns the address of a function that is designated to handle incoming packets sent to the queue object.
-- [getSize](iooutputqueue/1810788-getsize.md)
+- [getSize](./iooutputqueue/api-1810788-getsize.md)
   Gets the number of packets currently held in the queue.
-- [getStatisticsData](iooutputqueue/1810822-getstatisticsdata.md)
+- [getStatisticsData](./iooutputqueue/api-1810822-getstatisticsdata.md)
   Returns an IONetworkData object containing statistics counters updated by the queue.
-- [init](iooutputqueue/1810854-init.md)
+- [init](./iooutputqueue/api-1810854-init.md)
   Initializes an IOOutputQueue object.
-- [scheduleServiceThread](iooutputqueue/1810887-scheduleservicethread.md)
+- [scheduleServiceThread](./iooutputqueue/api-1810887-scheduleservicethread.md)
   Schedules a service thread callout.
-- [service](iooutputqueue/1810919-service.md)
+- [service](./iooutputqueue/api-1810919-service.md)
   Services the queue.
-- [serviceThread](iooutputqueue/1810947-servicethread.md)
+- [serviceThread](./iooutputqueue/api-1810947-servicethread.md)
   Method called by the scheduled service thread when it starts to run.
-- [setCapacity](iooutputqueue/1810969-setcapacity.md)
+- [setCapacity](./iooutputqueue/api-1810969-setcapacity.md)
   Changes the number of packets that the queue can hold before it begins to drop excess packets.
-- [start](iooutputqueue/1810993-start.md)
+- [start](./iooutputqueue/api-1810993-start.md)
   Starts up the queue.
-- [stop](iooutputqueue/1811022-stop.md)
+- [stop](./iooutputqueue/api-1811022-stop.md)
   Stops the queue.
 ### Instance Variables
-- [_reserved](iooutputqueue/reserved.md)
+- [_reserved](./iooutputqueue/reserved.md)
 ### Instance Methods
-- [- cancelServiceThread](iooutputqueue/1470208-cancelservicethread.md)
-- [- enqueue](iooutputqueue/1470236-enqueue.md)
-- [- flush](iooutputqueue/1470215-flush.md)
-- [- free](iooutputqueue/1470280-free.md)
-- [- getCapacity](iooutputqueue/1470212-getcapacity.md)
-- [- getMbufPriority](iooutputqueue/1470277-getmbufpriority.md)
-- [- getMetaClass](iooutputqueue/1470221-getmetaclass.md)
-- [- getOutputHandler](iooutputqueue/1470270-getoutputhandler.md)
-- [- getSize](iooutputqueue/1470261-getsize.md)
-- [- getStatisticsData](iooutputqueue/1470205-getstatisticsdata.md)
-- [- init](iooutputqueue/1470264-init.md)
-- [- scheduleServiceThread](iooutputqueue/1470273-scheduleservicethread.md)
-- [- service](iooutputqueue/1470199-service.md)
-- [- serviceThread](iooutputqueue/1470251-servicethread.md)
-- [- setCapacity](iooutputqueue/1470267-setcapacity.md)
-- [- start](iooutputqueue/1470231-start.md)
-- [- stop](iooutputqueue/1470225-stop.md)
+- [- cancelServiceThread](./iooutputqueue/api-1470208-cancelservicethread.md)
+- [- enqueue](./iooutputqueue/api-1470236-enqueue.md)
+- [- flush](./iooutputqueue/api-1470215-flush.md)
+- [- free](./iooutputqueue/api-1470280-free.md)
+- [- getCapacity](./iooutputqueue/api-1470212-getcapacity.md)
+- [- getMbufPriority](./iooutputqueue/api-1470277-getmbufpriority.md)
+- [- getMetaClass](./iooutputqueue/api-1470221-getmetaclass.md)
+- [- getOutputHandler](./iooutputqueue/api-1470270-getoutputhandler.md)
+- [- getSize](./iooutputqueue/api-1470261-getsize.md)
+- [- getStatisticsData](./iooutputqueue/api-1470205-getstatisticsdata.md)
+- [- init](./iooutputqueue/api-1470264-init.md)
+- [- scheduleServiceThread](./iooutputqueue/api-1470273-scheduleservicethread.md)
+- [- service](./iooutputqueue/api-1470199-service.md)
+- [- serviceThread](./iooutputqueue/api-1470251-servicethread.md)
+- [- setCapacity](./iooutputqueue/api-1470267-setcapacity.md)
+- [- start](./iooutputqueue/api-1470231-start.md)
+- [- stop](./iooutputqueue/api-1470225-stop.md)
 ### Type Methods
-- [+ runServiceThread](iooutputqueue/1470245-runservicethread.md)
+- [+ runServiceThread](./iooutputqueue/api-1470245-runservicethread.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 ## See Also
 
-- [IOGatedOutputQueue](iogatedoutputqueue.md)
+### Output Queues
+- [IOGatedOutputQueue](./iogatedoutputqueue.md)
   An extension of an IOBasicOutputQueue.
-- [IOBasicOutputQueue](iobasicoutputqueue.md)
+- [IOBasicOutputQueue](./iobasicoutputqueue.md)
   A concrete implementation of an IOOutputQueue.
 
 

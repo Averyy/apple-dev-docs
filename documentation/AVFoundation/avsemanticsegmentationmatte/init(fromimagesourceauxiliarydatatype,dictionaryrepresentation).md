@@ -1,7 +1,8 @@
 # init(fromImageSourceAuxiliaryDataType:dictionaryRepresentation:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new semantic segmentation matte instance from auxiliary image information in an image file.
 
@@ -20,6 +21,10 @@ Returns a new semantic segmentation matte instance from auxiliary image informat
 convenience init(fromImageSourceAuxiliaryDataType imageSourceAuxiliaryDataType: CFString, dictionaryRepresentation imageSourceAuxiliaryDataInfoDictionary: [AnyHashable : Any]) throws
 ```
 
+```objc
++ (instancetype) semanticSegmentationMatteFromImageSourceAuxiliaryDataType:(CFStringRef) imageSourceAuxiliaryDataType dictionaryRepresentation:(NSDictionary *) imageSourceAuxiliaryDataInfoDictionary error:(NSError **) outError;
+```
+
 #### Return Value
 
 A new semantic segmentation matte instance, or `nil` if the auxiliary data info dictionary is malformed.
@@ -27,15 +32,16 @@ A new semantic segmentation matte instance, or `nil` if the auxiliary data info 
 ## Parameters
 
 - `imageSourceAuxiliaryDataType`: The `kCGImageAuxiliaryDataType` constants corresponding to the semantic segmentation matte being created (see `CGImageProperties`).
-- `imageSourceAuxiliaryDataInfoDictionary`: A dictionary of primitive semantic segmentation matte information obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](https://developer.apple.com/documentation/imageio/cgimagesourcecopyauxiliarydatainfoatindex(_:_:_:)).
+- `imageSourceAuxiliaryDataInfoDictionary`: A dictionary of primitive semantic segmentation matte information obtained from [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md).
 
 ## See Also
 
-- [func replacingSemanticSegmentationMatte(with: CVPixelBuffer) throws -> Self](avsemanticsegmentationmatte/replacingsemanticsegmentationmatte(with:).md)
+### Creating a segmentation matte
+- [func replacingSemanticSegmentationMatte(with: CVPixelBuffer) throws -> Self](./replacingsemanticsegmentationmatte%28with%29.md)
   Returns a semantic segmentation matte instance that wraps the replacement pixel buffer.
-- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](avsemanticsegmentationmatte/applyingexiforientation(_:).md)
+- [func applyingExifOrientation(CGImagePropertyOrientation) -> Self](./applyingexiforientation%28_%29.md)
   Returns a new semantic segmentation matte instance with the specified Exif orientation applied.
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avsemanticsegmentationmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./dictionaryrepresentation%28forauxiliarydatatype%29.md)
   Returns a dictionary of primitive map information to use when writing an image file with a semantic segmentation matte.
 
 

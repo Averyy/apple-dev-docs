@@ -1,7 +1,8 @@
 # init(fileType:delegate:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a file promise provider for a certain file type.
 
@@ -14,6 +15,10 @@ Initializes a file promise provider for a certain file type.
 convenience init(fileType: String, delegate: any NSFilePromiseProviderDelegate)
 ```
 
+```objc
+- (instancetype) initWithFileType:(NSString *) fileType delegate:(id<NSFilePromiseProviderDelegate>) delegate;
+```
+
 ## Parameters
 
 - `fileType`: A string describing the file type.
@@ -21,7 +26,8 @@ convenience init(fileType: String, delegate: any NSFilePromiseProviderDelegate)
 
 ## See Also
 
-- [init()](nsfilepromiseprovider/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Initializes a file promise provider.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServices  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An identifier that uniquely refers to the required document.
@@ -9,7 +10,7 @@ An identifier that uniquely refers to the required document.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

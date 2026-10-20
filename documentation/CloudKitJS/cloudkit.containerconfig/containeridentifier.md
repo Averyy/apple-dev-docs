@@ -1,7 +1,8 @@
 # containerIdentifier
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies the app’s container. This key is required.
 
@@ -10,7 +11,7 @@ The string that identifies the app’s container. This key is required.
 
 ## Declaration
 
-```swift
+```
 attribute String containerIdentifier;
 ```
 

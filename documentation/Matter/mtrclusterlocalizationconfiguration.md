@@ -1,7 +1,8 @@
 # MTRClusterLocalizationConfiguration
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,33 +19,37 @@
 class MTRClusterLocalizationConfiguration
 ```
 
+```objc
+@interface MTRClusterLocalizationConfiguration : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusterlocalizationconfiguration/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterlocalizationconfiguration/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusterlocalizationconfiguration/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterlocalizationconfiguration/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeActiveLocale(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributeactivelocale(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeSupportedLocales(with: MTRReadParams?) -> [String : Any]?](mtrclusterlocalizationconfiguration/readattributesupportedlocales(with:).md)
-- [func writeAttributeActiveLocale(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlocalizationconfiguration/writeattributeactivelocale(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeActiveLocale(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlocalizationconfiguration/writeattributeactivelocale(withvalue:expectedvalueinterval:params:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeActiveLocale(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributeactivelocale%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeSupportedLocales(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlocalizationconfiguration/readattributesupportedlocales%28with%29.md)
+- [func writeAttributeActiveLocale(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlocalizationconfiguration/writeattributeactivelocale%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeActiveLocale(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlocalizationconfiguration/writeattributeactivelocale%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

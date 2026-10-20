@@ -1,6 +1,7 @@
 # Playback Parameterization
 
-**Framework**: PHASE
+**Framework**: PHASE  
+**Role**: API Collection
 
 Change the characteristics of in-flight audio by adjusting its properties at runtime.
 
@@ -12,16 +13,16 @@ Metaparameters control several features of a sound source or sound event, as the
 
 To use a metaparameter, you attach it to a sound event or sound source. PHASE provides the following ways to attach metaparameters:
 
-- **[`PHASEGeneratorNodeDefinition`](phasegeneratornodedefinition.md)**: [`gainMetaParameterDefinition`](phasegeneratornodedefinition/gainmetaparameterdefinition.md), [`rateMetaParameterDefinition`](phasegeneratornodedefinition/ratemetaparameterdefinition.md)
-- **[`PHASEMixerDefinition`](phasemixerdefinition.md)**: [`gainMetaParameterDefinition`](phasemixerdefinition/gainmetaparameterdefinition.md)
-- **[`PHASESwitchNodeDefinition`](phaseswitchnodedefinition.md)**: [`init(switchMetaParameterDefinition:)`](phaseswitchnodedefinition/init(switchmetaparameterdefinition:).md)
-- **[`PHASEBlendNodeDefinition`](phaseblendnodedefinition.md)**: [`init(blendMetaParameterDefinition:)`](phaseblendnodedefinition/init(blendmetaparameterdefinition:).md)
-- **[`PHASEMappedMetaParameterDefinition`](phasemappedmetaparameterdefinition.md)**: [`init(inputMetaParameterDefinition:envelope:identifier:)`](phasemappedmetaparameterdefinition/init(inputmetaparameterdefinition:envelope:identifier:).md)
-- **[`PHASESpatialPipelineEntry`](phasespatialpipelineentry.md)**: [`sendLevelMetaParameterDefinition`](phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
+- **[`PHASEGeneratorNodeDefinition`](./phasegeneratornodedefinition.md)**: [`gainMetaParameterDefinition`](./phasegeneratornodedefinition/gainmetaparameterdefinition.md), [`rateMetaParameterDefinition`](./phasegeneratornodedefinition/ratemetaparameterdefinition.md)
+- **[`PHASEMixerDefinition`](./phasemixerdefinition.md)**: [`gainMetaParameterDefinition`](./phasemixerdefinition/gainmetaparameterdefinition.md)
+- **[`PHASESwitchNodeDefinition`](./phaseswitchnodedefinition.md)**: [`init(switchMetaParameterDefinition:)`](./phaseswitchnodedefinition/init%28switchmetaparameterdefinition%29.md)
+- **[`PHASEBlendNodeDefinition`](./phaseblendnodedefinition.md)**: [`init(blendMetaParameterDefinition:)`](./phaseblendnodedefinition/init%28blendmetaparameterdefinition%29.md)
+- **[`PHASEMappedMetaParameterDefinition`](./phasemappedmetaparameterdefinition.md)**: [`init(inputMetaParameterDefinition:envelope:identifier:)`](./phasemappedmetaparameterdefinition/init%28inputmetaparameterdefinition,envelope,identifier%29.md)
+- **[`PHASESpatialPipelineEntry`](./phasespatialpipelineentry.md)**: [`sendLevelMetaParameterDefinition`](./phasespatialpipelineentry/sendlevelmetaparameterdefinition.md)
 
 ##### Adjust a Property of a Single Audio Signal
 
-The framework refers to metaparameters that you access through a sound event’s [`metaParameters`](phasesoundevent/metaparameters.md) dictionary as *local* metaparameters. When you adjust the value of a local metaparameter, it affects just the sound event.
+The framework refers to metaparameters that you access through a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) dictionary as *local* metaparameters. When you adjust the value of a local metaparameter, it affects just the sound event.
 
 The following code changes the volume on a specific sound event:
 
@@ -119,40 +120,41 @@ PHASESwitchNodeDefinition* mySwitchNode = [[PHASESwitchNodeDefinition alloc]
 myPHASEEngine.assetRegistry.globalMetaParameters[@"weather"].value = @"rainy";
 ```
 
-As part of the engine’s asset registry, the [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md) dictionary affects every playing sound event that shares a metaparameter that the dictionary contains.
+As part of the engine’s asset registry, the [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md) dictionary affects every playing sound event that shares a metaparameter that the dictionary contains.
 
 ## Topics
 
 ### Base Metaparameters
-- [class PHASEMetaParameter](phasemetaparameter.md)
+- [class PHASEMetaParameter](./phasemetaparameter.md)
   A named parameter with a value that the app can change over time.
-- [class PHASEMetaParameterDefinition](phasemetaparameterdefinition.md)
+- [class PHASEMetaParameterDefinition](./phasemetaparameterdefinition.md)
   A specification for a named parameter with a constant value.
-- [class PHASEGlobalMetaParameterAsset](phaseglobalmetaparameterasset.md)
+- [class PHASEGlobalMetaParameterAsset](./phaseglobalmetaparameterasset.md)
   A reference to a registered metaparameter that the app can share with multiple sound events or sources.
 ### Linear Metaparameters
-- [class PHASENumberMetaParameter](phasenumbermetaparameter.md)
+- [class PHASENumberMetaParameter](./phasenumbermetaparameter.md)
   A metaparameter defined by a number that can change over time.
-- [class PHASENumberMetaParameterDefinition](phasenumbermetaparameterdefinition.md)
+- [class PHASENumberMetaParameterDefinition](./phasenumbermetaparameterdefinition.md)
   A specification for a metaparameter defined by a number.
 ### Textual Metaparameters
-- [class PHASEStringMetaParameter](phasestringmetaparameter.md)
+- [class PHASEStringMetaParameter](./phasestringmetaparameter.md)
   A metaparameter with a text definition that can change over time.
-- [class PHASEStringMetaParameterDefinition](phasestringmetaparameterdefinition.md)
+- [class PHASEStringMetaParameterDefinition](./phasestringmetaparameterdefinition.md)
   A specification for a metaparameter defined by text.
 ### Graphed Metaparameters
-- [class PHASEMappedMetaParameterDefinition](phasemappedmetaparameterdefinition.md)
+- [class PHASEMappedMetaParameterDefinition](./phasemappedmetaparameterdefinition.md)
   A metaparameter that graphs an input value on a set of mathematical curves.
 
 ## See Also
 
-- [class PHASEEnvelope](phaseenvelope.md)
+### Dynamic Sound Control
+- [class PHASEEnvelope](./phaseenvelope.md)
   A collection of segments that connect to graph a complex curve over a linear input.
-- [class PHASEEnvelopeSegment](phaseenvelopesegment.md)
+- [class PHASEEnvelopeSegment](./phaseenvelopesegment.md)
   A curved portion of an envelope.
-- [enum PHASECurveType](phasecurvetype.md)
+- [enum PHASECurveType](./phasecurvetype.md)
   Options that apply a mathematical function to an input value.
-- [class PHASENumericPair](phasenumericpair.md)
+- [class PHASENumericPair](./phasenumericpair.md)
   An ordered pair that defines a bounding box for an envelope.
 
 

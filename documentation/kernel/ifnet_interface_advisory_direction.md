@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum ifnet_interface_advisory_direction : uint8_t {
     ...
 };
@@ -17,8 +17,8 @@ enum ifnet_interface_advisory_direction : uint8_t {
 ## Topics
 
 ### Constants
-- [IF_INTERFACE_ADVISORY_DIRECTION_RX](ifnet_interface_advisory_direction/if_interface_advisory_direction_rx.md)
-- [IF_INTERFACE_ADVISORY_DIRECTION_TX](ifnet_interface_advisory_direction/if_interface_advisory_direction_tx.md)
+- [IF_INTERFACE_ADVISORY_DIRECTION_RX](./ifnet_interface_advisory_direction/if_interface_advisory_direction_rx.md)
+- [IF_INTERFACE_ADVISORY_DIRECTION_TX](./ifnet_interface_advisory_direction/if_interface_advisory_direction_tx.md)
 
 
 ---

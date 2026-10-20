@@ -1,7 +1,8 @@
 # score
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relevance score for the item.
 
@@ -24,7 +25,8 @@ The stage defines the scale for values of this type, but higher indicate greater
 
 ## See Also
 
-- [let item: SearchableItem](scoredsearchableitem/item.md)
+### Getting the item details
+- [let item: SearchableItem](./item.md)
   The searchable item from the app’s index.
 
 

@@ -1,12 +1,13 @@
 # selectionIsChangingNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever the pop-up list selection of the `NSComboBox` is changing.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ Posted whenever the pop-up list selection of the `NSComboBox` is changing.
 class let selectionIsChangingNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSComboBoxSelectionIsChangingNotification;
+```
+
 #### Discussion
 
 The notification object is the `NSComboBox` whose selection is changing. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSComboBox.SelectionIsChangingMessage`](nscombobox/selectionischangingmessage.md).
+To observe this notification using Swift concurrency, use [`NSComboBox.SelectionIsChangingMessage`](./selectionischangingmessage.md).
 
 ## See Also
 
-- [class let selectionDidChangeNotification: NSNotification.Name](nscombobox/selectiondidchangenotification.md)
+### Notifications
+- [class let selectionDidChangeNotification: NSNotification.Name](./selectiondidchangenotification.md)
   Posted after the pop-up list selection of the `NSComboBox` changes.
-- [class let willDismissNotification: NSNotification.Name](nscombobox/willdismissnotification.md)
+- [class let willDismissNotification: NSNotification.Name](./willdismissnotification.md)
   Posted whenever the pop-up list of the `NSComboBox` is about to be dismissed.
-- [class let willPopUpNotification: NSNotification.Name](nscombobox/willpopupnotification.md)
+- [class let willPopUpNotification: NSNotification.Name](./willpopupnotification.md)
   Posted whenever the pop-up list of the `NSComboBox` is going to be displayed.
 
 

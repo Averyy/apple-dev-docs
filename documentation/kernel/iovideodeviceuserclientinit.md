@@ -1,33 +1,35 @@
 # IOVideoDeviceUserClientInit
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```cpp
 class IOVideoDeviceUserClientInit : IOService
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- MergeDictionaryIntoDictionary](iovideodeviceuserclientinit/1564855-mergedictionaryintodictionary.md)
-- [- MergeDictionaryIntoProvider](iovideodeviceuserclientinit/1564856-mergedictionaryintoprovider.md)
-- [- getMetaClass](iovideodeviceuserclientinit/1564854-getmetaclass.md)
-- [- start](iovideodeviceuserclientinit/1564858-start.md)
+- [- MergeDictionaryIntoDictionary](./iovideodeviceuserclientinit/api-1564855-mergedictionaryintodictionary.md)
+- [- MergeDictionaryIntoProvider](./iovideodeviceuserclientinit/api-1564856-mergedictionaryintoprovider.md)
+- [- getMetaClass](./iovideodeviceuserclientinit/api-1564854-getmetaclass.md)
+- [- start](./iovideodeviceuserclientinit/api-1564858-start.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IOVideoDeviceUserClient](iovideodeviceuserclient.md)
+### User-Space Access
+- [IOVideoDeviceUserClient](./iovideodeviceuserclient.md)
 
 
 ---

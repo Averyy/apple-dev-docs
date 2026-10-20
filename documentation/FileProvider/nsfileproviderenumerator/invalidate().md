@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stops the enumeration of items and changes.
@@ -19,13 +20,18 @@ Stops the enumeration of items and changes.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 ## See Also
 
-- [func enumerateItems(for: any NSFileProviderEnumerationObserver, startingAt: NSFileProviderPage)](nsfileproviderenumerator/enumerateitems(for:startingat:).md)
+### Enumerating Items and Changes
+- [func enumerateItems(for: any NSFileProviderEnumerationObserver, startingAt: NSFileProviderPage)](./enumerateitems%28for,startingat%29.md)
   Requests the next batch of items, starting at the specified page.
-- [func enumerateChanges(for: any NSFileProviderChangeObserver, from: NSFileProviderSyncAnchor)](nsfileproviderenumerator/enumeratechanges(for:from:).md)
+- [func enumerateChanges(for: any NSFileProviderChangeObserver, from: NSFileProviderSyncAnchor)](./enumeratechanges%28for,from%29.md)
   Requests the next batch of changes after the specified sync anchor.
-- [func currentSyncAnchor(completionHandler: (NSFileProviderSyncAnchor?) -> Void)](nsfileproviderenumerator/currentsyncanchor(completionhandler:).md)
+- [func currentSyncAnchor(completionHandler: (NSFileProviderSyncAnchor?) -> Void)](./currentsyncanchor%28completionhandler%29.md)
   Returns the current sync anchor.
 
 

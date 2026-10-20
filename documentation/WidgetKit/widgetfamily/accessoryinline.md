@@ -1,7 +1,8 @@
 # WidgetFamily.accessoryInline
 
 **Framework**: WidgetKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flat widget that contains a single row of text and an optional image.
 
@@ -19,9 +20,9 @@ case accessoryInline
 
 ## Mentions
 
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
-- [Creating views for widgets, Live Activities, and watch complications](creating-views-for-widgets-live-activities-and-watch-complications.md)
-- [Preparing widgets for additional platforms, contexts, and appearances](preparing-widgets-for-additional-contexts-and-appearances.md)
+- [Migrating ClockKit complications to WidgetKit](../converting-a-clockkit-app.md)
+- [Creating views for widgets, Live Activities, and watch complications](../creating-views-for-widgets-live-activities-and-watch-complications.md)
+- [Preparing widgets for additional platforms, contexts, and appearances](../preparing-widgets-for-additional-contexts-and-appearances.md)
 
 #### Discussion
 
@@ -31,11 +32,12 @@ The accessory inline widget can appear as a complication in watchOS, or on the L
 
 ## See Also
 
-- [WidgetFamily.accessoryCircular](widgetfamily/accessorycircular.md)
+### Accessing accessory families
+- [WidgetFamily.accessoryCircular](./accessorycircular.md)
   A circular widget.
-- [WidgetFamily.accessoryCorner](widgetfamily/accessorycorner.md)
+- [WidgetFamily.accessoryCorner](./accessorycorner.md)
   A widget-based complication in the corner of a watch face in watchOS.
-- [WidgetFamily.accessoryRectangular](widgetfamily/accessoryrectangular.md)
+- [WidgetFamily.accessoryRectangular](./accessoryrectangular.md)
   A rectangular widget.
 
 

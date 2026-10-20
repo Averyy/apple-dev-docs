@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource identifier for a related score moderation.
 
@@ -10,14 +11,18 @@ The resource identifier for a related score moderation.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2GameCenterScoreModerationsLinkagesResponse.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
-- `type` (string) *(required)*: The resource type. - gameCenterScoreModerations:
+- `type` (string) *(required)*: The resource type.
+
+  - gameCenterScoreModerations:
+
+  **Allowed Values**: `gameCenterScoreModerations`
 
 
 ---

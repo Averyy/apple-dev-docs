@@ -1,7 +1,8 @@
 # LibraryPlaylistFolderCreationRequest.Relationships.Parent
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The parent of the playlist folder of the creation request.
 
@@ -10,14 +11,14 @@ The parent of the playlist folder of the creation request.
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistFolderCreationRequest.Relationships.Parent
 ```
 
 ## Topics
 
 ### Related Objects
-- [object LibraryPlaylistFolderCreationRequest.Relationships.Parent.Data](libraryplaylistfoldercreationrequest/relationships-data.dictionary/parent-data.dictionary/data-data.dictionary.md)
+- [object LibraryPlaylistFolderCreationRequest.Relationships.Parent.Data](./parent-data.dictionary/data-data.dictionary.md)
   Data of the parent of the library playlist folder of the creation request.
 
 ## Properties

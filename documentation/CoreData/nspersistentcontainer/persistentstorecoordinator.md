@@ -1,7 +1,8 @@
 # persistentStoreCoordinator
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container’s persistent store coordinator.
 
@@ -20,9 +21,13 @@ The container’s persistent store coordinator.
 var persistentStoreCoordinator: NSPersistentStoreCoordinator { get }
 ```
 
+```objc
+@property (strong, readonly) NSPersistentStoreCoordinator * persistentStoreCoordinator;
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack](../setting-up-a-core-data-stack.md)
 
 #### Discussion
 
@@ -30,9 +35,10 @@ When the persistent container is initialized, it creates a persistent store coor
 
 ## See Also
 
-- [var managedObjectModel: NSManagedObjectModel](nspersistentcontainer/managedobjectmodel.md)
+### Getting the Container’s Configuration
+- [var managedObjectModel: NSManagedObjectModel](./managedobjectmodel.md)
   The container’s managed object model.
-- [var name: String](nspersistentcontainer/name.md)
+- [var name: String](./name.md)
   The container’s name.
 
 

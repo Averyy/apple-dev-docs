@@ -1,22 +1,24 @@
 # free
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [GetBaseClassID](iousermidiendpoint/getbaseclassid.md)
-- [GetClassID](iousermidiendpoint/getclassid.md)
-- [init](iousermidiendpoint/init.md)
+### Instance Methods
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [init](./init.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the App Clip Header Images resource that you’re relating with the Advanced App Clip Experiences resource you’re updating.
 
@@ -10,7 +11,7 @@ The type and ID of the App Clip Header Images resource that you’re relating wi
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipAdvancedExperienceUpdateRequest.Data.Relationships.HeaderImage.Dat
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Advanced App Clip Experience Images resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipAdvancedExperienceImages`
 
 
 ---

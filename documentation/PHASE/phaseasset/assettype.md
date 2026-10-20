@@ -1,22 +1,27 @@
 # PHASEAsset.AssetType
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that determine how PHASE manages sound assets in memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 enum AssetType
+```
+
+```c
+enum PHASEAssetType : NSInteger;
 ```
 
 #### Overview
@@ -26,22 +31,22 @@ To prepare for playback, the framework can decompress a sound asset or perform a
 ## Topics
 
 ### Types
-- [PHASEAsset.AssetType.resident](phaseasset/assettype/resident.md)
+- [PHASEAsset.AssetType.resident](./assettype/resident.md)
   A sound asset that plays after fully loading in memory.
-- [PHASEAsset.AssetType.streamed](phaseasset/assettype/streamed.md)
+- [PHASEAsset.AssetType.streamed](./assettype/streamed.md)
   A sound asset that streams from disk into memory as it plays.
 ### Initializers
-- [init?(rawValue: Int)](phaseasset/assettype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./assettype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

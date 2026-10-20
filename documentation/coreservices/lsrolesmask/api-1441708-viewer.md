@@ -1,7 +1,8 @@
 # viewer
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests the role `Viewer` (theapplication can read and present the item, but cannot manipulateor save it).
 

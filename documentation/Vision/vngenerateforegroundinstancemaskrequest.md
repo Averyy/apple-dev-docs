@@ -1,7 +1,8 @@
 # VNGenerateForegroundInstanceMaskRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that generates an instance mask of noticable objects to separate from the background.
 
@@ -19,32 +20,37 @@ A request that generates an instance mask of noticable objects to separate from 
 class VNGenerateForegroundInstanceMaskRequest
 ```
 
+```objc
+@interface VNGenerateForegroundInstanceMaskRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Accessing the Results
-- [var results: [VNInstanceMaskObservation]?](vngenerateforegroundinstancemaskrequest/results.md)
+- [var results: [VNInstanceMaskObservation]?](./vngenerateforegroundinstancemaskrequest/results.md)
   The instance masks the request observes.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Applying visual effects to foreground subjects](applying-visual-effects-to-foreground-subjects.md)
+### Image background removal
+- [Applying visual effects to foreground subjects](./applying-visual-effects-to-foreground-subjects.md)
   Segment the foreground subjects of an image and composite them to a new background with visual effects.
-- [class VNInstanceMaskObservation](vninstancemaskobservation.md)
+- [class VNInstanceMaskObservation](./vninstancemaskobservation.md)
   An observation that contains an instance mask that labels instances in the mask.
-- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](vngenerateforegroundinstancemaskrequestrevision1.md)
+- [var VNGenerateForegroundInstanceMaskRequestRevision1: Int](./vngenerateforegroundinstancemaskrequestrevision1.md)
   A constant for specifying the first revision of the foreground instance mask request.
 
 

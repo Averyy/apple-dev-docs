@@ -1,7 +1,8 @@
 # WKWebExtension.Error.Code.unsupportedManifestVersion
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the manifest version is not supported.
 
@@ -16,6 +17,10 @@ Indicates that the manifest version is not supported.
 
 ```swift
 case unsupportedManifestVersion
+```
+
+```c
+WKWebExtensionErrorUnsupportedManifestVersion
 ```
 
 

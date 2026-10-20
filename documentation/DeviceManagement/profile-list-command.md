@@ -1,7 +1,8 @@
 # Profile List
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of installed profiles on a device.
 
@@ -18,7 +19,7 @@ Get a list of installed profiles on a device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowInspection |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -140,9 +141,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object ProfileListCommand](profilelistcommand.md)
+- [object ProfileListCommand](./profilelistcommand.md)
   The command to get a list of installed profiles on a device.
-- [object ProfileListResponse](profilelistresponse.md)
+- [object ProfileListResponse](./profilelistresponse.md)
   A response from the device after it processes the command to get a list of installed profiles on a device.
 
 ## Endpoint
@@ -151,19 +152,27 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `ProfileListCommand`
+
 The request object the server returns for the Profile List Command.
+
+## Responses
+
+- `200` OK (`ProfileListResponse`, `application/xml`): The response object the system returns for the Profile List Command.
 
 ## See Also
 
-- [Install Profile](install-profile-command.md)
+### Profile management
+- [Install Profile](./install-profile-command.md)
   Install a configuration profile on a device.
-- [Remove Profile](remove-profile-command.md)
+- [Remove Profile](./remove-profile-command.md)
   Remove a previously installed profile from the device.
-- [Install Provisioning Profile](install-provisioning-profile-command.md)
+- [Install Provisioning Profile](./install-provisioning-profile-command.md)
   Install a provisioning profile on a device.
-- [Provisioning Profile List](provisioning-profile-list-command.md)
+- [Provisioning Profile List](./provisioning-profile-list-command.md)
   Get a list of installed provisioning profiles on a device.
-- [Remove Provisioning Profile](remove-provisioning-profile-command.md)
+- [Remove Provisioning Profile](./remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
 
 

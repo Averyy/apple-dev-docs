@@ -1,11 +1,14 @@
 # show(centeredAt:size:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 14.0
 - Swift 4.0+
+
+> **Deprecated**: Use NSCursor.disappearingItemCursor instead
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # IMKCandidatesSendServerKeyEventFirst
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,12 +13,17 @@
 let IMKCandidatesSendServerKeyEventFirst: String
 ```
 
+```c
+extern const NSString * IMKCandidatesSendServerKeyEventFirst;
+```
+
 ## See Also
 
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKControllerClass: String](imkcontrollerclass.md)
-- [let IMKDelegateClass: String](imkdelegateclass.md)
-- [let IMKModeDictionary: String](imkmodedictionary.md)
+### Constants
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+- [let IMKControllerClass: String](./imkcontrollerclass.md)
+- [let IMKDelegateClass: String](./imkdelegateclass.md)
+- [let IMKModeDictionary: String](./imkmodedictionary.md)
 
 
 ---

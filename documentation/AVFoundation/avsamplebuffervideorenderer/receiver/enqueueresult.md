@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.Receiver.EnqueueResult
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value indicating the result of a call to `enqueue(_:)` or `enqueueImmediately(_:)`.
 
@@ -22,28 +23,29 @@ enum EnqueueResult
 ## Topics
 
 ### Enqueue results
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueued](avsamplebuffervideorenderer/receiver/enqueueresult/enqueued.md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueued](./enqueueresult/enqueued.md)
   The sample buffer was enqueued successfully.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueuedWithDecodeFailures(_:)](avsamplebuffervideorenderer/receiver/enqueueresult/enqueuedwithdecodefailures(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.enqueuedWithDecodeFailures(_:)](./enqueueresult/enqueuedwithdecodefailures%28_%29.md)
   The sample buffer was enqueued successfully, but the receiver failed to decode one or more previously enqueued sample buffers.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlush](avsamplebuffervideorenderer/receiver/enqueueresult/cancelledduetoflush.md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlush](./enqueueresult/cancelledduetoflush.md)
   The sample buffer was not enqueued because the Receiver was flushed while the enqueue was suspended.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlushRequiredToResume(_:)](avsamplebuffervideorenderer/receiver/enqueueresult/cancelledduetoflushrequiredtoresume(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToFlushRequiredToResume(_:)](./enqueueresult/cancelledduetoflushrequiredtoresume%28_%29.md)
   The sample buffer was not enqueued because the Receiver requires a flush to continue enqueuing samples.
-- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](avsamplebuffervideorenderer/receiver/enqueueresult/cancelledduetoerror(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.EnqueueResult.cancelledDueToError(_:)](./enqueueresult/cancelledduetoerror%28_%29.md)
   The sample buffer was not enqueued because the Receiver failed.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](avsamplebuffervideorenderer/receiver/enqueue(_:).md)
+### Enqueuing sample buffers
+- [func enqueue(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](./enqueue%28_%29.md)
   Suspends until the receiver is ready for more media data, then enqueues a sample buffer in order to render its contents.
-- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](avsamplebuffervideorenderer/receiver/enqueueimmediately(_:).md)
+- [func enqueueImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) -> AVSampleBufferVideoRenderer.Receiver.EnqueueResult](./enqueueimmediately%28_%29.md)
   Enqueues a sample buffer in order to render its contents, without waiting for the renderer to become ready for more media data.
 
 

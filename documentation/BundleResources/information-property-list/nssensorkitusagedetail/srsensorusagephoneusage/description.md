@@ -1,7 +1,8 @@
 # Description
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An explanatory string that details the manner in which your study uses the sensor’s data.
 
@@ -9,9 +10,10 @@ An explanatory string that details the manner in which your study uses the senso
 - iOS 14.0+
 - iPadOS 14.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `Description`
+- **Type**: string
 
 #### Discussion
 
@@ -19,7 +21,8 @@ The Research Sensor & Usage Data Request workflow displays this property’s tex
 
 ## See Also
 
-- [Required](information-property-list/nssensorkitusagedetail/srsensorusagephoneusage/required.md)
+### Sensor usage keys
+- [Required](./required.md)
   A Boolean value that indicates whether your app’s study relies on this sensor.
 
 

@@ -1,14 +1,15 @@
 # measurement
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The electricity consumption of a device.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,8 @@ let measurement: ElectricHVACLoadEvent.ElectricalMeasurement
 
 ## See Also
 
-- [ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/electricalmeasurement.md)
+### Getting electrical measurements
+- [ElectricHVACLoadEvent.ElectricalMeasurement](./electricalmeasurement.md)
   A description of the electricity consumed by a device.
 
 

@@ -1,7 +1,8 @@
 # init(coreMLPackageAtURL:descriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the executable with the Core ML model package at the provided URL.
 
@@ -17,6 +18,10 @@ Initialize the executable with the Core ML model package at the provided URL.
 
 ```swift
 init(coreMLPackageAtURL coreMLPackageURL: URL, descriptor compilationDescriptor: MPSGraphCompilationDescriptor?)
+```
+
+```objc
+- (instancetype) initWithCoreMLPackageAtURL:(NSURL *) coreMLPackageURL compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
 ## Parameters

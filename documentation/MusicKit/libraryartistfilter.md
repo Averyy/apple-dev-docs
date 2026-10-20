@@ -1,7 +1,8 @@
 # LibraryArtistFilter
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Artist properties your app uses as a filter for a library request.
 
@@ -23,13 +24,13 @@ protocol LibraryArtistFilter
 ## Topics
 
 ### Instance Properties
-- [var genres: MusicItemCollection<Genre>?](libraryartistfilter/genres.md)
+- [var genres: MusicItemCollection<Genre>?](./libraryartistfilter/genres.md)
   The artist’s associated genres.
-- [var id: MusicItemID](libraryartistfilter/id.md)
+- [var id: MusicItemID](./libraryartistfilter/id.md)
   The unique identifier for the artist.
-- [var name: String](libraryartistfilter/name.md)
+- [var name: String](./libraryartistfilter/name.md)
   The name of the artist.
-- [var playlists: MusicItemCollection<Playlist>?](libraryartistfilter/playlists.md)
+- [var playlists: MusicItemCollection<Playlist>?](./libraryartistfilter/playlists.md)
   The artist’s associated playlists.
 
 

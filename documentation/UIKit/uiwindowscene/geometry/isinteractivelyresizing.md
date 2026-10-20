@@ -1,7 +1,8 @@
 # isInteractivelyResizing
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true when the scene is being resized interactively, otherwise false.
 
@@ -16,6 +17,10 @@ Returns true when the scene is being resized interactively, otherwise false.
 
 ```swift
 var isInteractivelyResizing: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isInteractivelyResizing) BOOL interactivelyResizing;
 ```
 
 

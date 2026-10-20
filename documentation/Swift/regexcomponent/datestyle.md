@@ -1,7 +1,8 @@
 # RegexComponent.DateStyle
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias to use when matching date components in a regular expression.
 
@@ -20,11 +21,14 @@ A type alias to use when matching date components in a regular expression.
 typealias DateStyle = Date.FormatStyle.DateStyle
 ```
 
+Available when `Self` is `Date.ParseStrategy`.
+
 ## See Also
 
-- [associatedtype RegexOutput](regexcomponent/regexoutput.md)
+### Supporting types
+- [associatedtype RegexOutput](./regexoutput.md)
   The output type for this regular expression.
-- [RegexComponent.TimeStyle](regexcomponent/timestyle.md)
+- [RegexComponent.TimeStyle](./timestyle.md)
   A type alias to use when matching time components in a regular expression.
 
 

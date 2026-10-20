@@ -1,7 +1,8 @@
 # LSRegisterURL(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers an app, using a URL, in the Launch Services database.
 
@@ -15,15 +16,19 @@ Registers an app, using a URL, in the Launch Services database.
 func LSRegisterURL(_ inURL: CFURL, _ inUpdate: Bool) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus LSRegisterURL(CFURLRef inURL, Boolean inUpdate);
+```
 
-A result code; see [`Result Codes`](launch_services#1661359.md).
+#### Return Value
+
+A result code; see [Result Codes](./launch_services.md#1661359).
 
 #### Discussion
 
 This function adds the designated application and its document and URL claims (if any) to the Launch Services database, making the application a candidate for document and URL binding.
 
-##### 1676155
+##### Version-Notes
 
 Thread-safe since Mac OS version 10.3.
 

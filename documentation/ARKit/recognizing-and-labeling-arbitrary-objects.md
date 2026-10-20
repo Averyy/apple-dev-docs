@@ -1,6 +1,8 @@
 # Recognizing and Labeling Arbitrary Objects
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Sample Code  
+**Download**: [RecognizingAndLabelingArbitraryObjects.zip](https://docs-assets.developer.apple.com/published/97d2e04f4e8a/RecognizingAndLabelingArbitraryObjects.zip)
 
 Create anchors that track objects you recognize in the camera feed, using a custom optical-recognition algorithm.
 
@@ -11,22 +13,22 @@ Create anchors that track objects you recognize in the camera feed, using a cust
 
 #### Overview
 
-This sample app parses the camera feed, using the [`Vision`](https://developer.apple.com/documentation/vision) framework with a [`Core ML`](https://developer.apple.com/documentation/coreml) model that recognizes regular desktop items. The app displays a label onscreen that indicates when it recognizes an item. You then tap the screen to place a textual annotation in the physical environment that’s labeled with the name of the recognized object. Because the Core ML model used by this app doesn’t tell you where the object lies within an image, label placement relative to the object depends on where you tap.
+This sample app parses the camera feed, using the [Vision](../Vision/Vision.md) framework with a [Core ML](../CoreML/CoreML.md) model that recognizes regular desktop items. The app displays a label onscreen that indicates when it recognizes an item. You then tap the screen to place a textual annotation in the physical environment that’s labeled with the name of the recognized object. Because the Core ML model used by this app doesn’t tell you where the object lies within an image, label placement relative to the object depends on where you tap.
 
 > **Note**: ARKit requires an iOS device with an A9 or later processor. ARKit is not available in iOS Simulator.
 
-#### Implement the Visioncore Ml Image Classifier
+#### Implement the vision/core ML image classifier
 
 The sample code’s `classificationRequest` property, `classifyCurrentImage() method, and `processClassifications(for:error:)` method manage:
 
 - A Core ML image-classifier model, loaded from an `mlmodel` file bundled with the app using the Swift API that Core ML generates for the model
-- [`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest) and [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler) objects for passing image data to the model for evaluation
+- [`VNCoreMLRequest`](../Vision/vncoremlrequest.md) and [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md) objects for passing image data to the model for evaluation
 
-For more details on using [`VNImageRequestHandler`](https://developer.apple.com/documentation/vision/vnimagerequesthandler),[`VNCoreMLRequest`](https://developer.apple.com/documentation/vision/vncoremlrequest), and image classifier models, see the [`Classifying Images with Vision and Core ML`](https://developer.apple.com/documentation/coreml/classifying-images-with-vision-and-core-ml) sample-code project.
+For more details on using [`VNImageRequestHandler`](../Vision/vnimagerequesthandler.md),[`VNCoreMLRequest`](../Vision/vncoremlrequest.md), and image classifier models, see the [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md) sample-code project.
 
-#### Run the Ar Session and Process Camera Images
+#### Run the AR session and process camera images
 
-The sample `ViewController` class manages the AR session and displays AR overlay content in a SpriteKit view. ARKit captures video frames from the camera and provides them to the view controller in the [`session(_:didUpdate:)`](arsessiondelegate/session(_:didupdate:)-9v2kw.md) method, which then calls the `classifyCurrentImage()` method to run the Vision image classifier.
+The sample `ViewController` class manages the AR session and displays AR overlay content in a SpriteKit view. ARKit captures video frames from the camera and provides them to the view controller in the [`session(_:didUpdate:)`](./arsessiondelegate/session%28_,didupdate%29-9v2kw.md) method, which then calls the `classifyCurrentImage()` method to run the Vision image classifier.
 
 ```swift
 func session(_ session: ARSession, didUpdate frame: ARFrame) {
@@ -42,7 +44,7 @@ func session(_ session: ARSession, didUpdate frame: ARFrame) {
 }
 ```
 
-#### Serialize Image Processing for Real Time Performance
+#### Serialize image processing for real-time performance
 
 The `classifyCurrentImage()` method uses the view controller’s `currentBuffer` property to track whether Vision is currently processing an image before starting another Vision task.
 
@@ -64,13 +66,13 @@ visionQueue.async {
 
 > ❗ **Important**: Limit your processing to one buffer at a time for performance. The camera recycles a finite pool of pixel buffers, so retaining too many buffers for processing could starve the camera and shut down the capture session. Passing multiple buffers to Vision for processing would slow down processing of each image, adding latency and reducing the amount of CPU and GPU overhead for rendering AR visualizations.
 
-In addition, the sample app enables the [`usesCPUOnly`](https://developer.apple.com/documentation/vision/vnrequest/usescpuonly) setting for its Vision request, freeing the GPU for use in rendering.
+In addition, the sample app enables the [`usesCPUOnly`](../Vision/vnrequest/usescpuonly.md) setting for its Vision request, freeing the GPU for use in rendering.
 
-#### Visualize Results in Ar
+#### Visualize results in AR
 
 The `processClassifications(for:error:) method stores the best-match result label produced by the image classifier and displays it in the corner of the screen. The user can then tap in the AR scene to place that label at a real-world position. Placing a label requires two main steps.
 
-First, a tap gesture recognizer fires the `placeLabelAtLocation(sender:)` action. This method uses the ARKit [`hitTest(_:types:)`](arskview/hittest(_:types:).md) method to estimate the 3D real-world position corresponding to the tap, and adds an anchor to the AR session at that position.
+First, a tap gesture recognizer fires the `placeLabelAtLocation(sender:)` action. This method uses the ARKit [`hitTest(_:types:)`](./arskview/hittest%28_,types%29.md) method to estimate the 3D real-world position corresponding to the tap, and adds an anchor to the AR session at that position.
 
 ```swift
 @IBAction func placeLabelAtLocation(sender: UITapGestureRecognizer) {
@@ -88,7 +90,7 @@ First, a tap gesture recognizer fires the `placeLabelAtLocation(sender:)` action
 }
 ```
 
-Next, after ARKit automatically creates a SpriteKit node for the newly added anchor, the [`view(_:didAdd:for:)`](arskviewdelegate/view(_:didadd:for:).md) delegate method provides content for that node. In this case, the sample `TemplateLabelNode` class creates a styled text label using the string provided by the image classifier.
+Next, after ARKit automatically creates a SpriteKit node for the newly added anchor, the [`view(_:didAdd:for:)`](./arskviewdelegate/view%28_,didadd,for%29.md) delegate method provides content for that node. In this case, the sample `TemplateLabelNode` class creates a styled text label using the string provided by the image classifier.
 
 ```swift
 func view(_ view: ARSKView, didAdd node: SKNode, for anchor: ARAnchor) {
@@ -102,7 +104,8 @@ func view(_ view: ARSKView, didAdd node: SKNode, for anchor: ARAnchor) {
 
 ## See Also
 
-- [Creating screen annotations for objects in an AR experience](creating-screen-annotations-for-objects-in-an-ar-experience.md)
+### Text Annotations
+- [Creating screen annotations for objects in an AR experience](./creating-screen-annotations-for-objects-in-an-ar-experience.md)
   Annotate an AR experience with virtual sticky notes that you display onscreen over real and virtual objects.
 
 

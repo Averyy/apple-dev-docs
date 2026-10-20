@@ -1,16 +1,17 @@
 # global(priority:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+ - Deprecated
-- visionOS ?+
-- watchOS ?+ - Deprecated
+- iOS - Deprecated in 8.0
+- iPadOS - Deprecated in 8.0
+- Mac Catalyst
+- macOS - Deprecated in 10.10
+- tvOS - Deprecated
+- visionOS
+- watchOS - Deprecated
 
 ## Declaration
 
@@ -20,7 +21,8 @@ class func global(priority: DispatchQueue.GlobalQueuePriority) -> DispatchQueue
 
 ## See Also
 
-- [DispatchQueue.GlobalQueuePriority](dispatchqueue/globalqueuepriority.md)
+### Deprecated
+- [DispatchQueue.GlobalQueuePriority](./globalqueuepriority.md)
   Legacy constants for queue priorities.
 
 

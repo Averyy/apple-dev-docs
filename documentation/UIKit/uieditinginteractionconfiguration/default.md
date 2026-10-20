@@ -1,7 +1,8 @@
 # UIEditingInteractionConfiguration.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -16,9 +17,14 @@
 case `default`
 ```
 
+```c
+UIEditingInteractionConfigurationDefault
+```
+
 ## See Also
 
-- [UIEditingInteractionConfiguration.none](uieditinginteractionconfiguration/none.md)
+### Constants
+- [UIEditingInteractionConfiguration.none](./none.md)
 
 
 ---

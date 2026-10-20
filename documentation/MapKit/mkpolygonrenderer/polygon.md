@@ -1,7 +1,8 @@
 # polygon
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The polygon object that contains the information used to draw the overlay’s contents.
 
@@ -17,6 +18,10 @@ The polygon object that contains the information used to draw the overlay’s co
 
 ```swift
 var polygon: MKPolygon { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKPolygon * polygon;
 ```
 
 

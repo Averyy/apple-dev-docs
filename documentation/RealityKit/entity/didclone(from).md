@@ -1,7 +1,8 @@
 # didClone(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells a newly cloned entity that cloning is complete.
 
@@ -11,7 +12,7 @@ Tells a newly cloned entity that cloning is complete.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Tells a newly cloned entity that cloning is complete.
 
 #### Discussion
 
-This method clones all component data automatically. When you clone an entity that stores custom data that’s not part of a component, override the [`didClone(from:)`](entity/didclone(from:).md) method to copy that data manually after the clone finishes.
+This method clones all component data automatically. When you clone an entity that stores custom data that’s not part of a component, override the [`didClone(from:)`](./didclone%28from%29.md) method to copy that data manually after the clone finishes.
 
 ## Parameters
 
@@ -30,13 +31,14 @@ This method clones all component data automatically. When you clone an entity th
 
 ## See Also
 
-- [init()](entity/init.md)
+### Creating an entity
+- [init()](./init%28%29.md)
   Creates a new entity.
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+- [convenience init(components: [any Component])](./init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [convenience init(components: [any Component])](entity/init(components:)-1lmhe.md)
+- [convenience init(components: [any Component])](./init%28components%29-1lmhe.md)
   Creates an entity with multiple components.
-- [func clone(recursive: Bool) -> Self](entity/clone(recursive:).md)
+- [func clone(recursive: Bool) -> Self](./clone%28recursive%29.md)
   Duplicates an entity to create a new entity.
 
 

@@ -1,7 +1,8 @@
 # image
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image representing this `IntentPerson`
 
@@ -11,7 +12,7 @@ An image representing this `IntentPerson`
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ var image: DisplayRepresentation.Image?
 
 ## See Also
 
-- [var handle: IntentPerson.Handle?](intentperson/handle-swift.property.md)
+### Getting identifying information
+- [var handle: IntentPerson.Handle?](./handle-swift.property.md)
   The primary `Handle` used to contact this `IntentPerson`
-- [var aliases: [IntentPerson.Handle]](intentperson/aliases.md)
+- [var aliases: [IntentPerson.Handle]](./aliases.md)
   Other secondary `Handle`s used to contact this `IntentPerson`, if any
-- [var isMe: Bool](intentperson/isme.md)
+- [var isMe: Bool](./isme.md)
   Whether this `IntentPerson` represents the owner of the device
-- [IntentPerson.Handle](intentperson/handle-swift.struct.md)
+- [IntentPerson.Handle](./handle-swift.struct.md)
   A type that describes a single way to contact a person.
-- [IntentPerson.ParameterMode](intentperson/parametermode.md)
+- [IntentPerson.ParameterMode](./parametermode.md)
   The type of interface to show when someone chooses a parameter that contains information about a person.
 
 

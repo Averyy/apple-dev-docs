@@ -1,7 +1,8 @@
 # VTMotionBlurConfiguration.QualityPrioritization.normal
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A normal quality prioritization level.
 
@@ -17,9 +18,14 @@ A normal quality prioritization level.
 case normal
 ```
 
+```c
+VTMotionBlurConfigurationQualityPrioritizationNormal
+```
+
 ## See Also
 
-- [VTMotionBlurConfiguration.QualityPrioritization.quality](vtmotionblurconfiguration/qualityprioritization-swift.enum/quality.md)
+### Priorities
+- [VTMotionBlurConfiguration.QualityPrioritization.quality](./quality.md)
   A quality prioritization level.
 
 

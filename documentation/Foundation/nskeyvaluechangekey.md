@@ -1,7 +1,8 @@
 # NSKeyValueChangeKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The keys that can appear in the change dictionary.
 
@@ -20,50 +21,55 @@ The keys that can appear in the change dictionary.
 struct NSKeyValueChangeKey
 ```
 
+```c
+typedef NSString * NSKeyValueChangeKey;
+```
+
 #### Discussion
 
-These constants are used as keys in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/observevalue(forkeypath:of:change:context:)).
+These constants are used as keys in the change dictionary passed to [`observeValue(forKeyPath:of:change:context:)`](../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md).
 
 ## Topics
 
 ### Type Properties
-- [static let indexesKey: NSKeyValueChangeKey](nskeyvaluechangekey/indexeskey.md)
-  If the value of the [`kindKey`](nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.insertion`](nskeyvaluechange/insertion.md), [`NSKeyValueChange.removal`](nskeyvaluechange/removal.md), or [`NSKeyValueChange.replacement`](nskeyvaluechange/replacement.md), the value of this key is an `NSIndexSet` object that contains the indexes of the inserted, removed, or replaced objects.
-- [static let kindKey: NSKeyValueChangeKey](nskeyvaluechangekey/kindkey.md)
-  An `NSNumber` object that contains a value corresponding to one of the [`NSKeyValueChange`](nskeyvaluechange.md) enums, indicating what sort of change has occurred.
-- [static let newKey: NSKeyValueChangeKey](nskeyvaluechangekey/newkey.md)
-  If the value of the [`kindKey`](nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.setting`](nskeyvaluechange/setting.md), and [`new`](nskeyvalueobservingoptions/new.md) was specified when the observer was registered, the value of this key is the new value for the attribute.
-- [static let notificationIsPriorKey: NSKeyValueChangeKey](nskeyvaluechangekey/notificationispriorkey.md)
-  If the [`prior`](nskeyvalueobservingoptions/prior.md) option was specified when the observer was registered this notification is sent prior to a change.
-- [static let oldKey: NSKeyValueChangeKey](nskeyvaluechangekey/oldkey.md)
-  If the value of the [`kindKey`](nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.setting`](nskeyvaluechange/setting.md), and [`old`](nskeyvalueobservingoptions/old.md) was specified when the observer was registered, the value of this key is the value before the attribute was changed.
+- [static let indexesKey: NSKeyValueChangeKey](./nskeyvaluechangekey/indexeskey.md)
+  If the value of the [`kindKey`](./nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.insertion`](./nskeyvaluechange/insertion.md), [`NSKeyValueChange.removal`](./nskeyvaluechange/removal.md), or [`NSKeyValueChange.replacement`](./nskeyvaluechange/replacement.md), the value of this key is an `NSIndexSet` object that contains the indexes of the inserted, removed, or replaced objects.
+- [static let kindKey: NSKeyValueChangeKey](./nskeyvaluechangekey/kindkey.md)
+  An `NSNumber` object that contains a value corresponding to one of the [`NSKeyValueChange`](./nskeyvaluechange.md) enums, indicating what sort of change has occurred.
+- [static let newKey: NSKeyValueChangeKey](./nskeyvaluechangekey/newkey.md)
+  If the value of the [`kindKey`](./nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.setting`](./nskeyvaluechange/setting.md), and [`new`](./nskeyvalueobservingoptions/new.md) was specified when the observer was registered, the value of this key is the new value for the attribute.
+- [static let notificationIsPriorKey: NSKeyValueChangeKey](./nskeyvaluechangekey/notificationispriorkey.md)
+  If the [`prior`](./nskeyvalueobservingoptions/prior.md) option was specified when the observer was registered this notification is sent prior to a change.
+- [static let oldKey: NSKeyValueChangeKey](./nskeyvaluechangekey/oldkey.md)
+  If the value of the [`kindKey`](./nskeyvaluechangekey/kindkey.md) entry is [`NSKeyValueChange.setting`](./nskeyvaluechange/setting.md), and [`old`](./nskeyvalueobservingoptions/old.md) was specified when the observer was registered, the value of this key is the value before the attribute was changed.
 ### Initializers
-- [init(rawValue: String)](nskeyvaluechangekey/init(rawvalue:).md)
+- [init(rawValue: String)](./nskeyvaluechangekey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+### Structures
+- [struct AsyncCharacterSequence](./asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](./asynclinesequence.md)
   An asynchronous sequence of lines of text.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](./asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct Expression](expression.md)
-- [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+- [struct Expression](./expression.md)
+- [struct NSAttributedStringFormattingContextKey](./nsattributedstringformattingcontextkey.md)
   A type that represents a key in the formatting context dictionary.
-- [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
-- [struct NSKeyValueOperator](nskeyvalueoperator.md)
-  These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
-- [struct PresentationIntent](presentationintent.md)
+- [struct NSKeyValueObservedChange](./nskeyvalueobservedchange.md)
+- [struct NSKeyValueOperator](./nskeyvalueoperator.md)
+  These constants define the available array operators. See [Using Collection Operators](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.
+- [struct PresentationIntent](./presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

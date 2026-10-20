@@ -1,17 +1,18 @@
 # init(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new payment network structure with the raw value you provide.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](pkpaymentnetwork/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new payment network structure with the string you provide.
 
 

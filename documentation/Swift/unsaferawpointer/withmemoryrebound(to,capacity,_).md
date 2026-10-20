@@ -1,7 +1,8 @@
 # withMemoryRebound(to:capacity:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the given closure while temporarily binding memory to the specified number of instances of type `T`.
 

@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsRootHubMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is a root hub.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is a root hub.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsRootHubMask = (1 << kUSBInformationDeviceIsRootHub)
 ```
 

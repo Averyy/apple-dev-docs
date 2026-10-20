@@ -1,7 +1,8 @@
 # isMultivariantPlaylist
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,11 +19,16 @@
 var isMultivariantPlaylist: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isMultivariantPlaylist;
+```
+
 ## See Also
 
-- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](avmetrichlsplaylistrequestevent/mediaresourcerequestevent.md)
-- [var mediaType: AVMediaType](avmetrichlsplaylistrequestevent/mediatype.md)
-- [var url: URL?](avmetrichlsplaylistrequestevent/url.md)
+### Inspecting the event
+- [var mediaResourceRequestEvent: AVMetricMediaResourceRequestEvent?](./mediaresourcerequestevent.md)
+- [var mediaType: AVMediaType](./mediatype.md)
+- [var url: URL?](./url.md)
 
 
 ---

@@ -1,21 +1,22 @@
 # GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard.Data](gamecenterchallengeupdaterequest/data-data.dictionary/relationships-data.dictionary/leaderboard-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallengeUpdateRequest.Data.Relationships.Leaderboard.Data](./leaderboard-data.dictionary/data-data.dictionary.md)
   The request body you use to update a challenge.
 
 ## Properties

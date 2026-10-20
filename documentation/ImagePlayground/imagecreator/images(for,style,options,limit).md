@@ -1,16 +1,19 @@
 # images(for:style:options:limit:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates one or more images from the provided description and style information and returns the results asynchronously.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
-- macOS 26.4+
-- visionOS 26.4+
+- iOS 26.4+ - Deprecated in 27.0
+- iPadOS 26.4+ - Deprecated in 27.0
+- Mac Catalyst 26.4+ - Deprecated in 27.0
+- macOS 26.4+ - Deprecated in 27.0
+- visionOS 26.4+ - Deprecated in 27.0
+
+> **Deprecated**: Use ImagePlaygroundViewController or imagePlaygroundSheet.
 
 ## Declaration
 
@@ -24,7 +27,7 @@ An asynchronous stream you use to receive the images.
 
 #### Discussion
 
-Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
+Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](../../Swift/asyncsequence.md) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
 
 ```swift
 do {

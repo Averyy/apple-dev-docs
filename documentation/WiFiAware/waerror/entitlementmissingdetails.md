@@ -1,7 +1,8 @@
 # WAError.EntitlementMissingDetails
 
 **Framework**: Wi-Fi Aware  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The optional details describing the missing entitlement.
 
@@ -19,14 +20,15 @@ struct EntitlementMissingDetails
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case entitlementMissing(WAError.EntitlementMissingDetails)](waerror/entitlementmissing(_:).md)
+### Checking for missing entitlement
+- [case entitlementMissing(WAError.EntitlementMissingDetails)](./entitlementmissing%28_%29.md)
   An error that occurs if your app is missing the entitlement needed for the requested operation.
 
 

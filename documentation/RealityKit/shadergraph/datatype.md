@@ -1,7 +1,8 @@
 # ShaderGraph.DataType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -18,43 +19,43 @@ enum DataType
 ## Topics
 
 ### Enumeration Cases
-- [ShaderGraph.DataType.bool](shadergraph/datatype/bool.md)
-- [ShaderGraph.DataType.cgColor3](shadergraph/datatype/cgcolor3.md)
-- [ShaderGraph.DataType.cgColor4](shadergraph/datatype/cgcolor4.md)
-- [ShaderGraph.DataType.float](shadergraph/datatype/float.md)
-- [ShaderGraph.DataType.float2](shadergraph/datatype/float2.md)
-- [ShaderGraph.DataType.float2x2](shadergraph/datatype/float2x2.md)
-- [ShaderGraph.DataType.float3](shadergraph/datatype/float3.md)
-- [ShaderGraph.DataType.float3x3](shadergraph/datatype/float3x3.md)
-- [ShaderGraph.DataType.float4](shadergraph/datatype/float4.md)
-- [ShaderGraph.DataType.float4x4](shadergraph/datatype/float4x4.md)
-- [ShaderGraph.DataType.geometryModifier](shadergraph/datatype/geometrymodifier.md)
-- [ShaderGraph.DataType.half](shadergraph/datatype/half.md)
-- [ShaderGraph.DataType.half2](shadergraph/datatype/half2.md)
-- [ShaderGraph.DataType.half2x2](shadergraph/datatype/half2x2.md)
-- [ShaderGraph.DataType.half3](shadergraph/datatype/half3.md)
-- [ShaderGraph.DataType.half3x3](shadergraph/datatype/half3x3.md)
-- [ShaderGraph.DataType.half4](shadergraph/datatype/half4.md)
-- [ShaderGraph.DataType.half4x4](shadergraph/datatype/half4x4.md)
-- [ShaderGraph.DataType.int](shadergraph/datatype/int.md)
-- [ShaderGraph.DataType.int2](shadergraph/datatype/int2.md)
-- [ShaderGraph.DataType.int3](shadergraph/datatype/int3.md)
-- [ShaderGraph.DataType.int4](shadergraph/datatype/int4.md)
-- [ShaderGraph.DataType.postLightingShader](shadergraph/datatype/postlightingshader.md)
-- [ShaderGraph.DataType.string](shadergraph/datatype/string.md)
-- [ShaderGraph.DataType.surfaceShader](shadergraph/datatype/surfaceshader.md)
-- [ShaderGraph.DataType.texture](shadergraph/datatype/texture.md)
-- [ShaderGraph.DataType.uchar](shadergraph/datatype/uchar.md)
-- [ShaderGraph.DataType.uint](shadergraph/datatype/uint.md)
+- [ShaderGraph.DataType.bool](./datatype/bool.md)
+- [ShaderGraph.DataType.cgColor3](./datatype/cgcolor3.md)
+- [ShaderGraph.DataType.cgColor4](./datatype/cgcolor4.md)
+- [ShaderGraph.DataType.float](./datatype/float.md)
+- [ShaderGraph.DataType.float2](./datatype/float2.md)
+- [ShaderGraph.DataType.float2x2](./datatype/float2x2.md)
+- [ShaderGraph.DataType.float3](./datatype/float3.md)
+- [ShaderGraph.DataType.float3x3](./datatype/float3x3.md)
+- [ShaderGraph.DataType.float4](./datatype/float4.md)
+- [ShaderGraph.DataType.float4x4](./datatype/float4x4.md)
+- [ShaderGraph.DataType.geometryModifier](./datatype/geometrymodifier.md)
+- [ShaderGraph.DataType.half](./datatype/half.md)
+- [ShaderGraph.DataType.half2](./datatype/half2.md)
+- [ShaderGraph.DataType.half2x2](./datatype/half2x2.md)
+- [ShaderGraph.DataType.half3](./datatype/half3.md)
+- [ShaderGraph.DataType.half3x3](./datatype/half3x3.md)
+- [ShaderGraph.DataType.half4](./datatype/half4.md)
+- [ShaderGraph.DataType.half4x4](./datatype/half4x4.md)
+- [ShaderGraph.DataType.int](./datatype/int.md)
+- [ShaderGraph.DataType.int2](./datatype/int2.md)
+- [ShaderGraph.DataType.int3](./datatype/int3.md)
+- [ShaderGraph.DataType.int4](./datatype/int4.md)
+- [ShaderGraph.DataType.postLightingShader](./datatype/postlightingshader.md)
+- [ShaderGraph.DataType.string](./datatype/string.md)
+- [ShaderGraph.DataType.surfaceShader](./datatype/surfaceshader.md)
+- [ShaderGraph.DataType.texture](./datatype/texture.md)
+- [ShaderGraph.DataType.uchar](./datatype/uchar.md)
+- [ShaderGraph.DataType.uint](./datatype/uint.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

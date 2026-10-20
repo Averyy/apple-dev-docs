@@ -1,7 +1,8 @@
 # init(title:buttons:image:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a MultiStopCardConfiguration with an optional title, an array of text buttons, and an optional image
 
@@ -14,6 +15,10 @@ Initializes a MultiStopCardConfiguration with an optional title, an array of tex
 
 ```swift
 init(title: String?, buttons: [CPTextButton], image: UIImage?)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title buttons:(NSArray<CPTextButton *> *) buttons image:(UIImage *) image;
 ```
 
 #### Discussion

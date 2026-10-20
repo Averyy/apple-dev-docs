@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The default view properties for a view controller placed in the arrangement.
@@ -23,11 +24,12 @@ var defaultViewProperties: Self.ViewProperties { get }
 
 Use these default view properties as a starting point to configure an arrangement.
 
-For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 
 ## See Also
 
-- [associatedtype ViewProperties](uiarrangementviewcontroller/arrangement/viewproperties.md)
+### Getting the default view properties
+- [associatedtype ViewProperties](./viewproperties.md)
   Properties you use to customize how an arrangement presents views.
 
 

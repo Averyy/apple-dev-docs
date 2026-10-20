@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 struct StandardUSB30::tHubPortStatusExt {
     ...
 };
@@ -17,9 +17,9 @@ struct StandardUSB30::tHubPortStatusExt {
 ## Topics
 
 ### Instance Properties
-- [dwExtPortStatus](standardusb30_thubportstatusext/3793986-dwextportstatus.md)
-- [wPortChange](standardusb30_thubportstatusext/3793987-wportchange.md)
-- [wPortStatus](standardusb30_thubportstatusext/3793988-wportstatus.md)
+- [dwExtPortStatus](./standardusb30_thubportstatusext/api-3793986-dwextportstatus.md)
+- [wPortChange](./standardusb30_thubportstatusext/api-3793987-wportchange.md)
+- [wPortStatus](./standardusb30_thubportstatusext/api-3793988-wportstatus.md)
 
 
 ---

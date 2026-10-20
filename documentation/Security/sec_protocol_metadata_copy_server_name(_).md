@@ -1,7 +1,8 @@
 # sec_protocol_metadata_copy_server_name(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.5+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_copy_server_name(_ metadata: sec_protocol_metadata_t) -> UnsafePointer<CChar>?
+```
+
+```c
+const char *sec_protocol_metadata_copy_server_name(sec_protocol_metadata_t metadata);
 ```
 
 #### Return Value

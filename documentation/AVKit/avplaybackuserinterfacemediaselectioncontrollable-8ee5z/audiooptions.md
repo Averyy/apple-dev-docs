@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Array of available audio track options.

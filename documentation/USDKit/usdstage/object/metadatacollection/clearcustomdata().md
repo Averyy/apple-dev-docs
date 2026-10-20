@@ -1,7 +1,8 @@
 # clearCustomData()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all authored custom data on this object.
 

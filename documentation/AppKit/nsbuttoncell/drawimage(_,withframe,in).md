@@ -1,17 +1,22 @@
 # drawImage(_:withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the image associated with the button’s current state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawImage(_ image: NSImage, withFrame frame: NSRect, in controlView: NSView)
+```
+
+```objc
+- (void) drawImage:(NSImage *) image withFrame:(NSRect) frame inView:(NSView *) controlView;
 ```
 
 #### Discussion
@@ -28,11 +33,13 @@ You specify the primary and alternate images for the button using Interface Buil
 
 ## See Also
 
-- [var alternateImage: NSImage?](nsbuttoncell/alternateimage.md)
+### Related Documentation
+- [var alternateImage: NSImage?](./alternateimage.md)
   The image the button displays in its alternate state.
-- [func drawBezel(withFrame: NSRect, in: NSView)](nsbuttoncell/drawbezel(withframe:in:).md)
+### Drawing the Button Content
+- [func drawBezel(withFrame: NSRect, in: NSView)](./drawbezel%28withframe,in%29.md)
   Draws the border of the button using the current bezel style.
-- [func drawTitle(NSAttributedString, withFrame: NSRect, in: NSView) -> NSRect](nsbuttoncell/drawtitle(_:withframe:in:).md)
+- [func drawTitle(NSAttributedString, withFrame: NSRect, in: NSView) -> NSRect](./drawtitle%28_,withframe,in%29.md)
   Draws the button’s title centered vertically in a specified rectangle.
 
 

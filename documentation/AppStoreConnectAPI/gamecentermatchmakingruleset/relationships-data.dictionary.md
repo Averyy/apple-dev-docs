@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSet.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other objects belonging to the rule set.
 
@@ -10,18 +11,18 @@ The relationships to other objects belonging to the rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSet.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleSet.Relationships.MatchmakingQueues](gamecentermatchmakingruleset/relationships-data.dictionary/matchmakingqueues-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSet.Relationships.MatchmakingQueues](./relationships-data.dictionary/matchmakingqueues-data.dictionary.md)
   The queues related to the rule set.
-- [object GameCenterMatchmakingRuleSet.Relationships.Rules](gamecentermatchmakingruleset/relationships-data.dictionary/rules-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSet.Relationships.Rules](./relationships-data.dictionary/rules-data.dictionary.md)
   The rules belonging to the rule set.
-- [object GameCenterMatchmakingRuleSet.Relationships.Teams](gamecentermatchmakingruleset/relationships-data.dictionary/teams-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSet.Relationships.Teams](./relationships-data.dictionary/teams-data.dictionary.md)
   The teams belonging to the rule set.
 
 ## Properties
@@ -32,7 +33,8 @@ object GameCenterMatchmakingRuleSet.Relationships
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleSet.Attributes](gamecentermatchmakingruleset/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingRuleSet.Attributes](./attributes-data.dictionary.md)
   The attributes of the rule set.
 
 

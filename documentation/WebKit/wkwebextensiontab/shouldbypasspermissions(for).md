@@ -1,7 +1,8 @@
 # shouldBypassPermissions(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to determine if the tab should bypass host permission checks.
 
@@ -16,6 +17,10 @@ Called to determine if the tab should bypass host permission checks.
 
 ```swift
 optional func shouldBypassPermissions(for context: WKWebExtensionContext) -> Bool
+```
+
+```objc
+- (BOOL) shouldBypassPermissionsForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

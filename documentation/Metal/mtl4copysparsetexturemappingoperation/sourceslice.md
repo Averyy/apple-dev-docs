@@ -1,7 +1,8 @@
 # sourceSlice
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the array slice in the texture source of the copy operation.
 
@@ -17,6 +18,10 @@ The index of the array slice in the texture source of the copy operation.
 
 ```swift
 var sourceSlice: Int
+```
+
+```c
+NSUInteger sourceSlice;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # fragmentLinkedFunctions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 ```swift
 @NSCopying
 var fragmentLinkedFunctions: MTLLinkedFunctions! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) MTLLinkedFunctions * fragmentLinkedFunctions;
 ```
 
 

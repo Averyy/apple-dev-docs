@@ -1,7 +1,8 @@
 # PDFAnnotation
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An annotation in a PDF document.
 
@@ -19,10 +20,14 @@ An annotation in a PDF document.
 class PDFAnnotation
 ```
 
+```objc
+@interface PDFAnnotation : NSObject
+```
+
 ## Mentions
 
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+- [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
+- [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md)
 
 #### Overview
 
@@ -31,214 +36,215 @@ In addition to its primary textual content, a PDF file can contain annotations t
 ## Topics
 
 ### Creating an Annotation
-- [init(bounds: CGRect, forType: PDFAnnotationSubtype, withProperties: [AnyHashable : Any]?)](pdfannotation/init(bounds:fortype:withproperties:).md)
+- [init(bounds: CGRect, forType: PDFAnnotationSubtype, withProperties: [AnyHashable : Any]?)](./pdfannotation/init%28bounds,fortype,withproperties%29.md)
   Creates a PDF annotation with the specified bounds, type, and optional properties.
-- [struct PDFAnnotationSubtype](pdfannotationsubtype.md)
+- [struct PDFAnnotationSubtype](./pdfannotationsubtype.md)
   The type of annotation, such as circle, text, or ink.
 ### Accessing Information About an Annotation
-- [var page: PDFPage?](pdfannotation/page.md)
+- [var page: PDFPage?](./pdfannotation/page.md)
   Returns the page that the annotation is associated with.
-- [var modificationDate: Date?](pdfannotation/modificationdate.md)
+- [var modificationDate: Date?](./pdfannotation/modificationdate.md)
   Returns the modification date of the annotation.
-- [var userName: String?](pdfannotation/username.md)
+- [var userName: String?](./pdfannotation/username.md)
   Returns the name of the user who created the annotation.
-- [var type: String?](pdfannotation/type.md)
+- [var type: String?](./pdfannotation/type.md)
   Returns the type of the annotation.
-- [var action: PDFAction?](pdfannotation/action.md)
+- [var action: PDFAction?](./pdfannotation/action.md)
   An object that represents an action for a PDF element, such as a link annotation.
-- [class PDFAction](pdfaction.md)
+- [class PDFAction](./pdfaction.md)
   An action that is performed when, for example, a PDF annotation is activated or an outline item is clicked.
-- [class PDFDestination](pdfdestination.md)
+- [class PDFDestination](./pdfdestination.md)
   A `PDFDestination` object describes a point on a PDF page.
 ### Managing Annotation Drawing and Output
-- [func draw(with: PDFDisplayBox, in: CGContext)](pdfannotation/draw(with:in:).md)
+- [func draw(with: PDFDisplayBox, in: CGContext)](./pdfannotation/draw%28with,in%29.md)
   Draws the annotation in a graphics context using page-space coordinates relative to the origin of the specified box.
-- [var shouldDisplay: Bool](pdfannotation/shoulddisplay.md)
+- [var shouldDisplay: Bool](./pdfannotation/shoulddisplay.md)
   Returns a Boolean value indicating whether the annotation should be displayed.
-- [var shouldPrint: Bool](pdfannotation/shouldprint.md)
+- [var shouldPrint: Bool](./pdfannotation/shouldprint.md)
   Returns a Boolean value indicating whether the annotation should appear when the document is printed.
 ### Modifying Annotation Attributes
-- [var annotationKeyValues: [AnyHashable : Any]](pdfannotation/annotationkeyvalues.md)
+- [var annotationKeyValues: [AnyHashable : Any]](./pdfannotation/annotationkeyvalues.md)
   A dictionary that contains a deep copy of the widget’s properties.
-- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](pdfannotation/value(forannotationkey:).md)
+- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](./pdfannotation/value%28forannotationkey%29.md)
   Returns a deep copy of the key-value pairs of properties for the specified key.
-- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setvalue(_:forannotationkey:).md)
+- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](./pdfannotation/setvalue%28_,forannotationkey%29.md)
   Sets a value in the annotation’s dictionary.
-- [func setBoolean(Bool, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setboolean(_:forannotationkey:).md)
+- [func setBoolean(Bool, forAnnotationKey: PDFAnnotationKey) -> Bool](./pdfannotation/setboolean%28_,forannotationkey%29.md)
   Sets a Boolean value in the annotation’s dictionary.
-- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setrect(_:forannotationkey:).md)
+- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](./pdfannotation/setrect%28_,forannotationkey%29.md)
   Sets a rectangle value in the annotation’s dictionary.
-- [func removeValue(forAnnotationKey: PDFAnnotationKey)](pdfannotation/removevalue(forannotationkey:).md)
+- [func removeValue(forAnnotationKey: PDFAnnotationKey)](./pdfannotation/removevalue%28forannotationkey%29.md)
   Removes a value from the annotation’s dictionary.
-- [struct PDFAnnotationKey](pdfannotationkey.md)
+- [struct PDFAnnotationKey](./pdfannotationkey.md)
   Keys for setting properties of annotations.
 ### Managing Annotation Display Characteristics
-- [var alignment: NSTextAlignment](pdfannotation/alignment.md)
+- [var alignment: NSTextAlignment](./pdfannotation/alignment.md)
   The alignment of the free text and text widget annotation’s text content.
-- [var bounds: CGRect](pdfannotation/bounds.md)
+- [var bounds: CGRect](./pdfannotation/bounds.md)
   Returns the bounding box for the annotation in page space.
-- [var contents: String?](pdfannotation/contents.md)
+- [var contents: String?](./pdfannotation/contents.md)
   Returns the textual content (if any) associated with the annotation.
-- [var font: UIFont?](pdfannotation/font.md)
+- [var font: UIFont?](./pdfannotation/font.md)
   The font the annotation uses to display text.
-- [var fontColor: UIColor?](pdfannotation/fontcolor.md)
+- [var fontColor: UIColor?](./pdfannotation/fontcolor.md)
   The font color the annotation uses to display text.
-- [var border: PDFBorder?](pdfannotation/border.md)
+- [var border: PDFBorder?](./pdfannotation/border.md)
   Sets the border style for the annotation.
-- [class PDFBorder](pdfborder.md)
+- [class PDFBorder](./pdfborder.md)
   An optional border for an annotation that lies completely within the annotation rectangle.
-- [var isHighlighted: Bool](pdfannotation/ishighlighted.md)
+- [var isHighlighted: Bool](./pdfannotation/ishighlighted.md)
   A Boolean value that indicates whether the annotation is in a highlighted state, such as when the mouse is down on a link annotation.
-- [var color: UIColor](pdfannotation/color.md)
+- [var color: UIColor](./pdfannotation/color.md)
   Sets the stroke color for the annotation.
-- [var hasAppearanceStream: Bool](pdfannotation/hasappearancestream.md)
+- [var hasAppearanceStream: Bool](./pdfannotation/hasappearancestream.md)
   Returns a Boolean value that indicates whether the annotation has an appearance stream associated with it.
 ### Configuring Shape Annotations
-- [var interiorColor: UIColor?](pdfannotation/interiorcolor.md)
+- [var interiorColor: UIColor?](./pdfannotation/interiorcolor.md)
   The fill color for drawing a circle, line, or square annotation.
 ### Configuring Line Annotations
-- [var startPoint: CGPoint](pdfannotation/startpoint.md)
+- [var startPoint: CGPoint](./pdfannotation/startpoint.md)
   The point where a line begins, in annotation-space coordinates.
-- [var endPoint: CGPoint](pdfannotation/endpoint.md)
+- [var endPoint: CGPoint](./pdfannotation/endpoint.md)
   The point where a line ends, in annotation-space coordinates.
-- [var startLineStyle: PDFLineStyle](pdfannotation/startlinestyle.md)
+- [var startLineStyle: PDFLineStyle](./pdfannotation/startlinestyle.md)
   The style of the line annotation’s starting point, such as square or filled arrowhead.
-- [var endLineStyle: PDFLineStyle](pdfannotation/endlinestyle.md)
+- [var endLineStyle: PDFLineStyle](./pdfannotation/endlinestyle.md)
   The style of the line annotation’s ending point, such as square or filled arrowhead.
-- [class func lineStyle(fromName: String) -> PDFLineStyle](pdfannotation/linestyle(fromname:).md)
+- [class func lineStyle(fromName: String) -> PDFLineStyle](./pdfannotation/linestyle%28fromname%29.md)
   Returns a line style that corresponds to the specified name.
-- [class func name(for: PDFLineStyle) -> String](pdfannotation/name(for:).md)
+- [class func name(for: PDFLineStyle) -> String](./pdfannotation/name%28for%29.md)
   Returns the name of the line style, which matches the definition in the Adobe PDF Specification.
 ### Configuring Link Annotations
-- [var destination: PDFDestination?](pdfannotation/destination.md)
+- [var destination: PDFDestination?](./pdfannotation/destination.md)
   The destination for a link annotation.
-- [var url: URL?](pdfannotation/url.md)
+- [var url: URL?](./pdfannotation/url.md)
   A URL for a link annotation.
 ### Configuring Text Annotations
-- [var iconType: PDFTextAnnotationIconType](pdfannotation/icontype.md)
+- [var iconType: PDFTextAnnotationIconType](./pdfannotation/icontype.md)
   The type of icon to display for a pop-up text annotation.
-- [enum PDFTextAnnotationIconType](pdftextannotationicontype.md)
+- [enum PDFTextAnnotationIconType](./pdftextannotationicontype.md)
   The types of icons that a text annotation can use.
-- [struct PDFAnnotationTextIconType](pdfannotationtexticontype.md)
+- [struct PDFAnnotationTextIconType](./pdfannotationtexticontype.md)
   Constants for icon type values in text annotation property dictionaries.
 ### Configuring Pop-Up Annotations
-- [var popup: PDFAnnotation?](pdfannotation/popup.md)
+- [var popup: PDFAnnotation?](./pdfannotation/popup.md)
   Returns the pop-up annotation associated with an annotation.
-- [var isOpen: Bool](pdfannotation/isopen.md)
+- [var isOpen: Bool](./pdfannotation/isopen.md)
   A Boolean value that indicates whether the pop-up annotation is in an opened state, displaying its text content, or in a closed state, displaying an icon.
 ### Configuring Text Markup Annotations
-- [var markupType: PDFMarkupType](pdfannotation/markuptype.md)
+- [var markupType: PDFMarkupType](./pdfannotation/markuptype.md)
   The markup type that the annotation displays, either highlight, strikethrough, underline, or redact.
-- [enum PDFMarkupType](pdfmarkuptype.md)
+- [enum PDFMarkupType](./pdfmarkuptype.md)
   The styles available for markup annotations in PDFKit.
-- [var quadrilateralPoints: [NSValue]?](pdfannotation/quadrilateralpoints.md)
+- [var quadrilateralPoints: [NSValue]?](./pdfannotation/quadrilateralpoints.md)
   An array of values that represents the points bounding the marked-up text.
 ### Configuring Widget Annotations
-- [var widgetFieldType: PDFAnnotationWidgetSubtype](pdfannotation/widgetfieldtype.md)
+- [var widgetFieldType: PDFAnnotationWidgetSubtype](./pdfannotation/widgetfieldtype.md)
   The type of widget annotation, such as button, choice, or text.
-- [var widgetStringValue: String?](pdfannotation/widgetstringvalue.md)
+- [var widgetStringValue: String?](./pdfannotation/widgetstringvalue.md)
   The string value of the widget annotation.
-- [var widgetDefaultStringValue: String?](pdfannotation/widgetdefaultstringvalue.md)
+- [var widgetDefaultStringValue: String?](./pdfannotation/widgetdefaultstringvalue.md)
   The string value that the widget reverts to when performing a reset form action.
-- [var fieldName: String?](pdfannotation/fieldname.md)
+- [var fieldName: String?](./pdfannotation/fieldname.md)
   The widget identifier for form annotation actions and behaviors.
-- [var backgroundColor: UIColor?](pdfannotation/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./pdfannotation/backgroundcolor.md)
   The color of the widget’s background.
-- [var isReadOnly: Bool](pdfannotation/isreadonly.md)
+- [var isReadOnly: Bool](./pdfannotation/isreadonly.md)
   A Boolean value that determines whether the widget is editable.
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+- [enum PDFWidgetControlType](./pdfwidgetcontroltype.md)
   The types of annotation buttons.
-- [class PDFAppearanceCharacteristics](pdfappearancecharacteristics.md)
+- [class PDFAppearanceCharacteristics](./pdfappearancecharacteristics.md)
   An object that represents appearance characteristics of a widget annotation.
 ### Configuring Text Widget Annotations
-- [var isMultiline: Bool](pdfannotation/ismultiline.md)
+- [var isMultiline: Bool](./pdfannotation/ismultiline.md)
   A Boolean value that indicates whether the text widget annotation displays multiple lines.
-- [var isPasswordField: Bool](pdfannotation/ispasswordfield.md)
+- [var isPasswordField: Bool](./pdfannotation/ispasswordfield.md)
   A Boolean value that indicates whether the text widget annotation displays a password field using bullet characters.
-- [var maximumLength: Int](pdfannotation/maximumlength.md)
+- [var maximumLength: Int](./pdfannotation/maximumlength.md)
   The maximum number of characters the text widget annotation allows.
-- [var hasComb: Bool](pdfannotation/hascomb.md)
+- [var hasComb: Bool](./pdfannotation/hascomb.md)
   A Boolean value that indicates whether the annotation divides the text widget’s bounds into equally spaced segments, such as in a form entry field.
 ### Configuring Button Widget Annotations
-- [var widgetControlType: PDFWidgetControlType](pdfannotation/widgetcontroltype.md)
+- [var widgetControlType: PDFWidgetControlType](./pdfannotation/widgetcontroltype.md)
   The type of button widget control, either radio button, push button, or checkbox.
-- [var buttonWidgetState: PDFWidgetCellState](pdfannotation/buttonwidgetstate.md)
+- [var buttonWidgetState: PDFWidgetCellState](./pdfannotation/buttonwidgetstate.md)
   The current state of the button widget annotation.
-- [enum PDFWidgetCellState](pdfwidgetcellstate.md)
+- [enum PDFWidgetCellState](./pdfwidgetcellstate.md)
   The state of a button annotation, either on, off, or mixed.
-- [var buttonWidgetStateString: String](pdfannotation/buttonwidgetstatestring.md)
+- [var buttonWidgetStateString: String](./pdfannotation/buttonwidgetstatestring.md)
   A string value that differentiates button widgets in the same group, such as to identify mutually exclusive radio buttons from each other.
-- [var caption: String?](pdfannotation/caption.md)
+- [var caption: String?](./pdfannotation/caption.md)
   The title of push button widget annotations.
-- [var allowsToggleToOff: Bool](pdfannotation/allowstoggletooff.md)
+- [var allowsToggleToOff: Bool](./pdfannotation/allowstoggletooff.md)
   A Boolean value that indicates whether clicking or tapping a selected radio button toggles it to an unselected state.
-- [var radiosInUnison: Bool](pdfannotation/radiosinunison.md)
+- [var radiosInUnison: Bool](./pdfannotation/radiosinunison.md)
   A Boolean value that indicates whether radio buttons in a group turn on and off in unison.
 ### Configuring Choice Widget Annotations
-- [var choices: [String]?](pdfannotation/choices.md)
+- [var choices: [String]?](./pdfannotation/choices.md)
   An array of strings that specifies the options in either a list or a pop-up menu.
-- [var isListChoice: Bool](pdfannotation/islistchoice.md)
+- [var isListChoice: Bool](./pdfannotation/islistchoice.md)
   A Boolean value that indicates whether the choice widget annotation is a list or a pop-up menu.
-- [var values: [String]?](pdfannotation/values.md)
+- [var values: [String]?](./pdfannotation/values.md)
   An array of strings that specifies the export values for items in a list or a pop-up menu.
 ### Configuring Ink Annotations
-- [var paths: [UIBezierPath]?](pdfannotation/paths.md)
+- [var paths: [UIBezierPath]?](./pdfannotation/paths.md)
   An array of bezier paths, in annotation-space coordinates, that compose the annotation.
-- [func add(UIBezierPath)](pdfannotation/add(_:).md)
+- [func add(UIBezierPath)](./pdfannotation/add%28_%29.md)
   Adds a bezier path to the ink annotation.
-- [func remove(UIBezierPath)](pdfannotation/remove(_:).md)
+- [func remove(UIBezierPath)](./pdfannotation/remove%28_%29.md)
   Removes a bezier path from an ink annotation.
 ### Configuring Stamp Annotations
-- [var stampName: String?](pdfannotation/stampname.md)
+- [var stampName: String?](./pdfannotation/stampname.md)
   The name of the stamp, a text or graphics annotation that emulates a rubber stamp effect.
 ### Deprecated
-- [Deprecated Symbols](deprecated-symbols.md)
+- [Deprecated Symbols](./deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
-- [var isActivatableTextField: Bool](pdfannotation/isactivatabletextfield.md)
+- [var isActivatableTextField: Bool](./pdfannotation/isactivatabletextfield.md)
 ### Initializers
-- [init?(coder: NSCoder)](pdfannotation/init(coder:).md)
-- [convenience init(dictionary: [AnyHashable : Any], for: PDFPage?)](pdfannotation/init(dictionary:for:).md)
+- [init?(coder: NSCoder)](./pdfannotation/init%28coder%29.md)
+- [convenience init(dictionary: [AnyHashable : Any], for: PDFPage?)](./pdfannotation/init%28dictionary,for%29.md)
 ### Default Implementations
-- [PDFAnnotation Implementations](pdfannotation/pdfannotation-implementations.md)
+- [PDFAnnotation Implementations](./pdfannotation/pdfannotation-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PDFAnnotationButtonWidget](pdfannotationbuttonwidget.md)
-- [PDFAnnotationChoiceWidget](pdfannotationchoicewidget.md)
-- [PDFAnnotationCircle](pdfannotationcircle.md)
-- [PDFAnnotationFreeText](pdfannotationfreetext.md)
-- [PDFAnnotationInk](pdfannotationink.md)
-- [PDFAnnotationLine](pdfannotationline.md)
-- [PDFAnnotationLink](pdfannotationlink.md)
-- [PDFAnnotationMarkup](pdfannotationmarkup.md)
-- [PDFAnnotationPopup](pdfannotationpopup.md)
-- [PDFAnnotationSquare](pdfannotationsquare.md)
-- [PDFAnnotationStamp](pdfannotationstamp.md)
-- [PDFAnnotationText](pdfannotationtext.md)
-- [PDFAnnotationTextWidget](pdfannotationtextwidget.md)
+- [PDFAnnotationButtonWidget](./pdfannotationbuttonwidget.md)
+- [PDFAnnotationChoiceWidget](./pdfannotationchoicewidget.md)
+- [PDFAnnotationCircle](./pdfannotationcircle.md)
+- [PDFAnnotationFreeText](./pdfannotationfreetext.md)
+- [PDFAnnotationInk](./pdfannotationink.md)
+- [PDFAnnotationLine](./pdfannotationline.md)
+- [PDFAnnotationLink](./pdfannotationlink.md)
+- [PDFAnnotationMarkup](./pdfannotationmarkup.md)
+- [PDFAnnotationPopup](./pdfannotationpopup.md)
+- [PDFAnnotationSquare](./pdfannotationsquare.md)
+- [PDFAnnotationStamp](./pdfannotationstamp.md)
+- [PDFAnnotationText](./pdfannotationtext.md)
+- [PDFAnnotationTextWidget](./pdfannotationtextwidget.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+### Annotations
+- [Adding Widgets to a PDF Document](./adding-widgets-to-a-pdf-document.md)
   Add text, button, and choice widgets to a PDF document.
-- [Adding Custom Graphics to a PDF](adding-custom-graphics-to-a-pdf.md)
+- [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
   Create and add custom annotation and page graphics to your PDF document.
-- [Custom Graphics](custom-graphics.md)
+- [Custom Graphics](./custom-graphics.md)
   Demonstrates adding a watermark to a PDF page.
-- [PDF Widgets](pdf-widgets.md)
+- [PDF Widgets](./pdf-widgets.md)
   Demonstrates adding widgets—interactive form elements—to a PDF document.
 
 

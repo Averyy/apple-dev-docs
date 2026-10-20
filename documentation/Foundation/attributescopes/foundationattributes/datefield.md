@@ -1,7 +1,8 @@
 # dateField
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a date field attribute.
 
@@ -22,7 +23,8 @@ let dateField: AttributeScopes.FoundationAttributes.DateFieldAttribute
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.DateFieldAttribute](attributescopes/foundationattributes/datefieldattribute.md)
+### Using date attributes
+- [AttributeScopes.FoundationAttributes.DateFieldAttribute](./datefieldattribute.md)
   A type for using a date field as an attribute.
 
 

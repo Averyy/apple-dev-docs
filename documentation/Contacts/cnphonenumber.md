@@ -1,7 +1,8 @@
 # CNPhoneNumber
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable object representing a phone number for a contact.
 
@@ -19,6 +20,10 @@ An immutable object representing a phone number for a contact.
 class CNPhoneNumber
 ```
 
+```objc
+@interface CNPhoneNumber : NSObject
+```
+
 #### Overview
 
 `CNPhoneNumber` objects are thread-safe, and you may access their properties from any thread of your app.
@@ -26,34 +31,34 @@ class CNPhoneNumber
 ## Topics
 
 ### Creating a Phone Number Object
-- [init(stringValue: String)](cnphonenumber/init(stringvalue:).md)
+- [init(stringValue: String)](./cnphonenumber/init%28stringvalue%29.md)
   Returns a new phone number object initialized with the specified phone number string.
 ### Getting the Phone Number
-- [var stringValue: String](cnphonenumber/stringvalue.md)
+- [var stringValue: String](./cnphonenumber/stringvalue.md)
   The string value of the phone number.
 ### Getting Phone-Related Keys
-- [let CNContactPhoneNumbersKey: String](cncontactphonenumberskey.md)
+- [let CNContactPhoneNumbersKey: String](./cncontactphonenumberskey.md)
   A phone numbers of a contact.
 ### Deprecated
-- [init!()](cnphonenumber/init.md)
-- [class func new() -> Self!](cnphonenumber/new.md)
+- [init!()](./cnphonenumber/init%28%29.md)
+- [class func new() -> Self!](./cnphonenumber/new%28%29.md)
 ### Initializers
-- [init?(coder: NSCoder)](cnphonenumber/init(coder:).md)
+- [init?(coder: NSCoder)](./cnphonenumber/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # shareURLs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URLs of the shares to fetch.
 
@@ -20,13 +21,18 @@ The URLs of the shares to fetch.
 var shareURLs: [URL]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSURL *> * shareURLs;
+```
+
 #### Discussion
 
 Use this property to view or change the URLs of the shares to fetch. If you intend to specify or change this property’s value, do so before you execute the operation or submit it to a queue.
 
 ## See Also
 
-- [var shouldFetchRootRecord: Bool](ckfetchsharemetadataoperation/shouldfetchrootrecord.md)
+### Configuring the Operation
+- [var shouldFetchRootRecord: Bool](./shouldfetchrootrecord.md)
   A Boolean value that indicates whether to retrieve the root record.
 
 

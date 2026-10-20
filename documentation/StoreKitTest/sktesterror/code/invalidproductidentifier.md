@@ -1,7 +1,8 @@
 # SKTestError.Code.invalidProductIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The product identifier is invalid.
 
@@ -20,35 +21,40 @@ The product identifier is invalid.
 case invalidProductIdentifier
 ```
 
+```c
+SKTestErrorCodeInvalidProductIdentifier
+```
+
 ## See Also
 
-- [SKTestError.Code.fileNotFound](sktesterror/code/filenotfound.md)
+### Error Codes
+- [SKTestError.Code.fileNotFound](./filenotfound.md)
   The initializer can’t find the file.
-- [SKTestError.Code.invalidAction](sktesterror/code/invalidaction.md)
+- [SKTestError.Code.invalidAction](./invalidaction.md)
   The action is invalid.
-- [SKTestError.Code.invalidProductType](sktesterror/code/invalidproducttype.md)
+- [SKTestError.Code.invalidProductType](./invalidproducttype.md)
   The product type is invalid.
-- [SKTestError.Code.invalidURL](sktesterror/code/invalidurl.md)
+- [SKTestError.Code.invalidURL](./invalidurl.md)
   The URL is invalid.
-- [SKTestError.Code.noSubscriptionFound](sktesterror/code/nosubscriptionfound.md)
+- [SKTestError.Code.noSubscriptionFound](./nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [SKTestError.Code.noTransactionFound](sktesterror/code/notransactionfound.md)
+- [SKTestError.Code.noTransactionFound](./notransactionfound.md)
   The test environment didn’t find a transaction.
-- [SKTestError.Code.serviceUnavailable](sktesterror/code/serviceunavailable.md)
+- [SKTestError.Code.serviceUnavailable](./serviceunavailable.md)
   The service isn’t available.
-- [SKTestError.Code.fileNotFound](sktesterror/code/filenotfound.md)
+- [SKTestError.Code.fileNotFound](./filenotfound.md)
   The initializer can’t find the file.
-- [SKTestError.Code.invalidAction](sktesterror/code/invalidaction.md)
+- [SKTestError.Code.invalidAction](./invalidaction.md)
   The action is invalid.
-- [SKTestError.Code.invalidProductType](sktesterror/code/invalidproducttype.md)
+- [SKTestError.Code.invalidProductType](./invalidproducttype.md)
   The product type is invalid.
-- [SKTestError.Code.invalidURL](sktesterror/code/invalidurl.md)
+- [SKTestError.Code.invalidURL](./invalidurl.md)
   The URL is invalid.
-- [SKTestError.Code.noSubscriptionFound](sktesterror/code/nosubscriptionfound.md)
+- [SKTestError.Code.noSubscriptionFound](./nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [SKTestError.Code.noTransactionFound](sktesterror/code/notransactionfound.md)
+- [SKTestError.Code.noTransactionFound](./notransactionfound.md)
   The test environment didn’t find a transaction.
-- [SKTestError.Code.serviceUnavailable](sktesterror/code/serviceunavailable.md)
+- [SKTestError.Code.serviceUnavailable](./serviceunavailable.md)
   The service isn’t available.
 
 

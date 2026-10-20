@@ -1,7 +1,8 @@
 # MPSGraphIfThenElseBlock
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block of operations executed under either the if or else condition.
 
@@ -17,6 +18,10 @@ A block of operations executed under either the if or else condition.
 
 ```swift
 typealias MPSGraphIfThenElseBlock = () -> [MPSGraphTensor]
+```
+
+```c
+typedef NSArray<MPSGraphTensor *> *(^)() MPSGraphIfThenElseBlock;
 ```
 
 #### Return Value

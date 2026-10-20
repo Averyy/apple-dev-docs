@@ -1,7 +1,8 @@
 # addObserver(for:using:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers an observer that runs when a notice of the given type is sent for this stage.
 
@@ -25,11 +26,12 @@ Observation continues while the returned token is retained, and ends when the to
 
 ## See Also
 
-- [USDStage.Notice](usdstage/notice.md)
+### Observing changes
+- [USDStage.Notice](./notice.md)
   A change notification that can be observed on a stage.
-- [USDStage.ObjectsDidChange](usdstage/objectsdidchange.md)
+- [USDStage.ObjectsDidChange](./objectsdidchange.md)
   A notice sent when the objects on a stage change.
-- [USDStage.ObservationToken](usdstage/observationtoken.md)
+- [USDStage.ObservationToken](./observationtoken.md)
   A token that keeps an observer registered for as long as it is retained.
 
 

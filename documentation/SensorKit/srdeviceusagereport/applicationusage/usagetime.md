@@ -1,7 +1,8 @@
 # usageTime
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time the user uses the app.
 
@@ -16,9 +17,14 @@ The amount of time the user uses the app.
 var usageTime: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval usageTime;
+```
+
 ## See Also
 
-- [var relativeStartTime: TimeInterval](srdeviceusagereport/applicationusage/relativestarttime.md)
+### Timing App Use
+- [var relativeStartTime: TimeInterval](./relativestarttime.md)
   The time the user starts the app relative to the start time of the first app in a report interval.
 
 

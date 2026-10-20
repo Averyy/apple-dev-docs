@@ -1,7 +1,8 @@
 # Transcript.Index
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a position of an entry in a transcript.
 

@@ -1,7 +1,8 @@
 # peripheral(_:didReadRSSI:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that retrieving the value of the peripheral’s current Received Signal Strength Indicator (RSSI) succeeded.
 
@@ -20,9 +21,13 @@ Tells the delegate that retrieving the value of the peripheral’s current Recei
 optional func peripheral(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didReadRSSI:(NSNumber *) RSSI error:(NSError *) error;
+```
+
 #### Discussion
 
-Core Bluetooth invokes this method when your app calls the [`readRSSI()`](cbperipheral/readrssi().md) method, while the peripheral is connected to the central manager. If successful, the `error` parameter is `nil` and the parameter `RSSI` reports the peripheral’s signal strength, in decibels. If unsuccessful, the `error` parameter returns the cause of the failure.
+Core Bluetooth invokes this method when your app calls the [`readRSSI()`](../cbperipheral/readrssi%28%29.md) method, while the peripheral is connected to the central manager. If successful, the `error` parameter is `nil` and the parameter `RSSI` reports the peripheral’s signal strength, in decibels. If unsuccessful, the `error` parameter returns the cause of the failure.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Core Bluetooth invokes this method when your app calls the [`readRSSI()`](cbperi
 
 ## See Also
 
-- [func peripheralDidUpdateRSSI(CBPeripheral, error: (any Error)?)](cbperipheraldelegate/peripheraldidupdaterssi(_:error:).md)
+### Retrieving a Peripheral’s RSSI Data
+- [func peripheralDidUpdateRSSI(CBPeripheral, error: (any Error)?)](./peripheraldidupdaterssi%28_,error%29.md)
   Tells the delegate that retrieving the value of the peripheral’s current Received Signal Strength Indicator (RSSI) succeeded.
 
 

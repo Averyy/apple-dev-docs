@@ -1,7 +1,8 @@
 # formatDescriptionReplacements
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The replacement format descriptions.
 
@@ -20,15 +21,20 @@ The replacement format descriptions.
 var formatDescriptionReplacements: [AVCompositionTrackFormatDescriptionReplacement] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVCompositionTrackFormatDescriptionReplacement *> * formatDescriptionReplacements;
+```
+
 #### Discussion
 
-The property’s values specify an original and a replacement format description, as set in a previous call to [`replaceFormatDescription(_:with:)`](avmutablecompositiontrack/replaceformatdescription(_:with:).md).
+The property’s values specify an original and a replacement format description, as set in a previous call to [`replaceFormatDescription(_:with:)`](../avmutablecompositiontrack/replaceformatdescription%28_,with%29.md).
 
 ## See Also
 
-- [var formatDescriptions: [Any]](avcompositiontrack/formatdescriptions.md)
+### Managing format descriptions
+- [var formatDescriptions: [Any]](./formatdescriptions.md)
   The format descriptions of the media samples that a track references.
-- [class AVCompositionTrackFormatDescriptionReplacement](avcompositiontrackformatdescriptionreplacement.md)
+- [class AVCompositionTrackFormatDescriptionReplacement](../avcompositiontrackformatdescriptionreplacement.md)
   An object that represents a format description and its replacement.
 
 

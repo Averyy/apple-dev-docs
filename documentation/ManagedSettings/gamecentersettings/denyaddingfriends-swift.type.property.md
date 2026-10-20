@@ -1,7 +1,8 @@
 # denyAddingFriends
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting that prevents the user from adding friends in Game Center.
 
@@ -18,11 +19,12 @@ static let denyAddingFriends: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyAddingFriends` to access the metadata for [`denyAddingFriends`](gamecentersettings/denyaddingfriends-swift.property.md). The default value is `false`.
+Use `denyAddingFriends` to access the metadata for [`denyAddingFriends`](./denyaddingfriends-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyAddingFriends: Bool?](gamecentersettings/denyaddingfriends-swift.property.md)
+### Denying the ability to add friends
+- [var denyAddingFriends: Bool?](./denyaddingfriends-swift.property.md)
   A Boolean value that indicates whether to prevent the user from adding Game Center friends.
 
 

@@ -1,7 +1,8 @@
 # EvaluationSubject
 
 **Framework**: Evaluations  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the output the system under test produces.
 
@@ -22,7 +23,7 @@ protocol EvaluationSubject<Value>
 
 #### Overview
 
-Conform to this protocol to define custom subject types. The primary concrete conformance is [`ModelSubject`](modelsubject.md), which carries a value and an optional transcript for tool-call evaluation.
+Conform to this protocol to define custom subject types. The primary concrete conformance is [`ModelSubject`](./modelsubject.md), which carries a value and an optional transcript for tool-call evaluation.
 
 ```swift
 struct MySubject<Value: Codable>: EvaluationSubject {
@@ -34,28 +35,29 @@ struct MySubject<Value: Codable>: EvaluationSubject {
 ## Topics
 
 ### Associated Types
-- [associatedtype Value : Decodable, Encodable](evaluationsubject/value-swift.associatedtype.md)
+- [associatedtype Value : Decodable, Encodable](./evaluationsubject/value-swift.associatedtype.md)
   The type of value the system under test produces.
 ### Instance Properties
-- [var transcript: StructuredTranscript?](evaluationsubject/transcript.md)
+- [var transcript: StructuredTranscript?](./evaluationsubject/transcript.md)
   The structured transcript captured while producing the value, if any.
-- [var value: Self.Value](evaluationsubject/value-swift.property.md)
+- [var value: Self.Value](./evaluationsubject/value-swift.property.md)
   The typed value the system under test produces.
 
 ## Relationships
 
 ### Conforming Types
-- [ModelSubject](modelsubject.md)
+- [ModelSubject](./modelsubject.md)
 
 ## See Also
 
-- [associatedtype Subject : EvaluationSubject](evaluation/subject.md)
+### Testing an intelligent feature
+- [associatedtype Subject : EvaluationSubject](./evaluation/subject.md)
   The type of subject the system under test produces.
-- [func subject(from: Self.Sample) async throws -> Self.Subject](evaluation/subject(from:).md)
+- [func subject(from: Self.Sample) async throws -> Self.Subject](./evaluation/subject%28from%29.md)
   Produces the subject of evaluation from a given sample.
-- [struct ModelSubject](modelsubject.md)
+- [struct ModelSubject](./modelsubject.md)
   The subject type for language model evaluations.
-- [var name: String](evaluation/name.md)
+- [var name: String](./evaluation/name.md)
   The evaluation’s name in results. Defaults to the type name; override for a custom one.
 
 

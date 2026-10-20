@@ -1,7 +1,8 @@
 # WeatherSeverity.extreme
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Extraordinary threat.
 
@@ -22,13 +23,14 @@ case extreme
 
 ## See Also
 
-- [WeatherSeverity.minor](weatherseverity/minor.md)
+### Getting the properties
+- [WeatherSeverity.minor](./minor.md)
   Minimal or no known threat.
-- [WeatherSeverity.moderate](weatherseverity/moderate.md)
+- [WeatherSeverity.moderate](./moderate.md)
   Possible threat.
-- [WeatherSeverity.severe](weatherseverity/severe.md)
+- [WeatherSeverity.severe](./severe.md)
   Significant threat.
-- [WeatherSeverity.unknown](weatherseverity/unknown.md)
+- [WeatherSeverity.unknown](./unknown.md)
   Unknown threat.
 
 

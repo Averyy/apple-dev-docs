@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeIPCamera
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A networked camera accessory.
 
@@ -17,6 +18,10 @@ A networked camera accessory.
 
 ```swift
 let HMAccessoryCategoryTypeIPCamera: String
+```
+
+```c
+extern NSString * const HMAccessoryCategoryTypeIPCamera;
 ```
 
 

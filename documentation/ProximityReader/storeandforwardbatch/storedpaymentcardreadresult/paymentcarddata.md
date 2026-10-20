@@ -1,7 +1,8 @@
 # paymentCardData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Base64-encoded string that contains the encrypted payment information to send to your payment provider.
 

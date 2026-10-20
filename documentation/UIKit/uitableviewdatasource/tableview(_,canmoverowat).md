@@ -1,7 +1,8 @@
 # tableView(_:canMoveRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the data source whether a given row can move to another location in the table view.
 
@@ -18,13 +19,17 @@ Asks the data source whether a given row can move to another location in the tab
 optional func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView canMoveRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the row can be moved; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the row can be moved; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method allows the data source to specify that the reordering control for the specified row not be shown. By default, the reordering control is shown if the data source implements the [`tableView(_:moveRowAt:to:)`](uitableviewdatasource/tableview(_:moverowat:to:).md) method.
+This method allows the data source to specify that the reordering control for the specified row not be shown. By default, the reordering control is shown if the data source implements the [`tableView(_:moveRowAt:to:)`](./tableview%28_,moverowat,to%29.md) method.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This method allows the data source to specify that the reordering control for th
 
 ## See Also
 
-- [func tableView(UITableView, moveRowAt: IndexPath, to: IndexPath)](uitableviewdatasource/tableview(_:moverowat:to:).md)
+### Reordering table rows
+- [func tableView(UITableView, moveRowAt: IndexPath, to: IndexPath)](./tableview%28_,moverowat,to%29.md)
   Tells the data source to move a row at a specific location in the table view to another location.
 
 

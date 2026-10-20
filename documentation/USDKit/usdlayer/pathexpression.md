@@ -1,7 +1,8 @@
 # USDLayer.PathExpression
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A boolean expression over path patterns for selecting sets of prims.
 
@@ -26,60 +27,61 @@ Path expressions combine patterns using set operations (union, intersection, com
 ## Topics
 
 ### Initializers
-- [init()](usdlayer/pathexpression/init.md)
+- [init()](./pathexpression/init%28%29.md)
   Creates an empty path expression.
-- [init(String)](usdlayer/pathexpression/init(_:).md)
+- [init(String)](./pathexpression/init%28_%29.md)
   Creates a path expression by parsing the given string.
 ### Instance Properties
-- [var isEmpty: Bool](usdlayer/pathexpression/isempty.md)
+- [var isEmpty: Bool](./pathexpression/isempty.md)
   Whether this expression has no patterns or references.
-- [var text: String](usdlayer/pathexpression/text.md)
+- [var text: String](./pathexpression/text.md)
   The string form of this expression.
 ### Type Properties
-- [static var everyDescendant: USDLayer.PathExpression](usdlayer/pathexpression/everydescendant.md)
+- [static var everyDescendant: USDLayer.PathExpression](./pathexpression/everydescendant.md)
   An expression that matches all descendant paths from the root.
-- [static var everything: USDLayer.PathExpression](usdlayer/pathexpression/everything.md)
+- [static var everything: USDLayer.PathExpression](./pathexpression/everything.md)
   An expression that matches all paths in the scene hierarchy.
-- [static var nothing: USDLayer.PathExpression](usdlayer/pathexpression/nothing.md)
+- [static var nothing: USDLayer.PathExpression](./pathexpression/nothing.md)
   An expression that matches no paths, representing an empty selection.
-- [static var weakerReference: USDLayer.PathExpression](usdlayer/pathexpression/weakerreference.md)
+- [static var weakerReference: USDLayer.PathExpression](./pathexpression/weakerreference.md)
   A reference to a weaker expression for composition with stronger layers.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../../Swift/expressiblebyunicodescalarliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 ## See Also
 
-- [func prim(at: USDLayer.Path) -> USDPrim.Spec?](usdlayer/prim(at:).md)
+### Accessing scene description by path
+- [func prim(at: USDLayer.Path) -> USDPrim.Spec?](./prim%28at%29.md)
   Returns the prim spec authored at the given path, or `nil` if no prim spec exists there.
-- [func property(at: USDLayer.Path) -> USDPrim.Property.Spec?](usdlayer/property(at:).md)
+- [func property(at: USDLayer.Path) -> USDPrim.Property.Spec?](./property%28at%29.md)
   Returns the property spec at the given path.
-- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute.Spec?](usdlayer/attribute(at:).md)
+- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute.Spec?](./attribute%28at%29.md)
   Returns the attribute spec at the given path.
-- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship.Spec?](usdlayer/relationship(at:).md)
+- [func relationship(at: USDLayer.Path) -> USDPrim.Relationship.Spec?](./relationship%28at%29.md)
   Returns the relationship spec at the given path.
-- [func spec(at: USDLayer.Path) -> USDLayer.Spec?](usdlayer/spec(at:).md)
+- [func spec(at: USDLayer.Path) -> USDLayer.Spec?](./spec%28at%29.md)
   Returns the spec at the given path, or `nil` if no spec is authored there.
-- [func specType(at: USDLayer.Path) -> USDLayer.SpecType?](usdlayer/spectype(at:).md)
+- [func specType(at: USDLayer.Path) -> USDLayer.SpecType?](./spectype%28at%29.md)
   Returns the kind of spec authored at the given path, or `nil` if nothing is authored there.
-- [func traverse(at: USDLayer.Path, (USDLayer.Path) -> Void)](usdlayer/traverse(at:_:).md)
+- [func traverse(at: USDLayer.Path, (USDLayer.Path) -> Void)](./traverse%28at,_%29.md)
   Walks the spec tree rooted at the given path, calling `body` for each spec’s path.
-- [USDLayer.Path](usdlayer/path.md)
+- [USDLayer.Path](./path.md)
   A path within a USD scene hierarchy.
-- [USDLayer.Spec](usdlayer/spec.md)
+- [USDLayer.Spec](./spec.md)
   A handle to a single spec stored in a layer.
-- [USDLayer.SpecType](usdlayer/spectype.md)
+- [USDLayer.SpecType](./spectype.md)
   The kind of spec stored at a path in a layer.
 
 

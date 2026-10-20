@@ -1,7 +1,8 @@
 # GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The details of the data in the response.
 
@@ -10,14 +11,14 @@ The details of the data in the response.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary.md)
+- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue](./dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary.md)
   The details of the data about the queue.
 
 ## Properties
@@ -26,7 +27,8 @@ object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.Dimensions
 
 ## See Also
 
-- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints](gamecentermatchmakingnumberruleresultsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+### Objects
+- [object GameCenterMatchmakingNumberRuleResultsV1MetricResponse.Data.DataPoints](./datapoints-data.dictionary.md)
   The key properties of the data in the response.
 
 

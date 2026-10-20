@@ -1,20 +1,25 @@
 # isActivatableTextField
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var isActivatableTextField: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isActivatableTextField) BOOL activatableTextField;
 ```
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the slice’s parent column.
 
@@ -22,15 +23,16 @@ var name: String { get set }
 
 ## See Also
 
-- [var count: Int](columnslice/count.md)
+### Inspecting a Column Slice
+- [var count: Int](./count.md)
   The number of elements in the column slice.
-- [var wrappedElementType: any Any.Type](columnslice/wrappedelementtype.md)
+- [var wrappedElementType: any Any.Type](./wrappedelementtype.md)
   The underlying type of the column’s elements.
-- [func argmin() -> Int?](columnslice/argmin.md)
+- [func argmin() -> Int?](./argmin%28%29.md)
   Returns the index of the element with the lowest value, ignoring missing elements.
-- [func argmax() -> Int?](columnslice/argmax.md)
+- [func argmax() -> Int?](./argmax%28%29.md)
   Returns the index of the element with the highest value, ignoring missing elements.
-- [func isNil(at: Int) -> Bool](columnslice/isnil(at:).md)
+- [func isNil(at: Int) -> Bool](./isnil%28at%29.md)
   Returns a Boolean that indicates whether the element at an index is missing.
 
 

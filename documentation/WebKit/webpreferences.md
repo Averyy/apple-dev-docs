@@ -1,17 +1,22 @@
 # WebPreferences
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-WebPreferences encapsulates the preferences you can change per WebView object. These preferences include font, text encoding, and image settings. Normally a WebView object uses the standard preferences returned by the [`standard()`](webpreferences/standard().md) class method. However, you can modify the preferences for individual WebView instances too. Use the [`preferencesIdentifier`](webview-swift.class/preferencesidentifier.md) WebView method to change a WebView object’s preferences, or to share preferences between WebView objects. Use the [`autosaves`](webpreferences/autosaves.md) method to specify if the preferences object should be automatically saved to the user defaults database.
+WebPreferences encapsulates the preferences you can change per WebView object. These preferences include font, text encoding, and image settings. Normally a WebView object uses the standard preferences returned by the [`standard()`](./webpreferences/standard%28%29.md) class method. However, you can modify the preferences for individual WebView instances too. Use the [`preferencesIdentifier`](./webview-swift.class/preferencesidentifier.md) WebView method to change a WebView object’s preferences, or to share preferences between WebView objects. Use the [`autosaves`](./webpreferences/autosaves.md) method to specify if the preferences object should be automatically saved to the user defaults database.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 class WebPreferences
+```
+
+```objc
+@interface WebPreferences : NSObject
 ```
 
 #### Overview
@@ -23,111 +28,112 @@ The font size for a web view is different than its logical font size. The minimu
 ## Topics
 
 ### Getting the Standard Preferences
-- [class func standard() -> WebPreferences!](webpreferences/standard.md)
+- [class func standard() -> WebPreferences!](./webpreferences/standard%28%29.md)
   Returns the standard set of preferences that may be used by all WebView objects.
 ### Initializing Preferences
-- [init!(identifier: String!)](webpreferences/init(identifier:).md)
+- [init!(identifier: String!)](./webpreferences/init%28identifier%29.md)
   Returns an initialized `WebPreferences` object, creating one if it does not exist.
 ### Getting the Identifier
-- [var identifier: String!](webpreferences/identifier.md)
+- [var identifier: String!](./webpreferences/identifier.md)
   The receiver’s identifier.
 ### Saving Preferences to the User Defaults Database
-- [var autosaves: Bool](webpreferences/autosaves.md)
+- [var autosaves: Bool](./webpreferences/autosaves.md)
   A Boolean that indicates whether or not the receiver’s attributes are automatically stored in the user defaults database.
 ### Enabling Java
-- [var isJavaEnabled: Bool](webpreferences/isjavaenabled.md)
+- [var isJavaEnabled: Bool](./webpreferences/isjavaenabled.md)
   A Boolean that indicates whether or not the web view allows Java.
 ### Enabling JavaScript
-- [var isJavaScriptEnabled: Bool](webpreferences/isjavascriptenabled.md)
+- [var isJavaScriptEnabled: Bool](./webpreferences/isjavascriptenabled.md)
   A Boolean that indicates whether or not the web view allows JavaScript.
-- [var javaScriptCanOpenWindowsAutomatically: Bool](webpreferences/javascriptcanopenwindowsautomatically.md)
+- [var javaScriptCanOpenWindowsAutomatically: Bool](./webpreferences/javascriptcanopenwindowsautomatically.md)
   A Boolean that indicates whether or not the web view allows JavaScript to open windows automatically.
 ### Enabling Plug-ins
-- [var arePlugInsEnabled: Bool](webpreferences/arepluginsenabled.md)
+- [var arePlugInsEnabled: Bool](./webpreferences/arepluginsenabled.md)
   A Boolean that indicates whether or not the web view allows plug-ins.
 ### Enabling Style Sheets
-- [var userStyleSheetEnabled: Bool](webpreferences/userstylesheetenabled.md)
+- [var userStyleSheetEnabled: Bool](./webpreferences/userstylesheetenabled.md)
   A Boolean that indicates whether or not user style sheets are enabled in the web view.
 ### Getting and Setting Fonts
-- [var cursiveFontFamily: String!](webpreferences/cursivefontfamily.md)
+- [var cursiveFontFamily: String!](./webpreferences/cursivefontfamily.md)
   The cursive font family of the web view.
-- [var fantasyFontFamily: String!](webpreferences/fantasyfontfamily.md)
+- [var fantasyFontFamily: String!](./webpreferences/fantasyfontfamily.md)
   The fantasy font family of the web view.
-- [var fixedFontFamily: String!](webpreferences/fixedfontfamily.md)
+- [var fixedFontFamily: String!](./webpreferences/fixedfontfamily.md)
   The fixed font family of the web view.
-- [var sansSerifFontFamily: String!](webpreferences/sansseriffontfamily.md)
+- [var sansSerifFontFamily: String!](./webpreferences/sansseriffontfamily.md)
   The sans serif font family of the web view.
-- [var serifFontFamily: String!](webpreferences/seriffontfamily.md)
+- [var serifFontFamily: String!](./webpreferences/seriffontfamily.md)
   The serif font family of the web view.
-- [var standardFontFamily: String!](webpreferences/standardfontfamily.md)
+- [var standardFontFamily: String!](./webpreferences/standardfontfamily.md)
   The standard font family of the web view.
 ### Getting and Setting Font Sizes
-- [var defaultFixedFontSize: Int32](webpreferences/defaultfixedfontsize.md)
+- [var defaultFixedFontSize: Int32](./webpreferences/defaultfixedfontsize.md)
   The default fixed font size of the web view.
-- [var defaultFontSize: Int32](webpreferences/defaultfontsize.md)
+- [var defaultFontSize: Int32](./webpreferences/defaultfontsize.md)
   The default font size of the web view.
-- [var minimumFontSize: Int32](webpreferences/minimumfontsize.md)
+- [var minimumFontSize: Int32](./webpreferences/minimumfontsize.md)
   The minimum font size of the web view.
-- [var minimumLogicalFontSize: Int32](webpreferences/minimumlogicalfontsize.md)
+- [var minimumLogicalFontSize: Int32](./webpreferences/minimumlogicalfontsize.md)
   The minimum logical font size of the web view.
 ### Getting and Setting Text Encoding
-- [var defaultTextEncodingName: String!](webpreferences/defaulttextencodingname.md)
+- [var defaultTextEncodingName: String!](./webpreferences/defaulttextencodingname.md)
   The default text encoding of the web view.
 ### Getting and Setting Incremental Rendering
-- [var suppressesIncrementalRendering: Bool](webpreferences/suppressesincrementalrendering.md)
+- [var suppressesIncrementalRendering: Bool](./webpreferences/suppressesincrementalrendering.md)
   A Boolean that indicates whether incremental rendering should be suppressed.
 ### Handling Images
-- [var allowsAnimatedImageLooping: Bool](webpreferences/allowsanimatedimagelooping.md)
+- [var allowsAnimatedImageLooping: Bool](./webpreferences/allowsanimatedimagelooping.md)
   A Boolean that indicates whether or not the receiver allows animated images to loop.
-- [var allowsAnimatedImages: Bool](webpreferences/allowsanimatedimages.md)
+- [var allowsAnimatedImages: Bool](./webpreferences/allowsanimatedimages.md)
   A Boolean that indicates whether or not the receiver allows animated images.
-- [var loadsImagesAutomatically: Bool](webpreferences/loadsimagesautomatically.md)
+- [var loadsImagesAutomatically: Bool](./webpreferences/loadsimagesautomatically.md)
   A Boolean that indicates whether or not the web view allows images to be loaded automatically.
 ### Printing Backgrounds
-- [var shouldPrintBackgrounds: Bool](webpreferences/shouldprintbackgrounds.md)
+- [var shouldPrintBackgrounds: Bool](./webpreferences/shouldprintbackgrounds.md)
   A Boolean that indicates whether or not the web view should include backgrounds when printing.
 ### Enabling Private Browsing
-- [var privateBrowsingEnabled: Bool](webpreferences/privatebrowsingenabled.md)
+- [var privateBrowsingEnabled: Bool](./webpreferences/privatebrowsingenabled.md)
   A Boolean that indicates whether or not private browsing is enabled.
 ### Controlling User Focus
-- [var tabsToLinks: Bool](webpreferences/tabstolinks.md)
+- [var tabsToLinks: Bool](./webpreferences/tabstolinks.md)
   A Boolean that indicates whether or not the tab key will focus links.
 ### Caching
-- [var usesPageCache: Bool](webpreferences/usespagecache.md)
+- [var usesPageCache: Bool](./webpreferences/usespagecache.md)
   A Boolean that indicates whether the web views associated with the receiver should use the shared page cache.
-- [var cacheModel: WebCacheModel](webpreferences/cachemodel.md)
+- [var cacheModel: WebCacheModel](./webpreferences/cachemodel.md)
   The cache model for the web views associated with the receiver.
 ### Constants
-- [enum WebCacheModel](webcachemodel.md)
+- [enum WebCacheModel](./webcachemodel.md)
   Specifies the caching model for a web view.
 ### Notifications
-- [static let WebPreferencesChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webpreferenceschanged.md)
+- [static let WebPreferencesChanged: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webpreferenceschanged.md)
   Posted when the web preference settings are changed.
 ### Initializers
-- [init?(coder: NSCoder)](webpreferences/init(coder:).md)
+- [init?(coder: NSCoder)](./webpreferences/init%28coder%29.md)
 ### Instance Properties
-- [var allowsAirPlayForMediaPlayback: Bool](webpreferences/allowsairplayformediaplayback.md)
-- [var userStyleSheetLocation: URL!](webpreferences/userstylesheetlocation.md)
+- [var allowsAirPlayForMediaPlayback: Bool](./webpreferences/allowsairplayformediaplayback.md)
+- [var userStyleSheetLocation: URL!](./webpreferences/userstylesheetlocation.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WebView](webview-swift.class.md)
-  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
-- [protocol WebEditingDelegate](webeditingdelegate.md)
-- [protocol WebUIDelegate](webuidelegate.md)
+### Setting Up a Web View (Legacy)
+- [class WebView](./webview-swift.class.md)
+  `WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](./webframe/load%28_%29-47p2s.md) message to its main frame.
+- [protocol WebEditingDelegate](./webeditingdelegate.md)
+- [protocol WebUIDelegate](./webuidelegate.md)
   Web view user interface delegates implement this protocol to control the opening of new windows, augment the behavior of default menu items displayed when the user clicks elements, and perform other user interface–related tasks. These methods can be invoked as a result of handling JavaScript or other plug-in content. Delegates that display more than one web view per window, for example, need to implement some of these methods to handle that case. The default implementation assumes one window per web view, so non-conventional user interfaces might implement a user interface delegate.
 
 

@@ -1,7 +1,8 @@
 # readAttributeNeighborTable(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNeighborTable(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNeighborTable() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeNeighborTableWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

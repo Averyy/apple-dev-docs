@@ -1,17 +1,22 @@
 # pageSize(forPaper:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the size of the page for the specified paper type.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func pageSize(forPaper paperName: NSPrinter.PaperName) -> NSSize
+```
+
+```objc
+- (NSSize) pageSizeForPaper:(NSPrinterPaperName) paperName;
 ```
 
 #### Return Value
@@ -24,9 +29,10 @@ The size of the page, measured in points in the user coordinate space. The retur
 
 ## See Also
 
-- [NSPrinter.PaperName](nsprinter/papername.md)
+### Getting Page and Printer Information
+- [NSPrinter.PaperName](./papername.md)
   The type you use to specify the name of a type of paper.
-- [var languageLevel: Int](nsprinter/languagelevel.md)
+- [var languageLevel: Int](./languagelevel.md)
   The PostScript language level recognized by the printer.
 
 

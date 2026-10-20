@@ -1,7 +1,8 @@
 # HKElectrocardiogram.SymptomsStatus
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values indicating whether the user entered a symptom when they recorded the ECG.
 
@@ -19,37 +20,42 @@ Values indicating whether the user entered a symptom when they recorded the ECG.
 enum SymptomsStatus
 ```
 
+```c
+enum HKElectrocardiogramSymptomsStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status
-- [HKElectrocardiogram.SymptomsStatus.none](hkelectrocardiogram/symptomsstatus-swift.enum/none.md)
+- [HKElectrocardiogram.SymptomsStatus.none](./symptomsstatus-swift.enum/none.md)
   The user didn’t experience any symptoms during the duration of the electrocardiogram reading.
-- [HKElectrocardiogram.SymptomsStatus.present](hkelectrocardiogram/symptomsstatus-swift.enum/present.md)
+- [HKElectrocardiogram.SymptomsStatus.present](./symptomsstatus-swift.enum/present.md)
   The user added a symptom when they recorded the ECG.
-- [HKElectrocardiogram.SymptomsStatus.notSet](hkelectrocardiogram/symptomsstatus-swift.enum/notset.md)
+- [HKElectrocardiogram.SymptomsStatus.notSet](./symptomsstatus-swift.enum/notset.md)
   The user didn’t specify whether or not they experienced symptoms.
 ### Initializers
-- [init?(rawValue: Int)](hkelectrocardiogram/symptomsstatus-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./symptomsstatus-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var classification: HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.property.md)
+### Accessing Overview Information
+- [var classification: HKElectrocardiogram.Classification](./classification-swift.property.md)
   The ECG’s classification.
-- [HKElectrocardiogram.Classification](hkelectrocardiogram/classification-swift.enum.md)
+- [HKElectrocardiogram.Classification](./classification-swift.enum.md)
   Classifications returned by Apple Watch’s ECG algorithm.
-- [var averageHeartRate: HKQuantity?](hkelectrocardiogram/averageheartrate.md)
+- [var averageHeartRate: HKQuantity?](./averageheartrate.md)
   The user’s average heart rate during the ECG.
-- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](hkelectrocardiogram/symptomsstatus-swift.property.md)
+- [var symptomsStatus: HKElectrocardiogram.SymptomsStatus](./symptomsstatus-swift.property.md)
   A value that indicates whether the user entered a symptom when they recorded the ECG.
 
 

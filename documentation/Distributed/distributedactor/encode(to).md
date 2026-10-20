@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Distributed  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the `actor.id` as a single value into the passed `encoder`.
 
@@ -11,7 +12,7 @@ Encodes the `actor.id` as a single value into the passed `encoder`.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,6 +21,8 @@ Encodes the `actor.id` as a single value into the passed `encoder`.
 nonisolated
 func encode(to encoder: any Encoder) throws
 ```
+
+Available when `ID` conforms to `Encodable`.
 
 
 ---

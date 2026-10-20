@@ -2,10 +2,11 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@
 func commitEditing() -> Bool
 ```
 
+```objc
+- (BOOL) commitEditing;
+```
+
 ## See Also
 
-- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](nseditor/commitediting(withdelegate:didcommit:contextinfo:).md)
-- [func commitEditingWithoutPresentingError() throws](nseditor/commiteditingwithoutpresentingerror.md)
-- [func discardEditing()](nseditor/discardediting.md)
+### Instance Methods
+- [func commitEditing(withDelegate: Any?, didCommit: Selector?, contextInfo: UnsafeMutableRawPointer?)](./commitediting%28withdelegate,didcommit,contextinfo%29.md)
+- [func commitEditingWithoutPresentingError() throws](./commiteditingwithoutpresentingerror%28%29.md)
+- [func discardEditing()](./discardediting%28%29.md)
 
 
 ---

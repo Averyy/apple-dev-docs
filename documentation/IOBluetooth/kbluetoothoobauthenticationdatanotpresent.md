@@ -1,10 +1,11 @@
 # kBluetoothOOBAuthenticationDataNotPresent
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothOOBAuthenticationDataNotPresent: BluetoothOOBDataPresenceValues { get }
 ```
 
+```c
+kBluetoothOOBAuthenticationDataNotPresent
+```
+
 ## See Also
 
-- [var kBluetoothOOBAuthenticationDataFromRemoteDevicePresent: BluetoothOOBDataPresenceValues](kbluetoothoobauthenticationdatafromremotedevicepresent.md)
+### Constants
+- [var kBluetoothOOBAuthenticationDataFromRemoteDevicePresent: BluetoothOOBDataPresenceValues](./kbluetoothoobauthenticationdatafromremotedevicepresent.md)
 
 
 ---

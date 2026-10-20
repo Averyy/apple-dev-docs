@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a navigation split view.
@@ -23,9 +24,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](navigationsplitviewstyle/makebody(configuration:).md)
+### Creating custom styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view that represents the body of a navigation split view.
-- [NavigationSplitViewStyle.Configuration](navigationsplitviewstyle/configuration.md)
+- [NavigationSplitViewStyle.Configuration](./configuration.md)
   The properties of a navigation split view instance.
 
 

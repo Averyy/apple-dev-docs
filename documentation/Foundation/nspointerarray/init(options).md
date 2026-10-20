@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver to use the given options.
 
@@ -20,6 +21,10 @@ Initializes the receiver to use the given options.
 init(options: NSPointerFunctions.Options = [])
 ```
 
+```objc
+- (instancetype) initWithOptions:(NSPointerFunctionsOptions) options;
+```
+
 #### Return Value
 
 The receiver, initialized to use the given options.
@@ -30,12 +35,14 @@ The receiver, initialized to use the given options.
 
 ## See Also
 
-- [Collections Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
-- [init(pointerFunctions: NSPointerFunctions)](nspointerarray/init(pointerfunctions:).md)
+### Related Documentation
+- [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+### Creating and Initializing a New Pointer Array
+- [init(pointerFunctions: NSPointerFunctions)](./init%28pointerfunctions%29.md)
   Initializes the receiver to use the given functions.
-- [class func strongObjects() -> NSPointerArray](nspointerarray/strongobjects.md)
+- [class func strongObjects() -> NSPointerArray](./strongobjects%28%29.md)
   Returns a new pointer array that maintains strong references to its elements.
-- [class func weakObjects() -> NSPointerArray](nspointerarray/weakobjects.md)
+- [class func weakObjects() -> NSPointerArray](./weakobjects%28%29.md)
   Returns a new pointer array that maintains weak references to its elements.
 
 

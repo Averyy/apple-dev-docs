@@ -1,7 +1,8 @@
 # StereoPropertiesProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The StereoPropertiesProvider serves the latest viewpoint properties on the device.
 
@@ -17,32 +18,33 @@ final class StereoPropertiesProvider
 ## Topics
 
 ### Initializers
-- [init()](stereopropertiesprovider/init.md)
+- [init()](./stereopropertiesprovider/init%28%29.md)
   Initialize the StereoPropertiesProvider.
 ### Instance Properties
-- [var description: String](stereopropertiesprovider/description.md)
+- [var description: String](./stereopropertiesprovider/description.md)
   A textual representation of this stereo properties provider.
-- [var latestViewpointProperties: ViewpointProperties?](stereopropertiesprovider/latestviewpointproperties.md)
+- [var latestViewpointProperties: ViewpointProperties?](./stereopropertiesprovider/latestviewpointproperties.md)
   The latest viewpoint properties, if available.
-- [var state: DataProviderState](stereopropertiesprovider/state.md)
+- [var state: DataProviderState](./stereopropertiesprovider/state.md)
   The state of this stereo properties provider.
 ### Type Properties
-- [static var isSupported: Bool](stereopropertiesprovider/issupported.md)
+- [static var isSupported: Bool](./stereopropertiesprovider/issupported.md)
   Determines whether this device supports the stereo properties provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](stereopropertiesprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./stereopropertiesprovider/requiredauthorizations.md)
   The authorization type(s) required by the stereo properties provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ViewpointProperties](viewpointproperties.md)
+### Rendering
+- [struct ViewpointProperties](./viewpointproperties.md)
   The ViewpointProperties is a record of render camera transforms at some particular time.
 
 

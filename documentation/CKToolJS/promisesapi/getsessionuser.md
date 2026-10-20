@@ -1,7 +1,8 @@
 # getSessionUser
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns details for the user in current session.
 
@@ -10,7 +11,7 @@ Returns details for the user in current session.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise getSessionUser(
 	GetSessionUserParams params
 );
@@ -55,11 +56,12 @@ If successful, the returned response contains a `CKDBSessionUserResponse` object
 
 ## See Also
 
-- [getTeams](promisesapi/getteams.md)
+### User and Team
+- [getTeams](./getteams.md)
   Fetches a list of teams the current user is in.
-- [Team](team.md)
+- [Team](../team.md)
   Details of a developer team.
-- [TeamsResponse](teamsresponse.md)
+- [TeamsResponse](../teamsresponse.md)
   Response object for a list of teams.
 
 

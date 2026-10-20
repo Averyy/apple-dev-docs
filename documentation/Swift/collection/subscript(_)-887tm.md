@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Accesses the element at the specified position.
@@ -33,11 +34,27 @@ print(streets[1])
 
 You can subscript a collection with any valid index other than the collection’s end index. The end index refers to the position one past the last element of a collection, so it doesn’t correspond with an element.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
 - `position`: The position of the element to access. `position` must be a valid index of the collection that is not equal to the `endIndex` property.
+
+## Default Implementations
+
+### Collection Implementations
+- [subscript<R>(R) -> Self.SubSequence](./subscript%28_%29-2ew5d.md)
+  Accesses the contiguous subrange of the collection’s elements specified by a range expression.
+- [subscript(UnboundedRange) -> Self.SubSequence](./subscript%28_%29-593m9.md)
+- [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](./subscript%28_%29-6dbv1.md)
+  Accesses a view of this collection with the elements at the given indices.
+- [subscript(Range<Self.Index>) -> Slice<Self>](./subscript%28_%29-6nizk.md)
+  Accesses a contiguous subrange of the collection’s elements.
+### MutableCollection Implementations
+- [subscript<R>(R) -> Self.SubSequence](../mutablecollection/subscript%28_%29-1wd4v.md)
+- [subscript(Range<Self.Index>) -> Slice<Self>](../mutablecollection/subscript%28_%29-2qem1.md)
+  Accesses a contiguous subrange of the collection’s elements.
+- [subscript(UnboundedRange) -> Self.SubSequence](../mutablecollection/subscript%28_%29-37d4d.md)
 
 
 ---

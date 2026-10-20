@@ -1,14 +1,15 @@
 # circle_queue_head_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef struct circle_queue_head {
     ...
 } circle_queue_head_t;
@@ -17,7 +18,7 @@ typedef struct circle_queue_head {
 ## Topics
 
 ### Instance Properties
-- [head](circle_queue_head_t/3181803-head.md)
+- [head](./circle_queue_head_t/api-3181803-head.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PDFWidgetControlType.checkBoxControl
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Check box control.
 
@@ -10,7 +11,7 @@ Check box control.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Check box control.
 case checkBoxControl
 ```
 
+```c
+kPDFWidgetCheckBoxControl
+```
+
 ## Mentions
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+- [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
 ## See Also
 
-- [PDFWidgetControlType.unknownControl](pdfwidgetcontroltype/unknowncontrol.md)
+### Constants
+- [PDFWidgetControlType.unknownControl](./unknowncontrol.md)
   Unknown control type.
-- [PDFWidgetControlType.pushButtonControl](pdfwidgetcontroltype/pushbuttoncontrol.md)
+- [PDFWidgetControlType.pushButtonControl](./pushbuttoncontrol.md)
   Push button control.
-- [PDFWidgetControlType.radioButtonControl](pdfwidgetcontroltype/radiobuttoncontrol.md)
+- [PDFWidgetControlType.radioButtonControl](./radiobuttoncontrol.md)
   Radio button control.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A mode that determines whether Metal tracks and synchronizes resource access.
@@ -20,23 +21,28 @@ A mode that determines whether Metal tracks and synchronizes resource access.
 var hazardTrackingMode: MTLHazardTrackingMode { get }
 ```
 
+```objc
+@property (readonly) MTLHazardTrackingMode hazardTrackingMode;
+```
+
 #### Discussion
 
-This value can be either [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) or [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
+This value can be either [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md) or [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md).
 
 ## See Also
 
-- [var cpuCacheMode: MTLCPUCacheMode](mtlresource/cpucachemode.md)
+### Reading memory and storage properties
+- [var cpuCacheMode: MTLCPUCacheMode](./cpucachemode.md)
   The CPU cache mode that defines the CPU mapping of the resource.
-- [var storageMode: MTLStorageMode](mtlresource/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The location and access permissions of the resource.
-- [var resourceOptions: MTLResourceOptions](mtlresource/resourceoptions.md)
+- [var resourceOptions: MTLResourceOptions](./resourceoptions.md)
   The storage mode, CPU cache mode, and hazard tracking mode of the resource.
-- [enum MTLCPUCacheMode](mtlcpucachemode.md)
+- [enum MTLCPUCacheMode](../mtlcpucachemode.md)
   Options for the CPU cache mode that define the CPU mapping of the resource.
-- [enum MTLStorageMode](mtlstoragemode.md)
+- [enum MTLStorageMode](../mtlstoragemode.md)
   Options for the memory location and access permissions for a resource.
-- [enum MTLHazardTrackingMode](mtlhazardtrackingmode.md)
+- [enum MTLHazardTrackingMode](../mtlhazardtrackingmode.md)
   Options that control whether Metal automatically tracks and prevents memory hazards for resources.
 
 

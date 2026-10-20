@@ -1,7 +1,8 @@
 # VideoProcessor
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that performs offline analysis of video content.
 
@@ -22,7 +23,7 @@ final class VideoProcessor
 
 #### Overview
 
-A video processor streamlines video content analysis through frame-by-frame processing. Instead of manually extracting frames, the video processor manages the processing pipeline and delivers results through convenient async streams. You can attach multiple different analysis requests to the same [`VideoProcessor`](videoprocessor.md) instance and they’ll all operate on the same frames simultaneously. For example, you can provide a video and perform aesthetic scoring, face detection, and object recognition all at once without processing the video multiple times.
+A video processor streamlines video content analysis through frame-by-frame processing. Instead of manually extracting frames, the video processor manages the processing pipeline and delivers results through convenient async streams. You can attach multiple different analysis requests to the same [`VideoProcessor`](./videoprocessor.md) instance and they’ll all operate on the same frames simultaneously. For example, you can provide a video and perform aesthetic scoring, face detection, and object recognition all at once without processing the video multiple times.
 
 ```swift
 let videoURL = // A local `URL` path to the video you want to process.
@@ -35,7 +36,7 @@ let aestheticsScoresRequest = CalculateImageAestheticsScoresRequest()
 let faceDetectionRequest = DetectFaceRectanglesRequest()
 ```
 
-Processing every single video frame provides the most accuracy, but can be computationally expensive and time-consuming. Before you begin video analysis, determine how many frames to process by using [`VideoProcessor.Cadence`](videoprocessor/cadence.md). [`VideoProcessor.Cadence.timeInterval(_:)`](videoprocessor/cadence/timeinterval(_:).md) processes frames at regular intervals, which provides consistent sampling throughout the video’s duration.
+Processing every single video frame provides the most accuracy, but can be computationally expensive and time-consuming. Before you begin video analysis, determine how many frames to process by using [`VideoProcessor.Cadence`](./videoprocessor/cadence.md). [`VideoProcessor.Cadence.timeInterval(_:)`](./videoprocessor/cadence/timeinterval%28_%29.md) processes frames at regular intervals, which provides consistent sampling throughout the video’s duration.
 
 ```swift
 do {
@@ -78,34 +79,35 @@ for try await observation in aestheticsScoreStream {
 ## Topics
 
 ### Creating a video processor
-- [init(URL)](videoprocessor/init(_:).md)
+- [init(URL)](./videoprocessor/init%28_%29.md)
   Creates a video processor to perform framework requests against the video asset you specify.
 ### Adding and removing a request
 - [func addRequest<T>(T, cadence: VideoProcessor.Cadence?) async throws -> some AsyncSequence<T.Result, any Error>
-](videoprocessor/addrequest(_:cadence:).md)
+](./videoprocessor/addrequest%28_,cadence%29.md)
   Adds a request to the video processor.
-- [VideoProcessor.Cadence](videoprocessor/cadence.md)
+- [VideoProcessor.Cadence](./videoprocessor/cadence.md)
   A type that describes the video processing cadence.
-- [func removeRequest(any VisionRequest) async -> Bool](videoprocessor/removerequest(_:).md)
+- [func removeRequest(any VisionRequest) async -> Bool](./videoprocessor/removerequest%28_%29.md)
   Stops performing a request on future frames.
 ### Starting the analysis
-- [func startAnalysis(of: CMTimeRange?)](videoprocessor/startanalysis(of:).md)
+- [func startAnalysis(of: CMTimeRange?)](./videoprocessor/startanalysis%28of%29.md)
   Begins analyzing video frames.
 ### Cancelling the analysis
-- [func cancel() async](videoprocessor/cancel.md)
+- [func cancel() async](./videoprocessor/cancel%28%29.md)
   Stops the video processor.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ImageRequestHandler](imagerequesthandler.md)
+### Request handlers
+- [class ImageRequestHandler](./imagerequesthandler.md)
   An object that processes one or more image-analysis requests pertaining to a single image.
-- [class TargetedImageRequestHandler](targetedimagerequesthandler.md)
+- [class TargetedImageRequestHandler](./targetedimagerequesthandler.md)
   An object that performs image-analysis requests on two images.
 
 

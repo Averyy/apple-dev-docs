@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an observed object with an initial wrapped value.
 
@@ -23,7 +24,7 @@ Creates an observed object with an initial wrapped value.
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, declare an input to a view with the `@ObservedObject` attribute, and pass a value to this input when you instantiate the view. Unlike a [`StateObject`](stateobject.md) which manages data storage, you use an observed object to refer to storage that you manage elsewhere, as in the following example:
+Don’t call this initializer directly. Instead, declare an input to a view with the `@ObservedObject` attribute, and pass a value to this input when you instantiate the view. Unlike a [`StateObject`](../stateobject.md) which manages data storage, you use an observed object to refer to storage that you manage elsewhere, as in the following example:
 
 ```swift
 class DataModel: ObservableObject {
@@ -57,7 +58,8 @@ Explicitly calling the observed object initializer in `MySubView` would behave c
 
 ## See Also
 
-- [init(initialValue: ObjectType)](observedobject/init(initialvalue:).md)
+### Creating an observed object
+- [init(initialValue: ObjectType)](./init%28initialvalue%29.md)
   Creates an observed object with an initial value.
 
 

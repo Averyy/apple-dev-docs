@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorPeripheral1Combo
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorPeripheral1Combo = 0x30
 ```
 

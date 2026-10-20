@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsSuspendedMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is in a suspended state.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is in a suspended state.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsSuspendedMask = (1 << kUSBInformationDeviceIsSuspendedBit)
 ```
 

@@ -1,7 +1,8 @@
 # loadedTimeRanges
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -21,11 +22,12 @@ var loadedTimeRanges: [CMTimeRange] { get }
 
 ## See Also
 
-- [var fromVariant: AVAssetVariant?](avmetricplayeritemvariantswitchstartevent/fromvariant.md)
-- [var toVariant: AVAssetVariant](avmetricplayeritemvariantswitchstartevent/tovariant.md)
-- [var audioRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/audiorendition.md)
-- [var videoRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/videorendition.md)
-- [var subtitleRendition: AVMetricMediaRendition](avmetricplayeritemvariantswitchstartevent/subtitlerendition.md)
+### Inspecting the event
+- [var fromVariant: AVAssetVariant?](./fromvariant.md)
+- [var toVariant: AVAssetVariant](./tovariant.md)
+- [var audioRendition: AVMetricMediaRendition](./audiorendition.md)
+- [var videoRendition: AVMetricMediaRendition](./videorendition.md)
+- [var subtitleRendition: AVMetricMediaRendition](./subtitlerendition.md)
 
 
 ---

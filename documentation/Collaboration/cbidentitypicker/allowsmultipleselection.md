@@ -1,7 +1,8 @@
 # allowsMultipleSelection
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the user is allowed to select multiple identities.
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the user is allowed to select multiple identi
 var allowsMultipleSelection: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL allowsMultipleSelection;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the user can select multiple records; otherwise, [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the user can select multiple records; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var title: String?](cbidentitypicker/title.md)
+### Setting and Getting Properties
+- [var title: String?](./title.md)
   The title of the identity picker.
 
 

@@ -1,7 +1,8 @@
 # UIFocusGuide
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that exposes nonview areas as focusable.
 
@@ -19,44 +20,49 @@ An object that exposes nonview areas as focusable.
 class UIFocusGuide
 ```
 
+```objc
+@interface UIFocusGuide : UILayoutGuide
+```
+
 ## Mentions
 
-- [Adding user-focusable elements to a tvOS app](adding-user-focusable-elements-to-a-tvos-app.md)
-- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
+- [Adding user-focusable elements to a tvOS app](./adding-user-focusable-elements-to-a-tvos-app.md)
+- [Creating custom navigation interactions](./creating-custom-navigation-interactions.md)
 
 #### Overview
 
-As a subclass of [`UILayoutGuide`](uilayoutguide.md), a focus guide is not a view and does not define a new view or participate in the view hierarchy at all, except as an Auto Layout guide. Unlike [`UILayoutGuide`](uilayoutguide.md), [`UIFocusGuide`](uifocusguide.md) represents an invisible, focusable region that can redirect focus movement to other views. The `UIFocus.h` header file, including its related classes and its protocol, creates a single high-level software interface for controlling focus in apps that use focus-based input. This programming interface also helps to control focus behavior on the screen.
+As a subclass of [`UILayoutGuide`](./uilayoutguide.md), a focus guide is not a view and does not define a new view or participate in the view hierarchy at all, except as an Auto Layout guide. Unlike [`UILayoutGuide`](./uilayoutguide.md), [`UIFocusGuide`](./uifocusguide.md) represents an invisible, focusable region that can redirect focus movement to other views. The `UIFocus.h` header file, including its related classes and its protocol, creates a single high-level software interface for controlling focus in apps that use focus-based input. This programming interface also helps to control focus behavior on the screen.
 
 ## Topics
 
 ### Enabling focus
-- [var isEnabled: Bool](uifocusguide/isenabled.md)
+- [var isEnabled: Bool](./uifocusguide/isenabled.md)
   A Boolean value that indicates whether the guide is focusable.
-- [var preferredFocusEnvironments: [any UIFocusEnvironment]!](uifocusguide/preferredfocusenvironments.md)
+- [var preferredFocusEnvironments: [any UIFocusEnvironment]!](./uifocusguide/preferredfocusenvironments.md)
   An array of focus environments to which the guide directs focus, ordered by priority.
-- [var preferredFocusedView: UIView?](uifocusguide/preferredfocusedview.md)
+- [var preferredFocusedView: UIView?](./uifocusguide/preferredfocusedview.md)
   The view that the focus will be redirected to if this guide is focused.
 
 ## Relationships
 
 ### Inherits From
-- [UILayoutGuide](uilayoutguide.md)
+- [UILayoutGuide](./uilayoutguide.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIPopoverPresentationControllerSourceItem](./uipopoverpresentationcontrollersourceitem.md)
 
 ## See Also
 
-- [Creating custom navigation interactions](creating-custom-navigation-interactions.md)
+### Focus guides
+- [Creating custom navigation interactions](./creating-custom-navigation-interactions.md)
   Build nonstandard navigation interactions that move focus to the desired location.
 
 

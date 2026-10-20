@@ -1,7 +1,8 @@
 # CarKeyRemoteControlSession.ContinuationStrategy.manual
 
 **Framework**: CarKey  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Give your app control over the incoming continuation requests and allow to exchange data with the vehicle.
 

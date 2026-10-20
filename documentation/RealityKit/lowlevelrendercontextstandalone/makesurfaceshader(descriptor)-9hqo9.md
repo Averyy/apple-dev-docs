@@ -1,7 +1,8 @@
 # makeSurfaceShader(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously creates a custom surface shader from a user-authored Metal function descriptor.
 
@@ -18,13 +19,19 @@ nonisolated
 (nonsending) final func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
+**Other overloads**:
+
+```swift
+final func makeSurfaceShader(descriptor: LowLevelMaterialResource.SurfaceShader.Descriptor) throws -> sending LowLevelMaterialResource.SurfaceShader
+```
+
 #### Return Value
 
-A compiled [`LowLevelMaterialResource.SurfaceShader`](lowlevelmaterialresource/surfaceshader.md).
+A compiled [`LowLevelMaterialResource.SurfaceShader`](../lowlevelmaterialresource/surfaceshader.md).
 
 #### Discussion
 
-> **Note**: An error if the specified Metal function cannot be found or compiled.
+> **Throws**: An error if the specified Metal function cannot be found or compiled.
 
 ## Parameters
 

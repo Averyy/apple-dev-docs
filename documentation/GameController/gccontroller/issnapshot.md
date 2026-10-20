@@ -1,7 +1,8 @@
 # isSnapshot
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the controller is a snapshot of a controller.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the controller is a snapshot of a control
 var isSnapshot: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSnapshot) BOOL snapshot;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the controller is a snapshot of a controller. A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. If [`false`](https://developer.apple.com/documentation/swift/false), the controller is a real or virtual controller.
+If [`true`](../../Swift/true.md), the controller is a snapshot of a controller. A snapshot is a copy of a real or virtual controller at a moment in time with its current element values. If [`false`](../../Swift/false.md), the controller is a real or virtual controller.
 
 ## See Also
 
-- [class func withExtendedGamepad() -> GCController](gccontroller/withextendedgamepad.md)
+### Creating snapshots
+- [class func withExtendedGamepad() -> GCController](./withextendedgamepad%28%29.md)
   Returns a snapshot of a newly created controller with an extended gamepad profile.
-- [class func withMicroGamepad() -> GCController](gccontroller/withmicrogamepad.md)
+- [class func withMicroGamepad() -> GCController](./withmicrogamepad%28%29.md)
   Returns a snapshot of a newly created controller with a micro gamepad profile.
-- [func capture() -> GCController](gccontroller/capture.md)
+- [func capture() -> GCController](./capture%28%29.md)
   Returns a snapshot of the controller with its current element values.
 
 

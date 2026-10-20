@@ -1,7 +1,8 @@
 # maneuvers
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 maneuvers is an array of CPManeuver objects, each describes a single maneuver.
 
@@ -14,6 +15,10 @@ maneuvers is an array of CPManeuver objects, each describes a single maneuver.
 
 ```swift
 var maneuvers: [CPManeuver] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<CPManeuver *> * maneuvers;
 ```
 
 

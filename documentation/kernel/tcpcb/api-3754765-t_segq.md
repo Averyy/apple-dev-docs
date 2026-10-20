@@ -1,14 +1,15 @@
 # t_segq
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 struct tsegqe_head t_segq;
 ```
 

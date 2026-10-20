@@ -1,7 +1,8 @@
 # length
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of octets in the object identifier.
 
@@ -18,9 +19,14 @@ The number of octets in the object identifier.
 var length: OM_uint32
 ```
 
+```c
+OM_uint32 length;
+```
+
 ## See Also
 
-- [var elements: UnsafeMutableRawPointer!](gss_oid_desc_struct/elements.md)
+### Instance Properties
+- [var elements: UnsafeMutableRawPointer!](./elements.md)
   A pointer to the octets that make up the object identifier.
 
 

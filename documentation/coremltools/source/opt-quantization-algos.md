@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-quantization-alg
 
 # Quantization Algorithms
 
-**
-
-- [.md](../_sources/source/opt-quantization-algos.md)
-- **
-
-.pdf
-
-**
-
-# Quantization Algorithms
-
- Table of contents 
-
-## Contents
-
-# Quantization Algorithms
-
 Following are the various algorithms available in Core ML Tools to quantize a model:
 
 - Post-training (data-free) weight quantization
@@ -79,14 +62,12 @@ For activation quantization, the calibration data based approach should work wel
 
 | Model Name | Config | Optimization Workflow | Compression Ratio | Accuracy |
 | --- | --- | --- | --- | --- |
-| MobileNetv2-1.0 | Float16 | n/a | 1.0 | 71.86 |
-| MobileNetv2-1.0 | Weight-only | PTQ | 1.92 | 71.78 |
-| MobileNetv2-1.0 | Weight & activation | QAT | 1.92 | 71.66 ± 0.04 |
-| ResNet50 | Float16 | n/a | 1.0 | 76.14 |
-| ResNet50 | Weight-only | PTQ | 1.99 | 76.10 |
-| ResNet50 | Weight & activation | QAT | 1.98 | 76.80 ± 0.05 |
-| MobileViTv2-1.0 | Float16 | n/a | 1.0 | 78.09 |
-| MobileViTv2-1.0 | Weight-only | PTQ | 1.92 | 77.66 |
-| MobileViTv2-1.0 | Weight & activation | QAT | 1.89 | 76.89 ± 0.07 |
-
-** Contents
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileNetV2Alpha1.mlpackage.zip) | Float16 | n/a | 1.0 | 71.86 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/quantized/MobileNetV2Alpha1WeightOnlySymmetricQuantized.mlpackage.zip) | Weight-only | PTQ | 1.92 | 71.78 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/MobileNetV2Alpha1SymmetricPerChannel.mlpackage.zip) | [Weight & activation](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/MobileNetV2Alpha1SymmetricPerChannel.yaml) | QAT | 1.92 | 71.66 ± 0.04 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/ResNet50.mlpackage.zip) | Float16 | n/a | 1.0 | 76.14 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/quantized/ResNet50WeightOnlySymmetricQuantized.mlpackage.zip) | Weight-only | PTQ | 1.99 | 76.10 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/ResNet50SymmetricPerChannel.mlpackage.zip) | [Weight & activation](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/ResNet50SymmetricPerChannel.yaml) | QAT | 1.98 | 76.80 ± 0.05 |
+| [MobileViTv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileViTV2Alpha1.mlpackage.zip) | Float16 | n/a | 1.0 | 78.09 |
+| [MobileViTv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/post_training_compressed/quantized/MobileViTV2Alpha1WeightOnlySymmetricQuantized.mlpackage.zip) | Weight-only | PTQ | 1.92 | 77.66 |
+| [MobileViTv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/MobileViTV2Alpha1SymmetricPerChannel.mlpackage.zip) | [Weight & activation](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/quantized/MobileViTV2Alpha1SymmetricPerChannel.yaml) | QAT | 1.89 | 76.89 ± 0.07 |

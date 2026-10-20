@@ -1,7 +1,8 @@
 # network
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network object that the you initialize the attachment with.
 
@@ -14,9 +15,14 @@ The network object that the you initialize the attachment with.
 var network: vmnet_network_ref { get }
 ```
 
+```objc
+@property (readonly) vmnet_network_ref network;
+```
+
 ## See Also
 
-- [init(network: vmnet_network_ref)](vzvmnetnetworkdeviceattachment/init(network:).md)
+### Creating the vmnet network device attachment
+- [init(network: vmnet_network_ref)](./init%28network%29.md)
   Creates the attachment and configures it with the specified data.
 
 

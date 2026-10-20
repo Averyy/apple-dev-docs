@@ -1,7 +1,8 @@
 # staticPower
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes average consumption in milliwatts. Unused; drivers may specify 0.
 
@@ -10,7 +11,7 @@ Describes average consumption in milliwatts. Unused; drivers may specify 0.
 
 ## Declaration
 
-```swift
+```c
 unsigned long staticPower;
 ```
 

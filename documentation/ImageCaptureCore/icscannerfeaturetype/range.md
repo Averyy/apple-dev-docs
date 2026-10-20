@@ -1,7 +1,8 @@
 # ICScannerFeatureType.range
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A feature with a value that lies within a range.
 
@@ -14,13 +15,18 @@ A feature with a value that lies within a range.
 case range
 ```
 
+```c
+ICScannerFeatureTypeRange
+```
+
 ## See Also
 
-- [ICScannerFeatureType.boolean](icscannerfeaturetype/boolean.md)
+### Constants
+- [ICScannerFeatureType.boolean](./boolean.md)
   A feature with a value of YES or NO.
-- [ICScannerFeatureType.enumeration](icscannerfeaturetype/enumeration.md)
+- [ICScannerFeatureType.enumeration](./enumeration.md)
   A feature that can have one of several discrete values, strings, or numbers.
-- [ICScannerFeatureType.template](icscannerfeaturetype/template.md)
+- [ICScannerFeatureType.template](./template.md)
   A group of one or more rectangular scan areas that can be used with a scanner functional unit.
 
 

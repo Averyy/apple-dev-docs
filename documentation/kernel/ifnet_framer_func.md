@@ -1,18 +1,19 @@
 # ifnet_framer_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*ifnet_framer_func)(ifnet_t interface, mbuf_t *packet, const struct sockaddr *dest, const char *dest_linkaddr, const char *frame_type);
 ```
 
-#### Return_value
+#### Return Value
 
 If the result is zero, processing will continue normally. If the result is EJUSTRETURN, processing will stop but the packet will not be freed. If the result is anything else, the processing will stop and the packet will be freed.
 
@@ -32,26 +33,27 @@ ifnet_framer_func is called for each outbound packet to give the interface an op
 
 ## See Also
 
-- [ifnet_add_proto_func](ifnet_add_proto_func.md)
-- [ifnet_attach_proto_param](ifnet_attach_proto_param.md)
-- [ifnet_attach_proto_param_v2](ifnet_attach_proto_param_v2.md)
-- [ifnet_check_multi](ifnet_check_multi.md)
-- [ifnet_del_proto_func](ifnet_del_proto_func.md)
-- [ifnet_demux_desc](ifnet_demux_desc.md)
-- [ifnet_demux_func](ifnet_demux_func.md)
-- [ifnet_detached_func](ifnet_detached_func.md)
-- [ifnet_event_func](ifnet_event_func.md)
-- [ifnet_family_t](ifnet_family_t.md)
+### ifnet
+- [ifnet_add_proto_func](./ifnet_add_proto_func.md)
+- [ifnet_attach_proto_param](./ifnet_attach_proto_param.md)
+- [ifnet_attach_proto_param_v2](./ifnet_attach_proto_param_v2.md)
+- [ifnet_check_multi](./ifnet_check_multi.md)
+- [ifnet_del_proto_func](./ifnet_del_proto_func.md)
+- [ifnet_demux_desc](./ifnet_demux_desc.md)
+- [ifnet_demux_func](./ifnet_demux_func.md)
+- [ifnet_detached_func](./ifnet_detached_func.md)
+- [ifnet_event_func](./ifnet_event_func.md)
+- [ifnet_family_t](./ifnet_family_t.md)
   Storage type for the interface family.
-- [ifnet_init_params](ifnet_init_params.md)
-- [ifnet_ioctl_func](ifnet_ioctl_func.md)
-- [ifnet_offload_t](ifnet_offload_t.md)
+- [ifnet_init_params](./ifnet_init_params.md)
+- [ifnet_ioctl_func](./ifnet_ioctl_func.md)
+- [ifnet_offload_t](./ifnet_offload_t.md)
   Flags indicating the offload support of the interface.
-- [ifnet_output_func](ifnet_output_func.md)
-- [ifnet_set_bpf_tap](ifnet_set_bpf_tap.md)
-- [ifnet_stat_increment_param](ifnet_stat_increment_param.md)
-- [ifnet_stats_param](ifnet_stats_param.md)
-- [ifnet_t](ifnet_t.md)
+- [ifnet_output_func](./ifnet_output_func.md)
+- [ifnet_set_bpf_tap](./ifnet_set_bpf_tap.md)
+- [ifnet_stat_increment_param](./ifnet_stat_increment_param.md)
+- [ifnet_stats_param](./ifnet_stats_param.md)
+- [ifnet_t](./ifnet_t.md)
 
 
 ---

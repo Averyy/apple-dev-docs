@@ -1,7 +1,8 @@
 # Get Location Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single location group by its unique identifier.
 
@@ -27,7 +28,7 @@ Fetching a group by ID differs from a bulk query in a couple of ways:
 
 | Constraint | Detail |
 | --- | --- |
-| Single group only | Retrieves one group by ID. Use [`Query Location Groups`](query-location-groups.md) to retrieve multiple groups with filters. |
+| Single group only | Retrieves one group by ID. Use [`Query Location Groups`](./query-location-groups.md) to retrieve multiple groups with filters. |
 | Deleted groups | Soft-deleted groups are still retrievable by ID. They appear in the response with `systemStatus: DELETED`. |
 
 #### Payload Examples
@@ -36,7 +37,7 @@ Fetching a group by ID differs from a bulk query in a couple of ways:
 
 Retrieves a single location group by its unique identifier.
 
-```None
+```
 GET https://api.ads.apple.com/v1/location-groups/5764607523034238976
 ```
 
@@ -80,17 +81,33 @@ GET https://api.ads.apple.com/v1/location-groups/5764607523034238976
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`LocationGroupResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Create Location Group](create-location-group.md)
+- [Create Location Group](./create-location-group.md)
   Create a named group of locations for geographic targeting.
-- [Query Location Groups](query-location-groups.md)
+- [Query Location Groups](./query-location-groups.md)
   Retrieve a paginated list of location groups using filters and sorting.
-- [Update Location Group](update-location-group.md)
+- [Update Location Group](./update-location-group.md)
   Update an existing location group’s name, rules, or location membership.
-- [Delete Location Group](delete-location-group.md)
+- [Delete Location Group](./delete-location-group.md)
   Delete a location group by its unique identifier.
 
 

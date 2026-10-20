@@ -1,7 +1,8 @@
 # stereoOrderReversed
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Changes the default ordering of eye data, switching it from left-to-right to right-to-left.
 
@@ -20,13 +21,18 @@ Changes the default ordering of eye data, switching it from left-to-right to rig
 static var stereoOrderReversed: CMStereoViewInterpretationOptions { get }
 ```
 
+```c
+kCMStereoViewInterpretation_StereoOrderReversed
+```
+
 #### Discussion
 
-Setting the [`stereoOrderReversed`](cmstereoviewinterpretationoptions/stereoorderreversed.md) flag changes interpretations of geometry and affects internal storage.
+Setting the [`stereoOrderReversed`](./stereoorderreversed.md) flag changes interpretations of geometry and affects internal storage.
 
 ## See Also
 
-- [static var additionalViews: CMStereoViewInterpretationOptions](cmstereoviewinterpretationoptions/additionalviews.md)
+### Stereo View Options
+- [static var additionalViews: CMStereoViewInterpretationOptions](./additionalviews.md)
   A flag indicating that the video content contains additional views beyond the left or right eye.
 
 

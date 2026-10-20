@@ -1,7 +1,8 @@
 # RecordLabels.Views.RecordLabelsTopReleasesView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the record label top releases view.
 
@@ -10,7 +11,7 @@ The attributes for the record label top releases view.
 
 ## Declaration
 
-```swift
+```
 object RecordLabels.Views.RecordLabelsTopReleasesView.Attributes
 ```
 

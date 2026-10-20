@@ -1,7 +1,8 @@
 # Locale.LanguageDirection
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the standard set of language directions.
 
@@ -22,11 +23,12 @@ typealias LanguageDirection = NSLocale.LanguageDirection
 
 ## See Also
 
-- [static func characterDirection(forLanguage: String) -> Locale.LanguageDirection](locale/characterdirection(forlanguage:).md)
+### Getting line and character direction for a language
+- [static func characterDirection(forLanguage: String) -> Locale.LanguageDirection](./characterdirection%28forlanguage%29.md)
   Returns the character direction for a specified language code.
-- [static func lineDirection(forLanguage: String) -> Locale.LanguageDirection](locale/linedirection(forlanguage:).md)
+- [static func lineDirection(forLanguage: String) -> Locale.LanguageDirection](./linedirection%28forlanguage%29.md)
   Returns the line direction for a specified language code.
-- [NSLocale.LanguageDirection](nslocale/languagedirection.md)
+- [NSLocale.LanguageDirection](../nslocale/languagedirection.md)
   The directions that a language may take across a page of text.
 
 

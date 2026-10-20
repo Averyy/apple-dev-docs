@@ -1,7 +1,8 @@
 # MTRFormaldehydeConcentrationMeasurementLevelValue
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,26 +19,30 @@
 enum MTRFormaldehydeConcentrationMeasurementLevelValue
 ```
 
+```c
+enum MTRFormaldehydeConcentrationMeasurementLevelValue : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRFormaldehydeConcentrationMeasurementLevelValue.critical](mtrformaldehydeconcentrationmeasurementlevelvalue/critical.md)
-- [MTRFormaldehydeConcentrationMeasurementLevelValue.high](mtrformaldehydeconcentrationmeasurementlevelvalue/high.md)
-- [MTRFormaldehydeConcentrationMeasurementLevelValue.low](mtrformaldehydeconcentrationmeasurementlevelvalue/low.md)
-- [MTRFormaldehydeConcentrationMeasurementLevelValue.medium](mtrformaldehydeconcentrationmeasurementlevelvalue/medium.md)
-- [MTRFormaldehydeConcentrationMeasurementLevelValue.unknown](mtrformaldehydeconcentrationmeasurementlevelvalue/unknown.md)
+- [MTRFormaldehydeConcentrationMeasurementLevelValue.critical](./mtrformaldehydeconcentrationmeasurementlevelvalue/critical.md)
+- [MTRFormaldehydeConcentrationMeasurementLevelValue.high](./mtrformaldehydeconcentrationmeasurementlevelvalue/high.md)
+- [MTRFormaldehydeConcentrationMeasurementLevelValue.low](./mtrformaldehydeconcentrationmeasurementlevelvalue/low.md)
+- [MTRFormaldehydeConcentrationMeasurementLevelValue.medium](./mtrformaldehydeconcentrationmeasurementlevelvalue/medium.md)
+- [MTRFormaldehydeConcentrationMeasurementLevelValue.unknown](./mtrformaldehydeconcentrationmeasurementlevelvalue/unknown.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrformaldehydeconcentrationmeasurementlevelvalue/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrformaldehydeconcentrationmeasurementlevelvalue/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

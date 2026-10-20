@@ -1,7 +1,8 @@
 # SecRequirementType.designatedRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A designated requirement.
 
@@ -13,6 +14,10 @@ A designated requirement.
 
 ```swift
 case designatedRequirementType
+```
+
+```c
+kSecDesignatedRequirementType
 ```
 
 

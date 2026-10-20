@@ -1,7 +1,8 @@
 # init(stiffness:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an inflation configuration that defaults to the mesh volume.
 
@@ -22,7 +23,8 @@ init(stiffness: Float = 1.0)
 
 ## See Also
 
-- [init(targetVolume: Float, stiffness: Float)](clothbodycomponent/inflationconstraint-swift.struct/init(targetvolume:stiffness:).md)
+### Creating an inflation constraint
+- [init(targetVolume: Float, stiffness: Float)](./init%28targetvolume,stiffness%29.md)
   Creates an inflation configuration.
 
 

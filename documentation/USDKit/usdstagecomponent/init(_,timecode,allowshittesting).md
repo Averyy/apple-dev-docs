@@ -1,7 +1,8 @@
 # init(_:timeCode:allowsHitTesting:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a USDStageComponent in automatic mode and waits for the first render to complete.
 
@@ -34,7 +35,8 @@ The initializer returns once the stage has been fully processed, including loadi
 
 ## See Also
 
-- [init(allowsHitTesting: Bool)](usdstagecomponent/init(allowshittesting:).md)
+### Creating a stage component
+- [init(allowsHitTesting: Bool)](./init%28allowshittesting%29.md)
   Creates a USDStageComponent in manual mode.
 
 

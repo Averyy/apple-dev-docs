@@ -1,12 +1,13 @@
 # unregisterClass(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Removes the specified image representation subclass from the registry of available image representations.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the specified image representation subclass from the registry of availab
 class func unregisterClass(_ imageRepClass: AnyClass)
 ```
 
+```objc
++ (void) unregisterImageRepClass:(Class) imageRepClass;
+```
+
 #### Discussion
 
-This method posts the [`registryDidChangeNotification`](nsimagerep/registrydidchangenotification.md), along with the receiving object, to the default notification center.
+This method posts the [`registryDidChangeNotification`](./registrydidchangenotification.md), along with the receiving object, to the default notification center.
 
 ## Parameters
 
@@ -24,13 +29,14 @@ This method posts the [`registryDidChangeNotification`](nsimagerep/registrydidch
 
 ## See Also
 
-- [class func `class`(forType: String) -> AnyClass?](nsimagerep/class(fortype:).md)
+### Managing Representation Subclasses of Images
+- [class func `class`(forType: String) -> AnyClass?](./class%28fortype%29.md)
   Returns the image representation subclass that handles image data for the specified UTI.
-- [class func `class`(for: Data) -> AnyClass?](nsimagerep/class(for:).md)
+- [class func `class`(for: Data) -> AnyClass?](./class%28for%29.md)
   Returns the image representation subclass that handles the specified type of data.
-- [class var registeredClasses: [AnyClass]](nsimagerep/registeredclasses.md)
+- [class var registeredClasses: [AnyClass]](./registeredclasses.md)
   Returns an array containing the registered image representation classes.
-- [class func registerClass(AnyClass)](nsimagerep/registerclass(_:).md)
+- [class func registerClass(AnyClass)](./registerclass%28_%29.md)
   Adds the specified class to the registry of available image representation subclasses.
 
 

@@ -1,7 +1,8 @@
 # NSStackView.Gravity.top
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The topmost gravity area in a vertically oriented stack view.
 
@@ -14,19 +15,24 @@ The topmost gravity area in a vertically oriented stack view.
 case top
 ```
 
+```c
+NSStackViewGravityTop
+```
+
 #### Discussion
 
-Use only when the value of the [`orientation`](nsstackview/orientation.md) property is [`NSUserInterfaceLayoutOrientation.vertical`](nsuserinterfacelayoutorientation/vertical.md).
+Use only when the value of the [`orientation`](../orientation.md) property is [`NSUserInterfaceLayoutOrientation.vertical`](../../nsuserinterfacelayoutorientation/vertical.md).
 
 ## See Also
 
-- [static var leading: NSStackView.Gravity](nsstackview/gravity/leading.md)
+### Constants
+- [static var leading: NSStackView.Gravity](./leading.md)
   The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
-- [NSStackView.Gravity.center](nsstackview/gravity/center.md)
+- [NSStackView.Gravity.center](./center.md)
   The center gravity area, regardless of stack view layout direction or user interface language.
-- [NSStackView.Gravity.bottom](nsstackview/gravity/bottom.md)
+- [NSStackView.Gravity.bottom](./bottom.md)
   The bottommost gravity area in a vertically oriented stack view.
-- [static var trailing: NSStackView.Gravity](nsstackview/gravity/trailing.md)
+- [static var trailing: NSStackView.Gravity](./trailing.md)
   The leftmost or rightmost gravity area in a horizontally oriented stack view, based on the user interface language or the explicitly set user interface layout direction.
 
 

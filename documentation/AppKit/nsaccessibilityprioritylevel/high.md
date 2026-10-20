@@ -1,7 +1,8 @@
 # NSAccessibilityPriorityLevel.high
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The notification is a high priority.
 
@@ -14,11 +15,16 @@ The notification is a high priority.
 case high
 ```
 
+```c
+NSAccessibilityPriorityHigh
+```
+
 ## See Also
 
-- [NSAccessibilityPriorityLevel.medium](nsaccessibilityprioritylevel/medium.md)
+### Priority Levels
+- [NSAccessibilityPriorityLevel.medium](./medium.md)
   The notification is a medium priority.
-- [NSAccessibilityPriorityLevel.low](nsaccessibilityprioritylevel/low.md)
+- [NSAccessibilityPriorityLevel.low](./low.md)
   The notification is a low priority.
 
 

@@ -1,7 +1,8 @@
 # isPatternSyntax
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar is recommended to have syntactic usage in patterns represented in source code.
 
@@ -22,7 +23,7 @@ var isPatternSyntax: Bool { get }
 
 #### Discussion
 
-This property corresponds to the “Pattern_Syntax” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Pattern_Syntax” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

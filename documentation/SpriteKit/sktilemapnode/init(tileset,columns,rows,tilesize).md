@@ -1,7 +1,8 @@
 # init(tileSet:columns:rows:tileSize:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a tile map node using the provided tile set with a specified number of columns and rows.
 
@@ -18,6 +19,10 @@ Creates and initializes a tile map node using the provided tile set with a speci
 
 ```swift
 init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize)
+```
+
+```objc
+- (instancetype) initWithTileSet:(SKTileSet *) tileSet columns:(NSUInteger) columns rows:(NSUInteger) rows tileSize:(CGSize) tileSize;
 ```
 
 #### Return Value
@@ -39,12 +44,13 @@ For a grid set type, the overall size in points of the node will be `numberOfCol
 
 ## See Also
 
-- [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWith: SKTileGroup)](sktilemapnode/init(tileset:columns:rows:tilesize:fillwith:).md)
+### Creating a Tile Map
+- [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWith: SKTileGroup)](./init%28tileset,columns,rows,tilesize,fillwith%29.md)
   Creates and initializes a tile map node using the provided tile set with a specified number of columns and rows.
-- [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, tileGroupLayout: [SKTileGroup])](sktilemapnode/init(tileset:columns:rows:tilesize:tilegrouplayout:).md)
+- [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, tileGroupLayout: [SKTileGroup])](./init%28tileset,columns,rows,tilesize,tilegrouplayout%29.md)
   Creates and initializes a tile map node using the provided tile set with a specified number of columns and rows. For a grid set type, the overall size, in points, of the node will be `numberOfColumns * tileSize.width` wide and `numberOfRows * tileSize.height` high.
-- [class func tileMapNodes(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, from: GKNoiseMap, tileTypeNoiseMapThresholds: [NSNumber]) -> [SKTileMapNode]](sktilemapnode/tilemapnodes(tileset:columns:rows:tilesize:from:tiletypenoisemapthresholds:).md)
-  Creates a tile map node by allowing a [`GKNoiseMap`](https://developer.apple.com/documentation/gameplaykit/gknoisemap) to choose its tiles.
+- [class func tileMapNodes(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, from: GKNoiseMap, tileTypeNoiseMapThresholds: [NSNumber]) -> [SKTileMapNode]](./tilemapnodes%28tileset,columns,rows,tilesize,from,tiletypenoisemapthresholds%29.md)
+  Creates a tile map node by allowing a [`GKNoiseMap`](../../GameplayKit/gknoisemap.md) to choose its tiles.
 
 
 ---

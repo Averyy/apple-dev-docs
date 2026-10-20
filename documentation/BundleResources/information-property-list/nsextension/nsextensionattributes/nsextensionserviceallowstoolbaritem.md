@@ -1,22 +1,25 @@
 # NSExtensionServiceAllowsToolbarItem
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether an Action extension displays an item in a window’s toolbar.
 
 **Availability**:
 - macOS 10.10+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSExtensionServiceAllowsToolbarItem`
+- **Type**: boolean
 
 ## See Also
 
-- [NSExtensionServiceToolbarIconFile](information-property-list/nsextension/nsextensionattributes/nsextensionservicetoolbariconfile.md)
+### Toolbar
+- [NSExtensionServiceToolbarIconFile](./nsextensionservicetoolbariconfile.md)
   The image for an Action extension’s toolbar item.
-- [NSExtensionServiceToolbarPaletteLabel](information-property-list/nsextension/nsextensionattributes/nsextensionservicetoolbarpalettelabel.md)
+- [NSExtensionServiceToolbarPaletteLabel](./nsextensionservicetoolbarpalettelabel.md)
   The label for an Action extension’s toolbar item.
 
 

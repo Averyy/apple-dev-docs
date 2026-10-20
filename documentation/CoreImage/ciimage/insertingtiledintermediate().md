@@ -1,7 +1,8 @@
 # insertingTiledIntermediate()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an image that inserts a intermediate that is cached in tiles
 
@@ -19,13 +20,17 @@ Create an image that inserts a intermediate that is cached in tiles
 func insertingTiledIntermediate() -> CIImage
 ```
 
+```objc
+- (CIImage *) imageByInsertingTiledIntermediate;
+```
+
 #### Return Value
 
- An autoreleased [`CIImage`](ciimage.md).
+ An autoreleased [`CIImage`](../ciimage.md).
 
 #### Discussion
 
-This intermediate will be cacheable even if [`cacheIntermediates`](cicontextoption/cacheintermediates.md) is false.
+This intermediate will be cacheable even if [`cacheIntermediates`](../cicontextoption/cacheintermediates.md) is false.
 
 
 ---

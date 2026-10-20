@@ -1,7 +1,8 @@
 # PHASEShape
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of points that connect to form a 3D volume.
 
@@ -19,60 +20,65 @@ A collection of points that connect to form a 3D volume.
 class PHASEShape
 ```
 
+```objc
+@interface PHASEShape : NSObject
+```
+
 ## Mentions
 
-- [Playing sound from a location in a 3D scene](playing-sound-from-a-location-in-a-3d-scene.md)
+- [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
 #### Overview
 
-To define your scene’s important 3D volumes, create one or more of the following surfaces and add them to your scene’s [`shapes`](phasesource/shapes.md) array:
+To define your scene’s important 3D volumes, create one or more of the following surfaces and add them to your scene’s [`shapes`](./phasesource/shapes.md) array:
 
-- The audio-emitting surface of a volumetric [`PHASESource`](phasesource.md)
-- The audio-deflecting surface and texture of a [`PHASEOccluder`](phaseoccluder.md)
+- The audio-emitting surface of a volumetric [`PHASESource`](./phasesource.md)
+- The audio-deflecting surface and texture of a [`PHASEOccluder`](./phaseoccluder.md)
 
 ## Topics
 
 ### Creating a Shape
-- [init(engine: PHASEEngine, mesh: MDLMesh)](phaseshape/init(engine:mesh:).md)
+- [init(engine: PHASEEngine, mesh: MDLMesh)](./phaseshape/init%28engine,mesh%29.md)
   Creates an object that the given geometric data shapes.
-- [convenience init(engine: PHASEEngine, mesh: MDLMesh, materials: [PHASEMaterial])](phaseshape/init(engine:mesh:materials:).md)
+- [convenience init(engine: PHASEEngine, mesh: MDLMesh, materials: [PHASEMaterial])](./phaseshape/init%28engine,mesh,materials%29.md)
   Creates an object of a specific material that the given geometric data shapes.
 ### Describing Surface Characteristics
-- [var elements: [PHASEShape.Element]](phaseshape/elements.md)
+- [var elements: [PHASEShape.Element]](./phaseshape/elements.md)
   An array of objects that collectively describe the physical characteristics of a surface.
-- [PHASEShape.Element](phaseshape/element.md)
+- [PHASEShape.Element](./phaseshape/element.md)
   An object that describes the characteristics of a physical surface.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASESource](phasesource.md)
+### Soundscape Creation
+- [class PHASESource](./phasesource.md)
   An object that plays audio from a 3D location and orientation in a scene.
-- [class PHASEListener](phaselistener.md)
+- [class PHASEListener](./phaselistener.md)
   A central point of reference that defines the location within the scene that’s most audible to the user.
-- [class PHASEOccluder](phaseoccluder.md)
+- [class PHASEOccluder](./phaseoccluder.md)
   An object with a shape and position that blocks audio from reaching the listener.
-- [class PHASEObject](phaseobject.md)
+- [class PHASEObject](./phaseobject.md)
   An object in the scene.
-- [PHASEShape.Element](phaseshape/element.md)
+- [PHASEShape.Element](./phaseshape/element.md)
   An object that describes the characteristics of a physical surface.
-- [class PHASEMaterial](phasematerial.md)
+- [class PHASEMaterial](./phasematerial.md)
   Surface characteristics that determine the acoustic properties of an object.
-- [enum PHASEMaterialPreset](phasematerialpreset.md)
+- [enum PHASEMaterialPreset](./phasematerialpreset.md)
   A collection of physical surfaces that each add a unique acoustic quality to your app’s audio.
-- [class PHASEMixerParameters](phasemixerparameters.md)
+- [class PHASEMixerParameters](./phasemixerparameters.md)
   An object that specifies a mixer for sound events and orients them in 3D space.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierHIDVirtualCable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierHIDVirtualCable = 0x0204
 ```
 

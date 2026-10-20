@@ -1,7 +1,8 @@
 # Date.VerbatimFormatStyle.Attributed
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type preserving attributed variant of this style.
 
@@ -28,22 +29,22 @@ This style attributes the formatted date with the `AttributeScopes.FoundationAtt
 ## Topics
 
 ### Subscripts
-- [subscript<T>(dynamicMember _: KeyPath<Date.VerbatimFormatStyle, T>) -> T](date/verbatimformatstyle/attributed-swift.struct/subscript(dynamicmember:)-2w8in.md)
-- [subscript<T>(dynamicMember _: WritableKeyPath<Date.VerbatimFormatStyle, T>) -> T](date/verbatimformatstyle/attributed-swift.struct/subscript(dynamicmember:)-5pl13.md)
+- [subscript<T>(dynamicMember _: KeyPath<Date.VerbatimFormatStyle, T>) -> T](./attributed-swift.struct/subscript%28dynamicmember%29-2w8in.md)
+- [subscript<T>(dynamicMember _: WritableKeyPath<Date.VerbatimFormatStyle, T>) -> T](./attributed-swift.struct/subscript%28dynamicmember%29-5pl13.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [DiscreteFormatStyle](../../discreteformatstyle.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [FormatStyle](../../formatstyle.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(scalarNoiseWithSmoothness:name:textureDimensions:channelCount:channelEncoding:grayscale:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a noise texture that creates random color noise.
 
@@ -19,6 +20,10 @@ Initializes a noise texture that creates random color noise.
 init(scalarNoiseWithSmoothness smoothness: Float, name: String?, textureDimensions: vector_int2, channelCount: Int32, channelEncoding: MDLTextureChannelEncoding, grayscale: Bool)
 ```
 
+```objc
+- (instancetype) initScalarNoiseWithSmoothness:(float) smoothness name:(NSString *) name textureDimensions:(vector_int2) textureDimensions channelCount:(int) channelCount channelEncoding:(MDLTextureChannelEncoding) channelEncoding grayscale:(BOOL) grayscale;
+```
+
 #### Return Value
 
 A new color noise texture object.
@@ -27,20 +32,21 @@ A new color noise texture object.
 
 A color noise texture has random values for each color channel and can be tiled or mirrored without showing visible borders.
 
-This initializer does not generate texel data; the [`MDLNoiseTexture`](mdlnoisetexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](mdltexture.md) methods listed in Accessing Texture Data.
+This initializer does not generate texel data; the [`MDLNoiseTexture`](../mdlnoisetexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data.
 
 ## Parameters
 
 - `smoothness`: A value that indicates how similar neighboring texels will be in the resulting texture. The value should be between `0.0` and `1.0`. A value of `1.0` generates a smooth surface.
-- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
+- `name`: The [`name`](../mdlnamed/name.md) property for the new texture object.
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
 - `channelCount`: The number of channels per texel—for example, 1 for a grayscale texture, 3 for an RGB color texture, or 4 for RGBA.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
-- `grayscale`: If [`true`](https://developer.apple.com/documentation/swift/true), all four components of each texel will have equal values. If [`false`](https://developer.apple.com/documentation/swift/false), all four values are completely randomized.
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](../mdltexturechannelencoding.md).
+- `grayscale`: If [`true`](../../Swift/true.md), all four components of each texel will have equal values. If [`false`](../../Swift/false.md), all four values are completely randomized.
 
 ## See Also
 
-- [init(vectorNoiseWithSmoothness: Float, name: String?, textureDimensions: vector_int2, channelEncoding: MDLTextureChannelEncoding)](mdlnoisetexture/init(vectornoisewithsmoothness:name:texturedimensions:channelencoding:).md)
+### Creating a Noise Texture
+- [init(vectorNoiseWithSmoothness: Float, name: String?, textureDimensions: vector_int2, channelEncoding: MDLTextureChannelEncoding)](./init%28vectornoisewithsmoothness,name,texturedimensions,channelencoding%29.md)
   Initializes a noise texture that creates random directional noise.
 
 

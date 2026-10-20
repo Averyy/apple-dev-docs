@@ -1,7 +1,8 @@
 # lowConfidenceSource
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Only confirm if initiated from a low-confidence action source.
 

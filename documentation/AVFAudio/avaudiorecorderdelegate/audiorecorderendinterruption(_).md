@@ -1,21 +1,28 @@
 # audioRecorderEndInterruption(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the audio session interruption ended.
 
 **Availability**:
-- iOS 2.2+
-- iPadOS 2.2+
-- Mac Catalyst 2.2+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.2+ - Deprecated in 6.0
+- iPadOS 2.2+ - Deprecated in 6.0
+- Mac Catalyst 2.2+ - Deprecated in 6.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Observe audio session interruption notifications instead. See [Handling audio interruptions](../handling-audio-interruptions.md) for more information.
 
 ## Declaration
 
 ```swift
 optional func audioRecorderEndInterruption(_ recorder: AVAudioRecorder)
+```
+
+```objc
+- (void) audioRecorderEndInterruption:(AVAudioRecorder *) recorder;
 ```
 
 ## Parameters
@@ -24,11 +31,12 @@ optional func audioRecorderEndInterruption(_ recorder: AVAudioRecorder)
 
 ## See Also
 
-- [func audioRecorderBeginInterruption(AVAudioRecorder)](avaudiorecorderdelegate/audiorecorderbegininterruption(_:).md)
+### Responding to audio interruptions
+- [func audioRecorderBeginInterruption(AVAudioRecorder)](./audiorecorderbegininterruption%28_%29.md)
   Tells the delegate that the system interrupted the audio recording.
-- [func audioRecorderEndInterruption(AVAudioRecorder, withOptions: Int)](avaudiorecorderdelegate/audiorecorderendinterruption(_:withoptions:).md)
+- [func audioRecorderEndInterruption(AVAudioRecorder, withOptions: Int)](./audiorecorderendinterruption%28_,withoptions%29.md)
   Tells the delegate that the audio session interruption ended with options.
-- [func audioRecorderEndInterruption(AVAudioRecorder, withFlags: Int)](avaudiorecorderdelegate/audiorecorderendinterruption(_:withflags:).md)
+- [func audioRecorderEndInterruption(AVAudioRecorder, withFlags: Int)](./audiorecorderendinterruption%28_,withflags%29.md)
   Tells the delegate that the audio session interruption ended with flags.
 
 

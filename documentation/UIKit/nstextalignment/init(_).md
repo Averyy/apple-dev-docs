@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Converts a Core Text alignment constant value to the matching constant value in UIKit.
 
@@ -19,6 +20,10 @@ Converts a Core Text alignment constant value to the matching constant value in 
 init(_ ctTextAlignment: CTTextAlignment)
 ```
 
+```c
+extern NSTextAlignment NSTextAlignmentFromCTTextAlignment(CTTextAlignment ctTextAlignment);
+```
+
 #### Return Value
 
 The UIKit text alignment that corresponds to the value specified in `ctTextAlignment`.
@@ -33,7 +38,8 @@ Use this function when you need to map between the Core Text and UIKit constants
 
 ## See Also
 
-- [init(NSTextAlignment)](../coretext/cttextalignment/init(_:).md)
+### Text manipulations
+- [init(NSTextAlignment)](../../CoreText/cttextalignment/init%28_%29.md)
   Converts a UIKit text alignment constant value to the matching constant value that Core Text uses.
 
 

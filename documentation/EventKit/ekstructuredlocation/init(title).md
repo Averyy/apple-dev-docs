@@ -1,7 +1,8 @@
 # init(title:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new structured location with the specified title.
 
@@ -19,9 +20,13 @@ Creates a new structured location with the specified title.
 convenience init(title: String)
 ```
 
+```objc
++ (instancetype) locationWithTitle:(NSString *) title;
+```
+
 ## Mentions
 
-- [Setting an alarm](setting-an-alarm.md)
+- [Setting an alarm](../setting-an-alarm.md)
 
 #### Return Value
 
@@ -33,8 +38,10 @@ The structured location object.
 
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [convenience init(mapItem: MKMapItem)](ekstructuredlocation/init(mapitem:).md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Creating Structured Locations
+- [convenience init(mapItem: MKMapItem)](./init%28mapitem%29.md)
   Creates a new structured location with the specified map item.
 
 

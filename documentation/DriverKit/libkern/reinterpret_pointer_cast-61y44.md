@@ -1,17 +1,18 @@
 # reinterpret_pointer_cast
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, typename U> T * *reinterpret_pointer_cast(U * *p) noexcept;
 ```
 

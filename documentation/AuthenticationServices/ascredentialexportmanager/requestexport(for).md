@@ -1,7 +1,8 @@
 # requestExport(for:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins the export process.
 
@@ -24,7 +25,7 @@ The selected set of export options.
 
 #### Discussion
 
-Calling this method brings up the out-of-process system UI that guides someone using your app through the export flow. After they determine the necessary options, this method returns the selected options to your app. At that point, call [`exportCredentials(_:)`](ascredentialexportmanager/exportcredentials(_:).md) with the exported credentials in the specified format.
+Calling this method brings up the out-of-process system UI that guides someone using your app through the export flow. After they determine the necessary options, this method returns the selected options to your app. At that point, call [`exportCredentials(_:)`](./exportcredentials%28_%29.md) with the exported credentials in the specified format.
 
 This method throws an error if the export can’t proceed, which occurs if there are no import apps available, or if the device isn’t configured with a passcode, Touch ID, or Face ID.
 
@@ -34,11 +35,12 @@ This method throws an error if the export can’t proceed, which occurs if there
 
 ## See Also
 
-- [ASCredentialExportManager.ExportOptions](ascredentialexportmanager/exportoptions.md)
+### Exporting credentials
+- [ASCredentialExportManager.ExportOptions](./exportoptions.md)
   Options that configure the behavior of a credential export operation.
-- [func exportCredentials(ASExportedCredentialData) async throws](ascredentialexportmanager/exportcredentials(_:).md)
+- [func exportCredentials(ASExportedCredentialData) async throws](./exportcredentials%28_%29.md)
   Exports the provided credential data.
-- [struct ASExportedCredentialData](asexportedcredentialdata.md)
+- [struct ASExportedCredentialData](../asexportedcredentialdata.md)
   A container for credential data that your app provides to an exporter or receives from an importer.
 
 

@@ -1,7 +1,8 @@
 # Read Challenge Localization Information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information for a specific Game Center challenge localization.
 
@@ -14,26 +15,42 @@ Get information for a specific Game Center challenge localization.
 
 ## Parameters
 
-- `fields[gameCenterChallengeImages]` ([string])
-- `fields[gameCenterChallengeLocalizations]` ([string])
-- `include` ([string])
-- `fields[gameCenterChallengeVersions]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[gameCenterChallengeImages]` ([string]): **Allowed Values**: `fileSize`, `fileName`, `imageAsset`, `uploadOperations`, `assetDeliveryState`
+- `fields[gameCenterChallengeLocalizations]` ([string]): **Allowed Values**: `locale`, `name`, `description`, `version`, `image`
+- `include` ([string]): **Allowed Values**: `version`, `image`
+- `fields[gameCenterChallengeVersions]` ([string]): **Allowed Values**: `version`, `state`, `challenge`, `localizations`, `releases`, `defaultImage`
+
+## Responses
+
+- `200` OK (`GameCenterChallengeLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Image Information for a Challenge Localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)
+### Managing localizations
+- [Read Image Information for a Challenge Localization](./get-v1-gamecenterchallengelocalizations-_id_-image.md)
   Get details about the image for a specific Game Center challenge localization.
-- [Get the image id for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-relationships-image.md)
+- [Get the image id for a challenge localization](./get-v1-gamecenterchallengelocalizations-_id_-relationships-image.md)
   Get the image ID for a specific Game Center challenge localization.
-- [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
+- [List All Localizations for a Challenge Version](./get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the localization ids for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the localization ids for a challenge version](./get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
-- [Add a Challenge Localization](post-v1-gamecenterchallengelocalizations.md)
+- [Add a Challenge Localization](./post-v1-gamecenterchallengelocalizations.md)
   Add a localization for a specific Game Center challenge.
-- [Modify a Challenge Localization](patch-v1-gamecenterchallengelocalizations-_id_.md)
+- [Modify a Challenge Localization](./patch-v1-gamecenterchallengelocalizations-_id_.md)
   Update localization information for a specific Game Center challenge.
-- [Delete a Challenge Localization](delete-v1-gamecenterchallengelocalizations-_id_.md)
+- [Delete a Challenge Localization](./delete-v1-gamecenterchallengelocalizations-_id_.md)
   Remove a specific localization from a Game Center challenge.
 
 

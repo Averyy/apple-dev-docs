@@ -1,7 +1,8 @@
 # GLKTextureInfoAlphaState.premultiplied
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the color values in the texture have already been premultiplied by the alpha value.
 
@@ -17,11 +18,16 @@ Indicates that the color values in the texture have already been premultiplied b
 case premultiplied
 ```
 
+```c
+GLKTextureInfoAlphaStatePremultiplied
+```
+
 ## See Also
 
-- [GLKTextureInfoAlphaState.none](glktextureinfoalphastate/none.md)
+### Constants
+- [GLKTextureInfoAlphaState.none](./none.md)
   Indicates that the texture has no alpha information.
-- [GLKTextureInfoAlphaState.nonPremultiplied](glktextureinfoalphastate/nonpremultiplied.md)
+- [GLKTextureInfoAlphaState.nonPremultiplied](./nonpremultiplied.md)
   Indicates that the color values in the texture were not premultiplied by the alpha value.
 
 

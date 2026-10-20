@@ -1,14 +1,15 @@
 # kBluetoothLEFeaturePeripheralInitiatedFeaturesExchange
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLEFeaturePeripheralInitiatedFeaturesExchange = (1 << 3L)
 ```
 

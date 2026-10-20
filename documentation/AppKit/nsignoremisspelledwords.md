@@ -1,12 +1,13 @@
 # NSIgnoreMisspelledWords
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that enables the Ignore button in the Spelling panel to function properly.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ A protocol that enables the Ignore button in the Spelling panel to function prop
 protocol NSIgnoreMisspelledWords
 ```
 
+```objc
+@protocol NSIgnoreMisspelledWords
+```
+
 #### Overview
 
-The Ignore button allows the user to accept a word that the spelling checker believes is misspelled. In order for this action to update the “ignored words” list for the document being checked, the [`NSIgnoreMisspelledWords`](nsignoremisspelledwords.md) protocol must be implemented.
+The Ignore button allows the user to accept a word that the spelling checker believes is misspelled. In order for this action to update the “ignored words” list for the document being checked, the [`NSIgnoreMisspelledWords`](./nsignoremisspelledwords.md) protocol must be implemented.
 
-This protocol is necessary because a list of ignored words is useful only if it pertains to the entire document being checked, but the spelling checker (that is, an [`NSSpellChecker`](nsspellchecker.md) object) does not check the entire document for spelling at once. The spelling checker returns as soon as it finds a misspelled word. Thus, it checks only a subset of the document at any one time. The user usually wants to check the entire document, so usually several spelling checks are run in succession until no misspelled words are found. This protocol allows the list of ignored words to be maintained per document, even though the spelling checks are not run per document.
+This protocol is necessary because a list of ignored words is useful only if it pertains to the entire document being checked, but the spelling checker (that is, an [`NSSpellChecker`](./nsspellchecker.md) object) does not check the entire document for spelling at once. The spelling checker returns as soon as it finds a misspelled word. Thus, it checks only a subset of the document at any one time. The user usually wants to check the entire document, so usually several spelling checks are run in succession until no misspelled words are found. This protocol allows the list of ignored words to be maintained per document, even though the spelling checks are not run per document.
 
-The [`NSIgnoreMisspelledWords`](nsignoremisspelledwords.md) protocol specifies a  method, [`ignoreSpelling(_:)`](nsignoremisspelledwords/ignorespelling(_:).md), which should be implemented like this:
+The [`NSIgnoreMisspelledWords`](./nsignoremisspelledwords.md) protocol specifies a  method, [`ignoreSpelling(_:)`](./nsignoremisspelledwords/ignorespelling%28_%29.md), which should be implemented like this:
 
 ```objc
 - (void)ignoreSpelling:(id)sender {
@@ -29,26 +34,27 @@ The [`NSIgnoreMisspelledWords`](nsignoremisspelledwords.md) protocol specifies a
 }
 ```
 
-The second argument to the [`NSSpellChecker`](nsspellchecker.md) method [`ignoreWord(_:inSpellDocumentWithTag:)`](nsspellchecker/ignoreword(_:inspelldocumentwithtag:).md) is a tag that the spell checker can use to distinguish the documents being checked. When the spell checker can distinguish the various documents, it can append new ignored words to the appropriate list.
+The second argument to the [`NSSpellChecker`](./nsspellchecker.md) method [`ignoreWord(_:inSpellDocumentWithTag:)`](./nsspellchecker/ignoreword%28_,inspelldocumentwithtag%29.md) is a tag that the spell checker can use to distinguish the documents being checked. When the spell checker can distinguish the various documents, it can append new ignored words to the appropriate list.
 
-To make the ignored words feature useful, the application must store a document’s ignored words list with the document. See the [`NSSpellChecker`](nsspellchecker.md) class description for more information.
+To make the ignored words feature useful, the application must store a document’s ignored words list with the document. See the [`NSSpellChecker`](./nsspellchecker.md) class description for more information.
 
 ## Topics
 
 ### Ignoring spellings
-- [func ignoreSpelling(Any?)](nsignoremisspelledwords/ignorespelling(_:).md)
+- [func ignoreSpelling(Any?)](./nsignoremisspelledwords/ignorespelling%28_%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [NSText](nstext.md)
-- [NSTextView](nstextview.md)
+- [NSText](./nstext.md)
+- [NSTextView](./nstextview.md)
 
 ## See Also
 
-- [class NSSpellChecker](nsspellchecker.md)
+### Spell-checking
+- [class NSSpellChecker](./nsspellchecker.md)
   An interface to the Cocoa spell-checking service.
-- [protocol NSChangeSpelling](nschangespelling.md)
+- [protocol NSChangeSpelling](./nschangespelling.md)
   A protocol that responder objects can implement to correct a misspelled word.
 
 

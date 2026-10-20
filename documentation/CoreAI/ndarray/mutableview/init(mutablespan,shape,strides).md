@@ -1,7 +1,8 @@
 # init(mutableSpan:shape:strides:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a view from a `MutableSpan`.
 
@@ -18,13 +19,15 @@ Initialize a view from a `MutableSpan`.
 init(mutableSpan: consuming MutableSpan<Element>, shape: [Int], strides: [Int] = [])
 ```
 
+Available when `Element` conforms to `BitwiseCopyable`.
+
 #### Discussion
 
 The lifetime of the resulting view copies the lifetime of the provided span.
 
 Also note that the `shape/strides` must not be able to produce offsets that go outside of the range of `mutableSpan`. As such, negative strides are not supported by this initializer.
 
-**Performance note**: Making an ndArray view from a normal VM pointer to be used as an input or backing of an [`InferenceFunction`](inferencefunction.md) could be a performance anti-pattern if you intend to pass the same underlying memory in repeatedly to many inferences. This can be a function of which compute units the model was specialized for. For example if the inference function runs compute on the GPU or Neural Engine, you may incur a copy of the view into the required memory primitive if it cannot be toll-free converted.
+**Performance note**: Making an ndArray view from a normal VM pointer to be used as an input or backing of an [`InferenceFunction`](../../inferencefunction.md) could be a performance anti-pattern if you intend to pass the same underlying memory in repeatedly to many inferences. This can be a function of which compute units the model was specialized for. For example if the inference function runs compute on the GPU or Neural Engine, you may incur a copy of the view into the required memory primitive if it cannot be toll-free converted.
 
 - span: The span to be referenced by the resulting view.
 - shape: The shape of the resulting view.

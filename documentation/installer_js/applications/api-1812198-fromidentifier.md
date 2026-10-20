@@ -7,11 +7,11 @@ Provides information about running processes with a given application identifier
 
 ## Declaration
 
-```swift
+```
 fromIdentifier(bundleID)
 ```
 
-#### Return_value
+#### Return Value
 
 An array of dictionaries (associative arrays) describing the running applications identified by `bundleID`.
 
@@ -21,11 +21,13 @@ An array of dictionaries (associative arrays) describing the running application
 
 ## See Also
 
-- [fromPID](applications/1812189-frompid.md)
+### Getting Information About Running Applications
+- [fromPID](./api-1812189-frompid.md)
   Provides information about a running application with a given process ID.
-- [all](applications/1812212-all.md)
+- [all](./api-1812212-all.md)
   All running applications registered with the process manager.
-- [ProcessInformation](processinformation.md)
+### Related Documentation
+- [ProcessInformation](../processinformation.md)
   A dictionary (associative array) describing an application.
 
 

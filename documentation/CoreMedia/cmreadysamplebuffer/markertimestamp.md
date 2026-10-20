@@ -1,7 +1,8 @@
 # markerTimeStamp
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Presentation timestamp of the sample buffer.
 
@@ -19,6 +20,8 @@ Presentation timestamp of the sample buffer.
 ```swift
 var markerTimeStamp: CMTime { get set }
 ```
+
+Available when `Content` is `Never`.
 
 
 ---

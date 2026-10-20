@@ -1,7 +1,8 @@
 # init(exporter:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a transfer representation.
 
@@ -10,7 +11,7 @@ Creates and initializes a transfer representation.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,11 @@ init(exporter: @escaping @Sendable (Item) throws -> CKShareTransferRepresentatio
 
 #### Return Value
 
-A [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md).
+A [`CKShareTransferRepresentation.ExportedShare`](./exportedshare.md).
 
 ## Parameters
 
-- `exporter`: A closure that provides a [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) representation of the specified `Item`.
+- `exporter`: A closure that provides a [`CKShareTransferRepresentation.ExportedShare`](./exportedshare.md) representation of the specified `Item`.
 
 
 ---

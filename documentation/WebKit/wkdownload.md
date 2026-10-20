@@ -1,7 +1,8 @@
 # WKDownload
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the download of a web resource.
 
@@ -19,43 +20,48 @@ An object that represents the download of a web resource.
 class WKDownload
 ```
 
+```objc
+@interface WKDownload : NSObject
+```
+
 ## Topics
 
 ### Managing the download
-- [var delegate: (any WKDownloadDelegate)?](wkdownload/delegate.md)
+- [var delegate: (any WKDownloadDelegate)?](./wkdownload/delegate.md)
   An object you use to track download progress and handle redirects, authentication challenges, and failures.
-- [func cancel(((Data?) -> Void)?)](wkdownload/cancel(_:).md)
+- [func cancel(((Data?) -> Void)?)](./wkdownload/cancel%28_%29.md)
   Cancels the download, and optionally captures data so that you can resume the download later.
-- [WKDownload.RedirectPolicy](wkdownload/redirectpolicy.md)
+- [WKDownload.RedirectPolicy](./wkdownload/redirectpolicy.md)
   An enumeration with cases that indicate whether to proceed with a redirect.
 ### Inspecting the download
-- [var originalRequest: URLRequest?](wkdownload/originalrequest.md)
+- [var originalRequest: URLRequest?](./wkdownload/originalrequest.md)
   An object that represents the request that initiated the download.
-- [var webView: WKWebView?](wkdownload/webview.md)
+- [var webView: WKWebView?](./wkdownload/webview.md)
   The web view where the download initiated.
 ### Instance Properties
-- [var isUserInitiated: Bool](wkdownload/isuserinitiated.md)
-- [var originatingFrame: WKFrameInfo](wkdownload/originatingframe.md)
+- [var isUserInitiated: Bool](./wkdownload/isuserinitiated.md)
+- [var originatingFrame: WKFrameInfo](./wkdownload/originatingframe.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [ProgressReporting](../foundation/progressreporting.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [ProgressReporting](../Foundation/progressreporting.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol WKDownloadDelegate](wkdownloaddelegate.md)
+### Downloads
+- [protocol WKDownloadDelegate](./wkdownloaddelegate.md)
   A protocol you implement to track download progress and handle redirects, authentication challenges, and failures.
-- [WKDownload.PlaceholderPolicy](wkdownload/placeholderpolicy.md)
+- [WKDownload.PlaceholderPolicy](./wkdownload/placeholderpolicy.md)
 
 
 ---

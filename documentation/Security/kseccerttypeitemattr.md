@@ -1,7 +1,8 @@
 # kSecCertTypeItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Certificate type.
 
@@ -12,6 +13,10 @@ Certificate type.
 
 ```swift
 var kSecCertTypeItemAttr: Int { get }
+```
+
+```c
+kSecCertTypeItemAttr
 ```
 
 

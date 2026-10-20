@@ -1,7 +1,8 @@
 # preorderDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the customer placed an order for the app before it’s available in the App Store.
 
@@ -22,15 +23,16 @@ let preorderDate: Date?
 
 #### Discussion
 
-This date is present if your app is available for preorder and the customer places an order before your app is available in the App Store. When your app becomes available, the App Store fulfills the customer’s order. The [`preorderDate`](apptransaction/preorderdate.md) remains the same.
+This date is present if your app is available for preorder and the customer places an order before your app is available in the App Store. When your app becomes available, the App Store fulfills the customer’s order. The [`preorderDate`](./preorderdate.md) remains the same.
 
 Use this date to recognize customers who place preorders.
 
-For more infomation about preorders, see [`Offering Your Apps for Pre-Order`](https://developer.apple.comhttps://developer.apple.com/app-store/pre-orders/).
+For more infomation about preorders, see [Offering Your Apps for Pre-Order](https://developer.apple.com/app-store/pre-orders/).
 
 ## See Also
 
-- [let originalPurchaseDate: Date](apptransaction/originalpurchasedate.md)
+### Getting purchase dates
+- [let originalPurchaseDate: Date](./originalpurchasedate.md)
   The date the customer originally purchased the app from the App Store.
 
 

@@ -1,7 +1,8 @@
 # lineWidth
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the loupe’s border in points.
 
@@ -20,9 +21,10 @@ var lineWidth: CGFloat { get set }
 
 ## See Also
 
-- [var magnification: CGFloat](loupemarkup/magnification.md)
+### Configuring appearance
+- [var magnification: CGFloat](./magnification.md)
   The magnification level applied to the content displayed within the loupe.
-- [var strokeColor: CGColor?](loupemarkup/strokecolor.md)
+- [var strokeColor: CGColor?](./strokecolor.md)
   The color of the loupe’s border.
 
 

@@ -1,7 +1,8 @@
 # WebView.MagnificationGesturesBehavior
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The options for controlling the behavior for how magnification gestures interact with web views.
 
@@ -21,28 +22,29 @@ struct MagnificationGesturesBehavior
 ## Topics
 
 ### Type Properties
-- [static let automatic: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/automatic.md)
+- [static let automatic: WebView.MagnificationGesturesBehavior](./magnificationgesturesbehavior/automatic.md)
   The automatic behavior.
-- [static let disabled: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/disabled.md)
+- [static let disabled: WebView.MagnificationGesturesBehavior](./magnificationgesturesbehavior/disabled.md)
   Magnify gestures are disabled.
-- [static let enabled: WebView.MagnificationGesturesBehavior](webview-swift.struct/magnificationgesturesbehavior/enabled.md)
+- [static let enabled: WebView.MagnificationGesturesBehavior](./magnificationgesturesbehavior/enabled.md)
   Magnify gestures are enabled.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebView.BackForwardNavigationGesturesBehavior](webview-swift.struct/backforwardnavigationgesturesbehavior.md)
+### Modifying web interactions
+- [WebView.BackForwardNavigationGesturesBehavior](./backforwardnavigationgesturesbehavior.md)
   A type that defines the behavior of how horizontal swipe gestures trigger backward and forward page navigation.
-- [WebView.LinkPreviewBehavior](webview-swift.struct/linkpreviewbehavior.md)
+- [WebView.LinkPreviewBehavior](./linkpreviewbehavior.md)
   A type specifying the behavior for the presentation of link previews when pressing a link.
-- [WebView.ActivatedElementInfo](webview-swift.struct/activatedelementinfo.md)
+- [WebView.ActivatedElementInfo](./activatedelementinfo.md)
   Contains information about an element the user activated in a webpage, which may be used to configure a context menu for that element.
-- [WebView.ElementFullscreenBehavior](webview-swift.struct/elementfullscreenbehavior.md)
+- [WebView.ElementFullscreenBehavior](./elementfullscreenbehavior.md)
   The behavior that determines whether a web view can display content full screen.
 
 

@@ -1,7 +1,8 @@
 # CGPDFStringGetBytePtr(_:)
 
 **Framework**: Core Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a pointer to the bytes of a PDF string.
 
@@ -10,7 +11,7 @@ Returns a pointer to the bytes of a PDF string.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a pointer to the bytes of a PDF string.
 
 ```swift
 func CGPDFStringGetBytePtr(_ string: CGPDFStringRef) -> UnsafePointer<UInt8>?
+```
+
+```c
+extern const unsigned char *CGPDFStringGetBytePtr(CGPDFStringRef string);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Returns a pointer to the bytes of the specified string. If the string is `NULL`,
 
 ## See Also
 
-- [func CGPDFStringGetLength(CGPDFStringRef) -> Int](cgpdfstringgetlength(_:).md)
+### Getting PDF String Data
+- [func CGPDFStringGetLength(CGPDFStringRef) -> Int](./cgpdfstringgetlength%28_%29.md)
   Returns the number of bytes in a PDF string.
 
 

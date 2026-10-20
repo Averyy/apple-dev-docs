@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the user’s gaze in device-relative coordinates.
 

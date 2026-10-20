@@ -1,7 +1,8 @@
 # InflectionConcept
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An inflection method to use when localizing text.
 
@@ -22,40 +23,41 @@ enum InflectionConcept
 
 #### Overview
 
-Use `InflectionConcept` when you want to make a localizable string grammatically agree with a phrase or term of address that isn’t part of the text you’re localizing. Set [`InflectionConcept`](inflectionconcept.md) on the [`concepts`](attributedstring/localizationoptions/concepts.md) property of [`AttributedString.LocalizationOptions`](attributedstring/localizationoptions.md) to specify the inflection concepts to use while inflecting text.
+Use `InflectionConcept` when you want to make a localizable string grammatically agree with a phrase or term of address that isn’t part of the text you’re localizing. Set [`InflectionConcept`](./inflectionconcept.md) on the [`concepts`](./attributedstring/localizationoptions/concepts.md) property of [`AttributedString.LocalizationOptions`](./attributedstring/localizationoptions.md) to specify the inflection concepts to use while inflecting text.
 
 For examples of how to use inflection concepts, see:
 
-- [`AttributeScopes.FoundationAttributes.ReferentConceptAttribute`](attributescopes/foundationattributes/referentconceptattribute.md)
-- [`AttributeScopes.FoundationAttributes.AgreementConceptAttribute`](attributescopes/foundationattributes/agreementconceptattribute.md)
+- [`AttributeScopes.FoundationAttributes.ReferentConceptAttribute`](./attributescopes/foundationattributes/referentconceptattribute.md)
+- [`AttributeScopes.FoundationAttributes.AgreementConceptAttribute`](./attributescopes/foundationattributes/agreementconceptattribute.md)
 
 ## Topics
 
 ### Using inflection concepts
-- [InflectionConcept.termsOfAddress(_:)](inflectionconcept/termsofaddress(_:).md)
+- [InflectionConcept.termsOfAddress(_:)](./inflectionconcept/termsofaddress%28_%29.md)
   Indicates that the system uses the associated terms of address for grammatical agreement when localizing text.
-- [InflectionConcept.localizedPhrase(_:)](inflectionconcept/localizedphrase(_:).md)
+- [InflectionConcept.localizedPhrase(_:)](./inflectionconcept/localizedphrase%28_%29.md)
   Indicates that the system uses the associated string for grammatical agreement when localizing text.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum InflectionRule](inflectionrule.md)
+### Automatic grammar agreement
+- [enum InflectionRule](./inflectionrule.md)
   A rule that affects how an attributed string performs automatic grammatical agreement.
-- [struct Morphology](morphology.md)
+- [struct Morphology](./morphology.md)
   A description of the grammatical properties of a string.
-- [struct TermOfAddress](termofaddress.md)
+- [struct TermOfAddress](./termofaddress.md)
   The type for representing grammatical gender in localized text.
-- [Morphology.Pronoun](morphology/pronoun.md)
+- [Morphology.Pronoun](./morphology/pronoun.md)
   A custom pronoun for referring to a third person.
 
 

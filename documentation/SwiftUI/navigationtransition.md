@@ -1,7 +1,8 @@
 # NavigationTransition
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines the transition to use when navigating to a view.
 
@@ -23,34 +24,35 @@ protocol NavigationTransition
 ## Topics
 
 ### Getting built-in transitions
-- [static var automatic: AutomaticNavigationTransition](navigationtransition/automatic.md)
+- [static var automatic: AutomaticNavigationTransition](./navigationtransition/automatic.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [struct AutomaticNavigationTransition](automaticnavigationtransition.md)
+- [struct AutomaticNavigationTransition](./automaticnavigationtransition.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
-- [static var crossFade: CrossFadeNavigationTransition](navigationtransition/crossfade.md)
+- [static var crossFade: CrossFadeNavigationTransition](./navigationtransition/crossfade.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](./crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
-- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](navigationtransition/zoom(sourceid:in:).md)
+- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](./navigationtransition/zoom%28sourceid,in%29.md)
   A navigation transition that zooms the appearing view from a given source view.
-- [struct ZoomNavigationTransition](zoomnavigationtransition.md)
+- [struct ZoomNavigationTransition](./zoomnavigationtransition.md)
   A navigation transition that zooms the appearing view from a given source view.
 
 ## Relationships
 
 ### Conforming Types
-- [AnyNavigationTransition](anynavigationtransition.md)
-- [AutomaticNavigationTransition](automaticnavigationtransition.md)
-- [CrossFadeNavigationTransition](crossfadenavigationtransition.md)
-- [ZoomNavigationTransition](zoomnavigationtransition.md)
+- [AnyNavigationTransition](./anynavigationtransition.md)
+- [AutomaticNavigationTransition](./automaticnavigationtransition.md)
+- [CrossFadeNavigationTransition](./crossfadenavigationtransition.md)
+- [ZoomNavigationTransition](./zoomnavigationtransition.md)
 
 ## See Also
 
-- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
+### Defining navigation transitions
+- [func navigationTransition(some NavigationTransition) -> some View](./view/navigationtransition%28_%29.md)
   Sets the navigation transition style for this view.
-- [struct AnyNavigationTransition](anynavigationtransition.md)
+- [struct AnyNavigationTransition](./anynavigationtransition.md)
   A type-erasing navigation transition that allows for providing any navigation transition value dynamically.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](./crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
 
 

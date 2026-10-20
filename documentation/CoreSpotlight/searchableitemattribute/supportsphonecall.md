@@ -1,7 +1,8 @@
 # supportsPhoneCall
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,7 +19,8 @@ static let supportsPhoneCall: SearchableItemAttribute
 
 ## See Also
 
-- [static let supportsNavigation: SearchableItemAttribute](searchableitemattribute/supportsnavigation.md)
+### Describing supporting actions
+- [static let supportsNavigation: SearchableItemAttribute](./supportsnavigation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:goal:alert:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -18,7 +19,8 @@ init(_ purpose: IntervalStep.Purpose, goal: WorkoutGoal = .open, alert: (any Wor
 
 ## See Also
 
-- [init(IntervalStep.Purpose, step: WorkoutStep)](intervalstep/init(_:step:).md)
+### Creating interval steps
+- [init(IntervalStep.Purpose, step: WorkoutStep)](./init%28_,step%29.md)
   Creates a new interval step.
 
 

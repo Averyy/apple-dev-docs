@@ -1,7 +1,8 @@
 # isBatteryMonitoringEnabled
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the app can monitor the device’s battery.
 
@@ -14,17 +15,22 @@ A Boolean value that determines whether the app can monitor the device’s batte
 var isBatteryMonitoringEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isBatteryMonitoringEnabled) BOOL batteryMonitoringEnabled;
+```
+
 #### Discussion
 
-This property defaults to [`false`](https://developer.apple.com/documentation/swift/false). To monitor the device’s battery, set this property to [`true`](https://developer.apple.com/documentation/swift/true). This enables both the [`batteryLevel`](wkinterfacedevice/batterylevel.md) and [`batteryState`](wkinterfacedevice/batterystate.md) properties.
+This property defaults to [`false`](../../Swift/false.md). To monitor the device’s battery, set this property to [`true`](../../Swift/true.md). This enables both the [`batteryLevel`](./batterylevel.md) and [`batteryState`](./batterystate.md) properties.
 
 ## See Also
 
-- [var batteryLevel: Float](wkinterfacedevice/batterylevel.md)
+### Reading Information About the Battery
+- [var batteryLevel: Float](./batterylevel.md)
   The battery’s current percent charge.
-- [var batteryState: WKInterfaceDeviceBatteryState](wkinterfacedevice/batterystate.md)
+- [var batteryState: WKInterfaceDeviceBatteryState](./batterystate.md)
   The device’s battery state.
-- [enum WKInterfaceDeviceBatteryState](wkinterfacedevicebatterystate.md)
+- [enum WKInterfaceDeviceBatteryState](../wkinterfacedevicebatterystate.md)
   The battery’s charging state.
 
 

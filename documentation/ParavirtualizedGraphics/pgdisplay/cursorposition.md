@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current cursor location in the guest environment.
@@ -14,6 +15,10 @@ The current cursor location in the guest environment.
 
 ```swift
 var cursorPosition: PGDisplayCoord_t { get }
+```
+
+```objc
+@property (nonatomic, readonly) PGDisplayCoord_t cursorPosition;
 ```
 
 #### Discussion

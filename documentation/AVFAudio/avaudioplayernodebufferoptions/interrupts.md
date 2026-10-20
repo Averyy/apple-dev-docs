@@ -1,18 +1,19 @@
 # interrupts
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the buffer interrupts any buffer in a playing state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ An option that indicates the buffer interrupts any buffer in a playing state.
 static var interrupts: AVAudioPlayerNodeBufferOptions { get }
 ```
 
+```c
+AVAudioPlayerNodeBufferInterrupts
+```
+
 ## See Also
 
-- [static var loops: AVAudioPlayerNodeBufferOptions](avaudioplayernodebufferoptions/loops.md)
+### Getting standard buffer options
+- [static var loops: AVAudioPlayerNodeBufferOptions](./loops.md)
   An option that indicates the buffer loops indefinitely.
-- [static var interruptsAtLoop: AVAudioPlayerNodeBufferOptions](avaudioplayernodebufferoptions/interruptsatloop.md)
+- [static var interruptsAtLoop: AVAudioPlayerNodeBufferOptions](./interruptsatloop.md)
   An option that indicates the buffer interrupts any buffer in a playing state at its loop point.
 
 

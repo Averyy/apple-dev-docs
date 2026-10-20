@@ -1,7 +1,8 @@
 # allocateTensor(forFunction:argument:fillKnownDynamicShapes:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an allocated tensor for a given function argument.
 
@@ -24,7 +25,7 @@ func allocateTensor(forFunction function: String? = nil, argument: String, fillK
 
 > **Note**: This function supports `Float`, `Float16`, `Bool`, and `Int32` datatypes only and returns `nil` for other types.
 
-> **Note**: `BNNSGraphContextGetTensor`
+> **See Also**: `BNNSGraphContextGetTensor`
 
 ## Parameters
 

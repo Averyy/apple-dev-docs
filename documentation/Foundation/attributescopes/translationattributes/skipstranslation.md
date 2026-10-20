@@ -1,7 +1,8 @@
 # skipsTranslation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attribute that marks portions of an attributed string to be excluded from translation.
 
@@ -22,7 +23,7 @@ let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttri
 
 #### Discussion
 
-Use this to exclude specific text ranges within an [`AttributedString`](attributedstring.md) from translation, such as proper nouns, brand names, technical terms, or other content that should remain unchanged across different languages.
+Use this to exclude specific text ranges within an [`AttributedString`](../../attributedstring.md) from translation, such as proper nouns, brand names, technical terms, or other content that should remain unchanged across different languages.
 
 When translating formatted text, you can mark specific ranges to skip translation:
 
@@ -36,7 +37,8 @@ When translated the string, “Welcome to” changes to the target language, but
 
 ## See Also
 
-- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute](attributescopes/translationattributes/skiptranslationattribute.md)
+### Handling translation behavior
+- [AttributeScopes.TranslationAttributes.SkipTranslationAttribute](./skiptranslationattribute.md)
   The attribute key for skipping translation.
 
 

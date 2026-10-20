@@ -1,7 +1,8 @@
 # init(healthStore:quantityType:startDate:device:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new quantity series builder.
 
@@ -19,6 +20,10 @@ Creates a new quantity series builder.
 init(healthStore: HKHealthStore, quantityType: HKQuantityType, startDate: Date, device: HKDevice?)
 ```
 
+```objc
+- (instancetype) initWithHealthStore:(HKHealthStore *) healthStore quantityType:(HKQuantityType *) quantityType startDate:(NSDate *) startDate device:(HKDevice *) device;
+```
+
 ## Parameters
 
 - `healthStore`: The HealthKit store.
@@ -28,11 +33,12 @@ init(healthStore: HKHealthStore, quantityType: HKQuantityType, startDate: Date, 
 
 ## See Also
 
-- [var quantityType: HKQuantityType](hkquantityseriessamplebuilder/quantitytype.md)
+### Creating a Quantity Series Builder
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type for the series.
-- [var startDate: Date](hkquantityseriessamplebuilder/startdate.md)
+- [var startDate: Date](./startdate.md)
   The starting date and time for the sample.
-- [var device: HKDevice?](hkquantityseriessamplebuilder/device.md)
+- [var device: HKDevice?](./device.md)
   The device providing the data.
 
 

@@ -1,7 +1,8 @@
 # init(frame:sticker:)
 
 **Framework**: Messages  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new sticker view with the provided sticker and frame.
 
@@ -16,6 +17,10 @@ Initializes a new sticker view with the provided sticker and frame.
 init(frame: CGRect, sticker: MSSticker?)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame sticker:(MSSticker *) sticker;
+```
+
 #### Return Value
 
 A newly initialized sticker view.
@@ -26,12 +31,13 @@ If the sticker image is larger than the view’s frame, the view scales down the
 
 ## Parameters
 
-- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](https://developer.apple.com/documentation/uikit/uiview/center) and [`bounds`](https://developer.apple.com/documentation/uikit/uiview/bounds) properties.
+- `frame`: A rectangular frame for the view, measured in points. The origin of the frame is relative to its superview. This method uses the provided rectangle to set the view’s [`center`](../../UIKit/uiview/center.md) and [`bounds`](../../UIKit/uiview/bounds.md) properties.
 - `sticker`: The sticker object to be displayed. Pass `nil` to create an empty sticker view.
 
 ## See Also
 
-- [var sticker: MSSticker?](msstickerview/sticker.md)
+### Working with Sticker Views
+- [var sticker: MSSticker?](./sticker.md)
   The displayed sticker object.
 
 

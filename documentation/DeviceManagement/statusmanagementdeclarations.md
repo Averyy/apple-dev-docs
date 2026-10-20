@@ -1,7 +1,8 @@
 # StatusManagementDeclarations
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s processed declarations.
 
@@ -16,20 +17,20 @@ The status item that reports the device’s processed declarations.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementDeclarations
 ```
 
 ## Mentions
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
-- [Installing packages](installing-packages.md)
+- [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
+- [Installing packages](./installing-packages.md)
 
 #### Discussion
 
 The name of the declaration status item is `management.declarations`.
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ The name of the declaration status item is `management.declarations`.
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -72,7 +73,7 @@ The name of the declaration status item is `management.declarations`.
 ## Topics
 
 ### Objects
-- [object StatusManagementDeclarationsDeclarationsObject](statusmanagementdeclarationsdeclarationsobject.md)
+- [object StatusManagementDeclarationsDeclarationsObject](./statusmanagementdeclarationsdeclarationsobject.md)
   A collection of the client’s processed declarations.
 
 ## Properties
@@ -81,7 +82,8 @@ The name of the declaration status item is `management.declarations`.
 
 ## See Also
 
-- [object StatusManagementClientCapabilities](statusmanagementclientcapabilities.md)
+### Management items
+- [object StatusManagementClientCapabilities](./statusmanagementclientcapabilities.md)
   The status item that reports the devices’s protocol capabilities.
 
 

@@ -1,7 +1,8 @@
 # BuildUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
@@ -10,7 +11,7 @@ Attributes whose values you’re changing as part of the update request.
 
 ## Declaration
 
-```swift
+```
 object BuildUpdateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object BuildUpdateRequest.Data.Attributes
 
 ## See Also
 
-- [object BuildUpdateRequest.Data.Relationships](buildupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object BuildUpdateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 

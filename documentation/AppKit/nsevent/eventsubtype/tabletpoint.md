@@ -1,12 +1,13 @@
 # tabletPoint
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tablet-pointer event occurred.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A tablet-pointer event occurred.
 static var tabletPoint: NSEvent.EventSubtype { get }
 ```
 
+```c
+NSEventSubtypeTabletPoint
+```
+
 ## See Also
 
-- [static var mouseEvent: NSEvent.EventSubtype](nsevent/eventsubtype/mouseevent.md)
+### Getting Other Subtypes
+- [static var mouseEvent: NSEvent.EventSubtype](./mouseevent.md)
   A mouse event occurred.
-- [static var tabletProximity: NSEvent.EventSubtype](nsevent/eventsubtype/tabletproximity.md)
+- [static var tabletProximity: NSEvent.EventSubtype](./tabletproximity.md)
   A tablet-proximity event occurred.
-- [NSEvent.EventSubtype.touch](nsevent/eventsubtype/touch.md)
+- [NSEvent.EventSubtype.touch](./touch.md)
   A touch event occurred.
 
 

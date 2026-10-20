@@ -1,7 +1,8 @@
 # showsHelp()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the help button is currently set to be displayed.
 
@@ -14,17 +15,22 @@ Indicates whether the help button is currently set to be displayed.
 func showsHelp() -> Bool
 ```
 
+```objc
+- (BOOL) showsHelp;
+```
+
 #### Discussion
 
-This method returns [`true`](https://developer.apple.com/documentation/swift/true) if the help button is currently set to be displayed.
+This method returns [`true`](../../Swift/true.md) if the help button is currently set to be displayed.
 
 ## See Also
 
-- [func setHelpAnchor(String!)](sfcertificatepanel/sethelpanchor(_:).md)
+### Providing Help
+- [func setHelpAnchor(String!)](./sethelpanchor%28_%29.md)
   Sets the help anchor string for the sheet or modal panel.
-- [func setShowsHelp(Bool)](sfcertificatepanel/setshowshelp(_:).md)
+- [func setShowsHelp(Bool)](./setshowshelp%28_%29.md)
   Displays a Help button in the sheet or panel.
-- [func helpAnchor() -> String!](sfcertificatepanel/helpanchor.md)
+- [func helpAnchor() -> String!](./helpanchor%28%29.md)
   Returns the current help anchor string for the sheet or panel.
 
 

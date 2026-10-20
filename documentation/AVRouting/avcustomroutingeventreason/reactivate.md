@@ -1,16 +1,17 @@
 # AVCustomRoutingEventReason.reactivate
 
 **Framework**: AVRouting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates to reactivate a route a user authorized previously.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ A value that indicates to reactivate a route a user authorized previously.
 case reactivate
 ```
 
+```c
+AVCustomRoutingEventReasonReactivate
+```
+
 ## See Also
 
-- [AVCustomRoutingEventReason.activate](avcustomroutingeventreason/activate.md)
+### Reasons
+- [AVCustomRoutingEventReason.activate](./activate.md)
   A value that indicates that a user selects a route in the picker.
-- [AVCustomRoutingEventReason.deactivate](avcustomroutingeventreason/deactivate.md)
+- [AVCustomRoutingEventReason.deactivate](./deactivate.md)
   A value that indicates that a user deselects a route in the picker.
 
 

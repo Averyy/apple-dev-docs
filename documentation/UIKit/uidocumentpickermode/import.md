@@ -1,15 +1,18 @@
 # UIDocumentPickerMode.import
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The document picker imports a file from outside the app’s sandbox.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 14.0
+- iPadOS 8.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIDocumentPickerMode`](../uidocumentpickermode.md).
 
 ## Declaration
 
@@ -17,13 +20,18 @@ The document picker imports a file from outside the app’s sandbox.
 case `import`
 ```
 
+```c
+UIDocumentPickerModeImport
+```
+
 ## See Also
 
-- [UIDocumentPickerMode.open](uidocumentpickermode/open.md)
+### Constants
+- [UIDocumentPickerMode.open](./open.md)
   The document picker opens an external file outside the app’s sandbox.
-- [UIDocumentPickerMode.exportToService](uidocumentpickermode/exporttoservice.md)
+- [UIDocumentPickerMode.exportToService](./exporttoservice.md)
   The document picker exports a local file to a destination outside the app’s sandbox.
-- [UIDocumentPickerMode.moveToService](uidocumentpickermode/movetoservice.md)
+- [UIDocumentPickerMode.moveToService](./movetoservice.md)
   The document picker moves a local file outside the app’s sandbox and provides access to it as an external file.
 
 

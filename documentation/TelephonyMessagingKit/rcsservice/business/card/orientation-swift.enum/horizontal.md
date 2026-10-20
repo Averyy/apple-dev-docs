@@ -1,7 +1,8 @@
 # RCSService.Business.Card.Orientation.horizontal
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Horizontal orientation.
 
@@ -16,7 +17,8 @@ case horizontal
 
 ## See Also
 
-- [RCSService.Business.Card.Orientation.vertical](rcsservice/business/card/orientation-swift.enum/vertical.md)
+### Determining orientation
+- [RCSService.Business.Card.Orientation.vertical](./vertical.md)
   Vertical orientation.
 
 

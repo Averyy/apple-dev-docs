@@ -1,7 +1,8 @@
 # dragInteraction(_:itemsForAddingTo:forTouchAt:completion:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests items to add to a drag session.
 
@@ -15,9 +16,13 @@ Requests items to add to a drag session.
 optional func dragInteraction(_ dragInteraction: BEDragInteraction, itemsForAddingTo session: any UIDragSession, forTouchAt point: CGPoint, completion: @escaping ([UIDragItem]) -> Bool)
 ```
 
+```objc
+- (void) dragInteraction:(BEDragInteraction *) dragInteraction itemsForAddingToSession:(id<UIDragSession>) session forTouchAtPoint:(CGPoint) point completion:(BOOL (^)(NSArray<UIDragItem *> *)) completion;
+```
+
 #### Discussion
 
-This method is the asynchronous variant of [`dragInteraction(_:itemsForAddingTo:withTouchAt:)`](https://developer.apple.com/documentation/uikit/uidraginteractiondelegate/draginteraction(_:itemsforaddingto:withtouchat:)). If your delegate implements this method, the system calls this method instead of the synchronous version.
+This method is the asynchronous variant of [`dragInteraction(_:itemsForAddingTo:withTouchAt:)`](../../UIKit/uidraginteractiondelegate/draginteraction%28_,itemsforaddingto,withtouchat%29.md). If your delegate implements this method, the system calls this method instead of the synchronous version.
 
 Call the completion handler as soon you prepare its arguments. The system times out the completion handler if a long delay occurs before you call the handler.
 
@@ -32,7 +37,8 @@ The completion block returns `true` if the drag session added the items you supp
 
 ## See Also
 
-- [func dragInteraction(BEDragInteraction, prepare: any UIDragSession, completion: () -> Bool)](bedraginteractiondelegate/draginteraction(_:prepare:completion:).md)
+### Participating in drag gestures
+- [func dragInteraction(BEDragInteraction, prepare: any UIDragSession, completion: () -> Bool)](./draginteraction%28_,prepare,completion%29.md)
   Prepares the delegate for a drag session.
 
 

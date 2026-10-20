@@ -1,7 +1,8 @@
 # LowLevelMesh.Layout
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that describes a set of attributes that share a buffer index, offset, and stride.
 
@@ -23,57 +24,58 @@ struct Layout
 
 Applications typically express their types using contiguous or interleaved (strided) memory.
 
-If you interleave your data (meaning that you represent it with a structure), use one `Layout` object where [`bufferStride`](lowlevelmesh/layout/bufferstride.md) is equal to `MemoryLayout<Type>.stride()`.
+If you interleave your data (meaning that you represent it with a structure), use one `Layout` object where [`bufferStride`](./layout/bufferstride.md) is equal to `MemoryLayout<Type>.stride()`.
 
 If you store your attributes separately, use one `Layout` per attribute.
 
 ## Topics
 
 ### Creating a low-level mesh layout
-- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int)](lowlevelmesh/layout/init(bufferindex:bufferoffset:bufferstride:).md)
+- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int)](./layout/init%28bufferindex,bufferoffset,bufferstride%29.md)
 ### Describing a low-level mesh layout
-- [var bufferIndex: Int](lowlevelmesh/layout/bufferindex.md)
+- [var bufferIndex: Int](./layout/bufferindex.md)
   The index of the buffer to use for this layout.
-- [var bufferOffset: Int](lowlevelmesh/layout/bufferoffset.md)
+- [var bufferOffset: Int](./layout/bufferoffset.md)
   The byte offset into the buffer for the first byte of this layout.
-- [var bufferStride: Int](lowlevelmesh/layout/bufferstride.md)
+- [var bufferStride: Int](./layout/bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
 ### Creating a layout
-- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int, stepFunction: MTLVertexStepFunction, stepRate: Int)](lowlevelmesh/layout/init(bufferindex:bufferoffset:bufferstride:stepfunction:steprate:).md)
+- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int, stepFunction: MTLVertexStepFunction, stepRate: Int)](./layout/init%28bufferindex,bufferoffset,bufferstride,stepfunction,steprate%29.md)
 ### Configuring vertex stepping
-- [var stepFunction: MTLVertexStepFunction](lowlevelmesh/layout/stepfunction.md)
+- [var stepFunction: MTLVertexStepFunction](./layout/stepfunction.md)
   Determines how the vertex shader steps through the data in this layout.
-- [var stepRate: Int](lowlevelmesh/layout/steprate.md)
+- [var stepRate: Int](./layout/steprate.md)
   The number of instances that share the same per-instance vertex data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Integrating virtual objects with your environment](integrating-virtual-objects-with-your-environment.md)
+### Updatable meshes
+- [Integrating virtual objects with your environment](../integrating-virtual-objects-with-your-environment.md)
   Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](../creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
+- [Creating a plane with low-level mesh](../creating-a-plane-with-low-level-mesh.md)
   Create a low-level mesh and set its vertex positions and normals to form a plane.
-- [class LowLevelMesh](lowlevelmesh.md)
+- [class LowLevelMesh](../lowlevelmesh.md)
   A container for vertex data that you can use to create and update meshes using your own format.
-- [LowLevelMesh.Descriptor](lowlevelmesh/descriptor-swift.struct.md)
+- [LowLevelMesh.Descriptor](./descriptor-swift.struct.md)
   An object that describes the data format and layout of the buffers in a low-level mesh.
-- [LowLevelMesh.Part](lowlevelmesh/part.md)
+- [LowLevelMesh.Part](./part.md)
   An object that describes a range of primitives to display, and their material index.
-- [LowLevelMesh.Attribute](lowlevelmesh/attribute.md)
+- [LowLevelMesh.Attribute](./attribute.md)
   An object that determines how to store vertex attribute data in memory and map it to RealityKit shader attributes.
-- [LowLevelMesh.VertexSemantic](lowlevelmesh/vertexsemantic.md)
+- [LowLevelMesh.VertexSemantic](./vertexsemantic.md)
   Designates the intended usage of a vertex attribute.
-- [LowLevelMesh.PartsCollection](lowlevelmesh/partscollection.md)
+- [LowLevelMesh.PartsCollection](./partscollection.md)
   An object that holds a mutable collection low-level mesh parts.
-- [class LowLevelBuffer](lowlevelbuffer.md)
-- [class LowLevelInstanceData](lowlevelinstancedata.md)
+- [class LowLevelBuffer](../lowlevelbuffer.md)
+- [class LowLevelInstanceData](../lowlevelinstancedata.md)
 
 
 ---

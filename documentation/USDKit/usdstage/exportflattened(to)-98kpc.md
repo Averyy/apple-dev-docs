@@ -1,7 +1,8 @@
 # exportFlattened(to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the stage as a flattened USD file.
 
@@ -29,13 +30,14 @@ Throws an error if the extension is not `.usda`, `.usdc`, or `.usd`.
 
 ## See Also
 
-- [func exportPackage(to: URL, options: USDStage.ExportOptions) throws](usdstage/exportpackage(to:options:)-6s2wk.md)
+### Exporting the stage
+- [func exportPackage(to: URL, options: USDStage.ExportOptions) throws](./exportpackage%28to,options%29-6s2wk.md)
   Packages the stage into a USDZ archive.
-- [func exportPackage(to: FilePath, options: USDStage.ExportOptions) throws](usdstage/exportpackage(to:options:)-2x7yr.md)
+- [func exportPackage(to: FilePath, options: USDStage.ExportOptions) throws](./exportpackage%28to,options%29-2x7yr.md)
   Packages the stage into a USDZ archive.
-- [func exportFlattened(to: FilePath) throws](usdstage/exportflattened(to:)-6717d.md)
+- [func exportFlattened(to: FilePath) throws](./exportflattened%28to%29-6717d.md)
   Exports the stage as a flattened USD file.
-- [USDStage.ExportOptions](usdstage/exportoptions.md)
+- [USDStage.ExportOptions](./exportoptions.md)
   Options for packaging a stage into a USDZ file.
 
 

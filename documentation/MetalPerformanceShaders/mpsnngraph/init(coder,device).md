@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [convenience init?(device: any MTLDevice, resultImage: MPSNNImageNode)](mpsnngraph/init(device:resultimage:).md)
-- [init?(device: any MTLDevice, resultImage: MPSNNImageNode, resultImageIsNeeded: Bool)](mpsnngraph/init(device:resultimage:resultimageisneeded:).md)
-- [init?(device: any MTLDevice, resultImages: [MPSNNImageNode], resultsAreNeeded: UnsafeMutablePointer<ObjCBool>?)](mpsnngraph/init(device:resultimages:resultsareneeded:).md)
+### Initializers
+- [convenience init?(device: any MTLDevice, resultImage: MPSNNImageNode)](./init%28device,resultimage%29.md)
+- [init?(device: any MTLDevice, resultImage: MPSNNImageNode, resultImageIsNeeded: Bool)](./init%28device,resultimage,resultimageisneeded%29.md)
+- [init?(device: any MTLDevice, resultImages: [MPSNNImageNode], resultsAreNeeded: UnsafeMutablePointer<ObjCBool>?)](./init%28device,resultimages,resultsareneeded%29.md)
 
 
 ---

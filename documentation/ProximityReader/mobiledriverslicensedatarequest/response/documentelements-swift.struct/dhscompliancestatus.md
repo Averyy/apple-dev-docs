@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the mobile driver’s license’ DHS (U.S. Department of Homeland Security) compliance status.
 
@@ -23,18 +24,18 @@ This is also known as the document’s “REAL ID status”.
 ## Topics
 
 ### Enumeration Cases
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus.compliant](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dhscompliancestatus/compliant.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus.compliant](./dhscompliancestatus/compliant.md)
   A constant that indicates the mobile driver’s license is DHS compliant.
-- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus.noncompliant](mobiledriverslicensedatarequest/response/documentelements-swift.struct/dhscompliancestatus/noncompliant.md)
+- [MobileDriversLicenseDataRequest.Response.DocumentElements.DHSComplianceStatus.noncompliant](./dhscompliancestatus/noncompliant.md)
   A constant that indicates the mobile driver’s license is not DHS compliant.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(networkIdentifier:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Downlink Time-Difference-of-Arrival (DL-TDOA) configuration for a specific tracked area.
 
@@ -16,9 +17,13 @@ Initializes a Downlink Time-Difference-of-Arrival (DL-TDOA) configuration for a 
 init(networkIdentifier: Int)
 ```
 
+```objc
+- (instancetype) initWithNetworkIdentifier:(NSInteger) networkIdentifier;
+```
+
 #### Discussion
 
-When you call this method, the [`discoveryMethod`](nidltdoaconfiguration/discoverymethod-swift.property.md) defaults to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md). To initialize a configuration and specify your deployment’s discovery method, call [`init(networkIdentifier:discoveryMethod:)`](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md) instead.
+When you call this method, the [`discoveryMethod`](./discoverymethod-swift.property.md) defaults to [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](./discoverymethod-swift.enum/bluetoothlowenergy.md). To initialize a configuration and specify your deployment’s discovery method, call [`init(networkIdentifier:discoveryMethod:)`](./init%28networkidentifier,discoverymethod%29.md) instead.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ When you call this method, the [`discoveryMethod`](nidltdoaconfiguration/discove
 
 ## See Also
 
-- [init(networkIdentifier: Int, discoveryMethod: NIDLTDOAConfiguration.DiscoveryMethod)](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md)
+### Creating a configuration
+- [init(networkIdentifier: Int, discoveryMethod: NIDLTDOAConfiguration.DiscoveryMethod)](./init%28networkidentifier,discoverymethod%29.md)
   Initializes a DL-TDOA configuration with a network identifier and discovery method.
 
 

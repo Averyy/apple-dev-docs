@@ -1,7 +1,8 @@
 # prefix(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lazy sequence of the initial consecutive elements that satisfy `predicate`.
 

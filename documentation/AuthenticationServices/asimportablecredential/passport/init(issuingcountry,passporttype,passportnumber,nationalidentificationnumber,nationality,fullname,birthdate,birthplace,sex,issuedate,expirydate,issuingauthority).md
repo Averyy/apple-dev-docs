@@ -1,7 +1,8 @@
 # init(issuingCountry:passportType:passportNumber:nationalIdentificationNumber:nationality:fullName:birthDate:birthPlace:sex:issueDate:expiryDate:issuingAuthority:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

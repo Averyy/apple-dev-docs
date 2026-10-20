@@ -1,7 +1,8 @@
 # editItem(at:with:select:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins editing the item at the specified path.
 
@@ -14,25 +15,30 @@ Begins editing the item at the specified path.
 func editItem(at indexPath: IndexPath, with event: NSEvent?, select: Bool)
 ```
 
+```objc
+- (void) editItemAtIndexPath:(NSIndexPath *) indexPath withEvent:(NSEvent *) event select:(BOOL) select;
+```
+
 ## Parameters
 
 - `indexPath`: The path of the item.
 - `event`: The event to use when beginning the edit.
-- `select`: If [`true`](https://developer.apple.com/documentation/swift/true), the cells contents will be selected; if [`false`](https://developer.apple.com/documentation/swift/false), they will not be selected.
+- `select`: If [`true`](../../Swift/true.md), the cells contents will be selected; if [`false`](../../Swift/false.md), they will not be selected.
 
 ## See Also
 
-- [func loadedCell(atRow: Int, column: Int) -> Any?](nsbrowser/loadedcell(atrow:column:).md)
+### Accessing Components
+- [func loadedCell(atRow: Int, column: Int) -> Any?](./loadedcell%28atrow,column%29.md)
   Loads, if necessary, and returns the cell at the specified row and column location.
-- [func item(at: IndexPath) -> Any?](nsbrowser/item(at:).md)
+- [func item(at: IndexPath) -> Any?](./item%28at%29.md)
   Returns the item at the specified index path.
-- [func item(atRow: Int, inColumn: Int) -> Any?](nsbrowser/item(atrow:incolumn:).md)
+- [func item(atRow: Int, inColumn: Int) -> Any?](./item%28atrow,incolumn%29.md)
   Returns the item located at the specified row and column.
-- [func indexPath(forColumn: Int) -> IndexPath](nsbrowser/indexpath(forcolumn:).md)
+- [func indexPath(forColumn: Int) -> IndexPath](./indexpath%28forcolumn%29.md)
   Returns the index path of the item whose children are displayed in the given column.
-- [func isLeafItem(Any?) -> Bool](nsbrowser/isleafitem(_:).md)
+- [func isLeafItem(Any?) -> Bool](./isleafitem%28_%29.md)
   Returns whether the specified item is a leaf item.
-- [func parentForItems(inColumn: Int) -> Any?](nsbrowser/parentforitems(incolumn:).md)
+- [func parentForItems(inColumn: Int) -> Any?](./parentforitems%28incolumn%29.md)
   Returns the item that contains the children located in the specified column.
 
 

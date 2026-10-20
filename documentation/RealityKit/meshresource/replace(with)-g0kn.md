@@ -1,7 +1,8 @@
 # replace(with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replace the contents of this mesh resource.
 
@@ -11,7 +12,7 @@ Replace the contents of this mesh resource.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,23 @@ Replace the contents of this mesh resource.
 @preconcurrency func replace(with content: MeshResource.Contents) throws
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func replace(with content: MeshResource.Contents) async throws
+```
+
 #### Discussion
 
 > **Note**: The contents of the modified mesh resource will not be synced between network clients.
 
 ## See Also
 
-- [var expectedMaterialCount: Int](meshresource/expectedmaterialcount.md)
+### Configuring the resource
+- [var expectedMaterialCount: Int](./expectedmaterialcount.md)
   The number of material entries required to render the mesh resource.
-- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](meshresource/replaceasync(with:).md)
+- [func replaceAsync(with: MeshResource.Contents) -> LoadRequest<MeshResource>](./replaceasync%28with%29.md)
   Replace the contents of this mesh resource asynchronously.
 
 

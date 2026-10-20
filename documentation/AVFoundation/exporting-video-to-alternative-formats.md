@@ -1,6 +1,7 @@
 # Exporting video to alternative formats
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Convert an existing movie file to a different format.
 
@@ -8,16 +9,16 @@ Convert an existing movie file to a different format.
 
 To convert an existing movie file to a format that makes it compatible with other devices, you need to generate a new movie file based on the contents of the existing file. Though you can’t change the format of the saved video, you can create a new file in the desired format by following the steps outlined in this article.
 
-> 💡 **Tip**:  If your app can save a movie directly from video capture, it’s more efficient to change the default format during capture by following the steps in [`Recording movies in alternative formats`](recording-movies-in-alternative-formats.md).
+> 💡 **Tip**:  If your app can save a movie directly from video capture, it’s more efficient to change the default format during capture by following the steps in [Recording movies in alternative formats](./recording-movies-in-alternative-formats.md).
 
-##### Export a New Video to the Desired Format
+##### Export a new video to the desired format
 
-To export a video to a different format, begin with an [`AVAsset`](avasset.md) movie file and perform these steps:
+To export a video to a different format, begin with an [`AVAsset`](./avasset.md) movie file and perform these steps:
 
-1. Choose an export preset from the list of [`Export presets`](export-presets.md).
-2. Choose an export file type from the list of [`AVFileType`](avfiletype.md) presets.
-3. Verify that [`AVAssetExportSession`](avassetexportsession.md) can convert the movie from the input format to the output format you want.
-4. Create and configure an [`AVAssetExportSession`](avassetexportsession.md) instance, and then use it to perform the export.
+1. Choose an export preset from the list of [Export presets](./export-presets.md).
+2. Choose an export file type from the list of [`AVFileType`](./avfiletype.md) presets.
+3. Verify that [`AVAssetExportSession`](./avassetexportsession.md) can convert the movie from the input format to the output format you want.
+4. Create and configure an [`AVAssetExportSession`](./avassetexportsession.md) instance, and then use it to perform the export.
 
 The following example defines a method and then uses it to perform these steps:
 
@@ -63,7 +64,8 @@ Task {
 
 ## See Also
 
-- [class AVAssetExportSession](avassetexportsession.md)
+### Media export
+- [class AVAssetExportSession](./avassetexportsession.md)
   An object that exports assets in a format that you specify using an export preset.
 
 

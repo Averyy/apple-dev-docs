@@ -1,14 +1,15 @@
 # CreateWithTypeName_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CreateWithTypeName_Invoke(const IORPC rpc, CreateWithTypeName_Handler func);
 ```
 

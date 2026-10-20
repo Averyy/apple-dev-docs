@@ -1,16 +1,19 @@
 # Pagination
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The procedure to refine returned results using limit and offset parameters.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object Pagination
 ```
 
@@ -29,13 +32,14 @@ GET https://api.searchads.apple.com/api/v5/campaigns?limit=<LIMIT>&offset=<OFFSE
 
 ## See Also
 
-- [object Condition](condition.md)
+### API Usability
+- [object Condition](./condition.md)
   The list of condition objects that allow users to filter a list of records.
-- [object PageDetail](pagedetail.md)
+- [object PageDetail](./pagedetail.md)
   The number of items that return in the page.
-- [object Selector](selector.md)
+- [object Selector](./selector.md)
   The selector objects available to filter returned data.
-- [object Sorting](sorting.md)
+- [object Sorting](./sorting.md)
   The order of grouped results.
 
 

@@ -1,7 +1,8 @@
 # GLKMatrix4MultiplyVector3Array(_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies a `4x4` matrix by an array of `3`-component vectors.
 
@@ -17,6 +18,10 @@ Multiplies a `4x4` matrix by an array of `3`-component vectors.
 func GLKMatrix4MultiplyVector3Array(_ matrix: GLKMatrix4, _ vectors: UnsafeMutablePointer<GLKVector3>, _ vectorCount: Int)
 ```
 
+```c
+static void GLKMatrix4MultiplyVector3Array(GLKMatrix4 matrix, GLKVector3 *vectors, size_t vectorCount);
+```
+
 #### Discussion
 
 The input vectors are treated as they were 4-component vectors with a `w`-component of `0.0`.
@@ -29,19 +34,20 @@ The input vectors are treated as they were 4-component vectors with a `w`-compon
 
 ## See Also
 
-- [func GLKMatrix4MultiplyVector3(GLKMatrix4, GLKVector3) -> GLKVector3](glkmatrix4multiplyvector3(_:_:).md)
+### Performing Mathematical Operations on Vectors
+- [func GLKMatrix4MultiplyVector3(GLKMatrix4, GLKVector3) -> GLKVector3](./glkmatrix4multiplyvector3%28_,_%29.md)
   Multiplies a `4x4` matrix by a `3`-component vector.
-- [func GLKMatrix4MultiplyVector3WithTranslation(GLKMatrix4, GLKVector3) -> GLKVector3](glkmatrix4multiplyvector3withtranslation(_:_:).md)
+- [func GLKMatrix4MultiplyVector3WithTranslation(GLKMatrix4, GLKVector3) -> GLKVector3](./glkmatrix4multiplyvector3withtranslation%28_,_%29.md)
   Multiplies a `4x4` matrix by a `3`-component vector, applying translation.
-- [func GLKMatrix4MultiplyVector3ArrayWithTranslation(GLKMatrix4, UnsafeMutablePointer<GLKVector3>, Int)](glkmatrix4multiplyvector3arraywithtranslation(_:_:_:).md)
+- [func GLKMatrix4MultiplyVector3ArrayWithTranslation(GLKMatrix4, UnsafeMutablePointer<GLKVector3>, Int)](./glkmatrix4multiplyvector3arraywithtranslation%28_,_,_%29.md)
   Multiplies a `4x4` matrix by an array of `3`-component vectors, applying translation.
-- [func GLKMatrix4MultiplyVector4(GLKMatrix4, GLKVector4) -> GLKVector4](glkmatrix4multiplyvector4(_:_:).md)
+- [func GLKMatrix4MultiplyVector4(GLKMatrix4, GLKVector4) -> GLKVector4](./glkmatrix4multiplyvector4%28_,_%29.md)
   Multiplies a `4x4` matrix by a `4`-component vector.
-- [func GLKMatrix4MultiplyVector4Array(GLKMatrix4, UnsafeMutablePointer<GLKVector4>, Int)](glkmatrix4multiplyvector4array(_:_:_:).md)
+- [func GLKMatrix4MultiplyVector4Array(GLKMatrix4, UnsafeMutablePointer<GLKVector4>, Int)](./glkmatrix4multiplyvector4array%28_,_,_%29.md)
   Multiplies a `4x4` matrix by an array of `4`-component vectors.
-- [func GLKMatrix4MultiplyAndProjectVector3(GLKMatrix4, GLKVector3) -> GLKVector3](glkmatrix4multiplyandprojectvector3(_:_:).md)
+- [func GLKMatrix4MultiplyAndProjectVector3(GLKMatrix4, GLKVector3) -> GLKVector3](./glkmatrix4multiplyandprojectvector3%28_,_%29.md)
   Multiplies a `4x4` matrix by a position vector to create a vector in homogenous coordinates, then projects the result to a `3`-component vector.
-- [func GLKMatrix4MultiplyAndProjectVector3Array(GLKMatrix4, UnsafeMutablePointer<GLKVector3>, Int)](glkmatrix4multiplyandprojectvector3array(_:_:_:).md)
+- [func GLKMatrix4MultiplyAndProjectVector3Array(GLKMatrix4, UnsafeMutablePointer<GLKVector3>, Int)](./glkmatrix4multiplyandprojectvector3array%28_,_,_%29.md)
   Multiplies a `4x4` matrix by an array of `3`-component vectors. Each result is projected back to `3`-component vector.
 
 

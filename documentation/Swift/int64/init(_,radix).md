@@ -1,7 +1,8 @@
 # init(_:radix:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new integer value from the given string and radix.
 

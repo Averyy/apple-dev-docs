@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user activity object’s delegate.
 
@@ -20,13 +21,18 @@ The user activity object’s delegate.
 weak var delegate: (any NSUserActivityDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSUserActivityDelegate> delegate;
+```
+
 #### Discussion
 
-The user activity delegate is informed when the activity is being saved or continued. For more information on how to implement the delegate, see [`NSUserActivityDelegate`](nsuseractivitydelegate.md).
+The user activity delegate is informed when the activity is being saved or continued. For more information on how to implement the delegate, see [`NSUserActivityDelegate`](../nsuseractivitydelegate.md).
 
 ## See Also
 
-- [protocol NSUserActivityDelegate](nsuseractivitydelegate.md)
+### Monitoring activity-related behaviors
+- [protocol NSUserActivityDelegate](../nsuseractivitydelegate.md)
   The interface through which a user activity instance notifies its delegate of updates.
 
 

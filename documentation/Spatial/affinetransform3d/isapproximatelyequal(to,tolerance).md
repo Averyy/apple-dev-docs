@@ -1,7 +1,8 @@
 # isApproximatelyEqual(to:tolerance:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two transforms are equal within a specified tolerance.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether two transforms are equal within a
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,8 @@ func isApproximatelyEqual(to other: AffineTransform3D, tolerance: Double = sqrt(
 
 ## See Also
 
-- [static func == (AffineTransform3D, AffineTransform3D) -> Bool](affinetransform3d/==(_:_:).md)
+### Comparing values
+- [static func == (AffineTransform3D, AffineTransform3D) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

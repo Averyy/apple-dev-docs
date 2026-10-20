@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The source buffer used to create this texture, if any.
@@ -20,25 +21,31 @@ The source buffer used to create this texture, if any.
 var buffer: (any MTLBuffer)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<MTLBuffer> buffer;
+```
+
 #### Discussion
 
-When this value is `nil`, another [`MTLTexture`](mtltexture.md) instance provides texture data.
+When this value is `nil`, another [`MTLTexture`](../mtltexture.md) instance provides texture data.
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int) -> (any MTLTexture)?](mtlbuffer/maketexture(descriptor:offset:bytesperrow:).md)
+### Related Documentation
+- [func makeTexture(descriptor: MTLTextureDescriptor, offset: Int, bytesPerRow: Int) -> (any MTLTexture)?](../mtlbuffer/maketexture%28descriptor,offset,bytesperrow%29.md)
   Creates a texture that shares its storage with the buffer.
-- [var parent: (any MTLTexture)?](mtltexture/parent.md)
+### Getting information about ancestor resources
+- [var parent: (any MTLTexture)?](./parent.md)
   The parent texture used to create this texture, if any.
-- [var parentRelativeLevel: Int](mtltexture/parentrelativelevel.md)
+- [var parentRelativeLevel: Int](./parentrelativelevel.md)
   The base level of the parent texture used to create this texture.
-- [var parentRelativeSlice: Int](mtltexture/parentrelativeslice.md)
+- [var parentRelativeSlice: Int](./parentrelativeslice.md)
   The base slice of the parent texture used to create this texture.
-- [var bufferOffset: Int](mtltexture/bufferoffset.md)
+- [var bufferOffset: Int](./bufferoffset.md)
   The offset in the source buffer where the texture’s data comes from.
-- [var bufferBytesPerRow: Int](mtltexture/bufferbytesperrow.md)
+- [var bufferBytesPerRow: Int](./bufferbytesperrow.md)
   The number of bytes in each row of the texture’s source buffer.
-- [var rootResource: (any MTLResource)?](mtltexture/rootresource.md)
+- [var rootResource: (any MTLResource)?](./rootresource.md)
   The resource that owns the storage for this texture.
 
 

@@ -1,7 +1,8 @@
 # invalidURL
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The URL is invalid.
 
@@ -22,21 +23,22 @@ static var invalidURL: SKTestError.Code { get }
 
 ## See Also
 
-- [static var fileNotFound: SKTestError.Code](sktesterror/filenotfound.md)
+### Error Codes
+- [static var fileNotFound: SKTestError.Code](./filenotfound.md)
   The initializer can’t find the file.
-- [static var invalidAction: SKTestError.Code](sktesterror/invalidaction.md)
+- [static var invalidAction: SKTestError.Code](./invalidaction.md)
   The action is invalid.
-- [static var invalidProductIdentifier: SKTestError.Code](sktesterror/invalidproductidentifier.md)
+- [static var invalidProductIdentifier: SKTestError.Code](./invalidproductidentifier.md)
   The product identifier is invalid.
-- [static var invalidProductType: SKTestError.Code](sktesterror/invalidproducttype.md)
+- [static var invalidProductType: SKTestError.Code](./invalidproducttype.md)
   The product type is invalid.
-- [static var noSubscriptionFound: SKTestError.Code](sktesterror/nosubscriptionfound.md)
+- [static var noSubscriptionFound: SKTestError.Code](./nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [static var noTransactionFound: SKTestError.Code](sktesterror/notransactionfound.md)
+- [static var noTransactionFound: SKTestError.Code](./notransactionfound.md)
   The test environment didn’t find a transaction.
-- [static var serviceUnavailable: SKTestError.Code](sktesterror/serviceunavailable.md)
+- [static var serviceUnavailable: SKTestError.Code](./serviceunavailable.md)
   The service isn’t available.
-- [SKTestError.Code](sktesterror/code.md)
+- [SKTestError.Code](./code.md)
   Error codes in the testing environment.
 
 

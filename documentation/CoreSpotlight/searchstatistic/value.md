@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The computed value.
 
@@ -20,9 +21,10 @@ let value: Double
 
 ## See Also
 
-- [let name: String](searchstatistic/name.md)
+### Getting the statistic details
+- [let name: String](./name.md)
   The statistic name (e.g., “average”, “max”, “total”).
-- [let header: String?](searchstatistic/header.md)
+- [let header: String?](./header.md)
   A short description of what was computed (e.g., “Average file size”).
 
 

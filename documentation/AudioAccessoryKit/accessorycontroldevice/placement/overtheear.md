@@ -1,7 +1,8 @@
 # AccessoryControlDevice.Placement.overTheEar
 
 **Framework**: AudioAccessoryKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device is over someone’s ear.
 
@@ -16,11 +17,12 @@ case overTheEar
 
 ## See Also
 
-- [AccessoryControlDevice.Placement.inEar](accessorycontroldevice/placement/inear.md)
+### Placement positions
+- [AccessoryControlDevice.Placement.inEar](./inear.md)
   The device is in someone’s ear.
-- [AccessoryControlDevice.Placement.offHead](accessorycontroldevice/placement/offhead.md)
+- [AccessoryControlDevice.Placement.offHead](./offhead.md)
   The device isn’t on someone’s head.
-- [AccessoryControlDevice.Placement.onHead](accessorycontroldevice/placement/onhead.md)
+- [AccessoryControlDevice.Placement.onHead](./onhead.md)
   The device is on someone’s head.
 
 

@@ -1,7 +1,8 @@
 # MaterialParameters.Value.float2x2(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+

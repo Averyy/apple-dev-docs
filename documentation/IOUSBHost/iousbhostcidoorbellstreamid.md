@@ -1,7 +1,8 @@
 # IOUSBHostCIDoorbellStreamID
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,13 +14,18 @@
 var IOUSBHostCIDoorbellStreamID: UInt32 { get }
 ```
 
+```c
+IOUSBHostCIDoorbellStreamID
+```
+
 ## See Also
 
-- [var IOUSBHostCIDoorbellDeviceAddress: UInt32](iousbhostcidoorbelldeviceaddress.md)
-- [var IOUSBHostCIDoorbellDeviceAddressPhase: UInt32](iousbhostcidoorbelldeviceaddressphase.md)
-- [var IOUSBHostCIDoorbellEndpointAddress: UInt32](iousbhostcidoorbellendpointaddress.md)
-- [var IOUSBHostCIDoorbellEndpointAddressPhase: UInt32](iousbhostcidoorbellendpointaddressphase.md)
-- [var IOUSBHostCIDoorbellStreamIDPhase: UInt32](iousbhostcidoorbellstreamidphase.md)
+### Constants
+- [var IOUSBHostCIDoorbellDeviceAddress: UInt32](./iousbhostcidoorbelldeviceaddress.md)
+- [var IOUSBHostCIDoorbellDeviceAddressPhase: UInt32](./iousbhostcidoorbelldeviceaddressphase.md)
+- [var IOUSBHostCIDoorbellEndpointAddress: UInt32](./iousbhostcidoorbellendpointaddress.md)
+- [var IOUSBHostCIDoorbellEndpointAddressPhase: UInt32](./iousbhostcidoorbellendpointaddressphase.md)
+- [var IOUSBHostCIDoorbellStreamIDPhase: UInt32](./iousbhostcidoorbellstreamidphase.md)
 
 
 ---

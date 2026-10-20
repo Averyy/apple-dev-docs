@@ -1,7 +1,8 @@
 # NSNonRetainedObjectHashCallBacks
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For sets of objects, but without retaining/releasing.
 
@@ -20,19 +21,24 @@ For sets of objects, but without retaining/releasing.
 let NSNonRetainedObjectHashCallBacks: NSHashTableCallBacks
 ```
 
+```c
+extern const NSHashTableCallBacks NSNonRetainedObjectHashCallBacks;
+```
+
 ## See Also
 
-- [let NSIntegerHashCallBacks: NSHashTableCallBacks](nsintegerhashcallbacks.md)
+### Constants
+- [let NSIntegerHashCallBacks: NSHashTableCallBacks](./nsintegerhashcallbacks.md)
   For sets of `NSInteger`-sized quantities or smaller (for example, `int`, `long`, or `unichar`).
-- [let NSNonOwnedPointerHashCallBacks: NSHashTableCallBacks](nsnonownedpointerhashcallbacks.md)
+- [let NSNonOwnedPointerHashCallBacks: NSHashTableCallBacks](./nsnonownedpointerhashcallbacks.md)
   For sets of pointers, hashed by address.
-- [let NSObjectHashCallBacks: NSHashTableCallBacks](nsobjecthashcallbacks.md)
+- [let NSObjectHashCallBacks: NSHashTableCallBacks](./nsobjecthashcallbacks.md)
   For sets of objects (similar to `NSSet`).
-- [let NSOwnedObjectIdentityHashCallBacks: NSHashTableCallBacks](nsownedobjectidentityhashcallbacks.md)
+- [let NSOwnedObjectIdentityHashCallBacks: NSHashTableCallBacks](./nsownedobjectidentityhashcallbacks.md)
   For sets of objects, with transfer of ownership upon insertion, using pointer equality.
-- [let NSOwnedPointerHashCallBacks: NSHashTableCallBacks](nsownedpointerhashcallbacks.md)
+- [let NSOwnedPointerHashCallBacks: NSHashTableCallBacks](./nsownedpointerhashcallbacks.md)
   For sets of pointers, with transfer of ownership upon insertion.
-- [let NSPointerToStructHashCallBacks: NSHashTableCallBacks](nspointertostructhashcallbacks.md)
+- [let NSPointerToStructHashCallBacks: NSHashTableCallBacks](./nspointertostructhashcallbacks.md)
   For sets of pointers to structs, when the first field of the struct is `int`-sized.
 
 

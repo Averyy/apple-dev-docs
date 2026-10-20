@@ -1,7 +1,8 @@
 # NetworkVPNIPSec
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure a VPN using the IPSec sub-type.
 
@@ -14,7 +15,7 @@ The declaration to configure a VPN using the IPSec sub-type.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSec
 ```
 
@@ -22,7 +23,7 @@ object NetworkVPNIPSec
 
 Specify `com.apple.configuration.network.vpn.ipsec` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.network.vpn.ipsec` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration Examples
+##### Configuration examples
 
 **Shared secret**:
 
@@ -81,15 +82,15 @@ This configuration sets up an IPSec VPN using a certificate identity asset for a
 ## Topics
 
 ### Objects
-- [object NetworkVPNIPSecAuthenticationObject](networkvpnipsecauthenticationobject.md)
+- [object NetworkVPNIPSecAuthenticationObject](./networkvpnipsecauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIPSecDNSObject](networkvpnipsecdnsobject.md)
+- [object NetworkVPNIPSecDNSObject](./networkvpnipsecdnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIPSecIdleObject](networkvpnipsecidleobject.md)
+- [object NetworkVPNIPSecIdleObject](./networkvpnipsecidleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNIPSecOnDemandObject](networkvpnipsecondemandobject.md)
+- [object NetworkVPNIPSecOnDemandObject](./networkvpnipsecondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIPSecProxiesObject](networkvpnipsecproxiesobject.md)
+- [object NetworkVPNIPSecProxiesObject](./networkvpnipsecproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
 
 ## Properties
@@ -104,35 +105,36 @@ This configuration sets up an IPSec VPN using a certificate identity asset for a
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

@@ -1,7 +1,8 @@
 # ObjectDetectionAnnotation.Annotation
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The annotation represented by an object label and its bounding box.
 
@@ -22,31 +23,32 @@ struct Annotation
 ## Topics
 
 ### Getting the properties
-- [let boundingBox: CGRect](objectdetectionannotation/annotation/boundingbox.md)
+- [let boundingBox: CGRect](./annotation/boundingbox.md)
   The bounding box that describes the spatial location of the object.
-- [let label: Label](objectdetectionannotation/annotation/label.md)
+- [let label: Label](./annotation/label.md)
   The object label.
 ### Encoding and decoding
-- [ObjectDetectionAnnotation.Annotation.CodingKeys](objectdetectionannotation/annotation/codingkeys.md)
+- [ObjectDetectionAnnotation.Annotation.CodingKeys](./annotation/codingkeys.md)
   Coding keys for Annotation.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let imageFileName: String](objectdetectionannotation/imagefilename.md)
+### Getting the properties
+- [let imageFileName: String](./imagefilename.md)
   The name of the image file.
-- [let objects: [ObjectDetectionAnnotation<Label>.Annotation]](objectdetectionannotation/objects.md)
+- [let objects: [ObjectDetectionAnnotation<Label>.Annotation]](./objects.md)
   The list of object annotations in the image.
-- [let prominentObject: Label](objectdetectionannotation/prominentobject.md)
+- [let prominentObject: Label](./prominentobject.md)
   The most prominent object in the image.
 
 

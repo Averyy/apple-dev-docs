@@ -1,37 +1,39 @@
 # Reverb Unit Parameters
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 Parameters for the Reverb unit.
 
 ## Topics
 
 ### Constants
-- [var kReverb2Param_DecayTimeAt0Hz: AudioUnitParameterID](kreverb2param_decaytimeat0hz.md)
-- [var kReverb2Param_DecayTimeAtNyquist: AudioUnitParameterID](kreverb2param_decaytimeatnyquist.md)
-- [var kReverb2Param_DryWetMix: AudioUnitParameterID](kreverb2param_drywetmix.md)
-- [var kReverb2Param_Gain: AudioUnitParameterID](kreverb2param_gain.md)
-- [var kReverb2Param_MaxDelayTime: AudioUnitParameterID](kreverb2param_maxdelaytime.md)
-- [var kReverb2Param_MinDelayTime: AudioUnitParameterID](kreverb2param_mindelaytime.md)
-- [var kReverb2Param_RandomizeReflections: AudioUnitParameterID](kreverb2param_randomizereflections.md)
+- [var kReverb2Param_DecayTimeAt0Hz: AudioUnitParameterID](./kreverb2param_decaytimeat0hz.md)
+- [var kReverb2Param_DecayTimeAtNyquist: AudioUnitParameterID](./kreverb2param_decaytimeatnyquist.md)
+- [var kReverb2Param_DryWetMix: AudioUnitParameterID](./kreverb2param_drywetmix.md)
+- [var kReverb2Param_Gain: AudioUnitParameterID](./kreverb2param_gain.md)
+- [var kReverb2Param_MaxDelayTime: AudioUnitParameterID](./kreverb2param_maxdelaytime.md)
+- [var kReverb2Param_MinDelayTime: AudioUnitParameterID](./kreverb2param_mindelaytime.md)
+- [var kReverb2Param_RandomizeReflections: AudioUnitParameterID](./kreverb2param_randomizereflections.md)
 
 ## See Also
 
-- [Effect Audio Unit Subtypes](1584154-effect_audio_unit_subtypes.md)
+### Effects
+- [Effect Audio Unit Subtypes](./api-1584154-effect_audio_unit_subtypes.md)
   Effect (digital signal processing) audio unit subtypes for audio units provided by Apple.
-- [AUMatrixReverb Parameters](1389801-aumatrixreverb-parameters.md)
-- [AUDistortion Parameters](1390086-audistortion-parameters.md)
-- [Reverb Parameters](1390119-reverb_parameters.md)
+- [AUMatrixReverb Parameters](./api-1389801-aumatrixreverb-parameters.md)
+- [AUDistortion Parameters](./api-1390086-audistortion-parameters.md)
+- [Reverb Parameters](./api-1390119-reverb_parameters.md)
   Additional reverb parameters.
-- [enum AUReverbRoomType](aureverbroomtype.md)
-- [Varispeed Unit Parameters](1390014-varispeed_unit_parameters.md)
+- [enum AUReverbRoomType](./aureverbroomtype.md)
+- [Varispeed Unit Parameters](./api-1390014-varispeed_unit_parameters.md)
   Parameters for the Varispeed unit.
-- [AUDelay Parameters](1390010-audelay-parameters.md)
-- [AUMultibandCompressor Parameters](1389781-aumultibandcompressor-parameters.md)
-- [AUDeferredRenderer Properties](1534061-audeferredrenderer-properties.md)
-- [AUSampleDelay Parameters](3547050-ausampledelay-parameters.md)
-- [AUNewTimePitch Parameters](1389643-aunewtimepitch-parameters.md)
-- [AUTimePitch, AUTimePitch (offline), and AUPitch Unit Parameters](1389946-autimepitch_autimepitch_offline.md)
+- [AUDelay Parameters](./api-1390010-audelay-parameters.md)
+- [AUMultibandCompressor Parameters](./api-1389781-aumultibandcompressor-parameters.md)
+- [AUDeferredRenderer Properties](./api-1534061-audeferredrenderer-properties.md)
+- [AUSampleDelay Parameters](./api-3547050-ausampledelay-parameters.md)
+- [AUNewTimePitch Parameters](./api-1389643-aunewtimepitch-parameters.md)
+- [AUTimePitch, AUTimePitch (offline), and AUPitch Unit Parameters](./api-1389946-autimepitch_autimepitch_offline.md)
 
 
 ---

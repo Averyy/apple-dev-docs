@@ -1,7 +1,8 @@
 # NSTimeIntervalSince1970
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
 
@@ -20,21 +21,26 @@ The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
 var NSTimeIntervalSince1970: Double { get }
 ```
 
+```c
+#define NSTimeIntervalSince1970
+```
+
 #### Discussion
 
 1 January 1970 is the epoch (or starting point) for Unix time.
 
 ## See Also
 
-- [func timeIntervalSince(Date) -> TimeInterval](nsdate/timeintervalsince(_:).md)
+### Getting Time Intervals
+- [func timeIntervalSince(Date) -> TimeInterval](./nsdate/timeintervalsince%28_%29.md)
   Returns the interval between the receiver and another given date.
-- [var timeIntervalSinceNow: TimeInterval](nsdate/timeintervalsincenow.md)
+- [var timeIntervalSinceNow: TimeInterval](./nsdate/timeintervalsincenow.md)
   The interval between the date object and the current date and time.
-- [var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.property.md)
+- [var timeIntervalSinceReferenceDate: TimeInterval](./nsdate/timeintervalsincereferencedate-swift.property.md)
   The interval between the date object and 00:00:00 UTC on 1 January 2001.
-- [var timeIntervalSince1970: TimeInterval](nsdate/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./nsdate/timeintervalsince1970.md)
   The interval between the date object and 00:00:00 UTC on 1 January 1970.
-- [class var timeIntervalSinceReferenceDate: TimeInterval](nsdate/timeintervalsincereferencedate-swift.type.property.md)
+- [class var timeIntervalSinceReferenceDate: TimeInterval](./nsdate/timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
 
 

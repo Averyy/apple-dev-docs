@@ -1,18 +1,21 @@
 # previewLayout(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides the size of the container for the preview.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.0+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- tvOS 13.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 6.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use [`Preview(_:traits:_:body:)`](../preview%28_,traits,_,body%29.md) with [`sizeThatFitsLayout`](../../DeveloperToolsSupport/previewtrait/sizethatfitslayout.md) or  [`fixedLayout(width:height:)`](../../DeveloperToolsSupport/previewtrait/fixedlayout%28width,height%29.md) instead.
 
 ## Declaration
 
@@ -44,13 +47,14 @@ struct CircleImage_Previews: PreviewProvider {
 
 ## See Also
 
-- [func previewDevice(PreviewDevice?) -> some View](view/previewdevice(_:).md)
+### Customizing a preview
+- [func previewDevice(PreviewDevice?) -> some View](./previewdevice%28_%29.md)
   Overrides the device for a preview.
-- [struct PreviewDevice](previewdevice.md)
+- [struct PreviewDevice](../previewdevice.md)
   A simulator device that runs a preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
+- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](./previewinterfaceorientation%28_%29.md)
   Overrides the orientation of the preview.
-- [struct InterfaceOrientation](interfaceorientation.md)
+- [struct InterfaceOrientation](../interfaceorientation.md)
   The orientation of the interface from the user’s perspective.
 
 

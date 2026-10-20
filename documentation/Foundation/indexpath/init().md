@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty index path.
 
@@ -22,15 +23,16 @@ init()
 
 ## See Also
 
-- [init(index: IndexPath.Element)](indexpath/init(index:).md)
+### Creating Index Paths
+- [init(index: IndexPath.Element)](./init%28index%29.md)
   Creates an index path with a single element.
-- [init(arrayLiteral: IndexPath.Element...)](indexpath/init(arrayliteral:).md)
+- [init(arrayLiteral: IndexPath.Element...)](./init%28arrayliteral%29.md)
   Creates an index path from an array literal.
-- [init(indexes: Array<IndexPath.Element>)](indexpath/init(indexes:)-7auqk.md)
+- [init(indexes: Array<IndexPath.Element>)](./init%28indexes%29-7auqk.md)
   Creates an index path from an array of elements.
-- [init<ElementSequence>(indexes: ElementSequence)](indexpath/init(indexes:)-55we8.md)
+- [init<ElementSequence>(indexes: ElementSequence)](./init%28indexes%29-55we8.md)
   Creates an index path from a sequence of integers.
-- [IndexPath.Element](indexpath/element.md)
+- [IndexPath.Element](./element.md)
   A type that represents one node of an index path.
 
 

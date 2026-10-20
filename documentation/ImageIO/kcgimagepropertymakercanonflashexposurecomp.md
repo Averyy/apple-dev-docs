@@ -1,7 +1,8 @@
 # kCGImagePropertyMakerCanonFlashExposureComp
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The flash exposure compensation setting.
 
@@ -20,11 +21,16 @@ The flash exposure compensation setting.
 let kCGImagePropertyMakerCanonFlashExposureComp: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyMakerCanonFlashExposureComp;
+```
+
 ## See Also
 
-- [let kCGImagePropertyMakerCanonContinuousDrive: CFString](kcgimagepropertymakercanoncontinuousdrive.md)
+### Program Settings
+- [let kCGImagePropertyMakerCanonContinuousDrive: CFString](./kcgimagepropertymakercanoncontinuousdrive.md)
   The presence of a continuous drive.
-- [let kCGImagePropertyMakerCanonAspectRatioInfo: CFString](kcgimagepropertymakercanonaspectratioinfo.md)
+- [let kCGImagePropertyMakerCanonAspectRatioInfo: CFString](./kcgimagepropertymakercanonaspectratioinfo.md)
   The image aspect ratio.
 
 

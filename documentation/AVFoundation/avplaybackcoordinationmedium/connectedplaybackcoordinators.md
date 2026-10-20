@@ -1,7 +1,8 @@
 # connectedPlaybackCoordinators
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All playback coordinators that are connected to the coordination medium.
 
@@ -17,6 +18,10 @@ All playback coordinators that are connected to the coordination medium.
 
 ```swift
 var connectedPlaybackCoordinators: [AVPlayerPlaybackCoordinator] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<AVPlayerPlaybackCoordinator *> * connectedPlaybackCoordinators;
 ```
 
 #### Discussion

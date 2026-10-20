@@ -1,7 +1,8 @@
 # kIOConnectMethodVarOutputSize
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.4+

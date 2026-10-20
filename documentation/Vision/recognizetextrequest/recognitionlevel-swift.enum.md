@@ -1,7 +1,8 @@
 # RecognizeTextRequest.RecognitionLevel
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that identify the performance and accuracy of the text recognition.
 
@@ -22,37 +23,38 @@ enum RecognitionLevel
 ## Topics
 
 ### Getting the recognition levels
-- [RecognizeTextRequest.RecognitionLevel.accurate](recognizetextrequest/recognitionlevel-swift.enum/accurate.md)
+- [RecognizeTextRequest.RecognitionLevel.accurate](./recognitionlevel-swift.enum/accurate.md)
   Accurate text recognition takes more time to produce a more comprehensive result.
-- [RecognizeTextRequest.RecognitionLevel.fast](recognizetextrequest/recognitionlevel-swift.enum/fast.md)
+- [RecognizeTextRequest.RecognitionLevel.fast](./recognitionlevel-swift.enum/fast.md)
   Fast text recognition returns results more quickly at the expense of accuracy.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var automaticallyDetectsLanguage: Bool](recognizetextrequest/automaticallydetectslanguage.md)
+### Configuring a request
+- [var automaticallyDetectsLanguage: Bool](./automaticallydetectslanguage.md)
   A Boolean value that indicates whether to attempt detecting the language to use the appropriate model for recognition and language correction.
-- [var usesLanguageCorrection: Bool](recognizetextrequest/useslanguagecorrection.md)
+- [var usesLanguageCorrection: Bool](./useslanguagecorrection.md)
   A Boolean value that indicates whether the request applies language correction during the recognition process.
-- [var supportedRecognitionLanguages: [Locale.Language]](recognizetextrequest/supportedrecognitionlanguages.md)
+- [var supportedRecognitionLanguages: [Locale.Language]](./supportedrecognitionlanguages.md)
   The identifiers of the languages that the request supports.
-- [var customWords: [String]](recognizetextrequest/customwords.md)
+- [var customWords: [String]](./customwords.md)
   An array of strings to supplement the recognized languages at the word-recognition stage.
-- [var minimumTextHeightFraction: Float](recognizetextrequest/minimumtextheightfraction.md)
+- [var minimumTextHeightFraction: Float](./minimumtextheightfraction.md)
   The minimum height, relative to the image height, of the text to recognize.
-- [var recognitionLanguages: [Locale.Language]](recognizetextrequest/recognitionlanguages.md)
+- [var recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   An array of languages to detect, in priority order.
-- [var recognitionLevel: RecognizeTextRequest.RecognitionLevel](recognizetextrequest/recognitionlevel-swift.property.md)
+- [var recognitionLevel: RecognizeTextRequest.RecognitionLevel](./recognitionlevel-swift.property.md)
   A value that determines whether the request prioritizes accuracy or speed in text recognition.
 
 

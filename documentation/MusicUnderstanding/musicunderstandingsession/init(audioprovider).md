@@ -1,7 +1,8 @@
 # init(audioProvider:)
 
 **Framework**: Music Understanding  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a music understanding session that accepts streaming audio buffers.
 
@@ -26,7 +27,8 @@ convenience init<Provider>(audioProvider: Provider) where Provider : AsyncSequen
 
 ## See Also
 
-- [convenience init(asset: any AVAsset & Sendable) async throws](musicunderstandingsession/init(asset:).md)
+### Creating a session
+- [convenience init(asset: any AVAsset & Sendable) async throws](./init%28asset%29.md)
   Creates a music understanding session from an audio asset.
 
 

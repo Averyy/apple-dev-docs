@@ -1,7 +1,8 @@
 # sensorLocation
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the sensors that compute the device-motion data.
 
@@ -19,9 +20,14 @@ The location of the sensors that compute the device-motion data.
 var sensorLocation: CMDeviceMotion.SensorLocation { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMDeviceMotionSensorLocation sensorLocation;
+```
+
 ## See Also
 
-- [CMDeviceMotion.SensorLocation](cmdevicemotion/sensorlocation-swift.enum.md)
+### Getting the Sensor Location
+- [CMDeviceMotion.SensorLocation](./sensorlocation-swift.enum.md)
   Defines the device’s sensor locations.
 
 

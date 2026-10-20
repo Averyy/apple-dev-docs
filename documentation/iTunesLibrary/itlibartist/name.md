@@ -1,7 +1,8 @@
 # name
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the artist.
 
@@ -15,11 +16,16 @@ The name of the artist.
 var name: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * name;
+```
+
 ## See Also
 
-- [var persistentID: NSNumber](itlibartist/persistentid.md)
+### Getting Artist Info
+- [var persistentID: NSNumber](./persistentid.md)
   The unique identifier of the artist.
-- [var sortName: String?](itlibartist/sortname.md)
+- [var sortName: String?](./sortname.md)
   The name of the artist to use when sorting.
 
 

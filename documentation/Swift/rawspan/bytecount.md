@@ -1,7 +1,8 @@
 # byteCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes in the span.
 
@@ -24,7 +25,7 @@ var byteCount: Int { get }
 
 To check whether the span is empty, use its `isEmpty` property instead of comparing `byteCount` to zero.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

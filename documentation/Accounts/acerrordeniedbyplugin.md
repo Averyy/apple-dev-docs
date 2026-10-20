@@ -1,7 +1,8 @@
 # ACErrorDeniedByPlugin
 
 **Framework**: Accounts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Error code that indicates a plugin prevented the expected action from occurring.
 
@@ -17,37 +18,42 @@ Error code that indicates a plugin prevented the expected action from occurring.
 var ACErrorDeniedByPlugin: ACErrorCode { get }
 ```
 
+```c
+ACErrorDeniedByPlugin
+```
+
 ## See Also
 
-- [var ACErrorUnknown: ACErrorCode](acerrorunknown.md)
+### Errors
+- [var ACErrorUnknown: ACErrorCode](./acerrorunknown.md)
   Error code that indicates an unknown error occurred.
-- [var ACErrorAccountMissingRequiredProperty: ACErrorCode](acerroraccountmissingrequiredproperty.md)
+- [var ACErrorAccountMissingRequiredProperty: ACErrorCode](./acerroraccountmissingrequiredproperty.md)
   Error code that indicates an account wasn’t saved because a required property is missing.
-- [var ACErrorAccountAuthenticationFailed: ACErrorCode](acerroraccountauthenticationfailed.md)
+- [var ACErrorAccountAuthenticationFailed: ACErrorCode](./acerroraccountauthenticationfailed.md)
   Error code that indicates an account wasn’t saved because authentication of its credential failed.
-- [var ACErrorAccountTypeInvalid: ACErrorCode](acerroraccounttypeinvalid.md)
+- [var ACErrorAccountTypeInvalid: ACErrorCode](./acerroraccounttypeinvalid.md)
   Error code that indicates an account wasn’t saved because its account type is invalid.
-- [var ACErrorAccountAlreadyExists: ACErrorCode](acerroraccountalreadyexists.md)
+- [var ACErrorAccountAlreadyExists: ACErrorCode](./acerroraccountalreadyexists.md)
   Error code that indicates an account wasn’t added because it already exists.
-- [var ACErrorAccountNotFound: ACErrorCode](acerroraccountnotfound.md)
+- [var ACErrorAccountNotFound: ACErrorCode](./acerroraccountnotfound.md)
   Error code that indicates an account wasn’t deleted because it couldn’t be found.
-- [var ACErrorPermissionDenied: ACErrorCode](acerrorpermissiondenied.md)
+- [var ACErrorPermissionDenied: ACErrorCode](./acerrorpermissiondenied.md)
   Error code that indicates the operation failed because the application doesn’t have permission to perform the operation.
-- [var ACErrorAccessInfoInvalid: ACErrorCode](acerroraccessinfoinvalid.md)
+- [var ACErrorAccessInfoInvalid: ACErrorCode](./acerroraccessinfoinvalid.md)
   Error code that indicates the client’s access info dictionary has incorrect or missing values.
-- [var ACErrorClientPermissionDenied: ACErrorCode](acerrorclientpermissiondenied.md)
+- [var ACErrorClientPermissionDenied: ACErrorCode](./acerrorclientpermissiondenied.md)
   Error code that indicates the client doesn’t have access to the requested data.
-- [var ACErrorAccessDeniedByProtectionPolicy: ACErrorCode](acerroraccessdeniedbyprotectionpolicy.md)
+- [var ACErrorAccessDeniedByProtectionPolicy: ACErrorCode](./acerroraccessdeniedbyprotectionpolicy.md)
   Error code that indicates due to the current protection policy, the credentials couldn’t be fetched.
-- [var ACErrorCredentialNotFound: ACErrorCode](acerrorcredentialnotfound.md)
+- [var ACErrorCredentialNotFound: ACErrorCode](./acerrorcredentialnotfound.md)
   Error code that indicates no credentials were found.
-- [var ACErrorFetchCredentialFailed: ACErrorCode](acerrorfetchcredentialfailed.md)
+- [var ACErrorFetchCredentialFailed: ACErrorCode](./acerrorfetchcredentialfailed.md)
   Error code that indicates the credentials couldn’t be fetched from Keychain.
-- [var ACErrorStoreCredentialFailed: ACErrorCode](acerrorstorecredentialfailed.md)
+- [var ACErrorStoreCredentialFailed: ACErrorCode](./acerrorstorecredentialfailed.md)
   Error code that indicates the credentials couldn’t be stored in Keychain.
-- [var ACErrorRemoveCredentialFailed: ACErrorCode](acerrorremovecredentialfailed.md)
+- [var ACErrorRemoveCredentialFailed: ACErrorCode](./acerrorremovecredentialfailed.md)
   Error code that indicates the credentials couldn’t be removed from Keychain.
-- [var ACErrorUpdatingNonexistentAccount: ACErrorCode](acerrorupdatingnonexistentaccount.md)
+- [var ACErrorUpdatingNonexistentAccount: ACErrorCode](./acerrorupdatingnonexistentaccount.md)
   Error code that indicates an account save failed because the account being updated has been removed.
 
 

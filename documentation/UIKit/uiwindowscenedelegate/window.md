@@ -1,7 +1,8 @@
 # window
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main window associated with the scene.
 
@@ -16,6 +17,10 @@ The main window associated with the scene.
 
 ```swift
 optional var window: UIWindow? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIWindow * window;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Generates a new random private key.
@@ -27,7 +28,7 @@ The generated private key.
 
 #### Discussion
 
-Give the [`publicKey`](kemonetimeprivatekey/publickey-swift.property.md) to another person so that they can encapsulate shared secrets that you recover by calling [`decapsulate(_:)`](kemonetimeprivatekey/decapsulate(_:).md).
+Give the [`publicKey`](./publickey-swift.property.md) to another person so that they can encapsulate shared secrets that you recover by calling [`decapsulate(_:)`](./decapsulate%28_%29.md).
 
 
 ---

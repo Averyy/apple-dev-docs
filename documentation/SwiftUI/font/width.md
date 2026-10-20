@@ -1,7 +1,8 @@
 # Font.Width
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A width to use for fonts that have multiple widths.
 
@@ -23,46 +24,47 @@ struct Width
 ## Topics
 
 ### Getting standard font widths
-- [static let compressed: Font.Width](font/width/compressed.md)
-- [static let condensed: Font.Width](font/width/condensed.md)
-- [static let expanded: Font.Width](font/width/expanded.md)
-- [static let standard: Font.Width](font/width/standard.md)
+- [static let compressed: Font.Width](./width/compressed.md)
+- [static let condensed: Font.Width](./width/condensed.md)
+- [static let expanded: Font.Width](./width/expanded.md)
+- [static let standard: Font.Width](./width/standard.md)
 ### Creating an explicit font width
-- [init(CGFloat)](font/width/init(_:).md)
+- [init(CGFloat)](./width/init%28_%29.md)
 ### Accessing the width’s value
-- [var value: CGFloat](font/width/value.md)
+- [var value: CGFloat](./width/value.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func bold() -> Font](font/bold.md)
+### Styling a font
+- [func bold() -> Font](./bold%28%29.md)
   Adds bold or emphasized styling to the font.
-- [func italic() -> Font](font/italic.md)
+- [func italic() -> Font](./italic%28%29.md)
   Adds italics to the font.
-- [func monospaced() -> Font](font/monospaced.md)
+- [func monospaced() -> Font](./monospaced%28%29.md)
   Returns a fixed-width font from the same family as the base font.
-- [func monospacedDigit() -> Font](font/monospaceddigit.md)
+- [func monospacedDigit() -> Font](./monospaceddigit%28%29.md)
   Returns a modified font that uses fixed-width digits, while leaving other characters proportionally spaced.
-- [func smallCaps() -> Font](font/smallcaps.md)
+- [func smallCaps() -> Font](./smallcaps%28%29.md)
   Adjusts the font to enable all small capitals.
-- [func lowercaseSmallCaps() -> Font](font/lowercasesmallcaps.md)
+- [func lowercaseSmallCaps() -> Font](./lowercasesmallcaps%28%29.md)
   Adjusts the font to enable lowercase small capitals.
-- [func uppercaseSmallCaps() -> Font](font/uppercasesmallcaps.md)
+- [func uppercaseSmallCaps() -> Font](./uppercasesmallcaps%28%29.md)
   Adjusts the font to enable uppercase small capitals.
-- [func weight(Font.Weight) -> Font](font/weight(_:).md)
+- [func weight(Font.Weight) -> Font](./weight%28_%29.md)
   Sets the weight of the font.
-- [func width(Font.Width) -> Font](font/width(_:).md)
+- [func width(Font.Width) -> Font](./width%28_%29.md)
   Sets the width of the font.
-- [func leading(Font.Leading) -> Font](font/leading(_:).md)
+- [func leading(Font.Leading) -> Font](./leading%28_%29.md)
   Adjusts the line spacing of a font.
-- [Font.Leading](font/leading.md)
+- [Font.Leading](./leading.md)
   A line spacing adjustment that you can apply to a font.
 
 

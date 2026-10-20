@@ -1,7 +1,8 @@
 # init(style:locale:calendar:fields:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Shows the date interval with the specified style and the specified date and time fields.
 

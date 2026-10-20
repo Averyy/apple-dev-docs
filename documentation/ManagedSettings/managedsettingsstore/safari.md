@@ -1,7 +1,8 @@
 # safari
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Settings that affect Safari’s search results and cookie policies.
 
@@ -18,11 +19,12 @@ var safari: SafariSettings
 
 ## See Also
 
-- [struct SafariSettings](safarisettings.md)
+### Restricting web content
+- [struct SafariSettings](../safarisettings.md)
   Constraints on Safari’s AutoFill and cookie behaviors.
-- [var webContent: WebContentSettings](managedsettingsstore/webcontent.md)
+- [var webContent: WebContentSettings](./webcontent.md)
   Settings that affect web content.
-- [struct WebContentSettings](webcontentsettings.md)
+- [struct WebContentSettings](../webcontentsettings.md)
   An object that configures which websites a user can access.
 
 

@@ -1,7 +1,8 @@
 # elementTensorReferenceType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying tensor type when this array holds tensors as its elements.
 
@@ -17,6 +18,10 @@ Provides a description of the underlying tensor type when this array holds tenso
 
 ```swift
 func elementTensorReferenceType() -> MTLTensorReferenceType?
+```
+
+```objc
+- (MTLTensorReferenceType *) elementTensorReferenceType;
 ```
 
 #### Return Value

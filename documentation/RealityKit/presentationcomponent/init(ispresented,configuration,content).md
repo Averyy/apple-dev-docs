@@ -1,7 +1,8 @@
 # init(isPresented:configuration:content:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Present `content` when a binding that you provide is `true`, using modality and options specified by `configuration`.
 

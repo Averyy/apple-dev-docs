@@ -1,16 +1,19 @@
 # MediaDetail
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The media detail object.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object MediaDetail
 ```
 
@@ -31,14 +34,15 @@ object MediaDetail
 ## Relationships
 
 ### Inherited By
-- [MediaDetailResponse](mediadetailresponse.md)
+- [MediaDetailResponse](./mediadetailresponse.md)
 
 ## See Also
 
-- [object MediaDetailResponse](mediadetailresponse.md)
-- [object MediaLocaleDetail](medialocaledetail.md)
+### Response Objects
+- [object MediaDetailResponse](./mediadetailresponse.md)
+- [object MediaLocaleDetail](./medialocaledetail.md)
   The media locale detail object.
-- [object MediaLocaleDetailResponse](medialocaledetailresponse.md)
+- [object MediaLocaleDetailResponse](./medialocaledetailresponse.md)
 
 
 ---

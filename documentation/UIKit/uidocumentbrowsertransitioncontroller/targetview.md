@@ -1,7 +1,8 @@
 # targetView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target view for transition animations when presenting or dismissing the transition controller’s document.
 
@@ -17,19 +18,23 @@ The target view for transition animations when presenting or dismissing the tran
 weak var targetView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) UIView * targetView;
+```
+
 #### Discussion
 
-When this property is set, the transition controller acts as a [`UIViewControllerAnimatedTransitioning`](uiviewcontrolleranimatedtransitioning.md) object for the transition from the browser to the document view controller. It provides transition animation that zooms and cross fades from the document’s thumbnail to the target view.
+When this property is set, the transition controller acts as a [`UIViewControllerAnimatedTransitioning`](../uiviewcontrolleranimatedtransitioning.md) object for the transition from the browser to the document view controller. It provides transition animation that zooms and cross fades from the document’s thumbnail to the target view.
 
 To use the transition animation:
 
 1. Instantiate the view controller to display the document.
-2. Call the document view controller’s [`loadViewIfNeeded()`](uiviewcontroller/loadviewifneeded().md) method to ensure that the view hierarchy is loaded.
+2. Call the document view controller’s [`loadViewIfNeeded()`](../uiviewcontroller/loadviewifneeded%28%29.md) method to ensure that the view hierarchy is loaded.
 3. Request a transition controller for the document you are going to present.
-4. Assign a view from the document view controller to the transition controller’s [`targetView`](uidocumentbrowsertransitioncontroller/targetview.md) property.
-5. Create a [`UIViewControllerTransitioningDelegate`](uiviewcontrollertransitioningdelegate.md) object that returns the transition controller. You must keep a strong reference to both the transition controller and the transitioning delegate throughout the entire animation.
-6. Set the document view controller’s [`modalPresentationStyle`](uiviewcontroller/modalpresentationstyle.md) property to custom.
-7. Assign the transitioning delegate to the document view controller’s [`transitioningDelegate`](uiviewcontroller/transitioningdelegate.md) property.
+4. Assign a view from the document view controller to the transition controller’s [`targetView`](./targetview.md) property.
+5. Create a [`UIViewControllerTransitioningDelegate`](../uiviewcontrollertransitioningdelegate.md) object that returns the transition controller. You must keep a strong reference to both the transition controller and the transitioning delegate throughout the entire animation.
+6. Set the document view controller’s [`modalPresentationStyle`](../uiviewcontroller/modalpresentationstyle.md) property to custom.
+7. Assign the transitioning delegate to the document view controller’s [`transitioningDelegate`](../uiviewcontroller/transitioningdelegate.md) property.
 8. Present the document view controller.
 
 In the following code, the transition controller provides a zoom and fade transition animation both when presenting the document view controller, and when dismissing it.
@@ -89,7 +94,8 @@ class UIDocumentBrowserTransitioningDelegate : NSObject, UIViewControllerTransit
 
 ## See Also
 
-- [var loadingProgress: Progress?](uidocumentbrowsertransitioncontroller/loadingprogress.md)
+### Animating transitions
+- [var loadingProgress: Progress?](./loadingprogress.md)
   A progress object that tracks a document as it loads.
 
 

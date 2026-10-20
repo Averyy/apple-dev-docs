@@ -1,7 +1,8 @@
 # imageShape
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Shape used to draw the image of the element.
 
@@ -14,6 +15,10 @@ Shape used to draw the image of the element.
 
 ```swift
 var imageShape: CPListImageRowItemCondensedElement.Shape { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CPListImageRowItemCondensedElementShape imageShape;
 ```
 
 

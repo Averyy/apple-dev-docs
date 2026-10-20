@@ -1,7 +1,8 @@
 # NEAppProxyFlowError.Code
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that the app proxy flow API declares.
 
@@ -20,49 +21,54 @@ Error codes that the app proxy flow API declares.
 enum Code
 ```
 
+```c
+enum NEAppProxyFlowError : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [NEAppProxyFlowError.Code.notConnected](neappproxyflowerror-swift.struct/code/notconnected.md)
+- [NEAppProxyFlowError.Code.notConnected](./code/notconnected.md)
   The flow is not fully opened.
-- [NEAppProxyFlowError.Code.peerReset](neappproxyflowerror-swift.struct/code/peerreset.md)
+- [NEAppProxyFlowError.Code.peerReset](./code/peerreset.md)
   The remote peer closed the flow.
-- [NEAppProxyFlowError.Code.hostUnreachable](neappproxyflowerror-swift.struct/code/hostunreachable.md)
+- [NEAppProxyFlowError.Code.hostUnreachable](./code/hostunreachable.md)
   An attempt to reach the remote endpoint of the flow failed.
-- [NEAppProxyFlowError.Code.invalidArgument](neappproxyflowerror-swift.struct/code/invalidargument.md)
+- [NEAppProxyFlowError.Code.invalidArgument](./code/invalidargument.md)
   A proxy flow method received an invalid argument.
-- [NEAppProxyFlowError.Code.aborted](neappproxyflowerror-swift.struct/code/aborted.md)
+- [NEAppProxyFlowError.Code.aborted](./code/aborted.md)
   The flow was aborted.
-- [NEAppProxyFlowError.Code.refused](neappproxyflowerror-swift.struct/code/refused.md)
+- [NEAppProxyFlowError.Code.refused](./code/refused.md)
   Connecting the flow to its remote endpoint failed.
-- [NEAppProxyFlowError.Code.timedOut](neappproxyflowerror-swift.struct/code/timedout.md)
+- [NEAppProxyFlowError.Code.timedOut](./code/timedout.md)
   The flow timed out.
-- [NEAppProxyFlowError.Code.internal](neappproxyflowerror-swift.struct/code/internal.md)
+- [NEAppProxyFlowError.Code.internal](./code/internal.md)
   An internal error occurred while handling the flow.
-- [NEAppProxyFlowError.Code.datagramTooLarge](neappproxyflowerror-swift.struct/code/datagramtoolarge.md)
+- [NEAppProxyFlowError.Code.datagramTooLarge](./code/datagramtoolarge.md)
   A caller attempted to write a datagram that was larger than the socket’s receive window.
-- [NEAppProxyFlowError.Code.readAlreadyPending](neappproxyflowerror-swift.struct/code/readalreadypending.md)
+- [NEAppProxyFlowError.Code.readAlreadyPending](./code/readalreadypending.md)
   A read operation on the flow is already pending.
 ### Initializers
-- [init?(rawValue: Int)](neappproxyflowerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NEAppProxyFlowError](neappproxyflowerror-swift.struct.md)
+### Errors
+- [struct NEAppProxyFlowError](../neappproxyflowerror-swift.struct.md)
   An error that the app proxy flow encounters.
-- [let NEAppProxyErrorDomain: String](neappproxyerrordomain.md)
+- [let NEAppProxyErrorDomain: String](../neappproxyerrordomain.md)
   The domain used for app proxy errors.
-- [struct NEAppProxyFlowError](neappproxyflowerror-swift.struct.md)
+- [struct NEAppProxyFlowError](../neappproxyflowerror-swift.struct.md)
   An error that the app proxy flow encounters.
 
 

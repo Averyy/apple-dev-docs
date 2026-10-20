@@ -1,7 +1,8 @@
 # AirPlay
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures AirPlay settings.
 
@@ -13,7 +14,7 @@ The payload that configures AirPlay settings.
 
 ## Declaration
 
-```swift
+```
 object AirPlay
 ```
 
@@ -21,7 +22,7 @@ object AirPlay
 
 Specify `com.apple.airplay` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.airplay` as the payload type.
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,20 +87,25 @@ Specify `com.apple.airplay` as the payload type.
 ## Topics
 
 ### Objects
-- [object AirPlay.AllowListItem](airplay/allowlistitem.md)
+- [object AirPlay.AllowListItem](./airplay/allowlistitem.md)
   The dictionary that defines allowed destinations.
-- [object AirPlay.PasswordsItem](airplay/passwordsitem.md)
+- [object AirPlay.PasswordsItem](./airplay/passwordsitem.md)
   The dictionary that defines passwords for AirPlay destinations.
 
 ## Properties
 
-- `AllowList` ([AirPlay.AllowListItem]): If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices. Available: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
+- `AllowList` ([AirPlay.AllowListItem]): If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices.
+
+  Available: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 - `Passwords` ([AirPlay.PasswordsItem]): If present, sets passwords for known AirPlay destinations. Using multiple entries for the same destination, whether within the same payload or across multiple installed payloads, is an error and results in undefined behavior.
-- `Whitelist` ([AirPlay.AllowListItem]): Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3. Deprecated: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
+- `Whitelist` ([AirPlay.AllowListItem]) *(deprecated)*: Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3.
+
+  Deprecated: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 
 ## See Also
 
-- [object AirPlaySecurity](airplaysecurity.md)
+### AirPlay
+- [object AirPlaySecurity](./airplaysecurity.md)
   The payload that configures Apple TV for a particular style of AirPlay security.
 
 

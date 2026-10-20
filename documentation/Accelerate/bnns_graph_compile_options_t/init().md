@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty compilation options structure.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(data: UnsafeMutableRawPointer?, size: Int)](bnns_graph_compile_options_t/init(data:size:).md)
+### Initializing an options structure
+- [init(data: UnsafeMutableRawPointer?, size: Int)](./init%28data,size%29.md)
   Creates a compilation options structure from the specified opaque compilation options object.
 
 

@@ -1,9 +1,10 @@
 # WidgetAccentedRenderingMode
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](widgetrenderingmode/accented.md) mode.
+Constants that indicate the rendering mode for an `Image` in when displayed in a widget in [`accented`](./widgetrenderingmode/accented.md) mode.
 
 **Availability**:
 - iOS 18.0+
@@ -21,55 +22,56 @@ struct WidgetAccentedRenderingMode
 
 ## Mentions
 
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 ## Topics
 
 ### Type Properties
-- [static let accented: WidgetAccentedRenderingMode](widgetaccentedrenderingmode/accented.md)
+- [static let accented: WidgetAccentedRenderingMode](./widgetaccentedrenderingmode/accented.md)
   Specifies that the `Image` should be included as part of the accented widget group.
-- [static let accentedDesaturated: WidgetAccentedRenderingMode](widgetaccentedrenderingmode/accenteddesaturated.md)
+- [static let accentedDesaturated: WidgetAccentedRenderingMode](./widgetaccentedrenderingmode/accenteddesaturated.md)
   Maps the luminance of the `Image` in to the alpha channel, replacing color channels with the color applied to the accent group.
-- [static let desaturated: WidgetAccentedRenderingMode](widgetaccentedrenderingmode/desaturated.md)
+- [static let desaturated: WidgetAccentedRenderingMode](./widgetaccentedrenderingmode/desaturated.md)
   Maps the luminance of the `Image` in to the alpha channel, replacing color channels with the color applied to the default group.
-- [static let fullColor: WidgetAccentedRenderingMode](widgetaccentedrenderingmode/fullcolor.md)
+- [static let fullColor: WidgetAccentedRenderingMode](./widgetaccentedrenderingmode/fullcolor.md)
   Specifies that the `Image` should be rendered at full color with no other color modifications. Only applies to iOS.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Supporting additional widget sizes](supporting-additional-widget-sizes.md)
+### Layout and presentation
+- [Supporting additional widget sizes](./supporting-additional-widget-sizes.md)
   Offer widgets in additional contexts by adding support for various widget sizes.
-- [Displaying the right widget background](displaying-the-right-widget-background.md)
+- [Displaying the right widget background](./displaying-the-right-widget-background.md)
   Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](./optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
   Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
-- [Adding StandBy and CarPlay support to your widget](adding-standby-and-carplay-support-to-your-widget.md)
+- [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md)
   Ensure that your small system family widget works well in StandBy and CarPlay.
-- [struct WidgetRenderingMode](widgetrenderingmode.md)
+- [struct WidgetRenderingMode](./widgetrenderingmode.md)
   Constants that indicate the rendering mode for a widget.
-- [struct AccessoryWidgetBackground](accessorywidgetbackground.md)
+- [struct AccessoryWidgetBackground](./accessorywidgetbackground.md)
   An adaptive background view that provides a standard appearance based on the the widget’s environment.
-- [struct WidgetLocation](widgetlocation.md)
+- [struct WidgetLocation](./widgetlocation.md)
   Values that indicate different widget locations.
 - [func widgetAccentable(Bool) -> some View
-](../swiftui/view/widgetaccentable(_:).md)
+](../SwiftUI/view/widgetaccentable%28_%29.md)
   Adds the view and all of its subviews to the accented group.
 - [func widgetAccentedRenderingMode(WidgetAccentedRenderingMode?) -> some View
-](../swiftui/image/widgetaccentedrenderingmode(_:).md)
+](../SwiftUI/image/widgetaccentedrenderingmode%28_%29.md)
   Specifies the how to render an `Image` when using the `WidgetKit/WidgetRenderingMode/accented` mode.
-- [var widgetRenderingMode: WidgetRenderingMode](../swiftui/environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](../SwiftUI/environmentvalues/widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](../swiftui/environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](../SwiftUI/environmentvalues/widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
-- [static let widget: ContainerBackgroundPlacement](../swiftui/containerbackgroundplacement/widget.md)
+- [static let widget: ContainerBackgroundPlacement](../SwiftUI/containerbackgroundplacement/widget.md)
   The container background placement for a widget.
-- [var showsWidgetContainerBackground: Bool](../swiftui/environmentvalues/showswidgetcontainerbackground.md)
+- [var showsWidgetContainerBackground: Bool](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md)
   An environment variable that indicates whether the background of a widget appears.
 
 

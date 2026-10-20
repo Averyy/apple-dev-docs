@@ -1,7 +1,8 @@
 # separatorStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of separator that the app displays between the title bar and content of a window.
 
@@ -14,19 +15,24 @@ The type of separator that the app displays between the title bar and content of
 var separatorStyle: UITitlebarSeparatorStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UITitlebarSeparatorStyle separatorStyle;
+```
+
 #### Discussion
 
-The default value is [`UITitlebarSeparatorStyle.automatic`](uititlebarseparatorstyle/automatic.md).
+The default value is [`UITitlebarSeparatorStyle.automatic`](../uititlebarseparatorstyle/automatic.md).
 
 ## See Also
 
-- [enum UITitlebarSeparatorStyle](uititlebarseparatorstyle.md)
+### Configuring the title bar
+- [enum UITitlebarSeparatorStyle](../uititlebarseparatorstyle.md)
   Styles that determine the type of separator displayed between the title bar and content of a window.
-- [var titleVisibility: UITitlebarTitleVisibility](uititlebar/titlevisibility.md)
+- [var titleVisibility: UITitlebarTitleVisibility](./titlevisibility.md)
   A value that indicates the visibility of the title.
-- [enum UITitlebarTitleVisibility](uititlebartitlevisibility.md)
+- [enum UITitlebarTitleVisibility](../uititlebartitlevisibility.md)
   States that determine visibility of the title in the title bar.
-- [var representedURL: URL?](uititlebar/representedurl.md)
+- [var representedURL: URL?](./representedurl.md)
   A URL of the file or resource represented in the window.
 
 

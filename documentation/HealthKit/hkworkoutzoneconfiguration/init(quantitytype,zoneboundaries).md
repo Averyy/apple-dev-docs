@@ -1,7 +1,8 @@
 # init(quantityType:zoneBoundaries:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a zone configuration from zone boundaries for the specified quantity type.
 
@@ -25,7 +26,7 @@ A zone configuration with `source` set to `.app`.
 
 #### Discussion
 
-The system creates the individual zones based on the boundaries you provide. This method ensures that zones are contiguous and nonoverlapping. Call this method before calling [`setCustomZoneConfiguration(_:for:)`](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md) to apply custom zones to a workout.
+The system creates the individual zones based on the boundaries you provide. This method ensures that zones are contiguous and nonoverlapping. Call this method before calling [`setCustomZoneConfiguration(_:for:)`](../hkworkoutbuilder/setcustomzoneconfiguration%28_,for%29.md) to apply custom zones to a workout.
 
 ## Parameters
 

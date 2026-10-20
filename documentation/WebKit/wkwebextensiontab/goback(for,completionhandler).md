@@ -1,7 +1,8 @@
 # goBack(for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to navigate the tab to the previous page in its history.
 
@@ -15,12 +16,20 @@ Called to navigate the tab to the previous page in its history.
 ## Declaration
 
 ```swift
+optional func goBack(for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func goBack(for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) goBackForWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-Navigates to the previous page in the tab’s web view via [`goBack()`](wkwebview/goback().md) if not implemented.
+Navigates to the previous page in the tab’s web view via [`goBack()`](../wkwebview/goback%28%29.md) if not implemented.
 
 ## Parameters
 

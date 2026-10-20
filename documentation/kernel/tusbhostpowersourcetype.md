@@ -1,14 +1,15 @@
 # tUSBHostPowerSourceType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tUSBHostPowerSourceType : unsigned int {
     ...
 } tUSBHostPowerSourceType;
@@ -17,9 +18,9 @@ typedef enum tUSBHostPowerSourceType : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHostPowerSourceTypeHardware](tusbhostpowersourcetype/kusbhostpowersourcetypehardware.md)
-- [kUSBHostPowerSourceTypeSMC](tusbhostpowersourcetype/kusbhostpowersourcetypesmc.md)
-- [kUSBHostPowerSourceTypeStaticPool](tusbhostpowersourcetype/kusbhostpowersourcetypestaticpool.md)
+- [kUSBHostPowerSourceTypeHardware](./tusbhostpowersourcetype/kusbhostpowersourcetypehardware.md)
+- [kUSBHostPowerSourceTypeSMC](./tusbhostpowersourcetype/kusbhostpowersourcetypesmc.md)
+- [kUSBHostPowerSourceTypeStaticPool](./tusbhostpowersourcetype/kusbhostpowersourcetypestaticpool.md)
 
 
 ---

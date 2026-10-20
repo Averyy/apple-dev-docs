@@ -1,7 +1,8 @@
 # PhysicalFeature
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A physical feature on the Earth such as a mountain range, river, or ocean basin.
 
@@ -10,15 +11,16 @@ A physical feature on the Earth such as a mountain range, river, or ocean basin.
 
 ## Declaration
 
-```swift
+```
 readonly PhysicalFeature: "PhysicalFeature";
 ```
 
 ## See Also
 
-- [PointOfInterest](mapfeaturetype/pointofinterest.md)
+### Feature types
+- [PointOfInterest](./pointofinterest.md)
   A feature that describes a point of interest, such as a museum, park, or cafe.
-- [Territory](mapfeaturetype/territory.md)
+- [Territory](./territory.md)
   A feature that describes a territory, such as a region or neighborhood.
 
 

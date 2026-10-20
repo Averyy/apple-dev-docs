@@ -1,7 +1,8 @@
 # applicationVersion
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The application version of the metadata, as defined by ST 2094-50.
 
@@ -22,7 +23,7 @@ var applicationVersion: UInt8
 
 #### Discussion
 
-This 3-bit field is currently always `0`. Initializing the metadata with any other value throws [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:).md).
+This 3-bit field is currently always `0`. Initializing the metadata with any other value throws [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](./error/unsupportedapplicationversion%28_%29.md).
 
 
 ---

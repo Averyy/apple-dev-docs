@@ -1,7 +1,8 @@
 # EvaluatorError.failed(evaluator:evaluatorType:reason:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The evaluator threw an error while scoring the subject.
 

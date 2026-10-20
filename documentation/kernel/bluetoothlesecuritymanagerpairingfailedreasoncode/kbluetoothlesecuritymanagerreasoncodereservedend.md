@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerReasonCodeReservedEnd
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerReasonCodeReservedEnd = 0xFF
 ```
 

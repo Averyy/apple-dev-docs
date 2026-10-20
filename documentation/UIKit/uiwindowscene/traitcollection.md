@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The traits that describe the current environment of the scene.
 
@@ -18,15 +19,20 @@ The traits that describe the current environment of the scene.
 var traitCollection: UITraitCollection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITraitCollection * traitCollection;
+```
+
 #### Discussion
 
-Use this property to get additional information about the current scene, such as the size class and scale factor. For more information about the available traits, see [`UITraitCollection`](uitraitcollection.md).
+Use this property to get additional information about the current scene, such as the size class and scale factor. For more information about the available traits, see [`UITraitCollection`](../uitraitcollection.md).
 
 ## See Also
 
-- [var sizeRestrictions: UISceneSizeRestrictions?](uiwindowscene/sizerestrictions.md)
+### Getting the interface attributes
+- [var sizeRestrictions: UISceneSizeRestrictions?](./sizerestrictions.md)
   The minimum and maximum size of the app’s windows.
-- [class UISceneSizeRestrictions](uiscenesizerestrictions.md)
+- [class UISceneSizeRestrictions](../uiscenesizerestrictions.md)
   An object that specifies the minimum and maximum sizes for resizable windows.
 
 

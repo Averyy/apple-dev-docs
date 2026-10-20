@@ -1,7 +1,8 @@
 # supportedDepthFormats
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of depth formats that the layer supports
 
@@ -21,7 +22,8 @@ The pixel formats in this property tell you which pixel arrangements and charact
 
 ## See Also
 
-- [var supportedColorFormats: [MTLPixelFormat]](layerrenderer/capabilities/supportedcolorformats.md)
+### Getting the supported formats
+- [var supportedColorFormats: [MTLPixelFormat]](./supportedcolorformats.md)
   An array of color formats that the layer supports for its textures.
 
 

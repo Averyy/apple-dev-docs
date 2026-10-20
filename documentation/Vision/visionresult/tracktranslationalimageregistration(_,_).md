@@ -1,7 +1,8 @@
 # VisionResult.trackTranslationalImageRegistration(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a track translational image request.
 
@@ -22,11 +23,12 @@ case trackTranslationalImageRegistration(TrackTranslationalImageRegistrationRequ
 
 ## See Also
 
-- [case trackHomographicImageRegistration(TrackHomographicImageRegistrationRequest, ImageHomographicAlignmentObservation)](visionresult/trackhomographicimageregistration(_:_:).md)
+### Getting the image alignment, feature print, and background removal result
+- [case trackHomographicImageRegistration(TrackHomographicImageRegistrationRequest, ImageHomographicAlignmentObservation)](./trackhomographicimageregistration%28_,_%29.md)
   A result from performing a track homographic image request.
-- [case generateForegroundInstanceMask(GenerateForegroundInstanceMaskRequest, InstanceMaskObservation?)](visionresult/generateforegroundinstancemask(_:_:).md)
+- [case generateForegroundInstanceMask(GenerateForegroundInstanceMaskRequest, InstanceMaskObservation?)](./generateforegroundinstancemask%28_,_%29.md)
   A result from performing a generate foreground instance mask request.
-- [case generateImageFeaturePrint(GenerateImageFeaturePrintRequest, FeaturePrintObservation)](visionresult/generateimagefeatureprint(_:_:).md)
+- [case generateImageFeaturePrint(GenerateImageFeaturePrintRequest, FeaturePrintObservation)](./generateimagefeatureprint%28_,_%29.md)
   A result from performing a generate image feature print request.
 
 

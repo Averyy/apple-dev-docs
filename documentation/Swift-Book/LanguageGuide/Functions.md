@@ -846,7 +846,7 @@ is modified by the function,
 and is passed back *out* of the function to replace the original value.
 For a detailed discussion of the behavior of in-out parameters
 and associated compiler optimizations,
-see [In Out Parameters](Declarations.md#In-Out-Parameters).
+see [In-Out Parameters](../ReferenceManual/Declarations.md#In-Out-Parameters).
 
 You can only pass a variable as the argument for an in-out parameter.
 You can't pass a constant or a literal value as the argument,

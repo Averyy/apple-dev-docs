@@ -1,7 +1,8 @@
 # INTEL_X509_LDAPSTRING_DATATYPE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var INTEL_X509_LDAPSTRING_DATATYPE: Int32 { get }
+```
+
+```c
+#define INTEL_X509_LDAPSTRING_DATATYPE
 ```
 
 

@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason that the App Store sends the message.
 
@@ -19,11 +20,12 @@ let reason: Message.Reason
 
 ## See Also
 
-- [static var messages: Message.Messages](message/messages-swift.type.property.md)
+### Getting messages and message reasons
+- [static var messages: Message.Messages](./messages-swift.type.property.md)
   The asynchronous sequence that sends a message when the App Store creates it.
-- [Message.Messages](message/messages-swift.struct.md)
+- [Message.Messages](./messages-swift.struct.md)
   An asynchronous sequence of messages from the App Store.
-- [Message.Reason](message/reason-swift.struct.md)
+- [Message.Reason](./reason-swift.struct.md)
   Reasons for the App Store messages.
 
 

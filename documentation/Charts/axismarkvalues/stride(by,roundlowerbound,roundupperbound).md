@@ -1,7 +1,8 @@
 # stride(by:roundLowerBound:roundUpperBound:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates values with the given number step.
 

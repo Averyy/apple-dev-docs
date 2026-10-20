@@ -1,19 +1,20 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -23,9 +24,10 @@ virtual bool init();
 
 ## See Also
 
-- [free](iodispatchsource/free.md)
+### Configuring the Dispatch Source
+- [free](./free.md)
   Performs any final cleanup for the dispatch source.
-- [Cancel](iodispatchsource/cancel.md)
+- [Cancel](./cancel.md)
   Cancel all callbacks from the dispatch source.
 
 

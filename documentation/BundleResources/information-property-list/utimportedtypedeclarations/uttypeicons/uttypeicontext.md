@@ -1,7 +1,8 @@
 # UTTypeIconText
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A short string the system renders at the bottom edge of the document icon.
 
@@ -11,9 +12,10 @@ A short string the system renders at the bottom edge of the document icon.
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UTTypeIconText` (Text)
+- **Type**: string
 
 #### Discussion
 
@@ -23,9 +25,10 @@ The system automatically scales the text to fit and capitalizes every letter. Ke
 
 ## See Also
 
-- [UTTypeIconBackgroundName](information-property-list/utimportedtypedeclarations/uttypeicons/uttypeiconbackgroundname.md)
+### Composited icon resources
+- [UTTypeIconBackgroundName](./uttypeiconbackgroundname.md)
   The name of an icon set in your app’s asset catalog to use as the background fill of the document icon.
-- [UTTypeIconBadgeName](information-property-list/utimportedtypedeclarations/uttypeicons/uttypeiconbadgename.md)
+- [UTTypeIconBadgeName](./uttypeiconbadgename.md)
   The name of an iconset in your app’s asset catalog to use as the center badge image of the document icon.
 
 

@@ -1,6 +1,7 @@
 # layout-direction
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets the text direction based on the user’s language preference.
 
@@ -32,14 +33,15 @@ All base style sheets now use `text-align:natural`. You must use the `layout-dir
 </style>
 ```
 
-##### Values for Layout Direction
+##### Values for layout-direction
 
 - **`ltr`**: Test for left-to-right language layout.
 - **`rtl`**: Test for right-to-left language layout.
 
 ## See Also
 
-- [tv-theme](tv-theme.md)
+### Media Queries
+- [tv-theme](./tv-theme.md)
   Sets an element’s appearance according to the specified theme.
 
 

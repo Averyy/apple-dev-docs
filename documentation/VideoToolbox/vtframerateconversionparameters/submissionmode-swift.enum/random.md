@@ -1,7 +1,8 @@
 # VTFrameRateConversionParameters.SubmissionMode.random
 
 **Framework**: Video Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A submission follow presentation time order with a jump or skip in a frame sequence.
 
@@ -17,13 +18,18 @@ A submission follow presentation time order with a jump or skip in a frame seque
 case random
 ```
 
+```c
+VTFrameRateConversionParametersSubmissionModeRandom
+```
+
 #### Discussion
 
 If this value is set, the internal cache will be cleared during the processWithParameters call.
 
 ## See Also
 
-- [VTFrameRateConversionParameters.SubmissionMode.sequential](vtframerateconversionparameters/submissionmode-swift.enum/sequential.md)
+### Submission modes
+- [VTFrameRateConversionParameters.SubmissionMode.sequential](./sequential.md)
   A submission follow presentation time order without a jump or skip when compared to a previous submission.
 
 

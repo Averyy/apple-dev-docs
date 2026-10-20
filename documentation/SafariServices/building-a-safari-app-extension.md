@@ -1,6 +1,7 @@
 # Building a Safari app extension
 
-**Framework**: Safari Services
+**Framework**: Safari Services  
+**Role**: Article
 
 Add, build, and enable a Safari app extension.
 
@@ -14,7 +15,7 @@ You deliver a Safari app extension inside a macOS app. When a user runs your app
 4. Building and running your app, which builds your Safari app extension for use.
 5. Enabling your Safari app extension in Safari so you can use it.
 
-##### Add a Safari App Extension Target in Xcode
+##### Add a Safari app extension target in Xcode
 
 To create a Safari app extension:
 
@@ -29,15 +30,15 @@ To create a Safari app extension:
 
 Xcode adds a new group into your project, which contains several new files, including an `Info.plist` file, a variety of supporting source files, an Interface Builder file, a JavaScript file, and a toolbar image PDF.
 
-##### Add Scripts and Style Sheets
+##### Add scripts and style sheets
 
-After you add scripts and style sheets to your Safari app extension, you can read and modify webpage content, and read and send data from your app. For more information about injecting scripts and style sheets into your webpage content, see [`Using injected style sheets and scripts`](using-injected-style-sheets-and-scripts.md).
+After you add scripts and style sheets to your Safari app extension, you can read and modify webpage content, and read and send data from your app. For more information about injecting scripts and style sheets into your webpage content, see [Using injected style sheets and scripts](./using-injected-style-sheets-and-scripts.md).
 
-##### Add Keys to the Information Property List Template
+##### Add keys to the information property list template
 
-The default `Info.plist` file identifies your new Safari app extension and specifies its capabilities and access limits under the `NSExtension` key. For more information about setting these capabilities and limits, see [`Safari app extension information property list keys`](safari-app-extension-information-property-list-keys.md). In your information property list file, you can also specify custom UI options, like contextual menu items and toolbar items. For more information about these settings, see [`Using contextual menu and toolbar item keys`](using-contextual-menu-and-toolbar-item-keys.md).
+The default `Info.plist` file identifies your new Safari app extension and specifies its capabilities and access limits under the `NSExtension` key. For more information about setting these capabilities and limits, see [Safari app extension information property list keys](./safari-app-extension-information-property-list-keys.md). In your information property list file, you can also specify custom UI options, like contextual menu items and toolbar items. For more information about these settings, see [Using contextual menu and toolbar item keys](./using-contextual-menu-and-toolbar-item-keys.md).
 
-##### Build and Run the App
+##### Build and run the app
 
 Before Safari can find your new extension, you must run the containing app at least once:
 
@@ -46,7 +47,7 @@ Before Safari can find your new extension, you must run the containing app at le
 
 When you build your app, Xcode builds your Safari app extension first, then embeds it inside the finished app bundle. As soon as your app runs, your extension is ready for use in Safari.
 
-##### Enable Your App Extension in Safari
+##### Enable your app extension in Safari
 
 If you’re not part of the Apple Development Program, or if you don’t have a developer identity for your existing Xcode project, Xcode can’t sign your Safari app extension with a development certificate. For security purposes, Safari, by default,  ignores unsigned extensions, so your extension doesn’t appear in Safari Extensions settings.
 
@@ -61,15 +62,16 @@ To develop without a certificate, each time you launch Safari, you need to tell 
 
 In Safari 17 and later, the user can also toggle permission for the extension overall, in Private Browsing, or for each profile. If the user has profiles set up, they can choose Safari > Settings, click the Profiles tab, select a profile, and then click the Extensions tab to manage whether each extension is enabled for a profile.
 
-If you build the default template extension without modifying it, a new toolbar item (a button) appears in the Safari toolbar. When you click this button, the Safari app extension logs a message that you can view in the system console — this message comes from your [`SFSafariExtensionHandler`](sfsafariextensionhandler.md) subclass.
+If you build the default template extension without modifying it, a new toolbar item (a button) appears in the Safari toolbar. When you click this button, the Safari app extension logs a message that you can view in the system console — this message comes from your [`SFSafariExtensionHandler`](./sfsafariextensionhandler.md) subclass.
 
-If you have trouble getting your extension to work, see [`Troubleshooting your Safari app extension`](troubleshooting-your-safari-app-extension.md).
+If you have trouble getting your extension to work, see [Troubleshooting your Safari app extension](./troubleshooting-your-safari-app-extension.md).
 
 ## See Also
 
-- [Converting a legacy Safari extension to a Safari app extension](converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
+### Essentials
+- [Converting a legacy Safari extension to a Safari app extension](./converting-a-legacy-safari-extension-to-a-safari-app-extension.md)
   Convert a legacy Safari extension to a Safari app extension, automatically with keys or manually.
-- [Troubleshooting your Safari app extension](troubleshooting-your-safari-app-extension.md)
+- [Troubleshooting your Safari app extension](./troubleshooting-your-safari-app-extension.md)
   Debug your Safari app extension with these techniques.
 
 

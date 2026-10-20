@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of items that this folder contains.
 
@@ -16,6 +17,10 @@ A list of items that this folder contains.
 
 ```swift
 var contents: [ICCameraItem]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<ICCameraItem *> * contents;
 ```
 
 

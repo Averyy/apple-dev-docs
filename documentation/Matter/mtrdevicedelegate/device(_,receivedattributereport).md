@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func device(_ device: MTRDevice, receivedAttributeReport attributeReport: [[String : Any]])
+```
+
+```objc
+- (void) device:(MTRDevice *) device receivedAttributeReport:(NSArray<NSDictionary<NSString *,id> *> *) attributeReport;
 ```
 
 

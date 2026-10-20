@@ -1,7 +1,8 @@
 # defaultRingtone
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 15.2+
@@ -14,6 +15,18 @@
 ```swift
 @NSCopying
 class var defaultRingtone: UNNotificationSound { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (class, nonatomic, copy, readonly) UNNotificationSound * defaultRingtoneSound;
+```
+
+*macOS*
+
+```objc
+@property (class, atomic, copy, readonly) UNNotificationSound * defaultRingtoneSound;
 ```
 
 

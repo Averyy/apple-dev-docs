@@ -1,7 +1,8 @@
 # down
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set containing only the downward vertical direction.
 

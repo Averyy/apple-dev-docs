@@ -1,7 +1,8 @@
 # Trait
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A package trait.
 
@@ -56,37 +57,38 @@ import MyAPI
 ## Topics
 
 ### Initializers
-- [init(name: String, description: String?, enabledTraits: Set<String>)](trait/init(name:description:enabledtraits:).md)
+- [init(name: String, description: String?, enabledTraits: Set<String>)](./trait/init%28name,description,enabledtraits%29.md)
   Creates a trait with a name, a description, and set of additional traits it enables.
-- [init(stringLiteral: StringLiteralType)](trait/init(stringliteral:).md)
+- [init(stringLiteral: StringLiteralType)](./trait/init%28stringliteral%29.md)
   Creates a trait with the name you provide.
 ### Instance Properties
-- [var description: String?](trait/description.md)
+- [var description: String?](./trait/description.md)
   The trait’s description.
-- [var enabledTraits: Set<String>](trait/enabledtraits.md)
+- [var enabledTraits: Set<String>](./trait/enabledtraits.md)
   A set of other traits of this package that this trait enables.
-- [var name: String](trait/name.md)
+- [var name: String](./trait/name.md)
   The trait’s canonical name.
 ### Type Methods
-- [static func `default`(enabledTraits: Set<String>) -> Trait](trait/default(enabledtraits:).md)
+- [static func `default`(enabledTraits: Set<String>) -> Trait](./trait/default%28enabledtraits%29.md)
   Declares the default traits for this package.
-- [static func trait(name: String, description: String?, enabledTraits: Set<String>) -> Trait](trait/trait(name:description:enabledtraits:).md)
+- [static func trait(name: String, description: String?, enabledTraits: Set<String>) -> Trait](./trait/trait%28name,description,enabledtraits%29.md)
   Creates a trait with a name, a description, and set of additional traits it enables.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var traits: Set<Trait>](package/traits.md)
+### Configuring Traits
+- [var traits: Set<Trait>](./package/traits.md)
   The set of traits this package provides.
 
 

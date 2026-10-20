@@ -1,19 +1,20 @@
 # Run Delegate Versions
 
-**Framework**: Core Text
+**Framework**: Core Text  
+**Role**: API Collection
 
 The version of the run delegate.
 
 #### Overview
 
-Set the version field of the [`CTRunDelegateCallbacks`](ctrundelegatecallbacks.md) structure to `kCTRunDelegateCurrentVersion` when creating a CTRunDelegate object with a call to [`CTRunDelegateCreate(_:_:)`](ctrundelegatecreate(_:_:).md).
+Set the version field of the [`CTRunDelegateCallbacks`](./ctrundelegatecallbacks.md) structure to `kCTRunDelegateCurrentVersion` when creating a CTRunDelegate object with a call to [`CTRunDelegateCreate(_:_:)`](./ctrundelegatecreate%28_,_%29.md).
 
 ## Topics
 
 ### Constants
-- [var kCTRunDelegateVersion1: Int](kctrundelegateversion1.md)
+- [var kCTRunDelegateVersion1: Int](./kctrundelegateversion1.md)
   Version 1 of the run delegate.
-- [var kCTRunDelegateCurrentVersion: Int](kctrundelegatecurrentversion.md)
+- [var kCTRunDelegateCurrentVersion: Int](./kctrundelegatecurrentversion.md)
   The current version of the run delegate.
 
 

@@ -1,7 +1,8 @@
 # allowedExternalEntityURLs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of external entity URLs that the parser is allowed to load.
 
@@ -18,6 +19,10 @@ The set of external entity URLs that the parser is allowed to load.
 
 ```swift
 var allowedExternalEntityURLs: Set<URL>? { get set }
+```
+
+```objc
+@property (copy, nullable) NSSet<NSURL *> * allowedExternalEntityURLs;
 ```
 
 

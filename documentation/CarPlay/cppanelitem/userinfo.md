@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Custom information you want to store with the item.
 
@@ -14,6 +15,10 @@ Custom information you want to store with the item.
 
 ```swift
 var userInfo: Any? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
 ```
 
 #### Discussion

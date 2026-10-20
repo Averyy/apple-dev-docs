@@ -1,7 +1,8 @@
 # ContentPlaybackFailureResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that allows the client to recover from failed content playback.
 
@@ -10,22 +11,25 @@ A response that allows the client to recover from failed content playback.
 
 ## Declaration
 
-```swift
+```
 object ContentPlaybackFailureResponse
 ```
 
 ## Properties
 
 - `version` (string): The version of the client’s `SiriKitMediaAPI` library.
-- `queue` (Queue): The [`Queue`](queue.md) segment the client uses to recover from the playback failure.
+
+  **Maximum Length**: `25`; **Allowed Values**: `/[0-9]+\.[0-9]+\.[0-9]+/`
+- `queue` (Queue): The [`Queue`](./queue.md) segment the client uses to recover from the playback failure.
 
 ## See Also
 
-- [Recover from Content Playback Failure](contentplaybackfailure.md)
+### Playback Failure
+- [Recover from Content Playback Failure](./contentplaybackfailure.md)
   Provide a recovery queue that allows the client to resume playback after an error.
-- [object ContentFailure](contentfailure.md)
+- [object ContentFailure](./contentfailure.md)
   An object that describes why the client can’t play a specific piece of content.
-- [object ContentPlaybackFailureRequest](contentplaybackfailurerequest.md)
+- [object ContentPlaybackFailureRequest](./contentplaybackfailurerequest.md)
   A request the client sends to recover from failed content playback.
 
 

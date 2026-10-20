@@ -1,19 +1,26 @@
 # ENDiagnosisReportType
 
 **Framework**: Exposure Notification  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of a report that describes the origin of a diagnosis.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 enum ENDiagnosisReportType
+```
+
+```c
+enum ENDiagnosisReportType : uint32_t;
 ```
 
 #### Overview
@@ -23,48 +30,49 @@ enum ENDiagnosisReportType
 ## Topics
 
 ### Enumeration Cases
-- [ENDiagnosisReportType.confirmedClinicalDiagnosis](endiagnosisreporttype/confirmedclinicaldiagnosis.md)
+- [ENDiagnosisReportType.confirmedClinicalDiagnosis](./endiagnosisreporttype/confirmedclinicaldiagnosis.md)
   The report comes from a confirmed clinical diagnosis.
-- [ENDiagnosisReportType.confirmedTest](endiagnosisreporttype/confirmedtest.md)
+- [ENDiagnosisReportType.confirmedTest](./endiagnosisreporttype/confirmedtest.md)
   The report comes from a confirmed test.
-- [ENDiagnosisReportType.recursive](endiagnosisreporttype/recursive.md)
+- [ENDiagnosisReportType.recursive](./endiagnosisreporttype/recursive.md)
   The report comes from a person determined positive based on exposure to another person confirmed positive.
-- [ENDiagnosisReportType.revoked](endiagnosisreporttype/revoked.md)
+- [ENDiagnosisReportType.revoked](./endiagnosisreporttype/revoked.md)
   The report is a negative test.
-- [ENDiagnosisReportType.selfReported](endiagnosisreporttype/selfreported.md)
+- [ENDiagnosisReportType.selfReported](./endiagnosisreporttype/selfreported.md)
   The report comes from the user, without health authority involvement.
-- [ENDiagnosisReportType.unknown](endiagnosisreporttype/unknown.md)
+- [ENDiagnosisReportType.unknown](./endiagnosisreporttype/unknown.md)
   The report is an unknown type or is not available.
 ### Initializers
-- [init?(rawValue: UInt32)](endiagnosisreporttype/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./endiagnosisreporttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Attenuation](attenuation.md)
+### Enumerations
+- [Attenuation](./attenuation.md)
   The minimum and maximum signal attenuations.
-- [Risk Level](risk-level.md)
+- [Risk Level](./risk-level.md)
   The minimum and maximum risk levels.
-- [Risk Level Value](risk-level-value.md)
+- [Risk Level Value](./risk-level-value.md)
   The minimum and maximum risk level values.
-- [Risk Score](risk-score.md)
+- [Risk Score](./risk-score.md)
   The minimum and maximum risk score.
-- [Risk Weight](risk-weight.md)
+- [Risk Weight](./risk-weight.md)
   The minimum, default, and maximum risk weights.
-- [struct ENActivityFlags](enactivityflags.md)
+- [struct ENActivityFlags](./enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [enum ENCalibrationConfidence](encalibrationconfidence.md)
+- [enum ENCalibrationConfidence](./encalibrationconfidence.md)
   The transmitting device’s calibration confidence.
-- [enum ENInfectiousness](eninfectiousness.md)
+- [enum ENInfectiousness](./eninfectiousness.md)
   The degree to which a person’s symptoms may indicate transmission risk.
 
 

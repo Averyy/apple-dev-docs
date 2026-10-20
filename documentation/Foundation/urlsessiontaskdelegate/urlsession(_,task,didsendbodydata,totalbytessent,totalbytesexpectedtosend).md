@@ -1,7 +1,8 @@
 # urlSession(_:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Periodically informs the delegate of the progress of sending body content to the server.
 
@@ -20,9 +21,13 @@ Periodically informs the delegate of the progress of sending body content to the
 optional func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didSendBodyData:(int64_t) bytesSent totalBytesSent:(int64_t) totalBytesSent totalBytesExpectedToSend:(int64_t) totalBytesExpectedToSend;
+```
+
 #### Discussion
 
-The `totalBytesSent` and `totalBytesExpectedToSend` parameters are also available as [`URLSessionTask`](urlsessiontask.md) properties [`countOfBytesSent`](urlsessiontask/countofbytessent.md) and [`countOfBytesExpectedToSend`](urlsessiontask/countofbytesexpectedtosend.md). Or, since [`URLSessionTask`](urlsessiontask.md) supports [`ProgressReporting`](progressreporting.md), you can use the task’s [`progress`](urlsessiontask/progress.md) property instead, which may be more convenient.
+The `totalBytesSent` and `totalBytesExpectedToSend` parameters are also available as [`URLSessionTask`](../urlsessiontask.md) properties [`countOfBytesSent`](../urlsessiontask/countofbytessent.md) and [`countOfBytesExpectedToSend`](../urlsessiontask/countofbytesexpectedtosend.md). Or, since [`URLSessionTask`](../urlsessiontask.md) supports [`ProgressReporting`](../progressreporting.md), you can use the task’s [`progress`](../urlsessiontask/progress.md) property instead, which may be more convenient.
 
 ## Parameters
 
@@ -30,13 +35,18 @@ The `totalBytesSent` and `totalBytesExpectedToSend` parameters are also availabl
 - `task`: The data task.
 - `bytesSent`: The number of bytes sent since the last time this delegate method was called.
 - `totalBytesSent`: The total number of bytes sent so far.
-- `totalBytesExpectedToSend`: The expected length of the body data. The URL loading system can determine the length of the upload data in three ways: - From the length of the `NSData` object provided as the upload body.
-- From the length of the file on disk provided as the upload body of an upload task (*not* a download task).
-- From the `Content-Length` in the request object, if you explicitly set it. Otherwise, the value is [`NSURLSessionTransferSizeUnknown`](nsurlsessiontransfersizeunknown.md) (`-1`) if you provided a stream or body data object, or zero (`0`) if you did not.
+- `totalBytesExpectedToSend`: The expected length of the body data. The URL loading system can determine the length of the upload data in three ways:
+
+  - From the length of the `NSData` object provided as the upload body.
+  - From the length of the file on disk provided as the upload body of an upload task (*not* a download task).
+  - From the `Content-Length` in the request object, if you explicitly set it.
+
+  Otherwise, the value is [`NSURLSessionTransferSizeUnknown`](../nsurlsessiontransfersizeunknown.md) (`-1`) if you provided a stream or body data object, or zero (`0`) if you did not.
 
 ## See Also
 
-- [func urlSession(URLSession, task: URLSessionTask, needNewBodyStream: (InputStream?) -> Void)](urlsessiontaskdelegate/urlsession(_:task:neednewbodystream:).md)
+### Working with upload tasks
+- [func urlSession(URLSession, task: URLSessionTask, needNewBodyStream: (InputStream?) -> Void)](./urlsession%28_,task,neednewbodystream%29.md)
   Tells the delegate when a task requires a new request body stream to send to the remote server.
 
 

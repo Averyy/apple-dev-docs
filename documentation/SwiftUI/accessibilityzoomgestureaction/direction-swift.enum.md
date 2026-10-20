@@ -1,7 +1,8 @@
 # AccessibilityZoomGestureAction.Direction
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A direction that matches the movement of a zoom gesture performed by an assistive technology, such as a swipe up and down in Voiceover’s zoom rotor.
 
@@ -24,24 +25,25 @@ enum Direction
 ## Topics
 
 ### Getting the direction
-- [AccessibilityZoomGestureAction.Direction.zoomIn](accessibilityzoomgestureaction/direction-swift.enum/zoomin.md)
+- [AccessibilityZoomGestureAction.Direction.zoomIn](./direction-swift.enum/zoomin.md)
   The gesture direction that represents zooming in.
-- [AccessibilityZoomGestureAction.Direction.zoomOut](accessibilityzoomgestureaction/direction-swift.enum/zoomout.md)
+- [AccessibilityZoomGestureAction.Direction.zoomOut](./direction-swift.enum/zoomout.md)
   The gesture direction that represents zooming out.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let direction: AccessibilityZoomGestureAction.Direction](accessibilityzoomgestureaction/direction-swift.property.md)
+### Getting the action’s direction
+- [let direction: AccessibilityZoomGestureAction.Direction](./direction-swift.property.md)
   The zoom gesture’s direction.
 
 

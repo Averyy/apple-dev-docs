@@ -1,7 +1,8 @@
 # AudioStreamBasicDescription
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format specification for an audio stream.
 
@@ -20,9 +21,13 @@ A format specification for an audio stream.
 struct AudioStreamBasicDescription
 ```
 
+```c
+struct AudioStreamBasicDescription;
+```
+
 #### Overview
 
-You can configure an audio stream basic description (ASBD) to specify a linear PCM format or a constant bit rate (CBR) format that has channels of equal size. For variable bit rate (VBR) audio, and for CBR audio where the channels have unequal sizes, also use an [`AudioStreamPacketDescription`](audiostreampacketdescription.md) structure to additionally describe each packet.
+You can configure an audio stream basic description (ASBD) to specify a linear PCM format or a constant bit rate (CBR) format that has channels of equal size. For variable bit rate (VBR) audio, and for CBR audio where the channels have unequal sizes, also use an [`AudioStreamPacketDescription`](./audiostreampacketdescription.md) structure to additionally describe each packet.
 
 A field value of `0` indicates that the value is either unknown or not applicable to the format.
 
@@ -32,7 +37,7 @@ Always initialize the fields of a new audio stream basic description structure t
 AudioStreamBasicDescription myAudioDataFormat = {0};
 ```
 
-To determine the duration that one packet represents, use the [`mSampleRate`](audiostreambasicdescription/msamplerate.md) field with the [`mFramesPerPacket`](audiostreambasicdescription/mframesperpacket.md) field, as follows:
+To determine the duration that one packet represents, use the [`mSampleRate`](./audiostreambasicdescription/msamplerate.md) field with the [`mFramesPerPacket`](./audiostreambasicdescription/mframesperpacket.md) field, as follows:
 
 ```objc
 duration = (1 / mSampleRate) * mFramesPerPacket
@@ -50,51 +55,52 @@ In Core Audio, the following definitions apply:
 ## Topics
 
 ### Inspecting a description
-- [var mFormatID: AudioFormatID](audiostreambasicdescription/mformatid.md)
+- [var mFormatID: AudioFormatID](./audiostreambasicdescription/mformatid.md)
   An identifier specifying the general audio data format in the stream.
-- [var mFormatFlags: AudioFormatFlags](audiostreambasicdescription/mformatflags.md)
+- [var mFormatFlags: AudioFormatFlags](./audiostreambasicdescription/mformatflags.md)
   Format-specific flags to specify details of the format.
-- [var mSampleRate: Float64](audiostreambasicdescription/msamplerate.md)
+- [var mSampleRate: Float64](./audiostreambasicdescription/msamplerate.md)
   The number of frames per second of the data in the stream, when playing the stream at normal speed.
-- [var mBitsPerChannel: UInt32](audiostreambasicdescription/mbitsperchannel.md)
+- [var mBitsPerChannel: UInt32](./audiostreambasicdescription/mbitsperchannel.md)
   The number of bits for one audio sample.
-- [var mBytesPerFrame: UInt32](audiostreambasicdescription/mbytesperframe.md)
+- [var mBytesPerFrame: UInt32](./audiostreambasicdescription/mbytesperframe.md)
   The number of bytes from the start of one frame to the start of the next frame in an audio buffer.
-- [var mChannelsPerFrame: UInt32](audiostreambasicdescription/mchannelsperframe.md)
+- [var mChannelsPerFrame: UInt32](./audiostreambasicdescription/mchannelsperframe.md)
   The number of channels in each frame of audio data.
-- [var mBytesPerPacket: UInt32](audiostreambasicdescription/mbytesperpacket.md)
+- [var mBytesPerPacket: UInt32](./audiostreambasicdescription/mbytesperpacket.md)
   The number of bytes in a packet of audio data.
-- [var mFramesPerPacket: UInt32](audiostreambasicdescription/mframesperpacket.md)
+- [var mFramesPerPacket: UInt32](./audiostreambasicdescription/mframesperpacket.md)
   The number of frames in a packet of audio data.
-- [var mReserved: UInt32](audiostreambasicdescription/mreserved.md)
+- [var mReserved: UInt32](./audiostreambasicdescription/mreserved.md)
   The amount to pad the structure to force an even 8-byte alignment.
 ### Initializers
-- [init()](audiostreambasicdescription/init.md)
+- [init()](./audiostreambasicdescription/init%28%29.md)
   Creates an empty description.
-- [init(mSampleRate: Float64, mFormatID: AudioFormatID, mFormatFlags: AudioFormatFlags, mBytesPerPacket: UInt32, mFramesPerPacket: UInt32, mBytesPerFrame: UInt32, mChannelsPerFrame: UInt32, mBitsPerChannel: UInt32, mReserved: UInt32)](audiostreambasicdescription/init(msamplerate:mformatid:mformatflags:mbytesperpacket:mframesperpacket:mbytesperframe:mchannelsperframe:mbitsperchannel:mreserved:).md)
+- [init(mSampleRate: Float64, mFormatID: AudioFormatID, mFormatFlags: AudioFormatFlags, mBytesPerPacket: UInt32, mFramesPerPacket: UInt32, mBytesPerFrame: UInt32, mChannelsPerFrame: UInt32, mBitsPerChannel: UInt32, mReserved: UInt32)](./audiostreambasicdescription/init%28msamplerate,mformatid,mformatflags,mbytesperpacket,mframesperpacket,mbytesperframe,mchannelsperframe,mbitsperchannel,mreserved%29.md)
   Creates a description with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioStreamPacketDescription](audiostreampacketdescription.md)
+### Streams
+- [struct AudioStreamPacketDescription](./audiostreampacketdescription.md)
   A value that describes a packet in a buffer of audio data.
-- [typealias AudioFormatFlags](audioformatflags.md)
+- [typealias AudioFormatFlags](./audioformatflags.md)
   A type definition for audio format flags.
-- [Audio Format Flags](audio-format-flags.md)
+- [Audio Format Flags](./audio-format-flags.md)
   Commonly used combinations of data format flags for an audio stream description.
-- [typealias AudioFormatID](audioformatid.md)
+- [typealias AudioFormatID](./audioformatid.md)
   A type definition for audio format identifiers.
-- [Audio Format Identifiers](audio-format-identifiers.md)
+- [Audio Format Identifiers](./audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](./kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
-- [enum MPEG4ObjectID](mpeg4objectid.md)
+- [enum MPEG4ObjectID](./mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.
 
 

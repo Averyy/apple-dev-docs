@@ -1,7 +1,8 @@
 # eyeColor
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mobile identity document holder’s eye color on record with the issuer.
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of GPU time used by the app.
 

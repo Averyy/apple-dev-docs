@@ -1,7 +1,8 @@
 # truncatingRemainder(dividingBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the remainder of this value divided by the given value using truncating division.
 

@@ -1,7 +1,8 @@
 # errSecPathLengthConstraintExceeded
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The path length constraint was exceeded.
 
@@ -18,6 +19,10 @@ The path length constraint was exceeded.
 
 ```swift
 var errSecPathLengthConstraintExceeded: OSStatus { get }
+```
+
+```c
+errSecPathLengthConstraintExceeded
 ```
 
 

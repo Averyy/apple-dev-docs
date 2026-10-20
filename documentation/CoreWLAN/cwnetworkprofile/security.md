@@ -1,7 +1,8 @@
 # security
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The security mode for the network profile.
 
@@ -14,11 +15,16 @@ The security mode for the network profile.
 var security: CWSecurity { get }
 ```
 
+```objc
+@property (readonly) CWSecurity security;
+```
+
 ## See Also
 
-- [var ssid: String?](cwnetworkprofile/ssid.md)
+### Instance Properties
+- [var ssid: String?](./ssid.md)
   The service set identifier (SSID) for the network profile, encoded as a string.
-- [var ssidData: Data?](cwnetworkprofile/ssiddata.md)
+- [var ssidData: Data?](./ssiddata.md)
   The service set identifier (SSID) for the network profile, returned as data.
 
 

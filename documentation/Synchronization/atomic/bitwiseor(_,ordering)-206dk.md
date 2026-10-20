@@ -1,7 +1,8 @@
 # bitwiseOr(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic bitwise OR operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic bitwise OR operation and return the old and new value, applyin
 @discardableResult
 func bitwiseOr(_ operand: Int32, ordering: AtomicUpdateOrdering) -> (oldValue: Int32, newValue: Int32)
 ```
+
+Available when `Value` is `Int32`.
 
 #### Return Value
 

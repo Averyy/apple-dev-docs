@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Copies data from a slice of the data plane of this tensor into a pointer you provide.
@@ -20,9 +21,13 @@ Copies data from a slice of the data plane of this tensor into a pointer you pro
 func getBytes(_ bytes: UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents)
 ```
 
+```objc
+- (void) getBytes:(void *) bytes strides:(MTLTensorExtents *) strides fromSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions;
+```
+
 #### Discussion
 
-Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
+Create the tensor with [`storageModeShared`](../mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 
 Strides need to be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
 

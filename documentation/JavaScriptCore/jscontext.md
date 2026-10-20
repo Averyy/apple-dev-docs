@@ -1,7 +1,8 @@
 # JSContext
 
 **Framework**: JavaScriptCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A JavaScript execution environment.
 
@@ -19,6 +20,10 @@ A JavaScript execution environment.
 class JSContext
 ```
 
+```objc
+@interface JSContext : NSObject
+```
+
 #### Overview
 
 You create and use JavaScript contexts to evaluate JavaScript scripts from Objective-C or Swift code; to access values that JavaScript defines or calculates; and to make native objects, methods, or functions accessible to JavaScript.
@@ -26,68 +31,69 @@ You create and use JavaScript contexts to evaluate JavaScript scripts from Objec
 ## Topics
 
 ### Creating JavaScript contexts
-- [init!()](jscontext/init.md)
+- [init!()](./jscontext/init%28%29.md)
   Initializes a new JavaScript context.
-- [init!(virtualMachine: JSVirtualMachine!)](jscontext/init(virtualmachine:).md)
+- [init!(virtualMachine: JSVirtualMachine!)](./jscontext/init%28virtualmachine%29.md)
   Creates a new JavaScript context associated with a specific virtual machine.
 ### Making JavaScript context inspectable
-- [var isInspectable: Bool](jscontext/isinspectable.md)
+- [var isInspectable: Bool](./jscontext/isinspectable.md)
   A Boolean value that indicates whether you can inspect the JavaScript context with Safari Web Inspector.
 ### Evaluating scripts
-- [func evaluateScript(String!) -> JSValue!](jscontext/evaluatescript(_:).md)
+- [func evaluateScript(String!) -> JSValue!](./jscontext/evaluatescript%28_%29.md)
   Executes the specified JavaScript code.
-- [func evaluateScript(String!, withSourceURL: URL!) -> JSValue!](jscontext/evaluatescript(_:withsourceurl:).md)
+- [func evaluateScript(String!, withSourceURL: URL!) -> JSValue!](./jscontext/evaluatescript%28_,withsourceurl%29.md)
   Executes the specified JavaScript code, treating the specified URL as its source location.
 ### Inspecting callback state in a running context
-- [class func current() -> JSContext!](jscontext/current.md)
+- [class func current() -> JSContext!](./jscontext/current%28%29.md)
   Returns the context currently executing JavaScript code.
-- [class func currentCallee() -> JSValue!](jscontext/currentcallee.md)
+- [class func currentCallee() -> JSValue!](./jscontext/currentcallee%28%29.md)
   Returns the currently executing JavaScript function.
-- [class func currentThis() -> JSValue!](jscontext/currentthis.md)
+- [class func currentThis() -> JSValue!](./jscontext/currentthis%28%29.md)
   Returns the value of the `this` keyword in currently executing JavaScript code.
-- [class func currentArguments() -> [Any]!](jscontext/currentarguments.md)
+- [class func currentArguments() -> [Any]!](./jscontext/currentarguments%28%29.md)
   Returns the arguments to the current native callback from JavaScript code.
 ### Working with JavaScript global state
-- [var globalObject: JSValue!](jscontext/globalobject.md)
+- [var globalObject: JSValue!](./jscontext/globalobject.md)
   The JavaScript global object associated with the context.
-- [var exception: JSValue!](jscontext/exception.md)
+- [var exception: JSValue!](./jscontext/exception.md)
   A JavaScript exception to be thrown in evaluation of the script.
-- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](jscontext/exceptionhandler.md)
+- [var exceptionHandler: ((JSContext?, JSValue?) -> Void)!](./jscontext/exceptionhandler.md)
   A block to be invoked should evaluating a script result in a JavaScript exception being thrown.
-- [var virtualMachine: JSVirtualMachine!](jscontext/virtualmachine.md)
+- [var virtualMachine: JSVirtualMachine!](./jscontext/virtualmachine.md)
   The JavaScript virtual machine to which the context belongs.
-- [var name: String!](jscontext/name.md)
+- [var name: String!](./jscontext/name.md)
   A descriptive name for the context.
 ### Accessing JavaScript global state with subscripts
-- [func objectForKeyedSubscript(Any!) -> JSValue!](jscontext/objectforkeyedsubscript(_:).md)
+- [func objectForKeyedSubscript(Any!) -> JSValue!](./jscontext/objectforkeyedsubscript%28_%29.md)
   Returns the value of the specified JavaScript property in the context’s global object, allowing subscript getter syntax.
-- [func setObject(Any!, forKeyedSubscript: (any NSCopying & NSObjectProtocol)!)](jscontext/setobject(_:forkeyedsubscript:).md)
+- [func setObject(Any!, forKeyedSubscript: (any NSCopying & NSObjectProtocol)!)](./jscontext/setobject%28_,forkeyedsubscript%29.md)
   Sets the specified JavaScript property of the context’s global object, allowing subscript setter syntax.
 ### Working with the C JavaScriptCore API
-- [var jsGlobalContextRef: JSGlobalContextRef!](jscontext/jsglobalcontextref.md)
+- [var jsGlobalContextRef: JSGlobalContextRef!](./jscontext/jsglobalcontextref.md)
   Returns the C representation of the JavaScript context.
-- [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-9m51.md)
+- [init!(JSGlobalContextRef: JSGlobalContextRef!)](./jscontext/init%28jsglobalcontextref%29-9m51.md)
   Creates a JavaScript context object from the equivalent C representation.
 ### Initializers
-- [init!(jsGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-1hstm.md)
+- [init!(jsGlobalContextRef: JSGlobalContextRef!)](./jscontext/init%28jsglobalcontextref%29-1hstm.md)
 ### Default Implementations
-- [JSContext Implementations](jscontext/jscontext-implementations.md)
+- [JSContext Implementations](./jscontext/jscontext-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class JSVirtualMachine](jsvirtualmachine.md)
+### Execution Environment
+- [class JSVirtualMachine](./jsvirtualmachine.md)
   A self-contained environment for JavaScript execution.
 
 

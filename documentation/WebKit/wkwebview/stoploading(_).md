@@ -1,18 +1,23 @@
 # stopLoading(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops loading all resources on the current page.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @IBAction
 func stopLoading(_ sender: Any?)
+```
+
+```objc
+- (void) stopLoading:(id) sender;
 ```
 
 #### Discussion
@@ -25,15 +30,16 @@ Make this method the action of any controls that stop the loading of your web co
 
 ## See Also
 
-- [func reload() -> WKNavigation?](wkwebview/reload.md)
+### Managing the loading process
+- [func reload() -> WKNavigation?](./reload%28%29.md)
   Reloads the current webpage.
-- [func reload(Any?)](wkwebview/reload(_:).md)
+- [func reload(Any?)](./reload%28_%29.md)
   Reloads the current webpage.
-- [func reloadFromOrigin() -> WKNavigation?](wkwebview/reloadfromorigin.md)
+- [func reloadFromOrigin() -> WKNavigation?](./reloadfromorigin%28%29.md)
   Reloads the current webpage, and performs end-to-end revalidation of the content using cache-validating conditionals, if possible.
-- [func reloadFromOrigin(Any?)](wkwebview/reloadfromorigin(_:).md)
+- [func reloadFromOrigin(Any?)](./reloadfromorigin%28_%29.md)
   Reloads the current webpage, and performs end-to-end revalidation of the content using cache-validating conditionals, if possible.
-- [func stopLoading()](wkwebview/stoploading.md)
+- [func stopLoading()](./stoploading%28%29.md)
   Stops loading all resources on the current page.
 
 

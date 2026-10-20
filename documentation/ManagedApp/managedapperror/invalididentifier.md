@@ -1,7 +1,8 @@
 # ManagedAppError.invalidIdentifier
 
 **Framework**: ManagedApp  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure finding an identifier.
 

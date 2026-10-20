@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_dl_link_quality_metric_data {
     ...
 };
@@ -17,8 +17,8 @@ struct kev_dl_link_quality_metric_data {
 ## Topics
 
 ### Instance Properties
-- [link_data](kev_dl_link_quality_metric_data/3943812-link_data.md)
-- [link_quality_metric](kev_dl_link_quality_metric_data/3943813-link_quality_metric.md)
+- [link_data](./kev_dl_link_quality_metric_data/api-3943812-link_data.md)
+- [link_quality_metric](./kev_dl_link_quality_metric_data/api-3943813-link_quality_metric.md)
 
 
 ---

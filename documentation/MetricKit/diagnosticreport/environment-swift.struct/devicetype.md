@@ -1,7 +1,8 @@
 # deviceType
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hardware identifier for the device.
 
@@ -20,11 +21,12 @@ let deviceType: String
 
 ## See Also
 
-- [let osVersion: OSVersion](diagnosticreport/environment-swift.struct/osversion.md)
+### Device information
+- [let osVersion: OSVersion](./osversion.md)
   The version of the OS on the device including the type of OS, version number, and build number.
-- [let platformArchitecture: String](diagnosticreport/environment-swift.struct/platformarchitecture.md)
+- [let platformArchitecture: String](./platformarchitecture.md)
   The name of the processor architecture for the device.
-- [let regionFormat: String](diagnosticreport/environment-swift.struct/regionformat.md)
+- [let regionFormat: String](./regionformat.md)
   The short country code for the region format setting of the device.
 
 

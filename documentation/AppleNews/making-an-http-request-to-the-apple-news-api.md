@@ -1,6 +1,7 @@
 # Making an HTTP Request to the Apple News API
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Create the URL, set the method, and send the request.
 
@@ -79,9 +80,10 @@ The error indicates that the HTTP request didn’t include the authorization hea
 
 ## See Also
 
-- [Signing the HTTP Request](signing-the-http-request.md)
+### Apple News API Python Tutorial
+- [Signing the HTTP Request](./signing-the-http-request.md)
   Sign the canonical request and send the custom authorization header to the Apple News API.
-- [Publishing an Article](publishing-an-article.md)
+- [Publishing an Article](./publishing-an-article.md)
   Build a URL and article body for the publish-article request.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the pipeline data set serializer into which this compiler stores data for all pipelines it creates.
@@ -18,6 +19,10 @@ Returns the pipeline data set serializer into which this compiler stores data fo
 
 ```swift
 var pipelineDataSetSerializer: (any MTL4PipelineDataSetSerializer)? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) id<MTL4PipelineDataSetSerializer> pipelineDataSetSerializer;
 ```
 
 

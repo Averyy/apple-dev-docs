@@ -1,7 +1,8 @@
 # matchSingle(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified Int64 value against an integer value (not an array).
 

@@ -1,15 +1,16 @@
 # MIDIEventsList
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var MIDIEventsList: AUMIDIEventList { get set }
 ```
 
+```c
+AUMIDIEventList MIDIEventsList;
+```
+
 ## See Also
 
-- [var MIDI: AUMIDIEvent](aurenderevent/midi.md)
+### Instance Properties
+- [var MIDI: AUMIDIEvent](./midi.md)
   Use this field for MIDI events.
-- [var head: AURenderEventHeader](aurenderevent/head.md)
+- [var head: AURenderEventHeader](./head.md)
   Use this field to determine the event type.
-- [var parameter: AUParameterEvent](aurenderevent/parameter.md)
+- [var parameter: AUParameterEvent](./parameter.md)
   Use this field for parameter events.
 
 

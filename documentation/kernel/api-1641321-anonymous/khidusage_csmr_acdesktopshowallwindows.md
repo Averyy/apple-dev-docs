@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ACDesktopShowAllWindows
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ACDesktopShowAllWindows = 0x29F
 ```
 

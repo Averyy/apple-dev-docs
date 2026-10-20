@@ -2,6 +2,7 @@
 
 **Framework**: SMS and Call Reporting  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Information you use to connect to your server.

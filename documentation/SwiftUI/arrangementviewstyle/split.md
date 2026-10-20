@@ -1,7 +1,8 @@
 # split
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
@@ -21,23 +22,26 @@ An arrangement view style that places the primary and secondary views side by si
 nonisolated static var split: SplitArrangementViewStyle { get }
 ```
 
+Available when `Self` is `SplitArrangementViewStyle`.
+
 #### Discussion
 
 The split arrangement adapts its layout axis based on the available size and size class. Use this style for experiences that display two distinct pieces of content simultaneously, such as a music player alongside its lyrics or a calculator with a conversion panel.
 
-Constrain which axes the split supports using [`axes(_:)`](splitarrangementviewstyle/axes(_:).md).
+Constrain which axes the split supports using [`axes(_:)`](../splitarrangementviewstyle/axes%28_%29.md).
 
 ## See Also
 
-- [static var automatic: AutomaticArrangementViewStyle](arrangementviewstyle/automatic.md)
+### Getting arrangement view styles
+- [static var automatic: AutomaticArrangementViewStyle](./automatic.md)
   The default arrangement view style.
-- [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
+- [struct AutomaticArrangementViewStyle](../automaticarrangementviewstyle.md)
   The default arrangement view style.
-- [static var overlay: OverlayArrangementViewStyle](arrangementviewstyle/overlay.md)
+- [static var overlay: OverlayArrangementViewStyle](./overlay.md)
   A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [struct OverlayArrangementViewStyle](overlayarrangementviewstyle.md)
+- [struct OverlayArrangementViewStyle](../overlayarrangementviewstyle.md)
   A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [struct SplitArrangementViewStyle](splitarrangementviewstyle.md)
+- [struct SplitArrangementViewStyle](../splitarrangementviewstyle.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 

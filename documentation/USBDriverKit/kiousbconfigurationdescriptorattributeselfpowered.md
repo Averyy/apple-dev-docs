@@ -1,20 +1,22 @@
 # kIOUSBConfigurationDescriptorAttributeSelfPowered
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBConfigurationDescriptorAttributeSelfPowered
 ```
 
 ## See Also
 
-- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](kiousbconfigurationdescriptorattributeremotewakecapable.md)
+### Getting the Settings
+- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](./kiousbconfigurationdescriptorattributeremotewakecapable.md)
 
 
 ---

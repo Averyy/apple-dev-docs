@@ -1,7 +1,8 @@
 # URLCredential.Persistence.synchronizable
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The credential should be stored permanently in the keychain, and in addition should be distributed to other devices based on the owning Apple ID.
 
@@ -20,13 +21,18 @@ The credential should be stored permanently in the keychain, and in addition sho
 case synchronizable
 ```
 
+```c
+NSURLCredentialPersistenceSynchronizable
+```
+
 ## See Also
 
-- [URLCredential.Persistence.none](urlcredential/persistence-swift.enum/none.md)
+### Persistence strategies
+- [URLCredential.Persistence.none](./none.md)
   The credential should not be stored.
-- [URLCredential.Persistence.forSession](urlcredential/persistence-swift.enum/forsession.md)
+- [URLCredential.Persistence.forSession](./forsession.md)
   The credential should be stored only for this session.
-- [URLCredential.Persistence.permanent](urlcredential/persistence-swift.enum/permanent.md)
+- [URLCredential.Persistence.permanent](./permanent.md)
   The credential should be stored in the keychain.
 
 

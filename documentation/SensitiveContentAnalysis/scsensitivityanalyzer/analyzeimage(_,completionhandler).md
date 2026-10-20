@@ -1,7 +1,8 @@
 # analyzeImage(_:completionHandler:)
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Analyzes an image for sensitive content and runs code on completion.
 
@@ -15,12 +16,20 @@ Analyzes an image for sensitive content and runs code on completion.
 ## Declaration
 
 ```swift
+func analyzeImage(_ image: CGImage, completionHandler: @escaping @Sendable (SCSensitivityAnalysis?, (any Error)?) -> Void)
+```
+
+```swift
 func analyzeImage(_ image: CGImage) async throws -> SCSensitivityAnalysis
+```
+
+```objc
+- (void) analyzeCGImage:(CGImageRef) image completionHandler:(void (^)(SCSensitivityAnalysis *results, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
+- [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 
 #### Discussion
 
@@ -36,7 +45,8 @@ The completion handler:
 
 ## See Also
 
-- [func analyzeImage(at: URL, completionHandler: (SCSensitivityAnalysis?, (any Error)?) -> Void)](scsensitivityanalyzer/analyzeimage(at:completionhandler:).md)
+### Analyzing images
+- [func analyzeImage(at: URL, completionHandler: (SCSensitivityAnalysis?, (any Error)?) -> Void)](./analyzeimage%28at,completionhandler%29.md)
   Analyzes an image file on disk at a URL and runs code on completion.
 
 

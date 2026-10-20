@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether the set has no elements.
@@ -20,6 +21,12 @@ A Boolean value that indicates whether the set has no elements.
 ```swift
 var isEmpty: Bool { get }
 ```
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [var isEmpty: Bool](./isempty-58spu.md)
+  A Boolean value that indicates whether the set has no elements.
 
 
 ---

@@ -2,18 +2,23 @@
 
 **Framework**: Open Directory  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The delegate method called as results are returned from a query scheduled in a run loop.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
 
 ```swift
 func query(_ inQuery: ODQuery!, foundResults inResults: [Any]!, error inError: (any Error)!)
+```
+
+```objc
+- (void) query:(ODQuery *) inQuery foundResults:(NSArray *) inResults error:(NSError *) inError;
 ```
 
 #### Discussion

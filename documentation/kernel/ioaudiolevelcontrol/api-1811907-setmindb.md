@@ -7,7 +7,7 @@ Sets the minimum value in db that the control may have
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setMinDB(
  IOFixedminDB);
 ```
@@ -22,17 +22,18 @@ This value is represented as an IOFixed value which is a fixed point number. The
 
 ## See Also
 
-- [create](ioaudiolevelcontrol/1811861-create.md)
+### Miscellaneous
+- [create](./api-1811861-create.md)
   Allocates a new level control with the given attributes
-- [init](ioaudiolevelcontrol/1811868-init.md)
+- [init](./api-1811868-init.md)
   Initializes a newly allocated IOAudioLevelControl with the given attributes
-- [setLinearScale](ioaudiolevelcontrol/1811880-setlinearscale.md)
+- [setLinearScale](./api-1811880-setlinearscale.md)
   This function tells CoreAudio if it should apply a curve to the scaler representation of the volume.
-- [setMaxDB](ioaudiolevelcontrol/1811889-setmaxdb.md)
+- [setMaxDB](./api-1811889-setmaxdb.md)
   Sets the maximum value in db that the control may have
-- [setMaxValue](ioaudiolevelcontrol/1811896-setmaxvalue.md)
+- [setMaxValue](./api-1811896-setmaxvalue.md)
   Sets the maximum value the control may have
-- [setMinValue](ioaudiolevelcontrol/1811910-setminvalue.md)
+- [setMinValue](./api-1811910-setminvalue.md)
   Sets the minimum value the control may have
 
 

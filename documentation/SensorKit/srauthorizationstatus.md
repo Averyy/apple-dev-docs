@@ -1,7 +1,8 @@
 # SRAuthorizationStatus
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The states that model whether the user approves the app to read a particular sensor.
 
@@ -16,35 +17,40 @@ The states that model whether the user approves the app to read a particular sen
 enum SRAuthorizationStatus
 ```
 
+```c
+enum SRAuthorizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SRAuthorizationStatus.authorized](srauthorizationstatus/authorized.md)
+- [SRAuthorizationStatus.authorized](./srauthorizationstatus/authorized.md)
   User has granted authorization to this application
-- [SRAuthorizationStatus.denied](srauthorizationstatus/denied.md)
+- [SRAuthorizationStatus.denied](./srauthorizationstatus/denied.md)
   User has denied authorization to this application or data collection is disabled in Settings.
-- [SRAuthorizationStatus.notDetermined](srauthorizationstatus/notdetermined.md)
+- [SRAuthorizationStatus.notDetermined](./srauthorizationstatus/notdetermined.md)
   User has not yet made a choice regarding this application
 ### Initializers
-- [init?(rawValue: Int)](srauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./srauthorizationstatus/init%28rawvalue%29.md)
 ### Type Methods
-- [static func requestAuthorization(for: [any SRDataSensor]) async throws](srauthorizationstatus/requestauthorization(for:).md)
+- [static func requestAuthorization(for: [any SRDataSensor]) async throws](./srauthorizationstatus/requestauthorization%28for%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var authorizationStatus: SRAuthorizationStatus](srsensorreader/authorizationstatus.md)
+### Checking user authorization
+- [var authorizationStatus: SRAuthorizationStatus](./srsensorreader/authorizationstatus.md)
   The status of the user’s agreement to let the app access this reader’s sensor.
-- [class func requestAuthorization(sensors: Set<SRSensor>, completion: ((any Error)?) -> Void)](srsensorreader/requestauthorization(sensors:completion:).md)
+- [class func requestAuthorization(sensors: Set<SRSensor>, completion: ((any Error)?) -> Void)](./srsensorreader/requestauthorization%28sensors,completion%29.md)
   Requests user permission to read one or more sensors.
 
 

@@ -1,7 +1,8 @@
 # EndUserLicenseAgreement
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A custom end-user license agreement (EULA) for an app, targeting specific territories where it applies.
 
@@ -10,16 +11,16 @@ A custom end-user license agreement (EULA) for an app, targeting specific territ
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreement
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreement.Attributes](enduserlicenseagreement/attributes-data.dictionary.md)
+- [object EndUserLicenseAgreement.Attributes](./enduserlicenseagreement/attributes-data.dictionary.md)
   Attributes that describe an End User License Agreements resource.
-- [object EndUserLicenseAgreement.Relationships](enduserlicenseagreement/relationships-data.dictionary.md)
+- [object EndUserLicenseAgreement.Relationships](./enduserlicenseagreement/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,20 +29,21 @@ object EndUserLicenseAgreement
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (EndUserLicenseAgreement.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `endUserLicenseAgreements`
 
 ## See Also
 
-- [object EndUserLicenseAgreementCreateRequest](enduserlicenseagreementcreaterequest.md)
+### Objects
+- [object EndUserLicenseAgreementCreateRequest](./enduserlicenseagreementcreaterequest.md)
   The request body you use to create an End User License Agreement.
-- [object EndUserLicenseAgreementUpdateRequest](enduserlicenseagreementupdaterequest.md)
+- [object EndUserLicenseAgreementUpdateRequest](./enduserlicenseagreementupdaterequest.md)
   The request body you use to update an End User License Agreement.
-- [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
+- [object EndUserLicenseAgreementResponse](./enduserlicenseagreementresponse.md)
   The response body for endpoints that read or modify a custom end user license agreement for an app.
-- [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+- [object EndUserLicenseAgreementWithoutIncludesResponse](./enduserlicenseagreementwithoutincludesresponse.md)
   A response containing a single EULA, without including territory details.
-- [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
-- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
+- [object AppEndUserLicenseAgreementLinkageResponse](./appenduserlicenseagreementlinkageresponse.md)
+- [object EndUserLicenseAgreementTerritoriesLinkagesResponse](./enduserlicenseagreementterritorieslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # buildExpression(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds an expression within the builder.
 
@@ -21,11 +22,12 @@ static func buildExpression<Content>(_ content: Content) -> Content where Value 
 
 ## See Also
 
-- [static func buildIf<C>(C?) -> C?](tablerowbuilder/buildif(_:).md)
+### Building a row from conditionals
+- [static func buildIf<C>(C?) -> C?](./buildif%28_%29.md)
   Creates a row result for conditional statements.
-- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](tablerowbuilder/buildeither(first:).md)
+- [static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F>](./buildeither%28first%29.md)
   Creates a row result for the first of two row content alternatives.
-- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](tablerowbuilder/buildeither(second:).md)
+- [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](./buildeither%28second%29.md)
   Creates a row result for the second of two row content alternatives.
 
 

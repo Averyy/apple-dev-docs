@@ -1,7 +1,8 @@
 # MTRKeypadInputCECKeyCode.f1Blue
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +17,10 @@
 
 ```swift
 case f1Blue
+```
+
+```c
+MTRKeypadInputCECKeyCodeF1Blue
 ```
 
 

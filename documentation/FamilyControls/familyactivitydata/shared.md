@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Family Controls  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared instance for accessing a person’s family activity data.
 
@@ -17,11 +18,12 @@ static let shared: FamilyActivityData
 
 ## See Also
 
-- [var activityCategories: Set<ActivityCategory>](familyactivitydata/activitycategories.md)
+### Accessing activity data
+- [var activityCategories: Set<ActivityCategory>](./activitycategories.md)
   The set of all possible activity categories.
-- [var installedApplications: [Application]](familyactivitydata/installedapplications.md)
+- [var installedApplications: [Application]](./installedapplications.md)
   Applications someone installs on a device.
-- [var visitedWebDomains: [WebDomain]](familyactivitydata/visitedwebdomains.md)
+- [var visitedWebDomains: [WebDomain]](./visitedwebdomains.md)
   Web domains someone visits on their device.
 
 

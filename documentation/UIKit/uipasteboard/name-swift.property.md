@@ -1,7 +1,8 @@
 # name
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the pasteboard.
 
@@ -17,17 +18,23 @@ The name of the pasteboard.
 var name: UIPasteboard.Name { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIPasteboardName name;
+```
+
 #### Discussion
 
-Names of app pasteboard objects should be unique across installed apps. If the object is a system pasteboard, this property returns one of the constants described in [`Pasteboard Names`](pasteboard-names.md).
+Names of app pasteboard objects should be unique across installed apps. If the object is a system pasteboard, this property returns one of the constants described in [Pasteboard Names](../pasteboard-names.md).
 
 ## See Also
 
-- [init?(name: UIPasteboard.Name, create: Bool)](uipasteboard/init(name:create:).md)
+### Related Documentation
+- [init?(name: UIPasteboard.Name, create: Bool)](./init%28name,create%29.md)
   Returns a pasteboard that you identify by name, optionally creating it if it doesn’t exist.
-- [class func withUniqueName() -> UIPasteboard](uipasteboard/withuniquename.md)
+- [class func withUniqueName() -> UIPasteboard](./withuniquename%28%29.md)
   Returns an app pasteboard that you identify by a unique system-generated name.
-- [var changeCount: Int](uipasteboard/changecount.md)
+### Getting and setting pasteboard attributes
+- [var changeCount: Int](./changecount.md)
   The number of times the pasteboard’s contents change.
 
 

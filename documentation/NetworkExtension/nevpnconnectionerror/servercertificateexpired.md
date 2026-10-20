@@ -1,7 +1,8 @@
 # NEVPNConnectionError.serverCertificateExpired
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the server certfiicate’s validity period has passed.
 
@@ -19,11 +20,16 @@ An error code that indicates the server certfiicate’s validity period has pass
 case serverCertificateExpired
 ```
 
+```c
+NEVPNConnectionErrorServerCertificateExpired
+```
+
 ## See Also
 
-- [NEVPNConnectionError.serverCertificateInvalid](nevpnconnectionerror/servercertificateinvalid.md)
+### Server certificate error codes
+- [NEVPNConnectionError.serverCertificateInvalid](./servercertificateinvalid.md)
   An error code that indicates the server certfiicate is invalid.
-- [NEVPNConnectionError.serverCertificateNotYetValid](nevpnconnectionerror/servercertificatenotyetvalid.md)
+- [NEVPNConnectionError.serverCertificateNotYetValid](./servercertificatenotyetvalid.md)
   An error code that indicates the server certfiicate won’t be valid until some time in the future.
 
 

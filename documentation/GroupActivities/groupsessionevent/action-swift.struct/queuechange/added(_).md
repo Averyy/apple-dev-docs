@@ -1,7 +1,8 @@
 # added(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a queue change for an added item.
 
@@ -25,7 +26,7 @@ A type that contains information about the change.
 
 #### Discussion
 
-Before showing a notice to the user, call this method to generate a type for the added item. Pass this type to the [`updatedQueue(_:)`](groupsessionevent/action-swift.struct/updatedqueue(_:).md) method to create the postable action.
+Before showing a notice to the user, call this method to generate a type for the added item. Pass this type to the [`updatedQueue(_:)`](../updatedqueue%28_%29.md) method to create the postable action.
 
 ## Parameters
 
@@ -33,7 +34,8 @@ Before showing a notice to the user, call this method to generate a type for the
 
 ## See Also
 
-- [static func setUpNext(GroupSessionEvent.Action.QueueChange.Item) -> GroupSessionEvent.Action.QueueChange](groupsessionevent/action-swift.struct/queuechange/setupnext(_:).md)
+### Specifying the type of change
+- [static func setUpNext(GroupSessionEvent.Action.QueueChange.Item) -> GroupSessionEvent.Action.QueueChange](./setupnext%28_%29.md)
   Returns a queue change for a new up-next item.
 
 

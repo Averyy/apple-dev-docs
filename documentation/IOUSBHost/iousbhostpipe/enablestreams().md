@@ -1,7 +1,8 @@
 # enableStreams()
 
 **Framework**: IOUSBHost  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables streams for the pipe.
 
@@ -15,15 +16,20 @@ Enables streams for the pipe.
 func enableStreams() throws
 ```
 
+```objc
+- (BOOL) enableStreamsWithError:(NSError **) error;
+```
+
 #### Discussion
 
-This method changes the operational mode of the pipe to allow streaming endpoint transfers. Call this method before [`copyStream(withStreamID:)`](iousbhostpipe/copystream(withstreamid:).md).
+This method changes the operational mode of the pipe to allow streaming endpoint transfers. Call this method before [`copyStream(withStreamID:)`](./copystream%28withstreamid%29.md).
 
 ## See Also
 
-- [func copyStream(withStreamID: Int) throws -> IOUSBHostStream](iousbhostpipe/copystream(withstreamid:).md)
+### Managing Streams
+- [func copyStream(withStreamID: Int) throws -> IOUSBHostStream](./copystream%28withstreamid%29.md)
   Returns the stream for a stream ID.
-- [func disableStreams() throws](iousbhostpipe/disablestreams.md)
+- [func disableStreams() throws](./disablestreams%28%29.md)
   Disables streams for the pipe.
 
 

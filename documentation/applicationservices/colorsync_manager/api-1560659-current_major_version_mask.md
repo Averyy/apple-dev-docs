@@ -7,8 +7,8 @@ Specifies the current major version number.
 ## Topics
 
 ### Constants
-- [var cmProfileMajorVersionMask: Int](cmprofilemajorversionmask.md)
-- [var cmCurrentProfileMajorVersion: Int](cmcurrentprofilemajorversion.md)
+- [var cmProfileMajorVersionMask: Int](../cmprofilemajorversionmask.md)
+- [var cmCurrentProfileMajorVersion: Int](../cmcurrentprofilemajorversion.md)
 
 
 ---

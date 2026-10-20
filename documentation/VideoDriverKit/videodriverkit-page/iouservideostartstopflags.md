@@ -1,7 +1,8 @@
 # IOUserVideoStartStopFlags
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Flags used to indicate how I/O is starting or stopping.
 
@@ -10,23 +11,24 @@ Flags used to indicate how I/O is starting or stopping.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoStartStopFlags : uint64_t;
 ```
 
 ## Topics
 
 ### Start/stop behaviors
-- [None](videodriverkit/iouservideostartstopflags/none.md)
+- [None](./iouservideostartstopflags/none.md)
   A flag that indicates starting or stopping for normal I/O operation.
-- [Prewarm](videodriverkit/iouservideostartstopflags/prewarm.md)
+- [Prewarm](./iouservideostartstopflags/prewarm.md)
   A flag that indicates starting or stopping for prewarming.
 
 ## See Also
 
-- [StartIO](iouservideoclockdevice/startio.md)
+### Performing I/O
+- [StartIO](../iouservideoclockdevice/startio.md)
   Tells the clock device to start IO.
-- [StopIO](iouservideoclockdevice/stopio.md)
+- [StopIO](../iouservideoclockdevice/stopio.md)
   Tells the clock device to stop IO.
 
 

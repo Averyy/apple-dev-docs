@@ -1,14 +1,15 @@
 # IFNET_CSUM_UDPIPV6
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IFNET_CSUM_UDPIPV6 = 0x00000040
 ```
 

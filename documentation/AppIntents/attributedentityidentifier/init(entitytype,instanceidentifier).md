@@ -1,7 +1,8 @@
 # init(entityType:instanceIdentifier:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attributed entity identifier with the specified type and instance identifiers.
 

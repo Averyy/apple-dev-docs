@@ -1,7 +1,8 @@
 # stiffness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resistance of the body’s volume to diverge from `targetVolume`.
 
@@ -22,7 +23,8 @@ The valid range is [0.0, 1.0], both included.
 
 ## See Also
 
-- [var targetVolume: Float?](clothbodycomponent/inflationconstraint-swift.struct/targetvolume.md)
+### Configuring inflation
+- [var targetVolume: Float?](./targetvolume.md)
   The target volume (in ㎥) that the body tries to match.
 
 

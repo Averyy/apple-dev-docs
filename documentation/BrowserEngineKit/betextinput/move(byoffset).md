@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adjusts the current selection by `offset` in character granularity units
@@ -16,6 +17,10 @@ Adjusts the current selection by `offset` in character granularity units
 
 ```swift
 func move(byOffset offset: Int)
+```
+
+```objc
+- (void) moveByOffset:(NSInteger) offset;
 ```
 
 

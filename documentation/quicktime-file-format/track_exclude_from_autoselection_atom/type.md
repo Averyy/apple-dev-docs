@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that identifies the atom type.
 
@@ -11,7 +12,8 @@ This field must be set to `'txas'`.
 
 ## See Also
 
-- [Size](track_exclude_from_autoselection_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the track exclude from autoselection atom.
 
 

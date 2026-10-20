@@ -1,7 +1,8 @@
 # MPSGraphOptimizationProfile.performance
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Default, graph optimized for performance.
 
@@ -17,6 +18,10 @@ Default, graph optimized for performance.
 
 ```swift
 case performance
+```
+
+```c
+MPSGraphOptimizationProfilePerformance
 ```
 
 

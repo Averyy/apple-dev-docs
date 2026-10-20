@@ -1,7 +1,8 @@
 # init(id:anchor:imageConfiguration:dragRegion:scalesWithZoom:)
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new markup adornment with the specified configuration.
 

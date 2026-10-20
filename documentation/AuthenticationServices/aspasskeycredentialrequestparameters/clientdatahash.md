@@ -1,7 +1,8 @@
 # clientDataHash
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The client data that you sign as part of the response.
 
@@ -18,13 +19,18 @@ The client data that you sign as part of the response.
 var clientDataHash: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * clientDataHash;
+```
+
 ## See Also
 
-- [var allowedCredentials: [Data]](aspasskeycredentialrequestparameters/allowedcredentials.md)
+### Viewing credential request parameters
+- [var allowedCredentials: [Data]](./allowedcredentials.md)
   A list of passkey credentials that the relying party accepts for this challenge.
-- [var relyingPartyIdentifier: String](aspasskeycredentialrequestparameters/relyingpartyidentifier.md)
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The relying party that issues the challenge.
-- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](aspasskeycredentialrequestparameters/userverificationpreference.md)
+- [var userVerificationPreference: ASAuthorizationPublicKeyCredentialUserVerificationPreference](./userverificationpreference.md)
   The relying party’s preference for user verification.
 
 

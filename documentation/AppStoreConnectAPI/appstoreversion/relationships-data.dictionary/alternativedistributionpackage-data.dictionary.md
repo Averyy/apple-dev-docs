@@ -1,21 +1,22 @@
 # AppStoreVersion.Relationships.AlternativeDistributionPackage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.3+
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersion.Relationships.AlternativeDistributionPackage
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersion.Relationships.AlternativeDistributionPackage.Data](appstoreversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary/data-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AlternativeDistributionPackage.Data](./alternativedistributionpackage-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app store version.
 
 ## Properties
@@ -25,26 +26,27 @@ object AppStoreVersion.Relationships.AlternativeDistributionPackage
 
 ## See Also
 
-- [object AgeRatingDeclaration](ageratingdeclaration.md)
+### Objects
+- [object AgeRatingDeclaration](../../ageratingdeclaration.md)
   A set of content descriptors for your app that App Store Connect uses to assign an age rating.
-- [object AppStoreVersion.Relationships.App](appstoreversion/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppStoreVersion.Relationships.App](./app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.AppClipDefaultExperience](appstoreversion/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppClipDefaultExperience](./appclipdefaultexperience-data.dictionary.md)
   The data and links that describe the relationship between the App Store Versions and the Default App Clip Experiences resources.
-- [object AppStoreVersion.Relationships.AppStoreReviewDetail](appstoreversion/relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreReviewDetail](./appstorereviewdetail-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.AppStoreVersionExperiments](appstoreversion/relationships-data.dictionary/appstoreversionexperiments-data.dictionary.md)
-- [object AppStoreVersion.Relationships.AppStoreVersionLocalizations](appstoreversion/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreVersionExperiments](./appstoreversionexperiments-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreVersionLocalizations](./appstoreversionlocalizations-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.AppStoreVersionPhasedRelease](appstoreversion/relationships-data.dictionary/appstoreversionphasedrelease-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreVersionPhasedRelease](./appstoreversionphasedrelease-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.AppStoreVersionSubmission](appstoreversion/relationships-data.dictionary/appstoreversionsubmission-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreVersionSubmission](./appstoreversionsubmission-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.Build](appstoreversion/relationships-data.dictionary/build-data.dictionary.md)
+- [object AppStoreVersion.Relationships.Build](./build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.RoutingAppCoverage](appstoreversion/relationships-data.dictionary/routingappcoverage-data.dictionary.md)
+- [object AppStoreVersion.Relationships.RoutingAppCoverage](./routingappcoverage-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object AppStoreVersion.Relationships.AppStoreVersionExperimentsV2](appstoreversion/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary.md)
+- [object AppStoreVersion.Relationships.AppStoreVersionExperimentsV2](./appstoreversionexperimentsv2-data.dictionary.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a size structure from the specified single-precision vector.
 
@@ -11,7 +12,7 @@ Creates a size structure from the specified single-precision vector.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,19 +27,20 @@ init(_ xyz: simd_float3)
 
 ## See Also
 
-- [init()](size3d/init.md)
+### Creating a 3D size structure
+- [init()](./init%28%29.md)
   Creates a size structure.
-- [init(width: Double, height: Double, depth: Double)](size3d/init(width:height:depth:)-4j9bk.md)
+- [init(width: Double, height: Double, depth: Double)](./init%28width,height,depth%29-4j9bk.md)
   Creates a size structure from the specified double-precision values.
-- [init<T>(width: T, height: T, depth: T)](size3d/init(width:height:depth:)-4kscw.md)
+- [init<T>(width: T, height: T, depth: T)](./init%28width,height,depth%29-4kscw.md)
   Creates a size structure from the specified floating-point values.
-- [init(simd_double3)](size3d/init(_:)-3y7nr.md)
+- [init(simd_double3)](./init%28_%29-3y7nr.md)
   Creates a size structure from the specified double-precision vector.
-- [init(vector: simd_double3)](size3d/init(vector:).md)
+- [init(vector: simd_double3)](./init%28vector%29.md)
   Creates a size structure from the specified double-precision vector.
-- [init(Point3D)](size3d/init(_:)-7kyp0.md)
+- [init(Point3D)](./init%28_%29-7kyp0.md)
   Creates a size structure from the specified Spatial point.
-- [init(Vector3D)](size3d/init(_:)-6nss1.md)
+- [init(Vector3D)](./init%28_%29-6nss1.md)
   Creates a size structure from the specified Spatial vector.
 
 

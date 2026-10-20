@@ -1,7 +1,8 @@
 # readIndices(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the current contents of the index buffer synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func readIndices<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R wh
 
 You pass a closure that receives a read-only span representing the contents of the index buffer. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 
@@ -29,13 +30,14 @@ You pass a closure that receives a read-only span representing the contents of t
 
 ## See Also
 
-- [func updateIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updateindices(_:).md)
+### Accessing index data
+- [func updateIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./updateindices%28_%29.md)
   Updates the index buffer in place synchronously on the CPU.
-- [func replaceIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/replaceindices(_:).md)
+- [func replaceIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](./replaceindices%28_%29.md)
   Replaces the entire contents of the index buffer synchronously on the CPU.
-- [func readIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readindices(commandbuffer:).md)
+- [func readIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./readindices%28commandbuffer%29.md)
   Returns a Metal buffer containing the current contents of the index buffer for GPU read operations.
-- [func replaceIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/replaceindices(commandbuffer:).md)
+- [func replaceIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](./replaceindices%28commandbuffer%29.md)
   Returns a Metal buffer you populate on the GPU with the new contents of the index buffer.
 
 

@@ -1,21 +1,22 @@
 # CertificateCreateRequest.Data.Relationships.PassTypeId
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object CertificateCreateRequest.Data.Relationships.PassTypeId
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CertificateCreateRequest.Data.Relationships.PassTypeId.Data](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.md)
+- [object CertificateCreateRequest.Data.Relationships.PassTypeId.Data](./passtypeid-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # init(title:description:mode:requestValueDialog:inputConnectionBehavior:resolvers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter that can convert the selected value.
 
@@ -11,7 +12,7 @@ Creates an app intent parameter that can convert the selected value.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Creates an app intent parameter that can convert the selected value.
 ```swift
 convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStringResource? = nil, mode: IntentPerson.ParameterMode = .contact, requestValueDialog: IntentDialog? = nil, inputConnectionBehavior: InputConnectionBehavior = .default, @ResolverSpecificationBuilder<Value.UnwrappedType> resolvers: @escaping () -> Spec) where Spec : ResolverSpecification
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `IntentPerson`.
 
 ## Parameters
 
@@ -31,15 +34,16 @@ convenience init<Spec>(title: LocalizedStringResource, description: LocalizedStr
 
 ## See Also
 
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:mode:requestvaluedialog:inputconnectionbehavior:).md)
+### Creating an intent parameter
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior)](./init%28title,description,mode,requestvaluedialog,inputconnectionbehavior%29.md)
   Creates an app intent parameter.
-- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](intentparameter/init(title:description:mode:requestvaluedialog:inputconnectionbehavior:optionsprovider:).md)
+- [convenience init<OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider)](./init%28title,description,mode,requestvaluedialog,inputconnectionbehavior,optionsprovider%29.md)
   Creates an app intent parameter with a list of selectable options.
-- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](intentparameter/init(title:description:mode:requestvaluedialog:inputconnectionbehavior:optionsprovider:resolvers:).md)
+- [convenience init<Spec, OptionsProvider>(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, requestValueDialog: IntentDialog?, inputConnectionBehavior: InputConnectionBehavior, optionsProvider: OptionsProvider, resolvers: () -> Spec)](./init%28title,description,mode,requestvaluedialog,inputconnectionbehavior,optionsprovider,resolvers%29.md)
   Creates an app intent parameter with a list of selectable options that can convert the selected value.
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:mode:size:inputconnectionbehavior:)-1i2sn.md)
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: [IntentWidgetFamily : IntentCollectionSize], inputConnectionBehavior: InputConnectionBehavior)](./init%28title,description,mode,size,inputconnectionbehavior%29-1i2sn.md)
   Creates an app intent parameter for an array with a specified size per widget family.
-- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior)](intentparameter/init(title:description:mode:size:inputconnectionbehavior:)-6efsz.md)
+- [convenience init(title: LocalizedStringResource, description: LocalizedStringResource?, mode: IntentPerson.ParameterMode, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior)](./init%28title,description,mode,size,inputconnectionbehavior%29-6efsz.md)
   Creates an app intent parameter for an array with a specified size.
 
 

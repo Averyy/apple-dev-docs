@@ -1,7 +1,8 @@
 # init(document:activePartID:hiddenPartIDs:selectedPageID:selectedQuestionID:showsPageThumbnails:isStructureEditingEnabled:onMarkupActivation:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Displays an `AssignedWorkDocument`.
 
@@ -19,7 +20,7 @@ Displays an `AssignedWorkDocument`.
 
 ## Parameters
 
-- `document`: A binding to the [`AssignedWorkDocumentView.Document`](assignedworkdocumentview/document.md) to present in the view.
+- `document`: A binding to the [`AssignedWorkDocumentView.Document`](./document.md) to present in the view.
 - `activePartID`: The `PartID` to enable user interaction on.
 - `hiddenPartIDs`: A set of `PartID`s to hide on this view. Treated as a set.
 - `selectedPageID`: A binding to the selected page.

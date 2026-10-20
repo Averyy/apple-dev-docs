@@ -1,7 +1,8 @@
 # bookmarkData
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Create a bookmark for this AIModel’s cached specialized asset entry as serialized data.
 
@@ -26,7 +27,8 @@ The data returned  can be stored and later resolved to re-create a model with in
 
 ## See Also
 
-- [static var deviceArchitectureName: String](aimodel/devicearchitecturename.md)
+### Inspecting a model
+- [static var deviceArchitectureName: String](./devicearchitecturename.md)
   The Core AI architecture name of the current device.
 
 

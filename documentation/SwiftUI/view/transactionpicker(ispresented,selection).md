@@ -1,7 +1,8 @@
 # transactionPicker(isPresented:selection:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a picker that selects a collection of transactions.
 

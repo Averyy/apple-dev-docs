@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration that the report spans.
 
@@ -16,13 +17,18 @@ The duration that the report spans.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var totalScreenWakes: Int](srdeviceusagereport/totalscreenwakes.md)
+### Summarizing Device Use
+- [var totalScreenWakes: Int](./totalscreenwakes.md)
   The total number of screen wakes for the device.
-- [var totalUnlocks: Int](srdeviceusagereport/totalunlocks.md)
+- [var totalUnlocks: Int](./totalunlocks.md)
   The total number of unlocks for the device.
-- [var totalUnlockDuration: TimeInterval](srdeviceusagereport/totalunlockduration.md)
+- [var totalUnlockDuration: TimeInterval](./totalunlockduration.md)
   The duration of time the device is in an unlocked state.
 
 

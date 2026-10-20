@@ -1,7 +1,8 @@
 # mainQueue
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A concurrency type where the context performs its tasks on the main queue.
 
@@ -11,7 +12,7 @@ A concurrency type where the context performs its tasks on the main queue.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static let mainQueue: NSManagedObjectContext.ConcurrencyType
 
 ## See Also
 
-- [static let privateQueue: NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct/privatequeue.md)
+### Concurrency Types
+- [static let privateQueue: NSManagedObjectContext.ConcurrencyType](./privatequeue.md)
   A concurrency type where the context performs its tasks on a private queue.
 
 

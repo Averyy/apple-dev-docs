@@ -1,7 +1,8 @@
 # invalidateConfigurationRecommendations()
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates and refreshes the preconfigured intent configurations for user-customizable widgets.
 
@@ -21,7 +22,7 @@ func invalidateConfigurationRecommendations()
 
 ## Mentions
 
-- [Making a configurable widget](making-a-configurable-widget.md)
+- [Making a configurable widget](../making-a-configurable-widget.md)
 
 #### Discussion
 

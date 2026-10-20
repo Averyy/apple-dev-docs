@@ -1,14 +1,15 @@
 # ifclat46_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 char ifclat46_name[16];
 ```
 

@@ -1,7 +1,8 @@
 # cmCloseAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Close the profile for reading or writing.
 

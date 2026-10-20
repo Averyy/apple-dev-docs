@@ -1,7 +1,8 @@
 # setBufferSlice(_:at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a buffer slice to the slot at the given index.
 
@@ -19,16 +20,17 @@ final func setBufferSlice(_ bufferSlice: LowLevelBufferSlice, at index: Int) thr
 
 #### Discussion
 
-> **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if `index` is out of range or `bufferSlice` is incompatible with the slot.
+> **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `index` is out of range or `bufferSlice` is incompatible with the slot.
 
 ## Parameters
 
-- `bufferSlice`: The buffer slice to bind to the slot. Its size must be no smaller than the slot’s [`size`](lowlevelargumenttable/descriptor-swift.struct/buffer/size.md).
+- `bufferSlice`: The buffer slice to bind to the slot. Its size must be no smaller than the slot’s [`size`](./descriptor-swift.struct/buffer/size.md).
 - `index`: The slot index within the argument table’s buffer array.
 
 ## See Also
 
-- [func bufferSlice(at: Int) -> LowLevelBufferSlice?](lowlevelargumenttable/bufferslice(at:).md)
+### Accessing buffer slices
+- [func bufferSlice(at: Int) -> LowLevelBufferSlice?](./bufferslice%28at%29.md)
   Returns the buffer slice bound at the given index, or `nil` if the slot is unset.
 
 

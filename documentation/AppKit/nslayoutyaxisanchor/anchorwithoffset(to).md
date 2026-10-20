@@ -1,7 +1,8 @@
 # anchorWithOffset(to:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a layout dimension object from two anchors.
 
@@ -14,9 +15,13 @@ Creates a layout dimension object from two anchors.
 func anchorWithOffset(to otherAnchor: NSLayoutYAxisAnchor) -> NSLayoutDimension
 ```
 
+```objc
+- (NSLayoutDimension *) anchorWithOffsetToAnchor:(NSLayoutYAxisAnchor *) otherAnchor;
+```
+
 #### Return Value
 
-The [`NSLayoutDimension`](nslayoutdimension.md) object represented by the two anchors.
+The [`NSLayoutDimension`](../nslayoutdimension.md) object represented by the two anchors.
 
 #### Discussion
 

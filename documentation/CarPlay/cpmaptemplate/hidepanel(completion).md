@@ -1,7 +1,8 @@
 # hidePanel(completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides the overlay.
 
@@ -13,7 +14,15 @@ Hides the overlay.
 ## Declaration
 
 ```swift
+func hidePanel(completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func hidePanel() async throws -> Bool
+```
+
+```objc
+- (void) hidePanelWithCompletion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 ## Parameters

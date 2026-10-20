@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unpopulated free space instance.
 
@@ -12,6 +13,10 @@ Creates an unpopulated free space instance.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

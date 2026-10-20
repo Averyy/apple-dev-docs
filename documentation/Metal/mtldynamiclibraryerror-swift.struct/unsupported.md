@@ -1,7 +1,8 @@
 # unsupported
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error code that indicates the GPU device doesn’t support dynamic libraries.
 
@@ -21,17 +22,18 @@ static var unsupported: MTLDynamicLibraryError.Code { get }
 
 ## See Also
 
-- [static var none: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/none.md)
+### Error codes
+- [static var none: MTLDynamicLibraryError.Code](./none.md)
   An error code that represents the absence of any problems.
-- [static var invalidFile: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/invalidfile.md)
+- [static var invalidFile: MTLDynamicLibraryError.Code](./invalidfile.md)
   An error code that indicates an app is using an invalid reference to a library file, typically related to a URL.
-- [static var compilationFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/compilationfailure.md)
+- [static var compilationFailure: MTLDynamicLibraryError.Code](./compilationfailure.md)
   An error code that indicates Metal couldn’t compile a dynamic library.
-- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/unresolvedinstallname.md)
+- [static var unresolvedInstallName: MTLDynamicLibraryError.Code](./unresolvedinstallname.md)
   An error code that indicates Metal couldn’t resolve the installation name for a new dynamic library.
-- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/dependencyloadfailure.md)
+- [static var dependencyLoadFailure: MTLDynamicLibraryError.Code](./dependencyloadfailure.md)
   An error code that indicates a dynamic library couldn’t link to other dynamic libraries.
-- [MTLDynamicLibraryError.Code](mtldynamiclibraryerror-swift.struct/code.md)
+- [MTLDynamicLibraryError.Code](./code.md)
   Error codes that Metal can generate when creating dynamic libraries.
 
 

@@ -1,7 +1,8 @@
 # notificationResponse
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A person’s response to one of your app’s notifications.
 
@@ -15,6 +16,10 @@ A person’s response to one of your app’s notifications.
 
 ```swift
 var notificationResponse: UNNotificationResponse? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UNNotificationResponse * notificationResponse;
 ```
 
 #### Discussion

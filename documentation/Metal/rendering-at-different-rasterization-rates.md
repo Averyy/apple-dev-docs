@@ -1,6 +1,7 @@
 # Rendering at different rasterization rates
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Configure a rasterization rate map to vary rasterization rates depending on the amount of detail needed.
 
@@ -12,7 +13,7 @@ One common solution is to render intermediate images at a lower resolution and t
 
 Another way to reduce rendering cost is to avoid complex calculations in parts of the rendered image when you don’t need the detail in those parts or the app discards them later in the rendering process. For example, if you plan to apply a blur effect to part of your image as a postprocessing step, you don’t need to incur the cost of rendering those pixels with great detail, because the blur effect removes the details.
 
-##### Implement Variable Rasterization Rates
+##### Implement variable rasterization rates
 
 In Metal, you can combine these two solutions by using variable rasterization rates (VRR). You specify different rasterization rates for different parts of the render target. When you need detail, you render those areas of the target at full resolution. In areas that don’t need detail, you specify a lower resolution rate, which means that you need fewer pixels in those areas and fewer invocations of your fragment shader.
 
@@ -25,7 +26,7 @@ To use VRR, you create a rasterization map to divide the render target into zone
 
 After you’ve finished rendering intermediate data using the rate map, you execute additional draw commands to stretch the intermediate data and copy it to another texture at the higher resolution, such as a texture provided by a Metal drawable for display. This final target is called a *full-rate image*, because it uses the normal rasterization uniformly across the image. After you generate the full-rate image, you can apply additional processing to it. For example, you usually want to render user interface elements on top of the full-rate image.
 
-##### Check for Vrr Support
+##### Check for VRR support
 
 Not all GPUs support VRR. Before attempting to use it, check for support on the device object:
 
@@ -53,19 +54,20 @@ bool supportsVariableRasterizationRate(MTL::Device* pDevice)
 
 ## See Also
 
-- [Creating a rasterization rate map](creating-a-rasterization-rate-map.md)
+### Rasterization settings
+- [Creating a rasterization rate map](./creating-a-rasterization-rate-map.md)
   Define the rasterization rates for each part of your render target.
-- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](./rendering-with-a-rasterization-rate-map.md)
   Create offscreen textures to hold intermediate rasterized data.
-- [Scaling variable rasterization rate content](scaling-variable-rasterization-rate-content.md)
+- [Scaling variable rasterization rate content](./scaling-variable-rasterization-rate-content.md)
   Use the rate map data to scale the content to fill your destination texture.
-- [class MTLRasterizationRateMapDescriptor](mtlrasterizationratemapdescriptor.md)
+- [class MTLRasterizationRateMapDescriptor](./mtlrasterizationratemapdescriptor.md)
   An object that you use to configure new rasterization rate maps.
-- [protocol MTLRasterizationRateMap](mtlrasterizationratemap.md)
+- [protocol MTLRasterizationRateMap](./mtlrasterizationratemap.md)
   A compiled read-only instance that determines how to apply variable rasterization rates when rendering.
-- [typealias MTLCoordinate2D](mtlcoordinate2d.md)
+- [typealias MTLCoordinate2D](./mtlcoordinate2d.md)
   A coordinate in the viewport.
-- [func MTLCoordinate2DMake(Float, Float) -> MTLCoordinate2D](mtlcoordinate2dmake(_:_:).md)
+- [func MTLCoordinate2DMake(Float, Float) -> MTLCoordinate2D](./mtlcoordinate2dmake%28_,_%29.md)
   Returns a new 2D point with the specified coordinates.
 
 

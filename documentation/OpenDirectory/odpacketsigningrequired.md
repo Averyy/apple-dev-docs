@@ -1,11 +1,12 @@
 # ODPacketSigningRequired
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var ODPacketSigningRequired: Int { get }
 ```
 
+```c
+ODPacketSigningRequired
+```
+
 ## See Also
 
-- [var ODPacketSigningAllow: Int](odpacketsigningallow.md)
-- [var ODPacketSigningDisabled: Int](odpacketsigningdisabled.md)
+### Constants
+- [var ODPacketSigningAllow: Int](./odpacketsigningallow.md)
+- [var ODPacketSigningDisabled: Int](./odpacketsigningdisabled.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kBluetoothKeyboardANSIReturn
 
 **Framework**: IOBluetooth UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.2+
@@ -12,12 +13,17 @@
 var kBluetoothKeyboardANSIReturn: BluetoothKeyboardReturnType { get }
 ```
 
+```c
+kBluetoothKeyboardANSIReturn
+```
+
 ## See Also
 
-- [var rawValue: UInt32](bluetoothkeyboardreturntype/rawvalue.md)
-- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardisoreturn.md)
-- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardjisreturn.md)
-- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](kbluetoothkeyboardnoreturn.md)
+### Instance Properties
+- [var rawValue: UInt32](./bluetoothkeyboardreturntype/rawvalue.md)
+- [var kBluetoothKeyboardISOReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardisoreturn.md)
+- [var kBluetoothKeyboardJISReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardjisreturn.md)
+- [var kBluetoothKeyboardNoReturn: BluetoothKeyboardReturnType](./kbluetoothkeyboardnoreturn.md)
 
 
 ---

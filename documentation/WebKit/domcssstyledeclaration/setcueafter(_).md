@@ -1,7 +1,8 @@
 # setCueAfter(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCueAfter(_ cueAfter: String!)
+```
+
+```objc
+- (void) setCueAfter:(NSString *) cueAfter;
 ```
 
 

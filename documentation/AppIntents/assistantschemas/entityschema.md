@@ -1,7 +1,8 @@
 # AssistantSchemas.EntitySchema
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,21 +22,21 @@ struct EntitySchema
 ## Relationships
 
 ### Conforms To
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
-- [AssistantSchemas.Entity](assistantschemas/entity.md)
-- [AssistantSchemas.FilesEntity](assistantschemas/filesentity.md)
-- [AssistantSchemas.JournalEntity](assistantschemas/journalentity.md)
-- [AssistantSchemas.MailEntity](assistantschemas/mailentity.md)
-- [AssistantSchemas.Model](assistantschemas/model.md)
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
-- [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
-- [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
-- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
-- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AssistantSchemas.BooksEntity](./booksentity.md)
+- [AssistantSchemas.BrowserEntity](./browserentity.md)
+- [AssistantSchemas.Entity](./entity.md)
+- [AssistantSchemas.FilesEntity](./filesentity.md)
+- [AssistantSchemas.JournalEntity](./journalentity.md)
+- [AssistantSchemas.MailEntity](./mailentity.md)
+- [AssistantSchemas.Model](./model.md)
+- [AssistantSchemas.PhotosEntity](./photosentity.md)
+- [AssistantSchemas.PresentationEntity](./presentationentity.md)
+- [AssistantSchemas.ReaderEntity](./readerentity.md)
+- [AssistantSchemas.SpreadsheetEntity](./spreadsheetentity.md)
+- [AssistantSchemas.WhiteboardEntity](./whiteboardentity.md)
+- [AssistantSchemas.WordProcessorEntity](./wordprocessorentity.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

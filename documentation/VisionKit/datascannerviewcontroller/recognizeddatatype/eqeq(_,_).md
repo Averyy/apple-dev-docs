@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: VisionKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two sets have equal elements.
 
@@ -27,7 +28,8 @@ static func == (lhs: DataScannerViewController.RecognizedDataType, rhs: DataScan
 
 ## See Also
 
-- [func hash(into: inout Hasher)](datascannerviewcontroller/recognizeddatatype/hash(into:).md)
+### Hashing and comparing
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the components of this value using the specified hasher.
 
 

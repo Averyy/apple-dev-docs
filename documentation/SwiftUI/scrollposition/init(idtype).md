@@ -1,7 +1,8 @@
 # init(idType:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new automatic scroll position.
 

@@ -1,7 +1,8 @@
 # setMirroring(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls whether the receiver enables video mirroring during snapshots.
 
@@ -14,13 +15,18 @@ Controls whether the receiver enables video mirroring during snapshots.
 func setMirroring(_ b: Bool)
 ```
 
+```objc
+- (void) setMirroring:(BOOL) b;
+```
+
 ## Parameters
 
-- `b`: The default setting is [`true`](https://developer.apple.com/documentation/swift/true).
+- `b`: The default setting is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func mirroring() -> Bool](ikpicturetaker/mirroring.md)
+### Getting and Setting Mirroring
+- [func mirroring() -> Bool](./mirroring%28%29.md)
   Returns whether video mirroring is enabled during snapshots.
 
 

@@ -1,7 +1,8 @@
 # PresentationIntent.Kind.tableHeaderRow
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

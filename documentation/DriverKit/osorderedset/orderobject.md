@@ -1,19 +1,20 @@
 # orderObject
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the ordered set’s order function against a `NULL` object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int32_t orderObject(const OSMetaClassBase *anObject);
 ```
 

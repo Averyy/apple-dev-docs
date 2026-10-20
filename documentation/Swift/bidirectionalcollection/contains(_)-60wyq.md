@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this collection contains a match for the regex, where the regex is created by the given closure.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether this collection contains a match for 
 ```swift
 func contains(@RegexComponentBuilder _ content: () -> some RegexComponent) -> Bool
 ```
+
+Available when `SubSequence` is `Substring`.
 
 #### Return Value
 

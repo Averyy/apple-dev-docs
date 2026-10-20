@@ -1,7 +1,8 @@
 # accountProviderAuthenticationToken
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An authentication session token that your app sends to the account provider.
 
@@ -9,7 +10,7 @@ An authentication session token that your app sends to the account provider.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 13.0+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ An authentication session token that your app sends to the account provider.
 
 ```swift
 var accountProviderAuthenticationToken: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accountProviderAuthenticationToken;
 ```
 
 #### Discussion

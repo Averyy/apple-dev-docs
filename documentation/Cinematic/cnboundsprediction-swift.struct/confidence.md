@@ -1,14 +1,15 @@
 # confidence
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number between 0.0 and 1.0 representing the probability that a defined object is within the bounds.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

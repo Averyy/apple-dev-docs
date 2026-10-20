@@ -1,7 +1,8 @@
 # gestureForFailureRelationships
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gesture that the drag interaction adds to the view hierarchy.
 
@@ -17,9 +18,13 @@ The gesture that the drag interaction adds to the view hierarchy.
 var gestureForFailureRelationships: UIGestureRecognizer { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIGestureRecognizer * gestureForFailureRelationships;
+```
+
 #### Discussion
 
-If your app provides other gestures in the same view hierarchy, you may want to set up failure requirements between your app’s gestures and the drag interaction’s gesture. To do this, use the [`require(toFail:)`](uigesturerecognizer/require(tofail:).md) method to relate your gestures to this gesture. For example:
+If your app provides other gestures in the same view hierarchy, you may want to set up failure requirements between your app’s gestures and the drag interaction’s gesture. To do this, use the [`require(toFail:)`](../uigesturerecognizer/require%28tofail%29.md) method to relate your gestures to this gesture. For example:
 
 **Swift**:
 

@@ -1,7 +1,8 @@
 # programName
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current program or show name, if available.
 

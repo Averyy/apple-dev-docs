@@ -1,17 +1,22 @@
 # registerServicesMenuSendTypes(_:returnTypes:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the pasteboard types the receiver can send and receive in response to service requests.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func registerServicesMenuSendTypes(_ sendTypes: [NSPasteboard.PasteboardType], returnTypes: [NSPasteboard.PasteboardType])
+```
+
+```objc
+- (void) registerServicesMenuSendTypes:(NSArray<NSString *> *) sendTypes returnTypes:(NSArray<NSString *> *) returnTypes;
 ```
 
 #### Discussion
@@ -25,9 +30,11 @@ If the receiver has a Services menu, a menu item is added for each service provi
 
 ## See Also
 
-- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](nsapplication/validrequestor(forsendtype:returntype:).md)
+### Related Documentation
+- [func validRequestor(forSendType: NSPasteboard.PasteboardType?, returnType: NSPasteboard.PasteboardType?) -> Any?](./validrequestor%28forsendtype,returntype%29.md)
   Indicates whether the receiver can send and receive the specified pasteboard types.
-- [var servicesMenu: NSMenu?](nsapplication/servicesmenu.md)
+### Managing the Services Menu
+- [var servicesMenu: NSMenu?](./servicesmenu.md)
   The app’s Services menu.
 
 

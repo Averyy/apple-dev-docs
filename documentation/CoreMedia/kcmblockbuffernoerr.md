@@ -1,18 +1,19 @@
 # kCMBlockBufferNoErr
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A code that indicates the system successfully created a block buffer with no errors.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,25 +21,30 @@ A code that indicates the system successfully created a block buffer with no err
 var kCMBlockBufferNoErr: OSStatus { get }
 ```
 
+```c
+kCMBlockBufferNoErr
+```
+
 ## See Also
 
-- [var kCMBlockBufferBadCustomBlockSourceErr: OSStatus](kcmblockbufferbadcustomblocksourceerr.md)
+### Errors
+- [var kCMBlockBufferBadCustomBlockSourceErr: OSStatus](./kcmblockbufferbadcustomblocksourceerr.md)
   An error code that indicates the custom block source is invalid.
-- [var kCMBlockBufferBadLengthParameterErr: OSStatus](kcmblockbufferbadlengthparametererr.md)
+- [var kCMBlockBufferBadLengthParameterErr: OSStatus](./kcmblockbufferbadlengthparametererr.md)
   An error code that indicates the block length is zero or doesn’t equal the size of the memory block.
-- [var kCMBlockBufferBadOffsetParameterErr: OSStatus](kcmblockbufferbadoffsetparametererr.md)
+- [var kCMBlockBufferBadOffsetParameterErr: OSStatus](./kcmblockbufferbadoffsetparametererr.md)
   An error code that indicates the offset doesn’t point to the location of data in the memory block.
-- [var kCMBlockBufferBadPointerParameterErr: OSStatus](kcmblockbufferbadpointerparametererr.md)
+- [var kCMBlockBufferBadPointerParameterErr: OSStatus](./kcmblockbufferbadpointerparametererr.md)
   An error code that indicates the block buffer reference is invalid.
-- [var kCMBlockBufferBlockAllocationFailedErr: OSStatus](kcmblockbufferblockallocationfailederr.md)
+- [var kCMBlockBufferBlockAllocationFailedErr: OSStatus](./kcmblockbufferblockallocationfailederr.md)
   An error code that indicates the block allocator failed to allocate a memory block.
-- [var kCMBlockBufferEmptyBBufErr: OSStatus](kcmblockbufferemptybbuferr.md)
+- [var kCMBlockBufferEmptyBBufErr: OSStatus](./kcmblockbufferemptybbuferr.md)
   An error code that indicates the block buffer is empty.
-- [var kCMBlockBufferInsufficientSpaceErr: OSStatus](kcmblockbufferinsufficientspaceerr.md)
+- [var kCMBlockBufferInsufficientSpaceErr: OSStatus](./kcmblockbufferinsufficientspaceerr.md)
   An error code that indicates the system failed to create a new buffer because of insufficient space at the buffer out location.
-- [var kCMBlockBufferStructureAllocationFailedErr: OSStatus](kcmblockbufferstructureallocationfailederr.md)
+- [var kCMBlockBufferStructureAllocationFailedErr: OSStatus](./kcmblockbufferstructureallocationfailederr.md)
   An error code that indicates the structure allocator failed to allocate a block buffer.
-- [var kCMBlockBufferUnallocatedBlockErr: OSStatus](kcmblockbufferunallocatedblockerr.md)
+- [var kCMBlockBufferUnallocatedBlockErr: OSStatus](./kcmblockbufferunallocatedblockerr.md)
   An error code that indicates the system encountered an unallocated memory block.
 
 

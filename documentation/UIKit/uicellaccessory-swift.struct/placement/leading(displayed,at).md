@@ -1,7 +1,8 @@
 # UICellAccessory.Placement.leading(displayed:at:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory appears on the leading edge of the cell.
 
@@ -10,7 +11,7 @@ The accessory appears on the leading edge of the cell.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ case leading(displayed: UICellAccessory.DisplayedState = .always, at: UICellAcce
 
 ## See Also
 
-- [case trailing(displayed: UICellAccessory.DisplayedState, at: UICellAccessory.Placement.Position)](uicellaccessory-swift.struct/placement/trailing(displayed:at:).md)
+### Specifying accessory placement
+- [case trailing(displayed: UICellAccessory.DisplayedState, at: UICellAccessory.Placement.Position)](./trailing%28displayed,at%29.md)
   The accessory appears on the trailing edge of the cell.
 
 

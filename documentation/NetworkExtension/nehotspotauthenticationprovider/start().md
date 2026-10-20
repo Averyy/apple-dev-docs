@@ -2,6 +2,7 @@
 
 **Framework**: Network Extension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the extension to start the authentication provider, in response to a request from the framework.
@@ -24,13 +25,14 @@ func start() async -> Bool
 
 #### Discussion
 
-Use this method to prepare your provider to handle future calls to [`handleCommand(_:)`](nehotspotauthenticationprovider/handlecommand(_:).md).
+Use this method to prepare your provider to handle future calls to [`handleCommand(_:)`](./handlecommand%28_%29.md).
 
 ## See Also
 
-- [func stop(reason: NEProviderStopReason) async](nehotspotauthenticationprovider/stop(reason:).md)
+### Managing provider life cycle
+- [func stop(reason: NEProviderStopReason) async](./stop%28reason%29.md)
   Tells the exension to stop the authentication provider, in response to a request from the framework.
-- [enum NEProviderStopReason](neproviderstopreason.md)
+- [enum NEProviderStopReason](../neproviderstopreason.md)
   Reasons why the provider extension was stopped.
 
 

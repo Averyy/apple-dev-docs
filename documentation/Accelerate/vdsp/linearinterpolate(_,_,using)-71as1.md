@@ -1,7 +1,8 @@
 # linearInterpolate(_:_:using:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the linear interpolation between the supplied single-precision vectors.
 
@@ -11,7 +12,7 @@ Returns the linear interpolation between the supplied single-precision vectors.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ static func linearInterpolate<T, U>(_ vectorA: T, _ vectorB: U, using interpolat
 
 #### Discussion
 
-Single-precision and double-precision [`linearInterpolate(_:_:using:)`](vdsp/linearinterpolate(_:_:using:)-3j5d2.md) functions return a vector that’s the element-wise linear interpolation between the two supplied vectors.
+Single-precision and double-precision [`linearInterpolate(_:_:using:)`](./linearinterpolate%28_,_,using%29-3j5d2.md) functions return a vector that’s the element-wise linear interpolation between the two supplied vectors.
 
 For example, the following code creates two arrays, vectorA and vectorB, that contain sine waves:
 
@@ -38,7 +39,7 @@ let vectorB: [Float] = (0 ... n).map {
 }
 ```
 
-Use [`linearInterpolate(_:_:using:)`](vdsp/linearinterpolate(_:_:using:)-71as1.md) with an interpolation constant of 0.5 to generate a new vector that’s the average of the two sine waves:
+Use [`linearInterpolate(_:_:using:)`](./linearinterpolate%28_,_,using%29-71as1.md) with an interpolation constant of 0.5 to generate a new vector that’s the average of the two sine waves:
 
 ```swift
 let result = vDSP.linearInterpolate(vectorA, vectorB,
@@ -47,15 +48,16 @@ let result = vDSP.linearInterpolate(vectorA, vectorB,
 
 The following figure visualizes the two source vectors: the blue lines at the top and bottom, and the interpolation result: the red line in the center:
 
-![Graphic illustrating two sine waves and a third vector that’s the linear interpolation between them.](/images/com.apple.accelerate/media-3521332@2x.png)
+![Graphic illustrating two sine waves and a third vector that’s the linear interpolation between them.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3521332@2x.png)
 
 ## See Also
 
-- [static func linearInterpolate<T, U>(T, U, using: Double) -> [Double]](vdsp/linearinterpolate(_:_:using:)-3j5d2.md)
+### Vector-to-Vector Linear Interpolation
+- [static func linearInterpolate<T, U>(T, U, using: Double) -> [Double]](./linearinterpolate%28_,_,using%29-3j5d2.md)
   Returns the linear interpolation between the supplied double-precision vectors.
-- [static func linearInterpolate<T, U, V>(T, U, using: Double, result: inout V)](vdsp/linearinterpolate(_:_:using:result:)-6o7a9.md)
+- [static func linearInterpolate<T, U, V>(T, U, using: Double, result: inout V)](./linearinterpolate%28_,_,using,result%29-6o7a9.md)
   Calculates the linear interpolation between the supplied double-precision vectors.
-- [static func linearInterpolate<T, U, V>(T, U, using: Float, result: inout V)](vdsp/linearinterpolate(_:_:using:result:)-55avl.md)
+- [static func linearInterpolate<T, U, V>(T, U, using: Float, result: inout V)](./linearinterpolate%28_,_,using,result%29-55avl.md)
   Calculates the linear interpolation between the supplied single-precision vectors.
 
 

@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.SortOrder.descending
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descending search.
 

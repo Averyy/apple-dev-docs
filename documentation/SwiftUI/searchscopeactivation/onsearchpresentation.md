@@ -1,7 +1,8 @@
 # onSearchPresentation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An activation where the system shows search scopes after presenting search and hides search scopes after search cancellation.
 
@@ -21,13 +22,14 @@ static var onSearchPresentation: SearchScopeActivation { get }
 
 ## Mentions
 
-- [Scoping a search operation](scoping-a-search-operation.md)
+- [Scoping a search operation](../scoping-a-search-operation.md)
 
 ## See Also
 
-- [static var automatic: SearchScopeActivation](searchscopeactivation/automatic.md)
+### Getting search scope activiation types
+- [static var automatic: SearchScopeActivation](./automatic.md)
   The automatic activation of the scope bar.
-- [static var onTextEntry: SearchScopeActivation](searchscopeactivation/ontextentry.md)
+- [static var onTextEntry: SearchScopeActivation](./ontextentry.md)
   An activation where the system shows search scopes when typing begins in the search field and hides search scopes after search cancellation.
 
 

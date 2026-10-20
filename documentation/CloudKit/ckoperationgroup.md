@@ -1,7 +1,8 @@
 # CKOperationGroup
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An explicit association between two or more operations.
 
@@ -20,6 +21,10 @@ An explicit association between two or more operations.
 class CKOperationGroup
 ```
 
+```objc
+@interface CKOperationGroup : NSObject
+```
+
 #### Overview
 
 In certain situations, you might want to perform several CloudKit operations together. Grouping operations in CloudKit doesn’t ensure atomicity.
@@ -30,53 +35,54 @@ For example, when building a Calendar app, you group the following actions:
 - Perform incremental fetches of records in response to a push notification.
 - Update several records when the user saves a calendar event.
 
-Associate operation groups with operations by setting their [`group`](ckoperation/group.md) property. Create a new operation group for each distinct user interaction.
+Associate operation groups with operations by setting their [`group`](./ckoperation/group.md) property. Create a new operation group for each distinct user interaction.
 
 ## Topics
 
 ### Creating an Operation Group
-- [init()](ckoperationgroup/init.md)
+- [init()](./ckoperationgroup/init%28%29.md)
   Creates an operation group.
-- [init(coder: NSCoder)](ckoperationgroup/init(coder:).md)
+- [init(coder: NSCoder)](./ckoperationgroup/init%28coder%29.md)
   Creates an operation group from a serialized instance.
 ### Configuring an Operation Group
-- [var defaultConfiguration: CKOperation.Configuration!](ckoperationgroup/defaultconfiguration.md)
+- [var defaultConfiguration: CKOperation.Configuration!](./ckoperationgroup/defaultconfiguration.md)
   The default configuration for operations in the group.
-- [var expectedReceiveSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedreceivesize.md)
+- [var expectedReceiveSize: CKOperationGroup.TransferSize](./ckoperationgroup/expectedreceivesize.md)
   The estimated size of traffic to download from CloudKit.
-- [var expectedSendSize: CKOperationGroup.TransferSize](ckoperationgroup/expectedsendsize.md)
+- [var expectedSendSize: CKOperationGroup.TransferSize](./ckoperationgroup/expectedsendsize.md)
   The estimated size of traffic to upload to CloudKit.
-- [var name: String?](ckoperationgroup/name.md)
+- [var name: String?](./ckoperationgroup/name.md)
   The operation group’s name.
-- [var operationGroupID: String](ckoperationgroup/operationgroupid.md)
+- [var operationGroupID: String](./ckoperationgroup/operationgroupid.md)
   The operation group’s unique identifier.
-- [var quantity: Int](ckoperationgroup/quantity.md)
+- [var quantity: Int](./ckoperationgroup/quantity.md)
   The number of operations in the operation group.
-- [CKOperationGroup.TransferSize](ckoperationgroup/transfersize.md)
+- [CKOperationGroup.TransferSize](./ckoperationgroup/transfersize.md)
   Constants that represent possible data transfer sizes.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKContainer](ckcontainer.md)
+### Core objects
+- [class CKContainer](./ckcontainer.md)
   A conduit to your app’s databases.
-- [class CKDatabase](ckdatabase.md)
+- [class CKDatabase](./ckdatabase.md)
   An object that represents a collection of record zones and subscriptions.
 
 

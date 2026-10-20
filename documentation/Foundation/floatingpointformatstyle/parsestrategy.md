@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parse strategy that this format style uses.
 
@@ -20,9 +21,12 @@ The parse strategy that this format style uses.
 var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>> { get }
 ```
 
+Available when `Value` conforms to `BinaryFloatingPoint`.
+
 ## See Also
 
-- [struct FloatingPointParseStrategy](floatingpointparsestrategy.md)
+### Parsing floating-point numbers
+- [struct FloatingPointParseStrategy](../floatingpointparsestrategy.md)
   A parse strategy for creating floating-point values from formatted strings.
 
 

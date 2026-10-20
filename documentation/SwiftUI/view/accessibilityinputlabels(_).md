@@ -1,7 +1,8 @@
 # accessibilityInputLabels(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets alternate input labels with which users identify a view.
 
@@ -21,6 +22,18 @@ nonisolated
 func accessibilityInputLabels(_ inputLabelKeys: [LocalizedStringKey]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityInputLabels(_ inputLabels: [Text]) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+```
+
+```swift
+nonisolated
+func accessibilityInputLabels<S>(_ inputLabels: [S]) -> ModifiedContent<Self, AccessibilityAttachmentModifier> where S : StringProtocol
+```
+
 #### Discussion
 
 Provide labels in descending order of importance. Voice Control and Full Keyboard Access use the input labels.
@@ -29,17 +42,18 @@ Provide labels in descending order of importance. Voice Control and Full Keyboar
 
 ## See Also
 
-- [func accessibilityLabel(_:)](view/accessibilitylabel(_:).md)
+### Applying labels
+- [func accessibilityLabel(_:)](./accessibilitylabel%28_%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityLabel(_:isEnabled:)](view/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityLabel<V>(content: (PlaceholderContentView<Self>) -> V) -> some View](view/accessibilitylabel(content:).md)
+- [func accessibilityLabel<V>(content: (PlaceholderContentView<Self>) -> V) -> some View](./accessibilitylabel%28content%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityInputLabels(_:isEnabled:)](view/accessibilityinputlabels(_:isenabled:).md)
+- [func accessibilityInputLabels(_:isEnabled:)](./accessibilityinputlabels%28_,isenabled%29.md)
   Sets alternate input labels with which users identify a view.
-- [func accessibilityLabeledPair<ID>(role: AccessibilityLabeledPairRole, id: ID, in: Namespace.ID) -> some View](view/accessibilitylabeledpair(role:id:in:).md)
+- [func accessibilityLabeledPair<ID>(role: AccessibilityLabeledPairRole, id: ID, in: Namespace.ID) -> some View](./accessibilitylabeledpair%28role,id,in%29.md)
   Pairs an accessibility element representing a label with the element for the matching content.
-- [enum AccessibilityLabeledPairRole](accessibilitylabeledpairrole.md)
+- [enum AccessibilityLabeledPairRole](../accessibilitylabeledpairrole.md)
   The role of an accessibility element in a label / content pair.
 
 

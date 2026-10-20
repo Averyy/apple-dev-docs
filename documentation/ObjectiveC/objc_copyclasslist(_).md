@@ -1,7 +1,8 @@
 # objc_copyClassList(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates and returns a list of pointers to all registered class definitions.
 
@@ -20,6 +21,10 @@ Creates and returns a list of pointers to all registered class definitions.
 func objc_copyClassList(_ outCount: UnsafeMutablePointer<UInt32>?) -> AutoreleasingUnsafeMutablePointer<AnyClass>?
 ```
 
+```c
+extern Class*objc_copyClassList(unsigned int *outCount);
+```
+
 #### Return Value
 
 A `nil` terminated array of classes. You must free the array with `free()`.
@@ -30,15 +35,16 @@ A `nil` terminated array of classes. You must free the array with `free()`.
 
 ## See Also
 
-- [func objc_getClassList(AutoreleasingUnsafeMutablePointer<AnyClass>?, Int32) -> Int32](objc_getclasslist(_:_:).md)
+### Obtaining Class Definitions
+- [func objc_getClassList(AutoreleasingUnsafeMutablePointer<AnyClass>?, Int32) -> Int32](./objc_getclasslist%28_,_%29.md)
   Obtains the list of registered class definitions.
-- [func objc_lookUpClass(UnsafePointer<CChar>) -> AnyClass?](objc_lookupclass(_:).md)
+- [func objc_lookUpClass(UnsafePointer<CChar>) -> AnyClass?](./objc_lookupclass%28_%29.md)
   Returns the class definition of a specified class.
-- [func objc_getClass(UnsafePointer<CChar>) -> Any!](objc_getclass(_:).md)
+- [func objc_getClass(UnsafePointer<CChar>) -> Any!](./objc_getclass%28_%29.md)
   Returns the class definition of a specified class.
-- [func objc_getRequiredClass(UnsafePointer<CChar>) -> AnyClass](objc_getrequiredclass(_:).md)
+- [func objc_getRequiredClass(UnsafePointer<CChar>) -> AnyClass](./objc_getrequiredclass%28_%29.md)
   Returns the class definition of a specified class.
-- [func objc_getMetaClass(UnsafePointer<CChar>) -> Any!](objc_getmetaclass(_:).md)
+- [func objc_getMetaClass(UnsafePointer<CChar>) -> Any!](./objc_getmetaclass%28_%29.md)
   Returns the metaclass definition of a specified class.
 
 

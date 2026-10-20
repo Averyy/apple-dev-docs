@@ -1,17 +1,22 @@
 # init(rect:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new Bézier path object initialized with a rectangular path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(rect: NSRect)
+```
+
+```objc
++ (NSBezierPath *) bezierPathWithRect:(NSRect) rect;
 ```
 
 #### Return Value
@@ -28,20 +33,22 @@ The path is constructed by starting at the origin of `aRect` and adding line seg
 
 ## See Also
 
-- [class func fill(NSRect)](nsbezierpath/fill(_:).md)
+### Related Documentation
+- [class func fill(NSRect)](./fill%28_%29.md)
   Fills the specified rectangular path with the current fill color.
-- [class func stroke(NSRect)](nsbezierpath/stroke(_:).md)
+- [class func stroke(NSRect)](./stroke%28_%29.md)
   Strokes the path of the specified rectangle using the current stroke color and the default drawing attributes.
-- [func appendRect(NSRect)](nsbezierpath/appendrect(_:).md)
+- [func appendRect(NSRect)](./appendrect%28_%29.md)
   Appends a rectangular path to the path.
-- [init(ovalIn: NSRect)](nsbezierpath/init(ovalin:).md)
+### Creating a Bézier Path
+- [init(ovalIn: NSRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.
-- [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
+- [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](./init%28roundedrect,xradius,yradius%29.md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
-- [var flattened: NSBezierPath](nsbezierpath/flattened.md)
+- [init(cgPath: CGPath)](./init%28cgpath%29-96cxk.md)
+- [var flattened: NSBezierPath](./flattened.md)
   A flattened version of the path object.
-- [var reversed: NSBezierPath](nsbezierpath/reversed.md)
+- [var reversed: NSBezierPath](./reversed.md)
   A path containing the reversed contents of the current path object.
 
 

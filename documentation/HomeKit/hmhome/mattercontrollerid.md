@@ -1,7 +1,8 @@
 # matterControllerID
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,9 +18,14 @@
 var matterControllerID: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * matterControllerID;
+```
+
 ## See Also
 
-- [var matterControllerXPCConnectBlock: () -> NSXPCConnection](hmhome/mattercontrollerxpcconnectblock.md)
+### Instance Properties
+- [var matterControllerXPCConnectBlock: () -> NSXPCConnection](./mattercontrollerxpcconnectblock.md)
 
 
 ---

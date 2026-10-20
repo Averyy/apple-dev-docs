@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Publishes a service and any of its associated characteristics and characteristic descriptors to the local GATT database.
 
@@ -20,9 +21,13 @@ Publishes a service and any of its associated characteristics and characteristic
 func add(_ service: CBMutableService)
 ```
 
+```objc
+- (void) addService:(CBMutableService *) service;
+```
+
 #### Discussion
 
-When you add a service to the database, the peripheral manager calls the [`peripheralManager(_:didAdd:error:)`](cbperipheralmanagerdelegate/peripheralmanager(_:didadd:error:).md) method of its delegate object. If the service contains any included services, you must first publish them.
+When you add a service to the database, the peripheral manager calls the [`peripheralManager(_:didAdd:error:)`](../cbperipheralmanagerdelegate/peripheralmanager%28_,didadd,error%29.md) method of its delegate object. If the service contains any included services, you must first publish them.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ When you add a service to the database, the peripheral manager calls the [`perip
 
 ## See Also
 
-- [func remove(CBMutableService)](cbperipheralmanager/remove(_:).md)
+### Adding and Removing Services
+- [func remove(CBMutableService)](./remove%28_%29.md)
   Removes a specified published service from the local GATT database.
-- [func removeAllServices()](cbperipheralmanager/removeallservices.md)
+- [func removeAllServices()](./removeallservices%28%29.md)
   Removes all published services from the local GATT database.
 
 

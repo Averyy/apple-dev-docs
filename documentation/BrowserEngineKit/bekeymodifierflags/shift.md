@@ -1,7 +1,8 @@
 # BEKeyModifierFlags.shift
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flag that indicates that the Shift key is depressed.
 
@@ -17,11 +18,16 @@ A flag that indicates that the Shift key is depressed.
 case shift
 ```
 
+```c
+BEKeyModifierFlagShift
+```
+
 ## See Also
 
-- [BEKeyModifierFlags.capsLock](bekeymodifierflags/capslock.md)
+### Getting caps-shift information
+- [BEKeyModifierFlags.capsLock](./capslock.md)
   A flag that indicates that the Caps Lock key is engaged.
-- [BEKeyModifierFlags.none](bekeymodifierflags/none.md)
+- [BEKeyModifierFlags.none](./none.md)
   A flag that indicates no active key modifiers.
 
 

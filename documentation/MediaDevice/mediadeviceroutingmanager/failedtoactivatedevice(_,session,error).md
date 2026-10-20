@@ -1,7 +1,8 @@
 # failedToActivateDevice(_:session:error:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports a device activation failure to the system so it can inform the user and clean up the session.
 
@@ -19,7 +20,7 @@ final func failedToActivateDevice(_ device: MediaOutputDevice, session: MediaOut
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Discussion
 

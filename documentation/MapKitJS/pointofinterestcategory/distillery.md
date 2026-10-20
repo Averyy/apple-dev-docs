@@ -1,7 +1,8 @@
 # Distillery
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for distilleries.
 
@@ -10,7 +11,7 @@ The point-of-interest category for distilleries.
 
 ## Declaration
 
-```swift
+```
 readonly Distillery: "Distillery";
 ```
 

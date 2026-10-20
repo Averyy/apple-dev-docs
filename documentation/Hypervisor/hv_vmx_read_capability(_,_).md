@@ -1,7 +1,8 @@
 # hv_vmx_read_capability(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns, by reference, the VMX virtualization capabilities of the host processor.
 
@@ -14,9 +15,13 @@ Returns, by reference, the VMX virtualization capabilities of the host processor
 func hv_vmx_read_capability(_ field: hv_vmx_capability_t, _ value: UnsafeMutablePointer<UInt64>) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vmx_read_capability(hv_vmx_capability_t field, uint64_t *value);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -24,20 +29,21 @@ func hv_vmx_read_capability(_ field: hv_vmx_capability_t, _ value: UnsafeMutable
 
 ## Parameters
 
-- `field`: The capability of the host processor to return. For a list of field IDs, see [`hv_vmx_capability_t`](hv_vmx_capability_t.md).
+- `field`: The capability of the host processor to return. For a list of field IDs, see [`hv_vmx_capability_t`](./hv_vmx_capability_t.md).
 - `value`: The value of the capability `field`, on output. For a list of possible values, see `VMX Capability Field Values`.
 
 ## See Also
 
-- [func hv_vmx_get_msr_info(hv_vmx_msr_info_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vmx_get_msr_info(_:_:).md)
+### Capabilities
+- [func hv_vmx_get_msr_info(hv_vmx_msr_info_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](./hv_vmx_get_msr_info%28_,_%29.md)
   Returns information about guest MSR configuration.
-- [struct hv_vmx_capability_t](hv_vmx_capability_t.md)
+- [struct hv_vmx_capability_t](./hv_vmx_capability_t.md)
   The type that describes Virtual Machine Extensions (VMX) capability fields.
-- [VMX Capabilities](1469645-vmx-capabilities.md)
+- [VMX Capabilities](./api-1469645-vmx-capabilities.md)
   An enumeration that represents the available VMX capabilities.
-- [typealias hv_vmx_msr_info_t](hv_vmx_msr_info_t.md)
+- [typealias hv_vmx_msr_info_t](./hv_vmx_msr_info_t.md)
   The type that describes Move to Status Register (MSR) information fields.
-- [MSR Information Fields](3567084-msr-information-fields.md)
+- [MSR Information Fields](./api-3567084-msr-information-fields.md)
   The type that describes Machine Specific Register (MSR) fields.
 
 

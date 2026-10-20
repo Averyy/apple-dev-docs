@@ -1,17 +1,18 @@
 # SCDynamicStoreCallBack
 
 **Framework**: System Configuration  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Callback used when notification of changes made to the dynamic store is delivered.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,26 @@ Callback used when notification of changes made to the dynamic store is delivere
 typealias SCDynamicStoreCallBack = (SCDynamicStore, CFArray, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const struct __SCDynamicStore *, const struct __CFArray *, void *) SCDynamicStoreCallBack;
+```
+
 ## Topics
 
 ### Fields
-- [store](1807875-store.md)
+- [store](./api-1807875-store.md)
   The dynamic store session.
-- [changedKeys](1807876-changedkeys.md)
+- [changedKeys](./api-1807876-changedkeys.md)
   The list of changed keys.
-- [info](1807877-info.md)
+- [info](./api-1807877-info.md)
   A C pointer to a user-specified block of data.
 
 ## See Also
 
-- [struct SCDynamicStoreContext](scdynamicstorecontext.md)
+### Data Types
+- [struct SCDynamicStoreContext](./scdynamicstorecontext.md)
   Structure containing user-specified data and callbacks for a dynamic store session.
-- [class SCDynamicStore](scdynamicstore.md)
+- [class SCDynamicStore](./scdynamicstore.md)
   The handle to an open dynamic store session with the system configuration daemon.
 
 

@@ -1,7 +1,8 @@
 # PHASEMedium
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A property or quality of the environment that affects how sound travels.
 
@@ -19,45 +20,50 @@ A property or quality of the environment that affects how sound travels.
 class PHASEMedium
 ```
 
+```objc
+@interface PHASEMedium : NSObject
+```
+
 #### Overview
 
-This class defines choices for the engine’s [`defaultMedium`](phaseengine/defaultmedium.md). Currently, this property provides only sound traveling through air.
+This class defines choices for the engine’s [`defaultMedium`](./phaseengine/defaultmedium.md). Currently, this property provides only sound traveling through air.
 
 ## Topics
 
 ### Creating a Medium
-- [init(engine: PHASEEngine, preset: PHASEMedium.Preset)](phasemedium/init(engine:preset:).md)
+- [init(engine: PHASEEngine, preset: PHASEMedium.Preset)](./phasemedium/init%28engine,preset%29.md)
   Creates a medium.
-- [PHASEMedium.Preset](phasemedium/preset.md)
+- [PHASEMedium.Preset](./phasemedium/preset.md)
   Predetermined qualities of an environment that affect how sound transmits.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEEngine](phaseengine.md)
+### Setup
+- [class PHASEEngine](./phaseengine.md)
   An object that manages audio assets, controls playback, and configures environmental effects.
-- [PHASEEngine.UpdateMode](phaseengine/updatemode.md)
+- [PHASEEngine.UpdateMode](./phaseengine/updatemode.md)
   Modes that determine when the framework consumes API calls and updates internal state.
-- [PHASEEngine.RenderingMode](phaseengine/renderingmode.md)
+- [PHASEEngine.RenderingMode](./phaseengine/renderingmode.md)
   Modes that determine whether the system renders audio in process or out of process.
-- [class PHASEAssetRegistry](phaseassetregistry.md)
+- [class PHASEAssetRegistry](./phaseassetregistry.md)
   A central repository of audio assets.
-- [enum PHASENormalizationMode](phasenormalizationmode.md)
+- [enum PHASENormalizationMode](./phasenormalizationmode.md)
   Options that determine whether the framework adjusts a sound asset’s loudness for the user’s output device.
-- [enum PHASESpatializationMode](phasespatializationmode.md)
+- [enum PHASESpatializationMode](./phasespatializationmode.md)
   The manner in which PHASE outputs spatial audio.
-- [enum PHASEReverbPreset](phasereverbpreset.md)
+- [enum PHASEReverbPreset](./phasereverbpreset.md)
   The manner in which PHASE diffuses resonating sound.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the data object to be acted upon.
@@ -10,13 +11,17 @@ Returns the data object to be acted upon.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any?
+```
+
+```objc
+- (id) activityViewController:(UIActivityViewController *) activityViewController itemForActivityType:(UIActivityType) activityType;
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ This method returns the actual data object to be acted on by an activity object.
 
 ## See Also
 
-- [func activityViewControllerPlaceholderItem(UIActivityViewController) -> Any](uiactivityitemsource/activityviewcontrollerplaceholderitem(_:).md)
+### Getting the data items
+- [func activityViewControllerPlaceholderItem(UIActivityViewController) -> Any](./activityviewcontrollerplaceholderitem%28_%29.md)
   Returns the placeholder object for the data.
 
 

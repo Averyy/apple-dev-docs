@@ -1,7 +1,8 @@
 # BundleIdCapabilityCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object BundleIdCapabilityCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId](bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.md)
+- [object BundleIdCapabilityCreateRequest.Data.Relationships.BundleId](./relationships-data.dictionary/bundleid-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -26,7 +27,8 @@ object BundleIdCapabilityCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object BundleIdCapabilityCreateRequest.Data.Attributes](bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object BundleIdCapabilityCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

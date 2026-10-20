@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Given a proposed size, returns the preferred size of the composite view.
@@ -29,6 +30,12 @@ This method may be called more than once with different proposed sizes during th
 - `proposal`: The proposed size for the view controller.
 - `nsViewController`: Your custom view controller object.
 - `context`: A context structure containing information about the current state of the system.
+
+## Default Implementations
+
+### NSViewControllerRepresentable Implementations
+- [func sizeThatFits(ProposedViewSize, nsViewController: Self.NSViewControllerType, context: Self.Context) -> CGSize?](./sizethatfits%28_,nsviewcontroller,context%29-52cs0.md)
+  Given a proposed size, returns the preferred size of the composite view.
 
 
 ---

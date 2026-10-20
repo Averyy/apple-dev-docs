@@ -1,6 +1,7 @@
 # Performing Fourier Transforms on Multiple Signals
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
 
@@ -49,7 +50,7 @@ static func makeCompositeSineWave(from frequencyAmplitudePairs: [(f: Float,
 }
 ```
 
-##### Perform Fft on Multiple Real Signals
+##### Perform FFT on Multiple Real Signals
 
 The vDSP multiple-signal FFT functions accept multiple signals concatenated together. The following code creates a single 1024 element array from four separate composite sine waves:
 
@@ -79,11 +80,11 @@ let signal: [Float] = {
 
 The following image is a visualization of the values in `signal`:
 
-![A diagram showing four composite sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 elements.](/images/com.apple.accelerate/media-3706066@2x.png)
+![A diagram showing four composite sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 elements.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3706066@2x.png)
 
 The vDSP FFT and DFT functions work with data in split-complex format. Split-complex format stores the real and imaginary parts of complex numbers in the corresponding elements of two separate arrays.
 
-Use the [`vDSP_ctoz`](https://developer.apple.com/documentation/kernel/1579975-vdsp_ctoz) function to convert the real values in the signal array to split-complex format. The [`vDSP_ctoz`](https://developer.apple.com/documentation/kernel/1579975-vdsp_ctoz) function transforms the real values so that the real array contains even elements, and the imaginary array contains odd elements.
+Use the [`vDSP_ctoz`](../kernel/api-1579975-vdsp_ctoz.md) function to convert the real values in the signal array to split-complex format. The [`vDSP_ctoz`](../kernel/api-1579975-vdsp_ctoz.md) function transforms the real values so that the real array contains even elements, and the imaginary array contains odd elements.
 
 **Swift**:
 
@@ -131,7 +132,7 @@ vDSP_ctoz((DSPComplex *)signal, 2,
           complexValuesCount);
 ```
 
-The [`vDSP_fftm_zrip`](vdsp_fftm_zrip.md) function performs the FFT. Create a [`DSPSplitComplex`](dspsplitcomplex.md) structure that acts as a mediatory between the real and imaginary arrays and the FFT function. The third parameter to [`vDSP_fftm_zrip`](vdsp_fftm_zrip.md) (the stride between the individual signals) is measured in complex elements.
+The [`vDSP_fftm_zrip`](./vdsp_fftm_zrip.md) function performs the FFT. Create a [`DSPSplitComplex`](./dspsplitcomplex.md) structure that acts as a mediatory between the real and imaginary arrays and the FFT function. The third parameter to [`vDSP_fftm_zrip`](./vdsp_fftm_zrip.md) (the stride between the individual signals) is measured in complex elements.
 
 **Swift**:
 
@@ -183,7 +184,7 @@ if (fft) {
 }
 ```
 
-On return, `complexReals` and `complexImaginaries` contain the frequency-domain representation of the four real signals. Call [`squareMagnitudes(_:result:)`](vdsp/squaremagnitudes(_:result:)-22k5h.md) to compute the energy at each frequency.
+On return, `complexReals` and `complexImaginaries` contain the frequency-domain representation of the four real signals. Call [`squareMagnitudes(_:result:)`](./vdsp/squaremagnitudes%28_,result%29-22k5h.md) to compute the energy at each frequency.
 
 ```swift
 let magnitudes = [Float](unsafeUninitializedCapacity: complexValuesCount) {
@@ -225,7 +226,7 @@ for i in 0 ..< signalCount {
 }
 ```
 
-##### Perform Fft on Multiple Complex Signals
+##### Perform FFT on Multiple Complex Signals
 
 A complex signal contains two real signals, one in the real parts and one in the imaginary parts. The following code creates two 1024-element arrays that contain the real and imaginary parts of four 256-element complex signals:
 
@@ -267,9 +268,9 @@ var imaginarySignal: [Float] = {
 
 The following image is a visualization of the values in `realSignal` as a solid line and the values in `imaginarySignal` as a dashed line:
 
-![A diagram showing four composite, complex sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 complex elements.](/images/com.apple.accelerate/media-3706065@2x.png)
+![A diagram showing four composite, complex sine waves each represented by 256 elements. The four sine waves are concatenated together to form a single multiple-signal collection that contains 1024 complex elements.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3706065@2x.png)
 
-The [`vDSP_fftm_zip`](vdsp_fftm_zip.md) function performs the FFT in-place on the real and imaginary arrays.
+The [`vDSP_fftm_zip`](./vdsp_fftm_zip.md) function performs the FFT in-place on the real and imaginary arrays.
 
 **Swift**:
 
@@ -322,7 +323,7 @@ if (fft2) {
 }
 ```
 
-On return, `realSignal` and `imaginarySignal` contain the frequency-domain representation of the four complex signals. Call [`squareMagnitudes(_:result:)`](vdsp/squaremagnitudes(_:result:)-22k5h.md) to compute the energy at each frequency.
+On return, `realSignal` and `imaginarySignal` contain the frequency-domain representation of the four complex signals. Call [`squareMagnitudes(_:result:)`](./vdsp/squaremagnitudes%28_,result%29-22k5h.md) to compute the energy at each frequency.
 
 ```swift
 let magnitudesCount = complexValuesCount * signalCount
@@ -367,23 +368,24 @@ for i in 0 ..< signalCount {
 
 ## See Also
 
-- [Understanding data packing for Fourier transforms](understanding-data-packing-for-fourier-transforms.md)
+### Fourier and Cosine Transforms
+- [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
   Format source data for the vDSP Fourier functions, and interpret the results.
-- [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
+- [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md)
   Use 1D fast Fourier transform to compute the frequency components of a signal.
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
   Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [Signal extraction from noise](signal-extraction-from-noise.md)
+- [Signal extraction from noise](./signal-extraction-from-noise.md)
   Use Accelerate’s discrete cosine transform to remove noise from a signal.
-- [Halftone descreening with 2D fast Fourier transform](halftone-descreening-with-2d-fast-fourier-transform.md)
+- [Halftone descreening with 2D fast Fourier transform](./halftone-descreening-with-2d-fast-fourier-transform.md)
   Reduce or remove periodic artifacts from images.
-- [Fast Fourier transforms](fast-fourier-transforms.md)
+- [Fast Fourier transforms](./fast-fourier-transforms.md)
   Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Fourier transforms](discrete-fourier-transforms.md)
+- [Discrete Fourier transforms](./discrete-fourier-transforms.md)
   Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

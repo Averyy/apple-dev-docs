@@ -1,20 +1,62 @@
 # init(_:for:contentType:prepareDocument:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- visionOS 2.0+
+- iOS 18.0+ - Deprecated in 27.2
+- iPadOS 18.0+ - Deprecated in 27.2
+- Mac Catalyst 18.0+ - Deprecated in 27.2
+- macOS 15.0+ - Deprecated in 27.2
+- visionOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Conform your document type to ReadableDocument instead.
 
 ## Declaration
 
 ```swift
 @export(implementation)
 nonisolated init<D>(_ title: LocalizedStringResource, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : FileDocument
+```
+
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init<D>(_ title: LocalizedStringResource, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : ReferenceFileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ label: Text? = nil, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : FileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ label: Text? = nil, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : ReferenceFileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ title: LocalizedStringKey, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : FileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ title: LocalizedStringKey, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : ReferenceFileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ title: some StringProtocol, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : FileDocument
+```
+
+```swift
+nonisolated
+init<D>(_ title: some StringProtocol, for documentType: D.Type = D.self, contentType: UTType? = nil, prepareDocument: @escaping () async throws -> D? = { nil }) where D : ReferenceFileDocument
 ```
 
 ## Parameters

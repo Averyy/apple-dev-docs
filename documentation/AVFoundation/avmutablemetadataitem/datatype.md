@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the metadata item’s value.
 
@@ -20,19 +21,24 @@ The data type of the metadata item’s value.
 var dataType: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * dataType;
+```
+
 ## See Also
 
-- [var value: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/value.md)
+### Accessing values
+- [var value: (any NSCopying & NSObjectProtocol)?](./value.md)
   The value for the mutable metadata item.
-- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmutablemetadataitem/extraattributes.md)
+- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](./extraattributes.md)
   A dictionary of additional attributes for a metadata item.
-- [var stringValue: String?](avmutablemetadataitem/stringvalue.md)
+- [var stringValue: String?](./stringvalue.md)
   The value of the metadata item as a string.
-- [var numberValue: NSNumber?](avmutablemetadataitem/numbervalue.md)
+- [var numberValue: NSNumber?](./numbervalue.md)
   The value of the metadata item as a number.
-- [var dateValue: Date?](avmutablemetadataitem/datevalue.md)
+- [var dateValue: Date?](./datevalue.md)
   The value of the metadata item as a date.
-- [var dataValue: Data?](avmutablemetadataitem/datavalue.md)
+- [var dataValue: Data?](./datavalue.md)
   The value of the metadata item as a data value.
 
 

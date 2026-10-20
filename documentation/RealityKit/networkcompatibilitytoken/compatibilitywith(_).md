@@ -1,7 +1,8 @@
 # compatibilityWith(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares network compatibility tokens between the local device and another device.
 
@@ -10,7 +11,7 @@ Compares network compatibility tokens between the local device and another devic
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
 - macOS 10.15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ final func compatibilityWith(_ otherToken: NetworkCompatibilityToken) -> Network
 
 #### Return Value
 
-Returns [`NetworkCompatibilityToken.Compatibility.compatible`](networkcompatibilitytoken/compatibility/compatible.md) if the local client and the remote client represented by `otherToken` can be synced. Any other result indicates that the two devices are incompatible and you shouldn’t proceed with the connection.
+Returns [`NetworkCompatibilityToken.Compatibility.compatible`](./compatibility/compatible.md) if the local client and the remote client represented by `otherToken` can be synced. Any other result indicates that the two devices are incompatible and you shouldn’t proceed with the connection.
 
 ## Parameters
 

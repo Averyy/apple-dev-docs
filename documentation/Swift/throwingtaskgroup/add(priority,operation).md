@@ -1,7 +1,8 @@
 # add(priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,14 +19,17 @@
 mutating func add(priority: TaskPriority? = nil, operation: @escaping @Sendable () async throws -> ChildTaskResult) async -> Bool
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [func async(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/async(priority:operation:).md)
-- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/asyncunlesscancelled(priority:operation:).md)
-- [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
-- [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/spawn(priority:operation:).md)
-- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/spawnunlesscancelled(priority:operation:).md)
-- [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
+### Deprecated
+- [func async(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](./async%28priority,operation%29.md)
+- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](./asyncunlesscancelled%28priority,operation%29.md)
+- [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](./nextresult%28isolation%29.md)
+- [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](./spawn%28priority,operation%29.md)
+- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](./spawnunlesscancelled%28priority,operation%29.md)
+- [func waitForAll(isolation: isolated (any Actor)?) async throws](./waitforall%28isolation%29.md)
 
 
 ---

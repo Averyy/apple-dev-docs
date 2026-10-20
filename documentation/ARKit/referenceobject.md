@@ -1,7 +1,8 @@
 # ReferenceObject
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object the framework can track.
 
@@ -17,60 +18,61 @@ struct ReferenceObject
 ## Topics
 
 ### Creating reference objects
-- [init(from: URL) async throws](referenceobject/init(from:).md)
+- [init(from: URL) async throws](./referenceobject/init%28from%29.md)
   Creates a reference object from a URL you provide.
-- [init(named: String, from: Bundle?) async throws](referenceobject/init(named:from:).md)
+- [init(named: String, from: Bundle?) async throws](./referenceobject/init%28named,from%29.md)
   Creates a reference object from a bundle.
-- [init(from: URL, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(from:configuration:).md)
+- [init(from: URL, configuration: ReferenceObject.Configuration) async throws](./referenceobject/init%28from,configuration%29.md)
   Initializes a reference object from a URL, with reference object configuration.
-- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(named:from:configuration:).md)
+- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](./referenceobject/init%28named,from,configuration%29.md)
   Initializes a reference object from a bundle, with reference object configuration.
 ### Inspecting a reference object
-- [var id: UUID](referenceobject/id-swift.property.md)
+- [var id: UUID](./referenceobject/id-swift.property.md)
   The unique identifier of this reference object.
-- [ReferenceObject.ID](referenceobject/id-swift.typealias.md)
+- [ReferenceObject.ID](./referenceobject/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
-- [var inputFile: URL?](referenceobject/inputfile.md)
+- [var inputFile: URL?](./referenceobject/inputfile.md)
   The input file the framework uses for loading a reference object.
-- [var usdzFile: URL?](referenceobject/usdzfile.md)
+- [var usdzFile: URL?](./referenceobject/usdzfile.md)
   The trained USDZ file, if the reference object includes one.
-- [var name: String](referenceobject/name.md)
+- [var name: String](./referenceobject/name.md)
   The name of a reference object.
-- [var description: String](referenceobject/description.md)
+- [var description: String](./referenceobject/description.md)
   A textual representation of this reference object.
 ### Structures
-- [ReferenceObject.Configuration](referenceobject/configuration.md)
+- [ReferenceObject.Configuration](./referenceobject/configuration.md)
   Defines a configuration for an individual reference object.
 ### Operators
-- [static func == (ReferenceObject, ReferenceObject) -> Bool](referenceobject/==(_:_:).md)
+- [static func == (ReferenceObject, ReferenceObject) -> Bool](./referenceobject/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two reference objects are equal.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var boundingBox: ObjectAnchor.AxisAlignedBoundingBox](objectanchor/boundingbox.md)
+### Inspecting an object anchor
+- [var boundingBox: ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/boundingbox.md)
   The bounding box of an anchor.
-- [ObjectAnchor.AxisAlignedBoundingBox](objectanchor/axisalignedboundingbox.md)
+- [ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](objectanchor/description.md)
+- [var description: String](./objectanchor/description.md)
   A textual representation of this anchor.
-- [var isTracked: Bool](objectanchor/istracked.md)
+- [var isTracked: Bool](./objectanchor/istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
-- [var originFromAnchorTransform: simd_float4x4](objectanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./objectanchor/originfromanchortransform.md)
   The transform from the object anchor to the origin coordinate system.
-- [var referenceObject: ReferenceObject](objectanchor/referenceobject.md)
+- [var referenceObject: ReferenceObject](./objectanchor/referenceobject.md)
   The reference object that an anchor corresponds to.
-- [var inputFile: URL?](referenceobject/inputfile.md)
+- [var inputFile: URL?](./referenceobject/inputfile.md)
   The input file the framework uses for loading a reference object.
-- [var usdzFile: URL?](referenceobject/usdzfile.md)
+- [var usdzFile: URL?](./referenceobject/usdzfile.md)
   The trained USDZ file, if the reference object includes one.
 
 

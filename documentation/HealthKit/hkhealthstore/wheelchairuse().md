@@ -1,7 +1,8 @@
 # wheelchairUse()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads the user’s wheelchair use from the HealthKit store.
 
@@ -19,33 +20,38 @@ Reads the user’s wheelchair use from the HealthKit store.
 func wheelchairUse() throws -> HKWheelchairUseObject
 ```
 
+```objc
+- (HKWheelchairUseObject *) wheelchairUseWithError:(NSError **) error;
+```
+
 #### Return Value
 
 An object indicating whether the user uses a wheelchair.
 
 #### Discussion
 
-If the user has not yet specified their wheelchair use, or if the user has denied your app permission to read the wheelchair use, this method returns [`HKWheelchairUse.notSet`](hkwheelchairuse/notset.md).
+If the user has not yet specified their wheelchair use, or if the user has denied your app permission to read the wheelchair use, this method returns [`HKWheelchairUse.notSet`](../hkwheelchairuse/notset.md).
 
 ## Topics
 
 ### Possible Values
-- [class HKWheelchairUseObject](hkwheelchairuseobject.md)
+- [class HKWheelchairUseObject](../hkwheelchairuseobject.md)
   This class acts as a wrapper for the wheelchair use enumeration.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](../hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 ## See Also
 
-- [func biologicalSex() throws -> HKBiologicalSexObject](hkhealthstore/biologicalsex.md)
+### Reading characteristic data
+- [func biologicalSex() throws -> HKBiologicalSexObject](./biologicalsex%28%29.md)
   Reads someone’s biological sex from the HealthKit store.
-- [func bloodType() throws -> HKBloodTypeObject](hkhealthstore/bloodtype.md)
+- [func bloodType() throws -> HKBloodTypeObject](./bloodtype%28%29.md)
   Reads the user’s blood type from the HealthKit store.
-- [func dateOfBirth() throws -> Date](hkhealthstore/dateofbirth.md)
+- [func dateOfBirth() throws -> Date](./dateofbirth%28%29.md)
   Reads the user’s date of birth from the HealthKit store as a date value.
-- [func dateOfBirthComponents() throws -> DateComponents](hkhealthstore/dateofbirthcomponents.md)
+- [func dateOfBirthComponents() throws -> DateComponents](./dateofbirthcomponents%28%29.md)
   Reads the user’s date of birth from the HealthKit store as date components.
-- [func fitzpatrickSkinType() throws -> HKFitzpatrickSkinTypeObject](hkhealthstore/fitzpatrickskintype.md)
+- [func fitzpatrickSkinType() throws -> HKFitzpatrickSkinTypeObject](./fitzpatrickskintype%28%29.md)
   Reads the user’s Fitzpatrick Skin Type from the HealthKit store.
 
 

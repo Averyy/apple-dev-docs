@@ -1,7 +1,8 @@
 # realmKeyName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key name of the Kerberos realm string.
 
@@ -14,19 +15,24 @@ The key name of the Kerberos realm string.
 var realmKeyName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * realmKeyName;
+```
+
 ## See Also
 
-- [var clientNameKeyName: String?](asauthorizationproviderextensionkerberosmapping/clientnamekeyname.md)
+### Getting the properties
+- [var clientNameKeyName: String?](./clientnamekeyname.md)
   The key name of the Kerberos client name string.
-- [var encryptionKeyTypeKeyName: String?](asauthorizationproviderextensionkerberosmapping/encryptionkeytypekeyname.md)
+- [var encryptionKeyTypeKeyName: String?](./encryptionkeytypekeyname.md)
   The key name of the Kerberos session key type number.
-- [var messageBufferKeyName: String?](asauthorizationproviderextensionkerberosmapping/messagebufferkeyname.md)
+- [var messageBufferKeyName: String?](./messagebufferkeyname.md)
   The key name of the Base 64-encoded Kerberos AS-REP string.
-- [var serviceNameKeyName: String?](asauthorizationproviderextensionkerberosmapping/servicenamekeyname.md)
+- [var serviceNameKeyName: String?](./servicenamekeyname.md)
   The key name of the Kerberos service name string.
-- [var sessionKeyKeyName: String?](asauthorizationproviderextensionkerberosmapping/sessionkeykeyname.md)
+- [var sessionKeyKeyName: String?](./sessionkeykeyname.md)
   The key name of the Kerberos session key.
-- [var ticketKeyPath: String?](asauthorizationproviderextensionkerberosmapping/ticketkeypath.md)
+- [var ticketKeyPath: String?](./ticketkeypath.md)
   The keypath in the response JSON that uses this set of mappings.
 
 

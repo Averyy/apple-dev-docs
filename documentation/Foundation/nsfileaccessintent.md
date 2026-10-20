@@ -1,7 +1,8 @@
 # NSFileAccessIntent
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The details of a coordinated-read or coordinated-write operation.
 
@@ -20,40 +21,45 @@ The details of a coordinated-read or coordinated-write operation.
 class NSFileAccessIntent
 ```
 
+```objc
+@interface NSFileAccessIntent : NSObject
+```
+
 #### Overview
 
-Use this class when performing asynchronous operations with a file coordinator using the coordinator’s [`coordinate(with:queue:byAccessor:)`](nsfilecoordinator/coordinate(with:queue:byaccessor:).md) method.
+Use this class when performing asynchronous operations with a file coordinator using the coordinator’s [`coordinate(with:queue:byAccessor:)`](./nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method.
 
 ## Topics
 
 ### Creating a File Access Intent
-- [class func readingIntent(with: URL, options: NSFileCoordinator.ReadingOptions) -> Self](nsfileaccessintent/readingintent(with:options:).md)
+- [class func readingIntent(with: URL, options: NSFileCoordinator.ReadingOptions) -> Self](./nsfileaccessintent/readingintent%28with,options%29.md)
   Returns a file access intent object for reading the given URL with the provided options.
-- [class func writingIntent(with: URL, options: NSFileCoordinator.WritingOptions) -> Self](nsfileaccessintent/writingintent(with:options:).md)
+- [class func writingIntent(with: URL, options: NSFileCoordinator.WritingOptions) -> Self](./nsfileaccessintent/writingintent%28with,options%29.md)
   Returns a file access intent object for writing to the given URL with the provided options.
 ### Accessing the Current URL
-- [var url: URL](nsfileaccessintent/url.md)
+- [var url: URL](./nsfileaccessintent/url.md)
   The current URL for the item managed by the file access intent instance. (read-only)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol NSFilePresenter](nsfilepresenter.md)
+### Coordinated file access
+- [protocol NSFilePresenter](./nsfilepresenter.md)
   The interface a file coordinator uses to inform an object presenting a file about changes to that file made elsewhere in the system.
-- [class NSFileCoordinator](nsfilecoordinator.md)
+- [class NSFileCoordinator](./nsfilecoordinator.md)
   An object that coordinates the reading and writing of files and directories among file presenters.
 
 

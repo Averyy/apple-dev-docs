@@ -1,7 +1,8 @@
 # requestExtensionFlagsOnly
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests only the `kLSItemInfoExtensionIsHidden` item-information flag.
 

@@ -1,7 +1,8 @@
 # order
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Euler angle order.
 
@@ -20,15 +21,20 @@ The Euler angle order.
 var order: __SPEulerAngleOrder
 ```
 
+```c
+SPEulerAngleOrder order;
+```
+
 #### Discussion
 
-> **Note**: In Swift, use [`EulerAngles.Order`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/eulerangles/order-swift.typealias) in place of `__SPEulerAngleOrder`.
+> **Note**: In Swift, use [EulerAngles.Order](./order-swift.typealias.md) in place of `__SPEulerAngleOrder`.
 
 ## See Also
 
-- [var angles: simd_double3](eulerangles/angles.md)
+### Instance properties
+- [var angles: simd_double3](./angles.md)
   A three-element vector that specifies the Euler angles.
-- [var angles: simd_double3](eulerangles/angles.md)
+- [var angles: simd_double3](./angles.md)
   A three-element vector that specifies the Euler angles.
 
 

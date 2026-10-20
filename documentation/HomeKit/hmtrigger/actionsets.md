@@ -1,7 +1,8 @@
 # actionSets
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of all action sets that will be executed by the trigger.
 
@@ -19,15 +20,20 @@ Array of all action sets that will be executed by the trigger.
 var actionSets: [HMActionSet] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMActionSet *> * actionSets;
+```
+
 #### Discussion
 
-Action sets are instances of [`HMActionSet`](hmactionset.md).
+Action sets are instances of [`HMActionSet`](../hmactionset.md).
 
 ## See Also
 
-- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmtrigger/addactionset(_:completionhandler:).md)
+### Managing Action Sets
+- [func addActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./addactionset%28_,completionhandler%29.md)
   Adds an action set to the trigger.
-- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](hmtrigger/removeactionset(_:completionhandler:).md)
+- [func removeActionSet(HMActionSet, completionHandler: ((any Error)?) -> Void)](./removeactionset%28_,completionhandler%29.md)
   Removes an action set from the trigger.
 
 

@@ -1,14 +1,15 @@
 # StandardUSB30::kResetMaximumTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB30::kResetMaximumTimeout = kIOUSB30ResetMaximumTimeout
 ```
 

@@ -1,7 +1,8 @@
 # AVAudioConnectionPoint
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of either a source or destination connection point in the audio engine.
 
@@ -20,6 +21,10 @@ A representation of either a source or destination connection point in the audio
 class AVAudioConnectionPoint
 ```
 
+```objc
+@interface AVAudioConnectionPoint : NSObject
+```
+
 #### Overview
 
 Instances of this class are immutable.
@@ -27,39 +32,40 @@ Instances of this class are immutable.
 ## Topics
 
 ### Creating a connection point
-- [init(node: AVAudioNode, bus: AVAudioNodeBus)](avaudioconnectionpoint/init(node:bus:).md)
+- [init(node: AVAudioNode, bus: AVAudioNodeBus)](./avaudioconnectionpoint/init%28node,bus%29.md)
   Creates a connection point object.
 ### Getting connection point properties
-- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
+- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](./avaudioengine/inputconnectionpoint%28for,inputbus%29.md)
   Returns connection information about a node’s input bus.
-- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](./avaudioengine/outputconnectionpoints%28for,outputbus%29.md)
   Returns connection information about a node’s output bus.
-- [var bus: AVAudioNodeBus](avaudioconnectionpoint/bus.md)
+- [var bus: AVAudioNodeBus](./avaudioconnectionpoint/bus.md)
   The bus on the node in the connection point.
-- [var node: AVAudioNode?](avaudioconnectionpoint/node.md)
+- [var node: AVAudioNode?](./avaudioconnectionpoint/node.md)
   The node in the connection point.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:format:).md)
+### Using connection points
+- [func connect(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?)](./avaudioengine/connect%28_,to,frombus,format%29.md)
   Establishes a connection between a source node and multiple destination nodes.
-- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
+- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](./avaudioengine/inputconnectionpoint%28for,inputbus%29.md)
   Returns connection information about a node’s input bus.
-- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](./avaudioengine/outputconnectionpoints%28for,outputbus%29.md)
   Returns connection information about a node’s output bus.
 
 

@@ -1,7 +1,8 @@
 # notifyWhenPlayersFinished(finishedHandler:)
 
 **Framework**: Core Haptics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies you when all haptic pattern players have finished playing their haptic patterns.
 
@@ -19,15 +20,20 @@ Notifies you when all haptic pattern players have finished playing their haptic 
 func notifyWhenPlayersFinished(finishedHandler: @escaping CHHapticEngine.FinishedHandler)
 ```
 
+```objc
+- (void) notifyWhenPlayersFinished:(CHHapticEngineFinishedHandler) finishedHandler;
+```
+
 ## Parameters
 
 - `finishedHandler`: A closure to execute when all players have finished playback.
 
 ## See Also
 
-- [CHHapticEngine.FinishedHandler](chhapticengine/finishedhandler.md)
+### Monitoring Finished Playback
+- [CHHapticEngine.FinishedHandler](./finishedhandler.md)
   A type alias for a completion handler to execute after finishing haptic playback.
-- [CHHapticEngine.FinishedAction](chhapticengine/finishedaction.md)
+- [CHHapticEngine.FinishedAction](./finishedaction.md)
   Possible actions to take after the haptic engine finishes execution.
 
 

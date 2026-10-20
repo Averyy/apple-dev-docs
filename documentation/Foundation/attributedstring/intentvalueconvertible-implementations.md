@@ -1,11 +1,12 @@
 # IntentValueConvertible Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer](attributedstring/makecontainer(context:).md)
+- [func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentValueContainer](./makecontainer%28context%29.md)
   Creates a container that represents the attributed string.
 
 

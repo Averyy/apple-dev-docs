@@ -1,7 +1,8 @@
 # interfaceName
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The BSD name of the interface.
 
@@ -12,6 +13,10 @@ The BSD name of the interface.
 
 ```swift
 var interfaceName: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * interfaceName;
 ```
 
 

@@ -1,7 +1,8 @@
 # fetchShareParticipants(forEmailAddresses:completionHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches share participants with the specified email addresses.
 
@@ -11,7 +12,7 @@ Fetches share participants with the specified email addresses.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -25,11 +26,11 @@ func fetchShareParticipants(forEmailAddresses emails: [String], completionHandle
 
 The closure doesn’t return a value and takes the following parameters:
 
-- A dictionary of fetched share participants. The dictionary uses the email addresses you specify in `emails` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
+- A dictionary of fetched share participants. The dictionary uses the email addresses you specify in `emails` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding fetched share participant, or an error that describes why CloudKit can’t fetch that share participant.
 
 CloudKit can translate any valid email address into a share participant. If the email address doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the email address to an iCloud account.
 
-This method searches for share participants asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
+This method searches for share participants asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md) and configure it to use the necessary priority.
 
 ## Parameters
 

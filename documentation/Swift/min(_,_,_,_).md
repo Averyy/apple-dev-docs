@@ -1,7 +1,8 @@
 # min(_:_:_:_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the least argument passed.
 
@@ -33,11 +34,12 @@ The least of all the arguments. If there are multiple equal least arguments, the
 
 ## See Also
 
-- [func min<T>(T, T) -> T](min(_:_:).md)
+### Choosing the Smallest and Largest Value
+- [func min<T>(T, T) -> T](./min%28_,_%29.md)
   Returns the lesser of two comparable values.
-- [func max<T>(T, T) -> T](max(_:_:).md)
+- [func max<T>(T, T) -> T](./max%28_,_%29.md)
   Returns the greater of two comparable values.
-- [func max<T>(T, T, T, T...) -> T](max(_:_:_:_:).md)
+- [func max<T>(T, T, T, T...) -> T](./max%28_,_,_,_%29.md)
   Returns the greatest argument passed.
 
 

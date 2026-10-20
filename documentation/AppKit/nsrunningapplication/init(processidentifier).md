@@ -1,7 +1,8 @@
 # init(processIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the running application with the given process identifier, or nil if no application has that pid.
 
@@ -12,6 +13,10 @@ Returns the running application with the given process identifier, or nil if no 
 
 ```swift
 convenience init?(processIdentifier pid: pid_t)
+```
+
+```objc
++ (instancetype) runningApplicationWithProcessIdentifier:(pid_t) pid;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Applications that do not have `PIDs` cannot be returned from this method.
 
 ## See Also
 
-- [class func runningApplications(withBundleIdentifier: String) -> [NSRunningApplication]](nsrunningapplication/runningapplications(withbundleidentifier:).md)
+### Getting running application instances
+- [class func runningApplications(withBundleIdentifier: String) -> [NSRunningApplication]](./runningapplications%28withbundleidentifier%29.md)
   Returns an array of currently running applications with the specified bundle identifier.
-- [class var current: NSRunningApplication](nsrunningapplication/current.md)
+- [class var current: NSRunningApplication](./current.md)
   Returns an `NSRunningApplication` representing this application.
 
 

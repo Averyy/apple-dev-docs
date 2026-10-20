@@ -1,7 +1,8 @@
 # SFSpeechError.Code.audioReadFailed
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The audio source could not be read.
 
@@ -19,9 +20,14 @@ The audio source could not be read.
 case audioReadFailed
 ```
 
+```c
+SFSpeechErrorCodeAudioReadFailed
+```
+
 ## See Also
 
-- [static var audioDisordered: SFSpeechError.Code](sfspeecherror/code/audiodisordered.md)
+### Audio input errors
+- [static var audioDisordered: SFSpeechError.Code](./audiodisordered.md)
   The audio input time-code overlaps or precedes prior audio input.
 
 

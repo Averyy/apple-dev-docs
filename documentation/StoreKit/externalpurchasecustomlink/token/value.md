@@ -1,7 +1,8 @@
 # value
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Base64URL-encoded JSON string that represents the external purchase token.
 
@@ -22,7 +23,7 @@ let value: String
 
 #### Discussion
 
-For information about the token, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
+For information about the token, see [Receiving and decoding external purchase tokens](../../receiving-and-decoding-external-purchase-tokens.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Bluetooth-specific UUID of the attribute.
 
@@ -20,11 +21,15 @@ The Bluetooth-specific UUID of the attribute.
 var uuid: CBUUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CBUUID * UUID;
+```
+
 #### Discussion
 
 This property is a 128-bit UUID that identifies the attribute.
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 
 ---

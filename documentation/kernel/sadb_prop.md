@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_prop {
     ...
 };
@@ -17,10 +17,10 @@ struct sadb_prop {
 ## Topics
 
 ### Instance Properties
-- [sadb_prop_exttype](sadb_prop/1588239-sadb_prop_exttype.md)
-- [sadb_prop_len](sadb_prop/1588249-sadb_prop_len.md)
-- [sadb_prop_replay](sadb_prop/1588184-sadb_prop_replay.md)
-- [sadb_prop_reserved](sadb_prop/1588320-sadb_prop_reserved.md)
+- [sadb_prop_exttype](./sadb_prop/api-1588239-sadb_prop_exttype.md)
+- [sadb_prop_len](./sadb_prop/api-1588249-sadb_prop_len.md)
+- [sadb_prop_replay](./sadb_prop/api-1588184-sadb_prop_replay.md)
+- [sadb_prop_reserved](./sadb_prop/api-1588320-sadb_prop_reserved.md)
 
 
 ---

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void prepareRequest(
  UInt64byteStart, 
  IOMemoryDescriptor *buffer, 
@@ -30,61 +30,62 @@ This method's implementation is not typically overridden.
 
 ## See Also
 
-- [acceptNewMedia](ioblockstoragedriver/1811574-acceptnewmedia.md)
+### Miscellaneous
+- [acceptNewMedia](./api-1811574-acceptnewmedia.md)
   React to new media insertion.
-- [addToBytesTransferred](ioblockstoragedriver/1811596-addtobytestransferred.md)
-- [allocateContext](ioblockstoragedriver/1811624-allocatecontext.md)
-- [breakUpRequest](ioblockstoragedriver/1811639-breakuprequest.md)
-- [checkForMedia](ioblockstoragedriver/1811654-checkformedia.md)
+- [addToBytesTransferred](./api-1811596-addtobytestransferred.md)
+- [allocateContext](./api-1811624-allocatecontext.md)
+- [breakUpRequest](./api-1811639-breakuprequest.md)
+- [checkForMedia](./api-1811654-checkformedia.md)
   Check if media has newly arrived or disappeared.
-- [constrainByteCount](ioblockstoragedriver/1811669-constrainbytecount.md)
+- [constrainByteCount](./api-1811669-constrainbytecount.md)
   Constrain the byte count for this IO to device limits.
-- [copyPhysicalExtent](ioblockstoragedriver/1811687-copyphysicalextent.md)
-- [deblockRequest](ioblockstoragedriver/1811703-deblockrequest.md)
-- [decommissionMedia](ioblockstoragedriver/1811732-decommissionmedia.md)
+- [copyPhysicalExtent](./api-1811687-copyphysicalextent.md)
+- [deblockRequest](./api-1811703-deblockrequest.md)
+- [decommissionMedia](./api-1811732-decommissionmedia.md)
   Decommission an existing piece of media that has gone away.
-- [deleteContext](ioblockstoragedriver/1811760-deletecontext.md)
-- [ejectMedia](ioblockstoragedriver/1811792-ejectmedia.md)
-- [executeRequest](ioblockstoragedriver/1811817-executerequest.md)
-- [formatMedia](ioblockstoragedriver/1811835-formatmedia.md)
-- [getDeviceTypeName](ioblockstoragedriver/1811863-getdevicetypename.md)
+- [deleteContext](./api-1811760-deletecontext.md)
+- [ejectMedia](./api-1811792-ejectmedia.md)
+- [executeRequest](./api-1811817-executerequest.md)
+- [formatMedia](./api-1811835-formatmedia.md)
+- [getDeviceTypeName](./api-1811863-getdevicetypename.md)
   Return the desired device name.
-- [getFormatCapacities](ioblockstoragedriver/1811884-getformatcapacities.md)
-- [getMediaBlockSize](ioblockstoragedriver/1811916-getmediablocksize.md)
-- [getMediaState](ioblockstoragedriver/1811940-getmediastate.md)
-- [getStatistic](ioblockstoragedriver/1811958-getstatistic.md)
-- [getStatistics](ioblockstoragedriver/1811976-getstatistics.md)
-- [handleClose](ioblockstoragedriver/1811990-handleclose.md)
-- [handleIsOpen](ioblockstoragedriver/1811999-handleisopen.md)
-- [handleOpen](ioblockstoragedriver/1812007-handleopen.md)
-- [handleStart](ioblockstoragedriver/1812019-handlestart.md)
-- [incrementErrors](ioblockstoragedriver/1812024-incrementerrors.md)
-- [incrementRetries](ioblockstoragedriver/1812030-incrementretries.md)
-- [initMediaState](ioblockstoragedriver/1812034-initmediastate.md)
+- [getFormatCapacities](./api-1811884-getformatcapacities.md)
+- [getMediaBlockSize](./api-1811916-getmediablocksize.md)
+- [getMediaState](./api-1811940-getmediastate.md)
+- [getStatistic](./api-1811958-getstatistic.md)
+- [getStatistics](./api-1811976-getstatistics.md)
+- [handleClose](./api-1811990-handleclose.md)
+- [handleIsOpen](./api-1811999-handleisopen.md)
+- [handleOpen](./api-1812007-handleopen.md)
+- [handleStart](./api-1812019-handlestart.md)
+- [incrementErrors](./api-1812024-incrementerrors.md)
+- [incrementRetries](./api-1812030-incrementretries.md)
+- [initMediaState](./api-1812034-initmediastate.md)
   Initialize media-related instance variables.
-- [instantiateDesiredMediaObject](ioblockstoragedriver/1812038-instantiatedesiredmediaobject.md)
+- [instantiateDesiredMediaObject](./api-1812038-instantiatedesiredmediaobject.md)
   Create an IOMedia object for media.
-- [instantiateMediaObject](ioblockstoragedriver/1812042-instantiatemediaobject.md)
+- [instantiateMediaObject](./api-1812042-instantiatemediaobject.md)
   Create an IOMedia object for media.
-- [isMediaEjectable](ioblockstoragedriver/1812044-ismediaejectable.md)
-- [isMediaRemovable](ioblockstoragedriver/1812049-ismediaremovable.md)
-- [isMediaWritable](ioblockstoragedriver/1812052-ismediawritable.md)
-- [lockPhysicalExtents](ioblockstoragedriver/1812055-lockphysicalextents.md)
-- [mediaStateHasChanged](ioblockstoragedriver/1812057-mediastatehaschanged.md)
+- [isMediaEjectable](./api-1812044-ismediaejectable.md)
+- [isMediaRemovable](./api-1812049-ismediaremovable.md)
+- [isMediaWritable](./api-1812052-ismediawritable.md)
+- [lockPhysicalExtents](./api-1812055-lockphysicalextents.md)
+- [mediaStateHasChanged](./api-1812057-mediastatehaschanged.md)
   React to a new media insertion or a media removal.
-- [read](ioblockstoragedriver/1812076-read.md)
-- [recordMediaParameters](ioblockstoragedriver/1812090-recordmediaparameters.md)
+- [read](./api-1812076-read.md)
+- [recordMediaParameters](./api-1812090-recordmediaparameters.md)
   Obtain media-related parameters on media insertion.
-- [rejectMedia](ioblockstoragedriver/1812100-rejectmedia.md)
+- [rejectMedia](./api-1812100-rejectmedia.md)
   Reject new media.
-- [requestIdle](ioblockstoragedriver/1812117-requestidle.md)
+- [requestIdle](./api-1812117-requestidle.md)
   Request that the device enter an idle state.
-- [synchronizeCache](ioblockstoragedriver/1812132-synchronizecache.md)
-- [unlockPhysicalExtents](ioblockstoragedriver/1812149-unlockphysicalextents.md)
-- [unmap](ioblockstoragedriver/1812179-unmap.md)
-- [validateNewMedia](ioblockstoragedriver/1812204-validatenewmedia.md)
+- [synchronizeCache](./api-1812132-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1812149-unlockphysicalextents.md)
+- [unmap](./api-1812179-unmap.md)
+- [validateNewMedia](./api-1812204-validatenewmedia.md)
   Verify that new media is acceptable.
-- [write](ioblockstoragedriver/1812222-write.md)
+- [write](./api-1812222-write.md)
 
 
 ---

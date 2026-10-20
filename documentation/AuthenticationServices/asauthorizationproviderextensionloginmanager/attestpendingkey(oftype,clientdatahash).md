@@ -1,7 +1,8 @@
 # attestPendingKey(ofType:clientDataHash:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.4+

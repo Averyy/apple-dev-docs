@@ -1,7 +1,8 @@
 # ConditionalDynamicInstructions.Branch.trueContent(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A branch that represents true.
 
@@ -21,7 +22,8 @@ case trueContent(TrueContent)
 
 ## See Also
 
-- [ConditionalDynamicInstructions.Branch.falseContent(_:)](conditionaldynamicinstructions/branch/falsecontent(_:).md)
+### Branch cases
+- [ConditionalDynamicInstructions.Branch.falseContent(_:)](./falsecontent%28_%29.md)
   A branch that represents false.
 
 

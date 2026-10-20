@@ -1,7 +1,8 @@
 # init(processes:deviceUID:stream:)
 
 **Framework**: Core Audio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 14.0+
@@ -14,12 +15,13 @@ convenience init(processes processesIDsToIncludeInTap: [AudioObjectID], deviceUI
 
 ## See Also
 
-- [init()](catapdescription/init.md)
-- [convenience init(excludingProcesses: [AudioObjectID], deviceUID: String, stream: UInt)](catapdescription/init(excludingprocesses:deviceuid:stream:).md)
-- [convenience init(monoGlobalTapButExcludeProcesses: [AudioObjectID])](catapdescription/init(monoglobaltapbutexcludeprocesses:).md)
-- [convenience init(monoMixdownOfProcesses: [AudioObjectID])](catapdescription/init(monomixdownofprocesses:).md)
-- [convenience init(stereoGlobalTapButExcludeProcesses: [AudioObjectID])](catapdescription/init(stereoglobaltapbutexcludeprocesses:).md)
-- [convenience init(stereoMixdownOfProcesses: [AudioObjectID])](catapdescription/init(stereomixdownofprocesses:).md)
+### Initializers
+- [init()](./init%28%29.md)
+- [convenience init(excludingProcesses: [AudioObjectID], deviceUID: String, stream: UInt)](./init%28excludingprocesses,deviceuid,stream%29.md)
+- [convenience init(monoGlobalTapButExcludeProcesses: [AudioObjectID])](./init%28monoglobaltapbutexcludeprocesses%29.md)
+- [convenience init(monoMixdownOfProcesses: [AudioObjectID])](./init%28monomixdownofprocesses%29.md)
+- [convenience init(stereoGlobalTapButExcludeProcesses: [AudioObjectID])](./init%28stereoglobaltapbutexcludeprocesses%29.md)
+- [convenience init(stereoMixdownOfProcesses: [AudioObjectID])](./init%28stereomixdownofprocesses%29.md)
 
 
 ---

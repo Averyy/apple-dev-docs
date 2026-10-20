@@ -1,7 +1,8 @@
 # Geocoder
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A geocoder that converts human-readable addresses to geographic coordinates, and vice versa.
 
@@ -10,13 +11,13 @@ A geocoder that converts human-readable addresses to geographic coordinates, and
 
 ## Declaration
 
-```swift
+```
 class Geocoder extends Service
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](./mapkit-js-5.md)
 
 #### Overview
 
@@ -31,38 +32,38 @@ Provide context to the geocoder to get the most relevant results. The geocoder c
 ## Topics
 
 ### Creating a geocoder object
-- [new Geocoder(options)](geocoder/geocoderconstructor.md)
+- [new Geocoder(options)](./geocoder/geocoderconstructor.md)
   Creates a geocoder object and sets optional language and user location properties.
-- [interface ServiceConstructorOptions](serviceconstructoroptions.md)
+- [interface ServiceConstructorOptions](./serviceconstructoroptions.md)
   Common options you provide when you create a service object.
-- [getsUserLocation](service/getsuserlocation.md)
+- [getsUserLocation](./service/getsuserlocation.md)
   A Boolean value that indicates whether the request returns results near a person’s location.
-- [language](service/language.md)
+- [language](./service/language.md)
   A language ID that determines the language to use for displaying addresses.
 ### Getting geocoder results
-- [lookup(place, options)](geocoder/lookup.md)
+- [lookup(place, options)](./geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [interface GeocoderLookupOptions](geocoderlookupoptions.md)
+- [interface GeocoderLookupOptions](./geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](./geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
-- [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
+- [interface GeocoderReverseLookupOptions](./geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.
-- [interface GeocoderResponse](geocoderresponse.md)
+- [interface GeocoderResponse](./geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 ### Canceling a geocoder request
-- [cancel(promise)](service/cancel.md)
+- [cancel(promise)](./service/cancel.md)
   Cancels a request using the provided request promise.
 ### Deprecated
-- [lookup(place, callback, options)](geocoder/lookup1.md)
+- [lookup(place, callback, options)](./geocoder/lookup1.md)
   Converts an address to geographic coordinates.
-- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup1.md)
+- [reverseLookup(coordinate, callback, options)](./geocoder/reverselookup1.md)
   Converts a geographic coordinate to an address.
 
 ## Relationships
 
 ### Inherits From
-- [Service](service.md)
+- [Service](./service.md)
 
 
 ---

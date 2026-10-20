@@ -1,7 +1,8 @@
 # objCType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A C string containing the Objective-C type for the data contained in the decimal number object.
 
@@ -20,17 +21,22 @@ A C string containing the Objective-C type for the data contained in the decimal
 var objCType: UnsafePointer<CChar> { get }
 ```
 
+```objc
+@property (readonly) const char * objCType;
+```
+
 #### Discussion
 
 For a decimal number object, this property always contains “d” (for double).
 
 ## See Also
 
-- [var decimalValue: Decimal](nsdecimalnumber/decimalvalue.md)
-  The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
-- [var doubleValue: Double](nsdecimalnumber/doublevalue.md)
+### Accessing the Value
+- [var decimalValue: Decimal](./decimalvalue.md)
+  The decimal number’s value, expressed as an [`Decimal`](../decimal.md) structure.
+- [var doubleValue: Double](./doublevalue.md)
   The decimal number’s closest approximate `double` value.
-- [func description(withLocale: Any?) -> String](nsdecimalnumber/description(withlocale:).md)
+- [func description(withLocale: Any?) -> String](./description%28withlocale%29.md)
   Returns a string representation of the decimal number appropriate for the specified locale.
 
 

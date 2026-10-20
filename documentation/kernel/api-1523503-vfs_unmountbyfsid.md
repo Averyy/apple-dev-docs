@@ -1,7 +1,8 @@
 # vfs_unmountbyfsid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Find a filesystem by ID and unmount it.
 
@@ -10,11 +11,11 @@ Find a filesystem by ID and unmount it.
 
 ## Declaration
 
-```swift
+```c
 int vfs_unmountbyfsid(fsid_t *fsid, int flags, vfs_context_t ctx);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for succcess, nonero for failure.
 

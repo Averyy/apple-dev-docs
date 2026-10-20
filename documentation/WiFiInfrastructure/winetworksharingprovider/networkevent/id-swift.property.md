@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A stable identifier that uniquely identifies this event.
 
@@ -18,7 +19,8 @@ var id: WINetworkSharingProvider.NetworkEvent.ID { get }
 
 ## See Also
 
-- [WINetworkSharingProvider.NetworkEvent.ID](winetworksharingprovider/networkevent/id-swift.typealias.md)
+### Identifying an event
+- [WINetworkSharingProvider.NetworkEvent.ID](./id-swift.typealias.md)
   The type of value that uniquely identifies this event.
 
 

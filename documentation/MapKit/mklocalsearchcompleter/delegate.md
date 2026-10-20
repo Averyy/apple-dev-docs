@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives the completion results.
 
@@ -20,13 +21,18 @@ The object that receives the completion results.
 weak var delegate: (any MKLocalSearchCompleterDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<MKLocalSearchCompleterDelegate> delegate;
+```
+
 #### Discussion
 
-You must provide a delegate object to receive completion results and to handle any errors that might occur. For more information about the methods of the delegate protocol, see [`MKLocalSearchCompleterDelegate`](mklocalsearchcompleterdelegate.md).
+You must provide a delegate object to receive completion results and to handle any errors that might occur. For more information about the methods of the delegate protocol, see [`MKLocalSearchCompleterDelegate`](../mklocalsearchcompleterdelegate.md).
 
 ## See Also
 
-- [protocol MKLocalSearchCompleterDelegate](mklocalsearchcompleterdelegate.md)
+### Receiving the search results
+- [protocol MKLocalSearchCompleterDelegate](../mklocalsearchcompleterdelegate.md)
   Methods the delegate calls with search completion data.
 
 

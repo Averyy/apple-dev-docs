@@ -1,12 +1,13 @@
 # NSTableViewDiffableDataSourceReferenceRowProvider
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a row view for a table view from its diffable data source.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ A closure that configures and returns a row view for a table view from its diffa
 typealias NSTableViewDiffableDataSourceReferenceRowProvider = (NSTableView, Int, Any) -> NSTableRowView
 ```
 
+```c
+typedef NSTableRowView *(^)(NSTableView *, long, id) NSTableViewDiffableDataSourceRowProvider;
+```
+
 ## See Also
 
-- [var rowViewProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.RowProvider?](nstableviewdiffabledatasource-c5gl/rowviewprovider.md)
+### Creating Row and Section Views
+- [var rowViewProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.RowProvider?](./nstableviewdiffabledatasource-c5gl/rowviewprovider.md)
   The closure that configures and returns the table view’s row views from the diffable data source.
-- [var sectionHeaderViewProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.SectionHeaderViewProvider?](nstableviewdiffabledatasource-c5gl/sectionheaderviewprovider-swift.property.md)
+- [var sectionHeaderViewProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.SectionHeaderViewProvider?](./nstableviewdiffabledatasource-c5gl/sectionheaderviewprovider-swift.property.md)
   The closure that configures and returns the table view’s section header views from the diffable data source.
-- [NSTableViewDiffableDataSource.RowProvider](nstableviewdiffabledatasource-c5gl/rowprovider.md)
+- [NSTableViewDiffableDataSource.RowProvider](./nstableviewdiffabledatasource-c5gl/rowprovider.md)
   A closure that configures and returns a row view for a table view from its diffable data source.
-- [NSTableViewDiffableDataSource.SectionHeaderViewProvider](nstableviewdiffabledatasource-c5gl/sectionheaderviewprovider-swift.typealias.md)
+- [NSTableViewDiffableDataSource.SectionHeaderViewProvider](./nstableviewdiffabledatasource-c5gl/sectionheaderviewprovider-swift.typealias.md)
   A closure that configures and returns a section header view for a table view from its diffable data source.
-- [typealias NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider](nstableviewdiffabledatasourcereferencesectionheaderviewprovider.md)
+- [typealias NSTableViewDiffableDataSourceReferenceSectionHeaderViewProvider](./nstableviewdiffabledatasourcereferencesectionheaderviewprovider.md)
   A closure that configures and returns a section header view for a table view from its diffable data source.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance. (See `CustomStringConvertible`.)
 
@@ -11,7 +12,7 @@ A textual representation of this instance. (See `CustomStringConvertible`.)
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

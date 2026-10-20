@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared background task scheduler instance.
 
@@ -16,6 +17,10 @@ The shared background task scheduler instance.
 
 ```swift
 class var shared: BGTaskScheduler { get }
+```
+
+```objc
+@property (class, strong, readonly) BGTaskScheduler * sharedScheduler;
 ```
 
 

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of scan results containing access points the accessory has discovered.
 

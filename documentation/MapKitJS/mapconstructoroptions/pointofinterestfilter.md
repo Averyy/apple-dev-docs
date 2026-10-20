@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The filter that determines the points of interest that display on the map.
 
@@ -10,7 +11,7 @@ The filter that determines the points of interest that display on the map.
 
 ## Declaration
 
-```swift
+```
 pointOfInterestFilter?: PointOfInterestFilter;
 ```
 
@@ -20,11 +21,12 @@ The filter specifies point-of-interest categories to include or exclude in a map
 
 ## See Also
 
-- [overlays](mapconstructoroptions/overlays.md)
+### Configuring map overlays
+- [overlays](./overlays.md)
   An array that contains all of the map’s overlays.
-- [selectedOverlay](mapconstructoroptions/selectedoverlay.md)
+- [selectedOverlay](./selectedoverlay.md)
   The selected overlay on the map.
-- [showsPointsOfInterest](mapconstructoroptions/showspointsofinterest.md)
+- [showsPointsOfInterest](./showspointsofinterest.md)
   A Boolean value that determines whether the map displays points of interest.
 
 

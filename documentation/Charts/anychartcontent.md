@@ -1,7 +1,8 @@
 # AnyChartContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased chart content.
 
@@ -24,17 +25,17 @@ A type-erased chart content.
 ## Topics
 
 ### Initializers
-- [init(any ChartContent)](anychartcontent/init(_:).md)
-- [init(erasing: some ChartContent)](anychartcontent/init(erasing:).md)
+- [init(any ChartContent)](./anychartcontent/init%28_%29.md)
+- [init(erasing: some ChartContent)](./anychartcontent/init%28erasing%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

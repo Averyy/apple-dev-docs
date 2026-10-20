@@ -1,7 +1,8 @@
 # URLScheme
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing a valid URL scheme.
 
@@ -25,33 +26,34 @@ Scheme names are case sensitive, must start with an ASCII letter, and may contai
 ## Topics
 
 ### Initializers
-- [init?(String)](urlscheme/init(_:).md)
+- [init?(String)](./urlscheme/init%28_%29.md)
   Creates a new `URLScheme` value from a valid scheme, which WebKit does not already handle.
 ### Instance Properties
-- [let rawValue: String](urlscheme/rawvalue.md)
+- [let rawValue: String](./urlscheme/rawvalue.md)
   The raw value of the scheme string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebPage.Configuration](webpage/configuration.md)
+### Configuring a WebPage
+- [WebPage.Configuration](./webpage/configuration.md)
   A configuration type that specifies the preferences and behaviors of a webpage.
-- [WebPage.DeviceSensorAuthorization](webpage/devicesensorauthorization.md)
+- [WebPage.DeviceSensorAuthorization](./webpage/devicesensorauthorization.md)
   A type that describes the authorization permissions policy for the device’s sensors a web resource may access.
-- [protocol URLSchemeHandler](urlschemehandler.md)
+- [protocol URLSchemeHandler](./urlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
-- [enum URLSchemeTaskResult](urlschemetaskresult.md)
-  A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
-- [WebPage.Configuration.MediaPlaybackBehavior](webpage/configuration/mediaplaybackbehavior-swift.enum.md)
+- [enum URLSchemeTaskResult](./urlschemetaskresult.md)
+  A value used as part of a sequence of results from a [`URLSchemeHandler`](./urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
+- [WebPage.Configuration.MediaPlaybackBehavior](./webpage/configuration/mediaplaybackbehavior-swift.enum.md)
   The behavior used when playing HTML video within a page.
-- [WebPage.DeviceSensorAuthorization.Permission](webpage/devicesensorauthorization/permission.md)
+- [WebPage.DeviceSensorAuthorization.Permission](./webpage/devicesensorauthorization/permission.md)
   The kind of sensor permission a web resource may request to access.
 
 

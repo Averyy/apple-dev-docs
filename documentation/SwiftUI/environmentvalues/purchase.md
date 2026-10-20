@@ -1,7 +1,8 @@
 # purchase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An action that starts an in-app purchase.
 
@@ -23,7 +24,7 @@ An action that starts an in-app purchase.
 
 #### Discussion
 
-Read this environment value to get an `PurchaseAction` instance for a given [`Environment`](environment.md). Call the instance to start an in-app purchase. You call the instance directly because it defines a `PurchaseAction/callAsFunction(_:options:)` method that Swift calls when you call the instance.
+Read this environment value to get an `PurchaseAction` instance for a given [`Environment`](../environment.md). Call the instance to start an in-app purchase. You call the instance directly because it defines a `PurchaseAction/callAsFunction(_:options:)` method that Swift calls when you call the instance.
 
 For example, you can start an in-app purchase when the user taps a button:
 
@@ -48,33 +49,34 @@ struct PurchaseExample: View {
 
 ## See Also
 
-- [var dismiss: DismissAction](environmentvalues/dismiss.md)
+### Actions
+- [var dismiss: DismissAction](./dismiss.md)
   An action that dismisses the current presentation.
-- [var dismissSearch: DismissSearchAction](environmentvalues/dismisssearch.md)
+- [var dismissSearch: DismissSearchAction](./dismisssearch.md)
   An action that ends the current search interaction.
-- [var dismissWindow: DismissWindowAction](environmentvalues/dismisswindow.md)
+- [var dismissWindow: DismissWindowAction](./dismisswindow.md)
   A window dismissal action stored in a view’s environment.
-- [var openImmersiveSpace: OpenImmersiveSpaceAction](environmentvalues/openimmersivespace.md)
+- [var openImmersiveSpace: OpenImmersiveSpaceAction](./openimmersivespace.md)
   An action that presents an immersive space.
-- [var dismissImmersiveSpace: DismissImmersiveSpaceAction](environmentvalues/dismissimmersivespace.md)
+- [var dismissImmersiveSpace: DismissImmersiveSpaceAction](./dismissimmersivespace.md)
   An immersive space dismissal action stored in a view’s environment.
-- [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
+- [var newDocument: NewDocumentAction](./newdocument.md)
   An action in the environment that presents a new document.
-- [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
+- [var openDocument: OpenDocumentAction](./opendocument.md)
   An action in the environment that presents an existing document.
-- [var openURL: OpenURLAction](environmentvalues/openurl.md)
+- [var openURL: OpenURLAction](./openurl.md)
   An action that opens a URL.
-- [var openWindow: OpenWindowAction](environmentvalues/openwindow.md)
+- [var openWindow: OpenWindowAction](./openwindow.md)
   A window presentation action stored in a view’s environment.
-- [var pushWindow: PushWindowAction](environmentvalues/pushwindow.md)
+- [var pushWindow: PushWindowAction](./pushwindow.md)
   A window presentation action stored in a view’s environment.
-- [var refresh: RefreshAction?](environmentvalues/refresh.md)
+- [var refresh: RefreshAction?](./refresh.md)
   A refresh action stored in a view’s environment.
-- [var rename: RenameAction?](environmentvalues/rename.md)
+- [var rename: RenameAction?](./rename.md)
   An action that activates the standard rename interaction.
-- [var resetFocus: ResetFocusAction](environmentvalues/resetfocus.md)
+- [var resetFocus: ResetFocusAction](./resetfocus.md)
   An action that requests the focus system to reevaluate default focus.
-- [var openSettings: OpenSettingsAction](environmentvalues/opensettings.md)
+- [var openSettings: OpenSettingsAction](./opensettings.md)
   A Settings presentation action stored in a view’s environment.
 
 

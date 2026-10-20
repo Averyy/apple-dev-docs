@@ -1,7 +1,8 @@
 # stereoCameraBaseline
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the distance between centers of the lenses of the camera system.
 

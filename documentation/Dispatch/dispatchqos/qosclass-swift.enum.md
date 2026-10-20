@@ -1,18 +1,19 @@
 # DispatchQoS.QoSClass
 
 **Framework**: Dispatch  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Quality-of-service classes that specify the priorities for executing tasks.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,35 +28,36 @@ Use quality-of-service classes to communicate the intent behind the work that yo
 ## Topics
 
 ### Getting the Quality-of-Service Class
-- [DispatchQoS.QoSClass.userInteractive](dispatchqos/qosclass-swift.enum/userinteractive.md)
+- [DispatchQoS.QoSClass.userInteractive](./qosclass-swift.enum/userinteractive.md)
   The quality-of-service class for user-interactive tasks, such as animations, event handling, or updating your app’s user interface.
-- [DispatchQoS.QoSClass.userInitiated](dispatchqos/qosclass-swift.enum/userinitiated.md)
+- [DispatchQoS.QoSClass.userInitiated](./qosclass-swift.enum/userinitiated.md)
   The quality-of-service class for tasks that prevent the user from actively using your app.
-- [DispatchQoS.QoSClass.default](dispatchqos/qosclass-swift.enum/default.md)
+- [DispatchQoS.QoSClass.default](./qosclass-swift.enum/default.md)
   The default quality-of-service class.
-- [DispatchQoS.QoSClass.utility](dispatchqos/qosclass-swift.enum/utility.md)
+- [DispatchQoS.QoSClass.utility](./qosclass-swift.enum/utility.md)
   The quality-of-service class for tasks that the user does not track actively.
-- [DispatchQoS.QoSClass.background](dispatchqos/qosclass-swift.enum/background.md)
+- [DispatchQoS.QoSClass.background](./qosclass-swift.enum/background.md)
   The quality-of-service class for maintenance or cleanup tasks that you create.
-- [DispatchQoS.QoSClass.unspecified](dispatchqos/qosclass-swift.enum/unspecified.md)
+- [DispatchQoS.QoSClass.unspecified](./qosclass-swift.enum/unspecified.md)
   The absence of a quality-of-service class.
 ### Initializing the Type
-- [init?(rawValue: qos_class_t)](dispatchqos/qosclass-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: qos_class_t)](./qosclass-swift.enum/init%28rawvalue%29.md)
   Initializes the type with a raw value.
-- [var rawValue: qos_class_t](dispatchqos/qosclass-swift.enum/rawvalue.md)
+- [var rawValue: qos_class_t](./qosclass-swift.enum/rawvalue.md)
   The value of the raw type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(qosClass: DispatchQoS.QoSClass, relativePriority: Int)](dispatchqos/init(qosclass:relativepriority:).md)
+### Creating a QoS Structure
+- [init(qosClass: DispatchQoS.QoSClass, relativePriority: Int)](./init%28qosclass,relativepriority%29.md)
   Creates a new `DispatchQoS` object with the specified QoS class and relative priority.
 
 

@@ -1,7 +1,8 @@
 # MobileNationalIDCardDisplayRequest.Element
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents an element you can request from a mobile national ID card.
 
@@ -19,35 +20,36 @@ struct Element
 ## Topics
 
 ### Type Properties
-- [static let age: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/age.md)
+- [static let age: MobileNationalIDCardDisplayRequest.Element](./element/age.md)
   The mobile national ID card holder’s age in years.
-- [static let familyName: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/familyname.md)
+- [static let familyName: MobileNationalIDCardDisplayRequest.Element](./element/familyname.md)
   The mobile national ID card holder’s family name or last name.
-- [static let givenName: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/givenname.md)
+- [static let givenName: MobileNationalIDCardDisplayRequest.Element](./element/givenname.md)
   The mobile national ID card holder’s given name or first name.
-- [static let name: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/name.md)
+- [static let name: MobileNationalIDCardDisplayRequest.Element](./element/name.md)
   The mobile national ID card holder’s name.
 ### Type Methods
-- [static func ageAtLeast(Int) -> MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/ageatleast(_:).md)
+- [static func ageAtLeast(Int) -> MobileNationalIDCardDisplayRequest.Element](./element/ageatleast%28_%29.md)
   A Boolean value that indicates whether the mobile national ID card holder’s age is at least the given age.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var region: Locale.Region](mobilenationalidcarddisplayrequest/region.md)
+### Configuring the request details
+- [var region: Locale.Region](./region.md)
   The region of the document you’re requesting.
-- [var elements: [MobileNationalIDCardDisplayRequest.Element]](mobilenationalidcarddisplayrequest/elements.md)
+- [var elements: [MobileNationalIDCardDisplayRequest.Element]](./elements.md)
   The document elements you’re requesting.
-- [var options: MobileNationalIDCardDisplayRequest.Options](mobilenationalidcarddisplayrequest/options-swift.property.md)
+- [var options: MobileNationalIDCardDisplayRequest.Options](./options-swift.property.md)
   An object that customizes how to perform a display request.
-- [MobileNationalIDCardDisplayRequest.Options](mobilenationalidcarddisplayrequest/options-swift.struct.md)
+- [MobileNationalIDCardDisplayRequest.Options](./options-swift.struct.md)
   An object that customizes how to perform a display request.
 
 

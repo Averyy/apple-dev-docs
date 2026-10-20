@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The floating-point value of the anchor’s offset from the item it’s attached to.
 
@@ -14,11 +15,16 @@ The floating-point value of the anchor’s offset from the item it’s attached 
 var offset: NSPoint { get }
 ```
 
+```objc
+@property (readonly) NSPoint offset;
+```
+
 ## See Also
 
-- [var isAbsoluteOffset: Bool](nscollectionlayoutanchor/isabsoluteoffset.md)
+### Getting the offset
+- [var isAbsoluteOffset: Bool](./isabsoluteoffset.md)
   A Boolean value that indicates whether the anchor’s offset is expressed as an absolute value.
-- [var isFractionalOffset: Bool](nscollectionlayoutanchor/isfractionaloffset.md)
+- [var isFractionalOffset: Bool](./isfractionaloffset.md)
   A Boolean value that indicates whether the anchor’s offset is expressed as a fraction of its supplementary item’s dimension.
 
 

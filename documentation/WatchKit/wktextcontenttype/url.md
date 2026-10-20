@@ -1,12 +1,13 @@
 # URL
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A URL.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A URL.
 static let URL: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeURL;
+```
+
 ## See Also
 
-- [static let creditCardNumber: WKTextContentType](wktextcontenttype/creditcardnumber.md)
+### Other
+- [static let creditCardNumber: WKTextContentType](./creditcardnumber.md)
   A credit card number.
 
 

@@ -1,7 +1,8 @@
 # mapError(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -17,6 +18,8 @@
 ```swift
 func mapError<E>(_ transform: (Failure) -> E) -> Result<Result<Success, Failure>.Publisher.Output, E>.Publisher where E : Error
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

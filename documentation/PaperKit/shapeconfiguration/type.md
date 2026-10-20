@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of shape.
 
@@ -20,7 +21,8 @@ var type: ShapeConfiguration.Shape
 
 ## See Also
 
-- [ShapeConfiguration.Shape](shapeconfiguration/shape.md)
+### Choosing a shape type
+- [ShapeConfiguration.Shape](./shape.md)
 
 
 ---

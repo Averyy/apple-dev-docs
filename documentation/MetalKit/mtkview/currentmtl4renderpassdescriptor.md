@@ -1,7 +1,8 @@
 # currentMTL4RenderPassDescriptor
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var currentMTL4RenderPassDescriptor: MTL4RenderPassDescriptor? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) MTL4RenderPassDescriptor * currentMTL4RenderPassDescriptor;
 ```
 
 #### Discussion

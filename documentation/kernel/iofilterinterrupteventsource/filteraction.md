@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 Filter filterAction;
 ```
 
@@ -15,7 +15,8 @@ Filter callout
 
 ## See Also
 
-- [reserved](iofilterinterrupteventsource/reserved.md)
+### Instance Variables
+- [reserved](./reserved.md)
 
 
 ---

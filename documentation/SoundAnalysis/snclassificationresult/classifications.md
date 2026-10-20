@@ -1,7 +1,8 @@
 # classifications
 
 **Framework**: Sound Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sorted array of the request’s top classification candidates.
 
@@ -20,17 +21,22 @@ A sorted array of the request’s top classification candidates.
 var classifications: [SNClassification] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<SNClassification *> * classifications;
+```
+
 #### Discussion
 
 `SNClassificationResult` sorts its classifications in descending confidence score order.
 
 ## See Also
 
-- [var timeRange: CMTimeRange](snclassificationresult/timerange.md)
+### Inspecting the Result
+- [var timeRange: CMTimeRange](./timerange.md)
   The time span that corresponds to the result’s classifications.
-- [class SNClassification](snclassification.md)
+- [class SNClassification](../snclassification.md)
   A type that pairs a sound classifier’s prediction with its confidence in that prediction.
-- [func classification(forIdentifier: String) -> SNClassification?](snclassificationresult/classification(foridentifier:).md)
+- [func classification(forIdentifier: String) -> SNClassification?](./classification%28foridentifier%29.md)
   Returns the classification for an identifier.
 
 

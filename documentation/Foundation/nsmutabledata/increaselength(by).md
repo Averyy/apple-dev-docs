@@ -1,7 +1,8 @@
 # increaseLength(by:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Increases the length of the receiver by a given number of bytes.
 
@@ -20,11 +21,15 @@ Increases the length of the receiver by a given number of bytes.
 func increaseLength(by extraLength: Int)
 ```
 
+```objc
+- (void) increaseLengthBy:(NSUInteger) extraLength;
+```
+
 #### Discussion
 
 The additional bytes are all set to `0`.
 
-> ❗ **Important**:  Changing the length of a mutable data object invalidates any existing data pointers returned by the [`bytes`](nsdata/bytes.md) or [`mutableBytes`](nsmutabledata/mutablebytes.md) properties.
+> ❗ **Important**:  Changing the length of a mutable data object invalidates any existing data pointers returned by the [`bytes`](../nsdata/bytes.md) or [`mutableBytes`](./mutablebytes.md) properties.
 
 ## Parameters
 
@@ -32,11 +37,13 @@ The additional bytes are all set to `0`.
 
 ## See Also
 
-- [var length: Int](nsmutabledata/length.md)
+### Related Documentation
+- [var length: Int](./length.md)
   The number of bytes contained in the mutable data object.
-- [func append(UnsafeRawPointer, length: Int)](nsmutabledata/append(_:length:).md)
+### Adding Bytes
+- [func append(UnsafeRawPointer, length: Int)](./append%28_,length%29.md)
   Appends to the receiver a given number of bytes from a given buffer.
-- [func append(Data)](nsmutabledata/append(_:).md)
+- [func append(Data)](./append%28_%29.md)
   Appends the content of another data object to the receiver.
 
 

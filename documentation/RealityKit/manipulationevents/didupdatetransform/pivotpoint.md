@@ -1,7 +1,8 @@
 # pivotPoint
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This point is in the coordinate space of `entity`
 

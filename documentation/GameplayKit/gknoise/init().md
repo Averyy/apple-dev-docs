@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

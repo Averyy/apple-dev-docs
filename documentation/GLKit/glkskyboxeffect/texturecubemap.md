@@ -1,15 +1,18 @@
 # textureCubeMap
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The texture to apply to the skybox.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,9 +20,13 @@ The texture to apply to the skybox.
 var textureCubeMap: GLKEffectPropertyTexture { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GLKEffectPropertyTexture * textureCubeMap;
+```
+
 #### Discussion
 
-Your application should create a complete texture cube map in its initialization code. Then, assign the name of this texture to the [`textureCubeMap`](glkskyboxeffect/texturecubemap.md) property of the skybox object.
+Your application should create a complete texture cube map in its initialization code. Then, assign the name of this texture to the [`textureCubeMap`](./texturecubemap.md) property of the skybox object.
 
 ```objc
 skyboxEffect.textureCubeMap.glName = texture_name;
@@ -27,13 +34,14 @@ skyboxEffect.textureCubeMap.glName = texture_name;
 
 ## See Also
 
-- [var center: GLKVector3](glkskyboxeffect/center.md)
+### Configuring the Skybox
+- [var center: GLKVector3](./center.md)
   The center of the skybox.
-- [var xSize: GLfloat](glkskyboxeffect/xsize.md)
+- [var xSize: GLfloat](./xsize.md)
   The width of the skybox.
-- [var ySize: GLfloat](glkskyboxeffect/ysize.md)
+- [var ySize: GLfloat](./ysize.md)
   The height of the skybox.
-- [var zSize: GLfloat](glkskyboxeffect/zsize.md)
+- [var zSize: GLfloat](./zsize.md)
   The depth of the skybox.
 
 

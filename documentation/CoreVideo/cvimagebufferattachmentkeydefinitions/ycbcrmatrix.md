@@ -1,7 +1,8 @@
 # yCbCrMatrix
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The matrix to convert from YCbCr to the RGB color space.
 

@@ -1,7 +1,8 @@
 # NSXPCProxyCreating
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for creating new proxy objects.
 
@@ -20,32 +21,37 @@ Methods for creating new proxy objects.
 protocol NSXPCProxyCreating
 ```
 
+```objc
+@protocol NSXPCProxyCreating
+```
+
 #### Overview
 
-[`NSXPCConnection`](nsxpcconnection.md) implements this protocol. All objects returned from the methods in this protocol also implement the protocol. This allows creation of new proxies from other proxies.
+[`NSXPCConnection`](./nsxpcconnection.md) implements this protocol. All objects returned from the methods in this protocol also implement the protocol. This allows creation of new proxies from other proxies.
 
 ## Topics
 
 ### Instance Methods
-- [func remoteObjectProxy() -> Any](nsxpcproxycreating/remoteobjectproxy.md)
+- [func remoteObjectProxy() -> Any](./nsxpcproxycreating/remoteobjectproxy%28%29.md)
   Returns a proxy object with no error handling block.
-- [func remoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcproxycreating/remoteobjectproxywitherrorhandler(_:).md)
+- [func remoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](./nsxpcproxycreating/remoteobjectproxywitherrorhandler%28_%29.md)
   Returns a proxy object that invokes the error handling block if an error occurs on the connection.
-- [func synchronousRemoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcproxycreating/synchronousremoteobjectproxywitherrorhandler(_:).md)
+- [func synchronousRemoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](./nsxpcproxycreating/synchronousremoteobjectproxywitherrorhandler%28_%29.md)
   Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
 
 ## Relationships
 
 ### Conforming Types
-- [NSXPCConnection](nsxpcconnection.md)
+- [NSXPCConnection](./nsxpcconnection.md)
 
 ## See Also
 
-- [class NSXPCConnection](nsxpcconnection.md)
+### XPC Client
+- [class NSXPCConnection](./nsxpcconnection.md)
   A bidirectional communication channel between two processes.
-- [class NSXPCInterface](nsxpcinterface.md)
+- [class NSXPCInterface](./nsxpcinterface.md)
   An interface that may be sent to an exported object or remote object proxy.
-- [class NSXPCCoder](nsxpccoder.md)
+- [class NSXPCCoder](./nsxpccoder.md)
   A coder that encodes and decodes objects that your app sends over an XPC connection.
 
 

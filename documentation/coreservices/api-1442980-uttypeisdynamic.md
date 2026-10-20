@@ -1,7 +1,8 @@
 # UTTypeIsDynamic(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 8.0+ - Deprecated in 15.0
@@ -16,6 +17,10 @@
 
 ```swift
 func UTTypeIsDynamic(_ inUTI: CFString) -> Bool
+```
+
+```c
+Boolean UTTypeIsDynamic(CFStringRef inUTI);
 ```
 
 

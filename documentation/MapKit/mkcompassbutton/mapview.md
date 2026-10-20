@@ -1,7 +1,8 @@
 # mapView
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map view that provides the heading information for the compass button.
 
@@ -18,11 +19,16 @@ The map view that provides the heading information for the compass button.
 weak var mapView: MKMapView? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) MKMapView * mapView;
+```
+
 ## See Also
 
-- [var compassVisibility: MKFeatureVisibility](mkcompassbutton/compassvisibility.md)
+### Getting the compass attributes
+- [var compassVisibility: MKFeatureVisibility](./compassvisibility.md)
   The visibility of the compass button.
-- [enum MKFeatureVisibility](mkfeaturevisibility.md)
+- [enum MKFeatureVisibility](../mkfeaturevisibility.md)
   Constants that indicate the visibility of different map features.
 
 

@@ -1,7 +1,8 @@
 # errSSLCertNotYetValid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate chain had a certificatethat is not yet valid.
 
@@ -18,6 +19,10 @@ The certificate chain had a certificatethat is not yet valid.
 
 ```swift
 var errSSLCertNotYetValid: OSStatus { get }
+```
+
+```c
+errSSLCertNotYetValid
 ```
 
 

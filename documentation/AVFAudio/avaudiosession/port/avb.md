@@ -1,7 +1,8 @@
 # AVB
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An I/O connection to an Audio Video Bridging (AVB) device.
 
@@ -19,25 +20,30 @@ An I/O connection to an Audio Video Bridging (AVB) device.
 static let AVB: AVAudioSession.Port
 ```
 
+```c
+extern AVAudioSessionPort const AVAudioSessionPortAVB;
+```
+
 ## See Also
 
-- [static let PCI: AVAudioSession.Port](avaudiosession/port/pci.md)
+### Getting I/O ports
+- [static let PCI: AVAudioSession.Port](./pci.md)
   An I/O connection to a Peripheral Component Interconnect (PCI) device.
-- [static let bluetoothHFP: AVAudioSession.Port](avaudiosession/port/bluetoothhfp.md)
+- [static let bluetoothHFP: AVAudioSession.Port](./bluetoothhfp.md)
   An I/O connection to a Bluetooth Hands-Free Profile device.
-- [static let carAudio: AVAudioSession.Port](avaudiosession/port/caraudio.md)
+- [static let carAudio: AVAudioSession.Port](./caraudio.md)
   An I/O connection through Car Audio.
-- [static let displayPort: AVAudioSession.Port](avaudiosession/port/displayport.md)
+- [static let displayPort: AVAudioSession.Port](./displayport.md)
   An I/O connection to a DisplayPort device.
-- [static let fireWire: AVAudioSession.Port](avaudiosession/port/firewire.md)
+- [static let fireWire: AVAudioSession.Port](./firewire.md)
   An I/O connection to a FireWire device.
-- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+- [static let mediaDeviceExtension: AVAudioSession.Port](./mediadeviceextension.md)
   Output to a media device vended through a system-wide extension that the user has installed
-- [static let thunderbolt: AVAudioSession.Port](avaudiosession/port/thunderbolt.md)
+- [static let thunderbolt: AVAudioSession.Port](./thunderbolt.md)
   An I/O connection to a Thunderbolt device.
-- [static let usbAudio: AVAudioSession.Port](avaudiosession/port/usbaudio.md)
+- [static let usbAudio: AVAudioSession.Port](./usbaudio.md)
   An I/O connection to a Universal Serial Bus (USB) device.
-- [static let virtual: AVAudioSession.Port](avaudiosession/port/virtual.md)
+- [static let virtual: AVAudioSession.Port](./virtual.md)
   An I/O connection that doesn’t correspond to physical audio hardware.
 
 

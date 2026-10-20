@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used to parse a string into a date.
 
@@ -22,9 +23,10 @@ var parseStrategy: Date.FormatStyle { get }
 
 ## See Also
 
-- [func parse(String) throws -> Date](date/formatstyle/parse(_:).md)
+### Parsing Dates
+- [func parse(String) throws -> Date](./parse%28_%29.md)
   Parses a string into a date.
-- [struct ParseStrategy](date/parsestrategy.md)
+- [struct ParseStrategy](../parsestrategy.md)
   Options for parsing string representations of dates to create a `Date` instance.
 
 

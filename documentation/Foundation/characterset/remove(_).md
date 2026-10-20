@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a `Unicode.Scalar` representation of a character from the `CharacterSet`.
 

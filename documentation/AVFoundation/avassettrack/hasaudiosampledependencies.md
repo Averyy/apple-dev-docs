@@ -1,17 +1,20 @@
 # hasAudioSampleDependencies
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the track has sample dependencies.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 16.0
+- iPadOS 13.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.15+ - Deprecated in 13.0
+- tvOS 13.0+ - Deprecated in 16.0
+- watchOS 6.0+ - Deprecated in 9.0
+
+> **Deprecated**: Load the value of [`hasAudioSampleDependencies`](../avpartialasyncproperty/hasaudiosampledependencies.md) asynchronously instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ A Boolean value that indicates whether the track has sample dependencies.
 var hasAudioSampleDependencies: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAudioSampleDependencies;
+```
+
 #### Discussion
 
-The value is always [`false`](https://developer.apple.com/documentation/swift/false) for nonaudible media.
+The value is always [`false`](../../Swift/false.md) for nonaudible media.
 
 
 ---

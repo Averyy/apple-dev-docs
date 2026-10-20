@@ -1,7 +1,8 @@
 # mainView
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main view of the preference pane.
 
@@ -15,15 +16,20 @@ The main view of the preference pane.
 var mainView: NSView { get set }
 ```
 
+```objc
+@property (strong, nonnull) NSView * mainView;
+```
+
 #### Discussion
 
-Subclasses should not need to override this unless they override [`loadMainView()`](nspreferencepane/loadmainview().md) or [`assignMainView()`](nspreferencepane/assignmainview().md).
+Subclasses should not need to override this unless they override [`loadMainView()`](./loadmainview%28%29.md) or [`assignMainView()`](./assignmainview%28%29.md).
 
 ## See Also
 
-- [var bundle: Bundle](nspreferencepane/bundle.md)
+### Getting the Bundle Information
+- [var bundle: Bundle](./bundle.md)
   The preference pane’s bundle.
-- [var mainNibName: String](nspreferencepane/mainnibname.md)
+- [var mainNibName: String](./mainnibname.md)
   The name of the preference pane’s nib file.
 
 

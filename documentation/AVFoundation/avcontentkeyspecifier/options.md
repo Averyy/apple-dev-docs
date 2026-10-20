@@ -1,7 +1,8 @@
 # options
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of options with which you initialized the specifier.
 
@@ -20,11 +21,16 @@ A dictionary of options with which you initialized the specifier.
 var options: [String : any Sendable] { get }
 ```
 
+```objc
+@property (readonly) NSDictionary<NSString *,id> * options;
+```
+
 ## See Also
 
-- [var identifier: any Sendable](avcontentkeyspecifier/identifier.md)
+### Inspecting a specifier
+- [var identifier: any Sendable](./identifier.md)
   The container and protocol-specific key identifier.
-- [var keySystem: AVContentKeySystem](avcontentkeyspecifier/keysystem.md)
+- [var keySystem: AVContentKeySystem](./keysystem.md)
   The key system that generates content keys.
 
 

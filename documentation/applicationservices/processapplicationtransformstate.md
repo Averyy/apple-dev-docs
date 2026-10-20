@@ -1,7 +1,8 @@
 # ProcessApplicationTransformState
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ProcessApplicationTransformState = UInt32
+```
+
+```c
+typedef UInt32 ProcessApplicationTransformState;
 ```
 
 

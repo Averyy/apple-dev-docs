@@ -1,7 +1,8 @@
 # hdr10(displayInfo:contentInfo:opticalOutputScale:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates EDR metadata for HDR10 content based on mastering display color information and content light levels.
 
@@ -18,6 +19,10 @@ Creates EDR metadata for HDR10 content based on mastering display color informat
 class func hdr10(displayInfo displayData: Data?, contentInfo contentData: Data?, opticalOutputScale scale: Float) -> CAEDRMetadata
 ```
 
+```objc
++ (CAEDRMetadata *) HDR10MetadataWithDisplayInfo:(NSData *) displayData contentInfo:(NSData *) contentData opticalOutputScale:(float) scale;
+```
+
 #### Discussion
 
 The MDCV and CLLI message formats are defined in ISO/IEC 23008-2:2017.
@@ -32,7 +37,8 @@ The values in the drawable’s texture are assumed to be proportional to the opt
 
 ## See Also
 
-- [class func hdr10(minLuminance: Float, maxLuminance: Float, opticalOutputScale: Float) -> CAEDRMetadata](caedrmetadata/hdr10(minluminance:maxluminance:opticaloutputscale:).md)
+### Retrieving HDR10 Metadata
+- [class func hdr10(minLuminance: Float, maxLuminance: Float, opticalOutputScale: Float) -> CAEDRMetadata](./hdr10%28minluminance,maxluminance,opticaloutputscale%29.md)
   Creates EDR metadata for HDR10 content based on the luminance characteristics of a mastering display.
 
 

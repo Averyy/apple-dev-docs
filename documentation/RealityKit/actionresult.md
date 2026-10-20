@@ -1,7 +1,8 @@
 # ActionResult
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status values that an action can report back to the animation system.
 
@@ -26,30 +27,31 @@ Use these values within action event handlers to communicate the state of your a
 ## Topics
 
 ### Getting the action result
-- [ActionResult.success](actionresult/success.md)
+- [ActionResult.success](./actionresult/success.md)
   The action completed successfully.
-- [ActionResult.running](actionresult/running.md)
+- [ActionResult.running](./actionresult/running.md)
   The action is currently running.
-- [ActionResult.failure](actionresult/failure.md)
+- [ActionResult.failure](./actionresult/failure.md)
   The action has failed.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BehaviorTreeComponent](behaviortreecomponent.md)
+### Behavior trees
+- [struct BehaviorTreeComponent](./behaviortreecomponent.md)
   Manages which behavior tree is active for the component’s entity.
-- [class BehaviorTreeResource](behaviortreeresource.md)
+- [class BehaviorTreeResource](./behaviortreeresource.md)
   An immutable representation of a behavior tree.
-- [protocol BehaviorTreeAction](behaviortreeaction.md)
+- [protocol BehaviorTreeAction](./behaviortreeaction.md)
   A protocol that defines an action that a behavior tree action node can use.
-- [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [protocol BehaviorTreeActionHandler](./behaviortreeactionhandler.md)
   Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 
 

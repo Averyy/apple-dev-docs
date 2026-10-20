@@ -1,7 +1,8 @@
 # errSSLCertExpired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate chain had an expired certificate.
 
@@ -18,6 +19,10 @@ The certificate chain had an expired certificate.
 
 ```swift
 var errSSLCertExpired: OSStatus { get }
+```
+
+```c
+errSSLCertExpired
 ```
 
 

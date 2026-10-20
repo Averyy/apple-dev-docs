@@ -1,7 +1,8 @@
 # OSLogStore
 
 **Framework**: OSLog  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of entries from the unified logging system.
 
@@ -20,53 +21,58 @@ A set of entries from the unified logging system.
 class OSLogStore
 ```
 
+```objc
+@interface OSLogStore : NSObject
+```
+
 #### Overview
 
 Instances of this class represent a fixed range of entries and may be backed by a `logarchive` or your Mac’s local store.
 
-In Swift, Use the [`getEntries(with:at:matching:)`](oslogstore/getentries(with:at:matching:).md) function to retrieve a filtered array of log entries.
+In Swift, Use the [`getEntries(with:at:matching:)`](./oslogstore/getentries%28with,at,matching%29.md) function to retrieve a filtered array of log entries.
 
-In Objective-C, use instances of this class to create [`OSLogEnumerator`](oslogenumerator.md) objects. One store can support multiple `OSLogEnumerator` instances concurrently.
+In Objective-C, use instances of this class to create [`OSLogEnumerator`](./oslogenumerator.md) objects. One store can support multiple `OSLogEnumerator` instances concurrently.
 
 ## Topics
 
 ### Creating Log Stores
-- [convenience init(url: URL) throws](oslogstore/init(url:)-5v3w7.md)
+- [convenience init(url: URL) throws](./oslogstore/init%28url%29-5v3w7.md)
   Creates a log store based on a log archive.
-- [class func local() throws -> Self](oslogstore/local.md)
+- [class func local() throws -> Self](./oslogstore/local%28%29.md)
   Creates a log store representing the Mac’s local store.
 ### Accessing Position
-- [func position(date: Date) -> OSLogPosition](oslogstore/position(date:).md)
+- [func position(date: Date) -> OSLogPosition](./oslogstore/position%28date%29.md)
   Returns a position representing the time specified.
-- [func position(timeIntervalSinceEnd: TimeInterval) -> OSLogPosition](oslogstore/position(timeintervalsinceend:).md)
+- [func position(timeIntervalSinceEnd: TimeInterval) -> OSLogPosition](./oslogstore/position%28timeintervalsinceend%29.md)
   Returns a position representing time since the end of the time range that the entries span.
-- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](oslogstore/position(timeintervalsincelatestboot:).md)
+- [func position(timeIntervalSinceLatestBoot: TimeInterval) -> OSLogPosition](./oslogstore/position%28timeintervalsincelatestboot%29.md)
   Returns a position representing time since the last boot in the series of entries.
 ### Accessing Entries
-- [func getEntries(with: OSLogEnumerator.Options, at: OSLogPosition?, matching: NSPredicate?) throws -> AnySequence<OSLogEntry>](oslogstore/getentries(with:at:matching:).md)
+- [func getEntries(with: OSLogEnumerator.Options, at: OSLogPosition?, matching: NSPredicate?) throws -> AnySequence<OSLogEntry>](./oslogstore/getentries%28with,at,matching%29.md)
   Returns a sequence of log entries filtered by the parameters passed in.
 ### Initializers
-- [init()](oslogstore/init.md)
-- [convenience init(scope: OSLogStore.Scope) throws](oslogstore/init(scope:).md)
-- [convenience init(URL: URL) throws](oslogstore/init(url:)-5nhb2.md)
+- [init()](./oslogstore/init%28%29.md)
+- [convenience init(scope: OSLogStore.Scope) throws](./oslogstore/init%28scope%29.md)
+- [convenience init(URL: URL) throws](./oslogstore/init%28url%29-5nhb2.md)
 ### Enumerations
-- [OSLogStore.Scope](oslogstore/scope.md)
+- [OSLogStore.Scope](./oslogstore/scope.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class OSLogEnumerator](oslogenumerator.md)
+### Read Log Entries
+- [class OSLogEnumerator](./oslogenumerator.md)
   An enumerator that can access and list log entries.
 
 

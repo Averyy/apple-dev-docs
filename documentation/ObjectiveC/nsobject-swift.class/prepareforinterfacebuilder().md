@@ -1,7 +1,8 @@
 # prepareForInterfaceBuilder()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a designable object is created in Interface Builder.
 
@@ -10,13 +11,19 @@ Called when a designable object is created in Interface Builder.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
 ```swift
 func prepareForInterfaceBuilder()
+```
+
+```objc
+- (void) prepareForInterfaceBuilder;
 ```
 
 #### Discussion

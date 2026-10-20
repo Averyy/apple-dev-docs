@@ -1,25 +1,27 @@
 # data
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const void * data() const;
 ```
 
 ## See Also
 
-- [free](osmappedfile/free.md)
-- [init](osmappedfile/init.md)
-- [size](osmappedfile/size.md)
+### Instance Methods
+- [free](./free.md)
+- [init](./init.md)
+- [size](./size.md)
 
 
 ---

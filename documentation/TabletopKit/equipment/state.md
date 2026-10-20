@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -15,7 +16,8 @@ associatedtype State : EquipmentState
 
 ## See Also
 
-- [var initialState: Self.State](equipment/initialstate.md)
+### Gettting the initial state of the equipment
+- [var initialState: Self.State](./initialstate.md)
 
 
 ---

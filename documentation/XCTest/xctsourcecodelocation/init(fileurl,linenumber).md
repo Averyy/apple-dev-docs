@@ -1,7 +1,8 @@
 # init(fileURL:lineNumber:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new instance with a file URL and a line number.
 
@@ -11,6 +12,10 @@ Initializes a new instance with a file URL and a line number.
 init(fileURL: URL, lineNumber: Int)
 ```
 
+```objc
+- (instancetype) initWithFileURL:(NSURL *) fileURL lineNumber:(NSInteger) lineNumber;
+```
+
 ## Parameters
 
 - `fileURL`: A file URL that represents the file-system location of the source code file.
@@ -18,9 +23,10 @@ init(fileURL: URL, lineNumber: Int)
 
 ## See Also
 
-- [convenience init(filePath: String, lineNumber: Int)](xctsourcecodelocation/init(filepath:linenumber:)-3hzmr.md)
+### Initializers
+- [convenience init(filePath: String, lineNumber: Int)](./init%28filepath,linenumber%29-3hzmr.md)
   Initializes a new instance with a file path and a line number.
-- [convenience init(filePath: StaticString, lineNumber: UInt)](xctsourcecodelocation/init(filepath:linenumber:)-8qw52.md)
+- [convenience init(filePath: StaticString, lineNumber: UInt)](./init%28filepath,linenumber%29-8qw52.md)
   Initializes a new instance with a file path and a line number.
 
 

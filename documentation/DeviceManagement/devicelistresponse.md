@@ -1,18 +1,19 @@
 # DeviceListResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object DeviceListResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
+- [object DeviceListResponse.Devices](./devicelistresponse/devices-data.dictionary.md)
 
 ## Properties
 
@@ -20,9 +21,10 @@ object DeviceListResponse
 
 ## See Also
 
-- [object DeviceListRequest](devicelistrequest.md)
+### Request and Response
+- [object DeviceListRequest](./devicelistrequest.md)
   The request for a list of devices.
-- [object DeviceListResponse.Devices](devicelistresponse/devices-data.dictionary.md)
+- [object DeviceListResponse.Devices](./devicelistresponse/devices-data.dictionary.md)
 
 
 ---

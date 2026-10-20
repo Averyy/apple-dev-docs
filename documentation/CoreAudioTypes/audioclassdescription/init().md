@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty audio class description.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(mType: OSType, mSubType: OSType, mManufacturer: OSType)](audioclassdescription/init(mtype:msubtype:mmanufacturer:).md)
+### Initializers
+- [init(mType: OSType, mSubType: OSType, mManufacturer: OSType)](./init%28mtype,msubtype,mmanufacturer%29.md)
   Creates an audio class description for the type, subtype, and manufacturer.
 
 

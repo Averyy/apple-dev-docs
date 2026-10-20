@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Audio layers for environmental effects to add to the output.
 
@@ -19,13 +20,18 @@ Audio layers for environmental effects to add to the output.
 var entries: [PHASESpatialCategory : PHASESpatialPipelineEntry] { get }
 ```
 
+```objc
+@property (copy, readonly) NSDictionary<NSString *,PHASESpatialPipelineEntry *> * entries;
+```
+
 #### Discussion
 
-This property includes an entry for each spatial category that the app includes in the [`init(flags:)`](phasespatialpipeline/init(flags:).md) argument. Adjust an entry’s send level to blend its audio layer into the output signal. For example, by fading the input audio signal using the [`sendLevelMetaParameterDefinition`](phasespatialpipelineentry/sendlevelmetaparameterdefinition.md) property of the [`directPathTransmission`](phasespatialpipeline/flags-swift.struct/directpathtransmission.md) entry, the app can lower the dry signal and blend in the right balance of early reflections and reverb.
+This property includes an entry for each spatial category that the app includes in the [`init(flags:)`](./init%28flags%29.md) argument. Adjust an entry’s send level to blend its audio layer into the output signal. For example, by fading the input audio signal using the [`sendLevelMetaParameterDefinition`](../phasespatialpipelineentry/sendlevelmetaparameterdefinition.md) property of the [`directPathTransmission`](./flags-swift.struct/directpathtransmission.md) entry, the app can lower the dry signal and blend in the right balance of early reflections and reverb.
 
 ## See Also
 
-- [var flags: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.property.md)
+### Inspecting Effects
+- [var flags: PHASESpatialPipeline.Flags](./flags-swift.property.md)
   A collection of environmental effects to include in the output.
 
 

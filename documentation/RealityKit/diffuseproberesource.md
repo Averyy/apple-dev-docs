@@ -1,7 +1,8 @@
 # DiffuseProbeResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A resource containing baked diffuse lighting data organized as a tetrahedral probe mesh.
 
@@ -30,29 +31,31 @@ Each probe stores first-order (L0 + L1) spherical harmonics: 4 coefficients per 
 ## Topics
 
 ### Initializers
-- [convenience init(positions: [SIMD3<Float>], coefficients: [InlineArray<3, SIMD4<Float>>], tetrahedronIndices: [SIMD4<UInt16>]) throws](diffuseproberesource/init(positions:coefficients:tetrahedronindices:).md)
+- [convenience init(positions: [SIMD3<Float>], coefficients: [InlineArray<3, SIMD4<Float>>], tetrahedronIndices: [SIMD4<UInt16>]) throws](./diffuseproberesource/init%28positions,coefficients,tetrahedronindices%29.md)
   Creates a diffuse probe resource from arrays of probe data.
 
 ## Relationships
 
 ### Conforms To
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)
+### Related Documentation
+- [struct DiffuseLightProbeGroupComponent](./diffuselightprobegroupcomponent.md)
   A component that stores diffuse probe data for a spatial region.
-- [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)
+- [struct DiffuseLightProbeReceiverComponent](./diffuselightprobereceivercomponent.md)
   A component that receives diffuse lighting from a referenced probe group.
-- [class LightmapResource](lightmapresource.md)
+### Lightmaps and light probes
+- [class LightmapResource](./lightmapresource.md)
   A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene.
-- [struct LightmapComponent](lightmapcomponent.md)
+- [struct LightmapComponent](./lightmapcomponent.md)
   Describes how a lightmap is applied to parts of the scene.
-- [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)
+- [struct DiffuseLightProbeGroupComponent](./diffuselightprobegroupcomponent.md)
   A component that stores diffuse probe data for a spatial region.
-- [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)
+- [struct DiffuseLightProbeReceiverComponent](./diffuselightprobereceivercomponent.md)
   A component that receives diffuse lighting from a referenced probe group.
 
 

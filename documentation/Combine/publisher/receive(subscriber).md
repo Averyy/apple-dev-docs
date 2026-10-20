@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Attaches the specified subscriber to this publisher.
@@ -23,19 +24,20 @@ func receive<S>(subscriber: S) where S : Subscriber, Self.Failure == S.Failure, 
 
 #### Discussion
 
-Implementations of [`Publisher`](publisher.md) must implement this method.
+Implementations of [`Publisher`](../publisher.md) must implement this method.
 
-The provided implementation of [`subscribe(_:)`](publisher/subscribe(_:)-4u8kn.md)calls this method.
+The provided implementation of [`subscribe(_:)`](./subscribe%28_%29-4u8kn.md)calls this method.
 
 ## Parameters
 
-- `subscriber`: The subscriber to attach to this [`Publisher`](publisher.md), after which it can receive values.
+- `subscriber`: The subscriber to attach to this [`Publisher`](../publisher.md), after which it can receive values.
 
 ## See Also
 
-- [func subscribe<S>(S)](publisher/subscribe(_:)-4u8kn.md)
+### Working with subscribers
+- [func subscribe<S>(S)](./subscribe%28_%29-4u8kn.md)
   Attaches the specified subscriber to this publisher.
-- [func subscribe<S>(S) -> AnyCancellable](publisher/subscribe(_:)-3fk20.md)
+- [func subscribe<S>(S) -> AnyCancellable](./subscribe%28_%29-3fk20.md)
   Attaches the specified subject to this publisher.
 
 

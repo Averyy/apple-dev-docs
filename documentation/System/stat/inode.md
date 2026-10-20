@@ -1,7 +1,8 @@
 # inode
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Inode number
 

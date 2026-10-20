@@ -1,7 +1,8 @@
 # init(id:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document creation source with the given identifier.
 
@@ -36,7 +37,7 @@ DocumentGroupLaunchScene("Documents") {
 }
 ```
 
-When a document is created, you can retrieve its source from [`URLDocumentConfiguration`](urldocumentconfiguration.md) or [`FileDocumentConfiguration`](filedocumentconfiguration.md).
+When a document is created, you can retrieve its source from [`URLDocumentConfiguration`](../urldocumentconfiguration.md) or [`FileDocumentConfiguration`](../filedocumentconfiguration.md).
 
 ## Parameters
 

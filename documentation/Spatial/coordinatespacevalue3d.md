@@ -1,7 +1,8 @@
 # CoordinateSpaceValue3D
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An opaque value which can be resolved to a concrete value in a `CoordinateSpace3D`
 
@@ -23,19 +24,20 @@ protocol CoordinateSpaceValue3D<Value>
 ## Topics
 
 ### Associated Types
-- [associatedtype Value : ProjectiveTransformable3D](coordinatespacevalue3d/value.md)
+- [associatedtype Value : ProjectiveTransformable3D](./coordinatespacevalue3d/value.md)
 ### Instance Methods
-- [func resolve<Space>(in: Space) throws -> Self.Value](coordinatespacevalue3d/resolve(in:).md)
+- [func resolve<Space>(in: Space) throws -> Self.Value](./coordinatespacevalue3d/resolve%28in%29.md)
   Resolves the associated value in the given coordinate space.
 
 ## See Also
 
-- [protocol CoordinateSpace3D](coordinatespace3d.md)
+### Converting between coordinate spaces
+- [protocol CoordinateSpace3D](./coordinatespace3d.md)
   A type that represents a coordinate space which you can use to convert values to and from other coordinate spaces.
-- [protocol CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [protocol ProjectiveTransformable3D](projectivetransformable3d.md)
-- [protocol ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
-- [struct WorldReferenceCoordinateSpace](worldreferencecoordinatespace.md)
+- [protocol CoordinateSpace3DFloat](./coordinatespace3dfloat.md)
+- [protocol ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [protocol ProjectiveTransformable3DFloat](./projectivetransformable3dfloat.md)
+- [struct WorldReferenceCoordinateSpace](./worldreferencecoordinatespace.md)
   A coordinate space that represents a world reference point.
 
 

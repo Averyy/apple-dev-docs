@@ -1,7 +1,8 @@
 # HKActivityMoveMode.activeEnergy
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the Move ring measures active energy burned.
 
@@ -19,9 +20,14 @@ A value that indicates the Move ring measures active energy burned.
 case activeEnergy
 ```
 
+```c
+HKActivityMoveModeActiveEnergy
+```
+
 ## See Also
 
-- [HKActivityMoveMode.appleMoveTime](hkactivitymovemode/applemovetime.md)
+### Move Modes
+- [HKActivityMoveMode.appleMoveTime](./applemovetime.md)
   A value that indicates the Activity app’s Move ring measures Apple Move Time.
 
 

@@ -1,7 +1,8 @@
 # errSecEventNotificationCallbackNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An event notification callback was not found.
 
@@ -18,6 +19,10 @@ An event notification callback was not found.
 
 ```swift
 var errSecEventNotificationCallbackNotFound: OSStatus { get }
+```
+
+```c
+errSecEventNotificationCallbackNotFound
 ```
 
 

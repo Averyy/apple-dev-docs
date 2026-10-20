@@ -1,7 +1,8 @@
 # directoryState
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the directory.
 
@@ -18,11 +19,16 @@ The state of the directory.
 var directoryState: GSSyncedDirectoryState { get }
 ```
 
+```objc
+@property (readonly, nonnull) GSSyncedDirectoryState * directoryState;
+```
+
 ## See Also
 
-- [class func open(forContainerIdentifier: String?) -> GSSyncedDirectory](gssynceddirectory/open(forcontaineridentifier:).md)
+### Accessing a directory
+- [class func open(forContainerIdentifier: String?) -> GSSyncedDirectory](./open%28forcontaineridentifier%29.md)
   Requests an instance of the game-save directory.
-- [class GSSyncedDirectoryState](gssynceddirectorystate.md)
+- [class GSSyncedDirectoryState](../gssynceddirectorystate.md)
   Represents the state and its associated properties of the directory
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentAirPurifierState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current air purifier state.
 
@@ -19,27 +20,31 @@ Possible values for the current air purifier state.
 enum HMCharacteristicValueCurrentAirPurifierState
 ```
 
+```c
+enum HMCharacteristicValueCurrentAirPurifierState : NSInteger;
+```
+
 ## Topics
 
 ### Air Purifier States
-- [HMCharacteristicValueCurrentAirPurifierState.inactive](hmcharacteristicvaluecurrentairpurifierstate/inactive.md)
+- [HMCharacteristicValueCurrentAirPurifierState.inactive](./hmcharacteristicvaluecurrentairpurifierstate/inactive.md)
   The air purifier is inactive.
-- [HMCharacteristicValueCurrentAirPurifierState.idle](hmcharacteristicvaluecurrentairpurifierstate/idle.md)
+- [HMCharacteristicValueCurrentAirPurifierState.idle](./hmcharacteristicvaluecurrentairpurifierstate/idle.md)
   The air purifier is idle.
-- [HMCharacteristicValueCurrentAirPurifierState.active](hmcharacteristicvaluecurrentairpurifierstate/active.md)
+- [HMCharacteristicValueCurrentAirPurifierState.active](./hmcharacteristicvaluecurrentairpurifierstate/active.md)
   The air purifier is active.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentairpurifierstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentairpurifierstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

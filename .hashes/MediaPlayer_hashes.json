@@ -1106,7 +1106,7 @@
       "hash": "ed00b25ef7de792438adb99adc7d014dcc1cc5263988e9297cf8e893bb18f9f1"
     },
     "https://developer.apple.com/documentation/mediaplayer/mpmedialibraryauthorizationstatus/denied": {
-      "etag": "\"2b60-65d55c20ce542\"",
+      "etag": "\"2b60-65d55c20ce542-df\"",
       "file_path": "documentation/MediaPlayer/mpmedialibraryauthorizationstatus/denied.md",
       "hash": "9b145262cb9b5abe3ada0740df9a961343f477dd556c235f65db1d7a4165bcda"
     },
@@ -4738,7 +4738,7 @@
       "hash": "ed00b25ef7de792438adb99adc7d014dcc1cc5263988e9297cf8e893bb18f9f1"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediaplayer/mpmedialibraryauthorizationstatus/denied.json": {
-      "etag": "\"2b60-65d55c20ce542\"",
+      "etag": "\"2b60-65d55c20ce542-df\"",
       "file_path": "documentation/MediaPlayer/mpmedialibraryauthorizationstatus/denied.md",
       "hash": "9b145262cb9b5abe3ada0740df9a961343f477dd556c235f65db1d7a4165bcda"
     },
@@ -7254,6 +7254,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1451
   }
 }

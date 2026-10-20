@@ -1,7 +1,8 @@
 # audioEngine
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AVFoundation audio engine used to play audio from audio nodes contained in the scene.
 
@@ -20,6 +21,10 @@ The AVFoundation audio engine used to play audio from audio nodes contained in t
 var audioEngine: AVAudioEngine { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) AVAudioEngine * audioEngine;
+```
+
 #### Discussion
 
 An audio engine instance is automatically created for you when the scene is created. You can use methods and properties on a scene’s audio engine for overall control of all of its child audio nodes. The following code shows how a scene’s overall volume can be reduced from its default of 1.0 down to 0.2 and then paused:
@@ -32,9 +37,10 @@ scene.audioEngine.pause()
 
 ## See Also
 
-- [Using Audio Nodes with the Scene’s Listener](using-audio-nodes-with-the-scene-s-listener.md)
+### Adding Positional Audio
+- [Using Audio Nodes with the Scene’s Listener](../using-audio-nodes-with-the-scene-s-listener.md)
   Add audio to your scene, and optionally give it 2D-positional mixing characteristics.
-- [var listener: SKNode?](skscene/listener.md)
+- [var listener: SKNode?](./listener.md)
   A node used to determine the position of the listener for positional audio in the scene.
 
 

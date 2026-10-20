@@ -1,7 +1,8 @@
 # SubscriptionOfferCodePriceInlineCreate.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodePriceInlineCreate.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodePriceInlineCreate.Relationships.SubscriptionPricePoint](subscriptionoffercodepriceinlinecreate/relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
+- [object SubscriptionOfferCodePriceInlineCreate.Relationships.SubscriptionPricePoint](./relationships-data.dictionary/subscriptionpricepoint-data.dictionary.md)
 ### Dictionaries
-- [object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory](subscriptionoffercodepriceinlinecreate/relationships-data.dictionary/territory-data.dictionary.md)
+- [object SubscriptionOfferCodePriceInlineCreate.Relationships.Territory](./relationships-data.dictionary/territory-data.dictionary.md)
 
 ## Properties
 

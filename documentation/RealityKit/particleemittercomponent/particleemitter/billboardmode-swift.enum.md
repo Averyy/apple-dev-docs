@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.BillboardMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options for specifying the axis about which the particle will be oriented, used by the `billboardMode` property.
 
@@ -22,20 +23,20 @@ enum BillboardMode
 ## Topics
 
 ### Enumeration Cases
-- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboard](particleemittercomponent/particleemitter/billboardmode-swift.enum/billboard.md)
+- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboard](./billboardmode-swift.enum/billboard.md)
   Each particle is oriented to face the camera.
-- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboardYAligned](particleemittercomponent/particleemitter/billboardmode-swift.enum/billboardyaligned.md)
+- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.billboardYAligned](./billboardmode-swift.enum/billboardyaligned.md)
   Each particle is oriented to face the camera but remains fixed about the y-axis
-- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.free(axis:variation:)](particleemittercomponent/particleemitter/billboardmode-swift.enum/free(axis:variation:).md)
+- [ParticleEmitterComponent.ParticleEmitter.BillboardMode.free(axis:variation:)](./billboardmode-swift.enum/free%28axis,variation%29.md)
   The axis about which the particle will be oriented is the given `axis`. The `variation` is a unit multiplier that determines how far from the given axis the particle is allowed to actually be oriented.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

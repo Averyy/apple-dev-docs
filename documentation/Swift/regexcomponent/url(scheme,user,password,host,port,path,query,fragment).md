@@ -1,7 +1,8 @@
 # url(scheme:user:password:host:port:path:query:fragment:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a regex component that matches a URL substring, capturing it as a Foundation URL.
 
@@ -20,19 +21,21 @@ Creates a regex component that matches a URL substring, capturing it as a Founda
 static func url(scheme: URL.ParseStrategy.ComponentParseStrategy<String> = .required, user: URL.ParseStrategy.ComponentParseStrategy<String> = .optional, password: URL.ParseStrategy.ComponentParseStrategy<String> = .optional, host: URL.ParseStrategy.ComponentParseStrategy<String> = .required, port: URL.ParseStrategy.ComponentParseStrategy<Int> = .optional, path: URL.ParseStrategy.ComponentParseStrategy<String> = .optional, query: URL.ParseStrategy.ComponentParseStrategy<String> = .optional, fragment: URL.ParseStrategy.ComponentParseStrategy<String> = .optional) -> Self
 ```
 
+Available when `Self` is `URL.ParseStrategy`.
+
 #### Return Value
 
 A `RegexComponent` that matches a URL.
 
 #### Discussion
 
-All the parameters to this method take a [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) value to configure the matching behavior for one component of the URL. The three possible values are:
+All the parameters to this method take a [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) value to configure the matching behavior for one component of the URL. The three possible values are:
 
-- [`URL.ParseStrategy.ComponentParseStrategy.required`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/required) — The URL component needs to be present for matching to succeed.
-- [`URL.ParseStrategy.ComponentParseStrategy.optional`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/optional) — The URL component doesn’t need to be present for matching to succeed.
-- [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/defaultvalue(_:)) — If the URL component is absent, the captured URL contains the provided default value for the component.
+- [`URL.ParseStrategy.ComponentParseStrategy.required`](../../Foundation/url/parsestrategy/componentparsestrategy/required.md) — The URL component needs to be present for matching to succeed.
+- [`URL.ParseStrategy.ComponentParseStrategy.optional`](../../Foundation/url/parsestrategy/componentparsestrategy/optional.md) — The URL component doesn’t need to be present for matching to succeed.
+- [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](../../Foundation/url/parsestrategy/componentparsestrategy/defaultvalue%28_%29.md) — If the URL component is absent, the captured URL contains the provided default value for the component.
 
-The following example creates a [`Regex`](regex.md) that matches a URL, when it contains a scheme and a host. It then matches against a source string that contains a date formatted in the `en_US` locale, some whitespace, and a valid URL. The regex defines a default value for the port with [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy/defaultvalue(_:)), and because the source URL doesn’t include a port, the captured URL adds it.
+The following example creates a [`Regex`](../regex.md) that matches a URL, when it contains a scheme and a host. It then matches against a source string that contains a date formatted in the `en_US` locale, some whitespace, and a valid URL. The regex defines a default value for the port with [`URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)`](../../Foundation/url/parsestrategy/componentparsestrategy/defaultvalue%28_%29.md), and because the source URL doesn’t include a port, the captured URL adds it.
 
 ```swift
 let source = "7/31/2022, 5:15:12 AM  https://www.example.com/productList?query=slushie"
@@ -59,14 +62,14 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 
 ## Parameters
 
-- `scheme`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the URL scheme component.
-- `user`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the user component.
-- `password`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the password component.
-- `host`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the host component.
-- `port`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the port component.
-- `path`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the path component.
-- `query`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the query component.
-- `fragment`: A [`URL.ParseStrategy.ComponentParseStrategy`](https://developer.apple.com/documentation/foundation/url/parsestrategy/componentparsestrategy) for matching the fragment component.
+- `scheme`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the URL scheme component.
+- `user`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the user component.
+- `password`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the password component.
+- `host`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the host component.
+- `port`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the port component.
+- `path`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the path component.
+- `query`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the query component.
+- `fragment`: A [`URL.ParseStrategy.ComponentParseStrategy`](../../Foundation/url/parsestrategy/componentparsestrategy.md) for matching the fragment component.
 
 
 ---

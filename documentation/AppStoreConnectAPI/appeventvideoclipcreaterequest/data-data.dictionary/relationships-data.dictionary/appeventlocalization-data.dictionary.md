@@ -1,21 +1,24 @@
 # AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryVideoCreateRequest`](../../../appassetlibraryvideocreaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization.Data](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary/data-data.dictionary.md)
+- [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization.Data](./appeventlocalization-data.dictionary/data-data.dictionary.md)
   The request body you use to create an app event video clip.
 
 ## Properties

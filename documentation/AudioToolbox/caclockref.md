@@ -1,10 +1,11 @@
 # CAClockRef
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 typealias CAClockRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueCAClock * CAClockRef;
+```
+
 ## See Also
 
-- [func CAClockNew(UInt32, UnsafeMutablePointer<CAClockRef?>) -> OSStatus](caclocknew(_:_:).md)
-- [func CAClockDispose(CAClockRef) -> OSStatus](caclockdispose(_:).md)
+### Creating a Clock
+- [func CAClockNew(UInt32, UnsafeMutablePointer<CAClockRef?>) -> OSStatus](./caclocknew%28_,_%29.md)
+- [func CAClockDispose(CAClockRef) -> OSStatus](./caclockdispose%28_%29.md)
 
 
 ---

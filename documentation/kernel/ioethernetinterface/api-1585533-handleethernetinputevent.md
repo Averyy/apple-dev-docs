@@ -1,14 +1,15 @@
 # handleEthernetInputEvent
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static void handleEthernetInputEvent(thread_call_param_t param0, thread_call_param_t param1);
 ```
 

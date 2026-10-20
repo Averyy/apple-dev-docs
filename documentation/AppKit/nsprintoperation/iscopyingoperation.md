@@ -1,12 +1,13 @@
 # isCopyingOperation
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the print operation is an EPS or PDF copy operation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether the print operation is an EPS or PDF copy
 var isCopyingOperation: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCopyingOperation) BOOL copyingOperation;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver is an EPS or PDF copy operation; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver is an EPS or PDF copy operation; otherwise, [`false`](../../Swift/false.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # CMFormatDescriptionGetMediaSubType(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the media subtype of a format description.
 
@@ -20,6 +21,10 @@ Returns the media subtype of a format description.
 func CMFormatDescriptionGetMediaSubType(_ desc: CMFormatDescription) -> FourCharCode
 ```
 
+```c
+extern FourCharCode CMFormatDescriptionGetMediaSubType(CMFormatDescriptionRef desc);
+```
+
 #### Return Value
 
 A media type that identifies the subtype of the `CMFormatDescription`.
@@ -36,13 +41,14 @@ For example, the function returns `aac` for a description of an AAC audio stream
 
 ## See Also
 
-- [func CMFormatDescriptionGetMediaType(CMFormatDescription) -> CMMediaType](cmformatdescriptiongetmediatype(_:).md)
+### Inspecting Format Descriptions
+- [func CMFormatDescriptionGetMediaType(CMFormatDescription) -> CMMediaType](./cmformatdescriptiongetmediatype%28_%29.md)
   Returns the media type of a format description.
-- [func CMFormatDescriptionGetExtension(CMFormatDescription, extensionKey: CFString) -> CFPropertyList?](cmformatdescriptiongetextension(_:extensionkey:).md)
+- [func CMFormatDescriptionGetExtension(CMFormatDescription, extensionKey: CFString) -> CFPropertyList?](./cmformatdescriptiongetextension%28_,extensionkey%29.md)
   Returns an extension from the format description by using an extension key.
-- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](cmformatdescriptiongetextensions(_:).md)
+- [func CMFormatDescriptionGetExtensions(CMFormatDescription) -> CFDictionary?](./cmformatdescriptiongetextensions%28_%29.md)
   Returns all of the extensions for a format description.
-- [func CMFormatDescriptionGetTypeID() -> CFTypeID](cmformatdescriptiongettypeid().md)
+- [func CMFormatDescriptionGetTypeID() -> CFTypeID](./cmformatdescriptiongettypeid%28%29.md)
   Returns the Core Foundation type identifier that identifies format description objects.
 
 

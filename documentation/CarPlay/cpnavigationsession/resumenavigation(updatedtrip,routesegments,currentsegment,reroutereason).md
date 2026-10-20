@@ -1,7 +1,8 @@
 # resumeNavigation(updatedTrip:routeSegments:currentSegment:rerouteReason:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume navigation with an updated trip and route segments for cases such as the trip destination changing.
 
@@ -14,6 +15,10 @@ Resume navigation with an updated trip and route segments for cases such as the 
 
 ```swift
 func resumeNavigation(updatedTrip trip: CPTrip, routeSegments: [CPRouteSegment], currentSegment: CPRouteSegment, rerouteReason: CPRerouteReason)
+```
+
+```objc
+- (void) resumeNavigationWithUpdatedTrip:(CPTrip *) trip routeSegments:(NSArray<CPRouteSegment *> *) routeSegments currentSegment:(CPRouteSegment *) currentSegment rerouteReason:(CPRerouteReason) rerouteReason;
 ```
 
 ## Parameters

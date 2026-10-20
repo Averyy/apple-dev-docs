@@ -1,7 +1,8 @@
 # falloffStart
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth (in meters) inside the volume at which the total force starts to linearly fall off.
 
@@ -22,7 +23,8 @@ For particles whose depth is greater than or equal to `falloffStart`, the full f
 
 ## See Also
 
-- [var shape: ClothVolumeShape](clothforcevolumecomponent/shape.md)
+### Shaping the volume
+- [var shape: ClothVolumeShape](./shape.md)
   The shape of the volume.
 
 

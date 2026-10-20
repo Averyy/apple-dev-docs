@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width of a stripe.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The width of a stripe.
 var width: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float width;
+```
+
 ## See Also
 
-- [var center: CGPoint](cistripesgenerator/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the stripe pattern.
-- [var color0: CIColor](cistripesgenerator/color0.md)
+- [var color0: CIColor](./color0.md)
   A color to use for the odd stripes.
-- [var color1: CIColor](cistripesgenerator/color1.md)
+- [var color1: CIColor](./color1.md)
   A color to use for the even stripes.
-- [var sharpness: Float](cistripesgenerator/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the stripe pattern.
 
 

@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image’s delegate object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: (any NSImageDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSImageDelegate> delegate;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ By default, this property contains `nil`.
 
 ## See Also
 
-- [protocol NSImageDelegate](nsimagedelegate.md)
+### Managing Loading and Drawing of Images
+- [protocol NSImageDelegate](../nsimagedelegate.md)
   A set of optional methods that you can use to respond to drawing failures and manage incremental loads.
 
 

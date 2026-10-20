@@ -1,14 +1,15 @@
 # guidance(using:at:)
 
 **Framework**: EnergyKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an async sequence of electricity guidance forecasts for the requested venue with cost information incorporated, if available.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,12 +19,12 @@ final func guidance(using query: ElectricityGuidance.Query, at energyVenueID: UU
 
 #### Return Value
 
-Returns an `AsyncSequence` of [`ElectricityGuidance`](electricityguidance.md) forecasts with error type [`EnergyKitError.guidanceUnavailable`](energykiterror/guidanceunavailable.md).
+Returns an `AsyncSequence` of [`ElectricityGuidance`](../../electricityguidance.md) forecasts with error type [`EnergyKitError.guidanceUnavailable`](../../energykiterror/guidanceunavailable.md).
 
 ## Parameters
 
-- `query`: The [`ElectricityGuidance.Query`](electricityguidance/query.md) that you request.
-- `energyVenueID`: The [`EnergyVenue`](energyvenue.md) at which the devices consume electricity.
+- `query`: The [`ElectricityGuidance.Query`](../query.md) that you request.
+- `energyVenueID`: The [`EnergyVenue`](../../energyvenue.md) at which the devices consume electricity.
 
 
 ---

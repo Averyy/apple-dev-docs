@@ -1,7 +1,8 @@
 # MTL4CommandQueueError.Code.internal
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an internal problem in the Metal framework.
 
@@ -17,6 +18,10 @@ Indicates an internal problem in the Metal framework.
 
 ```swift
 case `internal`
+```
+
+```c
+MTL4CommandQueueErrorInternal
 ```
 
 

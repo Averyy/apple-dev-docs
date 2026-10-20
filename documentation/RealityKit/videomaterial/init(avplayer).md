@@ -1,7 +1,8 @@
 # init(avPlayer:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new video material.
 
@@ -11,7 +12,7 @@ Creates a new video material.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ Creates a new video material.
 
 #### Discussion
 
-To create a video material, first create an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance initialized with a URL that points to the movie file you want the video material to play, then pass that to this initializer. The following code demonstrates this process.
+To create a video material, first create an [`AVPlayer`](../../AVFoundation/avplayer.md) instance initialized with a URL that points to the movie file you want the video material to play, then pass that to this initializer. The following code demonstrates this process.
 
 ```swift
 // Create a URL that points to the movie file.
@@ -48,7 +49,7 @@ if let url = Bundle.main.url(forResource: "MyMovie", withExtension: "mp4") {
 
 ## Parameters
 
-- `avPlayer`: An [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) instance.
+- `avPlayer`: An [`AVPlayer`](../../AVFoundation/avplayer.md) instance.
 
 
 ---

@@ -1,7 +1,8 @@
 # SecKeychainEvent.deleteEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates an item was deleted from a keychain.
 
@@ -13,6 +14,10 @@ Indicates an item was deleted from a keychain.
 
 ```swift
 case deleteEvent
+```
+
+```c
+kSecDeleteEvent
 ```
 
 

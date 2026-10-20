@@ -1,7 +1,8 @@
 # AccessoryControlDevice
 
 **Framework**: AudioAccessoryKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object that manages audio accessory capabilities and state.
 
@@ -16,7 +17,7 @@ final class AccessoryControlDevice
 
 ## Mentions
 
-- [Supporting automatic audio switching for third-party accessories](supporting-automatic-audio-switching.md)
+- [Supporting automatic audio switching for third-party accessories](./supporting-automatic-audio-switching.md)
 
 #### Overview
 
@@ -25,28 +26,28 @@ This class registers your paired audio accessory with the system and provides up
 ## Topics
 
 ### Accessing the current configuration
-- [static func current(for: ASAccessory) throws -> AccessoryControlDevice](accessorycontroldevice/current(for:).md)
+- [static func current(for: ASAccessory) throws -> AccessoryControlDevice](./accessorycontroldevice/current%28for%29.md)
   Retrieves the accessory’s current configuration.
 ### Registering the device
-- [static func register(ASAccessory, AccessoryControlDevice.Configuration) async throws](accessorycontroldevice/register(_:_:).md)
+- [static func register(ASAccessory, AccessoryControlDevice.Configuration) async throws](./accessorycontroldevice/register%28_,_%29.md)
   Registers the audio accessory with the system and activates its configured capabilities.
 ### Updating device state
-- [func update(AccessoryControlDevice.Configuration) async throws](accessorycontroldevice/update(_:).md)
+- [func update(AccessoryControlDevice.Configuration) async throws](./accessorycontroldevice/update%28_%29.md)
   Updates the accessory’s configuration.
 ### Inspecting the accessory
-- [let accessory: ASAccessory](accessorycontroldevice/accessory.md)
+- [let accessory: ASAccessory](./accessorycontroldevice/accessory.md)
   An AccessorySetupKit accessory that represents the audio device.
-- [var configuration: AccessoryControlDevice.Configuration](accessorycontroldevice/configuration-swift.property.md)
+- [var configuration: AccessoryControlDevice.Configuration](./accessorycontroldevice/configuration-swift.property.md)
   The current configuration of the device.
 ### Defining device characteristics
-- [AccessoryControlDevice.Placement](accessorycontroldevice/placement.md)
+- [AccessoryControlDevice.Placement](./accessorycontroldevice/placement.md)
   The physical placement of an audio accessory.
-- [AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities.md)
+- [AccessoryControlDevice.Capabilities](./accessorycontroldevice/capabilities.md)
   A set of capabilities that an audio accessory supports.
-- [AccessoryControlDevice.Configuration](accessorycontroldevice/configuration-swift.struct.md)
+- [AccessoryControlDevice.Configuration](./accessorycontroldevice/configuration-swift.struct.md)
   The configuration for an accessory.
 ### Handling errors
-- [AccessoryControlDevice.Error](accessorycontroldevice/error.md)
+- [AccessoryControlDevice.Error](./accessorycontroldevice/error.md)
   An error that occurs during audio accessory configuration operations.
 
 

@@ -1,9 +1,10 @@
 # replace(deviceResource:using:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Replaces this object’s underlying texture with an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
+Replaces this object’s underlying texture with an existing [`LowLevelDeviceResource`](../lowleveldeviceresource.md) created and managed by the application.
 
 **Availability**:
 - iOS 27.0+
@@ -27,7 +28,7 @@ While it’s valid to replace a LowLevelTexture with an externally-managed textu
 ## Parameters
 
 - `deviceResource`: The underlying texture this object should refer to.
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
+- `commandBuffer`: The [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
 
 
 ---

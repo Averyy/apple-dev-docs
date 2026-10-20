@@ -1,7 +1,8 @@
 # kCGImageDestinationPreserveGainMap
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether to include a HEIF-embedded gain map in the image data.
 
@@ -20,33 +21,38 @@ A Boolean value that indicates whether to include a HEIF-embedded gain map in th
 let kCGImageDestinationPreserveGainMap: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageDestinationPreserveGainMap;
+```
+
 #### Discussion
 
-The value of this key must be a [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) value. The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). If you scale the destination image using the [`kCGImageDestinationImageMaxPixelSize`](kcgimagedestinationimagemaxpixelsize.md) key, the destination also scales the gain map.
+The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). If you scale the destination image using the [`kCGImageDestinationImageMaxPixelSize`](./kcgimagedestinationimagemaxpixelsize.md) key, the destination also scales the gain map.
 
 ## See Also
 
-- [let kCGImageDestinationLossyCompressionQuality: CFString](kcgimagedestinationlossycompressionquality.md)
+### Configuring the Image Behaviors
+- [let kCGImageDestinationLossyCompressionQuality: CFString](./kcgimagedestinationlossycompressionquality.md)
   The desired compression quality to use when writing the image data.
-- [let kCGImageDestinationBackgroundColor: CFString](kcgimagedestinationbackgroundcolor.md)
+- [let kCGImageDestinationBackgroundColor: CFString](./kcgimagedestinationbackgroundcolor.md)
   The background color to use when the image has an alpha component, but the destination format doesn’t support alpha.
-- [let kCGImageDestinationDateTime: CFString](kcgimagedestinationdatetime.md)
+- [let kCGImageDestinationDateTime: CFString](./kcgimagedestinationdatetime.md)
   The date and time information to associate with the image.
-- [let kCGImageDestinationEmbedThumbnail: CFString](kcgimagedestinationembedthumbnail.md)
+- [let kCGImageDestinationEmbedThumbnail: CFString](./kcgimagedestinationembedthumbnail.md)
   A Boolean value that indicates whether to embed a thumbnail for JPEG and HEIF images.
-- [let kCGImageDestinationImageMaxPixelSize: CFString](kcgimagedestinationimagemaxpixelsize.md)
+- [let kCGImageDestinationImageMaxPixelSize: CFString](./kcgimagedestinationimagemaxpixelsize.md)
   The maximum width and height of the image, in pixels.
-- [let kCGImageDestinationMetadata: CFString](kcgimagedestinationmetadata.md)
+- [let kCGImageDestinationMetadata: CFString](./kcgimagedestinationmetadata.md)
   The metadata tags to include with the image.
-- [let kCGImageDestinationMergeMetadata: CFString](kcgimagedestinationmergemetadata.md)
+- [let kCGImageDestinationMergeMetadata: CFString](./kcgimagedestinationmergemetadata.md)
   A Boolean value that indicates whether to merge new metadata with the image’s existing metadata.
-- [let kCGImageDestinationOptimizeColorForSharing: CFString](kcgimagedestinationoptimizecolorforsharing.md)
+- [let kCGImageDestinationOptimizeColorForSharing: CFString](./kcgimagedestinationoptimizecolorforsharing.md)
   A Boolean value that indicates whether to create the image using a colorspace.
-- [let kCGImageDestinationOrientation: CFString](kcgimagedestinationorientation.md)
+- [let kCGImageDestinationOrientation: CFString](./kcgimagedestinationorientation.md)
   The orientation of the image, specified as an EXIF value in the range 1 to 8.
-- [let kCGImageMetadataShouldExcludeGPS: CFString](kcgimagemetadatashouldexcludegps.md)
+- [let kCGImageMetadataShouldExcludeGPS: CFString](./kcgimagemetadatashouldexcludegps.md)
   A Boolean value that indicates whether to exclude GPS metadata from EXIF data or the corresponding XMP tags.
-- [let kCGImageMetadataShouldExcludeXMP: CFString](kcgimagemetadatashouldexcludexmp.md)
+- [let kCGImageMetadataShouldExcludeXMP: CFString](./kcgimagemetadatashouldexcludexmp.md)
   A Boolean value that indicates whether to exclude XMP data from the destination.
 
 

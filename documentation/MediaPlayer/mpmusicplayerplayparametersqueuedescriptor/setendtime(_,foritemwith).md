@@ -1,7 +1,8 @@
 # setEndTime(_:forItemWith:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time the item with the associated play parameters is to stop playing.
 
@@ -18,14 +19,19 @@ Sets the time the item with the associated play parameters is to stop playing.
 func setEndTime(_ endTime: TimeInterval, forItemWith playParameters: MPMusicPlayerPlayParameters)
 ```
 
+```objc
+- (void) setEndTime:(NSTimeInterval) endTime forItemWithPlayParameters:(MPMusicPlayerPlayParameters *) playParameters;
+```
+
 ## Parameters
 
-- `endTime`: The [`TimeInterval`](https://developer.apple.com/documentation/foundation/timeinterval) describing when the item with designated play parameters stops playing.
+- `endTime`: The [`TimeInterval`](../../Foundation/timeinterval.md) describing when the item with designated play parameters stops playing.
 - `playParameters`: The play parameters associated with the item in the queue that has a changed end time.
 
 ## See Also
 
-- [func setStartTime(TimeInterval, forItemWith: MPMusicPlayerPlayParameters)](mpmusicplayerplayparametersqueuedescriptor/setstarttime(_:foritemwith:).md)
+### Setting start and end times
+- [func setStartTime(TimeInterval, forItemWith: MPMusicPlayerPlayParameters)](./setstarttime%28_,foritemwith%29.md)
   Sets the time the item with the associated play parameters is to start playing.
 
 

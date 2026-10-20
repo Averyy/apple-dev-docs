@@ -1,20 +1,22 @@
 # OSActionInterface
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```cpp
 class OSActionInterface : OSInterface
 ```
 
 ## See Also
 
-- [OSAction](osaction.md)
+### Actions
+- [OSAction](./osaction.md)
 
 
 ---

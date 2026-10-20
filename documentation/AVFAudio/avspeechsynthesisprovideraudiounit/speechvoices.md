@@ -1,7 +1,8 @@
 # speechVoices
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of voices the audio unit provides to the system.
 
@@ -19,13 +20,18 @@ A list of voices the audio unit provides to the system.
 var speechVoices: [AVSpeechSynthesisProviderVoice] { get set }
 ```
 
+```objc
+@property (nonatomic, strong) NSArray<AVSpeechSynthesisProviderVoice *> * speechVoices;
+```
+
 #### Discussion
 
 The list of voices that a user selects through Settings. Speech synthesizer audio unit extensions must provide this list. Override the getter to perform complex fetches that provide a dynamic list of voices.
 
 ## See Also
 
-- [class AVSpeechSynthesisProviderVoice](avspeechsynthesisprovidervoice.md)
+### Getting and setting voices
+- [class AVSpeechSynthesisProviderVoice](../avspeechsynthesisprovidervoice.md)
   An object that represents a voice that an audio unit provides to its host.
 
 

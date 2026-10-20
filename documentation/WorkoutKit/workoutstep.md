@@ -1,7 +1,8 @@
 # WorkoutStep
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A step in a workout.
 
@@ -21,37 +22,38 @@ struct WorkoutStep
 ## Topics
 
 ### Creating new workout steps
-- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
+- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?)](./workoutstep/init%28goal,alert%29.md)
   Creates a new workout step with the provided goal and alerts.
 ### Accessing step data
-- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (any WorkoutAlert)?](./workoutstep/alert.md)
   Alerts used during the step.
-- [var goal: WorkoutGoal](workoutstep/goal.md)
+- [var goal: WorkoutGoal](./workoutstep/goal.md)
   A goal that determines when the step ends.
 ### Initializers
-- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?, displayName: String?)](workoutstep/init(goal:alert:displayname:).md)
+- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?, displayName: String?)](./workoutstep/init%28goal,alert,displayname%29.md)
 ### Instance Properties
-- [var displayName: String?](workoutstep/displayname.md)
+- [var displayName: String?](./workoutstep/displayname.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CustomWorkout](customworkout.md)
+### Custom interval workouts
+- [struct CustomWorkout](./customworkout.md)
   A workout that includes a repeating series of work and recovery steps.
-- [struct IntervalBlock](intervalblock.md)
+- [struct IntervalBlock](./intervalblock.md)
   Blocks of work and recovery steps that repeat in a custom workout.
-- [struct IntervalStep](intervalstep.md)
+- [struct IntervalStep](./intervalstep.md)
   An interval that represents a work or recovery step in a workout.
-- [enum WorkoutGoal](workoutgoal.md)
+- [enum WorkoutGoal](./workoutgoal.md)
   A value that specifies the goal for a workout.
-- [protocol WorkoutAlert](workoutalert.md)
+- [protocol WorkoutAlert](./workoutalert.md)
   An alert that notifies the user of significant events during a workout.
 
 

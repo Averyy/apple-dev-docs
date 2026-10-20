@@ -1,7 +1,8 @@
 # MDLTransformStack
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,41 +18,45 @@
 class MDLTransformStack
 ```
 
+```objc
+@interface MDLTransformStack : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mdltransformstack/init.md)
+- [init()](./mdltransformstack/init%28%29.md)
 ### Instance Properties
-- [var keyTimes: [NSNumber]](mdltransformstack/keytimes.md)
-- [var transformOps: [any MDLTransformOp]](mdltransformstack/transformops.md)
+- [var keyTimes: [NSNumber]](./mdltransformstack/keytimes.md)
+- [var transformOps: [any MDLTransformOp]](./mdltransformstack/transformops.md)
 ### Instance Methods
-- [func addMatrixOp(String, inverse: Bool) -> MDLTransformMatrixOp](mdltransformstack/addmatrixop(_:inverse:).md)
-- [func addOrientOp(String, inverse: Bool) -> MDLTransformOrientOp](mdltransformstack/addorientop(_:inverse:).md)
-- [func addRotateOp(String, order: MDLTransformOpRotationOrder, inverse: Bool) -> MDLTransformRotateOp](mdltransformstack/addrotateop(_:order:inverse:).md)
-- [func addRotateXOp(String, inverse: Bool) -> MDLTransformRotateXOp](mdltransformstack/addrotatexop(_:inverse:).md)
-- [func addRotateYOp(String, inverse: Bool) -> MDLTransformRotateYOp](mdltransformstack/addrotateyop(_:inverse:).md)
-- [func addRotateZOp(String, inverse: Bool) -> MDLTransformRotateZOp](mdltransformstack/addrotatezop(_:inverse:).md)
-- [func addScaleOp(String, inverse: Bool) -> MDLTransformScaleOp](mdltransformstack/addscaleop(_:inverse:).md)
-- [func addTranslateOp(String, inverse: Bool) -> MDLTransformTranslateOp](mdltransformstack/addtranslateop(_:inverse:).md)
-- [func animatedValue(withName: String) -> MDLAnimatedValue](mdltransformstack/animatedvalue(withname:).md)
-- [func count() -> Int](mdltransformstack/count.md)
-- [func double4x4(atTime: TimeInterval) -> matrix_double4x4](mdltransformstack/double4x4(attime:).md)
-- [func float4x4(atTime: TimeInterval) -> matrix_float4x4](mdltransformstack/float4x4(attime:).md)
+- [func addMatrixOp(String, inverse: Bool) -> MDLTransformMatrixOp](./mdltransformstack/addmatrixop%28_,inverse%29.md)
+- [func addOrientOp(String, inverse: Bool) -> MDLTransformOrientOp](./mdltransformstack/addorientop%28_,inverse%29.md)
+- [func addRotateOp(String, order: MDLTransformOpRotationOrder, inverse: Bool) -> MDLTransformRotateOp](./mdltransformstack/addrotateop%28_,order,inverse%29.md)
+- [func addRotateXOp(String, inverse: Bool) -> MDLTransformRotateXOp](./mdltransformstack/addrotatexop%28_,inverse%29.md)
+- [func addRotateYOp(String, inverse: Bool) -> MDLTransformRotateYOp](./mdltransformstack/addrotateyop%28_,inverse%29.md)
+- [func addRotateZOp(String, inverse: Bool) -> MDLTransformRotateZOp](./mdltransformstack/addrotatezop%28_,inverse%29.md)
+- [func addScaleOp(String, inverse: Bool) -> MDLTransformScaleOp](./mdltransformstack/addscaleop%28_,inverse%29.md)
+- [func addTranslateOp(String, inverse: Bool) -> MDLTransformTranslateOp](./mdltransformstack/addtranslateop%28_,inverse%29.md)
+- [func animatedValue(withName: String) -> MDLAnimatedValue](./mdltransformstack/animatedvalue%28withname%29.md)
+- [func count() -> Int](./mdltransformstack/count%28%29.md)
+- [func double4x4(atTime: TimeInterval) -> matrix_double4x4](./mdltransformstack/double4x4%28attime%29.md)
+- [func float4x4(atTime: TimeInterval) -> matrix_float4x4](./mdltransformstack/float4x4%28attime%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLComponent](mdlcomponent.md)
-- [MDLTransformComponent](mdltransformcomponent.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLComponent](./mdlcomponent.md)
+- [MDLTransformComponent](./mdltransformcomponent.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

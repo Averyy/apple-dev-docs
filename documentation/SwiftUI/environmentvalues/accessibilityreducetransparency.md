@@ -1,7 +1,8 @@
 # accessibilityReduceTransparency
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the system preference for Reduce Transparency is enabled.
 
@@ -26,11 +27,12 @@ If this property’s value is true, UI (mainly window) backgrounds should not be
 
 ## See Also
 
-- [var legibilityWeight: LegibilityWeight?](environmentvalues/legibilityweight.md)
+### Improving legibility
+- [var legibilityWeight: LegibilityWeight?](./legibilityweight.md)
   The font weight to apply to text.
-- [enum LegibilityWeight](legibilityweight.md)
+- [enum LegibilityWeight](../legibilityweight.md)
   The Accessibility Bold Text user setting options.
-- [var accessibilityShowButtonShapes: Bool](environmentvalues/accessibilityshowbuttonshapes.md)
+- [var accessibilityShowButtonShapes: Bool](./accessibilityshowbuttonshapes.md)
   Whether the system preference for Show Button Shapes is enabled.
 
 

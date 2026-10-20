@@ -1,17 +1,22 @@
 # subrowsKeyPath
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The key path for the subrows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var subrowsKeyPath: String { get set }
+```
+
+```objc
+@property (copy) NSString * subrowsKeyPath;
 ```
 
 #### Discussion
@@ -22,13 +27,14 @@ The default value is `@"subrows"`.
 
 ## See Also
 
-- [var rowClass: AnyClass](nsruleeditor/rowclass.md)
+### Supporting Bindings
+- [var rowClass: AnyClass](./rowclass.md)
   The class used to create a new row in the “rows” binding.
-- [var rowTypeKeyPath: String](nsruleeditor/rowtypekeypath.md)
+- [var rowTypeKeyPath: String](./rowtypekeypath.md)
   The key path for the row type.
-- [var criteriaKeyPath: String](nsruleeditor/criteriakeypath.md)
+- [var criteriaKeyPath: String](./criteriakeypath.md)
   The criteria key path.
-- [var displayValuesKeyPath: String](nsruleeditor/displayvalueskeypath.md)
+- [var displayValuesKeyPath: String](./displayvalueskeypath.md)
   The display values key path.
 
 

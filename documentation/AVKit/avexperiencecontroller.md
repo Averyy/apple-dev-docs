@@ -1,7 +1,8 @@
 # AVExperienceController
 
 **Framework**: AVKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls video experiences.
 
@@ -17,62 +18,63 @@ final class AVExperienceController
 
 #### Overview
 
-Use this class to control, observe, and respond to experience changes for an [`AVPlayerViewController`](avplayerviewcontroller.md). After you attach an experience controller, the player view controller no longer honors its presentation APIs. Using the other presentation APIs may preclude the use of this class.
+Use this class to control, observe, and respond to experience changes for an [`AVPlayerViewController`](./avplayerviewcontroller.md). After you attach an experience controller, the player view controller no longer honors its presentation APIs. Using the other presentation APIs may preclude the use of this class.
 
 ## Topics
 
 ### Configuring the experience
-- [var allowedExperiences: AVExperienceController.Experiences](avexperiencecontroller/allowedexperiences.md)
+- [var allowedExperiences: AVExperienceController.Experiences](./avexperiencecontroller/allowedexperiences.md)
   The set of experiences the app supports.
-- [var availableExperiences: AVExperienceController.Experiences](avexperiencecontroller/availableexperiences.md)
+- [var availableExperiences: AVExperienceController.Experiences](./avexperiencecontroller/availableexperiences.md)
   The allowed experiences that are available to use on the device at this time.
-- [AVExperienceController.Experiences](avexperiencecontroller/experiences.md)
+- [AVExperienceController.Experiences](./avexperiencecontroller/experiences.md)
   A structure that represents a collection of experiences to use with an experience controller.
-- [var experience: AVExperienceController.Experience](avexperiencecontroller/experience-swift.property.md)
+- [var experience: AVExperienceController.Experience](./avexperiencecontroller/experience-swift.property.md)
   The current experience.
-- [AVExperienceController.Experience](avexperiencecontroller/experience-swift.enum.md)
+- [AVExperienceController.Experience](./avexperiencecontroller/experience-swift.enum.md)
   The types of experiences the system supports.
-- [var configuration: AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.property.md)
+- [var configuration: AVExperienceController.Configuration](./avexperiencecontroller/configuration-swift.property.md)
   The configuration options per experience.
-- [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
+- [AVExperienceController.Configuration](./avexperiencecontroller/configuration-swift.struct.md)
   Options that configure each experience.
 ### Transitioning experiences
-- [AVExperienceController.TransitionGroup](avexperiencecontroller/transitiongroup.md)
+- [AVExperienceController.TransitionGroup](./avexperiencecontroller/transitiongroup.md)
   A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
-- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](avexperiencecontroller/withtransitiongroup(body:).md)
+- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](./avexperiencecontroller/withtransitiongroup%28body%29.md)
   Coordinates multiple experience transitions to perform together as a single visual transition.
-- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transition(to:).md)
+- [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](./avexperiencecontroller/transition%28to%29.md)
   Transitions the video to a different experience.
 ### Configuring a delegate
-- [var delegate: (any AVExperienceController.Delegate)?](avexperiencecontroller/delegate-swift.property.md)
+- [var delegate: (any AVExperienceController.Delegate)?](./avexperiencecontroller/delegate-swift.property.md)
   A delegate object for the experience controller.
-- [AVExperienceController.Delegate](avexperiencecontroller/delegate-swift.protocol.md)
+- [AVExperienceController.Delegate](./avexperiencecontroller/delegate-swift.protocol.md)
   A protocol that defines the methods to implement to respond to experience changes.
 ### Structures
-- [AVExperienceController.ExpandedConfiguration](avexperiencecontroller/expandedconfiguration.md)
+- [AVExperienceController.ExpandedConfiguration](./avexperiencecontroller/expandedconfiguration.md)
   A structure that specifies options for an expanded experience.
-- [AVExperienceController.TransitionContext](avexperiencecontroller/transitioncontext.md)
+- [AVExperienceController.TransitionContext](./avexperiencecontroller/transitioncontext.md)
   The state of the transition that the system provides to the delegate object.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
+### Immersive and multiview media
+- [Playing immersive media with AVKit](./playing-immersive-media-with-avkit.md)
   Adopt the system playback interface to provide an immersive video watching experience.
-- [Creating a multiview video playback experience in visionOS](creating-a-multiview-video-playback-experience-in-visionos.md)
+- [Creating a multiview video playback experience in visionOS](./creating-a-multiview-video-playback-experience-in-visionos.md)
   Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
-- [class AVMultiviewManager](avmultiviewmanager.md)
+- [class AVMultiviewManager](./avmultiviewmanager.md)
   An object that manages viewing multiple videos at once.
-- [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
+- [class AVGroupExperienceCoordinator](./avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
-- [class AVViewport](avviewport.md)
+- [class AVViewport](./avviewport.md)
   An object that provides configuration options for how the player displays content in different viewing contexts.
-- [class AVPortalViewport](avportalviewport.md)
+- [class AVPortalViewport](./avportalviewport.md)
   An object that defines the visual parameters for content displayed within a portal frame.
 
 

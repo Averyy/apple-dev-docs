@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeRC4
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 RC4 algorithm.
 
@@ -12,6 +13,10 @@ RC4 algorithm.
 
 ```swift
 let kSecAttrKeyTypeRC4: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeRC4;
 ```
 
 

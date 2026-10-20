@@ -1,7 +1,8 @@
 # Get Status
 
 **Framework**: ClassKit Catalog API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch the status of an operation that you initiated earlier.
 
@@ -10,7 +11,7 @@ Fetch the status of an operation that you initiated earlier.
 
 #### Discussion
 
-If the system can’t immediately complete a request, the ClassKit Catalog API may acknowledge that it received the request and respond with a HTTP response containing the status code `202 ACCEPTED`. In this case, the response contains a header with the name “Location”. The corresponding value is a URL that points to the [`Get Status`](get-status.md) endpoint, including a `statusId` as the last path parameter. The header item might look like this:
+If the system can’t immediately complete a request, the ClassKit Catalog API may acknowledge that it received the request and respond with a HTTP response containing the status code `202 ACCEPTED`. In this case, the response contains a header with the name “Location”. The corresponding value is a URL that points to the [`Get Status`](./get-status.md) endpoint, including a `statusId` as the last path parameter. The header item might look like this:
 
 ```http
 Location: classkit-catalog.apple.com/v1/status/KGW7S5VLDDOQSYSE7DKGYBGXUU
@@ -22,7 +23,7 @@ Use this `statusID` to ask the server for a status update at a later time.
 
 **Request**:
 
-```None
+```
 https://classkit-catalog.apple.com/v1/status/KGW7S5VLDDOQSYSE7DKGYBGXUU 
 ```
 
@@ -50,11 +51,20 @@ https://classkit-catalog.apple.com/v1/status/KGW7S5VLDDOQSYSE7DKGYBGXUU
 
 ## Parameters
 
+### Path Parameters
+
 - `statusId` (string) *(required)*: The identifier of the operation for which you want to retrieve the status.
+
+## Responses
+
+- `200` OK (`Status`, `application/json`): The request succeeded.
+- `400` Bad Request: The request contained an error.
+- `403` Forbidden: The request wasn’t authorized.
 
 ## See Also
 
-- [object Status](status.md)
+### Retrieving Status
+- [object Status](./status.md)
   The state of a request that the API previously accepted, but didn’t complete right away.
 
 

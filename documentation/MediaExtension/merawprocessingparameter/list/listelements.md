@@ -1,7 +1,8 @@
 # listElements
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ordered array of `MERAWProcessingListElementParameter` which make up this list.
 
@@ -14,11 +15,16 @@ The ordered array of `MERAWProcessingListElementParameter` which make up this li
 var listElements: [MERAWProcessingParameter.ListElement] { get }
 ```
 
+```objc
+@property (readonly) NSArray<MERAWProcessingListElementParameter *> * listElements;
+```
+
 ## See Also
 
-- [var currentValue: Int](merawprocessingparameter/list/currentvalue.md)
+### Properties
+- [var currentValue: Int](./currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Int](merawprocessingparameter/list/initialvalue.md)
+- [var initialValue: Int](./initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
 
 

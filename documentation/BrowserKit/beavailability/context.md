@@ -1,7 +1,8 @@
 # BEAvailability.Context
 
 **Framework**: BrowserKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The category of app for which you determine eligibility.
 
@@ -15,24 +16,28 @@ The category of app for which you determine eligibility.
 enum Context
 ```
 
+```c
+enum BEEligibilityContext : NSInteger;
+```
+
 ## Topics
 
 ### Identifying app contexts
-- [BEAvailability.Context.webBrowser](beavailability/context/webbrowser.md)
+- [BEAvailability.Context.webBrowser](./context/webbrowser.md)
   The app is a web browser.
 ### Initializing an availability object
-- [init?(rawValue: Int)](beavailability/context/init(rawvalue:).md)
+- [init?(rawValue: Int)](./context/init%28rawvalue%29.md)
   Creates a new context with the given value of the underlying type.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

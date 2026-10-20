@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: MusicKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 A subscript that allows your app to access any property of the requested section type directly on this library section object.
 

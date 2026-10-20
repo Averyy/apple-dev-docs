@@ -1,7 +1,8 @@
 # preferredFrameRateRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of frame rates the UI update link prefers.
 
@@ -18,17 +19,22 @@ The range of frame rates the UI update link prefers.
 var preferredFrameRateRange: CAFrameRateRange { get set }
 ```
 
+```objc
+@property (nonatomic) CAFrameRateRange preferredFrameRateRange;
+```
+
 #### Discussion
 
-By default, the value of this property is [`default`](https://developer.apple.com/documentation/quartzcore/caframeraterange/default), which doesn’t request any specific frame rate range.
+By default, the value of this property is [`default`](../../QuartzCore/caframeraterange/default.md), which doesn’t request any specific frame rate range.
 
 ## See Also
 
-- [var requiresContinuousUpdates: Bool](uiupdatelink/requirescontinuousupdates.md)
+### Configuring preferences
+- [var requiresContinuousUpdates: Bool](./requirescontinuousupdates.md)
   A Boolean value that determines whether the UI update link needs continuous UI updates.
-- [var wantsLowLatencyEventDispatch: Bool](uiupdatelink/wantslowlatencyeventdispatch.md)
+- [var wantsLowLatencyEventDispatch: Bool](./wantslowlatencyeventdispatch.md)
   A Boolean value that determines whether the UI update link requests dispatch of low-latency eligible events.
-- [var wantsImmediatePresentation: Bool](uiupdatelink/wantsimmediatepresentation.md)
+- [var wantsImmediatePresentation: Bool](./wantsimmediatepresentation.md)
   A Boolean value that determines whether the UI update link requests immediate frame presentation.
 
 

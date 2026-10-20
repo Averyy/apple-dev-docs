@@ -1,14 +1,15 @@
 # initialize_screen
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 void initialize_screen(PE_Video *, unsigned int);
 ```
 

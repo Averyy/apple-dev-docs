@@ -1,7 +1,8 @@
 # accessibilityDirectTouch(_:options:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Explicitly set whether this accessibility element is a direct touch area. Direct touch areas passthrough touch events to the app rather than being handled through an assistive technology, such as VoiceOver. The modifier accepts an optional `AccessibilityDirectTouchOptions` option set to customize the functionality of the direct touch area.
 
@@ -20,6 +21,8 @@ Explicitly set whether this accessibility element is a direct touch area. Direct
 nonisolated
 func accessibilityDirectTouch(_ isDirectTouchArea: Bool = true, options: AccessibilityDirectTouchOptions = []) -> ModifiedContent<Content, Modifier>
 ```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
 #### Discussion
 

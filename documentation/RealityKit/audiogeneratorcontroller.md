@@ -1,7 +1,8 @@
 # AudioGeneratorController
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller that manages the playback of a real-time audio stream.
 
@@ -22,7 +23,7 @@ class AudioGeneratorController
 
 #### Overview
 
-To receive an audio generator controller, call an entity’s [`prepareAudio(configuration:_:)`](entity/prepareaudio(configuration:_:).md) or [`playAudio(configuration:_:)`](entity/playaudio(configuration:_:).md) method.
+To receive an audio generator controller, call an entity’s [`prepareAudio(configuration:_:)`](./entity/prepareaudio%28configuration,_%29.md) or [`playAudio(configuration:_:)`](./entity/playaudio%28configuration,_%29.md) method.
 
 The following examples show how you can use the controller:
 
@@ -58,40 +59,41 @@ During playback, the audio appears to come from the entity that you use to creat
 
 > **Note**: Audio stops rendering when the system deallocates `AudioGeneratorController`. Create another `AudioGeneratorController` to restart audio.
 
-Call [`stop()`](audiogeneratorcontroller/stop().md) to halt the audio, and [`play()`](audiogeneratorcontroller/play().md) to restart the stream.
+Call [`stop()`](./audiogeneratorcontroller/stop%28%29.md) to halt the audio, and [`play()`](./audiogeneratorcontroller/play%28%29.md) to restart the stream.
 
 ## Topics
 
 ### Instance Properties
-- [let configuration: AudioGeneratorConfiguration](audiogeneratorcontroller/configuration.md)
+- [let configuration: AudioGeneratorConfiguration](./audiogeneratorcontroller/configuration.md)
   The configuration with rendering parameters for the render handler.
-- [var entity: Entity?](audiogeneratorcontroller/entity.md)
+- [var entity: Entity?](./audiogeneratorcontroller/entity.md)
   The entity the audio stream emanates from.
-- [var gain: Audio.Decibel](audiogeneratorcontroller/gain.md)
+- [var gain: Audio.Decibel](./audiogeneratorcontroller/gain.md)
   The gain in decibels of the audio generator controller output.
-- [var isPlaying: Bool](audiogeneratorcontroller/isplaying.md)
+- [var isPlaying: Bool](./audiogeneratorcontroller/isplaying.md)
   A Boolean value that indicates whether playback is currently active.
 ### Instance Methods
-- [func play()](audiogeneratorcontroller/play.md)
+- [func play()](./audiogeneratorcontroller/play%28%29.md)
   Begins the audio stream from the generator render handler.
-- [func stop()](audiogeneratorcontroller/stop.md)
+- [func stop()](./audiogeneratorcontroller/stop%28%29.md)
   Stops playback of the render handler.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AudioPlaybackController](audioplaybackcontroller.md)
+### Playback controllers
+- [class AudioPlaybackController](./audioplaybackcontroller.md)
   A controller that manages an audio playback instance.
-- [struct AudioGeneratorConfiguration](audiogeneratorconfiguration.md)
+- [struct AudioGeneratorConfiguration](./audiogeneratorconfiguration.md)
   A container for various settings for preparing and playing an AudioGeneratorController.
-- [enum AudioEvents](audioevents.md)
+- [enum AudioEvents](./audioevents.md)
   Events associated with audio playback.
-- [struct PlayAudioAction](playaudioaction.md)
+- [struct PlayAudioAction](./playaudioaction.md)
   An action which plays an audio resource on the given target entity.
 
 

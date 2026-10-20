@@ -1,21 +1,26 @@
 # MLCGramMatrixLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that computes the uncentered cross-correlation values between the spacial planes of each feature channel of a tensor.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 class MLCGramMatrixLayer
+```
+
+```objc
+@interface MLCGramMatrixLayer : MLCLayer
 ```
 
 #### Overview
@@ -42,35 +47,36 @@ Legend:
 ## Topics
 
 ### Creating Gram Matrix Layers
-- [convenience init(scale: Float)](mlcgrammatrixlayer/init(scale:).md)
+- [convenience init(scale: Float)](./mlcgrammatrixlayer/init%28scale%29.md)
   Creates a gram matrix layer with the scaling factor you specify.
 ### Inspecting Gram Matrix Layers
-- [var scale: Float](mlcgrammatrixlayer/scale.md)
+- [var scale: Float](./mlcgrammatrixlayer/scale.md)
   The scaling factor.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCArithmeticLayer](mlcarithmeticlayer.md)
+### Math Layers
+- [class MLCArithmeticLayer](./mlcarithmeticlayer.md)
   A layer that performs an arithmetic operation.
-- [class MLCReductionLayer](mlcreductionlayer.md)
+- [class MLCReductionLayer](./mlcreductionlayer.md)
   A layer that reduces tensor values across a specific dimension to a scalar value.
-- [class MLCMatMulLayer](mlcmatmullayer.md)
+- [class MLCMatMulLayer](./mlcmatmullayer.md)
   A layer that multiplies matrices.
-- [class MLCFullyConnectedLayer](mlcfullyconnectedlayer.md)
+- [class MLCFullyConnectedLayer](./mlcfullyconnectedlayer.md)
   A layer that connects each input to each output within its layer.
-- [class MLCComparisonLayer](mlccomparisonlayer.md)
+- [class MLCComparisonLayer](./mlccomparisonlayer.md)
   A layer that performs elementwise comparison of two tensors.
 
 

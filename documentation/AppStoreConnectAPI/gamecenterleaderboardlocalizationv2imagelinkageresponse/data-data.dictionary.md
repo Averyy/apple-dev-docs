@@ -1,14 +1,15 @@
 # GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data
 ```
 
@@ -20,7 +21,7 @@ object GameCenterLeaderboardLocalizationV2ImageLinkageResponse.Data
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardImages`
 
 
 ---

@@ -1,7 +1,8 @@
 # netServiceName
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The net service name.
 
@@ -18,15 +19,20 @@ The net service name.
 var netServiceName: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * netServiceName;
+```
+
 ## See Also
 
-- [var name: String](midinetworkhost/name.md)
+### Inspecting Host Properties
+- [var name: String](./name.md)
   The host name.
-- [var netServiceDomain: String?](midinetworkhost/netservicedomain.md)
+- [var netServiceDomain: String?](./netservicedomain.md)
   The net service domain.
-- [var address: String](midinetworkhost/address.md)
+- [var address: String](./address.md)
   The host address.
-- [var port: Int](midinetworkhost/port.md)
+- [var port: Int](./port.md)
   The host port.
 
 

@@ -1,7 +1,8 @@
 # otherVersionsOfItem(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns all versions of the specified file except the current version.
 
@@ -20,9 +21,13 @@ Returns all versions of the specified file except the current version.
 class func otherVersionsOfItem(at url: URL) -> [NSFileVersion]?
 ```
 
+```objc
++ (NSArray<NSFileVersion *> *) otherVersionsOfItemAtURL:(NSURL *) url;
+```
+
 #### Return Value
 
-An array of file version objects or `nil` if there is no such file. The array does not contain the version object returned by the [`currentVersionOfItem(at:)`](nsfileversion/currentversionofitem(at:).md) method.
+An array of file version objects or `nil` if there is no such file. The array does not contain the version object returned by the [`currentVersionOfItem(at:)`](./currentversionofitem%28at%29.md) method.
 
 #### Discussion
 
@@ -34,11 +39,12 @@ For locally based files, this property typically contains versions of the file t
 
 ## See Also
 
-- [class func currentVersionOfItem(at: URL) -> NSFileVersion?](nsfileversion/currentversionofitem(at:).md)
+### Getting the Version of a File
+- [class func currentVersionOfItem(at: URL) -> NSFileVersion?](./currentversionofitem%28at%29.md)
   Returns the most recent version object for the file at the specified URL.
-- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](nsfileversion/version(itemat:forpersistentidentifier:).md)
+- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](./version%28itemat,forpersistentidentifier%29.md)
   Returns the version of the file that has the specified persistent ID.
-- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](nsfileversion/temporarydirectoryurlfornewversionofitem(at:).md)
+- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](./temporarydirectoryurlfornewversionofitem%28at%29.md)
   Creates and returns a temporary directory to use for saving the contents of the file.
 
 

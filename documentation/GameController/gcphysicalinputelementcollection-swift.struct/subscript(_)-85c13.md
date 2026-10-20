@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Game Controller  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,18 @@
 subscript(elementName: GCPhysicalInputElementName) -> T? { get }
 ```
 
+Available when `T` is `any GCPhysicalInputElement`.
+
 ## See Also
 
-- [subscript(GCDirectionPadElementName) -> T?](gcphysicalinputelementcollection-swift.struct/subscript(_:)-1twjd.md)
+### Accessing elements by name
+- [subscript(GCDirectionPadElementName) -> T?](./subscript%28_%29-1twjd.md)
   Accesses a contiguous subrange of a collection of direction pad elements.
-- [subscript(GCAxisElementName) -> T?](gcphysicalinputelementcollection-swift.struct/subscript(_:)-8m218.md)
+- [subscript(GCAxisElementName) -> T?](./subscript%28_%29-8m218.md)
   Accesses a contiguous subrange of a collection of axis elements.
-- [subscript(GCButtonElementName) -> T?](gcphysicalinputelementcollection-swift.struct/subscript(_:)-3l6nj.md)
+- [subscript(GCButtonElementName) -> T?](./subscript%28_%29-3l6nj.md)
   Accesses a contiguous subrange of a collection of button elements.
-- [subscript(GCSwitchElementName) -> T?](gcphysicalinputelementcollection-swift.struct/subscript(_:)-4oje0.md)
+- [subscript(GCSwitchElementName) -> T?](./subscript%28_%29-4oje0.md)
   Accesses a contiguous subrange of a collection of switch elements.
 
 

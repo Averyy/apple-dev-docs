@@ -1,7 +1,8 @@
 # SVGPathSegCurvetoQuadraticRel
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegCurvetoQuadraticRel
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegcurvetoquadraticrel/1632859-x.md)
-- [x1](svgpathsegcurvetoquadraticrel/1634388-x1.md)
-- [y](svgpathsegcurvetoquadraticrel/1633410-y.md)
-- [y1](svgpathsegcurvetoquadraticrel/1634338-y1.md)
+- [x](./svgpathsegcurvetoquadraticrel/api-1632859-x.md)
+- [x1](./svgpathsegcurvetoquadraticrel/api-1634388-x1.md)
+- [y](./svgpathsegcurvetoquadraticrel/api-1633410-y.md)
+- [y1](./svgpathsegcurvetoquadraticrel/api-1634338-y1.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

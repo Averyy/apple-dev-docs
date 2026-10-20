@@ -1,7 +1,8 @@
 # shareURLs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URLs of the shares to request access to.
 
@@ -18,6 +19,10 @@ The URLs of the shares to request access to.
 
 ```swift
 var shareURLs: [URL]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSURL *> * shareURLs;
 ```
 
 #### Discussion

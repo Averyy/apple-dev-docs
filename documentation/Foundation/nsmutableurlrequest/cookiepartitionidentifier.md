@@ -1,7 +1,8 @@
 # cookiePartitionIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 var cookiePartitionIdentifier: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * cookiePartitionIdentifier;
 ```
 
 

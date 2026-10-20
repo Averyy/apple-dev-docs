@@ -1,7 +1,8 @@
 # setTemperatureWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetTemperature
 
@@ -17,7 +18,15 @@ Command SetTemperature
 ## Declaration
 
 ```swift
+func setTemperatureWith(_ params: MTRTemperatureControlClusterSetTemperatureParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setTemperatureWith(_ params: MTRTemperatureControlClusterSetTemperatureParams?) async throws
+```
+
+```objc
+- (void) setTemperatureWithParams:(MTRTemperatureControlClusterSetTemperatureParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

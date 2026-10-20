@@ -1,7 +1,8 @@
 # appending(target:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new path with a relationship target appended.
 

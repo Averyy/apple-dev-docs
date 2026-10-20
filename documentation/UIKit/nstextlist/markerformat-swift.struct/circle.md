@@ -1,7 +1,8 @@
 # circle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value that represents a circle-shaped marker that you can apply to a text list item.
 
@@ -19,37 +20,42 @@ The value that represents a circle-shaped marker that you can apply to a text li
 static let circle: NSTextList.MarkerFormat
 ```
 
+```c
+extern NSTextListMarkerFormat const NSTextListMarkerCircle;
+```
+
 ## See Also
 
-- [static let box: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/box.md)
+### Selecting a marker format
+- [static let box: NSTextList.MarkerFormat](./box.md)
   The value that represents a square-shaped marker that you can apply to a text list item.
-- [static let check: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/check.md)
+- [static let check: NSTextList.MarkerFormat](./check.md)
   The value that represents a checkmark-shaped marker that you can apply to a text list item.
-- [static let decimal: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/decimal.md)
+- [static let decimal: NSTextList.MarkerFormat](./decimal.md)
   The value that represents a decimal annotation marker that you can apply to a text list item.
-- [static let diamond: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/diamond.md)
+- [static let diamond: NSTextList.MarkerFormat](./diamond.md)
   The value that represents a diamond-shaped marker that you can apply to a text list item.
-- [static let disc: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/disc.md)
+- [static let disc: NSTextList.MarkerFormat](./disc.md)
   The value that represents a disc-shaped marker that you can apply to a text list item.
-- [static let hyphen: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/hyphen.md)
+- [static let hyphen: NSTextList.MarkerFormat](./hyphen.md)
   The value that represents a hyphen-shaped marker that you can apply to a text list item.
-- [static let lowercaseAlpha: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/lowercasealpha.md)
+- [static let lowercaseAlpha: NSTextList.MarkerFormat](./lowercasealpha.md)
   The value that represents a lowercase localized alphabetical marker you that can apply to a text list item.
-- [static let lowercaseHexadecimal: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/lowercasehexadecimal.md)
+- [static let lowercaseHexadecimal: NSTextList.MarkerFormat](./lowercasehexadecimal.md)
   The value that represents a lowercase hexadecimal (base 16) numerical marker that you can apply to a text list item.
-- [static let lowercaseLatin: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/lowercaselatin.md)
+- [static let lowercaseLatin: NSTextList.MarkerFormat](./lowercaselatin.md)
   The value that represents a lowercase Latin alphabetical marker that you can apply to a text list item.
-- [static let lowercaseRoman: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/lowercaseroman.md)
+- [static let lowercaseRoman: NSTextList.MarkerFormat](./lowercaseroman.md)
   The value that represents a lowercase Roman numeral marker that you can apply to a text list item.
-- [static let octal: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/octal.md)
+- [static let octal: NSTextList.MarkerFormat](./octal.md)
   The value that represents an octal (base 8) numerical marker that you can apply to a text list item.
-- [static let square: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/square.md)
+- [static let square: NSTextList.MarkerFormat](./square.md)
   The value that represents a square-shaped marker that you can apply to a text list item.
-- [static let uppercaseAlpha: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/uppercasealpha.md)
+- [static let uppercaseAlpha: NSTextList.MarkerFormat](./uppercasealpha.md)
   The value that represents an uppercase localized alphabetical marker that you can apply to a text list item.
-- [static let uppercaseHexadecimal: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/uppercasehexadecimal.md)
+- [static let uppercaseHexadecimal: NSTextList.MarkerFormat](./uppercasehexadecimal.md)
   The value that represents an uppercase hexadecimal (base 16) numerical marker that you can apply to a text list item.
-- [static let uppercaseLatin: NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct/uppercaselatin.md)
+- [static let uppercaseLatin: NSTextList.MarkerFormat](./uppercaselatin.md)
   The value that represents an uppercase Latin alphabetical marker that you can apply to a text list item.
 
 

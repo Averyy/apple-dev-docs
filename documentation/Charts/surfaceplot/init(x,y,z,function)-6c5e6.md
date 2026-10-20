@@ -1,7 +1,8 @@
 # init(x:y:z:function:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a SurfacePlot that represents a function y = f(x, z).
 

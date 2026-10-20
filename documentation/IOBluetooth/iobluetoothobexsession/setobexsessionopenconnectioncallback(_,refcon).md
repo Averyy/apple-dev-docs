@@ -1,17 +1,22 @@
 # setOBEXSessionOpenConnectionCallback(_:refCon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For C API support. Allows you to set the callback to be invoked when the OBEX connection is actually opened.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setOBEXSessionOpenConnectionCallback(_ inCallback: IOBluetoothOBEXSessionOpenConnectionCallback!, refCon inUserRefCon: UnsafeMutableRawPointer!)
+```
+
+```objc
+- (void) setOBEXSessionOpenConnectionCallback:(IOBluetoothOBEXSessionOpenConnectionCallback) inCallback refCon:(void *) inUserRefCon;
 ```
 
 ## Parameters

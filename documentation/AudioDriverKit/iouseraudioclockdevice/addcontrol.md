@@ -1,7 +1,8 @@
 # AddControl
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a control to the clock device.
 
@@ -10,13 +11,13 @@ Adds a control to the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddControl(IOUserAudioControl *in_control);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,13 +25,14 @@ If adding the control succeeds, the control’s reference count increments by on
 
 ## Parameters
 
-- `in_control`: The [`IOUserAudioControl`](iouseraudiocontrol.md) to add to the clock device.
+- `in_control`: The [`IOUserAudioControl`](../iouseraudiocontrol.md) to add to the clock device.
 
 ## See Also
 
-- [RemoveControl](iouseraudioclockdevice/removecontrol.md)
+### Managing Audio Controls
+- [RemoveControl](./removecontrol.md)
   Removes a control from the clock device.
-- [IOUserAudioControl](iouseraudiocontrol.md)
+- [IOUserAudioControl](../iouseraudiocontrol.md)
   The base class for audio control objects.
 
 

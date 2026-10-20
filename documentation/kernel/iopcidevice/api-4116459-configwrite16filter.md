@@ -1,14 +1,15 @@
 # configWrite16Filter
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 13.3+ - Deprecated in 13.3
 
 ## Declaration
 
-```swift
+```c
 uint16_t configWrite16Filter(IOByteCount offset, uint16_t data);
 ```
 

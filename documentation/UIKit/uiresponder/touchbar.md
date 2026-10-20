@@ -1,7 +1,8 @@
 # touchBar
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Touch Bar object for the responder.
 
@@ -14,13 +15,18 @@ The Touch Bar object for the responder.
 var touchBar: NSTouchBar? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) NSTouchBar * touchBar;
+```
+
 #### Discussion
 
-This property’s default value — on devices with a Touch Bar — is the [`NSTouchBar`](https://developer.apple.com/documentation/appkit/nstouchbar) instance that the responder’s [`makeTouchBar()`](uiresponder/maketouchbar().md) method returns. Otherwise, the default value is `nil`.
+This property’s default value — on devices with a Touch Bar — is the [`NSTouchBar`](../../AppKit/nstouchbar.md) instance that the responder’s [`makeTouchBar()`](./maketouchbar%28%29.md) method returns. Otherwise, the default value is `nil`.
 
 ## See Also
 
-- [func makeTouchBar() -> NSTouchBar?](uiresponder/maketouchbar.md)
+### Managing the Touch Bar
+- [func makeTouchBar() -> NSTouchBar?](./maketouchbar%28%29.md)
   Asks the receiving responder to create and configure a Touch Bar object.
 
 

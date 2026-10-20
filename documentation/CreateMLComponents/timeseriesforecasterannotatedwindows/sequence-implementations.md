@@ -1,11 +1,12 @@
 # Sequence Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [TimeSeriesForecasterAnnotatedWindows.Iterator](timeseriesforecasterannotatedwindows/iterator.md)
+- [TimeSeriesForecasterAnnotatedWindows.Iterator](./iterator.md)
   A time-series forecaster batch sequence iterator.
 
 

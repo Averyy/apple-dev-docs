@@ -1,7 +1,8 @@
 # headphoneMotion
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 static let headphoneMotion: SRSensor
+```
+
+```c
+extern SRSensor const SRSensorHeadphoneMotion;
 ```
 
 #### Discussion

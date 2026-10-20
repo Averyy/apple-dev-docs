@@ -1,7 +1,8 @@
 # createCertificateSigningRequest(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 class func createCertificateSigningRequest(_ keypair: any MTRKeypair) throws -> Data
+```
+
+```objc
++ (MTRCSRDERBytes) createCertificateSigningRequest:(id<MTRKeypair>) keypair error:(NSError **) error;
 ```
 
 

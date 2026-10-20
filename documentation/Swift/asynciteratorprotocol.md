@@ -1,7 +1,8 @@
 # AsyncIteratorProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that asynchronously supplies the values of a sequence one at a time.
 
@@ -80,47 +81,48 @@ If the iterator needs to clean up on cancellation, it can do so after checking f
 ## Topics
 
 ### Declaring Iterator Topography
-- [associatedtype Element](asynciteratorprotocol/element.md)
+- [associatedtype Element](./asynciteratorprotocol/element.md)
 ### Producing Iterator Values
-- [func next() async throws -> Self.Element?](asynciteratorprotocol/next.md)
+- [func next() async throws -> Self.Element?](./asynciteratorprotocol/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 ### Associated Types
-- [associatedtype Failure : Error = any Error](asynciteratorprotocol/failure.md)
+- [associatedtype Failure : Error = any Error](./asynciteratorprotocol/failure.md)
   The type of failure produced by iteration.
 ### Instance Methods
-- [func next(isolation: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?](asynciteratorprotocol/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(Self.Failure) -> Self.Element?](./asynciteratorprotocol/next%28isolation%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 
 ## Relationships
 
 ### Conforming Types
-- [AsyncCompactMapSequence.Iterator](asynccompactmapsequence/iterator.md)
-- [AsyncDropFirstSequence.Iterator](asyncdropfirstsequence/iterator.md)
-- [AsyncDropWhileSequence.Iterator](asyncdropwhilesequence/iterator.md)
-- [AsyncFilterSequence.Iterator](asyncfiltersequence/iterator.md)
-- [AsyncFlatMapSequence.Iterator](asyncflatmapsequence/iterator.md)
-- [AsyncMapSequence.Iterator](asyncmapsequence/iterator.md)
-- [AsyncPrefixSequence.Iterator](asyncprefixsequence/iterator.md)
-- [AsyncPrefixWhileSequence.Iterator](asyncprefixwhilesequence/iterator.md)
-- [AsyncStream.Iterator](asyncstream/iterator.md)
-- [AsyncThrowingCompactMapSequence.Iterator](asyncthrowingcompactmapsequence/iterator.md)
-- [AsyncThrowingDropWhileSequence.Iterator](asyncthrowingdropwhilesequence/iterator.md)
-- [AsyncThrowingFilterSequence.Iterator](asyncthrowingfiltersequence/iterator.md)
-- [AsyncThrowingFlatMapSequence.Iterator](asyncthrowingflatmapsequence/iterator.md)
-- [AsyncThrowingMapSequence.Iterator](asyncthrowingmapsequence/iterator.md)
-- [AsyncThrowingPrefixWhileSequence.Iterator](asyncthrowingprefixwhilesequence/iterator.md)
-- [AsyncThrowingStream.Iterator](asyncthrowingstream/iterator.md)
-- [Observations.Iterator](../observation/observations/iterator.md)
-- [TaskGroup.Iterator](taskgroup/iterator.md)
-- [ThrowingTaskGroup.Iterator](throwingtaskgroup/iterator.md)
+- [AsyncCompactMapSequence.Iterator](./asynccompactmapsequence/iterator.md)
+- [AsyncDropFirstSequence.Iterator](./asyncdropfirstsequence/iterator.md)
+- [AsyncDropWhileSequence.Iterator](./asyncdropwhilesequence/iterator.md)
+- [AsyncFilterSequence.Iterator](./asyncfiltersequence/iterator.md)
+- [AsyncFlatMapSequence.Iterator](./asyncflatmapsequence/iterator.md)
+- [AsyncMapSequence.Iterator](./asyncmapsequence/iterator.md)
+- [AsyncPrefixSequence.Iterator](./asyncprefixsequence/iterator.md)
+- [AsyncPrefixWhileSequence.Iterator](./asyncprefixwhilesequence/iterator.md)
+- [AsyncStream.Iterator](./asyncstream/iterator.md)
+- [AsyncThrowingCompactMapSequence.Iterator](./asyncthrowingcompactmapsequence/iterator.md)
+- [AsyncThrowingDropWhileSequence.Iterator](./asyncthrowingdropwhilesequence/iterator.md)
+- [AsyncThrowingFilterSequence.Iterator](./asyncthrowingfiltersequence/iterator.md)
+- [AsyncThrowingFlatMapSequence.Iterator](./asyncthrowingflatmapsequence/iterator.md)
+- [AsyncThrowingMapSequence.Iterator](./asyncthrowingmapsequence/iterator.md)
+- [AsyncThrowingPrefixWhileSequence.Iterator](./asyncthrowingprefixwhilesequence/iterator.md)
+- [AsyncThrowingStream.Iterator](./asyncthrowingstream/iterator.md)
+- [Observations.Iterator](../Observation/observations/iterator.md)
+- [TaskGroup.Iterator](./taskgroup/iterator.md)
+- [ThrowingTaskGroup.Iterator](./throwingtaskgroup/iterator.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> Self.AsyncIterator](asyncsequence/makeasynciterator.md)
+### Creating an Iterator
+- [func makeAsyncIterator() -> Self.AsyncIterator](./asyncsequence/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [associatedtype AsyncIterator : AsyncIteratorProtocol](asyncsequence/asynciterator.md)
+- [associatedtype AsyncIterator : AsyncIteratorProtocol](./asyncsequence/asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
-- [associatedtype Element](asyncsequence/element.md)
+- [associatedtype Element](./asyncsequence/element.md)
   The type of element produced by this asynchronous sequence.
 
 

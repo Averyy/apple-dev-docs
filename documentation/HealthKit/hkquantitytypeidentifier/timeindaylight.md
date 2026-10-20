@@ -1,7 +1,8 @@
 # timeInDaylight
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A quantity sample type that measures amount of time the user spent in daylight.
 
@@ -19,13 +20,18 @@ A quantity sample type that measures amount of time the user spent in daylight.
 static let timeInDaylight: HKQuantityTypeIdentifier
 ```
 
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierTimeInDaylight;
+```
+
 #### Discussion
 
-These samples use time units (described in [`HKUnit`](hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](hkquantityaggregationstyle.md)).
+These samples use time units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 
 ## See Also
 
-- [static let uvExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/uvexposure.md)
+### UV exposure
+- [static let uvExposure: HKQuantityTypeIdentifier](./uvexposure.md)
   A quantity sample type that measures the user’s exposure to UV radiation.
 
 

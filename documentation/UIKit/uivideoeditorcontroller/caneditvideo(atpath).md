@@ -1,7 +1,8 @@
 # canEditVideo(atPath:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether a video file can be edited.
 
@@ -17,9 +18,13 @@ Returns a Boolean value indicating whether a video file can be edited.
 class func canEditVideo(atPath videoPath: String) -> Bool
 ```
 
+```objc
++ (BOOL) canEditVideoAtPath:(NSString *) videoPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified video file can be edited on the current device or [`false`](https://developer.apple.com/documentation/swift/false) if it cannot.
+[`true`](../../Swift/true.md) if the specified video file can be edited on the current device or [`false`](../../Swift/false.md) if it cannot.
 
 #### Discussion
 

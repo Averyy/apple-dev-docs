@@ -1,7 +1,8 @@
 # leastNonzeroMagnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The least positive number.
 

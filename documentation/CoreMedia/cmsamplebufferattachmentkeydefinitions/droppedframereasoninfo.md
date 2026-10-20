@@ -1,7 +1,8 @@
 # droppedFrameReasonInfo
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates additional information regarding the dropped video frame.
 
@@ -22,7 +23,7 @@ static let droppedFrameReasonInfo: CVAttachmentKeyDefinition<CMSampleBufferAttac
 
 #### Discussion
 
-Sample buffers with this attachment contain no image or data buffer. They mark a dropped video frame. If present, this attachment provides additional information about the reason described by the [`droppedFrameReason`](cmsamplebufferattachmentkeydefinitions/droppedframereason.md) key.
+Sample buffers with this attachment contain no image or data buffer. They mark a dropped video frame. If present, this attachment provides additional information about the reason described by the [`droppedFrameReason`](./droppedframereason.md) key.
 
 
 ---

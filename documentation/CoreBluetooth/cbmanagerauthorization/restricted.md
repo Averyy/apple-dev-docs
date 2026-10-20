@@ -1,7 +1,8 @@
 # CBManagerAuthorization.restricted
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates this app isn’t authorized to use Bluetooth.
 
@@ -20,17 +21,22 @@ A state that indicates this app isn’t authorized to use Bluetooth.
 case restricted
 ```
 
+```c
+CBManagerAuthorizationRestricted
+```
+
 #### Discussion
 
 In this state, the user can’t change the Bluetooth authorization status, possibly due to active restrictions such as parental controls.
 
 ## See Also
 
-- [CBManagerAuthorization.allowedAlways](cbmanagerauthorization/allowedalways.md)
+### Authorization States
+- [CBManagerAuthorization.allowedAlways](./allowedalways.md)
   A state that indicates the user has authorized Bluetooth at any time.
-- [CBManagerAuthorization.denied](cbmanagerauthorization/denied.md)
+- [CBManagerAuthorization.denied](./denied.md)
   A state that indicates the user explicitly denied Bluetooth access for this app.
-- [CBManagerAuthorization.notDetermined](cbmanagerauthorization/notdetermined.md)
+- [CBManagerAuthorization.notDetermined](./notdetermined.md)
   A state that indicates the user has yet to authorize Bluetooth for this app.
 
 

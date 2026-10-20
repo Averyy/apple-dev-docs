@@ -1,7 +1,8 @@
 # DiskImageKit
 
 **Framework**: DiskImageKit  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Create, open, and manage disk images.
 
@@ -33,9 +34,9 @@ Stacked images allow you to:
 - Implement snapshot and restore functionality.
 - Optimize performance with caching layers.
 
-##### Getting Started
+##### Getting started
 
-###### Create a Standalone Asif Image
+###### Create a standalone ASIF image
 
 Create a standalone disk image:
 
@@ -53,7 +54,7 @@ import DiskImageKit
     ))
 ```
 
-###### Open an Existing Image
+###### Open an existing image
 
 Open any existing disk image (standalone or layer):
 
@@ -68,7 +69,7 @@ Open any existing disk image (standalone or layer):
     }
 ```
 
-###### Create a Stacked Disk Image
+###### Create a stacked disk image
 
 Build a multi-layer disk image:
 
@@ -83,7 +84,7 @@ Build a multi-layer disk image:
     stackedImage = try stackedImage.appending(.asifLayer(url: overlayURL, type: .overlay))
 ```
 
-###### Use Disk Images with the Virtualization Framework
+###### Use disk images with the Virtualization framework
 
 Pass the disk image - either a standalone image or a stack - to the Virtualization framework:
 
@@ -92,7 +93,7 @@ Pass the disk image - either a standalone image or a stack - to the Virtualizati
     let storageAttachment = try VZDiskImageStorageDeviceAttachment(diskImage: diskImage)
 ```
 
-##### Truncate or Extend Disk Images
+##### Truncate or extend disk images
 
 You can truncate or extend disk images (this does not resize the filesystem inside the image):
 
@@ -106,7 +107,7 @@ You can truncate or extend disk images (this does not resize the filesystem insi
 
 > **Note**: For stacked images, truncating affects the top layer, which determines the stack’s effective size.
 
-##### Inspect Disk Images with Image Properties
+##### Inspect disk images with image properties
 
 DiskImage objects provide various properties to inspect disk images:
 
@@ -137,61 +138,61 @@ if let parentUUID = diskImage.parentUUID {
 
 ```
 
-##### Important Details About Stacked Disk Images
+##### Important details about stacked disk images
 
 Remember to keep the following details in mind when working with stack disk images:
 
 - **One cache layer per stack**: The framework allows only one cache layer per stacked disk image.
 - **Layer ordering matters**: Layers are processed from bottom (base) to top. The topmost layer determines the stack’s size and receives all writes.
-- **UUID compatibility**: When appending a new layer using [`appending(_:)`](diskimage/appending(_:)-3pfqg.md), the framework sets the [`parentUUID`](diskimage/parentuuid.md) of the layer to the [`layerUUID`](diskimage/layeruuid.md) of its parent layer (unless the parent is a raw image, which has no UUID). The layer UUID changes if the layer is written to, to prevent using stacks with incompatible layers. Appending an existing layer using [`appending(_:)`](diskimage/appending(_:)-4wifj.md) fails if there is such a mismatch.
+- **UUID compatibility**: When appending a new layer using [`appending(_:)`](./diskimage/appending%28_%29-3pfqg.md), the framework sets the [`parentUUID`](./diskimage/parentuuid.md) of the layer to the [`layerUUID`](./diskimage/layeruuid.md) of its parent layer (unless the parent is a raw image, which has no UUID). The layer UUID changes if the layer is written to, to prevent using stacks with incompatible layers. Appending an existing layer using [`appending(_:)`](./diskimage/appending%28_%29-4wifj.md) fails if there is such a mismatch.
 
 ## Topics
 
 ### Essential Types
-- [class DiskImage](diskimage.md)
+- [class DiskImage](./diskimage.md)
   The representation of an open disk image
-- [protocol StackedImage](stackedimage.md)
+- [protocol StackedImage](./stackedimage.md)
   The protocol for stacked disk images that contain multiple layers.
-- [protocol OpenConfigurationProtocol](openconfigurationprotocol.md)
+- [protocol OpenConfigurationProtocol](./openconfigurationprotocol.md)
   The protocol for disk image open configurations.
-- [struct OpenConfiguration](openconfiguration.md)
+- [struct OpenConfiguration](./openconfiguration.md)
   A configuration to use for opening existing disk images.
-- [OpenConfiguration.Mode](openconfiguration/mode-swift.enum.md)
+- [OpenConfiguration.Mode](./openconfiguration/mode-swift.enum.md)
   Open modes for disk images.
 ### Creating disk images
-- [convenience init(creating: some DiskImage.CreationConfiguration) throws](diskimage/init(creating:).md)
+- [convenience init(creating: some DiskImage.CreationConfiguration) throws](./diskimage/init%28creating%29.md)
   Creates a new, empty disk image.
-- [struct ASIFCreationConfiguration](asifcreationconfiguration.md)
+- [struct ASIFCreationConfiguration](./asifcreationconfiguration.md)
   The configuration to use to create Apple sparse image format (ASIF) disk images.
-- [struct ASIFLayerCreationConfiguration](asiflayercreationconfiguration.md)
+- [struct ASIFLayerCreationConfiguration](./asiflayercreationconfiguration.md)
   The configuration to use to create Apple sparse image format (ASIF) disk image layers in stacked images.
-- [DiskImage.CreationConfiguration](diskimage/creationconfiguration.md)
+- [DiskImage.CreationConfiguration](./diskimage/creationconfiguration.md)
   A marker protocol for disk image creation configurations.
-- [struct RAWCreationConfiguration](rawcreationconfiguration.md)
+- [struct RAWCreationConfiguration](./rawcreationconfiguration.md)
   The configuration to use to create RAW disk images.
 ### Opening and closing disk images
-- [convenience init(opening: some OpenConfigurationProtocol) throws](diskimage/init(opening:).md)
+- [convenience init(opening: some OpenConfigurationProtocol) throws](./diskimage/init%28opening%29.md)
   Opens an existing disk image using the specified image URL.
 ### Appending layers and resizing existing images
-- [DiskImage.StackableLayer](diskimage/stackablelayer.md)
+- [DiskImage.StackableLayer](./diskimage/stackablelayer.md)
   A marker protocol that stackable disk image layer configuration objects conform to.
-- [func appending(consuming DiskImage) throws -> any StackedImage](diskimage/appending(_:)-4wifj.md)
+- [func appending(consuming DiskImage) throws -> any StackedImage](./diskimage/appending%28_%29-4wifj.md)
   Appends a layer to this disk image, creating or extending a stack.
 ### Values that describe block sizes and image formats
-- [DiskImage.Format](diskimage/format-swift.enum.md)
+- [DiskImage.Format](./diskimage/format-swift.enum.md)
   Values that describe the disk image formats DiskImageKit supports.
-- [DiskImage.BlockSize](diskimage/blocksize-swift.enum.md)
+- [DiskImage.BlockSize](./diskimage/blocksize-swift.enum.md)
   Values that represent the block size of a disk image.
-- [DiskImage.LayerType](diskimage/layertype-swift.struct.md)
+- [DiskImage.LayerType](./diskimage/layertype-swift.struct.md)
   An enumeration that defines the type of a layer in a stacked disk image.
 ### Errors
-- [struct IncompatibleStackingError](incompatiblestackingerror.md)
+- [struct IncompatibleStackingError](./incompatiblestackingerror.md)
   The appended layer isn’t compatible with the existing stack.
-- [struct InvalidBlockCountError](invalidblockcounterror.md)
+- [struct InvalidBlockCountError](./invalidblockcounterror.md)
   The block count specified for the disk image is invalid (zero or negative).
-- [struct CorruptedImageError](corruptedimageerror.md)
+- [struct CorruptedImageError](./corruptedimageerror.md)
   The disk image is corrupted or contains invalid data.
-- [struct UnsupportedFormatError](unsupportedformaterror.md)
+- [struct UnsupportedFormatError](./unsupportedformaterror.md)
   The disk image format isn’t supported.
 
 

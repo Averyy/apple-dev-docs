@@ -1,7 +1,8 @@
 # nameSpecifierType
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 var nameSpecifierType: ATSFlatDataFontSpeciferType
+```
+
+```c
+ATSFlatDataFontSpeciferType nameSpecifierType;
 ```
 
 

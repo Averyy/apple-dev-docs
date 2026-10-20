@@ -1,7 +1,8 @@
 # rssi
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device-observed RSSI of the network.
 
@@ -10,7 +11,7 @@ The device-observed RSSI of the network.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var rssi: Int8
 
 ## See Also
 
-- [var band: MTRNetworkCommissioningWiFiBand](matteradddeviceextensionrequesthandler/wifiscanresult/band.md)
+### Getting result information
+- [var band: MTRNetworkCommissioningWiFiBand](./band.md)
   The band for the Wi-Fi network.
-- [var security: MTRNetworkCommissioningWiFiSecurity](matteradddeviceextensionrequesthandler/wifiscanresult/security.md)
+- [var security: MTRNetworkCommissioningWiFiSecurity](./security.md)
   The security method used to secure the Wi-Fi network.
-- [var ssid: Data](matteradddeviceextensionrequesthandler/wifiscanresult/ssid.md)
+- [var ssid: Data](./ssid.md)
   The SSID of the Wi-Fi network.
 
 

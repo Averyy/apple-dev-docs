@@ -1,7 +1,8 @@
 # register(_:forAnnotationViewWithReuseIdentifier:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers an annotation view class that the map can create automatically.
 
@@ -19,28 +20,33 @@ Registers an annotation view class that the map can create automatically.
 func register(_ viewClass: AnyClass?, forAnnotationViewWithReuseIdentifier identifier: String)
 ```
 
+```objc
+- (void) registerClass:(Class) viewClass forAnnotationViewWithReuseIdentifier:(NSString *) identifier;
+```
+
 #### Discussion
 
 Use this method to register one or more views that you use to display annotations on your map. Register your classes before adding any annotations to the map.
 
-When you register an annotation view class using this method, the [`dequeueReusableAnnotationView(withIdentifier:for:)`](mkmapview/dequeuereusableannotationview(withidentifier:for:).md) method uses the provided identifier to create the view that you register. It creates a new view only if an existing view isn’t available for reuse.
+When you register an annotation view class using this method, the [`dequeueReusableAnnotationView(withIdentifier:for:)`](./dequeuereusableannotationview%28withidentifier,for%29.md) method uses the provided identifier to create the view that you register. It creates a new view only if an existing view isn’t available for reuse.
 
 ## Parameters
 
-- `viewClass`: The class of an annotation view that you use in your map. The class needs to be a subclass of [`MKAnnotationView`](mkannotationview.md).
+- `viewClass`: The class of an annotation view that you use in your map. The class needs to be a subclass of [`MKAnnotationView`](../mkannotationview.md).
 - `identifier`: The reuse identifier to associate with the specified class. This parameter can’t be `nil` or an empty string.
 
 ## See Also
 
-- [func dequeueReusableAnnotationView(withIdentifier: String, for: any MKAnnotation) -> MKAnnotationView](mkmapview/dequeuereusableannotationview(withidentifier:for:).md)
+### Creating annotation views
+- [func dequeueReusableAnnotationView(withIdentifier: String, for: any MKAnnotation) -> MKAnnotationView](./dequeuereusableannotationview%28withidentifier,for%29.md)
   Returns a reusable annotation view using the specified identifier with a specified existing annotation view, if possible.
-- [func dequeueReusableAnnotationView(withIdentifier: String) -> MKAnnotationView?](mkmapview/dequeuereusableannotationview(withidentifier:).md)
+- [func dequeueReusableAnnotationView(withIdentifier: String) -> MKAnnotationView?](./dequeuereusableannotationview%28withidentifier%29.md)
   Returns a reusable annotation view using its identifier.
-- [func view(for: any MKAnnotation) -> MKAnnotationView?](mkmapview/view(for:)-33w8k.md)
+- [func view(for: any MKAnnotation) -> MKAnnotationView?](./view%28for%29-33w8k.md)
   Returns the annotation view associated with the specified annotation object, if any.
-- [let MKMapViewDefaultAnnotationViewReuseIdentifier: String](mkmapviewdefaultannotationviewreuseidentifier.md)
+- [let MKMapViewDefaultAnnotationViewReuseIdentifier: String](../mkmapviewdefaultannotationviewreuseidentifier.md)
   The default reuse identifier for your map’s annotation views.
-- [let MKMapViewDefaultClusterAnnotationViewReuseIdentifier: String](mkmapviewdefaultclusterannotationviewreuseidentifier.md)
+- [let MKMapViewDefaultClusterAnnotationViewReuseIdentifier: String](../mkmapviewdefaultclusterannotationviewreuseidentifier.md)
   The default reuse identifier for the annotation view representing a cluster of annotations.
 
 

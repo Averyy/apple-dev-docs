@@ -1,7 +1,8 @@
 # USDLayer.ListOperationType.explicit
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Items that replace the entire list.
 

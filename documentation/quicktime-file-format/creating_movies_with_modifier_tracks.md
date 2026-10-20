@@ -1,12 +1,13 @@
 # Creating movies with modifier tracks
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Send data to another media handler instead of presenting media directly.
 
 #### Overview
 
-QuickTime 2.1 added additional functionality for media handlers. By way of modifier tracks, a media handler can send its data to another media handler rather than presenting its media directly. See [`Modifier tracks`](modifier_tracks.md) for a complete discussion of this feature.
+QuickTime 2.1 added additional functionality for media handlers. By way of modifier tracks, a media handler can send its data to another media handler rather than presenting its media directly. See [Modifier tracks](./modifier_tracks.md) for a complete discussion of this feature.
 
 To create a movie with modifier tracks, first you create a movie with all the desired tracks, then you create the modifier track. To link the modifier track to the track that it modifies, you use the `AddTrackReference` function as shown in the following listing.
 
@@ -46,13 +47,14 @@ When a modifier track is playing an empty track edit, or is disabled or deleted,
 
 ## See Also
 
-- [Modifier tracks](modifier_tracks.md)
+### Track features
+- [Modifier tracks](./modifier_tracks.md)
   Create dynamic movies with modifier tracks that send data to another track.
-- [Track references](track_references.md)
+- [Track references](./track_references.md)
   Relate a movie’s tracks to one another with track references.
-- [Chapter lists](chapter_lists.md)
+- [Chapter lists](./chapter_lists.md)
   A chapter list provides a set of named entry points into a movie.
-- [Streaming media](streaming_media.md)
+- [Streaming media](./streaming_media.md)
   Store streaming data in a streaming media track for QuickTime movies.
 
 

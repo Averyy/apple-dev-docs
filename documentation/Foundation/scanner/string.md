@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string the scanner will scan.
 
@@ -18,6 +19,10 @@ The string the scanner will scan.
 
 ```swift
 var string: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * string;
 ```
 
 

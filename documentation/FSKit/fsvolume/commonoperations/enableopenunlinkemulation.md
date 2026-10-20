@@ -1,7 +1,8 @@
 # enableOpenUnlinkEmulation
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that allows the file system to use open-unlink emulation.
 
@@ -12,6 +13,10 @@ A property that allows the file system to use open-unlink emulation.
 
 ```swift
 optional var enableOpenUnlinkEmulation: Bool { get }
+```
+
+```objc
+@property (readonly) BOOL enableOpenUnlinkEmulation;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # PartGenerator
 
 **Framework**: hvf  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Protocol for returning a writer object to create Shape or Composite data
 
@@ -23,9 +24,9 @@ protocol PartGenerator
 ## Topics
 
 ### Instance Methods
-- [func makeComposite(Int) -> any CompositeWriter](partgenerator/makecomposite(_:).md)
+- [func makeComposite(Int) -> any CompositeWriter](./partgenerator/makecomposite%28_%29.md)
   Create a new Composite, and return a CompositeWriter to fill it in
-- [func makeShape(Int) -> any ShapeWriter](partgenerator/makeshape(_:).md)
+- [func makeShape(Int) -> any ShapeWriter](./partgenerator/makeshape%28_%29.md)
   Create a new Shape, and return a ShapeWriter to fill it in
 
 

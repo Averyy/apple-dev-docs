@@ -1,6 +1,8 @@
 # Presenting images in RealityKit
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [PresentingImagesInRealityKit.zip](https://docs-assets.developer.apple.com/published/7469d2a0cb00/PresentingImagesInRealityKit.zip)
 
 Create and display spatial scenes in RealityKit
 
@@ -10,41 +12,41 @@ Create and display spatial scenes in RealityKit
 
 #### Overview
 
-RealityKit apps can easily display images in 3D space using [`ImagePresentationComponent`](imagepresentationcomponent.md), which can display traditional 2D and *spatial photos* as well as generate and display *spatial scenes* — which represents the content of an existing image in three dimensions.
+RealityKit apps can easily display images in 3D space using [`ImagePresentationComponent`](./imagepresentationcomponent.md), which can display traditional 2D and *spatial photos* as well as generate and display *spatial scenes* — which represents the content of an existing image in three dimensions.
 
 Spatial scenes are different from *spatial photos*. A *spatial photo* presents two separate 2D images, one to each eye, to create the illusion of a three dimensional view. *Spatial scenes*, on the other hand, generate textured 3D geometry from either a *spatial photo* or a regular 2D image.
 
-![A screenshot of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D.](/images/com.apple.RealityKit/mono-image@2x.jpg)
+![A screenshot of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/mono-image@2x.jpg)
 
-This sample app demonstrates how to use [`ImagePresentationComponent`](imagepresentationcomponent.md) and [`ImagePresentationComponent.Spatial3DImage`](imagepresentationcomponent/spatial3dimage.md) to convert an existing 2D image to a 3D spatial scene, and how to present the 2D and 3D versions of the image using [`RealityView`](realityview.md) in a SwiftUI app.
+This sample app demonstrates how to use [`ImagePresentationComponent`](./imagepresentationcomponent.md) and [`ImagePresentationComponent.Spatial3DImage`](./imagepresentationcomponent/spatial3dimage.md) to convert an existing 2D image to a 3D spatial scene, and how to present the 2D and 3D versions of the image using [`RealityView`](./realityview.md) in a SwiftUI app.
 
-#### Choose Viewing Modes
+#### Choose viewing modes
 
 Image presentation components can present images in several modes. Your apps can choose to use any or all of these modes.
 
-- **[`mono`](imagepresentationcomponent/viewingmode-swift.struct/mono.md)**: Shows an image from a single point of view.
-- **[`spatial3D`](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)**: Shows a *spatial scene* from the source image.
-- **[`spatial3DImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)**: Shows a *spatial scene* from the source image and displays it in immersive mode.
-- **[`spatialStereo`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)**: Shows an image as a *spatial photo*.
-- **[`spatialStereoImmersive`](imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)**: Shows an image as *spatial photo* and displays it in immersive mode.
+- **[`mono`](./imagepresentationcomponent/viewingmode-swift.struct/mono.md)**: Shows an image from a single point of view.
+- **[`spatial3D`](./imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md)**: Shows a *spatial scene* from the source image.
+- **[`spatial3DImmersive`](./imagepresentationcomponent/viewingmode-swift.struct/spatial3dimmersive.md)**: Shows a *spatial scene* from the source image and displays it in immersive mode.
+- **[`spatialStereo`](./imagepresentationcomponent/viewingmode-swift.struct/spatialstereo.md)**: Shows an image as a *spatial photo*.
+- **[`spatialStereoImmersive`](./imagepresentationcomponent/viewingmode-swift.struct/spatialstereoimmersive.md)**: Shows an image as *spatial photo* and displays it in immersive mode.
 
 This sample displays images using `mono` and `spatial3D` viewing modes.
 
-#### Create an Entity to Present the Image
+#### Create an entity to present the image
 
-To display an image, create an [`ImagePresentationComponent`](imagepresentationcomponent.md) and attach it to an entity in your scene. You can attach it to any entity, and you’ll also want to attach it to one that has no visual representation in your scene. This sample creates an empty [`Entity`](entity.md) property called `contentEntity` in the `AppModel` class for that purpose.
+To display an image, create an [`ImagePresentationComponent`](./imagepresentationcomponent.md) and attach it to an entity in your scene. You can attach it to any entity, and you’ll also want to attach it to one that has no visual representation in your scene. This sample creates an empty [`Entity`](./entity.md) property called `contentEntity` in the `AppModel` class for that purpose.
 
 ```swift
 var contentEntity: Entity = Entity()
 ```
 
-In the [`RealityView`](realityview.md) `make` closure, the app calls an asynchronous method to create an [`ImagePresentationComponent`](imagepresentationcomponent.md) and adds it to `contentEntity`.
+In the [`RealityView`](./realityview.md) `make` closure, the app calls an asynchronous method to create an [`ImagePresentationComponent`](./imagepresentationcomponent.md) and adds it to `contentEntity`.
 
 ```swift
 await appModel.createImagePresentationComponent()
 ```
 
-The `createImagePresentationComponent` function creates an [`ImagePresentationComponent.Spatial3DImage`](imagepresentationcomponent/spatial3dimage.md) from a 2D image, then creates an image presentation component with that image and attaches it to the `contentEntity`:
+The `createImagePresentationComponent` function creates an [`ImagePresentationComponent.Spatial3DImage`](./imagepresentationcomponent/spatial3dimage.md) from a 2D image, then creates an image presentation component with that image and attaches it to the `contentEntity`:
 
 ```swift
 func createImagePresentationComponent() async {
@@ -73,9 +75,9 @@ func createImagePresentationComponent() async {
 }
 ```
 
-The `createImagePresentationComponent` method stores the [`aspectRatio(for:)`](imagepresentationcomponent/aspectratio(for:).md) of the newly created ImagePresentationComponent in the `AppModel`.
+The `createImagePresentationComponent` method stores the [`aspectRatio(for:)`](./imagepresentationcomponent/aspectratio%28for%29.md) of the newly created ImagePresentationComponent in the `AppModel`.
 
-The app implements an [`onChange(of:perform:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:perform:))  modifier for `aspectRatio` in the `AppModel` to ensure that the [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) size matches the image.
+The app implements an [`onChange(of:perform:)`](../SwiftUI/view/onchange%28of,perform%29.md)  modifier for `aspectRatio` in the `AppModel` to ensure that the [`UIWindowScene`](../UIKit/uiwindowscene.md) size matches the image.
 
 ```swift
 .onChange(of: appModel.imageAspectRatio) { _, newAspectRatio in
@@ -100,9 +102,9 @@ The app implements an [`onChange(of:perform:)`](https://developer.apple.com/docu
 }
 ```
 
-#### Manage Image Presentation
+#### Manage image presentation
 
-In the `update` closure of the [`RealityView`](realityview.md), the app retrieves the presentation screen size of the image presentation component using the entity’s [`observable`](entity/observable-swift.property.md) property. This ensures that update is called when the `presentationScreenSize` changes.
+In the `update` closure of the [`RealityView`](./realityview.md), the app retrieves the presentation screen size of the image presentation component using the entity’s [`observable`](./entity/observable-swift.property.md) property. This ensures that update is called when the `presentationScreenSize` changes.
 
 ```swift
 guard let presentationScreenSize = appModel
@@ -122,14 +124,14 @@ let originalPosition = appModel.contentEntity.position(relativeTo: nil)
 appModel.contentEntity.setPosition(SIMD3<Float>(originalPosition.x, originalPosition.y, 0.0), relativeTo: nil)
 ```
 
-To display the image at an appropriate size, the app wraps a [`RealityView`](realityview.md) inside a [`GeometryReader3D`](https://developer.apple.com/documentation/swiftui/geometryreader3d):
+To display the image at an appropriate size, the app wraps a [`RealityView`](./realityview.md) inside a [`GeometryReader3D`](../SwiftUI/geometryreader3d.md):
 
 ```swift
 GeometryReader3D { geometry in
     RealityView { content in
 ```
 
-In the `make` and `update` closure of the [`RealityView`](realityview.md), the app converts the geometry reader’s frame bounds into the scene’s coordinate space:
+In the `make` and `update` closure of the [`RealityView`](./realityview.md), the app converts the geometry reader’s frame bounds into the scene’s coordinate space:
 
 ```swift
 let availableBounds = content.convert(geometry.frame(in: .local), from: .local, to: .scene)
@@ -141,7 +143,7 @@ Then, the app calls the `scaleImagePresentationToFit` method which scales the im
 scaleImagePresentationToFit(in: availableBounds)
 ```
 
-The `scaleImagePresentationToFit` method calculates x and y scale values to preserve the aspect ratio of the presented image at the current [`presentationScreenSize`](imagepresentationcomponent/presentationscreensize.md), and sets those scale values as the content entity’s scale:
+The `scaleImagePresentationToFit` method calculates x and y scale values to preserve the aspect ratio of the presented image at the current [`presentationScreenSize`](./imagepresentationcomponent/presentationscreensize.md), and sets those scale values as the content entity’s scale:
 
 ```swift
 func scaleImagePresentationToFit(in boundsInMeters: BoundingBox) {
@@ -159,7 +161,7 @@ func scaleImagePresentationToFit(in boundsInMeters: BoundingBox) {
 }
 ```
 
-#### Generate a Spatial Scene
+#### Generate a spatial scene
 
 It can take several seconds to generate a spatial scene. To preserve the user experience, you have two options:
 
@@ -169,6 +171,8 @@ It can take several seconds to generate a spatial scene. To preserve the user ex
 If you create the spatial scene before adding it to the component, the generated spatial scene appears as soon as you add it. If you add a 2D or stereo image to the component first and then generate the spatial scene later, the component presents a conversion UI like the one in the Photos app. This indicates that it’s generating the spatial scene
 
 > **Note**: Generation and viewing of spatial scenes is not supported in the simulator.
+
+[Video: A screen recording of a visionOS window displaying a photograph of a windmill in the background and tulip flowers in the foreground. Below the window, there is an ornament view with left and right arrows and a button labeled Convert to 3D. The user taps on the Convert to 3D button and colorful animation is shown on top of the photograph. The animation completes and the windmill and tulip flowers is shown as a spatial scene. The Convert to 3D button label changes to Show as 2D.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generate-spatial-scene.mp4)
 
 This sample adds the images to the component first, then generates the spatial scene on a button press. It does that by first declaring an enumeration in the app data model to represent the current status of the displayed image.
 
@@ -180,7 +184,7 @@ enum Spatial3DImageState {
 }
 ```
 
-The app currently displays a 2D image in an [`ImagePresentationComponent`](imagepresentationcomponent.md). When the viewer clicks the Show as 3D button for the first time, it checks to see if the spatial 3D image has been generated, and returns if it has to avoid doing unnecessary work.
+The app currently displays a 2D image in an [`ImagePresentationComponent`](./imagepresentationcomponent.md). When the viewer clicks the Show as 3D button for the first time, it checks to see if the spatial 3D image has been generated, and returns if it has to avoid doing unnecessary work.
 
 ```swift
 guard spatial3DImageState == .notGenerated else {
@@ -189,7 +193,7 @@ guard spatial3DImageState == .notGenerated else {
 }
 ```
 
-The viewing mode of the image presentation component changes to [`spatial3D`](imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md), calls [`generate()`](imagepresentationcomponent/spatial3dimage/generate().md) on the spatial 3D image it displays, and sets the image state to `.generated` so it knows not to generate it again:
+The viewing mode of the image presentation component changes to [`spatial3D`](./imagepresentationcomponent/viewingmode-swift.struct/spatial3d.md), calls [`generate()`](./imagepresentationcomponent/spatial3dimage/generate%28%29.md) on the spatial 3D image it displays, and sets the image state to `.generated` so it knows not to generate it again:
 
 ```swift
 guard var imagePresentationComponent = contentEntity.components[ImagePresentationComponent.self] else {

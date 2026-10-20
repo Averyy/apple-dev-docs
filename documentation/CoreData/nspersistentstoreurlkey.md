@@ -1,7 +1,8 @@
 # NSPersistentStoreURLKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user info key to identify the store URL in persistent store remote change notifications.
 
@@ -20,25 +21,30 @@ A user info key to identify the store URL in persistent store remote change noti
 let NSPersistentStoreURLKey: String
 ```
 
+```c
+extern NSString * const NSPersistentStoreURLKey;
+```
+
 ## See Also
 
-- [let NSAffectedObjectsErrorKey: String](nsaffectedobjectserrorkey.md)
+### User Info Dictionary Keys
+- [let NSAffectedObjectsErrorKey: String](./nsaffectedobjectserrorkey.md)
   The key for objects prompting an error.
-- [let NSAffectedStoresErrorKey: String](nsaffectedstoreserrorkey.md)
+- [let NSAffectedStoresErrorKey: String](./nsaffectedstoreserrorkey.md)
   The key for stores prompting an error.
-- [let NSDetailedErrorsKey: String](nsdetailederrorskey.md)
+- [let NSDetailedErrorsKey: String](./nsdetailederrorskey.md)
   If multiple validation errors occur in one operation, they are collected in an array and added with this key to the “top-level error” of the operation.
-- [let NSDeletedObjectIDsKey: String](nsdeletedobjectidskey.md)
+- [let NSDeletedObjectIDsKey: String](./nsdeletedobjectidskey.md)
   A user info key to identify deleted object identifiers in notifications after saving a managed object context.
-- [let NSInsertedObjectIDsKey: String](nsinsertedobjectidskey.md)
+- [let NSInsertedObjectIDsKey: String](./nsinsertedobjectidskey.md)
   A user info key to identify inserted object identifiers in notifications after saving a managed object context.
-- [let NSInvalidatedObjectIDsKey: String](nsinvalidatedobjectidskey.md)
+- [let NSInvalidatedObjectIDsKey: String](./nsinvalidatedobjectidskey.md)
   A user info key to identify invalidated object identifiers in notifications after saving a managed object context.
-- [let NSPersistentHistoryTokenKey: String](nspersistenthistorytokenkey.md)
+- [let NSPersistentHistoryTokenKey: String](./nspersistenthistorytokenkey.md)
   A user info key to identify the history token in persistent store remote change notifications.
-- [let NSRefreshedObjectIDsKey: String](nsrefreshedobjectidskey.md)
+- [let NSRefreshedObjectIDsKey: String](./nsrefreshedobjectidskey.md)
   A user info key to identify refreshed object identifiers in notifications after saving a managed object context.
-- [let NSUpdatedObjectIDsKey: String](nsupdatedobjectidskey.md)
+- [let NSUpdatedObjectIDsKey: String](./nsupdatedobjectidskey.md)
   A user info key to identify updated object identifiers in notifications after saving a managed object context.
 
 

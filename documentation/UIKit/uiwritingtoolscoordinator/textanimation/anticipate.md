@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextAnimation.anticipate
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The animation that Writing Tools performs when waiting to receive results from the large language model.
 
@@ -17,15 +18,20 @@ The animation that Writing Tools performs when waiting to receive results from t
 case anticipate
 ```
 
+```c
+UIWritingToolsCoordinatorTextAnimationAnticipate
+```
+
 #### Discussion
 
 This type of animation applies a visual effect to the text that Writing Tools is evaluating. When preparing for this animation, hide the text that Writing Tools is about to evaluate. In the same space where that text appears, Writing Tools displays a preview image that you provide and animates changes to that image.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.TextAnimation.insert](uiwritingtoolscoordinator/textanimation/insert.md)
+### Getting the animation types
+- [UIWritingToolsCoordinator.TextAnimation.insert](./insert.md)
   The animation that Writing Tools performs when inserting text into your view.
-- [UIWritingToolsCoordinator.TextAnimation.remove](uiwritingtoolscoordinator/textanimation/remove.md)
+- [UIWritingToolsCoordinator.TextAnimation.remove](./remove.md)
   The animation that Writing Tools performs when removing text from your view.
 
 

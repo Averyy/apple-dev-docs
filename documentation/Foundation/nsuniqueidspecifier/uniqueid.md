@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the ID encapsulated by the receiver.
 
@@ -13,6 +14,10 @@ Returns the ID encapsulated by the receiver.
 
 ```swift
 var uniqueID: Any { get set }
+```
+
+```objc
+@property (copy) id uniqueID;
 ```
 
 #### Return Value

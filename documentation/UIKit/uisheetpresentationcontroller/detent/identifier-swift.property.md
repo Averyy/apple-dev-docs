@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the detent.
 
@@ -16,9 +17,14 @@ The identifier of the detent.
 var identifier: UISheetPresentationController.Detent.Identifier { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) UISheetPresentationControllerDetentIdentifier identifier;
+```
+
 ## See Also
 
-- [UISheetPresentationController.Detent.Identifier](uisheetpresentationcontroller/detent/identifier-swift.struct.md)
+### Identifying a detent
+- [UISheetPresentationController.Detent.Identifier](./identifier-swift.struct.md)
   Constants that identify system detent sizes.
 
 

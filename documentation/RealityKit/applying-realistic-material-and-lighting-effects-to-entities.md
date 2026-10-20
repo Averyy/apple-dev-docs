@@ -1,20 +1,21 @@
 # Applying realistic material and lighting effects to entities
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
 
 #### Overview
 
-A [`Material`](material.md) instance describes the surface properties of an entity and controls how RealityKit renders that entity. A [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) is a type of material that closely approximates the way light bounces off objects in the real world. It creates very realistic rendered objects that look natural when placed into an AR scene.
+A [`Material`](./material.md) instance describes the surface properties of an entity and controls how RealityKit renders that entity. A [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) is a type of material that closely approximates the way light bounces off objects in the real world. It creates very realistic rendered objects that look natural when placed into an AR scene.
 
-When you import models from USDZ files, RealityKit automatically creates one or more [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) instances from the PBR material settings in the file. You can also create PBR materials manually, either to change the appearance of an entity loaded from a USDZ file at runtime, or to use PBR rendering with procedurally created entities.
+When you import models from USDZ files, RealityKit automatically creates one or more [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) instances from the PBR material settings in the file. You can also create PBR materials manually, either to change the appearance of an entity loaded from a USDZ file at runtime, or to use PBR rendering with procedurally created entities.
 
-##### Create a Material and Specify Core Properties
+##### Create a material and specify core properties
 
-PBR materials use three core properties to define an object’s fundamental appearance: [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md), [`roughness`](physicallybasedmaterial/roughness-swift.property.md), and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). The [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md) property defines the underlying color of the entity as it would look under soft, bright, neutral lighting with no shadows or highlights. The `roughness` property is a measure of how the surface of the entity scatters the light that it reflects. A material with a low `roughness` looks shiny, while one with a high `roughness` has a matte appearance. The `metallic` property defines how the material reflects the environment around the entity. The figure below illustrates the visual effects of changing the [`metallic`](physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](physicallybasedmaterial/roughness-swift.property.md) values of a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) while keeping its [`baseColor`](physicallybasedmaterial/basecolor-swift.property.md) unchanged.
+PBR materials use three core properties to define an object’s fundamental appearance: [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md), [`roughness`](./physicallybasedmaterial/roughness-swift.property.md), and [`metallic`](./physicallybasedmaterial/metallic-swift.property.md). The [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md) property defines the underlying color of the entity as it would look under soft, bright, neutral lighting with no shadows or highlights. The `roughness` property is a measure of how the surface of the entity scatters the light that it reflects. A material with a low `roughness` looks shiny, while one with a high `roughness` has a matte appearance. The `metallic` property defines how the material reflects the environment around the entity. The figure below illustrates the visual effects of changing the [`metallic`](./physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) values of a [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) while keeping its [`baseColor`](./physicallybasedmaterial/basecolor-swift.property.md) unchanged.
 
-![An illustration showing a matrix of spheres rendered with a physically based material. Each sphere has a different roughness and metallic value to demonstrate the impact of changing these attributes.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-1@2x.png)
+![An illustration showing a matrix of spheres rendered with a physically based material. Each sphere has a different roughness and metallic value to demonstrate the impact of changing these attributes.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-1@2x.png)
 
 This example demonstrates how to create a PBR material that uses a color and a single `roughness` and `metallic` value for the entire material:
 
@@ -56,13 +57,13 @@ if let roughnessResource = try? TextureResource.load(named: "entity_roughness") 
 }
 ```
 
-For [`metallic`](physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](physicallybasedmaterial/roughness-swift.property.md) maps, use a grayscale image. If you use a color image, RealityKit only uses the red channel.
+For [`metallic`](./physicallybasedmaterial/metallic-swift.property.md) and [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) maps, use a grayscale image. If you use a color image, RealityKit only uses the red channel.
 
-##### Add a Normal Map
+##### Add a normal map
 
 *Normal mapping* is a real-time rendering technique that captures fine surface details for a model using a texture instead of increasing the number of polygons in the model. It works by storing *surface normals*, which are vectors perpendicular to the surface of the model, from a much higher resolution version of the same 3D object. A normal map stores vectors by storing its `X`, `Y`, and `Z` value as the `R`, `G`, and `B` components of the corresponding pixel in a UV-mapped image. RealityKit uses those normals to do lighting calculations, which results in much more realistic highlights, shadows, and reflections without incurring the computational cost of using a much higher resolution 3D model.
 
-RealityKit’s `PhysicallyBasedMaterial` supports normal maps using the [`normal`](physicallybasedmaterial/normal-swift.property.md) property.
+RealityKit’s `PhysicallyBasedMaterial` supports normal maps using the [`normal`](./physicallybasedmaterial/normal-swift.property.md) property.
 
 > **Note**: RealityKit uses *tangent space normal maps,* which many 3D software packages can create. You can recognize tangent space normal maps by their predominately purple color.
 
@@ -77,9 +78,9 @@ if let normalResource = try? TextureResource.load(named: "entity_normals") {
 }
 ```
 
-##### Specify Blending and Opacity
+##### Specify blending and opacity
 
-By default, RealityKit materials are opaque, but RealityKit can render entities with transparency to simulate real-world objects. To render a material with transparency, change the [`blending`](physicallybasedmaterial/blending-swift.property.md) value from `.opaque` to `.transparent`. The `.transparent` enumeration case takes an associated value that controls the amount of transparency.
+By default, RealityKit materials are opaque, but RealityKit can render entities with transparency to simulate real-world objects. To render a material with transparency, change the [`blending`](./physicallybasedmaterial/blending-swift.property.md) value from `.opaque` to `.transparent`. The `.transparent` enumeration case takes an associated value that controls the amount of transparency.
 
 To specify opacity, create a `PhysicallyBasedMaterial.Opacity` object. You can specify opacity for the entire entity using a single value between `0.0` and `1.0`, where `1.0` is fully opaque and `0.0` is fully transparent.
 
@@ -99,17 +100,17 @@ if let opacityResource = try? TextureResource.load(named: "entity_opacity") {
 }
 ```
 
-You can change the behavior of an alpha map to function as a *mask* rather than a transparency map. When using an alpha mask, RealityKit draws every pixel of the entity either fully transparent or fully opaque with no partially transparency. Use the [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) property to enable alpha masking. If you specify a value greater than `0.0`, RealityKit uses the image texture as a mask, and renders any pixel with a value of less than or equal to [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully transparent. RealityKit draws any pixel value greater than [`opacityThreshold`](physicallybasedmaterial/opacitythreshold.md) as fully opaque.
+You can change the behavior of an alpha map to function as a *mask* rather than a transparency map. When using an alpha mask, RealityKit draws every pixel of the entity either fully transparent or fully opaque with no partially transparency. Use the [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) property to enable alpha masking. If you specify a value greater than `0.0`, RealityKit uses the image texture as a mask, and renders any pixel with a value of less than or equal to [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) as fully transparent. RealityKit draws any pixel value greater than [`opacityThreshold`](./physicallybasedmaterial/opacitythreshold.md) as fully opaque.
 
-##### Add Specular Highlights
+##### Add specular highlights
 
-RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials using the values of various properties, primarily [`roughness`](./physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](./physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners. Both have a shiny surface and a small white spot labeled “specular highlights” where they reflect the scene’s light source.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-2@2x.png)
+![An illustration showing a sphere and a cube with rounded corners. Both have a shiny surface and a small white spot labeled “specular highlights” where they reflect the scene’s light source.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-2@2x.png)
 
 While many real-world objects can be accurately and realistically simulated with just the core PBR properties, you can create additional realistic effects by augmenting the specular highlights.
 
-Use the [`specular`](physicallybasedmaterial/specular-swift.property.md) property to simulate the bright highlights found on certain *dielectric* (nonmetallic) materials like cut gemstones and faceted glass, which have specular highlights much brighter than the ones RealityKit creates from just the core properties.
+Use the [`specular`](./physicallybasedmaterial/specular-swift.property.md) property to simulate the bright highlights found on certain *dielectric* (nonmetallic) materials like cut gemstones and faceted glass, which have specular highlights much brighter than the ones RealityKit creates from just the core properties.
 
 Here’s how to specify specular using a single value for the entire material:
 
@@ -130,11 +131,11 @@ if let specularResource = try? TextureResource.load(named: "entity_specular") {
 }
 ```
 
-You can also use specular highlights to simulate subtle reflections like the ones that occur on some types of fabric. Create these types of effects with the [`sheen`](physicallybasedmaterial/sheen.md) property, as illustrated in the following figure.
+You can also use specular highlights to simulate subtle reflections like the ones that occur on some types of fabric. Create these types of effects with the [`sheen`](./physicallybasedmaterial/sheen.md) property, as illustrated in the following figure.
 
-![An illustration of two spheres. The one on the right has very subtle, soft specular highlight and is labeled “With Sheen”. The one on the right has no specular highlights and is labeled “Without Sheen”.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-3@2x.png)
+![An illustration of two spheres. The one on the right has very subtle, soft specular highlight and is labeled “With Sheen”. The one on the right has no specular highlights and is labeled “Without Sheen”.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-3@2x.png)
 
-This example shows how to specify [`sheen`](physicallybasedmaterial/sheen.md) using a single value for the entire material:
+This example shows how to specify [`sheen`](./physicallybasedmaterial/sheen.md) using a single value for the entire material:
 
 ```swift
 let sheenTint = PhysicallyBasedMaterial.Color(
@@ -145,7 +146,7 @@ material.sheen = PhysicallyBasedMaterial.SheenColor(
 )
 ```
 
-And this example demonstrates how to specify [`sheen`](physicallybasedmaterial/sheen.md) using a UV-mapped image texture:
+And this example demonstrates how to specify [`sheen`](./physicallybasedmaterial/sheen.md) using a UV-mapped image texture:
 
 ```swift
 if let sheenResource = try? TextureResource.load(named: "entity_sheen") {
@@ -156,13 +157,13 @@ if let sheenResource = try? TextureResource.load(named: "entity_sheen") {
 }
 ```
 
-##### Use Anisotropy for Directional Highlights
+##### Use anisotropy for directional highlights
 
-By default, PBR materials are *isotropic*; in other words, an entity that uses a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called *anisotropic* highlights.
+By default, PBR materials are *isotropic*; in other words, an entity that uses a [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) reflects light uniformly in all directions, mimicking the behavior of most real-world objects. Some objects, including those with many small parallel striations such as vinyl records, CDs, or straight hair, reflect light more in some directions than others, resulting in stretched or oblong specular highlights called *anisotropic* highlights.
 
-![An illustration showing 11 metallic spheres in a horizontal row. The left-most sphere is isotropic. The spheres represent increasing anisotropy from left to right, with the sphere furthest to the right displaying a long, stretched highlight.](/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-4@2x.png)
+![An illustration showing 11 metallic spheres in a horizontal row. The left-most sphere is isotropic. The spheres represent increasing anisotropy from left to right, with the sphere furthest to the right displaying a long, stretched highlight.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/applying-realistic-material-and-lighting-effects-to-entities-4@2x.png)
 
-In RealityKit, you adjust anisotropy using two parameters: [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md) and [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md). To control the amount of anisotropy, use [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md). Specifying a value of `0.0` results in an entirely isotropic appearance, while nonzero values up to `1.0` simulate the appearance of increasingly anisotropic objects. Change the angle of anisotropy to affect the direction in which the specular highlights stretch with [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md), which also takes a value between `0.0 `and `1.0.` `A` value of `0.0` means a rotation of 0° and a value of `1.0` indicates a rotation of 360°. To determine the [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md) value to use, divide the desired angle in degrees by `360.0` or the desired angle in radians by pi times 2.
+In RealityKit, you adjust anisotropy using two parameters: [`anisotropyLevel`](./physicallybasedmaterial/anisotropylevel-swift.property.md) and [`anisotropyAngle`](./physicallybasedmaterial/anisotropyangle-swift.property.md). To control the amount of anisotropy, use [`anisotropyLevel`](./physicallybasedmaterial/anisotropylevel-swift.property.md). Specifying a value of `0.0` results in an entirely isotropic appearance, while nonzero values up to `1.0` simulate the appearance of increasingly anisotropic objects. Change the angle of anisotropy to affect the direction in which the specular highlights stretch with [`anisotropyAngle`](./physicallybasedmaterial/anisotropyangle-swift.property.md), which also takes a value between `0.0 `and `1.0.` `A` value of `0.0` means a rotation of 0° and a value of `1.0` indicates a rotation of 360°. To determine the [`anisotropyAngle`](./physicallybasedmaterial/anisotropyangle-swift.property.md) value to use, divide the desired angle in degrees by `360.0` or the desired angle in radians by pi times 2.
 
 ```swift
 let angleDegrees: Float = 125
@@ -183,7 +184,7 @@ material.anisotropyAngle = PhysicallyBasedMaterial.AnisotropyAngle(
 )
 ```
 
-And this example shows how to specify anisotropy using a UV-mapped image texture for [`anisotropyLevel`](physicallybasedmaterial/anisotropylevel-swift.property.md) and a separate image for [`anisotropyAngle`](physicallybasedmaterial/anisotropyangle-swift.property.md):
+And this example shows how to specify anisotropy using a UV-mapped image texture for [`anisotropyLevel`](./physicallybasedmaterial/anisotropylevel-swift.property.md) and a separate image for [`anisotropyAngle`](./physicallybasedmaterial/anisotropyangle-swift.property.md):
 
 ```swift
 if let anisoLevelResource = try? TextureResource.load(named: "entity_aniso_level") {
@@ -203,35 +204,36 @@ if let anisoAngleResource = try? TextureResource.load(named: "entity_aniso_angle
 
 ## See Also
 
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+### Realistic materials
+- [Rendering high-fidelity characters](./rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
+- [struct PhysicallyBasedMaterial](./physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
-- [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
+- [PhysicallyBasedMaterial.BaseColor](./physicallybasedmaterial/basecolor-swift.struct.md)
   An object that defines an entity’s base color.
-- [PhysicallyBasedMaterial.Roughness](physicallybasedmaterial/roughness-swift.struct.md)
+- [PhysicallyBasedMaterial.Roughness](./physicallybasedmaterial/roughness-swift.struct.md)
   An object that defines the roughness of an entity’s surface.
-- [PhysicallyBasedMaterial.Metallic](physicallybasedmaterial/metallic-swift.struct.md)
+- [PhysicallyBasedMaterial.Metallic](./physicallybasedmaterial/metallic-swift.struct.md)
   An object that defines the reflectiveness of an entity.
-- [PhysicallyBasedMaterial.Normal](physicallybasedmaterial/normal-swift.struct.md)
+- [PhysicallyBasedMaterial.Normal](./physicallybasedmaterial/normal-swift.struct.md)
   An object that specifies an entity’s normal map.
-- [PhysicallyBasedMaterial.Blending](physicallybasedmaterial/blending-swift.enum.md)
+- [PhysicallyBasedMaterial.Blending](./physicallybasedmaterial/blending-swift.enum.md)
   The object that defines the transparency of an entity.
-- [PhysicallyBasedMaterial.AmbientOcclusion](physicallybasedmaterial/ambientocclusion-swift.struct.md)
+- [PhysicallyBasedMaterial.AmbientOcclusion](./physicallybasedmaterial/ambientocclusion-swift.struct.md)
   An object that defines the ambient occlusion of an entity’s surface.
-- [PhysicallyBasedMaterial.Specular](physicallybasedmaterial/specular-swift.struct.md)
+- [PhysicallyBasedMaterial.Specular](./physicallybasedmaterial/specular-swift.struct.md)
   An object that defines the specular highlights of an entity.
-- [PhysicallyBasedMaterial.SheenColor](physicallybasedmaterial/sheencolor.md)
+- [PhysicallyBasedMaterial.SheenColor](./physicallybasedmaterial/sheencolor.md)
   An object that defines the color of an entity’s sheen.
-- [PhysicallyBasedMaterial.Clearcoat](physicallybasedmaterial/clearcoat-swift.struct.md)
+- [PhysicallyBasedMaterial.Clearcoat](./physicallybasedmaterial/clearcoat-swift.struct.md)
   An object that defines the intensity of an entity’s clear, shiny coating.
-- [PhysicallyBasedMaterial.ClearcoatRoughness](physicallybasedmaterial/clearcoatroughness-swift.struct.md)
+- [PhysicallyBasedMaterial.ClearcoatRoughness](./physicallybasedmaterial/clearcoatroughness-swift.struct.md)
   An object that defines the degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [PhysicallyBasedMaterial.AnisotropyLevel](physicallybasedmaterial/anisotropylevel-swift.struct.md)
+- [PhysicallyBasedMaterial.AnisotropyLevel](./physicallybasedmaterial/anisotropylevel-swift.struct.md)
   An object that defines the degree to which an entity reflects light to create stretched or oblong highlights.
-- [PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.struct.md)
+- [PhysicallyBasedMaterial.AnisotropyAngle](./physicallybasedmaterial/anisotropyangle-swift.struct.md)
   An object used to define a material’s anisotropy angle.
 
 

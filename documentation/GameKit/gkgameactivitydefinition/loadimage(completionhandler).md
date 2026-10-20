@@ -1,7 +1,8 @@
 # loadImage(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously load the image. Error will be nil on success.
 
@@ -15,17 +16,50 @@ Asynchronously load the image. Error will be nil on success.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func loadImage(completionHandler: @escaping @Sendable (UIImage?, (any Error)?) -> Void)
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var image: UIImage? { get async throws }
+```
+
+*macOS*
+
+```swift
+func loadImage(completionHandler: @escaping @Sendable (NSImage?, (any Error)?) -> Void)
+```
+
+*macOS*
+
 ```swift
 var image: NSImage? { get async throws }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (void) loadImageWithCompletionHandler:(void (^)(UIImage *image, NSError *error)) completionHandler;
+```
+
+*macOS*
+
+```objc
+- (void) loadImageWithCompletionHandler:(void (^)(NSImage *image, NSError *error)) completionHandler;
+```
+
 ## See Also
 
-- [var title: String](gkgameactivitydefinition/title.md)
+### Getting the display properties and image
+- [var title: String](./title.md)
   A short title for the game activity.
-- [var details: String?](gkgameactivitydefinition/details.md)
+- [var details: String?](./details.md)
   A more detailed description of the game activity.
-- [var defaultProperties: [String : String]](gkgameactivitydefinition/defaultproperties.md)
+- [var defaultProperties: [String : String]](./defaultproperties.md)
   Default properties defined by the developer for this type of game activity.
 
 

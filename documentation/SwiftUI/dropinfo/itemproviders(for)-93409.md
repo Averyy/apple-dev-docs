@@ -1,7 +1,8 @@
 # itemProviders(for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds item providers that conform to at least one of the specified uniform type identifiers.
 
@@ -18,6 +19,12 @@ Finds item providers that conform to at least one of the specified uniform type 
 func itemProviders(for contentTypes: [UTType]) -> [NSItemProvider]
 ```
 
+**Other overloads**:
+
+```swift
+func itemProviders(for types: [String]) -> [NSItemProvider]
+```
+
 #### Return Value
 
 The item providers that conforms to `contentTypes`.
@@ -32,7 +39,8 @@ This function is only valid during the `performDrop()` action.
 
 ## See Also
 
-- [func hasItemsConforming(to: [UTType]) -> Bool](dropinfo/hasitemsconforming(to:)-47irh.md)
+### Checking for items
+- [func hasItemsConforming(to: [UTType]) -> Bool](./hasitemsconforming%28to%29-47irh.md)
   Indicates whether at least one item conforms to at least one of the specified uniform type identifiers.
 
 

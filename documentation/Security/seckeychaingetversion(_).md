@@ -1,12 +1,15 @@
 # SecKeychainGetVersion(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines the version of keychain services installed on the user’s system.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Determines the version of keychain services installed on the user’s system.
 func SecKeychainGetVersion(_ returnVers: UnsafeMutablePointer<UInt32>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainGetVersion(UInt32 *returnVers);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-Your application can call the [`SecKeychainGetVersion(_:)`](seckeychaingetversion(_:).md) function to find out which version of keychain services is installed on the user’s system.
+Your application can call the [`SecKeychainGetVersion(_:)`](./seckeychaingetversion%28_%29.md) function to find out which version of keychain services is installed on the user’s system.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # setObject(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a given key-value pair to the map table.
 
@@ -20,6 +21,10 @@ Adds a given key-value pair to the map table.
 func setObject(_ anObject: ObjectType?, forKey aKey: KeyType?)
 ```
 
+```objc
+- (void) setObject:(ObjectType) anObject forKey:(KeyType) aKey;
+```
+
 ## Parameters
 
 - `anObject`: The value for `aKey`.
@@ -27,9 +32,10 @@ func setObject(_ anObject: ObjectType?, forKey aKey: KeyType?)
 
 ## See Also
 
-- [func removeObject(forKey: KeyType?)](nsmaptable/removeobject(forkey:).md)
+### Manipulating Content
+- [func removeObject(forKey: KeyType?)](./removeobject%28forkey%29.md)
   Removes a given key and its associated value from the map table.
-- [func removeAllObjects()](nsmaptable/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the map table of its entries.
 
 

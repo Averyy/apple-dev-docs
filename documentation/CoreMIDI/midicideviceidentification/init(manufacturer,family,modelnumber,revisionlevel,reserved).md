@@ -1,16 +1,17 @@
 # init(manufacturer:family:modelNumber:revisionLevel:reserved:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(manufacturer: (UInt8, UInt8, UInt8), family: (UInt8, UInt8), modelNumber: (
 
 ## See Also
 
-- [init()](midicideviceidentification/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

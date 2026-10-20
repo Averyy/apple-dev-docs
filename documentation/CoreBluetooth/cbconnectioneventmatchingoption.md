@@ -1,7 +1,8 @@
 # CBConnectionEventMatchingOption
 
 **Framework**: Core Bluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of options to use when registering for connection events.
 
@@ -20,33 +21,38 @@ A set of options to use when registering for connection events.
 struct CBConnectionEventMatchingOption
 ```
 
+```c
+typedef NSString * CBConnectionEventMatchingOption;
+```
+
 ## Topics
 
 ### Creating a Matching Option Instance
-- [init(rawValue: String)](cbconnectioneventmatchingoption/init(rawvalue:).md)
+- [init(rawValue: String)](./cbconnectioneventmatchingoption/init%28rawvalue%29.md)
   Creates a matching option from the provided raw value.
 ### Matching Options
-- [static let peripheralUUIDs: CBConnectionEventMatchingOption](cbconnectioneventmatchingoption/peripheraluuids.md)
+- [static let peripheralUUIDs: CBConnectionEventMatchingOption](./cbconnectioneventmatchingoption/peripheraluuids.md)
   An array of UUID objects that represents peripherals to match.
-- [static let serviceUUIDs: CBConnectionEventMatchingOption](cbconnectioneventmatchingoption/serviceuuids.md)
+- [static let serviceUUIDs: CBConnectionEventMatchingOption](./cbconnectioneventmatchingoption/serviceuuids.md)
   An array that represents service identifiers to match.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any]?)](cbcentralmanager/registerforconnectionevents(options:).md)
+### Receiving Connection Events
+- [func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any]?)](./cbcentralmanager/registerforconnectionevents%28options%29.md)
   Register for an event notification when the central manager makes a connection matching the given options.
-- [Peripheral Connection Options](peripheral-connection-options.md)
+- [Peripheral Connection Options](./peripheral-connection-options.md)
   Keys used to pass options when connecting to a peripheral.
-- [enum CBConnectionEvent](cbconnectionevent.md)
+- [enum CBConnectionEvent](./cbconnectionevent.md)
   A change to the connection state of a peer.
 
 

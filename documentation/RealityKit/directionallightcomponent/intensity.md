@@ -1,7 +1,8 @@
 # intensity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of the directional light, measured in lumen per square meter.
 
@@ -42,7 +43,8 @@ Use the following table as an estimate for Lux levels:
 
 ## See Also
 
-- [var isRealWorldProxy: Bool](directionallightcomponent/isrealworldproxy.md)
+### Setting intensity and shadows
+- [var isRealWorldProxy: Bool](./isrealworldproxy.md)
   A Boolean that you use to control whether the directional light operates as a proxy for a real-world light.
 
 

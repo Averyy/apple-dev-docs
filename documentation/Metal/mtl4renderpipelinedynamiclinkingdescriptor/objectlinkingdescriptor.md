@@ -1,7 +1,8 @@
 # objectLinkingDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls properties for link the object stage of the render pipeline.
 
@@ -17,6 +18,10 @@ Controls properties for link the object stage of the render pipeline.
 
 ```swift
 var objectLinkingDescriptor: MTL4PipelineStageDynamicLinkingDescriptor { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTL4PipelineStageDynamicLinkingDescriptor * objectLinkingDescriptor;
 ```
 
 

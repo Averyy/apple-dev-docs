@@ -1,15 +1,20 @@
 # CFXMLParser
 
 **Framework**: Core Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class CFXMLParser
+```
+
+```c
+typedef struct __CFXMLParser * CFXMLParserRef;
 ```
 
 #### Overview
@@ -19,57 +24,59 @@ CFXMLParser provides an XML parser you can use to find and extract data in XML d
 ## Topics
 
 ### Callbacks
-- [typealias CFXMLParserAddChildCallBack](cfxmlparseraddchildcallback.md)
+- [typealias CFXMLParserAddChildCallBack](./cfxmlparseraddchildcallback.md)
   Callback function invoked by the parser to notify your application of parent/child relationships between XML structures.
-- [typealias CFXMLParserCopyDescriptionCallBack](cfxmlparsercopydescriptioncallback.md)
+- [typealias CFXMLParserCopyDescriptionCallBack](./cfxmlparsercopydescriptioncallback.md)
   Callback function invoked by the parser when handling the information pointer.
-- [typealias CFXMLParserCreateXMLStructureCallBack](cfxmlparsercreatexmlstructurecallback.md)
+- [typealias CFXMLParserCreateXMLStructureCallBack](./cfxmlparsercreatexmlstructurecallback.md)
   Callback function invoked when the parser encounters an XML open tag.
-- [typealias CFXMLParserEndXMLStructureCallBack](cfxmlparserendxmlstructurecallback.md)
+- [typealias CFXMLParserEndXMLStructureCallBack](./cfxmlparserendxmlstructurecallback.md)
   Callback function invoked by the parser to notify your application that an XML structure (and all its children) have been completely parsed.
-- [typealias CFXMLParserHandleErrorCallBack](cfxmlparserhandleerrorcallback.md)
+- [typealias CFXMLParserHandleErrorCallBack](./cfxmlparserhandleerrorcallback.md)
   Callback function invoked by the parser to notify your application that an error has occurred.
-- [typealias CFXMLParserReleaseCallBack](cfxmlparserreleasecallback.md)
+- [typealias CFXMLParserReleaseCallBack](./cfxmlparserreleasecallback.md)
   Callback function invoked by the parser when it wants to release a reference to the information pointer.
-- [typealias CFXMLParserResolveExternalEntityCallBack](cfxmlparserresolveexternalentitycallback.md)
+- [typealias CFXMLParserResolveExternalEntityCallBack](./cfxmlparserresolveexternalentitycallback.md)
   Callback function invoked by the parser to notify your application that an external entity has been referenced.
-- [typealias CFXMLParserRetainCallBack](cfxmlparserretaincallback.md)
+- [typealias CFXMLParserRetainCallBack](./cfxmlparserretaincallback.md)
   Callback function invoked by the parser when it needs another reference to the information pointer.
 ### Data Types
-- [struct CFXMLParserCallBacks](cfxmlparsercallbacks.md)
+- [struct CFXMLParserCallBacks](./cfxmlparsercallbacks.md)
   Contains version information and function pointers to callbacks needed when parsing XML.
-- [struct CFXMLParserContext](cfxmlparsercontext.md)
+- [struct CFXMLParserContext](./cfxmlparsercontext.md)
   Contains version information and function pointers to callbacks used when handling a program-defined context.
 ### Constants
-- [struct CFXMLParserStatusCode](cfxmlparserstatuscode.md)
+- [struct CFXMLParserStatusCode](./cfxmlparserstatuscode.md)
   The various status and error flags that can be returned by the parser.
-- [struct CFXMLParserOptions](cfxmlparseroptions.md)
+- [struct CFXMLParserOptions](./cfxmlparseroptions.md)
   Options you can use to control the parser’s treatment of an XML document.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [XML Programming Topics for Core Foundation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFXML/CFXML.html#//apple_ref/doc/uid/10000138i)
-- [class CFAllocator](cfallocator.md)
-- [class CFArray](cfarray.md)
-- [class CFAttributedString](cfattributedstring.md)
-- [class CFBag](cfbag.md)
-- [class CFBinaryHeap](cfbinaryheap.md)
-- [class CFBitVector](cfbitvector.md)
-- [class CFBoolean](cfboolean.md)
-- [class CFBundle](cfbundle.md)
-- [class CFCalendar](cfcalendar.md)
-- [class CFCharacterSet](cfcharacterset.md)
-- [class CFData](cfdata.md)
-- [class CFDate](cfdate.md)
-- [class CFDateFormatter](cfdateformatter.md)
-- [class CFDictionary](cfdictionary.md)
-- [class CFError](cferror.md)
+### Related Documentation
+- [XML Programming Topics for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFXML/CFXML.html#//apple_ref/doc/uid/10000138i)
+### Opaque Types
+- [class CFAllocator](./cfallocator.md)
+- [class CFArray](./cfarray.md)
+- [class CFAttributedString](./cfattributedstring.md)
+- [class CFBag](./cfbag.md)
+- [class CFBinaryHeap](./cfbinaryheap.md)
+- [class CFBitVector](./cfbitvector.md)
+- [class CFBoolean](./cfboolean.md)
+- [class CFBundle](./cfbundle.md)
+- [class CFCalendar](./cfcalendar.md)
+- [class CFCharacterSet](./cfcharacterset.md)
+- [class CFData](./cfdata.md)
+- [class CFDate](./cfdate.md)
+- [class CFDateFormatter](./cfdateformatter.md)
+- [class CFDictionary](./cfdictionary.md)
+- [class CFError](./cferror.md)
 
 
 ---

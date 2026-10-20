@@ -1,7 +1,8 @@
 # signalingNaN
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A signaling NaN (“not a number”).
 

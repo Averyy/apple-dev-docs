@@ -1,7 +1,8 @@
 # init(paymentDescription:automaticReloadBilling:managementURL:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an automatic reload payment object with a description, automatic billing information, and a management URL.
 
@@ -18,9 +19,13 @@ Create an automatic reload payment object with a description, automatic billing 
 init(paymentDescription: String, automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem, managementURL: URL)
 ```
 
+```objc
+- (instancetype) initWithPaymentDescription:(NSString *) paymentDescription automaticReloadBilling:(PKAutomaticReloadPaymentSummaryItem *) automaticReloadBilling managementURL:(NSURL *) managementURL;
+```
+
 #### Discussion
 
-> ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](pkpaymentrequest.md) object to set up an automatic reload payment.
+> ❗ **Important**:  You must set the [`automaticReloadPaymentRequest`](../pkpaymentrequest/automaticreloadpaymentrequest.md) property on a [`PKPaymentRequest`](../pkpaymentrequest.md) object to set up an automatic reload payment.
 
 ## Parameters
 

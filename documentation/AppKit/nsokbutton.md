@@ -1,12 +1,13 @@
 # NSOKButton
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The OK button
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10 (renamed: NSApplication.ModalResponse.OK)
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The OK button
 var NSOKButton: Int { get }
 ```
 
+```c
+NSOKButton
+```
+
 ## See Also
 
-- [var NSCancelButton: Int](nscancelbutton.md)
+### Constants
+- [var NSCancelButton: Int](./nscancelbutton.md)
   The Cancel button
 
 

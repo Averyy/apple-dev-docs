@@ -1,7 +1,8 @@
 # TVRemote.AllowedRemotesItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The array of valid devices that Apple TV can connect to.
 
@@ -10,7 +11,7 @@ The array of valid devices that Apple TV can connect to.
 
 ## Declaration
 
-```swift
+```
 object TVRemote.AllowedRemotesItem
 ```
 
@@ -20,7 +21,8 @@ object TVRemote.AllowedRemotesItem
 
 ## See Also
 
-- [object TVRemote.AllowedTVsItem](tvremote/allowedtvsitem.md)
+### Objects
+- [object TVRemote.AllowedTVsItem](./allowedtvsitem.md)
   The array of valid Apple TV identifiers that the remote can connect to.
 
 

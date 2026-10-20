@@ -1,7 +1,8 @@
 # UIAccessibility.AssistiveTouchStatusDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +20,13 @@ struct AssistiveTouchStatusDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](uiaccessibility/assistivetouchstatusdidchangemessage/init.md)
+- [init()](./assistivetouchstatusdidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

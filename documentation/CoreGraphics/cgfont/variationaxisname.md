@@ -1,7 +1,8 @@
 # variationAxisName
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key used to obtain the variation axis name from a variation axis dictionary.
 
@@ -10,7 +11,7 @@ The key used to obtain the variation axis name from a variation axis dictionary.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ The key used to obtain the variation axis name from a variation axis dictionary.
 class let variationAxisName: CFString
 ```
 
+```c
+extern CFStringRef const kCGFontVariationAxisName;
+```
+
 #### Description
 
-The value obtained with this key is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that specifies the name of the variation axis.
+The value obtained with this key is a [`CFString`](../../CoreFoundation/cfstring.md) that specifies the name of the variation axis.
 
 ## See Also
 
-- [class let variationAxisMinValue: CFString](cgfont/variationaxisminvalue.md)
+### Constants
+- [class let variationAxisMinValue: CFString](./variationaxisminvalue.md)
   The key used to obtain the minimum variation axis value from a variation axis dictionary.
-- [class let variationAxisMaxValue: CFString](cgfont/variationaxismaxvalue.md)
+- [class let variationAxisMaxValue: CFString](./variationaxismaxvalue.md)
   The key used to obtain the maximum variation axis value from a variation axis dictionary.
-- [class let variationAxisDefaultValue: CFString](cgfont/variationaxisdefaultvalue.md)
+- [class let variationAxisDefaultValue: CFString](./variationaxisdefaultvalue.md)
   The key used to obtain the default variation axis value from a variation axis dictionary.
 
 

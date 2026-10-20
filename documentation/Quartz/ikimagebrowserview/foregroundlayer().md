@@ -1,7 +1,8 @@
 # foregroundLayer()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the foreground Core Animation layer
 
@@ -14,17 +15,22 @@ Returns the foreground Core Animation layer
 func foregroundLayer() -> CALayer!
 ```
 
+```objc
+- (CALayer *) foregroundLayer;
+```
+
 #### Return Value
 
 A `CALayer` instance.
 
 ## See Also
 
-- [func setForegroundLayer(CALayer!)](ikimagebrowserview/setforegroundlayer(_:).md)
+### Core Animation Layer Integration
+- [func setForegroundLayer(CALayer!)](./setforegroundlayer%28_%29.md)
   The Core Animation layer used as the foreground overlay.
-- [func setBackgroundLayer(CALayer!)](ikimagebrowserview/setbackgroundlayer(_:).md)
+- [func setBackgroundLayer(CALayer!)](./setbackgroundlayer%28_%29.md)
   The Core Animation layer used as the view’s background.
-- [func backgroundLayer() -> CALayer!](ikimagebrowserview/backgroundlayer.md)
+- [func backgroundLayer() -> CALayer!](./backgroundlayer%28%29.md)
   Returns the foreground Core Animation layer
 
 

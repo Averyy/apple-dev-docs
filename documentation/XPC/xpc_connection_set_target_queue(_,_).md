@@ -1,7 +1,8 @@
 # xpc_connection_set_target_queue(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the target queue of the connection.
 
@@ -10,7 +11,7 @@ Sets the target queue of the connection.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Sets the target queue of the connection.
 func xpc_connection_set_target_queue(_ connection: xpc_connection_t, _ targetq: dispatch_queue_t?)
 ```
 
+```c
+extern void xpc_connection_set_target_queue(xpc_connection_t connection, dispatch_queue_t targetq);
+```
+
 #### Discussion
 
 Setting the target queue is asynchronous and non-preemptive and therefore this method will not interrupt the execution of an already-running event handler block. Setting the target queue may be likened to issuing a barrier to the connection which does the actual work of changing the target queue.
 
-The XPC runtime guarantees this non-preemptiveness even for concurrent target queues. If the target queue is a concurrent queue, then XPC still guarantees that there will never be more than one invocation of the connection’s event handler block executing concurrently. If you wish to process events concurrently, you can [`dispatch_async`](https://developer.apple.com/documentation/dispatch/dispatch_async) to a concurrent queue from within the event handler.
+The XPC runtime guarantees this non-preemptiveness even for concurrent target queues. If the target queue is a concurrent queue, then XPC still guarantees that there will never be more than one invocation of the connection’s event handler block executing concurrently. If you wish to process events concurrently, you can [`dispatch_async`](../Dispatch/dispatch_async.md) to a concurrent queue from within the event handler.
 
-> ❗ **Important**:  When called from within the event handler block, [`dispatch_get_current_queue()`](https://developer.apple.com/documentation/dispatch/dispatch_get_current_queue()) is NOT guaranteed to return a pointer to the queue set with this method.
+> ❗ **Important**:  When called from within the event handler block, [`dispatch_get_current_queue()`](../Dispatch/dispatch_get_current_queue%28%29.md) is NOT guaranteed to return a pointer to the queue set with this method.
 
 Despite this seeming inconsistency, the XPC runtime guarantees that, when the target queue is a serial queue, the event handler block will execute synchonously with respect to other blocks submitted to that same queue. When the target queue is a concurrent queue, the event handler block may run concurrently with other blocks submitted to that queue, but it will never run concurrently with other invocations of itself for the same connection, as discussed previously.
 
@@ -37,17 +42,18 @@ Despite this seeming inconsistency, the XPC runtime guarantees that, when the ta
 
 ## See Also
 
-- [typealias xpc_connection_t](xpc_connection_t.md)
+### Creation
+- [typealias xpc_connection_t](./xpc_connection_t.md)
   A type that represents a connection to a named service.
-- [func xpc_connection_create(UnsafePointer<CChar>?, dispatch_queue_t?) -> xpc_connection_t](xpc_connection_create(_:_:).md)
+- [func xpc_connection_create(UnsafePointer<CChar>?, dispatch_queue_t?) -> xpc_connection_t](./xpc_connection_create%28_,_%29.md)
   Creates a new connection object.
-- [func xpc_connection_create_from_endpoint(xpc_endpoint_t) -> xpc_connection_t](xpc_connection_create_from_endpoint(_:).md)
+- [func xpc_connection_create_from_endpoint(xpc_endpoint_t) -> xpc_connection_t](./xpc_connection_create_from_endpoint%28_%29.md)
   Creates a new connection from the specified endpoint.
-- [func xpc_connection_create_mach_service(UnsafePointer<CChar>, dispatch_queue_t?, UInt64) -> xpc_connection_t](xpc_connection_create_mach_service(_:_:_:).md)
+- [func xpc_connection_create_mach_service(UnsafePointer<CChar>, dispatch_queue_t?, UInt64) -> xpc_connection_t](./xpc_connection_create_mach_service%28_,_,_%29.md)
   Creates a new connection object that represents a Mach service.
-- [var XPC_CONNECTION_MACH_SERVICE_LISTENER: Int32](xpc_connection_mach_service_listener.md)
+- [var XPC_CONNECTION_MACH_SERVICE_LISTENER: Int32](./xpc_connection_mach_service_listener.md)
   A flag that indicates the caller is the listener for the named service.
-- [var XPC_CONNECTION_MACH_SERVICE_PRIVILEGED: Int32](xpc_connection_mach_service_privileged.md)
+- [var XPC_CONNECTION_MACH_SERVICE_PRIVILEGED: Int32](./xpc_connection_mach_service_privileged.md)
   A flag that indicates the job advertising the service name belongs to a launch daemon rather than a launch agent.
 
 

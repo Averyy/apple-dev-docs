@@ -1,7 +1,8 @@
 # init(type:localizedTitle:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immutable Home Screen dynamic quick action with a user-visible title and no icon.
 
@@ -17,6 +18,10 @@ Creates an immutable Home Screen dynamic quick action with a user-visible title 
 convenience init(type: String, localizedTitle: String)
 ```
 
+```objc
+- (instancetype) initWithType:(NSString *) type localizedTitle:(NSString *) localizedTitle;
+```
+
 #### Return Value
 
 An immutable Home Screen dynamic quick action with a user-visible title and no icon.
@@ -28,7 +33,8 @@ An immutable Home Screen dynamic quick action with a user-visible title and no i
 
 ## See Also
 
-- [init(type: String, localizedTitle: String, localizedSubtitle: String?, icon: UIApplicationShortcutIcon?, userInfo: [String : any NSSecureCoding]?)](uiapplicationshortcutitem/init(type:localizedtitle:localizedsubtitle:icon:userinfo:).md)
+### Creating a Home Screen dynamic quick action
+- [init(type: String, localizedTitle: String, localizedSubtitle: String?, icon: UIApplicationShortcutIcon?, userInfo: [String : any NSSecureCoding]?)](./init%28type,localizedtitle,localizedsubtitle,icon,userinfo%29.md)
   Creates an immutable Home Screen dynamic quick action with user-visible title, icon, and user info dictionary.
 
 

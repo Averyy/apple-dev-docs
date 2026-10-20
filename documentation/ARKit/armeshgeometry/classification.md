@@ -1,7 +1,8 @@
 # classification
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Classification for each face in the mesh.
 
@@ -15,9 +16,13 @@ Classification for each face in the mesh.
 var classification: ARGeometrySource? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) ARGeometrySource * classification;
+```
+
 #### Discussion
 
-Each element of the array ([`ARGeometrySource`](argeometrysource.md)) is a classification that corresponds to one face in the geometry. The `count` of this property represents the number of faces in the geometry. The default value at each index is `0`, –– the raw value for [`ARMeshClassification.none`](armeshclassification/none.md).
+Each element of the array ([`ARGeometrySource`](../argeometrysource.md)) is a classification that corresponds to one face in the geometry. The `count` of this property represents the number of faces in the geometry. The default value at each index is `0`, –– the raw value for [`ARMeshClassification.none`](../armeshclassification/none.md).
 
 The following code demonstrates retrieving a classification for a particular face:
 
@@ -32,17 +37,18 @@ extension ARMeshGeometry {
 }
 ```
 
-For a sample app that demonstrates classification, see [`Visualizing and interacting with a reconstructed scene`](visualizing-and-interacting-with-a-reconstructed-scene.md).
+For a sample app that demonstrates classification, see [Visualizing and interacting with a reconstructed scene](../visualizing-and-interacting-with-a-reconstructed-scene.md).
 
 ## See Also
 
-- [enum ARMeshClassification](armeshclassification.md)
+### Getting Geometry Information
+- [enum ARMeshClassification](../armeshclassification.md)
   Enumeration of different classes of real-world objects that ARKit can identify.
-- [var faces: ARGeometryElement](armeshgeometry/faces.md)
+- [var faces: ARGeometryElement](./faces.md)
   An object that contains a buffer of vertex indices of the geometry’s faces.
-- [class ARGeometryElement](argeometryelement.md)
+- [class ARGeometryElement](../argeometryelement.md)
   A container for index data, such as vertex indices of a face.
-- [var normals: ARGeometrySource](armeshgeometry/normals.md)
+- [var normals: ARGeometrySource](./normals.md)
   Rays that define which direction is outside for each face.
 
 

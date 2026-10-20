@@ -1,7 +1,8 @@
 # init(name:usdzData:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of `ImmersiveCameraMeshCalibration`.
 

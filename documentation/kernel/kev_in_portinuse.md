@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_in_portinuse {
     ...
 };
@@ -17,9 +17,9 @@ struct kev_in_portinuse {
 ## Topics
 
 ### Instance Properties
-- [port](kev_in_portinuse/3754437-port.md)
-- [req_pid](kev_in_portinuse/3754438-req_pid.md)
-- [reserved](kev_in_portinuse/3754439-reserved.md)
+- [port](./kev_in_portinuse/api-3754437-port.md)
+- [req_pid](./kev_in_portinuse/api-3754438-req_pid.md)
+- [reserved](./kev_in_portinuse/api-3754439-reserved.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # BlendMode.color
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ case color
 
 ## See Also
 
-- [BlendMode.hue](blendmode/hue.md)
-- [BlendMode.saturation](blendmode/saturation.md)
-- [BlendMode.luminosity](blendmode/luminosity.md)
+### Mixing color components
+- [BlendMode.hue](./hue.md)
+- [BlendMode.saturation](./saturation.md)
+- [BlendMode.luminosity](./luminosity.md)
 
 
 ---

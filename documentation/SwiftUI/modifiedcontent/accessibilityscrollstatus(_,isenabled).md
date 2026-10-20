@@ -1,7 +1,8 @@
 # accessibilityScrollStatus(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 
@@ -19,6 +20,25 @@ Changes the announcement provided by accessibility technologies when a user scro
 ```swift
 @export(implementation)
 nonisolated func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Bool = true) -> ModifiedContent<Content, Modifier>
+```
+
+Available when `Modifier` is `AccessibilityAttachmentModifier`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: Text, isEnabled: Bool = true) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ status: some StringProtocol, isEnabled: Bool = true) -> ModifiedContent<Content, Modifier>
+```
+
+```swift
+nonisolated
+func accessibilityScrollStatus(_ statusKey: LocalizedStringKey, isEnabled: Bool = true) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

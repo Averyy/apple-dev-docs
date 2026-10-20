@@ -1,7 +1,8 @@
 # AVCaptureManualExposureBracketedStillImageSettings
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration for defining bracketed photo captures in terms of specific exposure and ISO values.
 
@@ -17,9 +18,13 @@ A configuration for defining bracketed photo captures in terms of specific expos
 class AVCaptureManualExposureBracketedStillImageSettings
 ```
 
+```objc
+@interface AVCaptureManualExposureBracketedStillImageSettings : AVCaptureBracketedStillImageSettings
+```
+
 ## Mentions
 
-- [Capturing a bracketed photo sequence](capturing-a-bracketed-photo-sequence.md)
+- [Capturing a bracketed photo sequence](./capturing-a-bracketed-photo-sequence.md)
 
 #### Overview
 
@@ -27,36 +32,37 @@ The `AVCaptureManualExposureBracketedStillImageSettings` class is a concrete sub
 
 An `AVCaptureManualExposureBracketedStillImageSettings` instance defines exposure duration and ISO settings that should be applied to one image in a bracket. An array of `AVCaptureManualExposureBracketedStillImageSettings` objects is passed to `captureStillImageBracketAsynchronouslyFromConnection:withSettingsArray:completionHandler:` to specify the bracketing.
 
-You can query the minimum and maximum duration and ISO properties of the [`AVCaptureDevice`](avcapturedevice.md) instance supplying data to an [`AVCaptureStillImageOutput`](avcapturestillimageoutput.md) instance. If you wish to leave [`exposureDuration`](avcapturemanualexposurebracketedstillimagesettings/exposureduration.md) unchanged for this bracketed still image, you pass the value `AVCaptureExposureDurationCurrent` when creating the instance. To keep the ISO unchanged, you pass `AVCaptureISOCurrent` when creating the instance.
+You can query the minimum and maximum duration and ISO properties of the [`AVCaptureDevice`](./avcapturedevice.md) instance supplying data to an [`AVCaptureStillImageOutput`](./avcapturestillimageoutput.md) instance. If you wish to leave [`exposureDuration`](./avcapturemanualexposurebracketedstillimagesettings/exposureduration.md) unchanged for this bracketed still image, you pass the value `AVCaptureExposureDurationCurrent` when creating the instance. To keep the ISO unchanged, you pass `AVCaptureISOCurrent` when creating the instance.
 
 ## Topics
 
 ### Creating a manual bracketed exposure settings instance
-- [class func manualExposureSettings(exposureDuration: CMTime, iso: Float) -> Self](avcapturemanualexposurebracketedstillimagesettings/manualexposuresettings(exposureduration:iso:).md)
+- [class func manualExposureSettings(exposureDuration: CMTime, iso: Float) -> Self](./avcapturemanualexposurebracketedstillimagesettings/manualexposuresettings%28exposureduration,iso%29.md)
   Creates a configuration of still image settings using the specified exposure duration and ISO.
 ### Getting manual exposure setting values
-- [var iso: Float](avcapturemanualexposurebracketedstillimagesettings/iso.md)
+- [var iso: Float](./avcapturemanualexposurebracketedstillimagesettings/iso.md)
   The ISO for the still image.
-- [var exposureDuration: CMTime](avcapturemanualexposurebracketedstillimagesettings/exposureduration.md)
+- [var exposureDuration: CMTime](./avcapturemanualexposurebracketedstillimagesettings/exposureduration.md)
   The exposure duration for the still image.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureBracketedStillImageSettings](avcapturebracketedstillimagesettings.md)
+- [AVCaptureBracketedStillImageSettings](./avcapturebracketedstillimagesettings.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureAutoExposureBracketedStillImageSettings](avcaptureautoexposurebracketedstillimagesettings.md)
+### Bracketed settings types
+- [class AVCaptureAutoExposureBracketedStillImageSettings](./avcaptureautoexposurebracketedstillimagesettings.md)
   A configuration for defining bracketed photo captures in terms of bias relative to automatic exposure.
-- [class AVCaptureBracketedStillImageSettings](avcapturebracketedstillimagesettings.md)
+- [class AVCaptureBracketedStillImageSettings](./avcapturebracketedstillimagesettings.md)
   The abstract superclass for bracketed photo capture settings.
 
 

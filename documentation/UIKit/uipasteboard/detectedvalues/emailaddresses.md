@@ -1,7 +1,8 @@
 # emailAddresses
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of email addresses that the data detection system identifies.
 
@@ -9,7 +10,7 @@ An array of email addresses that the data detection system identifies.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,22 @@ var emailAddresses: [DDMatchEmailAddress] { get }
 
 ## See Also
 
-- [var calendarEvents: [DDMatchCalendarEvent]](uipasteboard/detectedvalues/calendarevents.md)
+### Detected values
+- [var calendarEvents: [DDMatchCalendarEvent]](./calendarevents.md)
   An array of calendar events that the data detection system identifies.
-- [var flightNumbers: [DDMatchFlightNumber]](uipasteboard/detectedvalues/flightnumbers.md)
+- [var flightNumbers: [DDMatchFlightNumber]](./flightnumbers.md)
   An array of flight numbers that the system data detection system identifies.
-- [var links: [DDMatchLink]](uipasteboard/detectedvalues/links.md)
+- [var links: [DDMatchLink]](./links.md)
   An array of web links that the data detection system identifies.
-- [var moneyAmounts: [DDMatchMoneyAmount]](uipasteboard/detectedvalues/moneyamounts.md)
+- [var moneyAmounts: [DDMatchMoneyAmount]](./moneyamounts.md)
   An array of money amounts and currencies that the data detection system identifies.
-- [var number: Double?](uipasteboard/detectedvalues/number.md)
+- [var number: Double?](./number.md)
   A number that the data detection system identifies.
-- [var phoneNumbers: [DDMatchPhoneNumber]](uipasteboard/detectedvalues/phonenumbers.md)
+- [var phoneNumbers: [DDMatchPhoneNumber]](./phonenumbers.md)
   An array of phone numbers that the data detection system identifies.
-- [var postalAddresses: [DDMatchPostalAddress]](uipasteboard/detectedvalues/postaladdresses.md)
+- [var postalAddresses: [DDMatchPostalAddress]](./postaladdresses.md)
   An array of postal addresses that the data detection system identifies.
-- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](uipasteboard/detectedvalues/shipmenttrackingnumbers.md)
+- [var shipmentTrackingNumbers: [DDMatchShipmentTrackingNumber]](./shipmenttrackingnumbers.md)
   An array of parcel tracking numbers that the data detection system identifies.
 
 

@@ -1,7 +1,8 @@
 # characteristic
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristic whose value is to be written by the action.
 
@@ -19,13 +20,18 @@ The characteristic whose value is to be written by the action.
 var characteristic: HMCharacteristic { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMCharacteristic * characteristic;
+```
+
 ## See Also
 
-- [init(characteristic: HMCharacteristic, targetValue: TargetValueType)](hmcharacteristicwriteaction/init(characteristic:targetvalue:).md)
+### New Methods
+- [init(characteristic: HMCharacteristic, targetValue: TargetValueType)](./init%28characteristic,targetvalue%29.md)
   Initialize a characteristic write action with a specified characteristic and target value.
-- [var targetValue: TargetValueType](hmcharacteristicwriteaction/targetvalue.md)
+- [var targetValue: TargetValueType](./targetvalue.md)
   The value that will be written to the characteristic when the action is executed.
-- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](hmcharacteristicwriteaction/updatetargetvalue(_:completionhandler:).md)
+- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](./updatetargetvalue%28_,completionhandler%29.md)
   Updates the target value.
 
 

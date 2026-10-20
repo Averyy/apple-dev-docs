@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRSCFive](1644565-anonymous/krscfive.md)
-- [kRSCFour](1644565-anonymous/krscfour.md)
-- [kRSCOne](1644565-anonymous/krscone.md)
-- [kRSCSeven](1644565-anonymous/krscseven.md)
-- [kRSCSix](1644565-anonymous/krscsix.md)
-- [kRSCThree](1644565-anonymous/krscthree.md)
-- [kRSCTwo](1644565-anonymous/krsctwo.md)
-- [kRSCZero](1644565-anonymous/krsczero.md)
+- [kRSCFive](./api-1644565-anonymous/krscfive.md)
+- [kRSCFour](./api-1644565-anonymous/krscfour.md)
+- [kRSCOne](./api-1644565-anonymous/krscone.md)
+- [kRSCSeven](./api-1644565-anonymous/krscseven.md)
+- [kRSCSix](./api-1644565-anonymous/krscsix.md)
+- [kRSCThree](./api-1644565-anonymous/krscthree.md)
+- [kRSCTwo](./api-1644565-anonymous/krsctwo.md)
+- [kRSCZero](./api-1644565-anonymous/krsczero.md)
 
 
 ---

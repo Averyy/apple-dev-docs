@@ -1,7 +1,8 @@
 # MobileDocumentDisplayRequest.Response.ValidationOutcome.dismissed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A message that indicates the user didn’t explicitly approve or reject the document response.
 

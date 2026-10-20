@@ -1,7 +1,8 @@
 # prominentGlass()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration for a button that has a prominent Liquid Glass style.
 
@@ -23,29 +24,30 @@ In tvOS, this button style applies a Liquid Glass effect regardless of whether t
 
 ## See Also
 
-- [static func plain() -> UIButton.Configuration](uibutton/configuration-swift.struct/plain.md)
+### Creating configurations
+- [static func plain() -> UIButton.Configuration](./plain%28%29.md)
   Creates a configuration for a button with a transparent background.
-- [static func gray() -> UIButton.Configuration](uibutton/configuration-swift.struct/gray.md)
+- [static func gray() -> UIButton.Configuration](./gray%28%29.md)
   Creates a configuration for a button with a gray background.
-- [static func tinted() -> UIButton.Configuration](uibutton/configuration-swift.struct/tinted.md)
+- [static func tinted() -> UIButton.Configuration](./tinted%28%29.md)
   Creates a configuration for a button with a tinted background color.
-- [static func filled() -> UIButton.Configuration](uibutton/configuration-swift.struct/filled.md)
+- [static func filled() -> UIButton.Configuration](./filled%28%29.md)
   Creates a configuration for a button with a background filled with the button’s tint color.
-- [static func borderless() -> UIButton.Configuration](uibutton/configuration-swift.struct/borderless.md)
+- [static func borderless() -> UIButton.Configuration](./borderless%28%29.md)
   Creates a configuration for a button that has a borderless style.
-- [static func bordered() -> UIButton.Configuration](uibutton/configuration-swift.struct/bordered.md)
+- [static func bordered() -> UIButton.Configuration](./bordered%28%29.md)
   Creates a configuration for a button that has a bordered style.
-- [static func borderedTinted() -> UIButton.Configuration](uibutton/configuration-swift.struct/borderedtinted.md)
+- [static func borderedTinted() -> UIButton.Configuration](./borderedtinted%28%29.md)
   Creates a configuration for a button that has a tinted, bordered style.
-- [static func borderedProminent() -> UIButton.Configuration](uibutton/configuration-swift.struct/borderedprominent.md)
+- [static func borderedProminent() -> UIButton.Configuration](./borderedprominent%28%29.md)
   Creates a configuration for a button that has a prominent, bordered style.
-- [static func glass() -> UIButton.Configuration](uibutton/configuration-swift.struct/glass.md)
+- [static func glass() -> UIButton.Configuration](./glass%28%29.md)
   Creates a configuration for a button that has a Liquid Glass style.
-- [static func clearGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/clearglass.md)
+- [static func clearGlass() -> UIButton.Configuration](./clearglass%28%29.md)
   Creates a configuration for a button that has a clear Liquid Glass style.
-- [static func prominentClearGlass() -> UIButton.Configuration](uibutton/configuration-swift.struct/prominentclearglass.md)
+- [static func prominentClearGlass() -> UIButton.Configuration](./prominentclearglass%28%29.md)
   Creates a configuration for a button that has a prominent, clear Liquid Glass style.
-- [func updated(for: UIButton) -> UIButton.Configuration](uibutton/configuration-swift.struct/updated(for:).md)
+- [func updated(for: UIButton) -> UIButton.Configuration](./updated%28for%29.md)
   Returns a copy of the configuration, updated for the given button.
 
 

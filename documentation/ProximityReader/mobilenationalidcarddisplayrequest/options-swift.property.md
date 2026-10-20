@@ -1,7 +1,8 @@
 # options
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that customizes how to perform a display request.
 
@@ -18,13 +19,14 @@ var options: MobileNationalIDCardDisplayRequest.Options
 
 ## See Also
 
-- [var region: Locale.Region](mobilenationalidcarddisplayrequest/region.md)
+### Configuring the request details
+- [var region: Locale.Region](./region.md)
   The region of the document you’re requesting.
-- [var elements: [MobileNationalIDCardDisplayRequest.Element]](mobilenationalidcarddisplayrequest/elements.md)
+- [var elements: [MobileNationalIDCardDisplayRequest.Element]](./elements.md)
   The document elements you’re requesting.
-- [MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element.md)
+- [MobileNationalIDCardDisplayRequest.Element](./element.md)
   A type that represents an element you can request from a mobile national ID card.
-- [MobileNationalIDCardDisplayRequest.Options](mobilenationalidcarddisplayrequest/options-swift.struct.md)
+- [MobileNationalIDCardDisplayRequest.Options](./options-swift.struct.md)
   An object that customizes how to perform a display request.
 
 

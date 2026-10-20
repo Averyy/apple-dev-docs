@@ -1,23 +1,33 @@
 # init(equirectangular:withName:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously generates an environment resource from an equirectangular image.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
+- iOS 18.0+ - Deprecated in 27.2
+- iPadOS 18.0+ - Deprecated in 27.2
 - Mac Catalyst 18.0+
-- macOS 15.0+
-- tvOS 26.0+
-- visionOS 2.0+
+- macOS 15.0+ - Deprecated in 27.2
+- tvOS 26.0+ - Deprecated in 27.2
+- visionOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use `init(equirectangular:options:)` instead. Will be deprecated to support skybox-free EnvironmentResource.
 
 ## Declaration
 
 ```swift
 @MainActor
 @preconcurrency convenience init(equirectangular cgImage: CGImage, withName resourceName: String? = nil) async throws
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(equirectangular cgImage: CGImage, withName resourceName: String? = nil) throws
 ```
 
 ## Parameters

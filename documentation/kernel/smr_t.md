@@ -1,14 +1,15 @@
 # smr_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct smr *smr_t;
 ```
 

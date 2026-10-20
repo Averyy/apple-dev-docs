@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOWorkLoop *workLoop;
 ```
 
@@ -15,11 +15,12 @@ The IOWorkLoop for the audio driver - shared from the IOAudioDevice.
 
 ## See Also
 
-- [userClients](ioaudiocontrol/userclients.md)
-- [isStarted](ioaudiocontrol/isstarted.md)
-- [controlID](ioaudiocontrol/controlid.md)
-- [commandGate](ioaudiocontrol/commandgate.md)
-- [channelID](ioaudiocontrol/channelid.md)
+### Instance Variables
+- [userClients](./userclients.md)
+- [isStarted](./isstarted.md)
+- [controlID](./controlid.md)
+- [commandGate](./commandgate.md)
+- [channelID](./channelid.md)
 
 
 ---

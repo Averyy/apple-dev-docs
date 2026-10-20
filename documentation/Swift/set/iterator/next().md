@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances to the next element and returns it, or `nil` if no next element exists.
 
@@ -19,6 +20,8 @@ Advances to the next element and returns it, or `nil` if no next element exists.
 ```swift
 mutating func next() -> Element?
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Discussion
 

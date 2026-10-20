@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that provides the supported capabilities of the volume.
@@ -13,6 +14,10 @@ A property that provides the supported capabilities of the volume.
 
 ```swift
 var supportedVolumeCapabilities: FSVolume.SupportedCapabilities { get }
+```
+
+```objc
+@property (nonatomic, readonly) FSVolumeSupportedCapabilities * supportedVolumeCapabilities;
 ```
 
 

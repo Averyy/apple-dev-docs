@@ -1,7 +1,8 @@
 # Domains
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the domains under an organization’s management.
 
@@ -14,7 +15,7 @@ The payload that configures the domains under an organization’s management.
 
 ## Declaration
 
-```swift
+```
 object Domains
 ```
 
@@ -38,7 +39,7 @@ Trailing slashes are ignored.
 
 If a domain string contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `\*.example.com:8080` matches `http://site.example.com:8080/page.html` but not `http://site.example.com/page.html`, while the pattern `\*.example.com` matches both URLs.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -50,7 +51,7 @@ If a domain string contains a port number, the system considers only addresses t
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -98,31 +99,44 @@ If a domain string contains a port number, the system considers only addresses t
 
 ## Properties
 
-- `CrossSiteTrackingPreventionRelaxedApps` ([string]): An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`. Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2+
-- `CrossSiteTrackingPreventionRelaxedDomains` ([string]): An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention. Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
-- `EmailDomains` ([string]): An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings. Available: iOS 8+ | iPadOS 8+ | macOS 10.10+
-- `SafariPasswordAutoFillDomains` ([string]): An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself. Supervised devices or Shared iPad need this property to enable saving passwords in Safari. Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 2+
-- `WebDomains` ([string]): An array of domains. The system considers URLs matching the patterns listed in this property managed. Available: iOS 8+ | iPadOS 8+ | visionOS 2+
+- `CrossSiteTrackingPreventionRelaxedApps` ([string]): An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`.
+
+  Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2+
+- `CrossSiteTrackingPreventionRelaxedDomains` ([string]): An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention.
+
+  Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
+- `EmailDomains` ([string]): An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings.
+
+  Available: iOS 8+ | iPadOS 8+ | macOS 10.10+
+- `SafariPasswordAutoFillDomains` ([string]): An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself.
+
+  Supervised devices or Shared iPad need this property to enable saving passwords in Safari.
+
+  Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 2+
+- `WebDomains` ([string]): An array of domains. The system considers URLs matching the patterns listed in this property managed.
+
+  Available: iOS 8+ | iPadOS 8+ | visionOS 2+
 
 ## See Also
 
-- [object Cellular](cellular.md)
+### Networking
+- [object Cellular](./cellular.md)
   The payload that configures cellular settings.
-- [object CellularPrivateNetwork](cellularprivatenetwork.md)
+- [object CellularPrivateNetwork](./cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCachingService](contentcachingservice.md)
+- [object ContentCachingService](./contentcachingservice.md)
   The payload that configures the Content Caching service.
-- [object DNSSettings](dnssettings.md)
+- [object DNSSettings](./dnssettings.md)
   The payload that configures encrypted DNS settings.
-- [object Firewall](firewall.md)
+- [object Firewall](./firewall.md)
   The payload that configures the firewall.
-- [object NetworkUsageRules](networkusagerules.md)
+- [object NetworkUsageRules](./networkusagerules.md)
   The payload that configures network-usage rules.
-- [object Relay](relay.md)
+- [object Relay](./relay.md)
   The payload that configures relay settings.
-- [object WiFi](wifi.md)
+- [object WiFi](./wifi.md)
   The payload that configures Wi-Fi settings.
-- [object WiFiManagedSettings](wifimanagedsettings.md)
+- [object WiFiManagedSettings](./wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
 
 

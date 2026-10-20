@@ -1,7 +1,8 @@
 # init(duration:presentationTimeStamp:decodeTimeStamp:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -20,7 +21,8 @@ init(duration: CMTime, presentationTimeStamp: CMTime, decodeTimeStamp: CMTime)
 
 ## See Also
 
-- [init()](cmsampletiminginfo/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

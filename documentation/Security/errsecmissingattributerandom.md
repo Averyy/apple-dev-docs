@@ -1,7 +1,8 @@
 # errSecMissingAttributeRandom
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A random number attribute is missing.
 
@@ -18,6 +19,10 @@ A random number attribute is missing.
 
 ```swift
 var errSecMissingAttributeRandom: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeRandom
 ```
 
 

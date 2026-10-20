@@ -1,7 +1,8 @@
 # NWListener.State.setup
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The listener has been initialized but not started.
 
@@ -22,13 +23,14 @@ case setup
 
 ## See Also
 
-- [NWListener.State.waiting(_:)](nwlistener/state-swift.enum/waiting(_:).md)
+### States
+- [NWListener.State.waiting(_:)](./waiting%28_%29.md)
   The listener is waiting for a network to become available.
-- [NWListener.State.ready](nwlistener/state-swift.enum/ready.md)
+- [NWListener.State.ready](./ready.md)
   The listener is running and able to receive incoming connections.
-- [NWListener.State.failed(_:)](nwlistener/state-swift.enum/failed(_:).md)
+- [NWListener.State.failed(_:)](./failed%28_%29.md)
   The listener has encountered a fatal error.
-- [NWListener.State.cancelled](nwlistener/state-swift.enum/cancelled.md)
+- [NWListener.State.cancelled](./cancelled.md)
   The listener has been canceled.
 
 

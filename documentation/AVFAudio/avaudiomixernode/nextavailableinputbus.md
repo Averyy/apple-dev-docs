@@ -1,7 +1,8 @@
 # nextAvailableInputBus
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An audio bus that isn’t in a connected state.
 
@@ -18,6 +19,10 @@ An audio bus that isn’t in a connected state.
 
 ```swift
 var nextAvailableInputBus: AVAudioNodeBus { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioNodeBus nextAvailableInputBus;
 ```
 
 

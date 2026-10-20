@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of widget configuration representing the body of this configuration.
@@ -26,7 +27,8 @@ When you create a custom widget, Swift infers this type from your implementation
 
 ## See Also
 
-- [var body: Self.Body](widgetconfiguration/body-swift.property.md)
+### Implementing a widget
+- [var body: Self.Body](./body-swift.property.md)
   The content and behavior of this widget.
 
 

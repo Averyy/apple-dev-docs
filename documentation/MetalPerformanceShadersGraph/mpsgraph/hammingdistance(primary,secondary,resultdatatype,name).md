@@ -1,7 +1,8 @@
 # HammingDistance(primary:secondary:resultDataType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the hamming distance of two input tensors with support for broadcasting.
 
@@ -17,6 +18,10 @@ Computes the hamming distance of two input tensors with support for broadcasting
 
 ```swift
 func HammingDistance(primary primaryTensor: MPSGraphTensor, secondary secondaryTensor: MPSGraphTensor, resultDataType: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) HammingDistanceWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor resultDataType:(MPSDataType) resultDataType name:(NSString *) name;
 ```
 
 #### Return Value

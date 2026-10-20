@@ -1,7 +1,8 @@
 # name
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the rotor.
 
@@ -18,9 +19,14 @@ The name of the rotor.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
 ## See Also
 
-- [var attributedName: NSAttributedString](uiaccessibilitycustomrotor/attributedname.md)
+### Identifying the rotor
+- [var attributedName: NSAttributedString](./attributedname.md)
   The name of the rotor as an attributed string.
 
 

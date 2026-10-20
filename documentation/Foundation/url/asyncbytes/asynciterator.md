@@ -1,7 +1,8 @@
 # URL.AsyncBytes.AsyncIterator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator type that produces elements of this asynchronous sequence.
 
@@ -24,22 +25,23 @@ struct AsyncIterator
 ## Topics
 
 ### Producing iterator values
-- [func next() async throws -> UInt8?](url/asyncbytes/asynciterator/next.md)
+- [func next() async throws -> UInt8?](./asynciterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 ### Supporting types
-- [URL.AsyncBytes.Element](url/asyncbytes/element.md)
+- [URL.AsyncBytes.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> URL.AsyncBytes.AsyncIterator](url/asyncbytes/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> URL.AsyncBytes.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

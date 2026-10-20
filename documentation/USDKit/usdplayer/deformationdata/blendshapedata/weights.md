@@ -1,7 +1,8 @@
 # weights
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Weight values controlling each blend shape target’s influence.
 

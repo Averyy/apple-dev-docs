@@ -1,7 +1,8 @@
 # zoomFactor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A zoom factor.
 
@@ -16,13 +17,18 @@ A zoom factor.
 var zoomFactor: Float { get }
 ```
 
+```objc
+@property (atomic, readonly) float zoomFactor;
+```
+
 #### Discussion
 
-Suitable for use with the [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property or [`ramp(toVideoZoomFactor:withRate:)`](avcapturedevice/ramp(tovideozoomfactor:withrate:).md).
+Suitable for use with the [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property or [`ramp(toVideoZoomFactor:withRate:)`](../avcapturedevice/ramp%28tovideozoomfactor,withrate%29.md).
 
 ## See Also
 
-- [var aspectRatio: AVCaptureDevice.AspectRatio](avcaptureframing/aspectratio.md)
+### Inspecting a framing
+- [var aspectRatio: AVCaptureDevice.AspectRatio](./aspectratio.md)
   An aspect ratio.
 
 

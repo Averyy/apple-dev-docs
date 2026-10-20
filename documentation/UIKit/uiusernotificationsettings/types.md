@@ -1,19 +1,26 @@
 # types
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bitmask of the notification types that your app is allowed to use.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationSettings`](../uiusernotificationsettings.md).
 
 ## Declaration
 
 ```swift
 var types: UIUserNotificationType { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIUserNotificationType types;
 ```
 
 #### Discussion
@@ -22,9 +29,11 @@ When you create a new settings object, this property contains all of the types y
 
 ## See Also
 
-- [class UIUserNotificationSettings](uiusernotificationsettings.md)
+### Related Documentation
+- [class UIUserNotificationSettings](../uiusernotificationsettings.md)
   The types of notifications that can be displayed to the user by your app.
-- [var categories: Set<UIUserNotificationCategory>?](uiusernotificationsettings/categories.md)
+### Getting the configured settings
+- [var categories: Set<UIUserNotificationCategory>?](./categories.md)
   The app’s registered groups of actions.
 
 

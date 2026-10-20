@@ -1,7 +1,8 @@
 # contextHelp(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the context-sensitive help for the specified key from the bundle’s help file.
 
@@ -12,6 +13,10 @@ Returns the context-sensitive help for the specified key from the bundle’s hel
 
 ```swift
 func contextHelp(forKey key: NSHelpManager.ContextHelpKey) -> NSAttributedString?
+```
+
+```objc
+- (NSAttributedString *) contextHelpForKey:(NSHelpManagerContextHelpKey) key;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ This method is declared in `NSHelpManager.h`.
 
 ## See Also
 
-- [func contextHelp(for: Any) -> NSAttributedString?](../appkit/nshelpmanager/contexthelp(for:).md)
+### Related Documentation
+- [func contextHelp(for: Any) -> NSAttributedString?](../../AppKit/nshelpmanager/contexthelp%28for%29.md)
   Returns context-sensitive help for an object.
 
 

@@ -1,7 +1,8 @@
 # cssmOidToAlg(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func cssmOidToAlg(_ oid: UnsafePointer<SecAsn1Oid>!, _ alg: UnsafeMutablePointer<CSSM_ALGORITHMS>!) -> Bool
+```
+
+```c
+bool cssmOidToAlg(const SecAsn1Oid *oid, CSSM_ALGORITHMS *alg);
 ```
 
 

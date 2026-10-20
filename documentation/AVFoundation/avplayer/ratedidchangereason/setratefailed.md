@@ -1,7 +1,8 @@
 # setRateFailed
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An attempt to change the player’s rate fails.
 
@@ -19,13 +20,18 @@ An attempt to change the player’s rate fails.
 static let setRateFailed: AVPlayer.RateDidChangeReason
 ```
 
+```c
+extern AVPlayerRateDidChangeReason const AVPlayerRateDidChangeReasonSetRateFailed;
+```
+
 ## See Also
 
-- [static let appBackgrounded: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/appbackgrounded.md)
+### Rate change reasons
+- [static let appBackgrounded: AVPlayer.RateDidChangeReason](./appbackgrounded.md)
   An app transitions to the background.
-- [static let audioSessionInterrupted: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/audiosessioninterrupted.md)
+- [static let audioSessionInterrupted: AVPlayer.RateDidChangeReason](./audiosessioninterrupted.md)
   The system interrupts the app’s audio session.
-- [static let setRateCalled: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratecalled.md)
+- [static let setRateCalled: AVPlayer.RateDidChangeReason](./setratecalled.md)
   An app makes a call to set the player’s rate.
 
 

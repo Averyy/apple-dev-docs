@@ -1,7 +1,8 @@
 # fetchRequest
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A fetch request that has the persistent history change as the entity.
 
@@ -20,11 +21,16 @@ A fetch request that has the persistent history change as the entity.
 class var fetchRequest: NSFetchRequest<any NSFetchRequestResult>? { get }
 ```
 
+```objc
+@property (class, readonly, nullable) NSFetchRequest * fetchRequest;
+```
+
 ## See Also
 
-- [class var entityDescription: NSEntityDescription?](nspersistenthistorychange/entitydescription.md)
+### Inspecting Change Metadata
+- [class var entityDescription: NSEntityDescription?](./entitydescription.md)
   The entity description of the persistent history change entity.
-- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](nspersistenthistorychange/entitydescription(with:).md)
+- [class func entityDescription(with: NSManagedObjectContext) -> NSEntityDescription?](./entitydescription%28with%29.md)
   Requests an entity description for the managed object type affected by the change using the provided context.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothHCIEventReadRemoteSupportedFeaturesComplete
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIEventReadRemoteSupportedFeaturesComplete = 0x0B
 ```
 

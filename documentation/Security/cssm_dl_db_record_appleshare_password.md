@@ -1,7 +1,8 @@
 # CSSM_DL_DB_RECORD_APPLESHARE_PASSWORD
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_DL_DB_RECORD_APPLESHARE_PASSWORD: UInt32 { get }
+```
+
+```c
+CSSM_DL_DB_RECORD_APPLESHARE_PASSWORD
 ```
 
 

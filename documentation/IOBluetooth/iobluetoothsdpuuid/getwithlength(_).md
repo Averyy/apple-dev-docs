@@ -1,17 +1,22 @@
 # getWithLength(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an IOBluetoothSDPUUID object matching the target UUID, but with the given number of bytes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getWithLength(_ newLength: UInt32) -> Self!
+```
+
+```objc
+- (instancetype) getUUIDWithLength:(unsigned int) newLength;
 ```
 
 #### Return Value

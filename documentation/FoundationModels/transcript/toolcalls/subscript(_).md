@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation Models  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the tool call at the specified position.
 

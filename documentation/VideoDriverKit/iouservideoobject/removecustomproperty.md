@@ -1,7 +1,8 @@
 # RemoveCustomProperty
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a custom property from the video object.
 
@@ -10,7 +11,7 @@ Removes a custom property from the video object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t RemoveCustomProperty(IOUserVideoCustomProperty *in_custom_property);
 ```
 
@@ -24,9 +25,10 @@ virtual kern_return_t RemoveCustomProperty(IOUserVideoCustomProperty *in_custom_
 
 ## See Also
 
-- [AddCustomProperty](iouservideoobject/addcustomproperty.md)
+### Using custom properties
+- [AddCustomProperty](./addcustomproperty.md)
   Adds an custom property object to this object.
-- [IOUserVideoCustomProperty](iouservideocustomproperty.md)
+- [IOUserVideoCustomProperty](../iouservideocustomproperty.md)
   A custom property object that can be added to or associated with video objects.
 
 

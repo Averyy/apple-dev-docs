@@ -1,7 +1,8 @@
 # NSFileProviderDomain.TestingModes
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Modes that modify the system’s behavior while testing.
 
@@ -18,32 +19,37 @@ Modes that modify the system’s behavior while testing.
 struct TestingModes
 ```
 
+```c
+enum NSFileProviderDomainTestingModes : NSUInteger;
+```
+
 ## Topics
 
 ### Accessing Modes
-- [static var alwaysEnabled: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.struct/alwaysenabled.md)
+- [static var alwaysEnabled: NSFileProviderDomain.TestingModes](./testingmodes-swift.struct/alwaysenabled.md)
   A testing mode that automatically enables the domain.
-- [static var interactive: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.struct/interactive.md)
+- [static var interactive: NSFileProviderDomain.TestingModes](./testingmodes-swift.struct/interactive.md)
   A testing mode where the extension can deterministically test asynchronous operations.
 ### Creating Modes
-- [init(rawValue: UInt)](nsfileproviderdomain/testingmodes-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./testingmodes-swift.struct/init%28rawvalue%29.md)
   Returns a newly-created testing mode.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var testingModes: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.property.md)
+### Testing
+- [var testingModes: NSFileProviderDomain.TestingModes](./testingmodes-swift.property.md)
   A mode that gives the File Provider extension more control over the system’s behavior during testing.
 
 

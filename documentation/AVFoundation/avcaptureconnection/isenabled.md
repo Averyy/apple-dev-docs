@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Turns the connection on and off.
 
@@ -18,9 +19,14 @@ Turns the connection on and off.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [var isActive: Bool](avcaptureconnection/isactive.md)
+### Enabling a connection
+- [var isActive: Bool](./isactive.md)
   Indicates whether the connection is active.
 
 

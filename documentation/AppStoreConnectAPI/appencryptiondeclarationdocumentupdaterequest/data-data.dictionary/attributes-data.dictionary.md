@@ -1,7 +1,8 @@
 # AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app encryption declaration document update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app encryption declaration document update request r
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationDocumentUpdateRequest.Data.Attributes
 ```
 

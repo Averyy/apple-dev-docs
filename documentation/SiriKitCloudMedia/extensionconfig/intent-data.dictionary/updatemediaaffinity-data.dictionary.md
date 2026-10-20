@@ -1,7 +1,8 @@
 # ExtensionConfig.Intent.UpdateMediaAffinity
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s update media affinity intent.
 
@@ -10,7 +11,7 @@ Configuration details for your service’s update media affinity intent.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Intent.UpdateMediaAffinity
 ```
 
@@ -20,18 +21,21 @@ To specify that your service only implements the required methods, provide an em
 
 ## Properties
 
-- `opt` ([string]): Optional intent-handling steps that [`updateMediaAffinity`](extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionarykey.md) supports.
+- `opt` ([string]): Optional intent-handling steps that [`updateMediaAffinity`](./updatemediaaffinity-data.dictionarykey.md) supports.
+
+  **Allowed Values**: `resolveAffinityType`
 
 ## Relationships
 
 ### Inherits From
-- [ExtensionEndpointConfig](extensionendpointconfig.md)
+- [ExtensionEndpointConfig](../../extensionendpointconfig.md)
 
 ## See Also
 
-- [object ExtensionConfig.Intent.AddMedia](extensionconfig/intent-data.dictionary/addmedia-data.dictionary.md)
+### Specifying Required Headers and Supported Processing for Each Intent
+- [object ExtensionConfig.Intent.AddMedia](./addmedia-data.dictionary.md)
   Configuration details for your service’s add media intent.
-- [object ExtensionConfig.Intent.PlayMedia](extensionconfig/intent-data.dictionary/playmedia-data.dictionary.md)
+- [object ExtensionConfig.Intent.PlayMedia](./playmedia-data.dictionary.md)
   Configuration details for your service’s play media intent.
 
 

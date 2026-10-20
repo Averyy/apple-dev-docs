@@ -1,7 +1,8 @@
 # inputView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom input view to display when the text field becomes the first responder.
 
@@ -9,13 +10,17 @@ The custom input view to display when the text field becomes the first responder
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var inputView: UIView? { get set }
+```
+
+```objc
+@property (strong, readwrite, nullable) UIView * inputView;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The default value of this property is `nil`.
 
 ## See Also
 
-- [var inputAccessoryView: UIView?](uitextfield/inputaccessoryview.md)
+### Replacing the system input views
+- [var inputAccessoryView: UIView?](./inputaccessoryview.md)
   The custom accessory view to display when the text field becomes the first responder.
 
 

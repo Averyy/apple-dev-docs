@@ -1,7 +1,8 @@
 # OrientedBoundingBox
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Representation for an oriented bounding box. Uses a combination of an axis-aligned bounding box and a rotation vector around the centroid of the said axis-aligned bounding box to represent an oriented bounding box.
 
@@ -20,24 +21,25 @@ struct OrientedBoundingBox
 ## Topics
 
 ### Initializers
-- [init(orientation: simd_quatf, boundingBox: BoundingBox)](orientedboundingbox/init(orientation:boundingbox:).md)
+- [init(orientation: simd_quatf, boundingBox: BoundingBox)](./orientedboundingbox/init%28orientation,boundingbox%29.md)
 ### Instance Properties
-- [var boundingBox: BoundingBox](orientedboundingbox/boundingbox.md)
+- [var boundingBox: BoundingBox](./orientedboundingbox/boundingbox.md)
   Axis aligned bounding box
-- [var orientation: simd_quatf](orientedboundingbox/orientation.md)
+- [var orientation: simd_quatf](./orientedboundingbox/orientation.md)
   Orientation (rotation) of the bounding box
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct BoundingBox](boundingbox.md)
+### Bounding box retrieval
+- [struct BoundingBox](./boundingbox.md)
   An axis-aligned bounding box (AABB).
 
 

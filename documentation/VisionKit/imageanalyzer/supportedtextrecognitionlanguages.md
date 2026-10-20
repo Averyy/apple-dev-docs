@@ -1,7 +1,8 @@
 # supportedTextRecognitionLanguages
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifiers for the languages that the image analyzer recognizes.
 
@@ -20,11 +21,12 @@ final class var supportedTextRecognitionLanguages: [String] { get }
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 ## See Also
 
-- [class var isSupported: Bool](imageanalyzer/issupported.md)
+### Handling availability
+- [class var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the device supports image analysis.
 
 

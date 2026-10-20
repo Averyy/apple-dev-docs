@@ -1,7 +1,8 @@
 # errSSLBadConfiguration
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A configuration error occurred.
 
@@ -18,6 +19,10 @@ A configuration error occurred.
 
 ```swift
 var errSSLBadConfiguration: OSStatus { get }
+```
+
+```c
+errSSLBadConfiguration
 ```
 
 

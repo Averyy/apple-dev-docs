@@ -1,7 +1,8 @@
 # hpke_P256_SHA256_AES_GCM_256
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A cipher suite for HPKE that uses NIST P-256 elliptic curve key agreement, SHA-2 key derivation with a 256-bit digest, and the Advanced Encryption Standard cipher in Galois/Counter Mode with a key length of 256 bits.
 
@@ -12,6 +13,10 @@ A cipher suite for HPKE that uses NIST P-256 elliptic curve key agreement, SHA-2
 
 ```swift
 static let hpke_P256_SHA256_AES_GCM_256: ASAuthorizationProviderExtensionEncryptionAlgorithm
+```
+
+```c
+extern ASAuthorizationProviderExtensionEncryptionAlgorithm const ASAuthorizationProviderExtensionEncryptionAlgorithmHPKE_P256_SHA256_AES_GCM_256;
 ```
 
 

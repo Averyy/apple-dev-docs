@@ -1,7 +1,8 @@
 # init(leftEye:rightEye:presentationTime:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video frame from the left and right eye pixel buffers.
 

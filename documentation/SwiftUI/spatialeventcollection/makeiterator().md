@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Makes an iterator over all events in the collection.
 
@@ -21,7 +22,8 @@ func makeIterator() -> SpatialEventCollection.Iterator
 
 ## See Also
 
-- [SpatialEventCollection.Iterator](spatialeventcollection/iterator.md)
+### Iterating over events in the collection
+- [SpatialEventCollection.Iterator](./iterator.md)
   An iterator over all events in the collection.
 
 

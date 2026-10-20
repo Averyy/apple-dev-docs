@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct nextvend {
     ...
 };
@@ -17,9 +17,9 @@ struct nextvend {
 ## Topics
 
 ### Instance Properties
-- [nv_U](nextvend/3753854-nv_u.md)
-- [nv_magic](nextvend/3753855-nv_magic.md)
-- [nv_version](nextvend/3753856-nv_version.md)
+- [nv_U](./nextvend/api-3753854-nv_u.md)
+- [nv_magic](./nextvend/api-3753855-nv_magic.md)
+- [nv_version](./nextvend/api-3753856-nv_version.md)
 
 
 ---

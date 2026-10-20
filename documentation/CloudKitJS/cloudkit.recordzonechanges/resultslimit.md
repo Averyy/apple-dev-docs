@@ -1,7 +1,8 @@
 # resultsLimit
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of records to fetch.
 
@@ -10,7 +11,7 @@ The maximum number of records to fetch.
 
 ## Declaration
 
-```swift
+```
 attribute Boolean resultsLimit;
 ```
 

@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the given layer into the set.
 

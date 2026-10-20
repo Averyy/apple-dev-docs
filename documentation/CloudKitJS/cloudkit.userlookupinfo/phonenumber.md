@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s phone number.
 
@@ -10,7 +11,7 @@ The user’s phone number.
 
 ## Declaration
 
-```swift
+```
 attribute String phoneNumber;
 ```
 

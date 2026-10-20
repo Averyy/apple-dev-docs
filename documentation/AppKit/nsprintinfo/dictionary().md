@@ -1,17 +1,22 @@
 # dictionary()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the print info’s dictionary that contains the printing attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func dictionary() -> NSMutableDictionary
+```
+
+```objc
+- (NSMutableDictionary<NSString *,id> *) dictionary;
 ```
 
 #### Discussion

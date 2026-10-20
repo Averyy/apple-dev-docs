@@ -1,7 +1,8 @@
 # RunLoopType
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 6.0+
@@ -11,17 +12,26 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `RunLoopType`
+- **Type**: string
+
+## Possible Values
+
+- `dispatch_main`
+- `NSRunLoop`
 
 
-**Type**: string
 
 **Default**: `dispatch_main`
 
 ## See Also
 
-- [EnvironmentVariables](information-property-list/xpcservice/environmentvariables.md)
-- [JoinExistingSession](information-property-list/xpcservice/joinexistingsession.md)
-- [ServiceType](information-property-list/xpcservice/servicetype.md)
+### Property List Keys
+- [EnvironmentVariables](./environmentvariables.md)
+- [JoinExistingSession](./joinexistingsession.md)
+- [ServiceType](./servicetype.md)
 
 
 ---

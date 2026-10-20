@@ -1,7 +1,8 @@
 # lastModifiedDate
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The calendar date on which the media library was last modified.
 
@@ -17,11 +18,16 @@ The calendar date on which the media library was last modified.
 var lastModifiedDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * lastModifiedDate;
+```
+
 ## See Also
 
-- [func beginGeneratingLibraryChangeNotifications()](mpmedialibrary/begingeneratinglibrarychangenotifications.md)
+### Receiving notifications when the user’s library changes
+- [func beginGeneratingLibraryChangeNotifications()](./begingeneratinglibrarychangenotifications%28%29.md)
   Asks the media library to turn on notifications for whenever the library changes.
-- [func endGeneratingLibraryChangeNotifications()](mpmedialibrary/endgeneratinglibrarychangenotifications.md)
+- [func endGeneratingLibraryChangeNotifications()](./endgeneratinglibrarychangenotifications%28%29.md)
   Asks the media library to turn off notifications for whenever the library changes.
 
 

@@ -1,7 +1,8 @@
 # MTL4LogicalToPhysicalColorAttachmentMappingState.identity
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Treats the logical color attachment descriptor array for render and tile render pipelines to match the physical one.
 
@@ -17,6 +18,10 @@ Treats the logical color attachment descriptor array for render and tile render 
 
 ```swift
 case identity
+```
+
+```c
+MTL4LogicalToPhysicalColorAttachmentMappingStateIdentity
 ```
 
 #### Discussion

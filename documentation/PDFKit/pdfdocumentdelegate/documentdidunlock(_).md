@@ -1,7 +1,8 @@
 # documentDidUnlock(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the `PDFDocumentDidUnlockNotification` notification is posted.
 
@@ -17,6 +18,10 @@ Called when the `PDFDocumentDidUnlockNotification` notification is posted.
 
 ```swift
 optional func documentDidUnlock(_ notification: Notification)
+```
+
+```objc
+- (void) documentDidUnlock:(NSNotification *) notification;
 ```
 
 

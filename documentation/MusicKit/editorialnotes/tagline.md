@@ -1,7 +1,8 @@
 # tagline
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag line for the editorial notes.
 

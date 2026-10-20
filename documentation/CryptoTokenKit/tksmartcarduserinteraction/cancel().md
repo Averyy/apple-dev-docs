@@ -1,9 +1,10 @@
 # cancel()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Attempts to cancel an interaction started by calling [`run(reply:)`](tksmartcarduserinteraction/run(reply:).md). For certain interactions, cancellation may not be available.
+Attempts to cancel an interaction started by calling [`run(reply:)`](./run%28reply%29.md). For certain interactions, cancellation may not be available.
 
 **Availability**:
 - iOS 9.0+
@@ -20,13 +21,18 @@ Attempts to cancel an interaction started by calling [`run(reply:)`](tksmartcard
 func cancel() -> Bool
 ```
 
+```objc
+- (BOOL) cancel;
+```
+
 #### Return Value
 
-Returns [`false`](https://developer.apple.com/documentation/swift/false) if the operation is not running, or if cancelation is not supported.
+Returns [`false`](../../Swift/false.md) if the operation is not running, or if cancelation is not supported.
 
 ## See Also
 
-- [func run(reply: (Bool, (any Error)?) -> Void)](tksmartcarduserinteraction/run(reply:).md)
+### Starting and Stopping
+- [func run(reply: (Bool, (any Error)?) -> Void)](./run%28reply%29.md)
   Runs the user interaction and asynchronously receives a reply.
 
 

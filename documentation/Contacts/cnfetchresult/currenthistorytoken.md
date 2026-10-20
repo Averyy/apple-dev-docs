@@ -1,7 +1,8 @@
 # currentHistoryToken
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque token that indicates a point in history in the user’s Contacts database.
 
@@ -19,13 +20,18 @@ An opaque token that indicates a point in history in the user’s Contacts datab
 var currentHistoryToken: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * currentHistoryToken;
+```
+
 #### Discussion
 
-Save this token after a successful change history fetch result in your app. Then, set the saved token in [`startingToken`](cnchangehistoryfetchrequest/startingtoken.md) in a subsequent [`CNChangeHistoryFetchRequest`](cnchangehistoryfetchrequest.md) to receive changes after that point in history.
+Save this token after a successful change history fetch result in your app. Then, set the saved token in [`startingToken`](../cnchangehistoryfetchrequest/startingtoken.md) in a subsequent [`CNChangeHistoryFetchRequest`](../cnchangehistoryfetchrequest.md) to receive changes after that point in history.
 
 ## See Also
 
-- [var value: ValueType](cnfetchresult/value.md)
+### Accessing results
+- [var value: ValueType](./value.md)
   The result of the fetch request, expressed as the value type you specify.
 
 

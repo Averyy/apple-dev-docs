@@ -1,7 +1,8 @@
 # GCHapticDurationInfinite
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An infinite duration for a haptics event.
 
@@ -19,13 +20,18 @@ An infinite duration for a haptics event.
 let GCHapticDurationInfinite: Float
 ```
 
+```c
+extern const float GCHapticDurationInfinite;
+```
+
 #### Discussion
 
-Use this constant to create a [`CHHapticEvent`](https://developer.apple.com/documentation/corehaptics/chhapticevent) object with an infinite duration. For example, create an infinite haptic event that you update in a loop to adjust a controller’s motor intensity.
+Use this constant to create a [`CHHapticEvent`](../CoreHaptics/chhapticevent.md) object with an infinite duration. For example, create an infinite haptic event that you update in a loop to adjust a controller’s motor intensity.
 
 ## See Also
 
-- [func createEngine(withLocality: GCHapticsLocality) -> CHHapticEngine?](gcdevicehaptics/createengine(withlocality:).md)
+### Creating a haptics engine
+- [func createEngine(withLocality: GCHapticsLocality) -> CHHapticEngine?](./gcdevicehaptics/createengine%28withlocality%29.md)
   Creates a haptics engine with the specified locality.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the attribute, for use in encoding and decoding.
 
@@ -22,7 +23,8 @@ static let name: String
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value](attributescopes/foundationattributes/markdownsourcepositionattribute/value.md)
+### Encoding and Decoding
+- [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value](./value.md)
   The value type of a Markdown source position attribute.
 
 

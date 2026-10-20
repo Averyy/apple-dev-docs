@@ -1,12 +1,13 @@
 # performKeyEquivalent(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle a key equivalent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Handle a key equivalent.
 func performKeyEquivalent(with event: NSEvent) -> Bool
 ```
 
+```objc
+- (BOOL) performKeyEquivalent:(NSEvent *) event;
+```
+
 #### Discussion
 
-Override to handle key equivalents. If the character code or codes in `event` match the receiver’s key equivalent, the receiver should respond to the event and return [`true`](https://developer.apple.com/documentation/swift/true). The default implementation does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false).
+Override to handle key equivalents. If the character code or codes in `event` match the receiver’s key equivalent, the receiver should respond to the event and return [`true`](../../Swift/true.md). The default implementation does nothing and returns [`false`](../../Swift/false.md).
 
-> **Note**:  [`performKeyEquivalent(with:)`](nsresponder/performkeyequivalent(with:).md) takes an [`NSEvent`](nsevent.md) object as its argument, while [`performMnemonic:`](nsresponder/performmnemonic:.md) takes an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object containing the uninterpreted characters of the key event. You should extract the characters for a key equivalent using the `NSEvent` method  [`charactersIgnoringModifiers`](nsevent/charactersignoringmodifiers.md).
+> **Note**:  [`performKeyEquivalent(with:)`](./performkeyequivalent%28with%29.md) takes an [`NSEvent`](../nsevent.md) object as its argument, while [`performMnemonic:`](./performmnemonic_.md) takes an [`NSString`](../../Foundation/nsstring.md) object containing the uninterpreted characters of the key event. You should extract the characters for a key equivalent using the `NSEvent` method  [`charactersIgnoringModifiers`](../nsevent/charactersignoringmodifiers.md).
 
 ## Parameters
 
@@ -26,17 +31,19 @@ Override to handle key equivalents. If the character code or codes in `event` ma
 
 ## See Also
 
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsview/performkeyequivalent(with:).md)
+### Related Documentation
+- [func performKeyEquivalent(with: NSEvent) -> Bool](../nsview/performkeyequivalent%28with%29.md)
   Implemented by subclasses to respond to key equivalents (also known as keyboard shortcuts).
-- [func performKeyEquivalent(with: NSEvent) -> Bool](nsbutton/performkeyequivalent(with:).md)
+- [func performKeyEquivalent(with: NSEvent) -> Bool](../nsbutton/performkeyequivalent%28with%29.md)
   Checks the button’s key equivalent against the specified event and, if they match, simulates the button being clicked.
-- [func keyDown(with: NSEvent)](nsresponder/keydown(with:).md)
+### Responding to Key Events
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Informs the receiver that the user has pressed a key.
-- [func keyUp(with: NSEvent)](nsresponder/keyup(with:).md)
+- [func keyUp(with: NSEvent)](./keyup%28with%29.md)
   Informs the receiver that the user has released a key.
-- [func interpretKeyEvents([NSEvent])](nsresponder/interpretkeyevents(_:).md)
+- [func interpretKeyEvents([NSEvent])](./interpretkeyevents%28_%29.md)
   Handles a series of key events.
-- [func flushBufferedKeyEvents()](nsresponder/flushbufferedkeyevents.md)
+- [func flushBufferedKeyEvents()](./flushbufferedkeyevents%28%29.md)
   Clears any unprocessed key events when overridden by subclasses.
 
 

@@ -1,7 +1,8 @@
 # CodableAttributedStringKey
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias used by attribute keys that are both encodable and decodable.
 
@@ -22,9 +23,10 @@ typealias CodableAttributedStringKey = DecodableAttributedStringKey & EncodableA
 
 ## See Also
 
-- [protocol DecodableAttributedStringKey](decodableattributedstringkey.md)
+### Encoding and Decoding Keys
+- [protocol DecodableAttributedStringKey](./decodableattributedstringkey.md)
   A protocol that defines how an attribute key decodes its value.
-- [protocol EncodableAttributedStringKey](encodableattributedstringkey.md)
+- [protocol EncodableAttributedStringKey](./encodableattributedstringkey.md)
   A protocol that defines how an attribute key encodes its value.
 
 

@@ -1,7 +1,8 @@
 # nextDown
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The greatest representable value that is less than this decimal.
 
@@ -22,35 +23,36 @@ var nextDown: Decimal { get }
 
 ## See Also
 
-- [var sign: FloatingPointSign](decimal/sign.md)
+### Getting a decimal’s characteristics
+- [var sign: FloatingPointSign](./sign.md)
   The sign of the decimal.
-- [var exponent: Int](decimal/exponent.md)
+- [var exponent: Int](./exponent.md)
   The exponent of the decimal.
-- [var significand: Decimal](decimal/significand.md)
+- [var significand: Decimal](./significand.md)
   The significand of the decimal.
-- [var magnitude: Decimal](decimal/magnitude.md)
+- [var magnitude: Decimal](./magnitude.md)
   The magnitude of this decimal.
-- [var floatingPointClass: FloatingPointClassification](decimal/floatingpointclass.md)
+- [var floatingPointClass: FloatingPointClassification](./floatingpointclass.md)
   The IEEE 754 class of this type.
-- [var isCanonical: Bool](decimal/iscanonical.md)
+- [var isCanonical: Bool](./iscanonical.md)
   A Boolean value indicating whether the representation of this decimal is canonical.
-- [var isFinite: Bool](decimal/isfinite.md)
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value indicating whether this decimal is zero, subnormal, or normal (not infinity or NaN).
-- [var isInfinite: Bool](decimal/isinfinite.md)
+- [var isInfinite: Bool](./isinfinite.md)
   A Boolean value indicating whether this decimal is infinity.
-- [var isNaN: Bool](decimal/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value indicating whether this decimal is NaN.
-- [var isNormal: Bool](decimal/isnormal.md)
+- [var isNormal: Bool](./isnormal.md)
   A Boolean value indicating whether this decimal is normal (not zero, subnormal, infinity, or NaN).
-- [var isSignMinus: Bool](decimal/issignminus.md)
+- [var isSignMinus: Bool](./issignminus.md)
   A Boolean value indicating whether this decimal has a negative sign.
-- [var isSignaling: Bool](decimal/issignaling.md)
+- [var isSignaling: Bool](./issignaling.md)
   A Boolean value indicating whether this decimal is a signaling NaN.``
-- [var isSignalingNaN: Bool](decimal/issignalingnan.md)
+- [var isSignalingNaN: Bool](./issignalingnan.md)
   A Boolean value indicating whether this decimal is a signaling NaN.
-- [var isSubnormal: Bool](decimal/issubnormal.md)
+- [var isSubnormal: Bool](./issubnormal.md)
   A Boolean value indicating whether this decimal is subnormal.
-- [var isZero: Bool](decimal/iszero.md)
+- [var isZero: Bool](./iszero.md)
   A Boolean value indicating whether this value is zero.
 
 

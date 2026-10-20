@@ -1,7 +1,8 @@
 # transformed(by:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms the bounding box and finds the bounds of the result.
 
@@ -11,7 +12,7 @@ Transforms the bounding box and finds the bounds of the result.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ The bounds of the transformed box.
 
 ## See Also
 
-- [func transform(by: float4x4)](boundingbox/transform(by:).md)
+### Transforming a bounding box
+- [func transform(by: float4x4)](./transform%28by%29.md)
   Transforms the bounding box.
 
 

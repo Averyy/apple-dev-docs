@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A vertical label, reading top down.
 

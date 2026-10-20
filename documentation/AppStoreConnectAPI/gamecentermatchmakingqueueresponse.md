@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, modify, or get a single queue.
 
@@ -10,7 +11,7 @@ The response body for endpoints that create, modify, or get a single queue.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueResponse
 ```
 
@@ -22,13 +23,14 @@ object GameCenterMatchmakingQueueResponse
 
 ## See Also
 
-- [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingQueueCreateRequest](./gamecentermatchmakingqueuecreaterequest.md)
   The request body you use to create a queue.
-- [object GameCenterMatchmakingQueueUpdateRequest](gamecentermatchmakingqueueupdaterequest.md)
+- [object GameCenterMatchmakingQueueUpdateRequest](./gamecentermatchmakingqueueupdaterequest.md)
   The request body you use to modify a queue.
-- [object GameCenterMatchmakingQueuesResponse](gamecentermatchmakingqueuesresponse.md)
+- [object GameCenterMatchmakingQueuesResponse](./gamecentermatchmakingqueuesresponse.md)
   The response body for endpoints that get multiple queues.
-- [object GameCenterMatchmakingQueue](gamecentermatchmakingqueue.md)
+- [object GameCenterMatchmakingQueue](./gamecentermatchmakingqueue.md)
   A queue in Game Center matchmaking that holds players waiting to be matched, governed by a rule set.
 
 

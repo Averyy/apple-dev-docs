@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get all entries present in the TXT record.
 

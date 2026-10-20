@@ -1,7 +1,8 @@
 # init(image:imageOverlay:sportsOverlay:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a thumbnail with a combination of properties.
 
@@ -14,6 +15,10 @@ Initialize a thumbnail with a combination of properties.
 
 ```swift
 init(image: UIImage, imageOverlay: CPImageOverlay?, sportsOverlay: CPSportsOverlay?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image imageOverlay:(CPImageOverlay *) imageOverlay sportsOverlay:(CPSportsOverlay *) sportsOverlay;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # kAXRelevanceIndicatorRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A relevance indicator.
 
@@ -12,6 +13,10 @@ A relevance indicator.
 
 ```swift
 var kAXRelevanceIndicatorRole: String { get }
+```
+
+```c
+#define kAXRelevanceIndicatorRole
 ```
 
 

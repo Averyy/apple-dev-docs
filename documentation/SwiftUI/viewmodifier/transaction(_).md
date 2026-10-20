@@ -1,7 +1,8 @@
 # transaction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of the modifier that will apply the transaction mutation function `transform` to all transactions within the modifier.
 

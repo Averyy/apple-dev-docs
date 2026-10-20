@@ -1,14 +1,15 @@
 # kFWAVCAsyncPlug21
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWAVCAsyncPlug21 = 0xb5
 ```
 

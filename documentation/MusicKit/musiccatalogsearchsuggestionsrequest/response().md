@@ -1,7 +1,8 @@
 # response()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches suggestions of the requested catalog searchable types that match the search term of the request.
 

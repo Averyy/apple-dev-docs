@@ -1,7 +1,8 @@
 # USDStageComponent.RenderResult.Status
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The status of a render operation.
 
@@ -22,16 +23,16 @@ enum Status
 ## Topics
 
 ### Enumeration Cases
-- [USDStageComponent.RenderResult.Status.completed](usdstagecomponent/renderresult/status-swift.enum/completed.md)
-- [USDStageComponent.RenderResult.Status.failed](usdstagecomponent/renderresult/status-swift.enum/failed.md)
+- [USDStageComponent.RenderResult.Status.completed](./status-swift.enum/completed.md)
+- [USDStageComponent.RenderResult.Status.failed](./status-swift.enum/failed.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

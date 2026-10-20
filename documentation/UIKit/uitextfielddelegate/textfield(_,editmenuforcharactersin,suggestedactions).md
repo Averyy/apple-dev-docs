@@ -1,21 +1,26 @@
 # textField(_:editMenuForCharactersIn:suggestedActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the menu to display in the text field, based on the text range and actions the system provides.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.0
+- iPadOS 16.0+ - Deprecated in 27.0
+- Mac Catalyst 16.0+ - Deprecated in 27.2
+- tvOS 16.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 optional func textField(_ textField: UITextField, editMenuForCharactersIn range: NSRange, suggestedActions: [UIMenuElement]) -> UIMenu?
+```
+
+```objc
+- (UIMenu *) textField:(UITextField *) textField editMenuForCharactersInRange:(NSRange) range suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
 #### Return Value

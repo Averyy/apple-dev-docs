@@ -1,7 +1,8 @@
 # finally
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells `CancellablePromise` what callback to call when the inner promise either succeeds or fails.
 
@@ -10,7 +11,7 @@ Tells `CancellablePromise` what callback to call when the inner promise either s
 
 ## Declaration
 
-```swift
+```
 CancellablePromise finally(
 	Function? onfinally
 );

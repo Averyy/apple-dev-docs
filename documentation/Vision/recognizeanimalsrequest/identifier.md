@@ -1,7 +1,8 @@
 # RecognizeAnimalsRequest.Identifier
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -21,23 +22,23 @@ enum Identifier
 ## Topics
 
 ### Enumeration Cases
-- [RecognizeAnimalsRequest.Identifier.cat](recognizeanimalsrequest/identifier/cat.md)
-- [RecognizeAnimalsRequest.Identifier.catHead](recognizeanimalsrequest/identifier/cathead.md)
-- [RecognizeAnimalsRequest.Identifier.dog](recognizeanimalsrequest/identifier/dog.md)
-- [RecognizeAnimalsRequest.Identifier.dogHead](recognizeanimalsrequest/identifier/doghead.md)
+- [RecognizeAnimalsRequest.Identifier.cat](./identifier/cat.md)
+- [RecognizeAnimalsRequest.Identifier.catHead](./identifier/cathead.md)
+- [RecognizeAnimalsRequest.Identifier.dog](./identifier/dog.md)
+- [RecognizeAnimalsRequest.Identifier.dogHead](./identifier/doghead.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

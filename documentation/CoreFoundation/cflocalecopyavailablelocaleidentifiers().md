@@ -1,18 +1,19 @@
 # CFLocaleCopyAvailableLocaleIdentifiers()
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an array of CFString objects that represents all locales for which locale data is available.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns an array of CFString objects that represents all locales for which local
 func CFLocaleCopyAvailableLocaleIdentifiers() -> CFArray!
 ```
 
+```c
+extern CFArrayRefCFLocaleCopyAvailableLocaleIdentifiers();
+```
+
 #### Return Value
 
-An array of CFString objects that represents all locales for which locale data is available. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+An array of CFString objects that represents all locales for which locale data is available. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 
 ---

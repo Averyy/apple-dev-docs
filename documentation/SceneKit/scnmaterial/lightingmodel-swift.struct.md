@@ -1,18 +1,19 @@
 # SCNMaterial.LightingModel
 
 **Framework**: SceneKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants specifying the lighting and shading algorithm to use for rendering a material.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,39 +21,44 @@ Constants specifying the lighting and shading algorithm to use for rendering a m
 struct LightingModel
 ```
 
+```c
+typedef NSString * SCNLightingModel;
+```
+
 #### Discussion
 
-![None](/images/com.apple.scenekit/media-2929794@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929794@2x.png)
 
 ## Topics
 
 ### Type Properties
-- [static let blinn: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/blinn.md)
+- [static let blinn: SCNMaterial.LightingModel](./lightingmodel-swift.struct/blinn.md)
   Shading that incorporates ambient, diffuse, and specular properties, where specular highlights are calculated using the Blinn-Phong  formula.
-- [static let constant: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/constant.md)
+- [static let constant: SCNMaterial.LightingModel](./lightingmodel-swift.struct/constant.md)
   Uniform shading that incorporates ambient lighting only.
-- [static let lambert: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/lambert.md)
+- [static let lambert: SCNMaterial.LightingModel](./lightingmodel-swift.struct/lambert.md)
   Shading that incorporates ambient and diffuse properties only.
-- [static let phong: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/phong.md)
+- [static let phong: SCNMaterial.LightingModel](./lightingmodel-swift.struct/phong.md)
   Shading that incorporates ambient, diffuse, and specular properties, where specular highlights are calculated using the Phong  formula.
-- [static let physicallyBased: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/physicallybased.md)
+- [static let physicallyBased: SCNMaterial.LightingModel](./lightingmodel-swift.struct/physicallybased.md)
   Shading based on a realistic abstraction of physical lights and materials.
-- [static let shadowOnly: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.struct/shadowonly.md)
+- [static let shadowOnly: SCNMaterial.LightingModel](./lightingmodel-swift.struct/shadowonly.md)
 ### Initializers
-- [init(rawValue: String)](scnmaterial/lightingmodel-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./lightingmodel-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var lightingModel: SCNMaterial.LightingModel](scnmaterial/lightingmodel-swift.property.md)
+### Choosing a Shading Model
+- [var lightingModel: SCNMaterial.LightingModel](./lightingmodel-swift.property.md)
   The lighting formula that SceneKit uses to render the material.
 
 

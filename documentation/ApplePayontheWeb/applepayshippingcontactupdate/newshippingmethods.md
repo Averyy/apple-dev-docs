@@ -1,7 +1,8 @@
 # newShippingMethods
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of shipping methods that are available to the updated shipping contact.
 
@@ -11,21 +12,22 @@ A list of shipping methods that are available to the updated shipping contact.
 
 ## Declaration
 
-```swift
+```
 sequence <ApplePayShippingMethod> newShippingMethods;
 ```
 
 #### Discussion
 
-Supply a list of shipping methods that apply to the updated shipping contact, if the shipping methods changed. See [`ApplePayShippingMethod`](applepayshippingmethod.md).
+Supply a list of shipping methods that apply to the updated shipping contact, if the shipping methods changed. See [`ApplePayShippingMethod`](../applepayshippingmethod.md).
 
 ## See Also
 
-- [errors](applepayshippingcontactupdate/errors.md)
+### Updating shipping contact properties
+- [errors](./errors.md)
   A list of custom errors to display on the payment sheet.
-- [newLineItems](applepayshippingcontactupdate/newlineitems.md)
+- [newLineItems](./newlineitems.md)
   An optional list of updated line items.
-- [newTotal](applepayshippingcontactupdate/newtotal.md)
+- [newTotal](./newtotal.md)
   The new total that results from a change in the shipping contact.
 
 

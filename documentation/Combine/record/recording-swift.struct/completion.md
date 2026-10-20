@@ -1,7 +1,8 @@
 # completion
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completion which will be sent to a `Subscriber`.
 
@@ -22,7 +23,8 @@ var completion: Subscribers.Completion<Failure> { get }
 
 ## See Also
 
-- [var output: [Output]](record/recording-swift.struct/output.md)
+### Inspecting publisher properties
+- [var output: [Output]](./output.md)
   The output which will be sent to a `Subscriber`.
 
 

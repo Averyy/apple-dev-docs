@@ -1,6 +1,8 @@
 # Classifying Live Audio Input with a Built-in Sound Classifier
 
-**Framework**: Sound Analysis
+**Framework**: Sound Analysis  
+**Role**: Sample Code  
+**Download**: [ClassifyingLiveAudioInputWithABuiltInSoundClassifier.zip](https://docs-assets.developer.apple.com/published/ee91a9289839/ClassifyingLiveAudioInputWithABuiltInSoundClassifier.zip)
 
 Detect and identify hundreds of sounds by using a trained classifier.
 
@@ -12,13 +14,14 @@ Detect and identify hundreds of sounds by using a trained classifier.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10036: Discover Built-in Sound Classification in Sound Analysis`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10036/).
+> **Note**: This sample code project is associated with WWDC21 session [10036: Discover Built-in Sound Classification in Sound Analysis](https://developer.apple.com/wwdc21/10036/).
 
 ## See Also
 
-- [class SNClassifySoundRequest](snclassifysoundrequest.md)
+### Sound classification requests
+- [class SNClassifySoundRequest](./snclassifysoundrequest.md)
   A request that classifies sound using a Core ML model.
-- [class SNClassificationResult](snclassificationresult.md)
+- [class SNClassificationResult](./snclassificationresult.md)
   A result that contains the highest-ranking classifications in a time range.
 
 

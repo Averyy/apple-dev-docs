@@ -1,7 +1,8 @@
 # SentTransferredFile
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of a file from the perspective of the sender.
 
@@ -23,24 +24,25 @@ struct SentTransferredFile
 ## Topics
 
 ### Configuring a file transfer
-- [init(URL, allowAccessingOriginalFile: Bool)](senttransferredfile/init(_:allowaccessingoriginalfile:).md)
+- [init(URL, allowAccessingOriginalFile: Bool)](./senttransferredfile/init%28_,allowaccessingoriginalfile%29.md)
   Creates a description of a file from the perspective of the sender.
-- [let file: URL](senttransferredfile/file.md)
+- [let file: URL](./senttransferredfile/file.md)
   A URL that describes the location of the file.
-- [let allowAccessingOriginalFile: Bool](senttransferredfile/allowaccessingoriginalfile.md)
+- [let allowAccessingOriginalFile: Bool](./senttransferredfile/allowaccessingoriginalfile.md)
   A Boolean value that indicates whether the receiver can read and write the original file. When set to `false`, the receiver can only gain access to a copy of the file.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct FileRepresentation](filerepresentation.md)
+### File transfer
+- [struct FileRepresentation](./filerepresentation.md)
   A transfer representation for types that transfer as a file URL.
-- [struct ReceivedTransferredFile](receivedtransferredfile.md)
+- [struct ReceivedTransferredFile](./receivedtransferredfile.md)
   A description of a file from the perspective of the receiver.
 
 

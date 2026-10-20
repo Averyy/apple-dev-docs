@@ -1,7 +1,8 @@
 # Wind
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains wind data of speed, direction, and gust.
 
@@ -23,37 +24,38 @@ struct Wind
 ## Topics
 
 ### Getting the properties
-- [Wind.CompassDirection](wind/compassdirection-swift.enum.md)
+- [Wind.CompassDirection](./wind/compassdirection-swift.enum.md)
   A compass composed of cardinal and intercardinal directions.
-- [var compassDirection: Wind.CompassDirection](wind/compassdirection-swift.property.md)
+- [var compassDirection: Wind.CompassDirection](./wind/compassdirection-swift.property.md)
   The general indicator of wind direction.
-- [var direction: Measurement<UnitAngle>](wind/direction.md)
+- [var direction: Measurement<UnitAngle>](./wind/direction.md)
   The direction the wind is coming from in degrees.
-- [var gust: Measurement<UnitSpeed>?](wind/gust.md)
+- [var gust: Measurement<UnitSpeed>?](./wind/gust.md)
   A sudden increase in wind speed due to friction, wind shear, or by heating.
-- [var speed: Measurement<UnitSpeed>](wind/speed.md)
+- [var speed: Measurement<UnitSpeed>](./wind/speed.md)
   Sustained wind speed.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Precipitation](precipitation.md)
+### Characteristics
+- [enum Precipitation](./precipitation.md)
   The form of precipitation.
-- [enum PressureTrend](pressuretrend.md)
+- [enum PressureTrend](./pressuretrend.md)
   The atmospheric pressure change over time.
-- [struct UVIndex](uvindex.md)
+- [struct UVIndex](./uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
-- [enum WeatherCondition](weathercondition.md)
+- [enum WeatherCondition](./weathercondition.md)
   A description of the current weather condition.
 
 

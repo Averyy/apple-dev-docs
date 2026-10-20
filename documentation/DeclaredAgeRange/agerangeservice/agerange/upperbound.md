@@ -1,7 +1,8 @@
 # upperBound
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum age in the person’s declared age range.
 
@@ -19,19 +20,20 @@ var upperBound: Int?
 
 #### Discussion
 
-When this value is `nil`, there’s no upper bound to the person’s age range, indicating they meet or exceed the highest age gate specified by the `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](agerangeservice/requestagerange(agegates:_:_:in:)-2go8c.md)).
+When this value is `nil`, there’s no upper bound to the person’s age range, indicating they meet or exceed the highest age gate specified by the `requestAgeRange(ageGates:_:_:in:)` methods (for example, [`requestAgeRange(ageGates:_:_:in:)`](../requestagerange%28agegates,_,_,in%29-2go8c.md)).
 
 When present, the value of this property equals the highest age gate that exceeds the person’s declared age, out of the age gates you supply to the method.
 
-Consider this property together with [`lowerBound`](agerangeservice/agerange/lowerbound.md) to gate your app’s content based on the person’s declared age range.
+Consider this property together with [`lowerBound`](./lowerbound.md) to gate your app’s content based on the person’s declared age range.
 
 ## See Also
 
-- [var lowerBound: Int?](agerangeservice/agerange/lowerbound.md)
+### Fetching the age range
+- [var lowerBound: Int?](./lowerbound.md)
   The minimum age in the person’s declared age range.
-- [var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?](agerangeservice/agerange/agerangedeclaration.md)
+- [var ageRangeDeclaration: AgeRangeService.AgeRangeDeclaration?](./agerangedeclaration.md)
   Information about how the person set their age range.
-- [var activeParentalControls: AgeRangeService.ParentalControls](agerangeservice/agerange/activeparentalcontrols.md)
+- [var activeParentalControls: AgeRangeService.ParentalControls](./activeparentalcontrols.md)
   The parental controls that are active on the device.
 
 

@@ -1,7 +1,8 @@
 # unit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unit: IntentParameter<Value>.Dispersion? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitDispersion>`.
+
 ## See Also
 
-- [IntentParameter.Dispersion](intentparameter/dispersion.md)
-- [var defaultUnit: IntentParameter<Value>.Dispersion?](intentparameter/defaultunit-tk2s.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-1bmpc.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8ge3z.md)
+### Accessing unit details
+- [IntentParameter.Dispersion](./dispersion.md)
+- [var defaultUnit: IntentParameter<Value>.Dispersion?](./defaultunit-tk2s.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-1bmpc.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8ge3z.md)
 
 
 ---

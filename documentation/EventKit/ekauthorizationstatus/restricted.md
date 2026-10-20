@@ -1,7 +1,8 @@
 # EKAuthorizationStatus.restricted
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app isn’t authorized to access the service.
 
@@ -19,19 +20,24 @@ The app isn’t authorized to access the service.
 case restricted
 ```
 
+```c
+EKAuthorizationStatusRestricted
+```
+
 #### Discussion
 
 The person can’t change your app’s authorization status, possibly due to active restrictions such as parental controls being in place.
 
 ## See Also
 
-- [EKAuthorizationStatus.fullAccess](ekauthorizationstatus/fullaccess.md)
+### Status
+- [EKAuthorizationStatus.fullAccess](./fullaccess.md)
   The app has both read and write access to the requested entity type.
-- [EKAuthorizationStatus.writeOnly](ekauthorizationstatus/writeonly.md)
+- [EKAuthorizationStatus.writeOnly](./writeonly.md)
   The app has write-only access to the requested entity type.
-- [EKAuthorizationStatus.denied](ekauthorizationstatus/denied.md)
+- [EKAuthorizationStatus.denied](./denied.md)
   The person explicitly denied access to the service for the app.
-- [EKAuthorizationStatus.notDetermined](ekauthorizationstatus/notdetermined.md)
+- [EKAuthorizationStatus.notDetermined](./notdetermined.md)
   The person hasn’t chosen whether the app may access the service.
 
 

@@ -1,7 +1,8 @@
 # canMute
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the device supports muting audio output.
 

@@ -1,7 +1,8 @@
 # add(_:position:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a specializes arc to the prim.
 
@@ -21,7 +22,7 @@ func add(_ primPath: USDLayer.Path, position: USDPrim.ListPosition = .backOfPrep
 
 #### Discussion
 
-> **Note**: An error if the specializes cannot be added.
+> **Throws**: An error if the specializes cannot be added.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # readAttributeNOCs(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNOCs(with params: MTRReadParams?, completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNOCs(with params: MTRReadParams?) async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeNOCsWithParams:(MTRReadParams *) params completion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

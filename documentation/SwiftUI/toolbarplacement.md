@@ -1,7 +1,8 @@
 # ToolbarPlacement
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The placement of a toolbar.
 
@@ -22,42 +23,43 @@ struct ToolbarPlacement
 
 #### Overview
 
-Use this type in conjunction with modifiers like [`toolbarBackground(_:for:)`](view/toolbarbackground(_:for:).md) and [`toolbarVisibility(_:for:)`](view/toolbarvisibility(_:for:).md) to customize the appearance of different bars managed by SwiftUI. Not all bars support all types of customizations.
+Use this type in conjunction with modifiers like [`toolbarBackground(_:for:)`](./view/toolbarbackground%28_,for%29.md) and [`toolbarVisibility(_:for:)`](./view/toolbarvisibility%28_,for%29.md) to customize the appearance of different bars managed by SwiftUI. Not all bars support all types of customizations.
 
-See [`ToolbarItemPlacement`](toolbaritemplacement.md) to learn about the different regions of these toolbars that you can place your own controls into.
+See [`ToolbarItemPlacement`](./toolbaritemplacement.md) to learn about the different regions of these toolbars that you can place your own controls into.
 
 ## Topics
 
 ### Getting placements
-- [static var automatic: ToolbarPlacement](toolbarplacement/automatic.md)
+- [static var automatic: ToolbarPlacement](./toolbarplacement/automatic.md)
   The primary toolbar.
-- [static func accessoryBar<ID>(id: ID) -> ToolbarPlacement](toolbarplacement/accessorybar(id:).md)
+- [static func accessoryBar<ID>(id: ID) -> ToolbarPlacement](./toolbarplacement/accessorybar%28id%29.md)
   Creates a unique accessory bar placement.
-- [static var bottomBar: ToolbarPlacement](toolbarplacement/bottombar.md)
+- [static var bottomBar: ToolbarPlacement](./toolbarplacement/bottombar.md)
   The bottom toolbar of an app.
-- [static var bottomOrnament: ToolbarPlacement](toolbarplacement/bottomornament.md)
+- [static var bottomOrnament: ToolbarPlacement](./toolbarplacement/bottomornament.md)
   The bottom ornament of an app.
-- [static var navigationBar: ToolbarPlacement](toolbarplacement/navigationbar.md)
+- [static var navigationBar: ToolbarPlacement](./toolbarplacement/navigationbar.md)
   The navigation bar of an app.
-- [static var tabBar: ToolbarPlacement](toolbarplacement/tabbar.md)
+- [static var tabBar: ToolbarPlacement](./toolbarplacement/tabbar.md)
   The tab bar of an app.
-- [static var windowToolbar: ToolbarPlacement](toolbarplacement/windowtoolbar.md)
+- [static var windowToolbar: ToolbarPlacement](./toolbarplacement/windowtoolbar.md)
   The placement for the containing window’s toolbar, sometimes referred to as the titlebar.
-- [init<ID>(id: ID)](toolbarplacement/init(id:).md)
+- [init<ID>(id: ID)](./toolbarplacement/init%28id%29.md)
   Creates a custom accessory bar placement.
 ### Type Properties
-- [static var statusBar: ToolbarPlacement](toolbarplacement/statusbar.md)
+- [static var statusBar: ToolbarPlacement](./toolbarplacement/statusbar.md)
   The system status bar.
 
 ## See Also
 
-- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
+### Setting toolbar visibility
+- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbarvisibility%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
-- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
+- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbarbackgroundvisibility%28_,for%29.md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
-- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+- [struct ContentToolbarPlacement](./contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbar%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
 
 

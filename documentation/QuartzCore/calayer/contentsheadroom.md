@@ -1,7 +1,8 @@
 # contentsHeadroom
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,10 +18,15 @@
 var contentsHeadroom: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat contentsHeadroom;
+```
+
 ## See Also
 
-- [var preferredDynamicRange: CALayer.DynamicRange](calayer/preferreddynamicrange.md)
-- [var wantsExtendedDynamicRangeContent: Bool](calayer/wantsextendeddynamicrangecontent.md)
+### High dynamic range
+- [var preferredDynamicRange: CALayer.DynamicRange](./preferreddynamicrange.md)
+- [var wantsExtendedDynamicRangeContent: Bool](./wantsextendeddynamicrangecontent.md)
 
 
 ---

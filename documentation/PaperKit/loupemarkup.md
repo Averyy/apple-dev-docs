@@ -1,7 +1,8 @@
 # LoupeMarkup
 
 **Framework**: PaperKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A loupe magnifier that magnifies the content below the loupe.
 
@@ -25,38 +26,39 @@ The loupe magnifies the content beneath its frame within the parent markup. The 
 ## Topics
 
 ### Creating a loupe
-- [init(frame: CGRect, magnification: CGFloat, strokeColor: CGColor?, lineWidth: CGFloat, allowedInteractions: MarkupInteractions, id: MarkupID<LoupeMarkup>)](loupemarkup/init(frame:magnification:strokecolor:linewidth:allowedinteractions:id:).md)
+- [init(frame: CGRect, magnification: CGFloat, strokeColor: CGColor?, lineWidth: CGFloat, allowedInteractions: MarkupInteractions, id: MarkupID<LoupeMarkup>)](./loupemarkup/init%28frame,magnification,strokecolor,linewidth,allowedinteractions,id%29.md)
   Initializes and returns a new loupe markup from the specified parameters.
 ### Configuring appearance
-- [var magnification: CGFloat](loupemarkup/magnification.md)
+- [var magnification: CGFloat](./loupemarkup/magnification.md)
   The magnification level applied to the content displayed within the loupe.
-- [var strokeColor: CGColor?](loupemarkup/strokecolor.md)
+- [var strokeColor: CGColor?](./loupemarkup/strokecolor.md)
   The color of the loupe’s border.
-- [var lineWidth: CGFloat](loupemarkup/linewidth.md)
+- [var lineWidth: CGFloat](./loupemarkup/linewidth.md)
   The width of the loupe’s border in points.
 ### Identifying markup
-- [var id: MarkupID<LoupeMarkup>](loupemarkup/id.md)
+- [var id: MarkupID<LoupeMarkup>](./loupemarkup/id.md)
   Stable unique identity of the markup.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
-- [Markup](markup.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Markup](./markup.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol Markup](markup.md)
+### Markup elements
+- [protocol Markup](./markup.md)
   A markup component.
-- [struct ImageMarkup](imagemarkup.md)
+- [struct ImageMarkup](./imagemarkup.md)
   A markup element that represents an image.
-- [struct ShapeMarkup](shapemarkup.md)
+- [struct ShapeMarkup](./shapemarkup.md)
   A markup element that represents a shape or text box with customizable appearance and behavior.
-- [struct LinkMarkup](linkmarkup.md)
+- [struct LinkMarkup](./linkmarkup.md)
   A URL link that a person can tap on in the canvas.
-- [struct MarkupInteractions](markupinteractions.md)
+- [struct MarkupInteractions](./markupinteractions.md)
   Interactions that people can perform on markup elements.
 
 

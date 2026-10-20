@@ -1,7 +1,8 @@
 # authenticationToken
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authentication token supplied to your web service.
 
@@ -11,7 +12,7 @@ The authentication token supplied to your web service.
 
 ## Declaration
 
-```swift
+```
 required DOMString authenticationToken;
 ```
 
@@ -21,11 +22,12 @@ Required if you provide a web service.
 
 ## See Also
 
-- [orderIdentifier](applepaypaymentorderdetails/orderidentifier.md)
+### Providing order information
+- [orderIdentifier](./orderidentifier.md)
   A unique order identifier scoped to your order type identifier.
-- [orderTypeIdentifier](applepaypaymentorderdetails/ordertypeidentifier.md)
+- [orderTypeIdentifier](./ordertypeidentifier.md)
   An identifier for the order type associated with the order.
-- [webServiceURL](applepaypaymentorderdetails/webserviceurl.md)
+- [webServiceURL](./webserviceurl.md)
   The URL of your web service.
 
 

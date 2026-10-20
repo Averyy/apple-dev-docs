@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action ended events.
@@ -23,6 +24,13 @@ mutating func actionEnded(event: Self.EventType)
 #### Discussion
 
 Action ended is raised after a ‘started’ event has taken place, and the animation time exits the event interval, or when the animation is terminated before completion.
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionEnded(event: Self.EventType)](./actionended%28event%29-1aoge.md)
+- [func actionEnded(event: Self.EventType)](./actionended%28event%29-4up3w.md)
+  The function used to respond to action ended events.
 
 
 ---

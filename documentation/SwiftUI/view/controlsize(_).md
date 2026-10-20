@@ -1,7 +1,8 @@
 # controlSize(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the size for controls within this view.
 
@@ -19,6 +20,13 @@ Sets the size for controls within this view.
 ```swift
 nonisolated
 func controlSize(_ controlSize: ControlSize) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func controlSize<T>(_ range: T) -> some View where T : RangeExpression, T.Bound == ControlSize
 ```
 
 #### Discussion
@@ -61,17 +69,18 @@ struct MyControls: View {
 }
 ```
 
-![A screenshot showing several controls of various](/images/com.apple.SwiftUI/SwiftUI-View-controlSize@2x.png)
+![A screenshot showing several controls of various](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-controlSize@2x.png)
 
 ## Parameters
 
-- `controlSize`: One of the control sizes specified in the [`ControlSize`](controlsize.md) enumeration.
+- `controlSize`: One of the control sizes specified in the [`ControlSize`](../controlsize.md) enumeration.
 
 ## See Also
 
-- [var controlSize: ControlSize](environmentvalues/controlsize.md)
+### Sizing controls
+- [var controlSize: ControlSize](../environmentvalues/controlsize.md)
   The size to apply to controls within a view.
-- [enum ControlSize](controlsize.md)
+- [enum ControlSize](../controlsize.md)
   The size classes, like regular or small, that you can apply to controls within a view.
 
 

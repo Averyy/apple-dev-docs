@@ -1,7 +1,8 @@
 # AttributedString.TextAlignment.right
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The right edge of each line is aligned to the right edge of the container.
 

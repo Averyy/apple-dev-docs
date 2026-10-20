@@ -1,7 +1,8 @@
 # NFCVASResponse
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing the response from a single `GET VAS DATA` command.
 
@@ -16,36 +17,41 @@ An object representing the response from a single `GET VAS DATA` command.
 class NFCVASResponse
 ```
 
+```objc
+@interface NFCVASResponse : NSObject
+```
+
 ## Topics
 
 ### Getting the Response Status
-- [var status: NFCVASResponse.ErrorCode](nfcvasresponse/status.md)
+- [var status: NFCVASResponse.ErrorCode](./nfcvasresponse/status.md)
   A response APDU status code.
-- [typealias VASErrorCode](vaserrorcode.md)
+- [typealias VASErrorCode](./vaserrorcode.md)
   Constants representing APDU status codes for a VAS response.
 ### Getting the VAS Data
-- [var vasData: Data](nfcvasresponse/vasdata.md)
+- [var vasData: Data](./nfcvasresponse/vasdata.md)
   A data object containing the VAS data.
 ### Getting the Mobile Token
-- [var mobileToken: Data](nfcvasresponse/mobiletoken.md)
+- [var mobileToken: Data](./nfcvasresponse/mobiletoken.md)
   A mobile token value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func readerSession(NFCVASReaderSession, didReceive: [NFCVASResponse])](nfcvasreadersessiondelegate/readersession(_:didreceive:).md)
+### Receiving VAS Responses
+- [func readerSession(NFCVASReaderSession, didReceive: [NFCVASResponse])](./nfcvasreadersessiondelegate/readersession%28_,didreceive%29.md)
   Tells the delegate that the reader session received a VAS response.
 
 

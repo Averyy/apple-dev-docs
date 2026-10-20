@@ -1,7 +1,8 @@
 # dictionaryHasDefinition(forTerm:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether a definition is available for the given term.
 
@@ -17,9 +18,13 @@ Returns whether a definition is available for the given term.
 class func dictionaryHasDefinition(forTerm term: String) -> Bool
 ```
 
+```objc
++ (BOOL) dictionaryHasDefinitionForTerm:(NSString *) term;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if a definition for `term` is available; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if a definition for `term` is available; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -27,9 +32,10 @@ class func dictionaryHasDefinition(forTerm term: String) -> Bool
 
 ## See Also
 
-- [init(term: String)](uireferencelibraryviewcontroller/init(term:).md)
+### Creating a reference-library view controller
+- [init(term: String)](./init%28term%29.md)
   Initializes a newly created reference-library view controller to display the definition of the given term.
-- [init(coder: NSCoder)](uireferencelibraryviewcontroller/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a reference-library view controller from data in an unarchiver.
 
 

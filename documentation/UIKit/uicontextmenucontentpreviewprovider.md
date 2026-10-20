@@ -1,21 +1,26 @@
 # UIContextMenuContentPreviewProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Returns the custom view controller to use when previewing your content.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias UIContextMenuContentPreviewProvider = () -> UIViewController?
+```
+
+```c
+typedef UIViewController *(^)(void) UIContextMenuContentPreviewProvider;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Use this handler to load or create your custom view controller, configure it wit
 
 ## See Also
 
-- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](uicontextmenuconfiguration/init(identifier:previewprovider:actionprovider:).md)
+### Creating the menu configuration object
+- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](./uicontextmenuconfiguration/init%28identifier,previewprovider,actionprovider%29.md)
   Creates a menu configuration object with the specified action and preview providers.
-- [typealias UIContextMenuActionProvider](uicontextmenuactionprovider.md)
+- [typealias UIContextMenuActionProvider](./uicontextmenuactionprovider.md)
   Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
 
 

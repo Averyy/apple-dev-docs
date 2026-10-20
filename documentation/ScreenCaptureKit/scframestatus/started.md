@@ -1,7 +1,8 @@
 # SCFrameStatus.started
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the frame is the first one sent after the stream starts.
 
@@ -19,17 +20,22 @@ A status that indicates the frame is the first one sent after the stream starts.
 case started
 ```
 
+```c
+SCFrameStatusStarted
+```
+
 ## See Also
 
-- [SCFrameStatus.complete](scframestatus/complete.md)
+### Status values
+- [SCFrameStatus.complete](./complete.md)
   A status that indicates the system successfully generated a new frame.
-- [SCFrameStatus.idle](scframestatus/idle.md)
+- [SCFrameStatus.idle](./idle.md)
   A status that indicates the system didn’t generate a new frame because the display didn’t change.
-- [SCFrameStatus.blank](scframestatus/blank.md)
+- [SCFrameStatus.blank](./blank.md)
   A status that indicates the system didn’t generate a new frame because the display is blank.
-- [SCFrameStatus.suspended](scframestatus/suspended.md)
+- [SCFrameStatus.suspended](./suspended.md)
   A status that indicates the system didn’t generate a new frame because you suspended updates.
-- [SCFrameStatus.stopped](scframestatus/stopped.md)
+- [SCFrameStatus.stopped](./stopped.md)
   A status that indicates the frame is in a stopped state.
 
 

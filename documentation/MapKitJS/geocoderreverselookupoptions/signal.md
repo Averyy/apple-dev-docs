@@ -1,7 +1,8 @@
 # signal
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A signal object allowing you to cancel the request.
 
@@ -10,7 +11,7 @@ A signal object allowing you to cancel the request.
 
 ## Declaration
 
-```swift
+```
 signal?: AbortSignal;
 ```
 
@@ -20,7 +21,8 @@ Pass an `AbortSignal` from an `AbortController` to allow the controller to cance
 
 ## See Also
 
-- [language](geocoderreverselookupoptions/language.md)
+### Options
+- [language](./language.md)
   The language to use when displaying the reverse lookup results.
 
 

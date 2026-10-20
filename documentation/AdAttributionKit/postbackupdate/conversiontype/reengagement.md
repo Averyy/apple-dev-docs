@@ -1,7 +1,8 @@
 # PostbackUpdate.ConversionType.reengagement
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents someone reengaging with an app they’ve previously installed.
 

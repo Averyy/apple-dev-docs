@@ -1,7 +1,8 @@
 # LOMDeviceRequestResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -10,7 +11,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object LOMDeviceRequestResponse.ErrorChainItem
 ```
 
@@ -23,7 +24,8 @@ object LOMDeviceRequestResponse.ErrorChainItem
 
 ## See Also
 
-- [object LOMDeviceRequestResponse.ResponseListItem](lomdevicerequestresponse/responselistitem.md)
+### Objects
+- [object LOMDeviceRequestResponse.ResponseListItem](./responselistitem.md)
   A dictionary that describes a response list item.
 
 

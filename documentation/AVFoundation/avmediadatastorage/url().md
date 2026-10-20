@@ -1,7 +1,8 @@
 # url()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the URL used to initialize the receiver.
 
@@ -19,9 +20,13 @@ Returns the URL used to initialize the receiver.
 func url() -> URL?
 ```
 
+```objc
+- (NSURL *) URL;
+```
+
 #### Return Value
 
-The [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) object used to initialize the receiver. This value can be `nil`.
+The [`NSURL`](../../Foundation/nsurl.md) object used to initialize the receiver. This value can be `nil`.
 
 
 ---

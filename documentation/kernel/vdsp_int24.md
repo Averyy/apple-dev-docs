@@ -1,7 +1,8 @@
 # vDSP_int24
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A data structure that holds a 24-bit signed integer value.
 
@@ -10,14 +11,14 @@ A data structure that holds a 24-bit signed integer value.
 
 ## Declaration
 
-```swift
+```c
 typedef struct vDSP_int24 vDSP_int24;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bytes](vdsp_int24/1532197-bytes.md)
+- [bytes](./vdsp_int24/api-1532197-bytes.md)
 
 
 ---

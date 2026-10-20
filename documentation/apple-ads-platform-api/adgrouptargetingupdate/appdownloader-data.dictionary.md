@@ -1,7 +1,8 @@
 # AdGroupTargetingUpdate.AppDownloader
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The defined targeted audience according to app downloads.
 
@@ -10,13 +11,13 @@ The defined targeted audience according to app downloads.
 
 ## Declaration
 
-```swift
+```
 object AdGroupTargetingUpdate.AppDownloader
 ```
 
 #### Discussion
 
-The `appDownloader` field is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. To target all users, don’t include the `appDownloader` dimension in the request payload. Used with App Store campaigns. Uses the [`TargetingDataUpdate`](targetingdataupdate.md) `include`/`exclude` shape.
+The `appDownloader` field is one of only two `AdGroupTargeting` dimensions that support both `include` and `exclude`. To target all users, don’t include the `appDownloader` dimension in the request payload. Used with App Store campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 
 Use the `adamId` of the app you’re promoting in your campaign as an included or excluded value. API users can only pass in their own apps.
 

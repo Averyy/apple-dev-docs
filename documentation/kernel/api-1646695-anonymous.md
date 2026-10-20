@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSENSE_EOM_Mask](1646695-anonymous/ksense_eom_mask.md)
-- [kSENSE_EOM_Not_Set](1646695-anonymous/ksense_eom_not_set.md)
-- [kSENSE_EOM_Set](1646695-anonymous/ksense_eom_set.md)
+- [kSENSE_EOM_Mask](./api-1646695-anonymous/ksense_eom_mask.md)
+- [kSENSE_EOM_Not_Set](./api-1646695-anonymous/ksense_eom_not_set.md)
+- [kSENSE_EOM_Set](./api-1646695-anonymous/ksense_eom_set.md)
 
 
 ---

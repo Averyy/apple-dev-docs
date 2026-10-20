@@ -1,24 +1,26 @@
 # erfcl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double erfcl(long double);
 ```
 
 ## See Also
 
-- [erf](1557352-erf.md)
-- [erfc](1557322-erfc.md)
-- [erfcf](1557244-erfcf.md)
-- [erff](1557366-erff.md)
-- [erfl](1557285-erfl.md)
+### Error Function
+- [erf](./api-1557352-erf.md)
+- [erfc](./api-1557322-erfc.md)
+- [erfcf](./api-1557244-erfcf.md)
+- [erff](./api-1557366-erff.md)
+- [erfl](./api-1557285-erfl.md)
 
 
 ---

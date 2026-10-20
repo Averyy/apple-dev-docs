@@ -1,7 +1,8 @@
 # CVPixelFormatDescription.Registry
 
 **Framework**: Core Video  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Registry of all pixel formats.
 
@@ -23,23 +24,23 @@ final class Registry
 ## Topics
 
 ### Instance Properties
-- [var formatDescriptions: [CVPixelFormatDescription]](cvpixelformatdescription/registry/formatdescriptions.md)
+- [var formatDescriptions: [CVPixelFormatDescription]](./registry/formatdescriptions.md)
   Get all registered pixel format descriptions.
 ### Instance Methods
-- [func register(CVPixelFormatDescription)](cvpixelformatdescription/registry/register(_:).md)
+- [func register(CVPixelFormatDescription)](./registry/register%28_%29.md)
   Register a new pixel format with CoreVideo.
 ### Subscripts
-- [subscript(CVPixelFormatType) -> CVPixelFormatDescription?](cvpixelformatdescription/registry/subscript(_:).md)
+- [subscript(CVPixelFormatType) -> CVPixelFormatDescription?](./registry/subscript%28_%29.md)
   Get the pixel format description for specified format.
 ### Type Properties
-- [static let shared: CVPixelFormatDescription.Registry](cvpixelformatdescription/registry/shared.md)
+- [static let shared: CVPixelFormatDescription.Registry](./registry/shared.md)
   Global pixel format registry.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

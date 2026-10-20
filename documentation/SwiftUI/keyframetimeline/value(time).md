@@ -1,7 +1,8 @@
 # value(time:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interpolated value at the given time.
 
@@ -22,7 +23,8 @@ func value(time: Double) -> Value
 
 ## See Also
 
-- [func value(progress: Double) -> Value](keyframetimeline/value(progress:).md)
+### Getting an interpolated value
+- [func value(progress: Double) -> Value](./value%28progress%29.md)
   Returns the interpolated value at the given progress in the range zero to one.
 
 

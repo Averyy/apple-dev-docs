@@ -1,14 +1,15 @@
 # IFNET_CSUM_UDP
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 IFNET_CSUM_UDP = 0x00000004
 ```
 

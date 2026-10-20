@@ -1,7 +1,8 @@
 # AVAudioOutputNode
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that connects to the system’s audio output.
 
@@ -20,6 +21,10 @@ An object that connects to the system’s audio output.
 class AVAudioOutputNode
 ```
 
+```objc
+@interface AVAudioOutputNode : AVAudioIONode
+```
+
 #### Overview
 
 This node connects to the system’s audio output when rendering to or from an audio device. This node performs output in response to client’s requests when the engine is in manual rendering mode.
@@ -27,7 +32,7 @@ This node connects to the system’s audio output when rendering to or from an a
 This audio node has one element. The format of the output scope reflects:
 
 - The audio hardware sample rate and channel count when it connects to the hardware.
-- The engine’s manual rendering mode output format (see [`manualRenderingFormat`](avaudioengine/manualrenderingformat.md)).
+- The engine’s manual rendering mode output format (see [`manualRenderingFormat`](./avaudioengine/manualrenderingformat.md)).
 
 The format of the input scope is initially the same as that of the output, but you may set it to a different format, in which case the audio node converts.
 
@@ -36,34 +41,35 @@ The format of the input scope is initially the same as that of the output, but y
 ## Topics
 
 ### Configuring the Spatial Audio experience
-- [var intendedSpatialExperience: any SpatialAudioExperience](avaudiooutputnode/intendedspatialexperience-3ts59.md)
+- [var intendedSpatialExperience: any SpatialAudioExperience](./avaudiooutputnode/intendedspatialexperience-3ts59.md)
   The intended spatial experience for this output node.
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioIONode](avaudioionode.md)
+- [AVAudioIONode](./avaudioionode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using voice processing](using-voice-processing.md)
+### Engine and nodes
+- [Using voice processing](./using-voice-processing.md)
   Add voice-processing capabilities to your app by using audio engine.
-- [class AVAudioEngine](avaudioengine.md)
+- [class AVAudioEngine](./avaudioengine.md)
   An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
-- [class AVAudioInputNode](avaudioinputnode.md)
+- [class AVAudioInputNode](./avaudioinputnode.md)
   An object that connects to the system’s audio input.
-- [class AVAudioIONode](avaudioionode.md)
+- [class AVAudioIONode](./avaudioionode.md)
   An object that performs audio input or output in the engine.
-- [class AVAudioNode](avaudionode.md)
+- [class AVAudioNode](./avaudionode.md)
   An object you use for audio generation, processing, or an I/O block.
 
 

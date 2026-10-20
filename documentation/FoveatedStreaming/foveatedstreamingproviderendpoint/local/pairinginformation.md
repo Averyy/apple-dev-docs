@@ -1,7 +1,8 @@
 # pairingInformation
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Credential data obtained during QR code pairing.
 

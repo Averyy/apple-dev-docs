@@ -1,7 +1,8 @@
 # phrase
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Configuration for a short phrase without punctuation.
 
@@ -20,15 +21,16 @@ static let phrase: DictationTranscriber.Preset
 
 ## See Also
 
-- [static let shortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/shortdictation.md)
+### Standard presets
+- [static let shortDictation: DictationTranscriber.Preset](./shortdictation.md)
   Configuration for about a minute of audio.
-- [static let progressiveShortDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressiveshortdictation.md)
+- [static let progressiveShortDictation: DictationTranscriber.Preset](./progressiveshortdictation.md)
   Configuration for immediate transcription of about a minute of live audio.
-- [static let longDictation: DictationTranscriber.Preset](dictationtranscriber/preset/longdictation.md)
+- [static let longDictation: DictationTranscriber.Preset](./longdictation.md)
   Configuration for more than a minute of audio.
-- [static let progressiveLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/progressivelongdictation.md)
+- [static let progressiveLongDictation: DictationTranscriber.Preset](./progressivelongdictation.md)
   Configuration for immediate transcription of lengthy audio.
-- [static let timeIndexedLongDictation: DictationTranscriber.Preset](dictationtranscriber/preset/timeindexedlongdictation.md)
+- [static let timeIndexedLongDictation: DictationTranscriber.Preset](./timeindexedlongdictation.md)
   Configure for lengthy audio, cross-referencing words to time-codes.
 
 

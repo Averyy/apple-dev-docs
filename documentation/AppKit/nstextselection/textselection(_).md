@@ -1,7 +1,8 @@
 # textSelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subselection of the current text selection with the ranges you specify.
 
@@ -14,9 +15,13 @@ Creates a subselection of the current text selection with the ranges you specify
 func textSelection(_ textRanges: [NSTextRange]) -> NSTextSelection
 ```
 
+```objc
+- (NSTextSelection *) textSelectionWithTextRanges:(NSArray<NSTextRange *> *) textRanges;
+```
+
 #### Return Value
 
-A new [`NSTextSelection`](nstextselection.md).
+A new [`NSTextSelection`](../nstextselection.md).
 
 ## Parameters
 

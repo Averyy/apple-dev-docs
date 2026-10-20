@@ -1,7 +1,8 @@
 # CPManeuverState
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the state of a maneuver.
 
@@ -16,31 +17,36 @@ Values that describe the state of a maneuver.
 enum CPManeuverState
 ```
 
+```c
+enum CPManeuverState : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CPManeuverState.prepare](cpmaneuverstate/prepare.md)
-- [CPManeuverState.initial](cpmaneuverstate/initial.md)
-- [CPManeuverState.execute](cpmaneuverstate/execute.md)
-- [CPManeuverState.continue](cpmaneuverstate/continue.md)
+- [CPManeuverState.prepare](./cpmaneuverstate/prepare.md)
+- [CPManeuverState.initial](./cpmaneuverstate/initial.md)
+- [CPManeuverState.execute](./cpmaneuverstate/execute.md)
+- [CPManeuverState.continue](./cpmaneuverstate/continue.md)
 ### Initializers
-- [init?(rawValue: Int)](cpmaneuverstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cpmaneuverstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CPManeuver](cpmaneuver.md)
+### Maneuvers
+- [class CPManeuver](./cpmaneuver.md)
   An object that describes a single navigation instruction.
-- [enum CPManeuverType](cpmaneuvertype.md)
+- [enum CPManeuverType](./cpmaneuvertype.md)
   Values that describe types of navigation maneuvers.
 
 

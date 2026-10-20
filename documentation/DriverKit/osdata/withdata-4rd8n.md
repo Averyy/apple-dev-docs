@@ -1,19 +1,20 @@
 # withData
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSData object with a copy of bytes from a subset of another OSData.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSDataPtr withData(const OSData *inData, size_t start, size_t numBytes);
 ```
 
@@ -29,17 +30,18 @@ NULL on failure, otherwise the allocated OSData with reference count 1 to be rel
 
 ## See Also
 
-- [withBytes](osdata/withbytes.md)
+### Creating a Data Object
+- [withBytes](./withbytes.md)
   Allocates an OSData object with a copy of bytes.
-- [withBytesNoCopy](osdata/withbytesnocopy.md)
+- [withBytesNoCopy](./withbytesnocopy.md)
   Allocates an OSData object with a copy of bytes.
-- [withCapacity](osdata/withcapacity.md)
+- [withCapacity](./withcapacity.md)
   Allocates an OSData object with preallocated capacity.
-- [withData](osdata/withdata-9y3g.md)
+- [withData](./withdata-9y3g.md)
   Allocates an OSData object with a copy of bytes from another OSData.
-- [OSDataCreate](osdatacreate.md)
-- [OSDataPtr](osdataptr.md)
-- [free](osdata/free.md)
+- [OSDataCreate](../osdatacreate.md)
+- [OSDataPtr](../osdataptr.md)
+- [free](./free.md)
 
 
 ---

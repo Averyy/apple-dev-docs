@@ -1,7 +1,8 @@
 # SoftwareUpdateSettingsAutomaticActionsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 This object configures various automatic Software Update functionality.
 
@@ -15,29 +16,50 @@ This object configures various automatic Software Update functionality.
 
 ## Declaration
 
-```swift
+```
 object SoftwareUpdateSettingsAutomaticActionsObject
 ```
 
 ## Properties
 
-- `Download` (string): Specifies whether the user can control automatic downloads of available updates: - `Allowed` - the user can enable or disable automatic downloads.
-- `AlwaysOn` - automatic downloads are always enabled.
-- `AlwaysOff` - automatic downloads are always disabled. Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
-- `InstallOSUpdates` (string): Specifies whether the user can control automatic installation of available updates: - `Allowed` - the user can enable or disable automatic installation.
-- `AlwaysOn` - automatic installations are always enabled.
-- `AlwaysOff` - automatic installations are always disabled. > **Note**:  The device uses this only with automatic downloads enabled.
-- `InstallSecurityUpdate` (string): Specifies whether the user can control automatic installation of available security updates: - `Allowed` - the user can enable or disable automatic installation.
-- `AlwaysOn` - automatic installations are always enabled.
-- `AlwaysOff` - automatic installations are always disabled. > **Note**:  The device uses this only with automatic downloads enabled. Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
+- `Download` (string): Specifies whether the user can control automatic downloads of available updates:
+
+  - `Allowed` - the user can enable or disable automatic downloads.
+  - `AlwaysOn` - automatic downloads are always enabled.
+  - `AlwaysOff` - automatic downloads are always disabled.
+
+  Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
+
+  **Default**: `Allowed`; **Allowed Values**: `Allowed`, `AlwaysOn`, `AlwaysOff`
+- `InstallOSUpdates` (string): Specifies whether the user can control automatic installation of available updates:
+
+  - `Allowed` - the user can enable or disable automatic installation.
+  - `AlwaysOn` - automatic installations are always enabled.
+  - `AlwaysOff` - automatic installations are always disabled.
+
+  > **Note**:  The device uses this only with automatic downloads enabled.
+
+  **Default**: `Allowed`; **Allowed Values**: `Allowed`, `AlwaysOn`, `AlwaysOff`
+- `InstallSecurityUpdate` (string): Specifies whether the user can control automatic installation of available security updates:
+
+  - `Allowed` - the user can enable or disable automatic installation.
+  - `AlwaysOn` - automatic installations are always enabled.
+  - `AlwaysOff` - automatic installations are always disabled.
+
+  > **Note**:  The device uses this only with automatic downloads enabled.
+
+  Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 26+
+
+  **Default**: `Allowed`; **Allowed Values**: `Allowed`, `AlwaysOn`, `AlwaysOff`
 
 ## See Also
 
-- [object SoftwareUpdateSettingsBetaObject](softwareupdatesettingsbetaobject.md)
+### Objects
+- [object SoftwareUpdateSettingsBetaObject](./softwareupdatesettingsbetaobject.md)
   This object configures the beta program settings for a device.
-- [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
+- [object SoftwareUpdateSettingsDeferralsObject](./softwareupdatesettingsdeferralsobject.md)
   This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
-- [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
+- [object SoftwareUpdateSettingsRapidSecurityResponseObject](./softwareupdatesettingsrapidsecurityresponseobject.md)
   These configurations set user access to interacting with Background Security Improvement.
 
 

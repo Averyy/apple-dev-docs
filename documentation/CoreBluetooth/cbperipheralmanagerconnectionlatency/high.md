@@ -1,7 +1,8 @@
 # CBPeripheralManagerConnectionLatency.high
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A latency setting that prioritizes extending battery life over rapid communication.
 
@@ -20,11 +21,16 @@ A latency setting that prioritizes extending battery life over rapid communicati
 case high
 ```
 
+```c
+CBPeripheralManagerConnectionLatencyHigh
+```
+
 ## See Also
 
-- [CBPeripheralManagerConnectionLatency.low](cbperipheralmanagerconnectionlatency/low.md)
+### Latency Values
+- [CBPeripheralManagerConnectionLatency.low](./low.md)
   A latency setting indicating that prioritizes rapid communication over battery life.
-- [CBPeripheralManagerConnectionLatency.medium](cbperipheralmanagerconnectionlatency/medium.md)
+- [CBPeripheralManagerConnectionLatency.medium](./medium.md)
   A latency setting that balances communication frequency and battery life.
 
 

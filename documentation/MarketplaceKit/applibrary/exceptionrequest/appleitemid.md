@@ -1,7 +1,8 @@
 # appleItemID
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the app that requires an age-rating exception.
 

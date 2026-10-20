@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The block that the input object calls when the value changes.
@@ -20,6 +21,10 @@ The block that the input object calls when the value changes.
 var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) void (^valueDidChangeHandler)(id<GCPhysicalInputElement>element, id<GCAxisInput>input, float value);
+```
+
 #### Discussion
 
 The block’s parameters are:
@@ -30,11 +35,12 @@ The block’s parameters are:
 
 ## See Also
 
-- [var value: Float](gcaxisinput/value.md)
+### Getting the value
+- [var value: Float](./value.md)
   The value along the axis, in unit coordinates.
-- [var lastValueTimestamp: TimeInterval](gcaxisinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gcaxisinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 
 

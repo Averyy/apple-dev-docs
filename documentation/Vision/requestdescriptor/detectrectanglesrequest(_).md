@@ -1,7 +1,8 @@
 # RequestDescriptor.detectRectanglesRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a detect rectangles request.
 
@@ -22,9 +23,10 @@ case detectRectanglesRequest(DetectRectanglesRequest.Revision)
 
 ## See Also
 
-- [case trackOpticalFlowRequest(TrackOpticalFlowRequest.Revision)](requestdescriptor/trackopticalflowrequest(_:).md)
+### Getting the optical flow, rectangle and barcode detection descriptor
+- [case trackOpticalFlowRequest(TrackOpticalFlowRequest.Revision)](./trackopticalflowrequest%28_%29.md)
   A descriptor that describes a track optical flow request.
-- [case detectBarcodesRequest(DetectBarcodesRequest.Revision)](requestdescriptor/detectbarcodesrequest(_:).md)
+- [case detectBarcodesRequest(DetectBarcodesRequest.Revision)](./detectbarcodesrequest%28_%29.md)
   A descriptor that describes a detect barcodes request.
 
 

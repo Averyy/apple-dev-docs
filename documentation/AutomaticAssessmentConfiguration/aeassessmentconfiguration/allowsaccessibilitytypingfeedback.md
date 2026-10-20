@@ -1,7 +1,8 @@
 # allowsAccessibilityTypingFeedback
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow accessibility typing feedback during an assessment.
 
@@ -16,9 +17,13 @@ A Boolean value that indicates whether to allow accessibility typing feedback du
 var allowsAccessibilityTypingFeedback: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilityTypingFeedback;
+```
+
 #### Discussion
 
-Users can enable typing feedback features in the Settings app (Accessibility > Keyboards & Typing > Typing Feedback)  to receive audio feedback when typing. An assessment session disables these accessibility typing feedback features by default, but you can allow them by setting [`allowsAccessibilityTypingFeedback`](aeassessmentconfiguration/allowsaccessibilitytypingfeedback.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable typing feedback features in the Settings app (Accessibility > Keyboards & Typing > Typing Feedback)  to receive audio feedback when typing. An assessment session disables these accessibility typing feedback features by default, but you can allow them by setting [`allowsAccessibilityTypingFeedback`](./allowsaccessibilitytypingfeedback.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

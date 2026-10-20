@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The step distance, in meters.
 
@@ -20,17 +21,22 @@ The step distance, in meters.
 var distance: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance distance;
+```
+
 #### Discussion
 
 This property reflects the distance that the user covers while traversing the path of the step. It isn’t a lilnear distance between the start and end points of the step.
 
 ## See Also
 
-- [var instructions: String](mkroute/step/instructions.md)
+### Getting additional step details
+- [var instructions: String](./instructions.md)
   The written instructions for following the path that the step represents.
-- [var notice: String?](mkroute/step/notice.md)
+- [var notice: String?](./notice.md)
   Additional notices that apply to the step.
-- [var transportType: MKDirectionsTransportType](mkroute/step/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The transport type of the step.
 
 

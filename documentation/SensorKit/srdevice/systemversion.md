@@ -1,7 +1,8 @@
 # systemVersion
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device’s operating system version.
 
@@ -16,15 +17,20 @@ The device’s operating system version.
 var systemVersion: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * systemVersion;
+```
+
 ## See Also
 
-- [var model: String](srdevice/model.md)
+### Accessing Device Information
+- [var model: String](./model.md)
   The user-defined name of the device.
-- [var name: String](srdevice/name.md)
+- [var name: String](./name.md)
   The framework-defined name of the device.
-- [var systemName: String](srdevice/systemname.md)
+- [var systemName: String](./systemname.md)
   The device’s operating system.
-- [var productType: String](srdevice/producttype.md)
+- [var productType: String](./producttype.md)
   A string that identifies the device used to save a sample.
 
 

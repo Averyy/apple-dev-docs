@@ -1,14 +1,15 @@
 # StandardUSB::kSuperSpeedDeviceCapabilityU2DevExitLatMax
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 StandardUSB::kSuperSpeedDeviceCapabilityU2DevExitLatMax = kIOUSBSuperSpeedDeviceCapabilityU2DevExitLatMax
 ```
 

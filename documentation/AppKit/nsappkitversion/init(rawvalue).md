@@ -1,10 +1,11 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,7 +15,8 @@ init(rawValue: Double)
 
 ## See Also
 
-- [init(Double)](nsappkitversion/init(_:).md)
+### Initializers
+- [init(Double)](./init%28_%29.md)
 
 
 ---

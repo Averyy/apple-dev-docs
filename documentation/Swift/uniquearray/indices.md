@@ -1,7 +1,8 @@
 # indices
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of indices that are valid for subscripting the array.
 
@@ -22,7 +23,7 @@ var indices: Range<Int> { get }
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

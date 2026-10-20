@@ -1,25 +1,27 @@
 # initWith
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool initWith(IOService *reportingService, IOReportCategories categories, IOReportUnit unit);
 ```
 
 ## See Also
 
-- [getValue](iosimplereporter/getvalue.md)
-- [incrementValue](iosimplereporter/incrementvalue.md)
-- [setValue](iosimplereporter/setvalue.md)
+### Instance Methods
+- [getValue](./getvalue.md)
+- [incrementValue](./incrementvalue.md)
+- [setValue](./setvalue.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(fileAt:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object representing the 3D content that will be previewed in AR Quick Look.
 
@@ -15,6 +16,10 @@ Creates an object representing the 3D content that will be previewed in AR Quick
 
 ```swift
 init(fileAt url: URL)
+```
+
+```objc
+- (instancetype) initWithFileAtURL:(NSURL *) url;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(points:count:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a geodesic polyline using the specified map points.
 
@@ -20,6 +21,10 @@ Creates and returns a geodesic polyline using the specified map points.
 convenience init(points: UnsafePointer<MKMapPoint>, count: Int)
 ```
 
+```objc
++ (instancetype) polylineWithPoints:(const MKMapPoint *) points count:(NSUInteger) count;
+```
+
 #### Return Value
 
 A new geodesic polyline object.
@@ -31,7 +36,8 @@ A new geodesic polyline object.
 
 ## See Also
 
-- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](mkgeodesicpolyline/init(coordinates:count:).md)
+### Creating a geodesic polyline overlay
+- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](./init%28coordinates,count%29.md)
   Creates and returns a geodesic polyline using the specified coordinates.
 
 

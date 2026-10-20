@@ -1,7 +1,8 @@
 # payloadStringValue
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The payload or string representation for the barcode.
 

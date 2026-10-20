@@ -1,7 +1,8 @@
 # NSNameSpecifier
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specifier for an object in a collection (or container) by name.
 
@@ -13,6 +14,10 @@ A specifier for an object in a collection (or container) by name.
 
 ```swift
 class NSNameSpecifier
+```
+
+```objc
+@interface NSNameSpecifier : NSScriptObjectSpecifier
 ```
 
 #### Overview
@@ -36,50 +41,51 @@ The evaluation of an instance of `NSNameSpecifier` follows these steps until the
 ## Topics
 
 ### Initializing a name specifier
-- [init(containerClassDescription: NSScriptClassDescription, containerSpecifier: NSScriptObjectSpecifier?, key: String, name: String)](nsnamespecifier/init(containerclassdescription:containerspecifier:key:name:).md)
-  Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](nsscriptobjectspecifier/init(containerclassdescription:containerspecifier:key:).md) method and then sets the name instance variable to `name`.
+- [init(containerClassDescription: NSScriptClassDescription, containerSpecifier: NSScriptObjectSpecifier?, key: String, name: String)](./nsnamespecifier/init%28containerclassdescription,containerspecifier,key,name%29.md)
+  Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](./nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) method and then sets the name instance variable to `name`.
 ### Accessing a name specifier
-- [var name: String](nsnamespecifier/name.md)
+- [var name: String](./nsnamespecifier/name.md)
   Sets the name encapsulated with the receiver for the specified object in the container.
 ### Initializers
-- [init?(coder: NSCoder)](nsnamespecifier/init(coder:).md)
+- [init?(coder: NSCoder)](./nsnamespecifier/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSScriptObjectSpecifier](nsscriptobjectspecifier.md)
+- [NSScriptObjectSpecifier](./nsscriptobjectspecifier.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSScriptObjectSpecifier](nsscriptobjectspecifier.md)
+### Object Specifiers
+- [class NSScriptObjectSpecifier](./nsscriptobjectspecifier.md)
   An abstract class used to represent natural language expressions.
-- [class NSPropertySpecifier](nspropertyspecifier.md)
+- [class NSPropertySpecifier](./nspropertyspecifier.md)
   A specifier for a simple attribute value, a one-to-one relationship, or all elements of a to-many relationship.
-- [class NSPositionalSpecifier](nspositionalspecifier.md)
+- [class NSPositionalSpecifier](./nspositionalspecifier.md)
   A specifier for an insertion point in a container relative to another object in the container.
-- [class NSRandomSpecifier](nsrandomspecifier.md)
+- [class NSRandomSpecifier](./nsrandomspecifier.md)
   A specifier for an arbitrary object in a collection or, if not a one-to-many relationship, the sole object.
-- [class NSRangeSpecifier](nsrangespecifier.md)
+- [class NSRangeSpecifier](./nsrangespecifier.md)
   A specifier for a range of objects in a container.
-- [class NSUniqueIDSpecifier](nsuniqueidspecifier.md)
+- [class NSUniqueIDSpecifier](./nsuniqueidspecifier.md)
   A specifier for an object in a collection (or container) by unique ID.
-- [class NSWhoseSpecifier](nswhosespecifier.md)
+- [class NSWhoseSpecifier](./nswhosespecifier.md)
   A specifier that indicates every object in a collection matching a condition.
-- [class NSMiddleSpecifier](nsmiddlespecifier.md)
+- [class NSMiddleSpecifier](./nsmiddlespecifier.md)
   A specifier indicating the middle object in a collection or, if not a one-to-many relationship, the sole object.
-- [class NSIndexSpecifier](nsindexspecifier.md)
+- [class NSIndexSpecifier](./nsindexspecifier.md)
   A specifier representing an object in a collection (or container) with an index number.
-- [class NSRelativeSpecifier](nsrelativespecifier.md)
+- [class NSRelativeSpecifier](./nsrelativespecifier.md)
   A specifier that indicates an object in a collection by its position relative to another object.
 
 

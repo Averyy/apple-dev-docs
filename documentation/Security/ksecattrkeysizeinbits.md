@@ -1,7 +1,8 @@
 # kSecAttrKeySizeInBits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the number of bits in a cryptographic key.
 
@@ -20,13 +21,17 @@ A key whose value indicates the number of bits in a cryptographic key.
 let kSecAttrKeySizeInBits: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrKeySizeInBits;
+```
+
 ## Mentions
 
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and indicates the total number of bits in this cryptographic key.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and indicates the total number of bits in this cryptographic key.
 
 
 ---

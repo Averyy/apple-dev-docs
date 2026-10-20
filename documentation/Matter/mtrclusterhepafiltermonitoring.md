@@ -1,7 +1,8 @@
 # MTRClusterHEPAFilterMonitoring
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,38 +19,42 @@
 class MTRClusterHEPAFilterMonitoring
 ```
 
+```objc
+@interface MTRClusterHEPAFilterMonitoring : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterhepafiltermonitoring/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterhepafiltermonitoring/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributeattributelist(with:).md)
-- [func readAttributeChangeIndication(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributechangeindication(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributeclusterrevision(with:).md)
-- [func readAttributeCondition(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributecondition(with:).md)
-- [func readAttributeDegradationDirection(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributedegradationdirection(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeInPlaceIndicator(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributeinplaceindicator(with:).md)
-- [func readAttributeLastChangedTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributelastchangedtime(with:).md)
-- [func readAttributeReplacementProductList(with: MTRReadParams?) -> [String : Any]?](mtrclusterhepafiltermonitoring/readattributereplacementproductlist(with:).md)
-- [func resetCondition(with: MTRHEPAFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterhepafiltermonitoring/resetcondition(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclusterhepafiltermonitoring/resetcondition(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterhepafiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterhepafiltermonitoring/writeattributelastchangedtime(withvalue:expectedvalueinterval:params:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributeattributelist%28with%29.md)
+- [func readAttributeChangeIndication(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributechangeindication%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCondition(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributecondition%28with%29.md)
+- [func readAttributeDegradationDirection(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributedegradationdirection%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeInPlaceIndicator(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributeinplaceindicator%28with%29.md)
+- [func readAttributeLastChangedTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributelastchangedtime%28with%29.md)
+- [func readAttributeReplacementProductList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterhepafiltermonitoring/readattributereplacementproductlist%28with%29.md)
+- [func resetCondition(with: MTRHEPAFilterMonitoringClusterResetConditionParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterhepafiltermonitoring/resetcondition%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func resetCondition(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclusterhepafiltermonitoring/resetcondition%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterhepafiltermonitoring/writeattributelastchangedtime%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeLastChangedTime(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterhepafiltermonitoring/writeattributelastchangedtime%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

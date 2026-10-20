@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Place the annotation as an overlay of the item.
 

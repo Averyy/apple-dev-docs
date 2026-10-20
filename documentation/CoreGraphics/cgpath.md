@@ -1,18 +1,19 @@
 # CGPath
 
 **Framework**: Core Graphics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An immutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,90 +21,96 @@ An immutable graphics path: a mathematical description of shapes or lines to be 
 class CGPath
 ```
 
+```c
+typedef const struct CGPath * CGPathRef;
+```
+
 #### Overview
 
-Neither `CGPath` nor [`CGMutablePath`](cgmutablepath.md) define functions to draw a path. To draw a Core Graphics path to a graphics context, you add the path to the graphics context by calling [`addPath(_:)`](cgcontext/addpath(_:).md) and then call one of the context’s drawing functions—see [`CGContext`](cgcontext.md).
+Neither `CGPath` nor [`CGMutablePath`](./cgmutablepath.md) define functions to draw a path. To draw a Core Graphics path to a graphics context, you add the path to the graphics context by calling [`addPath(_:)`](./cgcontext/addpath%28_%29.md) and then call one of the context’s drawing functions—see [`CGContext`](./cgcontext.md).
 
 Each figure in the graphics path is constructed with a connected set of lines and Bézier curves, called a *subpath*. A subpath has an ordered set of *path elements* that represent single steps in the construction of the subpath. (For example, a line segment from one corner of a rectangle to another corner is a path element. Every subpath includes a *starting point*, which is the first point in the subpath. The path also maintains a *current point*, which is the last point in the last subpath.
 
 ## Topics
 
 ### Creating Graphics Paths
-- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(rect:transform:).md)
+- [init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./cgpath/init%28rect,transform%29.md)
   Create an immutable path of a rectangle.
-- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(ellipsein:transform:).md)
+- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./cgpath/init%28ellipsein,transform%29.md)
   Create an immutable path of an ellipse.
-- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(roundedrect:cornerwidth:cornerheight:transform:).md)
+- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](./cgpath/init%28roundedrect,cornerwidth,cornerheight,transform%29.md)
   Create an immutable path of a rounded rectangle.
 ### Copying a Graphics Path
-- [func copy() -> CGPath?](cgpath/copy.md)
+- [func copy() -> CGPath?](./cgpath/copy%28%29.md)
   Creates an immutable copy of a graphics path.
-- [func copy(using: UnsafePointer<CGAffineTransform>?) -> CGPath?](cgpath/copy(using:).md)
+- [func copy(using: UnsafePointer<CGAffineTransform>?) -> CGPath?](./cgpath/copy%28using%29.md)
   Creates an immutable copy of a graphics path transformed by a transformation matrix.
-- [func copy(dashingWithPhase: CGFloat, lengths: [CGFloat], transform: CGAffineTransform) -> CGPath](cgpath/copy(dashingwithphase:lengths:transform:).md)
+- [func copy(dashingWithPhase: CGFloat, lengths: [CGFloat], transform: CGAffineTransform) -> CGPath](./cgpath/copy%28dashingwithphase,lengths,transform%29.md)
   Returns a new path equivalent to the results of drawing the path with a dashed stroke.
-- [func copy(strokingWithWidth: CGFloat, lineCap: CGLineCap, lineJoin: CGLineJoin, miterLimit: CGFloat, transform: CGAffineTransform) -> CGPath](cgpath/copy(strokingwithwidth:linecap:linejoin:miterlimit:transform:).md)
+- [func copy(strokingWithWidth: CGFloat, lineCap: CGLineCap, lineJoin: CGLineJoin, miterLimit: CGFloat, transform: CGAffineTransform) -> CGPath](./cgpath/copy%28strokingwithwidth,linecap,linejoin,miterlimit,transform%29.md)
   Returns a new path equivalent to the results of drawing the path with a solid stroke.
-- [func mutableCopy() -> CGMutablePath?](cgpath/mutablecopy.md)
+- [func mutableCopy() -> CGMutablePath?](./cgpath/mutablecopy%28%29.md)
   Creates a mutable copy of an existing graphics path.
-- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](cgpath/mutablecopy(using:).md)
+- [func mutableCopy(using: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?](./cgpath/mutablecopy%28using%29.md)
   Creates a mutable copy of a graphics path transformed by a transformation matrix.
 ### Examining a Graphics Path
-- [var boundingBox: CGRect](cgpath/boundingbox.md)
+- [var boundingBox: CGRect](./cgpath/boundingbox.md)
   Returns the bounding box containing all points in a graphics path.
-- [var boundingBoxOfPath: CGRect](cgpath/boundingboxofpath.md)
+- [var boundingBoxOfPath: CGRect](./cgpath/boundingboxofpath.md)
   Returns the bounding box of a graphics path.
-- [var currentPoint: CGPoint](cgpath/currentpoint.md)
+- [var currentPoint: CGPoint](./cgpath/currentpoint.md)
   Returns the current point in a graphics path.
-- [func contains(CGPoint, using: CGPathFillRule, transform: CGAffineTransform) -> Bool](cgpath/contains(_:using:transform:).md)
+- [func contains(CGPoint, using: CGPathFillRule, transform: CGAffineTransform) -> Bool](./cgpath/contains%28_,using,transform%29.md)
   Returns whether the specified point is interior to the path.
-- [var isEmpty: Bool](cgpath/isempty.md)
+- [var isEmpty: Bool](./cgpath/isempty.md)
   Indicates whether or not a graphics path is empty.
-- [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](cgpath/isrect(_:).md)
+- [func isRect(UnsafeMutablePointer<CGRect>?) -> Bool](./cgpath/isrect%28_%29.md)
   Indicates whether or not a graphics path represents a rectangle.
 ### Applying a Function to the Elements of a Path
-- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](cgpath/apply(info:function:).md)
+- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](./cgpath/apply%28info,function%29.md)
   For each element in a graphics path, calls a custom applier function.
-- [typealias CGPathApplierFunction](cgpathapplierfunction.md)
+- [typealias CGPathApplierFunction](./cgpathapplierfunction.md)
   Defines a callback function that can view an element in a graphics path.
-- [struct CGPathElement](cgpathelement.md)
+- [struct CGPathElement](./cgpathelement.md)
   A data structure that provides information about a path element.
-- [enum CGPathElementType](cgpathelementtype.md)
+- [enum CGPathElementType](./cgpathelementtype.md)
   The type of element found in a path.
 ### Working with Core Foundation Types
-- [class var typeID: CFTypeID](cgpath/typeid.md)
+- [class var typeID: CFTypeID](./cgpath/typeid.md)
   Returns the Core Foundation type identifier for Core Graphics paths.
 ### Instance Methods
-- [func applyWithBlock((UnsafePointer<CGPathElement>) -> Void)](cgpath/applywithblock(_:).md)
-- [func componentsSeparated(using: CGPathFillRule) -> [CGPath]](cgpath/componentsseparated(using:).md)
-- [func flattened(threshold: CGFloat) -> CGPath](cgpath/flattened(threshold:).md)
-- [func intersection(CGPath, using: CGPathFillRule) -> CGPath](cgpath/intersection(_:using:).md)
-- [func intersects(CGPath, using: CGPathFillRule) -> Bool](cgpath/intersects(_:using:).md)
-- [func lineIntersection(CGPath, using: CGPathFillRule) -> CGPath](cgpath/lineintersection(_:using:).md)
-- [func lineSubtracting(CGPath, using: CGPathFillRule) -> CGPath](cgpath/linesubtracting(_:using:).md)
-- [func normalized(using: CGPathFillRule) -> CGPath](cgpath/normalized(using:).md)
-- [func subtracting(CGPath, using: CGPathFillRule) -> CGPath](cgpath/subtracting(_:using:).md)
-- [func symmetricDifference(CGPath, using: CGPathFillRule) -> CGPath](cgpath/symmetricdifference(_:using:).md)
-- [func union(CGPath, using: CGPathFillRule) -> CGPath](cgpath/union(_:using:).md)
+- [func applyWithBlock((UnsafePointer<CGPathElement>) -> Void)](./cgpath/applywithblock%28_%29.md)
+- [func componentsSeparated(using: CGPathFillRule) -> [CGPath]](./cgpath/componentsseparated%28using%29.md)
+- [func flattened(threshold: CGFloat) -> CGPath](./cgpath/flattened%28threshold%29.md)
+- [func intersection(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/intersection%28_,using%29.md)
+- [func intersects(CGPath, using: CGPathFillRule) -> Bool](./cgpath/intersects%28_,using%29.md)
+- [func lineIntersection(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/lineintersection%28_,using%29.md)
+- [func lineSubtracting(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/linesubtracting%28_,using%29.md)
+- [func normalized(using: CGPathFillRule) -> CGPath](./cgpath/normalized%28using%29.md)
+- [func subtracting(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/subtracting%28_,using%29.md)
+- [func symmetricDifference(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/symmetricdifference%28_,using%29.md)
+- [func union(CGPath, using: CGPathFillRule) -> CGPath](./cgpath/union%28_,using%29.md)
 
 ## Relationships
 
 ### Inherited By
-- [CGMutablePath](cgmutablepath.md)
+- [CGMutablePath](./cgmutablepath.md)
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Quartz 2D Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
-- [class CGContext](cgcontext.md)
+### Related Documentation
+- [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+### 2D Drawing
+- [class CGContext](./cgcontext.md)
   A Quartz 2D drawing environment.
-- [class CGImage](cgimage.md)
+- [class CGImage](./cgimage.md)
   A bitmap image or image mask.
-- [class CGMutablePath](cgmutablepath.md)
+- [class CGMutablePath](./cgmutablepath.md)
   A mutable graphics path: a mathematical description of shapes or lines to be drawn in a graphics context.
-- [class CGLayer](cglayer.md)
+- [class CGLayer](./cglayer.md)
   An offscreen context for reusing content drawn with Core Graphics.
 
 

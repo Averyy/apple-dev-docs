@@ -1,7 +1,8 @@
 # registeredNibsByIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary of all registered nib files for view-based table view identifiers.
 
@@ -14,15 +15,20 @@ The dictionary of all registered nib files for view-based table view identifiers
 var registeredNibsByIdentifier: [NSUserInterfaceItemIdentifier : NSNib]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDictionary<NSString *,NSNib *> * registeredNibsByIdentifier;
+```
+
 #### Discussion
 
-Each key in the dictionary is the identifier string (given by [`NSUserInterfaceItemIdentifier`](nsuserinterfaceitemidentifier.md)) used to register the nib file in the [`register(_:forIdentifier:)`](nstableview/register(_:foridentifier:).md) method. The value of each key is the corresponding [`NSNib`](nsnib.md) object.
+Each key in the dictionary is the identifier string (given by [`NSUserInterfaceItemIdentifier`](../nsuserinterfaceitemidentifier.md)) used to register the nib file in the [`register(_:forIdentifier:)`](./register%28_,foridentifier%29.md) method. The value of each key is the corresponding [`NSNib`](../nsnib.md) object.
 
-> **Note**:  This method applies only to [`NSView`](nsview.md)-based table views.
+> **Note**:  This method applies only to [`NSView`](../nsview.md)-based table views.
 
 ## See Also
 
-- [func register(NSNib?, forIdentifier: NSUserInterfaceItemIdentifier)](nstableview/register(_:foridentifier:).md)
+### NSView-Based Table Nib File Registration
+- [func register(NSNib?, forIdentifier: NSUserInterfaceItemIdentifier)](./register%28_,foridentifier%29.md)
   Registers a NIB for the specified identifier, so that view-based table views can use it to instantiate views.
 
 

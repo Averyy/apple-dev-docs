@@ -1,16 +1,18 @@
 # NSVideoSubscriberAccountUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message that tells people why the app is requesting access to their TV provider account.
 
 **Availability**:
 - tvOS 9.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSVideoSubscriberAccountUsageDescription` (Privacy - Video Subscriber Account Usage Description)
+- **Type**: string
 
 #### Discussion
 

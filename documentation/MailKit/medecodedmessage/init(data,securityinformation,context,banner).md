@@ -1,7 +1,8 @@
 # init(data:securityInformation:context:banner:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 init(data rawData: Data?, securityInformation: MEMessageSecurityInformation, context: Data?, banner: MEDecodedMessageBanner?)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) rawData securityInformation:(MEMessageSecurityInformation *) securityInformation context:(NSData *) context banner:(MEDecodedMessageBanner *) banner;
+```
+
 ## See Also
 
-- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?)](medecodedmessage/init(data:securityinformation:context:).md)
+### Initializers
+- [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?)](./init%28data,securityinformation,context%29.md)
 
 
 ---

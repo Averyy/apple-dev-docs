@@ -1,7 +1,8 @@
 # insertSublayer(_:below:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the specified sublayer below a different sublayer that already belongs to the receiver.
 
@@ -19,30 +20,35 @@ Inserts the specified sublayer below a different sublayer that already belongs t
 func insertSublayer(_ layer: CALayer, below sibling: CALayer?)
 ```
 
+```objc
+- (void) insertSublayer:(CALayer *) layer below:(CALayer *) sibling;
+```
+
 #### Discussion
 
-If `sublayer` is not in the receiver’s [`sublayers`](calayer/sublayers.md) array, this method raises an exception.
+If `sublayer` is not in the receiver’s [`sublayers`](./sublayers.md) array, this method raises an exception.
 
 ## Parameters
 
 - `layer`: The sublayer to be inserted into the current layer.
-- `sibling`: An existing sublayer in the current layer. The layer in `aLayer` is inserted before this layer in the [`sublayers`](calayer/sublayers.md) array, and thus appears behind it visually.
+- `sibling`: An existing sublayer in the current layer. The layer in `aLayer` is inserted before this layer in the [`sublayers`](./sublayers.md) array, and thus appears behind it visually.
 
 ## See Also
 
-- [var sublayers: [CALayer]?](calayer/sublayers.md)
+### Managing the layer hierarchy
+- [var sublayers: [CALayer]?](./sublayers.md)
   An array containing the layer’s sublayers.
-- [var superlayer: CALayer?](calayer/superlayer.md)
+- [var superlayer: CALayer?](./superlayer.md)
   The superlayer of the layer.
-- [func addSublayer(CALayer)](calayer/addsublayer(_:).md)
+- [func addSublayer(CALayer)](./addsublayer%28_%29.md)
   Appends the layer to the layer’s list of sublayers.
-- [func removeFromSuperlayer()](calayer/removefromsuperlayer.md)
+- [func removeFromSuperlayer()](./removefromsuperlayer%28%29.md)
   Detaches the layer from its parent layer.
-- [func insertSublayer(CALayer, at: UInt32)](calayer/insertsublayer(_:at:).md)
+- [func insertSublayer(CALayer, at: UInt32)](./insertsublayer%28_,at%29.md)
   Inserts the specified layer into the receiver’s list of sublayers at the specified index.
-- [func insertSublayer(CALayer, above: CALayer?)](calayer/insertsublayer(_:above:).md)
+- [func insertSublayer(CALayer, above: CALayer?)](./insertsublayer%28_,above%29.md)
   Inserts the specified sublayer above a different sublayer that already belongs to the receiver.
-- [func replaceSublayer(CALayer, with: CALayer)](calayer/replacesublayer(_:with:).md)
+- [func replaceSublayer(CALayer, with: CALayer)](./replacesublayer%28_,with%29.md)
   Replaces the specified sublayer with a different layer object.
 
 

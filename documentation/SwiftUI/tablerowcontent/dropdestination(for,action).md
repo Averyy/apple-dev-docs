@@ -1,7 +1,8 @@
 # dropDestination(for:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines the entire row as a destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 
@@ -30,15 +31,16 @@ A row that provides a drop destination for a drag operation of the specified typ
 
 ## See Also
 
+### Managing interaction
 - [func draggable<T>(@autoclosure () -> T) -> some TableRowContent<Self.TableRowValue>
-](tablerowcontent/draggable(_:).md)
+](./draggable%28_%29.md)
   Activates this row as the source of a drag and drop operation.
 - [func onHover(perform: (Bool) -> Void) -> some TableRowContent<Self.TableRowValue>
-](tablerowcontent/onhover(perform:).md)
+](./onhover%28perform%29.md)
   Adds an action to perform when the pointer moves onto or away from the entire row.
-- [func itemProvider((() -> NSItemProvider?)?) -> ModifiedContent<Self, ItemProviderTableRowModifier>](tablerowcontent/itemprovider(_:).md)
+- [func itemProvider((() -> NSItemProvider?)?) -> ModifiedContent<Self, ItemProviderTableRowModifier>](./itemprovider%28_%29.md)
   Provides a closure that vends the drag representation for a particular data element.
-- [struct ItemProviderTableRowModifier](itemprovidertablerowmodifier.md)
+- [struct ItemProviderTableRowModifier](../itemprovidertablerowmodifier.md)
   A table row modifier that associates an item provider with some base row content.
 
 

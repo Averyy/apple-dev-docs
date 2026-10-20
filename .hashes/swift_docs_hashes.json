@@ -1,8 +1,11 @@
 {
   "metadata": {
-    "last_updated": "2026-09-22T08:39:42.988443",
+    "last_updated": "2026-10-20T17:44:54.360333",
     "total_files": 46,
-    "source": "scrape_swift_docs.py"
+    "source": "scrape_swift_docs.py",
+    "render": {
+      "version": 1
+    }
   },
   "hashes": {
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/AccessControl.md": "af4c7975b7fa0850c6a0603f7a65e97b0ed883d53e5451363678301ec9be47bd",

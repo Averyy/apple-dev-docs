@@ -1,22 +1,27 @@
 # UIHDRHeadroomUsageLimit.inactive
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Headroom usage limits are disabled, HDR headroom usage is unrestricted.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case inactive
+```
+
+```c
+UIHDRHeadroomUsageLimitInactive
 ```
 
 

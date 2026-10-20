@@ -1,7 +1,8 @@
 # init(title:secondaryButton:secondaryButtonBehavior:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert for an alarm, with a system-provided stop control and optionally a second button.
 
@@ -24,7 +25,8 @@ init(title: LocalizedStringResource, secondaryButton: AlarmButton? = nil, second
 
 ## See Also
 
-- [var title: LocalizedStringResource](alarmpresentation/alert-swift.struct/title.md)
+### Creating an alert
+- [var title: LocalizedStringResource](./title.md)
   The title of the alert.
 
 

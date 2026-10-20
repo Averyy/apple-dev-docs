@@ -1,7 +1,8 @@
 # Target.PluginCapability.command(intent:permissions:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the plug-in provides a user command capability.
 
@@ -31,7 +32,8 @@ The package can specify the *verb* used to invoke the command.
 
 ## See Also
 
-- [static func buildTool() -> Target.PluginCapability](target/plugincapability-swift.enum/buildtool.md)
+### Creating a Plugin Capability
+- [static func buildTool() -> Target.PluginCapability](./buildtool%28%29.md)
   The plug-in is a build tool.
 
 

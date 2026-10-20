@@ -1,7 +1,8 @@
 # documentBrowser(_:willPresent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the document browser will display an activity view.
 
@@ -17,11 +18,15 @@ Tells the delegate that the document browser will display an activity view.
 optional func documentBrowser(_ controller: UIDocumentBrowserViewController, willPresent activityViewController: UIActivityViewController)
 ```
 
+```objc
+- (void) documentBrowser:(UIDocumentBrowserViewController *) controller willPresentActivityViewController:(UIActivityViewController *) activityViewController;
+```
+
 #### Discussion
 
 The document browser displays an activity view when the user shares a document (for example, when the user long presses a document and then chooses Share from the Edit Menu).
 
-Implement this method to customize the activity view before it is displayed. For example, you could exclude any system-provided activities that are inappropriate for your app (see the [`UIActivityViewController`](uiactivityviewcontroller.md) class’s [`excludedActivityTypes`](uiactivityviewcontroller/excludedactivitytypes.md) property).
+Implement this method to customize the activity view before it is displayed. For example, you could exclude any system-provided activities that are inappropriate for your app (see the [`UIActivityViewController`](../uiactivityviewcontroller.md) class’s [`excludedActivityTypes`](../uiactivityviewcontroller/excludedactivitytypes.md) property).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Implement this method to customize the activity view before it is displayed. For
 
 ## See Also
 
-- [func documentBrowser(UIDocumentBrowserViewController, applicationActivitiesForDocumentURLs: [URL]) -> [UIActivity]](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:applicationactivitiesfordocumenturls:).md)
+### Working with the browser’s activity view
+- [func documentBrowser(UIDocumentBrowserViewController, applicationActivitiesForDocumentURLs: [URL]) -> [UIActivity]](./documentbrowser%28_,applicationactivitiesfordocumenturls%29.md)
   Asks the delegate for additional activities when displaying an activity view.
 
 

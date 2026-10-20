@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the specified view involved in the transition.
@@ -10,13 +11,17 @@ Returns the specified view involved in the transition.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func view(forKey key: UITransitionContextViewKey) -> UIView?
+```
+
+```objc
+- (UIView *) viewForKey:(UITransitionContextViewKey) key;
 ```
 
 #### Return Value
@@ -33,9 +38,10 @@ The view returned by this method may or may not be the root view of the correspo
 
 ## See Also
 
-- [var containerView: UIView](uiviewcontrollercontexttransitioning/containerview.md)
+### Accessing the transition objects
+- [var containerView: UIView](./containerview.md)
   The view that acts as the superview for the views involved in the transition.
-- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](uiviewcontrollercontexttransitioning/viewcontroller(forkey:).md)
+- [func viewController(forKey: UITransitionContextViewControllerKey) -> UIViewController?](./viewcontroller%28forkey%29.md)
   Returns a view controller involved in the transition.
 
 

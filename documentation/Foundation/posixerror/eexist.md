@@ -1,7 +1,8 @@
 # EEXIST
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File exists.
 

@@ -1,7 +1,8 @@
 # kMIDIPropertyReceivesBankSelectLSB
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity responds to MIDI bank select LSB messages.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the device or entity responds to MIDI ban
 let kMIDIPropertyReceivesBankSelectLSB: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertyReceivesBankSelectLSB;
+```
+
 ## See Also
 
-- [let kMIDIPropertyReceivesBankSelectMSB: CFString](kmidipropertyreceivesbankselectmsb.md)
+### Banks
+- [let kMIDIPropertyReceivesBankSelectMSB: CFString](./kmidipropertyreceivesbankselectmsb.md)
   A Boolean value that indicates whether the device or entity responds to MIDI bank select MSB messages.
-- [let kMIDIPropertyTransmitsBankSelectLSB: CFString](kmidipropertytransmitsbankselectlsb.md)
+- [let kMIDIPropertyTransmitsBankSelectLSB: CFString](./kmidipropertytransmitsbankselectlsb.md)
   A Boolean value that indicates whether the device or entity transmits MIDI bank select LSB messages.
-- [let kMIDIPropertyTransmitsBankSelectMSB: CFString](kmidipropertytransmitsbankselectmsb.md)
+- [let kMIDIPropertyTransmitsBankSelectMSB: CFString](./kmidipropertytransmitsbankselectmsb.md)
   A Boolean value that indicates whether the device or entity transmits MIDI bank select MSB messages.
 
 

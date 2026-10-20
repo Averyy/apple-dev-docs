@@ -1,7 +1,8 @@
 # kSecReadPermStatus
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the keychain is readable.
 
@@ -18,6 +19,10 @@ Indicates the keychain is readable.
 
 ```swift
 var kSecReadPermStatus: UInt32 { get }
+```
+
+```c
+kSecReadPermStatus
 ```
 
 

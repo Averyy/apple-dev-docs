@@ -1,7 +1,8 @@
 # vertexData
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Updated vertex buffer data.
 

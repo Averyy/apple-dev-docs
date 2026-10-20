@@ -1,7 +1,8 @@
 # prefersCrossFadeTransitionsStatusDidChange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system’s Prefer Cross-Fade Transitions setting changes.
 
@@ -19,9 +20,14 @@ nonisolated
 static let prefersCrossFadeTransitionsStatusDidChange: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityPrefersCrossFadeTransitionsStatusDidChangeNotification;
+```
+
 ## See Also
 
-- [static var prefersCrossFadeTransitions: Bool](uiaccessibility/preferscrossfadetransitions.md)
+### Cross-fade transitions
+- [static var prefersCrossFadeTransitions: Bool](./preferscrossfadetransitions.md)
   A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
 
 

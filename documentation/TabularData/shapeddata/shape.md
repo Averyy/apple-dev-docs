@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer array that stores the size of each dimension in the corresponding element.
 

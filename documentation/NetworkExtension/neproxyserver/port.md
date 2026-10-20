@@ -1,7 +1,8 @@
 # port
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The TCP port on which the proxy server is listening for connections.
 
@@ -19,15 +20,20 @@ The TCP port on which the proxy server is listening for connections.
 var port: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger port;
+```
+
 ## See Also
 
-- [var address: String](neproxyserver/address.md)
+### Accessing Proxy Server Properties
+- [var address: String](./address.md)
   The address of the proxy server.
-- [var authenticationRequired: Bool](neproxyserver/authenticationrequired.md)
+- [var authenticationRequired: Bool](./authenticationrequired.md)
   A Boolean indicating if the server requires authentication credentials.
-- [var username: String?](neproxyserver/username.md)
+- [var username: String?](./username.md)
   The username portion of the authentication credential to be used to authenticate with the proxy server.
-- [var password: String?](neproxyserver/password.md)
+- [var password: String?](./password.md)
   The password portion of the authentication credential to be used to authenticate with the proxy server.
 
 

@@ -1,7 +1,8 @@
 # primaryButton
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detail card’s primary action button.
 
@@ -16,9 +17,14 @@ The detail card’s primary action button.
 var primaryButton: CPTextButton? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CPTextButton * primaryButton;
+```
+
 ## See Also
 
-- [var secondaryButton: CPTextButton?](cppointofinterest/secondarybutton.md)
+### Managing the Detail Card’s Buttons
+- [var secondaryButton: CPTextButton?](./secondarybutton.md)
   The detail card’s secondary action button.
 
 

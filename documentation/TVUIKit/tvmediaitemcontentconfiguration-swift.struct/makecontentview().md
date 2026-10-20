@@ -1,7 +1,8 @@
 # makeContentView()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new instance of the content view using this configuration.
 

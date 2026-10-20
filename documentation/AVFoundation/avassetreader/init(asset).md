@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object to read media data from an asset.
 
@@ -17,6 +18,10 @@ Creates an object to read media data from an asset.
 
 ```swift
 init(asset: AVAsset) throws
+```
+
+```objc
+- (instancetype) initWithAsset:(AVAsset *) asset error:(NSError **) outError;
 ```
 
 ## Parameters

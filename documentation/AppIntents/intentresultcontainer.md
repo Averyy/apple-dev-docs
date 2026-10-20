@@ -1,7 +1,8 @@
 # IntentResultContainer
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the output of a completed intent.
 
@@ -11,7 +12,7 @@ An object that represents the output of a completed intent.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,39 +28,40 @@ Use the `IntentResult.result()` family of functions to create instances
 ## Topics
 
 ### Instance Properties
-- [var activityIdentifier: String?](intentresultcontainer/activityidentifier.md)
-- [var dialog: IntentDialog?](intentresultcontainer/dialog.md)
-- [var opensIntent: OpensAppIntent?](intentresultcontainer/opensintent.md)
+- [var activityIdentifier: String?](./intentresultcontainer/activityidentifier.md)
+- [var dialog: IntentDialog?](./intentresultcontainer/dialog.md)
+- [var opensIntent: OpensAppIntent?](./intentresultcontainer/opensintent.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [IntentResult](intentresult.md)
-- [OpensIntent](opensintent.md)
-- [ProvidesDialog](providesdialog.md)
-- [ReturnsValue](returnsvalue.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShowsSnippetIntent](showssnippetintent.md)
-- [ShowsSnippetView](showssnippetview.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [IntentResult](./intentresult.md)
+- [OpensIntent](./opensintent.md)
+- [ProvidesDialog](./providesdialog.md)
+- [ReturnsValue](./returnsvalue.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShowsSnippetIntent](./showssnippetintent.md)
+- [ShowsSnippetView](./showssnippetview.md)
 
 ## See Also
 
-- [protocol IntentResult](intentresult.md)
+### Results
+- [protocol IntentResult](./intentresult.md)
   A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
-- [struct IntentDialog](intentdialog.md)
+- [struct IntentDialog](./intentdialog.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [protocol ProvidesDialog](providesdialog.md)
+- [protocol ProvidesDialog](./providesdialog.md)
   The result of performing an action that delivers a dialog back to the initiator of the action.
-- [protocol ReturnsValue](returnsvalue.md)
+- [protocol ReturnsValue](./returnsvalue.md)
   The result of performing an action that delivers a value back to the initiator.
-- [protocol ShowsSnippetView](showssnippetview.md)
+- [protocol ShowsSnippetView](./showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
-- [protocol ResultsCollection](resultscollection.md)
+- [protocol ResultsCollection](./resultscollection.md)
   A protocol representing a collection of returned items with support for sectioning.
-- [protocol OpensIntent](opensintent.md)
+- [protocol OpensIntent](./opensintent.md)
   A result type that indicates your app intent returns another app intent.
 
 

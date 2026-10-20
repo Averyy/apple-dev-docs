@@ -1,6 +1,7 @@
 # Result Relevance Sorting Key
 
-**Framework**: Core Services
+**Framework**: Core Services  
+**Role**: API Collection
 
 Key used in a user notification’s description dictionary that indicates the relevance of a result.
 
@@ -15,14 +16,15 @@ If the value is not computed it is treated as an attribute on the item that does
 ## Topics
 
 ### Constants
-- [let kMDQueryResultContentRelevance: CFString!](kmdqueryresultcontentrelevance.md)
+- [let kMDQueryResultContentRelevance: CFString!](../../kmdqueryresultcontentrelevance.md)
   A CFNumberRef with a floating point value between 0.0 and 1.0 inclusive.
 
 ## See Also
 
-- [Query Result Change Keys](file_metadata/mdquery/query_result_change_keys.md)
+### Notification Info Keys
+- [Query Result Change Keys](./query_result_change_keys.md)
   Specify the items that have changed in the query results.
-- [Query Search Scope Keys](file_metadata/mdquery/query_search_scope_keys.md)
+- [Query Search Scope Keys](./query_search_scope_keys.md)
   Specify the scope of a query’s search.
 
 

@@ -1,9 +1,10 @@
 # WKWebExtensionContext.Error.Code.alreadyLoaded
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Indicates that the context is already loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).
+Indicates that the context is already loaded by a [`WKWebExtensionController`](../../../wkwebextensioncontroller.md).
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@ Indicates that the context is already loaded by a [`WKWebExtensionController`](w
 
 ```swift
 case alreadyLoaded
+```
+
+```c
+WKWebExtensionContextErrorAlreadyLoaded
 ```
 
 

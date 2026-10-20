@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicRectangularFullImage
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying a full-color image that fills the complication.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,13 +17,17 @@ A template for displaying a full-color image that fills the complication.
 class CLKComplicationTemplateGraphicRectangularFullImage
 ```
 
+```objc
+@interface CLKComplicationTemplateGraphicRectangularFullImage : CLKComplicationTemplate
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicRectangular`](clkcomplicationfamily/graphicrectangular.md) family.
+This template belongs to the [`CLKComplicationFamily.graphicRectangular`](./clkcomplicationfamily/graphicrectangular.md) family.
 
-![A diagram of a graphic rectangular full complication. The diagram shows an image of the moon filling the complication.](/images/com.apple.clockkit/media-3905732@2x.png)
+![A diagram of a graphic rectangular full complication. The diagram shows an image of the moon filling the complication.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3905732@2x.png)
 
-The table below lists the dimensions of the image you use in this template. Use images with a [`scale`](https://developer.apple.com/documentation/uikit/uiimage/scale) of `2.0` for display on Apple Watch so the point-based dimensions are half the listed size.
+The table below lists the dimensions of the image you use in this template. Use images with a [`scale`](../UIKit/uiimage/scale.md) of `2.0` for display on Apple Watch so the point-based dimensions are half the listed size.
 
 | Apple Watch Size | Width | Height |
 | --- | --- | --- |
@@ -36,32 +43,33 @@ Instead of providing multiple images with different resolutions, you can provide
 ## Topics
 
 ### Creating the Template
-- [init(imageProvider: CLKFullColorImageProvider)](clkcomplicationtemplategraphicrectangularfullimage/init(imageprovider:).md)
+- [init(imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphicrectangularfullimage/init%28imageprovider%29.md)
   Creates a template with a large rectangular image.
 ### Setting the Complication Data
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphicrectangularfullimage/imageprovider.md)
+- [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphicrectangularfullimage/imageprovider.md)
   The image to display.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicRectangularLargeImage](clkcomplicationtemplategraphicrectangularlargeimage.md)
+### Large Images and Views
+- [class CLKComplicationTemplateGraphicRectangularLargeImage](./clkcomplicationtemplategraphicrectangularlargeimage.md)
   A template for displaying a large rectangle containing header text and an image.
-- [class CLKComplicationTemplateGraphicRectangularLargeView](clkcomplicationtemplategraphicrectangularlargeview.md)
+- [class CLKComplicationTemplateGraphicRectangularLargeView](./clkcomplicationtemplategraphicrectangularlargeview.md)
   A template for displaying a large rectangle containing header text and a SwiftUI view.
-- [class CLKComplicationTemplateGraphicRectangularFullView](clkcomplicationtemplategraphicrectangularfullview.md)
+- [class CLKComplicationTemplateGraphicRectangularFullView](./clkcomplicationtemplategraphicrectangularfullview.md)
   A template for displaying a SwiftUI view that fills the entire template.
 
 

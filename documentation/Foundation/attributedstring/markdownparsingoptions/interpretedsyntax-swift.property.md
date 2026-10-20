@@ -1,7 +1,8 @@
 # interpretedSyntax
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The syntax for interpreting a Markdown string.
 
@@ -26,17 +27,18 @@ If your Markdown data uses syntax that this setting excludes, the parser still p
 
 ## See Also
 
-- [var allowsExtendedAttributes: Bool](attributedstring/markdownparsingoptions/allowsextendedattributes.md)
+### Accessing Options
+- [var allowsExtendedAttributes: Bool](./allowsextendedattributes.md)
   A Boolean value that indicates whether parsing allows extensions to Markdown that specify extended attributes.
-- [var appliesSourcePositionAttributes: Bool](attributedstring/markdownparsingoptions/appliessourcepositionattributes.md)
+- [var appliesSourcePositionAttributes: Bool](./appliessourcepositionattributes.md)
   A Boolean value that indicates whether parsing applies attributes that indicate the position of attributed text in the original Markdown string.
-- [var failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy](attributedstring/markdownparsingoptions/failurepolicy-swift.property.md)
+- [var failurePolicy: AttributedString.MarkdownParsingOptions.FailurePolicy](./failurepolicy-swift.property.md)
   The policy for handling a parsing failure.
-- [AttributedString.MarkdownParsingOptions.FailurePolicy](attributedstring/markdownparsingoptions/failurepolicy-swift.enum.md)
+- [AttributedString.MarkdownParsingOptions.FailurePolicy](./failurepolicy-swift.enum.md)
   A type that represents policies for handling parsing failures.
-- [AttributedString.MarkdownParsingOptions.InterpretedSyntax](attributedstring/markdownparsingoptions/interpretedsyntax-swift.enum.md)
+- [AttributedString.MarkdownParsingOptions.InterpretedSyntax](./interpretedsyntax-swift.enum.md)
   A type that represents the syntax for interpreting a Markdown string.
-- [var languageCode: String?](attributedstring/markdownparsingoptions/languagecode.md)
+- [var languageCode: String?](./languagecode.md)
   The language code for this document.
 
 

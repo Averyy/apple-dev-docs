@@ -1,7 +1,8 @@
 # textView(_:shouldChangeTypingAttributes:toAttributes:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the typing attributes are changed.
 
@@ -13,6 +14,10 @@ Sent when the typing attributes are changed.
 ```swift
 @MainActor
 optional func textView(_ textView: NSTextView, shouldChangeTypingAttributes oldTypingAttributes: [String : Any] = [:], toAttributes newTypingAttributes: [NSAttributedString.Key : Any] = [:]) -> [NSAttributedString.Key : Any]
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) textView:(NSTextView *) textView shouldChangeTypingAttributes:(NSDictionary<NSString *,id> *) oldTypingAttributes toAttributes:(NSDictionary<NSString *,id> *) newTypingAttributes;
 ```
 
 #### Return Value
@@ -27,11 +32,12 @@ The actual new typing attributes.
 
 ## See Also
 
-- [func textView(NSTextView, shouldChangeTextIn: NSRange, replacementString: String?) -> Bool](nstextviewdelegate/textview(_:shouldchangetextin:replacementstring:).md)
+### Setting Text Attributes
+- [func textView(NSTextView, shouldChangeTextIn: NSRange, replacementString: String?) -> Bool](./textview%28_,shouldchangetextin,replacementstring%29.md)
   Sent when a text view needs to determine if text in a specified range should be changed.
-- [func textView(NSTextView, shouldChangeTextInRanges: [NSValue], replacementStrings: [String]?) -> Bool](nstextviewdelegate/textview(_:shouldchangetextinranges:replacementstrings:).md)
+- [func textView(NSTextView, shouldChangeTextInRanges: [NSValue], replacementStrings: [String]?) -> Bool](./textview%28_,shouldchangetextinranges,replacementstrings%29.md)
   Sent when a text view needs to determine if text in an array of specified ranges should be changed.
-- [func textViewDidChangeTypingAttributes(Notification)](nstextviewdelegate/textviewdidchangetypingattributes(_:).md)
+- [func textViewDidChangeTypingAttributes(Notification)](./textviewdidchangetypingattributes%28_%29.md)
   Sent when a text view’s typing attributes change.
 
 

@@ -1,7 +1,8 @@
 # MFMessageComposeViewControllerAttachmentURL
 
 **Framework**: Message UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The URL for the item that is attached to the message.
 
@@ -17,19 +18,24 @@ The URL for the item that is attached to the message.
 let MFMessageComposeViewControllerAttachmentURL: String
 ```
 
+```c
+extern NSString * const MFMessageComposeViewControllerAttachmentURL;
+```
+
 ## See Also
 
-- [func disableUserAttachments()](mfmessagecomposeviewcontroller/disableuserattachments.md)
+### Managing attachments
+- [func disableUserAttachments()](./mfmessagecomposeviewcontroller/disableuserattachments%28%29.md)
   Disables the camera/attachment button in the message composition view.
-- [var attachments: [[AnyHashable : Any]]?](mfmessagecomposeviewcontroller/attachments.md)
+- [var attachments: [[AnyHashable : Any]]?](./mfmessagecomposeviewcontroller/attachments.md)
   Returns an array of dictionaries that describe the properties of an attachment.
-- [func addAttachmentURL(URL, withAlternateFilename: String?) -> Bool](mfmessagecomposeviewcontroller/addattachmenturl(_:withalternatefilename:).md)
+- [func addAttachmentURL(URL, withAlternateFilename: String?) -> Bool](./mfmessagecomposeviewcontroller/addattachmenturl%28_,withalternatefilename%29.md)
   Attaches a specified file to the message.
-- [func addAttachmentData(Data, typeIdentifier: String, filename: String) -> Bool](mfmessagecomposeviewcontroller/addattachmentdata(_:typeidentifier:filename:).md)
+- [func addAttachmentData(Data, typeIdentifier: String, filename: String) -> Bool](./mfmessagecomposeviewcontroller/addattachmentdata%28_,typeidentifier,filename%29.md)
   Attaches arbitrary content to the message.
-- [let MFMessageComposeViewControllerAttachmentAlternateFilename: String](mfmessagecomposeviewcontrollerattachmentalternatefilename.md)
+- [let MFMessageComposeViewControllerAttachmentAlternateFilename: String](./mfmessagecomposeviewcontrollerattachmentalternatefilename.md)
   The key for the alternate filename for the file-based item attached to the message.
-- [func insertCollaborationItemProvider(NSItemProvider) -> Bool](mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).md)
+- [func insertCollaborationItemProvider(NSItemProvider) -> Bool](./mfmessagecomposeviewcontroller/insertcollaborationitemprovider%28_%29.md)
 
 
 ---

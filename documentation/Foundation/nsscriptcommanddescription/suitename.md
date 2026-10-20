@@ -1,7 +1,8 @@
 # suiteName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the name of the suite that contains the command described by the receiver.
 
@@ -15,19 +16,24 @@ Returns the name of the suite that contains the command described by the receive
 var suiteName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * suiteName;
+```
+
 #### Return Value
 
 The receiver’s suite name. Within an application’s scriptability information, named suites contain related sets of information.
 
 ## See Also
 
-- [var appleEventClassCode: FourCharCode](nsscriptcommanddescription/appleeventclasscode.md)
+### Getting Basic Information About the Command
+- [var appleEventClassCode: FourCharCode](./appleeventclasscode.md)
   Returns the four-character code for the Apple event class of the receiver’s command.
-- [var appleEventCode: FourCharCode](nsscriptcommanddescription/appleeventcode.md)
+- [var appleEventCode: FourCharCode](./appleeventcode.md)
   Returns the four-character code for the Apple event ID of the receiver’s command.
-- [var commandClassName: String](nsscriptcommanddescription/commandclassname.md)
+- [var commandClassName: String](./commandclassname.md)
   Returns the name of the class that will be instantiated to handle the command.
-- [var commandName: String](nsscriptcommanddescription/commandname.md)
+- [var commandName: String](./commandname.md)
   Returns the name of the command.
 
 

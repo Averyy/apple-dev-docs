@@ -1,23 +1,28 @@
 # repeat(_:count:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an action that repeats another action a specified number of times.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func `repeat`(_ action: SKAction, count: Int) -> SKAction
+```
+
+```objc
++ (SKAction *) repeatAction:(SKAction *) action count:(NSUInteger) count;
 ```
 
 #### Return Value
@@ -37,11 +42,12 @@ This action is reversible; it creates a new action that is the reverse of the sp
 
 ## See Also
 
-- [class func group([SKAction]) -> SKAction](skaction/group(_:).md)
+### Chaining Actions
+- [class func group([SKAction]) -> SKAction](./group%28_%29.md)
   Creates an action that runs a collection of actions in parallel.
-- [class func sequence([SKAction]) -> SKAction](skaction/sequence(_:).md)
+- [class func sequence([SKAction]) -> SKAction](./sequence%28_%29.md)
   Creates an action that runs a collection of actions sequentially.
-- [class func repeatForever(SKAction) -> SKAction](skaction/repeatforever(_:).md)
+- [class func repeatForever(SKAction) -> SKAction](./repeatforever%28_%29.md)
   Creates an action that repeats another action forever.
 
 

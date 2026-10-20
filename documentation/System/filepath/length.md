@@ -1,7 +1,8 @@
 # length
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the file path, excluding the null terminator.
 
@@ -22,9 +23,10 @@ var length: Int { get }
 
 ## See Also
 
-- [var description: String](filepath/description.md)
+### Working with File Paths
+- [var description: String](./description.md)
   A textual representation of the file path.
-- [var debugDescription: String](filepath/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the file path, suitable for debugging.
 
 

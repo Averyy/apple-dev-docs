@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drawing bounds of caption scenes.
 
@@ -17,13 +18,18 @@ The drawing bounds of caption scenes.
 var bounds: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect bounds;
+```
+
 #### Discussion
 
-Set this property value before drawing. The renderer uses the value in each call to [`render(in:for:)`](avcaptionrenderer/render(in:for:).md), until you change it to a new value.
+Set this property value before drawing. The renderer uses the value in each call to [`render(in:for:)`](./render%28in,for%29.md), until you change it to a new value.
 
 ## See Also
 
-- [var captions: [AVCaption]](avcaptionrenderer/captions.md)
+### Configuring the renderer
+- [var captions: [AVCaption]](./captions.md)
   The captions to render.
 
 

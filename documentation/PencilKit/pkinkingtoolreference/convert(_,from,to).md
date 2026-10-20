@@ -1,7 +1,8 @@
 # convert(_:from:to:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a color from one user interface style to another.
 
@@ -15,6 +16,10 @@ Converts a color from one user interface style to another.
 
 ```swift
 class func convert(_ color: UIColor, from fromUserInterfaceStyle: UIUserInterfaceStyle, to toUserInterfaceStyle: UIUserInterfaceStyle) -> UIColor
+```
+
+```objc
++ (UIColor *) convertColor:(UIColor *) color fromUserInterfaceStyle:(UIUserInterfaceStyle) fromUserInterfaceStyle to:(UIUserInterfaceStyle) toUserInterfaceStyle;
 ```
 
 ## Parameters

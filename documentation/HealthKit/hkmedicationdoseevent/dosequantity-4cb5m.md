@@ -1,7 +1,8 @@
 # doseQuantity
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The quantity of the medication taken.
 

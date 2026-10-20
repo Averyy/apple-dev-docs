@@ -1,7 +1,8 @@
 # HMCharacteristicValueHeatingCooling.cool
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unit is set to cooling.
 
@@ -19,13 +20,18 @@ Unit is set to cooling.
 case cool
 ```
 
+```c
+HMCharacteristicValueHeatingCoolingCool
+```
+
 ## See Also
 
-- [HMCharacteristicValueHeatingCooling.off](hmcharacteristicvalueheatingcooling/off.md)
+### Accesory State
+- [HMCharacteristicValueHeatingCooling.off](./off.md)
   Unit is set to off, neither heating nor cooling.
-- [HMCharacteristicValueHeatingCooling.heat](hmcharacteristicvalueheatingcooling/heat.md)
+- [HMCharacteristicValueHeatingCooling.heat](./heat.md)
   Unit is set to heating.
-- [HMCharacteristicValueHeatingCooling.auto](hmcharacteristicvalueheatingcooling/auto.md)
+- [HMCharacteristicValueHeatingCooling.auto](./auto.md)
   Unit is set to automatic.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [MBUF_TSO_IPV4](1644521-anonymous/mbuf_tso_ipv4.md)
-- [MBUF_TSO_IPV6](1644521-anonymous/mbuf_tso_ipv6.md)
+- [MBUF_TSO_IPV4](./api-1644521-anonymous/mbuf_tso_ipv4.md)
+- [MBUF_TSO_IPV6](./api-1644521-anonymous/mbuf_tso_ipv6.md)
 
 
 ---

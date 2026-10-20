@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of examples in the batch.
 
@@ -26,9 +27,10 @@ This is the first dimension of both features and annotations.
 
 ## See Also
 
-- [var annotations: MLShapedArray<Scalar>](annotatedbatch/annotations.md)
+### Inspecting an annotated batch
+- [var annotations: MLShapedArray<Scalar>](./annotations.md)
   The shaped array of annotations.
-- [var features: MLShapedArray<Scalar>](annotatedbatch/features.md)
+- [var features: MLShapedArray<Scalar>](./features.md)
   The shaped array of features.
 
 

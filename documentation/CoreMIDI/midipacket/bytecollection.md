@@ -1,14 +1,15 @@
 # MIDIPacket.ByteCollection
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,22 @@ struct ByteCollection
 ## Topics
 
 ### Initializers
-- [init(UnsafePointer<MIDIPacket>)](midipacket/bytecollection/init(_:)-5j13x.md)
-- [init?(UnsafePointer<MIDIPacket>?)](midipacket/bytecollection/init(_:)-8ul4l.md)
+- [init(UnsafePointer<MIDIPacket>)](./bytecollection/init%28_%29-5j13x.md)
+- [init?(UnsafePointer<MIDIPacket>?)](./bytecollection/init%28_%29-8ul4l.md)
 ### Instance Properties
-- [var count: Int](midipacket/bytecollection/count.md)
-- [var endIndex: Int](midipacket/bytecollection/endindex.md)
-- [var startIndex: Int](midipacket/bytecollection/startindex.md)
+- [var count: Int](./bytecollection/count.md)
+- [var endIndex: Int](./bytecollection/endindex.md)
+- [var startIndex: Int](./bytecollection/startindex.md)
 ### Subscripts
-- [subscript(MIDIPacket.ByteCollection.Index) -> MIDIPacket.ByteCollection.Element](midipacket/bytecollection/subscript(_:).md)
+- [subscript(MIDIPacket.ByteCollection.Index) -> MIDIPacket.ByteCollection.Element](./bytecollection/subscript%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

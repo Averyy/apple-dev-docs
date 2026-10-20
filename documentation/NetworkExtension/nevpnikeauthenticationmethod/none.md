@@ -1,9 +1,10 @@
 # NEVPNIKEAuthenticationMethod.none
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
+Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](../nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
 
 **Availability**:
 - iOS 8.0+
@@ -19,12 +20,17 @@ Do not authenticate with the IPSec server. Note that extended authentication may
 case none
 ```
 
+```c
+NEVPNIKEAuthenticationMethodNone
+```
+
 ## See Also
 
-- [NEVPNIKEAuthenticationMethod.certificate](nevpnikeauthenticationmethod/certificate.md)
-  Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](nevpnprotocol/identityreference.md) or [`identityData`](nevpnprotocol/identitydata.md) property will be used.
-- [NEVPNIKEAuthenticationMethod.sharedSecret](nevpnikeauthenticationmethod/sharedsecret.md)
-  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](nevpnprotocolipsec/sharedsecretreference.md) property will be used.
+### Authentication methods
+- [NEVPNIKEAuthenticationMethod.certificate](./certificate.md)
+  Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](../nevpnprotocol/identityreference.md) or [`identityData`](../nevpnprotocol/identitydata.md) property will be used.
+- [NEVPNIKEAuthenticationMethod.sharedSecret](./sharedsecret.md)
+  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](../nevpnprotocolipsec/sharedsecretreference.md) property will be used.
 
 
 ---

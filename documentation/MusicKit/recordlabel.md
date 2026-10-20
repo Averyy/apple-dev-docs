@@ -1,7 +1,8 @@
 # RecordLabel
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A music item that represents a record label.
 
@@ -23,65 +24,66 @@ struct RecordLabel
 ## Topics
 
 ### Instance Properties
-- [var artwork: Artwork?](recordlabel/artwork.md)
+- [var artwork: Artwork?](./recordlabel/artwork.md)
   The record label’s artwork.
-- [let id: MusicItemID](recordlabel/id.md)
+- [let id: MusicItemID](./recordlabel/id.md)
   The unique identifier for the record label.
-- [var latestReleases: MusicItemCollection<Album>?](recordlabel/latestreleases.md)
+- [var latestReleases: MusicItemCollection<Album>?](./recordlabel/latestreleases.md)
   A collection of the most recent releases for the record label.
-- [var name: String](recordlabel/name.md)
+- [var name: String](./recordlabel/name.md)
   The name of the record label.
-- [var shortDescription: String?](recordlabel/shortdescription.md)
+- [var shortDescription: String?](./recordlabel/shortdescription.md)
   An abbreviated description to show inline or when the record label appears alongside other content.
-- [var standardDescription: String?](recordlabel/standarddescription.md)
+- [var standardDescription: String?](./recordlabel/standarddescription.md)
   A description to show when the record label is prominently displayed.
-- [var topReleases: MusicItemCollection<Album>?](recordlabel/topreleases.md)
+- [var topReleases: MusicItemCollection<Album>?](./recordlabel/topreleases.md)
   A collection of top releases for the record label.
-- [var url: URL?](recordlabel/url.md)
+- [var url: URL?](./recordlabel/url.md)
   The URL for the record label.
 ### Default Implementations
-- [FilterableMusicItem Implementations](recordlabel/filterablemusicitem-implementations.md)
+- [FilterableMusicItem Implementations](./recordlabel/filterablemusicitem-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FilterableMusicItem](filterablemusicitem.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicCatalogSearchable](musiccatalogsearchable.md)
-- [MusicItem](musicitem.md)
-- [MusicPropertyContainer](musicpropertycontainer.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [FilterableMusicItem](./filterablemusicitem.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [MusicCatalogSearchable](./musiccatalogsearchable.md)
+- [MusicItem](./musicitem.md)
+- [MusicPropertyContainer](./musicpropertycontainer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Album](album.md)
+### Music Items
+- [struct Album](./album.md)
   A music item that represents an album.
-- [struct Artist](artist.md)
+- [struct Artist](./artist.md)
   A music item that represents an artist.
-- [struct Curator](curator.md)
+- [struct Curator](./curator.md)
   A music item that represents a curator.
-- [struct Genre](genre.md)
+- [struct Genre](./genre.md)
   A music item that represents a genre.
-- [struct MusicVideo](musicvideo.md)
+- [struct MusicVideo](./musicvideo.md)
   A music item that represents a music video.
-- [struct Playlist](playlist.md)
+- [struct Playlist](./playlist.md)
   A music item that represents a playlist.
-- [struct RadioShow](radioshow.md)
+- [struct RadioShow](./radioshow.md)
   A music item that represents a radio show.
-- [struct Song](song.md)
+- [struct Song](./song.md)
   A music item that represents a song.
-- [struct Station](station.md)
+- [struct Station](./station.md)
   A music item that represents a station.
-- [enum Track](track.md)
+- [enum Track](./track.md)
   A music item that represents a track.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceError.notReady
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device isn’t ready for this request.
 

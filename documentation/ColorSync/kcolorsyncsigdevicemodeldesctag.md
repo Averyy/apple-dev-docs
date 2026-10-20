@@ -1,7 +1,8 @@
 # kColorSyncSigDeviceModelDescTag
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The signature of the device model description tag.
 
@@ -20,25 +21,30 @@ The signature of the device model description tag.
 var kColorSyncSigDeviceModelDescTag: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncSigDeviceModelDescTag;
+```
+
 ## See Also
 
-- [var kColorSyncSigCopyrightTag: Unmanaged<CFString>!](kcolorsyncsigcopyrighttag.md)
+### Identifying metadata tags
+- [var kColorSyncSigCopyrightTag: Unmanaged<CFString>!](./kcolorsyncsigcopyrighttag.md)
   The signature of the profile copyright tag.
-- [var kColorSyncSigDeviceMfgDescTag: Unmanaged<CFString>!](kcolorsyncsigdevicemfgdesctag.md)
+- [var kColorSyncSigDeviceMfgDescTag: Unmanaged<CFString>!](./kcolorsyncsigdevicemfgdesctag.md)
   The signature of the device manufacturer description tag.
-- [var kColorSyncSigGamutTag: Unmanaged<CFString>!](kcolorsyncsiggamuttag.md)
+- [var kColorSyncSigGamutTag: Unmanaged<CFString>!](./kcolorsyncsiggamuttag.md)
   The signature of the gamut tag, marking which PCS colors fall outside the device gamut.
-- [var kColorSyncSigNamedColor2Tag: Unmanaged<CFString>!](kcolorsyncsignamedcolor2tag.md)
+- [var kColorSyncSigNamedColor2Tag: Unmanaged<CFString>!](./kcolorsyncsignamedcolor2tag.md)
   The signature of the named color (version 2) tag.
-- [var kColorSyncSigProfileDescriptionTag: Unmanaged<CFString>!](kcolorsyncsigprofiledescriptiontag.md)
+- [var kColorSyncSigProfileDescriptionTag: Unmanaged<CFString>!](./kcolorsyncsigprofiledescriptiontag.md)
   The signature of the profile description tag.
-- [var kColorSyncSigProfileSequenceDescTag: Unmanaged<CFString>!](kcolorsyncsigprofilesequencedesctag.md)
+- [var kColorSyncSigProfileSequenceDescTag: Unmanaged<CFString>!](./kcolorsyncsigprofilesequencedesctag.md)
   The signature of the profile sequence description tag.
-- [var kColorSyncSigTechnologyTag: Unmanaged<CFString>!](kcolorsyncsigtechnologytag.md)
+- [var kColorSyncSigTechnologyTag: Unmanaged<CFString>!](./kcolorsyncsigtechnologytag.md)
   The signature of the technology tag, identifying the device technology.
-- [var kColorSyncSigViewingCondDescTag: Unmanaged<CFString>!](kcolorsyncsigviewingconddesctag.md)
+- [var kColorSyncSigViewingCondDescTag: Unmanaged<CFString>!](./kcolorsyncsigviewingconddesctag.md)
   The signature of the viewing conditions description tag.
-- [var kColorSyncSigViewingConditionsTag: Unmanaged<CFString>!](kcolorsyncsigviewingconditionstag.md)
+- [var kColorSyncSigViewingConditionsTag: Unmanaged<CFString>!](./kcolorsyncsigviewingconditionstag.md)
   The signature of the viewing conditions tag.
 
 

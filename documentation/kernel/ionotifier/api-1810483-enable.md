@@ -7,7 +7,7 @@ Sets the enable state of the notification request.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void enable(
  boolwas ) = 0;
 ```
@@ -22,9 +22,10 @@ Restores the enable state of the notification request, given the previous state 
 
 ## See Also
 
-- [disable](ionotifier/1810461-disable.md)
+### Miscellaneous
+- [disable](./api-1810461-disable.md)
   Disables the notification request.
-- [remove](ionotifier/1810524-remove.md)
+- [remove](./api-1810524-remove.md)
   Removes the notification request and releases it.
 
 

@@ -1,7 +1,8 @@
 # alternatives
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All the alternative interpretations of the audio in this range. The interpretations are in descending order of likelihood.
 
@@ -22,11 +23,12 @@ let alternatives: [AttributedString]
 
 The array will not be empty, but may contain an empty string, indicating an alternative where the audio has no transcription.
 
-To receive alternatives, set the [`DictationTranscriber.ReportingOption.alternativeTranscriptions`](dictationtranscriber/reportingoption/alternativetranscriptions.md) option.
+To receive alternatives, set the [`DictationTranscriber.ReportingOption.alternativeTranscriptions`](../reportingoption/alternativetranscriptions.md) option.
 
 ## See Also
 
-- [var text: AttributedString](dictationtranscriber/result/text.md)
+### Getting transcriptions
+- [var text: AttributedString](./text.md)
   The most likely interpretation of the audio in this range.
 
 

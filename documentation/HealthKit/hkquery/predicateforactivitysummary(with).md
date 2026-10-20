@@ -1,7 +1,8 @@
 # predicateForActivitySummary(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a predicate that matches the activity summary for the specified day.
 
@@ -17,6 +18,10 @@ Returns a predicate that matches the activity summary for the specified day.
 
 ```swift
 class func predicateForActivitySummary(with dateComponents: DateComponents) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForActivitySummaryWithDateComponents:(NSDateComponents *) dateComponents;
 ```
 
 #### Return Value
@@ -47,13 +52,17 @@ NSPredicate *explicitforDay =
 
 ## Parameters
 
-- `dateComponents`: Date components that uniquely identify the day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones). The date components must have a valid [`calendar`](https://developer.apple.com/documentation/foundation/nsdatecomponents/calendar) property.
+- `dateComponents`: Date components that uniquely identify the day as perceived by the user. This day may be longer or shorter than 24 hours (for example, if the user traveled across time zones).
+
+  The date components must have a valid [`calendar`](../../Foundation/nsdatecomponents/calendar.md) property.
 
 ## See Also
 
-- [let HKPredicateKeyPathDateComponents: String](hkpredicatekeypathdatecomponents.md)
+### Related Documentation
+- [let HKPredicateKeyPathDateComponents: String](../hkpredicatekeypathdatecomponents.md)
   The key path for accessing an activity summary’s date components.
-- [class func predicate(forActivitySummariesBetweenStart: DateComponents, end: DateComponents) -> NSPredicate](hkquery/predicate(foractivitysummariesbetweenstart:end:).md)
+### Creating activity summary predicates
+- [class func predicate(forActivitySummariesBetweenStart: DateComponents, end: DateComponents) -> NSPredicate](./predicate%28foractivitysummariesbetweenstart,end%29.md)
   Returns a predicate for matching all the activity summaries that fall between the days identified by the start and end date components.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureSceneMonitoringStatus
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An informative status about the scene observed by the device.
 
@@ -18,40 +19,45 @@ An informative status about the scene observed by the device.
 struct AVCaptureSceneMonitoringStatus
 ```
 
+```c
+typedef NSString * AVCaptureSceneMonitoringStatus;
+```
+
 #### Overview
 
-Some features have certain requirements on the scene (lighting condition for Cinematic Video, for example) to produce optimal results; these [`AVCaptureSceneMonitoringStatus`](avcapturescenemonitoringstatus.md) string constants are used to represent such scene statuses for a given feature.
+Some features have certain requirements on the scene (lighting condition for Cinematic Video, for example) to produce optimal results; these [`AVCaptureSceneMonitoringStatus`](./avcapturescenemonitoringstatus.md) string constants are used to represent such scene statuses for a given feature.
 
 ## Topics
 
 ### Status values
-- [static let notEnoughLight: AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus/notenoughlight.md)
+- [static let notEnoughLight: AVCaptureSceneMonitoringStatus](./avcapturescenemonitoringstatus/notenoughlight.md)
   The light level of the current scene is insufficient for the current set of features to function optimally.
 ### Initializers
-- [init(rawValue: String)](avcapturescenemonitoringstatus/init(rawvalue:).md)
+- [init(rawValue: String)](./avcapturescenemonitoringstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideofixedfocus(at:focusmode:).md)
+### Configuring Cinematic video
+- [func setCinematicVideoFixedFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](./avcapturedevice/setcinematicvideofixedfocus%28at,focusmode%29.md)
   Fix focus at a distance.
-- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(at:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(at: CGPoint, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](./avcapturedevice/setcinematicvideotrackingfocus%28at,focusmode%29.md)
   Focus on and start tracking an object if it can be detected at the region specified by the point.
-- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](avcapturedevice/setcinematicvideotrackingfocus(detectedobjectid:focusmode:).md)
+- [func setCinematicVideoTrackingFocus(detectedObjectID: Int, focusMode: AVCaptureDevice.CinematicVideoFocusMode)](./avcapturedevice/setcinematicvideotrackingfocus%28detectedobjectid,focusmode%29.md)
   Focus on and start tracking a detected object.
-- [AVCaptureDevice.CinematicVideoFocusMode](avcapturedevice/cinematicvideofocusmode.md)
+- [AVCaptureDevice.CinematicVideoFocusMode](./avcapturedevice/cinematicvideofocusmode.md)
   Constants indicating the focus behavior when recording a Cinematic Video.
-- [static let notEnoughLight: AVCaptureSceneMonitoringStatus](avcapturescenemonitoringstatus/notenoughlight.md)
+- [static let notEnoughLight: AVCaptureSceneMonitoringStatus](./avcapturescenemonitoringstatus/notenoughlight.md)
   The light level of the current scene is insufficient for the current set of features to function optimally.
-- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
+- [var cinematicVideoCaptureSceneMonitoringStatuses: Set<AVCaptureSceneMonitoringStatus>](./avcapturedevice/cinematicvideocapturescenemonitoringstatuses.md)
   The current scene monitoring statuses related to Cinematic Video capture.
 
 

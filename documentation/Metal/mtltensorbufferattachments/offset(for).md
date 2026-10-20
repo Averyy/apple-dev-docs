@@ -1,7 +1,8 @@
 # offset(for:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the byte offset into the buffer for the given plane.
 
@@ -17,6 +18,10 @@ Returns the byte offset into the buffer for the given plane.
 
 ```swift
 func offset(for plane: MTLTensorPlaneType) -> Int
+```
+
+```objc
+- (NSUInteger) offsetForPlane:(MTLTensorPlaneType) plane;
 ```
 
 #### Return Value

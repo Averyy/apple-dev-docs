@@ -1,18 +1,19 @@
 # kCFNumberNaN
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 “Not a Number.” This value is often the result of an invalid operation, such as the square-root of a negative number.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@
 let kCFNumberNaN: CFNumber!
 ```
 
+```c
+extern CFNumberRef const kCFNumberNaN;
+```
+
 ## See Also
 
-- [let kCFNumberNegativeInfinity: CFNumber!](kcfnumbernegativeinfinity.md)
+### Constants
+- [let kCFNumberNegativeInfinity: CFNumber!](./kcfnumbernegativeinfinity.md)
   Designates a negative infinity value.
-- [let kCFNumberPositiveInfinity: CFNumber!](kcfnumberpositiveinfinity.md)
+- [let kCFNumberPositiveInfinity: CFNumber!](./kcfnumberpositiveinfinity.md)
   Designates a positive infinity value.
 
 

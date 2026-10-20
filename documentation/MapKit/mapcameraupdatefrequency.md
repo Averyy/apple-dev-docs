@@ -1,7 +1,8 @@
 # MapCameraUpdateFrequency
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes when the map camera updates.
 
@@ -11,7 +12,7 @@ A structure that describes when the map camera updates.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,20 +24,21 @@ struct MapCameraUpdateFrequency
 ## Topics
 
 ### Timing of camera updates
-- [static var continuous: MapCameraUpdateFrequency](mapcameraupdatefrequency/continuous.md)
+- [static var continuous: MapCameraUpdateFrequency](./mapcameraupdatefrequency/continuous.md)
   A value that indicates that all camera updates are continuous, including while interactions are taking place.
-- [static var onEnd: MapCameraUpdateFrequency](mapcameraupdatefrequency/onend.md)
+- [static var onEnd: MapCameraUpdateFrequency](./mapcameraupdatefrequency/onend.md)
   A value that indicates the camera updates when map interactions are complete.
 
 ## See Also
 
-- [struct MapCamera](mapcamera.md)
+### Map customization
+- [struct MapCamera](./mapcamera.md)
   Defines a virtual viewpoint above the map surface.
-- [struct MapCameraBounds](mapcamerabounds.md)
+- [struct MapCameraBounds](./mapcamerabounds.md)
   Defines an optional boundary of an area within which the map’s center needs to remain.
-- [struct MapCameraPosition](mapcameraposition.md)
+- [struct MapCameraPosition](./mapcameraposition.md)
   A structure that describes how to position the map’s camera within the map.
-- [struct MapCameraUpdateContext](mapcameraupdatecontext.md)
+- [struct MapCameraUpdateContext](./mapcameraupdatecontext.md)
   A structure that defines additional information about the map camera.
 
 

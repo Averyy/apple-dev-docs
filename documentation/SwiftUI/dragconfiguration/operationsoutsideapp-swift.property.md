@@ -1,7 +1,8 @@
 # operationsOutsideApp
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operations suggested by the drag source for drags to other applications.
 

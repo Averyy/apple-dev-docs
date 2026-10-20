@@ -1,7 +1,8 @@
 # fetchAccessLog(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously retrieves the access log without blocking the calling thread.
 
@@ -18,7 +19,16 @@ Asynchronously retrieves the access log without blocking the calling thread.
 
 ```swift
 nonisolated
+func fetchAccessLog(completionHandler: @escaping @Sendable (sending AVPlayerItemAccessLog?) -> Void)
+```
+
+```swift
+nonisolated
 var accessLog: AVPlayerItemAccessLog? { get async }
+```
+
+```objc
+- (void) fetchAccessLogWithCompletionHandler:(void (^)(AVPlayerItemAccessLog *accessLog)) completionHandler;
 ```
 
 #### Discussion

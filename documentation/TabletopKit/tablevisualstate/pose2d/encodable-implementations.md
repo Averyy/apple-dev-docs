@@ -1,11 +1,12 @@
 # Encodable Implementations
 
-**Framework**: TabletopKit
+**Framework**: TabletopKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func encode(to: any Encoder) throws](tablevisualstate/pose2d/encode(to:).md)
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes this value into the given encoder.
 
 

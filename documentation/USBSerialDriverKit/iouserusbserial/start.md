@@ -1,7 +1,8 @@
 # Start
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the service for the specified provider.
 
@@ -10,33 +11,34 @@ Starts the service for the specified provider.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Start(IOService *provider);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver. For example, you might store a reference to the specified provider object for later use. When your service is configured, call the [`RegisterService`](https://developer.apple.com/documentation/driverkit/ioservice/registerservice) method to let the system know that your service is running. Always call `super` early in your implementation of this method.
+After successfully matching the specified `provider` to your driver’s service, the system instantiates your service object and calls this method. Use this method to perform any additional configuration of your driver. For example, you might store a reference to the specified provider object for later use. When your service is configured, call the [`RegisterService`](../../DriverKit/ioservice/registerservice.md) method to let the system know that your service is running. Always call `super` early in your implementation of this method.
 
-You don’t need to open a communications channel to your device in this method. The system calls your service’s [`HwActivate`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/hwactivate) method separately to activate your hardware.
+You don’t need to open a communications channel to your device in this method. The system calls your service’s [`HwActivate`](../../SerialDriverKit/iouserserial/hwactivate.md) method separately to activate your hardware.
 
 ## Parameters
 
-- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your `start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](https://developer.apple.com/documentation/serialdriverkit/iouserserial/stop) method.
+- `provider`: The provider object that matches the current service. Cast this object to the class you expect. The system retains this object for the duration of your `start` method. The system continues to retain the object if your service starts successfully, releasing it only after calling your service’s [`Stop`](../../SerialDriverKit/iouserserial/stop.md) method.
 
 ## See Also
 
-- [init](iouserusbserial/init.md)
+### Configuring the Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [Stop](iouserusbserial/stop.md)
+- [Stop](./stop.md)
   Stops the service that matches the specified provider.
-- [free](iouserusbserial/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
-- [initWith](iouserusbserial/initwith.md)
+- [initWith](./initwith.md)
   Initializes the private data structures associated with this class.
 
 

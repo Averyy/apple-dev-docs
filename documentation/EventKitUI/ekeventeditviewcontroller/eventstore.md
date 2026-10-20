@@ -1,7 +1,8 @@
 # eventStore
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The event store used to save the event.
 
@@ -17,13 +18,18 @@ The event store used to save the event.
 var eventStore: EKEventStore! { get set }
 ```
 
+```objc
+@property (nonatomic, retain, null_unspecified) EKEventStore * eventStore;
+```
+
 #### Discussion
 
 This property must be set before displaying the view.
 
 ## See Also
 
-- [var event: EKEvent?](ekeventeditviewcontroller/event.md)
+### Creating and Saving Events
+- [var event: EKEvent?](./event.md)
   The event the user creates or edits using this view controller.
 
 

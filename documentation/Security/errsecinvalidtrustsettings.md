@@ -1,7 +1,8 @@
 # errSecInvalidTrustSettings
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The trust settings record is corrupted.
 
@@ -18,6 +19,10 @@ The trust settings record is corrupted.
 
 ```swift
 var errSecInvalidTrustSettings: OSStatus { get }
+```
+
+```c
+errSecInvalidTrustSettings
 ```
 
 

@@ -1,7 +1,8 @@
 # reuseIdentifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string used to identify a reusable header or footer.
 
@@ -9,7 +10,7 @@ A string used to identify a reusable header or footer.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ A string used to identify a reusable header or footer.
 var reuseIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * reuseIdentifier;
+```
+
 #### Discussion
 
-You assign a reuse identifier to a header or footer view at creation time. Once assigned, the table view uses that reuse identifier to gather your views when they’re scrolled offscreen and queue them for later reuse. You can retrieve header or footer views by passing the same reuse identifier to the [`dequeueReusableHeaderFooterView(withIdentifier:)`](uitableview/dequeuereusableheaderfooterview(withidentifier:).md) method of the table view.
+You assign a reuse identifier to a header or footer view at creation time. Once assigned, the table view uses that reuse identifier to gather your views when they’re scrolled offscreen and queue them for later reuse. You can retrieve header or footer views by passing the same reuse identifier to the [`dequeueReusableHeaderFooterView(withIdentifier:)`](../uitableview/dequeuereusableheaderfooterview%28withidentifier%29.md) method of the table view.
 
 ## See Also
 
-- [func prepareForReuse()](uitableviewheaderfooterview/prepareforreuse.md)
+### Managing view reuse
+- [func prepareForReuse()](./prepareforreuse%28%29.md)
   Prepares a reusable header or footer view for reuse by the table.
 
 

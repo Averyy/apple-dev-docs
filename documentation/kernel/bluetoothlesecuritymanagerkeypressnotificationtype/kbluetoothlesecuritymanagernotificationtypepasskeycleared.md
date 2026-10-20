@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerNotificationTypePasskeyCleared
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerNotificationTypePasskeyCleared = 3
 ```
 

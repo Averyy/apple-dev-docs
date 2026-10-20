@@ -1,6 +1,8 @@
 # Running macOS in a virtual machine on Apple silicon
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: Sample Code  
+**Download**: [RunningMacOSInAVirtualMachineOnAppleSilicon.zip](https://docs-assets.developer.apple.com/published/bcec04487547/RunningMacOSInAVirtualMachineOnAppleSilicon.zip)
 
 Install and run macOS in a virtual machine using the Virtualization framework.
 
@@ -22,19 +24,25 @@ There are five build targets in this project that represent the `InstallationToo
 
 > **Note**: The default deployment target is macOS 27, and the sample uses APIs present in that release. To build for an earlier version of macOS, change the deployment target as appropriate and adapt the code as necessary to either remove or conditionally compile support for macOS 27 API features.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 You need to install the virtual machine, and `VM.bundle` needs exist before launching the sample app.
 
 1. Set up code signing for each of the project’s targets by navigating to the Signing & Capabilities settings and selecting your team from the drop-down menu.
-2. Run `InstallationTool` from within Xcode or in Terminal to download the latest available macOS restore image from the network and create a macOS VM image on disk. `InstallationTool` creates a `VM.bundle` package in your Home directory, containing: - `Disk.img` — The main disk image of the installed OS.
-- `AuxiliaryStorage` — The auxiliary storage for macOS.
-- `MachineIdentifier` — The data representation of the `VZMacMachineIdentifier` object.
-- `HardwareModel` — The data representation of the `VZMacHardwareModel` object.
-- `RestoreImage.ipsw` — The restore image downloaded from the network (this file exists only if the tool runs without arguments).
-3. Select one of the versions of the app to launch, either `macOSVirtualMachineSampleApp` (Objective-C or Swift) or `sharedBaseImageSampleApp`, to run the macOS guest operating system. The sample app starts the VM and configures a graphical view that you interact with. The virtual Mac continues running until you shut it down from inside the guest OS, or quit the app. To reinstall the virtual machine, delete the `VM.bundle` package and run `InstallationTool` again.
+2. Run `InstallationTool` from within Xcode or in Terminal to download the latest available macOS restore image from the network and create a macOS VM image on disk.
 
-##### Install Macos From a Restore Image
+   `InstallationTool` creates a `VM.bundle` package in your Home directory, containing:
+
+   - `Disk.img` — The main disk image of the installed OS.
+   - `AuxiliaryStorage` — The auxiliary storage for macOS.
+   - `MachineIdentifier` — The data representation of the `VZMacMachineIdentifier` object.
+   - `HardwareModel` — The data representation of the `VZMacHardwareModel` object.
+   - `RestoreImage.ipsw` — The restore image downloaded from the network (this file exists only if the tool runs without arguments).
+3. Select one of the versions of the app to launch, either `macOSVirtualMachineSampleApp` (Objective-C or Swift) or `sharedBaseImageSampleApp`, to run the macOS guest operating system. The sample app starts the VM and configures a graphical view that you interact with. The virtual Mac continues running until you shut it down from inside the guest OS, or quit the app.
+
+   To reinstall the virtual machine, delete the `VM.bundle` package and run `InstallationTool` again.
+
+##### Install macOS from a restore image
 
 After downloading a restore image, you can install macOS from that restore image.
 
@@ -75,7 +83,7 @@ NSLog(@"Starting installation.");
 [installer.progress addObserver:self forKeyPath:@"fractionCompleted" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:nil];
 ```
 
-##### Set Up the Virtual Machine
+##### Set up the virtual machine
 
 The `macOSVirtualMachineSampleApp` versions operate identically, using a single VM image to launch a single macOS VM; the `sharedBaseImageSampleApp` uses different initial setup and configuration methods to enable the app to support two VMs using a common, shared base image that both VMs run.
 
@@ -256,7 +264,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 #endif
 ```
 
-The following examples (for both Swift and Objective-C) show how the `macOSVirtualMachineSampleApp` sample app version uses a single [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) object to configure the basic characteristics of the guest, such as the CPU count, memory size, creation of disk images, various device configurations, and a [`VZMacOSBootLoader`](vzmacosbootloader.md) object to load the operating system from the disk image:
+The following examples (for both Swift and Objective-C) show how the `macOSVirtualMachineSampleApp` sample app version uses a single [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object to configure the basic characteristics of the guest, such as the CPU count, memory size, creation of disk images, various device configurations, and a [`VZMacOSBootLoader`](./vzmacosbootloader.md) object to load the operating system from the disk image:
 
 **Swift**:
 
@@ -343,7 +351,7 @@ self->_delegate = [MacOSVirtualMachineDelegate new];
 self->_virtualMachine.delegate = self->_delegate;
 ```
 
-Inside the `createVirtualMachine` method, the app also creates a platform configuration for the VM. [`VZMacPlatformConfiguration`](vzmacplatformconfiguration.md) configures important macOS-specific data that the macOS guest needs to run, including the specific [`hardwareModel`](vzmacosconfigurationrequirements/hardwaremodel.md) that the image supports, as well as a [`machineIdentifier`](vzmacplatformconfiguration/machineidentifier.md) that uniquely identifies the current VM instance and differentiates it from any others.
+Inside the `createVirtualMachine` method, the app also creates a platform configuration for the VM. [`VZMacPlatformConfiguration`](./vzmacplatformconfiguration.md) configures important macOS-specific data that the macOS guest needs to run, including the specific [`hardwareModel`](./vzmacosconfigurationrequirements/hardwaremodel.md) that the image supports, as well as a [`machineIdentifier`](./vzmacplatformconfiguration/machineidentifier.md) that uniquely identifies the current VM instance and differentiates it from any others.
 
 **Swift**:
 
@@ -415,7 +423,7 @@ if (!machineIdentifier) {
 macPlatformConfiguration.machineIdentifier = machineIdentifier;
 ```
 
-After creating the platform configuration, the app creates an instance of  [`VZVirtualMachineConfiguration`](vzvirtualmachineconfiguration.md) and adds video, virtual drives, and other devices to the system.
+After creating the platform configuration, the app creates an instance of  [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) and adds video, virtual drives, and other devices to the system.
 
 **Swift**:
 
@@ -481,11 +489,11 @@ _virtualMachine = [[VZVirtualMachine alloc] initWithConfiguration:configuration]
 
 The Virtualization framework checks the configuration to make sure it supports saving and restoring.
 
-##### Start the Vm
+##### Start the VM
 
-After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](vzvirtualmachine.md) object to start the execution of the macOS guest operating system.
+After building the configuration data for the VM, the sample app uses the [`VZVirtualMachine`](./vzvirtualmachine.md) object to start the execution of the macOS guest operating system.
 
-Before calling the [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) or [`restoreMachineStateFrom(url:completionHandler:)`](vzvirtualmachine/restoremachinestatefrom(url:completionhandler:).md) methods, the sample app configures a delegate object to receive messages about the state of the virtual machine. When the macOS guest operating system shuts down, the virtual machine calls the delegate’s [`guestDidStop(_:)`](vzvirtualmachinedelegate/guestdidstop(_:).md) method. In response, the delegate method prints a message and exits the app. If the macOS guest stops for any reason other than a normal shutdown, the delegate prints an error message and the app exits.
+Before calling the [`start(completionHandler:)`](./vzvirtualmachine/start%28completionhandler%29.md) or [`restoreMachineStateFrom(url:completionHandler:)`](./vzvirtualmachine/restoremachinestatefrom%28url,completionhandler%29.md) methods, the sample app configures a delegate object to receive messages about the state of the virtual machine. When the macOS guest operating system shuts down, the virtual machine calls the delegate’s [`guestDidStop(_:)`](./vzvirtualmachinedelegate/guestdidstop%28_%29.md) method. In response, the delegate method prints a message and exits the app. If the macOS guest stops for any reason other than a normal shutdown, the delegate prints an error message and the app exits.
 
 **Swift**:
 
@@ -565,9 +573,9 @@ if (![startOptions setGuestProvisioningOptions:guestOptions error:&error]) {
 }
 ```
 
-##### Listen for Accessories and Respond to Connection Changes
+##### Listen for accessories and respond to connection changes
 
-After successfully starting the VM, the app starts listening for USB accessories with the [`Accessory Access`](https://developer.apple.com/documentation/accessoryaccess) framework. As devices connect to or disconnect from the VM, the framework calls the [`usbAccessoryDidConnect(_:)`](https://developer.apple.com/documentation/accessoryaccess/aausbaccessorylistener/usbaccessorydidconnect(_:)) and [`usbAccessoryDidDisconnect(_:)`](https://developer.apple.com/documentation/accessoryaccess/aausbaccessorylistener/usbaccessorydiddisconnect(_:)) protocol methods to inform the app about these transitions.
+After successfully starting the VM, the app starts listening for USB accessories with the [Accessory Access](../AccessoryAccess/AccessoryAccess.md) framework. As devices connect to or disconnect from the VM, the framework calls the [`usbAccessoryDidConnect(_:)`](../AccessoryAccess/aausbaccessorylistener/usbaccessorydidconnect%28_%29.md) and [`usbAccessoryDidDisconnect(_:)`](../AccessoryAccess/aausbaccessorylistener/usbaccessorydiddisconnect%28_%29.md) protocol methods to inform the app about these transitions.
 
 **Swift**:
 
@@ -687,11 +695,11 @@ nonisolated func usbAccessoryDidConnect(_ usbAccessory: AAUSBAccessory) {
 }
 ```
 
-If the virtual machine was running when the sample app last exited, the app calls `restoreVirtualMachine` to restore the state. If the virtual machine was in a shutdown state, the app calls `startVirtualMachine` to reboot the machine. Both methods start the VM asynchronously in the background. The VM loads the system image and boots macOS. After macOS starts, the user interacts with a [`VZVirtualMachineView`](vzvirtualmachineview.md) window that displays the macOS UI and handles keyboard and mouse input through a [`VZMacGraphicsDeviceConfiguration`](vzmacgraphicsdeviceconfiguration.md) as though the user is interacting directly with the Mac hardware. The [`VZVirtualMachineView`](vzvirtualmachineview.md) automatically resizes the virtual machine display when the window size changes, and captures system keys such as the Globe key on a Mac keyboard.
+If the virtual machine was running when the sample app last exited, the app calls `restoreVirtualMachine` to restore the state. If the virtual machine was in a shutdown state, the app calls `startVirtualMachine` to reboot the machine. Both methods start the VM asynchronously in the background. The VM loads the system image and boots macOS. After macOS starts, the user interacts with a [`VZVirtualMachineView`](./vzvirtualmachineview.md) window that displays the macOS UI and handles keyboard and mouse input through a [`VZMacGraphicsDeviceConfiguration`](./vzmacgraphicsdeviceconfiguration.md) as though the user is interacting directly with the Mac hardware. The [`VZVirtualMachineView`](./vzvirtualmachineview.md) automatically resizes the virtual machine display when the window size changes, and captures system keys such as the Globe key on a Mac keyboard.
 
-The `startVirtualMachine` method calls the VM’s [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method.
+The `startVirtualMachine` method calls the VM’s [`start(completionHandler:)`](./vzvirtualmachine/start%28completionhandler%29.md) method.
 
-For a sendable wrapper that connects a [`VZVirtualMachineView`](vzvirtualmachineview.md) to a virtual machine, see [`VZVirtualMachineViewAdaptor`](vzvirtualmachineviewadaptor.md).
+For a sendable wrapper that connects a [`VZVirtualMachineView`](./vzvirtualmachineview.md) to a virtual machine, see [`VZVirtualMachineViewAdaptor`](./vzvirtualmachineviewadaptor.md).
 
 **Swift**:
 
@@ -723,7 +731,7 @@ func startVirtualMachine() {
 }
 ```
 
-If the app previously had the VM save its state to `SaveFile.vzvmsave`, `restoreVirtualMachine` calls the VM’s [`restoreMachineStateFrom(url:completionHandler:)`](vzvirtualmachine/restoremachinestatefrom(url:completionhandler:).md) and [`resume(completionHandler:)`](vzvirtualmachine/resume(completionhandler:).md) methods.
+If the app previously had the VM save its state to `SaveFile.vzvmsave`, `restoreVirtualMachine` calls the VM’s [`restoreMachineStateFrom(url:completionHandler:)`](./vzvirtualmachine/restoremachinestatefrom%28url,completionhandler%29.md) and [`resume(completionHandler:)`](./vzvirtualmachine/resume%28completionhandler%29.md) methods.
 
 **Swift**:
 
@@ -784,9 +792,9 @@ func restoreVirtualMachine() {
 
 If the restore fails, the framework causes the virtual machine to reboot. In either case, the framework deletes `SaveFile.vzvmsave`  after restore completes because the VM disk no longer matches the state in the file.
 
-##### Save the Vm
+##### Save the VM
 
-When you close the sample app, it calls the VM’s [`pause(completionHandler:)`](vzvirtualmachine/pause(completionhandler:).md) and [`saveMachineStateTo(url:completionHandler:)`](vzvirtualmachine/savemachinestateto(url:completionhandler:).md) methods. This captures the runtime state of the VM to `SaveFile.vzvmsave`, which the app uses when calling `startOrRestoreVirtualMachine` to resume running the VM at the same point when you relaunch the sample app.
+When you close the sample app, it calls the VM’s [`pause(completionHandler:)`](./vzvirtualmachine/pause%28completionhandler%29.md) and [`saveMachineStateTo(url:completionHandler:)`](./vzvirtualmachine/savemachinestateto%28url,completionhandler%29.md) methods. This captures the runtime state of the VM to `SaveFile.vzvmsave`, which the app uses when calling `startOrRestoreVirtualMachine` to resume running the VM at the same point when you relaunch the sample app.
 
 **Swift**:
 
@@ -838,25 +846,26 @@ func pauseAndSaveVirtualMachine(completionHandler: @escaping () -> Void) {
 }
 ```
 
-The system defers app termination until the [`saveMachineStateTo(url:completionHandler:)`](vzvirtualmachine/savemachinestateto(url:completionhandler:).md) method completes.
+The system defers app termination until the [`saveMachineStateTo(url:completionHandler:)`](./vzvirtualmachine/savemachinestateto%28url,completionhandler%29.md) method completes.
 
 ## See Also
 
-- [Running Linux in a Virtual Machine](running-linux-in-a-virtual-machine.md)
+### Virtual machine setup
+- [Running Linux in a Virtual Machine](./running-linux-in-a-virtual-machine.md)
   Run a Linux operating system on your Mac using the Virtualization framework.
-- [Running GUI Linux in a virtual machine on a Mac](running-gui-linux-in-a-virtual-machine-on-a-mac.md)
+- [Running GUI Linux in a virtual machine on a Mac](./running-gui-linux-in-a-virtual-machine-on-a-mac.md)
   Install and run GUI Linux in a virtual machine using the Virtualization framework.
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
   Download a macOS restore image and install it in a new VM.
-- [Creating and Running a Linux Virtual Machine](creating-and-running-a-linux-virtual-machine.md)
+- [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
   Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
-- [Virtualize macOS on a Mac](virtualize-macos-on-a-mac.md)
+- [Virtualize macOS on a Mac](./virtualize-macos-on-a-mac.md)
   Configure and run macOS guests on Apple silicon.
-- [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
+- [Virtualize Linux on a Mac](./virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](./running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
-- [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
+- [Accelerating the performance of Rosetta](./accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
 
 

@@ -1,7 +1,8 @@
 # init(track:outputSettings:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that reads media data from an asset track.
 
@@ -19,14 +20,21 @@ Creates an object that reads media data from an asset track.
 init(track: AVAssetTrack, outputSettings: [String : Any]?)
 ```
 
+```objc
+- (instancetype) initWithTrack:(AVAssetTrack *) track outputSettings:(NSDictionary<NSString *,id> *) outputSettings;
+```
+
 ## Parameters
 
 - `track`: The track from which to read media samples.
-- `outputSettings`: A dictionary of settings to use for sample output. Specify `nil` to receive samples in their storage format. You use keys and values from [`Audio settings`](audio-settings.md), [`Video settings`](video-settings.md), or [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer), depending on the media type and the output format you require.
+- `outputSettings`: A dictionary of settings to use for sample output. Specify `nil` to receive samples in their storage format.
+
+  You use keys and values from [Audio settings](../audio-settings.md), [Video settings](../video-settings.md), or [`CVPixelBuffer`](../../CoreVideo/cvpixelbuffer.md), depending on the media type and the output format you require.
 
 ## See Also
 
-- [Video settings](video-settings.md)
+### Creating a track output
+- [Video settings](../video-settings.md)
   Configure video processing settings using standard key and value constants.
 
 

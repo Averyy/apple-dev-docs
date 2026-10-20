@@ -1,7 +1,8 @@
 # store(in:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores this type-erasing cancellable instance in the specified collection.
 
@@ -22,11 +23,12 @@ final func store<C>(in collection: inout C) where C : RangeReplaceableCollection
 
 ## Parameters
 
-- `collection`: The collection in which to store this [`AnyCancellable`](anycancellable.md).
+- `collection`: The collection in which to store this [`AnyCancellable`](../anycancellable.md).
 
 ## See Also
 
-- [func store(in: inout Set<AnyCancellable>)](anycancellable/store(in:)-3hyxs.md)
+### Storing instances
+- [func store(in: inout Set<AnyCancellable>)](./store%28in%29-3hyxs.md)
   Stores this type-erasing cancellable instance in the specified set.
 
 

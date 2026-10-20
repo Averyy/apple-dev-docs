@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.0+
@@ -14,7 +15,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [class var `default`: NSParagraphStyle](nsparagraphstyle/default.md)
+### Creating a paragraph style
+- [class var `default`: NSParagraphStyle](./default.md)
   The default paragraph style.
 
 

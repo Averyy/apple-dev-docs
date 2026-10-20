@@ -1,7 +1,8 @@
 # init(label:amount:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a summary item with the given label and amount.
 
@@ -19,9 +20,13 @@ Initializes and returns a summary item with the given label and amount.
 convenience init(label: String, amount: NSDecimalNumber)
 ```
 
+```objc
++ (instancetype) summaryItemWithLabel:(NSString *) label amount:(NSDecimalNumber *) amount;
+```
+
 #### Return Value
 
-A summary item with the given label and amount. The resulting item has a [`PKPaymentSummaryItemType.final`](pkpaymentsummaryitemtype/final.md) type.
+A summary item with the given label and amount. The resulting item has a [`PKPaymentSummaryItemType.final`](../pkpaymentsummaryitemtype/final.md) type.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ A summary item with the given label and amount. The resulting item has a [`PKPay
 
 ## See Also
 
-- [convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryItemType)](pkpaymentsummaryitem/init(label:amount:type:).md)
+### Creating  summary items
+- [convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryItemType)](./init%28label,amount,type%29.md)
   Initializes and returns a summary item with the given label, amount, and type.
 
 

@@ -1,18 +1,21 @@
 # previewDevice(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overrides the device for a preview.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.0+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.0
+- tvOS 13.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 6.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use the device picker in the Xcode preview canvas instead.
 
 ## Declaration
 
@@ -27,7 +30,7 @@ A preview that uses the given device.
 
 #### Discussion
 
-By default, Xcode automatically chooses a preview device based on your currently selected run destination. If you want to choose a device that doesn’t change based on Xcode settings, provide a [`PreviewDevice`](previewdevice.md) instance that you initialize with the name or model of a specific device:
+By default, Xcode automatically chooses a preview device based on your currently selected run destination. If you want to choose a device that doesn’t change based on Xcode settings, provide a [`PreviewDevice`](../previewdevice.md) instance that you initialize with the name or model of a specific device:
 
 ```swift
 struct CircleImage_Previews: PreviewProvider {
@@ -55,13 +58,14 @@ Additionally, you can use the following values for macOS platform development:
 
 ## See Also
 
-- [struct PreviewDevice](previewdevice.md)
+### Customizing a preview
+- [struct PreviewDevice](../previewdevice.md)
   A simulator device that runs a preview.
-- [func previewLayout(PreviewLayout) -> some View](view/previewlayout(_:).md)
+- [func previewLayout(PreviewLayout) -> some View](./previewlayout%28_%29.md)
   Overrides the size of the container for the preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
+- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](./previewinterfaceorientation%28_%29.md)
   Overrides the orientation of the preview.
-- [struct InterfaceOrientation](interfaceorientation.md)
+- [struct InterfaceOrientation](../interfaceorientation.md)
   The orientation of the interface from the user’s perspective.
 
 

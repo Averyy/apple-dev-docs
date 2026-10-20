@@ -1,7 +1,8 @@
 # Albums.Relationships.AlbumsLibraryRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the album to an associated library album.
 
@@ -10,7 +11,7 @@ A relationship from the album to an associated library album.
 
 ## Declaration
 
-```swift
+```
 object Albums.Relationships.AlbumsLibraryRelationship
 ```
 
@@ -22,13 +23,14 @@ object Albums.Relationships.AlbumsLibraryRelationship
 
 ## See Also
 
-- [object Albums.Relationships.AlbumsArtistsRelationship](albums/relationships-data.dictionary/albumsartistsrelationship.md)
+### Related Objects
+- [object Albums.Relationships.AlbumsArtistsRelationship](./albumsartistsrelationship.md)
   A relationship from the album to its artists.
-- [object Albums.Relationships.AlbumsGenresRelationship](albums/relationships-data.dictionary/albumsgenresrelationship.md)
+- [object Albums.Relationships.AlbumsGenresRelationship](./albumsgenresrelationship.md)
   A relationship from the album to its genres.
-- [object Albums.Relationships.AlbumsTracksRelationship](albums/relationships-data.dictionary/albumstracksrelationship.md)
+- [object Albums.Relationships.AlbumsTracksRelationship](./albumstracksrelationship.md)
   A relationship from the album to its tracks.
-- [object Albums.Relationships.AlbumsRecordLabelsRelationship](albums/relationships-data.dictionary/albumsrecordlabelsrelationship.md)
+- [object Albums.Relationships.AlbumsRecordLabelsRelationship](./albumsrecordlabelsrelationship.md)
   A relationship from the album to its associated record label.
 
 

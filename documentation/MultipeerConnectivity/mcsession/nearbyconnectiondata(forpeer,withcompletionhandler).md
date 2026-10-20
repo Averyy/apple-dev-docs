@@ -1,7 +1,8 @@
 # nearbyConnectionData(forPeer:withCompletionHandler:)
 
 **Framework**: Multipeer Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains connection data for the specified peer.
 
@@ -16,16 +17,28 @@ Obtains connection data for the specified peer.
 ## Declaration
 
 ```swift
+func nearbyConnectionData(forPeer peerID: MCPeerID, withCompletionHandler completionHandler: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func nearbyConnectionData(forPeer peerID: MCPeerID) async throws -> Data
+```
+
+```objc
+- (void) nearbyConnectionDataForPeer:(MCPeerID *) peerID withCompletionHandler:(void (^)(NSData *connectionData, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func nearbyConnectionData(forPeer peerID: MCPeerID) async throws -> Data
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func nearbyConnectionData(forPeer peerID: MCPeerID) async throws -> Data
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-This method provides connection data that is required when adding a specific nearby peer to a session if you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. For more information, see the [`Managing Peers Manually`](mcsession#Managing-Peers-Manually.md) section in the overview of the `MCSession` class reference.
+This method provides connection data that is required when adding a specific nearby peer to a session if you are using your own service discovery code instead of an `MCNearbyServiceBrowser` or `MCBrowserViewController` object. For more information, see the [Managing Peers Manually](../mcsession.md#Managing-Peers-Manually) section in the overview of the `MCSession` class reference.
 
 ## Parameters
 
@@ -34,11 +47,12 @@ This method provides connection data that is required when adding a specific nea
 
 ## See Also
 
-- [func connectPeer(MCPeerID, withNearbyConnectionData: Data)](mcsession/connectpeer(_:withnearbyconnectiondata:).md)
+### Managing Peers Manually
+- [func connectPeer(MCPeerID, withNearbyConnectionData: Data)](./connectpeer%28_,withnearbyconnectiondata%29.md)
   Call this method to connect a peer to the session when using your own service discovery code instead of an  `MCNearbyServiceBrowser` or `MCBrowserViewController` object.
-- [func cancelConnectPeer(MCPeerID)](mcsession/cancelconnectpeer(_:).md)
+- [func cancelConnectPeer(MCPeerID)](./cancelconnectpeer%28_%29.md)
   Cancels an attempt to connect to a peer.
-- [var connectedPeers: [MCPeerID]](mcsession/connectedpeers.md)
+- [var connectedPeers: [MCPeerID]](./connectedpeers.md)
   An array of all peers that are currently connected to this session.
 
 

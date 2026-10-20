@@ -1,7 +1,8 @@
 # colorSpaceDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the color space of the screen has changed.
 
@@ -14,11 +15,15 @@ Posted when the color space of the screen has changed.
 class let colorSpaceDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSScreenColorSpaceDidChangeNotification;
+```
+
 #### Discussion
 
-The notification object is the [`NSScreen`](nsscreen.md) object whose [`colorSpace`](nsscreen/colorspace.md) has changed.. This notification does not contain a `userInfo` dictionary.
+The notification object is the [`NSScreen`](../nsscreen.md) object whose [`colorSpace`](./colorspace.md) has changed.. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSScreen.ColorSpaceDidChangeMessage`](nsscreen/colorspacedidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSScreen.ColorSpaceDidChangeMessage`](./colorspacedidchangemessage.md).
 
 
 ---

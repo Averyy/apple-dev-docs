@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the system supports connecting to a continuity device.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the system supports connecting to a conti
 
 ```swift
 class var isSupported: Bool { get }
+```
+
+```objc
+@property (class, readonly, getter=isSupported) BOOL supported;
 ```
 
 

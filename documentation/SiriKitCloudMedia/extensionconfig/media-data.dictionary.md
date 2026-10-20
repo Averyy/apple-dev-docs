@@ -1,7 +1,8 @@
 # ExtensionConfig.Media
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Instructions for accessing your service’s media endpoints.
 
@@ -10,14 +11,14 @@ Instructions for accessing your service’s media endpoints.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media
 ```
 
 ## Topics
 
 ### Describing Supported Media Queue Endpoints
-- [object ExtensionConfig.Media.Queues](extensionconfig/media-data.dictionary/queues-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues](./media-data.dictionary/queues-data.dictionary.md)
   Configuration details for your service’s media queue.
 
 ## Properties

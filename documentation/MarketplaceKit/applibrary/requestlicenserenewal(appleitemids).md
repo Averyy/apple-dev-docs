@@ -1,7 +1,8 @@
 # requestLicenseRenewal(appleItemIDs:)
 
 **Framework**: MarketplaceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the system to request an updated app license from your marketplace server for the given app identifier.
 
@@ -18,7 +19,8 @@ final func requestLicenseRenewal(appleItemIDs: [UInt64]) async throws
 
 ## See Also
 
-- [func requestAppUpdate(AppLibrary.InstallationRequest) async throws](applibrary/requestappupdate(_:).md)
+### Updating apps
+- [func requestAppUpdate(AppLibrary.InstallationRequest) async throws](./requestappupdate%28_%29.md)
   Requests an app update for the given app distribution package and account information.
 
 

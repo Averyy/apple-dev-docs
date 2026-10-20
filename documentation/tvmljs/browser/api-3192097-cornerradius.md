@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The corner radius of each full screen browser item.
 
@@ -10,15 +11,16 @@ The corner radius of each full screen browser item.
 
 ## Declaration
 
-```swift
+```
 attribute double cornerRadius;
 ```
 
 ## See Also
 
-- [maskInset](browser/3192099-maskinset.md)
+### Modifying a Browser
+- [maskInset](./api-3192099-maskinset.md)
   The insets from the edges of the full screen layout.
-- [interitemSpacing](browser/3192098-interitemspacing.md)
+- [interitemSpacing](./api-3192098-interitemspacing.md)
   The spacing between full screen browser items.
 
 

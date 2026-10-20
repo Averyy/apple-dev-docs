@@ -1,14 +1,15 @@
 # kATAInvalidDeviceID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAInvalidDeviceID = -1
 ```
 

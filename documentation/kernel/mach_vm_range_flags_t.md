@@ -1,14 +1,15 @@
 # mach_vm_range_flags_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum mach_vm_range_flags_t : uint64_t {
     ...
 } mach_vm_range_flags_t;
@@ -17,7 +18,7 @@ typedef enum mach_vm_range_flags_t : uint64_t {
 ## Topics
 
 ### Constants
-- [MACH_VM_RANGE_NONE](mach_vm_range_flags_t/mach_vm_range_none.md)
+- [MACH_VM_RANGE_NONE](./mach_vm_range_flags_t/mach_vm_range_none.md)
 
 
 ---

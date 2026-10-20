@@ -1,9 +1,10 @@
 # keyAERecorderCount
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Used with the `keyword` parameter of the [`AEManagerInfo(_:_:)`](1449373-aemanagerinfo.md) function. If you pass this value, on return, the `result` parameter supplies the number of processes that are currently recording Apple events.
+Used with the `keyword` parameter of the [`AEManagerInfo(_:_:)`](./api-1449373-aemanagerinfo.md) function. If you pass this value, on return, the `result` parameter supplies the number of processes that are currently recording Apple events.
 
 **Availability**:
 - Mac Catalyst 13.0+

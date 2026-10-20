@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that represents the contents of the word pair.
 

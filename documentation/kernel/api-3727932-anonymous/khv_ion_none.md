@@ -1,14 +1,15 @@
 # kHV_ION_NONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kHV_ION_NONE = (0u << 0)
 ```
 

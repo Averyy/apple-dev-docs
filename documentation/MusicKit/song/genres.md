@@ -1,7 +1,8 @@
 # genres
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The song’s associated genres.
 

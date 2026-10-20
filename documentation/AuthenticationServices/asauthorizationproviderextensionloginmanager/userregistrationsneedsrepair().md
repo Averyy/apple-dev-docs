@@ -1,7 +1,8 @@
 # userRegistrationsNeedsRepair()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the user registration to run again so the current user can repair it.
 
@@ -14,11 +15,16 @@ Invokes the user registration to run again so the current user can repair it.
 func userRegistrationsNeedsRepair()
 ```
 
+```objc
+- (void) userRegistrationsNeedsRepair;
+```
+
 ## See Also
 
-- [func deviceRegistrationsNeedsRepair()](asauthorizationproviderextensionloginmanager/deviceregistrationsneedsrepair.md)
+### Repairing registrations
+- [func deviceRegistrationsNeedsRepair()](./deviceregistrationsneedsrepair%28%29.md)
   Invokes the device registration to run again so the current user can repair it.
-- [func resetKeys()](asauthorizationproviderextensionloginmanager/resetkeys.md)
+- [func resetKeys()](./resetkeys%28%29.md)
   Creates new encryption, signing, and Secure Enclave keys.
 
 

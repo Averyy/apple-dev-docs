@@ -1,7 +1,8 @@
 # kMDItemOrientation
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The orientation of the document contents. Possible values are 0 (landscape) and 1 (portrait). A CFNumber.
 
@@ -12,6 +13,10 @@ The orientation of the document contents. Possible values are 0 (landscape) and 
 
 ```swift
 let kMDItemOrientation: CFString!
+```
+
+```c
+const CFStringRef kMDItemOrientation;
 ```
 
 

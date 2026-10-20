@@ -1,7 +1,8 @@
 # level
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The log level of the entry.
 
@@ -20,9 +21,14 @@ The log level of the entry.
 var level: OSLogEntryLog.Level { get }
 ```
 
+```objc
+@property (nonatomic, readonly) OSLogEntryLogLevel level;
+```
+
 ## See Also
 
-- [OSLogEntryLog.Level](oslogentrylog/level-swift.enum.md)
+### Accessing Log Levels
+- [OSLogEntryLog.Level](./level-swift.enum.md)
   The log level at which the entry was generated.
 
 

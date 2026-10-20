@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel buffer of the passthrough frame.
 
@@ -16,7 +17,8 @@ let pixelBuffer: CVReadOnlyPixelBuffer
 
 ## See Also
 
-- [let timestamp: TimeInterval](cameraregionview/pixelbufferprocessingcontext/timestamp.md)
+### Specifying the context properties
+- [let timestamp: TimeInterval](./timestamp.md)
   The timestamp of the update.
 
 

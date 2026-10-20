@@ -1,18 +1,19 @@
 # MIDIPacketNext(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Advances a MIDI packet pointer to the next packet in a package list.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Advances a MIDI packet pointer to the next packet in a package list.
 func MIDIPacketNext(_ pkt: UnsafePointer<MIDIPacket>) -> UnsafeMutablePointer<MIDIPacket>
 ```
 
+```c
+static MIDIPacket *MIDIPacketNext(const MIDIPacket *pkt);
+```
+
 #### Return Value
 
-The subsequent packet in the [`MIDIPacketList`](midipacketlist.md).
+The subsequent packet in the [`MIDIPacketList`](./midipacketlist.md).
 
 ## Parameters
 
@@ -30,14 +35,15 @@ The subsequent packet in the [`MIDIPacketList`](midipacketlist.md).
 
 ## See Also
 
-- [struct MIDIPacket](midipacket.md)
+### Packet list management
+- [struct MIDIPacket](./midipacket.md)
   A collection of simultaneous MIDI events.
-- [struct MIDIPacketList](midipacketlist.md)
+- [struct MIDIPacketList](./midipacketlist.md)
   A list of MIDI events the system sends to or receives from an endpoint.
-- [typealias MIDITimeStamp](miditimestamp.md)
+- [typealias MIDITimeStamp](./miditimestamp.md)
   The time on the host clock when the event occurred.
-- [struct UnsafeMutableMIDIPacketListPointer](unsafemutablemidipacketlistpointer.md)
-- [struct UnsafeMutableMIDIPacketPointer](unsafemutablemidipacketpointer.md)
+- [struct UnsafeMutableMIDIPacketListPointer](./unsafemutablemidipacketlistpointer.md)
+- [struct UnsafeMutableMIDIPacketPointer](./unsafemutablemidipacketpointer.md)
 
 
 ---

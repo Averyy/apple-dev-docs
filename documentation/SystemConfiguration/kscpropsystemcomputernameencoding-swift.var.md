@@ -1,7 +1,8 @@
 # kSCPropSystemComputerNameEncoding
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The CompSystem key `ComputerNameEncoding`, whose value is of type `CFNumber`.
 
@@ -14,9 +15,14 @@ The CompSystem key `ComputerNameEncoding`, whose value is of type `CFNumber`.
 let kSCPropSystemComputerNameEncoding: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropSystemComputerNameEncoding;
+```
+
 ## See Also
 
-- [let kSCPropSystemComputerName: CFString](kscpropsystemcomputername-swift.var.md)
+### Constants
+- [let kSCPropSystemComputerName: CFString](./kscpropsystemcomputername-swift.var.md)
   The CompSystem key `ComputerName`, whose value is of type `CFString`.
 
 

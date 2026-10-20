@@ -1,14 +1,15 @@
 # GameCenterAchievementImageV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementImageV2UpdateRequest.Data.Attributes
 ```
 

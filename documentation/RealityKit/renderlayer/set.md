@@ -1,7 +1,8 @@
 # RenderLayer.Set
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An unordered collection of unique render layers.
 
@@ -21,9 +22,9 @@ struct Set
 
 #### Overview
 
-[`RenderLayer.Set`](renderlayer/set.md) represents a group of layers - for example, the layers a light illuminates ([`layers`](directionallightcomponent/layers.md), [`layers`](pointlightcomponent/layers.md), [`layers`](spotlightcomponent/layers.md)) or the layers an entity participates in ([`layers`](renderlayercomponent/layers.md)).
+[`RenderLayer.Set`](./set.md) represents a group of layers - for example, the layers a light illuminates ([`layers`](../directionallightcomponent/layers.md), [`layers`](../pointlightcomponent/layers.md), [`layers`](../spotlightcomponent/layers.md)) or the layers an entity participates in ([`layers`](../renderlayercomponent/layers.md)).
 
-Create a [`RenderLayer.Set`](renderlayer/set.md) using an array literal:
+Create a [`RenderLayer.Set`](./set.md) using an array literal:
 
 ```swift
 let layers: RenderLayer.Set = [.defaultLayer, RenderLayer("com.myapp.hero")]
@@ -32,33 +33,33 @@ let layers: RenderLayer.Set = [.defaultLayer, RenderLayer("com.myapp.hero")]
 ## Topics
 
 ### Inspecting the set
-- [var count: Int](renderlayer/set/count.md)
+- [var count: Int](./set/count.md)
   The number of layers in the set.
-- [var isEmpty: Bool](renderlayer/set/isempty.md)
+- [var isEmpty: Bool](./set/isempty.md)
   A Boolean value indicating whether the set contains no layers.
-- [func contains(RenderLayer) -> Bool](renderlayer/set/contains(_:).md)
+- [func contains(RenderLayer) -> Bool](./set/contains%28_%29.md)
   Returns a Boolean value indicating whether the set contains the given layer.
 ### Initializers
-- [init()](renderlayer/set/init.md)
+- [init()](./set/init%28%29.md)
   Creates an empty set of render layers.
-- [init<S>(S)](renderlayer/set/init(_:).md)
+- [init<S>(S)](./set/init%28_%29.md)
   Creates a set of render layers from a sequence.
 ### Instance Methods
-- [func insert(RenderLayer) -> (inserted: Bool, memberAfterInsert: RenderLayer)](renderlayer/set/insert(_:).md)
+- [func insert(RenderLayer) -> (inserted: Bool, memberAfterInsert: RenderLayer)](./set/insert%28_%29.md)
   Inserts the given layer into the set.
-- [func remove(RenderLayer) -> RenderLayer?](renderlayer/set/remove(_:).md)
+- [func remove(RenderLayer) -> RenderLayer?](./set/remove%28_%29.md)
   Removes the given layer from the set if it exists.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

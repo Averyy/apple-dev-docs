@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Synchronization  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compares two values of this type to determine if they are equivalent to each other.
 

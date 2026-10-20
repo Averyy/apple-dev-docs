@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Unmounts this volume.
@@ -12,7 +13,15 @@ Unmounts this volume.
 ## Declaration
 
 ```swift
+func unmount(replyHandler reply: @escaping @Sendable () -> Void)
+```
+
+```swift
 func unmount() async
+```
+
+```objc
+- (void) unmountWithReplyHandler:(void (^)()) reply;
 ```
 
 #### Discussion

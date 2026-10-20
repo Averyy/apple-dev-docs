@@ -1,7 +1,8 @@
 # DataCue
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface DataCue
 ```
 
 ## Topics
 
 ### Instance Properties
-- [data](datacue/1631884-data.md)
-- [type](datacue/1777908-type.md)
-- [value](datacue/1777748-value.md)
+- [data](./datacue/api-1631884-data.md)
+- [type](./datacue/api-1777908-type.md)
+- [value](./datacue/api-1777748-value.md)
 
 ## Relationships
 
 ### Inherits From
-- [TextTrackCue](texttrackcue.md)
+- [TextTrackCue](./texttrackcue.md)
 
 
 ---

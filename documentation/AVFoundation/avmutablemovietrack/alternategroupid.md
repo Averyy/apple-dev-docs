@@ -1,7 +1,8 @@
 # alternateGroupID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that identifies the track as a member of a particular alternate group.
 
@@ -19,13 +20,18 @@ A number that identifies the track as a member of a particular alternate group.
 var alternateGroupID: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger alternateGroupID;
+```
+
 ## See Also
 
-- [var isModified: Bool](avmutablemovietrack/ismodified.md)
+### Configuring track information
+- [var isModified: Bool](./ismodified.md)
   A Boolean value that indicates whether a track is in a modified state.
-- [var mediaDataStorage: AVMediaDataStorage?](avmutablemovietrack/mediadatastorage.md)
+- [var mediaDataStorage: AVMediaDataStorage?](./mediadatastorage.md)
   A storage container for the media data to be added to a track.
-- [var sampleReferenceBaseURL: URL?](avmutablemovietrack/samplereferencebaseurl.md)
+- [var sampleReferenceBaseURL: URL?](./samplereferencebaseurl.md)
   The base URL for sample references.
 
 

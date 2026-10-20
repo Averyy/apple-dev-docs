@@ -1,7 +1,8 @@
 # kCMFormatDescriptionTransferFunction_ITU_R_2020
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that describes the ITU R 2020 transfer function format.
 
@@ -20,14 +21,19 @@ A constant that describes the ITU R 2020 transfer function format.
 let kCMFormatDescriptionTransferFunction_ITU_R_2020: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionTransferFunction_ITU_R_2020;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionTransferFunction_ITU_R_709_2: CFString](kcmformatdescriptiontransferfunction_itu_r_709_2-swift.var.md)
+### Constants
+- [let kCMFormatDescriptionTransferFunction_ITU_R_709_2: CFString](./kcmformatdescriptiontransferfunction_itu_r_709_2-swift.var.md)
   A constant that describes the ITU R 709 2 transfer function format.
-- [let kCMFormatDescriptionTransferFunction_SMPTE_240M_1995: CFString](kcmformatdescriptiontransferfunction_smpte_240m_1995-swift.var.md)
+- [let kCMFormatDescriptionTransferFunction_SMPTE_240M_1995: CFString](./kcmformatdescriptiontransferfunction_smpte_240m_1995-swift.var.md)
   A constant that describes the SMPTE 240M 1995 transfer function format.
-- [let kCMFormatDescriptionTransferFunction_SMPTE_ST_428_1: CFString](kcmformatdescriptiontransferfunction_smpte_st_428_1.md)
-- [let kCMFormatDescriptionTransferFunction_UseGamma: CFString](kcmformatdescriptiontransferfunction_usegamma-swift.var.md)
+- [let kCMFormatDescriptionTransferFunction_SMPTE_ST_428_1: CFString](./kcmformatdescriptiontransferfunction_smpte_st_428_1.md)
+- [let kCMFormatDescriptionTransferFunction_UseGamma: CFString](./kcmformatdescriptiontransferfunction_usegamma-swift.var.md)
   A constant that describes the gamma transfer function format.
 
 

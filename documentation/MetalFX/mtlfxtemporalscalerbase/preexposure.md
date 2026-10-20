@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A pre-exposure value this scaler evaluates.
@@ -20,9 +21,13 @@ A pre-exposure value this scaler evaluates.
 var preExposure: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float preExposure;
+```
+
 #### Discussion
 
-If the input color texture you assign to [`colorTexture`](mtlfxtemporalscalerbase/colortexture.md) is pre-multiplied by fixed value, set this property to that same fixed value so MetalFX divides input color by it. This is not a common situation and you typically don’t need to assign a value to this property.
+If the input color texture you assign to [`colorTexture`](./colortexture.md) is pre-multiplied by fixed value, set this property to that same fixed value so MetalFX divides input color by it. This is not a common situation and you typically don’t need to assign a value to this property.
 
 
 ---

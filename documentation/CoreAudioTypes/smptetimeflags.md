@@ -1,7 +1,8 @@
 # SMPTETimeFlags
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines SMPTE time flags.
 
@@ -20,31 +21,36 @@ A structure that defines SMPTE time flags.
 struct SMPTETimeFlags
 ```
 
+```c
+enum SMPTETimeFlags : UInt32;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](smptetimeflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./smptetimeflags/init%28rawvalue%29.md)
 ### Type Properties
-- [static var running: SMPTETimeFlags](smptetimeflags/running.md)
-- [static var valid: SMPTETimeFlags](smptetimeflags/valid.md)
+- [static var running: SMPTETimeFlags](./smptetimeflags/running.md)
+- [static var valid: SMPTETimeFlags](./smptetimeflags/valid.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct SMPTETime](smptetime.md)
+### SMPTE Time
+- [struct SMPTETime](./smptetime.md)
   A structure that defines an SMPTE time value.
-- [enum SMPTETimeType](smptetimetype.md)
+- [enum SMPTETimeType](./smptetimetype.md)
   Constants that define SMPTE time types.
 
 

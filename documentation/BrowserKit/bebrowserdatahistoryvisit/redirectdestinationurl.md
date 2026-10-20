@@ -1,7 +1,8 @@
 # redirectDestinationURL
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to which the visit redirects.
 
@@ -15,13 +16,18 @@ A URL to which the visit redirects.
 var redirectDestinationURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * redirectDestinationURL;
+```
+
 ## See Also
 
-- [var redirectDestinationDateOfVisit: Date?](bebrowserdatahistoryvisit/redirectdestinationdateofvisit.md)
+### Managing redirect information
+- [var redirectDestinationDateOfVisit: Date?](./redirectdestinationdateofvisit.md)
   The date of the redirect destination visit.
-- [var redirectSourceDateOfVisit: Date?](bebrowserdatahistoryvisit/redirectsourcedateofvisit.md)
+- [var redirectSourceDateOfVisit: Date?](./redirectsourcedateofvisit.md)
   The date of the redirect source visit.
-- [var redirectSourceURL: URL?](bebrowserdatahistoryvisit/redirectsourceurl.md)
+- [var redirectSourceURL: URL?](./redirectsourceurl.md)
   A URL that redirects to the visited page.
 
 

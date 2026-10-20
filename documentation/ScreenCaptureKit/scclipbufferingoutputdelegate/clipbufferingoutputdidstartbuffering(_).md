@@ -1,7 +1,8 @@
 # clipBufferingOutputDidStartBuffering(_:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func clipBufferingOutputDidStartBuffering(_ clipBufferingOutput: SCClipBufferingOutput)
+```
+
+```objc
+- (void) clipBufferingOutputDidStartBuffering:(SCClipBufferingOutput *) clipBufferingOutput;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # root
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The root menu.
 
@@ -16,6 +17,10 @@ The root menu.
 
 ```swift
 static let root: UIMenu.Identifier
+```
+
+```c
+extern UIMenuIdentifier const UIMenuRoot;
 ```
 
 

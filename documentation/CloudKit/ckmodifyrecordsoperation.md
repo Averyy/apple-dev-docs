@@ -1,7 +1,8 @@
 # CKModifyRecordsOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that modifies one or more records.
 
@@ -10,7 +11,7 @@ An operation that modifies one or more records.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,76 +21,81 @@ An operation that modifies one or more records.
 class CKModifyRecordsOperation
 ```
 
+```objc
+@interface CKModifyRecordsOperation : CKDatabaseOperation
+```
+
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
+- [Encrypting User Data](./encrypting-user-data.md)
 
 #### Overview
 
 After modifying the fields of a record, use this operation to save those changes to a database. You also use this operation to delete records permanently from a database.
 
-If you’re saving a record that contains a reference to another record, set the reference’s [`action`](ckrecord/reference/action-swift.property.md) to indicate if the target record’s deletion should cascade to the saved record. This helps avoid orphaned records in explicit record hierarchies. When creating two new records that have a reference between them, use the same operation to save both records at the same time. During a save operation, CloudKit requires that the target record of the [`parent`](ckrecord/parent.md) reference, if set, exists in the database or is part of the same operation; all other reference fields are exempt from this requirement.
+If you’re saving a record that contains a reference to another record, set the reference’s [`action`](./ckrecord/reference/action-swift.property.md) to indicate if the target record’s deletion should cascade to the saved record. This helps avoid orphaned records in explicit record hierarchies. When creating two new records that have a reference between them, use the same operation to save both records at the same time. During a save operation, CloudKit requires that the target record of the [`parent`](./ckrecord/parent.md) reference, if set, exists in the database or is part of the same operation; all other reference fields are exempt from this requirement.
 
-When you save records, the value in the [`savePolicy`](ckmodifyrecordsoperation/savepolicy.md) property determines how to proceed when CloudKit detects conflicts. Because records can change between the time you fetch them and the time you save them, the save policy determines whether new changes overwrite existing changes. By default, the operation reports an error when there’s a newer version on the server. You can change the default setting to permit your changes to overwrite the server values wholly or partially.
+When you save records, the value in the [`savePolicy`](./ckmodifyrecordsoperation/savepolicy.md) property determines how to proceed when CloudKit detects conflicts. Because records can change between the time you fetch them and the time you save them, the save policy determines whether new changes overwrite existing changes. By default, the operation reports an error when there’s a newer version on the server. You can change the default setting to permit your changes to overwrite the server values wholly or partially.
 
 The handlers you assign to monitor progress of the operation execute serially on an internal queue that the operation manages. You must provide handlers capable of executing on a background thread, so any tasks that require access to the main thread must redirect accordingly.
 
-If you assign a completion handler to the [`completionBlock`](https://developer.apple.com/documentation/foundation/operation/completionblock) property of the operation, CloudKit calls it after the operation executes and returns the results. Use the completion handler to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The completion handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
+If you assign a completion handler to the [`completionBlock`](../Foundation/operation/completionblock.md) property of the operation, CloudKit calls it after the operation executes and returns the results. Use the completion handler to perform any housekeeping tasks for the operation, but don’t use it to process the results of the operation. The completion handler you provide should manage any failures of the operation, whether due to an error or an explicit cancellation.
 
-> ❗ **Important**: To ensure the speed of fetching and saving records, the server may reject large operations. When this occurs, a block reports the [`CKError.Code.limitExceeded`](ckerror/code/limitexceeded.md) error. Your app should handle this error, and refactor the operation into multiple smaller batches.
+> ❗ **Important**: To ensure the speed of fetching and saving records, the server may reject large operations. When this occurs, a block reports the [`CKError.Code.limitExceeded`](./ckerror/code/limitexceeded.md) error. Your app should handle this error, and refactor the operation into multiple smaller batches.
 
 ## Topics
 
 ### Creating a Modify Record Operation
-- [convenience init(recordsToSave: [CKRecord]?, recordIDsToDelete: [CKRecord.ID]?)](ckmodifyrecordsoperation/init(recordstosave:recordidstodelete:).md)
+- [convenience init(recordsToSave: [CKRecord]?, recordIDsToDelete: [CKRecord.ID]?)](./ckmodifyrecordsoperation/init%28recordstosave,recordidstodelete%29.md)
   Creates an operation for modifying the specified records.
-- [init()](ckmodifyrecordsoperation/init.md)
+- [init()](./ckmodifyrecordsoperation/init%28%29.md)
   Creates an empty modify records operation.
 ### Configuring the Modify Record Operation
-- [var recordsToSave: [CKRecord]?](ckmodifyrecordsoperation/recordstosave.md)
+- [var recordsToSave: [CKRecord]?](./ckmodifyrecordsoperation/recordstosave.md)
   The records to save to the database.
-- [var recordIDsToDelete: [CKRecord.ID]?](ckmodifyrecordsoperation/recordidstodelete.md)
+- [var recordIDsToDelete: [CKRecord.ID]?](./ckmodifyrecordsoperation/recordidstodelete.md)
   The IDs of the records to delete permanently from the database.
-- [var clientChangeTokenData: Data?](ckmodifyrecordsoperation/clientchangetokendata.md)
+- [var clientChangeTokenData: Data?](./ckmodifyrecordsoperation/clientchangetokendata.md)
   A token that tracks local changes to records.
-- [var isAtomic: Bool](ckmodifyrecordsoperation/isatomic.md)
+- [var isAtomic: Bool](./ckmodifyrecordsoperation/isatomic.md)
   A Boolean value that indicates whether the entire operation fails when CloudKit can’t update one or more records in a record zone.
-- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/savepolicy.md)
+- [var savePolicy: CKModifyRecordsOperation.RecordSavePolicy](./ckmodifyrecordsoperation/savepolicy.md)
   The policy to use when saving changes to records.
-- [CKModifyRecordsOperation.RecordSavePolicy](ckmodifyrecordsoperation/recordsavepolicy.md)
+- [CKModifyRecordsOperation.RecordSavePolicy](./ckmodifyrecordsoperation/recordsavepolicy.md)
   Constants that indicate which policy to apply when saving records.
 ### Processing the Modify Record Results
-- [var perRecordProgressBlock: ((CKRecord, Double) -> Void)?](ckmodifyrecordsoperation/perrecordprogressblock.md)
+- [var perRecordProgressBlock: ((CKRecord, Double) -> Void)?](./ckmodifyrecordsoperation/perrecordprogressblock.md)
   The closure to execute with progress information for individual records.
-- [var perRecordCompletionBlock: ((CKRecord, (any Error)?) -> Void)?](ckmodifyrecordsoperation/perrecordcompletionblock.md)
+- [var perRecordCompletionBlock: ((CKRecord, (any Error)?) -> Void)?](./ckmodifyrecordsoperation/perrecordcompletionblock.md)
   The closure to execute when CloudKit saves a record.
-- [var modifyRecordsCompletionBlock: (([CKRecord]?, [CKRecord.ID]?, (any Error)?) -> Void)?](ckmodifyrecordsoperation/modifyrecordscompletionblock.md)
+- [var modifyRecordsCompletionBlock: (([CKRecord]?, [CKRecord.ID]?, (any Error)?) -> Void)?](./ckmodifyrecordsoperation/modifyrecordscompletionblock.md)
   The closure to execute after CloudKit modifies all of the records.
 ### Instance Properties
-- [var modifyRecordsResultBlock: ((Result<Void, any Error>) -> Void)?](ckmodifyrecordsoperation/modifyrecordsresultblock.md)
+- [var modifyRecordsResultBlock: ((Result<Void, any Error>) -> Void)?](./ckmodifyrecordsoperation/modifyrecordsresultblock.md)
   The closure to execute after CloudKit modifies all of the records.
-- [var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](ckmodifyrecordsoperation/perrecorddeleteblock-9czoo.md)
+- [var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)?](./ckmodifyrecordsoperation/perrecorddeleteblock-9czoo.md)
   The closure to execute when CloudKit deletes a record.
-- [var perRecordSaveBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](ckmodifyrecordsoperation/perrecordsaveblock-7yq9d.md)
+- [var perRecordSaveBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](./ckmodifyrecordsoperation/perrecordsaveblock-7yq9d.md)
   The closure to execute when CloudKit saves a record.
 
 ## Relationships
 
 ### Inherits From
-- [CKDatabaseOperation](ckdatabaseoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKModifyRecordZonesOperation](ckmodifyrecordzonesoperation.md)
+### Transactions
+- [class CKModifyRecordZonesOperation](./ckmodifyrecordzonesoperation.md)
   An operation that modifies one or more record zones.
 
 

@@ -1,7 +1,8 @@
 # WINetworkSharingError.communicationFailure
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the app failed to communicate with the shared network system.
 

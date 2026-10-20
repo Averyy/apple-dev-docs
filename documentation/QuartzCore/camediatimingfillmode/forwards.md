@@ -1,7 +1,8 @@
 # forwards
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The receiver remains visible in its final state when the animation is completed.
 
@@ -19,13 +20,18 @@ The receiver remains visible in its final state when the animation is completed.
 static let forwards: CAMediaTimingFillMode
 ```
 
+```c
+extern CAMediaTimingFillMode const kCAFillModeForwards;
+```
+
 ## See Also
 
-- [static let removed: CAMediaTimingFillMode](camediatimingfillmode/removed.md)
+### Constants
+- [static let removed: CAMediaTimingFillMode](./removed.md)
   The receiver is removed from the presentation when the animation is completed.
-- [static let backwards: CAMediaTimingFillMode](camediatimingfillmode/backwards.md)
+- [static let backwards: CAMediaTimingFillMode](./backwards.md)
   The receiver clamps values before zero to zero when the animation is completed.
-- [static let both: CAMediaTimingFillMode](camediatimingfillmode/both.md)
+- [static let both: CAMediaTimingFillMode](./both.md)
   The receiver clamps values at both ends of the object’s time space
 
 

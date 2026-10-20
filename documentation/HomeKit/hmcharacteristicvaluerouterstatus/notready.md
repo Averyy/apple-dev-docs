@@ -1,7 +1,8 @@
 # HMCharacteristicValueRouterStatus.notReady
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The router isn’t ready.
 
@@ -19,9 +20,14 @@ The router isn’t ready.
 case notReady
 ```
 
+```c
+HMCharacteristicValueRouterStatusNotReady
+```
+
 ## See Also
 
-- [HMCharacteristicValueRouterStatus.ready](hmcharacteristicvaluerouterstatus/ready.md)
+### Router states
+- [HMCharacteristicValueRouterStatus.ready](./ready.md)
   The router is ready.
 
 

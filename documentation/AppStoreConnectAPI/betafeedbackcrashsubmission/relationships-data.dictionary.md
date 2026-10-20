@@ -1,7 +1,8 @@
 # BetaFeedbackCrashSubmission.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaFeedbackCrashSubmission.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaFeedbackCrashSubmission.Relationships.Build](betafeedbackcrashsubmission/relationships-data.dictionary/build-data.dictionary.md)
-- [object BetaFeedbackCrashSubmission.Relationships.CrashLog](betafeedbackcrashsubmission/relationships-data.dictionary/crashlog-data.dictionary.md)
-- [object BetaFeedbackCrashSubmission.Relationships.Tester](betafeedbackcrashsubmission/relationships-data.dictionary/tester-data.dictionary.md)
+- [object BetaFeedbackCrashSubmission.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
+- [object BetaFeedbackCrashSubmission.Relationships.CrashLog](./relationships-data.dictionary/crashlog-data.dictionary.md)
+- [object BetaFeedbackCrashSubmission.Relationships.Tester](./relationships-data.dictionary/tester-data.dictionary.md)
 
 ## Properties
 

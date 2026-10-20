@@ -7,13 +7,13 @@ Specify masks used for color spaces.
 ## Topics
 
 ### Constants
-- [var cmColorSpaceSpaceMask: Int](cmcolorspacespacemask.md)
-- [var cmColorSpacePremulAlphaMask: Int](cmcolorspacepremulalphamask.md)
-- [var cmColorSpaceAlphaMask: Int](cmcolorspacealphamask.md)
-- [var cmColorSpaceSpaceAndAlphaMask: Int](cmcolorspacespaceandalphamask.md)
-- [var cmColorSpacePackingMask: Int](cmcolorspacepackingmask.md)
-- [var cmColorSpaceEncodingMask: Int](cmcolorspaceencodingmask.md)
-- [var cmColorSpaceReservedMask: Int](cmcolorspacereservedmask.md)
+- [var cmColorSpaceSpaceMask: Int](../cmcolorspacespacemask.md)
+- [var cmColorSpacePremulAlphaMask: Int](../cmcolorspacepremulalphamask.md)
+- [var cmColorSpaceAlphaMask: Int](../cmcolorspacealphamask.md)
+- [var cmColorSpaceSpaceAndAlphaMask: Int](../cmcolorspacespaceandalphamask.md)
+- [var cmColorSpacePackingMask: Int](../cmcolorspacepackingmask.md)
+- [var cmColorSpaceEncodingMask: Int](../cmcolorspaceencodingmask.md)
+- [var cmColorSpaceReservedMask: Int](../cmcolorspacereservedmask.md)
 
 
 ---

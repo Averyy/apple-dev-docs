@@ -1,14 +1,15 @@
 # sr_cnp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 struct componentname *sr_cnp;
 ```
 

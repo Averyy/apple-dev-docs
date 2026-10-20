@@ -1,7 +1,8 @@
 # totalSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total amount of storage space, in bytes, that’s available on the external storage device.
 
@@ -18,24 +19,29 @@ The total amount of storage space, in bytes, that’s available on the external 
 var totalSize: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger totalSize;
+```
+
 #### Discussion
 
 The value is `-1` when the system can’t retrieve information from external storage device.
 
 ## See Also
 
-- [var isConnected: Bool](avexternalstoragedevice/isconnected.md)
+### Inspecting a storage device
+- [var isConnected: Bool](./isconnected.md)
   A Boolean value that indicates whether the system has a connection to the external storage device.
-- [var displayName: String?](avexternalstoragedevice/displayname.md)
+- [var displayName: String?](./displayname.md)
   The name of an external storage device that’s appropriate for a user interface.
-- [var uuid: UUID?](avexternalstoragedevice/uuid.md)
+- [var uuid: UUID?](./uuid.md)
   The external storage device’s unique identifier.
-- [var freeSize: Int](avexternalstoragedevice/freesize.md)
+- [var freeSize: Int](./freesize.md)
   The amount of free storage space, in bytes, that’s available on the external storage device.
-- [var isNotRecommendedForCaptureUse: Bool](avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
+- [var isNotRecommendedForCaptureUse: Bool](./isnotrecommendedforcaptureuse.md)
   A Boolean value that indicates whether the external storage device is suitable for camera capture.
-- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
-- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](./reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./reasonnotrecommendedforcaptureuse.md)
 
 
 ---

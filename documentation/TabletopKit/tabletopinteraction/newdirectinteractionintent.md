@@ -1,7 +1,8 @@
 # TabletopInteraction.NewDirectInteractionIntent
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represent the developer’s intent when a new direct interaction is proposed by the system
 
@@ -17,23 +18,24 @@ struct NewDirectInteractionIntent
 ## Topics
 
 ### Rejecting the intent
-- [static let reject: TabletopInteraction.NewDirectInteractionIntent](tabletopinteraction/newdirectinteractionintent/reject.md)
+- [static let reject: TabletopInteraction.NewDirectInteractionIntent](./newdirectinteractionintent/reject.md)
   Return `reject` to indicate that interaction should not be started
 ### Accepting the intent
-- [static func accept(configuration: TabletopInteraction.Configuration, constants: TabletopInteraction.DirectInteractionConstants) -> TabletopInteraction.NewDirectInteractionIntent](tabletopinteraction/newdirectinteractionintent/accept(configuration:constants:).md)
+- [static func accept(configuration: TabletopInteraction.Configuration, constants: TabletopInteraction.DirectInteractionConstants) -> TabletopInteraction.NewDirectInteractionIntent](./newdirectinteractionintent/accept%28configuration,constants%29.md)
   Return `accept` to indicate that the interaction should be allowed to start and to specify its constants and initial configuration
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TabletopInteraction.NewInteractionIntent](tabletopinteraction/newinteractionintent.md)
-- [TabletopInteraction.NewIndirectInteractionIntent](tabletopinteraction/newindirectinteractionintent.md)
+### Handling interaction intents
+- [TabletopInteraction.NewInteractionIntent](./newinteractionintent.md)
+- [TabletopInteraction.NewIndirectInteractionIntent](./newindirectinteractionintent.md)
   An object that represent the developer’s intent when a new indirect interaction is proposed by the system
 
 

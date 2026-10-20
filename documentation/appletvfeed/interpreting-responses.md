@@ -1,6 +1,7 @@
 # Interpreting responses
 
-**Framework**: Apple TV Feed
+**Framework**: Apple TV Feed  
+**Role**: Article
 
 Learn about responses from the Apple Media Feed API to your Apple TV Feed requests.
 
@@ -8,7 +9,7 @@ Learn about responses from the Apple Media Feed API to your Apple TV Feed reques
 
 The Apple Media Feed API has two kinds of responses to requests for Apple TV Feed data: resource collections and errors. Learn how to interpret these responses.
 
-#### Understand a Response
+#### Understand a response
 
 Resource collection responses contain a `data` array and a `resources` object.
 
@@ -27,13 +28,14 @@ Default responses for common requests include the following:
 | The request isn’t supported as specified. | `400 (Bad Request)` | The `errors` array contains an error object for any identified problem. |
 | The request encounters errors on the server. | Any status code in the 500 range | The `errors` array contains error objects for the errors for any identified problems. |
 
-For more information, see [`Error object`](https://developer.apple.comhttps://developer.apple.com/documentation/applemusicapi/error) and [`HTTP status codes`](https://developer.apple.comhttps://developer.apple.com/documentation/applemusicapi/common_objects/http_status_codes).
+For more information, see [Error object](../AppleMusicAPI/error.md) and [HTTP status codes](../AppleMusicAPI/common_objects/http_status_codes.md).
 
 ## See Also
 
-- [Generating developer tokens](generating-developer-tokens.md)
+### Essentials
+- [Generating developer tokens](./generating-developer-tokens.md)
   Create a JSON Web Token to authorize your requests to the Apple Media Feed API.
-- [Requesting a feed export](requesting-a-feed-export.md)
+- [Requesting a feed export](./requesting-a-feed-export.md)
   Create requests for Apple TV Catalog metadata.
 
 

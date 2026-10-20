@@ -1,7 +1,8 @@
 # layerEffect(_:maxSampleOffset:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new view that applies `shader` to `self` as a filter on the raster layer created from `self`.
 
@@ -57,15 +58,16 @@ The function should return the color mapping to the destination pixel, typically
 
 ## See Also
 
-- [func colorEffect(Shader, isEnabled: Bool) -> some View](view/coloreffect(_:isenabled:).md)
+### Accessing Metal shaders
+- [func colorEffect(Shader, isEnabled: Bool) -> some View](./coloreffect%28_,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a filter effect on the color of each pixel.
-- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](view/distortioneffect(_:maxsampleoffset:isenabled:).md)
+- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](./distortioneffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
-- [struct Shader](shader.md)
+- [struct Shader](../shader.md)
   A reference to a function in a Metal shader library, along with its bound uniform argument values.
-- [struct ShaderFunction](shaderfunction.md)
+- [struct ShaderFunction](../shaderfunction.md)
   A reference to a function in a Metal shader library.
-- [struct ShaderLibrary](shaderlibrary.md)
+- [struct ShaderLibrary](../shaderlibrary.md)
   A Metal shader library.
 
 

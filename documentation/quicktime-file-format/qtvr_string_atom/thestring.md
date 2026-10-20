@@ -1,7 +1,8 @@
 # theString
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The string.
 
@@ -11,9 +12,10 @@ The string atom structure is extended to hold this string.
 
 ## See Also
 
-- [stringUsage](qtvr_string_atom/stringusage.md)
+### Data fields
+- [stringUsage](./stringusage.md)
   The string usage.
-- [stringLength](qtvr_string_atom/stringlength.md)
+- [stringLength](./stringlength.md)
   The length, in bytes, of the string.
 
 

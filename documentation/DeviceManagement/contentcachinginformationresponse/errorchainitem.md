@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -10,7 +11,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.ErrorChainItem
 ```
 
@@ -23,7 +24,8 @@ object ContentCachingInformationResponse.ErrorChainItem
 
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse](contentcachinginformationresponse/statusresponse-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse](./statusresponse-data.dictionary.md)
   A dictionary that contains the status of content caching on a device.
 
 

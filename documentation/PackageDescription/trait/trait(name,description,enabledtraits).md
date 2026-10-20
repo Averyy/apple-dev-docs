@@ -1,7 +1,8 @@
 # trait(name:description:enabledTraits:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a trait with a name, a description, and set of additional traits it enables.
 

@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date the subscription expires or renews.
 
@@ -22,13 +23,14 @@ let expirationDate: Date?
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
-- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](../managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
 
 ## See Also
 
-- [let purchaseDate: Date](transaction/purchasedate.md)
+### Getting purchase and expiration dates
+- [let purchaseDate: Date](./purchasedate.md)
   The date that the App Store charged the user’s account for a purchased or restored product, or for a subscription purchase or renewal after a lapse.
 
 

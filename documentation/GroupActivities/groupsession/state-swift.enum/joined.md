@@ -1,7 +1,8 @@
 # GroupSession.State.joined
 
 **Framework**: Group Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An active state that indicates the session allows data synchronization between devices.
 
@@ -21,17 +22,18 @@ case joined
 
 ## Mentions
 
-- [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
+- [Joining and managing a shared activity](../../joining-and-managing-a-shared-activity.md)
 
 #### Discussion
 
-Call the [`join()`](groupsession/join().md) method to begin the transition to this state. When the transition completes, use the session object to synchronize your app’s data with the other participants’ devices.
+Call the [`join()`](../join%28%29.md) method to begin the transition to this state. When the transition completes, use the session object to synchronize your app’s data with the other participants’ devices.
 
 ## See Also
 
-- [GroupSession.State.waiting](groupsession/state-swift.enum/waiting.md)
+### Session states
+- [GroupSession.State.waiting](./waiting.md)
   An idle state that indicates the session is waiting for the app to join the activity.
-- [GroupSession.State.invalidated(reason:)](groupsession/state-swift.enum/invalidated(reason:).md)
+- [GroupSession.State.invalidated(reason:)](./invalidated%28reason%29.md)
   A state that indicates the session is no longer valid and can’t be used for shared activities.
 
 

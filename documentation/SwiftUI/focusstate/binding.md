@@ -1,7 +1,8 @@
 # FocusState.Binding
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that can read and write a value that indicates the current focus location.
 
@@ -24,16 +25,17 @@ A property wrapper type that can read and write a value that indicates the curre
 ## Topics
 
 ### Inspecting the binding
-- [var projectedValue: FocusState<Value>.Binding](focusstate/binding/projectedvalue.md)
+- [var projectedValue: FocusState<Value>.Binding](./binding/projectedvalue.md)
   A projection of the binding value that returns a binding.
-- [var wrappedValue: Value](focusstate/binding/wrappedvalue.md)
+- [var wrappedValue: Value](./binding/wrappedvalue.md)
   The underlying value referenced by the bound property.
 
 ## See Also
 
-- [var projectedValue: FocusState<Value>.Binding](focusstate/projectedvalue.md)
+### Inspecting the focus state
+- [var projectedValue: FocusState<Value>.Binding](./projectedvalue.md)
   A projection of the focus state value that returns a binding.
-- [var wrappedValue: Value](focusstate/wrappedvalue.md)
+- [var wrappedValue: Value](./wrappedvalue.md)
   The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
 
 

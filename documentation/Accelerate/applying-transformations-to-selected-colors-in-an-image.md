@@ -1,6 +1,8 @@
 # Applying transformations to selected colors in an image
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [ApplyingTransformationsToSelectedColorsInAnImage.zip](https://docs-assets.developer.apple.com/published/9ddb19e8677b/ApplyingTransformationsToSelectedColorsInAnImage.zip)
 
 Desaturate a range of colors in an image with a multidimensional lookup table.
 
@@ -12,11 +14,11 @@ Desaturate a range of colors in an image with a multidimensional lookup table.
 
 This sample code app allows you to desaturate the colors in an image based on their similarity to a selected color. For example, the image below shows an original image (left) and the transformed image (right) where the app has transformed the cake sprinkles that aren’t yellow to grayscale.
 
-![A comparison of the original image of colorful cake sprinkles with its selectively-desaturated counterpart.](/images/com.apple.accelerate/comparison_2x.png)
+![A comparison of the original image of colorful cake sprinkles with its selectively-desaturated counterpart.](https://developer.apple.com/tutorials/images/com.apple.accelerate/comparison_2x.png)
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different transformations on the image. In the app, click the smaller image to select a color and the app displays the transformed result as the larger image.
 
-##### Create the Lookup Table Data
+##### Create the lookup table data
 
 The multidimensional lookup table that this sample code project uses is a 3D cube with `entriesPerChannel` values along each axis.
 
@@ -68,11 +70,11 @@ for red in ramp {
 }
 ```
 
-For more information about creating multidimensional lookup table data, see [`Applying color transforms to images with a multidimensional lookup table`](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md).
+For more information about creating multidimensional lookup table data, see [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md).
 
-##### Create the Multidimensional Lookup
+##### Create the multidimensional lookup
 
-The [`vImage.MultidimensionalLookupTable`](vimage/multidimensionallookuptable.md) structure uses the lookup table to transform the source image, either desaturating or darkening colors that aren’t close to the selected target color.
+The [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) structure uses the lookup table to transform the source image, either desaturating or darkening colors that aren’t close to the selected target color.
 
 The code below creates a multidimension lookup table structure, applies the lookup table to the three source planar buffers, and writes the result to the three destination buffers:
 
@@ -91,9 +93,9 @@ lookupTable.apply(sources: rgbSourceBuffers,
 
 The three destination planar buffers contain the transformed image.
 
-##### Create a Core Graphics Image
+##### Create a Core Graphics image
 
-The code below interleaves the three planar buffers into a single RGB buffer. Finally, the [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) function returns a Core Graphics image that the app displays in the user interface.
+The code below interleaves the three planar buffers into a single RGB buffer. Finally, the [`makeCGImage(cgImageFormat:)`](./vimage/pixelbuffer/makecgimage%28cgimageformat%29.md) function returns a Core Graphics image that the app displays in the user interface.
 
 ```swift
 interleavedDestinationBuffer.interleave(planarSourceBuffers: [ redDestinationBuffer,
@@ -103,25 +105,26 @@ interleavedDestinationBuffer.interleave(planarSourceBuffers: [ redDestinationBuf
 
 ## See Also
 
-- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+### Transforming with a multidimensional lookup table
+- [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
   Precompute translation values to optimize color space conversion and other pointwise operations.
-- [Cropping to the subject in a chroma-keyed image](cropping-to-the-subject-in-a-chroma-keyed-image.md)
+- [Cropping to the subject in a chroma-keyed image](./cropping-to-the-subject-in-a-chroma-keyed-image.md)
   Convert a chroma-key color to alpha values and trim transparent pixels using Accelerate.
-- [func vImageMultidimensionalTable_Create(UnsafePointer<UInt16>, UInt32, UInt32, UnsafePointer<UInt8>, vImageMDTableUsageHint, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> vImage_MultidimensionalTable!](vimagemultidimensionaltable_create(_:_:_:_:_:_:_:).md)
+- [func vImageMultidimensionalTable_Create(UnsafePointer<UInt16>, UInt32, UInt32, UnsafePointer<UInt8>, vImageMDTableUsageHint, vImage_Flags, UnsafeMutablePointer<vImage_Error>!) -> vImage_MultidimensionalTable!](./vimagemultidimensionaltable_create%28_,_,_,_,_,_,_%29.md)
   Creates a multidimensional lookup table.
-- [func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md)
+- [func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](./vimagemultidimensionalinterpolatedlookuptable_planarf%28_,_,_,_,_,_%29.md)
   Uses a multidimensional lookup table to transform a 32-bit planar image.
-- [func vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](vimagemultidimensionalinterpolatedlookuptable_planar16q12(_:_:_:_:_:_:).md)
+- [func vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](./vimagemultidimensionalinterpolatedlookuptable_planar16q12%28_,_,_,_,_,_%29.md)
   Uses a multidimensional lookup table to transform a 16Q12 planar image.
-- [func vImageMultidimensionalTable_Retain(vImage_MultidimensionalTable!) -> vImage_Error](vimagemultidimensionaltable_retain(_:).md)
+- [func vImageMultidimensionalTable_Retain(vImage_MultidimensionalTable!) -> vImage_Error](./vimagemultidimensionaltable_retain%28_%29.md)
   Retains a multidimensional table.
-- [func vImageMultidimensionalTable_Release(vImage_MultidimensionalTable!) -> vImage_Error](vimagemultidimensionaltable_release(_:).md)
+- [func vImageMultidimensionalTable_Release(vImage_MultidimensionalTable!) -> vImage_Error](./vimagemultidimensionaltable_release%28_%29.md)
   Releases a multidimensional table.
-- [typealias vImage_MultidimensionalTable](vimage_multidimensionaltable.md)
+- [typealias vImage_MultidimensionalTable](./vimage_multidimensionaltable.md)
   An opaque pointer that represents a multidimensional lookup table.
-- [struct vImageMDTableUsageHint](vimagemdtableusagehint.md)
+- [struct vImageMDTableUsageHint](./vimagemdtableusagehint.md)
   Constants that indicate the use for a multidimensional lookup table.
-- [struct vImage_InterpolationMethod](vimage_interpolationmethod.md)
+- [struct vImage_InterpolationMethod](./vimage_interpolationmethod.md)
   Constants that represent different interpolation methods.
 
 

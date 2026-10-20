@@ -1,7 +1,8 @@
 # edgeRadius
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the rounded edges.
 
@@ -22,7 +23,8 @@ Must be non-negative; negative values are clamped to zero.
 
 ## See Also
 
-- [var size: SIMD3<Float>](clothroundedboxshape/size.md)
+### Configuring the geometry
+- [var size: SIMD3<Float>](./size.md)
   The size of the box along each axis.
 
 

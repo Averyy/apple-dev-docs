@@ -1,7 +1,8 @@
 # frequency
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that determines the number and size of cells in generated noise.
 
@@ -19,6 +20,10 @@ A value that determines the number and size of cells in generated noise.
 var frequency: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double frequency;
+```
+
 #### Discussion
 
 A Voronoi noise source generates a field of noise values by randomly picking seed points at random positions in a space, then dividing the space into cells so that all the points in a cell are closer to that cell’s seed point than to any other seed point.
@@ -27,11 +32,12 @@ Increasing frequency increases the number of seed points in any given unit area 
 
 ## See Also
 
-- [var displacement: Double](gkvoronoinoisesource/displacement.md)
+### Managing Noise Generation Parameters
+- [var displacement: Double](./displacement.md)
   The range of random values to assign to each cell in generated noise.
-- [var isDistanceEnabled: Bool](gkvoronoinoisesource/isdistanceenabled.md)
+- [var isDistanceEnabled: Bool](./isdistanceenabled.md)
   A Boolean value that specifies whether generated noise values incorporate the distance from each point to the nearest seed point.
-- [var seed: Int32](gkvoronoinoisesource/seed.md)
+- [var seed: Int32](./seed.md)
   The value that determines the specific configuration of noise produced by the noise source.
 
 

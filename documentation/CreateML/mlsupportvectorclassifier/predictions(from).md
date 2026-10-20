@@ -1,17 +1,24 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts a column of labels for the given testing data.
 
 **Availability**:
-- macOS 12.0+
+- macOS 12.0+ - Deprecated in 14.0
 
 ## Declaration
 
 ```swift
 func predictions(from data: DataFrame) throws -> AnyColumn
+```
+
+**Other overloads**:
+
+```swift
+func predictions(from data: MLDataTable) throws -> MLUntypedColumn
 ```
 
 

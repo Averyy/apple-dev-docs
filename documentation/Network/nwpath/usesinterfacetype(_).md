@@ -1,7 +1,8 @@
 # usesInterfaceType(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if connections using the path may send traffic over a specific interface type.
 
@@ -26,9 +27,10 @@ Paths can use interface types by directly routing over an interface, routing thr
 
 ## See Also
 
-- [let availableInterfaces: [NWInterface]](nwpath/availableinterfaces.md)
+### Inspecting Interfaces
+- [let availableInterfaces: [NWInterface]](./availableinterfaces.md)
   A list of all interfaces available to the path, in order of preference.
-- [var gateways: [NWEndpoint]](nwpath/gateways.md)
+- [var gateways: [NWEndpoint]](./gateways.md)
   A list of gateways configured on the interfaces available to a path.
 
 

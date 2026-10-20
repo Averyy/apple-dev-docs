@@ -1,7 +1,8 @@
 # setParameter(handle:value:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of a parameter identified by a handle.
 
@@ -21,23 +22,24 @@ mutating func setParameter(handle: MaterialParameters.Handle, value newValue: Ma
 
 #### Discussion
 
-Use this overload alongside [`parameterHandle(name:)`](portalmaterial/parameterhandle(name:).md) when you update the same parameter often enough that avoiding repeated name lookups matters. For one-off updates, [`setParameter(name:value:)`](portalmaterial/setparameter(name:value:).md) is more readable.
+Use this overload alongside [`parameterHandle(name:)`](./parameterhandle%28name%29.md) when you update the same parameter often enough that avoiding repeated name lookups matters. For one-off updates, [`setParameter(name:value:)`](./setparameter%28name,value%29.md) is more readable.
 
-> **Note**: An error if the parameter doesn’t exist on this material’s program, or if the value’s type doesn’t match the parameter’s declared type.
+> **Throws**: An error if the parameter doesn’t exist on this material’s program, or if the value’s type doesn’t match the parameter’s declared type.
 
 ## Parameters
 
-- `handle`: A handle previously returned by [`parameterHandle(name:)`](portalmaterial/parameterhandle(name:).md).
+- `handle`: A handle previously returned by [`parameterHandle(name:)`](./parameterhandle%28name%29.md).
 
 ## See Also
 
-- [func getParameter(name: String) -> MaterialParameters.Value?](portalmaterial/getparameter(name:).md)
+### Accessing shader parameters
+- [func getParameter(name: String) -> MaterialParameters.Value?](./getparameter%28name%29.md)
   Returns the value of a parameter by name.
-- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](portalmaterial/getparameter(handle:).md)
+- [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](./getparameter%28handle%29.md)
   Returns the value of a parameter identified by a handle.
-- [func setParameter(name: String, value: MaterialParameters.Value) throws](portalmaterial/setparameter(name:value:).md)
+- [func setParameter(name: String, value: MaterialParameters.Value) throws](./setparameter%28name,value%29.md)
   Sets the value of a parameter by name.
-- [static func parameterHandle(name: String) -> MaterialParameters.Handle](portalmaterial/parameterhandle(name:).md)
+- [static func parameterHandle(name: String) -> MaterialParameters.Handle](./parameterhandle%28name%29.md)
   Returns a handle for the parameter with the given name.
 
 

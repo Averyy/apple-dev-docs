@@ -1,12 +1,15 @@
 # forward
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Future data support. Use this option when it makes sense to provide future data for your complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Future data support. Use this option when it makes sense to provide future data 
 static var forward: CLKComplicationTimeTravelDirections { get }
 ```
 
+```c
+CLKComplicationTimeTravelDirectionForward
+```
+
 ## Mentions
 
-- [Loading future timeline events](loading-future-timeline-events.md)
+- [Loading future timeline events](../loading-future-timeline-events.md)
 
 ## See Also
 
-- [static var backward: CLKComplicationTimeTravelDirections](clkcomplicationtimetraveldirections/backward.md)
+### Constants
+- [static var backward: CLKComplicationTimeTravelDirections](./backward.md)
   Past data support. Use this option when it makes sense to provide past data for your complication.
 
 

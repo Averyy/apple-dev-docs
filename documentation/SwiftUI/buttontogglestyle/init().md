@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button toggle style.
 
@@ -22,7 +23,7 @@ init()
 
 #### Discussion
 
-Don’t call this initializer directly. Instead, use the [`button`](togglestyle/button.md) static variable to create this style:
+Don’t call this initializer directly. Instead, use the [`button`](../togglestyle/button.md) static variable to create this style:
 
 ```swift
 Toggle(isOn: $isFlagged) {

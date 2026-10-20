@@ -1,7 +1,8 @@
 # additionalInfo
 
 **Framework**: Trust Insights  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the evaluation.
 
@@ -17,15 +18,16 @@ final let additionalInfo: [String : String]
 
 ## See Also
 
-- [let generationTimestamp: Date](insightevaluation/generationtimestamp.md)
+### Evaluation properties
+- [let generationTimestamp: Date](./generationtimestamp.md)
   The timestamp that indicates when the framework created the on-device portion of the assessment, in UTC.
-- [let insight: (repeat each InsightResult)](insightevaluation/insight.md)
+- [let insight: (repeat each InsightResult)](./insight.md)
   Result values and errors for the requested insights.
-- [var requestID: String?](insightevaluation/requestid.md)
+- [var requestID: String?](./requestid.md)
   An app defined identifier.
-- [let serverTimestamp: Date](insightevaluation/servertimestamp.md)
+- [let serverTimestamp: Date](./servertimestamp.md)
   The server-side timestamp that indicates when the server processed the evaluation, in UTC.
-- [let signedPayload: Data](insightevaluation/signedpayload.md)
+- [let signedPayload: Data](./signedpayload.md)
   A signed data object that contains details about the insight.
 
 

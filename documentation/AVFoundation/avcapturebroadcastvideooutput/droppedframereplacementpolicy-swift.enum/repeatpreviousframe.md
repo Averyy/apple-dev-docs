@@ -1,7 +1,8 @@
 # AVCaptureBroadcastVideoOutput.DroppedFrameReplacementPolicy.repeatPreviousFrame
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Repeat the previous frame as replacement. When a frame is dropped, the most recent successfully output frame is repeated at the expected presentation time. This is the default behavior and provides smoother visual continuity.
 
@@ -16,6 +17,10 @@ Repeat the previous frame as replacement. When a frame is dropped, the most rece
 
 ```swift
 case repeatPreviousFrame
+```
+
+```c
+AVCaptureBroadcastVideoOutputDroppedFrameReplacementPolicyRepeatPreviousFrame
 ```
 
 

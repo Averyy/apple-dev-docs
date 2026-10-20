@@ -1,16 +1,19 @@
 # offerPaymentModeStringRepresentation
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.0 (renamed: offer.paymentMode.rawValue)
+- iPadOS 15.0+ - Deprecated in 18.0 (renamed: offer.paymentMode.rawValue)
+- Mac Catalyst 15.0+ - Deprecated in 18.0 (renamed: offer.paymentMode.rawValue)
+- macOS 12.0+ - Deprecated in 15.0 (renamed: offer.paymentMode.rawValue)
+- tvOS 15.0+ - Deprecated in 18.0 (renamed: offer.paymentMode.rawValue)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: offer.paymentMode.rawValue)
+- watchOS 8.0+ - Deprecated in 11.0 (renamed: offer.paymentMode.rawValue)
+
+> **Deprecated**: Use the offer property instead.
 
 ## Declaration
 
@@ -21,15 +24,16 @@ var offerPaymentModeStringRepresentation: String? { get }
 
 ## See Also
 
-- [var environmentStringRepresentation: String](product/subscriptioninfo/renewalinfo/environmentstringrepresentation.md)
+### Deprecated
+- [var environmentStringRepresentation: String](./environmentstringrepresentation.md)
   The string representation of the server environment that signs the renewal information for an auto-renewable subscription.
-- [var offerID: String?](product/subscriptioninfo/renewalinfo/offerid.md)
+- [var offerID: String?](./offerid.md)
   A string that identifies an offer that applies to the next subscription period.
-- [var offerType: Transaction.OfferType?](product/subscriptioninfo/renewalinfo/offertype.md)
+- [var offerType: Transaction.OfferType?](./offertype.md)
   The subscription offer type for the next subscription period.
-- [var currencyCode: String?](product/subscriptioninfo/renewalinfo/currencycode.md)
+- [var currencyCode: String?](./currencycode.md)
   The three-letter ISO 4217 currency code for the price of the product.
-- [var offerPeriodStringRepresentation: String?](product/subscriptioninfo/renewalinfo/offerperiodstringrepresentation.md)
+- [var offerPeriodStringRepresentation: String?](./offerperiodstringrepresentation.md)
   The string representation of the subscription offer period applied to the next billing period.
 
 

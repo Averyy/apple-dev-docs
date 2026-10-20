@@ -1,7 +1,8 @@
 # kUSBHostPortStatusConnectedSpeedHigh
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The high connected speed.
 
@@ -10,7 +11,7 @@ The high connected speed.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortStatusConnectedSpeedHigh = kIOUSBHostPortStatusConnectedSpeedHigh
 ```
 

@@ -1,7 +1,8 @@
 # GCControllerTouchpad
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A control element that represents a touch event on a touchpad.
 
@@ -19,6 +20,10 @@ A control element that represents a touch event on a touchpad.
 class GCControllerTouchpad
 ```
 
+```objc
+@interface GCControllerTouchpad : GCControllerElement
+```
+
 #### Overview
 
 A `GCControllerTouchpad` object provides the state of the touches and presses on a touchpad. This is a compound element with button and directional pad subelements.
@@ -26,55 +31,56 @@ A `GCControllerTouchpad` object provides the state of the touches and presses on
 ## Topics
 
 ### Getting the subelements
-- [var touchSurface: GCControllerDirectionPad](gccontrollertouchpad/touchsurface.md)
+- [var touchSurface: GCControllerDirectionPad](./gccontrollertouchpad/touchsurface.md)
   The element that represents the state of the user’s touch on the surface of the touchpad.
-- [var button: GCControllerButtonInput](gccontrollertouchpad/button.md)
+- [var button: GCControllerButtonInput](./gccontrollertouchpad/button.md)
   The element that represents the button component on the touchpad.
 ### Accessing the input values
-- [var touchState: GCControllerTouchpad.TouchState](gccontrollertouchpad/touchstate-swift.property.md)
+- [var touchState: GCControllerTouchpad.TouchState](./gccontrollertouchpad/touchstate-swift.property.md)
   The state of the user’s touch on the surface of the touchpad.
-- [GCControllerTouchpad.TouchState](gccontrollertouchpad/touchstate-swift.enum.md)
+- [GCControllerTouchpad.TouchState](./gccontrollertouchpad/touchstate-swift.enum.md)
   The possible states of the user’s touch.
-- [var reportsAbsoluteTouchSurfaceValues: Bool](gccontrollertouchpad/reportsabsolutetouchsurfacevalues.md)
+- [var reportsAbsoluteTouchSurfaceValues: Bool](./gccontrollertouchpad/reportsabsolutetouchsurfacevalues.md)
   A Boolean value that determines whether the touch values are absolute or relative.
 ### Getting change information
-- [var touchDown: GCControllerTouchpadHandler?](gccontrollertouchpad/touchdown.md)
+- [var touchDown: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchdown.md)
   The block that the element calls when the user begins touching the touchpad.
-- [var touchMoved: GCControllerTouchpadHandler?](gccontrollertouchpad/touchmoved.md)
+- [var touchMoved: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchmoved.md)
   The block that the element calls when the user continues touching the touchpad, not when the user begins or ends touching the touchpad.
-- [var touchUp: GCControllerTouchpadHandler?](gccontrollertouchpad/touchup.md)
+- [var touchUp: GCControllerTouchpadHandler?](./gccontrollertouchpad/touchup.md)
   The block that the element calls when the user finishes touching the touchpad.
-- [typealias GCControllerTouchpadHandler](gccontrollertouchpadhandler.md)
+- [typealias GCControllerTouchpadHandler](./gccontrollertouchpadhandler.md)
   The signature for the block that executes when the user interacts with the touchpad.
 ### Setting snapshot values
-- [func setValueForXAxis(Float, yAxis: Float, touchDown: Bool, buttonValue: Float)](gccontrollertouchpad/setvalueforxaxis(_:yaxis:touchdown:buttonvalue:).md)
+- [func setValueForXAxis(Float, yAxis: Float, touchDown: Bool, buttonValue: Float)](./gccontrollertouchpad/setvalueforxaxis%28_,yaxis,touchdown,buttonvalue%29.md)
   Sets the input values of a snapshot of a touchpad.
 
 ## Relationships
 
 ### Inherits From
-- [GCControllerElement](gccontrollerelement.md)
+- [GCControllerElement](./gccontrollerelement.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCControllerElement](gccontrollerelement.md)
+### Accessing controller elements
+- [class GCControllerElement](./gccontrollerelement.md)
   An input for a physical control, such as a button or thumbstick.
-- [class GCControllerAxisInput](gccontrolleraxisinput.md)
+- [class GCControllerAxisInput](./gccontrolleraxisinput.md)
   A control element that tracks movement along an axis.
-- [class GCControllerButtonInput](gccontrollerbuttoninput.md)
+- [class GCControllerButtonInput](./gccontrollerbuttoninput.md)
   A control element that represents a button touch or press.
-- [class GCControllerDirectionPad](gccontrollerdirectionpad.md)
+- [class GCControllerDirectionPad](./gccontrollerdirectionpad.md)
   A control element associated with a directional pad or a thumbstick.
-- [class GCDeviceCursor](gcdevicecursor.md)
+- [class GCDeviceCursor](./gcdevicecursor.md)
   A control element for the cursor used as a directional pad.
-- [class GCDualSenseAdaptiveTrigger](gcdualsenseadaptivetrigger.md)
+- [class GCDualSenseAdaptiveTrigger](./gcdualsenseadaptivetrigger.md)
   A class that encapsulates the features of a DualSense adaptive trigger.
 
 

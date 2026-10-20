@@ -1,14 +1,15 @@
 # mcc_ecc_version_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum mcc_ecc_version_t : unsigned int {
     ...
 } mcc_ecc_version_t;
@@ -17,8 +18,8 @@ typedef enum mcc_ecc_version_t : unsigned int {
 ## Topics
 
 ### Constants
-- [MCC_ECC_NUM_VERSIONS](mcc_ecc_version_t/mcc_ecc_num_versions.md)
-- [MCC_ECC_V1](mcc_ecc_version_t/mcc_ecc_v1.md)
+- [MCC_ECC_NUM_VERSIONS](./mcc_ecc_version_t/mcc_ecc_num_versions.md)
+- [MCC_ECC_V1](./mcc_ecc_version_t/mcc_ecc_v1.md)
 
 
 ---

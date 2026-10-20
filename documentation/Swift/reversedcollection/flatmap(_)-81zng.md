@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the non-`nil` results of mapping the given transformation over this sequence.
 
@@ -13,7 +14,9 @@ Returns the non-`nil` results of mapping the given transformation over this sequ
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.1 (renamed: compactMap(_:))
+
+> **Deprecated**: Please use compactMap(_:) for the case where closure returns an optional value
 
 ## Declaration
 
@@ -25,7 +28,7 @@ func flatMap<ElementOfResult>(_ transform: @escaping (Self.Elements.Element) -> 
 
 Use this method to receive a sequence of non-optional values when your transformation produces an optional value.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

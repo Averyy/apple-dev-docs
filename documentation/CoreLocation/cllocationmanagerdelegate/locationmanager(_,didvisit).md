@@ -1,7 +1,8 @@
 # locationManager(_:didVisit:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a new visit-related event was received.
 
@@ -15,6 +16,10 @@ Tells the delegate that a new visit-related event was received.
 
 ```swift
 optional func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit)
+```
+
+```objc
+- (void) locationManager:(CLLocationManager *) manager didVisit:(CLVisit *) visit;
 ```
 
 #### Discussion

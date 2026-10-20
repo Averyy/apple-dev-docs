@@ -1,7 +1,8 @@
 # URL.FormatStyle.HostDisplayOption
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that indicates whether a formatted URL should include the host component.
 
@@ -23,39 +24,40 @@ struct HostDisplayOption
 ## Topics
 
 ### Display options
-- [static var always: URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/always.md)
+- [static var always: URL.FormatStyle.HostDisplayOption](./hostdisplayoption/always.md)
   A display option that always displays the host component.
-- [static var never: URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/never.md)
+- [static var never: URL.FormatStyle.HostDisplayOption](./hostdisplayoption/never.md)
   A display option that never displays the host component.
-- [static var omitIfHTTPFamily: URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitifhttpfamily.md)
+- [static var omitIfHTTPFamily: URL.FormatStyle.HostDisplayOption](./hostdisplayoption/omitifhttpfamily.md)
   A display option that omits the host component if the URL scheme is HTTP or HTTPS.
-- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/displaywhen(_:matches:).md)
+- [static func displayWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./hostdisplayoption/displaywhen%28_,matches%29.md)
   Returns a display option that displays the host component when a specified component matches against a set of requirement values.
-- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitwhen(_:matches:).md)
+- [static func omitWhen(URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./hostdisplayoption/omitwhen%28_,matches%29.md)
   Returns a display option that displays the host component when a specified component matches against a set of requirement values.
-- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitspecificsubdomains(_:includemultilevelsubdomains:).md)
+- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool) -> URL.FormatStyle.HostDisplayOption](./hostdisplayoption/omitspecificsubdomains%28_,includemultilevelsubdomains%29.md)
   Returns a display option that omits the host component if it matches a set of subdomains.
-- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool, when: URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption/omitspecificsubdomains(_:includemultilevelsubdomains:when:matches:).md)
+- [static func omitSpecificSubdomains(Set<String>, includeMultiLevelSubdomains: Bool, when: URL.FormatStyle.Component, matches: Set<String>) -> URL.FormatStyle.HostDisplayOption](./hostdisplayoption/omitspecificsubdomains%28_,includemultilevelsubdomains,when,matches%29.md)
   Returns a display option that omits the host component if it matches a set of subdomains and a specified component matches a set of requirements.
-- [URL.FormatStyle.Component](url/formatstyle/component.md)
+- [URL.FormatStyle.Component](./component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](url/formatstyle/init(scheme:user:password:host:port:path:query:fragment:).md)
+### Creating a URL format style
+- [init(scheme: URL.FormatStyle.ComponentDisplayOption, user: URL.FormatStyle.ComponentDisplayOption, password: URL.FormatStyle.ComponentDisplayOption, host: URL.FormatStyle.HostDisplayOption, port: URL.FormatStyle.ComponentDisplayOption, path: URL.FormatStyle.ComponentDisplayOption, query: URL.FormatStyle.ComponentDisplayOption, fragment: URL.FormatStyle.ComponentDisplayOption)](./init%28scheme,user,password,host,port,path,query,fragment%29.md)
   Creates a URL format style with the given display options.
-- [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
+- [URL.FormatStyle.ComponentDisplayOption](./componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
 
 

@@ -1,7 +1,8 @@
 # SetPreferredInputChannelLayout
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the input channel layout, using an array of audio channel label values.
 
@@ -10,28 +11,29 @@ Sets the input channel layout, using an array of audio channel label values.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetPreferredInputChannelLayout(IOUserAudioChannelLabel *in_channel_labels, size_t in_num_channels);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 ## Parameters
 
-- `in_channel_labels`: An array of [`IOUserAudioChannelLabel`](audiodriverkit/iouseraudiochannellabel.md) values.
+- `in_channel_labels`: An array of [`IOUserAudioChannelLabel`](../audiodriverkit-page/iouseraudiochannellabel.md) values.
 - `in_num_channels`: The number of items in the `in_channel_labels` array.
 
 ## See Also
 
-- [SetPreferredChannelsForStereo](iouseraudiodevice/setpreferredchannelsforstereo.md)
+### Working with Channel Layouts
+- [SetPreferredChannelsForStereo](./setpreferredchannelsforstereo.md)
   Sets the channel indices for the prefered stereo pair.
-- [GetPreferredChannelsForStereo](iouseraudiodevice/getpreferredchannelsforstereo.md)
+- [GetPreferredChannelsForStereo](./getpreferredchannelsforstereo.md)
   Returns the channel indices for the prefered stereo pair.
-- [SetPreferredOutputChannelLayout](iouseraudiodevice/setpreferredoutputchannellayout.md)
+- [SetPreferredOutputChannelLayout](./setpreferredoutputchannellayout.md)
   Sets the output channel layout, using an array of audio channel label values.
-- [IOUserAudioChannelLabel](audiodriverkit/iouseraudiochannellabel.md)
+- [IOUserAudioChannelLabel](../audiodriverkit-page/iouseraudiochannellabel.md)
   Constants to set the preferred channel layout on an audio device.
 
 

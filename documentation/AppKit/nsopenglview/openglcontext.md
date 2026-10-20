@@ -1,17 +1,24 @@
 # openGLContext
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`NSOpenGLContext`](nsopenglcontext.md) object associated with the receiver.
+The [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the receiver.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: Please use MTKView instead.
 
 ## Declaration
 
 ```swift
 var openGLContext: NSOpenGLContext? { get set }
+```
+
+```objc
+@property (strong, nullable) NSOpenGLContext * openGLContext;
 ```
 
 #### Discussion
@@ -20,12 +27,14 @@ If the receiver has no associated context object, a new `NSOpenGLContext` object
 
 ## See Also
 
-- [var pixelFormat: NSOpenGLPixelFormat?](nsopenglview/pixelformat.md)
-  The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object associated with the receiver.
-- [func prepareOpenGL()](nsopenglview/prepareopengl.md)
+### Related Documentation
+- [var pixelFormat: NSOpenGLPixelFormat?](./pixelformat.md)
+  The [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object associated with the receiver.
+### Managing the NSOpenGLContext
+- [func prepareOpenGL()](./prepareopengl%28%29.md)
   Used by subclasses to initialize OpenGL state.
-- [func clearGLContext()](nsopenglview/clearglcontext.md)
-  Releases the [`NSOpenGLContext`](nsopenglcontext.md) object associated with the view.
+- [func clearGLContext()](./clearglcontext%28%29.md)
+  Releases the [`NSOpenGLContext`](../nsopenglcontext.md) object associated with the view.
 
 
 ---

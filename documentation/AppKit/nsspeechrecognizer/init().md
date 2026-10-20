@@ -1,17 +1,22 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns an instance of the `NSSpeechRecognizer` class.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init?()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Discussion

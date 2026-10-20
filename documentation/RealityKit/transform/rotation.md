@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the entity specified as a unit quaternion.
 
@@ -11,7 +12,7 @@ The rotation of the entity specified as a unit quaternion.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var rotation: simd_quatf
 
 ## See Also
 
-- [var scale: SIMD3<Float>](transform/scale.md)
+### Setting transform properties
+- [var scale: SIMD3<Float>](./scale.md)
   The scaling factor applied to the entity.
-- [var translation: SIMD3<Float>](transform/translation.md)
+- [var translation: SIMD3<Float>](./translation.md)
   The position of the entity along the x, y, and z axes.
-- [var matrix: float4x4](transform/matrix.md)
+- [var matrix: float4x4](./matrix.md)
   The transform represented as a 4x4 matrix.
 
 

@@ -1,12 +1,13 @@
 # toggleToolbarShown(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the visibility of the window’s toolbar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Toggles the visibility of the window’s toolbar.
 func toggleToolbarShown(_ sender: Any?)
 ```
 
+```objc
+- (void) toggleToolbarShown:(id) sender;
+```
+
 #### Discussion
 
-See the [`NSToolbar`](nstoolbar.md) class description for additional information.
+See the [`NSToolbar`](../nstoolbar.md) class description for additional information.
 
 ## Parameters
 
@@ -24,9 +29,10 @@ See the [`NSToolbar`](nstoolbar.md) class description for additional information
 
 ## See Also
 
-- [var toolbar: NSToolbar?](nswindow/toolbar.md)
+### Managing Toolbars
+- [var toolbar: NSToolbar?](./toolbar.md)
   The window’s toolbar.
-- [func runToolbarCustomizationPalette(Any?)](nswindow/runtoolbarcustomizationpalette(_:).md)
+- [func runToolbarCustomizationPalette(Any?)](./runtoolbarcustomizationpalette%28_%29.md)
   Presents the toolbar customization user interface.
 
 

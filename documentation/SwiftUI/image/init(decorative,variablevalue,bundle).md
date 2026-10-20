@@ -1,7 +1,8 @@
 # init(decorative:variableValue:bundle:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unlabeled, decorative image, with a variable value.
 
@@ -24,7 +25,7 @@ init(decorative name: String, variableValue: Double?, bundle: Bundle? = nil)
 
 This initializer creates an image using a using a symbol in the specified bundle. The rendered symbol may alter its appearance to represent the value provided in `variableValue`.
 
-> **Note**: See WWDC22 session [`10158: Adopt variable color in SF Symbols`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
+> **Note**: See WWDC22 session [10158: Adopt variable color in SF Symbols](https://developer.apple.com/wwdc22/10158/) for details on how to create symbols that support variable values.
 
 SwiftUI ignores this image for accessibility purposes.
 
@@ -36,9 +37,10 @@ SwiftUI ignores this image for accessibility purposes.
 
 ## See Also
 
-- [init(decorative: String, bundle: Bundle?)](image/init(decorative:bundle:).md)
+### Creating an image for decorative use
+- [init(decorative: String, bundle: Bundle?)](./init%28decorative,bundle%29.md)
   Creates an unlabeled, decorative image.
-- [init(decorative: CGImage, scale: CGFloat, orientation: Image.Orientation)](image/init(decorative:scale:orientation:).md)
+- [init(decorative: CGImage, scale: CGFloat, orientation: Image.Orientation)](./init%28decorative,scale,orientation%29.md)
   Creates an unlabeled, decorative image based on a Core Graphics image instance.
 
 

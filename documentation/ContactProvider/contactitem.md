@@ -1,7 +1,8 @@
 # ContactItem
 
 **Framework**: ContactProvider  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An item in the contact database.
 
@@ -17,28 +18,29 @@ enum ContactItem
 
 #### Overview
 
-Your app creates instances of this type in your implementations of [`ContactItemEnumerator`](contactitemenumerator.md), delivering arrays of contact items to [`ContactItemContentObserver`](contactitemcontentobserver.md) and [`ContactItemChangeObserver`](contactitemchangeobserver.md) instances.
+Your app creates instances of this type in your implementations of [`ContactItemEnumerator`](./contactitemenumerator.md), delivering arrays of contact items to [`ContactItemContentObserver`](./contactitemcontentobserver.md) and [`ContactItemChangeObserver`](./contactitemchangeobserver.md) instances.
 
 ## Topics
 
 ### Handling item type
-- [case contact(CNMutableContact, ContactItem.Identifier)](contactitem/contact(_:_:).md)
+- [case contact(CNMutableContact, ContactItem.Identifier)](./contactitem/contact%28_,_%29.md)
   An item that represents a person or organization.
 ### Identifying the item
-- [ContactItem.Identifier](contactitem/identifier.md)
+- [ContactItem.Identifier](./contactitem/identifier.md)
   The app’s identifier for an item in the contact database.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [protocol ContactItemEnumerating](contactitemenumerating.md)
+### Providing contacts
+- [protocol ContactItemEnumerating](./contactitemenumerating.md)
   A protocol to provide enumerators for collections of contact items.
-- [protocol ContactItemEnumerator](contactitemenumerator.md)
+- [protocol ContactItemEnumerator](./contactitemenumerator.md)
   A protocol to provide enumerations of all contact items and changed contact items.
 
 

@@ -1,7 +1,8 @@
 # init(codingPath:debugDescription:underlyingError:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new context with the given path of coding keys and a description of what went wrong.
 

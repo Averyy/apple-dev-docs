@@ -1,7 +1,8 @@
 # url
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL represented by the resource.
 
@@ -12,6 +13,10 @@ The URL represented by the resource.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (copy, readonly) NSURL * url;
 ```
 
 

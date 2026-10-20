@@ -1,14 +1,15 @@
 # getFeatureFlags
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 22.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getFeatureFlags();
 ```
 

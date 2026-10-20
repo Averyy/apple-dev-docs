@@ -1,18 +1,19 @@
 # CFURLComponentType.query
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URL’s query.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,29 +21,34 @@ The URL’s query.
 case query
 ```
 
+```c
+kCFURLComponentQuery
+```
+
 ## See Also
 
-- [CFURLComponentType.scheme](cfurlcomponenttype/scheme.md)
+### Constants
+- [CFURLComponentType.scheme](./scheme.md)
   The URL’s scheme.
-- [CFURLComponentType.netLocation](cfurlcomponenttype/netlocation.md)
+- [CFURLComponentType.netLocation](./netlocation.md)
   The URL’s network location.
-- [CFURLComponentType.path](cfurlcomponenttype/path.md)
+- [CFURLComponentType.path](./path.md)
   The URL’s path component.
-- [CFURLComponentType.resourceSpecifier](cfurlcomponenttype/resourcespecifier.md)
+- [CFURLComponentType.resourceSpecifier](./resourcespecifier.md)
   The URL’s resource specifier.
-- [CFURLComponentType.user](cfurlcomponenttype/user.md)
+- [CFURLComponentType.user](./user.md)
   The URL’s user.
-- [CFURLComponentType.password](cfurlcomponenttype/password.md)
+- [CFURLComponentType.password](./password.md)
   The user’s password.
-- [CFURLComponentType.userInfo](cfurlcomponenttype/userinfo.md)
+- [CFURLComponentType.userInfo](./userinfo.md)
   The user’s information.
-- [CFURLComponentType.host](cfurlcomponenttype/host.md)
+- [CFURLComponentType.host](./host.md)
   The URL’s host.
-- [CFURLComponentType.port](cfurlcomponenttype/port.md)
+- [CFURLComponentType.port](./port.md)
   The URL’s port.
-- [CFURLComponentType.parameterString](cfurlcomponenttype/parameterstring.md)
+- [CFURLComponentType.parameterString](./parameterstring.md)
   The URL’s parameter string.
-- [CFURLComponentType.fragment](cfurlcomponenttype/fragment.md)
+- [CFURLComponentType.fragment](./fragment.md)
   The URL’s fragment.
 
 

@@ -7,14 +7,14 @@ Copy data from the IODMACommand's buffer to the specified buffer.
 
 ## Declaration
 
-```swift
+```c
 UInt64 readBytes(
  UInt64offset,
  void *bytes,
  UInt64length);
 ```
 
-#### Return_value
+#### Return Value
 
 The number of bytes copied, zero will be returned if the specified offset is beyond the prepared length of the IODMACommand.
 
@@ -30,11 +30,12 @@ This method copies data from the IODMACommand's memory at the given offset, to t
 
 ## See Also
 
-- [- readBytes](iodmacommand/1547724-readbytes.md)
+### Transferring Data
+- [- readBytes](./api-1547724-readbytes.md)
   Copy data from the IODMACommand's buffer to the specified buffer.
-- [writeBytes](iodmacommand/1811341-writebytes.md)
+- [writeBytes](./api-1811341-writebytes.md)
   Copy data to the IODMACommand's buffer from the specified buffer.
-- [- writeBytes](iodmacommand/1547742-writebytes.md)
+- [- writeBytes](./api-1547742-writebytes.md)
   Copy data to the IODMACommand's buffer from the specified buffer.
 
 

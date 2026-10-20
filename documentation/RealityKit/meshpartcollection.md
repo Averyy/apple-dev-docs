@@ -1,7 +1,8 @@
 # MeshPartCollection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that holds a collection of mesh parts.
 
@@ -11,7 +12,7 @@ An object that holds a collection of mesh parts.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,50 +23,51 @@ struct MeshPartCollection
 ## Topics
 
 ### Creating a collection
-- [init()](meshpartcollection/init.md)
-- [init([MeshResource.Part])](meshpartcollection/init(_:).md)
+- [init()](./meshpartcollection/init%28%29.md)
+- [init([MeshResource.Part])](./meshpartcollection/init%28_%29.md)
 ### Using the collection
-- [func insert(MeshResource.Part) -> Bool](meshpartcollection/insert(_:).md)
+- [func insert(MeshResource.Part) -> Bool](./meshpartcollection/insert%28_%29.md)
   Add a new part to the container. Returns true if added. Returns false if it already exists.
-- [func remove(id: String) -> MeshResource.Part?](meshpartcollection/remove(id:).md)
+- [func remove(id: String) -> MeshResource.Part?](./meshpartcollection/remove%28id%29.md)
   Remove a part by id.
-- [func removeAll()](meshpartcollection/removeall.md)
+- [func removeAll()](./meshpartcollection/removeall%28%29.md)
   Remove all the parts.
-- [func update(MeshResource.Part) -> MeshResource.Part?](meshpartcollection/update(_:).md)
+- [func update(MeshResource.Part) -> MeshResource.Part?](./meshpartcollection/update%28_%29.md)
   Update an existing part. The old part is returned.
 ### Instance Properties
-- [var count: Int](meshpartcollection/count.md)
+- [var count: Int](./meshpartcollection/count.md)
   Number of parts.
-- [var isEmpty: Bool](meshpartcollection/isempty.md)
+- [var isEmpty: Bool](./meshpartcollection/isempty.md)
   True if there are no parts.
 ### Subscripts
-- [subscript(String) -> MeshResource.Part?](meshpartcollection/subscript(_:).md)
+- [subscript(String) -> MeshResource.Part?](./meshpartcollection/subscript%28_%29.md)
   Read a part given its id.
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct MeshBuffer](meshbuffer.md)
+### Mesh description
+- [struct MeshBuffer](./meshbuffer.md)
   Mesh buffer containing elements of any type.
-- [protocol MeshBufferContainer](meshbuffercontainer.md)
+- [protocol MeshBufferContainer](./meshbuffercontainer.md)
   Conforming objects contain a table of mesh buffers.
-- [protocol MeshBufferSemantic](meshbuffersemantic.md)
+- [protocol MeshBufferSemantic](./meshbuffersemantic.md)
   A protocol that holds an identifier value for mesh buffers.
-- [enum MeshBuffers](meshbuffers.md)
+- [enum MeshBuffers](./meshbuffers.md)
   An object that holds the data for an model entity’s mesh.
-- [struct AnyMeshBuffer](anymeshbuffer.md)
+- [struct AnyMeshBuffer](./anymeshbuffer.md)
   Mesh buffer stored in the container.
-- [struct MeshInstanceCollection](meshinstancecollection.md)
+- [struct MeshInstanceCollection](./meshinstancecollection.md)
   An object that holds a collection of mesh resource instances.
-- [struct MeshModelCollection](meshmodelcollection.md)
+- [struct MeshModelCollection](./meshmodelcollection.md)
   An object that holds a collection of mesh models.
 
 

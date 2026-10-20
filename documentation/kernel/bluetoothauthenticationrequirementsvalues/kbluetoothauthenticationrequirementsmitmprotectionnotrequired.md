@@ -1,14 +1,15 @@
 # kBluetoothAuthenticationRequirementsMITMProtectionNotRequired
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothAuthenticationRequirementsMITMProtectionNotRequired = 0x00
 ```
 

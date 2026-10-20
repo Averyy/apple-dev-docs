@@ -1,12 +1,13 @@
 # loadAlternateHTMLString(_:baseURL:forUnreachableURL:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads alternate content for a frame whose URL is unreachable.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Loads alternate content for a frame whose URL is unreachable.
 func loadAlternateHTMLString(_ string: String!, baseURL: URL!, forUnreachableURL unreachableURL: URL!)
 ```
 
+```objc
+- (void) loadAlternateHTMLString:(NSString *) string baseURL:(NSURL *) baseURL forUnreachableURL:(NSURL *) unreachableURL;
+```
+
 #### Discussion
 
-Use this method to display page-level loading errors in a web view. Typically, a `WebFrameLoadDelegate` or `WebPolicyDelegate` object invokes this method from these methods: `webView:didFailProvisionalLoadWithError:forFrame:` (`WebFrameLoadDelegate`), webView:decidePolicyForMIMEType:request:frame:decisionListener: (`WebPolicyDelegate`), or [`webView(_:unableToImplementPolicyWithError:frame:)`](webpolicydelegate/webview(_:unabletoimplementpolicywitherror:frame:).md) (`WebPolicyDelegate`). If invoked from one of these methods, the back-forward list is maintained.
+Use this method to display page-level loading errors in a web view. Typically, a `WebFrameLoadDelegate` or `WebPolicyDelegate` object invokes this method from these methods: `webView:didFailProvisionalLoadWithError:forFrame:` (`WebFrameLoadDelegate`), webView:decidePolicyForMIMEType:request:frame:decisionListener: (`WebPolicyDelegate`), or [`webView(_:unableToImplementPolicyWithError:frame:)`](../webpolicydelegate/webview%28_,unabletoimplementpolicywitherror,frame%29.md) (`WebPolicyDelegate`). If invoked from one of these methods, the back-forward list is maintained.
 
 ## Parameters
 
@@ -26,19 +31,20 @@ Use this method to display page-level loading errors in a web view. Typically, a
 
 ## See Also
 
-- [func load(URLRequest!)](webframe/load(_:)-47p2s.md)
+### Loading Content
+- [func load(URLRequest!)](./load%28_%29-47p2s.md)
   Connects to a given URL by initiating an asynchronous client request.
-- [func reload()](webframe/reload.md)
-  Reloads the initial request passed as an argument to [`load(_:)`](webframe/load(_:)-47p2s.md).
-- [func reloadFromOrigin()](webframe/reloadfromorigin.md)
+- [func reload()](./reload%28%29.md)
+  Reloads the initial request passed as an argument to [`load(_:)`](./load%28_%29-47p2s.md).
+- [func reloadFromOrigin()](./reloadfromorigin%28%29.md)
   Performs an end-to-end revalidation using cache-validating conditionals if possible.
-- [func stopLoading()](webframe/stoploading.md)
+- [func stopLoading()](./stoploading%28%29.md)
   Stops any pending loads on the receiver’s data source, and those of its children.
-- [func loadHTMLString(String!, baseURL: URL!)](webframe/loadhtmlstring(_:baseurl:).md)
+- [func loadHTMLString(String!, baseURL: URL!)](./loadhtmlstring%28_,baseurl%29.md)
   Sets the main page contents and base URL.
-- [func load(Data!, mimeType: String!, textEncodingName: String!, baseURL: URL!)](webframe/load(_:mimetype:textencodingname:baseurl:).md)
+- [func load(Data!, mimeType: String!, textEncodingName: String!, baseURL: URL!)](./load%28_,mimetype,textencodingname,baseurl%29.md)
   Sets the main page contents, MIME type, content encoding, and base URL.
-- [func load(WebArchive!)](webframe/load(_:)-6wkx6.md)
+- [func load(WebArchive!)](./load%28_%29-6wkx6.md)
   Loads an archive into the web frame.
 
 

@@ -1,7 +1,8 @@
 # logState
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shader logging configuration that the command queue uses.
 
@@ -17,6 +18,10 @@ The shader logging configuration that the command queue uses.
 
 ```swift
 var logState: (any MTLLogState)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, readwrite, nullable) id<MTLLogState> logState;
 ```
 
 

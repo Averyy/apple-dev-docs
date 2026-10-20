@@ -1,7 +1,8 @@
 # eventTimeType
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 var eventTimeType: MTREventTimeType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTREventTimeType eventTimeType;
 ```
 
 

@@ -1,7 +1,8 @@
 # ASOneTimeCodeCredentialIdentity
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 class ASOneTimeCodeCredentialIdentity
 ```
 
+```objc
+@interface ASOneTimeCodeCredentialIdentity : NSObject
+```
+
 #### Overview
 
 An ASOneTimeCodeCredentialIdentity is used to describe an identity that can use a service upon successful one-time code based authentication. Use this class to save entries into ASCredentialIdentityStore.
@@ -23,28 +28,28 @@ An ASOneTimeCodeCredentialIdentity is used to describe an identity that can use 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](asonetimecodecredentialidentity/init(coder:).md)
-- [init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)](asonetimecodecredentialidentity/init(serviceidentifier:label:recordidentifier:).md)
+- [init?(coder: NSCoder)](./asonetimecodecredentialidentity/init%28coder%29.md)
+- [init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)](./asonetimecodecredentialidentity/init%28serviceidentifier,label,recordidentifier%29.md)
 ### Instance Properties
-- [var label: String](asonetimecodecredentialidentity/label.md)
+- [var label: String](./asonetimecodecredentialidentity/label.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [ASCredentialIdentity](ascredentialidentity.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ASCredentialIdentity](./ascredentialidentity.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

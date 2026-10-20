@@ -1,7 +1,8 @@
 # CNSocialProfileServiceFacebook
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Facebook social profile service.
 
@@ -19,29 +20,34 @@ The Facebook social profile service.
 let CNSocialProfileServiceFacebook: String
 ```
 
+```c
+extern NSString * const CNSocialProfileServiceFacebook;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [class func localizedString(forService: String) -> String](cnsocialprofile/localizedstring(forservice:).md)
+### Getting Localized Service Names
+- [class func localizedString(forService: String) -> String](./cnsocialprofile/localizedstring%28forservice%29.md)
   Returns the localized name of the specified service.
-- [let CNSocialProfileServiceFlickr: String](cnsocialprofileserviceflickr.md)
+- [let CNSocialProfileServiceFlickr: String](./cnsocialprofileserviceflickr.md)
   The Flickr social profile service.
-- [let CNSocialProfileServiceGameCenter: String](cnsocialprofileservicegamecenter.md)
+- [let CNSocialProfileServiceGameCenter: String](./cnsocialprofileservicegamecenter.md)
   The Game Center social profile service.
-- [let CNSocialProfileServiceLinkedIn: String](cnsocialprofileservicelinkedin.md)
+- [let CNSocialProfileServiceLinkedIn: String](./cnsocialprofileservicelinkedin.md)
   The LinkedIn social profile service.
-- [let CNSocialProfileServiceMySpace: String](cnsocialprofileservicemyspace.md)
+- [let CNSocialProfileServiceMySpace: String](./cnsocialprofileservicemyspace.md)
   The MySpace social profile service.
-- [let CNSocialProfileServiceSinaWeibo: String](cnsocialprofileservicesinaweibo.md)
+- [let CNSocialProfileServiceSinaWeibo: String](./cnsocialprofileservicesinaweibo.md)
   The Sina Weibo social profile service.
-- [let CNSocialProfileServiceTencentWeibo: String](cnsocialprofileservicetencentweibo.md)
+- [let CNSocialProfileServiceTencentWeibo: String](./cnsocialprofileservicetencentweibo.md)
   The Tencent Weibo social profile service.
-- [let CNSocialProfileServiceTwitter: String](cnsocialprofileservicetwitter.md)
+- [let CNSocialProfileServiceTwitter: String](./cnsocialprofileservicetwitter.md)
   The Twitter social profile service.
-- [let CNSocialProfileServiceYelp: String](cnsocialprofileserviceyelp.md)
+- [let CNSocialProfileServiceYelp: String](./cnsocialprofileserviceyelp.md)
   The Yelp social profile service.
 
 

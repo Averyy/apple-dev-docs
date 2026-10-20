@@ -1,16 +1,17 @@
 # showingDeleteConfirmation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The state of a table view cell that shows a button requesting confirmation of a delete gesture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The state of a table view cell that shows a button requesting confirmation of a 
 static var showingDeleteConfirmation: UITableViewCell.StateMask { get }
 ```
 
+```c
+UITableViewCellStateShowingDeleteConfirmationMask
+```
+
 ## See Also
 
-- [static var showingEditControl: UITableViewCell.StateMask](uitableviewcell/statemask/showingeditcontrol.md)
+### Constants
+- [static var showingEditControl: UITableViewCell.StateMask](./showingeditcontrol.md)
   The state of a table view cell when the table view is in editing mode.
 
 

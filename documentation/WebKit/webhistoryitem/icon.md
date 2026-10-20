@@ -1,12 +1,13 @@
 # icon
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The icon for the receiver’s page, or `nil` if none exists.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The icon for the receiver’s page, or `nil` if none exists.
 var icon: NSImage! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSImage * icon;
+```
+
 ## See Also
 
-- [var lastVisitedTimeInterval: TimeInterval](webhistoryitem/lastvisitedtimeinterval.md)
+### Getting other attributes
+- [var lastVisitedTimeInterval: TimeInterval](./lastvisitedtimeinterval.md)
   The last time and date the receiver’s page was visited.
 
 

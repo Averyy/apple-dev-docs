@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Converts a point in physical coordinates inside a layer to its corresponding logical viewport coordinates.
@@ -20,6 +21,10 @@ Converts a point in physical coordinates inside a layer to its corresponding log
 func screenCoordinates(physicalCoordinates: MTLCoordinate2D, layer layerIndex: Int) -> MTLCoordinate2D
 ```
 
+```objc
+- (MTLCoordinate2D) mapPhysicalToScreenCoordinates:(MTLCoordinate2D) physicalCoordinates forLayer:(NSUInteger) layerIndex;
+```
+
 #### Return Value
 
 A point in the view coordinates corresponding to the source point.
@@ -35,7 +40,8 @@ The returned coordinates are always greater than or equal to the input coordinat
 
 ## See Also
 
-- [func physicalCoordinates(screenCoordinates: MTLCoordinate2D, layer: Int) -> MTLCoordinate2D](mtlrasterizationratemap/physicalcoordinates(screencoordinates:layer:).md)
+### Converting between viewport and physical coordinates
+- [func physicalCoordinates(screenCoordinates: MTLCoordinate2D, layer: Int) -> MTLCoordinate2D](./physicalcoordinates%28screencoordinates,layer%29.md)
   Converts a point in logical viewport coordinates to the corresponding physical coordinates in a render layer.
 
 

@@ -1,6 +1,7 @@
 # revolutions
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 The number of rotations to complete.
 
@@ -16,17 +17,18 @@ uniform double revolutions = 1.0
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [center](center.md)
+- [center](./center.md)
   A prim around which the affected objects orbit.
-- [duration](duration.md)
+- [duration](./duration.md)
   The amount of time that the objects face the camera.
-- [axis](axis.md)
+- [axis](./axis.md)
   A vector that describes the axis of rotation.
-- [alignToPath](aligntopath.md)
+- [alignToPath](./aligntopath.md)
   An option that controls the prim’s orientation as it revolves.
 
 

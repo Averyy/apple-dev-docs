@@ -1,7 +1,8 @@
 # init(destinationNetworkEndpoint:prefix:protocol:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 15.0+

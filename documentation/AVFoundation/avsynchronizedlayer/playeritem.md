@@ -1,7 +1,8 @@
 # playerItem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player item to which the timing of the layer is synchronized.
 
@@ -17,6 +18,10 @@ The player item to which the timing of the layer is synchronized.
 
 ```swift
 var playerItem: AVPlayerItem? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) AVPlayerItem * playerItem;
 ```
 
 

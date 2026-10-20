@@ -1,7 +1,8 @@
 # previous
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The previous tracking state of the device.
 

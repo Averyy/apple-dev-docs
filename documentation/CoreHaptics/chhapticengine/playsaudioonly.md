@@ -1,7 +1,8 @@
 # playsAudioOnly
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the engine ignores haptic events and plays audio events only.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the engine ignores haptic events and play
 var playsAudioOnly: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL playsAudioOnly;
+```
+
 #### Discussion
 
 If you set a new value on a running engine, you must restart the engine for the change to take effect.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var playsHapticsOnly: Bool](chhapticengine/playshapticsonly.md)
+### Modifying Playback Properties
+- [var playsHapticsOnly: Bool](./playshapticsonly.md)
   A Boolean value that indicates whether the engine ignores audio events.
-- [var isMutedForAudio: Bool](chhapticengine/ismutedforaudio.md)
+- [var isMutedForAudio: Bool](./ismutedforaudio.md)
   A Boolean value that indicates whether the engine mutes audio.
-- [var isMutedForHaptics: Bool](chhapticengine/ismutedforhaptics.md)
+- [var isMutedForHaptics: Bool](./ismutedforhaptics.md)
   A Boolean value that indicates whether the engine mutes haptics.
 
 

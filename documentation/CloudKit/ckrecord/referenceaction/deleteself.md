@@ -1,7 +1,8 @@
 # CKRecord.ReferenceAction.deleteSelf
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reference action that cascades deletions.
 
@@ -10,7 +11,7 @@ A reference action that cascades deletions.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,13 +21,18 @@ A reference action that cascades deletions.
 case deleteSelf
 ```
 
+```c
+CKReferenceActionDeleteSelf
+```
+
 #### Discussion
 
 CloudKit deletes any records that contain `CKReference` objects pointing to the current record. The deletion of the additional records can trigger further deletions as the action cascades. The deletions are asynchronous in the default zone and immediate in a custom zone.
 
 ## See Also
 
-- [CKRecord.ReferenceAction.none](ckrecord/referenceaction/none.md)
+### Deletion Reference Actions
+- [CKRecord.ReferenceAction.none](./none.md)
   A reference action that has no cascading behavior.
 
 

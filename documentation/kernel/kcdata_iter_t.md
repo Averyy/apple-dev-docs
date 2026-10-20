@@ -1,14 +1,15 @@
 # kcdata_iter_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kcdata_iter {
     ...
 } kcdata_iter_t;
@@ -17,8 +18,8 @@ typedef struct kcdata_iter {
 ## Topics
 
 ### Instance Properties
-- [end](kcdata_iter_t/1644379-end.md)
-- [item](kcdata_iter_t/1644314-item.md)
+- [end](./kcdata_iter_t/api-1644379-end.md)
+- [item](./kcdata_iter_t/api-1644314-item.md)
 
 
 ---

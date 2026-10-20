@@ -1,7 +1,8 @@
 # HTMLLegendElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLLegendElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [align](htmllegendelement/1633796-align.md)
-- [form](htmllegendelement/1631337-form.md)
+- [align](./htmllegendelement/api-1633796-align.md)
+- [form](./htmllegendelement/api-1631337-form.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

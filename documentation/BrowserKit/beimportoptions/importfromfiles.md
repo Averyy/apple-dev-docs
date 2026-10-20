@@ -1,7 +1,8 @@
 # importFromFiles
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to import browser data from files.
 
@@ -15,13 +16,17 @@ A Boolean value that indicates whether to import browser data from files.
 var importFromFiles: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL importFromFiles;
+```
+
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 #### Discussion
 
-If the value of this property is `false`, the system retrieves browsing data from the other browser and provides the data to your app by invoking your handler for the [`BEBrowserDataImportManager`](bebrowserdataimportmanager.md) class’s [`userActivityType`](bebrowserdataimportmanager/useractivitytype-35jes.md).
+If the value of this property is `false`, the system retrieves browsing data from the other browser and provides the data to your app by invoking your handler for the [`BEBrowserDataImportManager`](../bebrowserdataimportmanager.md) class’s [`userActivityType`](../bebrowserdataimportmanager/useractivitytype-35jes.md).
 
 If the value of this property is `true`, the system cancels the browser-to-browser data transfer, and your app imports the browsing data from disk according to your app’s unique workflow.
 

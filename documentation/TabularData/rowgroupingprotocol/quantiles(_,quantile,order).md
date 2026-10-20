@@ -1,7 +1,8 @@
 # quantiles(_:quantile:order:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a data frame that contains the quantiles of each group’s rows along a column you select by column identifier.
 
@@ -22,7 +23,7 @@ func quantiles<N>(_ columnID: ColumnID<N>, quantile: N, order: Order? = nil) -> 
 
 #### Discussion
 
-> **Note**: Quantile must be between 0.0 and 1.0.
+> **Precondition**: Quantile must be between 0.0 and 1.0.
 
 ## Parameters
 

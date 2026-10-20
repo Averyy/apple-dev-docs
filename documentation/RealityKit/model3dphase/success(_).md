@@ -1,7 +1,8 @@
 # Model3DPhase.success(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A model has successfully loaded.
 
@@ -16,9 +17,10 @@ case success(ResolvedModel3D)
 
 ## See Also
 
-- [Model3DPhase.empty](model3dphase/empty.md)
+### Obtaining the result
+- [Model3DPhase.empty](./empty.md)
   No model is loaded.
-- [Model3DPhase.failure(_:)](model3dphase/failure(_:).md)
+- [Model3DPhase.failure(_:)](./failure%28_%29.md)
   An model failed to load with an error.
 
 

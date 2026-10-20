@@ -1,7 +1,8 @@
 # MTROTASoftwareUpdateProviderClusterQueryImageParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,45 +19,49 @@
 class MTROTASoftwareUpdateProviderClusterQueryImageParams
 ```
 
+```objc
+@interface MTROTASoftwareUpdateProviderClusterQueryImageParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var hardwareVersion: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/hardwareversion.md)
-- [var location: String?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/location.md)
-- [var metadataForProvider: Data?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/metadataforprovider.md)
-- [var productID: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/productid-9dqyi.md)
-- [var productId: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/productid-9dqxm.md)
-- [var protocolsSupported: [Any]](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/protocolssupported.md)
-- [var requestorCanConsent: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/requestorcanconsent.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/serversideprocessingtimeout.md)
-- [var softwareVersion: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/softwareversion.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/timedinvoketimeoutms.md)
-- [var vendorID: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/vendorid-6cv55.md)
-- [var vendorId: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/vendorid-6cv49.md)
-- [var hardwareVersion: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/hardwareversion.md)
-- [var location: String?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/location.md)
-- [var metadataForProvider: Data?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/metadataforprovider.md)
-- [var protocolsSupported: [Any]](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/protocolssupported.md)
-- [var requestorCanConsent: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/requestorcanconsent.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/serversideprocessingtimeout.md)
-- [var softwareVersion: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/softwareversion.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/timedinvoketimeoutms.md)
+- [var hardwareVersion: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/hardwareversion.md)
+- [var location: String?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/location.md)
+- [var metadataForProvider: Data?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/metadataforprovider.md)
+- [var productID: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/productid-9dqyi.md)
+- [var productId: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/productid-9dqxm.md)
+- [var protocolsSupported: [Any]](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/protocolssupported.md)
+- [var requestorCanConsent: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/requestorcanconsent.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/serversideprocessingtimeout.md)
+- [var softwareVersion: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/softwareversion.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/timedinvoketimeoutms.md)
+- [var vendorID: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/vendorid-6cv55.md)
+- [var vendorId: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b/vendorid-6cv49.md)
+- [var hardwareVersion: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/hardwareversion.md)
+- [var location: String?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/location.md)
+- [var metadataForProvider: Data?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/metadataforprovider.md)
+- [var protocolsSupported: [Any]](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/protocolssupported.md)
+- [var requestorCanConsent: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/requestorcanconsent.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/serversideprocessingtimeout.md)
+- [var softwareVersion: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/softwareversion.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTROtaSoftwareUpdateProviderClusterQueryImageParams](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv.md)
+- [MTROtaSoftwareUpdateProviderClusterQueryImageParams](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

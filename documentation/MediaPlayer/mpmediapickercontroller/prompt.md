@@ -1,7 +1,8 @@
 # prompt
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A prompt, for the user, that appears above the navigation bar buttons.
 
@@ -16,15 +17,20 @@ A prompt, for the user, that appears above the navigation bar buttons.
 var prompt: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * prompt;
+```
+
 ## See Also
 
-- [var allowsPickingMultipleItems: Bool](mpmediapickercontroller/allowspickingmultipleitems.md)
+### Using a media item picker
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value specifying the default selection behavior for a media item picker.
-- [var showsCloudItems: Bool](mpmediapickercontroller/showsclouditems.md)
+- [var showsCloudItems: Bool](./showsclouditems.md)
   A Boolean value specifying whether to display iCloud Media Library items for a media picker.
-- [var mediaTypes: MPMediaType](mpmediapickercontroller/mediatypes.md)
+- [var mediaTypes: MPMediaType](./mediatypes.md)
   The media types that media item picker presents.
-- [var showsItemsWithProtectedAssets: Bool](mpmediapickercontroller/showsitemswithprotectedassets.md)
+- [var showsItemsWithProtectedAssets: Bool](./showsitemswithprotectedassets.md)
   A Boolean value that specifies whether the media item picker displays protected assets.
 
 

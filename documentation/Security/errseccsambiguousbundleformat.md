@@ -1,7 +1,8 @@
 # errSecCSAmbiguousBundleFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The bundle could be an app or a framework.
 
@@ -13,6 +14,10 @@ The bundle could be an app or a framework.
 
 ```swift
 var errSecCSAmbiguousBundleFormat: OSStatus { get }
+```
+
+```c
+errSecCSAmbiguousBundleFormat
 ```
 
 

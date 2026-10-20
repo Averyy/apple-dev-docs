@@ -2,6 +2,7 @@
 
 **Framework**: HealthKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -20,7 +21,8 @@ associatedtype Sequence : AsyncSequence
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> Self.Sequence](hkasyncsequencequery/results(for:).md)
+### Running Queries
+- [func results(for: HKHealthStore) -> Self.Sequence](./results%28for%29.md)
   Initiates a query that returns its results using an asynchronous sequence.
 
 

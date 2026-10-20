@@ -1,7 +1,8 @@
 # surface
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fragment-stage surface shader.
 
@@ -19,7 +20,8 @@ var surface: LowLevelMaterialResource.SurfaceShader { get set }
 
 ## See Also
 
-- [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/descriptor/geometry.md)
+### Configuring the shaders
+- [var geometry: LowLevelMaterialResource.GeometryModifier](./geometry.md)
   The vertex-stage geometry modifier.
 
 

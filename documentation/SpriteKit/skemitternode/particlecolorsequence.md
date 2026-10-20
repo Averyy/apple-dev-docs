@@ -1,18 +1,19 @@
 # particleColorSequence
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sequence used to specify the color components of a particle over its lifetime.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,36 +21,41 @@ The sequence used to specify the color components of a particle over its lifetim
 var particleColorSequence: SKKeyframeSequence? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) SKKeyframeSequence * particleColorSequence;
+```
+
 ## Mentions
 
-- [Animating Particle Properties Across Disparate Values](animating-particle-properties-across-disparate-values.md)
-- [Using Keyframe Sequence to effect Custom Interpolation](using-keyframe-sequence-to-effect-custom-interpolation.md)
+- [Animating Particle Properties Across Disparate Values](../animating-particle-properties-across-disparate-values.md)
+- [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
 #### Discussion
 
-The default value is `nil`. If a non-`nil` value is specified, then the [`particleColor`](skemitternode/particlecolor.md), [`particleColorAlphaRange`](skemitternode/particlecoloralpharange.md), [`particleColorRedRange`](skemitternode/particlecolorredrange.md), [`particleColorGreenRange`](skemitternode/particlecolorgreenrange.md), [`particleColorBlueRange`](skemitternode/particlecolorbluerange.md), [`particleColorAlphaSpeed`](skemitternode/particlecoloralphaspeed.md), [`particleColorRedSpeed`](skemitternode/particlecolorredspeed.md), [`particleColorGreenSpeed`](skemitternode/particlecolorgreenspeed.md), and [`particleColorBlueSpeed`](skemitternode/particlecolorbluespeed.md) properties are ignored. Instead, the sequence is used to specify the particle color.
+The default value is `nil`. If a non-`nil` value is specified, then the [`particleColor`](./particlecolor.md), [`particleColorAlphaRange`](./particlecoloralpharange.md), [`particleColorRedRange`](./particlecolorredrange.md), [`particleColorGreenRange`](./particlecolorgreenrange.md), [`particleColorBlueRange`](./particlecolorbluerange.md), [`particleColorAlphaSpeed`](./particlecoloralphaspeed.md), [`particleColorRedSpeed`](./particlecolorredspeed.md), [`particleColorGreenSpeed`](./particlecolorgreenspeed.md), and [`particleColorBlueSpeed`](./particlecolorbluespeed.md) properties are ignored. Instead, the sequence is used to specify the particle color.
 
-> ❗ **Important**:  If you create an [`SKEmitterNode`](skemitternode.md) object using Xcode’s particle editor, it uses a color sequence to implement the color change.
+> ❗ **Important**:  If you create an [`SKEmitterNode`](../skemitternode.md) object using Xcode’s particle editor, it uses a color sequence to implement the color change.
 
 ## See Also
 
-- [var particleColor: UIColor](skemitternode/particlecolor.md)
+### Configuring Particle Color
+- [var particleColor: UIColor](./particlecolor.md)
   The average initial color for a particle.
-- [var particleColorAlphaRange: CGFloat](skemitternode/particlecoloralpharange.md)
+- [var particleColorAlphaRange: CGFloat](./particlecoloralpharange.md)
   The range of allowed random values for the alpha component of a particle’s initial color.
-- [var particleColorBlueRange: CGFloat](skemitternode/particlecolorbluerange.md)
+- [var particleColorBlueRange: CGFloat](./particlecolorbluerange.md)
   The range of allowed random values for the blue component of a particle’s initial color.
-- [var particleColorGreenRange: CGFloat](skemitternode/particlecolorgreenrange.md)
+- [var particleColorGreenRange: CGFloat](./particlecolorgreenrange.md)
   The range of allowed random values for the green component of a particle’s initial color.
-- [var particleColorRedRange: CGFloat](skemitternode/particlecolorredrange.md)
+- [var particleColorRedRange: CGFloat](./particlecolorredrange.md)
   The range of allowed random values for the red component of a particle’s initial color.
-- [var particleColorAlphaSpeed: CGFloat](skemitternode/particlecoloralphaspeed.md)
+- [var particleColorAlphaSpeed: CGFloat](./particlecoloralphaspeed.md)
   The rate at which the alpha component of a particle’s color changes per second.
-- [var particleColorBlueSpeed: CGFloat](skemitternode/particlecolorbluespeed.md)
+- [var particleColorBlueSpeed: CGFloat](./particlecolorbluespeed.md)
   The rate at which the blue component of a particle’s color changes per second.
-- [var particleColorGreenSpeed: CGFloat](skemitternode/particlecolorgreenspeed.md)
+- [var particleColorGreenSpeed: CGFloat](./particlecolorgreenspeed.md)
   The rate at which the green component of a particle’s color changes per second.
-- [var particleColorRedSpeed: CGFloat](skemitternode/particlecolorredspeed.md)
+- [var particleColorRedSpeed: CGFloat](./particlecolorredspeed.md)
   The rate at which the red component of a particle’s color changes per second.
 
 

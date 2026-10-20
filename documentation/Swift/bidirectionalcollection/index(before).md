@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the position immediately before the given index.
@@ -28,6 +29,12 @@ The index value immediately before `i`.
 ## Parameters
 
 - `i`: A valid index of the collection. `i` must be greater than `startIndex`.
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [func index(before: Self.Index) -> Self.Index](./index%28before%29-2jmfj.md)
+  Returns the position immediately after the given index.
 
 
 ---

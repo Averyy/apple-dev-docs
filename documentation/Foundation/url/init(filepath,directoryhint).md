@@ -1,7 +1,8 @@
 # init(filePath:directoryHint:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a file URL that references a file path.
 
@@ -27,21 +28,22 @@ init?(filePath path: FilePath, directoryHint: URL.DirectoryHint = .inferFromPath
 
 ## See Also
 
-- [init(filePath: String, directoryHint: URL.DirectoryHint, relativeTo: URL?)](url/init(filepath:directoryhint:relativeto:).md)
+### Creating a file URL from a string path
+- [init(filePath: String, directoryHint: URL.DirectoryHint, relativeTo: URL?)](./init%28filepath,directoryhint,relativeto%29.md)
   Creates a file URL that references a path you specify as a string.
-- [enum DirectoryHint](url/directoryhint.md)
+- [enum DirectoryHint](./directoryhint.md)
   A hint to URL file APIs for handling paths that may reference directories.
-- [init(fileURLWithPath: String)](url/init(fileurlwithpath:).md)
+- [init(fileURLWithPath: String)](./init%28fileurlwithpath%29.md)
   Creates a file URL that references the local file or directory at the given path.
-- [init(fileURLWithPath: String, isDirectory: Bool)](url/init(fileurlwithpath:isdirectory:).md)
+- [init(fileURLWithPath: String, isDirectory: Bool)](./init%28fileurlwithpath,isdirectory%29.md)
   Creates a file URL that references the local file or directory at the given path.
-- [init(fileURLWithPath: String, relativeTo: URL?)](url/init(fileurlwithpath:relativeto:).md)
+- [init(fileURLWithPath: String, relativeTo: URL?)](./init%28fileurlwithpath,relativeto%29.md)
   Creates a file URL that references the local file or directory at the given path, relative to a base URL.
-- [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](url/init(fileurlwithpath:isdirectory:relativeto:).md)
+- [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](./init%28fileurlwithpath,isdirectory,relativeto%29.md)
   Creates a file URL that references the local file or directory at the given path, relative to a base URL.
-- [init(fileURLWithFileSystemRepresentation: UnsafePointer<Int8>, isDirectory: Bool, relativeTo: URL?)](url/init(fileurlwithfilesystemrepresentation:isdirectory:relativeto:).md)
+- [init(fileURLWithFileSystemRepresentation: UnsafePointer<Int8>, isDirectory: Bool, relativeTo: URL?)](./init%28fileurlwithfilesystemrepresentation,isdirectory,relativeto%29.md)
   Creates a file URL that references the local file or directory for the file system representation of the path.
-- [init(fileReferenceLiteralResourceName: String)](url/init(filereferenceliteralresourcename:).md)
+- [init(fileReferenceLiteralResourceName: String)](./init%28filereferenceliteralresourcename%29.md)
   Creates a URL from a playground file literal.
 
 

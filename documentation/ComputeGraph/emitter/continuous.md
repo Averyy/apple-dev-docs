@@ -1,13 +1,14 @@
 # emitter::continuous
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Continuously emit particles at a fixed rate.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void emitter::continuous(float rate, float maxBurst)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/emitter__continuous.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__continuous.svg)
 
 > **Note**: Reads from emitter state `ContinuousEmitterState state`, if it exists
 

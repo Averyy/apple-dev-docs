@@ -1,7 +1,8 @@
 # CNEntityType
 
 **Framework**: Contacts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The entities the user can grant access to.
 
@@ -19,31 +20,36 @@ The entities the user can grant access to.
 enum CNEntityType
 ```
 
+```c
+enum CNEntityType : NSInteger;
+```
+
 ## Topics
 
 ### Entities
-- [CNEntityType.contacts](cnentitytype/contacts.md)
+- [CNEntityType.contacts](./cnentitytype/contacts.md)
   The user’s contacts.
 ### Initializers
-- [init?(rawValue: Int)](cnentitytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cnentitytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestAccess(for: CNEntityType, completionHandler: (Bool, (any Error)?) -> Void)](cncontactstore/requestaccess(for:completionhandler:).md)
+### Requesting access to the user’s contacts
+- [func requestAccess(for: CNEntityType, completionHandler: (Bool, (any Error)?) -> Void)](./cncontactstore/requestaccess%28for,completionhandler%29.md)
   Requests access to the user’s contacts.
-- [class func authorizationStatus(for: CNEntityType) -> CNAuthorizationStatus](cncontactstore/authorizationstatus(for:).md)
+- [class func authorizationStatus(for: CNEntityType) -> CNAuthorizationStatus](./cncontactstore/authorizationstatus%28for%29.md)
   Returns the current authorization status to access the contact data.
-- [enum CNAuthorizationStatus](cnauthorizationstatus.md)
+- [enum CNAuthorizationStatus](./cnauthorizationstatus.md)
   An authorization status the user can grant for an app to access the specified entity type.
 
 

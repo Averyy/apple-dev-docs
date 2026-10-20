@@ -1,16 +1,19 @@
 # MTROtaSoftwareUpdateProviderClusterQueryImageParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 16.4
+- iPadOS 16.1+ - Deprecated in 16.4
+- Mac Catalyst 16.1+ - Deprecated in 16.4
+- macOS 13.0+ - Deprecated in 13.3
+- tvOS 16.1+ - Deprecated in 16.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 9.4
+
+> **Deprecated**: Please use MTROTASoftwareUpdateProviderClusterQueryImageParams
 
 ## Declaration
 
@@ -18,31 +21,35 @@
 class MTROtaSoftwareUpdateProviderClusterQueryImageParams
 ```
 
+```objc
+@interface MTROtaSoftwareUpdateProviderClusterQueryImageParams : MTROTASoftwareUpdateProviderClusterQueryImageParams
+```
+
 ## Topics
 
 ### Instance Properties
-- [var hardwareVersion: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/hardwareversion.md)
-- [var location: String?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/location.md)
-- [var metadataForProvider: Data?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/metadataforprovider.md)
-- [var protocolsSupported: [Any]](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/protocolssupported.md)
-- [var requestorCanConsent: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/requestorcanconsent.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/serversideprocessingtimeout.md)
-- [var softwareVersion: NSNumber](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/softwareversion.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/timedinvoketimeoutms.md)
+- [var hardwareVersion: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/hardwareversion.md)
+- [var location: String?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/location.md)
+- [var metadataForProvider: Data?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/metadataforprovider.md)
+- [var protocolsSupported: [Any]](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/protocolssupported.md)
+- [var requestorCanConsent: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/requestorcanconsent.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/serversideprocessingtimeout.md)
+- [var softwareVersion: NSNumber](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/softwareversion.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrotasoftwareupdateproviderclusterqueryimageparams-zidv/timedinvoketimeoutms.md)
   Controls whether the command is a timed command (using Timed Invoke).
 
 ## Relationships
 
 ### Inherits From
-- [MTROTASoftwareUpdateProviderClusterQueryImageParams](mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b.md)
+- [MTROTASoftwareUpdateProviderClusterQueryImageParams](./mtrotasoftwareupdateproviderclusterqueryimageparams-8z02b.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UIImpactFeedbackGenerator
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A concrete feedback generator subclass that creates haptics to simulate physical impacts.
 
@@ -15,6 +16,10 @@ A concrete feedback generator subclass that creates haptics to simulate physical
 ```swift
 @MainActor
 class UIImpactFeedbackGenerator
+```
+
+```objc
+@interface UIImpactFeedbackGenerator : UIFeedbackGenerator
 ```
 
 #### Overview
@@ -66,53 +71,54 @@ private func dragSquare(_ sender: UIPanGestureRecognizer) {
 }
 ```
 
-For more information, read [`Playing haptic feedback in your app`](https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app).
+For more information, read [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md).
 
 ## Topics
 
 ### Initializing the feedback generator
-- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](uiimpactfeedbackgenerator/init(style:view:).md)
+- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](./uiimpactfeedbackgenerator/init%28style,view%29.md)
   Creates an impact feedback generator with the specified style and view.
-- [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle](./uiimpactfeedbackgenerator/feedbackstyle.md)
   The mass of the objects in the collision simulated by an impact feedback generator object.
-- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](uiimpactfeedbackgenerator/init(style:).md)
+- [init(style: UIImpactFeedbackGenerator.FeedbackStyle)](./uiimpactfeedbackgenerator/init%28style%29.md)
   Creates an impact feedback generator with the specified style.
 ### Reporting impacts
-- [func impactOccurred()](uiimpactfeedbackgenerator/impactoccurred.md)
+- [func impactOccurred()](./uiimpactfeedbackgenerator/impactoccurred%28%29.md)
   Triggers impact feedback.
-- [func impactOccurred(intensity: CGFloat)](uiimpactfeedbackgenerator/impactoccurred(intensity:).md)
+- [func impactOccurred(intensity: CGFloat)](./uiimpactfeedbackgenerator/impactoccurred%28intensity%29.md)
   Triggers impact feedback with a specific intensity.
-- [func impactOccurred(at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(at:).md)
+- [func impactOccurred(at: CGPoint)](./uiimpactfeedbackgenerator/impactoccurred%28at%29.md)
   Triggers impact feedback at the specified location.
-- [func impactOccurred(intensity: CGFloat, at: CGPoint)](uiimpactfeedbackgenerator/impactoccurred(intensity:at:).md)
+- [func impactOccurred(intensity: CGFloat, at: CGPoint)](./uiimpactfeedbackgenerator/impactoccurred%28intensity,at%29.md)
   Triggers impact feedback with a specific intensity at the specified location.
 
 ## Relationships
 
 ### Inherits From
-- [UIFeedbackGenerator](uifeedbackgenerator.md)
+- [UIFeedbackGenerator](./uifeedbackgenerator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [Playing haptic feedback in your app](../applepencil/playing-haptic-feedback-in-your-app.md)
+### Haptic feedback
+- [Playing haptic feedback in your app](../ApplePencil/playing-haptic-feedback-in-your-app.md)
   Provide tactile feedback when people perform certain actions in your app.
-- [class UIFeedbackGenerator](uifeedbackgenerator.md)
+- [class UIFeedbackGenerator](./uifeedbackgenerator.md)
   The abstract superclass for all feedback generators.
-- [class UINotificationFeedbackGenerator](uinotificationfeedbackgenerator.md)
+- [class UINotificationFeedbackGenerator](./uinotificationfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to communicate successes, failures, and warnings.
-- [class UISelectionFeedbackGenerator](uiselectionfeedbackgenerator.md)
+- [class UISelectionFeedbackGenerator](./uiselectionfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to indicate a change in selection.
-- [class UICanvasFeedbackGenerator](uicanvasfeedbackgenerator.md)
+- [class UICanvasFeedbackGenerator](./uicanvasfeedbackgenerator.md)
   A concrete feedback generator subclass that creates haptics to indicate events on a drawing canvas.
 
 

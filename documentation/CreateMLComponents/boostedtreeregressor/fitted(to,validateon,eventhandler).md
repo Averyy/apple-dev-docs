@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a boosted tree regressor model to a collection of examples.
 
@@ -32,7 +33,8 @@ The fitted boosted tree regressor model.
 
 ## See Also
 
-- [BoostedTreeRegressor.Transformer](boostedtreeregressor/transformer.md)
+### Fitting a regressor model
+- [BoostedTreeRegressor.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

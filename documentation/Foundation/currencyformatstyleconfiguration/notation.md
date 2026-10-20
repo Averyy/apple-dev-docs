@@ -1,7 +1,8 @@
 # CurrencyFormatStyleConfiguration.Notation
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to configure notation for currency format styles.
 

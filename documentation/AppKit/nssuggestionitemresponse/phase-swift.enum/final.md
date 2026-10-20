@@ -1,7 +1,8 @@
 # NSSuggestionItemResponse.Phase.final
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The collection of items represents a final set of results for the request. The user can expect these results to be stable until their search request changes.
 

@@ -1,6 +1,7 @@
 # Importing an Identity
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: Article
 
 Learn how to import an identity from file.
 
@@ -44,7 +45,7 @@ NSDictionary* options = @{ (id)kSecImportExportPassphrase : password };
 
 > ❗ **Important**:  Do not bundle passwords with your app in any form. Doing so is insecure, because no matter how carefully you try to obscure a password, a motivated attacker will find a way to mimic the operations you use to reveal it for your own purposes. Instead, prompt the user for a password when you need it, or read it from the secure storage offered by a keychain.
 
-Then, use the data and the options in a call to the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function:
+Then, use the data and the options in a call to the [`SecPKCS12Import(_:_:_:)`](./secpkcs12import%28_,_,_%29.md) function:
 
 **Swift**:
 
@@ -86,13 +87,13 @@ if ((status == errSecSuccess) && ([items count]>0)) {
 
 Notice that in Objective-C, you first pass ownership of the array and its contents to Automatic Reference Counting (ARC), which handles releasing it later. In Swift, the system automatically takes ownership. Either way, this dictionary held by the first item may contain these keys:
 
-- [`kSecImportItemIdentity`](ksecimportitemidentity.md)—Value contains the certificate and private key wrapped together as an identity.
-- [`kSecImportItemCertChain`](ksecimportitemcertchain.md)—Value contains the chain of certificates relevant to evaluating the trust of the certificate contained in the identity.
-- [`kSecImportItemTrust`](ksecimportitemtrust.md)—Value contains a trust that’s set up with all of the relevant intermediate certificates. The trust is not guaranteed to evaluate successfully.
-- [`kSecImportItemKeyID`](ksecimportitemkeyid.md)—Value contains a key ID that’s often the SHA-1 digest of the public key in the identity.
-- [`kSecImportItemLabel`](ksecimportitemlabel.md)—Value contains an item label. This label is not guaranteed to be in any particular format but is typically the same string returned by the [`SecCertificateCopySubjectSummary(_:)`](seccertificatecopysubjectsummary(_:).md) function for the certificate embedded in the identity.
+- [`kSecImportItemIdentity`](./ksecimportitemidentity.md)—Value contains the certificate and private key wrapped together as an identity.
+- [`kSecImportItemCertChain`](./ksecimportitemcertchain.md)—Value contains the chain of certificates relevant to evaluating the trust of the certificate contained in the identity.
+- [`kSecImportItemTrust`](./ksecimportitemtrust.md)—Value contains a trust that’s set up with all of the relevant intermediate certificates. The trust is not guaranteed to evaluate successfully.
+- [`kSecImportItemKeyID`](./ksecimportitemkeyid.md)—Value contains a key ID that’s often the SHA-1 digest of the public key in the identity.
+- [`kSecImportItemLabel`](./ksecimportitemlabel.md)—Value contains an item label. This label is not guaranteed to be in any particular format but is typically the same string returned by the [`SecCertificateCopySubjectSummary(_:)`](./seccertificatecopysubjectsummary%28_%29.md) function for the certificate embedded in the identity.
 
-To get the identity object, use the [`kSecImportItemIdentity`](ksecimportitemidentity.md) key:
+To get the identity object, use the [`kSecImportItemIdentity`](./ksecimportitemidentity.md) key:
 
 **Swift**:
 
@@ -122,9 +123,9 @@ SecTrustRef trust =
     (SecTrustRef)CFBridgingRetain(firstItem[(id)kSecImportItemTrust]);
 ```
 
-See [`Evaluating a Trust and Parsing the Result`](evaluating-a-trust-and-parsing-the-result.md) for details on how to use the trust to evaluate the certificate.
+See [Evaluating a Trust and Parsing the Result](./evaluating-a-trust-and-parsing-the-result.md) for details on how to use the trust to evaluate the certificate.
 
-> **Note**:  In macOS, when it succeeds, the [`SecPKCS12Import(_:_:_:)`](secpkcs12import(_:_:_:).md) function call automatically stores the extracted identity in the default keychain in addition to returning a reference to it as one of the items in the array of dictionaries.
+> **Note**:  In macOS, when it succeeds, the [`SecPKCS12Import(_:_:_:)`](./secpkcs12import%28_,_,_%29.md) function call automatically stores the extracted identity in the default keychain in addition to returning a reference to it as one of the items in the array of dictionaries.
 
 
 ---

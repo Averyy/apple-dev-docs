@@ -1,7 +1,8 @@
 # vertical(layoutSize:subitems:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group of the specified size, containing an array of items arranged in a vertical line.
 
@@ -18,6 +19,10 @@ Creates a group of the specified size, containing an array of items arranged in 
 class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self
 ```
 
+```objc
++ (instancetype) verticalGroupWithLayoutSize:(NSCollectionLayoutSize *) layoutSize subitems:(NSArray<NSCollectionLayoutItem *> *) subitems;
+```
+
 ## Parameters
 
 - `layoutSize`: The group’s size.
@@ -25,7 +30,8 @@ class func vertical(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionL
 
 ## See Also
 
-- [class func vertical(layoutSize: NSCollectionLayoutSize, repeatingSubitem: NSCollectionLayoutItem, count: Int) -> Self](nscollectionlayoutgroup/vertical(layoutsize:repeatingsubitem:count:).md)
+### Creating a vertical group
+- [class func vertical(layoutSize: NSCollectionLayoutSize, repeatingSubitem: NSCollectionLayoutItem, count: Int) -> Self](./vertical%28layoutsize,repeatingsubitem,count%29.md)
   Creates a group that repeats the specified subitem a certain number of times along the vertical axis.
 
 

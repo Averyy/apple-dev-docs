@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object for managing the sharing service picker.
 
@@ -14,13 +15,18 @@ The object for managing the sharing service picker.
 weak var delegate: (any NSSharingServicePickerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSSharingServicePickerDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate object must conform to the [`NSSharingServicePickerDelegate`](nssharingservicepickerdelegate.md) delegate.
+The delegate object must conform to the [`NSSharingServicePickerDelegate`](../nssharingservicepickerdelegate.md) delegate.
 
 ## See Also
 
-- [protocol NSSharingServicePickerDelegate](nssharingservicepickerdelegate.md)
+### Managing the sharing service picker
+- [protocol NSSharingServicePickerDelegate](../nssharingservicepickerdelegate.md)
   An interface for managing content for the macOS share sheet.
 
 

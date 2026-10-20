@@ -1,7 +1,8 @@
 # fill()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uses the current drawing properties to paint the region that the path encloses.
 
@@ -9,7 +10,7 @@ Uses the current drawing properties to paint the region that the path encloses.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Uses the current drawing properties to paint the region that the path encloses.
 
 ```swift
 func fill()
+```
+
+```objc
+- (void) fill;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ This method automatically saves the current graphics state prior to drawing and 
 
 ## See Also
 
-- [func fill(with: CGBlendMode, alpha: CGFloat)](uibezierpath/fill(with:alpha:).md)
+### Drawing paths
+- [func fill(with: CGBlendMode, alpha: CGFloat)](./fill%28with,alpha%29.md)
   Uses the specified blend mode and transparency values to paint the region that the path encloses.
-- [func stroke()](uibezierpath/stroke.md)
+- [func stroke()](./stroke%28%29.md)
   Draws a line along the path using the current drawing properties.
-- [func stroke(with: CGBlendMode, alpha: CGFloat)](uibezierpath/stroke(with:alpha:).md)
+- [func stroke(with: CGBlendMode, alpha: CGFloat)](./stroke%28with,alpha%29.md)
   Draws a line along the path using the specified blend mode and transparency values.
 
 

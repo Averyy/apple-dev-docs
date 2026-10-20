@@ -1,14 +1,15 @@
 # IOUSBHostCIEndpointStateToString
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 const char * IOUSBHostCIEndpointStateToString(IOUSBHostCIEndpointState endpointState);
 ```
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a trust settings key usage structure.
 

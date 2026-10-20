@@ -1,7 +1,8 @@
 # Right
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The right channel.
 
@@ -10,25 +11,26 @@ The right channel.
 
 ## Declaration
 
-```swift
+```c
 Right
 ```
 
 ## See Also
 
-- [RightCenter](audiodriverkit/iouseraudiochannellabel/rightcenter.md)
+### Right Channels
+- [RightCenter](./rightcenter.md)
   The right center channel.
-- [RightTopFront](audiodriverkit/iouseraudiochannellabel/righttopfront.md)
+- [RightTopFront](./righttopfront.md)
   The right top front channel.
-- [VerticalHeightRight](audiodriverkit/iouseraudiochannellabel/verticalheightright.md)
+- [VerticalHeightRight](./verticalheightright.md)
   A synonym for the top-right–front channel.
-- [RightTopMiddle](audiodriverkit/iouseraudiochannellabel/righttopmiddle.md)
+- [RightTopMiddle](./righttopmiddle.md)
   The right top middle channel.
-- [RightTopRear](audiodriverkit/iouseraudiochannellabel/righttoprear.md)
+- [RightTopRear](./righttoprear.md)
   The right top rear channel.
-- [RightTotal](audiodriverkit/iouseraudiochannellabel/righttotal.md)
+- [RightTotal](./righttotal.md)
   A matrix encode of four right channels.
-- [RightWide](audiodriverkit/iouseraudiochannellabel/rightwide.md)
+- [RightWide](./rightwide.md)
   The right wide channel.
 
 

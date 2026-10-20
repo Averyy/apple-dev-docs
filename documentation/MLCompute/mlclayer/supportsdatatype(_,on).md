@@ -1,21 +1,26 @@
 # supportsDataType(_:on:)
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean that indicates whether instances of this layer accept source tensors for the data type and device that you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 class func supportsDataType(_ dataType: MLCDataType, on device: MLCDevice) -> Bool
+```
+
+```objc
++ (BOOL) supportsDataType:(MLCDataType) dataType onDevice:(MLCDevice *) device;
 ```
 
 #### Return Value
@@ -29,13 +34,14 @@ class func supportsDataType(_ dataType: MLCDataType, on device: MLCDevice) -> Bo
 
 ## See Also
 
-- [var layerID: Int](mlclayer/layerid.md)
+### Inspecting a Layer
+- [var layerID: Int](./layerid.md)
   A unique number that identifies each layer.
-- [var label: String](mlclayer/label.md)
+- [var label: String](./label.md)
   A string that helps identify this layer.
-- [var isDebuggingEnabled: Bool](mlclayer/isdebuggingenabled.md)
+- [var isDebuggingEnabled: Bool](./isdebuggingenabled.md)
   A Boolean that indicates whether you choose to debug the layer when executing a graph that includes it.
-- [var deviceType: MLCDeviceType](mlclayer/devicetype.md)
+- [var deviceType: MLCDeviceType](./devicetype.md)
   A device type that indicates where the system executes the layer.
 
 

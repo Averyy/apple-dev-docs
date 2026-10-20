@@ -1,7 +1,8 @@
 # RelevantContext.DateKind
 
 **Framework**: RelevanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values the system uses as additional context for time-based relevance clues.
 
@@ -23,24 +24,25 @@ struct DateKind
 ## Topics
 
 ### Date types
-- [static var `default`: RelevantContext.DateKind](relevantcontext/datekind/default.md)
+- [static var `default`: RelevantContext.DateKind](./datekind/default.md)
   A hint that tells the system to treat a widget with default priority.
-- [static var informational: RelevantContext.DateKind](relevantcontext/datekind/informational.md)
+- [static var informational: RelevantContext.DateKind](./datekind/informational.md)
   A hint that tells the system to treat a widget with slightly lower priority because it displays content and doesn’t require an action.
-- [static var scheduled: RelevantContext.DateKind](relevantcontext/datekind/scheduled.md)
+- [static var scheduled: RelevantContext.DateKind](./datekind/scheduled.md)
   A hint that tells the system to treat a widget with increased priority because it displays important content or requires action.
 
 ## See Also
 
-- [static func date(Date) -> RelevantContext](relevantcontext/date(_:).md)
+### Time clues
+- [static func date(Date) -> RelevantContext](./date%28_%29.md)
   Tells the system a widget is relevant at a specific date.
-- [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(_:kind:).md)
+- [static func date(Date, kind: RelevantContext.DateKind) -> RelevantContext](./date%28_,kind%29.md)
   Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
-- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(interval:kind:).md)
+- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](./date%28interval,kind%29.md)
   Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
-- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
+- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](./date%28range,kind%29.md)
   Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
-- [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
+- [static func date(from: Date, to: Date) -> RelevantContext](./date%28from,to%29.md)
   Tells the system a widget is relevant between two dates.
 
 

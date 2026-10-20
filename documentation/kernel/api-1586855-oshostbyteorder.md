@@ -1,20 +1,22 @@
 # OSHostByteOrder
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int32_t OSHostByteOrder(void);
 ```
 
 ## See Also
 
-- [NXHostByteOrder](1517899-nxhostbyteorder.md)
+### Byte Order Utilities
+- [NXHostByteOrder](./api-1517899-nxhostbyteorder.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isValid(within:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the range is valid for use with the provided attributed string.
 
@@ -19,6 +20,8 @@ Indicates whether the range is valid for use with the provided attributed string
 ```swift
 func isValid(within text: some AttributedStringProtocol) -> Bool
 ```
+
+Available when `Bound` is `AttributedString.Index`.
 
 #### Return Value
 

@@ -1,15 +1,20 @@
 # clock
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var clock: UInt32
+```
+
+```c
+uint32_t clock;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(foveatedStreaming:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
 
@@ -15,9 +16,11 @@ nonisolated
 init<V>(foveatedStreaming session: FoveatedStreamingSession, @ViewBuilder content: @escaping () -> V) where Content == ImmersiveSpaceViewContent<FoveatedStreamingSpaceContent>, Data == Never, V : View
 ```
 
+Available when `Content` conforms to `ImmersiveSpaceContent`, `Data` conforms to `Decodable`, `Data` conforms to `Encodable`, and `Data` conforms to `Hashable`.
+
 #### Discussion
 
-You can add [`RealityKit`](https://developer.apple.com/documentation/realitykit) content to your space that coexists alongside the streamed content, for example:
+You can add [RealityKit](../../RealityKit/RealityKit.md) content to your space that coexists alongside the streamed content, for example:
 
 ```swift
 ImmersiveSpace(foveatedStreaming: session) {

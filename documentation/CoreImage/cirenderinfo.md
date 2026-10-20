@@ -1,7 +1,8 @@
 # CIRenderInfo
 
 **Framework**: Core Image  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An encapsulation of a render task’s timing, passes, and pixels processed.
 
@@ -19,6 +20,10 @@ An encapsulation of a render task’s timing, passes, and pixels processed.
 class CIRenderInfo
 ```
 
+```objc
+@interface CIRenderInfo : NSObject
+```
+
 #### Overview
 
 A `CIRenderInfo` object allows Xcode Quick Look to visualize the render graph with detailed timing information.
@@ -26,35 +31,36 @@ A `CIRenderInfo` object allows Xcode Quick Look to visualize the render graph wi
 ## Topics
 
 ### Instance Properties
-- [var kernelExecutionTime: TimeInterval](cirenderinfo/kernelexecutiontime.md)
+- [var kernelExecutionTime: TimeInterval](./cirenderinfo/kernelexecutiontime.md)
   The amount of time a render spent executing kernels.
-- [var passCount: Int](cirenderinfo/passcount.md)
+- [var passCount: Int](./cirenderinfo/passcount.md)
   The number of passes the render took.
-- [var pixelsProcessed: Int](cirenderinfo/pixelsprocessed.md)
+- [var pixelsProcessed: Int](./cirenderinfo/pixelsprocessed.md)
   The number of pixels the render produced executing kernels.
-- [var kernelCompileTime: TimeInterval](cirenderinfo/kernelcompiletime.md)
+- [var kernelCompileTime: TimeInterval](./cirenderinfo/kernelcompiletime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Generating an animation with a Core Image Render Destination](generating-an-animation-with-a-core-image-render-destination.md)
+### Custom Render Destination
+- [Generating an animation with a Core Image Render Destination](./generating-an-animation-with-a-core-image-render-destination.md)
   Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Render Destination.
-- [class CIRenderDestination](cirenderdestination.md)
+- [class CIRenderDestination](./cirenderdestination.md)
   A specification for configuring all attributes of a render task’s destination and issuing asynchronous render tasks.
-- [class CIRenderTask](cirendertask.md)
+- [class CIRenderTask](./cirendertask.md)
   A single render task.
-- [enum CIRenderDestinationAlphaMode](cirenderdestinationalphamode.md)
+- [enum CIRenderDestinationAlphaMode](./cirenderdestinationalphamode.md)
   Different ways of representing alpha.
 
 

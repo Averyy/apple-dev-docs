@@ -1,7 +1,8 @@
 # token
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An opaque representation of a specific web domain.
 
@@ -22,9 +23,10 @@ Use  a token to share information about an app with other devices in the same Fa
 
 ## See Also
 
-- [let bundleIdentifier: String?](application/bundleidentifier.md)
+### Accessing application information
+- [let bundleIdentifier: String?](./bundleidentifier.md)
   The unique string that identifies this app.
-- [let localizedDisplayName: String?](application/localizeddisplayname.md)
+- [let localizedDisplayName: String?](./localizeddisplayname.md)
   A localized display name for the application.
 
 

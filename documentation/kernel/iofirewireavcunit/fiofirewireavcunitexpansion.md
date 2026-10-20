@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *fIOFireWireAVCUnitExpansion;
 ```
 

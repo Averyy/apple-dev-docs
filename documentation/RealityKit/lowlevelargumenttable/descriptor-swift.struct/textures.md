@@ -1,7 +1,8 @@
 # textures
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ordered list of texture slots in this table.
 
@@ -19,11 +20,12 @@ var textures: [LowLevelArgumentTable.Descriptor.Texture] { get set }
 
 ## See Also
 
-- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](lowlevelargumenttable/descriptor-swift.struct/buffers.md)
+### Specifying resources
+- [var buffers: [LowLevelArgumentTable.Descriptor.Buffer]](./buffers.md)
   The ordered list of buffer slots in this table.
-- [LowLevelArgumentTable.Descriptor.Buffer](lowlevelargumenttable/descriptor-swift.struct/buffer.md)
+- [LowLevelArgumentTable.Descriptor.Buffer](./buffer.md)
   A buffer slot descriptor in an argument table.
-- [LowLevelArgumentTable.Descriptor.Texture](lowlevelargumenttable/descriptor-swift.struct/texture.md)
+- [LowLevelArgumentTable.Descriptor.Texture](./texture.md)
   A texture slot descriptor in an argument table.
 
 

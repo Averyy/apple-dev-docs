@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dynamic maximum number of steps per update is automatically configured throughout runtime based on target platform.
 

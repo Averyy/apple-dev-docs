@@ -1,7 +1,8 @@
 # NWConnectionGroup.State.waiting(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The connection group is waiting for a network path change.
 
@@ -22,13 +23,14 @@ case waiting(NWError)
 
 ## See Also
 
-- [NWConnectionGroup.State.setup](nwconnectiongroup/state-swift.enum/setup.md)
+### States
+- [NWConnectionGroup.State.setup](./setup.md)
   You have not yet started the connection group.
-- [NWConnectionGroup.State.ready](nwconnectiongroup/state-swift.enum/ready.md)
+- [NWConnectionGroup.State.ready](./ready.md)
   The connection group is joined, and ready to send and receive data.
-- [NWConnectionGroup.State.failed(_:)](nwconnectiongroup/state-swift.enum/failed(_:).md)
+- [NWConnectionGroup.State.failed(_:)](./failed%28_%29.md)
   The connection group encountered a fatal error.
-- [NWConnectionGroup.State.cancelled](nwconnectiongroup/state-swift.enum/cancelled.md)
+- [NWConnectionGroup.State.cancelled](./cancelled.md)
   The connection group has been canceled.
 
 

@@ -1,7 +1,8 @@
 # CPInstrumentClusterNavigationSceneOptions
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary of options that indicates your app’s level of support for the CarPlay instrument cluster.
 
@@ -9,9 +10,10 @@ A dictionary of options that indicates your app’s level of support for the Car
 - iOS 26.2+
 - iPadOS 26.2+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `CPInstrumentClusterNavigationSceneOptions`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -19,9 +21,10 @@ When this key is present at the top level of the app’s scene manifest, CarPlay
 
 ## See Also
 
-- [CPSupportsDashboardNavigationScene](information-property-list/uiapplicationscenemanifest/cpsupportsdashboardnavigationscene.md)
+### CarPlay
+- [CPSupportsDashboardNavigationScene](./cpsupportsdashboardnavigationscene.md)
   A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Dashboard.
-- [CPSupportsInstrumentClusterNavigationScene](information-property-list/uiapplicationscenemanifest/cpsupportsinstrumentclusternavigationscene.md)
+- [CPSupportsInstrumentClusterNavigationScene](./cpsupportsinstrumentclusternavigationscene.md)
   A Boolean value that indicates whether your app supports displaying navigation content in the CarPlay Instrument Cluster.
 
 

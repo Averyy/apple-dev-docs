@@ -2,6 +2,7 @@
 
 **Framework**: Model I/O  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes the specified data into the buffer.
@@ -20,9 +21,13 @@ Writes the specified data into the buffer.
 func fill(_ data: Data, offset: Int)
 ```
 
+```objc
+- (void) fillData:(NSData *) data offset:(NSUInteger) offset;
+```
+
 #### Discussion
 
-If the length of the specified data (plus the `offset` parameter, if nonzero) is greater than the buffer’s [`length`](mdlmeshbuffer/length.md) property, this method writes data only up to the end of the buffer.
+If the length of the specified data (plus the `offset` parameter, if nonzero) is greater than the buffer’s [`length`](./length.md) property, this method writes data only up to the end of the buffer.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If the length of the specified data (plus the `offset` parameter, if nonzero) is
 
 ## See Also
 
-- [func map() -> MDLMeshBufferMap](mdlmeshbuffer/map.md)
+### Working with Data in a Buffer
+- [func map() -> MDLMeshBufferMap](./map%28%29.md)
   Provides direct, read-only access to the buffer’s contents.
-- [var length: Int](mdlmeshbuffer/length.md)
+- [var length: Int](./length.md)
   The data size of the buffer, in bytes.
 
 

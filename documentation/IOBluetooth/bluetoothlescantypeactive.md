@@ -1,10 +1,11 @@
 # BluetoothLEScanTypeActive
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var BluetoothLEScanTypeActive: BluetoothLEScanType { get }
 ```
 
+```c
+BluetoothLEScanTypeActive
+```
+
 ## See Also
 
-- [var BluetoothLEScanTypePassive: BluetoothLEScanType](bluetoothlescantypepassive.md)
+### Constants
+- [var BluetoothLEScanTypePassive: BluetoothLEScanType](./bluetoothlescantypepassive.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an observer to the cookie store.
 
@@ -18,15 +19,20 @@ Adds an observer to the cookie store.
 func add(_ observer: any WKHTTPCookieStoreObserver)
 ```
 
+```objc
+- (void) addObserver:(id<WKHTTPCookieStoreObserver>) observer;
+```
+
 ## Parameters
 
 - `observer`: The observer object to add. The cookie store doesn’t maintain a strong reference to the object you specify. You are responsible for removing your observer object before it becomes invalid.
 
 ## See Also
 
-- [func remove(any WKHTTPCookieStoreObserver)](wkhttpcookiestore/remove(_:).md)
+### Observing cookie store changes
+- [func remove(any WKHTTPCookieStoreObserver)](./remove%28_%29.md)
   Removes an observer from the cookie store.
-- [protocol WKHTTPCookieStoreObserver](wkhttpcookiestoreobserver.md)
+- [protocol WKHTTPCookieStoreObserver](../wkhttpcookiestoreobserver.md)
   The methods to adopt in an object that monitors changes to a webpage’s cookies.
 
 

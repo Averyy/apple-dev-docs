@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.Chirality
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The hand sidedness of a pose.
 
@@ -22,26 +23,27 @@ enum Chirality
 ## Topics
 
 ### Getting the handedness
-- [HumanHandPoseObservation.Chirality.left](humanhandposeobservation/chirality-swift.enum/left.md)
-- [HumanHandPoseObservation.Chirality.right](humanhandposeobservation/chirality-swift.enum/right.md)
+- [HumanHandPoseObservation.Chirality.left](./chirality-swift.enum/left.md)
+- [HumanHandPoseObservation.Chirality.right](./chirality-swift.enum/right.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let chirality: HumanHandPoseObservation.Chirality?](humanhandposeobservation/chirality-swift.property.md)
+- [let chirality: HumanHandPoseObservation.Chirality?](./chirality-swift.property.md)
   The chirality, or handedness, of a pose.
-- [var keypoints: MLMultiArray](humanhandposeobservation/keypoints.md)
+- [var keypoints: MLMultiArray](./keypoints.md)
   The keypoints for the observation.
 
 

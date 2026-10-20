@@ -1,7 +1,8 @@
 # SRDeviceUsageReport.ApplicationUsage
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the user’s app activity over a period of time.
 
@@ -16,51 +17,56 @@ An object that describes the user’s app activity over a period of time.
 class ApplicationUsage
 ```
 
+```objc
+@interface SRApplicationUsage : NSObject
+```
+
 #### Overview
 
-Each instance of this class represents an app in a particular app category. For more information, see [`applicationUsageByCategory`](srdeviceusagereport/applicationusagebycategory.md).
+Each instance of this class represents an app in a particular app category. For more information, see [`applicationUsageByCategory`](./applicationusagebycategory.md).
 
 ## Topics
 
 ### Identifying the App
-- [var bundleIdentifier: String?](srdeviceusagereport/applicationusage/bundleidentifier.md)
+- [var bundleIdentifier: String?](./applicationusage/bundleidentifier.md)
   The bundle identifier of the app in use.
-- [var reportApplicationIdentifier: String](srdeviceusagereport/applicationusage/reportapplicationidentifier.md)
+- [var reportApplicationIdentifier: String](./applicationusage/reportapplicationidentifier.md)
   A pseudonymn for a real application identifier.
-- [var supplementalCategories: [SRSupplementalCategory]](srdeviceusagereport/applicationusage/supplementalcategories.md)
+- [var supplementalCategories: [SRSupplementalCategory]](./applicationusage/supplementalcategories.md)
   Categories that provide more information about an app.
-- [class SRSupplementalCategory](srsupplementalcategory.md)
+- [class SRSupplementalCategory](../srsupplementalcategory.md)
   A more detailed category that provides additional context to the app category.
 ### Timing App Use
-- [var usageTime: TimeInterval](srdeviceusagereport/applicationusage/usagetime.md)
+- [var usageTime: TimeInterval](./applicationusage/usagetime.md)
   The amount of time the user uses the app.
-- [var relativeStartTime: TimeInterval](srdeviceusagereport/applicationusage/relativestarttime.md)
+- [var relativeStartTime: TimeInterval](./applicationusage/relativestarttime.md)
   The time the user starts the app relative to the start time of the first app in a report interval.
 ### Inspecting Text Input
-- [var textInputSessions: [SRTextInputSession]](srdeviceusagereport/applicationusage/textinputsessions.md)
+- [var textInputSessions: [SRTextInputSession]](./applicationusage/textinputsessions.md)
   The text input session types that occur during application usage.
-- [class SRTextInputSession](srtextinputsession.md)
+- [class SRTextInputSession](../srtextinputsession.md)
   The characters a user types for a particular keyboard.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applicationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.ApplicationUsage]]](srdeviceusagereport/applicationusagebycategory.md)
+### Analyzing App Use
+- [var applicationUsageByCategory: [SRDeviceUsageReport.CategoryKey : [SRDeviceUsageReport.ApplicationUsage]]](./applicationusagebycategory.md)
   The usage time of apps per category.
-- [SRDeviceUsageReport.CategoryKey](srdeviceusagereport/categorykey.md)
+- [SRDeviceUsageReport.CategoryKey](./categorykey.md)
   Categories of apps or websites that the user uses.
 
 

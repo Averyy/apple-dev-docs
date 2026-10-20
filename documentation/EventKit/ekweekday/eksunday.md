@@ -1,17 +1,20 @@
 # EKSunday
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The value for Sunday.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 4.0+ - Deprecated in 9.0
+- iPadOS 4.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.11
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`EKWeekday.sunday`](./sunday.md) instead.
 
 ## Declaration
 
@@ -19,19 +22,24 @@ The value for Sunday.
 static var EKSunday: EKWeekday { get }
 ```
 
+```c
+EKSunday
+```
+
 ## See Also
 
-- [static var EKMonday: EKWeekday](ekweekday/ekmonday.md)
+### Deprecated
+- [static var EKMonday: EKWeekday](./ekmonday.md)
   The value for Monday.
-- [static var EKTuesday: EKWeekday](ekweekday/ektuesday.md)
+- [static var EKTuesday: EKWeekday](./ektuesday.md)
   The value for Tuesday.
-- [static var EKWednesday: EKWeekday](ekweekday/ekwednesday.md)
+- [static var EKWednesday: EKWeekday](./ekwednesday.md)
   The value for Wednesday.
-- [static var EKThursday: EKWeekday](ekweekday/ekthursday.md)
+- [static var EKThursday: EKWeekday](./ekthursday.md)
   The value for Thursday.
-- [static var EKFriday: EKWeekday](ekweekday/ekfriday.md)
+- [static var EKFriday: EKWeekday](./ekfriday.md)
   The value for Friday.
-- [static var EKSaturday: EKWeekday](ekweekday/eksaturday.md)
+- [static var EKSaturday: EKWeekday](./eksaturday.md)
   The value for Saturday.
 
 

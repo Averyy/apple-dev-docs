@@ -1,7 +1,8 @@
 # image(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the variant of the image that best matches the specified image configuration details.
 
@@ -9,13 +10,17 @@ Retrieves the variant of the image that best matches the specified image configu
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func image(with configuration: UIImage.Configuration) -> UIImage
+```
+
+```objc
+- (UIImage *) imageWithConfiguration:(UIImageConfiguration *) configuration;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ If this method can’t locate an image that matches the specified image configur
 
 ## See Also
 
-- [func image(with: UITraitCollection) -> UIImage](uiimageasset/image(with:)-3dsgf.md)
+### Retrieving an image from an image asset
+- [func image(with: UITraitCollection) -> UIImage](./image%28with%29-3dsgf.md)
   Retrieves the variant of the image that best matches the specified trait collection.
 
 

@@ -1,7 +1,8 @@
 # ForceMode.impulse
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A direct adjustment to a body’s linear or angular momentum.
 
@@ -21,9 +22,9 @@ case impulse
 
 #### Discussion
 
-The quantity that user sets via [`setForce(_:index:)`](forceeffectparameters/setforce(_:index:).md) has the units of mass * distance / time. `impulse` mode causes a change in linear momentum.
+The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of mass * distance / time. `impulse` mode causes a change in linear momentum.
 
-The quantity that user sets via [`setTorque(_:index:)`](forceeffectparameters/settorque(_:index:).md) has the units of mass * distance^2 / time. `impulse` mode causes a change in angular momentum.
+The quantity that user sets via [`setTorque(_:index:)`](../forceeffectparameters/settorque%28_,index%29.md) has the units of mass * distance^2 / time. `impulse` mode causes a change in angular momentum.
 
 
 ---

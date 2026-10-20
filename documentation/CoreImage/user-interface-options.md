@@ -7,41 +7,42 @@ Keys or values for the size of the input parameter controls for a filter view.
 ## Topics
 
 ### Constants
-- [let IKUISizeFlavor: String](../quartz/ikuisizeflavor.md)
-  A key for the size of the controls in a filter view. The associated value  can be  [`IKUISizeMini`](https://developer.apple.com/documentation/quartz/ikuisizemini), [`IKUISizeSmall`](https://developer.apple.com/documentation/quartz/ikuisizesmall), or  [`IKUISizeRegular`](https://developer.apple.com/documentation/quartz/ikuisizeregular).
-- [let IKUISizeMini: String](../quartz/ikuisizemini.md)
+- [let IKUISizeFlavor: String](../Quartz/ikuisizeflavor.md)
+  A key for the size of the controls in a filter view. The associated value  can be  [`IKUISizeMini`](../Quartz/ikuisizemini.md), [`IKUISizeSmall`](../Quartz/ikuisizesmall.md), or  [`IKUISizeRegular`](../Quartz/ikuisizeregular.md).
+- [let IKUISizeMini: String](../Quartz/ikuisizemini.md)
   A very small control.
-- [let IKUISizeSmall: String](../quartz/ikuisizesmall.md)
+- [let IKUISizeSmall: String](../Quartz/ikuisizesmall.md)
   A small control.
-- [let IKUISizeRegular: String](../quartz/ikuisizeregular.md)
+- [let IKUISizeRegular: String](../Quartz/ikuisizeregular.md)
   A standard size control.
-- [let IKUImaxSize: String](../quartz/ikuimaxsize.md)
+- [let IKUImaxSize: String](../Quartz/ikuimaxsize.md)
   The maximum size of a filter view.
-- [let IKUIFlavorAllowFallback: String](../quartz/ikuiflavorallowfallback.md)
+- [let IKUIFlavorAllowFallback: String](../Quartz/ikuiflavorallowfallback.md)
   Substitute controls of another size. The associated value is a Boolean value. If the filter cannot provide a view for the requested size and a fallback is allowed, the filter can use controls of a different size.
 
 ## See Also
 
-- [Filter Attribute Keys](filter-attribute-keys.md)
+### Constants
+- [Filter Attribute Keys](./filter-attribute-keys.md)
   Attributes for a filter and its parameters.
-- [Data Type Attributes](data-type-attributes.md)
+- [Data Type Attributes](./data-type-attributes.md)
   Numeric data types.
-- [Vector Quantity Attributes](vector-quantity-attributes.md)
+- [Vector Quantity Attributes](./vector-quantity-attributes.md)
   Vector data types.
-- [Color Attribute Keys](color-attribute-keys.md)
+- [Color Attribute Keys](./color-attribute-keys.md)
   Color types.
-- [Image Attribute Keys](image-attribute-keys.md)
+- [Image Attribute Keys](./image-attribute-keys.md)
   Image Types
-- [Filter Category Keys](filter-category-keys.md)
+- [Filter Category Keys](./filter-category-keys.md)
   Categories of filters.
-- [Options for Applying a Filter](options-for-applying-a-filter.md)
+- [Options for Applying a Filter](./options-for-applying-a-filter.md)
   Options that control the application of a custom Core Image filter.
-- [User Interface Control Options](user-interface-control-options.md)
+- [User Interface Control Options](./user-interface-control-options.md)
   Sets of controls for various user scenarios.
-- [Filter Parameter Keys](filter-parameter-keys.md)
+- [Filter Parameter Keys](./filter-parameter-keys.md)
   Keys for input parameters to filters.
-- [RAW Image Options](raw-image-options.md)
-  Options for creating a [`CIFilter`](cifilter-swift.class.md) object from RAW image data.
+- [RAW Image Options](./raw-image-options.md)
+  Options for creating a [`CIFilter`](./cifilter-swift.class.md) object from RAW image data.
 
 
 ---

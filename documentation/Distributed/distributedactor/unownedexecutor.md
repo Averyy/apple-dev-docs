@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Retrieve the executor for this distributed actor as an optimized, unowned reference. This API is equivalent to `Actor.unownedExecutor`, however, by default, it intentionally returns `nil` if this actor is a reference to a remote distributed actor, because the executor for remote references is effectively never g
@@ -12,7 +13,7 @@ Retrieve the executor for this distributed actor as an optimized, unowned refere
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ nonisolated
 var unownedExecutor: UnownedSerialExecutor { get }
 ```
 
-#### Custom Implementation Requirements
+#### Custom implementation requirements
 
 This property must always evaluate to the same executor for a given actor instance, and holding on to the actor must keep the executor alive.
 

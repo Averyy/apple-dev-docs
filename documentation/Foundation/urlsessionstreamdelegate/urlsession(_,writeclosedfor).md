@@ -1,7 +1,8 @@
 # urlSession(_:writeClosedFor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the write side of the underlying socket has been closed.
 
@@ -20,6 +21,10 @@ Tells the delegate that the write side of the underlying socket has been closed.
 optional func urlSession(_ session: URLSession, writeClosedFor streamTask: URLSessionStreamTask)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session writeClosedForStreamTask:(NSURLSessionStreamTask *) streamTask;
+```
+
 #### Discussion
 
 This method may be called even if no writes are currently in progress.
@@ -31,7 +36,8 @@ This method may be called even if no writes are currently in progress.
 
 ## See Also
 
-- [func urlSession(URLSession, readClosedFor: URLSessionStreamTask)](urlsessionstreamdelegate/urlsession(_:readclosedfor:).md)
+### Handling closing events
+- [func urlSession(URLSession, readClosedFor: URLSessionStreamTask)](./urlsession%28_,readclosedfor%29.md)
   Tells the delegate that the read side of the underlying socket has been closed.
 
 

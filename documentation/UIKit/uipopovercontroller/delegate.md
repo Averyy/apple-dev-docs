@@ -1,15 +1,18 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate you want to receive popover controller messages.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: For more information, see [`UIPopoverController`](../uipopovercontroller.md).
 
 ## Declaration
 
@@ -17,9 +20,13 @@ The delegate you want to receive popover controller messages.
 weak var delegate: (any UIPopoverControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIPopoverControllerDelegate> delegate;
+```
+
 #### Discussion
 
-The popover controller uses its delegate to determine whether it should dismiss the popover and provides a notification when such an event occurs. For more information about the methods you can implement in your delegate, see [`UIPopoverControllerDelegate`](uipopovercontrollerdelegate.md).
+The popover controller uses its delegate to determine whether it should dismiss the popover and provides a notification when such an event occurs. For more information about the methods you can implement in your delegate, see [`UIPopoverControllerDelegate`](../uipopovercontrollerdelegate.md).
 
 
 ---

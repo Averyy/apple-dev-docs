@@ -1,14 +1,15 @@
 # STACKSHOT_EXCLAVES
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.5+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_EXCLAVES
 ```
 

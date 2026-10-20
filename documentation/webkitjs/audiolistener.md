@@ -1,7 +1,8 @@
 # AudioListener
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioListener
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dopplerFactor](audiolistener/1633639-dopplerfactor.md)
-- [speedOfSound](audiolistener/1631478-speedofsound.md)
+- [dopplerFactor](./audiolistener/api-1633639-dopplerfactor.md)
+- [speedOfSound](./audiolistener/api-1631478-speedofsound.md)
 ### Instance Methods
-- [setOrientation](audiolistener/1632700-setorientation.md)
-- [setPosition](audiolistener/1632563-setposition.md)
-- [setVelocity](audiolistener/1633578-setvelocity.md)
+- [setOrientation](./audiolistener/api-1632700-setorientation.md)
+- [setPosition](./audiolistener/api-1632563-setposition.md)
+- [setVelocity](./audiolistener/api-1633578-setvelocity.md)
 
 
 ---

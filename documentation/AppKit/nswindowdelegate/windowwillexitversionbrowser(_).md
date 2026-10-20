@@ -1,7 +1,8 @@
 # windowWillExitVersionBrowser(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window is about to leave version browsing.
 
@@ -15,19 +16,24 @@ Tells the delegate that the window is about to leave version browsing.
 optional func windowWillExitVersionBrowser(_ notification: Notification)
 ```
 
+```objc
+- (void) windowWillExitVersionBrowser:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: An [`willExitVersionBrowserNotification`](nswindow/willexitversionbrowsernotification.md) notification.
+- `notification`: An [`willExitVersionBrowserNotification`](../nswindow/willexitversionbrowsernotification.md) notification.
 
 ## See Also
 
-- [func window(NSWindow, willResizeForVersionBrowserWithMaxPreferredSize: NSSize, maxAllowedSize: NSSize) -> NSSize](nswindowdelegate/window(_:willresizeforversionbrowserwithmaxpreferredsize:maxallowedsize:).md)
+### Managing Presentation in Version Browsers
+- [func window(NSWindow, willResizeForVersionBrowserWithMaxPreferredSize: NSSize, maxAllowedSize: NSSize) -> NSSize](./window%28_,willresizeforversionbrowserwithmaxpreferredsize,maxallowedsize%29.md)
   Tells the delegate the window will resize for presentation during version browsing.
-- [func windowWillEnterVersionBrowser(Notification)](nswindowdelegate/windowwillenterversionbrowser(_:).md)
+- [func windowWillEnterVersionBrowser(Notification)](./windowwillenterversionbrowser%28_%29.md)
   Tells the delegate the window is about to enter version browsing.
-- [func windowDidEnterVersionBrowser(Notification)](nswindowdelegate/windowdidenterversionbrowser(_:).md)
+- [func windowDidEnterVersionBrowser(Notification)](./windowdidenterversionbrowser%28_%29.md)
   Tells the delegate that the window has entered version browsing.
-- [func windowDidExitVersionBrowser(Notification)](nswindowdelegate/windowdidexitversionbrowser(_:).md)
+- [func windowDidExitVersionBrowser(Notification)](./windowdidexitversionbrowser%28_%29.md)
   Tells the delegate that the window has left version browsing.
 
 

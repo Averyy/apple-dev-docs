@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU3RxDetectDelay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U3 receive detect delay.
 
@@ -10,7 +11,7 @@ The U3 receive detect delay.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU3RxDetectDelay = 100
 ```
 

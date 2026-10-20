@@ -1,7 +1,8 @@
 # NetworkVPNIPSecIdleObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies details about how the system handles idle VPN connections.
 
@@ -14,24 +15,27 @@ Specifies details about how the system handles idle VPN connections.
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNIPSecIdleObject
 ```
 
 ## Properties
 
 - `Disconnect` (boolean): If `true`, disconnects after an on-demand connection idles.
+
+  **Default**: `false`
 - `Timer` (integer): The length of time to wait, in seconds, before disconnecting an on-demand connection.
 
 ## See Also
 
-- [object NetworkVPNIPSecAuthenticationObject](networkvpnipsecauthenticationobject.md)
+### Objects
+- [object NetworkVPNIPSecAuthenticationObject](./networkvpnipsecauthenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNIPSecDNSObject](networkvpnipsecdnsobject.md)
+- [object NetworkVPNIPSecDNSObject](./networkvpnipsecdnsobject.md)
   A dictionary to use for all VPN types.
-- [object NetworkVPNIPSecOnDemandObject](networkvpnipsecondemandobject.md)
+- [object NetworkVPNIPSecOnDemandObject](./networkvpnipsecondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
-- [object NetworkVPNIPSecProxiesObject](networkvpnipsecproxiesobject.md)
+- [object NetworkVPNIPSecProxiesObject](./networkvpnipsecproxiesobject.md)
   The dictionary to use to configure `Proxies` for use with `VPN`.
 
 

@@ -1,7 +1,8 @@
 # dark
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The indication from the vehicle to draw the content in a dark style.
 
@@ -16,9 +17,14 @@ The indication from the vehicle to draw the content in a dark style.
 static var dark: CPContentStyle { get }
 ```
 
+```c
+CPContentStyleDark
+```
+
 ## See Also
 
-- [static var light: CPContentStyle](cpcontentstyle/light.md)
+### Content Styles
+- [static var light: CPContentStyle](./light.md)
   The indication from the vehicle to draw the content in a light style.
 
 

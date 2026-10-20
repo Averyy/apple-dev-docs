@@ -1,18 +1,19 @@
 # DenseMatrix_Double
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains a dense matrix of double-precision, floating-point values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ A structure that contains a dense matrix of double-precision, floating-point val
 struct DenseMatrix_Double
 ```
 
+```c
+typedef struct { ... } DenseMatrix_Double;
+```
+
 #### Overview
 
-You typically use dense matrices to represent the unknowns matrix, *X*, and the right-hand-side matrix, *B*, in the matrix equation *AX = B.* A [`DenseMatrix_Double`](densematrix_double.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
+You typically use dense matrices to represent the unknowns matrix, *X*, and the right-hand-side matrix, *B*, in the matrix equation *AX = B.* A [`DenseMatrix_Double`](./densematrix_double.md) structure provides a pointer to its underlying data, and information about its structure and attributes.
 
-The following code shows an example of how to create a dense matrix structure from an array of double-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseMatrix_Double`](densematrix_double.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use:
+The following code shows an example of how to create a dense matrix structure from an array of double-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](./acceleratemutablebuffer/withunsafemutablebufferpointer%28_%29.md) to pass a pointer to your collection. The [`DenseMatrix_Double`](./densematrix_double.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use:
 
 ```swift
 // An array of `rowCount` x `columnCount` single-precision values.
@@ -46,29 +51,30 @@ matrixValues.withUnsafeMutableBufferPointer {
 ## Topics
 
 ### Initializers
-- [init(rowCount: Int32, columnCount: Int32, columnStride: Int32, attributes: SparseAttributes_t, data: UnsafeMutablePointer<Double>)](densematrix_double/init(rowcount:columncount:columnstride:attributes:data:).md)
+- [init(rowCount: Int32, columnCount: Int32, columnStride: Int32, attributes: SparseAttributes_t, data: UnsafeMutablePointer<Double>)](./densematrix_double/init%28rowcount,columncount,columnstride,attributes,data%29.md)
   Creates a new matrix of double-precision values.
 ### Inspecting a Matrix’s Structure and Data
-- [var rowCount: Int32](densematrix_double/rowcount.md)
+- [var rowCount: Int32](./densematrix_double/rowcount.md)
   The number of rows in the matrix.
-- [var columnCount: Int32](densematrix_double/columncount.md)
+- [var columnCount: Int32](./densematrix_double/columncount.md)
   The number of columns in the matrix.
-- [var columnStride: Int32](densematrix_double/columnstride.md)
+- [var columnStride: Int32](./densematrix_double/columnstride.md)
   The stride between matrix columns, in elements.
-- [var attributes: SparseAttributes_t](densematrix_double/attributes.md)
+- [var attributes: SparseAttributes_t](./densematrix_double/attributes.md)
   The attributes of the matrix, such as whether it’s symmetrical or triangular.
-- [struct SparseAttributes_t](sparseattributes_t.md)
+- [struct SparseAttributes_t](./sparseattributes_t.md)
   A structure that represents the attributes of a matrix.
-- [var data: UnsafeMutablePointer<Double>](densematrix_double/data.md)
+- [var data: UnsafeMutablePointer<Double>](./densematrix_double/data.md)
   The array of double-precision, floating-point values in column-major order.
 
 ## See Also
 
-- [struct DenseMatrix_Float](densematrix_float.md)
+### Creating dense matrices and dense vectors
+- [struct DenseMatrix_Float](./densematrix_float.md)
   A structure that contains a dense matrix of single-precision, floating-point values.
-- [struct DenseVector_Double](densevector_double.md)
+- [struct DenseVector_Double](./densevector_double.md)
   A structure that contains a dense vector of double-precision, floating-point values.
-- [struct DenseVector_Float](densevector_float.md)
+- [struct DenseVector_Float](./densevector_float.md)
   A structure that contains a dense vector of single-precision, floating-point values.
 
 

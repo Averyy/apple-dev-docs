@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The creation date and time of this stroke path.
 

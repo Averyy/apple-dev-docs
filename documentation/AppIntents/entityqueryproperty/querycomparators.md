@@ -1,7 +1,8 @@
 # EntityQueryProperty.QueryComparators
 
 **Framework**: App Intents  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for the type that represents a collection of query comparators.
 
@@ -11,7 +12,7 @@ A type alias for the type that represents a collection of query comparators.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,11 +23,12 @@ typealias QueryComparators = [AnyEntityQueryComparator<Entity, Subject, Property
 
 ## See Also
 
-- [convenience init(KeyPath<Subject, Property>, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](entityqueryproperty/init(_:comparators:).md)
+### Creating queryable properties
+- [convenience init(KeyPath<Subject, Property>, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](./init%28_,comparators%29.md)
   Initializes a EntityQueryProperty that applies to entity property at the provided keyPath.
-- [init(KeyPath<Subject, Property>, entityProvider: (Entity) -> Subject, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](entityqueryproperty/init(_:entityprovider:comparators:).md)
+- [init(KeyPath<Subject, Property>, entityProvider: (Entity) -> Subject, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](./init%28_,entityprovider,comparators%29.md)
   Initializes a EntityQueryProperty that applies to entity property at the provided keyPath.
-- [enum EntityQueryComparatorsBuilder](entityquerycomparatorsbuilder.md)
+- [enum EntityQueryComparatorsBuilder](../entityquerycomparatorsbuilder.md)
   A result builder that allows you to declaratively describe the comparators for a queryable property.
 
 

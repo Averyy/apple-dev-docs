@@ -1,7 +1,8 @@
 # Headphones
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An audio headphones device.
 
@@ -10,7 +11,7 @@ An audio headphones device.
 
 ## Declaration
 
-```swift
+```c
 Headphones
 ```
 

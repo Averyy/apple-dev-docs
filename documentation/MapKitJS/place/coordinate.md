@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latitude and longitude for the place.
 
@@ -10,13 +11,14 @@ The latitude and longitude for the place.
 
 ## Declaration
 
-```swift
+```
 coordinate: Coordinate | null;
 ```
 
 ## See Also
 
-- [region](place/region.md)
+### Location
+- [region](./region.md)
   The geographic region associated with the place.
 
 

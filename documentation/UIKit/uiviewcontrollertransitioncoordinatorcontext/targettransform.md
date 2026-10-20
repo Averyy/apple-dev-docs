@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a transform indicating the amount of rotation being applied during the transition.
@@ -10,13 +11,17 @@ Returns a transform indicating the amount of rotation being applied during the t
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var targetTransform: CGAffineTransform { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGAffineTransform targetTransform;
 ```
 
 #### Return Value

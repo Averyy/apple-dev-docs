@@ -1,7 +1,8 @@
 # UIWindowScene.ResizingRestrictions.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+

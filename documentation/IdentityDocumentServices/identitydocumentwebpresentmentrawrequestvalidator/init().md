@@ -1,14 +1,15 @@
 # init()
 
 **Framework**: IdentityDocumentServices  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a raw request validator.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # init(name:image:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contact with a name and an image.
 
@@ -16,13 +17,17 @@ Creates a contact with a name and an image.
 init(name: String, image: UIImage)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name image:(UIImage *) image;
+```
+
 #### Return Value
 
 A new contact with the provided name and image.
 
 #### Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property.
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property.
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 

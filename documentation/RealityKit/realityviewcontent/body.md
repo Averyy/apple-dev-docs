@@ -1,7 +1,8 @@
 # RealityViewContent.Body
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The default view contents of a reality view, using reality view content.
 
@@ -17,14 +18,14 @@ The default view contents of a reality view, using reality view content.
 
 #### Overview
 
-You don’t create this type directly. [`RealityView`](realityview.md) creates values for you.
+You don’t create this type directly. [`RealityView`](../realityview.md) creates values for you.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [View](../../SwiftUI/view.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GCDualShockGamepad
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports the DualShock 4 controller.
 
@@ -19,73 +20,78 @@ A controller profile that supports the DualShock 4 controller.
 class GCDualShockGamepad
 ```
 
+```objc
+@interface GCDualShockGamepad : GCExtendedGamepad
+```
+
 #### Overview
 
-The DualShock 4 controller profile is similar to an extended gamepad ([`GCExtendedGamepad`](gcextendedgamepad.md)), but has a touchpad with a button and two-finger tracking.
+The DualShock 4 controller profile is similar to an extended gamepad ([`GCExtendedGamepad`](./gcextendedgamepad.md)), but has a touchpad with a button and two-finger tracking.
 
-![An illustration of a DualShock 4 controller showing the touchpad.](/images/com.apple.gamecontroller/media-3830806@2x.png)
+![An illustration of a DualShock 4 controller showing the touchpad.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-3830806@2x.png)
 
-This profile also supports motion — that is, the controller’s [`motion`](gccontroller/motion.md) property is non-nil. If you hold the controller in front of you, the direction of the axes are:
+This profile also supports motion — that is, the controller’s [`motion`](./gccontroller/motion.md) property is non-nil. If you hold the controller in front of you, the direction of the axes are:
 
 - The positive x-axis points to your right.
 - The positive y-axis points up.
 - The positive z-axis starts at the touchpad and points to you.
 
-![An illustration of a DualShock 4 controller showing the directions of the x, y, and z axes.](/images/com.apple.gamecontroller/media-3856422@2x.png)
+![An illustration of a DualShock 4 controller showing the directions of the x, y, and z axes.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-3856422@2x.png)
 
 ## Topics
 
 ### Getting button input
-- [var touchpadButton: GCControllerButtonInput!](gcdualshockgamepad/touchpadbutton.md)
+- [var touchpadButton: GCControllerButtonInput!](./gcdualshockgamepad/touchpadbutton.md)
   The button element on the touchpad of the controller.
 ### Tracking finger locations
-- [var touchpadPrimary: GCControllerDirectionPad!](gcdualshockgamepad/touchpadprimary.md)
+- [var touchpadPrimary: GCControllerDirectionPad!](./gcdualshockgamepad/touchpadprimary.md)
   The location of the player’s primary finger on the touchpad.
-- [var touchpadSecondary: GCControllerDirectionPad!](gcdualshockgamepad/touchpadsecondary.md)
+- [var touchpadSecondary: GCControllerDirectionPad!](./gcdualshockgamepad/touchpadsecondary.md)
   The location of the player’s secondary finger on the touchpad.
 ### Accessing elements by name
-- [DualShock controller input names](dualshock-controller-input-names.md)
+- [DualShock controller input names](./dualshock-controller-input-names.md)
   Constants for names of DualShock 4 elements.
 
 ## Relationships
 
 ### Inherits From
-- [GCExtendedGamepad](gcextendedgamepad.md)
+- [GCExtendedGamepad](./gcextendedgamepad.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [class GCPhysicalInputProfile](./gcphysicalinputprofile.md)
   The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCMouseInput](gcmouseinput.md)
+- [class GCMouseInput](./gcmouseinput.md)
   A controller profile that tracks input from a mouse.
-- [class GCExtendedGamepad](gcextendedgamepad.md)
+- [class GCExtendedGamepad](./gcextendedgamepad.md)
   A controller profile that supports the extended set of gamepad controls.
-- [class GCXboxGamepad](gcxboxgamepad.md)
+- [class GCXboxGamepad](./gcxboxgamepad.md)
   A controller profile that supports the Xbox controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCMicroGamepad](gcmicrogamepad.md)
+- [class GCMicroGamepad](./gcmicrogamepad.md)
   A controller profile that supports the Siri Remote.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

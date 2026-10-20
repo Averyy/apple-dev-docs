@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the movie.
 
@@ -14,11 +15,16 @@ Pauses the movie.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 ## See Also
 
-- [func play()](wkinterfaceinlinemovie/play.md)
+### Controlling Playback
+- [func play()](./play%28%29.md)
   Plays the movie.
-- [func playFromBeginning()](wkinterfaceinlinemovie/playfrombeginning.md)
+- [func playFromBeginning()](./playfrombeginning%28%29.md)
   Plays the movie from the beginning.
 
 

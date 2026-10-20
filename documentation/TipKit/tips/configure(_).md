@@ -1,7 +1,8 @@
 # configure(_:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Loads and configures the persistent state of all tips in your app.
 
@@ -24,7 +25,7 @@ static func configure(_ configuration: [Tips.ConfigurationOption] = []) throws
 
 > **Note**: This function must be called before tips display in your app.
 
-Call this function during app initialization. By default, all tips persist to a default location with a display frequency of [`immediate`](tips/configurationoption/displayfrequency/immediate.md).
+Call this function during app initialization. By default, all tips persist to a default location with a display frequency of [`immediate`](./configurationoption/displayfrequency/immediate.md).
 
 ```swift
 @main
@@ -42,9 +43,9 @@ struct SampleApp: App {
 }
 ```
 
-To change the default location of where your tips persist use the convenience method [`datastoreLocation(_:)`](tips/configurationoption/datastorelocation(_:).md).
+To change the default location of where your tips persist use the convenience method [`datastoreLocation(_:)`](./configurationoption/datastorelocation%28_%29.md).
 
-To change the display frequency use the convenience method [`displayFrequency(_:)`](tips/configurationoption/displayfrequency(_:).md).
+To change the display frequency use the convenience method [`displayFrequency(_:)`](./configurationoption/displayfrequency%28_%29.md).
 
 ```swift
 do {
@@ -66,11 +67,12 @@ catch {
 
 ## See Also
 
-- [static func cloudKitContainer(Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption](tips/configurationoption/cloudkitcontainer(_:).md)
+### Configuration
+- [static func cloudKitContainer(Tips.ConfigurationOption.CloudKitContainer?) -> Tips.ConfigurationOption](./configurationoption/cloudkitcontainer%28_%29.md)
   Sets the CloudKit container used for syncing tips.
-- [static func datastoreLocation(Tips.ConfigurationOption.DatastoreLocation) -> Tips.ConfigurationOption](tips/configurationoption/datastorelocation(_:).md)
+- [static func datastoreLocation(Tips.ConfigurationOption.DatastoreLocation) -> Tips.ConfigurationOption](./configurationoption/datastorelocation%28_%29.md)
   Specify a custom location for your tips datastore.
-- [static func displayFrequency(Tips.ConfigurationOption.DisplayFrequency) -> Tips.ConfigurationOption](tips/configurationoption/displayfrequency(_:).md)
+- [static func displayFrequency(Tips.ConfigurationOption.DisplayFrequency) -> Tips.ConfigurationOption](./configurationoption/displayfrequency%28_%29.md)
   Customizes how often new tips are presented in your app after another tip has been displayed.
 
 

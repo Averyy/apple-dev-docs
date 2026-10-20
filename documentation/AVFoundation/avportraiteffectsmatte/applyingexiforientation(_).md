@@ -1,7 +1,8 @@
 # applyingExifOrientation(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a derivative portrait effects matte after applying the specified Exif orientation.
 
@@ -20,17 +21,22 @@ Returns a derivative portrait effects matte after applying the specified Exif or
 func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> Self
 ```
 
+```objc
+- (instancetype) portraitEffectsMatteByApplyingExifOrientation:(CGImagePropertyOrientation) exifOrientation;
+```
+
 ## Parameters
 
 - `exifOrientation`: One of the standard Exif orientation tags expressing how the portrait effects matte should be rotated or mirrored.
 
 ## See Also
 
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+### Creating a Portrait Effects matte
+- [Configuring camera capture to collect a Portrait Effects matte](../configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
   Prepare your app to capture a portrait effects matte when taking photos.
-- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](avportraiteffectsmatte/init(fromdictionaryrepresentation:).md)
+- [convenience init(fromDictionaryRepresentation: [AnyHashable : Any]) throws](./init%28fromdictionaryrepresentation%29.md)
   Initializes a portrait effects matte instance from auxiliary image information in an image file.
-- [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](avportraiteffectsmatte/replacingportraiteffectsmatte(with:).md)
+- [func replacingPortraitEffectsMatte(with: CVPixelBuffer) throws -> Self](./replacingportraiteffectsmatte%28with%29.md)
   Returns a portrait effects matte by wrapping the replacement pixel buffer.
 
 

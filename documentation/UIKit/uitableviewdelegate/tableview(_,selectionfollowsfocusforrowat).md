@@ -1,7 +1,8 @@
 # tableView(_:selectionFollowsFocusForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to relate selection and focus behavior for the row at the corresponding index path.
 
@@ -17,13 +18,17 @@ Asks the delegate whether to relate selection and focus behavior for the row at 
 optional func tableView(_ tableView: UITableView, selectionFollowsFocusForRowAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView selectionFollowsFocusForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to automatically select the row at the specified index path when focus moves to it; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if you want to automatically select the row at the specified index path when focus moves to it; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the table view’s [`selectionFollowsFocus`](uitableview/selectionfollowsfocus.md) property is [`true`](https://developer.apple.com/documentation/swift/true) and you return [`false`](https://developer.apple.com/documentation/swift/false) from this delegate method, focus still moves to the row when the user selects it. However, when focus moves to the row, the row doesn’t automatically select.
+If the table view’s [`selectionFollowsFocus`](../uitableview/selectionfollowsfocus.md) property is [`true`](../../Swift/true.md) and you return [`false`](../../Swift/false.md) from this delegate method, focus still moves to the row when the user selects it. However, when focus moves to the row, the row doesn’t automatically select.
 
 ## Parameters
 
@@ -32,13 +37,14 @@ If the table view’s [`selectionFollowsFocus`](uitableview/selectionfollowsfocu
 
 ## See Also
 
-- [func tableView(UITableView, canFocusRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:canfocusrowat:).md)
+### Managing table view focus
+- [func tableView(UITableView, canFocusRowAt: IndexPath) -> Bool](./tableview%28_,canfocusrowat%29.md)
   Asks the delegate whether the cell at the specified index path is itself focusable.
-- [func tableView(UITableView, shouldUpdateFocusIn: UITableViewFocusUpdateContext) -> Bool](uitableviewdelegate/tableview(_:shouldupdatefocusin:).md)
+- [func tableView(UITableView, shouldUpdateFocusIn: UITableViewFocusUpdateContext) -> Bool](./tableview%28_,shouldupdatefocusin%29.md)
   Asks the delegate whether the focus update specified by the context is allowed to occur.
-- [func tableView(UITableView, didUpdateFocusIn: UITableViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](uitableviewdelegate/tableview(_:didupdatefocusin:with:).md)
+- [func tableView(UITableView, didUpdateFocusIn: UITableViewFocusUpdateContext, with: UIFocusAnimationCoordinator)](./tableview%28_,didupdatefocusin,with%29.md)
   Tells the delegate that a focus update specified by the context has just occurred.
-- [func indexPathForPreferredFocusedView(in: UITableView) -> IndexPath?](uitableviewdelegate/indexpathforpreferredfocusedview(in:).md)
+- [func indexPathForPreferredFocusedView(in: UITableView) -> IndexPath?](./indexpathforpreferredfocusedview%28in%29.md)
   Asks the delegate for the table view’s index path for the preferred focused view.
 
 

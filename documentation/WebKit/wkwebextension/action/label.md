@@ -1,7 +1,8 @@
 # label
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized display label for the action.
 
@@ -16,6 +17,10 @@ The localized display label for the action.
 
 ```swift
 var label: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * label;
 ```
 
 

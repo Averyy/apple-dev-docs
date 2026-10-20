@@ -1,6 +1,7 @@
 # Testing resubscribing from the subscriptions page
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Verify that your app can reactivate an expired subscription by receiving a transaction callback or inspecting an updated receipt.
 
@@ -10,11 +11,11 @@ Customers can manage their active subscriptions, as well as their expired subscr
 
 In this test scenario, the customer resubscribes to an expired subscription from the Subscriptions page in the App Store.
 
-##### Set Up Testing
+##### Set up testing
 
 This test case requires one or more subscriptions configured in App Store Connect and an expired subscription for your Sandbox Apple Account. If you don’t already have an expired subscription, purchase an auto-renewable subscription and let it expire.
 
-##### Begin Testing
+##### Begin testing
 
 To test resubscribing from the Subscriptions page:
 
@@ -25,20 +26,21 @@ To test resubscribing from the Subscriptions page:
 5. Select a subscription product to resubscribe to.
 6. To complete the purchase, authenticate the payment sheet that appears.
 7. Open your app.
-8. In Xcode, verify that your [`SKPaymentTransactionObserver`](skpaymenttransactionobserver.md) gets a callback on [`paymentQueue(_:updatedTransactions:)`](skpaymenttransactionobserver/paymentqueue(_:updatedtransactions:).md) with a transaction in the [`SKPaymentTransactionState.purchased`](skpaymenttransactionstate/purchased.md) state.
+8. In Xcode, verify that your [`SKPaymentTransactionObserver`](./skpaymenttransactionobserver.md) gets a callback on [`paymentQueue(_:updatedTransactions:)`](./skpaymenttransactionobserver/paymentqueue%28_,updatedtransactions%29.md) with a transaction in the [`SKPaymentTransactionState.purchased`](./skpaymenttransactionstate/purchased.md) state.
 9. Check that your app retrieves and verifies the app receipt. Verify that the successful transaction is in the receipt.
 10. Check that your app makes the Apple In-App Purchase available and updates the subscriber’s status.
-11. In Xcode, check that your app calls [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md). For more information, see [`Finishing a transaction`](finishing-a-transaction.md).
+11. In Xcode, check that your app calls [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md). For more information, see [Finishing a transaction](./finishing-a-transaction.md).
 
-##### Conclude Testing
+##### Conclude testing
 
 This test case requires no cleanup. For auto-renewable subscriptions, you can perform the test again when the subscription expires.
 
 ## See Also
 
-- [Testing an auto-renewable subscription](testing-an-auto-renewable-subscription.md)
+### Subscriptions
+- [Testing an auto-renewable subscription](./testing-an-auto-renewable-subscription.md)
   Verify that your app handles a subscription lapse properly using the accelerated time rates within the sandbox environment.
-- [Testing disabling auto-renew](testing-disabling-auto-renew.md)
+- [Testing disabling auto-renew](./testing-disabling-auto-renew.md)
   Verify that your app receives subscription updates when a user cancels a subscription by verifying the receipt or receiving a notification.
 
 

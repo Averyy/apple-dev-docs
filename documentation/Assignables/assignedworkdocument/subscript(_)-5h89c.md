@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Assignables  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the score annotation that the identifier refers to, if any.
 
@@ -9,7 +10,7 @@ Access the score annotation that the identifier refers to, if any.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ subscript(scoreAnnotationID: AssignedWorkDocument.ScoreAnnotation.ID) -> Assigne
 
 ## See Also
 
-- [subscript(AssignedWorkDocument.Page.ID) -> AssignedWorkDocument.Page?](assignedworkdocument/subscript(_:)-4srtw.md)
+### Accessing work documents
+- [subscript(AssignedWorkDocument.Page.ID) -> AssignedWorkDocument.Page?](./subscript%28_%29-4srtw.md)
   Access the page that the ID points to, if any.
 
 

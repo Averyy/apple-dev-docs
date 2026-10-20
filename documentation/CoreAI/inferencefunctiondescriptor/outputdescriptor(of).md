@@ -1,7 +1,8 @@
 # outputDescriptor(of:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the descriptor for the specified output.
 
@@ -28,9 +29,10 @@ The descriptor for the output, or `nil` if the function doesn’t have an output
 
 ## See Also
 
-- [var outputCount: Int](inferencefunctiondescriptor/outputcount.md)
+### Describing outputs
+- [var outputCount: Int](./outputcount.md)
   The number of outputs the function produces.
-- [var outputNames: [String]](inferencefunctiondescriptor/outputnames.md)
+- [var outputNames: [String]](./outputnames.md)
   The names of the function’s outputs.
 
 

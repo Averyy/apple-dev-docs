@@ -1,7 +1,8 @@
 # AnchoringComponent.Target.hand(_:location:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An anchor point attached to a specific location on the user’s hand.
 
@@ -16,11 +17,12 @@ case hand(AnchoringComponent.Target.Chirality, location: AnchoringComponent.Targ
 
 ## See Also
 
-- [AnchoringComponent.Target.face](anchoringcomponent/target-swift.enum/face.md)
+### Human anchor targets
+- [AnchoringComponent.Target.face](./face.md)
   An anchor point attached to the user’s face.
-- [AnchoringComponent.Target.body](anchoringcomponent/target-swift.enum/body.md)
+- [AnchoringComponent.Target.body](./body.md)
   An anchor point attached to a human body in motion within the scene.
-- [AnchoringComponent.Target.head](anchoringcomponent/target-swift.enum/head.md)
+- [AnchoringComponent.Target.head](./head.md)
   An anchor point attached to the user’s head.
 
 

@@ -1,7 +1,8 @@
 # newAutomaticReloadPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An updated request for an automatic reload payment.
 
@@ -11,17 +12,18 @@ An updated request for an automatic reload payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayAutomaticReloadPaymentRequest newAutomaticReloadPaymentRequest;
 ```
 
 #### Discussion
 
-Provide this object to update the [`automaticReloadPaymentRequest`](applepaypaymentrequest/automaticreloadpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
+Provide this object to update the [`automaticReloadPaymentRequest`](../applepaypaymentrequest/automaticreloadpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
 
 ## See Also
 
-- [ApplePayAutomaticReloadPaymentRequest](applepayautomaticreloadpaymentrequest.md)
+### Updating automatic reload payments
+- [ApplePayAutomaticReloadPaymentRequest](../applepayautomaticreloadpaymentrequest.md)
   A dictionary that represents a request to set up an automatic reload payment, such as a store card top-up or a prepaid account.
 
 

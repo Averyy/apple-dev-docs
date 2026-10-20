@@ -1,21 +1,22 @@
 # AppPriceV2.Relationships.AppPricePoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object AppPriceV2.Relationships.AppPricePoint
 ```
 
 ## Topics
 
 ### Objects
-- [object AppPriceV2.Relationships.AppPricePoint.Data](apppricev2/relationships-data.dictionary/apppricepoint-data.dictionary/data-data.dictionary.md)
+- [object AppPriceV2.Relationships.AppPricePoint.Data](./apppricepoint-data.dictionary/data-data.dictionary.md)
   The request body you use to update an app price v2.
 
 ## Properties
@@ -24,7 +25,8 @@ object AppPriceV2.Relationships.AppPricePoint
 
 ## See Also
 
-- [object AppPriceV2.Relationships.Territory](apppricev2/relationships-data.dictionary/territory-data.dictionary.md)
+### Objects
+- [object AppPriceV2.Relationships.Territory](./territory-data.dictionary.md)
 
 
 ---

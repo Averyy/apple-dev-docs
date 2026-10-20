@@ -1,7 +1,8 @@
 # sourceBundleName
 
 **Framework**: Accessory Live Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the app from which the activity content originated.
 
@@ -17,9 +18,10 @@ let sourceBundleName: String
 
 ## See Also
 
-- [let activityIdentifier: String](accessoryliveactivity/activityidentifier.md)
+### Identifying the activity
+- [let activityIdentifier: String](./activityidentifier.md)
   A string that uniquely identifies the Live Activity.
-- [let sourceBundleIdentifier: String](accessoryliveactivity/sourcebundleidentifier.md)
+- [let sourceBundleIdentifier: String](./sourcebundleidentifier.md)
   The bundle identifier of the app that started the Live Activity.
 
 

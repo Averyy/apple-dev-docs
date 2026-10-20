@@ -1,7 +1,8 @@
 # DoubleFromIntResolver
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,18 +22,19 @@ struct DoubleFromIntResolver
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RangeCheckingResolver](rangecheckingresolver.md)
-- [Resolver](resolver.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RangeCheckingResolver](./rangecheckingresolver.md)
+- [Resolver](./resolver.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct DoubleFromStringResolver](doublefromstringresolver.md)
+### Floating-point resolution
+- [struct DoubleFromStringResolver](./doublefromstringresolver.md)
   A resolver that converts a string into a double and validates the result is within the parameter’s inclusive range.
-- [struct DoubleResolver](doubleresolver.md)
+- [struct DoubleResolver](./doubleresolver.md)
   A resolver that validates a double is within the parameter’s inclusive range.
 
 

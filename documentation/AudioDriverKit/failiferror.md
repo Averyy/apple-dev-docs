@@ -1,14 +1,15 @@
 # FailIfError
 
 **Framework**: AudioDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```c
 #define FailIfError(inError, inAction, inHandler, inMessage)
 ```
 

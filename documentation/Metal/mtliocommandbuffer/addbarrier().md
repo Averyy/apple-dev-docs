@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a barrier into the command buffer.
@@ -18,6 +19,10 @@ Encodes a barrier into the command buffer.
 
 ```swift
 func addBarrier()
+```
+
+```objc
+- (void) addBarrier;
 ```
 
 #### Discussion

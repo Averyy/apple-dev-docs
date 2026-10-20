@@ -1,7 +1,8 @@
 # result()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an asynchronous match with a single signature.
 
@@ -22,15 +23,16 @@ final func result() async -> SHSession.Result
 
 #### Return Value
 
-A [`SHSession.Result`](shsession/result.md) enumeration that indicates the result.
+A [`SHSession.Result`](../shsession/result.md) enumeration that indicates the result.
 
 ## See Also
 
-- [var results: SHSession.Results](shmanagedsession/results.md)
+### Returning queries
+- [var results: SHSession.Results](./results.md)
   The results as an asynchronous sequence of matches.
-- [func cancel()](shmanagedsession/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the currently running match attempt.
-- [func prepare() async](shmanagedsession/prepare.md)
+- [func prepare() async](./prepare%28%29.md)
   Preallocates the resources needed for a match, which increases the responsiveness of matches.
 
 

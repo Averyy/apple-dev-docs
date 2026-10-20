@@ -1,7 +1,8 @@
 # AVAudioUnitReverbPreset
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent preset reverbs.
 
@@ -10,7 +11,7 @@ Constants that represent preset reverbs.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,54 +21,59 @@ Constants that represent preset reverbs.
 enum AVAudioUnitReverbPreset
 ```
 
+```c
+enum AVAudioUnitReverbPreset : NSInteger;
+```
+
 ## Topics
 
 ### Creating a reverb preset
-- [init?(rawValue: Int)](avaudiounitreverbpreset/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudiounitreverbpreset/init%28rawvalue%29.md)
 ### Choosing a room preset
-- [AVAudioUnitReverbPreset.smallRoom](avaudiounitreverbpreset/smallroom.md)
+- [AVAudioUnitReverbPreset.smallRoom](./avaudiounitreverbpreset/smallroom.md)
   A preset that represents a reverb with the acoustic characteristics of a small-sized room environment.
-- [AVAudioUnitReverbPreset.mediumRoom](avaudiounitreverbpreset/mediumroom.md)
+- [AVAudioUnitReverbPreset.mediumRoom](./avaudiounitreverbpreset/mediumroom.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized room environment.
-- [AVAudioUnitReverbPreset.largeRoom](avaudiounitreverbpreset/largeroom.md)
+- [AVAudioUnitReverbPreset.largeRoom](./avaudiounitreverbpreset/largeroom.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized room environment.
-- [AVAudioUnitReverbPreset.largeRoom2](avaudiounitreverbpreset/largeroom2.md)
+- [AVAudioUnitReverbPreset.largeRoom2](./avaudiounitreverbpreset/largeroom2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative large-sized room environment.
 ### Choosing a hall preset
-- [AVAudioUnitReverbPreset.mediumHall](avaudiounitreverbpreset/mediumhall.md)
+- [AVAudioUnitReverbPreset.mediumHall](./avaudiounitreverbpreset/mediumhall.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized hall environment.
-- [AVAudioUnitReverbPreset.largeHall](avaudiounitreverbpreset/largehall.md)
+- [AVAudioUnitReverbPreset.largeHall](./avaudiounitreverbpreset/largehall.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized hall environment.
-- [AVAudioUnitReverbPreset.mediumHall2](avaudiounitreverbpreset/mediumhall2.md)
+- [AVAudioUnitReverbPreset.mediumHall2](./avaudiounitreverbpreset/mediumhall2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
-- [AVAudioUnitReverbPreset.mediumHall3](avaudiounitreverbpreset/mediumhall3.md)
+- [AVAudioUnitReverbPreset.mediumHall3](./avaudiounitreverbpreset/mediumhall3.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
-- [AVAudioUnitReverbPreset.largeHall2](avaudiounitreverbpreset/largehall2.md)
+- [AVAudioUnitReverbPreset.largeHall2](./avaudiounitreverbpreset/largehall2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative large-sized hall environment.
 ### Choosing other presets
-- [AVAudioUnitReverbPreset.plate](avaudiounitreverbpreset/plate.md)
+- [AVAudioUnitReverbPreset.plate](./avaudiounitreverbpreset/plate.md)
   A preset that represents a reverb with the acoustic characteristics of a plate environment.
-- [AVAudioUnitReverbPreset.mediumChamber](avaudiounitreverbpreset/mediumchamber.md)
+- [AVAudioUnitReverbPreset.mediumChamber](./avaudiounitreverbpreset/mediumchamber.md)
   A preset that represents a reverb with the acoustic characteristics of a medium-sized chamber environment.
-- [AVAudioUnitReverbPreset.largeChamber](avaudiounitreverbpreset/largechamber.md)
+- [AVAudioUnitReverbPreset.largeChamber](./avaudiounitreverbpreset/largechamber.md)
   A preset that represents a reverb with the acoustic characteristics of a large-sized chamber environment.
-- [AVAudioUnitReverbPreset.cathedral](avaudiounitreverbpreset/cathedral.md)
+- [AVAudioUnitReverbPreset.cathedral](./avaudiounitreverbpreset/cathedral.md)
   A preset that represents a reverb with the acoustic characteristics of a cathedral environment.
-- [AVAudioUnitReverbPreset.outdoorGeneral](avaudiounitreverbpreset/outdoorgeneral.md)
+- [AVAudioUnitReverbPreset.outdoorGeneral](./avaudiounitreverbpreset/outdoorgeneral.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func loadFactoryPreset(AVAudioUnitReverbPreset)](avaudiounitreverb/loadfactorypreset(_:).md)
+### Loading a reverb preset
+- [func loadFactoryPreset(AVAudioUnitReverbPreset)](./avaudiounitreverb/loadfactorypreset%28_%29.md)
   Configures the audio unit as a reverb preset.
 
 

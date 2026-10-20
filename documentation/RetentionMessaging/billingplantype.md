@@ -1,20 +1,26 @@
 # billingPlanType
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 **Availability**:
 - Retention Messaging API 1.5+
 
 ## Declaration
 
-```swift
+```
 string billingPlanType
 ```
 
+## Possible Values
+
+- `BILLED_UPFRONT`
+- `MONTHLY`
+
 ## Mentions
 
-- [Retention Messaging API changelog](retention-messaging-changelog.md)
+- [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
 
 ---

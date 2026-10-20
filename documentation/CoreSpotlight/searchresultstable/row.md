@@ -1,7 +1,8 @@
 # SearchResultsTable.Row
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -19,25 +20,26 @@ struct Row
 ## Topics
 
 ### Initializers
-- [init(values: [SearchResultsTable.Value])](searchresultstable/row/init(values:).md)
+- [init(values: [SearchResultsTable.Value])](./row/init%28values%29.md)
 ### Instance Properties
-- [let values: [SearchResultsTable.Value]](searchresultstable/row/values.md)
+- [let values: [SearchResultsTable.Value]](./row/values.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let header: String?](searchresultstable/header.md)
+### Getting the column and row details
+- [let header: String?](./header.md)
   What this table represents (e.g., “Emails per month from John”).
-- [let columns: [SearchResultsTable.Column]](searchresultstable/columns.md)
+- [let columns: [SearchResultsTable.Column]](./columns.md)
   Column definitions with name and type hint.
-- [let rows: [SearchResultsTable.Row]](searchresultstable/rows.md)
+- [let rows: [SearchResultsTable.Row]](./rows.md)
   Data rows — each row’s values array matches `columns` by index.
-- [SearchResultsTable.Column](searchresultstable/column.md)
+- [SearchResultsTable.Column](./column.md)
 
 
 ---

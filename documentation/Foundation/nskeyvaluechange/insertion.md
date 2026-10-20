@@ -1,7 +1,8 @@
 # NSKeyValueChange.insertion
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an object has been inserted into the to-many relationship that is being observed.
 
@@ -20,13 +21,18 @@ Indicates that an object has been inserted into the to-many relationship that is
 case insertion
 ```
 
+```c
+NSKeyValueChangeInsertion
+```
+
 ## See Also
 
-- [NSKeyValueChange.setting](nskeyvaluechange/setting.md)
+### Constants
+- [NSKeyValueChange.setting](./setting.md)
   Indicates that the value of the observed key path was set to a new value. This change can occur when observing an attribute of an object, as well as properties that specify to-one and to-many relationships.
-- [NSKeyValueChange.removal](nskeyvaluechange/removal.md)
+- [NSKeyValueChange.removal](./removal.md)
   Indicates that an object has been removed from the to-many relationship that is being observed.
-- [NSKeyValueChange.replacement](nskeyvaluechange/replacement.md)
+- [NSKeyValueChange.replacement](./replacement.md)
   Indicates that an object has been replaced in the to-many relationship that is being observed.
 
 

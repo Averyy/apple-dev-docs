@@ -1,7 +1,8 @@
 # homeManager(_:didRemove:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the home manager removed a home.
 
@@ -19,6 +20,10 @@ Tells the delegate that the home manager removed a home.
 optional func homeManager(_ manager: HMHomeManager, didRemove home: HMHome)
 ```
 
+```objc
+- (void) homeManager:(HMHomeManager *) manager didRemoveHome:(HMHome *) home;
+```
+
 ## Parameters
 
 - `manager`: The home manager that removed the home.
@@ -26,11 +31,12 @@ optional func homeManager(_ manager: HMHomeManager, didRemove home: HMHome)
 
 ## See Also
 
-- [func homeManagerDidUpdateHomes(HMHomeManager)](hmhomemanagerdelegate/homemanagerdidupdatehomes(_:).md)
+### Adding and removing homes
+- [func homeManagerDidUpdateHomes(HMHomeManager)](./homemanagerdidupdatehomes%28_%29.md)
   Tells the delegate that the home manager updated its collection of homes.
-- [func homeManager(HMHomeManager, didAdd: HMHome)](hmhomemanagerdelegate/homemanager(_:didadd:).md)
+- [func homeManager(HMHomeManager, didAdd: HMHome)](./homemanager%28_,didadd%29.md)
   Tells the delegate that the home manager added a home.
-- [func homeManagerDidUpdatePrimaryHome(HMHomeManager)](hmhomemanagerdelegate/homemanagerdidupdateprimaryhome(_:).md)
+- [func homeManagerDidUpdatePrimaryHome(HMHomeManager)](./homemanagerdidupdateprimaryhome%28_%29.md)
   Tells the delegate that the home manager updated its primary home.
 
 

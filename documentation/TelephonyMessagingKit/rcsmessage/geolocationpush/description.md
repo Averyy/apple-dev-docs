@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the location.
 

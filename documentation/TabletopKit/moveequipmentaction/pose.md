@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position the equipment being moved to
 

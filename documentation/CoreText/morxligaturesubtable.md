@@ -1,16 +1,17 @@
 # MorxLigatureSubtable
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,40 +19,45 @@
 struct MorxLigatureSubtable
 ```
 
+```c
+struct MorxLigatureSubtable;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](morxligaturesubtable/init.md)
-- [init(header: STXHeader, ligatureActionTableOffset: UInt32, componentTableOffset: UInt32, ligatureTableOffset: UInt32)](morxligaturesubtable/init(header:ligatureactiontableoffset:componenttableoffset:ligaturetableoffset:).md)
+- [init()](./morxligaturesubtable/init%28%29.md)
+- [init(header: STXHeader, ligatureActionTableOffset: UInt32, componentTableOffset: UInt32, ligatureTableOffset: UInt32)](./morxligaturesubtable/init%28header,ligatureactiontableoffset,componenttableoffset,ligaturetableoffset%29.md)
 ### Instance Properties
-- [var componentTableOffset: UInt32](morxligaturesubtable/componenttableoffset.md)
-- [var header: STXHeader](morxligaturesubtable/header.md)
-- [var ligatureActionTableOffset: UInt32](morxligaturesubtable/ligatureactiontableoffset.md)
-- [var ligatureTableOffset: UInt32](morxligaturesubtable/ligaturetableoffset.md)
+- [var componentTableOffset: UInt32](./morxligaturesubtable/componenttableoffset.md)
+- [var header: STXHeader](./morxligaturesubtable/header.md)
+- [var ligatureActionTableOffset: UInt32](./morxligaturesubtable/ligatureactiontableoffset.md)
+- [var ligatureTableOffset: UInt32](./morxligaturesubtable/ligaturetableoffset.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

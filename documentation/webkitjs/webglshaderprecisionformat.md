@@ -1,7 +1,8 @@
 # WebGLShaderPrecisionFormat
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface WebGLShaderPrecisionFormat
 ```
 
 ## Topics
 
 ### Instance Properties
-- [precision](webglshaderprecisionformat/1631687-precision.md)
-- [rangeMax](webglshaderprecisionformat/1628980-rangemax.md)
-- [rangeMin](webglshaderprecisionformat/1630009-rangemin.md)
+- [precision](./webglshaderprecisionformat/api-1631687-precision.md)
+- [rangeMax](./webglshaderprecisionformat/api-1628980-rangemax.md)
+- [rangeMin](./webglshaderprecisionformat/api-1630009-rangemin.md)
 
 
 ---

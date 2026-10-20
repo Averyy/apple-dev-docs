@@ -1,7 +1,8 @@
 # unkeyedResources
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The library’s animation resources that don’t have a queryable name.
 
@@ -25,11 +26,12 @@ An array of the animation resources that don’t have a key; otherwise, `nil`.
 
 ## See Also
 
-- [var animations: AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animations.md)
+### Accessing animations
+- [var animations: AnimationLibraryComponent.AnimationCollection](./animations.md)
   The collection of animations an entity can play.
-- [var defaultAnimation: AnimationResource?](animationlibrarycomponent/defaultanimation.md)
+- [var defaultAnimation: AnimationResource?](./defaultanimation.md)
   The default animation resource.
-- [var defaultKey: String?](animationlibrarycomponent/defaultkey.md)
+- [var defaultKey: String?](./defaultkey.md)
   The name of the default animation resource.
 
 

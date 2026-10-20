@@ -1,10 +1,11 @@
 # kBluetoothLESecurityManagerUserInputCapabilityNoInput
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothLESecurityManagerUserInputCapabilityNoInput: BluetoothLESecurityManagerUserInputCapability { get }
 ```
 
+```c
+kBluetoothLESecurityManagerUserInputCapabilityNoInput
+```
+
 ## See Also
 
-- [var kBluetoothLESecurityManagerUserInputCapabilityKeyboard: BluetoothLESecurityManagerUserInputCapability](kbluetoothlesecuritymanageruserinputcapabilitykeyboard.md)
-- [var kBluetoothLESecurityManagerUserInputCapabilityYesNo: BluetoothLESecurityManagerUserInputCapability](kbluetoothlesecuritymanageruserinputcapabilityyesno.md)
+### Constants
+- [var kBluetoothLESecurityManagerUserInputCapabilityKeyboard: BluetoothLESecurityManagerUserInputCapability](./kbluetoothlesecuritymanageruserinputcapabilitykeyboard.md)
+- [var kBluetoothLESecurityManagerUserInputCapabilityYesNo: BluetoothLESecurityManagerUserInputCapability](./kbluetoothlesecuritymanageruserinputcapabilityyesno.md)
 
 
 ---

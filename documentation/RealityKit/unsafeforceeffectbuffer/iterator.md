@@ -1,7 +1,8 @@
 # UnsafeForceEffectBuffer.Iterator
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Iterates over all elements of the `UnsafeForceEffectBuffer`.
 
@@ -22,7 +23,7 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 
 ---

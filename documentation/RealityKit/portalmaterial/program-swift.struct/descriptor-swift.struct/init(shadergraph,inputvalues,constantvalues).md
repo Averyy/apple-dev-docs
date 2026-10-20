@@ -1,7 +1,8 @@
 # init(shaderGraph:inputValues:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor with the given shader graph and optional initial values.
 

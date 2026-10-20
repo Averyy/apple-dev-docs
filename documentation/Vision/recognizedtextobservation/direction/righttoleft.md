@@ -1,7 +1,8 @@
 # RecognizedTextObservation.Direction.rightToLeft
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -19,8 +20,9 @@ case rightToLeft
 
 ## See Also
 
-- [RecognizedTextObservation.Direction.leftToRight](recognizedtextobservation/direction/lefttoright.md)
-- [RecognizedTextObservation.Direction.topToBottom](recognizedtextobservation/direction/toptobottom.md)
+### Directions
+- [RecognizedTextObservation.Direction.leftToRight](./lefttoright.md)
+- [RecognizedTextObservation.Direction.topToBottom](./toptobottom.md)
 
 
 ---

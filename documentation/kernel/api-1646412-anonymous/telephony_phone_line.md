@@ -1,14 +1,15 @@
 # TELEPHONY_PHONE_LINE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 TELEPHONY_PHONE_LINE = 0x0501
 ```
 

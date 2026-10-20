@@ -1,7 +1,8 @@
 # ComputeGraphSharedUniforms
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A transient component that stores typed uniform values shared across all ComputeGraph simulations.
 
@@ -27,23 +28,23 @@ You add scene-wide uniforms via a `ComputeGraphSharedUniforms` — such as gravi
 ## Topics
 
 ### Initializers
-- [init()](computegraphshareduniforms/init.md)
+- [init()](./computegraphshareduniforms/init%28%29.md)
   Creates an empty `ComputeGraphSharedUniforms` component.
 ### Instance Methods
-- [func setUniform<V>(borrowing V)](computegraphshareduniforms/setuniform(_:).md)
+- [func setUniform<V>(borrowing V)](./computegraphshareduniforms/setuniform%28_%29.md)
   Stores a uniform value, replacing any previously stored value of the same type.
-- [func setUniformTransform<V>((V, Entity) -> V)](computegraphshareduniforms/setuniformtransform(_:).md)
+- [func setUniformTransform<V>((V, Entity) -> V)](./computegraphshareduniforms/setuniformtransform%28_%29.md)
   Registers a closure that transforms a uniform value of type `V` on a per-entity basis.
-- [func setUniformTransform<V>(type: V.Type, transform: (inout MutableRawSpan, Entity) -> Void)](computegraphshareduniforms/setuniformtransform(type:transform:).md)
+- [func setUniformTransform<V>(type: V.Type, transform: (inout MutableRawSpan, Entity) -> Void)](./computegraphshareduniforms/setuniformtransform%28type,transform%29.md)
   Registers a raw-data transformer closure for a uniform of type `V`.
-- [func uniform<V>(V.Type) -> V?](computegraphshareduniforms/uniform(_:).md)
+- [func uniform<V>(V.Type) -> V?](./computegraphshareduniforms/uniform%28_%29.md)
   Returns the stored uniform value for the given type, or `nil` if none has been set.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [TransientComponent](transientcomponent.md)
+- [Component](./component.md)
+- [TransientComponent](./transientcomponent.md)
 
 
 ---

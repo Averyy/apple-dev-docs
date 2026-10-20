@@ -1,7 +1,8 @@
 # achievements
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All achievements that have been associated with this activity.
 
@@ -19,19 +20,24 @@ All achievements that have been associated with this activity.
 var achievements: Set<GKAchievement> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<GKAchievement *> * achievements;
+```
+
 #### Discussion
 
 Progress of each achievement will be reported when the activity ends.
 
 ## See Also
 
-- [func removeAchievements([GKAchievement])](gkgameactivity/removeachievements(_:).md)
+### Getting and removing achievements
+- [func removeAchievements([GKAchievement])](./removeachievements%28_%29.md)
   Removes all achievements if they exist.
-- [func progress(on: GKAchievement) -> Double](gkgameactivity/progress(on:).md)
+- [func progress(on: GKAchievement) -> Double](./progress%28on%29.md)
   Get the achievement progress from a specific achievement of the local player if previously set.
-- [func setProgress(on: GKAchievement, to: Double)](gkgameactivity/setprogress(on:to:).md)
+- [func setProgress(on: GKAchievement, to: Double)](./setprogress%28on,to%29.md)
   Set a progress for an achievement for a player.
-- [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
+- [func setAchievementCompleted(GKAchievement)](./setachievementcompleted%28_%29.md)
   Set progress to 100% for an achievement for a player.
 
 

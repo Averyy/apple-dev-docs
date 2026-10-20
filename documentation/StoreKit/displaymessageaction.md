@@ -1,7 +1,8 @@
 # DisplayMessageAction
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An instance that asks StoreKit to display an App Store message, if appropriate.
 
@@ -20,11 +21,11 @@ struct DisplayMessageAction
 
 #### Overview
 
-A StoreKit message represents a sheet that appears over your app to display important information from the App Store to the customer. Messages have a reason, indicated by the [`reason`](message/reason-swift.property.md) value. StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default. Your app can optionally delay or suppress App Store messages by listening for the messages and determining the appropriate time to ask the system to display them.
+A StoreKit message represents a sheet that appears over your app to display important information from the App Store to the customer. Messages have a reason, indicated by the [`reason`](./message/reason-swift.property.md) value. StoreKit retrieves any messages from the App Store each time your app launches, and presents them by default. Your app can optionally delay or suppress App Store messages by listening for the messages and determining the appropriate time to ask the system to display them.
 
-To use this API, read the [`displayStoreKitMessage`](https://developer.apple.com/documentation/swiftui/environmentvalues/displaystorekitmessage) environment value to get an instance of the structure for a given [`Environment`](https://developer.apple.com/documentation/swiftui/environment). Call the instance to ask StoreKit to display the App Store message. StoreKit displays a message only if it’s still pending. It doesn’t display expired messages. You call the instance directly because it defines a [`callAsFunction(_:)`](displaymessageaction/callasfunction(_:).md) method that Swift calls when you call the instance.
+To use this API, read the [`displayStoreKitMessage`](../SwiftUI/environmentvalues/displaystorekitmessage.md) environment value to get an instance of the structure for a given [`Environment`](../SwiftUI/environment.md). Call the instance to ask StoreKit to display the App Store message. StoreKit displays a message only if it’s still pending. It doesn’t display expired messages. You call the instance directly because it defines a [`callAsFunction(_:)`](./displaymessageaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 
-> **Note**:  If your app uses [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) and not SwiftUI views, use [`display(in:)`](message/display(in:).md) instead.
+> **Note**:  If your app uses [`UIWindowScene`](../UIKit/uiwindowscene.md) and not SwiftUI views, use [`display(in:)`](./message/display%28in%29.md) instead.
 
 The following code example listens for App Store messages and decides whether to defer them by saving them to an array, display them immediately, or suppress them. A private function that the app calls according to its logic asks the system to display all the deferred messages.
 
@@ -85,20 +86,21 @@ struct MessageExampleView: View {
 ## Topics
 
 ### Displaying the message
-- [func callAsFunction(Message) throws](displaymessageaction/callasfunction(_:).md)
+- [func callAsFunction(Message) throws](./displaymessageaction/callasfunction%28_%29.md)
   Tells StoreKit to display the App Store message, if appropriate.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Message](message.md)
+### Messages
+- [struct Message](./message.md)
   An instance for receiving and displaying App Store messages in your app.
-- [Message.Reason](message/reason-swift.struct.md)
+- [Message.Reason](./message/reason-swift.struct.md)
   Reasons for the App Store messages.
 
 

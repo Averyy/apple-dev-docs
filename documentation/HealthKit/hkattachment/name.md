@@ -1,7 +1,8 @@
 # name
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the attached file.
 
@@ -19,19 +20,24 @@ The name of the attached file.
 var name: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var identifier: UUID](hkattachment/identifier.md)
+### Accessing attachment data
+- [var identifier: UUID](./identifier.md)
   The universally unique identifier for the attached file.
-- [var contentType: UTType](hkattachment/contenttype.md)
+- [var contentType: UTType](./contenttype.md)
   The type of data stored in the attached file.
-- [var size: Int](hkattachment/size.md)
+- [var size: Int](./size.md)
   The attachment’s size (in bytes).
-- [var creationDate: Date](hkattachment/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The attachment’s creation date.
-- [var metadata: [String : Any]?](hkattachment/metadata.md)
+- [var metadata: [String : Any]?](./metadata.md)
   Additional data associated with the attachment in the HealthKit store.
-- [HKAttachment.AsyncBytes](hkattachment/asyncbytes.md)
+- [HKAttachment.AsyncBytes](./asyncbytes.md)
   An asynchronous sequence that returns the attached file as a series of bytes.
 
 

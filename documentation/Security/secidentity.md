@@ -1,7 +1,8 @@
 # SecIdentity
 
 **Framework**: Security  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract Core Foundation-type object representing an identity.
 
@@ -20,19 +21,23 @@ An abstract Core Foundation-type object representing an identity.
 class SecIdentity
 ```
 
+```c
+typedef struct __SecIdentity * SecIdentityRef;
+```
+
 ## Mentions
 
-- [Storing an Identity in the Keychain](storing-an-identity-in-the-keychain.md)
+- [Storing an Identity in the Keychain](./storing-an-identity-in-the-keychain.md)
 
 #### Overview
 
-A [`SecIdentity`](secidentity.md) object contains a [`SecKey`](seckey.md) object and an associated [`SecCertificate`](seccertificate.md) object.
+A [`SecIdentity`](./secidentity.md) object contains a [`SecKey`](./seckey.md) object and an associated [`SecCertificate`](./seccertificate.md) object.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UITabBarItemStateAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data object containing the specific customizations for tab bar items in a particular state.
 
@@ -19,48 +20,53 @@ A data object containing the specific customizations for tab bar items in a part
 class UITabBarItemStateAppearance
 ```
 
+```objc
+@interface UITabBarItemStateAppearance : NSObject
+```
+
 #### Overview
 
-Use a [`UITabBarItemStateAppearance`](uitabbaritemstateappearance.md) object to customize the appearance of your tab bar items and the badges they display. Don’t create [`UITabBarItemStateAppearance`](uitabbaritemstateappearance.md) objects yourself. Instead, create a [`UITabBarItemAppearance`](uitabbaritemappearance.md) object and use its properties to fetch the appearance attributes for tab bar items in a particular state. For example, to set the attributes for items in the normal state, configure the object in the [`normal`](uitabbaritemappearance/normal.md) property.
+Use a [`UITabBarItemStateAppearance`](./uitabbaritemstateappearance.md) object to customize the appearance of your tab bar items and the badges they display. Don’t create [`UITabBarItemStateAppearance`](./uitabbaritemstateappearance.md) objects yourself. Instead, create a [`UITabBarItemAppearance`](./uitabbaritemappearance.md) object and use its properties to fetch the appearance attributes for tab bar items in a particular state. For example, to set the attributes for items in the normal state, configure the object in the [`normal`](./uitabbaritemappearance/normal.md) property.
 
 ## Topics
 
 ### Configuring the item’s title
-- [var titleTextAttributes: [NSAttributedString.Key : Any]](uitabbaritemstateappearance/titletextattributes.md)
+- [var titleTextAttributes: [NSAttributedString.Key : Any]](./uitabbaritemstateappearance/titletextattributes.md)
   String attributes to apply to the text of the tab bar item’s title.
-- [var titlePositionAdjustment: UIOffset](uitabbaritemstateappearance/titlepositionadjustment.md)
+- [var titlePositionAdjustment: UIOffset](./uitabbaritemstateappearance/titlepositionadjustment.md)
   The additional amount by which to offset the title horizontally and vertically.
 ### Tinting the item’s icon
-- [var iconColor: UIColor?](uitabbaritemstateappearance/iconcolor.md)
+- [var iconColor: UIColor?](./uitabbaritemstateappearance/iconcolor.md)
   The color of item icons.
 ### Configuring the badge appearance
-- [var badgeTextAttributes: [NSAttributedString.Key : Any]](uitabbaritemstateappearance/badgetextattributes.md)
+- [var badgeTextAttributes: [NSAttributedString.Key : Any]](./uitabbaritemstateappearance/badgetextattributes.md)
   String attributes to apply to the text of the item’s badge.
-- [var badgeBackgroundColor: UIColor?](uitabbaritemstateappearance/badgebackgroundcolor.md)
+- [var badgeBackgroundColor: UIColor?](./uitabbaritemstateappearance/badgebackgroundcolor.md)
   The background color of the badge.
-- [var badgeTitlePositionAdjustment: UIOffset](uitabbaritemstateappearance/badgetitlepositionadjustment.md)
+- [var badgeTitlePositionAdjustment: UIOffset](./uitabbaritemstateappearance/badgetitlepositionadjustment.md)
   The additional amount by which to offset the badge’s title horizontally and vertically.
-- [var badgePositionAdjustment: UIOffset](uitabbaritemstateappearance/badgepositionadjustment.md)
+- [var badgePositionAdjustment: UIOffset](./uitabbaritemstateappearance/badgepositionadjustment.md)
   The additional amount by which to offset the badge horizontally and vertically.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UITabBarAppearance](uitabbarappearance.md)
+### Tab bar appearance
+- [class UITabBarAppearance](./uitabbarappearance.md)
   An object for customizing the appearance of a tab bar.
-- [class UITabBarItemAppearance](uitabbaritemappearance.md)
+- [class UITabBarItemAppearance](./uitabbaritemappearance.md)
   An object for customizing the appearance of tab bar items.
 
 

@@ -1,7 +1,8 @@
 # decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the playable content starting from the cursor position.
 
@@ -14,25 +15,30 @@ The duration of the playable content starting from the cursor position.
 optional var decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime decodeTimeOfLastSampleReachableByForwardSteppingThatIsAlreadyLoadedByByteSource;
+```
+
 #### Discussion
 
 Indicates the time difference between the current cursor decode timestamp (DTS) and the last reachable sample DTS. This is necessary to play certain assets such as those with HTTP URLs, because it indicates what samples the byte source has already loaded.
 
 ## See Also
 
-- [var presentationTimeStamp: CMTime](mesamplecursor/presentationtimestamp.md)
+### Inspecting a sample cursor
+- [var presentationTimeStamp: CMTime](./presentationtimestamp.md)
   The presentation timestamp (PTS) of the sample at the current position of the cursor.
-- [var decodeTimeStamp: CMTime](mesamplecursor/decodetimestamp.md)
+- [var decodeTimeStamp: CMTime](./decodetimestamp.md)
   The decode timestamp (DTS) of the sample at the current position of the cursor.
-- [var currentSampleDuration: CMTime](mesamplecursor/currentsampleduration.md)
+- [var currentSampleDuration: CMTime](./currentsampleduration.md)
   The decode duration of the sample at the current position.
-- [var currentSampleFormatDescription: CMFormatDescription?](mesamplecursor/currentsampleformatdescription.md)
+- [var currentSampleFormatDescription: CMFormatDescription?](./currentsampleformatdescription.md)
   The format description for the sample at the current position of the cursor.
-- [var syncInfo: AVSampleCursorSyncInfo](mesamplecursor/syncinfo.md)
+- [var syncInfo: AVSampleCursorSyncInfo](./syncinfo.md)
   Decoder synchronization information about the sample the cursor points to.
-- [var dependencyInfo: AVSampleCursorDependencyInfo](mesamplecursor/dependencyinfo.md)
+- [var dependencyInfo: AVSampleCursorDependencyInfo](./dependencyinfo.md)
   Dependency information about the sample the cursor points to.
-- [var hevcDependencyInfo: MEHEVCDependencyInfo](mesamplecursor/hevcdependencyinfo.md)
+- [var hevcDependencyInfo: MEHEVCDependencyInfo](./hevcdependencyinfo.md)
   Additional information that’s necessary to recover complete sample dependency information.
 
 

@@ -1,7 +1,8 @@
 # init(ids:icon:placeholderIcon:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using their promotional images and a custom placeholder icon.
 
@@ -25,23 +26,24 @@ init(ids productIDs: some Collection<String>, @ViewBuilder icon: @escaping (Prod
 
 The store view shows the custom `placeholderIcon` until all products finish loading. After the products finish loading, the view asynchronously loads and displays each product’s promotional image.
 
-Use the [`ProductIconPhase`](producticonphase.md) to monitor the current loading state of a product’s promotional image, and provide a view for each phase. Consider returning the view provided in the `placeholderIcon` closure for during the [`ProductIconPhase.loading`](producticonphase/loading.md) phase. For more information, see [`ProductIconPhase`](producticonphase.md).
+Use the [`ProductIconPhase`](../producticonphase.md) to monitor the current loading state of a product’s promotional image, and provide a view for each phase. Consider returning the view provided in the `placeholderIcon` closure for during the [`ProductIconPhase.loading`](../producticonphase/loading.md) phase. For more information, see [`ProductIconPhase`](../producticonphase.md).
 
 If a product is unavailable, the store view uses the view that the `placeholderIcon` closure provides as a fallback.
 
 ## Parameters
 
 - `productIDs`: The product identifiers to load from the App Store.
-- `icon`: A closure that receives a [`Product`](product.md) and a [`ProductIconPhase`](producticonphase.md) as input. The [`ProductIconPhase`](producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
+- `icon`: A closure that receives a [`Product`](../product.md) and a [`ProductIconPhase`](../producticonphase.md) as input. The [`ProductIconPhase`](../producticonphase.md) indicates the state of the loading operation of the product’s promotional image. The closure returns the view to display for the given product and phase value.
 - `placeholderIcon`: A closure that returns the view that the store view uses while the products are loading. The store view uses the same placeholder image for all the products.
 
 ## See Also
 
-- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool)](storeview/init(ids:preferspromotionalicon:).md)
+### Creating store views that load products
+- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool)](./init%28ids,preferspromotionalicon%29.md)
   Creates a view to load and merchandise a collection of products from the App Store using product identifiers.
-- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](storeview/init(ids:preferspromotionalicon:icon:).md)
+- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon)](./init%28ids,preferspromotionalicon,icon%29.md)
   Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using a custom image.
-- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon, placeholderIcon: () -> PlaceholderIcon)](storeview/init(ids:preferspromotionalicon:icon:placeholdericon:).md)
+- [init(ids: some Collection<String>, prefersPromotionalIcon: Bool, icon: (Product) -> Icon, placeholderIcon: () -> PlaceholderIcon)](./init%28ids,preferspromotionalicon,icon,placeholdericon%29.md)
   Creates a view to load a collection of products from the App Store using product identifiers, and merchandise them using an image and a custom placeholder icon.
 
 

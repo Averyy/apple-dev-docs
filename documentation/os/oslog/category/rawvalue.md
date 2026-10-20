@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies a logging category.
 
@@ -11,7 +12,7 @@ A string that uniquely identifies a logging category.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 
 ## Declaration

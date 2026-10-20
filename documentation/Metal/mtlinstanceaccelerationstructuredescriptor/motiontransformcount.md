@@ -1,7 +1,8 @@
 # motionTransformCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of motion transforms in the motion transform buffer.
 
@@ -19,11 +20,16 @@ The number of motion transforms in the motion transform buffer.
 var motionTransformCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger motionTransformCount;
+```
+
 ## See Also
 
-- [var motionTransformBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/motiontransformbuffer.md)
+### Specifying motion data
+- [var motionTransformBuffer: (any MTLBuffer)?](./motiontransformbuffer.md)
   A buffer that contains descriptions of each motion transform in the acceleration structure.
-- [var motionTransformBufferOffset: Int](mtlinstanceaccelerationstructuredescriptor/motiontransformbufferoffset.md)
+- [var motionTransformBufferOffset: Int](./motiontransformbufferoffset.md)
   The offset, in bytes, to the descripton of the first motion transform.
 
 

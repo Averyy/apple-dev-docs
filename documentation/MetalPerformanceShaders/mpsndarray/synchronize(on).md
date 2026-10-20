@@ -1,7 +1,8 @@
 # synchronize(on:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func synchronize(on commandBuffer: any MTLCommandBuffer)
+```
+
+```objc
+- (void) synchronizeOnCommandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
 

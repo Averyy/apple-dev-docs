@@ -1,14 +1,15 @@
 # kIOAudioChannelLabel_Discrete_65535
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOAudioChannelLabel_Discrete_65535 = ( 1 << kIOAudioChannelLabel_Discrete_field_ba ) | 65535
 ```
 

@@ -1,7 +1,8 @@
 # nukta
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Diacritic nukta marks in Brahmi-derived scripts.
 

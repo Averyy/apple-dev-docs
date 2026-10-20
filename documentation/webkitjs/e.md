@@ -1,14 +1,15 @@
 # E
 
 **Framework**: WebKit JS  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 typedef  E;
 ```
 

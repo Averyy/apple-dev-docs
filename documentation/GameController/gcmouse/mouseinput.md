@@ -1,7 +1,8 @@
 # mouseInput
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller profile for the mouse device.
 
@@ -17,6 +18,10 @@ The controller profile for the mouse device.
 
 ```swift
 var mouseInput: GCMouseInput? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) GCMouseInput * mouseInput;
 ```
 
 #### Discussion

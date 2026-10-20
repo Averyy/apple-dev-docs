@@ -1,7 +1,8 @@
 # CiXcodeVersionResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that read a single Xcode version available in Xcode Cloud.
 
@@ -10,7 +11,7 @@ The response body for endpoints that read a single Xcode version available in Xc
 
 ## Declaration
 
-```swift
+```
 object CiXcodeVersionResponse
 ```
 
@@ -22,11 +23,12 @@ object CiXcodeVersionResponse
 
 ## See Also
 
-- [object CiXcodeVersion](cixcodeversion.md)
+### Objects
+- [object CiXcodeVersion](./cixcodeversion.md)
   An Xcode version available in Xcode Cloud for running workflow builds and tests.
-- [object CiXcodeVersionsResponse](cixcodeversionsresponse.md)
+- [object CiXcodeVersionsResponse](./cixcodeversionsresponse.md)
   The response body for endpoints that list Xcode versions available for Xcode Cloud.
-- [object CiXcodeVersionMacOsVersionsLinkagesResponse](cixcodeversionmacosversionslinkagesresponse.md)
+- [object CiXcodeVersionMacOsVersionsLinkagesResponse](./cixcodeversionmacosversionslinkagesresponse.md)
 
 
 ---

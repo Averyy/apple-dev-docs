@@ -2,17 +2,26 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes an existing item from a given directory.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
+func removeItem(_ item: FSItem, named name: FSFileName, fromDirectory directory: FSItem, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeItem(_ item: FSItem, named name: FSFileName, fromDirectory directory: FSItem) async throws
+```
+
+```objc
+- (void) removeItem:(FSItem *) item named:(FSFileName *) name fromDirectory:(FSItem *) directory replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion
@@ -28,17 +37,18 @@ Don’t actually remove the item object itself in your implementation; instead, 
 
 ## See Also
 
-- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md)
+### Working with items
+- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./createitem%28named,type,indirectory,attributes,replyhandler%29.md)
   Creates a new file or directory item.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](../../fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.ItemType](fsitem/itemtype.md)
+- [FSItem.ItemType](../../fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/lookupitem(named:indirectory:replyhandler:).md)
+- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](./lookupitem%28named,indirectory,replyhandler%29.md)
   Looks up an item within a directory.
-- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
+- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](./renameitem%28_,indirectory,named,to,indirectory,overitem,replyhandler%29.md)
   Renames an item from one path in the file system to another.
 
 

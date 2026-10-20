@@ -1,7 +1,8 @@
 # kAuthorizationRightRule
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a rule delegation key.
 
@@ -13,6 +14,10 @@ Indicates a rule delegation key.
 
 ```swift
 var kAuthorizationRightRule: String { get }
+```
+
+```c
+#define kAuthorizationRightRule
 ```
 
 #### Discussion

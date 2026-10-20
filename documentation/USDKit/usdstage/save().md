@@ -1,7 +1,8 @@
 # save()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves the stage’s changed layers to their sources.
 
@@ -21,13 +22,14 @@ func save() throws
 
 #### Discussion
 
-> **Note**: An error if a layer cannot be saved. Some layers may already have been saved when the failure occurs.
+> **Throws**: An error if a layer cannot be saved. Some layers may already have been saved when the failure occurs.
 
 ## See Also
 
-- [func saveSessionLayers() throws](usdstage/savesessionlayers.md)
+### Saving and reloading
+- [func saveSessionLayers() throws](./savesessionlayers%28%29.md)
   Saves the stage’s changed session layers to their sources.
-- [func reload() throws](usdstage/reload.md)
+- [func reload() throws](./reload%28%29.md)
   Reloads the stage’s layers from their sources, discarding any unsaved changes.
 
 

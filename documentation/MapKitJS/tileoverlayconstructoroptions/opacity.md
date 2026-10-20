@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The opacity level of the overlay.
 
@@ -10,7 +11,7 @@ The opacity level of the overlay.
 
 ## Declaration
 
-```swift
+```
 opacity: number;
 ```
 
@@ -20,11 +21,12 @@ The default value is `1`.
 
 ## See Also
 
-- [data](tileoverlayconstructoroptions/data.md)
+### Initializing tile overlay options
+- [data](./data.md)
   Custom data for populating the URL template.
-- [maximumZ](tileoverlayconstructoroptions/maximumz.md)
+- [maximumZ](./maximumz.md)
   The maximum zoom level of the overlay.
-- [minimumZ](tileoverlayconstructoroptions/minimumz.md)
+- [minimumZ](./minimumz.md)
   The minimum zoom level of the overlay.
 
 

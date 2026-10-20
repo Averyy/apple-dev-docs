@@ -1,7 +1,8 @@
 # GCMouseMoved
 
 **Framework**: Game Controller  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The signature for the block that the mouse input profile calls when the mouse moves.
 
@@ -19,6 +20,10 @@ The signature for the block that the mouse input profile calls when the mouse mo
 typealias GCMouseMoved = (GCMouseInput, Float, Float) -> Void
 ```
 
+```c
+typedef void (^)(GCMouseInput *, float, float) GCMouseMoved;
+```
+
 ## Parameters
 
 - `mouse`: The controller for the physical mouse.
@@ -27,7 +32,8 @@ typealias GCMouseMoved = (GCMouseInput, Float, Float) -> Void
 
 ## See Also
 
-- [var mouseMovedHandler: GCMouseMoved?](gcmouseinput/mousemovedhandler.md)
+### Getting Change Information
+- [var mouseMovedHandler: GCMouseMoved?](./gcmouseinput/mousemovedhandler.md)
   The block that the profile calls when the mouse moves.
 
 

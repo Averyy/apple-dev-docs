@@ -1,7 +1,8 @@
 # supportedMaxPhotoDimensions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum photo dimension this format supports.
 
@@ -21,9 +22,10 @@ var supportedMaxPhotoDimensions: [CMVideoDimensions] { get }
 
 ## See Also
 
-- [var isHighPhotoQualitySupported: Bool](avcapturedevice/format/ishighphotoqualitysupported.md)
+### Determining photo quality
+- [var isHighPhotoQualitySupported: Bool](./ishighphotoqualitysupported.md)
   A Boolean value that indicates whether this format supports high-quality capture with the current quality prioritization setting.
-- [var isHighestPhotoQualitySupported: Bool](avcapturedevice/format/ishighestphotoqualitysupported.md)
+- [var isHighestPhotoQualitySupported: Bool](./ishighestphotoqualitysupported.md)
   A Boolean value that indicates whether this format supports the highest photo quality that the platform delivers.
 
 

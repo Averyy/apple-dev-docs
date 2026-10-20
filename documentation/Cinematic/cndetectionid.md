@@ -1,16 +1,17 @@
 # CNDetectionID
 
 **Framework**: Cinematic  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure representing a unique identifier assigned by the Cinematic script to all detections of the same subject and detection type across time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
 
 ## Declaration
 
@@ -18,25 +19,30 @@ A structure representing a unique identifier assigned by the Cinematic script to
 struct CNDetectionID
 ```
 
+```c
+typedef int64_t CNDetectionID;
+```
+
 ## Topics
 
 ### Initializers
-- [init(Int64)](cndetectionid/init(_:).md)
-- [init(rawValue: Int64)](cndetectionid/init(rawvalue:).md)
+- [init(Int64)](./cndetectionid/init%28_%29.md)
+- [init(rawValue: Int64)](./cndetectionid/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CNDetectionGroupID](cndetectiongroupid.md)
+### Data Types
+- [struct CNDetectionGroupID](./cndetectiongroupid.md)
   A structure representing a unique number representing the detection to focus on if this is a group decision.
 
 

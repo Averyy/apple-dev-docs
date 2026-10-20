@@ -1,7 +1,8 @@
 # cameraRectification
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The camera rectification for this video format.
 

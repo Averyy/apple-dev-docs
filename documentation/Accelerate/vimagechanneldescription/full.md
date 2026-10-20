@@ -1,23 +1,28 @@
 # full
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encoding for the value one.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var full: CGFloat
+```
+
+```c
+CGFloat full;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ This is the encoding for `0.5` for chrominance.
 
 ## See Also
 
-- [var min: CGFloat](vimagechanneldescription/min.md)
+### Instance properties
+- [var min: CGFloat](./min.md)
   The minimum encoded value.
-- [var zero: CGFloat](vimagechanneldescription/zero.md)
+- [var zero: CGFloat](./zero.md)
   The encoding for the value zero.
-- [var max: CGFloat](vimagechanneldescription/max.md)
+- [var max: CGFloat](./max.md)
   The maximum encoded value.
 
 

@@ -1,7 +1,8 @@
 # IntegerFormatStyle.Configuration
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type the format style uses for configuration settings.
 
@@ -22,25 +23,26 @@ typealias Configuration = NumberFormatStyleConfiguration
 
 #### Discussion
 
-[`IntegerFormatStyle`](integerformatstyle.md) uses [`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md) for its configuration type.
+[`IntegerFormatStyle`](../integerformatstyle.md) uses [`NumberFormatStyleConfiguration`](../numberformatstyleconfiguration.md) for its configuration type.
 
 ## See Also
 
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](integerformatstyle/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](integerformatstyle/notation(_:).md)
+- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](integerformatstyle/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](integerformatstyle/rounded(rule:increment:).md)
+- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> IntegerFormatStyle<Value>](integerformatstyle/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/sign(strategy:).md)
+- [func sign(strategy: IntegerFormatStyle<Value>.Configuration.SignDisplayStrategy) -> IntegerFormatStyle<Value>](./sign%28strategy%29.md)
   Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

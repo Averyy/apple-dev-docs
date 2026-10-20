@@ -1,23 +1,28 @@
 # CBLAS_SIDE
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Indicates the order of a matrix multiplication.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct CBLAS_SIDE
+```
+
+```c
+enum CBLAS_SIDE : unsigned int;
 ```
 
 #### Overview
@@ -27,28 +32,29 @@ struct CBLAS_SIDE
 ## Topics
 
 ### Initializers
-- [init(UInt32)](cblas_side/init(_:).md)
-- [init(rawValue: UInt32)](cblas_side/init(rawvalue:).md)
+- [init(UInt32)](./cblas_side/init%28_%29.md)
+- [init(rawValue: UInt32)](./cblas_side/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](cblas_side/rawvalue.md)
+- [var rawValue: UInt32](./cblas_side/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CBLAS_ORDER](cblas_order.md)
+### Constants
+- [struct CBLAS_ORDER](./cblas_order.md)
   Indicates whether a matrix is in row-major or column-major order.
-- [struct CBLAS_TRANSPOSE](cblas_transpose.md)
+- [struct CBLAS_TRANSPOSE](./cblas_transpose.md)
   Indicates transpose operation to perform on a matrix.
-- [struct CBLAS_UPLO](cblas_uplo.md)
-- [struct CBLAS_DIAG](cblas_diag.md)
+- [struct CBLAS_UPLO](./cblas_uplo.md)
+- [struct CBLAS_DIAG](./cblas_diag.md)
   Indicates whether a triangular matrix is unit-diagonal (diagonal elements are all equal to 1).
 
 

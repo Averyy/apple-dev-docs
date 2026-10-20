@@ -1,7 +1,8 @@
 # DataSource
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates a new data source object.
 
@@ -10,7 +11,7 @@ Creates a new data source object.
 
 ## Declaration
 
-```swift
+```
 new DataSource(
     in Array items, 
     in Array indexTitle, 

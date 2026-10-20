@@ -1,29 +1,31 @@
 # OSArrayPtr
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef OSArray * OSArrayPtr;
 ```
 
 ## See Also
 
-- [OSArrayGetValue](osarraygetvalue.md)
-- [OSArrayGetStringValue](osarraygetstringvalue.md)
-- [OSArrayGetUInt64Value](osarraygetuint64value.md)
-- [OSArraySetValue](osarraysetvalue.md)
-- [OSArraySetStringValue](osarraysetstringvalue.md)
-- [OSArraySetUInt64Value](osarraysetuint64value.md)
-- [Array Indices](3180989-array_indices.md)
+### Getting and Setting Values
+- [OSArrayGetValue](./osarraygetvalue.md)
+- [OSArrayGetStringValue](./osarraygetstringvalue.md)
+- [OSArrayGetUInt64Value](./osarraygetuint64value.md)
+- [OSArraySetValue](./osarraysetvalue.md)
+- [OSArraySetStringValue](./osarraysetstringvalue.md)
+- [OSArraySetUInt64Value](./osarraysetuint64value.md)
+- [Array Indices](./api-3180989-array_indices.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string describing the compass direction.
 
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [var abbreviation: String](wind/compassdirection-swift.enum/abbreviation.md)
+### Describing the compass direction
+- [var abbreviation: String](./abbreviation.md)
   A localized short abbreviation of the wind compass direction.
-- [var accessibilityDescription: String](wind/compassdirection-swift.enum/accessibilitydescription.md)
+- [var accessibilityDescription: String](./accessibilitydescription.md)
   A localized accessibility description describing the compass direction.
 
 

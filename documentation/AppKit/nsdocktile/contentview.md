@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view to use for drawing the dock tile contents.
 
@@ -14,6 +15,10 @@ The view to use for drawing the dock tile contents.
 var contentView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * contentView;
+```
+
 #### Discussion
 
 The view you specify should be height and width resizable.
@@ -22,7 +27,8 @@ Cocoa does not automatically redraw the contents of your dock tile. Instead, you
 
 ## See Also
 
-- [func display()](nsdocktile/display.md)
+### Related Documentation
+- [func display()](./display%28%29.md)
   Redraws the dock tile’s content.
 
 

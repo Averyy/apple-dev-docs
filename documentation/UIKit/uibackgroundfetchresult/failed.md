@@ -1,7 +1,8 @@
 # UIBackgroundFetchResult.failed
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attempt to download data was made but that attempt failed.
 
@@ -9,7 +10,7 @@ An attempt to download data was made but that attempt failed.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ An attempt to download data was made but that attempt failed.
 case failed
 ```
 
+```c
+UIBackgroundFetchResultFailed
+```
+
 ## See Also
 
-- [UIBackgroundFetchResult.newData](uibackgroundfetchresult/newdata.md)
+### Constants
+- [UIBackgroundFetchResult.newData](./newdata.md)
   New data was successfully downloaded.
-- [UIBackgroundFetchResult.noData](uibackgroundfetchresult/nodata.md)
+- [UIBackgroundFetchResult.noData](./nodata.md)
   There was no new data to download.
 
 

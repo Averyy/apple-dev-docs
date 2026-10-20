@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes this value into the given encoder.
 
@@ -9,7 +10,7 @@ Encodes this value into the given encoder.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -29,7 +30,8 @@ This function throws an error if any values are invalid for the given encoder’
 
 ## See Also
 
-- [func hash(into: inout Hasher)](anyuseridentity/hash(into:).md)
+### Instance Methods
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

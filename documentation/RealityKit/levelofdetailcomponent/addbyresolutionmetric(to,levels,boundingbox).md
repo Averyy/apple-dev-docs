@@ -1,7 +1,8 @@
 # addByResolutionMetric(to:levels:boundingBox:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds Level of Detail configuration using resolution metric-based switching to an entity.
 
@@ -32,11 +33,12 @@ Each entity in the provided levels is added as a child of the entity the compone
 
 ## See Also
 
-- [init(levels: [LevelOfDetailComponent.DetailLevel], switchingAt: LevelOfDetailComponent.SelectionStrategy)](levelofdetailcomponent/init(levels:switchingat:).md)
+### Creating a component
+- [init(levels: [LevelOfDetailComponent.DetailLevel], switchingAt: LevelOfDetailComponent.SelectionStrategy)](./init%28levels,switchingat%29.md)
   Creates a new Level of Detail component.
-- [static func addByCameraDistance(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, maxDistance: Float)])](levelofdetailcomponent/addbycameradistance(to:levels:).md)
+- [static func addByCameraDistance(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, maxDistance: Float)])](./addbycameradistance%28to,levels%29.md)
   Adds Level of Detail configuration using distance-based switching to an entity .
-- [static func addByScreenArea(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, minArea: Float)])](levelofdetailcomponent/addbyscreenarea(to:levels:).md)
+- [static func addByScreenArea(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, minArea: Float)])](./addbyscreenarea%28to,levels%29.md)
   Adds Level of Detail configuration using screen area-based switching to an entity.
 
 

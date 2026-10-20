@@ -1,7 +1,8 @@
 # MTLStageInputOutputDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of the input and output data of a function.
 
@@ -19,48 +20,53 @@ A description of the input and output data of a function.
 class MTLStageInputOutputDescriptor
 ```
 
+```objc
+@interface MTLStageInputOutputDescriptor : NSObject
+```
+
 ## Topics
 
 ### Describing argument layouts
-- [var attributes: MTLAttributeDescriptorArray](mtlstageinputoutputdescriptor/attributes.md)
+- [var attributes: MTLAttributeDescriptorArray](./mtlstageinputoutputdescriptor/attributes.md)
   An array that describes where and how to fetch data for the function.
-- [var layouts: MTLBufferLayoutDescriptorArray](mtlstageinputoutputdescriptor/layouts.md)
+- [var layouts: MTLBufferLayoutDescriptorArray](./mtlstageinputoutputdescriptor/layouts.md)
   An array that describes how the function fetches data.
 ### Declaring index buffers for indirect compute commands
-- [var indexBufferIndex: Int](mtlstageinputoutputdescriptor/indexbufferindex.md)
+- [var indexBufferIndex: Int](./mtlstageinputoutputdescriptor/indexbufferindex.md)
   The location of the index buffer for a compute function using indexed thread addressing.
-- [var indexType: MTLIndexType](mtlstageinputoutputdescriptor/indextype.md)
+- [var indexType: MTLIndexType](./mtlstageinputoutputdescriptor/indextype.md)
   The data type of the indices stored in the index buffer.
 ### Resetting the descriptor
-- [func reset()](mtlstageinputoutputdescriptor/reset.md)
+- [func reset()](./mtlstageinputoutputdescriptor/reset%28%29.md)
   Resets the default state for the descriptor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4ComputePipelineDescriptor](mtl4computepipelinedescriptor.md)
+### Configuring a compute pipeline state
+- [class MTL4ComputePipelineDescriptor](./mtl4computepipelinedescriptor.md)
   Describes a compute pipeline state.
-- [class MTLComputePipelineDescriptor](mtlcomputepipelinedescriptor.md)
+- [class MTLComputePipelineDescriptor](./mtlcomputepipelinedescriptor.md)
   An instance describing the desired GPU state for a kernel call in a compute pass.
-- [protocol MTLComputePipelineState](mtlcomputepipelinestate.md)
+- [protocol MTLComputePipelineState](./mtlcomputepipelinestate.md)
   An interface that represents a GPU pipeline configuration for running kernels in a compute pass.
-- [class MTLPipelineBufferDescriptor](mtlpipelinebufferdescriptor.md)
+- [class MTLPipelineBufferDescriptor](./mtlpipelinebufferdescriptor.md)
   The mutability options for a buffer that a render or compute pipeline uses.
-- [class MTLPipelineBufferDescriptorArray](mtlpipelinebufferdescriptorarray.md)
+- [class MTLPipelineBufferDescriptorArray](./mtlpipelinebufferdescriptorarray.md)
   An array of pipeline buffer descriptors.
-- [struct MTLPipelineOption](mtlpipelineoption.md)
+- [struct MTLPipelineOption](./mtlpipelineoption.md)
   Options that determine how Metal prepares the pipeline.
 
 

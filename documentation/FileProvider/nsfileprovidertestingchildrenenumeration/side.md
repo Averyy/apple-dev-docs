@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The item’s location.
@@ -19,9 +20,14 @@ The item’s location.
 var side: NSFileProviderTestingOperationSide { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationSide side;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingchildrenenumeration/itemidentifier.md)
+### Accessing The Operation’s Data
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The containing identifier’s unique identifier.
 
 

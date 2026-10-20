@@ -1,7 +1,8 @@
 # setMarkerOffset(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setMarkerOffset(_ markerOffset: String!)
+```
+
+```objc
+- (void) setMarkerOffset:(NSString *) markerOffset;
 ```
 
 

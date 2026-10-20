@@ -1,7 +1,8 @@
 # init(device:kernelWidth:kernelHeight:strideInPixelsX:strideInPixelsY:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an L2-norm pooling filter.
 
@@ -19,9 +20,14 @@ Initializes an L2-norm pooling filter.
 init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight strideInPixelsX:(NSUInteger) strideInPixelsX strideInPixelsY:(NSUInteger) strideInPixelsY;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnpoolingl2norm/init(coder:device:).md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
   Initializes an L2-norm pooling filter.
 
 

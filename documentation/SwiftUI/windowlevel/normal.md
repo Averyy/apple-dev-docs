@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Normal window level.
 
@@ -16,7 +17,7 @@ static var normal: WindowLevel { get }
 
 #### Discussion
 
-Use this if you want your scene to have the normal window level instead of the level computed by [`automatic`](windowlevel/automatic.md).
+Use this if you want your scene to have the normal window level instead of the level computed by [`automatic`](./automatic.md).
 
 
 ---

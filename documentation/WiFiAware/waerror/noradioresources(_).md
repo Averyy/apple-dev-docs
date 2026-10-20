@@ -1,7 +1,8 @@
 # WAError.noRadioResources(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs if the radio lacks resources.
 
@@ -22,7 +23,8 @@ The radio needs resources to support additional active devices, services, or per
 
 ## See Also
 
-- [WAError.NoRadioResourcesDetails](waerror/noradioresourcesdetails.md)
+### Checking for insufficient radio resources
+- [WAError.NoRadioResourcesDetails](./noradioresourcesdetails.md)
   The optional details describing what resources are lacking.
 
 

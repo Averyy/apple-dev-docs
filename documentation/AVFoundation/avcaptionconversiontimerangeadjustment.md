@@ -1,7 +1,8 @@
 # AVCaptionConversionTimeRangeAdjustment
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes an adjustment to the time range of one or more captions.
 
@@ -17,33 +18,38 @@ An object that describes an adjustment to the time range of one or more captions
 class AVCaptionConversionTimeRangeAdjustment
 ```
 
+```objc
+@interface AVCaptionConversionTimeRangeAdjustment : AVCaptionConversionAdjustment
+```
+
 ## Topics
 
 ### Accessing time offsets
-- [var startTimeOffset: CMTime](avcaptionconversiontimerangeadjustment/starttimeoffset.md)
+- [var startTimeOffset: CMTime](./avcaptionconversiontimerangeadjustment/starttimeoffset.md)
   The time value by which the system offsets the start times of captions to correct a problem.
-- [var durationOffset: CMTime](avcaptionconversiontimerangeadjustment/durationoffset.md)
+- [var durationOffset: CMTime](./avcaptionconversiontimerangeadjustment/durationoffset.md)
   The time value by which the system offsets the durations of captions to correct a problem.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptionConversionAdjustment](avcaptionconversionadjustment.md)
+- [AVCaptionConversionAdjustment](./avcaptionconversionadjustment.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.property.md)
+### Accessing the adjustment type
+- [var adjustmentType: AVCaptionConversionAdjustment.AdjustmentType](./avcaptionconversionadjustment/adjustmenttype-swift.property.md)
   The type of caption conversion adjustment.
-- [AVCaptionConversionAdjustment.AdjustmentType](avcaptionconversionadjustment/adjustmenttype-swift.struct.md)
+- [AVCaptionConversionAdjustment.AdjustmentType](./avcaptionconversionadjustment/adjustmenttype-swift.struct.md)
   Constants that indicate an adjustment type.
 
 

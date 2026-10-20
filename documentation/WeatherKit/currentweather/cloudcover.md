@@ -1,7 +1,8 @@
 # cloudCover
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The percentage of the sky covered with clouds.
 
@@ -26,7 +27,8 @@ The value is from `0` (no cloud cover)  to `1` (complete cloud cover).
 
 ## See Also
 
-- [var condition: WeatherCondition](currentweather/condition.md)
+### Getting conditions
+- [var condition: WeatherCondition](./condition.md)
   An enumeration value indicating the condition at the time.
 
 

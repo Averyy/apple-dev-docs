@@ -1,7 +1,8 @@
 # SafariSettings.CookiePolicy.never
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that indicates the device doesn’t accept cookies from any website.
 
@@ -18,11 +19,12 @@ case never
 
 ## See Also
 
-- [SafariSettings.CookiePolicy.always](safarisettings/cookiepolicy-swift.enum/always.md)
+### Accepting cookies
+- [SafariSettings.CookiePolicy.always](./always.md)
   A policy that indicates the device accepts cookies from all websites.
-- [SafariSettings.CookiePolicy.currentWebsite](safarisettings/cookiepolicy-swift.enum/currentwebsite.md)
+- [SafariSettings.CookiePolicy.currentWebsite](./currentwebsite.md)
   A policy that indicates the device only accepts cookies from the current website.
-- [SafariSettings.CookiePolicy.visitedWebsites](safarisettings/cookiepolicy-swift.enum/visitedwebsites.md)
+- [SafariSettings.CookiePolicy.visitedWebsites](./visitedwebsites.md)
   A policy that indicates the device only accepts cookies from websites in the user’s browsing history.
 
 

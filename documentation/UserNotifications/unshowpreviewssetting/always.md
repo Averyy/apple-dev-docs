@@ -1,7 +1,8 @@
 # UNShowPreviewsSetting.always
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The notification’s content is always shown, even when the device is locked.
 
@@ -18,11 +19,16 @@ The notification’s content is always shown, even when the device is locked.
 case always
 ```
 
+```c
+UNShowPreviewsSettingAlways
+```
+
 ## See Also
 
-- [UNShowPreviewsSetting.whenAuthenticated](unshowpreviewssetting/whenauthenticated.md)
+### Preview Styes
+- [UNShowPreviewsSetting.whenAuthenticated](./whenauthenticated.md)
   The notification’s content is shown only when the device is unlocked.
-- [UNShowPreviewsSetting.never](unshowpreviewssetting/never.md)
+- [UNShowPreviewsSetting.never](./never.md)
   The notification’s content is never shown, even when the device is unlocked
 
 

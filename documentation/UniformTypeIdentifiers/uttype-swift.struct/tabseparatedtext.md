@@ -1,7 +1,8 @@
 # tabSeparatedText
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents text containing tab-separated values.
 
@@ -24,25 +25,26 @@ static var tabSeparatedText: UTType { get }
 
 The identifier for this type is `public.tab-separated-values-text`.
 
-This type conforms to [`UTTypeDelimitedText`](uttypedelimitedtext.md).
+This type conforms to [`UTTypeDelimitedText`](../uttypedelimitedtext.md).
 
 ## See Also
 
-- [static var delimitedText: UTType](uttype-swift.struct/delimitedtext.md)
+### Data interchange formats
+- [static var delimitedText: UTType](./delimitedtext.md)
   A base type that represents text containing delimited values.
-- [static var commaSeparatedText: UTType](uttype-swift.struct/commaseparatedtext.md)
+- [static var commaSeparatedText: UTType](./commaseparatedtext.md)
   A type that represents text containing comma-separated values.
-- [static var utf8TabSeparatedText: UTType](uttype-swift.struct/utf8tabseparatedtext.md)
+- [static var utf8TabSeparatedText: UTType](./utf8tabseparatedtext.md)
   A type that represents UTF-8–encoded text containing tab-separated values.
-- [static var rtf: UTType](uttype-swift.struct/rtf.md)
+- [static var rtf: UTType](./rtf.md)
   A type that represents Rich Text Format data.
-- [static var xml: UTType](uttype-swift.struct/xml.md)
+- [static var xml: UTType](./xml.md)
   A type that represents generic XML data.
-- [static var yaml: UTType](uttype-swift.struct/yaml.md)
+- [static var yaml: UTType](./yaml.md)
   A type that represents Yet Another Markup Language data.
-- [static var json: UTType](uttype-swift.struct/json.md)
+- [static var json: UTType](./json.md)
   A type that represents JavaScript Object Notation (JSON) data.
-- [static var vCard: UTType](uttype-swift.struct/vcard.md)
+- [static var vCard: UTType](./vcard.md)
   A type that represents a vCard file.
 
 

@@ -1,7 +1,8 @@
 # sessionReachabilityDidChange(_:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates a change to the counterpart’s reachability status.
 
@@ -18,19 +19,24 @@ Indicates a change to the counterpart’s reachability status.
 optional func sessionReachabilityDidChange(_ session: WCSession)
 ```
 
+```objc
+- (void) sessionReachabilityDidChange:(WCSession *) session;
+```
+
 #### Discussion
 
 A session is reachable when the iOS app or WatchKit extension to which it belongs is active and running. This method is called to let the current process know that its counterpart session’s reachability changed. Use that information to make decisions about how you want to send information to the counterpart. For example, when the counterpart is reachable, you might send messages immediately rather than post them as an update.
 
 ## Parameters
 
-- `session`: The session object of the current process. Use the [`isReachable`](wcsession/isreachable.md) property of this object to determine the reachability of the counterpart session.
+- `session`: The session object of the current process. Use the [`isReachable`](../wcsession/isreachable.md) property of this object to determine the reachability of the counterpart session.
 
 ## See Also
 
-- [func sessionWatchStateDidChange(WCSession)](wcsessiondelegate/sessionwatchstatedidchange(_:).md)
+### Managing State Changes
+- [func sessionWatchStateDidChange(WCSession)](./sessionwatchstatedidchange%28_%29.md)
   Indicates a change to the counterpart’s information.
-- [func sessionCompanionAppInstalledDidChange(WCSession)](wcsessiondelegate/sessioncompanionappinstalleddidchange(_:).md)
+- [func sessionCompanionAppInstalledDidChange(WCSession)](./sessioncompanionappinstalleddidchange%28_%29.md)
   Indicates a change to the companion app’s installed state.
 
 

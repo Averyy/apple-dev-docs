@@ -1,7 +1,8 @@
 # isAutoCaptureEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables/disables auto-capture system.  If disabled, only manually triggered shots are taken.
 

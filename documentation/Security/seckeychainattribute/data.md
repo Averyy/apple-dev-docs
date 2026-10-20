@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the attribute data.
 
@@ -12,6 +13,10 @@ A pointer to the attribute data.
 
 ```swift
 var data: UnsafeMutableRawPointer?
+```
+
+```c
+void * data;
 ```
 
 

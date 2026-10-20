@@ -1,7 +1,8 @@
 # isSymbolicLink
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean that indicates whether the file wrapper object is a symbolic-link file wrapper.
 
@@ -20,17 +21,22 @@ A boolean that indicates whether the file wrapper object is a symbolic-link file
 var isSymbolicLink: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSymbolicLink) BOOL symbolicLink;
+```
+
 #### Discussion
 
-This property contains [`true`](https://developer.apple.com/documentation/swift/true) when the file wrapper object is a symbolic-link file wrapper, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This property contains [`true`](../../Swift/true.md) when the file wrapper object is a symbolic-link file wrapper, [`false`](../../Swift/false.md) otherwise.
 
-Invocations of [`read(from:options:)`](filewrapper/read(from:options:).md) may change the value contained by this property, if the type of the file on disk has changed.
+Invocations of [`read(from:options:)`](./read%28from,options%29.md) may change the value contained by this property, if the type of the file on disk has changed.
 
 ## See Also
 
-- [var isRegularFile: Bool](filewrapper/isregularfile.md)
+### Querying File Wrappers
+- [var isRegularFile: Bool](./isregularfile.md)
   This property contains a boolean value that indicates whether the file wrapper object is a regular-file.
-- [var isDirectory: Bool](filewrapper/isdirectory.md)
+- [var isDirectory: Bool](./isdirectory.md)
   This property contains a boolean value indicating whether the file wrapper is a directory file wrapper.
 
 

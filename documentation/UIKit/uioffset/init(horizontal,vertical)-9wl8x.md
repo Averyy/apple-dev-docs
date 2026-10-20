@@ -1,16 +1,17 @@
 # init(horizontal:vertical:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an offset structure from the given components.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ init(horizontal: CGFloat, vertical: CGFloat)
 
 ## See Also
 
-- [init()](uioffset/init.md)
+### Initializing offsets
+- [init()](./init%28%29.md)
   Creates an offset structure.
 
 

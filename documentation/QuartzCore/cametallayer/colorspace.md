@@ -1,7 +1,8 @@
 # colorspace
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color space of the rendered content.
 
@@ -19,6 +20,10 @@ The color space of the rendered content.
 var colorspace: CGColorSpace? { get set }
 ```
 
+```objc
+@property (nullable) CGColorSpaceRef colorspace;
+```
+
 #### Discussion
 
 Set this value to specify a color space for the contents of the layer. When a color space is present, Core Animation performs any necessary color space transformations when compositing this content.
@@ -27,11 +32,12 @@ The default value is `nil`, indicating that the rendered content isn’t color-m
 
 ## See Also
 
-- [var pixelFormat: MTLPixelFormat](cametallayer/pixelformat.md)
+### Configuring the Layer’s Drawable Objects
+- [var pixelFormat: MTLPixelFormat](./pixelformat.md)
   The pixel format of the layer’s textures.
-- [var framebufferOnly: Bool](cametallayer/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the layer’s textures are used only for rendering.
-- [var drawableSize: CGSize](cametallayer/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The size, in pixels, of textures for rendering layer content.
 
 

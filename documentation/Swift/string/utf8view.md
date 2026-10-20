@@ -1,7 +1,8 @@
 # String.UTF8View
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view of a string’s contents as a collection of UTF-8 code units.
 
@@ -64,7 +65,7 @@ for v in flowermoji.utf8 {
 
 In the encoded representation of a Unicode scalar value, each UTF-8 code unit after the first is called a *continuation byte*.
 
-### Utf8view Elements Match Encoded C Strings
+### UTF8View Elements Match Encoded C Strings
 
 Swift streamlines interoperation with C string APIs by letting you pass a `String` instance to a function as an `Int8` or `UInt8` pointer. When you call a C function using a `String`, Swift automatically creates a buffer of UTF-8 code units and passes a pointer to that buffer. The code units of that buffer match the code units in the string’s `utf8` view.
 
@@ -92,50 +93,51 @@ print(String(s1.utf8.prefix(15))!)
 ## Topics
 
 ### Instance Properties
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](string/utf8view/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./utf8view/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
-- [var span: Span<UTF8.CodeUnit>](string/utf8view/span.md)
+- [var span: Span<UTF8.CodeUnit>](./utf8view/span.md)
   A span over the UTF-8 code units that make up this string.
 ### Instance Methods
-- [func isTriviallyIdentical(to: String.UTF8View) -> Bool](string/utf8view/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: String.UTF8View) -> Bool](./utf8view/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this UTF8 view is trivially identical to `other`.
 ### Default Implementations
-- [BidirectionalCollection Implementations](string/utf8view/bidirectionalcollection-implementations.md)
-- [Collection Implementations](string/utf8view/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](string/utf8view/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](string/utf8view/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](string/utf8view/customstringconvertible-implementations.md)
-- [Sequence Implementations](string/utf8view/sequence-implementations.md)
+- [BidirectionalCollection Implementations](./utf8view/bidirectionalcollection-implementations.md)
+- [Collection Implementations](./utf8view/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./utf8view/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./utf8view/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./utf8view/customstringconvertible-implementations.md)
+- [Sequence Implementations](./utf8view/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](bidirectionalcollection.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [BidirectionalCollection](../bidirectionalcollection.md)
+- [Collection](../collection.md)
+- [Copyable](../copyable.md)
+- [CustomDebugStringConvertible](../customdebugstringconvertible.md)
+- [CustomReflectable](../customreflectable.md)
+- [CustomStringConvertible](../customstringconvertible.md)
+- [Escapable](../escapable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
+- [Sequence](../sequence.md)
 
 ## See Also
 
-- [struct Substring](substring.md)
+### Related String Types
+- [struct Substring](../substring.md)
   A slice of a string.
-- [protocol StringProtocol](stringprotocol.md)
+- [protocol StringProtocol](../stringprotocol.md)
   A type that can represent a string as a collection of characters.
-- [String.Index](string/index.md)
+- [String.Index](./index.md)
   A position of a character or code unit in a string.
-- [String.UnicodeScalarView](string/unicodescalarview.md)
+- [String.UnicodeScalarView](./unicodescalarview.md)
   A view of a string’s contents as a collection of Unicode scalar values.
-- [String.UTF16View](string/utf16view.md)
+- [String.UTF16View](./utf16view.md)
   A view of a string’s contents as a collection of UTF-16 code units.
-- [String.Iterator](string/iterator.md)
+- [String.Iterator](./iterator.md)
   A type that provides the collection’s iteration interface and encapsulates its iteration state.
-- [String.Encoding](string/encoding.md)
+- [String.Encoding](./encoding.md)
 
 
 ---

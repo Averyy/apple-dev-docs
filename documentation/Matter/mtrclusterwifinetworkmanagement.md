@@ -1,7 +1,8 @@
 # MTRClusterWiFiNetworkManagement
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Wi-Fi Network Management Functionality to retrieve operational information about a managed Wi-Fi network.
 
@@ -20,33 +21,37 @@ Cluster Wi-Fi Network Management Functionality to retrieve operational informati
 class MTRClusterWiFiNetworkManagement
 ```
 
+```objc
+@interface MTRClusterWiFiNetworkManagement : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterwifinetworkmanagement/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterwifinetworkmanagement/init%28device,endpointid,queue%29.md)
   For all instance methods that take a completion (i.e. command invocations), the completion will be called on the provided queue.
 ### Instance Methods
-- [func networkPassphraseRequest(with: MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)](mtrclusterwifinetworkmanagement/networkpassphraserequest(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func networkPassphraseRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)](mtrclusterwifinetworkmanagement/networkpassphraserequest(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributegeneratedcommandlist(with:).md)
-- [func readAttributePassphraseSurrogate(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributepassphrasesurrogate(with:).md)
-- [func readAttributeSSID(with: MTRReadParams?) -> [String : Any]?](mtrclusterwifinetworkmanagement/readattributessid(with:).md)
+- [func networkPassphraseRequest(with: MTRWiFiNetworkManagementClusterNetworkPassphraseRequestParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)](./mtrclusterwifinetworkmanagement/networkpassphraserequest%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func networkPassphraseRequest(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRWiFiNetworkManagementClusterNetworkPassphraseResponseParams?, (any Error)?) -> Void)](./mtrclusterwifinetworkmanagement/networkpassphraserequest%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributePassphraseSurrogate(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributepassphrasesurrogate%28with%29.md)
+- [func readAttributeSSID(with: MTRReadParams?) -> [String : Any]?](./mtrclusterwifinetworkmanagement/readattributessid%28with%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

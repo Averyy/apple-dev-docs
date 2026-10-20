@@ -1,7 +1,8 @@
 # show()
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the limit increase flow to the user.
 

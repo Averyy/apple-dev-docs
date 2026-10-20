@@ -1,7 +1,8 @@
 # shapes
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of shape resources that collectively represent the outer dimensions of an entity for the purposes of collision detection.
 
@@ -11,7 +12,7 @@ A collection of shape resources that collectively represent the outer dimensions
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

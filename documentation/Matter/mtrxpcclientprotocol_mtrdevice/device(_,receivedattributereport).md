@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func device(_ nodeID: NSNumber, receivedAttributeReport attributeReport: [[String : Any]])
+```
+
+```objc
+- (void) device:(NSNumber *) nodeID receivedAttributeReport:(NSArray<NSDictionary<NSString *,id> *> *) attributeReport;
 ```
 
 

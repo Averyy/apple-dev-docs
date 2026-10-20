@@ -1,14 +1,15 @@
 # kABSourceTypeLDAP
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 LDAP server.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,19 +17,24 @@ LDAP server.
 var kABSourceTypeLDAP: Int { get }
 ```
 
+```c
+kABSourceTypeLDAP
+```
+
 ## See Also
 
-- [var kABSourceTypeLocal: Int](kabsourcetypelocal.md)
+### Constants
+- [var kABSourceTypeLocal: Int](./kabsourcetypelocal.md)
   Local address book database.
-- [var kABSourceTypeExchange: Int](kabsourcetypeexchange.md)
+- [var kABSourceTypeExchange: Int](./kabsourcetypeexchange.md)
   Exchange server.
-- [var kABSourceTypeExchangeGAL: Int](kabsourcetypeexchangegal.md)
+- [var kABSourceTypeExchangeGAL: Int](./kabsourcetypeexchangegal.md)
   Exchange Global Address List.
-- [var kABSourceTypeMobileMe: Int](kabsourcetypemobileme.md)
+- [var kABSourceTypeMobileMe: Int](./kabsourcetypemobileme.md)
   MobileMe.
-- [var kABSourceTypeCardDAV: Int](kabsourcetypecarddav.md)
+- [var kABSourceTypeCardDAV: Int](./kabsourcetypecarddav.md)
   CardDAV server.
-- [var kABSourceTypeCardDAVSearch: Int](kabsourcetypecarddavsearch.md)
+- [var kABSourceTypeCardDAVSearch: Int](./kabsourcetypecarddavsearch.md)
   Searchable CardDAV server.
 
 

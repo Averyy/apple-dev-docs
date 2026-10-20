@@ -1,7 +1,8 @@
 # ErrorMessage.Details.Info
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object (string-to-string map) with additional structured context for a specific validation failure.
 
@@ -10,13 +11,13 @@ An object (string-to-string map) with additional structured context for a specif
 
 ## Declaration
 
-```swift
+```
 object ErrorMessage.Details.Info
 ```
 
 #### Discussion
 
-Each key names a piece of context specific to the failure, such as `field`, not a fixed field name. The `info` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. For example, when a request fails because it omits the required `eventTime` filter, the top-level [`ErrorMessage`](errormessage.md) example shows a `details` entry with `info: { "field": "eventTime" }`, naming the missing field.
+Each key names a piece of context specific to the failure, such as `field`, not a fixed field name. The `info` field is a free-form map rather than an object with named properties, so the reference page labels this key `Any Key`. For example, when a request fails because it omits the required `eventTime` filter, the top-level [`ErrorMessage`](../../errormessage.md) example shows a `details` entry with `info: { "field": "eventTime" }`, naming the missing field.
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # GameCenterLeaderboardVersionV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center leaderboard version v2 resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center leaderboard version v2 resource
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2
 ```
 
@@ -25,8 +26,8 @@ object GameCenterLeaderboardVersionV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardVersionV2.Attributes](gamecenterleaderboardversionv2/attributes-data.dictionary.md)
-- [object GameCenterLeaderboardVersionV2.Relationships](gamecenterleaderboardversionv2/relationships-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2.Attributes](./gamecenterleaderboardversionv2/attributes-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2.Relationships](./gamecenterleaderboardversionv2/relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 ## Properties
@@ -35,19 +36,20 @@ object GameCenterLeaderboardVersionV2
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (GameCenterLeaderboardVersionV2.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterLeaderboardVersions`
 
 ## See Also
 
-- [object GameCenterLeaderboardVersionV2CreateRequest](gamecenterleaderboardversionv2createrequest.md)
+### Objects
+- [object GameCenterLeaderboardVersionV2CreateRequest](./gamecenterleaderboardversionv2createrequest.md)
   The request body you use to create a Game Center leaderboard version v2.
-- [object GameCenterLeaderboardVersionV2Response](gamecenterleaderboardversionv2response.md)
+- [object GameCenterLeaderboardVersionV2Response](./gamecenterleaderboardversionv2response.md)
   A response that contains a single Game Center leaderboard version resource.
-- [object GameCenterLeaderboardVersionsV2Response](gamecenterleaderboardversionsv2response.md)
+- [object GameCenterLeaderboardVersionsV2Response](./gamecenterleaderboardversionsv2response.md)
   A response that contains a list of Game Center leaderboard version resources.
-- [object GameCenterLeaderboardVersionV2InlineCreate](gamecenterleaderboardversionv2inlinecreate.md)
+- [object GameCenterLeaderboardVersionV2InlineCreate](./gamecenterleaderboardversionv2inlinecreate.md)
   The data structure that represents a Game Center leaderboard version v2 inline create resource.
-- [object GameCenterLeaderboardVersionV2LocalizationsLinkagesResponse](gamecenterleaderboardversionv2localizationslinkagesresponse.md)
+- [object GameCenterLeaderboardVersionV2LocalizationsLinkagesResponse](./gamecenterleaderboardversionv2localizationslinkagesresponse.md)
   A response that contains a list of Game Center leaderboard version v2 localization linkage resources.
 
 

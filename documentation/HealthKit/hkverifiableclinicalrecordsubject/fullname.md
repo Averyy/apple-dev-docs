@@ -1,7 +1,8 @@
 # fullName
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subject’s full name.
 
@@ -18,9 +19,14 @@ The subject’s full name.
 var fullName: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * fullName;
+```
+
 ## See Also
 
-- [var dateOfBirthComponents: DateComponents?](hkverifiableclinicalrecordsubject/dateofbirthcomponents.md)
+### Accessing Patient Data
+- [var dateOfBirthComponents: DateComponents?](./dateofbirthcomponents.md)
   The subject’s birthdate.
 
 

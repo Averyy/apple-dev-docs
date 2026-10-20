@@ -1,7 +1,8 @@
 # contentFrame
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounds of the view, in screen coordinates, for visually rendering data values.
 
@@ -20,11 +21,16 @@ The bounds of the view, in screen coordinates, for visually rendering data value
 var contentFrame: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGRect contentFrame;
+```
+
 ## See Also
 
-- [var contentDirection: AXChartDescriptor.ContentDirection](axchartdescriptor/contentdirection-swift.property.md)
+### Specifying the content layout
+- [var contentDirection: AXChartDescriptor.ContentDirection](./contentdirection-swift.property.md)
   The direction of the content in the chart.
-- [AXChartDescriptor.ContentDirection](axchartdescriptor/contentdirection-swift.enum.md)
+- [AXChartDescriptor.ContentDirection](./contentdirection-swift.enum.md)
   A constant that describes the content direction of the chart.
 
 

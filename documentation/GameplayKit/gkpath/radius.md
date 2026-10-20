@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of the path.
 
@@ -19,13 +20,18 @@ The radius of the path.
 var radius: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float radius;
+```
+
 #### Discussion
 
 This property defines the space occupied by the path—think of this space as the area created by sweeping a circle (or sphere, for 3D paths) of the specified along the path from vertex to vertex. Agents with path-related goals will attempt to move to or stay within this area.
 
 ## See Also
 
-- [var isCyclical: Bool](gkpath/iscyclical.md)
+### Managing a Path’s Attributes
+- [var isCyclical: Bool](./iscyclical.md)
   A Boolean value that determines whether the path loops around on itself (that is, the path’s end point connects to its start point).
 
 

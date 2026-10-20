@@ -1,7 +1,8 @@
 # addObjects(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds to the set each object contained in a given array that is not already a member.
 
@@ -20,21 +21,27 @@ Adds to the set each object contained in a given array that is not already a mem
 func addObjects(from array: [Any])
 ```
 
+```objc
+- (void) addObjectsFromArray:(NSArray<id> *) array;
+```
+
 ## Parameters
 
 - `array`: An array of objects to add to the set.
 
 ## See Also
 
-- [func union(Set<AnyHashable>)](nsmutableset/union(_:).md)
+### Related Documentation
+- [func union(Set<AnyHashable>)](./union%28_%29.md)
   Adds each object in another given set to the receiving set, if not present.
-- [func add(Any)](nsmutableset/add(_:).md)
+### Adding and removing entries
+- [func add(Any)](./add%28_%29.md)
   Adds a given object to the set, if it is not already a member.
-- [func filter(using: NSPredicate)](nsmutableset/filter(using:).md)
+- [func filter(using: NSPredicate)](./filter%28using%29.md)
   Evaluates a given predicate against the set’s content and removes from the set those objects for which the predicate returns false.
-- [func remove(Any)](nsmutableset/remove(_:).md)
+- [func remove(Any)](./remove%28_%29.md)
   Removes a given object from the set.
-- [func removeAllObjects()](nsmutableset/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the set of all of its members.
 
 

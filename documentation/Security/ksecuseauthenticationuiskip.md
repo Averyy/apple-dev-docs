@@ -1,7 +1,8 @@
 # kSecUseAuthenticationUISkip
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates items requiring user authentication should be skipped.
 
@@ -20,9 +21,13 @@ A value that indicates items requiring user authentication should be skipped.
 let kSecUseAuthenticationUISkip: CFString
 ```
 
+```c
+extern CFStringRef const kSecUseAuthenticationUISkip;
+```
+
 #### Discussion
 
-Silently skip any items that require user authentication. Only use this value with the [`SecItemCopyMatching(_:_:)`](secitemcopymatching(_:_:).md) function.
+Silently skip any items that require user authentication. Only use this value with the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function.
 
 
 ---

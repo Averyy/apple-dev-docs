@@ -1,7 +1,8 @@
 # init(_:scale:orientation:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a labeled image based on a Core Graphics image instance, usable as content for controls.
 
@@ -24,14 +25,15 @@ init(_ cgImage: CGImage, scale: CGFloat, orientation: Image.Orientation = .up, l
 
 - `cgImage`: The base graphical image.
 - `scale`: The scale factor for the image, with a value like `1.0`, `2.0`, or `3.0`.
-- `orientation`: The orientation of the image. The default is [`Image.Orientation.up`](image/orientation/up.md).
+- `orientation`: The orientation of the image. The default is [`Image.Orientation.up`](./orientation/up.md).
 - `label`: The label associated with the image. SwiftUI uses the label for accessibility.
 
 ## See Also
 
-- [init(String, bundle: Bundle?, label: Text)](image/init(_:bundle:label:).md)
+### Creating an image for use as a control
+- [init(String, bundle: Bundle?, label: Text)](./init%28_,bundle,label%29.md)
   Creates a labeled image that you can use as content for controls, with the specified label.
-- [init(String, variableValue: Double?, bundle: Bundle?, label: Text)](image/init(_:variablevalue:bundle:label:).md)
+- [init(String, variableValue: Double?, bundle: Bundle?, label: Text)](./init%28_,variablevalue,bundle,label%29.md)
   Creates a labeled image that you can use as content for controls, with the specified label and variable value.
 
 

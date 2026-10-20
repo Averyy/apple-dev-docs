@@ -1,7 +1,8 @@
 # increment
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tells the entity to increment the value of its content.
 
@@ -11,7 +12,7 @@ Tells the entity to increment the value of its content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

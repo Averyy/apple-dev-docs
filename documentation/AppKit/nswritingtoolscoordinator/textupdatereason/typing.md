@@ -1,7 +1,8 @@
 # NSWritingToolsCoordinator.TextUpdateReason.typing
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An operation that involved a person editing the text in your view.
 
@@ -14,13 +15,18 @@ An operation that involved a person editing the text in your view.
 case typing
 ```
 
+```c
+NSWritingToolsCoordinatorTextUpdateReasonTyping
+```
+
 #### Discussion
 
 Specify this option when the changes come from the text input system.
 
 ## See Also
 
-- [NSWritingToolsCoordinator.TextUpdateReason.undoRedo](nswritingtoolscoordinator/textupdatereason/undoredo.md)
+### Getting the reasons
+- [NSWritingToolsCoordinator.TextUpdateReason.undoRedo](./undoredo.md)
   An operation that changed the view’s text as part of an undo or redo command.
 
 

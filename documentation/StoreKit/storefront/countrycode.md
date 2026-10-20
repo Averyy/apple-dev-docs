@@ -1,7 +1,8 @@
 # countryCode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The three-letter code that represents the country or region associated with the App Store storefront.
 
@@ -26,9 +27,10 @@ This property uses the ISO 3166-1 Alpha-3 country code representation.
 
 ## See Also
 
-- [static var current: Storefront?](storefront/current.md)
+### Identifying the storefront
+- [static var current: Storefront?](./current.md)
   The current App Store storefront for product purchases.
-- [let id: String](storefront/id.md)
+- [let id: String](./id.md)
   An Apple-defined value that uniquely identifies an App Store storefront.
 
 

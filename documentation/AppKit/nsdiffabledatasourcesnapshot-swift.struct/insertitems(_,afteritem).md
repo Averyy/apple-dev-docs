@@ -1,7 +1,8 @@
 # insertItems(_:afterItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the provided items immediately after the item with the specified identifier in the snapshot.
 
@@ -21,11 +22,12 @@ mutating func insertItems(_ identifiers: [ItemIdentifierType], afterItem afterId
 
 ## See Also
 
-- [func insertItems([ItemIdentifierType], beforeItem: ItemIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/insertitems(_:beforeitem:).md)
+### Inserting Items and Sections
+- [func insertItems([ItemIdentifierType], beforeItem: ItemIdentifierType)](./insertitems%28_,beforeitem%29.md)
   Inserts the provided items immediately before the item with the specified identifier in the snapshot.
-- [func insertSections([SectionIdentifierType], afterSection: SectionIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/insertsections(_:aftersection:).md)
+- [func insertSections([SectionIdentifierType], afterSection: SectionIdentifierType)](./insertsections%28_,aftersection%29.md)
   Inserts the provided sections immediately after the section with the specified identifier in the snapshot.
-- [func insertSections([SectionIdentifierType], beforeSection: SectionIdentifierType)](nsdiffabledatasourcesnapshot-swift.struct/insertsections(_:beforesection:).md)
+- [func insertSections([SectionIdentifierType], beforeSection: SectionIdentifierType)](./insertsections%28_,beforesection%29.md)
   Inserts the provided sections immediately before the section with the specified identifier in the snapshot.
 
 

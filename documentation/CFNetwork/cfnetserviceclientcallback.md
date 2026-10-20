@@ -1,7 +1,8 @@
 # CFNetServiceClientCallBack
 
 **Framework**: CFNetwork  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a pointer to the callback function for a CFNetService.
 
@@ -19,6 +20,10 @@ Defines a pointer to the callback function for a CFNetService.
 typealias CFNetServiceClientCallBack = (CFNetService, UnsafeMutablePointer<CFStreamError>?, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFNetService *, CFStreamError *, void *) CFNetServiceClientCallBack;
+```
+
 #### Discussion
 
 If you name your callback `MyNetServiceClientCallBack`, you would declare it like this:
@@ -30,19 +35,20 @@ Your callback function will be called when there are results of resolving a CFNe
 ## Parameters
 
 - `theService`: CFNetService associated with this callback function.
-- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/corefoundation/cfstreamerror) structure whose `error` field contain may contain an error code.
-- `info`: User-defined context information. The value of `info` is the same as the value of the `info` field of the [`CFNetServiceClientContext`](cfnetserviceclientcontext.md) structure that was provided when [`CFNetServiceSetClient(_:_:_:)`](cfnetservicesetclient(_:_:_:).md) was called for the CFNetService associated with this callback function.
+- `error`: Pointer to a [`CFStreamError`](../CoreFoundation/cfstreamerror.md) structure whose `error` field contain may contain an error code.
+- `info`: User-defined context information. The value of `info` is the same as the value of the `info` field of the [`CFNetServiceClientContext`](./cfnetserviceclientcontext.md) structure that was provided when [`CFNetServiceSetClient(_:_:_:)`](./cfnetservicesetclient%28_,_,_%29.md) was called for the CFNetService associated with this callback function.
 
 ## See Also
 
-- [typealias CFHostClientCallBack](cfhostclientcallback.md)
+### Data Types
+- [typealias CFHostClientCallBack](./cfhostclientcallback.md)
   Defines a pointer to the callback function that is called when an asynchronous resolution of a CFHost completes or an error occurs for an asynchronous CFHost resolution.
-- [typealias CFNetServiceBrowserClientCallBack](cfnetservicebrowserclientcallback.md)
+- [typealias CFNetServiceBrowserClientCallBack](./cfnetservicebrowserclientcallback.md)
   Defines a pointer to the callback function for a CFNetServiceBrowser.
-- [typealias CFNetServiceMonitorClientCallBack](cfnetservicemonitorclientcallback.md)
+- [typealias CFNetServiceMonitorClientCallBack](./cfnetservicemonitorclientcallback.md)
   Defines a pointer to the callback function that is to be called when a monitored record type changes.
-- [typealias CFNetDiagnosticStatus](cfnetdiagnosticstatus.md)
-  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](cfnetdiagnosticstatusvalues.md).
+- [typealias CFNetDiagnosticStatus](./cfnetdiagnosticstatus.md)
+  A CFIndex type that is used to return status values from `CFNetDiagnostic` status and diagnostic functions. For a list of possible values, see [`CFNetDiagnosticStatusValues`](./cfnetdiagnosticstatusvalues.md).
 
 
 ---

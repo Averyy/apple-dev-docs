@@ -1,7 +1,8 @@
 # services
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of services provided by the accessory.
 
@@ -19,9 +20,14 @@ An array of services provided by the accessory.
 var services: [HMService] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMService *> * services;
+```
+
 ## See Also
 
-- [class HMService](hmservice.md)
+### Controlling accessory features
+- [class HMService](../hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
 
 

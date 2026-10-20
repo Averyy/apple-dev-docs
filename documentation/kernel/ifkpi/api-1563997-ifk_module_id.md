@@ -1,14 +1,15 @@
 # ifk_module_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 unsigned int ifk_module_id;
 ```
 

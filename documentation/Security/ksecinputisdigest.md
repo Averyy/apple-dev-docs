@@ -1,7 +1,8 @@
 # kSecInputIsDigest
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The input is a digest of the original data.
 
@@ -13,6 +14,10 @@ The input is a digest of the original data.
 
 ```swift
 let kSecInputIsDigest: CFString
+```
+
+```c
+extern CFStringRef const kSecInputIsDigest;
 ```
 
 

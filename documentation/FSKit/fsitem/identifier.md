@@ -1,7 +1,8 @@
 # FSItem.Identifier
 
 **Framework**: FSKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The unique identifier for an item.
 
@@ -14,37 +15,42 @@ The unique identifier for an item.
 enum Identifier
 ```
 
+```c
+enum FSItemID : UInt64;
+```
+
 #### Overview
 
-Use this type when packing items for an enumeration in [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](fsdirectoryentrypacker/packentry(name:itemtype:itemid:nextcookie:attributes:).md). Either provide a unique identifier like an inode number, or one of the special enumeration cases this type defines, like [`FSItem.Identifier.rootDirectory`](fsitem/identifier/rootdirectory.md).
+Use this type when packing items for an enumeration in [`packEntry(name:itemType:itemID:nextCookie:attributes:)`](../fsdirectoryentrypacker/packentry%28name,itemtype,itemid,nextcookie,attributes%29.md). Either provide a unique identifier like an inode number, or one of the special enumeration cases this type defines, like [`FSItem.Identifier.rootDirectory`](./identifier/rootdirectory.md).
 
 ## Topics
 
 ### Working with special identifiers
-- [FSItem.Identifier.invalid](fsitem/identifier/invalid.md)
+- [FSItem.Identifier.invalid](./identifier/invalid.md)
   The identifier for an invalid item.
-- [FSItem.Identifier.parentOfRoot](fsitem/identifier/parentofroot.md)
+- [FSItem.Identifier.parentOfRoot](./identifier/parentofroot.md)
   The identifier for an item that serves as the parent of the root directory.
-- [FSItem.Identifier.rootDirectory](fsitem/identifier/rootdirectory.md)
+- [FSItem.Identifier.rootDirectory](./identifier/rootdirectory.md)
   The item identifier for the root directory.
 ### Working with raw values
-- [init?(rawValue: UInt64)](fsitem/identifier/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./identifier/init%28rawvalue%29.md)
 ### Initializers
-- [init(UInt64)](fsitem/identifier/init(_:).md)
+- [init(UInt64)](./identifier/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FSItem.ItemType](fsitem/itemtype.md)
+### Identifying an item
+- [FSItem.ItemType](./itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
 
 

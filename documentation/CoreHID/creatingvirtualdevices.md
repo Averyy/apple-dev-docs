@@ -1,16 +1,17 @@
 # Creating virtual devices
 
-**Framework**: Core HID
+**Framework**: Core HID  
+**Role**: Article
 
 Use and interact with a virtual human interface device for testing and development.
 
 #### Overview
 
-A virtual human interface device (HID) is a software implementation of a hardware device. The system treats the device as any other external peripheral. [`HIDVirtualDevice`](hidvirtualdevice.md) models a virtual device and you communicate with it using [`HIDDeviceClient`](hiddeviceclient.md). Use a virtual device to transport data back and forth between other apps without the need for a connected device.
+A virtual human interface device (HID) is a software implementation of a hardware device. The system treats the device as any other external peripheral. [`HIDVirtualDevice`](./hidvirtualdevice.md) models a virtual device and you communicate with it using [`HIDDeviceClient`](./hiddeviceclient.md). Use a virtual device to transport data back and forth between other apps without the need for a connected device.
 
-Define the details of a [`HIDVirtualDevice`](hidvirtualdevice.md) by passing a set of [`HIDVirtualDevice.Properties`](hidvirtualdevice/properties.md) during creation. You must pass [`descriptor`](hidvirtualdevice/properties/descriptor.md) and [`vendorID`](hidvirtualdevice/properties/vendorid.md), and specify additional properties using [`init(descriptor:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:extraProperties:)`](hidvirtualdevice/properties/init(descriptor:vendorid:productid:transport:product:manufacturer:modelnumber:versionnumber:serialnumber:uniqueid:locationid:localizationcode:extraproperties:).md).
+Define the details of a [`HIDVirtualDevice`](./hidvirtualdevice.md) by passing a set of [`HIDVirtualDevice.Properties`](./hidvirtualdevice/properties.md) during creation. You must pass [`descriptor`](./hidvirtualdevice/properties/descriptor.md) and [`vendorID`](./hidvirtualdevice/properties/vendorid.md), and specify additional properties using [`init(descriptor:vendorID:productID:transport:product:manufacturer:modelNumber:versionNumber:serialNumber:uniqueID:locationID:localizationCode:extraProperties:)`](./hidvirtualdevice/properties/init%28descriptor,vendorid,productid,transport,product,manufacturer,modelnumber,versionnumber,serialnumber,uniqueid,locationid,localizationcode,extraproperties%29.md).
 
-The following creates a [`HIDVirtualDevice`](hidvirtualdevice.md) that acts as a keyboard:
+The following creates a [`HIDVirtualDevice`](./hidvirtualdevice.md) that acts as a keyboard:
 
 ```swift
 // This describes a keyboard device according to the Human Interface Devices standard.
@@ -22,7 +23,7 @@ guard let device = HIDVirtualDevice(properties: properties) else {
 }
 ```
 
-The virtual device adopts the [`HIDVirtualDeviceDelegate`](hidvirtualdevicedelegate.md) protocol to process report requests. Clients on the system send set reports and receive get reports to and from this virtual device using [`dispatchSetReportRequest(type:id:data:timeout:)`](hiddeviceclient/dispatchsetreportrequest(type:id:data:timeout:).md) and [`dispatchGetReportRequest(type:id:timeout:)`](hiddeviceclient/dispatchgetreportrequest(type:id:timeout:).md):
+The virtual device adopts the [`HIDVirtualDeviceDelegate`](./hidvirtualdevicedelegate.md) protocol to process report requests. Clients on the system send set reports and receive get reports to and from this virtual device using [`dispatchSetReportRequest(type:id:data:timeout:)`](./hiddeviceclient/dispatchsetreportrequest%28type,id,data,timeout%29.md) and [`dispatchGetReportRequest(type:id:timeout:)`](./hiddeviceclient/dispatchgetreportrequest%28type,id,timeout%29.md):
 
 ```swift
 final class Delegate : HIDVirtualDeviceDelegate {
@@ -51,11 +52,12 @@ try await device.dispatchInputReport(data: Data([5, 6, 7, 8]), timestamp: Suspen
 
 ## See Also
 
-- [actor HIDVirtualDevice](hidvirtualdevice.md)
+### Simulation
+- [actor HIDVirtualDevice](./hidvirtualdevice.md)
   A virtual service to emulate a HID device connected to the system.
-- [protocol HIDVirtualDeviceDelegate](hidvirtualdevicedelegate.md)
+- [protocol HIDVirtualDeviceDelegate](./hidvirtualdevicedelegate.md)
   The delegate to receive notifications for a virtual HID device.
-- [HIDVirtualDevice.Properties](hidvirtualdevice/properties.md)
+- [HIDVirtualDevice.Properties](./hidvirtualdevice/properties.md)
   The properties for a virtual HID device.
 
 

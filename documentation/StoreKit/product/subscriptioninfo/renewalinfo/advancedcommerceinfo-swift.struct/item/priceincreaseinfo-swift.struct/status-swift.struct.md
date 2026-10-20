@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe the status of a subscription price increase.
 
@@ -23,21 +24,21 @@ struct Status
 ## Topics
 
 ### Price increase status values
-- [static let pending: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct/pending.md)
+- [static let pending: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./status-swift.struct/pending.md)
   A value that indicates the App Store is waiting for customer consent for the price increase for the subscription renewal.
-- [static let accepted: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct/accepted.md)
+- [static let accepted: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./status-swift.struct/accepted.md)
   A value that indicates a customer accepted the new subscription price.
-- [static let scheduled: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct/item/priceincreaseinfo-swift.struct/status-swift.struct/scheduled.md)
+- [static let scheduled: Product.SubscriptionInfo.RenewalInfo.AdvancedCommerceInfo.Item.PriceIncreaseInfo.Status](./status-swift.struct/scheduled.md)
   A value that indicates the App Store scheduled the price increase for the subscription renewal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../../../Swift/equatable.md)
+- [Hashable](../../../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../../../Swift/sendablemetatype.md)
 
 
 ---

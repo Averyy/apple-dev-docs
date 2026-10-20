@@ -1,7 +1,8 @@
 # all
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All customization behaviors.
 
@@ -20,11 +21,12 @@ static var all: TableColumnCustomizationBehavior { get }
 
 ## See Also
 
-- [static let reorder: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/reorder.md)
+### Getting the customization behavior
+- [static let reorder: TableColumnCustomizationBehavior](./reorder.md)
   A behavior that allows the column to be reordered by the user.
-- [static let resize: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/resize.md)
+- [static let resize: TableColumnCustomizationBehavior](./resize.md)
   A behavior that allows the column to be resized by the user.
-- [static let visibility: TableColumnCustomizationBehavior](tablecolumncustomizationbehavior/visibility.md)
+- [static let visibility: TableColumnCustomizationBehavior](./visibility.md)
   A behavior that allows the column to be hidden or revealed by the user.
 
 

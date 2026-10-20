@@ -1,7 +1,8 @@
 # singleSelection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option indicating whether the menu and its submenus allow a single menu item that’s in the “on” state.
 
@@ -18,13 +19,18 @@ An option indicating whether the menu and its submenus allow a single menu item 
 static var singleSelection: UIMenu.Options { get }
 ```
 
+```c
+UIMenuOptionsSingleSelection
+```
+
 ## See Also
 
-- [static var displayInline: UIMenu.Options](uimenu/options-swift.struct/displayinline.md)
+### Options
+- [static var displayInline: UIMenu.Options](./displayinline.md)
   An option indicating the menu displays inline with its parent menu instead of displaying as a submenu.
-- [static var destructive: UIMenu.Options](uimenu/options-swift.struct/destructive.md)
+- [static var destructive: UIMenu.Options](./destructive.md)
   An option indicating the menu’s appearance represents a destructive action.
-- [static var displayAsPalette: UIMenu.Options](uimenu/options-swift.struct/displayaspalette.md)
+- [static var displayAsPalette: UIMenu.Options](./displayaspalette.md)
   An option indicating the menu displays as a row of menu elements for choosing from a collection of items.
 
 

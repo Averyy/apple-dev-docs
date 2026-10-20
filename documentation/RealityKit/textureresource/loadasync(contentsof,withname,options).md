@@ -1,16 +1,17 @@
 # loadAsync(contentsOf:withName:options:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads a texture resource from a URL with options.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 15.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:options:))
+- iPadOS 15.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:options:))
+- Mac Catalyst 15.0+ - Deprecated in 18.0 (renamed: init(contentsOf:withName:options:))
+- macOS 12.0+ - Deprecated in 15.0 (renamed: init(contentsOf:withName:options:))
+- visionOS 1.0+ - Deprecated in 1.0 (renamed: init(contentsOf:withName:options:))
 
 ## Declaration
 
@@ -35,13 +36,14 @@ RealityKit uses the resource name to distinguish resources locally, and to match
 
 ## See Also
 
-- [static func generate(from: CGImage, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](textureresource/generate(from:withname:options:).md)
+### Deprecated
+- [static func generate(from: CGImage, withName: String?, options: TextureResource.CreateOptions) throws -> TextureResource](./generate%28from,withname,options%29.md)
   Synchronously creates a texture resource from an in-memory Core Graphics image.
-- [static func generateAsync(from: CGImage, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/generateasync(from:withname:options:).md)
+- [static func generateAsync(from: CGImage, withName: String?, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./generateasync%28from,withname,options%29.md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
-- [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](textureresource/replaceasync(withimage:options:).md)
+- [func replaceAsync(withImage: CGImage, options: TextureResource.CreateOptions) -> LoadRequest<TextureResource>](./replaceasync%28withimage,options%29.md)
   Asynchronously replaces the texture with a Core Graphics image.
-- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](textureresource/generate(from:named:options:).md)
+- [static func generate(from: CGImage, named: String?, options: TextureResource.CreateOptions) async throws -> TextureResource](./generate%28from,named,options%29.md)
   Asynchronously generates a texture resource from an in-memory Core Graphics image.
 
 

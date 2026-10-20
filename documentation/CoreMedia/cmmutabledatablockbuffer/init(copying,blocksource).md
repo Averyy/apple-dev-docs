@@ -1,7 +1,8 @@
 # init(copying:blockSource:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a block buffer by copying the given audio buffer list.
 

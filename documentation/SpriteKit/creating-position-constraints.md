@@ -1,12 +1,13 @@
 # Creating Position Constraints
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Create a position constraint and add it to a node.
 
 #### Overview
 
-You lock a node at a specific coordinate with [`positionX(_:y:)`](skconstraint/positionx(_:y:).md). Constrain a node’s horizontal position with [`positionX(_:)`](skconstraint/positionx(_:).md), or constrain its vertical position with [`positionY(_:)`](skconstraint/positiony(_:).md).
+You lock a node at a specific coordinate with [`positionX(_:y:)`](./skconstraint/positionx%28_,y%29.md). Constrain a node’s horizontal position with [`positionX(_:)`](./skconstraint/positionx%28_%29.md), or constrain its vertical position with [`positionY(_:)`](./skconstraint/positiony%28_%29.md).
 
 The following code shows how you can create a node with an attached physics body that’s affected by a noise field. The node moves with the noise but the constraints keep it within a rectangular region between 300 and 340 points on both the horizontal and vertical axes.
 
@@ -29,11 +30,12 @@ node.constraints = [ lockToCenter ]
 
 ## See Also
 
-- [class func positionX(SKRange, y: SKRange) -> Self](skconstraint/positionx(_:y:).md)
+### Creating Position Constraints
+- [class func positionX(SKRange, y: SKRange) -> Self](./skconstraint/positionx%28_,y%29.md)
   Creates a constraint that restricts both coordinates of a node’s position.
-- [class func positionX(SKRange) -> Self](skconstraint/positionx(_:).md)
+- [class func positionX(SKRange) -> Self](./skconstraint/positionx%28_%29.md)
   Creates a constraint that restricts the x-coordinate of a node’s position.
-- [class func positionY(SKRange) -> Self](skconstraint/positiony(_:).md)
+- [class func positionY(SKRange) -> Self](./skconstraint/positiony%28_%29.md)
   Creates a constraint that restricts the y-coordinate of a node’s position.
 
 

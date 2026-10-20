@@ -1,7 +1,8 @@
 # BindTarget
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A reference to a particular scene, entity, or property that animates.
 
@@ -11,7 +12,7 @@ A reference to a particular scene, entity, or property that animates.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,72 +24,73 @@ enum BindTarget
 
 This structure describes a reference to an animated property. The property may be a transform, collection of joint transforms, an arbitrary named property of an entity, or the property of a nested entity.
 
-For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case returns a [`BindPath`](bindpath.md) instance that contains an array of *parts* ([`BindPath.Part`](bindpath/part.md)). Each part identifies one or more nested, named entities or scenes, followed by the property to animate.
+For nested entities, the [`BindTarget.path(_:)`](./bindtarget/path%28_%29.md) case returns a [`BindPath`](./bindpath.md) instance that contains an array of *parts* ([`BindPath.Part`](./bindpath/part.md)). Each part identifies one or more nested, named entities or scenes, followed by the property to animate.
 
 ## Topics
 
 ### Choosing a bind target
-- [case `internal`(InternalBindPath)](bindtarget/internal(_:).md)
+- [case `internal`(InternalBindPath)](./bindtarget/internal%28_%29.md)
   A bind target that refers to a framework-provided property.
-- [BindTarget.jointTransforms](bindtarget/jointtransforms.md)
+- [BindTarget.jointTransforms](./bindtarget/jointtransforms.md)
   An option that specifies that the entity’s joint transforms animate.
-- [BindTarget.parameter(_:)](bindtarget/parameter(_:).md)
+- [BindTarget.parameter(_:)](./bindtarget/parameter%28_%29.md)
   Provides a property that animates from the given textual name.
-- [BindTarget.path(_:)](bindtarget/path(_:).md)
+- [BindTarget.path(_:)](./bindtarget/path%28_%29.md)
   Provides a complex bind path capable of animating additional entities other than the current entity.
-- [BindTarget.transform](bindtarget/transform.md)
+- [BindTarget.transform](./bindtarget/transform.md)
   A option that specifies that the target entity’s transform animates.
 ### Targeting entities and scenes
-- [static func scene(String) -> BindTarget.ScenePath](bindtarget/scene(_:).md)
+- [static func scene(String) -> BindTarget.ScenePath](./bindtarget/scene%28_%29.md)
   Generates a bind path from a particular scene.
-- [BindTarget.ScenePath](bindtarget/scenepath.md)
+- [BindTarget.ScenePath](./bindtarget/scenepath.md)
   A bind path for a particular scene.
-- [static func anchorEntity(String) -> BindTarget.EntityPath](bindtarget/anchorentity(_:).md)
+- [static func anchorEntity(String) -> BindTarget.EntityPath](./bindtarget/anchorentity%28_%29.md)
   Generates a complex bind path from a particular anchor entity in the scene.
-- [static func entity(String) -> BindTarget.EntityPath](bindtarget/entity(_:).md)
+- [static func entity(String) -> BindTarget.EntityPath](./bindtarget/entity%28_%29.md)
   Generates a complex bind path from a particular child entity of the current entity.
-- [BindTarget.EntityPath](bindtarget/entitypath.md)
+- [BindTarget.EntityPath](./bindtarget/entitypath.md)
   A bind path context for a particular entity.
 ### Animatable properties
-- [BindTarget.opacity](bindtarget/opacity.md)
+- [BindTarget.opacity](./bindtarget/opacity.md)
   An option that specifies that the entity’s opacity to animate. Requires that the entity has an OpacityComponent
-- [BindTarget.billboardBlendFactor](bindtarget/billboardblendfactor.md)
-- [BindTarget.blendShapeWeights](bindtarget/blendshapeweights.md)
+- [BindTarget.billboardBlendFactor](./bindtarget/billboardblendfactor.md)
+- [BindTarget.blendShapeWeights](./bindtarget/blendshapeweights.md)
   An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent.
-- [BindTarget.skeletalPose(_:)](bindtarget/skeletalpose(_:).md)
+- [BindTarget.skeletalPose(_:)](./bindtarget/skeletalpose%28_%29.md)
   An option that specifies one of the entity’s skeletal poses to animate.
-- [BindTarget.blendShapeWeightsAtIndex(_:)](bindtarget/blendshapeweightsatindex(_:).md)
-- [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](bindtarget/blendshapeweightswithid(_:).md)
-- [static func material(Int) -> BindTarget.MaterialPath](bindtarget/material(_:).md)
+- [BindTarget.blendShapeWeightsAtIndex(_:)](./bindtarget/blendshapeweightsatindex%28_%29.md)
+- [case blendShapeWeightsWithID(BlendShapeWeightsData.ID)](./bindtarget/blendshapeweightswithid%28_%29.md)
+- [static func material(Int) -> BindTarget.MaterialPath](./bindtarget/material%28_%29.md)
   Generates a complex bind path from one of an entity’s materials.
-- [BindTarget.MaterialPath](bindtarget/materialpath.md)
+- [BindTarget.MaterialPath](./bindtarget/materialpath.md)
   Material parameters that an animation can target.
-- [BindTarget.TextureCoordinateTransformPath](bindtarget/texturecoordinatetransformpath.md)
+- [BindTarget.TextureCoordinateTransformPath](./bindtarget/texturecoordinatetransformpath.md)
   The texture coordinate parameters for a given texture layer that an animation can target.
-- [BindTarget.IkSolverPath](bindtarget/iksolverpath.md)
+- [BindTarget.IkSolverPath](./bindtarget/iksolverpath.md)
 ### Binding to root motion
-- [BindTarget.rootMotion](bindtarget/rootmotion.md)
+- [BindTarget.rootMotion](./bindtarget/rootmotion.md)
   A target that drives an entity’s root motion.
 ### Operators
-- [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
+- [static func == (BindTarget, BindTarget) -> Bool](./bindtarget/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two bind targets are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct BindPath](bindpath.md)
+### Bindable animation targets
+- [struct BindPath](./bindpath.md)
   The components of a target’s path that refer to the animation properties of a nested scene or entity.
-- [struct BindableValue](bindablevalue.md)
+- [struct BindableValue](./bindablevalue.md)
   The value of a bindable target.
-- [struct BindableValuesReference](bindablevaluesreference.md)
+- [struct BindableValuesReference](./bindablevaluesreference.md)
   A reference to a bindable value of an animation.
-- [struct ParameterSet](parameterset.md)
+- [struct ParameterSet](./parameterset.md)
   A reference to general-purpose entity parameters for animations.
-- [struct InternalBindPath](internalbindpath.md)
+- [struct InternalBindPath](./internalbindpath.md)
   A bind target for framework-provided properties.
 
 

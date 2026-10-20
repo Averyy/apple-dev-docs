@@ -1,7 +1,8 @@
 # SFButtonTypeBack
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates the Back button was pressed.
 
@@ -14,13 +15,18 @@ Indicates the Back button was pressed.
 var SFButtonTypeBack: SFButtonType { get }
 ```
 
+```c
+SFButtonTypeBack
+```
+
 ## See Also
 
-- [var SFButtonTypeCancel: SFButtonType](sfbuttontypecancel.md)
+### Constants
+- [var SFButtonTypeCancel: SFButtonType](./sfbuttontypecancel.md)
   Indicates the Cancel button was pressed.
-- [var SFButtonTypeOK: SFButtonType](sfbuttontypeok.md)
+- [var SFButtonTypeOK: SFButtonType](./sfbuttontypeok.md)
   Indicates the OK button was pressed.
-- [var SFButtonTypeLogin: SFButtonType](sfbuttontypelogin.md)
+- [var SFButtonTypeLogin: SFButtonType](./sfbuttontypelogin.md)
   Indicates the Login button was pressed.
 
 

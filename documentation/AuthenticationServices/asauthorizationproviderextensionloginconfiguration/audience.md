@@ -1,7 +1,8 @@
 # audience
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audience for validation and requests.
 
@@ -14,21 +15,26 @@ The audience for validation and requests.
 var audience: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * audience;
+```
+
 ## Mentions
 
-- [Supporting key requests and key exchange requests](supporting-key-requests-and-key-exchange-requests.md)
-- [Creating an embedded assertion](creating-an-embedded-assertion.md)
-- [Creating an encrypted embedded assertion](creating-an-encrypted-embedded-assertion.md)
+- [Supporting key requests and key exchange requests](../supporting-key-requests-and-key-exchange-requests.md)
+- [Creating an embedded assertion](../creating-an-embedded-assertion.md)
+- [Creating an encrypted embedded assertion](../creating-an-encrypted-embedded-assertion.md)
 
 ## See Also
 
-- [var clientID: String](asauthorizationproviderextensionloginconfiguration/clientid.md)
+### Obtaining the required configuration
+- [var clientID: String](./clientid.md)
   The identifier for the client at the identity provider.
-- [var jwksEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/jwksendpointurl.md)
+- [var jwksEndpointURL: URL](./jwksendpointurl.md)
   The JSON Web Key Set endpoint URL for keys.
-- [var tokenEndpointURL: URL](asauthorizationproviderextensionloginconfiguration/tokenendpointurl.md)
+- [var tokenEndpointURL: URL](./tokenendpointurl.md)
   The token endpoint URL for login requests.
-- [var issuer: String](asauthorizationproviderextensionloginconfiguration/issuer.md)
+- [var issuer: String](./issuer.md)
   The issuer of the identity token that the identity provider returns.
 
 

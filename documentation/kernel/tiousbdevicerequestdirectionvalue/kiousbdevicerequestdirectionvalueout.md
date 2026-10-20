@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestDirectionValueOut
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The output direction value.
 
@@ -10,7 +11,7 @@ The output direction value.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionValueOut = 0
 ```
 

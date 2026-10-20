@@ -1,7 +1,8 @@
 # transformer
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transformation applied to each element.
 

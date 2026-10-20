@@ -1,7 +1,8 @@
 # update_max_num
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum number of results that can accumulatebefore an update notification is sent. This value is used only duringthe live-update phase of a query.
 
@@ -13,6 +14,10 @@ The maximum number of results that can accumulatebefore an update notification i
 
 ```swift
 var update_max_num: Int
+```
+
+```c
+size_t update_max_num;
 ```
 
 

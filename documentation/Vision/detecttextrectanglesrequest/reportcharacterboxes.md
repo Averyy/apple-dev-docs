@@ -1,7 +1,8 @@
 # reportCharacterBoxes
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request detects character-bounding boxes.
 
@@ -21,7 +22,7 @@ var reportCharacterBoxes: Bool
 
 #### Discussion
 
-Set the value to `true` to have the detector return character-bounding boxes as an array of [`VNRectangleObservation`](vnrectangleobservation.md) objects.
+Set the value to `true` to have the detector return character-bounding boxes as an array of [`VNRectangleObservation`](../vnrectangleobservation.md) objects.
 
 
 ---

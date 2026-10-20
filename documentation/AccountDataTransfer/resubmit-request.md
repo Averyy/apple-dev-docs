@@ -1,7 +1,8 @@
 # Resubmit request
 
 **Framework**: Account Data Transfer  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enqueue the next instance of a recurring request.
 
@@ -14,7 +15,7 @@ The `requestId` you pass must be the most recent instance of the series identifi
 
 **Request**:
 
-```None
+```
 % curl -X POST \
   -H "Authorization: Bearer [ACCESS_TOKEN]" \
   -H "X-Apple-Transaction-Id: E3857B28-7FC4-41C8-AC54-08E121E26F59" \
@@ -25,7 +26,7 @@ The `requestId` you pass must be the most recent instance of the series identifi
 
 **Response**:
 
-```None
+```
 {
   "parentRequestId": "EABD06C0-9210-47FF-83C4-318CF8520644",
   "requestId": "A2DFE115-F039-4FC4-8286-7EAD51D91D8B",
@@ -40,19 +41,31 @@ The `requestId` you pass must be the most recent instance of the series identifi
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ResubmissionRequest`
+
 The recurring request for which you submit a new instance.
+
+## Responses
+
+- `200` OK (`ResubmissionResponse`, `application/json`)
+- `400` Bad Request
+- `401` Unauthorized
+- `403` Forbidden
+- `500` Internal Server Error
 
 ## See Also
 
-- [Submit request](submit-request.md)
+### Request creation
+- [Submit request](./submit-request.md)
   Starts preparing someone’s data for download.
-- [object JobSubmission](jobsubmission.md)
+- [object JobSubmission](./jobsubmission.md)
   An object that describes a submission that requests someone’s data.
-- [object CreatedJob](createdjob.md)
+- [object CreatedJob](./createdjob.md)
   An object that represents a newly created download request.
-- [object ResubmissionRequest](resubmissionrequest.md)
+- [object ResubmissionRequest](./resubmissionrequest.md)
   An object that describes a request to resubmit a recurring download request.
-- [object ResubmissionResponse](resubmissionresponse.md)
+- [object ResubmissionResponse](./resubmissionresponse.md)
   An object that represents a resubmitted recurring download request.
 
 

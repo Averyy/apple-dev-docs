@@ -1,7 +1,8 @@
 # PredicateExpressions.SequenceContainsWhere
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,26 +22,26 @@ struct SequenceContainsWhere<LHS, RHS> where LHS : PredicateExpression, RHS : Pr
 ## Topics
 
 ### Initializers
-- [init(LHS, builder: (PredicateExpressions.Variable<PredicateExpressions.SequenceContainsWhere<LHS, RHS>.Element>) -> RHS)](predicateexpressions/sequencecontainswhere/init(_:builder:).md)
+- [init(LHS, builder: (PredicateExpressions.Variable<PredicateExpressions.SequenceContainsWhere<LHS, RHS>.Element>) -> RHS)](./sequencecontainswhere/init%28_,builder%29.md)
 ### Instance Properties
-- [let sequence: LHS](predicateexpressions/sequencecontainswhere/sequence.md)
-- [let test: RHS](predicateexpressions/sequencecontainswhere/test.md)
-- [let variable: PredicateExpressions.Variable<PredicateExpressions.SequenceContainsWhere<LHS, RHS>.Element>](predicateexpressions/sequencecontainswhere/variable.md)
+- [let sequence: LHS](./sequencecontainswhere/sequence.md)
+- [let test: RHS](./sequencecontainswhere/test.md)
+- [let variable: PredicateExpressions.Variable<PredicateExpressions.SequenceContainsWhere<LHS, RHS>.Element>](./sequencecontainswhere/variable.md)
 ### Type Aliases
-- [PredicateExpressions.SequenceContainsWhere.Element](predicateexpressions/sequencecontainswhere/element.md)
+- [PredicateExpressions.SequenceContainsWhere.Element](./sequencecontainswhere/element.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

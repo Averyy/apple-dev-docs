@@ -1,7 +1,8 @@
 # nominalFrameRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The frame rate of the track, in frames per second.
 
@@ -20,17 +21,20 @@ The frame rate of the track, in frames per second.
 static var nominalFrameRate: AVAsyncProperty<Root, Float> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 The nominal frame rate indicates the number of frames per second for tracks that contain a full frame per media sample. For field-based (interlaced) video tracks, the value of this property indicates the field rate, not the frame rate.
 
 ## See Also
 
-- [static var minFrameDuration: AVAsyncProperty<Root, CMTime>](avpartialasyncproperty/minframeduration.md)
+### Loading frame-based characteristics
+- [static var minFrameDuration: AVAsyncProperty<Root, CMTime>](./minframeduration.md)
   The minimum duration of the track’s frames.
-- [static var requiresFrameReordering: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/requiresframereordering.md)
+- [static var requiresFrameReordering: AVAsyncProperty<Root, Bool>](./requiresframereordering.md)
   A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
 

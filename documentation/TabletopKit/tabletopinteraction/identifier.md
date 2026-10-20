@@ -1,7 +1,8 @@
 # TabletopInteraction.Identifier
 
 **Framework**: TabletopKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unique identifier for interactions.
 
@@ -21,18 +22,18 @@ An interaction identifier is unique across all instances of the same tabletop ga
 ## Topics
 
 ### Creating an identifier
-- [init(Int)](tabletopinteraction/identifier/init(_:).md)
+- [init(Int)](./identifier/init%28_%29.md)
 ### Getting the raw value
-- [let rawValue: Int](tabletopinteraction/identifier/rawvalue.md)
+- [let rawValue: Int](./identifier/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

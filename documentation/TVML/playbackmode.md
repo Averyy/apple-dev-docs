@@ -1,12 +1,14 @@
 # playbackMode
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Specifies when inline playback of a media item starts.
 
 ## See Also
 
-- [audioMode](audiomode.md)
+### Inline Playback
+- [audioMode](./audiomode.md)
   Specifies how audio is played during inline playback.
 
 

@@ -1,7 +1,8 @@
 # AVDisplayDynamicRange.high
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a high dynamic range. Allows video content to use extended dynamic range if it has dynamic range content.
 
@@ -17,13 +18,18 @@ Defines a high dynamic range. Allows video content to use extended dynamic range
 case high
 ```
 
+```c
+AVDisplayDynamicRangeHigh
+```
+
 ## See Also
 
-- [AVDisplayDynamicRange.automatic](avdisplaydynamicrange/automatic.md)
+### Dynamic ranges
+- [AVDisplayDynamicRange.automatic](./automatic.md)
   Defines an automatic dynamic range. Indicates that the dynamic range will be set automatically.
-- [AVDisplayDynamicRange.standard](avdisplaydynamicrange/standard.md)
+- [AVDisplayDynamicRange.standard](./standard.md)
   Defines a standard dynamic range. Restricts the video content dynamic range to the standard range regardless of the actual range of the video content.
-- [AVDisplayDynamicRange.constrainedHigh](avdisplaydynamicrange/constrainedhigh.md)
+- [AVDisplayDynamicRange.constrainedHigh](./constrainedhigh.md)
   Defines a constrained high dynamic range. Allows for constrained High Dynamic Range (HDR) video content which is useful for mixing HDR and Standard Dynamic Range (SDR) content.
 
 

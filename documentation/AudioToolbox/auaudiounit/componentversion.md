@@ -1,7 +1,8 @@
 # componentVersion
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio unit’s component’s version.
 
@@ -19,18 +20,31 @@ The audio unit’s component’s version.
 var componentVersion: UInt32 { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) uint32_t componentVersion;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) uint32_t componentVersion;
+```
+
 ## See Also
 
-- [var componentDescription: AudioComponentDescription](auaudiounit/componentdescription.md)
+### Describing the Audio Unit
+- [var componentDescription: AudioComponentDescription](./componentdescription.md)
   The component description with which the audio unit was created.
-- [var component: AudioComponent](auaudiounit/component.md)
+- [var component: AudioComponent](./component.md)
   The component found in the component description with which the audio unit was created.
-- [var componentName: String?](auaudiounit/componentname.md)
+- [var componentName: String?](./componentname.md)
   The audio unit’s component’s name.
-- [var audioUnitName: String?](auaudiounit/audiounitname.md)
+- [var audioUnitName: String?](./audiounitname.md)
   The audio unit’s name, derived from the component’s name.
-- [var audioUnitShortName: String?](auaudiounit/audiounitshortname.md)
-- [var manufacturerName: String?](auaudiounit/manufacturername.md)
+- [var audioUnitShortName: String?](./audiounitshortname.md)
+- [var manufacturerName: String?](./manufacturername.md)
   The manufacturer’s name, derived from the component’s name.
 
 

@@ -1,7 +1,8 @@
 # kCVImageBufferDisplayMaskRectangle_LeftEdgePointsKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies inset points on the left vertical edge of the rectangle.
 
@@ -20,25 +21,30 @@ Specifies inset points on the left vertical edge of the rectangle.
 let kCVImageBufferDisplayMaskRectangle_LeftEdgePointsKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferDisplayMaskRectangle_LeftEdgePointsKey;
+```
+
 #### Discussion
 
-The points are [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) of unsigned 16-bit integer [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) pairs alternating between inset X and inset Y. Inset X is an unsigned offset from the left edge (`0`) toward the right edge (width). Inset Y is an unsigned offset from the top edge (`0`) toward the bottom edge (height).
+The points are [`CFNumber`](../CoreFoundation/cfnumber.md) of unsigned 16-bit integer [`CFArray`](../CoreFoundation/cfarray.md) pairs alternating between inset X and inset Y. Inset X is an unsigned offset from the left edge (`0`) toward the right edge (width). Inset Y is an unsigned offset from the top edge (`0`) toward the bottom edge (height).
 
 ## See Also
 
-- [let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleheightkey.md)
+### Constants
+- [let kCVImageBufferDisplayMaskRectangle_RectangleHeightKey: CFString](./kcvimagebufferdisplaymaskrectangle_rectangleheightkey.md)
   Specifies the height of the rectangle starting at the rectangle’s top offset toward the rectangle’s bottom edge.
-- [let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangleleftkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleLeftKey: CFString](./kcvimagebufferdisplaymaskrectangle_rectangleleftkey.md)
   Specifies the horizontal pixel offset of the rectangle from the left of the bounding raster.
-- [let kCVImageBufferDisplayMaskRectangle_RectangleTopKey: CFString](kcvimagebufferdisplaymaskrectangle_rectangletopkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleTopKey: CFString](./kcvimagebufferdisplaymaskrectangle_rectangletopkey.md)
   Specifies the vertical pixel offset of the rectangle from the top of the bounding raster.
-- [let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_rectanglewidthkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString](./kcvimagebufferdisplaymaskrectangle_rectanglewidthkey.md)
   Specifies the width of the rectangle starting at the rectangle’s left offset toward the rectangle’s right edge.
-- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterheightkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterHeightKey: CFString](./kcvimagebufferdisplaymaskrectangle_referencerasterheightkey.md)
   Specifies the height in pixels of the 2D coordinate system to define the rectangle.
-- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString](kcvimagebufferdisplaymaskrectangle_referencerasterwidthkey.md)
+- [let kCVImageBufferDisplayMaskRectangle_ReferenceRasterWidthKey: CFString](./kcvimagebufferdisplaymaskrectangle_referencerasterwidthkey.md)
   Specifies the width in pixels of the 2D coordinate system to define the rectangle.
-- [let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString](kcvimagebufferdisplaymaskrectangle_rightedgepointskey.md)
+- [let kCVImageBufferDisplayMaskRectangle_RightEdgePointsKey: CFString](./kcvimagebufferdisplaymaskrectangle_rightedgepointskey.md)
   Specifies inset points on the right vertical edge of the rectangle.
 
 

@@ -1,7 +1,8 @@
 # unsupportedAPIs
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies unsupported APIs for this extension, making them `undefined` in JavaScript.
 
@@ -16,6 +17,10 @@ Specifies unsupported APIs for this extension, making them `undefined` in JavaSc
 
 ```swift
 var unsupportedAPIs: Set<String>! { get set }
+```
+
+```objc
+@property (nonatomic, copy, null_resettable) NSSet<NSString *> * unsupportedAPIs;
 ```
 
 #### Discussion

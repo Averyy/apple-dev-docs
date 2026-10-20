@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The normal texture this scaler evaluates.
@@ -19,9 +20,13 @@ The normal texture this scaler evaluates.
 var normalTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> normalTexture;
+```
+
 #### Discussion
 
-You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`normalTextureUsage`](mtlfxtemporaldenoisedscalerbase/normaltextureusage.md) requests and the pixel format that [`normalTextureFormat`](mtlfxtemporaldenoisedscalerdescriptor/normaltextureformat.md) requests.
+You are responsible for ensuring the usage and pixel format of the texture you assign to this property matches the texture usage [`normalTextureUsage`](./normaltextureusage.md) requests and the pixel format that [`normalTextureFormat`](../mtlfxtemporaldenoisedscalerdescriptor/normaltextureformat.md) requests.
 
 
 ---

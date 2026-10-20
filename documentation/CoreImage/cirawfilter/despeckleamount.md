@@ -1,7 +1,8 @@
 # despeckleAmount
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var despeckleAmount: Float { get set }
+```
+
+```objc
+@property (readwrite) float despeckleAmount;
 ```
 
 

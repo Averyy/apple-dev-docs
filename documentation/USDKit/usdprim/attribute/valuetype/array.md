@@ -1,7 +1,8 @@
 # array
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array type corresponding to this type.
 

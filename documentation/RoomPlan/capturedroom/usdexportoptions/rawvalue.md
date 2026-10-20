@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A raw value for the export option.
 
@@ -18,7 +19,8 @@ let rawValue: Int32
 
 ## See Also
 
-- [init(rawValue: Int32)](capturedroom/usdexportoptions/init(rawvalue:).md)
+### Creating an export option
+- [init(rawValue: Int32)](./init%28rawvalue%29.md)
   Creates an export option with the specified raw value.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIPortEventMessageData0PortNumber](3612506-anonymous/iousbhostciporteventmessagedata0portnumber.md)
-- [IOUSBHostCIPortEventMessageData0PortNumberPhase](3612506-anonymous/iousbhostciporteventmessagedata0portnumberphase.md)
+- [IOUSBHostCIPortEventMessageData0PortNumber](./api-3612506-anonymous/iousbhostciporteventmessagedata0portnumber.md)
+- [IOUSBHostCIPortEventMessageData0PortNumberPhase](./api-3612506-anonymous/iousbhostciporteventmessagedata0portnumberphase.md)
 
 
 ---

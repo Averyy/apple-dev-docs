@@ -1,7 +1,8 @@
 # height
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the cylinder portion of the capsule.
 

@@ -1,17 +1,22 @@
 # defaultFlatness
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default flatness value for all paths.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var defaultFlatness: CGFloat { get set }
+```
+
+```objc
+@property (class) CGFloat defaultFlatness;
 ```
 
 #### Return Value
@@ -20,17 +25,19 @@ The default value for determining the smoothness of curved paths, or 0.6 if no o
 
 ## See Also
 
-- [var flatness: CGFloat](nsbezierpath/flatness.md)
+### Related Documentation
+- [var flatness: CGFloat](./flatness.md)
   The accuracy with which curves are rendered.
-- [class var defaultWindingRule: NSBezierPath.WindingRule](nsbezierpath/defaultwindingrule.md)
+### Configuring Default Path Attributes
+- [class var defaultWindingRule: NSBezierPath.WindingRule](./defaultwindingrule.md)
   Returns the default winding rule used to fill all paths.
-- [class var defaultLineCapStyle: NSBezierPath.LineCapStyle](nsbezierpath/defaultlinecapstyle.md)
+- [class var defaultLineCapStyle: NSBezierPath.LineCapStyle](./defaultlinecapstyle.md)
   Returns the default line cap style for all paths.
-- [class var defaultLineJoinStyle: NSBezierPath.LineJoinStyle](nsbezierpath/defaultlinejoinstyle.md)
+- [class var defaultLineJoinStyle: NSBezierPath.LineJoinStyle](./defaultlinejoinstyle.md)
   Returns the default line join style for all paths.
-- [class var defaultLineWidth: CGFloat](nsbezierpath/defaultlinewidth.md)
+- [class var defaultLineWidth: CGFloat](./defaultlinewidth.md)
   Returns the default line width for the all paths.
-- [class var defaultMiterLimit: CGFloat](nsbezierpath/defaultmiterlimit.md)
+- [class var defaultMiterLimit: CGFloat](./defaultmiterlimit.md)
   Returns the default miter limit for all paths.
 
 

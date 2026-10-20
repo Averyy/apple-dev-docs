@@ -1,12 +1,13 @@
 # init(_:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a printer type name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,7 +17,8 @@ init(_ rawValue: String)
 
 ## See Also
 
-- [init(rawValue: String)](nsprinter/typename/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 

@@ -1,7 +1,8 @@
 # radiusFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the format of the radii in the radius buffer.
 
@@ -17,6 +18,10 @@ Sets the format of the radii in the radius buffer.
 
 ```swift
 var radiusFormat: MTLAttributeFormat { get set }
+```
+
+```objc
+@property (nonatomic) MTLAttributeFormat radiusFormat;
 ```
 
 #### Discussion

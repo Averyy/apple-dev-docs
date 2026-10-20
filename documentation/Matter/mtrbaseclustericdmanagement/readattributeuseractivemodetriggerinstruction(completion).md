@@ -1,7 +1,8 @@
 # readAttributeUserActiveModeTriggerInstruction(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUserActiveModeTriggerInstruction(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUserActiveModeTriggerInstruction() async throws -> String
+```
+
+```objc
+- (void) readAttributeUserActiveModeTriggerInstructionWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A structure that contains a response code indicating how your service handles an update media affinity intent.
 
@@ -10,25 +11,28 @@ A structure that contains a response code indicating how your service handles an
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentResponse
 ```
 
 ## Properties
 
 - `class` (string) *(required)*: The specific type of response.
+
+  **Allowed Values**: `UpdateMediaAffinityIntentResponse`
 - `code` (UpdateMediaAffinityIntentResponseCode) *(required)*: A response code that indicates whether your service can play the media item.
 
 ## Relationships
 
 ### Inherits From
-- [IntentResponse](intentresponse.md)
+- [IntentResponse](./intentresponse.md)
 
 ## See Also
 
-- [object UpdateMediaAffinityIntentHandlingHandleInvocationResponse](updatemediaaffinityintenthandlinghandleinvocationresponse.md)
+### Handling an Update Media Affinity Intent
+- [object UpdateMediaAffinityIntentHandlingHandleInvocationResponse](./updatemediaaffinityintenthandlinghandleinvocationresponse.md)
   Your service’s response to a request to handle a fully resolved update media affinity intent.
-- [type UpdateMediaAffinityIntentResponseCode](updatemediaaffinityintentresponsecode.md)
+- [type UpdateMediaAffinityIntentResponseCode](./updatemediaaffinityintentresponsecode.md)
   Codes your service can return when handling an update media affinity intent.
 
 

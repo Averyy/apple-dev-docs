@@ -1,7 +1,8 @@
 # CPTextButtonStyle.cancel
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that indicates the button cancels an action and doesn’t change data.
 
@@ -16,11 +17,16 @@ A style that indicates the button cancels an action and doesn’t change data.
 case cancel
 ```
 
+```c
+CPTextButtonStyleCancel
+```
+
 ## See Also
 
-- [CPTextButtonStyle.normal](cptextbuttonstyle/normal.md)
+### Button Text Styles
+- [CPTextButtonStyle.normal](./normal.md)
   A style that indicates the button performs an action other than to confirm or cancel.
-- [CPTextButtonStyle.confirm](cptextbuttonstyle/confirm.md)
+- [CPTextButtonStyle.confirm](./confirm.md)
   A style that indicates the button confirms an action and changes data.
 
 

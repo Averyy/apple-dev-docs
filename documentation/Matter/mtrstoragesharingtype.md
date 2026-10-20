@@ -1,7 +1,8 @@
 # MTRStorageSharingType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.6+
@@ -18,25 +19,29 @@
 enum MTRStorageSharingType
 ```
 
+```c
+enum MTRStorageSharingType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRStorageSharingType.notShared](mtrstoragesharingtype/notshared.md)
-- [MTRStorageSharingType.sameACLs](mtrstoragesharingtype/sameacls.md)
-- [MTRStorageSharingType.sameFabric](mtrstoragesharingtype/samefabric.md)
-- [MTRStorageSharingType.sameIdentity](mtrstoragesharingtype/sameidentity.md)
+- [MTRStorageSharingType.notShared](./mtrstoragesharingtype/notshared.md)
+- [MTRStorageSharingType.sameACLs](./mtrstoragesharingtype/sameacls.md)
+- [MTRStorageSharingType.sameFabric](./mtrstoragesharingtype/samefabric.md)
+- [MTRStorageSharingType.sameIdentity](./mtrstoragesharingtype/sameidentity.md)
 ### Initializers
-- [init?(rawValue: UInt)](mtrstoragesharingtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtrstoragesharingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

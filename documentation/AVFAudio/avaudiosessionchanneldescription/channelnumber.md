@@ -1,7 +1,8 @@
 # channelNumber
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of this channel in its owning port’s array of channels.
 
@@ -19,17 +20,22 @@ The index of this channel in its owning port’s array of channels.
 var channelNumber: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger channelNumber;
+```
+
 #### Discussion
 
 You can use the value in this property to identify the channel during audio routing. However, the value of this property isn’t guaranteed to persist across route changes.
 
 ## See Also
 
-- [var channelName: String](avaudiosessionchanneldescription/channelname.md)
+### Getting the channel information
+- [var channelName: String](./channelname.md)
   The descriptive name for the channel.
-- [var owningPortUID: String](avaudiosessionchanneldescription/owningportuid.md)
+- [var owningPortUID: String](./owningportuid.md)
   The unique identifier (UID) for this channel’s owning port.
-- [var channelLabel: AudioChannelLabel](avaudiosessionchanneldescription/channellabel.md)
+- [var channelLabel: AudioChannelLabel](./channellabel.md)
   A description of the physical location of this channel.
 
 

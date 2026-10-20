@@ -1,7 +1,8 @@
 # verticalAccuracy
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validity of the altitude values and their estimated uncertainty, measured in meters.
 
@@ -19,11 +20,16 @@ The validity of the altitude values and their estimated uncertainty, measured in
 var verticalAccuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy verticalAccuracy;
+```
+
 ## See Also
 
-- [var speedAccuracy: CLLocationSpeedAccuracy](cmodometerdata/speedaccuracy.md)
+### Getting the location accuracy
+- [var speedAccuracy: CLLocationSpeedAccuracy](./speedaccuracy.md)
   The accuracy of the speed value.
-- [var deltaDistanceAccuracy: CLLocationAccuracy](cmodometerdata/deltadistanceaccuracy.md)
+- [var deltaDistanceAccuracy: CLLocationAccuracy](./deltadistanceaccuracy.md)
   The accuracy of the change in distance value.
 
 

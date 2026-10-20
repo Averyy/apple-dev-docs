@@ -1,11 +1,12 @@
 # Hashable Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func hash(into: inout Hasher)](data/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   The hash value for the data.
 
 

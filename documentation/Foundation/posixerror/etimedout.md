@@ -1,7 +1,8 @@
 # ETIMEDOUT
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation timed out.
 

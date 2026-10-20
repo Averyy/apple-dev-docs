@@ -1,7 +1,8 @@
 # requiresManagedDevice
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device must be managed to start an assessment.
 
@@ -13,6 +14,10 @@ A Boolean value that indicates whether the device must be managed to start an as
 
 ```swift
 var requiresManagedDevice: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL requiresManagedDevice;
 ```
 
 #### Discussion

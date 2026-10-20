@@ -1,7 +1,8 @@
 # init(forNodeID:privilege:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(forNodeID nodeID: NSNumber, privilege: MTRAccessControlEntryPrivilege)
+```
+
+```objc
++ (MTRAccessGrant *) accessGrantForNodeID:(NSNumber *) nodeID privilege:(MTRAccessControlEntryPrivilege) privilege;
 ```
 
 

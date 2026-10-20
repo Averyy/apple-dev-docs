@@ -1,7 +1,8 @@
 # message
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error message describing the request failure.
 
@@ -10,13 +11,13 @@ The error message describing the request failure.
 
 ## Declaration
 
-```swift
+```
 message: ConfigurationErrorStatus;
 ```
 
 #### Discussion
 
-The value is a [`ConfigurationErrorStatus`](configurationerrorstatus.md) string that indicates why the request failed.
+The value is a [`ConfigurationErrorStatus`](../configurationerrorstatus.md) string that indicates why the request failed.
 
 
 ---

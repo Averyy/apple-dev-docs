@@ -1,7 +1,8 @@
 # extension
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A Core Foundation string object specifying theitem’s filename extension; see the *CFString Reference* inthe Core Foundation Reference Documentation for a description ofthe `CFStringRef` datatype.
 
@@ -13,6 +14,10 @@ A Core Foundation string object specifying theitem’s filename extension; see t
 
 ```swift
 var `extension`: Unmanaged<CFString>!
+```
+
+```c
+CFStringRef extension;
 ```
 
 

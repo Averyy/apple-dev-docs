@@ -1,7 +1,8 @@
 # backgroundRefreshStatus
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the app can refresh content when running in the background.
 
@@ -18,27 +19,32 @@ Indicates whether the app can refresh content when running in the background.
 var backgroundRefreshStatus: UIBackgroundRefreshStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIBackgroundRefreshStatus backgroundRefreshStatus;
+```
+
 #### Discussion
 
-You can use this property to determine whether Background App Refresh—an app’s ability to open in the background to perform refresh tasks—is enabled, and warn the user if it is not. Don’t warn the user if the value of this property is set to [`UIBackgroundRefreshStatus.restricted`](uibackgroundrefreshstatus/restricted.md). A restricted user, such as one who is managed under parental controls, can’t enable Background App Refresh.
+You can use this property to determine whether Background App Refresh—an app’s ability to open in the background to perform refresh tasks—is enabled, and warn the user if it is not. Don’t warn the user if the value of this property is set to [`UIBackgroundRefreshStatus.restricted`](../uibackgroundrefreshstatus/restricted.md). A restricted user, such as one who is managed under parental controls, can’t enable Background App Refresh.
 
 Background App Refresh is disabled automatically when a device is operating in low-power mode. When this happens, the time available for performing background tasks is reduced to save power.
 
 ## See Also
 
-- [enum UIBackgroundRefreshStatus](uibackgroundrefreshstatus.md)
+### Managing background tasks
+- [enum UIBackgroundRefreshStatus](../uibackgroundrefreshstatus.md)
   Constants that indicate whether background execution is enabled for the app.
-- [class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](uiapplication/backgroundrefreshstatusdidchangenotification.md)
+- [class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](./backgroundrefreshstatusdidchangenotification.md)
   A notification that posts when the app’s status for downloading content in the background changes.
-- [func beginBackgroundTask(withName: String?, expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](uiapplication/beginbackgroundtask(withname:expirationhandler:).md)
+- [func beginBackgroundTask(withName: String?, expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](./beginbackgroundtask%28withname,expirationhandler%29.md)
   Marks the start of a task with a custom name that should continue if the app enters the background.
-- [func beginBackgroundTask(expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](uiapplication/beginbackgroundtask(expirationhandler:).md)
+- [func beginBackgroundTask(expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](./beginbackgroundtask%28expirationhandler%29.md)
   Marks the start of a task that should continue if the app enters the background.
-- [func endBackgroundTask(UIBackgroundTaskIdentifier)](uiapplication/endbackgroundtask(_:).md)
+- [func endBackgroundTask(UIBackgroundTaskIdentifier)](./endbackgroundtask%28_%29.md)
   Marks the end of a specific long-running background task.
-- [struct UIBackgroundTaskIdentifier](uibackgroundtaskidentifier.md)
+- [struct UIBackgroundTaskIdentifier](../uibackgroundtaskidentifier.md)
   A unique token that identifies a request to run in the background.
-- [var backgroundTimeRemaining: TimeInterval](uiapplication/backgroundtimeremaining.md)
+- [var backgroundTimeRemaining: TimeInterval](./backgroundtimeremaining.md)
   The maximum amount of time remaining for the app to run in the background.
 
 

@@ -1,18 +1,21 @@
 # BNNSLayerParametersFullyConnected
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains the parameters of a fully connected layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,39 +23,44 @@ A structure that contains the parameters of a fully connected layer.
 struct BNNSLayerParametersFullyConnected
 ```
 
+```c
+typedef struct { ... } BNNSLayerParametersFullyConnected;
+```
+
 ## Topics
 
 ### Initializers
-- [init(i_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor, activation: BNNSActivation)](bnnslayerparametersfullyconnected/init(i_desc:w_desc:o_desc:bias:activation:).md)
+- [init(i_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor, activation: BNNSActivation)](./bnnslayerparametersfullyconnected/init%28i_desc,w_desc,o_desc,bias,activation%29.md)
   Returns a new fully connected layer parameters structure from the specified parameters.
-- [init()](bnnslayerparametersfullyconnected/init.md)
+- [init()](./bnnslayerparametersfullyconnected/init%28%29.md)
   Returns a new fully connected layer parameters structure.
 ### Instance Properties
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersfullyconnected/i_desc.md)
+- [var i_desc: BNNSNDArrayDescriptor](./bnnslayerparametersfullyconnected/i_desc.md)
   The descriptor of the input.
-- [var w_desc: BNNSNDArrayDescriptor](bnnslayerparametersfullyconnected/w_desc.md)
+- [var w_desc: BNNSNDArrayDescriptor](./bnnslayerparametersfullyconnected/w_desc.md)
   The descriptor of the weights.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersfullyconnected/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./bnnslayerparametersfullyconnected/o_desc.md)
   The descriptor of the output.
-- [var bias: BNNSNDArrayDescriptor](bnnslayerparametersfullyconnected/bias.md)
+- [var bias: BNNSNDArrayDescriptor](./bnnslayerparametersfullyconnected/bias.md)
   The descriptor of the bias.
-- [var activation: BNNSActivation](bnnslayerparametersfullyconnected/activation.md)
+- [var activation: BNNSActivation](./bnnslayerparametersfullyconnected/activation.md)
   The activation function that the layer applies to the output.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct BNNSFullyConnectedLayerParameters](bnnsfullyconnectedlayerparameters.md)
+### Fully connected layers
+- [struct BNNSFullyConnectedLayerParameters](./bnnsfullyconnectedlayerparameters.md)
   A structure containing fully connected layer parameters.
-- [func BNNSFilterCreateFullyConnectedLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSFullyConnectedLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatefullyconnectedlayer(_:_:_:_:).md)
+- [func BNNSFilterCreateFullyConnectedLayer(UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSVectorDescriptor>, UnsafePointer<BNNSFullyConnectedLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatefullyconnectedlayer%28_,_,_,_%29.md)
   Returns a fully connected filter, initialized with input, output, layer, and filter parameters.
-- [class FullyConnectedLayer](bnns/fullyconnectedlayer.md)
+- [class FullyConnectedLayer](./bnns/fullyconnectedlayer.md)
   A layer object that wraps a fully connected filter and manages its deinitialization.
-- [func BNNSFilterCreateLayerFullyConnected(UnsafePointer<BNNSLayerParametersFullyConnected>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerfullyconnected(_:_:).md)
+- [func BNNSFilterCreateLayerFullyConnected(UnsafePointer<BNNSLayerParametersFullyConnected>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerfullyconnected%28_,_%29.md)
   Returns a new fully connected layer.
 
 

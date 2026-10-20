@@ -1,9 +1,10 @@
 # outputPaused
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-Whether speech output in the speech channel has been paused by a call to the [`PauseSpeechAt(_:_:)`](1461174-pausespeechat.md) function.
+Whether speech output in the speech channel has been paused by a call to the [`PauseSpeechAt(_:_:)`](../api-1461174-pausespeechat.md) function.
 
 **Availability**:
 - macOS 10.0+
@@ -12,6 +13,10 @@ Whether speech output in the speech channel has been paused by a call to the [`P
 
 ```swift
 var outputPaused: DarwinBoolean
+```
+
+```c
+Boolean outputPaused;
 ```
 
 

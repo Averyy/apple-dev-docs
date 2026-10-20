@@ -1,7 +1,8 @@
 # updateName(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the name of the accessory.
 
@@ -14,21 +15,32 @@ Changes the name of the accessory.
 ## Declaration
 
 ```swift
+func updateName(_ name: String, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateName(_ name: String) async throws
+```
+
+```objc
+- (void) updateName:(NSString *) name completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `name`: The new name.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var name: String](hmaccessory/name.md)
+### Identifying an Accessory
+- [var name: String](./name.md)
   The name of the accessory.
-- [var uniqueIdentifier: UUID](hmaccessory/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the accessory.
-- [var identifier: UUID](hmaccessory/identifier.md)
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the accessory.
 
 

@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2.Relationships
 ```
 
@@ -27,19 +28,19 @@ object GameCenterLeaderboardV2.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardV2.Relationships.Activity](gamecenterleaderboardv2/relationships-data.dictionary/activity-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.Activity](./relationships-data.dictionary/activity-data.dictionary.md)
   The data and links that describe the activity of the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.Challenge](gamecenterleaderboardv2/relationships-data.dictionary/challenge-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.Challenge](./relationships-data.dictionary/challenge-data.dictionary.md)
   The data and links that describe the challenge of the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.GameCenterDetail](gamecenterleaderboardv2/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
   The data that describes the Game Center detail of the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.GameCenterGroup](gamecenterleaderboardv2/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.GameCenterGroup](./relationships-data.dictionary/gamecentergroup-data.dictionary.md)
   The data that describes the Game Center group of the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.GameCenterLeaderboardSets](gamecenterleaderboardv2/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.GameCenterLeaderboardSets](./relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary.md)
   The data that describes the Game Center leaderboard sets of the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.GameCenterScoreModerations](gamecenterleaderboardv2/relationships-data.dictionary/gamecenterscoremoderations-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.GameCenterScoreModerations](./relationships-data.dictionary/gamecenterscoremoderations-data.dictionary.md)
   The links to the score moderations related to the Game Center leaderboard v2.
-- [object GameCenterLeaderboardV2.Relationships.Versions](gamecenterleaderboardv2/relationships-data.dictionary/versions-data.dictionary.md)
+- [object GameCenterLeaderboardV2.Relationships.Versions](./relationships-data.dictionary/versions-data.dictionary.md)
   The data and links that describe the versions of the Game Center leaderboard v2.
 
 ## Properties
@@ -54,7 +55,8 @@ object GameCenterLeaderboardV2.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardV2.Attributes](gamecenterleaderboardv2/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Game Center leaderboard v2 resource.
 
 

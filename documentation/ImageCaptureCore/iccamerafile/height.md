@@ -1,7 +1,8 @@
 # height
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of an image or movie frame.
 
@@ -18,9 +19,14 @@ The height of an image or movie frame.
 var height: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger height;
+```
+
 ## See Also
 
-- [var width: Int](iccamerafile/width.md)
+### Inspecting a File’s Dimensions
+- [var width: Int](./width.md)
   The width of an image or movie frame.
 
 

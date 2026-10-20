@@ -1,7 +1,8 @@
 # videoEditorController(_:didFailWithError:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the video editor is unable to load or save a movie.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the video editor is unable to load or save a movie.
 
 ```swift
 optional func videoEditorController(_ editor: UIVideoEditorController, didFailWithError error: any Error)
+```
+
+```objc
+- (void) videoEditorController:(UIVideoEditorController *) editor didFailWithError:(NSError *) error;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # ExitTest.Result
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing the result of an exit test after it has exited and returned control to the calling test function.
 
@@ -17,27 +18,27 @@ struct Result
 
 ## Mentions
 
-- [Exit testing](exit-testing.md)
+- [Exit testing](../exit-testing.md)
 
 #### Overview
 
-Both [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](expect(processexitswith:observing:_:sourcelocation:performing:).md) and [`require(processExitsWith:observing:_:sourceLocation:performing:)`](require(processexitswith:observing:_:sourcelocation:performing:).md) return instances of this type.
+Both [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](../expect%28processexitswith,observing,_,sourcelocation,performing%29.md) and [`require(processExitsWith:observing:_:sourceLocation:performing:)`](../require%28processexitswith,observing,_,sourcelocation,performing%29.md) return instances of this type.
 
 ## Topics
 
 ### Instance Properties
-- [var exitStatus: ExitStatus](exittest/result/exitstatus.md)
+- [var exitStatus: ExitStatus](./result/exitstatus.md)
   The exit status reported by the process hosting the exit test.
-- [var standardErrorContent: [UInt8]](exittest/result/standarderrorcontent.md)
+- [var standardErrorContent: [UInt8]](./result/standarderrorcontent.md)
   All bytes written to the standard error stream of the exit test before it exited.
-- [var standardOutputContent: [UInt8]](exittest/result/standardoutputcontent.md)
+- [var standardOutputContent: [UInt8]](./result/standardoutputcontent.md)
   All bytes written to the standard output stream of the exit test before it exited.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

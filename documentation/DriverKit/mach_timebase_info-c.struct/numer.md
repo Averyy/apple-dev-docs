@@ -1,23 +1,25 @@
 # numer
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t numer;
 ```
 
 ## See Also
 
-- [denom](mach_timebase_info-c.struct/denom.md)
+### Getting the Properties
+- [denom](./denom.md)
 
 
 ---

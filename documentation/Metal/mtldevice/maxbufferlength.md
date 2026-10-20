@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The largest amount of memory, in bytes, that a GPU device can allocate to a buffer instance.
@@ -20,17 +21,22 @@ The largest amount of memory, in bytes, that a GPU device can allocate to a buff
 var maxBufferLength: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maxBufferLength;
+```
+
 #### Discussion
 
 The property’s value is at least 256 MB (268,435,456 bytes).
 
 ## See Also
 
-- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](mtldevice/makebuffer(length:options:).md)
+### Creating buffers
+- [func makeBuffer(length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](./makebuffer%28length,options%29.md)
   Creates a buffer the method clears with zero values.
-- [func makeBuffer(bytes: UnsafeRawPointer, length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](mtldevice/makebuffer(bytes:length:options:).md)
+- [func makeBuffer(bytes: UnsafeRawPointer, length: Int, options: MTLResourceOptions) -> (any MTLBuffer)?](./makebuffer%28bytes,length,options%29.md)
   Allocates a new buffer of a given length and initializes its contents by copying existing data into it.
-- [func makeBuffer(bytesNoCopy: UnsafeMutableRawPointer, length: Int, options: MTLResourceOptions, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?) -> (any MTLBuffer)?](mtldevice/makebuffer(bytesnocopy:length:options:deallocator:).md)
+- [func makeBuffer(bytesNoCopy: UnsafeMutableRawPointer, length: Int, options: MTLResourceOptions, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?) -> (any MTLBuffer)?](./makebuffer%28bytesnocopy,length,options,deallocator%29.md)
   Creates a buffer that wraps an existing contiguous memory allocation.
 
 

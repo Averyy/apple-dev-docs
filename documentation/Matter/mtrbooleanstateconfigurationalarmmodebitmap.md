@@ -1,7 +1,8 @@
 # MTRBooleanStateConfigurationAlarmModeBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.6+
@@ -18,25 +19,29 @@
 struct MTRBooleanStateConfigurationAlarmModeBitmap
 ```
 
+```c
+enum MTRBooleanStateConfigurationAlarmModeBitmap : uint8_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt8)](mtrbooleanstateconfigurationalarmmodebitmap/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./mtrbooleanstateconfigurationalarmmodebitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var audible: MTRBooleanStateConfigurationAlarmModeBitmap](mtrbooleanstateconfigurationalarmmodebitmap/audible.md)
-- [static var visual: MTRBooleanStateConfigurationAlarmModeBitmap](mtrbooleanstateconfigurationalarmmodebitmap/visual.md)
+- [static var audible: MTRBooleanStateConfigurationAlarmModeBitmap](./mtrbooleanstateconfigurationalarmmodebitmap/audible.md)
+- [static var visual: MTRBooleanStateConfigurationAlarmModeBitmap](./mtrbooleanstateconfigurationalarmmodebitmap/visual.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

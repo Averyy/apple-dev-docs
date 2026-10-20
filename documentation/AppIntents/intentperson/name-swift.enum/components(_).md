@@ -1,7 +1,8 @@
 # IntentPerson.Name.components(_:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Structured components of this `IntentPerson`’s name
 
@@ -11,7 +12,7 @@ Structured components of this `IntentPerson`’s name
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

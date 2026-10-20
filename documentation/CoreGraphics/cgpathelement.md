@@ -1,18 +1,19 @@
 # CGPathElement
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A data structure that provides information about a path element.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,28 +21,33 @@ A data structure that provides information about a path element.
 struct CGPathElement
 ```
 
+```c
+struct CGPathElement;
+```
+
 ## Topics
 
 ### Initializers
-- [init(type: CGPathElementType, points: UnsafeMutablePointer<CGPoint>)](cgpathelement/init(type:points:).md)
+- [init(type: CGPathElementType, points: UnsafeMutablePointer<CGPoint>)](./cgpathelement/init%28type,points%29.md)
 ### Instance Properties
-- [var points: UnsafeMutablePointer<CGPoint>](cgpathelement/points.md)
+- [var points: UnsafeMutablePointer<CGPoint>](./cgpathelement/points.md)
   An array of one or more points that serve as arguments.
-- [var type: CGPathElementType](cgpathelement/type.md)
+- [var type: CGPathElementType](./cgpathelement/type.md)
   An element type (or operation).
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](cgpath/apply(info:function:).md)
+### Applying a Function to the Elements of a Path
+- [func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)](./cgpath/apply%28info,function%29.md)
   For each element in a graphics path, calls a custom applier function.
-- [typealias CGPathApplierFunction](cgpathapplierfunction.md)
+- [typealias CGPathApplierFunction](./cgpathapplierfunction.md)
   Defines a callback function that can view an element in a graphics path.
-- [enum CGPathElementType](cgpathelementtype.md)
+- [enum CGPathElementType](./cgpathelementtype.md)
   The type of element found in a path.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidTupleCredentials
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The tuple credentials are not valid.
 
@@ -18,6 +19,10 @@ The tuple credentials are not valid.
 
 ```swift
 var errSecInvalidTupleCredentials: OSStatus { get }
+```
+
+```c
+errSecInvalidTupleCredentials
 ```
 
 

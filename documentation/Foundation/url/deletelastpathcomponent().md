@@ -1,7 +1,8 @@
 # deleteLastPathComponent()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL constructed by removing the last path component of self.
 
@@ -28,7 +29,8 @@ If the URL has an empty path (e.g., `http://www.example.com`), then this functio
 
 ## See Also
 
-- [func deletingLastPathComponent() -> URL](url/deletinglastpathcomponent.md)
+### Removing path components
+- [func deletingLastPathComponent() -> URL](./deletinglastpathcomponent%28%29.md)
   Returns a URL constructed by removing the last path component of self.
 
 

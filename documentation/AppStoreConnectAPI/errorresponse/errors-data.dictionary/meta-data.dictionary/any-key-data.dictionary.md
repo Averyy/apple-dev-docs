@@ -1,7 +1,8 @@
 # ErrorResponse.Errors.Meta.Any Key
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An arbitrary metadata key-value entry within an error response’s meta object.
 
@@ -10,7 +11,7 @@ An arbitrary metadata key-value entry within an error response’s meta object.
 
 ## Declaration
 
-```swift
+```
 object ErrorResponse.Errors.Meta.Any Key
 ```
 

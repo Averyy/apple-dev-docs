@@ -1,15 +1,16 @@
 # kInstrumentType_AUPreset
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,12 +18,17 @@
 var kInstrumentType_AUPreset: Int { get }
 ```
 
+```c
+kInstrumentType_AUPreset
+```
+
 ## See Also
 
-- [var kInstrumentType_Audiofile: Int](kinstrumenttype_audiofile.md)
-- [var kInstrumentType_DLSPreset: Int](kinstrumenttype_dlspreset.md)
-- [var kInstrumentType_EXS24: Int](kinstrumenttype_exs24.md)
-- [var kInstrumentType_SF2Preset: Int](kinstrumenttype_sf2preset.md)
+### Constants
+- [var kInstrumentType_Audiofile: Int](./kinstrumenttype_audiofile.md)
+- [var kInstrumentType_DLSPreset: Int](./kinstrumenttype_dlspreset.md)
+- [var kInstrumentType_EXS24: Int](./kinstrumenttype_exs24.md)
+- [var kInstrumentType_SF2Preset: Int](./kinstrumenttype_sf2preset.md)
 
 
 ---

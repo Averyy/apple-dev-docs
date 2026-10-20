@@ -1,7 +1,8 @@
 # subscript(offers:)
 
 **Framework**: StoreKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 26.4+

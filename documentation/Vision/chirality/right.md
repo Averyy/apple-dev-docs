@@ -1,7 +1,8 @@
 # Chirality.right
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that represents the right hand.
 
@@ -21,7 +22,8 @@ case right
 
 ## See Also
 
-- [Chirality.left](chirality/left.md)
+### Getting the hand sidedness
+- [Chirality.left](./left.md)
   A case that represents the left hand.
 
 

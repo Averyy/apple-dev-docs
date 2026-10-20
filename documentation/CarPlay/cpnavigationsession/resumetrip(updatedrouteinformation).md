@@ -1,7 +1,8 @@
 # resumeTrip(updatedRouteInformation:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes the current trip with updated route information.
 
@@ -16,20 +17,25 @@ Resumes the current trip with updated route information.
 func resumeTrip(updatedRouteInformation routeInformation: CPRouteInformation)
 ```
 
+```objc
+- (void) resumeTripWithUpdatedRouteInformation:(CPRouteInformation *) routeInformation;
+```
+
 ## Parameters
 
 - `routeInformation`: The updated route information for the current trip.
 
 ## See Also
 
-- [func cancelTrip()](cpnavigationsession/canceltrip.md)
+### Managing Trip Navigation
+- [func cancelTrip()](./canceltrip%28%29.md)
   Tells the navigation session to cancel the trip.
-- [func finishTrip()](cpnavigationsession/finishtrip.md)
+- [func finishTrip()](./finishtrip%28%29.md)
   Tells the navigation session to finish the trip.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](cpnavigationsession/pausetrip(for:description:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](./pausetrip%28for,description%29.md)
   Tells the navigation session to pause the trip for the specified reason.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](cpnavigationsession/pausetrip(for:description:turncardcolor:).md)
-- [CPNavigationSession.PauseReason](cpnavigationsession/pausereason.md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](./pausetrip%28for,description,turncardcolor%29.md)
+- [CPNavigationSession.PauseReason](./pausereason.md)
   A set of reasons for pausing a trip.
 
 

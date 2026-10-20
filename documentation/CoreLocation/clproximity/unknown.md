@@ -1,7 +1,8 @@
 # CLProximity.unknown
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The proximity of the beacon could not be determined.
 
@@ -17,17 +18,22 @@ The proximity of the beacon could not be determined.
 case unknown
 ```
 
+```c
+CLProximityUnknown
+```
+
 ## Mentions
 
-- [Turning an iOS device into an iBeacon device](turning-an-ios-device-into-an-ibeacon-device.md)
+- [Turning an iOS device into an iBeacon device](../turning-an-ios-device-into-an-ibeacon-device.md)
 
 ## See Also
 
-- [CLProximity.immediate](clproximity/immediate.md)
+### Proximity Values
+- [CLProximity.immediate](./immediate.md)
   The beacon is in the user’s immediate vicinity.
-- [CLProximity.near](clproximity/near.md)
+- [CLProximity.near](./near.md)
   The beacon is relatively close to the user.
-- [CLProximity.far](clproximity/far.md)
+- [CLProximity.far](./far.md)
   The beacon is far away.
 
 

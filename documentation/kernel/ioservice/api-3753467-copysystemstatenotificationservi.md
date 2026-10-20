@@ -1,14 +1,15 @@
 # CopySystemStateNotificationService
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CopySystemStateNotificationService(IOService **service, OSDispatchMethod supermethod);
 ```
 

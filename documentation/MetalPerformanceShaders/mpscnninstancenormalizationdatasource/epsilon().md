@@ -1,7 +1,8 @@
 # epsilon()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func epsilon() -> Float
+```
+
+```objc
+- (float) epsilon;
 ```
 
 

@@ -1,15 +1,16 @@
 # MPSImageAllocator
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,22 +18,27 @@
 protocol MPSImageAllocator : NSSecureCoding, NSObjectProtocol
 ```
 
+```objc
+@protocol MPSImageAllocator <NSObject, NSSecureCoding>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func image(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel) -> MPSImage](mpsimageallocator/image(for:imagedescriptor:kernel:).md)
-- [func imageBatch(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel, count: Int) -> [MPSImage]](mpsimageallocator/imagebatch(for:imagedescriptor:kernel:count:).md)
+- [func image(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel) -> MPSImage](./mpsimageallocator/image%28for,imagedescriptor,kernel%29.md)
+- [func imageBatch(for: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor, kernel: MPSKernel, count: Int) -> [MPSImage]](./mpsimageallocator/imagebatch%28for,imagedescriptor,kernel,count%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class func defaultAllocator() -> any MPSImageAllocator](mpsimage/defaultallocator.md)
+### Methods to Get an Image Allocator
+- [class func defaultAllocator() -> any MPSImageAllocator](./mpsimage/defaultallocator%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:using:bufferCapacity:readingFrom:)
 
 **Framework**: Compression  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an input filter that can be used to compress or decompress data.
 
@@ -11,7 +12,7 @@ Creates an input filter that can be used to compress or decompress data.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

@@ -1,14 +1,15 @@
 # cr_groups
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 gid_t cr_groups[16];
 ```
 

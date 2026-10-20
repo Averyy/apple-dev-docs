@@ -2,6 +2,7 @@
 
 **Framework**: Combine  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Connects to the publisher, allowing it to produce elements, and returns an instance with which to cancel publishing.
@@ -23,12 +24,12 @@ func connect() -> any Cancellable
 
 ## Mentions
 
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
+- [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
+- [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
 #### Return Value
 
-A [`Cancellable`](cancellable.md) instance that you use to cancel publishing.
+A [`Cancellable`](../cancellable.md) instance that you use to cancel publishing.
 
 
 ---

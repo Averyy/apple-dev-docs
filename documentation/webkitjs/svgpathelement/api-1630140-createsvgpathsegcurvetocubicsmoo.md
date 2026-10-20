@@ -1,7 +1,8 @@
 # createSVGPathSegCurvetoCubicSmoothAbs
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 SVGPathSegCurvetoCubicSmoothAbs createSVGPathSegCurvetoCubicSmoothAbs(
     optional unrestricted float x, 
     optional unrestricted float y, 

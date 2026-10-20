@@ -1,7 +1,8 @@
 # failOnBinaryArchiveMiss
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 
@@ -19,9 +20,13 @@ An option that instructs the compiler to return an error when a GPU function isn
 static var failOnBinaryArchiveMiss: MTLPipelineOption { get }
 ```
 
+```c
+MTLPipelineOptionFailOnBinaryArchiveMiss
+```
+
 ## Mentions
 
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+- [Creating binary archives from device-built pipeline state objects](../creating-binary-archives-from-device-built-pipeline-state-objects.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ By default, Metal compiles the functions for a pipeline state if they aren’t i
 
 ## See Also
 
-- [static var bufferTypeInfo: MTLPipelineOption](mtlpipelineoption/buffertypeinfo.md)
+### Retrieving argument information
+- [static var bufferTypeInfo: MTLPipelineOption](./buffertypeinfo.md)
   An option instance that provides detailed buffer type information for buffer arguments.
-- [static var argumentInfo: MTLPipelineOption](mtlpipelineoption/argumentinfo.md)
+- [static var argumentInfo: MTLPipelineOption](./argumentinfo.md)
   An option instance that provides argument information for textures and threadgroup memory.
 
 

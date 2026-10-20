@@ -1,6 +1,8 @@
 # Viewing Desktop or Mobile Web Content Using a Web View
 
-**Framework**: WebKit
+**Framework**: WebKit  
+**Role**: Sample Code  
+**Download**: [ViewingDesktopOrMobileWebContentUsingAWebView.zip](https://docs-assets.developer.apple.com/published/b7ea913b4ac1/ViewingDesktopOrMobileWebContentUsingAWebView.zip)
 
 Implement a simple iPad web browser that can view either the desktop or mobile version of a website.
 
@@ -12,15 +14,16 @@ Implement a simple iPad web browser that can view either the desktop or mobile v
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`203: Introducing Desktop-class Browsing on iPad`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/203/).
+> **Note**: This sample code project is associated with WWDC 2019 session [203: Introducing Desktop-class Browsing on iPad](https://developer.apple.com/videos/play/wwdc19/203/).
 
 ## See Also
 
-- [Replacing UIWebView in your app](replacing-uiwebview-in-your-app.md)
+### Web views
+- [Replacing UIWebView in your app](./replacing-uiwebview-in-your-app.md)
   Find a suitable alternative to handle your app’s web content.
-- [class WKWebView](wkwebview.md)
+- [class WKWebView](./wkwebview.md)
   An object that displays interactive web content, such as for an in-app browser.
-- [protocol WKUIDelegate](wkuidelegate.md)
+- [protocol WKUIDelegate](./wkuidelegate.md)
   The methods for presenting native user interface elements on behalf of a webpage.
 
 

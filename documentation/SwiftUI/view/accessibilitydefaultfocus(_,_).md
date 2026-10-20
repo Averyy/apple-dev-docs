@@ -1,7 +1,8 @@
 # accessibilityDefaultFocus(_:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 
@@ -47,9 +48,10 @@ var body: some View {
 
 ## See Also
 
-- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](view/accessibilityfocused(_:).md)
+### Focus
+- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](./accessibilityfocused%28_%29.md)
   Modifies this view by binding its accessibility element’s focus state to the given boolean state value.
-- [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](view/accessibilityfocused(_:equals:).md)
+- [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](./accessibilityfocused%28_,equals%29.md)
   Modifies this view by binding its accessibility element’s focus state to the given state value.
 
 

@@ -1,7 +1,8 @@
 # FileRepresentation
 
 **Framework**: Core Transferable  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transfer representation for types that transfer as a file URL.
 
@@ -22,11 +23,11 @@ struct FileRepresentation<Item> where Item : Transferable
 
 ## Mentions
 
-- [Choosing a transfer representation for a model type](choosing-a-transfer-representation-for-a-model-type.md)
+- [Choosing a transfer representation for a model type](./choosing-a-transfer-representation-for-a-model-type.md)
 
 #### Overview
 
-Use a [`FileRepresentation`](filerepresentation.md) for transferring types that involve a large amount of data. For example, if your app defines a `Movie` type that could represent a lengthy video, use a `FileRepresentation` instance to transfer the video data to another app or process.
+Use a [`FileRepresentation`](./filerepresentation.md) for transferring types that involve a large amount of data. For example, if your app defines a `Movie` type that could represent a lengthy video, use a `FileRepresentation` instance to transfer the video data to another app or process.
 
 ```swift
 struct Movie: Transferable {
@@ -43,7 +44,7 @@ struct Movie: Transferable {
 }
 ```
 
-Note that the overall recommendation is to specify the content type that describes the file content as close as possible. For example, if you are sharing a PDF file, declare a [`FileRepresentation`](filerepresentation.md) of a `UTType.pdf` content type, instead of `UTType.fileURL` or `UTType.content` so the data can be dragged, shared, or imported to apps that support that data type:
+Note that the overall recommendation is to specify the content type that describes the file content as close as possible. For example, if you are sharing a PDF file, declare a [`FileRepresentation`](./filerepresentation.md) of a `UTType.pdf` content type, instead of `UTType.fileURL` or `UTType.content` so the data can be dragged, shared, or imported to apps that support that data type:
 
 ```swift
   struct PDFDocument: Transferable {
@@ -61,25 +62,26 @@ It’s efficient to pass data around as a file and the receiver loads it into me
 ## Topics
 
 ### Creating a transfer representation
-- [init(contentType: UTType, shouldAttemptToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile, importing: (ReceivedTransferredFile) async throws -> Item)](filerepresentation/init(contenttype:shouldattempttoopeninplace:exporting:importing:).md)
+- [init(contentType: UTType, shouldAttemptToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile, importing: (ReceivedTransferredFile) async throws -> Item)](./filerepresentation/init%28contenttype,shouldattempttoopeninplace,exporting,importing%29.md)
   Creates a transfer representation for importing and exporting transferable items as files.
-- [init(importedContentType: UTType, shouldAttemptToOpenInPlace: Bool, importing: (ReceivedTransferredFile) async throws -> Item)](filerepresentation/init(importedcontenttype:shouldattempttoopeninplace:importing:).md)
+- [init(importedContentType: UTType, shouldAttemptToOpenInPlace: Bool, importing: (ReceivedTransferredFile) async throws -> Item)](./filerepresentation/init%28importedcontenttype,shouldattempttoopeninplace,importing%29.md)
   Creates a transfer representation for importing transferable items as files.
-- [init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile)](filerepresentation/init(exportedcontenttype:shouldallowtoopeninplace:exporting:).md)
+- [init(exportedContentType: UTType, shouldAllowToOpenInPlace: Bool, exporting: (Item) async throws -> SentTransferredFile)](./filerepresentation/init%28exportedcontenttype,shouldallowtoopeninplace,exporting%29.md)
   Creates a transfer representation for exporting transferable items as files.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](./transferrepresentation.md)
 
 ## See Also
 
-- [struct SentTransferredFile](senttransferredfile.md)
+### File transfer
+- [struct SentTransferredFile](./senttransferredfile.md)
   A description of a file from the perspective of the sender.
-- [struct ReceivedTransferredFile](receivedtransferredfile.md)
+- [struct ReceivedTransferredFile](./receivedtransferredfile.md)
   A description of a file from the perspective of the receiver.
 
 

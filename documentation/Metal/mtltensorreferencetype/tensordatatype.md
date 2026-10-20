@@ -1,7 +1,8 @@
 # tensorDataType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying data format of the tensor.
 
@@ -17,6 +18,10 @@ The underlying data format of the tensor.
 
 ```swift
 var tensorDataType: MTLTensorDataType { get }
+```
+
+```objc
+@property (readonly) MTLTensorDataType tensorDataType;
 ```
 
 

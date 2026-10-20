@@ -1,7 +1,8 @@
 # AlbumsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to an albums request.
 
@@ -10,21 +11,22 @@ The response to an albums request.
 
 ## Declaration
 
-```swift
+```
 object AlbumsResponse
 ```
 
 ## Properties
 
-- `data` ([Albums]) *(required)*: The [`Albums`](albums.md) included in the response for the request.
+- `data` ([Albums]) *(required)*: The [`Albums`](./albums.md) included in the response for the request.
 
 ## See Also
 
-- [object Albums](albums.md)
+### Handling the Response
+- [object Albums](./albums.md)
   A resource object that represents an album.
-- [object LibraryAlbums](libraryalbums.md)
+- [object LibraryAlbums](./libraryalbums.md)
   A resource object that represents a library album.
-- [object LibraryAlbumsResponse](libraryalbumsresponse.md)
+- [object LibraryAlbumsResponse](./libraryalbumsresponse.md)
   The response to a library albums request.
 
 

@@ -1,12 +1,13 @@
 # NSAccessibilityProgressIndicator
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A role-based protocol that declares the minimum interface necessary for an accessibility element to act as a progress indicator.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ A role-based protocol that declares the minimum interface necessary for an acces
 protocol NSAccessibilityProgressIndicator : NSAccessibilityGroup
 ```
 
+```objc
+@protocol NSAccessibilityProgressIndicator <NSAccessibilityGroup>
+```
+
 #### Overview
 
 Use this protocol when you want a user interface element to behave like a progress indicator—a view that provides visual feedback to the user about the status of an ongoing task—in the accessibility hierarchy.
 
-You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](nsaccessibilityprotocol.md) protocol declares.
+You can further enhance the adopting element by implementing any of the information properties or action methods that the [`NSAccessibilityProtocol`](./nsaccessibilityprotocol.md) protocol declares.
 
-> **Note**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
+> **Explicit Implementation Required**:  Any class that adopts this protocol must implement all of its methods, and the required methods of any protocol it inherits from. The compiler may require you to override some methods that your ancestors have already implemented. Simply follow the compiler’s warnings, and reimplement these methods as necessary.
 
 ## Topics
 
 ### Supporting Accessibility
-- [func accessibilityValue() -> NSNumber?](nsaccessibilityprogressindicator/accessibilityvalue.md)
+- [func accessibilityValue() -> NSNumber?](./nsaccessibilityprogressindicator/accessibilityvalue%28%29.md)
   Returns the progress indicator’s value.
 
 ## Relationships
 
 ### Inherits From
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityGroup](nsaccessibilitygroup.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityGroup](./nsaccessibilitygroup.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [NSProgressIndicator](nsprogressindicator.md)
+- [NSProgressIndicator](./nsprogressindicator.md)
 
 ## See Also
 
-- [protocol NSAccessibilityElementLoading](nsaccessibilityelementloading.md)
+### Loading
+- [protocol NSAccessibilityElementLoading](./nsaccessibilityelementloading.md)
   A role-based protocol that declares the minimum interface necessary for an accessibility element to support loading.
 
 

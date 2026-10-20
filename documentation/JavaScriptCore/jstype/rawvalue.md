@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value that represents the JavaScript type.
 
@@ -21,9 +22,10 @@ var rawValue: UInt32
 
 ## See Also
 
-- [init(UInt32)](jstype/init(_:).md)
+### Initializers
+- [init(UInt32)](./init%28_%29.md)
   Creates a JavaScript type.
-- [init(rawValue: UInt32)](jstype/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Creates a JavaScript type with the specified raw value.
 
 

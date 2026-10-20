@@ -1,7 +1,8 @@
 # MPSNNBinaryGradientState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class representing the state of a gradient binary kernel when it was encoded.
 
@@ -19,36 +20,41 @@ A class representing the state of a gradient binary kernel when it was encoded.
 class MPSNNBinaryGradientState
 ```
 
+```objc
+@interface MPSNNBinaryGradientState : MPSState
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Inherited By
-- [MPSCNNArithmeticGradientState](mpscnnarithmeticgradientstate.md)
+- [MPSCNNArithmeticGradientState](./mpscnnarithmeticgradientstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage?](mpsnngraph/encode(to:sourceimages:).md)
-- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> MPSImage?](mpsnngraph/encode(to:sourceimages:sourcestates:intermediateimages:destinationstates:).md)
-- [class MPSState](mpsstate.md)
+### Instance Methods
+- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage]) -> MPSImage?](./mpsnngraph/encode%28to,sourceimages%29.md)
+- [func encode(to: any MTLCommandBuffer, sourceImages: [MPSImage], sourceStates: [MPSState]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> MPSImage?](./mpsnngraph/encode%28to,sourceimages,sourcestates,intermediateimages,destinationstates%29.md)
+- [class MPSState](./mpsstate.md)
   An opaque data container for large storage in MPS CNN filters.
-- [class MPSNNGradientState](mpsnngradientstate.md)
+- [class MPSNNGradientState](./mpsnngradientstate.md)
   A class representing the state of a gradient kernel when it was encoded.
-- [func executeAsync(withSourceImages: [MPSImage], completionHandler: MPSNNGraphCompletionHandler) -> MPSImage](mpsnngraph/executeasync(withsourceimages:completionhandler:).md)
-- [typealias MPSNNGraphCompletionHandler](mpsnngraphcompletionhandler.md)
+- [func executeAsync(withSourceImages: [MPSImage], completionHandler: MPSNNGraphCompletionHandler) -> MPSImage](./mpsnngraph/executeasync%28withsourceimages,completionhandler%29.md)
+- [typealias MPSNNGraphCompletionHandler](./mpsnngraphcompletionhandler.md)
   A notification when an asynchronous graph execution has finished.
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:).md)
-- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> [MPSImage]?](mpsnngraph/encodebatch(to:sourceimages:sourcestates:intermediateimages:destinationstates:).md)
-- [func readCountForSourceImage(at: Int) -> Int](mpsnngraph/readcountforsourceimage(at:).md)
-- [func readCountForSourceState(at: Int) -> Int](mpsnngraph/readcountforsourcestate(at:).md)
-- [func reloadFromDataSources()](mpsnngraph/reloadfromdatasources.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?) -> [MPSImage]?](./mpsnngraph/encodebatch%28to,sourceimages,sourcestates%29.md)
+- [func encodeBatch(to: any MTLCommandBuffer, sourceImages: [[MPSImage]], sourceStates: [[MPSState]]?, intermediateImages: NSMutableArray?, destinationStates: NSMutableArray?) -> [MPSImage]?](./mpsnngraph/encodebatch%28to,sourceimages,sourcestates,intermediateimages,destinationstates%29.md)
+- [func readCountForSourceImage(at: Int) -> Int](./mpsnngraph/readcountforsourceimage%28at%29.md)
+- [func readCountForSourceState(at: Int) -> Int](./mpsnngraph/readcountforsourcestate%28at%29.md)
+- [func reloadFromDataSources()](./mpsnngraph/reloadfromdatasources%28%29.md)
 
 
 ---

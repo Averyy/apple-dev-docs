@@ -1,14 +1,15 @@
 # x86_get_flags
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 uintptr_t x86_get_flags(void);
 ```
 

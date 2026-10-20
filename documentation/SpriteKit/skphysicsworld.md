@@ -1,18 +1,19 @@
 # SKPhysicsWorld
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The driver of the physics engine in a scene; it exposes the ability for you to configure and query the physics system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,86 +21,91 @@ The driver of the physics engine in a scene; it exposes the ability for you to c
 class SKPhysicsWorld
 ```
 
+```objc
+@interface SKPhysicsWorld : NSObject
+```
+
 ## Mentions
 
-- [Connecting Bodies with Joints](connecting-bodies-with-joints.md)
-- [Disconnecting Bodies from Joints](disconnecting-bodies-from-joints.md)
-- [Getting Started with Physics](getting-started-with-physics.md)
+- [Connecting Bodies with Joints](./connecting-bodies-with-joints.md)
+- [Disconnecting Bodies from Joints](./disconnecting-bodies-from-joints.md)
+- [Getting Started with Physics](./getting-started-with-physics.md)
 
 #### Overview
 
-`SKPhysicsWorld` runs the physics engine of a scene and is the place that contact detection occurs. Do not create a `SKPhysicsWorld` directly; the system creates a physics world and adds it to the scene’s [`physicsWorld`](skscene/physicsworld.md) property.
+`SKPhysicsWorld` runs the physics engine of a scene and is the place that contact detection occurs. Do not create a `SKPhysicsWorld` directly; the system creates a physics world and adds it to the scene’s [`physicsWorld`](./skscene/physicsworld.md) property.
 
 The physics world allows you to:
 
-- Set important properties like [`gravity`](skphysicsworld/gravity.md)
-- Join two physics bodies using an [`SKPhysicsJoint`](skphysicsjoint.md)
-- Respond to collision between two physics bodies using [`contactDelegate`](skphysicsworld/contactdelegate.md)
+- Set important properties like [`gravity`](./skphysicsworld/gravity.md)
+- Join two physics bodies using an [`SKPhysicsJoint`](./skphysicsjoint.md)
+- Respond to collision between two physics bodies using [`contactDelegate`](./skphysicsworld/contactdelegate.md)
 - Do custom collisions detection or hit testing
 
 ## Topics
 
 ### Configuring the Physics World
-- [var gravity: CGVector](skphysicsworld/gravity.md)
+- [var gravity: CGVector](./skphysicsworld/gravity.md)
   A vector that specifies the gravitational acceleration applied to physics bodies in the physics world.
-- [var speed: CGFloat](skphysicsworld/speed.md)
+- [var speed: CGFloat](./skphysicsworld/speed.md)
   The rate at which the simulation executes.
 ### Joining Physics Bodies with Joints
-- [func add(SKPhysicsJoint)](skphysicsworld/add(_:).md)
+- [func add(SKPhysicsJoint)](./skphysicsworld/add%28_%29.md)
   Adds a joint to the physics world.
-- [func removeAllJoints()](skphysicsworld/removealljoints.md)
+- [func removeAllJoints()](./skphysicsworld/removealljoints%28%29.md)
   Removes all joints from the physics world.
-- [func remove(SKPhysicsJoint)](skphysicsworld/remove(_:).md)
+- [func remove(SKPhysicsJoint)](./skphysicsworld/remove%28_%29.md)
   Removes a specific joint from the physics world.
 ### Detecting Collisions
-- [var contactDelegate: (any SKPhysicsContactDelegate)?](skphysicsworld/contactdelegate.md)
+- [var contactDelegate: (any SKPhysicsContactDelegate)?](./skphysicsworld/contactdelegate.md)
   A delegate that is called when two physics bodies come in contact with each other.
 ### Searching the Scene for Physics Bodies
-- [Searching the World for Physics Bodies](searching-the-world-for-physics-bodies.md)
+- [Searching the World for Physics Bodies](./searching-the-world-for-physics-bodies.md)
   Cast a ray to find the physics bodies in the scene that intersect it.
-- [func body(alongRayStart: CGPoint, end: CGPoint) -> SKPhysicsBody?](skphysicsworld/body(alongraystart:end:).md)
+- [func body(alongRayStart: CGPoint, end: CGPoint) -> SKPhysicsBody?](./skphysicsworld/body%28alongraystart,end%29.md)
   Searches for the first physics body that intersects a ray.
-- [func body(at: CGPoint) -> SKPhysicsBody?](skphysicsworld/body(at:).md)
+- [func body(at: CGPoint) -> SKPhysicsBody?](./skphysicsworld/body%28at%29.md)
   Searches for the first physics body that contains a point.
-- [func body(in: CGRect) -> SKPhysicsBody?](skphysicsworld/body(in:).md)
+- [func body(in: CGRect) -> SKPhysicsBody?](./skphysicsworld/body%28in%29.md)
   Searches for the first physics body that intersects the specified rectangle.
-- [func enumerateBodies(alongRayStart: CGPoint, end: CGPoint, using: (SKPhysicsBody, CGPoint, CGVector, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(alongraystart:end:using:).md)
+- [func enumerateBodies(alongRayStart: CGPoint, end: CGPoint, using: (SKPhysicsBody, CGPoint, CGVector, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28alongraystart,end,using%29.md)
   Enumerates all the physics bodies in the scene that intersect a ray.
-- [func enumerateBodies(at: CGPoint, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(at:using:).md)
+- [func enumerateBodies(at: CGPoint, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28at,using%29.md)
   Enumerates all the physics bodies in the scene that contain a point.
-- [func enumerateBodies(in: CGRect, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(in:using:).md)
+- [func enumerateBodies(in: CGRect, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28in,using%29.md)
   Enumerates all the physics bodies in the scene that intersect the specified rectangle.
 ### Sampling Physics Fields
-- [func sampleFields(at: vector_float3) -> vector_float3](skphysicsworld/samplefields(at:).md)
+- [func sampleFields(at: vector_float3) -> vector_float3](./skphysicsworld/samplefields%28at%29.md)
   Samples all of the field nodes in the scene and returns the summation of their forces at that point.
 ### Initializers
-- [init?(coder: NSCoder)](skphysicsworld/init(coder:).md)
+- [init?(coder: NSCoder)](./skphysicsworld/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting Started with Physics](getting-started-with-physics.md)
+### Physics Simulation
+- [Getting Started with Physics](./getting-started-with-physics.md)
   Simulate gravity, acceleration, collision detection, or joints.
-- [class SKPhysicsBody](skphysicsbody.md)
+- [class SKPhysicsBody](./skphysicsbody.md)
   An object that adds physics simulation to a node.
-- [class SKPhysicsContact](skphysicscontact.md)
+- [class SKPhysicsContact](./skphysicscontact.md)
   A description of the contact between two physics bodies.
-- [protocol SKPhysicsContactDelegate](skphysicscontactdelegate.md)
+- [protocol SKPhysicsContactDelegate](./skphysicscontactdelegate.md)
   Methods your app can implement to respond when physics bodies come into contact.
-- [class SKFieldNode](skfieldnode.md)
+- [class SKFieldNode](./skfieldnode.md)
   A node that applies physics effects to nearby nodes.
 
 

@@ -1,7 +1,8 @@
 # AnimationGraphResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A compiled animation graph that drives skeletal animation on an entity by blending and transitioning between animation clips at runtime.
 
@@ -21,9 +22,9 @@ class AnimationGraphResource
 
 #### Overview
 
-Compile an animation graph definition once into an [`AnimationGraphResource`](animationgraphresource.md), then attach it to one or more entities through [`AnimationGraphComponent`](animationgraphcomponent.md). The same resource can drive many entities — each [`AnimationGraphComponent`](animationgraphcomponent.md) keeps its own per-instance evaluation state, so animation timing, state-machine progress, and parameter values stay independent across characters that share a graph.
+Compile an animation graph definition once into an [`AnimationGraphResource`](./animationgraphresource.md), then attach it to one or more entities through [`AnimationGraphComponent`](./animationgraphcomponent.md). The same resource can drive many entities — each [`AnimationGraphComponent`](./animationgraphcomponent.md) keeps its own per-instance evaluation state, so animation timing, state-machine progress, and parameter values stay independent across characters that share a graph.
 
-##### Compile and Attach a Graph
+##### Compile and attach a graph
 
 ```swift
 let resource = try AnimationGraphResource(
@@ -34,9 +35,9 @@ let resource = try AnimationGraphResource(
 entity.components.set(AnimationGraphComponent(graph: resource))
 ```
 
-##### Drive the Graph with Parameters
+##### Drive the graph with parameters
 
-A graph exposes a set of named, typed parameters that control its behavior at runtime, such as a movement speed or a trigger that initiates a transition. List the parameters declared by the graph through [`parameterNames`](animationgraphresource/parameternames.md). Set values through the owning entity’s parameter binding rather than through the resource itself:
+A graph exposes a set of named, typed parameters that control its behavior at runtime, such as a movement speed or a trigger that initiates a transition. List the parameters declared by the graph through [`parameterNames`](./animationgraphresource/parameternames.md). Set values through the owning entity’s parameter binding rather than through the resource itself:
 
 ```swift
 entity.parameters["MoveSpeed"] = BindableValue(Float(1.0))
@@ -44,31 +45,32 @@ entity.parameters["MoveSpeed"] = BindableValue(Float(1.0))
 
 When the graph evaluates next, it picks up the values bound on the entity whose names and types match the graph’s declared parameters.
 
-##### Validate Before Compiling
+##### Validate before compiling
 
-To check a graph definition for errors without producing a resource — for example, in editor tooling — call [`validate(definition:nodeResourceMapping:skeletonResource:)`](animationgraphresource/validate(definition:noderesourcemapping:skeletonresource:).md), which returns compiler diagnostics rather than throwing.
+To check a graph definition for errors without producing a resource — for example, in editor tooling — call [`validate(definition:nodeResourceMapping:skeletonResource:)`](./animationgraphresource/validate%28definition,noderesourcemapping,skeletonresource%29.md), which returns compiler diagnostics rather than throwing.
 
 ## Topics
 
 ### Creating an animation graph
-- [convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) throws](animationgraphresource/init(definition:noderesourcemapping:skeletonresource:).md)
+- [convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) throws](./animationgraphresource/init%28definition,noderesourcemapping,skeletonresource%29.md)
   Compiles an animation graph definition into a resource that can drive animation on an entity.
-- [static func validate(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) -> [String]](animationgraphresource/validate(definition:noderesourcemapping:skeletonresource:).md)
+- [static func validate(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) -> [String]](./animationgraphresource/validate%28definition,noderesourcemapping,skeletonresource%29.md)
   Compiles an animation graph definition and returns any diagnostic messages the compiler produced, without producing a resource.
 ### Accessing parameters
-- [var parameterNames: [String]](animationgraphresource/parameternames.md)
+- [var parameterNames: [String]](./animationgraphresource/parameternames.md)
   The names of all parameters declared by the graph definition.
 
 ## Relationships
 
 ### Conforms To
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnimationGraphComponent](animationgraphcomponent.md)
+### Animation graphs
+- [struct AnimationGraphComponent](./animationgraphcomponent.md)
   A component that drives skeletal animation on an entity using an animation graph.
 
 

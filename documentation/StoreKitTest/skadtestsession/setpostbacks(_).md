@@ -1,7 +1,8 @@
 # setPostbacks(_:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add test postbacks to the test session.
 
@@ -16,15 +17,19 @@ Add test postbacks to the test session.
 func setPostbacks(_ postbacks: [SKAdTestPostback]) throws
 ```
 
+```objc
+- (BOOL) setPostbacks:(NSArray<SKAdTestPostback *> *) postbacks error:(NSError **) error;
+```
+
 #### Discussion
 
 An error occurs if any of the test postbacks are invalid or if there’s an issue with the set of test postbacks. Otherwise, the test passes.
 
-Create postbacks using the initializer for [`SKAdTestPostback`](skadtestpostback.md), [`init(version:adNetworkIdentifier:adCampaignIdentifier:appStoreItemIdentifier:sourceAppStoreItemIdentifier:conversionValue:fidelityType:isRedownload:didWin:postbackURL:)`](skadtestpostback/init(version:adnetworkidentifier:adcampaignidentifier:appstoreitemidentifier:sourceappstoreitemidentifier:conversionvalue:fidelitytype:isredownload:didwin:postbackurl:).md). Add the postbacks to the test session by calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md).
+Create postbacks using the initializer for [`SKAdTestPostback`](../skadtestpostback.md), [`init(version:adNetworkIdentifier:adCampaignIdentifier:appStoreItemIdentifier:sourceAppStoreItemIdentifier:conversionValue:fidelityType:isRedownload:didWin:postbackURL:)`](../skadtestpostback/init%28version,adnetworkidentifier,adcampaignidentifier,appstoreitemidentifier,sourceappstoreitemidentifier,conversionvalue,fidelitytype,isredownload,didwin,postbackurl%29.md). Add the postbacks to the test session by calling [`setPostbacks(_:)`](./setpostbacks%28_%29.md).
 
-Calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) overwrites previous postbacks in the test session, if any exist.
+Calling [`setPostbacks(_:)`](./setpostbacks%28_%29.md) overwrites previous postbacks in the test session, if any exist.
 
-Include up to six test postbacks in your test session if you want to mimic the behavior of postbacks when users experience multiple ad impressions for the same app. For more information about attributions when there are multiple ad impressions, see [`Receiving ad attributions and postbacks`](https://developer.apple.com/documentation/storekit/receiving-ad-attributions-and-postbacks).
+Include up to six test postbacks in your test session if you want to mimic the behavior of postbacks when users experience multiple ad impressions for the same app. For more information about attributions when there are multiple ad impressions, see [Receiving ad attributions and postbacks](../../StoreKit/receiving-ad-attributions-and-postbacks.md).
 
 The array of test postbacks in the test session need to follow the same rules that SKAdNetwork uses for postbacks, including:
 
@@ -38,11 +43,12 @@ The array of test postbacks in the test session need to follow the same rules th
 
 ## See Also
 
-- [var postbacks: [SKAdTestPostback]](skadtestsession/postbacks.md)
+### Adding and sending postbacks
+- [var postbacks: [SKAdTestPostback]](./postbacks.md)
   An array of test postbacks you set in the testing environment.
-- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](skadtestsession/flushpostbacks(responses:).md)
+- [func flushPostbacks(responses: ([String : SKAdTestPostbackResponse]?, (any Error)?) -> Void)](./flushpostbacks%28responses%29.md)
   Sends the test postbacks and handles the responses.
-- [typealias SKANTestPostbackResponseHandler](skantestpostbackresponsehandler.md)
+- [typealias SKANTestPostbackResponseHandler](../skantestpostbackresponsehandler.md)
   A type that represents the test postback response handler.
 
 

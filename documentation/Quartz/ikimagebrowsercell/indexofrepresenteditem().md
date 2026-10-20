@@ -1,7 +1,8 @@
 # indexOfRepresentedItem()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the receiver’s represented object in the datasource.
 
@@ -14,6 +15,10 @@ Returns the index of the receiver’s represented object in the datasource.
 func indexOfRepresentedItem() -> Int
 ```
 
+```objc
+- (NSUInteger) indexOfRepresentedItem;
+```
+
 #### Return Value
 
 The index of the represented object in the datasource.
@@ -24,7 +29,8 @@ Subclasses should not override this method.
 
 ## See Also
 
-- [func representedItem() -> Any!](ikimagebrowsercell/representeditem.md)
+### Represented Item
+- [func representedItem() -> Any!](./representeditem%28%29.md)
   Returns the receiver’s represented object.
 
 

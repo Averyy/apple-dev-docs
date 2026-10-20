@@ -1,7 +1,8 @@
 # AppClipAppStoreReviewDetailCreateRequest.Data.Relationships.AppClipDefaultExperience
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Default App Clip Experiences resource you set with the request that creates an App Clip App Store Review Details resource.
 
@@ -10,14 +11,14 @@ The relationship to the Default App Clip Experiences resource you set with the r
 
 ## Declaration
 
-```swift
+```
 object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships.AppClipDefaultExperience
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships.AppClipDefaultExperience.Data](appclipappstorereviewdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/appclipdefaultexperience-data.dictionary/data-data.dictionary.md)
+- [object AppClipAppStoreReviewDetailCreateRequest.Data.Relationships.AppClipDefaultExperience.Data](./appclipdefaultexperience-data.dictionary/data-data.dictionary.md)
   The type and ID of the Default App Clip Experiences resource that you’re relating with the App Clip App Store Review Details resource you’re creating.
 
 ## Properties

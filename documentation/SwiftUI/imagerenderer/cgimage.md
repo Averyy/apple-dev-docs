@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current contents of the view, rasterized as a Core Graphics image.
 
@@ -27,11 +28,12 @@ The renderer notifies its `objectWillChange` publisher when the contents of the 
 
 ## See Also
 
-- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](imagerenderer/render(rasterizationscale:renderer:).md)
+### Rendering images
+- [func render(rasterizationScale: CGFloat, renderer: (CGSize, (CGContext) -> Void) -> Void)](./render%28rasterizationscale,renderer%29.md)
   Draws the renderer’s current contents to an arbitrary Core Graphics context.
-- [var nsImage: NSImage?](imagerenderer/nsimage.md)
+- [var nsImage: NSImage?](./nsimage.md)
   The current contents of the view, rasterized as an AppKit image.
-- [var uiImage: UIImage?](imagerenderer/uiimage.md)
+- [var uiImage: UIImage?](./uiimage.md)
   The current contents of the view, rasterized as a UIKit image.
 
 

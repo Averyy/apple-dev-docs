@@ -1,7 +1,8 @@
 # slideDown
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A transition animation that slides the old view down while the new view slides into view from the top. In other words, both views slide down.
 
@@ -14,21 +15,26 @@ A transition animation that slides the old view down while the new view slides i
 static var slideDown: NSViewController.TransitionOptions { get }
 ```
 
+```c
+NSViewControllerTransitionSlideDown
+```
+
 ## See Also
 
-- [static var crossfade: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/crossfade.md)
+### Constants
+- [static var crossfade: NSViewController.TransitionOptions](./crossfade.md)
   A transition animation that fades the new view in and simultaneously fades the old view out. You can combine this animation option with any of the “slide” options in this enumeration.
-- [static var slideUp: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/slideup.md)
+- [static var slideUp: NSViewController.TransitionOptions](./slideup.md)
   A transition animation that slides the old view up while the new view comes into view from the bottom.  In other words, both views slide up.
-- [static var slideLeft: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/slideleft.md)
+- [static var slideLeft: NSViewController.TransitionOptions](./slideleft.md)
   A transition animation that slides the old view to the left while the new view slides into view from the right. In other words, both views slide to the left.
-- [static var slideRight: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/slideright.md)
+- [static var slideRight: NSViewController.TransitionOptions](./slideright.md)
   A transition animation that slides the old view to the right while the new view slides into view from the left.  In other words, both views slide to the right.
-- [static var slideForward: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/slideforward.md)
-  A transition animation that reflects the user interface layout direction ([`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md)) in a “forward” manner, as follows:
-- [static var slideBackward: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/slidebackward.md)
-  A transition animation that reflects the user interface layout direction ([`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md)) in a “backward” manner, as follows
-- [static var allowUserInteraction: NSViewController.TransitionOptions](nsviewcontroller/transitionoptions/allowuserinteraction.md)
+- [static var slideForward: NSViewController.TransitionOptions](./slideforward.md)
+  A transition animation that reflects the user interface layout direction ([`userInterfaceLayoutDirection`](../../nsapplication/userinterfacelayoutdirection.md)) in a “forward” manner, as follows:
+- [static var slideBackward: NSViewController.TransitionOptions](./slidebackward.md)
+  A transition animation that reflects the user interface layout direction ([`userInterfaceLayoutDirection`](../../nsapplication/userinterfacelayoutdirection.md)) in a “backward” manner, as follows
+- [static var allowUserInteraction: NSViewController.TransitionOptions](./allowuserinteraction.md)
   A transition animation that allows user interaction during the transition.
 
 

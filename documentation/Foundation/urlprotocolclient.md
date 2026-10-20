@@ -1,9 +1,10 @@
 # URLProtocolClient
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-The interface used by [`URLProtocol`](urlprotocol.md) subclasses to communicate with the URL Loading System.
+The interface used by [`URLProtocol`](./urlprotocol.md) subclasses to communicate with the URL Loading System.
 
 **Availability**:
 - iOS 2.0+
@@ -20,50 +21,55 @@ The interface used by [`URLProtocol`](urlprotocol.md) subclasses to communicate 
 protocol URLProtocolClient : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol NSURLProtocolClient <NSObject>
+```
+
 #### Overview
 
-Don’t implement this protocol in your application. Instead, your [`URLProtocol`](urlprotocol.md) subclass calls methods of this protocol on its own [`client`](urlprotocol/client.md) property.
+Don’t implement this protocol in your application. Instead, your [`URLProtocol`](./urlprotocol.md) subclass calls methods of this protocol on its own [`client`](./urlprotocol/client.md) property.
 
 ## Topics
 
 ### Creating a response
-- [func urlProtocol(URLProtocol, didReceive: URLResponse, cacheStoragePolicy: URLCache.StoragePolicy)](urlprotocolclient/urlprotocol(_:didreceive:cachestoragepolicy:).md)
+- [func urlProtocol(URLProtocol, didReceive: URLResponse, cacheStoragePolicy: URLCache.StoragePolicy)](./urlprotocolclient/urlprotocol%28_,didreceive,cachestoragepolicy%29.md)
   Tells the client that the protocol implementation has created a response object for the request.
 ### Handling redirects
-- [func urlProtocol(URLProtocol, wasRedirectedTo: URLRequest, redirectResponse: URLResponse)](urlprotocolclient/urlprotocol(_:wasredirectedto:redirectresponse:).md)
+- [func urlProtocol(URLProtocol, wasRedirectedTo: URLRequest, redirectResponse: URLResponse)](./urlprotocolclient/urlprotocol%28_,wasredirectedto,redirectresponse%29.md)
   Tells the client that the protocol implementation has been redirected.
 ### Working with cache data
-- [func urlProtocol(URLProtocol, cachedResponseIsValid: CachedURLResponse)](urlprotocolclient/urlprotocol(_:cachedresponseisvalid:).md)
+- [func urlProtocol(URLProtocol, cachedResponseIsValid: CachedURLResponse)](./urlprotocolclient/urlprotocol%28_,cachedresponseisvalid%29.md)
   Tells the client that a cached response is valid.
 ### Handling authentication challenges
-- [func urlProtocol(URLProtocol, didCancel: URLAuthenticationChallenge)](urlprotocolclient/urlprotocol(_:didcancel:).md)
+- [func urlProtocol(URLProtocol, didCancel: URLAuthenticationChallenge)](./urlprotocolclient/urlprotocol%28_,didcancel%29.md)
   Tells the client that an authentication challenge has been canceled.
-- [func urlProtocol(URLProtocol, didReceive: URLAuthenticationChallenge)](urlprotocolclient/urlprotocol(_:didreceive:).md)
+- [func urlProtocol(URLProtocol, didReceive: URLAuthenticationChallenge)](./urlprotocolclient/urlprotocol%28_,didreceive%29.md)
   Tells the client that the URL Loading System received an authentication challenge.
 ### Indicating loading progress or failure
-- [func urlProtocol(URLProtocol, didFailWithError: any Error)](urlprotocolclient/urlprotocol(_:didfailwitherror:).md)
+- [func urlProtocol(URLProtocol, didFailWithError: any Error)](./urlprotocolclient/urlprotocol%28_,didfailwitherror%29.md)
   Tells the client that the load request failed due to an error.
-- [func urlProtocol(URLProtocol, didLoad: Data)](urlprotocolclient/urlprotocol(_:didload:).md)
+- [func urlProtocol(URLProtocol, didLoad: Data)](./urlprotocolclient/urlprotocol%28_,didload%29.md)
   Tells the client that the protocol implementation has loaded some data.
-- [func urlProtocolDidFinishLoading(URLProtocol)](urlprotocolclient/urlprotocoldidfinishloading(_:).md)
+- [func urlProtocolDidFinishLoading(URLProtocol)](./urlprotocolclient/urlprotocoldidfinishloading%28_%29.md)
   Tells the client that the protocol implementation has finished loading.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cachedResponse: CachedURLResponse?](urlprotocol/cachedresponse.md)
+### Getting protocol attributes
+- [var cachedResponse: CachedURLResponse?](./urlprotocol/cachedresponse.md)
   The protocol’s cached response.
-- [var client: (any URLProtocolClient)?](urlprotocol/client.md)
+- [var client: (any URLProtocolClient)?](./urlprotocol/client.md)
   The object the protocol uses to communicate with the URL loading system.
-- [var request: URLRequest](urlprotocol/request.md)
+- [var request: URLRequest](./urlprotocol/request.md)
   The protocol’s request.
-- [var task: URLSessionTask?](urlprotocol/task.md)
+- [var task: URLSessionTask?](./urlprotocol/task.md)
   The protocol’s task.
 
 

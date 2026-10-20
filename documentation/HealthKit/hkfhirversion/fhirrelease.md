@@ -1,7 +1,8 @@
 # fhirRelease
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An official release of the FHIR specification.
 
@@ -18,9 +19,14 @@ An official release of the FHIR specification.
 var fhirRelease: HKFHIRRelease { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HKFHIRRelease FHIRRelease;
+```
+
 ## See Also
 
-- [struct HKFHIRRelease](hkfhirrelease.md)
+### Accessing the Release
+- [struct HKFHIRRelease](../hkfhirrelease.md)
   Official releases of the FHIR specification.
 
 

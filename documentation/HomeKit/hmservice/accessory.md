@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory that provides this service.
 
@@ -17,6 +18,10 @@ The accessory that provides this service.
 
 ```swift
 weak var accessory: HMAccessory? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) HMAccessory * accessory;
 ```
 
 

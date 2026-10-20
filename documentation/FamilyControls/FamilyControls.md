@@ -1,7 +1,8 @@
 # Family Controls
 
 **Framework**: Family Controls  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Authorize your app to provide parental controls on a device.
 
@@ -12,11 +13,11 @@ Authorize your app to provide parental controls on a device.
 
 #### Overview
 
-To authorize your parental controls app, use a shared [`AuthorizationCenter`](authorizationcenter.md) instance. You can authorize parental controls on any device.
+To authorize your parental controls app, use a shared [`AuthorizationCenter`](./authorizationcenter.md) instance. You can authorize parental controls on any device.
 
-![A figure labeled allow activity. It shows an arrow from a Family Sharing logo](/images/com.apple.FamilyControls/family-controls-overview@2x.png)
+![A figure labeled allow activity. It shows an arrow from a Family Sharing logo](https://developer.apple.com/tutorials/images/com.apple.FamilyControls/family-controls-overview@2x.png)
 
-> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](authorizationcenter/requestauthorization(for:).md) or [`revokeAuthorization(completionHandler:)`](authorizationcenter/revokeauthorization(completionhandler:).md) methods. This capability adds the [`Family Controls`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls) entitlement to your app. Before submitting your app to the App Store, you must [`request permission`](https://developer.apple.comhttps://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+> ❗ **Important**: You must add the Family Controls capability to your app before you call the [`requestAuthorization(for:)`](./authorizationcenter/requestauthorization%28for%29.md) or [`revokeAuthorization(completionHandler:)`](./authorizationcenter/revokeauthorization%28completionhandler%29.md) methods. This capability adds the [`Family Controls`](../BundleResources/entitlements/com.apple.developer.family-controls.md) entitlement to your app. Before submitting your app to the App Store, you must [request permission](https://developer.apple.com/contact/request/family-controls-distribution) to use the entitlement. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
 Authorizing parental controls for a child requires approval from a parent or guardian in the same Family Sharing group. The system displays an authentication sheet on the child’s device, and the parent or guardian approves or denies the authorization request. The system sends the result to your app’s `AuthorizationCenter`.
 
@@ -29,30 +30,30 @@ In a compatible iPad or iPhone app running in visionOS, authorization attempts a
 ## Topics
 
 ### Authorizations
-- [class AuthorizationCenter](authorizationcenter.md)
+- [class AuthorizationCenter](./authorizationcenter.md)
   The center for requesting authorization to provide parental controls.
-- [enum AuthorizationStatus](authorizationstatus.md)
+- [enum AuthorizationStatus](./authorizationstatus.md)
   The status of your app’s authorization to provide parental controls.
-- [Family Controls](../bundleresources/entitlements/com.apple.developer.family-controls.md)
+- [Family Controls](../BundleResources/entitlements/com.apple.developer.family-controls.md)
   A Boolean value that indicates whether the app can request or revoke authorization to provide parental controls.
-- [Requesting the Family Controls entitlement](requesting-the-family-controls-entitlement.md)
+- [Requesting the Family Controls entitlement](./requesting-the-family-controls-entitlement.md)
   Register your app and its Screen Time API app extensions to use Family Controls.
 ### Account types
-- [enum FamilyControlsMember](familycontrolsmember.md)
+- [enum FamilyControlsMember](./familycontrolsmember.md)
   The type of account that Family Controls is currently managing.
 ### Activity selections
-- [struct FamilyActivityPicker](familyactivitypicker.md)
+- [struct FamilyActivityPicker](./familyactivitypicker.md)
   A view in which users specify applications, web domains, and categories without revealing their choices to the app.
-- [struct FamilyActivitySelection](familyactivityselection.md)
+- [struct FamilyActivitySelection](./familyactivityselection.md)
   A collection of applications, categories, and web domains selected by the user.
 ### Activity labels
-- [Displaying Activity Labels](displayingactivitylabels.md)
+- [Displaying Activity Labels](./displayingactivitylabels.md)
   Provide users with a read-only, visual representation of an application, category, or web domain.
 ### Activity data
-- [class FamilyActivityData](familyactivitydata.md)
+- [class FamilyActivityData](./familyactivitydata.md)
   An interface to a person’s family activity data.
 ### Errors
-- [enum FamilyControlsError](familycontrolserror.md)
+- [enum FamilyControlsError](./familycontrolserror.md)
   Errors the Family Controls framework reports.
 
 

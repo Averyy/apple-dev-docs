@@ -1,7 +1,8 @@
 # FSVolume.OpenModes
 
 **Framework**: FSKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defined modes for opening a file.
 
@@ -14,35 +15,40 @@ Defined modes for opening a file.
 struct OpenModes
 ```
 
+```c
+enum FSVolumeOpenModes : NSUInteger;
+```
+
 ## Topics
 
 ### Declaring open modes
-- [static var read: FSVolume.OpenModes](fsvolume/openmodes/read.md)
+- [static var read: FSVolume.OpenModes](./openmodes/read.md)
   The read mode.
-- [static var write: FSVolume.OpenModes](fsvolume/openmodes/write.md)
+- [static var write: FSVolume.OpenModes](./openmodes/write.md)
   The write mode.
 ### Working with raw values
-- [init(rawValue: UInt)](fsvolume/openmodes/init(rawvalue:).md)
+- [init(rawValue: UInt)](./openmodes/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func openItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](fsvolume/openclosehandler/openitem(_:modes:context:replyhandler:).md)
+### Opening and closing
+- [func openItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](./openclosehandler/openitem%28_,modes,context,replyhandler%29.md)
   Opens a file for access.
-- [func closeItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](fsvolume/openclosehandler/closeitem(_:modes:context:replyhandler:).md)
+- [func closeItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](./openclosehandler/closeitem%28_,modes,context,replyhandler%29.md)
   Closes a file from further access.
-- [class FSContext](fscontext.md)
+- [class FSContext](../fscontext.md)
   A context object that provides information about the initiator of a file system operation.
 
 

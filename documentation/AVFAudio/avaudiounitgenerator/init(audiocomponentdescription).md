@@ -1,7 +1,8 @@
 # init(audioComponentDescription:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a generator audio unit with the specified description.
 
@@ -19,13 +20,17 @@ Creates a generator audio unit with the specified description.
 init(audioComponentDescription: AudioComponentDescription)
 ```
 
+```objc
+- (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
+```
+
 #### Return Value
 
 A new `AVAudioUnitGenerator` instance.
 
 #### Discussion
 
-The [`AudioComponentDescription`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentdescription) structure `componentType` field must be `kAudioUnitType_Generator` or [`kAudioUnitType_RemoteGenerator`](https://developer.apple.com/documentation/audiotoolbox/kaudiounittype_remotegenerator).
+The [`AudioComponentDescription`](../../AudioToolbox/audiocomponentdescription.md) structure `componentType` field must be `kAudioUnitType_Generator` or [`kAudioUnitType_RemoteGenerator`](../../AudioToolbox/kaudiounittype_remotegenerator.md).
 
 ## Parameters
 

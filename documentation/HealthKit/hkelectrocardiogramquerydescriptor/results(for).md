@@ -1,7 +1,8 @@
 # results(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query that returns an asynchronous sequence of data representing individual heartbeats.
 
@@ -10,7 +11,7 @@ Runs a one-shot query that returns an asynchronous sequence of data representing
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,7 +26,8 @@ func results(for healthStore: HKHealthStore) -> HKElectrocardiogramQueryDescript
 
 ## See Also
 
-- [HKElectrocardiogramQueryDescriptor.Results](hkelectrocardiogramquerydescriptor/results.md)
+### Running Queries
+- [HKElectrocardiogramQueryDescriptor.Results](./results.md)
   An asynchronous sequence that emits data about individual voltage measurements from an electrocardiogram sample.
 
 

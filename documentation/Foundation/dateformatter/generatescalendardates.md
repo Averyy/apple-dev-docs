@@ -1,7 +1,8 @@
 # generatesCalendarDates
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the formatter generates the deprecated calendar date type.
 
@@ -20,9 +21,13 @@ Indicates whether the formatter generates the deprecated calendar date type.
 var generatesCalendarDates: Bool { get set }
 ```
 
+```objc
+@property BOOL generatesCalendarDates;
+```
+
 #### Discussion
 
-This property is [`true`](https://developer.apple.com/documentation/swift/true) if the formatter generates the deprecated [`NSCalendarDate`](nscalendardate.md) type, and is [`false`](https://developer.apple.com/documentation/swift/false) otherwise. You should use [`Date`](date.md) and [`Calendar`](calendar.md) rather than [`NSCalendarDate`](nscalendardate.md).
+This property is [`true`](../../Swift/true.md) if the formatter generates the deprecated [`NSCalendarDate`](../nscalendardate.md) type, and is [`false`](../../Swift/false.md) otherwise. You should use [`Date`](../date.md) and [`Calendar`](../calendar.md) rather than [`NSCalendarDate`](../nscalendardate.md).
 
 
 ---

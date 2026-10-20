@@ -1,7 +1,8 @@
 # NSPersistentContainer
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container that encapsulates the Core Data stack in your app.
 
@@ -20,66 +21,70 @@ A container that encapsulates the Core Data stack in your app.
 class NSPersistentContainer
 ```
 
+```objc
+@interface NSPersistentContainer : NSObject
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
-- [Setting Up Core Data with CloudKit](setting-up-core-data-with-cloudkit.md)
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Setting up a Core Data stack manually](./setting-up-a-core-data-stack-manually.md)
+- [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md)
+- [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
+- [Using Core Data in the background](./using-core-data-in-the-background.md)
 
 #### Overview
 
-NSPersistentContainer simplifies the creation and management of the Core Data stack by handling the creation of the managed object model ([`NSManagedObjectModel`](nsmanagedobjectmodel.md)), persistent store coordinator ([`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md)), and the managed object context ([`NSManagedObjectContext`](nsmanagedobjectcontext.md)).
+NSPersistentContainer simplifies the creation and management of the Core Data stack by handling the creation of the managed object model ([`NSManagedObjectModel`](./nsmanagedobjectmodel.md)), persistent store coordinator ([`NSPersistentStoreCoordinator`](./nspersistentstorecoordinator.md)), and the managed object context ([`NSManagedObjectContext`](./nsmanagedobjectcontext.md)).
 
 ## Topics
 
 ### Creating a Container
-- [convenience init(name: String)](nspersistentcontainer/init(name:).md)
+- [convenience init(name: String)](./nspersistentcontainer/init%28name%29.md)
   Creates a container with the specified name.
-- [init(name: String, managedObjectModel: NSManagedObjectModel)](nspersistentcontainer/init(name:managedobjectmodel:).md)
+- [init(name: String, managedObjectModel: NSManagedObjectModel)](./nspersistentcontainer/init%28name,managedobjectmodel%29.md)
   Create a container with the specified name and managed object model.
 ### Getting the Container’s Configuration
-- [var managedObjectModel: NSManagedObjectModel](nspersistentcontainer/managedobjectmodel.md)
+- [var managedObjectModel: NSManagedObjectModel](./nspersistentcontainer/managedobjectmodel.md)
   The container’s managed object model.
-- [var name: String](nspersistentcontainer/name.md)
+- [var name: String](./nspersistentcontainer/name.md)
   The container’s name.
-- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](nspersistentcontainer/persistentstorecoordinator.md)
+- [var persistentStoreCoordinator: NSPersistentStoreCoordinator](./nspersistentcontainer/persistentstorecoordinator.md)
   The container’s persistent store coordinator.
 ### Accessing the Default Directory
-- [class var defaultDirectoryURL: URL](nspersistentcontainer/defaultdirectoryurl-swift.type.property.md)
+- [class var defaultDirectoryURL: URL](./nspersistentcontainer/defaultdirectoryurl-swift.type.property.md)
   The location of the directory that contains the persistent stores.
-- [class func defaultDirectoryURL() -> URL](nspersistentcontainer/defaultdirectoryurl.md)
+- [class func defaultDirectoryURL() -> URL](./nspersistentcontainer/defaultdirectoryurl%28%29.md)
   Returns the location of the directory that contains the persistent stores.
 ### Managing Persistent Stores
-- [var persistentStoreDescriptions: [NSPersistentStoreDescription]](nspersistentcontainer/persistentstoredescriptions.md)
+- [var persistentStoreDescriptions: [NSPersistentStoreDescription]](./nspersistentcontainer/persistentstoredescriptions.md)
   The descriptions of the container’s persistent stores.
-- [func loadPersistentStores(completionHandler: (NSPersistentStoreDescription, (any Error)?) -> Void)](nspersistentcontainer/loadpersistentstores(completionhandler:).md)
+- [func loadPersistentStores(completionHandler: (NSPersistentStoreDescription, (any Error)?) -> Void)](./nspersistentcontainer/loadpersistentstores%28completionhandler%29.md)
   Loads the persistent stores.
 ### Acquiring Contexts
-- [func newBackgroundContext() -> NSManagedObjectContext](nspersistentcontainer/newbackgroundcontext.md)
+- [func newBackgroundContext() -> NSManagedObjectContext](./nspersistentcontainer/newbackgroundcontext%28%29.md)
   Returns a new managed object context that executes on a private queue.
-- [var viewContext: NSManagedObjectContext](nspersistentcontainer/viewcontext.md)
+- [var viewContext: NSManagedObjectContext](./nspersistentcontainer/viewcontext.md)
   The main queue’s managed object context.
 ### Performing Background Tasks
-- [func performBackgroundTask((NSManagedObjectContext) -> Void)](nspersistentcontainer/performbackgroundtask(_:)-39sch.md)
+- [func performBackgroundTask((NSManagedObjectContext) -> Void)](./nspersistentcontainer/performbackgroundtask%28_%29-39sch.md)
   Executes a closure on a private queue using an ephemeral managed object context.
-- [func performBackgroundTask<T>((NSManagedObjectContext) throws -> T) async rethrows -> T](nspersistentcontainer/performbackgroundtask(_:)-25nok.md)
+- [func performBackgroundTask<T>((NSManagedObjectContext) throws -> T) async rethrows -> T](./nspersistentcontainer/performbackgroundtask%28_%29-25nok.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NSPersistentCloudKitContainer](nspersistentcloudkitcontainer.md)
+- [NSPersistentCloudKitContainer](./nspersistentcloudkitcontainer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

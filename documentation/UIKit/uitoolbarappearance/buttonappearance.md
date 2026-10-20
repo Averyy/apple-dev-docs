@@ -1,7 +1,8 @@
 # buttonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for plain bar button items in the toolbar.
 
@@ -19,13 +20,18 @@ The appearance attributes for plain bar button items in the toolbar.
 var buttonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * buttonAppearance;
+```
+
 #### Discussion
 
-To configure the appearance of a done button item, use the [`doneButtonAppearance`](uitoolbarappearance/donebuttonappearance.md) property instead.
+To configure the appearance of a done button item, use the [`doneButtonAppearance`](./donebuttonappearance.md) property instead.
 
 ## See Also
 
-- [var prominentButtonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/prominentbuttonappearance.md)
+### Configuring bar button items
+- [var prominentButtonAppearance: UIBarButtonItemAppearance](./prominentbuttonappearance.md)
   The appearance attributes for Prominent buttons.
 
 

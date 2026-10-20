@@ -1,18 +1,19 @@
 # data_size_in_bytes
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in bytes, of the memory that contains the tensor values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The size, in bytes, of the memory that contains the tensor values.
 var data_size_in_bytes: Int
 ```
 
+```c
+size_t data_size_in_bytes;
+```
+
 ## See Also
 
-- [var data_type: BNNSDataType](bnnstensor/data_type.md)
+### Specifying a tensor’s properties
+- [var data_type: BNNSDataType](./data_type.md)
   The data type of the tensor.
-- [var rank: UInt8](bnnstensor/rank.md)
+- [var rank: UInt8](./rank.md)
   The rank of the tensor.
-- [var shape: (Int, Int, Int, Int, Int, Int, Int, Int)](bnnstensor/shape.md)
+- [var shape: (Int, Int, Int, Int, Int, Int, Int, Int)](./shape.md)
   A tuple of unsigned-integer elements that specify the size of the tensor.
-- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](bnnstensor/stride.md)
+- [var stride: (Int, Int, Int, Int, Int, Int, Int, Int)](./stride.md)
   A tuple of unsigned-integer elements that specify the stride of the tensor.
-- [var data: UnsafeMutableRawPointer?](bnnstensor/data.md)
+- [var data: UnsafeMutableRawPointer?](./data.md)
   A pointer to the memory that contains the tensor values.
-- [var name: UnsafePointer<CChar>?](bnnstensor/name.md)
+- [var name: UnsafePointer<CChar>?](./name.md)
   An optional name for the tensor that you can use for debugging.
 
 

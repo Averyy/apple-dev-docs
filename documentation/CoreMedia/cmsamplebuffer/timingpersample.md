@@ -1,7 +1,8 @@
 # CMSampleBuffer.TimingPerSample
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies timing of each sample in a sample buffer.
 
@@ -23,23 +24,23 @@ enum TimingPerSample
 ## Topics
 
 ### Enumeration Cases
-- [CMSampleBuffer.TimingPerSample.distinct(_:)](cmsamplebuffer/timingpersample/distinct(_:).md)
+- [CMSampleBuffer.TimingPerSample.distinct(_:)](./timingpersample/distinct%28_%29.md)
   Each sample has distinct timing.
-- [CMSampleBuffer.TimingPerSample.sequential(startingAt:)](cmsamplebuffer/timingpersample/sequential(startingat:).md)
+- [CMSampleBuffer.TimingPerSample.sequential(startingAt:)](./timingpersample/sequential%28startingat%29.md)
   All samples are adjacent to each other and have the same duration.
 ### Type Methods
-- [static func sequential(presentationTimeOfFirstSample: CMTime, uniformDuration: CMTime, decodeTimeOfFirstSample: CMTime) -> CMSampleBuffer.TimingPerSample](cmsamplebuffer/timingpersample/sequential(presentationtimeoffirstsample:uniformduration:decodetimeoffirstsample:).md)
+- [static func sequential(presentationTimeOfFirstSample: CMTime, uniformDuration: CMTime, decodeTimeOfFirstSample: CMTime) -> CMSampleBuffer.TimingPerSample](./timingpersample/sequential%28presentationtimeoffirstsample,uniformduration,decodetimeoffirstsample%29.md)
   All samples are adjacent to each other and have the same duration.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

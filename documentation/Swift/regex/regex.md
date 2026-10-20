@@ -1,7 +1,8 @@
 # regex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The regular expression represented by this component.
 

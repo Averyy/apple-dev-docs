@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The default value for the transaction key.
@@ -23,7 +24,8 @@ static var defaultValue: Self.Value { get }
 
 ## See Also
 
-- [associatedtype Value](transactionkey/value.md)
+### Setting a default value
+- [associatedtype Value](./value.md)
   The associated type representing the type of the transaction key’s value.
 
 

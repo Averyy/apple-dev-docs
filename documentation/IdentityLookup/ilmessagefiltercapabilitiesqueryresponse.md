@@ -1,7 +1,8 @@
 # ILMessageFilterCapabilitiesQueryResponse
 
 **Framework**: SMS and Call Reporting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A response to a message filter capabilities query request.
 
@@ -17,31 +18,36 @@ A response to a message filter capabilities query request.
 class ILMessageFilterCapabilitiesQueryResponse
 ```
 
+```objc
+@interface ILMessageFilterCapabilitiesQueryResponse : NSObject
+```
+
 ## Topics
 
 ### Setting the Subactions
-- [var promotionalSubActions: [ILMessageFilterSubAction]](ilmessagefiltercapabilitiesqueryresponse/promotionalsubactions-98kzj.md)
-- [var transactionalSubActions: [ILMessageFilterSubAction]](ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-4bfqz.md)
+- [var promotionalSubActions: [ILMessageFilterSubAction]](./ilmessagefiltercapabilitiesqueryresponse/promotionalsubactions-98kzj.md)
+- [var transactionalSubActions: [ILMessageFilterSubAction]](./ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-4bfqz.md)
 ### Initializers
-- [init?(coder: NSCoder)](ilmessagefiltercapabilitiesqueryresponse/init(coder:).md)
+- [init?(coder: NSCoder)](./ilmessagefiltercapabilitiesqueryresponse/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [enum ILMessageFilterSubAction](ilmessagefiltersubaction.md)
+### Responses
+- [enum ILMessageFilterSubAction](./ilmessagefiltersubaction.md)
   Responds to a received message with a filter subaction.
 
 

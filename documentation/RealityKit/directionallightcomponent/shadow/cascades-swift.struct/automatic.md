@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allow the engine to determine the optimal number of shadow cascades to use – depending on the scene and camera configuration in any given frame.
 

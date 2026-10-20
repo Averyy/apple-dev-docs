@@ -1,7 +1,8 @@
 # operatingSystemVersion
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the operating system used to save a sample.
 
@@ -19,6 +20,10 @@ A string that identifies the operating system used to save a sample.
 var operatingSystemVersion: OperatingSystemVersion { get }
 ```
 
+```objc
+@property (assign, readonly) NSOperatingSystemVersion operatingSystemVersion;
+```
+
 #### Discussion
 
 For samples saved on watchOS 4.0, HealthKit sets the operating system property to `{4, 0, 0}`.
@@ -28,16 +33,17 @@ For samples saved on watchOS 4.0, HealthKit sets the operating system property t
 ## Topics
 
 ### Constants
-- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](hksourcerevisionanyoperatingsystem.md)
+- [let HKSourceRevisionAnyOperatingSystem: OperatingSystemVersion](../hksourcerevisionanyoperatingsystem.md)
   A constant that matches any operating system.
 
 ## See Also
 
-- [var source: HKSource](hksourcerevision/source.md)
+### Accessing Source and Version Information
+- [var source: HKSource](./source.md)
   The source for a sample.
-- [var version: String?](hksourcerevision/version.md)
+- [var version: String?](./version.md)
   A string that identifies a particular version of the source.
-- [var productType: String?](hksourcerevision/producttype.md)
+- [var productType: String?](./producttype.md)
   A string that identifies the device used to save a sample.
 
 

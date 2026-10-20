@@ -1,7 +1,8 @@
 # delimiter
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character the CSV file generator uses to separate data fields in a CSV file.
 

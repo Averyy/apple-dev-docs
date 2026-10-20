@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A collection of all values of this type.
 

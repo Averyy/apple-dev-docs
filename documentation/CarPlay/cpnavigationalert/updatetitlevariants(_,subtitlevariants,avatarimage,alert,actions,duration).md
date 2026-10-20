@@ -1,7 +1,8 @@
 # updateTitleVariants(_:subtitleVariants:avatarImage:alert:actions:duration:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
 
@@ -14,6 +15,10 @@ Update the navigation alert with new title variants, subtitle variants, image, a
 
 ```swift
 func updateTitleVariants(_ newTitleVariants: [String], subtitleVariants newSubtitleVariants: [String], avatarImage: UIImage?, alert alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)
+```
+
+```objc
+- (void) updateTitleVariants:(NSArray<NSString *> *) newTitleVariants subtitleVariants:(NSArray<NSString *> *) newSubtitleVariants avatarImage:(UIImage *) avatarImage alertImage:(UIImage *) alertImage actions:(NSArray<CPAlertAction *> *) actions duration:(NSTimeInterval) duration;
 ```
 
 #### Discussion

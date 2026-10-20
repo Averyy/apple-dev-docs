@@ -1,7 +1,8 @@
 # Hiking
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for hiking areas.
 
@@ -10,7 +11,7 @@ The point-of-interest category for hiking areas.
 
 ## Declaration
 
-```swift
+```
 readonly Hiking: "Hiking";
 ```
 

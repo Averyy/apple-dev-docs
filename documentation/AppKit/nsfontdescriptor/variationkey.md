@@ -1,12 +1,13 @@
 # NSFontDescriptor.VariationKey
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that can be used as keys to retrieve information about a font descriptor from its variation axis dictionary.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,58 +15,63 @@ Constants that can be used as keys to retrieve information about a font descript
 struct VariationKey
 ```
 
+```c
+typedef NSString * NSFontDescriptorVariationKey;
+```
+
 #### Discussion
 
-These keys are used with [`variation`](nsfontdescriptor/attributename/variation.md).
+These keys are used with [`variation`](./attributename/variation.md).
 
 ## Topics
 
 ### Variation Keys
-- [static let identifier: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/identifier.md)
+- [static let identifier: NSFontDescriptor.VariationKey](./variationkey/identifier.md)
   The axis identifier value as a number object.
-- [static let minimumValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/minimumvalue.md)
+- [static let minimumValue: NSFontDescriptor.VariationKey](./variationkey/minimumvalue.md)
   The minimum axis value as a number object.
-- [static let maximumValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/maximumvalue.md)
+- [static let maximumValue: NSFontDescriptor.VariationKey](./variationkey/maximumvalue.md)
   The maximum axis value as a number object.
-- [static let defaultValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/defaultvalue.md)
+- [static let defaultValue: NSFontDescriptor.VariationKey](./variationkey/defaultvalue.md)
   The default axis value as a number object.
-- [static let name: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/name.md)
+- [static let name: NSFontDescriptor.VariationKey](./variationkey/name.md)
   The localized variation axis name.
 ### Initializers
-- [init(rawValue: String)](nsfontdescriptor/variationkey/init(rawvalue:).md)
+- [init(rawValue: String)](./variationkey/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var fontAttributes: [NSFontDescriptor.AttributeName : Any]](nsfontdescriptor/fontattributes.md)
+### Getting the Font Attributes
+- [var fontAttributes: [NSFontDescriptor.AttributeName : Any]](./fontattributes.md)
   The receiver’s dictionary of attributes.
-- [func object(forKey: NSFontDescriptor.AttributeName) -> Any?](nsfontdescriptor/object(forkey:).md)
+- [func object(forKey: NSFontDescriptor.AttributeName) -> Any?](./object%28forkey%29.md)
   Returns the font attribute specified by the given key.
-- [NSFontDescriptor.AttributeName](nsfontdescriptor/attributename.md)
+- [NSFontDescriptor.AttributeName](./attributename.md)
   Constants for the names of font attributes.
-- [NSFontDescriptor.SymbolicTraits](nsfontdescriptor/symbolictraits-swift.struct.md)
+- [NSFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct.md)
   A symbolic description of the stylistic aspects of a font.
-- [var matrix: AffineTransform?](nsfontdescriptor/matrix.md)
+- [var matrix: AffineTransform?](./matrix.md)
   The current transform matrix of the receiver.
-- [var pointSize: CGFloat](nsfontdescriptor/pointsize.md)
+- [var pointSize: CGFloat](./pointsize.md)
   The point size of the receiver.
-- [var postscriptName: String?](nsfontdescriptor/postscriptname.md)
+- [var postscriptName: String?](./postscriptname.md)
   The PostScript name of the receiver.
-- [NSFontDescriptor.FeatureKey](nsfontdescriptor/featurekey.md)
+- [NSFontDescriptor.FeatureKey](./featurekey.md)
   Constants to use as keys to retrieve information about a font descriptor from its feature dictionary.
-- [typealias NSFontFamilyClass](nsfontfamilyclass.md)
+- [typealias NSFontFamilyClass](../nsfontfamilyclass.md)
   Constants that classify certain stylistic qualities of the font.
-- [var NSFontFamilyClassMask: UInt32](nsfontfamilyclassmask.md)
+- [var NSFontFamilyClassMask: UInt32](../nsfontfamilyclassmask.md)
   Constant you use to access `NSFontFamilyClass` values in the upper four bits of `NSFontSymbolicTraits`.
-- [Typeface Information](typeface-information.md)
+- [Typeface Information](../typeface-information.md)
   Constants for type faces such as italic or bold.
 
 

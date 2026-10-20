@@ -1,7 +1,8 @@
 # imageState
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The approval state of an image.
 
@@ -10,25 +11,32 @@ The approval state of an image.
 
 ## Declaration
 
-```swift
+```
 string imageState
 ```
 
+## Possible Values
+
+- `PENDING`: The image is awaiting approval.
+- `APPROVED`: The image is approved.
+- `REJECTED`: The image is rejected.
+
 ## Mentions
 
-- [Setting up retention messages](setting-up-retention-messages.md)
+- [Setting up retention messages](./setting-up-retention-messages.md)
 
 #### Discussion
 
-Call [`Get Image List`](get-image-list.md) to get the list of images and their current state.
+Call [`Get Image List`](./get-image-list.md) to get the list of images and their current state.
 
 ## See Also
 
-- [type imageIdentifier](imageidentifier.md)
+### Images
+- [type imageIdentifier](./imageidentifier.md)
   A unique identifier for an image that you provide when you upload the image.
-- [type imageSize](imagesize.md)
+- [type imageSize](./imagesize.md)
   The size of an image.
-- [type altText](alttext.md)
+- [type altText](./alttext.md)
   The alternative text for a corresponding image.
 
 

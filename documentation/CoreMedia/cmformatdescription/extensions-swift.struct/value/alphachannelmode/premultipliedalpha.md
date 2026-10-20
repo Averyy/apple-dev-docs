@@ -1,7 +1,8 @@
 # premultipliedAlpha
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ static let premultipliedAlpha: CMFormatDescription.Extensions.Value.AlphaChannel
 
 ## See Also
 
-- [static let straightAlpha: CMFormatDescription.Extensions.Value.AlphaChannelMode](cmformatdescription/extensions-swift.struct/value/alphachannelmode/straightalpha.md)
+### Alpha Channel Modes
+- [static let straightAlpha: CMFormatDescription.Extensions.Value.AlphaChannelMode](./straightalpha.md)
 
 
 ---

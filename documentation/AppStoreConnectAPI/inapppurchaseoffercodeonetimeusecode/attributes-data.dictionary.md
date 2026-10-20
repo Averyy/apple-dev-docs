@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeOneTimeUseCode.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase offer code one-time use code resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase offer code one-time use code resourc
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeOneTimeUseCode.Attributes
 ```
 
@@ -24,7 +25,8 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Attributes
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

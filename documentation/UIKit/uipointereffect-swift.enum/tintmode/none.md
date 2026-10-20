@@ -1,7 +1,8 @@
 # UIPointerEffect.TintMode.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view has no tint applied.
 
@@ -9,7 +10,7 @@ The view has no tint applied.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ case none
 
 ## See Also
 
-- [UIPointerEffect.TintMode.overlay](uipointereffect-swift.enum/tintmode/overlay.md)
+### Tint Modes
+- [UIPointerEffect.TintMode.overlay](./overlay.md)
   The view has a tint overlay.
-- [UIPointerEffect.TintMode.underlay](uipointereffect-swift.enum/tintmode/underlay.md)
+- [UIPointerEffect.TintMode.underlay](./underlay.md)
   The view has a tint underlay.
 
 

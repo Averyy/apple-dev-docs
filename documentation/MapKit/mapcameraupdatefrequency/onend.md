@@ -1,7 +1,8 @@
 # onEnd
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the camera updates when map interactions are complete.
 
@@ -11,7 +12,7 @@ A value that indicates the camera updates when map interactions are complete.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ static var onEnd: MapCameraUpdateFrequency { get }
 
 ## See Also
 
-- [static var continuous: MapCameraUpdateFrequency](mapcameraupdatefrequency/continuous.md)
+### Timing of camera updates
+- [static var continuous: MapCameraUpdateFrequency](./continuous.md)
   A value that indicates that all camera updates are continuous, including while interactions are taking place.
 
 

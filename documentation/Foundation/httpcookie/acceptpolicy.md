@@ -1,9 +1,10 @@
 # HTTPCookie.AcceptPolicy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Cookie acceptance policies implemented by the [`HTTPCookieStorage`](httpcookiestorage.md) class.
+Cookie acceptance policies implemented by the [`HTTPCookieStorage`](../httpcookiestorage.md) class.
 
 **Availability**:
 - iOS 2.0+
@@ -20,27 +21,31 @@ Cookie acceptance policies implemented by the [`HTTPCookieStorage`](httpcookiest
 enum AcceptPolicy
 ```
 
+```c
+enum NSHTTPCookieAcceptPolicy : NSUInteger;
+```
+
 ## Topics
 
 ### Policies
-- [HTTPCookie.AcceptPolicy.always](httpcookie/acceptpolicy/always.md)
+- [HTTPCookie.AcceptPolicy.always](./acceptpolicy/always.md)
   Accept all cookies.
-- [HTTPCookie.AcceptPolicy.never](httpcookie/acceptpolicy/never.md)
+- [HTTPCookie.AcceptPolicy.never](./acceptpolicy/never.md)
   Reject all cookies.
-- [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](httpcookie/acceptpolicy/onlyfrommaindocumentdomain.md)
+- [HTTPCookie.AcceptPolicy.onlyFromMainDocumentDomain](./acceptpolicy/onlyfrommaindocumentdomain.md)
   Accept cookies only from the main document domain.
 ### Initializers
-- [init?(rawValue: UInt)](httpcookie/acceptpolicy/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./acceptpolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

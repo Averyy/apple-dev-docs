@@ -1,7 +1,8 @@
 # MTRICDManagementOperatingMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,23 +19,27 @@
 enum MTRICDManagementOperatingMode
 ```
 
+```c
+enum MTRICDManagementOperatingMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRICDManagementOperatingMode.LIT](mtricdmanagementoperatingmode/lit.md)
-- [MTRICDManagementOperatingMode.SIT](mtricdmanagementoperatingmode/sit.md)
+- [MTRICDManagementOperatingMode.LIT](./mtricdmanagementoperatingmode/lit.md)
+- [MTRICDManagementOperatingMode.SIT](./mtricdmanagementoperatingmode/sit.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtricdmanagementoperatingmode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtricdmanagementoperatingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

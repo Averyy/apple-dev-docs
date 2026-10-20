@@ -1,14 +1,15 @@
 # IOUSBHostCILinkData1TransferStructureAddress
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCILinkData1TransferStructureAddress = IOUSBBitRange64(0, 63)
 ```
 

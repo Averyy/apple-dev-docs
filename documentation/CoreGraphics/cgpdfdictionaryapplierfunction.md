@@ -1,18 +1,19 @@
 # CGPDFDictionaryApplierFunction
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Performs custom processing on a key-value pair from a PDF dictionary, using optional contextual information.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ Performs custom processing on a key-value pair from a PDF dictionary, using opti
 typealias CGPDFDictionaryApplierFunction = (UnsafePointer<CChar>, CGPDFObjectRef, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(const char *, struct CGPDFObject *, void *) CGPDFDictionaryApplierFunction;
+```
+
 #### Discussion
 
-[`CGPDFDictionaryApplierFunction`](cgpdfdictionaryapplierfunction.md) defines the callback for [`CGPDFDictionaryApplyFunction(_:_:_:)`](cgpdfdictionaryapplyfunction(_:_:_:).md), that enumerates all of the entries in the dictionary, calling your custom applier function once for each entry. The current key, its associated value, and the contextual information are passed to your applier function using the `key`, `value`, and `info` parameters respectively.
+[`CGPDFDictionaryApplierFunction`](./cgpdfdictionaryapplierfunction.md) defines the callback for [`CGPDFDictionaryApplyFunction(_:_:_:)`](./cgpdfdictionaryapplyfunction%28_,_,_%29.md), that enumerates all of the entries in the dictionary, calling your custom applier function once for each entry. The current key, its associated value, and the contextual information are passed to your applier function using the `key`, `value`, and `info` parameters respectively.
 
 ## Parameters
 
 - `key`: The current key in the dictionary.
 - `object`: The value in the dictionary associated with the key.
-- `info`: The contextual information that your provided in the `info` parameter in [`CGPDFDictionaryApplyFunction(_:_:_:)`](cgpdfdictionaryapplyfunction(_:_:_:).md).
+- `info`: The contextual information that your provided in the `info` parameter in [`CGPDFDictionaryApplyFunction(_:_:_:)`](./cgpdfdictionaryapplyfunction%28_,_,_%29.md).
 
 
 ---

@@ -1,6 +1,7 @@
 # Recognizing Text in Images
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Article
 
 Add text-recognition features to your app using the Vision framework.
 
@@ -12,21 +13,21 @@ Vision’s text-recognition capabilities operate using one of these paths:
 
 - **Fast**: The fast path uses the framework’s character-detection capabilities to find individual characters, and then uses a small machine learning model to recognize individual characters and words. This approach is similar to traditional optical character recognition (OCR).
 
-For example code using the fast path, see [`Extracting phone numbers from text in images`](extracting-phone-numbers-from-text-in-images.md).
+For example code using the fast path, see [Extracting phone numbers from text in images](./extracting-phone-numbers-from-text-in-images.md).
 
 - **Accurate**: The accurate path uses a neural network to find text in terms of strings and lines, and then performs further analysis to find individual words and sentences. This approach is much more in line with how humans read text.
 
-For example code using the accurate path, see [`Structuring recognized text on a document`](https://developer.apple.com/documentation/visionkit/structuring-recognized-text-on-a-document).
+For example code using the accurate path, see [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md).
 
 Using either path, you may optionally apply a language-correction phase based on Natural Language Processing (NLP) to minimize the potential for misreadings.
 
-![An illustration contrasting the Vision framework’s fast text-recognition path with its accurate text-recognition path. ](/images/Vision/media-3616311@2x.png)
+![An illustration contrasting the Vision framework’s fast text-recognition path with its accurate text-recognition path. ](https://developer.apple.com/tutorials/images/Vision/media-3616311@2x.png)
 
-> **Note**:  Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [`Detecting Objects in Still Images`](detecting-objects-in-still-images.md).
+> **Note**:  Using Vision’s text-recognition features is similar to performing other Vision operations, where you perform computer vision requests on an image and retrieve the resulting observations. If you’re new to the Vision framework, see [Detecting Objects in Still Images](./detecting-objects-in-still-images.md).
 
-##### Perform a Text Recognition Request
+##### Perform a Text-Recognition Request
 
-Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
+Vision provides its text-recognition capabilities through [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md), an image-based request type that finds and extracts text in images. The following example shows how to use [`VNImageRequestHandler`](./vnimagerequesthandler.md) to perform a [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md) for recognizing text in the specified [`CGImage`](../CoreGraphics/cgimage.md).
 
 ```swift
 // Get the CGImage on which to perform requests.
@@ -46,11 +47,11 @@ do {
 }
 ```
 
-> **Note**:  [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) uses the accurate path by default. To select the fast path, set the request’s [`recognitionLevel`](vnrecognizetextrequest/recognitionlevel.md) property to [`VNRequestTextRecognitionLevel.fast`](vnrequesttextrecognitionlevel/fast.md).
+> **Note**:  [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md) uses the accurate path by default. To select the fast path, set the request’s [`recognitionLevel`](./vnrecognizetextrequest/recognitionlevel.md) property to [`VNRequestTextRecognitionLevel.fast`](./vnrequesttextrecognitionlevel/fast.md).
 
 ##### Process the Results
 
-After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](vnrequest/results.md), which it returns as an array of [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) objects. Each observation provides the recognized text string, along with a confidence score that indicates the confidence in the accuracy of the recognition.
+After the request handler processes the request, it calls the request’s completion closure, passing it the request and any errors that occurred. Retrieve the observations by querying the request object for its [`results`](./vnrequest/results.md), which it returns as an array of [`VNRecognizedTextObservation`](./vnrecognizedtextobservation.md) objects. Each observation provides the recognized text string, along with a confidence score that indicates the confidence in the accuracy of the recognition.
 
 ```swift
 func recognizeTextHandler(request: VNRequest, error: Error?) {
@@ -68,7 +69,7 @@ func recognizeTextHandler(request: VNRequest, error: Error?) {
 }
 ```
 
-If you’d like to render the bounding rectangles around recognized text in your user interface, you can also retrieve that information from the observation. The rectangles it provides are in normalized coordinates. To render them correctly in your user interface, convert [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instances from normalized coordinates to image coordinates by using the [`VNImageRectForNormalizedRect(_:_:_:)`](vnimagerectfornormalizedrect(_:_:_:).md) function as shown below.
+If you’d like to render the bounding rectangles around recognized text in your user interface, you can also retrieve that information from the observation. The rectangles it provides are in normalized coordinates. To render them correctly in your user interface, convert [`CGRect`](../CoreFoundation/cgrect.md) instances from normalized coordinates to image coordinates by using the [`VNImageRectForNormalizedRect(_:_:_:)`](./vnimagerectfornormalizedrect%28_,_,_%29.md) function as shown below.
 
 ```swift
 let boundingRects: [CGRect] = observations.compactMap { observation in
@@ -94,25 +95,26 @@ The resulting bounding box differs depending on the path you choose. The fast pa
 
 ##### Optimize Language Settings
 
-Your choice of fast or accurate path, along with your use of a particular API revision, determines the language support the text-recognition algorithms provide. To determine which languages a particular path and revision support, call the request’s [`supportedRecognitionLanguages(for:revision:)`](vnrecognizetextrequest/supportedrecognitionlanguages(for:revision:).md) class method.
+Your choice of fast or accurate path, along with your use of a particular API revision, determines the language support the text-recognition algorithms provide. To determine which languages a particular path and revision support, call the request’s [`supportedRecognitionLanguages(for:revision:)`](./vnrecognizetextrequest/supportedrecognitionlanguages%28for,revision%29.md) class method.
 
-If not otherwise specified, Vision biases its results toward English. To alter its default behavior, provide an array of supported languages in the request’s [`recognitionLanguages`](vnrecognizetextrequest/recognitionlanguages.md) property. The order in which you provide the languages dictates their relative importance. To recognize traditional and simplified Chinese, specify `zh-Hant` and `zh-Hans` as the first elements in the request’s [`recognitionLanguages`](vnrecognizetextrequest/recognitionlanguages.md) property. English is the only other language that you can pair with Chinese.
+If not otherwise specified, Vision biases its results toward English. To alter its default behavior, provide an array of supported languages in the request’s [`recognitionLanguages`](./vnrecognizetextrequest/recognitionlanguages.md) property. The order in which you provide the languages dictates their relative importance. To recognize traditional and simplified Chinese, specify `zh-Hant` and `zh-Hans` as the first elements in the request’s [`recognitionLanguages`](./vnrecognizetextrequest/recognitionlanguages.md) property. English is the only other language that you can pair with Chinese.
 
-Enabling language correction on the request helps minimize common recognition errors. If the text you’re recognizing uses domain-specific jargon, such as medical or technical terms, you can tailor the language correction’s behavior by setting the request’s [`customWords`](vnrecognizetextrequest/customwords.md) property. Language correction gives precedence to the custom words when performing its processing. The request ignores the [`customWords`](vnrecognizetextrequest/customwords.md) property if language correction isn’t enabled.
+Enabling language correction on the request helps minimize common recognition errors. If the text you’re recognizing uses domain-specific jargon, such as medical or technical terms, you can tailor the language correction’s behavior by setting the request’s [`customWords`](./vnrecognizetextrequest/customwords.md) property. Language correction gives precedence to the custom words when performing its processing. The request ignores the [`customWords`](./vnrecognizetextrequest/customwords.md) property if language correction isn’t enabled.
 
-> **Note**:  Vision doesn’t support language correction, or its related [`customWords`](vnrecognizetextrequest/customwords.md) array, for Chinese.
+> **Note**:  Vision doesn’t support language correction, or its related [`customWords`](./vnrecognizetextrequest/customwords.md) array, for Chinese.
 
 ## See Also
 
-- [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
+### Text recognition
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
-- [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
+- [Extracting phone numbers from text in images](./extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.
-- [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
+- [Locating and displaying recognized text](./locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
-- [class VNRecognizeTextRequest](vnrecognizetextrequest.md)
+- [class VNRecognizeTextRequest](./vnrecognizetextrequest.md)
   An image-analysis request that finds and recognizes text in an image.
-- [class VNRecognizedTextObservation](vnrecognizedtextobservation.md)
+- [class VNRecognizedTextObservation](./vnrecognizedtextobservation.md)
   A request that detects and recognizes regions of text in an image.
 
 

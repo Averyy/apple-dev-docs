@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.MeasurementAttribute
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -21,15 +22,15 @@ struct MeasurementAttribute
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component](attributescopes/foundationattributes/measurementattribute/component.md)
+- [AttributeScopes.FoundationAttributes.MeasurementAttribute.Component](./measurementattribute/component.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

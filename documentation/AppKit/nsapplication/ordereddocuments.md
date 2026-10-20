@@ -1,12 +1,13 @@
 # orderedDocuments
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of document objects arranged according to the front-to-back ordering of their associated windows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ An array of document objects arranged according to the front-to-back ordering of
 var orderedDocuments: [NSDocument] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSDocument *> * orderedDocuments;
+```
+
 ## See Also
 
-- [var orderedWindows: [NSWindow]](nsapplication/orderedwindows.md)
+### Scripting your app
+- [var orderedWindows: [NSWindow]](./orderedwindows.md)
   An array of window objects arranged according to their front-to-back ordering on the screen.
 
 

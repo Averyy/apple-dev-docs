@@ -1,14 +1,15 @@
 # kConfigEntryValuePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kConfigEntryValuePhase = CSRBitRangePhase (8, 31)
 ```
 

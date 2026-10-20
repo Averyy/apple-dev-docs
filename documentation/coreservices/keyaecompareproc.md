@@ -1,9 +1,10 @@
 # keyAECompareProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Object-comparison function. See [`OSLCompareProcPtr`](oslcompareprocptr.md).
+Object-comparison function. See [`OSLCompareProcPtr`](./oslcompareprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

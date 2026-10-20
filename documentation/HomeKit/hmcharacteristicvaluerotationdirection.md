@@ -1,7 +1,8 @@
 # HMCharacteristicValueRotationDirection
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the direction of rotation.
 
@@ -19,25 +20,29 @@ Possible values for the direction of rotation.
 enum HMCharacteristicValueRotationDirection
 ```
 
+```c
+enum HMCharacteristicValueRotationDirection : NSInteger;
+```
+
 ## Topics
 
 ### Rotation
-- [HMCharacteristicValueRotationDirection.clockwise](hmcharacteristicvaluerotationdirection/clockwise.md)
+- [HMCharacteristicValueRotationDirection.clockwise](./hmcharacteristicvaluerotationdirection/clockwise.md)
   Clockwise rotation.
-- [HMCharacteristicValueRotationDirection.counterClockwise](hmcharacteristicvaluerotationdirection/counterclockwise.md)
+- [HMCharacteristicValueRotationDirection.counterClockwise](./hmcharacteristicvaluerotationdirection/counterclockwise.md)
   Counter-clockwise rotation.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluerotationdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluerotationdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

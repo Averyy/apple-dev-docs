@@ -1,7 +1,8 @@
 # pixelFormatType
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The four-character code that identifies the pixel format.
 
@@ -20,7 +21,7 @@ let pixelFormatType: OSType
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 #### Discussion
 
@@ -28,9 +29,10 @@ Compare this value to the `pixelFormatType` of a `CVPixelBuffer`.
 
 ## See Also
 
-- [let width: Int](imagedescriptor/width.md)
+### Inspecting image properties
+- [let width: Int](./width.md)
   The width of the image, in pixels.
-- [let height: Int](imagedescriptor/height.md)
+- [let height: Int](./height.md)
   The height of the image, in pixels.
 
 

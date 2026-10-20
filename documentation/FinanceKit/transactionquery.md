@@ -1,7 +1,8 @@
 # TransactionQuery
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the parameters to use for a transaction query.
 
@@ -22,39 +23,40 @@ Use a `TransactionQuery` to find and filter transactions in a person’s account
 ## Topics
 
 ### Initializers
-- [init(sortDescriptors: [SortDescriptor<Transaction>], predicate: Predicate<Transaction>?, limit: Int?, offset: Int?)](transactionquery/init(sortdescriptors:predicate:limit:offset:).md)
+- [init(sortDescriptors: [SortDescriptor<Transaction>], predicate: Predicate<Transaction>?, limit: Int?, offset: Int?)](./transactionquery/init%28sortdescriptors,predicate,limit,offset%29.md)
   Creates a new transaction query with the provided sort descriptors, predicate, and limit on the number of records the query should return.
 ### Type Methods
-- [static func predicate(forMerchantCategoryCodes: [MerchantCategoryCode]) -> Predicate<Transaction>](transactionquery/predicate(formerchantcategorycodes:).md)
+- [static func predicate(forMerchantCategoryCodes: [MerchantCategoryCode]) -> Predicate<Transaction>](./transactionquery/predicate%28formerchantcategorycodes%29.md)
   A predicate that returns transactions that match any of the provided merchant category codes.
-- [static func predicate(forStatuses: [TransactionStatus]) -> Predicate<Transaction>](transactionquery/predicate(forstatuses:).md)
+- [static func predicate(forStatuses: [TransactionStatus]) -> Predicate<Transaction>](./transactionquery/predicate%28forstatuses%29.md)
   Returns a predicate that matches any of the provided transaction statuses.
-- [static func predicate(forTransactionTypes: [TransactionType]) -> Predicate<Transaction>](transactionquery/predicate(fortransactiontypes:).md)
+- [static func predicate(forTransactionTypes: [TransactionType]) -> Predicate<Transaction>](./transactionquery/predicate%28fortransactiontypes%29.md)
   Returns a predicate that matches any of the provided transaction types.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](financestore/transactionhistory(foraccountid:since:ismonitoring:).md)
+### Transactions
+- [func transactionHistory(forAccountID: UUID, since: FinanceStore.HistoryToken?, isMonitoring: Bool) -> FinanceStore.History<Transaction>](./financestore/transactionhistory%28foraccountid,since,ismonitoring%29.md)
   Returns the transactions for the specified account ID, optional starting time, and monitoring indicator for long running transaction queries.
-- [func transactions(query: TransactionQuery) async throws -> [Transaction]](financestore/transactions(query:).md)
+- [func transactions(query: TransactionQuery) async throws -> [Transaction]](./financestore/transactions%28query%29.md)
   Returns transactions that match the provided transaction query.
-- [struct AccountQuery](accountquery.md)
+- [struct AccountQuery](./accountquery.md)
   A structure that defines an account query.
-- [struct AccountCreditInformation](accountcreditinformation.md)
+- [struct AccountCreditInformation](./accountcreditinformation.md)
   A structure that describes the credit information associated with an account.
-- [struct CurrencyAmount](currencyamount.md)
+- [struct CurrencyAmount](./currencyamount.md)
   A structure that describes a monetary amount and its currency.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   A structure that represents a transaction relating to a specific financial account.
-- [enum TransactionType](transactiontype.md)
+- [enum TransactionType](./transactiontype.md)
   Values that describe kinds of transactions.
-- [enum TransactionStatus](transactionstatus.md)
+- [enum TransactionStatus](./transactionstatus.md)
   Values that describe the status of a transaction.
 
 

@@ -1,7 +1,8 @@
 # state
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of data coming from a provider.
 
@@ -16,9 +17,10 @@ final var state: DataProviderState { get }
 
 ## See Also
 
-- [var alignments: [PlaneAnchor.Alignment]](planedetectionprovider/alignments.md)
+### Inspecting a plane detection provider
+- [var alignments: [PlaneAnchor.Alignment]](./alignments.md)
   The plane alignments that you configure a provider to detect.
-- [var description: String](planedetectionprovider/description.md)
+- [var description: String](./description.md)
   A textual representation of this plane detection provider.
 
 

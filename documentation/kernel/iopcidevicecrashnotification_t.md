@@ -1,14 +1,15 @@
 # IOPCIDeviceCrashNotification_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOPCIResetType : unsigned int {
     ...
 } IOPCIDeviceCrashNotification_t;
@@ -17,8 +18,8 @@ typedef enum IOPCIResetType : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCIResetHot](iopcidevicecrashnotification_t/kiopciresethot.md)
-- [kIOPCIResetNone](iopcidevicecrashnotification_t/kiopciresetnone.md)
+- [kIOPCIResetHot](./iopcidevicecrashnotification_t/kiopciresethot.md)
+- [kIOPCIResetNone](./iopcidevicecrashnotification_t/kiopciresetnone.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GetElementCategoryName
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the category name for the given element and scope of the video object.
 
@@ -10,7 +11,7 @@ Gets the category name for the given element and scope of the video object.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetElementCategoryName(IOUserVideoObjectPropertyElement in_element, IOUserVideoObjectPropertyScope in_scope);
 ```
 
@@ -29,15 +30,16 @@ The object’s work queue synchronizes access to the value.
 
 ## See Also
 
-- [SetElementCategoryName](iouservideoobject/setelementcategoryname.md)
+### Working with elements
+- [SetElementCategoryName](./setelementcategoryname.md)
   Sets the category name for the given element and scope of the video object.
-- [GetElementName](iouservideoobject/getelementname.md)
+- [GetElementName](./getelementname.md)
   Gets the name for the given element and scope of the video object.
-- [SetElementName](iouservideoobject/setelementname.md)
+- [SetElementName](./setelementname.md)
   Sets the name for the given element and scope of the video object.
-- [GetElementNumberName](iouservideoobject/getelementnumbername.md)
+- [GetElementNumberName](./getelementnumbername.md)
   Gets the number name for the given element and scope of the video object.
-- [SetElementNumberName](iouservideoobject/setelementnumbername.md)
+- [SetElementNumberName](./setelementnumbername.md)
   Sets the number name for the given element of the video object.
 
 

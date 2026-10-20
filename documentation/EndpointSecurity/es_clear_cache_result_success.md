@@ -1,18 +1,23 @@
 # ES_CLEAR_CACHE_RESULT_SUCCESS
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Clearing the cache succeeded.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_CLEAR_CACHE_RESULT_SUCCESS: es_clear_cache_result_t { get }
+```
+
+```c
+ES_CLEAR_CACHE_RESULT_SUCCESS
 ```
 
 

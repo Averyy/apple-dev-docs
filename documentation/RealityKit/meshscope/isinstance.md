@@ -1,7 +1,8 @@
 # isInstance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -19,8 +20,9 @@ var isInstance: Bool { get }
 
 ## See Also
 
-- [var isAll: Bool](meshscope/isall.md)
-- [var isModel: Bool](meshscope/ismodel.md)
+### Inspecting the scope
+- [var isAll: Bool](./isall.md)
+- [var isModel: Bool](./ismodel.md)
 
 
 ---

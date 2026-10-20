@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWMaxBusses](1645965-anonymous/kfwmaxbusses.md)
-- [kFWMaxNodeHops](1645965-anonymous/kfwmaxnodehops.md)
-- [kFWMaxNodesPerBus](1645965-anonymous/kfwmaxnodesperbus.md)
+- [kFWMaxBusses](./api-1645965-anonymous/kfwmaxbusses.md)
+- [kFWMaxNodeHops](./api-1645965-anonymous/kfwmaxnodehops.md)
+- [kFWMaxNodesPerBus](./api-1645965-anonymous/kfwmaxnodesperbus.md)
 
 
 ---

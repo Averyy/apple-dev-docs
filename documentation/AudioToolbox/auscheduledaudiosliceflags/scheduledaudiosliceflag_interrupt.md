@@ -1,15 +1,16 @@
 # scheduledAudioSliceFlag_Interrupt
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 static var scheduledAudioSliceFlag_Interrupt: AUScheduledAudioSliceFlags { get }
 ```
 
+```c
+kScheduledAudioSliceFlag_Interrupt
+```
+
 ## See Also
 
-- [static var scheduledAudioSliceFlag_BeganToRender: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorender.md)
-- [static var scheduledAudioSliceFlag_BeganToRenderLate: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_begantorenderlate.md)
-- [static var scheduledAudioSliceFlag_Complete: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_complete.md)
-- [static var scheduledAudioSliceFlag_InterruptAtLoop: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_interruptatloop.md)
-- [static var scheduledAudioSliceFlag_Loop: AUScheduledAudioSliceFlags](auscheduledaudiosliceflags/scheduledaudiosliceflag_loop.md)
+### Constants
+- [static var scheduledAudioSliceFlag_BeganToRender: AUScheduledAudioSliceFlags](./scheduledaudiosliceflag_begantorender.md)
+- [static var scheduledAudioSliceFlag_BeganToRenderLate: AUScheduledAudioSliceFlags](./scheduledaudiosliceflag_begantorenderlate.md)
+- [static var scheduledAudioSliceFlag_Complete: AUScheduledAudioSliceFlags](./scheduledaudiosliceflag_complete.md)
+- [static var scheduledAudioSliceFlag_InterruptAtLoop: AUScheduledAudioSliceFlags](./scheduledaudiosliceflag_interruptatloop.md)
+- [static var scheduledAudioSliceFlag_Loop: AUScheduledAudioSliceFlags](./scheduledaudiosliceflag_loop.md)
 
 
 ---

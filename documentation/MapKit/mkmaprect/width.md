@@ -1,18 +1,19 @@
 # width
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the width of the map rectangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Returns the width of the map rectangle.
 var width: Double { get }
 ```
 
+```c
+static double MKMapRectGetWidth(MKMapRect rect);
+```
+
 ## See Also
 
-- [var minX: Double](mkmaprect/minx.md)
+### Getting the boundaries
+- [var minX: Double](./minx.md)
   Returns the minimum x-axis value of the specified rectangle.
-- [var minY: Double](mkmaprect/miny.md)
+- [var minY: Double](./miny.md)
   Returns the minimum y-axis value of the specified rectangle.
-- [var midX: Double](mkmaprect/midx.md)
+- [var midX: Double](./midx.md)
   Returns the mid-point along the x-axis of the specified rectangle.
-- [var midY: Double](mkmaprect/midy.md)
+- [var midY: Double](./midy.md)
   Returns the mid-point along the y-axis of the specified rectangle.
-- [var maxX: Double](mkmaprect/maxx.md)
+- [var maxX: Double](./maxx.md)
   Returns the maximum x-axis value of the specified rectangle.
-- [var maxY: Double](mkmaprect/maxy.md)
+- [var maxY: Double](./maxy.md)
   Returns the maximum y-axis value of the specified rectangle.
-- [var height: Double](mkmaprect/height.md)
+- [var height: Double](./height.md)
   Returns the height of the map rectangle.
 
 

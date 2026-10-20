@@ -1,7 +1,8 @@
 # init(locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an integer format style that uses the given locale.
 
@@ -22,7 +23,7 @@ init(locale: Locale = .autoupdatingCurrent)
 
 #### Discussion
 
-Create an [`IntegerFormatStyle`](integerformatstyle.md) when you intend to apply a given style to multiple integers. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the integers in an array.
+Create an [`IntegerFormatStyle`](../integerformatstyle.md) when you intend to apply a given style to multiple integers. The following example creates a style that uses the `en_US` locale, which uses three-based grouping and comma separators. It then applies this style to all the integers in an array.
 
 ```swift
 let enUSstyle = IntegerFormatStyle<Int>(locale: Locale(identifier: "en_US"))
@@ -30,11 +31,11 @@ let nums = [100, 1000, 10000, 100000, 1000000]
 let formattedNums = nums.map { enUSstyle.format($0) } // ["100", "1,000", "10,000", "100,000", "1,000,000"]
 ```
 
-To format a single integer, you can use the [`BinaryInteger`](https://developer.apple.com/documentation/swift/binaryinteger) instance method [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryinteger/formatted(_:)-4qd73), passing in an instance of [`IntegerFormatStyle`](integerformatstyle.md).
+To format a single integer, you can use the [`BinaryInteger`](../../Swift/binaryinteger.md) instance method [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md), passing in an instance of [`IntegerFormatStyle`](../integerformatstyle.md).
 
 ## Parameters
 
-- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+- `locale`: The locale to use when formatting or parsing integers. Defaults to [`autoupdatingCurrent`](../locale/autoupdatingcurrent.md).
 
 
 ---

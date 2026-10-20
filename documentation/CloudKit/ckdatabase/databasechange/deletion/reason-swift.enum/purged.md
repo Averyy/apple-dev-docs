@@ -1,7 +1,8 @@
 # CKDatabase.DatabaseChange.Deletion.Reason.purged
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A deletion from the user via the iCloud storage UI.
 
@@ -11,7 +12,7 @@ A deletion from the user via the iCloud storage UI.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

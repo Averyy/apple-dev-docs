@@ -1,7 +1,8 @@
 # PDFInterpolationQuality.none
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The case where no interpolation quality is specified.
 
@@ -19,11 +20,16 @@ The case where no interpolation quality is specified.
 case none
 ```
 
+```c
+kPDFInterpolationQualityNone
+```
+
 ## See Also
 
-- [PDFInterpolationQuality.low](pdfinterpolationquality/low.md)
+### Enumeration Cases
+- [PDFInterpolationQuality.low](./low.md)
   The case specifying low interpolation quality.
-- [PDFInterpolationQuality.high](pdfinterpolationquality/high.md)
+- [PDFInterpolationQuality.high](./high.md)
   The case specifying high interpolation quality.
 
 

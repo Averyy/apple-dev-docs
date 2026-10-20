@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -19,11 +20,12 @@ var values: MLDataTable.Row.Values { get }
 
 ## See Also
 
-- [var keys: MLDataTable.Row.Keys](mldatatable/row/keys-swift.property.md)
-- [MLDataTable.Row.Key](mldatatable/row/key.md)
-- [MLDataTable.Row.Keys](mldatatable/row/keys-swift.typealias.md)
-- [MLDataTable.Row.Value](mldatatable/row/value.md)
-- [MLDataTable.Row.Values](mldatatable/row/values-swift.struct.md)
+### Accessing parameters
+- [var keys: MLDataTable.Row.Keys](./keys-swift.property.md)
+- [MLDataTable.Row.Key](./key.md)
+- [MLDataTable.Row.Keys](./keys-swift.typealias.md)
+- [MLDataTable.Row.Value](./value.md)
+- [MLDataTable.Row.Values](./values-swift.struct.md)
 
 
 ---

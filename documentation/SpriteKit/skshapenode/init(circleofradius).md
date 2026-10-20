@@ -1,7 +1,8 @@
 # init(circleOfRadius:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape node with a circular path centered on the node’s origin.
 
@@ -18,6 +19,10 @@ Creates a shape node with a circular path centered on the node’s origin.
 
 ```swift
 convenience init(circleOfRadius radius: CGFloat)
+```
+
+```objc
++ (instancetype) shapeNodeWithCircleOfRadius:(CGFloat) radius;
 ```
 
 #### Return Value

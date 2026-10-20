@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBCapsLockKey](1643518-anonymous/kusbcapslockkey.md)
-- [kUSBNumLockKey](1643518-anonymous/kusbnumlockkey.md)
-- [kUSBScrollLockKey](1643518-anonymous/kusbscrolllockkey.md)
+- [kUSBCapsLockKey](./api-1643518-anonymous/kusbcapslockkey.md)
+- [kUSBNumLockKey](./api-1643518-anonymous/kusbnumlockkey.md)
+- [kUSBScrollLockKey](./api-1643518-anonymous/kusbscrolllockkey.md)
 
 
 ---

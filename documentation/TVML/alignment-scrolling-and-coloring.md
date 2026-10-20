@@ -7,32 +7,33 @@ Align elements within a shelf, set how your app reacts to scrolling, and set the
 ## Topics
 
 ### Element Alignment
-- [centered](centered.md)
+- [centered](./centered.md)
   Centers media items in a shelf.
-- [minLength](minlength.md)
+- [minLength](./minlength.md)
   Reserves space for an element.
-- [rowCount](rowcount.md)
+- [rowCount](./rowcount.md)
   Specifies the number of rows in a shelf.
 ### Scrolling
-- [indexTitles](indextitles.md)
+- [indexTitles](./indextitles.md)
   Specifies index bar titles for a section element.
-- [showsScrollIndicator](showsscrollindicator.md)
+- [showsScrollIndicator](./showsscrollindicator.md)
   Shows a scroll indicator along the side of an element appropriate for the user’s specified language.
 ### Theme Settings
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [Image Attributes](image-attributes.md)
+### Attributes
+- [Image Attributes](./image-attributes.md)
   Retrieve images from a server and specify how they fit into an element.
-- [Text Attributes](text-attributes.md)
+- [Text Attributes](./text-attributes.md)
   Modify how text is displayed, entered, and laid out.
-- [Focus Attributes](focus-attributes.md)
+- [Focus Attributes](./focus-attributes.md)
   Define how an element acts when it comes into focus.
-- [Binding and DOM Manipulation](binding-and-dom-manipulation.md)
+- [Binding and DOM Manipulation](./binding-and-dom-manipulation.md)
   Implement binding and impove DOM manipulation options.
-- [Inline Playback](inline-playback.md)
+- [Inline Playback](./inline-playback.md)
   Set when and how inline playback is initiated.
 
 

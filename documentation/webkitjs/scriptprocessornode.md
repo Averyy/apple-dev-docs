@@ -1,7 +1,8 @@
 # ScriptProcessorNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface ScriptProcessorNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [bufferSize](scriptprocessornode/1634300-buffersize.md)
-- [onaudioprocess](scriptprocessornode/1628880-onaudioprocess.md)
+- [bufferSize](./scriptprocessornode/api-1634300-buffersize.md)
+- [onaudioprocess](./scriptprocessornode/api-1628880-onaudioprocess.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

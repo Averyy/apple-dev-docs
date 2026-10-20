@@ -1,7 +1,8 @@
 # aim
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Aim point for spatial gamepads and styluses.
 

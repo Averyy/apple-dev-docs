@@ -1,17 +1,18 @@
 # PHASESoundEvent.PrepareHandlerReason
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates the results of sound-event preparation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,39 +20,44 @@ Indicates the results of sound-event preparation.
 enum PrepareHandlerReason
 ```
 
+```c
+enum PHASESoundEventPrepareHandlerReason : NSInteger;
+```
+
 #### Overview
 
-The sound event [`prepare(completion:)`](phasesoundevent/prepare(completion:).md) function passes an instance of this class to its argument completion closure to communicate the results of the call.
+The sound event [`prepare(completion:)`](./prepare%28completion%29.md) function passes an instance of this class to its argument completion closure to communicate the results of the call.
 
 ## Topics
 
 ### Reasons
-- [PHASESoundEvent.PrepareHandlerReason.prepared](phasesoundevent/preparehandlerreason/prepared.md)
+- [PHASESoundEvent.PrepareHandlerReason.prepared](./preparehandlerreason/prepared.md)
   Indicates the completion of sound-event preparation.
-- [PHASESoundEvent.PrepareHandlerReason.terminated](phasesoundevent/preparehandlerreason/terminated.md)
+- [PHASESoundEvent.PrepareHandlerReason.terminated](./preparehandlerreason/terminated.md)
   Indicates sound-event preparation stops abruptly.
-- [PHASESoundEvent.PrepareHandlerReason.failure](phasesoundevent/preparehandlerreason/failure.md)
+- [PHASESoundEvent.PrepareHandlerReason.failure](./preparehandlerreason/failure.md)
   Indicates an error occurs during sound-event preparation.
 ### Initializers
-- [init?(rawValue: Int)](phasesoundevent/preparehandlerreason/init(rawvalue:).md)
+- [init?(rawValue: Int)](./preparehandlerreason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](phasesoundevent/prepare(completion:).md)
+### Preparing Playback
+- [func prepare(completion: ((PHASESoundEvent.PrepareHandlerReason) -> Void)?)](./prepare%28completion%29.md)
   Enables a sound event to play and runs the argument code when the sound event plays back.
-- [var prepareState: PHASESoundEvent.PrepareState](phasesoundevent/preparestate-swift.property.md)
+- [var prepareState: PHASESoundEvent.PrepareState](./preparestate-swift.property.md)
   The status of sound-event preparation.
-- [PHASESoundEvent.PrepareState](phasesoundevent/preparestate-swift.enum.md)
+- [PHASESoundEvent.PrepareState](./preparestate-swift.enum.md)
   Indicates the state of sound-event preparation.
 
 

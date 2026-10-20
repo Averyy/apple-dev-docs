@@ -1,9 +1,10 @@
 # permissions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The corresponding value represents the affected permissions in [`WKWebExtensionContext`](wkwebextensioncontext.md) notifications.
+The corresponding value represents the affected permissions in [`WKWebExtensionContext`](../../wkwebextensioncontext.md) notifications.
 
 **Availability**:
 - iOS 18.4+
@@ -19,10 +20,15 @@ nonisolated
 static let permissions: WKWebExtensionContext.NotificationUserInfoKey
 ```
 
+```c
+extern WKWebExtensionContextNotificationUserInfoKey const WKWebExtensionContextNotificationUserInfoKeyPermissions;
+```
+
 ## See Also
 
-- [static let matchPatterns: WKWebExtensionContext.NotificationUserInfoKey](wkwebextensioncontext/notificationuserinfokey/matchpatterns.md)
-  The corresponding value represents the affected permission match patterns in [`WKWebExtensionContext`](wkwebextensioncontext.md) notifications.
+### Type properties
+- [static let matchPatterns: WKWebExtensionContext.NotificationUserInfoKey](./matchpatterns.md)
+  The corresponding value represents the affected permission match patterns in [`WKWebExtensionContext`](../../wkwebextensioncontext.md) notifications.
 
 
 ---

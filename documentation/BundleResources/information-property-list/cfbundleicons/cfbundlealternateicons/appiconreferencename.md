@@ -1,7 +1,8 @@
 # AppIconReferenceName
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 5.0+
@@ -10,15 +11,16 @@
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `AppIconReferenceName`
+- **Type**: dictionary
 
 ## Topics
 
 ### Property List Keys
-- [CFBundleIconFiles](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename/cfbundleiconfiles.md)
-- [UIPrerenderedIcon](information-property-list/cfbundleicons/cfbundlealternateicons/appiconreferencename/uiprerenderedicon.md)
+- [CFBundleIconFiles](./appiconreferencename/cfbundleiconfiles.md)
+- [UIPrerenderedIcon](./appiconreferencename/uiprerenderedicon.md)
 
 
 ---

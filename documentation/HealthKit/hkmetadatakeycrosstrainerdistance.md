@@ -1,7 +1,8 @@
 # HKMetadataKeyCrossTrainerDistance
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The workout distance displayed by a connected GymKit cross-trainer machine.
 
@@ -19,15 +20,20 @@ The workout distance displayed by a connected GymKit cross-trainer machine.
 let HKMetadataKeyCrossTrainerDistance: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyCrossTrainerDistance;
+```
+
 #### Discussion
 
-Set this key on a workout sample representing exercise on a GymKit cross-trainer machine (such as an elliptical cross-trainer). Set its value to an [`HKQuantity`](hkquantity.md) object with a length unit.
+Set this key on a workout sample representing exercise on a GymKit cross-trainer machine (such as an elliptical cross-trainer). Set its value to an [`HKQuantity`](./hkquantity.md) object with a length unit.
 
 ## See Also
 
-- [let HKMetadataKeyFitnessMachineDuration: String](hkmetadatakeyfitnessmachineduration.md)
+### GymKit Fitness Equipment
+- [let HKMetadataKeyFitnessMachineDuration: String](./hkmetadatakeyfitnessmachineduration.md)
   The workout duration displayed by a connected GymKit fitness machine.
-- [let HKMetadataKeyIndoorBikeDistance: String](hkmetadatakeyindoorbikedistance.md)
+- [let HKMetadataKeyIndoorBikeDistance: String](./hkmetadatakeyindoorbikedistance.md)
   The workout distance displayed by a connected GymKit exercise bike.
 
 

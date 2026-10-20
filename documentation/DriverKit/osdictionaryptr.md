@@ -1,28 +1,30 @@
 # OSDictionaryPtr
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef OSDictionary * OSDictionaryPtr;
 ```
 
 ## See Also
 
-- [OSDictionaryGetValue](osdictionarygetvalue.md)
-- [OSDictionaryGetStringValue](osdictionarygetstringvalue.md)
-- [OSDictionaryGetUInt64Value](osdictionarygetuint64value.md)
-- [OSDictionarySetValue](osdictionarysetvalue.md)
-- [OSDictionarySetStringValue](osdictionarysetstringvalue.md)
-- [OSDictionarySetUInt64Value](osdictionarysetuint64value.md)
+### Getting and Setting Values
+- [OSDictionaryGetValue](./osdictionarygetvalue.md)
+- [OSDictionaryGetStringValue](./osdictionarygetstringvalue.md)
+- [OSDictionaryGetUInt64Value](./osdictionarygetuint64value.md)
+- [OSDictionarySetValue](./osdictionarysetvalue.md)
+- [OSDictionarySetStringValue](./osdictionarysetstringvalue.md)
+- [OSDictionarySetUInt64Value](./osdictionarysetuint64value.md)
 
 
 ---

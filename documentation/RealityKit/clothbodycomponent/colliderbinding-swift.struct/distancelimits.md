@@ -1,7 +1,8 @@
 # distanceLimits
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Distance limits (in meters) for how much each particle is allowed to deviate from its perfectly-bound position.
 
@@ -22,7 +23,8 @@ Each value must be non-negative. A value of 0 makes the particle fully bound to 
 
 ## See Also
 
-- [var teleportThresholdSpeed: Float](clothbodycomponent/colliderbinding-swift.struct/teleportthresholdspeed.md)
+### Tuning collision response
+- [var teleportThresholdSpeed: Float](./teleportthresholdspeed.md)
   The instantaneous collider speed (in m/s) over which the source collider will be considered to have teleported.
 
 

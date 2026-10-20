@@ -1,7 +1,8 @@
 # SCCaptureDynamicRange.hdrCanonicalDisplay
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the system captures the screen in high dynamic range with attributes of the canonical display.
 
@@ -15,6 +16,10 @@ Specifies that the system captures the screen in high dynamic range with attribu
 
 ```swift
 case hdrCanonicalDisplay
+```
+
+```c
+SCCaptureDynamicRangeHDRCanonicalDisplay
 ```
 
 #### Discussion

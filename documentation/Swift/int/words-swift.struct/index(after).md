@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position immediately after the given index.
 

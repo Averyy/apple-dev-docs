@@ -1,13 +1,16 @@
 # type
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- macOS 10.11+
-- tvOS 9.0+
+- iOS 9.0+ - Deprecated in 12.0
+- iPadOS 9.0+ - Deprecated in 12.0
+- macOS 10.11+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -15,13 +18,18 @@
 var type: GLenum { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GLenum type;
+```
+
 ## See Also
 
-- [var elementBuffer: GLKMeshBuffer](glksubmesh/elementbuffer.md)
-- [var elementCount: GLsizei](glksubmesh/elementcount.md)
-- [var mesh: GLKMesh?](glksubmesh/mesh.md)
-- [var mode: GLenum](glksubmesh/mode.md)
-- [var name: String](glksubmesh/name.md)
+### Instance Properties
+- [var elementBuffer: GLKMeshBuffer](./elementbuffer.md)
+- [var elementCount: GLsizei](./elementcount.md)
+- [var mesh: GLKMesh?](./mesh.md)
+- [var mode: GLenum](./mode.md)
+- [var name: String](./name.md)
 
 
 ---

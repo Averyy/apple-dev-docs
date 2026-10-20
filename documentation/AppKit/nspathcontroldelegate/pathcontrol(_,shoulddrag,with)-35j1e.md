@@ -1,7 +1,8 @@
 # pathControl(_:shouldDrag:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implement this method to enable dragging from the control.
 
@@ -15,9 +16,13 @@ Implement this method to enable dragging from the control.
 optional func pathControl(_ pathControl: NSPathControl, shouldDrag pathComponentCell: NSPathComponentCell, with pasteboard: NSPasteboard) -> Bool
 ```
 
+```objc
+- (BOOL) pathControl:(NSPathControl *) pathControl shouldDragPathComponentCell:(NSPathComponentCell *) pathComponentCell withPasteboard:(NSPasteboard *) pasteboard;
+```
+
 #### Discussion
 
-This method is called when a drag is about to begin. You can refuse to allow the drag to happen by returning [`false`](https://developer.apple.com/documentation/swift/false) and allow it by returning [`true`](https://developer.apple.com/documentation/swift/true). By default, the pasteboard automatically has the following types on it: `NSStringPboardType`, `NSURLPboardType` (if there is a URL value for the cell being dragged), and `NSFilenamesPboardType` (if the URL value returns [`true`](https://developer.apple.com/documentation/swift/true) from -[`isFileURL`](https://developer.apple.com/documentation/foundation/nsurl/isfileurl)). You can customize the types placed on the pasteboard at this time, if desired. Implementation of this method is optional.
+This method is called when a drag is about to begin. You can refuse to allow the drag to happen by returning [`false`](../../Swift/false.md) and allow it by returning [`true`](../../Swift/true.md). By default, the pasteboard automatically has the following types on it: `NSStringPboardType`, `NSURLPboardType` (if there is a URL value for the cell being dragged), and `NSFilenamesPboardType` (if the URL value returns [`true`](../../Swift/true.md) from -[`isFileURL`](../../Foundation/nsurl/isfileurl.md)). You can customize the types placed on the pasteboard at this time, if desired. Implementation of this method is optional.
 
 ## Parameters
 
@@ -27,9 +32,10 @@ This method is called when a drag is about to begin. You can refuse to allow the
 
 ## See Also
 
-- [func pathControl(NSPathControl, validateDrop: any NSDraggingInfo) -> NSDragOperation](nspathcontroldelegate/pathcontrol(_:validatedrop:).md)
+### Dragging Support
+- [func pathControl(NSPathControl, validateDrop: any NSDraggingInfo) -> NSDragOperation](./pathcontrol%28_,validatedrop%29.md)
   Implement this method to enable dragging onto the control.
-- [func pathControl(NSPathControl, acceptDrop: any NSDraggingInfo) -> Bool](nspathcontroldelegate/pathcontrol(_:acceptdrop:).md)
+- [func pathControl(NSPathControl, acceptDrop: any NSDraggingInfo) -> Bool](./pathcontrol%28_,acceptdrop%29.md)
   Implement this method to accept previously validated contents dropped onto the control.
 
 

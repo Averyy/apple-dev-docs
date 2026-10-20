@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of how and when to use the tool.
 
@@ -21,9 +22,10 @@ var description: String
 
 ## See Also
 
-- [var name: String](transcript/tooldefinition/name.md)
+### Inspecting a tool definition
+- [var name: String](./name.md)
   The tool’s name.
-- [var parameters: GenerationSchema](transcript/tooldefinition/parameters.md)
+- [var parameters: GenerationSchema](./parameters.md)
   A schema that specifies the parameters of the tool.
 
 

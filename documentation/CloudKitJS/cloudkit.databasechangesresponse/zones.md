@@ -1,7 +1,8 @@
 # zones
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The zones in the database where the changes occurred.
 
@@ -10,19 +11,20 @@ The zones in the database where the changes occurred.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.RecordZoneChangesOptions[] zones;
 ```
 
 #### Discussion
 
-To fetch record changes in these zones, pass this property to the [`fetchRecordZoneChanges`](cloudkit.database/fetchrecordzonechanges.md) method in the [`CloudKit.Database`](cloudkit.database.md) class.
+To fetch record changes in these zones, pass this property to the [`fetchRecordZoneChanges`](../cloudkit.database/fetchrecordzonechanges.md) method in the [`CloudKit.Database`](../cloudkit.database.md) class.
 
 ## See Also
 
-- [moreComing](cloudkit.databasechangesresponse/morecoming.md)
+### Response Properties
+- [moreComing](./morecoming.md)
   A Boolean value that indicates there are more database changes to fetch.
-- [syncToken](cloudkit.databasechangesresponse/synctoken.md)
+- [syncToken](./synctoken.md)
   A point in the database’s change history.
 
 

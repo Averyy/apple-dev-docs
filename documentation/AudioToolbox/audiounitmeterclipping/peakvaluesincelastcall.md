@@ -1,22 +1,27 @@
 # peakValueSinceLastCall
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value seen on the channel since the last time the property was retrieved.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var peakValueSinceLastCall: Float32
+```
+
+```c
+Float32 peakValueSinceLastCall;
 ```
 
 

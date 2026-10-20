@@ -1,21 +1,22 @@
 # Generating a signature from an audio buffer
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: Article
 
 Create a signature from an audio file or the microphone for a reference track in a custom catalog, or for matching tracks in a catalog.
 
 #### Overview
 
-Generate a signature by adding an audio buffer in a supported format to an [`SHSignatureGenerator`](shsignaturegenerator.md) object. You can add the audio buffer in one call or incrementally.
+Generate a signature by adding an audio buffer in a supported format to an [`SHSignatureGenerator`](./shsignaturegenerator.md) object. You can add the audio buffer in one call or incrementally.
 
 The most common sources for audio are files in the app or the microphone.
 
-##### Create a Signature From an Audio File
+##### Create a signature from an audio file
 
 Creating a signature from an audio file takes four steps:
 
 1. Create an object for reading the audio file.
-2. Convert the audio to a supported format. For a list of supported formats, see [`append(_:at:)`](shsignaturegenerator/append(_:at:).md).
+2. Convert the audio to a supported format. For a list of supported formats, see [`append(_:at:)`](./shsignaturegenerator/append%28_,at%29.md).
 3. Append the converted audio to a signature generator.
 4. Generate the signature.
 
@@ -142,11 +143,11 @@ Then the convert function reads chunks of audio from the input file and calls th
 
 ```
 
-##### Create a Signature From the Microphone
+##### Create a signature from the microphone
 
 Using the microphone as the source for generating a signature is very similar to using it for matching.
 
-Configure a mixer as described in [`Matching audio using the built-in microphone`](matching-audio-using-the-built-in-microphone.md). Change the `addAudio` function to append the audio to the signature generator:
+Configure a mixer as described in [Matching audio using the built-in microphone](./matching-audio-using-the-built-in-microphone.md). Change the `addAudio` function to append the audio to the signature generator:
 
 ```swift
 func addAudio(buffer: AVAudioPCMBuffer, audioTime: AVAudioTime) {
@@ -159,13 +160,14 @@ func addAudio(buffer: AVAudioPCMBuffer, audioTime: AVAudioTime) {
 }
 ```
 
-Start and stop the audio engine as needed using the `startListening` and `stopListening` functions shown in [`Matching audio using the built-in microphone`](matching-audio-using-the-built-in-microphone.md).
+Start and stop the audio engine as needed using the `startListening` and `stopListening` functions shown in [Matching audio using the built-in microphone](./matching-audio-using-the-built-in-microphone.md).
 
 ## See Also
 
-- [func append(AVAudioPCMBuffer, at: AVAudioTime?) throws](shsignaturegenerator/append(_:at:).md)
+### Generating a signature from audio
+- [func append(AVAudioPCMBuffer, at: AVAudioTime?) throws](./shsignaturegenerator/append%28_,at%29.md)
   Adds audio to the generator.
-- [func signature() -> SHSignature](shsignaturegenerator/signature.md)
+- [func signature() -> SHSignature](./shsignaturegenerator/signature%28%29.md)
   Converts the audio buffer into a signature.
 
 

@@ -1,7 +1,8 @@
 # BlendWeight.value(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The numerical representation of the impact an animation has on an entity.
 
@@ -11,7 +12,7 @@ The numerical representation of the impact an animation has on an entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ case value(Float)
 
 ## See Also
 
-- [case bindTarget(BindTarget, defaultWeight: Float)](blendweight/bindtarget(_:defaultweight:).md)
+### Choosing the blend weight
+- [case bindTarget(BindTarget, defaultWeight: Float)](./bindtarget%28_,defaultweight%29.md)
   The amount of impact  an animation has on the bind target of an entity.
-- [case parameter(String, defaultWeight: Float)](blendweight/parameter(_:defaultweight:).md)
+- [case parameter(String, defaultWeight: Float)](./parameter%28_,defaultweight%29.md)
   The amount of impact an animation has on a named parameter of an entity.
 
 

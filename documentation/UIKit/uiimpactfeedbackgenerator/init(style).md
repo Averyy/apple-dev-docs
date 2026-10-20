@@ -1,19 +1,26 @@
 # init(style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an impact feedback generator with the specified style.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`init(style:view:)`](./init%28style,view%29.md) instead.
 
 ## Declaration
 
 ```swift
 init(style: UIImpactFeedbackGenerator.FeedbackStyle)
+```
+
+```objc
+- (instancetype) initWithStyle:(UIImpactFeedbackStyle) style;
 ```
 
 #### Return Value
@@ -26,13 +33,14 @@ For more information on using feedback generators, see `Using feedback generator
 
 ## Parameters
 
-- `style`: A value representing the mass of the colliding objects. For a list of valid feedback styles, see the [`UIImpactFeedbackGenerator.FeedbackStyle`](uiimpactfeedbackgenerator/feedbackstyle.md) enumeration.
+- `style`: A value representing the mass of the colliding objects. For a list of valid feedback styles, see the [`UIImpactFeedbackGenerator.FeedbackStyle`](./feedbackstyle.md) enumeration.
 
 ## See Also
 
-- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](uiimpactfeedbackgenerator/init(style:view:).md)
+### Initializing the feedback generator
+- [convenience init(style: UIImpactFeedbackGenerator.FeedbackStyle, view: UIView)](./init%28style,view%29.md)
   Creates an impact feedback generator with the specified style and view.
-- [UIImpactFeedbackGenerator.FeedbackStyle](uiimpactfeedbackgenerator/feedbackstyle.md)
+- [UIImpactFeedbackGenerator.FeedbackStyle](./feedbackstyle.md)
   The mass of the objects in the collision simulated by an impact feedback generator object.
 
 

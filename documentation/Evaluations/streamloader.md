@@ -1,7 +1,8 @@
 # StreamLoader
 
 **Framework**: Evaluations  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A loader backed by a custom async sequence.
 
@@ -32,24 +33,25 @@ let loader = StreamLoader(stream: AsyncThrowingStream { continuation in
 ## Topics
 
 ### Initializers
-- [init(stream: some Sendable & AsyncSequence<Sample, any Error>)](streamloader/init(stream:).md)
+- [init(stream: some Sendable & AsyncSequence<Sample, any Error>)](./streamloader/init%28stream%29.md)
   Creates a loader backed by the given async sequence.
 ### Instance Properties
-- [var stream: any AsyncSequence<Sample, any Error>](streamloader/stream.md)
+- [var stream: any AsyncSequence<Sample, any Error>](./streamloader/stream.md)
   The async sequence that forwards each sample from the underlying async sequence during an evaluation run.
 
 ## Relationships
 
 ### Conforms To
-- [Loader](loader.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Loader](./loader.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ArrayLoader](arrayloader.md)
+### Loaders
+- [struct ArrayLoader](./arrayloader.md)
   A loader backed by an in-memory array.
-- [struct JSONLoader](jsonloader.md)
+- [struct JSONLoader](./jsonloader.md)
   A loader backed by a JSON or JSONL file.
 
 

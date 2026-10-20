@@ -1,13 +1,14 @@
 # emitter::burst
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Emit a single burst of particles when the system spawns.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void emitter::burst(uint burstSize)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/emitter__burst.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__burst.svg)
 
 ## Parameters
 

@@ -1,10 +1,13 @@
 # PullDownButton
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+ - Deprecated
+
+> **Deprecated**: Use [`Menu`](./menu.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,10 @@ typealias PullDownButton
 
 ## See Also
 
-- [struct MenuButton](menubutton.md)
+### Deprecated
+- [struct MenuButton](./menubutton.md)
   A button that displays a menu containing a list of choices when pressed.
-- [struct ContextMenu](contextmenu.md)
+- [struct ContextMenu](./contextmenu.md)
   A container for views that you present as menu items in a context menu.
 
 

@@ -1,7 +1,8 @@
 # NSWindow.TabbingMode.preferred
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A window that explicitly prefers to tab together with other windows with the same tabbing identifier.
 
@@ -14,11 +15,16 @@ A window that explicitly prefers to tab together with other windows with the sam
 case preferred
 ```
 
+```c
+NSWindowTabbingModePreferred
+```
+
 ## See Also
 
-- [NSWindow.TabbingMode.automatic](nswindow/tabbingmode-swift.enum/automatic.md)
+### Modes
+- [NSWindow.TabbingMode.automatic](./automatic.md)
   A window that automatically tabs together based on the user’s tabbing preference.
-- [NSWindow.TabbingMode.disallowed](nswindow/tabbingmode-swift.enum/disallowed.md)
+- [NSWindow.TabbingMode.disallowed](./disallowed.md)
   A window that explicitly does not prefer to tab together with other windows.
 
 

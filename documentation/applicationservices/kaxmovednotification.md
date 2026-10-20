@@ -1,7 +1,8 @@
 # kAXMovedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The position of this accessibility object was changed.
 
@@ -12,6 +13,10 @@ The position of this accessibility object was changed.
 
 ```swift
 var kAXMovedNotification: String { get }
+```
+
+```c
+#define kAXMovedNotification
 ```
 
 

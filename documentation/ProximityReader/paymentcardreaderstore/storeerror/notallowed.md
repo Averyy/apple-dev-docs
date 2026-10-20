@@ -1,7 +1,8 @@
 # PaymentCardReaderStore.StoreError.notAllowed
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates there’s an entitlement issue, an invalid application bundle, or a configuration issue.
 

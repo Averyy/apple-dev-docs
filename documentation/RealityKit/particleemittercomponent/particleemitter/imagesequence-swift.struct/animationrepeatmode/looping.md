@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.looping
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image sequence loops repeatedly.
 

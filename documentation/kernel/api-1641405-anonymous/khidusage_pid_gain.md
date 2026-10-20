@@ -1,14 +1,15 @@
 # kHIDUsage_PID_Gain
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PID_Gain = 0x52
 ```
 

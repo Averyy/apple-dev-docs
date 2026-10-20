@@ -17,7 +17,7 @@ This document talks primarily about the latter.
 
 ## Developing mlx-swift-lm
 
-Please see <doc:developing> for more information about how to
+Please see [Developing mlx-swift-lm](developing.md) for more information about how to
 do development _in_ mlx-swift-lm.
 
 ## Porting Models from MLX in Python
@@ -27,7 +27,7 @@ Checkpoint namespaces can differ from runtime module paths. Implement
 renames and exclusions, or ``CheckpointComponent`` to select a component from a
 larger checkpoint. These operations preserve source metadata and per-layer
 precision. Keep architecture-specific numeric conversions in the model's hook.
-See <doc:model-compatibility> for the loading contract and validation rules.
+See [Model Compatibility](model-compatibility.md) for the loading contract and validation rules.
 
 Models with cross-layer KV sharing must pass the owner's attention presentation
 and its pre-update RoPE offset to consuming layers. `KVCache.state` is for

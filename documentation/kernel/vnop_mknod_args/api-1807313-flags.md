@@ -7,11 +7,12 @@ CREATE: create a whiteout. LOOKUP: check whether a directory supports whiteouts,
 
 ## See Also
 
-- [dvp](vnop_mknod_args/1807307-dvp.md)
+### Fields
+- [dvp](./api-1807307-dvp.md)
   Directory in which to create.
-- [cnp](vnop_mknod_args/1807310-cnp.md)
+- [cnp](./api-1807310-cnp.md)
   Name information for whiteout.
-- [ctx](vnop_mknod_args/1807317-ctx.md)
+- [ctx](./api-1807317-ctx.md)
   Context against which to authenticate whiteout creation.
 
 

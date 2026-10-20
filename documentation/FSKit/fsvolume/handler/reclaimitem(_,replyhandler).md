@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,32 +11,41 @@
 ## Declaration
 
 ```swift
+func reclaimItem(_ item: FSItem, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func reclaimItem(_ item: FSItem) async throws
+```
+
+```objc
+- (void) reclaimItem:(FSItem *) item replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 ## See Also
 
-- [func createItem(named: FSFileName, type: FSItem.ItemType, in: FSItem, attributes: FSItem.SetAttributesRequest, context: FSContext, replyHandler: (FSCreateItemResult?, (any Error)?) -> Void)](fsvolume/handler/createitem(named:type:in:attributes:context:replyhandler:).md)
+### Working with items
+- [func createItem(named: FSFileName, type: FSItem.ItemType, in: FSItem, attributes: FSItem.SetAttributesRequest, context: FSContext, replyHandler: (FSCreateItemResult?, (any Error)?) -> Void)](./createitem%28named,type,in,attributes,context,replyhandler%29.md)
   Creates a new file or directory item.
-- [class FSFileName](fsfilename.md)
+- [class FSFileName](../../fsfilename.md)
   The name of a file, expressed as a data buffer.
-- [FSItem.ItemType](fsitem/itemtype.md)
+- [FSItem.ItemType](../../fsitem/itemtype.md)
   An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+- [FSItem.SetAttributesRequest](../../fsitem/setattributesrequest.md)
   A request to set attributes on an item.
-- [class FSCreateItemResult](fscreateitemresult.md)
+- [class FSCreateItemResult](../../fscreateitemresult.md)
   The result of a create-item call.
-- [func lookupItem(named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSLookupItemResult?, (any Error)?) -> Void)](fsvolume/handler/lookupitem(named:in:context:replyhandler:).md)
+- [func lookupItem(named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSLookupItemResult?, (any Error)?) -> Void)](./lookupitem%28named,in,context,replyhandler%29.md)
   Looks up an item within a directory.
-- [class FSLookupItemResult](fslookupitemresult.md)
+- [class FSLookupItemResult](../../fslookupitemresult.md)
   The result of an item lookup call.
-- [func removeItem(FSItem, named: FSFileName, from: FSItem, context: FSContext, replyHandler: (FSRemoveItemResult?, (any Error)?) -> Void)](fsvolume/handler/removeitem(_:named:from:context:replyhandler:).md)
+- [func removeItem(FSItem, named: FSFileName, from: FSItem, context: FSContext, replyHandler: (FSRemoveItemResult?, (any Error)?) -> Void)](./removeitem%28_,named,from,context,replyhandler%29.md)
   Removes an existing item from a given directory.
-- [class FSRemoveItemResult](fsremoveitemresult.md)
+- [class FSRemoveItemResult](../../fsremoveitemresult.md)
   The result of a remove-item call.
-- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, context: FSContext, replyHandler: (FSRenameItemResult?, (any Error)?) -> Void)](fsvolume/handler/renameitem(_:indirectory:named:to:indirectory:overitem:context:replyhandler:).md)
+- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, context: FSContext, replyHandler: (FSRenameItemResult?, (any Error)?) -> Void)](./renameitem%28_,indirectory,named,to,indirectory,overitem,context,replyhandler%29.md)
   Renames an item from one path in the file system to another.
-- [class FSRenameItemResult](fsrenameitemresult.md)
+- [class FSRenameItemResult](../../fsrenameitemresult.md)
   The result of a rename-item call.
 
 

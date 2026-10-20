@@ -1,7 +1,8 @@
 # model()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the model layer object associated with the receiver, if any.
 
@@ -19,6 +20,10 @@ Returns the model layer object associated with the receiver, if any.
 func model() -> Self
 ```
 
+```objc
+- (instancetype) modelLayer;
+```
+
 #### Return Value
 
 A layer instance representing the underlying model layer.
@@ -29,7 +34,8 @@ Calling this method on a layer in the presentation tree returns the correspondin
 
 ## See Also
 
-- [func presentation() -> Self?](calayer/presentation.md)
+### Accessing related layer objects
+- [func presentation() -> Self?](./presentation%28%29.md)
   Returns a copy of the presentation layer object that represents the state of the layer as it currently appears onscreen.
 
 

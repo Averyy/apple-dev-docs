@@ -1,7 +1,8 @@
 # specializedName
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns an optional name to the specialized function.
 
@@ -17,6 +18,10 @@ Assigns an optional name to the specialized function.
 
 ```swift
 var specializedName: String? { get set }
+```
+
+```objc
+@property (atomic, copy, nullable) NSString * specializedName;
 ```
 
 

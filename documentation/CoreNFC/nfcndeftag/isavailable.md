@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether the NDEF tag is available in the current reader session.
@@ -17,15 +18,20 @@ A Boolean value that determines whether the NDEF tag is available in the current
 var isAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAvailable) BOOL available;
+```
+
 #### Discussion
 
 A tag removed from the RF field becomes unavailable, and a tag in a disconnected state is also unavailable.
 
 ## See Also
 
-- [func queryNDEFStatus(completionHandler: (NFCNDEFStatus, Int, (any Error)?) -> Void)](nfcndeftag/queryndefstatus(completionhandler:).md)
+### Getting the Tag Status
+- [func queryNDEFStatus(completionHandler: (NFCNDEFStatus, Int, (any Error)?) -> Void)](./queryndefstatus%28completionhandler%29.md)
   Asks the reader session for the NDEF support status of the tag.
-- [enum NFCNDEFStatus](nfcndefstatus.md)
+- [enum NFCNDEFStatus](../nfcndefstatus.md)
   Constants that indicate status for an NDEF tag.
 
 

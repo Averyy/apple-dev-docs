@@ -1,7 +1,8 @@
 # tabBarController(_:didEndCustomizing:changed:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the tab bar customization sheet was dismissed.
 
@@ -17,6 +18,10 @@ Tells the delegate that the tab bar customization sheet was dismissed.
 optional func tabBarController(_ tabBarController: UITabBarController, didEndCustomizing viewControllers: [UIViewController], changed: Bool)
 ```
 
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController didEndCustomizingViewControllers:(NSArray<__kindof UIViewController *> *) viewControllers changed:(BOOL) changed;
+```
+
 #### Discussion
 
 You can use this method to respond to changes to the order of tabs in the tab bar.
@@ -25,13 +30,14 @@ You can use this method to respond to changes to the order of tabs in the tab ba
 
 - `tabBarController`: The tab bar controller that is being customized.
 - `viewControllers`: The view controllers of the tab bar controller. The arrangement of the controllers in the array represents the new display order within the tab bar.
-- `changed`: A Boolean value indicating whether items changed on the tab bar. [`true`](https://developer.apple.com/documentation/swift/true) if items changed or [`false`](https://developer.apple.com/documentation/swift/false) if they did not.
+- `changed`: A Boolean value indicating whether items changed on the tab bar. [`true`](../../Swift/true.md) if items changed or [`false`](../../Swift/false.md) if they did not.
 
 ## See Also
 
-- [func tabBarController(UITabBarController, willBeginCustomizing: [UIViewController])](uitabbarcontrollerdelegate/tabbarcontroller(_:willbegincustomizing:).md)
+### Managing tab bar customizations
+- [func tabBarController(UITabBarController, willBeginCustomizing: [UIViewController])](./tabbarcontroller%28_,willbegincustomizing%29.md)
   Tells the delegate that the tab bar customization sheet is about to be displayed.
-- [func tabBarController(UITabBarController, willEndCustomizing: [UIViewController], changed: Bool)](uitabbarcontrollerdelegate/tabbarcontroller(_:willendcustomizing:changed:).md)
+- [func tabBarController(UITabBarController, willEndCustomizing: [UIViewController], changed: Bool)](./tabbarcontroller%28_,willendcustomizing,changed%29.md)
   Tells the delegate that the tab bar customization sheet is about to be dismissed.
 
 

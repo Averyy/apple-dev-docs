@@ -1,7 +1,8 @@
 # writeAttributeLampRatedHours(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeLampRatedHours(withValue value: NSNumber?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeLampRatedHours(withValue value: NSNumber?) async throws
+```
+
+```objc
+- (void) writeAttributeLampRatedHoursWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # graphBuilderTensor(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tensor for the specified BNNS Graph builder.
 
@@ -19,6 +20,8 @@ Returns a tensor for the specified BNNS Graph builder.
 ```swift
 func graphBuilderTensor(_ builder: BNNSGraph.Builder) -> BNNSGraph.Builder.Tensor<Element>
 ```
+
+Available when `Element` conforms to `BNNSScalar`.
 
 #### Discussion
 

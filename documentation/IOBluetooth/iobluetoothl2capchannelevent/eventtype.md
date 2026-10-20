@@ -1,15 +1,20 @@
 # eventType
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var eventType: IOBluetoothL2CAPChannelEventType
+```
+
+```c
+IOBluetoothL2CAPChannelEventType eventType;
 ```
 
 

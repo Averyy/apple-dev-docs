@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,13 +15,14 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [workToDoLock](ioworkloop/worktodolock.md)
-- [workToDo](ioworkloop/worktodo.md)
-- [workThread](ioworkloop/workthread.md)
-- [loopRestart](ioworkloop/looprestart.md)
-- [gateLock](ioworkloop/gatelock.md)
-- [eventChain](ioworkloop/eventchain.md)
-- [controlG](ioworkloop/controlg.md)
+### Instance Variables
+- [workToDoLock](./worktodolock.md)
+- [workToDo](./worktodo.md)
+- [workThread](./workthread.md)
+- [loopRestart](./looprestart.md)
+- [gateLock](./gatelock.md)
+- [eventChain](./eventchain.md)
+- [controlG](./controlg.md)
 
 
 ---

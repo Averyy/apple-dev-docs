@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance that the workout spans.
 

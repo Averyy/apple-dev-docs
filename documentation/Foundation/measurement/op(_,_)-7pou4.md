@@ -1,7 +1,8 @@
 # <(_:_:)
 
 **Framework**: Foundation  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compare two measurements of the same `Unit`.
 
@@ -19,6 +20,8 @@ Compare two measurements of the same `Unit`.
 ```swift
 static func < <LeftHandSideType, RightHandSideType>(lhs: Measurement<LeftHandSideType>, rhs: Measurement<RightHandSideType>) -> Bool where LeftHandSideType : Unit, RightHandSideType : Unit
 ```
+
+Available when `UnitType` inherits `Unit`.
 
 #### Return Value
 

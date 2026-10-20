@@ -1,7 +1,8 @@
 # PersonNameComponentsFormatter.Style.long
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,16 +19,21 @@
 case long
 ```
 
+```c
+NSPersonNameComponentsFormatterStyleLong
+```
+
 #### Discussion
 
-The fully qualified form complete with all known components. See “[`Long`](personnamecomponentsformatter#Long.md)” for details about its specific behavior.
+The fully qualified form complete with all known components. See “[Long](../../personnamecomponentsformatter.md#Long)” for details about its specific behavior.
 
 ## See Also
 
-- [PersonNameComponentsFormatter.Style.default](personnamecomponentsformatter/style-swift.enum/default.md)
-- [PersonNameComponentsFormatter.Style.short](personnamecomponentsformatter/style-swift.enum/short.md)
-- [PersonNameComponentsFormatter.Style.medium](personnamecomponentsformatter/style-swift.enum/medium.md)
-- [PersonNameComponentsFormatter.Style.abbreviated](personnamecomponentsformatter/style-swift.enum/abbreviated.md)
+### Constants
+- [PersonNameComponentsFormatter.Style.default](./default.md)
+- [PersonNameComponentsFormatter.Style.short](./short.md)
+- [PersonNameComponentsFormatter.Style.medium](./medium.md)
+- [PersonNameComponentsFormatter.Style.abbreviated](./abbreviated.md)
 
 
 ---

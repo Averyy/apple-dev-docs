@@ -1,14 +1,15 @@
 # kHIDUsage_AD_DisplayStatus
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_AD_DisplayStatus = 0x2D
 ```
 

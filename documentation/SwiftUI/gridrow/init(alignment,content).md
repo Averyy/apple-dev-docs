@@ -1,7 +1,8 @@
 # init(alignment:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a horizontal row of child views in a grid.
 
@@ -23,7 +24,7 @@ init(alignment: VerticalAlignment? = nil, @ContentBuilder content: () -> Content
 
 #### Discussion
 
-Use this initializer to create a [`GridRow`](gridrow.md) inside of a [`Grid`](grid.md). Provide a content closure that defines the cells of the row, and optionally customize the vertical alignment of content within each cell. The following example customizes the vertical alignment of the cells in the first and third rows:
+Use this initializer to create a [`GridRow`](../gridrow.md) inside of a [`Grid`](../grid.md). Provide a content closure that defines the cells of the row, and optionally customize the vertical alignment of content within each cell. The following example customizes the vertical alignment of the cells in the first and third rows:
 
 ```swift
 Grid(alignment: .trailing) {
@@ -45,17 +46,17 @@ Grid(alignment: .trailing) {
 }
 ```
 
-The example above specifies [`trailing`](alignment/trailing.md) alignment for the grid, which is composed of [`center`](verticalalignment/center.md) vertical alignment and [`trailing`](horizontalalignment/trailing.md) horizontal alignment. The middle row relies on the center vertical alignment, but the other two rows specify custom vertical alignments:
+The example above specifies [`trailing`](../alignment/trailing.md) alignment for the grid, which is composed of [`center`](../verticalalignment/center.md) vertical alignment and [`trailing`](../horizontalalignment/trailing.md) horizontal alignment. The middle row relies on the center vertical alignment, but the other two rows specify custom vertical alignments:
 
-![A grid with three rows and three columns. Scanning from top to bottom,](/images/com.apple.SwiftUI/GridRow-init-1-iOS@2x.png)
+![A grid with three rows and three columns. Scanning from top to bottom,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/GridRow-init-1-iOS@2x.png)
 
-> ❗ **Important**: A grid row behaves like a [`Group`](group.md) if you create it outside of a grid.
+> ❗ **Important**: A grid row behaves like a [`Group`](../group.md) if you create it outside of a grid.
 
-To override column alignment, use [`gridColumnAlignment(_:)`](view/gridcolumnalignment(_:).md). To override alignment for a single cell, use [`gridCellAnchor(_:)`](view/gridcellanchor(_:).md).
+To override column alignment, use [`gridColumnAlignment(_:)`](../view/gridcolumnalignment%28_%29.md). To override alignment for a single cell, use [`gridCellAnchor(_:)`](../view/gridcellanchor%28_%29.md).
 
 ## Parameters
 
-- `alignment`: An optional [`VerticalAlignment`](verticalalignment.md) for the row. If you don’t specify a value, the row uses the vertical alignment component of the [`Alignment`](alignment.md) parameter that you specify in the grid’s [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](grid/init(alignment:horizontalspacing:verticalspacing:content:).md) initializer, which is [`center`](verticalalignment/center.md) by default.
+- `alignment`: An optional [`VerticalAlignment`](../verticalalignment.md) for the row. If you don’t specify a value, the row uses the vertical alignment component of the [`Alignment`](../alignment.md) parameter that you specify in the grid’s [`init(alignment:horizontalSpacing:verticalSpacing:content:)`](../grid/init%28alignment,horizontalspacing,verticalspacing,content%29.md) initializer, which is [`center`](../verticalalignment/center.md) by default.
 - `content`: The builder closure that contains the child views. Each view in the closure implicitly maps to a cell in the grid.
 
 

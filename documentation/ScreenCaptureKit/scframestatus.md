@@ -1,7 +1,8 @@
 # SCFrameStatus
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Status values for a frame from a stream.
 
@@ -19,9 +20,13 @@ Status values for a frame from a stream.
 enum SCFrameStatus
 ```
 
+```c
+enum SCFrameStatus : NSInteger;
+```
+
 #### Overview
 
-You create a frame status by initializing it with the value you retrieve for the [`status`](scstreamframeinfo/status.md) from the sample buffer’s attachments dictionary.
+You create a frame status by initializing it with the value you retrieve for the [`status`](./scstreamframeinfo/status.md) from the sample buffer’s attachments dictionary.
 
 ```swift
 if let statusRawValue = attachments[SCStreamFrameInfo.status] as? Int {
@@ -34,40 +39,41 @@ if let statusRawValue = attachments[SCStreamFrameInfo.status] as? Int {
 ## Topics
 
 ### Status values
-- [SCFrameStatus.complete](scframestatus/complete.md)
+- [SCFrameStatus.complete](./scframestatus/complete.md)
   A status that indicates the system successfully generated a new frame.
-- [SCFrameStatus.idle](scframestatus/idle.md)
+- [SCFrameStatus.idle](./scframestatus/idle.md)
   A status that indicates the system didn’t generate a new frame because the display didn’t change.
-- [SCFrameStatus.blank](scframestatus/blank.md)
+- [SCFrameStatus.blank](./scframestatus/blank.md)
   A status that indicates the system didn’t generate a new frame because the display is blank.
-- [SCFrameStatus.started](scframestatus/started.md)
+- [SCFrameStatus.started](./scframestatus/started.md)
   A status that indicates the frame is the first one sent after the stream starts.
-- [SCFrameStatus.suspended](scframestatus/suspended.md)
+- [SCFrameStatus.suspended](./scframestatus/suspended.md)
   A status that indicates the system didn’t generate a new frame because you suspended updates.
-- [SCFrameStatus.stopped](scframestatus/stopped.md)
+- [SCFrameStatus.stopped](./scframestatus/stopped.md)
   A status that indicates the frame is in a stopped state.
 ### Initializers
-- [init?(rawValue: Int)](scframestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scframestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol SCStreamOutput](scstreamoutput.md)
+### Output processing
+- [protocol SCStreamOutput](./scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.
-- [enum SCStreamOutputType](scstreamoutputtype.md)
+- [enum SCStreamOutputType](./scstreamoutputtype.md)
   Constants that represent output types for a stream frame.
-- [struct SCStreamFrameInfo](scstreamframeinfo.md)
+- [struct SCStreamFrameInfo](./scstreamframeinfo.md)
   An instance that defines metadata keys for a stream frame.
-- [class SCClipBufferingOutput](scclipbufferingoutput.md)
+- [class SCClipBufferingOutput](./scclipbufferingoutput.md)
 
 
 ---

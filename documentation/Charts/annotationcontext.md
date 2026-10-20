@@ -1,7 +1,8 @@
 # AnnotationContext
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about an item that you add an annotation to.
 
@@ -23,14 +24,15 @@ struct AnnotationContext
 ## Topics
 
 ### Instance Properties
-- [let targetSize: CGSize](annotationcontext/targetsize.md)
+- [let targetSize: CGSize](./annotationcontext/targetsize.md)
   Gets the bounding box of the items being annotated.
 
 ## See Also
 
-- [struct AnnotationPosition](annotationposition.md)
+### Annotations
+- [struct AnnotationPosition](./annotationposition.md)
   The position of an annotation.
-- [struct AnnotationOverflowResolution](annotationoverflowresolution.md)
+- [struct AnnotationOverflowResolution](./annotationoverflowresolution.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # mean()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the arithmetic mean of the elements in a column of doubles.
 
@@ -19,17 +20,26 @@ Returns the arithmetic mean of the elements in a column of doubles.
 func mean() -> Double?
 ```
 
+Available when `Element` is `Double`.
+
+**Other overloads**:
+
+```swift
+func mean() -> Double?
+```
+
 #### Return Value
 
-A [`Double`](https://developer.apple.com/documentation/swift/double); otherwise `nil` if the column is invalid.
+A [`Double`](../../Swift/double.md); otherwise `nil` if the column is invalid.
 
 ## See Also
 
-- [func sum()](mldatacolumn/sum.md)
+### Getting sum, mean, and standard deviation values
+- [func sum()](./sum%28%29.md)
   Returns the sum of the elements in a column of doubles.
-- [func std()](mldatacolumn/std.md)
+- [func std()](./std%28%29.md)
   Returns the standard deviation of the elements in a column of doubles.
-- [func stdev()](mldatacolumn/stdev.md)
+- [func stdev()](./stdev%28%29.md)
   Returns the standard deviation of the elements in a column of doubles.
 
 

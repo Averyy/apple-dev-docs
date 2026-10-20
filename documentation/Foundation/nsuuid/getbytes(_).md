@@ -1,7 +1,8 @@
 # getBytes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the UUID as bytes.
 
@@ -20,13 +21,18 @@ Returns the UUID as bytes.
 func getBytes(_ uuid: UnsafeMutablePointer<UInt8>)
 ```
 
+```objc
+- (void) getUUIDBytes:(uuid_t) uuid;
+```
+
 ## Parameters
 
 - `uuid`: The value of uuid represented as raw bytes.
 
 ## See Also
 
-- [var uuidString: String](nsuuid/uuidstring.md)
+### Get UUID Values
+- [var uuidString: String](./uuidstring.md)
   The UUID as a string.
 
 

@@ -1,14 +1,15 @@
 # TASK_THROTTLE_APPLICATION
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 TASK_THROTTLE_APPLICATION = 5
 ```
 

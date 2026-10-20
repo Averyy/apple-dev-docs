@@ -1,13 +1,14 @@
 # UIPrintingNotAvailableError
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,10 @@ let UIPrintingNotAvailableError: Int
 
 ## See Also
 
-- [let UIPrintJobFailedError: Int](uiprintjobfailederror.md)
-- [let UIPrintNoContentError: Int](uiprintnocontenterror.md)
-- [let UIPrintUnknownImageFormatError: Int](uiprintunknownimageformaterror.md)
+### Global variables
+- [let UIPrintJobFailedError: Int](./uiprintjobfailederror.md)
+- [let UIPrintNoContentError: Int](./uiprintnocontenterror.md)
+- [let UIPrintUnknownImageFormatError: Int](./uiprintunknownimageformaterror.md)
 
 
 ---

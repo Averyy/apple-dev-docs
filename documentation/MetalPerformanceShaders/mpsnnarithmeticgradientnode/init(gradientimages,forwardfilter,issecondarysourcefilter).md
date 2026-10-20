@@ -1,7 +1,8 @@
 # init(gradientImages:forwardFilter:isSecondarySourceFilter:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(gradientImages: [MPSNNImageNode], forwardFilter filter: MPSNNFilterNode, isSecondarySourceFilter: Bool)
+```
+
+```objc
+- (instancetype) initWithGradientImages:(NSArray<MPSNNImageNode *> *) gradientImages forwardFilter:(MPSNNFilterNode *) filter isSecondarySourceFilter:(BOOL) isSecondarySourceFilter;
 ```
 
 

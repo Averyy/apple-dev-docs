@@ -1,7 +1,8 @@
 # readAttributeMinCompPressure(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMinCompPressure(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMinCompPressure() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMinCompPressureWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

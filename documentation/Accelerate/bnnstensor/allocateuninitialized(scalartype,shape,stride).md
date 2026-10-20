@@ -1,7 +1,8 @@
 # allocateUninitialized(scalarType:shape:stride:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a `BNNSTensor` of the specified data type with allocated memory.
 

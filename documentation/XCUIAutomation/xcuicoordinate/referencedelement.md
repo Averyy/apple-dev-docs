@@ -1,17 +1,18 @@
 # referencedElement
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element that the coordinate is based on, either directly or through the coordinate from which it was derived.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -20,9 +21,14 @@ The element that the coordinate is based on, either directly or through the coor
 var referencedElement: XCUIElement { get }
 ```
 
+```objc
+@property (readonly) XCUIElement * referencedElement;
+```
+
 ## See Also
 
-- [var screenPoint: CGPoint](xcuicoordinate/screenpoint.md)
+### Getting coordinate properties
+- [var screenPoint: CGPoint](./screenpoint.md)
   The dynamically computed value of the coordinate’s location on screen.
 
 

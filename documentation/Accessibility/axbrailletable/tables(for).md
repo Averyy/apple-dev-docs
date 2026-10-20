@@ -1,7 +1,8 @@
 # tables(for:)
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 All tables that provide translations for the given locale’s language.
 
@@ -18,6 +19,10 @@ All tables that provide translations for the given locale’s language.
 
 ```swift
 class func tables(for locale: Locale) -> Set<AXBrailleTable>
+```
+
+```objc
++ (NSSet<AXBrailleTable *> *) tablesForLocale:(NSLocale *) locale;
 ```
 
 

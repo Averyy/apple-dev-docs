@@ -1,7 +1,8 @@
 # constrainedAxis
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An axis around which the rotation is constrained.
 
@@ -20,11 +21,12 @@ If the axis is `nil`, the rotation is unconstrained.
 
 ## See Also
 
-- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle)](rotategesture3d/init(constrainedtoaxis:minimumangledelta:).md)
+### Creating the gesture
+- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle)](./init%28constrainedtoaxis,minimumangledelta%29.md)
   Creates a rotation gesture with a minimum delta for the gesture to start and axis to constrain measurement of rotation.
-- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture3d/init(constrainedtoaxis:minimumangledelta:inputkinds:).md)
+- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](./init%28constrainedtoaxis,minimumangledelta,inputkinds%29.md)
   Creates a rotation gesture with a minimum delta for the gesture to start, an axis to constrain measurement of rotation, and the input kinds the gesture should recognize.
-- [var minimumAngleDelta: Angle](rotategesture3d/minimumangledelta.md)
+- [var minimumAngleDelta: Angle](./minimumangledelta.md)
   The minimum angle delta before the gesture becomes active.
 
 

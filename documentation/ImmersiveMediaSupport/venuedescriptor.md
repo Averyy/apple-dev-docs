@@ -1,7 +1,8 @@
 # VenueDescriptor
 
 **Framework**: Immersive Media Support  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
 
@@ -25,48 +26,49 @@ This type contains information that includes camera definitions such as the lens
 ## Topics
 
 ### Creating a venue descriptor
-- [init(device: (any MTLDevice)?)](venuedescriptor/init(device:).md)
+- [init(device: (any MTLDevice)?)](./venuedescriptor/init%28device%29.md)
   Creates an empty venue descriptor instance.
-- [convenience init(aimeURL: URL, device: (any MTLDevice)?) async throws](venuedescriptor/init(aimeurl:device:).md)
+- [convenience init(aimeURL: URL, device: (any MTLDevice)?) async throws](./venuedescriptor/init%28aimeurl,device%29.md)
   Creates a venue descriptor instance from an AIME file.
 ### Configuring cameras
-- [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
+- [var cameras: [ImmersiveCamera]](./venuedescriptor/cameras.md)
   An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
-- [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
+- [func addCamera(ImmersiveCamera) throws](./venuedescriptor/addcamera%28_%29.md)
   Adds a new immersive camera definition to the venue descriptor.
-- [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
+- [func removeCamera(id: String) throws](./venuedescriptor/removecamera%28id%29.md)
   Removes an immersive camera definition from the venue descriptor.
-- [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](venuedescriptor/cameraviewmodel(for:).md)
+- [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](./venuedescriptor/cameraviewmodel%28for%29.md)
   Returns the camera view model for the given immersive camera identifier.
 ### Saving a venue descriptor data
-- [func save(to: URL) throws](venuedescriptor/save(to:).md)
+- [func save(to: URL) throws](./venuedescriptor/save%28to%29.md)
   Generates an AIME file at the specified location.
-- [var aimeData: Data?](venuedescriptor/aimedata.md)
+- [var aimeData: Data?](./venuedescriptor/aimedata.md)
   Property holding the complete static metadata needed for the immersive media playback.
 ### Initializers
-- [init(aimeData: Data, device: (any MTLDevice)?) async throws](venuedescriptor/init(aimedata:device:).md)
+- [init(aimeData: Data, device: (any MTLDevice)?) async throws](./venuedescriptor/init%28aimedata,device%29.md)
   Creates a venue descriptor instance from memory.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ImmersiveCamera](immersivecamera.md)
+### Camera metadata
+- [struct ImmersiveCamera](./immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
-- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+- [struct ImmersiveCameraLensDefinition](./immersivecameralensdefinition.md)
   This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
-- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+- [struct ImmersiveCameraCalibration](./immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
-- [enum ImmersiveCameraMask](immersivecameramask.md)
+- [enum ImmersiveCameraMask](./immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
-- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+- [struct ImmersiveDynamicMask](./immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
-- [class ImmersiveImageMask](immersiveimagemask.md)
+- [class ImmersiveImageMask](./immersiveimagemask.md)
   An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 

@@ -1,7 +1,8 @@
 # sampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of instances of a counter set’s data that a counter sample buffer can store.
 
@@ -19,21 +20,26 @@ The number of instances of a counter set’s data that a counter sample buffer c
 var sampleCount: Int { get set }
 ```
 
+```objc
+@property (readwrite) NSUInteger sampleCount;
+```
+
 ## Mentions
 
-- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
 
 #### Discussion
 
-The counter sample buffer instances you create with the [`MTLCounterSampleBufferDescriptor`](mtlcountersamplebufferdescriptor.md) can store [`sampleCount`](mtlcountersamplebufferdescriptor/samplecount.md) instances of a counter set.
+The counter sample buffer instances you create with the [`MTLCounterSampleBufferDescriptor`](../mtlcountersamplebufferdescriptor.md) can store [`sampleCount`](./samplecount.md) instances of a counter set.
 
 ## See Also
 
-- [var counterSet: (any MTLCounterSet)?](mtlcountersamplebufferdescriptor/counterset.md)
+### Configuring a descriptor for a counter sample buffer
+- [var counterSet: (any MTLCounterSet)?](./counterset.md)
   A GPU device’s counter set instance that you want to sample.
-- [var label: String](mtlcountersamplebufferdescriptor/label.md)
+- [var label: String](./label.md)
   The name for the counter sample buffer you create with the descriptor.
-- [var storageMode: MTLStorageMode](mtlcountersamplebufferdescriptor/storagemode.md)
+- [var storageMode: MTLStorageMode](./storagemode.md)
   The memory storage mode for the counter sample buffers you create with the descriptor.
 
 

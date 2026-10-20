@@ -1,7 +1,8 @@
 # CTFontDescriptorCopyLocalizedAttribute(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a localized value for the requested attribute, if available.
 
@@ -20,13 +21,17 @@ Returns a localized value for the requested attribute, if available.
 func CTFontDescriptorCopyLocalizedAttribute(_ descriptor: CTFontDescriptor, _ attribute: CFString, _ language: UnsafeMutablePointer<Unmanaged<CFString>?>?) -> CFTypeRef?
 ```
 
+```c
+extern CFTypeRefCTFontDescriptorCopyLocalizedAttribute(CTFontDescriptorRef descriptor, CFStringRef attribute, CFStringRef*language);
+```
+
 #### Return Value
 
 A retained reference to a localized attribute based on the global language list.
 
 #### Discussion
 
-This function passes back the matched language in `language`. If localization is not possible for the attribute, the behavior matches the value returned from [`CTFontDescriptorCopyAttribute(_:_:)`](ctfontdescriptorcopyattribute(_:_:).md). Generally, localization of attributes is applicable to name attributes of only a normalized font descriptor.
+This function passes back the matched language in `language`. If localization is not possible for the attribute, the behavior matches the value returned from [`CTFontDescriptorCopyAttribute(_:_:)`](./ctfontdescriptorcopyattribute%28_,_%29.md). Generally, localization of attributes is applicable to name attributes of only a normalized font descriptor.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ This function passes back the matched language in `language`. If localization is
 
 ## See Also
 
-- [func CTFontDescriptorCopyAttributes(CTFontDescriptor) -> CFDictionary](ctfontdescriptorcopyattributes(_:).md)
+### Getting Attributes
+- [func CTFontDescriptorCopyAttributes(CTFontDescriptor) -> CFDictionary](./ctfontdescriptorcopyattributes%28_%29.md)
   Returns the attributes dictionary of the font descriptor.
-- [func CTFontDescriptorCopyAttribute(CTFontDescriptor, CFString) -> CFTypeRef?](ctfontdescriptorcopyattribute(_:_:).md)
+- [func CTFontDescriptorCopyAttribute(CTFontDescriptor, CFString) -> CFTypeRef?](./ctfontdescriptorcopyattribute%28_,_%29.md)
   Returns the value associated with an arbitrary attribute.
 
 

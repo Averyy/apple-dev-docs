@@ -1,7 +1,8 @@
 # automaticallyAdjustsVideoHDREnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device automatically manages the state of high dynamic range (HDR) video streaming.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the device automatically manages the stat
 var automaticallyAdjustsVideoHDREnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyAdjustsVideoHDREnabled;
+```
+
 #### Discussion
 
-By default, this value is `true`, and a capture device automatically enables [`isVideoHDREnabled`](avcapturedevice/isvideohdrenabled.md) if it’s a good fit for the active format.
+By default, this value is `true`, and a capture device automatically enables [`isVideoHDREnabled`](./isvideohdrenabled.md) if it’s a good fit for the active format.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isVideoHDREnabled: Bool](avcapturedevice/isvideohdrenabled.md)
+### Configuring HDR settings
+- [var isVideoHDREnabled: Bool](./isvideohdrenabled.md)
   A Boolean value that indicates whether the device streams high dynamic range video buffers, also known as extended dynamic range (EDR).
 
 

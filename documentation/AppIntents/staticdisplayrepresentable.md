@@ -1,7 +1,8 @@
 # StaticDisplayRepresentable
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for providing a static visual representation of a specific type.
 
@@ -11,7 +12,7 @@ An interface for providing a static visual representation of a specific type.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,35 +24,36 @@ protocol StaticDisplayRepresentable : CaseDisplayRepresentable, TypeDisplayRepre
 ## Relationships
 
 ### Inherits From
-- [CaseDisplayRepresentable](casedisplayrepresentable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [CustomLocalizedStringResourceConvertible](../foundation/customlocalizedstringresourceconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [CaseDisplayRepresentable](./casedisplayrepresentable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/customlocalizedstringresourceconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [TypeDisplayRepresentable](./typedisplayrepresentable.md)
 ### Inherited By
-- [AppEnum](appenum.md)
-- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
-- [AssistantEnum](assistantenum.md)
-- [AssistantSchemaEnum](assistantschemaenum.md)
-- [URLRepresentableEnum](urlrepresentableenum.md)
+- [AppEnum](./appenum.md)
+- [AppUnionValueCasesProviding](./appunionvaluecasesproviding.md)
+- [AssistantEnum](./assistantenum.md)
+- [AssistantSchemaEnum](./assistantschemaenum.md)
+- [URLRepresentableEnum](./urlrepresentableenum.md)
 ### Conforming Types
-- [StringSearchScope](stringsearchscope.md)
-- [VideoCategory](videocategory.md)
+- [StringSearchScope](./stringsearchscope.md)
+- [VideoCategory](./videocategory.md)
 
 ## See Also
 
-- [struct DisplayRepresentation](displayrepresentation.md)
+### Data representations
+- [struct DisplayRepresentation](./displayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol DisplayRepresentable](displayrepresentable.md)
+- [protocol DisplayRepresentable](./displayrepresentable.md)
   An interface for providing a dynamic visual representation of a specific type and instances of that type.
-- [protocol InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [protocol InstanceDisplayRepresentable](./instancedisplayrepresentable.md)
   An interface for providing the visual representation for an instance of a specific type.
-- [protocol TypeDisplayRepresentable](typedisplayrepresentable.md)
+- [protocol TypeDisplayRepresentable](./typedisplayrepresentable.md)
   An interface for providing the visual representation of a specific type.
-- [struct TypeDisplayRepresentation](typedisplayrepresentation.md)
+- [struct TypeDisplayRepresentation](./typedisplayrepresentation.md)
   A type that describes the user interface presentation of a custom type.
-- [protocol CaseDisplayRepresentable](casedisplayrepresentable.md)
+- [protocol CaseDisplayRepresentable](./casedisplayrepresentable.md)
   An interface for providing the visual representation for an iterable collection of values.
 
 

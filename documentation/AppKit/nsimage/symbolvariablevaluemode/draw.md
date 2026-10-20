@@ -1,7 +1,8 @@
 # NSImage.SymbolVariableValueMode.draw
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The “draw” variable value mode. Changes the drawn length of each variable layer to either based on how its range relates to the current value.
 
@@ -12,6 +13,10 @@ The “draw” variable value mode. Changes the drawn length of each variable la
 
 ```swift
 case draw
+```
+
+```c
+NSImageSymbolVariableValueModeDraw
 ```
 
 

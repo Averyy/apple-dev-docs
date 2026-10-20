@@ -1,7 +1,8 @@
 # setBottom(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBottom(_ bottom: String!)
+```
+
+```objc
+- (void) setBottom:(NSString *) bottom;
 ```
 
 

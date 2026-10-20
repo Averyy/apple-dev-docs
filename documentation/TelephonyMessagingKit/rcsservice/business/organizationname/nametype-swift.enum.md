@@ -1,7 +1,8 @@
 # RCSService.Business.OrganizationName.NameType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing the type of name specified by the business.
 
@@ -17,24 +18,25 @@ enum NameType
 ## Topics
 
 ### Determining name type
-- [RCSService.Business.OrganizationName.NameType.officialName](rcsservice/business/organizationname/nametype-swift.enum/officialname.md)
+- [RCSService.Business.OrganizationName.NameType.officialName](./nametype-swift.enum/officialname.md)
   Official name.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let displayName: String](rcsservice/business/organizationname/displayname.md)
+### Accessing organization name properties
+- [let displayName: String](./displayname.md)
   Display name for business.
-- [let nameType: RCSService.Business.OrganizationName.NameType](rcsservice/business/organizationname/nametype-swift.property.md)
+- [let nameType: RCSService.Business.OrganizationName.NameType](./nametype-swift.property.md)
   The type of the name.
 
 

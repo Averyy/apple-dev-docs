@@ -1,7 +1,8 @@
 # ASAuthorizationControllerPresentationContextProviding
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface the controller uses to ask a delegate for a presentation context.
 
@@ -20,26 +21,31 @@ An interface the controller uses to ask a delegate for a presentation context.
 protocol ASAuthorizationControllerPresentationContextProviding : NSObjectProtocol
 ```
 
+```objc
+@protocol ASAuthorizationControllerPresentationContextProviding <NSObject>
+```
+
 ## Mentions
 
-- [Authenticating people by using passkeys in browser apps](authenticating-people-by-using-passkeys-in-browser-apps.md)
+- [Authenticating people by using passkeys in browser apps](./authenticating-people-by-using-passkeys-in-browser-apps.md)
 
 ## Topics
 
 ### Specifying the Anchor
-- [func presentationAnchor(for: ASAuthorizationController) -> ASPresentationAnchor](asauthorizationcontrollerpresentationcontextproviding/presentationanchor(for:).md)
+- [func presentationAnchor(for: ASAuthorizationController) -> ASPresentationAnchor](./asauthorizationcontrollerpresentationcontextproviding/presentationanchor%28for%29.md)
   Tells the delegate from which window it should present content to the user.
-- [typealias ASPresentationAnchor](aspresentationanchor.md)
+- [typealias ASPresentationAnchor](./aspresentationanchor.md)
   A platform-specific type that indicates the kind of user interface element to use as a presentation anchor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var presentationContextProvider: (any ASAuthorizationControllerPresentationContextProviding)?](asauthorizationcontroller/presentationcontextprovider.md)
+### Presenting requests
+- [var presentationContextProvider: (any ASAuthorizationControllerPresentationContextProviding)?](./asauthorizationcontroller/presentationcontextprovider.md)
   A delegate that provides a display context in which the system can present an authorization interface to the user.
 
 

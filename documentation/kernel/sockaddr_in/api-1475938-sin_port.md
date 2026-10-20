@@ -1,14 +1,15 @@
 # sin_port
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 in_port_t sin_port;
 ```
 

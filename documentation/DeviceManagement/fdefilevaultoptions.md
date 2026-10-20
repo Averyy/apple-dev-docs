@@ -1,7 +1,8 @@
 # FDEFileVaultOptions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures FileVault options.
 
@@ -10,7 +11,7 @@ The payload that configures FileVault options.
 
 ## Declaration
 
-```swift
+```
 object FDEFileVaultOptions
 ```
 
@@ -18,7 +19,7 @@ object FDEFileVaultOptions
 
 Specify `com.apple.MCX` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.MCX` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,15 +69,24 @@ Specify `com.apple.MCX` as the payload type.
 
 ## Properties
 
-- `DestroyFVKeyOnStandby` (boolean): If `true`, the system won’t store th FileVault key across restarts. Available: macOS 10.10+
+- `DestroyFVKeyOnStandby` (boolean): If `true`, the system won’t store th FileVault key across restarts.
+
+  Available: macOS 10.10+
+
+  **Default**: `false`
 - `dontAllowFDEDisable` (boolean): If `true`, the system won’t disable FileVault.
+
+  **Default**: `false`
 - `dontAllowFDEEnable` (boolean): If `true`, the system won’t enable FileVault.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object FDEFileVault](fdefilevault.md)
+### FileVault
+- [object FDEFileVault](./fdefilevault.md)
   The payload that configures FileVault.
-- [object FDERecoveryKeyEscrow](fderecoverykeyescrow.md)
+- [object FDERecoveryKeyEscrow](./fderecoverykeyescrow.md)
   The payload that configures FileVault recovery key escrow.
 
 

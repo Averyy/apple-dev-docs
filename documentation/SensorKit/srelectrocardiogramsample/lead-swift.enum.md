@@ -1,7 +1,8 @@
 # SRElectrocardiogramSample.Lead
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The location of the lead that a person uses to record the ECG data.
 
@@ -16,41 +17,46 @@ The location of the lead that a person uses to record the ECG data.
 enum Lead
 ```
 
+```c
+enum SRElectrocardiogramLead : NSInteger;
+```
+
 ## Topics
 
 ### Locations
-- [SRElectrocardiogramSample.Lead.leftArmMinusRightArm](srelectrocardiogramsample/lead-swift.enum/leftarmminusrightarm.md)
+- [SRElectrocardiogramSample.Lead.leftArmMinusRightArm](./lead-swift.enum/leftarmminusrightarm.md)
   The lead that records the sample is on the right arm.
-- [SRElectrocardiogramSample.Lead.rightArmMinusLeftArm](srelectrocardiogramsample/lead-swift.enum/rightarmminusleftarm.md)
+- [SRElectrocardiogramSample.Lead.rightArmMinusLeftArm](./lead-swift.enum/rightarmminusleftarm.md)
   The lead that records the sample is on the left arm.
 ### Initializers
-- [init?(rawValue: Int)](srelectrocardiogramsample/lead-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lead-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var date: Date](srelectrocardiogramsample/date.md)
+### Accessing ECG data
+- [var date: Date](./date.md)
   The start date of the ECG sensor data recording, not the start of the session.
-- [var frequency: Measurement<UnitFrequency>](srelectrocardiogramsample/frequency.md)
+- [var frequency: Measurement<UnitFrequency>](./frequency.md)
   The frequency in hertz that the ECG sensor records the data.
-- [var lead: SRElectrocardiogramSample.Lead](srelectrocardiogramsample/lead-swift.property.md)
+- [var lead: SRElectrocardiogramSample.Lead](./lead-swift.property.md)
   The lead used to record the ECG data.
-- [var session: SRElectrocardiogramSession](srelectrocardiogramsample/session.md)
+- [var session: SRElectrocardiogramSession](./session.md)
   The session where this sample occurs.
-- [class SRElectrocardiogramSession](srelectrocardiogramsession.md)
+- [class SRElectrocardiogramSession](../srelectrocardiogramsession.md)
   An object that represents ECG data that a device records during a period of time.
-- [var data: [SRElectrocardiogramData]](srelectrocardiogramsample/data.md)
+- [var data: [SRElectrocardiogramData]](./data.md)
   The data that the sensor records.
-- [class SRElectrocardiogramData](srelectrocardiogramdata.md)
+- [class SRElectrocardiogramData](../srelectrocardiogramdata.md)
   A representation of the ECG data that the sensor records.
 
 

@@ -1,7 +1,8 @@
 # kAXValueWrapsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the value displayed in the user interface element represented by this accessibility object wraps around.
 
@@ -12,6 +13,10 @@ Indicates whether the value displayed in the user interface element represented 
 
 ```swift
 var kAXValueWrapsAttribute: String { get }
+```
+
+```c
+#define kAXValueWrapsAttribute
 ```
 
 

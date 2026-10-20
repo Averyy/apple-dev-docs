@@ -1,7 +1,8 @@
 # CLLocationCoordinate2DMake(_:_:)
 
 **Framework**: Core Location  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Formats a latitude and longitude value into a coordinate data structure format.
 
@@ -20,6 +21,10 @@ Formats a latitude and longitude value into a coordinate data structure format.
 func CLLocationCoordinate2DMake(_ latitude: CLLocationDegrees, _ longitude: CLLocationDegrees) -> CLLocationCoordinate2D
 ```
 
+```c
+extern CLLocationCoordinate2D CLLocationCoordinate2DMake(CLLocationDegrees latitude, CLLocationDegrees longitude);
+```
+
 #### Return Value
 
 A coordinate structure encompassing the latitude and longitude values.
@@ -31,9 +36,10 @@ A coordinate structure encompassing the latitude and longitude values.
 
 ## See Also
 
-- [init()](cllocationcoordinate2d/init.md)
+### Creating a location coordinate
+- [init()](./cllocationcoordinate2d/init%28%29.md)
   Creates a location coordinate object.
-- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](cllocationcoordinate2d/init(latitude:longitude:).md)
+- [init(latitude: CLLocationDegrees, longitude: CLLocationDegrees)](./cllocationcoordinate2d/init%28latitude,longitude%29.md)
   Creates a location coordination object with the specified latitude and longitude values.
 
 

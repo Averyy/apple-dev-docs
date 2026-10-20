@@ -1,7 +1,8 @@
 # searchDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction in which to search.
 
@@ -18,11 +19,16 @@ The direction in which to search.
 var searchDirection: UIAccessibilityCustomRotor.Direction { get set }
 ```
 
+```objc
+@property (nonatomic) UIAccessibilityCustomRotorDirection searchDirection;
+```
+
 ## See Also
 
-- [var currentItem: UIAccessibilityCustomRotorItemResult](uiaccessibilitycustomrotorsearchpredicate/currentitem.md)
+### Configuring search parameters
+- [var currentItem: UIAccessibilityCustomRotorItemResult](./currentitem.md)
   The current element of the search.
-- [UIAccessibilityCustomRotor.Direction](uiaccessibilitycustomrotor/direction.md)
+- [UIAccessibilityCustomRotor.Direction](../uiaccessibilitycustomrotor/direction.md)
   Constants that indicate the search direction.
 
 

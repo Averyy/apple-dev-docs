@@ -1,6 +1,8 @@
 # Generating interactive geometry with RealityKit
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [GeneratingInteractiveGeometryWithRealityKit.zip](https://docs-assets.developer.apple.com/published/722f0701c26a/GeneratingInteractiveGeometryWithRealityKit.zip)
 
 Create an interactive mesh with low-level mesh and low-level texture.
 
@@ -13,11 +15,19 @@ Create an interactive mesh with low-level mesh and low-level texture.
 
 This sample app demonstrates how to create geometry that moves and changes shape in real time—to simulate the appearance of fabric, terrain, or water, for example, like in the following images:
 
-To create dynamic, interactive geometry, the app leverages low-level meshes and textures. Using the [`LowLevelMesh`](lowlevelmesh.md) and [`LowLevelTexture`](lowleveltexture.md) types, you can customize their data layouts and update their contents directly in real time with Metal compute shaders. You define the compute shaders and the types they operate on using [`Metal Shading Language`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) (MSL), which is a derivative of C++.
+![A screenshot of a light gray plane mesh floating in a living room scene.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-1.jpg)
 
-The app starts by generating a plane mesh with [`LowLevelMesh`](lowlevelmesh.md), and it reconfigures the vertices within that mesh by reading data from a low-level texture that stores its height and normal map. As the app runs, it updates both the mesh and texture on the GPU in every frame. The sample demonstrates three unique height map generation functions, including a sine wave that oscillates outward over time, as well as a terrain editor and a water simulation that each respond to a person’s input.
+![A screenshot of a brown plane mesh floating in a living room scene. The mesh's vertices have been offset to form shape of mountainous terrain.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-3.jpg)
 
-#### Define a Custom Vertex Structure
+![A screenshot of a green plane mesh floating in a living room scene. The mesh's vertices have been offset to form sine waves moving outward from its center.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-2.jpg)
+
+![A screenshot of a light blue plane mesh floating in a living room scene. The mesh's vertices have been offset to form ripples such that it looks like the surface of a body of water.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-4.jpg)
+
+To create dynamic, interactive geometry, the app leverages low-level meshes and textures. Using the [`LowLevelMesh`](./lowlevelmesh.md) and [`LowLevelTexture`](./lowleveltexture.md) types, you can customize their data layouts and update their contents directly in real time with Metal compute shaders. You define the compute shaders and the types they operate on using [Metal Shading Language](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf) (MSL), which is a derivative of C++.
+
+The app starts by generating a plane mesh with [`LowLevelMesh`](./lowlevelmesh.md), and it reconfigures the vertices within that mesh by reading data from a low-level texture that stores its height and normal map. As the app runs, it updates both the mesh and texture on the GPU in every frame. The sample demonstrates three unique height map generation functions, including a sine wave that oscillates outward over time, as well as a terrain editor and a water simulation that each respond to a person’s input.
+
+#### Define a custom vertex structure
 
 The sample defines the custom vertex data structure for its plane mesh in an MSL header file:
 
@@ -30,7 +40,7 @@ struct PlaneVertex {
 
 In this example, the vertex has a 3D position and a 3D normal vector, but you can define your app’s vertex type with different names and other data.
 
-#### Create a Low Level Mesh with a Descriptor
+#### Create a low-level mesh with a descriptor
 
 The sample creates the plane low-level mesh by defining its vertex attributes, vertex layouts, and the number of vertices and indices it has capacity for:
 
@@ -72,11 +82,11 @@ private func createMesh() throws -> LowLevelMesh {
 
 In this case, determining the exact vertex and index capacities of the mesh is straightforward given its dimensions. For more complex meshes, or meshes you add vertices to or remove vertices from at runtime, you can estimate the maximum vertex capacity and resize the mesh if its vertex count ever exceeds that number.
 
-See [`Creating a plane with low-level mesh`](creating-a-plane-with-low-level-mesh.md) for more information on how the sample creates this mesh, including how it fills the mesh’s vertex and index buffers with data, like in the following image:
+See [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md) for more information on how the sample creates this mesh, including how it fills the mesh’s vertex and index buffers with data, like in the following image:
 
-![A screenshot of a flat plane mesh floating in a volume in a living room scene. The plane appears light gray in color.](/images/com.apple.RealityKit/generating-interactive-geometry-5.jpg)
+![A screenshot of a flat plane mesh floating in a volume in a living room scene. The plane appears light gray in color.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/generating-interactive-geometry-5.jpg)
 
-#### Create a Compute Shader Dispatch System
+#### Create a compute shader dispatch system
 
 The sample defines a custom `ComputeUpdateContext` structure that contains the necessary context for dispatching compute shader functions in every frame:
 
@@ -91,7 +101,7 @@ struct ComputeUpdateContext {
 }
 ```
 
-The sample dispatches compute shader functions in every frame by passing this structure to each `ComputeSystem` in the app (see [`Passing Metal command objects around your application`](passing-metal-command-objects-around-your-application.md)).
+The sample dispatches compute shader functions in every frame by passing this structure to each `ComputeSystem` in the app (see [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md)).
 
 `HeightMapMesh` is an example of a `ComputeSystem`. It implements the `ComputeSystem`  protocol’s `update` method to dispatch compute shaders that generate a height map and modify the vertex positions and normals of a mesh in each frame:
 
@@ -114,9 +124,9 @@ class HeightMapMesh: ComputeSystem {
 }
 ```
 
-#### Create a Low Level Texture Height Map
+#### Create a low-level texture height map
 
-The sample creates a height map with [`LowLevelTexture`](lowleveltexture.md) by specifying its pixel format, dimensions, and usage:
+The sample creates a height map with [`LowLevelTexture`](./lowleveltexture.md) by specifying its pixel format, dimensions, and usage:
 
 ```swift
 struct HeightMap {
@@ -141,7 +151,7 @@ struct HeightMap {
 
 The low-level texture has the same dimensions as the plane low-level mesh, such that each pixel in the texture corresponds to a vertex in the mesh.
 
-#### Write Height Data to the Low Level Texture
+#### Write height data to the low-level texture
 
 The sample writes height data to the low-level texture in every frame on the GPU by dispatching Metal compute shaders. For example, the compute shader function `generateSineWaveHeightMap` writes height values to the texture in the shape of a sine wave moving outward from the center of the texture over time:
 
@@ -185,6 +195,8 @@ void generateSineWaveHeightMap(texture2d<float, access::read> heightMapIn [[text
 ```
 
 The following video shows the texture the `generateSineWaveHeightMap` compute function creates:
+
+[Video: A video of the height map texture the generate sine wave height map compute shader function creates. The texture oscillates from black to white in concentric circles growing outward from the center of the texture over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-6.mp4)
 
 The sample dispatches this compute shader function in `SineWaveHeightMapGenerator`, passing in both the height map low-level texture, the time, and the amplitude:
 
@@ -255,9 +267,9 @@ func makeComputePipeline(named name: String) -> MTLComputePipelineState? {
 }
 ```
 
-See [`Creating a dynamic height and normal map with low-level texture`](creating-a-dynamic-height-map-with-low-level-texture.md) for further details, along with a description of how the sample derives surface normal directions from the height map.
+See [Creating a dynamic height and normal map with low-level texture](./creating-a-dynamic-height-map-with-low-level-texture.md) for further details, along with a description of how the sample derives surface normal directions from the height map.
 
-#### Generate Additional Height Maps
+#### Generate additional height maps
 
 The sample abstracts the generation of height maps by defining a `HeightMapGenerator` protocol:
 
@@ -276,6 +288,10 @@ protocol HeightMapGenerator {
 You can adopt this protocol to create custom height map generators. These height map generators can generate custom height maps by dispatching compute shader functions, with the given `computeContext`, that write height data to the alpha channel of the given `heightMapTexture`.
 
 The following videos show the custom height map textures the `TerrainHeightMapGenerator` and `WaterSurfaceHeightMapGenerator` create:
+
+[Video: A video of the height map texture the terrain height map generator creates. A person's interactions add height to the texture in large brush strokes, leaving behind light gray smudges.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-7.mp4)
+
+[Video: A video of the height map texture the water surface height map generator creates. A person's interactions cause grayscale ripples to appear in the texture.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-8.mp4)
 
 The `HeightMap` structure calls the `generateHeightMap` method of its active height map generator, passing in the height map low-level texture and the compute update context necessary to dispatch compute shader functions with the texture:
 
@@ -302,7 +318,7 @@ struct HeightMap {
 }
 ```
 
-#### Update the Mesh Vertex Data on the Gpu
+#### Update the mesh vertex data on the GPU
 
 The sample defines a structure containing the information necessary to update the mesh’s vertex data on the GPU:
 
@@ -314,7 +330,7 @@ struct MeshParams {
 };
 ```
 
-These parameters are suitable for updating the vertices of the plane low-level mesh on the GPU, but you can define parameters that conform to your custom mesh and vertex format. Declare this structure in an MSL header file so that you can send it to the GPU (see [`Passing Structured Data to a Metal Compute Function`](passing-structured-data-to-a-metal-compute-function.md)).
+These parameters are suitable for updating the vertices of the plane low-level mesh on the GPU, but you can define parameters that conform to your custom mesh and vertex format. Declare this structure in an MSL header file so that you can send it to the GPU (see [Passing Structured Data to a Metal Compute Function](./passing-structured-data-to-a-metal-compute-function.md)).
 
 Next, the sample updates the position and normal of each vertex in the low-level mesh with a compute shader function that reads this information from the height map low-level texture:
 
@@ -354,7 +370,7 @@ void setVertexData(constant MeshParams &params [[buffer(0)]],
 }
 ```
 
-Here, the `maxVertexDepth` parameter defines the maximum z offset position for vertices, so that they remain within the bounds of the mesh (see [`Creating a plane with low-level mesh`](creating-a-plane-with-low-level-mesh.md)). You can take your own approach to ensuring your vertices remain within bounds.
+Here, the `maxVertexDepth` parameter defines the maximum z offset position for vertices, so that they remain within the bounds of the mesh (see [Creating a plane with low-level mesh](./creating-a-plane-with-low-level-mesh.md)). You can take your own approach to ensuring your vertices remain within bounds.
 
 The sample passes the mesh parameters, vertex buffer, and height map to the compute function before dispatching it:
 
@@ -376,9 +392,9 @@ private func updateVertices(computeContext: ComputeUpdateContext) {
 }
 ```
 
-#### Display the Mesh with an Entity
+#### Display the mesh with an entity
 
-The sample creates a custom `HeightMapMeshEntity` class with a [`ModelComponent`](modelcomponent.md) to display the `HeightMapMesh`:
+The sample creates a custom `HeightMapMeshEntity` class with a [`ModelComponent`](./modelcomponent.md) to display the `HeightMapMesh`:
 
 ```swift
 class HeightMapMeshEntity: Entity, HasModel {
@@ -427,11 +443,13 @@ class HeightMapMeshEntity: Entity, HasModel {
 
 The following video shows a `HeightMapMeshEntity` displaying the mesh its `HeightMapMesh` generates with the `SineWaveHeightMapGenerator`.
 
-#### Make the Mesh and Texture Interactive
+[Video: A video of a plane mesh whose vertices are offset vertically to form a sine wave moving outward from the center of the mesh in concentric circles over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-9.mp4)
+
+#### Make the mesh and texture interactive
 
 The sample allows the mesh to respond to a person’s interactions by passing interaction data to the GPU, which uses it to modify the height map, which in turn updates the vertices of the mesh.
 
-To start, the sample captures the person’s interaction position and state with a [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture), passing that information to `HeightMapMesh`:
+To start, the sample captures the person’s interaction position and state with a [`DragGesture`](../SwiftUI/draggesture.md), passing that information to `HeightMapMesh`:
 
 ```swift
 .gesture(
@@ -543,39 +561,44 @@ void disturbWaterSurface(constant WaterParams &params [[buffer(0)]],
 
 The following video shows the result of using the person’s interaction position to dynamically alter the height map:
 
+[Video: A video of a plane mesh whose whose vertices have been modified to take the shape of the surface of a body of water. A person's interactions disturb the surface and cause ripples to emanate outwards.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-10.mp4)
+
 The app uses a similar technique to allow the person to edit the terrain height map, like in the following video:
+
+[Video: A video of a plane mesh whose vertices have been modified to take the shape of mountainous terrain. A person's interactions cause new mountains to grow out of the terrain surface.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/generating-interactive-geometry-11.mp4)
 
 ## See Also
 
-- [Hello World](../visionos/world.md)
+### Scene content
+- [Hello World](../visionOS/world.md)
   Use windows, volumes, and immersive spaces to teach people about the Earth.
-- [Enabling video reflections in an immersive environment](../visionos/enabling-video-reflections-in-an-immersive-environment.md)
+- [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
-- [Creating a spatial drawing app with RealityKit](creating-a-spatial-drawing-app-with-realitykit.md)
+- [Creating a spatial drawing app with RealityKit](./creating-a-spatial-drawing-app-with-realitykit.md)
   Use low-level mesh and texture APIs to achieve fast updates to a person’s brush strokes by integrating RealityKit with ARKit and SwiftUI.
-- [Combining 2D and 3D views in an immersive app](combining-2d-and-3d-views-in-an-immersive-app.md)
+- [Combining 2D and 3D views in an immersive app](./combining-2d-and-3d-views-in-an-immersive-app.md)
   Use attachments to place 2D content relative to 3D content in your visionOS app.
-- [Transforming RealityKit entities using gestures](transforming-realitykit-entities-with-gestures.md)
+- [Transforming RealityKit entities using gestures](./transforming-realitykit-entities-with-gestures.md)
   Build a RealityKit component to support standard visionOS gestures on any entity.
-- [Responding to gestures on an entity](responding-to-gestures-on-an-entity.md)
+- [Responding to gestures on an entity](./responding-to-gestures-on-an-entity.md)
   Respond to gestures performed on RealityKit entities using input target and collision components.
-- [Models and meshes](scene-content-models-and-meshes.md)
+- [Models and meshes](./scene-content-models-and-meshes.md)
   Display virtual objects in your scene with mesh-based models.
-- [Materials, textures, and shaders](scene-content-materials-and-shaders.md)
+- [Materials, textures, and shaders](./scene-content-materials-and-shaders.md)
   Apply textures to the surface of your scene’s 3D objects to give each object a unique appearance.
-- [Anchors](scene-content-anchors.md)
+- [Anchors](./scene-content-anchors.md)
   Lock virtual content to the real world.
-- [Lights and cameras](scene-content-lights-and-cameras.md)
+- [Lights and cameras](./scene-content-lights-and-cameras.md)
   Control the lighting and point of view for a scene.
-- [Content synchronization](scene-content-content-synchronization.md)
+- [Content synchronization](./scene-content-content-synchronization.md)
   Synchronize the contents of entities locally or across the network.
-- [Audio](scene-content-audio.md)
+- [Audio](./scene-content-audio.md)
   Create personalized and realistic spatial audio experiences.
-- [Videos](scene-content-videos.md)
+- [Videos](./scene-content-videos.md)
   Present videos in your RealityKit experiences.
-- [Images](scene-content-images.md)
+- [Images](./scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
-- [Mesh deformation](scene-content-mesh-deformation.md)
+- [Mesh deformation](./scene-content-mesh-deformation.md)
   Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 

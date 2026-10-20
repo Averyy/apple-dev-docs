@@ -1,7 +1,8 @@
 # kCMTimebaseNotification_EffectiveRateChanged
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A notification that posts by a timebase after a change in effective rate.
 
@@ -20,9 +21,14 @@ A notification that posts by a timebase after a change in effective rate.
 let kCMTimebaseNotification_EffectiveRateChanged: CFString
 ```
 
+```c
+extern CFStringRef const kCMTimebaseNotification_EffectiveRateChanged;
+```
+
 ## See Also
 
-- [let kCMTimebaseNotification_TimeJumped: CFString](kcmtimebasenotification_timejumped.md)
+### Constants
+- [let kCMTimebaseNotification_TimeJumped: CFString](./kcmtimebasenotification_timejumped.md)
   A notification that posts by a timebase after a discontinuous time jump.
 
 

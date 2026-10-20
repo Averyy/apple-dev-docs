@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func cancel()
+```
+
+```objc
+- (void) cancel;
 ```
 
 

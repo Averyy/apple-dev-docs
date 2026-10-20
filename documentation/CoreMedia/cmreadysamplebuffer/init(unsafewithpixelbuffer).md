@@ -1,7 +1,8 @@
 # init(unsafeWithPixelBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ready sample buffer with pixel buffer content from an existing sample buffer.
 
@@ -19,6 +20,8 @@ Creates a ready sample buffer with pixel buffer content from an existing sample 
 ```swift
 init(unsafeWithPixelBuffer unsafeBuffer: sending CMSampleBuffer)
 ```
+
+Available when `Content` is `CVReadOnlyPixelBuffer`.
 
 
 ---

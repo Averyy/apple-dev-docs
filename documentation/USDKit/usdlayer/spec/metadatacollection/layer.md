@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer containing this spec, or `nil` if dormant.
 

@@ -1,7 +1,8 @@
 # UIPrinter.CutterBehavior.noCut
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Don’t cut the paper.
 
@@ -17,15 +18,20 @@ Don’t cut the paper.
 case noCut
 ```
 
+```c
+UIPrinterCutterBehaviorNoCut
+```
+
 ## See Also
 
-- [UIPrinter.CutterBehavior.printerDefault](uiprinter/cutterbehavior/printerdefault.md)
+### Constants
+- [UIPrinter.CutterBehavior.printerDefault](./printerdefault.md)
   Use the printer’s default behavior.
-- [UIPrinter.CutterBehavior.cutAfterEachPage](uiprinter/cutterbehavior/cutaftereachpage.md)
+- [UIPrinter.CutterBehavior.cutAfterEachPage](./cutaftereachpage.md)
   Cut the paper after each page.
-- [UIPrinter.CutterBehavior.cutAfterEachCopy](uiprinter/cutterbehavior/cutaftereachcopy.md)
+- [UIPrinter.CutterBehavior.cutAfterEachCopy](./cutaftereachcopy.md)
   Cut the paper after each copy of the document.
-- [UIPrinter.CutterBehavior.cutAfterEachJob](uiprinter/cutterbehavior/cutaftereachjob.md)
+- [UIPrinter.CutterBehavior.cutAfterEachJob](./cutaftereachjob.md)
   Cut the paper after each print job finishes.
 
 

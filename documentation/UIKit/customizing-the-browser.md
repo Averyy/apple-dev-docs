@@ -1,6 +1,7 @@
 # Customizing the document browser
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Customize the document browser’s look and behavior.
 
@@ -8,13 +9,13 @@ Customize the document browser’s look and behavior.
 
 You can set the browser’s appearance, create document thumbnails, and modify the browser’s behavior.
 
-##### Set the Browsers Appearance
+##### Set the browser’s appearance
 
-Change the browser’s appearance by setting the [`browserUserInterfaceStyle`](uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.property.md) property. The document browser view controller supports white, light, and dark appearances.
+Change the browser’s appearance by setting the [`browserUserInterfaceStyle`](./uidocumentbrowserviewcontroller/browseruserinterfacestyle-swift.property.md) property. The document browser view controller supports white, light, and dark appearances.
 
-##### Create Document Thumbnails or Icons
+##### Create document thumbnails or icons
 
-The system automatically provides thumbnails or icons for supported document types. If your app uses a custom or third-party document type, you can create a Thumbnail extension for that type. For more information, see [`QLThumbnailProvider`](https://developer.apple.com/documentation/quicklookthumbnailing/qlthumbnailprovider).
+The system automatically provides thumbnails or icons for supported document types. If your app uses a custom or third-party document type, you can create a Thumbnail extension for that type. For more information, see [`QLThumbnailProvider`](../QuickLookThumbnailing/qlthumbnailprovider.md).
 
 If you don’t provide a Thumbnail extension, the system can create a document icon based on your app icon. To enable automatic icon creation, go to the Project navigator, choose the target, click Info, and then do the following:
 
@@ -22,7 +23,7 @@ If you don’t provide a Thumbnail extension, the system can create a document i
 2. For any custom document types that you create, export the Uniform Type Identifier in the Exported Type Identifiers section.
 3. For any third-party document types used by your app, import the Uniform Type Identifier in the Imported Type Identifiers section.
 
-For more information, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
+For more information, see [Set the supported document types](./setting-up-a-document-browser-app.md#Set-the-supported-document-types).
 
 Your app’s icon only appears in the Files app or document browser when all of the following are true:
 
@@ -31,13 +32,13 @@ Your app’s icon only appears in the Files app or document browser when all of 
 - The user hasn’t installed a Thumbnail extension for the Uniform Type Identifier.
 - Your app both declares document type support for the Uniform Type Identifier and declares it as an exported or imported type.
 
-##### Add Document Previews
+##### Add document previews
 
 The system automatically provides previews for supported document types. If your app uses a custom or third-party document type, you can create a Preview extension for that type.
 
-For more information, see [`Quick Look`](https://developer.apple.com/documentation/quartz/quick-look).
+For more information, see [Quick Look](../Quartz/quick-look.md).
 
-##### Modify the Browsers Behavior
+##### Modify the browser’s behavior
 
 You can control the following behaviors:
 
@@ -45,11 +46,11 @@ You can control the following behaviors:
 - Whether the browser opens multiple files at the same time
 - Whether the browser creates new documents
 
-###### Set Allowed Document Types
+###### Set allowed document types
 
-You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](uidocumentbrowserviewcontroller/init(foropeningfileswithcontenttypes:).md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key in the app’s `Info.plist` file.
+You set the list of allowed document types when you create the browser. Pass an array of Uniform Type Identifier strings to the [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) class’s [`init(forOpeningFilesWithContentTypes:)`](./uidocumentbrowserviewcontroller/init%28foropeningfileswithcontenttypes%29.md) method. If you pass `nil`, the browser uses the document types specified by the [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md) key in the app’s `Info.plist` file.
 
-For detailed instructions on setting the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key, see [`Set the supported document types`](setting-up-a-document-browser-app#Set-the-supported-document-types.md).
+For detailed instructions on setting the [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md) key, see [Set the supported document types](./setting-up-a-document-browser-app.md#Set-the-supported-document-types).
 
 The following example programmatically creates a document browser for `.txt` files:
 
@@ -57,28 +58,29 @@ The following example programmatically creates a document browser for `.txt` fil
 let browser = UIDocumentBrowserViewController(forOpeningFilesWithContentTypes: ["public.plain-text"])
 ```
 
-###### Enable Multiple Document Selection
+###### Enable multiple document selection
 
-By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, users can select only one item at a time. To enable multiple document selection, set the document browser’s [`allowsPickingMultipleItems`](./uidocumentbrowserviewcontroller/allowspickingmultipleitems.md) property to [`true`](../Swift/true.md).
 
-###### Enable New Document Creation
+###### Enable new document creation
 
 To let users create new documents, you must do the following:
 
-- Set the browser’s [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](https://developer.apple.com/documentation/swift/true) (the default value).
-- Implement the [`UIDocumentBrowserViewControllerDelegate`](uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
+- Set the browser’s [`allowsDocumentCreation`](./uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property to [`true`](../Swift/true.md) (the default value).
+- Implement the [`UIDocumentBrowserViewControllerDelegate`](./uidocumentbrowserviewcontrollerdelegate.md) object’s [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method.
 
 After these steps are completed, the system automatically includes an Add button (+) in the document browser’s navigation bar.
 
-When the user taps the Add button, the system calls the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method. In your implementation, you can present a custom user interface, where users can configure the document. For example, you might show a list of document templates.
+When the user taps the Add button, the system calls the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](./uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method. In your implementation, you can present a custom user interface, where users can configure the document. For example, you might show a list of document templates.
 
-Create a new document and save it to a temporary location. As soon as the document is saved, call the provided `importHandler`. To confirm the request, pass in the document’s temporary URL and the import mode ([`UIDocumentBrowserViewController.ImportMode.copy`](uidocumentbrowserviewcontroller/importmode/copy.md) or [`UIDocumentBrowserViewController.ImportMode.move`](uidocumentbrowserviewcontroller/importmode/move.md)). To cancel the request, pass `nil` and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md).
+Create a new document and save it to a temporary location. As soon as the document is saved, call the provided `importHandler`. To confirm the request, pass in the document’s temporary URL and the import mode ([`UIDocumentBrowserViewController.ImportMode.copy`](./uidocumentbrowserviewcontroller/importmode/copy.md) or [`UIDocumentBrowserViewController.ImportMode.move`](./uidocumentbrowserviewcontroller/importmode/move.md)). To cancel the request, pass `nil` and [`UIDocumentBrowserViewController.ImportMode.none`](./uidocumentbrowserviewcontroller/importmode/none.md).
 
-> ❗ **Important**:  You must always call the `importHandler`. If you can’t create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
+> ❗ **Important**:  You must always call the `importHandler`. If you can’t create a new document, pass `nil` for the URL and [`UIDocumentBrowserViewController.ImportMode.none`](./uidocumentbrowserviewcontroller/importmode/none.md) for the import mode.
 
 ## See Also
 
-- [Adding custom actions and activities](adding-custom-actions-and-activities.md)
+### Customization
+- [Adding custom actions and activities](./adding-custom-actions-and-activities.md)
   Add custom document browser actions, activities, and bar items.
 
 

@@ -1,7 +1,8 @@
 # init(device:thresholdValue:linearGrayColorTransform:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the kernel.
 
@@ -17,6 +18,10 @@ Initializes the kernel.
 
 ```swift
 init(device: any MTLDevice, thresholdValue: Float, linearGrayColorTransform transform: UnsafePointer<Float>?)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device thresholdValue:(float) thresholdValue linearGrayColorTransform:(const float *) transform;
 ```
 
 #### Return Value

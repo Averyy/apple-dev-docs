@@ -1,7 +1,8 @@
 # read(into:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads an entire audio buffer.
 
@@ -20,9 +21,13 @@ Reads an entire audio buffer.
 func read(into buffer: AVAudioPCMBuffer) throws
 ```
 
+```objc
+- (BOOL) readIntoBuffer:(AVAudioPCMBuffer *) buffer error:(NSError **) outError;
+```
+
 #### Discussion
 
-When reading sequentially from the [`framePosition`](avaudiofile/frameposition.md) property, the method attempts to fill the buffer to its capacity. On return, the buffer’s [`length`](avaudiofile/length.md) property indicates the number of sample frames it successfully reads.
+When reading sequentially from the [`framePosition`](./frameposition.md) property, the method attempts to fill the buffer to its capacity. On return, the buffer’s [`length`](./length.md) property indicates the number of sample frames it successfully reads.
 
 ## Parameters
 
@@ -30,17 +35,19 @@ When reading sequentially from the [`framePosition`](avaudiofile/frameposition.m
 
 ## See Also
 
-- [var framePosition: AVAudioFramePosition](avaudiofile/frameposition.md)
+### Related Documentation
+- [var framePosition: AVAudioFramePosition](./frameposition.md)
   The position in the file where the next read or write operation occurs.
-- [var length: AVAudioFramePosition](avaudiofile/length.md)
+- [var length: AVAudioFramePosition](./length.md)
   The number of sample frames in the file.
-- [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
+### Reading and writing audio
+- [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](./read%28into,framecount%29.md)
   Reads a portion of an audio buffer using the number of frames you specify.
-- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
+- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](./read%28framecount%29.md)
+- [func write(from: AVAudioPCMBuffer) throws](./write%28from%29-6qgec.md)
   Writes an audio buffer sequentially.
-- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
-- [func close()](avaudiofile/close.md)
+- [func write(from: AVReadOnlyAudioPCMBuffer) throws](./write%28from%29-4zfhf.md)
+- [func close()](./close%28%29.md)
   Closes the audio file.
 
 

@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy used to parse a string into person name components.
 
@@ -22,9 +23,10 @@ var parseStrategy: PersonNameComponents.ParseStrategy { get }
 
 ## See Also
 
-- [init(String) throws](personnamecomponents/init(_:).md)
+### Parsing Person Name Components
+- [init(String) throws](../init%28_%29.md)
   Creates a person name components object from a given string.
-- [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
+- [init<S>(S.ParseInput, strategy: S) throws](../init%28_,strategy%29.md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
 
 

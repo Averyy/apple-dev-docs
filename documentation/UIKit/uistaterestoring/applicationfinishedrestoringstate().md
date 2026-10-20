@@ -1,21 +1,26 @@
 # applicationFinishedRestoringState()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after all objects have had a chance to decode their state.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 optional func applicationFinishedRestoringState()
+```
+
+```objc
+- (void) applicationFinishedRestoringState;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The order in which this method is called on decoded objects is not guaranteed.
 
 ## See Also
 
-- [func encodeRestorableState(with: NSCoder)](uistaterestoring/encoderestorablestate(with:).md)
+### Encoding and decoding the object
+- [func encodeRestorableState(with: NSCoder)](./encoderestorablestate%28with%29.md)
   Encodes state-related information for the object.
-- [func decodeRestorableState(with: NSCoder)](uistaterestoring/decoderestorablestate(with:).md)
+- [func decodeRestorableState(with: NSCoder)](./decoderestorablestate%28with%29.md)
   Decodes and restores state-related information for the object.
 
 

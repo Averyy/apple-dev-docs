@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inputs to the function.
 
@@ -22,7 +23,8 @@ let inputs: [MLModelStructure.Program.NamedValueType]
 
 ## See Also
 
-- [let block: MLModelStructure.Program.Block](mlmodelstructure-swift.enum/program/function/block.md)
+### Accessing the properties
+- [let block: MLModelStructure.Program.Block](./block.md)
   The active block in the function.
 
 

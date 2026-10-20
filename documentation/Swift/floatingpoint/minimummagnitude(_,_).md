@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Returns the value with lesser magnitude.
@@ -40,12 +41,18 @@ Double.minimumMagnitude(.nan, .nan)
 // nan
 ```
 
-The `minimumMagnitude` method implements the `minNumMag` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `minimumMagnitude` method implements the `minNumMag` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
 - `x`: A floating-point value.
 - `y`: Another floating-point value.
+
+## Default Implementations
+
+### FloatingPoint Implementations
+- [static func minimumMagnitude(Self, Self) -> Self](./minimummagnitude%28_,_%29-8oqx4.md)
+  Returns the value with lesser magnitude.
 
 
 ---

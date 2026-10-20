@@ -1,22 +1,27 @@
 # AudioConverterInputDataProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Deprecated. Use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) instead.
+Deprecated. Use [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) instead.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AudioConverterInputDataProc = (AudioConverterRef, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<UnsafeMutableRawPointer>, UnsafeMutableRawPointer?) -> OSStatus
+```
+
+```c
+typedef int (*)(struct OpaqueAudioConverter *, unsigned int *, void **, void *) AudioConverterInputDataProc;
 ```
 
 #### Discussion
@@ -25,12 +30,13 @@ If you named your callback function `MyAudioConverterInputDataProc`, you would d
 
 ##### Discussion
 
-This deprecated callback supplies input data to the [`AudioConverterFillBuffer`](audioconverterfillbuffer.md) function. Use [`AudioConverterComplexInputDataProc`](audioconvertercomplexinputdataproc.md) instead.
+This deprecated callback supplies input data to the [`AudioConverterFillBuffer`](./audioconverterfillbuffer.md) function. Use [`AudioConverterComplexInputDataProc`](./audioconvertercomplexinputdataproc.md) instead.
 
 ## See Also
 
-- [typealias AudioConverterComplexInputDataProc](audioconvertercomplexinputdataproc.md)
-  Supplies input data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](audioconverterfillcomplexbuffer(_:_:_:_:_:_:).md) function.
+### Callbacks
+- [typealias AudioConverterComplexInputDataProc](./audioconvertercomplexinputdataproc.md)
+  Supplies input data to the [`AudioConverterFillComplexBuffer(_:_:_:_:_:_:)`](./audioconverterfillcomplexbuffer%28_,_,_,_,_,_%29.md) function.
 
 
 ---

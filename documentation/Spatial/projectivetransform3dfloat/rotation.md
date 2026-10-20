@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The projective transform’s rotation.
 

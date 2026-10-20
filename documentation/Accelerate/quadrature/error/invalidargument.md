@@ -1,7 +1,8 @@
 # Quadrature.Error.invalidArgument
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -20,10 +21,11 @@ case invalidArgument
 
 ## See Also
 
-- [Quadrature.Error.badIntegrandBehaviour](quadrature/error/badintegrandbehaviour.md)
-- [Quadrature.Error.generic](quadrature/error/generic.md)
-- [Quadrature.Error.integrateMaxEval](quadrature/error/integratemaxeval.md)
-- [Quadrature.Error.internal](quadrature/error/internal.md)
+### Errors
+- [Quadrature.Error.badIntegrandBehaviour](./badintegrandbehaviour.md)
+- [Quadrature.Error.generic](./generic.md)
+- [Quadrature.Error.integrateMaxEval](./integratemaxeval.md)
+- [Quadrature.Error.internal](./internal.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GKQuadtree
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data structure for organizing objects based on their locations in a two-dimensional space.
 
@@ -19,66 +20,71 @@ A data structure for organizing objects based on their locations in a two-dimens
 class GKQuadtree<ElementType> where ElementType : NSObject
 ```
 
+```objc
+@interface GKQuadtree : NSObject
+```
+
 #### Overview
 
-A quadtree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, a quadtree can find all elements occupying a specific position or region very quickly. The quadtree partitioning strategy divides space into four quadrants at each level, as illustrated in [`Figure 1`](gkquadtree#1965707.md). When a quadrant contains more than one object, the tree subdivides that region into four smaller quadrants, adding a level to the tree.
+A quadtree manages its structure to optimize for spatial searches—unlike a basic data structure such as an array or dictionary, a quadtree can find all elements occupying a specific position or region very quickly. The quadtree partitioning strategy divides space into four quadrants at each level, as illustrated in [Figure 1](./gkquadtree.md#1965707). When a quadrant contains more than one object, the tree subdivides that region into four smaller quadrants, adding a level to the tree.
 
-![None](/images/com.apple.gameplaykit/media-1965707@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.gameplaykit/media-1965707@2x.png)
 
 Quadtrees can be useful for many tasks in game design. For example:
 
 - Deciding which game characters are close enough to each other for interaction
 - Deciding which portions of a large game world need to be processed at a given time
 
-The [`GKQuadtree`](gkquadtree.md) class is one of three spatial partitioning data structures that GameplayKit provides. See these other classes for other tasks:
+The [`GKQuadtree`](./gkquadtree.md) class is one of three spatial partitioning data structures that GameplayKit provides. See these other classes for other tasks:
 
-- The [`GKOctree`](gkoctree.md) class provides the three-dimensional equivalent of a quadtree. Use an octree when you need to organize objects in 3D space.
-- The [`GKRTree`](gkrtree.md) class provides a different algorithm for two-dimensional spatial indexing. Quadtrees and R-trees have different performance tradeoffs for different tasks: quadtrees can be faster when objects are more uniformly distributed in space or when their positions change frequently, and R-trees can be faster when searching for all objects in a given region.
+- The [`GKOctree`](./gkoctree.md) class provides the three-dimensional equivalent of a quadtree. Use an octree when you need to organize objects in 3D space.
+- The [`GKRTree`](./gkrtree.md) class provides a different algorithm for two-dimensional spatial indexing. Quadtrees and R-trees have different performance tradeoffs for different tasks: quadtrees can be faster when objects are more uniformly distributed in space or when their positions change frequently, and R-trees can be faster when searching for all objects in a given region.
 
 ## Topics
 
 ### Creating a Quadtree
-- [init(boundingQuad: GKQuad, minimumCellSize: Float)](gkquadtree/init(boundingquad:minimumcellsize:).md)
+- [init(boundingQuad: GKQuad, minimumCellSize: Float)](./gkquadtree/init%28boundingquad,minimumcellsize%29.md)
   Initializes a quadtree with the specified dimensions.
 ### Adding and Removing Elements
-- [func add(ElementType, at: vector_float2) -> GKQuadtreeNode](gkquadtree/add(_:at:).md)
+- [func add(ElementType, at: vector_float2) -> GKQuadtreeNode](./gkquadtree/add%28_,at%29.md)
   Adds an object to the tree corresponding to the specified point in 2D space.
-- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](gkquadtree/add(_:in:).md)
+- [func add(ElementType, in: GKQuad) -> GKQuadtreeNode](./gkquadtree/add%28_,in%29.md)
   Adds an object to the tree corresponding to the specified region of 2D space.
-- [func remove(ElementType, using: GKQuadtreeNode) -> Bool](gkquadtree/remove(_:using:).md)
+- [func remove(ElementType, using: GKQuadtreeNode) -> Bool](./gkquadtree/remove%28_,using%29.md)
   Removes the specified object from the tree, using a reference to its containing node.
-- [func remove(ElementType) -> Bool](gkquadtree/remove(_:).md)
+- [func remove(ElementType) -> Bool](./gkquadtree/remove%28_%29.md)
   Searches for the specified object and removes it from the tree.
 ### Searching for Elements
-- [func elements(at: vector_float2) -> [ElementType]](gkquadtree/elements(at:).md)
+- [func elements(at: vector_float2) -> [ElementType]](./gkquadtree/elements%28at%29.md)
   Returns all objects whose corresponding locations overlap the specified point.
-- [func elements(in: GKQuad) -> [ElementType]](gkquadtree/elements(in:).md)
+- [func elements(in: GKQuad) -> [ElementType]](./gkquadtree/elements%28in%29.md)
   Returns all objects whose corresponding locations overlap the specified region.
 ### Constants
-- [struct GKQuad](gkquad.md)
+- [struct GKQuad](./gkquad.md)
   The definition of an axis-aligned rectangle addressed by the tree.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GKQuadtreeNode](gkquadtreenode.md)
+### Spatial Partitioning
+- [class GKQuadtreeNode](./gkquadtreenode.md)
   A helper class for managing the objects you organize in a quadtree.
-- [class GKOctree](gkoctree.md)
+- [class GKOctree](./gkoctree.md)
   A data structure for organizing objects based on their locations in a three-dimensional space.
-- [class GKOctreeNode](gkoctreenode.md)
+- [class GKOctreeNode](./gkoctreenode.md)
   A helper class for managing the objects you organize in an octree.
-- [class GKRTree](gkrtree.md)
+- [class GKRTree](./gkrtree.md)
   A data structure that adaptively organizes objects based on their locations in a two-dimensional space.
 
 

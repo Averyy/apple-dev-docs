@@ -1,7 +1,8 @@
 # errSecCSHostProtocolRelativePath
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: absolute guest path required.
 
@@ -13,6 +14,10 @@ Host protocol violation: absolute guest path required.
 
 ```swift
 var errSecCSHostProtocolRelativePath: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolRelativePath
 ```
 
 

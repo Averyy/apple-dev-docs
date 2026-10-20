@@ -1,7 +1,8 @@
 # HMServiceTypeHumiditySensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A humidity sensor service.
 
@@ -19,21 +20,26 @@ A humidity sensor service.
 let HMServiceTypeHumiditySensor: String
 ```
 
+```c
+extern NSString * const HMServiceTypeHumiditySensor;
+```
+
 ## See Also
 
-- [let HMServiceTypeHeaterCooler: String](hmservicetypeheatercooler.md)
+### Temperature and Humidity
+- [let HMServiceTypeHeaterCooler: String](./hmservicetypeheatercooler.md)
   A heater or cooler service.
-- [let HMServiceTypeTemperatureSensor: String](hmservicetypetemperaturesensor.md)
+- [let HMServiceTypeTemperatureSensor: String](./hmservicetypetemperaturesensor.md)
   A temperature sensor service.
-- [let HMServiceTypeThermostat: String](hmservicetypethermostat.md)
+- [let HMServiceTypeThermostat: String](./hmservicetypethermostat.md)
   A thermostat service.
-- [let HMServiceTypeFan: String](hmservicetypefan.md)
+- [let HMServiceTypeFan: String](./hmservicetypefan.md)
   A fan service.
-- [let HMServiceTypeFilterMaintenance: String](hmservicetypefiltermaintenance.md)
+- [let HMServiceTypeFilterMaintenance: String](./hmservicetypefiltermaintenance.md)
   A filter maintenance service.
-- [let HMServiceTypeHumidifierDehumidifier: String](hmservicetypehumidifierdehumidifier.md)
+- [let HMServiceTypeHumidifierDehumidifier: String](./hmservicetypehumidifierdehumidifier.md)
   A humidifier or dehumidifier service.
-- [let HMServiceTypeVentilationFan: String](hmservicetypeventilationfan.md)
+- [let HMServiceTypeVentilationFan: String](./hmservicetypeventilationfan.md)
   A ventilation fan service.
 
 

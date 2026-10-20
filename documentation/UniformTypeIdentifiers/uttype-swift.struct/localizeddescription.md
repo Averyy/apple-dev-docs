@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the type.
 

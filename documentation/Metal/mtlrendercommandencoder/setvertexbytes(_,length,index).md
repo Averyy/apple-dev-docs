@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a buffer from bytes and assigns it to an entry in the vertex shader argument table.
@@ -11,7 +12,7 @@ Creates a buffer from bytes and assigns it to an entry in the vertex shader argu
 - iPadOS 8.3+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,34 +21,39 @@ Creates a buffer from bytes and assigns it to an entry in the vertex shader argu
 func setVertexBytes(_ bytes: UnsafeRawPointer, length: Int, index: Int)
 ```
 
+```objc
+- (void) setVertexBytes:(const void *) bytes length:(NSUInteger) length atIndex:(NSUInteger) index;
+```
+
 #### Discussion
 
-The method is equivalent to creating an [`MTLBuffer`](mtlbuffer.md) instance that contains the same data as `bytes` and calling the [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) method. However, this method avoids the overhead of creating a buffer to store your data; instead, Metal manages the data.
+The method is equivalent to creating an [`MTLBuffer`](../mtlbuffer.md) instance that contains the same data as `bytes` and calling the [`setVertexBuffer(_:offset:index:)`](./setvertexbuffer%28_,offset,index%29.md) method. However, this method avoids the overhead of creating a buffer to store your data; instead, Metal manages the data.
 
 > ❗ **Important**:  Only call this method for single-use data that’s smaller than 4 KB.
 
-For data that’s more than 4 KB, create an [`MTLBuffer`](mtlbuffer.md) instance and pass it to [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md).
+For data that’s more than 4 KB, create an [`MTLBuffer`](../mtlbuffer.md) instance and pass it to [`setVertexBuffer(_:offset:index:)`](./setvertexbuffer%28_,offset,index%29.md).
 
 By default, the buffer at each index is `nil`.
 
 ## Parameters
 
-- `bytes`: A pointer to argument data the method copies to an [`MTLBuffer`](mtlbuffer.md) and assigns to an entry in the vertex shader argument table for buffers.
+- `bytes`: A pointer to argument data the method copies to an [`MTLBuffer`](../mtlbuffer.md) and assigns to an entry in the vertex shader argument table for buffers.
 - `length`: The number of bytes the method copies from the `bytes` pointer.
-- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of the [`MTLBuffer`](mtlbuffer.md) the method creates from `bytes`.
+- `index`: An integer that represents the entry in the vertex shader argument table for buffers that stores a record of the [`MTLBuffer`](../mtlbuffer.md) the method creates from `bytes`.
 
 ## See Also
 
-- [func setVertexBuffer((any MTLBuffer)?, offset: Int, index: Int)](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md)
+### Assigning buffers
+- [func setVertexBuffer((any MTLBuffer)?, offset: Int, index: Int)](./setvertexbuffer%28_,offset,index%29.md)
   Assigns a buffer to an entry in the vertex shader argument table.
-- [func setVertexBuffer((any MTLBuffer)?, offset: Int, attributeStride: Int, index: Int)](mtlrendercommandencoder/setvertexbuffer(_:offset:attributestride:index:).md)
-- [func setVertexBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](mtlrendercommandencoder/setvertexbuffers(_:offsets:range:).md)
+- [func setVertexBuffer((any MTLBuffer)?, offset: Int, attributeStride: Int, index: Int)](./setvertexbuffer%28_,offset,attributestride,index%29.md)
+- [func setVertexBuffers([(any MTLBuffer)?], offsets: [Int], range: Range<Int>)](./setvertexbuffers%28_,offsets,range%29.md)
   Assigns multiple buffers to a range of entries in the vertex shader argument table.
-- [func setVertexBuffers([(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)](mtlrendercommandencoder/setvertexbuffers(_:offsets:attributestrides:range:).md)
-- [func setVertexBytes(UnsafeRawPointer, length: Int, attributeStride: Int, index: Int)](mtlrendercommandencoder/setvertexbytes(_:length:attributestride:index:).md)
-- [func setVertexBufferOffset(Int, index: Int)](mtlrendercommandencoder/setvertexbufferoffset(_:index:).md)
+- [func setVertexBuffers([(any MTLBuffer)?], offsets: [Int], attributeStrides: [Int], range: Range<Int>)](./setvertexbuffers%28_,offsets,attributestrides,range%29.md)
+- [func setVertexBytes(UnsafeRawPointer, length: Int, attributeStride: Int, index: Int)](./setvertexbytes%28_,length,attributestride,index%29.md)
+- [func setVertexBufferOffset(Int, index: Int)](./setvertexbufferoffset%28_,index%29.md)
   Updates an entry in the vertex shader argument table with a new location within the entry’s current buffer.
-- [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](mtlrendercommandencoder/setvertexbufferoffset(offset:attributestride:index:).md)
+- [func setVertexBufferOffset(offset: Int, attributeStride: Int, index: Int)](./setvertexbufferoffset%28offset,attributestride,index%29.md)
 
 
 ---

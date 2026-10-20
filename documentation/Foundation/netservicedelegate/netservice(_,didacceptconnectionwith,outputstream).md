@@ -1,7 +1,8 @@
 # netService(_:didAcceptConnectionWith:outputStream:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a client connects to a service managed by Bonjour.
 
@@ -19,9 +20,13 @@ Called when a client connects to a service managed by Bonjour.
 optional func netService(_ sender: NetService, didAcceptConnectionWith inputStream: InputStream, outputStream: OutputStream)
 ```
 
+```objc
+- (void) netService:(NSNetService *) sender didAcceptConnectionWithInputStream:(NSInputStream *) inputStream outputStream:(NSOutputStream *) outputStream;
+```
+
 #### Discussion
 
-When you publish a service, if you set the [`listenForConnections`](netservice/options/listenforconnections.md) flag in the service options, the service object accepts connections on behalf of your app. Later, when a client connects to that service, the service object calls this method to provide the app with a pair of streams for communicating with that client.
+When you publish a service, if you set the [`listenForConnections`](../netservice/options/listenforconnections.md) flag in the service options, the service object accepts connections on behalf of your app. Later, when a client connects to that service, the service object calls this method to provide the app with a pair of streams for communicating with that client.
 
 ## Parameters
 

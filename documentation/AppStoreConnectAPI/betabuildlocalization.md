@@ -1,7 +1,8 @@
 # BetaBuildLocalization
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localized ‘What’s New’ text shown to TestFlight testers in a specific language for a build.
 
@@ -10,16 +11,16 @@ The localized ‘What’s New’ text shown to TestFlight testers in a specific 
 
 ## Declaration
 
-```swift
+```
 object BetaBuildLocalization
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaBuildLocalization.Attributes](betabuildlocalization/attributes-data.dictionary.md)
+- [object BetaBuildLocalization.Attributes](./betabuildlocalization/attributes-data.dictionary.md)
   Attributes that describe a Beta Build Localizations resource.
-- [object BetaBuildLocalization.Relationships](betabuildlocalization/relationships-data.dictionary.md)
+- [object BetaBuildLocalization.Relationships](./betabuildlocalization/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,21 +29,24 @@ object BetaBuildLocalization
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `relationships` (BetaBuildLocalization.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `betaBuildLocalizations`
 - `links` (ResourceLinks): Navigational links that include the self-link.
 
 ## See Also
 
-- [object BetaBuildLocalizationResponse](betabuildlocalizationresponse.md)
+### Objects
+- [object BetaBuildLocalizationResponse](./betabuildlocalizationresponse.md)
   The response body for endpoints that create, read, or modify localized TestFlight build metadata.
-- [object BetaBuildLocalizationsWithoutIncludesResponse](betabuildlocalizationswithoutincludesresponse.md)
+- [object BetaBuildLocalizationsWithoutIncludesResponse](./betabuildlocalizationswithoutincludesresponse.md)
   A response containing a list of TestFlight build localizations, without related resources.
-- [object BetaBuildLocalizationCreateRequest](betabuildlocalizationcreaterequest.md)
+- [object BetaBuildLocalizationCreateRequest](./betabuildlocalizationcreaterequest.md)
   The request body you use to create a Beta Build Localization.
-- [object BetaBuildLocalizationUpdateRequest](betabuildlocalizationupdaterequest.md)
+- [object BetaBuildLocalizationUpdateRequest](./betabuildlocalizationupdaterequest.md)
   The request body you use to update a Beta Build Localization.
-- [object BetaBuildLocalizationsResponse](betabuildlocalizationsresponse.md)
+- [object BetaBuildLocalizationsResponse](./betabuildlocalizationsresponse.md)
   The response body for endpoints that list localized TestFlight build metadata entries.
-- [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
+- [object BetaBuildLocalizationBuildLinkageResponse](./betabuildlocalizationbuildlinkageresponse.md)
 
 
 ---

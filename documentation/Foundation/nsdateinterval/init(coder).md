@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a date interval initialized from data in the given unarchiver.
 
@@ -20,13 +21,18 @@ Returns a date interval initialized from data in the given unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init()](nsdateinterval/init.md)
+### Creating Date Intervals
+- [convenience init()](./init%28%29.md)
   Initializes a date interval by setting the start and end date to the current date.
-- [init(start: Date, duration: TimeInterval)](nsdateinterval/init(start:duration:).md)
+- [init(start: Date, duration: TimeInterval)](./init%28start,duration%29.md)
   Initializes a date interval with a given start date and duration.
-- [convenience init(start: Date, end: Date)](nsdateinterval/init(start:end:).md)
+- [convenience init(start: Date, end: Date)](./init%28start,end%29.md)
   Initializes a date interval from a given start date and end date.
 
 

@@ -1,12 +1,13 @@
 # Miscellaneous Defines
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [IOPhysicalSegment](iophysicalsegment.md)
-- [OutputSegmentFunc](outputsegmentfunc.md)
+- [IOPhysicalSegment](../iophysicalsegment.md)
+- [OutputSegmentFunc](../outputsegmentfunc.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # initializeBindings
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures whether Metal initializes the bindings to nil values upon creation of argument table.
 
@@ -19,9 +20,13 @@ Configures whether Metal initializes the bindings to nil values upon creation of
 var initializeBindings: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL initializeBindings;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 
 ---

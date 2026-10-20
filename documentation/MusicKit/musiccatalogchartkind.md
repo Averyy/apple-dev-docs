@@ -1,7 +1,8 @@
 # MusicCatalogChartKind
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The available kinds of catalog charts.
 
@@ -23,23 +24,23 @@ enum MusicCatalogChartKind
 ## Topics
 
 ### Enumeration Cases
-- [MusicCatalogChartKind.cityTop](musiccatalogchartkind/citytop.md)
-- [MusicCatalogChartKind.dailyGlobalTop](musiccatalogchartkind/dailyglobaltop.md)
-- [MusicCatalogChartKind.mostPlayed](musiccatalogchartkind/mostplayed.md)
+- [MusicCatalogChartKind.cityTop](./musiccatalogchartkind/citytop.md)
+- [MusicCatalogChartKind.dailyGlobalTop](./musiccatalogchartkind/dailyglobaltop.md)
+- [MusicCatalogChartKind.mostPlayed](./musiccatalogchartkind/mostplayed.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

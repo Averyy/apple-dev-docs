@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional role you associate with this element.
 
@@ -20,9 +21,10 @@ If you associate a role to a seat, a participant must request that role to sit i
 
 ## See Also
 
-- [let position: SpatialTemplateElementPosition](spatialtemplateseatelement/position.md)
+### Getting the element details
+- [let position: SpatialTemplateElementPosition](./position.md)
   The location of the element in the shared coordinate space.
-- [let direction: SpatialTemplateElementDirection](spatialtemplateseatelement/direction.md)
+- [let direction: SpatialTemplateElementDirection](./direction.md)
   The initial orientation of the element in the shared coordinate space.
 
 

@@ -1,23 +1,28 @@
 # CFCalendarGetOrdinalityOfUnit(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the ordinal number of a calendrical unit within a larger unit at a specified absolute time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFCalendarGetOrdinalityOfUnit(_ calendar: CFCalendar!, _ smallerUnit: CFCalendarUnit, _ biggerUnit: CFCalendarUnit, _ at: CFAbsoluteTime) -> CFIndex
+```
+
+```c
+extern CFIndex CFCalendarGetOrdinalityOfUnit(CFCalendarRef calendar, CFCalendarUnit smallerUnit, CFCalendarUnit biggerUnit, CFAbsoluteTime at);
 ```
 
 #### Return Value
@@ -35,19 +40,20 @@ The ordinality is in most cases not the same as the decomposed value of the unit
 ## Parameters
 
 - `calendar`: The calendar to examine.
-- `smallerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
-- `biggerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](cfcalendarunit.md).
+- `smallerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](./cfcalendarunit.md).
+- `biggerUnit`: A calendar unit. For valid values see [`CFCalendarUnit`](./cfcalendarunit.md).
 - `at`: An absolute time.
 
 ## See Also
 
-- [func CFCalendarGetRangeOfUnit(CFCalendar!, CFCalendarUnit, CFCalendarUnit, CFAbsoluteTime) -> CFRange](cfcalendargetrangeofunit(_:_:_:_:).md)
+### Getting Ranges of Units
+- [func CFCalendarGetRangeOfUnit(CFCalendar!, CFCalendarUnit, CFCalendarUnit, CFAbsoluteTime) -> CFRange](./cfcalendargetrangeofunit%28_,_,_,_%29.md)
   Returns the range of values that one unit can take on within a larger unit during which a specific absolute time occurs.
-- [func CFCalendarGetTimeRangeOfUnit(CFCalendar!, CFCalendarUnit, CFAbsoluteTime, UnsafeMutablePointer<CFAbsoluteTime>!, UnsafeMutablePointer<CFTimeInterval>!) -> Bool](cfcalendargettimerangeofunit(_:_:_:_:_:).md)
+- [func CFCalendarGetTimeRangeOfUnit(CFCalendar!, CFCalendarUnit, CFAbsoluteTime, UnsafeMutablePointer<CFAbsoluteTime>!, UnsafeMutablePointer<CFTimeInterval>!) -> Bool](./cfcalendargettimerangeofunit%28_,_,_,_,_%29.md)
   Returns by reference the start time and duration of a given calendar unit that contains a given absolute time.
-- [func CFCalendarGetMaximumRangeOfUnit(CFCalendar!, CFCalendarUnit) -> CFRange](cfcalendargetmaximumrangeofunit(_:_:).md)
+- [func CFCalendarGetMaximumRangeOfUnit(CFCalendar!, CFCalendarUnit) -> CFRange](./cfcalendargetmaximumrangeofunit%28_,_%29.md)
   Returns the maximum range limits of the values that a specified unit can take on in a given calendar.
-- [func CFCalendarGetMinimumRangeOfUnit(CFCalendar!, CFCalendarUnit) -> CFRange](cfcalendargetminimumrangeofunit(_:_:).md)
+- [func CFCalendarGetMinimumRangeOfUnit(CFCalendar!, CFCalendarUnit) -> CFRange](./cfcalendargetminimumrangeofunit%28_,_%29.md)
   Returns the minimum range limits of the values that a specified unit can take on in a given calendar.
 
 

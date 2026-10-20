@@ -1,7 +1,8 @@
 # DropWhileSequence
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence that lazily consumes and drops `n` elements from an underlying `Base` iterator before possibly returning the first available element.
 
@@ -28,48 +29,49 @@ The underlying iterator’s sequence may be infinite.
 ## Topics
 
 ### Instance Methods
-- [func drop(while: (DropWhileSequence<Base>.Element) throws -> Bool) rethrows -> DropWhileSequence<Base>](dropwhilesequence/drop(while:).md)
+- [func drop(while: (DropWhileSequence<Base>.Element) throws -> Bool) rethrows -> DropWhileSequence<Base>](./dropwhilesequence/drop%28while%29.md)
 ### Type Aliases
-- [DropWhileSequence.Element](dropwhilesequence/element.md)
+- [DropWhileSequence.Element](./dropwhilesequence/element.md)
   A type representing the sequence’s elements.
 ### Default Implementations
-- [Sequence Implementations](dropwhilesequence/sequence-implementations.md)
+- [Sequence Implementations](./dropwhilesequence/sequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
 
 ## See Also
 
-- [struct CollectionDifference](collectiondifference.md)
+### Wrappers for Algorithms
+- [struct CollectionDifference](./collectiondifference.md)
   A collection of insertions and removals that describe the difference between two ordered collection states.
-- [struct DropFirstSequence](dropfirstsequence.md)
+- [struct DropFirstSequence](./dropfirstsequence.md)
   A sequence that lazily consumes and drops `n` elements from an underlying `Base` iterator before possibly returning the first available element.
-- [struct EnumeratedSequence](enumeratedsequence.md)
+- [struct EnumeratedSequence](./enumeratedsequence.md)
   An enumeration of the elements of a sequence or collection.
-- [typealias FlattenCollection](flattencollection.md)
-- [struct FlattenSequence](flattensequence.md)
+- [typealias FlattenCollection](./flattencollection.md)
+- [struct FlattenSequence](./flattensequence.md)
   A sequence consisting of all the elements contained in each segment contained in some `Base` sequence.
-- [struct JoinedSequence](joinedsequence.md)
+- [struct JoinedSequence](./joinedsequence.md)
   A sequence that presents the elements of a base sequence of sequences concatenated using a given separator.
-- [struct PrefixSequence](prefixsequence.md)
+- [struct PrefixSequence](./prefixsequence.md)
   A sequence that only consumes up to `n` elements from an underlying `Base` iterator.
-- [struct Repeated](repeated.md)
+- [struct Repeated](./repeated.md)
   A collection whose elements are all identical.
-- [struct ReversedCollection](reversedcollection.md)
+- [struct ReversedCollection](./reversedcollection.md)
   A collection that presents the elements of its base collection in reverse order.
-- [struct StrideTo](strideto.md)
+- [struct StrideTo](./strideto.md)
   A sequence of values formed by striding over a half-open interval.
-- [struct StrideThrough](stridethrough.md)
+- [struct StrideThrough](./stridethrough.md)
   A sequence of values formed by striding over a closed interval.
-- [struct UnfoldSequence](unfoldsequence.md)
+- [struct UnfoldSequence](./unfoldsequence.md)
   A sequence whose elements are produced via repeated applications of a closure to some mutable state.
-- [struct Zip2Sequence](zip2sequence.md)
+- [struct Zip2Sequence](./zip2sequence.md)
   A sequence of pairs built out of two underlying sequences.
 
 

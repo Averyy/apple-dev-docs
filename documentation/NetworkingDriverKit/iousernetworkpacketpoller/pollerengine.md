@@ -1,14 +1,15 @@
 # pollerEngine
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 void pollerEngine(bool timerPoll, uint64_t now);
 ```
 

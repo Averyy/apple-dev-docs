@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
@@ -24,6 +25,12 @@ func signum() -> Self
 #### Return Value
 
 The sign of this number, expressed as an integer of the same type.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [func signum() -> Self](./signum%28%29-1xj79.md)
+  Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 
 
 ---

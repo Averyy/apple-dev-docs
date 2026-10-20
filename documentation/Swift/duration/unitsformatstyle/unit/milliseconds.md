@@ -1,7 +1,8 @@
 # milliseconds
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The milliseconds unit, used for formatting a duration.
 
@@ -22,15 +23,16 @@ static var milliseconds: Duration.UnitsFormatStyle.Unit { get }
 
 ## See Also
 
-- [static var hours: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/hours.md)
+### Duration units
+- [static var hours: Duration.UnitsFormatStyle.Unit](./hours.md)
   The hours unit, used for formatting a duration.
-- [static var minutes: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/minutes.md)
+- [static var minutes: Duration.UnitsFormatStyle.Unit](./minutes.md)
   The minutes unit, used for formatting a duration.
-- [static var seconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/seconds.md)
+- [static var seconds: Duration.UnitsFormatStyle.Unit](./seconds.md)
   The seconds unit, used for formatting a duration.
-- [static var microseconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/microseconds.md)
+- [static var microseconds: Duration.UnitsFormatStyle.Unit](./microseconds.md)
   The microseconds unit, used for formatting a duration.
-- [static var nanoseconds: Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit/nanoseconds.md)
+- [static var nanoseconds: Duration.UnitsFormatStyle.Unit](./nanoseconds.md)
   The nanoseconds unit, used for formatting a duration.
 
 

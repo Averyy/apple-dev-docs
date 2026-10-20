@@ -1,7 +1,8 @@
 # XCSourceEditorExtension
 
 **Framework**: XcodeKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol you implement to create Xcode source editor extensions.
 
@@ -14,6 +15,10 @@ The protocol you implement to create Xcode source editor extensions.
 protocol XCSourceEditorExtension : NSObjectProtocol
 ```
 
+```objc
+@protocol XCSourceEditorExtension <NSObject>
+```
+
 #### Overview
 
 There are no guarantees about the thread or queue on which any Xcode Source Editor Extension methods are executed, including the designated initializer.
@@ -21,22 +26,23 @@ There are no guarantees about the thread or queue on which any Xcode Source Edit
 ## Topics
 
 ### Defining Extension Commands
-- [var commandDefinitions: [[XCSourceEditorCommandDefinitionKey : Any]]](xcsourceeditorextension/commanddefinitions.md)
+- [var commandDefinitions: [[XCSourceEditorCommandDefinitionKey : Any]]](./xcsourceeditorextension/commanddefinitions.md)
   The array of command definitions used by Xcode to associate command names with their implementation in an extension.
 ### Handling Extension Launches
-- [func extensionDidFinishLaunching()](xcsourceeditorextension/extensiondidfinishlaunching.md)
+- [func extensionDidFinishLaunching()](./xcsourceeditorextension/extensiondidfinishlaunching%28%29.md)
   Tells the extension that it successfully launched and may begin to receive editor commands.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a Source Editor Extension](creating-a-source-editor-extension.md)
+### Essentials
+- [Creating a Source Editor Extension](./creating-a-source-editor-extension.md)
   Add and configure a source editor extension in your Xcode project.
-- [Testing Your Source Editor Extension](testing-your-source-editor-extension.md)
+- [Testing Your Source Editor Extension](./testing-your-source-editor-extension.md)
   Launch a special instance of Xcode to test your source editor extension.
 
 

@@ -1,7 +1,8 @@
 # NotificationQueue.PostingStyle.whenIdle
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The notification is posted when the run loop is idle.
 
@@ -20,11 +21,16 @@ The notification is posted when the run loop is idle.
 case whenIdle
 ```
 
+```c
+NSPostWhenIdle
+```
+
 ## See Also
 
-- [NotificationQueue.PostingStyle.asap](notificationqueue/postingstyle/asap.md)
+### Constants
+- [NotificationQueue.PostingStyle.asap](./asap.md)
   The notification is posted at the end of the current notification callout or timer.
-- [NotificationQueue.PostingStyle.now](notificationqueue/postingstyle/now.md)
+- [NotificationQueue.PostingStyle.now](./now.md)
   The notification is posted immediately after coalescing.
 
 

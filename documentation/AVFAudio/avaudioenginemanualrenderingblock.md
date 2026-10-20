@@ -1,7 +1,8 @@
 # AVAudioEngineManualRenderingBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a block that renders the engine when operating in manual rendering mode.
 
@@ -20,9 +21,13 @@ The type that represents a block that renders the engine when operating in manua
 typealias AVAudioEngineManualRenderingBlock = (AVAudioFrameCount, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<OSStatus>?) -> AVAudioEngineManualRenderingStatus
 ```
 
+```c
+typedef enum AVAudioEngineManualRenderingStatus (^)(unsigned int, struct AudioBufferList *, int *) AVAudioEngineManualRenderingBlock;
+```
+
 #### Return Value
 
-One of the status codes from [`AVAudioEngineManualRenderingStatus`](avaudioenginemanualrenderingstatus.md). Irrespective of the returned status code, on exit, the output buffer’s [`frameLength`](avaudiopcmbuffer/framelength.md) indicates the number of PCM samples the engine renders.
+One of the status codes from [`AVAudioEngineManualRenderingStatus`](./avaudioenginemanualrenderingstatus.md). Irrespective of the returned status code, on exit, the output buffer’s [`frameLength`](./avaudiopcmbuffer/framelength.md) indicates the number of PCM samples the engine renders.
 
 ## Parameters
 
@@ -32,19 +37,20 @@ One of the status codes from [`AVAudioEngineManualRenderingStatus`](avaudioengin
 
 ## See Also
 
-- [var manualRenderingBlock: AVAudioEngineManualRenderingBlock](avaudioengine/manualrenderingblock.md)
+### Getting manual rendering properties
+- [var manualRenderingBlock: AVAudioEngineManualRenderingBlock](./avaudioengine/manualrenderingblock.md)
   The block that renders the engine when operating in manual rendering mode.
-- [var manualRenderingFormat: AVAudioFormat](avaudioengine/manualrenderingformat.md)
+- [var manualRenderingFormat: AVAudioFormat](./avaudioengine/manualrenderingformat.md)
   The render format of the engine in manual rendering mode.
-- [var manualRenderingMaximumFrameCount: AVAudioFrameCount](avaudioengine/manualrenderingmaximumframecount.md)
+- [var manualRenderingMaximumFrameCount: AVAudioFrameCount](./avaudioengine/manualrenderingmaximumframecount.md)
   The maximum number of PCM sample frames the engine produces in any single render call in manual rendering mode.
-- [var manualRenderingMode: AVAudioEngineManualRenderingMode](avaudioengine/manualrenderingmode.md)
+- [var manualRenderingMode: AVAudioEngineManualRenderingMode](./avaudioengine/manualrenderingmode.md)
   The manual rendering mode configured on the engine.
-- [var manualRenderingSampleTime: AVAudioFramePosition](avaudioengine/manualrenderingsampletime.md)
+- [var manualRenderingSampleTime: AVAudioFramePosition](./avaudioengine/manualrenderingsampletime.md)
   An indication of where the engine is on its render timeline in manual rendering mode.
-- [var isAutoShutdownEnabled: Bool](avaudioengine/isautoshutdownenabled.md)
+- [var isAutoShutdownEnabled: Bool](./avaudioengine/isautoshutdownenabled.md)
   A Boolean value that indicates whether autoshutdown is in an enabled state.
-- [var isInManualRenderingMode: Bool](avaudioengine/isinmanualrenderingmode.md)
+- [var isInManualRenderingMode: Bool](./avaudioengine/isinmanualrenderingmode.md)
   A Boolean value that indicates whether the engine is operating in manual rendering mode.
 
 

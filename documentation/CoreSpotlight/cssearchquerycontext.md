@@ -1,7 +1,8 @@
 # CSSearchQueryContext
 
 **Framework**: Core Spotlight  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The behavior configuration to use for a search query.
 
@@ -18,57 +19,62 @@ The behavior configuration to use for a search query.
 class CSSearchQueryContext
 ```
 
+```objc
+@interface CSSearchQueryContext : NSObject
+```
+
 ## Mentions
 
-- [Searching for information in your app](searching-for-information-in-your-app.md)
+- [Searching for information in your app](./searching-for-information-in-your-app.md)
 
 ## Topics
 
 ### Configuring search behavior
-- [var fetchAttributes: [String]](cssearchquerycontext/fetchattributes.md)
+- [var fetchAttributes: [String]](./cssearchquerycontext/fetchattributes.md)
   The attributes the system fetches for the searchable items.
-- [var keyboardLanguage: String?](cssearchquerycontext/keyboardlanguage.md)
+- [var keyboardLanguage: String?](./cssearchquerycontext/keyboardlanguage.md)
   The language used for the query.
-- [var sourceOptions: CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.property.md)
+- [var sourceOptions: CSSearchQueryContext.SourceOptions](./cssearchquerycontext/sourceoptions-swift.property.md)
   The query source options to allow or deny Mail messages in the search.
-- [CSSearchQueryContext.SourceOptions](cssearchquerycontext/sourceoptions-swift.struct.md)
+- [CSSearchQueryContext.SourceOptions](./cssearchquerycontext/sourceoptions-swift.struct.md)
   The query source options to allow or deny Mail messages in the search.
 ### Filtering the results
-- [var filterQueries: [String]](cssearchquerycontext/filterqueries.md)
+- [var filterQueries: [String]](./cssearchquerycontext/filterqueries.md)
   The query string used to filter the results.
 ### Initializers
-- [init?(coder: NSCoder)](cssearchquerycontext/init(coder:).md)
+- [init?(coder: NSCoder)](./cssearchquerycontext/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CSUserQueryContext](csuserquerycontext.md)
+- [CSUserQueryContext](./csuserquerycontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Building a search interface for your app](building-a-search-interface-for-your-app.md)
+### Queries
+- [Building a search interface for your app](./building-a-search-interface-for-your-app.md)
   Add a search interface to your app to execute Spotlight queries and offer suggested text completions.
-- [Searching for information in your app](searching-for-information-in-your-app.md)
+- [Searching for information in your app](./searching-for-information-in-your-app.md)
   Search for app-specific content and refine search results using predicates and filters.
-- [class CSUserQuery](csuserquery.md)
+- [class CSUserQuery](./csuserquery.md)
   A type you use to initiate searches from your interface and offer suggested text completions.
-- [class CSUserQueryContext](csuserquerycontext.md)
+- [class CSUserQueryContext](./csuserquerycontext.md)
   The configuration details to apply to a user query.
-- [class CSSearchQuery](cssearchquery.md)
+- [class CSSearchQuery](./cssearchquery.md)
   A type you use to programmatically search the indexed app content.
-- [class CSSuggestion](cssuggestion.md)
+- [class CSSuggestion](./cssuggestion.md)
   The kind of suggestion to use in a query.
 
 

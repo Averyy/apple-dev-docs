@@ -1,7 +1,8 @@
 # init(amount:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image exposure adjusting transformer.
 

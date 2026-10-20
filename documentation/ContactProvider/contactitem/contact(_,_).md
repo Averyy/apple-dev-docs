@@ -1,7 +1,8 @@
 # ContactItem.contact(_:_:)
 
 **Framework**: ContactProvider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An item that represents a person or organization.
 

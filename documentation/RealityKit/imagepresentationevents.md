@@ -1,7 +1,8 @@
 # ImagePresentationEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events associated with viewing mode transitions for image presentation components.
 
@@ -17,16 +18,17 @@ enum ImagePresentationEvents
 ## Topics
 
 ### Viewing mode transitions
-- [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
+- [ImagePresentationEvents.TransitionStarted](./imagepresentationevents/transitionstarted.md)
   A transition between two viewing modes has started for an image presentation component.
-- [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
+- [ImagePresentationEvents.TransitionCompleted](./imagepresentationevents/transitioncompleted.md)
   A transition between two viewing modes has completed for an image presentation component.
 
 ## See Also
 
-- [enum AudioEvents](audioevents.md)
+### Media events
+- [enum AudioEvents](./audioevents.md)
   Events associated with audio playback.
-- [enum VideoPlayerEvents](videoplayerevents.md)
+- [enum VideoPlayerEvents](./videoplayerevents.md)
   Events associated with video playback for VideoPlayerComponent.
 
 

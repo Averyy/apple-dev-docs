@@ -1,7 +1,8 @@
 # Minor version
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit field that indicates the file format specification version.
 
@@ -11,13 +12,14 @@ For QuickTime movie files, this takes the form of four binary-coded decimal valu
 
 ## See Also
 
-- [Size](file_type_compatibility_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the atom.
-- [Type](file_type_compatibility_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer that identifies the atom type, typically represented as a four-character code.
-- [Major brand](file_type_compatibility_atom/major_brand.md)
+- [Major brand](./major_brand.md)
   A 32-bit unsigned integer that represents a file format code.
-- [Compatible brands](file_type_compatibility_atom/compatible_brands.md)
+- [Compatible brands](./compatible_brands.md)
   A series of unsigned 32-bit integers listing compatible file formats.
 
 

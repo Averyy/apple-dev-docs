@@ -1,7 +1,8 @@
 # USDPrim.Property
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A named property on a prim, which is either an attribute or a relationship.
 
@@ -22,70 +23,71 @@ struct Property
 ## Topics
 
 ### Structures
-- [USDPrim.Property.Spec](usdprim/property/spec.md)
+- [USDPrim.Property.Spec](./property/spec.md)
   A handle to a property definition (attribute or relationship) stored in a layer.
 ### Initializers
-- [init()](usdprim/property/init.md)
+- [init()](./property/init%28%29.md)
   An invalid property handle.
-- [init?(USDStage.Object)](usdprim/property/init(_:)-2927p.md)
+- [init?(USDStage.Object)](./property/init%28_%29-2927p.md)
   Casts an object handle to a property handle.
-- [init(USDPrim.Attribute)](usdprim/property/init(_:)-7co8b.md)
+- [init(USDPrim.Attribute)](./property/init%28_%29-7co8b.md)
   Casts an attribute handle to a property handle.
-- [init(USDPrim.Relationship)](usdprim/property/init(_:)-po4e.md)
+- [init(USDPrim.Relationship)](./property/init%28_%29-po4e.md)
 ### Instance Properties
-- [var baseName: USDToken](usdprim/property/basename.md)
+- [var baseName: USDToken](./property/basename.md)
   The name of this property without its namespace prefix.
-- [var isAuthored: Bool](usdprim/property/isauthored.md)
+- [var isAuthored: Bool](./property/isauthored.md)
   A Boolean value that indicates whether this property has any authored opinions.
-- [var isCustom: Bool](usdprim/property/iscustom.md)
+- [var isCustom: Bool](./property/iscustom.md)
   A Boolean value that indicates whether this property is a custom property not defined by a schema.
-- [var isDefined: Bool](usdprim/property/isdefined.md)
+- [var isDefined: Bool](./property/isdefined.md)
   A Boolean value that indicates whether this property has a defining specification on the stage.
-- [var isValid: Bool](usdprim/property/isvalid.md)
+- [var isValid: Bool](./property/isvalid.md)
   A Boolean value indicating whether this property is valid.
-- [var name: USDToken](usdprim/property/name.md)
+- [var name: USDToken](./property/name.md)
   The name of this property.
-- [var namespace: USDToken](usdprim/property/namespace.md)
+- [var namespace: USDToken](./property/namespace.md)
   The namespace prefix of this property’s name, or an empty token if it has none.
-- [var path: USDLayer.Path](usdprim/property/path.md)
+- [var path: USDLayer.Path](./property/path.md)
   The complete scene path to this property, relative to its stage.
-- [var prim: USDPrim](usdprim/property/prim.md)
+- [var prim: USDPrim](./property/prim.md)
   The nearest prim that contains this property.
-- [var primPath: USDLayer.Path](usdprim/property/primpath.md)
+- [var primPath: USDLayer.Path](./property/primpath.md)
   The complete path to the nearest prim that contains this property.
-- [var stage: USDStage](usdprim/property/stage.md)
+- [var stage: USDStage](./property/stage.md)
   The stage that owns this property.
 ### Enumerations
-- [USDPrim.Property.Variability](usdprim/property/variability.md)
+- [USDPrim.Property.Variability](./property/variability.md)
   Whether a property’s value can change over time.
 ### Default Implementations
-- [CustomStringConvertible Implementations](usdprim/property/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./property/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [USDStage.Object.MetadataCollection](../usdstage/object/metadatacollection.md)
 
 ## See Also
 
-- [var properties: [USDPrim.Property]](usdprim/properties.md)
+### Accessing properties
+- [var properties: [USDPrim.Property]](./properties.md)
   The properties of this prim, including those provided by its schemas.
-- [var authoredProperties: [USDPrim.Property]](usdprim/authoredproperties.md)
+- [var authoredProperties: [USDPrim.Property]](./authoredproperties.md)
   The properties of this prim that have an authored opinion.
-- [var propertyNames: [USDToken]](usdprim/propertynames.md)
+- [var propertyNames: [USDToken]](./propertynames.md)
   The names of this prim’s properties, including those provided by its schemas.
-- [var authoredPropertyNames: [USDToken]](usdprim/authoredpropertynames.md)
+- [var authoredPropertyNames: [USDToken]](./authoredpropertynames.md)
   The names of this prim’s properties that have an authored opinion.
-- [func property(named: USDToken) -> USDPrim.Property](usdprim/property(named:).md)
+- [func property(named: USDToken) -> USDPrim.Property](./property%28named%29.md)
   Returns the property with a given name on this prim.
-- [func hasProperty(named: USDToken) -> Bool](usdprim/hasproperty(named:).md)
+- [func hasProperty(named: USDToken) -> Bool](./hasproperty%28named%29.md)
   Returns true if an attribute or relationship with a given name exists.
-- [func object(at: USDLayer.Path) -> USDStage.Object](usdprim/object(at:).md)
+- [func object(at: USDLayer.Path) -> USDStage.Object](./object%28at%29.md)
   Returns the object at a given path, relative to this prim.
 
 

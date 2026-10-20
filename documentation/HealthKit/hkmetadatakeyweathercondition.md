@@ -1,7 +1,8 @@
 # HKMetadataKeyWeatherCondition
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that represents the weather condition during the sample.
 
@@ -19,23 +20,28 @@ A key that represents the weather condition during the sample.
 let HKMetadataKeyWeatherCondition: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyWeatherCondition;
+```
+
 #### Discussion
 
-This key takes an an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) value that contains an [`HKWeatherCondition`](hkweathercondition.md) value. Set this key on an [`HKWorkout`](hkworkout.md) object to represent the overall weather condition during the workout.
+This key takes an an [`NSNumber`](../Foundation/nsnumber.md) value that contains an [`HKWeatherCondition`](./hkweathercondition.md) value. Set this key on an [`HKWorkout`](./hkworkout.md) object to represent the overall weather condition during the workout.
 
 ## Topics
 
 ### Valid Weather Conditions
-- [enum HKWeatherCondition](hkweathercondition.md)
+- [enum HKWeatherCondition](./hkweathercondition.md)
   Constants that indicate a type of weather.
 
 ## See Also
 
-- [let HKMetadataKeyBarometricPressure: String](hkmetadatakeybarometricpressure.md)
+### Weather Keys
+- [let HKMetadataKeyBarometricPressure: String](./hkmetadatakeybarometricpressure.md)
   The metadata key for the barometric pressure associated with a sample.
-- [let HKMetadataKeyWeatherHumidity: String](hkmetadatakeyweatherhumidity.md)
+- [let HKMetadataKeyWeatherHumidity: String](./hkmetadatakeyweatherhumidity.md)
   A key that represents the weather humidity during the sample.
-- [let HKMetadataKeyWeatherTemperature: String](hkmetadatakeyweathertemperature.md)
+- [let HKMetadataKeyWeatherTemperature: String](./hkmetadatakeyweathertemperature.md)
   A key that represents the weather temperature during the sample.
 
 

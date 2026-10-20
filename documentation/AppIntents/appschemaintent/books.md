@@ -1,7 +1,8 @@
 # books
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of intent schemas in the books domain.
 
@@ -17,6 +18,8 @@ The collection of intent schemas in the books domain.
 ```swift
 static var books: some AppSchema.BooksIntent { get }
 ```
+
+Available when `Self` is `AppSchema.Intent`.
 
 
 ---

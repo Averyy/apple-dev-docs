@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor that you use to initialize the `LowLevelTexture`.
 

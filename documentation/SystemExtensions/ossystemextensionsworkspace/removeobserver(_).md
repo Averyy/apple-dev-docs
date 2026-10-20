@@ -1,7 +1,8 @@
 # removeObserver(_:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.1+
@@ -10,6 +11,10 @@
 
 ```swift
 func removeObserver(_ observer: any OSSystemExtensionsWorkspaceObserver)
+```
+
+```objc
+- (void) removeObserver:(id<OSSystemExtensionsWorkspaceObserver>) observer;
 ```
 
 #### Discussion

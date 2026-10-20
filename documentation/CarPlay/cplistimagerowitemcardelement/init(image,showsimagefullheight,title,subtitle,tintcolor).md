@@ -1,7 +1,8 @@
 # init(image:showsImageFullHeight:title:subtitle:tintColor:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a card element with an image.
 
@@ -14,6 +15,10 @@ Initialize a card element with an image.
 
 ```swift
 init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)
+```
+
+```objc
+- (instancetype) initWithImage:(UIImage *) image showsImageFullHeight:(BOOL) showsImageFullHeight title:(NSString *) title subtitle:(NSString *) subtitle tintColor:(UIColor *) tintColor;
 ```
 
 ## Parameters

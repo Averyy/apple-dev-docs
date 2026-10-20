@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kATSOptionFlagsDefaultScope: Int](katsoptionflagsdefaultscope.md)
-- [var kATSOptionFlagsIncludeDisabledMask: Int](katsoptionflagsincludedisabledmask.md)
-- [var kATSOptionFlagsIterateByPrecedenceMask: Int](katsoptionflagsiteratebyprecedencemask.md)
-- [var kATSOptionFlagsIterationScopeMask: Int](katsoptionflagsiterationscopemask.md)
-- [var kATSOptionFlagsRestrictedScope: Int](katsoptionflagsrestrictedscope.md)
-- [var kATSOptionFlagsUnRestrictedScope: Int](katsoptionflagsunrestrictedscope.md)
+- [var kATSOptionFlagsDefaultScope: Int](../katsoptionflagsdefaultscope.md)
+- [var kATSOptionFlagsIncludeDisabledMask: Int](../katsoptionflagsincludedisabledmask.md)
+- [var kATSOptionFlagsIterateByPrecedenceMask: Int](../katsoptionflagsiteratebyprecedencemask.md)
+- [var kATSOptionFlagsIterationScopeMask: Int](../katsoptionflagsiterationscopemask.md)
+- [var kATSOptionFlagsRestrictedScope: Int](../katsoptionflagsrestrictedscope.md)
+- [var kATSOptionFlagsUnRestrictedScope: Int](../katsoptionflagsunrestrictedscope.md)
 
 
 ---

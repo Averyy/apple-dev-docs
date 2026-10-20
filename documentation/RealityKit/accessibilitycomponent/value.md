@@ -1,7 +1,8 @@
 # value
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string key that represents the current value of the entity.
 
@@ -11,7 +12,7 @@ A localized string key that represents the current value of the entity.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var value: LocalizedStringResource?
 
 ## See Also
 
-- [var isAccessibilityElement: Bool](accessibilitycomponent/isaccessibilityelement.md)
+### Providing accessibility information
+- [var isAccessibilityElement: Bool](./isaccessibilityelement.md)
   A Boolean value indicating whether the receiver is an accessibility entity that an assistive application can access.
-- [var label: LocalizedStringResource?](accessibilitycomponent/label.md)
+- [var label: LocalizedStringResource?](./label.md)
   A succinct label that identifies the entity, in a localized string key.
 
 

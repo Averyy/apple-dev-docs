@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Availability.available
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system is ready to make requests.
 
@@ -21,9 +22,10 @@ case available
 
 ## See Also
 
-- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](privatecloudcomputelanguagemodel/availability-swift.enum/unavailable(_:).md)
+### Checking for availability
+- [case unavailable(PrivateCloudComputeLanguageModel.Availability.UnavailableReason)](./unavailable%28_%29.md)
   The system isn’t ready for requests.
-- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason](privatecloudcomputelanguagemodel/availability-swift.enum/unavailablereason.md)
+- [PrivateCloudComputeLanguageModel.Availability.UnavailableReason](./unavailablereason.md)
   The reason the model is unavailable.
 
 

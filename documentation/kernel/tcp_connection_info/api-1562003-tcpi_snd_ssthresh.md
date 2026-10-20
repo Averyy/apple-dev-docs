@@ -1,14 +1,15 @@
 # tcpi_snd_ssthresh
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 u_int32_t tcpi_snd_ssthresh;
 ```
 

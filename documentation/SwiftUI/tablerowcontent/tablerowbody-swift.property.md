@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The composition of content that comprise the table row content.
@@ -22,7 +23,8 @@ The composition of content that comprise the table row content.
 
 ## See Also
 
-- [associatedtype TableRowBody : TableRowContent](tablerowcontent/tablerowbody-swift.associatedtype.md)
+### Getting the row body
+- [associatedtype TableRowBody : TableRowContent](./tablerowbody-swift.associatedtype.md)
   The type of content representing the body of this table row content.
 
 

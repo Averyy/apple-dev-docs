@@ -1,7 +1,8 @@
 # RCSMessage.Content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of the RCS message content types supported by the system.
 
@@ -16,64 +17,65 @@ enum Content
 
 #### Overview
 
-The types that are associated values in this enumeration’s cases contain properties unique to their respective content types. For example, [`RCSMessage.Text`](rcsmessage/text.md) content contains a [`body`](rcsmessage/text/body.md) string, while [`RCSMessage.GeolocationPush`](rcsmessage/geolocationpush.md) content has a [`latitude`](rcsmessage/geolocationpush/latitude.md) and [`longitude`](rcsmessage/geolocationpush/longitude.md).
+The types that are associated values in this enumeration’s cases contain properties unique to their respective content types. For example, [`RCSMessage.Text`](./text.md) content contains a [`body`](./text/body.md) string, while [`RCSMessage.GeolocationPush`](./geolocationpush.md) content has a [`latitude`](./geolocationpush/latitude.md) and [`longitude`](./geolocationpush/longitude.md).
 
 ## Topics
 
 ### Working with text content
-- [RCSMessage.Content.text(_:)](rcsmessage/content-swift.enum/text(_:).md)
+- [RCSMessage.Content.text(_:)](./content-swift.enum/text%28_%29.md)
   A content type for text content.
-- [RCSMessage.Text](rcsmessage/text.md)
+- [RCSMessage.Text](./text.md)
   A structure that represents text content in an RCS message.
 ### Working with file transfers
-- [case fileTransfer(RCSMessage.FileTransfer)](rcsmessage/content-swift.enum/filetransfer(_:).md)
+- [case fileTransfer(RCSMessage.FileTransfer)](./content-swift.enum/filetransfer%28_%29.md)
   A content type for file transfer content.
-- [RCSMessage.FileTransfer](rcsmessage/filetransfer.md)
+- [RCSMessage.FileTransfer](./filetransfer.md)
   A structure that represents file transfer content in an RCS message.
 ### Working with geolocation pushes
-- [case geolocationPush(RCSMessage.GeolocationPush)](rcsmessage/content-swift.enum/geolocationpush(_:).md)
+- [case geolocationPush(RCSMessage.GeolocationPush)](./content-swift.enum/geolocationpush%28_%29.md)
   A content type for geolocation push content.
-- [RCSMessage.GeolocationPush](rcsmessage/geolocationpush.md)
+- [RCSMessage.GeolocationPush](./geolocationpush.md)
   A structure that represents geolocation push content in an RCS message.
 ### Working with composing indicators
-- [case composingIndicator(RCSMessage.ComposingIndicator)](rcsmessage/content-swift.enum/composingindicator(_:).md)
+- [case composingIndicator(RCSMessage.ComposingIndicator)](./content-swift.enum/composingindicator%28_%29.md)
   A content type for composing indicator content.
-- [RCSMessage.ComposingIndicator](rcsmessage/composingindicator.md)
+- [RCSMessage.ComposingIndicator](./composingindicator.md)
   A structure that represents RFC 3994 composing indicator content in an RCS message.
 ### Working with disposition notifications
-- [case dispositionNotification(RCSMessage.DispositionNotification)](rcsmessage/content-swift.enum/dispositionnotification(_:).md)
+- [case dispositionNotification(RCSMessage.DispositionNotification)](./content-swift.enum/dispositionnotification%28_%29.md)
   A content type for disposition notification content.
-- [RCSMessage.DispositionNotification](rcsmessage/dispositionnotification.md)
+- [RCSMessage.DispositionNotification](./dispositionnotification.md)
   A structure that represents disposition notification content in an RCS message, such as whether delivery succeeded or failed.
 ### Working with business messages
-- [case businessCard(RCSService.Business.Card)](rcsmessage/content-swift.enum/businesscard(_:).md)
+- [case businessCard(RCSService.Business.Card)](./content-swift.enum/businesscard%28_%29.md)
   A content type for business card content.
-- [RCSService.Business.Card](rcsservice/business/card.md)
+- [RCSService.Business.Card](../rcsservice/business/card.md)
   Structure representing a standalone card.
-- [case businessCardCarousel(RCSService.Business.CardCarousel)](rcsmessage/content-swift.enum/businesscardcarousel(_:).md)
+- [case businessCardCarousel(RCSService.Business.CardCarousel)](./content-swift.enum/businesscardcarousel%28_%29.md)
   A content type for business card carousel content.
-- [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
+- [RCSService.Business.CardCarousel](../rcsservice/business/cardcarousel.md)
   Structure representing a card carousel.
 ### Enumeration Cases
-- [case customReaction(RCSMessage.CustomReaction)](rcsmessage/content-swift.enum/customreaction(_:).md)
+- [case customReaction(RCSMessage.CustomReaction)](./content-swift.enum/customreaction%28_%29.md)
   A content type for custom reaction content.
-- [case reaction(RCSMessage.Reaction)](rcsmessage/content-swift.enum/reaction(_:).md)
+- [case reaction(RCSMessage.Reaction)](./content-swift.enum/reaction%28_%29.md)
   A content type for reaction content.
-- [RCSMessage.Content.reply(_:)](rcsmessage/content-swift.enum/reply(_:).md)
+- [RCSMessage.Content.reply(_:)](./content-swift.enum/reply%28_%29.md)
   A content type for reply content.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let content: RCSMessage.Content](rcsmessage/content-swift.property.md)
+### Accessing message content
+- [let content: RCSMessage.Content](./content-swift.property.md)
   The content of the message.
 
 

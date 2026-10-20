@@ -1,14 +1,15 @@
 # select_fcn_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef int (dev_t, int, void *, struct proc *) select_fcn_t;
 ```
 

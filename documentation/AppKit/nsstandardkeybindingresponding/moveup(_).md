@@ -1,12 +1,13 @@
 # moveUp(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the insertion pointer up in the current content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Moves the insertion pointer up in the current content.
 optional func moveUp(_ sender: Any?)
 ```
 
+```objc
+- (void) moveUp:(id) sender;
+```
+
 ## See Also
 
-- [func moveBackward(Any?)](nsstandardkeybindingresponding/movebackward(_:).md)
+### Moving the Insertion Pointer
+- [func moveBackward(Any?)](./movebackward%28_%29.md)
   Moves the insertion pointer backward in the current content.
-- [func moveDown(Any?)](nsstandardkeybindingresponding/movedown(_:).md)
+- [func moveDown(Any?)](./movedown%28_%29.md)
   Moves the insertion pointer down in the current content.
-- [func moveForward(Any?)](nsstandardkeybindingresponding/moveforward(_:).md)
+- [func moveForward(Any?)](./moveforward%28_%29.md)
   Moves the insertion pointer forward in the current content.
-- [func moveLeft(Any?)](nsstandardkeybindingresponding/moveleft(_:).md)
+- [func moveLeft(Any?)](./moveleft%28_%29.md)
   Moves the insertion pointer left in the current content.
-- [func moveRight(Any?)](nsstandardkeybindingresponding/moveright(_:).md)
+- [func moveRight(Any?)](./moveright%28_%29.md)
   Moves the insertion pointer right in the current content.
 
 

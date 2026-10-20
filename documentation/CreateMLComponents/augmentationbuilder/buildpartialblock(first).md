@@ -1,7 +1,8 @@
 # buildPartialBlock(first:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds a partial result random transformer from the first random transformer.
 
@@ -20,13 +21,20 @@ Builds a partial result random transformer from the first random transformer.
 static func buildPartialBlock(first: some RandomTransformer<Element, Element>) -> some RandomTransformer<Element, Element>
 ```
 
+**Other overloads**:
+
+```swift
+static func buildPartialBlock(first: some Transformer<Element, Element>) -> some RandomTransformer<Element, Element>
+```
+
 ## Parameters
 
 - `first`: A random transformer.
 
 ## See Also
 
-- [static buildPartialBlock(accumulated:next:)](augmentationbuilder/buildpartialblock(accumulated:next:).md)
+### Building augmentations
+- [static buildPartialBlock(accumulated:next:)](./buildpartialblock%28accumulated,next%29.md)
   Builds a partial result by combining an accumulated random transformer and a new random transformer.
 
 

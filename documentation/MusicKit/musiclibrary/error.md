@@ -1,7 +1,8 @@
 # MusicLibrary.Error
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that the music library can throw upon accessing, manipulating, or requesting data from the user’s music library.
 
@@ -23,36 +24,36 @@ enum Error
 ## Topics
 
 ### Enumeration Cases
-- [MusicLibrary.Error.addToPlaylistFailed](musiclibrary/error/addtoplaylistfailed.md)
+- [MusicLibrary.Error.addToPlaylistFailed](./error/addtoplaylistfailed.md)
   An error that indicates a failure in the process of adding an item to a playlist.
-- [MusicLibrary.Error.createPlaylistFailed](musiclibrary/error/createplaylistfailed.md)
+- [MusicLibrary.Error.createPlaylistFailed](./error/createplaylistfailed.md)
   An error that indicates a failure in the process of creating a playlist.
-- [MusicLibrary.Error.editPlaylistFailed](musiclibrary/error/editplaylistfailed.md)
+- [MusicLibrary.Error.editPlaylistFailed](./error/editplaylistfailed.md)
   An error that indicates a failure in the process of editing a playlist.
-- [MusicLibrary.Error.itemAlreadyAdded](musiclibrary/error/itemalreadyadded.md)
+- [MusicLibrary.Error.itemAlreadyAdded](./error/itemalreadyadded.md)
   An error indicating that the item attempting to be added to the user’s music library is already in the library.
-- [MusicLibrary.Error.permissionDenied](musiclibrary/error/permissiondenied.md)
+- [MusicLibrary.Error.permissionDenied](./error/permissiondenied.md)
   An error that occurs when the user doesn’t consent for the current app to access their Apple Music library.
-- [MusicLibrary.Error.playlistNotInLibrary](musiclibrary/error/playlistnotinlibrary.md)
+- [MusicLibrary.Error.playlistNotInLibrary](./error/playlistnotinlibrary.md)
   An error indicating that the playlist attempting to be added to is not in the user’s library.
-- [MusicLibrary.Error.unableToAddItem](musiclibrary/error/unabletoadditem.md)
+- [MusicLibrary.Error.unableToAddItem](./error/unabletoadditem.md)
   An error indicating that the item attempting to be added to the user’s music library cannot be added.
-- [MusicLibrary.Error.unknown](musiclibrary/error/unknown.md)
+- [MusicLibrary.Error.unknown](./error/unknown.md)
   An error indicating the ocurrence of an unknown or unexpected error.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

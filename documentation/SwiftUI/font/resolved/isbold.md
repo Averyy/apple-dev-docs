@@ -1,7 +1,8 @@
 # isBold
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns `true` if the resolved font has a bold trait according to CoreText or the font’s weight is semi-bold or greater.
 

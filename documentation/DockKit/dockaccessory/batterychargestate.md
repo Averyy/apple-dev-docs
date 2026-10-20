@@ -1,7 +1,8 @@
 # DockAccessory.BatteryChargeState
 
 **Framework**: DockKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The charging state of an accessory battery
 
@@ -20,20 +21,20 @@ enum BatteryChargeState
 ## Topics
 
 ### Enumeration Cases
-- [DockAccessory.BatteryChargeState.charging](dockaccessory/batterychargestate/charging.md)
+- [DockAccessory.BatteryChargeState.charging](./batterychargestate/charging.md)
   The battery is charging.
-- [DockAccessory.BatteryChargeState.notChargeable](dockaccessory/batterychargestate/notchargeable.md)
+- [DockAccessory.BatteryChargeState.notChargeable](./batterychargestate/notchargeable.md)
   The battery is not a chargeable battery.
-- [DockAccessory.BatteryChargeState.notCharging](dockaccessory/batterychargestate/notcharging.md)
+- [DockAccessory.BatteryChargeState.notCharging](./batterychargestate/notcharging.md)
   The battery is not charging.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

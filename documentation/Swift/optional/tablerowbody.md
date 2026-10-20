@@ -1,7 +1,8 @@
 # Optional.TableRowBody
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.4+
@@ -15,6 +16,8 @@
 ```swift
 typealias TableRowBody = Never
 ```
+
+Available when `Wrapped` conforms to `TableColumnContent`.
 
 
 ---

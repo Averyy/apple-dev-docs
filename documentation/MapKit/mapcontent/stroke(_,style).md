@@ -1,7 +1,8 @@
 # stroke(_:style:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given shape style to drawn map overlays using the stroke style you specify.
 
@@ -11,7 +12,7 @@ Applies the given shape style to drawn map overlays using the stroke style you s
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -28,13 +29,14 @@ Applies the given shape style to drawn map overlays using the stroke style you s
 
 ## See Also
 
-- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+### Styling the circle
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](./foregroundstyle%28_%29.md)
   Specifies the shape style used to fill content in drawing map overlays.
-- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](./stroke%28_,linewidth%29.md)
   Applies the given shape style to drawn map overlays using the line width you specify.
-- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some MapContent](./stroke%28linewidth%29.md)
   Applies the given stoke drawn map overlays using the line width you specify.
-- [func strokeStyle(style: StrokeStyle) -> some MapContent](mapcontent/strokestyle(style:).md)
+- [func strokeStyle(style: StrokeStyle) -> some MapContent](./strokestyle%28style%29.md)
   Applies the given stroke style to drawn map overlays.
 
 

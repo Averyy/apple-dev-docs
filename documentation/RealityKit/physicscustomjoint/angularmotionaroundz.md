@@ -1,7 +1,8 @@
 # angularMotionAroundZ
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angular motion limits around the z-axis.
 

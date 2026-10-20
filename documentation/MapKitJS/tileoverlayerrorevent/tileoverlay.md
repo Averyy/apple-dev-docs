@@ -1,7 +1,8 @@
 # tileOverlay
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tile overlay object that dispatched the tile error event.
 
@@ -10,7 +11,7 @@ The tile overlay object that dispatched the tile error event.
 
 ## Declaration
 
-```swift
+```
 readonly tileOverlay: TileOverlay;
 ```
 

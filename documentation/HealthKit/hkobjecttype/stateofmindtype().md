@@ -1,7 +1,8 @@
 # stateOfMindType()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func stateOfMindType() -> HKStateOfMindType
+```
+
+```objc
++ (HKStateOfMindType *) stateOfMindType;
 ```
 
 

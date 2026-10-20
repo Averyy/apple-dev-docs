@@ -1,7 +1,8 @@
 # typeAppleEvent
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Apple event.
 

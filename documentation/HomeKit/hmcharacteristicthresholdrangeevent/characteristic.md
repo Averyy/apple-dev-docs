@@ -1,7 +1,8 @@
 # characteristic
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristic associated with the event.
 
@@ -19,9 +20,14 @@ The characteristic associated with the event.
 var characteristic: HMCharacteristic { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMCharacteristic * characteristic;
+```
+
 ## See Also
 
-- [var thresholdRange: HMNumberRange](hmcharacteristicthresholdrangeevent/thresholdrange.md)
+### Inspecting a characteristic threshold event
+- [var thresholdRange: HMNumberRange](./thresholdrange.md)
   The range of the characteristic value that triggers the event.
 
 

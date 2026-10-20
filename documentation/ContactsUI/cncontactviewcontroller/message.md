@@ -1,7 +1,8 @@
 # message
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message displayed under the name of the contact.
 
@@ -17,13 +18,18 @@ The message displayed under the name of the contact.
 var message: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * message;
+```
+
 ## See Also
 
-- [var contact: CNContact](cncontactviewcontroller/contact.md)
+### Displaying Contact Properties
+- [var contact: CNContact](./contact.md)
   The contact being displayed.
-- [var alternateName: String?](cncontactviewcontroller/alternatename.md)
+- [var alternateName: String?](./alternatename.md)
   The name to use if the contact has no display name.
-- [var displayedPropertyKeys: [Any]?](cncontactviewcontroller/displayedpropertykeys.md)
+- [var displayedPropertyKeys: [Any]?](./displayedpropertykeys.md)
   The contact property keys to display.
 
 

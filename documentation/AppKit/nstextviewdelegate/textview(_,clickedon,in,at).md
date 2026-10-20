@@ -1,12 +1,13 @@
 # textView(_:clickedOn:in:at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the user clicks a cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,15 @@ Sent when the user clicks a cell.
 optional func textView(_ textView: NSTextView, clickedOn cell: any NSTextAttachmentCellProtocol, in cellFrame: NSRect, at charIndex: Int)
 ```
 
+```objc
+- (void) textView:(NSTextView *) textView clickedOnCell:(id<NSTextAttachmentCell>) cell inRect:(NSRect) cellFrame atIndex:(NSUInteger) charIndex;
+```
+
 #### Discussion
 
 The delegate can use this message as its cue to perform an action or select the attachment cell’s character. `aTextView` is the first text view in a series shared by a layout manager, not necessarily the one that draws `cell`.
 
-The delegate may subsequently receive a [`textView(_:doubleClickedOn:in:at:)`](nstextviewdelegate/textview(_:doubleclickedon:in:at:).md) message if the user continues to perform a double click.
+The delegate may subsequently receive a [`textView(_:doubleClickedOn:in:at:)`](./textview%28_,doubleclickedon,in,at%29.md) message if the user continues to perform a double click.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ The delegate may subsequently receive a [`textView(_:doubleClickedOn:in:at:)`](n
 
 ## See Also
 
-- [func textView(NSTextView, doubleClickedOn: any NSTextAttachmentCellProtocol, in: NSRect, at: Int)](nstextviewdelegate/textview(_:doubleclickedon:in:at:).md)
+### Clicking and Pasting
+- [func textView(NSTextView, doubleClickedOn: any NSTextAttachmentCellProtocol, in: NSRect, at: Int)](./textview%28_,doubleclickedon,in,at%29.md)
   Sent when the user double-clicks a cell.
-- [func textView(NSTextView, clickedOnLink: Any, at: Int) -> Bool](nstextviewdelegate/textview(_:clickedonlink:at:).md)
+- [func textView(NSTextView, clickedOnLink: Any, at: Int) -> Bool](./textview%28_,clickedonlink,at%29.md)
   Sent after the user clicks a link.
 
 

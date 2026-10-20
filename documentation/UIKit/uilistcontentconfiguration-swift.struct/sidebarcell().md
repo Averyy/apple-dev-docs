@@ -1,15 +1,16 @@
 # sidebarCell()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates the default configuration you use to style a cell in a sidebar list.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS ?+
+- iOS 14.0+ - Deprecated in 18.0 (renamed: cell)
+- iPadOS 14.0+ - Deprecated in 18.0 (renamed: cell)
+- Mac Catalyst 14.0+ - Deprecated in 18.0 (renamed: cell)
+- visionOS
 
 ## Declaration
 
@@ -27,28 +28,29 @@ Create this configuration to update the content and styling of a cell in a sideb
 
 For an appearance consistent with system defaults, display your cell in a sidebar collection view list that you configure with one of the following enumeration cases:
 
-- [`UICollectionLayoutListConfiguration.Appearance.sidebar`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md)
-- [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md)
+- [`UICollectionLayoutListConfiguration.Appearance.sidebar`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md)
+- [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md)
 
-Configure the background of your cell using one of the [`UIBackgroundConfiguration`](uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
+Configure the background of your cell using one of the [`UIBackgroundConfiguration`](../uibackgroundconfiguration-swift.struct.md) options below. Match the background of your cell to the corresponding table view or collection view styles as follows:
 
 | Background configuration option | Matching table view or collection view styles |
 | --- | --- |
-| [`listSidebarCell()`](uibackgroundconfiguration-swift.struct/listsidebarcell().md) | [`UICollectionLayoutListConfiguration.Appearance.sidebar`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md), [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) |
+| [`listSidebarCell()`](../uibackgroundconfiguration-swift.struct/listsidebarcell%28%29.md) | [`UICollectionLayoutListConfiguration.Appearance.sidebar`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebar.md), [`UICollectionLayoutListConfiguration.Appearance.sidebarPlain`](../uicollectionlayoutlistconfiguration-swift.struct/appearance-swift.enum/sidebarplain.md) |
 
 ## See Also
 
-- [static func cell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/cell.md)
+### Creating default cell configurations
+- [static func cell() -> UIListContentConfiguration](./cell%28%29.md)
   Creates the default configuration you use to style a cell in a list.
-- [static func subtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/subtitlecell.md)
+- [static func subtitleCell() -> UIListContentConfiguration](./subtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a list and contains subtitle text.
-- [static func valueCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/valuecell.md)
+- [static func valueCell() -> UIListContentConfiguration](./valuecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a list and contains side-by-side value text.
-- [static func sidebarSubtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/sidebarsubtitlecell.md)
+- [static func sidebarSubtitleCell() -> UIListContentConfiguration](./sidebarsubtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in a sidebar list and contains subtitle text.
-- [static func accompaniedSidebarCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/accompaniedsidebarcell.md)
+- [static func accompaniedSidebarCell() -> UIListContentConfiguration](./accompaniedsidebarcell%28%29.md)
   Creates the default configuration you use to style a cell in an accompanied sidebar list.
-- [static func accompaniedSidebarSubtitleCell() -> UIListContentConfiguration](uilistcontentconfiguration-swift.struct/accompaniedsidebarsubtitlecell.md)
+- [static func accompaniedSidebarSubtitleCell() -> UIListContentConfiguration](./accompaniedsidebarsubtitlecell%28%29.md)
   Creates the default configuration you use to style a cell that’s in an accompanied sidebar list and contains subtitle text.
 
 

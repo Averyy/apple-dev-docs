@@ -1,7 +1,8 @@
 # showsScaling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Print panel includes a control for scaling the printed output.
 
@@ -14,25 +15,30 @@ The Print panel includes a control for scaling the printed output.
 static var showsScaling: NSPrintPanel.Options { get }
 ```
 
+```c
+NSPrintPanelShowsScaling
+```
+
 #### Discussion
 
 This control is separate from any accessory views.
 
 ## See Also
 
-- [static var showsCopies: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showscopies.md)
+### Constants
+- [static var showsCopies: NSPrintPanel.Options](./showscopies.md)
   The Print panel includes a field for manipulating the number of copies being printed.
-- [static var showsPageRange: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showspagerange.md)
+- [static var showsPageRange: NSPrintPanel.Options](./showspagerange.md)
   The Print panel includes a set of fields for manipulating the range of pages being printed.
-- [static var showsPaperSize: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showspapersize.md)
+- [static var showsPaperSize: NSPrintPanel.Options](./showspapersize.md)
   The Print panel includes a control for manipulating the paper size of the printer.
-- [static var showsOrientation: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showsorientation.md)
+- [static var showsOrientation: NSPrintPanel.Options](./showsorientation.md)
   The Print panel includes a control for manipulating the page orientation.
-- [static var showsPrintSelection: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showsprintselection.md)
+- [static var showsPrintSelection: NSPrintPanel.Options](./showsprintselection.md)
   The Print panel includes an additional selection option for paper range.
-- [static var showsPageSetupAccessory: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showspagesetupaccessory.md)
+- [static var showsPageSetupAccessory: NSPrintPanel.Options](./showspagesetupaccessory.md)
   The Print panel includes a separate accessory view for manipulating the paper size, orientation, and scaling attributes.
-- [static var showsPreview: NSPrintPanel.Options](nsprintpanel/options-swift.struct/showspreview.md)
+- [static var showsPreview: NSPrintPanel.Options](./showspreview.md)
   The Print panel displays a built-in preview of the document contents.
 
 

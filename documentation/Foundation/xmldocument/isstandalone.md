@@ -1,7 +1,8 @@
 # isStandalone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets a Boolean value that specifies whether the receiver represents a standalone XML document.
 
@@ -15,25 +16,30 @@ Sets a Boolean value that specifies whether the receiver represents a standalone
 var isStandalone: Bool { get set }
 ```
 
+```objc
+@property (getter=isStandalone) BOOL standalone;
+```
+
 #### Discussion
 
 A standalone document does not have an external DTD associated with it.
 
 ## Parameters
 
-- `standalone`: [`true`](https://developer.apple.com/documentation/swift/true) if the receiver represents a standalone XML document, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `standalone`: [`true`](../../Swift/true.md) if the receiver represents a standalone XML document, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var characterEncoding: String?](xmldocument/characterencoding.md)
+### Managing Document Attributes
+- [var characterEncoding: String?](./characterencoding.md)
   Sets the character encoding of the receiver to `encoding`,
-- [var documentContentKind: XMLDocument.ContentKind](xmldocument/documentcontentkind.md)
+- [var documentContentKind: XMLDocument.ContentKind](./documentcontentkind.md)
   Sets the kind of output content for the receiver.
-- [var dtd: XMLDTD?](xmldocument/dtd.md)
-  Returns an [`XMLDTD`](xmldtd.md) object representing the internal DTD associated with the receiver.
-- [var mimeType: String?](xmldocument/mimetype.md)
+- [var dtd: XMLDTD?](./dtd.md)
+  Returns an [`XMLDTD`](../xmldtd.md) object representing the internal DTD associated with the receiver.
+- [var mimeType: String?](./mimetype.md)
   Returns the MIME type for the receiver.
-- [var version: String?](xmldocument/version.md)
+- [var version: String?](./version.md)
   Sets the version of the receiver’s XML.
 
 

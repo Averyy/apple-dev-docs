@@ -1,7 +1,8 @@
 # UITextItem.Content.link(_:)
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A link to a resource, such as an item on a remote server or the path to a local file.
 
@@ -9,7 +10,7 @@ A link to a resource, such as an item on a remote server or the path to a local 
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,9 +24,10 @@ case link(URL)
 
 ## See Also
 
-- [UITextItem.Content.tag(_:)](uitextitem/content-swift.enum/tag(_:).md)
+### Getting the content type
+- [UITextItem.Content.tag(_:)](./tag%28_%29.md)
   A string that represents a custom tag for a topic.
-- [UITextItem.Content.textAttachment(_:)](uitextitem/content-swift.enum/textattachment(_:).md)
+- [UITextItem.Content.textAttachment(_:)](./textattachment%28_%29.md)
   A text attachment, such as an image or view.
 
 

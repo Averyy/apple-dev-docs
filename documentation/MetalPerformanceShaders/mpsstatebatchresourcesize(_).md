@@ -1,7 +1,8 @@
 # MPSStateBatchResourceSize(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of bytes used to allocate the specified state batch.
 
@@ -17,6 +18,10 @@ Returns the number of bytes used to allocate the specified state batch.
 
 ```swift
 func MPSStateBatchResourceSize(_ batch: [MPSState]?) -> Int
+```
+
+```c
+NSUInteger MPSStateBatchResourceSize(MPSStateBatch *batch);
 ```
 
 

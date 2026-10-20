@@ -1,7 +1,8 @@
 # changesSelectionAsPrimaryAction
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the button represents an action or selection.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the button represents an action or select
 var changesSelectionAsPrimaryAction: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL changesSelectionAsPrimaryAction;
+```
+
 #### Discussion
 
-When a button has this property set to [`true`](https://developer.apple.com/documentation/swift/true), the button changes to a toggle button where tapping it changes it between selected and unselected.
+When a button has this property set to [`true`](../../Swift/true.md), the button changes to a toggle button where tapping it changes it between selected and unselected.
 
 ## See Also
 
-- [var primaryAction: UIAction?](uibarbuttonitem/primaryaction.md)
+### Managing the action
+- [var primaryAction: UIAction?](./primaryaction.md)
   The action associated with the item.
-- [var action: Selector?](uibarbuttonitem/action.md)
+- [var action: Selector?](./action.md)
   The selector defining the action message to send to the target object when the user taps this bar button item.
-- [var target: AnyObject?](uibarbuttonitem/target.md)
+- [var target: AnyObject?](./target.md)
   The object that receives an action when the user selects the item.
 
 

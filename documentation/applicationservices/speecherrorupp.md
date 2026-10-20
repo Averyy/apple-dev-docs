@@ -1,7 +1,8 @@
 # SpeechErrorUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer (UPP) to an error callback function.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer (UPP) to an error callback function.
 typealias SpeechErrorUPP = SpeechErrorProcPtr
 ```
 
+```c
+typedef SpeechErrorProcPtr SpeechErrorUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`SpeechErrorProcPtr`](speecherrorprocptr.md) callback function.
+For more information, see the description of the [`SpeechErrorProcPtr`](./speecherrorprocptr.md) callback function.
 
 
 ---

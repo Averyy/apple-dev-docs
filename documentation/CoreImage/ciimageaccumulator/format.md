@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format of the image accumulator.
 
@@ -19,15 +20,20 @@ The pixel format of the image accumulator.
 var format: CIFormat { get }
 ```
 
+```objc
+@property (readonly) CIFormat format;
+```
+
 #### Discussion
 
 For applicable values, see Pixel Formats.
 
 ## See Also
 
-- [var extent: CGRect](ciimageaccumulator/extent.md)
+### Obtaining Data From an Image Accumulator
+- [var extent: CGRect](./extent.md)
   The extent of the image associated with the image accumulator.
-- [func image() -> CIImage](ciimageaccumulator/image.md)
+- [func image() -> CIImage](./image%28%29.md)
   Returns the current contents of the image accumulator.
 
 

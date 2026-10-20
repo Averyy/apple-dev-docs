@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a badge with the provided custom string.
 
@@ -14,13 +15,18 @@ Creates a badge with the provided custom string.
 init(string: String)
 ```
 
+```objc
+- (instancetype) initWithString:(NSString *) string;
+```
+
 ## Parameters
 
 - `string`: The string label that displays when the badge appears.
 
 ## See Also
 
-- [init(count: Int)](nsmenuitembadge/init(count:).md)
+### Creating menu item badges
+- [init(count: Int)](./init%28count%29.md)
   Creates a badge with a count and an empty string.
 
 

@@ -1,7 +1,8 @@
 # downloadsInterstitialAssets
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Download interstitial assets as listed in the index file. False by default.
 
@@ -19,23 +20,28 @@ Download interstitial assets as listed in the index file. False by default.
 var downloadsInterstitialAssets: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL downloadsInterstitialAssets;
+```
+
 #### Discussion
 
 Ordinarily, interstitial assets are skipped when downloading content for later playback. Setting this property to true will cause interstitial assets to be downloaded as well. Playback of the downloaded content can then match the experience of online streaming playback as closely as possible.
 
 ## See Also
 
-- [var artworkData: Data?](avassetdownloadconfiguration/artworkdata.md)
+### Accessing configuration details
+- [var artworkData: Data?](./artworkdata.md)
   A data value that represents the asset’s artwork.
-- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](avassetdownloadconfiguration/primarycontentconfiguration.md)
+- [var primaryContentConfiguration: AVAssetDownloadContentConfiguration](./primarycontentconfiguration.md)
   The configuration for the primary content that the task downloads.
-- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](avassetdownloadconfiguration/auxiliarycontentconfigurations.md)
+- [var auxiliaryContentConfigurations: [AVAssetDownloadContentConfiguration]](./auxiliarycontentconfigurations.md)
   The configuration for the auxiliary content that the task downloads.
-- [class AVAssetDownloadContentConfiguration](avassetdownloadcontentconfiguration.md)
+- [class AVAssetDownloadContentConfiguration](../avassetdownloadcontentconfiguration.md)
   A configuration object that contains variant qualifiers and media options.
-- [var optimizesAuxiliaryContentConfigurations: Bool](avassetdownloadconfiguration/optimizesauxiliarycontentconfigurations.md)
+- [var optimizesAuxiliaryContentConfigurations: Bool](./optimizesauxiliarycontentconfigurations.md)
   A Boolean value that indicates whether the task optimizes auxiliary content selection.
-- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](avassetdownloadconfiguration/setinterstitialmediaselectioncriteria(_:formediacharacteristic:).md)
+- [func setInterstitialMediaSelectionCriteria([AVPlayerMediaSelectionCriteria], forMediaCharacteristic: AVMediaCharacteristic)](./setinterstitialmediaselectioncriteria%28_,formediacharacteristic%29.md)
   Sets media selection on interstitials for this asset
 
 

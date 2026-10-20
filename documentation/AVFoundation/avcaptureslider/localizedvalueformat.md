@@ -1,7 +1,8 @@
 # localizedValueFormat
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string that defines the presentation of the slider’s value.
 
@@ -18,6 +19,10 @@ A localized string that defines the presentation of the slider’s value.
 var localizedValueFormat: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * localizedValueFormat;
+```
+
 #### Discussion
 
 Specify a format string to modify the presentation of a slider’s value. The format string may only contain `%@` and no other placeholders like `%d`, `%s`, and so on. Setting an Invalid format string results in the value’s default presentation.
@@ -30,9 +35,10 @@ Examples of valid format strings are:
 
 ## See Also
 
-- [var value: Float](avcaptureslider/value.md)
+### Accessing the control value
+- [var value: Float](./value.md)
   The current value of the slider.
-- [var prominentValues: [Float]](avcaptureslider/prominentvalues-199dz.md)
+- [var prominentValues: [Float]](./prominentvalues-199dz.md)
   Values in this array may receive unique visual representations or behaviors.
 
 

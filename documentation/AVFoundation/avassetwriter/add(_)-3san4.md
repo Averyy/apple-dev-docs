@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an input group to an asset writer.
 
@@ -19,11 +20,15 @@ Adds an input group to an asset writer.
 func add(_ inputGroup: AVAssetWriterInputGroup)
 ```
 
+```objc
+- (void) addInputGroup:(AVAssetWriterInputGroup *) inputGroup;
+```
+
 #### Discussion
 
 An asset writer marks tracks associated with grouped inputs as mutually exclusive to each other for playback or other processing, if the output container format supports mutually exclusive relationships among tracks.
 
-When you add an input group to an asset writer, the system sets the value of the default input’s [`marksOutputTrackAsEnabled`](avassetwriterinput/marksoutputtrackasenabled.md) property to [`true`](https://developer.apple.com/documentation/swift/true) and sets the values of the group’s other inputs to [`false`](https://developer.apple.com/documentation/swift/false).
+When you add an input group to an asset writer, the system sets the value of the default input’s [`marksOutputTrackAsEnabled`](../avassetwriterinput/marksoutputtrackasenabled.md) property to [`true`](../../Swift/true.md) and sets the values of the group’s other inputs to [`false`](../../Swift/false.md).
 
 You can’t add input groups after writing starts.
 
@@ -33,9 +38,10 @@ You can’t add input groups after writing starts.
 
 ## See Also
 
-- [var inputGroups: [AVAssetWriterInputGroup]](avassetwriter/inputgroups.md)
+### Configuring input groups
+- [var inputGroups: [AVAssetWriterInputGroup]](./inputgroups.md)
   The input groups an asset writer contains.
-- [func canAdd(AVAssetWriterInputGroup) -> Bool](avassetwriter/canadd(_:)-8s1oh.md)
+- [func canAdd(AVAssetWriterInputGroup) -> Bool](./canadd%28_%29-8s1oh.md)
   Determines whether the asset writer supports adding the input group.
 
 

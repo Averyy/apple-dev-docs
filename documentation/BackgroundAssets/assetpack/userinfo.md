@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 JSON-encoded custom information that’s associated with the asset pack.
 
@@ -25,7 +26,8 @@ This property is `nil` for Apple-hosted asset packs.
 
 ## See Also
 
-- [AssetPack.Status](assetpack/status.md)
+### Accessing asset details
+- [AssetPack.Status](./status.md)
   The status of an asset pack.
 
 

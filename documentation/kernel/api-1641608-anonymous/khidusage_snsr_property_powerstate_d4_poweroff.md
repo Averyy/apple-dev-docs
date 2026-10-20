@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Property_PowerState_D4_PowerOff
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Property_PowerState_D4_PowerOff = 0x0855
 ```
 

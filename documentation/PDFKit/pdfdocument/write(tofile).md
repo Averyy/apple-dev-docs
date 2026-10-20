@@ -1,7 +1,8 @@
 # write(toFile:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the document to a file at the specified path.
 
@@ -19,17 +20,23 @@ Writes the document to a file at the specified path.
 func write(toFile path: String) -> Bool
 ```
 
+```objc
+- (BOOL) writeToFile:(NSString *) path;
+```
+
 ## See Also
 
-- [func dataRepresentation() -> Data?](pdfdocument/datarepresentation.md)
+### Related Documentation
+- [func dataRepresentation() -> Data?](./datarepresentation%28%29.md)
   Returns a representation of the document as an `NSData` object.
-- [func write(toFile: String, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](pdfdocument/write(tofile:withoptions:).md)
+### Writing Out the PDF Data
+- [func write(toFile: String, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](./write%28tofile,withoptions%29.md)
   Writes the document to a file at the specified path with the specified options.
-- [func write(to: URL) -> Bool](pdfdocument/write(to:).md)
+- [func write(to: URL) -> Bool](./write%28to%29.md)
   Writes the document to a location specified by the passed-in URL.
-- [func write(to: URL, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](pdfdocument/write(to:withoptions:).md)
+- [func write(to: URL, withOptions: [PDFDocumentWriteOption : Any]?) -> Bool](./write%28to,withoptions%29.md)
   Writes the document to the specified URL with the specified options.
-- [Data Representations](data-representations.md)
+- [Data Representations](../data-representations.md)
   Operations to represent PDF documents as data objects.
 
 

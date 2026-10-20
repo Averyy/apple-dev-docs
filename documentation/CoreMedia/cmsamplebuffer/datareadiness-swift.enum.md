@@ -1,7 +1,8 @@
 # CMSampleBuffer.DataReadiness
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the readiness of a sample buffer’s data.
 
@@ -23,30 +24,31 @@ enum DataReadiness
 ## Topics
 
 ### States
-- [CMSampleBuffer.DataReadiness.notReady](cmsamplebuffer/datareadiness-swift.enum/notready.md)
+- [CMSampleBuffer.DataReadiness.notReady](./datareadiness-swift.enum/notready.md)
   The media data isn’t ready to use.
-- [CMSampleBuffer.DataReadiness.ready](cmsamplebuffer/datareadiness-swift.enum/ready.md)
+- [CMSampleBuffer.DataReadiness.ready](./datareadiness-swift.enum/ready.md)
   The media data is ready to use.
-- [CMSampleBuffer.DataReadiness.failed(_:)](cmsamplebuffer/datareadiness-swift.enum/failed(_:).md)
+- [CMSampleBuffer.DataReadiness.failed(_:)](./datareadiness-swift.enum/failed%28_%29.md)
   The system failed to load the media data.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dataReadiness: CMSampleBuffer.DataReadiness](cmsamplebuffer/datareadiness-swift.property.md)
+### Determining Readiness
+- [var dataReadiness: CMSampleBuffer.DataReadiness](./datareadiness-swift.property.md)
   A value that indicates the status of the data the sample buffer contains.
-- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](cmsamplebuffer/setdatareadiness(_:).md)
+- [func setDataReadiness(CMSampleBuffer.DataReadiness) throws](./setdatareadiness%28_%29.md)
   Sets the status of the sample buffer’s data.
-- [func makeDataReady() throws](cmsamplebuffer/makedataready.md)
+- [func makeDataReady() throws](./makedataready%28%29.md)
   Makes the sample buffer’s data ready for use by calling its handler closure.
-- [func trackDataReadiness(CMSampleBuffer) throws](cmsamplebuffer/trackdatareadiness(_:).md)
+- [func trackDataReadiness(CMSampleBuffer) throws](./trackdatareadiness%28_%29.md)
   Associates a sample buffer’s data readiness with that of another sample buffer.
 
 

@@ -1,7 +1,8 @@
 # transform(input:output:direction:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes an out-of-place 2D fast Fourier transform.
 
@@ -11,7 +12,7 @@ Computes an out-of-place 2D fast Fourier transform.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

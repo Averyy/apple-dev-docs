@@ -1,7 +1,8 @@
 # couponCode
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The updated coupon code from the payment sheet.
 
@@ -11,7 +12,7 @@ The updated coupon code from the payment sheet.
 
 ## Declaration
 
-```swift
+```
 DOMString couponCode;
 ```
 

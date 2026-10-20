@@ -1,7 +1,8 @@
 # layer
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer that authoring operations are directed to.
 

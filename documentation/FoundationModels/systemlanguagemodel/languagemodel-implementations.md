@@ -1,11 +1,12 @@
 # LanguageModel Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [SystemLanguageModel.Executor](systemlanguagemodel/executor.md)
+- [SystemLanguageModel.Executor](./executor.md)
   An executor that responds to session requests using the on-device system model.
 
 

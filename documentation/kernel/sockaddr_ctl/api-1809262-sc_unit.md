@@ -1,7 +1,8 @@
 # sc_unit
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Kernel controller private unit number.
 
@@ -10,21 +11,22 @@ Kernel controller private unit number.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t sc_unit;
 ```
 
 ## See Also
 
-- [sc_len](sockaddr_ctl/1809243-sc_len.md)
+### Fields
+- [sc_len](./api-1809243-sc_len.md)
   The length of the structure.
-- [sc_family](sockaddr_ctl/1809246-sc_family.md)
+- [sc_family](./api-1809246-sc_family.md)
   AF_SYSTEM.
-- [ss_sysaddr](sockaddr_ctl/1809252-ss_sysaddr.md)
+- [ss_sysaddr](./api-1809252-ss_sysaddr.md)
   AF_SYS_KERNCONTROL.
-- [sc_id](sockaddr_ctl/1809255-sc_id.md)
+- [sc_id](./api-1809255-sc_id.md)
   Controller unique identifier.
-- [sc_reserved](sockaddr_ctl/1809263-sc_reserved.md)
+- [sc_reserved](./api-1809263-sc_reserved.md)
   Reserved, must be set to zero.
 
 

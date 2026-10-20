@@ -1,7 +1,8 @@
 # activeEnergyBurned
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The energy that a person burns during the workout.
 

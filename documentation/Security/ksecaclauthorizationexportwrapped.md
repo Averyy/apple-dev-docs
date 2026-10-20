@@ -1,7 +1,8 @@
 # kSecACLAuthorizationExportWrapped
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Export a wrapped (that is, encrypted) key. This tag is checked on the key being exported; in addition, the `CSSM_ACL_AUTHORIZATION_ENCRYPT` tag is checked for any key used in the wrapping operation.
 
@@ -12,6 +13,10 @@ Export a wrapped (that is, encrypted) key. This tag is checked on the key being 
 
 ```swift
 let kSecACLAuthorizationExportWrapped: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationExportWrapped;
 ```
 
 

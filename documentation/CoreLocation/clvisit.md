@@ -1,7 +1,8 @@
 # CLVisit
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about the user’s location during a specific period of time.
 
@@ -17,61 +18,66 @@ Information about the user’s location during a specific period of time.
 class CLVisit
 ```
 
+```objc
+@interface CLVisit : NSObject
+```
+
 #### Overview
 
-A [`CLVisit`](clvisit.md) object encapsulates information about places that the user has been. Visit objects are created by the system and delivered by the [`CLLocationManager`](cllocationmanager.md) object to its delegate after you start the delivery of events. The visit includes the location where the visit occurred and information about the arrival and departure times as relevant. You do not create visit objects directly, nor should you subclass [`CLVisit`](clvisit.md).
+A [`CLVisit`](./clvisit.md) object encapsulates information about places that the user has been. Visit objects are created by the system and delivered by the [`CLLocationManager`](./cllocationmanager.md) object to its delegate after you start the delivery of events. The visit includes the location where the visit occurred and information about the arrival and departure times as relevant. You do not create visit objects directly, nor should you subclass [`CLVisit`](./clvisit.md).
 
 Visit objects contain as much information about the visit as possible but may not always include both the arrival and departure times. For example, when the user arrives at a location, the system may send an event with only an arrival time. When the user departs a location, the event can contain both the arrival time (if your app was monitoring visits prior to the user’s arrival) and the departure time.
 
 ## Topics
 
 ### Getting the location
-- [var coordinate: CLLocationCoordinate2D](clvisit/coordinate.md)
+- [var coordinate: CLLocationCoordinate2D](./clvisit/coordinate.md)
   The geographical coordinate information.
-- [var horizontalAccuracy: CLLocationAccuracy](clvisit/horizontalaccuracy.md)
+- [var horizontalAccuracy: CLLocationAccuracy](./clvisit/horizontalaccuracy.md)
   The horizontal accuracy (in meters) of the specified coordinate.
 ### Getting the visit duration
-- [var arrivalDate: Date](clvisit/arrivaldate.md)
+- [var arrivalDate: Date](./clvisit/arrivaldate.md)
   The approximate time at which the user arrived at the specified location.
-- [var departureDate: Date](clvisit/departuredate.md)
+- [var departureDate: Date](./clvisit/departuredate.md)
   The approximate time at which the user left the specified location.
 ### Initializers
-- [init?(coder: NSCoder)](clvisit/init(coder:).md)
+- [init?(coder: NSCoder)](./clvisit/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting the current location of a device](getting-the-current-location-of-a-device.md)
+### Location updates
+- [Getting the current location of a device](./getting-the-current-location-of-a-device.md)
   Start location services and provide information the system needs to optimize power usage for those services.
-- [Handling location updates in the background](handling-location-updates-in-the-background.md)
+- [Handling location updates in the background](./handling-location-updates-in-the-background.md)
   Configure your app to receive location updates when it isn’t running in the foreground.
-- [Creating a location push service extension](creating-a-location-push-service-extension.md)
+- [Creating a location push service extension](./creating-a-location-push-service-extension.md)
   Add and configure an extension to enable your location-sharing app to access a person’s location in response to a request from someone else.
-- [class CLLocation](cllocation.md)
+- [class CLLocation](./cllocation.md)
   The latitude, longitude, and course information reported by the system.
-- [struct CLLocationCoordinate2D](cllocationcoordinate2d.md)
+- [struct CLLocationCoordinate2D](./cllocationcoordinate2d.md)
   The latitude and longitude associated with a location, specified using the WGS 84 reference frame.
-- [class CLFloor](clfloor.md)
+- [class CLFloor](./clfloor.md)
   The floor of a building on which the user’s device is located.
-- [class CLLocationSourceInformation](cllocationsourceinformation.md)
+- [class CLLocationSourceInformation](./cllocationsourceinformation.md)
   Information about the source that provides a location.
-- [Monitoring location changes with Core Location](monitoring-location-changes-with-core-location.md)
+- [Monitoring location changes with Core Location](./monitoring-location-changes-with-core-location.md)
   Define boundaries and act on user location updates.
-- [class CLServiceSession](clservicesession-pt7n.md)
+- [class CLServiceSession](./clservicesession-pt7n.md)
   An object that provides diagnostics about an app’s authorization to use location services.
 
 

@@ -1,7 +1,8 @@
 # BNNS.CropResizeLayer.LinearSamplingMode
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that specifies the interpolation sampling mode.
 
@@ -11,8 +12,10 @@ An enumeration that specifies the interpolation sampling mode.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,21 +26,22 @@ enum LinearSamplingMode
 ## Topics
 
 ### Enumeration Cases
-- [BNNS.CropResizeLayer.LinearSamplingMode.alignCorners](bnns/cropresizelayer/linearsamplingmode/aligncorners.md)
-- [BNNS.CropResizeLayer.LinearSamplingMode.default](bnns/cropresizelayer/linearsamplingmode/default.md)
-- [BNNS.CropResizeLayer.LinearSamplingMode.offsetCorners](bnns/cropresizelayer/linearsamplingmode/offsetcorners.md)
-- [BNNS.CropResizeLayer.LinearSamplingMode.strictAlignCorners](bnns/cropresizelayer/linearsamplingmode/strictaligncorners.md)
-- [BNNS.CropResizeLayer.LinearSamplingMode.unalignCorners](bnns/cropresizelayer/linearsamplingmode/unaligncorners.md)
+- [BNNS.CropResizeLayer.LinearSamplingMode.alignCorners](./linearsamplingmode/aligncorners.md)
+- [BNNS.CropResizeLayer.LinearSamplingMode.default](./linearsamplingmode/default.md)
+- [BNNS.CropResizeLayer.LinearSamplingMode.offsetCorners](./linearsamplingmode/offsetcorners.md)
+- [BNNS.CropResizeLayer.LinearSamplingMode.strictAlignCorners](./linearsamplingmode/strictaligncorners.md)
+- [BNNS.CropResizeLayer.LinearSamplingMode.unalignCorners](./linearsamplingmode/unaligncorners.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [BNNS.CropResizeLayer.BoxCoordinateMode](bnns/cropresizelayer/boxcoordinatemode.md)
+### Suporting Types
+- [BNNS.CropResizeLayer.BoxCoordinateMode](./boxcoordinatemode.md)
   An enumeration that defines the convention for specifying the bounding box coordinates of a 2D image.
 
 

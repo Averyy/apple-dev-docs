@@ -1,7 +1,8 @@
 # WKWebExtension.MessagePort.Error.Code.unknown
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an unknown error occurred.
 
@@ -16,6 +17,10 @@ Indicates that an unknown error occurred.
 
 ```swift
 case unknown
+```
+
+```c
+WKWebExtensionMessagePortErrorUnknown
 ```
 
 

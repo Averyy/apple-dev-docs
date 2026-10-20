@@ -1,7 +1,8 @@
 # primarySample
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the primary frame sample for a camera frame.
 
@@ -16,11 +17,12 @@ var primarySample: CameraFrame.Sample { get }
 
 ## See Also
 
-- [CameraFrame.Sample](cameraframe/sample.md)
+### Getting camera frame information
+- [CameraFrame.Sample](./sample.md)
   Information that describes a sample from a camera frame.
-- [func sample(for: CameraFrameProvider.CameraPosition) -> CameraFrame.Sample?](cameraframe/sample(for:).md)
+- [func sample(for: CameraFrameProvider.CameraPosition) -> CameraFrame.Sample?](./sample%28for%29.md)
   Returns the camera frame sample for a given camera position.
-- [var description: String](cameraframe/description.md)
+- [var description: String](./description.md)
   A textual representation of this camera frame.
 
 

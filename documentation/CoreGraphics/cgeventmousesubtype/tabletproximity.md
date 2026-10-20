@@ -1,16 +1,21 @@
 # CGEventMouseSubtype.tabletProximity
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case tabletProximity
+```
+
+```c
+kCGEventMouseSubtypeTabletProximity
 ```
 
 #### Discussion
@@ -19,9 +24,10 @@ Specifies that the mouse event originated from a tablet device with the pen in p
 
 ## See Also
 
-- [CGEventMouseSubtype.defaultType](cgeventmousesubtype/defaulttype.md)
+### Constants
+- [CGEventMouseSubtype.defaultType](./defaulttype.md)
   Specifies that the event is an ordinary mouse event, and does not contain additional tablet device information.
-- [CGEventMouseSubtype.tabletPoint](cgeventmousesubtype/tabletpoint.md)
+- [CGEventMouseSubtype.tabletPoint](./tabletpoint.md)
   Specifies that the mouse event originated from a tablet device, and that the various `kCGTabletEvent` field selectors may be used to obtain tablet-specific data from the mouse event.
 
 

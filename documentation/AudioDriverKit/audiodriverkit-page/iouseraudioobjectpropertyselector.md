@@ -1,7 +1,8 @@
 # IOUserAudioObjectPropertySelector
 
 **Framework**: AudioDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A four character code which, along with the scope and element, specific piece of information about an audio object.
 
@@ -10,7 +11,7 @@ A four character code which, along with the scope and element, specific piece of
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserAudioObjectPropertySelector;
 ```
 
@@ -20,7 +21,8 @@ The property selector specifies the general classification of the property such 
 
 ## See Also
 
-- [PropertiesChanged](iouseraudiodriver/propertieschanged.md)
+### Communicating with the Host
+- [PropertiesChanged](../iouseraudiodriver/propertieschanged.md)
   Informs the host when the state of an object in the driver changes.
 
 

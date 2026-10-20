@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the item is currently selected.
 
@@ -14,13 +15,18 @@ A Boolean indicating whether the item is currently selected.
 var isSelected: Bool { get set }
 ```
 
+```objc
+@property (getter=isSelected) BOOL selected;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the item is selected or [`false`](https://developer.apple.com/documentation/swift/false) when it is not.
+The value of this property is [`true`](../../Swift/true.md) when the item is selected or [`false`](../../Swift/false.md) when it is not.
 
 ## See Also
 
-- [var highlightState: NSCollectionViewItem.HighlightState](nscollectionviewitem/highlightstate-swift.property.md)
+### Managing the Selection and Highlight States
+- [var highlightState: NSCollectionViewItem.HighlightState](./highlightstate-swift.property.md)
   The highlight state currently applied to the item.
 
 

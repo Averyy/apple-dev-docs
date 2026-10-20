@@ -1,7 +1,8 @@
 # UIGraphicsPDFRenderer.DrawingActions
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure for drawing PDF content.
 
@@ -18,19 +19,24 @@ A closure for drawing PDF content.
 typealias DrawingActions = (UIGraphicsPDFRendererContext) -> Void
 ```
 
+```c
+typedef void (^)(UIGraphicsPDFRendererContext *) UIGraphicsPDFDrawingActions;
+```
+
 #### Discussion
 
-`UIGraphicsPDFDrawingActions` defines a block type that takes a [`UIGraphicsPDFRendererContext`](uigraphicspdfrenderercontext.md) object as an argument and has no return value.
+`UIGraphicsPDFDrawingActions` defines a block type that takes a [`UIGraphicsPDFRendererContext`](../uigraphicspdfrenderercontext.md) object as an argument and has no return value.
 
-You provide a block of this type as an argument to the PDF drawing methods on [`UIGraphicsPDFRenderer`](uigraphicspdfrenderer.md). Your block should use the provided PDF renderer context to perform the drawing operations you want the renderer to execute.
+You provide a block of this type as an argument to the PDF drawing methods on [`UIGraphicsPDFRenderer`](../uigraphicspdfrenderer.md). Your block should use the provided PDF renderer context to perform the drawing operations you want the renderer to execute.
 
-See [`Creating a PDF with a PDF renderer`](uigraphicspdfrenderer#Creating-a-PDF-with-a-PDF-renderer.md) for an example use of a `UIGraphicsPDFDrawingActions` block.
+See [Creating a PDF with a PDF renderer](../uigraphicspdfrenderer.md#Creating-a-PDF-with-a-PDF-renderer) for an example use of a `UIGraphicsPDFDrawingActions` block.
 
 ## See Also
 
-- [func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data](uigraphicspdfrenderer/pdfdata(actions:).md)
+### Managing the PDF data
+- [func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data](./pdfdata%28actions%29.md)
   Creates a PDF from a set of drawing instructions and returns it as a data object.
-- [func writePDF(to: URL, withActions: (UIGraphicsPDFRendererContext) -> Void) throws](uigraphicspdfrenderer/writepdf(to:withactions:).md)
+- [func writePDF(to: URL, withActions: (UIGraphicsPDFRendererContext) -> Void) throws](./writepdf%28to,withactions%29.md)
   Creates a PDF from a set of drawing instructions and saves it to a specified URL.
 
 

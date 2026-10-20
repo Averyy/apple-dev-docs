@@ -1,7 +1,8 @@
 # resource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resource that provides the audio stream.
 
@@ -11,7 +12,7 @@ The resource that provides the audio stream.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

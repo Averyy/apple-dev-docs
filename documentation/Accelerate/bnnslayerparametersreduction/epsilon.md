@@ -1,18 +1,19 @@
 # epsilon
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that the operation adds to each element when computing the sum of logarithms.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A value that the operation adds to each element when computing the sum of logari
 var epsilon: Float
 ```
 
+```c
+float epsilon;
+```
+
 ## See Also
 
-- [var i_desc: BNNSNDArrayDescriptor](bnnslayerparametersreduction/i_desc.md)
+### Instance Properties
+- [var i_desc: BNNSNDArrayDescriptor](./i_desc.md)
   The descriptor of the input.
-- [var o_desc: BNNSNDArrayDescriptor](bnnslayerparametersreduction/o_desc.md)
+- [var o_desc: BNNSNDArrayDescriptor](./o_desc.md)
   The descriptor of the output.
-- [var w_desc: BNNSNDArrayDescriptor](bnnslayerparametersreduction/w_desc.md)
+- [var w_desc: BNNSNDArrayDescriptor](./w_desc.md)
   The descriptor of the weights.
-- [var reduce_func: BNNSReduceFunction](bnnslayerparametersreduction/reduce_func.md)
+- [var reduce_func: BNNSReduceFunction](./reduce_func.md)
   The variable that specifies the reduction function.
 
 

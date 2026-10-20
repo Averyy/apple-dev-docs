@@ -1,7 +1,8 @@
 # gss_verify_mic(_:_:_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns an indication of whether the integrity of a message is intact, given its MIC token.
 
@@ -18,9 +19,13 @@ Returns an indication of whether the integrity of a message is intact, given its
 func gss_verify_mic(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_handle: gss_ctx_id_t, _ message_buffer: gss_buffer_t, _ token_buffer: gss_buffer_t, _ qop_state: UnsafeMutablePointer<gss_qop_t>?) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_verify_mic(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, gss_buffer_t const message_buffer, gss_buffer_t const token_buffer, gss_qop_t *qop_state);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) if the message is valid, or another value that indicates the reason for failure. See [`Function Status`](function-status.md) for a complete enumeration of status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) if the message is valid, or another value that indicates the reason for failure. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 
 ## Parameters
 
@@ -28,23 +33,24 @@ A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) if the message is val
 - `context_handle`: The context used to send the message.
 - `message_buffer`: A buffer holding the message to verify.
 - `token_buffer`: A buffer holding the token representing the cryptographic signature the protects the message.
-- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in [`Object Identifiers`](object-identifiers.md) for valid values. Pass `NULL` to ignore this output.
+- `qop_state`: A pointer the function uses to return the quality of protection setting. See Quality of Protection Constants in [Object Identifiers](./object-identifiers.md) for valid values. Pass `NULL` to ignore this output.
 
 ## See Also
 
-- [func gss_get_mic(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_qop_t, gss_buffer_t, gss_buffer_t) -> OM_uint32](gss_get_mic(_:_:_:_:_:).md)
+### Message Wrapping and Verification
+- [func gss_get_mic(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_qop_t, gss_buffer_t, gss_buffer_t) -> OM_uint32](./gss_get_mic%28_,_,_,_,_%29.md)
   Returns a token that contains the MIC for a message.
-- [func gss_wrap(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_qop_t, gss_buffer_t, UnsafeMutablePointer<Int32>?, gss_buffer_t) -> OM_uint32](gss_wrap(_:_:_:_:_:_:_:).md)
+- [func gss_wrap(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_qop_t, gss_buffer_t, UnsafeMutablePointer<Int32>?, gss_buffer_t) -> OM_uint32](./gss_wrap%28_,_,_,_,_,_,_%29.md)
   Returns a secure message created by calculating and attaching a MIC to the input message, and then optionally encrypting it.
-- [func gss_unwrap(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<gss_qop_t>?) -> OM_uint32](gss_unwrap(_:_:_:_:_:_:).md)
+- [func gss_unwrap(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>?, UnsafeMutablePointer<gss_qop_t>?) -> OM_uint32](./gss_unwrap%28_,_,_,_,_,_%29.md)
   Returns the original version of a secure message by optionally decrypting it and then extracting and verifying the attached MIC.
-- [func gss_sign(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t, gss_buffer_t) -> OM_uint32](gss_sign(_:_:_:_:_:).md)
+- [func gss_sign(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, gss_buffer_t, gss_buffer_t) -> OM_uint32](./gss_sign%28_,_,_,_,_%29.md)
   Returns a digital signature for a message.
-- [func gss_verify(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>) -> OM_uint32](gss_verify(_:_:_:_:_:).md)
+- [func gss_verify(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>) -> OM_uint32](./gss_verify%28_,_,_,_,_%29.md)
   Returns a flag that indicates the integrity of a message’s digital signature.
-- [func gss_seal(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, Int32, gss_buffer_t, UnsafeMutablePointer<Int32>, gss_buffer_t) -> OM_uint32](gss_seal(_:_:_:_:_:_:_:).md)
+- [func gss_seal(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, Int32, Int32, gss_buffer_t, UnsafeMutablePointer<Int32>, gss_buffer_t) -> OM_uint32](./gss_seal%28_,_,_,_,_,_,_%29.md)
   Returns a secure message created by calculating and attaching a MIC to the input message, and then optionally encrypting it.
-- [func gss_unseal(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> OM_uint32](gss_unseal(_:_:_:_:_:_:).md)
+- [func gss_unseal(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t, gss_buffer_t, UnsafeMutablePointer<Int32>, UnsafeMutablePointer<Int32>) -> OM_uint32](./gss_unseal%28_,_,_,_,_,_%29.md)
   Returns the original version of a secure message by optionally decrypting it and then extracting and verifying the attached MIC.
 
 

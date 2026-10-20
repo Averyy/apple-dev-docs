@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the viewport which that transforms vertices from normalized device coordinates to window coordinates.
@@ -20,21 +21,26 @@ Sets the viewport which that transforms vertices from normalized device coordina
 func setViewport(_ viewport: MTLViewport)
 ```
 
+```objc
+- (void) setViewport:(MTLViewport) viewport;
+```
+
 #### Discussion
 
-Metal clips fragments that lie outside this viewport, and optionally clamps fragments outside of z-near/z-far range depending on the value you assign to [`setDepthClipMode(_:)`](mtl4rendercommandencoder/setdepthclipmode(_:).md).
+Metal clips fragments that lie outside this viewport, and optionally clamps fragments outside of z-near/z-far range depending on the value you assign to [`setDepthClipMode(_:)`](./setdepthclipmode%28_%29.md).
 
 ## Parameters
 
-- `viewport`: [`MTLViewport`](mtlviewport.md) to set.
+- `viewport`: [`MTLViewport`](../mtlviewport.md) to set.
 
 ## See Also
 
-- [func setViewports([MTLViewport])](mtl4rendercommandencoder/setviewports(_:).md)
+### Configuring viewport and scissor behavior
+- [func setViewports([MTLViewport])](./setviewports%28_%29.md)
   Sets an array of viewports to transform vertices from normalized device coordinates to window coordinates.
-- [func setScissorRect(MTLScissorRect)](mtl4rendercommandencoder/setscissorrect(_:).md)
+- [func setScissorRect(MTLScissorRect)](./setscissorrect%28_%29.md)
   Sets a scissor rectangle to discard fragments outside a specific area.
-- [func setScissorRects([MTLScissorRect])](mtl4rendercommandencoder/setscissorrects(_:).md)
+- [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Sets an array of scissor rectangles for a fragment scissor test.
 
 

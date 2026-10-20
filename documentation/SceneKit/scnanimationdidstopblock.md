@@ -1,16 +1,17 @@
 # SCNAnimationDidStopBlock
 
 **Framework**: SceneKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 typealias SCNAnimationDidStopBlock = (SCNAnimation, any SCNAnimatable, Bool) -> Void
 ```
 
+```c
+typedef void (^)(SCNAnimation *, id<SCNAnimatable>, _Bool) SCNAnimationDidStopBlock;
+```
+
 ## See Also
 
-- [typealias SCNAnimationDidStartBlock](scnanimationdidstartblock.md)
+### Supporting Types
+- [typealias SCNAnimationDidStartBlock](./scnanimationdidstartblock.md)
 
 
 ---

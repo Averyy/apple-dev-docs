@@ -1,7 +1,8 @@
 # post(name:object:userInfo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a notification with a given name, sender, and information and posts it to the notification center.
 
@@ -20,6 +21,10 @@ Creates a notification with a given name, sender, and information and posts it t
 func post(name aName: NSNotification.Name, object anObject: Any?, userInfo aUserInfo: [AnyHashable : Any]? = nil)
 ```
 
+```objc
+- (void) postNotificationName:(NSNotificationName) aName object:(id) anObject userInfo:(NSDictionary *) aUserInfo;
+```
+
 ## Parameters
 
 - `aName`: The name of the notification.
@@ -28,9 +33,10 @@ func post(name aName: NSNotification.Name, object anObject: Any?, userInfo aUser
 
 ## See Also
 
-- [func post(Notification)](notificationcenter/post(_:)-3x2st.md)
+### Posting notifications
+- [func post(Notification)](./post%28_%29-3x2st.md)
   Posts a given notification to the notification center.
-- [func post(name: NSNotification.Name, object: Any?)](notificationcenter/post(name:object:).md)
+- [func post(name: NSNotification.Name, object: Any?)](./post%28name,object%29.md)
   Creates a notification with a given name and sender and posts it to the notification center.
 
 

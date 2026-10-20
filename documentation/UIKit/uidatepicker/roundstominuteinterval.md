@@ -1,7 +1,8 @@
 # roundsToMinuteInterval
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the date rounds to a specific minute interval.
 
@@ -17,21 +18,26 @@ A Boolean value that determines whether the date rounds to a specific minute int
 var roundsToMinuteInterval: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL roundsToMinuteInterval;
+```
+
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), [`date`](uidatepicker/date.md) always rounds to the [`minuteInterval`](uidatepicker/minuteinterval.md) and only produces dates that align with the minute interval. If this property is [`false`](https://developer.apple.com/documentation/swift/false), changes to [`date`](uidatepicker/date.md) ignore the [`minuteInterval`](uidatepicker/minuteinterval.md) property.
+If this property is [`true`](../../Swift/true.md), [`date`](./date.md) always rounds to the [`minuteInterval`](./minuteinterval.md) and only produces dates that align with the minute interval. If this property is [`false`](../../Swift/false.md), changes to [`date`](./date.md) ignore the [`minuteInterval`](./minuteinterval.md) property.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var maximumDate: Date?](uidatepicker/maximumdate.md)
+### Configuring temporal attributes
+- [var maximumDate: Date?](./maximumdate.md)
   The maximum date that a date picker can show.
-- [var minimumDate: Date?](uidatepicker/minimumdate.md)
+- [var minimumDate: Date?](./minimumdate.md)
   The minimum date that a date picker can show.
-- [var minuteInterval: Int](uidatepicker/minuteinterval.md)
+- [var minuteInterval: Int](./minuteinterval.md)
   The interval at which the date picker should display minutes.
-- [var countDownDuration: TimeInterval](uidatepicker/countdownduration.md)
+- [var countDownDuration: TimeInterval](./countdownduration.md)
   The value displayed by the date picker when the mode property is set to show a countdown time.
 
 

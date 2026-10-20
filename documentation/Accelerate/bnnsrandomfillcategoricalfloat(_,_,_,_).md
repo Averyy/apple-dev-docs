@@ -1,7 +1,8 @@
 # BNNSRandomFillCategoricalFloat(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills the specified tensor with random values from the categorical distributions with the given event probabilities.
 
@@ -20,6 +21,10 @@ Fills the specified tensor with random values from the categorical distributions
 func BNNSRandomFillCategoricalFloat(_ generator: BNNSRandomGenerator?, _ desc: UnsafePointer<BNNSNDArrayDescriptor>, _ probabilities: UnsafePointer<BNNSNDArrayDescriptor>, _ log_probabilities: Bool) -> Int32
 ```
 
+```c
+int BNNSRandomFillCategoricalFloat(BNNSRandomGenerator generator, const BNNSNDArrayDescriptor *desc, const BNNSNDArrayDescriptor *probabilities, bool log_probabilities);
+```
+
 #### Discussion
 
 Use this function to fill an array descriptor with random values from a categorical distribution with specified event probabilities or event log probabilities.
@@ -32,7 +37,7 @@ The function treats the first `rank-1` dimensions as batch sizes. On return, the
 
 Supply the probabilities data as nonnegative and finite values. The function normalizes the probabilities values along the innermost dimension so that the probability values (or their exponentials) sum to one along the innermost dimension.
 
-For example, the following code fills an array descriptor with 1024 random integer values between `0` and `14`. The `probabilities` descriptor specifies the likelihood of the random generator selecting any particular value. For example, [`BNNSRandomFillCategoricalFloat(_:_:_:_:)`](bnnsrandomfillcategoricalfloat(_:_:_:_:).md) never selects `0` or `1`, and is twice as likely to select `3` (with a probability of `10`) than `2` (with a probability of `5`).
+For example, the following code fills an array descriptor with 1024 random integer values between `0` and `14`. The `probabilities` descriptor specifies the likelihood of the random generator selecting any particular value. For example, [`BNNSRandomFillCategoricalFloat(_:_:_:_:)`](./bnnsrandomfillcategoricalfloat%28_,_,_,_%29.md) never selects `0` or `1`, and is twice as likely to select `3` (with a probability of `10`) than `2` (with a probability of `5`).
 
 ```swift
  var desc = BNNSNDArrayDescriptor.allocateUninitialized(scalarType: Float.self,
@@ -55,7 +60,7 @@ For example, the following code fills an array descriptor with 1024 random integ
 
 The following graph shows the normalized event probabilities as a line chart and a histogram of the normalized random values as a bar chart:
 
-![A line chart overlaid on a bar chart, with peaks at 3 and 11 on the x-axis.](/images/com.apple.accelerate/media-4182664@2x.png)
+![A line chart overlaid on a bar chart, with peaks at 3 and 11 on the x-axis.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4182664@2x.png)
 
 ## Parameters
 
@@ -66,29 +71,30 @@ The following graph shows the normalized event probabilities as a line chart and
 
 ## See Also
 
-- [class RandomGenerator](bnns/randomgenerator.md)
+### Random number generation
+- [class RandomGenerator](./bnns/randomgenerator.md)
   A random number generator.
-- [func BNNSCreateRandomGenerator(BNNSRandomGeneratorMethod, UnsafePointer<BNNSFilterParameters>?) -> BNNSRandomGenerator?](bnnscreaterandomgenerator(_:_:).md)
+- [func BNNSCreateRandomGenerator(BNNSRandomGeneratorMethod, UnsafePointer<BNNSFilterParameters>?) -> BNNSRandomGenerator?](./bnnscreaterandomgenerator%28_,_%29.md)
   Returns a new random number generator using an internally generated random seed.
-- [func BNNSCreateRandomGeneratorWithSeed(BNNSRandomGeneratorMethod, UInt64, UnsafePointer<BNNSFilterParameters>?) -> BNNSRandomGenerator?](bnnscreaterandomgeneratorwithseed(_:_:_:).md)
+- [func BNNSCreateRandomGeneratorWithSeed(BNNSRandomGeneratorMethod, UInt64, UnsafePointer<BNNSFilterParameters>?) -> BNNSRandomGenerator?](./bnnscreaterandomgeneratorwithseed%28_,_,_%29.md)
   Returns a new random number generator using the specified seed.
-- [struct BNNSRandomGeneratorMethod](bnnsrandomgeneratormethod.md)
+- [struct BNNSRandomGeneratorMethod](./bnnsrandomgeneratormethod.md)
   Constants that describe random number generation methods.
-- [typealias BNNSRandomGenerator](bnnsrandomgenerator.md)
+- [typealias BNNSRandomGenerator](./bnnsrandomgenerator.md)
   A pointer to a random number generator object.
-- [func BNNSRandomFillUniformInt(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int64, Int64) -> Int32](bnnsrandomfilluniformint(_:_:_:_:).md)
+- [func BNNSRandomFillUniformInt(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int64, Int64) -> Int32](./bnnsrandomfilluniformint%28_,_,_,_%29.md)
   Fills the specified tensor with random integer values from the continuous uniform distribution within a range.
-- [func BNNSRandomFillUniformFloat(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](bnnsrandomfilluniformfloat(_:_:_:_:).md)
+- [func BNNSRandomFillUniformFloat(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](./bnnsrandomfilluniformfloat%28_,_,_,_%29.md)
   Fills the specified tensor with random floating-point values from the continuous uniform distribution within a range.
-- [func BNNSRandomFillNormalFloat(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](bnnsrandomfillnormalfloat(_:_:_:_:).md)
+- [func BNNSRandomFillNormalFloat(BNNSRandomGenerator?, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Float, Float) -> Int32](./bnnsrandomfillnormalfloat%28_,_,_,_%29.md)
   Fills the specified tensor with random floating-point values mapped to a normal distribution.
-- [func BNNSRandomGeneratorStateSize(BNNSRandomGenerator?) -> Int](bnnsrandomgeneratorstatesize(_:).md)
+- [func BNNSRandomGeneratorStateSize(BNNSRandomGenerator?) -> Int](./bnnsrandomgeneratorstatesize%28_%29.md)
   Returns the state size, in bytes, of a random number generator.
-- [func BNNSRandomGeneratorGetState(BNNSRandomGenerator?, Int, UnsafeMutableRawPointer) -> Int32](bnnsrandomgeneratorgetstate(_:_:_:).md)
+- [func BNNSRandomGeneratorGetState(BNNSRandomGenerator?, Int, UnsafeMutableRawPointer) -> Int32](./bnnsrandomgeneratorgetstate%28_,_,_%29.md)
   Returns the state of a random number generator.
-- [func BNNSRandomGeneratorSetState(BNNSRandomGenerator?, Int, UnsafeMutableRawPointer) -> Int32](bnnsrandomgeneratorsetstate(_:_:_:).md)
+- [func BNNSRandomGeneratorSetState(BNNSRandomGenerator?, Int, UnsafeMutableRawPointer) -> Int32](./bnnsrandomgeneratorsetstate%28_,_,_%29.md)
   Sets the state of a random number generator.
-- [func BNNSDestroyRandomGenerator(BNNSRandomGenerator?)](bnnsdestroyrandomgenerator(_:).md)
+- [func BNNSDestroyRandomGenerator(BNNSRandomGenerator?)](./bnnsdestroyrandomgenerator%28_%29.md)
   Destroys a random number generator.
 
 

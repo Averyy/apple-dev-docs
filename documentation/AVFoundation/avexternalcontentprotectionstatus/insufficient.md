@@ -1,7 +1,8 @@
 # AVExternalContentProtectionStatus.insufficient
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates insufficient protections exists for display.
 
@@ -19,11 +20,16 @@ A status that indicates insufficient protections exists for display.
 case insufficient
 ```
 
+```c
+AVExternalContentProtectionStatusInsufficient
+```
+
 ## See Also
 
-- [AVExternalContentProtectionStatus.pending](avexternalcontentprotectionstatus/pending.md)
+### Status values
+- [AVExternalContentProtectionStatus.pending](./pending.md)
   A status that indicates content protections are pending.
-- [AVExternalContentProtectionStatus.sufficient](avexternalcontentprotectionstatus/sufficient.md)
+- [AVExternalContentProtectionStatus.sufficient](./sufficient.md)
   A status that indicates sufficient protections exists for display.
 
 

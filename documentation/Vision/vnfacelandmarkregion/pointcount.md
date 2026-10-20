@@ -1,7 +1,8 @@
 # pointCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of points in the face region.
 
@@ -17,6 +18,10 @@ The number of points in the face region.
 
 ```swift
 var pointCount: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger pointCount;
 ```
 
 #### Discussion

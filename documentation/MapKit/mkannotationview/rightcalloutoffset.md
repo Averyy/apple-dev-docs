@@ -1,7 +1,8 @@
 # rightCalloutOffset
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset in points from the middle-right of the annotation view.
 
@@ -15,23 +16,28 @@ The offset in points from the middle-right of the annotation view.
 var rightCalloutOffset: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint rightCalloutOffset;
+```
+
 #### Discussion
 
 This property specifies where the map view shows the anchor of the callout when it orients off the right side of the annotation view.
 
 ## See Also
 
-- [var accessoryOffset: CGPoint](mkannotationview/accessoryoffset.md)
+### Managing callout views
+- [var accessoryOffset: CGPoint](./accessoryoffset.md)
   An offset that changes the accessory’s default anchor point.
-- [var canShowCallout: Bool](mkannotationview/canshowcallout.md)
+- [var canShowCallout: Bool](./canshowcallout.md)
   A Boolean value that indicates whether the annotation view is able to display extra information in a callout.
-- [var leftCalloutAccessoryView: UIView?](mkannotationview/leftcalloutaccessoryview.md)
+- [var leftCalloutAccessoryView: UIView?](./leftcalloutaccessoryview.md)
   The view to display on the left side of the standard callout.
-- [var rightCalloutAccessoryView: UIView?](mkannotationview/rightcalloutaccessoryview.md)
+- [var rightCalloutAccessoryView: UIView?](./rightcalloutaccessoryview.md)
   The view to display on the right side of the standard callout.
-- [var detailCalloutAccessoryView: UIView?](mkannotationview/detailcalloutaccessoryview.md)
+- [var detailCalloutAccessoryView: UIView?](./detailcalloutaccessoryview.md)
   The detail accessory view to use in the standard callout.
-- [var leftCalloutOffset: CGPoint](mkannotationview/leftcalloutoffset.md)
+- [var leftCalloutOffset: CGPoint](./leftcalloutoffset.md)
   The offset in points from the middle-left of the annotation view.
 
 

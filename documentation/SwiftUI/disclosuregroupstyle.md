@@ -1,7 +1,8 @@
 # DisclosureGroupStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the appearance and interaction of disclosure groups within a view hierarchy.
 
@@ -21,9 +22,9 @@ A type that specifies the appearance and interaction of disclosure groups within
 
 #### Overview
 
-To configure the disclosure group style for a view hierarchy, use the [`disclosureGroupStyle(_:)`](view/disclosuregroupstyle(_:).md) modifier.
+To configure the disclosure group style for a view hierarchy, use the [`disclosureGroupStyle(_:)`](./view/disclosuregroupstyle%28_%29.md) modifier.
 
-To create a custom disclosure group style, declare a type that conforms to `DisclosureGroupStyle`. Implement the [`makeBody(configuration:)`](disclosuregroupstyle/makebody(configuration:).md) method to return a view that composes the elements of the `configuration` that SwiftUI provides to your method.
+To create a custom disclosure group style, declare a type that conforms to `DisclosureGroupStyle`. Implement the [`makeBody(configuration:)`](./disclosuregroupstyle/makebody%28configuration%29.md) method to return a view that composes the elements of the `configuration` that SwiftUI provides to your method.
 
 ```swift
 struct MyDisclosureStyle: DisclosureGroupStyle {
@@ -72,39 +73,40 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting the styles
-- [static var automatic: AutomaticDisclosureGroupStyle](disclosuregroupstyle/automatic.md)
+- [static var automatic: AutomaticDisclosureGroupStyle](./disclosuregroupstyle/automatic.md)
   A disclosure group style that resolves its appearance automatically based on the current context.
 ### Creating custom disclosure group styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](disclosuregroupstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./disclosuregroupstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a disclosure group.
-- [struct DisclosureGroupStyleConfiguration](disclosuregroupstyleconfiguration.md)
+- [struct DisclosureGroupStyleConfiguration](./disclosuregroupstyleconfiguration.md)
   The properties of a disclosure group instance.
-- [DisclosureGroupStyle.Configuration](disclosuregroupstyle/configuration.md)
+- [DisclosureGroupStyle.Configuration](./disclosuregroupstyle/configuration.md)
   The properties of a disclosure group instance.
-- [associatedtype Body : View](disclosuregroupstyle/body.md)
+- [associatedtype Body : View](./disclosuregroupstyle/body.md)
   A view that represents the body of a disclosure group.
 ### Supporting types
-- [struct AutomaticDisclosureGroupStyle](automaticdisclosuregroupstyle.md)
+- [struct AutomaticDisclosureGroupStyle](./automaticdisclosuregroupstyle.md)
   A disclosure group style that resolves its appearance automatically based on the current context.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticDisclosureGroupStyle](automaticdisclosuregroupstyle.md)
+- [AutomaticDisclosureGroupStyle](./automaticdisclosuregroupstyle.md)
 
 ## See Also
 
-- [func listStyle<S>(S) -> some View](view/liststyle(_:).md)
+### Styling collection views
+- [func listStyle<S>(S) -> some View](./view/liststyle%28_%29.md)
   Sets the style for lists within this view.
-- [protocol ListStyle](liststyle.md)
+- [protocol ListStyle](./liststyle.md)
   A protocol that describes the behavior and appearance of a list.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
-- [protocol TableStyle](tablestyle.md)
+- [protocol TableStyle](./tablestyle.md)
   A type that applies a custom appearance to all tables within a view.
-- [struct TableStyleConfiguration](tablestyleconfiguration.md)
+- [struct TableStyleConfiguration](./tablestyleconfiguration.md)
   The properties of a table.
-- [func disclosureGroupStyle<S>(S) -> some View](view/disclosuregroupstyle(_:).md)
+- [func disclosureGroupStyle<S>(S) -> some View](./view/disclosuregroupstyle%28_%29.md)
   Sets the style for disclosure groups within this view.
 
 

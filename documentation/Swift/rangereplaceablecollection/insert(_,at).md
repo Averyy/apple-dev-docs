@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Inserts a new element into the collection at the specified position.
@@ -36,12 +37,18 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
+> **Complexity**: O(*n*), where *n* is the length of the collection. If `i == endIndex`, this method is equivalent to `append(_:)`.
 
 ## Parameters
 
 - `newElement`: The new element to insert into the collection.
 - `i`: The position at which to insert the new element. `index` must be a valid index into the collection.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func insert(Self.Element, at: Self.Index)](./insert%28_,at%29-2i3ee.md)
+  Inserts a new element into the collection at the specified position.
 
 
 ---

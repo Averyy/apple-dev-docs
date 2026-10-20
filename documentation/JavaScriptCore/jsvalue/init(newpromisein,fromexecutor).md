@@ -1,7 +1,8 @@
 # init(newPromiseIn:fromExecutor:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a promise object using the specified executor callback.
 
@@ -19,9 +20,13 @@ Creates a promise object using the specified executor callback.
 init!(newPromiseIn context: JSContext!, fromExecutor callback: ((JSValue?, JSValue?) -> Void)!)
 ```
 
+```objc
++ (JSValue *) valueWithNewPromiseInContext:(JSContext *) context fromExecutor:(void (^)(JSValue *resolve, JSValue *reject)) callback;
+```
+
 #### Return Value
 
-A [`JSValue`](jsvalue.md) that represents a new promise JavaScript object.
+A [`JSValue`](../jsvalue.md) that represents a new promise JavaScript object.
 
 #### Discussion
 
@@ -31,40 +36,41 @@ The `resolve` and `reject` callbacks each typically take a single value, which t
 
 ## Parameters
 
-- `context`: The [`JSContext`](jscontext.md) the resulting [`JSValue`](jsvalue.md) belongs to.
+- `context`: The [`JSContext`](../jscontext.md) the resulting [`JSValue`](../jsvalue.md) belongs to.
 - `callback`: A callback block to invoke during initialization of the promise object. The `resolve` and `reject` parameters are functions that you can call to notify any pending reactions about the state of the new promise object.
 
 ## See Also
 
-- [init!(object: Any!, in: JSContext!)](jsvalue/init(object:in:).md)
+### Creating JavaScript Values
+- [init!(object: Any!, in: JSContext!)](./init%28object,in%29.md)
   Creates a JavaScript value by converting the specified native object.
-- [init!(bool: Bool, in: JSContext!)](jsvalue/init(bool:in:).md)
+- [init!(bool: Bool, in: JSContext!)](./init%28bool,in%29.md)
   Creates a JavaScript representation of the specified Boolean value.
-- [init!(double: Double, in: JSContext!)](jsvalue/init(double:in:).md)
+- [init!(double: Double, in: JSContext!)](./init%28double,in%29.md)
   Creates a JavaScript representation of the specified floating-point value.
-- [init!(int32: Int32, in: JSContext!)](jsvalue/init(int32:in:).md)
+- [init!(int32: Int32, in: JSContext!)](./init%28int32,in%29.md)
   Creates a JavaScript representation of the specified signed integer value.
-- [init!(uInt32: UInt32, in: JSContext!)](jsvalue/init(uint32:in:).md)
+- [init!(uInt32: UInt32, in: JSContext!)](./init%28uint32,in%29.md)
   Creates a JavaScript representation of the specified unsigned integer value.
-- [init!(newObjectIn: JSContext!)](jsvalue/init(newobjectin:).md)
+- [init!(newObjectIn: JSContext!)](./init%28newobjectin%29.md)
   Creates a new, empty JavaScript object value.
-- [init!(newArrayIn: JSContext!)](jsvalue/init(newarrayin:).md)
+- [init!(newArrayIn: JSContext!)](./init%28newarrayin%29.md)
   Creates a new, empty JavaScript array value.
-- [init!(newRegularExpressionFromPattern: String!, flags: String!, in: JSContext!)](jsvalue/init(newregularexpressionfrompattern:flags:in:).md)
+- [init!(newRegularExpressionFromPattern: String!, flags: String!, in: JSContext!)](./init%28newregularexpressionfrompattern,flags,in%29.md)
   Creates a JavaScript regular expression value from the specified pattern.
-- [init!(newErrorFromMessage: String!, in: JSContext!)](jsvalue/init(newerrorfrommessage:in:).md)
+- [init!(newErrorFromMessage: String!, in: JSContext!)](./init%28newerrorfrommessage,in%29.md)
   Creates a JavaScript error value with the specified error message.
-- [init!(undefinedIn: JSContext!)](jsvalue/init(undefinedin:).md)
+- [init!(undefinedIn: JSContext!)](./init%28undefinedin%29.md)
   Creates a JavaScript `undefined` value.
-- [init!(nullIn: JSContext!)](jsvalue/init(nullin:).md)
+- [init!(nullIn: JSContext!)](./init%28nullin%29.md)
   Creates a JavaScript `null` value.
-- [init!(point: CGPoint, inContext: JSContext!)](jsvalue/init(point:incontext:).md)
+- [init!(point: CGPoint, inContext: JSContext!)](./init%28point,incontext%29.md)
   Creates a JavaScript representation of the specified point.
-- [init!(range: NSRange, inContext: JSContext!)](jsvalue/init(range:incontext:).md)
+- [init!(range: NSRange, inContext: JSContext!)](./init%28range,incontext%29.md)
   Creates a JavaScript representation of the specified range.
-- [init!(rect: CGRect, inContext: JSContext!)](jsvalue/init(rect:incontext:).md)
+- [init!(rect: CGRect, inContext: JSContext!)](./init%28rect,incontext%29.md)
   Creates a JavaScript representation of the specified rectangle.
-- [init!(size: CGSize, inContext: JSContext!)](jsvalue/init(size:incontext:).md)
+- [init!(size: CGSize, inContext: JSContext!)](./init%28size,incontext%29.md)
   Creates a JavaScript representation of the specified width and height.
 
 

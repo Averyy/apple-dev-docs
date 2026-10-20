@@ -1,7 +1,8 @@
 # LibrarySongs.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a library song resource.
 
@@ -10,7 +11,7 @@ The attributes for a library song resource.
 
 ## Declaration
 
-```swift
+```
 object LibrarySongs.Attributes
 ```
 
@@ -20,6 +21,8 @@ object LibrarySongs.Attributes
 - `artistName` (string) *(required)*: The artist’s name.
 - `artwork` (Artwork) *(required)*: The album artwork.
 - `contentRating` (string): The Recording Industry Association of America (RIAA) rating of the content. The possible values for this rating are `clean` and `explicit`. No value means no rating.
+
+  **Allowed Values**: `clean`, `explicit`
 - `discNumber` (integer): The disc number the song appears on.
 - `durationInMillis` (integer) *(required)*: The approximate length of the song in milliseconds.
 - `genreNames` ([string]) *(required)*: The genre names the song is associated with.
@@ -32,7 +35,8 @@ object LibrarySongs.Attributes
 
 ## See Also
 
-- [object LibrarySongs.Relationships](librarysongs/relationships-data.dictionary.md)
+### Related Objects
+- [object LibrarySongs.Relationships](./relationships-data.dictionary.md)
   The relationships for a library song resource.
 
 

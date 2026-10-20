@@ -1,6 +1,8 @@
 # Creating real-time games
 
-**Framework**: GameKit
+**Framework**: GameKit  
+**Role**: Sample Code  
+**Download**: [CreatingRealTimeGames.zip](https://docs-assets.developer.apple.com/published/bbbac5efeb8f/CreatingRealTimeGames.zip)
 
 Develop games where multiple players interact in real time.
 
@@ -14,24 +16,24 @@ Develop games where multiple players interact in real time.
 
 This sample code project uses the GameKit framework to create a simple real-time game where two players are immediately aware of the actions each other takes. The sample shows both the matchmaker interface that enables players to invite others, and the automatch feature that lets Game Center find players. It provides access to Game Center using the access point and dashboard to show the players’ progress toward an achievement, as well as scores on the game leaderboard. It uses the match object to send game data and text messages between players. It also uses voice chat for additional communications.
 
-To create your own real-time game, replace the SwiftUI files with your gameplay interface, and modify the `RealTimeGame` class to support your game. To extend this sample to use matchmaking rules, see [`Finding players using matchmaking rules`](finding-players-using-matchmaking-rules.md).
+To create your own real-time game, replace the SwiftUI files with your gameplay interface, and modify the `RealTimeGame` class to support your game. To extend this sample to use matchmaking rules, see [Finding players using matchmaking rules](./finding-players-using-matchmaking-rules.md).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To configure the sample code project, perform the following steps in Xcode:
 
 1. Choose Xcode > Settings > Accounts, click the Add button (+), and add your Apple ID account.
 2. Select the project in the Project navigator, click the Signing & Capabilities pane, select the target, and assign your team to it. Optionally, enter a unique identifier in the Bundle Identifier text field. Otherwise, use the existing bundle ID that ends in your team ID.
-3. If necessary, add the Game Center capability (see [`Initializing and configuring Game Center`](initializing-and-configuring-game-center.md)).
-4. In App Store Connect, create an app record that matches the bundle ID (see [`Add a new app`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect Help).
-5. Add a classic leaderboard with `123` as the leaderboard ID, Integer as the score format type, Best Score as the score submission type, High to Low as the sort order, and `0` to `100` as the score range. Add one localization with an integer format. See [`Configure leaderboards`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/configure-leaderboards).
-6. Add an achievement with `1234` as the achievement ID, `100` as the point value, and No for the hidden option (see [`Configure achievements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-game-center/configure-achievements)). Add one localization with an image.
+3. If necessary, add the Game Center capability (see [Enabling and configuring Game Center](./initializing-and-configuring-game-center.md)).
+4. In App Store Connect, create an app record that matches the bundle ID (see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) in App Store Connect Help).
+5. Add a classic leaderboard with `123` as the leaderboard ID, Integer as the score format type, Best Score as the score submission type, High to Low as the sort order, and `0` to `100` as the score range. Add one localization with an integer format. See [Configure leaderboards](https://developer.apple.com/help/app-store-connect/configure-game-center/configure-leaderboards).
+6. Add an achievement with `1234` as the achievement ID, `100` as the point value, and No for the hidden option (see [Configure achievements](https://developer.apple.com/help/app-store-connect/configure-game-center/configure-achievements)). Add one localization with an image.
 7. Connect two iOS devices to your Mac.
 8. If necessary, click Register Device in the Signing & Capabilities pane to create the provisioning profile.
 9. Build and run the sample on the two iOS devices.
 10. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Initialize the Player and Register for Real Time Events
+##### Initialize the player and register for real-time events
 
 Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `RealTimeGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for real-time game events.
 
@@ -40,9 +42,9 @@ Before using any GameKit APIs, the game needs to initialize the local player by 
 GKLocalPlayer.local.register(self)
 ```
 
-##### Start a Real Time Match
+##### Start a real-time match
 
-To start a real-time game, the player taps Choose Player on the content view. Then the `RealTimeGame.choosePlayer()` method creates a match request for a two-player game and presents a [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
+To start a real-time game, the player taps Choose Player on the content view. Then the `RealTimeGame.choosePlayer()` method creates a match request for a two-player game and presents a [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
 
 ```swift
 // Create a match request.
@@ -62,7 +64,7 @@ if let viewController = GKMatchmakerViewController(matchRequest: request) {
 
 After the player selects an opponent in the Game Center interface, GameKit sends the invitation and changes the view controller interface to show the invitation status.
 
-After the opponent accepts the invitation by tapping the notification that appears, GameKit launches the game on their device and invokes the [`player(_:didAccept:)`](gkinviteeventlistener/player(_:didaccept:).md) protocol method. This method presents the matchmaker view controller that shows the connection status.
+After the opponent accepts the invitation by tapping the notification that appears, GameKit launches the game on their device and invokes the [`GKLocalPlayerListener.player(_:didAccept:)`](./gkinviteeventlistener/player%28_,didaccept%29.md) protocol method. This method presents the matchmaker view controller that shows the connection status.
 
 ```swift
 // Present the matchmaker view controller in the invitation state.
@@ -72,19 +74,19 @@ if let viewController = GKMatchmakerViewController(invite: invite) {
 }
 ```
 
-When the status of the players changes from Connecting to Ready in the interface, GameKit invokes the [`matchmakerViewController(_:didFind:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:didfind:).md) method in both game instances, passing the local view controller and new [`GKMatch`](gkmatch.md) object. The `matchmakerViewController(_:didFind:)` method first dismisses the view controller and then starts the match by invoking the `RealTimeGame.startMyMatchWith(match:)` method.
+When the status of the players changes from Connecting to Ready in the interface, GameKit invokes the [`GKMatchmakerViewControllerDelegate.matchmakerViewController(_:didFind:)`](./gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,didfind%29.md) method in both game instances, passing the local view controller and new [`GKMatch`](./gkmatch.md) object. The `matchmakerViewController(_:didFind:)` method first dismisses the view controller and then starts the match by invoking the `RealTimeGame.startMyMatchWith(match:)` method.
 
 The `startMyMatchWith(match:)` method sets the `playingGame` property to `true`, which displays the game interface, and loads the opponent’s avatar.
 
-##### Automatch the Local Player with Others
+##### Automatch the local player with others
 
-To let Game Center find an opponent without presenting the matchmaker view controller, the player taps the Automatch toggle. The `RealTimeGame.findPlayer()` method creates a match request and passes it to the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method. When a player running another game instance taps the Automatch toggle, the `GKMatchmaker.findMatch(for:withCompletionHandler:)` method returns a match object.
+To let Game Center find an opponent without presenting the matchmaker view controller, the player taps the Automatch toggle. The `RealTimeGame.findPlayer()` method creates a match request and passes it to the [`GKMatchmaker.findMatch(for:withCompletionHandler:)`](./gkmatchmaker/findmatch%28for,withcompletionhandler%29.md) method. When a player running another game instance taps the Automatch toggle, the `GKMatchmaker.findMatch(for:withCompletionHandler:)` method returns a match object.
 
-Then the `findPlayer()` method invokes `startMyMatchWith(match:)`, which sets the match’s delegate so that when the opponent connects to the match, GameKit calls the [`match(_:player:didChange:)`](gkmatchdelegate/match(_:player:didchange:)-8ohgr.md) delegate method. The game view displays a placeholder for the opponent’s name until they connect. If the state is `.connected` when GameKit invokes the `RealTimeGame.match(_:player:didChange:)` method, it sets the `opponent` property and loads the opponent’s avatar, which updates the game view.
+Then the `findPlayer()` method invokes `startMyMatchWith(match:)`, which sets the match’s delegate so that when the opponent connects to the match, GameKit calls the [`GKMatchDelegate.match(_:player:didChange:)`](./gkmatchdelegate/match%28_,player,didchange%29-8ohgr.md) delegate method. The game view displays a placeholder for the opponent’s name until they connect. If the state is `.connected` when GameKit invokes the `RealTimeGame.match(_:player:didChange:)` method, it sets the `opponent` property and loads the opponent’s avatar, which updates the game view.
 
 To stop finding players, the player taps Automatch again and it invokes `GKMatchmaker.shared().cancel()`.
 
-##### Exchange Game Data Between Players
+##### Exchange game data between players
 
 Each time the player takes an action, the game shares the results with the other player. When the player taps Take Action, their score increases in both game instances. If the player taps End Game or Forfeit, both game instances exit the match.
 
@@ -103,15 +105,15 @@ When the player taps the message bubble in the game view, the chat view sheet ap
 
 Similarly, the `endMatch()` and `forfeitMatch()` methods encode and send game data, except they send the game outcome.
 
-In the recipient’s game instance, GameKit invokes the [`match(_:didReceive:fromRemotePlayer:)`](gkmatchdelegate/match(_:didreceive:fromremoteplayer:).md) method. The `RealTimeGame` implementation of `match(_:didReceive:fromRemotePlayer:)` decodes the data object and updates the game state, depending on its contents.
+In the recipient’s game instance, GameKit invokes the [`GKMatchDelegate.match(_:didReceive:fromRemotePlayer:)`](./gkmatchdelegate/match%28_,didreceive,fromremoteplayer%29.md) method. The `RealTimeGame` implementation of `match(_:didReceive:fromRemotePlayer:)` decodes the data object and updates the game state, depending on its contents.
 
 For example, this method exits the match if the opponent ends or forfeits the game. In both game instances, an alert appears showing each player the outcome of the game. When the player taps OK, the game returns to the content view.
 
-##### Start Voice Chat Between Players
+##### Start voice chat between players
 
 When the player taps the telephone bubble in the game view, the `RealTimeGame.startVoiceChat()` method starts a voice chat audio session with the opponent.
 
-First it creates a [`GKVoiceChat`](gkvoicechat.md) object, providing a unique name for the channel, sets a connection change handler, and sets the volume.
+First it creates a [`GKVoiceChat`](./gkvoicechat.md) object, providing a unique name for the channel, sets a connection change handler, and sets the volume.
 
 ```swift
 if voiceChat == nil {
@@ -150,7 +152,7 @@ voiceChat.isActive = true
 
 After both players tap the telephone bubble, the state changes to `GKVoiceChat.PlayerState.connected` and they can begin speaking.
 
-The first time the sample starts voice chat, the system displays a dialog asking the player whether the sample may use the microphone. This dialog displays the value of the [`NSMicrophoneUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription) information property list key as the reason for requesting access permission.
+The first time the sample starts voice chat, the system displays a dialog asking the player whether the sample may use the microphone. This dialog displays the value of the [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) information property list key as the reason for requesting access permission.
 
 When the player taps the telephone bubble again, the `stopVoiceChat()` method stops the voice chat and deactivates the shared audio session.
 
@@ -176,7 +178,7 @@ You can enhance this sample to provide more feedback and controls, such as:
 - Let players change the volume using the `voiceChat(volume:)` method.
 - Notify the player when the opponent wants to voice chat.
 
-##### Connect Players with Friends
+##### Connect players with friends
 
 This sample uses Game Center features that let players request friends and let the game access the player’s friends list.
 
@@ -203,11 +205,11 @@ If the status is `GKFriendsAuthorizationStatus.notDetermined` or `GKFriendsAutho
 let players = try await GKLocalPlayer.local.loadFriends()
 ```
 
-The first time the sample loads the player’s friends, the system displays a dialog asking the player whether the sample may access their friends. This dialog displays the value of the [`NSGKFriendListUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsgkfriendlistusagedescription) information property list key as the reason for requesting access permission.
+The first time the sample loads the player’s friends, the system displays a dialog asking the player whether the sample may access their friends. This dialog displays the value of the [`NSGKFriendListUsageDescription`](../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) information property list key as the reason for requesting access permission.
 
-An error occurs if the sample calls [`loadFriends(_:)`](gklocalplayer/loadfriends(_:).md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
+An error occurs if the sample calls [`loadFriends(_:)`](./gklocalplayer/loadfriends%28_%29.md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
 
-##### Report Progress Toward an Achievement
+##### Report progress toward an achievement
 
 The `startMyMatchWith(match:)` method also reports progress toward an achievement. Each time the player starts a match, they earn 10% toward this achievement until they reach 100%.
 
@@ -223,9 +225,9 @@ GKAchievement.report(achievementsToReport, withCompletionHandler: {(error: Error
 })
 ```
 
-For details about configuring achievements for a game, see [`Rewarding players with achievements`](rewarding-players-with-achievements.md).
+For details about configuring achievements for a game, see [Rewarding players with achievements](./rewarding-players-with-achievements.md).
 
-##### Submit Scores to the Leaderboard
+##### Submit scores to the leaderboard
 
 The `saveScore()` method saves the local player’s score to the leaderboard when either the player wins or the opponent forfeits.
 
@@ -238,9 +240,9 @@ GKLeaderboard.submitScore(myScore, context: 0, player: GKLocalPlayer.local,
 }
 ```
 
-For details about configuring leaderboards, see [`Creating recurring leaderboards`](creating-recurring-leaderboards.md).
+For details about configuring leaderboards, see [Creating recurring leaderboards](./creating-recurring-leaderboards.md).
 
-##### Display Achievements and Leaderboards
+##### Display achievements and leaderboards
 
 The player can see their achievements and top scores using the access point that appears in the upper-left corner, or by tapping the buttons below Game Center Data in the content view. For example, when the player taps Top Scores, the `RealTimeGame.topScore()` method shows the scores in the Game Center dashboard.
 
@@ -251,31 +253,32 @@ viewController.gameCenterDelegate = self
 rootViewController?.present(viewController, animated: true) { }
 ```
 
-For more information about displaying Game Center information, see [`Adding an access point to your game`](adding-an-access-point-to-your-game.md) and [`Displaying the Game Center dashboard`](displaying-the-game-center-dashboard.md).
+For more information about displaying Game Center information, see [Adding an access point to your game](./adding-an-access-point-to-your-game.md) and [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md).
 
 ## See Also
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+### Real-time games
+- [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
   Discover and invite other players to participate in a real-time game.
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](./exchanging-data-between-players-in-real-time-games.md)
   Send data between players in a real-time multiplayer game.
-- [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Adding voice chat to multiplayer games](./adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](./finding-players-for-custom-server-based-games.md)
   Connect players to your custom server-hosted games by creating game sessions with hosted matches.
-- [Matchmaking rules](matchmaking-rules.md)
+- [Matchmaking rules](./matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
-- [class GKMatchRequest](gkmatchrequest.md)
+- [class GKMatchRequest](./gkmatchrequest.md)
   An object that encapsulates the parameters to create a real-time or turn-based match.
-- [class GKMatchmaker](gkmatchmaker.md)
+- [class GKMatchmaker](./gkmatchmaker.md)
   An object that creates matches with other players without presenting an interface to the players.
-- [class GKMatchmakerViewController](gkmatchmakerviewcontroller.md)
+- [class GKMatchmakerViewController](./gkmatchmakerviewcontroller.md)
   An interface that allows a player to invite other players to a real-time game and automatch to fill any empty slots.
-- [protocol GKInviteEventListener](gkinviteeventlistener.md)
+- [protocol GKInviteEventListener](./gkinviteeventlistener.md)
   A protocol that handles invite events from Game Center.
-- [class GKInvite](gkinvite.md)
+- [class GKInvite](./gkinvite.md)
   An invitation to join a match sent to the local player from another player.
-- [class GKMatch](gkmatch.md)
+- [class GKMatch](./gkmatch.md)
   A peer-to-peer network between a group of players that sign into Game Center.
 
 

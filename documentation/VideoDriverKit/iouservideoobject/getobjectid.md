@@ -1,7 +1,8 @@
 # GetObjectID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the video object identifier of the object.
 
@@ -10,7 +11,7 @@ Gets the video object identifier of the object.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoObjectID GetObjectID();
 ```
 
@@ -20,7 +21,8 @@ This identifier can be used for object lookup with IOUserVideoDriver.
 
 ## See Also
 
-- [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+### Working with object identifiers
+- [IOUserVideoObjectID](../videodriverkit-page/iouservideoobjectid.md)
   A handle for a a specific video object.
 
 

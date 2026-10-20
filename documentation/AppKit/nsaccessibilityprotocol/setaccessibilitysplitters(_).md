@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the array that contains the views and splitter bar from the split view.
@@ -17,15 +18,16 @@ func setAccessibilitySplitters(_ accessibilitySplitters: [Any]?)
 
 ## See Also
 
-- [func accessibilityNextContents() -> [Any]?](nsaccessibilityprotocol/accessibilitynextcontents.md)
+### Configuring split views
+- [func accessibilityNextContents() -> [Any]?](./accessibilitynextcontents%28%29.md)
   Returns the contents that follow the divider accessibility element.
-- [func setAccessibilityNextContents([Any]?)](nsaccessibilityprotocol/setaccessibilitynextcontents(_:).md)
+- [func setAccessibilityNextContents([Any]?)](./setaccessibilitynextcontents%28_%29.md)
   Sets the contents that follow the divider accessibility element.
-- [func accessibilityPreviousContents() -> [Any]?](nsaccessibilityprotocol/accessibilitypreviouscontents.md)
+- [func accessibilityPreviousContents() -> [Any]?](./accessibilitypreviouscontents%28%29.md)
   Returns the contents that precede the divider accessibility element.
-- [func setAccessibilityPreviousContents([Any]?)](nsaccessibilityprotocol/setaccessibilitypreviouscontents(_:).md)
+- [func setAccessibilityPreviousContents([Any]?)](./setaccessibilitypreviouscontents%28_%29.md)
   Sets the contents that precede the divider accessibility element.
-- [func accessibilitySplitters() -> [Any]?](nsaccessibilityprotocol/accessibilitysplitters.md)
+- [func accessibilitySplitters() -> [Any]?](./accessibilitysplitters%28%29.md)
   Returns an array that contains the views and splitter bar from the split view.
 
 

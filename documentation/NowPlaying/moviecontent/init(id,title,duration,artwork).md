@@ -1,7 +1,8 @@
 # init(id:title:duration:artwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates movie content.
 

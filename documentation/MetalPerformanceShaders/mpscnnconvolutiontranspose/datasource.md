@@ -1,7 +1,8 @@
 # dataSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -17,14 +18,19 @@
 var dataSource: any MPSCNNConvolutionDataSource { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nonnull) id<MPSCNNConvolutionDataSource> dataSource;
+```
+
 ## See Also
 
-- [var groups: Int](mpscnnconvolutiontranspose/groups.md)
-- [var inputFeatureChannels: Int](mpscnnconvolutiontranspose/inputfeaturechannels.md)
-- [var kernelOffsetX: Int](mpscnnconvolutiontranspose/kerneloffsetx.md)
-- [var kernelOffsetY: Int](mpscnnconvolutiontranspose/kerneloffsety.md)
-- [var outputFeatureChannels: Int](mpscnnconvolutiontranspose/outputfeaturechannels.md)
-- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](mpscnnconvolutiontranspose/accumulatorprecisionoption.md)
+### Instance Properties
+- [var groups: Int](./groups.md)
+- [var inputFeatureChannels: Int](./inputfeaturechannels.md)
+- [var kernelOffsetX: Int](./kerneloffsetx.md)
+- [var kernelOffsetY: Int](./kerneloffsety.md)
+- [var outputFeatureChannels: Int](./outputfeaturechannels.md)
+- [var accumulatorPrecisionOption: MPSNNConvolutionAccumulatorPrecisionOption](./accumulatorprecisionoption.md)
 
 
 ---

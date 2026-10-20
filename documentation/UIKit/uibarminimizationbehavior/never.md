@@ -1,7 +1,8 @@
 # UIBarMinimizationBehavior.never
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Bar minimization is disabled.
 
@@ -16,13 +17,18 @@ Bar minimization is disabled.
 case never
 ```
 
+```c
+UIBarMinimizationBehaviorNever
+```
+
 ## See Also
 
-- [UIBarMinimizationBehavior.automatic](uibarminimizationbehavior/automatic.md)
+### Minimizing the bar
+- [UIBarMinimizationBehavior.automatic](./automatic.md)
   The system determines the minimization behavior.
-- [UIBarMinimizationBehavior.onScrollDown](uibarminimizationbehavior/onscrolldown.md)
+- [UIBarMinimizationBehavior.onScrollDown](./onscrolldown.md)
   Minimize when the user scrolls down.
-- [UIBarMinimizationBehavior.onScrollUp](uibarminimizationbehavior/onscrollup.md)
+- [UIBarMinimizationBehavior.onScrollUp](./onscrollup.md)
   Minimize when the user scrolls up.
 
 

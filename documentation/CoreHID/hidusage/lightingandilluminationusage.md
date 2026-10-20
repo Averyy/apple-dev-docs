@@ -1,7 +1,8 @@
 # HIDUsage.LightingAndIlluminationUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,52 +16,52 @@ enum LightingAndIlluminationUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.LightingAndIlluminationUsage.autonomousMode](hidusage/lightingandilluminationusage/autonomousmode.md)
-- [HIDUsage.LightingAndIlluminationUsage.blueLevelCount](hidusage/lightingandilluminationusage/bluelevelcount.md)
-- [HIDUsage.LightingAndIlluminationUsage.blueUpdateChannel](hidusage/lightingandilluminationusage/blueupdatechannel.md)
-- [HIDUsage.LightingAndIlluminationUsage.boundingBoxDepthInMicrometers](hidusage/lightingandilluminationusage/boundingboxdepthinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.boundingBoxHeightInMicrometers](hidusage/lightingandilluminationusage/boundingboxheightinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.boundingBoxWidthInMicrometers](hidusage/lightingandilluminationusage/boundingboxwidthinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.greenLevelCount](hidusage/lightingandilluminationusage/greenlevelcount.md)
-- [HIDUsage.LightingAndIlluminationUsage.greenUpdateChannel](hidusage/lightingandilluminationusage/greenupdatechannel.md)
-- [HIDUsage.LightingAndIlluminationUsage.inputBinding](hidusage/lightingandilluminationusage/inputbinding.md)
-- [HIDUsage.LightingAndIlluminationUsage.intensityLevelCount](hidusage/lightingandilluminationusage/intensitylevelcount.md)
-- [HIDUsage.LightingAndIlluminationUsage.intensityUpdateChannel](hidusage/lightingandilluminationusage/intensityupdatechannel.md)
-- [HIDUsage.LightingAndIlluminationUsage.isProgrammable](hidusage/lightingandilluminationusage/isprogrammable.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampArray](hidusage/lightingandilluminationusage/lamparray.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampArrayAttributesReport](hidusage/lightingandilluminationusage/lamparrayattributesreport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampArrayControlReport](hidusage/lightingandilluminationusage/lamparraycontrolreport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampArrayKind](hidusage/lightingandilluminationusage/lamparraykind.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampAttributesRequestReport](hidusage/lightingandilluminationusage/lampattributesrequestreport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampAttributesResponseReport](hidusage/lightingandilluminationusage/lampattributesresponsereport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampCount](hidusage/lightingandilluminationusage/lampcount.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampId](hidusage/lightingandilluminationusage/lampid.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampIdEnd](hidusage/lightingandilluminationusage/lampidend.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampIdStart](hidusage/lightingandilluminationusage/lampidstart.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampMultiUpdateReport](hidusage/lightingandilluminationusage/lampmultiupdatereport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampPurposes](hidusage/lightingandilluminationusage/lamppurposes.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampRangeUpdateReport](hidusage/lightingandilluminationusage/lamprangeupdatereport.md)
-- [HIDUsage.LightingAndIlluminationUsage.lampUpdateFlags](hidusage/lightingandilluminationusage/lampupdateflags.md)
-- [HIDUsage.LightingAndIlluminationUsage.minUpdateIntervalInMicroseconds](hidusage/lightingandilluminationusage/minupdateintervalinmicroseconds.md)
-- [HIDUsage.LightingAndIlluminationUsage.positionXInMicrometers](hidusage/lightingandilluminationusage/positionxinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.positionYInMicrometers](hidusage/lightingandilluminationusage/positionyinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.positionZInMicrometers](hidusage/lightingandilluminationusage/positionzinmicrometers.md)
-- [HIDUsage.LightingAndIlluminationUsage.redLevelCount](hidusage/lightingandilluminationusage/redlevelcount.md)
-- [HIDUsage.LightingAndIlluminationUsage.redUpdateChannel](hidusage/lightingandilluminationusage/redupdatechannel.md)
-- [HIDUsage.LightingAndIlluminationUsage.updateLatencyInMicroseconds](hidusage/lightingandilluminationusage/updatelatencyinmicroseconds.md)
+- [HIDUsage.LightingAndIlluminationUsage.autonomousMode](./lightingandilluminationusage/autonomousmode.md)
+- [HIDUsage.LightingAndIlluminationUsage.blueLevelCount](./lightingandilluminationusage/bluelevelcount.md)
+- [HIDUsage.LightingAndIlluminationUsage.blueUpdateChannel](./lightingandilluminationusage/blueupdatechannel.md)
+- [HIDUsage.LightingAndIlluminationUsage.boundingBoxDepthInMicrometers](./lightingandilluminationusage/boundingboxdepthinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.boundingBoxHeightInMicrometers](./lightingandilluminationusage/boundingboxheightinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.boundingBoxWidthInMicrometers](./lightingandilluminationusage/boundingboxwidthinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.greenLevelCount](./lightingandilluminationusage/greenlevelcount.md)
+- [HIDUsage.LightingAndIlluminationUsage.greenUpdateChannel](./lightingandilluminationusage/greenupdatechannel.md)
+- [HIDUsage.LightingAndIlluminationUsage.inputBinding](./lightingandilluminationusage/inputbinding.md)
+- [HIDUsage.LightingAndIlluminationUsage.intensityLevelCount](./lightingandilluminationusage/intensitylevelcount.md)
+- [HIDUsage.LightingAndIlluminationUsage.intensityUpdateChannel](./lightingandilluminationusage/intensityupdatechannel.md)
+- [HIDUsage.LightingAndIlluminationUsage.isProgrammable](./lightingandilluminationusage/isprogrammable.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampArray](./lightingandilluminationusage/lamparray.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampArrayAttributesReport](./lightingandilluminationusage/lamparrayattributesreport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampArrayControlReport](./lightingandilluminationusage/lamparraycontrolreport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampArrayKind](./lightingandilluminationusage/lamparraykind.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampAttributesRequestReport](./lightingandilluminationusage/lampattributesrequestreport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampAttributesResponseReport](./lightingandilluminationusage/lampattributesresponsereport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampCount](./lightingandilluminationusage/lampcount.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampId](./lightingandilluminationusage/lampid.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampIdEnd](./lightingandilluminationusage/lampidend.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampIdStart](./lightingandilluminationusage/lampidstart.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampMultiUpdateReport](./lightingandilluminationusage/lampmultiupdatereport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampPurposes](./lightingandilluminationusage/lamppurposes.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampRangeUpdateReport](./lightingandilluminationusage/lamprangeupdatereport.md)
+- [HIDUsage.LightingAndIlluminationUsage.lampUpdateFlags](./lightingandilluminationusage/lampupdateflags.md)
+- [HIDUsage.LightingAndIlluminationUsage.minUpdateIntervalInMicroseconds](./lightingandilluminationusage/minupdateintervalinmicroseconds.md)
+- [HIDUsage.LightingAndIlluminationUsage.positionXInMicrometers](./lightingandilluminationusage/positionxinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.positionYInMicrometers](./lightingandilluminationusage/positionyinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.positionZInMicrometers](./lightingandilluminationusage/positionzinmicrometers.md)
+- [HIDUsage.LightingAndIlluminationUsage.redLevelCount](./lightingandilluminationusage/redlevelcount.md)
+- [HIDUsage.LightingAndIlluminationUsage.redUpdateChannel](./lightingandilluminationusage/redupdatechannel.md)
+- [HIDUsage.LightingAndIlluminationUsage.updateLatencyInMicroseconds](./lightingandilluminationusage/updatelatencyinmicroseconds.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/lightingandilluminationusage/page.md)
+- [static let page: UInt16](./lightingandilluminationusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

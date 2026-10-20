@@ -1,7 +1,8 @@
 # contentRating
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s content age rating.
 
@@ -20,7 +21,8 @@ let contentRating: String?
 
 ## See Also
 
-- [let genres: [String]](managedapp/genres.md)
+### Obtaining rating information
+- [let genres: [String]](./genres.md)
   The app’s localized genres.
 
 

@@ -1,11 +1,12 @@
 # UIColor Implementations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](uicolor/init(named:inbundle:compatiblewithtraitcollection:).md)
+- [init?(named: String, inBundle: Bundle?, compatibleWithTraitCollection: UITraitCollection?)](./init%28named,inbundle,compatiblewithtraitcollection%29.md)
   Creates a color object using the named asset that’s compatible with the specified trait collection.
 
 

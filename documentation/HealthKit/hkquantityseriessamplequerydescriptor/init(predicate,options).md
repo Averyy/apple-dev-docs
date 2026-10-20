@@ -1,7 +1,8 @@
 # init(predicate:options:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a quantity series query descriptor.
 
@@ -10,7 +11,7 @@ Creates a quantity series query descriptor.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,12 +22,13 @@ init(predicate: HKSamplePredicate<HKQuantitySample>, options: HKQuantitySeriesSa
 
 ## Parameters
 
-- `predicate`: A predicate that defines the set of series samples that the query returns. For a list of convenience methods for building predicates, see [`HKQuery`](hkquery.md).
-- `options`: A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](hkquantityseriessamplequerydescriptor/options-swift.struct.md).
+- `predicate`: A predicate that defines the set of series samples that the query returns. For a list of convenience methods for building predicates, see [`HKQuery`](../hkquery.md).
+- `options`: A set of options for the query. For a list of possible values, see [`HKQuantitySeriesSampleQueryDescriptor.Options`](./options-swift.struct.md).
 
 ## See Also
 
-- [HKQuantitySeriesSampleQueryDescriptor.Options](hkquantityseriessamplequerydescriptor/options-swift.struct.md)
+### Creating Series Query Descriptors
+- [HKQuantitySeriesSampleQueryDescriptor.Options](./options-swift.struct.md)
   Options used when querying series data.
 
 

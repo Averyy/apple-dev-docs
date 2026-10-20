@@ -1,7 +1,8 @@
 # numberOfMediaRequests
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of media read requests from the server to this client.
 
@@ -20,6 +21,10 @@ The number of media read requests from the server to this client.
 var numberOfMediaRequests: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfMediaRequests;
+```
+
 #### Discussion
 
 For HTTP live streaming, this property contains the count of media requests downloaded from the server. For progressive-style HTTP media downloads, it contains a count of HTTP `GET` (byte-range) requests for the resource.
@@ -32,17 +37,18 @@ This property is not compatible with key-value observing.
 
 ## See Also
 
-- [var uri: String?](avplayeritemaccesslogevent/uri.md)
+### Getting server-related log events
+- [var uri: String?](./uri.md)
   The URI of the playback item.
-- [var serverAddress: String?](avplayeritemaccesslogevent/serveraddress.md)
+- [var serverAddress: String?](./serveraddress.md)
   The IP address of the server that was the source of the last delivered media segment.
-- [var numberOfServerAddressChanges: Int](avplayeritemaccesslogevent/numberofserveraddresschanges.md)
+- [var numberOfServerAddressChanges: Int](./numberofserveraddresschanges.md)
   A count of changes to the server address over the last uninterrupted period of playback.
-- [var mediaRequestsWWAN: Int](avplayeritemaccesslogevent/mediarequestswwan.md)
+- [var mediaRequestsWWAN: Int](./mediarequestswwan.md)
   The number of network read requests over a WWAN.
-- [var transferDuration: TimeInterval](avplayeritemaccesslogevent/transferduration.md)
+- [var transferDuration: TimeInterval](./transferduration.md)
   The accumulated duration, in seconds, of active network transfer of bytes.
-- [var numberOfBytesTransferred: Int64](avplayeritemaccesslogevent/numberofbytestransferred.md)
+- [var numberOfBytesTransferred: Int64](./numberofbytestransferred.md)
   The accumulated number of bytes transferred by the item.
 
 

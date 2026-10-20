@@ -10,37 +10,38 @@ You interact with an agent or large language model of your choice by entering a 
 
 You can access Xcode intelligence from anywhere in your project, including the source editor, and it blends seamlessly into your workspace. The conversation sidebar behaves like the Project navigator. You can lay out and create tabs for the transcript and artifacts panes, similar to editor panes. You can arrange your workspace to run multiple agents in parallel while editing files in another pane.
 
-![A screenshot of the project window with the conversation sidebar on the left, a transcript in the middle with a message text field below, and the artifacts pane on the right.](/images/com.apple.Xcode/coding-assistant-anatomy@2x.png)
+![A screenshot of the project window with the conversation sidebar on the left, a transcript in the middle with a message text field below, and the artifacts pane on the right.](https://developer.apple.com/tutorials/images/com.apple.Xcode/coding-assistant-anatomy@2x.png)
 
-Before you begin, set up an agent or model in Intelligence settings and choose it in the coding assistant sidebar. For more information, see [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+Before you begin, set up an agent or model in Intelligence settings and choose it in the coding assistant sidebar. For more information, see [Setting up coding intelligence](./setting-up-coding-intelligence.md).
 
 ## Topics
 
 ### Essentials
-- [Setting up coding intelligence](setting-up-coding-intelligence.md)
+- [Setting up coding intelligence](./setting-up-coding-intelligence.md)
   Enable intelligence tools that you want to use in Xcode.
-- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
+- [Writing code with intelligence in Xcode](./writing-code-with-intelligence-in-xcode.md)
   Start conversations with an agent or model in Xcode to generate code, navigate unfamiliar codebases, and fix or refactor existing code.
-- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+- [Using coding intelligence in the source editor](./using-coding-intelligence-in-the-source-editor.md)
   Submit prompts in the same place you want to make changes to your code.
 ### Skills and expertise
-- [Localizing your app using agents](localizing-your-app-using-agents.md)
+- [Localizing your app using agents](./localizing-your-app-using-agents.md)
   Use agentic coding tools to translate the strings in your app into multiple languages and regions.
 ### Agent configuration
-- [Extending and customizing agents](extending-and-customizing-agents.md)
+- [Extending and customizing agents](./extending-and-customizing-agents.md)
   Expand agent capabilities for your specific needs and application domain.
-- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
+- [Giving external agents access to Xcode](./giving-external-agents-access-to-xcode.md)
   Let agents access your project and Xcode capabilities using the Model Context Protocol.
-- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+- [Updating your Xcode project configuration file format](./updating-your-xcode-project-configuration-file-format.md)
   Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 ## See Also
 
-- [Source editor](source-editor.md)
+### Code
+- [Source editor](./source-editor.md)
   Edit your source files, locate issues, and make necessary changes using the source editor.
-- [Bundles and frameworks](bundles-and-frameworks.md)
+- [Bundles and frameworks](./bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
-- [Swift packages](swift-packages.md)
+- [Swift packages](./swift-packages.md)
   Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.
 
 

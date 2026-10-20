@@ -1,17 +1,22 @@
 # close()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes all of the document’s windows and removes the document from its document controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func close()
+```
+
+```objc
+- (void) close;
 ```
 
 #### Discussion
@@ -20,9 +25,11 @@ This method closes the document immediately, without asking users if they want t
 
 ## See Also
 
-- [func shouldCloseWindowController(NSWindowController, delegate: Any?, shouldClose: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/shouldclosewindowcontroller(_:delegate:shouldclose:contextinfo:).md)
+### Related Documentation
+- [func shouldCloseWindowController(NSWindowController, delegate: Any?, shouldClose: Selector?, contextInfo: UnsafeMutableRawPointer?)](./shouldclosewindowcontroller%28_,delegate,shouldclose,contextinfo%29.md)
   Determines whether the system should close the document and its associated window.
-- [func canClose(withDelegate: Any, shouldClose: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/canclose(withdelegate:shouldclose:contextinfo:).md)
+### Closing the Document
+- [func canClose(withDelegate: Any, shouldClose: Selector?, contextInfo: UnsafeMutableRawPointer?)](./canclose%28withdelegate,shouldclose,contextinfo%29.md)
   Determines whether to close the document, prompting the user as needed to choose a course of action.
 
 

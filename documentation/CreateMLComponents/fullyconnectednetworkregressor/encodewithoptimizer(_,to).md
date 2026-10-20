@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a fitted transformer with an optimizer.
 
@@ -19,6 +20,8 @@ Encodes a fitted transformer with an optimizer.
 ```swift
 func encodeWithOptimizer(_ transformer: FullyConnectedNetworkRegressor<Scalar>.Transformer, to encoder: inout any EstimatorEncoder) throws
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 ## Parameters
 

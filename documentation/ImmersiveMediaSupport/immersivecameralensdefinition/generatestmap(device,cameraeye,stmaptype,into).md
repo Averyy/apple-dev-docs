@@ -1,7 +1,8 @@
 # generateSTMap(device:cameraEye:stmapType:into:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates an STMap for the given projection type and for the given camera eye into the provided texture asynchronously.
 

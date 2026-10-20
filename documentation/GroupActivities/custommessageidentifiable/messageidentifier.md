@@ -2,6 +2,7 @@
 
 **Framework**: Group Activities  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A custom identification string for the current type.
@@ -22,7 +23,7 @@ static var messageIdentifier: String { get }
 
 #### Discussion
 
-The string you return from this property must be unique among your app’s custom message types. When you send a message, [`GroupSessionMessenger`](groupsessionmessenger.md) includes this string in the data it sends to other devices. When it receives a message, [`GroupSessionMessenger`](groupsessionmessenger.md) creates the type that contains the matching string in this property.
+The string you return from this property must be unique among your app’s custom message types. When you send a message, [`GroupSessionMessenger`](../groupsessionmessenger.md) includes this string in the data it sends to other devices. When it receives a message, [`GroupSessionMessenger`](../groupsessionmessenger.md) creates the type that contains the matching string in this property.
 
 
 ---

@@ -1,7 +1,8 @@
 # addNavigationChildContext(_:)
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child context that users can navigate to from this context.
 
@@ -18,9 +19,13 @@ Adds a child context that users can navigate to from this context.
 func addNavigationChildContext(_ child: CLSContext)
 ```
 
+```objc
+- (void) addNavigationChildContext:(CLSContext *) child;
+```
+
 #### Discussion
 
-Use this method to add a child to the [`navigationChildContexts`](clscontext/navigationchildcontexts.md) collection of a given context. This only affects presentation. The method doesn’t alter your app’s context hierarchy because it has no effect on the context’s [`identifierPath`](clscontext/identifierpath.md).
+Use this method to add a child to the [`navigationChildContexts`](./navigationchildcontexts.md) collection of a given context. This only affects presentation. The method doesn’t alter your app’s context hierarchy because it has no effect on the context’s [`identifierPath`](./identifierpath.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Use this method to add a child to the [`navigationChildContexts`](clscontext/nav
 
 ## See Also
 
-- [var navigationChildContexts: [CLSContext]](clscontext/navigationchildcontexts.md)
+### Creating a context presentation hierarchy
+- [var navigationChildContexts: [CLSContext]](./navigationchildcontexts.md)
   The child contexts that a user can navigate to from this context in the Schoolwork app.
-- [func removeNavigationChildContext(CLSContext)](clscontext/removenavigationchildcontext(_:).md)
+- [func removeNavigationChildContext(CLSContext)](./removenavigationchildcontext%28_%29.md)
   Removes the specified context as a presentable child of this context.
 
 

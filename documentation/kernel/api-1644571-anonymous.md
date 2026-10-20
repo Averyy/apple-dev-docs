@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMirrorAreMirroredMask](1644571-anonymous/kmirroraremirroredmask.md)
-- [kMirrorCanChangePixelFormatMask](1644571-anonymous/kmirrorcanchangepixelformatmask.md)
-- [kMirrorCanChangeTimingMask](1644571-anonymous/kmirrorcanchangetimingmask.md)
-- [kMirrorCanMirrorMask](1644571-anonymous/kmirrorcanmirrormask.md)
-- [kMirrorClippedMirrorMask](1644571-anonymous/kmirrorclippedmirrormask.md)
-- [kMirrorHAlignCenterMirrorMask](1644571-anonymous/kmirrorhaligncentermirrormask.md)
-- [kMirrorUnclippedMirrorMask](1644571-anonymous/kmirrorunclippedmirrormask.md)
-- [kMirrorVAlignCenterMirrorMask](1644571-anonymous/kmirrorvaligncentermirrormask.md)
+- [kMirrorAreMirroredMask](./api-1644571-anonymous/kmirroraremirroredmask.md)
+- [kMirrorCanChangePixelFormatMask](./api-1644571-anonymous/kmirrorcanchangepixelformatmask.md)
+- [kMirrorCanChangeTimingMask](./api-1644571-anonymous/kmirrorcanchangetimingmask.md)
+- [kMirrorCanMirrorMask](./api-1644571-anonymous/kmirrorcanmirrormask.md)
+- [kMirrorClippedMirrorMask](./api-1644571-anonymous/kmirrorclippedmirrormask.md)
+- [kMirrorHAlignCenterMirrorMask](./api-1644571-anonymous/kmirrorhaligncentermirrormask.md)
+- [kMirrorUnclippedMirrorMask](./api-1644571-anonymous/kmirrorunclippedmirrormask.md)
+- [kMirrorVAlignCenterMirrorMask](./api-1644571-anonymous/kmirrorvaligncentermirrormask.md)
 
 
 ---

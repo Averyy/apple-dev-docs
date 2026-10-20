@@ -13,33 +13,47 @@ framework: HIG
 
 Game Center is Apple’s social gaming network, which lets players track their progress and connect with friends across Apple platforms, and boosts the discovery of your game across players’ devices.
 
-![A sketch of the Game Center icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](/images/com.apple.HIG/technologies-Game-Center-intro~dark@2x.png)
+![A sketch of the Game Center icon. The image is overlaid with rectangular and circular grid lines and is tinted blue to subtly reflect the blue in the original six-color Apple logo.](https://developer.apple.com/tutorials/images/com.apple.HIG/technologies-Game-Center-intro@2x.png)
+
 Supporting Game Center in your game allows players to:
+
 - Discover new games their friends are playing.
 - Seamlessly invite friends to play.
 - See the latest activity from their games across the system, in the Apple Games app, the App Store, notifications, and more.
+
 By enabling the player activities listed above, supporting Game Center also helps surface your game to more players across Apple platforms.
-You can add Game Center into your game using the GameKit framework, which provides a full-featured UI that makes it easy for players to access and view their Game Center data within your game. Alternatively, you can also use GameKit to present this data within your own custom UI. For developer guidance, see [GameKit](../gamekit.md).
+
+You can add Game Center into your game using the GameKit framework, which provides a full-featured UI that makes it easy for players to access and view their Game Center data within your game. Alternatively, you can also use GameKit to present this data within your own custom UI. For developer guidance, see [GameKit](../GameKit/GameKit.md).
 
 ## Accessing Game Center
 To provide the best Game Center experience for your players, begin by determining whether the player is signed in to their Game Center account on the system when they launch your game. If they aren’t, initialize the player with Game Center at that time. This provides the most seamless user experience, and maximizes discovery opportunities for your game, such as in the Top Played chart and in social recommendations through players’ friends.
 
 ### Integrating the access point
-The Game Center *access point* is an Apple-designed UI element that lets players view their Game Center profile and information without leaving your game. For developer guidance, see [Adding an access point to your game](../gamekit/adding-an-access-point-to-your-game.md).
-![An iPhone screenshot of the game The Coast, on the title screen. The access point control, a circular button with a diagonal rocket symbol, sits in the upper corner on the leading edge.](/images/com.apple.HIG/games-access-point-collapsed@2x.png)
+The Game Center *access point* is an Apple-designed UI element that lets players view their Game Center profile and information without leaving your game. For developer guidance, see [Adding an access point to your game](../GameKit/adding-an-access-point-to-your-game.md).
+
+![An iPhone screenshot of the game The Coast, on the title screen. The access point control, a circular button with a diagonal rocket symbol, sits in the upper corner on the leading edge.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-access-point-collapsed@2x.png)
+
 In iOS, iPadOS, and macOS the access point leads players to the Game Overlay, a system overlay that allows players to view their progress and start game activities.
-![An illustration composed of an iPhone screenshot and an iPad screenshot, both of the game The Coast, with the Game Overlay appearing over the top of each. In the iPhone screenshot the overlay covers the entire screen, while in the iPad screenshot the overlay appears vertically on the trailing edge.](/images/com.apple.HIG/games-game-overlay~dark@2x.png)
+
+![An illustration composed of an iPhone screenshot and an iPad screenshot, both of the game The Coast, with the Game Overlay appearing over the top of each. In the iPhone screenshot the overlay covers the entire screen, while in the iPad screenshot the overlay appears vertically on the trailing edge.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-game-overlay@2x.png)
+
 In visionOS and tvOS, the access point leads players to the in-game dashboard, a full-screen view of a player’s Game Center activity that appears on top of your game.
+
 **Display the access point in menu screens.** Consider adding the access point to the main menu or the settings area of your game. Avoid displaying the access point during active gameplay or in temporary splash screens, cinematic flows, or tutorials that might precede your game’s main menu screen.
+
 **Avoid placing controls near the access point.** You can choose to present the access point at any of the four corners of the screen in a fixed position. Remember that the access point has both a collapsed and expanded version, so check whether the access point overlaps any important UI and controls and adjust your layout accordingly.
 
-> **Note:** In visionOS, the locations of the access point vary based on game type, such as immersive or volume-based. For developer guidance, see [Adding an access point to your game](../gamekit/adding-an-access-point-to-your-game.md).
+> **Note:** In visionOS, the locations of the access point vary based on game type, such as immersive or volume-based. For developer guidance, see [Adding an access point to your game](../GameKit/adding-an-access-point-to-your-game.md).
+
 **Consider pausing your game while the Game Overlay or dashboard is present.** Pausing your game can help players view their Game Center information without feeling like the game is continuing without them.
 
 ### Using custom UI
 Your game can include custom links into the Game Overlay (in iOS, iPadOS, macOS) or the dashboard (in visionOS and tvOS). Your custom UI can deep-link into specific areas within both such as leaderboards or a player’s Game Center profile.
+
 **Use the artwork Game Center provides in custom links.** When referencing Game Center features in custom UI, use the official artwork from [Apple Design Resources](https://developer.apple.com/design/resources/#technologies). Preserve the appearance of this artwork and don’t adjust the dimensions or visual effects.
+
 **Use the correct terminology in custom links.** The following table describes how to use Game Center terminology correctly so that you can avoid confusing players in custom UI.
+
 | Term | Incorrect terms | Localization |
 | --- | --- | --- |
 | Game Center | GameKit, GameCenter, game center | Use the system-provided translation of *Game Center* |
@@ -49,58 +63,139 @@ Your game can include custom links into the Game Overlay (in iOS, iPadOS, macOS)
 | Challenges | Competitions |  |
 | Add Friends | Add, Add Profiles, Include Friends |  |
 
-
 ## Achievements
-Achievements give players an added incentive to stay engaged with your game. Game Center achievements appear in a collectible card format that highlights the player’s progress and showcases your artwork. For developer guidance, see [Rewarding players with achievements](../gamekit/rewarding-players-with-achievements.md).
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Achievements overview screen.](/images/com.apple.HIG/games-achievement-overlay@2x.png)
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single achievement.](/images/com.apple.HIG/games-achievement-overlay-detail@2x.png)
+Achievements give players an added incentive to stay engaged with your game. Game Center achievements appear in a collectible card format that highlights the player’s progress and showcases your artwork. For developer guidance, see [Rewarding players with achievements](../GameKit/rewarding-players-with-achievements.md).
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Achievements overview screen.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-achievement-overlay@2x.png)
+Achievements overview
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single achievement.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-achievement-overlay-detail@2x.png)
+Achievement detail
 
 ### Integrating achievements into your game
 **Align with Game Center achievement states.** Game Center defines four achievement states: locked, in-progress, hidden, and completed. The system groups achievements by completion status, displaying completed achievements in the Completed group and all other achievements in the Locked group. When you map your achievements to the four Game Center achievement states, you give players a consistent experience and you help them see at a glance the types of achievements your game offers.
+
 **Determine a display order.** The order in which you upload achievements is the order in which they appear, so consider the order you want before uploading files. For example, you might want your achievements to appear in an order that corresponds to the most common path through your game.
+
 **Be succinct when describing achievements.** The achievement card limits the title and description to two lines each. If your title or description wraps beyond two lines, the card truncates the text. Use title-style capitalization for the achievement title and sentence-style capitalization for the description.
-![A diagram of an achievement card, with callouts indicating the achievement image, title, and description.](/images/com.apple.HIG/games-achievement-anatomy~dark@2x.png)
+
+![A diagram of an achievement card, with callouts indicating the achievement image, title, and description.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-achievement-anatomy@2x.png)
+
 **Give players a sense of progress.** When you use progressive achievements, the system displays player progress and provides encouraging messages like “Youʼre more than halfway to completing Great Lakes Freighter in The Coast. Keep going!” to help motivate players to complete them.
 
 ### Creating achievement images
 **Design rich, high-quality images that help players feel rewarded.** Achievements are a prominent feature in Game Center UI, so it’s essential to design high-quality assets that catch the eye and encourage players to return to your game. Avoid reusing the same asset to represent more than one achievement. If you don’t provide an asset for an achievement, the card shows a placeholder image instead.
+
 **Create artwork in the appropriate size and format.** The system applies a circular mask to your achievement image, so be sure to keep content centered. Use the following specifications to create images.
 
+**iOS, iPadOS, macOS, visionOS**:
+
+![A diagram of the layout for an achievement image in iOS, iPadOS, macOS, and visionOS, with callouts indicating the image size and mask diameter.](https://developer.apple.com/tutorials/images/com.apple.HIG/ios-achievement-image-layout@2x.png)
+
+| Attribute | Value |
+| --- | --- |
+| Format | PNG, TIF, or JPG |
+| Color space | sRGB or P3 |
+| Resolution | 72 DPI (minimum) |
+| Image size | 512x512 pt (1024x1024 px @2x) |
+| Mask diameter | 512 pt (1024 px @2x) |
+
+**tvOS**:
+
+![A diagram of the layout for an achievement image in tvOS, with callouts indicating the image size and mask diameter.](https://developer.apple.com/tutorials/images/com.apple.HIG/tvos-achievement-image-layout@2x.png)
+
+| Attribute | Value |
+| --- | --- |
+| Format | PNG, TIF, or JPG |
+| Color space | sRGB or P3 |
+| Resolution | 72 DPI (minimum) |
+| Image size | 320x320 pt (640x640 px @2x) |
+| Mask diameter | 200 pt (400 px @2x) |
+
 ## Leaderboards
-Leaderboards are a great way to encourage friendly competition within your game. When you adopt Game Center, players can easily check their ranking against friends and global players as well as receive notifications when their friends challenge them or pass their score on a leaderboard. You can take advantage of the system-designed UI or present leaderboard information within custom UI. For developer guidance, see [Encourage progress and competition with leaderboards](../gamekit/encourage-progress-and-competition-with-leaderboards.md).
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Leaderboards overview screen.](/images/com.apple.HIG/games-leaderboards-overlay@2x.png)
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single leaderboard.](/images/com.apple.HIG/games-leaderboards-detail@2x.png)
+Leaderboards are a great way to encourage friendly competition within your game. When you adopt Game Center, players can easily check their ranking against friends and global players as well as receive notifications when their friends challenge them or pass their score on a leaderboard. You can take advantage of the system-designed UI or present leaderboard information within custom UI. For developer guidance, see [Encourage progress and competition with leaderboards](../GameKit/encourage-progress-and-competition-with-leaderboards.md).
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Leaderboards overview screen.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-leaderboards-overlay@2x.png)
+Leaderboards overview
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single leaderboard.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-leaderboards-detail@2x.png)
+Leaderboard detail
+
 **Choose a leaderboard type.** Game Center supports two types of leaderboards: *classic* and *recurring*.
+
 - A *classic leaderboard* tracks a player’s best all-time score. Classic leaderboards are always active with no ending. The following are examples of goals you might include in a classic leaderboard:
+
   - Strive for the most perfect score in a rhythm game.
   - Collect the most coins in a single dungeon run.
   - Achieve the longest continuous time in an endless runner.
 - A *recurring leaderboard* resets based on a time interval you define, such as every week or every day. Recurring leaderboards can increase engagement by giving players more chances to take the lead. The following are examples of features that work well with recurring leaderboards:
+
   - Daily rotating puzzles
   - Seasonal or holiday-themed events
   - Weekly leaderboards for different battle modes
+
 **Take advantage of leaderboard sets for multiple leaderboards.** Leaderboard sets are an organization system that can make it easier for players to find the board they’re looking for. Consider grouping leaderboard sets by themes or gameplay experiences, such as:
+
 - Difficulty modes (Easy, Standard, Hard)
 - Activity types (Combat, Crafting, Farming)
 - Genres and themes (Disco, Pop, Rock)
+
 **Add leaderboard images.** Leaderboard artwork gives you another opportunity to reinforce your game’s visual aesthetic. Aim to create a unique image for each leaderboard in your game that reflects and showcases the gameplay involved in leaderboard ranking. Leaderboards appear across the system, promoting ways for players to engage and compete with friends, and having compelling images helps attract players and gives them a sense of the experience.
+
 For games that run in iOS, iPadOS, and macOS, use a single image for your leaderboard image. For games that run in tvOS, provide a set of images that animate when the artwork is in focus. To learn more about focus effects, see [Focus and selection](focus-and-selection.md). For help creating focusable images, download the tvOS template from [Apple Design Resources](https://developer.apple.com/design/resources/#tvos-apps). Use the following specifications to create leaderboard artwork.
+
+**iOS, iPadOS, macOS**:
+
+![A diagram of the layout for a leaderboard image in iOS, iPadOS, and macOS, with callouts indicating the image size and mask diameter.](https://developer.apple.com/tutorials/images/com.apple.HIG/leaderboard-image-layout-general@2x.png)
+
+| Attribute | Value |
+| --- | --- |
+| Format | JPEG, JPG, or PNG |
+| Color space | sRGB or P3 |
+| Resolution | 72 DPI (minimum) |
+| Image size | 512x512 pt (1024x1024 px @2x) |
+| Cropped area | 512x312 pt (1024x624 px @2x) |
+
+**tvOS**:
+
+![A diagram of the layout for a leaderboard image in tvOS, with callouts indicating the image size, focused size, and unfocused size.](https://developer.apple.com/tutorials/images/com.apple.HIG/tvos-multi-layered-leaderboard-image@2x.png)
+
+| Attribute | Value |
+| --- | --- |
+| Format | PNG, TIF, or JPG |
+| Color space | sRGB or P3 |
+| Resolution | 72 DPI (minimum) |
+| Image size | 659x371 pt (1318x742 px @2x) |
+| Focused size | 618x348 pt (1236x696 px @2x) |
+| Unfocused size | 548x309 pt (1096x618 px @2x) |
 
 > **Note:** Be mindful of how cropping might affect your leaderboard artwork. In iOS, iPadOS, and macOS, the system crops artwork for leaderboards that are part of a leaderboard set. In tvOS, the focus effect on leaderboard artwork may crop your images at the edges of some layers. Make sure your primary content stays comfortably visible in both these scenarios.
 
 ## Challenges
-Challenges turn single player activities into multiplayer experiences with friends. Challenges are built on top of leaderboards and allow players to connect with their friends and participate in competitions with time limits. For developer documentation, see [Creating engaging challenges from leaderboards](../gamekit/creating-engaging-challenges-from-leaderboards.md).
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Challenges overview screen.](/images/com.apple.HIG/games-challenges-overlay@2x.png)
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single challenge.](/images/com.apple.HIG/games-challenges-overlay-detail@2x.png)
+Challenges turn single player activities into multiplayer experiences with friends. Challenges are built on top of leaderboards and allow players to connect with their friends and participate in competitions with time limits. For developer documentation, see [Creating engaging challenges from leaderboards](../GameKit/creating-engaging-challenges-from-leaderboards.md).
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Challenges overview screen.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-challenges-overlay@2x.png)
+Challenges overview
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single challenge.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-challenges-overlay-detail@2x.png)
+Challenge detail
+
 **Create engaging challenges.** Challenges are great for short, skill-based gameplay activities that have a clear way of gauging players’ accomplishments. Create challenges that take 1-5 minutes to play, with gameplay that players can complete individually. Examples of compelling challenges are:
+
 - Complete the fastest lap in a racing level.
 - Defeat the most enemies in a single round.
 - Solve a daily puzzle with the fewest mistakes.
+
 **Avoid creating challenges that track overall progress or personal best scores.** These can give regular players an unfair advantage. Instead, track players’ most recent score after each attempt at your challenge. This helps keep your challenge motivating by placing all players on a level playing field.
+
 **Make it easy to jump into your challenge.** Players can access challenges through invitation links, the Game Overlay, or in the Games app in iOS, iPadOS, and macOS. Always deep-link to the exact mode or level where your challenge begins, and help first-time players complete any initial onboarding before beginning the challenge. For example, if your game requires a tutorial level to understand basic controls, launch the player into the tutorial first and present UI that lets them know your game automatically jumps into the challenge afterward.
-![A diagram of a challenge card, with callouts indicating the challenge title, artwork, and number of players, and the system-provided gradient at the bottom of the card.](/images/com.apple.HIG/games-challenge-anatomy~dark@2x.png)
+
+![A diagram of a challenge card, with callouts indicating the challenge title, artwork, and number of players, and the system-provided gradient at the bottom of the card.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-challenge-anatomy@2x.png)
+
 **Create high-quality artwork that encourages players to engage with your challenges.** The system shows your challenge’s artwork in the Game Overlay, Games app, and in the preview of an invitation link. Avoid placing the primary content of your artwork in an area where the challenge’s title and description might cover it. If you need to use text in your challenge image, provide the appropriate localized versions through App Store Connect or Xcode. Use the following specifications to create challenge artwork.
-![A diagram of the layout for a challenge image, with callouts indicating the image size and cropped area.](/images/com.apple.HIG/games-challenge-image-specs~dark@2x.png)
+
+![A diagram of the layout for a challenge image, with callouts indicating the image size and cropped area.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-challenge-image-specs@2x.png)
+
 | Attribute | Value |
 | --- | --- |
 | Format | JPEG, JPG, or PNG |
@@ -109,21 +204,33 @@ Challenges turn single player activities into multiplayer experiences with frien
 | Image size | 1920x1080 pt (3840x2160 px @2x) |
 | Cropped area | 1465x767 pt (2930x1534 px @2x) |
 
-
 ## Multiplayer activities
-Game Center supports both real-time and turn-based multiplayer activities that make it easy to connect players with friends or other players. Players can access multiplayer gameplay through party codes, the Game Overlay, the dashboard, or in the Games app. For developer documentation, see [Creating activities for your game](../gamekit/creating-activities-for-your-game.md).
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Multiplayer levels overview screen.](/images/com.apple.HIG/games-multiplayer-overlay@2x.png)
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single multiplayer level.](/images/com.apple.HIG/games-multiplayer-overlay-detail@2x.png)
+Game Center supports both real-time and turn-based multiplayer activities that make it easy to connect players with friends or other players. Players can access multiplayer gameplay through party codes, the Game Overlay, the dashboard, or in the Games app. For developer documentation, see [Creating activities for your game](../GameKit/creating-activities-for-your-game.md).
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the Multiplayer levels overview screen.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-overlay@2x.png)
+Multiplayer levels overview
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the detail view of a single multiplayer level.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-overlay-detail@2x.png)
+Multiplayer level detail
+
 **Use party codes to invite players to multiplayer activities.** Game Center party codes are a great way to coordinate real-time multiplayer sessions whether you use Game Center matchmaking and networking facilities or provide your own. Game Center generates alpha-numeric party codes that are typically eight characters long, such as “2MP4-9CMF.”  When integrating party codes into your multiplayer games, consider the following guidelines for the best player experience:
+
 - Allow players to join gameplay late, leave early, and return later.
 - Provide a way for players to view the current party code in your game.
 - Allow players to enter a party code manually.
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the in-game UI for setting up or joining a multiplayer activity using a custom code.](/images/com.apple.HIG/games-multiplayer-custom-code@2x.png)
-**Support multiplayer activities through in-game UI.** The Game Overlay and Game Center dashboard help players find other people for a multiplayer match without leaving your game. Game Center’s default multiplayer interface lets a player invite nearby or recent players, Game Center friends, and contacts. You can also choose to present multiplayer functionality within your custom UI. For developer guidance, see [Finding multiple players for a game](../gamekit/finding-multiple-players-for-a-game.md).
-![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the in-game UI starting a multiplayer activity.](/images/com.apple.HIG/games-multiplayer-in-game-ui@2x.png)
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the in-game UI for setting up or joining a multiplayer activity using a custom code.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-custom-code@2x.png)
+
+**Support multiplayer activities through in-game UI.** The Game Overlay and Game Center dashboard help players find other people for a multiplayer match without leaving your game. Game Center’s default multiplayer interface lets a player invite nearby or recent players, Game Center friends, and contacts. You can also choose to present multiplayer functionality within your custom UI. For developer guidance, see [Finding multiple players for a game](../GameKit/finding-multiple-players-for-a-game.md).
+
+![An iPhone screenshot of the game The Coast with the Game Overlay open, showing the in-game UI starting a multiplayer activity.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-in-game-ui@2x.png)
+
 **Provide engaging activity artwork.** Players see the preview image for a multiplayer activity throughout the system, such as in a party code, the Games app, or in-game UI. Use the following specifications to create your artwork.
-![A diagram of a multiplayer activity card, with callouts indicating the activity title, artwork, and number of players, and the system-provided gradient at the bottom of the card.](/images/com.apple.HIG/games-multiplayer-anatomy~dark@2x.png)
-![A diagram of the layout for a multiplayer activity image, with callouts indicating the image size and cropped area.](/images/com.apple.HIG/games-multiplayer-image-specs~dark@2x.png)
+
+![A diagram of a multiplayer activity card, with callouts indicating the activity title, artwork, and number of players, and the system-provided gradient at the bottom of the card.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-anatomy@2x.png)
+
+![A diagram of the layout for a multiplayer activity image, with callouts indicating the image size and cropped area.](https://developer.apple.com/tutorials/images/com.apple.HIG/games-multiplayer-image-specs@2x.png)
+
 | Attribute | Value |
 | --- | --- |
 | Format | JPEG, JPG, or PNG |
@@ -131,21 +238,21 @@ Game Center supports both real-time and turn-based multiplayer activities that m
 | Resolution | 72 DPI (minimum) |
 | Image size | 1920x1080 pt (3840x2160 px @2x) |
 | Cropped area | 1465x767 pt (2930x1534 px @2x) |
-
 
 ## Platform considerations
 *No additional considerations for iOS, iPadOS, macOS, or visionOS.*
 
 ### tvOS
 **Display an optional image at the top of the dashboard.** In tvOS, you can add an additional piece of artwork to the dashboard to highlight your game’s aesthetic. Use a simple, easily recognizable image that looks great at a distance. Consider using your game’s logo or word mark; however, don’t use your app icon for this image. Use the following specifications to create a dashboard image.
-![A diagram of the layout for a tvOS dashboard image, with a callout indicating the image size.](/images/com.apple.HIG/tvos-dashboard-image~dark@2x.png)
+
+![A diagram of the layout for a tvOS dashboard image, with a callout indicating the image size.](https://developer.apple.com/tutorials/images/com.apple.HIG/tvos-dashboard-image@2x.png)
+
 | Attribute | Value |
 | --- | --- |
 | Image size | 600x180 pt (1200x360 px @2x) |
 | Format | PNG, TIF, or JPG |
 | Color space | sRGB or P3 |
 | Resolution | 72 DPI (minimum) |
-
 
 ### watchOS
 **Be aware of Game Center support on watchOS.** While GameKit features and API are available for watchOS games, keep in mind that there’s no system-supported Game Center UI that you can invoke on watchOS. Instead, Game Center content for watchOS games appears on a connected iPhone.
@@ -154,23 +261,25 @@ Game Center supports both real-time and turn-based multiplayer activities that m
 
 #### Related
 [Designing for games](designing-for-games.md)
+
 [Game controls](game-controls.md)
+
 [Apple Design Resources](https://developer.apple.com/design/resources/#technologies)
 
 #### Developer documentation
-[GameKit](../gamekit.md)
-[Creating activities for your game](../gamekit/creating-activities-for-your-game.md)
-[Creating engaging challenges from leaderboards](../gamekit/creating-engaging-challenges-from-leaderboards.md)
+[GameKit](../GameKit/GameKit.md)
+
+[Creating activities for your game](../GameKit/creating-activities-for-your-game.md)
+
+[Creating engaging challenges from leaderboards](../GameKit/creating-engaging-challenges-from-leaderboards.md)
+
 [Create games for Apple platforms](https://developer.apple.com/games/)
+
 [Game Porting Toolkit](https://developer.apple.com/games/game-porting-toolkit/)
 
 #### Videos
-- [Get started with Game Center](https://developer.apple.com/videos/play/wwdc2025/214) - Explore the features of Game Center and learn how to get started. We’ll show you best practices for implementing achievements, challenges, leaderboards, and activities to maximize your game’s discoverability, attract new players, and increase engagement.
-
-To get the most out of this session, we also recommend watching “Engage players with the Apple Games app”.
-- [Engage players with the Apple Games app](https://developer.apple.com/videos/play/wwdc2025/215) - Meet the Games app – a new destination for players to keep up with what’s happening in their games, discover new ones, and play with friends, all in one place. Learn how to set up your game for optimal visibility in the Games app, integrate Game Center to enable social play, and keep players coming back with In-App Events.
-
-To get the most out of this session, we also recommend watching “Get started with Game Center”.
+- [Get started with Game Center](https://developer.apple.com/videos/play/wwdc2025/214) - Explore the features of Game Center and learn how to get started. We’ll show you best practices for implementing achievements, challenges, leaderboards, and activities to maximize your game’s discoverability, attract new players, and increase engagement. To get the most out of this session, we also recommend watching “Engage players with the Apple Games app”.
+- [Engage players with the Apple Games app](https://developer.apple.com/videos/play/wwdc2025/215) - Meet the Games app – a new destination for players to keep up with what’s happening in their games, discover new ones, and play with friends, all in one place. Learn how to set up your game for optimal visibility in the Games app, integrate Game Center to enable social play, and keep players coming back with In-App Events. To get the most out of this session, we also recommend watching “Get started with Game Center”.
 
 ## Change log
 | Date | Changes |
@@ -179,9 +288,6 @@ To get the most out of this session, we also recommend watching “Get started w
 | February 2, 2024 | Added links to developer guidance on using the access point and dashboard in a visionOS game. |
 | September 12, 2023 | Added artwork for the iOS achievement layout. |
 | May 2, 2023 | Consolidated guidance into one page. |
-
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/game-center](https://developer.apple.com/design/human-interface-guidelines/game-center)*

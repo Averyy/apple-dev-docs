@@ -1,12 +1,13 @@
 # cellSize(forBounds:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum size needed to display the receiver, constraining it to the specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Returns the minimum size needed to display the receiver, constraining it to the 
 func cellSize(forBounds rect: NSRect) -> NSSize
 ```
 
+```objc
+- (NSSize) cellSizeForBounds:(NSRect) rect;
+```
+
 #### Discussion
 
 This method takes into account of the size of the image or text within a certain offset determined by the border type of the cell. If the receiver is of text type, the text is resized to fit within `aRect` (as much as `aRect` is within the bounds of the cell).
 
-To support constraint-based layout, when the content of a custom cell changes in such a way that the return value of this method would change, the cell needs to notify its control of the change by calling the control’s [`invalidateIntrinsicContentSize(for:)`](nscontrol/invalidateintrinsiccontentsize(for:).md) method.
+To support constraint-based layout, when the content of a custom cell changes in such a way that the return value of this method would change, the cell needs to notify its control of the change by calling the control’s [`invalidateIntrinsicContentSize(for:)`](../nscontrol/invalidateintrinsiccontentsize%28for%29.md) method.
 
 ## Parameters
 
@@ -26,17 +31,18 @@ To support constraint-based layout, when the content of a custom cell changes in
 
 ## See Also
 
-- [func calcDrawInfo(NSRect)](nscell/calcdrawinfo(_:).md)
+### Determining Cell Size
+- [func calcDrawInfo(NSRect)](./calcdrawinfo%28_%29.md)
   Recalculates the cell geometry.
-- [var cellSize: NSSize](nscell/cellsize.md)
+- [var cellSize: NSSize](./cellsize.md)
   The minimum size needed to display the cell.
-- [func drawingRect(forBounds: NSRect) -> NSRect](nscell/drawingrect(forbounds:).md)
+- [func drawingRect(forBounds: NSRect) -> NSRect](./drawingrect%28forbounds%29.md)
   Returns the rectangle within which the receiver draws itself
-- [func imageRect(forBounds: NSRect) -> NSRect](nscell/imagerect(forbounds:).md)
+- [func imageRect(forBounds: NSRect) -> NSRect](./imagerect%28forbounds%29.md)
   Returns the rectangle in which the receiver draws its image.
-- [func titleRect(forBounds: NSRect) -> NSRect](nscell/titlerect(forbounds:).md)
+- [func titleRect(forBounds: NSRect) -> NSRect](./titlerect%28forbounds%29.md)
   Returns the rectangle in which the receiver draws its title text.
-- [var controlSize: NSControl.ControlSize](nscell/controlsize.md)
+- [var controlSize: NSControl.ControlSize](./controlsize.md)
   The size of the cell.
 
 

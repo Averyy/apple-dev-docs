@@ -1,7 +1,8 @@
 # backwards
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+
@@ -18,13 +19,18 @@
 static var backwards: CFDataSearchFlags { get }
 ```
 
+```c
+kCFDataSearchBackwards
+```
+
 #### Discussion
 
 Performs searching from the end of the range toward the beginning.
 
 ## See Also
 
-- [static var anchored: CFDataSearchFlags](cfdatasearchflags/anchored.md)
+### Constants
+- [static var anchored: CFDataSearchFlags](./anchored.md)
 
 
 ---

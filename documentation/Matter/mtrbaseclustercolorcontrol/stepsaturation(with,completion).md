@@ -1,7 +1,8 @@
 # stepSaturation(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stepSaturation(with params: MTRColorControlClusterStepSaturationParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stepSaturation(with params: MTRColorControlClusterStepSaturationParams) async throws
+```
+
+```objc
+- (void) stepSaturationWithParams:(MTRColorControlClusterStepSaturationParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

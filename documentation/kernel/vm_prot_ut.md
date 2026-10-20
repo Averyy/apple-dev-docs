@@ -1,14 +1,15 @@
 # vm_prot_ut
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef vm_prot_t vm_prot_ut;
 ```
 

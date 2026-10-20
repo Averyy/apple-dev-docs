@@ -1,7 +1,8 @@
 # ReportingKeyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Keyword metadata in a report row.
 
@@ -10,7 +11,7 @@ Keyword metadata in a report row.
 
 ## Declaration
 
-```swift
+```
 object ReportingKeyword
 ```
 
@@ -56,47 +57,55 @@ The `bid` field is the keyword-level bid amount in the account currency, and `ad
 - `deleted` (boolean): `true` if the keyword has been deleted.
 - `text` (string): The keyword text.
 - `status` (string): The keyword’s status at the time captured in the report.
+
+  **Allowed Values**: `ENABLED`, `PAUSED`, `DELETED`
 - `matchType` (string): The keyword’s match type.
-- `bid` (Money): See [`Money`](money.md) for details.
+
+  **Allowed Values**: `BROAD`, `EXACT`
+- `bid` (Money): See [`Money`](./money.md) for details.
 - `adGroupId` (int64): The identifier of the ad group that owns the keyword.
 - `modificationTime` (date-time): The time the keyword was last modified.
 - `creationTime` (date-time): The time the keyword was created.
 - `displayStatus` (string): The computed display status of the keyword.
-- `adGroup` (ReportingAdGroupMin): See [`ReportingAdGroupMin`](reportingadgroupmin.md) for details.
+
+  **Allowed Values**: `AD_GROUP_ON_HOLD`, `CAMPAIGN_ON_HOLD`, `DELETED`, `PAUSED`, `RUNNING`
+- `adGroup` (ReportingAdGroupMin): See [`ReportingAdGroupMin`](./reportingadgroupmin.md) for details.
 - `countryOrRegion` (string): Country or region groupBy dimension value.
 - `deviceClass` (string): Device class groupBy dimension value.
 
+  **Allowed Values**: `IPHONE`, `IPAD`
+
 ## See Also
 
-- [object TimeRange](timerange.md)
+- [object TimeRange](./timerange.md)
   Date range, time zone, and granularity settings for reporting requests.
-- [object Filter](filter.md)
+- [object Filter](./filter.md)
   Filter condition for reporting requests.
-- [object Sorting](sorting.md)
+- [object Sorting](./sorting.md)
   Sort condition for reporting requests.
-- [object RequestPagination](requestpagination.md)
+- [object RequestPagination](./requestpagination.md)
   Pagination settings specific to reporting requests.
-- [object ReportingMoney](reportingmoney.md)
+- [object ReportingMoney](./reportingmoney.md)
   A monetary value wrapper used in reporting contexts, capturing bid amounts and budgets at report time.
-- [object ReportingBidStrategy](reportingbidstrategy.md)
+- [object ReportingBidStrategy](./reportingbidstrategy.md)
   Bid strategy configuration as reported in report rows.
-- [object ReportingCampaignMin](reportingcampaignmin.md)
+- [object ReportingCampaignMin](./reportingcampaignmin.md)
   Minimal campaign information included in nested report objects.
-- [object ReportingAdGroupMin](reportingadgroupmin.md)
+- [object ReportingAdGroupMin](./reportingadgroupmin.md)
   Minimal ad group information included in nested report objects.
-- [object ReportingCreativeSpec](reportingcreativespec.md)
+- [object ReportingCreativeSpec](./reportingcreativespec.md)
   Creative specification embedded in report rows.
-- [object ReportingDestination](reportingdestination.md)
+- [object ReportingDestination](./reportingdestination.md)
   Creative destination embedded in report rows.
-- [object ReportingSearchTerm](reportingsearchterm.md)
+- [object ReportingSearchTerm](./reportingsearchterm.md)
   Search term metadata in a report row.
-- [object ActionMetrics](actionmetrics.md)
+- [object ActionMetrics](./actionmetrics.md)
   Action count metrics breakdown by attribution type.
-- [object CostMetrics](costmetrics.md)
+- [object CostMetrics](./costmetrics.md)
   Cost metrics breakdown by attribution type.
-- [object RateMetrics](ratemetrics.md)
+- [object RateMetrics](./ratemetrics.md)
   Rate metrics breakdown by attribution type.
-- [type ReportingAdChannelType](reportingadchanneltype.md)
+- [type ReportingAdChannelType](./reportingadchanneltype.md)
   The ad channel that served a report row’s metrics.
 
 

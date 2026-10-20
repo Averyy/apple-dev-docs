@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsInResetMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The mask indicating that the USB device is in a reset state.
 
@@ -10,7 +11,7 @@ The mask indicating that the USB device is in a reset state.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsInResetMask = (1 << kUSBInformationDeviceIsInResetBit)
 ```
 

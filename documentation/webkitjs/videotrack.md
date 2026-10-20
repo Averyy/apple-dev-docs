@@ -1,7 +1,8 @@
 # VideoTrack
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface VideoTrack
 ```
 
 ## Topics
 
 ### Instance Properties
-- [id](videotrack/1632863-id.md)
-- [kind](videotrack/1630525-kind.md)
-- [label](videotrack/1630377-label.md)
-- [language](videotrack/1634055-language.md)
-- [selected](videotrack/1628927-selected.md)
-- [sourceBuffer](videotrack/1632679-sourcebuffer.md)
+- [id](./videotrack/api-1632863-id.md)
+- [kind](./videotrack/api-1630525-kind.md)
+- [label](./videotrack/api-1630377-label.md)
+- [language](./videotrack/api-1634055-language.md)
+- [selected](./videotrack/api-1628927-selected.md)
+- [sourceBuffer](./videotrack/api-1632679-sourcebuffer.md)
 
 
 ---

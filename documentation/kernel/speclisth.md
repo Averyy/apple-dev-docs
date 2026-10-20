@@ -1,14 +1,15 @@
 # speclisth
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 struct vnode *speclisth[64];
 ```
 

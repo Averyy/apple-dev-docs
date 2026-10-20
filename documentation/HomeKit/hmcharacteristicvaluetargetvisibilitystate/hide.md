@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetVisibilityState.hide
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media source is hidden.
 
@@ -19,9 +20,14 @@ The media source is hidden.
 case hide
 ```
 
+```c
+HMCharacteristicValueTargetVisibilityStateHide
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetVisibilityState.show](hmcharacteristicvaluetargetvisibilitystate/show.md)
+### Visibility states
+- [HMCharacteristicValueTargetVisibilityState.show](./show.md)
   The media source is visible.
 
 

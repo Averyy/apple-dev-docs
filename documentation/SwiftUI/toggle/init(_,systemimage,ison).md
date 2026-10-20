@@ -1,7 +1,8 @@
 # init(_:systemImage:isOn:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle that generates its label from a localized string key and system image.
 
@@ -21,9 +22,23 @@ Creates a toggle that generates its label from a localized string key and system
 nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, isOn: Binding<Bool>)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, isOn: Binding<Bool>)
+```
+
+```swift
+@export(implementation)
+nonisolated init<S>(_ title: S, systemImage: String, isOn: Binding<Bool>) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See `Text` for more information about localizing strings.
 
 ## Parameters
 
@@ -33,11 +48,12 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 
 ## See Also
 
-- [init(_:isOn:)](toggle/init(_:ison:).md)
+### Creating a toggle
+- [init(_:isOn:)](./init%28_,ison%29.md)
   Creates a toggle that generates its label from a localized string resource.
-- [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
+- [init(isOn: Binding<Bool>, label: () -> Label)](./init%28ison,label%29.md)
   Creates a toggle that displays a custom label.
-- [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
+- [init(_:image:isOn:)](./init%28_,image,ison%29.md)
   Creates a toggle that generates its label from a localized string resource and image resource.
 
 

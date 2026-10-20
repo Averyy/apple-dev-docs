@@ -1,7 +1,8 @@
 # kSecACLAuthorizationEncrypt
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Encrypt data.
 
@@ -12,6 +13,10 @@ Encrypt data.
 
 ```swift
 let kSecACLAuthorizationEncrypt: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationEncrypt;
 ```
 
 

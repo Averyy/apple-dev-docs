@@ -1,7 +1,8 @@
 # nextItemID
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer indicating the value to use for the item ID of the next item created or assigned an item ID.
 
@@ -11,13 +12,14 @@ If the value is all ones, it indicates that future additions will require a sear
 
 ## See Also
 
-- [Size](metadata_header_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_header_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Version](metadata_header_atom/version.md)
+- [Version](./version.md)
   One byte.
-- [Flags](metadata_header_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
 
 

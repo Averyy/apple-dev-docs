@@ -1,7 +1,8 @@
 # destinationContext
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The managed object context the migration manager uses for writing the destination persistent store.
 
@@ -10,7 +11,7 @@ The managed object context the migration manager uses for writing the destinatio
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,23 +21,28 @@ The managed object context the migration manager uses for writing the destinatio
 var destinationContext: NSManagedObjectContext { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectContext * destinationContext;
+```
+
 #### Discussion
 
 This context is created on demand as part of the initialization of the Core Data stacks used for migration.
 
 ## See Also
 
-- [var destinationModel: NSManagedObjectModel](nsmigrationmanager/destinationmodel.md)
+### Getting the Manager’s Configuration
+- [var destinationModel: NSManagedObjectModel](./destinationmodel.md)
   The destination model for the migration manager.
-- [var mappingModel: NSMappingModel](nsmigrationmanager/mappingmodel.md)
+- [var mappingModel: NSMappingModel](./mappingmodel.md)
   The mapping model for the migration manager.
-- [var sourceContext: NSManagedObjectContext](nsmigrationmanager/sourcecontext.md)
+- [var sourceContext: NSManagedObjectContext](./sourcecontext.md)
   The managed object context the migration manager uses for reading the source persistent store.
-- [var sourceModel: NSManagedObjectModel](nsmigrationmanager/sourcemodel.md)
+- [var sourceModel: NSManagedObjectModel](./sourcemodel.md)
   The source model for the migration manager.
-- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/destinationentity(for:).md)
+- [func destinationEntity(for: NSEntityMapping) -> NSEntityDescription?](./destinationentity%28for%29.md)
   Returns the entity description for the destination entity of a given entity mapping.
-- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](nsmigrationmanager/sourceentity(for:).md)
+- [func sourceEntity(for: NSEntityMapping) -> NSEntityDescription?](./sourceentity%28for%29.md)
   Returns the entity description for the source entity of a given entity mapping.
 
 

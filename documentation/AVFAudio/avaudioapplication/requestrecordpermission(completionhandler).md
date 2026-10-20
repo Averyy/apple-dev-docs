@@ -1,7 +1,8 @@
 # requestRecordPermission(completionHandler:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines whether the app has permission to record audio.
 
@@ -17,7 +18,15 @@ Determines whether the app has permission to record audio.
 ## Declaration
 
 ```swift
+class func requestRecordPermission(completionHandler response: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 class func requestRecordPermission() async -> Bool
+```
+
+```objc
++ (void) requestRecordPermissionWithCompletionHandler:(void (^)(BOOL granted)) response;
 ```
 
 #### Discussion
@@ -39,7 +48,9 @@ Unless a user grants your app permission to record audio, it captures only silen
 
 After a user responds to a recording permission prompt from your app, the system remembers their choice and won’t prompt them again. If a user denies the app recording permission, they can grant it access in the Privacy & Security section of the Settings app.
 
-> ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert. If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
+> ❗ **Important**:  Apps that access any of the device’s microphones must declare their intent to do so. You do this by including the `NSMicrophoneUsageDescription` key and a corresponding purpose string in your app’s `Info.plist`. When the system prompts the user to allow access, it displays the purpose string as part of the alert.
+>
+> If an application attempts to access any of the device’s microphones without a corresponding purpose string, the app exits.
 
 ## Parameters
 
@@ -47,9 +58,10 @@ After a user responds to a recording permission prompt from your app, the system
 
 ## See Also
 
-- [var recordPermission: AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.property.md)
+### Requesting audio recording permission
+- [var recordPermission: AVAudioApplication.recordPermission](./recordpermission-swift.property.md)
   The app’s permission to record audio.
-- [AVAudioApplication.recordPermission](avaudioapplication/recordpermission-swift.enum.md)
+- [AVAudioApplication.recordPermission](./recordpermission-swift.enum.md)
   Constants that indicate the app’s permission to record audio.
 
 

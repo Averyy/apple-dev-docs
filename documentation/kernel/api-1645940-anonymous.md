@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMessageTrayStateChangeRequestAccepted](1645940-anonymous/kmessagetraystatechangerequestaccepted.md)
-- [kMessageTrayStateChangeRequestRejected](1645940-anonymous/kmessagetraystatechangerequestrejected.md)
+- [kMessageTrayStateChangeRequestAccepted](./api-1645940-anonymous/kmessagetraystatechangerequestaccepted.md)
+- [kMessageTrayStateChangeRequestRejected](./api-1645940-anonymous/kmessagetraystatechangerequestrejected.md)
 
 
 ---

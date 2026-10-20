@@ -1,7 +1,8 @@
 # AddControl
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a video control to the video clock device.
 
@@ -10,7 +11,7 @@ Adds a video control to the video clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddControl(IOUserVideoControl *in_control);
 ```
 
@@ -28,9 +29,10 @@ The control’s reference count will be incremented if it was successfully added
 
 ## See Also
 
-- [RemoveControl](iouservideoclockdevice/removecontrol.md)
+### Managing video controls
+- [RemoveControl](./removecontrol.md)
   Removes a user video control from the video clock device.
-- [IOUserVideoControl](iouservideocontrol.md)
+- [IOUserVideoControl](../iouservideocontrol.md)
   A base class for control objects.
 
 

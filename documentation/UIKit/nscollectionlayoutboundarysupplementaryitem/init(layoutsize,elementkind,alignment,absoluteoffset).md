@@ -1,7 +1,8 @@
 # init(layoutSize:elementKind:alignment:absoluteOffset:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boundary supplementary item of the specified size and element kind, with an alignment relative to a section or layout at an absolute offset.
 
@@ -18,9 +19,14 @@ Creates a boundary supplementary item of the specified size and element kind, wi
 convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment, absoluteOffset: CGPoint)
 ```
 
+```objc
++ (instancetype) boundarySupplementaryItemWithLayoutSize:(NSCollectionLayoutSize *) layoutSize elementKind:(NSString *) elementKind alignment:(NSRectAlignment) alignment absoluteOffset:(CGPoint) absoluteOffset;
+```
+
 ## See Also
 
-- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment)](nscollectionlayoutboundarysupplementaryitem/init(layoutsize:elementkind:alignment:).md)
+### Creating a boundary supplementary item
+- [convenience init(layoutSize: NSCollectionLayoutSize, elementKind: String, alignment: NSRectAlignment)](./init%28layoutsize,elementkind,alignment%29.md)
   Creates a boundary supplementary item of the specified size and element kind, with an alignment relative to a section or layout.
 
 

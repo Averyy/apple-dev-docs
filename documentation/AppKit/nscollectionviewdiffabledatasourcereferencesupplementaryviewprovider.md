@@ -1,17 +1,22 @@
 # NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a collection view’s supplementary view, such as a header or footer, from a diffable data source.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider = (NSCollectionView, String, IndexPath) -> NSView?
+```
+
+```c
+typedef NSView *(^)(NSCollectionView *, NSString *, NSIndexPath *) NSCollectionViewDiffableDataSourceSupplementaryViewProvider;
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ A non-`nil` configured supplementary view object. The supplementary view provide
 
 ## See Also
 
-- [var supplementaryViewProvider: NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](nscollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
+### Creating Supplementary Views
+- [var supplementaryViewProvider: NSCollectionViewDiffableDataSourceReferenceSupplementaryViewProvider?](./nscollectionviewdiffabledatasourcereference/supplementaryviewprovider.md)
   The closure that configures and returns the collection view’s supplementary views, such as headers and footers, from the diffable data source.
 
 

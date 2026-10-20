@@ -1,7 +1,8 @@
 # value(forAttributeNamed:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The value of a shader attribute.
 
@@ -20,6 +21,10 @@ The value of a shader attribute.
 func value(forAttributeNamed key: String) -> SKAttributeValue?
 ```
 
+```objc
+- (SKAttributeValue *) valueForAttributeNamed:(NSString *) key;
+```
+
 #### Return Value
 
 An attribute value object containing the scalar or vector value or `nil` if no such attribute exists.
@@ -30,11 +35,12 @@ An attribute value object containing the scalar or vector value or `nil` if no s
 
 ## See Also
 
-- [var shader: SKShader?](sktilemapnode/shader.md)
+### Working with Custom Shaders
+- [var shader: SKShader?](./shader.md)
   Defines a shader which is applied to each tile of the tile map.
-- [var attributeValues: [String : SKAttributeValue]](sktilemapnode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](sktilemapnode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
 
 

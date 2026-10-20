@@ -1,7 +1,8 @@
 # metrics
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The training metrics of the model for the update task, contained in a dictionary.
 
@@ -20,13 +21,18 @@ The training metrics of the model for the update task, contained in a dictionary
 var metrics: [MLMetricKey : Any] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<MLMetricKey *,id> * metrics;
+```
+
 #### Discussion
 
-Use the [`MLMetricKey`](mlmetrickey.md) to access the values within the dictionary.
+Use the [`MLMetricKey`](../mlmetrickey.md) to access the values within the dictionary.
 
 ## See Also
 
-- [class MLMetricKey](mlmetrickey.md)
+### Evaluating the update
+- [class MLMetricKey](../mlmetrickey.md)
   A key for the metrics dictionary in an update context.
 
 

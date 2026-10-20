@@ -1,7 +1,8 @@
 # init(exposure:toeStrength:toeLength:shoulderStrength:shoulderLength:shoulderAngle:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `ToneMappingComponent` with the specified parameters. Values outside of their respective ranges are clamped.
 

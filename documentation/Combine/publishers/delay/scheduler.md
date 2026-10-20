@@ -1,7 +1,8 @@
 # scheduler
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scheduler to deliver the delayed events.
 
@@ -22,13 +23,14 @@ let scheduler: Context
 
 ## See Also
 
-- [let upstream: Upstream](publishers/delay/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives its elements.
-- [let interval: Context.SchedulerTimeType.Stride](publishers/delay/interval.md)
+- [let interval: Context.SchedulerTimeType.Stride](./interval.md)
   The amount of time to delay.
-- [let tolerance: Context.SchedulerTimeType.Stride](publishers/delay/tolerance.md)
+- [let tolerance: Context.SchedulerTimeType.Stride](./tolerance.md)
   The allowed tolerance in firing delayed events.
-- [let options: Context.SchedulerOptions?](publishers/delay/options.md)
+- [let options: Context.SchedulerOptions?](./options.md)
   Options relevant to the scheduler’s behavior.
 
 

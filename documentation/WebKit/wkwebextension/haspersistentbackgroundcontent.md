@@ -1,7 +1,8 @@
 # hasPersistentBackgroundContent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the extension has background content that stays in memory as long as the extension is loaded.
 
@@ -18,9 +19,13 @@ A Boolean value indicating whether the extension has background content that sta
 var hasPersistentBackgroundContent: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasPersistentBackgroundContent;
+```
+
 #### Discussion
 
-> **Note**: Note that extensions are only allowed to have persistent background content on macOS. An [`WKWebExtension.Error.Code.invalidBackgroundPersistence`](wkwebextension/error/code/invalidbackgroundpersistence.md) error will be reported on iOS, iPadOS, and visionOS if an attempt is made to load a persistent extension.
+> **Note**: Note that extensions are only allowed to have persistent background content on macOS. An [`WKWebExtension.Error.Code.invalidBackgroundPersistence`](./error/code/invalidbackgroundpersistence.md) error will be reported on iOS, iPadOS, and visionOS if an attempt is made to load a persistent extension.
 
 
 ---

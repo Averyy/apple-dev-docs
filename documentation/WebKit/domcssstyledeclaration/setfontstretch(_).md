@@ -1,7 +1,8 @@
 # setFontStretch(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setFontStretch(_ fontStretch: String!)
+```
+
+```objc
+- (void) setFontStretch:(NSString *) fontStretch;
 ```
 
 

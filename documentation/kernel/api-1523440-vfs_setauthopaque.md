@@ -1,7 +1,8 @@
 # vfs_setauthopaque
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Mark a filesystem as having authorization decisions controlled remotely.
 
@@ -10,11 +11,11 @@ Mark a filesystem as having authorization decisions controlled remotely.
 
 ## Declaration
 
-```swift
+```c
 void vfs_setauthopaque(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

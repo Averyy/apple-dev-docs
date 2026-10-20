@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [bATADCROne](1644080-anonymous/batadcrone.md)
-- [bATADCRReset](1644080-anonymous/batadcrreset.md)
-- [bATADCRnIntEnable](1644080-anonymous/batadcrnintenable.md)
-- [mATADCROne](1644080-anonymous/matadcrone.md)
-- [mATADCRReset](1644080-anonymous/matadcrreset.md)
-- [mATADCRnIntEnable](1644080-anonymous/matadcrnintenable.md)
+- [bATADCROne](./api-1644080-anonymous/batadcrone.md)
+- [bATADCRReset](./api-1644080-anonymous/batadcrreset.md)
+- [bATADCRnIntEnable](./api-1644080-anonymous/batadcrnintenable.md)
+- [mATADCROne](./api-1644080-anonymous/matadcrone.md)
+- [mATADCRReset](./api-1644080-anonymous/matadcrreset.md)
+- [mATADCRnIntEnable](./api-1644080-anonymous/matadcrnintenable.md)
 
 
 ---

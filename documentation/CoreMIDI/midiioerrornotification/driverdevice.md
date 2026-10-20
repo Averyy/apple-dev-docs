@@ -1,18 +1,19 @@
 # driverDevice
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device with an I/O error.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The device with an I/O error.
 var driverDevice: MIDIDeviceRef
 ```
 
+```c
+MIDIDeviceRef driverDevice;
+```
+
 ## See Also
 
-- [var messageID: MIDINotificationMessageID](midiioerrornotification/messageid.md)
+### Inspecting an error notification
+- [var messageID: MIDINotificationMessageID](./messageid.md)
   The type of message.
-- [var messageSize: UInt32](midiioerrornotification/messagesize.md)
+- [var messageSize: UInt32](./messagesize.md)
   The size of the message.
-- [var errorCode: OSStatus](midiioerrornotification/errorcode.md)
+- [var errorCode: OSStatus](./errorcode.md)
   The error code of the generated error.
 
 

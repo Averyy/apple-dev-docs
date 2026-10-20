@@ -1,7 +1,8 @@
 # mapTemplate(_:didReceiveRequestForDestination:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a navigation request is received. Show a trip preview corresponding to this destination and start navigation if the destination is accepted by the user.
 
@@ -14,6 +15,10 @@ Called when a navigation request is received. Show a trip preview corresponding 
 
 ```swift
 optional func mapTemplate(_ mapTemplate: CPMapTemplate, didReceiveRequestForDestination waypoint: CPNavigationWaypoint)
+```
+
+```objc
+- (void) mapTemplate:(CPMapTemplate *) mapTemplate didReceiveRequestForDestination:(CPNavigationWaypoint *) waypoint;
 ```
 
 

@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provide the next dock accessory motion state in the list.
 

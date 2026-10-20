@@ -1,7 +1,8 @@
 # NSCollectionChangeType
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of change represented in computing the difference of an ordered collection.
 
@@ -20,35 +21,40 @@ The type of change represented in computing the difference of an ordered collect
 enum NSCollectionChangeType
 ```
 
+```c
+enum NSCollectionChangeType : NSInteger;
+```
+
 ## Topics
 
 ### Types of Ordered Collection Changes
-- [NSCollectionChangeType.insert](nscollectionchangetype/insert.md)
+- [NSCollectionChangeType.insert](./nscollectionchangetype/insert.md)
   A change type that represents the insertion of an object into an ordered collection.
-- [NSCollectionChangeType.remove](nscollectionchangetype/remove.md)
+- [NSCollectionChangeType.remove](./nscollectionchangetype/remove.md)
   A change type that represents the removal of an object from an ordered collection.
 ### Initializers
-- [init?(rawValue: Int)](nscollectionchangetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nscollectionchangetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var hasChanges: Bool](nsorderedcollectiondifference/haschanges.md)
+### Accessing Changes
+- [var hasChanges: Bool](./nsorderedcollectiondifference/haschanges.md)
   A Boolean value that indicates if the difference has changes.
-- [var insertions: [NSOrderedCollectionChange]](nsorderedcollectiondifference/insertions.md)
+- [var insertions: [NSOrderedCollectionChange]](./nsorderedcollectiondifference/insertions.md)
   A collection of insertion change objects.
-- [var removals: [NSOrderedCollectionChange]](nsorderedcollectiondifference/removals.md)
+- [var removals: [NSOrderedCollectionChange]](./nsorderedcollectiondifference/removals.md)
   A collection of removal change objects.
-- [class NSOrderedCollectionChange](nsorderedcollectionchange.md)
+- [class NSOrderedCollectionChange](./nsorderedcollectionchange.md)
   An object that represents an indexed change within an ordered collection.
 
 

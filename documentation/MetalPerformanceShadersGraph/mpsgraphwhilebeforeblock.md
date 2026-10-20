@@ -1,7 +1,8 @@
 # MPSGraphWhileBeforeBlock
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block that executes before the condition evaluates for each iteration.
 
@@ -17,6 +18,10 @@ The block that executes before the condition evaluates for each iteration.
 
 ```swift
 typealias MPSGraphWhileBeforeBlock = ([MPSGraphTensor], NSMutableArray) -> MPSGraphTensor
+```
+
+```c
+typedef MPSGraphTensor *(^)(NSArray<MPSGraphTensor *> *, NSMutableArray<MPSGraphTensor *> *) MPSGraphWhileBeforeBlock;
 ```
 
 #### Return Value

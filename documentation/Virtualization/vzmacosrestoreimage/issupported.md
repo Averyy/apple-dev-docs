@@ -1,7 +1,8 @@
 # isSupported
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the current host supports this restore image.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the current host supports this restore im
 var isSupported: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSupported) BOOL supported;
+```
+
 ## See Also
 
-- [var buildVersion: String](vzmacosrestoreimage/buildversion.md)
+### Getting Information About the Restore Image
+- [var buildVersion: String](./buildversion.md)
   The build version this restore image contains.
-- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md)
+- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](./mostfeaturefulsupportedconfiguration.md)
   This object represents the most fully featured configuration that’s supported by both the current host and by this restore image.
-- [var operatingSystemVersion: OperatingSystemVersion](vzmacosrestoreimage/operatingsystemversion.md)
+- [var operatingSystemVersion: OperatingSystemVersion](./operatingsystemversion.md)
   The operating system version this restore image contains.
-- [var url: URL](vzmacosrestoreimage/url.md)
+- [var url: URL](./url.md)
   The URL of this restore image.
 
 

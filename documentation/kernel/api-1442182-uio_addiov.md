@@ -1,14 +1,15 @@
 # uio_addiov
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uio_addiov(uio_t a_uio, user_addr_t a_baseaddr, user_size_t a_length);
 ```
 

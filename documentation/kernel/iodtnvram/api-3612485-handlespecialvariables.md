@@ -1,14 +1,15 @@
 # handleSpecialVariables
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool handleSpecialVariables(const char *name, const uuid_t guid, const OSObject *obj, IOReturn *error);
 ```
 

@@ -1,7 +1,8 @@
 # sources
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data sources and options to use during a search.
 
@@ -20,9 +21,9 @@ var sources: [SearchSource]
 
 #### Discussion
 
-Use this property to specify where you want [`SpotlightSearchTool`](spotlightsearchtool.md) to look for your app’s data. Fill this property with [`CoreSpotlightSource`](corespotlightsource.md) or [`FileSource`](filesource.md) types. If you specify multiple search sources, the tool searches all of them and delivers the merged results to the model. Each source object also has options about how much data to retrieve from the source, which you can use to control how much data you send to the model.
+Use this property to specify where you want [`SpotlightSearchTool`](../../spotlightsearchtool.md) to look for your app’s data. Fill this property with [`CoreSpotlightSource`](../../corespotlightsource.md) or [`FileSource`](../../filesource.md) types. If you specify multiple search sources, the tool searches all of them and delivers the merged results to the model. Each source object also has options about how much data to retrieve from the source, which you can use to control how much data you send to the model.
 
-If you don’t specify a value for this property, the search tool uses a default [`CoreSpotlightSource`](corespotlightsource.md) to search your app’s Spotlight index.
+If you don’t specify a value for this property, the search tool uses a default [`CoreSpotlightSource`](../../corespotlightsource.md) to search your app’s Spotlight index.
 
 
 ---

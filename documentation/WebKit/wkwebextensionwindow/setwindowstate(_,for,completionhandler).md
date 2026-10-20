@@ -1,7 +1,8 @@
 # setWindowState(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set the state of the window.
 
@@ -15,12 +16,20 @@ Called to set the state of the window.
 ## Declaration
 
 ```swift
+optional func setWindowState(_ state: WKWebExtension.WindowState, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setWindowState(_ state: WKWebExtension.WindowState, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setWindowState:(WKWebExtensionWindowState) state forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-The implementation of [`windowState(for:)`](wkwebextensionwindow/windowstate(for:).md) is a prerequisite.
+The implementation of [`windowState(for:)`](./windowstate%28for%29.md) is a prerequisite.
 
 Without it, this method will not be called.
 
@@ -32,7 +41,8 @@ Without it, this method will not be called.
 
 ## See Also
 
-- [func windowState(for: WKWebExtensionContext) -> WKWebExtension.WindowState](wkwebextensionwindow/windowstate(for:).md)
+### Related Documentation
+- [func windowState(for: WKWebExtensionContext) -> WKWebExtension.WindowState](./windowstate%28for%29.md)
   Called when the state of the window is needed.
 
 

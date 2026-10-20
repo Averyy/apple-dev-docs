@@ -1,7 +1,8 @@
 # init(trackID:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new video composition layer instruction for the given track ID.
 
@@ -21,7 +22,8 @@ init(trackID: CMPersistentTrackID = .zero)
 
 ## See Also
 
-- [init(assetTrack: AVAssetTrack)](avvideocompositionlayerinstruction/configuration/init(assettrack:).md)
+### Creating a configuration
+- [init(assetTrack: AVAssetTrack)](./init%28assettrack%29.md)
   Creates a new video composition layer instruction for the given track.
 
 

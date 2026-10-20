@@ -1,7 +1,8 @@
 # visualizeConstraints(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a visual representation of the supplied constraints in the window.
 
@@ -14,9 +15,13 @@ Displays a visual representation of the supplied constraints in the window.
 func visualizeConstraints(_ constraints: [NSLayoutConstraint]?)
 ```
 
+```objc
+- (void) visualizeConstraints:(NSArray<NSLayoutConstraint *> *) constraints;
+```
+
 #### Discussion
 
-The constraints to visualize are typically discovered by identifying a view whose layout is unexpected and then calling [`constraintsAffectingLayout(for:)`](nsview/constraintsaffectinglayout(for:).md) on that view.
+The constraints to visualize are typically discovered by identifying a view whose layout is unexpected and then calling [`constraintsAffectingLayout(for:)`](../nsview/constraintsaffectinglayout%28for%29.md) on that view.
 
 This method should only be used for debugging constraint-based layout. No application should ship with calls to this method as part of its operation.
 

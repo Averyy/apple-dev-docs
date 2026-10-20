@@ -1,14 +1,15 @@
 # CSSLOT_IDENTIFICATIONSLOT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_IDENTIFICATIONSLOT = 0x10001
 ```
 

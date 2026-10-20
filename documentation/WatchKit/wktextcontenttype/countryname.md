@@ -1,12 +1,13 @@
 # countryName
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of a country or region.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ The name of a country or region.
 static let countryName: WKTextContentType
 ```
 
+```c
+extern WKTextContentType const WKTextContentTypeCountryName;
+```
+
 ## See Also
 
-- [static let location: WKTextContentType](wktextcontenttype/location.md)
+### Address
+- [static let location: WKTextContentType](./location.md)
   A point of interest, address, or other identifiable location.
-- [static let fullStreetAddress: WKTextContentType](wktextcontenttype/fullstreetaddress.md)
+- [static let fullStreetAddress: WKTextContentType](./fullstreetaddress.md)
   The full street address for a location, including the unit or suite number.
-- [static let streetAddressLine1: WKTextContentType](wktextcontenttype/streetaddressline1.md)
+- [static let streetAddressLine1: WKTextContentType](./streetaddressline1.md)
   The first line of a street address.
-- [static let streetAddressLine2: WKTextContentType](wktextcontenttype/streetaddressline2.md)
+- [static let streetAddressLine2: WKTextContentType](./streetaddressline2.md)
   The second line of a street address.
-- [static let addressCity: WKTextContentType](wktextcontenttype/addresscity.md)
+- [static let addressCity: WKTextContentType](./addresscity.md)
   The name of a city.
-- [static let addressState: WKTextContentType](wktextcontenttype/addressstate.md)
+- [static let addressState: WKTextContentType](./addressstate.md)
   The name of a state.
-- [static let addressCityAndState: WKTextContentType](wktextcontenttype/addresscityandstate.md)
+- [static let addressCityAndState: WKTextContentType](./addresscityandstate.md)
   The name of a city and state.
-- [static let sublocality: WKTextContentType](wktextcontenttype/sublocality.md)
+- [static let sublocality: WKTextContentType](./sublocality.md)
   The sublocality.
-- [static let postalCode: WKTextContentType](wktextcontenttype/postalcode.md)
+- [static let postalCode: WKTextContentType](./postalcode.md)
   A postal code.
 
 

@@ -1,7 +1,8 @@
 # expression
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The component expressions of the predicate.
 

@@ -1,7 +1,8 @@
 # needRules()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Create a verdict that indicates to the system that the Filter Data Provider needs the filtering rules to be updated before it can make a remediation decision about the current flow of network data.
 
@@ -17,15 +18,20 @@ Create a verdict that indicates to the system that the Filter Data Provider need
 class func needRules() -> NEFilterRemediationVerdict
 ```
 
+```objc
++ (NEFilterRemediationVerdict *) needRulesVerdict;
+```
+
 #### Return Value
 
 A `NEFilterRemediationVerdict` object.
 
 ## See Also
 
-- [class func allow() -> NEFilterRemediationVerdict](nefilterremediationverdict/allow.md)
+### Creating remediation verdicts
+- [class func allow() -> NEFilterRemediationVerdict](./allow%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider will allow the flow to pass to its final destination when/if the flow is requested again.
-- [class func drop() -> NEFilterRemediationVerdict](nefilterremediationverdict/drop.md)
+- [class func drop() -> NEFilterRemediationVerdict](./drop%28%29.md)
   Create a verdict that indicates to the system that the Filter Data Provider will continue to block the flow of network data if/when the flow is requested again.
 
 

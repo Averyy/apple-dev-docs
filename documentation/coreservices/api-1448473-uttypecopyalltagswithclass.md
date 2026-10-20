@@ -1,7 +1,8 @@
 # UTTypeCopyAllTagsWithClass(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 8.0+ - Deprecated in 15.0
@@ -16,6 +17,10 @@
 
 ```swift
 func UTTypeCopyAllTagsWithClass(_ inUTI: CFString, _ inTagClass: CFString) -> Unmanaged<CFArray>?
+```
+
+```c
+CFArrayRef UTTypeCopyAllTagsWithClass(CFStringRef inUTI, CFStringRef inTagClass);
 ```
 
 

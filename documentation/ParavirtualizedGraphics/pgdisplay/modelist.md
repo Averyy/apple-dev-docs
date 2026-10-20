@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The list of display modes that the virtual display supports.
@@ -14,6 +15,10 @@ The list of display modes that the virtual display supports.
 
 ```swift
 var modeList: [PGDisplayMode] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nonnull) NSArray<PGDisplayMode *> * modeList;
 ```
 
 #### Discussion

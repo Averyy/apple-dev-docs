@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Assignables  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -9,7 +10,7 @@ Returns a Boolean value indicating whether two values are equal.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

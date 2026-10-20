@@ -1,7 +1,8 @@
 # init(webPage:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new media environment identified by the URL.
 
@@ -21,7 +22,8 @@ init(webPage url: URL)
 
 ## See Also
 
-- [init(xpcRepresentation: xpc_object_t) throws](mediaenvironment/init(xpcrepresentation:).md)
+### Creating a media environment
+- [init(xpcRepresentation: xpc_object_t) throws](./init%28xpcrepresentation%29.md)
   Creates a media environment from an XPC representation.
 
 

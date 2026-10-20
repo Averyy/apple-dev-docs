@@ -1,7 +1,8 @@
 # AVAssetWritingPlanner.SegmentResult
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Result type for manual segment completion control.
 
@@ -26,11 +27,11 @@ Return this type from the segment handler to explicitly control how each segment
 ## Topics
 
 ### Completion Options
-- [AVAssetWritingPlanner.SegmentResult.success](avassetwritingplanner/segmentresult/success.md)
+- [AVAssetWritingPlanner.SegmentResult.success](./segmentresult/success.md)
   Finish the segment successfully without saving state.
-- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](avassetwritingplanner/segmentresult/successwithstate(_:).md)
+- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](./segmentresult/successwithstate%28_%29.md)
   Finish the segment successfully with custom client state.
-- [AVAssetWritingPlanner.SegmentResult.cancelled](avassetwritingplanner/segmentresult/cancelled.md)
+- [AVAssetWritingPlanner.SegmentResult.cancelled](./segmentresult/cancelled.md)
   Cancel the current segment while allowing future resumption.
 
 

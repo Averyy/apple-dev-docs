@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the entity as a RealityKit file to a location in the file system.
 

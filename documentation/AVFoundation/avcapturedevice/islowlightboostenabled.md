@@ -1,7 +1,8 @@
 # isLowLightBoostEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture device’s low light boost feature is in an enabled state.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the capture device’s low light boost fe
 var isLowLightBoostEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isLowLightBoostEnabled) BOOL lowLightBoostEnabled;
+```
+
 #### Discussion
 
-The value of this property indicates whether the capture device currently enhancing images to improve quality due to low light conditions. When this property is [`true`](https://developer.apple.com/documentation/swift/true), the capture device has switched into a special mode in which it perceives more light in images.
+The value of this property indicates whether the capture device currently enhancing images to improve quality due to low light conditions. When this property is [`true`](../../Swift/true.md), the capture device has switched into a special mode in which it perceives more light in images.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var isLowLightBoostSupported: Bool](avcapturedevice/islowlightboostsupported.md)
+### Configuring low light settings
+- [var isLowLightBoostSupported: Bool](./islowlightboostsupported.md)
   A Boolean value that indicates whether the capture device supports boosting images in low-light conditions.
-- [var automaticallyEnablesLowLightBoostWhenAvailable: Bool](avcapturedevice/automaticallyenableslowlightboostwhenavailable.md)
+- [var automaticallyEnablesLowLightBoostWhenAvailable: Bool](./automaticallyenableslowlightboostwhenavailable.md)
   A Boolean value that indicates whether the capture device automatically switches to low-light boost mode when necessary.
 
 

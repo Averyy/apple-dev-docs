@@ -1,7 +1,8 @@
 # HIShapeSetWithShape(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeSetWithShape(_ inDestShape: HIMutableShape!, _ inSrcShape: HIShape!) -> OSStatus
+```
+
+```c
+OSStatus HIShapeSetWithShape(HIMutableShapeRef inDestShape, HIShapeRef inSrcShape);
 ```
 
 

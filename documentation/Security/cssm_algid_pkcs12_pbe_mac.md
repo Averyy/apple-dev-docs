@@ -1,7 +1,8 @@
 # CSSM_ALGID_PKCS12_PBE_MAC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_ALGID_PKCS12_PBE_MAC: UInt32 { get }
+```
+
+```c
+CSSM_ALGID_PKCS12_PBE_MAC
 ```
 
 

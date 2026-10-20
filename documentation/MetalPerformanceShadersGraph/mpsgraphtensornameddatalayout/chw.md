@@ -1,7 +1,8 @@
 # MPSGraphTensorNamedDataLayout.CHW
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 LayoutCHW
 
@@ -17,6 +18,10 @@ LayoutCHW
 
 ```swift
 case CHW
+```
+
+```c
+MPSGraphTensorNamedDataLayoutCHW
 ```
 
 

@@ -1,7 +1,8 @@
 # SecurityPreferences
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures security preferences.
 
@@ -10,7 +11,7 @@ The payload that configures security preferences.
 
 ## Declaration
 
-```swift
+```
 object SecurityPreferences
 ```
 
@@ -18,7 +19,7 @@ object SecurityPreferences
 
 Specify `com.apple.preference.security` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.preference.security` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -69,14 +70,21 @@ Specify `com.apple.preference.security` as the payload type.
 ## Properties
 
 - `dontAllowFireWallUI` (boolean): If `true`, disables user changes to the firewall settings.
+
+  **Default**: `false`
 - `dontAllowLockMessageUI` (boolean): If `true`, disables user changes to the lock message.
+
+  **Default**: `false`
 - `dontAllowPasswordResetUI` (boolean): If `true`, disables user changes to the password.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object Passcode](passcode.md)
+### Security
+- [object Passcode](./passcode.md)
   The payload that configures a passcode policy.
-- [object SmartCard](smartcard.md)
+- [object SmartCard](./smartcard.md)
   The payload that configures a smart card.
 
 

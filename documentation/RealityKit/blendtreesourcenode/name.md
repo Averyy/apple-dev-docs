@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual name for the blend node.
 
@@ -11,7 +12,7 @@ A textual name for the blend node.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var name: String
 
 ## See Also
 
-- [var source: (any AnimationDefinition)?](blendtreesourcenode/source.md)
+### Configuring a blend tree animation node
+- [var source: (any AnimationDefinition)?](./source.md)
   The blend node’s animation.
-- [var weight: BlendWeight](blendtreesourcenode/weight.md)
+- [var weight: BlendWeight](./weight.md)
   A normalized percentage that designates how much effect this node has compared to peer nodes.
 
 

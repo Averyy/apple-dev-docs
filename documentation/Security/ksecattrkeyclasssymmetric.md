@@ -1,7 +1,8 @@
 # kSecAttrKeyClassSymmetric
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A private key used for symmetric-key encryption and decryption.
 
@@ -18,6 +19,10 @@ A private key used for symmetric-key encryption and decryption.
 
 ```swift
 let kSecAttrKeyClassSymmetric: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyClassSymmetric;
 ```
 
 

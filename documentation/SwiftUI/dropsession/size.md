@@ -1,7 +1,8 @@
 # size
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Size of the drop destination view.
 
@@ -20,9 +21,10 @@ var size: CGSize
 
 ## See Also
 
-- [var itemsCount: Int](dropsession/itemscount.md)
+### Getting drop details
+- [var itemsCount: Int](./itemscount.md)
   Number of items for the drop.
-- [var location: CGPoint](dropsession/location.md)
+- [var location: CGPoint](./location.md)
   Location of drop in the local coordinate space
 
 

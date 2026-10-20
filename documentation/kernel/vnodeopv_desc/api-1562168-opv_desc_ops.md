@@ -1,14 +1,15 @@
 # opv_desc_ops
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 const struct vnodeopv_entry_desc *opv_desc_ops;
 ```
 

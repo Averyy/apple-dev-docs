@@ -1,7 +1,8 @@
 # init(buffer:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio input object.
 
@@ -29,9 +30,10 @@ This audio buffer is assumed to start immediately after the previous buffer (or 
 
 ## See Also
 
-- [init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](analyzerinput/init(buffer:)-3nt02.md)
+### Creating an input element
+- [init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](./init%28buffer%29-3nt02.md)
   Creates an audio input object.
-- [init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)](analyzerinput/init(buffer:bufferstarttime:).md)
+- [init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)](./init%28buffer,bufferstarttime%29.md)
   Creates an audio input object for audio that may be discontiguous with previous input.
 
 

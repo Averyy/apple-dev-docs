@@ -1,7 +1,8 @@
 # triggerForFriending(handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Brings up the invite friends view.
 
@@ -14,7 +15,15 @@ Brings up the invite friends view.
 ## Declaration
 
 ```swift
+func triggerForFriending(handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func triggerForFriending() async
+```
+
+```objc
+- (void) triggerAccessPointForFriendingWithHandler:(void (^)()) handler;
 ```
 
 

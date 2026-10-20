@@ -1,7 +1,8 @@
 # Publishers.Merge4.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publishers’ common output type.
 
 ## See Also
 
-- [Publishers.Merge4.Failure](publishers/merge4/failure.md)
+### Declaring supporting types
+- [Publishers.Merge4.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

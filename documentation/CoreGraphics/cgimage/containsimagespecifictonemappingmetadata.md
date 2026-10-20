@@ -1,7 +1,8 @@
 # containsImageSpecificToneMappingMetadata
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,12 +19,17 @@
 var containsImageSpecificToneMappingMetadata: Bool { get }
 ```
 
+```c
+extern bool CGImageContainsImageSpecificToneMappingMetadata(CGImageRef image);
+```
+
 ## See Also
 
-- [var byteOrderInfo: CGImageByteOrderInfo](cgimage/byteorderinfo.md)
-- [var contentHeadroom: Float](cgimage/contentheadroom.md)
-- [var pixelFormatInfo: CGImagePixelFormatInfo](cgimage/pixelformatinfo.md)
-- [var shouldToneMap: Bool](cgimage/shouldtonemap.md)
+### Instance properties
+- [var byteOrderInfo: CGImageByteOrderInfo](./byteorderinfo.md)
+- [var contentHeadroom: Float](./contentheadroom.md)
+- [var pixelFormatInfo: CGImagePixelFormatInfo](./pixelformatinfo.md)
+- [var shouldToneMap: Bool](./shouldtonemap.md)
 
 
 ---

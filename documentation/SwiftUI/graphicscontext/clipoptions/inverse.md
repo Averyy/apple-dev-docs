@@ -1,7 +1,8 @@
 # inverse
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to invert the shape or layer alpha as the clip mask.
 

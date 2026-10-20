@@ -1,17 +1,22 @@
 # webView(_:didFinishLoadFor:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a page load completes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didFinishLoadForFrame:(WebFrame *) frame;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ This method is invoked when a location request for `frame` has completed; that i
 
 ## See Also
 
-- [func webView(WebView!, didStartProvisionalLoadFor: WebFrame!)](webframeloaddelegate/webview(_:didstartprovisionalloadfor:).md)
+### Related Documentation
+- [func webView(WebView!, didStartProvisionalLoadFor: WebFrame!)](./webview%28_,didstartprovisionalloadfor%29.md)
   Called when a page load is in progress in a given frame.
 
 

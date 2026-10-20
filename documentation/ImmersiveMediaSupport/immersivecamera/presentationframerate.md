@@ -1,7 +1,8 @@
 # presentationFrameRate
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Presentation frame rate suited for this immersive camera.
 
@@ -20,13 +21,14 @@ var presentationFrameRate: Int
 
 ## See Also
 
-- [var calibration: ImmersiveCameraCalibration](immersivecamera/calibration.md)
+### Instance Properties
+- [var calibration: ImmersiveCameraCalibration](./calibration.md)
   Calibration details for this camera.
-- [var id: String](immersivecamera/id.md)
+- [var id: String](./id.md)
   A unique and non empty identifier string for this immersive camera.
-- [var pose: Pose3DFloat](immersivecamera/pose.md)
+- [var pose: Pose3DFloat](./pose.md)
   The pose of this immersive camera.
-- [var type: ImmersiveCamera.CameraType](immersivecamera/type.md)
+- [var type: ImmersiveCamera.CameraType](./type.md)
   Represents the type of the camera.
 
 

@@ -1,7 +1,8 @@
 # aquarium
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for aquariums.
 
@@ -20,25 +21,30 @@ The point of interest category for aquariums.
 static let aquarium: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryAquarium;
+```
+
 ## See Also
 
-- [static let amusementPark: MKPointOfInterestCategory](mkpointofinterestcategory/amusementpark.md)
+### Parks and recreation
+- [static let amusementPark: MKPointOfInterestCategory](./amusementpark.md)
   The point of interest category for amusement parks.
-- [static let beach: MKPointOfInterestCategory](mkpointofinterestcategory/beach.md)
+- [static let beach: MKPointOfInterestCategory](./beach.md)
   The point of interest category for beaches.
-- [static let campground: MKPointOfInterestCategory](mkpointofinterestcategory/campground.md)
+- [static let campground: MKPointOfInterestCategory](./campground.md)
   The point of interest category for campgrounds.
-- [static let fairground: MKPointOfInterestCategory](mkpointofinterestcategory/fairground.md)
+- [static let fairground: MKPointOfInterestCategory](./fairground.md)
   The point of interest category for fairgrounds.
-- [static let marina: MKPointOfInterestCategory](mkpointofinterestcategory/marina.md)
+- [static let marina: MKPointOfInterestCategory](./marina.md)
   The point of interest category for marinas.
-- [static let nationalPark: MKPointOfInterestCategory](mkpointofinterestcategory/nationalpark.md)
+- [static let nationalPark: MKPointOfInterestCategory](./nationalpark.md)
   The point of interest category for national parks.
-- [static let park: MKPointOfInterestCategory](mkpointofinterestcategory/park.md)
+- [static let park: MKPointOfInterestCategory](./park.md)
   The point of interest category for parks.
-- [static let rvPark: MKPointOfInterestCategory](mkpointofinterestcategory/rvpark.md)
+- [static let rvPark: MKPointOfInterestCategory](./rvpark.md)
   The point of interest category for recreational vehicle parks.
-- [static let zoo: MKPointOfInterestCategory](mkpointofinterestcategory/zoo.md)
+- [static let zoo: MKPointOfInterestCategory](./zoo.md)
   The point of interest category for zoos.
 
 

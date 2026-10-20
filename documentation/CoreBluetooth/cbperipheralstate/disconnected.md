@@ -1,7 +1,8 @@
 # CBPeripheralState.disconnected
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The peripheral isn’t connected to the central manager.
 
@@ -20,13 +21,18 @@ The peripheral isn’t connected to the central manager.
 case disconnected
 ```
 
+```c
+CBPeripheralStateDisconnected
+```
+
 ## See Also
 
-- [CBPeripheralState.connecting](cbperipheralstate/connecting.md)
+### Peripheral States
+- [CBPeripheralState.connecting](./connecting.md)
   The peripheral is in the process of connecting to the central manager.
-- [CBPeripheralState.connected](cbperipheralstate/connected.md)
+- [CBPeripheralState.connected](./connected.md)
   The peripheral is connected to the central manager.
-- [CBPeripheralState.disconnecting](cbperipheralstate/disconnecting.md)
+- [CBPeripheralState.disconnecting](./disconnecting.md)
   The peripheral is disconnecting from the central manager.
 
 

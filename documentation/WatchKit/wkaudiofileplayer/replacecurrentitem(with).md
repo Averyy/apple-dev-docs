@@ -1,17 +1,22 @@
 # replaceCurrentItem(with:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the current player item with a different one.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
 func replaceCurrentItem(with item: WKAudioFilePlayerItem?)
+```
+
+```objc
+- (void) replaceCurrentItemWithPlayerItem:(WKAudioFilePlayerItem *) item;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ The default implementation of this method does nothing. Subclasses can override 
 
 ## See Also
 
-- [convenience init(playerItem: WKAudioFilePlayerItem)](wkaudiofileplayer/init(playeritem:).md)
+### Creating a Player
+- [convenience init(playerItem: WKAudioFilePlayerItem)](./init%28playeritem%29.md)
   Creates and returns a player initialized with the specified player item.
 
 

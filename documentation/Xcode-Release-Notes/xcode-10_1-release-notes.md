@@ -1,6 +1,7 @@
 # Xcode 10.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -12,7 +13,9 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### New Features
 
-- Support for arm64e (Preview)To try the developer preview of arm64e, select your iOS app target in the Project Editor, find its Architectures build setting, select the Other… option, and add arm64e to the list of architectures. For more information, see [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication). The App Store and TestFlight don’t accept submissions containing arm64e. Xcode will remove arm64e content from your app when you distribute from the Organizer window. (42296212)
+- Support for arm64e (Preview)To try the developer preview of arm64e, select your iOS app target in the Project Editor, find its Architectures build setting, select the Other… option, and add arm64e to the list of architectures. For more information, see [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md).
+
+  The App Store and TestFlight don’t accept submissions containing arm64e. Xcode will remove arm64e content from your app when you distribute from the Organizer window. (42296212)
 
 ###### Resolved Issues
 
@@ -63,7 +66,7 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### Resolved Issues
 
-- Fixed an issue with Auto Layout incorrectly reporting issues when constraining views to [`UIScrollView`](https://developer.apple.com/documentation/uikit/uiscrollview) subviews. (44457610)
+- Fixed an issue with Auto Layout incorrectly reporting issues when constraining views to [`UIScrollView`](../UIKit/uiscrollview.md) subviews. (44457610)
 - Improved canvas performance when switching between iPhone XS, iPhone XS Max, and iPhone XR with the device bar. (44605631)
 - Fixed an issue that caused the layout of watch content in the Preview assistant editor to not match the Device Bar selection. (42563683)
 - `@IBDesignable` views now build using the new build system when it’s enabled. (31433718)
@@ -72,71 +75,87 @@ Xcode 10.1 includes SDKs for iOS 12.1, watchOS 5.1, macOS 10.14.1, and tvOS 12.1
 
 ###### Known Issues
 
-- If another process, such as `simctl`, shuts down a simulated device while Simulator is open, Simulator doesn’t reconnect to it properly when the device is next booted. If you have multiple versions of Xcode installed, you might experience this issue when running Simulator in those other versions. (44629720) **Workaround:** Quit and relaunch Simulator. To quit without shutting down all simulators, hold Option and choose Simulator > Quit Simulator…, then choose “Keep Running” in the dialog that appears.
+- If another process, such as `simctl`, shuts down a simulated device while Simulator is open, Simulator doesn’t reconnect to it properly when the device is next booted. If you have multiple versions of Xcode installed, you might experience this issue when running Simulator in those other versions. (44629720)
+
+  **Workaround:** Quit and relaunch Simulator. To quit without shutting down all simulators, hold Option and choose Simulator > Quit Simulator…, then choose “Keep Running” in the dialog that appears.
 
 ##### Swift Compiler
 
 ###### Known Issues
 
-- If you indirectly modify a property using a nonmutating setter that’s defined in a protocol or extension on a class instance, the Swift compiler might miscompile it by releasing the instance after the getter is invoked. This might cause the program to crash or have unpredictable behavior at runtime. (45274900) For example: ```swift
-protocol SomeProtocol { }
-class SomeClass: SomeProtocol { }
-  
-extension SomeProtocol {
-    var someNonmutatingProperty: CGPoint {
-        nonmutating set { _ = self }
-        get { return .zero }
-    }
-}
-  
-// Might be miscompiled, deallocating SomeClass() too early.
-SomeClass().someNonmutatingProperty.x = 42
-``` **Workaround:** Break the operation up into multiple statements so that the `get` and `set` operations occur in different statements: ```swift
-let someObject = SomeClass()
-// First get the nonmutating property value.
-var temp = someObject.someNonmutatingProperty
-temp.x = 42
-// Then modify it.
-someObject.someNonmutatingProperty = temp
-```
+- If you indirectly modify a property using a nonmutating setter that’s defined in a protocol or extension on a class instance, the Swift compiler might miscompile it by releasing the instance after the getter is invoked. This might cause the program to crash or have unpredictable behavior at runtime. (45274900)
+
+  For example:
+
+  ```swift
+  protocol SomeProtocol { }
+  class SomeClass: SomeProtocol { }
+    
+  extension SomeProtocol {
+      var someNonmutatingProperty: CGPoint {
+          nonmutating set { _ = self }
+          get { return .zero }
+      }
+  }
+    
+  // Might be miscompiled, deallocating SomeClass() too early.
+  SomeClass().someNonmutatingProperty.x = 42
+  ```
+
+  **Workaround:** Break the operation up into multiple statements so that the `get` and `set` operations occur in different statements:
+
+  ```swift
+  let someObject = SomeClass()
+  // First get the nonmutating property value.
+  var temp = someObject.someNonmutatingProperty
+  temp.x = 42
+  // Then modify it.
+  someObject.someNonmutatingProperty = temp
+  ```
 
 ###### Resolved Issues
 
 - Playgrounds in Xcode no longer log messages about fields whose types fail to demangle at runtime. (44642942)
 - Compilation now consistently reports the errors responsible for any failures. For example, previously, a message like “Command CompileSwiftSources failed with a nonzero exit code” could occur without an accompanying failure reason. (43033749, 44362180)
 - Long file paths containing white space no longer cause build failures. (44142091)
-- The [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) class’s [`init(for:)`](https://developer.apple.com/documentation/foundation/bundle/init(for:)) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
-- A `let` property of a generic class that has function type as an argument can now be passed successfully to another function or method. (41056468) ```swift
-class A<B> {
-    let function: (B) -> B
-}
-func takeFunction(_: (Int) -> Int) {}
-  
-func passFunction(from a: A<Int>) {
-    takeFunction(a.function)
-}
-```
-- Changes made to a captured value in a nested context is now reflected in the outer context. ([`SR-8398`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-8398)) (42742744)
-- A mutating method that returns `Self` on a value of protocol type can now successfully be invoked (43507711): ```swift
-protocol Example {
-    mutating func test() -> Self
-}
-  
-func foo(x: inout Example) {
-    _ = x.test() // No longer crashes the compiler sometimes.
-}
-```
-- The compiler can now successfully form an array of heterogeneous class objects as an `AnyObject` array (42666956): ```swift
-func f(_: [AnyObject])
-  
-f([NSObject.self, NSString.self])
-```
+- The [`Bundle`](../Foundation/bundle.md) class’s [`init(for:)`](../Foundation/bundle/init%28for%29.md) initializer now works consistently with Swift classes, including when not running on the latest operating system versions. (44489216)
+- A `let` property of a generic class that has function type as an argument can now be passed successfully to another function or method. (41056468)
+
+  ```swift
+  class A<B> {
+      let function: (B) -> B
+  }
+  func takeFunction(_: (Int) -> Int) {}
+    
+  func passFunction(from a: A<Int>) {
+      takeFunction(a.function)
+  }
+  ```
+- Changes made to a captured value in a nested context is now reflected in the outer context. ([SR-8398](https://bugs.swift.org/browse/SR-8398)) (42742744)
+- A mutating method that returns `Self` on a value of protocol type can now successfully be invoked (43507711):
+
+  ```swift
+  protocol Example {
+      mutating func test() -> Self
+  }
+    
+  func foo(x: inout Example) {
+      _ = x.test() // No longer crashes the compiler sometimes.
+  }
+  ```
+- The compiler can now successfully form an array of heterogeneous class objects as an `AnyObject` array (42666956):
+
+  ```swift
+  func f(_: [AnyObject])
+    
+  f([NSObject.self, NSString.self])
+  ```
 
 ##### Swift Standard Library
 
 ###### Resolved Issues
 
-- The [`FixedWidthInteger`](https://developer.apple.com/documentation/swift/fixedwidthinteger) protocol’s `unsafeAdding(_:)`, `unsafeSubtracting(_:)`, `unsafeDivided(by:)`, and `unsafeMultiplied(by:)` methods are now deprecated and will be removed in a future release.These methods produce undefined behavior in overflow conditions. In the case of arithmetic operations, use a combination of an assert and either the [`addingReportingOverflow(_:)`](https://developer.apple.com/documentation/swift/fixedwidthinteger/addingreportingoverflow(_:)) method or the `&+` operator, both of which have well-defined results in cases of overflow. (43688685)
+- The [`FixedWidthInteger`](../Swift/fixedwidthinteger.md) protocol’s `unsafeAdding(_:)`, `unsafeSubtracting(_:)`, `unsafeDivided(by:)`, and `unsafeMultiplied(by:)` methods are now deprecated and will be removed in a future release.These methods produce undefined behavior in overflow conditions. In the case of arithmetic operations, use a combination of an assert and either the [`addingReportingOverflow(_:)`](../Swift/fixedwidthinteger/addingreportingoverflow%28_%29.md) method or the `&+` operator, both of which have well-defined results in cases of overflow. (43688685)
 
 ##### Source Control
 
@@ -148,25 +167,28 @@ f([NSObject.self, NSString.self])
 
 ###### Known Issues
 
-- Profiling tests does not behave correctly when test parallelization is enabled. (44836817) **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme… > Test > Info. Select the Options button next to your test target, and disable the “Execute in parallel” checkbox.
+- Profiling tests does not behave correctly when test parallelization is enabled. (44836817)
+
+  **Workaround:** Disable parallel testing while profiling by navigating to Product > Scheme > Edit Scheme… > Test > Info. Select the Options button next to your test target, and disable the “Execute in parallel” checkbox.
 
 ###### Resolved Issues
 
 - UI tests in projects using the legacy build system now run on iPhone XS and iPhone XS Max. (44777186)
 - If a UI test target app crashes during testing in Simulator, it’s now correctly reported as a test failure instead of either being incorrectly considered a successful test or displaying a failure message about “Application state unknown”. (44765263)
 - Xcode 10.1 beta 2 and later support UI testing with devices running beta versions of iOS 12. (43796360)
-- Fixed an issue where the [`testBundleDidFinish(_:)`](https://developer.apple.com/documentation/xctest/xctestobservation/testbundledidfinish(_:)) method wouldn’t be called on an observer added to the shared [`XCTestObservationCenter`](https://developer.apple.com/documentation/xctest/xctestobservationcenter) instance if the observer was added at any point after testing had already started. (For example, after the [`testBundleWillStart(_:)`](https://developer.apple.com/documentation/xctest/xctestobservation/testbundlewillstart(_:)) method had been called on all the currently registered observers). (44340337)
-- The [`XCUIElement`](https://developer.apple.com/documentation/xcuiautomation/xcuielement) class’s [`click()`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/click()) and [`hover()`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/hover()) methods now automatically scroll menus when the receiver is a menu item or subview of a menu item. (43510448)
+- Fixed an issue where the [`testBundleDidFinish(_:)`](../XCTest/xctestobservation/testbundledidfinish%28_%29.md) method wouldn’t be called on an observer added to the shared [`XCTestObservationCenter`](../XCTest/xctestobservationcenter.md) instance if the observer was added at any point after testing had already started. (For example, after the [`testBundleWillStart(_:)`](../XCTest/xctestobservation/testbundlewillstart%28_%29.md) method had been called on all the currently registered observers). (44340337)
+- The [`XCUIElement`](../XCUIAutomation/xcuielement.md) class’s [`click()`](../XCUIAutomation/xcuielement/click%28%29.md) and [`hover()`](../XCUIAutomation/xcuielement/hover%28%29.md) methods now automatically scroll menus when the receiver is a menu item or subview of a menu item. (43510448)
 
 ## See Also
 
-- [Xcode 10.3 Release Notes](xcode-10_3-release-notes.md)
+### Xcode 10
+- [Xcode 10.3 Release Notes](./xcode-10_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.2.1 Release Notes](xcode-10_2_1-release-notes.md)
+- [Xcode 10.2.1 Release Notes](./xcode-10_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10.2 Release Notes](xcode-10_2-release-notes.md)
+- [Xcode 10.2 Release Notes](./xcode-10_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 10 Release Notes](xcode-10-release-notes.md)
+- [Xcode 10 Release Notes](./xcode-10-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

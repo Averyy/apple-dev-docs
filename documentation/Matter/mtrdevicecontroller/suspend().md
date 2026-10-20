@@ -1,7 +1,8 @@
 # suspend()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspend the controller.  This will attempt to stop all network traffic associated with the controller.  The controller will remain suspended until it is resumed.
 
@@ -18,6 +19,10 @@ Suspend the controller.  This will attempt to stop all network traffic associate
 
 ```swift
 func suspend()
+```
+
+```objc
+- (void) suspend;
 ```
 
 #### Discussion

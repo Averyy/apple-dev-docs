@@ -1,7 +1,8 @@
 # AppIntentError.PermissionRequired
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that indicate the app doesn’t have the required permission to perform an action.
 
@@ -27,18 +28,18 @@ Use these permission errors to inform people that the app requires specific perm
 ## Topics
 
 ### Type Properties
-- [static let bluetooth: AppIntentError](appintenterror/permissionrequired/bluetooth.md)
+- [static let bluetooth: AppIntentError](./permissionrequired/bluetooth.md)
   The person needs to allow the app to access to Bluetooth.
-- [static let contacts: AppIntentError](appintenterror/permissionrequired/contacts.md)
+- [static let contacts: AppIntentError](./permissionrequired/contacts.md)
   The person needs to allow the app to access contacts.
-- [static let localNetwork: AppIntentError](appintenterror/permissionrequired/localnetwork.md)
+- [static let localNetwork: AppIntentError](./permissionrequired/localnetwork.md)
   The person needs to allow the app to access the local network.
-- [static let photos: AppIntentError](appintenterror/permissionrequired/photos.md)
+- [static let photos: AppIntentError](./permissionrequired/photos.md)
   The person needs to allow the app to access to the photo library.
-- [static let siri: AppIntentError](appintenterror/permissionrequired/siri.md)
+- [static let siri: AppIntentError](./permissionrequired/siri.md)
   The person needs to allow the app to access Siri.
 ### Type Methods
-- [static func location(precise: Bool) -> AppIntentError](appintenterror/permissionrequired/location(precise:).md)
+- [static func location(precise: Bool) -> AppIntentError](./permissionrequired/location%28precise%29.md)
   The person needs to allow the app to access their location.
 
 

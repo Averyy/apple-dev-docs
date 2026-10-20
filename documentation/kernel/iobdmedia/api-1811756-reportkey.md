@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn reportKey(
  IOMemoryDescriptor *buffer, 
  UInt8keyClass, 
@@ -14,7 +14,7 @@ virtual IOReturn reportKey(
  UInt8format );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -32,13 +32,14 @@ Issue an MMC REPORT KEY command.
 
 ## See Also
 
-- [getSpeed](iobdmedia/1811688-getspeed.md)
-- [readDiscInfo](iobdmedia/1811707-readdiscinfo.md)
-- [readStructure](iobdmedia/1811722-readstructure.md)
-- [readTrackInfo](iobdmedia/1811739-readtrackinfo.md)
-- [sendKey](iobdmedia/1811776-sendkey.md)
-- [setSpeed](iobdmedia/1811802-setspeed.md)
-- [splitTrack](iobdmedia/1811824-splittrack.md)
+### Miscellaneous
+- [getSpeed](./api-1811688-getspeed.md)
+- [readDiscInfo](./api-1811707-readdiscinfo.md)
+- [readStructure](./api-1811722-readstructure.md)
+- [readTrackInfo](./api-1811739-readtrackinfo.md)
+- [sendKey](./api-1811776-sendkey.md)
+- [setSpeed](./api-1811802-setspeed.md)
+- [splitTrack](./api-1811824-splittrack.md)
 
 
 ---

@@ -7,13 +7,14 @@ The style associated with this keyframe.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CSSStyleDeclaration style
 ```
 
 ## See Also
 
-- [keyText](webkitcsskeyframerule/1806997-keytext.md)
+### Accessing Properties
+- [keyText](./api-1806997-keytext.md)
   A keyframe selector.
 
 

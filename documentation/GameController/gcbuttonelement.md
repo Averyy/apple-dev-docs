@@ -1,7 +1,8 @@
 # GCButtonElement
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common properties of an element that represents a momentary switch, such as a push button.
 
@@ -19,34 +20,39 @@ The common properties of an element that represents a momentary switch, such as 
 protocol GCButtonElement : GCPhysicalInputElement
 ```
 
+```objc
+@protocol GCButtonElement <GCPhysicalInputElement>
+```
+
 ## Topics
 
 ### Getting input state
-- [var touchedInput: (any GCTouchedStateInput)?](gcbuttonelement/touchedinput.md)
+- [var touchedInput: (any GCTouchedStateInput)?](./gcbuttonelement/touchedinput.md)
   The input object that provides the touch state of the element.
-- [var pressedInput: any GCLinearInput & GCPressedStateInput](gcbuttonelement/pressedinput.md)
+- [var pressedInput: any GCLinearInput & GCPressedStateInput](./gcbuttonelement/pressedinput.md)
   The input object that provides the linear and press state of the element.
 ### Instance Properties
-- [var forceInput: (any GCLinearInput)?](gcbuttonelement/forceinput.md)
+- [var forceInput: (any GCLinearInput)?](./gcbuttonelement/forceinput.md)
   Get the input containing the measured force applied to the button.
 
 ## Relationships
 
 ### Inherits From
-- [GCPhysicalInputElement](gcphysicalinputelement.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [GCPhysicalInputElement](./gcphysicalinputelement.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct GCPhysicalInputElementCollection](gcphysicalinputelementcollection-swift.struct.md)
+### Elements
+- [struct GCPhysicalInputElementCollection](./gcphysicalinputelementcollection-swift.struct.md)
   A collection of physical input elements.
-- [protocol GCPhysicalInputElement](gcphysicalinputelement.md)
+- [protocol GCPhysicalInputElement](./gcphysicalinputelement.md)
   The common properties of physical input elements.
-- [protocol GCAxisElement](gcaxiselement.md)
+- [protocol GCAxisElement](./gcaxiselement.md)
   The common properties for an element that represents an absolute or relative input value along an axis.
-- [protocol GCSwitchElement](gcswitchelement.md)
+- [protocol GCSwitchElement](./gcswitchelement.md)
   The common properties for an element that represents a switch.
-- [protocol GCDirectionPadElement](gcdirectionpadelement.md)
+- [protocol GCDirectionPadElement](./gcdirectionpadelement.md)
   The common properties of elements that represent directional pads.
 
 

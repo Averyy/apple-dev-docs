@@ -1,17 +1,18 @@
 # PHASEAssetError.Code
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that identify framework asset errors.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,39 +20,44 @@ Codes that identify framework asset errors.
 enum Code
 ```
 
+```c
+enum PHASEAssetError : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [PHASEAssetError.Code.alreadyExists](phaseasseterror-swift.struct/code/alreadyexists.md)
+- [PHASEAssetError.Code.alreadyExists](./code/alreadyexists.md)
   An error the asset registry throws when the app registers an asset twice by the same name.
-- [PHASEAssetError.Code.badParameters](phaseasseterror-swift.struct/code/badparameters.md)
+- [PHASEAssetError.Code.badParameters](./code/badparameters.md)
   An error that indicates an asset registry call contains invalid data.
-- [PHASEAssetError.Code.failedToLoad](phaseasseterror-swift.struct/code/failedtoload.md)
+- [PHASEAssetError.Code.failedToLoad](./code/failedtoload.md)
   An error that indicates an asset failed to load.
-- [PHASEAssetError.Code.generalError](phaseasseterror-swift.struct/code/generalerror.md)
+- [PHASEAssetError.Code.generalError](./code/generalerror.md)
   An error the asset registry throws when an unspecified problem occurs.
-- [PHASEAssetError.Code.invalidEngineInstance](phaseasseterror-swift.struct/code/invalidengineinstance.md)
+- [PHASEAssetError.Code.invalidEngineInstance](./code/invalidengineinstance.md)
   An error that indicates an asset registry call references an invalid engine.
-- [PHASEAssetError.Code.memoryAllocation](phaseasseterror-swift.struct/code/memoryallocation.md)
+- [PHASEAssetError.Code.memoryAllocation](./code/memoryallocation.md)
   An error the framework throws when an asset depletes system memory.
 ### Initializers
-- [init?(rawValue: Int)](phaseasseterror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PHASEAssetError](phaseasseterror-swift.struct.md)
+### Asset Errors
+- [struct PHASEAssetError](../phaseasseterror-swift.struct.md)
   An asset error that PHASE reports.
-- [let PHASEAssetErrorDomain: String](phaseasseterrordomain.md)
+- [let PHASEAssetErrorDomain: String](../phaseasseterrordomain.md)
   A unique error domain for PHASE assets.
 
 

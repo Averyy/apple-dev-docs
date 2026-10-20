@@ -1,7 +1,8 @@
 # VNFaceLandmarkRegion2D
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 2D geometry information for a specific facial feature.
 
@@ -19,6 +20,10 @@
 class VNFaceLandmarkRegion2D
 ```
 
+```objc
+@interface VNFaceLandmarkRegion2D : VNFaceLandmarkRegion
+```
+
 #### Overview
 
 This class represents the set of all facial landmark regions in 2D, exposed as properties.
@@ -26,44 +31,45 @@ This class represents the set of all facial landmark regions in 2D, exposed as p
 ## Topics
 
 ### Describing Region Points
-- [var pointsClassification: VNPointsClassification](vnfacelandmarkregion2d/pointsclassification.md)
+- [var pointsClassification: VNPointsClassification](./vnfacelandmarkregion2d/pointsclassification.md)
   An enumeration that describes how to interpret the points the region provides.
-- [enum VNPointsClassification](vnpointsclassification.md)
+- [enum VNPointsClassification](./vnpointsclassification.md)
   The set of classifications that describe how to interpret the points the region provides.
 ### Specifying Region Properties
-- [var normalizedPoints: [CGPoint]](vnfacelandmarkregion2d/normalizedpoints-7s7im.md)
+- [var normalizedPoints: [CGPoint]](./vnfacelandmarkregion2d/normalizedpoints-7s7im.md)
   The array of normalized landmark points.
-- [var precisionEstimatesPerPoint: [Float]?](vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22.md)
+- [var precisionEstimatesPerPoint: [Float]?](./vnfacelandmarkregion2d/precisionestimatesperpoint-5jl22.md)
   Requests an array of precision estimates for each landmark point.
 ### Computing Feature Points
-- [func pointsInImage(imageSize: CGSize) -> [CGPoint]](vnfacelandmarkregion2d/pointsinimage(imagesize:).md)
+- [func pointsInImage(imageSize: CGSize) -> [CGPoint]](./vnfacelandmarkregion2d/pointsinimage%28imagesize%29.md)
   Returns an array containing landmark points in the coordinate space of the specified image size.
 
 ## Relationships
 
 ### Inherits From
-- [VNFaceLandmarkRegion](vnfacelandmarkregion.md)
+- [VNFaceLandmarkRegion](./vnfacelandmarkregion.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var landmarks: VNFaceLandmarks2D?](vnfaceobservation/landmarks.md)
+### Identifying Landmarks
+- [var landmarks: VNFaceLandmarks2D?](./vnfaceobservation/landmarks.md)
   The facial features of the detected face.
-- [class VNFaceLandmarks2D](vnfacelandmarks2d.md)
+- [class VNFaceLandmarks2D](./vnfacelandmarks2d.md)
   A collection of facial features that a request detects.
-- [class VNFaceLandmarks](vnfacelandmarks.md)
+- [class VNFaceLandmarks](./vnfacelandmarks.md)
   The abstract superclass for containers of face landmark information.
-- [class VNFaceLandmarkRegion](vnfacelandmarkregion.md)
+- [class VNFaceLandmarkRegion](./vnfacelandmarkregion.md)
   The abstract superclass for information about a specific face landmark.
 
 

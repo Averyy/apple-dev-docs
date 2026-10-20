@@ -1,7 +1,8 @@
 # rank
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the score in the results of a leaderboard search.
 
@@ -20,17 +21,22 @@ The position of the score in the results of a leaderboard search.
 var rank: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger rank;
+```
+
 ## See Also
 
-- [var context: Int](gkleaderboard/entry/context.md)
+### Accessing Properties
+- [var context: Int](./context.md)
   An integer value that your game uses.
-- [var date: Date](gkleaderboard/entry/date.md)
+- [var date: Date](./date.md)
   The date and time when the player earns the score.
-- [var formattedScore: String](gkleaderboard/entry/formattedscore.md)
+- [var formattedScore: String](./formattedscore.md)
   The player’s score as a localized string.
-- [var player: GKPlayer](gkleaderboard/entry/player.md)
+- [var player: GKPlayer](./player.md)
   The player who earns the score.
-- [var score: Int](gkleaderboard/entry/score.md)
+- [var score: Int](./score.md)
   The score that the player earns.
 
 

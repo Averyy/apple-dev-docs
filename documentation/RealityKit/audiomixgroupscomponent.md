@@ -1,7 +1,8 @@
 # AudioMixGroupsComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that provides functionality for controlling the playback of audio you assign to mix groups in a scene.
 
@@ -21,9 +22,9 @@ struct AudioMixGroupsComponent
 
 #### Overview
 
-When defining an [`AudioMixGroup`](audiomixgroup.md) for a scene in the Audio Mixer section of Reality Composer Pro, this component exists on the first descendant [`Entity`](entity.md) in the scene at runtime.
+When defining an [`AudioMixGroup`](./audiomixgroup.md) for a scene in the Audio Mixer section of Reality Composer Pro, this component exists on the first descendant [`Entity`](./entity.md) in the scene at runtime.
 
-A common use case for `AudioMixGroupsComponent` is to simultaneously control the playback volume of every [`AudioResource`](audioresource.md) in an `AudioMixGroup`, such as the sound effects in a scene. The following example sets the playback volume of every `AudioResource` in the `AudioMixGroup` named SFX:
+A common use case for `AudioMixGroupsComponent` is to simultaneously control the playback volume of every [`AudioResource`](./audioresource.md) in an `AudioMixGroup`, such as the sound effects in a scene. The following example sets the playback volume of every `AudioResource` in the `AudioMixGroup` named SFX:
 
 ```swift
 let sceneEntity = Entity(named: "ContainsAudio", in: realityKitContentBundle)
@@ -49,37 +50,38 @@ audioMixGroupsComponent.set(sfxGroup)
 audioMixGroupsEntity.components.set(audioMixGroupsComponent)
 ```
 
-To completely silence an `AudioMixGroup`, use the [`isMuted`](audiomixgroup/ismuted.md) property.
+To completely silence an `AudioMixGroup`, use the [`isMuted`](./audiomixgroup/ismuted.md) property.
 
-Use [`fade(to:duration:)`](audiomixgroup/fade(to:duration:).md) to fade the volume of an `AudioMixGroup` over time.
+Use [`fade(to:duration:)`](./audiomixgroup/fade%28to,duration%29.md) to fade the volume of an `AudioMixGroup` over time.
 
 ## Topics
 
 ### Initializers
-- [init(mixGroups: [AudioMixGroup])](audiomixgroupscomponent/init(mixgroups:).md)
+- [init(mixGroups: [AudioMixGroup])](./audiomixgroupscomponent/init%28mixgroups%29.md)
   Initializes an `AudioMixGroupsComponent`.
 ### Instance Methods
-- [func mixGroup(named: String) -> AudioMixGroup?](audiomixgroupscomponent/mixgroup(named:).md)
+- [func mixGroup(named: String) -> AudioMixGroup?](./audiomixgroupscomponent/mixgroup%28named%29.md)
   Returns the audio mix group with the given name, if it exists.
-- [func remove(named: String)](audiomixgroupscomponent/remove(named:).md)
+- [func remove(named: String)](./audiomixgroupscomponent/remove%28named%29.md)
   Removes the audio mix group with the given name, if it exists, from the component.
-- [func set(AudioMixGroup)](audiomixgroupscomponent/set(_:).md)
+- [func set(AudioMixGroup)](./audiomixgroupscomponent/set%28_%29.md)
   Adds the given `AudioMixGroup` to the component.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Mixing spatial music](mixing-spatial-music.md)
+### Audio mixing
+- [Mixing spatial music](./mixing-spatial-music.md)
   Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
-- [struct AudioMixGroup](audiomixgroup.md)
+- [struct AudioMixGroup](./audiomixgroup.md)
   A group that manages the playback properties of multiple playing sounds.
 
 

@@ -1,16 +1,17 @@
 # UIPageViewController.TransitionStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles for the page-turn transition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@ Styles for the page-turn transition.
 enum TransitionStyle
 ```
 
+```c
+enum UIPageViewControllerTransitionStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIPageViewController.TransitionStyle.pageCurl](uipageviewcontroller/transitionstyle-swift.enum/pagecurl.md)
+- [UIPageViewController.TransitionStyle.pageCurl](./transitionstyle-swift.enum/pagecurl.md)
   Page curl transition style.
-- [UIPageViewController.TransitionStyle.scroll](uipageviewcontroller/transitionstyle-swift.enum/scroll.md)
+- [UIPageViewController.TransitionStyle.scroll](./transitionstyle-swift.enum/scroll.md)
   Scrolling transition style.
 ### Initializers
-- [init?(rawValue: Int)](uipageviewcontroller/transitionstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./transitionstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var navigationOrientation: UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.property.md)
+### Display Options
+- [var navigationOrientation: UIPageViewController.NavigationOrientation](./navigationorientation-swift.property.md)
   The direction along which navigation occurs.
-- [UIPageViewController.NavigationOrientation](uipageviewcontroller/navigationorientation-swift.enum.md)
+- [UIPageViewController.NavigationOrientation](./navigationorientation-swift.enum.md)
   Orientations for page-turn transitions.
-- [var spineLocation: UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.property.md)
+- [var spineLocation: UIPageViewController.SpineLocation](./spinelocation-swift.property.md)
   The location of the spine.
-- [UIPageViewController.SpineLocation](uipageviewcontroller/spinelocation-swift.enum.md)
+- [UIPageViewController.SpineLocation](./spinelocation-swift.enum.md)
   Locations for the spine.
-- [var transitionStyle: UIPageViewController.TransitionStyle](uipageviewcontroller/transitionstyle-swift.property.md)
+- [var transitionStyle: UIPageViewController.TransitionStyle](./transitionstyle-swift.property.md)
   The style used to transition between view controllers.
-- [var isDoubleSided: Bool](uipageviewcontroller/isdoublesided.md)
+- [var isDoubleSided: Bool](./isdoublesided.md)
   A Boolean value that indicates whether content appears on the back of pages.
 
 

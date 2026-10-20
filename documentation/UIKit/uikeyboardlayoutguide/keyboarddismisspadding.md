@@ -1,7 +1,8 @@
 # keyboardDismissPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that adds padding above the keyboard to increase the size of the touch area for the scrolling dismissal gesture.
 
@@ -15,6 +16,10 @@ A value that adds padding above the keyboard to increase the size of the touch a
 
 ```swift
 var keyboardDismissPadding: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) CGFloat keyboardDismissPadding;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(exception:codes:)
 
 **Framework**: CrashReportExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a crash reason instance with the given parameters.
 
@@ -9,9 +10,9 @@ Creates a crash reason instance with the given parameters.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

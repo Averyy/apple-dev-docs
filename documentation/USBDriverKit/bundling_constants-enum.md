@@ -1,22 +1,24 @@
 # Bundling Constants
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 Constants associated with bulk I/O transfers.
 
 ## Topics
 
 ### Bundling Options
-- [kIOUSBHostPipeBundlingMax](kiousbhostpipebundlingmax.md)
+- [kIOUSBHostPipeBundlingMax](./kiousbhostpipebundlingmax.md)
   The maximum number of elements to transfer in one bundled I/O call.
 
 ## See Also
 
-- [CreateMemoryDescriptorRing](iousbhostpipe/creatememorydescriptorring.md)
-- [SetMemoryDescriptor](iousbhostpipe/setmemorydescriptor.md)
-- [AsyncIOBundled](iousbhostpipe/asynciobundled.md)
+### Interacting with Descriptor Rings
+- [CreateMemoryDescriptorRing](./iousbhostpipe/creatememorydescriptorring.md)
+- [SetMemoryDescriptor](./iousbhostpipe/setmemorydescriptor.md)
+- [AsyncIOBundled](./iousbhostpipe/asynciobundled.md)
   Enqueues a contiguous group of requests from the descriptor ring.
-- [CompleteAsyncIOBundled](iousbhostpipe/completeasynciobundled.md)
+- [CompleteAsyncIOBundled](./iousbhostpipe/completeasynciobundled.md)
   Handles the completion of an asynchronous bundled transfer.
 
 

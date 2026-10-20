@@ -1,7 +1,8 @@
 # UIBarButtonItemStateAppearance
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data object containing the specific customizations for a bar button item in a particular state.
 
@@ -19,41 +20,46 @@ A data object containing the specific customizations for a bar button item in a 
 class UIBarButtonItemStateAppearance
 ```
 
+```objc
+@interface UIBarButtonItemStateAppearance : NSObject
+```
+
 #### Overview
 
-Use a [`UIBarButtonItemStateAppearance`](uibarbuttonitemstateappearance.md) object to customize the title and background image of your bar button items. Don’t create [`UIBarButtonItemStateAppearance`](uibarbuttonitemstateappearance.md) objects yourself. Instead, create a [`UIBarButtonItemAppearance`](uibarbuttonitemappearance.md) object and use its properties to fetch the appearance attributes for the button in a particular state. For example, to set the button’s attributes when it’s in the normal state, configure the object in the [`normal`](uibarbuttonitemappearance/normal.md) property.
+Use a [`UIBarButtonItemStateAppearance`](./uibarbuttonitemstateappearance.md) object to customize the title and background image of your bar button items. Don’t create [`UIBarButtonItemStateAppearance`](./uibarbuttonitemstateappearance.md) objects yourself. Instead, create a [`UIBarButtonItemAppearance`](./uibarbuttonitemappearance.md) object and use its properties to fetch the appearance attributes for the button in a particular state. For example, to set the button’s attributes when it’s in the normal state, configure the object in the [`normal`](./uibarbuttonitemappearance/normal.md) property.
 
 ## Topics
 
 ### Configuring the title
-- [var titleTextAttributes: [NSAttributedString.Key : Any]](uibarbuttonitemstateappearance/titletextattributes.md)
+- [var titleTextAttributes: [NSAttributedString.Key : Any]](./uibarbuttonitemstateappearance/titletextattributes.md)
   String attributes to apply to the text of the bar button item’s title.
-- [var titlePositionAdjustment: UIOffset](uibarbuttonitemstateappearance/titlepositionadjustment.md)
+- [var titlePositionAdjustment: UIOffset](./uibarbuttonitemstateappearance/titlepositionadjustment.md)
   The additional amount by which to offset the title horizontally and vertically.
 ### Configuring the background appearance
-- [var backgroundImage: UIImage?](uibarbuttonitemstateappearance/backgroundimage.md)
+- [var backgroundImage: UIImage?](./uibarbuttonitemstateappearance/backgroundimage.md)
   A background image to display around the button.
-- [var backgroundImagePositionAdjustment: UIOffset](uibarbuttonitemstateappearance/backgroundimagepositionadjustment.md)
+- [var backgroundImagePositionAdjustment: UIOffset](./uibarbuttonitemstateappearance/backgroundimagepositionadjustment.md)
   The distance, in points, by which to offset the background image horizontally and vertically.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIBarAppearance](uibarappearance.md)
+### Shared appearance
+- [class UIBarAppearance](./uibarappearance.md)
   An object for customizing the basic appearance of system bars.
-- [class UIBarButtonItemAppearance](uibarbuttonitemappearance.md)
+- [class UIBarButtonItemAppearance](./uibarbuttonitemappearance.md)
   An object for customizing the appearance of bar button items.
 
 

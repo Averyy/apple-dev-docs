@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a specification for a textual metaparameter with the given value.
 
@@ -19,13 +20,18 @@ Creates a specification for a textual metaparameter with the given value.
 init(value: String)
 ```
 
+```objc
+- (instancetype) initWithValue:(NSString *) value;
+```
+
 ## Parameters
 
 - `value`: The default text for the metaparameter specification.
 
 ## See Also
 
-- [convenience init(value: String, identifier: String)](phasestringmetaparameterdefinition/init(value:identifier:).md)
+### Creating a Parameter Definition
+- [convenience init(value: String, identifier: String)](./init%28value,identifier%29.md)
   Creates a specification for a named textual metaparameter with the given value.
 
 

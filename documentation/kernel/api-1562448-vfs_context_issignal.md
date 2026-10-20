@@ -1,7 +1,8 @@
 # vfs_context_issignal
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get a bitfield of pending signals for the BSD process associated with a vfs_context_t.
 
@@ -10,11 +11,11 @@ Get a bitfield of pending signals for the BSD process associated with a vfs_cont
 
 ## Declaration
 
-```swift
+```c
 int vfs_context_issignal(vfs_context_t ctx, sigset_t mask);
 ```
 
-#### Return_value
+#### Return Value
 
 Bitfield of pending signals.
 

@@ -1,7 +1,8 @@
 # equals(anotherCoordinate)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether two coordinates are equal.
 
@@ -10,7 +11,7 @@ Returns a Boolean value indicating whether two coordinates are equal.
 
 ## Declaration
 
-```swift
+```
 equals(anotherCoordinate: CoordinateData): boolean;
 ```
 
@@ -24,11 +25,12 @@ equals(anotherCoordinate: CoordinateData): boolean;
 
 ## See Also
 
-- [copy()](coordinate/copy.md)
+### Comparing, copying, and converting coordinates
+- [copy()](./copy.md)
   Returns a copy of the coordinate.
-- [toMapPoint()](coordinate/tomappoint.md)
+- [toMapPoint()](./tomappoint.md)
   Returns the map point that corresponds to the coordinate.
-- [toUnwrappedMapPoint()](coordinate/tounwrappedmappoint.md)
+- [toUnwrappedMapPoint()](./tounwrappedmappoint.md)
   Returns the unwrapped map point that corresponds to the coordinate.
 
 

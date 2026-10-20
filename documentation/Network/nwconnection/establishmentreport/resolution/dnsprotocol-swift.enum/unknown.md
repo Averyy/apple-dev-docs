@@ -1,7 +1,8 @@
 # NWConnection.EstablishmentReport.Resolution.DNSProtocol.unknown
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The DNS response protocol is unknown or not applicable.
 
@@ -22,13 +23,14 @@ case unknown
 
 ## See Also
 
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.udp](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/udp.md)
+### Resolution Transports
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.udp](./udp.md)
   The connection used cleartext UDP for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tcp](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/tcp.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tcp](./tcp.md)
   The connection used cleartext TCP for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tls](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/tls.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.tls](./tls.md)
   The connection used TLS for DNS resolution.
-- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.https](nwconnection/establishmentreport/resolution/dnsprotocol-swift.enum/https.md)
+- [NWConnection.EstablishmentReport.Resolution.DNSProtocol.https](./https.md)
   The connection used HTTPS for DNS resolution.
 
 

@@ -1,14 +1,15 @@
 # kext_receipt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t kext_receipt(void **addrp, size_t *sizep);
 ```
 

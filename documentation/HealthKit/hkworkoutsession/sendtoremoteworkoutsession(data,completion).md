@@ -1,7 +1,8 @@
 # sendToRemoteWorkoutSession(data:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the provided data to the remote workout session.
 
@@ -15,12 +16,20 @@ Sends the provided data to the remote workout session.
 ## Declaration
 
 ```swift
+func sendToRemoteWorkoutSession(data: Data, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func sendToRemoteWorkoutSession(data: Data) async throws
+```
+
+```objc
+- (void) sendDataToRemoteWorkoutSession:(NSData *) data completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion
 
-Call this method to send data to your remote workout session. You can send data from either the [`HKWorkoutSessionType.mirrored`](hkworkoutsessiontype/mirrored.md) or [`HKWorkoutSessionType.primary`](hkworkoutsessiontype/primary.md) session.
+Call this method to send data to your remote workout session. You can send data from either the [`HKWorkoutSessionType.mirrored`](../hkworkoutsessiontype/mirrored.md) or [`HKWorkoutSessionType.primary`](../hkworkoutsessiontype/primary.md) session.
 
 ```swift
 let archivedData = try? NSKeyedArchiver.archivedData(withRootObject: data, requiringSecureCoding: true)
@@ -44,14 +53,17 @@ Task {
 ## Parameters
 
 - `data`: A data object that contains the data your app is sending to the remote workout session.
-- `completion`: A block that the system calls when the send attempt is complete. The system passes the following parameters: - **`success`**: A Boolean value that indicates whether the system successfully sent the data.
-- **`error`**: If `sucess` is [`false`](https://developer.apple.com/documentation/swift/false), this contains an object that describes the error. Otherwise, it’s `nil`.
+- `completion`: A block that the system calls when the send attempt is complete. The system passes the following parameters:
+
+  - **`success`**: A Boolean value that indicates whether the system successfully sent the data.
+  - **`error`**: If `sucess` is [`false`](../../Swift/false.md), this contains an object that describes the error. Otherwise, it’s `nil`.
 
 ## See Also
 
-- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/startmirroringtocompaniondevice(completion:).md)
+### Working with remote workout sessions
+- [func startMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](./startmirroringtocompaniondevice%28completion%29.md)
   Starts mirroring the workout session to the companion iOS device.
-- [func stopMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](hkworkoutsession/stopmirroringtocompaniondevice(completion:).md)
+- [func stopMirroringToCompanionDevice(completion: (Bool, (any Error)?) -> Void)](./stopmirroringtocompaniondevice%28completion%29.md)
   Stops mirroring the workout session to the companion iOS device.
 
 

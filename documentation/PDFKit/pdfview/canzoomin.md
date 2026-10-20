@@ -1,7 +1,8 @@
 # canZoomIn
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the user can magnify the view and zoom in.
 
@@ -19,13 +20,18 @@ Returns a Boolean value indicating whether the user can magnify the view and zoo
 var canZoomIn: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canZoomIn;
+```
+
 ## See Also
 
-- [func zoomIn(Any?)](pdfview/zoomin(_:).md)
+### Zooming in a PDF View
+- [func zoomIn(Any?)](./zoomin%28_%29.md)
   Zooms in by increasing the scaling factor.
-- [func zoomOut(Any?)](pdfview/zoomout(_:).md)
+- [func zoomOut(Any?)](./zoomout%28_%29.md)
   Zooms out by decreasing the scaling factor.
-- [var canZoomOut: Bool](pdfview/canzoomout.md)
+- [var canZoomOut: Bool](./canzoomout.md)
   Returns a Boolean value indicating whether the user can view an expanded area and zoom out.
 
 

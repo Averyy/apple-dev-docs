@@ -1,7 +1,8 @@
 # init(validation:batchSize:maxIterations:gridSize:algorithm:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model parameters instance for an object-detector training session.
 
@@ -16,7 +17,7 @@ init(validation: MLObjectDetector.ModelParameters.ValidationData = .split(strate
 
 ## Parameters
 
-- `validation`: An [`MLObjectDetector.ModelParameters.ValidationData`](mlobjectdetector/modelparameters-swift.struct/validationdata.md) instance that contains your validation dataset.
+- `validation`: An [`MLObjectDetector.ModelParameters.ValidationData`](./validationdata.md) instance that contains your validation dataset.
 - `batchSize`: The number of images the object detector uses for each training iteration. If you don’t have a preference, set this parameter to `nil` to tell Create ML to use an appropriate value when it trains the model.
 - `maxIterations`: The largest number of training iterations the object detector can use. If you don’t have a preference, set this parameter to `nil` to tell Create ML to use an appropriate value when it trains the model.
 - `gridSize`: The number of rectangles, vertically and horizontally, the training algorithm uses to analyze each input image.
@@ -24,9 +25,10 @@ init(validation: MLObjectDetector.ModelParameters.ValidationData = .split(strate
 
 ## See Also
 
-- [init(validation: MLObjectDetector.ModelParameters.ValidationData, batchSize: Int?, maxIterations: Int?)](mlobjectdetector/modelparameters-swift.struct/init(validation:batchsize:maxiterations:).md)
+### Creating object detector parameters
+- [init(validation: MLObjectDetector.ModelParameters.ValidationData, batchSize: Int?, maxIterations: Int?)](./init%28validation,batchsize,maxiterations%29.md)
   Creates a model parameters instance for an object-detector training session set to use the full network algorithm.
-- [init(validationData: MLObjectDetector.DataSource, batchSize: Int?, maxIterations: Int?) throws](mlobjectdetector/modelparameters-swift.struct/init(validationdata:batchsize:maxiterations:).md)
+- [init(validationData: MLObjectDetector.DataSource, batchSize: Int?, maxIterations: Int?) throws](./init%28validationdata,batchsize,maxiterations%29.md)
   Creates a model parameters instance for an object-detector training session set to use the full network algorithm.
 
 

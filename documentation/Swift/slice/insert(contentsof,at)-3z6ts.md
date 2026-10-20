@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func insert<S>(contentsOf newElements: S, at i: Slice<Base>.Index) where S : Collection, Base.Element == S.Element
 ```
+
+Available when `Base` conforms to `BidirectionalCollection` and `RangeReplaceableCollection`.
 
 
 ---

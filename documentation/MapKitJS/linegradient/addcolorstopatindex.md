@@ -1,7 +1,8 @@
 # addColorStopAtIndex(index, color)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a color transition at the index point in the list of points within a polyline.
 
@@ -10,7 +11,7 @@ Adds a color transition at the index point in the list of points within a polyli
 
 ## Declaration
 
-```swift
+```
 addColorStopAtIndex(index: number, color: string): void;
 ```
 
@@ -20,14 +21,15 @@ If the index is invalid, MapKit JS logs a warning to the console, but doesn’t 
 
 ## Parameters
 
-- `index`: A valid index into a polyline’s [`points`](polylineoverlay/points.md).
+- `index`: A valid index into a polyline’s [`points`](../polylineoverlay/points.md).
 - `color`: The CSS color at the index point.
 
 ## See Also
 
-- [new LineGradient(colorStops)](linegradient/linegradientconstructor.md)
+### Creating a Line Gradient
+- [new LineGradient(colorStops)](./linegradientconstructor.md)
   Creates a style that renders a gradient along the length of a line.
-- [addColorStop(offset, color)](linegradient/addcolorstop.md)
+- [addColorStop(offset, color)](./addcolorstop.md)
   Adds a color transition point to the gradient.
 
 

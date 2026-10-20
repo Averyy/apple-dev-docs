@@ -1,7 +1,8 @@
 # user(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies a parse strategy to parse a URL’s user component in accordance with the provided behavior.
 
@@ -22,7 +23,7 @@ func user(_ strategy: URL.ParseStrategy.ComponentParseStrategy<String> = .option
 
 #### Return Value
 
-A modified [`URL.ParseStrategy`](url/parsestrategy.md) that incorporates the specified behavior.
+A modified [`URL.ParseStrategy`](../parsestrategy.md) that incorporates the specified behavior.
 
 ## Parameters
 
@@ -30,21 +31,22 @@ A modified [`URL.ParseStrategy`](url/parsestrategy.md) that incorporates the spe
 
 ## See Also
 
-- [func scheme(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/scheme(_:).md)
+### Customizing strategy behavior
+- [func scheme(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./scheme%28_%29.md)
   Modifies a parse strategy to parse a URL’s scheme component in accordance with the provided behavior.
-- [func password(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/password(_:).md)
+- [func password(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./password%28_%29.md)
   Modifies a parse strategy to parse a URL’s password component in accordance with the provided behavior.
-- [func host(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/host(_:).md)
+- [func host(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./host%28_%29.md)
   Modifies a parse strategy to parse a URL’s host component in accordance with the provided behavior.
-- [func port(URL.ParseStrategy.ComponentParseStrategy<Int>) -> URL.ParseStrategy](url/parsestrategy/port(_:).md)
+- [func port(URL.ParseStrategy.ComponentParseStrategy<Int>) -> URL.ParseStrategy](./port%28_%29.md)
   Modifies a parse strategy to parse a URL’s port component in accordance with the provided behavior.
-- [func path(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/path(_:).md)
+- [func path(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./path%28_%29.md)
   Modifies a parse strategy to parse a URL’s path component in accordance with the provided behavior.
-- [func query(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/query(_:).md)
+- [func query(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./query%28_%29.md)
   Modifies a parse strategy to parse a URL’s query component in accordance with the provided behavior.
-- [func fragment(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](url/parsestrategy/fragment(_:).md)
+- [func fragment(URL.ParseStrategy.ComponentParseStrategy<String>) -> URL.ParseStrategy](./fragment%28_%29.md)
   Modifies a parse strategy to parse a URL’s fragment component in accordance with the provided behavior.
-- [URL.ParseStrategy.ComponentParseStrategy](url/parsestrategy/componentparsestrategy.md)
+- [URL.ParseStrategy.ComponentParseStrategy](./componentparsestrategy.md)
   The strategy used to parse one component of a URL.
 
 

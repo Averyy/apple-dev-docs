@@ -1,7 +1,8 @@
 # init(elements:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 View a typed span as a raw span.
 

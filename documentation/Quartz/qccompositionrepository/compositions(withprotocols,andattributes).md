@@ -1,12 +1,15 @@
 # compositions(withProtocols:andAttributes:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of compositions that match a set of criteria.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns an array of compositions that match a set of criteria.
 func compositions(withProtocols protocols: [Any]!, andAttributes attributes: [AnyHashable : Any]! = [:]) -> [Any]!
 ```
 
+```objc
+- (NSArray *) compositionsWithProtocols:(NSArray *) protocols andAttributes:(NSDictionary *) attributes;
+```
+
 #### Return Value
 
-An array of [`QCComposition`](qccomposition.md) objects that meet the supplied criteria.
+An array of [`QCComposition`](../qccomposition.md) objects that meet the supplied criteria.
 
 ## Parameters
 
@@ -25,9 +32,10 @@ An array of [`QCComposition`](qccomposition.md) objects that meet the supplied c
 
 ## See Also
 
-- [func composition(withIdentifier: String!) -> QCComposition!](qccompositionrepository/composition(withidentifier:).md)
+### Fetching Compositions
+- [func composition(withIdentifier: String!) -> QCComposition!](./composition%28withidentifier%29.md)
   Returns the composition that corresponds to the identifier.
-- [func allCompositions() -> [Any]!](qccompositionrepository/allcompositions.md)
+- [func allCompositions() -> [Any]!](./allcompositions%28%29.md)
   Returns an array that contains all compositions currently in the composition repository.
 
 

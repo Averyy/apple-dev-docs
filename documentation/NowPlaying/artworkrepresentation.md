@@ -1,7 +1,8 @@
 # ArtworkRepresentation
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An artwork image representation, such as music album cover art, associated with a media item.
 
@@ -27,19 +28,20 @@ The system may display this artwork on the Lock Screen, in Control Center, and o
 ## Topics
 
 ### Initializers
-- [init(cgImage: CGImage) throws](artworkrepresentation/init(cgimage:).md)
-  Creates an [`ArtworkRepresentation`](artworkrepresentation.md) from a `CGImage` instance.
-- [init(data: Data) throws](artworkrepresentation/init(data:).md)
-  Creates an [`ArtworkRepresentation`](artworkrepresentation.md) from image data.
+- [init(cgImage: CGImage) throws](./artworkrepresentation/init%28cgimage%29.md)
+  Creates an [`ArtworkRepresentation`](./artworkrepresentation.md) from a `CGImage` instance.
+- [init(data: Data) throws](./artworkrepresentation/init%28data%29.md)
+  Creates an [`ArtworkRepresentation`](./artworkrepresentation.md) from image data.
 ### Enumerations
-- [ArtworkRepresentation.ArtworkRepresentationError](artworkrepresentation/artworkrepresentationerror.md)
-  Errors that can occur when creating an [`ArtworkRepresentation`](artworkrepresentation.md).
+- [ArtworkRepresentation.ArtworkRepresentationError](./artworkrepresentation/artworkrepresentationerror.md)
+  Errors that can occur when creating an [`ArtworkRepresentation`](./artworkrepresentation.md).
 
 ## See Also
 
-- [struct Artwork](artwork.md)
+### Displaying artwork
+- [struct Artwork](./artwork.md)
   Artwork for a media item that can be requested at a specified size.
-- [struct AnimatedArtwork](animatedartwork.md)
+- [struct AnimatedArtwork](./animatedartwork.md)
   Animated artwork for the media item with video and preview support.
 
 

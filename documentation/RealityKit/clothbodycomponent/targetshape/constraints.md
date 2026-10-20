@@ -1,7 +1,8 @@
 # constraints
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position constraints that pull the individual particles towards the target shape.
 
@@ -18,7 +19,8 @@ var constraints: PerClothVertexData<ClothBodyComponent.TargetShape.PositionConst
 
 ## See Also
 
-- [ClothBodyComponent.TargetShape.PositionConstraint](clothbodycomponent/targetshape/positionconstraint.md)
+### Constraining vertex positions
+- [ClothBodyComponent.TargetShape.PositionConstraint](./positionconstraint.md)
   A constraint that pulls a particle towards a certain position.
 
 

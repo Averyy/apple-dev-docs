@@ -1,7 +1,8 @@
 # verticalActive
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of lines per frame.
 
@@ -10,7 +11,7 @@ Number of lines per frame.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalActive;
 ```
 

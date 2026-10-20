@@ -1,7 +1,8 @@
 # GenerateIterativeSegmentationRequest.Revision
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -20,25 +21,26 @@ enum Revision
 ## Topics
 
 ### Getting the revision
-- [GenerateIterativeSegmentationRequest.Revision.revision1](generateiterativesegmentationrequest/revision-swift.enum/revision1.md)
+- [GenerateIterativeSegmentationRequest.Revision.revision1](./revision-swift.enum/revision1.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revision: GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: GenerateIterativeSegmentationRequest.Revision](./revision-swift.property.md)
   The request’s configured revision.
-- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](generateiterativesegmentationrequest/supportedrevisions.md)
-  The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiterativesegmentationrequest.md).
+- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](./supportedrevisions.md)
+  The revisions supported by [`GenerateIterativeSegmentationRequest`](../generateiterativesegmentationrequest.md).
 
 
 ---

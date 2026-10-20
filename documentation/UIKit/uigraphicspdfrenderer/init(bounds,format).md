@@ -1,7 +1,8 @@
 # init(bounds:format:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new graphics renderer with the specified bounds and format.
 
@@ -18,18 +19,22 @@ Creates a new graphics renderer with the specified bounds and format.
 init(bounds: CGRect, format: UIGraphicsPDFRendererFormat)
 ```
 
+```objc
+- (instancetype) initWithBounds:(CGRect) bounds format:(UIGraphicsPDFRendererFormat *) format;
+```
+
 #### Return Value
 
 An initialized PDF graphics renderer.
 
 #### Discussion
 
-Use this initializer to create a PDF renderer when you want to override the default format for the current device. Otherwise, use the [`init(bounds:)`](uigraphicsrenderer/init(bounds:).md) method present on the abstract superclass, [`UIGraphicsRenderer`](uigraphicsrenderer.md).
+Use this initializer to create a PDF renderer when you want to override the default format for the current device. Otherwise, use the [`init(bounds:)`](../uigraphicsrenderer/init%28bounds%29.md) method present on the abstract superclass, [`UIGraphicsRenderer`](../uigraphicsrenderer.md).
 
 ## Parameters
 
 - `bounds`: The bounds of the Core Graphics context available to the renderer, with values in points.
-- `format`: A [`UIGraphicsPDFRendererFormat`](uigraphicspdfrendererformat.md) object that encapsulates the format applied to the renderer’s context.
+- `format`: A [`UIGraphicsPDFRendererFormat`](../uigraphicspdfrendererformat.md) object that encapsulates the format applied to the renderer’s context.
 
 
 ---

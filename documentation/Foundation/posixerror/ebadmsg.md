@@ -1,7 +1,8 @@
 # EBADMSG
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bad message.
 

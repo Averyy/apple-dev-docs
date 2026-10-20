@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an automatic subscription store control style.
 

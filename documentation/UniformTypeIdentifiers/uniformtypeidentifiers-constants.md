@@ -1,6 +1,7 @@
 # UniformTypeIdentifiers Constants
 
-**Framework**: Uniform Type Identifiers
+**Framework**: Uniform Type Identifiers  
+**Role**: API Collection
 
 
 ---

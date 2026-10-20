@@ -1,10 +1,11 @@
 # kBluetoothHCIErroneousDataReportingReservedEnd
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothHCIErroneousDataReportingReservedEnd: Int { get }
 ```
 
+```c
+kBluetoothHCIErroneousDataReportingReservedEnd
+```
+
 ## See Also
 
-- [var kBluetoothHCIErroneousDataReportingDisabled: Int](kbluetoothhcierroneousdatareportingdisabled.md)
-- [var kBluetoothHCIErroneousDataReportingEnabled: Int](kbluetoothhcierroneousdatareportingenabled.md)
-- [var kBluetoothHCIErroneousDataReportingReservedStart: Int](kbluetoothhcierroneousdatareportingreservedstart.md)
+### Constants
+- [var kBluetoothHCIErroneousDataReportingDisabled: Int](./kbluetoothhcierroneousdatareportingdisabled.md)
+- [var kBluetoothHCIErroneousDataReportingEnabled: Int](./kbluetoothhcierroneousdatareportingenabled.md)
+- [var kBluetoothHCIErroneousDataReportingReservedStart: Int](./kbluetoothhcierroneousdatareportingreservedstart.md)
 
 
 ---

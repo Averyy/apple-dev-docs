@@ -1,12 +1,13 @@
 # backgroundColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s background color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The cell’s background color.
 var backgroundColor: NSColor { get set }
 ```
 
+```objc
+@property (copy) NSColor * backgroundColor;
+```
+
 ## See Also
 
-- [var drawsBackground: Bool](nsdatepickercell/drawsbackground.md)
+### Configuring Appearance
+- [var drawsBackground: Bool](./drawsbackground.md)
   A Boolean value indicating whether the cell draws its background.
-- [var textColor: NSColor](nsdatepickercell/textcolor.md)
+- [var textColor: NSColor](./textcolor.md)
   The cell’s text color.
-- [var datePickerStyle: NSDatePicker.Style](nsdatepickercell/datepickerstyle.md)
+- [var datePickerStyle: NSDatePicker.Style](./datepickerstyle.md)
   The date picker style to use.
-- [var datePickerElements: NSDatePicker.ElementFlags](nsdatepickercell/datepickerelements.md)
+- [var datePickerElements: NSDatePicker.ElementFlags](./datepickerelements.md)
   A bitmask that indicates which visual elements are shown by the date picker.
 
 

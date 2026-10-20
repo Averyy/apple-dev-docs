@@ -1,7 +1,8 @@
 # contentLength
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length, in bytes, of the requested resource.
 
@@ -19,21 +20,26 @@ The length, in bytes, of the requested resource.
 var contentLength: Int64 { get set }
 ```
 
+```objc
+@property (nonatomic) long long contentLength;
+```
+
 #### Discussion
 
-Before finishing loading an [`AVAssetResourceLoadingRequest`](avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of the `contentLength` property to the number of bytes contained by the requested resource.
+Before finishing loading an [`AVAssetResourceLoadingRequest`](../avassetresourceloadingrequest.md) instance, if its [`contentInformationRequest`](../avassetresourceloadingrequest/contentinformationrequest.md) property is not `nil`, set the value of the `contentLength` property to the number of bytes contained by the requested resource.
 
 ## See Also
 
-- [var allowedContentTypes: [String]?](avassetresourceloadingcontentinformationrequest/allowedcontenttypes.md)
+### Configuring content information
+- [var allowedContentTypes: [String]?](./allowedcontenttypes.md)
   The types of data that are accepted as a valid response for the requested resource.
-- [var contentType: String?](avassetresourceloadingcontentinformationrequest/contenttype.md)
+- [var contentType: String?](./contenttype.md)
   The UTI that specifies the type of data contained by the requested resource.
-- [var isByteRangeAccessSupported: Bool](avassetresourceloadingcontentinformationrequest/isbyterangeaccesssupported.md)
+- [var isByteRangeAccessSupported: Bool](./isbyterangeaccesssupported.md)
   A Boolean value that indicates whether random access to arbitrary ranges of bytes of the resource is supported.
-- [var renewalDate: Date?](avassetresourceloadingcontentinformationrequest/renewaldate.md)
+- [var renewalDate: Date?](./renewaldate.md)
   The date at which a new resource loading request will be issued for resources that expire, if the media system still requires it.
-- [var isEntireLengthAvailableOnDemand: Bool](avassetresourceloadingcontentinformationrequest/isentirelengthavailableondemand.md)
+- [var isEntireLengthAvailableOnDemand: Bool](./isentirelengthavailableondemand.md)
   A Boolean value that indicates whether asset data loading can expect data immediately.
 
 

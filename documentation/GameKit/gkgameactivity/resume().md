@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes the game activity if it was paused.
 
@@ -19,13 +20,18 @@ Resumes the game activity if it was paused.
 func resume()
 ```
 
+```objc
+- (void) resume;
+```
+
 ## See Also
 
-- [func start()](gkgameactivity/start.md)
+### Updating the activity state
+- [func start()](./start%28%29.md)
   Starts the game activity if it’s not already started.
-- [func pause()](gkgameactivity/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses the game activity if it’s not already paused.
-- [func end()](gkgameactivity/end.md)
+- [func end()](./end%28%29.md)
   Ends the game activity if it’s not already ended.
 
 

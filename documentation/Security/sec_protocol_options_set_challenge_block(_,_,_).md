@@ -1,7 +1,8 @@
 # sec_protocol_options_set_challenge_block(_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -18,15 +19,19 @@
 func sec_protocol_options_set_challenge_block(_ options: sec_protocol_options_t, _ challenge_block: @escaping sec_protocol_challenge_t, _ challenge_queue: dispatch_queue_t)
 ```
 
+```c
+void sec_protocol_options_set_challenge_block(sec_protocol_options_t options, sec_protocol_challenge_t challenge_block, dispatch_queue_t challenge_queue);
+```
+
 #### Discussion
 
 Set the challenge block.
 
-```None
+```
  A `sec_protocol_challenge_t` block.
 ```
 
-```None
+```
  A `dispatch_queue_t` on which the challenge block should be called.
 ```
 

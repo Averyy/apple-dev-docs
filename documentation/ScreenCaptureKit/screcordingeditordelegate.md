@@ -1,7 +1,8 @@
 # SCRecordingEditorDelegate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 27.0+
@@ -17,16 +18,20 @@
 protocol SCRecordingEditorDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SCRecordingEditorDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func recordingEditor(SCRecordingEditor, didFailWithError: any Error)](screcordingeditordelegate/recordingeditor(_:didfailwitherror:).md)
-- [func recordingEditorDidDismiss(SCRecordingEditor)](screcordingeditordelegate/recordingeditordiddismiss(_:).md)
+- [func recordingEditor(SCRecordingEditor, didFailWithError: any Error)](./screcordingeditordelegate/recordingeditor%28_,didfailwitherror%29.md)
+- [func recordingEditorDidDismiss(SCRecordingEditor)](./screcordingeditordelegate/recordingeditordiddismiss%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

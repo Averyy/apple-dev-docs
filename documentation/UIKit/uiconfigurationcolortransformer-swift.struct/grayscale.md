@@ -1,7 +1,8 @@
 # grayscale
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a color transformer that generates a grayscale version of the color.
 
@@ -10,7 +11,7 @@ Creates a color transformer that generates a grayscale version of the color.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ static let grayscale: UIConfigurationColorTransformer
 
 ## See Also
 
-- [init((UIColor) -> UIColor)](uiconfigurationcolortransformer-swift.struct/init(_:).md)
+### Creating a color transformer
+- [init((UIColor) -> UIColor)](./init%28_%29.md)
   Creates a color transformer with the specified closure.
-- [static let preferredTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/preferredtint.md)
+- [static let preferredTint: UIConfigurationColorTransformer](./preferredtint.md)
   A color transformer that returns the preferred system accent color.
-- [static let monochromeTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/monochrometint.md)
+- [static let monochromeTint: UIConfigurationColorTransformer](./monochrometint.md)
   A color transformer that returns the color with a monochrome tint.
 
 

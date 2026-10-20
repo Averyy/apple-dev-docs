@@ -1,7 +1,8 @@
 # background(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies a color that will be drawn behind the content within the matched transition source.
 

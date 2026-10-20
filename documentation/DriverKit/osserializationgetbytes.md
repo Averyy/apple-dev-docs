@@ -1,26 +1,28 @@
 # OSSerializationGetBytes
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 const void *OSSerializationGetBytes(OSSerializationPtr serial, size_t *length);
 ```
 
 ## See Also
 
-- [copyObject](osserialization/copyobject.md)
+### Getting the Serialized Content
+- [copyObject](./osserialization/copyobject.md)
   Obtain the result of the deserialization performed by createFromBytes().
-- [OSCreateObjectFromSerialization](oscreateobjectfromserialization.md)
-- [finalizeBuffer](osserialization/finalizebuffer.md)
+- [OSCreateObjectFromSerialization](./oscreateobjectfromserialization.md)
+- [finalizeBuffer](./osserialization/finalizebuffer.md)
   Obtain the result of the serialization performed by createFromObject().
 
 

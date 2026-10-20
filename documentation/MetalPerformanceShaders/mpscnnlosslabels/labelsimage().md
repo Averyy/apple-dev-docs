@@ -1,7 +1,8 @@
 # labelsImage()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 func labelsImage() -> MPSImage
+```
+
+```objc
+- (MPSImage *) labelsImage;
 ```
 
 

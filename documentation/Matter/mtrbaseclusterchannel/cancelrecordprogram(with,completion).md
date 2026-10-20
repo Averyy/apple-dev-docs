@@ -1,7 +1,8 @@
 # cancelRecordProgram(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command CancelRecordProgram
 
@@ -17,7 +18,15 @@ Command CancelRecordProgram
 ## Declaration
 
 ```swift
+func cancelRecordProgram(with params: MTRChannelClusterCancelRecordProgramParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func cancelRecordProgram(with params: MTRChannelClusterCancelRecordProgramParams) async throws
+```
+
+```objc
+- (void) cancelRecordProgramWithParams:(MTRChannelClusterCancelRecordProgramParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

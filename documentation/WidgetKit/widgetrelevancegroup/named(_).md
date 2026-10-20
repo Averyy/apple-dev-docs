@@ -1,7 +1,8 @@
 # named(_:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group with the provided name.
 

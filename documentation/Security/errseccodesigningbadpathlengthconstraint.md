@@ -1,7 +1,8 @@
 # errSecCodeSigningBadPathLengthConstraint
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing encountered an incorrect path length constraint.
 
@@ -18,6 +19,10 @@ Code signing encountered an incorrect path length constraint.
 
 ```swift
 var errSecCodeSigningBadPathLengthConstraint: OSStatus { get }
+```
+
+```c
+errSecCodeSigningBadPathLengthConstraint
 ```
 
 

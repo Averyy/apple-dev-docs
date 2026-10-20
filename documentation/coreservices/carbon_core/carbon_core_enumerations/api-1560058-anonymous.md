@@ -5,14 +5,14 @@
 ## Topics
 
 ### Constants
-- [var WDEFNFnd: Int](wdefnfnd.md)
-- [var dsDisassemblerInstalled: Int](dsdisassemblerinstalled.md)
-- [var dsExtensionsDisabled: Int](dsextensionsdisabled.md)
-- [var dsGreeting: Int](dsgreeting.md)
-- [var dsMacsBugInstalled: Int](dsmacsbuginstalled.md)
-- [var dsNoExtsDisassembler: Int](dsnoextsdisassembler.md)
-- [var dsNoExtsMacsBug: Int](dsnoextsmacsbug.md)
-- [var dsSysErr: Int](dssyserr.md)
+- [var WDEFNFnd: Int](../../wdefnfnd.md)
+- [var dsDisassemblerInstalled: Int](../../dsdisassemblerinstalled.md)
+- [var dsExtensionsDisabled: Int](../../dsextensionsdisabled.md)
+- [var dsGreeting: Int](../../dsgreeting.md)
+- [var dsMacsBugInstalled: Int](../../dsmacsbuginstalled.md)
+- [var dsNoExtsDisassembler: Int](../../dsnoextsdisassembler.md)
+- [var dsNoExtsMacsBug: Int](../../dsnoextsmacsbug.md)
+- [var dsSysErr: Int](../../dssyserr.md)
 
 
 ---

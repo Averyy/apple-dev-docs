@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An identifier of a source track to pass through without compositing.
@@ -20,15 +21,20 @@ An identifier of a source track to pass through without compositing.
 var passthroughTrackID: CMPersistentTrackID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMPersistentTrackID passthroughTrackID;
+```
+
 #### Discussion
 
 If an instruction indicates to pass through a source frame without compositing, this property returns the corresponding track identifier. The compositor isn’t run for the duration of the instruction, and instead passes the source frame through to the output. The system automatically matches the required dimensions, clean aperture, and pixel aspect ratio values of the source buffer.
 
 ## See Also
 
-- [var requiredSourceTrackIDs: [NSValue]?](avvideocompositioninstructionprotocol/requiredsourcetrackids.md)
+### Getting track ID settings
+- [var requiredSourceTrackIDs: [NSValue]?](./requiredsourcetrackids.md)
   The identifiers of the video tracks the instruction requires to compose frames.
-- [var requiredSourceSampleDataTrackIDs: [NSNumber]](avvideocompositioninstructionprotocol/requiredsourcesampledatatrackids.md)
+- [var requiredSourceSampleDataTrackIDs: [NSNumber]](./requiredsourcesampledatatrackids.md)
   The identifiers of the sample data tracks the instruction requires to compose frames.
 
 

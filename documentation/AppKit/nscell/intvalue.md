@@ -1,12 +1,13 @@
 # intValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s value as an integer.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The cell’s value as an integer.
 var intValue: Int32 { get set }
 ```
 
+```objc
+@property int intValue;
+```
+
 #### Discussion
 
-Use the [`integerValue`](nscell/integervalue.md) property instead.
+Use the [`integerValue`](./integervalue.md) property instead.
 
 ## See Also
 
-- [var objectValue: Any?](nscell/objectvalue.md)
+### Managing Cell Values
+- [var objectValue: Any?](./objectvalue.md)
   The cell’s value as an Objective-C object.
-- [var hasValidObjectValue: Bool](nscell/hasvalidobjectvalue.md)
+- [var hasValidObjectValue: Bool](./hasvalidobjectvalue.md)
   A Boolean value that indicates whether the cell has a valid object value.
-- [var integerValue: Int](nscell/integervalue.md)
+- [var integerValue: Int](./integervalue.md)
   The cell’s value as an integer value.
-- [var stringValue: String](nscell/stringvalue.md)
+- [var stringValue: String](./stringvalue.md)
   The cell’s value as a string.
-- [var doubleValue: Double](nscell/doublevalue.md)
+- [var doubleValue: Double](./doublevalue.md)
   The cell’s value as a double-precision floating-point number.
-- [var floatValue: Float](nscell/floatvalue.md)
+- [var floatValue: Float](./floatvalue.md)
   The cell’s value as a single-precision floating-point number.
 
 

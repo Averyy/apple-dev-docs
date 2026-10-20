@@ -1,7 +1,8 @@
 # migrationProgress
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number between `0` and `1` that indicates the proportion of completeness of the migration.
 
@@ -10,7 +11,7 @@ A number between `0` and `1` that indicates the proportion of completeness of th
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ A number between `0` and `1` that indicates the proportion of completeness of th
 var migrationProgress: Float { get }
 ```
 
+```objc
+@property (readonly) float migrationProgress;
+```
+
 #### Discussion
 
 If a migration is not taking place, this property is `1`. You can observe this value using key-value observing.
 
 ## See Also
 
-- [var currentEntityMapping: NSEntityMapping](nsmigrationmanager/currententitymapping.md)
+### Monitoring a Migration’s Progress
+- [var currentEntityMapping: NSEntityMapping](./currententitymapping.md)
   The entity mapping currently being processed.
 
 

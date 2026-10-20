@@ -1,7 +1,8 @@
 # backgroundImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A background image to display around the button.
 
@@ -18,9 +19,14 @@ A background image to display around the button.
 var backgroundImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) UIImage * backgroundImage;
+```
+
 ## See Also
 
-- [var backgroundImagePositionAdjustment: UIOffset](uibarbuttonitemstateappearance/backgroundimagepositionadjustment.md)
+### Configuring the background appearance
+- [var backgroundImagePositionAdjustment: UIOffset](./backgroundimagepositionadjustment.md)
   The distance, in points, by which to offset the background image horizontally and vertically.
 
 

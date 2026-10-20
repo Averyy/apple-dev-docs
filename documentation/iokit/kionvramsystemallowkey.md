@@ -1,7 +1,8 @@
 # kIONVRAMSystemAllowKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIONVRAMSystemAllowKey: String { get }
+```
+
+```c
+#define kIONVRAMSystemAllowKey
 ```
 
 

@@ -1,12 +1,13 @@
 # hasSubmenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the menu item has a submenu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A Boolean value that indicates whether the menu item has a submenu.
 var hasSubmenu: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasSubmenu;
+```
+
 ## See Also
 
-- [var submenu: NSMenu?](nsmenuitem/submenu.md)
+### Managing submenus
+- [var submenu: NSMenu?](./submenu.md)
   The submenu of the menu item.
-- [var parent: NSMenuItem?](nsmenuitem/parent.md)
+- [var parent: NSMenuItem?](./parent.md)
   The menu item whose submenu contains the receiver.
 
 

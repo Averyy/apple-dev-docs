@@ -1,7 +1,8 @@
 # startTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start time of the current event.
 

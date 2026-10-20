@@ -1,7 +1,8 @@
 # IKRig.Constraint
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition of a rig constraint.
 
@@ -26,51 +27,52 @@ Each constraint can have its position and orientation demands enabled individual
 ## Topics
 
 ### Structures
-- [IKRig.Constraint.ID](ikrig/constraint/id-swift.struct.md)
+- [IKRig.Constraint.ID](./constraint/id-swift.struct.md)
   The identity type for a constraint in a rig.
-- [IKRig.Constraint.IKOrientationDemand](ikrig/constraint/ikorientationdemand.md)
+- [IKRig.Constraint.IKOrientationDemand](./constraint/ikorientationdemand.md)
   A definition of an orientational demand.
-- [IKRig.Constraint.IKPositionDemand](ikrig/constraint/ikpositiondemand.md)
+- [IKRig.Constraint.IKPositionDemand](./constraint/ikpositiondemand.md)
   A definition of a positional demand.
 ### Instance Properties
-- [var id: IKRig.Constraint.ID](ikrig/constraint/id-swift.property.md)
+- [var id: IKRig.Constraint.ID](./constraint/id-swift.property.md)
   The identifier of the constraint.
-- [var jointName: String](ikrig/constraint/jointname.md)
+- [var jointName: String](./constraint/jointname.md)
   The name of the constrained joint.
-- [var name: String](ikrig/constraint/name.md)
+- [var name: String](./constraint/name.md)
   The name of the constraint.
-- [var offset: Transform](ikrig/constraint/offset.md)
+- [var offset: Transform](./constraint/offset.md)
   A constraint target offset.
-- [var orientationDemand: IKRig.Constraint.IKOrientationDemand?](ikrig/constraint/orientationdemand.md)
+- [var orientationDemand: IKRig.Constraint.IKOrientationDemand?](./constraint/orientationdemand.md)
   The settings of the orientational demand.
-- [var positionDemand: IKRig.Constraint.IKPositionDemand?](ikrig/constraint/positiondemand.md)
+- [var positionDemand: IKRig.Constraint.IKPositionDemand?](./constraint/positiondemand.md)
   The settings of the positional demand.
 ### Type Methods
-- [static func lookAtAbsolute(named: String, on: String, lookingAlong: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](ikrig/constraint/lookatabsolute(named:on:lookingalong:orientationweight:).md)
+- [static func lookAtAbsolute(named: String, on: String, lookingAlong: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](./constraint/lookatabsolute%28named,on,lookingalong,orientationweight%29.md)
   Creates a constraint with only an orientational demand in absolute look-at mode.
-- [static func lookAtAdditive(named: String, on: String, lookingAlong: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](ikrig/constraint/lookatadditive(named:on:lookingalong:orientationweight:).md)
+- [static func lookAtAdditive(named: String, on: String, lookingAlong: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](./constraint/lookatadditive%28named,on,lookingalong,orientationweight%29.md)
   Creates a constraint with only an orientational demand in additive look-at mode.
-- [static func orient(named: String, on: String, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](ikrig/constraint/orient(named:on:orientationweight:).md)
+- [static func orient(named: String, on: String, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](./constraint/orient%28named,on,orientationweight%29.md)
   Creates a constraint with only an orientation demand.
-- [static func parent(named: String, on: String, positionWeight: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](ikrig/constraint/parent(named:on:positionweight:orientationweight:).md)
+- [static func parent(named: String, on: String, positionWeight: SIMD3<Float>, orientationWeight: SIMD3<Float>) -> IKRig.Constraint](./constraint/parent%28named,on,positionweight,orientationweight%29.md)
   Creates a constraint with both a positional and an orientational demands.
-- [static func point(named: String, on: String, positionWeight: SIMD3<Float>) -> IKRig.Constraint](ikrig/constraint/point(named:on:positionweight:).md)
+- [static func point(named: String, on: String, positionWeight: SIMD3<Float>) -> IKRig.Constraint](./constraint/point%28named,on,positionweight%29.md)
   Creates a constraint with only a positional demand.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [struct IKRig](ikrig.md)
+### Inverse kinematics rigs
+- [struct IKRig](../ikrig.md)
   A full body inverse kinematics rig definition for a single skeleton.
-- [struct Joint](ikrig/joint.md)
+- [struct Joint](./joint.md)
   A definition of a rig joint and its IK solver settings.
-- [struct JointCollection](ikrig/jointcollection.md)
+- [struct JointCollection](./jointcollection.md)
   Ordered dictionary-like container with a fixed size.
-- [struct ConstraintsCollection](ikrig/constraintscollection.md)
+- [struct ConstraintsCollection](./constraintscollection.md)
   Ordered dictionary-like container.
 
 

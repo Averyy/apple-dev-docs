@@ -1,11 +1,12 @@
 # ParseableFormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Currency>](floatingpointformatstyle/currency/parsestrategy.md)
+- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Currency>](./parsestrategy.md)
   The parse strategy that this format style uses.
 
 

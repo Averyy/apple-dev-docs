@@ -1,7 +1,8 @@
 # encodeWithOptimizer(_:to:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the transformer and optimizer to an encoder.
 
@@ -27,7 +28,8 @@ func encodeWithOptimizer(_ transformer: PreprocessingUpdatableTabularEstimator<P
 
 ## See Also
 
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer](preprocessingupdatabletabularestimator/decodewithoptimizer(from:).md)
+### Encoding and decoding
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> PreprocessingUpdatableTabularEstimator<Preprocessor, Estimator>.Transformer](./decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer.
 
 

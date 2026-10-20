@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kAEKeyDown: OSType](kaekeydown.md)
-- [var kAEMenuClass: OSType](kaemenuclass.md)
-- [var kAEMenuSelect: OSType](kaemenuselect.md)
-- [var kAEMouseDown: OSType](kaemousedown.md)
-- [var kAEMouseDownInBack: OSType](kaemousedowninback.md)
-- [var kAEPromise: OSType](kaepromise.md)
-- [var kAEResized: OSType](kaeresized.md)
+- [var kAEKeyDown: OSType](../kaekeydown.md)
+- [var kAEMenuClass: OSType](../kaemenuclass.md)
+- [var kAEMenuSelect: OSType](../kaemenuselect.md)
+- [var kAEMouseDown: OSType](../kaemousedown.md)
+- [var kAEMouseDownInBack: OSType](../kaemousedowninback.md)
+- [var kAEPromise: OSType](../kaepromise.md)
+- [var kAEResized: OSType](../kaeresized.md)
 
 
 ---

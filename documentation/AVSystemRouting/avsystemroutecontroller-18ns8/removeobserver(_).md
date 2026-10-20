@@ -1,7 +1,8 @@
 # removeObserver(_:)
 
 **Framework**: AVSystemRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a previously registered observer from the system routing controller.
 

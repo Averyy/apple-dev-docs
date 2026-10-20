@@ -1,7 +1,8 @@
 # NSComboButton.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate how a combo button presents its menu.
 
@@ -14,35 +15,40 @@ Constants that indicate how a combo button presents its menu.
 enum Style
 ```
 
+```c
+enum NSComboButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Getting the Combo Button Styles
-- [NSComboButton.Style.split](nscombobutton/style-swift.enum/split.md)
+- [NSComboButton.Style.split](./style-swift.enum/split.md)
   A style that separates the button’s title and image from the menu indicator people use to activate the button.
-- [NSComboButton.Style.unified](nscombobutton/style-swift.enum/unified.md)
+- [NSComboButton.Style.unified](./style-swift.enum/unified.md)
   A style that unifies the button’s title and image with the menu indicator.
 ### Initializers
-- [init?(rawValue: Int)](nscombobutton/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var style: NSComboButton.Style](nscombobutton/style-swift.property.md)
+### Configuring the Button Appearance
+- [var style: NSComboButton.Style](./style-swift.property.md)
   The appearance setting that determines how the button presents its menu .
-- [var title: String](nscombobutton/title.md)
+- [var title: String](./title.md)
   The localized string that the button displays.
-- [var image: NSImage?](nscombobutton/image.md)
+- [var image: NSImage?](./image.md)
   The image that the button displays.
-- [var imageScaling: NSImageScaling](nscombobutton/imagescaling.md)
+- [var imageScaling: NSImageScaling](./imagescaling.md)
   The scaling behavior to apply to the button’s image.
 
 

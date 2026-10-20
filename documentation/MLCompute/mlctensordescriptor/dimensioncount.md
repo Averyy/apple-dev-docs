@@ -1,16 +1,17 @@
 # dimensionCount
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of dimensions in the tensor.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,21 +19,26 @@ The number of dimensions in the tensor.
 var dimensionCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger dimensionCount;
+```
+
 ## See Also
 
-- [var dataType: MLCDataType](mlctensordescriptor/datatype.md)
+### Inspecting Tensor Descriptors
+- [var dataType: MLCDataType](./datatype.md)
   The tensor data type.
-- [var shape: [Int]](mlctensordescriptor/shape-7i1rw.md)
+- [var shape: [Int]](./shape-7i1rw.md)
   An array that contains the size in each dimension.
-- [var stride: [Int]](mlctensordescriptor/stride-5mzlt.md)
+- [var stride: [Int]](./stride-5mzlt.md)
   An array that contains the stride, in bytes, in each dimension.
-- [var tensorAllocationSizeInBytes: Int](mlctensordescriptor/tensorallocationsizeinbytes.md)
+- [var tensorAllocationSizeInBytes: Int](./tensorallocationsizeinbytes.md)
   The allocation size, in bytes, for a tensor.
-- [var sequenceLengths: [Int]?](mlctensordescriptor/sequencelengths-3jdab.md)
+- [var sequenceLengths: [Int]?](./sequencelengths-3jdab.md)
   An array that contains the variable lengths of sequences stored in the tensor.
-- [var sortedSequences: Bool](mlctensordescriptor/sortedsequences.md)
+- [var sortedSequences: Bool](./sortedsequences.md)
   A Boolean that indicates whether you provided the sequence lengths sorted in descending order.
-- [var batchSizePerSequenceStep: [Int]?](mlctensordescriptor/batchsizepersequencestep-6iz59.md)
+- [var batchSizePerSequenceStep: [Int]?](./batchsizepersequencestep-6iz59.md)
   The batch size for each sequence.
 
 

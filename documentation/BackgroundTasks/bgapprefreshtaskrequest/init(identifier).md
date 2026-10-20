@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Background Tasks  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Return a new refresh task request for the specified identifier.
 
@@ -16,6 +17,10 @@ Return a new refresh task request for the specified identifier.
 
 ```swift
 init(identifier: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
 ```
 
 ## Parameters

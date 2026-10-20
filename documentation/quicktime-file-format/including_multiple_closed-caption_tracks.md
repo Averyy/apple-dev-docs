@@ -1,6 +1,7 @@
 # Including multiple closed-caption tracks
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Include multiple closed-caption tracks in a movie.
 
@@ -13,9 +14,10 @@ If a single closed caption track is included, it is recommended that the track b
 
 ## See Also
 
-- [Closed captioning sample description](closed_captioning_sample_description.md)
+### Storing closed captioning
+- [Closed captioning sample description](./closed_captioning_sample_description.md)
   An atom that defines how to interpret closed captioning media data.
-- [Closed captioning sample data ('cdat')](closed_captioning_sample_data.md)
+- [Closed captioning sample data ('cdat')](./closed_captioning_sample_data.md)
   A sequence of one or more atoms that store closed captioning sample data.
 
 

@@ -1,7 +1,8 @@
 # setByJavaScript
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An NSString object indicating that the cookie is set via JavaScript.
 
@@ -18,6 +19,10 @@ An NSString object indicating that the cookie is set via JavaScript.
 
 ```swift
 static let setByJavaScript: HTTPCookiePropertyKey
+```
+
+```c
+extern NSHTTPCookiePropertyKey const NSHTTPCookieSetByJavaScript;
 ```
 
 

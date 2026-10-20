@@ -1,14 +1,15 @@
 # removeFromSuperview()
 
 **Framework**: CoreAudioKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,8 +20,9 @@
 
 ## See Also
 
-- [func removeScheduledUpdatesTimer()](augenericviewinternal/removescheduledupdatestimer.md)
-- [func traitCollectionDidChange(UITraitCollection?)](augenericviewinternal/traitcollectiondidchange(_:).md)
+### Instance Methods
+- [func removeScheduledUpdatesTimer()](./removescheduledupdatestimer%28%29.md)
+- [func traitCollectionDidChange(UITraitCollection?)](./traitcollectiondidchange%28_%29.md)
 
 
 ---

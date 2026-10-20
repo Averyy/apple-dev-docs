@@ -1,7 +1,8 @@
 # requestSyncClock()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Synchronizes the camera’s clock with the computer’s clock.
 
@@ -14,13 +15,18 @@ Synchronizes the camera’s clock with the computer’s clock.
 func requestSyncClock()
 ```
 
+```objc
+- (void) requestSyncClock;
+```
+
 #### Discussion
 
-Send this request only if the camera has the [`cameraDeviceCanSyncClock`](icdevicecapability/cameradevicecansyncclock.md) capability.
+Send this request only if the camera has the [`cameraDeviceCanSyncClock`](../icdevicecapability/cameradevicecansyncclock.md) capability.
 
 ## See Also
 
-- [var timeOffset: TimeInterval](iccameradevice/timeoffset.md)
+### Synchronizing the Clock
+- [var timeOffset: TimeInterval](./timeoffset.md)
   The time offset, in seconds, between the camera’s clock and the computer’s clock.
 
 

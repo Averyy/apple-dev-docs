@@ -1,7 +1,8 @@
 # rect(for:layoutAt:in:textContainer:characterRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle within which glyphs should be laid out for a text table block.
 
@@ -12,6 +13,10 @@ Returns the rectangle within which glyphs should be laid out for a text table bl
 
 ```swift
 func rect(for block: NSTextTableBlock, layoutAt startingPoint: NSPoint, in rect: NSRect, textContainer: NSTextContainer, characterRange charRange: NSRange) -> NSRect
+```
+
+```objc
+- (NSRect) rectForBlock:(NSTextTableBlock *) block layoutAtPoint:(NSPoint) startingPoint inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ This method is called by the text table block `block` to determine the rectangle
 
 ## See Also
 
-- [func boundsRect(for: NSTextTableBlock, contentRect: NSRect, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstexttable/boundsrect(for:contentrect:in:textcontainer:characterrange:).md)
+### Determining layout rectangles
+- [func boundsRect(for: NSTextTableBlock, contentRect: NSRect, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](./boundsrect%28for,contentrect,in,textcontainer,characterrange%29.md)
   Returns the rectangle the text table block actually occupies, including padding, borders, and margins.
 
 

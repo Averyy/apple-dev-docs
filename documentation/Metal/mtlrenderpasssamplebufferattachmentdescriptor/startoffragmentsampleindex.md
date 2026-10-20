@@ -1,7 +1,8 @@
 # startOfFragmentSampleIndex
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index the Metal device object should use to store GPU counters when starting the render pass’s fragment stage.
 
@@ -19,26 +20,31 @@ The index the Metal device object should use to store GPU counters when starting
 var startOfFragmentSampleIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger startOfFragmentSampleIndex;
+```
+
 ## Mentions
 
-- [Creating a counter sample buffer to store a GPU’s counter data during a pass](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-Specify [`MTLCounterDontSample`](mtlcounterdontsample.md) if you don’t want to sample GPU counters at the start of the fragment stage. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
+Specify [`MTLCounterDontSample`](../mtlcounterdontsample.md) if you don’t want to sample GPU counters at the start of the fragment stage. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
 
-On devices that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](mtlcountersamplingpoint/atstageboundary.md) you need to set the value to [`MTLCounterDontSample`](mtlcounterdontsample.md).
+On devices that don’t support [`MTLCounterSamplingPoint.atStageBoundary`](../mtlcountersamplingpoint/atstageboundary.md) you need to set the value to [`MTLCounterDontSample`](../mtlcounterdontsample.md).
 
 ## See Also
 
-- [var sampleBuffer: (any MTLCounterSampleBuffer)?](mtlrenderpasssamplebufferattachmentdescriptor/samplebuffer.md)
+### Configuring the sample buffer attachment
+- [var sampleBuffer: (any MTLCounterSampleBuffer)?](./samplebuffer.md)
   A specialized memory buffer that the GPU uses to store its counter data during the render pass.
-- [var startOfVertexSampleIndex: Int](mtlrenderpasssamplebufferattachmentdescriptor/startofvertexsampleindex.md)
+- [var startOfVertexSampleIndex: Int](./startofvertexsampleindex.md)
   The index the Metal device object should use to store GPU counters when starting the render pass’s vertex stage.
-- [var endOfVertexSampleIndex: Int](mtlrenderpasssamplebufferattachmentdescriptor/endofvertexsampleindex.md)
+- [var endOfVertexSampleIndex: Int](./endofvertexsampleindex.md)
   The index the Metal device object should use to store GPU counters when ending the render pass’s vertex stage.
-- [var endOfFragmentSampleIndex: Int](mtlrenderpasssamplebufferattachmentdescriptor/endoffragmentsampleindex.md)
+- [var endOfFragmentSampleIndex: Int](./endoffragmentsampleindex.md)
   The index the Metal device object should use to store GPU counters when ending the render pass’s fragment stage.
 
 

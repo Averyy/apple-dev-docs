@@ -1,17 +1,22 @@
 # webPlugInDestroy()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the plug-in for deallocation.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func webPlugInDestroy()
+```
+
+```objc
+- (void) webPlugInDestroy;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ Typically, this method frees the memory and other resources used by the plug-in.
 
 ## See Also
 
-- [func webPlugInInitialize()](nsobject-swift.class/webplugininitialize.md)
+### Controlling the Plug-in
+- [func webPlugInInitialize()](./webplugininitialize%28%29.md)
   Initializes the plug-in.
-- [func webPlugInStart()](nsobject-swift.class/webpluginstart.md)
+- [func webPlugInStart()](./webpluginstart%28%29.md)
   Tells the plug-in to start normal operation.
-- [func webPlugInStop()](nsobject-swift.class/webpluginstop.md)
+- [func webPlugInStop()](./webpluginstop%28%29.md)
   Tells the plug-in to stop normal operation.
 
 

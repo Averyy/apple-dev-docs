@@ -1,6 +1,7 @@
 # Adding a Page to a Playground Book
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Create a subfolder, a manifest file, and a content file.
 
@@ -20,13 +21,13 @@ For each page in your playground book, create a `main.swift` file. This file is 
 
 > ❗ **Important**: If you’re writing a book that targets a version of the Swift Playgrounds book format earlier than `6.0`, use the name `Contents.swift` instead of `main.swift`.
 
-By default, everything you write in `main.swift` is treated as normal Swift code that runs when a learner taps the Run button. Playground pages support rich annotions that you use to write prose and add functionality. For more information about annotations, see *Annotations* and [`Writing Prose for a Playground Page`](writing-prose-for-a-playground-page.md).
+By default, everything you write in `main.swift` is treated as normal Swift code that runs when a learner taps the Run button. Playground pages support rich annotions that you use to write prose and add functionality. For more information about annotations, see *Annotations* and [Writing Prose for a Playground Page](./writing-prose-for-a-playground-page.md).
 
-##### Add an Always on Live View
+##### Add an Always-On Live View
 
 To display the results of running the code on a page, you can add an always-on live view. When present, it’s displayed on the right side of a page. Add an always-on live view by creating a file named `LiveView.swift` and placing it in a page’s .playgroundpage folder.
 
-For the view to appear on the page, you must set the [`liveView`](https://developer.apple.com/documentation/playgroundsupport/playgroundpage/1964506-liveview) property of the current page within `LiveView.swift`.
+For the view to appear on the page, you must set the [`liveView`](../playgroundsupport/playgroundpage/api-1964506-liveview.md) property of the current page within `LiveView.swift`.
 
 ```swift
 PlaygroundPage.current.liveView = <# An instance of UIView or UIViewController #>
@@ -36,25 +37,26 @@ PlaygroundPage.current.liveView = <# An instance of UIView or UIViewController #
 
 A page’s manifest property list determines both the page name and metadata for presenting the page in Swift Playgrounds. Configure the following property list keys in the manifest:
 
-- **`CodeCopySetup`**: A dictionary you use to specify the instructions learners read when they’re copying content between playground pages. For information about the keys and values you use in this dictionary, see [`Mark Editable Areas as Copyable`](specifying-editable-regions-in-a-playground-page#Mark-Editable-Areas-as-Copyable.md).
+- **`CodeCopySetup`**: A dictionary you use to specify the instructions learners read when they’re copying content between playground pages. For information about the keys and values you use in this dictionary, see [Mark Editable Areas as Copyable](./specifying-editable-regions-in-a-playground-page.md#Mark-Editable-Areas-as-Copyable).
 - **`LiveViewEdgeToEdge`**: **Required.** A Boolean value you use to control the initial size of the live view. Set to `true` to fill the whole live view area, which includes the Run and Hints buttons that overlay the live view.
 - **`LiveViewMode`**: **Required.** A string you use to control the display of the live view area when the live view isn’t running. Set to `VisibleByDefault` to show the live view when the playground opens. Otherwise, set to `HiddenByDefault` to hide the live view until a learner runs the playground.
 - **`Name`**: **Required.** A string you use to specify the page name displayed to learners in Swift Playgrounds.
 - **`PlaygroundLoggingMode`**: A string you use to specify whether the results of running Swift statements on the page are displayed beside each statement. Set to `Normal` to display results; otherwise, set to `Off`.
 - **`PosterReference`**: A string you use to reference an image file that’s shown centered and unscaled in the live view area before the live view runs. The image file can be in any Resources folder in the playground book.
-- **`UserModuleCodeCompletionDirectives`**: An array of strings you use to control which code completions from modules show up in the shortcut bar. The syntax for each completion is identical to the syntax you use within the `code-completion` delimiter in `main.swift` files. For more information, see [`Customizing the Completions in the Shortcut Bar`](customizing-the-completions-in-the-shortcut-bar.md).
+- **`UserModuleCodeCompletionDirectives`**: An array of strings you use to control which code completions from modules show up in the shortcut bar. The syntax for each completion is identical to the syntax you use within the `code-completion` delimiter in `main.swift` files. For more information, see [Customizing the Completions in the Shortcut Bar](./customizing-the-completions-in-the-shortcut-bar.md).
 - **`UserModuleSourceFileToActivate`**: A string you use to specify the active Swift file when a learner opens this page. Set to the path of a Swift file relative to the Contents folder in the playground book. For example: `UserModules/MyModule.playgroundmodule/Sources/MyModule.swift`.
 - **`UserModuleSourceFilesToOpen`**: An array of strings you use to specify which Swift files should open when a learner opens this page. The order of the array elements determines the display order of the files in the Swift Playgrounds interface.
 
 ## See Also
 
-- [Adding a Chapter to a Playground Book](adding-a-chapter-to-a-playground-book.md)
+### Book Structure
+- [Adding a Chapter to a Playground Book](./adding-a-chapter-to-a-playground-book.md)
   Create a folder with a manifest that describes the chapter’s name and page order.
-- [Adding a Cutscene to a Playground Book](adding-a-cutscene-to-a-playground-book.md)
+- [Adding a Cutscene to a Playground Book](./adding-a-cutscene-to-a-playground-book.md)
   Create a subfolder, a manifest file, and cutscene metadata.
-- [Using Modules to Share Code in a Playground Book](using-modules-to-share-code-in-a-playground-book.md)
+- [Using Modules to Share Code in a Playground Book](./using-modules-to-share-code-in-a-playground-book.md)
   In Swift Playgrounds 3.0 and later, make code available across multiple chapters to teach the value of reusable code.
-- [Sharing Resources in a Playground Book](sharing-resources-in-a-playground-book.md)
+- [Sharing Resources in a Playground Book](./sharing-resources-in-a-playground-book.md)
   Reuse common assets throughout a book to reduce its size.
 
 

@@ -1,7 +1,8 @@
 # substring(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string object containing the characters of the receiver that lie within a given range.
 
@@ -20,6 +21,10 @@ Returns a string object containing the characters of the receiver that lie withi
 func substring(with range: NSRange) -> String
 ```
 
+```objc
+- (NSString *) substringWithRange:(NSRange) range;
+```
+
 #### Return Value
 
 A string object containing the characters of the receiver that lie within `aRange`.
@@ -30,19 +35,22 @@ This method detects all invalid ranges (including those with negative lengths). 
 
 ## Parameters
 
-- `range`: A range. The range must not exceed the bounds of the receiver. Raises an [`rangeException`](nsexceptionname/rangeexception.md) if (`aRange.location` - 1) or (`aRange.location` + `aRange.length` - 1) lies beyond the end of the receiver.
+- `range`: A range. The range must not exceed the bounds of the receiver.
+
+  Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if (`aRange.location` - 1) or (`aRange.location` + `aRange.length` - 1) lies beyond the end of the receiver.
 
 ## See Also
 
-- [func components(separatedBy: String) -> [String]](nsstring/components(separatedby:)-238fy.md)
+### Dividing Strings
+- [func components(separatedBy: String) -> [String]](./components%28separatedby%29-238fy.md)
   Returns an array containing substrings from the receiver that have been divided by a given separator.
-- [func components(separatedBy: CharacterSet) -> [String]](nsstring/components(separatedby:)-27x9g.md)
+- [func components(separatedBy: CharacterSet) -> [String]](./components%28separatedby%29-27x9g.md)
   Returns an array containing substrings from the receiver that have been divided by characters in a given set.
-- [func trimmingCharacters(in: CharacterSet) -> String](nsstring/trimmingcharacters(in:).md)
+- [func trimmingCharacters(in: CharacterSet) -> String](./trimmingcharacters%28in%29.md)
   Returns a new string made by removing from both ends of the receiver characters contained in a given character set.
-- [func substring(from: Int) -> String](nsstring/substring(from:).md)
+- [func substring(from: Int) -> String](./substring%28from%29.md)
   Returns a new string containing the characters of the receiver from the one at a given index to the end.
-- [func substring(to: Int) -> String](nsstring/substring(to:).md)
+- [func substring(to: Int) -> String](./substring%28to%29.md)
   Returns a new string containing the characters of the receiver up to, but not including, the one at a given index.
 
 

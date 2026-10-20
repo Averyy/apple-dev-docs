@@ -1,7 +1,8 @@
 # init(saltInput1:saltInput2:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an input values structure with the given salts.
 

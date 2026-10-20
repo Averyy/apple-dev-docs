@@ -1,7 +1,8 @@
 # errSecInvalidAttributePublicKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A public key format attribute is not valid.
 
@@ -18,6 +19,10 @@ A public key format attribute is not valid.
 
 ```swift
 var errSecInvalidAttributePublicKeyFormat: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributePublicKeyFormat
 ```
 
 

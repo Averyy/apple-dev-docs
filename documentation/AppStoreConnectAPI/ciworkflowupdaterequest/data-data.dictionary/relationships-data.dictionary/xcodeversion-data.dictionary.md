@@ -1,7 +1,8 @@
 # CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationship to the Xcode Versions resource you can set with the request that updates a Workflows resource.
 
@@ -10,14 +11,14 @@ The relationship to the Xcode Versions resource you can set with the request tha
 
 ## Declaration
 
-```swift
+```
 object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion.Data](ciworkflowupdaterequest/data-data.dictionary/relationships-data.dictionary/xcodeversion-data.dictionary/data-data.dictionary.md)
+- [object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion.Data](./xcodeversion-data.dictionary/data-data.dictionary.md)
   The type and ID of the Xcode Versions resource that you’re relating with the Workflows resource you’re updating.
 
 ## Properties
@@ -26,7 +27,8 @@ object CiWorkflowUpdateRequest.Data.Relationships.XcodeVersion
 
 ## See Also
 
-- [object CiWorkflowUpdateRequest.Data.Relationships.MacOsVersion](ciworkflowupdaterequest/data-data.dictionary/relationships-data.dictionary/macosversion-data.dictionary.md)
+### Objects
+- [object CiWorkflowUpdateRequest.Data.Relationships.MacOsVersion](./macosversion-data.dictionary.md)
   The relationship to the macOS Versions resource you can set with the request that updates a Workflows resource.
 
 

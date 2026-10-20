@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that provides a container view to manage the system-supplied selection views.
 
@@ -18,13 +19,18 @@ A delegate that provides a container view to manage the system-supplied selectio
 weak var delegate: (any UITextSelectionDisplayInteractionDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) id<UITextSelectionDisplayInteractionDelegate> delegate;
+```
+
 #### Discussion
 
 Provide a delegate object if your UI displays selection highlights below your text input view. The delegate provides the container view for the system to use when adding the selection-related views.
 
 ## See Also
 
-- [protocol UITextSelectionDisplayInteractionDelegate](uitextselectiondisplayinteractiondelegate.md)
+### Managing the drawing view
+- [protocol UITextSelectionDisplayInteractionDelegate](../uitextselectiondisplayinteractiondelegate.md)
   An object you use to customize the presentation of text selections in your interface.
 
 

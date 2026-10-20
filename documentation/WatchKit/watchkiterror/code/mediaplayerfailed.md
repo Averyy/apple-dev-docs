@@ -1,17 +1,22 @@
 # WatchKitError.Code.mediaPlayerFailed
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A media player error.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 case mediaPlayerFailed
+```
+
+```c
+WatchKitMediaPlayerError
 ```
 
 #### Discussion
@@ -20,25 +25,26 @@ WatchKit reports this error when it’s unable to play a media file.
 
 ## See Also
 
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+### Error Codes
+- [WatchKitError.Code.downloadFailed](./downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](./applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
-- [WatchKitError.Code.downloadFailed](watchkiterror/code/downloadfailed.md)
+- [WatchKitError.Code.downloadFailed](./downloadfailed.md)
   A download error.
-- [WatchKitError.Code.invalidArgument](watchkiterror/code/invalidargument.md)
+- [WatchKitError.Code.invalidArgument](./invalidargument.md)
   An invalid argument error.
-- [WatchKitError.Code.recordingFailed](watchkiterror/code/recordingfailed.md)
+- [WatchKitError.Code.recordingFailed](./recordingfailed.md)
   An audio recording error.
-- [WatchKitError.Code.unknown](watchkiterror/code/unknown.md)
+- [WatchKitError.Code.unknown](./unknown.md)
   An unknown error.
-- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](watchkiterror/code/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [WatchKitError.Code.applicationDelegateWatchKitRequestReplyNotCalled](./applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 
 

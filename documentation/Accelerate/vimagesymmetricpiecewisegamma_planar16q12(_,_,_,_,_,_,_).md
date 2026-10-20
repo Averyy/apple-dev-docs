@@ -1,7 +1,8 @@
 # vImageSymmetricPiecewiseGamma_Planar16Q12(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a symmetric piecewise gamma function to transform a 16Q12 planar image to an 8-bit planar image.
 
@@ -20,13 +21,17 @@ Applies a symmetric piecewise gamma function to transform a 16Q12 planar image t
 func vImageSymmetricPiecewiseGamma_Planar16Q12(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ exponentialCoeffs: UnsafePointer<Float>, _ gamma: Float, _ linearCoeffs: UnsafePointer<Float>, _ boundary: Pixel_16S, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageSymmetricPiecewiseGamma_Planar16Q12(const vImage_Buffer *src, const vImage_Buffer *dest, const float exponentialCoeffs[3], const float gamma, const float linearCoeffs[2], const Pixel_16S boundary, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-The piecewise gamma calculation combines a linear and an exponential (gamma) curve on two regions of the input interval, separated by a specified boundary value. When the input is greater than or equal to the boundary value, the function uses the gamma curve to generate the output; otherwise, the function uses the linear curve. This function differs from [`vImagePiecewiseGamma_Planar16Q12(_:_:_:_:_:_:_:)`](vimagepiecewisegamma_planar16q12(_:_:_:_:_:_:_:).md) in that it’s symmetric about zero.
+The piecewise gamma calculation combines a linear and an exponential (gamma) curve on two regions of the input interval, separated by a specified boundary value. When the input is greater than or equal to the boundary value, the function uses the gamma curve to generate the output; otherwise, the function uses the linear curve. This function differs from [`vImagePiecewiseGamma_Planar16Q12(_:_:_:_:_:_:_:)`](./vimagepiecewisegamma_planar16q12%28_,_,_,_,_,_,_%29.md) in that it’s symmetric about zero.
 
 The following describes the operation with `x` representing the input pixel value:
 
@@ -56,11 +61,12 @@ output pixel value = r * copysignf(1.0f, x)
 - `gamma`: The power function exponent for calculating gamma correction for the gamma curve.
 - `linearCoeffs`: An array of two floating-point coefficients that specify the scale and bias for the linear curve.
 - `boundary`: A value that defines the boundary between the linear curve and the gamma curve.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageSymmetricPiecewiseGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, Float, UnsafePointer<Float>, Float, vImage_Flags) -> vImage_Error](vimagesymmetricpiecewisegamma_planarf(_:_:_:_:_:_:_:).md)
+### Applying a symmetric piecewise gamma function
+- [func vImageSymmetricPiecewiseGamma_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, Float, UnsafePointer<Float>, Float, vImage_Flags) -> vImage_Error](./vimagesymmetricpiecewisegamma_planarf%28_,_,_,_,_,_,_%29.md)
   Applies a symmetric piecewise gamma function to transform a 32-bit planar image.
 
 

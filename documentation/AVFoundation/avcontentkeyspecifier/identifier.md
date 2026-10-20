@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The container and protocol-specific key identifier.
 
@@ -20,11 +21,16 @@ The container and protocol-specific key identifier.
 var identifier: any Sendable { get }
 ```
 
+```objc
+@property (readonly) id identifier;
+```
+
 ## See Also
 
-- [var keySystem: AVContentKeySystem](avcontentkeyspecifier/keysystem.md)
+### Inspecting a specifier
+- [var keySystem: AVContentKeySystem](./keysystem.md)
   The key system that generates content keys.
-- [var options: [String : any Sendable]](avcontentkeyspecifier/options.md)
+- [var options: [String : any Sendable]](./options.md)
   A dictionary of options with which you initialized the specifier.
 
 

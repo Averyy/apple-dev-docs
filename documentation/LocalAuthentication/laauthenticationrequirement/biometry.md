@@ -1,7 +1,8 @@
 # biometry
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The requirement that requires biometric authentication.
 
@@ -18,17 +19,22 @@ The requirement that requires biometric authentication.
 class var biometry: LAAuthenticationRequirement { get }
 ```
 
+```objc
+@property (class, readonly) LAAuthenticationRequirement * biometryRequirement;
+```
+
 #### Discussion
 
 Authorizations with this requirement fail when biometrics aren’t available on the current device or there aren’t any enrolled biometrics on the current device.
 
 ## See Also
 
-- [class var `default`: LAAuthenticationRequirement](laauthenticationrequirement/default.md)
+### Specifying authentication requirements
+- [class var `default`: LAAuthenticationRequirement](./default.md)
   The requirement that requires user authentication.
-- [class var biometryCurrentSet: LAAuthenticationRequirement](laauthenticationrequirement/biometrycurrentset.md)
+- [class var biometryCurrentSet: LAAuthenticationRequirement](./biometrycurrentset.md)
   The requirement that requires user authentication with the current set of biometrics.
-- [class func biometry(fallback: LABiometryFallbackRequirement) -> Self](laauthenticationrequirement/biometry(fallback:).md)
+- [class func biometry(fallback: LABiometryFallbackRequirement) -> Self](./biometry%28fallback%29.md)
   Creates a requirement that requires biometric authentication or a fallback requirement that you specify.
 
 

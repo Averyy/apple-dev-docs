@@ -1,7 +1,8 @@
 # SubscriptionLocalizationUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription localization update request.
 
@@ -10,21 +11,21 @@ The request body you use to update a subscription localization update request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionLocalizationUpdateRequest.Data.Attributes](subscriptionlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object SubscriptionLocalizationUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a subscription localization update request resource.
 
 ## Properties
 
 - `attributes` (SubscriptionLocalizationUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `subscriptionLocalizations`
 
 
 ---

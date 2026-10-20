@@ -1,18 +1,19 @@
 # child
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The added or removed child object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The added or removed child object.
 var child: MIDIObjectRef
 ```
 
+```c
+MIDIObjectRef child;
+```
+
 ## See Also
 
-- [var messageID: MIDINotificationMessageID](midiobjectaddremovenotification/messageid.md)
+### Inspecting the Notification
+- [var messageID: MIDINotificationMessageID](./messageid.md)
   The message type.
-- [var messageSize: UInt32](midiobjectaddremovenotification/messagesize.md)
+- [var messageSize: UInt32](./messagesize.md)
   The message size.
-- [var parent: MIDIObjectRef](midiobjectaddremovenotification/parent.md)
+- [var parent: MIDIObjectRef](./parent.md)
   The parent object of the added or removed child.
-- [var parentType: MIDIObjectType](midiobjectaddremovenotification/parenttype.md)
+- [var parentType: MIDIObjectType](./parenttype.md)
   The parent object type.
-- [var childType: MIDIObjectType](midiobjectaddremovenotification/childtype.md)
+- [var childType: MIDIObjectType](./childtype.md)
   The child object type.
 
 

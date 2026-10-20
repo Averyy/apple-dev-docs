@@ -1,7 +1,8 @@
 # convertImagePoint(toViewPoint:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts an image coordinate to an image view coordinate.
 
@@ -14,6 +15,10 @@ Converts an image coordinate to an image view coordinate.
 func convertImagePoint(toViewPoint imagePoint: NSPoint) -> NSPoint
 ```
 
+```objc
+- (NSPoint) convertImagePointToViewPoint:(NSPoint) imagePoint;
+```
+
 #### Return Value
 
 A point specified in coordinates relative to the image view.
@@ -24,11 +29,12 @@ A point specified in coordinates relative to the image view.
 
 ## See Also
 
-- [func convertPoint(toImagePoint: NSPoint) -> NSPoint](ikimageview/convertpoint(toimagepoint:).md)
+### Converting Points and Rectangles
+- [func convertPoint(toImagePoint: NSPoint) -> NSPoint](./convertpoint%28toimagepoint%29.md)
   Converts an image view coordinate to an image coordinate.
-- [func convertRect(toImageRect: NSRect) -> NSRect](ikimageview/convertrect(toimagerect:).md)
+- [func convertRect(toImageRect: NSRect) -> NSRect](./convertrect%28toimagerect%29.md)
   Converts an image view rectangle to an image rectangle.
-- [func convertImageRect(toViewRect: NSRect) -> NSRect](ikimageview/convertimagerect(toviewrect:).md)
+- [func convertImageRect(toViewRect: NSRect) -> NSRect](./convertimagerect%28toviewrect%29.md)
   Converts an image rectangle to an image view rectangle.
 
 

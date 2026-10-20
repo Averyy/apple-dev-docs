@@ -1,7 +1,8 @@
 # setRadius
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void setRadius(
     optional unrestricted float radiusX, 
     optional unrestricted float radiusY

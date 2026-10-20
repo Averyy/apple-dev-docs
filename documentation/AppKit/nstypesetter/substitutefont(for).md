@@ -1,17 +1,22 @@
 # substituteFont(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a screen font suitable for use in place of a given font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func substituteFont(for originalFont: NSFont) -> NSFont
+```
+
+```objc
+- (NSFont *) substituteFontForFont:(NSFont *) originalFont;
 ```
 
 #### Return Value

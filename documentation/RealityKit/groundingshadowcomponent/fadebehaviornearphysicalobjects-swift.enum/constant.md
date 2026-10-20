@@ -1,7 +1,8 @@
 # GroundingShadowComponent.FadeBehaviorNearPhysicalObjects.constant
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A grounding shadow behavior that doesn’t fade when an entity is near physical objects.
 

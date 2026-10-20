@@ -1,7 +1,8 @@
 # numLinks
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 number of links to be used by a dual link timing, if zero, assume one link.
 
@@ -10,7 +11,7 @@ number of links to be used by a dual link timing, if zero, assume one link.
 
 ## Declaration
 
-```swift
+```c
 UInt32 numLinks;
 ```
 

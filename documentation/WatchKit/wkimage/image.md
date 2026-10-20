@@ -1,7 +1,8 @@
 # image
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UIKit image object
 
@@ -14,15 +15,20 @@ The UIKit image object
 var image: UIImage? { get }
 ```
 
+```objc
+@property (readonly, nullable) UIImage * image;
+```
+
 #### Discussion
 
-The value in this property is set using the [`init(image:)`](wkimage/init(image:).md) method. For image objects created using other methods, this property is `nil`.
+The value in this property is set using the [`init(image:)`](./init%28image%29.md) method. For image objects created using other methods, this property is `nil`.
 
 ## See Also
 
-- [var imageData: Data?](wkimage/imagedata.md)
+### Getting the Image Data
+- [var imageData: Data?](./imagedata.md)
   The data object containing the raw image data.
-- [var imageName: String?](wkimage/imagename.md)
+- [var imageName: String?](./imagename.md)
   The name of the image to load from the Watch app’s bundle.
 
 

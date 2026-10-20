@@ -1,7 +1,8 @@
 # strokeStart
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit distance along the circle where the stroke starts.
 
@@ -19,13 +20,18 @@ The unit distance along the circle where the stroke starts.
 var strokeStart: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat strokeStart;
+```
+
 #### Discussion
 
-Use this property and [`strokeEnd`](mkcirclerenderer/strokeend.md) to render a portion of the line. As a unit distance, [`strokeStart`](mkcirclerenderer/strokestart.md) must be a value between 0 and 1. A unit distance of 0 represents the top of the circle and the stroke draws in a clockwise direction.
+Use this property and [`strokeEnd`](./strokeend.md) to render a portion of the line. As a unit distance, [`strokeStart`](./strokestart.md) must be a value between 0 and 1. A unit distance of 0 represents the top of the circle and the stroke draws in a clockwise direction.
 
 ## See Also
 
-- [var strokeEnd: CGFloat](mkcirclerenderer/strokeend.md)
+### Accessing the stroke
+- [var strokeEnd: CGFloat](./strokeend.md)
   The unit distance along the circle where the stroke ends.
 
 

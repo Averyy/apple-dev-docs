@@ -1,12 +1,13 @@
 # resetCursorRect(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver to show the I-beam cursor while it tracks the mouse.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Sets the receiver to show the I-beam cursor while it tracks the mouse.
 func resetCursorRect(_ cellFrame: NSRect, in controlView: NSView)
 ```
 
+```objc
+- (void) resetCursorRect:(NSRect) cellFrame inView:(NSView *) controlView;
+```
+
 #### Discussion
 
 The receiver must be an enabled and selectable (or editable) text-type cell.
 
-This method is invoked by [`resetCursorRects()`](nsview/resetcursorrects().md) and in general you do not need to call this method unless you have a custom `NSView` that uses a cell.
+This method is invoked by [`resetCursorRects()`](../nsview/resetcursorrects%28%29.md) and in general you do not need to call this method unless you have a custom `NSView` that uses a cell.
 
 ## Parameters
 

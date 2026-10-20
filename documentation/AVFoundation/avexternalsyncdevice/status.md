@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the externally connected device.
 
@@ -18,21 +19,26 @@ The status of the externally connected device.
 var status: AVExternalSyncDeviceStatus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVExternalSyncDeviceStatus status;
+```
+
 #### Discussion
 
 Use this property to query the current connection status of the external sync device. This property is key-value observable.
 
 ## See Also
 
-- [var clock: CMClock?](avexternalsyncdevice/clock.md)
+### Inspecting a device
+- [var clock: CMClock?](./clock.md)
   A clock representing the source of time from the external sync device.
-- [var productID: UInt32](avexternalsyncdevice/productid.md)
+- [var productID: UInt32](./productid.md)
   The USB product identifier associated with the external sync device.
-- [var signalCompensationDelay: CMTime](avexternalsyncdevice/signalcompensationdelay.md)
+- [var signalCompensationDelay: CMTime](./signalcompensationdelay.md)
   Delay to wait before starting the frame capture.
-- [var uuid: UUID](avexternalsyncdevice/uuid.md)
+- [var uuid: UUID](./uuid.md)
   A unique identifier for an external sync device.
-- [var vendorID: UInt32](avexternalsyncdevice/vendorid.md)
+- [var vendorID: UInt32](./vendorid.md)
   The USB vendor identifier associated with the external sync device.
 
 

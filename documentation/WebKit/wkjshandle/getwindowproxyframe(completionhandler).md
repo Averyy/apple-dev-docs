@@ -1,7 +1,8 @@
 # getWindowProxyFrame(completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+func getWindowProxyFrame(completionHandler: @escaping (WKFrameInfo?) -> Void)
+```
+
+```swift
 var windowProxyFrame: WKFrameInfo? { get async }
+```
+
+```objc
+- (void) getWindowProxyFrameWithCompletionHandler:(void (^)(WKFrameInfo *)) completionHandler;
 ```
 
 #### Discussion

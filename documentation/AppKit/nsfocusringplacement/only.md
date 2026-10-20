@@ -1,12 +1,13 @@
 # NSFocusRingPlacement.only
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Draw the focus ring if you don’t have an image or text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Draw the focus ring if you don’t have an image or text.
 case only
 ```
 
+```c
+NSFocusRingOnly
+```
+
 ## See Also
 
-- [NSFocusRingPlacement.above](nsfocusringplacement/above.md)
+### Constants
+- [NSFocusRingPlacement.above](./above.md)
   Draw the focus ring over an image.
-- [NSFocusRingPlacement.below](nsfocusringplacement/below.md)
+- [NSFocusRingPlacement.below](./below.md)
   Draw the focus ring under text.
 
 

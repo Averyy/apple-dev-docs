@@ -1,7 +1,8 @@
 # isZero
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether all of the values of the ray are zero.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether all of the values of the ray are zero.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var isZero: Bool { get }
 
 ## See Also
 
-- [var isFinite: Bool](ray3d/isfinite.md)
+### Checking characteristics
+- [var isFinite: Bool](./isfinite.md)
   A Boolean value that indicates whether all of the values of the ray are finite.
-- [var isNaN: Bool](ray3d/isnan.md)
+- [var isNaN: Bool](./isnan.md)
   A Boolean value that indicates whether the ray contains any NaN values.
-- [func intersects(Rect3D) -> Bool](ray3d/intersects(_:).md)
+- [func intersects(Rect3D) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether a ray intersects a rectangle.
-- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](ray3d/intersects(sphereorigin:sphereradius:).md)
+- [func intersects(sphereOrigin: Point3D, sphereRadius: Double) -> Bool](./intersects%28sphereorigin,sphereradius%29.md)
   Returns a Boolean value that indicates whether the ray intersects a specified sphere.
 
 

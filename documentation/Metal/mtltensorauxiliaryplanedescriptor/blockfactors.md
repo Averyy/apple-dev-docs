@@ -1,7 +1,8 @@
 # blockFactors
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An extents instance that represents the number of data plane elements which correspond to one element in a plane you create with this descriptor.
 
@@ -18,6 +19,10 @@ An extents instance that represents the number of data plane elements which corr
 ```swift
 @NSCopying
 var blockFactors: MTLTensorExtents { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) MTLTensorExtents * blockFactors;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(id:songTitle:artistName:albumName:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates music content with static and animated artwork.
 

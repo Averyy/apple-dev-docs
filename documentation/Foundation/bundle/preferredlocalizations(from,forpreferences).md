@@ -1,7 +1,8 @@
 # preferredLocalizations(from:forPreferences:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns locale identifiers for which a bundle would provide localized content, given a specified list of candidates for a user’s language preferences.
 
@@ -20,6 +21,10 @@ Returns locale identifiers for which a bundle would provide localized content, g
 class func preferredLocalizations(from localizationsArray: [String], forPreferences preferencesArray: [String]?) -> [String]
 ```
 
+```objc
++ (NSArray<NSString *> *) preferredLocalizationsFromArray:(NSArray<NSString *> *) localizationsArray forPreferences:(NSArray<NSString *> *) preferencesArray;
+```
+
 #### Return Value
 
 An array of locale identifiers, ordered according to user preference.  If none of the user-preferred localizations are available, this method returns one of the values in `localizationsArray`.
@@ -36,19 +41,22 @@ This method doesn’t return all localizations in order of user preference. To g
 ## Parameters
 
 - `localizationsArray`: An array of identifiers, each corresponding to a localization that a bundle can support.
-- `preferencesArray`: An array of BCP 47 language codes corresponding to a user’s preferred languages. If this parameter is `nil`, the method uses the current user’s language preferences.
+- `preferencesArray`: An array of BCP 47 language codes corresponding to a user’s preferred languages.
+
+  If this parameter is `nil`, the method uses the current user’s language preferences.
 
 ## See Also
 
-- [var localizations: [String]](bundle/localizations.md)
+### Getting localization information
+- [var localizations: [String]](./localizations.md)
   A list of all the localizations contained in the bundle.
-- [var preferredLocalizations: [String]](bundle/preferredlocalizations.md)
+- [var preferredLocalizations: [String]](./preferredlocalizations.md)
   An ordered list of preferred localizations contained in the bundle.
-- [var developmentLocalization: String?](bundle/developmentlocalization.md)
+- [var developmentLocalization: String?](./developmentlocalization.md)
   The localization for the development language.
-- [var localizedInfoDictionary: [String : Any]?](bundle/localizedinfodictionary.md)
+- [var localizedInfoDictionary: [String : Any]?](./localizedinfodictionary.md)
   A dictionary with the keys from the bundle’s localized property list.
-- [class func preferredLocalizations(from: [String]) -> [String]](bundle/preferredlocalizations(from:).md)
+- [class func preferredLocalizations(from: [String]) -> [String]](./preferredlocalizations%28from%29.md)
   Returns one or more localizations from the specified list that a bundle object would use to locate resources for the current user.
 
 

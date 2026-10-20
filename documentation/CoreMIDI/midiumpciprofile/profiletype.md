@@ -1,7 +1,8 @@
 # profileType
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var profileType: MIDICIProfileType { get }
+```
+
+```objc
+@property (nonatomic, readonly) MIDICIProfileType profileType;
 ```
 
 

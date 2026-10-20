@@ -1,10 +1,11 @@
 # CAClockTimebase.hostTime
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 case hostTime
 ```
 
+```c
+kCAClockTimebase_HostTime
+```
+
 ## See Also
 
-- [CAClockTimebase.audioDevice](caclocktimebase/audiodevice.md)
-- [CAClockTimebase.audioOutputUnit](caclocktimebase/audiooutputunit.md)
+### Constants
+- [CAClockTimebase.audioDevice](./audiodevice.md)
+- [CAClockTimebase.audioOutputUnit](./audiooutputunit.md)
 
 
 ---

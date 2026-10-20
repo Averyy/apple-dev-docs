@@ -1,15 +1,16 @@
 # MPSHeapProvider
 
 **Framework**: Metal Performance Shaders  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,16 +18,20 @@
 protocol MPSHeapProvider : NSObjectProtocol
 ```
 
+```objc
+@protocol MPSHeapProvider <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func newHeap(with: MTLHeapDescriptor) -> (any MTLHeap)?](mpsheapprovider/newheap(with:).md)
-- [func retire(any MTLHeap, cacheDelay: Double)](mpsheapprovider/retire(_:cachedelay:).md)
+- [func newHeap(with: MTLHeapDescriptor) -> (any MTLHeap)?](./mpsheapprovider/newheap%28with%29.md)
+- [func retire(any MTLHeap, cacheDelay: Double)](./mpsheapprovider/retire%28_,cachedelay%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

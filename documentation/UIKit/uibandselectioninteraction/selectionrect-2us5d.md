@@ -1,7 +1,8 @@
 # selectionRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selection rectangle for an in-progress interaction.
 
@@ -9,7 +10,7 @@ The selection rectangle for an in-progress interaction.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

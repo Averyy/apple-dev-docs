@@ -1,7 +1,8 @@
 # init(eraserType:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an eraser tool object that removes objects wholly or partially from a canvas view.
 
@@ -18,17 +19,22 @@ Creates an eraser tool object that removes objects wholly or partially from a ca
 init(eraserType: __PKEraserType)
 ```
 
+```objc
+- (instancetype) initWithEraserType:(PKEraserType) eraserType;
+```
+
 #### Return Value
 
 A new eraser tool object.
 
 ## Parameters
 
-- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see [`PKEraserType`](pkerasertype.md).
+- `eraserType`: A constant that determines how the eraser affects drawn content. For a list of possible values, see [`PKEraserType`](../pkerasertype.md).
 
 ## See Also
 
-- [init(eraserType: __PKEraserType, width: CGFloat)](pkerasertoolreference/init(erasertype:width:).md)
+### Creating an eraser tool
+- [init(eraserType: __PKEraserType, width: CGFloat)](./init%28erasertype,width%29.md)
 
 
 ---

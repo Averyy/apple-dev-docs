@@ -1,23 +1,28 @@
 # sparse_matrix_property
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The matrix property type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct sparse_matrix_property
+```
+
+```c
+typedef enum { ... } sparse_matrix_property;
 ```
 
 #### Overview
@@ -27,34 +32,35 @@ struct sparse_matrix_property
 ## Topics
 
 ### Constants
-- [var SPARSE_UPPER_TRIANGULAR: sparse_matrix_property](sparse_upper_triangular.md)
+- [var SPARSE_UPPER_TRIANGULAR: sparse_matrix_property](./sparse_upper_triangular.md)
   An upper triangular matrix.
-- [var SPARSE_LOWER_TRIANGULAR: sparse_matrix_property](sparse_lower_triangular.md)
+- [var SPARSE_LOWER_TRIANGULAR: sparse_matrix_property](./sparse_lower_triangular.md)
   A lower triangular matrix.
-- [var SPARSE_UPPER_SYMMETRIC: sparse_matrix_property](sparse_upper_symmetric.md)
+- [var SPARSE_UPPER_SYMMETRIC: sparse_matrix_property](./sparse_upper_symmetric.md)
   A symmetric matrix with values derived from the upper triangle.
-- [var SPARSE_LOWER_SYMMETRIC: sparse_matrix_property](sparse_lower_symmetric.md)
+- [var SPARSE_LOWER_SYMMETRIC: sparse_matrix_property](./sparse_lower_symmetric.md)
   A symmetric matrix with values derived from the lower triangle.
 ### Initializers
-- [init(UInt32)](sparse_matrix_property/init(_:).md)
-- [init(rawValue: UInt32)](sparse_matrix_property/init(rawvalue:).md)
+- [init(UInt32)](./sparse_matrix_property/init%28_%29.md)
+- [init(rawValue: UInt32)](./sparse_matrix_property/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](sparse_matrix_property/rawvalue.md)
+- [var rawValue: UInt32](./sparse_matrix_property/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias sparse_dimension](sparse_dimension.md)
+### Supporting Types
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_index](sparse_index.md)
+- [typealias sparse_index](./sparse_index.md)
   The index type.
 
 

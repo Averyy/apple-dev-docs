@@ -1,7 +1,8 @@
 # writesDepth
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 

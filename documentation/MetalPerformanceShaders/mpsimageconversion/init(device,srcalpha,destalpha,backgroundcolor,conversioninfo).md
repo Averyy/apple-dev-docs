@@ -1,7 +1,8 @@
 # init(device:srcAlpha:destAlpha:backgroundColor:conversionInfo:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a filter that can convert texture color space, alpha, and pixel format.
 
@@ -19,21 +20,28 @@ Initializes a filter that can convert texture color space, alpha, and pixel form
 init(device: any MTLDevice, srcAlpha: MPSAlphaType, destAlpha: MPSAlphaType, backgroundColor: UnsafeMutablePointer<CGFloat>?, conversionInfo: CGColorConversionInfo?)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device srcAlpha:(MPSAlphaType) srcAlpha destAlpha:(MPSAlphaType) destAlpha backgroundColor:(CGFloat *) backgroundColor conversionInfo:(CGColorConversionInfoRef) conversionInfo;
+```
+
 #### Return Value
 
-An [`MPSImageConversion`](mpsimageconversion.md) object.
+An [`MPSImageConversion`](../mpsimageconversion.md) object.
 
 ## Parameters
 
 - `device`: The device that the filter will run on.
 - `srcAlpha`: The alpha encoding for the source texture.
 - `destAlpha`: The alpha encoding for the destination texture.
-- `backgroundColor`: An array of [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) values giving the background color to use when flattening an image. The color is in the source color space. The length of the array is the number of color channels in the source color space. If this parameter is not applicable to your desired conversion, use `{0}`.
+- `backgroundColor`: An array of [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) values giving the background color to use when flattening an image.
+
+  The color is in the source color space. The length of the array is the number of color channels in the source color space. If this parameter is not applicable to your desired conversion, use `{0}`.
 - `conversionInfo`: The color space conversion to use. This value may be `NULL`, indicating that no color space conversions need to be done.
 
 ## See Also
 
-- [enum MPSAlphaType](mpsalphatype.md)
+### Methods
+- [enum MPSAlphaType](../mpsalphatype.md)
   Premultiplication description for the color channels of an image.
 
 

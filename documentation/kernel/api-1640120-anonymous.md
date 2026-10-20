@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothKeyTypeAuthenticatedCombination](1640120-anonymous/kbluetoothkeytypeauthenticatedcombination.md)
-- [kBluetoothKeyTypeChangedCombination](1640120-anonymous/kbluetoothkeytypechangedcombination.md)
-- [kBluetoothKeyTypeCombination](1640120-anonymous/kbluetoothkeytypecombination.md)
-- [kBluetoothKeyTypeDebugCombination](1640120-anonymous/kbluetoothkeytypedebugcombination.md)
-- [kBluetoothKeyTypeLocalUnit](1640120-anonymous/kbluetoothkeytypelocalunit.md)
-- [kBluetoothKeyTypeRemoteUnit](1640120-anonymous/kbluetoothkeytyperemoteunit.md)
-- [kBluetoothKeyTypeUnauthenticatedCombination](1640120-anonymous/kbluetoothkeytypeunauthenticatedcombination.md)
-- [kBluetoothKeyTypeAuthenticatedCombinationP256](1640120-anonymous/kbluetoothkeytypeauthenticatedcombinationp256.md)
-- [kBluetoothKeyTypeUnauthenticatedCombinationP256](1640120-anonymous/kbluetoothkeytypeunauthenticatedcombinationp256.md)
+- [kBluetoothKeyTypeAuthenticatedCombination](./api-1640120-anonymous/kbluetoothkeytypeauthenticatedcombination.md)
+- [kBluetoothKeyTypeChangedCombination](./api-1640120-anonymous/kbluetoothkeytypechangedcombination.md)
+- [kBluetoothKeyTypeCombination](./api-1640120-anonymous/kbluetoothkeytypecombination.md)
+- [kBluetoothKeyTypeDebugCombination](./api-1640120-anonymous/kbluetoothkeytypedebugcombination.md)
+- [kBluetoothKeyTypeLocalUnit](./api-1640120-anonymous/kbluetoothkeytypelocalunit.md)
+- [kBluetoothKeyTypeRemoteUnit](./api-1640120-anonymous/kbluetoothkeytyperemoteunit.md)
+- [kBluetoothKeyTypeUnauthenticatedCombination](./api-1640120-anonymous/kbluetoothkeytypeunauthenticatedcombination.md)
+- [kBluetoothKeyTypeAuthenticatedCombinationP256](./api-1640120-anonymous/kbluetoothkeytypeauthenticatedcombinationp256.md)
+- [kBluetoothKeyTypeUnauthenticatedCombinationP256](./api-1640120-anonymous/kbluetoothkeytypeunauthenticatedcombinationp256.md)
 
 
 ---

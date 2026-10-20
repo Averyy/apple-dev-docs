@@ -1,7 +1,8 @@
 # HKStateOfMind.ValenceClassification
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,51 +18,56 @@
 enum ValenceClassification
 ```
 
+```c
+enum HKStateOfMindValenceClassification : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [HKStateOfMind.ValenceClassification.neutral](hkstateofmind/valenceclassification-swift.enum/neutral.md)
-- [HKStateOfMind.ValenceClassification.pleasant](hkstateofmind/valenceclassification-swift.enum/pleasant.md)
-- [HKStateOfMind.ValenceClassification.slightlyPleasant](hkstateofmind/valenceclassification-swift.enum/slightlypleasant.md)
-- [HKStateOfMind.ValenceClassification.slightlyUnpleasant](hkstateofmind/valenceclassification-swift.enum/slightlyunpleasant.md)
-- [HKStateOfMind.ValenceClassification.unpleasant](hkstateofmind/valenceclassification-swift.enum/unpleasant.md)
-- [HKStateOfMind.ValenceClassification.veryPleasant](hkstateofmind/valenceclassification-swift.enum/verypleasant.md)
-- [HKStateOfMind.ValenceClassification.veryUnpleasant](hkstateofmind/valenceclassification-swift.enum/veryunpleasant.md)
+- [HKStateOfMind.ValenceClassification.neutral](./valenceclassification-swift.enum/neutral.md)
+- [HKStateOfMind.ValenceClassification.pleasant](./valenceclassification-swift.enum/pleasant.md)
+- [HKStateOfMind.ValenceClassification.slightlyPleasant](./valenceclassification-swift.enum/slightlypleasant.md)
+- [HKStateOfMind.ValenceClassification.slightlyUnpleasant](./valenceclassification-swift.enum/slightlyunpleasant.md)
+- [HKStateOfMind.ValenceClassification.unpleasant](./valenceclassification-swift.enum/unpleasant.md)
+- [HKStateOfMind.ValenceClassification.veryPleasant](./valenceclassification-swift.enum/verypleasant.md)
+- [HKStateOfMind.ValenceClassification.veryUnpleasant](./valenceclassification-swift.enum/veryunpleasant.md)
 ### Initializers
-- [init?(rawValue: Int)](hkstateofmind/valenceclassification-swift.enum/init(rawvalue:).md)
-- [init?(valence: Double)](hkstateofmind/valenceclassification-swift.enum/init(valence:).md)
+- [init?(rawValue: Int)](./valenceclassification-swift.enum/init%28rawvalue%29.md)
+- [init?(valence: Double)](./valenceclassification-swift.enum/init%28valence%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
-- [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
-- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+### Enumerations
+- [enum HKAudiogramConductionType](../hkaudiogramconductiontype.md)
+- [enum HKAudiogramSensitivityTestSide](../hkaudiogramsensitivitytestside.md)
+- [enum HKCategoryValueVaginalBleeding](../hkcategoryvaluevaginalbleeding.md)
   A value that indicates the intensity of vaginal bleeding.
-- [HKGAD7Assessment.Answer](hkgad7assessment/answer.md)
-- [HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.enum.md)
-- [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
-- [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)
-- [HKStateOfMind.Association](hkstateofmind/association.md)
-- [HKStateOfMind.Kind](hkstateofmind/kind-swift.enum.md)
-- [HKStateOfMind.Label](hkstateofmind/label.md)
-- [enum HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipqueryoptions.md)
-- [enum HKBiologicalSex](hkbiologicalsex.md)
+- [HKGAD7Assessment.Answer](../hkgad7assessment/answer.md)
+- [HKGAD7Assessment.Risk](../hkgad7assessment/risk-swift.enum.md)
+- [HKPHQ9Assessment.Answer](../hkphq9assessment/answer.md)
+- [HKPHQ9Assessment.Risk](../hkphq9assessment/risk-swift.enum.md)
+- [HKStateOfMind.Association](./association.md)
+- [HKStateOfMind.Kind](./kind-swift.enum.md)
+- [HKStateOfMind.Label](./label.md)
+- [enum HKWorkoutEffortRelationshipQueryOptions](../hkworkouteffortrelationshipqueryoptions.md)
+- [enum HKBiologicalSex](../hkbiologicalsex.md)
   Constants indicating the user’s sex.
-- [enum HKBloodType](hkbloodtype.md)
+- [enum HKBloodType](../hkbloodtype.md)
   Constants indicating the user’s blood type.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](../hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](../hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 

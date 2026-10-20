@@ -1,7 +1,8 @@
 # InAppPurchasePriceScheduleCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePriceScheduleCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary.md)
-- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary.md)
-- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.BaseTerritory](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/baseterritory-data.dictionary.md)
+- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.InAppPurchase](./relationships-data.dictionary/inapppurchase-data.dictionary.md)
+- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices](./relationships-data.dictionary/manualprices-data.dictionary.md)
+- [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.BaseTerritory](./relationships-data.dictionary/baseterritory-data.dictionary.md)
 
 ## Properties
 

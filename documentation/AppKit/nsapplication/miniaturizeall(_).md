@@ -1,17 +1,22 @@
 # miniaturizeAll(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Miniaturizes all the receiver’s windows.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func miniaturizeAll(_ sender: Any?)
+```
+
+```objc
+- (void) miniaturizeAll:(id) sender;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func miniaturizeAll(_ sender: Any?)
 
 ## See Also
 
-- [func hide(Any?)](nsapplication/hide(_:).md)
+### Related Documentation
+- [func hide(Any?)](./hide%28_%29.md)
   Hides all the receiver’s windows, and the next app in line is activated.
 
 

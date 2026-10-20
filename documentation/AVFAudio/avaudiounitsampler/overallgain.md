@@ -1,7 +1,8 @@
 # overallGain
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An adjustment for the gain of all the played notes, in decibels.
 
@@ -19,17 +20,22 @@ An adjustment for the gain of all the played notes, in decibels.
 var overallGain: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float overallGain;
+```
+
 #### Discussion
 
 The default value is `0.0` dB, and the range of valid values is `-90.0` dB to `12.0` dB.
 
 ## See Also
 
-- [var globalTuning: Float](avaudiounitsampler/globaltuning.md)
+### Getting and setting sampler values
+- [var globalTuning: Float](./globaltuning.md)
   An adjustment for the tuning of all the played notes.
-- [var stereoPan: Float](avaudiounitsampler/stereopan.md)
+- [var stereoPan: Float](./stereopan.md)
   An adjustment for the stereo panning of all the played notes.
-- [var masterGain: Float](avaudiounitsampler/mastergain.md)
+- [var masterGain: Float](./mastergain.md)
   An adjustment for the gain of all the played notes, in decibels.
 
 

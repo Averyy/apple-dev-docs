@@ -1,21 +1,23 @@
 # cbrtl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double cbrtl(long double);
 ```
 
 ## See Also
 
-- [cbrt](1557257-cbrt.md)
-- [cbrtf](1557327-cbrtf.md)
+### Cube Root
+- [cbrt](./api-1557257-cbrt.md)
+- [cbrtf](./api-1557327-cbrtf.md)
 
 
 ---

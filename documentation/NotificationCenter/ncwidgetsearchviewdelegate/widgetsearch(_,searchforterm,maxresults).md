@@ -2,12 +2,15 @@
 
 **Framework**: Notification Center  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate to search using the specified term.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -15,11 +18,15 @@ Asks the delegate to search using the specified term.
 func widgetSearch(_ controller: NCWidgetSearchViewController, searchForTerm searchTerm: String, maxResults max: Int)
 ```
 
+```objc
+- (void) widgetSearch:(NCWidgetSearchViewController *) controller searchForTerm:(NSString *) searchTerm maxResults:(NSUInteger) max;
+```
+
 #### Discussion
 
 The search view controller calls this method as soon as a user begins to type. If there is a maximum number of results the search view controller can display, it specifies this number in `max`. The delegate can use `max` to decide how many search results to return.
 
-The delegate sets the search view controller’s [`searchResults`](ncwidgetsearchviewcontroller/searchresults.md) property to the array of search result objects.
+The delegate sets the search view controller’s [`searchResults`](../ncwidgetsearchviewcontroller/searchresults.md) property to the array of search result objects.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # dataRepresentation()
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the rendered content as data.
 
@@ -18,15 +19,20 @@ Returns a representation of the rendered content as data.
 func dataRepresentation() -> Data
 ```
 
+```objc
+- (NSData *) dataRepresentation;
+```
+
 #### Return Value
 
-A new [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object that contains the entire contents of the drawing.
+A new [`NSData`](../../Foundation/nsdata.md) object that contains the entire contents of the drawing.
 
 ## See Also
 
-- [var strokes: [PKStroke]](pkdrawingreference/strokes.md)
+### Getting the drawing data
+- [var strokes: [PKStroke]](./strokes.md)
   An array of strokes used to represent the drawing.
-- [let PKAppleDrawingTypeIdentifier: CFString](pkappledrawingtypeidentifier.md)
+- [let PKAppleDrawingTypeIdentifier: CFString](../pkappledrawingtypeidentifier.md)
   The uniform type identifier for data associated with a drawing object.
 
 

@@ -1,7 +1,8 @@
 # xcodeOverview.Insights
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Performance insights for an app, including regressions and metrics that are trending up.
 
@@ -10,7 +11,7 @@ Performance insights for an app, including regressions and metrics that are tren
 
 ## Declaration
 
-```swift
+```
 object xcodeOverview.Insights
 ```
 
@@ -21,9 +22,10 @@ object xcodeOverview.Insights
 
 ## See Also
 
-- [object xcodeOverview.AppMetadata](xcodeoverview/appmetadata-data.dictionary.md)
+### Objects
+- [object xcodeOverview.AppMetadata](./appmetadata-data.dictionary.md)
   Metadata about the app that a performance overview describes.
-- [object xcodeOverview.Signatures](xcodeoverview/signatures-data.dictionary.md)
+- [object xcodeOverview.Signatures](./signatures-data.dictionary.md)
   The top performance signatures for an app, such as its top hang, launch, and disk-write points.
 
 

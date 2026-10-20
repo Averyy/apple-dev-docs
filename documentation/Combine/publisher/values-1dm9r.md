@@ -1,7 +1,8 @@
 # values
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements produced by the publisher, as an asynchronous sequence.
 
@@ -20,11 +21,13 @@ The elements produced by the publisher, as an asynchronous sequence.
 var values: AsyncPublisher<Self> { get }
 ```
 
+Available when `Failure` is `Never`.
+
 #### Discussion
 
-This property provides an [`AsyncPublisher`](asyncpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](asyncpublisher.md) conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber.
+This property provides an [`AsyncPublisher`](../asyncpublisher.md), which allows you to use the Swift `async`-`await` syntax to receive the publisher’s elements. Because [`AsyncPublisher`](../asyncpublisher.md) conforms to [`AsyncSequence`](../../Swift/asyncsequence.md), you iterate over its elements with a `for`-`await`-`in` loop, rather than attaching a subscriber.
 
-The following example shows how to use the `values` property to receive elements asynchronously. The example adapts a code snippet from the [`filter(_:)`](publisher/filter(_:).md) operator’s documentation, which filters a sequence to only emit even integers. This example replaces the [`Subscribers.Sink`](subscribers/sink.md) subscriber with a `for`-`await`-`in` loop that iterates over the [`AsyncPublisher`](asyncpublisher.md) provided by the `values` property.
+The following example shows how to use the `values` property to receive elements asynchronously. The example adapts a code snippet from the [`filter(_:)`](./filter%28_%29.md) operator’s documentation, which filters a sequence to only emit even integers. This example replaces the [`Subscribers.Sink`](../subscribers/sink.md) subscriber with a `for`-`await`-`in` loop that iterates over the [`AsyncPublisher`](../asyncpublisher.md) provided by the `values` property.
 
 ```swift
 let numbers: [Int] = [1, 2, 3, 4, 5]
@@ -39,7 +42,8 @@ for await number in filtered.values
 
 ## See Also
 
-- [var values: AsyncThrowingPublisher<Self>](publisher/values-v7nz.md)
+### Accessing elements asynchronously
+- [var values: AsyncThrowingPublisher<Self>](./values-v7nz.md)
   The elements produced by the publisher, as a throwing asynchronous sequence.
 
 

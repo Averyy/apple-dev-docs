@@ -231,7 +231,7 @@ mark the declaration with the `static` declaration modifier.
 A constant type property of a class is always implicitly final;
 you can't mark it with the `class` or `final` declaration modifier
 to allow or disallow overriding by subclasses.
-Type properties are discussed in [Type Properties](Properties.md#Type-Properties).
+Type properties are discussed in [Type Properties](../LanguageGuide/Properties.md#Type-Properties).
 
 <!--
   - test: `class-constants-cant-have-class-or-final`
@@ -250,7 +250,7 @@ Type properties are discussed in [Type Properties](Properties.md#Type-Properties
 -->
 
 For more information about constants and for guidance about when to use them,
-see [Constants and Variables](TheBasics.md#Constants-and-Variables) and [Stored Properties](Properties.md#Stored-Properties).
+see [Constants and Variables](../LanguageGuide/TheBasics.md#Constants-and-Variables) and [Stored Properties](../LanguageGuide/Properties.md#Stored-Properties).
 
 > Grammar of a constant declaration:
 >
@@ -276,7 +276,7 @@ the scope at which the variable is declared and the kind of variable you intend 
 > as described in [Protocol Property Declaration](Declarations.md#Protocol-Property-Declaration).
 
 You can override a property in a subclass by marking the subclass's property declaration
-with the `override` declaration modifier, as described in [Overriding](Inheritance.md#Overriding).
+with the `override` declaration modifier, as described in [Overriding](../LanguageGuide/Inheritance.md#Overriding).
 
 ### Stored Variables and Stored Variable Properties
 
@@ -337,19 +337,19 @@ and the setter is used to write the value.
 The setter clause is optional,
 and when only a getter is needed, you can omit both clauses and simply
 return the requested value directly,
-as described in [Read Only Computed Properties](Properties.md#Read-Only-Computed-Properties).
+as described in [Read-Only Computed Properties](../LanguageGuide/Properties.md#Read-Only-Computed-Properties).
 But if you provide a setter clause, you must also provide a getter clause.
 
 The *setter name* and enclosing parentheses is optional.
 If you provide a setter name, it's used as the name of the parameter to the setter.
 If you don't provide a setter name, the default parameter name to the setter is `newValue`,
-as described in [Shorthand Setter Declaration](Properties.md#Shorthand-Setter-Declaration).
+as described in [Shorthand Setter Declaration](../LanguageGuide/Properties.md#Shorthand-Setter-Declaration).
 
 Unlike stored named values and stored variable properties,
 the value of a computed named value or a computed property isn't stored in memory.
 
 For more information and to see examples of computed properties,
-see [Computed Properties](Properties.md#Computed-Properties).
+see [Computed Properties](../LanguageGuide/Properties.md#Computed-Properties).
 
 ### Stored Variable Observers and Property Observers
 
@@ -376,7 +376,7 @@ the observers are referred to as *property observers*.
 
 You can add property observers to any stored property. You can also add property
 observers to any inherited property (whether stored or computed) by overriding
-the property within a subclass, as described in [Overriding Property Observers](Inheritance.md#Overriding-Property-Observers).
+the property within a subclass, as described in [Overriding Property Observers](../LanguageGuide/Inheritance.md#Overriding-Property-Observers).
 
 The initializer *expression* is optional in the context of a class or structure declaration,
 but required elsewhere. The *type* annotation is optional
@@ -517,7 +517,7 @@ newAndOld.x = 200
 -->
 
 For more information and to see an example of how to use property observers,
-see [Property Observers](Properties.md#Property-Observers).
+see [Property Observers](../LanguageGuide/Properties.md#Property-Observers).
 
 <!--
   - test: `cant-mix-get-set-and-didSet`
@@ -542,7 +542,7 @@ To declare a type variable property,
 mark the declaration with the `static` declaration modifier.
 Classes can mark type computed properties with the `class` declaration modifier instead
 to allow subclasses to override the superclass’s implementation.
-Type properties are discussed in [Type Properties](Properties.md#Type-Properties).
+Type properties are discussed in [Type Properties](../LanguageGuide/Properties.md#Type-Properties).
 
 > Grammar of a variable declaration:
 >
@@ -748,7 +748,7 @@ it can't be inferred.
 If you write `inout` in front of a parameter's type,
 the parameter can be modified inside the scope of the function.
 In-out parameters are discussed in detail
-in [In Out Parameters](Declarations.md#In-Out-Parameters), below.
+in [In-Out Parameters](Declarations.md#In-Out-Parameters), below.
 
 A function declaration whose *statements*
 include only a single expression
@@ -781,7 +781,7 @@ or passed as a nonescaping function argument.
 Otherwise, the nested function is an escaping function.
 
 For a discussion of nested functions,
-see [Nested Functions](Functions.md#Nested-Functions).
+see [Nested Functions](../LanguageGuide/Functions.md#Nested-Functions).
 
 ### Parameter Names
 
@@ -953,7 +953,7 @@ someFunction(a: &someValue, b: &someValue)
 ```
 
 For more information about memory safety and memory exclusivity,
-see [Memory Safety](MemorySafety.md).
+see [Memory Safety](../LanguageGuide/MemorySafety.md).
 
 <!--
   When the call-by-reference optimization is in play,
@@ -1028,7 +1028,7 @@ func multithreadedFunction(queue: DispatchQueue, x: inout Int) {
 -->
 
 For more discussion and examples of in-out parameters,
-see [In Out Parameters](Functions.md#In-Out-Parameters).
+see [In-Out Parameters](../LanguageGuide/Functions.md#In-Out-Parameters).
 
 <!--
   - test: `escaping-cant-capture-inout`
@@ -1234,7 +1234,7 @@ A function can have multiple variadic parameters.
 A variadic parameter is treated as an array that contains elements of the base type name.
 For example, the variadic parameter `Int...` is treated as `[Int]`.
 For an example that uses a variadic parameter,
-see [Variadic Parameters](Functions.md#Variadic-Parameters).
+see [Variadic Parameters](../LanguageGuide/Functions.md#Variadic-Parameters).
 
 A parameter with an equal sign (`=`) and an expression after its type
 is understood to have a default value of the given expression.
@@ -1489,7 +1489,7 @@ in a context where a throwing one is expected.
 For more information about the type of a throwing function,
 see [Function Type](Types.md#Function-Type).
 For examples of working with errors that have explicit types,
-see [Specifying the Error Type](ErrorHandling.md#Specifying-the-Error-Type).
+see [Specifying the Error Type](../LanguageGuide/ErrorHandling.md#Specifying-the-Error-Type).
 
 You can't overload a function based only on whether the function can throw an error.
 That said,
@@ -1752,7 +1752,7 @@ Like structures but unlike classes, enumerations are value types;
 instances of an enumeration are copied when assigned to
 variables or constants, or when passed as arguments to a function call.
 For information about value types,
-see [Structures and Enumerations Are Value Types](ClassesAndStructures.md#Structures-and-Enumerations-Are-Value-Types).
+see [Structures and Enumerations Are Value Types](../LanguageGuide/ClassesAndStructures.md#Structures-and-Enumerations-Are-Value-Types).
 
 You can extend the behavior of an enumeration type with an extension declaration,
 as discussed in [Extension Declaration](Declarations.md#Extension-Declaration).
@@ -1820,7 +1820,7 @@ let evenInts: [Number] = [0, 2, 4, 6].map(f)
 -->
 
 For more information and to see examples of cases with associated value types,
-see [Associated Values](Enumerations.md#Associated-Values).
+see [Associated Values](../LanguageGuide/Enumerations.md#Associated-Values).
 
 #### Enumerations with Indirection
 
@@ -1998,18 +1998,18 @@ You can also use a raw value to find a corresponding case, if there is one,
 by calling the enumeration's failable initializer,
 as in `ExampleEnum(rawValue: 5)`, which returns an optional case.
 For more information and to see examples of cases with raw-value types,
-see [Raw Values](Enumerations.md#Raw-Values).
+see [Raw Values](../LanguageGuide/Enumerations.md#Raw-Values).
 
 ### Accessing Enumeration Cases
 
 To reference the case of an enumeration type, use dot (`.`) syntax,
 as in `EnumerationType.enumerationCase`. When the enumeration type can be inferred
 from context, you can omit it (the dot is still required),
-as described in [Enumeration Syntax](Enumerations.md#Enumeration-Syntax)
+as described in [Enumeration Syntax](../LanguageGuide/Enumerations.md#Enumeration-Syntax)
 and [Implicit Member Expression](Expressions.md#Implicit-Member-Expression).
 
 To check the values of enumeration cases, use a `switch` statement,
-as shown in [Matching Enumeration Values with a Switch Statement](Enumerations.md#Matching-Enumeration-Values-with-a-Switch-Statement).
+as shown in [Matching Enumeration Values with a Switch Statement](../LanguageGuide/Enumerations.md#Matching-Enumeration-Values-with-a-Switch-Statement).
 The enumeration type is pattern-matched against the enumeration case patterns
 in the case blocks of the `switch` statement,
 as described in [Enumeration Case Pattern](Patterns.md#Enumeration-Case-Pattern).
@@ -2092,7 +2092,7 @@ type aliases, and even other structure, class, actor, and enumeration declaratio
 Structure declarations can't contain deinitializer or protocol declarations.
 For a discussion and several examples of structures
 that include various kinds of declarations,
-see [Classes And Structures](ClassesAndStructures.md).
+see [Structures and Classes](../LanguageGuide/ClassesAndStructures.md).
 
 Structure types can adopt any number of protocols,
 but can't inherit from classes, enumerations, or other structures.
@@ -2100,25 +2100,25 @@ but can't inherit from classes, enumerations, or other structures.
 There are three ways to create an instance of a previously declared structure:
 
 - Call one of the initializers declared within the structure,
-  as described in [Initializers](Initialization.md#Initializers).
+  as described in [Initializers](../LanguageGuide/Initialization.md#Initializers).
 - If no initializers are declared,
   call the structure's memberwise initializer,
-  as described in [Memberwise Initializers for Structure Types](Initialization.md#Memberwise-Initializers-for-Structure-Types).
+  as described in [Memberwise Initializers for Structure Types](../LanguageGuide/Initialization.md#Memberwise-Initializers-for-Structure-Types).
 - If no initializers are declared,
   and all properties of the structure declaration were given initial values,
   call the structure's default initializer,
-  as described in [Default Initializers](Initialization.md#Default-Initializers).
+  as described in [Default Initializers](../LanguageGuide/Initialization.md#Default-Initializers).
 
 The process of initializing a structure's declared properties
-is described in [Initialization](Initialization.md).
+is described in [Initialization](../LanguageGuide/Initialization.md).
 
 Properties of a structure instance can be accessed using dot (`.`) syntax,
-as described in [Accessing Properties](ClassesAndStructures.md#Accessing-Properties).
+as described in [Accessing Properties](../LanguageGuide/ClassesAndStructures.md#Accessing-Properties).
 
 Structures are value types; instances of a structure are copied when assigned to
 variables or constants, or when passed as arguments to a function call.
 For information about value types,
-see [Structures and Enumerations Are Value Types](ClassesAndStructures.md#Structures-and-Enumerations-Are-Value-Types).
+see [Structures and Enumerations Are Value Types](../LanguageGuide/ClassesAndStructures.md#Structures-and-Enumerations-Are-Value-Types).
 
 You can extend the behavior of a structure type with an extension declaration,
 as discussed in [Extension Declaration](Declarations.md#Extension-Declaration).
@@ -2151,7 +2151,7 @@ and even other class, structure, actor, and enumeration declarations.
 Class declarations can't contain protocol declarations.
 For a discussion and several examples of classes
 that include various kinds of declarations,
-see [Classes And Structures](ClassesAndStructures.md).
+see [Structures and Classes](../LanguageGuide/ClassesAndStructures.md).
 
 A class type can inherit from only one parent class, its *superclass*,
 but can adopt any number of protocols.
@@ -2190,25 +2190,25 @@ must also be marked with the `required` declaration modifier.
 Although properties and methods declared in the *superclass* are inherited by
 the current class, designated initializers declared in the *superclass* are only
 inherited when the subclass meets the conditions described in
-[Automatic Initializer Inheritance](Initialization.md#Automatic-Initializer-Inheritance).
+[Automatic Initializer Inheritance](../LanguageGuide/Initialization.md#Automatic-Initializer-Inheritance).
 Swift classes don't inherit from a universal base class.
 
 There are two ways to create an instance of a previously declared class:
 
 - Call one of the initializers declared within the class,
-  as described in [Initializers](Initialization.md#Initializers).
+  as described in [Initializers](../LanguageGuide/Initialization.md#Initializers).
 - If no initializers are declared,
   and all properties of the class declaration were given initial values,
   call the class's default initializer,
-  as described in [Default Initializers](Initialization.md#Default-Initializers).
+  as described in [Default Initializers](../LanguageGuide/Initialization.md#Default-Initializers).
 
 Access properties of a class instance with dot (`.`) syntax,
-as described in [Accessing Properties](ClassesAndStructures.md#Accessing-Properties).
+as described in [Accessing Properties](../LanguageGuide/ClassesAndStructures.md#Accessing-Properties).
 
 Classes are reference types; instances of a class are referred to, rather than copied,
 when assigned to variables or constants, or when passed as arguments to a function call.
 For information about reference types,
-see [Classes Are Reference Types](ClassesAndStructures.md#Classes-Are-Reference-Types).
+see [Classes Are Reference Types](../LanguageGuide/ClassesAndStructures.md#Classes-Are-Reference-Types).
 
 You can extend the behavior of a class type with an extension declaration,
 as discussed in [Extension Declaration](Declarations.md#Extension-Declaration).
@@ -2241,7 +2241,7 @@ a single deinitializer, subscripts, type aliases,
 and even other class, structure, and enumeration declarations.
 For a discussion and several examples of actors
 that include various kinds of declarations,
-see [Actors](Concurrency.md#Actors).
+see [Actors](../LanguageGuide/Concurrency.md#Actors).
 
 Actor types can adopt any number of protocols,
 but can't inherit from classes, enumerations, structures, or other actors.
@@ -2252,11 +2252,11 @@ and is exposed to the Objective-C runtime as a subtype of `NSObject`.
 There are two ways to create an instance of a previously declared actor:
 
 - Call one of the initializers declared within the actor,
-  as described in [Initializers](Initialization.md#Initializers).
+  as described in [Initializers](../LanguageGuide/Initialization.md#Initializers).
 - If no initializers are declared,
   and all properties of the actor declaration were given initial values,
   call the actor's default initializer,
-  as described in [Default Initializers](Initialization.md#Default-Initializers).
+  as described in [Default Initializers](../LanguageGuide/Initialization.md#Default-Initializers).
 
 By default, members of an actor are isolated to that actor.
 Code, such as the body of a method or the getter for a property,
@@ -2280,15 +2280,15 @@ Members of an actor can be marked with the `@objc` attribute
 only if they are nonisolated or asynchronous.
 
 The process of initializing an actor's declared properties
-is described in [Initialization](Initialization.md).
+is described in [Initialization](../LanguageGuide/Initialization.md).
 
 Properties of an actor instance can be accessed using dot (`.`) syntax,
-as described in [Accessing Properties](ClassesAndStructures.md#Accessing-Properties).
+as described in [Accessing Properties](../LanguageGuide/ClassesAndStructures.md#Accessing-Properties).
 
 Actors are reference types; instances of an actor are referred to, rather than copied,
 when assigned to variables or constants, or when passed as arguments to a function call.
 For information about reference types,
-see [Classes Are Reference Types](ClassesAndStructures.md#Classes-Are-Reference-Types).
+see [Classes Are Reference Types](../LanguageGuide/ClassesAndStructures.md#Classes-Are-Reference-Types).
 
 You can extend the behavior of an actor type with an extension declaration,
 as discussed in [Extension Declaration](Declarations.md#Extension-Declaration).
@@ -2341,12 +2341,12 @@ When a protocol type inherits from other protocols,
 the set of requirements from those other protocols are aggregated,
 and any type that inherits from the current protocol must conform to all those requirements.
 For an example of how to use protocol inheritance,
-see [Protocol Inheritance](Protocols.md#Protocol-Inheritance).
+see [Protocol Inheritance](../LanguageGuide/Protocols.md#Protocol-Inheritance).
 
 > Note: You can also aggregate the conformance requirements of multiple
 > protocols using protocol composition types,
 > as described in [Protocol Composition Type](Types.md#Protocol-Composition-Type)
-> and [Protocol Composition](Protocols.md#Protocol-Composition).
+> and [Protocol Composition](../LanguageGuide/Protocols.md#Protocol-Composition).
 
 You can add protocol conformance to a previously declared type
 by adopting the protocol in an extension declaration of that type.
@@ -2366,7 +2366,7 @@ to a protocol that contains optional member requirements.
 For more information about how to use the `optional` declaration modifier
 and for guidance about how to access optional protocol members ---
 for example, when you're not sure whether a conforming type implements them ---
-see [Optional Protocol Requirements](Protocols.md#Optional-Protocol-Requirements).
+see [Optional Protocol Requirements](../LanguageGuide/Protocols.md#Optional-Protocol-Requirements).
 
 <!--
   TODO: Currently, you can't check for an optional initializer,
@@ -2465,14 +2465,14 @@ protocol SomeRefinedProtocol: SomeBaseClass {
 -->
 
 Protocols are named types, and thus they can appear in all the same places
-in your code as other named types, as discussed in [Protocols as Types](Protocols.md#Protocols-as-Types).
+in your code as other named types, as discussed in [Protocols as Types](../LanguageGuide/Protocols.md#Protocols-as-Types).
 However,
 you can't construct an instance of a protocol,
 because protocols don't actually provide the implementations for the requirements
 they specify.
 
 You can use protocols to declare which methods a delegate of a class or structure
-should implement, as described in [Delegation](Protocols.md#Delegation).
+should implement, as described in [Delegation](../LanguageGuide/Protocols.md#Delegation).
 
 > Grammar of a protocol declaration:
 >
@@ -2516,7 +2516,7 @@ that property declaration can't be implemented as a constant property
 or a read-only computed property. If a property declaration includes
 only the `get` keyword, it can be implemented as any kind of property.
 For examples of conforming types that implement the property requirements of a protocol,
-see [Property Requirements](Protocols.md#Property-Requirements).
+see [Property Requirements](../LanguageGuide/Protocols.md#Property-Requirements).
 
 To declare a type property requirement in a protocol declaration,
 mark the property declaration with the `static` keyword.
@@ -2577,7 +2577,7 @@ Protocol method declarations have the same form as
 function declarations, with two exceptions: They don't include a function body,
 and you can't provide any default parameter values as part of the function declaration.
 For examples of conforming types that implement the method requirements of a protocol,
-see [Method Requirements](Protocols.md#Method-Requirements).
+see [Method Requirements](../LanguageGuide/Protocols.md#Method-Requirements).
 
 To declare a class or static method requirement in a protocol declaration,
 mark the method declaration with the `static` declaration modifier.
@@ -2667,7 +2667,7 @@ Associated types are similar to type parameters in generic parameter clauses,
 but they're associated with `Self` in the protocol in which they're declared.
 In that context, `Self` refers to the eventual type that conforms to the protocol.
 For more information and examples,
-see [Associated Types](Generics.md#Associated-Types).
+see [Associated Types](../LanguageGuide/Generics.md#Associated-Types).
 
 You use a generic `where` clause in a protocol declaration
 to add constraints to an associated types inherited from another protocol,
@@ -2799,7 +2799,7 @@ Structure, enumeration, and class types can have any number of initializers,
 but the rules and associated behavior for class initializers are different.
 Unlike structures and enumerations, classes have two kinds of initializers:
 designated initializers and convenience initializers,
-as described in [Initialization](Initialization.md).
+as described in [Initialization](../LanguageGuide/Initialization.md).
 
 The following form declares initializers for structures, enumerations,
 and designated initializers of classes:
@@ -2867,7 +2867,7 @@ Likewise, initializers can be asynchronous,
 and you use the `async` keyword to indicate this.
 
 To see examples of initializers in various type declarations,
-see [Initialization](Initialization.md).
+see [Initialization](../LanguageGuide/Initialization.md).
 
 ### Failable Initializers
 
@@ -2961,7 +2961,7 @@ A nonfailable designated initializer can be overridden in a subclass
 by a nonfailable designated initializer only.
 
 For more information and to see examples of failable initializers,
-see [Failable Initializers](Initialization.md#Failable-Initializers).
+see [Failable Initializers](../LanguageGuide/Initialization.md#Failable-Initializers).
 
 > Grammar of an initializer declaration:
 >
@@ -2997,7 +2997,7 @@ have finished executing.
 Deinitializers aren't called directly.
 
 For an example of how to use a deinitializer in a class declaration,
-see [Deinitialization](Deinitialization.md).
+see [Deinitialization](../LanguageGuide/Deinitialization.md).
 
 > Grammar of a deinitializer declaration:
 >
@@ -3024,7 +3024,7 @@ Extension declarations can't contain deinitializer or protocol declarations,
 stored properties, property observers, or other extension declarations.
 Declarations in a protocol extension can't be marked `final`.
 For a discussion and several examples of extensions that include various kinds of declarations,
-see [Extensions](Extensions.md).
+see [Extensions](../LanguageGuide/Extensions.md).
 
 If the *type name* is a class, structure, or enumeration type,
 the extension extends that type.
@@ -3556,7 +3556,7 @@ You can also declare subscripts in the context of a protocol declaration,
 as described in [Protocol Subscript Declaration](Declarations.md#Protocol-Subscript-Declaration).
 
 For more information about subscripting and to see examples of subscript declarations,
-see [Subscripts](Subscripts.md).
+see [Subscripts](../LanguageGuide/Subscripts.md).
 
 ### Type Subscript Declarations
 
@@ -3616,7 +3616,7 @@ Macros can be overloaded,
 following the same model used by functions.
 A macro declaration appears only at file scope.
 
-For an overview of macros in Swift, see [Macros](Macros.md).
+For an overview of macros in Swift, see [Macros](../LanguageGuide/Macros.md).
 
 > Grammar of a macro declaration:
 >
@@ -3693,7 +3693,7 @@ If you're implementing a prefix or postfix operator,
 you must also mark that method declaration with the corresponding `prefix` or `postfix`
 declaration modifier.
 To see an example of how to create and implement a new operator,
-see [Custom Operators](AdvancedOperators.md#Custom-Operators).
+see [Custom Operators](../LanguageGuide/AdvancedOperators.md#Custom-Operators).
 
 > Grammar of an operator declaration:
 >
@@ -3831,14 +3831,14 @@ that introduces the declaration.
   can't be subclassed. It's applied to a property, method, or subscript of a class
   to indicate that a class member can't be overridden in any subclass.
   For an example of how to use the `final` attribute,
-  see [Preventing Overrides](Inheritance.md#Preventing-Overrides).
+  see [Preventing Overrides](../LanguageGuide/Inheritance.md#Preventing-Overrides).
 
 - term `lazy`:
   Apply this modifier to a stored variable property of a class or structure
   to indicate that the property's initial value is calculated and stored at most
   once, when the property is first accessed.
   For an example of how to use the `lazy` modifier,
-  see [Lazy Stored Properties](Properties.md#Lazy-Stored-Properties).
+  see [Lazy Stored Properties](../LanguageGuide/Properties.md#Lazy-Stored-Properties).
 
 - term `optional`:
   Apply this modifier to a protocol's property, method,
@@ -3851,7 +3851,7 @@ that introduces the declaration.
   For more information about how to use the `optional` modifier
   and for guidance about how to access optional protocol members ---
   for example, when you're not sure whether a conforming type implements them ---
-  see [Optional Protocol Requirements](Protocols.md#Optional-Protocol-Requirements).
+  see [Optional Protocol Requirements](../LanguageGuide/Protocols.md#Optional-Protocol-Requirements).
 
 <!--
   TODO: Currently, you can't check for an optional initializer,
@@ -3891,7 +3891,7 @@ that introduces the declaration.
   unlike a weak reference,
   the type is non-optional.
   For an example and more information about the `unowned` modifier,
-  see [Unowned References](AutomaticReferenceCounting.md#Unowned-References).
+  see [Unowned References](../LanguageGuide/AutomaticReferenceCounting.md#Unowned-References).
 
 - term `unowned(safe)`:
   An explicit spelling of `unowned`.
@@ -3909,7 +3909,7 @@ that introduces the declaration.
   unlike a weak reference,
   the type is non-optional.
   For an example and more information about the `unowned` modifier,
-  see [Unowned References](AutomaticReferenceCounting.md#Unowned-References).
+  see [Unowned References](../LanguageGuide/AutomaticReferenceCounting.md#Unowned-References).
 
 - term `weak`:
   Apply this modifier to a stored variable or stored variable property
@@ -3920,14 +3920,14 @@ that introduces the declaration.
   after the object has been deallocated,
   its value is `nil`.
   For an example and more information about the `weak` modifier,
-  see [Weak References](AutomaticReferenceCounting.md#Weak-References).
+  see [Weak References](../LanguageGuide/AutomaticReferenceCounting.md#Weak-References).
 
 ### Access Control Levels
 
 Swift provides five levels of access control: open, public, internal, file private, and private.
 You can mark a declaration with one of the access-level modifiers below
 to specify the declaration's access level.
-Access control is discussed in detail in [Access Control](AccessControl.md).
+Access control is discussed in detail in [Access Control](../LanguageGuide/AccessControl.md).
 
 - term `open`:
   Apply this modifier to a declaration to indicate the declaration can be accessed and subclassed
@@ -3990,7 +3990,7 @@ for example, `private(set)`.
 Use this form of an access-level modifier when you want to specify an access level
 for the setter of a variable or subscript that's less than or equal
 to the access level of the variable or subscript itself,
-as discussed in [Getters and Setters](AccessControl.md#Getters-and-Setters).
+as discussed in [Getters and Setters](../LanguageGuide/AccessControl.md#Getters-and-Setters).
 
 > Grammar of a declaration modifier:
 >

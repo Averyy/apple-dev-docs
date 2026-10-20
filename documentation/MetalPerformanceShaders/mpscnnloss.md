@@ -1,7 +1,8 @@
 # MPSCNNLoss
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel that computes the loss and loss gradient between specified predictions and labels.
 
@@ -19,52 +20,57 @@ A kernel that computes the loss and loss gradient between specified predictions 
 class MPSCNNLoss
 ```
 
+```objc
+@interface MPSCNNLoss : MPSCNNKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnloss/init(coder:device:).md)
-- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](mpscnnloss/init(device:lossdescriptor:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnloss/init%28coder,device%29.md)
+- [init(device: any MTLDevice, lossDescriptor: MPSCNNLossDescriptor)](./mpscnnloss/init%28device,lossdescriptor%29.md)
 ### Instance Properties
-- [var delta: Float](mpscnnloss/delta.md)
-- [var epsilon: Float](mpscnnloss/epsilon.md)
-- [var labelSmoothing: Float](mpscnnloss/labelsmoothing.md)
-- [var lossType: MPSCNNLossType](mpscnnloss/losstype.md)
-- [var numberOfClasses: Int](mpscnnloss/numberofclasses.md)
-- [var reduceAcrossBatch: Bool](mpscnnloss/reduceacrossbatch.md)
-- [var reductionType: MPSCNNReductionType](mpscnnloss/reductiontype.md)
-- [var weight: Float](mpscnnloss/weight.md)
+- [var delta: Float](./mpscnnloss/delta.md)
+- [var epsilon: Float](./mpscnnloss/epsilon.md)
+- [var labelSmoothing: Float](./mpscnnloss/labelsmoothing.md)
+- [var lossType: MPSCNNLossType](./mpscnnloss/losstype.md)
+- [var numberOfClasses: Int](./mpscnnloss/numberofclasses.md)
+- [var reduceAcrossBatch: Bool](./mpscnnloss/reduceacrossbatch.md)
+- [var reductionType: MPSCNNReductionType](./mpscnnloss/reductiontype.md)
+- [var weight: Float](./mpscnnloss/weight.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels) -> MPSImage](mpscnnloss/encode(commandbuffer:sourceimage:labels:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels, destinationImage: MPSImage)](mpscnnloss/encode(commandbuffer:sourceimage:labels:destinationimage:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels]) -> [MPSImage]](mpscnnloss/encode(commandbuffer:sourceimages:labels:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels], destinationImages: [MPSImage])](mpscnnloss/encode(commandbuffer:sourceimages:labels:destinationimages:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels) -> MPSImage](./mpscnnloss/encode%28commandbuffer,sourceimage,labels%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImage: MPSImage, labels: MPSCNNLossLabels, destinationImage: MPSImage)](./mpscnnloss/encode%28commandbuffer,sourceimage,labels,destinationimage%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels]) -> [MPSImage]](./mpscnnloss/encode%28commandbuffer,sourceimages,labels%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], labels: [MPSCNNLossLabels], destinationImages: [MPSImage])](./mpscnnloss/encode%28commandbuffer,sourceimages,labels,destinationimages%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNLossDataDescriptor](mpscnnlossdatadescriptor.md)
+### Loss Layers
+- [class MPSCNNLossDataDescriptor](./mpscnnlossdatadescriptor.md)
   An object that specifies properties used by a loss data descriptor.
-- [class MPSCNNLossDescriptor](mpscnnlossdescriptor.md)
+- [class MPSCNNLossDescriptor](./mpscnnlossdescriptor.md)
   An object that specifies properties used by a loss kernel.
-- [class MPSCNNLossLabels](mpscnnlosslabels.md)
+- [class MPSCNNLossLabels](./mpscnnlosslabels.md)
   A class that stores the per-element weight buffer used by loss and gradient loss kernels.
-- [class MPSCNNYOLOLoss](mpscnnyololoss.md)
+- [class MPSCNNYOLOLoss](./mpscnnyololoss.md)
   A kernel that computes the YOLO loss and loss gradient between specified predictions and labels.
-- [class MPSCNNYOLOLossDescriptor](mpscnnyololossdescriptor.md)
+- [class MPSCNNYOLOLossDescriptor](./mpscnnyololossdescriptor.md)
   An object that specifies properties used by a YOLO loss kernel.
 
 

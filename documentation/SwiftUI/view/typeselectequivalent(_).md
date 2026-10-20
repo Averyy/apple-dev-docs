@@ -1,7 +1,8 @@
 # typeSelectEquivalent(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an explicit type select equivalent text in a collection, such as a list or table.
 
@@ -19,6 +20,23 @@ Sets an explicit type select equivalent text in a collection, such as a list or 
 ```swift
 @export(implementation)
 nonisolated func typeSelectEquivalent(_ stringKey: LocalizedStringKey) -> some View
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated func typeSelectEquivalent(_ stringResource: LocalizedStringResource) -> some View
+```
+
+```swift
+@export(implementation)
+nonisolated func typeSelectEquivalent<S>(_ string: S) -> some View where S : StringProtocol
+```
+
+```swift
+nonisolated
+func typeSelectEquivalent(_ text: Text?) -> some View
 ```
 
 #### Discussion

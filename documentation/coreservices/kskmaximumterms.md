@@ -1,7 +1,8 @@
 # kSKMaximumTerms
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSKMaximumTerms: CFString!
+```
+
+```c
+const CFStringRef kSKMaximumTerms;
 ```
 
 #### Discussion

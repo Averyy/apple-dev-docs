@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Device Activity  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -35,7 +36,8 @@ print(DeviceActivityName.bedtime.rawValue)
 
 ## See Also
 
-- [init(String)](deviceactivityname/init(_:).md)
+### Creating an Instance
+- [init(String)](./init%28_%29.md)
   Creates a new instance with the specified raw value.
 
 

@@ -1,7 +1,8 @@
 # searchableIndex(_:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reindexes the searchable items for the specified identifiers.
 
@@ -18,9 +19,13 @@ Reindexes the searchable items for the specified identifiers.
 func searchableIndex(_ searchableIndex: CSSearchableIndex, reindexSearchableItemsWithIdentifiers identifiers: [String], acknowledgementHandler: @escaping () -> Void)
 ```
 
+```objc
+- (void) searchableIndex:(CSSearchableIndex *) searchableIndex reindexSearchableItemsWithIdentifiers:(NSArray<NSString *> *) identifiers acknowledgementHandler:(void (^)()) acknowledgementHandler;
+```
+
 #### Discussion
 
-For more information, see [`searchableIndex(_:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:)`](nscoredatacorespotlightdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md).
+For more information, see [`searchableIndex(_:reindexSearchableItemsWithIdentifiers:acknowledgementHandler:)`](./searchableindex%28_,reindexsearchableitemswithidentifiers,acknowledgementhandler%29.md).
 
 ## Parameters
 
@@ -30,9 +35,10 @@ For more information, see [`searchableIndex(_:reindexSearchableItemsWithIdentifi
 
 ## See Also
 
-- [static let indexDidUpdateNotification: Notification.Name](nscoredatacorespotlightdelegate/indexdidupdatenotification.md)
+### Updating the Index
+- [static let indexDidUpdateNotification: Notification.Name](./indexdidupdatenotification.md)
   The notification the delegate posts after Spotlight updates the index.
-- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](nscoredatacorespotlightdelegate/searchableindex(_:reindexallsearchableitemswithacknowledgementhandler:).md)
+- [func searchableIndex(CSSearchableIndex, reindexAllSearchableItemsWithAcknowledgementHandler: () -> Void)](./searchableindex%28_,reindexallsearchableitemswithacknowledgementhandler%29.md)
   Reindexes all searchable items and clears any local state.
 
 

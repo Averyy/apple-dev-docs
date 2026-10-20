@@ -1,7 +1,8 @@
 # HIDDeviceError.notResponding
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device isn’t responding.
 

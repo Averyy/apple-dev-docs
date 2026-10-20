@@ -1,9 +1,10 @@
 # isPresented
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A binding controlling if the find navigator is presented, or nil if no binding has been provided via the [`findNavigator(isPresented:)`](view/findnavigator(ispresented:).md) modifier.
+A binding controlling if the find navigator is presented, or nil if no binding has been provided via the [`findNavigator(isPresented:)`](../view/findnavigator%28ispresented%29.md) modifier.
 
 **Availability**:
 - iOS 26.0+

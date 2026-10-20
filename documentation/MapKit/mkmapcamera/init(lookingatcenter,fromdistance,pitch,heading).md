@@ -1,7 +1,8 @@
 # init(lookingAtCenter:fromDistance:pitch:heading:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new camera object using the specified distance, pitch, and heading information.
 
@@ -18,6 +19,10 @@ Returns a new camera object using the specified distance, pitch, and heading inf
 
 ```swift
 convenience init(lookingAtCenter centerCoordinate: CLLocationCoordinate2D, fromDistance distance: CLLocationDistance, pitch: CGFloat, heading: CLLocationDirection)
+```
+
+```objc
++ (instancetype) cameraLookingAtCenterCoordinate:(CLLocationCoordinate2D) centerCoordinate fromDistance:(CLLocationDistance) distance pitch:(CGFloat) pitch heading:(CLLocationDirection) heading;
 ```
 
 #### Return Value
@@ -37,9 +42,10 @@ You can obtain the altitude of the camera by multiplying `distance` by the cosin
 
 ## See Also
 
-- [convenience init(lookingAtCenter: CLLocationCoordinate2D, fromEyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance)](mkmapcamera/init(lookingatcenter:fromeyecoordinate:eyealtitude:).md)
+### Getting a camera object
+- [convenience init(lookingAtCenter: CLLocationCoordinate2D, fromEyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance)](./init%28lookingatcenter,fromeyecoordinate,eyealtitude%29.md)
   Returns a new camera object using the specified viewing angle information.
-- [convenience init(lookingAt: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](mkmapcamera/init(lookingat:forviewsize:allowpitch:).md)
+- [convenience init(lookingAt: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](./init%28lookingat,forviewsize,allowpitch%29.md)
   Returns a new camera object using the specified map item, view size, and pitch.
 
 

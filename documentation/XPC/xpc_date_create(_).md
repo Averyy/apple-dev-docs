@@ -1,7 +1,8 @@
 # xpc_date_create(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an XPC date object.
 
@@ -10,7 +11,7 @@ Creates an XPC date object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates an XPC date object.
 
 ```swift
 func xpc_date_create(_ interval: Int64) -> xpc_object_t
+```
+
+```c
+extern xpc_object_txpc_date_create(int64_t interval);
 ```
 
 #### Return Value
@@ -30,9 +35,10 @@ A new date object.
 
 ## See Also
 
-- [func xpc_date_create_from_current() -> xpc_object_t](xpc_date_create_from_current().md)
+### Date objects
+- [func xpc_date_create_from_current() -> xpc_object_t](./xpc_date_create_from_current%28%29.md)
   Creates an XPC date object that represents the current date.
-- [func xpc_date_get_value(xpc_object_t) -> Int64](xpc_date_get_value(_:).md)
+- [func xpc_date_get_value(xpc_object_t) -> Int64](./xpc_date_get_value%28_%29.md)
   Returns the underlying date interval from an object.
 
 

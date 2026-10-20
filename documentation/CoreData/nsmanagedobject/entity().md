@@ -1,7 +1,8 @@
 # entity()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the entity description that is associated with this subclass.
 
@@ -20,15 +21,20 @@ Returns the entity description that is associated with this subclass.
 class func entity() -> NSEntityDescription
 ```
 
+```objc
++ (NSEntityDescription *) entity;
+```
+
 #### Discussion
 
 This method is only legal to call on subclasses of `NSManagedObject` that represent a single entity in the model.
 
 ## See Also
 
-- [var entity: NSEntityDescription](nsmanagedobject/entity-swift.property.md)
+### Getting a Managed Object’s Identity
+- [var entity: NSEntityDescription](./entity-swift.property.md)
   The entity description of the managed object.
-- [var objectID: NSManagedObjectID](nsmanagedobject/objectid.md)
+- [var objectID: NSManagedObjectID](./objectid.md)
   The object ID of the managed object.
 
 

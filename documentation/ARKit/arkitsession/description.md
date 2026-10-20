@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this session.
 
@@ -17,11 +18,12 @@ final var description: String { get }
 
 ## See Also
 
-- [var events: ARKitSession.Events](arkitsession/events-swift.property.md)
+### Observing a session
+- [var events: ARKitSession.Events](./events-swift.property.md)
   An asynchronous sequence of events that provide updates to the current authorization status of the session.
-- [ARKitSession.Events](arkitsession/events-swift.struct.md)
+- [ARKitSession.Events](./events-swift.struct.md)
   A sequence of events.
-- [ARKitSession.Event](arkitsession/event.md)
+- [ARKitSession.Event](./event.md)
   Enumeration of possible session events.
 
 

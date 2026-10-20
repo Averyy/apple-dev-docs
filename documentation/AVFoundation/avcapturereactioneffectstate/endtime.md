@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation time of the first frame following the end of a reaction effect.
 
@@ -18,17 +19,22 @@ The presentation time of the first frame following the end of a reaction effect.
 var endTime: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime endTime;
+```
+
 #### Discussion
 
-The value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) while the effect is in progress, but changes to a valid time when the reaction effect completes and the system removes it from the list of [`reactionEffectsInProgress`](avcapturedevice/reactioneffectsinprogress.md).
+The value is [`invalid`](../../CoreMedia/cmtime/invalid.md) while the effect is in progress, but changes to a valid time when the reaction effect completes and the system removes it from the list of [`reactionEffectsInProgress`](../avcapturedevice/reactioneffectsinprogress.md).
 
 ## See Also
 
-- [var reactionType: AVCaptureReactionType](avcapturereactioneffectstate/reactiontype.md)
+### Configuring the effect state
+- [var reactionType: AVCaptureReactionType](./reactiontype.md)
   The type of reaction.
-- [struct AVCaptureReactionType](avcapturereactiontype.md)
+- [struct AVCaptureReactionType](../avcapturereactiontype.md)
   Constants that indicate the type of reaction that an effect can perform.
-- [var startTime: CMTime](avcapturereactioneffectstate/starttime.md)
+- [var startTime: CMTime](./starttime.md)
   The presentation time of the first frame where the system renders the effect.
 
 

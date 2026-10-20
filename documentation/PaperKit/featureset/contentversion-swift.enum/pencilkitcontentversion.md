@@ -1,7 +1,8 @@
 # pencilKitContentVersion
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PencilKit content version that this PaperKit version relies on.
 

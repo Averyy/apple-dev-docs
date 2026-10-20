@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/install.html
 
 # Build and Install
 
-**
-
-- [.rst](_sources/install.rst)
-- **
-
-.pdf
-
-**
-
-# Build and Install
-
- Table of contents 
-
-## Contents
-
-# Build and Install
-
 ## Install from PyPI
 
 MLX Data can be installed from PyPI. For most Linuxes and Apple silicon Macs
@@ -120,5 +103,3 @@ Subsequently, you can use CMake’s `find_package(MLXData)` which defines
 `MLX_DATA_FOUND`, `MLX_DATA_INCLUDE_DIRS` and `MLX_DATA_LIBRARIES` or
 simply link with `-lmlxdata` as it is normally installed in
 `/usr/local/lib`.
-
-** Contents

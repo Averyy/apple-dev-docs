@@ -1,7 +1,8 @@
 # webExtensionController
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 var webExtensionController: WKWebExtensionController? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) WKWebExtensionController * webExtensionController;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # droppedReason
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value indicating why the capture output failed to deliver sample buffers, if applicable.
 
@@ -17,9 +18,14 @@ A value indicating why the capture output failed to deliver sample buffers, if a
 var droppedReason: AVCaptureOutput.DataDroppedReason { get }
 ```
 
+```objc
+@property (readonly) AVCaptureOutputDataDroppedReason droppedReason;
+```
+
 ## See Also
 
-- [var sampleBufferWasDropped: Bool](avcapturesynchronizedsamplebufferdata/samplebufferwasdropped.md)
+### Handling dropped data
+- [var sampleBufferWasDropped: Bool](./samplebufferwasdropped.md)
   A Boolean value indicating whether sample buffers were discarded between capture and processing.
 
 

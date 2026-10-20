@@ -1,7 +1,8 @@
 # ResolverSpecification
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An internal type that a resolver uses to convert data values.
 
@@ -11,7 +12,7 @@ An internal type that a resolver uses to convert data values.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,31 +23,32 @@ protocol ResolverSpecification : Hashable, Sendable, Sequence where Self.Element
 
 #### Overview
 
-Don’t use a [`ResolverSpecification`](resolverspecification.md) type directly in your code. The system uses this type internally to manage the resolution process.
+Don’t use a [`ResolverSpecification`](./resolverspecification.md) type directly in your code. The system uses this type internally to manage the resolution process.
 
 ## Topics
 
 ### Getting the value type
-- [associatedtype Output : _IntentValue](resolverspecification/output.md)
+- [associatedtype Output : _IntentValue](./resolverspecification/output.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 ### Conforming Types
-- [EmptyResolverSpecification](emptyresolverspecification.md)
-- [ResolverSpecificationBuilder.Specification](resolverspecificationbuilder/specification.md)
+- [EmptyResolverSpecification](./emptyresolverspecification.md)
+- [ResolverSpecificationBuilder.Specification](./resolverspecificationbuilder/specification.md)
 
 ## See Also
 
-- [struct EmptyResolverSpecification](emptyresolverspecification.md)
-- [struct StringSearchCriteriaFromStringResolverSpecificification](stringsearchcriteriafromstringresolverspecificification.md)
+### Managing the resolution process
+- [struct EmptyResolverSpecification](./emptyresolverspecification.md)
+- [struct StringSearchCriteriaFromStringResolverSpecificification](./stringsearchcriteriafromstringresolverspecificification.md)
   An internal type that a resolver uses to convert data values.
-- [enum ResolverSpecificationBuilder](resolverspecificationbuilder.md)
+- [enum ResolverSpecificationBuilder](./resolverspecificationbuilder.md)
   A result builder that declaratively specifies a set of resolvers.
 
 

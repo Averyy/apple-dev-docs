@@ -1,7 +1,8 @@
 # hybrid(explicitPositiveSign:uppercase:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a custom hybrid format with a system-determined precision value.
 
@@ -11,7 +12,7 @@ Creates a custom hybrid format with a system-determined precision value.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -31,17 +32,18 @@ A custom hybrid format for floating-point numbers.
 
 ## See Also
 
-- [static func exponential(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/exponential(explicitpositivesign:uppercase:).md)
+### Creating a Custom Formatting Object
+- [static func exponential(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./exponential%28explicitpositivesign,uppercase%29.md)
   Creates a custom exponential format with a system-determined precision value.
-- [static func exponential(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/exponential(precision:explicitpositivesign:uppercase:).md)
+- [static func exponential(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./exponential%28precision,explicitpositivesign,uppercase%29.md)
   Creates a custom exponential format with the specified precision value.
-- [static func fixed(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/fixed(explicitpositivesign:uppercase:).md)
+- [static func fixed(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./fixed%28explicitpositivesign,uppercase%29.md)
   Creates a custom fixed-point format with a system-determined precision value.
-- [static func fixed(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/fixed(precision:explicitpositivesign:uppercase:).md)
+- [static func fixed(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./fixed%28precision,explicitpositivesign,uppercase%29.md)
   Creates a custom fixed-point format with the specified precision value.
-- [static func hex(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/hex(explicitpositivesign:uppercase:).md)
+- [static func hex(explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./hex%28explicitpositivesign,uppercase%29.md)
   Creates a custom hexadecimal format.
-- [static func hybrid(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](oslogfloatformatting/hybrid(precision:explicitpositivesign:uppercase:).md)
+- [static func hybrid(precision: @autoclosure () -> Int, explicitPositiveSign: Bool, uppercase: Bool) -> OSLogFloatFormatting](./hybrid%28precision,explicitpositivesign,uppercase%29.md)
   Creates a custom hybrid format with the precision value.
 
 

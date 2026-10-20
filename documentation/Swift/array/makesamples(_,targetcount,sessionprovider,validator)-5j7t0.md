@@ -1,7 +1,8 @@
 # makeSamples(_:targetCount:sessionProvider:validator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates synthetic data based on this dataset and returns a stream of new samples.
 

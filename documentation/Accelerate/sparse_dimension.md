@@ -1,23 +1,28 @@
 # sparse_dimension
 
 **Framework**: Accelerate  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The dimension type.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias sparse_dimension = UInt64
+```
+
+```c
+typedef uint64_t sparse_dimension;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ typealias sparse_dimension = UInt64
 
 ## See Also
 
-- [typealias sparse_index](sparse_index.md)
+### Supporting types
+- [typealias sparse_index](./sparse_index.md)
   The index type.
-- [typealias sparse_matrix_double](sparse_matrix_double.md)
+- [typealias sparse_matrix_double](./sparse_matrix_double.md)
   Sparse matrix opaque type for double.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
-- [struct sparse_status](sparse_status.md)
+- [struct sparse_status](./sparse_status.md)
   The type reflecting the status of an operations.
 
 

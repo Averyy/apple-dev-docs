@@ -1,7 +1,8 @@
 # setLimits(_:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets limits for the axes of rotation.
 
@@ -19,11 +20,11 @@ final func setLimits(_ limits: DockAccessory.Limits) throws
 
 #### Discussion
 
-Limits only apply to the current tracking session. Afterwards, the orientation specifications default to the manufacturer limits. This method impacts primarily subsequent calls to [`setOrientation(_:duration:relative:)`](dockaccessory/setorientation(_:duration:relative:)-2epe2.md) and [`setOrientation(_:duration:relative:)`](dockaccessory/setorientation(_:duration:relative:)-6b0fl.md). Limits only apply to the current tracking session. When the session ends, the orientation specifications default to the manufacturer limits.
+Limits only apply to the current tracking session. Afterwards, the orientation specifications default to the manufacturer limits. This method impacts primarily subsequent calls to [`setOrientation(_:duration:relative:)`](./setorientation%28_,duration,relative%29-2epe2.md) and [`setOrientation(_:duration:relative:)`](./setorientation%28_,duration,relative%29-6b0fl.md). Limits only apply to the current tracking session. When the session ends, the orientation specifications default to the manufacturer limits.
 
 This method only works when you disable system tracking.
 
-> **Note**: An error if all parameters are `nil`, or if the dock accessory doesn’t support the given axis.
+> **Throws**: An error if all parameters are `nil`, or if the dock accessory doesn’t support the given axis.
 
 ## Parameters
 
@@ -31,11 +32,12 @@ This method only works when you disable system tracking.
 
 ## See Also
 
-- [func setOrientation(Vector3D, duration: Duration, relative: Bool) throws -> Progress](dockaccessory/setorientation(_:duration:relative:)-2epe2.md)
+### Setting position and limits
+- [func setOrientation(Vector3D, duration: Duration, relative: Bool) throws -> Progress](./setorientation%28_,duration,relative%29-2epe2.md)
   Sets the position of each axis of orientation to radians for pitch, yaw, and roll.
-- [func setOrientation(Rotation3D, duration: Duration, relative: Bool) throws -> Progress](dockaccessory/setorientation(_:duration:relative:)-6b0fl.md)
+- [func setOrientation(Rotation3D, duration: Duration, relative: Bool) throws -> Progress](./setorientation%28_,duration,relative%29-6b0fl.md)
   Sets the position of each axis of orientation to radians for pitch, yaw, and roll.
-- [func setAngularVelocity(Vector3D) async throws](dockaccessory/setangularvelocity(_:).md)
+- [func setAngularVelocity(Vector3D) async throws](./setangularvelocity%28_%29.md)
   Sets the angular velocity of each axis of orientation.
 
 

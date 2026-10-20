@@ -1,15 +1,16 @@
 # AudioFileStreamSeekFlags
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,53 +18,58 @@
 struct AudioFileStreamSeekFlags
 ```
 
+```c
+enum AudioFileStreamSeekFlags : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [static var offsetIsEstimated: AudioFileStreamSeekFlags](audiofilestreamseekflags/offsetisestimated.md)
-  This flag is returned by the [`AudioFileStreamSeek(_:_:_:_:)`](audiofilestreamseek(_:_:_:_:).md) function if the byte offset is only an estimate.
+- [static var offsetIsEstimated: AudioFileStreamSeekFlags](./audiofilestreamseekflags/offsetisestimated.md)
+  This flag is returned by the [`AudioFileStreamSeek(_:_:_:_:)`](./audiofilestreamseek%28_,_,_,_%29.md) function if the byte offset is only an estimate.
 ### Initializers
-- [init(rawValue: UInt32)](audiofilestreamseekflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./audiofilestreamseekflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct AudioBytePacketTranslationFlags](audiobytepackettranslationflags.md)
-- [struct AudioFileFlags](audiofileflags.md)
-- [struct AudioFileRegionFlags](audiofileregionflags.md)
+### Data Types
+- [struct AudioBytePacketTranslationFlags](./audiobytepackettranslationflags.md)
+- [struct AudioFileFlags](./audiofileflags.md)
+- [struct AudioFileRegionFlags](./audiofileregionflags.md)
   Flags that specify a playback direction for an audio file region structure.
-- [struct AudioFileStreamParseFlags](audiofilestreamparseflags.md)
-- [struct AudioFileStreamPropertyFlags](audiofilestreampropertyflags.md)
-- [typealias AudioFileID](audiofileid.md)
+- [struct AudioFileStreamParseFlags](./audiofilestreamparseflags.md)
+- [struct AudioFileStreamPropertyFlags](./audiofilestreampropertyflags.md)
+- [typealias AudioFileID](./audiofileid.md)
   An opaque data type that represents an audio file object.
-- [typealias AudioFilePropertyID](audiofilepropertyid.md)
+- [typealias AudioFilePropertyID](./audiofilepropertyid.md)
   An audio file property identifier.
-- [struct AudioFile_SMPTE_Time](audiofile_smpte_time.md)
+- [struct AudioFile_SMPTE_Time](./audiofile_smpte_time.md)
   A data structure for describing SMPTE (Society of Motion Picture and Television Engineers) time.
-- [struct AudioFileMarker](audiofilemarker.md)
+- [struct AudioFileMarker](./audiofilemarker.md)
   Annotates a position in an audio file.
-- [struct AudioFileMarkerList](audiofilemarkerlist.md)
+- [struct AudioFileMarkerList](./audiofilemarkerlist.md)
   A list of markers associated with an audio file, including their SMPTE time type, the number of markers, and the markers themselves.
-- [struct AudioFileRegion](audiofileregion.md)
+- [struct AudioFileRegion](./audiofileregion.md)
   An audio file region specifies a segment of audio data.
-- [struct AudioFileRegionList](audiofileregionlist.md)
+- [struct AudioFileRegionList](./audiofileregionlist.md)
   A list of the audio file regions in a file.
-- [struct AudioFramePacketTranslation](audioframepackettranslation.md)
+- [struct AudioFramePacketTranslation](./audioframepackettranslation.md)
   A structure that specifies frame and packet translations.
-- [struct AudioBytePacketTranslation](audiobytepackettranslation.md)
-  A data structure used by the [`kAudioFilePropertyByteToPacket`](kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](kaudiofilepropertypackettobyte.md) properties.
-- [struct AudioFilePacketTableInfo](audiofilepackettableinfo.md)
+- [struct AudioBytePacketTranslation](./audiobytepackettranslation.md)
+  A data structure used by the [`kAudioFilePropertyByteToPacket`](./kaudiofilepropertybytetopacket.md) and [`kAudioFilePropertyPacketToByte`](./kaudiofilepropertypackettobyte.md) properties.
+- [struct AudioFilePacketTableInfo](./audiofilepackettableinfo.md)
   Contains information about the number of valid frames in a file and where they begin and end.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureDevice.TorchMode.on
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The capture device torch is always on.
 
@@ -18,11 +19,16 @@ The capture device torch is always on.
 case on
 ```
 
+```c
+AVCaptureTorchModeOn
+```
+
 ## See Also
 
-- [AVCaptureDevice.TorchMode.off](avcapturedevice/torchmode-swift.enum/off.md)
+### Torch modes
+- [AVCaptureDevice.TorchMode.off](./off.md)
   The capture device torch is always off.
-- [AVCaptureDevice.TorchMode.auto](avcapturedevice/torchmode-swift.enum/auto.md)
+- [AVCaptureDevice.TorchMode.auto](./auto.md)
   The capture device continuously monitors light levels and uses the torch when necessary.
 
 

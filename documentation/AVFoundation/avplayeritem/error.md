@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error that caused the player item to fail.
 
@@ -21,17 +22,22 @@ nonisolated
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
 The value of this property is an error that describes what caused the player item to no longer be able to be played.
 
-If the receiver’s status is not [`AVPlayerItem.Status.failed`](avplayeritem/status-swift.enum/failed.md), the value of this property is `nil`.
+If the receiver’s status is not [`AVPlayerItem.Status.failed`](./status-swift.enum/failed.md), the value of this property is `nil`.
 
 ## See Also
 
-- [var status: AVPlayerItem.Status](avplayeritem/status-swift.property.md)
+### Determining readiness
+- [var status: AVPlayerItem.Status](./status-swift.property.md)
   The status of the player item.
-- [AVPlayerItem.Status](avplayeritem/status-swift.enum.md)
+- [AVPlayerItem.Status](./status-swift.enum.md)
   The statuses for a player item.
 
 

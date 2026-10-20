@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct priority_queue_deadline_min {
     ...
 };
@@ -17,7 +17,7 @@ struct priority_queue_deadline_min {
 ## Topics
 
 ### Instance Properties
-- [pq_root](priority_queue_deadline_min/3553489-pq_root.md)
+- [pq_root](./priority_queue_deadline_min/api-3553489-pq_root.md)
 
 
 ---

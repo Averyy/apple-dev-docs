@@ -1,16 +1,17 @@
 # Validating feature support for USD files
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 Ensure that the renderer that displays your USD assets supports its features.
 
 #### Overview
 
-Depending on the device, its operating system, and the app, there are four renderers that might display your 3D assets: RealityKit, Raytracer, Storm, or SceneKit. Each renderer supports a subset of the USD features. Use the tables below to determine which features are available. See [`Creating USD files for Apple devices`](creating-usd-files-for-apple-devices.md) for more information on how to determine which engine renders your USD asset. This article identifies feature support for assets imported from USD files.
+Depending on the device, its operating system, and the app, there are four renderers that might display your 3D assets: RealityKit, Raytracer, Storm, or SceneKit. Each renderer supports a subset of the USD features. Use the tables below to determine which features are available. See [Creating USD files for Apple devices](./creating-usd-files-for-apple-devices.md) for more information on how to determine which engine renders your USD asset. This article identifies feature support for assets imported from USD files.
 
 In some cases, the renderers might support features listed below, but do not support importing those features from USD files, and will be marked as unsupported. In the case of Storm, feature support may differ from the open source version.
 
-#### Review General and Media Features
+#### Review general and media features
 
 Each rendering engine supports a set of general and media attributes that cover fundamental features, such as which file types the renderer supports, and whether it supports *instancing*, which is a performance optimization where a renderer can inexpensively display a single asset multiple times in a scene.
 
@@ -37,7 +38,7 @@ Variant support is handled differently between the renderers:
 - In Reality Composer Pro, RealityKit also supports changing the variant after loading the asset.
 - QuickLook allows you to change variants on the default prim after loading a USDZ asset.
 
-#### Review Geometry Feature Support
+#### Review geometry feature support
 
 USD supports multiple ways to represent the shape of a 3D object, and has several features that affect the way these objects render.
 
@@ -76,7 +77,7 @@ All renderers support using attributes specified in the USD file.
 - Spatial and Immersive cameras are Apple camera types only supported in the Preview app on macOS 27 and later.
 - Raytracer supports catmull-rom basis curves only.
 
-#### Review Lighting Support
+#### Review lighting support
 
 The USD specification supports many kinds of lights, some that are well-suited to real-time use and others that are primarily intended for use in offline production tasks, such as rendering animations or special effects for movies, because they are computationally expensive. SceneKit and Storm don’t support USD light types that are too computationally expensive for real-time use. Because RealityKit is an AR-first renderer, it doesn’t use any lights included in a USD file, and instead bases its lighting on the scene’s real-world lighting.
 
@@ -98,7 +99,7 @@ The USD specification supports many kinds of lights, some that are well-suited t
 - Raytracer supports mesh lights and volume lights, but without proper light sampling.
 - Raytracer has partial support for light shaping.
 
-#### Review Physics Support
+#### Review physics support
 
 USD supports many physics simulation features. Only the RealityKit renderer supports simulation features.
 
@@ -119,7 +120,7 @@ USD supports many physics simulation features. Only the RealityKit renderer supp
 
 - USDKit does not support loading Physics data into RealityKit.
 
-#### Review Shader Features
+#### Review shader features
 
 The USD specification includes a number of features for use by shaders and even includes a number of pre-defined shaders to ensure consistent rendering across platforms.
 
@@ -140,7 +141,7 @@ The USD specification includes a number of features for use by shaders and even 
 | ColorSpace | ✔ | ✔ | ✔ |  |
 | Displacement |  | ✔ |  |  |
 
-Each renderer may support MaterialX nodes to different degrees. Verify your asset rendering against your renderer of choice. The [`ShaderGraph`](https://developer.apple.comhttps://developer.apple.com/documentation/shadergraph) documentation covers the support for RealityKit.
+Each renderer may support MaterialX nodes to different degrees. Verify your asset rendering against your renderer of choice. The [ShaderGraph](../ShaderGraph/ShaderGraph.md) documentation covers the support for RealityKit.
 
 RealityKit has partial support for some shader features:
 
@@ -153,7 +154,7 @@ RealityKit has partial support for some shader features:
 
 If no colorSpace or sourceColorSpace value is provided then the embedded image color profile is used when loading color textures.
 
-#### Review Skeletons
+#### Review skeletons
 
 Skeletal animation deforms a model based on a hierarchy of joints, which allows you to animate character assets and complex mechanical objects.
 
@@ -163,7 +164,7 @@ Skeletal animation deforms a model based on a hierarchy of joints, which allows 
 | Skeleton animation | ✔ | ✔ | ✔ | ✔ |
 | Blend Shapes | ✔ | ✔ | ✔ | ✔ |
 
-#### Review Volumes and Particles
+#### Review volumes and particles
 
 USD supports volumetric data and particle-based representations. These are used for effects such as smoke, fire, and clouds, as well as for 3D Gaussian Splats captured from real-world scenes.
 
@@ -176,15 +177,16 @@ USD supports volumetric data and particle-based representations. These are used 
 
 ## See Also
 
-- [OpenUSD schemas for AR](usd-schemas-for-ar.md)
+### Essentials
+- [OpenUSD schemas for AR](./usd-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USD schemas.
-- [Schema definitions for third-party DCCs](schema-definitions-for-third-party-dccs.md)
+- [Schema definitions for third-party DCCs](./schema-definitions-for-third-party-dccs.md)
   Update your local USD library to add interactive and augmented reality features.
-- [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](./creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [Placing a prim in the real world](placing-a-prim-in-the-real-world.md)
+- [Placing a prim in the real world](./placing-a-prim-in-the-real-world.md)
   Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
-- [Previewing a Model with AR Quick Look](../arkit/previewing-a-model-with-ar-quick-look.md)
+- [Previewing a Model with AR Quick Look](../ARKit/previewing-a-model-with-ar-quick-look.md)
   Display a model or scene that the user can move, scale, and share with others.
 
 

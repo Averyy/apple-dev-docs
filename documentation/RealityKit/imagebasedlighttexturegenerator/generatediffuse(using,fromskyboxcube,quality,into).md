@@ -1,7 +1,8 @@
 # generateDiffuse(using:fromSkyboxCube:quality:into:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds commands for generating an image based light diffuse texture from a skybox cube.
 
@@ -19,18 +20,19 @@ func generateDiffuse(using commandBuffer: any MTLCommandBuffer, fromSkyboxCube t
 
 #### Discussion
 
-> **Note**: If `texture` or `destination` is not a cube texture, or if `destination`’s pixel format does not support shader writes on this device.
+> **Throws**: If `texture` or `destination` is not a cube texture, or if `destination`’s pixel format does not support shader writes on this device.
 
 ## Parameters
 
 - `commandBuffer`: The command buffer to dispatch GPU work to generate Image Based Light Diffuse
 - `texture`: The source image cube skybox texture, which must have mipmaps.
 - `quality`: The sampling quality the method applies as it generates the cube texture.
-- `destination`: The destination cube texture. Use [`makeDiffuseDescriptor(fromCube:)`](imagebasedlighttexturegenerator/makediffusedescriptor(fromcube:).md) to get a recommended descriptor for creating the destination texture.
+- `destination`: The destination cube texture. Use [`makeDiffuseDescriptor(fromCube:)`](./makediffusedescriptor%28fromcube%29.md) to get a recommended descriptor for creating the destination texture.
 
 ## See Also
 
-- [func generateSpecular(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:).md)
+### Generating IBL textures
+- [func generateSpecular(using: any MTLCommandBuffer, fromSkyboxCube: any MTLTexture, quality: TextureSamplingQuality, into: any MTLTexture) throws](./generatespecular%28using,fromskyboxcube,quality,into%29.md)
   Adds commands for generating an image based light specular texture from a skybox cube.
 
 

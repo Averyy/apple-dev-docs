@@ -1,7 +1,8 @@
 # groupID
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional group identifier for the hover effect.
 
@@ -20,7 +21,7 @@ var groupID: HoverEffectComponent.GroupID? { get set }
 
 #### Discussion
 
-The system activates the hover effect entities that have the same [`HoverEffectComponent.GroupID`](hovereffectcomponent/groupid.md) instance at the same time when a person looks at it or hovers over any entity in the group.
+The system activates the hover effect entities that have the same [`HoverEffectComponent.GroupID`](../groupid.md) instance at the same time when a person looks at it or hovers over any entity in the group.
 
 ##### Activating Hover Effects
 
@@ -83,7 +84,9 @@ hoverEntityBB.components.set(hoverBB)
 
 ```
 
-In this example, the top entity, `entityA`, doesn’t have a group identifier. However, the left side entities, `entityB` and `entityBB`, have the same [`HoverEffectComponent.GroupID`](hovereffectcomponent/groupid.md) instance. The top entity `entityA` and its right child `entityC` both glow when a person activates either one in the right side hierarchical branch. However, the left child `entityB` and its descendent `entityBB` glow only when a person activates either one of them.
+In this example, the top entity, `entityA`, doesn’t have a group identifier. However, the left side entities, `entityB` and `entityBB`, have the same [`HoverEffectComponent.GroupID`](../groupid.md) instance. The top entity `entityA` and its right child `entityC` both glow when a person activates either one in the right side hierarchical branch. However, the left child `entityB` and its descendent `entityBB` glow only when a person activates either one of them.
+
+[Video: A video of a living room scene with four black rectangles arranged in a tree arrangement with one rectangle on the top, two rectangles on the left side branch, and one rectangle on the right side branch. The top and right side rectangles start glowing as the gaze pointer hovers over the top rectangle and then over the right side rectange. The left side rectangles start glowing as the gaze pointer hovers over the upper left side rectangle and then over the lower left side rectangle.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/hovereffectcomponent-exclude-groupid-from-hierarchical.mp4)
 
 
 ---

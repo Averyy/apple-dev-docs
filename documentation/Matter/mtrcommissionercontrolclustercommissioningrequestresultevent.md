@@ -1,7 +1,8 @@
 # MTRCommissionerControlClusterCommissioningRequestResultEvent
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,26 +19,30 @@
 class MTRCommissionerControlClusterCommissioningRequestResultEvent
 ```
 
+```objc
+@interface MTRCommissionerControlClusterCommissioningRequestResultEvent : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var clientNodeID: NSNumber](mtrcommissionercontrolclustercommissioningrequestresultevent/clientnodeid.md)
-- [var fabricIndex: NSNumber](mtrcommissionercontrolclustercommissioningrequestresultevent/fabricindex.md)
-- [var requestID: NSNumber](mtrcommissionercontrolclustercommissioningrequestresultevent/requestid.md)
-- [var statusCode: NSNumber](mtrcommissionercontrolclustercommissioningrequestresultevent/statuscode.md)
+- [var clientNodeID: NSNumber](./mtrcommissionercontrolclustercommissioningrequestresultevent/clientnodeid.md)
+- [var fabricIndex: NSNumber](./mtrcommissionercontrolclustercommissioningrequestresultevent/fabricindex.md)
+- [var requestID: NSNumber](./mtrcommissionercontrolclustercommissioningrequestresultevent/requestid.md)
+- [var statusCode: NSNumber](./mtrcommissionercontrolclustercommissioningrequestresultevent/statuscode.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the last entry in a non-empty set.
 

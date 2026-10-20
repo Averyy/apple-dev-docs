@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns the quotient of dividing the first value by the second.
@@ -37,11 +38,12 @@ let x = 21 / 5
 
 ## See Also
 
-- [static func + (Self, Self) -> Self](binaryinteger/+(_:_:).md)
+### Arithmetic
+- [static func + (Self, Self) -> Self](./plus%28_,_%29.md)
   Adds two values and produces their sum.
-- [static func - (Self, Self) -> Self](binaryinteger/-(_:_:).md)
+- [static func - (Self, Self) -> Self](./minus%28_,_%29.md)
   Subtracts one value from another and produces their difference.
-- [static func * (Self, Self) -> Self](binaryinteger/*(_:_:).md)
+- [static func * (Self, Self) -> Self](./star%28_,_%29.md)
   Multiplies two values and produces their product.
 
 

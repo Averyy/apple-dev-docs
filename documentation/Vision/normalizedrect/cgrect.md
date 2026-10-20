@@ -1,7 +1,8 @@
 # cgRect
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normalized rectangle as a Core Graphics rectangle.
 
@@ -22,11 +23,12 @@ let cgRect: CGRect
 
 ## See Also
 
-- [var origin: CGPoint](normalizedrect/origin.md)
+### Inspecting a normalized rectangle
+- [var origin: CGPoint](./origin.md)
   The lower left-hand corner of the rectangle.
-- [var width: CGFloat](normalizedrect/width.md)
+- [var width: CGFloat](./width.md)
   The width of the rectangle.
-- [var height: CGFloat](normalizedrect/height.md)
+- [var height: CGFloat](./height.md)
   The height of the rectangle.
 
 

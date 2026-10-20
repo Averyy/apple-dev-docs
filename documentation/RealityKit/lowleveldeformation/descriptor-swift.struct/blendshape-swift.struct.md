@@ -1,9 +1,10 @@
 # LowLevelDeformation.Descriptor.BlendShape
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The blend-shape data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
+The blend-shape data dimensions for a [`LowLevelDeformation`](../../lowleveldeformation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,17 +21,17 @@ struct BlendShape
 ## Topics
 
 ### Initializers
-- [init(targetCount: Int)](lowleveldeformation/descriptor-swift.struct/blendshape-swift.struct/init(targetcount:).md)
+- [init(targetCount: Int)](./blendshape-swift.struct/init%28targetcount%29.md)
   Creates a blend-shape descriptor.
 ### Instance Properties
-- [var targetCount: Int](lowleveldeformation/descriptor-swift.struct/blendshape-swift.struct/targetcount.md)
+- [var targetCount: Int](./blendshape-swift.struct/targetcount.md)
   The number of blend-shape targets.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

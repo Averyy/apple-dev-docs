@@ -1,7 +1,8 @@
 # newPos
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The character position within the text buffer being processed of the most recent error.
 
@@ -12,6 +13,10 @@ The character position within the text buffer being processed of the most recent
 
 ```swift
 var newPos: Int
+```
+
+```c
+long newPos;
 ```
 
 

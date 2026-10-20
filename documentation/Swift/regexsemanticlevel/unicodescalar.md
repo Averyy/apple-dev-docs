@@ -1,7 +1,8 @@
 # unicodeScalar
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Match at the Unicode scalar level.
 

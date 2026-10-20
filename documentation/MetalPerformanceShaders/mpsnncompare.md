@@ -1,7 +1,8 @@
 # MPSNNCompare
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,28 +18,32 @@
 class MPSNNCompare
 ```
 
+```objc
+@interface MPSNNCompare : MPSCNNArithmetic
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice)](mpsnncompare/init(device:).md)
+- [init(device: any MTLDevice)](./mpsnncompare/init%28device%29.md)
 ### Instance Properties
-- [var comparisonType: MPSNNComparisonType](mpsnncompare/comparisontype.md)
-- [var threshold: Float](mpsnncompare/threshold.md)
+- [var comparisonType: MPSNNComparisonType](./mpsnncompare/comparisontype.md)
+- [var threshold: Float](./mpsnncompare/threshold.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNArithmetic](mpscnnarithmetic.md)
+- [MPSCNNArithmetic](./mpscnnarithmetic.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # currentCodeUnitOffset
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte offset of the start of the next scalar. This is always scalar-aligned.
 

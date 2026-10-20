@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The string representation of the type’s content.
@@ -33,6 +34,14 @@ struct MyCustomType: CustomURLRepresentationParameterConvertible {
    var urlRepresentationParameter: String? { "\(name)/\(id)" }
 }
 ```
+
+## Default Implementations
+
+### CustomURLRepresentationParameterConvertible Implementations
+- [var urlRepresentationParameter: String?](./urlrepresentationparameter-1g4au.md)
+  The string representation of the type’s content.
+- [var urlRepresentationParameter: String?](./urlrepresentationparameter-6j32h.md)
+  The string representation of the type’s content.
 
 
 ---

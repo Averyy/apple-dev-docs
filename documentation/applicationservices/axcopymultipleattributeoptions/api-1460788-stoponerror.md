@@ -1,7 +1,8 @@
 # stopOnError
 
 **Framework**: Application Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 **Availability**:
 - macOS 10.4+

@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an invalidation structure with multiple invalidations.
 
@@ -10,7 +11,7 @@ Creates an invalidation structure with multiple invalidations.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration

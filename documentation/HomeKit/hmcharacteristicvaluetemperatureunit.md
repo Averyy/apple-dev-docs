@@ -1,7 +1,8 @@
 # HMCharacteristicValueTemperatureUnit
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the temperature units currently active on the accessory.
 
@@ -19,25 +20,29 @@ Possible values for the temperature units currently active on the accessory.
 enum HMCharacteristicValueTemperatureUnit
 ```
 
+```c
+enum HMCharacteristicValueTemperatureUnit : NSInteger;
+```
+
 ## Topics
 
 ### Temperature Units
-- [HMCharacteristicValueTemperatureUnit.celsius](hmcharacteristicvaluetemperatureunit/celsius.md)
+- [HMCharacteristicValueTemperatureUnit.celsius](./hmcharacteristicvaluetemperatureunit/celsius.md)
   Temperature is reported in degrees Celsius.
-- [HMCharacteristicValueTemperatureUnit.fahrenheit](hmcharacteristicvaluetemperatureunit/fahrenheit.md)
+- [HMCharacteristicValueTemperatureUnit.fahrenheit](./hmcharacteristicvaluetemperatureunit/fahrenheit.md)
   Temperature is reported in degrees Fahrenheit.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluetemperatureunit/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluetemperatureunit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

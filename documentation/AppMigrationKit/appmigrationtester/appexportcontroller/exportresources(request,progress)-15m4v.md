@@ -1,7 +1,8 @@
 # exportResources(request:progress:)
 
 **Framework**: AppMigrationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the migration extension to begin exporting its resources, using options defined by the destination platform.
 
@@ -22,13 +23,14 @@ The results of the export.
 ## Parameters
 
 - `request`: An optional migration request instance to pass to the app extension’s export method. This value defaults to `nil`.
-- `progress`: An optional [`Progress`](https://developer.apple.com/documentation/foundation/progress) object the extension uses to report its progress back to the unit test. This value defaults to `nil`.
+- `progress`: An optional [`Progress`](../../../Foundation/progress.md) object the extension uses to report its progress back to the unit test. This value defaults to `nil`.
 
 ## See Also
 
-- [func exportResources(request: MigrationRequest?, progress: Progress?) async throws -> AppMigrationTester.ResourcesExportResult](appmigrationtester/appexportcontroller/exportresources(request:progress:)-5mw8u.md)
+### Testing resource export
+- [func exportResources(request: MigrationRequest?, progress: Progress?) async throws -> AppMigrationTester.ResourcesExportResult](./exportresources%28request,progress%29-5mw8u.md)
   Tells the migration extension to begin exporting its resources.
-- [AppMigrationTester.ResourcesExportResult](appmigrationtester/resourcesexportresult.md)
+- [AppMigrationTester.ResourcesExportResult](../resourcesexportresult.md)
   The result of exporting resources to another device.
 
 

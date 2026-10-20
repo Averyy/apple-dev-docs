@@ -1,7 +1,8 @@
 # TVMediaItemContentConfiguration.TextProperties
 
 **Framework**: TVUIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties that affect the media item content configuration’s text.
 
@@ -17,31 +18,32 @@ struct TextProperties
 ## Topics
 
 ### Configuring Text Properties
-- [var font: UIFont](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/font.md)
+- [var font: UIFont](./textproperties-swift.struct/font.md)
   The font for the text.
-- [var color: UIColor](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/color.md)
+- [var color: UIColor](./textproperties-swift.struct/color.md)
   The color of the text.
-- [var transform: TVMediaItemContentConfiguration.TextProperties.TextTransform](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/transform.md)
+- [var transform: TVMediaItemContentConfiguration.TextProperties.TextTransform](./textproperties-swift.struct/transform.md)
   The transform to apply to the text before displaying it.
-- [TVMediaItemContentConfiguration.TextProperties.TextTransform](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md)
+- [TVMediaItemContentConfiguration.TextProperties.TextTransform](./textproperties-swift.struct/texttransform.md)
   Constants that specify the transform to apply to the text.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var textProperties: TVMediaItemContentConfiguration.TextProperties](tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.property.md)
+### Customizing Appearance
+- [var textProperties: TVMediaItemContentConfiguration.TextProperties](./textproperties-swift.property.md)
   Properties for configuring the primary text.
-- [var secondaryTextProperties: TVMediaItemContentConfiguration.TextProperties](tvmediaitemcontentconfiguration-swift.struct/secondarytextproperties.md)
+- [var secondaryTextProperties: TVMediaItemContentConfiguration.TextProperties](./secondarytextproperties.md)
   Properties for configuring the secondary text.
 
 

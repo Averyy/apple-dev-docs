@@ -1,7 +1,8 @@
 # dependentLocalities
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Common names for the local area or neighborhood of the place.
 
@@ -10,7 +11,7 @@ Common names for the local area or neighborhood of the place.
 
 ## Declaration
 
-```swift
+```
 dependentLocalities: string[] | null;
 ```
 
@@ -20,13 +21,14 @@ For example, dependent localities for Golden Gate Park in San Francisco, CA are 
 
 ## See Also
 
-- [locality](place/locality.md)
+### City and district address
+- [locality](./locality.md)
   The city of the place.
-- [subLocality](place/sublocality.md)
+- [subLocality](./sublocality.md)
   The name of the area within the locality.
-- [administrativeArea](place/administrativearea.md)
+- [administrativeArea](./administrativearea.md)
   The state or province of the place.
-- [administrativeAreaCode](place/administrativeareacode.md)
+- [administrativeAreaCode](./administrativeareacode.md)
   The short code for the state or area.
 
 

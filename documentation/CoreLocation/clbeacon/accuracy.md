@@ -1,7 +1,8 @@
 # accuracy
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accuracy of the proximity value, measured in meters from the beacon.
 
@@ -17,6 +18,10 @@ The accuracy of the proximity value, measured in meters from the beacon.
 var accuracy: CLLocationAccuracy { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationAccuracy accuracy;
+```
+
 #### Discussion
 
 A beacon with a smaller value for accuracy is typically nearer than a beacon with a larger accuracy value.
@@ -27,11 +32,12 @@ A negative value in this property signifies that the actual accuracy could not b
 
 ## See Also
 
-- [var proximity: CLProximity](clbeacon/proximity.md)
+### Determining the distance to the beacon
+- [var proximity: CLProximity](./proximity.md)
   The relative distance to the beacon.
-- [enum CLProximity](clproximity.md)
+- [enum CLProximity](../clproximity.md)
   Constants that reflect the relative distance to a beacon.
-- [var rssi: Int](clbeacon/rssi.md)
+- [var rssi: Int](./rssi.md)
   The received signal strength of the beacon, measured in decibels.
 
 

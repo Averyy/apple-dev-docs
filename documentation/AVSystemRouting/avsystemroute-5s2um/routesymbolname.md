@@ -1,7 +1,8 @@
 # routeSymbolName
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SF Symbol name representing the remote device or route.
 
@@ -18,7 +19,7 @@ final var routeSymbolName: String { get }
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
+- [Routing and streaming media to remote devices](../routing-and-streaming-media-to-remote-devices.md)
 
 #### Discussion
 

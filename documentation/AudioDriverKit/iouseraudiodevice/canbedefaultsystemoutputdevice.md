@@ -1,7 +1,8 @@
 # CanBeDefaultSystemOutputDevice
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates if this device can be the system’s default output device.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates if this device can be the system’s defa
 
 ## Declaration
 
-```swift
+```c
 uint32_t CanBeDefaultSystemOutputDevice();
 ```
 
@@ -24,15 +25,16 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetCanBeDefaultInputDevice](iouseraudiodevice/setcanbedefaultinputdevice.md)
+### Working with Default Device Behavior
+- [SetCanBeDefaultInputDevice](./setcanbedefaultinputdevice.md)
   Sets a Boolean value that indicates if this device can be the host’s default input device.
-- [CanBeDefaultInputDevice](iouseraudiodevice/canbedefaultinputdevice.md)
+- [CanBeDefaultInputDevice](./canbedefaultinputdevice.md)
   Returns a Boolean value that indicates if this device can be the host’s default input device.
-- [SetCanBeDefaultOutputDevice](iouseraudiodevice/setcanbedefaultoutputdevice.md)
+- [SetCanBeDefaultOutputDevice](./setcanbedefaultoutputdevice.md)
   Sets a Boolean value that indicates if this device can be the host’s default output device.
-- [CanBeDefaultOutputDevice](iouseraudiodevice/canbedefaultoutputdevice.md)
+- [CanBeDefaultOutputDevice](./canbedefaultoutputdevice.md)
   Returns a Boolean value that indicates if this device can be the host’s default output device.
-- [SetCanBeDefaultSystemOutputDevice](iouseraudiodevice/setcanbedefaultsystemoutputdevice.md)
+- [SetCanBeDefaultSystemOutputDevice](./setcanbedefaultsystemoutputdevice.md)
   Sets a Boolean value that indicates if this device can be the system’s default output device.
 
 

@@ -1,7 +1,8 @@
 # monochrome
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A standard grayscale tint effect.
 
@@ -26,9 +27,10 @@ The system doesn’t override monochrome tints.
 
 ## See Also
 
-- [static func fixed(Color) -> ListItemTint](listitemtint/fixed(_:).md)
+### Getting list item tint options
+- [static func fixed(Color) -> ListItemTint](./fixed%28_%29.md)
   An explicit tint color.
-- [static func preferred(Color) -> ListItemTint](listitemtint/preferred(_:).md)
+- [static func preferred(Color) -> ListItemTint](./preferred%28_%29.md)
   An explicit tint color that the system can override.
 
 

@@ -1,6 +1,7 @@
 # Platform App Installs
 
-**Framework**: Analytics Reports
+**Framework**: Analytics Reports  
+**Role**: Article
 
 Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
 
@@ -10,7 +11,9 @@ The Platform App Installs report includes install data from the App Store, TestF
 
 - Territories: European Union only.
 - Platforms: iOS, iPadOS
-- Availability: - Daily: Every day
+- Availability:
+
+  - Daily: Every day
 - History: On request, data is available beginning on March 5, 2024.
 - Completeness: Same day.
 
@@ -35,11 +38,11 @@ The Platform App Installs report includes install data from the App Store, TestF
 | Install Type | First-time install | The first time an app is installed onto a device by an Apple Account. |
 | Install Type | Reinstall | A subsequent installation of an app onto a device by an Apple Account. |
 | Install Type | Update | The process of replacing an app on a device with the latest version of the same app. Includes manual updates and auto-updates. |
-| Install Type | App Clip install | The process of installing an [`App Clip`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/overview-of-app-clips). |
-| Install Type | Other install | The process of installing a pre-release version of your app using [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview). |
+| Install Type | App Clip install | The process of installing an [App Clip](https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/overview-of-app-clips). |
+| Install Type | Other install | The process of installing a pre-release version of your app using [TestFlight](https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview). |
 | Install Type | Other update | The process of replacing a pre-release version of your app with the latest version using TestFlight. |
 | Install Type | User managed install | The process of installing an app using Mobile Device Management software. This includes apps installed with Apple Business Manager, Apple School Manager, and custom apps. |
-| Install Type | Device managed install | The process of installing an app on a [`supervised device`](https://developer.apple.comhttps://support.apple.com/guide/deployment/about-device-supervision-dep1d89f0bff/web) using Mobile Device Management software. This includes Apple Business Manager, Apple School Manager, and custom apps. |
+| Install Type | Device managed install | The process of installing an app on a [supervised device](https://support.apple.com/guide/deployment/about-device-supervision-dep1d89f0bff/web) using Mobile Device Management software. This includes Apple Business Manager, Apple School Manager, and custom apps. |
 | Install Type | Restore | The process of automatically installing an app on a device from an iCloud backup. |
 | Install Type | Auto-download | The process of automatically installing an app onto other devices associated with the user’s Apple Account. Controlled by the Apple account’s auto-download setting. |
 | Install Type | Web Install | The process of manually installing an app from a web browser. |
@@ -51,21 +54,22 @@ The Platform App Installs report includes install data from the App Store, TestF
 
 ## See Also
 
-- [App Clip Usage](app-clip-usage.md)
+### App Usage
+- [App Clip Usage](./app-clip-usage.md)
   Analyze how users engage with your App Clips.
-- [App Crashes](app-crashes.md)
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Installations and Deletions](app-installs.md)
+- [App Store Installations and Deletions](./app-installs.md)
   Analyze details on the number of times users install and delete your apps.
-- [App Store Opt-in](app-store-opt-in.md)
+- [App Store Opt-in](./app-store-opt-in.md)
   Analyze the percentage of first-time app downloaders who choose to share their data with you.
-- [App Sessions](app-sessions.md)
+- [App Sessions](./app-sessions.md)
   Analyze how often people open your App Store apps, and the average session duration.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 
 

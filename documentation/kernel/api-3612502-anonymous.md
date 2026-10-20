@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIIsochronousTransferControlASAP](3612502-anonymous/iousbhostciisochronoustransfercontrolasap.md)
-- [IOUSBHostCIIsochronousTransferControlFrameNumber](3612502-anonymous/iousbhostciisochronoustransfercontrolframenumber.md)
-- [IOUSBHostCIIsochronousTransferControlFrameNumberPhase](3612502-anonymous/iousbhostciisochronoustransfercontrolframenumberphase.md)
+- [IOUSBHostCIIsochronousTransferControlASAP](./api-3612502-anonymous/iousbhostciisochronoustransfercontrolasap.md)
+- [IOUSBHostCIIsochronousTransferControlFrameNumber](./api-3612502-anonymous/iousbhostciisochronoustransfercontrolframenumber.md)
+- [IOUSBHostCIIsochronousTransferControlFrameNumberPhase](./api-3612502-anonymous/iousbhostciisochronoustransfercontrolframenumberphase.md)
 
 
 ---

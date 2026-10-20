@@ -1,7 +1,8 @@
 # CapturedElementCategory.surface(_:)
 
 **Framework**: RoomPlan  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A category that’s scoped to the captured surface.
 
@@ -18,7 +19,8 @@ case surface(CapturedRoom.Surface.Category)
 
 ## See Also
 
-- [case object(CapturedRoom.Object.Category)](capturedelementcategory/object(_:).md)
+### Determining the category type
+- [case object(CapturedRoom.Object.Category)](./object%28_%29.md)
   A category that’s scoped to the captured object.
 
 

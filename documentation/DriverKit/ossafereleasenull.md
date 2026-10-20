@@ -1,25 +1,26 @@
 # OSSafeReleaseNULL
 
 **Framework**: DriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Frees memory that you allocated for a named class.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define OSSafeReleaseNULL(inst)
 ```
 
 #### Discussion
 
-Use this macro to free memory that you allocated [`OSTypeAlloc`](ostypealloc.md). If `inst` is `NULL`, this macro doesn’t attempt to free the memory.
+Use this macro to free memory that you allocated [`OSTypeAlloc`](./ostypealloc.md). If `inst` is `NULL`, this macro doesn’t attempt to free the memory.
 
 ## Parameters
 
@@ -27,11 +28,12 @@ Use this macro to free memory that you allocated [`OSTypeAlloc`](ostypealloc.md)
 
 ## See Also
 
-- [IODelete](iodelete.md)
+### Deallocation
+- [IODelete](./iodelete.md)
   Frees the memory associated with a valid, typed array.
-- [IOSafeDeleteNULL](iosafedeletenull.md)
+- [IOSafeDeleteNULL](./iosafedeletenull.md)
   Frees the memory associated with a typed array.
-- [IOFree](iofree.md)
+- [IOFree](./iofree.md)
   Frees a memory block that contains general-purpose memory.
 
 

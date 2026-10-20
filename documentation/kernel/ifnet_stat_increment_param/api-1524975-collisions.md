@@ -1,7 +1,8 @@
 # collisions
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of collisions seen by this interface.
 
@@ -10,25 +11,26 @@ The number of collisions seen by this interface.
 
 ## Declaration
 
-```swift
+```c
 u_int32_t collisions;
 ```
 
 ## See Also
 
-- [packets_in](ifnet_stat_increment_param/1525109-packets_in.md)
+### Fields
+- [packets_in](./api-1525109-packets_in.md)
   The number of packets received.
-- [bytes_in](ifnet_stat_increment_param/1525011-bytes_in.md)
+- [bytes_in](./api-1525011-bytes_in.md)
   The number of bytes received.
-- [errors_in](ifnet_stat_increment_param/1525113-errors_in.md)
+- [errors_in](./api-1525113-errors_in.md)
   The number of receive errors.
-- [packets_out](ifnet_stat_increment_param/1525136-packets_out.md)
+- [packets_out](./api-1525136-packets_out.md)
   The number of packets transmitted.
-- [bytes_out](ifnet_stat_increment_param/1524877-bytes_out.md)
+- [bytes_out](./api-1524877-bytes_out.md)
   The number of bytes transmitted.
-- [errors_out](ifnet_stat_increment_param/1524993-errors_out.md)
+- [errors_out](./api-1524993-errors_out.md)
   The number of transmission errors.
-- [dropped](ifnet_stat_increment_param/1525040-dropped.md)
+- [dropped](./api-1525040-dropped.md)
   The number of packets dropped.
 
 

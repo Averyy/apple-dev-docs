@@ -1,7 +1,8 @@
 # DockAccessory.TrackedSubjectType.object(_:)
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Tracked subject contains an object.
 

@@ -1,7 +1,8 @@
 # CoreSpotlightActions
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary that contains details about actions available to users for Spotlight search results.
 
@@ -10,18 +11,19 @@ A dictionary that contains details about actions available to users for Spotligh
 - iPadOS 15.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `CoreSpotlightActions` (Core Spotlight Custom Actions)
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Action Properties
-- [CoreSpotlightActionTitle](information-property-list/corespotlightactions/corespotlightactiontitle.md)
+- [CoreSpotlightActionTitle](./corespotlightactions/corespotlightactiontitle.md)
   The user-visible string that Spotlight displays as the title of the action.
-- [CoreSpotlightActionSymbolImage](information-property-list/corespotlightactions/corespotlightactionsymbolimage.md)
+- [CoreSpotlightActionSymbolImage](./corespotlightactions/corespotlightactionsymbolimage.md)
   The name of a SF Symbol to display next to the action’s title.
-- [CoreSpotlightActionIdentifier](information-property-list/corespotlightactions/corespotlightactionidentifier.md)
+- [CoreSpotlightActionIdentifier](./corespotlightactions/corespotlightactionidentifier.md)
   A string an app defines to identify the action.
 
 

@@ -1,7 +1,8 @@
 # GainNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface GainNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [gain](gainnode/1633279-gain.md)
+- [gain](./gainnode/api-1633279-gain.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

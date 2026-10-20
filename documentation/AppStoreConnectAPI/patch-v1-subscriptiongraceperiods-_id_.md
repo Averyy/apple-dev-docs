@@ -1,7 +1,8 @@
 # Modify the billing grace period opt-in status and duration
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Change the Boolean value representing the billing grace period opt-in status.
 
@@ -10,7 +11,7 @@ Change the Boolean value representing the billing grace period opt-in status.
 
 ## Mentions
 
-- [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Managing auto-renewable subscriptions](./managing-auto-renewable-subscriptions.md)
 
 #### Discussion
 
@@ -18,7 +19,7 @@ Change the Boolean value representing the billing grace period opt-in status.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329     
 -d $'{
   "data": {
@@ -63,18 +64,35 @@ https://api.appstoreconnect.apple.com/v1/subscriptionGracePeriods/6446671329
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
 
 ## Request Body
 
-There are now new duration options that can be set by using [`SubscriptionGracePeriodDuration`](subscriptiongraceperiodduration.md)
+**Content-Type**: `application/json`  
+**Type**: `SubscriptionGracePeriodUpdateRequest`
+
+There are now new duration options that can be set by using [`SubscriptionGracePeriodDuration`](./subscriptiongraceperiodduration.md)
+
+## Responses
+
+- `200` OK (`SubscriptionGracePeriodResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read the billing grace period value for an app](get-v1-apps-_id_-subscriptiongraceperiod.md)
+### Endpoints
+- [Read the billing grace period value for an app](./get-v1-apps-_id_-subscriptiongraceperiod.md)
   Get the Boolean value that represents the grace period opt-in state for your app.
-- [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
-- [Read the billing grace period value](get-v1-subscriptiongraceperiods-_id_.md)
+- [Get the subscription grace period ID for an app](./get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [Read the billing grace period value](./get-v1-subscriptiongraceperiods-_id_.md)
   Get the Boolean value that represents the billing grace period opt-in state and the duration of the billing grace period.
 
 

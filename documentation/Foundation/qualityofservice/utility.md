@@ -1,7 +1,8 @@
 # QualityOfService.utility
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 8.0+
@@ -18,16 +19,21 @@
 case utility
 ```
 
+```c
+NSQualityOfServiceUtility
+```
+
 #### Discussion
 
 Used for performing work which the user is unlikely to be immediately waiting for the results. This work may have been requested by the user or initiated automatically, and often operates at user-visible timescales using a non-modal progress indicator. For example, periodic content updates or bulk file operations, such as media import.
 
 ## See Also
 
-- [QualityOfService.userInteractive](qualityofservice/userinteractive.md)
-- [QualityOfService.userInitiated](qualityofservice/userinitiated.md)
-- [QualityOfService.background](qualityofservice/background.md)
-- [QualityOfService.default](qualityofservice/default.md)
+### Constants
+- [QualityOfService.userInteractive](./userinteractive.md)
+- [QualityOfService.userInitiated](./userinitiated.md)
+- [QualityOfService.background](./background.md)
+- [QualityOfService.default](./default.md)
 
 
 ---

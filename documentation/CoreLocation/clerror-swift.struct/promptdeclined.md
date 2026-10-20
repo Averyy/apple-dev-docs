@@ -1,7 +1,8 @@
 # promptDeclined
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates the user didn’t grant the requested temporary authorization.
 
@@ -26,19 +27,20 @@ If the prompt was shown to the user, who declined, or if an error prevented the 
 
 ## See Also
 
-- [static var locationUnknown: CLError.Code](clerror-swift.struct/locationunknown.md)
+### Getting general errors
+- [static var locationUnknown: CLError.Code](./locationunknown.md)
   A constant that indicates the location manager was unable to obtain a location value right now.
-- [static var denied: CLError.Code](clerror-swift.struct/denied.md)
+- [static var denied: CLError.Code](./denied.md)
   A constant that indicates the user denied access to the location service.
-- [static var network: CLError.Code](clerror-swift.struct/network.md)
+- [static var network: CLError.Code](./network.md)
   A constant that indicates the network was unavailable or a network error occurred.
-- [static var headingFailure: CLError.Code](clerror-swift.struct/headingfailure.md)
+- [static var headingFailure: CLError.Code](./headingfailure.md)
   A constant that indicates the location manager can’t determine the heading.
-- [static var rangingUnavailable: CLError.Code](clerror-swift.struct/rangingunavailable.md)
+- [static var rangingUnavailable: CLError.Code](./rangingunavailable.md)
   A constant that indicates ranging is disabled.
-- [static var rangingFailure: CLError.Code](clerror-swift.struct/rangingfailure.md)
+- [static var rangingFailure: CLError.Code](./rangingfailure.md)
   A constant that indicates a general ranging error occurred.
-- [CLError.Code](clerror-swift.struct/code.md)
+- [CLError.Code](./code.md)
   Error codes returned by the location manager object.
 
 

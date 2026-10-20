@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The target image for a transition.
@@ -11,7 +12,7 @@ The target image for a transition.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The target image for a transition.
 var targetImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * targetImage;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](citransitionfilter/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var time: Float](citransitionfilter/time.md)
+- [var time: Float](./time.md)
   The parametric time of the transition.
 
 

@@ -1,7 +1,8 @@
 # CLKComplicationDescriptor
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor that defines a complication and the families that it supports.
 
@@ -14,14 +15,18 @@ A descriptor that defines a complication and the families that it supports.
 class CLKComplicationDescriptor
 ```
 
+```objc
+@interface CLKComplicationDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Declaring complications for your app](./declaring-complications-for-your-app.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
 
 #### Overview
 
-Use complication descriptors to define the different types of complications that your app supports. Each descriptor provides a unique identifier for the complication, and the list of families that the complication supports. ClockKit defines the available families using the [`CLKComplicationFamily`](clkcomplicationfamily.md) enumeration, while your app can define as many identifiers as it needs. Each unique [`identifier`](clkcomplication/identifier.md) within your app represents a separate complication in the complication picker. For example, a weather app may have separate descriptors for `Condition`, `Temperature`, and `Precipitation.`
+Use complication descriptors to define the different types of complications that your app supports. Each descriptor provides a unique identifier for the complication, and the list of families that the complication supports. ClockKit defines the available families using the [`CLKComplicationFamily`](./clkcomplicationfamily.md) enumeration, while your app can define as many identifiers as it needs. Each unique [`identifier`](./clkcomplication/identifier.md) within your app represents a separate complication in the complication picker. For example, a weather app may have separate descriptors for `Condition`, `Temperature`, and `Precipitation.`
 
 ```swift
 // Create the condition descriptor.
@@ -85,50 +90,51 @@ func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor])
 }
 ```
 
-When dynamically creating identifiers, consider using the descriptor’s [`userInfo`](clkcomplicationdescriptor/userinfo.md) property to contain any additional information your app needs to create timeline entries for the complication. In the above example, the weather app adds the `myCityIDKey` and `myTypeIdentifierKey` `keys` so that it can access the city and weather data type without parsing the `identifier` string.
+When dynamically creating identifiers, consider using the descriptor’s [`userInfo`](./clkcomplicationdescriptor/userinfo.md) property to contain any additional information your app needs to create timeline entries for the complication. In the above example, the weather app adds the `myCityIDKey` and `myTypeIdentifierKey` `keys` so that it can access the city and weather data type without parsing the `identifier` string.
 
 ## Topics
 
 ### Creating descriptors
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily])](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:).md)
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily])](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies%29.md)
   Returns a new complication descriptor.
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userActivity: NSUserActivity)](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:useractivity:).md)
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userActivity: NSUserActivity)](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,useractivity%29.md)
   Returns a new complication descriptor with an associated user activity.
-- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](clkcomplicationdescriptor/init(identifier:displayname:supportedfamilies:userinfo:).md)
+- [convenience init(identifier: String, displayName: String, supportedFamilies: [CLKComplicationFamily], userInfo: [AnyHashable : Any])](./clkcomplicationdescriptor/init%28identifier,displayname,supportedfamilies,userinfo%29.md)
   Returns a new complication descriptor with an associated dictionary of user data.
 ### Accessing the descriptor’s data
-- [var identifier: String](clkcomplicationdescriptor/identifier.md)
+- [var identifier: String](./clkcomplicationdescriptor/identifier.md)
   A string that uniquely identifies the descriptor.
-- [var displayName: String](clkcomplicationdescriptor/displayname.md)
+- [var displayName: String](./clkcomplicationdescriptor/displayname.md)
   A localized string that identifies complications from the descriptor to the user.
-- [var supportedFamilies: [CLKComplicationFamily]](clkcomplicationdescriptor/supportedfamilies-4ckbx.md)
+- [var supportedFamilies: [CLKComplicationFamily]](./clkcomplicationdescriptor/supportedfamilies-4ckbx.md)
   The families that support this type of complication.
-- [var userActivity: NSUserActivity?](clkcomplicationdescriptor/useractivity.md)
+- [var userActivity: NSUserActivity?](./clkcomplicationdescriptor/useractivity.md)
   A user activity object that represents the state of the app at a moment in time.
-- [var userInfo: [AnyHashable : Any]?](clkcomplicationdescriptor/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./clkcomplicationdescriptor/userinfo.md)
   A dictionary of data that your data source can use to generate timeline entries.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Migrating ClockKit complications to WidgetKit](../widgetkit/converting-a-clockkit-app.md)
+### Migration Support
+- [Migrating ClockKit complications to WidgetKit](../WidgetKit/converting-a-clockkit-app.md)
   Leverage WidgetKit’s API to create watchOS complications using SwiftUI.
-- [protocol CLKComplicationDataSource](clkcomplicationdatasource.md)
+- [protocol CLKComplicationDataSource](./clkcomplicationdatasource.md)
   A protocol that provides ClockKit with information about your complication.
-- [let CLKDefaultComplicationIdentifier: String](clkdefaultcomplicationidentifier.md)
+- [let CLKDefaultComplicationIdentifier: String](./clkdefaultcomplicationidentifier.md)
   An identifier representing a default complication.
 
 

@@ -1,7 +1,8 @@
 # Plottable
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can serve as data to plot in a chart.
 
@@ -22,7 +23,7 @@ protocol Plottable
 
 #### Overview
 
-You create [`PlottableValue`](plottablevalue.md) items from data that conforms to `Plottable` using a method like [`value(_:_:)`](plottablevalue/value(_:_:)-13lvv.md). You then use those items as the values in a chart, like for the [`BarMark`](barmark.md) chart in the following example:
+You create [`PlottableValue`](./plottablevalue.md) items from data that conforms to `Plottable` using a method like [`value(_:_:)`](./plottablevalue/value%28_,_%29-13lvv.md). You then use those items as the values in a chart, like for the [`BarMark`](./barmark.md) chart in the following example:
 
 ```swift
 BarMark(
@@ -54,26 +55,27 @@ enum Status: String, Plottable {
 ## Topics
 
 ### Supporting types
-- [protocol PrimitivePlottableProtocol](primitiveplottableprotocol.md)
+- [protocol PrimitivePlottableProtocol](./primitiveplottableprotocol.md)
   A type that represents the primitive plottable types supported by the framework. Don’t use this type directly.
 ### Associated Types
-- [associatedtype PrimitivePlottable : PrimitivePlottableProtocol](plottable/primitiveplottable-swift.associatedtype.md)
+- [associatedtype PrimitivePlottable : PrimitivePlottableProtocol](./plottable/primitiveplottable-swift.associatedtype.md)
   A primitive plottable type.
 ### Initializers
-- [init?(primitivePlottable: Self.PrimitivePlottable)](plottable/init(primitiveplottable:).md)
+- [init?(primitivePlottable: Self.PrimitivePlottable)](./plottable/init%28primitiveplottable%29.md)
   Creates the plottable value for the underlying type, if any, that corresponds to the primitive plottable value.
 ### Instance Properties
-- [var primitivePlottable: Self.PrimitivePlottable](plottable/primitiveplottable-xwx8.md)
+- [var primitivePlottable: Self.PrimitivePlottable](./plottable/primitiveplottable-xwx8.md)
   The primitive plottable value that corresponds to the plottable value of the underlying type.
 
 ## Relationships
 
 ### Inherited By
-- [PrimitivePlottableProtocol](primitiveplottableprotocol.md)
+- [PrimitivePlottableProtocol](./primitiveplottableprotocol.md)
 
 ## See Also
 
-- [struct PlottableValue](plottablevalue.md)
+### Labeled data
+- [struct PlottableValue](./plottablevalue.md)
   Labeled data that you plot in a chart using marks.
 
 

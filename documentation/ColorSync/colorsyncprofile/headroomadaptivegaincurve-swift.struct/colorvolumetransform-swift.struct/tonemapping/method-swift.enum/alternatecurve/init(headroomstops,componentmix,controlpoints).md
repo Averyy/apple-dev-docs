@@ -1,7 +1,8 @@
 # init(headroomStops:componentMix:controlPoints:)
 
 **Framework**: ColorSync  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alternate gain curve.
 
@@ -22,7 +23,7 @@ init(headroomStops: Float = 0.0, componentMix: ColorSyncProfile.HeadroomAdaptive
 
 #### Discussion
 
-> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeHeadroomStops(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/negativeheadroomstops(_:).md) if `headroomStops` is negative, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.zeroFreeStyleWeights`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/zerofreestyleweights.md) if a free-style `componentMix` has all-zero weights.
+> **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeHeadroomStops(_:)`](../../../../error/negativeheadroomstops%28_%29.md) if `headroomStops` is negative, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.zeroFreeStyleWeights`](../../../../error/zerofreestyleweights.md) if a free-style `componentMix` has all-zero weights.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 When set, this property will collapse the accessory view to 0 height (animatable) but not remove it from the window. Set through the animator object to animate it.
 
@@ -12,6 +13,10 @@ When set, this property will collapse the accessory view to 0 height (animatable
 
 ```swift
 var isHidden: Bool { get set }
+```
+
+```objc
+@property (getter=isHidden) BOOL hidden;
 ```
 
 

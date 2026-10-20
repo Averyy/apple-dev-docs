@@ -1,7 +1,8 @@
 # mapButtonSafeAreaLayoutGuide
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout guide that represents the portion of the map template that map buttons don’t obscure.
 
@@ -14,6 +15,10 @@ The layout guide that represents the portion of the map template that map button
 
 ```swift
 var mapButtonSafeAreaLayoutGuide: UILayoutGuide { get }
+```
+
+```objc
+@property (nonatomic, readonly) UILayoutGuide * mapButtonSafeAreaLayoutGuide;
 ```
 
 

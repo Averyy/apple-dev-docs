@@ -1,7 +1,8 @@
 # selectionHighlightColor
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highlight color of a rectangle.
 
@@ -17,11 +18,16 @@ The highlight color of a rectangle.
 optional var selectionHighlightColor: UIColor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIColor * selectionHighlightColor;
+```
+
 ## See Also
 
-- [var insertionPointColor: UIColor?](beextendedtextinputtraits/insertionpointcolor.md)
+### Customizing text input visuals
+- [var insertionPointColor: UIColor?](./insertionpointcolor.md)
   A color for the text cursor at the insertion point.
-- [var selectionHandleColor: UIColor?](beextendedtextinputtraits/selectionhandlecolor.md)
+- [var selectionHandleColor: UIColor?](./selectionhandlecolor.md)
   A color that customizes the look of the handle.
 
 

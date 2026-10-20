@@ -1,7 +1,8 @@
 # application(_:didFailToRegisterForRemoteNotificationsWithError:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the app was unable to register for Apple Push Services.
 
@@ -15,11 +16,15 @@ Tells the delegate that the app was unable to register for Apple Push Services.
 optional func application(_ application: NSApplication, didFailToRegisterForRemoteNotificationsWithError error: any Error)
 ```
 
+```objc
+- (void) application:(NSApplication *) application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error;
+```
+
 #### Discussion
 
-The delegate receives this message after the [`registerForRemoteNotifications(matching:)`](nsapplication/registerforremotenotifications(matching:).md) method of [`NSApplication`](nsapplication.md) is invoked and there is an error in the registration process.
+The delegate receives this message after the [`registerForRemoteNotifications(matching:)`](../nsapplication/registerforremotenotifications%28matching%29.md) method of [`NSApplication`](../nsapplication.md) is invoked and there is an error in the registration process.
 
-For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/usernotifications/registering-your-app-with-apns).
+For more information about how to register with APNs, see [Registering your app with APNs](../../UserNotifications/registering-your-app-with-apns.md).
 
 ## Parameters
 
@@ -28,9 +33,10 @@ For more information about how to register with APNs, see [`Registering your app
 
 ## See Also
 
-- [func application(NSApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](nsapplicationdelegate/application(_:didregisterforremotenotificationswithdevicetoken:).md)
+### Handling Push Notifications
+- [func application(NSApplication, didRegisterForRemoteNotificationsWithDeviceToken: Data)](./application%28_,didregisterforremotenotificationswithdevicetoken%29.md)
   Tells the delegate that the app registered for Apple Push Services.
-- [func application(NSApplication, didReceiveRemoteNotification: [String : Any])](nsapplicationdelegate/application(_:didreceiveremotenotification:).md)
+- [func application(NSApplication, didReceiveRemoteNotification: [String : Any])](./application%28_,didreceiveremotenotification%29.md)
   Tells the delegate when the app receives a remote notification.
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of values, each containing a location coordinates.
 
@@ -10,7 +11,7 @@ An array of values, each containing a location coordinates.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBLocation[]? value;
 ```
 

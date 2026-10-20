@@ -1,6 +1,7 @@
 # Searching the World for Physics Bodies
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Cast a ray to find the physics bodies in the scene that intersect it.
 
@@ -17,7 +18,7 @@ In some cases, you can implement these interactions using the collisions and con
 
 However, it’s not easy to implement concepts such as line of sight using this design. To implement these, you use the scene’s physics world. With the physics world, you can search for all physics bodies along a ray or physics bodies that intersect a particular point or rectangle.
 
-##### Cast a Ray From the Center of the Scene
+##### Cast a Ray from the Center of the Scene
 
 An example illustrates the basic technique. The following code shows one possible implementation of a line-of-sight detection system. It casts a ray from the origin of the scene in a particular direction, searching for the nearest physics body along the ray. If it finds a physics body, it tests the category mask to see whether this is a target it should attack. If it sees a target designated for attack, it shoots the cannon.
 
@@ -62,23 +63,24 @@ func attackTargetIfVisible() {
 
 Another way to implement the same behavior is to set the starting and ending positions of the ray to those of two physics bodies in your scene. For example, you might use the location of the player’s game object as one position and the position of an enemy unit as the other position.
 
-You can also perform searches for physics bodies that intersect a point or rectangle using the [`body(at:)`](skphysicsworld/body(at:).md) and [`body(in:)`](skphysicsworld/body(in:).md) methods.
+You can also perform searches for physics bodies that intersect a point or rectangle using the [`body(at:)`](./skphysicsworld/body%28at%29.md) and [`body(in:)`](./skphysicsworld/body%28in%29.md) methods.
 
-Sometimes you can’t make a simple determination based on the closest physics body within the scene. For example, in the logic of your game, you might decide that not all physics bodies block the line of sight. In this case, you need to enumerate all of the physics bodies along the ray using the [`enumerateBodies(alongRayStart:end:using:)`](skphysicsworld/enumeratebodies(alongraystart:end:using:).md) method. You supply a block that is called once for each body along the ray. You can then use this information to make a more informed decision about whether the line of sight exists to a target.
+Sometimes you can’t make a simple determination based on the closest physics body within the scene. For example, in the logic of your game, you might decide that not all physics bodies block the line of sight. In this case, you need to enumerate all of the physics bodies along the ray using the [`enumerateBodies(alongRayStart:end:using:)`](./skphysicsworld/enumeratebodies%28alongraystart,end,using%29.md) method. You supply a block that is called once for each body along the ray. You can then use this information to make a more informed decision about whether the line of sight exists to a target.
 
 ## See Also
 
-- [func body(alongRayStart: CGPoint, end: CGPoint) -> SKPhysicsBody?](skphysicsworld/body(alongraystart:end:).md)
+### Searching the Scene for Physics Bodies
+- [func body(alongRayStart: CGPoint, end: CGPoint) -> SKPhysicsBody?](./skphysicsworld/body%28alongraystart,end%29.md)
   Searches for the first physics body that intersects a ray.
-- [func body(at: CGPoint) -> SKPhysicsBody?](skphysicsworld/body(at:).md)
+- [func body(at: CGPoint) -> SKPhysicsBody?](./skphysicsworld/body%28at%29.md)
   Searches for the first physics body that contains a point.
-- [func body(in: CGRect) -> SKPhysicsBody?](skphysicsworld/body(in:).md)
+- [func body(in: CGRect) -> SKPhysicsBody?](./skphysicsworld/body%28in%29.md)
   Searches for the first physics body that intersects the specified rectangle.
-- [func enumerateBodies(alongRayStart: CGPoint, end: CGPoint, using: (SKPhysicsBody, CGPoint, CGVector, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(alongraystart:end:using:).md)
+- [func enumerateBodies(alongRayStart: CGPoint, end: CGPoint, using: (SKPhysicsBody, CGPoint, CGVector, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28alongraystart,end,using%29.md)
   Enumerates all the physics bodies in the scene that intersect a ray.
-- [func enumerateBodies(at: CGPoint, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(at:using:).md)
+- [func enumerateBodies(at: CGPoint, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28at,using%29.md)
   Enumerates all the physics bodies in the scene that contain a point.
-- [func enumerateBodies(in: CGRect, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](skphysicsworld/enumeratebodies(in:using:).md)
+- [func enumerateBodies(in: CGRect, using: (SKPhysicsBody, UnsafeMutablePointer<ObjCBool>) -> Void)](./skphysicsworld/enumeratebodies%28in,using%29.md)
   Enumerates all the physics bodies in the scene that intersect the specified rectangle.
 
 

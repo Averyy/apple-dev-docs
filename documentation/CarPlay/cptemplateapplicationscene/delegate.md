@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that receives the scene’s life-cycle events.
 
@@ -16,13 +17,18 @@ The object that receives the scene’s life-cycle events.
 var delegate: (any CPTemplateApplicationSceneDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<CPTemplateApplicationSceneDelegate> delegate;
+```
+
 #### Discussion
 
 Use this property to access the delegate object CarPlay creates from the class name you provide in the scene manifest of your app’s `Info.plist` file.
 
 ## See Also
 
-- [protocol CPTemplateApplicationSceneDelegate](cptemplateapplicationscenedelegate.md)
+### Responding to the Scene Life Cycle
+- [protocol CPTemplateApplicationSceneDelegate](../cptemplateapplicationscenedelegate.md)
   The methods for responding to the life cycle events of your app’s scene.
 
 

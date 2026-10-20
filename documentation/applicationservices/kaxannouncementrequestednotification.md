@@ -1,7 +1,8 @@
 # kAXAnnouncementRequestedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification to request an announcement to be spoken.
 
@@ -12,6 +13,10 @@ Notification to request an announcement to be spoken.
 
 ```swift
 var kAXAnnouncementRequestedNotification: String { get }
+```
+
+```c
+#define kAXAnnouncementRequestedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # WarningLevel
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The level at which a compiler warning should be treated.
 
@@ -21,19 +22,19 @@ This enum is used with the `SwiftSetting.treatAllWarnings(as:_:)` and `SwiftSett
 ## Topics
 
 ### Enumeration Cases
-- [WarningLevel.error](warninglevel/error.md)
+- [WarningLevel.error](./warninglevel/error.md)
   Treat as an error.
-- [WarningLevel.warning](warninglevel/warning.md)
+- [WarningLevel.warning](./warninglevel/warning.md)
   Treat as a warning.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # accelerationStructureID
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The acceleration resource handle to use for this instance.
 
@@ -17,6 +18,10 @@ The acceleration resource handle to use for this instance.
 
 ```swift
 var accelerationStructureID: MTLResourceID
+```
+
+```c
+MTLResourceID accelerationStructureID;
 ```
 
 

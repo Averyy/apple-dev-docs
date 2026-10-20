@@ -1,7 +1,8 @@
 # Unknown
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 unknown or unspecified other use
 
@@ -10,7 +11,7 @@ unknown or unspecified other use
 
 ## Declaration
 
-```swift
+```c
 Unknown
 ```
 

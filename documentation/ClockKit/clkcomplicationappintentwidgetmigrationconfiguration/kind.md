@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies a widget in your WidgetKit extension.
 
@@ -16,11 +17,12 @@ final let kind: String
 
 ## See Also
 
-- [let extensionBundleIdentifier: String](clkcomplicationappintentwidgetmigrationconfiguration/extensionbundleidentifier.md)
+### Accessing configuration properties
+- [let extensionBundleIdentifier: String](./extensionbundleidentifier.md)
   The bundle identifier for your WidgetKit extension.
-- [let intent: Intent](clkcomplicationappintentwidgetmigrationconfiguration/intent.md)
+- [let intent: Intent](./intent.md)
   An intent that provides additional configuration information to your WidgetKit complication.
-- [let localizedDisplayName: String](clkcomplicationappintentwidgetmigrationconfiguration/localizeddisplayname.md)
+- [let localizedDisplayName: String](./localizeddisplayname.md)
   A localized name for the complication.
 
 

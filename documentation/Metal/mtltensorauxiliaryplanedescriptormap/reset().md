@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Empties the map of all its elements.
 
@@ -17,6 +18,10 @@ Empties the map of all its elements.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

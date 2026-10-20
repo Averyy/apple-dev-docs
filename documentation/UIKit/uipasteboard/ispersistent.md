@@ -1,7 +1,8 @@
 # isPersistent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pasteboard is persistent.
 
@@ -11,10 +12,16 @@ A Boolean value that indicates whether the pasteboard is persistent.
 - Mac Catalyst 13.1+
 - visionOS 1.0+
 
+> **Deprecated**: Use shared app group containers instead. For more information about app groups, see [Adding an App to an App Group](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW19). For more information about shared containers, see the [`containerURL(forSecurityApplicationGroupIdentifier:)`](../../Foundation/filemanager/containerurl%28forsecurityapplicationgroupidentifier%29.md) method of [`FileManager`](../../Foundation/filemanager.md) (Swift) or the [`containerURL(forSecurityApplicationGroupIdentifier:)`](../../Foundation/filemanager/containerurl%28forsecurityapplicationgroupidentifier%29.md) method of [`FileManager`](../../Foundation/filemanager.md) (Objective-C).
+
 ## Declaration
 
 ```swift
 var isPersistent: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isPersistent) BOOL persistent;
 ```
 
 #### Discussion
@@ -23,19 +30,21 @@ Nonpersistent named pasteboards remain available. You can use these to implement
 
 ## See Also
 
-- [init?(name: UIPasteboard.Name, create: Bool)](uipasteboard/init(name:create:).md)
+### Related Documentation
+- [init?(name: UIPasteboard.Name, create: Bool)](./init%28name,create%29.md)
   Returns a pasteboard that you identify by name, optionally creating it if it doesn’t exist.
-- [class func withUniqueName() -> UIPasteboard](uipasteboard/withuniquename.md)
+- [class func withUniqueName() -> UIPasteboard](./withuniquename%28%29.md)
   Returns an app pasteboard that you identify by a unique system-generated name.
-- [func setPersistent(Bool)](uipasteboard/setpersistent(_:).md)
+### Deprecated
+- [func setPersistent(Bool)](./setpersistent%28_%29.md)
   A Boolean value that indicates whether the pasteboard is persistent.
-- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<Set<UIPasteboard.DetectionPattern>, any Error>) -> ())](uipasteboard/detectpatterns(for:completionhandler:)-5zlnd.md)
+- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<Set<UIPasteboard.DetectionPattern>, any Error>) -> ())](./detectpatterns%28for,completionhandler%29-5zlnd.md)
   Determines whether the first pasteboard item matches the specified patterns, without notifying the user.
-- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[Set<UIPasteboard.DetectionPattern>], any Error>) -> ())](uipasteboard/detectpatterns(for:initemset:completionhandler:)-29iwn.md)
+- [func detectPatterns(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[Set<UIPasteboard.DetectionPattern>], any Error>) -> ())](./detectpatterns%28for,initemset,completionhandler%29-29iwn.md)
   Determines whether pasteboard items match the specified patterns, without notifying the user.
-- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<[UIPasteboard.DetectionPattern : Any], any Error>) -> ())](uipasteboard/detectvalues(for:completionhandler:)-9p2ff.md)
+- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, completionHandler: (Result<[UIPasteboard.DetectionPattern : Any], any Error>) -> ())](./detectvalues%28for,completionhandler%29-9p2ff.md)
   Determines whether the first pasteboard item matches the specified patterns, reading the contents if it finds a match.
-- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[[UIPasteboard.DetectionPattern : Any]], any Error>) -> ())](uipasteboard/detectvalues(for:initemset:completionhandler:)-8y0iw.md)
+- [func detectValues(for: Set<UIPasteboard.DetectionPattern>, inItemSet: IndexSet?, completionHandler: (Result<[[UIPasteboard.DetectionPattern : Any]], any Error>) -> ())](./detectvalues%28for,initemset,completionhandler%29-8y0iw.md)
   Determines whether pasteboard items match the specified patterns, reading the contents if it finds a match.
 
 

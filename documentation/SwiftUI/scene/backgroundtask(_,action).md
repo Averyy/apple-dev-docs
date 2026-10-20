@@ -1,7 +1,8 @@
 # backgroundTask(_:action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the specified action when the system provides a background task.
 
@@ -23,7 +24,7 @@ func backgroundTask<D, R>(_ task: BackgroundTask<D, R>, action: @escaping @Senda
 
 #### Discussion
 
-When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system put your app back into a suspended state. The system considers the task completed when the action closure that you provide returns. If the action closure has not returned when the task runs out of time to complete, the system cancels the task. Use [`withTaskCancellationHandler(operation:onCancel:isolation:)`](https://developer.apple.com/documentation/swift/withtaskcancellationhandler(operation:oncancel:isolation:)) to observe whether the task is low on runtime.
+When the system wakes your app or extension for one or more background tasks, it will call any actions associated with matching tasks. When your async actions return, the system put your app back into a suspended state. The system considers the task completed when the action closure that you provide returns. If the action closure has not returned when the task runs out of time to complete, the system cancels the task. Use [`withTaskCancellationHandler(operation:onCancel:isolation:)`](../../Swift/withtaskcancellationhandler%28operation,oncancel,isolation%29.md) to observe whether the task is low on runtime.
 
 ```swift
 /// An example of a Weather Application.
@@ -49,11 +50,12 @@ struct WeatherApp: App {
 
 ## See Also
 
-- [struct BackgroundTask](backgroundtask.md)
+### Handling background tasks
+- [struct BackgroundTask](../backgroundtask.md)
   The kinds of background tasks that your app or extension can handle.
-- [struct SnapshotData](snapshotdata.md)
+- [struct SnapshotData](../snapshotdata.md)
   The associated data of a snapshot background task.
-- [struct SnapshotResponse](snapshotresponse.md)
+- [struct SnapshotResponse](../snapshotresponse.md)
   Your application’s response to a snapshot background task.
 
 

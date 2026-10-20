@@ -1,7 +1,8 @@
 # availableTrackAssociationTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of association types that the track uses to associate with other tracks.
 
@@ -22,7 +23,8 @@ var availableTrackAssociationTypes: [AVAssetTrack.AssociationType] { get }
 
 ## See Also
 
-- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](avcompositiontrack/associatedtracks(oftype:).md)
+### Accessing track associations
+- [func associatedTracks(ofType: AVAssetTrack.AssociationType) -> [AVAssetTrack]](./associatedtracks%28oftype%29.md)
   Returns an array of associated tracks that have the specified association type.
 
 

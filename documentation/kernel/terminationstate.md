@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum TerminationState : unsigned int {
     ...
 };
@@ -17,9 +17,9 @@ enum TerminationState : unsigned int {
 ## Topics
 
 ### Constants
-- [kNeedsTermination](terminationstate/kneedstermination.md)
-- [kNotTerminated](terminationstate/knotterminated.md)
-- [kTerminated](terminationstate/kterminated.md)
+- [kNeedsTermination](./terminationstate/kneedstermination.md)
+- [kNotTerminated](./terminationstate/knotterminated.md)
+- [kTerminated](./terminationstate/kterminated.md)
 
 
 ---

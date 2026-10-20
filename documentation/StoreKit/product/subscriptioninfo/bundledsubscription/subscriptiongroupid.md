@@ -1,7 +1,8 @@
 # subscriptionGroupID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The group identifier for this subscription.
 

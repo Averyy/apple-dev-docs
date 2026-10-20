@@ -1,7 +1,8 @@
 # Partial sync sample table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A table of sample numbers.
 
@@ -19,15 +20,16 @@ The layout of a partial sync sample table is as follows.
 
 ## See Also
 
-- [Size](partial_sync_sample_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the partial sync sample atom.
-- [Type](partial_sync_sample_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](partial_sync_sample_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this atom.
-- [Flags](partial_sync_sample_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space reserved for flags.
-- [Entry count](partial_sync_sample_atom/entry_count.md)
+- [Entry count](./entry_count.md)
   A 32-bit unsigned integer that specifies the number of sample numbers in the array that follows.
 
 

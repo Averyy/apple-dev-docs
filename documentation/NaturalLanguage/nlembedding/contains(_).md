@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a Boolean value that indicates whether the term is in the vocabulary.
 
@@ -20,6 +21,10 @@ Requests a Boolean value that indicates whether the term is in the vocabulary.
 func contains(_ string: String) -> Bool
 ```
 
+```objc
+- (BOOL) containsString:(NSString *) string;
+```
+
 #### Return Value
 
 `true` if the term is in the word embedding’s vocabulary, otherwise `false`.
@@ -30,15 +35,16 @@ func contains(_ string: String) -> Bool
 
 ## See Also
 
-- [var dimension: Int](nlembedding/dimension.md)
+### Inspecting the vocabulary of an embedding
+- [var dimension: Int](./dimension.md)
   The number of dimensions in the vocabulary’s vector space.
-- [var vocabularySize: Int](nlembedding/vocabularysize.md)
+- [var vocabularySize: Int](./vocabularysize.md)
   The number of words in the vocabulary.
-- [var language: NLLanguage?](nlembedding/language.md)
+- [var language: NLLanguage?](./language.md)
   The language of the text in the word embedding.
-- [func vector(for: String) -> [Double]?](nlembedding/vector(for:).md)
+- [func vector(for: String) -> [Double]?](./vector%28for%29.md)
   Requests the vector for the given term.
-- [var revision: Int](nlembedding/revision.md)
+- [var revision: Int](./revision.md)
   The revision of the word embedding.
 
 

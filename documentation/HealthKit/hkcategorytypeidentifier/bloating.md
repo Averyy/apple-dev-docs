@@ -1,7 +1,8 @@
 # bloating
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records bloating as a symptom.
 
@@ -19,23 +20,28 @@ A category type that records bloating as a symptom.
 static let bloating: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierBloating;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let abdominalCramps: HKCategoryTypeIdentifier](hkcategorytypeidentifier/abdominalcramps.md)
+### Abdominal and Gastrointestinal
+- [static let abdominalCramps: HKCategoryTypeIdentifier](./abdominalcramps.md)
   A category type that records abdominal cramps as a symptom.
-- [static let constipation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/constipation.md)
+- [static let constipation: HKCategoryTypeIdentifier](./constipation.md)
   A category type that records constipation as a symptom.
-- [static let diarrhea: HKCategoryTypeIdentifier](hkcategorytypeidentifier/diarrhea.md)
+- [static let diarrhea: HKCategoryTypeIdentifier](./diarrhea.md)
   A category type that records diarrhea as a symptom.
-- [static let heartburn: HKCategoryTypeIdentifier](hkcategorytypeidentifier/heartburn.md)
+- [static let heartburn: HKCategoryTypeIdentifier](./heartburn.md)
   A category type that records heartburn as a symptom.
-- [static let nausea: HKCategoryTypeIdentifier](hkcategorytypeidentifier/nausea.md)
+- [static let nausea: HKCategoryTypeIdentifier](./nausea.md)
   A category type that records nausea as a symptom.
-- [static let vomiting: HKCategoryTypeIdentifier](hkcategorytypeidentifier/vomiting.md)
+- [static let vomiting: HKCategoryTypeIdentifier](./vomiting.md)
   A category type that records vomiting as a symptom.
 
 

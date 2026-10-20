@@ -1,7 +1,8 @@
 # ownerName
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the user who owns the record zone.
 
@@ -10,7 +11,7 @@ The ID of the user who owns the record zone.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,9 +21,14 @@ The ID of the user who owns the record zone.
 var ownerName: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * ownerName;
+```
+
 ## See Also
 
-- [var zoneName: String](ckrecordzone/id/zonename.md)
+### Getting the Record Zone ID Attributes
+- [var zoneName: String](./zonename.md)
   The unique name of the record zone.
 
 

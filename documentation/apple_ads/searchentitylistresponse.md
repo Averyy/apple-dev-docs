@@ -1,16 +1,19 @@
 # SearchEntityListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response details of geosearch requests.
 
 **Availability**:
-- Search Ads 2.0+
+- Search Ads 2.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object SearchEntityListResponse
 ```
 
@@ -22,9 +25,10 @@ object SearchEntityListResponse
 
 ## See Also
 
-- [object GeoRequest](georequest.md)
+### Search Geolocation Request and Response Objects
+- [object GeoRequest](./georequest.md)
   The geosearch request object.
-- [object SearchEntity](searchentity.md)
+- [object SearchEntity](./searchentity.md)
   The list of geolocations that includes the geoidentifier and entity type.
 
 

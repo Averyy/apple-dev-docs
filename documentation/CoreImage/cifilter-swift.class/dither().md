@@ -1,7 +1,8 @@
 # dither()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Applies randomized noise to produce a processed look.
 
@@ -19,6 +20,10 @@ Applies randomized noise to produce a processed look.
 class func dither() -> any CIFilter & CIDither
 ```
 
+```objc
++ (CIFilter<CIDither> *) ditherFilter;
+```
+
 #### Return Value
 
 The modified image.
@@ -29,8 +34,8 @@ The effect applies a dithering effect to the input image. The effect applies ran
 
 The dither filter uses the following properties:
 
-- **`inputImage`**: An image with the type [`CIImage`](ciimage.md).
-- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+- **`inputImage`**: An image with the type [`CIImage`](../ciimage.md).
+- **`intensity`**: A `float` representing the desired strength of the effect as an [`NSNumber`](../../Foundation/nsnumber.md).
 
 The following code creates a filter that adds desaturation to the input image:
 
@@ -43,39 +48,40 @@ func dither(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a dither filter is applied, resulting in the image having a worn appearance.](/images/com.apple.coreimage/media-3545020@2x.png)
+![Two pictures of a pink flower surrounded by foliage. The photo on the left shows a single flower photographed close-up, in focus, with good light and no effects. In the photo on the right, a dither filter is applied, resulting in the image having a worn appearance.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-3545020@2x.png)
 
 ## See Also
 
-- [class func colorCrossPolynomial() -> any CIFilter & CIColorCrossPolynomial](cifilter-swift.class/colorcrosspolynomial.md)
+### Color Effect Filters
+- [class func colorCrossPolynomial() -> any CIFilter & CIColorCrossPolynomial](./colorcrosspolynomial%28%29.md)
   Adjusts an image’s color by applying polynomial cross-products.
-- [class func colorCube() -> any CIFilter & CIColorCube](cifilter-swift.class/colorcube.md)
+- [class func colorCube() -> any CIFilter & CIColorCube](./colorcube%28%29.md)
   Adjusts an image’s pixels using a three-dimensional color table.
-- [class func colorCubeWithColorSpace() -> any CIFilter & CIColorCubeWithColorSpace](cifilter-swift.class/colorcubewithcolorspace.md)
+- [class func colorCubeWithColorSpace() -> any CIFilter & CIColorCubeWithColorSpace](./colorcubewithcolorspace%28%29.md)
   Adjusts an image’s pixels using a three-dimensional color table in specified color space.
-- [class func colorCubesMixedWithMask() -> any CIFilter & CIColorCubesMixedWithMask](cifilter-swift.class/colorcubesmixedwithmask.md)
+- [class func colorCubesMixedWithMask() -> any CIFilter & CIColorCubesMixedWithMask](./colorcubesmixedwithmask%28%29.md)
   Alters an image’s pixels using a three-dimensional color tables and a mask image.
-- [class func colorCurves() -> any CIFilter & CIColorCurves](cifilter-swift.class/colorcurves.md)
+- [class func colorCurves() -> any CIFilter & CIColorCurves](./colorcurves%28%29.md)
   Adjusts an image’s color curves.
-- [class func colorInvert() -> any CIFilter & CIColorInvert](cifilter-swift.class/colorinvert.md)
+- [class func colorInvert() -> any CIFilter & CIColorInvert](./colorinvert%28%29.md)
   Inverts an image’s colors.
-- [class func colorMap() -> any CIFilter & CIColorMap](cifilter-swift.class/colormap.md)
+- [class func colorMap() -> any CIFilter & CIColorMap](./colormap%28%29.md)
   Performs a transformation of the input image colors to colors from a gradient image.
-- [class func colorMonochrome() -> any CIFilter & CIColorMonochrome](cifilter-swift.class/colormonochrome.md)
+- [class func colorMonochrome() -> any CIFilter & CIColorMonochrome](./colormonochrome%28%29.md)
   Adjusts an image’s colors to shades of a single color.
-- [class func colorPosterize() -> any CIFilter & CIColorPosterize](cifilter-swift.class/colorposterize.md)
+- [class func colorPosterize() -> any CIFilter & CIColorPosterize](./colorposterize%28%29.md)
   Flattens an image’s colors.
-- [class func convertLabToRGB() -> any CIFilter & CIConvertLab](cifilter-swift.class/convertlabtorgb.md)
+- [class func convertLabToRGB() -> any CIFilter & CIConvertLab](./convertlabtorgb%28%29.md)
   Converts an image from CIELAB to RGB color space.
-- [class func convertRGBtoLab() -> any CIFilter & CIConvertLab](cifilter-swift.class/convertrgbtolab.md)
+- [class func convertRGBtoLab() -> any CIFilter & CIConvertLab](./convertrgbtolab%28%29.md)
   Converts an image from RGB to CIELAB color space.
-- [class func documentEnhancer() -> any CIFilter & CIDocumentEnhancer](cifilter-swift.class/documentenhancer.md)
+- [class func documentEnhancer() -> any CIFilter & CIDocumentEnhancer](./documentenhancer%28%29.md)
   Adjusts an image’s shadows and contrast.
-- [class func falseColor() -> any CIFilter & CIFalseColor](cifilter-swift.class/falsecolor.md)
+- [class func falseColor() -> any CIFilter & CIFalseColor](./falsecolor%28%29.md)
   Replaces an image’s colors with specified colors.
-- [class func labDeltaE() -> any CIFilter & CILabDeltaE](cifilter-swift.class/labdeltae.md)
+- [class func labDeltaE() -> any CIFilter & CILabDeltaE](./labdeltae%28%29.md)
   Compares an image’s color values.
-- [class func maskToAlpha() -> any CIFilter & CIMaskToAlpha](cifilter-swift.class/masktoalpha.md)
+- [class func maskToAlpha() -> any CIFilter & CIMaskToAlpha](./masktoalpha%28%29.md)
   Converts an image to a white image with an alpha component.
 
 

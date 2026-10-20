@@ -1,11 +1,12 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> LazyDropWhileSequence<Base>.Iterator.Element?](lazydropwhilesequence/iterator/next.md)
+- [func next() -> LazyDropWhileSequence<Base>.Iterator.Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 
 

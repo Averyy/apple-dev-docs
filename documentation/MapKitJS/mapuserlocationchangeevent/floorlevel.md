@@ -1,7 +1,8 @@
 # floorLevel
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current floor the user is on.
 
@@ -10,7 +11,7 @@ The current floor the user is on.
 
 ## Declaration
 
-```swift
+```
 readonly floorLevel: number | null;
 ```
 

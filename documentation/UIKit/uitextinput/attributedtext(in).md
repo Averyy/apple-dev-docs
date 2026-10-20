@@ -1,7 +1,8 @@
 # attributedText(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func attributedText(in range: UITextRange) -> NSAttributedString
+```
+
+```objc
+- (NSAttributedString *) attributedTextInRange:(UITextRange *) range;
 ```
 
 

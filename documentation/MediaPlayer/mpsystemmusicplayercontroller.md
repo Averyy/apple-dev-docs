@@ -1,18 +1,19 @@
 # MPSystemMusicPlayerController
 
 **Framework**: Media Player  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for playing videos in the Music app.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,24 +21,29 @@ A protocol for playing videos in the Music app.
 protocol MPSystemMusicPlayerController : NSObjectProtocol
 ```
 
+```objc
+@protocol MPSystemMusicPlayerController <NSObject>
+```
+
 ## Topics
 
 ### Playing video in the music app
-- [func openToPlay(MPMusicPlayerQueueDescriptor)](mpsystemmusicplayercontroller/opentoplay(_:).md)
+- [func openToPlay(MPMusicPlayerQueueDescriptor)](./mpsystemmusicplayercontroller/opentoplay%28_%29.md)
   Opens the Music app and plays the designated videos.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Playing audio using the built-in music player](playing-audio-using-the-built-in-music-player.md)
+### Built-in music playback
+- [Playing audio using the built-in music player](./playing-audio-using-the-built-in-music-player.md)
   Create a media player inside your app to play audio from the user’s media library.
-- [class MPMusicPlayerController](mpmusicplayercontroller.md)
+- [class MPMusicPlayerController](./mpmusicplayercontroller.md)
   An object that plays audio media items from the device’s Music app library.
-- [protocol MPMediaPlayback](mpmediaplayback.md)
+- [protocol MPMediaPlayback](./mpmediaplayback.md)
   A protocol that defines the interface for controlling audio media playback.
 
 

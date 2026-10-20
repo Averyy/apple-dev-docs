@@ -1,7 +1,8 @@
 # open(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func open(with params: MTRValveConfigurationAndControlClusterOpenParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func open(with params: MTRValveConfigurationAndControlClusterOpenParams?) async throws
+```
+
+```objc
+- (void) openWithParams:(MTRValveConfigurationAndControlClusterOpenParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

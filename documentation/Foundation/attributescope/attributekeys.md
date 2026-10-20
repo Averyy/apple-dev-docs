@@ -1,7 +1,8 @@
 # attributeKeys
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of all attribute keys contained within this scope and any sub-scopes.
 

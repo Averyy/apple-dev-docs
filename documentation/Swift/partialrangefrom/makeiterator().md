@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator for this sequence.
 
@@ -19,6 +20,8 @@ Returns an iterator for this sequence.
 ```swift
 func makeIterator() -> PartialRangeFrom<Bound>.Iterator
 ```
+
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
 
 ---

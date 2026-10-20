@@ -1,7 +1,8 @@
 # circularEaseOut
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A circular curve that starts out quickly, then slows down as it approaches the end.
 
@@ -26,17 +27,18 @@ The shape of the curve is equal to the second (top left) quadrant of a unit circ
 
 ## See Also
 
-- [static let easeIn: UnitCurve](unitcurve/easein.md)
+### Getting easing curves
+- [static let easeIn: UnitCurve](./easein.md)
   A bezier curve that starts out slowly, then speeds up as it finishes.
-- [static let easeOut: UnitCurve](unitcurve/easeout.md)
+- [static let easeOut: UnitCurve](./easeout.md)
   A bezier curve that starts out quickly, then slows down as it approaches the end.
-- [static let easeInOut: UnitCurve](unitcurve/easeinout.md)
+- [static let easeInOut: UnitCurve](./easeinout.md)
   A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
-- [static let circularEaseIn: UnitCurve](unitcurve/circulareasein.md)
+- [static let circularEaseIn: UnitCurve](./circulareasein.md)
   A curve that starts out slowly, then speeds up as it finishes.
-- [static let circularEaseInOut: UnitCurve](unitcurve/circulareaseinout.md)
+- [static let circularEaseInOut: UnitCurve](./circulareaseinout.md)
   A circular curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
-- [static let easeInEaseOut: UnitCurve](unitcurve/easeineaseout.md)
+- [static let easeInEaseOut: UnitCurve](./easeineaseout.md)
   A bezier curve that starts out slowly, speeds up over the middle, then slows down again as it approaches the end.
 
 

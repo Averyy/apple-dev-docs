@@ -1,7 +1,8 @@
 # deviceFitStatus
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device fit validation status.
 

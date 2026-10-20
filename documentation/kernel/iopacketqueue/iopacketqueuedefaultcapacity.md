@@ -7,7 +7,7 @@ Describes the default capacity of the queue object.
 
 ## Declaration
 
-```swift
+```c
 static const UInt32 IOPacketQueueDefaultCapacity = 100;
 ```
 

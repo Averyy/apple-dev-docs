@@ -2,15 +2,16 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,12 +19,17 @@
 var breakpoint0: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint breakpoint0;
+```
+
 ## See Also
 
-- [var breakpoint1: CGPoint](cinineparttiled/breakpoint1.md)
-- [var flipYTiles: Bool](cinineparttiled/flipytiles.md)
-- [var growAmount: CGPoint](cinineparttiled/growamount.md)
-- [var inputImage: CIImage?](cinineparttiled/inputimage.md)
+### Instance Properties
+- [var breakpoint1: CGPoint](./breakpoint1.md)
+- [var flipYTiles: Bool](./flipytiles.md)
+- [var growAmount: CGPoint](./growamount.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

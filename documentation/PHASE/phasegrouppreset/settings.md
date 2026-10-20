@@ -1,7 +1,8 @@
 # settings
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary with preset setting values and group objects as keys.
 
@@ -19,9 +20,13 @@ A dictionary with preset setting values and group objects as keys.
 var settings: [String : PHASEGroupPresetSetting] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,PHASEGroupPresetSetting *> * settings;
+```
+
 #### Discussion
 
-This property defines the settings and the engine’s [`groups`](phaseengine/groups.md) that receive the settings.
+This property defines the settings and the engine’s [`groups`](../phaseengine/groups.md) that receive the settings.
 
 
 ---

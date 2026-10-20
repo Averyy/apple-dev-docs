@@ -1,7 +1,8 @@
 # reportPublicKeyCredentialUpdate(relyingPartyIdentifier:userHandle:newName:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Report an update to a credential’s name, such as when changing the user name on an account. This information is shared with all password managers enabled in the system.
 
@@ -20,7 +21,7 @@ final func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userH
 
 #### Discussion
 
-> **Note**: `ASAuthorizationError` if the system failed to accept the update.
+> **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 
 ## Parameters
 

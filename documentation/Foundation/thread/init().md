@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an initialized `NSThread` object.
 
@@ -20,6 +21,10 @@ Returns an initialized `NSThread` object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 An initialized `NSThread` object.
@@ -30,10 +35,12 @@ This is the designated initializer for `NSThread`.
 
 ## See Also
 
-- [Threading Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
-- [func start()](thread/start.md)
+### Related Documentation
+- [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i)
+- [func start()](./start%28%29.md)
   Starts the receiver.
-- [convenience init(target: Any, selector: Selector, object: Any?)](thread/init(target:selector:object:).md)
+### Initializing an NSThread Object
+- [convenience init(target: Any, selector: Selector, object: Any?)](./init%28target,selector,object%29.md)
   Returns an `NSThread` object initialized with the given arguments.
 
 

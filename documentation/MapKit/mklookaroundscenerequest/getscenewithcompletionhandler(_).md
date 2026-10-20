@@ -1,7 +1,8 @@
 # getSceneWithCompletionHandler(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a LookAround scene and calls the specified completion handler.
 
@@ -15,7 +16,15 @@ Requests a LookAround scene and calls the specified completion handler.
 ## Declaration
 
 ```swift
+func getSceneWithCompletionHandler(_ completionHandler: @escaping @MainActor @Sendable (MKLookAroundScene?, (any Error)?) -> Void)
+```
+
+```swift
 var scene: MKLookAroundScene? { get async throws }
+```
+
+```objc
+- (void) getSceneWithCompletionHandler:(void (^)(MKLookAroundScene *, NSError *)) completionHandler;
 ```
 
 ## Parameters
@@ -24,7 +33,8 @@ var scene: MKLookAroundScene? { get async throws }
 
 ## See Also
 
-- [func cancel()](mklookaroundscenerequest/cancel.md)
+### Starting and stopping scene requests
+- [func cancel()](./cancel%28%29.md)
   Cancels the pending scene request.
 
 

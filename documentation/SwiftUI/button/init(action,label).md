@@ -1,7 +1,8 @@
 # init(action:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that displays a custom label.
 
@@ -28,11 +29,12 @@ nonisolated init(action: @escaping @MainActor () -> Void, @ContentBuilder label:
 
 ## See Also
 
-- [init(_:action:)](button/init(_:action:).md)
+### Creating a button
+- [init(_:action:)](./init%28_,action%29.md)
   Creates a button that generates its label from a localized string resource.
-- [init(_:image:action:)](button/init(_:image:action:).md)
+- [init(_:image:action:)](./init%28_,image,action%29.md)
   Creates a button that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:action:)](button/init(_:systemimage:action:).md)
+- [init(_:systemImage:action:)](./init%28_,systemimage,action%29.md)
   Creates a button that generates its label from a localized string key and system image name.
 
 

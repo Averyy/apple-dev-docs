@@ -1,17 +1,24 @@
 # toggleTraditionalCharacterShape(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the `NSCharacterShapeAttributeName` attribute at the current selection.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
+
+> **Deprecated**: Use the traditional shaped characters encoded in the Unicode standard. Access the characters via the character palette.
 
 ## Declaration
 
 ```swift
 func toggleTraditionalCharacterShape(_ sender: Any?)
+```
+
+```objc
+- (void) toggleTraditionalCharacterShape:(id) sender;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ The `NSCharacterShapeAttributeName` constant is defined in NSAttributedString Ap
 
 ## See Also
 
-- [func insertText(Any)](nstextview/inserttext(_:).md)
+### Deprecated
+- [func insertText(Any)](./inserttext%28_%29.md)
   Inserts `aString` into the receiver’s text at the insertion point if there is one, otherwise replacing the selection.
 
 

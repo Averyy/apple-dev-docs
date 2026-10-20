@@ -1,7 +1,8 @@
 # init(device:textureDescriptor:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, textureDescriptor descriptor: MTLTextureDescriptor)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device textureDescriptor:(MTLTextureDescriptor *) descriptor;
 ```
 
 

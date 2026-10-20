@@ -1,7 +1,8 @@
 # mean
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mean used for offsetting.
 
@@ -22,7 +23,8 @@ var mean: Element
 
 ## See Also
 
-- [var standardDeviation: Element](standardscaler/transformer/standarddeviation.md)
+### Getting the properties
+- [var standardDeviation: Element](./standarddeviation.md)
   The standard deviation used for scaling.
 
 

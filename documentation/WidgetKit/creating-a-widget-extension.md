@@ -1,6 +1,7 @@
 # Creating a widget extension
 
-**Framework**: WidgetKit
+**Framework**: WidgetKit  
+**Role**: Article
 
 Display your app’s content in a convenient, informative widget on various devices.
 
@@ -10,11 +11,11 @@ Widgets display relevant, glanceable content that people can quickly access for 
 
 A good way to get started with widgets and WidgetKit is by adding a *static* widget to your app. A static widget doesn’t need any configuration by a person. For example, a static widget might show a stock market summary, or the next event on the person’s calendar. The *data* the widget shows is dynamic, but the *type* of data it shows is fixed. Consider the information your app presents, and choose something that people would find useful to see at a glance on their device.
 
-Widgets can display data in many sizes, from small watch complications or Dynamic Island presentations, to extra large iPad and macOS widgets. The example that follows below focuses on a single size widget, the small system size, or [`WidgetFamily.systemSmall`](widgetfamily/systemsmall.md). The example widget displays the status of a hypothetical game such as the health level of a character.
+Widgets can display data in many sizes, from small watch complications or Dynamic Island presentations, to extra large iPad and macOS widgets. The example that follows below focuses on a single size widget, the small system size, or [`WidgetFamily.systemSmall`](./widgetfamily/systemsmall.md). The example widget displays the status of a hypothetical game such as the health level of a character.
 
-You build widgets using SwiftUI. While there are similarities to how you present views in your app, some aspects are unique to developing widgets. For more information about using SwiftUI, refer to [`SwiftUI`](https://developer.apple.com/documentation/swiftui). However, not all SwiftUI views work in widgets. For a list of the views that work in widgets, refer to [`SwiftUI views for widgets`](swiftui-views.md).
+You build widgets using SwiftUI. While there are similarities to how you present views in your app, some aspects are unique to developing widgets. For more information about using SwiftUI, refer to [SwiftUI](../SwiftUI/SwiftUI.md). However, not all SwiftUI views work in widgets. For a list of the views that work in widgets, refer to [SwiftUI views for widgets](./swiftui-views.md).
 
-##### Add a Widget Target to Your App
+##### Add a widget target to your app
 
 The Widget Extension template provides a starting point for creating your widget. The template creates an extension target that contains a single widget. Later, you can add widgets to the same extension to display different types of information or to support additional widget sizes.
 
@@ -24,24 +25,24 @@ The Widget Extension template provides a starting point for creating your widget
 4. Deselect the Include Live Activity and Include Configuration App Intent checkboxes, if they’re selected.
 5. Click Finish.
 
-![A screenshot showing Xcode’s new target sheet with Widget Extension selected.](/images/com.apple.WidgetKit/WidgetKit-Add-Widget-Extension@2x.png)
+![A screenshot showing Xcode’s new target sheet with Widget Extension selected.](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/WidgetKit-Add-Widget-Extension@2x.png)
 
-> **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app supports Live Activities, consider implementing them at the same time you add your widgets. For more information about Live Activities, refer to [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities).
+> **Note**: Live Activities use WidgetKit and share many aspects of their design and implementation with the widgets in your app. If your app supports Live Activities, consider implementing them at the same time you add your widgets. For more information about Live Activities, refer to [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md).
 
-The widget extension template provides an initial implementation that conforms to the [`Widget`](https://developer.apple.com/documentation/swiftui/widget) protocol. The widget’s `body` property determines the type of content that the widget presents. Static widgets use a [`StaticConfiguration`](staticconfiguration.md) for the `body` property. Other types of widget configurations include:
+The widget extension template provides an initial implementation that conforms to the [`Widget`](../SwiftUI/widget.md) protocol. The widget’s `body` property determines the type of content that the widget presents. Static widgets use a [`StaticConfiguration`](./staticconfiguration.md) for the `body` property. Other types of widget configurations include:
 
-- [`AppIntentConfiguration`](appintentconfiguration.md) that enables user customization, such as a weather widget that needs a zip or postal code for a city, or a package-tracking widget that needs a tracking number.
-- [`ActivityConfiguration`](activityconfiguration.md) to present live data, such as scores during a sporting event or a food delivery estimate.
-- [`RelevanceConfiguration`](relevanceconfiguration.md) to provide relevance clues for widgets in watchOS.
+- [`AppIntentConfiguration`](./appintentconfiguration.md) that enables user customization, such as a weather widget that needs a zip or postal code for a city, or a package-tracking widget that needs a tracking number.
+- [`ActivityConfiguration`](./activityconfiguration.md) to present live data, such as scores during a sporting event or a food delivery estimate.
+- [`RelevanceConfiguration`](./relevanceconfiguration.md) to provide relevance clues for widgets in watchOS.
 
-For more information about these other widget configurations, refer to [`Making a configurable widget`](making-a-configurable-widget.md), [`Displaying live data with Live Activities`](https://developer.apple.com/documentation/activitykit/displaying-live-data-with-live-activities), and [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md).
+For more information about these other widget configurations, refer to [Making a configurable widget](./making-a-configurable-widget.md), [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md), and [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md).
 
-##### Add Configuration Details
+##### Add configuration details
 
 To configure a static widget, provide the following information:
 
 - **`kind`**: A string that identifies the widget. This is an identifier you choose, and should be descriptive of what the widget represents.
-- **`provider`**: An object that conforms to [`TimelineProvider`](timelineprovider.md) and produces a *timeline* that tells WidgetKit when to render the widget. A timeline is a sequence that contains a custom [`TimelineEntry`](timelineentry.md) type you define. The entries in this sequence identify the date when you want WidgetKit to update the widget’s content and includes properties your widget’s view needs to render in the custom type.
+- **`provider`**: An object that conforms to [`TimelineProvider`](./timelineprovider.md) and produces a *timeline* that tells WidgetKit when to render the widget. A timeline is a sequence that contains a custom [`TimelineEntry`](./timelineentry.md) type you define. The entries in this sequence identify the date when you want WidgetKit to update the widget’s content and includes properties your widget’s view needs to render in the custom type.
 - **`content`**: A closure that contains SwiftUI views. WidgetKit invokes this to render the widget’s content, passing a `TimelineEntry` parameter from the provider.
 
 Use modifiers to provide additional configuration details, including a display name, a description, and the families the widget supports. The following code shows a widget that provides general status for a game:
@@ -67,9 +68,9 @@ The widget’s provider generates a timeline for the widget, and includes the ga
 
 > ❗ **Important**: For an app’s widget to appear in the widget gallery, a person must launch the app that contains the widget at least once after the app is installed.
 
-Note the usage of the `@main` attribute on this widget. This attribute indicates that the `GameStatusWidget` is the entry point for the widget extension, implying that the extension contains a single widget. To support multiple widgets, refer to the [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle).
+Note the usage of the `@main` attribute on this widget. This attribute indicates that the `GameStatusWidget` is the entry point for the widget extension, implying that the extension contains a single widget. To support multiple widgets, refer to the [`WidgetBundle`](../SwiftUI/widgetbundle.md).
 
-##### Provide Timeline Entries
+##### Provide timeline entries
 
 The timeline provider you define generates a sequence of timeline entries. Each specifies the date and time to update the widget’s content, and includes the data your widget needs to render its view. The game-status widget might define its timeline entry to include a string that represents the status of the game, as follows:
 
@@ -80,9 +81,9 @@ struct GameStatusEntry: TimelineEntry {
 }
 ```
 
-WidgetKit calls [`getTimeline(in:completion:)`](timelineprovider/gettimeline(in:completion:).md) to request the timeline from the provider. The timeline consists of one or more timeline entries and a reload policy that informs WidgetKit when to request a subsequent timeline.
+WidgetKit calls [`getTimeline(in:completion:)`](./timelineprovider/gettimeline%28in,completion%29.md) to request the timeline from the provider. The timeline consists of one or more timeline entries and a reload policy that informs WidgetKit when to request a subsequent timeline.
 
-> 💡 **Tip**: You can use APNs and WidgetKit push notifications to update your widgets. To build your first widget, create a widget that uses a timeline to update its data, then add push notification updates if it’s a good fit for your widget. For more information, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md).
+> 💡 **Tip**: You can use APNs and WidgetKit push notifications to update your widgets. To build your first widget, create a widget that uses a timeline to update its data, then add push notification updates if it’s a good fit for your widget. For more information, refer to [Keeping a widget up to date](./keeping-a-widget-up-to-date.md).
 
 The following example shows how the game-status widget’s provider generates a timeline that consists of a single entry with the current game status from the server, and a reload policy to request a new timeline in 15 minutes:
 
@@ -114,11 +115,11 @@ struct GameStatusProvider: TimelineProvider {
 
 In this example, if the widget didn’t have the current status from the server, it could store a reference to the completion, perform an asynchronous request to the server to fetch the game status, and call the completion when that request completes.
 
-For more information about generating timelines, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md) and [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md). For more information about handling network requests, refer to [`Making network requests in a widget extension`](making-network-requests-in-a-widget-extension.md).
+For more information about generating timelines, refer to [Keeping a widget up to date](./keeping-a-widget-up-to-date.md) and [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md). For more information about handling network requests, refer to [Making network requests in a widget extension](./making-network-requests-in-a-widget-extension.md).
 
-##### Generate a Preview for the Widget Gallery
+##### Generate a preview for the widget gallery
 
-In order for people to be able to use your widget, it needs to be available in the widget gallery. To show your widget in the widget gallery, WidgetKit asks the provider for a *preview snapshot* that displays generic data. WidgetKit makes this request by calling the provider’s [`getSnapshot(in:completion:)`](timelineprovider/getsnapshot(in:completion:).md) method with the `context` parameter’s [`isPreview`](timelineprovidercontext/ispreview.md) property set to `true`.
+In order for people to be able to use your widget, it needs to be available in the widget gallery. To show your widget in the widget gallery, WidgetKit asks the provider for a *preview snapshot* that displays generic data. WidgetKit makes this request by calling the provider’s [`getSnapshot(in:completion:)`](./timelineprovider/getsnapshot%28in,completion%29.md) method with the `context` parameter’s [`isPreview`](./timelineprovidercontext/ispreview.md) property set to `true`.
 
 In response, you need to create the preview snapshot quickly. If your widget would normally need assets or information that takes time to generate or fetch from a server, use sample data instead.
 
@@ -142,9 +143,9 @@ struct GameStatusProvider: TimelineProvider {
     }
 ```
 
-##### Display Content in Your Widget
+##### Display content in your widget
 
-Widgets define their content using a SwiftUI view, commonly by composing other SwiftUI views. As shown in the [`Add configuration details`](creating-a-widget-extension#Add-configuration-details.md) section, the widget configuration contains the closure that WidgetKit invokes to render the widget’s content.
+Widgets define their content using a SwiftUI view, commonly by composing other SwiftUI views. As shown in the [Add configuration details](./creating-a-widget-extension.md#Add-configuration-details) section, the widget configuration contains the closure that WidgetKit invokes to render the widget’s content.
 
 When people add your widget from the widget gallery, they choose the specific family — for example, small or medium — from the ones your widget supports. The widget’s content closure has to be capable of rendering each family the widget supports. WidgetKit sets the corresponding family and additional properties, such as the color scheme (light or dark), in the SwiftUI environment.
 
@@ -170,19 +171,19 @@ In your widget, as you add more supported families to the widget’s configurati
 
 > **Note**: The view declares its body with `@ViewBuilder` because the type of view it uses varies.
 
-##### Display a Placeholder Widget
+##### Display a placeholder widget
 
 A placeholder view is similar to a preview snapshot, but instead of showing example data to let people see the type of data the widget displays, it shows a generic visual representation with no specific content. When WidgetKit renders your widget, it may need to render your content as a placeholder, for example, while you load data in the background or if you tell the system that your widget contains sensitive information.
 
-##### Hide Sensitive Content
+##### Hide sensitive content
 
 Widgets and watch complications may show sensitive information and can be highly visible, especially on devices with an Always-On display. When you create your widget or watch complication, review its content and consider hiding sensitive information.
 
-To let people decide whether a widget should show sensitive data on a locked device, mark views that contain sensitive information using the [`privacySensitive(_:)`](https://developer.apple.com/documentation/swiftui/view/privacysensitive(_:)) modifier. In iOS, people can configure whether to show sensitive data on the Lock Screen and during Always On. In Settings, they can deactivate data access for Lock Screen widgets in the ALLOW ACCESS WHEN LOCKED section of Settings > Face ID & Passcode. On Apple Watch, people can configure whether to show sensitive data during Always On by Choosing Settings > Display & Brightness > Always On > Hide Sensitive Complications. They can choose to show redacted content for all or individual complications.
+To let people decide whether a widget should show sensitive data on a locked device, mark views that contain sensitive information using the [`privacySensitive(_:)`](../SwiftUI/view/privacysensitive%28_%29.md) modifier. In iOS, people can configure whether to show sensitive data on the Lock Screen and during Always On. In Settings, they can deactivate data access for Lock Screen widgets in the ALLOW ACCESS WHEN LOCKED section of Settings > Face ID & Passcode. On Apple Watch, people can configure whether to show sensitive data during Always On by Choosing Settings > Display & Brightness > Always On > Hide Sensitive Complications. They can choose to show redacted content for all or individual complications.
 
-If a person chooses to hide privacy sensitive content, WidgetKit renders a placeholder or redactions you configure. To configure redactions, implement the [`redacted(reason:)`](https://developer.apple.com/documentation/swiftui/view/redacted(reason:)) callback, read out the [`privacy`](https://developer.apple.com/documentation/swiftui/redactionreasons/privacy) property, and provide custom placeholder views. You can also choose to render a view as unredacted with the [`unredacted()`](https://developer.apple.com/documentation/swiftui/view/unredacted()) view modifier.
+If a person chooses to hide privacy sensitive content, WidgetKit renders a placeholder or redactions you configure. To configure redactions, implement the [`redacted(reason:)`](../SwiftUI/view/redacted%28reason%29.md) callback, read out the [`privacy`](../SwiftUI/redactionreasons/privacy.md) property, and provide custom placeholder views. You can also choose to render a view as unredacted with the [`unredacted()`](../SwiftUI/view/unredacted%28%29.md) view modifier.
 
-As an alternative to marking individual views as privacy sensitive, for example, if your entire widget content is privacy sensitive, you can add the Data Protection capability to your widget extension. Until a person unlocks their device to match the privacy level you chose, WidgetKit displays a placeholder instead of the widget content. First, enable the Data Protection capability for your widget extension in Xcode, then set the [`Data Protection Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.default-data-protection) entitlement to the value that fits the level of privacy you want to offer:
+As an alternative to marking individual views as privacy sensitive, for example, if your entire widget content is privacy sensitive, you can add the Data Protection capability to your widget extension. Until a person unlocks their device to match the privacy level you chose, WidgetKit displays a placeholder instead of the widget content. First, enable the Data Protection capability for your widget extension in Xcode, then set the [`Data Protection Entitlement`](../BundleResources/entitlements/com.apple.developer.default-data-protection.md) entitlement to the value that fits the level of privacy you want to offer:
 
 - **`NSFileProtectionComplete`**: WidgetKit hides widget content when the device is locked. Additionally, iOS widgets aren’t available as iPhone widgets on Mac.
 - **`NSFileProtectionCompleteUnlessOpen`**: WidgetKit hides widget content when the device is passcode locked. Additionally, iOS widgets aren’t available as iPhone widgets on Mac.
@@ -192,26 +193,26 @@ If you choose the `NSFileProtectionCompleteUntilFirstUserAuthentication` or `NSF
 - WidgetKit uses its default behavior and displays a placeholder until a person authenticates after they reboot their device.
 - iOS widgets are available as iPhone widgets on Mac.
 
-##### Add Dynamic Content to Your Widget
+##### Add dynamic content to your widget
 
-Widgets typically present read-only information and don’t generally support interactive elements such as scrolling lists or text input. Widgets support some interactive elements and animations. For details on adding interactivity to your widgets, refer to [`Adding interactivity to widgets and Live Activities`](adding-interactivity-to-widgets-and-live-activities.md).
+Widgets typically present read-only information and don’t generally support interactive elements such as scrolling lists or text input. Widgets support some interactive elements and animations. For details on adding interactivity to your widgets, refer to [Adding interactivity to widgets and Live Activities](./adding-interactivity-to-widgets-and-live-activities.md).
 
-For a list of views that WidgetKit supports, refer to [`SwiftUI views for widgets`](swiftui-views.md). WidgetKit ignores other views when it renders the widget’s content.
+For a list of views that WidgetKit supports, refer to [SwiftUI views for widgets](./swiftui-views.md). WidgetKit ignores other views when it renders the widget’s content.
 
-Although the display of a widget is based on a snapshot of your view, you can use various SwiftUI views that continue to update while your widget is visible. For more about providing dynamic content, refer to [`Keeping a widget up to date`](keeping-a-widget-up-to-date.md) and [`Displaying dynamic dates in widgets`](displaying-dynamic-dates.md).
+Although the display of a widget is based on a snapshot of your view, you can use various SwiftUI views that continue to update while your widget is visible. For more about providing dynamic content, refer to [Keeping a widget up to date](./keeping-a-widget-up-to-date.md) and [Displaying dynamic dates in widgets](./displaying-dynamic-dates.md).
 
-##### Respond to User Interactions
+##### Respond to user interactions
 
 When people interact with your widget, beyond interactive elements described above, the system launches your app to handle the request. When the system activates your app, navigate to the details that correspond to the widget’s content. Your widget can specify a URL to inform the app what content to display. To configure custom URLs in your widget:
 
-- For all widgets, add the [`widgetURL(_:)`](https://developer.apple.com/documentation/swiftui/view/widgeturl(_:)) view modifier to a view in your widget’s view hierarchy. If the widget’s view hierarchy includes more than one `widgetURL` modifier, the behavior is undefined.
-- For widgets that use [`WidgetFamily.systemMedium`](widgetfamily/systemmedium.md), [`WidgetFamily.systemLarge`](widgetfamily/systemlarge.md), or [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md), add one or more [`Link`](https://developer.apple.com/documentation/swiftui/link) controls to your widget’s view hierarchy. You can use both `widgetURL` and `Link` controls. If the interaction targets a `Link` control, the system uses the URL in that control. For interactions anywhere else in the widget, the system uses the URL specified in the `widgetURL` view modifier.
+- For all widgets, add the [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) view modifier to a view in your widget’s view hierarchy. If the widget’s view hierarchy includes more than one `widgetURL` modifier, the behavior is undefined.
+- For widgets that use [`WidgetFamily.systemMedium`](./widgetfamily/systemmedium.md), [`WidgetFamily.systemLarge`](./widgetfamily/systemlarge.md), or [`WidgetFamily.systemExtraLarge`](./widgetfamily/systemextralarge.md), add one or more [`Link`](../SwiftUI/link.md) controls to your widget’s view hierarchy. You can use both `widgetURL` and `Link` controls. If the interaction targets a `Link` control, the system uses the URL in that control. For interactions anywhere else in the widget, the system uses the URL specified in the `widgetURL` view modifier.
 
-For more details about adding links from your widgets to your app, refer to [`Linking to specific app scenes from your widget or Live Activity`](linking-to-specific-app-scenes-from-your-widget-or-live-activity.md).
+For more details about adding links from your widgets to your app, refer to [Linking to specific app scenes from your widget or Live Activity](./linking-to-specific-app-scenes-from-your-widget-or-live-activity.md).
 
-##### Preview Widgets in Xcode
+##### Preview widgets in Xcode
 
-Xcode allows you to look at previews of your widgets without running your app in Simulator or on a test device. The following example shows the preview code from the Emoji Rangers widget of the [`Building Widgets Using WidgetKit and SwiftUI`](building-widgets-using-widgetkit-and-swiftui.md) sample code project.
+Xcode allows you to look at previews of your widgets without running your app in Simulator or on a test device. The following example shows the preview code from the Emoji Rangers widget of the [Building Widgets Using WidgetKit and SwiftUI](./building-widgets-using-widgetkit-and-swiftui.md) sample code project.
 
 ```swift
 #Preview(as: .systemMedium, widget: {
@@ -223,33 +224,34 @@ Xcode allows you to look at previews of your widgets without running your app in
 
 As you support more widget families in your widget, you can add more preview views to see multiple sizes in a single preview.
 
-For additional information about previewing widgets, refer to [`Previewing widgets and Live Activities in Xcode`](previewing-widgets-and-live-activities-in-xcode.md).
+For additional information about previewing widgets, refer to [Previewing widgets and Live Activities in Xcode](./previewing-widgets-and-live-activities-in-xcode.md).
 
-##### Expand Your Widgets Capabilities
+##### Expand your widget’s capabilities
 
-To give people flexible access to your app’s content, you can support additional families, add widget types, make your widgets user-configurable, or add support for Live Activities if your app presents live data. To explore a plan to support additional features, refer to [`Developing a WidgetKit strategy`](developing-a-widgetkit-strategy.md).
+To give people flexible access to your app’s content, you can support additional families, add widget types, make your widgets user-configurable, or add support for Live Activities if your app presents live data. To explore a plan to support additional features, refer to [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md).
 
 To explore WidgetKit code for the first time, refer to the following sample code projects:
 
-- [`Building Widgets Using WidgetKit and SwiftUI`](building-widgets-using-widgetkit-and-swiftui.md) is the sample code project associated with the WWDC20 code-alongs [`Widgets Code-along, part 1: The adventure begins`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10034/), [`Widgets Code-along, part 2: Alternate timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10035/), and [`Widgets Code-along, part 3: Advancing timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10036/), where you learn how to build your first widget.
-- [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) expands the Emoji Rangers sample code project to include Lock Screen widgets, Live Activities, interactivity, and animations.
-- [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui) and [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/swiftui/backyard-birds-sample) are sample code projects that support widgets in addition to other technologies like [`App Clips`](https://developer.apple.com/documentation/appclip) and [`SwiftData`](https://developer.apple.com/documentation/swiftdata).
+- [Building Widgets Using WidgetKit and SwiftUI](./building-widgets-using-widgetkit-and-swiftui.md) is the sample code project associated with the WWDC20 code-alongs [Widgets Code-along, part 1: The adventure begins](https://developer.apple.com/videos/play/wwdc2020/10034/), [Widgets Code-along, part 2: Alternate timelines](https://developer.apple.com/videos/play/wwdc2020/10035/), and [Widgets Code-along, part 3: Advancing timelines](https://developer.apple.com/videos/play/wwdc2020/10036/), where you learn how to build your first widget.
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) expands the Emoji Rangers sample code project to include Lock Screen widgets, Live Activities, interactivity, and animations.
+- [Fruta: Building a feature-rich app with SwiftUI](../AppClip/fruta-building-a-feature-rich-app-with-swiftui.md) and [Backyard Birds: Building an app with SwiftData and widgets](../SwiftUI/backyard-birds-sample.md) are sample code projects that support widgets in addition to other technologies like [App Clips](../AppClip/AppClip.md) and [SwiftData](../SwiftData/SwiftData.md).
 
-##### Create Multiple Widget Extensions
+##### Create multiple widget extensions
 
-You can include multiple widget types in your widget extension, although your app can contain multiple extensions. For example, if some of your widgets use location information and others don’t, keep the widgets that use location information in a separate extension. This allows the system to prompt someone for authorization to use location information only for the widgets from the extension that uses location information. For details about bundling multiple widgets in an extension, refer to [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle).
+You can include multiple widget types in your widget extension, although your app can contain multiple extensions. For example, if some of your widgets use location information and others don’t, keep the widgets that use location information in a separate extension. This allows the system to prompt someone for authorization to use location information only for the widgets from the extension that uses location information. For details about bundling multiple widgets in an extension, refer to [`WidgetBundle`](../SwiftUI/widgetbundle.md).
 
 ## See Also
 
-- [Developing a WidgetKit strategy](developing-a-widgetkit-strategy.md)
+### Essentials
+- [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md)
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
-- [WidgetKit updates](../updates/widgetkit.md)
+- [WidgetKit updates](../Updates/widgetkit.md)
   Learn about important changes in WidgetKit.
-- [Building Widgets Using WidgetKit and SwiftUI](building-widgets-using-widgetkit-and-swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](./building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [protocol WidgetBundle](../swiftui/widgetbundle.md)
+- [protocol WidgetBundle](../SwiftUI/widgetbundle.md)
   A container used to expose multiple widgets from a single widget extension.
 
 

@@ -1,7 +1,8 @@
 # instructionCode
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the instruction code (INS) byte.
 
@@ -16,9 +17,14 @@ The value of the instruction code (INS) byte.
 var instructionCode: UInt8 { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) uint8_t instructionCode;
+```
+
 ## See Also
 
-- [var instructionClass: UInt8](nfciso7816apdu/instructionclass.md)
+### Getting the Instruction Bytes
+- [var instructionClass: UInt8](./instructionclass.md)
   The value of the instruction class (CLA) byte.
 
 

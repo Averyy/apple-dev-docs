@@ -1,7 +1,8 @@
 # add(priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,13 +19,16 @@
 mutating func add(priority: TaskPriority? = nil, operation: @escaping @Sendable () async -> ChildTaskResult) async -> Bool
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable`.
+
 ## See Also
 
-- [func async(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/async(priority:operation:).md)
-- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/asyncunlesscancelled(priority:operation:).md)
-- [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/spawn(priority:operation:).md)
-- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/spawnunlesscancelled(priority:operation:).md)
-- [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)
+### Deprecated
+- [func async(priority: TaskPriority?, operation: () async -> ChildTaskResult)](./async%28priority,operation%29.md)
+- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](./asyncunlesscancelled%28priority,operation%29.md)
+- [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](./spawn%28priority,operation%29.md)
+- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](./spawnunlesscancelled%28priority,operation%29.md)
+- [func waitForAll(isolation: isolated (any Actor)?) async](./waitforall%28isolation%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

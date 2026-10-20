@@ -1,7 +1,8 @@
 # invertedClip(_:to:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates a single-precision vector that’s inverted-clipped to the specified range.
 
@@ -11,7 +12,7 @@ Calculates a single-precision vector that’s inverted-clipped to the specified 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,19 +23,20 @@ static func invertedClip<U, V>(_ vector: U, to bounds: ClosedRange<Float>, resul
 
 ## See Also
 
-- [static func clip<U>(U, to: ClosedRange<Double>) -> [Double]](vdsp/clip(_:to:)-8jsic.md)
+### Clipping Operations
+- [static func clip<U>(U, to: ClosedRange<Double>) -> [Double]](./clip%28_,to%29-8jsic.md)
   Returns the elements of a double-precision vector clipped to the specified range.
-- [static func clip<U>(U, to: ClosedRange<Float>) -> [Float]](vdsp/clip(_:to:)-20gz4.md)
+- [static func clip<U>(U, to: ClosedRange<Float>) -> [Float]](./clip%28_,to%29-20gz4.md)
   Returns the elements of a single-precision vector clipped to the specified range.
-- [static func clip<U, V>(U, to: ClosedRange<Double>, result: inout V)](vdsp/clip(_:to:result:)-3lbii.md)
+- [static func clip<U, V>(U, to: ClosedRange<Double>, result: inout V)](./clip%28_,to,result%29-3lbii.md)
   Calculates the elements of a double-precision vector clipped to the specified range.
-- [static func clip<U, V>(U, to: ClosedRange<Float>, result: inout V)](vdsp/clip(_:to:result:)-84zw9.md)
+- [static func clip<U, V>(U, to: ClosedRange<Float>, result: inout V)](./clip%28_,to,result%29-84zw9.md)
   Calculates the elements of a single-precision vector clipped to the specified range.
-- [static func invertedClip<U>(U, to: ClosedRange<Double>) -> [Double]](vdsp/invertedclip(_:to:)-8yqtl.md)
+- [static func invertedClip<U>(U, to: ClosedRange<Double>) -> [Double]](./invertedclip%28_,to%29-8yqtl.md)
   Returns a double-precision vector that’s inverted-clipped to the specified range.
-- [static func invertedClip<U>(U, to: ClosedRange<Float>) -> [Float]](vdsp/invertedclip(_:to:)-4pkxw.md)
+- [static func invertedClip<U>(U, to: ClosedRange<Float>) -> [Float]](./invertedclip%28_,to%29-4pkxw.md)
   Returns a single-precision vector that’s inverted-clipped to the specified range.
-- [static func invertedClip<U, V>(U, to: ClosedRange<Double>, result: inout V)](vdsp/invertedclip(_:to:result:)-5ioal.md)
+- [static func invertedClip<U, V>(U, to: ClosedRange<Double>, result: inout V)](./invertedclip%28_,to,result%29-5ioal.md)
   Calculates a double-precision vector that’s inverted-clipped to the specified range.
 
 

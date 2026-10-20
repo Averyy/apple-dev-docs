@@ -1,7 +1,8 @@
 # FSEventStreamFlushAsync(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventStreamFlushAsync(_ streamRef: FSEventStreamRef) -> FSEventStreamEventId
 ```
 
-#### Return_value
+```c
+FSEventStreamEventId FSEventStreamFlushAsync(FSEventStreamRef streamRef);
+```
+
+#### Return Value
 
 The largest event id of any event ever queued for this stream, otherwise zero if no events have been queued for this stream.
 

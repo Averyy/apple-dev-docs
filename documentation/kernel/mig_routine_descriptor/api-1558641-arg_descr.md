@@ -1,14 +1,15 @@
 # arg_descr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 routine_arg_descriptor_t arg_descr;
 ```
 

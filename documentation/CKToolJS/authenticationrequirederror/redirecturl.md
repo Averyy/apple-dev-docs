@@ -1,7 +1,8 @@
 # redirectUrl
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A redirect URL for the user to securely sign in using their Apple ID.
 
@@ -10,7 +11,7 @@ A redirect URL for the user to securely sign in using their Apple ID.
 
 ## Declaration
 
-```swift
+```
 attribute string redirectUrl;
 ```
 

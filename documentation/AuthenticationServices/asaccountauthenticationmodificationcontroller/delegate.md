@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that receives notifications about the request’s status.
 
@@ -17,9 +18,14 @@ An object that receives notifications about the request’s status.
 weak var delegate: (any ASAccountAuthenticationModificationControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<ASAccountAuthenticationModificationControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [var presentationContextProvider: (any ASAccountAuthenticationModificationControllerPresentationContextProviding)?](asaccountauthenticationmodificationcontroller/presentationcontextprovider.md)
+### Configuring Requests
+- [var presentationContextProvider: (any ASAccountAuthenticationModificationControllerPresentationContextProviding)?](./presentationcontextprovider.md)
   An object that provides a presentation context for the account modification request’s user interface.
 
 

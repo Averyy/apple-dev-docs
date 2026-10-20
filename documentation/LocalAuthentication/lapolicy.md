@@ -1,7 +1,8 @@
 # LAPolicy
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of available local authentication policies.
 
@@ -19,55 +20,60 @@ The set of available local authentication policies.
 enum LAPolicy
 ```
 
+```c
+enum LAPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Policies
-- [LAPolicy.deviceOwnerAuthenticationWithBiometrics](lapolicy/deviceownerauthenticationwithbiometrics.md)
+- [LAPolicy.deviceOwnerAuthenticationWithBiometrics](./lapolicy/deviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](lapolicy/deviceownerauthenticationwithwatch.md)
+- [static var deviceOwnerAuthenticationWithWatch: LAPolicy](./lapolicy/deviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
+- [static var deviceOwnerAuthenticationWithBiometricsOrWatch: LAPolicy](./lapolicy/deviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
-- [LAPolicy.deviceOwnerAuthentication](lapolicy/deviceownerauthentication.md)
+- [LAPolicy.deviceOwnerAuthentication](./lapolicy/deviceownerauthentication.md)
   User authentication with biometry, Apple Watch, or the device passcode.
-- [LAPolicy.deviceOwnerAuthenticationWithWristDetection](lapolicy/deviceownerauthenticationwithwristdetection.md)
+- [LAPolicy.deviceOwnerAuthenticationWithWristDetection](./lapolicy/deviceownerauthenticationwithwristdetection.md)
   User authentication with wrist detection on watchOS.
 ### Policy Constants
-- [var kLAPolicyDeviceOwnerAuthenticationWithBiometrics: Int32](klapolicydeviceownerauthenticationwithbiometrics.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithBiometrics: Int32](./klapolicydeviceownerauthenticationwithbiometrics.md)
   User authentication with biometry.
-- [var kLAPolicyDeviceOwnerAuthenticationWithWatch: Int32](klapolicydeviceownerauthenticationwithwatch.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithWatch: Int32](./klapolicydeviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [var kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch: Int32](klapolicydeviceownerauthenticationwithbiometricsorwatch.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch: Int32](./klapolicydeviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
-- [var kLAPolicyDeviceOwnerAuthentication: Int32](klapolicydeviceownerauthentication.md)
+- [var kLAPolicyDeviceOwnerAuthentication: Int32](./klapolicydeviceownerauthentication.md)
   User authentication with either biometry or the device passcode.
-- [var kLAPolicyDeviceOwnerAuthenticationWithWristDetection: Int32](klapolicydeviceownerauthenticationwithwristdetection.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithWristDetection: Int32](./klapolicydeviceownerauthenticationwithwristdetection.md)
   User authentication with wrist detection on watchOS.
 ### Enumeration Cases
-- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrCompanion](lapolicy/deviceownerauthenticationwithbiometricsorcompanion.md)
+- [LAPolicy.deviceOwnerAuthenticationWithBiometricsOrCompanion](./lapolicy/deviceownerauthenticationwithbiometricsorcompanion.md)
   Device owner will be authenticated by biometry or a companion device e.g. Watch, Mac, etc.
-- [LAPolicy.deviceOwnerAuthenticationWithCompanion](lapolicy/deviceownerauthenticationwithcompanion.md)
+- [LAPolicy.deviceOwnerAuthenticationWithCompanion](./lapolicy/deviceownerauthenticationwithcompanion.md)
   Device owner will be authenticated by a companion device e.g. Watch, Mac, etc.
 ### Initializers
-- [init?(rawValue: Int)](lapolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lapolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](lacontext/canevaluatepolicy(_:error:).md)
+### Checking availability
+- [func canEvaluatePolicy(LAPolicy, error: NSErrorPointer) -> Bool](./lacontext/canevaluatepolicy%28_,error%29.md)
   Assesses whether authentication can proceed for a given policy.
-- [var biometryType: LABiometryType](lacontext/biometrytype.md)
+- [var biometryType: LABiometryType](./lacontext/biometrytype.md)
   The type of biometric authentication supported by the device.
-- [enum LABiometryType](labiometrytype.md)
+- [enum LABiometryType](./labiometrytype.md)
   The set of available biometric authentication types.
 
 

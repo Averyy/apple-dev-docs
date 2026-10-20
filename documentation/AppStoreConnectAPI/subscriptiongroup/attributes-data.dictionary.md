@@ -1,7 +1,8 @@
 # SubscriptionGroup.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription group resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a subscription group resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionGroup.Attributes
 ```
 
@@ -20,7 +21,8 @@ object SubscriptionGroup.Attributes
 
 ## See Also
 
-- [object SubscriptionGroup.Relationships](subscriptiongroup/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionGroup.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

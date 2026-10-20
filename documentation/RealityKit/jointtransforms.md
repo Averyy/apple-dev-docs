@@ -1,7 +1,8 @@
 # JointTransforms
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of animatable transform values for joints that collectively represent a single skeletal pose.
 
@@ -11,7 +12,7 @@ A set of animatable transform values for joints that collectively represent a si
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,9 @@ struct JointTransforms
 
 #### Overview
 
-This structure provides a template that informs an animation on how to animate a character. The resulting movement bases on the *from* ([`fromValue`](fromtobyanimation/fromvalue-6msd.md)) , *to* ([`toValue`](fromtobyanimation/tovalue-813jk.md)) , or *by* values ([`byValue`](fromtobyanimation/byvalue-3bp3q.md)) you supply for a [`FromToByAnimation`](fromtobyanimation.md). The animation determines which joints take on the movement through its [`jointNames`](fromtobyanimation/jointnames.md) property.
+This structure provides a template that informs an animation on how to animate a character. The resulting movement bases on the *from* ([`fromValue`](./fromtobyanimation/fromvalue-6msd.md)) , *to* ([`toValue`](./fromtobyanimation/tovalue-813jk.md)) , or *by* values ([`byValue`](./fromtobyanimation/byvalue-3bp3q.md)) you supply for a [`FromToByAnimation`](./fromtobyanimation.md). The animation determines which joints take on the movement through its [`jointNames`](./fromtobyanimation/jointnames.md) property.
 
-#### Animate an Entitys Skeleton
+#### Animate an Entity’s Skeleton
 
 The following code moves the joints of a 3D asset by specifying the joint, `joint1`, beginning, and ending values.
 
@@ -70,50 +71,50 @@ controller.pause()
 ## Topics
 
 ### Creating joint transforms
-- [init()](jointtransforms/init.md)
+- [init()](./jointtransforms/init%28%29.md)
   Initializes a collection of animatable transforms for a single skeletal pose.
-- [init<S>(S)](jointtransforms/init(_:).md)
+- [init<S>(S)](./jointtransforms/init%28_%29.md)
   Initializes a collection of transforms of a specific type for a single skeletal pose.
-- [init(arrayLiteral: Transform...)](jointtransforms/init(arrayliteral:).md)
+- [init(arrayLiteral: Transform...)](./jointtransforms/init%28arrayliteral%29.md)
   Initializes a collection of animatable transforms using the argument elements for a single skeletal pose.
 ### Identifying joint transforms
-- [JointTransforms.Index](jointtransforms/index.md)
+- [JointTransforms.Index](./jointtransforms/index.md)
   A position of an individual joint transform in the collection.
 ### Inspecting joint transform details
-- [var startIndex: JointTransforms.Index](jointtransforms/startindex.md)
+- [var startIndex: JointTransforms.Index](./jointtransforms/startindex.md)
   An index to the first joint transform in the collection.
-- [var endIndex: JointTransforms.Index](jointtransforms/endindex.md)
+- [var endIndex: JointTransforms.Index](./jointtransforms/endindex.md)
   An index to the last joint transform in the collection.
 ### Accessing joint transforms
-- [subscript(JointTransforms.Index) -> Transform](jointtransforms/subscript(_:).md)
+- [subscript(JointTransforms.Index) -> Transform](./jointtransforms/subscript%28_%29.md)
   Accesses a single joint transform in the collection at the given index.
-- [func index(after: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(after:).md)
+- [func index(after: JointTransforms.Index) -> JointTransforms.Index](./jointtransforms/index%28after%29.md)
   Returns the position in the sequence of the joint that follows the given position.
-- [func index(before: JointTransforms.Index) -> JointTransforms.Index](jointtransforms/index(before:).md)
+- [func index(before: JointTransforms.Index) -> JointTransforms.Index](./jointtransforms/index%28before%29.md)
   Returns the position in the sequence of the joint that preceeds the given position.
 ### Operators
-- [static func == (JointTransforms, JointTransforms) -> Bool](jointtransforms/==(_:_:).md)
+- [static func == (JointTransforms, JointTransforms) -> Bool](./jointtransforms/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two collections of joints are equal.
 ### Type Aliases
-- [JointTransforms.ArrayLiteralElement](jointtransforms/arrayliteralelement.md)
+- [JointTransforms.ArrayLiteralElement](./jointtransforms/arrayliteralelement.md)
   The type of the elements of an array literal.
-- [JointTransforms.Element](jointtransforms/element.md)
+- [JointTransforms.Element](./jointtransforms/element.md)
   An individual joint transform in the collection.
 
 ## Relationships
 
 ### Conforms To
-- [AnimatableData](animatabledata.md)
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [AnimatableData](./animatabledata.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

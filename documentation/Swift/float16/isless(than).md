@@ -1,7 +1,8 @@
 # isLess(than:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this instance is less than the given value.
 
@@ -44,7 +45,7 @@ Double.nan.isLess(than: x)
 // false
 ```
 
-The `isLess(than:)` method implements the less-than predicate defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `isLess(than:)` method implements the less-than predicate defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

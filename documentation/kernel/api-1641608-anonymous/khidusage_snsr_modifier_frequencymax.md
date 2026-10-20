@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Modifier_FrequencyMax
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Modifier_FrequencyMax = 0xB
 ```
 

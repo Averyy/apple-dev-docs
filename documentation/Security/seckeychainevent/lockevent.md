@@ -1,7 +1,8 @@
 # SecKeychainEvent.lockEvent
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a keychain was locked.
 
@@ -15,9 +16,13 @@ Indicates a keychain was locked.
 case lockEvent
 ```
 
+```c
+kSecLockEvent
+```
+
 #### Discussion
 
-It is impossible to distinguish between a lock event caused by an explicit request and one caused by a keychain that locked itself because of a timeout. Therefore, the `pid` parameter in the [`SecKeychainCallbackInfo`](seckeychaincallbackinfo.md) structure does not contain useful information for this event. Note that when the login session terminates, all keychains become effectively locked; however, no `kSecLockEvent` events are generated in this case.
+It is impossible to distinguish between a lock event caused by an explicit request and one caused by a keychain that locked itself because of a timeout. Therefore, the `pid` parameter in the [`SecKeychainCallbackInfo`](../seckeychaincallbackinfo.md) structure does not contain useful information for this event. Note that when the login session terminates, all keychains become effectively locked; however, no `kSecLockEvent` events are generated in this case.
 
 
 ---

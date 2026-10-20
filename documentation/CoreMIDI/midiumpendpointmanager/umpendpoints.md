@@ -1,7 +1,8 @@
 # umpEndpoints
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var umpEndpoints: [MIDIUMPEndpoint] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MIDIUMPEndpoint *> * UMPEndpoints;
 ```
 
 

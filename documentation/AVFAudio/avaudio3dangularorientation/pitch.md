@@ -1,23 +1,28 @@
 # pitch
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The up-and-down movement of the listener’s head.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var pitch: Float
+```
+
+```c
+float pitch;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ The pitch axis describes the up-and-down movement of the listener’s head, and 
 
 ## See Also
 
-- [var yaw: Float](avaudio3dangularorientation/yaw.md)
+### Getting angular orientation properties
+- [var yaw: Float](./yaw.md)
   The side-to-side movement of the listener’s head.
-- [var roll: Float](avaudio3dangularorientation/roll.md)
+- [var roll: Float](./roll.md)
   The tilt of the listener’s head.
 
 

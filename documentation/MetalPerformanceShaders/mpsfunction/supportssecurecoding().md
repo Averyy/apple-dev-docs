@@ -1,7 +1,8 @@
 # supportsSecureCoding()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func supportsSecureCoding() -> Bool
+```
+
+```objc
++ (BOOL) supportsSecureCoding;
 ```
 
 #### Discussion

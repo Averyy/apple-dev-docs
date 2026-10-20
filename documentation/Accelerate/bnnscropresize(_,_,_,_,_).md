@@ -1,23 +1,30 @@
 # BNNSCropResize(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts and resizes regions of interest of an input tensor.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSCropResize(_ layer_params: UnsafePointer<BNNSLayerParametersCropResize>, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ roi: UnsafePointer<BNNSNDArrayDescriptor>, _ output: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
+```
+
+```c
+int BNNSCropResize(const BNNSLayerParametersCropResize *layer_params, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *roi, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
 ```
 
 #### Discussion
@@ -46,7 +53,7 @@ var inputDescriptor = BNNSNDArrayDescriptor.allocate(
                               batchSize))
 ```
 
-Define the regions of interest as sets of four coordinates. The code below specifies the regions of interest with [`BNNSCenterSizeWidthFirst`](bnnscentersizewidthfirst.md) coordinate mode, that is the coordinates are ordered as horizontal center, vertical center, width, and height.
+Define the regions of interest as sets of four coordinates. The code below specifies the regions of interest with [`BNNSCenterSizeWidthFirst`](./bnnscentersizewidthfirst.md) coordinate mode, that is the coordinates are ordered as horizontal center, vertical center, width, and height.
 
 ```swift
 // Extracts:
@@ -89,7 +96,7 @@ var outputDescriptor = BNNSNDArrayDescriptor.allocateUninitialized(
                               boxCount))
 ```
 
-To perform the crop-resize, create a parameters structure and call [`BNNSCropResize(_:_:_:_:_:)`](bnnscropresize(_:_:_:_:_:).md).
+To perform the crop-resize, create a parameters structure and call [`BNNSCropResize(_:_:_:_:_:)`](./bnnscropresize%28_,_,_,_,_%29.md).
 
 ```swift
 var params = BNNSLayerParametersCropResize(
@@ -128,15 +135,16 @@ On return, `outputDescriptor` contains `boxCount` slices that contain the data w
 
 ## See Also
 
-- [class CropResizeLayer](bnns/cropresizelayer.md)
+### Crop-resize layers
+- [class CropResizeLayer](./bnns/cropresizelayer.md)
   A layer object that wraps a crop-resize filter and manages its deinitialization.
-- [func BNNSCropResizeBackward(UnsafePointer<BNNSLayerParametersCropResize>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnscropresizebackward(_:_:_:_:_:).md)
+- [func BNNSCropResizeBackward(UnsafePointer<BNNSLayerParametersCropResize>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnscropresizebackward%28_,_,_,_,_%29.md)
   Applies a crop-resize filter backward to generate gradients.
-- [struct BNNSLayerParametersCropResize](bnnslayerparameterscropresize.md)
+- [struct BNNSLayerParametersCropResize](./bnnslayerparameterscropresize.md)
   A set of parameters that describe a crop-resize operation.
-- [struct BNNSBoxCoordinateMode](bnnsboxcoordinatemode.md)
+- [struct BNNSBoxCoordinateMode](./bnnsboxcoordinatemode.md)
   Constants that define the convention to specify the four bounding box coordinates for crop-resize operations.
-- [struct BNNSLinearSamplingMode](bnnslinearsamplingmode.md)
+- [struct BNNSLinearSamplingMode](./bnnslinearsamplingmode.md)
   Constants that specify how a crop-resize layer samples a grid.
 
 

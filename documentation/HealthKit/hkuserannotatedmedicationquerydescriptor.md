@@ -1,7 +1,8 @@
 # HKUserAnnotatedMedicationQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,39 +21,40 @@ struct HKUserAnnotatedMedicationQueryDescriptor
 ## Topics
 
 ### Initializers
-- [init(predicate: NSPredicate?, limit: Int?)](hkuserannotatedmedicationquerydescriptor/init(predicate:limit:).md)
+- [init(predicate: NSPredicate?, limit: Int?)](./hkuserannotatedmedicationquerydescriptor/init%28predicate,limit%29.md)
 ### Instance Properties
-- [var limit: Int?](hkuserannotatedmedicationquerydescriptor/limit.md)
+- [var limit: Int?](./hkuserannotatedmedicationquerydescriptor/limit.md)
   The maximum number of resulting HKUserAnnotatedMedication objects.
-- [var predicate: NSPredicate?](hkuserannotatedmedicationquerydescriptor/predicate.md)
+- [var predicate: NSPredicate?](./hkuserannotatedmedicationquerydescriptor/predicate.md)
   The predicate that matches the desired HKUserAnnotatedMedication objects.
 ### Default Implementations
-- [HKAsyncQuery Implementations](hkuserannotatedmedicationquerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncQuery Implementations](./hkuserannotatedmedicationquerydescriptor/hkasyncquery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
 
 ## See Also
 
-- [class HKClinicalCoding](hkclinicalcoding.md)
+### Medication queries
+- [class HKClinicalCoding](./hkclinicalcoding.md)
   A clinical coding that represents a medical concept using a standardized coding system.
-- [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+- [class HKHealthConceptIdentifier](./hkhealthconceptidentifier.md)
   A unique identifier for a specific health concept within a domain.
-- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationConcept](./hkmedicationconcept.md)
   An object that describes a specific medication concept.
-- [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
-- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
-- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKMedicationDoseEvent](./hkmedicationdoseevent.md)
+- [class HKMedicationDoseEventType](./hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](./hkuserannotatedmedication.md)
   A reference to the tracked medication and the details a person can customize.
-- [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
-- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
-- [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
+- [class HKUserAnnotatedMedicationQuery](./hkuserannotatedmedicationquery.md)
+- [class HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
+- [struct HKHealthConceptDomain](./hkhealthconceptdomain.md)
   A domain that represents a health concept.
-- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+- [struct HKMedicationGeneralForm](./hkmedicationgeneralform.md)
   The manufactured form of a medication.
 
 

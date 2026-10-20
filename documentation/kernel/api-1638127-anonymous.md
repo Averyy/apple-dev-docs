@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFBDisplayPowerStateMask](1638127-anonymous/kfbdisplaypowerstatemask.md)
-- [kFBDisplayUsablePowerState](1638127-anonymous/kfbdisplayusablepowerstate.md)
+- [kFBDisplayPowerStateMask](./api-1638127-anonymous/kfbdisplaypowerstatemask.md)
+- [kFBDisplayUsablePowerState](./api-1638127-anonymous/kfbdisplayusablepowerstate.md)
 
 
 ---

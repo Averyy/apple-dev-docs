@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value the equals function uses to represent change in the configuration instance.
 
@@ -19,7 +20,7 @@ var version: Int { get }
 
 #### Discussion
 
-This integer changes when you call [`invalidate()`](translationsession/configuration/invalidate().md) on an instance of your translation session.
+This integer changes when you call [`invalidate()`](./invalidate%28%29.md) on an instance of your translation session.
 
 
 ---

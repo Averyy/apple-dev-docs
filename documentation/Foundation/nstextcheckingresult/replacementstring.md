@@ -1,7 +1,8 @@
 # replacementString
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A replacement string from one of a number of replacement checking results.
 
@@ -20,9 +21,14 @@ A replacement string from one of a number of replacement checking results.
 var replacementString: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * replacementString;
+```
+
 ## See Also
 
-- [class func replacementCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](nstextcheckingresult/replacementcheckingresult(range:replacementstring:).md)
+### Text Checking Results for Text Replacement
+- [class func replacementCheckingResult(range: NSRange, replacementString: String) -> NSTextCheckingResult](./replacementcheckingresult%28range,replacementstring%29.md)
   Creates and returns a text checking result with the specified replacement string.
 
 

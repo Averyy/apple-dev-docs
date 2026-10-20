@@ -1,7 +1,8 @@
 # description(options:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a string description of the optional column type.
 

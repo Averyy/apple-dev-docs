@@ -1,7 +1,8 @@
 # slerp(from:to:t:along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the spherical linear interpolation along the either the shortest or longest arc between two rotations.
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Obtain the discontiguous substring of a selection.
 

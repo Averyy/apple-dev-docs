@@ -2,6 +2,7 @@
 
 **Framework**: LockedCameraCapture  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content for the locked camera capture extension.

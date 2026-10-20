@@ -1,7 +1,8 @@
 # gateways
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of gateways configured on the interfaces available to a path.
 
@@ -22,9 +23,10 @@ var gateways: [NWEndpoint] { get }
 
 ## See Also
 
-- [func usesInterfaceType(NWInterface.InterfaceType) -> Bool](nwpath/usesinterfacetype(_:).md)
+### Inspecting Interfaces
+- [func usesInterfaceType(NWInterface.InterfaceType) -> Bool](./usesinterfacetype%28_%29.md)
   Checks if connections using the path may send traffic over a specific interface type.
-- [let availableInterfaces: [NWInterface]](nwpath/availableinterfaces.md)
+- [let availableInterfaces: [NWInterface]](./availableinterfaces.md)
   A list of all interfaces available to the path, in order of preference.
 
 

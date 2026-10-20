@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object for the audio player.
 
@@ -20,9 +21,14 @@ The delegate object for the audio player.
 weak var delegate: (any AVAudioPlayerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<AVAudioPlayerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVAudioPlayerDelegate](avaudioplayerdelegate.md)
+### Responding to player events
+- [protocol AVAudioPlayerDelegate](../avaudioplayerdelegate.md)
   A protocol that defines the methods to respond to audio playback events and decoding errors.
 
 

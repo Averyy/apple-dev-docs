@@ -1,15 +1,16 @@
 # setScrollProperties
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setScrollProperties(OSDictionary *properties);
 ```
 

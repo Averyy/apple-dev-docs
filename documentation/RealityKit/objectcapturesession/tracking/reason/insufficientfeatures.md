@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Tracking.Reason.insufficientFeatures
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scene does not contain enough distinguishable features for accurate camera tracking.
 

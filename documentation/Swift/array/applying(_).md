@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given difference to this collection.
 
@@ -26,7 +27,7 @@ An instance representing the state of the receiver with the difference applied, 
 
 #### Discussion
 
-> **Note**: O(*n* + *c*), where *n* is `self.count` and *c* is the number of changes contained by the parameter.
+> **Complexity**: O(*n* + *c*), where *n* is `self.count` and *c* is the number of changes contained by the parameter.
 
 ## Parameters
 
@@ -34,9 +35,10 @@ An instance representing the state of the receiver with the difference applied, 
 
 ## See Also
 
-- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](array/difference(from:).md)
+### Creating and Applying Differences
+- [func difference<C>(from: C) -> CollectionDifference<Self.Element>](./difference%28from%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection.
-- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](array/difference(from:by:).md)
+- [func difference<C>(from: C, by: (C.Element, Self.Element) -> Bool) -> CollectionDifference<Self.Element>](./difference%28from,by%29.md)
   Returns the difference needed to produce this collection’s ordered elements from the given collection, using the given predicate as an equivalence test.
 
 

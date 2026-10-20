@@ -1,7 +1,8 @@
 # uniform4iv
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 void uniform4iv(
     WebGLUniformLocation? location, 
     Int32Array v

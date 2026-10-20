@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct disk_blk0 {
     ...
 };
@@ -17,9 +17,9 @@ struct disk_blk0 {
 ## Topics
 
 ### Instance Properties
-- [bootcode](disk_blk0/1405048-bootcode.md)
-- [parts](disk_blk0/1405021-parts.md)
-- [signature](disk_blk0/1405036-signature.md)
+- [bootcode](./disk_blk0/api-1405048-bootcode.md)
+- [parts](./disk_blk0/api-1405021-parts.md)
+- [signature](./disk_blk0/api-1405036-signature.md)
 
 
 ---

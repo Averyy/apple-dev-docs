@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentAirPurifierState.idle
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The air purifier is idle.
 
@@ -19,11 +20,16 @@ The air purifier is idle.
 case idle
 ```
 
+```c
+HMCharacteristicValueCurrentAirPurifierStateIdle
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentAirPurifierState.inactive](hmcharacteristicvaluecurrentairpurifierstate/inactive.md)
+### Air Purifier States
+- [HMCharacteristicValueCurrentAirPurifierState.inactive](./inactive.md)
   The air purifier is inactive.
-- [HMCharacteristicValueCurrentAirPurifierState.active](hmcharacteristicvaluecurrentairpurifierstate/active.md)
+- [HMCharacteristicValueCurrentAirPurifierState.active](./active.md)
   The air purifier is active.
 
 

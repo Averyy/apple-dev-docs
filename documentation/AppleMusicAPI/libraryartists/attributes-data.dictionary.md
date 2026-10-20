@@ -1,7 +1,8 @@
 # LibraryArtists.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a library artist resource.
 
@@ -10,7 +11,7 @@ The attributes for a library artist resource.
 
 ## Declaration
 
-```swift
+```
 object LibraryArtists.Attributes
 ```
 
@@ -21,7 +22,8 @@ object LibraryArtists.Attributes
 
 ## See Also
 
-- [object LibraryArtists.Relationships](libraryartists/relationships-data.dictionary.md)
+### Related Objects
+- [object LibraryArtists.Relationships](./relationships-data.dictionary.md)
   The relationships for a library artist resource.
 
 

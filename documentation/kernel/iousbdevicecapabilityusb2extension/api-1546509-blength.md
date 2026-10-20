@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the descriptor.
 
@@ -10,17 +11,18 @@ The size of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdevicecapabilityusb2extension/1546574-bdescriptortype.md)
+### Getting the Properties
+- [bDescriptorType](./api-1546574-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilityusb2extension/1546135-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546135-bdevcapabilitytype.md)
   The capability type.
-- [bmAttributes](iousbdevicecapabilityusb2extension/1546149-bmattributes.md)
+- [bmAttributes](./api-1546149-bmattributes.md)
   A bitmap encoding of supported device-level features.
 
 

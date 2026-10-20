@@ -1,7 +1,8 @@
 # AppExtensionPoint.Identifier
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The details of an extension point that your app extension supports.
 
@@ -22,7 +23,7 @@ struct Identifier
 
 ## Mentions
 
-- [Building an app extension to support a host app](building-an-app-extension-to-support-a-host-app.md)
+- [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
 #### Overview
 
@@ -31,14 +32,15 @@ When creating a binding in your app extension, use this type to specify the exte
 ## Topics
 
 ### Creating an identifier attribute
-- [init(StaticString)](appextensionpoint/identifier/init(_:).md)
+- [init(StaticString)](./identifier/init%28_%29.md)
   Creates an identifier for binding to a system-defined extension point.
-- [init(host: StaticString, name: StaticString)](appextensionpoint/identifier/init(host:name:).md)
+- [init(host: StaticString, name: StaticString)](./identifier/init%28host,name%29.md)
   Creates an identifier for binding to a host app’s extension point.
 
 ## See Also
 
-- [AppExtensionPoint.Bind](appextensionpoint/bind.md)
+### Binding to an extension point
+- [AppExtensionPoint.Bind](./bind.md)
   A property wrapper that binds an app extension to an extension point of a host app.
 
 

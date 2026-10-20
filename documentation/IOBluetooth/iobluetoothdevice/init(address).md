@@ -1,17 +1,22 @@
 # init(address:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the IOBluetoothDevice object for the given BluetoothDeviceAddress
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 convenience init!(address: UnsafePointer<BluetoothDeviceAddress>!)
+```
+
+```objc
++ (instancetype) deviceWithAddress:(const BluetoothDeviceAddress *) address;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ Within a single application, there will be only one instance of IOBluetoothDevic
 
 ## See Also
 
-- [convenience init!(addressString: String!)](iobluetoothdevice/init(addressstring:).md)
+### Initializers
+- [convenience init!(addressString: String!)](./init%28addressstring%29.md)
   Returns the IOBluetoothDevice object for the given BluetoothDeviceAddress
 
 

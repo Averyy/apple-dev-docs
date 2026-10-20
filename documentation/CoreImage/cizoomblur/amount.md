@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The zoom-in amount.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The zoom-in amount.
 var amount: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float amount;
+```
+
 ## See Also
 
-- [var center: CGPoint](cizoomblur/center.md)
+### Instance Properties
+- [var center: CGPoint](./center.md)
   The center of the effect, as x and y coordinates.
-- [var inputImage: CIImage?](cizoomblur/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
 
 

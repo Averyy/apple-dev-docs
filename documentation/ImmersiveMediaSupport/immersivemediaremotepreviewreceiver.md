@@ -1,7 +1,8 @@
 # ImmersiveMediaRemotePreviewReceiver
 
 **Framework**: Immersive Media Support  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observable object that helps applications handle receiving commands and data sent from an immersive media remote preview sender object.
 
@@ -21,49 +22,50 @@ This object helps applications receiving Immersive Video over the network with t
 
 To properly render an immersive video preview, the receiver also needs access to:
 
-- The current [`ImmersiveVideoFrame`](immersivevideoframe.md) to render.
-- The current [`VenueDescriptor`](venuedescriptor.md) for rendering.
-- The current [`PresentationDescriptor`](presentationdescriptor.md) that describes one or more [`PresentationCommand`](presentationcommand.md)instances active for the current frame.
+- The current [`ImmersiveVideoFrame`](./immersivevideoframe.md) to render.
+- The current [`VenueDescriptor`](./venuedescriptor.md) for rendering.
+- The current [`PresentationDescriptor`](./presentationdescriptor.md) that describes one or more [`PresentationCommand`](./presentationcommand.md)instances active for the current frame.
 
 ## Topics
 
 ### Initializers
-- [init() async throws](immersivemediaremotepreviewreceiver/init.md)
+- [init() async throws](./immersivemediaremotepreviewreceiver/init%28%29.md)
   Creates a preview receiver object.
 ### Instance Properties
-- [var frame: ImmersiveVideoFrame?](immersivemediaremotepreviewreceiver/frame.md)
+- [var frame: ImmersiveVideoFrame?](./immersivemediaremotepreviewreceiver/frame.md)
   The current remote preview of an immersive video frame.
-- [var presentationDescriptor: PresentationDescriptor?](immersivemediaremotepreviewreceiver/presentationdescriptor.md)
+- [var presentationDescriptor: PresentationDescriptor?](./immersivemediaremotepreviewreceiver/presentationdescriptor.md)
   The current remote immersive video presentation descriptor.
-- [var states: some AsyncSequence<ImmersiveMediaRemotePreviewReceiver.Status, Never>](immersivemediaremotepreviewreceiver/states.md)
+- [var states: some AsyncSequence<ImmersiveMediaRemotePreviewReceiver.Status, Never>](./immersivemediaremotepreviewreceiver/states.md)
   The states to use for monitoring the current state of the preview receiver so the app can monitor events.
-- [var venueDescriptor: VenueDescriptor?](immersivemediaremotepreviewreceiver/venuedescriptor.md)
+- [var venueDescriptor: VenueDescriptor?](./immersivemediaremotepreviewreceiver/venuedescriptor.md)
   The current remote immersive video venue descriptor.
 ### Instance Methods
-- [func start(connection: NWConnection) async throws](immersivemediaremotepreviewreceiver/start(connection:).md)
+- [func start(connection: NWConnection) async throws](./immersivemediaremotepreviewreceiver/start%28connection%29.md)
   Performs the necessary steps to start receiving remote Immersive video frames using the given network connection.
-- [func stop()](immersivemediaremotepreviewreceiver/stop.md)
+- [func stop()](./immersivemediaremotepreviewreceiver/stop%28%29.md)
   Stops receiving remote immersive video frames.
 ### Enumerations
-- [ImmersiveMediaRemotePreviewReceiver.Status](immersivemediaremotepreviewreceiver/status.md)
+- [ImmersiveMediaRemotePreviewReceiver.Status](./immersivemediaremotepreviewreceiver/status.md)
   A value that represents the status of the immersive media remote preview receiver object.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ImmersiveMediaPreviewMessagingProtocol](immersivemediapreviewmessagingprotocol.md)
+### Preview
+- [class ImmersiveMediaPreviewMessagingProtocol](./immersivemediapreviewmessagingprotocol.md)
   An object that represents the messaging protocol a remote preview sender and receiver use to communicate.
-- [class ImmersiveMediaRemotePreviewSender](immersivemediaremotepreviewsender.md)
+- [class ImmersiveMediaRemotePreviewSender](./immersivemediaremotepreviewsender.md)
   An observable object that helps an app send the required data to all connected receiver applications to help facilitate the complete preview of the immersive media playback.
-- [class ImmersivePreviewRenderer](immersivepreviewrenderer.md)
+- [class ImmersivePreviewRenderer](./immersivepreviewrenderer.md)
   An object that renders an immersive video frame into a texture and exposes the command buffer for presentation.
 
 

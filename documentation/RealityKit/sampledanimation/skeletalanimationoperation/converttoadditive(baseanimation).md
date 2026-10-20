@@ -1,7 +1,8 @@
 # convertToAdditive(baseAnimation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts animation to additive format by subtracting a base animation.
 
@@ -21,7 +22,7 @@ static func convertToAdditive(baseAnimation: AnimationResource) -> SampledAnimat
 
 #### Return Value
 
-A [`SampledAnimation.SkeletalAnimationOperation`](sampledanimation/skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
+A [`SampledAnimation.SkeletalAnimationOperation`](../skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
 
 #### Discussion
 
@@ -37,9 +38,10 @@ The function throws an error if the base and target animations do not have the s
 
 ## See Also
 
-- [static func convertToAdditiveUsingRestPose() -> SampledAnimation<Value>.SkeletalAnimationOperation](sampledanimation/skeletalanimationoperation/converttoadditiveusingrestpose.md)
+### Converting to additive animation
+- [static func convertToAdditiveUsingRestPose() -> SampledAnimation<Value>.SkeletalAnimationOperation](./converttoadditiveusingrestpose%28%29.md)
   Converts animation to additive format by subtracting the skeleton’s rest pose.
-- [static func convertToAdditiveUsingFirstSample() -> SampledAnimation<Value>.SkeletalAnimationOperation](sampledanimation/skeletalanimationoperation/converttoadditiveusingfirstsample.md)
+- [static func convertToAdditiveUsingFirstSample() -> SampledAnimation<Value>.SkeletalAnimationOperation](./converttoadditiveusingfirstsample%28%29.md)
   Converts animation to additive format by subtracting the first frame.
 
 

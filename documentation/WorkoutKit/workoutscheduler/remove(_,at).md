@@ -1,7 +1,8 @@
 # remove(_:at:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the scheduled workout.
 
@@ -20,13 +21,14 @@ final func remove(_ workout: WorkoutPlan, at: DateComponents) async
 
 ## See Also
 
-- [var scheduledWorkouts: [ScheduledWorkoutPlan]](workoutscheduler/scheduledworkouts.md)
+### Managing scheduled workouts
+- [var scheduledWorkouts: [ScheduledWorkoutPlan]](./scheduledworkouts.md)
   An array of all the workouts scheduled by your app.
-- [static let maxAllowedScheduledWorkoutCount: Int](workoutscheduler/maxallowedscheduledworkoutcount.md)
+- [static let maxAllowedScheduledWorkoutCount: Int](./maxallowedscheduledworkoutcount.md)
   The maximum number of workouts your app can schedule.
-- [func markComplete(WorkoutPlan, at: DateComponents) async](workoutscheduler/markcomplete(_:at:).md)
+- [func markComplete(WorkoutPlan, at: DateComponents) async](./markcomplete%28_,at%29.md)
   Marks the workout as complete.
-- [func removeAllWorkouts() async](workoutscheduler/removeallworkouts.md)
+- [func removeAllWorkouts() async](./removeallworkouts%28%29.md)
   Removes all scheduled workouts.
 
 

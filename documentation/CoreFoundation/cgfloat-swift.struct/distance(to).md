@@ -1,7 +1,8 @@
 # distance(to:)
 
 **Framework**: Core Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a stride `x` such that `self.advanced(by: x)` approximates `other`.
 
@@ -11,7 +12,7 @@ Returns a stride `x` such that `self.advanced(by: x)` approximates `other`.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # preferredStrategy
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translation approach for this configuration.
 

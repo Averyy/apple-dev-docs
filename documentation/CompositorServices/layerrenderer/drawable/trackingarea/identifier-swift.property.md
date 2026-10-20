@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the identifier for the tracking area.
 
@@ -13,6 +14,10 @@ Returns the identifier for the tracking area.
 
 ```swift
 var identifier: LayerRenderer.Drawable.TrackingArea.Identifier { get }
+```
+
+```c
+cp_tracking_area_identifier cp_tracking_area_get_identifier(cp_tracking_area_t tracking_area);
 ```
 
 

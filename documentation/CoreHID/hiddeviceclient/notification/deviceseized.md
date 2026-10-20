@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification.deviceSeized
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that the device was seized by another client.
 
@@ -16,7 +17,7 @@ case deviceSeized
 
 #### Discussion
 
-After the device is seized by another client, notifications are paused until [`HIDDeviceClient.Notification.deviceUnseized`](hiddeviceclient/notification/deviceunseized.md) is received.
+After the device is seized by another client, notifications are paused until [`HIDDeviceClient.Notification.deviceUnseized`](./deviceunseized.md) is received.
 
 
 ---

@@ -1,7 +1,8 @@
 # MLFeatureType
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible types for feature values, input features, and output features.
 
@@ -20,49 +21,54 @@ The possible types for feature values, input features, and output features.
 enum MLFeatureType
 ```
 
+```c
+enum MLFeatureType : NSInteger;
+```
+
 ## Topics
 
 ### Feature types
-- [MLFeatureType.int64](mlfeaturetype/int64.md)
+- [MLFeatureType.int64](./mlfeaturetype/int64.md)
   The type for integer features and feature values.
-- [MLFeatureType.double](mlfeaturetype/double.md)
+- [MLFeatureType.double](./mlfeaturetype/double.md)
   The type for double features and feature values.
-- [MLFeatureType.image](mlfeaturetype/image.md)
+- [MLFeatureType.image](./mlfeaturetype/image.md)
   The type for image features and feature values.
-- [MLFeatureType.multiArray](mlfeaturetype/multiarray.md)
+- [MLFeatureType.multiArray](./mlfeaturetype/multiarray.md)
   The type for multidimensional array features and feature values.
-- [MLFeatureType.string](mlfeaturetype/string.md)
+- [MLFeatureType.string](./mlfeaturetype/string.md)
   The type for string features and feature values.
-- [MLFeatureType.dictionary](mlfeaturetype/dictionary.md)
+- [MLFeatureType.dictionary](./mlfeaturetype/dictionary.md)
   The type for dictionary features and feature values.
-- [MLFeatureType.sequence](mlfeaturetype/sequence.md)
+- [MLFeatureType.sequence](./mlfeaturetype/sequence.md)
   The type for sequence features and feature values.
-- [MLFeatureType.state](mlfeaturetype/state.md)
+- [MLFeatureType.state](./mlfeaturetype/state.md)
   MLState. Represents a model state that may be updated in each inference.
-- [MLFeatureType.invalid](mlfeaturetype/invalid.md)
+- [MLFeatureType.invalid](./mlfeaturetype/invalid.md)
   The type for invalid feature values.
 ### Creating a feature type
-- [init?(rawValue: Int)](mlfeaturetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mlfeaturetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLShapedArray](mlshapedarray.md)
+### Supporting types
+- [struct MLShapedArray](./mlshapedarray.md)
   A machine learning collection type that stores scalar values in a multidimensional array.
-- [protocol MLShapedArrayProtocol](mlshapedarrayprotocol.md)
+- [protocol MLShapedArrayProtocol](./mlshapedarrayprotocol.md)
   An interface that defines a shaped array type.
-- [class MLMultiArray](mlmultiarray.md)
+- [class MLMultiArray](./mlmultiarray.md)
   A machine learning collection type that stores numeric values in an array with multiple dimensions.
-- [class MLSequence](mlsequence.md)
+- [class MLSequence](./mlsequence.md)
   A machine learning collection type that stores a series of strings or integers.
 
 

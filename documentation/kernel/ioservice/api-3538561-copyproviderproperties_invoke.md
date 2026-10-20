@@ -1,14 +1,15 @@
 # CopyProviderProperties_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t CopyProviderProperties_Invoke(const IORPC rpc, OSMetaClassBase *target, CopyProviderProperties_Handler func);
 ```
 

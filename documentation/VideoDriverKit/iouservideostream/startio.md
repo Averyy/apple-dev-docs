@@ -1,7 +1,8 @@
 # StartIO
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the stream to start IO.
 
@@ -10,7 +11,7 @@ Tells the stream to start IO.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StartIO(IOUserVideoStartStopFlags in_flags);
 ```
 
@@ -24,11 +25,12 @@ The default implementation always returns `kIOReturnSuccess`. Subclass and overr
 
 ## See Also
 
-- [StopIO](iouservideostream/stopio.md)
+### Performing I/O
+- [StopIO](./stopio.md)
   Tells the stream to stop IO.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
-- [InputNotification](iouservideostream/inputnotification.md)
+- [InputNotification](./inputnotification.md)
 
 
 ---

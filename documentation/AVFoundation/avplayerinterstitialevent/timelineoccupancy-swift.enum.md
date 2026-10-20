@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent.TimelineOccupancy
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify how an event occupies time on an integrated timeline.
 
@@ -20,35 +21,40 @@ Constants that specify how an event occupies time on an integrated timeline.
 enum TimelineOccupancy
 ```
 
+```c
+enum AVPlayerInterstitialEventTimelineOccupancy : NSInteger;
+```
+
 ## Topics
 
 ### Values
-- [AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint](avplayerinterstitialevent/timelineoccupancy-swift.enum/singlepoint.md)
+- [AVPlayerInterstitialEvent.TimelineOccupancy.singlePoint](./timelineoccupancy-swift.enum/singlepoint.md)
   The event occupies a single point on the integrated timeline.
-- [AVPlayerInterstitialEvent.TimelineOccupancy.fill](avplayerinterstitialevent/timelineoccupancy-swift.enum/fill.md)
+- [AVPlayerInterstitialEvent.TimelineOccupancy.fill](./timelineoccupancy-swift.enum/fill.md)
   The event fills the integrated timeline with the duration of this event.
 ### Initializers
-- [init?(rawValue: Int)](avplayerinterstitialevent/timelineoccupancy-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./timelineoccupancy-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](avplayerinterstitialevent/timelineoccupancy-swift.property.md)
+### Inspecting timeline occupancy
+- [var timelineOccupancy: AVPlayerInterstitialEvent.TimelineOccupancy](./timelineoccupancy-swift.property.md)
   An event’s occupancy on the integrated timeline.
-- [var supplementsPrimaryContent: Bool](avplayerinterstitialevent/supplementsprimarycontent.md)
+- [var supplementsPrimaryContent: Bool](./supplementsprimarycontent.md)
   A Boolean value that indicates whether an event supplements the primary content and should present with the primary item.
-- [var contentMayVary: Bool](avplayerinterstitialevent/contentmayvary.md)
+- [var contentMayVary: Bool](./contentmayvary.md)
   A Boolean value that indicates whether an event’s content is dynamic and the server may respond with different interstitial assets for other participants in a coordinated playback session.
-- [var plannedDuration: CMTime](avplayerinterstitialevent/plannedduration.md)
+- [var plannedDuration: CMTime](./plannedduration.md)
   The planned duration of the event.
 
 

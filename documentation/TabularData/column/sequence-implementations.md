@@ -1,11 +1,12 @@
 # Sequence Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](column/withcontiguousstorageifavailable(_:)-539v3.md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<WrappedElement?>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29-539v3.md)
   This method always returns `nil` without calling `body`.
 
 

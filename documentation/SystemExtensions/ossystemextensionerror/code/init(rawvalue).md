@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: System Extensions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.4+

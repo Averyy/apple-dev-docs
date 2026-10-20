@@ -1,9 +1,10 @@
 # count
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The number of errors that have occurred in processing the current text string, since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md) with the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md) property.  An `NSNumber`
+The number of errors that have occurred in processing the current text string, since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md) with the [`errors`](../errors.md) property.  An `NSNumber`
 
 **Availability**:
 - macOS 10.5+
@@ -14,20 +15,25 @@ The number of errors that have occurred in processing the current text string, s
 static let count: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey
 ```
 
+```c
+extern NSSpeechErrorKey const NSSpeechErrorCount;
+```
+
 #### Discussion
 
-Using the [`oldestCode`](nsspeechsynthesizer/speechpropertykey/errorkey/oldestcode.md) keys and the [`newestCode`](nsspeechsynthesizer/speechpropertykey/errorkey/newestcode.md) keys, you can get information about the oldest and most recent errors that occurred since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md), but you cannot get information about any intervening errors.
+Using the [`oldestCode`](./oldestcode.md) keys and the [`newestCode`](./newestcode.md) keys, you can get information about the oldest and most recent errors that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md), but you cannot get information about any intervening errors.
 
 ## See Also
 
-- [static let newestCharacterOffset: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](nsspeechsynthesizer/speechpropertykey/errorkey/newestcharacteroffset.md)
-  The position in the text string of the most recent error that occurred since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md) with the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md) property. An `NSNumber`.
-- [static let newestCode: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](nsspeechsynthesizer/speechpropertykey/errorkey/newestcode.md)
-  The error code of the most recent error that occurred since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md) with the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md) property.  An `NSNumber`
-- [static let oldestCharacterOffset: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](nsspeechsynthesizer/speechpropertykey/errorkey/oldestcharacteroffset.md)
-  The position in the text string of the first error that occurred since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md) with the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md) property.  An `NSNumber`
-- [static let oldestCode: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](nsspeechsynthesizer/speechpropertykey/errorkey/oldestcode.md)
-  The error code of the first error that occurred since the last call to [`object(forProperty:)`](nsspeechsynthesizer/object(forproperty:).md) with the [`errors`](nsspeechsynthesizer/speechpropertykey/errors.md) property.  An `NSNumber`
+### Type Properties
+- [static let newestCharacterOffset: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](./newestcharacteroffset.md)
+  The position in the text string of the most recent error that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md) with the [`errors`](../errors.md) property. An `NSNumber`.
+- [static let newestCode: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](./newestcode.md)
+  The error code of the most recent error that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md) with the [`errors`](../errors.md) property.  An `NSNumber`
+- [static let oldestCharacterOffset: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](./oldestcharacteroffset.md)
+  The position in the text string of the first error that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md) with the [`errors`](../errors.md) property.  An `NSNumber`
+- [static let oldestCode: NSSpeechSynthesizer.SpeechPropertyKey.ErrorKey](./oldestcode.md)
+  The error code of the first error that occurred since the last call to [`object(forProperty:)`](../../object%28forproperty%29.md) with the [`errors`](../errors.md) property.  An `NSNumber`
 
 
 ---

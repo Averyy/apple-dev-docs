@@ -1,7 +1,8 @@
 # MPSCNNDilatedPoolingMaxGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient dilated max pooling filter.
 
@@ -19,45 +20,50 @@ A representation of a gradient dilated max pooling filter.
 class MPSCNNDilatedPoolingMaxGradientNode
 ```
 
+```objc
+@interface MPSCNNDilatedPoolingMaxGradientNode : MPSCNNPoolingGradientNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](mpscnndilatedpoolingmaxgradientnode/init(sourcegradient:sourceimage:gradientstate:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:dilationratex:dilationratey:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int, dilationRateX: Int, dilationRateY: Int)](./mpscnndilatedpoolingmaxgradientnode/init%28sourcegradient,sourceimage,gradientstate,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy,dilationratex,dilationratey%29.md)
 ### Instance Properties
-- [var dilationRateX: Int](mpscnndilatedpoolingmaxgradientnode/dilationratex.md)
-- [var dilationRateY: Int](mpscnndilatedpoolingmaxgradientnode/dilationratey.md)
+- [var dilationRateX: Int](./mpscnndilatedpoolingmaxgradientnode/dilationratex.md)
+- [var dilationRateY: Int](./mpscnndilatedpoolingmaxgradientnode/dilationratey.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+- [MPSCNNPoolingGradientNode](./mpscnnpoolinggradientnode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNPoolingAverageNode](mpscnnpoolingaveragenode.md)
+### Pooling Layer Nodes
+- [class MPSCNNPoolingAverageNode](./mpscnnpoolingaveragenode.md)
   A representation of an average pooling filter.
-- [class MPSCNNDilatedPoolingMaxNode](mpscnndilatedpoolingmaxnode.md)
+- [class MPSCNNDilatedPoolingMaxNode](./mpscnndilatedpoolingmaxnode.md)
   A representation of a dilated max pooling filter.
-- [class MPSCNNPoolingL2NormNode](mpscnnpoolingl2normnode.md)
+- [class MPSCNNPoolingL2NormNode](./mpscnnpoolingl2normnode.md)
   A representation of a L2-norm pooling filter.
-- [class MPSCNNPoolingMaxNode](mpscnnpoolingmaxnode.md)
+- [class MPSCNNPoolingMaxNode](./mpscnnpoolingmaxnode.md)
   A representation of a max pooling filter.
-- [class MPSCNNPoolingNode](mpscnnpoolingnode.md)
+- [class MPSCNNPoolingNode](./mpscnnpoolingnode.md)
   A representation of a MPS CNN pooling kernel.
-- [class MPSCNNPoolingAverageGradientNode](mpscnnpoolingaveragegradientnode.md)
+- [class MPSCNNPoolingAverageGradientNode](./mpscnnpoolingaveragegradientnode.md)
   A representation of a gradient average pooling filter.
-- [class MPSCNNPoolingGradientNode](mpscnnpoolinggradientnode.md)
+- [class MPSCNNPoolingGradientNode](./mpscnnpoolinggradientnode.md)
   A representation of a gradient pooling kernel.
-- [class MPSCNNPoolingL2NormGradientNode](mpscnnpoolingl2normgradientnode.md)
+- [class MPSCNNPoolingL2NormGradientNode](./mpscnnpoolingl2normgradientnode.md)
   A representation of a gradient L2-norm pooling filter.
-- [class MPSCNNPoolingMaxGradientNode](mpscnnpoolingmaxgradientnode.md)
+- [class MPSCNNPoolingMaxGradientNode](./mpscnnpoolingmaxgradientnode.md)
   A representation of a gradient max pooling filter.
 
 

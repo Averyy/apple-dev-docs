@@ -1,7 +1,8 @@
 # general
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A use case for general prompting.
 
@@ -20,7 +21,7 @@ static let general: SystemLanguageModel.UseCase
 
 ## Mentions
 
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+- [Categorizing and organizing data with content tags](../../categorizing-and-organizing-data-with-content-tags.md)
 
 #### Discussion
 

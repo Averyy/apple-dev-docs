@@ -1,7 +1,8 @@
 # gamma
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The rotation, in degrees, of the device frame around its y-axis.
 
@@ -10,7 +11,7 @@ The rotation, in degrees, of the device frame around its y-axis.
 
 ## Declaration
 
-```swift
+```
 readonly attribute unrestricted double gamma;
 ```
 
@@ -20,9 +21,10 @@ Values are between -180 and 180.  This property is `null` if the device cannot p
 
 ## See Also
 
-- [alpha](deviceorientationevent/1629200-alpha.md)
+### Getting Orientation Event Properties
+- [alpha](./api-1629200-alpha.md)
   The rotation, in degrees, of the device frame around its z-axis.
-- [beta](deviceorientationevent/1631254-beta.md)
+- [beta](./api-1631254-beta.md)
   The rotation, in degrees, of the device frame around its x-axis.
 
 

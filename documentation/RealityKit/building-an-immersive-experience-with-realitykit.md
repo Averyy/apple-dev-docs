@@ -1,6 +1,8 @@
 # Building an immersive experience with RealityKit
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Sample Code  
+**Download**: [CreatingAGameWithSceneUnderstanding.zip](https://docs-assets.developer.apple.com/published/2e427f3a5227/CreatingAGameWithSceneUnderstanding.zip)
 
 Use systems and postprocessing effects to create a realistic underwater scene.
 
@@ -12,7 +14,7 @@ Use systems and postprocessing effects to create a realistic underwater scene.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 session [`10074: Dive into RealityKit 2`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10074/).
+> **Note**: This sample code project is associated with WWDC21 session [10074: Dive into RealityKit 2](https://developer.apple.com/wwdc21/10074/).
 
 #### Configure the Sample Code Project
 
@@ -20,11 +22,12 @@ This project requires an iPhone or iPad running at least iOS 15 or iPadOS 15. It
 
 ## See Also
 
-- [Understanding the modular architecture of RealityKit](../visionos/understanding-the-realitykit-modular-architecture.md)
+### Essentials
+- [Understanding the modular architecture of RealityKit](../visionOS/understanding-the-realitykit-modular-architecture.md)
   Learn how everything fits together in RealityKit.
-- [class Entity](entity.md)
+- [class Entity](./entity.md)
   An element of a RealityKit scene to which you attach components that provide appearance and behavior characteristics for the entity.
-- [protocol Component](component.md)
+- [protocol Component](./component.md)
   A representation of a geometry or a behavior that you apply to an entity.
 
 

@@ -1,7 +1,8 @@
 # Unicode.NumericType.digit
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A digit that does not meet the requirements of the `decimal` numeric type.
 

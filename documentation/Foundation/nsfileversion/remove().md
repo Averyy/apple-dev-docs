@@ -1,7 +1,8 @@
 # remove()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove this version object and its associated file from the version store.
 
@@ -20,21 +21,28 @@ Remove this version object and its associated file from the version store.
 func remove() throws
 ```
 
+```objc
+- (BOOL) removeAndReturnError:(NSError **) outError;
+```
+
 #### Discussion
 
-This method removes this version object and its file from the version store, freeing up the associated storage space. You must not call this method for the current file version—that is, the version object returned by the [`currentVersionOfItem(at:)`](nsfileversion/currentversionofitem(at:).md) method.
+This method removes this version object and its file from the version store, freeing up the associated storage space. You must not call this method for the current file version—that is, the version object returned by the [`currentVersionOfItem(at:)`](./currentversionofitem%28at%29.md) method.
 
 You should always remove file versions as part of a coordinated write operation to a file. In other words, always call this method from a block passed to a file coordinator object to initiate a write operation. Doing so ensures that no other processes are operating on the file while you remove the version information.
 
 If successful, subsequent requests for the versions of the file do not include this version object (or any object with the same information). You can use this method to free up disk space by removing versions that are no longer needed.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## See Also
 
-- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](nsfileversion/replaceitem(at:options:).md)
+### Replacing and Deleting Versions
+- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](./replaceitem%28at,options%29.md)
   Replace the contents of the specified file with the contents of the current version’s file.
-- [class func removeOtherVersionsOfItem(at: URL) throws](nsfileversion/removeotherversionsofitem(at:).md)
+- [class func removeOtherVersionsOfItem(at: URL) throws](./removeotherversionsofitem%28at%29.md)
   Removes all versions of a file, except the current one, from the version store.
 
 

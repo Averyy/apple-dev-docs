@@ -1,7 +1,8 @@
 # NSWindow.ToolbarStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Styles that determine the appearance and location of the toolbar in relation to the title bar.
 
@@ -14,47 +15,52 @@ Styles that determine the appearance and location of the toolbar in relation to 
 enum ToolbarStyle
 ```
 
+```c
+enum NSWindowToolbarStyle : NSInteger;
+```
+
 ## Topics
 
 ### Styles
-- [NSWindow.ToolbarStyle.automatic](nswindow/toolbarstyle-swift.enum/automatic.md)
+- [NSWindow.ToolbarStyle.automatic](./toolbarstyle-swift.enum/automatic.md)
   A style indicating that the system determines the toolbar’s appearance and location.
-- [NSWindow.ToolbarStyle.expanded](nswindow/toolbarstyle-swift.enum/expanded.md)
+- [NSWindow.ToolbarStyle.expanded](./toolbarstyle-swift.enum/expanded.md)
   A style indicating that the toolbar appears below the window title.
-- [NSWindow.ToolbarStyle.preference](nswindow/toolbarstyle-swift.enum/preference.md)
+- [NSWindow.ToolbarStyle.preference](./toolbarstyle-swift.enum/preference.md)
   A style indicating that the toolbar appears below the window title with toolbar items centered in the toolbar.
-- [NSWindow.ToolbarStyle.unified](nswindow/toolbarstyle-swift.enum/unified.md)
+- [NSWindow.ToolbarStyle.unified](./toolbarstyle-swift.enum/unified.md)
   A style indicating that the toolbar appears next to the window title.
-- [NSWindow.ToolbarStyle.unifiedCompact](nswindow/toolbarstyle-swift.enum/unifiedcompact.md)
+- [NSWindow.ToolbarStyle.unifiedCompact](./toolbarstyle-swift.enum/unifiedcompact.md)
   A style indicating that the toolbar appears next to the window title and with reduced margins to allow more focus on the window’s contents.
 ### Initializers
-- [init?(rawValue: Int)](nswindow/toolbarstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./toolbarstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func standardWindowButton(NSWindow.ButtonType, for: NSWindow.StyleMask) -> NSButton?](nswindow/standardwindowbutton(_:for:).md)
+### Managing Title Bars
+- [class func standardWindowButton(NSWindow.ButtonType, for: NSWindow.StyleMask) -> NSButton?](./standardwindowbutton%28_,for%29.md)
   Returns a new instance of a given standard window button, sized appropriately for a given window style.
-- [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](nswindow/standardwindowbutton(_:).md)
+- [func standardWindowButton(NSWindow.ButtonType) -> NSButton?](./standardwindowbutton%28_%29.md)
   Returns the window button of a given window button kind in the window’s view hierarchy.
-- [var titlebarAppearsTransparent: Bool](nswindow/titlebarappearstransparent.md)
+- [var titlebarAppearsTransparent: Bool](./titlebarappearstransparent.md)
   A Boolean value that indicates whether the title bar draws its background.
-- [var toolbarStyle: NSWindow.ToolbarStyle](nswindow/toolbarstyle-swift.property.md)
+- [var toolbarStyle: NSWindow.ToolbarStyle](./toolbarstyle-swift.property.md)
   The style that determines the appearance and location of the toolbar in relation to the title bar.
-- [var titlebarSeparatorStyle: NSTitlebarSeparatorStyle](nswindow/titlebarseparatorstyle.md)
+- [var titlebarSeparatorStyle: NSTitlebarSeparatorStyle](./titlebarseparatorstyle.md)
   The type of separator that the app displays between the title bar and content of a window.
-- [enum NSTitlebarSeparatorStyle](nstitlebarseparatorstyle.md)
+- [enum NSTitlebarSeparatorStyle](../nstitlebarseparatorstyle.md)
   Styles that determine the type of separator displayed between the title bar and content of a window.
-- [var windowTitlebarLayoutDirection: NSUserInterfaceLayoutDirection](nswindow/windowtitlebarlayoutdirection.md)
+- [var windowTitlebarLayoutDirection: NSUserInterfaceLayoutDirection](./windowtitlebarlayoutdirection.md)
   The direction the window’s title bar lays text out, either left to right or right to left.
 
 

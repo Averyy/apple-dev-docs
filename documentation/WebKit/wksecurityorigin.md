@@ -1,7 +1,8 @@
 # WKSecurityOrigin
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that identifies the origin of a particular resource.
 
@@ -19,50 +20,55 @@ An object that identifies the origin of a particular resource.
 class WKSecurityOrigin
 ```
 
+```objc
+@interface WKSecurityOrigin : NSObject
+```
+
 #### Overview
 
-A [`WKSecurityOrigin`](wksecurityorigin.md) object is a transient, data-only object that identifies the host name, protocol, and port number associated with a particular resource. You don’t create [`WKSecurityOrigin`](wksecurityorigin.md) objects directly. Instead, WebKit creates them for the resources it loads. A *first-party* load is any load URL has the same security origin as the requesting web site. First-party webpages can access each other’s resources, such as scripts and databases.
+A [`WKSecurityOrigin`](./wksecurityorigin.md) object is a transient, data-only object that identifies the host name, protocol, and port number associated with a particular resource. You don’t create [`WKSecurityOrigin`](./wksecurityorigin.md) objects directly. Instead, WebKit creates them for the resources it loads. A *first-party* load is any load URL has the same security origin as the requesting web site. First-party webpages can access each other’s resources, such as scripts and databases.
 
-Because a [`WKSecurityOrigin`](wksecurityorigin.md) object is transient, it doesn’t uniquely identify a security origin across multiple delegate method calls.
+Because a [`WKSecurityOrigin`](./wksecurityorigin.md) object is transient, it doesn’t uniquely identify a security origin across multiple delegate method calls.
 
 ## Topics
 
 ### Getting the Host Information
-- [var host: String](wksecurityorigin/host.md)
+- [var host: String](./wksecurityorigin/host.md)
   The security origin’s host.
-- [var port: Int](wksecurityorigin/port.md)
+- [var port: Int](./wksecurityorigin/port.md)
   The security origin’s port.
 ### Getting the Host Protocol
-- [var `protocol`: String](wksecurityorigin/protocol.md)
+- [var `protocol`: String](./wksecurityorigin/protocol.md)
   The security origin’s protocol.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class WKUserContentController](wkusercontentcontroller.md)
+### Page content
+- [class WKUserContentController](./wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
-- [class WKContentRuleListStore](wkcontentruleliststore.md)
+- [class WKContentRuleListStore](./wkcontentruleliststore.md)
   An object that contains the rules for how to load and filter content in the web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](./wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKFrameInfo](wkframeinfo.md)
+- [class WKFrameInfo](./wkframeinfo.md)
   An object that contains information about a frame on a webpage.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](./wkuserscript.md)
   A script that the web view injects into a webpage.
-- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
-- [class WKJSHandle](wkjshandle.md)
+- [WKContentWorld.Configuration](./wkcontentworld/configuration.md)
+- [class WKJSHandle](./wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
 
 

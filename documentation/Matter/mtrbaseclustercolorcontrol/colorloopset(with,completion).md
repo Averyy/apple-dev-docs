@@ -1,7 +1,8 @@
 # colorLoopSet(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func colorLoopSet(with params: MTRColorControlClusterColorLoopSetParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func colorLoopSet(with params: MTRColorControlClusterColorLoopSetParams) async throws
+```
+
+```objc
+- (void) colorLoopSetWithParams:(MTRColorControlClusterColorLoopSetParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

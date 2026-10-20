@@ -1,14 +1,15 @@
 # KDP_EVENT_PANICLOG
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 KDP_EVENT_PANICLOG
 ```
 

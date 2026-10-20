@@ -1,7 +1,8 @@
 # MutableRef
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A safe mutable reference allowing in-place mutation to an exclusive value.
 
@@ -24,23 +25,24 @@ struct MutableRef<Value> where Value : ~Copyable
 ## Topics
 
 ### Initializers
-- [init(inout Value)](mutableref/init(_:).md)
+- [init(inout Value)](./mutableref/init%28_%29.md)
   Initializes an instance of `MutableRef` with the given mutable value. This creates a mutable reference to that value preventing writes to the original value while this mutable reference is still active.
-- [init<Owner>(unsafeAddress: UnsafeMutablePointer<Value>, mutating: inout Owner)](mutableref/init(unsafeaddress:mutating:).md)
+- [init<Owner>(unsafeAddress: UnsafeMutablePointer<Value>, mutating: inout Owner)](./mutableref/init%28unsafeaddress,mutating%29.md)
   Unsafely initializes an instance of `MutableRef` using the given ‘unsafeAddress’ as the mutable reference based on the mutating lifetime of the given ‘owner’ argument.
 ### Instance Properties
-- [var value: Value](mutableref/value.md)
+- [var value: Value](./mutableref/value.md)
   Dereferences the mutable reference allowing for in-place reads and writes to the underlying value.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct Ref](ref.md)
+### Borrowing
+- [struct Ref](./ref.md)
   A safe reference allowing in-place reads to a shared value.
 
 

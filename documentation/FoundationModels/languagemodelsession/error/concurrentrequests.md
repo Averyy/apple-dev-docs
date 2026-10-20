@@ -1,7 +1,8 @@
 # LanguageModelSession.Error.concurrentRequests
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session received multiple concurrent requests.
 
@@ -25,7 +26,8 @@ A language model session only supports one request at a time. Wait for the curre
 
 ## See Also
 
-- [LanguageModelSession.Error.transcriptMutationWhileResponding](languagemodelsession/error/transcriptmutationwhileresponding.md)
+### Getting the session errors
+- [LanguageModelSession.Error.transcriptMutationWhileResponding](./transcriptmutationwhileresponding.md)
   A request mutated the session’s transcript while it was in progress.
 
 

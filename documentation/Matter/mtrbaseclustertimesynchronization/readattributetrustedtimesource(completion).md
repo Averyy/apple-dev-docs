@@ -1,7 +1,8 @@
 # readAttributeTrustedTimeSource(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTrustedTimeSource(completion: @escaping @Sendable (MTRTimeSynchronizationClusterTrustedTimeSourceStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTrustedTimeSource() async throws -> MTRTimeSynchronizationClusterTrustedTimeSourceStruct
+```
+
+```objc
+- (void) readAttributeTrustedTimeSourceWithCompletion:(void (^)(MTRTimeSynchronizationClusterTrustedTimeSourceStruct *value, NSError *error)) completion;
 ```
 
 

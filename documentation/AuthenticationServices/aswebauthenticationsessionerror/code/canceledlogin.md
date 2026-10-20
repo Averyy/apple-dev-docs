@@ -1,7 +1,8 @@
 # ASWebAuthenticationSessionError.Code.canceledLogin
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The login has been canceled.
 
@@ -20,11 +21,16 @@ The login has been canceled.
 case canceledLogin
 ```
 
+```c
+ASWebAuthenticationSessionErrorCodeCanceledLogin
+```
+
 ## See Also
 
-- [ASWebAuthenticationSessionError.Code.presentationContextNotProvided](aswebauthenticationsessionerror/code/presentationcontextnotprovided.md)
+### Codes
+- [ASWebAuthenticationSessionError.Code.presentationContextNotProvided](./presentationcontextnotprovided.md)
   A context wasn’t provided.
-- [ASWebAuthenticationSessionError.Code.presentationContextInvalid](aswebauthenticationsessionerror/code/presentationcontextinvalid.md)
+- [ASWebAuthenticationSessionError.Code.presentationContextInvalid](./presentationcontextinvalid.md)
   The context was invalid.
 
 

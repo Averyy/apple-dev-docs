@@ -1,7 +1,8 @@
 # SystemFormatStyle.DateReference
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that refers to a date using the most natural phrasing based on how much time separates it from the current time.
 
@@ -29,7 +30,7 @@ struct DateReference
 Text(.currentDate, format: .reference(to: eventDate))
 ```
 
-##### Relative Vs Absolute Representation
+##### Relative vs. absolute representation
 
 The style uses a relative format (“in 2 hours”, “3 days ago”) when the referenced date is within the threshold distance. Beyond that threshold, it switches to an absolute format (“Monday, June 3”, “June 2019”).
 
@@ -46,7 +47,7 @@ The `thresholdField` parameter controls where this switch happens. With the defa
 | > 1 month | Absolute | `Monday, June 3` |
 | > 1 year | Absolute | `June 2019` |
 
-##### Controlling the Absolute Representation
+##### Controlling the absolute representation
 
 The `maxFieldCount` parameter determines how many date components appear in the absolute representation:
 
@@ -69,24 +70,24 @@ The style automatically removes higher-order fields that match the reference dat
 ## Topics
 
 ### Initializers
-- [init(to: Date, allowedFields: Set<Date.RelativeFormatStyle.Field>, maxFieldCount: Int, thresholdField: Date.RelativeFormatStyle.Field)](systemformatstyle/datereference/init(to:allowedfields:maxfieldcount:thresholdfield:).md)
+- [init(to: Date, allowedFields: Set<Date.RelativeFormatStyle.Field>, maxFieldCount: Int, thresholdField: Date.RelativeFormatStyle.Field)](./datereference/init%28to,allowedfields,maxfieldcount,thresholdfield%29.md)
   Creates a format style that refers to a comparison date using natural language.
 ### Instance Methods
-- [func calendar(Calendar) -> SystemFormatStyle.DateReference](systemformatstyle/datereference/calendar(_:).md)
+- [func calendar(Calendar) -> SystemFormatStyle.DateReference](./datereference/calendar%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../../Foundation/discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../../Foundation/formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

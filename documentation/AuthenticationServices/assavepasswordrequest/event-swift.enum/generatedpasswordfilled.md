@@ -1,7 +1,8 @@
 # ASSavePasswordRequest.Event.generatedPasswordFilled
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A save event that occurs when generated password is filled into a not yet submitted form.
 
@@ -15,6 +16,10 @@ A save event that occurs when generated password is filled into a not yet submit
 
 ```swift
 case generatedPasswordFilled
+```
+
+```c
+ASSavePasswordRequestEventGeneratedPasswordFilled
 ```
 
 #### Discussion

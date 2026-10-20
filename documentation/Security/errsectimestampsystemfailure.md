@@ -1,7 +1,8 @@
 # errSecTimestampSystemFailure
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The timestamp request cannot be handled due to a system failure.
 
@@ -18,6 +19,10 @@ The timestamp request cannot be handled due to a system failure.
 
 ```swift
 var errSecTimestampSystemFailure: OSStatus { get }
+```
+
+```c
+errSecTimestampSystemFailure
 ```
 
 

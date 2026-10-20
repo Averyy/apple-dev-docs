@@ -1,7 +1,8 @@
 # AXValueGetValue(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXValueGetValue(_ value: AXValue, _ theType: AXValueType, _ valuePtr: UnsafeMutableRawPointer) -> Bool
+```
+
+```c
+Boolean AXValueGetValue(AXValueRef value, AXValueType theType, void *valuePtr);
 ```
 
 #### Discussion
@@ -22,9 +27,10 @@ Decodes the structure stored in value and copies it into valuePtr. If the struct
 
 ## See Also
 
-- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](1459351-axvaluecreate.md)
-- [func AXValueGetType(AXValue) -> AXValueType](1460911-axvaluegettype.md)
-- [func AXValueGetTypeID() -> CFTypeID](1460780-axvaluegettypeid.md)
+### Miscellaneous
+- [func AXValueCreate(AXValueType, UnsafeRawPointer) -> AXValue?](./api-1459351-axvaluecreate.md)
+- [func AXValueGetType(AXValue) -> AXValueType](./api-1460911-axvaluegettype.md)
+- [func AXValueGetTypeID() -> CFTypeID](./api-1460780-axvaluegettypeid.md)
 
 
 ---

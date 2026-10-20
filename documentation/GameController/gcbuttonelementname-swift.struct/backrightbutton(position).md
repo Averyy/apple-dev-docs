@@ -1,7 +1,8 @@
 # backRightButton(position:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the name of the back right button at the specified location.
 
@@ -29,7 +30,8 @@ The name of the back right button.
 
 ## See Also
 
-- [static func backLeftButton(position: Int) -> GCButtonElementName](gcbuttonelementname-swift.struct/backleftbutton(position:).md)
+### Getting extended gamepad back button names
+- [static func backLeftButton(position: Int) -> GCButtonElementName](./backleftbutton%28position%29.md)
   Returns the name of the back left button at the specified location.
 
 

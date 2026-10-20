@@ -1,12 +1,13 @@
 # selectedSegment
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the selected segment of the control, or `-1` if no segment is selected.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,22 +15,27 @@ The index of the selected segment of the control, or `-1` if no segment is selec
 var selectedSegment: Int { get set }
 ```
 
+```objc
+@property NSInteger selectedSegment;
+```
+
 #### Discussion
 
-If the control allows multiple selections, this property contains the most recently selected segment. If the index is out of bounds, an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) is raised.
+If the control allows multiple selections, this property contains the most recently selected segment. If the index is out of bounds, an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) is raised.
 
 ## See Also
 
-- [var indexOfSelectedItem: Int](nssegmentedcontrol/indexofselecteditem.md)
-- [func selectSegment(withTag: Int) -> Bool](nssegmentedcontrol/selectsegment(withtag:).md)
+### Managing the selected segment
+- [var indexOfSelectedItem: Int](./indexofselecteditem.md)
+- [func selectSegment(withTag: Int) -> Bool](./selectsegment%28withtag%29.md)
   Selects the segment with the specified tag.
-- [func setSelected(Bool, forSegment: Int)](nssegmentedcontrol/setselected(_:forsegment:).md)
+- [func setSelected(Bool, forSegment: Int)](./setselected%28_,forsegment%29.md)
   Sets the selection state of the specified segment.
-- [func isSelected(forSegment: Int) -> Bool](nssegmentedcontrol/isselected(forsegment:).md)
+- [func isSelected(forSegment: Int) -> Bool](./isselected%28forsegment%29.md)
   Returns a Boolean value indicating whether the specified segment is selected.
-- [var selectedSegmentBezelColor: NSColor?](nssegmentedcontrol/selectedsegmentbezelcolor.md)
+- [var selectedSegmentBezelColor: NSColor?](./selectedsegmentbezelcolor.md)
   The color of the selected segment’s bezel, in appearances that support it.
-- [var doubleValueForSelectedSegment: Double](nssegmentedcontrol/doublevalueforselectedsegment.md)
+- [var doubleValueForSelectedSegment: Double](./doublevalueforselectedsegment.md)
   When the tracking mode for the control is set to use a momentary accelerator, returns a value for the selected segment.
 
 

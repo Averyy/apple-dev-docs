@@ -1,7 +1,8 @@
 # stopGyroUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops gyroscope updates.
 
@@ -18,17 +19,22 @@ Stops gyroscope updates.
 func stopGyroUpdates()
 ```
 
+```objc
+- (void) stopGyroUpdates;
+```
+
 ## See Also
 
-- [var gyroUpdateInterval: TimeInterval](cmmotionmanager/gyroupdateinterval.md)
+### Managing Gyroscope Updates
+- [var gyroUpdateInterval: TimeInterval](./gyroupdateinterval.md)
   The interval, in seconds, for providing gyroscope updates to the block handler.
-- [func startGyroUpdates(to: OperationQueue, withHandler: CMGyroHandler)](cmmotionmanager/startgyroupdates(to:withhandler:).md)
+- [func startGyroUpdates(to: OperationQueue, withHandler: CMGyroHandler)](./startgyroupdates%28to,withhandler%29.md)
   Starts gyroscope updates on an operation queue and with a specified handler.
-- [func startGyroUpdates()](cmmotionmanager/startgyroupdates.md)
+- [func startGyroUpdates()](./startgyroupdates%28%29.md)
   Starts gyroscope updates without a handler.
-- [var gyroData: CMGyroData?](cmmotionmanager/gyrodata.md)
+- [var gyroData: CMGyroData?](./gyrodata.md)
   The latest sample of gyroscope data.
-- [typealias CMGyroHandler](cmgyrohandler.md)
+- [typealias CMGyroHandler](../cmgyrohandler.md)
   The type of block callback for handling gyroscope data.
 
 

@@ -1,7 +1,8 @@
 # kSecGuestAttributeCanonical
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the guest code object for that guest.
 
@@ -15,9 +16,13 @@ A key whose value is the guest code object for that guest.
 let kSecGuestAttributeCanonical: CFString
 ```
 
+```c
+extern CFStringRef const kSecGuestAttributeCanonical;
+```
+
 #### Discussion
 
-This object plus the process ID ([`kSecGuestAttributePid`](ksecguestattributepid.md)) uniquely identify the guest.
+This object plus the process ID ([`kSecGuestAttributePid`](./ksecguestattributepid.md)) uniquely identify the guest.
 
 
 ---

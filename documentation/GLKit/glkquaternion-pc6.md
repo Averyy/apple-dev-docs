@@ -1,6 +1,7 @@
 # GLKQuaternion
 
-**Framework**: GLKit
+**Framework**: GLKit  
+**Role**: API Collection
 
 #### Overview
 
@@ -11,68 +12,69 @@ The functions that manipulate `GLKQuaternion` structures treat the inputs as imm
 ## Topics
 
 ### Creating Quaternions
-- [func GLKQuaternionMake(Float, Float, Float, Float) -> GLKQuaternion](glkquaternionmake(_:_:_:_:).md)
+- [func GLKQuaternionMake(Float, Float, Float, Float) -> GLKQuaternion](./glkquaternionmake%28_,_,_,_%29.md)
   Returns a quaternion created from its separate components.
-- [func GLKQuaternionMakeWithArray(UnsafeMutablePointer<Float>!) -> GLKQuaternion](glkquaternionmakewitharray(_:).md)
+- [func GLKQuaternionMakeWithArray(UnsafeMutablePointer<Float>!) -> GLKQuaternion](./glkquaternionmakewitharray%28_%29.md)
   Returns a quaternion created from an array of components.
-- [func GLKQuaternionMakeWithVector3(GLKVector3, Float) -> GLKQuaternion](glkquaternionmakewithvector3(_:_:).md)
+- [func GLKQuaternionMakeWithVector3(GLKVector3, Float) -> GLKQuaternion](./glkquaternionmakewithvector3%28_,_%29.md)
   Returns a quaternion created from a vector and a scalar.
-- [func GLKQuaternionMakeWithAngleAndAxis(Float, Float, Float, Float) -> GLKQuaternion](glkquaternionmakewithangleandaxis(_:_:_:_:).md)
+- [func GLKQuaternionMakeWithAngleAndAxis(Float, Float, Float, Float) -> GLKQuaternion](./glkquaternionmakewithangleandaxis%28_,_,_,_%29.md)
   Creates a quaternion that represents a rotation around an axis.
-- [func GLKQuaternionMakeWithAngleAndVector3Axis(Float, GLKVector3) -> GLKQuaternion](glkquaternionmakewithangleandvector3axis(_:_:).md)
+- [func GLKQuaternionMakeWithAngleAndVector3Axis(Float, GLKVector3) -> GLKQuaternion](./glkquaternionmakewithangleandvector3axis%28_,_%29.md)
   Creates a quaternion that represents a rotation around an axis.
-- [func GLKQuaternionMakeWithMatrix3(GLKMatrix3) -> GLKQuaternion](glkquaternionmakewithmatrix3(_:).md)
+- [func GLKQuaternionMakeWithMatrix3(GLKMatrix3) -> GLKQuaternion](./glkquaternionmakewithmatrix3%28_%29.md)
   Creates a quaternion from a rotation matrix.
-- [func GLKQuaternionMakeWithMatrix4(GLKMatrix4) -> GLKQuaternion](glkquaternionmakewithmatrix4(_:).md)
+- [func GLKQuaternionMakeWithMatrix4(GLKMatrix4) -> GLKQuaternion](./glkquaternionmakewithmatrix4%28_%29.md)
   Creates a quaternion from a rotation matrix.
 ### Retrieving Information About a Quaternion
-- [func GLKQuaternionLength(GLKQuaternion) -> Float](glkquaternionlength(_:).md)
+- [func GLKQuaternionLength(GLKQuaternion) -> Float](./glkquaternionlength%28_%29.md)
   Returns the length of a quaternion.
-- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](glkquaternionaxis(_:).md)
+- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](./glkquaternionaxis%28_%29.md)
   Returns the axis of rotation of a quaternion.
-- [func GLKQuaternionAngle(GLKQuaternion) -> Float](glkquaternionangle(_:).md)
+- [func GLKQuaternionAngle(GLKQuaternion) -> Float](./glkquaternionangle%28_%29.md)
   Returns the rotation angle of a quaternion.
 ### Performing Mathematical Operations on Quaternions
-- [func GLKQuaternionNormalize(GLKQuaternion) -> GLKQuaternion](glkquaternionnormalize(_:).md)
+- [func GLKQuaternionNormalize(GLKQuaternion) -> GLKQuaternion](./glkquaternionnormalize%28_%29.md)
   Returns a normalized version of a quaternion.
-- [func GLKQuaternionInvert(GLKQuaternion) -> GLKQuaternion](glkquaternioninvert(_:).md)
+- [func GLKQuaternionInvert(GLKQuaternion) -> GLKQuaternion](./glkquaternioninvert%28_%29.md)
   Returns an inverse of a quaternion.
-- [func GLKQuaternionConjugate(GLKQuaternion) -> GLKQuaternion](glkquaternionconjugate(_:).md)
+- [func GLKQuaternionConjugate(GLKQuaternion) -> GLKQuaternion](./glkquaternionconjugate%28_%29.md)
   Returns the conjugate of a quaternion.
-- [func GLKQuaternionAdd(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionadd(_:_:).md)
+- [func GLKQuaternionAdd(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionadd%28_,_%29.md)
   Returns the sum of two quaternions.
-- [func GLKQuaternionSubtract(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionsubtract(_:_:).md)
+- [func GLKQuaternionSubtract(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionsubtract%28_,_%29.md)
   Returns the difference between two quaternions.
-- [func GLKQuaternionMultiply(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](glkquaternionmultiply(_:_:).md)
+- [func GLKQuaternionMultiply(GLKQuaternion, GLKQuaternion) -> GLKQuaternion](./glkquaternionmultiply%28_,_%29.md)
   Returns the product of two quaternions.
-- [func GLKQuaternionSlerp(GLKQuaternion, GLKQuaternion, Float) -> GLKQuaternion](glkquaternionslerp(_:_:_:).md)
+- [func GLKQuaternionSlerp(GLKQuaternion, GLKQuaternion, Float) -> GLKQuaternion](./glkquaternionslerp%28_,_,_%29.md)
   Returns the spherical linear interpolation of two quaternions.
 ### Applying Quaternions to Vectors
-- [func GLKQuaternionRotateVector3(GLKQuaternion, GLKVector3) -> GLKVector3](glkquaternionrotatevector3(_:_:).md)
+- [func GLKQuaternionRotateVector3(GLKQuaternion, GLKVector3) -> GLKVector3](./glkquaternionrotatevector3%28_,_%29.md)
   Returns a new vector that is calculated by applying a quaternion rotation to a vector.
-- [func GLKQuaternionRotateVector3Array(GLKQuaternion, UnsafeMutablePointer<GLKVector3>, Int)](glkquaternionrotatevector3array(_:_:_:).md)
+- [func GLKQuaternionRotateVector3Array(GLKQuaternion, UnsafeMutablePointer<GLKVector3>, Int)](./glkquaternionrotatevector3array%28_,_,_%29.md)
   Applies a quaternion rotation to an array of vectors.
-- [func GLKQuaternionRotateVector4(GLKQuaternion, GLKVector4) -> GLKVector4](glkquaternionrotatevector4(_:_:).md)
+- [func GLKQuaternionRotateVector4(GLKQuaternion, GLKVector4) -> GLKVector4](./glkquaternionrotatevector4%28_,_%29.md)
   Returns a new vector calculated by applying a quaternion rotation to a vector.
-- [func GLKQuaternionRotateVector4Array(GLKQuaternion, UnsafeMutablePointer<GLKVector4>, Int)](glkquaternionrotatevector4array(_:_:_:).md)
+- [func GLKQuaternionRotateVector4Array(GLKQuaternion, UnsafeMutablePointer<GLKVector4>, Int)](./glkquaternionrotatevector4array%28_,_,_%29.md)
   Applies a quaternion rotation to an array of vectors.
 ### Data Types
-- [typealias GLKQuaternion](glkquaternion.md)
+- [typealias GLKQuaternion](./glkquaternion.md)
   A representation of a quaternion.
 ### Constants
-- [let GLKQuaternionIdentity: GLKQuaternion](glkquaternionidentity.md)
+- [let GLKQuaternionIdentity: GLKQuaternion](./glkquaternionidentity.md)
   An identity quaternion.
 
 ## See Also
 
-- [class GLKMatrixStack](glkmatrixstack.md)
+### Math Utilties
+- [class GLKMatrixStack](./glkmatrixstack.md)
   An opaque type that represents a stack of 4 x 4 matrices, providing support for hierarchical transform modeling and similar tasks.
-- [GLKMatrix3](glkmatrix3-pcl.md)
-- [GLKMatrix4](glkmatrix4-pce.md)
-- [GLKVector2](glkvector2-pbj.md)
-- [GLKVector3](glkvector3-pbt.md)
-- [GLKVector4](glkvector4-pbk.md)
-- [GLKit Math Utilities](glkit-math-utilities.md)
+- [GLKMatrix3](./glkmatrix3-pcl.md)
+- [GLKMatrix4](./glkmatrix4-pce.md)
+- [GLKVector2](./glkvector2-pbj.md)
+- [GLKVector3](./glkvector3-pbt.md)
+- [GLKVector4](./glkvector4-pbk.md)
+- [GLKit Math Utilities](./glkit-math-utilities.md)
 
 
 ---

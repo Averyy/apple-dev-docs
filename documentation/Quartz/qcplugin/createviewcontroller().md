@@ -1,17 +1,24 @@
 # createViewController()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns a view controller for the Settings pane of a custom patch.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func createViewController() -> QCPlugInViewController!
+```
+
+```objc
+- (QCPlugInViewController *) createViewController;
 ```
 
 #### Return Value
@@ -24,7 +31,7 @@ This extension to the `QCPlugInViewController` class  provides user-interface su
 
 The implementation is straightforward. You allocate a `QCPlugInViewController` object, initialize it, and provide the name of the nib file that contains the user interface for the Settings pane.
 
-Note that this method follows the Core Foundation “create” rule. See the ownership policy in [`Memory Management Programming Guide for Core Foundation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
+Note that this method follows the Core Foundation “create” rule. See the ownership policy in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 
 For example, if the nib file name that contains the settings pane is `MySettingsPane.nib`, the implementation is:
 
@@ -38,7 +45,8 @@ For example, if the nib file name that contains the settings pane is `MySettings
 
 ## See Also
 
-- [class func plugInKeys() -> [Any]!](qcplugin/pluginkeys.md)
+### Defining Internal Settings
+- [class func plugInKeys() -> [Any]!](./pluginkeys%28%29.md)
   Returns the keys for the internal settings of a custom patch.
 
 

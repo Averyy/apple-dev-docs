@@ -1,7 +1,8 @@
 # shell
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests the role `Shell` (theapplication can execute the item).
 

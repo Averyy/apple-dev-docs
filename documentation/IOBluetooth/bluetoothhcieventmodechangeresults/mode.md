@@ -1,15 +1,20 @@
 # mode
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mode: BluetoothHCIConnectionMode
+```
+
+```c
+BluetoothHCIConnectionMode mode;
 ```
 
 

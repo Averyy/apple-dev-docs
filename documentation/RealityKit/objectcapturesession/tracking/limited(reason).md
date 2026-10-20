@@ -1,9 +1,10 @@
 # ObjectCaptureSession.Tracking.limited(reason:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Tracking is available but its quality is degraded. The ARKit coaching overlay will appear when [`cameraTracking`](objectcapturesession/cameratracking.md) enters this state.
+Tracking is available but its quality is degraded. The ARKit coaching overlay will appear when [`cameraTracking`](../cameratracking.md) enters this state.
 
 **Availability**:
 - iOS 17.0+

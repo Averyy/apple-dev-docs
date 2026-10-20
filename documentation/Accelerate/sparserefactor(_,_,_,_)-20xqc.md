@@ -1,7 +1,8 @@
 # SparseRefactor(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex double values, using updated options and without any internal allocations.
 
@@ -18,6 +19,10 @@ Reuses supplied factorization object’s storage to compute a new factorization 
 
 ```swift
 func SparseRefactor(_ Matrix: SparseMatrix_Complex_Double, _ Factored: UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, _ nfoptions: SparseNumericFactorOptions, _ workspace: UnsafeMutableRawPointer)
+```
+
+```c
+static void SparseRefactor(SparseMatrix_Complex_Double Matrix, SparseOpaqueFactorization_Complex_Double *Factorization, SparseNumericFactorOptions nfoptions, void *workspace);
 ```
 
 #### Discussion
@@ -38,19 +43,20 @@ Note that if the reference count of the underlying object is not exactly one (i.
 
 ## See Also
 
-- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, UnsafeMutableRawPointer)](sparserefactor(_:_:_:)-9mqeq.md)
+### Matrix Refactorizations Functions with User-Defined Workspace
+- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_%29-9mqeq.md)
   Computes a factorization of the specified double-precision matrix using an existing factorization’s storage, without internal memory allocation.
-- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, UnsafeMutableRawPointer)](sparserefactor(_:_:_:)-2dqt8.md)
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_%29-2dqt8.md)
   Computes a factorization of the specified single-precision matrix using an existing factorization’s storage, without internal memory allocation.
-- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](sparserefactor(_:_:_:_:)-59ehf.md)
+- [func SparseRefactor(SparseMatrix_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Double>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_,_%29-59ehf.md)
   Computes a factorization of the specified double-precision matrix using an existing factorization’s storage and specified options, and without internal memory allocation.
-- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](sparserefactor(_:_:_:_:)-8i8vi.md)
+- [func SparseRefactor(SparseMatrix_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Float>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_,_%29-8i8vi.md)
   Computes a factorization of the specified single-precision matrix using an existing factorization’s storage and specified options, and without internal memory allocation.
-- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, UnsafeMutableRawPointer)](sparserefactor(_:_:_:)-4ofvz.md)
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_%29-4ofvz.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values, without any internal allocations.
-- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, UnsafeMutableRawPointer)](sparserefactor(_:_:_:)-593yb.md)
+- [func SparseRefactor(SparseMatrix_Complex_Double, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Double>, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_%29-593yb.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex double values, without any internal allocations.
-- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](sparserefactor(_:_:_:_:)-201rh.md)
+- [func SparseRefactor(SparseMatrix_Complex_Float, UnsafeMutablePointer<SparseOpaqueFactorization_Complex_Float>, SparseNumericFactorOptions, UnsafeMutableRawPointer)](./sparserefactor%28_,_,_,_%29-201rh.md)
   Reuses supplied factorization object’s storage to compute a new factorization of the supplied matrix of complex float values, using updated options and without any internal allocations.
 
 

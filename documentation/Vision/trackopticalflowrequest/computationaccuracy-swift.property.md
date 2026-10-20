@@ -1,7 +1,8 @@
 # computationAccuracy
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of accuracy to compute the optical flow.
 
@@ -21,15 +22,16 @@ final var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy { get
 
 #### Discussion
 
-The computational time trends with accuracy level. The default value is [`TrackOpticalFlowRequest.ComputationAccuracy.high`](trackopticalflowrequest/computationaccuracy-swift.enum/high.md).
+The computational time trends with accuracy level. The default value is [`TrackOpticalFlowRequest.ComputationAccuracy.high`](./computationaccuracy-swift.enum/high.md).
 
 ## See Also
 
-- [TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.enum.md)
+### Configuring a request
+- [TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   A type that describes the computational accuracy.
-- [var outputPixelFormatType: OSType](trackopticalflowrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format type of the observation.
-- [var supportedOutputPixelFormatTypes: [OSType]](trackopticalflowrequest/supportedoutputpixelformattypes.md)
+- [var supportedOutputPixelFormatTypes: [OSType]](./supportedoutputpixelformattypes.md)
   The collection of supported pixel format types.
 
 

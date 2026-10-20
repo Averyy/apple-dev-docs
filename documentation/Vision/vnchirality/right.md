@@ -1,7 +1,8 @@
 # VNChirality.right
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a right-handed pose.
 
@@ -19,11 +20,16 @@ Indicates a right-handed pose.
 case right
 ```
 
+```c
+VNChiralityRight
+```
+
 ## See Also
 
-- [VNChirality.left](vnchirality/left.md)
+### Chirality Values
+- [VNChirality.left](./left.md)
   Indicates a left-handed pose.
-- [VNChirality.unknown](vnchirality/unknown.md)
+- [VNChirality.unknown](./unknown.md)
   Indicates that the pose chirality is unknown.
 
 

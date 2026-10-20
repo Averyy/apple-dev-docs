@@ -1,7 +1,8 @@
 # fitted(to:validateOn:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fits a logistic regression classifier model to a sequence of examples.
 
@@ -32,11 +33,12 @@ The fitted logistic regression classifier model.
 
 ## See Also
 
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](logisticregressionclassifier/fitted(to:eventhandler:).md)
+### Fitting
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LogisticRegressionClassifier<Scalar, Label>.Transformer](./fitted%28to,eventhandler%29.md)
   Fits a logistic regression classifier model to a sequence of examples while validating with a validation sequence.
-- [LogisticRegressionClassifier.Annotation](logisticregressionclassifier/annotation.md)
+- [LogisticRegressionClassifier.Annotation](./annotation.md)
   The annotation type.
-- [LogisticRegressionClassifier.Transformer](logisticregressionclassifier/transformer.md)
+- [LogisticRegressionClassifier.Transformer](./transformer.md)
   The transformer type created by this estimator.
 
 

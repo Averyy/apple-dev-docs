@@ -1,7 +1,8 @@
 # virtualMachine
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The virtual machine used to initialize this installer.
 
@@ -14,11 +15,16 @@ The virtual machine used to initialize this installer.
 var virtualMachine: VZVirtualMachine { get }
 ```
 
+```objc
+@property (readonly) VZVirtualMachine * virtualMachine;
+```
+
 ## See Also
 
-- [var progress: Progress](vzmacosinstaller/progress.md)
+### Getting Information About an Installation
+- [var progress: Progress](./progress.md)
   A progress object that you can use to observe or cancel an installation.
-- [var restoreImageURL: URL](vzmacosinstaller/restoreimageurl.md)
+- [var restoreImageURL: URL](./restoreimageurl.md)
   The restore image URL used to initialize this installer.
 
 

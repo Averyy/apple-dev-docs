@@ -1,7 +1,8 @@
 # Transaction.RevocationReason
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Reasons that describe why the App Store may refund a transaction or revoke it from Family Sharing.
 
@@ -23,31 +24,32 @@ struct RevocationReason
 ## Topics
 
 ### Revocation reasons
-- [static let developerIssue: Transaction.RevocationReason](transaction/revocationreason-swift.struct/developerissue.md)
+- [static let developerIssue: Transaction.RevocationReason](./revocationreason-swift.struct/developerissue.md)
   The value that indicates a customer canceled the transaction due to an actual or perceived issue within your app.
-- [static let other: Transaction.RevocationReason](transaction/revocationreason-swift.struct/other.md)
+- [static let other: Transaction.RevocationReason](./revocationreason-swift.struct/other.md)
   The value that indicates a customer canceled the transaction for other reasons.
 ### Getting a localized description
-- [var localizedDescription: String](transaction/revocationreason-swift.struct/localizeddescription.md)
+- [var localizedDescription: String](./revocationreason-swift.struct/localizeddescription.md)
   The localized text that describes the revocation reason.
 ### Type Properties
-- [static var upgradedToBundle: Transaction.RevocationReason](transaction/revocationreason-swift.struct/upgradedtobundle.md)
+- [static var upgradedToBundle: Transaction.RevocationReason](./revocationreason-swift.struct/upgradedtobundle.md)
   The transaction was revoked because the customer switched to a subscription bundle.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revocationDate: Date?](transaction/revocationdate.md)
+### Getting revocation status
+- [let revocationDate: Date?](./revocationdate.md)
   The date that the App Store refunded the transaction or revoked it from Family Sharing.
-- [let revocationReason: Transaction.RevocationReason?](transaction/revocationreason-swift.property.md)
+- [let revocationReason: Transaction.RevocationReason?](./revocationreason-swift.property.md)
   The reason that the App Store refunded the transaction or revoked it from Family Sharing.
 
 

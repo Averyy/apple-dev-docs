@@ -1,7 +1,8 @@
 # childElements
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains child text elements.
 
@@ -14,11 +15,16 @@ An array that contains child text elements.
 var childElements: [NSTextListElement] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSTextListElement *> * childElements;
+```
+
 ## See Also
 
-- [var textList: NSTextList](nstextlistelement/textlist.md)
+### Accessing the text elements
+- [var textList: NSTextList](./textlist.md)
   The value that represents the text list.
-- [var parent: NSTextListElement?](nstextlistelement/parent.md)
+- [var parent: NSTextListElement?](./parent.md)
   A text list element that refers to the enclosing text list element.
 
 

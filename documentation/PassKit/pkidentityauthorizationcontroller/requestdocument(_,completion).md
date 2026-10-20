@@ -1,7 +1,8 @@
 # requestDocument(_:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prompts the user to approve the request to get the identity information.
 
@@ -14,14 +15,22 @@ Prompts the user to approve the request to get the identity information.
 ## Declaration
 
 ```swift
+func requestDocument(_ request: PKIdentityRequest, completion: @escaping @Sendable (PKIdentityDocument?, (any Error)?) -> Void)
+```
+
+```swift
 func requestDocument(_ request: PKIdentityRequest) async throws -> PKIdentityDocument
+```
+
+```objc
+- (void) requestDocument:(PKIdentityRequest *) request completion:(void (^)(PKIdentityDocument *document, NSError *error)) completion;
 ```
 
 #### Discussion
 
-The user needs to approve the request before releasing any data. When the user approves the request, the system returns the document. If the user doesn’t approve the request, the handler returns a [`PKIdentityError.Code.cancelled`](pkidentityerror-swift.struct/code/cancelled.md) error.
+The user needs to approve the request before releasing any data. When the user approves the request, the system returns the document. If the user doesn’t approve the request, the handler returns a [`PKIdentityError.Code.cancelled`](../pkidentityerror-swift.struct/code/cancelled.md) error.
 
-Only one request can be in progress at a time; otherwise, the method returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
+Only one request can be in progress at a time; otherwise, the method returns a [`PKIdentityError.Code.requestAlreadyInProgress`](../pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
 
 Your app’s `Info.plist` file needs to provide a message for the `NSIdentityUsageDescription` key. If this key is missing, any attempt to request a document fails.
 
@@ -32,7 +41,8 @@ Your app’s `Info.plist` file needs to provide a message for the `NSIdentityUsa
 
 ## See Also
 
-- [func checkCanRequestDocument(any PKIdentityDocumentDescriptor, completion: (Bool) -> Void)](pkidentityauthorizationcontroller/checkcanrequestdocument(_:completion:).md)
+### Requesting a document
+- [func checkCanRequestDocument(any PKIdentityDocumentDescriptor, completion: (Bool) -> Void)](./checkcanrequestdocument%28_,completion%29.md)
   Returns whether an identity document is available to request.
 
 

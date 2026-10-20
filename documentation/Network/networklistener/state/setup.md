@@ -1,7 +1,8 @@
 # NetworkListener.State.setup
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prior to start, the listener will be in the setup state
 

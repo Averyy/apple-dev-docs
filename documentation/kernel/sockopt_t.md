@@ -1,14 +1,15 @@
 # sockopt_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __sockopt *sockopt_t;
 ```
 

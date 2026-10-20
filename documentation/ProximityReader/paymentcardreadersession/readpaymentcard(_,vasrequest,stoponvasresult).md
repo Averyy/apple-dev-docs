@@ -1,7 +1,8 @@
 # readPaymentCard(_:vasRequest:stopOnVASResult:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a sheet to read both contactless payments and loyalty cards for a purchase or refund, and returns the relevant card data.
 
@@ -18,11 +19,11 @@ func readPaymentCard(_ request: PaymentCardTransactionRequest, vasRequest: VASRe
 
 ## Mentions
 
-- [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+- [Accepting loyalty passes from Wallet](../accepting-loyalty-passes-from-wallet.md)
 
 #### Return Value
 
-Either [`PaymentCardReadResult`](paymentcardreadresult.md), [`VASReadResult`](vasreadresult.md), or both when the read operation was successful.
+Either [`PaymentCardReadResult`](../paymentcardreadresult.md), [`VASReadResult`](../vasreadresult.md), or both when the read operation was successful.
 
 #### Discussion
 
@@ -30,16 +31,16 @@ Call this method to read either a contactless payment card or a loyalty card. Th
 
 When the `stopOnVasResult` parameter is `true`:
 
-- If the customer taps their loyalty card while the UI is present, the system closes the sheet and returns [`VASReadResult`](vasreadresult.md) as a result.
-- If the customer taps their payment card while the UI is present, the system closes the sheet and returns [`PaymentCardReadResult`](paymentcardreadresult.md) as a result.
+- If the customer taps their loyalty card while the UI is present, the system closes the sheet and returns [`VASReadResult`](../vasreadresult.md) as a result.
+- If the customer taps their payment card while the UI is present, the system closes the sheet and returns [`PaymentCardReadResult`](../paymentcardreadresult.md) as a result.
 
 When the `stopOnVasResult` parameter is `false`:
 
-- If the customer taps their Apple Pay Wallet, containing both a relevant loyalty card and a payment card, the system closes the sheet and returns both [`PaymentCardReadResult`](paymentcardreadresult.md) and [`VASReadResult`](vasreadresult.md) as a result.
-- If the customer taps their Apple Pay Wallet, containing only a relevant loyalty card, the system closes the sheet and returns [`VASReadResult`](vasreadresult.md) as a result.
-- If the customer taps their payment card, the system closes the sheet and returns [`PaymentCardReadResult`](paymentcardreadresult.md) as a result.
+- If the customer taps their Apple Pay Wallet, containing both a relevant loyalty card and a payment card, the system closes the sheet and returns both [`PaymentCardReadResult`](../paymentcardreadresult.md) and [`VASReadResult`](../vasreadresult.md) as a result.
+- If the customer taps their Apple Pay Wallet, containing only a relevant loyalty card, the system closes the sheet and returns [`VASReadResult`](../vasreadresult.md) as a result.
+- If the customer taps their payment card, the system closes the sheet and returns [`PaymentCardReadResult`](../paymentcardreadresult.md) as a result.
 
-> **Note**: This method throws a [`PaymentCardReaderSession.ReadError`](paymentcardreadersession/readerror.md) if a person dismisses the sheet or the sheet fails to appear.
+> **Throws**: This method throws a [`PaymentCardReaderSession.ReadError`](./readerror.md) if a person dismisses the sheet or the sheet fails to appear.
 
 ## Parameters
 
@@ -49,7 +50,8 @@ When the `stopOnVasResult` parameter is `false`:
 
 ## See Also
 
-- [func readVAS(VASRequest) async throws -> VASReadResult](paymentcardreadersession/readvas(_:).md)
+### Reading a loyalty card
+- [func readVAS(VASRequest) async throws -> VASReadResult](./readvas%28_%29.md)
   Presents a sheet to read a loyalty card for Value Added Services (VAS), and returns the loyalty card data.
 
 

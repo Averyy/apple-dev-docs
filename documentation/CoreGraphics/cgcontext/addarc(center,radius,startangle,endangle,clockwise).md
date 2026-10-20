@@ -1,7 +1,8 @@
 # addArc(center:radius:startAngle:endAngle:clockwise:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an arc of a circle to the current path, specified with a radius and angles.
 
@@ -24,7 +25,7 @@ func addArc(center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGF
 
 This method calculates starting and ending points using the radius and angles you specify, uses a sequence of cubic Bézier curves to approximate a segment of a circle between those points, and then appends those curves to the current path.
 
-The `clockwise` parameter determines the direction in which the arc is created; the actual direction of the final path is dependent on the current transformation matrix of the graphics context. In a flipped coordinate system (the default for [`UIView`](https://developer.apple.com/documentation/uikit/uiview) drawing methods in iOS), specifying a clockwise arc results in a counterclockwise arc after the transformation is applied.
+The `clockwise` parameter determines the direction in which the arc is created; the actual direction of the final path is dependent on the current transformation matrix of the graphics context. In a flipped coordinate system (the default for [`UIView`](../../UIKit/uiview.md) drawing methods in iOS), specifying a clockwise arc results in a counterclockwise arc after the transformation is applied.
 
 If the current path already contains a subpath, this method adds a line connecting the current point to the starting point of the arc. If the current path is empty, his method creates a new subpath whose starting point is the starting point of the arc. The ending point of the arc becomes the new current point of the path.
 
@@ -34,37 +35,38 @@ If the current path already contains a subpath, this method adds a line connecti
 - `radius`: The radius of the arc, in user space coordinates.
 - `startAngle`: The angle to the starting point of the arc, measured in radians from the positive x-axis.
 - `endAngle`: The angle to the end point of the arc, measured in radians from the positive x-axis.
-- `clockwise`: [`true`](https://developer.apple.com/documentation/swift/true) to make a clockwise arc; [`false`](https://developer.apple.com/documentation/swift/false) to make a counterclockwise arc.
+- `clockwise`: [`true`](../../Swift/true.md) to make a clockwise arc; [`false`](../../Swift/false.md) to make a counterclockwise arc.
 
 ## See Also
 
-- [func beginPath()](cgcontext/beginpath.md)
+### Constructing a Current Graphics Path
+- [func beginPath()](./beginpath%28%29.md)
   Creates a new empty path in a graphics context.
-- [func move(to: CGPoint)](cgcontext/move(to:).md)
+- [func move(to: CGPoint)](./move%28to%29.md)
   Begins a new subpath at the specified point.
-- [func addLine(to: CGPoint)](cgcontext/addline(to:).md)
+- [func addLine(to: CGPoint)](./addline%28to%29.md)
   Appends a straight line segment from the current point to the specified point.
-- [func addLines(between: [CGPoint])](cgcontext/addlines(between:).md)
+- [func addLines(between: [CGPoint])](./addlines%28between%29.md)
   Adds a sequence of connected straight-line segments to the current path.
-- [func addRect(CGRect)](cgcontext/addrect(_:).md)
+- [func addRect(CGRect)](./addrect%28_%29.md)
   Adds a rectangular path to the current path.
-- [func addRects([CGRect])](cgcontext/addrects(_:).md)
+- [func addRects([CGRect])](./addrects%28_%29.md)
   Adds a set of rectangular paths to the current path.
-- [func addEllipse(in: CGRect)](cgcontext/addellipse(in:).md)
+- [func addEllipse(in: CGRect)](./addellipse%28in%29.md)
   Adds an ellipse that fits inside the specified rectangle.
-- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat)](cgcontext/addarc(tangent1end:tangent2end:radius:).md)
+- [func addArc(tangent1End: CGPoint, tangent2End: CGPoint, radius: CGFloat)](./addarc%28tangent1end,tangent2end,radius%29.md)
   Adds an arc of a circle to the current path, specified with a radius and two tangent lines.
-- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint)](cgcontext/addcurve(to:control1:control2:).md)
+- [func addCurve(to: CGPoint, control1: CGPoint, control2: CGPoint)](./addcurve%28to,control1,control2%29.md)
   Adds a cubic Bézier curve to the current path, with the specified end point and control points.
-- [func addQuadCurve(to: CGPoint, control: CGPoint)](cgcontext/addquadcurve(to:control:).md)
+- [func addQuadCurve(to: CGPoint, control: CGPoint)](./addquadcurve%28to,control%29.md)
   Adds a quadratic Bézier curve to the current path, with the specified end point and control point.
-- [func addPath(CGPath)](cgcontext/addpath(_:).md)
+- [func addPath(CGPath)](./addpath%28_%29.md)
   Adds a previously created path object to the current path in a graphics context.
-- [func closePath()](cgcontext/closepath.md)
+- [func closePath()](./closepath%28%29.md)
   Closes and terminates the current path’s subpath.
-- [var path: CGPath?](cgcontext/path.md)
+- [var path: CGPath?](./path.md)
   Returns a path object built from the current path information in a graphics context.
-- [func replacePathWithStrokedPath()](cgcontext/replacepathwithstrokedpath.md)
+- [func replacePathWithStrokedPath()](./replacepathwithstrokedpath%28%29.md)
   Replaces the path in the graphics context with the stroked version of the path.
 
 

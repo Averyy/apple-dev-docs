@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the labeled value object.
 
@@ -17,6 +18,18 @@ A unique identifier for the labeled value object.
 
 ```swift
 var identifier: String { get }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * identifier;
 ```
 
 #### Discussion

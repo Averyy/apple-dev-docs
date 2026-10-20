@@ -1,7 +1,8 @@
 # localizedString(forKey:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the localized name of the property for the specified key.
 
@@ -19,23 +20,28 @@ Returns the localized name of the property for the specified key.
 class func localizedString(forKey key: String) -> String
 ```
 
+```objc
++ (NSString *) localizedStringForKey:(NSString *) key;
+```
+
 #### Return Value
 
 The localized name of the property.
 
 ## Parameters
 
-- `key`: Key for which to get the localized property name. Specify a key name such as [`CNSocialProfileUsernameKey`](cnsocialprofileusernamekey.md).
+- `key`: Key for which to get the localized property name. Specify a key name such as [`CNSocialProfileUsernameKey`](../cnsocialprofileusernamekey.md).
 
 ## See Also
 
-- [let CNSocialProfileUsernameKey: String](cnsocialprofileusernamekey.md)
+### Getting Localized User Profile Information
+- [let CNSocialProfileUsernameKey: String](../cnsocialprofileusernamekey.md)
   The social profile user name.
-- [let CNSocialProfileServiceKey: String](cnsocialprofileservicekey.md)
+- [let CNSocialProfileServiceKey: String](../cnsocialprofileservicekey.md)
   The social profile service.
-- [let CNSocialProfileURLStringKey: String](cnsocialprofileurlstringkey.md)
+- [let CNSocialProfileURLStringKey: String](../cnsocialprofileurlstringkey.md)
   The social profile URL.
-- [let CNSocialProfileUserIdentifierKey: String](cnsocialprofileuseridentifierkey.md)
+- [let CNSocialProfileUserIdentifierKey: String](../cnsocialprofileuseridentifierkey.md)
   The social profile user identifier.
 
 

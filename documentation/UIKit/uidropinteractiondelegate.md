@@ -1,7 +1,8 @@
 # UIDropInteractionDelegate
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for configuring and controlling a drop interaction.
 
@@ -18,47 +19,52 @@ The interface for configuring and controlling a drop interaction.
 protocol UIDropInteractionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol UIDropInteractionDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Making a view into a drop destination](making-a-view-into-a-drop-destination.md)
-- [Understanding a drag item as a promise](understanding-a-drag-item-as-a-promise.md)
+- [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
+- [Understanding a drag item as a promise](./understanding-a-drag-item-as-a-promise.md)
 
 ## Topics
 
 ### Handling the drop
-- [func dropInteraction(UIDropInteraction, canHandle: any UIDropSession) -> Bool](uidropinteractiondelegate/dropinteraction(_:canhandle:).md)
+- [func dropInteraction(UIDropInteraction, canHandle: any UIDropSession) -> Bool](./uidropinteractiondelegate/dropinteraction%28_,canhandle%29.md)
   Asks the delegate whether it can handle the session’s drag items.
-- [func dropInteraction(UIDropInteraction, performDrop: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:performdrop:).md)
+- [func dropInteraction(UIDropInteraction, performDrop: any UIDropSession)](./uidropinteractiondelegate/dropinteraction%28_,performdrop%29.md)
   Tells the delegate it can request the item provider data from the session’s drag items.
 ### Tracking the drop movements
-- [func dropInteraction(UIDropInteraction, sessionDidEnter: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidenter:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidEnter: any UIDropSession)](./uidropinteractiondelegate/dropinteraction%28_,sessiondidenter%29.md)
   Tells the delegate the drop session has moved into the drop interaction’s view.
-- [func dropInteraction(UIDropInteraction, sessionDidUpdate: any UIDropSession) -> UIDropProposal](uidropinteractiondelegate/dropinteraction(_:sessiondidupdate:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidUpdate: any UIDropSession) -> UIDropProposal](./uidropinteractiondelegate/dropinteraction%28_,sessiondidupdate%29.md)
   Tells the delegate the drop session has changed.
-- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidexit:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidExit: any UIDropSession)](./uidropinteractiondelegate/dropinteraction%28_,sessiondidexit%29.md)
   Tells the delegate the drop session has moved out of the drop interaction’s view.
-- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:sessiondidend:).md)
+- [func dropInteraction(UIDropInteraction, sessionDidEnd: any UIDropSession)](./uidropinteractiondelegate/dropinteraction%28_,sessiondidend%29.md)
   Tells the delegate the drop session has ended.
 ### Animating the drop
-- [func dropInteraction(UIDropInteraction, item: UIDragItem, willAnimateDropWith: any UIDragAnimating)](uidropinteractiondelegate/dropinteraction(_:item:willanimatedropwith:).md)
+- [func dropInteraction(UIDropInteraction, item: UIDragItem, willAnimateDropWith: any UIDragAnimating)](./uidropinteractiondelegate/dropinteraction%28_,item,willanimatedropwith%29.md)
   Tells the delegate the system’s drop animation is about to start.
-- [func dropInteraction(UIDropInteraction, previewForDropping: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](uidropinteractiondelegate/dropinteraction(_:previewfordropping:withdefault:).md)
+- [func dropInteraction(UIDropInteraction, previewForDropping: UIDragItem, withDefault: UITargetedDragPreview) -> UITargetedDragPreview?](./uidropinteractiondelegate/dropinteraction%28_,previewfordropping,withdefault%29.md)
   Asks the delegate for the targeted drag item preview to show during the drop animation.
-- [func dropInteraction(UIDropInteraction, concludeDrop: any UIDropSession)](uidropinteractiondelegate/dropinteraction(_:concludedrop:).md)
+- [func dropInteraction(UIDropInteraction, concludeDrop: any UIDropSession)](./uidropinteractiondelegate/dropinteraction%28_,concludedrop%29.md)
   Tells the delegate the drop activity and its related animations have finished.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol UIDragInteractionDelegate](uidraginteractiondelegate.md)
+### Drag and drop interactions
+- [protocol UIDragInteractionDelegate](./uidraginteractiondelegate.md)
   The interface for configuring and controlling a drag interaction.
-- [class UIDragInteraction](uidraginteraction.md)
+- [class UIDragInteraction](./uidraginteraction.md)
   An interaction to enable dragging of items from a view, employing a delegate to provide drag items and to respond to calls from the drag session.
-- [class UIDropInteraction](uidropinteraction.md)
+- [class UIDropInteraction](./uidropinteraction.md)
   An interaction to enable dropping of items onto a view, employing a delegate to instantiate objects and respond to calls from the drop session.
 
 

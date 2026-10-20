@@ -1,14 +1,15 @@
 # kHIDUsage_LED_UsageInUseIndicator
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_UsageInUseIndicator = 0x3B
 ```
 

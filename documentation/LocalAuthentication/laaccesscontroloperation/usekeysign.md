@@ -1,7 +1,8 @@
 # LAAccessControlOperation.useKeySign
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that access control is used for accessing an existing key.
 
@@ -19,17 +20,22 @@ Specifies that access control is used for accessing an existing key.
 case useKeySign
 ```
 
+```c
+LAAccessControlOperationUseKeySign
+```
+
 ## See Also
 
-- [LAAccessControlOperation.createItem](laaccesscontroloperation/createitem.md)
+### Constants
+- [LAAccessControlOperation.createItem](./createitem.md)
   Specifies that access control is used for item creation.
-- [LAAccessControlOperation.useItem](laaccesscontroloperation/useitem.md)
+- [LAAccessControlOperation.useItem](./useitem.md)
   Specifies that access control is used for accessing an existing item.
-- [LAAccessControlOperation.createKey](laaccesscontroloperation/createkey.md)
+- [LAAccessControlOperation.createKey](./createkey.md)
   Specifies that access control is used for key creation.
-- [LAAccessControlOperation.useKeyDecrypt](laaccesscontroloperation/usekeydecrypt.md)
+- [LAAccessControlOperation.useKeyDecrypt](./usekeydecrypt.md)
   Specifies that access control is used for data decryption using existing key.
-- [LAAccessControlOperation.useKeyKeyExchange](laaccesscontroloperation/usekeykeyexchange.md)
+- [LAAccessControlOperation.useKeyKeyExchange](./usekeykeyexchange.md)
   Specifies that access control is used for key exchange.
 
 

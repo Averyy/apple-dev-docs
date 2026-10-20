@@ -1,19 +1,20 @@
 # kIOTimerClockUptimeRaw
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A clock type that increments monotonically, but does not increment when the system is asleep.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOTimerClockUptimeRaw
 ```
 
@@ -23,15 +24,16 @@ This constant is the type of clock obtained by passing `CLOCK_MONOTONIC_RAW` to 
 
 ## See Also
 
-- [kIOTimerClockMonotonicRaw](kiotimerclockmonotonicraw.md)
+### Timer Options
+- [kIOTimerClockMonotonicRaw](./kiotimerclockmonotonicraw.md)
   A clock type that increments monotonically, and is unaffected by frequency or time adjustmets.
-- [kIOTimerClockRealTime](kiotimerclockrealtime.md)
+- [kIOTimerClockRealTime](./kiotimerclockrealtime.md)
   The system’s real time, expressed as the amount of time since the Epoch.
-- [kIOTimerClockWallTime](kiotimerclockwalltime.md)
+- [kIOTimerClockWallTime](./kiotimerclockwalltime.md)
   The system’s wall-clock time, expressed as the amount of time since the Epoch.
-- [kIOTimerClockMachAbsoluteTime](kiotimerclockmachabsolutetime.md)
+- [kIOTimerClockMachAbsoluteTime](./kiotimerclockmachabsolutetime.md)
   A clock type representing the numer of ticks since the last reboot.
-- [kIOTimerClockMachContinuousTime](kiotimerclockmachcontinuoustime.md)
+- [kIOTimerClockMachContinuousTime](./kiotimerclockmachcontinuoustime.md)
   A clock type representing the number of ticks since the last reboot, including when the computer is asleep.
 
 

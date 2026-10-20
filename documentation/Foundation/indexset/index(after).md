@@ -1,7 +1,8 @@
 # index(after:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index that follows the given index in the set.
 
@@ -22,17 +23,18 @@ func index(after i: IndexSet.Index) -> IndexSet.Index
 
 ## See Also
 
-- [var startIndex: IndexSet.Index](indexset/startindex.md)
+### Manipulating Indexes
+- [var startIndex: IndexSet.Index](./startindex.md)
   The beginning index in the set.
-- [var endIndex: IndexSet.Index](indexset/endindex.md)
+- [var endIndex: IndexSet.Index](./endindex.md)
   The ending index in the set.
-- [func index(before: IndexSet.Index) -> IndexSet.Index](indexset/index(before:).md)
+- [func index(before: IndexSet.Index) -> IndexSet.Index](./index%28before%29.md)
   Returns the index that precedes the given index in the set.
-- [func formIndex(after: inout IndexSet.Index)](indexset/formindex(after:).md)
+- [func formIndex(after: inout IndexSet.Index)](./formindex%28after%29.md)
   Modifies the given index to refer to the item after the one it currently refers to.
-- [func formIndex(before: inout IndexSet.Index)](indexset/formindex(before:).md)
+- [func formIndex(before: inout IndexSet.Index)](./formindex%28before%29.md)
   Modifies the given index to refer to the item before the one it currently refers to.
-- [func indexRange(in: Range<IndexSet.Element>) -> Range<IndexSet.Index>](indexset/indexrange(in:)-539lz.md)
+- [func indexRange(in: Range<IndexSet.Element>) -> Range<IndexSet.Index>](./indexrange%28in%29-539lz.md)
   Return a `Range<IndexSet.Index>` which can be used to subscript the index set.
 
 

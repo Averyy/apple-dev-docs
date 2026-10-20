@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMHighestState](1645010-anonymous/kiopmhigheststate.md)
-- [kIOPMLowestState](1645010-anonymous/kiopmloweststate.md)
-- [kIOPMNextHigherState](1645010-anonymous/kiopmnexthigherstate.md)
-- [kIOPMNextLowerState](1645010-anonymous/kiopmnextlowerstate.md)
+- [kIOPMHighestState](./api-1645010-anonymous/kiopmhigheststate.md)
+- [kIOPMLowestState](./api-1645010-anonymous/kiopmloweststate.md)
+- [kIOPMNextHigherState](./api-1645010-anonymous/kiopmnexthigherstate.md)
+- [kIOPMNextLowerState](./api-1645010-anonymous/kiopmnextlowerstate.md)
 
 
 ---

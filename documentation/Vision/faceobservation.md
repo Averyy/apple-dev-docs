@@ -1,7 +1,8 @@
 # FaceObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image-analysis request that identifies facial features in an image.
 
@@ -23,43 +24,43 @@ struct FaceObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNFaceObservation)](faceobservation/init(_:).md)
+- [init(VNFaceObservation)](./faceobservation/init%28_%29.md)
   Creates a face observation.
-- [init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision?)](faceobservation/init(boundingbox:revision:).md)
+- [init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision?)](./faceobservation/init%28boundingbox,revision%29.md)
   Creates a face observation from its bounding box.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [FaceObservation.Landmarks2D](faceobservation/landmarks2d.md)
+- [FaceObservation.Landmarks2D](./faceobservation/landmarks2d.md)
   A collection of facial features that a request detects.
-- [var landmarks: FaceObservation.Landmarks2D?](faceobservation/landmarks.md)
+- [var landmarks: FaceObservation.Landmarks2D?](./faceobservation/landmarks.md)
   The facial features of the detected face.
-- [let pitch: Measurement<UnitAngle>](faceobservation/pitch.md)
+- [let pitch: Measurement<UnitAngle>](./faceobservation/pitch.md)
   The pitch angle of a face.
-- [let roll: Measurement<UnitAngle>](faceobservation/roll.md)
+- [let roll: Measurement<UnitAngle>](./faceobservation/roll.md)
   The roll angle of a face.
-- [let yaw: Measurement<UnitAngle>](faceobservation/yaw.md)
+- [let yaw: Measurement<UnitAngle>](./faceobservation/yaw.md)
   The yaw angle of a face.
 ### Getting the capture quality
-- [var captureQuality: FaceObservation.CaptureQuality?](faceobservation/capturequality-swift.property.md)
+- [var captureQuality: FaceObservation.CaptureQuality?](./faceobservation/capturequality-swift.property.md)
   The quality of the face capture.
-- [FaceObservation.CaptureQuality](faceobservation/capturequality-swift.struct.md)
+- [FaceObservation.CaptureQuality](./faceobservation/capturequality-swift.struct.md)
   An indicator of the quality of a face capture.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

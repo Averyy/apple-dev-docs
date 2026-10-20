@@ -1,7 +1,8 @@
 # averagePrecision
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Two dictionaries of average precisions at different thresholds.
 
@@ -21,7 +22,8 @@ var averagePrecision: (variedIoU: [String : Double], IoU50: [String : Double]) {
 
 ## See Also
 
-- [var meanAveragePrecision: (variedIoU: Double, IoU50: Double)](mlobjectdetectormetrics/meanaverageprecision.md)
+### Assessing the model
+- [var meanAveragePrecision: (variedIoU: Double, IoU50: Double)](./meanaverageprecision.md)
   Two mean-average precisions at different thresholds.
 
 

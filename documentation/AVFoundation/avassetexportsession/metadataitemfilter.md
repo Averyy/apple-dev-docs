@@ -1,7 +1,8 @@
 # metadataItemFilter
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object the export session uses to filter the metadata items it transfers to the output asset.
 
@@ -19,13 +20,18 @@ An object the export session uses to filter the metadata items it transfers to t
 var metadataItemFilter: AVMetadataItemFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) AVMetadataItemFilter * metadataItemFilter;
+```
+
 #### Discussion
 
 The default value is `nil`.
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]?](avassetexportsession/metadata.md)
+### Configuring metadata
+- [var metadata: [AVMetadataItem]?](./metadata.md)
   The metadata an export session writes to the output container file.
 
 

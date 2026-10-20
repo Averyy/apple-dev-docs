@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the extension can receive realtime samples.
@@ -20,7 +21,7 @@ func startRealtimeSampleDelivery(session: MediaOutputSession)
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # ReportableMetadataKey(_:)
 
 **Framework**: StateReporting  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Specifies a custom key name for a property in the generated `metadataDictionary`.
 
@@ -23,7 +24,7 @@ Specifies a custom key name for a property in the generated `metadataDictionary`
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
 #### Overview
 
@@ -39,9 +40,10 @@ struct SessionMetadata {
 
 ## See Also
 
-- [macro ReportableMetadata()](reportablemetadata().md)
+### Metadata type macros
+- [macro ReportableMetadata()](./reportablemetadata%28%29.md)
   Automatically generates `ReportableMetadata` conformance for a type.
-- [macro ReportableMetadataIgnored()](reportablemetadataignored().md)
+- [macro ReportableMetadataIgnored()](./reportablemetadataignored%28%29.md)
   Excludes a property from the generated `metadataDictionary`.
 
 

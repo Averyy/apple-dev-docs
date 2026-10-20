@@ -1,7 +1,8 @@
 # kPMPresetGraphicsTypeNone
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var kPMPresetGraphicsTypeNone: String { get }
+```
+
+```c
+#define kPMPresetGraphicsTypeNone
 ```
 
 

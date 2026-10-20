@@ -1,18 +1,19 @@
 # CFFileDescriptorCallBack
 
 **Framework**: Core Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Defines a structure for a callback for a CFFileDescriptor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Defines a structure for a callback for a CFFileDescriptor.
 typealias CFFileDescriptorCallBack = (CFFileDescriptor?, CFOptionFlags, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct __CFFileDescriptor *, unsigned long, void *) CFFileDescriptorCallBack;
+```
+
 ## See Also
 
-- [typealias CFFileDescriptorNativeDescriptor](cffiledescriptornativedescriptor.md)
+### Data Types
+- [typealias CFFileDescriptorNativeDescriptor](./cffiledescriptornativedescriptor.md)
   Defines a type for the native file descriptor.
-- [struct CFFileDescriptorContext](cffiledescriptorcontext.md)
+- [struct CFFileDescriptorContext](./cffiledescriptorcontext.md)
   Defines a structure for the context of a CFFileDescriptor.
 
 

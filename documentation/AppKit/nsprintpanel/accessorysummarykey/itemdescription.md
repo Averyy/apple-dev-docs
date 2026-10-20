@@ -1,7 +1,8 @@
 # itemDescription
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identfies the current value of the accessory panel setting.
 
@@ -14,13 +15,18 @@ A key that identfies the current value of the accessory panel setting.
 static let itemDescription: NSPrintPanel.AccessorySummaryKey
 ```
 
+```c
+extern NSPrintPanelAccessorySummaryKey const NSPrintPanelAccessorySummaryItemDescriptionKey;
+```
+
 #### Discussion
 
-The corresponding value should be an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object.
+The corresponding value should be an [`NSString`](../../../Foundation/nsstring.md) object.
 
 ## See Also
 
-- [static let itemName: NSPrintPanel.AccessorySummaryKey](nsprintpanel/accessorysummarykey/itemname.md)
+### Summary Keys
+- [static let itemName: NSPrintPanel.AccessorySummaryKey](./itemname.md)
   A key that specifies the name of the accessory panel setting.
 
 

@@ -1,13 +1,14 @@
 # USDPreviewSession.OptimizationParameters.unmodified
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The USD stage is used as-is with no optimization.
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

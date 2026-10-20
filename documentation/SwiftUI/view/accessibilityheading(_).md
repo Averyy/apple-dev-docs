@@ -1,7 +1,8 @@
 # accessibilityHeading(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the accessibility level of this heading.
 
@@ -23,21 +24,22 @@ func accessibilityHeading(_ level: AccessibilityHeadingLevel) -> ModifiedContent
 
 #### Discussion
 
-Use this modifier to set the level of this heading in relation to other headings. The system speaks the level number of levels [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md) through [`AccessibilityHeadingLevel.h6`](accessibilityheadinglevel/h6.md) alongside the text.
+Use this modifier to set the level of this heading in relation to other headings. The system speaks the level number of levels [`AccessibilityHeadingLevel.h1`](../accessibilityheadinglevel/h1.md) through [`AccessibilityHeadingLevel.h6`](../accessibilityheadinglevel/h6.md) alongside the text.
 
-The default heading level if you don’t use this modifier is [`AccessibilityHeadingLevel.unspecified`](accessibilityheadinglevel/unspecified.md).
+The default heading level if you don’t use this modifier is [`AccessibilityHeadingLevel.unspecified`](../accessibilityheadinglevel/unspecified.md).
 
 ## Parameters
 
-- `level`: The heading level to associate with this element from the available [`AccessibilityHeadingLevel`](accessibilityheadinglevel.md) levels.
+- `level`: The heading level to associate with this element from the available [`AccessibilityHeadingLevel`](../accessibilityheadinglevel.md) levels.
 
 ## See Also
 
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitytextcontenttype(_:).md)
+### Describing content
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
-- [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
+- [enum AccessibilityHeadingLevel](../accessibilityheadinglevel.md)
   The hierarchy of a heading in relation to other headings.
-- [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
+- [struct AccessibilityTextContentType](../accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 
 

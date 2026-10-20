@@ -1,7 +1,8 @@
 # Ceiling
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
 
@@ -15,37 +16,138 @@ Outputs the nearest integer value, per-channel, greater than or equal to the inc
 
 #### Parameter Types
 
+**Ceiling (float)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Ceiling (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Ceiling (half)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Ceiling (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Ceiling (vector4h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector4h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Ceiling (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Ceiling (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color3 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Ceiling (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Color4 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Ceiling (vector3h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector3h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Ceiling (vector2h)**:
+
+| Input | Type |
+| --- | --- |
+| `In` | Vector2h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Divide](math/divide.md)
+- [Divide](./divide.md)
   Divides two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
-- [Square Root](math/square-root.md)
+- [Square Root](./square-root.md)
   The square root of the incoming value.
 
 

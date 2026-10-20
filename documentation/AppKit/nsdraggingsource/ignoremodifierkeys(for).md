@@ -1,7 +1,8 @@
 # ignoreModifierKeys(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the modifier keys will be ignored for this dragging session.
 
@@ -15,9 +16,13 @@ Returns whether the modifier keys will be ignored for this dragging session.
 optional func ignoreModifierKeys(for session: NSDraggingSession) -> Bool
 ```
 
+```objc
+- (BOOL) ignoreModifierKeysForDraggingSession:(NSDraggingSession *) session;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the modifier keys will be ignored, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the modifier keys will be ignored, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

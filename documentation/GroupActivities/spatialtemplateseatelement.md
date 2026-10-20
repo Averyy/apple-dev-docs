@@ -1,7 +1,8 @@
 # SpatialTemplateSeatElement
 
 **Framework**: Group Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A spatial template element that represents a seat for a participant in the activity.
 
@@ -16,9 +17,9 @@ struct SpatialTemplateSeatElement
 
 #### Overview
 
-Add [`SpatialTemplateSeatElement`](spatialtemplateseatelement.md) types to a custom [`SpatialTemplate`](spatialtemplate.md) to specify the placement and orientation of participants in a group activity. When an activity starts, the system places participants into the shared coordinate space and orients them according to the seat information you provide. If you associate roles with one or more seats, participants must acquire the associated role before they can occupy the corresponding seat.
+Add [`SpatialTemplateSeatElement`](./spatialtemplateseatelement.md) types to a custom [`SpatialTemplate`](./spatialtemplate.md) to specify the placement and orientation of participants in a group activity. When an activity starts, the system places participants into the shared coordinate space and orients them according to the seat information you provide. If you associate roles with one or more seats, participants must acquire the associated role before they can occupy the corresponding seat.
 
-Create seat elements directly from this type and add them to the [`elements`](spatialtemplate/elements.md) property of your custom template. Alternatively, use the inherited `seat(position:direction:role:)` function to create seats, as shown in the following example, which creates two seats on either side of the app’s content along the z-axis:
+Create seat elements directly from this type and add them to the [`elements`](./spatialtemplate/elements.md) property of your custom template. Alternatively, use the inherited `seat(position:direction:role:)` function to create seats, as shown in the following example, which creates two seats on either side of the app’s content along the z-axis:
 
 ```swift
 struct BasicTemplate: SpatialTemplate {
@@ -32,46 +33,47 @@ struct BasicTemplate: SpatialTemplate {
 ## Topics
 
 ### Getting the element details
-- [let position: SpatialTemplateElementPosition](spatialtemplateseatelement/position.md)
+- [let position: SpatialTemplateElementPosition](./spatialtemplateseatelement/position.md)
   The location of the element in the shared coordinate space.
-- [let direction: SpatialTemplateElementDirection](spatialtemplateseatelement/direction.md)
+- [let direction: SpatialTemplateElementDirection](./spatialtemplateseatelement/direction.md)
   The initial orientation of the element in the shared coordinate space.
-- [let role: (any SpatialTemplateRole)?](spatialtemplateseatelement/role.md)
+- [let role: (any SpatialTemplateRole)?](./spatialtemplateseatelement/role.md)
   An optional role you associate with this element.
 ### Operators
-- [static func == (SpatialTemplateSeatElement, SpatialTemplateSeatElement) -> Bool](spatialtemplateseatelement/==(_:_:).md)
+- [static func == (SpatialTemplateSeatElement, SpatialTemplateSeatElement) -> Bool](./spatialtemplateseatelement/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 ### Initializers
-- [init(position: SpatialTemplateElementPosition, direction: SpatialTemplateElementDirection, role: (any SpatialTemplateRole)?)](spatialtemplateseatelement/init(position:direction:role:).md)
+- [init(position: SpatialTemplateElementPosition, direction: SpatialTemplateElementDirection, role: (any SpatialTemplateRole)?)](./spatialtemplateseatelement/init%28position,direction,role%29.md)
   Creates a seat element with the specified position, direction, and role information.
 ### Instance Methods
-- [func hash(into: inout Hasher)](spatialtemplateseatelement/hash(into:).md)
+- [func hash(into: inout Hasher)](./spatialtemplateseatelement/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpatialTemplateElement](spatialtemplateelement.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpatialTemplateElement](./spatialtemplateelement.md)
 
 ## See Also
 
-- [Building a guessing game for visionOS](building-a-guessing-game-for-visionos.md)
+### Custom spatial templates
+- [Building a guessing game for visionOS](./building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
-- [protocol SpatialTemplate](spatialtemplate.md)
+- [protocol SpatialTemplate](./spatialtemplate.md)
   An interface you use to create custom arrangements of spatial Personas in a scene.
-- [struct SpatialTemplatePreference](spatialtemplatepreference.md)
+- [struct SpatialTemplatePreference](./spatialtemplatepreference.md)
   A structure that specifies the preferred arrangement of participant spatial Personas in a shared simulation space.
-- [protocol SpatialTemplateElement](spatialtemplateelement.md)
+- [protocol SpatialTemplateElement](./spatialtemplateelement.md)
   An interface that defines an element in your spatial template.
-- [struct SpatialTemplateElementPosition](spatialtemplateelementposition.md)
+- [struct SpatialTemplateElementPosition](./spatialtemplateelementposition.md)
   A type that defines the position of an element in a spatial template.
-- [struct SpatialTemplateElementDirection](spatialtemplateelementdirection.md)
+- [struct SpatialTemplateElementDirection](./spatialtemplateelementdirection.md)
   The initial direction a participant faces when an activity starts.
-- [protocol SpatialTemplateRole](spatialtemplaterole.md)
+- [protocol SpatialTemplateRole](./spatialtemplaterole.md)
   An interface for defining roles that you assign to the participants of a group activity.
 
 

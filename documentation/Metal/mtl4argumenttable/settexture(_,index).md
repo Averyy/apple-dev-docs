@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Binds a texture to a texture binding slot.
@@ -20,10 +21,14 @@ Binds a texture to a texture binding slot.
 func setTexture(_ resourceID: MTLResourceID, index bindingIndex: Int)
 ```
 
+```objc
+- (void) setTexture:(MTLResourceID) resourceID atIndex:(NSUInteger) bindingIndex;
+```
+
 ## Parameters
 
-- `resourceID`: The [`MTLResourceID`](mtlresourceid.md) of the [`MTLTexture`](mtltexture.md) instance to bind.
-- `bindingIndex`: A valid binding index in the texture binding range. It is an error for this value to match or exceed the value of property [`maxTextureBindCount`](mtl4argumenttabledescriptor/maxtexturebindcount.md) on the descriptor from which you created this argument table.
+- `resourceID`: The [`MTLResourceID`](../mtlresourceid.md) of the [`MTLTexture`](../mtltexture.md) instance to bind.
+- `bindingIndex`: A valid binding index in the texture binding range. It is an error for this value to match or exceed the value of property [`maxTextureBindCount`](../mtl4argumenttabledescriptor/maxtexturebindcount.md) on the descriptor from which you created this argument table.
 
 
 ---

@@ -1,7 +1,8 @@
 # SNTimeDurationConstraint.enumeratedDurations(_:)
 
 **Framework**: Sound Analysis  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constraint that defines acceptable time window durations in a discrete list.
 
@@ -26,7 +27,8 @@ case enumeratedDurations([CMTime])
 
 ## See Also
 
-- [SNTimeDurationConstraint.durationRange(_:)](sntimedurationconstraint-swift.enum/durationrange(_:).md)
+### Inspecting a Constraint
+- [SNTimeDurationConstraint.durationRange(_:)](./durationrange%28_%29.md)
   A constraint that defines acceptable time window durations with a range.
 
 

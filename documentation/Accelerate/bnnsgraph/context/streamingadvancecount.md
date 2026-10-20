@@ -1,7 +1,8 @@
 # streamingAdvanceCount
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets streaming advancement amount for cases with dynamically shaped inputs.
 
@@ -22,9 +23,9 @@ var streamingAdvanceCount: Int { get set }
 
 #### Discussion
 
-For models compiled with the `BNNSOption` attribute `StateMode=Streaming` enabled, where `slice_update` operations use an update parameter of dynamic shape, BNNS can’t unambigiously determine the streaming advancement size. In this case, call this function before calling [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md) to set the advancement size for each frame.
+For models compiled with the `BNNSOption` attribute `StateMode=Streaming` enabled, where `slice_update` operations use an update parameter of dynamic shape, BNNS can’t unambigiously determine the streaming advancement size. In this case, call this function before calling [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](../../bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md) to set the advancement size for each frame.
 
-This function advances the internal state pointer by `advance_count` elements in the streaming dimension before returning from [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](bnnsgraphcontextexecute(_:_:_:_:_:_:).md).
+This function advances the internal state pointer by `advance_count` elements in the streaming dimension before returning from [`BNNSGraphContextExecute(_:_:_:_:_:_:)`](../../bnnsgraphcontextexecute%28_,_,_,_,_,_%29.md).
 
 > **Note**: The BNNS streaming APIs do not support models that require different advancement amounts for different states.
 

@@ -1,7 +1,8 @@
 # init(imageURL:orientation:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image attachment from a file URL pointing to an image.
 
@@ -21,7 +22,8 @@ init(imageURL: URL, orientation: CGImagePropertyOrientation? = nil)
 
 ## See Also
 
-- [init(_:orientation:)](transcript/imageattachment/init(_:orientation:).md)
+### Creating an image attachment
+- [init(_:orientation:)](./init%28_,orientation%29.md)
   Creates an image attachment from a Core Graphics image.
 
 

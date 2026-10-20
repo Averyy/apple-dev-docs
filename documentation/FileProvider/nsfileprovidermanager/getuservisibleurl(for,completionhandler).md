@@ -1,7 +1,8 @@
 # getUserVisibleURL(for:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the user-visible URL for an item.
 
@@ -15,26 +16,41 @@ Returns the user-visible URL for an item.
 ## Declaration
 
 ```swift
+func getUserVisibleURL(for itemIdentifier: NSFileProviderItemIdentifier, completionHandler: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func getUserVisibleURL(for itemIdentifier: NSFileProviderItemIdentifier) async throws -> URL
+```
+
+```objc
+- (void) getUserVisibleURLForItemIdentifier:(NSFileProviderItemIdentifier) itemIdentifier completionHandler:(void (^)(NSURL *userVisibleFile, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func getUserVisibleURL(for itemIdentifier: NSFileProviderItemIdentifier) async throws -> URL
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func getUserVisibleURL(for itemIdentifier: NSFileProviderItemIdentifier) async throws -> URL
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
-Calling this method marks the process so that accessing the URL won’t materialize the item. Instead, any attempt to read or write to an unmaterialized item fails with a [`EDEADLK`](https://developer.apple.com/documentation/foundation/posixerror/edeadlk) POSIX error.
+Calling this method marks the process so that accessing the URL won’t materialize the item. Instead, any attempt to read or write to an unmaterialized item fails with a [`EDEADLK`](../../Foundation/posixerror/edeadlk.md) POSIX error.
 
 ## Parameters
 
 - `itemIdentifier`: The item’s identifier.
-- `completionHandler`: A block that the system calls after determining the item’s URL. The system passes the following parameters: - **`userVisibleFile`**: The URL of the user visible file, or `nil` if an error occurs.
-- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that the system calls after determining the item’s URL. The system passes the following parameters:
+
+  - **`userVisibleFile`**: The URL of the user visible file, or `nil` if an error occurs.
+  - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [class func getIdentifierForUserVisibleFile(at: URL, completionHandler: (NSFileProviderItemIdentifier?, NSFileProviderDomainIdentifier?, (any Error)?) -> Void)](nsfileprovidermanager/getidentifierforuservisiblefile(at:completionhandler:).md)
+### Translating user-visible URLs
+- [class func getIdentifierForUserVisibleFile(at: URL, completionHandler: (NSFileProviderItemIdentifier?, NSFileProviderDomainIdentifier?, (any Error)?) -> Void)](./getidentifierforuservisiblefile%28at,completionhandler%29.md)
   Returns the identifier and domain for a user-visible URL.
 
 

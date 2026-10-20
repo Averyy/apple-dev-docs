@@ -1,7 +1,8 @@
 # responds(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the receiving class responds to a given selector.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the receiving class responds to a
 class func responds(to aSelector: Selector) -> Bool
 ```
 
+```objc
++ (BOOL) respondsToSelector:(SEL) aSelector;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiving class responds to `aSelector` messages, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiving class responds to `aSelector` messages, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 

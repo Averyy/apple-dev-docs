@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of this `AudioBufferResource`.
 
@@ -22,7 +23,8 @@ The duration of this `AudioBufferResource`.
 
 ## See Also
 
-- [let configuration: AudioBufferResource.Configuration](audiobufferresource/configuration-swift.property.md)
+### Describing the resource
+- [let configuration: AudioBufferResource.Configuration](./configuration-swift.property.md)
   The configuration for this `AudioBufferResource`.
 
 

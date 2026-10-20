@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a new notification for display on your accessory.

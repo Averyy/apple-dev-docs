@@ -1,7 +1,8 @@
 # errSecSMIMEBadKeyUsage
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key usage is not compatible with SMIME.
 
@@ -18,6 +19,10 @@ The key usage is not compatible with SMIME.
 
 ```swift
 var errSecSMIMEBadKeyUsage: OSStatus { get }
+```
+
+```c
+errSecSMIMEBadKeyUsage
 ```
 
 

@@ -1,7 +1,8 @@
 # HKWorkoutEvent
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing an important event during a workout.
 
@@ -19,6 +20,10 @@ An object representing an important event during a workout.
 class HKWorkoutEvent
 ```
 
+```objc
+@interface HKWorkoutEvent : NSObject
+```
+
 #### Overview
 
 You can use workout events to toggle a workout between an active and an inactive state, or to mark points of interest during a workout.
@@ -30,66 +35,67 @@ The lap, segment, and marker events are used to identify periods of interest dur
 ## Topics
 
 ### Creating workout events
-- [convenience init(type: HKWorkoutEventType, dateInterval: DateInterval, metadata: [String : Any]?)](hkworkoutevent/init(type:dateinterval:metadata:).md)
+- [convenience init(type: HKWorkoutEventType, dateInterval: DateInterval, metadata: [String : Any]?)](./hkworkoutevent/init%28type,dateinterval,metadata%29.md)
   Instantiates and returns a new workout event with the specified type, date interval, and metadata.
 ### Getting property data
-- [var dateInterval: DateInterval](hkworkoutevent/dateinterval.md)
+- [var dateInterval: DateInterval](./hkworkoutevent/dateinterval.md)
   The time and duration of the event.
-- [var type: HKWorkoutEventType](hkworkoutevent/type.md)
+- [var type: HKWorkoutEventType](./hkworkoutevent/type.md)
   The type of workout event.
-- [var metadata: [String : Any]?](hkworkoutevent/metadata.md)
+- [var metadata: [String : Any]?](./hkworkoutevent/metadata.md)
   The metadata associated with the workout event.
 ### Determining the event type
-- [enum HKWorkoutEventType](hkworkouteventtype.md)
+- [enum HKWorkoutEventType](./hkworkouteventtype.md)
   Constants that represent events occurring during a workout.
 ### Deprecated
-- [convenience init(type: HKWorkoutEventType, date: Date)](hkworkoutevent/init(type:date:).md)
+- [convenience init(type: HKWorkoutEventType, date: Date)](./hkworkoutevent/init%28type,date%29.md)
   Instantiates and returns a new workout event with the specified type and date.
-- [convenience init(type: HKWorkoutEventType, date: Date, metadata: [String : Any])](hkworkoutevent/init(type:date:metadata:).md)
+- [convenience init(type: HKWorkoutEventType, date: Date, metadata: [String : Any])](./hkworkoutevent/init%28type,date,metadata%29.md)
   Instantiates and returns a new workout event with the specified type, date, and metadata.
-- [var date: Date](hkworkoutevent/date.md)
+- [var date: Date](./hkworkoutevent/date.md)
   The time when the transition occurred.
 ### Initializers
-- [init?(coder: NSCoder)](hkworkoutevent/init(coder:).md)
+- [init?(coder: NSCoder)](./hkworkoutevent/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding samples to a workout](adding-samples-to-a-workout.md)
+### Samples
+- [Adding samples to a workout](./adding-samples-to-a-workout.md)
   Create associated samples that add details to a workout.
-- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
+- [Accessing condensed workout samples](./accessing-condensed-workout-samples.md)
   Read series data from condensed workouts.
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](./dividing-a-healthkit-workout-into-activities.md)
   Partition multisport and interval workouts into activities that represent the different parts of the workout.
-- [class HKWorkout](hkworkout.md)
+- [class HKWorkout](./hkworkout.md)
   A workout sample that stores information about a single physical activity.
-- [class HKWorkoutActivity](hkworkoutactivity.md)
+- [class HKWorkoutActivity](./hkworkoutactivity.md)
   An object that describes an activity within a longer workout.
-- [class HKWorkoutBuilder](hkworkoutbuilder.md)
+- [class HKWorkoutBuilder](./hkworkoutbuilder.md)
   A builder object that incrementally constructs a workout.
-- [class HKWorkoutType](hkworkouttype.md)
+- [class HKWorkoutType](./hkworkouttype.md)
   A type that identifies samples that store information about a workout.
-- [let HKWorkoutTypeIdentifier: String](hkworkouttypeidentifier.md)
+- [let HKWorkoutTypeIdentifier: String](./hkworkouttypeidentifier.md)
   The workout type identifier.
-- [enum HKWorkoutActivityType](hkworkoutactivitytype.md)
+- [enum HKWorkoutActivityType](./hkworkoutactivitytype.md)
   The type of activity performed during a workout.
-- [enum HKWorkoutSessionType](hkworkoutsessiontype.md)
+- [enum HKWorkoutSessionType](./hkworkoutsessiontype.md)
   The type of session.
 
 

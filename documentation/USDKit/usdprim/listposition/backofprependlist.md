@@ -1,7 +1,8 @@
 # USDPrim.ListPosition.backOfPrependList
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Insert at the back of the prepend list.
 

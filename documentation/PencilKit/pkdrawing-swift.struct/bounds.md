@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest rectangle used to represent the content’s bounds, taking into account line widths of that content.
 
@@ -20,7 +21,7 @@ var bounds: CGRect { get }
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 
 ---

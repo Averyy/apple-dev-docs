@@ -1,7 +1,8 @@
 # ModelUpdateError
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An updatable model error.
 
@@ -23,51 +24,52 @@ enum ModelUpdateError
 ## Topics
 
 ### Analyzing the error
-- [ModelUpdateError.invalidState(debugDescription:)](modelupdateerror/invalidstate(debugdescription:).md)
+- [ModelUpdateError.invalidState(debugDescription:)](./modelupdateerror/invalidstate%28debugdescription%29.md)
   An error that indicates that a default initialized transformer suitable for fitting cannot perform apply before performing an update.
 ### Getting the debug description
-- [var debugDescription: String](modelupdateerror/debugdescription.md)
+- [var debugDescription: String](./modelupdateerror/debugdescription.md)
   A text representation of the error.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](modelupdateerror/customdebugstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelupdateerror/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AudioPreprocessingError](audiopreprocessingerror.md)
+### Errors
+- [enum AudioPreprocessingError](./audiopreprocessingerror.md)
   Audio preprocessing errors.
-- [enum AudioReaderError](audioreadererror.md)
+- [enum AudioReaderError](./audioreadererror.md)
   Audio reader errors.
-- [enum CompatibilityError](compatibilityerror.md)
+- [enum CompatibilityError](./compatibilityerror.md)
   A compatibility error.
-- [enum ConcatenationError](concatenationerror.md)
+- [enum ConcatenationError](./concatenationerror.md)
   Errors thrown when concatenating numeric values.
-- [enum DatasetError](dataseterror.md)
+- [enum DatasetError](./dataseterror.md)
   Dataset processing errors.
-- [enum EstimatorEncodingError](estimatorencodingerror.md)
+- [enum EstimatorEncodingError](./estimatorencodingerror.md)
   An estimator encoding error.
-- [enum ModelCompatibilityError](modelcompatibilityerror.md)
+- [enum ModelCompatibilityError](./modelcompatibilityerror.md)
   Errors related to CoreML model compatibility.
-- [enum OptimizationError](optimizationerror.md)
+- [enum OptimizationError](./optimizationerror.md)
   An optimization error.
-- [enum PipelineDataError](pipelinedataerror.md)
+- [enum PipelineDataError](./pipelinedataerror.md)
   Errors related to pipeline data affinity problems.
-- [enum SerializationError](serializationerror.md)
+- [enum SerializationError](./serializationerror.md)
   A serialization error.
-- [enum TabularPipelineDataError](tabularpipelinedataerror.md)
+- [enum TabularPipelineDataError](./tabularpipelinedataerror.md)
   Errors related to tabular pipeline data affinity problems.
-- [enum VideoReaderError](videoreadererror.md)
+- [enum VideoReaderError](./videoreadererror.md)
   Video loader errors.
 
 

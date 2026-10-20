@@ -1,7 +1,8 @@
 # translate(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a translation of the selected text.
 
@@ -17,9 +18,13 @@ Presents a translation of the selected text.
 optional func translate(_ sender: Any?)
 ```
 
+```objc
+- (void) translate:(id) sender;
+```
+
 #### Discussion
 
-To present the standard system UI for translating text, call [`translate(text:from:)`](betextinteraction/translate(text:from:).md) in your implementation of this method.
+To present the standard system UI for translating text, call [`translate(text:from:)`](../betextinteraction/translate%28text,from%29.md) in your implementation of this method.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ To present the standard system UI for translating text, call [`translate(text:fr
 
 ## See Also
 
-- [func transliterateChinese(Any?)](berespondereditactions/transliteratechinese(_:).md)
+### Translating and transliterating text
+- [func transliterateChinese(Any?)](./transliteratechinese%28_%29.md)
   Converts the selected text between traditional and simplified Chinese.
 
 

@@ -1,7 +1,8 @@
 # IOExitThread
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated function - use thread_terminate(). Terminate execution of current thread.
 
@@ -10,7 +11,7 @@ Deprecated function - use thread_terminate(). Terminate execution of current thr
 
 ## Declaration
 
-```swift
+```c
 void IOExitThread(void);
 ```
 

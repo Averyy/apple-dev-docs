@@ -1,16 +1,21 @@
 # results
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var results: UnsafeMutablePointer<es_authorization_result_t>?
+```
+
+```c
+es_authorization_result_t * results;
 ```
 
 

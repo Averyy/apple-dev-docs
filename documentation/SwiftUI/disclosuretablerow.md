@@ -1,7 +1,8 @@
 # DisclosureTableRow
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A kind of table row that shows or hides additional rows based on the state of a disclosure control.
 
@@ -51,17 +52,18 @@ var body: some View {
 ## Topics
 
 ### Creating a disclosure table row
-- [init<Value>(Value, isExpanded: Binding<Bool>?, content: () -> Content)](disclosuretablerow/init(_:isexpanded:content:).md)
+- [init<Value>(Value, isExpanded: Binding<Bool>?, content: () -> Content)](./disclosuretablerow/init%28_,isexpanded,content%29.md)
   Creates a disclosure group with the given value and table rows, and a binding to the expansion state (expanded or collapsed).
 
 ## Relationships
 
 ### Conforms To
-- [TableRowContent](tablerowcontent.md)
+- [TableRowContent](./tablerowcontent.md)
 
 ## See Also
 
-- [struct TableOutlineGroupContent](tableoutlinegroupcontent.md)
+### Adding progressive disclosure
+- [struct TableOutlineGroupContent](./tableoutlinegroupcontent.md)
   An opaque table row type created by a table’s hierarchical initializers.
 
 

@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone from the date the calendar view displays.
 
@@ -17,11 +18,16 @@ The time zone from the date the calendar view displays.
 var timeZone: TimeZone? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSTimeZone * timeZone;
+```
+
 ## See Also
 
-- [var calendar: Calendar](uicalendarview/calendar.md)
+### Setting calendar details
+- [var calendar: Calendar](./calendar.md)
   The calendar that the calendar view illustrates.
-- [var locale: Locale](uicalendarview/locale.md)
+- [var locale: Locale](./locale.md)
   The locale the calendar view uses for calendar conventions.
 
 

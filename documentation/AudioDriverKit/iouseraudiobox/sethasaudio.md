@@ -1,7 +1,8 @@
 # SetHasAudio
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value that indicates the box’s audio support.
 
@@ -10,13 +11,13 @@ Sets a Boolean value that indicates the box’s audio support.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetHasAudio(bool in_has_audio);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -30,15 +31,16 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [HasAudio](iouseraudiobox/hasaudio.md)
+### Determining Media Support
+- [HasAudio](./hasaudio.md)
   Returns a Boolean value that indicates the box’s audio support.
-- [SetHasVideo](iouseraudiobox/sethasvideo.md)
+- [SetHasVideo](./sethasvideo.md)
   Sets a Boolean value that indicates the box’s video support.
-- [HasVideo](iouseraudiobox/hasvideo.md)
+- [HasVideo](./hasvideo.md)
   Returns a Boolean value that indicates the box’s video support.
-- [SetHasMIDI](iouseraudiobox/sethasmidi.md)
+- [SetHasMIDI](./sethasmidi.md)
   Sets a Boolean value that indicates the box’s MIDI support.
-- [HasMIDI](iouseraudiobox/hasmidi.md)
+- [HasMIDI](./hasmidi.md)
   Returns a Boolean value that indicates the box’s MIDI support.
 
 

@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The values returned for the `NSURLUbiquitousSharedItemCurrentUserRoleKey`. The current user is the owner of this shared item.
 
@@ -18,9 +19,14 @@ The values returned for the `NSURLUbiquitousSharedItemCurrentUserRoleKey`. The c
 static let owner: URLUbiquitousSharedItemRole
 ```
 
+```c
+extern NSURLUbiquitousSharedItemRole const NSURLUbiquitousSharedItemRoleOwner;
+```
+
 ## See Also
 
-- [static let participant: URLUbiquitousSharedItemRole](urlubiquitousshareditemrole/participant.md)
+### Constants
+- [static let participant: URLUbiquitousSharedItemRole](./participant.md)
   The current user is a participant of this shared item.
 
 

@@ -1,7 +1,8 @@
 # kDADiskRenameOptionDefault
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var kDADiskRenameOptionDefault: Int { get }
+```
+
+```c
+kDADiskRenameOptionDefault
 ```
 
 

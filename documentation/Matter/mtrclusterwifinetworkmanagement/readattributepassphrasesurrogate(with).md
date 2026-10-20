@@ -1,7 +1,8 @@
 # readAttributePassphraseSurrogate(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributePassphraseSurrogate(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributePassphraseSurrogateWithParams:(MTRReadParams *) params;
 ```
 
 

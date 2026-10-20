@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional handler that performs custom evaluation of matching notifications.
 
@@ -11,13 +12,18 @@ An optional handler that performs custom evaluation of matching notifications.
 var handler: XCTDarwinNotificationExpectation.Handler? { get set }
 ```
 
+```objc
+@property (copy, nullable) XCTDarwinNotificationExpectationHandler handler;
+```
+
 #### Discussion
 
 If provided, the custom handler will be queried each time a matching notification is received to determine whether the expectation should be fulfilled. This allows the handler to check Darwin state variables or perform other logic beyond simply verifying that the notification has been received.
 
 ## See Also
 
-- [XCTDarwinNotificationExpectation.Handler](xctdarwinnotificationexpectation/handler-swift.typealias.md)
+### Custom Notification Evaluation
+- [XCTDarwinNotificationExpectation.Handler](./handler-swift.typealias.md)
   A custom handler to be called when a matching notification is received.
 
 

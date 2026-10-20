@@ -1,7 +1,8 @@
 # modalPresentationStyle
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation style for modal view controllers.
 

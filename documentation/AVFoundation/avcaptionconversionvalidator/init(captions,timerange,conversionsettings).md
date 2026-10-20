@@ -1,7 +1,8 @@
 # init(captions:timeRange:conversionSettings:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that validates captions for a conversion operation.
 
@@ -15,6 +16,10 @@ Creates an object that validates captions for a conversion operation.
 
 ```swift
 init(captions: [AVCaption], timeRange: CMTimeRange, conversionSettings: [AVCaptionSettingsKey : Any])
+```
+
+```objc
+- (instancetype) initWithCaptions:(NSArray<AVCaption *> *) captions timeRange:(CMTimeRange) timeRange conversionSettings:(NSDictionary<NSString *,id> *) conversionSettings;
 ```
 
 ## Parameters

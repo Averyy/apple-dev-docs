@@ -1,7 +1,8 @@
 # record(_:named:as:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Attach an image to the current test.
 
@@ -15,9 +16,11 @@ Attach an image to the current test.
 static func record<T>(_ image: T, named preferredName: String? = nil, as imageFormat: AttachableImageFormat? = nil, sourceLocation: SourceLocation = #_sourceLocation) where AttachableValue : _AttachableImageWrapper<T>, AttachableValue : AttachableWrapper, T : AttachableAsImage
 ```
 
+Available when `AttachableValue` conforms to `Attachable`.
+
 #### Discussion
 
-This function creates a new instance of [`Attachment`](attachment.md) wrapping `image` and immediately attaches it to the current test. The testing library uses the image format that `imageFormat` specifies. Pass `nil` to let the testing library select which image format to use. If you pass `nil`, the image format that the testing library uses depends on the path extension you specify in `preferredName`, if any. If you don’t specify a path extension, or if the path extension you specify doesn’t correspond to an image format the operating system knows how to write, the testing library selects an appropriate image format for you.
+This function creates a new instance of [`Attachment`](../attachment.md) wrapping `image` and immediately attaches it to the current test. The testing library uses the image format that `imageFormat` specifies. Pass `nil` to let the testing library select which image format to use. If you pass `nil`, the image format that the testing library uses depends on the path extension you specify in `preferredName`, if any. If you don’t specify a path extension, or if the path extension you specify doesn’t correspond to an image format the operating system knows how to write, the testing library selects an appropriate image format for you.
 
 ## Parameters
 
@@ -28,11 +31,12 @@ This function creates a new instance of [`Attachment`](attachment.md) wrapping `
 
 ## See Also
 
-- [protocol AttachableAsImage](attachableasimage.md)
-  A protocol describing images that can be converted to instances of [`Attachment`](https://developer.apple.comhttps://developer.apple.com/documentation/testing/attachment).
-- [struct AttachableImageFormat](attachableimageformat.md)
+### Attaching images to tests
+- [protocol AttachableAsImage](../attachableasimage.md)
+  A protocol describing images that can be converted to instances of [Attachment](../attachment.md).
+- [struct AttachableImageFormat](../attachableimageformat.md)
   A type describing image formats supported by the system that can be used when attaching an image to a test.
-- [init<T>(T, named: String?, as: AttachableImageFormat?, sourceLocation: SourceLocation)](attachment/init(_:named:as:sourcelocation:).md)
+- [init<T>(T, named: String?, as: AttachableImageFormat?, sourceLocation: SourceLocation)](./init%28_,named,as,sourcelocation%29.md)
   Initialize an instance of this type that encloses the given image.
 
 

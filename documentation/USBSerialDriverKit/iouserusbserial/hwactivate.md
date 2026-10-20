@@ -1,7 +1,8 @@
 # HwActivate
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the communication channel to the device.
 
@@ -10,13 +11,13 @@ Opens the communication channel to the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HwActivate();
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,7 +25,8 @@ Override this method and use it to prepare your device’s hardware for serial c
 
 ## See Also
 
-- [HwDeactivate](iouserusbserial/hwdeactivate.md)
+### Activating and Deactivating the Service
+- [HwDeactivate](./hwdeactivate.md)
   Closes the communication channel to the device.
 
 

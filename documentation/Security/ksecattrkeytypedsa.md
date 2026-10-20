@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeDSA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DSA algorithm.
 
@@ -12,6 +13,10 @@ DSA algorithm.
 
 ```swift
 let kSecAttrKeyTypeDSA: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeDSA;
 ```
 
 

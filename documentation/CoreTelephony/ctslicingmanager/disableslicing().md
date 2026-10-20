@@ -1,7 +1,8 @@
 # disableSlicing()
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables network slicing for new connections.
 
@@ -34,12 +35,15 @@ do {
 }
 ```
 
-> **Note**: - `POSIXError.ENOTSUP` if network slicing is not currently available.
-- `POSIXError.EINVAL` if an invalid parameter or system error occurs.
+> **Throws**:
+>
+> - `POSIXError.ENOTSUP` if network slicing is not currently available.
+> - `POSIXError.EINVAL` if an invalid parameter or system error occurs.
 
 ## See Also
 
-- [func activatePreferredSliceForCategory(CTSlicingManager.AppCategory) async throws](ctslicingmanager/activatepreferredsliceforcategory(_:).md)
+### Managing network slicing
+- [func activatePreferredSliceForCategory(CTSlicingManager.AppCategory) async throws](./activatepreferredsliceforcategory%28_%29.md)
   Activates a preferred network slice for new connections.
 
 

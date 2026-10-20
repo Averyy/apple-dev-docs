@@ -1,14 +1,15 @@
 # kSCSICmd_VOLUME_SET_IN
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_VOLUME_SET_IN = 0xBE
 ```
 

@@ -1,14 +1,15 @@
 # vfs_reserved3
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 void *vfs_reserved3;
 ```
 

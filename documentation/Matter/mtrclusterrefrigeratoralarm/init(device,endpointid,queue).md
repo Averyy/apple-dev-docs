@@ -1,7 +1,8 @@
 # init(device:endpointID:queue:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The queue is currently unused, but may be used in the future for calling completions for command invocations if commands are added to this cluster.
 
@@ -18,6 +19,10 @@ The queue is currently unused, but may be used in the future for calling complet
 
 ```swift
 init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)
+```
+
+```objc
+- (instancetype) initWithDevice:(MTRDevice *) device endpointID:(NSNumber *) endpointID queue:(dispatch_queue_t) queue;
 ```
 
 

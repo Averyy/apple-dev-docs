@@ -1,7 +1,8 @@
 # loadSuite(with:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads the suite definition encapsulated in `dictionary`; previously, this suite definition was parsed from a `.scriptSuite` property list contained in a framework or in `bundle`.
 
@@ -15,22 +16,28 @@ Loads the suite definition encapsulated in `dictionary`; previously, this suite 
 func loadSuite(with suiteDeclaration: [AnyHashable : Any], from bundle: Bundle)
 ```
 
+```objc
+- (void) loadSuiteWithDictionary:(NSDictionary *) suiteDeclaration fromBundle:(NSBundle *) bundle;
+```
+
 #### Discussion
 
-The method extracts information from the dictionary and caches it in various internal collection objects. If keys are missing or values are of the wrong type, it logs messages to the console. It also registers class descriptions and command descriptions. In registering a class description, it invokes the [`NSClassDescription`](nsclassdescription.md) class method [`register(_:for:)`](nsclassdescription/register(_:for:).md). In registering a command description, it arranges for the Apple event translator to handle incoming Apple events that represent the defined commands.
+The method extracts information from the dictionary and caches it in various internal collection objects. If keys are missing or values are of the wrong type, it logs messages to the console. It also registers class descriptions and command descriptions. In registering a class description, it invokes the [`NSClassDescription`](../nsclassdescription.md) class method [`register(_:for:)`](../nsclassdescription/register%28_,for%29.md). In registering a command description, it arranges for the Apple event translator to handle incoming Apple events that represent the defined commands.
 
 This method is invoked when the shared instance is initialized and when bundles are loaded at runtime. Prior to invoking it, `NSScriptSuiteRegistry` creates the dictionary argument from the `.scriptSuite` property list. If you invoke this method in your code, you should try to do it before the application receives its first Apple event.
 
 ## See Also
 
-- [func register(NSScriptClassDescription)](nsscriptsuiteregistry/register(_:)-9aplw.md)
+### Related Documentation
+- [func register(NSScriptClassDescription)](./register%28_%29-9aplw.md)
   Registers class description `classDescription` for use by Cocoa’s built-in scripting support by storing it in a per-suite internal dictionary under the class name.
-- [class func shared() -> NSScriptSuiteRegistry](nsscriptsuiteregistry/shared.md)
+- [class func shared() -> NSScriptSuiteRegistry](./shared%28%29.md)
   Returns the single, shared instance of `NSScriptSuiteRegistry`, creating it first if it doesn’t exist.
-- [func register(NSScriptCommandDescription)](nsscriptsuiteregistry/register(_:)-5mq91.md)
+- [func register(NSScriptCommandDescription)](./register%28_%29-5mq91.md)
   Registers command description `commandDesc` for use by Cocoa’s built-in scripting support by storing it in a per-suite internal dictionary under the command name.
-- [func loadSuites(from: Bundle)](nsscriptsuiteregistry/loadsuites(from:).md)
-  Loads the suite definitions in bundle `aBundle`, invoking [`loadSuite(with:from:)`](nsscriptsuiteregistry/loadsuite(with:from:).md) for each suite found.
+### Loading Suites
+- [func loadSuites(from: Bundle)](./loadsuites%28from%29.md)
+  Loads the suite definitions in bundle `aBundle`, invoking [`loadSuite(with:from:)`](./loadsuite%28with,from%29.md) for each suite found.
 
 
 ---

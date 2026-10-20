@@ -1,7 +1,8 @@
 # FontFace
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,24 +10,24 @@
 
 ## Declaration
 
-```swift
+```
 interface FontFace
 ```
 
 ## Topics
 
 ### Instance Properties
-- [family](fontface/1777940-family.md)
-- [featureSettings](fontface/1777990-featuresettings.md)
-- [loaded](fontface/1777762-loaded.md)
-- [status](fontface/1777806-status.md)
-- [stretch](fontface/1777941-stretch.md)
-- [style](fontface/1777777-style.md)
-- [unicodeRange](fontface/1777951-unicoderange.md)
-- [variant](fontface/1777885-variant.md)
-- [weight](fontface/1777968-weight.md)
+- [family](./fontface/api-1777940-family.md)
+- [featureSettings](./fontface/api-1777990-featuresettings.md)
+- [loaded](./fontface/api-1777762-loaded.md)
+- [status](./fontface/api-1777806-status.md)
+- [stretch](./fontface/api-1777941-stretch.md)
+- [style](./fontface/api-1777777-style.md)
+- [unicodeRange](./fontface/api-1777951-unicoderange.md)
+- [variant](./fontface/api-1777885-variant.md)
+- [weight](./fontface/api-1777968-weight.md)
 ### Instance Methods
-- [load](fontface/1777847-load.md)
+- [load](./fontface/api-1777847-load.md)
 
 
 ---

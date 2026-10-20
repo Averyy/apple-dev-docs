@@ -1,7 +1,8 @@
 # AppStorage
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that reflects a value from `UserDefaults` and invalidates a view on a change in value in that user default.
 
@@ -24,28 +25,29 @@ A property wrapper type that reflects a value from `UserDefaults` and invalidate
 ## Topics
 
 ### Storing a value
-- [init(wrappedValue:_:store:)](appstorage/init(wrappedvalue:_:store:).md)
+- [init(wrappedValue:_:store:)](./appstorage/init%28wrappedvalue,_,store%29.md)
   Creates a property that can save and restore tab sidebar customizations.
-- [init(_:store:)](appstorage/init(_:store:).md)
+- [init(_:store:)](./appstorage/init%28_,store%29.md)
   Creates a property that can read and write an Optional boolean user default.
 ### Getting the value
-- [var wrappedValue: Value](appstorage/wrappedvalue.md)
-- [var projectedValue: Binding<Value>](appstorage/projectedvalue.md)
+- [var wrappedValue: Value](./appstorage/wrappedvalue.md)
+- [var projectedValue: Binding<Value>](./appstorage/projectedvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Restoring your app’s state with SwiftUI](restoring-your-app-s-state-with-swiftui.md)
+### Saving state across app launches
+- [Restoring your app’s state with SwiftUI](./restoring-your-app-s-state-with-swiftui.md)
   Provide app continuity for users by preserving their current activities.
-- [func defaultAppStorage(UserDefaults) -> some View](view/defaultappstorage(_:).md)
+- [func defaultAppStorage(UserDefaults) -> some View](./view/defaultappstorage%28_%29.md)
   The default store used by `AppStorage` contained within the view.
-- [struct SceneStorage](scenestorage.md)
+- [struct SceneStorage](./scenestorage.md)
   A property wrapper type that reads and writes to persisted, per-scene storage.
 
 

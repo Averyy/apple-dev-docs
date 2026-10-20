@@ -1,14 +1,15 @@
 # tcpi_rxpackets
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t tcpi_rxpackets;
 ```
 

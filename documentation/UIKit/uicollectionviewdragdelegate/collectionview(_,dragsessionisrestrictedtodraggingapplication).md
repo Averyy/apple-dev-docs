@@ -1,7 +1,8 @@
 # collectionView(_:dragSessionIsRestrictedToDraggingApplication:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that determines whether the source app and destination app must be the same for a drag session.
 
@@ -17,13 +18,17 @@ Returns a Boolean value that determines whether the source app and destination a
 optional func collectionView(_ collectionView: UICollectionView, dragSessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView dragSessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) when the source app and destination app should be the same — that is, the user is not allowed to drop the item on another app.
+[`true`](../../Swift/true.md) when the source app and destination app should be the same — that is, the user is not allowed to drop the item on another app.
 
 #### Discussion
 
-If you don’t implement this method, the default return value is [`false`](https://developer.apple.com/documentation/swift/false).
+If you don’t implement this method, the default return value is [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -32,7 +37,8 @@ If you don’t implement this method, the default return value is [`false`](http
 
 ## See Also
 
-- [func collectionView(UICollectionView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](uicollectionviewdragdelegate/collectionview(_:dragsessionallowsmoveoperation:).md)
+### Controlling the drag session
+- [func collectionView(UICollectionView, dragSessionAllowsMoveOperation: any UIDragSession) -> Bool](./collectionview%28_,dragsessionallowsmoveoperation%29.md)
   Returns a Boolean value that determines whether a move operation is allowed for a drag session.
 
 

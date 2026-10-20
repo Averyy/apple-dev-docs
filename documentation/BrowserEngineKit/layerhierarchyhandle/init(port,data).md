@@ -1,7 +1,8 @@
 # init(port:data:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layer hierarchy handle using a Mach port reference and serialized data.
 
@@ -15,9 +16,13 @@ Creates a layer hierarchy handle using a Mach port reference and serialized data
 init(port: mach_port_t, data: Data) throws
 ```
 
+```objc
++ (BELayerHierarchyHandle *) handleWithPort:(mach_port_t) port data:(NSData *) data error:(NSError **) error;
+```
+
 #### Discussion
 
-Use this initializer to reconstruct a layer hierarchy handle that your app serializes using [`encode(_:)`](layerhierarchyhandle/encode(_:).md) in another process.
+Use this initializer to reconstruct a layer hierarchy handle that your app serializes using [`encode(_:)`](./encode%28_%29.md) in another process.
 
 This method takes ownership of the Mach port send right, even if an error occurs; don’t use or deallocate the port after calling this method.
 
@@ -28,7 +33,8 @@ This method takes ownership of the Mach port send right, even if an error occurs
 
 ## See Also
 
-- [func encode((mach_port_t, Data) -> Void)](layerhierarchyhandle/encode(_:).md)
+### Sharing a layer hierarchy handle using Mach
+- [func encode((mach_port_t, Data) -> Void)](./encode%28_%29.md)
   Serializes the hierarchy handle into a Mach port reference and accompanying data.
 
 

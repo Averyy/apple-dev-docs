@@ -1,16 +1,21 @@
 # CGMouseButton.center
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case center
+```
+
+```c
+kCGMouseButtonCenter
 ```
 
 #### Discussion
@@ -19,8 +24,9 @@ Specifies the center mouse button on a three-button mouse.
 
 ## See Also
 
-- [CGMouseButton.left](cgmousebutton/left.md)
-- [CGMouseButton.right](cgmousebutton/right.md)
+### Constants
+- [CGMouseButton.left](./left.md)
+- [CGMouseButton.right](./right.md)
 
 
 ---

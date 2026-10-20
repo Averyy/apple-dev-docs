@@ -1,7 +1,8 @@
 # init(frequency:octaveCount:persistence:lacunarity:seed:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Perlin noise source with the specified parameters.
 
@@ -19,21 +20,25 @@ Initializes a Perlin noise source with the specified parameters.
 init(frequency: Double, octaveCount: Int, persistence: Double, lacunarity: Double, seed: Int32)
 ```
 
+```objc
+- (instancetype) initWithFrequency:(double) frequency octaveCount:(NSInteger) octaveCount persistence:(double) persistence lacunarity:(double) lacunarity seed:(int32_t) seed;
+```
+
 #### Return Value
 
 A new noise source.
 
 #### Discussion
 
-To make use of this noise source, create a [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
+To make use of this noise source, create a [`GKNoise`](../gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](../gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` class.
 
 ## Parameters
 
 - `frequency`: The initial value for the `frequency` property, which determines the number and size of visible features in any given unit area of generated noise.
-- `octaveCount`: The initial value for the [`octaveCount`](gkcoherentnoisesource/octavecount.md) property, which determines the complexity of generated noise.
-- `persistence`: The initial value for the [`persistence`](gkperlinnoisesource/persistence.md) property, which determines the decrease in amplitude between octaves and thus the roughness of generated noise.
-- `lacunarity`: The initial value for the [`lacunarity`](gkcoherentnoisesource/lacunarity.md) property, which determines the increase in frequency between octaves and thus the gradation between coarseness and uniformity in generated noise.
-- `seed`: The initial value for the [`seed`](gkcoherentnoisesource/seed.md) property, which determines the overall structure of generated noise.
+- `octaveCount`: The initial value for the [`octaveCount`](../gkcoherentnoisesource/octavecount.md) property, which determines the complexity of generated noise.
+- `persistence`: The initial value for the [`persistence`](./persistence.md) property, which determines the decrease in amplitude between octaves and thus the roughness of generated noise.
+- `lacunarity`: The initial value for the [`lacunarity`](../gkcoherentnoisesource/lacunarity.md) property, which determines the increase in frequency between octaves and thus the gradation between coarseness and uniformity in generated noise.
+- `seed`: The initial value for the [`seed`](../gkcoherentnoisesource/seed.md) property, which determines the overall structure of generated noise.
 
 
 ---

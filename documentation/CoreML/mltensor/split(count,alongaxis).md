@@ -1,7 +1,8 @@
 # split(count:alongAxis:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Splits a tensor into multiple tensors. The tensor is split along dimension `axis` into `count` smaller tensors.
 
@@ -28,7 +29,7 @@ An array containing the tensor parts.
 
 For example:
 
-```None
+```
 // 'value' is a tensor with shape [5, 30]
 // Split 'value' into 3 tensors along dimension 1:
 let parts = value.split(count: 3, alongAxis: 1)
@@ -44,7 +45,8 @@ parts[2] // has shape [5, 10]
 
 ## See Also
 
-- [func split(sizes: [Int], alongAxis: Int) -> [MLTensor]](mltensor/split(sizes:alongaxis:).md)
+### Splitting the tensor
+- [func split(sizes: [Int], alongAxis: Int) -> [MLTensor]](./split%28sizes,alongaxis%29.md)
   Splits a tensor into multiple tensors. The tensor is split  into `sizes.shape[0]` parts.
 
 

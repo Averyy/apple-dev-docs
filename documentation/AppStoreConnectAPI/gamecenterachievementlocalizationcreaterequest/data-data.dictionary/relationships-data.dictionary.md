@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
+- [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement](./relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object GameCenterAchievementLocalizationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementLocalizationCreateRequest.Data.Attributes](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementLocalizationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a achievement resource.
 
 

@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone associated with the locale, if any.
 
@@ -22,13 +23,14 @@ var timeZone: TimeZone? { get }
 
 ## See Also
 
-- [var firstDayOfWeek: Locale.Weekday](locale/firstdayofweek.md)
+### Getting date and time components
+- [var firstDayOfWeek: Locale.Weekday](./firstdayofweek.md)
   The first day of the week as represented by this locale.
-- [Locale.Weekday](locale/weekday.md)
+- [Locale.Weekday](./weekday.md)
   A type that represents weekdays, used for indicating a locale’s first day of the week.
-- [var hourCycle: Locale.HourCycle](locale/hourcycle-swift.property.md)
+- [var hourCycle: Locale.HourCycle](./hourcycle-swift.property.md)
   The hour cycle used by the locale, like one-to-twelve or zero-to-twenty-three.
-- [Locale.HourCycle](locale/hourcycle-swift.enum.md)
+- [Locale.HourCycle](./hourcycle-swift.enum.md)
   A type that represents the hour cycle used in a locale, like one-to-twelve or zero-to-twenty-three.
 
 

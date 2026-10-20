@@ -1,7 +1,8 @@
 # kMDItemInstructions
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Editorial instructions concerning the use of the item, such as embargoes and warnings. For example, "Second of four stories". A CFString.
 
@@ -12,6 +13,10 @@ Editorial instructions concerning the use of the item, such as embargoes and war
 
 ```swift
 let kMDItemInstructions: CFString!
+```
+
+```c
+const CFStringRef kMDItemInstructions;
 ```
 
 

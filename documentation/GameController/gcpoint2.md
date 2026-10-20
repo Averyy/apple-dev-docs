@@ -1,7 +1,8 @@
 # GCPoint2
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a normalized point in a two-dimensional coordinate system.
 
@@ -19,43 +20,48 @@ A structure that represents a normalized point in a two-dimensional coordinate s
 struct GCPoint2
 ```
 
+```c
+struct GCPoint2;
+```
+
 ## Topics
 
 ### Creating a point
-- [init()](gcpoint2/init.md)
+- [init()](./gcpoint2/init%28%29.md)
   Creates a two dimensional point with coordinates `(0, 0)`.
-- [init(x: Float, y: Float)](gcpoint2/init(x:y:).md)
+- [init(x: Float, y: Float)](./gcpoint2/init%28x,y%29.md)
   Creates a two dimensional point with the given coordinates.
-- [func GCPoint2Make(Float, Float) -> GCPoint2](gcpoint2make(_:_:).md)
+- [func GCPoint2Make(Float, Float) -> GCPoint2](./gcpoint2make%28_,_%29.md)
   Returns a point with the specified coordinates in a two-dimensional coordinate system.
-- [let GCPoint2Zero: GCPoint2](gcpoint2zero.md)
+- [let GCPoint2Zero: GCPoint2](./gcpoint2zero.md)
   The origin for a two dimensional point.
 ### Accessing coordinates
-- [var x: Float](gcpoint2/x.md)
+- [var x: Float](./gcpoint2/x.md)
   The x-coordinate for the point.
-- [var y: Float](gcpoint2/y.md)
+- [var y: Float](./gcpoint2/y.md)
   The y-coordinate for the point.
 ### Comparing and converting points
-- [func GCPoint2Equal(GCPoint2, GCPoint2) -> Bool](gcpoint2equal(_:_:).md)
+- [func GCPoint2Equal(GCPoint2, GCPoint2) -> Bool](./gcpoint2equal%28_,_%29.md)
   Returns whether two points are equal.
-- [func NSStringFromGCPoint2(GCPoint2) -> String](nsstringfromgcpoint2(_:).md)
+- [func NSStringFromGCPoint2(GCPoint2) -> String](./nsstringfromgcpoint2%28_%29.md)
   Returns a string representation of a point.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var value: GCPoint2](gcaxis2dinput/value.md)
+### Getting the value
+- [var value: GCPoint2](./gcaxis2dinput/value.md)
   The axis input represented as a normalized point in a two-dimensional coordinate system.
-- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxis2DInput, GCPoint2) -> Void)?](gcaxis2dinput/valuedidchangehandler.md)
+- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxis2DInput, GCPoint2) -> Void)?](./gcaxis2dinput/valuedidchangehandler.md)
   The block that the axis element calls when its value changes.
-- [var lastValueTimestamp: TimeInterval](gcaxis2dinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./gcaxis2dinput/lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gcaxis2dinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./gcaxis2dinput/lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 
 

@@ -1,7 +1,8 @@
 # performAccessibilityAudit(for:_:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 - Xcode 16.3+
 
@@ -22,8 +23,9 @@
 
 ## See Also
 
-- [struct XCUIAccessibilityAuditType](xcuiaccessibilityaudittype.md)
-- [class XCUIAccessibilityAuditIssue](xcuiaccessibilityauditissue.md)
+### Performing an accessibility audit
+- [struct XCUIAccessibilityAuditType](../xcuiaccessibilityaudittype.md)
+- [class XCUIAccessibilityAuditIssue](../xcuiaccessibilityauditissue.md)
 
 
 ---

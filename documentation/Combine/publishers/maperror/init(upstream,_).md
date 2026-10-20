@@ -1,7 +1,8 @@
 # init(upstream:_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -20,7 +21,8 @@ init(upstream: Upstream, _ map: @escaping (Upstream.Failure) -> Failure)
 
 ## See Also
 
-- [init(upstream: Upstream, transform: (Upstream.Failure) -> Failure)](publishers/maperror/init(upstream:transform:).md)
+### Creating an error-mapping publisher
+- [init(upstream: Upstream, transform: (Upstream.Failure) -> Failure)](./init%28upstream,transform%29.md)
   Creates a publisher that converts any failure from the upstream publisher into a new error.
 
 

@@ -1,7 +1,8 @@
 # GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to modify a Game Center achievement localization update request.
 
@@ -10,7 +11,7 @@ The request body you use to modify a Game Center achievement localization update
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementLocalizationV2UpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # storeType
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The store where the original purchase of the app was made.
 

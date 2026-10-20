@@ -1,14 +1,15 @@
 # eph_macos_version
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14.4+
 
 ## Declaration
 
-```swift
+```c
 char eph_macos_version[32];
 ```
 

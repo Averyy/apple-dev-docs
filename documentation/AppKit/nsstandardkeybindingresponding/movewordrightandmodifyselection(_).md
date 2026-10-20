@@ -1,10 +1,11 @@
 # moveWordRightAndModifySelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,15 +13,20 @@
 optional func moveWordRightAndModifySelection(_ sender: Any?)
 ```
 
+```objc
+- (void) moveWordRightAndModifySelection:(id) sender;
+```
+
 ## See Also
 
-- [func moveWordBackward(Any?)](nsstandardkeybindingresponding/movewordbackward(_:).md)
-- [func moveWordBackwardAndModifySelection(Any?)](nsstandardkeybindingresponding/movewordbackwardandmodifyselection(_:).md)
-- [func moveWordForward(Any?)](nsstandardkeybindingresponding/movewordforward(_:).md)
-- [func moveWordForwardAndModifySelection(Any?)](nsstandardkeybindingresponding/movewordforwardandmodifyselection(_:).md)
-- [func moveWordLeft(Any?)](nsstandardkeybindingresponding/movewordleft(_:).md)
-- [func moveWordLeftAndModifySelection(Any?)](nsstandardkeybindingresponding/movewordleftandmodifyselection(_:).md)
-- [func moveWordRight(Any?)](nsstandardkeybindingresponding/movewordright(_:).md)
+### Moving the Selection by Word Boundaries
+- [func moveWordBackward(Any?)](./movewordbackward%28_%29.md)
+- [func moveWordBackwardAndModifySelection(Any?)](./movewordbackwardandmodifyselection%28_%29.md)
+- [func moveWordForward(Any?)](./movewordforward%28_%29.md)
+- [func moveWordForwardAndModifySelection(Any?)](./movewordforwardandmodifyselection%28_%29.md)
+- [func moveWordLeft(Any?)](./movewordleft%28_%29.md)
+- [func moveWordLeftAndModifySelection(Any?)](./movewordleftandmodifyselection%28_%29.md)
+- [func moveWordRight(Any?)](./movewordright%28_%29.md)
 
 
 ---

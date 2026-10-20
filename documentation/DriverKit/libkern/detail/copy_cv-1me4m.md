@@ -1,24 +1,25 @@
 # copy_cv
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, typename U> struct copy_cv<constvolatile type-parameter-0-0, U>;
 ```
 
 ## Topics
 
 ### Type Aliases
-- [type](libkern/detail/copy_cv-1me4m/type.md)
+- [type](./copy_cv-1me4m/type.md)
 
 
 ---

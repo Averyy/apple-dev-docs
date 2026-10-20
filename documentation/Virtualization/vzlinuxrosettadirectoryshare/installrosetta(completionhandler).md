@@ -1,7 +1,8 @@
 # installRosetta(completionHandler:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Starts the installation of Rosetta.
 
@@ -11,7 +12,15 @@ Starts the installation of Rosetta.
 ## Declaration
 
 ```swift
+class func installRosetta(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 class func installRosetta() async throws
+```
+
+```objc
++ (void) installRosettaWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion

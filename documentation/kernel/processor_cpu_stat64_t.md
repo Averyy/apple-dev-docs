@@ -1,14 +1,15 @@
 # processor_cpu_stat64_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct processor_cpu_stat64 *processor_cpu_stat64_t;
 ```
 

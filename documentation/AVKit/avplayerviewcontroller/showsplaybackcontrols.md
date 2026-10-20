@@ -1,7 +1,8 @@
 # showsPlaybackControls
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player view controller shows playback controls.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the player view controller shows playback
 var showsPlaybackControls: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsPlaybackControls;
+```
+
 #### Discussion
 
 Set this property to `false` if you don’t want the system-provided playback controls visible over your content. Hiding the playback controls can be useful in situations where you need a non-interactive video presentation, such as a video splash screen.
@@ -28,15 +33,16 @@ The default value is `true`.
 
 ## See Also
 
-- [var contentOverlayView: UIView?](avplayerviewcontroller/contentoverlayview.md)
+### Configuring presentation
+- [var contentOverlayView: UIView?](./contentoverlayview.md)
   A view that displays between the video content and the playback controls.
-- [var videoGravity: AVLayerVideoGravity](avplayerviewcontroller/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A string that specifies how the video displays within the bounds of the view controller’s view.
-- [var videoBounds: CGRect](avplayerviewcontroller/videobounds.md)
+- [var videoBounds: CGRect](./videobounds.md)
   The size and position of the video image within the bounds of the view controller’s view.
-- [var showsTimecodes: Bool](avplayerviewcontroller/showstimecodes.md)
+- [var showsTimecodes: Bool](./showstimecodes.md)
   A Boolean value that determines whether the player view displays timecodes, if available.
-- [var appliesPreferredDisplayCriteriaAutomatically: Bool](avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
+- [var appliesPreferredDisplayCriteriaAutomatically: Bool](./appliespreferreddisplaycriteriaautomatically.md)
   A Boolean value that indicates whether the view controller automatically sets the screen’s display criteria to match that of the currently playing asset.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The exposure texture this scaler uses.
@@ -20,13 +21,17 @@ The exposure texture this scaler uses.
 var exposureTexture: (any MTLTexture)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> exposureTexture;
+```
+
 #### Discussion
 
 Create and assign a 1x1  `MTLPixelFormatR16Float`  texture to assign to this property. MetalFX reads the R channel of the texel at position `(0,0)` and uses it as the exposure value. It then uses this value to multiply the input color.
 
 For best performance, use the GPU to generate the exposure value and store it into this texture.
 
-> **Note**: The temporal scaler ignores this property if you create it with a descriptor that has its [`isAutoExposureEnabled`](mtlfxtemporalscalerdescriptor/isautoexposureenabled.md) property set to [`true`](https://developer.apple.com/documentation/swift/true).
+> **Note**: The temporal scaler ignores this property if you create it with a descriptor that has its [`isAutoExposureEnabled`](../mtlfxtemporalscalerdescriptor/isautoexposureenabled.md) property set to [`true`](../../Swift/true.md).
 
 
 ---

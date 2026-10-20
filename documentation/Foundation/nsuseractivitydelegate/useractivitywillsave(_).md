@@ -1,7 +1,8 @@
 # userActivityWillSave(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate that the user activity will be saved to be continued or persisted.
 
@@ -20,6 +21,10 @@ Notifies the delegate that the user activity will be saved to be continued or pe
 optional func userActivityWillSave(_ userActivity: NSUserActivity)
 ```
 
+```objc
+- (void) userActivityWillSave:(NSUserActivity *) userActivity;
+```
+
 #### Discussion
 
 The delegate overrides this method to update the activity with current state.
@@ -30,7 +35,8 @@ The delegate overrides this method to update the activity with current state.
 
 ## See Also
 
-- [func userActivityWasContinued(NSUserActivity)](nsuseractivitydelegate/useractivitywascontinued(_:).md)
+### Managing activity continuation
+- [func userActivityWasContinued(NSUserActivity)](./useractivitywascontinued%28_%29.md)
   Notifies the delegate that the user activity was continued on another device.
 
 

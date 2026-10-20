@@ -1,7 +1,8 @@
 # init(value:forProperty:comparisonType:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a media property predicate with a specified comparison type.
 
@@ -17,6 +18,10 @@ Creates a media property predicate with a specified comparison type.
 init(value: Any?, forProperty property: String, comparisonType: MPMediaPredicateComparison)
 ```
 
+```objc
++ (MPMediaPropertyPredicate *) predicateWithValue:(id) value forProperty:(NSString *) property comparisonType:(MPMediaPredicateComparison) comparisonType;
+```
+
 #### Return Value
 
 A media property predicate.
@@ -24,12 +29,13 @@ A media property predicate.
 ## Parameters
 
 - `value`: The property value that you want to match when you query the Music library. For example, if you specify the `MPMediaItemPropertyArtist` constant in the `forProperty` parameter, in this parameter you supply a string containing the artist name.
-- `property`: A property to use to build a media property predicate. See General Media Item Property Keys and Podcast Item Property Keys in [`MPMediaItem`](mpmediaitem.md).
-- `comparisonType`: : The logical comparison type for the predicate. See [`MPMediaPredicateComparison`](mpmediapredicatecomparison.md).
+- `property`: A property to use to build a media property predicate. See General Media Item Property Keys and Podcast Item Property Keys in [`MPMediaItem`](../mpmediaitem.md).
+- `comparisonType`: : The logical comparison type for the predicate. See [`MPMediaPredicateComparison`](../mpmediapredicatecomparison.md).
 
 ## See Also
 
-- [init(value: Any?, forProperty: String)](mpmediapropertypredicate/init(value:forproperty:).md)
+### Creating media property predicates
+- [init(value: Any?, forProperty: String)](./init%28value,forproperty%29.md)
   Creates a media property predicate with the default comparison type.
 
 

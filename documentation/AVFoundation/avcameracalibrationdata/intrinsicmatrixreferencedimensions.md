@@ -1,7 +1,8 @@
 # intrinsicMatrixReferenceDimensions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image dimensions to which the camera’s intrinsic matrix values are relative.
 
@@ -19,17 +20,22 @@ The image dimensions to which the camera’s intrinsic matrix values are relativ
 var intrinsicMatrixReferenceDimensions: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize intrinsicMatrixReferenceDimensions;
+```
+
 #### Discussion
 
-The [`intrinsicMatrix`](avcameracalibrationdata/intrinsicmatrix.md) property measures focal length and principal point offset in pixels, but those values are meaningful only in the context of an image of this size.
+The [`intrinsicMatrix`](./intrinsicmatrix.md) property measures focal length and principal point offset in pixels, but those values are meaningful only in the context of an image of this size.
 
 ## See Also
 
-- [var intrinsicMatrix: matrix_float3x3](avcameracalibrationdata/intrinsicmatrix.md)
+### Mapping pixels to scene geometry
+- [var intrinsicMatrix: matrix_float3x3](./intrinsicmatrix.md)
   A matrix that relates a camera’s internal properties to an ideal pinhole-camera model.
-- [var extrinsicMatrix: matrix_float4x3](avcameracalibrationdata/extrinsicmatrix.md)
+- [var extrinsicMatrix: matrix_float4x3](./extrinsicmatrix.md)
   A matrix relating a camera’s position and orientation to a world or scene coordinate system.
-- [var pixelSize: Float](avcameracalibrationdata/pixelsize.md)
+- [var pixelSize: Float](./pixelsize.md)
   The size, in millimeters, of one image pixel.
 
 

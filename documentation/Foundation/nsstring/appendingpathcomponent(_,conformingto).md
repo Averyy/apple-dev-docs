@@ -1,7 +1,8 @@
 # appendingPathComponent(_:conformingTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func appendingPathComponent(_ partialName: String, conformingTo contentType: UTType) -> String
+```
+
+```objc
+- (NSString *) stringByAppendingPathComponent:(NSString *) partialName conformingToType:(UTType *) contentType;
 ```
 
 

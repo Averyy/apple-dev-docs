@@ -1,7 +1,8 @@
 # Class
 
 **Framework**: Roster API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A class in an Apple School Manager organization.
 
@@ -10,7 +11,7 @@ A class in an Apple School Manager organization.
 
 ## Declaration
 
-```swift
+```
 object Class
 ```
 
@@ -19,7 +20,7 @@ object Class
 - `dateCreated` (string): The date the class object was created in Apple School Manager. The date string is in ISO 8601 format.
 - `dateLastModified` (string): The date the class object was modified in Apple School Manager. The date string is in ISO 8601 format.
 - `id` (string): A unique identifier for this class.
-- `instructorIds` ([string]): A list of user identifiers for instructers. Values refer to the `id` field of the [`User`](user.md) object.
+- `instructorIds` ([string]): A list of user identifiers for instructers. Values refer to the `id` field of the [`User`](./user.md) object.
 - `room` (string): The name of the room.
 - `studentIds` ([string]): A list of user identifiers for students in the class.
 - `name` (string): The name of the class.
@@ -29,11 +30,12 @@ object Class
 
 ## See Also
 
-- [Read a class](returns-a-specific-class-in-an-apple-school-manager-organization..md)
+### Information about classes
+- [Read a class](./returns-a-specific-class-in-an-apple-school-manager-organization.md)
   Read a class from an Apple School Manager organization.
-- [List classes](returns-a-list-of-classes-for-an-apple-school-manager-organization.md)
+- [List classes](./returns-a-list-of-classes-for-an-apple-school-manager-organization.md)
   List classes in an Apple School Manager organization.
-- [object Classes](classes.md)
+- [object Classes](./classes.md)
   A list of classes, with a token for pagination.
 
 

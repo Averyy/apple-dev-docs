@@ -1,7 +1,8 @@
 # maximum(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the greater of the two given values.
 
@@ -39,7 +40,7 @@ Double.maximum(.nan, .nan)
 // nan
 ```
 
-The `maximum` method implements the `maxNum` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `maximum` method implements the `maxNum` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
@@ -48,21 +49,22 @@ The `maximum` method implements the `maxNum` operation defined by the [`IEEE 754
 
 ## See Also
 
-- [Floating-Point Operators for Double](floating-point-operators-for-double.md)
+### Comparing Values
+- [Floating-Point Operators for Double](../floating-point-operators-for-double.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func isEqual(to: Double) -> Bool](double/isequal(to:).md)
+- [func isEqual(to: Double) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value indicating whether this instance is equal to the given value.
-- [func isLess(than: Double) -> Bool](double/isless(than:).md)
+- [func isLess(than: Double) -> Bool](./isless%28than%29.md)
   Returns a Boolean value indicating whether this instance is less than the given value.
-- [func isLessThanOrEqualTo(Double) -> Bool](double/islessthanorequalto(_:).md)
+- [func isLessThanOrEqualTo(Double) -> Bool](./islessthanorequalto%28_%29.md)
   Returns a Boolean value indicating whether this instance is less than or equal to the given value.
-- [func isTotallyOrdered(belowOrEqualTo: Self) -> Bool](double/istotallyordered(beloworequalto:).md)
+- [func isTotallyOrdered(belowOrEqualTo: Self) -> Bool](./istotallyordered%28beloworequalto%29.md)
   Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
-- [static func minimum(Self, Self) -> Self](double/minimum(_:_:).md)
+- [static func minimum(Self, Self) -> Self](./minimum%28_,_%29.md)
   Returns the lesser of the two given values.
-- [static func minimumMagnitude(Self, Self) -> Self](double/minimummagnitude(_:_:).md)
+- [static func minimumMagnitude(Self, Self) -> Self](./minimummagnitude%28_,_%29.md)
   Returns the value with lesser magnitude.
-- [static func maximumMagnitude(Self, Self) -> Self](double/maximummagnitude(_:_:).md)
+- [static func maximumMagnitude(Self, Self) -> Self](./maximummagnitude%28_,_%29.md)
   Returns the value with greater magnitude.
 
 

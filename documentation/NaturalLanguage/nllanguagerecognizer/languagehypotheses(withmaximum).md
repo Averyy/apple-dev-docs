@@ -1,7 +1,8 @@
 # languageHypotheses(withMaximum:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates the probabilities of possible languages for the processed text.
 
@@ -31,13 +32,14 @@ A dictionary mapping languages with their probabilities, up to `maxHypotheses` l
 
 ## See Also
 
-- [class func dominantLanguage(for: String) -> NLLanguage?](nllanguagerecognizer/dominantlanguage(for:).md)
+### Determining the language
+- [class func dominantLanguage(for: String) -> NLLanguage?](./dominantlanguage%28for%29.md)
   Finds the most likely language of a piece of text.
-- [func processString(String)](nllanguagerecognizer/processstring(_:).md)
+- [func processString(String)](./processstring%28_%29.md)
   Analyzes the piece of text to determine its dominant language.
-- [var dominantLanguage: NLLanguage?](nllanguagerecognizer/dominantlanguage.md)
+- [var dominantLanguage: NLLanguage?](./dominantlanguage.md)
   The most likely language for the processed text.
-- [func reset()](nllanguagerecognizer/reset.md)
+- [func reset()](./reset%28%29.md)
   Resets the recognizer to its initial state.
 
 

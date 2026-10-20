@@ -1,7 +1,8 @@
 # AIVUValidator
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type to validate existing AIVU files to ensure that they meet the minimum requirements for AIV.
 
@@ -25,7 +26,7 @@ An AIVU is a standalone media file with the one or more video and audio tracks, 
 ## Topics
 
 ### Type Methods
-- [static func validate(url: URL) async throws -> Bool](aivuvalidator/validate(url:).md)
+- [static func validate(url: URL) async throws -> Bool](./aivuvalidator/validate%28url%29.md)
   Validates the AIVU file given its URL. It throws an error message with error details, if any.
 
 

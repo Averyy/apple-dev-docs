@@ -1,7 +1,8 @@
 # location
 
 **Framework**: SafetyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The longitude and latitude where the crash detection occurred.
 
@@ -18,13 +19,18 @@ The longitude and latitude where the crash detection occurred.
 var location: CLLocation? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CLLocation * location;
+```
+
 ## See Also
 
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+### Determining the event type
+- [SACrashDetectionEvent.Response](./response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
-- [var date: Date](sacrashdetectionevent/date.md)
+- [var date: Date](./date.md)
   The date and time the crash occurred.
-- [var response: SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.property.md)
+- [var response: SACrashDetectionEvent.Response](./response-swift.property.md)
   An indication of whether the system attempted to call an Emergency SOS provider.
 
 

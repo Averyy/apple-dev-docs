@@ -1,7 +1,8 @@
 # elemData
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var elemData: CChar
+```
+
+```c
+char elemData[1];
 ```
 
 

@@ -1,6 +1,7 @@
 # Creating an Audio Unit extension
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Article
 
 Build an extension by using an Xcode template.
 
@@ -10,19 +11,19 @@ An audio unit extension provides a way to create or modify audio and MIDI data i
 
 To create an audio unit extension, you create an Xcode project using the Audio Unit Extension App template.
 
-##### Create a New Audio Unit Extension Project
+##### Create a new Audio Unit extension project
 
 To create a new project in Xcode, choose File > New > Project. In the template chooser, select multiplatform. Scroll to the end of the template chooser and select the Audio Unit Extension App template under the Application section.
 
-![A screenshot of the Choose a template for your new project dialog in Xcode. It shows a section with the name Other, with the Audio Unit Extension App template selected.](/images/com.apple.avfaudio/updated-media-4093016@2x.png)
+![A screenshot of the Choose a template for your new project dialog in Xcode. It shows a section with the name Other, with the Audio Unit Extension App template selected.](https://developer.apple.com/tutorials/images/com.apple.avfaudio/updated-media-4093016@2x.png)
 
 After clicking Next, configure the options for the project — including choosing what kind of audio unit to generate.
 
-##### Configure the Project Options
+##### Configure the project options
 
 Configure the options for your new audio unit extension application. The template creates an extension and a host application for your audio unit.
 
-![A screenshot of the Choose options for your new project dialog in Xcode. The fields for Product Name, Team, Organization Name, Subtype Code, Manufacturer Code, Testing System, and Storage are empty. The Organization Identifier field contains com.examples. It shows a menu to select the Audio Unit Type, with Effect selected by default. It shows a User Interface menu, with Presents User Interface selected by default. Below the User Interface option, a checkbox for host in CloudKit is unchecked. At the bottom of the dialog, there are three buttons: Cancel, Previous, and Next. The Next button is grayed out. ](/images/com.apple.avfaudio/updated-media-4093019@2x.png)
+![A screenshot of the Choose options for your new project dialog in Xcode. The fields for Product Name, Team, Organization Name, Subtype Code, Manufacturer Code, Testing System, and Storage are empty. The Organization Identifier field contains com.examples. It shows a menu to select the Audio Unit Type, with Effect selected by default. It shows a User Interface menu, with Presents User Interface selected by default. Below the User Interface option, a checkbox for host in CloudKit is unchecked. At the bottom of the dialog, there are three buttons: Cancel, Previous, and Next. The Next button is grayed out. ](https://developer.apple.com/tutorials/images/com.apple.avfaudio/updated-media-4093019@2x.png)
 
 For an Audio Unit Extension App template, Xcode provides a starting point for the type of audio unit you’re creating.
 
@@ -37,11 +38,11 @@ Choose a subtype code that reflects the type of extension, and a manufacturer co
 
 If your extension doesn’t need a user interface, choose No User Interface; otherwise, Xcode creates a view for you to customize.
 
-##### Explore the Generated Extension Project
+##### Explore the generated extension project
 
 Xcode generates two targets for you — the host app and the extension. The template uses Swift and SwiftUI for the business logic and user interface, C++ for real-time processing, and Objective-C for interacting between Swift and C++.
 
-![A screenshot of the Xcode Project navigator showing a project with the name NewAU. The project is expanded and shows a host app group and NewAU Extension group, with the extension group expanded. The extension group contains expanded groups with the names Common, Parameters, DSP, and UI. The Common group shows an expanded Audio Unit group with a file named NewAUExtensionAudioUnit. The expanded Parameters group shows the files NewAUExtensionParameterAddresses and Parameters. The expanded DSP group shows the file NewAUExtensionDSPKernel. The expanded UI group shows the files NewAUExtensionMainView and ParameterSlider.](/images/com.apple.avfaudio/updated-media-4093014@2x.png)
+![A screenshot of the Xcode Project navigator showing a project with the name NewAU. The project is expanded and shows a host app group and NewAU Extension group, with the extension group expanded. The extension group contains expanded groups with the names Common, Parameters, DSP, and UI. The Common group shows an expanded Audio Unit group with a file named NewAUExtensionAudioUnit. The expanded Parameters group shows the files NewAUExtensionParameterAddresses and Parameters. The expanded DSP group shows the file NewAUExtensionDSPKernel. The expanded UI group shows the files NewAUExtensionMainView and ParameterSlider.](https://developer.apple.com/tutorials/images/com.apple.avfaudio/updated-media-4093014@2x.png)
 
 The Common group contains code — organized by functionality — that you rarely need to change. In the above image, the project name `NewAU` is prefixed to many files.
 
@@ -52,7 +53,7 @@ In most cases, you only need to edit the extension files within the top-level gr
 - **`NewAUExtensionDSPKernel.hpp`**: A class that handles the real-time aspects of the extension and is where you implement signal processing.
 - **`NewAUExtensionMainView.swift`**: A view you use to customize your user interface, if your audio unit presents one.
 
-##### Add a New Parameter Address
+##### Add a new parameter address
 
 The template project contains a parameter that allows you to adjust the audio gain. To add a signal parameter to the template project, navigate to `NewAUExtensionParameterAddress.h` and add it to the enumeration.
 
@@ -111,7 +112,8 @@ var body: some Value {
 
 ## See Also
 
-- [class AVAudioUnit](avaudiounit.md)
+### Audio Unit setup
+- [class AVAudioUnit](./avaudiounit.md)
   A subclass of the audio node class that, processes audio either in real time or nonreal time, depending on the type of the audio unit.
 
 

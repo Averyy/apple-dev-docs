@@ -1,6 +1,7 @@
 # Changing the Location of Particles in Your Scene
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Set a target node from which SpriteKit creates particles.
 
@@ -51,7 +52,8 @@ When an emitter has a target node, it calculates the position, velocity, and ori
 
 ## See Also
 
-- [var targetNode: SKNode?](skemitternode/targetnode.md)
+### Choosing Which Node in the Scene Emits Particles
+- [var targetNode: SKNode?](./skemitternode/targetnode.md)
   The target node that renders the emitter’s particles.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 

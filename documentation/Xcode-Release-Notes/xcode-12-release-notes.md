@@ -1,6 +1,7 @@
 # Xcode 12 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -14,19 +15,19 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
 - Documents can now be opened in their own tab, making it easy to quickly switch between files while maintaining the rest of Xcode’s configuration. Option-click or double-click to open a document in a tab. The tab bar appears when you have more than one document open, or you choose View > Always Show Tab Bar. (7954451)
 - Xcode now supports previewing widgets, App Clips, and content in Swift packages. For more seamless live previewing on device, Xcode installs the new Xcode Previews app for iOS 14 and iPadOS 14. (56388008)
-- The new [`LibraryContentProvider`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider) protocol gives you the ability to show your views and modifiers in Xcode’s library. (56423420)
+- The new [`LibraryContentProvider`](../DeveloperToolsSupport/librarycontentprovider.md) protocol gives you the ability to show your views and modifiers in Xcode’s library. (56423420)
 - Code completions have a new, focused user interface, making it easier to find a completion. Completions are also more accurate and up to 15 times faster in Xcode 12. (56087948, 58010475)
 
 ###### Resolved
 
 - Compilable code completions for SwiftUI APIs now correctly handle overloaded methods. (64037686)
-- Fixed an issue in Xcode 12 build 12A7208 which could cause build failures for iOS or tvOS apps using [`StoreKit`](https://developer.apple.com/documentation/storekit) or [`Authentication Services`](https://developer.apple.com/documentation/authenticationservices) with SwiftUI, when targeting simulated devices or using SwiftUI Previews. (68252534)
+- Fixed an issue in Xcode 12 build 12A7208 which could cause build failures for iOS or tvOS apps using [StoreKit](../StoreKit/StoreKit.md) or [Authentication Services](../AuthenticationServices/AuthenticationServices.md) with SwiftUI, when targeting simulated devices or using SwiftUI Previews. (68252534)
 
 ##### Apple Clang Compiler
 
 ###### New Features
 
-- Clang now warns about incorrect format strings that are specified in an [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) macro. (23622446) (FB5412403)
+- Clang now warns about incorrect format strings that are specified in an [`NSLocalizedString`](../Foundation/nslocalizedstring.md) macro. (23622446) (FB5412403)
 - The `std::is_scalar` trait is now true for Block types. This allows using blocks in new places like `std::optional`. (57892832)
 
 ###### Resolved
@@ -58,9 +59,13 @@ Xcode 12 includes SDKs for iOS 14, iPadOS 14, tvOS 14, watchOS 7, and macOS Cata
 
 ###### New Features
 
-- You can now use `momc` on the command line to generate Core Data code from your models. (58713955) For a list of available arguments, run: ```shell
-xcrun momc
-```
+- You can now use `momc` on the command line to generate Core Data code from your models. (58713955)
+
+  For a list of available arguments, run:
+
+  ```shell
+  xcrun momc
+  ```
 - XCFrameworks can now include `.dSYM` and `.bcsymbolmap` debugging symbol files in your library bundle with the `-debug-symbols` flag. Run the command `xcodebuild -create-xcframework -help` for additional usage information. (64910707)
 
 ###### Resolved
@@ -71,11 +76,13 @@ xcrun momc
 - When using `USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES` with `XCFileLists`, the items within are now properly treated as recursive inputs. (54635196) (FB7109342)
 - Fixed a bug that could cause tagged On-Demand Resources to be included in both an asset pack and the product. These resources are now only included in the asset pack. (59008757)
 - Input files for Run Script Phases are now tracked as inputs to code-signing tasks, allowing modifications to those files to properly trigger code signing on incremental builds. (59353913)
-- Fixed an issue that caused [`LSMinimumSystemVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsminimumsystemversion) in a macOS application’s `Info.plist` and [`MinimumOSVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/minimumosversion) on other platforms to be set to an earlier value than the deployment target of the build target. (62617478) (FB7681463)
+- Fixed an issue that caused [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) in a macOS application’s `Info.plist` and [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md) on other platforms to be set to an earlier value than the deployment target of the build target. (62617478) (FB7681463)
 
 ###### Known Issues
 
-- A newly-created iOS project using the Swift language may no longer build after enabling Mac Catalyst. (67885114) **Workaround**: Replace the  `@main` annotation on the App Delegate with `@UIApplicationMain`.
+- A newly-created iOS project using the Swift language may no longer build after enabling Mac Catalyst. (67885114)
+
+  **Workaround**: Replace the  `@main` annotation on the App Delegate with `@UIApplicationMain`.
 
 ###### Deprecations
 
@@ -88,7 +95,7 @@ xcrun momc
 
 - When you create a multi-platform app project with Core Data, Xcode now correctly uses the name of the project for its data model. (67534882) (FB8483330)
 
-##### Core Ml
+##### Core ML
 
 ###### Known Issues
 
@@ -107,19 +114,29 @@ xcrun momc
 - Reorder breakpoint actions by dragging and dropping them into a different position in the Breakpoint Editor. (9777468)
 - The new Enable Breakpoint at Current Line and Disable Breakpoint at Current Line menu item lets you toggle an existing breakpoint in your code. In addition, you can bind a keyboard shortcut to that menu item to toggle the breakpoint quickly. (17924697)
 - You can now name a breakpoint, and reference it by name from another breakpoint’s action. For example, to enable a previously disabled breakpoint called “MyBreakpoint”, type `break enable MyBreakpoint` in an action’s Debugger Command field. (25739693)
-- When paused in the debugger, stepping out of a block will unwind and land in a frame with debug symbol. To land in disassembly, hold the control key while clicking on the Step Over or Step Out control. (29482033)
+- When paused in the debugger, stepping out of a block will unwind and land in a frame with debug symbol.
+
+  To land in disassembly, hold the control key while clicking on the Step Over or Step Out control. (29482033)
 - Besides showing you the paused line in the editor, Xcode indicates the column where the process is paused. This is helpful in knowing when to step in, analyzing crash reports, and locating yourself in code with multiple closures. (31197308)
 - You can now specify a path for the LLDB init file to use in a Run and Test action. Configure this path in the Info tab of a scheme’s Run or Test action. The path can contain a build settings macro such as `${SRCROOT}`, so the file can be part of a project. (38677796) (FB5425738)
 - Xcode debugger annotations will highlight source code with greater opacity to improve visibility in several Xcode themes. (53463745)
 - The view debugger identifies runtime issues and presents optimization opportunities to improve the efficiency and responsiveness of the UI. The Debug navigator presents the suggestions when you debug the view hierarchy of an app. (56552710)
-- To debug a Widget Extension, run the extension’s scheme. Set environment variables in the Arguments pane of the widget extension’s scheme to configure the debugging session. Widgets support one or more families, or sizes. To select the family to use when debugging, set the `_XCWidgetFamily` environment variable to `small`, `medium`, or `large`. If the extension uses [`WidgetBundle`](https://developer.apple.com/documentation/swiftui/widgetbundle) to support multiple widgets, you can choose which one to debug by setting the `_XCWidgetKind` environment variable to match the `kind` property of the widget’s configuration. On macOS, you can specify the WidgetKit Simulator’s default view by setting the `_XCWidgetDefaultView` environment variable to `timeline`, `snapshot`, `placeholder`, or `info`. (57059772, 63777618)
+- To debug a Widget Extension, run the extension’s scheme. Set environment variables in the Arguments pane of the widget extension’s scheme to configure the debugging session. Widgets support one or more families, or sizes. To select the family to use when debugging, set the `_XCWidgetFamily` environment variable to `small`, `medium`, or `large`. If the extension uses [`WidgetBundle`](../SwiftUI/widgetbundle.md) to support multiple widgets, you can choose which one to debug by setting the `_XCWidgetKind` environment variable to match the `kind` property of the widget’s configuration. On macOS, you can specify the WidgetKit Simulator’s default view by setting the `_XCWidgetDefaultView` environment variable to `timeline`, `snapshot`, `placeholder`, or `info`. (57059772, 63777618)
 - The view debugger now supports saving and reopening view hierarchy snapshots. After you capture a view hierarchy with the Debug View Hierarchy button in the debug bar, you can choose File > Export View Hierarchy to save it as a `.viewhierarchy` file. You can reopen the saved `.viewhierarchy` in Xcode to inspect the state of the view hierarchy as captured. (57933113)
-- When a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer) is selected in the view debugger, the Object inspector now displays explanatory tooltips on Offscreen Flags and Group Flags. (58647887)
+- When a [`CALayer`](../QuartzCore/calayer.md) is selected in the view debugger, the Object inspector now displays explanatory tooltips on Offscreen Flags and Group Flags. (58647887)
 - If you have disabled breakpoints in the Breakpoint Navigator, you can use the contextual menu to delete all the disabled breakpoints. (59164503)
 - Debug App Clips using the scheme created for the App Clip. In the scheme the environment variable `_XCAppClipURL` can be used to set the App Clip experience URL for the debugging session. (59404002)
-- The view debugger now generates runtime issues for performance Optimization Opportunities for [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer). Choose Editor > Show Layers to view CALayers in the view debugger. Choose Editor > Show Optimization Opportunities to show or hide performance runtime issues. (60103476)
-- Xcode 12 now encrypts the connection between Xcode and paired devices, protecting against an attacker in a privileged network position executing arbitrary code on connected iOS, iPadOS, watchOS, or tvOS devices during a remote debug session. (60386733) These security benefits are available when Xcode 12 connects to devices running iOS 14, iPadOS 14, watchOS 7, tvOS 14, or later versions. These OS versions also refuse debugger connections from older Xcode releases. Xcode 12 continues to support debugging for older OS versions, but without the new encryption. If you’re unable to upgrade to Xcode 12 or need to continue development on devices running older OS versions, you can help protect yourself with either of the following measures: - Connect Xcode to your devices over private and secured networks (including a direct connection); or
-- Physically connect your device to the Mac running Xcode using a cable, and ensure that the “Connect via Network” checkbox in the Xcode Devices and Simulators Window is unselected for these devices. For more information about the security content of this update, see [`Apple security updates`](https://developer.apple.comhttps://support.apple.com/en-us/HT201222).
+- The view debugger now generates runtime issues for performance Optimization Opportunities for [`CALayer`](../QuartzCore/calayer.md). Choose Editor > Show Layers to view CALayers in the view debugger. Choose Editor > Show Optimization Opportunities to show or hide performance runtime issues. (60103476)
+- Xcode 12 now encrypts the connection between Xcode and paired devices, protecting against an attacker in a privileged network position executing arbitrary code on connected iOS, iPadOS, watchOS, or tvOS devices during a remote debug session. (60386733)
+
+  These security benefits are available when Xcode 12 connects to devices running iOS 14, iPadOS 14, watchOS 7, tvOS 14, or later versions. These OS versions also refuse debugger connections from older Xcode releases. Xcode 12 continues to support debugging for older OS versions, but without the new encryption.
+
+  If you’re unable to upgrade to Xcode 12 or need to continue development on devices running older OS versions, you can help protect yourself with either of the following measures:
+
+  - Connect Xcode to your devices over private and secured networks (including a direct connection); or
+  - Physically connect your device to the Mac running Xcode using a cable, and ensure that the “Connect via Network” checkbox in the Xcode Devices and Simulators Window is unselected for these devices.
+
+  For more information about the security content of this update, see [Apple security updates](https://support.apple.com/en-us/HT201222).
 - Debug > Attach to Process and Debug > Detach are now in the middle of the menu, closer to the rest of the debug menu items. (60390611)
 - View hierarchies captured with Xcode can now be exported to `.viewhierarchy` files. (61065771)
 - The ClockKit framework generates Runtime Issues in Xcode, to help you analyze runtime bugs. (61346475)
@@ -136,7 +153,9 @@ xcrun momc
 ###### Known Issues
 
 - Xcode may crash when opening a debug gauge. (64181692)
-- Debugging a Widget on iOS 14 doesn’t launch the extension, or the debugger doesn’t attach to the Widget. (64274027, 66920094) **Workaround**: Delete the Widget from the Home screen, clean the project, then build and run again.
+- Debugging a Widget on iOS 14 doesn’t launch the extension, or the debugger doesn’t attach to the Widget. (64274027, 66920094)
+
+  **Workaround**: Delete the Widget from the Home screen, clean the project, then build and run again.
 
 ##### Devices
 
@@ -147,11 +166,19 @@ xcrun momc
 
 ###### Known Issues
 
-- You can’t debug a WatchKit App when an App Clip is added to its paired iOS App, if that iOS App isn’t installed. (65784374) (FB8065876) **Workaround**: Set “Supports Running Without iOS App Installation” in the General settings for the WatchKit App Extension’s build target.
-- On macOS 11, Xcode may crash when you click the “View Device Logs” button for a device you select in the Devices and Simulators window. (66303792) **Workaround**: Xcode copies logs from connected mobile devices to a local directory. For information about how to manually retrieve crash and energy logs, see [`Find device crash and energy logs on a Mac or Windows computer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev0f3181c2c). To retrieve other types of logs, use the workflows described in [`Acquiring crash reports and diagnostic logs`](https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs).
-- On macOS 11, Xcode may crash when you open the Devices and Simulators window. (66932201, 67336055) **Workaround**: Make sure that you have trusted all mobile devices paired with the Mac, physically disconnect any devices that you don’t wish to use for development, and set “Show scroll bars” to Always in the General pane of System Preferences.
+- You can’t debug a WatchKit App when an App Clip is added to its paired iOS App, if that iOS App isn’t installed. (65784374) (FB8065876)
+
+  **Workaround**: Set “Supports Running Without iOS App Installation” in the General settings for the WatchKit App Extension’s build target.
+- On macOS 11, Xcode may crash when you click the “View Device Logs” button for a device you select in the Devices and Simulators window. (66303792)
+
+  **Workaround**: Xcode copies logs from connected mobile devices to a local directory. For information about how to manually retrieve crash and energy logs, see [Find device crash and energy logs on a Mac or Windows computer](https://help.apple.com/xcode/mac/current/#/dev0f3181c2c). To retrieve other types of logs, use the workflows described in [Acquiring crash reports and diagnostic logs](../Xcode/acquiring-crash-reports-and-diagnostic-logs.md).
+- On macOS 11, Xcode may crash when you open the Devices and Simulators window. (66932201, 67336055)
+
+  **Workaround**: Make sure that you have trusted all mobile devices paired with the Mac, physically disconnect any devices that you don’t wish to use for development, and set “Show scroll bars” to Always in the General pane of System Preferences.
 - Xcode may crash when unpairing a device in the Devices and Simulators window. (68156364)
-- Downloading watchOS symbols may take longer than expected. (68316765) **Workaround**: If the symbol data isn’t populating, quit and restart Xcode to retry downloading.
+- Downloading watchOS symbols may take longer than expected. (68316765)
+
+  **Workaround**: If the symbol data isn’t populating, quit and restart Xcode to retry downloading.
 
 ##### Documentation Viewer
 
@@ -193,24 +220,24 @@ xcrun momc
 
 ###### New Features
 
-- Added support for the new [`safeAreaLayoutGuide`](https://developer.apple.com/documentation/appkit/nsview/safearealayoutguide) on [`NSView`](https://developer.apple.com/documentation/appkit/nsview) introduced in macOS 11. (16915977)
+- Added support for the new [`safeAreaLayoutGuide`](../AppKit/nsview/safearealayoutguide.md) on [`NSView`](../AppKit/nsview.md) introduced in macOS 11. (16915977)
 - Interface Builder’s canvas has a new minimap. You can show and hide the minimap with Editor > Canvas > Minimap. Drag the minimap to any corner of the canvas. You can also double-click or command-click in the minimap to focus on a specific scene. (19218249, 63831585) (FB5891904)
 - Find and Replace now includes matches in attributed string literals. (21508424)
-- Interface Builder now has a Current Date option for [`NSDatePicker`](https://developer.apple.com/documentation/appkit/nsdatepicker). (56048031)
-- Interface Builder now supports the two-column and three-column styles for [`UISplitViewController`](https://developer.apple.com/documentation/uikit/uisplitviewcontroller) introduced in iOS 14. (57025285)
+- Interface Builder now has a Current Date option for [`NSDatePicker`](../AppKit/nsdatepicker.md). (56048031)
+- Interface Builder now supports the two-column and three-column styles for [`UISplitViewController`](../UIKit/uisplitviewcontroller.md) introduced in iOS 14. (57025285)
 - Standard spacing constraints are now created by default when items are positioned a standard distance from each other. (57057604)
 - Added support for SF Symbols in macOS 11. (58480276)
-- Added support for the new [`isNavigational`](https://developer.apple.com/documentation/appkit/nstoolbaritem/isnavigational) toolbar item property in macOS 11. (58584394)
-- Added support for [`UIButton.ButtonType.close`](https://developer.apple.com/documentation/uikit/uibutton/buttontype-swift.enum/close). (59211094)
-- Added support for [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) and [`NSTextField`](https://developer.apple.com/documentation/appkit/nstextfield) new content type property in macOS 11. (59273897)
-- Added support for the new [`toolbarStyle`](https://developer.apple.com/documentation/appkit/nswindow/toolbarstyle-swift.property) in macOS 11. (59274307)
-- Added support for the new [`subtitle`](https://developer.apple.com/documentation/appkit/nswindow/subtitle) property in macOS 11. (59274358)
-- Added support for the new [`NSSearchToolbarItem`](https://developer.apple.com/documentation/appkit/nssearchtoolbaritem) in macOS 11. (59277905)
+- Added support for the new [`isNavigational`](../AppKit/nstoolbaritem/isnavigational.md) toolbar item property in macOS 11. (58584394)
+- Added support for [`UIButton.ButtonType.close`](../UIKit/uibutton/buttontype-swift.enum/close.md). (59211094)
+- Added support for [`NSTextView`](../AppKit/nstextview.md) and [`NSTextField`](../AppKit/nstextfield.md) new content type property in macOS 11. (59273897)
+- Added support for the new [`toolbarStyle`](../AppKit/nswindow/toolbarstyle-swift.property.md) in macOS 11. (59274307)
+- Added support for the new [`subtitle`](../AppKit/nswindow/subtitle.md) property in macOS 11. (59274358)
+- Added support for the new [`NSSearchToolbarItem`](../AppKit/nssearchtoolbaritem.md) in macOS 11. (59277905)
 - Added support for selecting text styles in macOS 11. (59297807)
 - You can now edit the Render Mode and Symbol Scale of SF Symbols for storyboard and `.xib` files. When you select an SF Symbol in the image picker, two additional properties expand below the image name. To display SF Symbols that support full color, set the Render Mode to Original. (61844681, 63280118)
-- Added support for the new  [`NSTableView.Style`](https://developer.apple.com/documentation/appkit/nstableview/style-swift.enum) with Automatic, Full Width, Inset, and Source List options. (61958249)
-- Added support for new UISwitch properties, [`preferredStyle`](https://developer.apple.com/documentation/uikit/uiswitch/preferredstyle) and [`title`](https://developer.apple.com/documentation/uikit/uiswitch/title). (62320185)
-- Added support for the new [`NSView`](https://developer.apple.com/documentation/appkit/nsview) Layout Margins Guide. (62908200)
+- Added support for the new  [`NSTableView.Style`](../AppKit/nstableview/style-swift.enum.md) with Automatic, Full Width, Inset, and Source List options. (61958249)
+- Added support for new UISwitch properties, [`preferredStyle`](../UIKit/uiswitch/preferredstyle.md) and [`title`](../UIKit/uiswitch/title.md). (62320185)
+- Added support for the new [`NSView`](../AppKit/nsview.md) Layout Margins Guide. (62908200)
 - The Objects library contains a new Window Controller with Sidebar object, composed of a window controller and split view controller configured to provide a toolbar, sidebar, and full-size content view with safe area layout guides enabled. (63045604)
 
 ###### Resolved
@@ -218,13 +245,15 @@ xcrun momc
 - Fixed a bug where `IBDesignable` views weren’t using the intrinsic content size the first time Interface Builder displays the storyboard or `.xib`. (23234553) (FB5797024)
 - Fixed an issue that would sometimes omit iOS text styles from the inspectors. (51854358) (FB6169763)
 - When an `IBDesignable` view fails to build, there is now an error directly on the view in canvas. Clicking the error icon on the IBDesignable property in the Identity inspector, now provides a popup that displays the error for easier debugging. (56408987)
-- Storyboards and `.xib` files will now use the intrinsic content size provided by an `IBDesignable` view when overriding [`intrinsicContentSize`](https://developer.apple.com/documentation/appkit/nsview/intrinsiccontentsize) on an `NSView`. (56419405)
-- Fixed a bug where the Spell Checking property was ignored on [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview). (60750116) (FB7636246)
+- Storyboards and `.xib` files will now use the intrinsic content size provided by an `IBDesignable` view when overriding [`intrinsicContentSize`](../AppKit/nsview/intrinsiccontentsize.md) on an `NSView`. (56419405)
+- Fixed a bug where the Spell Checking property was ignored on [`UITextView`](../UIKit/uitextview.md). (60750116) (FB7636246)
 - Fixed an issue where images with Preserves Vector Representation enabled wouldn’t correctly display light or dark variants in the canvas. (61243894) (FB7649981)
-- Improved options of the Layout property of a View in the Size inspector, for greater clarity. (61561405) - The Automatic option is now named Inferred, and indicates whether the view is using constraints or an autoresizing mask. A view whose Layout is Inferred uses Translates Autoresizing Mask Into Constraints of `false` when the view is using constraints or is in an Auto Layout container, such as an [`NSStackView`](https://developer.apple.com/documentation/appkit/nsstackview) or [`UIStackView`](https://developer.apple.com/documentation/uikit/uistackview). Otherwise, it uses autoresizing masks and Translates Auto Resizing Mask Into Constraints of `true`.
-- Translates Auto Resizing Mask Into Constraints is always `true` for a view whose Layout is Autoresizing Masks.
+- Improved options of the Layout property of a View in the Size inspector, for greater clarity. (61561405)
+
+  - The Automatic option is now named Inferred, and indicates whether the view is using constraints or an autoresizing mask. A view whose Layout is Inferred uses Translates Autoresizing Mask Into Constraints of `false` when the view is using constraints or is in an Auto Layout container, such as an [`NSStackView`](../AppKit/nsstackview.md) or [`UIStackView`](../UIKit/uistackview.md). Otherwise, it uses autoresizing masks and Translates Auto Resizing Mask Into Constraints of `true`.
+  - Translates Auto Resizing Mask Into Constraints is always `true` for a view whose Layout is Autoresizing Masks.
 - Fixed a crash that could happen when using Image Stacks in tvOS storyboards. (62113733) (FB7671430)
-- Fixed some performance issues with [`NSTabView`](https://developer.apple.com/documentation/appkit/nstabview) and hidden views in a storyboard or `.xib` canvas. (63008369, 64314634)
+- Fixed some performance issues with [`NSTabView`](../AppKit/nstabview.md) and hidden views in a storyboard or `.xib` canvas. (63008369, 64314634)
 
 ###### Known Issues
 
@@ -232,7 +261,7 @@ xcrun momc
 
 ###### Deprecations
 
-- Interface Builder no longer provides access to the Can Draw Concurrently property. You may still configure this behavior in code with [`canDrawConcurrently`](https://developer.apple.com/documentation/appkit/nsview/candrawconcurrently). (42437767)
+- Interface Builder no longer provides access to the Can Draw Concurrently property. You may still configure this behavior in code with [`canDrawConcurrently`](../AppKit/nsview/candrawconcurrently.md). (42437767)
 - QTCaptureView and QTMovieView are deprecated and no longer supported. Remove these views from storyboards and `.xib` files. (64263402)
 
 ##### Linking
@@ -272,7 +301,9 @@ xcrun momc
 
 ###### Known Issues
 
-- Exporting a watchOS application for ad-hoc or development distribution may fail when using Xcode 12 and thinning for “all compatible device variants.” (66637482) **Workaround**: Don’t thin, or choose a specific target device.
+- Exporting a watchOS application for ad-hoc or development distribution may fail when using Xcode 12 and thinning for “all compatible device variants.” (66637482)
+
+  **Workaround**: Don’t thin, or choose a specific target device.
 
 ##### Playgrounds
 
@@ -294,7 +325,9 @@ xcrun momc
 
 ###### Known Issues
 
-- Xcode may show the text “No Editor”, instead of opening the source editor of a Playground immediately after creating it. (56484197) **Workaround**: Use View > Navigators > Project to reveal the Project Navigator, then select the Playground manually.
+- Xcode may show the text “No Editor”, instead of opening the source editor of a Playground immediately after creating it. (56484197)
+
+  **Workaround**: Use View > Navigators > Project to reveal the Project Navigator, then select the Playground manually.
 
 ##### Previews
 
@@ -304,20 +337,20 @@ xcrun momc
 - Each preview now has buttons to start Live Preview, Preview on Device, Inspect Preview, and Duplicate Preview. (47472549)
 - The canvas has a new integrated experience for adding modifiers. Click the Inspect Preview button to see modifier recommendations for the selected view and search for the modifier you want to apply. (51696163)
 - Code completion now inserts a compilable completion and example for SwiftUI views and modifiers. (55455037)
-- Xcode supports previewing widgets. For an example of how to configure a widget preview, see [`WidgetPreviewContext`](https://developer.apple.com/documentation/widgetkit/widgetpreviewcontext). (56390347)
+- Xcode supports previewing widgets. For an example of how to configure a widget preview, see [`WidgetPreviewContext`](../WidgetKit/widgetpreviewcontext.md). (56390347)
 - The Attributes inspector now offers quick actions for editing the name, device, layout, preferred color scheme, and accessibility text size of a selected preview. (56413241)
 - Xcode Previews now supports previewing views in frameworks on-device if the framework is linked by an app in the selected scheme. (57025579)
-- Xcode now supports previewing SwiftUI watchOS complications by adding the [`previewContext(_:)`](https://developer.apple.com/documentation/swiftui/view/previewcontext(_:)) modifier to a watchOS complication. (57848297)
+- Xcode now supports previewing SwiftUI watchOS complications by adding the [`previewContext(_:)`](../SwiftUI/view/previewcontext%28_%29.md) modifier to a watchOS complication. (57848297)
 - Xcode now supports previews for App Clips. (59227941)
 - Xcode now connects with the new Xcode Previews app for iOS 14 and iPadOS 14 for greatly improved on-device previews. The Xcode Previews app seamlessly displays changes from Xcode Previews on devices. The first time you use on-device previews, the Xcode Previews app appears on your device’s Home screen. Launching Xcode Previews on a device after disconnecting from Xcode restores the last-displayed preview. (59631753)
 - Double-clicking a view in a preview now selects the corresponding code and moves keyboard focus to the source editor, allowing for quick editing of a view’s contents. (60171349)
 - The bottom bar of the canvas now contains a button for quickly inspecting the selected view. (62990297)
-- Add custom SwiftUI views and modifiers to the Xcode library using the new [`LibraryContentProvider`](https://developer.apple.com/documentation/developertoolssupport/librarycontentprovider) protocol. (63154504)
+- Add custom SwiftUI views and modifiers to the Xcode library using the new [`LibraryContentProvider`](../DeveloperToolsSupport/librarycontentprovider.md) protocol. (63154504)
 
 ###### Resolved
 
 - Packages that contain previews can now update without fully rebuilding the active scheme. (51030302)
-- Rebuilding against the iOS 14, macOS 11, watchOS 7, and tvOS 14 SDKs changes uses of [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader) to reliably top-leading align the views inside the [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader). This was the previous behavior, *except* when it wasn’t possible to detect a single static view inside the [`GeometryReader`](https://developer.apple.com/documentation/swiftui/geometryreader). (59722992) (FB7597816)
+- Rebuilding against the iOS 14, macOS 11, watchOS 7, and tvOS 14 SDKs changes uses of [`GeometryReader`](../SwiftUI/geometryreader.md) to reliably top-leading align the views inside the [`GeometryReader`](../SwiftUI/geometryreader.md). This was the previous behavior, *except* when it wasn’t possible to detect a single static view inside the [`GeometryReader`](../SwiftUI/geometryreader.md). (59722992) (FB7597816)
 
 ###### Known Issues
 
@@ -378,21 +411,27 @@ xcrun momc
 
 ###### New Features
 
-- App Clips can use the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework and [`Hotspot Configuration Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.hotspotconfiguration) to configure Wi-Fi networks. (64966949)
-- Xcode 12 lets you build your iOS app for running on Macs with Apple silicon. Make sure you’ve registered your Mac with Apple silicon’s hardware identifier (available in the System Information app’s Hardware > Provisioning UDID field) in your account on [`https://developer.apple.com/account`](https://developer.apple.comhttps://developer.apple.com/account), find the archive in the Organizer window, click on Distribute App, select either “Ad Hoc” or “Development,” choose your distribution options, select “Automatically manage signing,” and proceed through the remainder of the distribution assistant to create an IPA. Once you’ve created the IPA, you can transfer it to your Mac with Apple silicon, and double-click on it to install. During the app’s first launch, you will be prompted to open the Security & Privacy preferences pane to enable the app. To see the launch button in the preferences pane, make sure your Mac is configured to only allow apps from the App Store and identified developers. (68513041, 68528315).
+- App Clips can use the [Network Extension](../NetworkExtension/NetworkExtension.md) framework and [`Hotspot Configuration Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.hotspotconfiguration.md) to configure Wi-Fi networks. (64966949)
+- Xcode 12 lets you build your iOS app for running on Macs with Apple silicon. Make sure you’ve registered your Mac with Apple silicon’s hardware identifier (available in the System Information app’s Hardware > Provisioning UDID field) in your account on [https://developer.apple.com/account](https://developer.apple.com/account), find the archive in the Organizer window, click on Distribute App, select either “Ad Hoc” or “Development,” choose your distribution options, select “Automatically manage signing,” and proceed through the remainder of the distribution assistant to create an IPA. Once you’ve created the IPA, you can transfer it to your Mac with Apple silicon, and double-click on it to install. During the app’s first launch, you will be prompted to open the Security & Privacy preferences pane to enable the app. To see the launch button in the preferences pane, make sure your Mac is configured to only allow apps from the App Store and identified developers. (68513041, 68528315).
 
 ###### Known Issues
 
 - App Clips can’t access Wallet passes with the Pass Type IDs Entitlement. However, App Clips can determine whether a specific pass is already present in Wallet and prompt the user to add a pass if necessary. If you’ve already added the Wallet capability to an App Clip target, you may not be able to build or submit your app to App Store Connect. Remove the Wallet capability in the target editor’s Signing & Capabilities pane and disable or delete any code that makes use of this removed feature. (65244156)
-- Xcode automatic signing may not automatically include Macs with Apple silicon in your provisioning profile when exporting an archive. (66857321) **Workaround**: If Xcode produces an IPA that doesn’t install on your registered Macs, remove any Ad Hoc Distribution or Development provisioning profiles from the ~/Library/MobileDevice/Provisioning Profiles directory before exporting your archive.
-- Open source software you previously built on the Apple silicon Developer Transition Kit may no longer run, due to code-signing errors. (68226054) **Workaround**: Re-build the software with Xcode 12, or re-sign the software with `codesign -s - --preserve-metadata=identifier,entitlements,flags,runtime -f <path to mach-O>`.
+- Xcode automatic signing may not automatically include Macs with Apple silicon in your provisioning profile when exporting an archive. (66857321)
+
+  **Workaround**: If Xcode produces an IPA that doesn’t install on your registered Macs, remove any Ad Hoc Distribution or Development provisioning profiles from the ~/Library/MobileDevice/Provisioning Profiles directory before exporting your archive.
+- Open source software you previously built on the Apple silicon Developer Transition Kit may no longer run, due to code-signing errors. (68226054)
+
+  **Workaround**: Re-build the software with Xcode 12, or re-sign the software with `codesign -s - --preserve-metadata=identifier,entitlements,flags,runtime -f <path to mach-O>`.
 
 ##### Simulator
 
 ###### New Features
 
 - Simulator can display a simulated device in full-screen mode, or tile its window alongside Xcode. (32866357)
-- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876) > **Note**: Projects must be 64-bit clean in Simulator on Macs with Apple silicon, which don’t support 32-bit code.
+- Simulated watchOS 7 devices support 64-bit processes. To verify watchOS projects are 64-bit clean in Simulator, make sure `ARCHS` is set to its default value. (54654060, 66352876)
+
+  > **Note**: Projects must be 64-bit clean in Simulator on Macs with Apple silicon, which don’t support 32-bit code.
 - Window > Stay On Top keeps device windows in front of other application windows. (57060945) (FB7439463)
 - When a device window loses focus, it pauses capturing input events from Send Pointer to Device and Send Keyboard Input to Device until Simulator regains focus. (57351155)
 - Simulator defaults to the internal microphone unless you explicitly choose a different audio source. This avoids triggering phone call mode on Bluetooth headsets, which degrades audio quality while listening to music. (59338925, 59803381)
@@ -407,13 +446,17 @@ xcrun momc
 - When entering keyboard- or pointer-capture mode with keys held down Simulator no longer leaves those keys stuck in macOS. When exiting capture mode the correct left or right key-up event is delivered to the guest to prevent it from thinking a modifier key is stuck. (60174685)
 - Simulator no longer creates default devices in custom device sets, restoring the behavior of Xcode 11.3. (63750578) (FB7717786)
 - Fixed a bug where launching apps in Simulator while Simulator is already running sometimes failed with an error of “Timed out waiting for Simulator.app to become ready”. (64508635)
-- Fixed an issue which prevented Xcode from compiling a project for a simulated watchOS device if the project used [`SignInWithAppleButton`](https://developer.apple.com/documentation/authenticationservices/signinwithapplebutton). The error message was “Cannot find ‘SignInWithAppleButton’ in scope”. This occured even if the project imported [`SwiftUI`](https://developer.apple.com/documentation/swiftui) and [`Authentication Services`](https://developer.apple.com/documentation/authenticationservices). (67817241)
+- Fixed an issue which prevented Xcode from compiling a project for a simulated watchOS device if the project used [`SignInWithAppleButton`](../AuthenticationServices/signinwithapplebutton.md). The error message was “Cannot find ‘SignInWithAppleButton’ in scope”. This occured even if the project imported [SwiftUI](../SwiftUI/SwiftUI.md) and [Authentication Services](../AuthenticationServices/AuthenticationServices.md). (67817241)
 
 ###### Known Issues
 
-- When simulating a push notification in Simulator with the `content-available` key set, the system calls [`application(_:performFetchWithCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:performfetchwithcompletionhandler:)) instead of [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:)). (60426170, 60974170) (FB7625283)
-- Activating Display Zoom on a simulated 12.9” iPad Pro distorts the simulated device’s display. (67455180) **Workaround**: Restart the simulated device to return to normal display.
-- If you enable or disable zoom mode while CarPlay is enabled, attempts to interact with CarPlay will cause a partial restart of the simulated iOS device. (67534104) **Workaround**: Close the CarPlay window, then re-enable or re-disable CarPlay.
+- When simulating a push notification in Simulator with the `content-available` key set, the system calls [`application(_:performFetchWithCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,performfetchwithcompletionhandler%29.md) instead of [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md). (60426170, 60974170) (FB7625283)
+- Activating Display Zoom on a simulated 12.9” iPad Pro distorts the simulated device’s display. (67455180)
+
+  **Workaround**: Restart the simulated device to return to normal display.
+- If you enable or disable zoom mode while CarPlay is enabled, attempts to interact with CarPlay will cause a partial restart of the simulated iOS device. (67534104)
+
+  **Workaround**: Close the CarPlay window, then re-enable or re-disable CarPlay.
 
 ###### Deprecations
 
@@ -444,7 +487,7 @@ xcrun momc
 - Fixed an issue where editing a file outside of Xcode would cause Xcode to crash on launch. (58272739)
 - Fixed issues where Xcode wouldn’t properly save edits to `Date` and `Data` values in property list files. (58836269)
 - Improved the display order in code completion to prioritize symbols matching parameter types. (59066628)
-- [`Callable values of user-defined nominal types`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md) is now supported in Swift code completion. Code completion shows the calling signature after a base expression followed by an opening parenthesis. (59302416)
+- [Callable values of user-defined nominal types](https://github.com/apple/swift-evolution/blob/master/proposals/0253-callable.md) is now supported in Swift code completion. Code completion shows the calling signature after a base expression followed by an opening parenthesis. (59302416)
 - A breakpoint hidden within multiple code folds now correctly expands the folded code when the debugger hits it or when it’s selected in the Breakpoint navigator. (59445409)
 - Fixed an issue where folding code would sometimes cause a crash. (60170676)
 - Fixed an issue where Xcode would hang after multiple large refactors. (61749114)
@@ -453,187 +496,277 @@ xcrun momc
 
 ###### Known Issues
 
-- A new Xcode Source Editor Extension target doesn’t automatically set up embedding `XcodeKit.framework` in the extension. (59274389) **Workaround**: Embed `XcodeKit.framework` in the extension manually.
+- A new Xcode Source Editor Extension target doesn’t automatically set up embedding `XcodeKit.framework` in the extension. (59274389)
+
+  **Workaround**: Embed `XcodeKit.framework` in the extension manually.
 
 ###### Deprecations
 
 - For compatibility with new security features in macOS 11, Xcode extensions must be built using Xcode 12 and must embed `XcodeKit.framework`. An Xcode extension rebuilt with these tools remains compatible with older versions of Xcode and macOS. (51822755)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- Xcode 12 supports testing in-app purchases directly in Simulator or on a connected device, using a new local [`StoreKit`](https://developer.apple.com/documentation/storekit) test environment. Configure in-app purchase information locally for testing, before setting it up in App Store Connect and without a connection to App Store servers. For more information on getting started, see [`Testing Apple In-App Purchases in Xcode`](https://developer.apple.com/documentation/storekit/testing-in-app-purchases-in-xcode) and [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode). The test environment supports early development, unit testing, and debugging in-app purchases, as described in [`Testing at all stages of development with Xcode and the sandbox`](https://developer.apple.com/documentation/storekit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox). Use the [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) framework to create and automate tests for handling in-app purchase transactions. [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) supports comprehensive testing of in-app purchase scenarios, including changes in subscription status, subscription offers, restore purchases, ask to buy, interrupted purchases, and more. Control the test environment, including clearing purchase history, resetting offer eligibility, and speeding up the renewal rate of time for testing subscriptions. (56504988)
+- Xcode 12 supports testing in-app purchases directly in Simulator or on a connected device, using a new local [StoreKit](../StoreKit/StoreKit.md) test environment.
+
+  Configure in-app purchase information locally for testing, before setting it up in App Store Connect and without a connection to App Store servers. For more information on getting started, see [Testing Apple In-App Purchases in Xcode](../StoreKit/testing-in-app-purchases-in-xcode.md) and [Setting up StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md). The test environment supports early development, unit testing, and debugging in-app purchases, as described in [Testing at all stages of development with Xcode and the sandbox](../StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
+
+  Use the [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework to create and automate tests for handling in-app purchase transactions. [StoreKit Test](../StoreKitTest/StoreKitTest.md) supports comprehensive testing of in-app purchase scenarios, including changes in subscription status, subscription offers, restore purchases, ask to buy, interrupted purchases, and more.
+
+  Control the test environment, including clearing purchase history, resetting offer eligibility, and speeding up the renewal rate of time for testing subscriptions. (56504988)
 
 ###### Known Issues
 
-- Xcode crashes when selecting “Subscription Options” in the [`StoreKit`](https://developer.apple.com/documentation/storekit) transaction manager. (68354368) **Workaround**: Use the [`StoreKit Test`](https://developer.apple.com/documentation/storekittest) framework to test downgrading, cross-grading, or upgrading a subscription.
+- Xcode crashes when selecting “Subscription Options” in the [StoreKit](../StoreKit/StoreKit.md) transaction manager. (68354368)
+
+  **Workaround**: Use the [StoreKit Test](../StoreKitTest/StoreKitTest.md) framework to test downgrading, cross-grading, or upgrading a subscription.
 
 ##### Swift
 
 ###### New Features
 
 - Improved indentation for chained method calls, especially those that involve nested or trailing closures. (25519439) (FB5472851)
-- Improved the error message when using SwiftUI’s [`List`](https://developer.apple.com/documentation/swiftui/list) initializer that takes a collection of identifiable data with an element type that doesn’t conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable). (51519565) (FB6130940) For example, the following code: ```swift
-import SwiftUI
+- Improved the error message when using SwiftUI’s [`List`](../SwiftUI/list.md) initializer that takes a collection of identifiable data with an element type that doesn’t conform to [`Identifiable`](../Swift/identifiable.md). (51519565) (FB6130940)
 
-struct NotIdentifiable {}
+  For example, the following code:
 
-let data: [NotIdentifiable] = []
+  ```swift
+  import SwiftUI
 
-List(data) { _ in
-    Text("Row")
-}
-``` now produces the error message: ```text
-error: initializer 'init(_:rowContent:)' requires 'NotIdentifiable' conform to 'Identifiable'
-List(data) { _ in
-^
-```
-- Swift indentation now column-aligns conditions in `guard` and `if` statements. (53131527) (FB6688335) For example: ```swift
-guard let x = someOptional,
-      let y = anotherOptional else {
-  // ...
-}
-```
-- The compiler now diagnoses exclusivity violations within code that computes the `default` argument during [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary) access. ([`SR-11700`](https://developer.apple.comhttps://bugs.swift.org/browse/SR-11700), 56378713) ```swift
-struct Container {
-  static let defaultKey = 0
+  struct NotIdentifiable {}
 
-  var dictionary = [defaultKey:0]
+  let data: [NotIdentifiable] = []
 
-  mutating func incrementValue(at key: Int) {
-    dictionary[key, default: dictionary[Container.defaultKey]!] += 1
+  List(data) { _ in
+      Text("Row")
   }
-}
-// error: overlapping accesses to 'self.dictionary', but modification requires exclusive
-// access; consider copying to a local variable
-//     dictionary[key, default: dictionary[Container.defaultKey]!] += 1
-//     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// note: conflicting access is here
-//     dictionary[key, default: dictionary[Container.defaultKey]!] += 1
-//                              ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
-``` The exclusivity violation can be avoided by precomputing the `default` argument using a local variable. ```swift
-struct Container {
-  static let defaultKey = 0
+  ```
 
-  var dictionary = [defaultKey:0]
+  now produces the error message:
 
-  mutating func incrementValue(at key: Int) {
-    let defaultValue = dictionary[Container.defaultKey]!
-    dictionary[key, default: defaultValue] += 1
+  ```text
+  error: initializer 'init(_:rowContent:)' requires 'NotIdentifiable' conform to 'Identifiable'
+  List(data) { _ in
+  ^
+  ```
+- Swift indentation now column-aligns conditions in `guard` and `if` statements. (53131527) (FB6688335)
+
+  For example:
+
+  ```swift
+  guard let x = someOptional,
+        let y = anotherOptional else {
+    // ...
   }
-}
-// No error.
-```
-- Swift now allows the implicit use of `self` in `@escaping` closures when reference cycles are unlikely to occur. ([`SE-0269`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0269-implicit-self-explicit-capture.md), 56408426) First, implicit use of `self` in `@escaping` closures is now allowed if the user has explicitly captured `self` in the closure’s capture list, so the following code is now valid: ```swift
-class Test {
-  var x = 0
-  func execute(_ work: @escaping () -> Void) {
-    work()
-  }
-  func method() {
-    execute { [self] in
-      x += 1
+  ```
+- The compiler now diagnoses exclusivity violations within code that computes the `default` argument during [`Dictionary`](../Swift/dictionary.md) access. ([SR-11700](https://bugs.swift.org/browse/SR-11700), 56378713)
+
+  ```swift
+  struct Container {
+    static let defaultKey = 0
+
+    var dictionary = [defaultKey:0]
+
+    mutating func incrementValue(at key: Int) {
+      dictionary[key, default: dictionary[Container.defaultKey]!] += 1
     }
   }
-}
-``` Second, implicit `self` is available in `@escaping` closures when `self` is a value type, making the following code valid: ```swift
-struct Test {
-  var x = 0
-  func execute(_ work: @escaping () -> Void) {
-    work()
-  }
-  func method() {
-    execute {
-      x += 1
+  // error: overlapping accesses to 'self.dictionary', but modification requires exclusive
+  // access; consider copying to a local variable
+  //     dictionary[key, default: dictionary[Container.defaultKey]!] += 1
+  //     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // note: conflicting access is here
+  //     dictionary[key, default: dictionary[Container.defaultKey]!] += 1
+  //                              ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+  ```
+
+  The exclusivity violation can be avoided by precomputing the `default` argument using a local variable.
+
+  ```swift
+  struct Container {
+    static let defaultKey = 0
+
+    var dictionary = [defaultKey:0]
+
+    mutating func incrementValue(at key: Int) {
+      let defaultValue = dictionary[Container.defaultKey]!
+      dictionary[key, default: defaultValue] += 1
     }
   }
-}
-```
-- A property with an attached property wrapper can now rely on type inference to infer the wrapped value type when using default initialization without empty parentheses on the wrapper attribute. (59471019) For example: ```swift
-@propertyWrapper
-struct IntWrapper {
-  var wrappedValue: Int { 0 }
-}
+  // No error.
+  ```
+- Swift now allows the implicit use of `self` in `@escaping` closures when reference cycles are unlikely to occur. ([SE-0269](https://github.com/apple/swift-evolution/blob/master/proposals/0269-implicit-self-explicit-capture.md), 56408426)
 
-struct UseWrapper {
-  @IntWrapper var value
-}
-``` The wrapped property `UseWrapper.value` uses default initialization of `IntWrapper`, and relies on type inference to deduce the type-wrapped value type to be `Int`.
-- In order to shorten incremental compilations, Swift now keeps separate fingerprints for each type- (and protocol-) body. These *type-body fingerprints* mean that if you change the body of a `struct`, `enum`, `class`, or `protocol` in a file that also defines other `struct`, `enum`, `class`, `protocols`, only the changed entity will be counted as “dirty” for the purpose of recompiling other files. (59954707) For example, suppose you have a file that defines two `structs`: ```swift
-struct A {
-}
-struct B {
-}
-``` and you add a member to `A`: ```swift
-struct A {
-  var x = 17
-}
-struct B {
-}
-``` Before this change, the compiler would have recompiled any file using either `A` or `B`. Now, the compiler doesn’t recompile files that use only `B`. If you experience problems with this feature, disable it by passing `-disable-type-fingerprints` into the Swift compiler via the `Other Swift Flags` build setting. If you still experience problems, disable the new dependency infrastructure by passing `-disable-fine-grained-dependencies` into the Swift compiler via the `Other Swift Flags` build setting.
+  First, implicit use of `self` in `@escaping` closures is now allowed if the user has explicitly captured `self` in the closure’s capture list, so the following code is now valid:
+
+  ```swift
+  class Test {
+    var x = 0
+    func execute(_ work: @escaping () -> Void) {
+      work()
+    }
+    func method() {
+      execute { [self] in
+        x += 1
+      }
+    }
+  }
+  ```
+
+  Second, implicit `self` is available in `@escaping` closures when `self` is a value type, making the following code valid:
+
+  ```swift
+  struct Test {
+    var x = 0
+    func execute(_ work: @escaping () -> Void) {
+      work()
+    }
+    func method() {
+      execute {
+        x += 1
+      }
+    }
+  }
+  ```
+- A property with an attached property wrapper can now rely on type inference to infer the wrapped value type when using default initialization without empty parentheses on the wrapper attribute. (59471019)
+
+  For example:
+
+  ```swift
+  @propertyWrapper
+  struct IntWrapper {
+    var wrappedValue: Int { 0 }
+  }
+
+  struct UseWrapper {
+    @IntWrapper var value
+  }
+  ```
+
+  The wrapped property `UseWrapper.value` uses default initialization of `IntWrapper`, and relies on type inference to deduce the type-wrapped value type to be `Int`.
+- In order to shorten incremental compilations, Swift now keeps separate fingerprints for each type- (and protocol-) body. These *type-body fingerprints* mean that if you change the body of a `struct`, `enum`, `class`, or `protocol` in a file that also defines other `struct`, `enum`, `class`, `protocols`, only the changed entity will be counted as “dirty” for the purpose of recompiling other files. (59954707)
+
+  For example, suppose you have a file that defines two `structs`:
+
+  ```swift
+  struct A {
+  }
+  struct B {
+  }
+  ```
+
+  and you add a member to `A`:
+
+  ```swift
+  struct A {
+    var x = 17
+  }
+  struct B {
+  }
+  ```
+
+  Before this change, the compiler would have recompiled any file using either `A` or `B`. Now, the compiler doesn’t recompile files that use only `B`.
+
+  If you experience problems with this feature, disable it by passing `-disable-type-fingerprints` into the Swift compiler via the `Other Swift Flags` build setting. If you still experience problems, disable the new dependency infrastructure by passing `-disable-fine-grained-dependencies` into the Swift compiler via the `Other Swift Flags` build setting.
 - Xcode 12 includes support for using `@main` in place of `@UIApplicationMain` or `@NSApplicationMain` in UIKit- or AppKit-based apps. (60502727, 60502804, 63291088)
-- Declarations inside generic contexts can now have `where` clauses even when the declaration itself doesn’t have additional generic parameters. ([`SE-0267`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0267-where-on-contextually-generic.md), 64228492) For example: ```swift
-struct Box<Wrapped> {
-    func boxes() -> [Box<Wrapped.Element>] where Wrapped: Sequence { ... }
-}
-```
-- `lazy` properties may now have `didSet` and/or `willSet` observers. (64229062)
-- Swift 5.3 introduces a `#fileID` identifier which produces a shorter string than `#file`. The `#fileID` string contains the filename and module name, but leaves out the rest of the path to the file; this saves space, improves performance, and avoids accidentally embedding private information like the developer’s home directory name in binaries. Compiler-generated error messages (like force-unwraps) and standard library assertions like `precondition` and `fatalError` now use `#fileID` strings, and we recommend you use them instead of `#file` in production code. ([`SE-0285`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0285-ease-pound-file-transition.md), 65514304)
-- Trailing closures are now matched to function parameters starting from the first closure parameter and moving forward. This allows defaulted closure parameters to more naturally work with multiple trailing closures ([`SE-0286`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0286-forward-scan-trailing-closures.md), [`SE-0279`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0279-multiple-trailing-closures.md), 65615074) For example, the function: ```swift
-func animate(
-    duration: Double,
-    animations: @escaping () -> Void,
-    completion: ((Bool) -> Void)? = nil
-)
-``` when called as: ```swift
-animate(duration: 0.25) {
-  // animations
-}
-``` matches the trailing closure to the `animations` parameter. You can then specify a completion handler using the new “multiple trailing closures” feature: ```swift
-animate(duration: 0.25) {
-  // animations
-} completion: { finished in {
-  // completion handler
-}
-``` A new warning identifies cases where the new, trailing-closure-matching rules differ from the old ones. For example: ```swift
-func f(a: () -> Int = { 17 }, b: () -> Int = { 42 }) { }
+- Declarations inside generic contexts can now have `where` clauses even when the declaration itself doesn’t have additional generic parameters. ([SE-0267](https://github.com/apple/swift-evolution/blob/master/proposals/0267-where-on-contextually-generic.md), 64228492)
 
-f {
-  0
-}
-``` In such cases, the compiler still applies the old (backward) rule (the trailing closure will match parameter `b`), but the compiler produces a warning and Fix-It that indicates the code will change behavior in a future language version: ```text
-backward matching of the unlabeled trailing closure is deprecated; label the argument with 'b' to suppress this warning
-```
+  For example:
+
+  ```swift
+  struct Box<Wrapped> {
+      func boxes() -> [Box<Wrapped.Element>] where Wrapped: Sequence { ... }
+  }
+  ```
+- `lazy` properties may now have `didSet` and/or `willSet` observers. (64229062)
+- Swift 5.3 introduces a `#fileID` identifier which produces a shorter string than `#file`. The `#fileID` string contains the filename and module name, but leaves out the rest of the path to the file; this saves space, improves performance, and avoids accidentally embedding private information like the developer’s home directory name in binaries. Compiler-generated error messages (like force-unwraps) and standard library assertions like `precondition` and `fatalError` now use `#fileID` strings, and we recommend you use them instead of `#file` in production code. ([SE-0285](https://github.com/apple/swift-evolution/blob/master/proposals/0285-ease-pound-file-transition.md), 65514304)
+- Trailing closures are now matched to function parameters starting from the first closure parameter and moving forward. This allows defaulted closure parameters to more naturally work with multiple trailing closures ([SE-0286](https://github.com/apple/swift-evolution/blob/master/proposals/0286-forward-scan-trailing-closures.md), [SE-0279](https://github.com/apple/swift-evolution/blob/master/proposals/0279-multiple-trailing-closures.md), 65615074)
+
+  For example, the function:
+
+  ```swift
+  func animate(
+      duration: Double,
+      animations: @escaping () -> Void,
+      completion: ((Bool) -> Void)? = nil
+  )
+  ```
+
+  when called as:
+
+  ```swift
+  animate(duration: 0.25) {
+    // animations
+  }
+  ```
+
+  matches the trailing closure to the `animations` parameter. You can then specify a completion handler using the new “multiple trailing closures” feature:
+
+  ```swift
+  animate(duration: 0.25) {
+    // animations
+  } completion: { finished in {
+    // completion handler
+  }
+  ```
+
+  A new warning identifies cases where the new, trailing-closure-matching rules differ from the old ones. For example:
+
+  ```swift
+  func f(a: () -> Int = { 17 }, b: () -> Int = { 42 }) { }
+
+  f {
+    0
+  }
+  ```
+
+  In such cases, the compiler still applies the old (backward) rule (the trailing closure will match parameter `b`), but the compiler produces a warning and Fix-It that indicates the code will change behavior in a future language version:
+
+  ```text
+  backward matching of the unlabeled trailing closure is deprecated; label the argument with 'b' to suppress this warning
+  ```
 
 ###### Resolved
 
-- Swift now supports unapplied references to protocol methods. Previously this only worked for methods defined in structs, enums, and classes. (21289579) (FB5819096) For example: ```swift
-protocol Cat {
-func play(catToy: Toy)
-}
+- Swift now supports unapplied references to protocol methods. Previously this only worked for methods defined in structs, enums, and classes. (21289579) (FB5819096)
 
-let fn = Cat.play(catToy:)
-fn(myCat)(myToy)
-```
+  For example:
+
+  ```swift
+  protocol Cat {
+  func play(catToy: Toy)
+  }
+
+  let fn = Cat.play(catToy:)
+  fn(myCat)(myToy)
+  ```
 - Swift indentation no longer under-indents multi-line expressions that appear within call arguments, parameter lists, array and dictionary literals, or tuples when their elements are column-aligned. (48934744)
 - Fixed a compiler crash that happened in expressions involving `super` when the type of `super` had an error. (50819554)
-- The experimental function builder feature is now correctly applied to a single-expression closure. (56340587) For example: ```swift
-@_functionBuilder
-struct ArrayBuilder<T> {
-    static func buildBlock(_ values: T…) -> [T] {
-        values
-    }
-}
+- The experimental function builder feature is now correctly applied to a single-expression closure. (56340587)
 
-func array(@ArrayBuilder<Int> builder: () -> [Int]) -> [Int] {
-    builder()
-}
+  For example:
 
-array { 0 }
-``` These closures already worked in SwiftUI, because they were just returning a single [`View`](https://developer.apple.com/documentation/swiftui/view), which is all that applying the [`ViewBuilder`](https://developer.apple.com/documentation/swiftui/viewbuilder) transform to them would have made them do. However, not all function builder transforms have this property, and now they should work in general.
+  ```swift
+  @_functionBuilder
+  struct ArrayBuilder<T> {
+      static func buildBlock(_ values: T…) -> [T] {
+          values
+      }
+  }
+
+  func array(@ArrayBuilder<Int> builder: () -> [Int]) -> [Int] {
+      builder()
+  }
+
+  array { 0 }
+  ```
+
+  These closures already worked in SwiftUI, because they were just returning a single [`View`](../SwiftUI/view.md), which is all that applying the [`ViewBuilder`](../SwiftUI/viewbuilder.md) transform to them would have made them do. However, not all function builder transforms have this property, and now they should work in general.
 - Fixed a compiler crash that happened when using a property wrapper whose wrapped value has a mutating getter and non-mutating setter. (56467140)
-- The Swift compiler no longer prints imports in the compatibility header for empty extensions or extensions with only private members and no public conformances. Objective-C/C source files relying on those transitive imports may raise errors about missing declarations and need to be updated with an explicit importation to compile as expected. (57133517)
+- The Swift compiler no longer prints imports in the compatibility header for empty extensions or extensions with only private members and no public conformances.
+
+  Objective-C/C source files relying on those transitive imports may raise errors about missing declarations and need to be updated with an explicit importation to compile as expected. (57133517)
 - Fixed a crash caused by importing Objective-C interfaces that use the `objc_runtime_name` into Swift. (59306590) (FB7571694)
 - Fixed a compiler crash that happened when overriding a property with an attached property wrapper in a subclass to implement property observers. (60093232) (FB7615016)
 - Fixed an issue where initializing a property wrapper could invoke property observers before all of `self` is initialized. (60832285)
@@ -650,46 +783,52 @@ array { 0 }
 ###### New Features
 
 - You can now declare conditions for a Swift package’s target dependencies, such as limiting the dependencies by platform. This gives you more flexibility to describe complex target dependencies that support multiple platforms. (40237402)
-- Swift packages can now contain resources such as images, asset catalogs, storyboards, and other files. When Xcode builds an app that depends on a package, it adds the package’s code and resources to the app bundle for use at runtime. For more information see [`Bundling resources with a Swift package`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/bundling-resources-with-a-swift-package). (54361843)
-- Swift packages can now vend prebuilt libraries distributed as XCFrameworks, allowing dependencies on libraries that can’t be distributed as source code. When Xcode builds an app that uses such a package, it embeds the libraries into the app bundle. For more information see [`Distributing binary frameworks as Swift packages`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages). (56592977)
-- Swift packages can now contain localized content for any resource in the package. In addition to localized content in asset catalogs, Xcode supports separate localization files in `.lproj` folders. For more information see [`Localizing package resources`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/localizing-package-resources). (56925255)
+- Swift packages can now contain resources such as images, asset catalogs, storyboards, and other files. When Xcode builds an app that depends on a package, it adds the package’s code and resources to the app bundle for use at runtime. For more information see [Bundling resources with a Swift package](../Xcode/bundling-resources-with-a-swift-package.md). (54361843)
+- Swift packages can now vend prebuilt libraries distributed as XCFrameworks, allowing dependencies on libraries that can’t be distributed as source code. When Xcode builds an app that uses such a package, it embeds the libraries into the app bundle. For more information see [Distributing binary frameworks as Swift packages](../Xcode/distributing-binary-frameworks-as-swift-packages.md). (56592977)
+- Swift packages can now contain localized content for any resource in the package. In addition to localized content in asset catalogs, Xcode supports separate localization files in `.lproj` folders. For more information see [Localizing package resources](../Xcode/localizing-package-resources.md). (56925255)
 
 ###### Known Issues
 
-- A package resolution error with the message “database is locked” may occur when opening a workspace that contains package references. (61113361) **Workaround**: Close and reopen the workspace.
+- A package resolution error with the message “database is locked” may occur when opening a workspace that contains package references. (61113361)
+
+  **Workaround**: Close and reopen the workspace.
 
 ##### Testing
 
 ###### New Features
 
-- [`XCTAssert`](https://developer.apple.com/documentation/xctest/xctassert) and related assertion macros in Objective-C can now be used in contexts other than instance methods of [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) subclasses. (4176422)
+- [`XCTAssert`](../XCTest/xctassert.md) and related assertion macros in Objective-C can now be used in contexts other than instance methods of [`XCTestCase`](../XCTest/xctestcase.md) subclasses. (4176422)
 - Xcode now captures backtraces for test failures which occur outside of test methods and lists the failure callstack frames in the Issue navigator, the source editor, and the test report. (9955893)
 - UI Tests will now implictly handle banner notifications on iOS that block the navigation bar during UI testing. (24920246)
-- [`XCTest`](https://developer.apple.com/documentation/xctest) now provides an [`XCTIssue`](https://developer.apple.com/documentation/xctest/xctissue-swift.struct) type for richer modeling of test failures and other issues, along with associated APIs for working with these issues, including a new [`record(_:)`](https://developer.apple.com/documentation/xctest/xctestcase/record(_:)) method on [`XCTestCase`](https://developer.apple.com/documentation/xctest/xctestcase) which supersedes [`recordFailure(withDescription:inFile:atLine:expected:)`](https://developer.apple.com/documentation/xctest/xctestcase/recordfailure(withdescription:infile:atline:expected:)). (28547702)
+- [XCTest](../XCTest/XCTest.md) now provides an [`XCTIssue`](../XCTest/xctissue-swift.struct.md) type for richer modeling of test failures and other issues, along with associated APIs for working with these issues, including a new [`record(_:)`](../XCTest/xctestcase/record%28_%29.md) method on [`XCTestCase`](../XCTest/xctestcase.md) which supersedes [`recordFailure(withDescription:inFile:atLine:expected:)`](../XCTest/xctestcase/recordfailure%28withdescription,infile,atline,expected%29.md). (28547702)
 - If the test process fails to launch or load the test bundle, for example if dynamic linking fails, or some other system failure prevents testing from starting, the error is presented in the test report under a section titled “System Failures”. (36926043)
 - The number of passing, failing, and skipped tests is now surfaced in the test report UI. (49672520)
 - When building for testing in a test plan-enabled scheme, Xcode now only builds test targets which are referenced by the active test plan. If the scheme references multiple test plans, then test targets which aren’t referenced by the currently-active test plan aren’t built. This change doesn’t affect `xcodebuild`: it builds all test targets referenced by all of the scheme’s test plans, unless one or more `-testPlan <name>` arguments are specified. (49737598)
-- [`XCTApplicationLaunchMetric`](https://developer.apple.com/documentation/xctest/xctapplicationlaunchmetric) can now measure application launch to first frame. This new metric measures the time it takes for an application to launch and be ready to respond to a touch event. The following shows an example of using [`XCTApplicationLaunchMetric`](https://developer.apple.com/documentation/xctest/xctapplicationlaunchmetric) to measure how long it takes for an application to become responsive. (54721394) ```swift
-func testAppLaunchToResponsive() throws {
-    measure(metrics: [XCTApplicationLaunchMetric(waitUntilResponsive: true)]) {
-        app.launch()
-    }
-}
-```
-- Xcode now excludes static library targets when computing the list of built product directories to include in the DYLD_FRAMEWORK_PATH and DYLD_LIBRARY_PATH environment variables when running tests. (55254152) (FB7249507)
-- Performance XCTests now support animation performance testing when using  [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/xctest/xctossignpostmetric) coupled with an animation `os_signpost` interval. The performance measurements returned include duration, three hitch-related metrics, and frame rate. To create an animation `os_signpost` interval, create a custom interval or use one of the provided UIKit intervals. The following shows an example performance test that measures the animation performance of scrolling an application. (55644042) ```swift
-func testScrollingAnimationPerformance() throws {
-  let table = app.tables.firstMatch
-  measure(metrics: [XCTOSSignpostMetric.scrollDecelerationMetric]) {
-    table.swipeUp(velocity: .fast)
+- [`XCTApplicationLaunchMetric`](../XCTest/xctapplicationlaunchmetric.md) can now measure application launch to first frame. This new metric measures the time it takes for an application to launch and be ready to respond to a touch event. The following shows an example of using [`XCTApplicationLaunchMetric`](../XCTest/xctapplicationlaunchmetric.md) to measure how long it takes for an application to become responsive. (54721394)
+
+  ```swift
+  func testAppLaunchToResponsive() throws {
+      measure(metrics: [XCTApplicationLaunchMetric(waitUntilResponsive: true)]) {
+          app.launch()
+      }
   }
-}
-```
-- If the test process stalls while waiting on an expectation, such as during [`waitForExpectations(timeout:handler:)`](https://developer.apple.com/documentation/xctest/xctestcase/waitforexpectations(timeout:handler:)) or a similar [`XCTWaiter`](https://developer.apple.com/documentation/xctest/xctwaiter) method, Xcode captures a spindump of the test process and attaches it to the test report. Previously, Xcode killed the test process and restarted execution with the next test. To continue to protect against stalled tests, enable the Test Timeouts setting in the test plan. (57163494)
-- Xcode 12 expands on the ability to reset the authorization status of protected resources, introduced in Xcode 11.4. Health resources can be reset using the new constant [`XCUIProtectedResource.health`](https://developer.apple.com/documentation/xcuiautomation/xcuiprotectedresource/health) which is available in iOS 14.0 and later. (57852954)
-- [`XCUIElement`](https://developer.apple.com/documentation/xcuiautomation/xcuielement) and [`XCUICoordinate`](https://developer.apple.com/documentation/xcuiautomation/xcuicoordinate) now allow specifying a velocity when performing swipe and drag interactions. (58059937)
+  ```
+- Xcode now excludes static library targets when computing the list of built product directories to include in the DYLD_FRAMEWORK_PATH and DYLD_LIBRARY_PATH environment variables when running tests. (55254152) (FB7249507)
+- Performance XCTests now support animation performance testing when using  [`XCTOSSignpostMetric`](../XCTest/xctossignpostmetric.md) coupled with an animation `os_signpost` interval. The performance measurements returned include duration, three hitch-related metrics, and frame rate. To create an animation `os_signpost` interval, create a custom interval or use one of the provided UIKit intervals. The following shows an example performance test that measures the animation performance of scrolling an application. (55644042)
+
+  ```swift
+  func testScrollingAnimationPerformance() throws {
+    let table = app.tables.firstMatch
+    measure(metrics: [XCTOSSignpostMetric.scrollDecelerationMetric]) {
+      table.swipeUp(velocity: .fast)
+    }
+  }
+  ```
+- If the test process stalls while waiting on an expectation, such as during [`waitForExpectations(timeout:handler:)`](../XCTest/xctestcase/waitforexpectations%28timeout,handler%29.md) or a similar [`XCTWaiter`](../XCTest/xctwaiter.md) method, Xcode captures a spindump of the test process and attaches it to the test report. Previously, Xcode killed the test process and restarted execution with the next test. To continue to protect against stalled tests, enable the Test Timeouts setting in the test plan. (57163494)
+- Xcode 12 expands on the ability to reset the authorization status of protected resources, introduced in Xcode 11.4. Health resources can be reset using the new constant [`XCUIProtectedResource.health`](../XCUIAutomation/xcuiprotectedresource/health.md) which is available in iOS 14.0 and later. (57852954)
+- [`XCUIElement`](../XCUIAutomation/xcuielement.md) and [`XCUICoordinate`](../XCUIAutomation/xcuicoordinate.md) now allow specifying a velocity when performing swipe and drag interactions. (58059937)
 - Screenshots taken during UI tests are now encoded as HEIC files instead of JPEGs where possible. This can considerably reduce the file size of result bundles. (58468642)
-- [`XCTAssertEqual(_:_:accuracy:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctassertequal(_:_:accuracy:_:file:line:)-4epu5) and [`XCTAssertNotEqual(_:_:accuracy:_:file:line:)`](https://developer.apple.com/documentation/xctest/xctassertnotequal(_:_:accuracy:_:file:line:)-326vc) now accept any [`Numeric`](https://developer.apple.com/documentation/swift/numeric) value instead of requiring a [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint) value. This allows passing non-floating point numeric types such as [`Int`](https://developer.apple.com/documentation/swift/int), either as expression values or as the `accuracy` parameter. (58481784)
+- [`XCTAssertEqual(_:_:accuracy:_:file:line:)`](../XCTest/xctassertequal%28_,_,accuracy,_,file,line%29-4epu5.md) and [`XCTAssertNotEqual(_:_:accuracy:_:file:line:)`](../XCTest/xctassertnotequal%28_,_,accuracy,_,file,line%29-326vc.md) now accept any [`Numeric`](../Swift/numeric.md) value instead of requiring a [`FloatingPoint`](../Swift/floatingpoint.md) value. This allows passing non-floating point numeric types such as [`Int`](../Swift/int.md), either as expression values or as the `accuracy` parameter. (58481784)
 - Running an individual test in a test-plan-enabled scheme now skips configurations in that test plan which are disabled. Option- or Control-clicking a test diamond now denotes any configurations in the active test plan are disabled, and includes a “Run in All Enabled Configurations” option if some are disabled. (58547265)
 - If you click the diamond next to a test or test class in the source editor, and that test is outside of the active scheme or test plan, Xcode will present a sheet allowing you to select the specific scheme or test plan that contains the test you want to run. (59223004)
 - The Failed and Skipped scope bar buttons in the Test Report now show tests where any runs failed or were skipped, instead of only showing tests where all runs failed or were skipped. (59401757)
@@ -704,38 +843,41 @@ func testScrollingAnimationPerformance() throws {
 - UI target queries can now target all cells in the iOS Share Sheet. (49961747)
 - Resolved a bug which prevented diamonds from appearing next to test methods and classes in the source editor when the Test navigator isn’t open. (54216504)
 - When a test failure is recorded without any source code location, Xcode now displays a failure annotation in the source editor and a link to jump to that test method from the Issue navigator. (58118593)
-- Resolved an issue that could cause keyboard modifiers to persist after a call to [`perform(withKeyModifiers:block:)`](https://developer.apple.com/documentation/xcuiautomation/xcuielement/perform(withkeymodifiers:block:)) if the block threw an unhandled exception. (58376575)
-- XCTest APIs which include a `file: StaticString = #file` parameter now use the `#filePath` literal introduced in Swift 5.3 as the default parameter value. XCTest requires complete file paths to source files for error reporting and jumping to failures within Xcode. For more information, see notes on [`SE–0274`](https://developer.apple.comhttps://github.com/apple/swift-evolution/blob/master/proposals/0274-magic-file.md)   and `#filePath` in the Swift section. (58496553)
+- Resolved an issue that could cause keyboard modifiers to persist after a call to [`perform(withKeyModifiers:block:)`](../XCUIAutomation/xcuielement/perform%28withkeymodifiers,block%29.md) if the block threw an unhandled exception. (58376575)
+- XCTest APIs which include a `file: StaticString = #file` parameter now use the `#filePath` literal introduced in Swift 5.3 as the default parameter value. XCTest requires complete file paths to source files for error reporting and jumping to failures within Xcode. For more information, see notes on [SE–0274](https://github.com/apple/swift-evolution/blob/master/proposals/0274-magic-file.md)   and `#filePath` in the Swift section. (58496553)
 - Moving test plan files between directory levels in the Project navigator now updates references to those files in schemes properly. (59171975)
 - Xcode will reinstall the app under test if it was deleted in a UI test. (60159203) (FB7616398)
-- XCTest now supports using [`XCTSkip`](https://developer.apple.com/documentation/xctest/xctskip-swift.struct) in [`tearDown()`](https://developer.apple.com/documentation/xctest/xctest/teardown()) and [`tearDownWithError()`](https://developer.apple.com/documentation/xctest/xctest/teardownwitherror()) to mark a test as skipped. Although the test method may already have run to completion by the time the teardown methods are invoked, this may be useful to “retroactively” mark that a test wasn’t eligible to run or that its results may be invalid. (60634152)
+- XCTest now supports using [`XCTSkip`](../XCTest/xctskip-swift.struct.md) in [`tearDown()`](../XCTest/xctest-page/teardown%28%29.md) and [`tearDownWithError()`](../XCTest/xctest-page/teardownwitherror%28%29.md) to mark a test as skipped. Although the test method may already have run to completion by the time the teardown methods are invoked, this may be useful to “retroactively” mark that a test wasn’t eligible to run or that its results may be invalid. (60634152)
 - Resolved an issue where `xcodebuild` wouldn’t respect the `-enableCodeCoverage` option if the scheme uses a test plan. (62605817)
 - `xcodebuild` no longer ignores the `-parallel-testing-worker-count` option when running tests in parallel. (64495567)
 
 ###### Known Issues
 
-- Simulated devices don’t support animation performance metrics (total number of hitches, hitches total duration, hitch time ratio, frame rate, and frame count) when using an animation `os_signpost` coupled with the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/xctest/xctossignpostmetric). (63766090) **Workaround**: Use [`XCTSkip`](https://developer.apple.com/documentation/xctest/xctskip-swift.struct) to skip over performance tests on simulated devices.
+- Simulated devices don’t support animation performance metrics (total number of hitches, hitches total duration, hitch time ratio, frame rate, and frame count) when using an animation `os_signpost` coupled with the [`XCTOSSignpostMetric`](../XCTest/xctossignpostmetric.md). (63766090)
+
+  **Workaround**: Use [`XCTSkip`](../XCTest/xctskip-swift.struct.md) to skip over performance tests on simulated devices.
 
 ###### Deprecations
 
 - Xcode now supports debugging apps and running tests on iOS devices running iOS 9.0 and above. (59561001)
-- [`XCTAssert`](https://developer.apple.com/documentation/xctest/xctassert) and related assertion macros in Objective-C and Objective-C++ no longer include a reference to `self` to access the current test case. With the `-Wunused-variable` or `-Wunused-lambda-capture` flag set, the compiler may now emit new warnings about code which declares an explicit variable or lambda capture for `self`. Remove the `self` variable or lambda capture, because it’s no longer required by [`XCTAssert`](https://developer.apple.com/documentation/xctest/xctassert). (60017011)
+- [`XCTAssert`](../XCTest/xctassert.md) and related assertion macros in Objective-C and Objective-C++ no longer include a reference to `self` to access the current test case. With the `-Wunused-variable` or `-Wunused-lambda-capture` flag set, the compiler may now emit new warnings about code which declares an explicit variable or lambda capture for `self`. Remove the `self` variable or lambda capture, because it’s no longer required by [`XCTAssert`](../XCTest/xctassert.md). (60017011)
 
 ## See Also
 
-- [Xcode 12.5.1 Release Notes](xcode-12_5_1-release-notes.md)
+### Xcode 12
+- [Xcode 12.5.1 Release Notes](./xcode-12_5_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.5 Release Notes](xcode-12_5-release-notes.md)
+- [Xcode 12.5 Release Notes](./xcode-12_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.4 Release Notes](xcode-12_4-release-notes.md)
+- [Xcode 12.4 Release Notes](./xcode-12_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.3 Release Notes](xcode-12_3-release-notes.md)
+- [Xcode 12.3 Release Notes](./xcode-12_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.2 Release Notes](xcode-12_2-release-notes.md)
+- [Xcode 12.2 Release Notes](./xcode-12_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.1 Release Notes](xcode-12_1-release-notes.md)
+- [Xcode 12.1 Release Notes](./xcode-12_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 12.0.1 Release Notes](xcode-12_0_1-release-notes.md)
+- [Xcode 12.0.1 Release Notes](./xcode-12_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # TossableRepresentation.IcosahedronFace.q
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,21 +15,22 @@ case q
 
 ## See Also
 
-- [TossableRepresentation.IcosahedronFace.a](tossablerepresentation/icosahedronface/a.md)
-- [TossableRepresentation.IcosahedronFace.b](tossablerepresentation/icosahedronface/b.md)
-- [TossableRepresentation.IcosahedronFace.c](tossablerepresentation/icosahedronface/c.md)
-- [TossableRepresentation.IcosahedronFace.d](tossablerepresentation/icosahedronface/d.md)
-- [TossableRepresentation.IcosahedronFace.e](tossablerepresentation/icosahedronface/e.md)
-- [TossableRepresentation.IcosahedronFace.f](tossablerepresentation/icosahedronface/f.md)
-- [TossableRepresentation.IcosahedronFace.g](tossablerepresentation/icosahedronface/g.md)
-- [TossableRepresentation.IcosahedronFace.h](tossablerepresentation/icosahedronface/h.md)
-- [TossableRepresentation.IcosahedronFace.i](tossablerepresentation/icosahedronface/i.md)
-- [TossableRepresentation.IcosahedronFace.j](tossablerepresentation/icosahedronface/j.md)
-- [TossableRepresentation.IcosahedronFace.k](tossablerepresentation/icosahedronface/k.md)
-- [TossableRepresentation.IcosahedronFace.l](tossablerepresentation/icosahedronface/l.md)
-- [TossableRepresentation.IcosahedronFace.m](tossablerepresentation/icosahedronface/m.md)
-- [TossableRepresentation.IcosahedronFace.n](tossablerepresentation/icosahedronface/n.md)
-- [TossableRepresentation.IcosahedronFace.o](tossablerepresentation/icosahedronface/o.md)
+### Faces
+- [TossableRepresentation.IcosahedronFace.a](./a.md)
+- [TossableRepresentation.IcosahedronFace.b](./b.md)
+- [TossableRepresentation.IcosahedronFace.c](./c.md)
+- [TossableRepresentation.IcosahedronFace.d](./d.md)
+- [TossableRepresentation.IcosahedronFace.e](./e.md)
+- [TossableRepresentation.IcosahedronFace.f](./f.md)
+- [TossableRepresentation.IcosahedronFace.g](./g.md)
+- [TossableRepresentation.IcosahedronFace.h](./h.md)
+- [TossableRepresentation.IcosahedronFace.i](./i.md)
+- [TossableRepresentation.IcosahedronFace.j](./j.md)
+- [TossableRepresentation.IcosahedronFace.k](./k.md)
+- [TossableRepresentation.IcosahedronFace.l](./l.md)
+- [TossableRepresentation.IcosahedronFace.m](./m.md)
+- [TossableRepresentation.IcosahedronFace.n](./n.md)
+- [TossableRepresentation.IcosahedronFace.o](./o.md)
 
 
 ---

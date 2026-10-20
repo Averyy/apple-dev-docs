@@ -1,7 +1,8 @@
 # addUserScript(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Injects the specified script into the webpage’s content.
 
@@ -18,15 +19,20 @@ Injects the specified script into the webpage’s content.
 func addUserScript(_ userScript: WKUserScript)
 ```
 
+```objc
+- (void) addUserScript:(WKUserScript *) userScript;
+```
+
 ## Parameters
 
 - `userScript`: The user script to add to the web view’s current page.
 
 ## See Also
 
-- [func removeAllUserScripts()](wkusercontentcontroller/removealluserscripts.md)
+### Adding and Removing Custom Scripts
+- [func removeAllUserScripts()](./removealluserscripts%28%29.md)
   Removes all user scripts from the web view.
-- [var userScripts: [WKUserScript]](wkusercontentcontroller/userscripts.md)
+- [var userScripts: [WKUserScript]](./userscripts.md)
   The user scripts associated with the user content controller.
 
 

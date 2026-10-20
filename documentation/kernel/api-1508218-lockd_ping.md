@@ -1,14 +1,15 @@
 # lockd_ping
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t lockd_ping(mach_port_t server);
 ```
 

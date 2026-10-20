@@ -1,7 +1,8 @@
 # init(migratingFrom:to:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom migration stage with the specified source and destination model references.
 
@@ -11,7 +12,7 @@ Creates a custom migration stage with the specified source and destination model
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 - Swift 5.8+
 
@@ -28,7 +29,8 @@ convenience init(migratingFrom currentModel: NSManagedObjectModelReference, to n
 
 ## See Also
 
-- [class NSManagedObjectModelReference](nsmanagedobjectmodelreference.md)
+### Creating a custom migration stage
+- [class NSManagedObjectModelReference](../nsmanagedobjectmodelreference.md)
   An object that describes a specific version of an object model.
 
 

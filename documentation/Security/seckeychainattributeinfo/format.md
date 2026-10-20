@@ -1,7 +1,8 @@
 # format
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the first attribute format in the array.
 
@@ -12,6 +13,10 @@ A pointer to the first attribute format in the array.
 
 ```swift
 var format: UnsafeMutablePointer<UInt32>?
+```
+
+```c
+UInt32 * format;
 ```
 
 #### Discussion

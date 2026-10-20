@@ -1,7 +1,8 @@
 # authenticatedResponse
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete response authentication, including technology-specific values.
 
@@ -17,6 +18,10 @@ The complete response authentication, including technology-specific values.
 ```swift
 @NSCopying
 var authenticatedResponse: HTTPURLResponse? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSHTTPURLResponse * authenticatedResponse;
 ```
 
 

@@ -1,19 +1,26 @@
 # secondsSinceLastScan
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds elapsed since the previous scan.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var secondsSinceLastScan: Int { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) NSInteger secondsSinceLastScan;
 ```
 
 #### Discussion
@@ -22,9 +29,10 @@ var secondsSinceLastScan: Int { get }
 
 ## See Also
 
-- [var minimumAttenuation: ENAttenuation](enscaninstance/minimumattenuation.md)
+### Getting Scan Instance Properties
+- [var minimumAttenuation: ENAttenuation](./minimumattenuation.md)
   The minimum attenuation of beacons received during the scan.
-- [var typicalAttenuation: ENAttenuation](enscaninstance/typicalattenuation.md)
+- [var typicalAttenuation: ENAttenuation](./typicalattenuation.md)
   The aggregation of the attenuations of beacons received during the scan.
 
 

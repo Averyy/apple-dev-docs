@@ -1,17 +1,18 @@
 # AUVoiceIOSpeechActivityEvent
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the state of muted speech.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,31 +20,36 @@ Constants that indicate the state of muted speech.
 enum AUVoiceIOSpeechActivityEvent
 ```
 
+```c
+enum AUVoiceIOSpeechActivityEvent : UInt32;
+```
+
 ## Topics
 
 ### Determining when muted speech starts and stops
-- [AUVoiceIOSpeechActivityEvent.hasStarted](auvoiceiospeechactivityevent/hasstarted.md)
+- [AUVoiceIOSpeechActivityEvent.hasStarted](./auvoiceiospeechactivityevent/hasstarted.md)
   A state that indicates speech started.
-- [AUVoiceIOSpeechActivityEvent.hasEnded](auvoiceiospeechactivityevent/hasended.md)
+- [AUVoiceIOSpeechActivityEvent.hasEnded](./auvoiceiospeechactivityevent/hasended.md)
   A state that indicates speech ended.
 ### Initializers
-- [init?(rawValue: UInt32)](auvoiceiospeechactivityevent/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./auvoiceiospeechactivityevent/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kAUVoiceIOProperty_MutedSpeechActivityEventListener: AudioUnitPropertyID](kauvoiceioproperty_mutedspeechactivityeventlistener.md)
+### Observing muted speech
+- [var kAUVoiceIOProperty_MutedSpeechActivityEventListener: AudioUnitPropertyID](./kauvoiceioproperty_mutedspeechactivityeventlistener.md)
   A property to register a listener that the system calls when it detects speech while the user has the microphone muted.
-- [typealias AUVoiceIOMutedSpeechActivityEventListener](auvoiceiomutedspeechactivityeventlistener.md)
+- [typealias AUVoiceIOMutedSpeechActivityEventListener](./auvoiceiomutedspeechactivityeventlistener.md)
   A block that the system calls to indicate speech activity while the user has the microphone muted.
 
 

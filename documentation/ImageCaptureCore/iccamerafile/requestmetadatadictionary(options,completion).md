@@ -1,7 +1,8 @@
 # requestMetadataDictionary(options:completion:)
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests metadata and executes the completion block in place of the delegate.
 
@@ -15,7 +16,15 @@ Requests metadata and executes the completion block in place of the delegate.
 ## Declaration
 
 ```swift
+func requestMetadataDictionary(options: [ICCameraItemMetadataOption : Any]? = nil, completion: @escaping @Sendable ([AnyHashable : Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func requestMetadataDictionary(options: [ICCameraItemMetadataOption : Any]? = nil) async throws -> [AnyHashable : Any]
+```
+
+```objc
+- (void) requestMetadataDictionaryWithOptions:(NSDictionary<NSString *,id> *) options completion:(void (^)(NSDictionary *, NSError *)) completion;
 ```
 
 #### Discussion

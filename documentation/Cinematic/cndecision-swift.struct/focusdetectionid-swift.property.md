@@ -1,12 +1,13 @@
 # focusDetectionID
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 
@@ -18,11 +19,12 @@ var focusDetectionID: CNDecision.FocusDetectionID { get }
 
 ## See Also
 
-- [var isStrongDecision: Bool](cndecision-swift.struct/isstrongdecision.md)
+### Instance Properties
+- [var isStrongDecision: Bool](./isstrongdecision.md)
   A flag representing whether this is a strong decision.
-- [var isUserDecision: Bool](cndecision-swift.struct/isuserdecision.md)
+- [var isUserDecision: Bool](./isuserdecision.md)
   A flag representing whether this is a user-created decision or a base decision.
-- [var time: CMTime](cndecision-swift.struct/time.md)
+- [var time: CMTime](./time.md)
   The first presentation time that the subject should be in focus.
 
 

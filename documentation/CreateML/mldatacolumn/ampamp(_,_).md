@@ -1,7 +1,8 @@
 # &&(_:_:)
 
 **Framework**: Create ML  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Creates a column of Booleans by performing a logical AND operation on each element in the first column with the corresponding element in the second column.
 
@@ -19,6 +20,8 @@ Creates a column of Booleans by performing a logical AND operation on each eleme
 static func && (a: MLDataColumn<Bool>, b: MLDataColumn<Bool>) -> MLDataColumn<Bool>
 ```
 
+Available when `Element` is `Bool`.
+
 #### Return Value
 
 A new column of Booleans if the columns are the same size; otherwise an invalid column.
@@ -30,7 +33,8 @@ A new column of Booleans if the columns are the same size; otherwise an invalid 
 
 ## See Also
 
-- [static func || (MLDataColumn<Bool>, MLDataColumn<Bool>) -> MLDataColumn<Bool>](mldatacolumn/__(_:_:).md)
+### Combining columns of booleans to generate a column of booleans
+- [static func || (MLDataColumn<Bool>, MLDataColumn<Bool>) -> MLDataColumn<Bool>](./opop%28_,_%29.md)
   Creates a column of Booleans by performing a logical OR operation on each element in the first column with the corresponding element in the second column.
 
 

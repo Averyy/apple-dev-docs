@@ -1,7 +1,8 @@
 # NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
 
@@ -13,7 +14,7 @@ The array of captive networking apps whose traffic is allowed outside the VPN tu
 
 ## Declaration
 
-```swift
+```
 object NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject
 ```
 
@@ -23,11 +24,12 @@ object NetworkVPNAlwaysOnAllowedCaptiveNetworkPluginElementObject
 
 ## See Also
 
-- [object NetworkVPNAlwaysOnApplicationExceptionElementObject](networkvpnalwaysonapplicationexceptionelementobject.md)
+### Objects
+- [object NetworkVPNAlwaysOnApplicationExceptionElementObject](./networkvpnalwaysonapplicationexceptionelementobject.md)
   An array that contains an arbitrary number of apps whose connections occur outside the VPN.
-- [object NetworkVPNAlwaysOnServiceExceptionElementObject](networkvpnalwaysonserviceexceptionelementobject.md)
+- [object NetworkVPNAlwaysOnServiceExceptionElementObject](./networkvpnalwaysonserviceexceptionelementobject.md)
   An array that contains an arbitrary number of service exceptions.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElementObject](networkvpnalwaysontunnelconfigurationelementobject.md)
+- [object NetworkVPNAlwaysOnTunnelConfigurationElementObject](./networkvpnalwaysontunnelconfigurationelementobject.md)
   An array that contains an arbitrary number of tunnel configurations.
 
 

@@ -1,7 +1,8 @@
 # screenMeshSize
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 video screen mesh size in meters
 

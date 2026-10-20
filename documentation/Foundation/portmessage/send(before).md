@@ -1,7 +1,8 @@
 # send(before:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to send the message before the specified date.
 
@@ -15,15 +16,19 @@ Attempts to send the message before the specified date.
 func send(before date: Date) -> Bool
 ```
 
+```objc
+- (BOOL) sendBeforeDate:(NSDate *) date;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation is successful, otherwise [`false`](https://developer.apple.com/documentation/swift/false) (for example, if the operation times out).
+[`true`](../../Swift/true.md) if the operation is successful, otherwise [`false`](../../Swift/false.md) (for example, if the operation times out).
 
 #### Discussion
 
 If an error other than a time out occurs, this method could raise an `NSInvalidSendPortException`, `NSInvalidReceivePortException`, or an `NSPortSendException`, depending on the type of send port and the type of error.
 
-If the message cannot be sent immediately, the sending thread blocks until either the message is sent or `aDate` is reached. Sent messages are queued to minimize blocking, but failure can occur if multiple messages are sent to a port faster than the port’s owner can receive them, causing the queue to fill up. Therefore, select a value for `aDate` that provides enough time for the message to be processed before the next message is sent. See the [`Port`](port.md) class specification for information on receiving a port message.
+If the message cannot be sent immediately, the sending thread blocks until either the message is sent or `aDate` is reached. Sent messages are queued to minimize blocking, but failure can occur if multiple messages are sent to a port faster than the port’s owner can receive them, causing the queue to fill up. Therefore, select a value for `aDate` that provides enough time for the message to be processed before the next message is sent. See the [`Port`](../port.md) class specification for information on receiving a port message.
 
 ## Parameters
 

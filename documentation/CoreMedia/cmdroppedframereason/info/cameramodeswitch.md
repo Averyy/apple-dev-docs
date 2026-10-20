@@ -1,7 +1,8 @@
 # CMDroppedFrameReason.Info.cameraModeSwitch
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A discontinuity was caused by a camera mode switch.
 

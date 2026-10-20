@@ -1,17 +1,18 @@
 # PHASEError.Code
 
 **Framework**: PHASE  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that identify errors in PHASE.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,31 +20,36 @@ Codes that identify errors in PHASE.
 enum Code
 ```
 
+```c
+enum PHASEError : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [PHASEError.Code.initializeFailed](phaseerror-swift.struct/code/initializefailed.md)
+- [PHASEError.Code.initializeFailed](./code/initializefailed.md)
   An error that indicates the engine failed to initialize.
-- [PHASEError.Code.invalidObject](phaseerror-swift.struct/code/invalidobject.md)
+- [PHASEError.Code.invalidObject](./code/invalidobject.md)
   An error that indicates an object is invalid in a specific context.
 ### Initializers
-- [init?(rawValue: Int)](phaseerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PHASEError](phaseerror-swift.struct.md)
+### Framework Errors
+- [struct PHASEError](../phaseerror-swift.struct.md)
   An error that PHASE reports.
-- [let PHASEErrorDomain: String](phaseerrordomain.md)
+- [let PHASEErrorDomain: String](../phaseerrordomain.md)
   A unique error domain for the framework.
 
 

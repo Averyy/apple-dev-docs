@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model configuration parameters the image classifier used during its training session.
 
@@ -20,7 +21,8 @@ let modelParameters: MLImageClassifier.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlimageclassifier/model.md)
+### Inspecting an image classifier model
+- [var model: MLModel](./model.md)
   The underlying Core ML model of the image classifier stored in memory.
 
 

@@ -1,7 +1,8 @@
 # loadReference(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Asynchronously loads another entity file that an entity depends on.
 
@@ -20,9 +21,15 @@ Asynchronously loads another entity file that an entity depends on.
 static func loadReference(at entity: Entity) async throws
 ```
 
+**Other overloads**:
+
+```swift
+static func loadReference(at entity: Entity) throws
+```
+
 ## Parameters
 
-- `entity`: The entity that holds the [`ReferenceComponent`](referencecomponent.md) to load.
+- `entity`: The entity that holds the [`ReferenceComponent`](../referencecomponent.md) to load.
 
 
 ---

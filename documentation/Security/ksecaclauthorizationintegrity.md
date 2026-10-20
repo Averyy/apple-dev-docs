@@ -1,7 +1,8 @@
 # kSecACLAuthorizationIntegrity
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecACLAuthorizationIntegrity: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationIntegrity;
 ```
 
 

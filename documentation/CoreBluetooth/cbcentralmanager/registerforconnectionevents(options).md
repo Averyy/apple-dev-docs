@@ -1,7 +1,8 @@
 # registerForConnectionEvents(options:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register for an event notification when the central manager makes a connection matching the given options.
 
@@ -19,21 +20,26 @@ Register for an event notification when the central manager makes a connection m
 func registerForConnectionEvents(options: [CBConnectionEventMatchingOption : Any]? = nil)
 ```
 
+```objc
+- (void) registerForConnectionEventsWithOptions:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Discussion
 
-When the central manager makes a connection that matches the options, it calls the delegate’s [`centralManager(_:connectionEventDidOccur:for:)`](cbcentralmanagerdelegate/centralmanager(_:connectioneventdidoccur:for:).md) method.
+When the central manager makes a connection that matches the options, it calls the delegate’s [`centralManager(_:connectionEventDidOccur:for:)`](../cbcentralmanagerdelegate/centralmanager%28_,connectioneventdidoccur,for%29.md) method.
 
 ## Parameters
 
-- `options`: A dictionary that specifies options for connection events. See [`Peripheral Connection Options`](peripheral-connection-options.md) for a list of possible options.
+- `options`: A dictionary that specifies options for connection events. See [Peripheral Connection Options](../peripheral-connection-options.md) for a list of possible options.
 
 ## See Also
 
-- [Peripheral Connection Options](peripheral-connection-options.md)
+### Receiving Connection Events
+- [Peripheral Connection Options](../peripheral-connection-options.md)
   Keys used to pass options when connecting to a peripheral.
-- [enum CBConnectionEvent](cbconnectionevent.md)
+- [enum CBConnectionEvent](../cbconnectionevent.md)
   A change to the connection state of a peer.
-- [struct CBConnectionEventMatchingOption](cbconnectioneventmatchingoption.md)
+- [struct CBConnectionEventMatchingOption](../cbconnectioneventmatchingoption.md)
   A set of options to use when registering for connection events.
 
 

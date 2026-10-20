@@ -1,7 +1,8 @@
 # reservedLayoutSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout size that the system reserves for the image, and then centers the image within.
 
@@ -10,7 +11,7 @@ The layout size that the system reserves for the image, and then centers the ima
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,7 +28,7 @@ Use this property to ensure:
 
 The reserved layout size only affects the amount of space for the image, and its positioning within that space. It doesn’t affect the size of the image.
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero). A width or height of zero means that the system uses the default behavior for that dimension:
+The default value is [`CGSizeZero`](../../../CoreGraphics/cgsizezero.md). A width or height of zero means that the system uses the default behavior for that dimension:
 
 - The system centers symbol images inside a predefined reserved layout size that scales with the content size category.
 - Nonsymbol images use a reserved layout size equal to the actual size of the displayed image.
@@ -36,21 +37,22 @@ At Accessibility Dynamic Type sizes, content views ignore the reserved layout wi
 
 ## See Also
 
-- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/preferredsymbolconfiguration.md)
+### Configuring image properties
+- [var preferredSymbolConfiguration: UIImage.SymbolConfiguration?](./preferredsymbolconfiguration.md)
   The symbol configuration to use.
-- [var tintColor: UIColor?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the image view.
-- [var tintColorTransformer: UIConfigurationColorTransformer?](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/tintcolortransformer.md)
+- [var tintColorTransformer: UIConfigurationColorTransformer?](./tintcolortransformer.md)
   The color transformer for resolving the tint color.
-- [func resolvedTintColor(for: UIColor) -> UIColor](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/resolvedtintcolor(for:).md)
+- [func resolvedTintColor(for: UIColor) -> UIColor](./resolvedtintcolor%28for%29.md)
   Generates the resolved tint color for the specified tint color, using the tint color and color transformer.
-- [var cornerRadius: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/cornerradius.md)
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The preferred corner radius, using a continuous corner curve, for the image.
-- [var maximumSize: CGSize](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/maximumsize.md)
+- [var maximumSize: CGSize](./maximumsize.md)
   The maximum size for the image.
-- [static let standardDimension: CGFloat](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/standarddimension.md)
+- [static let standardDimension: CGFloat](./standarddimension.md)
   The system standard layout dimension for reserved layout size.
-- [var accessibilityIgnoresInvertColors: Bool](uilistcontentconfiguration-swift.struct/imageproperties-swift.struct/accessibilityignoresinvertcolors.md)
+- [var accessibilityIgnoresInvertColors: Bool](./accessibilityignoresinvertcolors.md)
   A Boolean value that determines whether the image inverts its colors when the user turns on the Invert Colors accessibility setting.
 
 

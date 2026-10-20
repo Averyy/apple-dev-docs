@@ -5,21 +5,21 @@
 ## Topics
 
 ### Constants
-- [var numberFormattingBadCurrencyPositionErr: Int](numberformattingbadcurrencypositionerr.md)
-- [var numberFormattingBadFormatErr: Int](numberformattingbadformaterr.md)
-- [var numberFormattingBadNumberFormattingObjectErr: Int](numberformattingbadnumberformattingobjecterr.md)
-- [var numberFormattingBadOptionsErr: Int](numberformattingbadoptionserr.md)
-- [var numberFormattingBadTokenErr: Int](numberformattingbadtokenerr.md)
-- [var numberFormattingDelimiterMissingErr: Int](numberformattingdelimitermissingerr.md)
-- [var numberFormattingEmptyFormatErr: Int](numberformattingemptyformaterr.md)
-- [var numberFormattingLiteralMissingErr: Int](numberformattingliteralmissingerr.md)
-- [var numberFormattingNotADigitErr: Int](numberformattingnotadigiterr.md)
-- [var numberFormattingNotANumberErr: Int](numberformattingnotanumbererr.md)
-- [var numberFormattingOverflowInDestinationErr: Int](numberformattingoverflowindestinationerr.md)
-- [var numberFormattingSpuriousCharErr: Int](numberformattingspuriouscharerr.md)
-- [var numberFormattingUnOrderedCurrencyRangeErr: Int](numberformattingunorderedcurrencyrangeerr.md)
-- [var numberFormattingUnOrdredCurrencyRangeErr: Int](numberformattingunordredcurrencyrangeerr.md)
-- [var numberFortmattingNotADigitErr: Int](numberfortmattingnotadigiterr.md)
+- [var numberFormattingBadCurrencyPositionErr: Int](../../numberformattingbadcurrencypositionerr.md)
+- [var numberFormattingBadFormatErr: Int](../../numberformattingbadformaterr.md)
+- [var numberFormattingBadNumberFormattingObjectErr: Int](../../numberformattingbadnumberformattingobjecterr.md)
+- [var numberFormattingBadOptionsErr: Int](../../numberformattingbadoptionserr.md)
+- [var numberFormattingBadTokenErr: Int](../../numberformattingbadtokenerr.md)
+- [var numberFormattingDelimiterMissingErr: Int](../../numberformattingdelimitermissingerr.md)
+- [var numberFormattingEmptyFormatErr: Int](../../numberformattingemptyformaterr.md)
+- [var numberFormattingLiteralMissingErr: Int](../../numberformattingliteralmissingerr.md)
+- [var numberFormattingNotADigitErr: Int](../../numberformattingnotadigiterr.md)
+- [var numberFormattingNotANumberErr: Int](../../numberformattingnotanumbererr.md)
+- [var numberFormattingOverflowInDestinationErr: Int](../../numberformattingoverflowindestinationerr.md)
+- [var numberFormattingSpuriousCharErr: Int](../../numberformattingspuriouscharerr.md)
+- [var numberFormattingUnOrderedCurrencyRangeErr: Int](../../numberformattingunorderedcurrencyrangeerr.md)
+- [var numberFormattingUnOrdredCurrencyRangeErr: Int](../../numberformattingunordredcurrencyrangeerr.md)
+- [var numberFortmattingNotADigitErr: Int](../../numberfortmattingnotadigiterr.md)
 
 
 ---

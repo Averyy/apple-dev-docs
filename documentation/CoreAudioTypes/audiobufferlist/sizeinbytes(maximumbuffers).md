@@ -1,7 +1,8 @@
 # sizeInBytes(maximumBuffers:)
 
 **Framework**: Core Audio Types  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+

@@ -1,7 +1,8 @@
 # capInsets
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cap insets for the image.
 
@@ -14,15 +15,20 @@ The cap insets for the image.
 var capInsets: NSEdgeInsets { get set }
 ```
 
+```objc
+@property NSEdgeInsets capInsets;
+```
+
 ## See Also
 
-- [var isValid: Bool](nsimage/isvalid.md)
+### Managing Drawing Options
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether it is possible to draw an image representation.
-- [var backgroundColor: NSColor](nsimage/backgroundcolor.md)
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color for the image.
-- [var resizingMode: NSImage.ResizingMode](nsimage/resizingmode-swift.property.md)
+- [var resizingMode: NSImage.ResizingMode](./resizingmode-swift.property.md)
   The resizing mode for the image.
-- [NSImage.ResizingMode](nsimage/resizingmode-swift.enum.md)
+- [NSImage.ResizingMode](./resizingmode-swift.enum.md)
   Constants that describe the resizing mode for the image.
 
 

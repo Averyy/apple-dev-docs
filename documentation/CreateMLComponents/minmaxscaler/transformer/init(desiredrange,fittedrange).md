@@ -1,7 +1,8 @@
 # init(desiredRange:fittedRange:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a minmax scaling transformer.
 

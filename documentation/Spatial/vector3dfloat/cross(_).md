@@ -1,7 +1,8 @@
 # cross(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cross product of this vector and the specified vector.
 

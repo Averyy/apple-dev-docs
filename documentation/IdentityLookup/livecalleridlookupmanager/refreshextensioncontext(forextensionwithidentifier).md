@@ -1,7 +1,8 @@
 # refreshExtensionContext(forExtensionWithIdentifier:)
 
 **Framework**: SMS and Call Reporting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.1+

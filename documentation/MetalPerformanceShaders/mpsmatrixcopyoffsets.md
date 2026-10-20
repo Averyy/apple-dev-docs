@@ -1,17 +1,18 @@
 # MPSMatrixCopyOffsets
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A description of matrix copy operations.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,45 +20,50 @@ A description of matrix copy operations.
 struct MPSMatrixCopyOffsets
 ```
 
+```c
+typedef struct { ... } MPSMatrixCopyOffsets;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mpsmatrixcopyoffsets/init.md)
-- [init(sourceRowOffset: UInt32, sourceColumnOffset: UInt32, destinationRowOffset: UInt32, destinationColumnOffset: UInt32)](mpsmatrixcopyoffsets/init(sourcerowoffset:sourcecolumnoffset:destinationrowoffset:destinationcolumnoffset:).md)
+- [init()](./mpsmatrixcopyoffsets/init%28%29.md)
+- [init(sourceRowOffset: UInt32, sourceColumnOffset: UInt32, destinationRowOffset: UInt32, destinationColumnOffset: UInt32)](./mpsmatrixcopyoffsets/init%28sourcerowoffset,sourcecolumnoffset,destinationrowoffset,destinationcolumnoffset%29.md)
 ### Instance Properties
-- [var destinationColumnOffset: UInt32](mpsmatrixcopyoffsets/destinationcolumnoffset.md)
-- [var destinationRowOffset: UInt32](mpsmatrixcopyoffsets/destinationrowoffset.md)
-- [var sourceColumnOffset: UInt32](mpsmatrixcopyoffsets/sourcecolumnoffset.md)
-- [var sourceRowOffset: UInt32](mpsmatrixcopyoffsets/sourcerowoffset.md)
+- [var destinationColumnOffset: UInt32](./mpsmatrixcopyoffsets/destinationcolumnoffset.md)
+- [var destinationRowOffset: UInt32](./mpsmatrixcopyoffsets/destinationrowoffset.md)
+- [var sourceColumnOffset: UInt32](./mpsmatrixcopyoffsets/sourcecolumnoffset.md)
+- [var sourceRowOffset: UInt32](./mpsmatrixcopyoffsets/sourcerowoffset.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MPSCustomKernelArgumentCount](mpscustomkernelargumentcount.md)
+### Structures
+- [struct MPSCustomKernelArgumentCount](./mpscustomkernelargumentcount.md)
   A structure that contains the number of destination, source, and broadcaset textures used by a custom kernel.
-- [struct MPSCustomKernelInfo](mpscustomkernelinfo.md)
-- [struct MPSCustomKernelSourceInfo](mpscustomkernelsourceinfo.md)
-- [struct MPSDimensionSlice](mpsdimensionslice.md)
-- [struct MPSImageCoordinate](mpsimagecoordinate.md)
-- [struct MPSImageRegion](mpsimageregion.md)
-- [struct MPSIntegerDivisionParams](mpsintegerdivisionparams.md)
+- [struct MPSCustomKernelInfo](./mpscustomkernelinfo.md)
+- [struct MPSCustomKernelSourceInfo](./mpscustomkernelsourceinfo.md)
+- [struct MPSDimensionSlice](./mpsdimensionslice.md)
+- [struct MPSImageCoordinate](./mpsimagecoordinate.md)
+- [struct MPSImageRegion](./mpsimageregion.md)
+- [struct MPSIntegerDivisionParams](./mpsintegerdivisionparams.md)
   Parameters that define the parts of a division operation.
-- [struct MPSIntersectionDistance](mpsintersectiondistance.md)
+- [struct MPSIntersectionDistance](./mpsintersectiondistance.md)
   An intersection result that contains the distance from the ray origin to the intersection point.
-- [struct MPSIntersectionDistancePrimitiveIndex](mpsintersectiondistanceprimitiveindex.md)
+- [struct MPSIntersectionDistancePrimitiveIndex](./mpsintersectiondistanceprimitiveindex.md)
   An intersection result that contains the distance from the ray origin to the intersection point, and the index of the intersected primitive.
-- [struct MPSIntersectionDistancePrimitiveIndexBufferIndex](mpsintersectiondistanceprimitiveindexbufferindex.md)
-- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexCoordinates](mpsintersectiondistanceprimitiveindexbufferindexcoordinates.md)
-- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexInstanceIndex](mpsintersectiondistanceprimitiveindexbufferindexinstanceindex.md)
-- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexInstanceIndexCoordinates](mpsintersectiondistanceprimitiveindexbufferindexinstanceindexcoordinates.md)
-- [struct MPSIntersectionDistancePrimitiveIndexCoordinates](mpsintersectiondistanceprimitiveindexcoordinates.md)
+- [struct MPSIntersectionDistancePrimitiveIndexBufferIndex](./mpsintersectiondistanceprimitiveindexbufferindex.md)
+- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexCoordinates](./mpsintersectiondistanceprimitiveindexbufferindexcoordinates.md)
+- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexInstanceIndex](./mpsintersectiondistanceprimitiveindexbufferindexinstanceindex.md)
+- [struct MPSIntersectionDistancePrimitiveIndexBufferIndexInstanceIndexCoordinates](./mpsintersectiondistanceprimitiveindexbufferindexinstanceindexcoordinates.md)
+- [struct MPSIntersectionDistancePrimitiveIndexCoordinates](./mpsintersectiondistanceprimitiveindexcoordinates.md)
   An intersection result that contains the origin-intersection distance, intersected primitive index, and intersection point coordinates.
-- [struct MPSIntersectionDistancePrimitiveIndexInstanceIndex](mpsintersectiondistanceprimitiveindexinstanceindex.md)
+- [struct MPSIntersectionDistancePrimitiveIndexInstanceIndex](./mpsintersectiondistanceprimitiveindexinstanceindex.md)
   An intersection result that contains the origin-intersection distance, and intersected primitive and instance indices.
 
 

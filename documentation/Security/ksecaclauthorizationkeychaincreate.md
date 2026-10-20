@@ -1,7 +1,8 @@
 # kSecACLAuthorizationKeychainCreate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Create a new keychain.
 
@@ -12,6 +13,10 @@ Create a new keychain.
 
 ```swift
 let kSecACLAuthorizationKeychainCreate: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationKeychainCreate;
 ```
 
 

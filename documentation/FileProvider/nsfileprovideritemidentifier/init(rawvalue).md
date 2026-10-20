@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly instantiated persistent identifier.
 
@@ -19,7 +20,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsfileprovideritemidentifier/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Returns a newly instantiated persistent identifier.
 
 

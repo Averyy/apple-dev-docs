@@ -1,7 +1,8 @@
 # withUnsafeMutableBufferPointer(ofType:_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls a given closure with a raw pointer to the multiarray’s mutable storage.
 
@@ -27,16 +28,19 @@ The buffer contains a collection of `int32`, `float16`, `float32`, or `float64` 
 ## Parameters
 
 - `type`: The element type of the buffer passed in the body. This must be a Swift primitive type equivalent to `dataType`.
-- `body`: A closure with an [`UnsafeMutableBufferPointer`](https://developer.apple.com/documentation/swift/unsafemutablebufferpointer) parameter that points to the storage for the multiarray and its strides. This closure takes the following parameters: - **`ptr`**: The pointer to the buffer.
-- **`strides`**: The strides of the buffer in scalars. Note that this may be different from `strides`’s value prior to this method invocation.
+- `body`: A closure with an [`UnsafeMutableBufferPointer`](../../Swift/unsafemutablebufferpointer.md) parameter that points to the storage for the multiarray and its strides. This closure takes the following parameters:
+
+  - **`ptr`**: The pointer to the buffer.
+  - **`strides`**: The strides of the buffer in scalars. Note that this may be different from `strides`’s value prior to this method invocation.
 
 ## See Also
 
-- [func withUnsafeBufferPointer<S, R>(ofType: S.Type, (UnsafeBufferPointer<S>) throws -> R) rethrows -> R](mlmultiarray/withunsafebufferpointer(oftype:_:).md)
+### Providing buffer access
+- [func withUnsafeBufferPointer<S, R>(ofType: S.Type, (UnsafeBufferPointer<S>) throws -> R) rethrows -> R](./withunsafebufferpointer%28oftype,_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s storage.
-- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](mlmultiarray/withunsafebytes(_:).md)
+- [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](./withunsafebytes%28_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s storage.
-- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R](mlmultiarray/withunsafemutablebytes(_:).md)
+- [func withUnsafeMutableBytes<R>((UnsafeMutableRawBufferPointer, [Int]) throws -> R) rethrows -> R](./withunsafemutablebytes%28_%29.md)
   Calls a given closure with a raw pointer to the multiarray’s mutable storage.
 
 

@@ -1,7 +1,8 @@
 # VZDiskBlockDeviceStorageDeviceAttachment
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A storage device attachment that uses a disk to store data.
 
@@ -12,6 +13,10 @@ A storage device attachment that uses a disk to store data.
 
 ```swift
 class VZDiskBlockDeviceStorageDeviceAttachment
+```
+
+```objc
+@interface VZDiskBlockDeviceStorageDeviceAttachment : VZStorageDeviceAttachment
 ```
 
 #### Overview
@@ -49,44 +54,46 @@ NSFileHandle *fileHandle = [NSFileHandle fileHandleForReadingAtPath:@"/dev/rdisk
     }
 ```
 
-By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [`Streams, Sockets, and Ports`](https://developer.apple.com/documentation/foundation/streams-sockets-and-ports); for more information on XPC services, see the [`XPC`](https://developer.apple.com/documentation/xpc) framework documentation.
+By default, only the `root` user can access the disk file handle. Running virtual machines as `root` isn’t recommended. The best practice is to open the file in a separate process that has `root` privileges, then pass the open file descriptor using XPC or a Unix socket to a non-`root` process running Virtualization. For more information about Unix sockets, see [Streams, Sockets, and Ports](../Foundation/streams-sockets-and-ports.md); for more information on XPC services, see the [XPC](../XPC/XPC.md) framework documentation.
 
 > ❗ **Important**:  You can’t use this method of privilege escalation in apps distributed on the Mac App Store.
 
 ## Topics
 
 ### Initializers
-- [init(fileHandle: FileHandle, readOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws](vzdiskblockdevicestoragedeviceattachment/init(filehandle:readonly:synchronizationmode:).md)
+- [init(fileHandle: FileHandle, readOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws](./vzdiskblockdevicestoragedeviceattachment/init%28filehandle,readonly,synchronizationmode%29.md)
   Creates a new block storage device attachment from a file handle and with the specified access mode, synchronization mode, and error object that you provide.
 ### Getting the block storage device details
-- [var fileHandle: FileHandle](vzdiskblockdevicestoragedeviceattachment/filehandle.md)
+- [var fileHandle: FileHandle](./vzdiskblockdevicestoragedeviceattachment/filehandle.md)
   A file handle to a block device.
-- [var isReadOnly: Bool](vzdiskblockdevicestoragedeviceattachment/isreadonly.md)
+- [var isReadOnly: Bool](./vzdiskblockdevicestoragedeviceattachment/isreadonly.md)
   A Boolean value that indicates whether this disk attachment is read-only; otherwise, if the file handle allows writes, the device can write data into it.
-- [var synchronizationMode: VZDiskSynchronizationMode](vzdiskblockdevicestoragedeviceattachment/synchronizationmode.md)
+- [var synchronizationMode: VZDiskSynchronizationMode](./vzdiskblockdevicestoragedeviceattachment/synchronizationmode.md)
   The value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
 
 ## Relationships
 
 ### Inherits From
-- [VZStorageDeviceAttachment](vzstoragedeviceattachment.md)
+- [VZStorageDeviceAttachment](./vzstoragedeviceattachment.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioBlockDeviceConfiguration](vzvirtioblockdeviceconfiguration.md)
+### Related Documentation
+- [class VZVirtioBlockDeviceConfiguration](./vzvirtioblockdeviceconfiguration.md)
   The configuration object that requests the creation of a virtual storage device in the guest system.
-- [class VZDiskImageStorageDeviceAttachment](vzdiskimagestoragedeviceattachment.md)
+### Attachment points
+- [class VZDiskImageStorageDeviceAttachment](./vzdiskimagestoragedeviceattachment.md)
   A device that stores content in a disk image.
-- [class VZNetworkBlockDeviceStorageDeviceAttachment](vznetworkblockdevicestoragedeviceattachment.md)
+- [class VZNetworkBlockDeviceStorageDeviceAttachment](./vznetworkblockdevicestoragedeviceattachment.md)
   A storage device attachment backed by a Network Block Device (NBD) client.
-- [class VZStorageDeviceAttachment](vzstoragedeviceattachment.md)
+- [class VZStorageDeviceAttachment](./vzstoragedeviceattachment.md)
   The common behaviors for storage devices in the guest system.
 
 

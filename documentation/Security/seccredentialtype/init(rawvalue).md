@@ -1,10 +1,13 @@
 # init(rawValue:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 12.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 

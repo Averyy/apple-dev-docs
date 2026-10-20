@@ -1,7 +1,8 @@
 # Trust Insights
 
 **Framework**: Trust Insights  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Evaluate transactions for potential coercive activity while preserving people’s privacy.
 
@@ -14,28 +15,28 @@ Evaluate transactions for potential coercive activity while preserving people’
 
 The Trust Insights framework enables your app to request an evaluation, or insight, to help detect and respond to social engineering threats people may face. Social threats exploit human psychology rather than technical vulnerabilities such as software bugs to pressure or deceive people into performing legitimate actions, and your app can’t distinguish between a genuine or a coerced interaction.
 
-#### Learn About Available Action Contexts
+#### Learn about available action contexts
 
 There are five principal action areas — kinds of transactions people might engage in — that the Trust Insights framework can help evaluate:
 
-- **[`InsightEvaluator.OperationCategory.payment`](insightevaluator/operationcategory/payment.md)**: An action that indicates some form of payment or purchase.
-- **[`InsightEvaluator.OperationCategory.account`](insightevaluator/operationcategory/account.md)**: An action that indicates an account operation including registration, login, or the modification of account details.
-- **[`InsightEvaluator.OperationCategory.resourceUse`](insightevaluator/operationcategory/resourceuse.md)**: An action that indicates usage of some resource, such as an expensive computation capability or online service.
-- **[`InsightEvaluator.OperationCategory.communication`](insightevaluator/operationcategory/communication.md)**: An action that indicates communication operation, such as sending bulk messages or making connections to other people.
-- **[`InsightEvaluator.OperationCategory.other`](insightevaluator/operationcategory/other.md)**: A default action that represents all other types of actions. If the available action types aren’t appropriate for your use case, please consider filing a Feedback report with the details relating to the category of interest.
+- **[`InsightEvaluator.OperationCategory.payment`](./insightevaluator/operationcategory/payment.md)**: An action that indicates some form of payment or purchase.
+- **[`InsightEvaluator.OperationCategory.account`](./insightevaluator/operationcategory/account.md)**: An action that indicates an account operation including registration, login, or the modification of account details.
+- **[`InsightEvaluator.OperationCategory.resourceUse`](./insightevaluator/operationcategory/resourceuse.md)**: An action that indicates usage of some resource, such as an expensive computation capability or online service.
+- **[`InsightEvaluator.OperationCategory.communication`](./insightevaluator/operationcategory/communication.md)**: An action that indicates communication operation, such as sending bulk messages or making connections to other people.
+- **[`InsightEvaluator.OperationCategory.other`](./insightevaluator/operationcategory/other.md)**: A default action that represents all other types of actions. If the available action types aren’t appropriate for your use case, please consider filing a Feedback report with the details relating to the category of interest.
 
-#### Enable Your Xcode Project to Adopt the Trust Insights Framework
+#### Enable your Xcode project to adopt the Trust Insights framework
 
-The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.trustinsights.base).
+The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](../BundleResources/entitlements/com.apple.developer.trustinsights.base.md).
 
-#### Understand the Components of Trust Evaluation Request
+#### Understand the components of trust evaluation request
 
 A trust insight is the result of two elements that combine to form a trust insight evaluation request.
 
-- **`request`**: A trust insight request that represents a specific signal or insight. The framework supports one type of request,  [`IsLikelyBeingCoachedInsight`](islikelybeingcoachedinsight.md).
-- **`context`**: A context that describes what kind of action someone is attempting to perform. For a complete list of actions, see [`Learn about available action contexts`](https://developer.apple.com/documentation/trustinsights#Learn-about-available-action-contexts)
+- **`request`**: A trust insight request that represents a specific signal or insight. The framework supports one type of request,  [`IsLikelyBeingCoachedInsight`](./islikelybeingcoachedinsight.md).
+- **`context`**: A context that describes what kind of action someone is attempting to perform. For a complete list of actions, see [Learn about available action contexts](./TrustInsights.md#Learn-about-available-action-contexts)
 
-#### Create an Evaluator and Request an Evaluation
+#### Create an evaluator and request an evaluation
 
 In order to request evaluations, you need to first request a person’s permission to use the Trust Insights framework. The following example demonstrates how to check your app’s authorization status and request a person’s authorization, provided a person hasn’t previously declined an authorization request.
 
@@ -64,7 +65,7 @@ In order to request evaluations, you need to first request a person’s permissi
     }
 ```
 
-#### Act on the Result of the Evaluation
+#### Act on the result of the evaluation
 
 The result of a Trust Insight evaluation can help you determine if you should perform further checks before finalizing a transaction. The following example shows a function that returns a Boolean value indicating whether the framework indicates there are no indications of coaching.
 
@@ -98,36 +99,36 @@ func shouldBypassCheckX() async -> Bool {
 ## Topics
 
 ### Obtaining permission or checking authorization to perform evaluations
-- [func requestAuthorization<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](insightevaluator/requestauthorization(for:).md)
+- [func requestAuthorization<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](./insightevaluator/requestauthorization%28for%29.md)
   Requests authorization from a person to generate evaluations.
-- [func authorizationStatus<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](insightevaluator/authorizationstatus(for:).md)
+- [func authorizationStatus<each I>(for: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluator.AuthorizationStatus](./insightevaluator/authorizationstatus%28for%29.md)
   Returns an authorization status that indicates whether a person permitted the app to request evaluations for the given context.
-- [InsightEvaluator.AuthorizationStatus](insightevaluator/authorizationstatus.md)
+- [InsightEvaluator.AuthorizationStatus](./insightevaluator/authorizationstatus.md)
   Values that indicate the status of the app’s authorization to request evaluations.
 ### Creating an insight evaluation
-- [init()](insightevaluator/init.md)
+- [init()](./insightevaluator/init%28%29.md)
   Creates a new insight evaluator object you use to request insights.
 ### Requesting an evaluation
-- [class InsightEvaluator](insightevaluator.md)
+- [class InsightEvaluator](./insightevaluator.md)
   A class that defines data and methods the framework uses to perform evaluations.
-- [func requestEvaluation<each I>(context: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluation<repeat (each I).InsightType>](insightevaluator/requestevaluation(context:).md)
+- [func requestEvaluation<each I>(context: InsightEvaluator.InsightContext<repeat each I>) async throws -> InsightEvaluation<repeat (each I).InsightType>](./insightevaluator/requestevaluation%28context%29.md)
   Requests the evaluation of insights.
-- [class InsightEvaluation](insightevaluation.md)
+- [class InsightEvaluation](./insightevaluation.md)
   The insight result that an evaluation request returns.
-- [protocol TrustInsight](trustinsight.md)
+- [protocol TrustInsight](./trustinsight.md)
   A protocol that describes the trust insight model and the associated evaluation properties.
 ### Evaluating insight signals
-- [struct IsLikelyBeingCoachedInsight](islikelybeingcoachedinsight.md)
+- [struct IsLikelyBeingCoachedInsight](./islikelybeingcoachedinsight.md)
   An insight to request to examine indications that someone may be actively coaching a person to perform actions.
 ### Receiving evaluation notifications and handling errors
-- [enum InsightEvaluationConsumptionStatus](insightevaluationconsumptionstatus.md)
+- [enum InsightEvaluationConsumptionStatus](./insightevaluationconsumptionstatus.md)
   Values describing the usage of insight evaluation.
-- [enum InsightError](insighterror.md)
+- [enum InsightError](./insighterror.md)
   Error values the framework returns for specific insights within the overall evaluation.
 ### Providing feedback
-- [func reportConsumption(InsightEvaluationConsumptionStatus, insightIDsUsed: [String])](insightevaluation/reportconsumption(_:insightidsused:).md)
+- [func reportConsumption(InsightEvaluationConsumptionStatus, insightIDsUsed: [String])](./insightevaluation/reportconsumption%28_,insightidsused%29.md)
   Reports the consumption status, and optionally provides one or more associated insight identifiers.
-- [func reportConsumption(InsightEvaluationConsumptionStatus, insightsUsed: [any TrustInsight])](insightevaluation/reportconsumption(_:insightsused:).md)
+- [func reportConsumption(InsightEvaluationConsumptionStatus, insightsUsed: [any TrustInsight])](./insightevaluation/reportconsumption%28_,insightsused%29.md)
   Reports the consumption status, and optionally provide one or more associated insights.
 
 

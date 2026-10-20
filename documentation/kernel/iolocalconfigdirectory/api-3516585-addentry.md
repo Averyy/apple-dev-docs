@@ -1,14 +1,15 @@
 # addEntry
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn addEntry(int key, OSData *value, OSString *desc);
 ```
 

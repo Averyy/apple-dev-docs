@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `ImmersiveCameraLensDefinition` object from a ILPD data blob, basically the JSON contents of a ILPD file..
 
@@ -20,7 +21,7 @@ init(from data: Data) throws
 
 #### Discussion
 
-> **Note**: This function throws an appropriate error when the data is not well formatted of there are unexpected errors in the JSON.
+> **Throws**: This function throws an appropriate error when the data is not well formatted of there are unexpected errors in the JSON.
 
 
 ---

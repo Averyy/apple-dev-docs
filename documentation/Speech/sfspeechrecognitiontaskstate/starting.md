@@ -1,7 +1,8 @@
 # SFSpeechRecognitionTaskState.starting
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Speech recognition (potentially including audio recording) has not yet started.
 
@@ -18,15 +19,20 @@ Speech recognition (potentially including audio recording) has not yet started.
 case starting
 ```
 
+```c
+SFSpeechRecognitionTaskStateStarting
+```
+
 ## See Also
 
-- [SFSpeechRecognitionTaskState.canceling](sfspeechrecognitiontaskstate/canceling.md)
+### Task states
+- [SFSpeechRecognitionTaskState.canceling](./canceling.md)
   Delivery of recognition results has finished, but audio recording may be ongoing.
-- [SFSpeechRecognitionTaskState.completed](sfspeechrecognitiontaskstate/completed.md)
+- [SFSpeechRecognitionTaskState.completed](./completed.md)
   Delivery of recognition requests has finished and audio recording has stopped.
-- [SFSpeechRecognitionTaskState.finishing](sfspeechrecognitiontaskstate/finishing.md)
+- [SFSpeechRecognitionTaskState.finishing](./finishing.md)
   Audio recording has stopped, but delivery of recognition results may continue.
-- [SFSpeechRecognitionTaskState.running](sfspeechrecognitiontaskstate/running.md)
+- [SFSpeechRecognitionTaskState.running](./running.md)
   Speech recognition (potentially including audio recording) is in progress.
 
 

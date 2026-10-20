@@ -1,7 +1,8 @@
 # MTLDataType.short4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A four-component vector with 16-bit, signed integer values.
 
@@ -10,7 +11,7 @@ A four-component vector with 16-bit, signed integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A four-component vector with 16-bit, signed integer values.
 case short4
 ```
 
+```c
+MTLDataTypeShort4
+```
+
 ## See Also
 
-- [MTLDataType.short](mtldatatype/short.md)
+### 16-bit integer types
+- [MTLDataType.short](./short.md)
   A 16-bit, signed integer value.
-- [MTLDataType.short2](mtldatatype/short2.md)
+- [MTLDataType.short2](./short2.md)
   A two-component vector with 16-bit, signed integer values.
-- [MTLDataType.short3](mtldatatype/short3.md)
+- [MTLDataType.short3](./short3.md)
   A three-component vector with 16-bit, signed integer values.
-- [MTLDataType.ushort](mtldatatype/ushort.md)
+- [MTLDataType.ushort](./ushort.md)
   A 16-bit, unsigned integer value.
-- [MTLDataType.ushort2](mtldatatype/ushort2.md)
+- [MTLDataType.ushort2](./ushort2.md)
   A two-component vector with 16-bit, unsigned integer values.
-- [MTLDataType.ushort3](mtldatatype/ushort3.md)
+- [MTLDataType.ushort3](./ushort3.md)
   A three-component vector with 16-bit, unsigned integer values.
-- [MTLDataType.ushort4](mtldatatype/ushort4.md)
+- [MTLDataType.ushort4](./ushort4.md)
   A four-component vector with 16-bit, unsigned integer values.
 
 

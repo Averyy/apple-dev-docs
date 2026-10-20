@@ -1,7 +1,8 @@
 # MusicTokenRequestError.userTokenRevoked
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the user revokes permission for the current app to access their Apple Music data.
 
@@ -22,7 +23,7 @@ case userTokenRevoked
 
 #### Discussion
 
-In iOS, apps may attempt to recover from this error condition by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](https://developer.apple.com/documentation/uikit/uiapplication/opensettingsurlstring).
+In iOS, apps may attempt to recover from this error condition by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](../../UIKit/uiapplication/opensettingsurlstring.md).
 
 
 ---

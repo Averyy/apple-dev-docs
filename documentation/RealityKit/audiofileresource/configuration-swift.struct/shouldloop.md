@@ -1,7 +1,8 @@
 # shouldLoop
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores a Boolean indicating whether the playback loops infinitely, until manually stopped or paused.
 
@@ -21,7 +22,8 @@ var shouldLoop: Bool
 
 ## See Also
 
-- [var shouldRandomizeStartTime: Bool](audiofileresource/configuration-swift.struct/shouldrandomizestarttime.md)
+### Customizing the playback
+- [var shouldRandomizeStartTime: Bool](./shouldrandomizestarttime.md)
   Stores a Boolean indicating whether the playback begins from the start of the file, or from a random position.
 
 

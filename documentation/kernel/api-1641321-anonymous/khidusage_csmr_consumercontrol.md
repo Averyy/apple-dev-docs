@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ConsumerControl
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ConsumerControl = 0x01
 ```
 

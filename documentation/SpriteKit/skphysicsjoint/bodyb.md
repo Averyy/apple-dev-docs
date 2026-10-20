@@ -1,18 +1,19 @@
 # bodyB
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The second body connected by the joint.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The second body connected by the joint.
 var bodyB: SKPhysicsBody { get set }
 ```
 
+```objc
+@property (nonatomic, retain) SKPhysicsBody * bodyB;
+```
+
 ## See Also
 
-- [var bodyA: SKPhysicsBody](skphysicsjoint/bodya.md)
+### Accessing or Setting a Joint’s Bodies
+- [var bodyA: SKPhysicsBody](./bodya.md)
   The first body connected by the joint.
 
 

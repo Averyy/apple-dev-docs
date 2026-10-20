@@ -1,7 +1,8 @@
 # inset(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A dimension that’s the step size minus the specified inset value on each side.
 

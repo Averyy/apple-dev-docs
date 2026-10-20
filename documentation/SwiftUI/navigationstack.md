@@ -1,7 +1,8 @@
 # NavigationStack
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays a root view and enables you to present additional views over the root view.
 
@@ -23,16 +24,16 @@ struct NavigationStack<Data, Root> where Root : View
 
 ## Mentions
 
-- [Migrating to new navigation types](migrating-to-new-navigation-types.md)
-- [Adding a search interface to your app](adding-a-search-interface-to-your-app.md)
-- [Displaying data in lists](displaying-data-in-lists.md)
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Migrating to new navigation types](./migrating-to-new-navigation-types.md)
+- [Adding a search interface to your app](./adding-a-search-interface-to-your-app.md)
+- [Displaying data in lists](./displaying-data-in-lists.md)
+- [Understanding the navigation stack](./understanding-the-navigation-stack.md)
 
 #### Overview
 
-Use a navigation stack to present a stack of views over a root view. People can add views to the top of the stack by clicking or tapping a [`NavigationLink`](navigationlink.md), and remove views using built-in, platform-appropriate controls, like a Back button or a swipe gesture. The stack always displays the most recently added view that hasn’t been removed, and doesn’t allow the root view to be removed.
+Use a navigation stack to present a stack of views over a root view. People can add views to the top of the stack by clicking or tapping a [`NavigationLink`](./navigationlink.md), and remove views using built-in, platform-appropriate controls, like a Back button or a swipe gesture. The stack always displays the most recently added view that hasn’t been removed, and doesn’t allow the root view to be removed.
 
-To create navigation links, associate a view with a data type by adding a [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) modifier inside the stack’s view hierarchy. Then initialize a [`NavigationLink`](navigationlink.md) that presents an instance of the same kind of data. The following stack displays a `ParkDetails` view for navigation links that present data of type `Park`:
+To create navigation links, associate a view with a data type by adding a [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) modifier inside the stack’s view hierarchy. Then initialize a [`NavigationLink`](./navigationlink.md) that presents an instance of the same kind of data. The following stack displays a `ParkDetails` view for navigation links that present data of type `Park`:
 
 ```swift
 NavigationStack {
@@ -45,17 +46,17 @@ NavigationStack {
 }
 ```
 
-In this example, the [`List`](list.md) acts as the root view and is always present. Selecting a navigation link from the list adds a `ParkDetails` view to the stack, so that it covers the list. Navigating back removes the detail view and reveals the list again. The system disables backward navigation controls when the stack is empty and the root view, namely the list, is visible.
+In this example, the [`List`](./list.md) acts as the root view and is always present. Selecting a navigation link from the list adds a `ParkDetails` view to the stack, so that it covers the list. Navigating back removes the detail view and reveals the list again. The system disables backward navigation controls when the stack is empty and the root view, namely the list, is visible.
 
-##### Manage Navigation State
+##### Manage navigation state
 
-By default, a navigation stack manages state to keep track of the views on the stack. However, your code can share control of the state by initializing the stack with a binding to a collection of data values that you create. The stack adds items to the collection as it adds views to the stack and removes items when it removes views. For example, you can create a [`State`](state.md) property to manage the navigation for the park detail view:
+By default, a navigation stack manages state to keep track of the views on the stack. However, your code can share control of the state by initializing the stack with a binding to a collection of data values that you create. The stack adds items to the collection as it adds views to the stack and removes items when it removes views. For example, you can create a [`State`](./state.md) property to manage the navigation for the park detail view:
 
 ```swift
 @State private var presentedParks: [Park] = []
 ```
 
-Initializing the state as an empty array indicates a stack with no views. Provide a [`Binding`](binding.md) to this state property using the dollar sign (`$`) prefix when you create a stack using the [`init(path:root:)`](navigationstack/init(path:root:).md) initializer:
+Initializing the state as an empty array indicates a stack with no views. Provide a [`Binding`](./binding.md) to this state property using the dollar sign (`$`) prefix when you create a stack using the [`init(path:root:)`](./navigationstack/init%28path,root%29.md) initializer:
 
 ```swift
 NavigationStack(path: $presentedParks) {
@@ -78,35 +79,36 @@ func showParks() {
 
 The `showParks` method replaces the stack’s display with a view that shows details for Sequoia, the last item in the new `presentedParks` array. Navigating back from that view removes Sequoia from the array, which reveals a view that shows details for Yosemite. Use a path to support deep links, state restoration, or other kinds of programmatic navigation.
 
-##### Navigate to Different View Types
+##### Navigate to different view types
 
-To create a stack that can present more than one kind of view, you can add multiple [`navigationDestination(for:destination:)`](view/navigationdestination(for:destination:).md) modifiers inside the stack’s view hierarchy, with each modifier presenting a different data type. The stack matches navigation links with navigation destinations based on their respective data types.
+To create a stack that can present more than one kind of view, you can add multiple [`navigationDestination(for:destination:)`](./view/navigationdestination%28for,destination%29.md) modifiers inside the stack’s view hierarchy, with each modifier presenting a different data type. The stack matches navigation links with navigation destinations based on their respective data types.
 
-To create a path for programmatic navigation that contains more than one kind of data, you can use a [`NavigationPath`](navigationpath.md) instance as the path.
+To create a path for programmatic navigation that contains more than one kind of data, you can use a [`NavigationPath`](./navigationpath.md) instance as the path.
 
 ## Topics
 
 ### Creating a navigation stack
-- [init(root: () -> Root)](navigationstack/init(root:).md)
+- [init(root: () -> Root)](./navigationstack/init%28root%29.md)
   Creates a navigation stack that manages its own navigation state.
 ### Creating a navigation stack with a path
-- [init(path:root:)](navigationstack/init(path:root:).md)
+- [init(path:root:)](./navigationstack/init%28path,root%29.md)
   Creates a navigation stack with homogeneous navigation state that you can control.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct NavigationPath](navigationpath.md)
+### Stacking views in one column
+- [struct NavigationPath](./navigationpath.md)
   A type-erased list of data representing the content of a navigation stack.
-- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](view/navigationdestination(for:destination:).md)
+- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](./view/navigationdestination%28for,destination%29.md)
   Associates a destination view with a presented data type for use within a navigation stack.
-- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](view/navigationdestination(ispresented:destination:).md)
-  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](navigationstack.md).
-- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](view/navigationdestination(item:destination:).md)
+- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](./view/navigationdestination%28ispresented,destination%29.md)
+  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](./navigationstack.md).
+- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](./view/navigationdestination%28item,destination%29.md)
   Associates a destination view with a bound value for use within a navigation stack or navigation split view
 
 

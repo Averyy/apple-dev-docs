@@ -1,14 +1,15 @@
 # CGImageComponentInfo
 
 **Framework**: Core Graphics  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,27 +19,31 @@
 enum CGImageComponentInfo
 ```
 
+```c
+enum CGImageComponentInfo : uint32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CGImageComponentInfo.float](cgimagecomponentinfo/float.md)
-- [CGImageComponentInfo.integer](cgimagecomponentinfo/integer.md)
+- [CGImageComponentInfo.float](./cgimagecomponentinfo/float.md)
+- [CGImageComponentInfo.integer](./cgimagecomponentinfo/integer.md)
 ### Initializers
-- [init?(rawValue: UInt32)](cgimagecomponentinfo/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./cgimagecomponentinfo/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

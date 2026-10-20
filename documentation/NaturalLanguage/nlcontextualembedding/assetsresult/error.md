@@ -1,7 +1,8 @@
 # NLContextualEmbedding.AssetsResult.error
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result that indicates the framework encounters an error.
 
@@ -20,11 +21,16 @@ A result that indicates the framework encounters an error.
 case error
 ```
 
+```c
+NLContextualEmbeddingAssetsResultError
+```
+
 ## See Also
 
-- [NLContextualEmbedding.AssetsResult.available](nlcontextualembedding/assetsresult/available.md)
+### Getting the result status
+- [NLContextualEmbedding.AssetsResult.available](./available.md)
   A result that indicates that the assets are present on-device.
-- [NLContextualEmbedding.AssetsResult.notAvailable](nlcontextualembedding/assetsresult/notavailable.md)
+- [NLContextualEmbedding.AssetsResult.notAvailable](./notavailable.md)
   A result that indicates that the assets aren’t present on-device.
 
 
